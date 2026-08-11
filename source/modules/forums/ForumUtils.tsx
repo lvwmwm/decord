@@ -1,7 +1,7 @@
 // Module ID: 5923
 // Function ID: 5924
 // Name: getCreationDefaultFormatter
-// Dependencies: [1372, 1891, 4315, 5924, 1379, 1236, 1381, 2]
+// Dependencies: [1391, 1910, 4315, 5924, 1398, 1236, 1400, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStates, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
 // Module 5923 (getCreationDefaultFormatter)
@@ -82,7 +82,7 @@ export const getForumPostReadStatesById = function getForumPostReadStatesById(ar
 };
 export const getForumTimestampFormatter = function getForumTimestampFormatter(closure_1, DURATION_AGO) {
   if (DURATION_AGO === ForumTimestampFormats.POSTED_DURATION_AGO) {
-    if (closure_1 === require(1381) /* set */.ThreadSortOrder.CREATION_DATE) {
+    if (closure_1 === require(1400) /* set */.ThreadSortOrder.CREATION_DATE) {
       return getCreationDefaultFormatter;
     }
   }

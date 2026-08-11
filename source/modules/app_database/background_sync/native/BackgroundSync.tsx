@@ -1,10 +1,10 @@
-// Module ID: 16391
-// Function ID: 16392
+// Module ID: 16407
+// Function ID: 16408
 // Name: _backgroundSync
-// Dependencies: [32, 5, 1376, 1372, 4315, 6876, 6938, 676, 5219, 5176, 1891, 3, 687, 595, 7215, 500, 709, 1208, 698, 1936, 530, 11, 12, 7114, 7117, 7115, 12940, 14756, 6936, 1351, 6946, 2]
+// Dependencies: [32, 5, 1395, 1391, 4315, 6878, 6941, 676, 5219, 5176, 1910, 3, 687, 595, 7216, 500, 709, 1208, 698, 1955, 530, 11, 12, 7115, 7118, 7116, 12944, 14766, 6939, 1370, 6949, 2]
 // Exports: backgroundSync
 
-// Module 16391 (_backgroundSync)
+// Module 16407 (_backgroundSync)
 import _slicedToArray from "_slicedToArray";
 import getState from "getState";
 import createChannelRecord from "createChannelRecord";
@@ -411,7 +411,7 @@ function _backgroundSyncPrivateChannels() {
               c3 = undefined;
               body = undefined;
               c5 = undefined;
-              const messagesResult = callback2(1936).messages();
+              const messagesResult = callback2(1955).messages();
               c3 = messagesResult;
               if (null != messagesResult) {
                 const HTTP = callback(530).HTTP;
@@ -431,7 +431,7 @@ function _backgroundSyncPrivateChannels() {
                 outer1_14.log("Aborting BG sync because there is no database");
                 c6 = 3;
               }
-              const obj15 = callback2(1936);
+              const obj15 = callback2(1955);
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -568,11 +568,11 @@ function _backgroundSyncGuildData() {
               let guilds;
               let api_code_version;
               let closure_11;
-              const items = [callback2(7114).getCommittedVersions(), , ];
-              const obj18 = callback2(7114);
-              items[1] = callback2(7117).getCommittedVersions();
-              const obj19 = callback2(7117);
-              items[2] = callback2(7115).canUseGuildVersions();
+              const items = [callback2(7115).getCommittedVersions(), , ];
+              const obj18 = callback2(7115);
+              items[1] = callback2(7118).getCommittedVersions();
+              const obj19 = callback2(7118);
+              items[2] = callback2(7116).canUseGuildVersions();
               c5 = 1;
               c6 = 1;
               const obj1 = { value: null, done: false };
@@ -593,7 +593,7 @@ function _backgroundSyncGuildData() {
               dependencyMap2 = callback3(callback3, 3);
               c5 = 32;
               c6 = 5;
-              closure_7 = 1376;
+              closure_7 = 1395;
               const HTTP = callback(530).HTTP;
               let obj3 = { url: null, body: null, timeout: 5000, rejectWithError: false };
               obj3[0] = constants.BACKGROUND_SYNC;
@@ -602,12 +602,12 @@ function _backgroundSyncGuildData() {
                 obj4[0] = c5;
                 obj4[1] = c6.highest_last_message_id;
                 obj4[2] = c6.api_code_version;
-                let obj11 = callback(12940);
+                let obj11 = callback(12944);
                 obj4[3] = obj11.isChannelMetadataObfuscationEnabled("background-sync");
                 let obj5 = obj4;
               } else {
                 obj5 = { channel_privacy: null };
-                let obj9 = callback(12940);
+                let obj9 = callback(12944);
                 obj5[0] = obj9.isChannelMetadataObfuscationEnabled("background-sync");
               }
               obj3[1] = obj5;
@@ -734,7 +734,7 @@ function _backgroundSyncGuildData() {
               c6 = 3;
               throw body;
             } else if (arg0 !== 2) {
-              obj = callback(14756);
+              obj = callback(14766);
               obj.writeCaches(true);
               const _Date = Date;
               callback.time_save_guild_data = Date.now() - callback2;
@@ -842,7 +842,7 @@ function _backgroundSyncGuildChannels() {
                 let changes;
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
-                let obj20 = callback2(1936);
+                let obj20 = callback2(1955);
                 throwTypeErrorResult = obj20.messages();
                 c4 = throwTypeErrorResult;
                 if (null != throwTypeErrorResult) {
@@ -1326,7 +1326,7 @@ function _processChannelChanges() {
                 let tmp23 = callback;
                 let tmp24 = dependencyMap;
                 let tmp25 = callback3;
-                let tmp26 = callback3(obj2.partition(modified_messages, callback(6936).isLikelyNotDelta), 2);
+                let tmp26 = callback3(obj2.partition(modified_messages, callback(6939).isLikelyNotDelta), 2);
                 let arr4 = tmp26[1];
                 dependencyMap2 = arr4;
                 let push = new_messages.push;
@@ -1368,7 +1368,7 @@ function _processChannelChanges() {
               let tmp50 = table;
               let tmp51 = callback;
               let tmp52 = dependencyMap;
-              length = arr.filter(callback(1351).isNotNullish);
+              length = arr.filter(callback(1370).isNotNullish);
               let tmp53 = closure_14;
               let tmp54 = length;
               let _HermesInternal = HermesInternal;

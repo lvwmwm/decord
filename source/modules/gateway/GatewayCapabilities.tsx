@@ -1,10 +1,10 @@
-// Module ID: 12939
-// Function ID: 12940
+// Module ID: 12943
+// Function ID: 12944
 // Name: getClientCapabilities
 // Dependencies: [2]
 // Exports: getClientCapabilities
 
-// Module 12939 (getClientCapabilities)
+// Module 12943 (getClientCapabilities)
 const result = require("set").fileFinishedImporting("modules/gateway/GatewayCapabilities.tsx");
 
 export const getClientCapabilities = function getClientCapabilities(useChannelObfuscation) {

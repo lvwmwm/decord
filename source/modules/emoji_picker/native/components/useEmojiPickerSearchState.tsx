@@ -1,10 +1,10 @@
-// Module ID: 8648
-// Function ID: 8649
+// Module ID: 8654
+// Function ID: 8655
 // Name: useEmojiPickerSearchState
-// Dependencies: [32, 19, 5176, 705, 1355, 2]
+// Dependencies: [32, 19, 5176, 705, 1374, 2]
 // Exports: default
 
-// Module 8648 (useEmojiPickerSearchState)
+// Module 8654 (useEmojiPickerSearchState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -28,7 +28,7 @@ export default function useEmojiPickerSearchState(arg0, arg1, arg2) {
         if (":" === arr[0]) {
           substr = arr.slice(1);
         }
-        const FrecencyUserSettingsActionCreators = callback(1355).FrecencyUserSettingsActionCreators;
+        const FrecencyUserSettingsActionCreators = callback(1374).FrecencyUserSettingsActionCreators;
         const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
         let obj = { channel: null, query: null, count: 0, intention: null };
         obj[0] = callback;

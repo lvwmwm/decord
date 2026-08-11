@@ -1,10 +1,10 @@
-// Module ID: 11026
-// Function ID: 11027
+// Module ID: 11031
+// Function ID: 11032
 // Name: useSortedOnboardingPrompts
 // Dependencies: [19, 5242, 647, 2]
 // Exports: default
 
-// Module 11026 (useSortedOnboardingPrompts)
+// Module 11031 (useSortedOnboardingPrompts)
 import noop from "noop";
 import handleUpdate from "handleUpdate";
 

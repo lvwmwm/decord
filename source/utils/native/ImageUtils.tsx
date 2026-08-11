@@ -1,10 +1,10 @@
-// Module ID: 1473
-// Function ID: 1474
+// Module ID: 1492
+// Function ID: 1493
 // Name: getSrcWithWidthAndHeight
-// Dependencies: [32, 17, 676, 1451, 1474, 1464, 1876, 12, 1419, 1416, 2]
+// Dependencies: [32, 17, 676, 1470, 1493, 1483, 1895, 12, 1438, 1435, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1473 (getSrcWithWidthAndHeight)
+// Module 1492 (getSrcWithWidthAndHeight)
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_6 } from "ME";
@@ -31,7 +31,7 @@ function getSrcWithWidthAndHeight(animated) {
   }
   const tmp = callback(src.split("?"), 2);
   const items = [tmp[0], ];
-  let obj = importDefault(1464);
+  let obj = importDefault(1483);
   items[1] = obj.parse(tmp[1]);
   const tmp4 = callback(items, 2);
   [tmp5, tmp6] = tmp4;
@@ -61,9 +61,9 @@ function getSrcWithWidthAndHeight(animated) {
       obj[1] = targetHeight;
       obj[2] = sourceWidth;
       obj[3] = sourceHeight;
-      obj[4] = require(1876) /* items */.ATTACHMENT_LADDER_MAX_UPSCALE;
-      let size = require(1876) /* items */.snapAttachmentDimensions(obj);
-      const obj2 = require(1876) /* items */;
+      obj[4] = require(1895) /* items */.ATTACHMENT_LADDER_MAX_UPSCALE;
+      let size = require(1895) /* items */.snapAttachmentDimensions(obj);
+      const obj2 = require(1895) /* items */;
     } else {
       size = { width: null, height: null };
       size[0] = targetWidth;
@@ -81,7 +81,7 @@ function getSrcWithWidthAndHeight(animated) {
   let tmp2Result = tmp2(12);
   let text = tmp5;
   if (!tmp2Result.isEmpty(tmp6)) {
-    tmp2Result = tmp2(1464);
+    tmp2Result = tmp2(1483);
     text = `${tmp5}?${obj5.stringify(tmp6)}`;
   }
   return text;
@@ -95,7 +95,7 @@ function getMobileOptimizedSrc(proxy_url, width, height, png) {
   if (tmp3.test(proxy_url)) {
     num = 0.3;
   }
-  let obj = require(1474) /* useWindowDimensions */;
+  let obj = require(1493) /* useWindowDimensions */;
   const size = obj.getWindowDimensions();
   const result = store.getPixelSizeForLayoutSize(size.width) * num;
   const bound = Math.min(width > height ? result / width : store.getPixelSizeForLayoutSize(size.height / 2) * num / height, 1);
@@ -111,9 +111,9 @@ function getMobileOptimizedSrc(proxy_url, width, height, png) {
   return getSrcWithWidthAndHeight(obj);
 }
 function getPaletteForAvatarMobile(closure_0) {
-  const obj = require(1419) /* ensureAvatarSource */;
+  const obj = require(1438) /* ensureAvatarSource */;
   ImageManager = ImageManager.ImageManager;
-  return ImageManager.getDominantColors(obj.ensureAvatarSource(require(1416) /* getAvatarURL */.makeSource(closure_0)));
+  return ImageManager.getDominantColors(obj.ensureAvatarSource(require(1435) /* getAvatarURL */.makeSource(closure_0)));
 }
 ({ NativeModules: c4, PixelRatio: c5 } = get_ActivityIndicator);
 const tmp3 = /\.(gif)$/i;

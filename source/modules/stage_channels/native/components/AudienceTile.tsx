@@ -1,10 +1,10 @@
-// Module ID: 10951
-// Function ID: 10952
+// Module ID: 10956
+// Function ID: 10957
 // Name: RaisedHandIcon
-// Dependencies: [19, 17, 1971, 21, 4303, 712, 4488, 1297, 8003, 1474, 589, 5142, 4493, 5427, 1236, 7773, 10931, 4153, 10952, 2]
+// Dependencies: [19, 17, 1990, 21, 4303, 712, 4488, 1297, 8005, 1493, 589, 5142, 4493, 5427, 1236, 7775, 10936, 1363, 10957, 2]
 // Exports: getTileWidthStyle
 
-// Module 10951 (RaisedHandIcon)
+// Module 10956 (RaisedHandIcon)
 import { View } from "AccessibilityAnnouncer";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ function RaisedHandIcon(rtsState) {
   let obj = { style: items, children: null };
   items[1] = activeBackground;
   obj = { style: tmp.raisedHand, source: null, color: null };
-  obj[1] = tmp5(8003);
+  obj[1] = tmp5(8005);
   obj[2] = PRIMARY_800;
   obj[1] = closure_5(require(1297) /* Button */.Icon, obj);
   return closure_5(View, obj);

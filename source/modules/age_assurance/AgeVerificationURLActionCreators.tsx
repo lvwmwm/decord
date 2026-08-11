@@ -1,10 +1,10 @@
-// Module ID: 7803
-// Function ID: 7804
+// Module ID: 7805
+// Function ID: 7806
 // Name: requestAgeVerification
-// Dependencies: [5, 1218, 7798, 676, 7804, 530, 709, 2]
+// Dependencies: [5, 1218, 7800, 676, 7806, 530, 709, 2]
 // Exports: getAgeVerificationMethods, initiateAgeVerificationV2, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7803 (requestAgeVerification)
+// Module 7805 (requestAgeVerification)
 import sendRequest from "sendRequest";
 import fetchFingerprint from "fetchFingerprint";
 import { VerificationVendorName } from "set";

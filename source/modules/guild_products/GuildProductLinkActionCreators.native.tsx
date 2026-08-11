@@ -1,10 +1,10 @@
-// Module ID: 12220
-// Function ID: 12221
+// Module ID: 12223
+// Function ID: 12224
 // Name: openGuildProductLink
 // Dependencies: [4643, 1236, 2]
 // Exports: openGuildProductLink
 
-// Module 12220 (openGuildProductLink)
+// Module 12223 (openGuildProductLink)
 const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductLinkActionCreators.native.tsx");
 
 export const openGuildProductLink = function openGuildProductLink(closure_0, closure_1) {

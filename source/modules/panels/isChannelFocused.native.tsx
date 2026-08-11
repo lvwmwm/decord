@@ -1,10 +1,10 @@
-// Module ID: 9762
-// Function ID: 9763
+// Module ID: 9767
+// Function ID: 9768
 // Name: getFocusedChannelId
-// Dependencies: [32, 19, 4316, 5943, 4514, 4160, 4158, 4159, 4161, 2]
+// Dependencies: [32, 19, 4316, 5945, 4514, 4160, 4158, 4159, 4161, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 9762 (getFocusedChannelId)
+// Module 9767 (getFocusedChannelId)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getParticipants from "getParticipants";

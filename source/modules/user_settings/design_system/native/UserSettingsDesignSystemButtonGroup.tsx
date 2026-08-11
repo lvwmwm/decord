@@ -1,10 +1,10 @@
-// Module ID: 14783
-// Function ID: 14784
+// Module ID: 14793
+// Function ID: 14794
 // Name: UserSettingsDesignSystemButtonGroup
-// Dependencies: [19, 17, 21, 4303, 4712, 4299, 5150, 4714, 7751, 6012, 2]
+// Dependencies: [19, 17, 21, 4303, 4712, 4299, 5150, 4714, 7753, 6014, 2]
 // Exports: default
 
-// Module 14783 (UserSettingsDesignSystemButtonGroup)
+// Module 14793 (UserSettingsDesignSystemButtonGroup)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -54,17 +54,17 @@ export default function UserSettingsDesignSystemButtonGroup() {
   const items3 = [callback(require(4299) /* Text */.Text, { variant: "text-lg/bold", children: "IconButton Example" }), callback(require(4299) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "For IconButtons, a horizontal layout is recommended" }), ];
   const obj8 = { direction: "horizontal", children: null };
   const obj9 = { accessibilityLabel: "Settings", variant: "secondary", icon: null, onPress: null };
-  obj9[2] = importDefault(6012);
+  obj9[2] = importDefault(6014);
   obj9[3] = function onPress() {
 
   };
-  const items4 = [callback(require(7751) /* IconButton */.IconButton, obj9), ];
+  const items4 = [callback(require(7753) /* IconButton */.IconButton, obj9), ];
   const obj10 = { accessibilityLabel: "Settings", variant: "secondary", icon: null, onPress: null };
-  obj10[2] = importDefault(6012);
+  obj10[2] = importDefault(6014);
   obj10[3] = function onPress() {
 
   };
-  items4[1] = callback(require(7751) /* IconButton */.IconButton, obj10);
+  items4[1] = callback(require(7753) /* IconButton */.IconButton, obj10);
   obj8[1] = items4;
   items3[2] = callback2(require(5150) /* ButtonGroup */.ButtonGroup, obj8);
   obj7[0] = items3;
@@ -86,11 +86,11 @@ export default function UserSettingsDesignSystemButtonGroup() {
 
   ];
   const obj15 = { accessibilityLabel: "Cancel", variant: "secondary", icon: null, onPress: null };
-  obj15[2] = importDefault(6012);
+  obj15[2] = importDefault(6014);
   obj15[3] = function onPress() {
 
   };
-  items6[1] = callback(require(7751) /* IconButton */.IconButton, obj15);
+  items6[1] = callback(require(7753) /* IconButton */.IconButton, obj15);
   obj13[1] = items6;
   items5[3] = callback2(require(5150) /* ButtonGroup */.ButtonGroup, obj13);
   items5[4] = callback(require(4299) /* Text */.Text, { variant: "text-sm/medium", color: "text-feedback-critical", children: "More than one text button should not be put in a horizontal group." });

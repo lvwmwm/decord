@@ -1,7 +1,7 @@
 // Module ID: 5400
 // Function ID: 5401
 // Name: GESTURE_SOURCE
-// Dependencies: [17, 1634]
+// Dependencies: [17, 1653]
 
 // Module 5400 (GESTURE_SOURCE)
 import get_ActivityIndicator from "get ActivityIndicator";

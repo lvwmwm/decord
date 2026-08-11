@@ -1,14 +1,14 @@
-// Module ID: 7752
-// Function ID: 7753
+// Module ID: 7754
+// Function ID: 7755
 // Name: BaseIconButton
-// Dependencies: [19, 21, 4303, 4718, 4036, 4716, 4719, 4721, 4723, 2]
+// Dependencies: [19, 21, 4303, 4718, 4042, 4716, 4719, 4721, 4723, 2]
 
-// Module 7752 (BaseIconButton)
+// Module 7754 (BaseIconButton)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import IconSizes from "IconSizes";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 
 const require = arg1;
 let closure_4 = createCacheKey.createStyles((arg0, arg1) => {
@@ -58,7 +58,7 @@ const forwardRefResult = importAllResult.forwardRef((variant, ref) => {
     num = scaleAmountInPx;
   }
   const tmp3 = callback(str, DEFAULT_BUTTON_SIZE);
-  let obj = require(4036);
+  let obj = require(4042);
   const sharedValue = obj.useSharedValue(0);
   let obj1 = require(4719) /* styleProperties */;
   const iconTintStyles = obj1.useIconTintStyles(str);

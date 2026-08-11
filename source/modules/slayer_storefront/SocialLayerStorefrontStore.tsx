@@ -1,7 +1,7 @@
 // Module ID: 5850
 // Function ID: 5851
 // Name: handleUserSettingsStoreUpdate
-// Dependencies: [1975, 1218, 589, 709, 2]
+// Dependencies: [1994, 1218, 589, 709, 2]
 
 // Module 5850 (handleUserSettingsStoreUpdate)
 import _getSystemLocale from "_getSystemLocale";

@@ -1,14 +1,14 @@
-// Module ID: 12516
-// Function ID: 12517
+// Module ID: 12520
+// Function ID: 12521
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 3938, 676, 21, 4303, 712, 3974, 589, 12517, 4299, 4714, 8497, 1236, 2]
+// Dependencies: [32, 19, 17, 3957, 676, 21, 4303, 712, 3993, 589, 12521, 4299, 4714, 8503, 1236, 2]
 // Exports: default
 
-// Module 12516 (FriendRequestNote)
+// Module 12520 (FriendRequestNote)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { RelationshipTypes } from "ME";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -42,7 +42,7 @@ export default function FriendRequestNote(styles) {
   const HideFriendRequestNotes = require(analyticsLocation[8]).HideFriendRequestNotes;
   const setting = HideFriendRequestNotes.useSetting();
   let obj = require(analyticsLocation[9]);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ note: outer1_6.getNote(closure_0), type: outer1_6.getRelationshipType(closure_0) }));
   note = stateFromStoresObject.note;
   [tmp7, c3] = note(React.useState(stateFromStoresObject.type === RelationshipTypes.PENDING_OUTGOING), 2);

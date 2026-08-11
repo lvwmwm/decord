@@ -1,10 +1,10 @@
-// Module ID: 9384
-// Function ID: 9385
+// Module ID: 9390
+// Function ID: 9391
 // Name: allowableMinInterval
 // Dependencies: [19, 38, 4730, 2]
 // Exports: default
 
-// Module 9384 (allowableMinInterval)
+// Module 9390 (allowableMinInterval)
 import noop from "noop";
 
 const result = require("useMountLayoutEffect").fileFinishedImporting("modules/collectibles/profile_effects/useClock.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8625
-// Function ID: 8626
+// Module ID: 8631
+// Function ID: 8632
 // Name: usePremiumFeatures
-// Dependencies: [19, 1905, 3961, 1921, 4003, 1236, 2866, 7658, 3947, 7655, 7701, 7704, 7698, 7695, 7692, 712, 2]
+// Dependencies: [19, 1924, 3980, 1940, 4022, 1236, 2885, 7660, 3966, 7657, 7703, 7706, 7700, 7697, 7694, 712, 2]
 // Exports: default
 
-// Module 8625 (usePremiumFeatures)
+// Module 8631 (usePremiumFeatures)
 import noop from "noop";
 import GuildFeatures from "GuildFeatures";
 import { TOTAL_PREMIUM_GROUP_USERS } from "SubscriptionStatusTypes";

@@ -1,9 +1,9 @@
-// Module ID: 6535
-// Function ID: 6536
+// Module ID: 6537
+// Function ID: 6538
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6535 (metadata)
+// Module 6537 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroCoinStackSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/60f23e132f165641e3f9806d06b3c80431481445458546daa3bc3330a84a3150.png";

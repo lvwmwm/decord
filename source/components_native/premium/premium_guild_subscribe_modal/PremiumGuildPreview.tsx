@@ -1,10 +1,10 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 12886
+// Function ID: 12887
 // Name: PremiumGuildTierPill
-// Dependencies: [19, 17, 1302, 676, 21, 4303, 712, 5158, 4153, 12883, 12884, 12885, 12886, 12887, 12888, 12889, 12890, 1297, 4195, 589, 5779, 2]
+// Dependencies: [19, 17, 1302, 676, 21, 4303, 712, 5158, 1363, 12887, 12888, 12889, 12890, 12891, 12892, 12893, 12894, 1297, 4195, 589, 5779, 2]
 // Exports: default
 
-// Module 12882 (PremiumGuildTierPill)
+// Module 12886 (PremiumGuildTierPill)
 import "initialize";
 import get_ActivityIndicator from "Button";
 import handleThemeChange from "handleThemeChange";
@@ -25,37 +25,37 @@ function PremiumGuildTierPill(arg0) {
   let obj = { style: tmp.tierPill, children: null };
   obj = { style: tmp.tierPillImage, source: null };
   if (BoostedGuildTiers.NONE === tier) {
-    let tmp22 = importDefault(12884);
-    const tmp21 = importDefault(12883);
+    let tmp22 = importDefault(12888);
+    const tmp21 = importDefault(12887);
     if (obj5.isThemeDark(theme)) {
       tmp22 = tmp21;
     }
     let tmp7 = tmp22;
-    obj5 = require(4153) /* AccessibilityAnnouncer */;
+    obj5 = require(1363) /* AccessibilityAnnouncer */;
   } else if (tmp6.TIER_1 === tier) {
-    let tmp17 = importDefault(12886);
-    const tmp16 = importDefault(12885);
+    let tmp17 = importDefault(12890);
+    const tmp16 = importDefault(12889);
     if (obj4.isThemeDark(theme)) {
       tmp17 = tmp16;
     }
     tmp7 = tmp17;
-    obj4 = require(4153) /* AccessibilityAnnouncer */;
+    obj4 = require(1363) /* AccessibilityAnnouncer */;
   } else if (tmp6.TIER_2 === tier) {
-    let tmp12 = importDefault(12888);
-    const tmp11 = importDefault(12887);
+    let tmp12 = importDefault(12892);
+    const tmp11 = importDefault(12891);
     if (obj3.isThemeDark(theme)) {
       tmp12 = tmp11;
     }
     tmp7 = tmp12;
-    obj3 = require(4153) /* AccessibilityAnnouncer */;
+    obj3 = require(1363) /* AccessibilityAnnouncer */;
   } else if (tmp6.TIER_3 === tier) {
-    let tmp8 = importDefault(12890);
-    const tmp26 = importDefault(12889);
+    let tmp8 = importDefault(12894);
+    const tmp26 = importDefault(12893);
     if (obj8.isThemeDark(theme)) {
       tmp8 = tmp26;
     }
     tmp7 = tmp8;
-    obj8 = require(4153) /* AccessibilityAnnouncer */;
+    obj8 = require(1363) /* AccessibilityAnnouncer */;
   }
   obj[1] = tmp7;
   const items = [closure_7(closure_4, obj), ];

@@ -1,10 +1,10 @@
-// Module ID: 10645
-// Function ID: 10646
+// Module ID: 10650
+// Function ID: 10651
 // Name: isAgeRestrictedClassificationReference
 // Dependencies: [4836, 2]
 // Exports: isAgeRestrictedClassificationReference
 
-// Module 10645 (isAgeRestrictedClassificationReference)
+// Module 10650 (isAgeRestrictedClassificationReference)
 let result = require("set").fileFinishedImporting("modules/content_classification/ContentClassificationReference.tsx");
 
 export const isAgeRestrictedClassificationReference = function isAgeRestrictedClassificationReference(contentClassification) {

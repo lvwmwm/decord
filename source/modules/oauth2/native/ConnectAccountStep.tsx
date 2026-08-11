@@ -1,10 +1,10 @@
-// Module ID: 10523
-// Function ID: 10524
+// Module ID: 10528
+// Function ID: 10529
 // Name: ConnectAccountStep
-// Dependencies: [19, 17, 4341, 1218, 1903, 21, 4303, 712, 4239, 589, 5000, 1416, 4153, 5729, 1297, 8604, 4299, 1236, 4714, 10492, 4259, 4255, 2]
+// Dependencies: [19, 17, 4341, 1218, 1922, 21, 4303, 712, 4239, 589, 5000, 1435, 1363, 5729, 1297, 8610, 4299, 1236, 4714, 10497, 4259, 4255, 2]
 // Exports: ConnectedAccountCard, default
 
-// Module 10523 (ConnectAccountStep)
+// Module 10528 (ConnectAccountStep)
 import authorizeConnection from "authorizeConnection";
 import { View } from "getSystemLocale";
 import addApplication from "addApplication";
@@ -57,14 +57,14 @@ export default function ConnectAccountStep(clientId) {
   if (null == value) {
     let applicationIconSource;
     if (null != stateFromStores) {
-      let tmp2Result = tmp2(1416);
+      let tmp2Result = tmp2(1435);
       obj = { id: null, icon: null };
       ({ id: obj7[0], icon: obj7[1] } = stateFromStores);
       applicationIconSource = tmp2Result.getApplicationIconSource(obj);
     }
     let userAvatarSource;
     if (null != stateFromStores1) {
-      tmp2Result = tmp2(1416);
+      tmp2Result = tmp2(1435);
       userAvatarSource = tmp2Result.getUserAvatarSource(stateFromStores1);
     }
     let str;
@@ -90,7 +90,7 @@ export default function ConnectAccountStep(clientId) {
     const items4 = [callback(tmp5(1297).Avatar, obj3), , ];
     const obj4 = { color: null, size: "md" };
     obj4[0] = tmp2(712).colors.INTERACTIVE_TEXT_DEFAULT;
-    items4[1] = callback(tmp5(8604).MoreHorizontalIcon, obj4);
+    items4[1] = callback(tmp5(8610).MoreHorizontalIcon, obj4);
     const obj5 = { source: null, size: null };
     obj5[0] = userAvatarSource;
     obj5[1] = tmp5(1297).AvatarSizes.XLARGE;
@@ -154,8 +154,8 @@ export default function ConnectAccountStep(clientId) {
     obj[1] = items6;
     return callback2(View, obj);
   } else {
-    let tmp5Result = tmp5(1416);
-    tmp5Result = tmp5(4153);
+    let tmp5Result = tmp5(1435);
+    tmp5Result = tmp5(1363);
     const icon = value.icon;
     const source = tmp5Result.makeSource(tmp5Result.isThemeLight(tmp4) ? icon.lightPNG : icon.darkPNG);
   }
@@ -220,8 +220,8 @@ export const ConnectedAccountCard = function ConnectedAccountCard(arg0) {
     obj[1] = items;
     return closure_9(View, obj);
   } else {
-    obj1 = require(1416) /* getAvatarURL */;
-    obj2 = require(4153) /* AccessibilityAnnouncer */;
+    obj1 = require(1435) /* getAvatarURL */;
+    obj2 = require(1363) /* AccessibilityAnnouncer */;
     const icon = value.icon;
     const source = obj1.makeSource(obj2.isThemeLight(tmp4) ? icon.lightPNG : icon.darkPNG);
   }

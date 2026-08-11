@@ -1,11 +1,11 @@
 // Module ID: 5899
 // Function ID: 5900
 // Name: handleReaction
-// Dependencies: [1218, 3938, 4202, 4523, 3940, 589, 709, 2]
+// Dependencies: [1218, 3957, 4202, 4523, 3959, 589, 709, 2]
 
 // Module 5899 (handleReaction)
 import fetchFingerprint from "fetchFingerprint";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { Store } from "initialize";
 
 const require = arg1;
@@ -110,7 +110,7 @@ class SearchMessageStore extends Store {
 }
 const prototype2 = SearchMessageStore.prototype;
 prototype2["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, upsertRelationship);
+  this.waitFor(fetchFingerprint, markAllUserIdListsStale);
 };
 prototype2["getMessage"] = function getMessage(arg0) {
   return map1.get(arg0);

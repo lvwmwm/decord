@@ -1,10 +1,10 @@
-// Module ID: 16014
-// Function ID: 16015
+// Module ID: 16031
+// Function ID: 16032
 // Name: ConnectionIcon
-// Dependencies: [19, 17, 4341, 4998, 1369, 21, 4303, 712, 4013, 1609, 589, 5000, 5731, 5728, 5748, 16015, 4271, 16017, 1988, 5396, 5397, 4712, 16003, 4299, 1236, 2834, 9408, 4714, 12233, 4011, 1416, 4716, 5738, 5734, 2]
+// Dependencies: [19, 17, 4341, 4998, 1388, 21, 4303, 712, 4031, 1628, 589, 5000, 5731, 5728, 5748, 16032, 4271, 16034, 2007, 5396, 5397, 4712, 16020, 4299, 1236, 2853, 9414, 4714, 12236, 1364, 1435, 4716, 5738, 5734, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 16014 (ConnectionIcon)
+// Module 16031 (ConnectionIcon)
 import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase";
 import { View } from "IncentivizedAccountLinkConfirmationBottomSheet";
 import addApplication from "addApplication";
@@ -21,14 +21,14 @@ function ConnectionIcon(arg0) {
   let theme;
   ({ platform, theme } = arg0);
   const tmp = createCacheKey();
-  let obj = require(4011) /* isThemeLight */;
+  let obj = require(1364) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(theme);
   const tmp2 = require;
   const icon = platform.icon;
   obj = { style: tmp.iconContainer, children: null };
-  const source = require(1416) /* getAvatarURL */.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
+  const source = require(1435) /* getAvatarURL */.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
   obj = { size: null, source: null, disableColor: true, style: null };
-  const obj2 = require(1416) /* getAvatarURL */;
+  const obj2 = require(1435) /* getAvatarURL */;
   obj[0] = tmp2(4716).IconSizes.CUSTOM;
   obj[1] = source;
   obj[3] = tmp.connectionIcon;

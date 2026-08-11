@@ -1,9 +1,9 @@
-// Module ID: 8517
-// Function ID: 8518
+// Module ID: 8523
+// Function ID: 8524
 // Name: PHONE_VERIFICATION_MODAL_KEY
 // Dependencies: [2]
 
-// Module 8517 (PHONE_VERIFICATION_MODAL_KEY)
+// Module 8523 (PHONE_VERIFICATION_MODAL_KEY)
 const result = require("set").fileFinishedImporting("modules/phone/PhoneConstants.tsx");
 
 export const PHONE_VERIFICATION_MODAL_KEY = "PHONE_VERIFICATION_MODAL_KEY";

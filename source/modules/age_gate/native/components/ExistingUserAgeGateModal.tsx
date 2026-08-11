@@ -1,10 +1,10 @@
-// Module ID: 16375
-// Function ID: 16376
+// Module ID: 16391
+// Function ID: 16392
 // Name: onClose
-// Dependencies: [19, 4124, 1221, 16376, 676, 21, 500, 4002, 16377, 1236, 5826, 5232, 4509, 698, 503, 5270, 16378, 16380, 16381, 15123, 8680, 4517, 4519, 5783, 2]
+// Dependencies: [19, 4126, 1221, 16392, 676, 21, 500, 4021, 16393, 1236, 5826, 5232, 4509, 698, 503, 5270, 16394, 16396, 16397, 15132, 8686, 4517, 4519, 5783, 2]
 // Exports: default
 
-// Module 16375 (onClose)
+// Module 16391 (onClose)
 import AgeGateUnderage from "AgeGateUnderage";
 import handleConnectionOpen from "handleConnectionOpen";
 import result from "result";
@@ -117,10 +117,10 @@ export default function ExistingUserAgeGateModal(source) {
         fn = () => {
           let obj = arr(5826);
           obj.closeAgeGateModal();
-          obj = { key: "AGE_GATE_AGE_VERIFIED", icon: callback(16377), content: null };
+          obj = { key: "AGE_GATE_AGE_VERIFIED", icon: callback(16393), content: null };
           const intl = arr(1236).intl;
           obj[2] = intl.string(arr(1236).t.gUiIGZ);
-          callback(4002).open(obj);
+          callback(4021).open(obj);
         };
       };
       obj[outer1_7.AgeGate] = obj;
@@ -146,7 +146,7 @@ export default function ExistingUserAgeGateModal(source) {
       obj2[2] = { existing_user: true };
       obj2[3] = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback3(callback2(15123), {});
+        return callback3(callback2(15132), {});
       };
       obj[outer1_7.Blocked] = obj2;
       const obj3 = { headerTitle: null, headerLeft: null, render: null };
@@ -154,7 +154,7 @@ export default function ExistingUserAgeGateModal(source) {
       const obj6 = source(outer1_2[15]);
       obj3[1] = source(outer1_2[15]).getHeaderBackButton(fn);
       obj3[2] = function render() {
-        return callback3(callback2(8680), { onClose: closure_10 });
+        return callback3(callback2(8686), { onClose: closure_10 });
       };
       obj[outer1_7.NSFWGateGuild] = obj3;
       return obj;

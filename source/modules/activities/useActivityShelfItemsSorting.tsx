@@ -1,10 +1,10 @@
-// Module ID: 11428
-// Function ID: 11429
+// Module ID: 11431
+// Function ID: 11432
 // Name: useActivityShelfItemsSorting
-// Dependencies: [19, 1355, 10606, 500, 1935, 2]
+// Dependencies: [19, 1374, 10611, 500, 1954, 2]
 // Exports: default
 
-// Module 11428 (useActivityShelfItemsSorting)
+// Module 11431 (useActivityShelfItemsSorting)
 import noop from "noop";
 
 const require = arg1;
@@ -12,7 +12,7 @@ const result = require("getPlatform").fileFinishedImporting("modules/activities/
 
 export default function useActivityShelfItemsSorting(arg0) {
   const _require = arg0;
-  const FrecencyUserSettingsActionCreators = _require(1355).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
   const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   let items = [arg0];
   return React.useMemo(() => {
@@ -56,16 +56,16 @@ export default function useActivityShelfItemsSorting(arg0) {
       let label_type;
       if (embeddedActivityConfig != null) {
         const obj = items2(500);
-        const tmp7 = embeddedActivityConfig.client_platform_config[v0(10606)(undefined, obj.getOS(obj))];
+        const tmp7 = embeddedActivityConfig.client_platform_config[v0(10611)(undefined, obj.getOS(obj))];
         if (tmp7 != null) {
           label_type = tmp7.label_type;
         }
-        const tmp5 = v0(10606);
+        const tmp5 = v0(10611);
       }
       let tmp8 = null != label_type;
       if (tmp8) {
-        tmp8 = label_type === items2(1935).EmbeddedActivityLabelTypes.NEW || label_type === items2(1935).EmbeddedActivityLabelTypes.UPDATED;
-        const tmp11 = label_type === items2(1935).EmbeddedActivityLabelTypes.NEW || label_type === items2(1935).EmbeddedActivityLabelTypes.UPDATED;
+        tmp8 = label_type === items2(1954).EmbeddedActivityLabelTypes.NEW || label_type === items2(1954).EmbeddedActivityLabelTypes.UPDATED;
+        const tmp11 = label_type === items2(1954).EmbeddedActivityLabelTypes.NEW || label_type === items2(1954).EmbeddedActivityLabelTypes.UPDATED;
         const tmp9 = items2;
       }
       return tmp8;

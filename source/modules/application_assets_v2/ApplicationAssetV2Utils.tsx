@@ -1,10 +1,10 @@
-// Module ID: 12454
-// Function ID: 12455
+// Module ID: 12457
+// Function ID: 12458
 // Name: getApplicationAssetUrl
-// Dependencies: [530, 1450, 2]
+// Dependencies: [530, 1469, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 12454 (getApplicationAssetUrl)
+// Module 12457 (getApplicationAssetUrl)
 let result = require("set").fileFinishedImporting("modules/application_assets_v2/ApplicationAssetV2Utils.tsx");
 
 export const getApplicationAssetUrl = function getApplicationAssetUrl(closure_1, asset_id, width) {
@@ -22,9 +22,9 @@ export const getApplicationAssetUrl = function getApplicationAssetUrl(closure_1,
   }
   if (null != width) {
     const searchParams = str5.searchParams;
-    const obj2 = require(1450) /* handleImageLoad */;
-    const result = searchParams.set("size", require(1450) /* handleImageLoad */.getBestMediaProxySize(width).toString());
-    const str11 = require(1450) /* handleImageLoad */.getBestMediaProxySize(width);
+    const obj2 = require(1469) /* handleImageLoad */;
+    const result = searchParams.set("size", require(1469) /* handleImageLoad */.getBestMediaProxySize(width).toString());
+    const str11 = require(1469) /* handleImageLoad */.getBestMediaProxySize(width);
   }
   if (asset_id.metadata.is_animated) {
     const searchParams2 = str5.searchParams;

@@ -1,7 +1,7 @@
 // Module ID: 4328
 // Function ID: 4329
 // Name: items3
-// Dependencies: [676, 1935, 2]
+// Dependencies: [676, 1954, 2]
 // Exports: getAppIntentScheme
 
 // Module 4328 (items3)
@@ -17,7 +17,7 @@ obj = { label_type: require("PermissionOverwriteType").EmbeddedActivityLabelType
 obj = { application_id: "", requires_age_gate: false, legacy_responsive_aspect_ratio: false, default_orientation_lock_state: obj.UNLOCKED, tablet_default_orientation_lock_state: obj.UNLOCKED, supported_platforms: null, client_platform_config: null, has_csp_exception: false, displays_advertisements: false, blocked_locales: null, supported_locales: null };
 const items3 = [require("PermissionOverwriteType").EmbeddedActivitySupportedPlatforms.WEB];
 obj[5] = items3;
-obj[6] = { [require(1935).EmbeddedActivitySupportedPlatforms.WEB]: obj, [require(1935).EmbeddedActivitySupportedPlatforms.IOS]: obj, [require(1935).EmbeddedActivitySupportedPlatforms.ANDROID]: obj };
+obj[6] = { [require(1954).EmbeddedActivitySupportedPlatforms.WEB]: obj, [require(1954).EmbeddedActivitySupportedPlatforms.IOS]: obj, [require(1954).EmbeddedActivitySupportedPlatforms.ANDROID]: obj };
 obj[9] = [];
 obj[10] = [];
 const items4 = [, , ];

@@ -1,7 +1,7 @@
 // Module ID: 4334
 // Function ID: 4335
 // Name: getGameMediaRefURL
-// Dependencies: [1884, 1416, 4335, 2]
+// Dependencies: [1903, 1435, 4335, 2]
 // Exports: default
 
 // Module 4334 (getGameMediaRefURL)
@@ -19,12 +19,12 @@ export default function getGameMediaRefURL(arg0, type, size) {
         obj[0] = arg0;
         obj[1] = type.value;
         const merged = Object.assign(size);
-        let gameAssetURL = importDefault(1416).getGameAssetURL(obj);
+        let gameAssetURL = importDefault(1435).getGameAssetURL(obj);
         if (gameAssetURL == null) {
           gameAssetURL = null;
         }
         tmp7 = gameAssetURL;
-        const obj4 = importDefault(1416);
+        const obj4 = importDefault(1435);
       }
       return tmp7;
     } else if ("url" === type) {

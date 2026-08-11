@@ -1,7 +1,7 @@
 // Module ID: 5266
 // Function ID: 5267
 // Name: _getBackgroundGradientColor
-// Dependencies: [32, 5, 19, 17, 4295, 5265, 1372, 1891, 1960, 5242, 5243, 5239, 676, 21, 1222, 4303, 5267, 712, 1471, 4151, 5268, 4725, 691, 589, 1609, 1480, 4036, 5247, 5249, 1416, 1877, 698, 4498, 4304, 5270, 5328, 5330, 1351, 5719, 4299, 1236, 2]
+// Dependencies: [32, 5, 19, 17, 4295, 5265, 1391, 1910, 1979, 5242, 5243, 5239, 676, 21, 1222, 4303, 5267, 712, 1490, 4152, 5268, 4725, 691, 589, 1628, 1499, 4042, 5247, 5249, 1435, 1896, 698, 4498, 4304, 5270, 5328, 5330, 1370, 5719, 4299, 1236, 2]
 // Exports: default
 
 // Module 5266 (_getBackgroundGradientColor)
@@ -65,7 +65,7 @@ function BackgroundImageGradient(uri) {
   obj[1] = require(691) /* keys */.VerticalGradient.START;
   obj[2] = require(691) /* keys */.VerticalGradient.END;
   const tmp2 = importDefault(4725);
-  const items2 = [require(4151) /* hexToRgba */.hexWithOpacity(color, 0.16), color];
+  const items2 = [require(4152) /* hexToRgba */.hexWithOpacity(color, 0.16), color];
   obj[3] = items2;
   items1[1] = callback2(tmp2, obj);
   obj[0] = items1;

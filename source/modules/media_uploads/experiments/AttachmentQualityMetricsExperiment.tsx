@@ -1,7 +1,7 @@
 // Module ID: 4887
 // Function ID: 4888
 // Name: apexExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 
 // Module 4887 (apexExperiment)
 import ApexExperiment from "ApexExperiment";

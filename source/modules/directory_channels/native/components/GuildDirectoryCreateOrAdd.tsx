@@ -1,10 +1,10 @@
-// Module ID: 11683
-// Function ID: 11684
+// Module ID: 11686
+// Function ID: 11687
 // Name: GuildDirectoryCreateOrAddHeader
-// Dependencies: [32, 19, 17, 11684, 11682, 21, 4303, 712, 589, 5374, 5779, 11685, 8956, 1236, 4299, 9141, 1609, 4714, 1480, 5329, 11690, 11681, 2]
+// Dependencies: [32, 19, 17, 11687, 11685, 21, 4303, 712, 589, 5374, 5779, 11688, 8962, 1236, 4299, 9147, 1628, 4714, 1499, 5329, 11693, 11684, 2]
 // Exports: default
 
-// Module 11683 (GuildDirectoryCreateOrAddHeader)
+// Module 11686 (GuildDirectoryCreateOrAddHeader)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useRefValue";
 import get_ActivityIndicator from "Button";
@@ -25,7 +25,7 @@ function GuildDirectoryCreateOrAddHeader(arg0) {
   let tabIndex;
   ({ directoryGuildName, tabIndex, setTabIndex } = arg0);
   const tmp = callback3();
-  let obj = require(8956) /* useSegmentedControlState */;
+  let obj = require(8962) /* useSegmentedControlState */;
   obj = { pageWidth: 0, defaultIndex: tabIndex, onSetActiveIndex: setTabIndex, items: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   const items = [intl.string(require(1236) /* getSystemLocale */.t.FTe8HS), ];
@@ -42,7 +42,7 @@ function GuildDirectoryCreateOrAddHeader(arg0) {
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl4.string(require(1236) /* getSystemLocale */.t.pYFZ9p);
   items1[1] = callback(require(4299) /* Text */.Text, obj2);
-  items1[2] = callback(closure_5, { style: tmp.segmentedControl, children: callback(require(9141) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) });
+  items1[2] = callback(closure_5, { style: tmp.segmentedControl, children: callback(require(9147) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) });
   obj[1] = items1;
   return callback2(closure_5, obj);
 }
@@ -50,7 +50,7 @@ function GuildDirectoryCreateOrAddFooter(handleFooterPress) {
   const tmp = callback3();
   let obj = { style: null, children: null };
   const items = [tmp.footerSafeAreaContainer, ];
-  obj = { paddingBottom: importDefault(1609)().bottom };
+  obj = { paddingBottom: importDefault(1628)().bottom };
   items[1] = obj;
   obj[0] = items;
   obj = { style: tmp.footerContainer, children: null };
@@ -94,7 +94,7 @@ let closure_13 = importAllResult.memo((guild) => {
   obj = { label: guild.name, icon: null, trailing: null, start: null, end: null };
   obj = { style: callback3().guildIcon, guild };
   obj[1] = callback(directoryChannelId(5779), obj);
-  obj[2] = callback(directoryChannelId(11685), { entry: stateFromStores });
+  obj[2] = callback(directoryChannelId(11688), { entry: stateFromStores });
   obj[3] = start;
   obj[4] = end;
   return callback(guild(5374).TableRow, obj);

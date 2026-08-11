@@ -1,10 +1,10 @@
-// Module ID: 10425
-// Function ID: 10426
+// Module ID: 10430
+// Function ID: 10431
 // Name: WarningBox
-// Dependencies: [19, 17, 21, 4303, 9398, 4299, 1236, 10426, 3222, 2]
+// Dependencies: [19, 17, 21, 4303, 9404, 4299, 1236, 10431, 3241, 2]
 // Exports: default
 
-// Module 10425 (WarningBox)
+// Module 10430 (WarningBox)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,11 +27,11 @@ function WarningBox(application) {
     let name = importDefault;
     let BMMo2K = dependencyMap;
     let obj = { look: null, style: null, children: null };
-    obj[0] = require(10426) /* InfoBox */.InfoBoxLooks.WARNING;
+    obj[0] = require(10431) /* InfoBox */.InfoBoxLooks.WARNING;
     obj[1] = tmp.warningBox;
     const intl = require(1236) /* getSystemLocale */.intl;
     if (mobileAccountLinkingDisabled) {
-      BMMo2K = name(3222).BMMo2K;
+      BMMo2K = name(3241).BMMo2K;
       tmp2 = application == tmp2;
       name = undefined;
       if (!tmp2) {
@@ -56,9 +56,9 @@ function WarningBox(application) {
       obj[2] = intl.format(tmp6(1236).t["3T0cpx"], {});
       tmp7 = obj;
     }
-    closure_4(importDefault(10426), tmp7);
+    closure_4(importDefault(10431), tmp7);
     const tmp3 = closure_4;
-    const tmp5 = importDefault(10426);
+    const tmp5 = importDefault(10431);
   }
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -84,7 +84,7 @@ export default function SlayerStorefrontGiftPreview(arg0) {
     obj[0] = tmp.container;
     obj = { sku: null };
     obj[0] = sku;
-    const items = [callback(importDefault(9398), obj), , ];
+    const items = [callback(importDefault(9404), obj), , ];
     obj = { variant: "heading-md/normal", color: "mobile-text-heading-primary", style: null, children: null };
     obj[2] = tmp.text;
     const intl = require(1236) /* getSystemLocale */.intl;

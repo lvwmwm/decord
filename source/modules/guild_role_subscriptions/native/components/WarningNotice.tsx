@@ -1,10 +1,10 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 16782
+// Function ID: 16783
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 4303, 712, 5268, 8445, 4299, 4714, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5268, 8451, 4299, 4714, 2]
 // Exports: default
 
-// Module 16770 (WarningNotice)
+// Module 16782 (WarningNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -43,7 +43,7 @@ export default function WarningNotice(arg0) {
   ({ container: arr[1], containerYellow: arr[2] } = tmp);
   obj = { style: tmp.horizontalContainer, children: null };
   obj = { style: tmp.alertIcon, source: null };
-  obj[1] = importDefault(8445);
+  obj[1] = importDefault(8451);
   const items1 = [callback(importDefault(5268), obj), ];
   const items2 = [, ];
   ({ message: arr3[0], textYellow: arr3[1] } = tmp);

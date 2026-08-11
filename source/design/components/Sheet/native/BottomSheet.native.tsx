@@ -1,7 +1,7 @@
 // Module ID: 5397
 // Function ID: 5398
 // Name: Background
-// Dependencies: [32, 19, 17, 5398, 21, 4303, 712, 4039, 1609, 4700, 5399, 5267, 4725, 691, 4036, 5710, 4020, 5711, 4730, 5712, 5713, 5714, 1474, 4154, 500, 5715, 4013, 2]
+// Dependencies: [32, 19, 17, 5398, 21, 4303, 712, 4045, 1628, 4700, 5399, 5267, 4725, 691, 4042, 5710, 1356, 5711, 4730, 5712, 5713, 5714, 1493, 4154, 500, 5715, 4031, 2]
 
 // Module 5397 (Background)
 import _slicedToArray from "_slicedToArray";
@@ -77,7 +77,7 @@ let closure_18 = createCacheKey.createStyles((arg0) => {
   }
   obj1[3] = num2;
   obj[3] = obj1;
-  let obj4 = require(4039) /* isFabric */;
+  let obj4 = require(4045) /* isFabric */;
   let str2;
   if (obj4.isIosFabric()) {
     str2 = "hidden";

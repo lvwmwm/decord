@@ -1,10 +1,10 @@
-// Module ID: 11389
-// Function ID: 11390
+// Module ID: 11392
+// Function ID: 11393
 // Name: _upload2
-// Dependencies: [32, 5, 19, 17, 1372, 4640, 1891, 4521, 676, 21, 4303, 712, 7298, 4897, 4856, 4271, 8359, 8357, 11, 4852, 8358, 7224, 530, 11390, 6917, 7059, 4643, 1236, 589, 5728, 7226, 4860, 5397, 11391, 4299, 4715, 2]
+// Dependencies: [32, 5, 19, 17, 1391, 4640, 1910, 4521, 676, 21, 4303, 712, 7299, 4897, 4856, 4271, 8364, 8362, 11, 4852, 8363, 7225, 530, 11393, 6920, 7062, 4643, 1236, 589, 5728, 7227, 4860, 5397, 11394, 4299, 4715, 2]
 // Exports: default
 
-// Module 11389 (_upload2)
+// Module 11392 (_upload2)
 import Background from "Background";
 import handleChanged from "handleChanged";
 import items from "items";
@@ -96,7 +96,7 @@ function _upload2() {
               onResult = dependencyMap;
               onResult = new.target;
               onResult = new.target;
-              onResult = new callback2(7298)();
+              onResult = new callback2(7299)();
               const outer1_5 = onResult;
               onResult = outer1_5;
               onResult = outer1_5.on("start", () => {
@@ -120,7 +120,7 @@ function _upload2() {
                   obj[2] = maxFileSizeResult;
                   obj[3] = tmp3.id;
                   obj[4] = c4;
-                  callback(8359)(obj);
+                  callback(8364)(obj);
                   const obj4 = callback(4271);
                 }
               });
@@ -132,8 +132,8 @@ function _upload2() {
               onResult = outer1_5;
               onResult = outer1_5.on("complete", () => {
                 dependencyMap(false);
-                callback(8357).clearAll(c0, ChannelMessage.ChannelMessage);
-                const obj = callback(8357);
+                callback(8362).clearAll(c0, ChannelMessage.ChannelMessage);
+                const obj = callback(8362);
                 callback(4271).hideActionSheet();
               });
               onResult = store;
@@ -210,7 +210,7 @@ function _upload2() {
               callback2 = HermesBuiltin.arraySpread(dependencyMap, callback2);
               const outer1_6 = items;
               attachments = 2;
-              obj5 = callback2(7224);
+              obj5 = callback2(7225);
               c8 = 6;
               c9 = 1;
               const obj6 = { value: null, done: false };
@@ -224,11 +224,11 @@ function _upload2() {
               dependencyMap(false);
               obj3 = callback2(4271);
               obj3.hideActionSheet();
-              const tmp24 = new callback2(11390)(closure_12);
+              const tmp24 = new callback2(11393)(closure_12);
               store = tmp24;
               if (store.code === closure_11.EXPLICIT_CONTENT) {
-                obj4 = callback2(6917);
-                const result1 = obj4.sendExplicitMediaClydeError(callback, store.attachments, callback(7059).TrackMediaRedactionContext.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED);
+                obj4 = callback2(6920);
+                const result1 = obj4.sendExplicitMediaClydeError(callback, store.attachments, callback(7062).TrackMediaRedactionContext.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED);
               } else {
                 onResult = c5;
                 onResult = callback2;

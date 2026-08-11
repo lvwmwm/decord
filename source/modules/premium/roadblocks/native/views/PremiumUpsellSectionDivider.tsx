@@ -1,10 +1,10 @@
-// Module ID: 8705
-// Function ID: 8706
+// Module ID: 8711
+// Function ID: 8712
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 6896, 21, 4303, 712, 8706, 4725, 691, 4823, 2]
+// Dependencies: [19, 17, 6898, 21, 4303, 712, 8712, 4725, 691, 4823, 2]
 // Exports: default
 
-// Module 8705 (PremiumUpsellSectionDivider)
+// Module 8711 (PremiumUpsellSectionDivider)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Gradients } from "items";
@@ -58,7 +58,7 @@ export default function PremiumUpsellSectionDivider(arg0) {
   ({ useTier0UpsellContent, position } = arg0);
   let lock = callback2(position);
   let obj = { style: lock.container, children: null };
-  obj = { style: lock.gradient, children: callback(require(8706) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
+  obj = { style: lock.gradient, children: callback(require(8712) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
   let LockIcon = require;
   let WHITE = dependencyMap;
   const items = [callback(closure_4, obj), , ];

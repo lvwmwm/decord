@@ -1,18 +1,18 @@
-// Module ID: 12653
-// Function ID: 12654
+// Module ID: 12657
+// Function ID: 12658
 // Name: BlockUserElement
-// Dependencies: [19, 1372, 3938, 676, 21, 589, 4493, 4498, 9243, 7784, 12651, 1236, 8586, 2]
+// Dependencies: [19, 1391, 3957, 676, 21, 589, 4493, 4498, 9249, 7786, 12655, 1236, 8592, 2]
 // Exports: default
 
-// Module 12653 (BlockUserElement)
+// Module 12657 (BlockUserElement)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-let result = require("upsertRelationship").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBlockUserElement.tsx");
+let result = require("markAllUserIdListsStale").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBlockUserElement.tsx");
 
 export default function BlockUserElement(user) {
   user = user.user;
@@ -20,7 +20,7 @@ export default function BlockUserElement(user) {
   const reportId = user.reportId;
   let stateFromStores1;
   let obj = user(reportId[5]);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const items1 = [user];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.isBlocked(user.id), items1);
   let obj1 = user(reportId[5]);

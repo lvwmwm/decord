@@ -1,10 +1,10 @@
-// Module ID: 14708
-// Function ID: 14709
+// Module ID: 14718
+// Function ID: 14719
 // Name: Row
-// Dependencies: [19, 1891, 5155, 4499, 676, 21, 5262, 5257, 589, 5779, 5768, 7967, 2]
+// Dependencies: [19, 1910, 5155, 4499, 676, 21, 5262, 5257, 589, 5779, 5768, 7969, 2]
 // Exports: default
 
-// Module 14708 (Row)
+// Module 14718 (Row)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
@@ -66,7 +66,7 @@ export default function UserSettingsHighlightNotifications() {
   if (0 !== stateFromStoresArray.length) {
     obj = { children: null };
     obj[0] = tmp3;
-    tmp4 = jsx(stateFromStoresArray(7967).Form, { children: null });
+    tmp4 = jsx(stateFromStoresArray(7969).Form, { children: null });
   }
   return tmp4;
 };

@@ -1,11 +1,11 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 11304
+// Function ID: 11305
 // Name: items
-// Dependencies: [19, 17, 11281, 7805, 21, 4303, 712, 1236, 589, 1609, 11298, 7797, 7799, 4271, 5397, 5399, 4299, 5767, 5374, 3998, 4714, 11287, 2]
+// Dependencies: [19, 17, 11286, 7807, 21, 4303, 712, 1236, 589, 1628, 11303, 7799, 7801, 4271, 5397, 5399, 4299, 5767, 5374, 4017, 4714, 11292, 2]
 // Exports: default
 
-// Module 11299 (items)
-import module_3998 from "module_3998";
+// Module 11304 (items)
+import module_4017 from "module_4017";
 import { View } from "TableRowGroupTitle";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 import SafetyHubView from "SafetyHubView";
@@ -69,7 +69,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   let obj1 = onClose(589);
   const items1 = [callback1];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => callback1.getIsLoadingAgeVerification());
-  const bottom = classificationId(1609)().bottom;
+  const bottom = classificationId(1628)().bottom;
   const items2 = [onClose];
   callback = stateFromStores.useCallback(() => {
     if (onClose != null) {

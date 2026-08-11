@@ -1,10 +1,10 @@
-// Module ID: 15085
-// Function ID: 15086
+// Module ID: 15094
+// Function ID: 15095
 // Name: InviteCard
-// Dependencies: [19, 17, 15086, 4217, 6919, 11782, 1911, 4288, 9070, 676, 5941, 7196, 21, 4303, 712, 12016, 1236, 38, 1297, 4146, 4299, 12610, 7641, 13211, 1480, 1609, 589, 4730, 6934, 698, 595, 5827, 5716, 15087, 15082, 1481, 5150, 4714, 4013, 5267, 11295, 2]
+// Dependencies: [19, 17, 15095, 4217, 6922, 11785, 1930, 4288, 9076, 676, 5943, 7197, 21, 4303, 712, 12019, 1236, 38, 1297, 4148, 4299, 12614, 7643, 13219, 1499, 1628, 589, 4730, 6937, 698, 595, 5827, 5716, 15096, 15091, 1500, 5150, 4714, 4031, 5267, 11300, 2]
 // Exports: default
 
-// Module 15085 (InviteCard)
+// Module 15094 (InviteCard)
 import nameFromUser from "nameFromUser";
 import get_ActivityIndicator from "module_38";
 import isUnderageAnonymous from "isUnderageAnonymous";
@@ -43,7 +43,7 @@ function InviteCard(invite) {
     if (null != guild) {
       let obj = { guild: null };
       obj[0] = guild;
-      let tmp14 = callback(importDefault(12016), obj);
+      let tmp14 = callback(importDefault(12019), obj);
       const intl2 = require(1236) /* getSystemLocale */.intl;
       let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["3rE1P8"]);
       let name = guild.name;
@@ -51,30 +51,30 @@ function InviteCard(invite) {
       let tmp18 = callback;
     } else if (null != tmp2) {
       importDefault(38)(null != inviter, "Null inviter");
-      obj = { user: null, guildId: "Array" };
+      obj = { user: null, guildId: "a" };
       const tmp12 = new createdAt(inviter);
       obj[0] = tmp12;
       tmp14 = callback(require(1297) /* Button */.Avatar, obj);
       const intl = require(1236) /* getSystemLocale */.intl;
       stringResult = intl.string(require(1236) /* getSystemLocale */.t.OsdY8B);
-      let obj1 = importDefault(4146);
+      let obj1 = importDefault(4148);
       name = obj1.getFormattedName(inviter);
       tmp17 = require;
       tmp18 = callback;
     } else if (null == inviter) {
       return null;
     } else {
-      obj = { user: null, guildId: "Array" };
+      obj = { user: null, guildId: "a" };
       const tmp33 = new createdAt(inviter);
       obj[0] = tmp33;
       const intl3 = require(1236) /* getSystemLocale */.intl;
       stringResult = intl3.string(require(1236) /* getSystemLocale */.t["+ITYkQ"]);
       const tmp35 = callback(require(1297) /* Button */.Avatar, obj);
-      name = importDefault(4146).getFormattedName(inviter, true);
+      name = importDefault(4148).getFormattedName(inviter, true);
       tmp14 = tmp35;
       tmp17 = require;
       tmp18 = callback;
-      const obj9 = importDefault(4146);
+      const obj9 = importDefault(4148);
     }
     obj1 = { style: null, children: null };
     const items = [tmp.container, invite.style];
@@ -101,7 +101,7 @@ function GuildTemplateCard(arg0) {
   const tmp = createCacheKey();
   let obj = { style: items, children: null };
   items = [tmp.container, style];
-  obj = { source: importDefault(12610) };
+  obj = { source: importDefault(12614) };
   const items1 = [callback(closure_5, obj), ];
   obj = { style: tmp.text, children: null };
   const obj1 = { variant: "text-sm/medium", color: "text-subtle", children: null };
@@ -117,7 +117,7 @@ function Centerpiece(inlineButtons) {
   let guildTemplate;
   let invite;
   ({ invite, guildTemplate } = inlineButtons);
-  const tmp2 = importDefault(7641)();
+  const tmp2 = importDefault(7643)();
   const tmp3 = callback3(tmp2);
   let tmp7 = null != guildTemplate;
   if (tmp7) {
@@ -126,7 +126,7 @@ function Centerpiece(inlineButtons) {
   let obj = { style: items, children: null };
   items = [tmp3.centerpieceContainer];
   obj = { alwaysBounceVertical: false, contentContainerStyle: tmp3.scrollViewContainer, children: null };
-  obj = { style: tmp3.logo, source: require(13211) /* registerAsset */ };
+  obj = { style: tmp3.logo, source: require(13219) /* registerAsset */ };
   const items1 = [callback(closure_5, obj), , ];
   const obj1 = { style: tmp3.header, lineClamp: null, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: null };
   let num = 2;

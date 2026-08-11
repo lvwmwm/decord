@@ -1,9 +1,9 @@
-// Module ID: 15810
-// Function ID: 15811
+// Module ID: 15827
+// Function ID: 15828
 // Name: DirectMessageIcon
-// Dependencies: [19, 17, 1372, 1891, 3929, 4390, 1903, 676, 21, 4303, 712, 589, 1297, 4494, 1480, 4311, 4846, 4299, 1236, 4486, 9663, 4764, 9470, 5728, 8783, 2]
+// Dependencies: [19, 17, 1391, 1910, 3948, 4390, 1922, 676, 21, 4303, 712, 589, 1297, 4494, 1499, 4311, 4846, 4299, 1236, 4486, 9668, 4764, 9476, 5728, 8789, 2]
 
-// Module 15810 (DirectMessageIcon)
+// Module 15827 (DirectMessageIcon)
 import importAllResult from "allowChannelAccess";
 import { View } from "Text";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -51,7 +51,7 @@ function DirectMessageIcon(channel) {
   }, items2);
   let tmp9Result = null;
   if (null != stateFromStores) {
-    obj = { avatarDecoration: null, user: null, guildId: "Boolean", size: true, status: "done", isMobileOnline: true, isVROnline: null, statusStyle: null };
+    obj = { avatarDecoration: null, user: null, guildId: "Boolean", size: true, status: false, isMobileOnline: "done", isVROnline: "flowing", statusStyle: "hourglass" };
     obj[0] = stateFromStores.avatarDecoration;
     obj[1] = stateFromStores;
     obj[3] = tmp2(1297).AvatarSizes.NORMAL;

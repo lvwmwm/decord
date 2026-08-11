@@ -1,10 +1,10 @@
-// Module ID: 9147
-// Function ID: 9148
+// Module ID: 9153
+// Function ID: 9154
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 1378, 676, 21, 4303, 712, 9038, 4271, 9148, 7965, 1297, 1236, 4299, 4714, 8940, 2]
+// Dependencies: [19, 17, 1397, 676, 21, 4303, 712, 9044, 4271, 9154, 7967, 1297, 1236, 4299, 4714, 8946, 2]
 // Exports: default
 
-// Module 9147 (EndEventActionSheet)
+// Module 9153 (EndEventActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";
@@ -28,7 +28,7 @@ export default function EndEventActionSheet(channel) {
   channel = channel.channel;
   let activeEvent;
   const tmp = createCacheKey();
-  let obj = channel(9038);
+  let obj = channel(9044);
   activeEvent = obj.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
@@ -78,6 +78,6 @@ export default function EndEventActionSheet(channel) {
     items[3] = callback(View, obj5);
     obj[1] = items;
     obj[0] = callback2(View, obj);
-    return callback(activeEvent(7965), obj);
+    return callback(activeEvent(7967), obj);
   }
 };

@@ -1,7 +1,7 @@
 // Module ID: 4733
 // Function ID: 4734
 // Name: createRules
-// Dependencies: [4734, 4294, 4735, 4293, 4000, 4736, 2]
+// Dependencies: [4734, 4294, 4735, 4293, 4019, 4736, 2]
 // Exports: createWidgetMessageRules, getNotifCenterV2MessagePreviewParser, getParser, getParserWithoutLinks, getWidgetMessageRules
 
 // Module 4733 (createRules)
@@ -14,19 +14,19 @@ function createRules(arg0) {
   const items = [importDefault(4293).defaultRules, tmp, ];
   obj = {};
   obj = {};
-  const merged = Object.assign(importDefault(4000).defaultRules.link);
+  const merged = Object.assign(importDefault(4019).defaultRules.link);
   obj.react = tmp[require(undefined, 4734) /* AST_KEY */.AST_KEY.LINK].react;
   obj[require(4734) /* AST_KEY */.AST_KEY.LINK] = obj;
   const obj1 = {};
-  const merged1 = Object.assign(importDefault(4000).defaultRules.url);
+  const merged1 = Object.assign(importDefault(4019).defaultRules.url);
   obj1.react = tmp[require(undefined, 4734) /* AST_KEY */.AST_KEY.URL].react;
   obj[require(4734) /* AST_KEY */.AST_KEY.URL] = obj1;
   const obj2 = {};
-  const merged2 = Object.assign(importDefault(4000).defaultRules.autolink);
+  const merged2 = Object.assign(importDefault(4019).defaultRules.autolink);
   obj2.react = tmp[require(undefined, 4734) /* AST_KEY */.AST_KEY.AUTOLINK].react;
   obj[require(4734) /* AST_KEY */.AST_KEY.AUTOLINK] = obj2;
   const obj3 = {};
-  const merged3 = Object.assign(importDefault(4000).defaultRules.blockQuote);
+  const merged3 = Object.assign(importDefault(4019).defaultRules.blockQuote);
   obj3.react = tmp[require(undefined, 4734) /* AST_KEY */.AST_KEY.BLOCK_QUOTE].react;
   obj[require(4734) /* AST_KEY */.AST_KEY.BLOCK_QUOTE] = obj3;
   items[2] = obj;

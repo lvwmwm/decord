@@ -1,23 +1,18 @@
-// Module ID: 7244
-// Function ID: 7245
+// Module ID: 7245
+// Function ID: 7246
 // Name: items
-// Dependencies: [5, 7245, 7246, 7247, 7248, 7249, 7250, 7251, 7252, 7253, 7254, 7255, 7256, 7257, 7258, 7259, 7260, 7261, 7262, 7263, 7264, 7265, 7266, 7267, 7268, 7269, 7270, 7271, 7272, 7273, 7274, 7275, 7276, 7277, 7278, 7279, 7280, 7281, 2]
+// Dependencies: [5, 7246, 7247, 7248, 7249, 7250, 7251, 7252, 7253, 7254, 7255, 7256, 7257, 7258, 7259, 7260, 7261, 7262, 7263, 7264, 7265, 7266, 7267, 7268, 7269, 7270, 7271, 7272, 7273, 7274, 7275, 7276, 7277, 7278, 7279, 7280, 7281, 7282, 2]
 // Exports: getBurstAnimation
 
-// Module 7244 (items)
+// Module 7245 (items)
 let closure_0 = arg1;
 let obj = {
   load() {
-    return callback(7245);
+    return callback(7246);
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return callback(7246);
-    }
-  },
   {
     load() {
       return callback(7247);
@@ -97,20 +92,20 @@ const items = [
     load() {
       return callback(7262);
     }
+  },
+  {
+    load() {
+      return callback(7263);
+    }
   }
 ];
 obj = {
   load() {
-    return callback(7263);
+    return callback(7264);
   }
 };
 const items1 = [
   obj,
-  {
-    load() {
-      return callback(7264);
-    }
-  },
   {
     load() {
       return callback(7265);
@@ -190,9 +185,14 @@ const items1 = [
     load() {
       return callback(7280);
     }
+  },
+  {
+    load() {
+      return callback(7281);
+    }
   }
 ];
-closure_0 = require("module_7249")((arg0, arg1, arg2) => {
+closure_0 = require("module_7250")((arg0, arg1, arg2) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let closure_2 = arg2;
@@ -269,7 +269,7 @@ closure_0 = require("module_7249")((arg0, arg1, arg2) => {
   iter.next();
   return iter;
 });
-const result = require("module_7246").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
+const result = require("module_7247").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
 
 export const getBurstAnimation = function() {
   const self = this;

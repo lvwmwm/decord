@@ -1,10 +1,10 @@
-// Module ID: 16979
-// Function ID: 16980
+// Module ID: 16991
+// Function ID: 16992
 // Name: externalFingerprint
 // Dependencies: [1218, 5173, 709, 2]
 // Exports: default
 
-// Module 16979 (externalFingerprint)
+// Module 16991 (externalFingerprint)
 import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;

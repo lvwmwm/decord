@@ -1,10 +1,10 @@
-// Module ID: 11667
-// Function ID: 11668
+// Module ID: 11670
+// Function ID: 11671
 // Name: Divider
-// Dependencies: [19, 17, 21, 4303, 712, 1348, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1367, 2]
 // Exports: default
 
-// Module 11667 (Divider)
+// Module 11670 (Divider)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ let closure_4 = createCacheKey.createStyles((arg0) => {
 const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/Divider.tsx");
 
 export default function Divider() {
-  return <View style={callback(importDefault(1348)("Divider")).divider} />;
+  return <View style={callback(importDefault(1367)("Divider")).divider} />;
 };
 export const DIVIDER_MARGIN_TOP = 8;
 export const DIVIDER_MARGIN_BOTTOM = 8;

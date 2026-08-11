@@ -1,10 +1,10 @@
-// Module ID: 1960
-// Function ID: 1961
+// Module ID: 1979
+// Function ID: 1980
 // Name: handleConnectionOpen
-// Dependencies: [1376, 1218, 1372, 1961, 1891, 4351, 3929, 4124, 676, 1379, 595, 12, 1351, 506, 589, 709, 2]
+// Dependencies: [1395, 1218, 1391, 1980, 1910, 4351, 3948, 4126, 676, 1398, 595, 12, 1370, 506, 589, 709, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
-// Module 1960 (handleConnectionOpen)
+// Module 1979 (handleConnectionOpen)
 import createChannelRecord from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -126,7 +126,7 @@ function handleConnectionOpen(sessionId) {
     const values = tmp9(12)(closure_25).values();
     const obj6 = tmp9(12)(closure_25);
     const combined = values.concat(tmp9(12).values(closure_27));
-    const found = combined.filter(_require(1351).isNotNullish);
+    const found = combined.filter(_require(1370).isNotNullish);
     const tmp9Result = tmp9(12);
     const uniqResult = found.uniq();
     obj[6] = found.uniq().filter((arg0) => {
@@ -185,7 +185,7 @@ function navigateAwayFromChannel(id, guild_id, parent_id) {
     const values = importDefault(12)(dependencyMap).values();
     const obj2 = importDefault(12)(dependencyMap);
     const combined = values.concat(importDefault(12).values(closure_27));
-    const found = combined.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    const found = combined.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     const obj4 = importDefault(12);
     const uniqResult = found.uniq();
     obj[6] = found.uniq().filter((arg0) => {
@@ -518,7 +518,7 @@ const selectedChannelStore = new SelectedChannelStore(require("dispatcher"), {
       const values = importDefault(12)(dependencyMap).values();
       const obj3 = importDefault(12)(dependencyMap);
       const combined = values.concat(importDefault(12).values(dependencyMap3));
-      const found = combined.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+      const found = combined.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
       const obj5 = importDefault(12);
       const uniqResult = found.uniq();
       obj[6] = found.uniq().filter((arg0) => {
@@ -626,7 +626,7 @@ const selectedChannelStore = new SelectedChannelStore(require("dispatcher"), {
       const values = importDefault(12)(dependencyMap).values();
       const obj3 = importDefault(12)(dependencyMap);
       const combined = values.concat(importDefault(12).values(dependencyMap3));
-      const found = combined.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+      const found = combined.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
       const obj5 = importDefault(12);
       const uniqResult = found.uniq();
       obj[6] = found.uniq().filter((arg0) => {
@@ -677,7 +677,7 @@ const selectedChannelStore = new SelectedChannelStore(require("dispatcher"), {
       const values = importDefault(12)(dependencyMap).values();
       const obj2 = importDefault(12)(dependencyMap);
       const combined = values.concat(importDefault(12).values(closure_27));
-      const found = combined.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+      const found = combined.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
       const obj4 = importDefault(12);
       const uniqResult = found.uniq();
       obj[6] = found.uniq().filter((arg0) => {
@@ -727,7 +727,7 @@ const selectedChannelStore = new SelectedChannelStore(require("dispatcher"), {
     const values = importDefault(12)(dependencyMap).values();
     const obj2 = importDefault(12)(dependencyMap);
     const combined = values.concat(importDefault(12).values(closure_27));
-    const found = combined.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    const found = combined.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     const obj4 = importDefault(12);
     const uniqResult = found.uniq();
     obj[6] = found.uniq().filter((arg0) => {
@@ -769,7 +769,7 @@ const selectedChannelStore = new SelectedChannelStore(require("dispatcher"), {
             const values = callback2(12)(closure_25).values();
             const obj2 = callback2(12)(closure_25);
             const combined = values.concat(callback2(12).values(closure_27));
-            const found = combined.filter(callback(1351).isNotNullish);
+            const found = combined.filter(callback(1370).isNotNullish);
             const obj4 = callback2(12);
             const uniqResult = found.uniq();
             obj[6] = found.uniq().filter((arg0) => {
@@ -799,7 +799,7 @@ const selectedChannelStore = new SelectedChannelStore(require("dispatcher"), {
         const obj9 = callback2(12)(closure_25);
         tmp26 = sessionId.guildId !== guildId && null == sessionId.channelId;
         let combined = values.concat(callback2(12).values(closure_27));
-        let found = combined.filter(callback(1351).isNotNullish);
+        let found = combined.filter(callback(1370).isNotNullish);
         const obj11 = callback2(12);
         let uniqResult = found.uniq();
         obj[6] = found.uniq().filter((arg0) => {
@@ -863,7 +863,7 @@ const selectedChannelStore = new SelectedChannelStore(require("dispatcher"), {
         const obj13 = store;
         const obj3 = callback2(12)(closure_25);
         const combined1 = values.concat(callback2(12).values(closure_27));
-        const found1 = combined1.filter(callback(1351).isNotNullish);
+        const found1 = combined1.filter(callback(1370).isNotNullish);
         const obj5 = callback2(12);
         const uniqResult1 = found1.uniq();
         obj[6] = found1.uniq().filter((arg0) => {
@@ -916,7 +916,7 @@ const selectedChannelStore = new SelectedChannelStore(require("dispatcher"), {
       const values = importDefault(12)(closure_25).values();
       const obj3 = importDefault(12)(closure_25);
       const combined = values.concat(importDefault(12).values(closure_27));
-      const found = combined.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+      const found = combined.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
       const obj5 = importDefault(12);
       const uniqResult = found.uniq();
       obj[6] = found.uniq().filter((arg0) => {

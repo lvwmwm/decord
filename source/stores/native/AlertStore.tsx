@@ -1,9 +1,9 @@
-// Module ID: 11018
-// Function ID: 11019
+// Module ID: 11023
+// Function ID: 11024
 // Name: getAlert
 // Dependencies: [589, 709, 2]
 
-// Module 11018 (getAlert)
+// Module 11023 (getAlert)
 import { Store } from "initialize";
 
 let c0 = null;

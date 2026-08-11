@@ -1,10 +1,10 @@
-// Module ID: 14923
-// Function ID: 14924
+// Module ID: 14933
+// Function ID: 14934
 // Name: ActivityPrivacyUpsellActionSheet
-// Dependencies: [19, 21, 14098, 14100, 2]
+// Dependencies: [19, 21, 14106, 14108, 2]
 // Exports: default
 
-// Module 14923 (ActivityPrivacyUpsellActionSheet)
+// Module 14933 (ActivityPrivacyUpsellActionSheet)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -18,11 +18,11 @@ export default function ActivityPrivacyUpsellActionSheet(direction) {
   let toastContent;
   direction = direction.direction;
   const affectedGuildIds = direction.affectedGuildIds;
-  const upsellStrings = direction(14098).getUpsellStrings(direction === direction(14098).ChangeDirection.RESTRICTING, direction.settingName);
+  const upsellStrings = direction(14106).getUpsellStrings(direction === direction(14106).ChangeDirection.RESTRICTING, direction.settingName);
   const items = [direction, affectedGuildIds];
   ({ title, subtitle, confirmText, toastContent } = upsellStrings);
   const onConfirm = React.useCallback(() => {
     const result = direction(outer1_2[2]).applyBulkGuildRestrictionChange(direction, affectedGuildIds);
   }, items);
-  return jsx(affectedGuildIds(14100), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
+  return jsx(affectedGuildIds(14108), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
 };

@@ -1,10 +1,10 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12491
+// Function ID: 12492
 // Name: useAddToWishlistGridItems
-// Dependencies: [19, 1905, 10084, 12489, 12463, 2]
+// Dependencies: [19, 1924, 10089, 12492, 12466, 2]
 // Exports: useAddToWishlistGridItems
 
-// Module 12488 (useAddToWishlistGridItems)
+// Module 12491 (useAddToWishlistGridItems)
 import noop from "noop";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";
 

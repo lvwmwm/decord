@@ -1,10 +1,10 @@
-// Module ID: 6234
-// Function ID: 6235
+// Module ID: 6236
+// Function ID: 6237
 // Name: DisguiseSpotIllustration
-// Dependencies: [21, 5268, 6235, 2]
+// Dependencies: [21, 5268, 6237, 2]
 // Exports: DisguiseSpotIllustration
 
-// Module 6234 (DisguiseSpotIllustration)
+// Module 6236 (DisguiseSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DisguiseSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const DisguiseSpotIllustration = function DisguiseSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6235);
+  obj[0] = importDefault(6237);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,10 +1,10 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12200
+// Function ID: 12201
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 676, 21, 9283, 5931, 1935, 4714, 1236, 2]
+// Dependencies: [5, 19, 676, 21, 9289, 5933, 1954, 4714, 1236, 2]
 // Exports: default
 
-// Module 12197 (GameProfileGameClaimCta)
+// Module 12200 (GameProfileGameClaimCta)
 import createHandoffTokenWithLoadingModal from "createHandoffTokenWithLoadingModal";
 import noop from "noop";
 import { RelativeMarketingURLs } from "ME";

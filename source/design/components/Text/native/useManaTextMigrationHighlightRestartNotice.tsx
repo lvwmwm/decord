@@ -1,10 +1,10 @@
-// Module ID: 15030
-// Function ID: 15031
+// Module ID: 15040
+// Function ID: 15041
 // Name: useManaTextMigrationHighlightRestartNotice
 // Dependencies: [19, 4302, 589, 4643, 2]
 // Exports: useManaTextMigrationHighlightRestartNotice
 
-// Module 15030 (useManaTextMigrationHighlightRestartNotice)
+// Module 15040 (useManaTextMigrationHighlightRestartNotice)
 import noop from "noop";
 import getUserAgnosticState from "getUserAgnosticState";
 

@@ -1,7 +1,7 @@
 // Module ID: 4898
 // Function ID: 4899
 // Name: getImageAttachmentMezzanineV2Config
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: getImageAttachmentMezzanineV2Config
 
 // Module 4898 (getImageAttachmentMezzanineV2Config)

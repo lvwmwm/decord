@@ -1,10 +1,10 @@
-// Module ID: 15411
-// Function ID: 15412
+// Module ID: 15428
+// Function ID: 15429
 // Name: GuildFolderSettingsScene
-// Dependencies: [32, 19, 5155, 15412, 21, 8698, 7967, 1236, 1297, 15413, 5270, 589, 15410, 5783, 2]
+// Dependencies: [32, 19, 5155, 15429, 21, 8704, 7969, 1236, 1297, 15430, 5270, 589, 15427, 5783, 2]
 // Exports: default
 
-// Module 15411 (GuildFolderSettingsScene)
+// Module 15428 (GuildFolderSettingsScene)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
@@ -30,15 +30,15 @@ function GuildFolderSettingsScene(arg0) {
   obj[1] = name;
   obj[2] = onNameChange;
   obj[6] = require(1297) /* Button */.ClearButtonVisibility.WITH_CONTENT;
-  obj[1] = callback(require(7967) /* Form */.FormInput, obj);
-  const items = [callback(require(7967) /* Form */.FormSection, obj), ];
+  obj[1] = callback(require(7969) /* Form */.FormInput, obj);
+  const items = [callback(require(7969) /* Form */.FormSection, obj), ];
   const obj1 = { title: null, children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.xpurRF);
-  obj1[1] = callback(importDefault(15413), { color, onChange: onColorChange });
-  items[1] = callback(require(7967) /* Form */.FormSection, obj1);
+  obj1[1] = callback(importDefault(15430), { color, onChange: onColorChange });
+  items[1] = callback(require(7969) /* Form */.FormSection, obj1);
   obj[0] = items;
-  return callback2(require(7967) /* Form */.Form, obj);
+  return callback2(require(7969) /* Form */.Form, obj);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let c10 = "Folder Settings";
@@ -88,7 +88,7 @@ export default function GuildFolderSettingsModal(folderId) {
   callback = obj2.useCallback(() => {
     const dependencyMap = first1;
     const guildFolders = _undefined.getGuildFolders();
-    folderId(8698).saveGuildFolders(guildFolders.map((folderId) => {
+    folderId(8704).saveGuildFolders(guildFolders.map((folderId) => {
       let tmp = folderId;
       if (folderId.folderId === closure_0) {
         const obj = {};
@@ -99,11 +99,11 @@ export default function GuildFolderSettingsModal(folderId) {
       }
       return tmp;
     }));
-    let obj = folderId(8698);
-    const result = folderId(15410).hideGuildsBarFolderModal();
+    let obj = folderId(8704);
+    const result = folderId(15427).hideGuildsBarFolderModal();
   }, items2);
   callback1 = obj2.useCallback(() => {
-    const result = folderId(15410).hideGuildsBarFolderModal();
+    const result = folderId(15427).hideGuildsBarFolderModal();
   }, []);
   const items3 = [first1, first, first !== initialFolderName || first1 !== initialFolderColor, callback, callback1];
   const memo = obj2.useMemo(() => {

@@ -1,10 +1,10 @@
-// Module ID: 9097
-// Function ID: 9098
+// Module ID: 9103
+// Function ID: 9104
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 1891, 1903, 676, 21, 4303, 712, 5779, 589, 1236, 709, 4001, 5764, 5396, 9098, 4299, 2]
+// Dependencies: [19, 17, 1910, 1922, 676, 21, 4303, 712, 5779, 589, 1236, 709, 4020, 5764, 5396, 9104, 4299, 2]
 // Exports: default
 
-// Module 9097 (InstantInviteQRCodeActionSheet)
+// Module 9103 (InstantInviteQRCodeActionSheet)
 import noop from "noop";
 import { View } from "set";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -75,7 +75,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
         const tmp16 = importDefault(5779);
       }
     }
-    presentFriendRequestAcceptedToast = tmp6(4001).presentFriendRequestAcceptedToast;
+    presentFriendRequestAcceptedToast = tmp6(4020).presentFriendRequestAcceptedToast;
     const items1 = [presentFriendRequestAcceptedToast];
     const effect = React.useEffect(() => {
       function handleRelationshipAdd(relationship) {
@@ -103,7 +103,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
       plainText = tmp12.plainText;
     }
     obj6[3] = plainText;
-    const items2 = [callback(importDefault(9098), obj6), ];
+    const items2 = [callback(importDefault(9104), obj6), ];
     let tmp19Result = null != tmp13;
     if (tmp19Result) {
       obj7 = { style: null, children: null };

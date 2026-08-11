@@ -1,7 +1,7 @@
 // Module ID: 4287
 // Function ID: 4288
 // Name: getPathsFromURL
-// Dependencies: [4288, 676, 678, 4291, 1469, 4292, 4293, 8096, 4734, 4219, 8203, 4289, 7195, 10510, 8902, 7150, 5173, 2]
+// Dependencies: [4288, 676, 678, 4291, 1488, 4292, 4293, 8098, 4734, 4219, 8207, 4289, 7196, 10515, 8908, 7151, 5173, 2]
 // Exports: default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, remainingPathFromDiscordHostMatch
 
 // Module 4287 (getPathsFromURL)
@@ -211,7 +211,7 @@ function getPathsFromURL(target) {
 }
 function parseURLSafely(url) {
   try {
-    return require(1469) /* Url */.parse(url);
+    return require(1488) /* Url */.parse(url);
   } catch (err) {
     return null;
   }
@@ -356,7 +356,7 @@ function findCodedLinks(str) {
     let combined = items;
     const _default = combined(4293).default;
     const parseToASTResult = combined(4293).default.parseToAST(str, true, { allowLinks: true });
-    combined(8096).walkAst(parseToASTResult, (type) => {
+    combined(8098).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === combined(outer1_1[8]).AST_KEY.LINK && typeof type.target === "string";
       if (tmp) {
         tmp = type.target.length > 0;
@@ -1105,7 +1105,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
     let combined = items1;
     const _default = combined(4293).default;
     const parseToASTResult = combined(4293).default.parseToAST(str, true, { allowLinks: true });
-    combined(8096).walkAst(parseToASTResult, (type) => {
+    combined(8098).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === combined(outer1_1[8]).AST_KEY.LINK && typeof type.target === "string";
       if (tmp) {
         tmp = type.target.length > 0;
@@ -1624,7 +1624,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
     combined = items1.concat(match);
     const result = coerceLinksToCodedLinks(combined);
     items = result.slice(0, 10);
-    let obj = combined(8096);
+    let obj = combined(8098);
   }
   return items[0];
 };

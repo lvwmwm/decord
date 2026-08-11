@@ -1,8 +1,8 @@
-// Module ID: 16356
-// Function ID: 16357
-// Dependencies: [3994, 10465, 589, 4271, 16357, 1988, 10463, 2]
+// Module ID: 16372
+// Function ID: 16373
+// Dependencies: [4013, 10470, 589, 4271, 16373, 2007, 10468, 2]
 
-// Module 16356
+// Module 16372
 import setContent from "setContent";
 import { CAPTCHA_MODAL_KEY } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
 
@@ -32,7 +32,7 @@ export default {
     const obj2 = importDefault(4271);
     const merged = Object.assign(obj);
     const merged1 = Object.assign(options.options);
-    obj2.openLazy(_require(1988)(16357, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
+    obj2.openLazy(_require(2007)(16373, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
   },
   showCaptchaAsync(nextResult1) {
     let c1;
@@ -59,8 +59,8 @@ export default {
           return callback({ captcha_key, captcha_rqtoken, captcha_session_id: outer1_3 });
         },
         onReject(arg0) {
-          if (arg0 === obj(10463).CaptchaError.CANCEL) {
-            const captchaCancelError = new obj(10463).CaptchaCancelError();
+          if (arg0 === obj(10468).CaptchaError.CANCEL) {
+            const captchaCancelError = new obj(10468).CaptchaCancelError();
             callback2(captchaCancelError);
           } else {
             const _Error = Error;

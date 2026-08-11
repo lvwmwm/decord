@@ -1,7 +1,7 @@
 // Module ID: 5579
 // Function ID: 5580
 // Name: useBottomSheetContentContainerStyle
-// Dependencies: [32, 19, 17, 5407, 1634]
+// Dependencies: [32, 19, 17, 5407, 1653]
 // Exports: useBottomSheetContentContainerStyle
 
 // Module 5579 (useBottomSheetContentContainerStyle)
@@ -96,11 +96,11 @@ export const useBottomSheetContentContainerStyle = function useBottomSheetConten
       const obj = callback(table[4]);
     }
   };
-  obj = { enableFooterMarginAdjustment: flag, runOnJS: _require(1634).runOnJS, setFooterHeight: tmp3, Platform: closure_5, animatedContentHeight };
+  obj = { enableFooterMarginAdjustment: flag, runOnJS: _require(1653).runOnJS, setFooterHeight: tmp3, Platform: closure_5, animatedContentHeight };
   fn.__closure = obj;
   fn.__workletHash = 1149497927090;
   fn.__initData = closure_8;
   const items2 = [animatedFooterHeight, animatedContentHeight, flag];
-  const animatedReaction = _require(1634).useAnimatedReaction(H, fn, items2);
+  const animatedReaction = _require(1653).useAnimatedReaction(H, fn, items2);
   return tmp6;
 };

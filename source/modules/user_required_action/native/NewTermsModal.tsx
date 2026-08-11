@@ -1,10 +1,10 @@
-// Module ID: 16603
-// Function ID: 16604
+// Module ID: 16615
+// Function ID: 16616
 // Name: handleTouch
-// Dependencies: [5, 32, 19, 17, 1366, 676, 21, 4303, 712, 5761, 1236, 5827, 1609, 5276, 4711, 8309, 9349, 503, 4299, 4714, 9057, 9051, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 676, 21, 4303, 712, 5761, 1236, 5827, 1628, 5276, 4711, 8314, 9355, 503, 4299, 4714, 9063, 9057, 2]
 // Exports: default
 
-// Module 16603 (handleTouch)
+// Module 16615 (handleTouch)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
@@ -60,7 +60,7 @@ let result = require("noop").fileFinishedImporting("modules/user_required_action
 
 export default function NewTermsModal() {
   const tmp = createCacheKey();
-  const rect = importDefault(1609)();
+  const rect = importDefault(1628)();
   const top = rect.top;
   const memo = React.useMemo(() => action.getAction(), []);
   const tmp5 = callback2(React.useState(false), 2);
@@ -129,7 +129,7 @@ export default function NewTermsModal() {
   obj[0] = memo(503).ImpressionTypes.VIEW;
   obj[1] = memo(503).ImpressionNames.USER_AGREEMENTS;
   obj[2] = { required_action: memo };
-  importDefault(9349)(obj, {}, []);
+  importDefault(9355)(obj, {}, []);
   let tmp10 = null;
   if (null != memo) {
     obj = { style: null, children: null };
@@ -205,15 +205,15 @@ export default function NewTermsModal() {
     obj18[0] = top;
     items4[1] = obj18;
     obj17[0] = items4;
-    obj17[1] = tmp2(9051);
+    obj17[1] = tmp2(9057);
     obj17[2] = tmp.navbarRight.tintColor;
     obj17[3] = handleMoreActions;
     const intl9 = tmp6(1236).intl;
     obj17[5] = intl9.string(tmp6(1236).t["UKOtz+"]);
-    items3[2] = callback3(tmp2(9057), obj17);
+    items3[2] = callback3(tmp2(9063), obj17);
     obj[1] = items3;
     tmp10 = callback4(closure_6, obj);
-    const tmp2Result = tmp2(9057);
+    const tmp2Result = tmp2(9063);
   }
   return tmp10;
 };

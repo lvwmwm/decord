@@ -1,10 +1,10 @@
-// Module ID: 14143
-// Function ID: 14144
+// Module ID: 14151
+// Function ID: 14152
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1903, 6996, 21, 4303, 712, 647, 4271, 14144, 1988, 14145, 9057, 1236, 2284, 4299, 1297, 5779, 2]
+// Dependencies: [19, 17, 1922, 6999, 21, 4303, 712, 647, 4271, 14152, 2007, 14153, 9063, 1236, 2303, 4299, 1297, 5779, 2]
 // Exports: default
 
-// Module 14143 (FamilyCenterTopActivity)
+// Module 14151 (FamilyCenterTopActivity)
 import noop from "noop";
 import { View } from "GuildIconSizes";
 import mergeGuildAvatar from "mergeGuildAvatar";

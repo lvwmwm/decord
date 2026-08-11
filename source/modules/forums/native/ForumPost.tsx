@@ -1,12 +1,12 @@
-// Module ID: 11391
-// Function ID: 11392
+// Module ID: 11394
+// Function ID: 11395
 // Name: ForumPostGrid
-// Dependencies: [19, 1372, 3938, 11392, 21, 11393, 11397, 11408, 589, 38, 5920, 8403, 11412, 11413, 8405, 11418, 1382, 2]
+// Dependencies: [19, 1391, 3957, 11395, 21, 11396, 11400, 11411, 589, 38, 5920, 8409, 11415, 11416, 8411, 11421, 1401, 2]
 // Exports: ForumPostListDisabled
 
-// Module 11391 (ForumPostGrid)
+// Module 11394 (ForumPostGrid)
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { useForumChannelStore } from "set";
 import jsxProd from "jsxProd";
 import importAllResult from "noop";
@@ -25,7 +25,7 @@ function ForumPostGrid(arg0) {
   ({ hasUnreads, thread } = arg0);
   const obj = { children: null };
   ({ firstMessage, isNew, media, parentChannel } = arg0);
-  const items = [callback(importDefault(11393), { thread, hasUnreads, isNew }), callback(importDefault(11397), { thread, hasUnreads, media }), callback(importDefault(11408), { thread, firstMessage, hasUnreads, parentChannel })];
+  const items = [callback(importDefault(11396), { thread, hasUnreads, isNew }), callback(importDefault(11400), { thread, hasUnreads, media }), callback(importDefault(11411), { thread, firstMessage, hasUnreads, parentChannel })];
   obj[0] = items;
   return callback2(closure_7, obj);
 }
@@ -64,7 +64,7 @@ function ConnectedForumPost(arg0) {
   const obj6 = require(firstMessage[14]);
   const firstMediaIsEmbed = require(firstMessage[14]).useFirstMediaIsEmbed(firstMessage, hasSpoilerEmbeds);
   const obj7 = require(firstMessage[14]);
-  const items2 = [upsertRelationship];
+  const items2 = [markAllUserIdListsStale];
   const stateFromStoresObject = require(firstMessage[8]).useStateFromStoresObject(items2, () => {
     let isBlockedForMessageResult = null != firstMessage;
     if (isBlockedForMessageResult) {
@@ -152,7 +152,7 @@ const memoResult = require("noop").memo((arg0) => {
   }
   return tmp;
 });
-const result = require("upsertRelationship").fileFinishedImporting("modules/forums/native/ForumPost.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/forums/native/ForumPost.tsx");
 
 export default memoResult;
 export const ForumPostListDisabled = function ForumPostListDisabled(threadId) {
@@ -175,7 +175,7 @@ export const ForumPostListDisabled = function ForumPostListDisabled(threadId) {
   const tmp4 = stateFromStores;
   const firstForumPostMessage = threadId(5920).useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
-  threadId(8403);
+  threadId(8409);
   if (loaded) {
     obj = { style: null, children: null };
     obj[0] = style;
@@ -186,8 +186,8 @@ export const ForumPostListDisabled = function ForumPostListDisabled(threadId) {
     obj[3] = tmp10;
     obj[4] = localDeviceMedia;
     obj[7] = loaded;
-    obj[1] = callback(tmp4(11413), obj);
-    tmp5 = callback(tmp(11412).ForumPostDisabledContainer, obj);
+    obj[1] = callback(tmp4(11416), obj);
+    tmp5 = callback(tmp(11415).ForumPostDisabledContainer, obj);
   }
   return tmp5;
 };

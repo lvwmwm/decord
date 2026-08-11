@@ -1,23 +1,21 @@
 // Module ID: 5892
 // Function ID: 5893
 // Name: GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME
-// Dependencies: [109, 19, 1372, 1891, 676, 589, 5893, 5920, 5729, 5926, 5928, 5225, 2]
-// Exports: canInviteToActivity, useFirstMessage, useGameInvitesActiveAndArchivedThreads, useGameInvitesChannelApplicationId, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
+// Dependencies: [109, 19, 1391, 676, 589, 5893, 5920, 38, 5926, 5729, 5928, 5930, 5225, 2]
+// Exports: canInviteToActivity, useFirstMessage, useGameInvitesActiveAndArchivedThreads, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
 
 // Module 5892 (GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { useMemo } from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
 
-let c9;
+let error;
 let metroImportAll;
 const require = arg1;
 let closure_3 = ["data"];
-({ ActivityFlags: metroImportAll, ActivityTypes: c9 } = ME);
-let closure_10 = { "1509696536903417891": "1373923512766697512" };
-let c11 = "No Mic";
+({ ActivityFlags: error, ActivityTypes: metroImportAll } = ME);
+let c9 = "No Mic";
 const result = require("ensureGuildLoaded").fileFinishedImporting("modules/game_invite_channels/GameInvitesChannelUtils.tsx");
 
 export const GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME = "No Mic";
@@ -78,81 +76,40 @@ export const useIsGameInvitePostVoiceEnabled = function useIsGameInvitePostVoice
       tmp = tmp4;
     }
     return tmp;
-  }) && !appliedTags.some((name) => name.name === closure_11);
+  }) && !appliedTags.some((name) => name.name === closure_9);
 };
 export const useFirstMessage = function useFirstMessage(stateFromStores, enabled) {
   let obj = require(5920) /* loadForumPostData */;
   obj = { enabled, allowArchived: true };
   return obj.useFirstForumPostMessage(stateFromStores, obj);
 };
-export const useGameInvitesChannelApplicationId = function useGameInvitesChannelApplicationId(arg0) {
-  const _require = arg0;
-  const items = [createGuildRecordFromRust];
-  const items1 = [arg0];
-  let tmp2 = null;
-  const stateFromStores = _require(589).useStateFromStores(items, () => {
-    let tmp2 = null;
-    if (null != application) {
-      const guild = outer1_7.getGuild(tmp);
-      let first;
-      if (guild != null) {
-        const gameApplicationIds = guild.gameApplicationIds;
-        if (gameApplicationIds != null) {
-          first = gameApplicationIds[0];
-        }
-      }
-      if (first == null) {
-        first = null;
-      }
-      tmp2 = first;
-    }
-    return tmp2;
-  }, items1);
-  if (null != arg0) {
-    tmp2 = dependencyMap[arg0];
-  }
-  if (tmp2 == null) {
-    tmp2 = stateFromStores;
-  }
-  return tmp2;
-};
 export const useGameInvitesChannelOfficialApplication = function useGameInvitesChannelOfficialApplication(arg0) {
   let application = arg0;
-  const items = [createGuildRecordFromRust];
-  const items1 = [arg0];
-  let tmp4 = null;
-  const stateFromStores = application(589).useStateFromStores(items, () => {
-    let tmp2 = null;
-    if (null != application) {
-      const guild = outer1_7.getGuild(tmp);
-      let first;
-      if (guild != null) {
-        const gameApplicationIds = guild.gameApplicationIds;
-        if (gameApplicationIds != null) {
-          first = gameApplicationIds[0];
-        }
-      }
-      if (first == null) {
-        first = null;
-      }
-      tmp2 = first;
-    }
-    return tmp2;
-  }, items1);
-  if (null != arg0) {
-    tmp4 = dependencyMap[arg0];
-  }
-  if (tmp4 == null) {
-    tmp4 = stateFromStores;
-  }
+  const items = [ensureGuildLoaded];
+  const stateFromStores = application(589).useStateFromStores(items, () => outer1_6.getChannel(application));
+  let isGameInvitesChannelResult = null == stateFromStores;
   const obj = application(589);
-  const tmp = application;
-  application = application(5729).useApplication(tmp4);
-  const items2 = [application];
+  if (!isGameInvitesChannelResult) {
+    isGameInvitesChannelResult = stateFromStores.isGameInvitesChannel();
+  }
+  importDefault(38)(isGameInvitesChannelResult, "requires a game invites channel");
+  let tmpResult = tmp(5926);
+  let gameId;
+  if (stateFromStores != null) {
+    gameId = stateFromStores.gameId;
+  }
+  const data = tmpResult.useGame(gameId).data;
+  let officialApplicationId;
+  if (data != null) {
+    officialApplicationId = data.getOfficialApplicationId();
+  }
+  tmpResult = tmp(5729);
+  application = tmpResult.useApplication(officialApplicationId);
+  const items1 = [application];
   return useMemo(() => {
     const merged = Object.assign(outer1_4(application, outer1_3));
     return { application: application.data };
-  }, items2);
+  }, items1);
 };
 export const useSubscribeToGameInvitePostAuthors = function useSubscribeToGameInvitePostAuthors(isGameInvitesChannel) {
   const _require = isGameInvitesChannel;
@@ -204,12 +161,12 @@ export const useSubscribeToGameInvitePostAuthors = function useSubscribeToGameIn
     }
     return tmp;
   }, items2);
-  const subscribeGuildMembers = _require(5926).useSubscribeGuildMembers(tmp3, "GameInvitesChannelPostAuthors");
+  const subscribeGuildMembers = _require(5928).useSubscribeGuildMembers(tmp3, "GameInvitesChannelPostAuthors");
 };
 export const canInviteToActivity = function canInviteToActivity(type) {
   let tmp = type.type === constants2.PLAYING;
   if (tmp) {
-    tmp = importDefault(5928)(type, constants.JOIN);
+    tmp = importDefault(5930)(type, constants.JOIN);
   }
   return tmp;
 };
@@ -235,7 +192,7 @@ export const useGameInvitesActiveAndArchivedThreads = function useGameInvitesAct
           let tmp15 = callback;
           let tmp16 = isGameInvitesChannelResult;
           let tmp17 = channel;
-          if (callback(isGameInvitesChannelResult[11])(tmp14) <= timestamp) {
+          if (callback(isGameInvitesChannelResult[12])(tmp14) <= timestamp) {
             let tmp20 = nextResult;
             let arr = items1.push(tmp11);
             continue;

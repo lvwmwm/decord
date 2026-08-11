@@ -1,9 +1,9 @@
-// Module ID: 16227
-// Function ID: 16228
+// Module ID: 16241
+// Function ID: 16242
 // Name: StreamIcon
-// Dependencies: [19, 17, 4295, 1371, 4322, 4375, 11646, 11644, 11649, 676, 4321, 21, 4036, 1297, 4303, 712, 1348, 11645, 16183, 16228, 10945, 16229, 16181, 10854, 9178, 5781, 7793, 1236, 9179, 4713, 16179, 4483, 4367, 10601, 16110, 16230, 16231, 589, 16213, 8009, 16232, 4013, 4700, 5728, 8783, 9190, 4533, 9236, 4299, 9252, 12212, 16156, 2]
+// Dependencies: [19, 17, 4295, 1390, 4322, 4375, 11649, 11647, 11652, 676, 4321, 21, 4042, 1297, 4303, 712, 1367, 11648, 16199, 16242, 10950, 16243, 16197, 10859, 9184, 5781, 7795, 1236, 9185, 4713, 16195, 4483, 4367, 10606, 16127, 16244, 16245, 589, 16227, 8011, 16246, 4031, 4700, 5728, 8789, 9196, 4533, 9242, 4299, 9258, 12215, 16173, 2]
 
-// Module 16227 (StreamIcon)
+// Module 16241 (StreamIcon)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "dismissPanel";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -16,9 +16,9 @@ import { VOICE_PANEL_CARD_INNER_PADDING as closure_12 } from "CARD_SIZE";
 import { ThemeTypes } from "ME";
 import ParticipantTypes from "ParticipantTypes";
 import jsxProd from "registerAsset";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 import createCacheKey from "createCacheKey";
-import importDefaultResult1 from "module_4036";
+import importDefaultResult1 from "module_4042";
 
 let Platform;
 let Pressable;
@@ -33,8 +33,8 @@ const require = arg1;
 function StreamIcon(voicePlatform) {
   voicePlatform = voicePlatform.voicePlatform;
   let controlsSpecs;
-  controlsSpecs = importAllResult.useContext(importDefault(11645)).controlsSpecs;
-  let obj = controlsSpecs(4036);
+  controlsSpecs = importAllResult.useContext(importDefault(11648)).controlsSpecs;
+  let obj = controlsSpecs(4042);
   const fn = function o() {
     const tmp = controlsSpecs.get().mode === outer1_11.HIDDEN;
     let num = 4;
@@ -54,43 +54,43 @@ function StreamIcon(voicePlatform) {
   fn.__workletHash = 3270040588948;
   fn.__initData = closure_23;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let source = importDefault(16183);
+  let source = importDefault(16199);
   if (voicePlatform === constants2.XBOX) {
-    source = tmp(16228);
+    source = tmp(16242);
   } else if (voicePlatform === tmp6.MOBILE) {
-    source = tmp(10945);
+    source = tmp(10950);
   } else if (voicePlatform === tmp6.QUEST) {
-    source = tmp(16229);
+    source = tmp(16243);
   }
-  const style = [callback2(importDefault(1348)("VoicePanelCardFloatingControls")).iconWithoutBackground, animatedStyle];
+  const style = [callback2(importDefault(1367)("VoicePanelCardFloatingControls")).iconWithoutBackground, animatedStyle];
   return callback(closure_19, { source, style });
 }
 function AnimatedLabelIcon(icon) {
   icon = icon.icon;
-  const tmp3 = callback2(importDefault(1348)("VoicePanelCardFloatingControls"));
+  const tmp3 = callback2(importDefault(1367)("VoicePanelCardFloatingControls"));
   const type = icon.type;
-  if (require(16181) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
+  if (require(16197) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
     let obj = { voicePlatform: null };
     obj[0] = icon.voicePlatform;
     return callback(StreamIcon, obj);
-  } else if (tmp4(16181).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
+  } else if (tmp4(16197).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     obj = { style: null, hitSlop: 12, onPress: null, children: null };
     obj[0] = tmp3.speakerMuteIcon;
     obj[2] = icon.onPress;
     const obj1 = { style: null };
     obj1[0] = tmp3.iconWithoutBackground;
-    obj[3] = callback(tmp4(10854).VoiceXIcon, obj1);
+    obj[3] = callback(tmp4(10859).VoiceXIcon, obj1);
     return callback(Pressable, obj);
-  } else if (tmp4(16181).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
+  } else if (tmp4(16197).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     const obj2 = { style: null, onPress: null, children: null };
     obj2[0] = tmp3.iconContainer;
     obj2[1] = icon.onPress;
     const obj3 = { style: null, state: null };
     obj3[0] = tmp3.icon;
     obj3[1] = icon.videoIconState;
-    obj2[2] = callback(tmp4(9178).VideoIcon, obj3);
+    obj2[2] = callback(tmp4(9184).VideoIcon, obj3);
     return callback(Pressable, obj2);
-  } else if (tmp4(16181).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
+  } else if (tmp4(16197).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp3.iconContainer;
     const obj5 = { onPress: null, hitSlop: 12, children: null };
@@ -98,16 +98,16 @@ function AnimatedLabelIcon(icon) {
     const obj6 = { style: null, state: null, alwaysWhite: true };
     obj6[0] = tmp3.icon;
     obj6[1] = icon.muteDeafenIconState;
-    obj5[2] = callback(tmp4(9178).MuteDeafenIcon, obj6);
+    obj5[2] = callback(tmp4(9184).MuteDeafenIcon, obj6);
     obj4[1] = callback(Pressable, obj5);
     return callback(tmp(5781), obj4);
-  } else if (tmp4(16181).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
+  } else if (tmp4(16197).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     obj = { style: null, onPress: null, children: null };
     obj[0] = tmp3.iconContainer;
     obj[1] = icon.onPress;
     const obj7 = { size: "xs", color: null };
     obj7[1] = tmp(712).colors.TEXT_FEEDBACK_WARNING;
-    obj[2] = callback(tmp4(7793).CircleErrorIcon, obj7);
+    obj[2] = callback(tmp4(7795).CircleErrorIcon, obj7);
     return callback(Pressable, obj);
   }
 }
@@ -116,8 +116,8 @@ let c3 = importAllResult;
 ({ MODE_CHANGE_PHYSICS: c9, VoicePanelModes: c10 } = VoicePanelModes);
 ({ ParticipantTypes: closure_14, VoicePlatforms: closure_15 } = ParticipantTypes);
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = jsxProd);
-let closure_19 = require("module_4036").createAnimatedComponent(require("Button").Icon);
-let closure_20 = require("module_4036").createAnimatedComponent(Pressable);
+let closure_19 = require("module_4042").createAnimatedComponent(require("Button").Icon);
+let closure_20 = require("module_4042").createAnimatedComponent(Pressable);
 let c21 = 28;
 let closure_22 = createCacheKey.createStyles((arg0) => {
   let obj = { labelPositionContainer: { position: "absolute", left: 8, right: 8, bottom: 8, justifyContent: "center", alignItems: "center", marginHorizontal: 8 }, labelOuterContainer: null, initialIcons: null, icon: null, iconWithoutBackground: null, iconContainer: null, speakerMuteIcon: null, floatingContainer: null, floatingText: null, ringingIconContainer: null, ringingIcon: null, secureFramesIcon: null };
@@ -157,8 +157,8 @@ let closure_27 = importAllResult.memo((participant) => {
   controlsHidden = participant.controlsHidden;
   let guildId;
   ({ isSelf, layout } = participant);
-  guildId = importAllResult.useContext(guildId(11645)).guildId;
-  let obj = controlsHidden(4036);
+  guildId = importAllResult.useContext(guildId(11648)).guildId;
+  let obj = controlsHidden(4042);
   const fn = function n() {
     const value = controlsHidden.get();
     if (value) {
@@ -204,13 +204,13 @@ let closure_27 = importAllResult.memo((participant) => {
     }
   }, items);
   obj = { icon: null, onPress: null, style: null, layout: null, accessibilityLabel: null };
-  obj[0] = guildId(16230);
+  obj[0] = guildId(16244);
   obj[1] = callback;
   obj[2] = animatedStyle;
   obj[3] = layout;
   const tmp3 = closure_16;
-  const tmp4 = guildId(16110);
-  const result = controlsHidden(16179).isStableActivityParticipant(participant);
+  const tmp4 = guildId(16127);
+  const result = controlsHidden(16195).isStableActivityParticipant(participant);
   const intl = controlsHidden(1236).intl;
   const string = intl.string;
   const t = controlsHidden(1236).t;
@@ -394,7 +394,7 @@ let closure_37 = importAllResult.memo((controlsHidden) => {
 let closure_38 = importAllResult.memo((controlsHidden) => {
   const obj = { theme: ThemeTypes.LIGHT, children: null };
   obj[1] = callback(closure_37, { controlsHidden: controlsHidden.controlsHidden });
-  return callback(require(4013) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(4031) /* ManaContext */.ThemeContextProvider, obj);
 });
 let closure_39 = { code: "function VoicePanelCardFloatingControlsTsx10(){const{hasHiddenVisibleIcon,focused,connected,mode,VoicePanelModes,controlsHidden}=this.__closure;const showIcon=hasHiddenVisibleIcon&&focused.get()==null;return!connected.get()||mode.get()===VoicePanelModes.PIP||!showIcon&&controlsHidden.get();}" };
 let closure_40 = { code: "function VoicePanelCardFloatingControlsTsx11(){const{isPillHidden}=this.__closure;return isPillHidden.get();}" };

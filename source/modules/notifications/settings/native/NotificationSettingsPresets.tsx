@@ -1,10 +1,10 @@
-// Module ID: 9829
-// Function ID: 9830
+// Module ID: 9834
+// Function ID: 9835
 // Name: NotificationSettingsPresets
-// Dependencies: [19, 17, 21, 1236, 4502, 4264, 9830, 9731, 4303, 712, 8956, 4299, 4714, 9141, 9832, 9826, 2]
+// Dependencies: [19, 17, 21, 1236, 4502, 4264, 9835, 9736, 4303, 712, 8962, 4299, 4714, 9147, 9837, 9831, 2]
 // Exports: NotificationSettingsChannelPresets, NotificationSettingsGuildPresets
 
-// Module 9829 (NotificationSettingsPresets)
+// Module 9834 (NotificationSettingsPresets)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -128,7 +128,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/notifications/s
 export const NotificationSettingsGuildPresets = function NotificationSettingsGuildPresets(guildId) {
   const _require = guildId;
   const obj = { preset: null, updatePreset: null };
-  obj[0] = _require(9832).useGuildPresetSettings(guildId.guildId).preset;
+  obj[0] = _require(9837).useGuildPresetSettings(guildId.guildId).preset;
   obj[1] = function updatePreset(arg0) {
     return guildId(outer1_1[14]).updateGuildPreset(guildId.guildId, arg0);
   };
@@ -137,7 +137,7 @@ export const NotificationSettingsGuildPresets = function NotificationSettingsGui
 export const NotificationSettingsChannelPresets = function NotificationSettingsChannelPresets(channel) {
   const _require = channel;
   const obj = { preset: null, updatePreset: null };
-  obj[0] = _require(9826).useChannelPresetSettings(channel.channel).preset;
+  obj[0] = _require(9831).useChannelPresetSettings(channel.channel).preset;
   obj[1] = function updatePreset(arg0) {
     return channel(outer1_1[15]).updateChannelPreset(channel.channel.guild_id, channel.channel.id, arg0);
   };

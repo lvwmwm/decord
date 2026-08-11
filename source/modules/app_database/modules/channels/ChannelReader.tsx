@@ -1,9 +1,9 @@
-// Module ID: 1956
-// Function ID: 1957
+// Module ID: 1975
+// Function ID: 1976
 // Name: getSync
-// Dependencies: [5, 3, 1936, 2]
+// Dependencies: [5, 3, 1955, 2]
 
-// Module 1956 (getSync)
+// Module 1975 (getSync)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 let c3 = new require("set")("ChannelReader");
@@ -14,8 +14,8 @@ const prototype = function ChannelReader() {
 }.prototype;
 prototype["getSync"] = function getSync(closure_1, closure_0) {
   const nowResult = performance.now();
-  const obj = importDefault(1936);
-  const manySyncUnsafe = importDefault(1936).channels(closure_1).getManySyncUnsafe(closure_0);
+  const obj = importDefault(1955);
+  const manySyncUnsafe = importDefault(1955).channels(closure_1).getManySyncUnsafe(closure_0);
   const diff = performance.now() - nowResult;
   tmp2.log("synchronously loaded in " + diff + "ms (guild: " + closure_0 + ", channels: " + manySyncUnsafe.length + ")");
   const items = [manySyncUnsafe, diff];

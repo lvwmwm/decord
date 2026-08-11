@@ -1,16 +1,16 @@
-// Module ID: 14188
-// Function ID: 14189
+// Module ID: 14196
+// Function ID: 14197
 // Name: WarningLabel
-// Dependencies: [19, 17, 1371, 5250, 1372, 3938, 4499, 1975, 676, 9669, 10364, 21, 4303, 712, 4259, 4299, 1480, 1481, 1236, 5736, 10601, 10516, 589, 11957, 1416, 4644, 11956, 4271, 10365, 1988, 503, 9243, 7784, 7593, 6013, 8932, 4159, 5262, 5257, 11, 11443, 9532, 5767, 5768, 5374, 2]
+// Dependencies: [19, 17, 1390, 5250, 1391, 3957, 4499, 1994, 676, 9674, 10369, 21, 4303, 712, 4259, 4299, 1499, 1500, 1236, 5736, 10606, 10521, 589, 11960, 1435, 4644, 11959, 4271, 10370, 2007, 503, 9249, 7786, 7595, 6015, 8938, 4159, 5262, 5257, 11, 11446, 9538, 5767, 5768, 5374, 2]
 // Exports: default, handleDeleteApp
 
-// Module 14188 (WarningLabel)
+// Module 14196 (WarningLabel)
 import tokensToAppTokensMap from "tokensToAppTokensMap";
 import get_ActivityIndicator from "createStandardNavigationFactories";
 import participantFromServer from "participantFromServer";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import _getSystemLocale from "_getSystemLocale";
 import ME from "ME";
@@ -39,7 +39,7 @@ function WarningLabel(children) {
 }
 function AuthorizedAppTwoWay(application) {
   let navigation;
-  let obj = navigation(1480);
+  let obj = navigation(1499);
   navigation = obj.useNavigation();
   const items = [navigation];
   obj = { text: null };
@@ -92,7 +92,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   let obj2 = id(stateFromStores[16]);
   navigation = obj2.useNavigation();
   let obj3 = id(stateFromStores[22]);
-  const items2 = [upsertRelationship];
+  const items2 = [markAllUserIdListsStale];
   const stateFromStores2 = obj3.useStateFromStores(items2, () => {
     let id;
     if (application != null) {
@@ -373,5 +373,5 @@ export const handleDeleteApp = function handleDeleteApp(application) {
     _location = value.location;
   }
   obj = { location: _location, applicationId: application.id };
-  importDefault(10601).leaveActivity(obj);
+  importDefault(10606).leaveActivity(obj);
 };

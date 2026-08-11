@@ -1,10 +1,10 @@
-// Module ID: 15570
-// Function ID: 15571
+// Module ID: 15587
+// Function ID: 15588
 // Name: ICYMICustomScoresModal
-// Dependencies: [19, 21, 8570, 4303, 712, 5783, 8382, 1236, 9678, 15571, 15572, 2]
+// Dependencies: [19, 21, 8576, 4303, 712, 5783, 8388, 1236, 9683, 15588, 15589, 2]
 // Exports: default
 
-// Module 15570 (ICYMICustomScoresModal)
+// Module 15587 (ICYMICustomScoresModal)
 import "noop";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -47,12 +47,12 @@ export default function ICYMICustomScoresModal() {
       const obj = { title: null, headerLeft: null };
       const intl = lib(1236).intl;
       obj[0] = intl.string(lib(1236).t.jVshKt);
-      obj[1] = lib(8382).getRenderModalCloseImage(navigation.navigation);
-      const merged = Object.assign(callback(9678)());
+      obj[1] = lib(8388).getRenderModalCloseImage(navigation.navigation);
+      const merged = Object.assign(callback(9683)());
       return obj;
     },
     getComponent() {
-      return lib(15571).default;
+      return lib(15588).default;
     }
   };
   const items = [
@@ -61,11 +61,11 @@ export default function ICYMICustomScoresModal() {
       name: "guild",
       options(navigation) {
         const obj = { headerLeft: null };
-        obj[0] = lib(8382).getRenderModalBackImage(navigation.navigation);
+        obj[0] = lib(8388).getRenderModalBackImage(navigation.navigation);
         return obj;
       },
       getComponent() {
-        return lib(15572).default;
+        return lib(15589).default;
       }
     })
   ];

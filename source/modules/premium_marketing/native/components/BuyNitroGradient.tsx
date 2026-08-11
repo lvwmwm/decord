@@ -1,15 +1,15 @@
-// Module ID: 7744
-// Function ID: 7745
+// Module ID: 7746
+// Function ID: 7747
 // Name: BuyNitroGradient
-// Dependencies: [19, 1905, 21, 4036, 4725, 4304, 4307, 2]
+// Dependencies: [19, 1924, 21, 4042, 4725, 4304, 4307, 2]
 // Exports: default
 
-// Module 7744 (BuyNitroGradient)
+// Module 7746 (BuyNitroGradient)
 import "noop";
 import { PremiumTypes } from "GuildFeatures";
 import jsxProd from "jsxProd";
 import LinearGradient from "LinearGradient";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 
 let c4;
 let c5;
@@ -28,7 +28,7 @@ export default function BuyNitroGradient(selectedTier) {
   selectedTier = selectedTier.selectedTier;
   ({ start, end, style } = selectedTier);
   ({ nitroColors, basicColors } = selectedTier);
-  let obj = selectedTier(4036);
+  let obj = selectedTier(4042);
   const fn = function f() {
     let obj = selectedTier(outer1_2[5]);
     let num = 0;

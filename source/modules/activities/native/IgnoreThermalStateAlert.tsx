@@ -1,10 +1,10 @@
-// Module ID: 10676
-// Function ID: 10677
+// Module ID: 10681
+// Function ID: 10682
 // Name: IgnoreThermalStateAlert
-// Dependencies: [19, 21, 4303, 4732, 1236, 10614, 4299, 2]
+// Dependencies: [19, 21, 4303, 4732, 1236, 10619, 4299, 2]
 // Exports: IgnoreThermalStateAlert
 
-// Module 10676 (IgnoreThermalStateAlert)
+// Module 10681 (IgnoreThermalStateAlert)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

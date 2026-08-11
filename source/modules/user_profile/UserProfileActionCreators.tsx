@@ -1,10 +1,10 @@
-// Module ID: 8268
-// Function ID: 8269
+// Module ID: 8273
+// Function ID: 8274
 // Name: _saveProfileChanges
-// Dependencies: [5, 1903, 676, 1905, 1231, 4153, 1236, 698, 8269, 7142, 709, 8270, 530, 8273, 4202, 2]
+// Dependencies: [5, 1922, 676, 1924, 1231, 1363, 1236, 698, 8274, 7143, 709, 8275, 530, 8278, 4202, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8268 (_saveProfileChanges)
+// Module 8273 (_saveProfileChanges)
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -189,7 +189,7 @@ export const notifyUnsavedUserProfileChangesInModal = function notifyUnsavedUser
   ComponentDispatch.dispatch(constants.SHAKE_PROFILE_MODAL);
   const ComponentDispatch2 = require(1231) /* ComponentDispatcher */.ComponentDispatch;
   ComponentDispatch2.dispatch(constants.EMPHASIZE_NOTICE);
-  const AccessibilityAnnouncer = require(4153) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   const intl = require(1236) /* getSystemLocale */.intl;
   const intl2 = require(1236) /* getSystemLocale */.intl;
   AccessibilityAnnouncer.announce("" + intl.string(require(1236) /* getSystemLocale */.t.GP7JLE) + " " + intl2.string(require(1236) /* getSystemLocale */.t.gKoO1D));
@@ -249,9 +249,9 @@ export const setTryItOutProfileEffect = function setTryItOutProfileEffect(profil
   obj = { feature_name: constants4.PROFILE_EFFECT, feature_tier: constants3.PREMIUM_STANDARD };
   importDefault(698).track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
 };
-export const setTryItOutBanner = function setTryItOutBanner(c5) {
+export const setTryItOutBanner = function setTryItOutBanner(outer1_8) {
   let obj = importDefault(709);
-  obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_BANNER", banner: c5 };
+  obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_BANNER", banner: outer1_8 };
   obj.dispatch(obj);
   obj = { feature_name: constants4.PROFILE_BANNER, feature_tier: constants3.PREMIUM_STANDARD };
   importDefault(698).track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);

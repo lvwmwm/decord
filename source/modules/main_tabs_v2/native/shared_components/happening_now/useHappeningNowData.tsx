@@ -1,10 +1,10 @@
-// Module ID: 15194
-// Function ID: 15195
+// Module ID: 15203
+// Function ID: 15204
 // Name: importDefaultResult1
-// Dependencies: [32, 19, 1371, 4994, 12970, 6985, 1377, 7120, 4322, 1218, 5897, 1372, 1961, 1891, 3929, 4390, 3938, 4499, 1903, 4319, 14530, 676, 9081, 589, 15195, 15196, 5927, 5903, 709, 10769, 10, 12, 4517, 15197, 15198, 15199, 5928, 15200, 9068, 1351, 5329, 2]
+// Dependencies: [32, 19, 1390, 4994, 12974, 6988, 1396, 7121, 4322, 1218, 5897, 1391, 1980, 1910, 3948, 4390, 3957, 4499, 1922, 4319, 14538, 676, 9087, 589, 15204, 15205, 5929, 5903, 709, 10774, 10, 12, 4517, 15206, 15207, 15208, 5930, 15209, 9074, 1370, 5329, 2]
 // Exports: default
 
-// Module 15194 (importDefaultResult1)
+// Module 15203 (importDefaultResult1)
 import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel";
 import updateVoiceState from "updateVoiceState";
 import participantFromServer from "participantFromServer";
@@ -24,7 +24,7 @@ import { GUILD_SELECTABLE_CHANNELS_KEY as closure_20 } from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import sortActivity from "sortActivity";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import importDefaultResult2 from "mergeGuildAvatar";
 import importDefaultResult3 from "updateVoiceState";
@@ -214,7 +214,7 @@ export default function useHappeningNowData(has, guildId) {
   const items14 = [callback];
   stateFromStores7 = guildId(isFocused[23]).useStateFromStores(items14, () => callback.getUserAffinities());
   const tmp9Result1 = guildId(isFocused[23]);
-  const items15 = [upsertRelationship];
+  const items15 = [markAllUserIdListsStale];
   const stateFromStoresArray = guildId(isFocused[23]).useStateFromStoresArray(items15, () => tmp32.getFriendIDs());
   const tmp9Result2 = guildId(isFocused[23]);
   const items16 = [stateFromStoresArray];
@@ -260,7 +260,7 @@ export default function useHappeningNowData(has, guildId) {
   if (!tmp32) {
     tmp32 = stateFromStores6;
   }
-  upsertRelationship = tmp32;
+  markAllUserIdListsStale = tmp32;
   const ref = obj.useRef({ guildId, hasComputed: false });
   const items24 = [guildId, stateFromStores7, stateFromStores3, hasItem, stateFromStoresArray, stateFromStoresArray1, hasItem5, hasItem2, hasItem1, undefined !== showMultipleActivitiesPerChannel && showMultipleActivitiesPerChannel, hasItem3, hasItem4, has, withoutUserCards, stateFromStores2, stateFromStores4, stateFromStores8, stateFromStoresObject, stateFromStoresArray2];
   const callback3 = obj.useCallback(() => id(isFocused[30]).time("\u{1F3A8}", "computeHappeningNowState", () => {
@@ -472,7 +472,7 @@ export default function useHappeningNowData(has, guildId) {
     items = outer1_16.getRows(set1, num2.id);
   }), items24);
   const tmp35 = callback4(React.useState(() => {
-    if (upsertRelationship) {
+    if (markAllUserIdListsStale) {
       return [];
     } else {
       const arr = callback3();
@@ -546,7 +546,7 @@ export default function useHappeningNowData(has, guildId) {
         }, 50);
         return () => clearTimeout(closure_0);
       }
-    } else if (!upsertRelationship) {
+    } else if (!markAllUserIdListsStale) {
       callback4();
     }
   }, items26);

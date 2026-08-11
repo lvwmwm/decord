@@ -1,9 +1,9 @@
-// Module ID: 1455
-// Function ID: 1456
+// Module ID: 1474
+// Function ID: 1475
 // Name: notifyListeners
-// Dependencies: [676, 3, 1456, 2]
+// Dependencies: [676, 3, 1475, 2]
 
-// Module 1455 (notifyListeners)
+// Module 1474 (notifyListeners)
 import { NetworkConnectionTypes } from "ME";
 import importDefaultResult from "configure";
 
@@ -54,8 +54,8 @@ response.then((isConnected) => {
 obj = {
   addOnlineCallback(_handleNetworkOnline) {
     if (null == closure_7) {
-      closure_7 = importDefault(1456).addEventListener(notifyListeners);
-      const obj = importDefault(1456);
+      closure_7 = importDefault(1475).addEventListener(notifyListeners);
+      const obj = importDefault(1475);
     }
   },
   removeOnlineCallback(_handleNetworkOnline) {
@@ -81,8 +81,8 @@ obj = {
   addOfflineCallback(_handleNetworkOffline) {
     arr2.push(_handleNetworkOffline);
     if (null == closure_7) {
-      closure_7 = importDefault(1456).addEventListener(notifyListeners);
-      const obj = importDefault(1456);
+      closure_7 = importDefault(1475).addEventListener(notifyListeners);
+      const obj = importDefault(1475);
     }
   },
   removeOfflineCallback(_handleNetworkOffline) {
@@ -108,8 +108,8 @@ obj = {
   addChangeCallback(handleConnectionInfoChange) {
     arr3.push(handleConnectionInfoChange);
     if (null == closure_7) {
-      closure_7 = importDefault(1456).addEventListener(notifyListeners);
-      const obj = importDefault(1456);
+      closure_7 = importDefault(1475).addEventListener(notifyListeners);
+      const obj = importDefault(1475);
     }
   },
   removeChangeCallback(arg0) {
@@ -133,7 +133,7 @@ obj = {
     }
   },
   getNetworkInformation() {
-    const response = importDefault(1456).fetch();
+    const response = importDefault(1475).fetch();
     return response.then((arg0) => {
       let details;
       let type;

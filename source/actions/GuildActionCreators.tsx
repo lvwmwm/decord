@@ -1,7 +1,7 @@
 // Module ID: 5232
 // Function ID: 5233
 // Name: showTooManyUserGuildsAlert
-// Dependencies: [109, 5, 5233, 1218, 5156, 1961, 1891, 1960, 4124, 1903, 676, 1221, 4642, 1236, 709, 5234, 530, 1222, 5237, 1988, 5826, 5834, 5839, 5865, 5936, 5127, 503, 5937, 3934, 506, 5938, 3970, 698, 5942, 4517, 5944, 2]
+// Dependencies: [109, 5, 5233, 1218, 5156, 1980, 1910, 1979, 4126, 1922, 676, 1221, 4642, 1236, 709, 5234, 530, 1222, 5237, 2007, 5826, 5834, 5839, 5865, 5938, 5127, 503, 5939, 3953, 506, 5940, 3989, 698, 5944, 4517, 5946, 2]
 
 // Module 5232 (showTooManyUserGuildsAlert)
 import _objectWithoutProperties from "_objectWithoutProperties";
@@ -577,7 +577,7 @@ export default {
   },
   deleteGuild,
   selectGuild(guildId) {
-    require(5936) /* stopLurkingAll */.stopLurking(guildId);
+    require(5938) /* stopLurkingAll */.stopLurking(guildId);
   },
   createGuild(guild) {
     let obj = importDefault(709);
@@ -966,7 +966,7 @@ export default {
       const obj5 = outer1_0(530);
       obj1[3] = obj5.rejectWithMigratedError();
       closure_0 = yield HTTP.patch(obj1);
-      const obj = outer1_1(5938);
+      const obj = outer1_1(5940);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();
@@ -998,7 +998,7 @@ export default {
       obj1[1] = outer1_1;
       obj1[3] = outer1_0(530).rejectWithMigratedError();
       closure_0 = yield HTTP.patch(obj1);
-      const obj = outer1_1(5938);
+      const obj = outer1_1(5940);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();
@@ -1015,7 +1015,7 @@ export default {
       obj1[1] = outer1_1;
       obj1[3] = outer1_0(530).rejectWithMigratedError();
       closure_0 = yield HTTP.patch(obj1);
-      const obj = outer1_1(5938);
+      const obj = outer1_1(5940);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();
@@ -1143,13 +1143,13 @@ export default {
     obj.dispatch(obj);
   },
   nsfwReturnToSafety(guildId) {
-    const tmp2 = importDefault(5942)(guildId);
+    const tmp2 = importDefault(5944)(guildId);
     if (null == tmp2) {
       if (null != guildId) {
         const defaultChannel = store.getDefaultChannel(guildId);
         if (null != defaultChannel) {
           if (!obj3.isChannelContentGated(defaultChannel)) {
-            let tmp11Result = tmp11(5944);
+            let tmp11Result = tmp11(5946);
             if (!tmp11Result.isChannelSpoilerGated(defaultChannel)) {
               tmp11Result = tmp11(1222);
               tmp11Result.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));

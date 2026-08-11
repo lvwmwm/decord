@@ -1,11 +1,11 @@
-// Module ID: 15982
-// Function ID: 15983
+// Module ID: 15999
+// Function ID: 16000
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 1371, 4316, 8611, 1218, 4351, 676, 4321, 21, 4303, 1297, 712, 10662, 589, 10641, 10655, 4513, 10661, 4849, 10664, 8895, 10679, 10683, 10693, 10710, 10717, 10651, 10680, 10660, 9762, 4036, 4304, 5267, 15983, 1609, 2]
+// Dependencies: [32, 19, 17, 1390, 4316, 8617, 1218, 4351, 676, 4321, 21, 4303, 1297, 712, 10667, 589, 10646, 10660, 4513, 10666, 4849, 10669, 8901, 10684, 10688, 10698, 10715, 10722, 10656, 10685, 10665, 9767, 4042, 4304, 5267, 16000, 1628, 2]
 // Exports: default
 
-// Module 15982 (PictureInPictureGlobal)
-import module_4036 from "module_4036";
+// Module 15999 (PictureInPictureGlobal)
+import module_4042 from "module_4042";
 import importAllResult from "useShouldForcePipOrientation";
 import get_ActivityIndicator from "useIsActivityFocused";
 import participantFromServer from "participantFromServer";
@@ -225,7 +225,7 @@ let closure_20 = importAllResult.memo((channel) => {
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: null };
   const tmp = callback(importAllResult.useState(() => constants.TOP_RIGHT), 2);
   obj[3] = callback3(closure_19, { channel });
-  return callback3(importDefault(10660), obj);
+  return callback3(importDefault(10665), obj);
 });
 let closure_21 = { code: "function PictureInPictureGlobalTsx1(){const{withTiming,drawerState,STANDARD_EASING}=this.__closure;return withTiming(drawerState,{easing:STANDARD_EASING,duration:250});}" };
 let closure_22 = { code: "function PictureInPictureGlobalTsx2(){const{interpolate,animatedDrawerState,NAV_BAR_HEIGHT,PADDING,chatInputContainerHeight,PIP_AVOIDANCE_TAB_BAR_HEIGHT}=this.__closure;return{marginTop:interpolate(animatedDrawerState.get(),[0,1],[NAV_BAR_HEIGHT+PADDING,PADDING]),marginBottom:interpolate(animatedDrawerState.get(),[0,1],[chatInputContainerHeight+PADDING,PIP_AVOIDANCE_TAB_BAR_HEIGHT+PADDING])};}" };

@@ -1,10 +1,10 @@
-// Module ID: 10256
-// Function ID: 10257
+// Module ID: 10261
+// Function ID: 10262
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 4303, 712, 5369, 4036, 4713, 4717, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5369, 4042, 4713, 4717, 4299, 2]
 // Exports: default
 
-// Module 10256 (ShareFooterLayout)
+// Module 10261 (ShareFooterLayout)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -39,7 +39,7 @@ export default function ShareFooterLayout(arg0) {
   const tmp = createCacheKey();
   const sum = tmp.footer.paddingVertical + importDefault(5369)({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
   _require = sum;
-  let obj = _require(4036);
+  let obj = _require(4042);
   const fn = function f() {
     const obj = { paddingBottom: null };
     obj[0] = _undefined(outer1_2[7]).withSpring(_undefined, _undefined(outer1_2[8]).ON_PRESS_SPRING, "respect-motion-settings");
@@ -76,5 +76,5 @@ export default function ShareFooterLayout(arg0) {
   obj3[1] = items4;
   items2[1] = closure_6(View, obj3);
   obj[1] = items2;
-  return closure_6(importDefault(4036).View, obj);
+  return closure_6(importDefault(4042).View, obj);
 };

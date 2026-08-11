@@ -1,10 +1,10 @@
-// Module ID: 14058
-// Function ID: 14059
+// Module ID: 14066
+// Function ID: 14067
 // Name: handleDisableAccount
-// Dependencies: [1891, 1903, 1236, 8510, 14043, 4642, 2]
+// Dependencies: [1910, 1922, 1236, 8516, 14051, 4642, 2]
 // Exports: default
 
-// Module 14058 (handleDisableAccount)
+// Module 14066 (handleDisableAccount)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -39,7 +39,7 @@ export default function handleDisableAccount() {
     obj = { onSubmit: null, title: null, placeholder: null, closeOnSuccess: true };
     if (flag) {
       obj[0] = function onSubmit(password) {
-        return currentUser(8510).disableAccount(password, true);
+        return currentUser(8516).disableAccount(password, true);
       };
       const intl3 = tmp4(1236).intl;
       obj[1] = intl3.string(tmp4(1236).t["8lQ2rR"]).toUpperCase();
@@ -48,7 +48,7 @@ export default function handleDisableAccount() {
       const str3 = intl3.string(tmp4(1236).t["8lQ2rR"]);
     } else {
       obj[0] = function onSubmit(password) {
-        return currentUser(8510).disableAccount(password, false);
+        return currentUser(8516).disableAccount(password, false);
       };
       const intl2 = tmp4(1236).intl;
       obj[1] = intl2.string(tmp4(1236).t.jf5GGb).toUpperCase();
@@ -56,7 +56,7 @@ export default function handleDisableAccount() {
       tmp8 = obj;
       const str2 = intl2.string(tmp4(1236).t.jf5GGb);
     }
-    importDefault(14043)(tmp8);
+    importDefault(14051)(tmp8);
     const str = string(t["CIGa+7"]);
   }
 };

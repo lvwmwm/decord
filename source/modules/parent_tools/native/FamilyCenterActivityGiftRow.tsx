@@ -1,10 +1,10 @@
-// Module ID: 14152
-// Function ID: 14153
+// Module ID: 14160
+// Function ID: 14161
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 4303, 712, 8278, 14140, 14149, 14151, 4146, 14150, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 8283, 14148, 14157, 14159, 4148, 14158, 4299, 2]
 // Exports: default
 
-// Module 14152 (FamilyCenterActivityGiftRow)
+// Module 14160 (FamilyCenterActivityGiftRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,10 +34,10 @@ export default function FamilyCenterActivityGiftRow(arg0) {
   ({ skuId, subscriptionPlanId } = arg0);
   ({ price, gifterUserId, claimed, offeredAt, claimedAt } = arg0);
   const tmp = createCacheKey();
-  let product = importDefault(8278)(skuId).product;
-  let obj = require(14140) /* useSelectedTeenUser */;
+  let product = importDefault(8283)(skuId).product;
+  let obj = require(14148) /* useSelectedTeenUser */;
   const teenUserForId = obj.useTeenUserForId(gifterUserId);
-  let obj1 = require(14149) /* getCollectibleTypeName */;
+  let obj1 = require(14157) /* getCollectibleTypeName */;
   let tmp7 = product;
   if (product == null) {
     tmp7 = null;
@@ -59,7 +59,7 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     obj[1] = price;
     let name = null;
     if (null != teenUserForId) {
-      let tmp2Result = tmp2(4146);
+      let tmp2Result = tmp2(4148);
       name = tmp2Result.getName(teenUserForId);
     }
     obj[2] = name;
@@ -67,10 +67,10 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     obj[4] = claimedAt;
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    const giftSubtext = tmp5(14151).getGiftSubtext(obj);
+    const giftSubtext = tmp5(14159).getGiftSubtext(obj);
     obj1 = { displayName: null, product: null, isSubscription: null, subscriptionPlanId: null };
     obj1[0] = displayName;
-    tmp2Result = tmp2(14150);
+    tmp2Result = tmp2(14158);
     if (product == null) {
       product = null;
     }

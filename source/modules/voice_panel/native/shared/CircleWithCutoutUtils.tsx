@@ -1,10 +1,10 @@
-// Module ID: 10670
-// Function ID: 10671
+// Module ID: 10675
+// Function ID: 10676
 // Name: CircleWithCutout
-// Dependencies: [19, 21, 7835, 2]
+// Dependencies: [19, 21, 7837, 2]
 // Exports: default, getBadgeLeft, getBadgeTop, getCutoutCenterX, getCutoutCenterY
 
-// Module 10670 (CircleWithCutout)
+// Module 10675 (CircleWithCutout)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -29,19 +29,19 @@ export default function CircleWithCutout(arg0) {
   let obj = { height: result, width: result, children: null };
   obj = { children: null };
   obj = { id: "mask", children: null };
-  const items = [callback(require(7835) /* inlineStyles */.Rect, { width: result, height: result, fill: "white" }), callback(require(7835) /* inlineStyles */.Circle, { cx: sum, cy: diff, r: cutoutRadius, fill: "black" })];
+  const items = [callback(require(7837) /* inlineStyles */.Rect, { width: result, height: result, fill: "white" }), callback(require(7837) /* inlineStyles */.Circle, { cx: sum, cy: diff, r: cutoutRadius, fill: "black" })];
   obj[1] = items;
-  obj[0] = callback2(require(7835) /* inlineStyles */.Mask, obj);
-  const items1 = [callback(require(7835) /* inlineStyles */.Defs, obj), ];
+  obj[0] = callback2(require(7837) /* inlineStyles */.Mask, obj);
+  const items1 = [callback(require(7837) /* inlineStyles */.Defs, obj), ];
   const obj1 = { cx: circleRadius, cy: circleRadius, r: circleRadius, fill: circleFillColor, mask: null };
   let str;
   if (enableCutout) {
     str = "url(#mask)";
   }
   obj1[4] = str;
-  items1[1] = callback(require(7835) /* inlineStyles */.Circle, obj1);
+  items1[1] = callback(require(7837) /* inlineStyles */.Circle, obj1);
   obj[2] = items1;
-  return callback2(importDefault(7835), obj);
+  return callback2(importDefault(7837), obj);
 };
 export const getBadgeTop = function getBadgeTop(badgeRadius, buttonRadius, arg2) {
   return buttonRadius - buttonRadius * Math.cos(arg2 * closure_5) - badgeRadius;

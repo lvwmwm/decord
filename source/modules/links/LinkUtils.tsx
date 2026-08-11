@@ -1,7 +1,7 @@
 // Module ID: 4495
 // Function ID: 4496
 // Name: ME
-// Dependencies: [1372, 1891, 3929, 676, 1379, 4291, 2]
+// Dependencies: [1391, 1910, 3948, 676, 1398, 4291, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath
 
 // Module 4495 (ME)

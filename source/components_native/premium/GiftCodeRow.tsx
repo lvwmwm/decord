@@ -1,9 +1,9 @@
-// Module ID: 12837
-// Function ID: 12838
+// Module ID: 12841
+// Function ID: 12842
 // Name: handleRevoke
-// Dependencies: [19, 17, 676, 21, 4303, 712, 4013, 10413, 4538, 8923, 6000, 4299, 4714, 1236, 3883, 1297, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 4031, 10418, 4538, 8929, 6002, 4299, 4714, 1236, 3902, 1297, 2]
 
-// Module 12837 (handleRevoke)
+// Module 12841 (handleRevoke)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { AnalyticsSections } from "ME";
 import jsxProd from "jsxProd";
@@ -59,7 +59,7 @@ class GiftCodeRow extends PureComponent {
 }
 const prototype = GiftCodeRow.prototype;
 prototype["handleRevoke"] = function handleRevoke(code) {
-  importDefault(10413).revokeGiftCode(code);
+  importDefault(10418).revokeGiftCode(code);
 };
 prototype["render"] = function render() {
   let self = this;

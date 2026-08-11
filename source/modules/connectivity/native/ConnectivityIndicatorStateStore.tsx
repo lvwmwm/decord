@@ -1,9 +1,9 @@
-// Module ID: 12951
-// Function ID: 12952
+// Module ID: 12955
+// Function ID: 12956
 // Name: updateState
-// Dependencies: [6935, 1218, 4521, 1960, 6876, 676, 3, 12952, 589, 1454, 709, 2]
+// Dependencies: [6938, 1218, 4521, 1979, 6878, 676, 3, 12956, 589, 1473, 709, 2]
 
-// Module 12951 (updateState)
+// Module 12955 (updateState)
 import handleClearCaches from "handleClearCaches";
 import fetchFingerprint from "fetchFingerprint";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -39,7 +39,7 @@ function updateState() {
             const obj1 = { state: null, delayMs: null };
             obj1[0] = tmp13.WAITING_FOR_NETWORK;
             if (handleClearCaches.hasCache()) {
-              let obj15 = state(12952);
+              let obj15 = state(12956);
               let num2 = obj15.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num2 == null) {
                 num2 = 10000;
@@ -70,7 +70,7 @@ function updateState() {
             const obj5 = { state: null, delayMs: null };
             obj5[0] = tmp13.WAITING_FOR_NETWORK;
             if (handleClearCaches.hasCache()) {
-              let obj10 = state(12952);
+              let obj10 = state(12956);
               let num = obj10.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num == null) {
                 num = 10000;
@@ -277,17 +277,17 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items1, handleAuthStoreChanged);
   const items2 = [getState];
   this.syncWith(items2, handleAppStateUpdate);
-  importDefault(1454).addOfflineCallback(() => {
+  importDefault(1473).addOfflineCallback(() => {
     let c16 = true;
     callback();
   });
-  const obj = importDefault(1454);
-  importDefault(1454).addOnlineCallback(() => {
+  const obj = importDefault(1473);
+  importDefault(1473).addOnlineCallback(() => {
     let c16 = false;
     callback();
   });
-  const obj2 = importDefault(1454);
-  let closure_16 = !importDefault(1454).isOnline();
+  const obj2 = importDefault(1473);
+  let closure_16 = !importDefault(1473).isOnline();
   let closure_15 = fetchFingerprint.isAuthenticated();
   updateState();
 };

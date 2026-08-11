@@ -1,10 +1,10 @@
-// Module ID: 10134
-// Function ID: 10135
+// Module ID: 10139
+// Function ID: 10140
 // Name: getCurrentUserProfile
-// Dependencies: [1903, 7080, 2]
+// Dependencies: [1922, 7083, 2]
 // Exports: default
 
-// Module 10134 (getCurrentUserProfile)
+// Module 10139 (getCurrentUserProfile)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 

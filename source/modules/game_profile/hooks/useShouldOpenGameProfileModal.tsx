@@ -1,10 +1,10 @@
-// Module ID: 9273
-// Function ID: 9274
+// Module ID: 9279
+// Function ID: 9280
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 4324, 676, 698, 1384, 9274, 4836, 9275, 38, 2]
+// Dependencies: [19, 4324, 676, 698, 1403, 9280, 4836, 9281, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable
 
-// Module 9273 (useShouldOpenGameProfileModal)
+// Module 9279 (useShouldOpenGameProfileModal)
 import noop from "noop";
 import handleLoadMessages from "handleLoadMessages";
 import { AnalyticEvents } from "ME";
@@ -102,10 +102,10 @@ export const gameIsAcceptable = function gameIsAcceptable(gameFlags) {
     let arr = items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(gameFlags.gameFlags, require(9274) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(gameFlags.gameFlags, require(9280) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       arr = items1.push(closure_7.Disabled);
     }
-    obj2 = importAll(1384);
+    obj2 = importAll(1403);
     const tmp8 = require;
     arr = items1;
     if (tmp8Result.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
@@ -123,10 +123,10 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(closure_0) {
     let arr = items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(game.gameFlags, require(9274) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(game.gameFlags, require(9280) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       arr = items1.push(closure_7.Disabled);
     }
-    obj2 = importAll(1384);
+    obj2 = importAll(1403);
     const tmp9 = require;
     arr = items1;
     if (tmp9Result.isAgeRestrictedContentClassification(game.contentClassification)) {

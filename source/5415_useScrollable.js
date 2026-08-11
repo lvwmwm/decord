@@ -1,7 +1,7 @@
 // Module ID: 5415
 // Function ID: 5416
 // Name: useScrollable
-// Dependencies: [19, 1634, 5400, 5416]
+// Dependencies: [19, 1653, 5400, 5416]
 // Exports: useScrollable
 
 // Module 5415 (useScrollable)
@@ -15,14 +15,14 @@ export const useScrollable = () => {
   const tmp = callback2(null);
   const require = tmp;
   const dependencyMap = callback2(null);
-  let obj = require(1634) /* cancelAnimation */;
+  let obj = require(1653) /* cancelAnimation */;
   const sharedValue = obj.useSharedValue(require(5400) /* GESTURE_SOURCE */.SCROLLABLE_TYPE.UNDETERMINED);
-  const sharedValue1 = require(1634) /* cancelAnimation */.useSharedValue(0);
-  const obj2 = require(1634) /* cancelAnimation */;
-  const sharedValue2 = require(1634) /* cancelAnimation */.useSharedValue(require(5400) /* GESTURE_SOURCE */.SCROLLABLE_STATE.UNDETERMINED);
-  const obj3 = require(1634) /* cancelAnimation */;
-  const sharedValue3 = require(1634) /* cancelAnimation */.useSharedValue(false);
-  const obj4 = require(1634) /* cancelAnimation */;
+  const sharedValue1 = require(1653) /* cancelAnimation */.useSharedValue(0);
+  const obj2 = require(1653) /* cancelAnimation */;
+  const sharedValue2 = require(1653) /* cancelAnimation */.useSharedValue(require(5400) /* GESTURE_SOURCE */.SCROLLABLE_STATE.UNDETERMINED);
+  const obj3 = require(1653) /* cancelAnimation */;
+  const sharedValue3 = require(1653) /* cancelAnimation */.useSharedValue(false);
+  const obj4 = require(1653) /* cancelAnimation */;
   obj = {
     scrollableRef: tmp,
     animatedScrollableType: sharedValue,

@@ -1,10 +1,10 @@
-// Module ID: 12209
-// Function ID: 12210
+// Module ID: 12212
+// Function ID: 12213
 // Name: GuildProfileLoadingError
-// Dependencies: [19, 17, 21, 9256, 4239, 4005, 712, 4725, 7962, 4299, 1236, 4846, 2]
+// Dependencies: [19, 17, 21, 9262, 4239, 4024, 712, 4725, 7964, 4299, 1236, 4846, 2]
 // Exports: default
 
-// Module 12209 (GuildProfileLoadingError)
+// Module 12212 (GuildProfileLoadingError)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,16 +16,16 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileLoadingError.tsx");
 
 export default function GuildProfileLoadingError(onPress) {
-  let obj = require(9256) /* GuildProfileBackground */;
+  let obj = require(9262) /* GuildProfileBackground */;
   const styles = obj.useStyles();
-  let obj1 = require(4005) /* map */;
+  let obj1 = require(4024) /* map */;
   obj = { style: styles.container, children: null };
   const token = obj1.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWEST);
   obj = { style: styles.colorBanner, start: null, end: null, colors: null };
   const tmp2 = importDefault(4239)();
-  obj[1] = require(9256) /* GuildProfileBackground */.DiagonalGradient.START;
-  obj[2] = require(9256) /* GuildProfileBackground */.DiagonalGradient.END;
-  let obj4 = require(9256) /* GuildProfileBackground */;
+  obj[1] = require(9262) /* GuildProfileBackground */.DiagonalGradient.START;
+  obj[2] = require(9262) /* GuildProfileBackground */.DiagonalGradient.END;
+  let obj4 = require(9262) /* GuildProfileBackground */;
   obj[3] = obj4.getBackgroundForProfile(tmp2, token);
   const items = [callback(importDefault(4725), obj), , ];
   obj1 = { style: styles.header, children: null };
@@ -33,7 +33,7 @@ export default function GuildProfileLoadingError(onPress) {
   const obj3 = { style: styles.avatarBackground, children: null };
   obj4 = { size: "lg", color: null };
   obj4[1] = importDefault(712).colors.TEXT_FEEDBACK_WARNING;
-  obj3[1] = callback(require(7962) /* WarningIcon */.WarningIcon, obj4);
+  obj3[1] = callback(require(7964) /* WarningIcon */.WarningIcon, obj4);
   obj2[1] = callback(View, obj3);
   obj1[1] = callback(View, obj2);
   items[1] = callback(View, obj1);
@@ -47,7 +47,7 @@ export default function GuildProfileLoadingError(onPress) {
   obj7[3] = intl2.string(require(1236) /* getSystemLocale */.t.s1fAEw);
   const obj8 = { size: "sm", color: null };
   obj8[1] = importDefault(712).colors.TEXT_FEEDBACK_WARNING;
-  const items2 = [callback(require(7962) /* WarningIcon */.WarningIcon, obj8), ];
+  const items2 = [callback(require(7964) /* WarningIcon */.WarningIcon, obj8), ];
   const obj9 = { variant: "text-sm/normal", color: "text-feedback-warning", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj9[2] = intl3.string(require(1236) /* getSystemLocale */.t.tmGHjc);

@@ -1,10 +1,10 @@
-// Module ID: 8415
-// Function ID: 8416
+// Module ID: 8421
+// Function ID: 8422
 // Name: BANNER_RATIO_HEIGHT_16_9
-// Dependencies: [1474, 2]
+// Dependencies: [1493, 2]
 // Exports: useBannerHeight
 
-// Module 8415 (BANNER_RATIO_HEIGHT_16_9)
+// Module 8421 (BANNER_RATIO_HEIGHT_16_9)
 let c2 = 0.5625;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationFormConstants.tsx");
 
@@ -13,6 +13,6 @@ export const AVATAR_SIZE = 76;
 export const AVATAR_BORDER_WIDTH = 6;
 export const SCROLL_EVENT_TIMER_MS = 16;
 export const useBannerHeight = function useBannerHeight() {
-  const size = importDefault(1474)({ ignoreKeyboard: true });
+  const size = importDefault(1493)({ ignoreKeyboard: true });
   return Math.min(size.width, size.height) * c2;
 };

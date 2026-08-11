@@ -1,9 +1,9 @@
-// Module ID: 1945
-// Function ID: 1946
+// Module ID: 1964
+// Function ID: 1965
 // Name: open
-// Dependencies: [5, 1946, 1938, 2]
+// Dependencies: [5, 1965, 1957, 2]
 
-// Module 1945 (open)
+// Module 1964 (open)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -14,7 +14,7 @@ const prototype = function Host() {
 prototype["open"] = function open(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
-  const Runtime = _require(1946).Runtime;
+  const Runtime = _require(1965).Runtime;
   return Runtime.executeAsync("database_open", (arg0) => {
     const KV_RAW = callback(obj[2]).KV_RAW;
     obj = { database: callback, invalidateDisabledHandles: null };
@@ -30,7 +30,7 @@ prototype["open"] = function open(arg0, arg1) {
   });
 };
 prototype["openSyncUnsafe"] = function openSyncUnsafe(database, invalidateDisabledHandles) {
-  const KV_RAW = require(1938) /* set */.KV_RAW;
+  const KV_RAW = require(1957) /* set */.KV_RAW;
   const obj = { database, invalidateDisabledHandles: null };
   let flag;
   if (invalidateDisabledHandles != null) {
@@ -44,7 +44,7 @@ prototype["openSyncUnsafe"] = function openSyncUnsafe(database, invalidateDisabl
 };
 prototype["delete"] = function delete(arg0) {
   const _require = arg0;
-  const Runtime = _require(1946).Runtime;
+  const Runtime = _require(1965).Runtime;
   return Runtime.executeAsync("database_delete", (arg0) => {
     const KV_RAW = callback(outer1_1[2]).KV_RAW;
     return KV_RAW.databaseDelete(arg0, { database: callback });
@@ -63,14 +63,14 @@ prototype["list"] = function list() {
 };
 prototype["optimize"] = function optimize(arg0) {
   const _require = arg0;
-  const Runtime = _require(1946).Runtime;
+  const Runtime = _require(1965).Runtime;
   return Runtime.executeAsync("database_optimize", (arg0) => {
     const KV_RAW = callback(outer1_1[2]).KV_RAW;
     return KV_RAW.databaseOptimize(arg0, { aggressive: callback });
   });
 };
 prototype["raise"] = function raise(arg0) {
-  const KV_RAW = require(1938) /* set */.KV_RAW;
+  const KV_RAW = require(1957) /* set */.KV_RAW;
   KV_RAW.raise(arg0);
 };
 

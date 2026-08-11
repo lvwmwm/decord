@@ -1,9 +1,9 @@
-// Module ID: 12911
-// Function ID: 12912
+// Module ID: 12915
+// Function ID: 12916
 // Name: set
-// Dependencies: [32, 12912, 3, 12913, 12916, 12915, 12917, 589, 12918, 2]
+// Dependencies: [32, 12916, 3, 12917, 12920, 12919, 12921, 589, 12922, 2]
 
-// Module 12911 (set)
+// Module 12915 (set)
 import _slicedToArray from "_slicedToArray";
 import { DISPATCHER_IDEAL_TIME_LIMIT_MS as closure_4 } from "DISPATCHER_STANDARD_TIMEOUT_MS";
 import set from "timestamp";
@@ -211,11 +211,11 @@ prototype["dispatchMultiple"] = function dispatchMultiple(items, arg1) {
     const none = "none";
     let c4 = false;
     const telemetry2 = self.scheduler.telemetry;
-    telemetry2.measure(_require(12915).WorkSchedulerTelemetryMeasurement.COUNT_INITIAL_DISPATCHS_LENGTH, items.length);
+    telemetry2.measure(_require(12919).WorkSchedulerTelemetryMeasurement.COUNT_INITIAL_DISPATCHS_LENGTH, items.length);
     try {
       let tmp2 = [];
       tmp2 = importDefault;
-      if (self.socket.connectionState === importDefault(12917).RESUMING) {
+      if (self.socket.connectionState === importDefault(12921).RESUMING) {
         const Emitter = tmp2(589).Emitter;
         Emitter.pause(150);
       }
@@ -288,11 +288,11 @@ prototype["dispatchMultiple"] = function dispatchMultiple(items, arg1) {
           let closure_5 = arr.slice(sum);
           if (tmp18) {
             const telemetry = tmp6.scheduler.telemetry;
-            telemetry.timeTrack(v0(12915).WorkSchedulerTelemetryTiming.TIME_OVER_DEADLINE, obj.timeSinceExpiration);
+            telemetry.timeTrack(v0(12919).WorkSchedulerTelemetryTiming.TIME_OVER_DEADLINE, obj.timeSinceExpiration);
           }
           tmp18 = null != obj && obj.timeRemaining() <= 0;
         }
-        items(12918).flush();
+        items(12922).flush();
       });
       if (c4) {
         const Emitter3 = tmp2(589).Emitter;
@@ -300,7 +300,7 @@ prototype["dispatchMultiple"] = function dispatchMultiple(items, arg1) {
       }
       if (tmp2.length > 0) {
         let telemetry = self.scheduler.telemetry;
-        telemetry.measure(tmp21(12915).WorkSchedulerTelemetryMeasurement.COUNT_DISPATCHES_LEFT_AFTER_YIELD, tmp2.length);
+        telemetry.measure(tmp21(12919).WorkSchedulerTelemetryMeasurement.COUNT_DISPATCHES_LEFT_AFTER_YIELD, tmp2.length);
         const queue = self.queue;
         const unshift = queue.unshift;
         items = [];
@@ -330,36 +330,36 @@ prototype["dispatchOne"] = function dispatchOne(arg0) {
   const self = this;
   ({ data, type, compressionAnalytics, preloadedData } = arg0);
   const nowResult = performance.now();
-  if (this.socket.connectionState !== importDefault(12917).RESUMING) {
-    tmp2(12918).flush(type, data);
+  if (this.socket.connectionState !== importDefault(12921).RESUMING) {
+    tmp2(12922).flush(type, data);
     if ("READY" === type) {
-      const readyPayloadByteSizeAnalytics = require(12916) /* prettyPrintTrace_ */.getReadyPayloadByteSizeAnalytics(data);
+      const readyPayloadByteSizeAnalytics = require(12920) /* prettyPrintTrace_ */.getReadyPayloadByteSizeAnalytics(data);
       const dispatchHandler = self.getDispatchHandler(type);
       if (dispatchHandler != null) {
         dispatchHandler.dispatch(data, type, preloadedData);
       }
-      const tmp11Result = require(12916) /* prettyPrintTrace_ */;
+      const tmp11Result = require(12920) /* prettyPrintTrace_ */;
       const result = tmp11Result.logReadyPayloadReceived(self.socket, data, nowResult, compressionAnalytics, readyPayloadByteSizeAnalytics);
-      const obj6 = require(12916) /* prettyPrintTrace_ */;
+      const obj6 = require(12920) /* prettyPrintTrace_ */;
       const tmp11 = require;
     } else if ("RESUMED" === type) {
       const dispatchHandler1 = self.getDispatchHandler(type);
       if (dispatchHandler1 != null) {
         dispatchHandler1.dispatch(data, type, preloadedData);
       }
-      require(12916) /* prettyPrintTrace_ */.logResumeAnalytics(self.resumeAnalytics);
+      require(12920) /* prettyPrintTrace_ */.logResumeAnalytics(self.resumeAnalytics);
       const socket = self.socket;
       const result1 = socket.handleResumeDispatched();
-      const obj4 = require(12916) /* prettyPrintTrace_ */;
-      self.resumeAnalytics = require(12916) /* prettyPrintTrace_ */.createResumeAnalytics();
-      const obj5 = require(12916) /* prettyPrintTrace_ */;
+      const obj4 = require(12920) /* prettyPrintTrace_ */;
+      self.resumeAnalytics = require(12920) /* prettyPrintTrace_ */.createResumeAnalytics();
+      const obj5 = require(12920) /* prettyPrintTrace_ */;
     } else {
       const dispatchHandler2 = self.getDispatchHandler(type);
       if (dispatchHandler2 != null) {
         dispatchHandler2.dispatch(data, type, preloadedData);
       }
     }
-    if (self.socket.connectionState === tmp2(12917).RESUMING) {
+    if (self.socket.connectionState === tmp2(12921).RESUMING) {
       const resumeAnalytics3 = self.resumeAnalytics;
       const _performance = performance;
       resumeAnalytics3.dispatchTime = resumeAnalytics3.dispatchTime + (performance.now() - nowResult);

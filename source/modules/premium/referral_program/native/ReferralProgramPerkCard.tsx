@@ -1,10 +1,10 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12723
+// Function ID: 12724
 // Name: ReferredFriendAvatar
-// Dependencies: [19, 17, 6915, 676, 21, 4303, 712, 1297, 4299, 12720, 1236, 1974, 589, 5728, 5748, 6916, 698, 4271, 12721, 1988, 12728, 4714, 2]
+// Dependencies: [19, 17, 6918, 676, 21, 4303, 712, 1297, 4299, 12724, 1236, 1993, 589, 5728, 5748, 6919, 698, 4271, 12725, 2007, 12732, 4714, 2]
 // Exports: ReferralProgramPerkCard
 
-// Module 12719 (ReferredFriendAvatar)
+// Module 12723 (ReferredFriendAvatar)
 import asyncRequireImpl from "asyncRequireImpl";
 import { View } from "ACTION_SHEET_HEIGHT_HALF";
 import emitChanges from "emitChanges";
@@ -33,7 +33,7 @@ function ProgressIndicator(referralSentUsers) {
   referralSentUsers = referralSentUsers.referralSentUsers;
   const items = [];
   let num = 0;
-  if (0 < require(12720) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT) {
+  if (0 < require(12724) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT) {
     do {
       let tmp2 = num;
       if (null != referralSentUsers[num]) {
@@ -52,7 +52,7 @@ function ProgressIndicator(referralSentUsers) {
       num = num + 1;
       let tmp9 = require;
       let tmp10 = dependencyMap;
-    } while (num < require(12720) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT);
+    } while (num < require(12724) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT);
   }
   obj = { style: createCacheKey().progressIndicatorContainer, children: items };
   return callback(View, obj);
@@ -78,7 +78,7 @@ const result = require("emitChanges").fileFinishedImporting("modules/premium/ref
 
 export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const tmp = createCacheKey();
-  let obj = analyticsLocations(12720);
+  let obj = analyticsLocations(12724);
   let obj1 = analyticsLocations(589);
   const items = [emitChanges];
   const stateFromStores = obj1.useStateFromStores(items, () => store.getRecipientStatus());
@@ -87,7 +87,7 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const stateFromStores1 = obj3.useStateFromStores(items1, () => store.getHasEligibleFriends());
   let obj4 = importDefault;
   analyticsLocations = importDefault(5728)(importDefault(5748).PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR).analyticsLocations;
-  let everyResult = stateFromStores.size === analyticsLocations(12720).MAX_REFERRALS_SENT;
+  let everyResult = stateFromStores.size === analyticsLocations(12724).MAX_REFERRALS_SENT;
   if (everyResult) {
     const items2 = [];
     HermesBuiltin.arraySpread(stateFromStores.values(), 0);
@@ -102,7 +102,7 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
     outer1_1(outer1_2[17]).openLazy(analyticsLocations(outer1_2[19])(outer1_2[18], outer1_2.paths), "referral-program-share-action-sheet");
   }, items3);
   obj = { nReferralsSent: stateFromStores.size };
-  const items4 = [callback(obj4(12728), obj), callback(ProgressIndicator, { referralSentUsers: obj.useReferralProgramBannerDetails().referralSentUsers }), , ];
+  const items4 = [callback(obj4(12732), obj), callback(ProgressIndicator, { referralSentUsers: obj.useReferralProgramBannerDetails().referralSentUsers }), , ];
   obj1 = { style: tmp.contentContainer, children: null };
   const obj2 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp.heading, children: null };
   const intl = tmp2(1236).intl;
@@ -110,10 +110,10 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const items5 = [callback(analyticsLocations(4299).Text, obj2), ];
   obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.bodyText, children: null };
   if (false !== stateFromStores1) {
-    if (tmp14 !== tmp2(12720).MAX_REFERRALS_SENT) {
+    if (tmp14 !== tmp2(12724).MAX_REFERRALS_SENT) {
       const intl3 = tmp2(1236).intl;
       obj4 = { helpdeskArticle: null };
-      let obj5Result = obj4(1974);
+      let obj5Result = obj4(1993);
       obj4[0] = obj5Result.getArticleURL(constants.REFERRAL_PROGRAM);
       intl3.format(tmp2(1236).t["omMr+V"], obj4);
     }
@@ -122,19 +122,19 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
     let t = tmp2(1236).t;
     if (everyResult) {
       t = { helpdeskArticle: null };
-      obj4 = obj4(1974);
+      obj4 = obj4(1993);
       t[0] = obj4.getArticleURL(constants.REFERRAL_PROGRAM);
       let formatResult1 = format(t["1aEjsH"], t);
     } else {
       const obj5 = { helpdeskArticle: null };
-      obj5Result = obj4(1974);
+      obj5Result = obj4(1993);
       obj5[0] = obj5Result.getArticleURL(constants.REFERRAL_PROGRAM);
       formatResult1 = format(t["+u3AOO"], obj5);
     }
   } else {
     const intl2 = tmp2(1236).intl;
     const obj6 = { helpdeskArticle: null };
-    obj6[0] = obj4(1974).getArticleURL(constants.REFERRAL_PROGRAM);
+    obj6[0] = obj4(1993).getArticleURL(constants.REFERRAL_PROGRAM);
     obj3[3] = intl2.format(tmp2(1236).t["zWhX/Q"], obj6);
     items5[1] = tmp12(tmp13, obj3);
     obj1[1] = items5;
@@ -143,7 +143,7 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
     obj7[0] = tmp.buttonContainer;
     let tmp22 = false === stateFromStores1;
     if (!tmp22) {
-      tmp22 = stateFromStores.size === tmp2(12720).MAX_REFERRALS_SENT;
+      tmp22 = stateFromStores.size === tmp2(12724).MAX_REFERRALS_SENT;
     }
     const obj8 = { variant: "primary", size: "sm", disabled: null, text: null, onPress: null };
     obj8[2] = tmp22;

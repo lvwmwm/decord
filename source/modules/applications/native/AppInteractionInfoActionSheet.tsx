@@ -1,10 +1,10 @@
-// Module ID: 10290
-// Function ID: 10291
+// Module ID: 10295
+// Function ID: 10296
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [19, 17, 1911, 1891, 1903, 21, 4303, 1609, 10291, 9541, 589, 8309, 5779, 4299, 1236, 4846, 8783, 1297, 5397, 2]
+// Dependencies: [19, 17, 1930, 1910, 1922, 21, 4303, 1628, 10296, 9547, 589, 8314, 5779, 4299, 1236, 4846, 8789, 1297, 5397, 2]
 // Exports: default
 
-// Module 10290 (AppInteractionInfoActionSheet)
+// Module 10295 (AppInteractionInfoActionSheet)
 import set from "set";
 import { View } from "Button";
 import createdAt from "createdAt";
@@ -37,13 +37,13 @@ export default function AppInteractionInfoActionSheet(message) {
   let tmp5;
   const memo = React.useMemo(() => outer1_8(onBack(_undefined[8]), { onBack }), items);
   if (interactionMetadata != null) {
-    tmp5 = interactionMetadata.authorizing_integration_owners[message(undefined, 9541).ApplicationIntegrationType.USER_INSTALL];
+    tmp5 = interactionMetadata.authorizing_integration_owners[message(undefined, 9547).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp5;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp7;
   if (interactionMetadata2 != null) {
-    tmp7 = interactionMetadata2.authorizing_integration_owners[message(undefined, 9541).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp7 = interactionMetadata2.authorizing_integration_owners[message(undefined, 9547).ApplicationIntegrationType.GUILD_INSTALL];
   }
   React = tmp7;
   const interactionMetadata3 = message.interactionMetadata;
@@ -138,7 +138,7 @@ export default function AppInteractionInfoActionSheet(message) {
       tmp26 = callback(tmp10(4846).PressableOpacity, obj5);
     }
   }
-  const obj12 = { header: memo, bodyStyles: { paddingBottom: onBack(1609)().bottom }, children: null };
+  const obj12 = { header: memo, bodyStyles: { paddingBottom: onBack(1628)().bottom }, children: null };
   const items9 = [tmp26, ];
   let tmp32 = null;
   if (null != tmp15) {

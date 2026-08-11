@@ -1,10 +1,10 @@
-// Module ID: 8351
-// Function ID: 8352
+// Module ID: 8356
+// Function ID: 8357
 // Name: get untranslatedDescription
-// Dependencies: [3938, 1903, 4737, 1935, 6982, 1236, 4494, 4642, 4313, 6917, 2]
+// Dependencies: [3957, 1922, 4737, 1954, 6985, 1236, 4494, 4642, 4313, 6920, 2]
 
-// Module 8351 (get untranslatedDescription)
-import upsertRelationship from "upsertRelationship";
+// Module 8356 (get untranslatedDescription)
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -33,7 +33,7 @@ obj.predicate = function predicate(channel) {
 obj.execute = function execute(arg0, channel) {
   channel = channel.channel;
   if (null != channel) {
-    const channelName = channel(4494).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+    const channelName = channel(4494).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
     const intl5 = channel(1236).intl;
     let obj = { name: null };
     obj[0] = channelName;

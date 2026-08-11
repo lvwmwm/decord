@@ -1,10 +1,10 @@
-// Module ID: 16594
-// Function ID: 16595
+// Module ID: 16606
+// Function ID: 16607
 // Name: isEligibleForSafetyFlowsExperiment
-// Dependencies: [1349, 2]
+// Dependencies: [1368, 2]
 // Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
 
-// Module 16594 (isEligibleForSafetyFlowsExperiment)
+// Module 16606 (isEligibleForSafetyFlowsExperiment)
 const tmp2 = require("getUnitId")({ name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 let c0 = tmp2;
 const result = require("set").fileFinishedImporting("modules/safety_flows/SafetyFlowsExperiment.tsx");

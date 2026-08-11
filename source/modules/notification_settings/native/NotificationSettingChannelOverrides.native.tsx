@@ -1,14 +1,14 @@
-// Module ID: 16879
-// Function ID: 16880
-// Dependencies: [32, 19, 17, 1376, 5254, 3938, 1903, 676, 21, 4303, 712, 589, 5369, 5255, 4494, 5229, 1236, 4014, 8523, 5374, 5380, 4764, 9628, 5992, 1297, 8827, 8526, 2]
+// Module ID: 16891
+// Function ID: 16892
+// Dependencies: [32, 19, 17, 1395, 5254, 3957, 1922, 676, 21, 4303, 712, 589, 5369, 5255, 4494, 5229, 1236, 1351, 8529, 5374, 5380, 4764, 9633, 5994, 1297, 8833, 8532, 2]
 
-// Module 16879
+// Module 16891
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "TableRowInner";
 import { View } from "AccessibilityAnnouncer";
 import { isGuildReadableType } from "createChannelRecord";
 import setIndex from "setIndex";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import jsxProd from "getChannelIcon";

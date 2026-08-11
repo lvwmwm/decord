@@ -1,10 +1,10 @@
-// Module ID: 8418
-// Function ID: 8419
+// Module ID: 8424
+// Function ID: 8425
 // Name: usePreviewDisabledGuild
-// Dependencies: [19, 1891, 5265, 589, 5334, 1411, 2]
+// Dependencies: [19, 1910, 5265, 589, 5334, 1430, 2]
 // Exports: default
 
-// Module 8418 (usePreviewDisabledGuild)
+// Module 8424 (usePreviewDisabledGuild)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import get from "get";
@@ -37,8 +37,8 @@ export default function usePreviewDisabledGuild(arg0) {
   if (stateFromStores == null) {
     let result = null;
     if (null != stateFromStores1) {
-      result = tmp(1411).fromVerificationGateGuild(stateFromStores1);
-      const tmpResult = tmp(1411);
+      result = tmp(1430).fromVerificationGateGuild(stateFromStores1);
+      const tmpResult = tmp(1430);
     }
     stateFromStores = result;
   }

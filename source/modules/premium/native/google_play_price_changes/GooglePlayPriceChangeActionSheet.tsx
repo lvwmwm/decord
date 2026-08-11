@@ -1,10 +1,10 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16022
+// Function ID: 16023
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [19, 17, 3953, 16006, 676, 1369, 21, 4303, 712, 589, 3947, 5855, 5397, 4299, 1236, 1974, 4714, 2]
+// Dependencies: [19, 17, 3972, 16023, 676, 1388, 21, 4303, 712, 589, 3966, 5855, 5397, 4299, 1236, 1993, 4714, 2]
 // Exports: default
 
-// Module 16005 (GooglePlayPriceChangeActionSheet)
+// Module 16022 (GooglePlayPriceChangeActionSheet)
 import "noop";
 import { View } from "set";
 import reset from "reset";
@@ -45,11 +45,11 @@ export default function GooglePlayPriceChangeActionSheet(markAsDismissed) {
   if (str == null) {
     str = "";
   }
-  let tmp2Result = tmp2(3947);
+  let tmp2Result = tmp2(3966);
   const tierDisplayNameByPlanId = tmp2Result.getTierDisplayNameByPlanId(str);
-  tmp2Result = tmp2(3947);
-  const intervalStringAsNoun = markAsDismissed(3947).getIntervalStringAsNoun(tmp2Result.getInterval(str).intervalType);
-  const tmp2Result1 = markAsDismissed(3947);
+  tmp2Result = tmp2(3966);
+  const intervalStringAsNoun = markAsDismissed(3966).getIntervalStringAsNoun(tmp2Result.getInterval(str).intervalType);
+  const tmp2Result1 = markAsDismissed(3966);
   const tmp2Result2 = markAsDismissed(5855);
   const formatPriceResult = markAsDismissed(5855).formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
   const tmp2Result3 = markAsDismissed(5855);
@@ -69,7 +69,7 @@ export default function GooglePlayPriceChangeActionSheet(markAsDismissed) {
   obj4[3] = formatPriceResult1;
   obj4[4] = formatPriceResult;
   const date = new Date(stateFromStores.expectedChargeTime);
-  obj4[5] = importDefault(1974).getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL);
+  obj4[5] = importDefault(1993).getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL);
   obj3[2] = intl2.format(markAsDismissed(1236).t["n+Hrjb"], obj4);
   items2[1] = callback(markAsDismissed(4299).Text, obj3);
   obj1[1] = items2;

@@ -1,9 +1,9 @@
-// Module ID: 10412
-// Function ID: 10413
+// Module ID: 10417
+// Function ID: 10418
 // Name: updateGiftCode
-// Dependencies: [9612, 676, 4188, 3883, 4538, 709, 10413, 589, 2]
+// Dependencies: [9617, 676, 4188, 3902, 4538, 709, 10418, 589, 2]
 
-// Module 10412 (updateGiftCode)
+// Module 10417 (updateGiftCode)
 import frozen from "frozen";
 import ME from "ME";
 import { Store } from "initialize";
@@ -29,7 +29,7 @@ function updateGiftCode(giftCode) {
         if (null != value.expiresAt) {
           const expiresAt = value.expiresAt;
           const valueOfResult = expiresAt.valueOf();
-          const diff = valueOfResult - importDefault(3883)().valueOf();
+          const diff = valueOfResult - importDefault(3902)().valueOf();
           if (diff <= 0) {
             obj.delete(code);
             delete tmp2[tmp];
@@ -110,7 +110,7 @@ function updateGiftCode(giftCode) {
               }
             });
           }
-          const obj4 = importDefault(3883)();
+          const obj4 = importDefault(3902)();
         }
       }
       tmp18 = closure_7;

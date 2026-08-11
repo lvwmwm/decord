@@ -1,10 +1,10 @@
-// Module ID: 9483
-// Function ID: 9484
+// Module ID: 9489
+// Function ID: 9490
 // Name: TieredTenureBadgeItem
-// Dependencies: [19, 17, 1903, 1905, 676, 21, 4303, 712, 9484, 7095, 9509, 5268, 4299, 1236, 9510, 589, 1926, 9349, 503, 1609, 6016, 4271, 8783, 8728, 9512, 5397, 5399, 2]
+// Dependencies: [19, 17, 1922, 1924, 676, 21, 4303, 712, 9490, 7096, 9515, 5268, 4299, 1236, 9516, 589, 1945, 9355, 503, 1628, 6018, 4271, 8789, 8734, 9518, 5397, 5399, 2]
 // Exports: default
 
-// Module 9483 (TieredTenureBadgeItem)
+// Module 9489 (TieredTenureBadgeItem)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import { View } from "trackImpression";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -26,14 +26,14 @@ function TieredTenureBadgeItem(arg0) {
   let premiumSince;
   ({ badge, isUsersBadge, premiumSince } = arg0);
   const tmp = createCacheKey();
-  let obj = require(9484) /* useMobileTenureBadgeImages */;
+  let obj = require(9490) /* useMobileTenureBadgeImages */;
   const mobileTenureBadgeImages = obj.useMobileTenureBadgeImages(badge);
   if (mobileTenureBadgeImages != null) {
     const small = mobileTenureBadgeImages.small;
   }
-  let tmp2Result = tmp2(7095);
+  let tmp2Result = tmp2(7096);
   const tieredTenureBadgeData = tmp2Result.getTieredTenureBadgeData(badge);
-  tmp2Result = tmp2(9509);
+  tmp2Result = tmp2(9515);
   if (tieredTenureBadgeData != null) {
     const tenureReqNumMonths = tieredTenureBadgeData.tenureReqNumMonths;
   }

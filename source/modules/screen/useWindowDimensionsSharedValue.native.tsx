@@ -1,24 +1,24 @@
-// Module ID: 15062
-// Function ID: 15063
+// Module ID: 15072
+// Function ID: 15073
 // Name: mutable
-// Dependencies: [4036, 1474, 11374, 10331, 2]
+// Dependencies: [4042, 1493, 11379, 10336, 2]
 // Exports: default, getWindowDimensionsWorklet
 
-// Module 15062 (mutable)
-import module_4036 from "module_4036";
+// Module 15072 (mutable)
+import module_4042 from "module_4042";
 import useWindowDimensions from "useWindowDimensions";
-import module_4036 from "module_4036";
+import module_4042 from "module_4042";
 import useWindowDimensions from "useWindowDimensions";
 
 let obj = {};
 const merged = Object.assign(useWindowDimensions.getWindowDimensions());
-const mutable = module_4036.makeMutable(obj);
+const mutable = module_4042.makeMutable(obj);
 obj = {};
 const merged1 = Object.assign(useWindowDimensions.getWindowDimensions({ ignoreKeyboard: true }));
-const mutable1 = module_4036.makeMutable(obj);
+const mutable1 = module_4042.makeMutable(obj);
 require("subscribeToWindowDimensions")((arg0, arg1) => {
-  importDefault(10331)(mutable, arg0);
-  importDefault(10331)(mutable1, arg1);
+  importDefault(10336)(mutable, arg0);
+  importDefault(10336)(mutable1, arg1);
 });
 function getWindowDimensionsWorklet(arg0) {
   let ignoreKeyboard;

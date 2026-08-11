@@ -1,10 +1,10 @@
-// Module ID: 14156
-// Function ID: 14157
+// Module ID: 14164
+// Function ID: 14165
 // Name: getSpendingLimitDisplayState
-// Dependencies: [1340, 6996, 1905, 589, 14074, 5855, 5856, 1236, 2284, 2]
+// Dependencies: [1340, 6999, 1924, 589, 14082, 5855, 5856, 1236, 2303, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 14156 (getSpendingLimitDisplayState)
+// Module 14164 (getSpendingLimitDisplayState)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -35,7 +35,7 @@ function getSpendingLimitDisplayState(amount) {
         const intl = tmp5(1236).intl;
         const obj1 = { amount: null };
         obj1[0] = tmp5(5855).formatPrice(diff, currency);
-        obj[2] = intl.formatToPlainString(importDefault(2284)["+Q+bU1"], obj1);
+        obj[2] = intl.formatToPlainString(importDefault(2303)["+Q+bU1"], obj1);
         const tmp5Result = tmp5(5855);
       } else {
         obj = { kind: "on", monthlyText: null };
@@ -68,7 +68,7 @@ export const useSpendingLimitFromUserSettings = function useSpendingLimitFromUse
       tmp2 = obj;
     }
     return tmp2;
-  }, undefined, require(14074) /* spendingLimitEqual */.spendingLimitEqual);
+  }, undefined, require(14082) /* spendingLimitEqual */.spendingLimitEqual);
 };
 export const CLOSE_TO_LIMIT_THRESHOLD_MAJOR_UNITS = 10;
 export { getSpendingLimitDisplayState };

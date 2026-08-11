@@ -1,10 +1,10 @@
-// Module ID: 15907
-// Function ID: 15908
+// Module ID: 15924
+// Function ID: 15925
 // Name: getGuildPermissionSpec
-// Dependencies: [505, 1236, 1351, 2]
+// Dependencies: [505, 1236, 1370, 2]
 // Exports: generateChannelAppsSection, generateChannelEventsSection, generateChannelGeneralSection, generateChannelMembershipSection, generateChannelStageSection, generateChannelStageVoiceSection, generateChannelTextSection, generateChannelVoiceChatSection, generateChannelVoiceSection, generateGuildPermissionSpec, renderDescription
 
-// Module 15907 (getGuildPermissionSpec)
+// Module 15924 (getGuildPermissionSpec)
 import { Permissions } from "sum";
 
 function getGuildPermissionSpec(permissionOptions) {
@@ -647,7 +647,7 @@ export const generateChannelAppsSection = function generateChannelAppsSection(ar
   }
   items[1] = prop;
   items[2] = Permissions.USE_EXTERNAL_APPS;
-  const found = items.filter(_require(1351).isNotNullish);
+  const found = items.filter(_require(1370).isNotNullish);
   _require = arg0;
   obj[1] = found.map((arg0) => table[arg0.toString(arg0)]);
   return obj;

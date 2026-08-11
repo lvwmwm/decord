@@ -1,9 +1,9 @@
-// Module ID: 14104
-// Function ID: 14105
+// Module ID: 14112
+// Function ID: 14113
 // Name: toggle
-// Dependencies: [5829, 8082, 676, 14071, 589, 4642, 1236, 4732, 14102, 14103, 10447, 2]
+// Dependencies: [5829, 8084, 676, 14079, 589, 4642, 1236, 4732, 14110, 14111, 10452, 2]
 
-// Module 14104 (toggle)
+// Module 14112 (toggle)
 import hasConsented from "hasConsented";
 import { Consents } from "ME";
 import createToggle from "createToggle";
@@ -22,9 +22,9 @@ createToggle = {
   onValueChange: function handlePersonalizationChange(arg0) {
     if (arg0) {
       let items = [Consents.PERSONALIZATION];
-      const obj3 = require(14102) /* handleRequestSuccess */;
-      require(14102) /* handleRequestSuccess */.setConsents(items, []).catch((message) => callback(14103).showDataPrivacyRateLimitAlert(message.message));
-      const setConsentsResult = require(14102) /* handleRequestSuccess */.setConsents(items, []);
+      const obj3 = require(14110) /* handleRequestSuccess */;
+      require(14110) /* handleRequestSuccess */.setConsents(items, []).catch((message) => callback(14111).showDataPrivacyRateLimitAlert(message.message));
+      const setConsentsResult = require(14110) /* handleRequestSuccess */.setConsents(items, []);
     } else {
       let obj = importDefault(4642);
       obj = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null };
@@ -39,13 +39,13 @@ createToggle = {
       obj[4] = importDefault(4732).Colors.RED;
       obj[5] = function onConfirm() {
         const items = [constants.PERSONALIZATION];
-        return callback(14102).setConsents([], items);
+        return callback(14110).setConsents([], items);
       };
       obj.show(obj);
     }
   },
   useIsDisabled() {
-    return require(14071) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(14079) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

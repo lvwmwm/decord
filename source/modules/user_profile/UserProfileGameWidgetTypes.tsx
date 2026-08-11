@@ -1,10 +1,10 @@
-// Module ID: 7082
-// Function ID: 7083
+// Module ID: 7085
+// Function ID: 7086
 // Name: items
-// Dependencies: [7081, 4834, 7083, 2]
+// Dependencies: [7084, 4834, 7086, 2]
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 7082 (items)
+// Module 7085 (items)
 const items = [require("WidgetType").WidgetType.CURRENT_GAMES, require("WidgetType").WidgetType.FAVORITE_GAMES, require("WidgetType").WidgetType.WANT_TO_PLAY_GAMES, require("WidgetType").WidgetType.PLAYED_GAMES];
 let BaseGameWidget;
 class BaseGameWidget {
@@ -25,6 +25,9 @@ prototype["toSubmission"] = function toSubmission() {
   obj[1] = obj;
   return obj;
 };
+prototype["isUpdatable"] = function isUpdatable() {
+  return true;
+};
 prototype["isDiscardable"] = function isDiscardable() {
   return 0 === this.games.length;
 };
@@ -42,8 +45,8 @@ prototype["isEqual"] = function isEqual(type) {
     const self = this;
     let areWidgetGamesEqualResult = type.type === this.type;
     if (areWidgetGamesEqualResult) {
-      areWidgetGamesEqualResult = require(7083) /* findGameWidget */.areWidgetGamesEqual(self.games, type.games, self.type);
-      const obj = require(7083) /* findGameWidget */;
+      areWidgetGamesEqualResult = require(7086) /* findGameWidget */.areWidgetGamesEqual(self.games, type.games, self.type);
+      const obj = require(7086) /* findGameWidget */;
     }
     tmp = areWidgetGamesEqualResult;
   }

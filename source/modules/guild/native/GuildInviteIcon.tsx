@@ -1,9 +1,9 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12019
+// Function ID: 12020
 // Name: render
-// Dependencies: [19, 17, 21, 4303, 712, 4013, 12017, 1236, 1416, 5268, 1884, 1297, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4031, 12020, 1236, 1435, 5268, 1903, 1297, 2]
 
-// Module 12016 (render)
+// Module 12019 (render)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -31,7 +31,7 @@ GuildInviteIcon.prototype["render"] = function render() {
   const props = this.props;
   ({ style, guild } = props);
   ({ size, textScale } = props);
-  let obj = require(12017) /* getClass */;
+  let obj = require(12020) /* getClass */;
   const getClassResult = obj.getClass(tmp, "icon", size);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { guildName: guild.name };
@@ -39,7 +39,7 @@ GuildInviteIcon.prototype["render"] = function render() {
   if (null != guild.icon) {
     obj = { id: null, icon: null, canAnimate: true, size: 128 };
     ({ id: obj7[0], icon: obj7[1] } = guild);
-    const guildIconSource = importDefault(1416).getGuildIconSource(obj);
+    const guildIconSource = importDefault(1435).getGuildIconSource(obj);
     const obj1 = { accessibilityRole: "image", accessibilityLabel: null, style: null, source: null };
     obj1[1] = formatToPlainStringResult;
     const items = [tmp.icon, getClassResult, style];
@@ -47,7 +47,7 @@ GuildInviteIcon.prototype["render"] = function render() {
     obj1[3] = guildIconSource;
     return jsx(importDefault(5268), { accessibilityRole: "image", accessibilityLabel: null, style: null, source: null });
   } else {
-    const acronym = tmp2(1884).getAcronym(guild.name);
+    const acronym = tmp2(1903).getAcronym(guild.name);
     let num = table[acronym.length - 1];
     if (num == null) {
       num = 10;

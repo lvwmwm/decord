@@ -1,10 +1,10 @@
-// Module ID: 8376
-// Function ID: 8377
+// Module ID: 8381
+// Function ID: 8382
 // Name: hasForLaterPremiumType
-// Dependencies: [1903, 1905, 1926, 589, 2]
+// Dependencies: [1922, 1924, 1945, 589, 2]
 // Exports: default, useHasForLaterPremiumType
 
-// Module 8376 (hasForLaterPremiumType)
+// Module 8381 (hasForLaterPremiumType)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
 
@@ -13,7 +13,7 @@ const result = require("isPremiumAtLeast").fileFinishedImporting("modules/saved_
 
 export default function hasForLaterPremiumType() {
   currentUser = currentUser.getCurrentUser();
-  return require(1926) /* isPremiumAtLeast */.isPremium(currentUser, PremiumTypes.TIER_2);
+  return require(1945) /* isPremiumAtLeast */.isPremium(currentUser, PremiumTypes.TIER_2);
 };
 export const useHasForLaterPremiumType = function useHasForLaterPremiumType() {
   const items = [mergeGuildAvatar];

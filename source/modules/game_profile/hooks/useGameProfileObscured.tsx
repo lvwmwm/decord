@@ -1,7 +1,7 @@
 // Module ID: 4835
 // Function ID: 4836
 // Name: useGameProfileObscured
-// Dependencies: [1903, 4836, 589, 2]
+// Dependencies: [1922, 4836, 589, 2]
 // Exports: default, isGameProfileObscured
 
 // Module 4835 (useGameProfileObscured)

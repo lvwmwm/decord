@@ -1,7 +1,7 @@
 // Module ID: 5182
 // Function ID: 5183
 // Name: getAsync
-// Dependencies: [5, 3, 1936, 2]
+// Dependencies: [5, 3, 1955, 2]
 
 // Module 5182 (getAsync)
 import asyncGeneratorStep from "asyncGeneratorStep";
@@ -54,7 +54,7 @@ prototype["getAsync"] = function getAsync(arg0) {
 prototype["handleConnectionOpen"] = function handleConnectionOpen(unavailableGuilds, database) {
   const self = this;
   const items = [...unavailableGuilds.unavailableGuilds];
-  obj = obj(1936);
+  obj = obj(1955);
   obj.emojisTransaction(database).deleteAllExcept(items);
   for (const item10027 of tmp2) {
     let handleOneGuildCreateResult = self.handleOneGuildCreate(item10027, arg1);
@@ -110,15 +110,15 @@ prototype["resetInMemoryState"] = function resetInMemoryState() {
 
 };
 prototype["replace"] = function replace(arg0, arg1, database) {
-  obj = obj(1936);
+  obj = obj(1955);
   const replaced = obj.emojisTransaction(database).replaceAll(arg0, arg1);
 };
 prototype["delete"] = function delete(arg0, database) {
-  obj = obj(1936);
+  obj = obj(1955);
   obj.emojisTransaction(database).delete(arg0);
 };
 prototype["update"] = function update(arg0, arg1, arg2, database) {
-  obj = obj(1936);
+  obj = obj(1955);
   const emojisTransactionResult = obj.emojisTransaction(database);
   emojisTransactionResult.putAll(arg0, arg1);
   while (tmp2 !== undefined) {

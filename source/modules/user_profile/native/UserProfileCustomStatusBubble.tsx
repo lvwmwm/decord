@@ -1,9 +1,9 @@
-// Module ID: 9450
-// Function ID: 9451
+// Module ID: 9456
+// Function ID: 9457
 // Name: EmojiImage
-// Dependencies: [32, 19, 17, 5776, 1906, 21, 4303, 712, 3974, 5268, 1416, 500, 4299, 5360, 8788, 9451, 9452, 4271, 9454, 5748, 1236, 4846, 9527, 2]
+// Dependencies: [32, 19, 17, 5776, 1925, 21, 4303, 712, 3993, 5268, 1435, 500, 4299, 5360, 8794, 9457, 9458, 4271, 9460, 5748, 1236, 4846, 9533, 2]
 
-// Module 9450 (EmojiImage)
+// Module 9456 (EmojiImage)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "QUICK_SWITCHER";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
@@ -25,14 +25,14 @@ function EmojiImage(id) {
   if (animated === undefined) {
     animated = false;
   }
-  const AnimateEmoji = require(3974) /* explicitContentFromProto */.AnimateEmoji;
+  const AnimateEmoji = require(3993) /* explicitContentFromProto */.AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   let obj = { style: items, source: null, resizeMode: "contain" };
   items = [{ height: size, width: size }, id.style];
   const tmp2 = closure_8;
   const tmp3 = importDefault(5268);
   obj = { id: id.emojiId, animated: null, size: null };
-  const obj2 = importDefault(1416);
+  const obj2 = importDefault(1435);
   obj = { uri: obj2.getEmojiURL(obj) };
   obj[1] = Boolean(animated) && setting;
   obj[2] = EMOJI_URL_BASE_SIZE;
@@ -113,7 +113,7 @@ function EmojiOnlyStatusContent(arg0) {
   let emoji;
   let size;
   ({ emoji, size } = arg0);
-  const AnimateEmoji = require(3974) /* explicitContentFromProto */.AnimateEmoji;
+  const AnimateEmoji = require(3993) /* explicitContentFromProto */.AnimateEmoji;
   let id;
   const setting = AnimateEmoji.useSetting();
   if (emoji != null) {
@@ -121,7 +121,7 @@ function EmojiOnlyStatusContent(arg0) {
   }
   let emojiURL;
   if (null != id) {
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: null, animated: null, size: null };
     obj[0] = emoji.id;
     let animated;

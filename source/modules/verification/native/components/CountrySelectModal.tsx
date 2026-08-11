@@ -1,10 +1,10 @@
-// Module ID: 8521
-// Function ID: 8522
+// Module ID: 8527
+// Function ID: 8528
 // Name: CountrySelectModal
-// Dependencies: [19, 21, 1236, 5270, 4509, 8522, 8519, 5821, 8543, 5783, 2]
+// Dependencies: [19, 21, 1236, 5270, 4509, 8528, 8525, 5821, 8549, 5783, 2]
 // Exports: default
 
-// Module 8521 (CountrySelectModal)
+// Module 8527 (CountrySelectModal)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -24,7 +24,7 @@ export default function CountrySelectModal() {
           return callback(4509).pop();
         },
         onCountrySelected(countryCode) {
-          return callback(8519).setCountryCode(countryCode);
+          return callback(8525).setCountryCode(countryCode);
         }
       });
     };
@@ -32,7 +32,7 @@ export default function CountrySelectModal() {
     return obj;
   }, []);
   const effect = React.useEffect(() => () => {
-    callback(5821).runAfterInteractions(callback(8543).setCountrySelectorClosed, 400);
+    callback(5821).runAfterInteractions(callback(8549).setCountrySelectorClosed, 400);
   }, []);
   return jsx(require(5783) /* NavigationStack */.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
 };

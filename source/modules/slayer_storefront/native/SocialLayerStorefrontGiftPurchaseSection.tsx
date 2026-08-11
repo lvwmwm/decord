@@ -1,10 +1,10 @@
-// Module ID: 10101
-// Function ID: 10102
+// Module ID: 10106
+// Function ID: 10107
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [32, 19, 17, 6888, 1903, 676, 1905, 21, 4303, 712, 5369, 5734, 589, 5716, 514, 4730, 698, 10102, 10094, 500, 709, 10089, 1236, 10097, 4299, 4714, 2]
+// Dependencies: [32, 19, 17, 6890, 1922, 676, 1924, 21, 4303, 712, 5369, 5734, 589, 5716, 514, 4730, 698, 10107, 10099, 500, 709, 10094, 1236, 10102, 4299, 4714, 2]
 // Exports: default
 
-// Module 10101 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 10106 (SocialLayerStorefrontGiftPurchaseSection)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "useSyncGiftOptionsToOrder";

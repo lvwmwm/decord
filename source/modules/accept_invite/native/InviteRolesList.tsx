@@ -1,10 +1,10 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 12078
+// Function ID: 12079
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4303, 1968, 4712, 4299, 1236, 9700, 2]
+// Dependencies: [19, 17, 21, 4303, 1987, 4712, 4299, 1236, 9705, 2]
 // Exports: default
 
-// Module 12075 (InviteRolesList)
+// Module 12078 (InviteRolesList)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

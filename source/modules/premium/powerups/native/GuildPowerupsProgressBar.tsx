@@ -1,10 +1,10 @@
-// Module ID: 15344
-// Function ID: 15345
+// Module ID: 15358
+// Function ID: 15359
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 15345, 1891, 21, 712, 4036, 4725, 4303, 647, 15346, 15347, 4304, 11840, 5748, 1236, 2316, 8663, 4299, 5778, 2]
+// Dependencies: [19, 17, 15359, 1910, 21, 712, 4042, 4725, 4303, 647, 15360, 15361, 4304, 11843, 5748, 1236, 2335, 8669, 4299, 5778, 2]
 // Exports: default
 
-// Module 15344 (GuildPowerupsProgressBar)
+// Module 15358 (GuildPowerupsProgressBar)
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import get_ActivityIndicator from "TwinButtons";
 import initialize from "initialize";
@@ -12,7 +12,7 @@ import createGuildRecordFromRust from "createGuildRecordFromRust";
 import jsxProd from "jsxProd";
 import LinearGradient from "LinearGradient";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 
 let StyleSheet;
 let c4;

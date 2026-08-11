@@ -1,15 +1,15 @@
-// Module ID: 15604
-// Function ID: 15605
+// Module ID: 15621
+// Function ID: 15622
 // Name: AnnouncementMessageRowWrapper
-// Dependencies: [19, 17, 1372, 1891, 3938, 4499, 1903, 15605, 21, 15567, 712, 589, 5232, 8913, 9666, 11120, 15606, 8912, 15608, 1236, 11, 4846, 9033, 15610, 15614, 2]
+// Dependencies: [19, 17, 1391, 1910, 3957, 4499, 1922, 15622, 21, 15584, 712, 589, 5232, 8919, 9671, 11125, 15623, 8918, 15625, 1236, 11, 4846, 9039, 15627, 15631, 2]
 // Exports: default
 
-// Module 15604 (AnnouncementMessageRowWrapper)
+// Module 15621 (AnnouncementMessageRowWrapper)
 import importAllResult from "getSystemLocale";
 import { View } from "generateHydrationId";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ITEM_PADDING } from "ITEM_PADDING";
@@ -150,7 +150,7 @@ export default function AnnouncementMessageRowWrapper(message) {
     author = gravityMessage.author;
   }
   tmp(tmp2[11]);
-  [][0] = upsertRelationship;
+  [][0] = markAllUserIdListsStale;
   let tmp9 = null;
   if (null != stateFromStores) {
     tmp9 = null;

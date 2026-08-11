@@ -1,6 +1,6 @@
 // Module ID: 4313
 // Function ID: 4314
-// Dependencies: [32, 5, 4314, 1376, 1372, 4315, 676, 9242, 530, 5234, 4159, 4311, 5129, 709, 8936, 698, 1222, 4153, 1236, 5938, 4541, 2]
+// Dependencies: [32, 5, 4314, 1395, 1391, 4315, 676, 9248, 530, 5234, 4159, 4311, 5129, 709, 8942, 698, 1222, 1363, 1236, 5940, 4541, 2]
 
 // Module 4313
 import _slicedToArray from "_slicedToArray";
@@ -442,7 +442,7 @@ export default {
     if (arg2 === undefined) {
       flag2 = false;
     }
-    if (importDefault(8936)(id)) {
+    if (importDefault(8942)(id)) {
       let tmpResult = tmp(698);
       let obj = { last_changelog_id: null, unread_count: null };
       obj[0] = handleUserSettingsProtoStoreChange.latestChangelogId();
@@ -450,7 +450,7 @@ export default {
       tmpResult.track(constants.CHANGE_LOG_DM_REMOVED, obj);
     }
     tmpResult = tmp(709);
-    obj = { id, guild_id: "Array", parent_id: "call" };
+    obj = { id, guild_id: "Array", parent_id: "options" };
     tmpResult.dispatch({ type: "CHANNEL_DELETE", channel: obj, silent: flag2 });
     if (flag) {
       require(1222) /* transitionTo */.transitionTo(constants2.FRIENDS);
@@ -462,11 +462,11 @@ export default {
     const obj7 = require(530) /* sendRequest */;
     const delResult = HTTP.del(obj1);
     return HTTP.del(obj1).then(() => {
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.nRbucl));
     }).catch(() => {
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.ndXVI5));
     });
@@ -590,7 +590,7 @@ export default {
         tmp10 = isThreadResult;
       }
       if (!tmp10) {
-        obj1 = outer1_1(5938);
+        obj1 = outer1_1(5940);
         const result = obj1.checkGuildTemplateDirty(guildId);
       }
       return closure_1;
@@ -949,7 +949,7 @@ export default {
       const obj4 = outer1_0(530);
       obj2[3] = obj4.rejectWithMigratedError();
       closure_0 = yield HTTP.post(obj2);
-      const obj = outer1_1(5938);
+      const obj = outer1_1(5940);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();

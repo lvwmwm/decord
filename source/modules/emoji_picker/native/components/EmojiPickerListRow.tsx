@@ -1,9 +1,9 @@
-// Module ID: 8709
-// Function ID: 8710
+// Module ID: 8715
+// Function ID: 8716
 // Name: EmojiItemLockedOverlay
-// Dependencies: [19, 17, 1302, 8640, 1338, 21, 4303, 712, 500, 689, 1416, 4823, 4846, 5268, 4153, 5361, 5362, 1297, 8710, 2]
+// Dependencies: [19, 17, 1302, 8646, 1338, 21, 4303, 712, 500, 689, 1435, 4823, 4846, 5268, 1363, 5361, 5362, 1297, 8716, 2]
 
-// Module 8709 (EmojiItemLockedOverlay)
+// Module 8715 (EmojiItemLockedOverlay)
 import importAllResult from "set";
 import get_ActivityIndicator from "Button";
 import handleThemeChange from "handleThemeChange";
@@ -41,7 +41,7 @@ function EmojiItem(emoji) {
     }
     let emojiURL = str;
   } else {
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: null, animated: null, size: null };
     obj[0] = emoji.id;
     if (animateEmoji) {
@@ -84,7 +84,7 @@ function EmojiItem(emoji) {
     obj2[0] = emojiURL;
     obj1[3] = obj2;
     callback(tmp15, obj1);
-    tmp7Result = tmp7(4153);
+    tmp7Result = tmp7(1363);
   } else {
     const obj3 = { allowFontScaling: false, style: null, children: null };
     obj3[1] = tmp.surrogates;
@@ -162,7 +162,7 @@ let closure_12 = importAllResult.memo((emojis) => {
         } else {
           let tmp7 = importDefault;
           let tmp8 = dependencyMap;
-          let obj1 = importDefault(1416);
+          let obj1 = importDefault(1435);
           obj = { id: null, animated: null, size: null };
           obj[0] = tmp4.id;
           let animated = animateEmoji;
@@ -202,7 +202,7 @@ let closure_12 = importAllResult.memo((emojis) => {
     }
   };
   obj1 = { rowContentWidth: containerWidth, rowContentPaddingVertical: PADDING_VERTICAL, itemSize: IMAGE_SIZE, items, isSectionNitroLocked };
-  return callback(importDefault(8710), obj);
+  return callback(importDefault(8716), obj);
 });
 let closure_13 = importAllResult.memo((arg0) => {
   let animateEmoji;

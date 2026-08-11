@@ -1,10 +1,10 @@
-// Module ID: 8772
-// Function ID: 8773
+// Module ID: 8778
+// Function ID: 8779
 // Name: ExpressionPickerCategories
-// Dependencies: [19, 17, 21, 4303, 712, 1348, 4173, 8773, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1367, 4173, 8779, 2]
 // Exports: default
 
-// Module 8772 (ExpressionPickerCategories)
+// Module 8778 (ExpressionPickerCategories)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ export default function ExpressionPickerCategories(arg0) {
   let style;
   ({ children, portalHostName, style } = arg0);
   const tmp = createCacheKey();
-  const tmp4 = importDefault(1348)("ExpressionPickerCategories");
+  const tmp4 = importDefault(1367)("ExpressionPickerCategories");
   let obj = { hostName: portalHostName, children: null };
   const items = [tmp.container, , ];
   let containerRefresh = null;
@@ -40,7 +40,7 @@ export default function ExpressionPickerCategories(arg0) {
   items[2] = style;
   let tmp5Result = null;
   if (!tmp4) {
-    tmp5Result = tmp5(importDefault(8773), {});
+    tmp5Result = tmp5(importDefault(8779), {});
   }
   const items1 = [tmp5Result, children];
   obj[1] = items1;

@@ -1,9 +1,9 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14218
+// Function ID: 14219
 // Name: Integration
-// Dependencies: [5, 32, 19, 17, 4998, 1891, 676, 5125, 21, 4303, 1297, 712, 5236, 5123, 589, 4714, 1236, 4299, 5779, 5000, 5768, 4013, 14211, 10426, 4642, 4732, 10492, 14212, 14215, 5124, 11048, 3998, 1974, 4846, 10025, 14217, 2834, 1416, 4153, 4712, 8027, 5374, 5767, 2]
+// Dependencies: [5, 32, 19, 17, 4998, 1910, 676, 5125, 21, 4303, 1297, 712, 5236, 5123, 589, 4714, 1236, 4299, 5779, 5000, 5768, 4031, 14219, 10431, 4642, 4732, 10497, 14220, 14223, 5124, 11053, 4017, 1993, 4846, 10030, 14225, 2853, 1435, 1363, 4712, 8029, 5374, 5767, 2]
 
-// Module 14210 (Integration)
+// Module 14218 (Integration)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import combined from "combined";
 import importAllResult from "getPlatformUserUrl";
@@ -162,7 +162,7 @@ const PureComponent = importAllResult.PureComponent;
 class ConnectedAccount extends PureComponent {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f110841 = applyArgumentsResult;
+    f110923 = applyArgumentsResult;
     obj = { isVisible: 1 === applyArgumentsResult.props.account.visibility, isMetadataVisible: 1 === applyArgumentsResult.props.account.metadataVisibility, inProgressVisibility: null, inProgressMetadataVisibility: null, showActivity: applyArgumentsResult.props.account.showActivity, friendSync: applyArgumentsResult.props.account.friendSync, metadataRefreshing: false, metadataAlreadyRefreshed: false };
     applyArgumentsResult.state = obj;
     applyArgumentsResult.handleDisconnect = function handleDisconnect() {
@@ -209,9 +209,9 @@ class ConnectedAccount extends PureComponent {
       const account = lib.props.account;
       applyArgumentsResult(outer1_2[13]).disconnect(account.type, account.id);
     };
-    f110841 = undefined;
+    f110923 = undefined;
     closure_1 = applyArgumentsResult;
-    f110841 = RowSwitch((arg0) => {
+    f110923 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -269,9 +269,9 @@ class ConnectedAccount extends PureComponent {
       }
       return applyArgumentsResult;
     };
-    f110841 = undefined;
+    f110923 = undefined;
     closure_1 = applyArgumentsResult;
-    f110841 = RowSwitch((arg0) => {
+    f110923 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -329,9 +329,9 @@ class ConnectedAccount extends PureComponent {
       }
       return applyArgumentsResult;
     };
-    f110841 = undefined;
+    f110923 = undefined;
     closure_1 = applyArgumentsResult;
-    f110841 = RowSwitch((arg0) => {
+    f110923 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -370,9 +370,9 @@ class ConnectedAccount extends PureComponent {
       }
       return applyArgumentsResult;
     };
-    f110841 = undefined;
+    f110923 = undefined;
     closure_1 = applyArgumentsResult;
-    f110841 = RowSwitch((arg0) => {
+    f110923 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -449,11 +449,11 @@ prototype["renderUpsell"] = function renderUpsell() {
   if (account.twoWayLink) {
     return null;
   } else if (account.type === constants.XBOX) {
-    let tmp2 = callback3(require(14212) /* XboxTwoWayLinkUpsell */.XboxTwoWayLinkUpsell, {});
+    let tmp2 = callback3(require(14220) /* XboxTwoWayLinkUpsell */.XboxTwoWayLinkUpsell, {});
   } else {
     tmp2 = null;
     if (account.type === tmp.PLAYSTATION) {
-      tmp2 = callback3(require(14215) /* PlayStationTwoWayLinkUpsell */.PlayStationTwoWayLinkUpsell, {});
+      tmp2 = callback3(require(14223) /* PlayStationTwoWayLinkUpsell */.PlayStationTwoWayLinkUpsell, {});
     }
   }
 };
@@ -503,33 +503,33 @@ prototype["renderMetadata"] = function renderMetadata() {
   const createdAtDate = obj1.getCreatedAtDate(metadata[MetadataFields.CREATED_AT], props.locale);
   const type = account.type;
   if (constants.REDDIT === type) {
-    let tmp2Result = tmp2(11048);
+    let tmp2Result = tmp2(11053);
     let redditMetadataItems = tmp2Result.generateRedditMetadataItems(metadata);
   } else if (tmp6.STEAM === type) {
-    tmp2Result = tmp2(11048);
+    tmp2Result = tmp2(11053);
     redditMetadataItems = tmp2Result.generateSteamMetadataItems(metadata);
   } else {
     if (tmp6.BLUESKY !== type) {
       if (tmp6.TWITTER !== type) {
         if (tmp6.MASTODON !== type) {
           if (tmp6.EBAY === type) {
-            redditMetadataItems = tmp2(11048).generateEbayMetadataItems(metadata);
-            const tmp2Result1 = tmp2(11048);
+            redditMetadataItems = tmp2(11053).generateEbayMetadataItems(metadata);
+            const tmp2Result1 = tmp2(11053);
           } else if (tmp6.PAYPAL === type) {
-            redditMetadataItems = tmp2(11048).generatePaypalMetadataItems(metadata);
-            const tmp2Result2 = tmp2(11048);
+            redditMetadataItems = tmp2(11053).generatePaypalMetadataItems(metadata);
+            const tmp2Result2 = tmp2(11053);
           } else {
             redditMetadataItems = [];
             if (tmp6.TIKTOK === type) {
-              redditMetadataItems = tmp2(11048).generateTikTokMetadataItems(metadata);
-              const tmp2Result3 = tmp2(11048);
+              redditMetadataItems = tmp2(11053).generateTikTokMetadataItems(metadata);
+              const tmp2Result3 = tmp2(11053);
             }
           }
         }
       }
     }
-    redditMetadataItems = tmp2(11048).generateTwitterMetadataItems(metadata);
-    const tmp2Result4 = tmp2(11048);
+    redditMetadataItems = tmp2(11053).generateTwitterMetadataItems(metadata);
+    const tmp2Result4 = tmp2(11053);
   }
   if (null !== createdAtDate) {
     let obj = { variant: "text-xs/normal", color: "interactive-text-default", children: null };
@@ -601,8 +601,8 @@ prototype["renderMetadata"] = function renderMetadata() {
       stringResult = string(tmp2(1236).t["8O0mlf"]);
       obj8[0] = stringResult;
       obj8[3] = function onPress() {
-        const obj = self(3998);
-        return obj.openURL(self(1974).getArticleURL(constants.CONNECTION_DETAILS));
+        const obj = self(4017);
+        return obj.openURL(self(1993).getArticleURL(constants.CONNECTION_DETAILS));
       };
       tmp = tmp23(Button, obj8);
       obj7[1] = tmp;
@@ -630,9 +630,9 @@ prototype["renderMetadata"] = function renderMetadata() {
     obj10[0] = tmp.metadataRefreshIcon;
     obj10[1] = tmp2(1297).Icon.Sizes.SMALL;
     if (self.state.metadataAlreadyRefreshed) {
-      let tmp9Result = tmp9(10025);
+      let tmp9Result = tmp9(10030);
     } else {
-      tmp9Result = tmp9(14217);
+      tmp9Result = tmp9(14225);
     }
     obj10[2] = tmp9Result;
     obj9[6] = callback3(tmp2(1297).Icon, obj10);
@@ -719,14 +719,14 @@ prototype["render"] = function render() {
     const intl = require(1236) /* getSystemLocale */.intl;
     obj = { platformName: null };
     obj[0] = account.name;
-    let name = intl.format(tmp2(2834).Glhokn, obj);
+    let name = intl.format(tmp2(2853).Glhokn, obj);
   } else {
     name = account.name;
   }
   obj = { accessible: true, accessibilityLabel: value.name, style: tmp.platformIcon, size: null, source: null, disableColor: true };
   obj[3] = require(1297) /* Button */.Icon.Sizes.LARGE;
-  let obj3 = require(1416) /* getAvatarURL */;
-  let obj4 = require(4153) /* AccessibilityAnnouncer */;
+  let obj3 = require(1435) /* getAvatarURL */;
+  let obj4 = require(1363) /* AccessibilityAnnouncer */;
   const icon = value.icon;
   obj[4] = obj3.makeSource(obj4.isThemeDark(props.theme) ? icon.darkPNG : icon.lightPNG);
   let tmp7Result = tmp7(require(1297) /* Button */.Icon, obj);
@@ -737,7 +737,7 @@ prototype["render"] = function render() {
   obj2[2] = self.handleDisconnect;
   obj2[3] = { top: 5, left: 5, bottom: 5, right: 5 };
   obj3 = { style: tmp.deleteConnectionIcon, source: null };
-  obj3[1] = importDefault(8027);
+  obj3[1] = importDefault(8029);
   obj2[4] = closure_14(require(1297) /* Button */.Icon, obj3);
   obj1[3] = closure_14(require(4846) /* PressableBase */.PressableOpacity, obj2);
   tmp7Result = tmp7(tmp8(4712).Stack, obj1);

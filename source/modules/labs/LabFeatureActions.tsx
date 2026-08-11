@@ -1,10 +1,10 @@
-// Module ID: 14721
-// Function ID: 14722
+// Module ID: 14731
+// Function ID: 14732
 // Name: toggleLabFeature
-// Dependencies: [8915, 709, 2]
+// Dependencies: [8921, 709, 2]
 // Exports: toggleLabFeature
 
-// Module 14721 (toggleLabFeature)
+// Module 14731 (toggleLabFeature)
 import getUserAgnosticState from "getUserAgnosticState";
 
 let closure_3 = {};

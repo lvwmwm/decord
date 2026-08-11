@@ -1,11 +1,12 @@
-// Module ID: 16589
-// Function ID: 16590
+// Module ID: 16601
+// Function ID: 16602
 // Name: _fetchGameCommunities
-// Dependencies: [12973, 14943, 5261, 14944, 15393, 12976, 12974, 2]
+// Dependencies: [12977, 14953, 15407, 5261, 14954, 15408, 12980, 12978, 2]
 
-// Module 16589 (_fetchGameCommunities)
+// Module 16601 (_fetchGameCommunities)
 import initialize from "initialize";
 import set from "set";
+import { MAX_DISPLAYED_UPSELL_GUILDS as closure_5 } from "MAX_DISPLAYED_UPSELL_GUILDS";
 import "initialize";
 
 let require = arg1;
@@ -26,19 +27,19 @@ class MobileGameCommunitiesManager extends tmp2 {
 }
 const prototype = MobileGameCommunitiesManager.prototype;
 prototype["_fetchGameCommunities"] = function _fetchGameCommunities(result) {
-  const gameIdsForDetectedGames = require(14944) /* DETECTABLE_GAME_TO_APPLICATION_ID_MAP */.getGameIdsForDetectedGames(result);
+  const gameIdsForDetectedGames = require(14954) /* DETECTABLE_GAME_TO_APPLICATION_ID_MAP */.getGameIdsForDetectedGames(result);
   const timestamp = Date.now();
   const diff = timestamp - store.getLastFetchedAt();
   if (diff >= 86400000) {
     const dismissedGuildIds = store.getDismissedGuildIds();
     const _Array = Array;
-    const mobileGameCommunities = importAll(15393).fetchMobileGameCommunities(gameIdsForDetectedGames, Array.from(dismissedGuildIds), 6);
-    const obj3 = importAll(15393);
+    const mobileGameCommunities = importAll(15408).fetchMobileGameCommunities(gameIdsForDetectedGames, Array.from(dismissedGuildIds), closure_5);
+    const obj3 = importAll(15408);
   }
 };
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
-  const GameCommunityUpsellMultiExperiment = require(12976) /* GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT */.GameCommunityUpsellMultiExperiment;
-  if (GameCommunityUpsellMultiExperiment.getConfig({ location: "MobileGameCommunitiesManager" }).enabled) {
+  const GameCommunityAddServerEntryExperiment = require(12980) /* GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT */.GameCommunityAddServerEntryExperiment;
+  if (GameCommunityAddServerEntryExperiment.getConfig({ location: "MobileGameCommunitiesManager" }).enabled) {
     if (0 === store.getLastFetchedAt()) {
       const _Object = Object;
       const values = Object.values(initialize.getUserAgnosticState().apps);
@@ -50,7 +51,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
         return null != lastScannedAt;
       })) {
         const obj = {};
-        const ALL_DETECTABLE_APP_NAMES = require(12974) /* DetectableAppNames */.ALL_DETECTABLE_APP_NAMES;
+        const ALL_DETECTABLE_APP_NAMES = require(12978) /* DetectableAppNames */.ALL_DETECTABLE_APP_NAMES;
         for (const item10021 of ALL_DETECTABLE_APP_NAMES) {
           let tmp6 = initialize;
           obj[item10021] = initialize.isAppInstalled(item10021);
@@ -63,13 +64,13 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
   }
 };
 prototype["handleLocalAppDetectionComplete"] = function handleLocalAppDetectionComplete(result) {
-  const GameCommunityUpsellMultiExperiment = require(12976) /* GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT */.GameCommunityUpsellMultiExperiment;
-  if (GameCommunityUpsellMultiExperiment.getConfig({ location: "MobileGameCommunitiesManager" }).enabled) {
+  const GameCommunityAddServerEntryExperiment = require(12980) /* GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT */.GameCommunityAddServerEntryExperiment;
+  if (GameCommunityAddServerEntryExperiment.getConfig({ location: "MobileGameCommunitiesManager" }).enabled) {
     const self = this;
     result = this._fetchGameCommunities(result.result);
   }
 };
 const mobileGameCommunitiesManager = new MobileGameCommunitiesManager();
-let result = require("initialize").fileFinishedImporting("modules/game_community_upsell/native/MobileGameCommunitiesManager.tsx");
+let result = require("MAX_DISPLAYED_UPSELL_GUILDS").fileFinishedImporting("modules/game_community_upsell/native/MobileGameCommunitiesManager.tsx");
 
 export default mobileGameCommunitiesManager;

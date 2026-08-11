@@ -1,10 +1,10 @@
-// Module ID: 8670
-// Function ID: 8671
+// Module ID: 8676
+// Function ID: 8677
 // Name: styles
-// Dependencies: [19, 21, 4303, 712, 4718, 1348, 4036, 4713, 7752, 2]
+// Dependencies: [19, 21, 4303, 712, 4718, 1367, 4042, 4713, 7754, 2]
 // Exports: FloatingActionButton
 
-// Module 8670 (styles)
+// Module 8676 (styles)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -43,7 +43,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   ({ icon, positionBottom } = positionRight);
   positionRight = positionRight.positionRight;
   const merged = Object.assign(positionRight, Object.create(null));
-  let obj = positionBottom(4036);
+  let obj = positionBottom(4042);
   class F {
     constructor() {
       tmp = positionBottom;
@@ -82,7 +82,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
     cloneElementResult = validElement.cloneElement(icon, obj2);
   }
   obj1.icon = cloneElementResult;
-  ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = styles(positionRight(1348)("FloatingActionButton")));
-  obj[1] = jsx(positionBottom(7752).BaseIconButton, {});
-  return jsx(positionRight(4036).View, { style: animatedStyle, children: null });
+  ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = styles(positionRight(1367)("FloatingActionButton")));
+  obj[1] = jsx(positionBottom(7754).BaseIconButton, {});
+  return jsx(positionRight(4042).View, { style: animatedStyle, children: null });
 };

@@ -1,9 +1,9 @@
-// Module ID: 13053
-// Function ID: 13054
+// Module ID: 13062
+// Function ID: 13063
 // Name: StreamingUserRow
-// Dependencies: [19, 17, 1302, 1218, 4995, 1372, 1971, 4351, 4390, 676, 21, 4303, 712, 10643, 589, 4153, 13054, 13055, 1297, 13056, 13057, 13058, 13059, 9063, 4299, 1236, 7967, 7198, 10939, 4158, 4513, 4271, 4846, 9242, 4493, 9234, 4146, 2]
+// Dependencies: [19, 17, 1302, 1218, 4995, 1391, 1990, 4351, 4390, 676, 21, 4303, 712, 10648, 589, 1363, 13063, 13064, 1297, 13065, 13066, 13067, 13068, 9069, 4299, 1236, 7969, 7199, 10944, 4158, 4513, 4271, 4846, 9248, 4493, 9240, 4148, 2]
 
-// Module 13053 (StreamingUserRow)
+// Module 13062 (StreamingUserRow)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "registerAsset";
 import handleThemeChange from "handleThemeChange";
@@ -50,7 +50,7 @@ function StreamingUserRow(user) {
       labelCallScreen = tmp2.labelCallScreen;
     }
     obj[1] = labelCallScreen;
-    obj.subLabel = closure_11(tmp3(7967).FormSubLabel, obj);
+    obj.subLabel = closure_11(tmp3(7969).FormSubLabel, obj);
     const items1 = [closure_11(closure_16, obj), ];
     let tmp10Result = user.id !== store.getId();
     if (tmp10Result) {
@@ -76,10 +76,10 @@ function StreamingUserRow(user) {
           const obj4 = user(outer1_2[30]);
         }
       };
-      obj1[1] = tmp10(channel(10939), obj2);
+      obj1[1] = tmp10(channel(10944), obj2);
       tmp10Result = tmp10(closure_3, obj1);
       const tmp18 = closure_3;
-      const tmp20 = channel(10939);
+      const tmp20 = channel(10944);
     }
     let obj3 = { children: null };
     items1[1] = tmp10Result;
@@ -286,7 +286,7 @@ let closure_16 = importAllResult.memo((user) => {
   }
   obj1[1] = guild_id;
   obj1[2] = user(1297).AvatarSizes.REFRESH_MEDIUM_32;
-  obj1[3] = channel(10643)(obj);
+  obj1[3] = channel(10648)(obj);
   obj[2] = closure_11(user(1297).Avatar, obj1);
   let tmp23Result = null;
   if (flag3) {
@@ -298,7 +298,7 @@ let closure_16 = importAllResult.memo((user) => {
       if (user.isSpectating) {
         obj3 = { size: null, source: null, style: null };
         obj3[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-        obj3[1] = tmp5(13059);
+        obj3[1] = tmp5(13068);
         obj3[2] = tmp19;
         tmp20Result = tmp20(tmp8(1297).Icon, obj3);
       }
@@ -309,7 +309,7 @@ let closure_16 = importAllResult.memo((user) => {
         if (tmp14) {
           obj4 = { size: null, source: null, style: null };
           obj4[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-          obj4[1] = tmp5(13056);
+          obj4[1] = tmp5(13065);
           obj4[2] = tmp19;
           tmp20Result = tmp20(tmp8(1297).Icon, obj4);
         }
@@ -329,22 +329,22 @@ let closure_16 = importAllResult.memo((user) => {
           if (localVideoDisabled) {
             const obj6 = { size: null, source: null, style: null, disableColor: true };
             obj6[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-            obj6[1] = tmp5(13057);
+            obj6[1] = tmp5(13066);
             obj6[2] = tmp2.voiceStatusIconMargin;
             let obj7 = obj6;
           } else {
             obj7 = { size: null, source: null, style: null };
             obj7[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-            obj7[1] = tmp5(13058);
+            obj7[1] = tmp5(13067);
             obj7[2] = tmp19;
           }
           tmp20(tmp8(1297).Icon, obj7);
         }
       } else {
         if (tmp8Result.isThemeDark(stateFromStores)) {
-          let tmp5Result = tmp5(13054);
+          let tmp5Result = tmp5(13063);
         } else {
-          tmp5Result = tmp5(13055);
+          tmp5Result = tmp5(13064);
         }
         const obj8 = { size: null, source: null, style: null, color: null, disableColor: null };
         obj8[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
@@ -353,7 +353,7 @@ let closure_16 = importAllResult.memo((user) => {
         obj8[3] = tmp19.tintColor;
         obj8[4] = localMute;
         tmp20(tmp8(1297).Icon, obj8);
-        tmp8Result = tmp8(4153);
+        tmp8Result = tmp8(1363);
       }
       tmp23 = callback;
       tmp24 = id;
@@ -381,12 +381,12 @@ let closure_16 = importAllResult.memo((user) => {
     labelCallScreen = tmp3.labelCallScreen;
   }
   obj12[1] = labelCallScreen;
-  obj9.label = closure_11(user(7967).FormRow.Label, obj12);
+  obj9.label = closure_11(user(7969).FormRow.Label, obj12);
   if (localVideoAutoDisabled) {
     const obj13 = { style: null, children: null };
     obj13[0] = tmp2.autoDisabledVideo;
     const obj14 = { source: null, size: null, disableColor: true };
-    obj14[0] = tmp5(9063);
+    obj14[0] = tmp5(9069);
     obj14[1] = tmp8(1297).Icon.Sizes.EXTRA_SMALL;
     const items6 = [tmp20(tmp8(1297).Icon, obj14), ];
     const obj15 = { variant: "text-xs/medium", color: "text-default", style: null, children: null };
@@ -404,7 +404,7 @@ let closure_16 = importAllResult.memo((user) => {
     }
   }
   obj9.subLabel = stringResult;
-  return closure_11(user(7967).FormRow, obj9);
+  return closure_11(user(7969).FormRow, obj9);
 });
 let obj7 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, lineHeight: 18, marginHorizontal: 16, color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
 const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
@@ -427,7 +427,7 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
   }, items1);
   let obj1 = id2(4493);
   const name = obj1.getName(id2.guild_id, id2.id, id);
-  let obj2 = id(9234);
+  let obj2 = id(9240);
   obj = {
     onPress() {
       return callback(id);
@@ -443,7 +443,7 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     labelCallScreen = tmp.labelCallScreen;
   }
   obj[1] = labelCallScreen;
-  obj[1] = closure_11(id(7967).FormRow.Label, obj);
+  obj[1] = closure_11(id(7969).FormRow.Label, obj);
   obj1 = { user: id, guildId: id2.guild_id, size: null };
   obj1[2] = id(1297).AvatarSizes.REFRESH_MEDIUM_32;
   obj[2] = closure_11(id(1297).Avatar, obj1);
@@ -451,7 +451,7 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     obj[3] = null;
     obj2 = {};
     const merged = Object.assign(obj);
-    return tmp7(tmp2(7967).FormRow, obj2);
+    return tmp7(tmp2(7969).FormRow, obj2);
   } else {
     const obj3 = { channelId: null, userId: null, isActionSheet: null };
     id2 = id2.id;
@@ -474,7 +474,7 @@ const memoResult1 = importAllResult.memo(function VoiceMemberUser(voiceState) {
     }
     return outer1_7.getChannel(channelId);
   });
-  const name = importDefault(4146).useName(voiceState.user);
+  const name = importDefault(4148).useName(voiceState.user);
   if (null != voiceState) {
     if (voiceState.selfStream) {
       obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 8506
-// Function ID: 8507
+// Module ID: 8512
+// Function ID: 8513
 // Name: OrSeparator
-// Dependencies: [19, 17, 8507, 21, 4303, 712, 4299, 1236, 5369, 1480, 1474, 8465, 4714, 2]
+// Dependencies: [19, 17, 8513, 21, 4303, 712, 4299, 1236, 5369, 1499, 1493, 8471, 4714, 2]
 // Exports: default
 
-// Module 8506 (OrSeparator)
+// Module 8512 (OrSeparator)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -69,7 +69,7 @@ export default function JoinServer(arg0) {
   let navigation;
   ({ error, inviteString, onInviteChange } = arg0);
   const tmp = createCacheKey();
-  let obj = navigation(1480);
+  let obj = navigation(1499);
   navigation = obj.useNavigation();
   const items = [navigation];
   obj = { keyboardShouldPersistTaps: "handled", contentContainerStyle: null, children: null };
@@ -82,7 +82,7 @@ export default function JoinServer(arg0) {
   items1[1] = obj;
   obj[1] = items1;
   let tmp7Result = null;
-  if (importDefault(1474)().height > closure_6) {
+  if (importDefault(1493)().height > closure_6) {
     const obj1 = { children: null };
     const obj2 = { style: null, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
     obj2[0] = tmp.header;
@@ -110,7 +110,7 @@ export default function JoinServer(arg0) {
   obj5[5] = intl4.string(navigation(1236).t.qreV25);
   obj5[10] = tmp.textInput;
   obj5[11] = onDone;
-  items3[1] = callback(importDefault(8465), obj5);
+  items3[1] = callback(importDefault(8471), obj5);
   const obj6 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted", children: null };
   const intl5 = tmp4(1236).intl;
   obj6[3] = intl5.format(navigation(1236).t.vwWaTe, {

@@ -1,9 +1,9 @@
-// Module ID: 13765
-// Function ID: 13766
+// Module ID: 13773
+// Function ID: 13774
 // Name: addRegularStoreListing
-// Dependencies: [1975, 13766, 589, 1351, 709, 2]
+// Dependencies: [1994, 13774, 589, 1370, 709, 2]
 
-// Module 13765 (addRegularStoreListing)
+// Module 13773 (addRegularStoreListing)
 import _getSystemLocale from "_getSystemLocale";
 import createFromServer from "createFromServer";
 import { Store } from "initialize";
@@ -79,7 +79,7 @@ prototype["getUnpublishedForSKU"] = function getUnpublishedForSKU(skuId) {
   } else {
     const _Array = Array;
     const mapped = Array.from(tmp).map((arg0) => table[arg0]);
-    items = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    items = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     const arr = Array.from(tmp);
   }
   return items;

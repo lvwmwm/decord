@@ -1,10 +1,10 @@
-// Module ID: 1882
-// Function ID: 1883
+// Module ID: 1901
+// Function ID: 1902
 // Name: parseSkuIdFromServerData
-// Dependencies: [1351, 2, 1881]
+// Dependencies: [1370, 2, 1900]
 // Exports: getCollectiblesItemAssetUrl
 
-// Module 1882 (parseSkuIdFromServerData)
+// Module 1901 (parseSkuIdFromServerData)
 let c2 = "media/v1/collectibles-shop";
 let result = require("parseSkuIdFromServerData").fileFinishedImporting("modules/collectibles/utils/CollectiblesAssetUtils.tsx");
 
@@ -20,7 +20,7 @@ export const getCollectiblesItemAssetUrl = function getCollectiblesItemAssetUrl(
   } else {
     let _HermesInternal = globalThis;
     const _Boolean = Boolean;
-    const result = require(1351) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
+    const result = require(1370) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
     let str = Boolean(assetId);
     if (result) {
       let str9 = "";
@@ -39,6 +39,6 @@ export const getCollectiblesItemAssetUrl = function getCollectiblesItemAssetUrl(
       const _HermesInternal3 = HermesInternal;
       combined = "https://cdn.discordapp.com/" + tmp4 + "/" + skuId + "/" + str3 + assetFormat;
     }
-    const obj = require(1351) /* isDiscordFrontendDevelopment */;
+    const obj = require(1370) /* isDiscordFrontendDevelopment */;
   }
 };

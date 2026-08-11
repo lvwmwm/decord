@@ -1,7 +1,7 @@
 // Module ID: 5296
 // Function ID: 5297
 // Name: Text
-// Dependencies: [17, 21, 1481]
+// Dependencies: [17, 21, 1500]
 // Exports: Text
 
 // Module 5296 (Text)
@@ -13,7 +13,7 @@ export const Text = function Text(style) {
   let colors;
   let fonts;
   const merged = Object.assign(style, Object.create(null));
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   const theme = obj.useTheme();
   obj = {};
   ({ colors, fonts } = theme);

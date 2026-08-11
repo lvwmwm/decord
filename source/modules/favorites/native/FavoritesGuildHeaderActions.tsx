@@ -1,10 +1,10 @@
-// Module ID: 15280
-// Function ID: 15281
+// Module ID: 15290
+// Function ID: 15291
 // Name: FavoritesGuildHeaderActionButton
-// Dependencies: [19, 21, 15281, 7751, 5327, 11584, 15282, 2]
+// Dependencies: [19, 21, 15291, 7753, 5327, 11587, 15292, 2]
 // Exports: FavoritesGuildHeaderActionButton
 
-// Module 15280 (FavoritesGuildHeaderActionButton)
+// Module 15290 (FavoritesGuildHeaderActionButton)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -15,13 +15,13 @@ export const FavoritesGuildHeaderActionButton = function FavoritesGuildHeaderAct
   let exitPreview;
   let isPreview;
   let label;
-  ({ isPreview, exitPreview, label } = importDefault(15281)());
+  ({ isPreview, exitPreview, label } = importDefault(15291)());
   const obj = { variant: "secondary", size: "sm", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 };
-  obj[2] = importDefault(isPreview ? 5327 : 11584);
+  obj[2] = importDefault(isPreview ? 5327 : 11587);
   if (!isPreview) {
-    exitPreview = require(15282) /* handleCreateCategory */.openFavoritesGuildAddActionSheet;
+    exitPreview = require(15292) /* handleCreateCategory */.openFavoritesGuildAddActionSheet;
   }
   obj[3] = exitPreview;
   obj[4] = label;
-  return jsx(require(7751) /* IconButton */.IconButton, { variant: "secondary", size: "sm", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 });
+  return jsx(require(7753) /* IconButton */.IconButton, { variant: "secondary", size: "sm", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 });
 };

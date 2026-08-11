@@ -1,9 +1,9 @@
-// Module ID: 12664
-// Function ID: 12665
+// Module ID: 12668
+// Function ID: 12669
 // Name: _initialize
-// Dependencies: [1372, 4124, 4482, 709, 5936, 1351, 2]
+// Dependencies: [1391, 4126, 4482, 709, 5938, 1370, 2]
 
-// Module 12664 (_initialize)
+// Module 12668 (_initialize)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import "initialize";
@@ -33,7 +33,7 @@ class StageLurkingManager extends tmp2 {
     applyArgumentsResult.handleDisconnectFromStageChannel = function handleDisconnectFromStageChannel(arg0) {
       guildId = guildId.getGuildId();
       const items = [guildId, arg0];
-      applyArgumentsResult(5936).stopLurkingAll(items.filter(applyArgumentsResult(1351).isNotNullish));
+      applyArgumentsResult(5938).stopLurkingAll(items.filter(applyArgumentsResult(1370).isNotNullish));
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
       applyArgumentsResult.terminate();

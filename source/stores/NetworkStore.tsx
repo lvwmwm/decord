@@ -1,7 +1,7 @@
 // Module ID: 4395
 // Function ID: 4396
 // Name: handleConnectionInfoChange
-// Dependencies: [676, 589, 1454, 709, 2]
+// Dependencies: [676, 589, 1473, 709, 2]
 
 // Module 4395 (handleConnectionInfoChange)
 import ME from "ME";
@@ -29,10 +29,10 @@ class NetworkStoreClass extends Store {
 }
 const prototype = NetworkStoreClass.prototype;
 prototype["initialize"] = function initialize() {
-  const networkInformation = importDefault(1454).getNetworkInformation();
+  const networkInformation = importDefault(1473).getNetworkInformation();
   networkInformation.then(handleConnectionInfoChange);
-  const obj = importDefault(1454);
-  importDefault(1454).addChangeCallback(handleConnectionInfoChange);
+  const obj = importDefault(1473);
+  importDefault(1473).addChangeCallback(handleConnectionInfoChange);
 };
 prototype["getType"] = function getType() {
   return UNKNOWN;

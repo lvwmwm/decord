@@ -1,10 +1,10 @@
-// Module ID: 9746
-// Function ID: 9747
+// Module ID: 9751
+// Function ID: 9752
 // Name: shouldRefreshAttachmentUrl
-// Dependencies: [5, 676, 687, 4335, 1467, 530, 2]
+// Dependencies: [5, 676, 687, 4335, 1486, 530, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9746 (shouldRefreshAttachmentUrl)
+// Module 9751 (shouldRefreshAttachmentUrl)
 import sendRequest from "sendRequest";
 import { Endpoints } from "ME";
 import set from "set";
@@ -29,7 +29,7 @@ function shouldRefreshAttachmentUrl(searchParams) {
   return tmp5;
 }
 function isAttachmentExpired(url) {
-  const toURLSafeResult = importDefault(1467).toURLSafe(url.url);
+  const toURLSafeResult = importDefault(1486).toURLSafe(url.url);
   let tmp4 = null != toURLSafeResult;
   if (tmp4) {
     const searchParams = toURLSafeResult.searchParams;
@@ -56,7 +56,7 @@ function isEmbedMediaExpiredAttachment(image) {
   if (null == image) {
     return false;
   } else {
-    const toURLSafeResult = importDefault(1467).toURLSafe(image.url);
+    const toURLSafeResult = importDefault(1486).toURLSafe(image.url);
     let tmp11 = null != toURLSafeResult;
     if (tmp11) {
       const require = toURLSafeResult;
@@ -285,7 +285,7 @@ export const isExternalProxiedAttachmentUrl = function isExternalProxiedAttachme
   return require(4335) /* isImageProxyURL */.isImageProxyURL(toURLSafeResult);
 };
 export const removeSignedUrlParameters = function removeSignedUrlParameters(toURLSafeResult) {
-  toURLSafeResult = importDefault(1467).toURLSafe(toURLSafeResult);
+  toURLSafeResult = importDefault(1486).toURLSafe(toURLSafeResult);
   if (null == toURLSafeResult) {
     return toURLSafeResult;
   } else {
@@ -297,7 +297,7 @@ export const removeSignedUrlParameters = function removeSignedUrlParameters(toUR
     }
     return toURLSafeResult;
   }
-  const obj = importDefault(1467);
+  const obj = importDefault(1486);
 };
 export { getSignedAttachmentExpiration };
 export const messageHasExpiredAttachmentUrl = function messageHasExpiredAttachmentUrl(attachments) {

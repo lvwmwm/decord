@@ -1,9 +1,9 @@
-// Module ID: 8017
-// Function ID: 8018
+// Module ID: 8019
+// Function ID: 8020
 // Name: normalizeChannelPropertyForCompare
-// Dependencies: [1376, 7760, 1911, 1372, 676, 1235, 3940, 3942, 1381, 1382, 530, 709, 12, 1411, 3883, 589, 2]
+// Dependencies: [1395, 7762, 1930, 1391, 676, 1235, 3959, 3961, 1400, 1401, 530, 709, 12, 1430, 3902, 589, 2]
 
-// Module 8017 (normalizeChannelPropertyForCompare)
+// Module 8019 (normalizeChannelPropertyForCompare)
 import { createChannelRecordFromInvite as closure_9 } from "createChannelRecord";
 import createFromServer from "createFromServer";
 import createdAt from "createdAt";
@@ -33,15 +33,15 @@ function normalizeChannelPropertyForCompare(arg0, arg1, arg2) {
   } else if ("defaultSortOrder" === arg0) {
     let LATEST_ACTIVITY = str;
     if (str == null) {
-      LATEST_ACTIVITY = require(1381) /* set */.ThreadSortOrder.LATEST_ACTIVITY;
+      LATEST_ACTIVITY = require(1400) /* set */.ThreadSortOrder.LATEST_ACTIVITY;
     }
     return LATEST_ACTIVITY;
   } else if ("defaultForumLayout" === arg0) {
     if (arg2 === constants2.GUILD_MEDIA) {
-      return require(1382) /* set */.ForumLayout.GRID;
+      return require(1401) /* set */.ForumLayout.GRID;
     } else {
       if (null == str) {
-        let LIST = require(1382) /* set */.ForumLayout.LIST;
+        let LIST = require(1401) /* set */.ForumLayout.LIST;
       } else {
         LIST = str;
       }
@@ -53,7 +53,7 @@ function normalizeChannelPropertyForCompare(arg0, arg1, arg2) {
         if ("defaultReactionEmoji" === arg0) {
           let tmp2 = null;
           if (null != str) {
-            let obj = require(3940) /* MAX_REACTIONS */;
+            let obj = require(3959) /* MAX_REACTIONS */;
             if (obj.isCustomReactionEmojiId(str.emojiId)) {
               obj = { emojiId: null };
               obj[0] = str.emojiId;
@@ -65,9 +65,9 @@ function normalizeChannelPropertyForCompare(arg0, arg1, arg2) {
                 tmp5 = null;
                 if ("" !== emojiName) {
                   obj = { emojiName: null };
-                  obj[0] = importDefault(3942).translateInlineEmojiToSurrogates(emojiName);
+                  obj[0] = importDefault(3961).translateInlineEmojiToSurrogates(emojiName);
                   tmp5 = obj;
-                  const obj3 = importDefault(3942);
+                  const obj3 = importDefault(3961);
                 }
               }
               tmp2 = tmp5;
@@ -97,12 +97,12 @@ function _createInvite(code) {
   obj[4] = callback(code.channel);
   let fromInviteGuildResult = null;
   if (null != code.guild) {
-    fromInviteGuildResult = require(1411) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(code.guild);
-    const obj2 = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
+    fromInviteGuildResult = require(1430) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(code.guild);
+    const obj2 = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
   }
   obj[5] = fromInviteGuildResult;
   ({ uses: obj[6], max_uses: obj[7], max_age: obj[8] } = code);
-  obj[9] = importDefault(3883)(code.created_at);
+  obj[9] = importDefault(3902)(code.created_at);
   ({ type: obj[10], roles: obj[11] } = code);
   tmp = new tmp(obj);
   return tmp;

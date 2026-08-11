@@ -1,13 +1,13 @@
-// Module ID: 15248
-// Function ID: 15249
+// Module ID: 15257
+// Function ID: 15258
 // Name: getChannelMode
-// Dependencies: [109, 19, 17, 4390, 3938, 1903, 676, 1379, 4500, 21, 4303, 712, 5158, 11753, 1416, 5268, 15249, 4804, 4764, 589, 1297, 4745, 15250, 4494, 1222, 2]
+// Dependencies: [109, 19, 17, 4390, 3957, 1922, 676, 1398, 4500, 21, 4303, 712, 5158, 11756, 1435, 5268, 15258, 4804, 4764, 589, 1297, 4745, 15259, 4494, 1222, 2]
 
-// Module 15248 (getChannelMode)
+// Module 15257 (getChannelMode)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { View } from "BookCheckIcon";
 import sortActivity from "sortActivity";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { StaticChannelRoute } from "set";
@@ -25,24 +25,24 @@ function getChannelMode(selected) {
   let unread;
   ({ unread, channel } = selected);
   if (selected.selected) {
-    const ChannelModes = require(11753) /* BaseChannelSubtitle */.ChannelModes;
+    const ChannelModes = require(11756) /* BaseChannelSubtitle */.ChannelModes;
     if (!isGuildVocalResult) {
       const SELECTED = ChannelModes.SELECTED;
     }
     isGuildVocalResult = channel.isGuildVocal();
   } else {
     if (tmp2) {
-      let DEFAULT = require(11753) /* BaseChannelSubtitle */.ChannelModes.LOCKED;
+      let DEFAULT = require(11756) /* BaseChannelSubtitle */.ChannelModes.LOCKED;
     } else if (tmp) {
-      DEFAULT = require(11753) /* BaseChannelSubtitle */.ChannelModes.MUTED;
+      DEFAULT = require(11756) /* BaseChannelSubtitle */.ChannelModes.MUTED;
     } else if (unread) {
       if (selected.resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
-        let UNREAD_LESS_IMPORTANT = require(11753) /* BaseChannelSubtitle */.ChannelModes.UNREAD_IMPORTANT;
+        let UNREAD_LESS_IMPORTANT = require(11756) /* BaseChannelSubtitle */.ChannelModes.UNREAD_IMPORTANT;
       } else {
-        UNREAD_LESS_IMPORTANT = require(11753) /* BaseChannelSubtitle */.ChannelModes.UNREAD_LESS_IMPORTANT;
+        UNREAD_LESS_IMPORTANT = require(11756) /* BaseChannelSubtitle */.ChannelModes.UNREAD_LESS_IMPORTANT;
       }
     } else {
-      DEFAULT = require(11753) /* BaseChannelSubtitle */.ChannelModes.DEFAULT;
+      DEFAULT = require(11756) /* BaseChannelSubtitle */.ChannelModes.DEFAULT;
     }
     return DEFAULT;
   }
@@ -64,7 +64,7 @@ function ChannelIcon(arg0) {
     return callback2(DMChannelIcon, obj);
   } else {
     if (channel.type === tmp4.GROUP_DM) {
-      obj = importDefault(1416);
+      obj = importDefault(1435);
       obj = { id: null, icon: null, applicationId: null, size: 20 };
       ({ id: obj2[0], icon: obj2[1] } = channel);
       obj[2] = channel.getApplicationId();
@@ -78,7 +78,7 @@ function ChannelIcon(arg0) {
       tmp5 = importDefault;
     }
     if (tmp2) {
-      let tmp12 = importDefault(15249);
+      let tmp12 = importDefault(15258);
       let BookCheckIcon = require(4804) /* BookCheckIcon */.BookCheckIcon;
       let tmp9 = require;
     } else {
@@ -110,7 +110,7 @@ function ChannelIcon(arg0) {
       obj6 = {};
     }
     const merged = Object.assign(obj6);
-    return callback2(tmp9(11753).BaseChannelIcon, obj4);
+    return callback2(tmp9(11756).BaseChannelIcon, obj4);
   }
 }
 function DMChannelIcon(userId) {
@@ -128,7 +128,7 @@ function DMChannelIcon(userId) {
   const items3 = [userId];
   const stateFromStoresObject = userId(589).useStateFromStoresObject(items2, () => ({ status: outer1_6.getStatus(userId), isMobileOnline: outer1_6.isMobileOnline(userId), isVROnline: outer1_6.isVROnline(userId) }), items3);
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  obj = { user: stateFromStores, guildId: "o", size: "APP_LAUNCHER_ONBOARDING_SET_TRIGGERED_ONBOARDING_CONTENT_METADATA", style: null, status: "FAVORITES_GUILD_CHANNEL_SORT", isMobileOnline: 113, isVROnline: 124, statusStyle: "none" };
+  obj = { user: stateFromStores, guildId: "o", size: "M7 8H5v2h2V8Z", style: null, status: "pre", isMobileOnline: null, isVROnline: null, statusStyle: null };
   obj[2] = userId(1297).AvatarSizes.XSMALL_20;
   obj[3] = tmp.dmAvatar;
   obj[4] = status;
@@ -203,7 +203,7 @@ export default importAllResult.memo((channel) => {
   obj[2] = hideIcon;
   const obj1 = { mode: tmp6, name: null, subtitle: null, textStyle: null };
   const tmp15 = tmp6 === channel(needSubscriptionToAccess[13]).ChannelModes.UNREAD_IMPORTANT || tmp6 === channel(needSubscriptionToAccess[13]).ChannelModes.UNREAD_LESS_IMPORTANT;
-  obj1[1] = channel(needSubscriptionToAccess[23]).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+  obj1[1] = channel(needSubscriptionToAccess[23]).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
   obj1[2] = subtitle;
   obj1[3] = textStyle;
   obj[3] = callback2(channel(needSubscriptionToAccess[13]).BaseChannelName, obj1);

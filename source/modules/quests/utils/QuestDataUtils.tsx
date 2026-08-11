@@ -1,10 +1,10 @@
-// Module ID: 7158
-// Function ID: 7159
+// Module ID: 7159
+// Function ID: 7160
 // Name: getQuestDeliveryDataForPlacement
-// Dependencies: [1975, 7159, 7160, 5161, 5164, 1384, 7175, 1208, 2]
+// Dependencies: [1994, 7160, 7161, 5161, 5164, 1403, 7176, 1208, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdTrafficMetadataSealed, getIsQuestExpiredButWithinThirtyDayLookback, getQuestForPlacement, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isDismissed, isDismissible, isQuestConfigExpired, isQuestExpired
 
-// Module 7158 (getQuestDeliveryDataForPlacement)
+// Module 7159 (getQuestDeliveryDataForPlacement)
 import _getSystemLocale from "_getSystemLocale";
 import set from "set";
 import initializeState from "initializeState";
@@ -63,7 +63,7 @@ function getQuestDeliveryDataForPlacement(arg0, adContentId) {
       }
       return tmp10;
     }
-    obj5 = importDefault(7175);
+    obj5 = importDefault(7176);
     tmp13 = quest;
   }
 }
@@ -129,7 +129,7 @@ export const isDismissible = function isDismissible(closure_1) {
 export const isDismissed = function isDismissed(dismissedQuestContent) {
   const keys = Object.keys(closure_6);
   if (keys.includes(require(5164) /* QuestsVisibleMessagesChangedSource */.QuestContent[arg1])) {
-    return tmp2(1384).hasFlag(dismissedQuestContent.dismissedQuestContent, tmp[tmp2(undefined, 5164).QuestContent[arg1]]);
+    return tmp2(1403).hasFlag(dismissedQuestContent.dismissedQuestContent, tmp[tmp2(undefined, 5164).QuestContent[arg1]]);
   } else {
     return false;
   }

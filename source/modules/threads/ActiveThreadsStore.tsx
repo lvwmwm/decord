@@ -1,7 +1,7 @@
 // Module ID: 5224
 // Function ID: 5225
 // Name: handleThreadCreateOrUpdate
-// Dependencies: [1376, 1372, 12, 589, 11, 709, 2]
+// Dependencies: [1395, 1391, 12, 589, 11, 709, 2]
 
 // Module 5224 (handleThreadCreateOrUpdate)
 import createChannelRecord from "createChannelRecord";

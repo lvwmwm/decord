@@ -1,11 +1,11 @@
-// Module ID: 11371
-// Function ID: 11372
+// Module ID: 11376
+// Function ID: 11377
 // Name: useTypingUserIds
-// Dependencies: [3938, 11372, 1903, 589, 2]
+// Dependencies: [3957, 11377, 1922, 589, 2]
 // Exports: useTypingUserIds
 
-// Module 11371 (useTypingUserIds)
-import upsertRelationship from "upsertRelationship";
+// Module 11376 (useTypingUserIds)
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleTypingStart from "handleTypingStart";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -19,7 +19,7 @@ export const useTypingUserIds = function useTypingUserIds(id, arg1) {
     const _Number = Number;
     MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER;
   }
-  let items = [mergeGuildAvatar, handleTypingStart, upsertRelationship];
+  let items = [mergeGuildAvatar, handleTypingStart, markAllUserIdListsStale];
   const items1 = [id, MAX_SAFE_INTEGER];
   return _require(MAX_SAFE_INTEGER[3]).useStateFromStoresArray(items, () => {
     const currentUser = outer1_4.getCurrentUser();

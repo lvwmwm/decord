@@ -1,10 +1,10 @@
-// Module ID: 10040
-// Function ID: 10041
+// Module ID: 10045
+// Function ID: 10046
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4295, 8790, 676, 21, 4303, 712, 1609, 589, 8786, 698, 5397, 4299, 1236, 2380, 10041, 2]
+// Dependencies: [19, 17, 4295, 8796, 676, 21, 4303, 712, 1628, 589, 8792, 698, 5397, 4299, 1236, 2399, 10046, 2]
 // Exports: default
 
-// Module 10040 (GiftingBadgeInfoActionSheet)
+// Module 10045 (GiftingBadgeInfoActionSheet)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -41,7 +41,7 @@ export default function GiftingBadgeInfoActionSheet() {
   const require = tmp;
   let obj = require(589) /* initialize */;
   let items = [map];
-  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8786).BadgeId.GIFTING));
+  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8792).BadgeId.GIFTING));
   let obj1 = require(589) /* initialize */;
   const items1 = [maybeApplyNoTextColorForLightCustomTheme];
   const importDefault = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
@@ -51,17 +51,17 @@ export default function GiftingBadgeInfoActionSheet() {
   obj = { style: null, children: null };
   const items2 = [tmp.container, ];
   obj = { paddingBottom: null };
-  obj[0] = importDefault(1609)().bottom + importDefault(712).space.PX_16;
+  obj[0] = importDefault(1628)().bottom + importDefault(712).space.PX_16;
   items2[1] = obj;
   obj[0] = items2;
   obj1 = { style: tmp.headerContainer, children: null };
   let obj2 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
-  obj2[4] = intl.string(importDefault(2380)["0MB2C6"]);
+  obj2[4] = intl.string(importDefault(2399)["0MB2C6"]);
   const items3 = [callback(require(4299) /* Text */.Text, obj2), ];
   let obj3 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj3[3] = intl2.string(importDefault(2380).k9sNVH);
+  obj3[3] = intl2.string(importDefault(2399).k9sNVH);
   items3[1] = callback(require(4299) /* Text */.Text, obj3);
   obj1[1] = items3;
   const items4 = [callback2(View, obj1), ];

@@ -1,10 +1,10 @@
-// Module ID: 15869
-// Function ID: 15870
+// Module ID: 15886
+// Function ID: 15887
 // Name: result
-// Dependencies: [687, 1452, 2]
+// Dependencies: [687, 1471, 2]
 // Exports: useMobileReferralSubscriberProfileEntrypointButtonConfig
 
-// Module 15869 (result)
+// Module 15886 (result)
 import ApexExperiment from "ApexExperiment";
 
 const result = 3 * require("set").Millis.DAYS_30;

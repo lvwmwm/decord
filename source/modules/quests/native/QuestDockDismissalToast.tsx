@@ -1,10 +1,10 @@
-// Module ID: 14350
-// Function ID: 14351
+// Module ID: 14358
+// Function ID: 14359
 // Name: QuestDockDismissalNotification
-// Dependencies: [19, 17, 21, 4303, 712, 4299, 1236, 7753, 4002, 7635, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4299, 1236, 7755, 4021, 7637, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 14350 (QuestDockDismissalNotification)
+// Module 14358 (QuestDockDismissalNotification)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -46,7 +46,7 @@ let closure_6 = createCacheKey.createStyles(() => {
 const result = require("jsxProd").fileFinishedImporting("modules/quests/native/QuestDockDismissalToast.tsx");
 
 export const displayQuestDismissalToast = function displayQuestDismissalToast() {
-  let obj = importDefault(4002);
-  obj = { key: "QUEST_BAR_DISMISS_TOAST", content: QuestDockDismissalNotification, icon: importDefault(7635), position: "bottom" };
+  let obj = importDefault(4021);
+  obj = { key: "QUEST_BAR_DISMISS_TOAST", content: QuestDockDismissalNotification, icon: importDefault(7637), position: "bottom" };
   obj.open(obj);
 };

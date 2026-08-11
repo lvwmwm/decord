@@ -1,10 +1,10 @@
-// Module ID: 7315
-// Function ID: 7316
+// Module ID: 7316
+// Function ID: 7317
 // Name: fetchStore
-// Dependencies: [32, 19, 4832, 676, 589, 4833, 7316, 2]
+// Dependencies: [32, 19, 4832, 676, 589, 4833, 7317, 2]
 // Exports: useDebouncedGameAutocomplete
 
-// Module 7315 (fetchStore)
+// Module 7316 (fetchStore)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import importDefaultResult from "set";
@@ -25,7 +25,7 @@ initialize = {
     return results;
   },
   load(arg0) {
-    return require(7316) /* _fetchGameAutocomplete */.fetchGameAutocomplete(arg0);
+    return require(7317) /* _fetchGameAutocomplete */.fetchGameAutocomplete(arg0);
   },
   getIsLoading(arg0) {
     return importDefaultResult.isFetching(arg0);

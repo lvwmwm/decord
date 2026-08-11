@@ -1,10 +1,10 @@
-// Module ID: 9328
-// Function ID: 9329
+// Module ID: 9334
+// Function ID: 9335
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 1903, 21, 4303, 712, 5731, 589, 9283, 4299, 1236, 5268, 1297, 4714, 9329, 2]
+// Dependencies: [19, 17, 1922, 21, 4303, 712, 5731, 589, 9289, 4299, 1236, 5268, 1297, 4714, 9335, 2]
 // Exports: default
 
-// Module 9328 (GameProfileLinkAccount)
+// Module 9334 (GameProfileLinkAccount)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,8 +1,8 @@
-// Module ID: 8722
-// Function ID: 8723
-// Dependencies: [19, 5176, 5180, 8640, 1338, 21, 4303, 4036, 8723, 5399, 1605, 3942, 8541, 8712, 2]
+// Module ID: 8728
+// Function ID: 8729
+// Dependencies: [19, 5176, 5180, 8646, 1338, 21, 4303, 4042, 8729, 5399, 1624, 3961, 8547, 8718, 2]
 
-// Module 8722
+// Module 8728
 import importAllResult from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { EmojiCategoryTypes } from "EmojiCategoryTypes";
@@ -13,7 +13,7 @@ import createCacheKey from "createCacheKey";
 import animatedComponent from "__INTERNAL_VIEW_CONFIG";
 import BottomSheetModal from "BottomSheetModal";
 import isMetaQuest from "isMetaQuest";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 
 let c10;
 let c9;
@@ -79,7 +79,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
         tmp = analyticsLocations < 0;
       }
       if (!tmp) {
-        tmp = f81698;
+        tmp = f81756;
       }
       if (!tmp) {
         num2 = 0;

@@ -1,10 +1,10 @@
-// Module ID: 8153
-// Function ID: 8154
+// Module ID: 8155
+// Function ID: 8156
 // Name: createPremiumGroupInviteSystemMessage
-// Dependencies: [1218, 1372, 4303, 712, 8154, 8072, 8055, 7705, 2]
+// Dependencies: [1218, 1391, 4303, 712, 8156, 8074, 8057, 7707, 2]
 // Exports: createPremiumGroupInviteSystemMessage
 
-// Module 8153 (createPremiumGroupInviteSystemMessage)
+// Module 8155 (createPremiumGroupInviteSystemMessage)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createCacheKey from "createCacheKey";
@@ -19,16 +19,16 @@ export const createPremiumGroupInviteSystemMessage = function createPremiumGroup
   ({ message, theme } = message);
   channel = channel.getChannel(message.getChannelId());
   id = id.getId();
-  let obj = require(8154) /* createPremiumGroupInviteEmbed */;
+  let obj = require(8156) /* createPremiumGroupInviteEmbed */;
   const premiumGroupInviteEmbed = obj.createPremiumGroupInviteEmbed(message, theme, id, channel);
   if (null == premiumGroupInviteEmbed) {
     return null;
   } else {
     obj = {};
-    const merged = Object.assign(importDefault(8072)(message));
+    const merged = Object.assign(importDefault(8074)(message));
     obj.premiumGroupInviteInfo = premiumGroupInviteEmbed;
     const tmp7 = createCacheKey(theme);
-    obj.iconUrl = tmp3(8055).getAssetUriForEmbed(importDefault(7705));
+    obj.iconUrl = tmp3(8057).getAssetUriForEmbed(importDefault(7707));
     ({ iconTintColor: obj2.iconTintColor, iconDividerColor: obj2.iconDividerColor } = tmp7);
     return obj;
   }

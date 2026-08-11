@@ -1,7 +1,7 @@
 // Module ID: 5160
 // Function ID: 5161
 // Name: fromType
-// Dependencies: [1912, 676, 5161, 685, 5170, 2]
+// Dependencies: [1931, 676, 5161, 685, 5170, 2]
 
 // Module 5160 (fromType)
 import "toJS";

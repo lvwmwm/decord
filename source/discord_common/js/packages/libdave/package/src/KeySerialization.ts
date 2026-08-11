@@ -1,12 +1,12 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 9213
+// Function ID: 9214
 // Name: serializeKey
-// Dependencies: [9208, 2]
+// Dependencies: [9214, 2]
 // Exports: serializeKey
 
-// Module 9207 (serializeKey)
+// Module 9213 (serializeKey)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/libdave/package/src/KeySerialization.ts");
 
 export const serializeKey = function serializeKey(uint8Array) {
-  return importDefault(9208).fromByteArray(uint8Array);
+  return importDefault(9214).fromByteArray(uint8Array);
 };

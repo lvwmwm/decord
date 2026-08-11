@@ -1,9 +1,9 @@
-// Module ID: 15306
-// Function ID: 15307
+// Module ID: 15317
+// Function ID: 15318
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15306 (metadata)
+// Module 15317 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/powerups/file-upload-static-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/838731e8db0e1b209bb8b20d5acefb9effe09952f60a13067ab7ad92887b39ad.png";

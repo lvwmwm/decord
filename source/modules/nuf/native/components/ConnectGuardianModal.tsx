@@ -1,10 +1,10 @@
-// Module ID: 16531
-// Function ID: 16532
+// Module ID: 16542
+// Function ID: 16543
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 676, 6997, 21, 4303, 712, 1609, 16532, 698, 5823, 4299, 1236, 2284, 14128, 4714, 2]
+// Dependencies: [19, 17, 676, 7000, 21, 4303, 712, 1628, 16543, 698, 5823, 4299, 1236, 2303, 14136, 4714, 2]
 // Exports: default
 
-// Module 16531 (ConnectGuardianModal)
+// Module 16542 (ConnectGuardianModal)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -42,7 +42,7 @@ export default function ConnectGuardianModal(route) {
   let dependencyMap;
   onComplete = route.route.params.onComplete;
   const tmp = createCacheKey();
-  let obj = onComplete(16532);
+  let obj = onComplete(16543);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = React.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -77,12 +77,12 @@ export default function ConnectGuardianModal(route) {
     const obj2 = { style: null, variant: "heading-xl/bold", color: "text-default", children: null };
     obj2[0] = tmp.title;
     const intl = tmp4(1236).intl;
-    obj2[3] = intl.string(tmp2(2284).ITlV6p);
+    obj2[3] = intl.string(tmp2(2303).ITlV6p);
     const items2 = [callback(tmp4(4299).Text, obj2), ];
     const obj3 = { style: null, variant: "text-sm/medium", color: "text-muted", children: null };
     obj3[0] = tmp.description;
     const intl2 = tmp4(1236).intl;
-    obj3[3] = intl2.format(tmp2(2284).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
+    obj3[3] = intl2.format(tmp2(2303).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
     items2[1] = callback(tmp4(4299).Text, obj3);
     obj1[1] = items2;
     const items3 = [callback2(View, obj1), , , ];
@@ -91,10 +91,10 @@ export default function ConnectGuardianModal(route) {
     const obj5 = { style: null, variant: "text-md/semibold", color: "text-default", children: null };
     obj5[0] = tmp.scanPrompt;
     const intl3 = tmp4(1236).intl;
-    obj5[3] = intl3.string(tmp2(2284).Mi60fm);
+    obj5[3] = intl3.string(tmp2(2303).Mi60fm);
     const items4 = [callback(tmp4(4299).Text, obj5), ];
     ({ linkCode: obj9[1], expiresAt: obj9[2], refresh: obj9[3] } = connectGuardianGate);
-    items4[1] = callback(tmp4(14128).ConnectGuardianCard, { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null });
+    items4[1] = callback(tmp4(14136).ConnectGuardianCard, { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null });
     obj4[1] = items4;
     items3[1] = callback2(View, obj4);
     const obj7 = { style: null };
@@ -103,7 +103,7 @@ export default function ConnectGuardianModal(route) {
     const obj8 = { style: null, children: null };
     const items5 = [tmp.footer, ];
     const obj9 = { paddingBottom: null };
-    obj9[0] = connectGuardianGate(1609)().bottom + tmp2(712).space.PX_16;
+    obj9[0] = connectGuardianGate(1628)().bottom + tmp2(712).space.PX_16;
     items5[1] = obj9;
     obj8[0] = items5;
     const obj10 = { variant: "primary", size: "lg", text: null, onPress: null };

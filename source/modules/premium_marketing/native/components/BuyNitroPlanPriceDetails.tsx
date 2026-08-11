@@ -1,10 +1,10 @@
-// Module ID: 7736
-// Function ID: 7737
+// Module ID: 7738
+// Function ID: 7739
 // Name: BuyNitroPlanPriceDetails
-// Dependencies: [19, 17, 5858, 1905, 505, 21, 4303, 712, 589, 5855, 4299, 1236, 2]
+// Dependencies: [19, 17, 5858, 1924, 505, 21, 4303, 712, 589, 5855, 4299, 1236, 2]
 // Exports: default
 
-// Module 7736 (BuyNitroPlanPriceDetails)
+// Module 7738 (BuyNitroPlanPriceDetails)
 import "noop";
 import { View } from "get ActivityIndicator";
 import updateProduct from "updateProduct";

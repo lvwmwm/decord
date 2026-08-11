@@ -1,10 +1,10 @@
-// Module ID: 14781
-// Function ID: 14782
+// Module ID: 14791
+// Function ID: 14792
 // Name: ComparisonRow
-// Dependencies: [19, 17, 21, 1297, 4299, 4714, 4303, 712, 4712, 7967, 2]
+// Dependencies: [19, 17, 21, 1297, 4299, 4714, 4303, 712, 4712, 7969, 2]
 // Exports: default
 
-// Module 14781 (ComparisonRow)
+// Module 14791 (ComparisonRow)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -305,7 +305,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
     [tmp, arr] = arg0;
     const obj = { title: tmp, children: null };
     obj[1] = arr.map((entry) => callback(closure_8, { entry }, arg1));
-    return callback2(callback(7967).FormSection, obj, "cmp-" + tmp);
+    return callback2(callback(7969).FormSection, obj, "cmp-" + tmp);
   });
   const obj1 = { spacing: 4, style: tmp.header, children: null };
   const items2 = [callback2(require(4299) /* Text */.Text, { variant: "heading-xl/bold", children: "Legacy Button Audit" }), callback2(require(4299) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "41 combinations across 185 importers" })];
@@ -319,7 +319,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
     const obj = { title: null, children: null };
     obj[0] = "" + tmp + " (" + arr.reduce((arg0, count) => arg0 + count.count, 0) + " usages)";
     obj[1] = arr.map((combo) => callback(closure_9, { combo }, arg1));
-    return callback2(callback(7967).FormSection, obj, tmp);
+    return callback2(callback(7969).FormSection, obj, tmp);
   });
   obj[1] = items1;
   return callback(closure_2, obj);

@@ -1,9 +1,9 @@
 // Module ID: 4325
 // Function ID: 4326
-// Name: applicationId
-// Dependencies: [1912, 4326, 1935, 4334, 1416, 1351, 2]
+// Name: getOfficialApplicationId
+// Dependencies: [1931, 4326, 1954, 4334, 1435, 1370, 2]
 
-// Module 4325 (applicationId)
+// Module 4325 (getOfficialApplicationId)
 import "toJS";
 import createExecutable from "createExecutable";
 import { createExecutable } from "createExecutable";
@@ -116,12 +116,6 @@ class GameRecord extends tmp2 {
   }
 }
 const prototype = GameRecord.prototype;
-Object.defineProperty(prototype, "applicationId", {
-  get: function applicationId(renderApplication, arg1) {
-    return this.id;
-  },
-  set: undefined
-});
 prototype["getOfficialApplicationId"] = function getOfficialApplicationId() {
   const linkedApplications = this.linkedApplications;
   let id;
@@ -156,7 +150,7 @@ prototype["getCoverURL"] = function getCoverURL(size) {
     cover = media.cover;
   }
   let str = "png";
-  if (require(1416) /* getAvatarURL */.SUPPORTS_WEBP) {
+  if (require(1435) /* getAvatarURL */.SUPPORTS_WEBP) {
     str = "webp";
   }
   return importDefault(4334)(this.id, cover, { keepAspectRatio: true, format: str, size });
@@ -172,7 +166,7 @@ prototype["getArtworkURLs"] = function getArtworkURLs() {
     artwork = [];
   }
   const mapped = artwork.map((arg0) => outer1_1(outer1_2[3])(self.id, arg0, { keepAspectRatio: true }));
-  return mapped.filter(self(1351).isNotNullish);
+  return mapped.filter(self(1370).isNotNullish);
 };
 prototype["getCompanyByRole"] = function getCompanyByRole(DEVELOPER) {
   let closure_0 = DEVELOPER;

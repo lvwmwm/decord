@@ -1,10 +1,10 @@
-// Module ID: 8229
-// Function ID: 8230
+// Module ID: 8233
+// Function ID: 8234
 // Name: getAttachmentObscurityProps
-// Dependencies: [676, 1384, 5909, 5914, 4519, 1236, 2]
+// Dependencies: [676, 1403, 5909, 5914, 4519, 1236, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 8229 (getAttachmentObscurityProps)
+// Module 8233 (getAttachmentObscurityProps)
 import { MessageAttachmentFlags } from "ME";
 
 const result = require("getEligibleHarmTypesConfigsForContext").fileFinishedImporting("modules/messages/native/renderer/ExplicitMediaUtils.tsx");
@@ -14,7 +14,7 @@ export const getAttachmentObscurityProps = function getAttachmentObscurityProps(
   let enabledContentHarmTypeFlags;
   let shouldObscureSpoiler;
   ({ attachment, shouldObscureSpoiler, enabledContentHarmTypeFlags } = shouldAgeVerify);
-  let obj = require(1384) /* hasFlag */;
+  let obj = require(1403) /* hasFlag */;
   let num = attachment.flags;
   if (num == null) {
     num = 0;

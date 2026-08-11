@@ -1,25 +1,9 @@
-// Module ID: 16301
-// Function ID: 16302
+// Module ID: 16317
+// Function ID: 16318
 // Name: getMessages
-// Dependencies: [16302, 16311, 16312, 16313, 16314, 16315, 16316, 16317, 16318, 16319, 16320, 16321, 16322, 16323, 16324, 16325, 16326, 16327, 16328, 16329, 16330, 16331, 16332, 16333, 16334, 16335, 16336, 16337, 16338, 16339, 652, 16343, 16344, 665, 2]
+// Dependencies: [16318, 16327, 16328, 16329, 16330, 16331, 16332, 16333, 16334, 16335, 16336, 16337, 16338, 16339, 16340, 16341, 16342, 16343, 16344, 16345, 16346, 16347, 16348, 16349, 16350, 16351, 16352, 16353, 16354, 16355, 652, 16359, 16360, 665, 2]
 
-// Module 16301 (getMessages)
-import module_16311 from "module_16311";
-import module_16312 from "module_16312";
-import module_16313 from "module_16313";
-import module_16314 from "module_16314";
-import module_16315 from "module_16315";
-import module_16316 from "module_16316";
-import module_16317 from "module_16317";
-import module_16318 from "module_16318";
-import module_16319 from "module_16319";
-import module_16320 from "module_16320";
-import module_16321 from "module_16321";
-import module_16322 from "module_16322";
-import module_16323 from "module_16323";
-import module_16324 from "module_16324";
-import module_16325 from "module_16325";
-import module_16326 from "module_16326";
+// Module 16317 (getMessages)
 import module_16327 from "module_16327";
 import module_16328 from "module_16328";
 import module_16329 from "module_16329";
@@ -32,10 +16,26 @@ import module_16335 from "module_16335";
 import module_16336 from "module_16336";
 import module_16337 from "module_16337";
 import module_16338 from "module_16338";
+import module_16339 from "module_16339";
+import module_16340 from "module_16340";
+import module_16341 from "module_16341";
+import module_16342 from "module_16342";
+import module_16343 from "module_16343";
+import module_16344 from "module_16344";
+import module_16345 from "module_16345";
+import module_16346 from "module_16346";
+import module_16347 from "module_16347";
+import module_16348 from "module_16348";
+import module_16349 from "module_16349";
+import module_16350 from "module_16350";
+import module_16351 from "module_16351";
+import module_16352 from "module_16352";
+import module_16353 from "module_16353";
+import module_16354 from "module_16354";
 import { EventEmitter } from "EventEmitter";
 
 let require = arg1;
-global.IntlMessageFormat = require("module_16302");
+global.IntlMessageFormat = require("module_16318");
 delete tmp2[tmp];
 if (typeof Intl === "undefined") {
   require("_default2");
@@ -141,11 +141,11 @@ _instance_members_initializer_I18N_ = function() {
       return _createProxy(obj);
     } else {
       try {
-        obj = self(16344);
+        obj = self(16360);
         return obj.getMessage(tmp4, locale);
       } catch (err) {
         if (typeof tmp3[tmp2] === "string") {
-          return self(16344).getMessage(tmp7, tmp);
+          return self(16360).getMessage(tmp7, tmp);
         } else {
           return "";
         }
@@ -174,7 +174,7 @@ class I18N extends EventEmitter {
       _Intl = Intl;
       tmp9 = closure_0;
       tmp10 = closure_1;
-      __addLocaleDataResult = Intl.__addLocaleData(require("module_16343"));
+      __addLocaleDataResult = Intl.__addLocaleData(require("module_16359"));
     }
     tmp6._languages = getLanguages();
     if (null != window.Proxy) {
@@ -218,7 +218,7 @@ prototype["setLocale"] = function setLocale(_requestedLocale) {
   }
 };
 prototype["setUpdateRules"] = function setUpdateRules(arg0) {
-  require(16344) /* format */.setUpdateRules(arg0);
+  require(16360) /* format */.setUpdateRules(arg0);
 };
 prototype["getLanguages"] = function getLanguages() {
   return this._languages;
@@ -352,7 +352,7 @@ prototype["_fetchMessages"] = function _fetchMessages(outer1_2) {
     return tmp();
   }
 };
-let result = require("module_16312").fileFinishedImporting("../discord_common/js/packages/i18n/i18n.tsx");
+let result = require("module_16328").fileFinishedImporting("../discord_common/js/packages/i18n/i18n.tsx");
 
 export const getSystemLocale = require("getSystemLocale").getSystemLocale;
 export { I18N };

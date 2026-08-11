@@ -1,7 +1,7 @@
 // Module ID: 4514
 // Function ID: 4515
 // Name: withEqualityFn
-// Dependencies: [1372, 700, 4515, 705, 2]
+// Dependencies: [1391, 700, 4515, 705, 2]
 
 // Module 4514 (withEqualityFn)
 import ensureGuildLoaded from "ensureGuildLoaded";

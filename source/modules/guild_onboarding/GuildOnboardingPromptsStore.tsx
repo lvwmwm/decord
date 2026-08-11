@@ -1,7 +1,7 @@
 // Module ID: 5242
 // Function ID: 5243
 // Name: handleUpdate
-// Dependencies: [1963, 1372, 5238, 5243, 5244, 12, 589, 687, 11, 709, 2]
+// Dependencies: [1982, 1391, 5238, 5243, 5244, 12, 589, 687, 11, 709, 2]
 
 // Module 5242 (handleUpdate)
 import initialize from "initialize";

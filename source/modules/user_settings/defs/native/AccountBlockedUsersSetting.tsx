@@ -1,10 +1,10 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14055
+// Function ID: 14056
 // Name: route
-// Dependencies: [3938, 8082, 676, 589, 1236, 10447, 8586, 14048, 2]
+// Dependencies: [3957, 8084, 676, 589, 1236, 10452, 8592, 14056, 2]
 
-// Module 14047 (route)
-import upsertRelationship from "upsertRelationship";
+// Module 14055 (route)
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import createToggle from "createToggle";
 
 const require = arg1;
@@ -14,7 +14,7 @@ createToggle = {
     return intl.string(require(1236) /* getSystemLocale */.t.PFOUKW);
   },
   useDescription: function useAccountBlockedUsersSettingDescription() {
-    const items = [upsertRelationship];
+    const items = [markAllUserIdListsStale];
     const numberOfBlockedUsers = require(589) /* initialize */.useStateFromStores(items, () => "" + blockedIDs.getBlockedIDs().length);
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.format(require(1236) /* getSystemLocale */.t["r91W/h"], { numberOfBlockedUsers });
@@ -26,7 +26,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.BLOCKED_USERS_V2,
   getComponent() {
-    return require(14048) /* BlockedUsersList */.default;
+    return require(14056) /* BlockedUsersList */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

@@ -1,10 +1,10 @@
-// Module ID: 17007
-// Function ID: 17008
+// Module ID: 17019
+// Function ID: 17020
 // Name: onTimersDelayCallback
-// Dependencies: [676, 3, 698, 636, 1902, 2]
+// Dependencies: [676, 3, 698, 636, 1921, 2]
 // Exports: setupLibdiscoreTimersMonitor
 
-// Module 17007 (onTimersDelayCallback)
+// Module 17019 (onTimersDelayCallback)
 import { AnalyticEvents } from "ME";
 
 function onTimersDelayCallback(timerId, expectedDelay, actualDelay, executionTime) {
@@ -43,5 +43,5 @@ const tmp2 = new require("debounce")("libdiscore.timers");
 let result = require("expandEventProperties").fileFinishedImporting("modules/libdiscore/timerUtils.tsx");
 
 export const setupLibdiscoreTimersMonitor = function setupLibdiscoreTimersMonitor() {
-  const result = importAll(1902).setTimersMonitorCallback(onTimersDelayCallback);
+  const result = importAll(1921).setTimersMonitorCallback(onTimersDelayCallback);
 };

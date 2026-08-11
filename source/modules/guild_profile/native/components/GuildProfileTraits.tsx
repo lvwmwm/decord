@@ -1,10 +1,10 @@
-// Module ID: 12208
-// Function ID: 12209
+// Module ID: 12211
+// Function ID: 12212
 // Name: TraitEmoji
-// Dependencies: [19, 17, 21, 4303, 712, 1416, 3946, 5360, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1435, 3965, 5360, 4299, 2]
 // Exports: default
 
-// Module 12208 (TraitEmoji)
+// Module 12211 (TraitEmoji)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -20,16 +20,16 @@ function TraitEmoji(emoji) {
   } else {
     let emojiURL;
     if (null != emoji.id) {
-      let obj = importDefault(1416);
+      let obj = importDefault(1435);
       obj = { id: null, animated: null, size: 16 };
       ({ id: obj2[0], animated: obj2[1] } = emoji);
       emojiURL = obj.getEmojiURL(obj);
     }
-    const obj3 = importDefault(3946);
+    const obj3 = importDefault(3965);
     const tmp5 = importDefault;
     obj = { src: null, name: null, fastImageStyle: null };
     obj[0] = emojiURL;
-    obj[1] = importDefault(3946).isCustomEmoji(emoji) ? emoji.name : emoji.surrogates;
+    obj[1] = importDefault(3965).isCustomEmoji(emoji) ? emoji.name : emoji.surrogates;
     obj[2] = tmp.emojiImage;
     return callback(tmp5(5360), obj);
   }

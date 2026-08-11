@@ -1,9 +1,9 @@
-// Module ID: 1891
-// Function ID: 1892
+// Module ID: 1910
+// Function ID: 1911
 // Name: createGuildRecordFromRust
-// Dependencies: [1412, 1892, 1415, 1218, 1410, 1414, 1894, 11, 1411, 1895, 2]
+// Dependencies: [1431, 1911, 1434, 1218, 1429, 1433, 1913, 11, 1430, 1914, 2]
 
-// Module 1891 (createGuildRecordFromRust)
+// Module 1910 (createGuildRecordFromRust)
 import isValueEqual from "isValueEqual";
 import { LibdiscoreStore } from "identity";
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";
@@ -19,7 +19,7 @@ let metroImportAll;
 function createGuildRecordFromRust(features) {
   const obj = {};
   const merged = Object.assign(features);
-  obj.features = require(1414) /* areSetsEqual */.toSetInplace(features.features);
+  obj.features = require(1433) /* areSetsEqual */.toSetInplace(features.features);
   let date = null;
   if (null != features.joinedAt) {
     const _Date = Date;
@@ -90,7 +90,7 @@ const guildStore = new GuildStore({
         let tmp7 = nextResult;
         let tmp8 = importAll;
         let tmp9 = dependencyMap;
-        let obj = importAll(1411);
+        let obj = importAll(1430);
         let tmp10 = value;
         let result = get.set(tmp2.id, obj.fromBackgroundSync(tmp2, tmp4));
       }
@@ -129,7 +129,7 @@ const guildStore = new GuildStore({
       let tmp7 = nextResult;
       let tmp8 = importAll;
       let tmp9 = dependencyMap;
-      let obj2 = importAll(1411);
+      let obj2 = importAll(1430);
       let result = getAllRecords.set(tmp4.id, obj2.fromServer(tmp4, allRecords[tmp4.id]));
       continue;
     }
@@ -154,7 +154,7 @@ const guildStore = new GuildStore({
         let tmp5 = additionalFields;
         let tmp6 = importAll;
         let tmp7 = dependencyMap;
-        let obj = importAll(1411);
+        let obj = importAll(1430);
         let date = null;
         if (null != additionalFields.joinedAt) {
           let _Date = Date;
@@ -178,7 +178,7 @@ const guildStore = new GuildStore({
     for (const item10009 of tmp) {
       let tmp3 = importAll;
       let tmp4 = dependencyMap;
-      let obj = importAll(1411);
+      let obj = importAll(1430);
       let result = arg1.set(item10009.id, obj.fromSerializedGuildRecord(item10009));
       continue;
     }
@@ -190,7 +190,7 @@ const guildStore = new GuildStore({
       for (const item10011 of guilds) {
         let tmp5 = importAll;
         let tmp6 = dependencyMap;
-        let obj = importAll(1411);
+        let obj = importAll(1430);
         let result = arg1.set(item10011.id, obj.fromSerializedGuildRecord(item10011));
         continue;
       }
@@ -206,12 +206,12 @@ const guildStore = new GuildStore({
         throw error;
       }
     }
-    const result = get.set(guild.id, importAll(1411).fromServer(guild, value));
+    const result = get.set(guild.id, importAll(1430).fromServer(guild, value));
   },
   GUILD_UPDATE(guild, get) {
     guild = guild.guild;
     const value = get.get(guild.id);
-    const result = get.set(guild.id, importAll(1411).fromGuild(guild, value));
+    const result = get.set(guild.id, importAll(1430).fromGuild(guild, value));
   },
   GUILD_THEME_PREVIEW_SAVE_SUCCESS(guildId, get) {
     guildId = guildId.guildId;

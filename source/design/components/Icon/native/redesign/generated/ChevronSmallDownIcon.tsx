@@ -1,10 +1,10 @@
-// Module ID: 9478
-// Function ID: 9479
+// Module ID: 9484
+// Function ID: 9485
 // Name: ChevronSmallDownIcon
-// Dependencies: [19, 21, 712, 4004, 9479, 2]
+// Dependencies: [19, 21, 712, 4023, 9485, 2]
 // Exports: ChevronSmallDownIcon
 
-// Module 9478 (ChevronSmallDownIcon)
+// Module 9484 (ChevronSmallDownIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ChevronSmallDownIcon = function ChevronSmallDownIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9479) /* registerAsset */;
+  obj[0] = require(9485) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 15283
-// Function ID: 15284
+// Module ID: 15293
+// Function ID: 15294
 // Name: FavoritesGuildAddCategoryActionSheet
-// Dependencies: [32, 19, 1410, 21, 4303, 712, 1894, 9710, 4271, 5397, 5396, 1236, 7790, 4714, 2]
+// Dependencies: [32, 19, 1429, 21, 4303, 712, 1913, 9715, 4271, 5397, 5396, 1236, 7792, 4714, 2]
 // Exports: openFavoritesGuildAddCategoryActionSheet
 
-// Module 15283 (FavoritesGuildAddCategoryActionSheet)
+// Module 15293 (FavoritesGuildAddCategoryActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { MAX_FAVORITE_CATEGORY_NAME_LENGTH as closure_5 } from "date";
@@ -18,7 +18,7 @@ function FavoritesGuildAddCategoryActionSheet() {
   const tmp = createCacheKey();
   const tmp2 = callback(React.useState(""), 2);
   const first = tmp2[0];
-  let obj = first(1894);
+  let obj = first(1913);
   const result = obj.isFavoritesGuildCategoryNameValid(first);
   const importDefault = result;
   const items = [result, first];
@@ -44,7 +44,7 @@ function FavoritesGuildAddCategoryActionSheet() {
   obj1[3] = tmp2[1];
   obj1[4] = closure_5;
   obj1[8] = callback;
-  const items1 = [callback2(first(7790).TextInput, obj1), ];
+  const items1 = [callback2(first(7792).TextInput, obj1), ];
   let obj2 = { text: null, onPress: null, disabled: null };
   const intl4 = first(1236).intl;
   obj2[0] = intl4.string(first(1236).t.CumH4u);

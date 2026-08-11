@@ -1,10 +1,10 @@
-// Module ID: 16682
-// Function ID: 16683
+// Module ID: 16694
+// Function ID: 16695
 // Name: GraceOption
-// Dependencies: [19, 17, 1964, 9022, 21, 16683, 1236, 4303, 712, 7984, 4846, 5374, 16684, 5767, 5768, 4013, 4299, 5000, 1416, 4153, 7967, 4712, 3883, 7985, 16685, 5714, 9021, 589, 4239, 16647, 2]
+// Dependencies: [19, 17, 1983, 9028, 21, 16695, 1236, 4303, 712, 7986, 4846, 5374, 16696, 5767, 5768, 4031, 4299, 5000, 1435, 1363, 7969, 4712, 3902, 7987, 16697, 5714, 9027, 589, 4239, 16659, 2]
 // Exports: default
 
-// Module 16682 (GraceOption)
+// Module 16694 (GraceOption)
 import get_ActivityIndicator from "getPlatformUserUrl";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import handleFormInit from "handleFormInit";
@@ -22,7 +22,7 @@ let require = arg1;
 function GraceOption(option) {
   const iter = option.option;
   const onPress = option.onPress;
-  return callback(iter(7984).TableRadioRow, {
+  return callback(iter(7986).TableRadioRow, {
     value: iter.value,
     label: iter.label,
     legacyCompat_onPress() {
@@ -40,7 +40,7 @@ function ForceSyncIcon(isSyncing) {
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t["+Josox"]);
     obj[2] = tmp;
     obj = { source: null };
-    obj[0] = importDefault(16684);
+    obj[0] = importDefault(16696);
     obj[3] = tmp2(require(5374) /* TableRowInner */.TableRow.Icon, obj);
     tmp2Result = tmp2(require(4846) /* PressableBase */.PressableOpacity, obj);
   }
@@ -147,7 +147,7 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
   const value = obj2.get(integration.type);
   if (null == value) {
     const _Object = Object;
-    const values = Object.values(tmp12(16683).IntegrationExpireGracePeriodTypes);
+    const values = Object.values(tmp12(16695).IntegrationExpireGracePeriodTypes);
     const found = values.filter((arg0) => Number.isInteger(arg0));
     const mapped = found.map((days) => {
       let obj = { value: days, label: null };
@@ -189,7 +189,7 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
     obj6[0] = intl4.format(RdUTrl, obj7);
     const intl5 = tmp15(1236).intl;
     const obj8 = { datetime: null };
-    let obj14 = tmp16(3883)(integration.synced_at);
+    let obj14 = tmp16(3902)(integration.synced_at);
     obj8[0] = obj14.calendar();
     obj6[1] = intl5.formatToPlainString(tmp15(1236).t["+42M+u"], obj8);
     let flag = integration.syncing;
@@ -209,17 +209,17 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
     obj11[1] = integration.expire_behavior;
     obj11[2] = self.handleExpireBehaviorChange;
     const obj12 = { value: null, label: null };
-    obj12[0] = tmp15(16685).IntegrationExpireBehaviorTypes.REMOVE_ROLE;
+    obj12[0] = tmp15(16697).IntegrationExpireBehaviorTypes.REMOVE_ROLE;
     const intl6 = tmp15(1236).intl;
     obj12[1] = intl6.string(tmp15(1236).t["6kpw4i"]);
-    const items3 = [callback(tmp15(7984).TableRadioRow, obj12), ];
+    const items3 = [callback(tmp15(7986).TableRadioRow, obj12), ];
     const obj13 = { value: null, label: null };
-    obj13[0] = tmp15(16685).IntegrationExpireBehaviorTypes.KICK;
+    obj13[0] = tmp15(16697).IntegrationExpireBehaviorTypes.KICK;
     const intl7 = tmp15(1236).intl;
     obj13[1] = intl7.string(tmp15(1236).t.fQUQIJ);
-    items3[1] = callback(tmp15(7984).TableRadioRow, obj13);
+    items3[1] = callback(tmp15(7986).TableRadioRow, obj13);
     obj11[4] = items3;
-    items1[2] = closure_8(tmp15(7985).TableRadioGroup, obj11);
+    items1[2] = closure_8(tmp15(7987).TableRadioGroup, obj11);
     obj14 = { title: null, hasIcons: false, children: null };
     const intl8 = tmp15(1236).intl;
     obj14[0] = intl8.string(tmp15(1236).t.uiXMow);
@@ -228,12 +228,12 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
     items1[4] = tmp13;
     obj2[2] = items1;
     obj1[2] = closure_8(tmp15(4712).Stack, obj2);
-    const items4 = [callback(tmp15(7967).Form, obj1), callback(tmp15(5714).NavScrim, {})];
+    const items4 = [callback(tmp15(7969).Form, obj1), callback(tmp15(5714).NavScrim, {})];
     obj9[0] = items4;
     return closure_8(closure_9, obj9);
   } else {
-    let tmp15Result = tmp15(1416);
-    tmp15Result = tmp15(4153);
+    let tmp15Result = tmp15(1435);
+    tmp15Result = tmp15(1363);
     let icon = value.icon;
     icon = { source: null, style: null };
     icon[0] = tmp15Result.makeSource(tmp15Result.isThemeDark(props.theme) ? icon.darkPNG : icon.lightPNG);

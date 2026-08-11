@@ -1,10 +1,10 @@
-// Module ID: 16153
-// Function ID: 16154
+// Module ID: 16170
+// Function ID: 16171
 // Name: PremiumSoundboardFeatureUpsell
-// Dependencies: [19, 17, 21, 4303, 712, 1609, 691, 8727, 8373, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1628, 691, 8733, 8378, 2]
 // Exports: default
 
-// Module 16153 (PremiumSoundboardFeatureUpsell)
+// Module 16170 (PremiumSoundboardFeatureUpsell)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,9 +20,9 @@ let closure_5 = createCacheKey.createStyles((arg0) => {
 const result = require("jsxProd").fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumSoundboardFeatureUpsell.tsx");
 
 export default function PremiumSoundboardFeatureUpsell(shouldShow) {
-  let obj = { style: callback(require(691) /* keys */.EXPRESSION_FOOTER_HEIGHT + importDefault(1609)().bottom).container, children: null };
+  let obj = { style: callback(require(691) /* keys */.EXPRESSION_FOOTER_HEIGHT + importDefault(1628)().bottom).container, children: null };
   obj = { shouldShow: shouldShow.shouldShow, featureName: null };
-  obj[1] = require(8373) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-  obj[1] = jsx(importDefault(8727), { shouldShow: shouldShow.shouldShow, featureName: null });
+  obj[1] = require(8378) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+  obj[1] = jsx(importDefault(8733), { shouldShow: shouldShow.shouldShow, featureName: null });
   return <View shouldShow={arg0.shouldShow} featureName={null} />;
 };

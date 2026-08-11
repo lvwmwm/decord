@@ -1,10 +1,10 @@
-// Module ID: 10088
-// Function ID: 10089
+// Module ID: 10093
+// Function ID: 10094
 // Name: getSubtitle
-// Dependencies: [19, 1236, 9356, 5848, 2]
+// Dependencies: [19, 1236, 9362, 5848, 2]
 // Exports: getBannerMode, useWishlistBannerConfig
 
-// Module 10088 (getSubtitle)
+// Module 10093 (getSubtitle)
 import { useMemo } from "noop";
 import { intl } from "getSystemLocale";
 import { intl as intl2 } from "getSystemLocale";

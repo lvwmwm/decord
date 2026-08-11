@@ -1,15 +1,15 @@
-// Module ID: 11740
-// Function ID: 11741
+// Module ID: 11743
+// Function ID: 11744
 // Name: matchGroupDMRecipients
-// Dependencies: [32, 19, 17, 1372, 3938, 1903, 9620, 21, 4303, 712, 5229, 4146, 4494, 12, 9622, 1236, 4299, 9624, 9626, 10253, 11741, 2]
+// Dependencies: [32, 19, 17, 1391, 3957, 1922, 9625, 21, 4303, 712, 5229, 4148, 4494, 12, 9627, 1236, 4299, 9629, 9631, 10258, 11744, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 11740 (matchGroupDMRecipients)
+// Module 11743 (matchGroupDMRecipients)
 import _slicedToArray from "_slicedToArray";
 import NoResults from "NoResults";
 import { View } from "UserFlashListActions";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
 import jsxProd from "set";
@@ -37,7 +37,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         let num3 = 1;
         return 1;
       } else {
-        let tmp19Result = tmp19(4146);
+        let tmp19Result = tmp19(4148);
         let tmp5 = user;
         let globalName = tmp19Result.getGlobalName(tmp4);
         let toLocaleLowerCaseResult1;
@@ -79,7 +79,7 @@ function matchGroupDM(id, trimmed1) {
   if ("" === trimmed1) {
     return 0;
   } else {
-    const channelName = require(4494) /* computeChannelName */.computeChannelName(id, mergeGuildAvatar, upsertRelationship);
+    const channelName = require(4494) /* computeChannelName */.computeChannelName(id, mergeGuildAvatar, markAllUserIdListsStale);
     const toLocaleLowerCaseResult = channelName.toLocaleLowerCase();
     let num = 3;
     if (!toLocaleLowerCaseResult.startsWith(trimmed1)) {

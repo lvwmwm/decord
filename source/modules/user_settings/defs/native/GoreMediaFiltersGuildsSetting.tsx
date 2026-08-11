@@ -1,9 +1,9 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 14088
+// Function ID: 14089
 // Name: pressable
-// Dependencies: [8082, 8036, 14071, 14067, 7059, 5917, 14068, 1236, 1306, 10447, 2]
+// Dependencies: [8084, 8038, 14079, 14075, 7062, 5917, 14076, 1236, 1306, 10452, 2]
 
-// Module 14080 (pressable)
+// Module 14088 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -13,8 +13,8 @@ const pressable = createToggle.createPressable({
   },
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentGuildsSettingValue() {
-    const obj = require(14067) /* useExplicitContentSettingOrDefault */;
-    return require(7059) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
+    const obj = require(14075) /* useExplicitContentSettingOrDefault */;
+    return require(7062) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
   },
   onPress: function onGoreContentGuildsOnPress() {
     let obj = require(5917) /* resolveGoreSettingWithDefaults */;
@@ -31,11 +31,11 @@ const pressable = createToggle.createPressable({
     const items = [require(1306) /* create */.ExplicitContentRedaction.BLOCK];
     obj[3] = items;
     obj[4] = obj.getGoreContentSettingOrDefault().goreContentGuilds;
-    const result = require(14068) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(14076) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useIsDisabled() {
-    let userIsTeen = require(8036) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(8036) /* useUserIsTeen */;
+    let userIsTeen = require(8038) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(8038) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }
@@ -58,8 +58,8 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentGuildsSettingValue() {
-    const obj = require(14067) /* useExplicitContentSettingOrDefault */;
-    return require(7059) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
+    const obj = require(14075) /* useExplicitContentSettingOrDefault */;
+    return require(7062) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
   },
   onPress: function onGoreContentGuildsOnPress() {
     let obj = require(5917) /* resolveGoreSettingWithDefaults */;
@@ -76,11 +76,11 @@ let obj = {
     const items = [require(1306) /* create */.ExplicitContentRedaction.BLOCK];
     obj[3] = items;
     obj[4] = obj.getGoreContentSettingOrDefault().goreContentGuilds;
-    const result = require(14068) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(14076) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useIsDisabled() {
-    let userIsTeen = require(8036) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(8036) /* useUserIsTeen */;
+    let userIsTeen = require(8038) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(8038) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }

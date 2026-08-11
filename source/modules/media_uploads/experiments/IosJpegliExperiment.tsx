@@ -1,7 +1,7 @@
 // Module ID: 4888
 // Function ID: 4889
 // Name: getIosJpegliConfig
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: getIosJpegliConfig
 
 // Module 4888 (getIosJpegliConfig)

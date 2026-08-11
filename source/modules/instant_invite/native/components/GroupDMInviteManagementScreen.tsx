@@ -1,9 +1,9 @@
-// Module ID: 9684
-// Function ID: 9685
+// Module ID: 9689
+// Function ID: 9690
 // Name: GroupDMInviteManagement
-// Dependencies: [5, 32, 19, 17, 7760, 8017, 676, 21, 4303, 4730, 530, 12, 712, 9685, 5822, 1297, 9702, 9703, 1236, 5270, 503, 5783, 2]
+// Dependencies: [5, 32, 19, 17, 7762, 8019, 676, 21, 4303, 4730, 530, 12, 712, 9690, 5822, 1297, 9707, 9708, 1236, 5270, 503, 5783, 2]
 
-// Module 9684 (GroupDMInviteManagement)
+// Module 9689 (GroupDMInviteManagement)
 import closure_3 from "normalizeChannelPropertyForCompare";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "HeaderBackImage";
@@ -147,8 +147,8 @@ function GroupDMInviteManagement(channelId) {
     let tmp14 = jsx(channelId(5822).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
     let obj = { lightSource: null, darkSource: null, title: null, body: null };
-    obj[0] = tmp4(9702);
-    obj[1] = tmp4(9703);
+    obj[0] = tmp4(9707);
+    obj[1] = tmp4(9708);
     const intl = channelId(1236).intl;
     obj[2] = intl.string(channelId(1236).t["+nLJkZ"]);
     const intl2 = channelId(1236).intl;

@@ -1,10 +1,10 @@
-// Module ID: 12645
-// Function ID: 12646
+// Module ID: 12649
+// Function ID: 12650
 // Name: GuildPreview
-// Dependencies: [19, 17, 21, 4303, 712, 4151, 4299, 1236, 5779, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4152, 4299, 1236, 5779, 2]
 // Exports: default
 
-// Module 12645 (GuildPreview)
+// Module 12649 (GuildPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/
 export default function GuildPreview(guild) {
   guild = guild.guild;
   const tmp = createCacheKey();
-  let obj = require(4151) /* hexToRgba */;
+  let obj = require(4152) /* hexToRgba */;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

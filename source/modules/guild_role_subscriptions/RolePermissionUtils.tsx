@@ -1,10 +1,10 @@
-// Module ID: 3921
-// Function ID: 3922
+// Module ID: 3940
+// Function ID: 3941
 // Name: hasViewChannelPermission
-// Dependencies: [1965, 676, 506, 2]
+// Dependencies: [1984, 676, 506, 2]
 // Exports: hasViewChannelPermission, isChannelAccessDeniedBy, isChannelAccessGrantedBy
 
-// Module 3921 (hasViewChannelPermission)
+// Module 3940 (hasViewChannelPermission)
 import { hasPermission } from "GuildRoleRecordTypeTag";
 import { Permissions } from "ME";
 

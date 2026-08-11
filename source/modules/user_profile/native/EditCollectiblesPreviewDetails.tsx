@@ -1,10 +1,10 @@
-// Module ID: 8298
-// Function ID: 8299
+// Module ID: 8303
+// Function ID: 8304
 // Name: EditCollectiblesPreviewDescription
-// Dependencies: [19, 17, 1975, 21, 4303, 589, 3947, 7013, 3971, 4299, 1236, 8278, 2]
+// Dependencies: [19, 17, 1994, 21, 4303, 589, 3966, 7016, 3990, 4299, 1236, 8283, 2]
 // Exports: default
 
-// Module 8298 (EditCollectiblesPreviewDescription)
+// Module 8303 (EditCollectiblesPreviewDescription)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -27,17 +27,17 @@ function EditCollectiblesPreviewDescription(arg0) {
   let obj = require(589) /* initialize */;
   const items = [_getSystemLocale];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let obj1 = importDefault(3947);
+  let obj1 = importDefault(3966);
   const canUseCollectiblesResult = obj1.canUseCollectibles(user);
-  let obj2 = require(7013) /* getItemRecordsFromPurchases */;
+  let obj2 = require(7016) /* getItemRecordsFromPurchases */;
   let result = obj2.isPremiumCollectiblesProduct(product);
   if (!result) {
-    let tmpResult = tmp(7013);
+    let tmpResult = tmp(7016);
     result = tmpResult.isPremiumCollectiblesPurchase(purchase);
   }
   let result1 = !canUseCollectiblesResult;
   if (!canUseCollectiblesResult) {
-    tmpResult = tmp(7013);
+    tmpResult = tmp(7016);
     result1 = tmpResult.isPremiumCollectiblesPurchase(purchase);
   }
   if (null != purchase) {
@@ -50,8 +50,8 @@ function EditCollectiblesPreviewDescription(arg0) {
       if (null != expiresAt) {
         const _Date = Date;
         const date = new Date();
-        diffAsUnitsResult = tmp(3971).diffAsUnits(date, purchase.expiresAt);
-        const tmpResult1 = tmp(3971);
+        diffAsUnitsResult = tmp(3990).diffAsUnits(date, purchase.expiresAt);
+        const tmpResult1 = tmp(3990);
       }
       let tmp17 = null != diffAsUnitsResult;
       if (tmp17) {
@@ -103,7 +103,7 @@ function EditCollectiblesPreviewDescription(arg0) {
       obj6[2] = stringResult;
       let tmp25Result = callback(tmp(4299).Text, obj6);
     } else {
-      const tmp4Result = importDefault(3947);
+      const tmp4Result = importDefault(3966);
       const Text = tmp(4299).Text;
       const obj7 = { variant: "text-sm/medium", color: "text-default", children: null };
       if (isPremiumResult) {
@@ -113,7 +113,7 @@ function EditCollectiblesPreviewDescription(arg0) {
         obj7[2] = nitroJoinCTA;
         tmp25Result = tmp25(Text, obj7);
       }
-      isPremiumResult = importDefault(3947).isPremium(user);
+      isPremiumResult = importDefault(3966).isPremium(user);
     }
   } else {
     const obj8 = { variant: "text-sm/medium", color: "text-default", children: null };
@@ -135,7 +135,7 @@ export default function EditCollectiblesPreviewDetails(previewSkuId) {
   previewSkuId = previewSkuId.previewSkuId;
   ({ user, nitroJoinCTA, nitroUpgradeCTA } = previewSkuId);
   const tmp = callback2();
-  ({ product, purchase } = importDefault(8278)(previewSkuId));
+  ({ product, purchase } = importDefault(8283)(previewSkuId));
   let tmp5Result = null;
   if (null != previewSkuId) {
     if (null != product) {

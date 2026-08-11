@@ -1,7 +1,7 @@
 // Module ID: 4638
 // Function ID: 4639
 // Name: getStickerExtensionFromFormatType
-// Dependencies: [1340, 1891, 4639, 4984, 3977, 676, 4985, 1416, 1878, 500, 1450, 4987, 2]
+// Dependencies: [1340, 1910, 4639, 4984, 3996, 676, 4985, 1435, 1897, 500, 1469, 4987, 2]
 // Exports: createStickerPackCategory, getFavoriteStickerIds, getFilenameForSticker, getMessageStickers, getStickerAssetUrl, getStickerFormatTypeFromFileType, getStickerPackBannerAssetUrl, getStickerPackPreviewSticker, getStickerTagForEmoji, isAvailableGuildSticker, isFavoriteSticker, isGuildSticker, isStandardSticker, isStickerAssetUrl, isStickerPackAnimated, shouldAnimateSticker, shouldAttachSticker
 
 // Module 4638 (getStickerExtensionFromFormatType)
@@ -21,7 +21,7 @@ const require = arg1;
 function getStickerExtensionFromFormatType(format_type) {
   if (require(4985) /* StickerFormat */.StickerFormat.PNG === format_type) {
     const StickerExtensions = tmp(4985).StickerExtensions;
-    return tmp(1416).SUPPORTS_WEBP ? StickerExtensions.WEBP : StickerExtensions.PNG;
+    return tmp(1435).SUPPORTS_WEBP ? StickerExtensions.WEBP : StickerExtensions.PNG;
   } else if (tmp(4985).StickerFormat.APNG === format_type) {
     return tmp(4985).StickerExtensions.APNG;
   } else if (tmp(4985).StickerFormat.LOTTIE === format_type) {
@@ -114,7 +114,7 @@ export const getStickerAssetUrl = (format_type) => {
     const tmp3 = getStickerExtensionFromFormatType(PNG);
     const STICKER_ASSETResult = Endpoints.STICKER_ASSET(format_type.id, tmp3);
     try {
-      const enabled = tmp23(1878).getForceSdrEmojisStickersConfig({ location: "sticker_url" }).enabled;
+      const enabled = tmp23(1897).getForceSdrEmojisStickersConfig({ location: "sticker_url" }).enabled;
       let str2 = "";
       if (enabled) {
         str2 = "&force_sdr=true";
@@ -141,11 +141,11 @@ export const getStickerAssetUrl = (format_type) => {
             }
           }
           const _Math = Math;
-          tmp23Result = tmp23(1450);
+          tmp23Result = tmp23(1469);
           const _location2 = location;
           const bound = Math.min(2, tmp23Result.getDevicePixelRatio());
           const _HermesInternal3 = HermesInternal;
-          return "" + protocol + MEDIA_PROXY_ENDPOINT + STICKER_ASSETResult + "?size=" + tmp23(1450).getBestMediaProxySize(size * bound) + str6 + str3 + str2;
+          return "" + protocol + MEDIA_PROXY_ENDPOINT + STICKER_ASSETResult + "?size=" + tmp23(1469).getBestMediaProxySize(size * bound) + str6 + str3 + str2;
         }
       } else {
         if (format_type.format_type === tmp23(4985).StickerFormat.LOTTIE) {
@@ -175,7 +175,7 @@ export const getStickerPackBannerAssetUrl = function getStickerPackBannerAssetUr
     return null;
   } else {
     let str = "png";
-    if (require(1416) /* getAvatarURL */.SUPPORTS_WEBP) {
+    if (require(1435) /* getAvatarURL */.SUPPORTS_WEBP) {
       str = "webp";
     }
     if (null != CDN_HOST) {
@@ -189,8 +189,8 @@ export const getStickerPackBannerAssetUrl = function getStickerPackBannerAssetUr
     let sum = combined;
     if (null != size) {
       const _HermesInternal3 = HermesInternal;
-      sum = combined + "?size=" + require(1450) /* handleImageLoad */.getBestMediaProxySize(size);
-      const tmp15Result = require(1450) /* handleImageLoad */;
+      sum = combined + "?size=" + require(1469) /* handleImageLoad */.getBestMediaProxySize(size);
+      const tmp15Result = require(1469) /* handleImageLoad */;
     }
     return sum;
   }

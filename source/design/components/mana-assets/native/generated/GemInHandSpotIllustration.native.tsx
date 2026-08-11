@@ -1,10 +1,10 @@
-// Module ID: 6382
-// Function ID: 6383
+// Module ID: 6384
+// Function ID: 6385
 // Name: GemInHandSpotIllustration
-// Dependencies: [21, 5268, 6383, 2]
+// Dependencies: [21, 5268, 6385, 2]
 // Exports: GemInHandSpotIllustration
 
-// Module 6382 (GemInHandSpotIllustration)
+// Module 6384 (GemInHandSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemInHandSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GemInHandSpotIllustration = function GemInHandSpotIllustration(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6383);
+  obj[0] = importDefault(6385);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

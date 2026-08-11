@@ -1,9 +1,9 @@
-// Module ID: 8471
-// Function ID: 8472
+// Module ID: 8477
+// Function ID: 8478
 // Name: handleSetLocationMetadata
-// Dependencies: [3982, 589, 709, 2]
+// Dependencies: [4001, 589, 709, 2]
 
-// Module 8471 (handleSetLocationMetadata)
+// Module 8477 (handleSetLocationMetadata)
 import DEFAULT_COUNTRY_CODE_NAME from "DEFAULT_COUNTRY_CODE_NAME";
 import { DeviceSettingsStore } from "initialize";
 

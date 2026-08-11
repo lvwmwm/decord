@@ -1,10 +1,10 @@
-// Module ID: 11112
-// Function ID: 11113
+// Module ID: 11117
+// Function ID: 11118
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 4303, 712, 5397, 5268, 8141, 1297, 11113, 4299, 1236, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5397, 5268, 8143, 1297, 11118, 4299, 1236, 2]
 // Exports: default
 
-// Module 11112 (PublicGuildAnnouncementProfile)
+// Module 11117 (PublicGuildAnnouncementProfile)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,12 +28,12 @@ export default function PublicGuildAnnouncementProfile() {
   let obj = { startExpanded: true, children: null };
   obj = { style: tmp.content, children: null };
   obj = { style: tmp.avatar, source: null };
-  let obj3 = require(8141) /* isPublicSystemMessage */;
+  let obj3 = require(8143) /* isPublicSystemMessage */;
   obj[1] = obj3.getPublicSystemMessageAvatar();
   const items = [callback(importDefault(5268), obj), , , ];
   const obj1 = { style: tmp.nameWrapper, children: null };
   const obj2 = { source: null, disableColor: true };
-  obj2[0] = importDefault(11113);
+  obj2[0] = importDefault(11118);
   const items1 = [callback(require(1297) /* Button */.Icon, obj2), ];
   obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

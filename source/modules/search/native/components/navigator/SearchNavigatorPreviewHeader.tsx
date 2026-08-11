@@ -1,15 +1,15 @@
-// Module ID: 15933
-// Function ID: 15934
-// Dependencies: [19, 17, 21, 4303, 12545, 2]
+// Module ID: 15950
+// Function ID: 15951
+// Dependencies: [19, 17, 21, 4303, 12549, 2]
 
-// Module 15933
+// Module 15950
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
 
 let closure_4 = createCacheKey.createStyles({ container: { flexShrink: 1, paddingRight: 12, flexDirection: "row", alignItems: "center" } });
-const memoResult = require("noop").memo((channelId) => <View style={callback().container}>{jsx(importDefault(12545), { channelId: arg0.channelId, screenIndex: "none", pressable: false, isGuildMemberCountVisible: false, isNavigationScreen: true })}</View>);
+const memoResult = require("noop").memo((channelId) => <View style={callback().container}>{jsx(importDefault(12549), { channelId: arg0.channelId, screenIndex: "none", pressable: false, isGuildMemberCountVisible: false, isNavigationScreen: true })}</View>);
 const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorPreviewHeader.tsx");
 
 export default memoResult;

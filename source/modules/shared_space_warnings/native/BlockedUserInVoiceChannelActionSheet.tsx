@@ -1,14 +1,14 @@
-// Module ID: 13004
-// Function ID: 13005
+// Module ID: 13008
+// Function ID: 13009
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 1372, 3938, 1903, 12998, 13001, 676, 21, 4303, 712, 589, 1236, 5764, 10356, 4299, 5767, 5374, 1297, 11224, 10872, 4714, 4271, 5129, 698, 2]
+// Dependencies: [19, 17, 1391, 3957, 1922, 13002, 13005, 676, 21, 4303, 712, 589, 1236, 5764, 10361, 4299, 5767, 5374, 1297, 11229, 10877, 4714, 4271, 5129, 698, 2]
 // Exports: default
 
-// Module 13004 (BlockedUserInVoiceChannelActionSheet)
+// Module 13008 (BlockedUserInVoiceChannelActionSheet)
 import "UserIcon";
 import get_ActivityIndicator from "TableRowInner";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { setDismissalTimeForUser } from "useSharedSpacesWarningStore";
 import GdmWarningMedium from "GdmWarningMedium";
@@ -46,7 +46,7 @@ export default function BlockedUserInVoiceChannelActionSheet(arg0) {
   let stateFromStores;
   const tmp = createCacheKey();
   let obj = require(stateFromStores[11]);
-  let items = [upsertRelationship];
+  let items = [markAllUserIdListsStale];
   stateFromStores = obj.useStateFromStores(items, () => outer1_6.isBlocked(blockedUserId));
   let obj1 = require(stateFromStores[11]);
   let items1 = [ensureGuildLoaded];

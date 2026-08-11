@@ -1,15 +1,15 @@
-// Module ID: 11712
-// Function ID: 11713
+// Module ID: 11715
+// Function ID: 11716
 // Name: SearchTokenTypes
-// Dependencies: [32, 1372, 1961, 4518, 3938, 1960, 1903, 8397, 676, 3883, 1236, 11713, 11, 11718, 12, 11719, 4494, 4146, 2]
+// Dependencies: [32, 1391, 1980, 4518, 3957, 1979, 1922, 8403, 676, 3902, 1236, 11716, 11, 11721, 12, 11722, 4494, 4148, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 11712 (SearchTokenTypes)
+// Module 11715 (SearchTokenTypes)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
 import initialize from "initialize";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SearchTabs } from "MessageEmbedTypes";
@@ -86,8 +86,8 @@ export const getSearchTabFetchId = function getSearchTabFetchId(closure_0, closu
   return "" + channelId + "-" + closure_1 + "-" + searchResultsQuery;
 };
 export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestamp(arg0) {
-  let obj = importDefault(3883)();
-  const diffResult = obj.diff(importDefault(3883)(arg0), "s");
+  let obj = importDefault(3902)();
+  const diffResult = obj.diff(importDefault(3902)(arg0), "s");
   if (diffResult > c17) {
     const _Math5 = Math;
     const rounded = Math.round(diffResult / tmp3);
@@ -478,7 +478,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
   } else {
     if (obj9.isSearchFilterTokenType(currentToken.type)) {
       if (null != nextToken) {
-        if (nextToken.type !== importDefault(11718).NON_TOKEN_TYPE) {
+        if (nextToken.type !== importDefault(11721).NON_TOKEN_TYPE) {
           if (null != nextToken) {
             if (!regex.test(nextToken.type)) {
               const obj1 = { type: null, filter: null, token: null };
@@ -495,7 +495,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       obj2[2] = nextToken;
       return obj2;
     }
-    if (currentToken.type === importDefault(11718).NON_TOKEN_TYPE) {
+    if (currentToken.type === importDefault(11721).NON_TOKEN_TYPE) {
       if (null != previousToken) {
         if (tmp10Result.isSearchFilterTokenType(previousToken.type)) {
           const obj3 = { type: null, filter: null, token: null };
@@ -508,13 +508,13 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(11718).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(11721).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj4 = { type: null, filter: null, token: null };
     obj4[0] = constants2.FILTER_ALL;
     obj4[2] = tmp4;
-    obj9 = require(11713) /* getShortcuts */;
+    obj9 = require(11716) /* getShortcuts */;
     const tmp10 = require;
     tmp3 = importDefault;
   }
@@ -614,36 +614,36 @@ export const filterHasAnswer = function filterHasAnswer(type, type2) {
   return !tmp2;
 };
 export const refreshSearchTokens = function refreshSearchTokens() {
-  const result = require(11713) /* getShortcuts */.rebuildSearchTokenConfigs();
+  const result = require(11716) /* getShortcuts */.rebuildSearchTokenConfigs();
   tmp4.reset();
-  const obj = require(11713) /* getShortcuts */;
+  const obj = require(11716) /* getShortcuts */;
   const tmp3 = importDefault(12);
-  importDefault(12)(importDefault(11713)).forOwn((arg0, type) => {
+  importDefault(12)(importDefault(11716)).forOwn((arg0, type) => {
     const merged = Object.assign(arg0);
     return closure_19.addRule({ type });
   });
   tmp5.reset();
-  const tmp3Result = importDefault(12)(importDefault(11713));
-  const crossDMSearchTokensConfig = require(11713) /* getShortcuts */.buildCrossDMSearchTokensConfig();
-  const obj3 = require(11713) /* getShortcuts */;
+  const tmp3Result = importDefault(12)(importDefault(11716));
+  const crossDMSearchTokensConfig = require(11716) /* getShortcuts */.buildCrossDMSearchTokensConfig();
+  const obj3 = require(11716) /* getShortcuts */;
   importDefault(12)(crossDMSearchTokensConfig).forOwn((arg0, type) => {
     const merged = Object.assign(arg0);
     return closure_20.addRule({ type });
   });
   const obj4 = importDefault(12)(crossDMSearchTokensConfig);
-  const result1 = importDefault(11719).markSearchTokensRefreshed();
+  const result1 = importDefault(11722).markSearchTokensRefreshed();
 };
 export const getChannelDisplayName = function getChannelDisplayName(isDM) {
-  const channelName = require(4494) /* computeChannelName */.computeChannelName(isDM, mergeGuildAvatar, upsertRelationship);
+  const channelName = require(4494) /* computeChannelName */.computeChannelName(isDM, mergeGuildAvatar, markAllUserIdListsStale);
   if (isDM.isDM()) {
     const user = mergeGuildAvatar.getUser(isDM.getRecipientId());
-    const userTag = importDefault(4146).getUserTag(user);
+    const userTag = importDefault(4148).getUserTag(user);
     let flag = false;
     let str = userTag;
     if (null == userTag) {
       return null;
     }
-    const obj3 = importDefault(4146);
+    const obj3 = importDefault(4148);
   } else {
     flag = false;
     str = channelName;
@@ -676,10 +676,10 @@ export const getChannelDisplayName = function getChannelDisplayName(isDM) {
 };
 export const getChannelPlaceholderName = function getChannelPlaceholderName(isGroupDM) {
   if (isGroupDM.isGroupDM()) {
-    return require(4494) /* computeChannelName */.computeChannelName(isGroupDM, authStore, upsertRelationship);
+    return require(4494) /* computeChannelName */.computeChannelName(isGroupDM, authStore, markAllUserIdListsStale);
   } else if (isGroupDM.isDM()) {
     const user = authStore.getUser(isGroupDM.getRecipientId());
-    return importDefault(4146).getUserTag(user);
+    return importDefault(4148).getUserTag(user);
   } else {
     const tmp2 = store.getTextChannelNameDisambiguations(isGroupDM.getGuildId())[isGroupDM.id];
     let name;
@@ -687,7 +687,7 @@ export const getChannelPlaceholderName = function getChannelPlaceholderName(isGr
       name = tmp2.name;
     }
     if (name == null) {
-      name = require(4494) /* computeChannelName */.computeChannelName(isGroupDM, authStore, upsertRelationship);
+      name = require(4494) /* computeChannelName */.computeChannelName(isGroupDM, authStore, markAllUserIdListsStale);
       const obj = require(4494) /* computeChannelName */;
     }
     return name;

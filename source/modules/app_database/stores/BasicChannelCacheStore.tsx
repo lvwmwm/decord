@@ -1,9 +1,9 @@
-// Module ID: 1373
-// Function ID: 1374
+// Module ID: 1392
+// Function ID: 1393
 // Name: hasChannel
-// Dependencies: [32, 1374, 3, 589, 709, 2]
+// Dependencies: [32, 1393, 3, 589, 709, 2]
 
-// Module 1373 (hasChannel)
+// Module 1392 (hasChannel)
 import _slicedToArray from "_slicedToArray";
 import allGuildIds from "allGuildIds";
 import { Store } from "initialize";

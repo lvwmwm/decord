@@ -1,10 +1,10 @@
-// Module ID: 9419
-// Function ID: 9420
+// Module ID: 9425
+// Function ID: 9426
 // Name: hasAtLeastOneGPlaySynced
-// Dependencies: [676, 5855, 3960, 5858, 7013, 3947, 7012, 9420, 9421, 2]
+// Dependencies: [676, 5855, 3979, 5858, 7016, 3966, 7015, 9426, 9427, 2]
 // Exports: createOrbProfileBadge, extractPriceByPurchaseTypes, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct, isGPlaySynced
 
-// Module 9419 (hasAtLeastOneGPlaySynced)
+// Module 9425 (hasAtLeastOneGPlaySynced)
 import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME";
 
 function hasAtLeastOneGPlaySynced(nextResult) {
@@ -118,7 +118,7 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
       DEFAULT = tmp.DEFAULT;
       tmp2 = tmp;
     }
-    let obj = require(3960) /* isPremiumGiftingSupported */;
+    let obj = require(3979) /* isPremiumGiftingSupported */;
     if (obj.isGooglePlayBillingSupported()) {
       if (DEFAULT === tmp2.MOBILE) {
         googleSkuIds = googleSkuIds.googleSkuIds;
@@ -139,7 +139,7 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
         result = null;
       }
     } else {
-      let tmp7Result = tmp7(7013);
+      let tmp7Result = tmp7(7016);
       result = tmp7Result.extractPriceByPurchaseTypes(googleSkuIds, DEFAULT);
     }
     if (null == result) {
@@ -153,7 +153,7 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
   }
 };
 export const extractPriceByPurchaseTypes = function extractPriceByPurchaseTypes(googleSkuIds) {
-  let obj = require(3960) /* isPremiumGiftingSupported */;
+  let obj = require(3979) /* isPremiumGiftingSupported */;
   if (obj.isGooglePlayBillingSupported()) {
     if (arg1 !== closure_3.MOBILE) {
       if (arg1 !== closure_3.MOBILE_PREMIUM_TIER_2) {
@@ -174,7 +174,7 @@ export const extractPriceByPurchaseTypes = function extractPriceByPurchaseTypes(
     }
     return tmp7;
   } else {
-    return tmp(7013).extractPriceByPurchaseTypes(googleSkuIds, arg1);
+    return tmp(7016).extractPriceByPurchaseTypes(googleSkuIds, arg1);
   }
   tmp = require;
 };
@@ -182,7 +182,7 @@ export const getCollectibleGoogleSkuId = function getCollectibleGoogleSkuId(clos
   if (null == stateFromStores) {
     return null;
   } else {
-    const obj = importDefault(3947);
+    const obj = importDefault(3966);
     const googleSkuIds = closure_0.googleSkuIds;
     let tmp5;
     if (googleSkuIds != null) {
@@ -303,7 +303,7 @@ export const isGPlaySynced = function isGPlaySynced(variants) {
     const tmp2Result = importDefault(5858);
     return null != product && null != importDefault(5858).getProduct(tmp7);
   }
-  obj = require(7012) /* getProductOrbPrice */;
+  obj = require(7015) /* getProductOrbPrice */;
 };
 export const filterGPlaySyncedCategories = function filterGPlaySyncedCategories(items) {
   if (null == items) {
@@ -340,5 +340,5 @@ export const filterHiddenCategories = function filterHiddenCategories(result) {
   });
 };
 export const createOrbProfileBadge = function createOrbProfileBadge() {
-  return { id: require(9420) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(9420) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(9421), description: "", isPreviewMode: true };
+  return { id: require(9426) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(9426) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(9427), description: "", isPreviewMode: true };
 };

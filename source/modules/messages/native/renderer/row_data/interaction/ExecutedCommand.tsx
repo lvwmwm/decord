@@ -1,10 +1,10 @@
-// Module ID: 8335
-// Function ID: 8336
+// Module ID: 8340
+// Function ID: 8341
 // Name: createExecutedCommand
-// Dependencies: [17, 1911, 1372, 1903, 676, 1419, 1416, 4532, 8336, 712, 6980, 1935, 8070, 8337, 1236, 8338, 2]
+// Dependencies: [17, 1930, 1391, 1922, 676, 1438, 1435, 4532, 8341, 712, 6983, 1954, 8072, 8342, 1236, 8343, 2]
 // Exports: createExecutedCommand
 
-// Module 8335 (createExecutedCommand)
+// Module 8340 (createExecutedCommand)
 import { processColor } from "get ActivityIndicator";
 import createdAt from "createdAt";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -30,7 +30,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     }
     const user1 = user.getUser(id);
     if (null == user1) {
-      let obj4 = require(8336) /* canViewInteractionInfo */;
+      let obj4 = require(8341) /* canViewInteractionInfo */;
       const result = obj4.isPrimaryEntryPointCommandMessage(message);
       let obj5 = require(4532) /* useNullableMessageAuthor */;
       const userAuthor = obj5.getUserAuthor(message.interaction.user, channel);
@@ -38,14 +38,14 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       const displayName = message.interaction.displayName;
       const internal = importDefault(712).internal;
       const semanticColor = internal.resolveSemanticColor(theme, importDefault(712).colors.MENTION_BACKGROUND);
-      let obj6 = require(6980) /* buildCommand */;
+      let obj6 = require(6983) /* buildCommand */;
       const initialInteractionMetadata = obj6.getInitialInteractionMetadata(message);
       let type;
       if (initialInteractionMetadata != null) {
         type = initialInteractionMetadata.type;
       }
       let tmp25 = null;
-      if (type === require(1935) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND) {
+      if (type === require(1954) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND) {
         tmp25 = null;
         if (null != initialInteractionMetadata.target_user) {
           tmp25 = new createdAt(initialInteractionMetadata.target_user);
@@ -79,26 +79,26 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
         guildId = channel.getGuildId();
       }
       id = message.interaction.user.id;
-      tmp17Result = tmp17(8070);
+      tmp17Result = tmp17(8072);
       const result1 = tmp17Result.isNativeMessageEligibleForEnhancedRoleColors(guildId, id);
       let id1;
       if (tmp25 != null) {
         id1 = tmp25.id;
       }
       let processColorStringsResult = null;
-      const result2 = require(8070) /* processColorStrings */.isNativeMessageEligibleForEnhancedRoleColors(guildId, id1);
+      const result2 = require(8072) /* processColorStrings */.isNativeMessageEligibleForEnhancedRoleColors(guildId, id1);
       if (result1) {
-        processColorStringsResult = tmp17(8070).processColorStrings(userAuthor.colorStrings);
-        const tmp17Result2 = tmp17(8070);
+        processColorStringsResult = tmp17(8072).processColorStrings(userAuthor.colorStrings);
+        const tmp17Result2 = tmp17(8072);
       }
       let processColorStringsResult1 = null;
       if (result2) {
-        processColorStringsResult1 = tmp17(8070).processColorStrings(userAuthor1.colorStrings);
-        const tmp17Result3 = tmp17(8070);
+        processColorStringsResult1 = tmp17(8072).processColorStrings(userAuthor1.colorStrings);
+        const tmp17Result3 = tmp17(8072);
       }
       let obj = { username: null, usernameOnClick: null };
       const tmp15 = message.type === MessageTypes.CHAT_INPUT_COMMAND || message.type === tmp14.INTERACTION_PREMIUM_UPSELL;
-      const tmp17Result1 = require(8070) /* processColorStrings */;
+      const tmp17Result1 = require(8072) /* processColorStrings */;
       obj[0] = require(4532) /* useNullableMessageAuthor */.getUserAuthor(message.interaction.user, channel).nick;
       obj = { name: "usernameOnClick", action: "bindUserMenu", userId: null, messageChannelId: null, linkColor: null, roleColor: null, roleColors: null, shouldShowRoleDot: null };
       obj[2] = id;
@@ -119,7 +119,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       obj[1] = obj;
       if (tmp) {
         if (!result) {
-          const result3 = tmp17(8337).isActivitiesInTextEnabled(channel);
+          const result3 = tmp17(8342).isActivitiesInTextEnabled(channel);
           const intl = tmp17(1236).intl;
           const formatToParts = intl.formatToParts;
           const t = tmp17(1236).t;
@@ -136,7 +136,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
             const merged1 = Object.assign(obj);
             formatToPartsResult = formatToParts(t.k964Wm, obj3);
           }
-          const tmp17Result5 = tmp17(8337);
+          const tmp17Result5 = tmp17(8342);
         }
         obj4 = { userId: null, username: null, usernameColor: null, avatarURL: null, targetUsernameColor: null, content: null, commandNameBackgroundStyles: null, showAppsIcon: true };
         obj4[0] = message.interaction.user.id;
@@ -152,8 +152,8 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       }
       let result4 = displayName;
       if (result) {
-        result4 = tmp17(8338).formatPrimaryEntryPointCommandName(displayName);
-        const tmp17Result6 = tmp17(8338);
+        result4 = tmp17(8343).formatPrimaryEntryPointCommandName(displayName);
+        const tmp17Result6 = tmp17(8343);
       }
       const intl2 = tmp17(1236).intl;
       obj6 = {};
@@ -214,12 +214,12 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       if (channel != null) {
         guildId1 = channel.getGuildId();
       }
-      require(1419) /* ensureAvatarSource */;
+      require(1438) /* ensureAvatarSource */;
       if (null == guildMemberAvatar) {
         let avatarSource = user1.getAvatarSource(undefined);
         const uri = tmp11(avatarSource).uri;
       }
-      obj3 = importDefault(1416);
+      obj3 = importDefault(1435);
       obj11 = { userId: null, avatar: null, guildId: null };
       obj11[0] = user1.id;
       obj11[1] = guildMemberAvatar;

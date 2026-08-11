@@ -1,10 +1,10 @@
-// Module ID: 6816
-// Function ID: 6817
+// Module ID: 6818
+// Function ID: 6819
 // Name: TentSpotIllustration
-// Dependencies: [21, 5268, 6817, 2]
+// Dependencies: [21, 5268, 6819, 2]
 // Exports: TentSpotIllustration
 
-// Module 6816 (TentSpotIllustration)
+// Module 6818 (TentSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TentSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const TentSpotIllustration = function TentSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6817);
+  obj[0] = importDefault(6819);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

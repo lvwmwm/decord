@@ -1,10 +1,10 @@
-// Module ID: 14846
-// Function ID: 14847
+// Module ID: 14856
+// Function ID: 14857
 // Name: ShopCardGridItem
-// Dependencies: [19, 17, 7001, 21, 4303, 9344, 9347, 14845, 12, 2]
+// Dependencies: [19, 17, 7004, 21, 4303, 9350, 9353, 14855, 12, 2]
 // Exports: default
 
-// Module 14846 (ShopCardGridItem)
+// Module 14856 (ShopCardGridItem)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -26,8 +26,8 @@ function ShopCardGridItem(index) {
   ({ product, cardWidth, preferVCPrice, unpublishedAt, disableBundleStaticBackground, muteBundleStaticBackground } = index);
   const memo = React.useMemo(() => ({ tilePosition: index }), items);
   const obj = { newValue: memo, children: null };
-  obj[1] = jsx(importDefault(9344), { unpublishedAt, product, cardWidth, preferVCPrice, disableBundleStaticBackground, muteBundleStaticBackground });
-  return jsx(index(9347).CollectiblesAnalyticsProvider, { newValue: memo, children: null });
+  obj[1] = jsx(importDefault(9350), { unpublishedAt, product, cardWidth, preferVCPrice, disableBundleStaticBackground, muteBundleStaticBackground });
+  return jsx(index(9353).CollectiblesAnalyticsProvider, { newValue: memo, children: null });
 }
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 createCacheKey = { rowContainer: null };
@@ -56,14 +56,14 @@ export default function CollectiblesShopCardsGrid(accessibilityLabel) {
   let cardWidth;
   ({ onScroll, paddingTop, paddingBottom } = accessibilityLabel);
   closure_5 = createCacheKey();
-  let obj = products(14845);
+  let obj = products(14855);
   const cardLayout = obj.useCardLayout();
   columns = cardLayout.columns;
   cardWidth = cardLayout.cardWidth;
   const items = [products, columns];
   const memo = React.useMemo(() => outer1_1(outer1_2[8]).chunk(products, columns), items);
   obj = { accessibilityLabel: accessibilityLabel.accessibilityLabel, accessibilityRole: "list", scrollEnabled, showsVerticalScrollIndicator: false, onScroll, contentContainerStyle: null, children: null };
-  obj = { gap: products(9344).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom };
+  obj = { gap: products(9350).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom };
   obj[5] = obj;
   obj[6] = memo.map((arr) => {
     let closure_0 = arg1;

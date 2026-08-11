@@ -1,10 +1,10 @@
-// Module ID: 14475
-// Function ID: 14476
+// Module ID: 14483
+// Function ID: 14484
 // Name: EmojiGallery
-// Dependencies: [19, 17, 21, 8752, 8754, 14476, 2]
+// Dependencies: [19, 17, 21, 8758, 8760, 14484, 2]
 // Exports: default
 
-// Module 14475 (EmojiGallery)
+// Module 14483 (EmojiGallery)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,13 +21,13 @@ export default function EmojiGallery(emojiIds) {
   }
   let obj = { children: null };
   obj = { gap: 8, children: null };
-  obj[1] = importDefault(8752)(emojiIds.emojiIds, maxPerRow).map((arr) => {
+  obj[1] = importDefault(8758)(emojiIds.emojiIds, maxPerRow).map((arr) => {
     let obj = { style: { flexDirection: "row" }, children: null };
     obj = { gap: 16, children: null };
     obj[1] = arr.map((id) => outer1_4(outer1_1(outer1_2[5]), { size: 22, fontSize: 18, guildId: closure_0, id }, id));
     obj[1] = outer1_4(outer1_0(outer1_2[4]).GappedList, obj);
     return outer1_4(outer1_3, obj, arg1);
   });
-  obj[0] = jsx(require(8754) /* GappedList */.GappedList, { gap: 8, children: null });
+  obj[0] = jsx(require(8760) /* GappedList */.GappedList, { gap: 8, children: null });
   return <View gap={8}>{null}</View>;
 };

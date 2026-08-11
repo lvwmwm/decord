@@ -1,9 +1,9 @@
-// Module ID: 7441
-// Function ID: 7442
+// Module ID: 7443
+// Function ID: 7444
 // Name: productSK2ToIAPProduct
-// Dependencies: [5, 17, 3982, 5856, 7422, 2]
+// Dependencies: [5, 17, 4001, 5856, 7424, 2]
 
-// Module 7441 (productSK2ToIAPProduct)
+// Module 7443 (productSK2ToIAPProduct)
 import closure_2 from "set";
 import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME";
 import set from "DEFAULT_COUNTRY_CODE_NAME";
@@ -119,7 +119,7 @@ prototype["fetchProducts"] = function fetchProducts(arg0) {
     _queue.push(outer1_2(function*() {
       const dependencyMap = tmp3;
       let c3 = 1;
-      let obj1 = callback(7422);
+      let obj1 = callback(7424);
       obj1 = { skus: null };
       obj1[0] = outer1_0;
       const products = obj1.getProducts(obj1);

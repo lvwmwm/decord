@@ -1,10 +1,10 @@
-// Module ID: 14906
-// Function ID: 14907
+// Module ID: 14916
+// Function ID: 14917
 // Name: UserSettingsSensitiveContentFilters
-// Dependencies: [19, 8082, 21, 1236, 10447, 13888, 2]
+// Dependencies: [19, 8084, 21, 1236, 10452, 13895, 2]
 // Exports: default
 
-// Module 14906 (UserSettingsSensitiveContentFilters)
+// Module 14916 (UserSettingsSensitiveContentFilters)
 import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -14,7 +14,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/f
 
 export default function UserSettingsSensitiveContentFilters() {
   const node = React.useMemo(() => {
-    let obj = callback(10447);
+    let obj = callback(10452);
     obj = { sections: null };
     obj = { label: null, settings: null, subLabel: null };
     const intl = callback(1236).intl;
@@ -37,5 +37,5 @@ export default function UserSettingsSensitiveContentFilters() {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return jsx(importDefault(13888), { node });
+  return jsx(importDefault(13895), { node });
 };

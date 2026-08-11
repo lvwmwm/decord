@@ -1,10 +1,10 @@
-// Module ID: 13309
-// Function ID: 13310
+// Module ID: 13317
+// Function ID: 13318
 // Name: markGuildsAsRead
-// Dependencies: [5242, 5223, 1372, 1961, 4315, 676, 4500, 12, 11, 698, 5253, 2]
+// Dependencies: [5242, 5223, 1391, 1980, 4315, 676, 4500, 12, 11, 698, 5253, 2]
 // Exports: default
 
-// Module 13309 (markGuildsAsRead)
+// Module 13317 (markGuildsAsRead)
 import handleUpdate from "handleUpdate";
 import rebuild from "rebuild";
 import ensureGuildLoaded from "ensureGuildLoaded";

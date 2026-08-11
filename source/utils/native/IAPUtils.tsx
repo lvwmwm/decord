@@ -1,10 +1,10 @@
-// Module ID: 7421
-// Function ID: 7422
+// Module ID: 7423
+// Function ID: 7424
 // Name: serializePurchaseResponse
-// Dependencies: [5, 17, 4302, 3982, 1903, 5858, 676, 1905, 7422, 3, 38, 500, 7441, 5861, 12, 514, 3962, 589, 7442, 1606, 4283, 7443, 2]
+// Dependencies: [5, 17, 4302, 4001, 1922, 5858, 676, 1924, 7424, 3, 38, 500, 7443, 5861, 12, 514, 3981, 589, 7444, 1625, 4283, 7445, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
-// Module 7421 (serializePurchaseResponse)
+// Module 7423 (serializePurchaseResponse)
 import updateProduct from "updateProduct";
 import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -252,7 +252,7 @@ function isStorekit2Available() {
 function remapStorefront(countryCode) {
   const country = convertToAlpha2(countryCode.countryCode);
   if (null == countryCode.currency) {
-    if (null == require(7442) /* GeneratedPaymentCurrencies */.GeneratedPaymentCurrenciesSets.APPLE_STORE_COUNTRY_CURRENCIES[country]) {
+    if (null == require(7444) /* GeneratedPaymentCurrencies */.GeneratedPaymentCurrenciesSets.APPLE_STORE_COUNTRY_CURRENCIES[country]) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
       const error = new Error("Unable to get currency from countryCode " + countryCode.countryCode);
@@ -300,7 +300,7 @@ function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(7422).getStorefront();
+              obj1[0] = outer1_0(7424).getStorefront();
               return obj1;
             } else {
               c5 = 3;
@@ -310,7 +310,7 @@ function _fetchStoreFront() {
         } else if (1 === tmp7) {
           dependencyMap = 0;
           closure_1 = closure_2;
-          obj1 = callback(3962);
+          obj1 = callback(3981);
           const result = obj1.captureBillingException(closure_1);
           c5 = 3;
           return { value: null, done: true };
@@ -353,18 +353,18 @@ function _fetchStoreFront() {
 }
 ({ CurrencyCodes: metroImportAll, IOS_BUNDLE_ID } = ME);
 ({ InAppUtils: unpackModuleId, RNIapIosSk2: closure_12 } = require("initialize").NativeModules);
-let items = [require("module_7422").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
+let items = [require("module_7424").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
 let set = new Set(items);
 new require("DEFAULT_COUNTRY_CODE_NAME")("IAPUtils.tsx");
 let _default = {
   loadProducts() {
     if (obj.isIOS()) {
       const _Object = Object;
-      let items = [importDefault(7441).fetchSubscriptions(Object.values(tmp(5861).ProductIds)), ];
-      const obj2 = importDefault(7441);
+      let items = [importDefault(7443).fetchSubscriptions(Object.values(tmp(5861).ProductIds)), ];
+      const obj2 = importDefault(7443);
       const _Object2 = Object;
-      items[1] = importDefault(7441).fetchProducts(Object.values(tmp(5861).ProductIds));
-      const obj3 = importDefault(7441);
+      items[1] = importDefault(7443).fetchProducts(Object.values(tmp(5861).ProductIds));
+      const obj3 = importDefault(7443);
       let nextPromise = _Promise.all(items).then((arg0) => {
         let tmp;
         [r10007, tmp] = arg0;
@@ -575,7 +575,7 @@ if (set) {
 function shouldMockIAPForceEnable() {
   let isIOSResult = require(500) /* set */.isIOS();
   if (isIOSResult) {
-    const Identifier = importAll(1606).getConstants().Identifier;
+    const Identifier = importAll(1625).getConstants().Identifier;
     const _HermesInternal = HermesInternal;
     let isRunningOnSimulator = Identifier.startsWith("" + IOS_BUNDLE_ID + ".local");
     if (!isRunningOnSimulator) {
@@ -583,7 +583,7 @@ function shouldMockIAPForceEnable() {
       const tmpResult = require(4283) /* DCDDeviceManager */;
     }
     isIOSResult = isRunningOnSimulator;
-    const obj2 = importAll(1606);
+    const obj2 = importAll(1625);
   }
   return isIOSResult;
 }

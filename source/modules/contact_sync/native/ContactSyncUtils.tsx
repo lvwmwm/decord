@@ -1,10 +1,10 @@
-// Module ID: 12035
-// Function ID: 12036
+// Module ID: 12038
+// Function ID: 12039
 // Name: _uploadContacts
-// Dependencies: [5, 17, 4998, 12034, 12033, 676, 501, 5127, 503, 709, 12036, 3974, 1208, 589, 1384, 1974, 3998, 4509, 2]
+// Dependencies: [5, 17, 4998, 12037, 12036, 676, 501, 5127, 503, 709, 12039, 3993, 1208, 589, 1403, 1993, 4017, 4509, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 12035 (_uploadContacts)
+// Module 12038 (_uploadContacts)
 import closure_3 from "ME";
 import { NativeModules } from "module_4509";
 import set from "set";
@@ -139,9 +139,9 @@ export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
 export const adminDeleteContactSync = function adminDeleteContactSync() {
   callback2();
   callback3();
-  let obj = require(12036) /* _requestAndSyncContacts */;
+  let obj = require(12039) /* _requestAndSyncContacts */;
   const result = obj.removeLastUserContactsUpload();
-  const ContactSyncEnabled = require(3974) /* explicitContentFromProto */.ContactSyncEnabled;
+  const ContactSyncEnabled = require(3993) /* explicitContentFromProto */.ContactSyncEnabled;
   ContactSyncEnabled.updateSetting(false);
   obj = { url: closure_12.CONNECTION(constants2.CONTACTS, "@me"), oldFormErrors: true, trackedActionData: null, rejectWithError: false };
   obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_CONNECTIONS_UPDATE };
@@ -221,11 +221,11 @@ export const useContactSyncEnabled = function useContactSyncEnabled() {
   });
 };
 export const useContactSyncUserIsDiscoverable = function useContactSyncUserIsDiscoverable() {
-  const FriendDiscoverySettings = require(3974) /* explicitContentFromProto */.FriendDiscoverySettings;
+  const FriendDiscoverySettings = require(3993) /* explicitContentFromProto */.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
-  let obj = require(1384) /* hasFlag */;
+  let obj = require(1403) /* hasFlag */;
   let hasFlagResult = obj.hasFlag(setting, constants3.FIND_BY_PHONE);
-  const hasFlagResult1 = require(1384) /* hasFlag */.hasFlag(setting, constants3.FIND_BY_EMAIL);
+  const hasFlagResult1 = require(1403) /* hasFlag */.hasFlag(setting, constants3.FIND_BY_EMAIL);
   obj = { phone: hasFlagResult, email: hasFlagResult1, any: null };
   if (!hasFlagResult) {
     hasFlagResult = hasFlagResult1;
@@ -241,11 +241,11 @@ export const isContactSyncEnabled = function isContactSyncEnabled(contactSyncAcc
   return tmp;
 };
 export const getOpenLearnMoreUrl = function getOpenLearnMoreUrl() {
-  return importDefault(1974).getArticleURL(constants4.CONTACT_SYNC);
+  return importDefault(1993).getArticleURL(constants4.CONTACT_SYNC);
 };
 export const handleOpenLearnMoreLink = function handleOpenLearnMoreLink() {
-  const obj = importDefault(3998);
-  obj.openURL(importDefault(1974).getArticleURL(constants4.CONTACT_SYNC));
+  const obj = importDefault(4017);
+  obj.openURL(importDefault(1993).getArticleURL(constants4.CONTACT_SYNC));
 };
 export const transitionToAddFriendsLandingPage = function transitionToAddFriendsLandingPage() {
   importDefault(4509).popWithKey(closure_9);

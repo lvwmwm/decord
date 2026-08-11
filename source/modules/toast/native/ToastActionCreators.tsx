@@ -1,9 +1,9 @@
-// Module ID: 4002
-// Function ID: 4003
+// Module ID: 4021
+// Function ID: 4022
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 4002 (dispatcher)
+// Module 4021 (dispatcher)
 const result = require("set").fileFinishedImporting("modules/toast/native/ToastActionCreators.tsx");
 
 export default {

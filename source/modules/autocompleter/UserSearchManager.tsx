@@ -1,14 +1,14 @@
-// Module ID: 7312
-// Function ID: 7313
+// Module ID: 7313
+// Function ID: 7314
 // Name: getTransformedUser
-// Dependencies: [1376, 1911, 1372, 1971, 3938, 1903, 676, 4146, 1384, 514, 5261, 7313, 1351, 1208, 12, 11, 2]
+// Dependencies: [1395, 1930, 1391, 1990, 3957, 1922, 676, 4148, 1403, 514, 5261, 7314, 1370, 1208, 12, 11, 2]
 
-// Module 7312 (getTransformedUser)
+// Module 7313 (getTransformedUser)
 import { isPrivate } from "createChannelRecord";
 import createdAt from "createdAt";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserFlags } from "ME";
 import "initialize";
@@ -41,8 +41,8 @@ function getTransformedUser(author) {
           if (num == null) {
             num = 0;
           }
-          isProvisional = importAll(1384).hasFlag(num, UserFlags.PROVISIONAL_ACCOUNT);
-          const obj3 = importAll(1384);
+          isProvisional = importAll(1403).hasFlag(num, UserFlags.PROVISIONAL_ACCOUNT);
+          const obj3 = importAll(1403);
         }
       }
       obj.isProvisional = isProvisional;
@@ -59,8 +59,8 @@ function getTransformedUser(author) {
           if (num2 == null) {
             num2 = 0;
           }
-          isStaffResult = importAll(1384).hasFlag(num2, UserFlags.STAFF);
-          const obj4 = importAll(1384);
+          isStaffResult = importAll(1403).hasFlag(num2, UserFlags.STAFF);
+          const obj4 = importAll(1403);
         }
       }
       obj.isStaff = isStaffResult;
@@ -922,12 +922,12 @@ prototype2["rebootWebworker"] = function rebootWebworker() {
     _worker.terminate();
     self._worker = null;
   }
-  self._worker = require(7313) /* UserSearchWorkerManager */;
+  self._worker = require(7314) /* UserSearchWorkerManager */;
 };
 prototype2["updateUsers"] = function updateUsers(arr) {
   const _worker = this._worker;
   if (null != _worker) {
-    const found = arr.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    const found = arr.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     for (const item10007 of found) {
       let tmp2 = item10007;
       let id;

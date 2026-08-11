@@ -1,9 +1,9 @@
-// Module ID: 15273
-// Function ID: 15274
+// Module ID: 15283
+// Function ID: 15284
 // Name: sortCategoryList
-// Dependencies: [109, 1376, 1961, 3929, 676, 5255, 1894, 12, 589, 709, 2]
+// Dependencies: [109, 1395, 1980, 3948, 676, 5255, 1913, 12, 589, 709, 2]
 
-// Module 15273 (sortCategoryList)
+// Module 15283 (sortCategoryList)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import createChannelRecord from "createChannelRecord";
 import comparator from "comparator";
@@ -129,7 +129,7 @@ let closure_23 = require("apply").debounce(() => {
       closure_19[channel.id] = channel;
       return channel;
     });
-    _require = _require(1894).isFavoritesGuildId(c13);
+    _require = _require(1913).isFavoritesGuildId(c13);
     const item2 = channels[constants.GUILD_CATEGORY].forEach((channel) => {
       channel = channel.channel;
       let canResult = "null" === channel.id || closure_0;
@@ -144,7 +144,7 @@ let closure_23 = require("apply").debounce(() => {
     const arr = channels[closure_7];
     const arr2 = channels[closure_8];
     const arr3 = channels[constants.GUILD_CATEGORY];
-    const obj = _require(1894);
+    const obj = _require(1913);
   }
   guildSettingsModalChannelsStoreClass.emitChange();
 }, 500);
@@ -175,7 +175,7 @@ prototype["initGuild"] = function initGuild(closure_6) {
       closure_19[channel.id] = channel;
       return channel;
     });
-    _require = _require(1894).isFavoritesGuildId(closure_13);
+    _require = _require(1913).isFavoritesGuildId(closure_13);
     const item2 = channels[constants.GUILD_CATEGORY].forEach((channel) => {
       channel = channel.channel;
       let canResult = "null" === channel.id || closure_0;
@@ -190,7 +190,7 @@ prototype["initGuild"] = function initGuild(closure_6) {
     const arr = channels[closure_7];
     const arr2 = channels[closure_8];
     const arr3 = channels[constants.GUILD_CATEGORY];
-    const obj = _require(1894);
+    const obj = _require(1913);
   }
 };
 Object.defineProperty(prototype, "channels", {

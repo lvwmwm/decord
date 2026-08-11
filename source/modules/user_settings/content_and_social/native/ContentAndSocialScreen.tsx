@@ -1,10 +1,10 @@
-// Module ID: 14882
-// Function ID: 14883
+// Module ID: 14892
+// Function ID: 14893
 // Name: ContentAndSocialSettings
-// Dependencies: [32, 19, 17, 8082, 676, 21, 4303, 712, 1236, 1974, 14883, 12035, 14886, 5917, 10447, 14062, 13888, 14887, 4299, 2]
+// Dependencies: [32, 19, 17, 8084, 676, 21, 4303, 712, 1236, 1993, 14893, 12038, 14896, 5917, 10452, 14070, 13895, 14897, 4299, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 14882 (ContentAndSocialSettings)
+// Module 14892 (ContentAndSocialSettings)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "useAuthorizedSlayerApplications";
@@ -191,7 +191,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
   let showLoadingIndicator;
   let slayerSdkApplications;
   const tmp = createCacheKey();
-  ({ showLoadingIndicator, slayerSdkApplications } = importDefault(14887)());
+  ({ showLoadingIndicator, slayerSdkApplications } = importDefault(14897)());
   if (showLoadingIndicator) {
     let obj = { style: null };
     obj[0] = tmp.loadingIndicator;
@@ -206,16 +206,16 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
     let obj2 = { variant: "text-sm/normal", color: "text-muted", children: null };
     let intl2 = require(1236) /* getSystemLocale */.intl;
     const obj3 = { helpdeskArticle: null };
-    obj3[0] = tmp2(1974).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
+    obj3[0] = tmp2(1993).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
     obj2[2] = intl2.format(require(1236) /* getSystemLocale */.t.V8wClM, obj3);
     items[1] = callback2(require(4299) /* Text */.Text, obj2);
     obj[1] = items;
     tmp7 = callback3(closure_6, obj);
-    const tmp2Result = tmp2(1974);
+    const tmp2Result = tmp2(1993);
   } else {
     obj = { node: null };
     obj[0] = tmp5;
-    tmp7 = callback2(tmp2(13888), obj);
+    tmp7 = callback2(tmp2(13895), obj);
   }
   return tmp7;
 };

@@ -1,10 +1,10 @@
-// Module ID: 15416
-// Function ID: 15417
+// Module ID: 15433
+// Function ID: 15434
 // Name: MiniGuildIcon
-// Dependencies: [19, 7097, 1891, 4124, 5155, 15406, 15412, 15407, 21, 4303, 712, 4005, 589, 5779, 1348, 4713, 4151, 688, 8009, 4036, 4648, 4767, 8228, 5268, 15417, 15419, 11976, 15426, 4272, 5232, 5781, 15409, 15427, 2]
+// Dependencies: [19, 7098, 1910, 4126, 5155, 15423, 15429, 15424, 21, 4303, 712, 4024, 589, 5779, 1367, 4713, 4152, 688, 8011, 4042, 4648, 4767, 8232, 5268, 15434, 15436, 11979, 15443, 4272, 5232, 5781, 15426, 15444, 2]
 
-// Module 15416 (MiniGuildIcon)
-import importAllResult from "module_4036";
+// Module 15433 (MiniGuildIcon)
+import importAllResult from "module_4042";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -28,7 +28,7 @@ function MiniGuildIcon(arg0) {
   let require;
   let selected;
   ({ guildId: require, position, selected } = arg0);
-  let obj = require(4005) /* map */;
+  let obj = require(4024) /* map */;
   const tmp4 = callback3(false, obj.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE));
   const items = [createGuildRecordFromRust];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => outer1_5.getGuild(closure_0));

@@ -1,7 +1,7 @@
 // Module ID: 4390
 // Function ID: 4391
 // Name: sortActivity
-// Dependencies: [1218, 1903, 676, 4391, 12, 659, 11, 589, 709, 2]
+// Dependencies: [1218, 1922, 676, 4391, 12, 659, 11, 589, 709, 2]
 
 // Module 4390 (sortActivity)
 import fetchFingerprint from "fetchFingerprint";

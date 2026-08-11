@@ -1,10 +1,10 @@
-// Module ID: 10432
-// Function ID: 10433
+// Module ID: 10437
+// Function ID: 10438
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4303, 712, 1481, 5328, 10433, 10434, 4299, 1236, 4714, 4509, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1500, 5328, 10438, 10439, 4299, 1236, 4714, 4509, 2]
 // Exports: default
 
-// Module 10432 (GiftCodeRedeemError)
+// Module 10437 (GiftCodeRedeemError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,14 +30,14 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/native/
 
 export default function GiftCodeRedeemError(children) {
   const tmp = createCacheKey();
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   const theme = obj.useTheme();
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(10433);
+    let tmp9Result = tmp9(10438);
   } else {
-    tmp9Result = tmp9(10434);
+    tmp9Result = tmp9(10439);
   }
   const items = [closure_6(closure_3, { source: tmp9Result }), , ];
   const obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };

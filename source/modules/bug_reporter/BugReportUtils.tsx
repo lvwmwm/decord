@@ -1,10 +1,10 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 9874
+// Function ID: 9875
 // Name: _fetchBugReportConfig
-// Dependencies: [5, 1302, 676, 530, 1236, 9870, 500, 5127, 503, 2]
+// Dependencies: [5, 1302, 676, 530, 1236, 9875, 500, 5127, 503, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 9869 (_fetchBugReportConfig)
+// Module 9874 (_fetchBugReportConfig)
 import _uploadDebugLogFiles from "_uploadDebugLogFiles";
 import handleThemeChange from "handleThemeChange";
 import ME from "ME";
@@ -157,7 +157,7 @@ function _submitReport() {
                 items.push(obj17);
               }
               let obj19 = dependencyMap;
-              let obj18 = lib(9870);
+              let obj18 = lib(9875);
               let uploadDebugLogFiles = obj18.uploadDebugLogFiles;
               obj19 = lib(500);
               let BUG_REPORTS = outer1_5;

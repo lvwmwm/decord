@@ -1,9 +1,9 @@
-// Module ID: 1963
-// Function ID: 1964
+// Module ID: 1982
+// Function ID: 1983
 // Name: initialize
-// Dependencies: [1964, 1891, 676, 685, 11, 1969, 1384, 589, 1970, 709, 2]
+// Dependencies: [1983, 1910, 676, 685, 11, 1988, 1403, 589, 1989, 709, 2]
 
-// Module 1963 (initialize)
+// Module 1982 (initialize)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildSettingsSections } from "ME";
@@ -19,7 +19,7 @@ prototype["initialize"] = function initialize() {
   this.waitFor(createGuildRecordFromRust, createGuildRoleRecordFromRust);
 };
 prototype["hasViewingRoles"] = function hasViewingRoles() {
-  return !require(1970) /* areArraysShallowlyEqual */.isPlainObjectEmpty(closure_8);
+  return !require(1989) /* areArraysShallowlyEqual */.isPlainObjectEmpty(closure_8);
 };
 prototype["isViewingRoles"] = function isViewingRoles(guildId) {
   let tmp = null != guildId;
@@ -54,12 +54,12 @@ prototype["isFullServerPreview"] = function isFullServerPreview(closure_0) {
   if (dependencyMap[closure_0] != null) {
     type = tmp.type;
   }
-  return type === require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+  return type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
 };
 prototype["isOptInEnabled"] = function isOptInEnabled(arg0) {
   let optInEnabled = null != tmp;
   if (optInEnabled) {
-    optInEnabled = tmp.type === require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+    optInEnabled = tmp.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
   }
   if (optInEnabled) {
     optInEnabled = tmp.optInEnabled;
@@ -69,7 +69,7 @@ prototype["isOptInEnabled"] = function isOptInEnabled(arg0) {
 prototype["isOnboardingEnabled"] = function isOnboardingEnabled(id) {
   let onboardingEnabled = null != tmp;
   if (onboardingEnabled) {
-    onboardingEnabled = tmp.type === require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+    onboardingEnabled = tmp.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
   }
   if (onboardingEnabled) {
     onboardingEnabled = tmp.onboardingEnabled;
@@ -80,7 +80,7 @@ prototype["getViewingChannels"] = function getViewingChannels(id) {
   let optInChannels = null;
   if (null != dependencyMap[id]) {
     optInChannels = null;
-    if (tmp.type === require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER) {
+    if (tmp.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER) {
       optInChannels = tmp.optInChannels;
     }
   }
@@ -90,7 +90,7 @@ prototype["getOnboardingResponses"] = function getOnboardingResponses(arg0) {
   let onboardingResponses = null;
   if (null != dependencyMap[arg0]) {
     onboardingResponses = null;
-    if (tmp.type === require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER) {
+    if (tmp.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER) {
       onboardingResponses = tmp.onboardingResponses;
     }
   }
@@ -100,7 +100,7 @@ prototype["getMemberOptions"] = function getMemberOptions(guildId) {
   let memberOptions = null;
   if (null != dependencyMap[guildId]) {
     memberOptions = null;
-    if (tmp.type === require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER) {
+    if (tmp.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER) {
       memberOptions = tmp.memberOptions;
     }
   }
@@ -121,7 +121,7 @@ prototype["isViewingServerShop"] = function isViewingServerShop(id) {
     if (dependencyMap[id] != null) {
       type = tmp3.type;
     }
-    tmp = type === require(1969) /* ImpersonateType */.ImpersonateType.SERVER_SHOP;
+    tmp = type === require(1988) /* ImpersonateType */.ImpersonateType.SERVER_SHOP;
   }
   return tmp;
 };
@@ -143,9 +143,9 @@ prototype["getBackNavigationSection"] = function getBackNavigationSection(arg0) 
     return GuildSettingsSections.ROLES;
   } else {
     const type = tmp6.type;
-    if (require(1969) /* ImpersonateType */.ImpersonateType.ROLES !== type) {
-      if (tmp7(1969).ImpersonateType.SERVER_SHOP !== type) {
-        if (tmp7(1969).ImpersonateType.NEW_MEMBER === type) {
+    if (require(1988) /* ImpersonateType */.ImpersonateType.ROLES !== type) {
+      if (tmp7(1988).ImpersonateType.SERVER_SHOP !== type) {
+        if (tmp7(1988).ImpersonateType.NEW_MEMBER === type) {
           return GuildSettingsSections.ONBOARDING;
         } else {
           return GuildSettingsSections.ROLES;
@@ -195,7 +195,7 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
     if (null != guildId) {
       if (null != dependencyMap[guildId]) {
         if (null != dependencyMap[guildId]) {
-          if (tmp6.type === overrides(1969).ImpersonateType.NEW_MEMBER) {
+          if (tmp6.type === overrides(1988).ImpersonateType.NEW_MEMBER) {
             optInChannels = tmp6.optInChannels;
             if (optInChannels == null) {
               const _Set = Set;
@@ -231,7 +231,7 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
     if (null != guildId) {
       if (null != dependencyMap[guildId]) {
         if (null != dependencyMap[guildId]) {
-          if (tmp9.type === onboardingResponses(1969).ImpersonateType.NEW_MEMBER) {
+          if (tmp9.type === onboardingResponses(1988).ImpersonateType.NEW_MEMBER) {
             onboardingResponses = tmp9.onboardingResponses;
             if (onboardingResponses == null) {
               const _Set = Set;
@@ -279,7 +279,7 @@ const impersonateStore = new ImpersonateStore(require("dispatcher"), {
         }
         let tmp3 = null != flags;
         if (tmp3) {
-          tmp3 = tmp2.type === guildId(1969).ImpersonateType.NEW_MEMBER;
+          tmp3 = tmp2.type === guildId(1988).ImpersonateType.NEW_MEMBER;
         }
         flag = true;
         if (tmp3) {

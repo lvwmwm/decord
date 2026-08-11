@@ -1,6 +1,6 @@
 // Module ID: 5262
 // Function ID: 5263
-// Dependencies: [5, 4499, 676, 3941, 685, 709, 5257, 5259, 11, 4153, 1236, 1384, 530, 2]
+// Dependencies: [5, 4499, 676, 3960, 685, 709, 5257, 5259, 11, 1363, 1236, 1403, 530, 2]
 
 // Module 5262
 import dispatcher from "dispatcher";
@@ -65,7 +65,7 @@ export default {
     const result = obj1.saveUserGuildSettings(guildId, { channel_overrides: obj });
     obj = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId, channelId: id, settings: muteSettings };
     importDefault(709).dispatch(obj);
-    const AccessibilityAnnouncer = require(4153) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     const intl = require(1236) /* getSystemLocale */.intl;
     AccessibilityAnnouncer.announce(intl.string(require(1236) /* getSystemLocale */.t.MlIsJ8));
     const obj4 = importDefault(709);
@@ -102,7 +102,7 @@ export default {
     const result = obj1.saveUserGuildSettings(guildId, { channel_overrides: obj });
     obj = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId, channelId: id, settings: change };
     importDefault(709).dispatch(obj);
-    const AccessibilityAnnouncer = require(4153) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     const intl = require(1236) /* getSystemLocale */.intl;
     AccessibilityAnnouncer.announce(intl.string(require(1236) /* getSystemLocale */.t.MlIsJ8));
     const obj4 = importDefault(709);
@@ -153,7 +153,7 @@ export default {
               let closure_1 = tmp2;
               let c0 = tmp5;
               c0 = undefined;
-              const setFlagResult = outer1_0(1384).setFlag(outer1_4.accountNotificationSettings.flags, outer1_0, outer1_1);
+              const setFlagResult = outer1_0(1403).setFlag(outer1_4.accountNotificationSettings.flags, outer1_0, outer1_1);
               c0 = setFlagResult;
               const HTTP = outer1_0(530).HTTP;
               let obj1 = { url: null, body: null, rejectWithError: null };
@@ -161,7 +161,7 @@ export default {
               const obj2 = { flags: null };
               obj2[0] = setFlagResult;
               obj1[1] = obj2;
-              const obj10 = outer1_0(1384);
+              const obj10 = outer1_0(1403);
               obj1[2] = outer1_0(530).rejectWithMigratedError();
               dependencyMap = 1;
               c3 = 1;

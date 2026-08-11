@@ -1,10 +1,10 @@
-// Module ID: 1914
-// Function ID: 1915
+// Module ID: 1933
+// Function ID: 1934
 // Name: items
-// Dependencies: [32, 1915, 1916, 689, 688, 1917, 2]
+// Dependencies: [32, 1934, 1935, 689, 688, 1936, 2]
 // Exports: applyFlywheelViewingFallback, buildGummyColors, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, parseServerDisplayNameStyles, rebuildGummySourceColor, wrapHue
 
-// Module 1914 (items)
+// Module 1933 (items)
 import _slicedToArray from "_slicedToArray";
 import items3 from "items3";
 
@@ -19,11 +19,11 @@ let items = [{ hueShift: -18, saturation: 0.54, lightness: 0.72 }, { hueShift: -
 let result = require("DisplayNameEffect").fileFinishedImporting("modules/display_name_styles/DisplayNameStylesUtils.tsx");
 
 export const getEffectColorCount = function getEffectColorCount(effectId) {
-  if (require(1916) /* DisplayNameEffect */.DisplayNameEffect.GRADIENT === effectId) {
+  if (require(1935) /* DisplayNameEffect */.DisplayNameEffect.GRADIENT === effectId) {
     return 2;
-  } else if (tmp(1916).DisplayNameEffect.GUMMY === effectId) {
+  } else if (tmp(1935).DisplayNameEffect.GUMMY === effectId) {
     return 4;
-  } else if (tmp(1916).DisplayNameEffect.PRISM === effectId) {
+  } else if (tmp(1935).DisplayNameEffect.PRISM === effectId) {
     return 5;
   } else {
     return 1;
@@ -124,12 +124,12 @@ export const applyFlywheelViewingFallback = function applyFlywheelViewingFallbac
   if (!isDisplayNameStylesFlywheelViewersEnabled) {
     if (null != fontId) {
       if (closure_7.includes(fontId.fontId)) {
-        fontId = require(1917) /* DisplayNameFont */.DisplayNameFont.DEFAULT;
+        fontId = require(1936) /* DisplayNameFont */.DisplayNameFont.DEFAULT;
       } else {
         fontId = fontId.fontId;
       }
       if (closure_6.includes(fontId.effectId)) {
-        let effectId = require(1916) /* DisplayNameEffect */.DisplayNameEffect.SOLID;
+        let effectId = require(1935) /* DisplayNameEffect */.DisplayNameEffect.SOLID;
       } else {
         effectId = fontId.effectId;
       }

@@ -1,7 +1,7 @@
 // Module ID: 4508
 // Function ID: 4509
 // Name: transitionToStream
-// Dependencies: [1372, 4271, 4509, 4513, 2]
+// Dependencies: [1391, 4271, 4509, 4513, 2]
 // Exports: default
 
 // Module 4508 (transitionToStream)

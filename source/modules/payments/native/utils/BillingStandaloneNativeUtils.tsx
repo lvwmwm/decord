@@ -1,10 +1,10 @@
-// Module ID: 6867
-// Function ID: 6868
+// Module ID: 6869
+// Function ID: 6870
 // Name: emitMWRCSentryErrorOnFailure
-// Dependencies: [4286, 676, 3, 6868, 6869, 1605, 691, 3998, 2]
+// Dependencies: [4286, 676, 3, 6870, 6871, 1624, 691, 4017, 2]
 // Exports: goToStandaloneGuildBoostCheckoutFromMobileApp, goToStandaloneNitroManagementFromMobileApp, goToStandalonePremiumCheckoutFromMobileApp
 
-// Module 6867 (emitMWRCSentryErrorOnFailure)
+// Module 6869 (emitMWRCSentryErrorOnFailure)
 import { CustomCheckoutFlow } from "CustomCheckoutFlow";
 import { Routes } from "ME";
 
@@ -16,7 +16,7 @@ function emitMWRCSentryErrorOnFailure(arg0, source, load_id) {
   try {
     const _HermesInternal = HermesInternal;
     tmp2.error("Failed to open mobile web popout to " + tmp5 + ", error response: ", tmp4);
-    let obj1 = require(6868) /* MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG */;
+    let obj1 = require(6870) /* MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG */;
     const _Error = Error;
     const error = new Error("Mobile web redirect checkout mobile app to web popout failed");
     obj = { extra: null };
@@ -30,8 +30,8 @@ function emitMWRCSentryErrorOnFailure(arg0, source, load_id) {
     const error1 = new Error("Mobile web redirect checkout mobile app to web popout failed");
     obj1 = { extra: null };
     obj1[0] = tmp3;
-    const result1 = require(6868) /* MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG */.captureMobileWebRedirectCheckoutSentryError(error1, tmp2, obj1);
-    const obj5 = require(6868) /* MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG */;
+    const result1 = require(6870) /* MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG */.captureMobileWebRedirectCheckoutSentryError(error1, tmp2, obj1);
+    const obj5 = require(6870) /* MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG */;
   }
 }
 let c5 = new require("MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG")("BillingStandaloneNativeUtils");
@@ -43,9 +43,9 @@ export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalon
   let closure_1 = arg1;
   const dependencyMap = arg2;
   const CustomCheckoutFlow = arg3;
-  let obj = _require(6869);
+  let obj = _require(6871);
   obj = {};
-  const obj2 = _require(1605);
+  const obj2 = _require(1624);
   const tmp = _require;
   const merged = Object.assign(arg1);
   if (isMetaQuestResult) {
@@ -58,7 +58,7 @@ export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalon
   return obj.goToStandalonePremiumCheckout(tmp5, (body, searchParams) => {
     searchParams = searchParams.searchParams;
     searchParams.append("handoff_token", body.body.handoff_token);
-    lib(3998).openURLExternally(searchParams.href);
+    lib(4017).openURLExternally(searchParams.href);
     dependencyMap(body, searchParams);
   }, () => {
     const items = [...arguments];
@@ -71,7 +71,7 @@ export const goToStandaloneNitroManagementFromMobileApp = function goToStandalon
   loadId = loadId.loadId;
   const dependencyMap = arg2;
   const CustomCheckoutFlow = arg3;
-  const obj = _require(6869);
+  const obj = _require(6871);
   const tmp = _require;
   if (obj2.isMetaQuest()) {
     let result = obj3.BILLING_MANAGE_SUBSCRIPTION_WITH_FLOW_TYPE(CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT, loadId);
@@ -81,7 +81,7 @@ export const goToStandaloneNitroManagementFromMobileApp = function goToStandalon
   return obj.goToBillingStandalonePageWithHandoff(result, (body, searchParams) => {
     searchParams = searchParams.searchParams;
     searchParams.append("handoff_token", body.body.handoff_token);
-    loadId(3998).openURLExternally(searchParams.href);
+    loadId(4017).openURLExternally(searchParams.href);
     dependencyMap(body, searchParams);
   }, () => {
     const items = [...arguments];
@@ -98,16 +98,16 @@ export const goToStandaloneGuildBoostCheckoutFromMobileApp = function goToStanda
   if (!obj.isMetaQuest()) {
     prop = tmp(691).LinkingTypes.MOBILE_WEB_REDIRECT_CHECKOUT;
   }
-  let tmpResult = tmp(1605);
+  let tmpResult = tmp(1624);
   let prop1;
   if (tmpResult.isMetaQuest()) {
     prop1 = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
   }
-  tmpResult = tmp(6869);
+  tmpResult = tmp(6871);
   return tmpResult.goToBillingStandalonePageWithHandoff(Routes.BILLING_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE(closure_1, prop, newAnalyticsLoadId, prop1), (body, searchParams) => {
     searchParams = searchParams.searchParams;
     searchParams.append("handoff_token", body.body.handoff_token);
-    newAnalyticsLoadId(3998).openURLExternally(searchParams.href);
+    newAnalyticsLoadId(4017).openURLExternally(searchParams.href);
     dependencyMap(body, searchParams);
   }, () => {
     const items = [...arguments];

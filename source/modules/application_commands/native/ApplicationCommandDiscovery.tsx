@@ -1,10 +1,10 @@
-// Module ID: 11766
-// Function ID: 11767
+// Module ID: 11769
+// Function ID: 11770
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 4737, 11767, 9917, 676, 21, 11768, 4303, 712, 4720, 11769, 9537, 1935, 8347, 4014, 1236, 4498, 12, 11770, 6982, 11771, 11772, 1297, 9988, 2]
+// Dependencies: [32, 19, 17, 4737, 11770, 9922, 676, 21, 11771, 4303, 712, 4720, 11772, 9543, 1954, 8352, 1351, 1236, 4498, 12, 11773, 6985, 11774, 11775, 1297, 9993, 2]
 // Exports: default
 
-// Module 11766 (ApplicationCommandDiscovery)
+// Module 11769 (ApplicationCommandDiscovery)
 import _slicedToArray from "_slicedToArray";
 import apply from "apply";
 import get_ActivityIndicator from "getSystemLocale";
@@ -74,14 +74,14 @@ export default function ApplicationCommandDiscovery(channel) {
   first = tmp4[0];
   c7 = tmp6;
   closure_8 = ref.useRef(false);
-  let obj2 = require(11769) /* useCommandDiscoveryManager */;
+  let obj2 = require(11772) /* useCommandDiscoveryManager */;
   commandDiscoveryManager = obj2.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let obj3 = channel(9537);
+  let obj3 = channel(9543);
   obj = { context: { channel, type: "channel" }, filters: null, options: null, allowFetch: true };
   obj = { commandTypes: null, builtIns: null, applicationCommands: null };
-  let items = [require(1935) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
+  let items = [require(1954) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
   obj[0] = items;
-  const BuiltInCommandFilter = require(8347) /* ScoreMethod */.BuiltInCommandFilter;
+  const BuiltInCommandFilter = require(8352) /* ScoreMethod */.BuiltInCommandFilter;
   obj[1] = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
   obj[2] = !canOnlyUseTextCommands;
   obj[1] = obj;

@@ -1,14 +1,14 @@
-// Module ID: 7041
-// Function ID: 7042
+// Module ID: 7044
+// Function ID: 7045
 // Name: fromServer
-// Dependencies: [7032, 2]
+// Dependencies: [7035, 2]
 
-// Module 7041 (fromServer)
+// Module 7044 (fromServer)
 let prototype;
 prototype = function ShelfBlockRecord(show_button) {
   let category_sku_id;
   const obj = Object.create(new.target.prototype);
-  obj.type = require(7032) /* ShopBlockType */.ShopBlockType.SHELF;
+  obj.type = require(7035) /* ShopBlockType */.ShopBlockType.SHELF;
   ({ name: tmp.name, ranked_sku_ids: tmp.rankedSkuIds, category_sku_id } = show_button);
   if (category_sku_id == null) {
     category_sku_id = null;
@@ -43,7 +43,7 @@ prototype["fromServer"] = function fromServer(show_button) {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(7032) /* ShopBlockType */.ShopBlockType.SHELF;
+  obj.type = require(7035) /* ShopBlockType */.ShopBlockType.SHELF;
   ({ name: tmp2.name, ranked_sku_ids: tmp2.rankedSkuIds, category_sku_id } = show_button);
   if (category_sku_id == null) {
     category_sku_id = null;

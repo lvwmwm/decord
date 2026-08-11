@@ -1,7 +1,7 @@
 // Module ID: 5843
 // Function ID: 5844
 // Name: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID
-// Dependencies: [1376, 676, 2]
+// Dependencies: [1395, 676, 2]
 
 // Module 5843 (FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID)
 const obj = { id: "131", type: null, name: "Placeholder Channel" };

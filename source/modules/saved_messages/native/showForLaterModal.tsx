@@ -1,14 +1,16 @@
-// Module ID: 8379
-// Function ID: 8380
+// Module ID: 8384
+// Function ID: 8385
 // Name: showForLaterModal
-// Dependencies: [4509, 8380, 1988, 2]
+// Dependencies: [8385, 8386, 4509, 8387, 2007, 2]
 // Exports: showForLaterModal
 
-// Module 8379 (showForLaterModal)
-const result = require("asyncRequireImpl").fileFinishedImporting("modules/saved_messages/native/showForLaterModal.tsx");
+// Module 8384 (showForLaterModal)
+const result = require("module_4509").fileFinishedImporting("modules/saved_messages/native/showForLaterModal.tsx");
 
 export const showForLaterModal = function showForLaterModal(BOOKMARK) {
-  let obj = importDefault(4509);
-  obj = { type: BOOKMARK };
-  obj.pushLazy(require(1988) /* asyncRequireImpl */(8380, dependencyMap.paths), obj, "for-later-modal", { presentation: "modal" });
+  if (BOOKMARK === require(8385) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
+    tmp(8386).markRemindersSeen();
+    const tmpResult = tmp(8386);
+  }
+  importDefault(4509).pushLazy(require(2007) /* asyncRequireImpl */(8387, dependencyMap.paths), { type: BOOKMARK }, "for-later-modal", { presentation: "modal" });
 };

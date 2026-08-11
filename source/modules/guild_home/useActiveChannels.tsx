@@ -1,10 +1,10 @@
-// Module ID: 15200
-// Function ID: 15201
+// Module ID: 15209
+// Function ID: 15210
 // Name: getActiveTextChannels
-// Dependencies: [1376, 1372, 3929, 4499, 12970, 676, 1379, 1351, 2]
+// Dependencies: [1395, 1391, 3948, 4499, 12974, 676, 1398, 1370, 2]
 // Exports: getActiveTextChannels
 
-// Module 15200 (getActiveTextChannels)
+// Module 15209 (getActiveTextChannels)
 import { isTextChannel } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -34,7 +34,7 @@ export const getActiveTextChannels = function getActiveTextChannels(guildId) {
   }
   mutedChannels = obj2.getMutedChannels(guildId);
   const mapped = items.map((arg0) => store.getChannel(arg0));
-  const found = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+  const found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
   return found.filter((hasFlag) => {
     let hasFlagResult;
     if (hasFlag != null) {

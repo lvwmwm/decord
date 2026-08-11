@@ -1,10 +1,10 @@
-// Module ID: 14084
-// Function ID: 14085
+// Module ID: 14092
+// Function ID: 14093
 // Name: mapColorToHighlightColor
-// Dependencies: [676, 3976, 711, 14085, 1236, 1306, 2]
+// Dependencies: [676, 3995, 711, 14093, 1236, 1306, 2]
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 14084 (mapColorToHighlightColor)
+// Module 14092 (mapColorToHighlightColor)
 import ME from "ME";
 import { ExplicitContentFilterTypes as closure_5 } from "items";
 
@@ -13,23 +13,23 @@ let c4;
 let obj1;
 function mapColorToHighlightColor(arg0) {
   if (obj.unsafe_getRawColor("PRIMARY_400") === arg0) {
-    return tmp(14085).HighlightColors.ACCENT;
+    return tmp(14093).HighlightColors.ACCENT;
   } else {
     let tmpResult = tmp(711);
     if (tmpResult.unsafe_getRawColor("GREEN_360") === arg0) {
-      return tmp(14085).HighlightColors.GREEN;
+      return tmp(14093).HighlightColors.GREEN;
     } else {
       tmpResult = tmp(711);
       if (tmpResult.unsafe_getRawColor("YELLOW_360") === arg0) {
-        return tmp(14085).HighlightColors.YELLOW;
+        return tmp(14093).HighlightColors.YELLOW;
       } else {
         if (tmpResult1.unsafe_getRawColor("ORANGE_345") === arg0) {
-          return tmp(14085).HighlightColors.ORANGE;
+          return tmp(14093).HighlightColors.ORANGE;
         } else {
           if (tmpResult2.unsafe_getRawColor("RED_400") === arg0) {
-            return tmp(14085).HighlightColors.RED;
+            return tmp(14093).HighlightColors.RED;
           } else {
-            return tmp(14085).HighlightColors.NONE;
+            return tmp(14093).HighlightColors.NONE;
           }
           tmpResult2 = tmp(711);
         }

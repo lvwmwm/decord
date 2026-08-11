@@ -1,14 +1,14 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 9824
+// Function ID: 9825
 // Name: MuteSettings
-// Dependencies: [19, 1372, 1891, 3938, 1903, 676, 21, 4299, 1236, 9820, 4271, 5767, 5374, 1297, 9822, 4494, 9823, 5764, 5396, 2]
+// Dependencies: [19, 1391, 1910, 3957, 1922, 676, 21, 4299, 1236, 9825, 4271, 5767, 5374, 1297, 9827, 4494, 9828, 5764, 5396, 2]
 // Exports: MuteSettingsHint, default
 
-// Module 9819 (MuteSettings)
+// Module 9824 (MuteSettings)
 import set from "set";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserNotificationSettings } from "ME";
 import jsxProd from "jsxProd";
@@ -61,7 +61,7 @@ export default function MuteSettings(guildId) {
       const intl = guildId(onOptionPress[8]).intl;
       const obj2 = { name: null };
       const obj8 = guildId(onOptionPress[15]);
-      obj2[0] = obj8.computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true);
+      obj2[0] = obj8.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true);
       obj[1] = intl.format(guildId(onOptionPress[8]).t["eC+9rj"], obj2);
       obj[2] = callback;
       obj[1] = callback(guildId(onOptionPress[12]).TableRow, obj);

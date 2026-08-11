@@ -1,10 +1,10 @@
-// Module ID: 9642
-// Function ID: 9643
+// Module ID: 9647
+// Function ID: 9648
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [19, 21, 1236, 9643, 9644, 9646, 2]
+// Dependencies: [19, 21, 1236, 9648, 9649, 9651, 2]
 // Exports: default
 
-// Module 9642 (ApplicationStreamActivityStatus)
+// Module 9647 (ApplicationStreamActivityStatus)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -61,10 +61,10 @@ export default function ApplicationStreamActivityStatus(hideText) {
   let tmp12 = !hideIcon;
   if (!hideIcon) {
     obj = { icon: null, style: null };
-    obj[0] = tmp7(9644).TvIcon;
+    obj[0] = tmp7(9649).TvIcon;
     obj[1] = iconStyle;
-    tmp12 = callback(importDefault(9643), obj);
-    const tmp15 = importDefault(9643);
+    tmp12 = callback(importDefault(9648), obj);
+    const tmp15 = importDefault(9648);
   }
   const children = [tmp12, ];
   let tmp16 = !flag;
@@ -73,7 +73,7 @@ export default function ApplicationStreamActivityStatus(hideText) {
     obj[0] = textStyle;
     obj[1] = maxFontSizeMultiplier;
     obj[2] = formatResult;
-    tmp16 = callback(importDefault(9646), obj);
+    tmp16 = callback(importDefault(9651), obj);
   }
   children[1] = tmp16;
   return closure_5(closure_4, { children });

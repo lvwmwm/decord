@@ -1,9 +1,9 @@
-// Module ID: 1905
-// Function ID: 1906
+// Module ID: 1924
+// Function ID: 1925
 // Name: GuildFeatures
-// Dependencies: [676, 1906, 1236, 1907, 679, 2, 1908]
+// Dependencies: [676, 1925, 1236, 1926, 679, 2, 1927]
 
-// Module 1905 (GuildFeatures)
+// Module 1924 (GuildFeatures)
 import ME from "ME";
 import set from "getSystemLocale";
 

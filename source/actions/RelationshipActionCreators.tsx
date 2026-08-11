@@ -1,9 +1,9 @@
-// Module ID: 9243
-// Function ID: 9244
+// Module ID: 9249
+// Function ID: 9250
 // Name: handleRelationshipAddError
-// Dependencies: [32, 1903, 676, 9244, 5339, 4642, 5234, 1236, 9245, 9246, 9247, 530, 4146, 4153, 709, 9248, 7784, 2]
+// Dependencies: [32, 1922, 676, 9250, 5339, 4642, 5234, 1236, 9251, 9252, 9253, 530, 4148, 1363, 709, 9254, 7786, 2]
 
-// Module 9243 (handleRelationshipAddError)
+// Module 9249 (handleRelationshipAddError)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -63,7 +63,7 @@ function handleRelationshipAddError(arg0, arg1, substr) {
         if (num !== tmp2.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
           if (arg1 === obj.SHOW_ALWAYS) {
             if (null != substr) {
-              let tmp18Result = tmp18(9247);
+              let tmp18Result = tmp18(9253);
               if (!num) {
                 num = 0;
               }
@@ -85,7 +85,7 @@ function handleRelationshipAddError(arg0, arg1, substr) {
           }
         }
       }
-      obj9 = require(9246) /* isLimitedAccessErrorCode */;
+      obj9 = require(9252) /* isLimitedAccessErrorCode */;
     }
   }
   throw arg0;
@@ -155,21 +155,21 @@ obj = {
   },
   acceptFriendRequest(arg0) {
     return obj.addRelationship(arg0, () => {
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t["3goNa5"]));
     });
   },
   cancelFriendRequest(arg0, arg1) {
     return obj.removeRelationship(arg0, arg1, () => {
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.pLUaxR));
     });
   },
   removeFriend(arg0, arg1) {
     obj.removeRelationship(arg0, arg1, () => {
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.vGSLa2));
     });
@@ -177,14 +177,14 @@ obj = {
   blockUser(userId, context) {
     const obj = { userId, context, type: constants2.BLOCKED };
     return obj.addRelationship(obj, () => {
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.mU0Vrp));
     });
   },
   unblockUser(id, arg1) {
     return obj.removeRelationship(id, arg1, () => {
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t["9t1au7"]));
     });
@@ -201,7 +201,7 @@ obj = {
         tmp();
       }
     }).catch(() => {
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
     });
@@ -223,7 +223,7 @@ obj = {
     }, () => callback(709).dispatch({ type: "LOAD_RELATIONSHIPS_FAILURE" }));
   },
   confirmClearPendingRelationships(arg0) {
-    importDefault(9248)(arg0);
+    importDefault(9254)(arg0);
   },
   clearPendingRelationships() {
     const HTTP = require(530) /* sendRequest */.HTTP;
@@ -235,7 +235,7 @@ obj = {
     return HTTP.del(obj).then(() => {
       callback2(709).dispatch({ type: "RELATIONSHIP_PENDING_INCOMING_REMOVED" });
     }).catch(() => {
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
     });
@@ -252,7 +252,7 @@ obj = {
     return HTTP.del(obj).then(() => {
       callback2(709).dispatch({ type: "RELATIONSHIP_PENDING_INCOMING_REMOVED" });
     }).catch(() => {
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
     });
@@ -275,8 +275,8 @@ obj = {
       obj = { type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId: callback, timestamp: Date.now() };
       channelId(outer1_3[14]).dispatch(obj);
     }).catch(() => {
-      channelId(7784).showFailedToast();
-      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+      channelId(7786).showFailedToast();
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
     });
@@ -296,8 +296,8 @@ obj = {
       const intl = id(outer1_3[7]).intl;
       AccessibilityAnnouncer.announce(intl.string(id(outer1_3[7]).t.QlH5w6));
     }).catch(() => {
-      id2(7784).showFailedToast();
-      const AccessibilityAnnouncer = id(4153).AccessibilityAnnouncer;
+      id2(7786).showFailedToast();
+      const AccessibilityAnnouncer = id(1363).AccessibilityAnnouncer;
       const intl = id(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(id(1236).t.n6Jo3E));
     });

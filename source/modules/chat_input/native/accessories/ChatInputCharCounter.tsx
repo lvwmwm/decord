@@ -1,9 +1,9 @@
-// Module ID: 11792
-// Function ID: 11793
+// Module ID: 11795
+// Function ID: 11796
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1903, 676, 1905, 21, 4303, 589, 3947, 8353, 8362, 4002, 1236, 4846, 4299, 7704, 2]
+// Dependencies: [32, 19, 1922, 676, 1924, 21, 4303, 589, 3966, 8358, 8367, 4021, 1236, 4846, 4299, 7706, 2]
 
-// Module 11792 (ChatInputCharCounter)
+// Module 11795 (ChatInputCharCounter)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -30,7 +30,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
   stateFromStores = obj.useStateFromStores(items, () => stateFromStores(_undefined[8]).canUseIncreasedMessageLength(currentUser.getCurrentUser()));
   const tmp = callback4();
   [tmp6, c2] = callback(importAllResult.useState(0), 2);
-  const tmp7 = stateFromStores(8353)();
+  const tmp7 = stateFromStores(8358)();
   callback = tmp7;
   const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({
     onMessageLengthChanged(length) {
@@ -46,7 +46,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
     obj = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xs/medium", children: null };
     const _HermesInternal = HermesInternal;
     obj[3] = "-" + tmp6;
-    const items2 = [callback2(tmp2(4299).Text, obj), callback2(tmp2(7704).NitroWheelIcon, { size: "sm" })];
+    const items2 = [callback2(tmp2(4299).Text, obj), callback2(tmp2(7706).NitroWheelIcon, { size: "sm" })];
     obj[2] = items2;
     tmp10 = callback3(tmp2(4846).PressableOpacity, obj);
   }

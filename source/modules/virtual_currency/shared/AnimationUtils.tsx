@@ -1,10 +1,10 @@
-// Module ID: 10149
-// Function ID: 10150
+// Module ID: 10154
+// Function ID: 10155
 // Name: EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS
 // Dependencies: [2]
 // Exports: getDesiredAnimationConfigs
 
-// Module 10149 (EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS)
+// Module 10154 (EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS)
 let obj = { EARN: 0.25, SPEND: 0.3 };
 let result = require("set").fileFinishedImporting("modules/virtual_currency/shared/AnimationUtils.tsx");
 

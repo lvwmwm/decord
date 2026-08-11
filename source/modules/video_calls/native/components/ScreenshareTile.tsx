@@ -1,10 +1,10 @@
-// Module ID: 10680
-// Function ID: 10681
+// Module ID: 10685
+// Function ID: 10686
 // Name: ScreenShareTile
-// Dependencies: [19, 17, 676, 21, 4303, 712, 10681, 5427, 1297, 10682, 4299, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 10686, 5427, 1297, 10687, 4299, 1236, 2]
 // Exports: default
 
-// Module 10680 (ScreenShareTile)
+// Module 10685 (ScreenShareTile)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NOOP } from "ME";
@@ -37,13 +37,13 @@ export default function ScreenShareTile(onSingleTap) {
     onDoubleTap = NOOP;
   }
   const tmp = createCacheKey();
-  let obj = { gesture: importDefault(10681)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: null };
+  let obj = { gesture: importDefault(10686)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: null };
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.liveContainer, children: null };
   obj[1] = callback(require(1297) /* Button */.LiveTag, {});
   const items = [callback(closure_3, obj), , ];
-  const tmp2 = importDefault(10681)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
-  items[1] = callback(closure_4, { source: importDefault(10682), style: tmp.image, resizeMode: "contain" });
+  const tmp2 = importDefault(10686)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
+  items[1] = callback(closure_4, { source: importDefault(10687), style: tmp.image, resizeMode: "contain" });
   const obj2 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.G84gtR);

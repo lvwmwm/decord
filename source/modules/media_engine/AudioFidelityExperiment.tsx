@@ -1,10 +1,10 @@
-// Module ID: 13111
-// Function ID: 13112
+// Module ID: 13120
+// Function ID: 13121
 // Name: getAudioFidelityExperimentConfig
-// Dependencies: [1452, 1351, 2]
+// Dependencies: [1471, 1370, 2]
 // Exports: getAudioFidelityExperimentConfig, getVoiceFidelityCaps
 
-// Module 13111 (getAudioFidelityExperimentConfig)
+// Module 13120 (getAudioFidelityExperimentConfig)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { 1: null, 2: { capSampleRate: true, capChannelCount: false, condition: "krisp" }, 3: { capSampleRate: true, capChannelCount: false, condition: "noiseSuppression" }, 4: { capSampleRate: true, capChannelCount: false, condition: "echoCancellation" }, 5: { capSampleRate: true, capChannelCount: false, condition: "any" }, 6: { capSampleRate: true, capChannelCount: true, condition: "krisp" }, 7: { capSampleRate: true, capChannelCount: true, condition: "noiseSuppression" }, 8: { capSampleRate: true, capChannelCount: true, condition: "echoCancellation" } };
@@ -40,8 +40,8 @@ export const getVoiceFidelityCaps = function getVoiceFidelityCaps(location, kris
     } else {
       flag = false;
       if ("none" !== condition) {
-        require(1351) /* isDiscordFrontendDevelopment */.assertNever(condition);
-        const obj2 = require(1351) /* isDiscordFrontendDevelopment */;
+        require(1370) /* isDiscordFrontendDevelopment */.assertNever(condition);
+        const obj2 = require(1370) /* isDiscordFrontendDevelopment */;
       }
     }
     if (flag) {

@@ -1,14 +1,14 @@
-// Module ID: 4039
-// Function ID: 4040
+// Module ID: 4045
+// Function ID: 4046
 // Name: isFabric
-// Dependencies: [4040, 500, 2]
+// Dependencies: [4046, 500, 2]
 // Exports: isFabric, isIosFabric
 
-// Module 4039 (isFabric)
+// Module 4045 (isFabric)
 const result = require("set").fileFinishedImporting("utils/native/FabricUtils.tsx");
 
 export const isFabric = function isFabric() {
-  const obj = importDefault(4040);
+  const obj = importDefault(4046);
   let flag;
   if (obj != null) {
     flag = obj.isFabric();
@@ -21,7 +21,7 @@ export const isFabric = function isFabric() {
 export const isIosFabric = function isIosFabric() {
   let isIOSResult = require(500) /* set */.isIOS();
   if (isIOSResult) {
-    const obj2 = importDefault(4040);
+    const obj2 = importDefault(4046);
     let flag;
     if (obj2 != null) {
       flag = obj2.isFabric();

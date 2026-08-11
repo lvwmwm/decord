@@ -1,10 +1,10 @@
-// Module ID: 13928
-// Function ID: 13929
+// Module ID: 13936
+// Function ID: 13937
 // Name: FormControlText
-// Dependencies: [32, 19, 17, 21, 4303, 712, 4299, 7704, 1297, 1236, 7791, 4846, 5381, 500, 5769, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 4299, 7706, 1297, 1236, 7793, 4846, 5381, 500, 5769, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 13928 (FormControlText)
+// Module 13936 (FormControlText)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -59,7 +59,7 @@ export const UserProfileEditFormLabelBadges = function UserProfileEditFormLabelB
     obj[0] = tmp.labelTrailing;
     let tmp5 = null;
     if (flag) {
-      tmp5 = callback2(require(7704) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs" });
+      tmp5 = callback2(require(7706) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs" });
     }
     const items = [tmp5, ];
     let tmp9 = null;
@@ -138,7 +138,7 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   items[3] = tmp2Result;
   obj[8] = items;
   obj[2] = closure_7(require(4846) /* PressableBase */.PressableHighlight, obj);
-  return closure_6(require(7791) /* Input */.Input, obj);
+  return closure_6(require(7793) /* Input */.Input, obj);
 };
 export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0) {
   let accessibilityHint;
@@ -209,5 +209,5 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
   const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(require(5769) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   obj[8] = items1;
   obj[1] = closure_7(PressableHighlight, obj);
-  return closure_6(require(7791) /* Input */.Input, obj);
+  return closure_6(require(7793) /* Input */.Input, obj);
 };

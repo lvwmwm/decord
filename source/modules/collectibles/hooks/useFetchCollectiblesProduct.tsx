@@ -1,10 +1,10 @@
-// Module ID: 10114
-// Function ID: 10115
+// Module ID: 10119
+// Function ID: 10120
 // Name: useFetchCollectiblesProduct
-// Dependencies: [32, 19, 4349, 7001, 676, 647, 1930, 7000, 2]
+// Dependencies: [32, 19, 4349, 7004, 676, 647, 1949, 7003, 2]
 // Exports: useFetchCollectiblesProduct
 
-// Module 10114 (useFetchCollectiblesProduct)
+// Module 10119 (useFetchCollectiblesProduct)
 import _slicedToArray from "_slicedToArray";
 import { useEffect } from "noop";
 import addSku from "addSku";
@@ -48,7 +48,7 @@ export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(
     if (first != null) {
       type = first.type;
     }
-    tmp10 = type === tmp(1930).CollectiblesItemType.BUNDLE;
+    tmp10 = type === tmp(1949).CollectiblesItemType.BUNDLE;
   }
   if (tmp10) {
     tmp10 = 0 === first.items.length;

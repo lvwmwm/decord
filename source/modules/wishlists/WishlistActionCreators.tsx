@@ -1,9 +1,9 @@
-// Module ID: 9363
-// Function ID: 9364
+// Module ID: 9369
+// Function ID: 9370
 // Name: extraWishlistParams
-// Dependencies: [5, 7080, 1903, 3949, 5849, 9358, 676, 501, 1351, 709, 5852, 530, 9356, 1208, 4202, 698, 8309, 2]
+// Dependencies: [5, 7083, 1922, 3968, 5849, 9364, 676, 501, 1370, 709, 5852, 530, 9362, 1208, 4202, 698, 8314, 2]
 
-// Module 9363 (extraWishlistParams)
+// Module 9369 (extraWishlistParams)
 import fromServer from "fromServer";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -35,7 +35,7 @@ function extraWishlistParams() {
 function maybeDispatchAdditionalActions(wishlist_items) {
   wishlist_items = wishlist_items.wishlist_items;
   const mapped = wishlist_items.map((sku) => sku.sku);
-  const found = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+  const found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
   let obj = importDefault(709);
   obj.dispatch({ type: "SKUS_FETCH_SUCCESS", skus: found });
   const storefront_pricing = wishlist_items.storefront_pricing;

@@ -1,10 +1,10 @@
-// Module ID: 11691
-// Function ID: 11692
+// Module ID: 11694
+// Function ID: 11695
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4303, 11692, 1411, 11693, 11680, 11681, 4299, 1236, 11689, 2]
+// Dependencies: [5, 19, 17, 21, 4303, 11695, 1430, 11696, 11683, 11684, 4299, 1236, 11692, 2]
 // Exports: default
 
-// Module 11691 (GuildDirectoryCreateOrAddDescription)
+// Module 11694 (GuildDirectoryCreateOrAddDescription)
 import _createGuildFromTemplate from "_createGuildFromTemplate";
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -165,8 +165,8 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   const intl3 = directoryChannelId(1236).intl;
   obj3[1] = intl3.string(directoryChannelId(1236).t.H9jxS1);
   obj3[2] = directoryChannelId;
-  items1[1] = callback(importDefault(11689), obj3);
+  items1[1] = callback(importDefault(11692), obj3);
   obj[2] = items1;
   obj[0] = callback2(closure_5, obj);
-  return callback(directoryChannelId(11681).GuildDirectoryAddModalScreen, obj);
+  return callback(directoryChannelId(11684).GuildDirectoryAddModalScreen, obj);
 };

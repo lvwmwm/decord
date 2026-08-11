@@ -1,10 +1,10 @@
-// Module ID: 9870
-// Function ID: 9871
+// Module ID: 9875
+// Function ID: 9876
 // Name: _uploadDebugLogFiles
-// Dependencies: [5, 1372, 676, 3, 17, 4202, 9169, 9871, 7, 9872, 9874, 1898, 4165, 9875, 9876, 9877, 530, 2]
+// Dependencies: [5, 1391, 676, 3, 17, 4202, 9175, 9876, 7, 9877, 9879, 1917, 4165, 9880, 9881, 9882, 530, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 9870 (_uploadDebugLogFiles)
+// Module 9875 (_uploadDebugLogFiles)
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Endpoints } from "ME";
@@ -75,9 +75,9 @@ function _uploadDebugLogFiles() {
                 }
               })(closure_2);
             }
-            let obj4 = callback(9169);
+            let obj4 = callback(9175);
             const obj2 = { type: null, underlyingError: null, errorMessage: null };
-            obj2[0] = callback(9169).AVError.DEBUG_LOG_UPLOAD_FAILED;
+            obj2[0] = callback(9175).AVError.DEBUG_LOG_UPLOAD_FAILED;
             obj2[1] = closure_1;
             obj2[2] = outer1_2.message;
             obj4.reportAVError(obj2);
@@ -93,7 +93,7 @@ function _uploadDebugLogFiles() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(9871);
+              obj1 = callback(9876);
               c6 = 3;
               c7 = 1;
               obj4 = { value: null, done: false };

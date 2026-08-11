@@ -1,9 +1,9 @@
-// Module ID: 10696
-// Function ID: 10697
+// Module ID: 10701
+// Function ID: 10702
 // Name: map
-// Dependencies: [1218, 1372, 4395, 4375, 4319, 676, 3, 4379, 698, 2]
+// Dependencies: [1218, 1391, 4395, 4375, 4319, 676, 3, 4379, 698, 2]
 
-// Module 10696 (map)
+// Module 10701 (map)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionInfoChange from "handleConnectionInfoChange";

@@ -1,9 +1,9 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 9218
+// Function ID: 9219
 // Name: savePersistentCodesEnabled
-// Dependencies: [5, 1218, 1372, 4319, 9211, 676, 709, 9209, 4202, 4642, 1236, 9213, 5129, 2]
+// Dependencies: [5, 1218, 1391, 4319, 9217, 676, 709, 9215, 4202, 4642, 1236, 9219, 5129, 2]
 
-// Module 9212 (savePersistentCodesEnabled)
+// Module 9218 (savePersistentCodesEnabled)
 import ME from "ME";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -191,7 +191,7 @@ function _updatePersistentCodesEnabled() {
               })();
               dependencyMap = tmp19;
               if (null != tmp19) {
-                let obj2 = v0(9213);
+                let obj2 = v0(9219);
                 const intl = callback(1236).intl;
                 const string = intl.string;
                 const t = callback(1236).t;

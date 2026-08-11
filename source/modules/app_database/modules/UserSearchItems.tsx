@@ -1,18 +1,18 @@
-// Module ID: 7118
-// Function ID: 7119
+// Module ID: 7119
+// Function ID: 7120
 // Name: getAll
-// Dependencies: [5, 7119, 7120, 3938, 1903, 676, 3, 1936, 7122, 2]
+// Dependencies: [5, 7120, 7121, 3957, 1922, 676, 3, 1955, 7123, 2]
 
-// Module 7118 (getAll)
+// Module 7119 (getAll)
 import ME from "ME";
 import recountRelationshipTypes from "recountRelationshipTypes";
 import recomputeAffinities from "recomputeAffinities";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { RelationshipTypes } from "ME";
 import set from "recomputeAffinities";
 
-let c9 = new require("upsertRelationship")("UserSearchItems");
+let c9 = new require("markAllUserIdListsStale")("UserSearchItems");
 let c10 = false;
 class UserSearchItems {
   constructor() {
@@ -129,7 +129,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
     if (null != user) {
       let tmp14 = obj;
       let tmp15 = dependencyMap;
-      let obj5 = obj(7122);
+      let obj5 = obj(7123);
       let tmp16 = user;
       let names = obj5.getNames(tmp6);
       let tmp18 = nextResult;
@@ -164,7 +164,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
     if (null != user1) {
       let tmp22 = obj;
       let tmp23 = dependencyMap;
-      let obj7 = obj(7122);
+      let obj7 = obj(7123);
       let tmp24 = user1;
       let names1 = obj7.getNames(tmp11);
       let tmp26 = item10033;
@@ -188,7 +188,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
     }
     continue;
   }
-  const result = importDefault(1936).userSearchItemsTransaction(database);
+  const result = importDefault(1955).userSearchItemsTransaction(database);
   result.delete();
   result.putAll(Object.values(obj));
 };

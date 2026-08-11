@@ -1,10 +1,10 @@
-// Module ID: 12725
-// Function ID: 12726
+// Module ID: 12729
+// Function ID: 12730
 // Name: SharedUser
-// Dependencies: [17, 676, 21, 4303, 712, 4146, 6916, 1297, 4299, 1236, 4714, 4800, 4271, 4313, 1974, 5397, 5396, 4712, 6027, 2]
+// Dependencies: [17, 676, 21, 4303, 712, 4148, 6919, 1297, 4299, 1236, 4714, 4800, 4271, 4313, 1993, 5397, 5396, 4712, 6029, 2]
 // Exports: default
 
-// Module 12725 (SharedUser)
+// Module 12729 (SharedUser)
 import { View } from "Stack";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -16,9 +16,9 @@ let error;
 function SharedUser(user) {
   user = user.user;
   const tmp = callback3();
-  let obj = importDefault(4146);
+  let obj = importDefault(4148);
   const name = obj.getName(user);
-  const tmp6 = user.trialCreationResult === user(6916).CreateReferralStatus.FAIL;
+  const tmp6 = user.trialCreationResult === user(6919).CreateReferralStatus.FAIL;
   obj = { style: tmp.recipientRow, children: null };
   const items = [tmp.avatarContainer, ];
   let erroredAvatar = tmp6;
@@ -99,13 +99,13 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   }
   const intl3 = tmp5(1236).intl;
   let obj = { helpdeskArticle: null };
-  let obj1 = importDefault(1974);
+  let obj1 = importDefault(1993);
   obj[0] = obj1.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
   obj = { startExpanded: true, contentStyles: tmp.content, header: null, children: null };
   obj[2] = callback(tmp5(5396).BottomSheetTitleHeader, { title: null });
   obj = { children: null };
   obj1 = { style: tmp.headerAsset, children: null };
-  obj1[1] = callback(tmp5(6027).FistBumpSpotIllustration, {});
+  obj1[1] = callback(tmp5(6029).FistBumpSpotIllustration, {});
   const items = [callback(View, obj1), callback(tmp5(4299).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult }), , ];
   const formatResult = intl3.format(tmp5(1236).t.AwGSWl, obj);
   const obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };

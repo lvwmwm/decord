@@ -1,9 +1,9 @@
-// Module ID: 8340
-// Function ID: 8341
+// Module ID: 8345
+// Function ID: 8346
 // Name: handleUserSettingsProtoStoreChange
-// Dependencies: [1371, 1340, 4329, 685, 1935, 4387, 12, 589, 709, 2]
+// Dependencies: [1390, 1340, 4329, 685, 1954, 4387, 12, 589, 709, 2]
 
-// Module 8340 (handleUserSettingsProtoStoreChange)
+// Module 8345 (handleUserSettingsProtoStoreChange)
 import participantFromServer from "participantFromServer";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { UserSettingsTypes } from "MAX_FAVORITES";

@@ -1,10 +1,10 @@
-// Module ID: 7000
-// Function ID: 7001
+// Module ID: 7003
+// Function ID: 7004
 // Name: openCollectiblesShop
-// Dependencies: [5, 4302, 1975, 7001, 7016, 7017, 7018, 7019, 7023, 7003, 7029, 7030, 678, 676, 7044, 7045, 4159, 709, 7046, 7047, 7049, 530, 4202, 5954, 7048, 7013, 7050, 7051, 2]
+// Dependencies: [5, 4302, 1994, 7004, 7019, 7020, 7021, 7022, 7026, 7006, 7032, 7033, 678, 676, 7047, 7048, 4159, 709, 7049, 7050, 7052, 530, 4202, 5956, 7051, 7016, 7053, 7054, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 7000 (openCollectiblesShop)
+// Module 7003 (openCollectiblesShop)
 import map from "map";
 import getUserAgnosticState from "getUserAgnosticState";
 import _getSystemLocale from "_getSystemLocale";
@@ -68,7 +68,7 @@ function openCollectiblesShopMobile(screen) {
 function closeCollectiblesShop() {
   importDefault(709).dispatch({ type: "COLLECTIBLES_SHOP_CLOSE" });
   const obj = importDefault(709);
-  require(7046) /* pushLayer */.popLayer();
+  require(7049) /* pushLayer */.popLayer();
 }
 function _fetchCollectiblesCategories() {
   const self = this;
@@ -689,7 +689,7 @@ function _validateCollectiblesRecipient() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5954);
+            obj2 = callback(5956);
             const aPIError = new callback(4202).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
@@ -785,7 +785,7 @@ function _validateCollectiblesRecipientsBatch() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5954);
+            obj2 = callback(5956);
             const aPIError = new callback(4202).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
@@ -1421,7 +1421,7 @@ export const maybeFetchCollectiblesProduct = function maybeFetchCollectiblesProd
 };
 export const seedCollectiblesProductFromStandaloneLoad = function seedCollectiblesProductFromStandaloneLoad(memo) {
   const timestamp = Date.now();
-  let obj = require(7013) /* getItemRecordsFromPurchases */;
+  let obj = require(7016) /* getItemRecordsFromPurchases */;
   const items = [memo];
   const result = obj.extendVariantsProducts(items);
   const iter = result[Symbol.iterator]();

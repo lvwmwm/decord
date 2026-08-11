@@ -1,10 +1,10 @@
-// Module ID: 9999
-// Function ID: 10000
+// Module ID: 10004
+// Function ID: 10005
 // Name: resolvePlaintextInlineVoid
-// Dependencies: [32, 5176, 5223, 1372, 1961, 1971, 1964, 1891, 3929, 3938, 1903, 676, 1906, 7145, 4494, 11, 5159, 3942, 3946, 2]
+// Dependencies: [32, 5176, 5223, 1391, 1980, 1990, 1983, 1910, 3948, 3957, 1922, 676, 1925, 7146, 4494, 11, 5159, 3961, 3965, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 9999 (resolvePlaintextInlineVoid)
+// Module 10004 (resolvePlaintextInlineVoid)
 import _slicedToArray from "_slicedToArray";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import rebuild from "rebuild";
@@ -15,7 +15,7 @@ import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
 import { EmojiIntention } from "set";
@@ -115,7 +115,7 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
       return null;
     })(text, throwTypeErrorResult, id, tmp, tmp2);
   } else if (":" === first) {
-    const EMOJI_NAME_RE = importDefault(3942).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3961).EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(text);
     let tmp7 = null;
     if (null != match) {
@@ -149,7 +149,7 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
           const _HermesInternal = HermesInternal;
           const combined = ":" + obj2.name + ":";
         }
-        tmp4Result = importDefault(3946);
+        tmp4Result = importDefault(3965);
       }
     }
     return tmp7;
@@ -207,8 +207,8 @@ export const resolveApplicationCommandOption = function resolveApplicationComman
   const tmp = resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention);
   let voidToOptionValueResult = null;
   if (null != tmp) {
-    voidToOptionValueResult = require(7145) /* createEmptyState */.voidToOptionValue(tmp);
-    const obj = require(7145) /* createEmptyState */;
+    voidToOptionValueResult = require(7146) /* createEmptyState */.voidToOptionValue(tmp);
+    const obj = require(7146) /* createEmptyState */;
   }
   return voidToOptionValueResult;
 };

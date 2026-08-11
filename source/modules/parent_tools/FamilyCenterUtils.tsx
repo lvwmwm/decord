@@ -1,10 +1,10 @@
-// Module ID: 7052
-// Function ID: 7053
+// Module ID: 7055
+// Function ID: 7056
 // Name: getEmptyActivityFormatter
-// Dependencies: [6996, 6997, 1236, 2284, 3883, 6998, 2]
+// Dependencies: [6999, 7000, 1236, 2303, 3902, 7001, 2]
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 7052 (getEmptyActivityFormatter)
+// Module 7055 (getEmptyActivityFormatter)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import items from "items";
 
@@ -23,37 +23,37 @@ let result = require("getSystemLocale").fileFinishedImporting("modules/parent_to
 export const getEmptyActivityFormatter = function getEmptyActivityFormatter() {
   const obj = { today: null, yesterday: null, days: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(importDefault(2284).VjIAQQ);
+  obj[0] = intl.string(importDefault(2303).VjIAQQ);
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(importDefault(2284)["2a8xHY"]);
-  obj[2] = importDefault(2284).Xt6oND;
+  obj[1] = intl2.string(importDefault(2303)["2a8xHY"]);
+  obj[2] = importDefault(2303).Xt6oND;
   return obj;
 };
 export const getActivityWindowTimestampFormatter = function getActivityWindowTimestampFormatter(arg0) {
   const obj = { today: null, yesterday: null, days: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
-  const tmp4 = importDefault(2284);
+  const tmp4 = importDefault(2303);
   if (arg0) {
     obj[0] = string(tmp4["2AtcIs"]);
     const intl3 = tmp(1236).intl;
-    obj[1] = intl3.string(tmp3(2284).stOECr);
-    obj[2] = tmp3(2284).n8n5Ba;
+    obj[1] = intl3.string(tmp3(2303).stOECr);
+    obj[2] = tmp3(2303).n8n5Ba;
     let tmp5 = obj;
   } else {
     obj[0] = string(tmp4.g1ZX6m);
     const intl2 = tmp(1236).intl;
-    obj[1] = intl2.string(tmp3(2284).s3qSVt);
-    obj[2] = tmp3(2284).f1UJiC;
+    obj[1] = intl2.string(tmp3(2303).s3qSVt);
+    obj[2] = tmp3(2303).f1UJiC;
     tmp5 = obj;
   }
   return tmp5;
 };
 export const formatUserActivityTimestamp = function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
-  let obj = importDefault(3883)();
-  const diffResult = obj.diff(importDefault(3883)(time), "s");
+  let obj = importDefault(3902)();
+  const diffResult = obj.diff(importDefault(3902)(time), "s");
   const tmp3 = timestampFormatter();
-  importDefault(3883)(time).format("LL");
+  importDefault(3902)(time).format("LL");
   if (diffResult < c10) {
     let yesterday = tmp3.today;
   } else if (diffResult < c11) {
@@ -73,10 +73,10 @@ export const formatUserActivityTimestamp = function formatUserActivityTimestamp(
   return yesterday;
 };
 export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
-  let obj = importDefault(3883)();
-  const diffResult = obj.diff(importDefault(3883)(arg0), "s");
+  let obj = importDefault(3902)();
+  const diffResult = obj.diff(importDefault(3902)(arg0), "s");
   const tmp3 = SENT_TIMESTAMP_FORMATTER();
-  importDefault(3883)(arg0);
+  importDefault(3902)(arg0);
   if (diffResult < 60) {
     let yesterday = tmp3.seconds;
   } else if (diffResult < 3600) {
@@ -167,7 +167,7 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
   if (authStore.getAreLinkedUsersProcessed()) {
     return obj.getLinkedUsers();
   } else {
-    const linkedUsers = importDefault(6998).fetchLinkedUsers();
+    const linkedUsers = importDefault(7001).fetchLinkedUsers();
   }
   obj = authStore;
 };
@@ -197,7 +197,7 @@ export const getTopUserOrGuildDescription = function getTopUserOrGuildDescriptio
       const intl3 = require(1236) /* getSystemLocale */.intl;
       let obj = { callCount: null };
       obj[0] = call_count;
-      let formatToPlainStringResult = intl3.formatToPlainString(importDefault(2284)["L/Cj7S"], obj);
+      let formatToPlainStringResult = intl3.formatToPlainString(importDefault(2303)["L/Cj7S"], obj);
     }
     return formatToPlainStringResult;
   }
@@ -206,10 +206,10 @@ export const getTopUserOrGuildDescription = function getTopUserOrGuildDescriptio
       const intl2 = require(1236) /* getSystemLocale */.intl;
       obj = { messageCount: null };
       obj[0] = dms_sent;
-      formatToPlainStringResult = intl2.formatToPlainString(importDefault(2284)["6X1F0i"], obj);
+      formatToPlainStringResult = intl2.formatToPlainString(importDefault(2303)["6X1F0i"], obj);
     }
   }
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { messageCount: dms_sent, callCount: call_count };
-  formatToPlainStringResult = intl.formatToPlainString(importDefault(2284).IYqGMG, obj);
+  formatToPlainStringResult = intl.formatToPlainString(importDefault(2303).IYqGMG, obj);
 };

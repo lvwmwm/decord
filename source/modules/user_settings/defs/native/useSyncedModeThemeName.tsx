@@ -1,10 +1,10 @@
-// Module ID: 14540
-// Function ID: 14541
+// Module ID: 14548
+// Function ID: 14549
 // Name: useSyncedModeThemeName
-// Dependencies: [1302, 4120, 1348, 589, 4150, 1236, 2482, 2]
+// Dependencies: [1302, 1348, 1367, 589, 1347, 1236, 2501, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 14540 (useSyncedModeThemeName)
+// Module 14548 (useSyncedModeThemeName)
 import handleThemeChange from "handleThemeChange";
 import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "ThemeTypes";
 
@@ -13,7 +13,7 @@ const result = require("useIsMobileVisualRefreshExperimentEnabled").fileFinished
 
 export const useSyncedModeThemeName = function useSyncedModeThemeName(DARK) {
   const _require = DARK;
-  importDefault = importDefault(1348)("useSyncedModeThemeName");
+  importDefault = importDefault(1367)("useSyncedModeThemeName");
   const items = [handleThemeChange];
   return _require(589).useStateFromStores(items, () => {
     const syncedClientTheme = outer1_3.getSyncedClientTheme(DARK);

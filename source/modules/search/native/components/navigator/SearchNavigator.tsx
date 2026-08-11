@@ -1,8 +1,8 @@
-// Module ID: 15937
-// Function ID: 15938
-// Dependencies: [19, 17, 8396, 15726, 676, 21, 4303, 712, 8570, 5783, 11732, 1609, 15938, 8382, 15933, 15934, 2]
+// Module ID: 15954
+// Function ID: 15955
+// Dependencies: [19, 17, 8402, 15743, 676, 21, 4303, 712, 8576, 5783, 11735, 1628, 15955, 8388, 15950, 15951, 2]
 
-// Module 15937
+// Module 15954
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { SearchEntrypointAnalyticsLocations as closure_5 } from "SearchEntrypointAnalyticsLocations";
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo((route) => {
       obj.trackSearchClosed(obj);
     };
   }, items);
-  const rect = importDefault(1609)();
+  const rect = importDefault(1628)();
   obj = { style: items1, children: null };
   items1 = [callback3().container, { paddingLeft: rect.left, paddingRight: rect.right }];
   obj = { id: "search-navigator", screenOptions: null, children: null };
@@ -52,22 +52,22 @@ const memoResult = importAllResult.memo((route) => {
       name: SearchNavigatorScreens.SEARCH_TABS,
       options: { headerShown: false, fullScreenGestureEnabled: true },
       getComponent() {
-        return searchContext(15938).default;
+        return searchContext(15955).default;
       }
     }),
     callback(createNativeStackNavigator.Screen, {
       name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
       options(route) {
         route = route.route;
-        const obj = { headerShown: true, header: route(8382).renderHeader, headerLeft: null, headerTitle: null, fullScreenGestureEnabled: true };
-        obj[2] = route(8382).getRenderBackImage(route.navigation);
+        const obj = { headerShown: true, header: route(8388).renderHeader, headerLeft: null, headerTitle: null, fullScreenGestureEnabled: true };
+        obj[2] = route(8388).getRenderBackImage(route.navigation);
         obj[3] = function headerTitle() {
           return outer1_8(outer1_1(outer1_2[14]), { channelId: route.params.channelId });
         };
         return obj;
       },
       getComponent() {
-        return searchContext(15934).default;
+        return searchContext(15951).default;
       }
     })
   ];

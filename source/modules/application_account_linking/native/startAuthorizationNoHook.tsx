@@ -1,10 +1,10 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 11168
+// Function ID: 11169
 // Name: _startAuthorizationNoHook
-// Dependencies: [5, 676, 5733, 3998, 698, 2]
+// Dependencies: [5, 676, 5733, 4017, 698, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 11163 (_startAuthorizationNoHook)
+// Module 11168 (_startAuthorizationNoHook)
 import set from "set";
 import { AnalyticEvents } from "ME";
 

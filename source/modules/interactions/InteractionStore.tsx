@@ -1,9 +1,9 @@
-// Module ID: 8049
-// Function ID: 8050
+// Module ID: 8051
+// Function ID: 8052
 // Name: deleteNonce
-// Dependencies: [32, 1218, 1372, 687, 4529, 1935, 6917, 589, 709, 2]
+// Dependencies: [32, 1218, 1391, 687, 4529, 1954, 6920, 589, 709, 2]
 
-// Module 8049 (deleteNonce)
+// Module 8051 (deleteNonce)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -208,7 +208,7 @@ const interactionStore = new InteractionStore(require("dispatcher"), {
       if (onFailure != null) {
         onFailure(errorCode, errorMessage, status, reasonCode);
       }
-      if (tmp27.data.interactionType === require(1935) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND) {
+      if (tmp27.data.interactionType === require(1954) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND) {
         if (null == dependencyMap4[nonce]) {
           delete tmp[tmp2];
           if (null != dependencyMap3[nonce]) {
@@ -396,8 +396,8 @@ const interactionStore = new InteractionStore(require("dispatcher"), {
             tmp18 = "channelId" in interaction.data;
           }
           if (tmp18) {
-            importDefault(6917).deleteMessage(interaction.data.channelId, messageId, true);
-            const obj2 = importDefault(6917);
+            importDefault(6920).deleteMessage(interaction.data.channelId, messageId, true);
+            const obj2 = importDefault(6920);
           }
         }
         tmp7 = null != interaction && null != messageId;

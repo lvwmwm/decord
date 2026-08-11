@@ -1,10 +1,10 @@
-// Module ID: 9970
-// Function ID: 9971
+// Module ID: 9975
+// Function ID: 9976
 // Name: StickerPackInformationPopout
 // Dependencies: [19, 17, 21, 4303, 712, 4638, 1236, 4299, 4846, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 9970 (StickerPackInformationPopout)
+// Module 9975 (StickerPackInformationPopout)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

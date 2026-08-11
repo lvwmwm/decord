@@ -1,10 +1,10 @@
-// Module ID: 8241
-// Function ID: 8242
+// Module ID: 8245
+// Function ID: 8246
 // Name: updateAssets
-// Dependencies: [32, 5, 8242, 676, 38, 3, 530, 709, 1450, 2]
+// Dependencies: [32, 5, 8246, 676, 38, 3, 530, 709, 1469, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8241 (updateAssets)
+// Module 8245 (updateAssets)
 import _slicedToArray from "_slicedToArray";
 import timestamp from "timestamp";
 import handleFetchEmbeddedActivityShelfSuccess from "handleFetchEmbeddedActivityShelfSuccess";
@@ -636,8 +636,8 @@ export const getAssetImage = function getAssetImage(application_id, media_assets
       let str4 = "";
       if (typeof applyResult === "number") {
         const _HermesInternal3 = HermesInternal;
-        str4 = "?size=" + require(1450) /* handleImageLoad */.getBestMediaProxySize(applyResult);
-        const obj4 = require(1450) /* handleImageLoad */;
+        str4 = "?size=" + require(1469) /* handleImageLoad */.getBestMediaProxySize(applyResult);
+        const obj4 = require(1469) /* handleImageLoad */;
       }
       const _window = window;
       if (null != window.GLOBAL_ENV.CDN_HOST) {

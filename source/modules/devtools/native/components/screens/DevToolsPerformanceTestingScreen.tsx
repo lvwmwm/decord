@@ -1,8 +1,8 @@
-// Module ID: 15047
-// Function ID: 15048
-// Dependencies: [19, 17, 21, 4303, 712, 1480, 1609, 5767, 13846, 5374, 13843, 2]
+// Module ID: 15057
+// Function ID: 15058
+// Dependencies: [19, 17, 21, 4303, 712, 1499, 1628, 5767, 13853, 5374, 13850, 2]
 
-// Module 15047
+// Module 15057
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,14 +14,14 @@ obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, padding: 
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
 const memoResult = require("noop").memo(function DevToolsPerformanceTestingScreen() {
-  let obj = _require(1480);
+  let obj = _require(1499);
   _require = obj.useNavigation();
   obj = { style: callback().container, contentContainerStyle: null, children: null };
   obj = { paddingBottom: null };
-  obj[0] = importDefault(1609)().bottom + importDefault(712).space.PX_16;
+  obj[0] = importDefault(1628)().bottom + importDefault(712).space.PX_16;
   obj[1] = obj;
   const obj1 = { hasIcons: true, children: null };
-  const entries = Object.entries(_require(13846).PerformanceTestingScreens);
+  const entries = Object.entries(_require(13853).PerformanceTestingScreens);
   obj1[1] = entries.map((arg0) => {
     let tmp;
     [tmp, ] = arg0;

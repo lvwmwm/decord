@@ -1,9 +1,9 @@
-// Module ID: 15988
-// Function ID: 15989
+// Module ID: 16005
+// Function ID: 16006
 // Name: StyleSheet
-// Dependencies: [19, 17, 4295, 13015, 13671, 8560, 11018, 21, 15989, 15990, 15994, 15995, 4303, 712, 4013, 4643, 4696, 5824, 589, 643, 4711, 10292, 1297, 2]
+// Dependencies: [19, 17, 4295, 13019, 13679, 8566, 11023, 21, 16006, 16007, 16011, 16012, 4303, 712, 4031, 4643, 4696, 5824, 589, 643, 4711, 10297, 1297, 2]
 
-// Module 15988 (StyleSheet)
+// Module 16005 (StyleSheet)
 import importAllResult from "shallowEqual";
 import get_ActivityIndicator from "module_5824";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -32,7 +32,7 @@ let obj = {
     return importDefaultResult.shouldShowWarning();
   },
   getComponent() {
-    return require(15990) /* render */.default;
+    return require(16007) /* render */.default;
   }
 };
 items = [importDefaultResult];
@@ -44,7 +44,7 @@ obj = {
     return importDefaultResult1.shouldShowWarning();
   },
   getComponent() {
-    return require(15994) /* render */.default;
+    return require(16011) /* render */.default;
   }
 };
 items2 = [importDefaultResult1];
@@ -57,7 +57,7 @@ items1[2] = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(15995) /* MobileSurvey */.default;
+    return require(16012) /* MobileSurvey */.default;
   }
 };
 let closure_15 = new require("getStores")(items1);
@@ -147,7 +147,7 @@ AlertWrapper.prototype["render"] = function render() {
   return callback(require(4696) /* Dialog */.Dialog, obj);
 };
 AlertWrapper.contextType = require("ManaContext").ThemeContext;
-let closure_18 = Object.freeze({ renderAlert: "max", renderKey: "channel", props: "Boolean" });
+let closure_18 = Object.freeze({ renderAlert: "Array", renderKey: "call", props: "Map" });
 let obj1 = {
   stores: items3,
   center: true,
@@ -155,7 +155,7 @@ let obj1 = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(15995) /* MobileSurvey */.default;
+    return require(16012) /* MobileSurvey */.default;
   }
 };
 const tmp7 = new require("getStores")(items1);
@@ -193,7 +193,7 @@ const memoResult = importAllResult.memo(function Alerts() {
           return <openModal.component />;
         };
       } else {
-        return { renderAlert: "max", renderKey: "channel", props: "Boolean" };
+        return { renderAlert: "Array", renderKey: "call", props: "Map" };
       }
     }
   });

@@ -1,12 +1,12 @@
-// Module ID: 15018
-// Function ID: 15019
+// Module ID: 15028
+// Function ID: 15029
 // Name: BalanceWidget
-// Dependencies: [19, 17, 676, 678, 1369, 5161, 21, 1348, 4846, 4299, 1236, 10001, 1358, 698, 11166, 5164, 15019, 9422, 4271, 10151, 1988, 5748, 7000, 10150, 4123, 4729, 4303, 712, 2]
+// Dependencies: [19, 17, 676, 678, 1388, 5161, 21, 1367, 4846, 4299, 1236, 10006, 1377, 698, 11171, 5164, 15029, 9428, 4271, 10156, 2007, 5748, 7003, 10155, 4125, 4729, 4303, 712, 2]
 // Exports: default
 
-// Module 15018 (BalanceWidget)
+// Module 15028 (BalanceWidget)
 import ref from "ref";
-import { View } from "module_9422";
+import { View } from "module_9428";
 import { AnalyticEvents } from "ME";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
 import ContentDismissActionType from "ContentDismissActionType";
@@ -26,7 +26,7 @@ function BalanceWidget(arg0) {
   let onPress;
   let style;
   ({ onPress, style, accessibilityLabel, accessibilityState, children } = arg0);
-  const tmp = callback3(importDefault(1348)("BalanceWidgetMenu"));
+  const tmp = callback3(importDefault(1367)("BalanceWidgetMenu"));
   let obj = { onPress, style: items, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityState, activeOpacity: 0.8, children: null };
   items = [tmp.pressable, style];
   obj = { variant: "text-sm/semibold", color: "text-default", style: tmp.label, children: null };
@@ -75,7 +75,7 @@ class OrbsOnboardingMenuDismissibleContent {
 }
 function BalanceWidgetMenu(style) {
   let str;
-  let obj = str(9422);
+  let obj = str(9428);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = React.useCallback(() => {
@@ -126,7 +126,7 @@ function BalanceWidgetMenu(style) {
     str2 = "";
   }
   obj[2] = intl.formatToPlainString(str(1236).t.zPaLL9, { balance: str2 });
-  obj[3] = closure_10(importDefault(10150), { balance: str, onPress: callback, accessible: false });
+  obj[3] = closure_10(importDefault(10155), { balance: str, onPress: callback, accessible: false });
   return closure_10(BalanceWidget, obj);
 }
 ({ ContentDismissActionType: error, DismissibleContentGroupName: metroImportAll } = ContentDismissActionType);
@@ -148,9 +148,9 @@ let closure_15 = createCacheKey.createStyles((arg0) => {
 let result = require("ME").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
 
 export default function BalanceWidgetMenuWrapper(style) {
-  let obj = require(9422);
+  let obj = require(9428);
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
-  require(4123) /* UNSAFE_isDismissibleContentDismissed */;
+  require(4125) /* UNSAFE_isDismissibleContentDismissed */;
   if (null == balance) {
     obj = { onPress: null, style: null, accessibilityLabel: null, accessibilityState: null, children: null };
     obj[0] = function onPress() {

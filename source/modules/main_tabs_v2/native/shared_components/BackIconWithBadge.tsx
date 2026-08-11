@@ -1,10 +1,10 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15535
+// Function ID: 15536
 // Name: IconWithBadge
-// Dependencies: [19, 17, 7097, 21, 4303, 712, 589, 15509, 1297, 8293, 501, 5274, 5326, 4257, 2]
+// Dependencies: [19, 17, 7098, 21, 4303, 712, 589, 15526, 1297, 8298, 501, 5274, 5326, 4257, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 15518 (IconWithBadge)
+// Module 15535 (IconWithBadge)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
@@ -31,7 +31,7 @@ function IconWithBadge(includeNotificationsCount) {
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(15509)().value;
+    num2 = memo(15526)().value;
   }
   const sum = num + num2;
   _require = sum;
@@ -73,7 +73,7 @@ function IconWithBadge(includeNotificationsCount) {
   } else {
     items4 = [];
   }
-  const tmp5Result = memo(8293);
+  const tmp5Result = memo(8298);
   const items5 = [closure_6(tmp5Result, { cutouts: items4, children: closure_6(includeNotificationsCount.Icon, obj3) }), ];
   let tmp9Result = null;
   if (sum > 0) {

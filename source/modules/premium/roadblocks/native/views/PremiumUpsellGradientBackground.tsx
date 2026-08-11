@@ -1,10 +1,10 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 8712
+// Function ID: 8713
 // Name: PremiumUpsellGradientBackground
-// Dependencies: [19, 17, 6896, 21, 4303, 4725, 691, 2]
+// Dependencies: [19, 17, 6898, 21, 4303, 4725, 691, 2]
 // Exports: PremiumUpsellGradientBackground
 
-// Module 8706 (PremiumUpsellGradientBackground)
+// Module 8712 (PremiumUpsellGradientBackground)
 import "noop";
 import { Gradients } from "items";
 import { jsx } from "jsxProd";

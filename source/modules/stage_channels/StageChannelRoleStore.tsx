@@ -1,7 +1,7 @@
 // Module ID: 5139
 // Function ID: 5140
 // Name: buildStageChannelUserRoles
-// Dependencies: [1372, 1971, 1964, 1891, 1903, 4319, 4488, 3934, 1380, 12, 589, 5140, 709, 2]
+// Dependencies: [1391, 1990, 1983, 1910, 1922, 4319, 4488, 3953, 1399, 12, 589, 5140, 709, 2]
 
 // Module 5139 (buildStageChannelUserRoles)
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -39,13 +39,13 @@ function buildStageChannelUserRoles(id, closure_0, flag) {
         let canResult = null;
         if (flag) {
           obj = { permission: null, user: null, context: null, overwrites: null, roles: null };
-          obj[0] = tmp8(1380).MODERATE_STAGE_CHANNEL_PERMISSIONS;
+          obj[0] = tmp8(1399).MODERATE_STAGE_CHANNEL_PERMISSIONS;
           obj[1] = id;
           obj[2] = guild;
           obj[3] = channel.permissionOverwrites;
           obj[4] = unsafeMutableRoles.getUnsafeMutableRoles(guild.id);
-          canResult = importAll(3934).can(obj);
-          const obj4 = importAll(3934);
+          canResult = importAll(3953).can(obj);
+          const obj4 = importAll(3953);
         }
         obj[obj.MODERATOR] = canResult;
         let tmp4 = obj;

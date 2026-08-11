@@ -1,13 +1,13 @@
 // Module ID: 4494
 // Function ID: 4495
 // Name: computeChannelName
-// Dependencies: [32, 4217, 3938, 1903, 676, 1351, 4146, 1236, 589, 2]
+// Dependencies: [32, 4217, 3957, 1922, 676, 1370, 4148, 1236, 589, 2]
 // Exports: computeDefaultGroupDmName, computeDefaultGroupDmNameFromUserIds, computeGroupDmName, default, escapeChannelName, unescapeChannelName, useComputedGroupDmName
 
 // Module 4494 (computeChannelName)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
@@ -39,15 +39,15 @@ function computeChannelName(channel, closure_9, closure_7, arg3, arg4) {
       } else {
         const recipients = channel.recipients;
         const mapped = recipients.map(closure_9.getUser);
-        const first = callback(mapped.filter(_require(1351).isNotNullish), 1)[0];
+        const first = callback(mapped.filter(_require(1370).isNotNullish), 1)[0];
         if (null == first) {
           return "???";
         } else {
           if (!first.isProvisional) {
             let str17 = closure_7.getNickname(first.id);
             if (str17 == null) {
-              str17 = importDefault(4146).getName(first);
-              const obj3 = importDefault(4146);
+              str17 = importDefault(4148).getName(first);
+              const obj3 = importDefault(4148);
             }
             if (str17 == null) {
               str17 = "???";
@@ -68,7 +68,7 @@ function computeChannelName(channel, closure_9, closure_7, arg3, arg4) {
         const recipients1 = channel.recipients;
         _require = closure_7;
         const mapped1 = recipients1.map(closure_9.getUser);
-        const found = mapped1.filter(_require(1351).isNotNullish);
+        const found = mapped1.filter(_require(1370).isNotNullish);
         const mapped2 = found.map((id) => {
           nickname = nickname.getNickname(id.id);
           if (nickname == null) {
@@ -82,9 +82,9 @@ function computeChannelName(channel, closure_9, closure_7, arg3, arg4) {
         } else {
           const intl2 = tmp25(1236).intl;
           const obj = { name: null };
-          obj[0] = importDefault(4146).getName(closure_9.getCurrentUser());
+          obj[0] = importDefault(4148).getName(closure_9.getCurrentUser());
           joined = intl2.formatToPlainString(tmp25(1236).t["9Uk8PF"], obj);
-          const obj2 = importDefault(4146);
+          const obj2 = importDefault(4148);
         }
       }
     } else {
@@ -147,7 +147,7 @@ function computeChannelName(channel, closure_9, closure_7, arg3, arg4) {
   }
 }
 ({ ChannelTypes: error, NULL_STRING_CHANNEL_ID: metroImportAll } = ME);
-const result = require("upsertRelationship").fileFinishedImporting("modules/channel/useChannelName.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/channel/useChannelName.tsx");
 
 export default function useChannelName(arg0) {
   const _require = arg0;
@@ -155,7 +155,7 @@ export default function useChannelName(arg0) {
   if (arg1 === undefined) {
     flag = false;
   }
-  const items = [mergeGuildAvatar, getHash, upsertRelationship];
+  const items = [mergeGuildAvatar, getHash, markAllUserIdListsStale];
   return _require(589).useStateFromStores(items, () => {
     let tmp2 = null;
     if (null != closure_0) {
@@ -167,7 +167,7 @@ export default function useChannelName(arg0) {
 export const computeDefaultGroupDmNameFromUserIds = function computeDefaultGroupDmNameFromUserIds(arr, getUser) {
   const _require = arg2;
   const mapped = arr.map(getUser.getUser);
-  const found = mapped.filter(_require(1351).isNotNullish);
+  const found = mapped.filter(_require(1370).isNotNullish);
   const mapped1 = found.map((id) => {
     nickname = nickname.getNickname(id.id);
     if (nickname == null) {
@@ -181,9 +181,9 @@ export const computeDefaultGroupDmNameFromUserIds = function computeDefaultGroup
   } else {
     const intl = tmp(1236).intl;
     const obj = { name: null };
-    obj[0] = importDefault(4146).getName(getUser.getCurrentUser());
+    obj[0] = importDefault(4148).getName(getUser.getCurrentUser());
     joined = intl.formatToPlainString(tmp(1236).t["9Uk8PF"], obj);
-    const obj2 = importDefault(4146);
+    const obj2 = importDefault(4148);
   }
   return joined;
 };
@@ -191,7 +191,7 @@ export const computeDefaultGroupDmName = function computeDefaultGroupDmName(reci
   recipients = recipients.recipients;
   const _require = arg2;
   const mapped = recipients.map(getUser.getUser);
-  const found = mapped.filter(_require(1351).isNotNullish);
+  const found = mapped.filter(_require(1370).isNotNullish);
   const mapped1 = found.map((id) => {
     nickname = nickname.getNickname(id.id);
     if (nickname == null) {
@@ -205,15 +205,15 @@ export const computeDefaultGroupDmName = function computeDefaultGroupDmName(reci
   } else {
     const intl = tmp(1236).intl;
     const obj = { name: null };
-    obj[0] = importDefault(4146).getName(getUser.getCurrentUser());
+    obj[0] = importDefault(4148).getName(getUser.getCurrentUser());
     joined = intl.formatToPlainString(tmp(1236).t["9Uk8PF"], obj);
-    const obj2 = importDefault(4146);
+    const obj2 = importDefault(4148);
   }
   return joined;
 };
 export const useComputedGroupDmName = function useComputedGroupDmName(arg0) {
   const _require = arg0;
-  const items = [mergeGuildAvatar, upsertRelationship];
+  const items = [mergeGuildAvatar, markAllUserIdListsStale];
   return _require(589).useStateFromStores(items, () => {
     let obj = callback;
     let tmp = null;

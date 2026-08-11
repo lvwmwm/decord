@@ -1,10 +1,10 @@
-// Module ID: 9737
-// Function ID: 9738
+// Module ID: 9742
+// Function ID: 9743
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 4494, 4497, 9677, 4825, 4184, 9738, 2]
+// Dependencies: [19, 21, 4494, 4497, 9682, 4825, 4184, 9743, 2]
 // Exports: default
 
-// Module 9737 (ChannelVoiceChatModal)
+// Module 9742 (ChannelVoiceChatModal)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -25,7 +25,7 @@ export default function ChannelVoiceChatModal(channel) {
   if (tmp2 == null) {
     str = "";
   }
-  const tmp5 = importDefault(9677);
+  const tmp5 = importDefault(9682);
   return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(4825).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
     if (guild_id == null) {

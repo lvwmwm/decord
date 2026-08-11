@@ -1,9 +1,9 @@
-// Module ID: 6915
-// Function ID: 6916
+// Module ID: 6918
+// Function ID: 6919
 // Name: emitChanges
-// Dependencies: [1903, 676, 6916, 709, 686, 589, 2]
+// Dependencies: [1922, 676, 6919, 709, 686, 589, 2]
 
-// Module 6915 (emitChanges)
+// Module 6918 (emitChanges)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { NOOP_NULL } from "ME";
 import { Store } from "initialize";
@@ -78,8 +78,8 @@ prototype["checkAndFetchReferralsRemaining"] = function checkAndFetchReferralsRe
     tmp = tmp5;
   }
   if (tmp) {
-    const referralsRemaining = require(6916) /* _fetchReferralEligibleUsers */.fetchReferralsRemaining();
-    const obj = require(6916) /* _fetchReferralEligibleUsers */;
+    const referralsRemaining = require(6919) /* _fetchReferralEligibleUsers */.fetchReferralsRemaining();
+    const obj = require(6919) /* _fetchReferralEligibleUsers */;
   }
 };
 prototype["getReferralsRemaining"] = function getReferralsRemaining(arg0) {
@@ -142,8 +142,8 @@ const referralTrialStore = new ReferralTrialStore(require("dispatcher"), {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function handleReferralTrialOfferUpdate(userTrialOfferId) {
     userTrialOfferId = userTrialOfferId.userTrialOfferId;
     if (!c8) {
-      const referralsRemaining = userTrialOfferId(6916).fetchReferralsRemaining();
-      const obj = userTrialOfferId(6916);
+      const referralsRemaining = userTrialOfferId(6919).fetchReferralsRemaining();
+      const obj = userTrialOfferId(6919);
     }
     if (!set1.has(userTrialOfferId)) {
       set1.add(userTrialOfferId);
@@ -200,12 +200,12 @@ const referralTrialStore = new ReferralTrialStore(require("dispatcher"), {
   },
   BILLING_CREATE_REFERRAL_SUCCESS: function handleCreateReferralSuccess(userTrialOffer) {
     userTrialOffer = userTrialOffer.userTrialOffer;
-    const referralsRemaining = require(6916) /* _fetchReferralEligibleUsers */.fetchReferralsRemaining();
+    const referralsRemaining = require(6919) /* _fetchReferralEligibleUsers */.fetchReferralsRemaining();
     const result = map1.set(userTrialOffer.id, userTrialOffer);
     set.add(userTrialOffer.user_id);
   },
   CREATE_REFERRALS_SUCCESS: function handleCreateReferralsSuccess(arg0) {
-    const referralsRemaining = require(6916) /* _fetchReferralEligibleUsers */.fetchReferralsRemaining();
+    const referralsRemaining = require(6919) /* _fetchReferralEligibleUsers */.fetchReferralsRemaining();
     for (const item10012 of tmp) {
       let tmp3 = map1;
       let result = map1.set(item10012.id, item10012);

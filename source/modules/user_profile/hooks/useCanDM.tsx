@@ -1,15 +1,15 @@
-// Module ID: 12501
-// Function ID: 12502
+// Module ID: 12504
+// Function ID: 12505
 // Name: useCanDM
-// Dependencies: [7119, 3930, 1218, 1971, 3938, 3974, 589, 2]
+// Dependencies: [7120, 3949, 1218, 1990, 3957, 3993, 589, 2]
 // Exports: canDm, default
 
-// Module 12501 (useCanDM)
+// Module 12504 (useCanDM)
 import recountRelationshipTypes from "recountRelationshipTypes";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 
 const require = arg1;
 const result = require("fetchFingerprint").fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
@@ -28,10 +28,10 @@ export default function useCanDM(arg0, arg1) {
     }
     return isLurkingResult;
   });
-  const RestrictedGuildIds = _require(3974).RestrictedGuildIds;
+  const RestrictedGuildIds = _require(3993).RestrictedGuildIds;
   fetchFingerprint = RestrictedGuildIds.useSetting();
   const obj2 = _require(589);
-  const items2 = [upsertRelationship, trackCommunicationDisabled, recountRelationshipTypes];
+  const items2 = [markAllUserIdListsStale, trackCommunicationDisabled, recountRelationshipTypes];
   return _require(589).useStateFromStores(items2, () => {
     let tmp = !gameFriendsForUser;
     if (!gameFriendsForUser) {
@@ -63,7 +63,7 @@ export const canDm = function canDm(userId, guildId) {
   if (isLurkingResult) {
     isLurkingResult = lurking.isLurking(guildId);
   }
-  const RestrictedGuildIds = _require(3974).RestrictedGuildIds;
+  const RestrictedGuildIds = _require(3993).RestrictedGuildIds;
   _require = RestrictedGuildIds.getSetting();
   let isFriendResult = friend.isFriend(userId);
   let tmp8 = !tmp4;
@@ -80,7 +80,7 @@ export const canDm = function canDm(userId, guildId) {
   if (!tmp8) {
     let setting = gameFriendsForUser.getGameFriendsForUser(userId).length > 0;
     if (setting) {
-      const AllowGameFriendDmsInDiscord = _require(3974).AllowGameFriendDmsInDiscord;
+      const AllowGameFriendDmsInDiscord = _require(3993).AllowGameFriendDmsInDiscord;
       setting = AllowGameFriendDmsInDiscord.getSetting();
     }
     tmp8 = setting;

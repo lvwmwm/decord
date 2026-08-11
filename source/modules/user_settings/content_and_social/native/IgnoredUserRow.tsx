@@ -1,10 +1,10 @@
-// Module ID: 14056
-// Function ID: 14057
+// Module ID: 14064
+// Function ID: 14065
 // Name: IgnoredUserRow
-// Dependencies: [19, 1903, 21, 9243, 5728, 5374, 1297, 1236, 8783, 4714, 589, 2]
+// Dependencies: [19, 1922, 21, 9249, 5728, 5374, 1297, 1236, 8789, 4714, 589, 2]
 // Exports: default
 
-// Module 14056 (IgnoredUserRow)
+// Module 14064 (IgnoredUserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";

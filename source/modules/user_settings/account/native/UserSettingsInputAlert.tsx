@@ -1,9 +1,9 @@
-// Module ID: 14044
-// Function ID: 14045
+// Module ID: 14052
+// Function ID: 14053
 // Name: renderContent
-// Dependencies: [19, 21, 530, 4712, 4299, 7790, 4732, 5824, 2]
+// Dependencies: [19, 21, 530, 4712, 4299, 7792, 4732, 5824, 2]
 
-// Module 14044 (renderContent)
+// Module 14052 (renderContent)
 import jsxProd from "jsxProd";
 import { PureComponent } from "noop";
 import importAllResult from "noop";
@@ -12,7 +12,7 @@ let c3;
 let c4;
 let require = arg1;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-let closure_5 = { input: "", error: "Array" };
+let closure_5 = { input: "", error: "paddingHorizontal" };
 class UserSettingsInputAlert extends PureComponent {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -103,7 +103,7 @@ prototype["renderContent"] = function renderContent() {
     obj[8] = function onChange(input) {
       return self.setState({ input });
     };
-    items[1] = callback(self(7790).TextInput, obj);
+    items[1] = callback(self(7792).TextInput, obj);
     obj[1] = items;
     return closure_4(self(4712).Stack, obj);
   }

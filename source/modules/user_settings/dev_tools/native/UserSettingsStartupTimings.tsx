@@ -1,10 +1,10 @@
-// Module ID: 14753
-// Function ID: 14754
+// Module ID: 14763
+// Function ID: 14764
 // Name: Code
-// Dependencies: [5, 32, 19, 17, 706, 676, 21, 4303, 712, 4299, 4165, 1609, 9875, 589, 9, 6934, 8923, 7745, 4712, 5767, 8448, 708, 5374, 12232, 2]
+// Dependencies: [5, 32, 19, 17, 706, 676, 21, 4303, 712, 4299, 4165, 1628, 9880, 589, 9, 6937, 8929, 7747, 4712, 5767, 8454, 708, 5374, 12235, 2]
 // Exports: default
 
-// Module 14753 (Code)
+// Module 14763 (Code)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
@@ -49,7 +49,7 @@ export default function UserSettingsStartupTimings() {
   const useResult = React.use(num);
   React = useResult;
   let items = [useResult, first, first1];
-  const memo = React.useMemo(() => first(9875)(TableRowGroupTitle, !first, first1).split("\n"), items);
+  const memo = React.useMemo(() => first(9880)(TableRowGroupTitle, !first, first1).split("\n"), items);
   let obj1 = require(589) /* initialize */;
   let items1 = [refreshSourceMapCookie];
   let closure_6 = obj1.useStateFromStores(items1, () => alertStartupMetrics.alertStartupMetrics);
@@ -59,7 +59,7 @@ export default function UserSettingsStartupTimings() {
   let closure_9 = first(9).loadLazyCache.end - first(9).loadLazyCache.start;
   let closure_10 = first(9).ready.end - first(9).ready.start;
   createCacheKey = Math.ceil(first(9).renderLatestMessages.importTime);
-  const lastTrackedAppUiViewed2Properties = require(6934) /* getDeviceMetadata */.getLastTrackedAppUiViewed2Properties();
+  const lastTrackedAppUiViewed2Properties = require(6937) /* getDeviceMetadata */.getLastTrackedAppUiViewed2Properties();
   num = undefined;
   if (lastTrackedAppUiViewed2Properties != null) {
     num = lastTrackedAppUiViewed2Properties.time_first_contentful_paint;
@@ -115,8 +115,8 @@ export default function UserSettingsStartupTimings() {
           return obj2;
         } else {
           closure_0 = arg1;
-          closure_1 = outer1_1(9875)(closure_0);
-          obj = outer1_0(8923);
+          closure_1 = outer1_1(9880)(closure_0);
+          obj = outer1_0(8929);
           obj3 = { message: null };
           obj3[0] = closure_1;
           obj.showShareActionSheet(obj3, "Startup Timing");
@@ -132,7 +132,7 @@ export default function UserSettingsStartupTimings() {
   obj = { style: tmp.wrap, children: null };
   obj = { contentContainerStyle: null, ListHeaderComponent: null, data: null, renderItem: null };
   obj1 = { paddingBottom: null };
-  obj1[0] = first(1609)().bottom + first(712).space.PX_16;
+  obj1[0] = first(1628)().bottom + first(712).space.PX_16;
   obj[0] = obj1;
   obj[1] = function ListHeaderComponent() {
     let obj = { spacing: 16, style: { padding: 16 }, children: null };
@@ -146,7 +146,7 @@ export default function UserSettingsStartupTimings() {
       },
       checked: closure_6
     };
-    obj[2] = callback(callback2(8448).TableCheckboxRow, obj);
+    obj[2] = callback(callback2(8454).TableCheckboxRow, obj);
     const items = [callback(callback2(5767).TableRowGroup, obj), , , , ];
     const obj1 = { children: null };
     const obj2 = { color: "text-brand", children: null };
@@ -237,14 +237,14 @@ export default function UserSettingsStartupTimings() {
     items[2] = callback(callback2(5767).TableRowGroup, obj18);
     const obj21 = { title: "Detailed Times", hasIcons: false, children: null };
     const items11 = [
-      callback(callback2(8448).TableCheckboxRow, {
+      callback(callback2(8454).TableCheckboxRow, {
         label: "Hide the Noise",
         onPress() {
           return callback((arg0) => !arg0);
         },
         checked: first
       }),
-      callback(callback2(8448).TableCheckboxRow, {
+      callback(callback2(8454).TableCheckboxRow, {
         label: "Hide paints",
         onPress() {
           return callback2((arg0) => !arg0);
@@ -256,7 +256,7 @@ export default function UserSettingsStartupTimings() {
     items[3] = callback2(callback2(5767).TableRowGroup, obj21);
     const obj24 = { title: "Share Timings", hasIcons: true, children: null };
     const obj25 = { icon: null, label: "Copy timings to clipboard.", arrow: true, onPress: null };
-    obj25[0] = callback(callback2(12232).ShareIcon, {});
+    obj25[0] = callback(callback2(12235).ShareIcon, {});
     obj25[3] = closure_14;
     obj24[2] = callback(callback2(5374).TableRow, obj25);
     items[4] = callback(callback2(5767).TableRowGroup, obj24);
@@ -269,6 +269,6 @@ export default function UserSettingsStartupTimings() {
   obj[3] = function renderItem(children) {
     return callback(lastTrackedAppUiViewed2Properties, { children: children.item });
   };
-  obj[1] = callback2(require(7745) /* noop */.FlashList, obj);
+  obj[1] = callback2(require(7747) /* noop */.FlashList, obj);
   return callback2(closure_6, obj);
 };

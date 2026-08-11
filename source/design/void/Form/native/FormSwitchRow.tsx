@@ -1,10 +1,10 @@
-// Module ID: 7982
-// Function ID: 7983
+// Module ID: 7984
+// Function ID: 7985
 // Name: FormSwitchRow
-// Dependencies: [32, 19, 17, 21, 4303, 500, 5367, 5387, 7980, 5373, 5768, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 500, 5367, 5387, 7982, 5373, 5768, 2]
 // Exports: default
 
-// Module 7982 (FormSwitchRow)
+// Module 7984 (FormSwitchRow)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

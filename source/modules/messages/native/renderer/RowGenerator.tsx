@@ -1,9 +1,9 @@
-// Module ID: 8041
-// Function ID: 8042
+// Module ID: 8043
+// Function ID: 8044
 // Name: setOptions
-// Dependencies: [1302, 8042, 8043, 12, 8044, 8046, 12640, 12641, 1351, 2]
+// Dependencies: [1302, 8044, 8045, 12, 8046, 8048, 12644, 12645, 1370, 2]
 
-// Module 8041 (setOptions)
+// Module 8043 (setOptions)
 import handleThemeChange from "handleThemeChange";
 import Changeset from "Changeset";
 
@@ -37,26 +37,26 @@ prototype["generate"] = function generate(rowType) {
     if (tmp2.IGNORED_GROUP !== rowType) {
       if (tmp2.SUSPENDED_USER_GROUP !== rowType) {
         if (tmp2.MESSAGE === rowType) {
-          return require(8046) /* generateMessageRowData */.generateMessageRowData(rowType, self.options, theme);
+          return require(8048) /* generateMessageRowData */.generateMessageRowData(rowType, self.options, theme);
         } else {
           if (constants2.DAY !== rowType) {
             if (tmp12.UNREAD !== rowType) {
               if (tmp12.SUMMARY !== rowType) {
                 if (constants3.LOAD_BEFORE !== rowType) {
                   if (constants3.LOAD_AFTER !== rowType) {
-                    require(1351) /* isDiscordFrontendDevelopment */.assertNever(rowType);
+                    require(1370) /* isDiscordFrontendDevelopment */.assertNever(rowType);
                   }
                 }
-                return require(12641) /* generateLoadingRowData */.generateLoadingRowData(rowType, theme);
+                return require(12645) /* generateLoadingRowData */.generateLoadingRowData(rowType, theme);
               }
             }
           }
-          return require(12640) /* generateSeparatorRowData */.generateSeparatorRowData(rowType, theme);
+          return require(12644) /* generateSeparatorRowData */.generateSeparatorRowData(rowType, theme);
         }
       }
     }
   }
-  return require(8044) /* generateBlockedGroupRowData */.generateBlockedGroupRowData(rowType, theme, self);
+  return require(8046) /* generateBlockedGroupRowData */.generateBlockedGroupRowData(rowType, theme, self);
 };
 const result = require("UserOption").fileFinishedImporting("modules/messages/native/renderer/RowGenerator.tsx");
 

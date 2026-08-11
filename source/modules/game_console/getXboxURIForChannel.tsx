@@ -1,13 +1,13 @@
-// Module ID: 10891
-// Function ID: 10892
+// Module ID: 10896
+// Function ID: 10897
 // Name: getXboxURIForChannel
-// Dependencies: [1891, 4351, 3938, 1903, 10506, 676, 4494, 1236, 530, 2]
+// Dependencies: [1910, 4351, 3957, 1922, 10511, 676, 4494, 1236, 530, 2]
 // Exports: default
 
-// Module 10891 (getXboxURIForChannel)
+// Module 10896 (getXboxURIForChannel)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import XBOX_URL_BASE from "XBOX_URL_BASE";
 import ME from "ME";
@@ -19,7 +19,7 @@ let metroImportAll;
 const require = arg1;
 ({ XBOX_HANDOFF_SEARCH_PARAMS: closure_6, XBOX_URL_BASE: error } = XBOX_URL_BASE);
 ({ Endpoints: metroImportAll, ZERO_STRING_GUILD_ID: c9 } = ME);
-const result = require("upsertRelationship").fileFinishedImporting("modules/game_console/getXboxURIForChannel.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/game_console/getXboxURIForChannel.tsx");
 
 export default function getXboxURIForChannel(channelId) {
   let forQRCode;
@@ -32,7 +32,7 @@ export default function getXboxURIForChannel(channelId) {
     tmp4 = closure_9;
   }
   const obj = { guildId: tmp4, channelId: channelId.id, channelName: null, guildName: null, muted: null, deafened: null, nonce: null };
-  obj[2] = require(4494) /* computeChannelName */.computeChannelName(channelId, mergeGuildAvatar, upsertRelationship);
+  obj[2] = require(4494) /* computeChannelName */.computeChannelName(channelId, mergeGuildAvatar, markAllUserIdListsStale);
   let name;
   if (guild != null) {
     name = guild.name;

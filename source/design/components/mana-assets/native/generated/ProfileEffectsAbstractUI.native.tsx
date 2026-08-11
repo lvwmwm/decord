@@ -1,10 +1,10 @@
-// Module ID: 6648
-// Function ID: 6649
+// Module ID: 6650
+// Function ID: 6651
 // Name: ProfileEffectsAbstractUI
-// Dependencies: [21, 5268, 6649, 2]
+// Dependencies: [21, 5268, 6651, 2]
 // Exports: ProfileEffectsAbstractUI
 
-// Module 6648 (ProfileEffectsAbstractUI)
+// Module 6650 (ProfileEffectsAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ProfileEffectsAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const ProfileEffectsAbstractUI = function ProfileEffectsAbstractUI(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6649);
+  obj[0] = importDefault(6651);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,11 +1,11 @@
-// Module ID: 11669
-// Function ID: 11670
+// Module ID: 11672
+// Function ID: 11673
 // Name: handleInviteDisabledPress
-// Dependencies: [19, 17, 1372, 1961, 1891, 1960, 9795, 676, 21, 4303, 712, 11670, 1988, 4644, 1480, 11671, 8491, 11672, 11710, 5379, 7751, 9722, 1236, 9045, 4714, 6007, 4036, 11744, 589, 9068, 9065, 11745, 11746, 11748, 2]
+// Dependencies: [19, 17, 1391, 1980, 1910, 1979, 9800, 676, 21, 4303, 712, 11673, 2007, 4644, 1499, 11674, 8497, 11675, 11713, 5379, 7753, 9727, 1236, 9051, 4714, 6009, 4042, 11747, 589, 9074, 9071, 11748, 11749, 11751, 2]
 
-// Module 11669 (handleInviteDisabledPress)
+// Module 11672 (handleInviteDisabledPress)
 import importAllResult from "SPRING_CONFIG";
-import { View } from "module_11672";
+import { View } from "module_11675";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -159,14 +159,14 @@ const memoResult = importAllResult.memo(function ConnectedGuildSearchAndInviteIn
     const channels = outer1_6.getChannels(guild.id);
     return guild(outer1_2[29]).shouldRenderInvite(channels, guild);
   }, items1);
-  const tmp2 = importDefault(8491)(() => {
+  const tmp2 = importDefault(8497)(() => {
     const channelId = outer1_8.getChannelId(guild.id);
     const channels = outer1_6.getChannels(guild.id);
     const result = guild(outer1_2[30]).handleOpenInviteActionsheet(guild, channelId, channels, outer1_11.GUILD_HEADER);
   });
-  const shouldShowInvitesDisabledNotif = guild(11745).useShouldShowInvitesDisabledNotif(guild);
-  const obj2 = guild(11745);
-  const tmp5 = importDefault(11748)(guild);
+  const shouldShowInvitesDisabledNotif = guild(11748).useShouldShowInvitesDisabledNotif(guild);
+  const obj2 = guild(11748);
+  const tmp5 = importDefault(11751)(guild);
   obj = { guildId: guild.id, canInvite: stateFromStores, invitesDisabled: shouldShowInvitesDisabledNotif, onInvitePress: tmp2, onEventsPress: tmp5.handlePress, onEventsLongPress: tmp5.handleLongPress, hasUnreadEvents: tmp5.hasUnread, useEventsButton: null, useButtonComponent: null };
   if (flag2) {
     flag2 = tmp4;

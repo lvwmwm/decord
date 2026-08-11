@@ -1,10 +1,10 @@
-// Module ID: 9261
-// Function ID: 9262
+// Module ID: 9267
+// Function ID: 9268
 // Name: GuildVisibility
-// Dependencies: [676, 1411, 2]
+// Dependencies: [676, 1430, 2]
 // Exports: getGuildTraits, isDiscoverableGuild, isPremiumGuild
 
-// Module 9261 (GuildVisibility)
+// Module 9267 (GuildVisibility)
 import ME from "ME";
 
 let c3;
@@ -24,12 +24,12 @@ export const getGuildTraits = function getGuildTraits(fromGuildProfileResult) {
     if (null == fromGuildProfileResult) {
       let num3 = 0;
       if (tmp5) {
-        let num4 = require(1411) /* fromGuildPropertiesWithAdditionalFields */.isGuildRecord(fromGuildProfileResult) ? fromGuildProfileResult.premiumSubscriberCount : fromGuildProfileResult.premiumSubscriptionCount;
+        let num4 = require(1430) /* fromGuildPropertiesWithAdditionalFields */.isGuildRecord(fromGuildProfileResult) ? fromGuildProfileResult.premiumSubscriberCount : fromGuildProfileResult.premiumSubscriptionCount;
         if (num4 == null) {
           num4 = 0;
         }
         num3 = num4;
-        const obj3 = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
+        const obj3 = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
       }
       if (obj4.isGuildRecord(fromGuildProfileResult)) {
         let NONE = fromGuildProfileResult.premiumTier;
@@ -59,7 +59,7 @@ export const getGuildTraits = function getGuildTraits(fromGuildProfileResult) {
           tmp8 = fromGuildProfileResult.premiumSubscriptionCount > 0;
         }
       }
-      obj2 = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
+      obj2 = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
     }
   }
   if (tmp3) {
@@ -84,7 +84,7 @@ export const isPremiumGuild = function isPremiumGuild(has) {
         tmp4 = premiumTier.premiumSubscriptionCount > 0;
       }
     }
-    obj = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
+    obj = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
   }
 };
 export const isDiscoverableGuild = function isDiscoverableGuild(features) {

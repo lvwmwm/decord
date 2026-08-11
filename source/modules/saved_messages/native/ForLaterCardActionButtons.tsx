@@ -1,10 +1,10 @@
-// Module ID: 12565
-// Function ID: 12566
+// Module ID: 12569
+// Function ID: 12570
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 4303, 4271, 10279, 1988, 10272, 10278, 1236, 11132, 5326, 12566, 9672, 8598, 7751, 8605, 2]
+// Dependencies: [19, 17, 21, 4303, 4271, 10284, 2007, 10277, 10283, 1236, 11137, 5326, 12570, 9677, 8604, 7753, 8611, 2]
 // Exports: default
 
-// Module 12565 (ForLaterCardActionButtons)
+// Module 12569 (ForLaterCardActionButtons)
 import noop from "noop";
 import { View } from "set";
 import { jsx } from "jsxProd";
@@ -42,7 +42,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }, items);
   let intl = savedMessage(1236).intl;
   obj[0] = intl.string(savedMessage(1236).t["+TSRGD"]);
-  obj[1] = savedMessage(11132).ChatArrowRightIcon;
+  obj[1] = savedMessage(11137).ChatArrowRightIcon;
   obj[2] = function action() {
     return jumpToMessage();
   };
@@ -75,10 +75,10 @@ export default function ForLaterCardActionButtons(savedMessage) {
       const intl = savedMessage(1236).intl;
       obj.accessibilityLabel = intl.string(savedMessage(1236).t.e1heBD);
       obj.size = "sm";
-      obj.icon = jumpToMessage(8605);
-      return callback(savedMessage(7751).IconButton, obj);
+      obj.icon = jumpToMessage(8611);
+      return callback(savedMessage(7753).IconButton, obj);
     };
-    obj[1] = jsx(tmp3(8598).ContextMenu, { items: null, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: null });
+    obj[1] = jsx(tmp3(8604).ContextMenu, { items: null, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: null });
     return <View style={null}>{null}</View>;
   } else {
     const intl3 = tmp3(1236).intl;
@@ -86,9 +86,9 @@ export default function ForLaterCardActionButtons(savedMessage) {
     let obj2 = { label: null, IconComponent: null, action: null };
     obj2[0] = intl3.string(savedMessage.throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1);
     if (savedMessage.throttledNow > savedMessage.saveData.dueAt) {
-      let PencilIcon = tmp3(12566).BellZIcon;
+      let PencilIcon = tmp3(12570).BellZIcon;
     } else {
-      PencilIcon = tmp3(9672).PencilIcon;
+      PencilIcon = tmp3(9677).PencilIcon;
     }
     obj2[1] = PencilIcon;
     obj2[2] = callback;

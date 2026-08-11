@@ -1,7 +1,7 @@
 // Module ID: 4763
 // Function ID: 4764
 // Name: match
-// Dependencies: [17, 4764, 3942, 4000, 4743, 1416, 4744, 4831, 4334, 1236, 4747, 2]
+// Dependencies: [17, 4764, 3961, 4019, 4743, 1435, 4744, 4831, 4334, 1236, 4747, 2]
 // Exports: decorateWithIcon
 
 // Module 4763 (match)
@@ -25,7 +25,7 @@ obj = {
           const json = JSON.stringify(match[0]);
           tmp3 = null;
         }
-        obj = importDefault(3942);
+        obj = importDefault(3961);
       }
       return tmp3;
     }
@@ -48,7 +48,7 @@ obj[2] = {
       obj[0] = arg0[0];
       return obj;
     } else {
-      obj = importDefault(3942);
+      obj = importDefault(3961);
       const result = obj.maybeTranslateSurrogatesToInlineEmoji(arg0[0]);
       if (null == result) {
         obj = { content: null };
@@ -66,7 +66,7 @@ obj[2] = {
 };
 obj[3] = {
   parse(content) {
-    let obj = importDefault(3942);
+    let obj = importDefault(3961);
     obj = { type: "emoji", content: content[0], surrogate: obj.convertNameToSurrogate(content[1]) };
     return obj;
   }
@@ -86,10 +86,10 @@ obj[4] = {
     if (flag === undefined) {
       flag = false;
     }
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: tmp3, animated: "a" === tmp, size: 48 };
     let emojiURL = obj.getEmojiURL(obj);
-    const emojiURL1 = importDefault(1416).getEmojiURL({ id: tmp3, animated: false, size: 48 });
+    const emojiURL1 = importDefault(1435).getEmojiURL({ id: tmp3, animated: false, size: 48 });
     obj = { id: tmp3, alt: tmp2, src: null, frozenSrc: null };
     if (flag) {
       emojiURL = emojiURL1;
@@ -348,10 +348,10 @@ let obj1 = {
     if (flag === undefined) {
       flag = false;
     }
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: tmp3, animated: "a" === tmp, size: 48 };
     let emojiURL = obj.getEmojiURL(obj);
-    const emojiURL1 = importDefault(1416).getEmojiURL({ id: tmp3, animated: false, size: 48 });
+    const emojiURL1 = importDefault(1435).getEmojiURL({ id: tmp3, animated: false, size: 48 });
     obj = { id: tmp3, alt: tmp2, src: null, frozenSrc: null };
     if (flag) {
       emojiURL = emojiURL1;

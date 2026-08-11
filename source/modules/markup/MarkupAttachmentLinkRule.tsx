@@ -1,6 +1,6 @@
 // Module ID: 4747
 // Function ID: 4748
-// Dependencies: [4000, 2]
+// Dependencies: [4019, 2]
 
 // Module 4747
 const re0 = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;

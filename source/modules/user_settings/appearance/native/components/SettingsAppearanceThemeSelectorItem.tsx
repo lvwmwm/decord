@@ -1,10 +1,10 @@
-// Module ID: 14509
-// Function ID: 14510
+// Module ID: 14517
+// Function ID: 14518
 // Name: GradientThemeBackground
-// Dependencies: [19, 17, 1302, 14508, 505, 21, 4303, 712, 4152, 4011, 4848, 1297, 14510, 647, 4005, 14511, 4121, 4019, 4846, 1236, 2]
+// Dependencies: [19, 17, 1302, 14516, 505, 21, 4303, 712, 4153, 1364, 4848, 1297, 14518, 647, 4024, 14519, 1349, 4032, 4846, 1236, 2]
 // Exports: default
 
-// Module 14509 (GradientThemeBackground)
+// Module 14517 (GradientThemeBackground)
 import "getSystemLocale";
 import { View } from "useCheckboxA11yNative";
 import handleThemeChange from "handleThemeChange";
@@ -21,7 +21,7 @@ function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   ({ item, isThemeLocked } = arg0);
-  let obj = require(4011) /* isThemeLight */;
+  let obj = require(1364) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(item.theme);
   const tmp4 = callback2(isThemeDarkResult);
   const items = [tmp4.themeSelectorGradientBackground, ];
@@ -40,7 +40,7 @@ function GradientThemeBackground(arg0) {
   const items1 = [closure_6(importDefault(4848), obj1), ];
   if (isThemeLocked) {
     const obj3 = { source: null, style: null };
-    obj3[0] = importDefault(14510);
+    obj3[0] = importDefault(14518);
     obj3[1] = tmp4.lock;
     isThemeLocked = tmp7(require(1297) /* Button */.Icon, obj3);
   }
@@ -58,13 +58,13 @@ function DefaultThemeBackground(item) {
   } else {
     theme = item.theme;
   }
-  let tmpResult = tmp(4005);
+  let tmpResult = tmp(4024);
   const token = tmpResult.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWER, theme);
-  tmpResult = tmp(4005);
+  tmpResult = tmp(4024);
   const token1 = tmpResult.useToken(importDefault(712).colors.BORDER_STRONG, theme);
   obj = { style: null, children: null };
   obj = { width: "100%", height: "100%", backgroundColor: token, borderColor: token1, borderWidth: 1, borderRadius: null };
-  const token2 = require(4005) /* map */.useToken(importDefault(712).colors.ICON_STRONG, theme);
+  const token2 = require(4024) /* map */.useToken(importDefault(712).colors.ICON_STRONG, theme);
   obj[5] = importDefault(712).radii.sm;
   obj[0] = obj;
   let tmp9Result = null;
@@ -73,7 +73,7 @@ function DefaultThemeBackground(item) {
     obj1[0] = { alignSelf: "center", justifyContent: "center", flex: 1 };
     const obj2 = { fill: null };
     obj2[0] = token2;
-    obj1[1] = tmp9(importDefault(14511), obj2);
+    obj1[1] = tmp9(importDefault(14519), obj2);
     tmp9Result = tmp9(tmp10, obj1);
   }
   obj[1] = tmp9Result;
@@ -83,7 +83,7 @@ function CustomThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   ({ item, isThemeLocked } = arg0);
-  let obj = require(4011) /* isThemeLight */;
+  let obj = require(1364) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(item.theme);
   const tmp4 = callback2(isThemeDarkResult);
   const items = [tmp4.themeSelectorGradientBackground, ];
@@ -102,7 +102,7 @@ function CustomThemeBackground(arg0) {
   const items1 = [closure_6(require(4848) /* getMixedGradientColor */.CustomThemedGradient, obj1), ];
   if (isThemeLocked) {
     const obj3 = { source: null, style: null };
-    obj3[0] = importDefault(14510);
+    obj3[0] = importDefault(14518);
     obj3[1] = tmp4.lock;
     isThemeLocked = tmp7(tmp(1297).Icon, obj3);
   }
@@ -148,14 +148,14 @@ export default function ThemeSelectorItem(onPress) {
   ({ themePreset, isPreview, isSelected, isNew } = onPress);
   const tmp = createCacheKey();
   if (isPreview) {
-    isPreview = themePreset.type !== require(4121) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME;
+    isPreview = themePreset.type !== require(1349) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME;
   }
-  if (themePreset.type === require(4121) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME) {
+  if (themePreset.type === require(1349) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME) {
     let obj = { item: null };
     obj[0] = themePreset;
     let tmp8 = callback(DefaultThemeBackground, obj);
     let tmp9 = callback;
-  } else if (themePreset.type === tmp4(4121).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
+  } else if (themePreset.type === tmp4(1349).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
     obj = { item: null, isThemeLocked: null };
     obj[0] = themePreset;
     obj[1] = isPreview;
@@ -168,7 +168,7 @@ export default function ThemeSelectorItem(onPress) {
     tmp8 = callback(GradientThemeBackground, obj);
     tmp9 = callback;
   }
-  const radioA11yNative = require(4019) /* useCheckboxA11yNative */.useRadioA11yNative({ selected: isSelected, disabled: isPreview });
+  const radioA11yNative = require(4032) /* useCheckboxA11yNative */.useRadioA11yNative({ selected: isSelected, disabled: isPreview });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj1 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress: onPress.onPress, accessibilityRole, accessibilityLabel: null, accessibilityState: null, accessibilityHint: null, children: null };
   obj1[4] = themePreset.getName();

@@ -1,10 +1,10 @@
-// Module ID: 14713
-// Function ID: 14714
+// Module ID: 14723
+// Function ID: 14724
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: [32, 19, 17, 1903, 21, 4303, 7663, 5767, 1236, 14714, 7661, 589, 1926, 2]
+// Dependencies: [32, 19, 17, 1922, 21, 4303, 7665, 5767, 1236, 14724, 7663, 589, 1945, 2]
 // Exports: default
 
-// Module 14713 (BackwardsCompatibleAppIconRows)
+// Module 14723 (BackwardsCompatibleAppIconRows)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -64,13 +64,13 @@ export default function AppIconRows(onSelect) {
   let limitedTimeAppIcons;
   let officialAppIcons;
   onSelect = onSelect.onSelect;
-  let obj = require(7661) /* fetchCurrentAppIcon */;
+  let obj = require(7663) /* fetchCurrentAppIcon */;
   const appIcons = obj.useAppIcons();
   ({ limitedTimeAppIcons, currentAppIcon, officialAppIcons } = appIcons);
   let obj1 = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = require(1926) /* isPremiumAtLeast */;
+  let obj2 = require(1945) /* isPremiumAtLeast */;
   const isPremiumResult = obj2.isPremium(stateFromStores);
   const tmp7 = limitedTimeAppIcons.length > 0 && limitedTimeAppIcons.filter((isHidden) => !isHidden.isHidden).length > 0;
   let tmp10 = null;

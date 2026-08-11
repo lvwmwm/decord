@@ -1,10 +1,10 @@
-// Module ID: 12223
-// Function ID: 12224
+// Module ID: 12226
+// Function ID: 12227
 // Name: SuspiciousDownloadActionSheet
-// Dependencies: [19, 21, 4303, 712, 1609, 5397, 4712, 6027, 4299, 1236, 4714, 4271, 3992, 2]
+// Dependencies: [19, 21, 4303, 712, 1628, 5397, 4712, 6029, 4299, 1236, 4714, 4271, 4011, 2]
 // Exports: default
 
-// Module 12223 (SuspiciousDownloadActionSheet)
+// Module 12226 (SuspiciousDownloadActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -26,9 +26,9 @@ export default function SuspiciousDownloadActionSheet(href) {
   const tmp = createCacheKey();
   let obj = { startExpanded: true, children: null };
   obj = { spacing: 16, justify: "center", align: "center", style: items, children: null };
-  items = [tmp.container, { paddingBottom: importDefault(1609)().bottom }];
+  items = [tmp.container, { paddingBottom: importDefault(1628)().bottom }];
   obj = { spacing: 8, justify: "center", align: "center", children: null };
-  const items1 = [callback(href(6027).TrafficConeSpotIllustration, {}), , ];
+  const items1 = [callback(href(6029).TrafficConeSpotIllustration, {}), , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = href(1236).intl;
   obj1[4] = intl.string(href(1236).t.XtDo9Z);

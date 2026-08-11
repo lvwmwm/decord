@@ -1,7 +1,7 @@
 // Module ID: 4629
 // Function ID: 4630
 // Name: getStripe
-// Dependencies: [5, 32, 1975, 676, 3, 4630, 530, 589, 2]
+// Dependencies: [5, 32, 1994, 676, 3, 4630, 530, 589, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
 // Module 4629 (getStripe)

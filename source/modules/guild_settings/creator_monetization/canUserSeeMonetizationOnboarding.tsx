@@ -1,7 +1,7 @@
 // Module ID: 5879
 // Function ID: 5880
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1903, 5880, 5881, 3922, 2]
+// Dependencies: [1922, 5880, 5881, 3941, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
 // Module 5879 (canUserSeeMonetizationOnboarding)
@@ -22,6 +22,6 @@ export const canUserSeeMonetizationOnboarding = function canUserSeeMonetizationO
   const obj3 = require(5880) /* computeGuildRoleSubscriptionSettingsVisibility */;
   obj[3] = require(5881) /* set */.isUserInCreatorMonetizationEligibleCountry();
   const obj4 = require(5881) /* set */;
-  obj[4] = require(3922) /* isRestrictedFromShowingGuildPurchaseEntryPoints */.shouldRestrictUpdatingCreatorMonetizationSettings(mergeGuildAvatar.id);
+  obj[4] = require(3941) /* isRestrictedFromShowingGuildPurchaseEntryPoints */.shouldRestrictUpdatingCreatorMonetizationSettings(mergeGuildAvatar.id);
   return obj.canSeeGuildRoleSubscriptionSettings(obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 6501
-// Function ID: 6502
+// Module ID: 6503
+// Function ID: 6504
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6501 (metadata)
+// Module 6503 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LightningIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/9c871203d2feaa09f0131f60f8ee50d7fa7c3cb8458e9f52236611720c15d7f6.png";

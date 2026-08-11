@@ -1,10 +1,10 @@
-// Module ID: 10720
-// Function ID: 10721
+// Module ID: 10725
+// Function ID: 10726
 // Name: getIsTabletActivitySurface
-// Dependencies: [4283, 1605, 709, 2]
+// Dependencies: [4283, 1624, 709, 2]
 // Exports: getDefaultOrientationLockState, getIsTabletActivitySurface, setOrientationLockState
 
-// Module 10720 (getIsTabletActivitySurface)
+// Module 10725 (getIsTabletActivitySurface)
 import DCDDeviceManager from "DCDDeviceManager";
 import isMetaQuest from "isMetaQuest";
 

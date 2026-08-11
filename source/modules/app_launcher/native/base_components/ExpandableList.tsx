@@ -1,10 +1,10 @@
-// Module ID: 11495
-// Function ID: 11496
+// Module ID: 11498
+// Function ID: 11499
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 4303, 8853, 4036, 4304, 4307, 5374, 1236, 4299, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 8859, 4042, 4304, 4307, 5374, 1236, 4299, 2]
 // Exports: default
 
-// Module 11495 (ExpandableList)
+// Module 11498 (ExpandableList)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -50,7 +50,7 @@ export default function ExpandableList(items) {
   first = tmp2[0];
   closure_6 = tmp2[1];
   let obj7 = dependencyMap;
-  let tmp5 = importDefault(8853)(first);
+  let tmp5 = importDefault(8859)(first);
   if (tmp5 == null) {
     tmp5 = first;
   }
@@ -73,11 +73,11 @@ export default function ExpandableList(items) {
   if (null == showsExpandCTAOverride) {
     showsExpandCTAOverride = items.length > bound;
   }
-  let obj2 = memo1(4036);
+  let obj2 = memo1(4042);
   sharedValue = obj2.useSharedValue(0);
-  let obj3 = memo1(4036);
+  let obj3 = memo1(4042);
   sharedValue1 = obj3.useSharedValue(0);
-  let obj4 = memo1(4036);
+  let obj4 = memo1(4042);
   class C {
     constructor() {
       if (c5) {
@@ -104,7 +104,7 @@ export default function ExpandableList(items) {
   const memo = obj.useMemo(() => memo1.slice(0, bound), items3);
   const items4 = [items, bound];
   memo1 = obj.useMemo(() => memo1.slice(bound, memo1.length), items4);
-  let obj5 = memo1(4036);
+  let obj5 = memo1(4042);
   class A {
     constructor() {
       if (0 !== onExpand.get()) {
@@ -168,7 +168,7 @@ export default function ExpandableList(items) {
   }
   items6[1] = tmp16Result;
   obj[1] = items6;
-  const items7 = [c7(importDefault(4036).View, obj), ];
+  const items7 = [c7(importDefault(4042).View, obj), ];
   if (!showsExpandCTAOverride) {
     obj3 = { children: null };
     items7[1] = showsExpandCTAOverride;

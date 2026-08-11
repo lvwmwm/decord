@@ -1,10 +1,10 @@
-// Module ID: 12660
-// Function ID: 12661
+// Module ID: 12664
+// Function ID: 12665
 // Name: LinkExternalMediumIcon
-// Dependencies: [19, 21, 712, 4004, 12661, 2]
+// Dependencies: [19, 21, 712, 4023, 12665, 2]
 // Exports: LinkExternalMediumIcon
 
-// Module 12660 (LinkExternalMediumIcon)
+// Module 12664 (LinkExternalMediumIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const LinkExternalMediumIcon = function LinkExternalMediumIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12661) /* registerAsset */;
+  obj[0] = require(12665) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

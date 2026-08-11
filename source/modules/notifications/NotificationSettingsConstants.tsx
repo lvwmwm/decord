@@ -1,9 +1,9 @@
-// Module ID: 13719
-// Function ID: 13720
+// Module ID: 13727
+// Function ID: 13728
 // Name: items2
-// Dependencies: [2578, 13720, 13721, 2]
+// Dependencies: [2597, 13728, 13729, 2]
 
-// Module 13719 (items2)
+// Module 13727 (items2)
 let obj = { badge: true, visibility: "popup", vibrate: true, sound: true };
 obj = { badge: true, visibility: "default", vibrate: true, sound: true };
 obj = { badge: true, visibility: "default", vibrate: false, sound: false };

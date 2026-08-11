@@ -1,10 +1,10 @@
-// Module ID: 11482
-// Function ID: 11483
+// Module ID: 11485
+// Function ID: 11486
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 676, 21, 4303, 712, 3998, 1974, 1236, 11483, 9549, 4299, 4846, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 4017, 1993, 1236, 11486, 9555, 4299, 4846, 2]
 // Exports: default
 
-// Module 11482 (LearnMoreAboutAppsSection)
+// Module 11485 (LearnMoreAboutAppsSection)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -30,8 +30,8 @@ const result = require("ME").fileFinishedImporting("modules/app_launcher/native/
 export default function LearnMoreAboutAppsSection(visible) {
   const tmp = createCacheKey();
   const callback = React.useCallback(() => {
-    const obj = callback(3998);
-    obj.openURL(callback(1974).getAppsSupportURL(constants.APPS_LEARN_MORE));
+    const obj = callback(4017);
+    obj.openURL(callback(1993).getAppsSupportURL(constants.APPS_LEARN_MORE));
   }, []);
   const intl = require(1236) /* getSystemLocale */.intl;
   const stringResult = intl.string(require(1236) /* getSystemLocale */.t["kw8/Ec"]);
@@ -40,7 +40,7 @@ export default function LearnMoreAboutAppsSection(visible) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   let obj = { sectionName: null, numItems: 1, numVisibleItems: 1, viewed: null, children: null };
   const formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.xx5Sug, { sectionTitle: stringResult, sectionBody: stringResult1 });
-  obj[0] = require(9549) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
+  obj[0] = require(9555) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
   obj[3] = visible.visible;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.divider };
@@ -54,5 +54,5 @@ export default function LearnMoreAboutAppsSection(visible) {
   items[5] = callback(View, { style: tmp.divider });
   obj[1] = items;
   obj[4] = callback2(View, obj);
-  return callback(importDefault(11483), obj);
+  return callback(importDefault(11486), obj);
 };

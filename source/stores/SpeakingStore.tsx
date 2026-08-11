@@ -1,7 +1,7 @@
 // Module ID: 5137
 // Function ID: 5138
 // Name: anyoneHasFlagInContext
-// Dependencies: [32, 1372, 4351, 4375, 1960, 676, 4364, 3934, 589, 5138, 709, 2]
+// Dependencies: [32, 1391, 4351, 4375, 1979, 676, 4364, 3953, 589, 5138, 709, 2]
 
 // Module 5137 (anyoneHasFlagInContext)
 import _slicedToArray from "_slicedToArray";
@@ -265,7 +265,7 @@ const speakingStore = new SpeakingStore(require("dispatcher"), {
     if ((speakingFlags & constants.PRIORITY) === constants.PRIORITY) {
       channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
       if (null != channel) {
-        let obj = importAll(3934);
+        let obj = importAll(3953);
         obj = { permission: null, user: null, context: null };
         obj[0] = Permissions.PRIORITY_SPEAKER;
         obj[1] = userId;

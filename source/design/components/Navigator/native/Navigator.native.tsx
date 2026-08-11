@@ -1,7 +1,7 @@
 // Module ID: 5783
 // Function ID: 5784
 // Name: NavigationStack
-// Dependencies: [32, 19, 17, 21, 4303, 712, 5784, 5270, 4005, 5785, 1609, 1236, 12, 5818, 1481, 4239, 5825, 1209, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 5784, 5270, 4024, 5785, 1628, 1236, 12, 5818, 1500, 4239, 5825, 1209, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
 // Module 5783 (NavigationStack)
@@ -225,7 +225,7 @@ function WrappedNavigationStack(arg0) {
   ({ initialRouteName, onStateChange } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   let navigationContainerRef;
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   navigationContainerRef = obj.createNavigationContainerRef();
   const first = callback(React.useState(() => {
     let tmp2;
@@ -257,8 +257,8 @@ function WrappedNavigationStack(arg0) {
   obj1 = { initialRouteName };
   const merged1 = Object.assign(merged);
   obj[5] = <NavigationStack initialRouteName={initialRouteName} />;
-  obj[0] = jsx(require(1481) /* createStandardNavigationFactories */.NavigationContainer, { children: null });
-  return jsx(require(1481) /* createStandardNavigationFactories */.NavigationIndependentTree, { children: null });
+  obj[0] = jsx(require(1500) /* createStandardNavigationFactories */.NavigationContainer, { children: null });
+  return jsx(require(1500) /* createStandardNavigationFactories */.NavigationIndependentTree, { children: null });
 }
 ({ StyleSheet, View: c5 } = get_ActivityIndicator);
 createCacheKey = { container: null, navbar: null, headerLeftContainerStyle: null, headerRightContainerStyle: null };

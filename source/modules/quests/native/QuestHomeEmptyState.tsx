@@ -1,10 +1,10 @@
-// Module ID: 14306
-// Function ID: 14307
+// Module ID: 14314
+// Function ID: 14315
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 4005, 4161, 5328, 500, 4299, 14307, 4725, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 4024, 4161, 5328, 500, 4299, 14315, 4725, 2]
 // Exports: default
 
-// Module 14306 (QuestHomeEmptyState)
+// Module 14314 (QuestHomeEmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { VerticalGradient } from "ME";
@@ -44,7 +44,7 @@ export default function QuestHomeEmptyState(subtitle) {
     subtitle = intl2.string(require(1236) /* getSystemLocale */.t["R7mv+G"]);
   }
   const tmp5 = createCacheKey();
-  let obj = require(4005) /* map */;
+  let obj = require(4024) /* map */;
   const token = obj.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWER);
   obj = { bottom: null, style: null, children: null };
   let obj2 = require(500) /* set */;
@@ -69,7 +69,7 @@ export default function QuestHomeEmptyState(subtitle) {
     const obj6 = { children: null };
     const obj7 = { style: null, source: null, resizeMode: "cover" };
     obj7[0] = tmp5.emptyImage;
-    obj7[1] = tmp7(14307);
+    obj7[1] = tmp7(14315);
     const items2 = [tmp9(closure_4, obj7), ];
     const obj8 = { style: null, end: null, start: null, colors: null };
     obj8[0] = tmp5.gradient;

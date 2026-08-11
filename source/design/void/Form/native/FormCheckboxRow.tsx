@@ -1,7 +1,7 @@
 // Module ID: 5366
 // Function ID: 5367
 // Name: FormCheckboxRow
-// Dependencies: [19, 21, 4303, 4019, 5367, 5393, 2]
+// Dependencies: [19, 21, 4303, 4032, 5367, 5393, 2]
 // Exports: default
 
 // Module 5366 (FormCheckboxRow)
@@ -18,7 +18,7 @@ export default function FormCheckboxRow(selected) {
   let accessibilityState;
   selected = selected.selected;
   const merged = Object.assign(selected, Object.create(null));
-  let obj = require(4019) /* useCheckboxA11yNative */;
+  let obj = require(4032) /* useCheckboxA11yNative */;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   obj = {};

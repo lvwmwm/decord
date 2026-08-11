@@ -1,8 +1,8 @@
-// Module ID: 10883
-// Function ID: 10884
-// Dependencies: [19, 4351, 10506, 676, 21, 4123, 1358, 1236, 4643, 10884, 10492, 2]
+// Module ID: 10888
+// Function ID: 10889
+// Dependencies: [19, 4351, 10511, 676, 21, 4125, 1377, 1236, 4643, 10889, 10497, 2]
 
-// Module 10883
+// Module 10888
 import "noop";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { GAME_CONSOLE_ALERT_MODAL_LOCATION as closure_4 } from "XBOX_URL_BASE";
@@ -18,7 +18,7 @@ let result = require("XBOX_URL_BASE").fileFinishedImporting("modules/game_consol
 export default {
   maybeShowPTTAlert(XBOX) {
     if (mode.getMode() === constants.PUSH_TO_TALK) {
-      if (!obj2.UNSAFE_isDismissibleContentDismissed(require(1358) /* DismissibleContent */.DismissibleContent.CONSOLE_PTT_DISABLE_ALERT)) {
+      if (!obj2.UNSAFE_isDismissibleContentDismissed(require(1377) /* DismissibleContent */.DismissibleContent.CONSOLE_PTT_DISABLE_ALERT)) {
         let obj = {};
         let intl = tmp10(1236).intl;
         obj[constants2.XBOX] = intl.string(tmp10(1236).t.bVZ7vy);
@@ -44,7 +44,7 @@ export default {
         }
         return resolved;
       }
-      obj2 = require(4123) /* UNSAFE_isDismissibleContentDismissed */;
+      obj2 = require(4125) /* UNSAFE_isDismissibleContentDismissed */;
     }
     return Promise.resolve();
   },
@@ -58,7 +58,7 @@ export default {
     obj = { title, body: null, onConfirm: null };
     obj = { body, errorCodeMessage, dismissCallback: null };
     obj[2] = importDefault(4643).close;
-    obj[1] = jsx(reconnectPlatformType(10884).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: null });
+    obj[1] = jsx(reconnectPlatformType(10889).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: null });
     obj[2] = function onConfirm() {
       if (null != reconnectPlatformType) {
         const obj = { platformType: null, location: null };

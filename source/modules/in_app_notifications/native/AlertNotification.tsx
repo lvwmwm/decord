@@ -1,10 +1,10 @@
-// Module ID: 9897
-// Function ID: 9898
+// Module ID: 9902
+// Function ID: 9903
 // Name: AlertNotification
-// Dependencies: [19, 17, 21, 5779, 8293, 712, 4303, 9772, 1236, 4311, 9852, 7962, 9788, 2]
+// Dependencies: [19, 17, 21, 5779, 8298, 712, 4303, 9777, 1236, 4311, 9857, 7964, 9793, 2]
 // Exports: default
 
-// Module 9897 (AlertNotification)
+// Module 9902 (AlertNotification)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export default function AlertNotification(notification) {
   channel = notification.channel;
   guild = notification.guild;
   const tmp = callback3();
-  let obj = channel(9772);
+  let obj = channel(9777);
   const incidentData = obj.useGuildIncidentsState(notification.key).incidentData;
   let raidDetectedAt;
   if (incidentData != null) {
@@ -63,17 +63,17 @@ export default function AlertNotification(notification) {
   const obj1 = { cutouts: items2, children: null };
   items2 = [obj];
   obj1[1] = callback(guild(5779), { guild, selected: false });
-  const items3 = [callback(guild(8293), obj1), ];
+  const items3 = [callback(guild(8298), obj1), ];
   const obj2 = { style: tmp.warningBadge, children: null };
   const obj3 = { style: tmp.warningIcon, color: null };
   obj3[1] = guild(712).colors.ICON_FEEDBACK_WARNING;
-  obj2[1] = callback(channel(7962).WarningIcon, obj3);
+  obj2[1] = callback(channel(7964).WarningIcon, obj3);
   items3[1] = callback(View, obj2);
   obj[0] = items3;
   obj[0] = callback2(closure_6, obj);
   obj[1] = memo;
-  obj[2] = callback(channel(9788).SystemMessageText, { text: stringResult });
+  obj[2] = callback(channel(9793).SystemMessageText, { text: stringResult });
   obj[3] = callback;
   obj[4] = notification;
-  return callback(channel(9852).NotificationPressable, obj);
+  return callback(channel(9857).NotificationPressable, obj);
 };

@@ -1,11 +1,11 @@
-// Module ID: 15951
-// Function ID: 15952
-// Dependencies: [19, 17, 3938, 676, 21, 4303, 5236, 712, 11953, 589, 698, 1236, 8201, 4638, 1297, 2]
+// Module ID: 15968
+// Function ID: 15969
+// Dependencies: [19, 17, 3957, 676, 21, 4303, 5236, 712, 11956, 589, 698, 1236, 8205, 4638, 1297, 2]
 
-// Module 15951
+// Module 15968
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import ME from "ME";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -36,11 +36,11 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   channel = channel.channel;
   let message;
   const tmp = callback();
-  let obj = channel(11953);
+  let obj = channel(11956);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const items1 = [message];
   const stateFromStoresObject = channel(589).useStateFromStoresObject(items, () => {
     let isBlockedForMessageResult = null != message;
@@ -94,7 +94,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(8201)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8205)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -142,6 +142,6 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   obj = { style: channel.style, children: jsx(tmp2(1297).LegacyText, { style: tmp14, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult }) };
   return <View style={arg0.style}>{jsx(tmp2(1297).LegacyText, { style: tmp14, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult })}</View>;
 });
-const result = require("upsertRelationship").fileFinishedImporting("modules/message_request/native/MessageRequestPreview.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/message_request/native/MessageRequestPreview.tsx");
 
 export default memoResult;

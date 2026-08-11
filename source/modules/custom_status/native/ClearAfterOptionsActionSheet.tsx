@@ -1,10 +1,10 @@
-// Module ID: 9524
-// Function ID: 9525
+// Module ID: 9530
+// Function ID: 9531
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [32, 19, 17, 9456, 21, 4303, 712, 5397, 5396, 1236, 7985, 7984, 9525, 4714, 4271, 2]
+// Dependencies: [32, 19, 17, 9462, 21, 4303, 712, 5397, 5396, 1236, 7987, 7986, 9531, 4714, 4271, 2]
 // Exports: default
 
-// Module 9524 (ClearAfterOptionsActionSheet)
+// Module 9530 (ClearAfterOptionsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -43,10 +43,10 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   obj[2] = initialValue;
   obj[4] = ClearAfterOptions.map((value) => {
     const obj = { value, label: null };
-    obj[1] = callback2(9525)(value);
-    return callback3(callback(7984).TableRadioRow, obj, value);
+    obj[1] = callback2(9531)(value);
+    return callback3(callback(7986).TableRadioRow, obj, value);
   });
-  const items = [callback2(require(7985) /* context */.TableRadioGroup, obj), ];
+  const items = [callback2(require(7987) /* context */.TableRadioGroup, obj), ];
   const obj1 = { style: tmp.buttonWrapper, children: null };
   const obj2 = {
     onPress() {

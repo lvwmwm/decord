@@ -1,9 +1,9 @@
-// Module ID: 10259
-// Function ID: 10260
+// Module ID: 10264
+// Function ID: 10265
 // Name: items
 // Dependencies: [4526, 712, 2]
 
-// Module 10259 (items)
+// Module 10264 (items)
 import { CheckpointPersonas } from "CheckpointPersonas";
 
 let obj = {};

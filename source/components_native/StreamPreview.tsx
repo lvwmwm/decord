@@ -1,10 +1,10 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 10945
+// Function ID: 10946
 // Name: render
-// Dependencies: [19, 17, 1302, 21, 4303, 712, 4013, 4153, 10941, 10942, 1236, 4846, 10943, 589, 2]
+// Dependencies: [19, 17, 1302, 21, 4303, 712, 4031, 1363, 10946, 10947, 1236, 4846, 10948, 589, 2]
 // Exports: default
 
-// Module 10940 (render)
+// Module 10945 (render)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
@@ -39,9 +39,9 @@ DefaultFallback.prototype["render"] = function render() {
   let obj = { style: tmp.wrapper, children: null };
   obj = { resizeMode: "contain", style: tmp.fallbackImage, source: null };
   if (obj3.isThemeDark(this.props.theme)) {
-    let tmp6Result = tmp6(10941);
+    let tmp6Result = tmp6(10946);
   } else {
-    tmp6Result = tmp6(10942);
+    tmp6Result = tmp6(10947);
   }
   obj[2] = tmp6Result;
   obj[1] = closure_6(closure_3, obj);
@@ -146,7 +146,7 @@ export default function ConnectedStreamPreview(stream) {
   let ownerId;
   let previewUrl;
   ({ guildId, channelId, ownerId } = stream.stream);
-  ({ previewUrl, isLoading } = importDefault(10943)(guildId, channelId, ownerId));
+  ({ previewUrl, isLoading } = importDefault(10948)(guildId, channelId, ownerId));
   let obj = require(589) /* initialize */;
   const items = [handleThemeChange];
   obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 10867
-// Function ID: 10868
+// Module ID: 10872
+// Function ID: 10873
 // Name: VoiceChatCallScreenHeaderIconInner
-// Dependencies: [19, 17, 4315, 676, 21, 4303, 712, 5267, 589, 10802, 12, 4013, 4846, 1297, 2]
+// Dependencies: [19, 17, 4315, 676, 21, 4303, 712, 5267, 589, 10807, 12, 4031, 4846, 1297, 2]
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
 
-// Module 10867 (VoiceChatCallScreenHeaderIconInner)
+// Module 10872 (VoiceChatCallScreenHeaderIconInner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
@@ -29,7 +29,7 @@ function VoiceChatCallScreenHeaderIconInner(onPress) {
   }
   obj[3] = noop;
   obj[4] = children;
-  obj[1] = closure_6(importDefault(10802), obj);
+  obj[1] = closure_6(importDefault(10807), obj);
   return closure_6(View, obj);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -77,5 +77,5 @@ export const VoiceChatCallScreenHeaderIcon = function VoiceChatCallScreenHeaderI
   obj = {};
   const merged = Object.assign(arg0);
   obj[1] = callback(VoiceChatCallScreenHeaderIconInner, obj);
-  return callback(require(4013) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(4031) /* ManaContext */.ThemeContextProvider, obj);
 };

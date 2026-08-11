@@ -1,7 +1,7 @@
 // Module ID: 5354
 // Function ID: 5355
 // Name: decideFileExtension
-// Dependencies: [1467, 2]
+// Dependencies: [1486, 2]
 // Exports: decideFileExtension
 
 // Module 5354 (decideFileExtension)
@@ -15,7 +15,7 @@ export const decideFileExtension = function decideFileExtension(outer1_0, conten
   }
   let tmp;
   if (flag) {
-    const toURLSafeResult = importDefault(1467).toURLSafe(outer1_0);
+    const toURLSafeResult = importDefault(1486).toURLSafe(outer1_0);
     let formatted;
     if (toURLSafeResult != null) {
       const searchParams = toURLSafeResult.searchParams;
@@ -35,7 +35,7 @@ export const decideFileExtension = function decideFileExtension(outer1_0, conten
       }
     }
     tmp = tmp7;
-    const obj = importDefault(1467);
+    const obj = importDefault(1486);
   }
   if (tmp == null) {
     let tmp9;
@@ -61,7 +61,7 @@ export const decideFileExtension = function decideFileExtension(outer1_0, conten
     tmp = tmp9;
   }
   if (tmp == null) {
-    const toURLSafeResult1 = importDefault(1467).toURLSafe(outer1_0);
+    const toURLSafeResult1 = importDefault(1486).toURLSafe(outer1_0);
     let tmp15;
     if (null != toURLSafeResult1) {
       let formatted1;
@@ -83,7 +83,7 @@ export const decideFileExtension = function decideFileExtension(outer1_0, conten
       tmp15 = tmp14;
     }
     tmp = tmp15;
-    const obj3 = importDefault(1467);
+    const obj3 = importDefault(1486);
   }
   return tmp;
 };

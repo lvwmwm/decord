@@ -1,12 +1,12 @@
-// Module ID: 9061
-// Function ID: 9062
+// Module ID: 9067
+// Function ID: 9068
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 3938, 1903, 21, 4303, 8970, 4494, 1872, 4271, 8968, 1988, 1236, 4299, 2]
+// Dependencies: [19, 3957, 1922, 21, 4303, 8976, 4494, 1891, 4271, 8974, 2007, 1236, 4299, 2]
 // Exports: default
 
-// Module 9061 (GuildStageChannelSelection)
+// Module 9067 (GuildStageChannelSelection)
 import "noop";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -24,7 +24,7 @@ export default function GuildStageChannelSelection(channel) {
     const result = obj.dismissGlobalKeyboard();
     const mapped = channelsUserCanStartStageIn.map((id) => {
       const obj = { value: id.id, label: null };
-      obj[1] = callback(table[6]).computeChannelName(id, mergeGuildAvatar, upsertRelationship, true);
+      obj[1] = callback(table[6]).computeChannelName(id, mergeGuildAvatar, markAllUserIdListsStale, true);
       return obj;
     });
     obj = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };

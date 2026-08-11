@@ -1,7 +1,7 @@
 // Module ID: 4522
 // Function ID: 4523
 // Name: dropChannelIfEmpty
-// Dependencies: [1372, 676, 1384, 4523, 589, 709, 2]
+// Dependencies: [1391, 676, 1403, 4523, 589, 709, 2]
 
 // Module 4522 (dropChannelIfEmpty)
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -73,7 +73,7 @@ const ephemeralMessageStore = new EphemeralMessageStore(require("dispatcher"), {
     } else {
       return false;
     }
-    obj = require(1384) /* hasFlag */;
+    obj = require(1403) /* hasFlag */;
     tmp = require;
   },
   MESSAGE_UPDATE: function handleMessageUpdate(message) {

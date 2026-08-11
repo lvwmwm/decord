@@ -1,7 +1,7 @@
 // Module ID: 5569
 // Function ID: 5570
 // Name: t
-// Dependencies: [17, 5400, 5407, 1634, 5570, 5571]
+// Dependencies: [17, 5400, 5407, 1653, 5570, 5571]
 // Exports: useGestureEventsHandlersDefault
 
 // Module 5569 (t)

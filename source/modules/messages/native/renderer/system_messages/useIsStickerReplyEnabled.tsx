@@ -1,10 +1,10 @@
-// Module ID: 8104
-// Function ID: 8105
+// Module ID: 8106
+// Function ID: 8107
 // Name: computeIsStickerReplyEnabled
-// Dependencies: [1971, 3929, 1903, 676, 5889, 2]
+// Dependencies: [1990, 3948, 1922, 676, 5889, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 8104 (computeIsStickerReplyEnabled)
+// Module 8106 (computeIsStickerReplyEnabled)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";

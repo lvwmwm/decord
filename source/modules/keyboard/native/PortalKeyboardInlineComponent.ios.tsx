@@ -1,8 +1,8 @@
-// Module ID: 11994
-// Function ID: 11995
-// Dependencies: [19, 17, 4295, 4168, 1875, 6004, 1607, 4730, 4169, 4166, 4172, 11423, 2]
+// Module ID: 11997
+// Function ID: 11998
+// Dependencies: [19, 17, 4295, 4168, 1894, 6006, 1626, 4730, 4169, 4166, 4172, 11426, 2]
 
-// Module 11994
+// Module 11997
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -24,10 +24,10 @@ const memoResult = importAllResult.memo(function InlinePortalKeyboard(messagesRe
   id = importAllResult.useId();
   const tmp2 = id(4168)();
   dependencyMap = tmp2;
-  let tmp4 = id(6004)({ includeCustomKeyboard: false });
+  let tmp4 = id(6006)({ includeCustomKeyboard: false });
   importAllResult = tmp4;
-  let tmp3 = id(1875)();
-  keyboardContextForType = messagesRef(4168).useKeyboardContextForType(messagesRef(1607).KeyboardTypes.SYSTEM);
+  let tmp3 = id(1894)();
+  keyboardContextForType = messagesRef(4168).useKeyboardContextForType(messagesRef(1626).KeyboardTypes.SYSTEM);
   id(4730)(() => () => {
     const PortalKeyboardUIStore = outer1_0(outer1_2[8]).PortalKeyboardUIStore;
     const field = PortalKeyboardUIStore.getField("keyboard");

@@ -1,10 +1,10 @@
-// Module ID: 7595
-// Function ID: 7596
+// Module ID: 7597
+// Function ID: 7598
 // Name: getMobileNitroMarketingRedesignExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: getMobileNitroMarketingRedesignExperiment
 
-// Module 7595 (getMobileNitroMarketingRedesignExperiment)
+// Module 7597 (getMobileNitroMarketingRedesignExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

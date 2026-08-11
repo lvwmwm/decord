@@ -1,10 +1,10 @@
-// Module ID: 8338
-// Function ID: 8339
+// Module ID: 8343
+// Function ID: 8344
 // Name: getShelfBadgeTypeIfActive
-// Dependencies: [109, 5, 8339, 4326, 11474, 676, 4737, 4296, 1236, 7589, 10606, 500, 1935, 6982, 9995, 7142, 6917, 4642, 1416, 9549, 11510, 6980, 10619, 2]
+// Dependencies: [109, 5, 8344, 4326, 11477, 676, 4737, 4296, 1236, 7591, 10611, 500, 1954, 6985, 10000, 7143, 6920, 4642, 1435, 9555, 11513, 6983, 10624, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 8338 (getShelfBadgeTypeIfActive)
+// Module 8343 (getShelfBadgeTypeIfActive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import ME from "ME";
 import getIndexKey from "getIndexKey";
@@ -20,16 +20,16 @@ function getShelfBadgeTypeIfActive(application) {
   if (application.id !== BuiltInSectionId.BUILT_IN) {
     let hasApplicationFlagResult = application.id !== tmp.BUILT_IN;
     if (hasApplicationFlagResult) {
-      hasApplicationFlagResult = require(7589) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-      const obj = require(7589) /* getApplicationFlags */;
+      hasApplicationFlagResult = require(7591) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+      const obj = require(7591) /* getApplicationFlags */;
     }
     tmp2 = null;
   }
   let tmp9;
   if (tmp2 != null) {
     const obj2 = require(500) /* set */;
-    tmp9 = tmp2.client_platform_config[importDefault(10606)(undefined, obj2.getOS(obj2))];
-    const tmp12 = importDefault(10606);
+    tmp9 = tmp2.client_platform_config[importDefault(10611)(undefined, obj2.getOS(obj2))];
+    const tmp12 = importDefault(10611);
   }
   const timestamp = Date.now();
   let label_until;
@@ -51,7 +51,7 @@ function getShelfBadgeTypeIfActive(application) {
             label_type = tmp9.label_type;
           }
           if (label_type == null) {
-            label_type = require(1935) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NONE;
+            label_type = require(1954) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NONE;
           }
           let NONE = label_type;
         }
@@ -59,7 +59,7 @@ function getShelfBadgeTypeIfActive(application) {
       }
     }
   }
-  NONE = require(1935) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NONE;
+  NONE = require(1954) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NONE;
 }
 let closure_3 = ["fakeAppIconURL"];
 let result = require("getIndexKey").fileFinishedImporting("modules/app_launcher/utils/AppLauncherUtils.tsx");
@@ -89,33 +89,33 @@ export const getSectionDescription = function getSectionDescription(FAKE_BUILT_I
 export const isEmbeddedApp = function isEmbeddedApp(application) {
   let hasApplicationFlagResult = application.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(7589) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-    const obj = require(7589) /* getApplicationFlags */;
+    hasApplicationFlagResult = require(7591) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+    const obj = require(7591) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 };
 export const isPartnerApplication = function isPartnerApplication(application) {
   let hasApplicationFlagResult = application.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(7589) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARTNER);
-    const obj = require(7589) /* getApplicationFlags */;
+    hasApplicationFlagResult = require(7591) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARTNER);
+    const obj = require(7591) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 };
 export const isPromotedApplication = function isPromotedApplication(FAKE_BUILT_IN_APP2) {
   let hasApplicationFlagResult = FAKE_BUILT_IN_APP2.id !== BuiltInSectionId.BUILT_IN;
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(7589) /* getApplicationFlags */.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
-    const obj = require(7589) /* getApplicationFlags */;
+    hasApplicationFlagResult = require(7591) /* getApplicationFlags */.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
+    const obj = require(7591) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 };
 export { getShelfBadgeTypeIfActive };
 export const getShelfBadgeNameIfActive = function getShelfBadgeNameIfActive(application) {
   const tmp = getShelfBadgeTypeIfActive(application);
-  if (require(1935) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW === tmp) {
+  if (require(1954) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW === tmp) {
     return "New";
-  } else if (tmp2(1935).EmbeddedActivityLabelTypes.UPDATED === tmp) {
+  } else if (tmp2(1954).EmbeddedActivityLabelTypes.UPDATED === tmp) {
     return "Updated";
   } else {
     return "";
@@ -127,8 +127,8 @@ export const getEmbeddedActivityConfig = function getEmbeddedActivityConfig(id) 
   if (id.id !== BuiltInSectionId.BUILT_IN) {
     let hasApplicationFlagResult = id.id !== tmp.BUILT_IN;
     if (hasApplicationFlagResult) {
-      hasApplicationFlagResult = require(7589) /* getApplicationFlags */.hasApplicationFlag(id, ApplicationFlags.EMBEDDED);
-      const obj = require(7589) /* getApplicationFlags */;
+      hasApplicationFlagResult = require(7591) /* getApplicationFlags */.hasApplicationFlag(id, ApplicationFlags.EMBEDDED);
+      const obj = require(7591) /* getApplicationFlags */;
     }
     tmp2 = null;
   }
@@ -283,10 +283,10 @@ export const getApplicationDetails = function getApplicationDetails(id, guildMem
     obj = {};
     const merged = Object.assign(tmp2);
     ({ id: obj5.id, icon: obj5.icon } = id);
-    obj[0] = importDefault(1416).getApplicationIconURL(obj);
+    obj[0] = importDefault(1435).getApplicationIconURL(obj);
     ({ name: obj3[1], description: obj3[2] } = id);
     let obj1 = obj;
-    const obj4 = importDefault(1416);
+    const obj4 = importDefault(1435);
   } else {
     if (fakeAppIconURL == null) {
       fakeAppIconURL = null;
@@ -310,15 +310,15 @@ export const isApplicationAdSupported = function isApplicationAdSupported(applic
   if (application.id !== BuiltInSectionId.BUILT_IN) {
     let hasApplicationFlagResult = application.id !== tmp.BUILT_IN;
     if (hasApplicationFlagResult) {
-      hasApplicationFlagResult = require(7589) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-      const obj = require(7589) /* getApplicationFlags */;
+      hasApplicationFlagResult = require(7591) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+      const obj = require(7591) /* getApplicationFlags */;
     }
     tmp2 = null;
   }
   return null != tmp2 && tmp2.displays_advertisements;
 };
 export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(entrypoint) {
-  return entrypoint === require(9549) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
+  return entrypoint === require(9555) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
 };
 export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPointCommandName(displayName) {
   let str = "";
@@ -384,9 +384,9 @@ export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(
   }
   let result = null != guildState;
   if (result) {
-    result = require(6980) /* buildCommand */.hasCommandIndexForApp(id.id, guildState);
-    const obj = require(6980) /* buildCommand */;
+    result = require(6983) /* buildCommand */.hasCommandIndexForApp(id.id, guildState);
+    const obj = require(6983) /* buildCommand */;
   }
-  const obj2 = require(10619) /* canInstallApplication */;
-  return require(10619) /* canInstallApplication */.isAppUserInstallable(id) || result;
+  const obj2 = require(10624) /* canInstallApplication */;
+  return require(10624) /* canInstallApplication */.isAppUserInstallable(id) || result;
 };

@@ -1,9 +1,9 @@
-// Module ID: 1892
-// Function ID: 1893
+// Module ID: 1911
+// Function ID: 1912
 // Name: identity
-// Dependencies: [3, 589, 709, 1893, 2]
+// Dependencies: [3, 589, 709, 1912, 2]
 
-// Module 1892 (identity)
+// Module 1911 (identity)
 import { Store } from "initialize";
 
 let require = arg1;

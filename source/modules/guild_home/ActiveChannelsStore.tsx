@@ -1,9 +1,9 @@
-// Module ID: 12970
-// Function ID: 12971
+// Module ID: 12974
+// Function ID: 12975
 // Name: truncateOldMessageData
-// Dependencies: [1372, 4124, 1379, 11, 12, 589, 709, 2]
+// Dependencies: [1391, 4126, 1398, 11, 12, 589, 709, 2]
 
-// Module 12970 (truncateOldMessageData)
+// Module 12974 (truncateOldMessageData)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import { isGuildHomeChannel } from "set";

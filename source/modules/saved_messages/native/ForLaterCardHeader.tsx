@@ -1,10 +1,10 @@
-// Module ID: 12569
-// Function ID: 12570
+// Module ID: 12573
+// Function ID: 12574
 // Name: HeaderIcon
-// Dependencies: [17, 1891, 21, 4303, 712, 5778, 589, 5779, 9663, 1297, 4800, 4494, 4764, 1236, 4299, 2]
+// Dependencies: [17, 1910, 21, 4303, 712, 5778, 589, 5779, 9668, 1297, 4800, 4494, 4764, 1236, 4299, 2]
 // Exports: ForLaterCardHeader
 
-// Module 12569 (HeaderIcon)
+// Module 12573 (HeaderIcon)
 import { View } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import jsxProd from "jsxProd";
@@ -32,8 +32,8 @@ function HeaderIcon(channel) {
       obj = { channel: null, size: null };
       obj[0] = channel;
       obj[1] = tmp2(1297).AvatarSizes.XSMALL;
-      tmp6Result = tmp6(importDefault(9663), obj);
-      const tmp10 = importDefault(9663);
+      tmp6Result = tmp6(importDefault(9668), obj);
+      const tmp10 = importDefault(9668);
     } else {
       const obj1 = { style: null, children: null };
       obj1[0] = tmp.dmIcon;

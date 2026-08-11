@@ -1,10 +1,10 @@
-// Module ID: 9287
-// Function ID: 9288
+// Module ID: 9293
+// Function ID: 9294
 // Name: buildSteamStoreUrl
-// Dependencies: [4324, 676, 589, 9288, 9286, 1884, 2]
+// Dependencies: [4324, 676, 589, 9294, 9292, 1903, 2]
 // Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 9287 (buildSteamStoreUrl)
+// Module 9293 (buildSteamStoreUrl)
 import handleLoadMessages from "handleLoadMessages";
 import { Distributors } from "ME";
 
@@ -30,7 +30,7 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
           return null;
         } else {
           const websites = game.websites;
-          const found = websites.find((category) => category.category === callback(9286).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          const found = websites.find((category) => category.category === callback(9292).ThirdPartyGameApplicationWebsiteCategory.STEAM);
           if (found != null) {
             const url = found.url;
           }
@@ -38,8 +38,8 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
           const found1 = thirdPartySkus.filter((distributor) => {
             let tmp = distributor.distributor === constants.STEAM;
             if (tmp) {
-              tmp = !callback(1884).isNullOrEmpty(distributor.id);
-              const obj = callback(1884);
+              tmp = !callback(1903).isNullOrEmpty(distributor.id);
+              const obj = callback(1903);
             }
             return tmp;
           });

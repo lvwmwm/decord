@@ -1,10 +1,10 @@
-// Module ID: 5940
-// Function ID: 5941
+// Module ID: 5942
+// Function ID: 5943
 // Name: createResolvedGuildTemplate
-// Dependencies: [5941, 2]
+// Dependencies: [5943, 2]
 // Exports: default
 
-// Module 5940 (createResolvedGuildTemplate)
+// Module 5942 (createResolvedGuildTemplate)
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
 
 const result = require("set").fileFinishedImporting("modules/guild_templates/createResolvedGuildTemplate.tsx");

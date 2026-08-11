@@ -1,9 +1,9 @@
-// Module ID: 10601
-// Function ID: 10602
+// Module ID: 10606
+// Function ID: 10607
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 1372, 4375, 1371, 4328, 676, 4206, 7810, 500, 10602, 10603, 1208, 10604, 10733, 4643, 1236, 10608, 3919, 698, 709, 10976, 10614, 4002, 9878, 1231, 1351, 514, 2]
+// Dependencies: [5, 17, 1391, 4375, 1390, 4328, 676, 4206, 7812, 500, 10607, 10608, 1208, 10609, 10738, 4643, 1236, 10613, 3938, 698, 709, 10981, 10619, 4021, 9883, 1231, 1370, 514, 2]
 
-// Module 10601 (postMessageToWebView)
+// Module 10606 (postMessageToWebView)
 import items3 from "items3";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -271,11 +271,11 @@ prototype["showLaunchErrorModal"] = function showLaunchErrorModal(message) {
   obj.show(obj);
 };
 prototype["showDevShelfOverrideEnabled"] = function showDevShelfOverrideEnabled() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "EMBEDDED_ACTIVITIES_DEV_SHELF_URL_OVERRIDE_ENABLED", content: null, icon: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.JfA7IK);
-  obj[2] = importDefault(9878);
+  obj[2] = importDefault(9883);
   obj.open(obj);
 };
 prototype["releaseWebView"] = function releaseWebView() {
@@ -297,8 +297,8 @@ prototype["leaveActivity"] = function leaveActivity(arg0) {
   ({ location: _location, applicationId, showFeedback } = arg0);
   let isNotNullishResult = null != _location;
   if (isNotNullishResult) {
-    isNotNullishResult = require(1351) /* isDiscordFrontendDevelopment */.isNotNullish(applicationId);
-    const obj = require(1351) /* isDiscordFrontendDevelopment */;
+    isNotNullishResult = require(1370) /* isDiscordFrontendDevelopment */.isNotNullish(applicationId);
+    const obj = require(1370) /* isDiscordFrontendDevelopment */;
   }
   if (isNotNullishResult) {
     let tmp5 = null != releaseWebViewResult;
@@ -314,7 +314,7 @@ prototype["hidePIPEmbed"] = function hidePIPEmbed(arg0) {
   }
 };
 prototype["clearEmbeddedActivityState"] = function clearEmbeddedActivityState(_location, applicationId, showFeedback) {
-  let obj = require(10614) /* _runPrimaryAppCommandOrJoinEmbeddedActivity */;
+  let obj = require(10619) /* _runPrimaryAppCommandOrJoinEmbeddedActivity */;
   obj = { location: _location, applicationId, showFeedback };
   obj.stopEmbeddedActivity(obj);
   obj = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId, lockState: null, pictureInPictureLockState: null };

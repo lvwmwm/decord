@@ -1,15 +1,15 @@
-// Module ID: 13717
-// Function ID: 13718
+// Module ID: 13725
+// Function ID: 13726
 // Name: set
-// Dependencies: [1218, 1372, 3938, 1903, 500, 3974, 4494, 4153, 1236, 4482, 709, 2]
+// Dependencies: [1218, 1391, 3957, 1922, 500, 3993, 4494, 1363, 1236, 4482, 709, 2]
 
-// Module 13717 (set)
+// Module 13725 (set)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import "initialize";
-import set from "upsertRelationship";
+import set from "markAllUserIdListsStale";
 
 const require = arg1;
 let set = new Set();
@@ -27,10 +27,10 @@ class AccessibilityCallManager extends tmp4 {
           if (!obj2.isIOS()) {
             const channel = store2.getChannel(channelId);
             if (null != channel) {
-              const channelName = tmp4(4494).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+              const channelName = tmp4(4494).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
               if (null != channelName) {
                 obj.add(channelId);
-                const AccessibilityAnnouncer = tmp4(4153).AccessibilityAnnouncer;
+                const AccessibilityAnnouncer = tmp4(1363).AccessibilityAnnouncer;
                 const intl = tmp4(1236).intl;
                 obj = { callLocation: null };
                 obj[0] = channelName;
@@ -39,7 +39,7 @@ class AccessibilityCallManager extends tmp4 {
               const tmp4Result = tmp4(4494);
             }
           } else {
-            const NativePhoneIntegrationEnabled = tmp4(3974).NativePhoneIntegrationEnabled;
+            const NativePhoneIntegrationEnabled = tmp4(3993).NativePhoneIntegrationEnabled;
           }
           obj2 = callback(500);
         }
@@ -60,10 +60,10 @@ class AccessibilityCallManager extends tmp4 {
             if (!obj3.isIOS()) {
               const channel = store2.getChannel(channelId);
               if (null != channel) {
-                const channelName = tmp4(4494).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+                const channelName = tmp4(4494).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
                 if (null != channelName) {
                   obj2.add(channelId);
-                  const AccessibilityAnnouncer = tmp4(4153).AccessibilityAnnouncer;
+                  const AccessibilityAnnouncer = tmp4(1363).AccessibilityAnnouncer;
                   const intl = tmp4(1236).intl;
                   obj = { callLocation: null };
                   obj[0] = channelName;
@@ -72,7 +72,7 @@ class AccessibilityCallManager extends tmp4 {
                 const tmp4Result = tmp4(4494);
               }
             } else {
-              const NativePhoneIntegrationEnabled = tmp4(3974).NativePhoneIntegrationEnabled;
+              const NativePhoneIntegrationEnabled = tmp4(3993).NativePhoneIntegrationEnabled;
             }
             obj3 = callback(500);
           }

@@ -1,9 +1,9 @@
-// Module ID: 15081
-// Function ID: 15082
+// Module ID: 15090
+// Function ID: 15091
 // Name: NavigatorWithCaptchaHook
-// Dependencies: [32, 19, 17, 676, 21, 15082, 5270, 15091, 5785, 8478, 4303, 712, 15132, 8472, 1623, 8502, 15133, 8500, 5783, 501, 1236, 15134, 6934, 15138, 2]
+// Dependencies: [32, 19, 17, 676, 21, 15091, 5270, 15100, 5785, 8484, 4303, 712, 15141, 8478, 1642, 8508, 15142, 8506, 5783, 501, 1236, 15143, 6937, 15147, 2]
 
-// Module 15081 (NavigatorWithCaptchaHook)
+// Module 15090 (NavigatorWithCaptchaHook)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "PlatformTypes";
 import get_ActivityIndicator from "context";
@@ -22,14 +22,14 @@ const require = arg1;
 function NavigatorWithCaptchaHook() {
   let require;
   let tmp9;
-  let obj = require(15132) /* useIsHCaptchaModalOpenTracking */;
+  let obj = require(15141) /* useIsHCaptchaModalOpenTracking */;
   const isHCaptchaModalOpenTracking = obj.useIsHCaptchaModalOpenTracking();
   const tmp6 = callback3();
-  const tmp5 = importDefault(8472)();
+  const tmp5 = importDefault(8478)();
   [tmp9, require] = callback(importAllResult.useState(AuthStates.WELCOME), 2);
   const tmp10 = callback(importAllResult.useState(false), 2);
   importDefault = tmp11;
-  let obj1 = require(1623) /* KeyboardChatScrollView */;
+  let obj1 = require(1642) /* KeyboardChatScrollView */;
   const keyboardState = obj1.useKeyboardState((height) => height.height);
   callback = importAllResult.useCallback((arg0) => {
     let name;
@@ -48,8 +48,8 @@ function NavigatorWithCaptchaHook() {
   const tmp15 = closure_10;
   const tmp16 = closure_9;
   const tmp8 = callback(importAllResult.useState(AuthStates.WELCOME), 2);
-  obj[0] = require(15133) /* registerAsset */;
-  const children = [callback2(importDefault(8502), obj), ];
+  obj[0] = require(15142) /* registerAsset */;
+  const children = [callback2(importDefault(8508), obj), ];
   if (tmp5) {
     obj = { value: null, children: null };
     obj[0] = tmp11;
@@ -106,7 +106,7 @@ function NavigatorWithCaptchaHook() {
     obj5[1] = tmp17(tmp(5783).Navigator, obj6);
     obj2[1] = tmp17(closure_6, obj5);
     obj[1] = tmp17(closure_6, obj2);
-    let tmp17Result = tmp17(tmp(8500).WideAuthScrollContext.Provider, obj);
+    let tmp17Result = tmp17(tmp(8506).WideAuthScrollContext.Provider, obj);
     tmpResult = tmp(501);
   } else {
     const obj8 = { screens: null, viewStyle: null, containerStyle: null, headerBackTitle: null, initialRouteName: null, onWillFocus: null, headerStyle: null };
@@ -198,11 +198,11 @@ const context = importAllResult.createContext(() => {
 let obj2 = { borderBottomWidth: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 const memoResult = importAllResult.memo(function Auth() {
   const effect = importAllResult.useEffect(() => {
-    callback2(15134).initialize();
+    callback2(15143).initialize();
     return () => callback(table[21]).terminate();
   }, []);
-  const layoutEffect = importAllResult.useLayoutEffect(() => callback(6934).trackAppUIViewed(), []);
-  importDefault(15138)();
+  const layoutEffect = importAllResult.useLayoutEffect(() => callback(6937).trackAppUIViewed(), []);
+  importDefault(15147)();
   let closure_0 = importAllResult.useRef(undefined);
   return callback2(context.Provider, { value: importAllResult.useCallback(() => callback(outer1_2[7]).getTrackRegTransition(callback), [])(), children: callback2(NavigatorWithCaptchaHook, {}) });
 });

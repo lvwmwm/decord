@@ -1,7 +1,7 @@
 // Module ID: 5780
 // Function ID: 5781
 // Name: getEmojiSourceData
-// Dependencies: [5, 1912, 676, 530, 1416, 1414, 1411, 2]
+// Dependencies: [5, 1931, 676, 530, 1435, 1433, 1430, 2]
 
 // Module 5780 (getEmojiSourceData)
 import areSetsEqual from "areSetsEqual";
@@ -96,7 +96,7 @@ prototype["getIconURL"] = function getIconURL(size) {
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = importDefault(1416);
+  let obj = importDefault(1435);
   obj = { id: this.id, size, icon: this.icon, canAnimate: flag };
   return obj.getGuildIconURL(obj);
 };
@@ -106,7 +106,7 @@ prototype["getIconSource"] = function getIconSource(arg0, flag) {
   if (flag === undefined) {
     flag = false;
   }
-  return self(1416).getAnimatableSourceWithFallback(flag, (canAnimate) => {
+  return self(1435).getAnimatableSourceWithFallback(flag, (canAnimate) => {
     let obj = self(outer1_2[4]);
     obj = { id: self.id, size: closure_0, icon: self.icon, canAnimate };
     return obj.getGuildIconSource(obj);
@@ -141,7 +141,7 @@ ExpressionSourceGuildRecord["getGuildFromEmojiId"] = function getGuildFromEmojiI
 };
 ExpressionSourceGuildRecord["_mapCommon"] = function _mapCommon(id) {
   const obj = { id: id.id, name: id.name, icon: id.icon, description: id.description, features: null };
-  obj[4] = require(1414) /* areSetsEqual */.toSetInplace(id.features);
+  obj[4] = require(1433) /* areSetsEqual */.toSetInplace(id.features);
   return obj;
 };
 ExpressionSourceGuildRecord["createFromGuildRecord"] = function createFromGuildRecord(joinedEmojiSourceGuildRecord) {
@@ -207,7 +207,7 @@ ExpressionSourceGuildRecord["createFromGuildType"] = function createFromGuildTyp
     } else {
       fromGuildRecord = obj.createFromDiscoverableGuild(guild);
     }
-    obj2 = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
+    obj2 = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
   }
 };
 let prototype2;

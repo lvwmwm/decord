@@ -1,10 +1,10 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 11170
+// Function ID: 11171
 // Name: canFulfillStreamRequest
-// Dependencies: [4323, 4322, 1218, 1372, 1891, 3929, 4390, 4375, 676, 10821, 500, 589, 2]
+// Dependencies: [4323, 4322, 1218, 1391, 1910, 3948, 4390, 4375, 676, 10826, 500, 589, 2]
 // Exports: default
 
-// Module 11165 (canFulfillStreamRequest)
+// Module 11170 (canFulfillStreamRequest)
 import initialize from "initialize";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";

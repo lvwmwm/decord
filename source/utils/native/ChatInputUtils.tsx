@@ -1,7 +1,7 @@
 // Module ID: 4166
 // Function ID: 4167
 // Name: getBestActiveInput
-// Dependencies: [4167, 1872, 4168, 1607, 1478, 4169, 2]
+// Dependencies: [4167, 1891, 4168, 1626, 1497, 4169, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
 // Module 4166 (getBestActiveInput)
@@ -228,7 +228,7 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
 };
 export { getBestActiveInput };
 export const dismissKeyboard = function dismissKeyboard() {
-  let obj = require(1872) /* dismissGlobalKeyboard */;
+  let obj = require(1891) /* dismissGlobalKeyboard */;
   const result = obj.dismissGlobalKeyboard();
   const obj2 = getBestActiveInput();
   if (null != obj2) {
@@ -236,10 +236,10 @@ export const dismissKeyboard = function dismissKeyboard() {
   }
   let tmpResult = tmp(4168);
   const keyboardType = tmpResult.getKeyboardType();
-  if (keyboardType !== require(1607) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
-    tmpResult = tmp(1478);
+  if (keyboardType !== require(1626) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
+    tmpResult = tmp(1497);
     obj = { type: null };
-    obj[0] = tmp(1607).KeyboardTypes.SYSTEM;
+    obj[0] = tmp(1626).KeyboardTypes.SYSTEM;
     tmpResult.setKeyboardType(obj);
   }
   const result1 = require(4169) /* zustandStore */.closePortalKeyboardRequest();

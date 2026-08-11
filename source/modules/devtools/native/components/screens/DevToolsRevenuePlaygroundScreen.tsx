@@ -1,10 +1,10 @@
-// Module ID: 15009
-// Function ID: 15010
+// Module ID: 15019
+// Function ID: 15020
 // Name: describeServerError
-// Dependencies: [5, 32, 19, 17, 8178, 7120, 1340, 1372, 1960, 1903, 4302, 1905, 21, 709, 647, 530, 4002, 5374, 5381, 5767, 5762, 6917, 1297, 712, 7324, 4303, 6911, 4271, 15010, 1988, 5768, 15013, 7421, 11188, 4509, 15014, 15017, 15021, 15023, 15026, 2]
+// Dependencies: [5, 32, 19, 17, 8180, 7121, 1340, 1391, 1979, 1922, 4302, 1924, 21, 709, 647, 530, 4021, 5374, 5381, 5767, 5762, 6920, 1297, 712, 7325, 4303, 6913, 4271, 15020, 2007, 5768, 15023, 7423, 11193, 4509, 15024, 15027, 15031, 15033, 15036, 2]
 // Exports: default
 
-// Module 15009 (describeServerError)
+// Module 15019 (describeServerError)
 import recomputeAffinities from "recomputeAffinities";
 import serializePurchaseResponse from "serializePurchaseResponse";
 import TableRowGroupTitle from "TableRowGroupTitle";
@@ -640,7 +640,7 @@ function FriendAnniversary() {
   return callback3(closure_19, obj9);
 }
 function TrialOfferSheetExample() {
-  let obj = premiumTrialOffer(6911);
+  let obj = premiumTrialOffer(6913);
   premiumTrialOffer = obj.usePremiumTrialOffer();
   obj = {
     label: "Trial Offer Nitro Basic",
@@ -709,7 +709,7 @@ function ForceMockIAP() {
   let obj = require(647) /* defaultAreStatesEqual */;
   const items = [getUserAgnosticState];
   const stateFromStores = obj.useStateFromStores(items, () => getUserAgnosticState.get("force_mock_iap"));
-  let result = require(7421) /* serializePurchaseResponse */.shouldMockIAPForceEnable();
+  let result = require(7423) /* serializePurchaseResponse */.shouldMockIAPForceEnable();
   let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
   if (result) {
     str = "Forced on - the current device can't fetch real StoreKit products.";
@@ -723,10 +723,10 @@ function ForceMockIAP() {
   obj[2] = tmp4;
   obj[3] = result;
   obj[4] = function onValueChange(arg0) {
-    callback(15013).toggle("force_mock_iap", arg0);
+    callback(15023).toggle("force_mock_iap", arg0);
     getUserAgnosticState.persist();
-    const obj = callback(15013);
-    const result = callback2(11188).checkForUpdateAndReload();
+    const obj = callback(15023);
+    const result = callback2(11193).checkForUpdateAndReload();
   };
   return closure_17(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
 }

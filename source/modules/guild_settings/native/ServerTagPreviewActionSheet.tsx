@@ -1,10 +1,10 @@
-// Module ID: 13261
-// Function ID: 13262
+// Module ID: 13269
+// Function ID: 13270
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [19, 17, 9001, 21, 4303, 712, 9002, 9003, 13262, 4271, 4299, 1236, 4714, 5822, 5764, 5396, 2]
+// Dependencies: [19, 17, 9007, 21, 4303, 712, 9008, 9009, 13270, 4271, 4299, 1236, 4714, 5822, 5764, 5396, 2]
 // Exports: default
 
-// Module 13261 (ServerTagPreviewActionSheet)
+// Module 13269 (ServerTagPreviewActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "handleUpdateStart";
@@ -23,7 +23,7 @@ const result = require("handleUpdateStart").fileFinishedImporting("modules/guild
 
 export default function ServerTagPreviewActionSheet(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(9002);
+  let obj = guildId(9008);
   let guildProfile = obj.useGuildProfile(guildId);
   guildProfile = guildProfile.guildProfile;
   const items = [guildId];
@@ -37,7 +37,7 @@ export default function ServerTagPreviewActionSheet(guildId) {
     obj[7] = function onAdopted(arg0) {
       return callback(table[9]).hideActionSheet();
     };
-    let tmp7 = callback(importDefault(13262), obj);
+    let tmp7 = callback(importDefault(13270), obj);
     let tmp8 = callback;
   } else if (guildProfile.fetchStatus === GuildProfileFetchStatus.FETCHED) {
     obj = { style: null, children: null };

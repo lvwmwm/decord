@@ -1,10 +1,10 @@
-// Module ID: 12225
-// Function ID: 12226
+// Module ID: 12228
+// Function ID: 12229
 // Name: BlockedDomainActionSheet
-// Dependencies: [19, 21, 4303, 712, 5397, 4712, 6027, 4299, 1236, 12226, 4714, 4271, 2]
+// Dependencies: [19, 21, 4303, 712, 5397, 4712, 6029, 4299, 1236, 12229, 4714, 4271, 2]
 // Exports: default
 
-// Module 12225 (BlockedDomainActionSheet)
+// Module 12228 (BlockedDomainActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -26,7 +26,7 @@ export default function BlockedDomainActionSheet(url) {
   let obj = { startExpanded: true, children: null };
   obj = { spacing: 16, justify: "center", align: "center", style: tmp.container, children: null };
   obj = { spacing: 8, justify: "center", align: "center", children: null };
-  const items = [callback(require(6027) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
+  const items = [callback(require(6029) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl.string(require(1236) /* getSystemLocale */.t["2B3wj8"]);
@@ -36,7 +36,7 @@ export default function BlockedDomainActionSheet(url) {
   obj2[2] = intl2.format(require(1236) /* getSystemLocale */.t.jnHyYU, {});
   items[2] = callback(require(4299) /* Text */.Text, obj2);
   obj[3] = items;
-  const items1 = [callback2(require(4712) /* Stack */.Stack, obj), callback(require(12226) /* URLCallout */.URLCallout, { url: url.url }), ];
+  const items1 = [callback2(require(4712) /* Stack */.Stack, obj), callback(require(12229) /* URLCallout */.URLCallout, { url: url.url }), ];
   const obj3 = { grow: true, text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[1] = intl3.string(require(1236) /* getSystemLocale */.t["/g10LC"]);

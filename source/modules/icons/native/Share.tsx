@@ -1,8 +1,8 @@
-// Module ID: 9090
-// Function ID: 9091
-// Dependencies: [500, 9091, 9092, 2]
+// Module ID: 9096
+// Function ID: 9097
+// Dependencies: [500, 9097, 9098, 2]
 
-// Module 9090
+// Module 9096
 import set from "set";
 import set from "registerAsset";
 

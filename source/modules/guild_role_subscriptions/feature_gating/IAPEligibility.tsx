@@ -1,7 +1,7 @@
 // Module ID: 5216
 // Function ID: 5217
 // Name: items
-// Dependencies: [19, 1891, 676, 500, 5217, 647, 2]
+// Dependencies: [19, 1910, 676, 500, 5217, 647, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
 // Module 5216 (items)

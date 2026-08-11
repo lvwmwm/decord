@@ -1,7 +1,7 @@
 // Module ID: 4623
 // Function ID: 4624
 // Name: _deletePaymentSource
-// Dependencies: [109, 5, 3951, 3949, 3953, 676, 3958, 505, 709, 530, 4202, 3969, 3883, 3947, 4624, 4626, 3962, 4632, 4633, 698, 2]
+// Dependencies: [109, 5, 3970, 3968, 3972, 676, 3977, 505, 709, 530, 4202, 3988, 3902, 3966, 4624, 4626, 3981, 4632, 4633, 698, 2]
 // Exports: cancelPaymentAuthentication, cancelSubscription, changePaymentSource, changeSubscriptionCurrency, clearAndFetchPaymentSourceCreationContext, clearPaymentAuthenticationError, clearRemovePaymentSourceError, clearUpdatePaymentSourceError, createSubscription, deletePaymentSource, deleteRenewalMutation, fetchIpCountryCode, fetchIpLocation, fetchMostRecentSubscription, fetchPaymentSource, fetchPaymentSourceCreationContext, fetchPaymentSources, fetchPayments, fetchSubscriptions, fetchWalletInformation, getPerksRelevance, payInvoiceManually, popupBridgeCallback, redeemReactivationOffer, redeemUserDiscountOffer, redirectedPaymentSucceeded, resetPaymentIntentId, resetSubscriptionStore, resubscribeToSubscription, startBrowserCheckout, updatePaymentSource, upgradeSubscription, voidPendingPayment
 
 // Module 4623 (_deletePaymentSource)
@@ -190,7 +190,7 @@ function _updatePaymentSource() {
           } else if (1 === tmp7) {
             c5 = 0;
             closure_3 = _objectWithoutProperties;
-            obj3 = lib(3969);
+            obj3 = lib(3988);
             dependencyMap = obj3.parseV8BillingAddressSkemaErrorToBillingError(closure_3);
             obj4 = lib2(709);
             const obj5 = { type: "BILLING_PAYMENT_SOURCE_UPDATE_FAIL", error: null };
@@ -1718,7 +1718,7 @@ function _updateSubscription() {
               const obj3 = { type: "BILLING_SUBSCRIPTION_UPDATE_FAIL", error: null };
               obj3[1] = billingError;
               obj15.dispatch(obj3);
-              if (billingError.code !== lib(3969).ErrorCodes.CONFIRMATION_REQUIRED) {
+              if (billingError.code !== lib(3988).ErrorCodes.CONFIRMATION_REQUIRED) {
                 throw billingError;
               } else if (c11.body.payment_id) {
                 c14 = 3;
@@ -1828,7 +1828,7 @@ function _updateSubscription() {
                 return obj12;
               }
               if (null != lib2.items) {
-                obj7 = lib(3947);
+                obj7 = lib(3966);
                 const result = obj7.coerceExistingItemsToNewItemInterval(lib2.items);
                 c7.items = result.map((planId) => {
                   const obj = {};
@@ -1856,7 +1856,7 @@ function _updateSubscription() {
             c13 = 3;
             c14 = 1;
             const obj16 = { value: null, done: false };
-            obj16[0] = lib(3962).createGatewayCheckoutContext(lib2.paymentSource);
+            obj16[0] = lib(3981).createGatewayCheckoutContext(lib2.paymentSource);
             return obj16;
           } catch (tmp99) {
             throwTypeErrorResult = tmp99;
@@ -2590,7 +2590,7 @@ export const cancelSubscription = function cancelSubscription(id, c4) {
 export const deleteRenewalMutation = function deleteRenewalMutation(items) {
   let obj = { items: items.items };
   obj = { amount: 0, currency: items.currency };
-  return updateSubscription(items, obj, obj, require(3947) /* getPremiumPlanItem */.getItemPlansTotalServerPrice(items.items, items.currency, items.paymentSourceId), arg1);
+  return updateSubscription(items, obj, obj, require(3966) /* getPremiumPlanItem */.getItemPlansTotalServerPrice(items.items, items.currency, items.paymentSourceId), arg1);
 };
 export { updateSubscription };
 export const resubscribeToSubscription = function resubscribeToSubscription(currency, outer1_6, id) {
@@ -2602,10 +2602,10 @@ export const resubscribeToSubscription = function resubscribeToSubscription(curr
   if (id != null) {
     id = id.id;
   }
-  return updateSubscription(currency, obj, obj, require(3947) /* getPremiumPlanItem */.getItemPlansTotalServerPrice(items, currency, id), outer1_6, arg4);
+  return updateSubscription(currency, obj, obj, require(3966) /* getPremiumPlanItem */.getItemPlansTotalServerPrice(items, currency, id), outer1_6, arg4);
 };
 export const upgradeSubscription = function upgradeSubscription(renewalMutations, basePlanId, arg2, itemPlansTotalServerPrice) {
-  let obj = require(3947) /* getPremiumPlanItem */;
+  let obj = require(3966) /* getPremiumPlanItem */;
   obj = { status: constants.ACTIVE, items: obj.getItemsWithUpsertedPremiumPlanId(renewalMutations, basePlanId) };
   return updateSubscription(renewalMutations, obj, arg2, itemPlansTotalServerPrice, arg4, arg5);
 };

@@ -1,7 +1,7 @@
 // Module ID: 5155
 // Function ID: 5156
 // Name: insertUnsortedGuilds
-// Dependencies: [4125, 3930, 1340, 5156, 4641, 1971, 1891, 1220, 4499, 1903, 5157, 659, 38, 1351, 1970, 2]
+// Dependencies: [4127, 3949, 1340, 5156, 4641, 1990, 1910, 1220, 4499, 1922, 5157, 659, 38, 1370, 1989, 2]
 
 // Module 5155 (insertUnsortedGuilds)
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
@@ -350,7 +350,7 @@ function handleGuildFolderDeleteLocal(targetId) {
     if (tmp4) {
       const children = element.children;
       const mapped = children.map((id) => id.id);
-      const found = mapped.filter(tmp2(1351).isNotNullish);
+      const found = mapped.filter(tmp2(1370).isNotNullish);
       const item = found.forEach((arg0) => {
         const node = outer1_13.getNode(arg0);
         if (null != node) {

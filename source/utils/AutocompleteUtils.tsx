@@ -1,7 +1,7 @@
 // Module ID: 5159
 // Function ID: 5160
 // Name: NOOP
-// Dependencies: [32, 5160, 5176, 4749, 5218, 5219, 5223, 3931, 1376, 1965, 1911, 1372, 5226, 1961, 1971, 1964, 1891, 4521, 3929, 4390, 3938, 1960, 4124, 1903, 4349, 676, 5227, 1379, 3, 5228, 1411, 4291, 5229, 1884, 4146, 5230, 4985, 12, 1970, 1351, 5231, 3934, 4494, 1236, 11, 5946, 3974, 5949, 5844, 5950, 5951, 1355, 5952, 5953, 4754, 5958, 2]
+// Dependencies: [32, 5160, 5176, 4749, 5218, 5219, 5223, 3950, 1395, 1984, 1930, 1391, 5226, 1980, 1990, 1983, 1910, 4521, 3948, 4390, 3957, 1979, 4126, 1922, 4349, 676, 5227, 1398, 3, 5228, 1430, 4291, 5229, 1903, 4148, 5230, 4985, 12, 1989, 1370, 5231, 3953, 4494, 1236, 11, 5948, 3993, 5951, 5844, 5952, 5953, 1374, 5954, 5955, 4754, 5960, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
 // Module 5159 (NOOP)
@@ -26,7 +26,7 @@ import createGuildRecordFromRust from "createGuildRecordFromRust";
 import reinjectEphemerals from "reinjectEphemerals";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import sortActivity from "sortActivity";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_35 from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -124,7 +124,7 @@ function queryMemberList(arg0) {
   const users = authStore2.getUsers();
   guildId = guildId.getGuildId();
   const toLocaleLowerCaseResult = query.toLocaleLowerCase();
-  let obj = require(1884) /* isNullOrEmpty */;
+  let obj = require(1903) /* isNullOrEmpty */;
   const normalizeResult = obj.normalize(toLocaleLowerCaseResult);
   const items = [];
   const items1 = [];
@@ -154,7 +154,7 @@ function queryMemberList(arg0) {
       }
       let tmp12 = importDefault;
       let tmp13 = dependencyMap;
-      let obj3 = importDefault(4146);
+      let obj3 = importDefault(4148);
       let globalName = obj3.getGlobalName(tmp9);
       let tmp14 = tmp9;
       if (globalName != null) {
@@ -166,17 +166,17 @@ function queryMemberList(arg0) {
           let username = tmp9.username;
           let str3 = username.toLocaleLowerCase();
           let tmp16 = require;
-          let obj5 = require(1884) /* isNullOrEmpty */;
+          let obj5 = require(1903) /* isNullOrEmpty */;
           let str4 = obj5.stripDiacritics(str3);
-          let obj6 = require(1884) /* isNullOrEmpty */;
+          let obj6 = require(1903) /* isNullOrEmpty */;
           let str5 = obj6.normalize(str4);
           if (null == str) {
             let items2 = [null, null];
           } else {
-            let tmp16Result = tmp16(1884);
+            let tmp16Result = tmp16(1903);
             let stripDiacriticsResult = tmp16Result.stripDiacritics(str);
             items2 = [stripDiacriticsResult, ];
-            tmp16Result = tmp16(1884);
+            tmp16Result = tmp16(1903);
             items2[1] = tmp16Result.normalize(stripDiacriticsResult);
           }
           let tmp18 = callback;
@@ -185,10 +185,10 @@ function queryMemberList(arg0) {
           if (null == str2) {
             let items3 = [null, null];
           } else {
-            let tmp16Result1 = tmp16(1884);
+            let tmp16Result1 = tmp16(1903);
             let stripDiacriticsResult1 = tmp16Result1.stripDiacritics(str2);
             items3 = [stripDiacriticsResult1, ];
-            let tmp16Result2 = tmp16(1884);
+            let tmp16Result2 = tmp16(1903);
             items3[1] = tmp16Result2.normalize(stripDiacriticsResult1);
           }
           let tmp18Result = tmp18(items3, 2);
@@ -591,7 +591,7 @@ areArraysShallowlyEqual = {
     const obj = { query: limit.query, members: null, limit: null, filter: null };
     const friendIDs = store6.getFriendIDs();
     const mapped = friendIDs.map((arg0) => user.getUser(arg0));
-    obj[1] = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    obj[1] = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     obj[2] = num;
     obj[3] = limit.filter;
     return queryMemberList(obj);
@@ -604,7 +604,7 @@ areArraysShallowlyEqual = {
     const obj = { query: limit.query, members: null, limit: null, filter: null };
     const dMUserIds = authStore.getDMUserIds();
     const mapped = dMUserIds.map((arg0) => user.getUser(arg0));
-    obj[1] = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    obj[1] = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     obj[2] = num;
     obj[3] = limit.filter;
     return queryMemberList(obj);
@@ -1117,10 +1117,10 @@ areArraysShallowlyEqual = {
     if (boosters === undefined) {
       boosters = {};
     }
-    const obj2 = require(1884) /* isNullOrEmpty */;
-    const stripDiacriticsResult = obj2.stripDiacritics(require(1884) /* isNullOrEmpty */.normalize(query.toLocaleLowerCase()));
+    const obj2 = require(1903) /* isNullOrEmpty */;
+    const stripDiacriticsResult = obj2.stripDiacritics(require(1903) /* isNullOrEmpty */.normalize(query.toLocaleLowerCase()));
     let obj = { exactQuery: null, containQuery: null, queryLower: null };
-    const obj3 = require(1884) /* isNullOrEmpty */;
+    const obj3 = require(1903) /* isNullOrEmpty */;
     const regExp = new RegExp("^" + importDefault(4291).escape(stripDiacriticsResult), "i");
     obj[0] = regExp;
     const obj5 = importDefault(4291);
@@ -1147,8 +1147,8 @@ areArraysShallowlyEqual = {
           let tmp12 = store6;
           let channelName = obj9.computeChannelName(tmp6, authStore2, store6);
           let toLocaleLowerCaseResult = channelName.toLocaleLowerCase();
-          let obj11 = require(1884) /* isNullOrEmpty */;
-          let obj12 = require(1884) /* isNullOrEmpty */;
+          let obj11 = require(1903) /* isNullOrEmpty */;
+          let obj12 = require(1903) /* isNullOrEmpty */;
           let stripDiacriticsResult1 = obj11.stripDiacritics(obj12.normalize(toLocaleLowerCaseResult));
           let tmp16 = getMatchValue;
           let tmp15 = stripDiacriticsResult1;
@@ -1168,7 +1168,7 @@ areArraysShallowlyEqual = {
               let tmp57 = importDefault;
               let tmp58 = dependencyMap;
               let tmp56 = username;
-              let obj17 = importDefault(4146);
+              let obj17 = importDefault(4148);
               let globalName = obj17.getGlobalName(tmp23);
               let tmp60 = store6;
               let tmp61 = item10107;
@@ -1198,8 +1198,8 @@ areArraysShallowlyEqual = {
           for (const item10133 of items1) {
             let tmp37 = require;
             let tmp38 = dependencyMap;
-            let obj13 = require(1884) /* isNullOrEmpty */;
-            let obj14 = require(1884) /* isNullOrEmpty */;
+            let obj13 = require(1903) /* isNullOrEmpty */;
+            let obj14 = require(1903) /* isNullOrEmpty */;
             let _Math = Math;
             let tmp39 = getMatchValue;
             let bound = Math.min(5, getMatchValue(obj13.stripDiacritics(obj14.normalize(item10133.toLocaleLowerCase())), obj, flag));
@@ -1917,7 +1917,7 @@ areArraysShallowlyEqual = {
     const hasItem = features2.has(constants2.COMMUNITY);
     const obj4 = require(5844) /* useCanSeeOnboardingHome */;
     const tmp8 = constants2;
-    let result = require(5950) /* useGuildOnboardingAvailable */.isGuildOnboardingAvailable(guild);
+    let result = require(5952) /* useGuildOnboardingAvailable */.isGuildOnboardingAvailable(guild);
     if (result) {
       const features3 = guild.features;
       result = features3.has(tmp8.COMMUNITY);
@@ -2038,7 +2038,7 @@ areArraysShallowlyEqual = {
         continue;
       }
       const found = items1.filter((record) => "null" !== record.record.id);
-      let sorted = found.sort(importDefault(5951));
+      let sorted = found.sort(importDefault(5953));
       let tmp8 = null != limit;
       if (tmp8) {
         tmp8 = sorted.length > limit;
@@ -2066,7 +2066,7 @@ areArraysShallowlyEqual = {
     if (maxCount === undefined) {
       maxCount = closure_42;
     }
-    const FrecencyUserSettingsActionCreators = require(1355) /* updateUserGuildSettings */.FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     return { emojis: getEmojiToGroupId.searchWithoutFetchingLatest({ channel, query, count: maxCount, intention, matchComparator: matchComparator.matchComparator }) };
   },
@@ -2090,16 +2090,16 @@ areArraysShallowlyEqual = {
     set = new Set();
     items1 = [];
     closure_5 = items1;
-    const FrecencyUserSettingsActionCreators = flag(1355).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = flag(1374).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     function _loop() {
       if ("" === closure_6) {
         return 1;
       } else {
         const toLocaleLowerCaseResult = obj.toLocaleLowerCase();
-        const stripDiacriticsResult = toLocaleLowerCaseResult(1884).stripDiacritics(toLocaleLowerCaseResult);
+        const stripDiacriticsResult = toLocaleLowerCaseResult(1903).stripDiacritics(toLocaleLowerCaseResult);
         const _RegExp = RegExp;
-        let obj2 = toLocaleLowerCaseResult(1884);
+        let obj2 = toLocaleLowerCaseResult(1903);
         const _HermesInternal = HermesInternal;
         const regExp = new RegExp("^" + nextResult(4291).escape(stripDiacriticsResult), "i");
         const _RegExp2 = RegExp;
@@ -2233,10 +2233,10 @@ areArraysShallowlyEqual = {
       tmp3 = !obj.hasFetchedAllSounds();
     }
     if (tmp3) {
-      const result = _require(5953).maybeFetchSoundboardSounds();
-      const obj2 = _require(5953);
+      const result = _require(5955).maybeFetchSoundboardSounds();
+      const obj2 = _require(5955);
     }
-    const FrecencyUserSettingsActionCreators = _require(1355).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     const sounds = obj.getSounds();
     const reduced = Array.from(sounds.values()).reduce((arg0, arr) => {
@@ -2257,7 +2257,7 @@ areArraysShallowlyEqual = {
       return arg0;
     }, []);
     let arr = Array.from(sounds.values());
-    return _require(5958).searchSounds(arg0, reduced, currentUser, channel);
+    return _require(5960).searchSounds(arg0, reduced, currentUser, channel);
   },
   matchSentinel(arg0, arg1, storeThread) {
     const isMatch = tmp7.test(arg1);

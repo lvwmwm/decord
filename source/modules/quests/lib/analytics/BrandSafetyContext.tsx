@@ -1,14 +1,14 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9524
+// Function ID: 9525
 // Name: getBrandSafetyContext
-// Dependencies: [9519, 1372, 1891, 3938, 4124, 1903, 9520, 7158, 1416, 4494, 2]
+// Dependencies: [9525, 1391, 1910, 3957, 4126, 1922, 9526, 7159, 1435, 4494, 2]
 // Exports: getBrandSafetyContext
 
-// Module 9518 (getBrandSafetyContext)
+// Module 9524 (getBrandSafetyContext)
 import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN as closure_10 } from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN";
@@ -19,9 +19,9 @@ let c4;
 let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/quests/lib/analytics/BrandSafetyContext.tsx");
 
 export const getBrandSafetyContext = function getBrandSafetyContext(questContent) {
-  let obj = _require(7158);
+  let obj = _require(7159);
   const result = obj.isBillableQuestContent(questContent);
-  let obj1 = _require(7158);
+  let obj1 = _require(7159);
   const adContext = obj1.getAdContext(questContent);
   const tmp4 = callback2();
   const tmp5 = callback();
@@ -82,7 +82,7 @@ export const getBrandSafetyContext = function getBrandSafetyContext(questContent
                 } else {
                   const obj = { id: null, name: null };
                   obj[0] = channel.id;
-                  obj[1] = dependencyMap(table[9]).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+                  obj[1] = dependencyMap(table[9]).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
                   if (channel.topic.length > 0) {
                     obj.channel_topic = channel.topic;
                   }
@@ -104,12 +104,12 @@ export const getBrandSafetyContext = function getBrandSafetyContext(questContent
             if (null != banner) {
               obj = { id: null, banner: null };
               ({ id: obj5[0], banner: obj5[1] } = guild);
-              let guildBannerURL = importDefault(1416).getGuildBannerURL(obj, true);
+              let guildBannerURL = importDefault(1435).getGuildBannerURL(obj, true);
               if (guildBannerURL == null) {
                 guildBannerURL = null;
               }
               tmp15 = guildBannerURL;
-              const obj4 = importDefault(1416);
+              const obj4 = importDefault(1435);
             }
             if (null !== tmp15) {
               obj.selected_guild_banner_url = tmp15;

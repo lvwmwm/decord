@@ -1,7 +1,7 @@
 // Module ID: 4985
 // Function ID: 4986
 // Name: StickerFormat
-// Dependencies: [1413, 4986, 2]
+// Dependencies: [1432, 4986, 2]
 // Exports: isAnimatedSticker, isCustomSticker
 
 // Module 4985 (StickerFormat)

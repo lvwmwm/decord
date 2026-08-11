@@ -1,10 +1,10 @@
-// Module ID: 11114
-// Function ID: 11115
+// Module ID: 11119
+// Function ID: 11120
 // Name: trackRepliedMessageClicked
-// Dependencies: [7054, 676, 9336, 4498, 2]
+// Dependencies: [7057, 676, 9342, 4498, 2]
 // Exports: default
 
-// Module 11114 (trackRepliedMessageClicked)
+// Module 11119 (trackRepliedMessageClicked)
 import { ReferencedMessageState } from "processMessage";
 import { AnalyticEvents } from "ME";
 
@@ -19,7 +19,7 @@ export default function trackRepliedMessageClicked(messageReference, state, chan
   let tmp3 = null;
   let tmp4 = null;
   if (state.state === ReferencedMessageState.LOADED) {
-    const tmp9 = importDefault(9336)(state.message);
+    const tmp9 = importDefault(9342)(state.message);
     const content = tmp9.content;
     let num;
     if (content != null) {

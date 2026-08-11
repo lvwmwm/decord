@@ -1,7 +1,7 @@
 // Module ID: 5842
 // Function ID: 5843
 // Name: processChannel
-// Dependencies: [1372, 1220, 2]
+// Dependencies: [1391, 1220, 2]
 
 // Module 5842 (processChannel)
 import prototype from "ensureGuildLoaded";

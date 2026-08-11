@@ -1,7 +1,7 @@
 // Module ID: 5861
 // Function ID: 5862
 // Name: SubscriptionPlans
-// Dependencies: [1905, 1605, 2]
+// Dependencies: [1924, 1624, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
 // Module 5861 (SubscriptionPlans)

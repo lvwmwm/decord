@@ -1,19 +1,11 @@
 // Module ID: 13578
 // Function ID: 13579
-// Dependencies: [13579, 13576, 13581]
+// Dependencies: [13579, 13644]
 
 // Module 13578
-let fn = Object;
-let closure_3 = require("call")("".split);
-if (require("module_13576")(() => !Object("z").propertyIsEnumerable(0))) {
-  fn = (arg0) => {
-    if ("String" === require(13581) /* call */(arg0)) {
-      let tmp2 = callback(arg0, "");
-    } else {
-      tmp2 = Object(arg0);
-    }
-    return tmp2;
-  };
-}
+import module_13579 from "module_13579";
 
-export default fn;
+let obj = { target: "Object", stat: true, arity: 2, forced: null };
+obj[3] = Object.assign !== require("assign");
+obj = { assign: require("assign") };
+module_13579(obj, obj);

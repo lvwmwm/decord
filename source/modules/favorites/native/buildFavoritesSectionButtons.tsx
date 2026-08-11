@@ -1,10 +1,10 @@
-// Module ID: 9708
-// Function ID: 9709
+// Module ID: 9713
+// Function ID: 9714
 // Name: _addChannelToFavorites
-// Dependencies: [5, 21, 9709, 9710, 1988, 1236, 3030, 8744, 8746, 1297, 2]
+// Dependencies: [5, 21, 9714, 9715, 2007, 1236, 3049, 8750, 8752, 1297, 2]
 // Exports: default
 
-// Module 9708 (_addChannelToFavorites)
+// Module 9713 (_addChannelToFavorites)
 import getSystemLocale from "getSystemLocale";
 import { jsx } from "jsxProd";
 
@@ -164,8 +164,8 @@ export default function buildFavoritesSectionButtons(hasFavoritesAccess) {
       if (tmp2) {
         let obj = { label: null, IconComponent: null, isDestructive: true, onPress: null };
         const intl2 = require(1236) /* getSystemLocale */.intl;
-        obj[0] = intl2.string(importDefault(3030).TN4nAX);
-        obj[1] = require(8744) /* StarIcon */.StarIcon;
+        obj[0] = intl2.string(importDefault(3049).TN4nAX);
+        obj[1] = require(8750) /* StarIcon */.StarIcon;
         obj[3] = function onPress() {
           return (function removeChannelFromFavorites(closure_0) {
             const self = this;
@@ -184,8 +184,8 @@ export default function buildFavoritesSectionButtons(hasFavoritesAccess) {
         if (!tmp3) {
           obj = { label: null, IconComponent: null, trailing: null, onPress: null };
           const intl = require(1236) /* getSystemLocale */.intl;
-          obj[0] = intl.string(importDefault(3030).G9fGlP);
-          obj[1] = require(8746) /* StarOutlineIcon */.StarOutlineIcon;
+          obj[0] = intl.string(importDefault(3049).G9fGlP);
+          obj[1] = require(8752) /* StarOutlineIcon */.StarOutlineIcon;
           let tmp10;
           if (tmp4) {
             obj = { size: null };

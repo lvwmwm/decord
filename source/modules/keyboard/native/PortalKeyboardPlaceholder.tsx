@@ -1,9 +1,9 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11626
+// Function ID: 11627
 // Name: PortalKeyboardPlaceholderInner
-// Dependencies: [19, 17, 21, 4303, 500, 712, 1607, 1609, 7641, 1474, 5372, 8391, 4168, 1875, 2]
+// Dependencies: [19, 17, 21, 4303, 500, 712, 1626, 1628, 7643, 1493, 5372, 8397, 4168, 1894, 2]
 
-// Module 11623 (PortalKeyboardPlaceholderInner)
+// Module 11626 (PortalKeyboardPlaceholderInner)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,12 +13,12 @@ let c3;
 let c4;
 const require = arg1;
 function PortalKeyboardPlaceholderInner(keyboardType) {
-  const rect = importDefault(1609)();
-  const tmp = importDefault(7641)();
-  const tmp2 = importDefault(1474)();
-  let obj = require(8391) /* useGradientBottom */;
+  const rect = importDefault(1628)();
+  const tmp = importDefault(7643)();
+  const tmp2 = importDefault(1493)();
+  let obj = require(8397) /* useGradientBottom */;
   obj = { style: null };
-  const items = [callback(keyboardType.keyboardType, importDefault(1474)().width - rect.left - rect.right, importDefault(5372)(), tmp).container, obj.useGradientBottom()];
+  const items = [callback(keyboardType.keyboardType, importDefault(1493)().width - rect.left - rect.right, importDefault(5372)(), tmp).container, obj.useGradientBottom()];
   obj[0] = items;
   return <closure_3 style={null} />;
 }
@@ -53,7 +53,7 @@ let closure_6 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
     hairlineWidth1 = tmp6.hairlineWidth;
   }
   container.borderLeftWidth = hairlineWidth1;
-  const APP_LAUNCHER = tmp(1607).KeyboardTypes.APP_LAUNCHER;
+  const APP_LAUNCHER = tmp(1626).KeyboardTypes.APP_LAUNCHER;
   container.backgroundColor = importDefault(712).colors.BACKGROUND_BASE_LOW;
   let tmpResult = tmp(500);
   if (tmpResult.isIOS()) {
@@ -69,12 +69,12 @@ let closure_6 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
 });
 const jsxResult = jsx(function PortalKeyboardPlaceholder() {
   const tmp2 = importDefault(4168)();
-  let isAndroidResult = importDefault(1875)() > 0;
+  let isAndroidResult = importDefault(1894)() > 0;
   if (isAndroidResult) {
     let obj = require(500) /* set */;
     isAndroidResult = obj.isAndroid();
   }
-  if (tmp2 !== require(1607) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
+  if (tmp2 !== require(1626) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
     let tmp6 = null;
     if (!isAndroidResult) {
       obj = { keyboardType: null };

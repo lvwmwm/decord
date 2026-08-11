@@ -1,7 +1,7 @@
 // Module ID: 4761
 // Function ID: 4762
 // Name: regExp
-// Dependencies: [4000, 38, 2]
+// Dependencies: [4019, 38, 2]
 
 // Module 4761 (regExp)
 import closure_10 from "t";

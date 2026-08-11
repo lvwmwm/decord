@@ -1,7 +1,7 @@
 // Module ID: 4563
 // Function ID: 4564
 // Name: ToPrimitive
-// Dependencies: [1402, 4564, 4565, 4566]
+// Dependencies: [1421, 4564, 4565, 4566]
 
 // Module 4563 (ToPrimitive)
 let tmp = typeof Symbol === "function";
@@ -58,7 +58,7 @@ export default function ToPrimitive(arg0) {
                 let tmp19 = require;
                 let tmp20 = dependencyMap;
                 let tmp21 = num2;
-                if (require(1402) /* apply */(tmp18)) {
+                if (require(1421) /* apply */(tmp18)) {
                   let call = tmp18.call;
                   tmp22 = typeof call === "unknown" ? tmp18() : call(arg0);
                   if (tmp19(4564)(tmp22)) {
@@ -85,7 +85,7 @@ export default function ToPrimitive(arg0) {
         let tmp8;
         if (null != arg0[toPrimitive]) {
           tmp8 = tmp6;
-          if (!tmp(1402)(tmp6)) {
+          if (!tmp(1421)(tmp6)) {
             const _TypeError = TypeError;
             const _String2 = String;
             const text = `${tmp6} returned for property `;

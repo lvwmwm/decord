@@ -1,9 +1,9 @@
-// Module ID: 9235
-// Function ID: 9236
+// Module ID: 9241
+// Function ID: 9242
 // Name: experiment
 // Dependencies: [4218, 4215, 2]
 
-// Module 9235 (experiment)
+// Module 9241 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Allow users to ring each other in Guild Voice Channels", config: { enabled: true } }];

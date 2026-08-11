@@ -1,7 +1,7 @@
 // Module ID: 5356
 // Function ID: 5357
 // Name: PromptOptionButton
-// Dependencies: [32, 19, 17, 4295, 5176, 1906, 21, 4303, 712, 589, 4036, 4304, 4713, 5357, 4014, 1236, 4005, 4019, 4846, 5360, 1416, 4299, 5363, 1297, 2]
+// Dependencies: [32, 19, 17, 4295, 5176, 1925, 21, 4303, 712, 589, 4042, 4304, 4713, 5357, 1351, 1236, 4024, 4032, 4846, 5360, 1435, 4299, 5363, 1297, 2]
 // Exports: default
 
 // Module 5356 (PromptOptionButton)
@@ -88,7 +88,7 @@ export default function PromptOptionButton(option) {
   let obj1 = option(589);
   const items1 = [num];
   stateFromStores1 = obj1.useStateFromStores(items1, () => num.useReducedMotion);
-  let obj2 = option(4036);
+  let obj2 = option(4042);
   class R {
     constructor() {
       num = 0;
@@ -123,7 +123,7 @@ export default function PromptOptionButton(option) {
       return obj1;
     }
   }
-  obj = { selected, withTiming: option(4304).withTiming, Easing: option(4036).Easing, useReducedMotion: stateFromStores1, withSequence: option(4036).withSequence, withSpring: option(4713).withSpring };
+  obj = { selected, withTiming: option(4304).withTiming, Easing: option(4042).Easing, useReducedMotion: stateFromStores1, withSequence: option(4042).withSequence, withSpring: option(4713).withSpring };
   R.__closure = obj;
   R.__workletHash = 8281627194581;
   R.__initData = isUnseen;
@@ -182,7 +182,7 @@ export default function PromptOptionButton(option) {
       ref.current = false;
     }
   }, items4);
-  let tmp2Result = tmp2(4036);
+  let tmp2Result = tmp2(4042);
   class G {
     constructor() {
       tmp = withSpring;
@@ -226,12 +226,12 @@ export default function PromptOptionButton(option) {
       return obj1;
     }
   }
-  obj = { showMemberCount: first, withDelay: tmp2(4036).withDelay, withTiming: tmp2(4304).withTiming, Easing: tmp2(4036).Easing, useReducedMotion: stateFromStores1 };
+  obj = { showMemberCount: first, withDelay: tmp2(4042).withDelay, withTiming: tmp2(4304).withTiming, Easing: tmp2(4042).Easing, useReducedMotion: stateFromStores1 };
   G.__closure = obj;
   G.__workletHash = 9518487706997;
   G.__initData = c13;
   const animatedStyle1 = tmp2Result.useAnimatedStyle(G);
-  tmp2Result = tmp2(4036);
+  tmp2Result = tmp2(4042);
   sharedValue = tmp2Result.useSharedValue(1);
   isUnseen = canBeNew;
   if (canBeNew) {
@@ -303,14 +303,14 @@ export default function PromptOptionButton(option) {
       title = tmp.title;
     }
   }, items5);
-  token = option(4005).useToken(tmp7(712).colors.BACKGROUND_BRAND);
-  let tmp2Result1 = option(4005);
-  token1 = option(4005).useToken(tmp7(712).colors.BORDER_SUBTLE);
-  const tmp2Result2 = option(4005);
-  token2 = option(4005).useToken(tmp7(712).colors.BORDER_STRONG);
-  const tmp2Result3 = option(4005);
-  token3 = option(4005).useToken(tmp7(712).colors.BACKGROUND_BASE_LOWEST);
-  const tmp2Result4 = option(4005);
+  token = option(4024).useToken(tmp7(712).colors.BACKGROUND_BRAND);
+  let tmp2Result1 = option(4024);
+  token1 = option(4024).useToken(tmp7(712).colors.BORDER_SUBTLE);
+  const tmp2Result2 = option(4024);
+  token2 = option(4024).useToken(tmp7(712).colors.BORDER_STRONG);
+  const tmp2Result3 = option(4024);
+  token3 = option(4024).useToken(tmp7(712).colors.BACKGROUND_BASE_LOWEST);
+  const tmp2Result4 = option(4024);
   class H {
     constructor() {
       if (c4) {
@@ -342,12 +342,12 @@ export default function PromptOptionButton(option) {
       return obj;
     }
   }
-  obj1 = { useReducedMotion: stateFromStores1, Easing: tmp2(4036).Easing, withTiming: tmp2(4304).withTiming, selected, selectedBorderColor: token2, isNew: isUnseen, unselectedBrandBorderColor: token, unselectedBorderColor: token1, selectedBackgroundColor: token3 };
+  obj1 = { useReducedMotion: stateFromStores1, Easing: tmp2(4042).Easing, withTiming: tmp2(4304).withTiming, selected, selectedBorderColor: token2, isNew: isUnseen, unselectedBrandBorderColor: token, unselectedBorderColor: token1, selectedBackgroundColor: token3 };
   H.__closure = obj1;
   H.__workletHash = 17180171486485;
   H.__initData = token;
-  const animatedStyle2 = option(4036).useAnimatedStyle(H);
-  const tmp2Result5 = option(4036);
+  const animatedStyle2 = option(4042).useAnimatedStyle(H);
+  const tmp2Result5 = option(4042);
   const fn = function q() {
     if (stateFromStores1) {
       let obj = {};
@@ -363,9 +363,9 @@ export default function PromptOptionButton(option) {
   fn.__closure = { useReducedMotion: stateFromStores1, scale: sharedValue };
   fn.__workletHash = 319662489785;
   fn.__initData = token1;
-  const animatedStyle3 = option(4036).useAnimatedStyle(fn);
-  const tmp2Result6 = option(4036);
-  const checkboxA11yNative = option(4019).useCheckboxA11yNative({ checked: selected });
+  const animatedStyle3 = option(4042).useAnimatedStyle(fn);
+  const tmp2Result6 = option(4042);
+  const checkboxA11yNative = option(4032).useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   obj2 = { style: items6, children: null };
   items6 = [animatedStyle3, animatedStyle2, tmp.container];
@@ -426,7 +426,7 @@ export default function PromptOptionButton(option) {
     let emojiURL;
     let tmp7Result = tmp7(5360);
     if (null != stateFromStores) {
-      tmp7Result = tmp7(1416);
+      tmp7Result = tmp7(1435);
       const obj6 = { id: null, animated: null, size: null };
       ({ id: obj22[0], animated: obj22[1] } = stateFromStores);
       obj6[2] = closure_8;
@@ -473,7 +473,7 @@ export default function PromptOptionButton(option) {
     obj12[0] = num;
     obj11[2] = intl.format(tmp2(1236).t.EgKsZA, obj12);
     obj10[4] = tmp42(tmp2(4299).Text, obj11);
-    tmp42Result = tmp42(tmp7(4036).View, obj10);
+    tmp42Result = tmp42(tmp7(4042).View, obj10);
   }
   items10[1] = tmp42Result;
   const obj13 = { style: items12, children: null };
@@ -481,7 +481,7 @@ export default function PromptOptionButton(option) {
   const obj14 = { size: "xs", color: null };
   obj14[1] = selected(712).colors.WHITE;
   obj13[1] = callback2(option(5363).CheckmarkSmallIcon, obj14);
-  items10[2] = callback2(selected(4036).View, obj13);
+  items10[2] = callback2(selected(4042).View, obj13);
   if (canBeNew) {
     canBeNew = !selected;
   }
@@ -498,5 +498,5 @@ export default function PromptOptionButton(option) {
   }
   items10[3] = canBeNew;
   obj2[1] = items10;
-  return closure_10(selected(4036).View, obj2);
+  return closure_10(selected(4042).View, obj2);
 };

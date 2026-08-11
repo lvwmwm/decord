@@ -1,7 +1,7 @@
 // Module ID: 5901
 // Function ID: 5902
 // Name: _enqueue
-// Dependencies: [676, 1894, 5902, 5903, 5904, 4188, 12, 2]
+// Dependencies: [676, 1913, 5902, 5903, 5904, 4188, 12, 2]
 
 // Module 5901 (_enqueue)
 import { ME } from "ME";
@@ -158,8 +158,8 @@ prototype["subscribeUser"] = function subscribeUser(closure_0, userId) {
     tmp = "undefined" !== closure_0;
   }
   if (tmp) {
-    tmp = !require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(closure_0);
-    const obj = require(1894) /* getFavoritesAwareGuildName */;
+    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(closure_0);
+    const obj = require(1913) /* getFavoritesAwareGuildName */;
   }
   if (tmp) {
     const self = this;
@@ -179,8 +179,8 @@ prototype["unsubscribeUser"] = function unsubscribeUser(closure_0, userId) {
     tmp = "undefined" !== closure_0;
   }
   if (tmp) {
-    tmp = !require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(closure_0);
-    const obj = require(1894) /* getFavoritesAwareGuildName */;
+    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(closure_0);
+    const obj = require(1913) /* getFavoritesAwareGuildName */;
   }
   if (tmp) {
     const self = this;
@@ -200,8 +200,8 @@ prototype["subscribeChannel"] = function subscribeChannel(guildId) {
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-    const obj = require(1894) /* getFavoritesAwareGuildName */;
+    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+    const obj = require(1913) /* getFavoritesAwareGuildName */;
   }
   let subscription = tmp;
   if (subscription) {
@@ -223,8 +223,8 @@ prototype["subscribeToMemberUpdates"] = function subscribeToMemberUpdates(guildI
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-    const obj = require(1894) /* getFavoritesAwareGuildName */;
+    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+    const obj = require(1913) /* getFavoritesAwareGuildName */;
   }
   if (tmp) {
     const self = this;
@@ -247,8 +247,8 @@ prototype["unsubscribeFromMemberUpdates"] = function unsubscribeFromMemberUpdate
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-    const obj = require(1894) /* getFavoritesAwareGuildName */;
+    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+    const obj = require(1913) /* getFavoritesAwareGuildName */;
   }
   if (tmp) {
     const self = this;
@@ -269,8 +269,8 @@ prototype["subscribeThreadMemberList"] = function subscribeThreadMemberList(guil
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-    const obj = require(1894) /* getFavoritesAwareGuildName */;
+    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+    const obj = require(1913) /* getFavoritesAwareGuildName */;
   }
   let subscription = tmp;
   if (subscription) {
@@ -292,8 +292,8 @@ prototype["unsubscribeThreadMemberList"] = function unsubscribeThreadMemberList(
     tmp = "undefined" !== guild_id;
   }
   if (tmp) {
-    tmp = !require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guild_id);
-    const obj = require(1894) /* getFavoritesAwareGuildName */;
+    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guild_id);
+    const obj = require(1913) /* getFavoritesAwareGuildName */;
   }
   let unsubscribeResult = tmp;
   if (unsubscribeResult) {
@@ -320,8 +320,8 @@ prototype["_subscribeToFeature"] = function _subscribeToFeature(guildId, _activi
     tmp = "undefined" !== guildId;
   }
   if (tmp) {
-    tmp = !require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-    const obj = require(1894) /* getFavoritesAwareGuildName */;
+    tmp = !require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+    const obj = require(1913) /* getFavoritesAwareGuildName */;
   }
   if (tmp) {
     if (!_activities.has(guildId)) {

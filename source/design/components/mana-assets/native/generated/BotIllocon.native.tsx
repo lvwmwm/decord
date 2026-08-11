@@ -1,10 +1,10 @@
-// Module ID: 6128
-// Function ID: 6129
+// Module ID: 6130
+// Function ID: 6131
 // Name: BotIllocon
-// Dependencies: [21, 5268, 6129, 2]
+// Dependencies: [21, 5268, 6131, 2]
 // Exports: BotIllocon
 
-// Module 6128 (BotIllocon)
+// Module 6130 (BotIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BotIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const BotIllocon = function BotIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6129);
+  obj[0] = importDefault(6131);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

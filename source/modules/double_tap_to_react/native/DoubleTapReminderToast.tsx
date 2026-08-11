@@ -1,10 +1,10 @@
-// Module ID: 8649
-// Function ID: 8650
+// Module ID: 8655
+// Function ID: 8656
 // Name: DoubleTapReminderContent
-// Dependencies: [19, 1369, 21, 4303, 712, 4299, 1236, 4123, 1358, 3974, 8076, 4002, 8650, 2]
+// Dependencies: [19, 1388, 21, 4303, 712, 4299, 1236, 4125, 1377, 3993, 8078, 4021, 8656, 2]
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 8649 (DoubleTapReminderContent)
+// Module 8655 (DoubleTapReminderContent)
 import "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
@@ -36,22 +36,22 @@ let result = require("jsxProd").fileFinishedImporting("modules/double_tap_to_rea
 
 export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapReminderToast(emoji) {
   const _require = emoji;
-  let obj = _require(4123);
-  if (!obj.UNSAFE_isDismissibleContentDismissed(_require(1358).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER)) {
-    const DoubleTapReactionEmoji = tmp(3974).DoubleTapReactionEmoji;
+  let obj = _require(4125);
+  if (!obj.UNSAFE_isDismissibleContentDismissed(_require(1377).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER)) {
+    const DoubleTapReactionEmoji = tmp(3993).DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
     let flag = setting.disableDoubleTap;
     if (flag == null) {
       flag = false;
     }
-    let tmpResult = tmp(8076);
+    let tmpResult = tmp(8078);
     const result = tmpResult.disambiguatedEmojiFromSettingsValue(setting);
     let areEmojisEqualResult = !flag;
     if (!flag) {
       areEmojisEqualResult = null != result;
     }
     if (areEmojisEqualResult) {
-      tmpResult = tmp(8076);
+      tmpResult = tmp(8078);
       areEmojisEqualResult = tmpResult.areEmojisEqual(result, emoji);
     }
     if (areEmojisEqualResult) {
@@ -62,12 +62,12 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
       obj[2] = function content() {
         return outer1_4(outer1_6, { emoji: closure_0 });
       };
-      importDefault(4002).open(obj);
-      const obj4 = importDefault(4002);
+      importDefault(4021).open(obj);
+      const obj4 = importDefault(4021);
       obj = { dismissAction: null, forceTrack: true };
       obj[0] = ContentDismissActionType.AUTO_DISMISS;
-      const result1 = tmp(4123).UNSAFE_markDismissibleContentAsDismissed(tmp(1358).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj);
-      const tmpResult1 = tmp(4123);
+      const result1 = tmp(4125).UNSAFE_markDismissibleContentAsDismissed(tmp(1377).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj);
+      const tmpResult1 = tmp(4125);
     }
   }
 };

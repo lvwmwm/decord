@@ -1,7 +1,7 @@
 // Module ID: 5871
 // Function ID: 5872
 // Name: useIsCreatorMonetizationEnabledGuild
-// Dependencies: [1891, 676, 589, 2]
+// Dependencies: [1910, 676, 589, 2]
 // Exports: default, isCreatorMonetizationEnabledGuild
 
 // Module 5871 (useIsCreatorMonetizationEnabledGuild)

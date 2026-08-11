@@ -1,9 +1,9 @@
-// Module ID: 4147
-// Function ID: 4148
+// Module ID: 4149
+// Function ID: 4150
 // Name: initialize
-// Dependencies: [1218, 676, 698, 589, 4148, 709, 2]
+// Dependencies: [1218, 676, 698, 589, 4150, 709, 2]
 
-// Module 4147 (initialize)
+// Module 4149 (initialize)
 import fetchFingerprint from "fetchFingerprint";
 import { AnalyticEvents } from "ME";
 import { PersistedStore } from "initialize";
@@ -105,7 +105,7 @@ Object.defineProperty(prototype, "enableContentProtection", {
   set: undefined
 });
 prototype["isOverlayWidgetDisabled"] = function isOverlayWidgetDisabled(arg0) {
-  const obj = require(4148) /* apexExperiment */;
+  const obj = require(4150) /* apexExperiment */;
   let enabled = obj.getOverlayStreamerModeConfig("StreamerModeStore").enabled;
   if (enabled) {
     const self = this;

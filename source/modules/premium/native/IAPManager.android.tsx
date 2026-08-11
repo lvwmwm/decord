@@ -1,9 +1,9 @@
-// Module ID: 16466
-// Function ID: 16467
+// Module ID: 16477
+// Function ID: 16478
 // Name: prototype
 // Dependencies: [5261, 2]
 
-// Module 16466 (prototype)
+// Module 16477 (prototype)
 import "initialize";
 
 let prototype = function IAPManager() {

@@ -1,10 +1,10 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 10944
+// Function ID: 10945
 // Name: StreamPreviewContainer
-// Dependencies: [19, 17, 4317, 4322, 1218, 1372, 1891, 3929, 4319, 676, 21, 4303, 4151, 712, 4486, 589, 1236, 5129, 4483, 4508, 4497, 4367, 4730, 10940, 4299, 2]
+// Dependencies: [19, 17, 4317, 4322, 1218, 1391, 1910, 3948, 4319, 676, 21, 4303, 4152, 712, 4486, 589, 1236, 5129, 4483, 4508, 4497, 4367, 4730, 10945, 4299, 2]
 // Exports: default
 
-// Module 10939 (StreamPreviewContainer)
+// Module 10944 (StreamPreviewContainer)
 import transitionToStream from "transitionToStream";
 import get_ActivityIndicator from "module_5129";
 import set from "set";

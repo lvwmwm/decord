@@ -1,10 +1,10 @@
-// Module ID: 14597
-// Function ID: 14598
+// Module ID: 14607
+// Function ID: 14608
 // Name: useEnableSwitchIconsSettingValue
-// Dependencies: [4295, 8082, 589, 1348, 10447, 1236, 13712, 2]
+// Dependencies: [4295, 8084, 589, 1367, 10452, 1236, 13720, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 14597 (useEnableSwitchIconsSettingValue)
+// Module 14607 (useEnableSwitchIconsSettingValue)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
@@ -22,7 +22,7 @@ createToggle = {
   useValue: useEnableSwitchIconsSettingValue,
   onValueChange: require("setFontSize").setSwitchIconsEnabled,
   usePredicate: function useShowSwitchIconsSetting() {
-    return importDefault(1348)("SettingsAccessibilityScreen");
+    return importDefault(1367)("SettingsAccessibilityScreen");
   },
   hasIcon: true
 };

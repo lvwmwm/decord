@@ -1,10 +1,10 @@
-// Module ID: 11535
-// Function ID: 11536
+// Module ID: 11538
+// Function ID: 11539
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 676, 21, 4303, 11517, 11536, 4498, 9549, 4299, 1236, 6982, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 11520, 11539, 4498, 9555, 4299, 1236, 6985, 2]
 // Exports: default
 
-// Module 11535 (FrecencyCommandsSection)
+// Module 11538 (FrecencyCommandsSection)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -32,7 +32,7 @@ export default function FrecencyCommandsSection(commands) {
   ({ onPressCommand: importDefault, section: dependencyMap, onExecuteCommand: noop, installOnDemand: View, sectionName } = commands);
   let arr;
   const tmp = createCacheKey();
-  arr = importDefault(11536)({ context, commands: commands.allCommands, limit: 5 });
+  arr = importDefault(11539)({ context, commands: commands.allCommands, limit: 5 });
   const items = [arr.length, sectionName];
   const effect = React.useEffect(() => {
     if (0 !== arr.length) {

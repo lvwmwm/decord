@@ -1,8 +1,8 @@
-// Module ID: 11479
-// Function ID: 11480
-// Dependencies: [19, 17, 1911, 676, 21, 4303, 9548, 11470, 10750, 5268, 8307, 8839, 1416, 8235, 2]
+// Module ID: 11482
+// Function ID: 11483
+// Dependencies: [19, 17, 1930, 676, 21, 4303, 9554, 11473, 10755, 5268, 8312, 8845, 1435, 8239, 2]
 
-// Module 11479
+// Module 11482
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import createdAt from "createdAt";
@@ -21,11 +21,11 @@ let closure_10 = importAllResult.memo((applicationId) => {
   let imageStyle;
   let heroMediaDimensions;
   let importDefault;
-  let obj = heroMediaDimensions(9548);
-  let obj1 = heroMediaDimensions(11470);
+  let obj = heroMediaDimensions(9554);
+  let obj1 = heroMediaDimensions(11473);
   heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
   obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
-  const tmp4 = importDefault(10750)(obj);
+  const tmp4 = importDefault(10755)(obj);
   importDefault = tmp4;
   let items = [heroMediaDimensions, tmp4];
   const memo = importAllResult.useMemo(() => {
@@ -65,12 +65,12 @@ let closure_11 = importAllResult.memo((applicationBot) => {
     id = closure_7;
   }
   const tmp = importDefault;
-  const tmp3 = importDefault(8307);
-  const obj = { displayProfile: importDefault(8307)(id), user: null };
-  const tmp3Result = importDefault(8307)(id);
-  const tmpResult = tmp(8839);
+  const tmp3 = importDefault(8312);
+  const obj = { displayProfile: importDefault(8312)(id), user: null };
+  const tmp3Result = importDefault(8312)(id);
+  const tmpResult = tmp(8845);
   obj[1] = new createdAt(applicationBot);
-  return <tmpResult displayProfile={importDefault(8307)(id)} user={null} />;
+  return <tmpResult displayProfile={importDefault(8312)(id)} user={null} />;
 });
 const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
   let applicationBot;
@@ -81,9 +81,9 @@ const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
   ({ applicationId, applicationBot, overrideImageUrl } = arg0);
   ({ applicationEmbedded, applicationIcon } = arg0);
   const tmp = callback();
-  let obj = importDefault(1416);
+  let obj = importDefault(1435);
   const applicationIconSource = obj.getApplicationIconSource({ id: applicationId, icon: applicationIcon, bot: applicationBot, botIconFirst: true });
-  importDefault(8235);
+  importDefault(8239);
   if (typeof applicationIconSource !== "number") {
     let uri;
     if (applicationIconSource != null) {

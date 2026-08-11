@@ -1,10 +1,10 @@
-// Module ID: 9241
-// Function ID: 9242
+// Module ID: 9247
+// Function ID: 9248
 // Name: useGetGameForAppId
-// Dependencies: [19, 4324, 5734, 7092, 1351, 589, 2]
+// Dependencies: [19, 4324, 5734, 5926, 1370, 589, 2]
 // Exports: default, useGetGamesForAppIds
 
-// Module 9241 (useGetGameForAppId)
+// Module 9247 (useGetGameForAppId)
 import noop from "noop";
 import handleLoadMessages from "handleLoadMessages";
 
@@ -21,7 +21,7 @@ export default function useGetGameForAppId(applicationId) {
   if (canonicalGameId == null) {
     canonicalGameId = null;
   }
-  const game = require(7092) /* importDefaultResult1 */.useGame(canonicalGameId);
+  const game = require(5926) /* importDefaultResult1 */.useGame(canonicalGameId);
   let data = game.data;
   obj = { gameId: canonicalGameId, gameRecord: null, isLoading: null };
   if (data == null) {
@@ -40,8 +40,8 @@ export const useGetGamesForAppIds = function useGetGamesForAppIds(stateFromStore
     const mapped = found.map((getCanonicalGameId) => getCanonicalGameId.getCanonicalGameId());
     return mapped.filter(tmp(outer1_2[4]).isNotNullish);
   }, items);
-  const games = require(7092) /* importDefaultResult1 */.useGames(memo);
-  const obj = require(7092) /* importDefaultResult1 */;
+  const games = require(5926) /* importDefaultResult1 */.useGames(memo);
+  const obj = require(5926) /* importDefaultResult1 */;
   const items1 = [handleLoadMessages];
   return require(589) /* initialize */.useStateFromStoresArray(items1, () => {
     const mapped = memo.map((closure_0) => game.getGame(closure_0));

@@ -1,7 +1,7 @@
 // Module ID: 4357
 // Function ID: 4358
 // Name: _migrateDefaultStorage
-// Dependencies: [5, 4323, 1218, 4358, 676, 4359, 3912, 4360, 38, 4361, 4367, 1384, 4370, 4371, 589, 4351, 709, 2]
+// Dependencies: [5, 4323, 1218, 4358, 676, 4359, 3931, 4360, 38, 4361, 4367, 1403, 4370, 4371, 589, 4351, 709, 2]
 
 // Module 4357 (_migrateDefaultStorage)
 import closure_3 from "RESOLUTION_720";
@@ -78,7 +78,7 @@ function _migrateDefaultStorage() {
         } else if (1 === tmp7) {
           c3 = 0;
           logger.error("Failed to resolve videos path for default storage migration", dependencyMap);
-          const app = callback2(3912).app;
+          const app = callback2(3931).app;
           c4 = 2;
           c5 = 1;
           const obj2 = { value: null, done: false };
@@ -792,11 +792,11 @@ obj = {
   },
   RTC_CONNECTION_FLAGS: function handleRTCConnectionFlagsUpdate(flags) {
     const obj = { clipsEnabled: null, allowVoiceRecording: null, allowAnyViewerClips: null };
-    obj[0] = require(1384) /* hasFlag */.hasFlag(flags.flags, VoiceFlags.CLIPS_ENABLED);
-    const obj2 = require(1384) /* hasFlag */;
-    obj[1] = require(1384) /* hasFlag */.hasFlag(flags.flags, VoiceFlags.ALLOW_VOICE_RECORDING);
-    const obj3 = require(1384) /* hasFlag */;
-    obj[2] = require(1384) /* hasFlag */.hasFlag(flags.flags, VoiceFlags.ALLOW_ANY_VIEWER_CLIPS);
+    obj[0] = require(1403) /* hasFlag */.hasFlag(flags.flags, VoiceFlags.CLIPS_ENABLED);
+    const obj2 = require(1403) /* hasFlag */;
+    obj[1] = require(1403) /* hasFlag */.hasFlag(flags.flags, VoiceFlags.ALLOW_VOICE_RECORDING);
+    const obj3 = require(1403) /* hasFlag */;
+    obj[2] = require(1403) /* hasFlag */.hasFlag(flags.flags, VoiceFlags.ALLOW_ANY_VIEWER_CLIPS);
     closure_25[flags.userId] = obj;
   },
   CLIPS_SHOW_CALL_WARNING: function handleShowCallWarning(channelId) {

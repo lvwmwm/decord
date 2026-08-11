@@ -1,10 +1,10 @@
-// Module ID: 7408
-// Function ID: 7409
+// Module ID: 7410
+// Function ID: 7411
 // Name: FormSection
-// Dependencies: [19, 17, 1301, 21, 4303, 712, 5373, 5367, 7409, 5767, 7410, 500, 2]
+// Dependencies: [19, 17, 1301, 21, 4303, 712, 5373, 5367, 7411, 5767, 7412, 500, 2]
 // Exports: default
 
-// Module 7408 (FormSection)
+// Module 7410 (FormSection)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { TitleStyleType } from "semanticColor";
@@ -67,7 +67,7 @@ export default function FormSection(arg0) {
     const found = toArrayResult.filter((type) => {
       let isValidElementResult = noop.isValidElement(type);
       if (isValidElementResult) {
-        isValidElementResult = type.type !== callback(7409);
+        isValidElementResult = type.type !== callback(7411);
       }
       return isValidElementResult;
     });
@@ -85,7 +85,7 @@ export default function FormSection(arg0) {
     let flag = false;
     if (obj.isValidElement(element)) {
       flag = false;
-      if (element.type !== importDefault(7409)) {
+      if (element.type !== importDefault(7411)) {
         flag = false;
         if (null != element.props) {
           const props = element.props;
@@ -126,8 +126,8 @@ export default function FormSection(arg0) {
       obj3[5] = thinTitle;
       obj3[6] = uppercaseTitle;
       obj3[7] = inset;
-      tmp6 = callback(importDefault(7410), obj3);
-      const tmp10 = importDefault(7410);
+      tmp6 = callback(importDefault(7412), obj3);
+      const tmp10 = importDefault(7412);
     }
     const emptySectionHeader = tmp2.emptySectionHeader;
     let titledSectionNoBorderOrMargin = emptySectionHeader;

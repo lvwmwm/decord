@@ -1,10 +1,10 @@
-// Module ID: 1884
-// Function ID: 1885
+// Module ID: 1903
+// Function ID: 1904
 // Name: isNullOrEmpty
-// Dependencies: [2, 1885]
+// Dependencies: [2, 1904]
 // Exports: isNullOrEmpty
 
-// Module 1884 (isNullOrEmpty)
+// Module 1903 (isNullOrEmpty)
 const result = require("set").fileFinishedImporting("utils/StringUtils.tsx");
 
 export const isNullOrEmpty = function isNullOrEmpty(application_id) {

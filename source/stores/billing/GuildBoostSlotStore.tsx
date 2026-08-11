@@ -1,7 +1,7 @@
 // Module ID: 4196
 // Function ID: 4197
 // Name: handleGuildBoostsUpdate
-// Dependencies: [3953, 589, 709, 2]
+// Dependencies: [3972, 589, 709, 2]
 
 // Module 4196 (handleGuildBoostsUpdate)
 import reset from "reset";

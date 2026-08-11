@@ -1,10 +1,10 @@
-// Module ID: 8789
-// Function ID: 8790
+// Module ID: 8795
+// Function ID: 8796
 // Name: getProfileProperties
-// Dependencies: [8790, 5250, 7120, 4322, 1971, 4390, 3938, 1903, 7080, 8785, 676, 505, 1416, 8307, 698, 4498, 8794, 2]
+// Dependencies: [8796, 5250, 7121, 4322, 1990, 4390, 3957, 1922, 7083, 8791, 676, 505, 1435, 8312, 698, 4498, 8800, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8789 (getProfileProperties)
+// Module 8795 (getProfileProperties)
 import map from "map";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";
@@ -12,7 +12,7 @@ import recomputeAffinities from "recomputeAffinities";
 import reset from "reset";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import sortActivity from "sortActivity";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import { TrackUserProfileProperties as closure_13 } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -94,16 +94,16 @@ function getProfileProperties(guildMemberProfile) {
       if (userProfile != null) {
         banner1 = userProfile.banner;
       }
-      items.push(require(1416) /* getAvatarURL */.isAnimatedIconHash(banner1) ? constants.ANIMATED_BANNER : constants.BANNER);
-      const obj2 = require(1416) /* getAvatarURL */;
+      items.push(require(1435) /* getAvatarURL */.isAnimatedIconHash(banner1) ? constants.ANIMATED_BANNER : constants.BANNER);
+      const obj2 = require(1435) /* getAvatarURL */;
     }
   } else {
     let avatar1;
     if (user != null) {
       avatar1 = user.avatar;
     }
-    items.push(require(1416) /* getAvatarURL */.isAnimatedIconHash(avatar1) ? constants.ANIMATED_AVATAR : constants.AVATAR);
-    const obj = require(1416) /* getAvatarURL */;
+    items.push(require(1435) /* getAvatarURL */.isAnimatedIconHash(avatar1) ? constants.ANIMATED_AVATAR : constants.AVATAR);
+    const obj = require(1435) /* getAvatarURL */;
   }
 }
 function getTrackUserProfileProperties(userId) {
@@ -129,7 +129,7 @@ function getTrackUserProfileProperties(userId) {
     if (showGuildProfile) {
       tmp3 = guildId;
     }
-    const displayProfile = require(8307) /* useDisplayProfile */.getDisplayProfile(id, tmp3);
+    const displayProfile = require(8312) /* useDisplayProfile */.getDisplayProfile(id, tmp3);
     let member = null;
     if (showGuildProfile) {
       member = null;
@@ -227,7 +227,7 @@ function getTrackUserProfileProperties(userId) {
       const _HermesInternal = HermesInternal;
       combined = "" + status + "-desktop";
     }
-    const obj6 = require(8307) /* useDisplayProfile */;
+    const obj6 = require(8312) /* useDisplayProfile */;
     tmp14 = StatusTypes;
   }
 }
@@ -354,7 +354,7 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
   let timeToInteractiveMs;
   let timeToLoadMs;
   let viewStartedAt;
-  let trackResult = require(8794) /* isUserProfilePerformanceAnalyticsEnabled */;
+  let trackResult = require(8800) /* isUserProfilePerformanceAnalyticsEnabled */;
   if (trackResult.isUserProfilePerformanceAnalyticsEnabled("UserProfileAnalyticsUtils")) {
     ({ timeToInteractiveMs, timeToLoadMs, timeToFetchMs } = userId);
     let num = timeToInteractiveMs;

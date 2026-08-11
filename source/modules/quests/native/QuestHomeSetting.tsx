@@ -1,10 +1,10 @@
-// Module ID: 14243
-// Function ID: 14244
+// Module ID: 14251
+// Function ID: 14252
 // Name: QuestHomeSetting
-// Dependencies: [32, 19, 11167, 5161, 21, 4303, 712, 1480, 3914, 7593, 14244, 14248, 2]
+// Dependencies: [32, 19, 11172, 5161, 21, 4303, 712, 1499, 3933, 7595, 14252, 14256, 2]
 // Exports: default
 
-// Module 14243 (QuestHomeSetting)
+// Module 14251 (QuestHomeSetting)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import zustandStore from "zustandStore";
@@ -94,7 +94,7 @@ export default function QuestHomeSetting() {
   }, { equalityFn: navigation(outer1_2[8]).shallow, fireImmediately: true }), []);
   navigation = undefined;
   importDefault = undefined;
-  let obj = navigation(1480);
+  let obj = navigation(1499);
   navigation = obj.useNavigation();
   const tmp10 = callback(React.useState(false), 2);
   importDefault = tmp10[1];
@@ -108,7 +108,7 @@ export default function QuestHomeSetting() {
     zustandStore.resetState();
   }, []);
   const field = zustandStore.useField("scrollToQuestId");
-  importDefault(14244)({ setSelectedSortMethod: tmp4, setSelectedFilters: tmp7, selectedFilters: tmp6, selectedSortMethod: tmp3 });
+  importDefault(14252)({ setSelectedSortMethod: tmp4, setSelectedFilters: tmp7, selectedFilters: tmp6, selectedSortMethod: tmp3 });
   obj = { containerStyle: tmp.container, isNavigationComplete: tmp10[0], scrollToQuestId: field, sortMethod: tmp3, filters: tmp6, onClearFilters: callback };
-  return jsx(importDefault(14248), { containerStyle: tmp.container, isNavigationComplete: tmp10[0], scrollToQuestId: field, sortMethod: tmp3, filters: tmp6, onClearFilters: callback });
+  return jsx(importDefault(14256), { containerStyle: tmp.container, isNavigationComplete: tmp10[0], scrollToQuestId: field, sortMethod: tmp3, filters: tmp6, onClearFilters: callback });
 };

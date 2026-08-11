@@ -1,10 +1,10 @@
-// Module ID: 1348
-// Function ID: 1349
+// Module ID: 1367
+// Function ID: 1368
 // Name: useIsMobileVisualRefreshExperimentEnabled
-// Dependencies: [1349, 2]
+// Dependencies: [1368, 2]
 // Exports: default, isMobileVisualRefreshEnabled, resolveRefreshToken, useMobileVisualRefreshConfig
 
-// Module 1348 (useIsMobileVisualRefreshExperimentEnabled)
+// Module 1367 (useIsMobileVisualRefreshExperimentEnabled)
 const tmp2 = require("getUnitId")({ kind: "user", name: "2026-02-mobile-visual-refresh", defaultConfig: { enabled: false, chatInputFloating: false, chatInputLegacySendButton: false }, variations: { 0: { enabled: false, chatInputFloating: false, chatInputLegacySendButton: false }, 1: { enabled: true, chatInputFloating: false, chatInputLegacySendButton: false }, 2: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: false }, 3: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: false }, 4: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: true } } });
 let c0 = tmp2;
 const result = require("set").fileFinishedImporting("modules/themes/experiments/MobileVisualRefreshExperiment.tsx");

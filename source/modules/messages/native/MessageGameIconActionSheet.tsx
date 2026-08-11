@@ -1,10 +1,10 @@
-// Module ID: 11217
-// Function ID: 11218
+// Module ID: 11222
+// Function ID: 11223
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 4341, 676, 21, 4303, 500, 712, 589, 5397, 1297, 4299, 1236, 1974, 2]
+// Dependencies: [19, 17, 4341, 676, 21, 4303, 500, 712, 589, 5397, 1297, 4299, 1236, 1993, 2]
 // Exports: default
 
-// Module 11217 (MessageGameIconActionSheet)
+// Module 11222 (MessageGameIconActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import addApplication from "addApplication";
@@ -69,7 +69,7 @@ export default function MessageGameIconActionSheet(applicationId) {
     const items3 = [intl.format(tmp2(1236).t.J3s8JP, obj7), " ", ];
     const intl2 = tmp2(1236).intl;
     const obj8 = { helpdeskArticle: null };
-    obj8[0] = importDefault(1974).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
+    obj8[0] = importDefault(1993).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
     items3[2] = intl2.format(tmp2(1236).t.BPDKoA, obj8);
     obj6[1] = items3;
     items2[1] = closure_7(tmp2(4299).Text, obj6);
@@ -79,7 +79,7 @@ export default function MessageGameIconActionSheet(applicationId) {
     obj[1] = closure_7(View, obj);
     obj2[1] = closure_6(View, obj);
     tmp5Result = tmp5(tmp2(5397).BottomSheet, obj2);
-    const obj13 = importDefault(1974);
+    const obj13 = importDefault(1993);
   }
   return tmp5Result;
 };

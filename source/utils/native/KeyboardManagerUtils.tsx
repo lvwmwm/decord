@@ -1,17 +1,17 @@
-// Module ID: 1872
-// Function ID: 1873
+// Module ID: 1891
+// Function ID: 1892
 // Name: dismissGlobalKeyboard
-// Dependencies: [17, 500, 1873, 2]
+// Dependencies: [17, 500, 1892, 2]
 // Exports: clearCurrentFocusAndDismissKeyboard, dismissGlobalKeyboard, onKeyboardChanged
 
-// Module 1872 (dismissGlobalKeyboard)
+// Module 1891 (dismissGlobalKeyboard)
 import { NativeModules } from "get ActivityIndicator";
 
 let result = require("enforcing").fileFinishedImporting("utils/native/KeyboardManagerUtils.tsx");
 
 export const dismissGlobalKeyboard = function dismissGlobalKeyboard() {
   if (obj.isAndroid()) {
-    const obj2 = importDefault(1873);
+    const obj2 = importDefault(1892);
     if (obj2 != null) {
       const result = obj2.dismissGlobalKeyboard();
     }
@@ -22,7 +22,7 @@ export const dismissGlobalKeyboard = function dismissGlobalKeyboard() {
 };
 export const clearCurrentFocusAndDismissKeyboard = function clearCurrentFocusAndDismissKeyboard() {
   if (obj.isAndroid()) {
-    const obj2 = importDefault(1873);
+    const obj2 = importDefault(1892);
     if (obj2 != null) {
       const result = obj2.clearCurrentFocusAndDismissKeyboard();
     }
@@ -30,7 +30,7 @@ export const clearCurrentFocusAndDismissKeyboard = function clearCurrentFocusAnd
 };
 export const onKeyboardChanged = function onKeyboardChanged(open) {
   if (obj.isAndroid()) {
-    const obj2 = importDefault(1873);
+    const obj2 = importDefault(1892);
     if (obj2 != null) {
       obj2.onKeyboardChanged(open);
     }

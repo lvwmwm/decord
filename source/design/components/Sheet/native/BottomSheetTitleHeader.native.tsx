@@ -1,7 +1,7 @@
 // Module ID: 5396
 // Function ID: 5397
 // Name: RedesignBottomSheetTitleHeaderBase
-// Dependencies: [32, 19, 17, 21, 4303, 712, 1474, 4005, 1348, 4299, 5271, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 1493, 4024, 1367, 4299, 5271, 2]
 // Exports: BottomSheetTitleHeader
 
 // Module 5396 (RedesignBottomSheetTitleHeaderBase)
@@ -74,8 +74,8 @@ function RedesignBottomSheetTitleHeaderComplex(subtitle) {
   ({ title, leading, trailing, onTitleTextLayout } = subtitle);
   const tmp = callback4();
   const tmp2 = callback6();
-  let obj = _require(4005);
-  const diff = importDefault(1474)().width - 2 * obj.useToken(importDefault(712).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL);
+  let obj = _require(4024);
+  const diff = importDefault(1493)().width - 2 * obj.useToken(importDefault(712).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL);
   [tmp5, c0] = callback(React.useState(undefined), 2);
   callback = React.useCallback((nativeEvent) => {
     const width = nativeEvent.nativeEvent.layout.width;
@@ -115,7 +115,7 @@ function RedesignBottomSheetTitleHeaderComplex(subtitle) {
 }
 function Title(arg0) {
   let str = "redesign/heading-18/bold";
-  if (importDefault(1348)("BottomSheetTitleHeader")) {
+  if (importDefault(1367)("BottomSheetTitleHeader")) {
     str = "redesign/heading-18/semibold";
   }
   const tmp = callback4();
@@ -123,7 +123,7 @@ function Title(arg0) {
   return callback2(require(4299) /* Text */.Text, { variant: str, color: "mobile-text-heading-primary", accessibilityRole: "header", style: callback4().title });
 }
 function Subtitle(children) {
-  const tmp3 = importDefault(1348)("BottomSheetTitleHeader");
+  const tmp3 = importDefault(1367)("BottomSheetTitleHeader");
   let str = "text-default";
   if (tmp3) {
     str = "text-muted";

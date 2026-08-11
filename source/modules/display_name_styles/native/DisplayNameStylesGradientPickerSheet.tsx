@@ -1,10 +1,10 @@
-// Module ID: 14584
-// Function ID: 14585
+// Module ID: 14592
+// Function ID: 14593
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1915, 676, 21, 4303, 712, 9473, 1914, 4272, 698, 4271, 13905, 5397, 5396, 4714, 1236, 4725, 688, 14585, 12, 4846, 2]
+// Dependencies: [32, 19, 17, 1934, 676, 21, 4303, 712, 9479, 1933, 4272, 698, 4271, 13913, 5397, 5396, 4714, 1236, 4725, 688, 14593, 12, 4846, 2]
 // Exports: default
 
-// Module 14584 (DisplayNameStylesColorPickerSheet)
+// Module 14592 (DisplayNameStylesColorPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import int2hslRaw from "int2hslRaw";
 import get_ActivityIndicator from "getSystemLocale";
@@ -54,9 +54,9 @@ export default function DisplayNameStylesColorPickerSheet(selectedEffectId) {
   let closure_8;
   let tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = selectedEffectId(9473);
+  let obj = selectedEffectId(9479);
   displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedEffectId);
-  let obj1 = selectedEffectId(1914);
+  let obj1 = selectedEffectId(1933);
   let items = [selectedEffectId];
   const effectColorCount = obj1.getEffectColorCount(selectedEffectId);
   memo = memo.useMemo(() => callback2(selectedEffectId), items);

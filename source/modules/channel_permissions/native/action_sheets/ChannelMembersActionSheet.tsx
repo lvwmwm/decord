@@ -1,10 +1,10 @@
-// Module ID: 11073
-// Function ID: 11074
+// Module ID: 11078
+// Function ID: 11079
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 1372, 1971, 1964, 1891, 3929, 676, 21, 4303, 712, 1609, 589, 1480, 4494, 8997, 1236, 5397, 5396, 4846, 4271, 8016, 11074, 6011, 7970, 11072, 9721, 1297, 5399, 9005, 4299, 2]
+// Dependencies: [19, 17, 1391, 1990, 1983, 1910, 3948, 676, 21, 4303, 712, 1628, 589, 1499, 4494, 9003, 1236, 5397, 5396, 4846, 4271, 8018, 11079, 6013, 7972, 11077, 9726, 1297, 5399, 9011, 4299, 2]
 // Exports: default
 
-// Module 11073 (ChannelMembersActionSheet)
+// Module 11078 (ChannelMembersActionSheet)
 import "PressableBase";
 import { View } from "Background";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -74,16 +74,16 @@ export default function ChannelMembersActionSheet(arg0) {
     }
     return _undefined2.getMemberIds(guildId);
   }, items4);
-  let obj3 = require(1480) /* useNavigation */;
+  let obj3 = require(1499) /* useNavigation */;
   ensureGuildLoaded = obj3.useNavigation();
   if (null != stateFromStores) {
     if (null != guild) {
       if (null != sortedGuildRoles) {
         const canResult = getUncachedChannelPermissions.can(constants.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        let tmp5Result = tmp5(8997);
+        let tmp5Result = tmp5(9003);
         const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        tmp5Result = tmp5(8997);
+        tmp5Result = tmp5(9003);
         const items5 = [];
         obj = { title: null, data: null };
         const existingMembersRows = tmp5Result.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions);
@@ -113,7 +113,7 @@ export default function ChannelMembersActionSheet(arg0) {
           };
           let intl = tmp5(1236).intl;
           obj2[2] = intl.string(tmp5(1236).t.XPDhcc);
-          obj2[3] = tmp29(tmp5(6011).SettingsIcon, {});
+          obj2[3] = tmp29(tmp5(6013).SettingsIcon, {});
           tmp29Result = tmp29(tmp5(4846).PressableOpacity, obj2);
         }
         obj3 = { scrollable: true, header: null, startExpanded: true, children: null };
@@ -128,8 +128,8 @@ export default function ChannelMembersActionSheet(arg0) {
           obj5[1] = function onPress() {
             return outer1_0(_undefined[25]).openAddMembersActionSheet(stateFromStores);
           };
-          obj5[2] = tmp29(tmp5(9721).GroupPlusIcon, {});
-          tmp29Result = tmp29(tmp5(7970).RowButton, obj5);
+          obj5[2] = tmp29(tmp5(9726).GroupPlusIcon, {});
+          tmp29Result = tmp29(tmp5(7972).RowButton, obj5);
         } else {
           const obj6 = { style: null, children: null };
           obj6[0] = tmp.warning;

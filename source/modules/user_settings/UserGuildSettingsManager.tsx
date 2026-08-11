@@ -1,7 +1,7 @@
 // Module ID: 5259
 // Function ID: 5260
 // Name: handleConnectionOpen
-// Dependencies: [5, 5260, 1372, 676, 687, 530, 5261, 2]
+// Dependencies: [5, 5260, 1391, 676, 687, 530, 5261, 2]
 
 // Module 5259 (handleConnectionOpen)
 import sendRequest from "sendRequest";

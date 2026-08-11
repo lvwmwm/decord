@@ -1,7 +1,7 @@
 // Module ID: 4737
 // Function ID: 4738
 // Name: TRUE_OPTION_NAME
-// Dependencies: [1236, 1935, 2]
+// Dependencies: [1236, 1954, 2]
 // Exports: getValidationErrorText
 
 // Module 4737 (TRUE_OPTION_NAME)
@@ -33,25 +33,25 @@ export const getValidationErrorText = function getValidationErrorText(option) {
     return intl9.string(require(1236) /* getSystemLocale */.t.xi5aah);
   } else {
     const type = option.type;
-    if (require(1935) /* PermissionOverwriteType */.ApplicationCommandOptionType.BOOLEAN === type) {
+    if (require(1954) /* PermissionOverwriteType */.ApplicationCommandOptionType.BOOLEAN === type) {
       const intl8 = tmp3(1236).intl;
       return intl8.string(tmp3(1236).t.ATIx6O);
-    } else if (tmp3(1935).ApplicationCommandOptionType.CHANNEL === type) {
+    } else if (tmp3(1954).ApplicationCommandOptionType.CHANNEL === type) {
       const intl7 = tmp3(1236).intl;
       return intl7.string(tmp3(1236).t.Q0z2Gx);
-    } else if (tmp3(1935).ApplicationCommandOptionType.INTEGER === type) {
+    } else if (tmp3(1954).ApplicationCommandOptionType.INTEGER === type) {
       const intl6 = tmp3(1236).intl;
       return intl6.string(tmp3(1236).t["d/9Rk4"]);
-    } else if (tmp3(1935).ApplicationCommandOptionType.NUMBER === type) {
+    } else if (tmp3(1954).ApplicationCommandOptionType.NUMBER === type) {
       const intl5 = tmp3(1236).intl;
       return intl5.string(tmp3(1236).t["FDyk/V"]);
-    } else if (tmp3(1935).ApplicationCommandOptionType.ROLE === type) {
+    } else if (tmp3(1954).ApplicationCommandOptionType.ROLE === type) {
       const intl4 = tmp3(1236).intl;
       return intl4.string(tmp3(1236).t.vrRQn0);
-    } else if (tmp3(1935).ApplicationCommandOptionType.USER === type) {
+    } else if (tmp3(1954).ApplicationCommandOptionType.USER === type) {
       const intl3 = tmp3(1236).intl;
       return intl3.string(tmp3(1236).t.i2r7j5);
-    } else if (tmp3(1935).ApplicationCommandOptionType.MENTIONABLE === type) {
+    } else if (tmp3(1954).ApplicationCommandOptionType.MENTIONABLE === type) {
       const intl2 = tmp3(1236).intl;
       return intl2.string(tmp3(1236).t.I7imec);
     } else {

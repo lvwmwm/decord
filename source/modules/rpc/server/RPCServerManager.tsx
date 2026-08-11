@@ -1,9 +1,9 @@
-// Module ID: 13732
-// Function ID: 13733
+// Module ID: 13740
+// Function ID: 13741
 // Name: loadServer
-// Dependencies: [32, 10592, 7160, 1372, 1971, 1891, 4351, 4390, 4375, 3938, 1960, 1903, 4319, 4206, 676, 4328, 10593, 4364, 500, 709, 698, 589, 1351, 10742, 10976, 13733, 10743, 7183, 2]
+// Dependencies: [32, 10597, 7161, 1391, 1990, 1910, 4351, 4390, 4375, 3957, 1979, 1922, 4319, 4206, 676, 4328, 10598, 4364, 500, 709, 698, 589, 1370, 10747, 10981, 13741, 10748, 7184, 2]
 
-// Module 13732 (loadServer)
+// Module 13740 (loadServer)
 import _slicedToArray from "_slicedToArray";
 import map from "map";
 import initializeState from "initializeState";
@@ -13,7 +13,7 @@ import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import sortActivity from "sortActivity";
 import createRTCConnection from "createRTCConnection";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import updateVoiceState from "updateVoiceState";

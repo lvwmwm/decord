@@ -1,14 +1,14 @@
-// Module ID: 9694
-// Function ID: 9695
+// Module ID: 9699
+// Function ID: 9700
 // Name: InstantInviteDetails
-// Dependencies: [19, 17, 1376, 3938, 1903, 21, 4303, 712, 4764, 4809, 4712, 4299, 4494, 4267, 1236, 9683, 2]
+// Dependencies: [19, 17, 1395, 3957, 1922, 21, 4303, 712, 4764, 4809, 4712, 4299, 4494, 4267, 1236, 9688, 2]
 // Exports: default
 
-// Module 9694 (InstantInviteDetails)
+// Module 9699 (InstantInviteDetails)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { createChannelRecordFromInvite as closure_5 } from "createChannelRecord";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

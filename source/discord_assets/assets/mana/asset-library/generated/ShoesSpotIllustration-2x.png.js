@@ -1,9 +1,9 @@
-// Module ID: 6731
-// Function ID: 6732
+// Module ID: 6733
+// Function ID: 6734
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6731 (metadata)
+// Module 6733 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShoesSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/6d4751ff57e3c8299bc6b5ace0b44a3ff371e61f9a2909b590915ecb73c1509c.png";

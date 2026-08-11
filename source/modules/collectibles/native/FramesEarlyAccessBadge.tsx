@@ -1,10 +1,10 @@
-// Module ID: 9439
-// Function ID: 9440
+// Module ID: 9445
+// Function ID: 9446
 // Name: BadgeWithTooltip
-// Dependencies: [32, 19, 17, 21, 4303, 712, 4239, 1236, 8654, 4153, 7704, 4299, 9403, 5715, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 4239, 1236, 8660, 1363, 7706, 4299, 9409, 5715, 2]
 // Exports: default
 
-// Module 9439 (BadgeWithTooltip)
+// Module 9445 (BadgeWithTooltip)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -47,7 +47,7 @@ function BadgeWithTooltip(tooltipPosition) {
   }, []);
   const items = [tooltipPosition, stringResult, first, callback];
   const memo = callback.useMemo(() => ({ position: tooltipPosition, label: c3, visible: first, onPress: callback }), items);
-  let obj = tooltipPosition(8654);
+  let obj = tooltipPosition(8660);
   const tooltip = obj.useTooltip(ref, memo);
   const items1 = [first];
   const effect = callback.useEffect(() => {
@@ -63,7 +63,7 @@ function BadgeWithTooltip(tooltipPosition) {
     callback((arg0) => !arg0);
   }, []);
   const tmp2 = first(4239)();
-  const isThemeDarkResult = tooltipPosition(4153).isThemeDark(tmp2);
+  const isThemeDarkResult = tooltipPosition(1363).isThemeDark(tmp2);
   let str = "text-overlay-light";
   if (isThemeDarkResult) {
     str = "control-overlay-primary-text-default";
@@ -72,7 +72,7 @@ function BadgeWithTooltip(tooltipPosition) {
   const stringResult1 = intl2.string(tooltipPosition(1236).t["1m6qcO"]);
   obj = { ref, onPress: callback1, hitSlop: closure_9, accessibilityRole: "button", accessibilityLabel: stringResult1, accessibilityHint: stringResult, style: items2, children: null };
   items2 = [tmp3.pillBase, isThemeDarkResult ? tmp3.pillDark : tmp3.pillLight];
-  const items3 = [callback2(tooltipPosition(7704).NitroWheelIcon, { size: "xs", color: str }), ];
+  const items3 = [callback2(tooltipPosition(7706).NitroWheelIcon, { size: "xs", color: str }), ];
   obj = { variant: "text-sm/bold", color: str, style: tmp3.text, children: stringResult1 };
   items3[1] = callback2(tooltipPosition(4299).Text, obj);
   obj[7] = items3;
@@ -80,7 +80,7 @@ function BadgeWithTooltip(tooltipPosition) {
 }
 function StaticBadge() {
   const tmp3 = createCacheKey();
-  let obj = require(4153) /* AccessibilityAnnouncer */;
+  let obj = require(1363) /* AccessibilityAnnouncer */;
   const isThemeDarkResult = obj.isThemeDark(importDefault(4239)());
   let str = "text-overlay-light";
   if (isThemeDarkResult) {
@@ -90,7 +90,7 @@ function StaticBadge() {
   const stringResult = intl.string(require(1236) /* getSystemLocale */.t["1m6qcO"]);
   obj = { accessibilityLabel: stringResult, style: items, children: null };
   items = [tmp3.pillBase, isThemeDarkResult ? tmp3.pillDark : tmp3.pillLight];
-  const items1 = [callback2(require(7704) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs", color: str }), ];
+  const items1 = [callback2(require(7706) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs", color: str }), ];
   obj = { variant: "text-sm/bold", color: str, style: tmp3.text, children: stringResult };
   items1[1] = callback2(require(4299) /* Text */.Text, obj);
   obj[2] = items1;
@@ -112,7 +112,7 @@ export default function _default(tooltipPosition) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = require(9403) /* useCanPurchaseFrames */;
+  let obj = require(9409) /* useCanPurchaseFrames */;
   if (!obj.useIsProfileFramesEarlyAccessPhase(tooltipPosition.location)) {
     return null;
   } else if (flag2) {

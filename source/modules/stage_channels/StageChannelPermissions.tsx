@@ -1,9 +1,9 @@
-// Module ID: 1380
-// Function ID: 1381
+// Module ID: 1399
+// Function ID: 1400
 // Name: Permissions
 // Dependencies: [676, 506, 2]
 
-// Module 1380 (Permissions)
+// Module 1399 (Permissions)
 import { Permissions } from "ME";
 import importAllResult from "fromString";
 import importAllResult1 from "fromString";

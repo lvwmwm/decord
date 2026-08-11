@@ -1,9 +1,9 @@
-// Module ID: 10283
-// Function ID: 10284
+// Module ID: 10288
+// Function ID: 10289
 // Name: getPollVoteEventProperties
-// Dependencies: [5, 3930, 7054, 1218, 1372, 4640, 5131, 4521, 4639, 8321, 676, 38, 4642, 1236, 5232, 10284, 8320, 4498, 12, 589, 709, 7222, 10289, 4153, 8325, 6917, 8358, 4202, 2]
+// Dependencies: [5, 3949, 7057, 1218, 1391, 4640, 5131, 4521, 4639, 8326, 676, 38, 4642, 1236, 5232, 10289, 8325, 4498, 12, 589, 709, 7223, 10294, 1363, 8330, 6920, 8363, 4202, 2]
 
-// Module 10283 (getPollVoteEventProperties)
+// Module 10288 (getPollVoteEventProperties)
 import handleChanged from "handleChanged";
 import initialize from "initialize";
 import processMessage from "processMessage";
@@ -108,7 +108,7 @@ function handleShowVotesForAnswer(messageId) {
               const _String = String;
               answerId = String(message.poll.answers[0].answer_id);
             }
-            obj = importAll(10284);
+            obj = importAll(10289);
             obj = { message: null, initialAnswerId: null };
             obj[0] = message;
             obj[1] = answerId;
@@ -260,7 +260,7 @@ function _optimisticallySetAnswers() {
                     let tmp6 = processMessage;
                     obj[4] = processMessage;
                     let tmp7 = _undefined;
-                    obj[6] = _undefined(7222).ReactionTypes.VOTE;
+                    obj[6] = _undefined(7223).ReactionTypes.VOTE;
                     dispatchResult = obj.dispatch(obj);
                     continue;
                   }
@@ -888,7 +888,7 @@ function _createPoll() {
               c5 = 3;
               v0 = 1;
               const obj5 = { value: null, done: false };
-              obj5[0] = lib2(6917).sendPollMessage(lib.id, obj2, obj4);
+              obj5[0] = lib2(6920).sendPollMessage(lib.id, obj2, obj4);
               return obj5;
             }
           } else if (2 === tmp7) {
@@ -1026,7 +1026,7 @@ function _endPollEarly() {
                 obj4[0] = arg1;
                 return obj4;
               } else if (arg1) {
-                obj1 = callback3(10289);
+                obj1 = callback3(10294);
                 const obj5 = { channelId: null, messageId: null };
                 obj5[0] = callback;
                 obj5[1] = callback2;

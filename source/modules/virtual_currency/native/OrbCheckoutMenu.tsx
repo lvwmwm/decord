@@ -1,10 +1,10 @@
-// Module ID: 15020
-// Function ID: 15021
+// Module ID: 15030
+// Function ID: 15031
 // Name: OrbCheckoutMenu
-// Dependencies: [32, 19, 21, 4303, 4509, 12158, 1988, 4002, 5376, 4299, 7790, 4714, 2]
+// Dependencies: [32, 19, 21, 4303, 4509, 12161, 2007, 4021, 5376, 4299, 7792, 4714, 2]
 // Exports: default
 
-// Module 15020 (OrbCheckoutMenu)
+// Module 15030 (OrbCheckoutMenu)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";
@@ -47,7 +47,7 @@ export default function OrbCheckoutMenu() {
     },
     isClearable: true
   };
-  items1[1] = callback2(first(7790).TextInput, obj);
+  items1[1] = callback2(first(7792).TextInput, obj);
   items1[2] = callback2(first(4299).Text, { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" });
   items1[3] = callback2(first(4714).Button, { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == first });
   obj[0] = items1;

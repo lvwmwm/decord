@@ -1,10 +1,10 @@
-// Module ID: 16530
-// Function ID: 16531
+// Module ID: 16541
+// Function ID: 16542
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4303, 712, 1609, 5267, 4299, 1236, 5268, 12105, 12035, 4714, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1628, 5267, 4299, 1236, 5268, 12108, 12038, 4714, 2]
 // Exports: default
 
-// Module 16530 (RedesignDiscoverabilityLanding)
+// Module 16541 (RedesignDiscoverabilityLanding)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,7 +38,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   let obj = { style: tmp.container, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
   obj = { flexGrow: 2, paddingTop: null, paddingBottom: null, paddingHorizontal: null };
   obj[1] = require(5267) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + 32;
-  obj[2] = importDefault(1609)().bottom + 16;
+  obj[2] = importDefault(1628)().bottom + 16;
   obj[3] = importDefault(712).space.PX_16;
   obj[2] = obj;
   obj = { style: tmp.topContainer };
@@ -52,7 +52,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t.KMW0kP);
   items[2] = callback(require(4299) /* Text */.Text, obj2);
   const obj3 = { resizeMode: "contain", style: tmp.image, source: null };
-  obj3[2] = importDefault(12105);
+  obj3[2] = importDefault(12108);
   items[3] = callback(importDefault(5268), obj3);
   const obj4 = { style: tmp.info, variant: "text-sm/medium", color: "text-default", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
@@ -61,7 +61,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   items1[2] = intl4.format(require(1236) /* getSystemLocale */.t.VcSQ4n, {
     learnMoreHook(arg0, arg1) {
       const obj = { onPress: null, variant: "text-sm/medium", color: "text-link", children: null };
-      obj[0] = callback(12035).handleOpenLearnMoreLink;
+      obj[0] = callback(12038).handleOpenLearnMoreLink;
       obj[3] = arg0;
       return callback2(callback(4299).Text, obj, arg1);
     }

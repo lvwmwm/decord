@@ -1,9 +1,9 @@
-// Module ID: 15821
-// Function ID: 15822
+// Module ID: 15838
+// Function ID: 15839
 // Name: Loading
-// Dependencies: [19, 17, 1961, 1891, 4125, 676, 21, 4303, 712, 5823, 8414, 589, 5716, 4127, 8419, 1222, 4158, 1609, 5824, 15822, 2]
+// Dependencies: [19, 17, 1980, 1910, 4127, 676, 21, 4303, 712, 5823, 8420, 589, 5716, 4129, 8425, 1222, 4158, 1628, 5824, 15839, 2]
 
-// Module 15821 (Loading)
+// Module 15838 (Loading)
 import closure_4 from "makeAuthenticated";
 import { View } from "useSafeAreaInsets";
 import comparator from "comparator";
@@ -20,7 +20,7 @@ function Loading() {
 }
 function MemberVerificationRouteView(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(8414), {});
+  return jsx(importDefault(8420), {});
 }
 function ExistingJoinRequestHandler(guildId) {
   guildId = guildId.guildId;
@@ -143,7 +143,7 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
       const obj2 = navigation(outer1_3[16]);
     }
   }, items);
-  importDefault(1609)();
+  importDefault(1628)();
   if (null == guildId) {
     let tmp10 = <Loading />;
   } else {

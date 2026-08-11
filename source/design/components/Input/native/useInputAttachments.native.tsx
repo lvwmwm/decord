@@ -1,10 +1,10 @@
-// Module ID: 5999
-// Function ID: 6000
+// Module ID: 6001
+// Function ID: 6002
 // Name: InputAttachmentContainer
-// Dependencies: [32, 19, 17, 21, 5777, 4299, 1348, 6000, 2]
+// Dependencies: [32, 19, 17, 21, 5777, 4299, 1367, 6002, 2]
 // Exports: estimateAttachmentWidth, renderInputAttachment, useInputAttachments
 
-// Module 5999 (InputAttachmentContainer)
+// Module 6001 (InputAttachmentContainer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

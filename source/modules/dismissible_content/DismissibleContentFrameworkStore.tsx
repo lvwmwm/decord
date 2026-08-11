@@ -1,9 +1,9 @@
-// Module ID: 1362
-// Function ID: 1363
+// Module ID: 1381
+// Function ID: 1382
 // Name: set
-// Dependencies: [676, 1363, 1359, 698, 589, 709, 2]
+// Dependencies: [676, 1382, 1378, 698, 589, 709, 2]
 
-// Module 1362 (set)
+// Module 1381 (set)
 import { AnalyticEvents } from "ME";
 import { PersistedStore } from "initialize";
 import set from "isSingleUseDismissibleContent";
@@ -71,13 +71,13 @@ prototype["getRenderedAtTimestamp"] = function getRenderedAtTimestamp(closure_0)
 };
 prototype["hasUserHitDCCap"] = function hasUserHitDCCap(PASSWORDLESS_UPSELL, closure_1) {
   if (null != PASSWORDLESS_UPSELL) {
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require(1363) /* set */.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require(1382) /* set */.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     return false;
   }
   if (null != PASSWORDLESS_UPSELL) {
     let result = null != closure_1;
     if (result) {
-      const obj = require(1359) /* isSingleUseDismissibleContent */;
+      const obj = require(1378) /* isSingleUseDismissibleContent */;
       result = obj.isGuildDismissibleContent(PASSWORDLESS_UPSELL);
     }
     if (result) {
@@ -140,10 +140,10 @@ obj = {
     ({ dismissibleContent, guildId } = arg0);
     const renderedAtTimestamps = obj.renderedAtTimestamps;
     const result = renderedAtTimestamps.set(dismissibleContent, new Date().getTime());
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require(1363) /* set */.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require(1382) /* set */.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     if (!CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(dismissibleContent)) {
       if (!obj.dailyCapOverridden) {
-        let result1 = require(1359) /* isSingleUseDismissibleContent */.isGuildDismissibleContent(dismissibleContent);
+        let result1 = require(1378) /* isSingleUseDismissibleContent */.isGuildDismissibleContent(dismissibleContent);
         if (result1) {
           result1 = null != guildId;
         }
@@ -185,7 +185,7 @@ obj = {
         } else {
           const dismissibleContentSeenDuringSession = obj.dismissibleContentSeenDuringSession;
         }
-        const tmp2Result = require(1359) /* isSingleUseDismissibleContent */;
+        const tmp2Result = require(1378) /* isSingleUseDismissibleContent */;
       }
     }
   },

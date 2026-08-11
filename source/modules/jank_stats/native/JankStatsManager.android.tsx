@@ -1,9 +1,9 @@
-// Module ID: 16487
-// Function ID: 16488
+// Module ID: 16498
+// Function ID: 16499
 // Name: handleAppStateUpdate
-// Dependencies: [676, 5261, 16488, 698, 6934, 2]
+// Dependencies: [676, 5261, 16499, 698, 6937, 2]
 
-// Module 16487 (handleAppStateUpdate)
+// Module 16498 (handleAppStateUpdate)
 import ME from "ME";
 import "initialize";
 
@@ -70,7 +70,7 @@ prototype["scheduleReport"] = function scheduleReport() {
   }
 };
 prototype["sendReport"] = function sendReport(background) {
-  let obj = importDefault(16488);
+  let obj = importDefault(16499);
   let report;
   if (obj != null) {
     report = obj.requestReport();
@@ -83,12 +83,12 @@ prototype["sendReport"] = function sendReport(background) {
   if (!tmp4) {
     obj = {};
     const tmpResult = importDefault(698);
-    const merged = Object.assign(require(6934) /* getDeviceMetadata */.getDeviceMetadata());
+    const merged = Object.assign(require(6937) /* getDeviceMetadata */.getDeviceMetadata());
     obj.version = 2;
     ({ totalFrameCount: obj3.total_frame_count, jankFrameCount: obj3.jank_frame_count, frameMetricsTotalFrameCount: obj3.frame_metrics_total_frame_count, frameMetricsJankFrameCount: obj3.frame_metrics_jank_frame_count } = report);
     obj.trigger = background;
     tmpResult.track(constants2.ANDROID_JANK_STATS, obj);
-    const obj4 = require(6934) /* getDeviceMetadata */;
+    const obj4 = require(6937) /* getDeviceMetadata */;
   }
 };
 const jankStatsManager = new JankStatsManager();

@@ -1,10 +1,10 @@
-// Module ID: 14021
-// Function ID: 14022
+// Module ID: 14029
+// Function ID: 14030
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1480, 13031, 4644, 4001, 1236, 4647, 2802, 4647, 2]
+// Dependencies: [5, 21, 1499, 13040, 4644, 4020, 1236, 4647, 2821, 4647, 2]
 // Exports: default
 
-// Module 14021 (SettingsAgeGroupResetAlert)
+// Module 14029 (SettingsAgeGroupResetAlert)
 import presentAddedFriendToast from "presentAddedFriendToast";
 import jsxProd from "jsxProd";
 
@@ -50,12 +50,12 @@ export default function SettingsAgeGroupResetAlert() {
               c1 = 2;
               c3 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(13031).resetAgeVerification();
+              obj1[0] = outer1_0(13040).resetAgeVerification();
               return obj1;
             }
           } else if (1 === tmp7) {
             dependencyMap = 0;
-            let obj2 = outer1_0(4001);
+            let obj2 = outer1_0(4020);
             const intl = outer1_0(1236).intl;
             obj2.presentError(intl.string(outer1_0(1236).t.fEptJP));
             const _Error = Error;
@@ -97,13 +97,13 @@ export default function SettingsAgeGroupResetAlert() {
     }
     return applyArgumentsResult;
   }
-  let obj = _require(1480);
+  let obj = _require(1499);
   _require = obj.useNavigation();
   obj = { title: null, content: null, actions: null };
   let intl = _require(1236).intl;
-  obj[0] = intl.string(_handleConfirm(2802)["bD//cU"]);
+  obj[0] = intl.string(_handleConfirm(2821)["bD//cU"]);
   const intl2 = _require(1236).intl;
-  obj[1] = intl2.string(_handleConfirm(2802).FbTAmI);
+  obj[1] = intl2.string(_handleConfirm(2821).FbTAmI);
   obj = { children: null };
   let obj1 = {
     variant: "destructive",
@@ -120,7 +120,7 @@ export default function SettingsAgeGroupResetAlert() {
     text: null
   };
   const intl3 = _require(1236).intl;
-  obj1[2] = intl3.string(_handleConfirm(2802).V822Mp);
+  obj1[2] = intl3.string(_handleConfirm(2821).V822Mp);
   const items = [callback(_require(4647).AlertActionButton, obj1, "confirm"), ];
   let obj2 = { variant: "secondary", text: null };
   const intl4 = _require(1236).intl;

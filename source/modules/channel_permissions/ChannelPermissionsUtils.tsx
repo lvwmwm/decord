@@ -1,10 +1,10 @@
-// Module ID: 8997
-// Function ID: 8998
+// Module ID: 9003
+// Function ID: 9004
 // Name: getRoleRowData
-// Dependencies: [1376, 1415, 1965, 1971, 1903, 7781, 676, 1968, 1236, 506, 11, 4146, 1351, 3934, 8998, 1935, 4486, 2]
+// Dependencies: [1395, 1434, 1984, 1990, 1922, 7783, 676, 1987, 1236, 506, 11, 4148, 1370, 3953, 9004, 1954, 4486, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 8997 (getRoleRowData)
+// Module 9003 (getRoleRowData)
 import { isGuildVocalChannelType } from "createChannelRecord";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
@@ -48,8 +48,8 @@ function sortRoles(guildId, id) {
   if (num2 !== num) {
     let diff = num2 - num;
   } else {
-    diff = require(1968) /* compareGuildRoles */.compareGuildRoles(guildId, id);
-    const obj = require(1968) /* compareGuildRoles */;
+    diff = require(1987) /* compareGuildRoles */.compareGuildRoles(guildId, id);
+    const obj = require(1987) /* compareGuildRoles */;
   }
   return diff;
 }
@@ -58,11 +58,11 @@ function getMemberRowData(id, id2) {
   const obj = { rowType: tmp3, name: null, username: null, id: null, avatarURL: null, bot: null, verifiedBot: null, disabled: null, key: null };
   nick = nick.getNick(id2.id, id.id);
   if (nick == null) {
-    nick = importDefault(4146).getName(id);
-    const obj2 = importDefault(4146);
+    nick = importDefault(4148).getName(id);
+    const obj2 = importDefault(4148);
   }
   obj[1] = nick;
-  obj[2] = importDefault(4146).getUserTag(id);
+  obj[2] = importDefault(4148).getUserTag(id);
   obj[3] = id.id;
   obj[4] = id.getAvatarURL(id2.id, 24);
   obj[5] = id.bot;
@@ -408,7 +408,7 @@ export const getMembersRows = function getMembersRows(stateFromStoresArray, chan
     };
   }
   const mapped = stateFromStoresArray.map(currentUser.getUser);
-  const found = mapped.filter(_require(1351).isNotNullish);
+  const found = mapped.filter(_require(1370).isNotNullish);
   const found1 = found.filter((id) => {
     const tmp2 = outer1_5(guild, id);
     let tmp3 = !tmp2;
@@ -451,7 +451,7 @@ export const getExistingMembers = function getExistingMembers(memberIds, channel
   let closure_2 = accessPermissions;
   const dependencyMap = arg4;
   const mapped = memberIds.map(currentUser.getUser);
-  const found = mapped.filter(_require(1351).isNotNullish);
+  const found = mapped.filter(_require(1370).isNotNullish);
   return found.filter((id) => {
     id = id.id;
     const currentUser = outer1_9.getCurrentUser();
@@ -490,7 +490,7 @@ export const getExistingMembersRows = function getExistingMembersRows(memberIds,
   let closure_2 = accessPermissions;
   const dependencyMap = arg4;
   const mapped = memberIds.map(currentUser.getUser);
-  const found = mapped.filter(_require(1351).isNotNullish);
+  const found = mapped.filter(_require(1370).isNotNullish);
   const found1 = found.filter((id) => {
     id = id.id;
     const currentUser = outer1_9.getCurrentUser();
@@ -572,7 +572,7 @@ export const getRemoveTooltipHint = function getRemoveTooltipHint(arg0) {
 export const flipEveryonePermission = function flipEveryonePermission(outer1_0, accessPermissions, result) {
   let everyoneOverwrite = outer1_0.permissionOverwrites[outer1_0.guild_id];
   if (null == everyoneOverwrite) {
-    let obj = importAll(3934);
+    let obj = importAll(3953);
     everyoneOverwrite = obj.makeEveryoneOverwrite(outer1_0.guild_id);
   }
   obj = {};
@@ -590,7 +590,7 @@ export const flipEveryonePermission = function flipEveryonePermission(outer1_0, 
 export const toggleChannelEveryonePermission = function toggleChannelEveryonePermission(guild_id) {
   let everyoneOverwrite = guild_id.permissionOverwrites[guild_id.guild_id];
   if (null == everyoneOverwrite) {
-    let obj = importAll(3934);
+    let obj = importAll(3953);
     everyoneOverwrite = obj.makeEveryoneOverwrite(guild_id.guild_id);
   }
   obj = {};
@@ -604,7 +604,7 @@ export const toggleChannelEveryonePermission = function toggleChannelEveryonePer
     const tmp5Result = tmp5(506);
   }
   const obj4 = importAll(506);
-  require(8998) /* _updatePermission */.updatePermission(guild_id, obj.id, obj.allow, obj.deny);
+  require(9004) /* _updatePermission */.updatePermission(guild_id, obj.id, obj.allow, obj.deny);
 };
 export const grantUserChannelAccess = function grantUserChannelAccess(outer1_0, accessPermissions) {
   let allow;
@@ -614,16 +614,16 @@ export const grantUserChannelAccess = function grantUserChannelAccess(outer1_0, 
     if (null == outer1_0.permissionOverwrites[currentUser.id]) {
       let obj = { id: null, type: null, allow: null, deny: null };
       obj[0] = currentUser.id;
-      obj[1] = require(1935) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER;
-      obj[2] = importAll(506).add(importAll(3934).NONE, accessPermissions);
-      obj[3] = importAll(3934).NONE;
+      obj[1] = require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER;
+      obj[2] = importAll(506).add(importAll(3953).NONE, accessPermissions);
+      obj[3] = importAll(3953).NONE;
       const obj4 = importAll(506);
       const items = [obj];
-      return require(8998) /* _updatePermission */.savePermissionUpdates(outer1_0.id, items, true);
+      return require(9004) /* _updatePermission */.savePermissionUpdates(outer1_0.id, items, true);
     } else {
       ({ allow, deny } = tmp4);
       obj = importAll(506);
-      const obj2 = require(8998) /* _updatePermission */;
+      const obj2 = require(9004) /* _updatePermission */;
       return obj2.updatePermission(outer1_0, tmp4.id, obj.add(allow, accessPermissions), deny);
     }
   }

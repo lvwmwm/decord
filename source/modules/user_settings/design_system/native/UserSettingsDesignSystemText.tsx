@@ -1,10 +1,10 @@
-// Module ID: 14774
-// Function ID: 14775
+// Module ID: 14784
+// Function ID: 14785
 // Name: UserSettingsDesignSystemText
-// Dependencies: [19, 17, 21, 4005, 712, 4712, 5767, 4300, 5374, 4299, 2]
+// Dependencies: [19, 17, 21, 4024, 712, 4712, 5767, 4300, 5374, 4299, 2]
 // Exports: default
 
-// Module 14774 (UserSettingsDesignSystemText)
+// Module 14784 (UserSettingsDesignSystemText)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemText.tsx");
 
 export default function UserSettingsDesignSystemText() {
-  let obj = require(4005) /* map */;
+  let obj = require(4024) /* map */;
   obj = { children: null };
   const token = obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_PADDING);
   obj = { spacing: null, style: null, children: null };

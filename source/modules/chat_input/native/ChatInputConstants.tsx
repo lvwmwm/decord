@@ -1,9 +1,9 @@
-// Module ID: 11369
-// Function ID: 11370
+// Module ID: 11374
+// Function ID: 11375
 // Name: TextAreaCta
 // Dependencies: [1297, 2]
 
-// Module 11369 (TextAreaCta)
+// Module 11374 (TextAreaCta)
 let obj = { easing: require("Button").STANDARD_EASING, duration: 250 };
 obj = { easing: require("Button").STANDARD_EASING, duration: 50 };
 obj = { easing: require("Button").STANDARD_EASING, duration: 100 };

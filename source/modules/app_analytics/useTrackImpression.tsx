@@ -1,10 +1,10 @@
-// Module ID: 9349
-// Function ID: 9350
+// Module ID: 9355
+// Function ID: 9356
 // Name: trackImpression
-// Dependencies: [19, 1372, 1960, 4124, 699, 503, 698, 709, 4498, 659, 4510, 4730, 2]
+// Dependencies: [19, 1391, 1979, 4126, 699, 503, 698, 709, 4498, 659, 4510, 4730, 2]
 // Exports: default
 
-// Module 9349 (trackImpression)
+// Module 9355 (trackImpression)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";

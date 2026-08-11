@@ -1,9 +1,9 @@
-// Module ID: 3955
-// Function ID: 3956
+// Module ID: 3974
+// Function ID: 3975
 // Name: createFromServer
-// Dependencies: [1912, 2]
+// Dependencies: [1931, 2]
 
-// Module 3955 (createFromServer)
+// Module 3974 (createFromServer)
 import "toJS";
 
 const obj = { PRICE_CHANGE_MODE_UNSPECIFIED: "PRICE_CHANGE_MODE_UNSPECIFIED", PRICE_DECREASE: "PRICE_DECREASE", PRICE_INCREASE: "PRICE_INCREASE", OPT_OUT_PRICE_INCREASE: "OPT_OUT_PRICE_INCREASE" };

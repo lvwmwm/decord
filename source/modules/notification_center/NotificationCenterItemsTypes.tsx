@@ -1,9 +1,9 @@
-// Module ID: 7101
-// Function ID: 7102
+// Module ID: 7102
+// Function ID: 7103
 // Name: NotificationCenterScenes
 // Dependencies: [2]
 
-// Module 7101 (NotificationCenterScenes)
+// Module 7102 (NotificationCenterScenes)
 const result = require("set").fileFinishedImporting("modules/notification_center/NotificationCenterItemsTypes.tsx");
 
 export const NotificationCenterScenes = { LANDING: "notification_center_landing" };

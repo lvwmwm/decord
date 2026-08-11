@@ -1,14 +1,14 @@
-// Module ID: 12551
-// Function ID: 12552
+// Module ID: 12555
+// Function ID: 12556
 // Name: TitleWrapper
-// Dependencies: [32, 19, 17, 3938, 1903, 8383, 21, 4303, 712, 1348, 4846, 500, 9470, 4299, 1297, 12552, 9663, 4005, 4764, 12553, 1236, 4494, 2]
+// Dependencies: [32, 19, 17, 3957, 1922, 8389, 21, 4303, 712, 1367, 4846, 500, 9476, 4299, 1297, 12556, 9668, 4024, 4764, 12557, 1236, 4494, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12551 (TitleWrapper)
+// Module 12555 (TitleWrapper)
 import _slicedToArray from "_slicedToArray";
-import module_12553 from "module_12553";
+import module_12557 from "module_12557";
 import { View } from "map";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { getMinHeaderHeight } from "MIN_HEADER_HEIGHT";
 import jsxProd from "computeChannelName";
@@ -26,7 +26,7 @@ function TitleWrapper(headerAccessibilityLabel) {
   let tmp4;
   ({ children, onPress, titleContentHeight } = headerAccessibilityLabel);
   let importDefault;
-  const tmp2 = callback3(importDefault(1348)("ChannelHeaderShared"));
+  const tmp2 = callback3(importDefault(1367)("ChannelHeaderShared"));
   [tmp4, c1] = callback(React.useState(undefined), 2);
   [][0] = titleContentHeight;
   callback = React.useCallback((nativeEvent) => {
@@ -68,7 +68,7 @@ function ChannelTitle(guildId) {
     disableArrow = false;
   }
   ({ userId, icon } = guildId);
-  const tmp3 = importDefault(1348)("ChannelTitle");
+  const tmp3 = importDefault(1367)("ChannelTitle");
   const tmp4 = callback3(tmp3);
   let obj = { style: tmp4.channelContent, children: null };
   obj = { style: tmp4.nameWithArrow, children: null };
@@ -92,9 +92,9 @@ function ChannelTitle(guildId) {
     obj[3] = str2;
     ({ channelName: obj4[6], channelNameContainer: obj4[7] } = tmp4);
     obj[8] = accessibleTitle;
-    let tmp8Result = tmp11(tmp(9470), obj);
+    let tmp8Result = tmp11(tmp(9476), obj);
     let tmp8 = tmp11;
-    const tmpResult = tmp(9470);
+    const tmpResult = tmp(9476);
   } else {
     tmp8 = closure_9;
     let str = "heading-lg/bold";
@@ -112,7 +112,7 @@ function ChannelTitle(guildId) {
   tmp8Result = !disableArrow;
   if (!disableArrow) {
     const obj2 = { source: null, size: null, style: null };
-    obj2[0] = tmp(12552);
+    obj2[0] = tmp(12556);
     obj2[1] = require(1297) /* Button */.Icon.Sizes.REFRESH_SMALL_16;
     obj2[2] = tmp4.arrowIcon;
     tmp8Result = tmp8(require(1297) /* Button */.Icon, obj2);
@@ -133,11 +133,11 @@ function ChannelTitle(guildId) {
 }
 function GroupDMIcon(channel) {
   const obj = { size: null, channel: null, style: null };
-  const tmp = callback3(importDefault(1348)("ChannelHeaderShared"));
+  const tmp = callback3(importDefault(1367)("ChannelHeaderShared"));
   obj[0] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[1] = channel.channel;
   obj[2] = tmp.channelIcon;
-  return callback2(importDefault(9663), obj);
+  return callback2(importDefault(9668), obj);
 }
 function UserAvatar(user) {
   let isMobileOnline;
@@ -145,7 +145,7 @@ function UserAvatar(user) {
   let status;
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: true, status: "done", isMobileOnline: true, isVROnline: null, style: null, autoStatusCutout: 189.518 };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: true, status: false, isMobileOnline: "done", isVROnline: "flowing", style: "hourglass", autoStatusCutout: "hours" };
   obj[3] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   let tmp3 = null;
   if (!user.isSystemUser()) {
@@ -154,13 +154,13 @@ function UserAvatar(user) {
   obj[4] = tmp3;
   obj[5] = isMobileOnline;
   obj[6] = isVROnline;
-  obj[7] = callback3(importDefault(1348)("ChannelHeaderShared")).channelIcon;
+  obj[7] = callback3(importDefault(1367)("ChannelHeaderShared")).channelIcon;
   return closure_9(require(1297) /* Button */.Avatar, obj);
 }
 function ChannelIconRaw(IconComponent) {
   IconComponent = IconComponent.IconComponent;
-  const tmp2 = importDefault(1348)("ChannelHeaderShared");
-  let obj = require(4005) /* map */;
+  const tmp2 = importDefault(1367)("ChannelHeaderShared");
+  let obj = require(4024) /* map */;
   const token = obj.useToken(importDefault(712).modules.mobile.CHANNEL_HEADER_ICON_SIZE);
   if (null != IconComponent) {
     obj = { size: null, color: null, style: null };
@@ -193,7 +193,7 @@ function MemberCountText(arg0) {
   let withSeparator;
   ({ presenceCount, memberCount } = arg0);
   ({ withSeparator, leadingAccessoryWidth } = arg0);
-  const tmp3 = importDefault(1348)("ChannelHeaderShared");
+  const tmp3 = importDefault(1367)("ChannelHeaderShared");
   let str = "online";
   if (0 === presenceCount) {
     str = "online";
@@ -216,7 +216,7 @@ function MemberCountText(arg0) {
     tmp9 = leadingAccessoryWidth;
   }
   obj[3] = tmp9;
-  const children = [closure_9(importDefault(12553), obj), ];
+  const children = [closure_9(importDefault(12557), obj), ];
   let tmp7Result = null;
   if (withSeparator) {
     let str3 = "text-xs/medium";
@@ -232,14 +232,14 @@ function MemberCountText(arg0) {
 }
 function ParentChannelSubTitle(channel) {
   channel = channel.channel;
-  const tmp2 = importDefault(1348)("ChannelHeaderShared");
+  const tmp2 = importDefault(1367)("ChannelHeaderShared");
   let obj = { lineClamp: 1, accessibilityLabel: null, maxFontSizeMultiplier: 2, variant: null, color: null, style: null, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { channelName: null };
   const tmp3 = callback3(tmp2);
   const tmp4 = closure_9;
   const tmp5 = require;
-  obj[0] = require(4494) /* computeChannelName */.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+  obj[0] = require(4494) /* computeChannelName */.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
   obj[1] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.BjYvHO, obj);
   let str = "text-xs/medium";
   if (tmp2) {
@@ -254,12 +254,12 @@ function ParentChannelSubTitle(channel) {
   obj[5] = tmp3.parentChannelName;
   const obj3 = require(4494) /* computeChannelName */;
   const tmp6 = mergeGuildAvatar;
-  const tmp7 = upsertRelationship;
+  const tmp7 = markAllUserIdListsStale;
   obj[6] = tmp5(4494).computeChannelName(channel, tmp6, tmp7);
   return tmp4(require(4299) /* Text */.Text, obj);
 }
 function EmptyIcon() {
-  return callback2(View, { style: callback3(importDefault(1348)("ChannelHeaderShared")).channelIconWrapper });
+  return callback2(View, { style: callback3(importDefault(1367)("ChannelHeaderShared")).channelIconWrapper });
 }
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles((arg0) => {

@@ -1,7 +1,7 @@
 // Module ID: 7925
 // Function ID: 7926
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7924, 7919, 7859]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7926, 7921, 7861]
 
 // Module 7925 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Polyline = importDefault;
+const Polygon = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,7 +31,7 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Polyline {
+class Polygon {
   constructor() {
     self = this;
     items = [...arguments];
@@ -54,7 +54,7 @@ class Polyline {
       points = points.points;
       if (points) {
         const _HermesInternal = HermesInternal;
-        points.d = "M" + _undefined(outer1_1[7])(points);
+        points.d = "M" + _undefined(outer1_1[7])(points) + "z";
       }
       if (_undefined.root) {
         const root = _undefined.root;
@@ -64,7 +64,7 @@ class Polyline {
     return tmp3Result;
   }
 }
-require("_inherits")(Polyline, require("_isNativeReflectConstruct"));
+require("_inherits")(Polygon, require("_isNativeReflectConstruct"));
 let items = [
   {
     key: "render",
@@ -75,16 +75,16 @@ let items = [
       let combined = points;
       if (points) {
         const _HermesInternal = HermesInternal;
-        combined = "M" + Polyline(7924)(points);
+        combined = "M" + Polygon(7926)(points) + "z";
       }
       obj[1] = combined;
       const merged = Object.assign(props);
-      return jsx(Polyline(7919), { ref: this.refMethod, d: null });
+      return jsx(Polygon(7921), { ref: this.refMethod, d: null });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Polyline, items);
-importDefaultResultResult.displayName = "Polyline";
+const importDefaultResultResult = importDefaultResult(Polygon, items);
+importDefaultResultResult.displayName = "Polygon";
 importDefaultResultResult.defaultProps = { points: "" };
 
 export default importDefaultResultResult;

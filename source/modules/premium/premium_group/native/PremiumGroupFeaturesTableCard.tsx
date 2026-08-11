@@ -1,10 +1,10 @@
-// Module ID: 12757
-// Function ID: 12758
+// Module ID: 12761
+// Function ID: 12762
 // Name: BetaPill
-// Dependencies: [17, 6896, 21, 4303, 712, 4299, 1236, 12758, 1297, 4725, 4151, 8626, 2]
+// Dependencies: [17, 6898, 21, 4303, 712, 4299, 1236, 12762, 1297, 4725, 4152, 8632, 2]
 // Exports: default
 
-// Module 12757 (BetaPill)
+// Module 12761 (BetaPill)
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";
 import jsxProd from "jsxProd";
@@ -46,7 +46,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
   let subheaderString;
   ({ style, premiumGroupRole } = arg0);
   const tmp = callback3();
-  const tmp4 = importDefault(12758)(premiumGroupRole, false);
+  const tmp4 = importDefault(12762)(premiumGroupRole, false);
   if (null == tmp4) {
     return null;
   } else {
@@ -59,18 +59,18 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj = { start: null, end: null, colors: null, locations: null, style: null, children: null };
     obj[0] = { x: 0, y: 0 };
     obj[1] = { x: 1, y: 0 };
-    let obj2 = require(4151) /* hexToRgba */;
+    let obj2 = require(4152) /* hexToRgba */;
     const items = [obj2.hexWithOpacity("#8547C6", 0.15), , ];
     const tmp2Result = tmp2(4725);
-    items[1] = require(4151) /* hexToRgba */.hexWithOpacity("#B845C1", 0.15);
-    const obj4 = require(4151) /* hexToRgba */;
-    items[2] = require(4151) /* hexToRgba */.hexWithOpacity("#AB5D8A", 0.15);
+    items[1] = require(4152) /* hexToRgba */.hexWithOpacity("#B845C1", 0.15);
+    const obj4 = require(4152) /* hexToRgba */;
+    items[2] = require(4152) /* hexToRgba */.hexWithOpacity("#AB5D8A", 0.15);
     obj[2] = items;
     obj[3] = [0, 0.4996, 0.9593];
     obj[4] = tmp.premiumGroupCard;
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
-    const items1 = [callback(tmp2(8626), { width: 181, height: 16 }), callback(BetaPill, {})];
+    const items1 = [callback(tmp2(8632), { width: 181, height: 16 }), callback(BetaPill, {})];
     obj[1] = items1;
     const items2 = [callback2(View, obj), , ];
     const obj1 = { variant: "text-sm/normal", style: null, children: null };

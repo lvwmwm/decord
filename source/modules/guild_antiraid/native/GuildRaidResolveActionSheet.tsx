@@ -1,12 +1,12 @@
-// Module ID: 11260
-// Function ID: 11261
+// Module ID: 11265
+// Function ID: 11266
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [32, 19, 17, 676, 7779, 21, 4303, 712, 1236, 6977, 4271, 5764, 5824, 4299, 7967, 1297, 4714, 4498, 11230, 7784, 2]
+// Dependencies: [32, 19, 17, 676, 7781, 21, 4303, 712, 1236, 6980, 4271, 5764, 5824, 4299, 7969, 1297, 4714, 4498, 11235, 7786, 2]
 // Exports: default
 
-// Module 11260 (GuildRaidResolveActionSheet)
+// Module 11265 (GuildRaidResolveActionSheet)
 import _slicedToArray from "_slicedToArray";
-import module_7784 from "module_7784";
+import module_7786 from "module_7786";
 import { View } from "collectGuildAnalyticsMetadata";
 import { AnalyticEvents } from "ME";
 import { SafetyToastType } from "SafetyToastType";
@@ -51,22 +51,22 @@ export default function GuildRaidResolveActionSheet(arg0) {
   let obj = { text: null, value: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.yeaXw5);
-  obj[1] = require(6977) /* Feedback */.RaidResolutionType.LEGITIMATE_ACTIVITY;
+  obj[1] = require(6980) /* Feedback */.RaidResolutionType.LEGITIMATE_ACTIVITY;
   let items = [obj, , , ];
   obj = { text: null, value: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["o++3B8"]);
-  obj[1] = require(6977) /* Feedback */.RaidResolutionType.DM_SPAM;
+  obj[1] = require(6980) /* Feedback */.RaidResolutionType.DM_SPAM;
   items[1] = obj;
   obj = { text: null, value: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.UfHAwZ);
-  obj[1] = require(6977) /* Feedback */.RaidResolutionType.JOIN_RAID;
+  obj[1] = require(6980) /* Feedback */.RaidResolutionType.JOIN_RAID;
   items[2] = obj;
   let obj1 = { text: null, value: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl4.string(require(1236) /* getSystemLocale */.t.K3UWeR);
-  obj1[1] = require(6977) /* Feedback */.RaidResolutionType.OTHER;
+  obj1[1] = require(6980) /* Feedback */.RaidResolutionType.OTHER;
   items[3] = obj1;
   let obj2 = { children: null };
   let obj3 = { style: tmp.container, children: null };

@@ -1,7 +1,7 @@
 // Module ID: 4504
 // Function ID: 4505
 // Name: hasPendingMemberAction
-// Dependencies: [1372, 1971, 1891, 4505, 4506, 676, 3917, 4507, 1384, 2]
+// Dependencies: [1391, 1990, 1910, 4505, 4506, 676, 3936, 4507, 1403, 2]
 // Exports: hasPendingMemberAction
 
 // Module 4504 (hasPendingMemberAction)
@@ -35,8 +35,8 @@ export const hasPendingMemberAction = function hasPendingMemberAction(guild_id, 
     if (num == null) {
       num = 0;
     }
-    hasItem = !importAll(1384).hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
-    const obj = importAll(1384);
+    hasItem = !importAll(1403).hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+    const obj = importAll(1403);
   }
   if (hasItem) {
     hasItem = handleSettingsLoadSuccess.hasMemberAction(guild.id, channel.id);

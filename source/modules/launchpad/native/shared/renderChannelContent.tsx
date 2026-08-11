@@ -1,10 +1,10 @@
-// Module ID: 16057
-// Function ID: 16058
+// Module ID: 16074
+// Function ID: 16075
 // Name: ChannelContent
-// Dependencies: [19, 17, 9795, 4500, 21, 4303, 500, 16052, 4794, 16058, 4299, 4823, 7962, 15250, 2]
+// Dependencies: [19, 17, 9800, 4500, 21, 4303, 500, 16069, 4794, 16075, 4299, 4823, 7964, 15259, 2]
 // Exports: default
 
-// Module 16057 (ChannelContent)
+// Module 16074 (ChannelContent)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
@@ -67,13 +67,13 @@ function ChannelContent(arg0) {
   }
   const obj2 = { style: { flexDirection: "row", paddingRight: num, alignItems: "center" }, children: null };
   const obj3 = { title: name, muted, unread, resolvedUnreadSetting: null, connected: null };
-  const tmp4 = importDefault(16052)();
+  const tmp4 = importDefault(16069)();
   if (resolvedUnreadSetting == null) {
     resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
   }
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
-  const items1 = [closure_7(importDefault(16058), obj3), , ];
+  const items1 = [closure_7(importDefault(16075), obj3), , ];
   tmp9Result = null;
   if (null != channelCategoryName) {
     const obj4 = { variant: "text-xs/bold", color: "text-muted", style: null, children: null };
@@ -109,13 +109,13 @@ function ChannelContent(arg0) {
     if (isNSFWResult) {
       const obj8 = { size: "xxs", color: "icon-muted", style: null };
       obj8[2] = tmp.channelTraitIcon;
-      isNSFWResult = tmp9(require(7962) /* WarningIcon */.WarningIcon, obj8);
+      isNSFWResult = tmp9(require(7964) /* WarningIcon */.WarningIcon, obj8);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj9 = { locked: null, isInMainTabsExperiment: true };
       obj9[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp9(tmp2(15250), obj9);
+      isSubscriptionGated = tmp9(tmp2(15259), obj9);
     }
     items3[2] = isSubscriptionGated;
     obj5[1] = items3;

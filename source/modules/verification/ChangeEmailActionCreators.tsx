@@ -1,10 +1,10 @@
-// Module ID: 8461
-// Function ID: 8462
+// Module ID: 8467
+// Function ID: 8468
 // Name: _confirmEmailChange
 // Dependencies: [5, 676, 5127, 503, 2]
 // Exports: confirmEmailChange, sendConfirmationCode
 
-// Module 8461 (_confirmEmailChange)
+// Module 8467 (_confirmEmailChange)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

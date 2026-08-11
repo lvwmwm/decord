@@ -1,16 +1,16 @@
-// Module ID: 14891
-// Function ID: 14892
+// Module ID: 14901
+// Function ID: 14902
 // Name: useDefaultGuildsRestricted
-// Dependencies: [3974, 2]
+// Dependencies: [3993, 2]
 // Exports: useDefaultGuildsRestricted
 
-// Module 14891 (useDefaultGuildsRestricted)
+// Module 14901 (useDefaultGuildsRestricted)
 const result = require("set").fileFinishedImporting("modules/user_settings/privacy_and_safety/DefultGuildsRestrictedSetting.tsx");
 
 export const useDefaultGuildsRestricted = function useDefaultGuildsRestricted() {
-  const DefaultGuildsRestricted = require(3974) /* explicitContentFromProto */.DefaultGuildsRestricted;
+  const DefaultGuildsRestricted = require(3993) /* explicitContentFromProto */.DefaultGuildsRestricted;
   const setting = DefaultGuildsRestricted.useSetting();
-  const DefaultGuildsRestrictedV2 = require(3974) /* explicitContentFromProto */.DefaultGuildsRestrictedV2;
+  const DefaultGuildsRestrictedV2 = require(3993) /* explicitContentFromProto */.DefaultGuildsRestrictedV2;
   let setting1 = DefaultGuildsRestrictedV2.useSetting();
   if (null == setting1) {
     setting1 = setting || setting;

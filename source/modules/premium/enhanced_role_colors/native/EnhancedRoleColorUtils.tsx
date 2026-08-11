@@ -1,10 +1,10 @@
-// Module ID: 8070
-// Function ID: 8071
+// Module ID: 8072
+// Function ID: 8073
 // Name: processColorStrings
-// Dependencies: [32, 19, 17, 1302, 505, 689, 1351, 4742, 2]
+// Dependencies: [32, 19, 17, 1302, 505, 689, 1370, 4742, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 8070 (processColorStrings)
+// Module 8072 (processColorStrings)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { processColor } from "get ActivityIndicator";
@@ -77,7 +77,7 @@ export const processColorStringsArray = function processColorStringsArray(colorS
   } else {
     const items = [, , ];
     ({ primaryColor: arr[0], secondaryColor: arr[1], tertiaryColor: arr[2] } = processColorStrings(colorStrings));
-    return items.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    return items.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
   }
 };
 export const useProcessColorStringsArray = function useProcessColorStringsArray(colorStrings) {

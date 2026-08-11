@@ -1,10 +1,10 @@
-// Module ID: 8802
-// Function ID: 8803
+// Module ID: 8808
+// Function ID: 8809
 // Name: set
-// Dependencies: [853, 8803, 8804, 8805, 2]
+// Dependencies: [853, 8809, 8810, 8811, 2]
 // Exports: compareLayerFiles, isPreviewFilename, parseLayerFilename
 
-// Module 8802 (set)
+// Module 8808 (set)
 import _toArray from "_toArray";
 import set from "ProfileFrameLayerType";
 
@@ -24,7 +24,7 @@ const items3 = [...set1];
 obj[obj.INVALID_ANCHOR] = "invalid anchor (expected: " + items3.join(", ") + ")";
 obj[obj.INVALID_RESPONSIVE] = "invalid suffix (expected '" + "responsive" + "')";
 obj[obj.BORDER_HAS_ANCHOR] = "border layers must omit the anchor";
-let closure_8 = { [arg1(8803).ProfileFrameLayerOrder.FRONT]: 0, [arg1(8803).ProfileFrameLayerOrder.BACK]: 1 };
+let closure_8 = { [arg1(8809).ProfileFrameLayerOrder.FRONT]: 0, [arg1(8809).ProfileFrameLayerOrder.BACK]: 1 };
 const result = set.fileFinishedImporting("modules/collectibles/profile_frames/tooling/ProfileFrameLayerParser.tsx");
 
 export const PREVIEW_FILENAME = "preview";
@@ -43,7 +43,7 @@ export const parseLayerFilename = function parseLayerFilename(c7) {
       const substr = arr2.slice(2);
       if (obj14.test(tmp19)) {
         if (set.has(tmp20)) {
-          if (tmp20 === require(8804) /* ProfileFrameLayerType */.ProfileFrameLayerType.BORDER) {
+          if (tmp20 === require(8810) /* ProfileFrameLayerType */.ProfileFrameLayerType.BORDER) {
             if (substr.length > 0) {
               if (set1.has(substr[0])) {
                 let obj = { parsed: null, errorType: null };
@@ -68,7 +68,7 @@ export const parseLayerFilename = function parseLayerFilename(c7) {
               const _Number2 = Number;
               obj3[0] = Number(tmp19);
               obj3[1] = tmp20;
-              obj3[2] = tmp4(8805).ProfileFrameLayerAnchor.CENTER;
+              obj3[2] = tmp4(8811).ProfileFrameLayerAnchor.CENTER;
               obj3[3] = 1 === substr.length;
               obj2[0] = obj3;
               return obj2;
@@ -95,7 +95,7 @@ export const parseLayerFilename = function parseLayerFilename(c7) {
                   obj7[0] = Number(tmp19);
                   obj7[1] = tmp20;
                   obj7[2] = first;
-                  obj7[3] = 2 === substr.length || tmp20 === tmp4(8804).ProfileFrameLayerType.RAIL;
+                  obj7[3] = 2 === substr.length || tmp20 === tmp4(8810).ProfileFrameLayerType.RAIL;
                   obj6[0] = obj7;
                   return obj6;
                 }

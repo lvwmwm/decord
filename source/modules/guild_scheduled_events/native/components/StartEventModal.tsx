@@ -1,10 +1,10 @@
-// Module ID: 9052
-// Function ID: 9053
+// Module ID: 9058
+// Function ID: 9059
 // Name: NavigationBar
-// Dependencies: [5, 32, 19, 17, 1372, 1891, 1378, 8950, 21, 4303, 712, 4509, 4846, 1236, 1297, 8060, 4299, 9046, 589, 8986, 9053, 5328, 7796, 9056, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 1391, 1910, 1397, 8956, 21, 4303, 712, 4509, 4846, 1236, 1297, 8062, 4299, 9052, 589, 8992, 9059, 5328, 7798, 9062, 4714, 2]
 // Exports: default
 
-// Module 9052 (NavigationBar)
+// Module 9058 (NavigationBar)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
 import canManageResource from "canManageResource";
@@ -31,7 +31,7 @@ function NavigationBar(onClose) {
     return onClose();
   };
   obj = { source: null };
-  obj[0] = importDefault(8060);
+  obj[0] = importDefault(8062);
   obj[3] = callback(onClose(1297).Icon, obj);
   obj[0] = callback(onClose(4846).PressableOpacity, obj);
   return callback(View, obj);

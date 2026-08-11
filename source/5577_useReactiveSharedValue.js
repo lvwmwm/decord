@@ -1,7 +1,7 @@
 // Module ID: 5577
 // Function ID: 5578
 // Name: useReactiveSharedValue
-// Dependencies: [19, 1634]
+// Dependencies: [19, 1653]
 // Exports: useReactiveSharedValue
 
 // Module 5577 (useReactiveSharedValue)
@@ -26,13 +26,13 @@ export const useReactiveSharedValue = (obj) => {
     if (null === tmp2.current) {
       tmp.current = obj;
       if (typeof obj === "object") {
-        obj = require(1634) /* cancelAnimation */;
+        obj = require(1653) /* cancelAnimation */;
         obj = {};
         const merged = Object.assign(obj);
         let mutable = obj.makeMutable(obj);
       } else {
-        mutable = require(1634) /* cancelAnimation */.makeMutable(obj);
-        const obj3 = require(1634) /* cancelAnimation */;
+        mutable = require(1653) /* cancelAnimation */.makeMutable(obj);
+        const obj3 = require(1653) /* cancelAnimation */;
       }
       tmp2.current = mutable;
     } else if (tmp.current !== obj) {

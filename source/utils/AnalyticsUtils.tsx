@@ -1,7 +1,7 @@
 // Module ID: 698
 // Function ID: 699
 // Name: expandEventProperties
-// Dependencies: [109, 19, 699, 706, 676, 13469, 4329, 1898, 697, 503, 13467, 1208, 709, 7135, 1236, 7, 514, 2, 13470]
+// Dependencies: [109, 19, 699, 706, 676, 13477, 4329, 1917, 697, 503, 13475, 1208, 709, 7136, 1236, 7, 514, 2, 13478]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, debugLogEvent, expandLocation, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
 // Module 698 (expandEventProperties)
@@ -35,18 +35,18 @@ function expandEventProperties(arg0) {
   let obj2 = obj;
   if (null == obj.location) {
     if (null == obj.source) {
-      tmp.client_performance_cpu = importDefault(7135).getCurrentCPUUsagePercent();
-      const obj6 = importDefault(7135);
-      tmp.client_performance_memory = importDefault(7135).getCurrentMemoryUsageKB();
-      const obj7 = importDefault(7135);
-      tmp.cpu_core_count = importDefault(7135).getCPUCoreCount();
+      tmp.client_performance_cpu = importDefault(7136).getCurrentCPUUsagePercent();
+      const obj6 = importDefault(7136);
+      tmp.client_performance_memory = importDefault(7136).getCurrentMemoryUsageKB();
+      const obj7 = importDefault(7136);
+      tmp.cpu_core_count = importDefault(7136).getCPUCoreCount();
       tmp.accessibility_features = getAccessibilityFeatures();
       tmp.rendered_locale = obj2(1236).intl.currentLocale;
       const _Math = Math;
       const _performance = performance;
       tmp.uptime_app = Math.floor((performance.now() - closure_18) / c15);
-      const obj8 = importDefault(7135);
-      const processUptime = importDefault(7135).getProcessUptime();
+      const obj8 = importDefault(7136);
+      const processUptime = importDefault(7136).getProcessUptime();
       if (null != processUptime) {
         const _Math2 = Math;
         tmp.uptime_process_renderer = Math.floor(processUptime);
@@ -122,7 +122,7 @@ if (isBlockedDomain.isLibdiscoreInitialized()) {
   launchSignature = obj2.generateLaunchSignature(obj3.getGlobalObject());
 }
 function addBreadcrumb(arg0) {
-  const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = require(13467) /* IGNORE_ANALYTICS_BREADCRUMB_EVENTS */.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
+  const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = require(13475) /* IGNORE_ANALYTICS_BREADCRUMB_EVENTS */.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
   if (!IGNORE_ANALYTICS_BREADCRUMB_EVENTS.includes(arg0)) {
     let obj = importDefault(1208);
     obj = { category: "analytics", message: null };

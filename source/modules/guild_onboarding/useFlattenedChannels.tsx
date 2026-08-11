@@ -1,7 +1,7 @@
 // Module ID: 5252
 // Function ID: 5253
 // Name: getFlattenedChannels
-// Dependencies: [1372, 12, 1351, 589, 2]
+// Dependencies: [1391, 12, 1370, 589, 2]
 // Exports: useFlattenedChannels
 
 // Module 5252 (getFlattenedChannels)

@@ -1,7 +1,7 @@
 // Module ID: 5248
 // Function ID: 5249
 // Name: updateImpersonating
-// Dependencies: [1372, 1961, 1971, 1964, 3929, 1960, 4499, 1963, 676, 1379, 698, 4498, 1969, 709, 1222, 2]
+// Dependencies: [1391, 1980, 1990, 1983, 3948, 1979, 4499, 1982, 676, 1398, 698, 4498, 1988, 709, 1222, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
 // Module 5248 (updateImpersonating)
@@ -28,7 +28,7 @@ function updateImpersonating(closure_0, type) {
     const _Object = Object;
     obj[0] = Object.keys(data.roles).length;
     const merged = Object.assign(require(4498) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(closure_0));
-    obj.is_viewing_as_member = data.type === require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+    obj.is_viewing_as_member = data.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
     obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
     const obj3 = require(4498) /* collectGuildAnalyticsMetadata */;
     const tmp7 = require;
@@ -59,7 +59,7 @@ export const startImpersonating = function startImpersonating(guildId, data) {
   let obj = importDefault(698);
   obj = { num_roles: Object.keys(data.roles).length };
   const merged = Object.assign(require(4498) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
-  obj.is_viewing_as_member = data.type === require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+  obj.is_viewing_as_member = data.type === require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
   obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
   const obj3 = require(4498) /* collectGuildAnalyticsMetadata */;
   const tmp2 = require;
@@ -86,7 +86,7 @@ export const updateImpersonatedChannels = function updateImpersonatedChannels(gu
   const set = new Set(optedInChannels.getOptedInChannels(guildId1));
   const item = items1.forEach((arg0) => set.add(arg0));
   const item1 = items2.forEach((arg0) => set.delete(arg0));
-  updateImpersonating(guildId1, { type: set(1969).ImpersonateType.NEW_MEMBER, optInChannels: set });
+  updateImpersonating(guildId1, { type: set(1988).ImpersonateType.NEW_MEMBER, optInChannels: set });
 };
 export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId, c2) {
   (function optIntoPrivateChannelsForGrantedRolesForPreview(guildId, c2) {
@@ -129,10 +129,10 @@ export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId,
     obj[item10013.id] = item10013;
     continue;
   }
-  obj = { type: require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER, roles: obj };
+  obj = { type: require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER, roles: obj };
   updateImpersonating(guildId, obj);
 };
 export const updateImpersonatedData = function updateImpersonatedData(closure_0, arg1) {
   const merged = Object.assign(arg1);
-  updateImpersonating(closure_0, { type: require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER });
+  updateImpersonating(closure_0, { type: require(1988) /* ImpersonateType */.ImpersonateType.NEW_MEMBER });
 };

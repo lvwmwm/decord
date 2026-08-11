@@ -1,7 +1,7 @@
 // Module ID: 4806
 // Function ID: 4807
 // Name: TextSpoilerIcon
-// Dependencies: [19, 21, 712, 4004, 4780, 2]
+// Dependencies: [19, 21, 712, 4023, 4780, 2]
 // Exports: TextSpoilerIcon
 
 // Module 4806 (TextSpoilerIcon)
@@ -22,5 +22,5 @@ export const TextSpoilerIcon = function TextSpoilerIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

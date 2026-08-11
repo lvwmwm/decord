@@ -1,9 +1,9 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 11246
+// Function ID: 11247
 // Name: items
-// Dependencies: [5, 32, 19, 17, 1973, 676, 21, 1236, 4303, 712, 5369, 9462, 4730, 698, 11242, 4002, 4493, 9878, 4299, 7985, 7984, 7976, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 1992, 676, 21, 1236, 4303, 712, 5369, 9468, 4730, 698, 11247, 4021, 4493, 9883, 4299, 7987, 7986, 7978, 4714, 2]
 
-// Module 11241 (items)
+// Module 11246 (items)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "context";
@@ -119,7 +119,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
               return obj;
             } else {
               let closure_1 = tmp4;
-              let obj3 = outer1_1(11242);
+              let obj3 = outer1_1(11247);
               dependencyMap = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };
@@ -136,7 +136,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
             return obj2;
           } else {
             const intl = outer1_0(1236).intl;
-            const obj8 = outer1_1(4002);
+            const obj8 = outer1_1(4021);
             const name = outer1_1(4493).getName(closure_1, null, c0);
             c0 = name;
             if (name == null) {
@@ -146,7 +146,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
             obj3 = { user: null };
             obj3[0] = c0;
             obj[1] = intl.formatToPlainString(outer1_0(1236).t.O9C3Nt, obj3);
-            obj[2] = outer1_1(9878);
+            obj[2] = outer1_1(9883);
             obj8.open(obj);
             dependencyMap();
             c3 = 3;
@@ -174,7 +174,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
   const ref1 = importAllResult.useRef(null);
   const insets = importDefault(5369)({ includeKeyboardHeight: true }).insets;
   const items = [{ ref: ref1, offset: { type: "toBottom" } }];
-  importDefault(9462)({ insets, inputs: items, scrollViewRef: ref });
+  importDefault(9468)({ insets, inputs: items, scrollViewRef: ref });
   importDefault(4730)(() => {
     let obj = outer1_1(outer1_2[13]);
     obj = { type: outer1_9, guild_id: closure_1, other_user_id: lib.id };
@@ -202,7 +202,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
     obj[1] = getLabel.getLabel();
     return callback(lib(table[20]).TableRadioRow, obj, value);
   });
-  items1[1] = callback2(require(7985) /* context */.TableRadioGroup, obj4);
+  items1[1] = callback2(require(7987) /* context */.TableRadioGroup, obj4);
   const obj5 = { ref: ref1, containerStyle: tmp.reasonTextArea, placeholder: null, label: null, maxLength: 512, onChange: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj5[2] = intl3.string(require(1236) /* getSystemLocale */.t.GakiH1);
@@ -211,7 +211,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
   obj5[5] = function onChange(current) {
     closure_5.current = current;
   };
-  items1[2] = callback2(require(7976) /* TextArea */.TextArea, obj5);
+  items1[2] = callback2(require(7978) /* TextArea */.TextArea, obj5);
   const obj6 = { style: tmp.buttonContainer, children: null };
   const obj7 = { variant: "primary", text: null, onPress: null };
   const intl5 = require(1236) /* getSystemLocale */.intl;

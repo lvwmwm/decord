@@ -1,10 +1,10 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15381
+// Function ID: 15382
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 676, 21, 4303, 712, 15159, 1609, 14333, 15368, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 15168, 1628, 14341, 15382, 2]
 // Exports: default
 
-// Module 15367 (ChannelListPanelBackdrop)
+// Module 15381 (ChannelListPanelBackdrop)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { DM_WIDTH } from "ME";
@@ -34,9 +34,9 @@ export default function ChannelListPanelBackdrop(children) {
   let mobileQuestDockHeight;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = style(15159);
+  let obj = style(15168);
   const isHomeDrawerEnabled = obj.useIsHomeDrawerEnabled();
-  let obj1 = style(14333);
+  let obj1 = style(14341);
   mobileQuestDockHeight = obj1.useMobileQuestDockHeight();
   let items = [tmp, contentInset, mobileQuestDockHeight, style];
   obj = {
@@ -86,7 +86,7 @@ export default function ChannelListPanelBackdrop(children) {
   } else {
     ScreenAlignedThemedGradientSliding = contentInset(tmp9);
   }
-  obj = { offsetX: DM_WIDTH, offsetY: contentInset(1609)().top };
+  obj = { offsetX: DM_WIDTH, offsetY: contentInset(1628)().top };
   const items1 = [closure_6(ScreenAlignedThemedGradientSliding, obj), , ];
   obj1 = { pointerEvents: "none", style: tmp.panelTint };
   items1[1] = closure_6(closure_4, obj1);

@@ -1,7 +1,7 @@
 // Module ID: 5220
 // Function ID: 5221
 // Name: parseServerGuildSticker
-// Dependencies: [32, 1413, 1892, 1891, 4985, 3942, 1895, 2]
+// Dependencies: [32, 1432, 1911, 1910, 4985, 3961, 1914, 2]
 
 // Module 5220 (parseServerGuildSticker)
 import _slicedToArray from "_slicedToArray";
@@ -55,7 +55,7 @@ function deriveStickerMetadata(arg0, tags) {
       }
       const str3 = guild.name;
     }
-    const byName = importDefault(3942).getByName(str);
+    const byName = importDefault(3961).getByName(str);
     if (null != byName) {
       const obj1 = { type: null, value: null };
       obj1[0] = tmp(4985).StickerMetadataTypes.CORRELATED_EMOJI;
@@ -63,7 +63,7 @@ function deriveStickerMetadata(arg0, tags) {
       items.push(obj1);
       byName.forEachDiversity((surrogates) => items.push({ type: items(outer1_2[4]).StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));
     }
-    const obj5 = importDefault(3942);
+    const obj5 = importDefault(3961);
   }
   return items;
 }

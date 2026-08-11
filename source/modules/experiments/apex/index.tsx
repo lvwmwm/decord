@@ -1,9 +1,9 @@
-// Module ID: 1452
-// Function ID: 1453
+// Module ID: 1471
+// Function ID: 1472
 // Name: ApexExperiment
-// Dependencies: [2, 1349, 1453]
+// Dependencies: [2, 1368, 1472]
 
-// Module 1452 (ApexExperiment)
+// Module 1471 (ApexExperiment)
 const result = require("INSTALLATION_UNIT_ID").fileFinishedImporting("modules/experiments/apex/index.tsx");
 
 export const ApexExperiment = require("getUnitId").ApexExperiment;

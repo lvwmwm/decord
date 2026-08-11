@@ -1,10 +1,10 @@
-// Module ID: 14252
-// Function ID: 14253
+// Module ID: 14260
+// Function ID: 14261
 // Name: BountiesScrollPromptFooterContent
-// Dependencies: [19, 17, 4295, 5161, 21, 4303, 712, 4304, 4307, 589, 1609, 4036, 4013, 14253, 14254, 8659, 2]
+// Dependencies: [19, 17, 4295, 5161, 21, 4303, 712, 4304, 4307, 589, 1628, 4042, 4031, 14261, 14262, 8665, 2]
 // Exports: default
 
-// Module 14252 (BountiesScrollPromptFooterContent)
+// Module 14260 (BountiesScrollPromptFooterContent)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -37,7 +37,7 @@ function BountiesScrollPromptFooterContent(zIndex) {
   let obj = zIndex(589);
   const items1 = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
-  const tmp6 = importDefault(1609)();
+  const tmp6 = importDefault(1628)();
   importDefault = tmp6;
   const items2 = [tmp6.bottom];
   const memo1 = React.useMemo(() => ({ paddingBottom: Math.max(_undefined.bottom, _undefined(outer1_2[6]).space.PX_8) }), items2);
@@ -49,12 +49,12 @@ function BountiesScrollPromptFooterContent(zIndex) {
   if (stateFromStores) {
     str = "halt";
   }
-  obj[1] = closure_7(zIndex(4013).BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
-  const items5 = [closure_7(importDefault(4036).View, obj), ];
+  obj[1] = closure_7(zIndex(4031).BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
+  const items5 = [closure_7(importDefault(4042).View, obj), ];
   const items6 = [tmp.content, memo1, opacityStyle];
-  items5[1] = closure_7(importDefault(4036).View, { style: items6, onLayout: onContentLayout, children });
+  items5[1] = closure_7(importDefault(4042).View, { style: items6, onLayout: onContentLayout, children });
   obj[2] = items5;
-  return closure_8(importDefault(4036).View, obj);
+  return closure_8(importDefault(4042).View, obj);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = createCacheKey.createStyles(() => {
@@ -89,7 +89,7 @@ const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedI
 export default function BountiesScrollPromptFooter(visible) {
   visible = visible.visible;
   let merged = Object.assign(visible, Object.create(null));
-  let obj = require(14253) /* apexExperiment */;
+  let obj = require(14261) /* apexExperiment */;
   const isBountiesModalTransitionsRefactorEnabled = obj.useIsBountiesModalTransitionsRefactorEnabled(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   let obj1 = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -101,7 +101,7 @@ export default function BountiesScrollPromptFooter(visible) {
     return callback(closure_12, obj);
   }, []);
   obj = { visible, entranceTiming: require(4307) /* timingNone */.timingStandard, exitTiming: require(4307) /* timingNone */.timingStandard };
-  const visibilityTransition = require(14254) /* useVisibilityTransition */.useVisibilityTransition(obj);
+  const visibilityTransition = require(14262) /* useVisibilityTransition */.useVisibilityTransition(obj);
   let shouldRender = visibilityTransition.shouldRender;
   if (isBountiesModalTransitionsRefactorEnabled) {
     obj = { useReducedMotion: null, item: null, entering: null, exiting: null, renderItem: null };
@@ -114,9 +114,9 @@ export default function BountiesScrollPromptFooter(visible) {
     obj[2] = fn;
     obj[3] = fn2;
     obj[4] = callback;
-    shouldRender = callback(importDefault(8659), obj);
+    shouldRender = callback(importDefault(8665), obj);
     const tmp13 = callback;
-    const tmp15 = importDefault(8659);
+    const tmp15 = importDefault(8665);
   } else if (shouldRender) {
     obj1 = {};
     const merged1 = Object.assign(merged);

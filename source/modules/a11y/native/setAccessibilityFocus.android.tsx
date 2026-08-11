@@ -1,7 +1,7 @@
 // Module ID: 4710
 // Function ID: 4711
 // Name: setAccessibilityFocus
-// Dependencies: [17, 3, 4701, 4039, 2]
+// Dependencies: [17, 3, 4701, 4045, 2]
 // Exports: setAccessibilityFocus
 
 // Module 4710 (setAccessibilityFocus)

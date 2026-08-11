@@ -1,10 +1,10 @@
-// Module ID: 7233
-// Function ID: 7234
+// Module ID: 7234
+// Function ID: 7235
 // Name: collectThreadMetadata
-// Dependencies: [7229, 5922, 1376, 3929, 676, 1222, 11, 2]
+// Dependencies: [7230, 5922, 1395, 3948, 676, 1222, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 7233 (collectThreadMetadata)
+// Module 7234 (collectThreadMetadata)
 import updateFromGuild from "updateFromGuild";
 import updateState from "updateState";
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord";

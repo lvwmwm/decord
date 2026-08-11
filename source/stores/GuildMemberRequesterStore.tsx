@@ -1,7 +1,7 @@
 // Module ID: 5143
 // Function ID: 5144
 // Name: handleConnectionReset
-// Dependencies: [1372, 1971, 5144, 709, 589, 2]
+// Dependencies: [1391, 1990, 5144, 709, 589, 2]
 
 // Module 5143 (handleConnectionReset)
 import ensureGuildLoaded from "ensureGuildLoaded";

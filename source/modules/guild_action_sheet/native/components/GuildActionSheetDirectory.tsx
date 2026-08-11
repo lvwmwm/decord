@@ -1,10 +1,10 @@
-// Module ID: 13315
-// Function ID: 13316
+// Module ID: 13323
+// Function ID: 13324
 // Name: GuildActionSheetDirectory
-// Dependencies: [19, 17, 21, 4303, 712, 1609, 5397, 5399, 13316, 13259, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1628, 5397, 5399, 13324, 13267, 2]
 // Exports: default
 
-// Module 13315 (GuildActionSheetDirectory)
+// Module 13323 (GuildActionSheetDirectory)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,10 +30,10 @@ export default function GuildActionSheetDirectory(arg0) {
   }
   const tmp = createCacheKey();
   let obj = { scrollable: true, startExpanded: expanded, children: null };
-  obj = { scrollsToTop: false, style: tmp.container, contentContainerStyle: { paddingBottom: importDefault(1609)().bottom }, children: null };
-  const items = [callback(importDefault(13316), { guild }), ];
+  obj = { scrollsToTop: false, style: tmp.container, contentContainerStyle: { paddingBottom: importDefault(1628)().bottom }, children: null };
+  const items = [callback(importDefault(13324), { guild }), ];
   obj = { style: tmp.actions, children: null };
-  const items1 = [callback(require(13259) /* HideMutedChannelsOption */.GuildActionSheetDirectoryActions, { guild }), callback(require(13259) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild })];
+  const items1 = [callback(require(13267) /* HideMutedChannelsOption */.GuildActionSheetDirectoryActions, { guild }), callback(require(13267) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild })];
   obj[1] = items1;
   items[1] = callback2(View, obj);
   obj[3] = items;

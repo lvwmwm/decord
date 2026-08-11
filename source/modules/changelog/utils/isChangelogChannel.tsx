@@ -1,10 +1,10 @@
-// Module ID: 8936
-// Function ID: 8937
+// Module ID: 8942
+// Function ID: 8943
 // Name: isChangelogChannel
-// Dependencies: [1372, 1959, 2]
+// Dependencies: [1391, 1978, 2]
 // Exports: default
 
-// Module 8936 (isChangelogChannel)
+// Module 8942 (isChangelogChannel)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { SYSTEM_UPDATES_USER_ID } from "CHANGELOG_MODAL_KEY";
 

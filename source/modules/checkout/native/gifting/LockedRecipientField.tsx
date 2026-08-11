@@ -1,10 +1,10 @@
-// Module ID: 9616
-// Function ID: 9617
+// Module ID: 9621
+// Function ID: 9622
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4303, 712, 1297, 4299, 4146, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1297, 4299, 4148, 2]
 // Exports: default
 
-// Module 9616 (LockedRecipientField)
+// Module 9621 (LockedRecipientField)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,11 +26,11 @@ export default function LockedRecipientField(user) {
   user = user.user;
   const tmp = createCacheKey();
   let obj = { style: tmp.container, children: null };
-  obj = { style: tmp.avatar, user, guildId: "Array", size: 0.3 };
+  obj = { style: tmp.avatar, user, guildId: "Array", size: "ClipPath" };
   obj[3] = require(1297) /* Button */.AvatarSizes.NORMAL;
   const items = [callback(require(1297) /* Button */.Avatar, obj), ];
   obj = { variant: "text-md/semibold", children: null };
-  obj[1] = importDefault(4146).getName(user);
+  obj[1] = importDefault(4148).getName(user);
   items[1] = callback(require(4299) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);

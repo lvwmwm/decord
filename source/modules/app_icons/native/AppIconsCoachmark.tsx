@@ -1,10 +1,10 @@
-// Module ID: 15999
-// Function ID: 16000
+// Module ID: 16016
+// Function ID: 16017
 // Name: AppIconsCoachmarkActionSheet
-// Dependencies: [19, 17, 1903, 1369, 21, 4303, 712, 589, 3947, 4271, 5397, 16000, 1297, 8730, 4299, 1236, 4714, 7661, 2]
+// Dependencies: [19, 17, 1922, 1388, 21, 4303, 712, 589, 3966, 4271, 5397, 16017, 1297, 8736, 4299, 1236, 4714, 7663, 2]
 // Exports: default
 
-// Module 15999 (AppIconsCoachmarkActionSheet)
+// Module 16016 (AppIconsCoachmarkActionSheet)
 import noop from "noop";
 import get_ActivityIndicator from "fetchCurrentAppIcon";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -38,7 +38,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   let obj = markAsDismissed(589);
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = importDefault(3947);
+  let obj1 = importDefault(3966);
   const items1 = [markAsDismissed];
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[9]).hideActionSheet();
@@ -55,12 +55,12 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   };
   obj = { style: tmp.info, children: null };
   obj1 = { source: null, style: null };
-  obj1[0] = importDefault(16000);
+  obj1[0] = importDefault(16017);
   obj1[1] = tmp.image;
   const items2 = [callback(closure_4, obj1), , ];
   const obj2 = { style: tmp.titleContainer, children: null };
   const obj3 = { source: null, size: null, style: null, disableColor: true };
-  obj3[0] = importDefault(8730);
+  obj3[0] = importDefault(8736);
   obj3[1] = markAsDismissed(1297).IconSizes.MEDIUM;
   obj3[2] = tmp.nitroWheel;
   const items3 = [callback(markAsDismissed(1297).Icon, obj3), ];

@@ -1,10 +1,10 @@
-// Module ID: 7964
-// Function ID: 7965
+// Module ID: 7966
+// Function ID: 7967
 // Name: handleDismiss
-// Dependencies: [19, 17, 1377, 5132, 1378, 21, 4303, 712, 4271, 1297, 589, 7965, 5268, 7966, 4299, 1236, 7967, 8001, 8002, 8003, 8004, 4714, 2]
+// Dependencies: [19, 17, 1396, 5132, 1397, 21, 4303, 712, 4271, 1297, 589, 7967, 5268, 7968, 4299, 1236, 7969, 8003, 8004, 8005, 8006, 4714, 2]
 // Exports: default
 
-// Module 7964 (handleDismiss)
+// Module 7966 (handleDismiss)
 import "registerAsset";
 import { View } from "registerAsset";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
@@ -54,8 +54,8 @@ export default function StageAudienceNotificationSheet(channelId) {
   obj = { style: tmp.header, children: null };
   const obj1 = { source: null, style: null };
   const tmp7 = importDefault;
-  const tmp8 = importDefault(7965);
-  obj1[0] = importDefault(7966);
+  const tmp8 = importDefault(7967);
+  obj1[0] = importDefault(7968);
   obj1[1] = tmp.headerImage;
   const items1 = [callback(importDefault(5268), obj1), , ];
   const obj2 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
@@ -65,43 +65,43 @@ export default function StageAudienceNotificationSheet(channelId) {
   const obj3 = { style: tmp.headerBulletList, children: null };
   const obj4 = { leading: null, label: null };
   const obj5 = { source: null };
-  obj5[0] = importDefault(8001);
+  obj5[0] = importDefault(8003);
   obj4[0] = callback(BulletIcon, obj5);
   const obj6 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = tmp2(1236).intl;
   obj6[3] = intl2.string(channelId(1236).t.sBDfo6);
   obj4[1] = callback(channelId(4299).Text, obj6);
-  const items2 = [callback(channelId(7967).FormRow, obj4), , , ];
+  const items2 = [callback(channelId(7969).FormRow, obj4), , , ];
   const obj7 = { leading: null, label: null };
   const obj8 = { source: null };
-  obj8[0] = importDefault(8002);
+  obj8[0] = importDefault(8004);
   obj7[0] = callback(BulletIcon, obj8);
   const obj9 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl3 = tmp2(1236).intl;
   obj9[3] = intl3.string(channelId(1236).t.x58YtH);
   obj7[1] = callback(channelId(4299).Text, obj9);
-  items2[1] = callback(channelId(7967).FormRow, obj7);
+  items2[1] = callback(channelId(7969).FormRow, obj7);
   const obj10 = { leading: null, label: null };
   const obj11 = { source: null };
-  obj11[0] = importDefault(8003);
+  obj11[0] = importDefault(8005);
   obj10[0] = callback(BulletIcon, obj11);
   const obj12 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl4 = tmp2(1236).intl;
   obj12[3] = intl4.string(channelId(1236).t.XtVqla);
   obj10[1] = callback(channelId(4299).Text, obj12);
-  items2[2] = callback(channelId(7967).FormRow, obj10);
+  items2[2] = callback(channelId(7969).FormRow, obj10);
   let tmp6Result = null;
   if (privacy_level === constants.PUBLIC) {
     const obj13 = { leading: null, label: null };
     const obj14 = { source: null };
-    obj14[0] = tmp7(8004);
+    obj14[0] = tmp7(8006);
     obj13[0] = tmp6(BulletIcon, obj14);
     const obj15 = { style: null, variant: "text-md/medium", color: "text-default", children: null };
     obj15[0] = tmp.headerBullet;
     const intl6 = tmp2(1236).intl;
     obj15[3] = intl6.string(tmp2(1236).t.nDsbJg);
     obj13[1] = tmp6(tmp2(4299).Text, obj15);
-    tmp6Result = tmp6(tmp2(7967).FormRow, obj13);
+    tmp6Result = tmp6(tmp2(7969).FormRow, obj13);
   }
   const obj16 = { children: null };
   items2[3] = tmp6Result;

@@ -1,10 +1,10 @@
-// Module ID: 10319
-// Function ID: 10320
+// Module ID: 10324
+// Function ID: 10325
 // Name: isSelectedFromHomeChannel
-// Dependencies: [5898, 1960, 1379, 4159, 4158, 2]
+// Dependencies: [5898, 1979, 1398, 4159, 4158, 2]
 // Exports: default
 
-// Module 10319 (isSelectedFromHomeChannel)
+// Module 10324 (isSelectedFromHomeChannel)
 import "handlePermissionsChange";
 import "handleConnectionOpen";
 import { isGuildHomeChannel } from "set";

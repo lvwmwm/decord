@@ -1,10 +1,10 @@
-// Module ID: 9868
-// Function ID: 9869
+// Module ID: 9873
+// Function ID: 9874
 // Name: uriScheme
 // Dependencies: [5, 3, 514, 4860, 1208, 2]
 // Exports: getAttachments
 
-// Module 9868 (uriScheme)
+// Module 9873 (uriScheme)
 import set from "set";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 14901
-// Function ID: 14902
+// Module ID: 14911
+// Function ID: 14912
 // Name: useIsAllowGameFriendDMsSettingVisible
-// Dependencies: [7119, 589, 2]
+// Dependencies: [7120, 589, 2]
 // Exports: useIsAllowGameFriendDMsSettingVisible
 
-// Module 14901 (useIsAllowGameFriendDMsSettingVisible)
+// Module 14911 (useIsAllowGameFriendDMsSettingVisible)
 import recountRelationshipTypes from "recountRelationshipTypes";
 
 const require = arg1;

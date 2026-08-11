@@ -1,7 +1,7 @@
 // Module ID: 5908
 // Function ID: 5909
 // Name: isCurrentUserTeen
-// Dependencies: [1903, 2]
+// Dependencies: [1922, 2]
 // Exports: isCurrentUserTeen
 
 // Module 5908 (isCurrentUserTeen)

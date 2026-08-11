@@ -1,7 +1,7 @@
 // Module ID: 5250
 // Function ID: 5251
 // Name: recomputeFromAppTokens
-// Dependencies: [32, 1372, 5251, 4521, 1351, 589, 709, 2]
+// Dependencies: [32, 1391, 5251, 4521, 1370, 589, 709, 2]
 
 // Module 5250 (recomputeFromAppTokens)
 import _slicedToArray from "_slicedToArray";
@@ -120,7 +120,7 @@ obj = {
       const _Map = Map;
       const _Object3 = Object;
       const entries = Object.entries(isFullFetch.tokens);
-      const map = new Map(entries.filter(require(1351) /* isDiscordFrontendDevelopment */.isObjectEntryNotNullish));
+      const map = new Map(entries.filter(require(1370) /* isDiscordFrontendDevelopment */.isObjectEntryNotNullish));
       recomputeFromAppTokens();
     } else {
       const _Object = Object;

@@ -1,7 +1,7 @@
 // Module ID: 5234
 // Function ID: 5235
 // Name: openQuarantineModeInfoModal
-// Dependencies: [19, 17, 21, 4166, 4643, 5235, 1988, 2]
+// Dependencies: [19, 17, 21, 4166, 4643, 5235, 2007, 2]
 // Exports: default
 
 // Module 5234 (openQuarantineModeInfoModal)

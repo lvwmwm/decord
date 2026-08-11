@@ -1,12 +1,12 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15183
+// Function ID: 15184
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [4521, 3938, 1379, 676, 589, 11, 3971, 3883, 10340, 2]
+// Dependencies: [4521, 3957, 1398, 676, 589, 11, 3990, 3902, 10345, 2]
 // Exports: usePrivateChannelWaveEligible
 
-// Module 15174 (usePrivateChannelWaveEligible)
+// Module 15183 (usePrivateChannelWaveEligible)
 import reinjectEphemerals from "reinjectEphemerals";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { ChannelFlags } from "set";
 import { MessageTypes } from "ME";
 
@@ -24,7 +24,7 @@ export const usePrivateChannelWaveEligible = function usePrivateChannelWaveEligi
   if (tmp) {
     recipientId = isDM.getRecipientId();
   }
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const stateFromStores = _require(589).useStateFromStores(items, () => {
     let isFriendResult = null != recipientId;
     if (isFriendResult) {
@@ -33,7 +33,7 @@ export const usePrivateChannelWaveEligible = function usePrivateChannelWaveEligi
     return isFriendResult;
   });
   const obj = _require(589);
-  const items1 = [upsertRelationship];
+  const items1 = [markAllUserIdListsStale];
   const stateFromStores1 = _require(589).useStateFromStores(items1, () => {
     let isIgnoredResult = null != recipientId;
     if (isIgnoredResult) {
@@ -63,10 +63,10 @@ export const usePrivateChannelWaveEligible = function usePrivateChannelWaveEligi
   const obj4 = _require(589);
   const obj5 = recipientId(11);
   const extractTimestampResult = recipientId(11).extractTimestamp(isDM.id);
-  const obj6 = _require(3971);
-  const tmp9 = recipientId(3883)();
-  const isWithinIntervalResult = obj6.isWithinInterval(recipientId(3883)(), recipientId(3883)(extractTimestampResult), 1814400000);
-  const strangerDangerWarning = _require(10340).useStrangerDangerWarning(isDM.id);
+  const obj6 = _require(3990);
+  const tmp9 = recipientId(3902)();
+  const isWithinIntervalResult = obj6.isWithinInterval(recipientId(3902)(), recipientId(3902)(extractTimestampResult), 1814400000);
+  const strangerDangerWarning = _require(10345).useStrangerDangerWarning(isDM.id);
   if (tmp) {
     tmp = stateFromStores;
   }

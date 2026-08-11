@@ -1,10 +1,10 @@
-// Module ID: 8039
-// Function ID: 8040
+// Module ID: 8041
+// Function ID: 8042
 // Name: TextElement
 // Dependencies: [19, 17, 21, 4303, 4733, 4299, 2]
 // Exports: default
 
-// Module 8039 (TextElement)
+// Module 8041 (TextElement)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

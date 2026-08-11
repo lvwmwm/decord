@@ -1,10 +1,10 @@
-// Module ID: 1412
-// Function ID: 1413
+// Module ID: 1431
+// Function ID: 1432
 // Name: isValueEqual
-// Dependencies: [1413, 38, 1414, 643, 2]
+// Dependencies: [1432, 38, 1433, 643, 2]
 // Exports: constructInPlace, copyConstruct, merge, objectIsPlainRecordOfType, set, tryReuseExistingInPlacePlainRecord
 
-// Module 1412 (isValueEqual)
+// Module 1431 (isValueEqual)
 import { TypeTag } from "TypeTag";
 import importDefaultResult from "TypeTag";
 
@@ -20,8 +20,8 @@ function isValueEqual(items, current) {
           if (items instanceof Set) {
             const _Set2 = Set;
             if (current instanceof Set) {
-              let areSetsEqualResult = require(1414) /* areSetsEqual */.areSetsEqual(items, current);
-              const obj2 = require(1414) /* areSetsEqual */;
+              let areSetsEqualResult = require(1433) /* areSetsEqual */.areSetsEqual(items, current);
+              const obj2 = require(1433) /* areSetsEqual */;
             }
           }
           const _Array = Array;

@@ -1,16 +1,16 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 15843
+// Function ID: 15844
 // Name: getIncomingFriendRequestCount
-// Dependencies: [32, 7119, 3938, 589, 2]
+// Dependencies: [32, 7120, 3957, 589, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 15826 (getIncomingFriendRequestCount)
+// Module 15843 (getIncomingFriendRequestCount)
 import _slicedToArray from "_slicedToArray";
 import recountRelationshipTypes from "recountRelationshipTypes";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 
 const require = arg1;
-const result = require("upsertRelationship").fileFinishedImporting("modules/people/hooks/useFriendRequestCounts.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/people/hooks/useFriendRequestCounts.tsx");
 
 export const getIncomingFriendRequestCount = function getIncomingFriendRequestCount(items) {
   let obj;
@@ -20,11 +20,11 @@ export const getIncomingFriendRequestCount = function getIncomingFriendRequestCo
   return pendingCount + obj2.getPendingIncomingCount();
 };
 export const useIncomingFriendRequestCount = function useIncomingFriendRequestCount() {
-  let items = [upsertRelationship, recountRelationshipTypes];
+  let items = [markAllUserIdListsStale, recountRelationshipTypes];
   return require(589) /* initialize */.useStateFromStores(items, () => {
     let obj;
     let obj2;
-    const items = [upsertRelationship, recountRelationshipTypes];
+    const items = [markAllUserIdListsStale, recountRelationshipTypes];
     [obj, obj2] = callback(items, 2);
     const pendingCount = obj.getPendingCount();
     return pendingCount + obj2.getPendingIncomingCount();

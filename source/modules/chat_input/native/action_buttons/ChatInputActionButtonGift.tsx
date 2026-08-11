@@ -1,8 +1,8 @@
-// Module ID: 11619
-// Function ID: 11620
-// Dependencies: [32, 19, 17, 4295, 7344, 11369, 1369, 21, 4303, 712, 589, 1348, 7647, 1884, 6022, 1358, 11620, 9575, 1236, 4725, 11610, 1360, 11621, 2]
+// Module ID: 11622
+// Function ID: 11623
+// Dependencies: [32, 19, 17, 4295, 7345, 11374, 1388, 21, 4303, 712, 589, 1367, 7649, 1903, 6024, 1377, 11623, 9580, 1236, 4725, 11613, 1379, 11624, 2]
 
-// Module 11619
+// Module 11622
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "LinearGradient";
 import { View } from "GiftIcon";

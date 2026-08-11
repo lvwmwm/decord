@@ -1,7 +1,7 @@
 // Module ID: 5922
 // Function ID: 5923
 // Name: updateState
-// Dependencies: [1376, 3939, 1911, 1372, 4521, 1235, 676, 12, 11, 4523, 589, 709, 2]
+// Dependencies: [1395, 3958, 1930, 1391, 4521, 1235, 676, 12, 11, 4523, 589, 709, 2]
 
 // Module 5922 (updateState)
 import createChannelRecord from "createChannelRecord";

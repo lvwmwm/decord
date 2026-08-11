@@ -1,13 +1,13 @@
-// Module ID: 7024
-// Function ID: 7025
+// Module ID: 7027
+// Function ID: 7028
 // Name: fromServer
-// Dependencies: [7025, 2]
+// Dependencies: [7028, 2]
 
-// Module 7024 (fromServer)
+// Module 7027 (fromServer)
 let prototype;
 prototype = function CollectiblesMarketingBadgeRecord(arg0) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(7025) /* CollectiblesMarketingType */.CollectiblesMarketingType.BADGE;
+  obj.type = require(7028) /* CollectiblesMarketingType */.CollectiblesMarketingType.BADGE;
   ({ dismissibleContent: tmp.dismissibleContent, version: tmp.version, refTargetBackground: tmp.refTargetBackground, badgeIcon: tmp.badgeIcon, badgeText: tmp.badgeText, showHoverGradient: tmp.showHoverGradient } = arg0);
   return obj;
 }.prototype;
@@ -19,7 +19,7 @@ prototype["fromServer"] = function fromServer(arg0) {
     HermesBuiltin.throwTypeError();
   }
   obj = Object.create(prototype.prototype);
-  obj.type = require(7025) /* CollectiblesMarketingType */.CollectiblesMarketingType.BADGE;
+  obj.type = require(7028) /* CollectiblesMarketingType */.CollectiblesMarketingType.BADGE;
   ({ dismissibleContent: tmp3.dismissibleContent, version: tmp3.version, refTargetBackground: tmp3.refTargetBackground, badgeIcon: tmp3.badgeIcon, badgeText: tmp3.badgeText, showHoverGradient: tmp3.showHoverGradient } = obj);
   return obj;
 };

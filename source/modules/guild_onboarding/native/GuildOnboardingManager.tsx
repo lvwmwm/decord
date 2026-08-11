@@ -1,9 +1,9 @@
-// Module ID: 16441
-// Function ID: 16442
+// Module ID: 16457
+// Function ID: 16458
 // Name: prototype
-// Dependencies: [1971, 1891, 4124, 676, 3917, 5261, 5237, 1384, 2]
+// Dependencies: [1990, 1910, 4126, 676, 3936, 5261, 5237, 1403, 2]
 
-// Module 16441 (prototype)
+// Module 16457 (prototype)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -74,7 +74,7 @@ let prototype = function GuildOnboardingManager() {
         selfMember = selfMember.getSelfMember(outer1_8);
         let hasFlagResult = null != selfMember;
         if (hasFlagResult) {
-          let obj = applyArgumentsResult(1384);
+          let obj = applyArgumentsResult(1403);
           let num = selfMember.flags;
           if (num == null) {
             num = 0;
@@ -86,8 +86,8 @@ let prototype = function GuildOnboardingManager() {
           if (num2 == null) {
             num2 = 0;
           }
-          hasFlagResult = applyArgumentsResult(1384).hasFlag(num2, constants2.STARTED_ONBOARDING);
-          const obj2 = applyArgumentsResult(1384);
+          hasFlagResult = applyArgumentsResult(1403).hasFlag(num2, constants2.STARTED_ONBOARDING);
+          const obj2 = applyArgumentsResult(1403);
         }
         if (hasFlagResult) {
           obj = { guildId: null };

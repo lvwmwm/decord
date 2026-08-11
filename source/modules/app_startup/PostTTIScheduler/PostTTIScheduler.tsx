@@ -1,10 +1,10 @@
-// Module ID: 7128
-// Function ID: 7129
+// Module ID: 7129
+// Function ID: 7130
 // Name: promise
 // Dependencies: [2]
 // Exports: notifyAboutTTI, schedulePostTTIEvent
 
-// Module 7128 (promise)
+// Module 7129 (promise)
 const obj = {
   resolve() {
 

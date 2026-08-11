@@ -1,10 +1,10 @@
-// Module ID: 10415
-// Function ID: 10416
+// Module ID: 10420
+// Function ID: 10421
 // Name: redeemGiftCode
-// Dependencies: [5, 676, 6881, 7445, 709, 530, 698, 4202, 4509, 10416, 1988, 2]
+// Dependencies: [5, 676, 6883, 7447, 709, 530, 698, 4202, 4509, 10421, 2007, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 10415 (redeemGiftCode)
+// Module 10420 (redeemGiftCode)
 import sendRequest from "sendRequest";
 import ME from "ME";
 
@@ -91,7 +91,7 @@ function _redeemGiftCode() {
               return obj1;
             } else {
               if (obj18.getIsPaymentsBlocked()) {
-                options(7445)();
+                options(7447)();
                 paymentSource = 3;
                 return { value: "HermesInternal", done: null };
               } else {
@@ -129,7 +129,7 @@ function _redeemGiftCode() {
                 obj5[0] = HTTP.post(obj3);
                 return obj5;
               }
-              obj18 = callback(6881);
+              obj18 = callback(6883);
             }
           } else if (2 === tmp7) {
             channelId = 0;
@@ -200,7 +200,7 @@ function _redeemGiftCode() {
 function openGiftCodeRedeemModal(code) {
   let obj = importDefault(4509);
   obj = { code };
-  obj.pushLazy(require(1988) /* asyncRequireImpl */(10416, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
+  obj.pushLazy(require(2007) /* asyncRequireImpl */(10421, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
 }
 ({ Endpoints: c4, AnalyticEvents: c5 } = ME);
 let closure_6 = Object.freeze({});

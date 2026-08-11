@@ -1,10 +1,10 @@
-// Module ID: 6712
-// Function ID: 6713
+// Module ID: 6714
+// Function ID: 6715
 // Name: ServerIconStaffServerExample
-// Dependencies: [21, 5268, 6713, 2]
+// Dependencies: [21, 5268, 6715, 2]
 // Exports: ServerIconStaffServerExample
 
-// Module 6712 (ServerIconStaffServerExample)
+// Module 6714 (ServerIconStaffServerExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconStaffServerExample.native.tsx");
@@ -28,7 +28,7 @@ export const ServerIconStaffServerExample = function ServerIconStaffServerExampl
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6713);
+  obj[0] = importDefault(6715);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

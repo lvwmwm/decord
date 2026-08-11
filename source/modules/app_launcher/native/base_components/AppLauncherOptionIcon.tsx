@@ -1,10 +1,10 @@
-// Module ID: 11567
-// Function ID: 11568
+// Module ID: 11570
+// Function ID: 11571
 // Name: styles
 // Dependencies: [19, 17, 21, 4303, 712, 2]
 // Exports: default
 
-// Module 11567 (styles)
+// Module 11570 (styles)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

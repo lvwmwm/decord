@@ -1,7 +1,7 @@
 // Module ID: 4849
 // Function ID: 4850
 // Name: getIsScreenLandscape
-// Dependencies: [19, 1475, 1477, 2]
+// Dependencies: [19, 1494, 1496, 2]
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
 // Module 4849 (getIsScreenLandscape)
@@ -19,7 +19,7 @@ export const getIsScreenLandscape = function getIsScreenLandscape() {
   return state.getState().byAppEntry[str].screenIsLandscape;
 };
 export const useIsScreenLandscape = function useIsScreenLandscape() {
-  appEntryKey = appEntryKey(1477).useAppEntryKey();
+  appEntryKey = appEntryKey(1496).useAppEntryKey();
   const items = [appEntryKey];
   return state(React.useCallback((arg0) => arg0.byAppEntry[appEntryKey].screenIsLandscape, items));
 };

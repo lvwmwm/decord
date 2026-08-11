@@ -1,10 +1,10 @@
-// Module ID: 13379
-// Function ID: 13380
+// Module ID: 13387
+// Function ID: 13388
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4303, 712, 4153, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1363, 4299, 2]
 // Exports: default
 
-// Module 13379 (EmptyState)
+// Module 13387 (EmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function EmptyState(Illustration) {
   let children;
   let title;
   const tmp = createCacheKey();
-  require(4153) /* AccessibilityAnnouncer */;
+  require(1363) /* AccessibilityAnnouncer */;
   if (null != Illustration.Illustration) {
     let obj = { accessible: false, importantForAccessibility: "no", accessibilityRole: "none", resizeMode: "contain", style: null };
     const items = [tmp.emptyImage, Illustration.imageStyle];
@@ -42,11 +42,11 @@ export default function EmptyState(Illustration) {
     tmp8Result = null;
     if (tmp6) {
       obj = { resizeMode: "contain", source: null, style: null };
-      obj[1] = tmp2(4153).isThemeLight(tmp5) ? Illustration.lightSource : Illustration.darkSource;
+      obj[1] = tmp2(1363).isThemeLight(tmp5) ? Illustration.lightSource : Illustration.darkSource;
       const items1 = [tmp.emptyImage, Illustration.imageStyle];
       obj[2] = items1;
       tmp8Result = callback(closure_3, obj);
-      const tmp2Result = tmp2(4153);
+      const tmp2Result = tmp2(1363);
       const tmp8 = callback;
       const tmp9 = closure_3;
     }

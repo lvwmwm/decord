@@ -1,10 +1,10 @@
-// Module ID: 9012
-// Function ID: 9013
+// Module ID: 9018
+// Function ID: 9019
 // Name: TagListInputTagComponent
-// Dependencies: [19, 17, 21, 4303, 712, 1348, 1236, 9013, 4846, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1367, 1236, 9019, 4846, 4299, 2]
 // Exports: TagListInputTagComponent
 
-// Module 9012 (TagListInputTagComponent)
+// Module 9018 (TagListInputTagComponent)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -70,11 +70,11 @@ export const TagListInputTagComponent = function TagListInputTagComponent(end) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp2 = callback2(importDefault(1348)("TagListInputTag"));
+  const tmp2 = callback2(importDefault(1367)("TagListInputTag"));
   const intl = require(1236) /* getSystemLocale */.intl;
   let obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = importDefault(9013)(() => callback("remove"), formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = importDefault(9019)(() => callback("remove"), formatToPlainStringResult));
   const items = [tmp2.tagWrapper, , , ];
   let prop;
   if (selected) {

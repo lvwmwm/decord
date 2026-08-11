@@ -1,7 +1,7 @@
 // Module ID: 4332
 // Function ID: 4333
 // Name: getIsValorantSocialSDKEnabled
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: getIsValorantSocialSDKEnabled, useIsValorantSocialSDKEnabled
 
 // Module 4332 (getIsValorantSocialSDKEnabled)

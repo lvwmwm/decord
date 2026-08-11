@@ -1,10 +1,10 @@
-// Module ID: 13212
-// Function ID: 13213
+// Module ID: 13220
+// Function ID: 13221
 // Name: RemoteAuthBody
-// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 1609, 13213, 13211, 5371, 530, 12, 13214, 4299, 1236, 1297, 5150, 4714, 4509, 13215, 13216, 5823, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 1628, 13221, 13219, 5371, 530, 12, 13222, 4299, 1236, 1297, 5150, 4714, 4509, 13223, 13224, 5823, 2]
 // Exports: default
 
-// Module 13212 (RemoteAuthBody)
+// Module 13220 (RemoteAuthBody)
 import _slicedToArray from "_slicedToArray";
 import module_4509 from "module_4509";
 import get_ActivityIndicator from "ButtonGroup";
@@ -94,7 +94,7 @@ function RemoteAuthLogin(arg0) {
     tmp10 = !tmp5;
   }
   obj = { children: null };
-  obj = { source: tmp7(13214), style: tmp.mainImage };
+  obj = { source: tmp7(13222), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   const obj1 = { variant: "heading-md/extrabold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -142,7 +142,7 @@ function RemoteAuthLogin(arg0) {
 function RemoteAuthLoginSucceeded() {
   const tmp = createCacheKey();
   let obj = { children: null };
-  obj = { source: importDefault(13215), style: tmp.mainImage };
+  obj = { source: importDefault(13223), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -165,7 +165,7 @@ function RemoteAuthLoginSucceeded() {
 function RemoteAuthNotFound() {
   const tmp = createCacheKey();
   let obj = { children: null };
-  obj = { source: importDefault(13216), style: tmp.mainImage };
+  obj = { source: importDefault(13224), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -205,10 +205,10 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/rem
 export default function RemoteAuth(arg0) {
   const tmp = createCacheKey();
   let obj = { source: null, imageStyle: null, style: null, children: null };
-  obj[0] = importDefault(13213);
+  obj[0] = importDefault(13221);
   ({ imageStyle: obj[1], background: obj[2] } = tmp);
-  obj = { style: items, source: importDefault(13211) };
-  items = [tmp.logo, { marginTop: importDefault(1609)().top }];
+  obj = { style: items, source: importDefault(13219) };
+  items = [tmp.logo, { marginTop: importDefault(1628)().top }];
   const items1 = [callback2(closure_6, obj), ];
   obj = { style: tmp.container, children: null };
   const obj1 = { style: tmp.mainCard, children: null };

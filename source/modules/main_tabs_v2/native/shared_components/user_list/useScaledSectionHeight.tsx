@@ -1,10 +1,10 @@
-// Module ID: 9629
-// Function ID: 9630
+// Module ID: 9634
+// Function ID: 9635
 // Name: useScaledSectionHeight
-// Dependencies: [9627, 4720, 2]
+// Dependencies: [9632, 4720, 2]
 // Exports: default
 
-// Module 9629 (useScaledSectionHeight)
+// Module 9634 (useScaledSectionHeight)
 import PX_24 from "PX_24";
 
 let c3;

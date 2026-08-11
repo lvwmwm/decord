@@ -1,10 +1,10 @@
-// Module ID: 10544
-// Function ID: 10545
+// Module ID: 10549
+// Function ID: 10550
 // Name: Header
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1416, 1297, 4299, 9131, 1384, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1435, 1297, 4299, 9137, 1403, 1236, 2]
 // Exports: default
 
-// Module 10544 (Header)
+// Module 10549 (Header)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { UserFlags } from "ME";
@@ -33,12 +33,12 @@ export default function Header(accountScopes) {
   let user;
   ({ user, application, bot } = accountScopes);
   const tmp = createCacheKey();
-  let obj = importDefault(1416);
+  let obj = importDefault(1435);
   obj = { id: application.id, icon: application.icon };
   let userAvatarSource;
   const applicationIconSource = obj.getApplicationIconSource(obj);
   if (null != user) {
-    let tmp2Result = tmp2(1416);
+    let tmp2Result = tmp2(1435);
     userAvatarSource = tmp2Result.getUserAvatarSource(user);
   }
   obj = { style: tmp.header, children: null };
@@ -62,10 +62,10 @@ export default function Header(accountScopes) {
     const obj10 = { style: null, verified: null };
     obj10[0] = tmp.botTag;
     let hasFlagResult = null != bot.public_flags;
-    tmp2Result = tmp2(9131);
+    tmp2Result = tmp2(9137);
     if (hasFlagResult) {
-      hasFlagResult = tmp9(1384).hasFlag(bot.public_flags, UserFlags.VERIFIED_BOT);
-      const tmp9Result = tmp9(1384);
+      hasFlagResult = tmp9(1403).hasFlag(bot.public_flags, UserFlags.VERIFIED_BOT);
+      const tmp9Result = tmp9(1403);
     }
     obj10[1] = hasFlagResult;
     tmp8Result = tmp8(tmp2Result, obj10);

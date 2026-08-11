@@ -1,10 +1,10 @@
-// Module ID: 11522
-// Function ID: 11523
+// Module ID: 11525
+// Function ID: 11526
 // Name: useSortedSectionCommands
-// Dependencies: [32, 19, 11523, 11458, 687, 2]
+// Dependencies: [32, 19, 11526, 11461, 687, 2]
 // Exports: default
 
-// Module 11522 (useSortedSectionCommands)
+// Module 11525 (useSortedSectionCommands)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { CommandListSortOrder } from "CommandListSortOrder";

@@ -1,10 +1,10 @@
-// Module ID: 6966
-// Function ID: 6967
+// Module ID: 6969
+// Function ID: 6970
 // Name: isSpamSupported
-// Dependencies: [1903, 676, 6967, 2]
+// Dependencies: [1922, 676, 6970, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 6966 (isSpamSupported)
+// Module 6969 (isSpamSupported)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
@@ -42,8 +42,8 @@ export const isSpam = function isSpam(author) {
     flag = false;
   }
   if (flag) {
-    flag = !require(6967) /* getDecisionOutcomeFromMessage */.isAutomodMessageRecord(author);
-    const obj2 = require(6967) /* getDecisionOutcomeFromMessage */;
+    flag = !require(6970) /* getDecisionOutcomeFromMessage */.isAutomodMessageRecord(author);
+    const obj2 = require(6970) /* getDecisionOutcomeFromMessage */;
   }
   return flag;
 };

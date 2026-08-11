@@ -1,10 +1,10 @@
-// Module ID: 15550
-// Function ID: 15551
+// Module ID: 15567
+// Function ID: 15568
 // Name: ForYouReadSectionHeader
 // Dependencies: [19, 17, 21, 4303, 712, 4299, 1236, 2]
 // Exports: ForYouReadSectionHeader
 
-// Module 15550 (ForYouReadSectionHeader)
+// Module 15567 (ForYouReadSectionHeader)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

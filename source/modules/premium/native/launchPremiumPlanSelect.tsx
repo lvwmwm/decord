@@ -1,10 +1,10 @@
-// Module ID: 6873
-// Function ID: 6874
+// Module ID: 6875
+// Function ID: 6876
 // Name: launchPremiumPlanSelect
-// Dependencies: [676, 6871, 4509, 6874, 1988, 6874, 6013, 2]
+// Dependencies: [676, 6873, 4509, 6876, 2007, 6876, 6015, 2]
 // Exports: launchPremiumPlanSelect
 
-// Module 6873 (launchPremiumPlanSelect)
+// Module 6875 (launchPremiumPlanSelect)
 import { UserSettingsSections } from "ME";
 
 let result = require("module_4509").fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
@@ -77,8 +77,8 @@ export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostP
     obj[10] = onPaymentSuccess;
     obj[11] = onPaymentDismiss;
     const obj3 = flag2(4509);
-    obj3.pushLazy(require(1988) /* asyncRequireImpl */(6874, dependencyMap.paths), obj, require(6874) /* PremiumModal */.PREMIUM_KEY);
-    const tmp7 = require(1988) /* asyncRequireImpl */(6874, dependencyMap.paths);
+    obj3.pushLazy(require(2007) /* asyncRequireImpl */(6876, dependencyMap.paths), obj, require(6876) /* PremiumModal */.PREMIUM_KEY);
+    const tmp7 = require(2007) /* asyncRequireImpl */(6876, dependencyMap.paths);
   }
-  let result = require(6013) /* getSanitizedRestrictedGuilds */.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
+  let result = require(6015) /* getSanitizedRestrictedGuilds */.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
 };

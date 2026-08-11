@@ -1,7 +1,7 @@
 // Module ID: 4338
 // Function ID: 4339
 // Name: GameTheme
-// Dependencies: [1912, 4326, 2]
+// Dependencies: [1931, 4326, 2]
 
 // Module 4338 (GameTheme)
 import "toJS";

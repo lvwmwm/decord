@@ -1,7 +1,7 @@
 // Module ID: 4858
 // Function ID: 4859
 // Name: doesImageMatchUpload
-// Dependencies: [4851, 530, 4859, 1898, 2]
+// Dependencies: [4851, 530, 4859, 1917, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
 // Module 4858 (doesImageMatchUpload)
@@ -121,7 +121,7 @@ export const canUploadNatively = function canUploadNatively(item) {
     fileIsInAppDirResult = tmpResult.fileIsInAppDir(item.uri);
   }
   if (fileIsInAppDirResult) {
-    tmpResult = tmp(1898);
+    tmpResult = tmp(1917);
     fileIsInAppDirResult = tmpResult.isLibdiscoreInitialized();
   }
   return fileIsInAppDirResult;

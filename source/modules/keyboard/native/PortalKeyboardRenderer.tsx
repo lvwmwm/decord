@@ -1,10 +1,10 @@
-// Module ID: 15834
-// Function ID: 15835
+// Module ID: 15851
+// Function ID: 15852
 // Name: transitionGroupGetItemKey
-// Dependencies: [19, 1476, 21, 4648, 4168, 1607, 500, 15835, 4169, 4159, 5843, 9762, 1478, 4172, 8721, 2]
+// Dependencies: [19, 1495, 21, 4648, 4168, 1626, 500, 15852, 4169, 4159, 5843, 9767, 1497, 4172, 8727, 2]
 // Exports: PortalKeyboardRenderer
 
-// Module 15834 (transitionGroupGetItemKey)
+// Module 15851 (transitionGroupGetItemKey)
 import noop from "noop";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ function transitionGroupRenderItem(arg0, arg1, arg2, arg3) {
   if (isAndroidResult) {
     let tmpResult = tmp(4168);
     const keyboardType = tmpResult.getKeyboardType();
-    isAndroidResult = keyboardType === tmp(1607).KeyboardTypes.SYSTEM;
+    isAndroidResult = keyboardType === tmp(1626).KeyboardTypes.SYSTEM;
   }
   if (isAndroidResult) {
     tmpResult = tmp(500);
@@ -31,7 +31,7 @@ function transitionGroupRenderItem(arg0, arg1, arg2, arg3) {
     obj[0] = arg1;
     obj[1] = arg2;
     obj[2] = arg3;
-    tmp5 = jsx(importDefault(15835), { item: null, state: null, cleanUp: null }, arg0);
+    tmp5 = jsx(importDefault(15852), { item: null, state: null, cleanUp: null }, arg0);
   }
   return tmp5;
 }
@@ -129,7 +129,7 @@ export const PortalKeyboardRenderer = function PortalKeyboardRenderer(portal) {
   } else {
     const obj1 = { value: true, children: null };
     obj1[1] = tmp11;
-    tmp10Result = tmp10(tmp5(8721).PortalKeyboardInModalContext.Provider, obj1);
+    tmp10Result = tmp10(tmp5(8727).PortalKeyboardInModalContext.Provider, obj1);
   }
   return tmp10Result;
 };

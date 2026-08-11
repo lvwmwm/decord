@@ -1,19 +1,19 @@
-// Module ID: 14926
-// Function ID: 14927
+// Module ID: 14936
+// Function ID: 14937
 // Name: toggle
-// Dependencies: [8082, 10447, 1236, 2450, 3974, 14927, 2]
+// Dependencies: [8084, 10452, 1236, 2469, 3993, 14937, 2]
 
-// Module 14926 (toggle)
+// Module 14936 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2450).F3llsQ);
+    return intl.string(importDefault(2469).F3llsQ);
   },
   useDescription() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2450)["6goWcz"]);
+    return intl.string(importDefault(2469)["6goWcz"]);
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue: require("explicitContentFromProto").NotifyFriendsOnProfileUpdate.useSetting,
@@ -22,11 +22,11 @@ const toggle = createToggle.createToggle({
 const obj = {
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2450).F3llsQ);
+    return intl.string(importDefault(2469).F3llsQ);
   },
   useDescription() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2450)["6goWcz"]);
+    return intl.string(importDefault(2469)["6goWcz"]);
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue: require("explicitContentFromProto").NotifyFriendsOnProfileUpdate.useSetting,

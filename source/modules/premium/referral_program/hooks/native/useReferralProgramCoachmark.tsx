@@ -1,10 +1,10 @@
-// Module ID: 15864
-// Function ID: 15865
+// Module ID: 15881
+// Function ID: 15882
 // Name: ReferralProgramCoachmarkImg
-// Dependencies: [32, 19, 17, 676, 1369, 21, 4303, 5268, 15865, 4123, 1358, 8162, 6022, 1236, 712, 6016, 2]
+// Dependencies: [32, 19, 17, 676, 1388, 21, 4303, 5268, 15882, 4125, 1377, 8164, 6024, 1236, 712, 6018, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 15864 (ReferralProgramCoachmarkImg)
+// Module 15881 (ReferralProgramCoachmarkImg)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -18,7 +18,7 @@ function ReferralProgramCoachmarkImg() {
   const tmp = callback2();
   let obj = { style: tmp.coachmarkImageContainer, children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(15865);
+  obj[0] = importDefault(15882);
   obj[1] = tmp.coachmarkImage;
   obj[1] = jsx(importDefault(5268), { source: null, style: null });
   return <View source={null} style={null} />;
@@ -30,20 +30,20 @@ export const useReferralProgramCoachmark = function useReferralProgramCoachmark(
   disabled = disabled.disabled;
   let _require;
   let c1;
-  let obj = _require(4123);
-  let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1358).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK);
+  let obj = _require(4125);
+  let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1377).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK);
   if (!result) {
     result = disabled;
   }
-  const isEligibleSenderForReferralProgram = _require(8162).useIsEligibleSenderForReferralProgram(result);
-  _require(6022);
+  const isEligibleSenderForReferralProgram = _require(8164).useIsEligibleSenderForReferralProgram(result);
+  _require(6024);
   if (isEligibleSenderForReferralProgram) {
     if (!disabled) {
-      let items = [tmp(1358).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];
+      let items = [tmp(1377).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];
     }
     const tmp8 = callback(tmp6(items), 2);
     _require = tmp9;
-    const tmp10 = tmp8[0] === tmp(1358).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK;
+    const tmp10 = tmp8[0] === tmp(1377).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK;
     c1 = tmp10;
     const items1 = [tmp10, tmp8[1]];
     let tmp13 = null;

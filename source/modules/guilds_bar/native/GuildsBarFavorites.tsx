@@ -1,8 +1,8 @@
-// Module ID: 15433
-// Function ID: 15434
-// Dependencies: [19, 17, 1375, 676, 21, 15431, 4303, 712, 1348, 15417, 9711, 589, 15434, 15419, 15358, 9720, 1236, 15435, 8744, 15436, 2]
+// Module ID: 15450
+// Function ID: 15451
+// Dependencies: [19, 17, 1394, 676, 21, 15448, 4303, 712, 1367, 15434, 9716, 589, 15451, 15436, 15372, 9725, 1236, 15452, 8750, 15453, 2]
 
-// Module 15433
+// Module 15450
 import importAllResult from "FavoritesGuildCoachmarkIntro";
 import { View } from "HomeDrawerFavoritesRowExpandedChildren";
 import initializeFromUserSettings from "initializeFromUserSettings";
@@ -17,7 +17,7 @@ let c3 = importAllResult;
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = {
   onPress() {
-    importDefault(15431)(FAVORITES);
+    importDefault(15448)(FAVORITES);
   }
 };
 let obj = { anchor: null };
@@ -29,26 +29,26 @@ const memoResult = importAllResult.memo(function GuildsBarFavorites() {
   let badge2;
   let cutouts;
   let unread;
-  const tmp3 = importDefault(1348)("GuildsBarFavorites");
-  let obj = require(15417) /* UnreadIndicator */;
-  let obj1 = require(9711) /* useFavoritesAccess */;
+  const tmp3 = importDefault(1367)("GuildsBarFavorites");
+  let obj = require(15434) /* UnreadIndicator */;
+  let obj1 = require(9716) /* useFavoritesAccess */;
   const isFavoritesGuildSelected = obj1.useIsFavoritesGuildSelected();
   let obj2 = require(589) /* initialize */;
   const items = [initializeFromUserSettings];
   const stateFromStores = obj2.useStateFromStores(items, () => favoriteChannels.getFavoriteChannels());
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
-  ({ badge, unread } = importDefault(15434)(stateFromStores));
-  const tmp8 = importDefault(15434)(stateFromStores);
-  ({ badge: badge2, cutouts } = importDefault(15419)({ mentionCount: badge }));
+  ({ badge, unread } = importDefault(15451)(stateFromStores));
+  const tmp8 = importDefault(15451)(stateFromStores);
+  ({ badge: badge2, cutouts } = importDefault(15436)({ mentionCount: badge }));
   const ref = importAllResult.useRef(null);
-  const tmp9 = importDefault(15419)({ mentionCount: badge });
+  const tmp9 = importDefault(15436)({ mentionCount: badge });
   const tmp11 = callback();
-  const tmp12 = importDefault(15358)();
-  const favoritesIntroPopoverDismissibleContent = require(9720) /* items1 */.useFavoritesIntroPopoverDismissibleContent(tmp12);
+  const tmp12 = importDefault(15372)();
+  const favoritesIntroPopoverDismissibleContent = require(9725) /* items1 */.useFavoritesIntroPopoverDismissibleContent(tmp12);
   const shouldShowPopover = favoritesIntroPopoverDismissibleContent.shouldShowPopover;
-  obj = { selected: isFavoritesGuildSelected, circle: null, unread: null, styles: null, cutouts: null, overState: "Boolean", config: "RangeError", label: "prototype", externalChildren: "ReferenceError", expandedChildren: "prototype", children: "RegExp" };
+  obj = { selected: isFavoritesGuildSelected, circle: null, unread: null, styles: null, cutouts: null, overState: "Boolean", config: "private_channels_version", label: null, externalChildren: 16, expandedChildren: 4, children: null };
   let tmp18 = !tmp3;
-  const obj4 = require(9720) /* items1 */;
+  const obj4 = require(9725) /* items1 */;
   const tmp14 = closure_8;
   if (!tmp3) {
     tmp18 = !isFavoritesGuildSelected;
@@ -61,11 +61,11 @@ const memoResult = importAllResult.memo(function GuildsBarFavorites() {
   const intl = tmp4(1236).intl;
   obj[7] = intl.string(require(1236) /* getSystemLocale */.t.wMWyci);
   obj[8] = badge2;
-  obj[9] = closure_7(require(15435) /* HomeDrawerFavoritesRowExpandedChildren */.HomeDrawerFavoritesRowExpandedChildren, {});
+  obj[9] = closure_7(require(15452) /* HomeDrawerFavoritesRowExpandedChildren */.HomeDrawerFavoritesRowExpandedChildren, {});
   const colors = tmp(712).colors;
   obj = { color: isFavoritesGuildSelected ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT };
-  obj[10] = closure_7(require(8744) /* StarIcon */.StarIcon, obj);
-  const children = [closure_7(importDefault(15417), obj), , ];
+  obj[10] = closure_7(require(8750) /* StarIcon */.StarIcon, obj);
+  const children = [closure_7(importDefault(15434), obj), , ];
   obj1 = { ref, style: tmp11.anchor, pointerEvents: "none", collapsable: false };
   children[1] = closure_7(View, obj1);
   let tmp16Result = shouldShowPopover;
@@ -74,7 +74,7 @@ const memoResult = importAllResult.memo(function GuildsBarFavorites() {
     obj2[0] = ref;
     obj2[1] = shouldShowPopover;
     obj2[2] = favoritesIntroPopoverDismissibleContent.markPopoverAsDismissed;
-    tmp16Result = tmp16(tmp(15436), obj2);
+    tmp16Result = tmp16(tmp(15453), obj2);
   }
   children[2] = tmp16Result;
   return tmp14(View, { children });

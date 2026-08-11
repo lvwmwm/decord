@@ -1,13 +1,13 @@
-// Module ID: 7309
-// Function ID: 7310
+// Module ID: 7310
+// Function ID: 7311
 // Name: getAutocompleterBoosterMap
-// Dependencies: [7310, 7311, 1961, 3938, 1903, 5227, 5159, 7312, 1355, 5231, 7314, 1884, 4287, 4292, 4000, 1467, 12, 5230, 2]
+// Dependencies: [7311, 7312, 1980, 3957, 1922, 5227, 5159, 7313, 1374, 5231, 7315, 1903, 4287, 4292, 4019, 1486, 12, 5230, 2]
 
-// Module 7309 (getAutocompleterBoosterMap)
+// Module 7310 (getAutocompleterBoosterMap)
 import handleUserUpdate from "handleUserUpdate";
 import fromPath from "fromPath";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -123,8 +123,8 @@ const prototype = Autocompleter.prototype;
 prototype["createSearchContext"] = function createSearchContext() {
   const self = this;
   if (null == this.userSearchContext) {
-    self.userSearchContext = importDefault(7312).getUserSearchContext(self.parseUserResults, self._limit);
-    const obj = importDefault(7312);
+    self.userSearchContext = importDefault(7313).getUserSearchContext(self.parseUserResults, self._limit);
+    const obj = importDefault(7313);
   }
 };
 prototype["setLimit"] = function setLimit(_limit) {
@@ -559,7 +559,7 @@ prototype["queryApplications"] = function queryApplications(arg0, arg1) {
 };
 prototype["queryGameProfiles"] = function queryGameProfiles(query, _limit) {
   if (this._include(AutocompleterResultTypes.GAME_PROFILE)) {
-    let result = _require(7314).queryGamesAutocomplete(query);
+    let result = _require(7315).queryGamesAutocomplete(query);
     if (result == null) {
       result = [];
     }
@@ -579,7 +579,7 @@ prototype["queryGameProfiles"] = function queryGameProfiles(query, _limit) {
 };
 prototype["refreshGameProfiles"] = function refreshGameProfiles() {
   const self = this;
-  const isNullOrEmptyResult = require(1884) /* isNullOrEmpty */.isNullOrEmpty(this.query.trim());
+  const isNullOrEmptyResult = require(1903) /* isNullOrEmpty */.isNullOrEmpty(this.query.trim());
   let _includeResult = !isNullOrEmptyResult;
   if (!isNullOrEmptyResult) {
     _includeResult = self._include(AutocompleterResultTypes.GAME_PROFILE);
@@ -608,7 +608,7 @@ prototype["queryLink"] = function queryLink(query, _refetchForSingleCategoryLimi
       const items = [obj];
       return items;
     } else {
-      const sanitizeUrlResult = importDefault(4000).sanitizeUrl(query);
+      const sanitizeUrlResult = importDefault(4019).sanitizeUrl(query);
       try {
         const _URL = URL;
         const uRL = new URL(sanitizeUrlResult);
@@ -617,7 +617,7 @@ prototype["queryLink"] = function queryLink(query, _refetchForSingleCategoryLimi
         if (undefined !== hostname) {
           str = hostname;
         }
-        let tmp17Result = tmp17(1467);
+        let tmp17Result = tmp17(1486);
         let isDiscordHostnameResult = tmp17Result.isDiscordHostname(str);
         if (!isDiscordHostnameResult) {
           const _window = window;
@@ -625,7 +625,7 @@ prototype["queryLink"] = function queryLink(query, _refetchForSingleCategoryLimi
         }
         if (null !== pathname) {
           if (isDiscordHostnameResult) {
-            tmp17Result = tmp17(1467);
+            tmp17Result = tmp17(1486);
             if (tmp17Result.isAppRoute(pathname)) {
               obj = { type: null, record: null, score: null };
               obj[0] = tmp.LINK;
@@ -642,7 +642,7 @@ prototype["queryLink"] = function queryLink(query, _refetchForSingleCategoryLimi
       } catch (err) {
         return [];
       }
-      const obj8 = importDefault(4000);
+      const obj8 = importDefault(4019);
     }
   } else {
     return [];

@@ -1,9 +1,9 @@
-// Module ID: 8438
-// Function ID: 8439
+// Module ID: 8444
+// Function ID: 8445
 // Name: getGuildBadgeSource
-// Dependencies: [19, 676, 21, 8439, 8440, 8441, 8442, 1411, 1297, 2]
+// Dependencies: [19, 676, 21, 8445, 8446, 8447, 8448, 1430, 1297, 2]
 
-// Module 8438 (getGuildBadgeSource)
+// Module 8444 (getGuildBadgeSource)
 import "noop";
 import { GuildFeatures } from "ME";
 import { jsx } from "jsxProd";
@@ -44,11 +44,11 @@ function getGuildBadgeSource(guild, flag) {
             hasItem = Boolean(hasItem1);
           }
         }
-        obj2 = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
+        obj2 = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
       }
     }
   } else {
-    obj = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
+    obj = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
     if (obj.isGuildRecord(has)) {
       const features3 = has.features;
       let hasItem2 = features3.has(VERIFIED);

@@ -1,10 +1,10 @@
-// Module ID: 11447
-// Function ID: 11448
+// Module ID: 11450
+// Function ID: 11451
 // Name: SubmittingOverlay
-// Dependencies: [21, 4303, 712, 4036, 4713, 4717, 4729, 2]
+// Dependencies: [21, 4303, 712, 4042, 4713, 4717, 4729, 2]
 // Exports: SubmittingOverlay
 
-// Module 11447 (SubmittingOverlay)
+// Module 11450 (SubmittingOverlay)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -17,7 +17,7 @@ const result = require("Themes").fileFinishedImporting("modules/app_launcher/nat
 
 export const SubmittingOverlay = function SubmittingOverlay(submitting) {
   submitting = submitting.submitting;
-  let obj = submitting(4036);
+  let obj = submitting(4042);
   class S {
     constructor() {
       tmp = submitting;
@@ -42,5 +42,5 @@ export const SubmittingOverlay = function SubmittingOverlay(submitting) {
     submitting = tmp5(submitting(4729).Ellipsis, { variant: "active", size: "md" });
   }
   obj[1] = submitting;
-  return jsx(importDefault(4036).View, { style: items, children: null });
+  return jsx(importDefault(4042).View, { style: items, children: null });
 };

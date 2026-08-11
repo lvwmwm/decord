@@ -1,13 +1,13 @@
 // Module ID: 4493
 // Function ID: 4494
 // Name: getNickname
-// Dependencies: [1372, 1971, 3938, 1236, 4146, 589, 2]
+// Dependencies: [1391, 1990, 3957, 1236, 4148, 589, 2]
 // Exports: getNickname, useName
 
 // Module 4493 (getNickname)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 
 const require = arg1;
 function getNickname(id, arg1, id) {
@@ -54,8 +54,8 @@ function getName(id, arg1, id) {
       }
     }
     if (stringResult == null) {
-      stringResult = importDefault(4146).getName(id);
-      const obj2 = importDefault(4146);
+      stringResult = importDefault(4148).getName(id);
+      const obj2 = importDefault(4148);
     }
   }
   return stringResult;
@@ -64,10 +64,10 @@ function useName(arg0, arg1, arg2) {
   const _require = arg0;
   let closure_1 = arg1;
   const dependencyMap = arg2;
-  const items = [trackCommunicationDisabled, ensureGuildLoaded, upsertRelationship];
+  const items = [trackCommunicationDisabled, ensureGuildLoaded, markAllUserIdListsStale];
   return _require(589).useStateFromStores(items, () => outer1_6(closure_0, closure_1, closure_2));
 }
-const result = require("upsertRelationship").fileFinishedImporting("utils/NicknameUtils.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("utils/NicknameUtils.tsx");
 
 export default { getNickname, getName, useName };
 export { getNickname };

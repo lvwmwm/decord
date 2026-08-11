@@ -1,10 +1,10 @@
-// Module ID: 14241
-// Function ID: 14242
+// Module ID: 14249
+// Function ID: 14250
 // Name: QuestsIcon
-// Dependencies: [19, 21, 712, 4004, 14242, 2]
+// Dependencies: [19, 21, 712, 4023, 14250, 2]
 // Exports: QuestsIcon
 
-// Module 14241 (QuestsIcon)
+// Module 14249 (QuestsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const QuestsIcon = function QuestsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14242) /* registerAsset */;
+  obj[0] = require(14250) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

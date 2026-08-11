@@ -1,12 +1,12 @@
-// Module ID: 11421
-// Function ID: 11422
+// Module ID: 11424
+// Function ID: 11425
 // Name: setAppLauncherA11yFocusReturnRef
-// Dependencies: [19, 17, 676, 1369, 11422, 21, 4303, 712, 9550, 9548, 11423, 4700, 11424, 4036, 11433, 4648, 5399, 11434, 500, 4498, 1605, 1478, 1607, 4710, 11466, 9549, 11468, 2]
+// Dependencies: [19, 17, 676, 1388, 11425, 21, 4303, 712, 9556, 9554, 11426, 4700, 11427, 4042, 11436, 4648, 5399, 11437, 500, 4498, 1624, 1497, 1626, 4710, 11469, 9555, 11471, 2]
 // Exports: setAppLauncherA11yFocusReturnRef
 
-// Module 11421 (setAppLauncherA11yFocusReturnRef)
+// Module 11424 (setAppLauncherA11yFocusReturnRef)
 import importAllResult from "collectGuildAnalyticsMetadata";
-import { View } from "module_11434";
+import { View } from "module_11437";
 import { AnalyticEvents } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { KEYBOARD_ANIMATION_CONFIG } from "KEYBOARD_ANIMATION_DURATION";

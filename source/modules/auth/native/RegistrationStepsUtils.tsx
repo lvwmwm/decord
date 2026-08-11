@@ -1,10 +1,10 @@
-// Module ID: 15082
-// Function ID: 15083
+// Module ID: 15091
+// Function ID: 15092
 // Name: headerTitle
-// Dependencies: [5, 19, 14009, 5828, 15083, 15084, 676, 21, 503, 15085, 15091, 15092, 15104, 15105, 15111, 8470, 15113, 15114, 8522, 8519, 15118, 15119, 15123, 15124, 1481, 1884, 15094, 4202, 8475, 15131, 2]
+// Dependencies: [5, 19, 14017, 5828, 15092, 15093, 676, 21, 503, 15094, 15100, 15101, 15113, 15114, 15120, 8476, 15122, 15123, 8528, 8525, 15127, 15128, 15132, 15133, 1500, 1903, 15103, 4202, 8481, 15140, 2]
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, getPreviousAuthState, getPreviousRegistrationTransitionStep, getRegistrationSteps, handleNextOrSubmitRegistration
 
-// Module 15082 (headerTitle)
+// Module 15091 (headerTitle)
 import closure_3 from "RegistrationTransitionActionTypes";
 import "ChangePhoneReason";
 import isRateLimited from "isRateLimited";
@@ -150,19 +150,19 @@ function _handleRegistrationSubmit() {
       v02(true);
       v0({});
       v0 = 1;
-      let obj3 = callback(15094);
+      let obj3 = callback(15103);
       yield obj3.registerFull(obj1);
       if (1 === tmp7) {
         v0 = 0;
         v0 = closure_5;
         v02(false);
         if (v0 instanceof callback(4202).APIError) {
-          obj1 = callback(8475);
+          obj1 = callback(8481);
           authenticationErrorsFromAPIError = obj1.getAuthenticationErrorsFromAPIError(v0);
           v0(authenticationErrorsFromAPIError);
           closure_5 = callback3(callback);
           if (null != closure_5) {
-            callback2(15131)(callback2, dependencyMap, authenticationErrorsFromAPIError, closure_5);
+            callback2(15140)(callback2, dependencyMap, authenticationErrorsFromAPIError, closure_5);
           }
           state = 3;
         } else {
@@ -216,7 +216,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     headerTitle,
     headerShown: false,
     render() {
-      return callback4(callback2(15085), {});
+      return callback4(callback2(15094), {});
     }
   };
   obj[AuthStates.WELCOME] = obj;
@@ -238,10 +238,10 @@ export const getAllAuthScreens = function getAllAuthScreens() {
       tmp6 = callback3(tmp5);
     }
     obj.destinationStep = tmp6;
-    return closure_15(callback(15091).BackButtonWithTracking, obj);
+    return closure_15(callback(15100).BackButtonWithTracking, obj);
   };
   obj[6] = function render() {
-    return callback4(callback(15092).RegisterIdentity, {});
+    return callback4(callback(15101).RegisterIdentity, {});
   };
   obj[AuthStates.REGISTER_IDENTITY] = obj;
   const obj2 = { ignoreKeyboard: true, fullscreen: true, impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_REGISTRATION, impressionProperties: null, headerTitle: null, headerLeft: null, render: null };
@@ -263,10 +263,10 @@ export const getAllAuthScreens = function getAllAuthScreens() {
       tmp6 = callback3(tmp5);
     }
     obj.destinationStep = tmp6;
-    return closure_15(callback(15091).BackButtonWithTracking, obj);
+    return closure_15(callback(15100).BackButtonWithTracking, obj);
   };
   obj2[6] = function render() {
-    return callback4(callback2(15104), {});
+    return callback4(callback2(15113), {});
   };
   obj[AuthStates.REGISTER_DISPLAY_NAME] = obj2;
   const obj4 = { ignoreKeyboard: true, fullscreen: true, impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_REGISTRATION, impressionProperties: null, headerTitle: null, headerLeft: null, render: null };
@@ -288,10 +288,10 @@ export const getAllAuthScreens = function getAllAuthScreens() {
       tmp6 = callback3(tmp5);
     }
     obj.destinationStep = tmp6;
-    return closure_15(callback(15091).BackButtonWithTracking, obj);
+    return closure_15(callback(15100).BackButtonWithTracking, obj);
   };
   obj4[6] = function render() {
-    return callback4(callback2(15105), {});
+    return callback4(callback2(15114), {});
   };
   obj[AuthStates.REGISTER_ACCOUNT_INFORMATION] = obj4;
   const obj6 = { ignoreKeyboard: true, impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_VERIFY_PHONE, impressionProperties: null, headerTitle: null, headerLeft: null, render: null };
@@ -302,11 +302,11 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     const obj = {};
     const merged = Object.assign(arg0);
     obj.destinationStep = constants.ACCOUNT_IDENTITY;
-    return callback4(callback(15091).BackButtonWithTracking, obj);
+    return callback4(callback(15100).BackButtonWithTracking, obj);
   };
   obj6[5] = function render(arg0) {
     const merged = Object.assign(arg0);
-    return callback4(callback2(15111), {});
+    return callback4(callback2(15120), {});
   };
   obj[AuthStates.VERIFY_PHONE] = obj6;
   const obj8 = { ignoreKeyboard: true, fullscreen: true, impressionName: require(503) /* encodeProperties */.ImpressionNames.USER_LOGIN, impressionProperties: null, headerTitle: null, render: null };
@@ -314,7 +314,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
   obj8[3] = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_LOGIN_FLOW };
   obj8[4] = headerTitle;
   obj8[5] = function render() {
-    return callback4(callback2(8470), {});
+    return callback4(callback2(8476), {});
   };
   obj[AuthStates.LOGIN] = obj8;
   obj[AuthStates.MFA] = {
@@ -323,7 +323,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     headerTitle,
     headerShown: false,
     render() {
-      return callback4(callback2(15113), { inContainer: true });
+      return callback4(callback2(15122), { inContainer: true });
     }
   };
   obj[AuthStates.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED] = {
@@ -332,7 +332,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     headerTitle,
     render(arg0) {
       const merged = Object.assign(arg0);
-      return callback4(callback2(15114), {});
+      return callback4(callback2(15123), {});
     }
   };
   obj[AuthStates.COUNTRY_SELECT] = {
@@ -340,7 +340,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     headerTitle,
     render(arg0, arg1) {
       let closure_0 = arg1;
-      return callback4(callback2(8522), {
+      return callback4(callback2(8528), {
         onClose() {
           return arr.pop();
         },
@@ -355,7 +355,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     headerTitle,
     render(arg0) {
       const merged = Object.assign(arg0);
-      return callback4(callback2(15118), {});
+      return callback4(callback2(15127), {});
     }
   };
   const obj9 = { impression_group: require(503) /* encodeProperties */.ImpressionGroups.USER_LOGIN_FLOW };
@@ -379,10 +379,10 @@ export const getAllAuthScreens = function getAllAuthScreens() {
         tmp6 = callback3(tmp5);
       }
       obj.destinationStep = tmp6;
-      return closure_15(callback(15091).BackButtonWithTracking, obj);
+      return closure_15(callback(15100).BackButtonWithTracking, obj);
     },
     render() {
-      return callback4(callback2(15119), {});
+      return callback4(callback2(15128), {});
     }
   };
   const obj10 = {
@@ -405,10 +405,10 @@ export const getAllAuthScreens = function getAllAuthScreens() {
         tmp6 = callback3(tmp5);
       }
       obj.destinationStep = tmp6;
-      return closure_15(callback(15091).BackButtonWithTracking, obj);
+      return closure_15(callback(15100).BackButtonWithTracking, obj);
     },
     render() {
-      return callback4(callback2(15119), {});
+      return callback4(callback2(15128), {});
     }
   };
   obj[AuthStates.AGE_GATE_UNDERAGE] = {
@@ -422,7 +422,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     render(arg0, arg1) {
       let closure_0 = arg1;
       const merged = Object.assign(arg0);
-      return callback4(callback2(15123), {
+      return callback4(callback2(15132), {
         onClose() {
           return closure_0.popToTop();
         }
@@ -434,7 +434,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     fullscreen: true,
     headerTitle,
     render() {
-      return callback4(callback(15124).CompanionRemoteAuth, {});
+      return callback4(callback(15133).CompanionRemoteAuth, {});
     }
   };
   return obj;

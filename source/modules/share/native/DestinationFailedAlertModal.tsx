@@ -1,16 +1,16 @@
-// Module ID: 10268
-// Function ID: 10269
+// Module ID: 10273
+// Function ID: 10274
 // Name: FailedGroupDMRow
-// Dependencies: [19, 17, 1372, 1891, 4390, 3938, 1903, 505, 21, 4303, 712, 4494, 9663, 1297, 4299, 589, 4146, 10269, 4647, 4647, 1236, 2]
+// Dependencies: [19, 17, 1391, 1910, 4390, 3957, 1922, 505, 21, 4303, 712, 4494, 9668, 1297, 4299, 589, 4148, 10274, 4647, 4647, 1236, 2]
 // Exports: default
 
-// Module 10268 (FailedGroupDMRow)
+// Module 10273 (FailedGroupDMRow)
 import "getAlertModalItemKey";
 import { View } from "GuildIconWithChannelTypeSizes";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import sortActivity from "sortActivity";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { StatusTypes } from "sum";
 import jsxProd from "set";
@@ -28,7 +28,7 @@ function FailedGroupDMRow(channel) {
   const tmp2 = importDefault(4494)(channel);
   obj[0] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[1] = channel;
-  const items = [callback(importDefault(9663), obj), ];
+  const items = [callback(importDefault(9668), obj), ];
   obj = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp2 };
   items[1] = callback(require(4299) /* Text */.Text, obj);
   obj[1] = items;
@@ -38,7 +38,7 @@ function FailedUserRow(user) {
   user = user.user;
   const tmp = createCacheKey();
   let obj = user(589);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   let stateFromStores = obj.useStateFromStores(items, () => outer1_7.getNickname(user.id));
   let obj1 = user(589);
   const items1 = [sortActivity];
@@ -63,8 +63,8 @@ function FailedUserRow(user) {
     obj1 = { style: null, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: null };
     obj1[0] = tmp.label;
     if (stateFromStores == null) {
-      stateFromStores = importDefault(4146).getName(user);
-      const obj6 = importDefault(4146);
+      stateFromStores = importDefault(4148).getName(user);
+      const obj6 = importDefault(4148);
     }
     obj1[4] = stateFromStores;
     items2[1] = closure_10(tmp2(4299).Text, obj1);
@@ -89,8 +89,8 @@ function FailedChannelRow(channel) {
   });
   obj = { style: tmp.row, children: null };
   obj = { "aria-label": "", guild: stateFromStores, channel, size: null };
-  obj[3] = channel(10269).GuildIconWithChannelTypeSizes.SMALL_32;
-  const items1 = [callback(channel(10269).GuildIconWithChannelType, obj), ];
+  obj[3] = channel(10274).GuildIconWithChannelTypeSizes.SMALL_32;
+  const items1 = [callback(channel(10274).GuildIconWithChannelType, obj), ];
   const tmp3 = importDefault(4494)(channel);
   items1[1] = callback(channel(4299).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4494)(channel) });
   obj[1] = items1;

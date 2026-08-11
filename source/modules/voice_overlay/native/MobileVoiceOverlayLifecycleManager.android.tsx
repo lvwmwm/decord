@@ -1,16 +1,16 @@
-// Module ID: 13792
-// Function ID: 13793
+// Module ID: 13800
+// Function ID: 13801
 // Name: importDefaultResult1
-// Dependencies: [1372, 1961, 1891, 4351, 3929, 4375, 3938, 5137, 1903, 4319, 10847, 676, 13793, 13794, 13795, 13796, 8027, 13054, 13797, 13798, 8014, 1236, 4039, 39, 13799, 10858, 7216, 4494, 5159, 698, 4498, 4482, 2]
+// Dependencies: [1391, 1980, 1910, 4351, 3948, 4375, 3957, 5137, 1922, 4319, 10852, 676, 13801, 13802, 13803, 13804, 8029, 13063, 13805, 13806, 8016, 1236, 4045, 39, 13807, 10863, 7217, 4494, 5159, 698, 4498, 4482, 2]
 
-// Module 13792 (importDefaultResult1)
+// Module 13800 (importDefaultResult1)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import importDefaultResult from "_detectH265HardwareDecode";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import importDefaultResult1 from "createRTCConnection";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import anyoneHasFlagInContext from "anyoneHasFlagInContext";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import importDefaultResult2 from "updateVoiceState";
@@ -349,7 +349,7 @@ class MobileVoiceOverlayManager {
       obj.channelSelectorResults = obj.queryChannels(obj).map((record) => {
         record = record.record;
         const obj = { channelId: record.id, guildId: record.guild_id, channelName: null, guildName: null, categoryName: null };
-        obj[2] = lib(table[27]).computeChannelName(record, mergeGuildAvatar, upsertRelationship);
+        obj[2] = lib(table[27]).computeChannelName(record, mergeGuildAvatar, markAllUserIdListsStale);
         guild = guild.getGuild(record.guild_id);
         let str;
         if (guild != null) {
@@ -362,7 +362,7 @@ class MobileVoiceOverlayManager {
         channel = channel.getChannel(record.parent_id);
         let str2 = "";
         if (null != channel) {
-          str2 = lib(table[27]).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+          str2 = lib(table[27]).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
           const tmpResult = lib(table[27]);
         }
         obj[4] = str2;
@@ -427,7 +427,7 @@ class MobileVoiceOverlayManager {
 const prototype = MobileVoiceOverlayManager.prototype;
 prototype["initialize"] = function initialize() {
   const self = this;
-  let obj = require(4039) /* isFabric */;
+  let obj = require(4045) /* isFabric */;
   if (!tmp2) {
     if (typeof NativeCallableInterface !== "function") {
       HermesBuiltin.throwTypeError();

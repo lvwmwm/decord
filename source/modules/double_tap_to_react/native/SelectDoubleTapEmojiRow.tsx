@@ -1,9 +1,9 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11759
+// Function ID: 11760
 // Name: num2
-// Dependencies: [19, 17, 4295, 5398, 1906, 21, 4303, 500, 712, 589, 4846, 5360, 1416, 8641, 1474, 3946, 8076, 8637, 7222, 7655, 2]
+// Dependencies: [19, 17, 4295, 5398, 1925, 21, 4303, 500, 712, 589, 4846, 5360, 1435, 8647, 1493, 3965, 8078, 8643, 7223, 7657, 2]
 
-// Module 11756 (num2)
+// Module 11759 (num2)
 import importAllResult from "ReactionIcon";
 import { View } from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -100,8 +100,8 @@ let closure_13 = importAllResult.memo((emoji) => {
     }
     obj2[1] = animated;
     obj2[2] = closure_7;
-    let url = importDefault(1416).getEmojiURL(obj2);
-    const tmp8Result = importDefault(1416);
+    let url = importDefault(1435).getEmojiURL(obj2);
+    const tmp8Result = importDefault(1435);
   } else {
     url = emoji.url;
   }

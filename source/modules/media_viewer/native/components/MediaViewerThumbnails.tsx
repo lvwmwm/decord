@@ -1,10 +1,10 @@
-// Module ID: 12240
-// Function ID: 12241
+// Module ID: 12243
+// Function ID: 12244
 // Name: ObscuredView
-// Dependencies: [32, 19, 17, 8864, 21, 12241, 4005, 712, 4036, 4704, 500, 4303, 5268, 8846, 4037, 8008, 2]
+// Dependencies: [32, 19, 17, 8870, 21, 12244, 4024, 712, 4042, 4704, 500, 4303, 5268, 8852, 4043, 8010, 2]
 // Exports: default
 
-// Module 12240 (ObscuredView)
+// Module 12243 (ObscuredView)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -24,9 +24,9 @@ function ObscuredView(source) {
   let tmp4;
   let tmp5;
   source = source.source;
-  let obj = require(12241) /* useMediaItemSpoilerState */;
+  let obj = require(12244) /* useMediaItemSpoilerState */;
   [tmp4, tmp5] = callback(obj.useMediaItemSpoilerState(source.index), 2);
-  require(4005) /* map */;
+  require(4024) /* map */;
   let tmp10Result = null;
   if (tmp4) {
     if (source.spoiler) {
@@ -44,7 +44,7 @@ function ObscuredView(source) {
       obj[1] = tmp11.absoluteFill;
       obj[2] = tmp8;
       obj[1] = closure_8(tmp7Result, obj);
-      tmp10Result = tmp10(tmp7(4036).View, obj);
+      tmp10Result = tmp10(tmp7(4042).View, obj);
       tmpResult = require(500) /* set */;
     } else {
       tmp10Result = null;
@@ -89,7 +89,7 @@ let closure_12 = importAllResult.memo((onSelect) => {
   const items2 = [closure_8(onSelect(5268), obj), closure_8(ObscuredView, { source: first, index })];
   obj[7] = items2;
   obj[1] = closure_9(closure_5, obj);
-  return closure_8(onSelect(4036).View, obj);
+  return closure_8(onSelect(4042).View, obj);
 });
 let closure_13 = { code: "function MediaViewerThumbnailsTsx1(){const{scrollEnabled}=this.__closure;return{scrollEnabled:scrollEnabled.get()};}" };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/media_viewer/native/components/MediaViewerThumbnails.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 7054
-// Function ID: 7055
+// Module ID: 7057
+// Function ID: 7058
 // Name: processMessage
-// Dependencies: [32, 7055, 1372, 4521, 676, 1386, 4523, 7059, 589, 709, 2]
+// Dependencies: [32, 7058, 1391, 4521, 676, 1405, 4523, 7062, 589, 709, 2]
 
-// Module 7054 (processMessage)
+// Module 7057 (processMessage)
 import _slicedToArray from "_slicedToArray";
 import removePendingListFetch from "removePendingListFetch";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -201,7 +201,7 @@ prototype2["set"] = function set(arg0, arg1, arg2) {
     obj[1] = function dispose(arg0, arg1) {
       return obj.handleCacheDisposed(arg0, arg1);
     };
-    const tmp7 = new importDefault(1386)(obj);
+    const tmp7 = new importDefault(1405)(obj);
     obj._cachedMessages = tmp7;
     const _Set = Set;
     const set = new Set();
@@ -337,7 +337,7 @@ const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"),
         if (value.state === obj.LOADED) {
           obj = { state: null, message: null };
           obj[0] = tmp3.LOADED;
-          obj[1] = require(7059) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(value.message);
+          obj[1] = require(7062) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(value.message);
           const result = obj.set(channelId, messageId, obj);
         }
       }

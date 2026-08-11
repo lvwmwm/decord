@@ -1,15 +1,15 @@
-// Module ID: 12511
-// Function ID: 12512
+// Module ID: 12515
+// Function ID: 12516
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 3938, 1903, 21, 4303, 712, 589, 1236, 4509, 9243, 5824, 4732, 4299, 5993, 4146, 2]
+// Dependencies: [5, 32, 19, 17, 3957, 1922, 21, 4303, 712, 589, 1236, 4509, 9249, 5824, 4732, 4299, 5995, 4148, 2]
 // Exports: default
 
-// Module 12511 (AddFriendNicknameModal)
+// Module 12515 (AddFriendNicknameModal)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "nameFromUser";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import closure_8 from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -126,7 +126,7 @@ export default function AddFriendNicknameModal(arg0) {
   let obj = callback1;
   [c2, c3] = callback(callback1.useState(false), 2);
   let obj1 = require(589) /* initialize */;
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_7.getNickname(closure_0));
   let tmp6 = stateFromStores;
   if (stateFromStores == null) {
@@ -182,9 +182,9 @@ export default function AddFriendNicknameModal(arg0) {
   const obj4 = { onChange: callback, autoFocus: true, placeholder: null, defaultValue: null, maxLength: 32, isClearable: true };
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
   const tmp12 = showUserProfile(4732);
-  obj4[2] = showUserProfile(4146).getName(stateFromStores1);
+  obj4[2] = showUserProfile(4148).getName(stateFromStores1);
   obj4[3] = stateFromStores;
-  items3[2] = callback2(require(5993) /* TextField */.TextField, obj4);
+  items3[2] = callback2(require(5995) /* TextField */.TextField, obj4);
   obj1[4] = items3;
   obj[0] = callback3(tmp12, obj1);
   obj[1] = callback2(tmp11, obj);

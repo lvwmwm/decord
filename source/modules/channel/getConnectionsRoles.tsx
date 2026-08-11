@@ -1,7 +1,7 @@
 // Module ID: 5126
 // Function ID: 5127
 // Name: ChannelTypes
-// Dependencies: [1964, 1891, 676, 506, 2]
+// Dependencies: [1983, 1910, 676, 506, 2]
 // Exports: default
 
 // Module 5126 (ChannelTypes)

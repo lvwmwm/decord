@@ -1,10 +1,10 @@
-// Module ID: 8650
-// Function ID: 8651
+// Module ID: 8656
+// Function ID: 8657
 // Name: ToastEmoji
-// Dependencies: [19, 4295, 1906, 21, 4303, 712, 500, 589, 1416, 5360, 4299, 1236, 4700, 4014, 4002, 2]
+// Dependencies: [19, 4295, 1925, 21, 4303, 712, 500, 589, 1435, 5360, 4299, 1236, 4700, 1351, 4021, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 8650 (ToastEmoji)
+// Module 8656 (ToastEmoji)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { EMOJI_URL_BASE_SIZE } from "set";
@@ -89,7 +89,7 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
   emoji = emoji.emoji;
   let obj = emoji(4700);
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(4014).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = tmp(1351).AccessibilityAnnouncer;
     const intl = tmp(1236).intl;
     obj = { emojiName: null };
     obj[0] = emoji.name;
@@ -102,7 +102,7 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
     obj[2] = function content() {
       return outer1_6(outer1_9, { emoji });
     };
-    importDefault(4002).open(obj);
-    const obj2 = importDefault(4002);
+    importDefault(4021).open(obj);
+    const obj2 = importDefault(4021);
   }
 };

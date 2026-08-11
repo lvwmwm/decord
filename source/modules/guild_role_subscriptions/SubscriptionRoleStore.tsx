@@ -1,7 +1,7 @@
 // Module ID: 5177
 // Function ID: 5178
 // Name: computeRolesForGuild
-// Dependencies: [1415, 1965, 1971, 1964, 1891, 1903, 676, 3920, 589, 709, 2]
+// Dependencies: [1434, 1984, 1990, 1983, 1910, 1922, 676, 3939, 589, 709, 2]
 
 // Module 5177 (computeRolesForGuild)
 import { isGuildOwner } from "GuildNSFWContentLevel";
@@ -46,11 +46,11 @@ function computeRolesForGuild(guildId) {
           let tmp15 = nextResult;
           let tmp16 = require;
           let tmp17 = dependencyMap;
-          let obj2 = require(3920) /* isSubscriptionRole */;
+          let obj2 = require(3939) /* isSubscriptionRole */;
           if (obj2.isSubscriptionRole(nextResult)) {
             let tmp18 = nextResult;
             let addResult = set.add(tmp15.id);
-            let tmp16Result = tmp16(3920);
+            let tmp16Result = tmp16(3939);
             if (tmp16Result.isSubscriptionRoleAvailableForPurchase(tmp15)) {
               let tmp20 = nextResult;
               let addResult1 = set1.add(tmp15.id);

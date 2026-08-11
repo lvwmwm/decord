@@ -1,10 +1,10 @@
-// Module ID: 7197
-// Function ID: 7198
+// Module ID: 7198
+// Function ID: 7199
 // Name: getEstablishedDate
-// Dependencies: [1376, 676, 1411, 2]
+// Dependencies: [1395, 676, 1430, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 7197 (getEstablishedDate)
+// Module 7198 (getEstablishedDate)
 import { createChannelRecordFromInvite as closure_2 } from "createChannelRecord";
 import { GuildFeatures } from "ME";
 
@@ -33,7 +33,7 @@ export const guildInviteCanEmbedProfile = function guildInviteCanEmbedProfile(gu
   if (null == guild.guild) {
     return false;
   } else {
-    const features = require(1411) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(guild.guild).features;
+    const features = require(1430) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(guild.guild).features;
     if (features.has(GuildFeatures.HUB)) {
       return false;
     } else {
@@ -51,6 +51,6 @@ export const guildInviteCanEmbedProfile = function guildInviteCanEmbedProfile(gu
       }
       return !isGuildVoiceOrThreadResult;
     }
-    const obj = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
+    const obj = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
   }
 };

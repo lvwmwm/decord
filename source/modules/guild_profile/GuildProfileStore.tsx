@@ -1,9 +1,9 @@
-// Module ID: 9001
-// Function ID: 9002
+// Module ID: 9007
+// Function ID: 9008
 // Name: handleUpdateStart
 // Dependencies: [676, 584, 5335, 589, 709, 2]
 
-// Module 9001 (handleUpdateStart)
+// Module 9007 (handleUpdateStart)
 import { ChannelTypes } from "ME";
 import { Store } from "initialize";
 

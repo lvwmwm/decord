@@ -1,10 +1,10 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 15001
+// Function ID: 15002
 // Name: SelectScreen
-// Dependencies: [19, 17, 14988, 21, 4303, 5267, 7970, 8472, 1480, 5328, 4299, 1236, 2]
+// Dependencies: [19, 17, 14998, 21, 4303, 5267, 7972, 8478, 1499, 5328, 4299, 1236, 2]
 // Exports: default
 
-// Module 14991 (SelectScreen)
+// Module 15001 (SelectScreen)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { SELECT_NAMES } from "get webauthn";
@@ -30,9 +30,9 @@ const result = require("get webauthn").fileFinishedImporting("modules/mfa/native
 
 export default function SelectScreen(mfaChallenge) {
   const _require = mfaChallenge;
-  const tmp = importDefault(8472)();
+  const tmp = importDefault(8478)();
   const tmp2 = callback3(tmp);
-  let obj = _require(1480);
+  let obj = _require(1499);
   importDefault = obj.useNavigation();
   obj = { top: !tmp, style: tmp2.container, children: null };
   obj = { style: tmp2.selectContainer, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 15438
-// Function ID: 15439
+// Module ID: 15455
+// Function ID: 15456
 // Name: GuildRowWrapper
-// Dependencies: [19, 17, 3931, 1376, 1372, 1961, 7097, 1891, 4315, 3938, 4499, 1903, 676, 4500, 21, 4303, 589, 4164, 4161, 12566, 9731, 4299, 15439, 15440, 4494, 11, 15441, 15443, 11411, 15444, 15445, 15446, 15448, 15449, 15428, 2]
+// Dependencies: [19, 17, 3950, 1395, 1391, 1980, 7098, 1910, 4315, 3957, 4499, 1922, 676, 4500, 21, 4303, 589, 4164, 4161, 12570, 9736, 4299, 15456, 15457, 4494, 11, 15458, 15460, 11414, 15461, 15462, 15463, 15465, 15466, 15445, 2]
 // Exports: default
 
-// Module 15438 (GuildRowWrapper)
+// Module 15455 (GuildRowWrapper)
 import BellZIcon from "BellZIcon";
 import { View } from "MobileHomeDrawerExperiment";
 import storeThread from "storeThread";
@@ -14,7 +14,7 @@ import comparator from "comparator";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";

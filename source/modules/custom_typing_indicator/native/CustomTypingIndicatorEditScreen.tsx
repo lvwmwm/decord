@@ -1,10 +1,10 @@
-// Module ID: 14594
-// Function ID: 14595
+// Module ID: 14602
+// Function ID: 14603
 // Name: CustomTypingIndicatorEditScreen
 // Dependencies: [17, 21, 4303, 2]
 // Exports: default
 
-// Module 14594 (CustomTypingIndicatorEditScreen)
+// Module 14602 (CustomTypingIndicatorEditScreen)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

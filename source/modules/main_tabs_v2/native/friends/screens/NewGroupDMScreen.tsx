@@ -1,10 +1,10 @@
-// Module ID: 15843
-// Function ID: 15844
+// Module ID: 15860
+// Function ID: 15861
 // Name: handleOneRecipientInDM
-// Dependencies: [32, 5, 19, 17, 1372, 13018, 4375, 1903, 9620, 676, 21, 4303, 712, 4313, 4513, 9242, 10972, 4271, 589, 15833, 698, 4002, 1236, 8382, 8392, 9088, 7758, 7218, 1297, 9621, 2]
+// Dependencies: [32, 5, 19, 17, 1391, 13022, 4375, 1922, 9625, 676, 21, 4303, 712, 4313, 4513, 9248, 10977, 4271, 589, 15850, 698, 4021, 1236, 8388, 8398, 9094, 7760, 7219, 1297, 9626, 2]
 // Exports: default
 
-// Module 15843 (handleOneRecipientInDM)
+// Module 15860 (handleOneRecipientInDM)
 import _slicedToArray from "_slicedToArray";
 import performQuery from "performQuery";
 import getGroupDMRecipientLimit from "getGroupDMRecipientLimit";
@@ -220,14 +220,14 @@ function _handleInviteUsers() {
                                 obj[0] = arg1;
                                 return obj;
                               } else {
-                                const tmp8 = v0(9242);
+                                const tmp8 = v0(9248);
                                 const call = tmp8.call;
                                 if (typeof call === "unknown") {
                                   tmp8(false, true);
                                 } else {
                                   call(tmp9, false, true);
                                 }
-                                v0(10972)(_slicedToArray);
+                                v0(10977)(_slicedToArray);
                                 dependencyMap = 3;
                                 tmp9 = _slicedToArray;
                               }
@@ -304,7 +304,7 @@ function _handleInviteUsers() {
                   throw arg1;
                 } else if (arg0 !== 2) {
                   _slicedToArray = arg1;
-                  obj = arr(9242);
+                  obj = arr(9248);
                   obj.ring(_slicedToArray, arr, "gdm_invite");
                 }
                 c6 = 3;

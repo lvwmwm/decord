@@ -1,7 +1,7 @@
 // Module ID: 5845
 // Function ID: 5846
 // Name: useIsNewMember
-// Dependencies: [1963, 1971, 3917, 1384, 687, 589, 2]
+// Dependencies: [1982, 1990, 3936, 1403, 687, 589, 2]
 // Exports: default, getIsNewMember
 
 // Module 5845 (useIsNewMember)
@@ -59,7 +59,7 @@ export const getIsNewMember = function getIsNewMember(closure_0) {
         if (num == null) {
           num = 0;
         }
-        const hasFlagResult = require(1384) /* hasFlag */.hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+        const hasFlagResult = require(1403) /* hasFlag */.hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
         let tmp8 = !hasFlagResult;
         if (!hasFlagResult) {
           const _Date = Date;
@@ -68,7 +68,7 @@ export const getIsNewMember = function getIsNewMember(closure_0) {
           tmp8 = diff < importDefault(687).Millis.WEEK;
         }
         tmp3 = tmp8;
-        const obj3 = require(1384) /* hasFlag */;
+        const obj3 = require(1403) /* hasFlag */;
       }
       flag = tmp3;
     }

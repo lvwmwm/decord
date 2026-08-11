@@ -1,10 +1,10 @@
-// Module ID: 7638
-// Function ID: 7639
+// Module ID: 7640
+// Function ID: 7641
 // Name: AccountCreditTier
-// Dependencies: [19, 17, 6861, 676, 21, 4303, 712, 3947, 1236, 2866, 5738, 4299, 589, 12, 2]
+// Dependencies: [19, 17, 6863, 676, 21, 4303, 712, 3966, 1236, 2885, 5738, 4299, 589, 12, 2]
 // Exports: default
 
-// Module 7638 (AccountCreditTier)
+// Module 7640 (AccountCreditTier)
 import "noop";
 import { View } from "get ActivityIndicator";
 import addEntitlement from "addEntitlement";
@@ -25,14 +25,14 @@ function AccountCreditTier(arg0) {
   ({ planId, currentSubscription } = arg0);
   ({ months, shouldAddDivider, unconsumedFractionalPremiumUnits, hasPremiumGroup } = arg0);
   const tmp = createCacheKey();
-  let obj = require(3947) /* getPremiumPlanItem */;
-  let obj1 = importDefault(3947);
+  let obj = require(3966) /* getPremiumPlanItem */;
+  let obj1 = importDefault(3966);
   const result = obj.castPremiumSubscriptionAsSkuId(obj1.getSkuIdForPlan(planId));
-  let obj2 = importDefault(3947);
+  let obj2 = importDefault(3966);
   const tierDisplayNameByPlanId = obj2.getTierDisplayNameByPlanId(planId);
   if (hasPremiumGroup) {
     const intl3 = tmp2(1236).intl;
-    let stringResult = intl3.string(tmp4(2866)["5asczk"]);
+    let stringResult = intl3.string(tmp4(2885)["5asczk"]);
   } else {
     if (null != currentSubscription) {
       if (currentSubscription.planId === planId) {
@@ -41,7 +41,7 @@ function AccountCreditTier(arg0) {
             const _Date2 = Date;
             let date = new Date(currentSubscription.pauseEndsAt);
           }
-          let num = tmp2(3947).extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
+          let num = tmp2(3966).extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
           const intl2 = tmp2(1236).intl;
           if (num == null) {
             num = 0;
@@ -49,7 +49,7 @@ function AccountCreditTier(arg0) {
           obj = { date: null };
           obj[0] = num;
           stringResult = intl2.formatToPlainString(tmp2(1236).t["5CNRRA"], obj);
-          const tmp2Result = tmp2(3947);
+          const tmp2Result = tmp2(3966);
         }
         const _Date = Date;
         date = new Date(currentSubscription.currentPeriodEnd);
@@ -176,7 +176,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       obj[1] = items1;
       return closure_7(c3, obj);
     }
-    obj8 = importDefault(3947);
+    obj8 = importDefault(3966);
     tmp11 = importDefault;
   }
   return null;

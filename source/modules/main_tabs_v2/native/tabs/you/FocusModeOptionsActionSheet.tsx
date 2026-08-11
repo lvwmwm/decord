@@ -1,10 +1,10 @@
-// Module ID: 15498
-// Function ID: 15499
+// Module ID: 15515
+// Function ID: 15516
 // Name: label
-// Dependencies: [19, 21, 687, 1236, 9763, 5764, 5767, 5374, 2]
+// Dependencies: [19, 21, 687, 1236, 9768, 5764, 5767, 5374, 2]
 // Exports: default
 
-// Module 15498 (label)
+// Module 15515 (label)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -74,7 +74,7 @@ const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native
 
 export default function FocusModeOptionsActionSheet(onSelect) {
   onSelect = onSelect.onSelect;
-  let obj = onSelect(9763);
+  let obj = onSelect(9768);
   const focusModeEnabled = obj.useFocusModeEnabled();
   obj = { title: null, hasIcons: false, children: null };
   const intl = onSelect(1236).intl;

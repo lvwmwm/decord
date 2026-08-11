@@ -1,15 +1,15 @@
-// Module ID: 15855
-// Function ID: 15856
+// Module ID: 15872
+// Function ID: 15873
 // Name: compareUserItems
-// Dependencies: [32, 19, 17, 7100, 3938, 1903, 9620, 676, 9636, 21, 4303, 712, 15856, 1988, 4644, 647, 7101, 3974, 15529, 7102, 11, 5728, 5748, 698, 12340, 5734, 15857, 659, 8783, 1236, 1480, 5767, 5374, 4299, 8956, 4848, 9141, 4846, 10253, 6027, 9626, 2]
+// Dependencies: [32, 19, 17, 7101, 3957, 1922, 9625, 676, 9641, 21, 4303, 712, 15873, 2007, 4644, 647, 7102, 3993, 15546, 7103, 11, 5728, 5748, 698, 12343, 5734, 15874, 659, 8789, 1236, 1499, 5767, 5374, 4299, 8962, 4848, 9147, 4846, 10258, 6029, 9631, 2]
 // Exports: default
 
-// Module 15855 (compareUserItems)
+// Module 15872 (compareUserItems)
 import TableRowInner from "TableRowInner";
 import getRelativeTimestamp from "getRelativeTimestamp";
 import { View } from "explicitContentFromProto";
 import _validate from "_validate";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
 import ME from "ME";
@@ -68,7 +68,7 @@ export default function FriendRequestsScreen() {
       return tmp3;
     });
   });
-  const NotificationCenterAckedBeforeId = stateFromStoresArray(3974).NotificationCenterAckedBeforeId;
+  const NotificationCenterAckedBeforeId = stateFromStoresArray(3993).NotificationCenterAckedBeforeId;
   const setting = NotificationCenterAckedBeforeId.useSetting();
   first = setting;
   let items1 = [stateFromStoresArray, setting];
@@ -96,9 +96,9 @@ export default function FriendRequestsScreen() {
   }), 2);
   first = tmp9[0];
   dependencyMap = tmp11;
-  let obj2 = stateFromStoresArray(12340);
+  let obj2 = stateFromStoresArray(12343);
   gameRelationshipsByType = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj3 = stateFromStoresArray(12340);
+  let obj3 = stateFromStoresArray(12343);
   gameRelationshipsByType1 = obj3.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   const items3 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
@@ -190,7 +190,7 @@ export default function FriendRequestsScreen() {
       return obj;
     }
   }, []);
-  let obj5 = stateFromStoresArray(1480);
+  let obj5 = stateFromStoresArray(1499);
   const navigation = obj5.useNavigation();
   const items9 = [first1, incomingData, outgoingData, callback, spam.length, ignoredUsers.length, navigation];
   let tmp26 = first1 === Outgoing.Outgoing;
@@ -289,11 +289,11 @@ export default function FriendRequestsScreen() {
   obj1[1] = intl2.string(stateFromStoresArray(1236).t.tWqcIF);
   items10[1] = obj1;
   obj[3] = items10;
-  const segmentedControlState = stateFromStoresArray(8956).useSegmentedControlState(obj);
+  const segmentedControlState = stateFromStoresArray(8962).useSegmentedControlState(obj);
   obj2 = { value: analyticsLocations, children: null };
   const items11 = [outgoingData(first(4848), { absolute: true }), ];
   obj3 = { style: tmp.container, children: null };
-  obj4 = { style: tmp.tabs, children: outgoingData(tmp4(9141).SegmentedControl, { state: segmentedControlState }) };
+  obj4 = { style: tmp.tabs, children: outgoingData(tmp4(9147).SegmentedControl, { state: segmentedControlState }) };
   const items12 = [outgoingData(pendingIncomingIds, obj4), , ];
   let tmp32Result = null;
   if (tmp28) {
@@ -325,11 +325,11 @@ export default function FriendRequestsScreen() {
     }
     const obj9 = { title: null, illustration: null, disableBackgroundOverlay: true };
     obj9[0] = stringResult;
-    WumpusCouchSpotIllustration = tmp4(6027).WumpusCouchSpotIllustration;
+    WumpusCouchSpotIllustration = tmp4(6029).WumpusCouchSpotIllustration;
     obj9[1] = WumpusCouchSpotIllustration;
-    obj8[1] = tmp32(tmp2(10253), obj9);
+    obj8[1] = tmp32(tmp2(10258), obj9);
     tmp32Result = tmp32(tmp33, obj8);
-    const tmp2Result = tmp2(10253);
+    const tmp2Result = tmp2(10258);
   } else {
     if (first1 === tmp25.Incoming) {
       outgoingSection = incomingSection;
@@ -338,7 +338,7 @@ export default function FriendRequestsScreen() {
     obj10[0] = outgoingSection;
     obj10[1] = callback2;
     obj10[2] = callback1;
-    items12[2] = tmp32(tmp4(9626).UsersFastList, obj10);
+    items12[2] = tmp32(tmp4(9631).UsersFastList, obj10);
     obj3[1] = items12;
     items11[1] = tmp31(tmp33, obj3);
     obj2[1] = items11;

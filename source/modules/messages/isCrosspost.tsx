@@ -1,10 +1,10 @@
-// Module ID: 8143
-// Function ID: 8144
+// Module ID: 8145
+// Function ID: 8146
 // Name: isCrosspost
-// Dependencies: [676, 1384, 2]
+// Dependencies: [676, 1403, 2]
 // Exports: default
 
-// Module 8143 (isCrosspost)
+// Module 8145 (isCrosspost)
 import ME from "ME";
 
 let c3;
@@ -16,8 +16,8 @@ const result = require("set").fileFinishedImporting("modules/messages/isCrosspos
 export default function isCrosspost(type) {
   let hasFlagResult = type.type === constants3.DEFAULT;
   if (hasFlagResult) {
-    hasFlagResult = require(1384) /* hasFlag */.hasFlag(type.flags, constants.IS_CROSSPOST);
-    const obj = require(1384) /* hasFlag */;
+    hasFlagResult = require(1403) /* hasFlag */.hasFlag(type.flags, constants.IS_CROSSPOST);
+    const obj = require(1403) /* hasFlag */;
   }
   if (hasFlagResult) {
     hasFlagResult = null != type.messageReference;

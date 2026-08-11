@@ -1,7 +1,7 @@
 // Module ID: 5335
 // Function ID: 5336
 // Name: getEmoji
-// Dependencies: [5176, 3942, 5336, 1351, 5337, 2]
+// Dependencies: [5176, 3961, 5336, 1370, 5337, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
 // Module 5335 (getEmoji)
@@ -28,8 +28,8 @@ function getEmoji(guildId) {
   } else {
     byName = null;
     if (byId != emojiName) {
-      byName = importDefault(3942).getByName(emojiName);
-      const obj2 = importDefault(3942);
+      byName = importDefault(3961).getByName(emojiName);
+      const obj2 = importDefault(3961);
     }
   }
 }
@@ -177,7 +177,7 @@ export const buildGuildProfileUpdateForServer = function buildGuildProfileUpdate
       }
       return tmp2;
     });
-    obj.traits = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    obj.traits = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
   }
   if (null != name.gameApplicationIds) {
     obj.game_application_ids = name.gameApplicationIds;

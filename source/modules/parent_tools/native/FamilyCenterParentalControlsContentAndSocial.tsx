@@ -1,10 +1,10 @@
-// Module ID: 14177
-// Function ID: 14178
+// Module ID: 14185
+// Function ID: 14186
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 676, 8082, 21, 10447, 1236, 1974, 13888, 2]
+// Dependencies: [19, 17, 676, 8084, 21, 10452, 1236, 1993, 13895, 2]
 // Exports: default
 
-// Module 14177 (FamilyCenterParentalControlsContentAndSocial)
+// Module 14185 (FamilyCenterParentalControlsContentAndSocial)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -15,13 +15,13 @@ const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsContentAndSocial.tsx");
 
 export default function FamilyCenterParentalControlsContentAndSocial() {
-  let obj = require(10447) /* createToggle */;
+  let obj = require(10452) /* createToggle */;
   obj = { sections: null };
   obj = { settings: items, subLabel: null };
   items = [MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS];
   const intl = require(1236) /* getSystemLocale */.intl;
   const obj1 = { learnMoreLink: null };
-  let obj4 = importDefault(1974);
+  let obj4 = importDefault(1993);
   obj1[0] = obj4.getArticleURL(HelpdeskArticles.EXPLICIT_MEDIA_REDACTION);
   obj[1] = intl.format(require(1236) /* getSystemLocale */.t.dliU4j, obj1);
   const items1 = [obj, , ];
@@ -42,6 +42,6 @@ export default function FamilyCenterParentalControlsContentAndSocial() {
   obj[0] = items1;
   obj4 = { children: null };
   const list = obj.createList(obj);
-  obj4[0] = jsx(importDefault(13888), { node: list });
+  obj4[0] = jsx(importDefault(13895), { node: list });
   return <View>{null}</View>;
 };

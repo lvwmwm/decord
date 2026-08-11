@@ -1,9 +1,9 @@
-// Module ID: 15499
-// Function ID: 15500
+// Module ID: 15516
+// Function ID: 15517
 // Name: YouBarMaskedBackground
-// Dependencies: [19, 17, 14340, 21, 4303, 712, 5310, 4725, 689, 4005, 14425, 4036, 4713, 2]
+// Dependencies: [19, 17, 14348, 21, 4303, 712, 5310, 4725, 689, 4024, 14433, 4042, 4713, 2]
 
-// Module 15499 (YouBarMaskedBackground)
+// Module 15516 (YouBarMaskedBackground)
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 import jsxProd from "jsxProd";
@@ -49,11 +49,11 @@ function YouBarAnimatedBackground(arg0) {
   let _require;
   let importDefault;
   ({ barWidth, backgroundColor } = arg0);
-  let obj = _require(4005);
+  let obj = _require(4024);
   const token = obj.useToken(importDefault(712).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp3 = importDefault(14425)(token);
+  const tmp3 = importDefault(14433)(token);
   _require = tmp3;
-  const tmp4 = importDefault(14425)(token, YOU_BAR_HEIGHT / 2);
+  const tmp4 = importDefault(14433)(token, YOU_BAR_HEIGHT / 2);
   importDefault = tmp4;
   const tmp = callback3();
   const fn = function u() {
@@ -69,9 +69,9 @@ function YouBarAnimatedBackground(arg0) {
   fn.__closure = obj;
   fn.__workletHash = 14606701040012;
   fn.__initData = closure_10;
-  const animatedStyle = _require(4036).useAnimatedStyle(fn);
+  const animatedStyle = _require(4042).useAnimatedStyle(fn);
   const style = [{ position: "absolute" }, tmp.youRowFloating, { width: barWidth, height: YOU_BAR_HEIGHT, backgroundColor }, { borderTopRightRadius: 0, borderTopLeftRadius: 0 }, animatedStyle];
-  return callback(importDefault(4036).View, { style });
+  return callback(importDefault(4042).View, { style });
 }
 const YOU_BAR_HEIGHT = CONNECTION_BANNER_HEIGHT.YOU_BAR_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = CONNECTION_BANNER_HEIGHT.YOU_BAR_SPRING_CONFIG;
@@ -87,7 +87,7 @@ const memoResult = require("noop").memo(function YouBarBackground(barWidth) {
   let isLargeAvatar;
   barWidth = barWidth.barWidth;
   ({ hasNameplate, isLargeAvatar, avatarSize } = barWidth);
-  let obj = require(4005) /* map */;
+  let obj = require(4024) /* map */;
   let token = obj.useToken(importDefault(712).colors.MOBILE_FLOATINGBAR_BACKGROUND);
   if (hasNameplate) {
     token = obj2.useToken(importDefault(712).colors.MOBILE_FLOATINGBAR_BACKGROUND_NAMEPLATE);

@@ -1,10 +1,10 @@
-// Module ID: 9355
-// Function ID: 9356
+// Module ID: 9361
+// Function ID: 9362
 // Name: SourceIcon
-// Dependencies: [19, 17, 21, 4303, 712, 4002, 8767, 4013, 8832, 4005, 9356, 1236, 1351, 9229, 4823, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4021, 8773, 4031, 8838, 4024, 9362, 1236, 1370, 9235, 4823, 2]
 // Exports: default
 
-// Module 9355 (SourceIcon)
+// Module 9361 (SourceIcon)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ function SourceIcon(toastText) {
   };
   obj = { color: null, size: "md" };
   obj[0] = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
-  obj[5] = callback(toastText(8767).HeartIcon, obj);
+  obj[5] = callback(toastText(8773).HeartIcon, obj);
   return callback(closure_3, obj);
 }
 ({ Pressable: c3, View: c4, StyleSheet } = get_ActivityIndicator);
@@ -78,11 +78,11 @@ export default function WishlistItemCardBase(username) {
   }
   ({ overlay, accessibilityHidden } = username);
   const tmp = createCacheKey();
-  let obj = require(4013) /* ManaContext */;
+  let obj = require(4031) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ primaryColor, theme, secondaryColor } = themeContext);
-  let obj1 = require(8832) /* useUserProfileColors */;
-  let obj2 = require(4005) /* map */;
+  let obj1 = require(8838) /* useUserProfileColors */;
+  let obj2 = require(4024) /* map */;
   let containerBackground = obj2.useToken(importDefault(712).colors.BG_SURFACE_RAISED);
   if (null != primaryColor) {
     containerBackground = obj1.useUserProfileColors({ theme, primaryColor, secondaryColor }).containerBackground;
@@ -109,14 +109,14 @@ export default function WishlistItemCardBase(username) {
       stringResult = intl2.string(tmp2(1236).t.wu4gyV);
     }
   }
-  let tmp14Result1 = source === tmp2(9356).WishlistItemSource.WISHLIST;
+  let tmp14Result1 = source === tmp2(9362).WishlistItemSource.WISHLIST;
   items1[1] = stringResult;
   let tmp10 = null;
   if (tmp14Result1) {
     tmp10 = formatToPlainStringResult;
   }
   items1[2] = tmp10;
-  const found = items1.filter(tmp2(1351).isNotNullish);
+  const found = items1.filter(tmp2(1370).isNotNullish);
   const joined = found.join(", ");
   const items2 = [tmp.previewWrap, ];
   let dimmedPreview = overlay === tmp7.OWNED;
@@ -133,7 +133,7 @@ export default function WishlistItemCardBase(username) {
     const obj3 = { color: null, size: "custom", style: null };
     obj3[0] = tmp5(712).colors.WHITE;
     obj3[2] = { width: 40, height: 40 };
-    obj2[4] = tmp14(tmp2(9229).CheckmarkLargeBoldIcon, obj3);
+    obj2[4] = tmp14(tmp2(9235).CheckmarkLargeBoldIcon, obj3);
     tmp14Result = tmp14(tmp15, obj2);
   }
   items3[1] = tmp14Result;

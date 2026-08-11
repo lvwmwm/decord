@@ -1,10 +1,10 @@
-// Module ID: 9473
-// Function ID: 9474
+// Module ID: 9479
+// Function ID: 9480
 // Name: DISPLAY_NAME_STYLES_EFFECT_NAMES
-// Dependencies: [19, 1916, 2642, 9474, 1236, 1917, 2]
+// Dependencies: [19, 1935, 2661, 9480, 1236, 1936, 2]
 // Exports: useDisplayNameStylesEffectConfig
 
-// Module 9473 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
+// Module 9479 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
 import noop from "noop";
 
 const require = arg1;
@@ -16,13 +16,13 @@ obj[require("DisplayNameEffect").DisplayNameEffect.TOON] = require("messagesProx
 obj[require("DisplayNameEffect").DisplayNameEffect.POP] = require("messagesProxy").cjQOKb;
 obj[require("DisplayNameEffect").DisplayNameEffect.GUMMY] = require("messagesProxy").x9Gtie;
 obj[require("DisplayNameEffect").DisplayNameEffect.PRISM] = require("messagesProxy")["/M7psm"];
-let closure_5 = { [arg1(1916).DisplayNameEffect.SOLID]: 3, [arg1(1916).DisplayNameEffect.GRADIENT]: 2.5, [arg1(1916).DisplayNameEffect.GLOW]: 2.5, [arg1(1916).DisplayNameEffect.PRISM]: 2.5, [arg1(1916).DisplayNameEffect.NEON]: 3, [arg1(1916).DisplayNameEffect.TOON]: 3, [arg1(1916).DisplayNameEffect.POP]: 3, [arg1(1916).DisplayNameEffect.GUMMY]: 3 };
+let closure_5 = { [arg1(1935).DisplayNameEffect.SOLID]: 3, [arg1(1935).DisplayNameEffect.GRADIENT]: 2.5, [arg1(1935).DisplayNameEffect.GLOW]: 2.5, [arg1(1935).DisplayNameEffect.PRISM]: 2.5, [arg1(1935).DisplayNameEffect.NEON]: 3, [arg1(1935).DisplayNameEffect.TOON]: 3, [arg1(1935).DisplayNameEffect.POP]: 3, [arg1(1935).DisplayNameEffect.GUMMY]: 3 };
 const result = require("messagesProxy").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEffectConfigs.tsx");
 
 export const DISPLAY_NAME_STYLES_EFFECT_NAMES = obj;
 export const useDisplayNameStylesEffectConfig = function useDisplayNameStylesEffectConfig(effectId) {
   let closure_0 = effectId;
-  const tmp = importDefault(9474)()[effectId];
+  const tmp = importDefault(9480)()[effectId];
   importDefault = tmp;
   const items = [effectId, tmp];
   return React.useMemo(() => {

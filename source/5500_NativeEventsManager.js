@@ -1,7 +1,7 @@
 // Module ID: 5500
 // Function ID: 5501
 // Name: NativeEventsManager
-// Dependencies: [109, 19, 17, 21, 5470, 1741, 5442]
+// Dependencies: [109, 19, 17, 21, 5470, 1760, 5442]
 
 // Module 5500 (NativeEventsManager)
 import _objectWithoutProperties from "_objectWithoutProperties";

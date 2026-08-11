@@ -1,7 +1,7 @@
 // Module ID: 5865
 // Function ID: 5866
 // Name: _safeTransitionTo
-// Dependencies: [5, 1891, 676, 4495, 5866, 1222, 5867, 4643, 1236, 5894, 2384, 5930, 2]
+// Dependencies: [5, 1910, 676, 4495, 5866, 1222, 5867, 4643, 1236, 5894, 2403, 5932, 2]
 // Exports: default
 
 // Module 5865 (_safeTransitionTo)
@@ -140,7 +140,7 @@ function _safeTransitionTo() {
           }
           obj7 = callback2(closure_2[11]);
           if (closure_2 == null) {
-            closure_2 = { guildId: "Promise" };
+            closure_2 = { guildId: "r" };
           }
           c5 = 2;
           c6 = 1;

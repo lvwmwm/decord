@@ -1,12 +1,12 @@
-// Module ID: 12462
-// Function ID: 12463
+// Module ID: 12465
+// Function ID: 12466
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [19, 3938, 1903, 589, 12340, 2]
+// Dependencies: [19, 3957, 1922, 589, 12343, 2]
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 12462 (useUserProfileGameFriendApplicationIds)
+// Module 12465 (useUserProfileGameFriendApplicationIds)
 import noop from "noop";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -17,7 +17,7 @@ export const useUserProfileGameFriendApplicationIds = function useUserProfileGam
   userId = userId.userId;
   let stateFromStores;
   let gameFriendsForUser;
-  const items = [upsertRelationship, mergeGuildAvatar];
+  const items = [markAllUserIdListsStale, mergeGuildAvatar];
   stateFromStores = userId(stateFromStores[3]).useStateFromStores(items, () => {
     let isFriendResult = outer1_3.isFriend(userId);
     if (!isFriendResult) {

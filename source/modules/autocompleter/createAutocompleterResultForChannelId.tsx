@@ -1,12 +1,12 @@
-// Module ID: 7319
-// Function ID: 7320
+// Module ID: 7320
+// Function ID: 7321
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [1372, 3938, 1903, 5227, 676, 4494, 2]
+// Dependencies: [1391, 3957, 1922, 5227, 676, 4494, 2]
 // Exports: default
 
-// Module 7319 (createAutocompleterResultForChannelId)
+// Module 7320 (createAutocompleterResultForChannelId)
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ChannelTypes } from "ME";
 
@@ -25,7 +25,7 @@ export default function createAutocompleterResultForChannelId(arg0, arg1, closur
   }
   let tmp = closure_7;
   if (closure_7 === undefined) {
-    tmp = upsertRelationship;
+    tmp = markAllUserIdListsStale;
   }
   const channel = obj.getChannel(arg0);
   if (null == channel) {

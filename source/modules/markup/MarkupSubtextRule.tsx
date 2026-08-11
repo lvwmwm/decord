@@ -1,25 +1,34 @@
 // Module ID: 4762
 // Function ID: 4763
-// Dependencies: [4000, 2]
+// Dependencies: [4019, 2]
 
 // Module 4762
 const re2 = /\n$/;
-const re3 = /^ *-# +((?!(-#)+)[^\n]+?) *(?:\n|$)/;
+const re3 = /^ *-# +((?!-#)[^\n]+)(?:\n|$)/;
 let obj = {
   order: require("t").defaultRules.heading.order,
   requiredFirstCharacters: ["-"],
-  match(arg0, arg1, str) {
-    if (null != str) {
-      if ("" !== str) {
-        let tmp2 = null;
+  match(arg0, allowSubtext, str) {
+    let tmp = null;
+    if (false !== allowSubtext.allowSubtext) {
+      if (null != str) {
+        if ("" !== str) {
+          let tmp4 = null;
+        }
+        tmp = tmp4;
       }
-      return tmp2;
+      tmp4 = require(4019) /* t */.anyScopeRegex(closure_3)(arg0, allowSubtext, str);
+      const obj = require(4019) /* t */;
     }
-    tmp2 = require(4000) /* t */.anyScopeRegex(closure_3)(arg0, arg1, str);
+    return tmp;
   },
-  parse(arg0, arg1, inline) {
-    const obj = { content: null };
-    obj[0] = require(4000) /* t */.parseInline(arg1, arg0[1].trim(), inline);
+  parse(arg0, arg1, arg2) {
+    let obj = { content: null };
+    obj = {};
+    const trimmed = arg0[1].trim();
+    const merged = Object.assign(arg2);
+    obj.allowSubtext = false;
+    obj[0] = require(4019) /* t */.parseInline(arg1, trimmed, obj);
     return obj;
   }
 };

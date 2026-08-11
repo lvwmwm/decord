@@ -1,7 +1,7 @@
 // Module ID: 4636
 // Function ID: 4637
 // Name: getEffectiveVideoProvider
-// Dependencies: [676, 4637, 11, 1384, 12, 3883, 688, 4525, 2]
+// Dependencies: [676, 4637, 11, 1403, 12, 3902, 688, 4525, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
 // Module 4636 (getEffectiveVideoProvider)
@@ -83,7 +83,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
   }
   if (null != footer.timestamp) {
     const _Date = Date;
-    let tmpResult = tmp(3883);
+    let tmpResult = tmp(3902);
     const date = new Date(footer.timestamp);
     obj.timestamp = tmpResult(date);
   }
@@ -105,21 +105,21 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
           if (flags == null) {
             num = 0;
           }
-          obj2[7] = obj6(1384).hasFlag(num, constants.IS_ANIMATED);
+          obj2[7] = obj6(1403).hasFlag(num, constants.IS_ANIMATED);
           if (flags == null) {
             flags = 0;
           }
           obj2[8] = flags;
           obj2[9] = content_type;
           obj.thumbnail = obj2;
-          const obj19 = obj6(1384);
+          const obj19 = obj6(1403);
         }
       }
       const thumbnail = footer.thumbnail;
       ({ flags: flags2, content_type: content_type2 } = thumbnail);
       const obj3 = { url: null, proxyURL: null, width: null, height: null, placeholder: null, placeholderVersion: null, description: null, srcIsAnimated: null, flags: null, contentType: null };
       ({ url: obj7[0], proxy_url: obj7[1], width: obj7[2], height: obj7[3], placeholder: obj7[4], placeholder_version: obj7[5], description: obj7[6] } = thumbnail);
-      let obj7 = obj6(1384);
+      let obj7 = obj6(1403);
       let num2 = flags2;
       if (flags2 == null) {
         num2 = 0;
@@ -149,14 +149,14 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     if (flags3 == null) {
       num4 = 0;
     }
-    obj4[7] = obj6(1384).hasFlag(num4, constants.IS_ANIMATED);
+    obj4[7] = obj6(1403).hasFlag(num4, constants.IS_ANIMATED);
     if (flags3 == null) {
       flags3 = 0;
     }
     obj4[8] = flags3;
     obj4[9] = content_type3;
     obj.image = obj4;
-    const obj10 = obj6(1384);
+    const obj10 = obj6(1403);
   }
   if (null != footer.video) {
     let tmp20 = null == obj.thumbnail && null != footer.video.proxy_url;
@@ -230,14 +230,14 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
       if (flags4 == null) {
         num8 = 0;
       }
-      obj7[7] = obj6(1384).hasFlag(num8, constants.IS_ANIMATED);
+      obj7[7] = obj6(1403).hasFlag(num8, constants.IS_ANIMATED);
       if (flags4 == null) {
         flags4 = 0;
       }
       obj7[8] = flags4;
       obj7[9] = content_type4;
       obj.video = obj7;
-      const obj16 = obj6(1384);
+      const obj16 = obj6(1403);
     }
   }
   if (set.has(obj.type)) {

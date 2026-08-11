@@ -1,10 +1,10 @@
-// Module ID: 12662
-// Function ID: 12663
+// Module ID: 12666
+// Function ID: 12667
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 505, 21, 4303, 712, 1236, 2384, 4299, 4714, 1297, 2]
+// Dependencies: [19, 17, 505, 21, 4303, 712, 1236, 2403, 4299, 4714, 1297, 2]
 // Exports: default
 
-// Module 12662 (InAppReportsBottomButton)
+// Module 12666 (InAppReportsBottomButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,7 +40,7 @@ export default function InAppReportsBottomButton(button) {
       const intl2 = tmp17(1236).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        let stringResult = string(importDefault(2384).ZUyreS);
+        let stringResult = string(importDefault(2403).ZUyreS);
       } else {
         const intl3 = tmp17(1236).intl;
         const stringResult1 = string(tmp17(1236).t["G+vU89"]);
@@ -61,7 +61,7 @@ export default function InAppReportsBottomButton(button) {
       const intl4 = tmp17(1236).intl;
       const string2 = intl4.string;
       if (isModeratorReport) {
-        let string2Result = string2(importDefault(2384).psKFdJ);
+        let string2Result = string2(importDefault(2403).psKFdJ);
       } else {
         string2Result = string2(tmp17(1236).t.h6D8Vy);
       }

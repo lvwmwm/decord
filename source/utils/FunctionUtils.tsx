@@ -1,10 +1,10 @@
-// Module ID: 1970
-// Function ID: 1971
+// Module ID: 1989
+// Function ID: 1990
 // Name: areArraysShallowlyEqual
 // Dependencies: [2]
 // Exports: areArraysShallowlyEqual, cachedFunction, clearObject, isPlainObjectEmpty
 
-// Module 1970 (areArraysShallowlyEqual)
+// Module 1989 (areArraysShallowlyEqual)
 const result = require("set").fileFinishedImporting("utils/FunctionUtils.tsx");
 
 export const areArraysShallowlyEqual = function areArraysShallowlyEqual(arg0, arg1) {

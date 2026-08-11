@@ -1,7 +1,7 @@
 // Module ID: 5744
 // Function ID: 5745
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 676, 21, 4239, 5000, 1236, 5745, 5746, 698, 4498, 1416, 4153, 1297, 4247, 5743, 2]
+// Dependencies: [5, 19, 676, 21, 4239, 5000, 1236, 5745, 5746, 698, 4498, 1435, 1363, 1297, 4247, 5743, 2]
 // Exports: default
 
 // Module 5744 (ProviderConnectionCard)

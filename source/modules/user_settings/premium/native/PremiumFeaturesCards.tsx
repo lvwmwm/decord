@@ -1,10 +1,10 @@
-// Module ID: 8623
-// Function ID: 8624
+// Module ID: 8629
+// Function ID: 8630
 // Name: PremiumFeaturesCards
-// Dependencies: [19, 17, 1905, 21, 4303, 8624, 2]
+// Dependencies: [19, 17, 1924, 21, 4303, 8630, 2]
 // Exports: default
 
-// Module 8623 (PremiumFeaturesCards)
+// Module 8629 (PremiumFeaturesCards)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";

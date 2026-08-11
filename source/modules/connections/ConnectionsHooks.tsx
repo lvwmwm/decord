@@ -1,10 +1,10 @@
-// Module ID: 6962
-// Function ID: 6963
+// Module ID: 6965
+// Function ID: 6966
 // Name: PlatformTypes
-// Dependencies: [32, 19, 4998, 1903, 676, 6963, 687, 589, 6965, 12, 5000, 2]
+// Dependencies: [32, 19, 4998, 1922, 676, 6966, 687, 589, 6968, 12, 5000, 2]
 // Exports: useEmptyStatePlatforms, useLegacyPlatformType, usePlatformAllowed, usePlatforms
 
-// Module 6962 (PlatformTypes)
+// Module 6965 (PlatformTypes)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import set from "set";

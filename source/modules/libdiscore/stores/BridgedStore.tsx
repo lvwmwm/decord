@@ -1,10 +1,10 @@
-// Module ID: 1896
-// Function ID: 1897
+// Module ID: 1915
+// Function ID: 1916
 // Name: ensureValidMode
-// Dependencies: [1897, 2]
+// Dependencies: [1916, 2]
 // Exports: ensureValidMode
 
-// Module 1896 (ensureValidMode)
+// Module 1915 (ensureValidMode)
 const result = require("set").fileFinishedImporting("modules/libdiscore/stores/BridgedStore.tsx");
 
 export const ensureValidMode = function ensureValidMode(arg0) {
@@ -12,7 +12,7 @@ export const ensureValidMode = function ensureValidMode(arg0) {
   if ("typescript" === arg0) {
     str = arg0;
   } else {
-    const obj = require(1897) /* fluxApi */;
+    const obj = require(1916) /* fluxApi */;
   }
   return str;
 };

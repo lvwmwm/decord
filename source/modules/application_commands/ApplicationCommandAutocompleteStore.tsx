@@ -1,9 +1,9 @@
-// Module ID: 7238
-// Function ID: 7239
+// Module ID: 7239
+// Function ID: 7240
 // Name: handleInit
-// Dependencies: [7239, 676, 500, 1935, 4498, 589, 709, 2]
+// Dependencies: [7240, 676, 500, 1954, 4498, 589, 709, 2]
 
-// Module 7238 (handleInit)
+// Module 7239 (handleInit)
 import handleInit from "handleInit";
 import { AnalyticEvents } from "ME";
 import set from "set";
@@ -304,7 +304,7 @@ set = {
         if (activeOption != null) {
           type = activeOption.type;
         }
-        tmp29 = type === _require(1935).ApplicationCommandOptionType.INTEGER;
+        tmp29 = type === _require(1954).ApplicationCommandOptionType.INTEGER;
       }
       _require = tmp29;
       let mapped;

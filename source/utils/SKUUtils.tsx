@@ -1,10 +1,10 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 9319
+// Function ID: 9320
 // Name: GameGenres
-// Dependencies: [32, 676, 4129, 1236, 4541, 500, 3883, 2]
+// Dependencies: [32, 676, 4131, 1236, 4541, 500, 3902, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 9313 (GameGenres)
+// Module 9319 (GameGenres)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 
@@ -28,7 +28,7 @@ const items = [["YYYY-MM-DD", "MMMM DD, Y"], ["YYYY-MM", "MMMM Y"], ["MM-DD", "M
 let result = require("matchPath").fileFinishedImporting("utils/SKUUtils.tsx");
 
 export const getSKUIdFromURL = function getSKUIdFromURL(pathname) {
-  let obj = require(4129) /* matchPath */;
+  let obj = require(4131) /* matchPath */;
   obj = { path: closure_6.APPLICATION_STORE_LISTING_SKU(":skuId", ":slug") };
   const matchPathResult = obj.matchPath(pathname, obj);
   let skuId = null;
@@ -326,7 +326,7 @@ export const getReadablePreorderReleaseDate = function getReadablePreorderReleas
     let num = 0;
     if (0 < items.length) {
       [tmp3, tmp4] = callback(items[num], 2);
-      const obj = importDefault(3883)(preorderApproximateReleaseDate, tmp3, true);
+      const obj = importDefault(3902)(preorderApproximateReleaseDate, tmp3, true);
       while (!obj.isValid()) {
         num = num + 1;
       }

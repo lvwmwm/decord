@@ -1,7 +1,7 @@
 // Module ID: 5138
 // Function ID: 5139
 // Name: getUnitId
-// Dependencies: [1349, 2]
+// Dependencies: [1368, 2]
 
 // Module 5138 (getUnitId)
 const obj = { 1: null, 2: { enabled: true }, 3: { enabled: true, disableUI: true }, 4: { enabled: true, disableUI: true, swallowVolumeOnlySpeakingEvents: true } };

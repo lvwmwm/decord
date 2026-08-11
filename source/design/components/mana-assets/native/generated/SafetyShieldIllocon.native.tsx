@@ -1,10 +1,10 @@
-// Module ID: 6678
-// Function ID: 6679
+// Module ID: 6680
+// Function ID: 6681
 // Name: SafetyShieldIllocon
-// Dependencies: [21, 5268, 6679, 2]
+// Dependencies: [21, 5268, 6681, 2]
 // Exports: SafetyShieldIllocon
 
-// Module 6678 (SafetyShieldIllocon)
+// Module 6680 (SafetyShieldIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SafetyShieldIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const SafetyShieldIllocon = function SafetyShieldIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6679);
+  obj[0] = importDefault(6681);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

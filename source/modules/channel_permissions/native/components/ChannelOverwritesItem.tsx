@@ -1,10 +1,10 @@
-// Module ID: 9005
-// Function ID: 9006
+// Module ID: 9011
+// Function ID: 9012
 // Name: RemoveIcon
-// Dependencies: [19, 17, 1903, 7781, 21, 4303, 4647, 1236, 4313, 4001, 4846, 5996, 5374, 9006, 8997, 4299, 1297, 9007, 9008, 4019, 7969, 2]
+// Dependencies: [19, 17, 1922, 7783, 21, 4303, 4647, 1236, 4313, 4020, 4846, 5998, 5374, 9012, 9003, 4299, 1297, 9013, 9014, 4032, 7971, 2]
 // Exports: ChannelOverwritesCheckboxItem
 
-// Module 9005 (RemoveIcon)
+// Module 9011 (RemoveIcon)
 import "useCheckboxA11yNative";
 import { View } from "registerAsset";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -60,7 +60,7 @@ function RemoveIcon(item) {
     }
     obj = { style: null };
     obj[0] = prop;
-    obj[4] = closure_7(item(5996).CircleXIcon, obj);
+    obj[4] = closure_7(item(5998).CircleXIcon, obj);
     tmp3Result = tmp3(item(4846).PressableOpacity, obj);
   }
   return tmp3Result;
@@ -83,11 +83,11 @@ function RoleItem(arg0) {
   ({ disabled, channelId, showType, showRemove, start, end, onPress, accessibilityRole, accessibilityState, accessible } = arg0);
   let obj = { icon: null, label: null, subLabel: null, start: null, end: null, trailing: null, onPress: null, disabled: null, accessibilityRole: null, accessibilityState: null, accessible: null };
   obj = { size: "lg", color: item.colorString };
-  obj[0] = callback(require(9006) /* ShieldUserIcon */.ShieldUserIcon, obj);
+  obj[0] = callback(require(9012) /* ShieldUserIcon */.ShieldUserIcon, obj);
   obj[1] = item.name;
   if (showType) {
-    subLabel = importAll(8997).getRowTypeLabel(item.rowType);
-    const obj3 = importAll(8997);
+    subLabel = importAll(9003).getRowTypeLabel(item.rowType);
+    const obj3 = importAll(9003);
   }
   obj[2] = subLabel;
   obj[3] = start;
@@ -132,7 +132,7 @@ function MemberItem(arg0) {
   if (item.rowType === RowType.OWNER) {
     obj = { size: null, source: null, disableColor: true, style: null };
     obj[0] = tmp5(1297).Icon.Sizes.REFRESH_SMALL_16;
-    obj[1] = importDefault(9007);
+    obj[1] = importDefault(9013);
     obj[3] = tmp.ownerIcon;
     tmp4Result = tmp4(tmp5(1297).Icon, obj);
   }
@@ -171,7 +171,7 @@ function EmptyRoleItem(item) {
   item = item.item;
   let obj = { icon: null, label: null };
   obj = { source: null, color: null, size: null, style: null };
-  obj[0] = importDefault(9008);
+  obj[0] = importDefault(9014);
   obj[1] = item.colorString;
   obj[2] = require(1297) /* Button */.IconSizes.MEDIUM;
   obj[3] = callback2().roleIcon;
@@ -228,7 +228,7 @@ export const ChannelOverwritesCheckboxItem = function ChannelOverwritesCheckboxI
   let accessibilityState;
   checked = checked.checked;
   const merged = Object.assign(checked, Object.create(null));
-  let obj = require(4019) /* useCheckboxA11yNative */;
+  let obj = require(4032) /* useCheckboxA11yNative */;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked });
   obj = {};
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
@@ -236,6 +236,6 @@ export const ChannelOverwritesCheckboxItem = function ChannelOverwritesCheckboxI
   obj.accessible = true;
   obj.accessibilityRole = accessibilityRole;
   obj.accessibilityState = accessibilityState;
-  obj.trailing = callback(require(7969) /* FormCheckbox */.FormCheckbox, { checked });
+  obj.trailing = callback(require(7971) /* FormCheckbox */.FormCheckbox, { checked });
   return callback(ChannelOverwritesItem, obj);
 };

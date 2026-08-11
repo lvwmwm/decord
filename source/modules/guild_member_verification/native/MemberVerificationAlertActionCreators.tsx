@@ -1,10 +1,10 @@
-// Module ID: 8419
-// Function ID: 8420
+// Module ID: 8425
+// Function ID: 8426
 // Name: openMemberVerificationSuccessAlert
-// Dependencies: [19, 21, 1872, 4643, 8420, 1988, 8422, 8426, 4714, 1236, 8428, 8431, 8433, 2]
+// Dependencies: [19, 21, 1891, 4643, 8426, 2007, 8428, 8432, 4714, 1236, 8434, 8437, 8439, 2]
 // Exports: closeMemberVerificationAlert, openMemberVerificationCancelPendingAlert, openMemberVerificationIncompleteAlert, openMemberVerificationPendingAlert, openMemberVerificationRejectedAlert, openMemberVerificationSuccessAlert, openMemberVerificationUpdateAlert
 
-// Module 8419 (openMemberVerificationSuccessAlert)
+// Module 8425 (openMemberVerificationSuccessAlert)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ let result = require("dismissGlobalKeyboard").fileFinishedImporting("modules/gui
 export const openMemberVerificationSuccessAlert = function openMemberVerificationSuccessAlert(guildId, arg1) {
   let closure_0 = guildId;
   const importDefault = arg1;
-  let obj = importAll(1872);
+  let obj = importAll(1891);
   const result = obj.dismissGlobalKeyboard();
   obj = {
     importer() {
@@ -35,7 +35,7 @@ export const openMemberVerificationSuccessAlert = function openMemberVerificatio
 export const openMemberVerificationPendingAlert = function openMemberVerificationPendingAlert(guildId) {
   let closure_0 = guildId;
   const importDefault = arg1;
-  let obj = importAll(1872);
+  let obj = importAll(1891);
   const result = obj.dismissGlobalKeyboard();
   obj = {
     importer() {
@@ -65,7 +65,7 @@ export const openMemberVerificationCancelPendingAlert = function openMemberVerif
   let importDefault;
   let require;
   ({ guildId: require, confirmText: importDefault, subtitleText: importAll, onClose: dependencyMap } = arg0);
-  let obj = importAll(1872);
+  let obj = importAll(1891);
   const result = obj.dismissGlobalKeyboard();
   obj = {
     importer() {
@@ -147,8 +147,8 @@ export const openMemberVerificationRejectedAlert = function openMemberVerificati
     obj[1] = fn;
   }
   dependencyMap = jsx(onClose(4714).Button, obj);
-  let result = fn(1872).dismissGlobalKeyboard();
-  let obj3 = fn(1872);
+  let result = fn(1891).dismissGlobalKeyboard();
+  let obj3 = fn(1891);
   const tmp = jsx;
   obj = {
     importer() {
@@ -174,7 +174,7 @@ export const openMemberVerificationRejectedAlert = function openMemberVerificati
   onClose(4643).openLazy(obj);
 };
 export const openMemberVerificationUpdateAlert = function openMemberVerificationUpdateAlert() {
-  let obj = importAll(1872);
+  let obj = importAll(1891);
   const result = obj.dismissGlobalKeyboard();
   obj = {
     importer() {
@@ -200,7 +200,7 @@ export function closeMemberVerificationAlert(arg0) {
 }
 export const openMemberVerificationIncompleteAlert = function openMemberVerificationIncompleteAlert(closure_0) {
   const importDefault = arg1;
-  let obj = importAll(1872);
+  let obj = importAll(1891);
   const result = obj.dismissGlobalKeyboard();
   obj = {
     isDismissable: true,

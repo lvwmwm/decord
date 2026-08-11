@@ -1,10 +1,10 @@
-// Module ID: 8431
-// Function ID: 8432
+// Module ID: 8437
+// Function ID: 8438
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 17, 676, 21, 4303, 4732, 1236, 3998, 8432, 4299, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 4732, 1236, 4017, 8438, 4299, 2]
 // Exports: default
 
-// Module 8431 (MemberVerificationAlertUpdate)
+// Module 8437 (MemberVerificationAlertUpdate)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { DownloadLinks } from "ME";
@@ -30,7 +30,7 @@ export default function MemberVerificationAlertUpdate(onClose) {
     return callback(table[7]).openURL(constants.IOS);
   };
   obj.onCancel = onClose.onClose;
-  obj = { source: importDefault(8432), style: tmp.headerImage };
+  obj = { source: importDefault(8438), style: tmp.headerImage };
   const items = [callback(Image, obj), , ];
   obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;

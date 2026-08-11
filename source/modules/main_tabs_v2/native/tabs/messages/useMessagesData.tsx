@@ -1,15 +1,15 @@
-// Module ID: 15181
-// Function ID: 15182
+// Module ID: 15190
+// Function ID: 15191
 // Name: useMessagesData
-// Dependencies: [32, 19, 4994, 1218, 3938, 5840, 589, 15182, 3974, 2]
+// Dependencies: [32, 19, 4994, 1218, 3957, 5840, 589, 15191, 3993, 2]
 // Exports: default
 
-// Module 15181 (useMessagesData)
+// Module 15190 (useMessagesData)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import fetchFingerprint from "fetchFingerprint";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import makeSortedChannel from "makeSortedChannel";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 14478
-// Function ID: 14479
+// Module ID: 14486
+// Function ID: 14487
 // Name: BenefitRow
-// Dependencies: [19, 17, 1372, 21, 4303, 3942, 14476, 1297, 4299, 589, 4494, 1236, 4764, 2]
+// Dependencies: [19, 17, 1391, 21, 4303, 3961, 14484, 1297, 4299, 589, 4494, 1236, 4764, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 14478 (BenefitRow)
+// Module 14486 (BenefitRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -22,7 +22,7 @@ function BenefitRow(description) {
   ({ emojiId, guildId, title } = description);
   const tmp = callback3();
   let obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(14476), { guildId, id: emojiId, size: 22, fontSize: 18 }), callback(require(1297) /* Button */.Spacer, { size: 16 }), ];
+  const items = [callback(importDefault(14484), { guildId, id: emojiId, size: 22, fontSize: 18 }), callback(require(1297) /* Button */.Spacer, { size: 16 }), ];
   obj = { style: tmp.textContainer, children: null };
   const items1 = [title, ];
   let tmp4Result = null;
@@ -73,8 +73,8 @@ export const ChannelBenefitRow = function ChannelBenefitRow(benefit) {
   } else {
     str = "";
     if (null != benefit.emoji_name) {
-      str = importDefault(3942).convertSurrogateToName(benefit.emoji_name, false);
-      const tmp5Result = importDefault(3942);
+      str = importDefault(3961).convertSurrogateToName(benefit.emoji_name, false);
+      const tmp5Result = importDefault(3961);
     }
   }
   return callback(BenefitRow, { emojiId: str, guildId: benefit.guildId, title: tmp8, description: benefit.description });
@@ -86,7 +86,7 @@ export const IntangibleBenefitRow = function IntangibleBenefitRow(benefit) {
   } else {
     str = "";
     if (null != benefit.emoji_name) {
-      let obj = importDefault(3942);
+      let obj = importDefault(3961);
       str = obj.convertSurrogateToName(benefit.emoji_name, false);
     }
   }

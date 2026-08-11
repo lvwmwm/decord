@@ -1,9 +1,9 @@
-// Module ID: 11011
-// Function ID: 11012
+// Module ID: 11016
+// Function ID: 11017
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 11011 (enforcing)
+// Module 11016 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeChatModule");

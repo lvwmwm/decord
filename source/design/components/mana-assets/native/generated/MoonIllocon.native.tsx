@@ -1,10 +1,10 @@
-// Module ID: 6522
-// Function ID: 6523
+// Module ID: 6524
+// Function ID: 6525
 // Name: MoonIllocon
-// Dependencies: [21, 5268, 6523, 2]
+// Dependencies: [21, 5268, 6525, 2]
 // Exports: MoonIllocon
 
-// Module 6522 (MoonIllocon)
+// Module 6524 (MoonIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MoonIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const MoonIllocon = function MoonIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6523);
+  obj[0] = importDefault(6525);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

@@ -1,10 +1,10 @@
-// Module ID: 6005
-// Function ID: 6006
+// Module ID: 6007
+// Function ID: 6008
 // Name: useBottomSheetKeyboardHandling
 // Dependencies: [19, 5399, 2]
 // Exports: default
 
-// Module 6005 (useBottomSheetKeyboardHandling)
+// Module 6007 (useBottomSheetKeyboardHandling)
 import noop from "noop";
 
 const require = arg1;

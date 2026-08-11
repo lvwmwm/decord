@@ -1,9 +1,9 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 14552
+// Function ID: 14553
 // Name: toggle
-// Dependencies: [4119, 1303, 1302, 1340, 8082, 676, 1348, 589, 1236, 14545, 8698, 10447, 2]
+// Dependencies: [4124, 1303, 1302, 1340, 8084, 676, 1367, 589, 1236, 14553, 8704, 10452, 2]
 
-// Module 14544 (toggle)
+// Module 14552 (toggle)
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import initialize from "initialize";
 import handleThemeChange from "handleThemeChange";
@@ -19,7 +19,7 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   useIsDisabled: function useSyncThemeDisabled() {
-    let stateFromStores = importDefault(1348)("SyncThemeSetting");
+    let stateFromStores = importDefault(1367)("SyncThemeSetting");
     const items = [handleThemeChange];
     if (stateFromStores) {
       stateFromStores = obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
@@ -47,10 +47,10 @@ createToggle = {
         prop = clientThemeSettings.customUserThemeSettings;
       }
     }
-    let obj = require(14545) /* track */;
+    let obj = require(14553) /* track */;
     obj = { is_sync_enabled, base_theme: theme.theme, client_theme: id, has_custom_theme: null != prop };
     obj.track(AnalyticEvents.SYNC_ACROSS_CLIENTS_TOGGLED, obj);
-    const result = importDefault(8698).setShouldSyncAppearanceSettings(is_sync_enabled);
+    const result = importDefault(8704).setShouldSyncAppearanceSettings(is_sync_enabled);
   },
   useDescription: function useSyncThemeAcrossClientsDescription() {
     const intl = require(1236) /* getSystemLocale */.intl;

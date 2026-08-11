@@ -1,10 +1,10 @@
-// Module ID: 16380
-// Function ID: 16381
+// Module ID: 16396
+// Function ID: 16397
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 676, 21, 4303, 1480, 5328, 4299, 1236, 1974, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4303, 1499, 5328, 4299, 1236, 1993, 4714, 2]
 // Exports: default
 
-// Module 16380 (ExistingUserAgeGateConfirm)
+// Module 16396 (ExistingUserAgeGateConfirm)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -60,7 +60,7 @@ export default function ExistingUserAgeGateConfirm(age) {
     return applyArgumentsResult;
   }
   let tmp = callback4();
-  let obj = onConfirm(1480);
+  let obj = onConfirm(1499);
   importDefault = obj.useNavigation();
   [tmp3, c2] = callback(React.useState(false), 2);
   obj = { top: true, style: tmp.container, children: null };
@@ -72,7 +72,7 @@ export default function ExistingUserAgeGateConfirm(age) {
   const intl2 = onConfirm(1236).intl;
   const obj2 = { helpURL: null };
   const tmp2 = callback(React.useState(false), 2);
-  obj2[0] = importDefault(1974).getArticleURL(HelpdeskArticles.AGE_GATE);
+  obj2[0] = importDefault(1993).getArticleURL(HelpdeskArticles.AGE_GATE);
   obj1[3] = intl2.format(onConfirm(1236).t.n3QjDE, obj2);
   items[1] = callback2(onConfirm(4299).Text, obj1);
   const obj3 = { style: tmp.buttonWrapper, children: null };

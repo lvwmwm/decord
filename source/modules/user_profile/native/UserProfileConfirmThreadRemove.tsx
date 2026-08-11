@@ -1,10 +1,10 @@
-// Module ID: 11983
-// Function ID: 11984
+// Module ID: 11986
+// Function ID: 11987
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [19, 21, 4146, 4647, 1236, 4647, 2]
+// Dependencies: [19, 21, 4148, 4647, 1236, 4647, 2]
 // Exports: default
 
-// Module 11983 (UserProfileConfirmThreadRemove)
+// Module 11986 (UserProfileConfirmThreadRemove)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -19,7 +19,7 @@ export default function UserProfileConfirmThreadRemove(isForumPost) {
   let user;
   isForumPost = isForumPost.isForumPost;
   ({ user, onConfirm } = isForumPost);
-  let obj = importDefault(4146);
+  let obj = importDefault(4148);
   const name = obj.useName(user);
   const intl = require(1236) /* getSystemLocale */.intl;
   const t = require(1236) /* getSystemLocale */.t;

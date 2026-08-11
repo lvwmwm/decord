@@ -1,10 +1,10 @@
-// Module ID: 11781
-// Function ID: 11782
+// Module ID: 11784
+// Function ID: 11785
 // Name: getOrRefreshPushSyncToken
-// Dependencies: [5, 11782, 1218, 676, 5830, 3, 707, 530, 1208, 11786, 595, 5127, 500, 503, 1351, 709, 2]
+// Dependencies: [5, 11785, 1218, 676, 5830, 3, 707, 530, 1208, 11789, 595, 5127, 500, 503, 1370, 709, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 11781 (getOrRefreshPushSyncToken)
+// Module 11784 (getOrRefreshPushSyncToken)
 import timestamp from "timestamp";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -112,7 +112,7 @@ function _getOrRefreshPushSyncToken() {
           } else {
             token = body.body.token;
             c4 = 0;
-            obj = callback(11786);
+            obj = callback(11789);
             obj.updatePushSyncToken(lib.id, token);
             c6 = 3;
             const obj6 = { value: null, done: true };
@@ -227,7 +227,7 @@ let obj = {
               const obj4 = { provider: null, token: null, push_sync_tokens: null, bypass_server_throttling_supported: null, bundle_id: null };
               obj4[0] = tmp9;
               obj4[1] = outer1_0;
-              obj4[2] = closure_1.filter(outer1_0(1351).isNotNullish);
+              obj4[2] = closure_1.filter(outer1_0(1370).isNotNullish);
               obj2 = outer1_0(500);
               let isAndroidResult = obj2.isAndroid();
               if (isAndroidResult) {
@@ -251,8 +251,8 @@ let obj = {
       } else if (arg0 !== 2) {
         v0 = arg1;
         if (v0.body.invalid_push_sync_tokens.length > 0) {
-          const result = v0(11786).invalidatePushSyncTokens(v0.body.invalid_push_sync_tokens);
-          const obj9 = v0(11786);
+          const result = v0(11789).invalidatePushSyncTokens(v0.body.invalid_push_sync_tokens);
+          const obj9 = v0(11789);
         }
       }
       return arg1;

@@ -1,20 +1,20 @@
-// Module ID: 16295
-// Function ID: 16296
+// Module ID: 16311
+// Function ID: 16312
 // Name: MediaInfo
-// Dependencies: [32, 19, 17, 1372, 4521, 3938, 1903, 676, 16163, 21, 4303, 712, 4005, 589, 4494, 8319, 4299, 16296, 4725, 6917, 5865, 4036, 4304, 1236, 8663, 5274, 4257, 698, 13800, 3916, 16293, 8857, 8855, 14301, 2]
+// Dependencies: [32, 19, 17, 1391, 4521, 3957, 1922, 676, 16180, 21, 4303, 712, 4024, 589, 4494, 8324, 4299, 16312, 4725, 6920, 5865, 4042, 4304, 1236, 8669, 5274, 4257, 698, 13808, 3935, 16309, 8863, 8861, 14309, 2]
 // Exports: default
 
-// Module 16295 (MediaInfo)
+// Module 16311 (MediaInfo)
 import PlayIcon from "PlayIcon";
 import trackInvite from "trackInvite";
 import get_ActivityIndicator from "AnimatedChild";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { SquarePIPReferenceDimensions } from "VoicePanelPIPModes";
-import jsxProd from "module_4036";
+import jsxProd from "module_4042";
 import createCacheKey from "createCacheKey";
 
 let StyleSheet;
@@ -38,10 +38,10 @@ function MediaInfo(message) {
   let React;
   ({ isVoiceMessage, isControlVisible } = message);
   const tmp = createCacheKey();
-  let obj = message(4005);
+  let obj = message(4024);
   const token = obj.useToken(first(712).colors.BACKGROUND_SURFACE_HIGH);
   let obj1 = message(589);
-  const items = [ensureGuildLoaded, mergeGuildAvatar, upsertRelationship];
+  const items = [ensureGuildLoaded, mergeGuildAvatar, markAllUserIdListsStale];
   const items1 = [message];
   const stateFromStores = obj1.useStateFromStores(items, () => {
     let channel_id;
@@ -77,7 +77,7 @@ function MediaInfo(message) {
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = tmp4(8319)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = tmp4(8324)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
@@ -101,7 +101,7 @@ function MediaInfo(message) {
           obj2[0] = { flex: 1 };
           const obj3 = { spacing: 20, speed: 0.2, children: null };
           obj3[2] = tmp14;
-          const items3 = [tmp13(tmp2(16296).Marquee, obj3), ];
+          const items3 = [tmp13(tmp2(16312).Marquee, obj3), ];
           const obj4 = { start: null, end: null, locations: null, colors: null, style: null };
           obj4[0] = { x: 0, y: 0 };
           obj4[1] = { x: 1, y: 0 };
@@ -154,7 +154,7 @@ function PiPControls(message) {
       }
     }
   }, items);
-  let obj = message(4036);
+  let obj = message(4042);
   const fn = function c() {
     let obj = message(outer1_2[22]);
     let num = 0;
@@ -187,7 +187,7 @@ function PiPControls(message) {
   }
   obj = { style: items1, children: null };
   items1 = [tmp.pipControls, animatedStyle];
-  const items2 = [callback2(message(8663).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  const items2 = [callback2(message(8669).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
   const items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
   items2[1] = callback2(closure_6, { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5274).ArrowLargeLeftIcon, { size: "sm" }) });
@@ -196,7 +196,7 @@ function PiPControls(message) {
   ({ pipButton: arr5[0], dismissButton: arr5[1] } = tmp);
   items2[2] = callback2(closure_6, { disabled: !visible, style: items4, onPress: message.handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: callback2(message(4257).XLargeIcon, { size: "sm" }) });
   obj[1] = items2;
-  return callback3(visible(4036).View, obj);
+  return callback3(visible(4042).View, obj);
 }
 ({ Easing: c5, StyleSheet, TouchableOpacity: closure_6, View: error } = get_ActivityIndicator);
 ({ AnalyticEvents: closure_12, MessageFlags: map1, Routes: closure_14 } = ME);

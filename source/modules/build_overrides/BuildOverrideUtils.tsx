@@ -1,7 +1,7 @@
 // Module ID: 4219
 // Function ID: 4220
 // Name: Version
-// Dependencies: [4220, 676, 1606, 500, 1467, 530, 1469, 4221, 2]
+// Dependencies: [4220, 676, 1625, 500, 1486, 530, 1488, 4221, 2]
 // Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
 // Module 4219 (Version)
@@ -58,7 +58,7 @@ const result = set.fileFinishedImporting("modules/build_overrides/BuildOverrideU
 export const APP_VERSION = Version;
 export { getAPIEndpoint };
 export const getBuildOverride = function getBuildOverride() {
-  let obj = importDefault(1467);
+  let obj = importDefault(1486);
   const safeParseWithQueryResult = obj.safeParseWithQuery("" + location.protocol + "//" + location.host + "/__development/build_overrides");
   if (null == safeParseWithQueryResult) {
     let resolved = Promise.resolve(null);
@@ -69,10 +69,10 @@ export const getBuildOverride = function getBuildOverride() {
     }
     const HTTP = require(530) /* sendRequest */.HTTP;
     obj = { url: null, oldFormErrors: true, rejectWithError: false };
-    obj[0] = importAll(1469).format(safeParseWithQueryResult);
+    obj[0] = importAll(1488).format(safeParseWithQueryResult);
     const value = HTTP.get(obj);
     resolved = value.then((body) => body.body || null, () => null);
-    const obj3 = importAll(1469);
+    const obj3 = importAll(1488);
   }
   return resolved;
 };
@@ -101,7 +101,7 @@ export const getBuildOverrideMeta = function getBuildOverrideMeta(url) {
     }
     return Promise.resolve(tmp13);
   } else {
-    obj = importDefault(1467);
+    obj = importDefault(1486);
     const safeParseWithQueryResult = obj.safeParseWithQuery(url);
     if (null == safeParseWithQueryResult) {
       let resolved = Promise.resolve(null);
@@ -115,7 +115,7 @@ export const getBuildOverrideMeta = function getBuildOverrideMeta(url) {
       safeParseWithQueryResult.host = window.location.host;
       const HTTP = require(530) /* sendRequest */.HTTP;
       let obj2 = { url: null, oldFormErrors: true, rejectWithError: false };
-      obj2 = importAll(1469);
+      obj2 = importAll(1488);
       obj2[0] = obj2.format(safeParseWithQueryResult);
       const value = HTTP.get(obj2);
       resolved = value.then((body) => body.body || null, () => null);
@@ -165,7 +165,7 @@ export const validateURL = function validateURL(target) {
     obj[1] = target;
     return obj;
   } else {
-    obj = importDefault(1467);
+    obj = importDefault(1486);
     const url = obj.safeParseWithQuery(target);
     if (null == url) {
       return null;
@@ -186,7 +186,7 @@ export const validateURL = function validateURL(target) {
             }
             obj = { payload: null, url: null };
             obj[0] = url.query.s;
-            obj[1] = importAll(1469).format(url);
+            obj[1] = importAll(1488).format(url);
             return obj;
           }
         }

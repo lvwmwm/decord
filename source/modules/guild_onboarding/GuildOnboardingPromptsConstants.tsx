@@ -1,7 +1,7 @@
 // Module ID: 5243
 // Function ID: 5244
 // Name: serverPromptToClientPrompt
-// Dependencies: [32, 109, 676, 659, 1236, 1884, 2]
+// Dependencies: [32, 109, 676, 659, 1236, 1903, 2]
 // Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
 // Module 5243 (serverPromptToClientPrompt)
@@ -39,14 +39,14 @@ function validateOnboardingConnection(connection_type) {
     if (obj3.isNullOrEmpty(connection_type.application_id)) {
       items.push("Application ID is required for application connections");
     }
-    obj3 = require(1884) /* isNullOrEmpty */;
+    obj3 = require(1903) /* isNullOrEmpty */;
     const tmp9 = require;
     if (!tmp9Result.isNullOrEmpty(connection_type.provider_id)) {
       items.push("Platform ID not allowed for application connections");
     }
-    tmp9Result = require(1884) /* isNullOrEmpty */;
+    tmp9Result = require(1903) /* isNullOrEmpty */;
   } else if (tmp.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
-    obj = require(1884) /* isNullOrEmpty */;
+    obj = require(1903) /* isNullOrEmpty */;
     if (obj.isNullOrEmpty(connection_type.provider_id)) {
       items.push("Platform ID is required for platform connections");
     } else if (!closure_11.includes(connection_type.provider_id)) {
@@ -56,7 +56,7 @@ function validateOnboardingConnection(connection_type) {
       items.push("Application ID not allowed for platform connections");
     }
     const tmp3 = require;
-    tmp3Result = require(1884) /* isNullOrEmpty */;
+    tmp3Result = require(1903) /* isNullOrEmpty */;
   } else {
     const connection_type2 = connection_type.connection_type;
     items.push("Invalid connection type");

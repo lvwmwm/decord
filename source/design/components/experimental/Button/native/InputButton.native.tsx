@@ -1,9 +1,9 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8673
+// Function ID: 8674
 // Name: InputButton
-// Dependencies: [109, 19, 17, 21, 4303, 712, 4718, 6000, 4715, 2]
+// Dependencies: [109, 19, 17, 21, 4303, 712, 4718, 6002, 4715, 2]
 
-// Module 8667 (InputButton)
+// Module 8673 (InputButton)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { Text } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -42,7 +42,7 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
     maxFontSizeMultiplier = require(4718) /* MINIMUM_HIT_AREA */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmp4 = callback(size, closure_2);
-  let obj = require(6000) /* useInputStyles */;
+  let obj = require(6002) /* useInputStyles */;
   const inputStyles = obj.useInputStyles({ size: str, isRound: undefined !== isRound && isRound, hasLeadingIcon: tmp7 });
   const tmp9 = callback2();
   if (null != icon) {

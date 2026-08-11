@@ -1,10 +1,10 @@
-// Module ID: 7741
-// Function ID: 7742
+// Module ID: 7743
+// Function ID: 7744
 // Name: presentBuyNitroPurchaseSuccess
-// Dependencies: [19, 6885, 1905, 21, 1236, 4644, 4647, 2]
+// Dependencies: [19, 6887, 1924, 21, 1236, 4644, 4647, 2]
 // Exports: presentBuyNitroPurchaseSuccess
 
-// Module 7741 (presentBuyNitroPurchaseSuccess)
+// Module 7743 (presentBuyNitroPurchaseSuccess)
 import "noop";
 import { reset } from "usePremiumPlanPurchasedStore";
 import { PremiumTypes } from "GuildFeatures";

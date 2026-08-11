@@ -1,10 +1,10 @@
-// Module ID: 13753
-// Function ID: 13754
+// Module ID: 13761
+// Function ID: 13762
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 1372, 1903, 1371, 9620, 4296, 21, 4303, 712, 589, 7306, 11520, 13752, 5734, 1351, 13754, 6917, 7142, 4002, 1236, 5756, 4001, 1474, 1609, 500, 5277, 8382, 5270, 6008, 4247, 4848, 10246, 10265, 2]
+// Dependencies: [5, 32, 19, 17, 1391, 1922, 1390, 9625, 4296, 21, 4303, 712, 589, 7307, 11523, 13760, 5734, 1370, 13762, 6920, 7143, 4021, 1236, 5756, 4020, 1493, 1628, 500, 5277, 8388, 5270, 6010, 4247, 4848, 10251, 10270, 2]
 // Exports: default
 
-// Module 13753 (ActivityShareLinkModal)
+// Module 13761 (ActivityShareLinkModal)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import LinkIcon from "LinkIcon";
 import trackInvite from "trackInvite";
@@ -139,7 +139,7 @@ export default function ActivityShareLinkModal(applicationId) {
               dependencyMap = 1;
               c3 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = Promise.all(outer1_9.map(outer1_0(7306).getOrResolveChannelIdFromDestinationId));
+              obj1[0] = Promise.all(outer1_9.map(outer1_0(7307).getOrResolveChannelIdFromDestinationId));
               return obj1;
             } else {
               c3 = 3;
@@ -149,8 +149,8 @@ export default function ActivityShareLinkModal(applicationId) {
           c3 = 3;
           throw arg1;
         } else if (arg0 !== 2) {
-          closure_0 = arg1.filter(outer1_0(1351).isNotNullish);
-          closure_1 = outer1_0(13754).resolveActivityShareMessageContent(c3, name, closure_12);
+          closure_0 = arg1.filter(outer1_0(1370).isNotNullish);
+          closure_1 = outer1_0(13762).resolveActivityShareMessageContent(c3, name, closure_12);
           callback2(true);
           const item = closure_0.forEach((() => {
             let closure_0 = v3((arg0) => {
@@ -226,17 +226,17 @@ export default function ActivityShareLinkModal(applicationId) {
               return applyArgumentsResult;
             };
           })());
-          const obj5 = outer1_0(13754);
+          const obj5 = outer1_0(13762);
           let obj2 = { key: "ACTIVITY_SHARE_LINK_SUCCESS", content: null };
           const intl = outer1_0(1236).intl;
           const obj3 = { applicationName: null };
           obj3[0] = name.name;
           obj2[1] = intl.formatToPlainString(outer1_0(1236).t.jQULqL, obj3);
-          outer1_1(4002).open(obj2);
+          outer1_1(4021).open(obj2);
           callback(true, ensureGuildLoaded);
-          const obj6 = outer1_1(4002);
-          const result = outer1_0(13752).closeActivityShareLinkModal();
-          const obj9 = outer1_0(13752);
+          const obj6 = outer1_1(4021);
+          const result = outer1_0(13760).closeActivityShareLinkModal();
+          const obj9 = outer1_0(13760);
         }
         c3 = 3;
         obj = { value: null, done: true };

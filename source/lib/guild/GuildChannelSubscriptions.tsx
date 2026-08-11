@@ -1,7 +1,7 @@
 // Module ID: 5903
 // Function ID: 5904
 // Name: reset
-// Dependencies: [1386, 12, 2]
+// Dependencies: [1405, 12, 2]
 
 // Module 5903 (reset)
 let result = require("set").fileFinishedImporting("lib/guild/GuildChannelSubscriptions.tsx");
@@ -27,7 +27,7 @@ prototype["get"] = function get(arg0) {
 prototype["_get"] = function _get(arg0) {
   let tmp = this._subscriptions[arg0];
   if (tmp == null) {
-    tmp = new importDefault(1386)({ max: 5 });
+    tmp = new importDefault(1405)({ max: 5 });
   }
   return tmp;
 };

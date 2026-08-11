@@ -1,10 +1,10 @@
-// Module ID: 15033
-// Function ID: 15034
+// Module ID: 15043
+// Function ID: 15044
 // Name: Select
-// Dependencies: [32, 19, 17, 1960, 21, 4303, 712, 4525, 1935, 8216, 5376, 4299, 15034, 15037, 4714, 4712, 15038, 709, 2]
+// Dependencies: [32, 19, 17, 1979, 21, 4303, 712, 4525, 1954, 8220, 5376, 4299, 15044, 15047, 4714, 4712, 15048, 709, 2]
 // Exports: default
 
-// Module 15033 (Select)
+// Module 15043 (Select)
 import importDefaultResult from "_slicedToArray";
 import noop from "noop";
 import { ScrollView } from "dispatcher";
@@ -33,21 +33,21 @@ function Select(children) {
   obj.maxValues = num;
   obj.type = type;
   obj.id = String(type);
-  let obj1 = _require(8216);
+  let obj1 = _require(8220);
   let state = obj1.useComponentState(obj).state;
   obj = { style: { gap: 8 }, children: null };
   const items = [callback(_require(4299).Text, { variant: "heading-lg/medium", children: children.title }), , , ];
-  if (obj.type === _require(1935).ComponentType.STRING_SELECT) {
+  if (obj.type === _require(1954).ComponentType.STRING_SELECT) {
     obj = {};
     const merged1 = Object.assign(obj);
-    let tmp7Result = tmp7(importDefault(15034), obj);
-    const tmp15 = importDefault(15034);
+    let tmp7Result = tmp7(importDefault(15044), obj);
+    const tmp15 = importDefault(15044);
   } else {
     obj1 = {};
     const merged2 = Object.assign(obj);
     obj1.type = obj.type;
-    tmp7Result = tmp7(importDefault(15037), obj1);
-    const tmp9 = importDefault(15037);
+    tmp7Result = tmp7(importDefault(15047), obj1);
+    const tmp9 = importDefault(15047);
   }
   items[1] = tmp7Result;
   type = undefined;
@@ -113,20 +113,20 @@ export default function DevToolsComponentsTestingScreen() {
   obj1[2] = closure_10;
   obj[0] = obj1;
   const merged = Object.assign(closure_12);
-  const items1 = [callback(importDefault(15038), {}), , , , , ];
+  const items1 = [callback(importDefault(15048), {}), , , , , ];
   const obj2 = {};
-  const tmp2 = importDefault(15038);
-  items1[1] = callback(Select, { title: "String Select", type: require(1935) /* PermissionOverwriteType */.ComponentType.STRING_SELECT });
-  const obj3 = { title: "String Select", type: require(1935) /* PermissionOverwriteType */.ComponentType.STRING_SELECT };
-  items1[2] = callback(Select, { title: "User Select", type: require(1935) /* PermissionOverwriteType */.ComponentType.USER_SELECT });
-  const obj4 = { title: "User Select", type: require(1935) /* PermissionOverwriteType */.ComponentType.USER_SELECT };
-  items1[3] = callback(Select, { title: "Role Select", type: require(1935) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT });
-  const obj5 = { title: "Role Select", type: require(1935) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT };
-  items1[4] = callback(Select, { title: "Mentionable Select", type: require(1935) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT });
-  const obj6 = { title: "Mentionable Select", type: require(1935) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT };
-  items1[5] = callback(Select, { title: "Channel Select", type: require(1935) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT });
+  const tmp2 = importDefault(15048);
+  items1[1] = callback(Select, { title: "String Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.STRING_SELECT });
+  const obj3 = { title: "String Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.STRING_SELECT };
+  items1[2] = callback(Select, { title: "User Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.USER_SELECT });
+  const obj4 = { title: "User Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.USER_SELECT };
+  items1[3] = callback(Select, { title: "Role Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT });
+  const obj5 = { title: "Role Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT };
+  items1[4] = callback(Select, { title: "Mentionable Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT });
+  const obj6 = { title: "Mentionable Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT };
+  items1[5] = callback(Select, { title: "Channel Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT });
   obj[1] = items1;
-  items[1] = callback2(require(8216) /* isInteractionComponent */.ComponentStateContextProvider, obj);
+  items[1] = callback2(require(8220) /* isInteractionComponent */.ComponentStateContextProvider, obj);
   items[2] = callback(require(4714) /* Button */.Button, {
     onPress() {
       let obj = callback(table[17]);

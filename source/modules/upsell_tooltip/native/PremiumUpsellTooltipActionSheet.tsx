@@ -1,10 +1,10 @@
-// Module ID: 8636
-// Function ID: 8637
+// Module ID: 8642
+// Function ID: 8643
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 1369, 21, 4303, 712, 4123, 5397, 1297, 4299, 4714, 4271, 2]
+// Dependencies: [19, 17, 1388, 21, 4303, 712, 4125, 5397, 1297, 4299, 4714, 4271, 2]
 // Exports: default
 
-// Module 8636 (PremiumUpsellTooltipActionSheet)
+// Module 8642 (PremiumUpsellTooltipActionSheet)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

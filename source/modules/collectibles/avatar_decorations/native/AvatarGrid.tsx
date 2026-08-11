@@ -1,10 +1,10 @@
-// Module ID: 8314
-// Function ID: 8315
+// Module ID: 8319
+// Function ID: 8320
 // Name: GridAvatar
-// Dependencies: [19, 17, 4295, 4390, 21, 4303, 712, 589, 1297, 8303, 2]
+// Dependencies: [19, 17, 4295, 4390, 21, 4303, 712, 589, 1297, 8308, 2]
 // Exports: default
 
-// Module 8314 (GridAvatar)
+// Module 8319 (GridAvatar)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -43,7 +43,7 @@ function GridAvatar(user) {
   obj[3] = size;
   if (undefined !== pendingAvatarSrc) {
     obj = { source: null };
-    const tmp2Result = tmp2(8303);
+    const tmp2Result = tmp2(8308);
     obj[0] = tmp2Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores1);
     const merged = Object.assign(obj);
     obj1 = obj;

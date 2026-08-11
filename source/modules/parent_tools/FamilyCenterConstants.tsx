@@ -1,10 +1,10 @@
-// Module ID: 6997
-// Function ID: 6998
+// Module ID: 7000
+// Function ID: 7001
 // Name: items
-// Dependencies: [687, 507, 1236, 2284, 2]
+// Dependencies: [687, 507, 1236, 2303, 2]
 // Exports: ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER, FAMILY_CENTER_REQUEST_QR_CODE_URL, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER
 
-// Module 6997 (items)
+// Module 7000 (items)
 import getAuthenticationPath from "getAuthenticationPath";
 
 const require = arg1;
@@ -18,12 +18,12 @@ const items = [
     priority: 100,
     tooltipHeader() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284).kvTgWP);
+      return intl.string(importDefault(2303).kvTgWP);
     },
     tooltipDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.w4wmnb);
       } else {
@@ -33,12 +33,12 @@ const items = [
     },
     sectionHeader(count) {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2284)["4T3zWT"], { count });
+      return intl.formatToPlainString(importDefault(2303)["4T3zWT"], { count });
     },
     sectionDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.w4wmnb);
       } else {
@@ -49,10 +49,10 @@ const items = [
     timestampFormatter() {
       const obj = { today: null, yesterday: null, days: null };
       const intl = require(1236) /* getSystemLocale */.intl;
-      obj[0] = intl.string(importDefault(2284).fLBUx7);
+      obj[0] = intl.string(importDefault(2303).fLBUx7);
       const intl2 = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl2.string(importDefault(2284).cHHgxI);
-      obj[2] = importDefault(2284).qvKjp8;
+      obj[1] = intl2.string(importDefault(2303).cHHgxI);
+      obj[2] = importDefault(2303).qvKjp8;
       return obj;
     }
   }
@@ -64,12 +64,12 @@ const items2 = [
     priority: 200,
     tooltipHeader() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284).D7Sngz);
+      return intl.string(importDefault(2303).D7Sngz);
     },
     tooltipDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.aiAhnQ);
       } else {
@@ -79,12 +79,12 @@ const items2 = [
     },
     sectionHeader(count) {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2284)["0GE4Ni"], { count });
+      return intl.formatToPlainString(importDefault(2303)["0GE4Ni"], { count });
     },
     sectionDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.aiAhnQ);
       } else {
@@ -95,10 +95,10 @@ const items2 = [
     timestampFormatter() {
       const obj = { today: null, yesterday: null, days: null };
       const intl = require(1236) /* getSystemLocale */.intl;
-      obj[0] = intl.string(importDefault(2284).IHd5cZ);
+      obj[0] = intl.string(importDefault(2303).IHd5cZ);
       const intl2 = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl2.string(importDefault(2284).wOsfxv);
-      obj[2] = importDefault(2284).oCk8c4;
+      obj[1] = intl2.string(importDefault(2303).wOsfxv);
+      obj[2] = importDefault(2303).oCk8c4;
       return obj;
     }
   }
@@ -110,12 +110,12 @@ const items3 = [
     priority: 300,
     tooltipHeader() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284).kIcKAj);
+      return intl.string(importDefault(2303).kIcKAj);
     },
     tooltipDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.BkVb1X);
       } else {
@@ -125,12 +125,12 @@ const items3 = [
     },
     sectionHeader(count) {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2284)["TEvo+H"], { count });
+      return intl.formatToPlainString(importDefault(2303)["TEvo+H"], { count });
     },
     sectionDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.BkVb1X);
       } else {
@@ -141,10 +141,10 @@ const items3 = [
     timestampFormatter() {
       const obj = { today: null, yesterday: null, days: null };
       const intl = require(1236) /* getSystemLocale */.intl;
-      obj[0] = intl.string(importDefault(2284).JUHIYZ);
+      obj[0] = intl.string(importDefault(2303).JUHIYZ);
       const intl2 = require(1236) /* getSystemLocale */.intl;
-      obj[1] = intl2.string(importDefault(2284).GiswUW);
-      obj[2] = importDefault(2284)["fwQgE/"];
+      obj[1] = intl2.string(importDefault(2303).GiswUW);
+      obj[2] = importDefault(2303)["fwQgE/"];
       return obj;
     }
   }
@@ -156,12 +156,12 @@ const items4 = [
     priority: 400,
     tooltipHeader() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284).uav9Bh);
+      return intl.string(importDefault(2303).uav9Bh);
     },
     tooltipDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.LVNgTD);
       } else {
@@ -171,12 +171,12 @@ const items4 = [
     },
     sectionHeader(count) {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2284)["7feG7T"], { count });
+      return intl.formatToPlainString(importDefault(2303)["7feG7T"], { count });
     },
     sectionDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.LVNgTD);
       } else {
@@ -193,12 +193,12 @@ const items5 = [
     priority: 500,
     tooltipHeader() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284).CcrbCw);
+      return intl.string(importDefault(2303).CcrbCw);
     },
     tooltipDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.BLgIrk);
       } else {
@@ -208,12 +208,12 @@ const items5 = [
     },
     sectionHeader(count) {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2284).rcPInc, { count });
+      return intl.formatToPlainString(importDefault(2303).rcPInc, { count });
     },
     sectionDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.BLgIrk);
       } else {
@@ -230,19 +230,19 @@ const items6 = [
     priority: 175,
     tooltipHeader() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284).eo4Fxh);
+      return intl.string(importDefault(2303).eo4Fxh);
     },
     tooltipDescription() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284)["O/AElu"]);
+      return intl.string(importDefault(2303)["O/AElu"]);
     },
     sectionHeader(count) {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2284).eGFWUd, { count });
+      return intl.formatToPlainString(importDefault(2303).eGFWUd, { count });
     },
     sectionDescription() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284)["O/AElu"]);
+      return intl.string(importDefault(2303)["O/AElu"]);
     }
   }
 ];
@@ -253,12 +253,12 @@ const items7 = [
     priority: 150,
     tooltipHeader() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284).NMYKsh);
+      return intl.string(importDefault(2303).NMYKsh);
     },
     tooltipDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.cqIdqZ);
       } else {
@@ -268,12 +268,12 @@ const items7 = [
     },
     sectionHeader(amount) {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2284).FPViWL, { amount });
+      return intl.formatToPlainString(importDefault(2303).FPViWL, { amount });
     },
     sectionDescription(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2284);
+      const tmp = importDefault(2303);
       if (arg0) {
         let stringResult = string(tmp.cqIdqZ);
       } else {
@@ -290,19 +290,19 @@ const items8 = [
     priority: 600,
     tooltipHeader() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284).ULUspo);
+      return intl.string(importDefault(2303).ULUspo);
     },
     tooltipDescription() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284).nH8vlc);
+      return intl.string(importDefault(2303).nH8vlc);
     },
     sectionHeader(amount) {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2284)["0R6I/b"], { amount });
+      return intl.formatToPlainString(importDefault(2303)["0R6I/b"], { amount });
     },
     sectionDescription() {
       const intl = require(1236) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2284).nH8vlc);
+      return intl.string(importDefault(2303).nH8vlc);
     }
   }
 ];
@@ -315,7 +315,7 @@ const obj5 = {
   header(isAdult) {
     const intl = require(1236) /* getSystemLocale */.intl;
     const string = intl.string;
-    const tmp = importDefault(2284);
+    const tmp = importDefault(2303);
     if (isAdult.isAdult) {
       let stringResult = string(tmp.bS5x94);
     } else {
@@ -326,7 +326,7 @@ const obj5 = {
   description(isAdult) {
     const intl = require(1236) /* getSystemLocale */.intl;
     const format = intl.format;
-    const tmp = importDefault(2284);
+    const tmp = importDefault(2303);
     if (isAdult.isAdult) {
       let formatResult = format(tmp.GKzqWi, { link: "https://support.discord.com/hc/articles/14155043715735" });
     } else {
@@ -341,18 +341,18 @@ const obj2 = { 290000: null, 290002: null, 290005: null };
 const obj3 = {
   header() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2284).nGX8Co);
+    return intl.string(importDefault(2303).nGX8Co);
   },
   description() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2284).Uss2dn);
+    return intl.string(importDefault(2303).Uss2dn);
   },
   icon: getAuthenticationPath.X
 };
 const obj4 = {
   header() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2284).tu0MRv);
+    return intl.string(importDefault(2303).tu0MRv);
   },
   description(email) {
     email = email.email;
@@ -360,10 +360,10 @@ const obj4 = {
       const intl2 = require(1236) /* getSystemLocale */.intl;
       const obj = { email: null };
       obj[0] = email;
-      let formatToPlainStringResult = intl2.formatToPlainString(importDefault(2284).xNEkdx, obj);
+      let formatToPlainStringResult = intl2.formatToPlainString(importDefault(2303).xNEkdx, obj);
     } else {
       const intl = require(1236) /* getSystemLocale */.intl;
-      formatToPlainStringResult = intl.string(importDefault(2284).Xyjnwn);
+      formatToPlainStringResult = intl.string(importDefault(2303).Xyjnwn);
     }
     return formatToPlainStringResult;
   },
@@ -372,11 +372,11 @@ const obj4 = {
 const obj6 = {
   header() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2284).W9JLJh);
+    return intl.string(importDefault(2303).W9JLJh);
   },
   description() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.format(importDefault(2284).On5iRI, { link: "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731" });
+    return intl.format(importDefault(2303).On5iRI, { link: "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731" });
   },
   icon: getAuthenticationPath.X
 };
@@ -413,24 +413,24 @@ export const CONNECT_GUARDIAN_BOTTOM_SHEET_KEY = "ConnectGuardianBottomSheet";
 export const PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER = () => {
   const obj = { seconds: null, minutes: null, hours: null, yesterday: null, days: null, date: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(importDefault(2284).CJdoee);
-  obj[1] = importDefault(2284).InzMn3;
-  obj[2] = importDefault(2284).ErkYCI;
+  obj[0] = intl.string(importDefault(2303).CJdoee);
+  obj[1] = importDefault(2303).InzMn3;
+  obj[2] = importDefault(2303).ErkYCI;
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl2.string(importDefault(2284).GvfssA);
-  obj[4] = importDefault(2284).pWig18;
-  obj[5] = importDefault(2284).MP3khg;
+  obj[3] = intl2.string(importDefault(2303).GvfssA);
+  obj[4] = importDefault(2303).pWig18;
+  obj[5] = importDefault(2303).MP3khg;
   return obj;
 };
 export const ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER = () => {
   const obj = { seconds: null, minutes: null, hours: null, yesterday: null, days: null, date: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(importDefault(2284).Bqsamd);
-  obj[1] = importDefault(2284).kX3wJg;
-  obj[2] = importDefault(2284).J18GbG;
+  obj[0] = intl.string(importDefault(2303).Bqsamd);
+  obj[1] = importDefault(2303).kX3wJg;
+  obj[2] = importDefault(2303).J18GbG;
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[3] = intl2.string(importDefault(2284).Ln9zMn);
-  obj[4] = importDefault(2284).WRtySz;
-  obj[5] = importDefault(2284).Y3ZYtM;
+  obj[3] = intl2.string(importDefault(2303).Ln9zMn);
+  obj[4] = importDefault(2303).WRtySz;
+  obj[5] = importDefault(2303).Y3ZYtM;
   return obj;
 };

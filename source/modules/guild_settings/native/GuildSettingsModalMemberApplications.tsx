@@ -1,9 +1,9 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15709
+// Function ID: 15710
 // Name: memoResult1
-// Dependencies: [19, 17, 6918, 21, 4303, 712, 4146, 4299, 15693, 1416, 5374, 1297, 1609, 15698, 4127, 15699, 589, 1236, 7745, 8827, 5714, 2]
+// Dependencies: [19, 17, 6921, 21, 4303, 712, 4148, 4299, 15710, 1435, 5374, 1297, 1628, 15715, 4129, 15716, 589, 1236, 7747, 8833, 5714, 2]
 
-// Module 15692 (memoResult1)
+// Module 15709 (memoResult1)
 import importAllResult from "getNoResultsSource";
 import get_ActivityIndicator from "getSystemLocale";
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
@@ -29,7 +29,7 @@ obj[3] = createCacheKey;
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((user) => {
   user = user.user;
-  let obj = importDefault(4146);
+  let obj = importDefault(4148);
   const globalName = obj.getGlobalName(user);
   let username = globalName;
   if (globalName == null) {
@@ -61,7 +61,7 @@ let closure_12 = importAllResult.memo((joinRequest) => {
     } else {
       let userAvatarSource = null;
       if (null != user) {
-        let obj = importDefault(1416);
+        let obj = importDefault(1435);
         userAvatarSource = obj.getUserAvatarSource(user);
       }
       obj = { arrow: true, icon: null, label: null, onPress: null, start: null, end: null };

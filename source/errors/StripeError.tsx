@@ -1,7 +1,7 @@
 // Module ID: 4204
 // Function ID: 4205
 // Name: prototype
-// Dependencies: [3969, 2]
+// Dependencies: [3988, 2]
 
 // Module 4204 (prototype)
 import "set";

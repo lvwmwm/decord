@@ -1,15 +1,15 @@
-// Module ID: 10000
-// Function ID: 10001
+// Module ID: 10005
+// Function ID: 10006
 // Name: HorizontalAutocompleteOption
-// Dependencies: [19, 17, 4295, 1964, 1891, 3938, 1903, 676, 21, 4303, 5236, 712, 4036, 4730, 4304, 589, 1297, 4299, 4146, 5753, 5754, 8228, 4764, 4494, 5268, 2]
+// Dependencies: [19, 17, 4295, 1983, 1910, 3957, 1922, 676, 21, 4303, 5236, 712, 4042, 4730, 4304, 589, 1297, 4299, 4148, 5753, 5754, 8232, 4764, 4494, 5268, 2]
 
-// Module 10000 (HorizontalAutocompleteOption)
+// Module 10005 (HorizontalAutocompleteOption)
 import "getRoleIconData";
 import get_ActivityIndicator from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import jsxProd from "registerAsset";
@@ -29,7 +29,7 @@ function HorizontalAutocompleteOption(arg0) {
   let onPress;
   let sharedValue;
   ({ children, onPress } = arg0);
-  let obj = sharedValue(4036);
+  let obj = sharedValue(4042);
   sharedValue = obj.useSharedValue(0);
   importDefault(4730)(() => {
     const result = sharedValue.set(sharedValue(outer1_2[14]).withTiming(1));
@@ -42,9 +42,9 @@ function HorizontalAutocompleteOption(arg0) {
   fn.__workletHash = 14159604656069;
   fn.__initData = closure_14;
   obj = { onPress, children: null };
-  const animatedStyle = sharedValue(4036).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(4042).useAnimatedStyle(fn);
   const items = [tmp.horizontalAutocompleteOption, animatedStyle];
-  obj[1] = callback(importDefault(4036).View, { style: items, children });
+  obj[1] = callback(importDefault(4042).View, { style: items, children });
   return callback(closure_3, obj);
 }
 ({ TouchableOpacity: c3, View: c4, StyleSheet } = get_ActivityIndicator);
@@ -85,13 +85,13 @@ let obj3 = {
     const obj2 = { style: items2, variant: "text-sm/semibold", children: null };
     items2 = [tmp.nickname];
     if (nick == null) {
-      nick = importDefault(4146).getName(user);
-      const obj6 = importDefault(4146);
+      nick = importDefault(4148).getName(user);
+      const obj6 = importDefault(4148);
     }
     obj2[2] = nick;
     const items3 = [callback(require(4299) /* Text */.Text, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
-    const items4 = ["@", importDefault(4146).getUserTag(user, { decoration: "never" })];
+    const items4 = ["@", importDefault(4148).getUserTag(user, { decoration: "never" })];
     obj3[2] = items4;
     items3[1] = closure_12(require(4299) /* Text */.Text, obj3);
     obj1[1] = items3;
@@ -152,7 +152,7 @@ let obj3 = {
     channel(589);
     [][0] = channel;
     if (channel.type === constants.GUILD_CATEGORY) {
-      let channelIconWithGuild = importDefault(8228);
+      let channelIconWithGuild = importDefault(8232);
     } else {
       let tmp2Result = tmp2(4764);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
@@ -161,7 +161,7 @@ let obj3 = {
     tmp2Result = tmp2(4494);
     let obj = { onPress: channel.onPress, children: null };
     const items = [callback(channel(1297).Icon, { source: channelIconWithGuild }), ];
-    const channelName = tmp2Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+    const channelName = tmp2Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
     obj = { style: tmp.channelName, variant: "text-sm/semibold", children: channelName };
     items[1] = callback(channel(4299).Text, obj);
     obj[1] = items;

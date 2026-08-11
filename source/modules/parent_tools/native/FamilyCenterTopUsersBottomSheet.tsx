@@ -1,10 +1,10 @@
-// Module ID: 14144
-// Function ID: 14145
+// Module ID: 14152
+// Function ID: 14153
 // Name: UserRow
-// Dependencies: [19, 1903, 21, 4303, 7052, 5374, 4146, 1297, 5764, 4299, 1236, 2284, 5767, 2]
+// Dependencies: [19, 1922, 21, 4303, 7055, 5374, 4148, 1297, 5764, 4299, 1236, 2303, 5767, 2]
 // Exports: default
 
-// Module 14144 (UserRow)
+// Module 14152 (UserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
@@ -19,10 +19,10 @@ function UserRow(userActivity) {
   if (null == user) {
     return null;
   } else {
-    let obj = require(7052) /* getEmptyActivityFormatter */;
+    let obj = require(7055) /* getEmptyActivityFormatter */;
     const topUserOrGuildDescription = obj.getTopUserOrGuildDescription(userActivity.dms_sent, userActivity.call_count);
     obj = { label: null, subLabel: null, icon: null };
-    obj[0] = importDefault(4146).getName(user);
+    obj[0] = importDefault(4148).getName(user);
     obj[1] = topUserOrGuildDescription;
     obj = { size: null, user: null, guildId: "Array" };
     obj[0] = require(1297) /* Button */.AvatarSizes.SMALL;
@@ -40,7 +40,7 @@ export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   let obj = { children: null };
   obj = { variant: "text-md/bold", style: callback3().header, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(importDefault(2284).BxbvS7);
+  obj[2] = intl.string(importDefault(2303).BxbvS7);
   const items = [callback(require(4299) /* Text */.Text, obj), ];
   obj = { hasIcons: true, children: null };
   obj[1] = topUserActivities.map((userActivity) => callback(closure_7, { userActivity }, userActivity.user_id));

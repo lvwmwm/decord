@@ -1,14 +1,14 @@
-// Module ID: 15432
-// Function ID: 15433
+// Module ID: 15449
+// Function ID: 15450
 // Name: HomeDrawerDMsRow
-// Dependencies: [19, 17, 4390, 3938, 676, 21, 4303, 712, 589, 4299, 1236, 15428, 4164, 4161, 2]
+// Dependencies: [19, 17, 4390, 3957, 676, 21, 4303, 712, 589, 4299, 1236, 15445, 4164, 4161, 2]
 // Exports: default
 
-// Module 15432 (HomeDrawerDMsRow)
+// Module 15449 (HomeDrawerDMsRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import sortActivity from "sortActivity";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { StatusTypes } from "ME";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -19,7 +19,7 @@ const require = arg1;
 function HomeDrawerDMsRow() {
   const tmp = createCacheKey();
   let obj = require(589) /* initialize */;
-  const items = [upsertRelationship, sortActivity];
+  const items = [markAllUserIdListsStale, sortActivity];
   const stateFromStores = obj.useStateFromStores(items, () => {
     friendIDs = friendIDs.getFriendIDs();
     return friendIDs.filter((arg0) => status.getStatus(arg0) !== constants.OFFLINE).length;
@@ -46,7 +46,7 @@ function HomeDrawerDMsRow() {
   obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.YUU0RF);
   obj3[0] = callback(require(4299) /* Text */.Text, obj4);
   obj3[1] = tmp5;
-  return callback(require(15428) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, obj3);
+  return callback(require(15445) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, obj3);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 createCacheKey = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 }, onlineDot: null };

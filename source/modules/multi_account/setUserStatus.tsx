@@ -1,10 +1,10 @@
-// Module ID: 9764
-// Function ID: 9765
+// Module ID: 9769
+// Function ID: 9770
 // Name: _setUserStatus
-// Dependencies: [5, 5258, 4996, 676, 4146, 1236, 9765, 1355, 1337, 4122, 698, 2]
+// Dependencies: [5, 5258, 4996, 676, 4148, 1236, 9770, 1374, 1337, 1350, 698, 2]
 // Exports: default
 
-// Module 9764 (_setUserStatus)
+// Module 9769 (_setUserStatus)
 import getSystemLocale from "getSystemLocale";
 import initialize from "initialize";
 import filterPlayingActivities from "filterPlayingActivities";
@@ -87,7 +87,7 @@ function _setUserStatus() {
                 const _HermesInternal = HermesInternal;
                 str = "" + Date.now() + c3;
               }
-              const PreloadedUserSettingsActionCreators = callback(1355).PreloadedUserSettingsActionCreators;
+              const PreloadedUserSettingsActionCreators = callback(1374).PreloadedUserSettingsActionCreators;
               c3 = 2;
               globalStats = 1;
               const obj2 = { value: null, done: false };
@@ -105,7 +105,7 @@ function _setUserStatus() {
                 const UInt64Value = _undefined(_undefined2[8]).UInt64Value;
                 obj = { value: "" + Date.now() };
                 statusCreatedAtMs = UInt64Value.create(obj);
-              }, callback(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
+              }, callback(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -145,7 +145,7 @@ function _setUserStatus() {
                 return formatToPlainStringResult;
               }
             })(callback, str);
-            const AccessibilityAnnouncer = callback(4122).AccessibilityAnnouncer;
+            const AccessibilityAnnouncer = callback(1350).AccessibilityAnnouncer;
             AccessibilityAnnouncer.announce(constants);
             if (!globalStats) {
               obj = { next_status: null, prev_status: null };

@@ -1,7 +1,7 @@
 // Module ID: 4319
 // Function ID: 4320
 // Name: updateVoiceState
-// Dependencies: [32, 4320, 676, 4321, 12, 589, 1605, 709, 2]
+// Dependencies: [32, 4320, 676, 4321, 12, 589, 1624, 709, 2]
 
 // Module 4319 (updateVoiceState)
 import _slicedToArray from "_slicedToArray";
@@ -354,8 +354,8 @@ prototype["getVoicePlatformForChannel"] = function getVoicePlatformForChannel(ch
   }
   if (id === closure_3) {
     if (channelId === tmp) {
-      require(1605) /* isMetaQuest */.isMetaQuest() ? VoicePlatforms.QUEST : VoicePlatforms.MOBILE;
-      const obj = require(1605) /* isMetaQuest */;
+      require(1624) /* isMetaQuest */.isMetaQuest() ? VoicePlatforms.QUEST : VoicePlatforms.MOBILE;
+      const obj = require(1624) /* isMetaQuest */;
     }
   }
   return table["" + id + ":" + channelId];

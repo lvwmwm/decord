@@ -1,10 +1,10 @@
-// Module ID: 14069
-// Function ID: 14070
+// Module ID: 14077
+// Function ID: 14078
 // Name: ExplicitMediaSettingsActionSheet
-// Dependencies: [19, 17, 21, 4303, 712, 4271, 5397, 5396, 7985, 1306, 7984, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4271, 5397, 5396, 7987, 1306, 7986, 2]
 // Exports: default
 
-// Module 14069 (ExplicitMediaSettingsActionSheet)
+// Module 14077 (ExplicitMediaSettingsActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -43,7 +43,7 @@ export default function ExplicitMediaSettingsActionSheet(options) {
   }
   obj = { startExpanded: true, children: null };
   obj = { defaultValue: SHOW, onChange: callback, hasIcons: false, children: options.map((label) => callback(options(table[10]).TableRadioRow, { label: label.label, value: label.value }, label.value)) };
-  obj[1] = callback(options(7985).TableRadioGroup, obj);
+  obj[1] = callback(options(7987).TableRadioGroup, obj);
   items1[1] = callback(View, obj);
   obj[1] = items1;
   return closure_6(options(5397).BottomSheet, obj);

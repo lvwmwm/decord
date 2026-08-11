@@ -1,7 +1,7 @@
 // Module ID: 5622
 // Function ID: 5623
 // Name: BottomSheetVirtualizedList
-// Dependencies: [19, 17, 1634, 5612, 5400]
+// Dependencies: [19, 17, 1653, 5612, 5400]
 
 // Module 5622 (BottomSheetVirtualizedList)
 import createBottomSheetScrollableComponent from "createBottomSheetScrollableComponent";

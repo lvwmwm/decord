@@ -1,10 +1,10 @@
-// Module ID: 9003
-// Function ID: 9004
+// Module ID: 9009
+// Function ID: 9010
 // Name: _fetchGuildTopGames
-// Dependencies: [5, 4125, 1971, 9001, 676, 709, 530, 5335, 4202, 698, 2]
+// Dependencies: [5, 4127, 1990, 9007, 676, 709, 530, 5335, 4202, 698, 2]
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed
 
-// Module 9003 (_fetchGuildTopGames)
+// Module 9009 (_fetchGuildTopGames)
 import dispatcher from "dispatcher";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

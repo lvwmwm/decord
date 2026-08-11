@@ -1,9 +1,9 @@
-// Module ID: 1962
-// Function ID: 1963
+// Module ID: 1981
+// Function ID: 1982
 // Name: isSubscriptionGated
-// Dependencies: [1963, 1376, 1965, 1372, 1971, 1964, 1891, 1903, 676, 3920, 3921, 3922, 589, 709, 2]
+// Dependencies: [1982, 1395, 1984, 1391, 1990, 1983, 1910, 1922, 676, 3939, 3940, 3941, 589, 709, 2]
 
-// Module 1962 (isSubscriptionGated)
+// Module 1981 (isSubscriptionGated)
 import initialize from "initialize";
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
 import { hasPermission } from "GuildRoleRecordTypeTag";
@@ -24,11 +24,11 @@ function isSubscriptionGated(role) {
   let isPreviewingRoles;
   role = role.role;
   ({ guildId, isPreviewingRoles } = role);
-  let isSubscriptionRoleResult = require(3920) /* isSubscriptionRole */.isSubscriptionRole(role);
+  let isSubscriptionRoleResult = require(3939) /* isSubscriptionRole */.isSubscriptionRole(role);
   if (isSubscriptionRoleResult) {
     let tmp4 = isPreviewingRoles;
     if (!tmp4) {
-      let result = require(3920) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(role);
+      let result = require(3939) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(role);
       if (!result) {
         let flag = false;
         if (null != role) {
@@ -48,7 +48,7 @@ function isSubscriptionGated(role) {
       }
       tmp4 = result;
       const tmp6 = role;
-      const tmpResult = require(3920) /* isSubscriptionRole */;
+      const tmpResult = require(3939) /* isSubscriptionRole */;
     }
     isSubscriptionRoleResult = tmp4;
   }
@@ -79,7 +79,7 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
       let tmp9 = nextResult;
       let tmp10 = require;
       let tmp11 = dependencyMap;
-      let obj2 = require(3921) /* hasViewChannelPermission */;
+      let obj2 = require(3940) /* hasViewChannelPermission */;
       if (obj2.isChannelAccessGrantedBy(channel, channel.permissionOverwrites[tmp5])) {
         let tmp12 = iter;
         iter.return();
@@ -106,7 +106,7 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
         if (isSubscriptionGated(obj)) {
           let tmp21 = require;
           let tmp22 = dependencyMap;
-          let obj7 = require(3921) /* hasViewChannelPermission */;
+          let obj7 = require(3940) /* hasViewChannelPermission */;
           let tmp23 = item10077;
           if (obj7.hasViewChannelPermission(tmp19)) {
             let tmp24 = obj5;

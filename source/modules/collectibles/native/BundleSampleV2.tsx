@@ -1,10 +1,10 @@
-// Module ID: 9375
-// Function ID: 9376
+// Module ID: 9381
+// Function ID: 9382
 // Name: BundleStaticPreviewContent
-// Dependencies: [19, 17, 9376, 21, 5268, 4303, 712, 38, 1930, 1927, 9377, 9387, 9389, 1297, 9394, 2]
+// Dependencies: [19, 17, 9382, 21, 5268, 4303, 712, 38, 1949, 1946, 9383, 9393, 9395, 1297, 9400, 2]
 // Exports: default
 
-// Module 9375 (BundleStaticPreviewContent)
+// Module 9381 (BundleStaticPreviewContent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO";
@@ -120,8 +120,8 @@ function BundleSampleV2Composed(arg0) {
   const tmp = callback2(size);
   let nameplateData;
   if (null != nameplate) {
-    importDefault(38)(nameplate.type === require(1930) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE, "Item must be Nameplate");
-    let obj = require(1927) /* getNameplateData */;
+    importDefault(38)(nameplate.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE, "Item must be Nameplate");
+    let obj = require(1946) /* getNameplateData */;
     nameplateData = obj.getNameplateData(nameplate);
     const tmp5 = importDefault(38);
   }
@@ -132,7 +132,7 @@ function BundleSampleV2Composed(arg0) {
     obj[0] = tmp.pfx;
     const obj1 = { item: null };
     obj1[0] = pfx;
-    obj[1] = callback(importDefault(9377), obj1);
+    obj[1] = callback(importDefault(9383), obj1);
     tmp12 = callback(tmp11, obj);
   }
   const items = [tmp12, , ];
@@ -156,7 +156,7 @@ function BundleSampleV2Composed(arg0) {
       }
       obj3[1] = XSMALL_20;
       obj3[2] = nameplateData;
-      obj3 = tmp22(require(9389) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
+      obj3 = tmp22(require(9395) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
       obj2[1] = obj3;
       callback(tmp11, obj2);
     }
@@ -168,7 +168,7 @@ function BundleSampleV2Composed(arg0) {
     obj5[0] = deco;
     obj5[1] = tmp9;
     obj5[2] = null != nameplateData;
-    obj4[1] = callback(importDefault(9387), obj5);
+    obj4[1] = callback(importDefault(9393), obj5);
     callback(tmp11, obj4);
   }
 }
@@ -180,7 +180,7 @@ function BundleSampleV2StaticPreview(composedFallbackProps) {
   let targetSize;
   composedFallbackProps = composedFallbackProps.composedFallbackProps;
   ({ previewAssets, disableStaticBackground, mutedStaticBackground, targetSize, exposureLocation } = composedFallbackProps);
-  let obj = require(9394) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(9400) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment(exposureLocation).enabled) {
     obj = { previewAssets: null, disableBackground: null, mutedBackground: null, targetSize: null };
     obj[0] = previewAssets;

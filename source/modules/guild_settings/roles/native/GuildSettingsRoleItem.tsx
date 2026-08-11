@@ -1,8 +1,8 @@
-// Module ID: 16709
-// Function ID: 16710
-// Dependencies: [5, 19, 17, 676, 21, 4303, 712, 4299, 4742, 5752, 4643, 1236, 11046, 5232, 4732, 7751, 4262, 5772, 4725, 1351, 688, 9006, 5374, 4817, 1297, 8688, 4823, 2]
+// Module ID: 16721
+// Function ID: 16722
+// Dependencies: [5, 19, 17, 676, 21, 4303, 712, 4299, 4742, 5752, 4643, 1236, 11051, 5232, 4732, 7753, 4262, 5772, 4725, 1370, 688, 9012, 5374, 4817, 1297, 8694, 4823, 2]
 
-// Module 16709
+// Module 16721
 import closure_3 from "createCacheKey";
 import importAllResult from "isDiscordFrontendDevelopment";
 import get_ActivityIndicator from "VerifiedRoleIcon";

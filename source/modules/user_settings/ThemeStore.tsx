@@ -1,7 +1,7 @@
 // Module ID: 1302
 // Function ID: 1303
 // Name: handleThemeChange
-// Dependencies: [1303, 1304, 1340, 1305, 685, 676, 1339, 1345, 1354, 589, 1355, 709, 2]
+// Dependencies: [1303, 1304, 1340, 1305, 685, 676, 1339, 1345, 1373, 589, 1374, 709, 2]
 
 // Module 1302 (handleThemeChange)
 import initialize from "initialize";
@@ -17,11 +17,11 @@ let THEME_PREFERENCES_WEB_REFRESH;
 let closure_6;
 const require = arg1;
 function handleThemeChange() {
-  const tmp3 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE);
+  const tmp3 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE, c15);
   let flag = tmp3 !== closure_13;
   if (flag) {
     closure_13 = tmp3;
-    importDefault(1354)(closure_13);
+    importDefault(1373)(closure_13);
     flag = true;
   }
   return flag;
@@ -45,7 +45,7 @@ prototype["initialize"] = function initialize(theme) {
   if (null != theme) {
     const SET = obj.SET;
     theme = theme.theme;
-    importDefault(1354)(theme);
+    importDefault(1373)(theme);
     if (null != theme.preferences) {
       const preferences = theme.preferences;
     }
@@ -123,7 +123,7 @@ obj = {
         darkSidebar = appearance.darkSidebar;
       }
       if (!darkSidebar) {
-        const PreloadedUserSettingsActionCreators = require(1355) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
+        const PreloadedUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
         PreloadedUserSettingsActionCreators.updateAsync("appearance", (arg0) => {
           arg0.darkSidebar = true;
         }, UserSettingsDelay.INFREQUENT_USER_ACTION);
@@ -133,11 +133,11 @@ obj = {
       });
       const obj = importDefault(709);
     }
-    const tmp13 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE);
+    const tmp13 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE, c15);
     let flag = tmp13 !== closure_13;
     if (flag) {
       closure_13 = tmp13;
-      importDefault(1354)(closure_13);
+      importDefault(1373)(closure_13);
       flag = true;
     }
     return flag;
@@ -148,11 +148,11 @@ obj = {
     isSwitchingAccount = isSwitchingAccount.isSwitchingAccount;
     let tmp = !isSwitchingAccount;
     if (!isSwitchingAccount) {
-      const tmp6 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE);
-      let flag = tmp6 !== closure_13;
+      const tmp7 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE, c15);
+      let flag = tmp7 !== closure_13;
       if (flag) {
-        closure_13 = tmp6;
-        tmp2(1354)(closure_13);
+        closure_13 = tmp7;
+        tmp2(1373)(closure_13);
         flag = true;
       }
       tmp = flag;
@@ -162,11 +162,11 @@ obj = {
   },
   OVERLAY_INITIALIZE: handleThemeChange,
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: function handleSelectivelySyncedUserSettingsUpdate() {
-    const tmp3 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE);
+    const tmp3 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE, c15);
     let flag = tmp3 !== closure_13;
     if (flag) {
       closure_13 = tmp3;
-      importDefault(1354)(closure_13);
+      importDefault(1373)(closure_13);
       flag = true;
     }
     return flag;
@@ -176,11 +176,11 @@ obj = {
   RESET_PREVIEW_CLIENT_THEME: handleThemeChange,
   SYSTEM_THEME_CHANGE: function handleSystemThemeChange(systemTheme) {
     systemTheme = systemTheme.systemTheme;
-    const tmp3 = importDefault(1345)(systemTheme, THEME_PREFERENCES_MOBILE);
+    const tmp3 = importDefault(1345)(systemTheme, THEME_PREFERENCES_MOBILE, c15);
     let flag = tmp3 !== closure_13;
     if (flag) {
       closure_13 = tmp3;
-      importDefault(1354)(closure_13);
+      importDefault(1373)(closure_13);
       flag = true;
     }
     return flag;
@@ -189,11 +189,11 @@ obj = {
     const obj = {};
     const merged = Object.assign(obj);
     const merged1 = Object.assign(preferences.preferences);
-    const tmp5 = importDefault(1345)(closure_12, obj);
+    const tmp5 = importDefault(1345)(closure_12, obj, c15);
     let flag = tmp5 !== closure_13;
     if (flag) {
       closure_13 = tmp5;
-      importDefault(1354)(closure_13);
+      importDefault(1373)(closure_13);
       flag = true;
     }
     return flag;
@@ -225,31 +225,31 @@ obj = {
     return tmp;
   },
   SET_THEME_OVERRIDE: function handleSetThemeOverride(arg0) {
-    const tmp3 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE);
+    const tmp3 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE, c15);
     let flag = tmp3 !== closure_13;
     if (flag) {
       closure_13 = tmp3;
-      importDefault(1354)(closure_13);
+      importDefault(1373)(closure_13);
       flag = true;
     }
     return flag;
   },
   CLEAR_THEME_OVERRIDE: function handleClearThemeOverride() {
-    const tmp3 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE);
+    const tmp3 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE, c15);
     let flag = tmp3 !== closure_13;
     if (flag) {
       closure_13 = tmp3;
-      importDefault(1354)(closure_13);
+      importDefault(1373)(closure_13);
       flag = true;
     }
     return flag;
   },
   REFRESH_THEME: function handleRefresh() {
-    const tmp3 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE);
+    const tmp3 = importDefault(1345)(closure_12, THEME_PREFERENCES_MOBILE, c15);
     let flag = tmp3 !== closure_13;
     if (flag) {
       closure_13 = tmp3;
-      importDefault(1354)(closure_13);
+      importDefault(1373)(closure_13);
       flag = true;
     }
     return flag;

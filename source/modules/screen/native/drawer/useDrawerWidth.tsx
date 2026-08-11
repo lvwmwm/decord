@@ -1,10 +1,10 @@
-// Module ID: 10997
-// Function ID: 10998
+// Module ID: 11002
+// Function ID: 11003
 // Name: sum
 // Dependencies: [676, 4163, 4161, 2]
 // Exports: getDrawerWidth, useDrawerWidth
 
-// Module 10997 (sum)
+// Module 11002 (sum)
 import { DM_WIDTH } from "ME";
 
 const sum = 260 + DM_WIDTH;

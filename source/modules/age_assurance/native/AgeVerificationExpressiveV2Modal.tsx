@@ -1,10 +1,10 @@
-// Module ID: 7822
-// Function ID: 7823
+// Module ID: 7824
+// Function ID: 7825
 // Name: MethodsScreen
-// Dependencies: [5, 32, 19, 17, 676, 21, 1921, 7823, 7825, 7827, 4303, 712, 7804, 7829, 7832, 4519, 7799, 7807, 7808, 4712, 6027, 4299, 7797, 1974, 1297, 4714, 1236, 2802, 5767, 5374, 7834, 7947, 5778, 4509, 5270, 7949, 514, 5783, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 1940, 7825, 7827, 7829, 4303, 712, 7806, 7831, 7834, 4519, 7801, 7809, 7810, 4712, 6029, 4299, 7799, 1993, 1297, 4714, 1236, 2821, 5767, 5374, 7836, 7949, 5778, 4509, 5270, 7951, 514, 5783, 2]
 // Exports: default
 
-// Module 7822 (MethodsScreen)
+// Module 7824 (MethodsScreen)
 import closure_3 from "jsxProd";
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import Stack from "Stack";
@@ -20,9 +20,11 @@ function MethodsScreen(onComplete) {
   let c7;
   let c8;
   let entryPoint;
+  let footerMessage;
   let loading;
   let methods;
   let navigation;
+  let refetch;
   ({ entryPoint, navigation } = onComplete);
   let _require = navigation;
   const modalSessionId = onComplete.modalSessionId;
@@ -40,7 +42,7 @@ function MethodsScreen(onComplete) {
   let obj1 = _require(methods[13]);
   const ageVerificationMethodsV2 = obj1.useAgeVerificationMethodsV2();
   ({ loading, methods } = ageVerificationMethodsV2);
-  const refetch = ageVerificationMethodsV2.refetch;
+  ({ footerMessage, refetch } = ageVerificationMethodsV2);
   const tmp6 = callback(initiateAgeVerificationV2.useState(false), 2);
   first = tmp6[0];
   callback = tmp6[1];
@@ -178,7 +180,7 @@ function MethodsScreen(onComplete) {
   obj1[3] = items3;
   items2[1] = callback3(_require(methods[19]).Stack, obj1);
   obj[3] = items2;
-  const items4 = [callback3(_require(methods[19]).Stack, obj), , , ];
+  const items4 = [callback3(_require(methods[19]).Stack, obj), , , , ];
   let tmp11Result = loading;
   if (loading) {
     let obj4 = { align: "center", justify: "center", style: null, children: null };
@@ -250,33 +252,47 @@ function MethodsScreen(onComplete) {
       });
       tmp11Result = tmp11(tmp2(tmp3[28]).TableRowGroup, obj5);
     }
-    const obj6 = { children: null };
-    obj7 = { children: null };
     items4[3] = tmp11Result;
+    let tmp11Result1 = !loading;
+    if (!loading) {
+      tmp11Result1 = tmp9;
+    }
+    if (tmp11Result1) {
+      tmp11Result1 = null != footerMessage;
+    }
+    if (tmp11Result1) {
+      const obj6 = { variant: "text-sm/normal", color: "text-muted", style: null, children: null };
+      obj6[2] = tmp.footer;
+      obj6[3] = footerMessage;
+      tmp11Result1 = tmp11(tmp2(tmp3[21]).Text, obj6);
+    }
+    obj7 = { children: null };
+    const obj8 = { children: null };
+    items4[4] = tmp11Result1;
     obj[3] = items4;
-    obj7[0] = callback3(_require(methods[19]).Stack, obj);
-    obj6[0] = tmp11(_require(methods[18]).ModalContent, obj7);
-    return tmp11(_require(methods[17]).ModalScreen, obj6);
+    obj8[0] = callback3(_require(methods[19]).Stack, obj);
+    obj7[0] = tmp11(_require(methods[18]).ModalContent, obj8);
+    return tmp11(_require(methods[17]).ModalScreen, obj7);
   } else {
-    const obj8 = { style: null, children: null };
-    obj8[0] = tmp.emptyContainer;
-    obj9 = { messageType: null, button: null, children: null };
-    obj9[0] = tmp2(tmp3[24]).HelpMessageTypes.ERROR;
-    const obj10 = { variant: "primary", size: "sm", text: null, onPress: null };
+    obj9 = { style: null, children: null };
+    obj9[0] = tmp.emptyContainer;
+    let obj10 = { messageType: null, button: null, children: null };
+    obj10[0] = tmp2(tmp3[24]).HelpMessageTypes.ERROR;
+    const obj11 = { variant: "primary", size: "sm", text: null, onPress: null };
     const intl = tmp2(tmp3[26]).intl;
-    obj10[2] = intl.string(modalSessionId(tmp3[27]).hDvmYP);
-    obj10[3] = refetch;
-    obj9[1] = tmp11(tmp2(tmp3[25]).Button, obj10);
+    obj11[2] = intl.string(modalSessionId(tmp3[27]).hDvmYP);
+    obj11[3] = refetch;
+    obj10[1] = tmp11(tmp2(tmp3[25]).Button, obj11);
     const intl2 = tmp2(tmp3[26]).intl;
     const tmp17 = modalSessionId(tmp3[27]);
-    obj9[2] = intl2.string(ageVerificationMethodsV2.error ? tmp17.Bkmk4Y : tmp17.cR6336);
-    obj9 = tmp11(tmp2(tmp3[24]).HelpMessage, obj9);
-    obj8[1] = obj9;
-    tmp11(tmp2(tmp3[19]).Stack, obj8);
+    obj10[2] = intl2.string(ageVerificationMethodsV2.error ? tmp17.Bkmk4Y : tmp17.cR6336);
+    obj10 = tmp11(tmp2(tmp3[24]).HelpMessage, obj10);
+    obj9[1] = obj10;
+    tmp11(tmp2(tmp3[19]).Stack, obj9);
   }
 }
 ({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
-createCacheKey = { headerStyle: null, container: null, header: null, loadingContainer: null, emptyContainer: null };
+createCacheKey = { headerStyle: null, container: null, header: null, loadingContainer: null, emptyContainer: null, footer: null };
 createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { alignSelf: "stretch" };
@@ -284,6 +300,7 @@ createCacheKey[2] = { textAlign: "center" };
 createCacheKey[3] = { marginTop: require("Themes").space.PX_24 };
 let obj1 = { marginTop: require("Themes").space.PX_24 };
 createCacheKey[4] = { marginTop: require("Themes").space.PX_24 };
+createCacheKey[5] = { textAlign: "center" };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_11 = { METHODS: "METHODS", GOOGLE_WALLET_VERIFICATION: "GOOGLE_WALLET_VERIFICATION" };
 let obj2 = { marginTop: require("Themes").space.PX_24 };
@@ -333,7 +350,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     const obj3 = entryPoint(_undefined[34]);
     obj[2] = entryPoint(_undefined[34]).getHeaderBackButton();
     obj[3] = function render() {
-      return outer1_8(callback(7949), { onClose: closeModal, modalSessionId: closure_0 });
+      return outer1_8(callback(7951), { onClose: closeModal, modalSessionId: closure_0 });
     };
     obj[outer1_11.GOOGLE_WALLET_VERIFICATION] = obj;
     return obj;

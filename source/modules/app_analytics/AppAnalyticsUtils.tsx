@@ -1,7 +1,7 @@
 // Module ID: 4498
 // Function ID: 4499
 // Name: collectGuildAnalyticsMetadata
-// Dependencies: [1376, 1218, 1372, 1961, 4224, 1971, 1964, 1891, 4351, 3929, 4390, 4375, 4315, 3938, 1960, 4124, 4499, 1903, 4319, 676, 1379, 3934, 506, 4501, 698, 687, 4502, 4504, 12, 2]
+// Dependencies: [1395, 1218, 1391, 1980, 4224, 1990, 1983, 1910, 4351, 3948, 4390, 4375, 4315, 3957, 1979, 4126, 4499, 1922, 4319, 676, 1398, 3953, 506, 4501, 698, 687, 4502, 4504, 12, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, getVoiceStateMetadata, trackWithMetadata
 
 // Module 4498 (collectGuildAnalyticsMetadata)
@@ -19,7 +19,7 @@ import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import sortActivity from "sortActivity";
 import createRTCConnection from "createRTCConnection";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_21 from "handleConnectionOpen";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -60,7 +60,7 @@ function collectGuildAnalyticsMetadata(guildId) {
       obj[6] = num;
       let NONE = store3.getGuildPermissions(guild);
       if (NONE == null) {
-        NONE = importAll(3934).NONE;
+        NONE = importAll(3953).NONE;
       }
       obj[7] = String(NONE);
       const features = guild.features;
@@ -97,11 +97,11 @@ function collectChannelAnalyticsMetadata(channel) {
       if (null != guildId) {
         let NONE2 = store3.getChannelPermissions(channel);
         if (NONE2 == null) {
-          NONE2 = importAll(3934).NONE;
+          NONE2 = importAll(3953).NONE;
         }
         let NONE = NONE2;
       } else {
-        NONE = importAll(3934).NONE;
+        NONE = importAll(3953).NONE;
       }
       obj[3] = String(NONE);
       obj[4] = false;

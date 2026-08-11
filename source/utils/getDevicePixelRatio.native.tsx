@@ -1,10 +1,10 @@
-// Module ID: 1877
-// Function ID: 1878
+// Module ID: 1896
+// Function ID: 1897
 // Name: getDevicePixelRatio
 // Dependencies: [17, 2]
 // Exports: default
 
-// Module 1877 (getDevicePixelRatio)
+// Module 1896 (getDevicePixelRatio)
 import { PixelRatio } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("utils/getDevicePixelRatio.native.tsx");

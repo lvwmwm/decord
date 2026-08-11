@@ -1,9 +1,9 @@
-// Module ID: 7080
-// Function ID: 7081
+// Module ID: 7083
+// Function ID: 7084
 // Name: createUserWidgetFromServer
-// Dependencies: [1975, 1911, 1218, 1891, 1220, 4390, 5155, 676, 7081, 12, 7082, 7094, 7089, 7088, 1351, 4188, 1930, 1881, 7095, 1236, 7096, 5000, 2]
+// Dependencies: [1994, 1930, 1218, 1910, 1220, 4390, 5155, 676, 7084, 12, 7085, 7095, 7092, 7091, 1370, 4188, 1949, 1900, 7096, 1236, 7097, 5000, 2]
 
-// Module 7080 (createUserWidgetFromServer)
+// Module 7083 (createUserWidgetFromServer)
 import _getSystemLocale from "_getSystemLocale";
 import createdAt from "createdAt";
 import fetchFingerprint from "fetchFingerprint";
@@ -17,25 +17,25 @@ import set from "fetchFingerprint";
 const require = arg1;
 function createUserWidgetFromServer(data) {
   const type = data.data.type;
-  if (require(7081) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
-    if (tmp(7081).WidgetType.FAVORITE_GAMES !== type) {
-      if (tmp(7081).WidgetType.PLAYED_GAMES !== type) {
-        if (tmp(7081).WidgetType.WANT_TO_PLAY_GAMES !== type) {
-          if (tmp(7081).WidgetType.APPLICATION === type) {
+  if (require(7084) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
+    if (tmp(7084).WidgetType.FAVORITE_GAMES !== type) {
+      if (tmp(7084).WidgetType.PLAYED_GAMES !== type) {
+        if (tmp(7084).WidgetType.WANT_TO_PLAY_GAMES !== type) {
+          if (tmp(7084).WidgetType.APPLICATION === type) {
             let obj = { id: null, applicationId: null };
             obj[0] = data.id;
             obj[1] = data.data.application_id;
-            const applicationWidget = new tmp(7094).ApplicationWidget(obj);
+            const applicationWidget = new tmp(7095).ApplicationWidget(obj);
             return applicationWidget;
-          } else if (tmp(7081).WidgetType.PERSONAL === type) {
+          } else if (tmp(7084).WidgetType.PERSONAL === type) {
             obj = { id: null, header: null, sections: null };
             obj[0] = data.id;
             const header = data.data.header;
             obj[1] = header;
-            obj[2] = tmp(7089).parsePersonalWidgetSections(data.data.sections);
-            const userProfilePersonalWidget = new tmp(7089).UserProfilePersonalWidget(obj);
+            obj[2] = tmp(7092).parsePersonalWidgetSections(data.data.sections);
+            const userProfilePersonalWidget = new tmp(7092).UserProfilePersonalWidget(obj);
             return userProfilePersonalWidget;
-          } else if (tmp(7081).WidgetType.CLIPS_GALLERY === type) {
+          } else if (tmp(7084).WidgetType.CLIPS_GALLERY === type) {
             obj = { id: null, clips: null };
             obj[0] = data.id;
             const clips = data.data.clips;
@@ -54,8 +54,8 @@ function createUserWidgetFromServer(data) {
               }
               return tmp;
             });
-            obj[1] = mapped.filter(tmp(1351).isNotNullish);
-            const clipsGalleryWidget = new tmp(7088).ClipsGalleryWidget(obj);
+            obj[1] = mapped.filter(tmp(1370).isNotNullish);
+            const clipsGalleryWidget = new tmp(7091).ClipsGalleryWidget(obj);
             return clipsGalleryWidget;
           }
         }
@@ -66,7 +66,7 @@ function createUserWidgetFromServer(data) {
   const mapped1 = games.map((gameId) => ({ gameId: gameId.game_id, comment: gameId.comment, tags: gameId.tags }));
   const obj5 = importDefault(12);
   const uniqByResult = importDefault(12).uniqBy(mapped1, "gameId");
-  const baseGameWidget = new tmp(7082).BaseGameWidget({ id: data.id, type, games: importDefault(12).uniqBy(mapped1, "gameId") });
+  const baseGameWidget = new tmp(7085).BaseGameWidget({ id: data.id, type, games: importDefault(12).uniqBy(mapped1, "gameId") });
   return baseGameWidget;
 }
 function checkUserProfileCollectiblesExpiration(id, guild_id) {
@@ -567,7 +567,7 @@ function handleProfileUpdateSuccess(guild_id) {
           const merged = Object.assign(value);
           obj = { collectibles: null };
           obj[0] = collectibles;
-          const merged1 = Object.assign(importDefault(7096)(obj));
+          const merged1 = Object.assign(importDefault(7097)(obj));
           obj.accentColor = accent_color;
           obj.banner = banner;
           obj.bio = bio;
@@ -588,7 +588,7 @@ function handleProfileUpdateSuccess(guild_id) {
       const merged2 = Object.assign(value1);
       const obj2 = { collectibles: null };
       obj2[0] = collectibles2;
-      const merged3 = Object.assign(importDefault(7096)(obj2));
+      const merged3 = Object.assign(importDefault(7097)(obj2));
       obj1.accentColor = accent_color2;
       obj1.banner = banner2;
       obj1.bio = bio2;
@@ -616,7 +616,7 @@ function handleWidgetsUpdateSuccess(arg0) {
     obj = {};
     const merged = Object.assign(value);
     const mapped = widgets.map(createUserWidgetFromServer);
-    obj.widgets = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    obj.widgets = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     const result = obj.set(userId, obj);
   }
 }

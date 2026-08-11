@@ -1,10 +1,10 @@
-// Module ID: 16032
-// Function ID: 16033
+// Module ID: 16049
+// Function ID: 16050
 // Name: useNativeThemeUpdater
-// Dependencies: [19, 1302, 1348, 16033, 16034, 2]
+// Dependencies: [19, 1302, 1367, 16050, 16051, 2]
 // Exports: default
 
-// Module 16032 (useNativeThemeUpdater)
+// Module 16049 (useNativeThemeUpdater)
 import noop from "noop";
 import handleThemeChange from "handleThemeChange";
 
@@ -12,7 +12,7 @@ let require = arg1;
 const result = require("useIsMobileVisualRefreshExperimentEnabled").fileFinishedImporting("modules/themes/native/useNativeThemeUpdater.tsx");
 
 export default function useNativeThemeUpdater() {
-  const tmp = importDefault(1348)("useNativeThemeUpdater");
+  const tmp = importDefault(1367)("useNativeThemeUpdater");
   const require = tmp;
   importDefault = React.useRef(theme.theme);
   const items = [tmp];

@@ -1,9 +1,9 @@
-// Module ID: 7588
-// Function ID: 7589
+// Module ID: 7590
+// Function ID: 7591
 // Name: initialize
-// Dependencies: [676, 7589, 589, 3974, 709, 2]
+// Dependencies: [676, 7591, 589, 3993, 709, 2]
 
-// Module 7588 (initialize)
+// Module 7590 (initialize)
 import { ApplicationFlags } from "ME";
 import { PersistedStore } from "initialize";
 
@@ -26,7 +26,7 @@ prototype["getState"] = function getState() {
   return closure_3;
 };
 prototype["getIsEnabled"] = function getIsEnabled() {
-  const DeveloperMode = require(3974) /* explicitContentFromProto */.DeveloperMode;
+  const DeveloperMode = require(3993) /* explicitContentFromProto */.DeveloperMode;
   let setting = DeveloperMode.getSetting();
   if (setting) {
     setting = closure_6.length > 0;

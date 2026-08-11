@@ -1,10 +1,10 @@
-// Module ID: 10530
-// Function ID: 10531
+// Module ID: 10535
+// Function ID: 10536
 // Name: Scope
-// Dependencies: [19, 17, 21, 4303, 1236, 5996, 712, 4264, 4299, 5716, 10511, 9541, 8902, 2]
+// Dependencies: [19, 17, 21, 4303, 1236, 5998, 712, 4264, 4299, 5716, 10516, 9547, 8908, 2]
 // Exports: default
 
-// Module 10530 (Scope)
+// Module 10535 (Scope)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ function Scope(arg0) {
     obj = { style: null, color: null, size: "refresh_sm" };
     obj[0] = tmp.fakeScopeIcon;
     obj[1] = importDefault(712).colors.TEXT_MUTED;
-    let tmp10Result = tmp10(tmp6(5996).CircleXIcon, obj);
+    let tmp10Result = tmp10(tmp6(5998).CircleXIcon, obj);
   } else {
     const obj1 = { color: null, size: "refresh_sm" };
     obj1[0] = importDefault(712).colors.TEXT_MUTED;
@@ -93,9 +93,9 @@ export default function AuthorizeScopes(accountScopes) {
     } else {
       tmp4 = tmp14;
     }
-    let hasItem = integrationType === tmp4(9541).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp4(9547).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(tmp4(8902).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(tmp4(8908).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     let obj = { style: null, children: null };
     obj[0] = tmp.scopesContainer;

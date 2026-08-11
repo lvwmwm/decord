@@ -1,7 +1,7 @@
 // Module ID: 4641
 // Function ID: 4642
 // Name: handleConnectionOpen
-// Dependencies: [1891, 3, 589, 709, 2]
+// Dependencies: [1910, 3, 589, 709, 2]
 
 // Module 4641 (handleConnectionOpen)
 import createGuildRecordFromRust from "createGuildRecordFromRust";

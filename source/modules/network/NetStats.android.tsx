@@ -1,10 +1,10 @@
-// Module ID: 6921
-// Function ID: 6922
+// Module ID: 6924
+// Function ID: 6925
 // Name: receiveNetworkInfoformation
-// Dependencies: [5, 17, 4994, 6922, 1891, 676, 3, 1456, 1455, 6933, 687, 595, 709, 4165, 6923, 6934, 9, 2]
+// Dependencies: [5, 17, 4994, 6925, 1910, 676, 3, 1475, 1474, 6936, 687, 595, 709, 4165, 6926, 6937, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 6921 (receiveNetworkInfoformation)
+// Module 6924 (receiveNetworkInfoformation)
 import ME from "ME";
 import get_ActivityIndicator from "set";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -307,19 +307,19 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
     outer1_19();
     const obj7 = outer1_1(outer1_2[13]);
     let callback = yield obj7.getAppFirstVisibleTimestamp();
-    const obj4 = callback(6923);
+    const obj4 = callback(6926);
     let lib = yield obj4.getSession();
     const obj5 = { type: null, properties: null };
     obj5[0] = constants.APP_NETWORK_USAGE;
     const obj6 = {};
-    const merged = Object.assign(callback(6934).getDeviceMetadata());
+    const merged = Object.assign(callback(6937).getDeviceMetadata());
     const _Date = Date;
     obj6.client_track_timestamp = Date.now();
     if (lib != null) {
       const uuid = lib.uuid;
     }
     obj6.client_heartbeat_session_id = uuid;
-    const obj = callback(6934);
+    const obj = callback(6937);
     obj6.load_id = obj.currentLoadId();
     obj6.num_guilds = guildCount.getGuildCount();
     obj6.was_authenticated = lib(9).wasAuthenticated;
@@ -376,7 +376,7 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
     obj6.download_bytes_received = closure_10.downloadBytesReceived;
     obj6.download_num_requests = closure_10.downloadNumRequests;
     obj6.media_player_bytes_received = closure_10.mediaPlayerBytesReceived;
-    const obj1 = callback(6933);
+    const obj1 = callback(6936);
     obj6.rtc_bytes = obj1.getRTCTotalBytes();
     obj6.num_message_sends = closure_15;
     if (0 !== closure_15) {
@@ -419,7 +419,7 @@ const subscription2 = require("dispatcher").subscribe("MESSAGE_SEND_FAILED", (ar
 let result = require("_handleConnectionOpen").fileFinishedImporting("modules/network/NetStats.android.tsx");
 
 export const isSlowNetwork = function isSlowNetwork() {
-  let tmp = obj.type === require(1456) /* configure */.NetInfoStateType.cellular;
+  let tmp = obj.type === require(1475) /* configure */.NetInfoStateType.cellular;
   if (tmp) {
     let isNetworkRoaming = null != closure_10.signalStrengthLevel;
     if (isNetworkRoaming) {

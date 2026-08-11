@@ -1,17 +1,17 @@
-// Module ID: 11794
-// Function ID: 11795
+// Module ID: 11797
+// Function ID: 11798
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 3930, 1376, 1971, 1891, 5131, 3938, 1903, 11369, 676, 8517, 21, 589, 4791, 3918, 3935, 11795, 11796, 10342, 10341, 11797, 11798, 4498, 9243, 4509, 8516, 1988, 8519, 8451, 11042, 10164, 11800, 11810, 11809, 4259, 1236, 11812, 11815, 11816, 11817, 11821, 11822, 11825, 11826, 9044, 11828, 2]
+// Dependencies: [19, 3949, 1395, 1990, 1910, 5131, 3957, 1922, 11374, 676, 8523, 21, 589, 4791, 3937, 3954, 11798, 11799, 10347, 10346, 11800, 11801, 4498, 9249, 4509, 8522, 2007, 8525, 8457, 11047, 10169, 11803, 11813, 11812, 4259, 1236, 11815, 11818, 11819, 11820, 11824, 11825, 11828, 11829, 9050, 11831, 2]
 // Exports: default
 
-// Module 11794 (ChatInputGuardWrapper)
+// Module 11797 (ChatInputGuardWrapper)
 import "useIsSpamMessageRequest";
 import initialize from "initialize";
 import { isThread } from "createChannelRecord";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import recomputeGuild from "recomputeGuild";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { TextAreaCta } from "TextAreaCta";
 import ME from "ME";
@@ -104,7 +104,7 @@ export default function ChatInputGuardWrapper(channel) {
   const tmp11 = tmp2Result.useIsMessageRequest(channel.id) && channel.isPrivate();
   const tmp12 = tmp2Result.useIsSpamMessageRequest(channel.id) && channel.isPrivate();
   const isForumPostResult = channel.isForumPost();
-  const items4 = [upsertRelationship];
+  const items4 = [markAllUserIdListsStale];
   const items5 = [channel];
   const stateFromStores2 = channel(tmp3[12]).useStateFromStores(items4, () => {
     let isDMResult = channel.isDM();

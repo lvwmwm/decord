@@ -1,7 +1,7 @@
 // Module ID: 4251
 // Function ID: 4252
 // Name: CopyIcon
-// Dependencies: [19, 21, 712, 4004, 4252, 2]
+// Dependencies: [19, 21, 712, 4023, 4252, 2]
 // Exports: CopyIcon
 
 // Module 4251 (CopyIcon)
@@ -22,5 +22,5 @@ export const CopyIcon = function CopyIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

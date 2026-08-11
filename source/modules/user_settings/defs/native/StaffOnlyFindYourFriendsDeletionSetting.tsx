@@ -1,9 +1,9 @@
-// Module ID: 14088
-// Function ID: 14089
+// Module ID: 14096
+// Function ID: 14097
 // Name: setFindYourFriendsDeletionIsLoading
-// Dependencies: [5, 17, 8082, 21, 700, 705, 3914, 12035, 585, 4002, 10447, 14089, 2]
+// Dependencies: [5, 17, 8084, 21, 700, 705, 3933, 12038, 585, 4021, 10452, 14097, 2]
 
-// Module 14088 (setFindYourFriendsDeletionIsLoading)
+// Module 14096 (setFindYourFriendsDeletionIsLoading)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -68,7 +68,7 @@ function _onFindYourFriendsDeletionPress() {
             const aPIError = new callback(585).APIError(callback2);
             callback = aPIError.getAnyErrorMessage();
             if (null != callback) {
-              let obj2 = callback2(4002);
+              let obj2 = callback2(4021);
               obj2 = { key: "FIND_YOUR_FRIENDS_DELETION", content: null };
               obj2[1] = callback;
               obj2.open(obj2);
@@ -121,7 +121,7 @@ identity = {
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return callback2((isLoading) => isLoading.isLoading, require(3914) /* isIterable */.shallow);
+    return callback2((isLoading) => isLoading.isLoading, require(3933) /* isIterable */.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     const self = this;
@@ -136,7 +136,7 @@ identity = {
   usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (callback2((isLoading) => isLoading.isLoading, require(3914) /* isIterable */.shallow)) {
+    if (callback2((isLoading) => isLoading.isLoading, require(3933) /* isIterable */.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;

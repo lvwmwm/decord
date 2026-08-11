@@ -1,10 +1,10 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15415
+// Function ID: 15416
 // Name: useFavoritesGuildHideOnLeave
-// Dependencies: [19, 4124, 1375, 1894, 9711, 9710, 2]
+// Dependencies: [19, 4126, 1394, 1913, 9716, 9715, 2]
 // Exports: default
 
-// Module 15400 (useFavoritesGuildHideOnLeave)
+// Module 15415 (useFavoritesGuildHideOnLeave)
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import initializeFromUserSettings from "initializeFromUserSettings";

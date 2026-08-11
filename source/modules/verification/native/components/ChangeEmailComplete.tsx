@@ -1,10 +1,10 @@
-// Module ID: 8515
-// Function ID: 8516
+// Module ID: 8521
+// Function ID: 8522
 // Name: handlePress
-// Dependencies: [19, 17, 8453, 21, 4303, 712, 8451, 8462, 4299, 1236, 4714, 2]
+// Dependencies: [19, 17, 8459, 21, 4303, 712, 8457, 8468, 4299, 1236, 4714, 2]
 // Exports: default
 
-// Module 8515 (handlePress)
+// Module 8521 (handlePress)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetChangeEmailStore } from "ChangeEmailFields";
@@ -19,7 +19,7 @@ let metroImportAll;
 const require = arg1;
 function handlePress() {
   resetChangeEmailStore();
-  importDefault(8451).close();
+  importDefault(8457).close();
 }
 ({ View: c3, Image: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
@@ -39,7 +39,7 @@ const result = require("ChangeEmailFields").fileFinishedImporting("modules/verif
 export default function ChangeEmailComplete(email) {
   const tmp = createCacheKey();
   let obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: null };
-  obj = { style: tmp.image, source: importDefault(8462) };
+  obj = { style: tmp.image, source: importDefault(8468) };
   const items = [callback(closure_4, obj), , , ];
   obj = { style: tmp.bodyInner, children: null };
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };

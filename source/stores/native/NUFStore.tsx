@@ -1,11 +1,11 @@
-// Module ID: 7104
-// Function ID: 7105
+// Module ID: 7105
+// Function ID: 7106
 // Name: handleCacheOrSocketLoaded
-// Dependencies: [1891, 3938, 589, 709, 2]
+// Dependencies: [1910, 3957, 589, 709, 2]
 
-// Module 7104 (handleCacheOrSocketLoaded)
+// Module 7105 (handleCacheOrSocketLoaded)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { PersistedStore } from "initialize";
 
 function handleCacheOrSocketLoaded() {
@@ -46,8 +46,8 @@ class NUFStore extends PersistedStore {
 }
 const prototype = NUFStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(upsertRelationship, createGuildRecordFromRust);
-  const items = [upsertRelationship, createGuildRecordFromRust];
+  this.waitFor(markAllUserIdListsStale, createGuildRecordFromRust);
+  const items = [markAllUserIdListsStale, createGuildRecordFromRust];
   this.syncWith(items, handleUpdate);
 };
 prototype["getState"] = function getState() {

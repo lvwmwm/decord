@@ -1,7 +1,7 @@
 // Module ID: 4831
 // Function ID: 4832
 // Name: getGameMentionData
-// Dependencies: [4324, 4832, 1903, 4835, 589, 643, 2]
+// Dependencies: [4324, 4832, 1922, 4835, 589, 643, 2]
 // Exports: getGameMentionData, useGameMentionData
 
 // Module 4831 (getGameMentionData)

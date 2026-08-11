@@ -1,10 +1,10 @@
-// Module ID: 5943
-// Function ID: 5944
+// Module ID: 5945
+// Function ID: 5946
 // Name: getIdFromHistoryItem
-// Dependencies: [1372, 589, 709, 4159, 4158, 4161, 2]
+// Dependencies: [1391, 589, 709, 4159, 4158, 4161, 2]
 // Exports: getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 5943 (getIdFromHistoryItem)
+// Module 5945 (getIdFromHistoryItem)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { PersistedStore } from "initialize";
 

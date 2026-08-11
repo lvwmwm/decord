@@ -1,10 +1,10 @@
-// Module ID: 12640
-// Function ID: 12641
+// Module ID: 12644
+// Function ID: 12645
 // Name: generateSeparatorRowData
-// Dependencies: [8042, 4303, 712, 1348, 1351, 2]
+// Dependencies: [8044, 4303, 712, 1367, 1370, 2]
 // Exports: generateSeparatorRowData
 
-// Module 12640 (generateSeparatorRowData)
+// Module 12644 (generateSeparatorRowData)
 import Changeset from "Changeset";
 import createCacheKey from "createCacheKey";
 
@@ -53,7 +53,7 @@ export const generateSeparatorRowData = function generateSeparatorRowData(text, 
     obj1[6] = changeType;
     return obj1;
   } else {
-    obj = require(1351) /* isDiscordFrontendDevelopment */;
+    obj = require(1370) /* isDiscordFrontendDevelopment */;
     obj.assertNever(rowType);
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 11939
-// Function ID: 11940
+// Module ID: 11942
+// Function ID: 11943
 // Name: useMaybeGetSortedBoosts
-// Dependencies: [32, 19, 11921, 5143, 1971, 1891, 589, 11940, 4199, 11, 1236, 2]
+// Dependencies: [32, 19, 11924, 5143, 1990, 1910, 589, 11943, 4199, 11, 1236, 2]
 // Exports: default, useGetBoostUserConfig
 
-// Module 11939 (useMaybeGetSortedBoosts)
+// Module 11942 (useMaybeGetSortedBoosts)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import handleModifyingAppliedBoostStart from "handleModifyingAppliedBoostStart";

@@ -1,7 +1,7 @@
 // Module ID: 5307
 // Function ID: 5308
 // Name: HeaderIcon
-// Dependencies: [17, 21, 1481]
+// Dependencies: [17, 21, 1500]
 // Exports: HeaderIcon
 
 // Module 5307 (HeaderIcon)
@@ -19,10 +19,10 @@ export const HeaderIcon = function HeaderIcon(arg0) {
   let style;
   ({ source, style } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   obj = { source, resizeMode: "contain", fadeDuration: 0, tintColor: obj.useTheme().colors.text, style: null };
   const items = [closure_4.icon, , ];
-  let flip = "rtl" === require(1481) /* createStandardNavigationFactories */.useLocale().direction;
+  let flip = "rtl" === require(1500) /* createStandardNavigationFactories */.useLocale().direction;
   if (flip) {
     flip = closure_4.flip;
   }

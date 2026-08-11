@@ -1,10 +1,10 @@
-// Module ID: 11278
-// Function ID: 11279
+// Module ID: 11283
+// Function ID: 11284
 // Name: ClassificationDetailModal
-// Dependencies: [19, 676, 11279, 21, 4303, 712, 4509, 5270, 11280, 6016, 11315, 11287, 1481, 5783, 1236, 2]
+// Dependencies: [19, 676, 11284, 21, 4303, 712, 4509, 5270, 11285, 6018, 11320, 11292, 1500, 5783, 1236, 2]
 // Exports: default
 
-// Module 11278 (ClassificationDetailModal)
+// Module 11283 (ClassificationDetailModal)
 import noop from "noop";
 import { UserSettingsSections } from "ME";
 import { AccountSettingsTabs } from "AccountSettingsTabs";
@@ -30,7 +30,7 @@ export default function ClassificationDetailModal(classificationId) {
   let safetyHubInitialized;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = classificationId(11315);
+  let obj = classificationId(11320);
   safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -39,7 +39,7 @@ export default function ClassificationDetailModal(classificationId) {
       const obj = flag(_undefined[11]);
     }
   }, items);
-  const isFocused = classificationId(1481).useIsFocused();
+  const isFocused = classificationId(1500).useIsFocused();
   const items1 = [classificationId, flag, tmp, source];
   const memo = safetyHubInitialized.useMemo(() => {
     let closure_1 = closure_2;
@@ -76,7 +76,7 @@ export default function ClassificationDetailModal(classificationId) {
         onError() {
           let arr = callback2(4509);
           arr = arr.pop();
-          let obj = callback(6016);
+          let obj = callback(6018);
           obj = { screen: constants.ACCOUNT, params: obj };
           obj = { initialTab: constants2.STANDING };
           obj.openUserSettings(obj);

@@ -1,10 +1,10 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8085
+// Function ID: 8086
 // Name: useCanReplyToMessage
-// Dependencies: [32, 3929, 1903, 676, 505, 686, 5889, 8084, 589, 2]
+// Dependencies: [32, 3948, 1922, 676, 505, 686, 5889, 8086, 589, 2]
 // Exports: canReplyToMessage, useCanReplyToMessage
 
-// Module 8083 (useCanReplyToMessage)
+// Module 8085 (useCanReplyToMessage)
 import _slicedToArray from "_slicedToArray";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -27,7 +27,7 @@ export const useCanReplyToMessage = function useCanReplyToMessage(channel, messa
   if (channel != null) {
     guildId = channel.getGuildId();
   }
-  const obj2 = _require(8084);
+  const obj2 = _require(8086);
   const items = [getUncachedChannelPermissions];
   let stateFromStores = tmp(589).useStateFromStores(items, () => {
     let tmp = null != channel;
@@ -93,7 +93,7 @@ export const canReplyToMessage = function canReplyToMessage(channel, message) {
     id = currentUser.id;
   }
   const guildId = channel.getGuildId();
-  const tmpResult = require(8084) /* useUserCommunicationDisabled */;
+  const tmpResult = require(8086) /* useUserCommunicationDisabled */;
   const isArchivedThreadResult = channel.isArchivedThread();
   let tmp11 = !isArchivedThreadResult;
   if (isArchivedThreadResult) {

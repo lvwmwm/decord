@@ -1,9 +1,9 @@
-// Module ID: 7117
-// Function ID: 7118
+// Module ID: 7118
+// Function ID: 7119
 // Name: getCommittedVersions
-// Dependencies: [5, 4124, 3, 7110, 12, 1936, 687, 2]
+// Dependencies: [5, 4126, 3, 7111, 12, 1955, 687, 2]
 
-// Module 7117 (getCommittedVersions)
+// Module 7118 (getCommittedVersions)
 import items from "items";
 import importDefaultResult from "handleConnectionOpen";
 import isCacheEnabled from "isCacheEnabled";
@@ -39,14 +39,14 @@ class NonGuildVersions {
               const _isNaN = isNaN;
               const _Number = Number;
               if (!isNaN(Number(guildId))) {
-                let obj = callback(1936);
+                let obj = callback(1955);
                 const result = obj.nonGuildVersionsTransaction(database);
                 obj = { id: "initial_guild_id", versionString: null };
                 obj[1] = guildId;
                 result.put(obj);
               }
             }
-            const result1 = callback(1936).nonGuildVersionsTransaction(database);
+            const result1 = callback(1955).nonGuildVersionsTransaction(database);
             result1.delete("initial_guild_id");
           });
         }
@@ -149,7 +149,7 @@ prototype["getCommittedVersions"] = function getCommittedVersions() {
 };
 prototype["handleConnectionOpen"] = function handleConnectionOpen(apiCodeVersion, database) {
   if (null != apiCodeVersion.apiCodeVersion) {
-    let obj = importDefault(1936);
+    let obj = importDefault(1955);
     const result = obj.nonGuildVersionsTransaction(database);
     obj = { id: "api_code_version", version: null };
     obj[1] = apiCodeVersion.apiCodeVersion;
@@ -178,14 +178,14 @@ if (isCacheEnabled.isCacheEnabled()) {
           const _isNaN = isNaN;
           const _Number = Number;
           if (!isNaN(Number(guildId))) {
-            let obj = callback(1936);
+            let obj = callback(1955);
             const result = obj.nonGuildVersionsTransaction(database);
             obj = { id: "initial_guild_id", versionString: null };
             obj[1] = guildId;
             result.put(obj);
           }
         }
-        const result1 = callback(1936).nonGuildVersionsTransaction(database);
+        const result1 = callback(1955).nonGuildVersionsTransaction(database);
         result1.delete("initial_guild_id");
       });
     }

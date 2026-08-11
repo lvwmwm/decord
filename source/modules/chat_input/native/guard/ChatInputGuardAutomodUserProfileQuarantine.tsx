@@ -1,8 +1,8 @@
-// Module ID: 11825
-// Function ID: 11826
-// Dependencies: [19, 1218, 1971, 3917, 21, 589, 3935, 11261, 1236, 11809, 11826, 2]
+// Module ID: 11828
+// Function ID: 11829
+// Dependencies: [19, 1218, 1990, 3936, 21, 589, 3954, 11266, 1236, 11812, 11829, 2]
 
-// Module 11825
+// Module 11828
 import importAllResult from "noop";
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -30,7 +30,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardAutomodUserProfil
   const callback = importAllResult.useCallback(() => {
     const result = guildId(outer1_2[7]).openAutomodProfileQuarantineAlert(guildId);
   }, items2);
-  const automodReason = guildId(3935).getAutomodReason(stateFromStores);
+  const automodReason = guildId(3954).getAutomodReason(stateFromStores);
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
     const intl2 = tmp(1236).intl;
     let stringResult = intl2.string(tmp(1236).t.Viksoo);
@@ -46,11 +46,11 @@ const memoResult = importAllResult.memo(function ChatInputGuardAutomodUserProfil
     stringResult1 = intl3.string(tmp(1236).t["8HW7r9"]);
   }
   obj = { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null };
-  const obj2 = guildId(3935);
+  const obj2 = guildId(3954);
   tmp6 = GuildMemberFlags;
-  obj[3] = jsx(guildId(11826).ChatXIcon, {});
+  obj[3] = jsx(guildId(11829).ChatXIcon, {});
   obj[4] = stringResult1;
-  return jsx(importDefault(11809), { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null });
+  return jsx(importDefault(11812), { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null });
 });
 let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardAutomodUserProfileQuarantine.tsx");
 

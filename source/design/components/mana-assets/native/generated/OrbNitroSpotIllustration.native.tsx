@@ -1,10 +1,10 @@
-// Module ID: 6616
-// Function ID: 6617
+// Module ID: 6618
+// Function ID: 6619
 // Name: OrbNitroSpotIllustration
-// Dependencies: [21, 5268, 6617, 2]
+// Dependencies: [21, 5268, 6619, 2]
 // Exports: OrbNitroSpotIllustration
 
-// Module 6616 (OrbNitroSpotIllustration)
+// Module 6618 (OrbNitroSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/OrbNitroSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const OrbNitroSpotIllustration = function OrbNitroSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6617);
+  obj[0] = importDefault(6619);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

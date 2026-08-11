@@ -1,10 +1,10 @@
-// Module ID: 11343
-// Function ID: 11344
+// Module ID: 11348
+// Function ID: 11349
 // Name: toggleMemberListContentFeedHidden
-// Dependencies: [1372, 1960, 4124, 1903, 11344, 676, 709, 698, 11345, 5748, 2]
+// Dependencies: [1391, 1979, 4126, 1922, 11349, 676, 709, 698, 11350, 5748, 2]
 // Exports: clearDeleteHistoryError, onGameProfileOpen, onTapContentInventoryEntryEmbed, toggleMemberListContentFeedHidden
 
-// Module 11343 (toggleMemberListContentFeedHidden)
+// Module 11348 (toggleMemberListContentFeedHidden)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_5 from "handleConnectionOpen";
@@ -48,8 +48,8 @@ export const onTapContentInventoryEntryEmbed = function onTapContentInventoryEnt
         items1 = [items.USERNAME];
       }
       showUserProfileResult[3] = items1;
-      showUserProfileResult = importAll(11345).showUserProfile(showUserProfileResult);
-      const obj2 = importAll(11345);
+      showUserProfileResult = importAll(11350).showUserProfile(showUserProfileResult);
+      const obj2 = importAll(11350);
     }
   }
 };

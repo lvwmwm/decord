@@ -1,7 +1,7 @@
 // Module ID: 4808
 // Function ID: 4809
 // Name: TextControllerIcon
-// Dependencies: [19, 21, 712, 4004, 4795, 2]
+// Dependencies: [19, 21, 712, 4023, 4795, 2]
 // Exports: TextControllerIcon
 
 // Module 4808 (TextControllerIcon)
@@ -22,5 +22,5 @@ export const TextControllerIcon = function TextControllerIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

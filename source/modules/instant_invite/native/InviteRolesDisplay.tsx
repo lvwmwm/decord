@@ -1,10 +1,10 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9704
+// Function ID: 9705
 // Name: InviteRolesDisplay
-// Dependencies: [19, 17, 1964, 21, 4303, 589, 4299, 1236, 9700, 2]
+// Dependencies: [19, 17, 1983, 21, 4303, 589, 4299, 1236, 9705, 2]
 // Exports: default
 
-// Module 9699 (InviteRolesDisplay)
+// Module 9704 (InviteRolesDisplay)
 import "noop";
 import { View } from "get ActivityIndicator";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

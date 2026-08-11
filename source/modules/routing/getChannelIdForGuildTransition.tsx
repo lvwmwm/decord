@@ -1,7 +1,7 @@
 // Module ID: 5839
 // Function ID: 5840
 // Name: getChannelIdForGuildTransition
-// Dependencies: [1375, 5238, 1372, 1961, 1891, 1960, 5840, 676, 1379, 5844, 5846, 5848, 1894, 2]
+// Dependencies: [1394, 5238, 1391, 1980, 1910, 1979, 5840, 676, 1398, 5844, 5846, 5848, 1913, 2]
 // Exports: getChannelIdForGuildTransition
 
 // Module 5839 (getChannelIdForGuildTransition)
@@ -67,7 +67,7 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
         if (obj4.isFavoritesGuildId(guildId)) {
           tmp17 = channelId;
         }
-        obj4 = require(1894) /* getFavoritesAwareGuildName */;
+        obj4 = require(1913) /* getFavoritesAwareGuildName */;
       }
       return tmp17;
     }

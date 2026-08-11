@@ -1,7 +1,7 @@
 // Module ID: 4289
 // Function ID: 4290
 // Name: readSnowflake
-// Dependencies: [32, 11, 1464, 4290, 2]
+// Dependencies: [32, 11, 1483, 4290, 2]
 // Exports: generateInviteKeyFromUrlParams, getInviteInstanceId, getInviteKeySearchSuffix, parseExtraDataFromInviteKey, parseInviteCodeFromInviteKey
 
 // Module 4289 (readSnowflake)
@@ -34,7 +34,7 @@ function generateInviteKeyFromExtraData(closure_1) {
       obj[message] = targetMessageId;
     }
   }
-  const json = importDefault(1464).stringify(obj);
+  const json = importDefault(1483).stringify(obj);
   let combined = baseCode;
   if ("" !== json) {
     const _HermesInternal = HermesInternal;
@@ -57,7 +57,7 @@ export const generateInviteKeyFromUrlParams = function generateInviteKeyFromUrlP
       substr = search.substring(1);
     }
     try {
-      let obj = importDefault(1464);
+      let obj = importDefault(1483);
       const parsed = obj.parse(substr);
       const firstQueryStringValue = require(4290) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
       const obj2 = require(4290) /* getFirstQueryStringValue */;
@@ -90,8 +90,8 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
     obj[0] = tmp2;
     return obj;
   } else {
-    const parsed = importDefault(1464).parse(tmp3);
-    const obj4 = importDefault(1464);
+    const parsed = importDefault(1483).parse(tmp3);
+    const obj4 = importDefault(1483);
     const tmp12 = require;
     const firstQueryStringValue = require(4290) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
     const obj5 = require(4290) /* getFirstQueryStringValue */;

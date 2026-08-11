@@ -1,10 +1,10 @@
-// Module ID: 13337
-// Function ID: 13338
+// Module ID: 13345
+// Function ID: 13346
 // Name: getWideBannerDismissibleContentVersion
-// Dependencies: [7045, 678, 7032, 2]
+// Dependencies: [7048, 678, 7035, 2]
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 13337 (getWideBannerDismissibleContentVersion)
+// Module 13345 (getWideBannerDismissibleContentVersion)
 import map from "map";
 import { CollectibleShopTab } from "items";
 

@@ -1,10 +1,10 @@
-// Module ID: 8955
-// Function ID: 8956
+// Module ID: 8961
+// Function ID: 8962
 // Name: useLazyAPIPromise
 // Dependencies: [5, 32, 19, 4202, 2]
 // Exports: default
 
-// Module 8955 (useLazyAPIPromise)
+// Module 8961 (useLazyAPIPromise)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

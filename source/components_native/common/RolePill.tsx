@@ -1,10 +1,10 @@
-// Module ID: 9700
-// Function ID: 9701
+// Module ID: 9705
+// Function ID: 9706
 // Name: RolePill
-// Dependencies: [19, 17, 676, 21, 4303, 712, 3974, 5752, 5756, 4001, 4846, 5772, 4299, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 3993, 5752, 5756, 4020, 4846, 5772, 4299, 2]
 // Exports: default
 
-// Module 9700 (RolePill)
+// Module 9705 (RolePill)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -37,7 +37,7 @@ export default function RolePill(role) {
   role = role.role;
   ({ guildId, color } = role);
   let combined;
-  const DeveloperMode = role(3974).DeveloperMode;
+  const DeveloperMode = role(3993).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   let obj = role(5752);
   obj = { guildId, roleId: role.id, size: 12 };

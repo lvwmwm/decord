@@ -1,7 +1,7 @@
 // Module ID: 5784
 // Function ID: 5785
 // Name: useNavigatorShouldCrossfade
-// Dependencies: [19, 500, 4020, 2]
+// Dependencies: [19, 500, 1356, 2]
 // Exports: useNavigatorShouldCrossfade
 
 // Module 5784 (useNavigatorShouldCrossfade)
@@ -11,7 +11,7 @@ const require = arg1;
 const result = require("context").fileFinishedImporting("design/components/Navigator/native/useNavigatorShouldCrossfade.native.tsx");
 
 export const useNavigatorShouldCrossfade = function useNavigatorShouldCrossfade() {
-  const context = React.useContext(require(4020) /* context */.AccessibilityPreferencesContext);
+  const context = React.useContext(require(1356) /* context */.AccessibilityPreferencesContext);
   let enabled = context.prefersCrossfades;
   if (obj.isAndroid()) {
     enabled = context.reducedMotion.enabled;

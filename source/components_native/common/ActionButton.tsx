@@ -1,10 +1,10 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9663
+// Function ID: 9664
 // Name: ActionButton
-// Dependencies: [19, 17, 21, 4719, 7751, 2]
+// Dependencies: [19, 17, 21, 4719, 7753, 2]
 // Exports: default
 
-// Module 9658 (ActionButton)
+// Module 9663 (ActionButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -23,6 +23,6 @@ export default function ActionButton(style) {
   obj[0] = jsx(style.IconComponent, { color: obj.useButtonTextColorStyles(str).color, size: "sm" });
   ({ onPress: obj3[1], accessibilityLabel: obj3[2] } = style);
   obj[3] = str;
-  obj[1] = jsx(require(7751) /* IconButton */.IconButton, { icon: null, onPress: null, accessibilityLabel: null, variant: null, size: "sm" });
+  obj[1] = jsx(require(7753) /* IconButton */.IconButton, { icon: null, onPress: null, accessibilityLabel: null, variant: null, size: "sm" });
   return <View icon={null} onPress={null} accessibilityLabel={null} variant={null} size="sm" />;
 };

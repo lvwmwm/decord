@@ -1,7 +1,7 @@
 // Module ID: 4269
 // Function ID: 4270
 // Name: NativeModules
-// Dependencies: [17, 644, 500, 4270, 691, 3998, 1351, 2]
+// Dependencies: [17, 644, 500, 4270, 691, 4017, 1370, 2]
 // Exports: browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
 // Module 4269 (NativeModules)
@@ -140,11 +140,11 @@ export const browserManagerOpenUrl = function browserManagerOpenUrl(closure_0, C
         }
         return openInChromeURLResult;
       } else {
-        return tmp2(1351).assertNever(selectedBrowser);
+        return tmp2(1370).assertNever(selectedBrowser);
       }
     }
   }
-  importDefault(3998).performURLNavigation(closure_0);
+  importDefault(4017).performURLNavigation(closure_0);
   return Promise.resolve();
 };
 export const browserManagerSelectBrowser = function browserManagerSelectBrowser(selectedBrowser) {

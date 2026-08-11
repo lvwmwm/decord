@@ -1,10 +1,10 @@
-// Module ID: 10535
-// Function ID: 10536
+// Module ID: 10540
+// Function ID: 10541
 // Name: ApplicationDetailsEntry
-// Dependencies: [19, 17, 21, 4303, 712, 10513, 10536, 10538, 11, 10511, 4247, 1236, 4823, 10515, 10540, 4267, 8902, 10542, 10233, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 10518, 10541, 10543, 11, 10516, 4247, 1236, 4823, 10520, 10545, 4267, 8908, 10547, 10238, 4299, 2]
 // Exports: default
 
-// Module 10535 (ApplicationDetailsEntry)
+// Module 10540 (ApplicationDetailsEntry)
 import "Text";
 import { View } from "RobotIcon";
 import jsxProd from "jsxProd";
@@ -48,7 +48,7 @@ export default function ApplicationDetails(arg0) {
   ({ isEmbeddedFlow, connectedAccount } = arg0);
   let obj = importDefault(11);
   const tmp2 = createCacheKey();
-  let obj1 = require(10511) /* items */;
+  let obj1 = require(10516) /* items */;
   let joined = null;
   const securityMessage = obj1.getSecurityMessage(scopes);
   if (null != redirectUri) {
@@ -81,12 +81,12 @@ export default function ApplicationDetails(arg0) {
   const date = new Date(obj.extractTimestamp(application.id));
   const tmp13 = closure_5;
   const tmp14 = View;
-  obj2[1] = require(10515) /* getApplicationDetailsText */.getApplicationDetailsText(application);
+  obj2[1] = require(10520) /* getApplicationDetailsText */.getApplicationDetailsText(application);
   items[1] = callback(ApplicationDetailsEntry, obj2);
   let tmp18Result = null;
   if (null != connectedAccount) {
     const obj3 = { iconComponent: null, text: null };
-    obj3[0] = tmp5(10540).HammerIcon;
+    obj3[0] = tmp5(10545).HammerIcon;
     const intl2 = tmp5(1236).intl;
     obj3[1] = intl2.string(tmp5(1236).t["8qui3M"]);
     tmp18Result = tmp18(tmp19, obj3);
@@ -97,11 +97,11 @@ export default function ApplicationDetails(arg0) {
   obj4[1] = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["+1bjc8"], { date });
   items[3] = callback(ApplicationDetailsEntry, obj4);
   tmp18Result = null;
-  if (scopes.includes(require(8902) /* set */.OAuth2Scopes.BOT)) {
+  if (scopes.includes(require(8908) /* set */.OAuth2Scopes.BOT)) {
     tmp18Result = null;
     if (null != approximateGuildCount) {
       const obj5 = { iconComponent: null, text: null };
-      obj5[0] = tmp5(10542).RobotIcon;
+      obj5[0] = tmp5(10547).RobotIcon;
       const intl4 = tmp5(1236).intl;
       const obj6 = { guildCount: null };
       obj6[0] = approximateGuildCount;
@@ -110,22 +110,22 @@ export default function ApplicationDetails(arg0) {
     }
   }
   items[4] = tmp18Result;
-  const tmp5Result = require(10515) /* getApplicationDetailsText */;
-  items[5] = callback(ApplicationDetailsEntry, { iconComponent: require(10233) /* ShieldIcon */.ShieldIcon, text: securityMessage });
+  const tmp5Result = require(10520) /* getApplicationDetailsText */;
+  items[5] = callback(ApplicationDetailsEntry, { iconComponent: require(10238) /* ShieldIcon */.ShieldIcon, text: securityMessage });
   let mapped = null;
   if (null != disclosures) {
     mapped = disclosures.map((toFixed) => {
-      let obj = callback(10513);
+      let obj = callback(10518);
       const textForDisclosure = obj.getTextForDisclosure(toFixed);
-      if (callback(10513).ApplicationDisclosure.IP_LOCATION === toFixed) {
+      if (callback(10518).ApplicationDisclosure.IP_LOCATION === toFixed) {
         obj = { iconComponent: null };
-        obj[0] = tmp(10536).GlobeEarthIcon;
+        obj[0] = tmp(10541).GlobeEarthIcon;
         let tmp4 = obj;
       } else {
         tmp4 = null;
-        if (tmp(10513).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
+        if (tmp(10518).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
           obj = { iconComponent: null };
-          obj[0] = tmp(10538).EmbedIcon;
+          obj[0] = tmp(10543).EmbedIcon;
           tmp4 = obj;
         }
       }

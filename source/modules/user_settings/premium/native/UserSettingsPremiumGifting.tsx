@@ -1,9 +1,9 @@
-// Module ID: 12826
-// Function ID: 12827
+// Module ID: 12830
+// Function ID: 12831
 // Name: GiftingSectionTitle
-// Dependencies: [32, 19, 17, 8790, 6861, 676, 1905, 21, 4303, 712, 1348, 5767, 4299, 6877, 1480, 1609, 589, 12, 4538, 6881, 12740, 9578, 8786, 12693, 709, 6862, 6883, 8793, 7593, 6013, 8623, 12827, 1236, 12828, 12834, 12838, 12841, 12843, 7405, 8514, 2380, 12844, 5823, 2]
+// Dependencies: [32, 19, 17, 8796, 6863, 676, 1924, 21, 4303, 712, 1367, 5767, 4299, 6879, 1499, 1628, 589, 12, 4538, 6883, 12744, 9583, 8792, 12697, 709, 6864, 6885, 8799, 7595, 6015, 8629, 12831, 1236, 12832, 12838, 12842, 12845, 12847, 7407, 8520, 2399, 12848, 5823, 2]
 
-// Module 12826 (GiftingSectionTitle)
+// Module 12830 (GiftingSectionTitle)
 import getSystemLocale from "getSystemLocale";
 import importAllResult from "useBlockedPaymentsConfig";
 import get_ActivityIndicator from "apply";
@@ -29,7 +29,7 @@ let unpackModuleId;
 const require = arg1;
 function GiftingSectionTitle(title) {
   title = title.title;
-  if (importDefault(1348)("UserSettingsPremiumGifting")) {
+  if (importDefault(1367)("UserSettingsPremiumGifting")) {
     let obj = { title: null };
     obj[0] = title;
     let tmp3Result = tmp3(tmp4(5767).TableRowGroupTitle, obj);

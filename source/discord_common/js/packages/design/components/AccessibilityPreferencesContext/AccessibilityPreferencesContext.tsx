@@ -1,9 +1,9 @@
-// Module ID: 4020
-// Function ID: 4021
+// Module ID: 1356
+// Function ID: 1357
 // Name: context
 // Dependencies: [19, 2]
 
-// Module 4020 (context)
+// Module 1356 (context)
 import importAllResult from "noop";
 
 const context = require("noop").createContext({ reducedMotion: { enabled: false, rawValue: "no-preference" }, prefersCrossfades: false, forcedColors: { enabled: false, rawValue: "none" }, alwaysShowLinkDecorations: false, highContrastModeEnabled: false, keyboardModeEnabled: true, switchIconsEnabled: false });

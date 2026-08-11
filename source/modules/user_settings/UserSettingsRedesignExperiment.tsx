@@ -1,7 +1,7 @@
 // Module ID: 5171
 // Function ID: 5172
 // Name: apexExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: getIsEligibleForUserSettingsRedesign4DExperiment, useIsEligibleForUserSettingsRedesign4DExperiment
 
 // Module 5171 (apexExperiment)

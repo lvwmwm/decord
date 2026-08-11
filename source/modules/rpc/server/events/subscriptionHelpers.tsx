@@ -1,10 +1,10 @@
-// Module ID: 13770
-// Function ID: 13771
+// Module ID: 13778
+// Function ID: 13779
 // Name: getInitialSubscriptionPayload
-// Dependencies: [1371, 10592, 7160, 4206, 676, 4328, 10593, 10976, 4849, 13733, 7183, 2]
+// Dependencies: [1390, 10597, 7161, 4206, 676, 4328, 10598, 10981, 4849, 13741, 7184, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 13770 (getInitialSubscriptionPayload)
+// Module 13778 (getInitialSubscriptionPayload)
 import participantFromServer from "participantFromServer";
 import map from "map";
 import initializeState from "initializeState";
@@ -68,9 +68,9 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
       return tmp28;
     }
   } else if (tmp.THERMAL_STATE_UPDATE === participantFromServer) {
-    const thermalState = require(10976) /* useThermalState */.getThermalState();
+    const thermalState = require(10981) /* useThermalState */.getThermalState();
     let tmp23 = null;
-    if (thermalState !== require(10976) /* useThermalState */.ThermalStates.UNHANDLED) {
+    if (thermalState !== require(10981) /* useThermalState */.ThermalStates.UNHANDLED) {
       let obj2 = { thermal_state: null };
       obj2[0] = thermalState;
       tmp23 = obj2;
@@ -82,13 +82,13 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     obj3[0] = obj3.getIsScreenLandscape() ? closure_8.LANDSCAPE : closure_8.PORTRAIT;
     return obj3;
   } else if (tmp.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === participantFromServer) {
-    obj2 = require(13733) /* activityInstanceConnectedParticipants */;
+    obj2 = require(13741) /* activityInstanceConnectedParticipants */;
     return obj2.activityInstanceConnectedParticipants();
   } else if (tmp.QUEST_ENROLLMENT_STATUS_UPDATE === participantFromServer) {
     const quest_id = c3.quest_id;
     if (quest_id) {
       quest = quest.getQuest(quest_id);
-      obj = require(7183) /* getApplicationIdsByTaskTypes */;
+      obj = require(7184) /* getApplicationIdsByTaskTypes */;
       const activityApplicationId = obj.getActivityApplicationId(quest);
       let tmp11 = null;
       if (null != quest) {

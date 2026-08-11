@@ -1,15 +1,15 @@
-// Module ID: 15882
-// Function ID: 15883
+// Module ID: 15899
+// Function ID: 15900
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7120, 3938, 1903, 676, 21, 1297, 4303, 712, 589, 12340, 9081, 12, 1351, 4846, 1236, 4299, 5778, 2]
+// Dependencies: [32, 19, 17, 7121, 3957, 1922, 676, 21, 1297, 4303, 712, 589, 12343, 9087, 12, 1370, 4846, 1236, 4299, 5778, 2]
 // Exports: default
 
-// Module 15882 (UserProfileYourFriendsCard)
+// Module 15899 (UserProfileYourFriendsCard)
 import _slicedToArray from "_slicedToArray";
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import { View } from "getSystemLocale";
 import recomputeAffinities from "recomputeAffinities";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { RelationshipTypes } from "ME";
 import jsxProd from "jsxProd";
@@ -51,12 +51,12 @@ export default function UserProfileYourFriendsCard(arg0) {
     userAffinities = userAffinities.getUserAffinities();
     return userAffinities.map((otherUserId) => otherUserId.otherUserId);
   });
-  const items1 = [upsertRelationship];
+  const items1 = [markAllUserIdListsStale];
   stateFromStoresArray1 = _require(589).useStateFromStoresArray(items1, () => friendIDs.getFriendIDs());
   const obj2 = _require(589);
-  gameRelationshipsByType = _require(12340).useGameRelationshipsByType(RelationshipTypes.FRIEND);
+  gameRelationshipsByType = _require(12343).useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const userAffinitiesV2 = _undefined(9081).fetchUserAffinitiesV2();
+    const userAffinitiesV2 = _undefined(9087).fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
   const effect1 = stateFromStoresArray1.useEffect(() => {
@@ -68,7 +68,7 @@ export default function UserProfileYourFriendsCard(arg0) {
     const takeResult = found.take(5);
     const tmp3 = outer1_8;
     const tmp4 = _undefined;
-    let valueResult = mapped.filter(_undefined(1351).isNotNullish).value();
+    let valueResult = mapped.filter(_undefined(1370).isNotNullish).value();
     if (valueResult.length >= 5) {
       dependencyMap(valueResult);
     } else {
@@ -78,11 +78,11 @@ export default function UserProfileYourFriendsCard(arg0) {
       const uniqResult = mapped1.uniq();
       const mapped2 = mapped1.uniq().take(5 - valueResult.length).map(tmp3.getUser);
       const takeResult1 = mapped1.uniq().take(5 - valueResult.length);
-      valueResult = mapped2.filter(tmp4(1351).isNotNullish).value();
+      valueResult = mapped2.filter(tmp4(1370).isNotNullish).value();
       const items = [];
       HermesBuiltin.arraySpread(valueResult, HermesBuiltin.arraySpread(valueResult, 0));
       dependencyMap(items);
-      const iter2 = mapped2.filter(tmp4(1351).isNotNullish);
+      const iter2 = mapped2.filter(tmp4(1370).isNotNullish);
     }
   }, items2);
   const items3 = [first, , ];

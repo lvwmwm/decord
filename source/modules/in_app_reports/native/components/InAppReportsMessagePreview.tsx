@@ -1,10 +1,10 @@
-// Module ID: 8040
-// Function ID: 8041
+// Module ID: 8042
+// Function ID: 8043
 // Name: MessagePreview
-// Dependencies: [19, 17, 21, 4303, 712, 8041, 4151, 4299, 1236, 8589, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 8043, 4152, 4299, 1236, 8595, 2]
 // Exports: default
 
-// Module 8040 (MessagePreview)
+// Module 8042 (MessagePreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/
 
 export default function MessagePreview(message) {
   const tmp = createCacheKey();
-  let obj = require(4151) /* hexToRgba */;
+  let obj = require(4152) /* hexToRgba */;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -35,7 +35,7 @@ export default function MessagePreview(message) {
   const items = [callback(require(4299) /* Text */.Text, obj), ];
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   const items1 = [tmp.chatItemContainer, { borderColor: hexWithOpacityResult }];
-  items[1] = callback(View, { style: items1, children: callback(importDefault(8589), obj2) });
+  items[1] = callback(View, { style: items1, children: callback(importDefault(8595), obj2) });
   obj[1] = items;
   return callback2(View, obj);
 };

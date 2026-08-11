@@ -1,10 +1,10 @@
-// Module ID: 6126
-// Function ID: 6127
+// Module ID: 6128
+// Function ID: 6129
 // Name: BoostGemIllocon
-// Dependencies: [21, 5268, 6127, 2]
+// Dependencies: [21, 5268, 6129, 2]
 // Exports: BoostGemIllocon
 
-// Module 6126 (BoostGemIllocon)
+// Module 6128 (BoostGemIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BoostGemIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const BoostGemIllocon = function BoostGemIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6127);
+  obj[0] = importDefault(6129);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

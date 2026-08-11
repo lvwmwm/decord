@@ -1,14 +1,14 @@
-// Module ID: 15206
-// Function ID: 15207
+// Module ID: 15215
+// Function ID: 15216
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 1371, 4322, 3938, 21, 15207, 15219, 15220, 647, 15197, 2]
+// Dependencies: [19, 1390, 4322, 3957, 21, 15216, 15228, 15229, 647, 15206, 2]
 // Exports: default, useCallActivityData
 
-// Module 15206 (HappeningNowCardUnifiedVC)
+// Module 15215 (HappeningNowCardUnifiedVC)
 import "noop";
 import participantFromServer from "participantFromServer";
 import reset from "reset";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -31,7 +31,7 @@ export default function HappeningNowCardUnifiedVC(arg0) {
   }
   const channelId = voiceState.channelId;
   let obj = channelId(647);
-  const items = [participantFromServer, reset, upsertRelationship];
+  const items = [participantFromServer, reset, markAllUserIdListsStale];
   const items1 = [channelId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     if (null == channelId) {
@@ -70,7 +70,7 @@ export default function HappeningNowCardUnifiedVC(arg0) {
     obj[3] = stream;
     obj[4] = fullwidth;
     obj[5] = panelVariant;
-    let tmp5 = jsx(importDefault(15207), { index: null, userId: null, guildId: null, stream: null, fullwidth: null, panelVariant: null });
+    let tmp5 = jsx(importDefault(15216), { index: null, userId: null, guildId: null, stream: null, fullwidth: null, panelVariant: null });
   } else if (null != activity) {
     obj = { index: null, voiceState: null, fullwidth: null, guildId: null, activity: null, userId: null, cardKey: null, panelVariant: null };
     obj[0] = index;
@@ -81,7 +81,7 @@ export default function HappeningNowCardUnifiedVC(arg0) {
     obj[5] = userId;
     obj[6] = cardKey;
     obj[7] = panelVariant;
-    tmp5 = jsx(importDefault(15219), { index: null, voiceState: null, fullwidth: null, guildId: null, activity: null, userId: null, cardKey: null, panelVariant: null });
+    tmp5 = jsx(importDefault(15228), { index: null, voiceState: null, fullwidth: null, guildId: null, activity: null, userId: null, cardKey: null, panelVariant: null });
   } else {
     let obj1 = { index: null, voiceState: null, fullwidth: null, guildId: null, panelVariant: null };
     obj1[0] = index;
@@ -89,13 +89,13 @@ export default function HappeningNowCardUnifiedVC(arg0) {
     obj1[2] = fullwidth;
     obj1[3] = guildId;
     obj1[4] = panelVariant;
-    tmp5 = jsx(importDefault(15220), { index: null, voiceState: null, fullwidth: null, guildId: null, panelVariant: null });
+    tmp5 = jsx(importDefault(15229), { index: null, voiceState: null, fullwidth: null, guildId: null, panelVariant: null });
   }
   return tmp5;
 };
 export const useCallActivityData = function useCallActivityData(channel_id) {
   const _require = channel_id;
-  const items = [participantFromServer, reset, upsertRelationship];
+  const items = [participantFromServer, reset, markAllUserIdListsStale];
   const items1 = [channel_id];
   return _require(647).useStateFromStoresObject(items, () => {
     if (null == channelId) {

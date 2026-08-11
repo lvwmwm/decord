@@ -1,7 +1,7 @@
 // Module ID: 5568
 // Function ID: 5569
 // Name: useGestureHandler
-// Dependencies: [1634, 5427, 5400]
+// Dependencies: [1653, 5427, 5400]
 
 // Module 5568 (useGestureHandler)
 const require = arg1;
@@ -19,7 +19,7 @@ arg5.useGestureHandler = (source, state, gestureSource, onStart, onChange, onEnd
   let closure_5 = onEnd;
   let closure_6 = onFinalize;
   let obj = { handleOnStart: null, handleOnChange: null, handleOnEnd: null, handleOnFinalize: null };
-  let obj1 = _require(1634);
+  let obj1 = _require(1653);
   class R {
     constructor(arg0) {
       closure_1.value = closure_0(closure_1[1]).State.BEGAN;
@@ -50,8 +50,8 @@ arg5.useGestureHandler = (source, state, gestureSource, onStart, onChange, onEnd
   U.__workletHash = 9050442757159;
   U.__initData = closure_3;
   const items1 = [state, gestureSource, source, onChange];
-  obj[1] = _require(1634).useWorkletCallback(U, items1);
-  const obj4 = _require(1634);
+  obj[1] = _require(1653).useWorkletCallback(U, items1);
+  const obj4 = _require(1653);
   class C {
     constructor(arg0) {
       if (closure_2.value === closure_0) {
@@ -72,8 +72,8 @@ arg5.useGestureHandler = (source, state, gestureSource, onStart, onChange, onEnd
   C.__workletHash = 10682034812271;
   C.__initData = closure_4;
   const items2 = [state, gestureSource, source, onEnd];
-  obj[2] = _require(1634).useWorkletCallback(C, items2);
-  const obj5 = _require(1634);
+  obj[2] = _require(1653).useWorkletCallback(C, items2);
+  const obj5 = _require(1653);
   class T {
     constructor(arg0) {
       if (closure_2.value === closure_0) {
@@ -94,6 +94,6 @@ arg5.useGestureHandler = (source, state, gestureSource, onStart, onChange, onEnd
   T.__workletHash = 9696716573416;
   T.__initData = closure_5;
   const items3 = [state, gestureSource, source, onFinalize];
-  obj[3] = _require(1634).useWorkletCallback(T, items3);
+  obj[3] = _require(1653).useWorkletCallback(T, items3);
   return obj;
 };

@@ -1,9 +1,9 @@
-// Module ID: 7225
-// Function ID: 7226
+// Module ID: 7226
+// Function ID: 7227
 // Name: listKey
-// Dependencies: [32, 1376, 1372, 4315, 3931, 1381, 7226, 12, 1383, 11, 5923, 589, 709, 2]
+// Dependencies: [32, 1395, 1391, 4315, 3950, 1400, 7227, 12, 1402, 11, 5923, 589, 709, 2]
 
-// Module 7225 (listKey)
+// Module 7226 (listKey)
 import _slicedToArray from "_slicedToArray";
 import { ALL_CHANNEL_TYPES } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -28,7 +28,7 @@ function listKey(channelId, sortOrder, tagFilter, tagSetting) {
   }
 }
 function getSortValue(id) {
-  if (arg1 === require(1381) /* set */.ThreadSortOrder.LATEST_ACTIVITY) {
+  if (arg1 === require(1400) /* set */.ThreadSortOrder.LATEST_ACTIVITY) {
     id = generateOldThreadCutoff.lastMessageId(id.id);
   } else {
     id = id.id;
@@ -111,7 +111,7 @@ function resortListState(value) {
     const mapped = sorted.map((id) => id.id);
     const tmp7Result = importDefault(12)(store.getAllThreadsForParent(value.channelId));
     value.threads = mapped.reverse().value();
-  } else if (sortOrder === sortOrder(1381).ThreadSortOrder.LATEST_ACTIVITY) {
+  } else if (sortOrder === sortOrder(1400).ThreadSortOrder.LATEST_ACTIVITY) {
     id = id.id;
     let id2 = generateOldThreadCutoff.lastMessageId(id);
   } else {
@@ -348,8 +348,8 @@ const archivedThreadsStore = new ArchivedThreadsStore(require("dispatcher"), {
           const _Array2 = Array;
           obj[4] = Array.from(tagFilter.tagFilter);
           obj[5] = tagFilter.sortOrder;
-          const result = require(7226) /* trackForumChannelSeenBatch */.trackForumMorePostsLoaded(obj);
-          const obj3 = require(7226) /* trackForumChannelSeenBatch */;
+          const result = require(7227) /* trackForumChannelSeenBatch */.trackForumMorePostsLoaded(obj);
+          const obj3 = require(7227) /* trackForumChannelSeenBatch */;
         }
         resortListState(value);
         value.hasMore = tagFilter.hasMore;

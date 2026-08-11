@@ -1,14 +1,14 @@
-// Module ID: 9820
-// Function ID: 9821
+// Module ID: 9825
+// Function ID: 9826
 // Name: getMuteSettingLabel
-// Dependencies: [3931, 1372, 1891, 3938, 4499, 1903, 676, 685, 1236, 4494, 7224, 5262, 5257, 9821, 2]
+// Dependencies: [3950, 1391, 1910, 3957, 4499, 1922, 676, 685, 1236, 4494, 7225, 5262, 5257, 9826, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 9820 (getMuteSettingLabel)
+// Module 9825 (getMuteSettingLabel)
 import storeThread from "storeThread";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -54,7 +54,7 @@ export const getMuteSettingLabel = function getMuteSettingLabel(channel, guild) 
 export const getMuteSettingSublabel = function getMuteSettingSublabel(channel, guild) {
   if (null != channel) {
     const obj = require(4494) /* computeChannelName */;
-    let name = obj.computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true);
+    let name = obj.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true);
   } else if (null != guild) {
     name = guild.name;
   }
@@ -64,7 +64,7 @@ export const handleUnmutePress = function handleUnmutePress(channelId, guildId) 
   const channel = store.getChannel(channelId);
   if (null != channel) {
     if (channel.isThread()) {
-      let tmp7Result = tmp7(7224);
+      let tmp7Result = tmp7(7225);
       const result = tmp7Result.setNotificationSettings(channel, { muted: false });
     } else {
       tmp7Result = tmp7(5262);
@@ -79,14 +79,14 @@ export const handleMuteSettingPress = function handleMuteSettingPress(arg0) {
   let onOptionPress;
   ({ guildId, onOptionPress } = arg0);
   ({ channelId, muteDurationSeconds } = arg0);
-  const muteSettings = importAll(9821).getMuteSettings(muteDurationSeconds);
+  const muteSettings = importAll(9826).getMuteSettings(muteDurationSeconds);
   const channel = store.getChannel(channelId);
   guild = guild.getGuild(guildId);
   if (null != onOptionPress) {
     onOptionPress(muteSettings);
   } else if (null != channel) {
     if (channel.isThread()) {
-      let tmp4Result = tmp4(7224);
+      let tmp4Result = tmp4(7225);
       const result = tmp4Result.setNotificationSettings(channel, muteSettings);
     } else {
       tmp4Result = tmp4(5262);

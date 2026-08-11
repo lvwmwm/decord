@@ -1,9 +1,9 @@
-// Module ID: 1413
-// Function ID: 1414
+// Module ID: 1432
+// Function ID: 1433
 // Name: TypeTag
 // Dependencies: [2]
 
-// Module 1413 (TypeTag)
+// Module 1432 (TypeTag)
 const forResult = Symbol.for("PlainRecord.TypeTag");
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/libdiscore/js_shim/js/PlainRecord.tsx");
 

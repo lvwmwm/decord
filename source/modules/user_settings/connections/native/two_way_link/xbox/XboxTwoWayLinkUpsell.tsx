@@ -1,10 +1,10 @@
-// Module ID: 14212
-// Function ID: 14213
+// Module ID: 14220
+// Function ID: 14221
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 676, 21, 4303, 1974, 14213, 1236, 5268, 14214, 1358, 10493, 2]
+// Dependencies: [19, 676, 21, 4303, 1993, 14221, 1236, 5268, 14222, 1377, 10498, 2]
 // Exports: XboxTwoWayLinkUpsell
 
-// Module 14212 (XboxTwoWayLinkUpsell)
+// Module 14220 (XboxTwoWayLinkUpsell)
 import "noop";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -18,7 +18,7 @@ let closure_6 = createCacheKey.createStyles({ upsellImage: { alignSelf: "center"
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxTwoWayLinkUpsell.tsx");
 
 export const XboxTwoWayLinkUpsell = function XboxTwoWayLinkUpsell() {
-  let obj = importDefault(1974);
+  let obj = importDefault(1993);
   const articleURL = obj.getArticleURL(constants.XBOX_CONNECTION);
   obj = { title: null, body: null, img: null, newIndicatorDismissibleContent: null, onPress: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -27,12 +27,12 @@ export const XboxTwoWayLinkUpsell = function XboxTwoWayLinkUpsell() {
   obj[1] = intl2.format(require(1236) /* getSystemLocale */.t.OnERSS, { help_article: articleURL });
   obj = { style: callback().upsellImage, source: null, resizeMode: "contain" };
   const tmp = callback();
-  obj[1] = importDefault(14214);
+  obj[1] = importDefault(14222);
   obj[2] = jsx(importDefault(5268), { style: callback().upsellImage, source: null, resizeMode: "contain" });
-  obj[3] = require(1358) /* DismissibleContent */.DismissibleContent.XBOX_ONE_WAY_RECONNECT;
+  obj[3] = require(1377) /* DismissibleContent */.DismissibleContent.XBOX_ONE_WAY_RECONNECT;
   obj[4] = function onPress() {
     const items = [constants.RELINK_UPSELL];
     return callback(table[10]).showModal(items);
   };
-  return jsx(require(14213) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage, source: null, resizeMode: "contain" });
+  return jsx(require(14221) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage, source: null, resizeMode: "contain" });
 };

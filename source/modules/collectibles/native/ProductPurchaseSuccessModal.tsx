@@ -1,10 +1,10 @@
-// Module ID: 10126
-// Function ID: 10127
+// Module ID: 10131
+// Function ID: 10132
 // Name: CancelButton
-// Dependencies: [32, 853, 19, 17, 4295, 676, 21, 4303, 712, 1930, 10125, 5277, 5326, 1236, 4036, 4713, 4304, 4272, 7011, 10127, 4005, 4725, 9348, 10129, 589, 10130, 10131, 9423, 8895, 9438, 9374, 5328, 10139, 9375, 9387, 9446, 9554, 10158, 4299, 7013, 4714, 2]
+// Dependencies: [32, 853, 19, 17, 4295, 676, 21, 4303, 712, 1949, 10130, 5277, 5326, 1236, 4042, 4713, 4304, 4272, 7014, 10132, 4024, 4725, 9354, 10134, 589, 10135, 10136, 9429, 8901, 9444, 9380, 5328, 10144, 9381, 9393, 9452, 9559, 10163, 4299, 7016, 4714, 2]
 // Exports: default
 
-// Module 10126 (CancelButton)
+// Module 10131 (CancelButton)
 import BalanceWidgetPill from "BalanceWidgetPill";
 import _toArray from "_toArray";
 import importDefaultResult1 from "importDefaultResult1";
@@ -120,22 +120,22 @@ let closure_16 = createCacheKey.createStyles((arg0) => {
   obj[6] = { position: "absolute", backgroundColor: importDefault(712).colors.BLACK, top: 0, bottom: 0, left: 0, right: 0 };
   obj[7] = { flexGrow: 1, flexDirection: "column", justifyContent: "center" };
   let num = 0;
-  if (arg0 === require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+  if (arg0 === require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
     num = 1;
   }
   const obj2 = { flexDirection: "row", justifyContent: "center", alignItems: "center", flex: num, marginTop: null, marginHorizontal: null };
   let str = 0;
-  if (arg0 === require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+  if (arg0 === require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
     str = "20%";
   }
   obj2[4] = str;
   let PX_32;
-  if (arg0 === require(1930) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
+  if (arg0 === require(1949) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
     PX_32 = tmp(712).space.PX_32;
   }
   obj2[5] = PX_32;
   if (flag) {
-    if (arg0 === tmp3(1930).CollectiblesItemType.AVATAR_DECORATION) {
+    if (arg0 === tmp3(1949).CollectiblesItemType.AVATAR_DECORATION) {
       const obj3 = { shadowColor: null, shadowOffset: null, shadowOpacity: 1, shadowRadius: 60, elevation: 24 };
       obj3[0] = tmp(712).unsafe_rawColors.PRIMARY_630;
       obj3[1] = { width: 0, height: 0 };
@@ -147,7 +147,7 @@ let closure_16 = createCacheKey.createStyles((arg0) => {
     const obj4 = { paddingTop: null, minHeight: null, flexDirection: "column", alignItems: "center", justifyContent: "flex-start", gap: null };
     obj4[0] = tmp(712).space.PX_24;
     let str2;
-    if (arg0 === tmp3(1930).CollectiblesItemType.AVATAR_DECORATION) {
+    if (arg0 === tmp3(1949).CollectiblesItemType.AVATAR_DECORATION) {
       str2 = "32%";
     }
     obj4[1] = str2;

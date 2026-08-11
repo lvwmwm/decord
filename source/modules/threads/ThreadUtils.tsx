@@ -1,10 +1,10 @@
-// Module ID: 7240
-// Function ID: 7241
+// Module ID: 7241
+// Function ID: 7242
 // Name: getAccessibilityLabelFormatter
-// Dependencies: [109, 4315, 4499, 3931, 1235, 676, 1236, 6958, 4498, 698, 7233, 5257, 1384, 589, 11, 3883, 2]
+// Dependencies: [109, 4315, 4499, 3950, 1235, 676, 1236, 6961, 4498, 698, 7234, 5257, 1403, 589, 11, 3902, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 7240 (getAccessibilityLabelFormatter)
+// Module 7241 (getAccessibilityLabelFormatter)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -27,7 +27,7 @@ let result = require("updateUserGuildSettingsInternal").fileFinishedImporting("m
 
 export const getTimestampString = require("getTimestampString");
 export const getTimestampAccessibilityLabel = function getTimestampAccessibilityLabel(extractTimestampResult) {
-  return importDefault(6958)(extractTimestampResult, getAccessibilityLabelFormatter);
+  return importDefault(6961)(extractTimestampResult, getAccessibilityLabelFormatter);
 };
 export const trackThreadBrowserTab = function trackThreadBrowserTab() {
   require(4498) /* collectGuildAnalyticsMetadata */.trackWithMetadata(constants.THREAD_BROWSER_TAB_CHANGED);
@@ -45,7 +45,7 @@ export const trackActiveThreadsPopoutOpened = function trackActiveThreadsPopoutO
 export const trackThreadNotificationSettingsUpdated = function trackThreadNotificationSettingsUpdated(outer1_0, c1) {
   let can_send_message;
   let parent_channel_type;
-  let obj = require(7233) /* collectThreadMetadata */;
+  let obj = require(7234) /* collectThreadMetadata */;
   const result = obj.collectThreadMetadata(outer1_0);
   if (null != result) {
     const guildId = outer1_0.getGuildId();
@@ -127,8 +127,8 @@ export const useLastMessageTimestamp = function useLastMessageTimestamp(thread) 
   }
   let valueOfResult = null;
   if (null != createTimestamp) {
-    valueOfResult = importDefault(3883)(createTimestamp).valueOf();
-    const obj3 = importDefault(3883)(createTimestamp);
+    valueOfResult = importDefault(3902)(createTimestamp).valueOf();
+    const obj3 = importDefault(3902)(createTimestamp);
   }
   if (extractTimestampResult == null) {
     extractTimestampResult = valueOfResult;

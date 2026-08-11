@@ -1,7 +1,7 @@
 // Module ID: 7889
 // Function ID: 7890
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7890, 7873, 7874]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7890, 7875, 7876]
 
 // Module 7889 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const FeFlood = arg1;
+const FeOffset = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeFlood {
+class FeOffset {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeFlood);
+    tmp = _isNativeReflectConstruct(this, FeOffset);
     tmp2 = __esModule;
-    obj = __esModule(FeFlood);
+    obj = __esModule(FeOffset);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,31 +51,33 @@ class FeFlood {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeFlood, require("_isNativeReflectConstruct"));
+require("_inherits")(FeOffset, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
     const self = this;
+    const merged = Object.assign(this.props);
     const obj = {
       ref(arg0) {
         return self.refMethod(arg0);
       }
     };
     const tmp = importDefault(7890);
-    const merged = Object.assign(self(7873).extractFilter(this.props));
-    const merged1 = Object.assign(importDefault(7873)(this.props));
+    const merged1 = Object.assign(self(7875).extractFilter(this.props));
+    const obj2 = self(7875);
+    const merged2 = Object.assign(self(7875).extractIn(this.props));
     return <tmp ref={function ref(arg0) {
       return self.refMethod(arg0);
     }} />;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeFlood, items);
-importDefaultResultResult.displayName = "FeFlood";
+const importDefaultResultResult = importDefaultResult(FeOffset, items);
+importDefaultResultResult.displayName = "FeOffset";
 obj = {};
 let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.floodColor = "black";
-obj.floodOpacity = 1;
+obj.dx = 0;
+obj.dy = 0;
 importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

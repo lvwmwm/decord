@@ -1,12 +1,12 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12553
+// Function ID: 12554
 // Name: openLoadingIndicatorDebugBody
-// Dependencies: [32, 19, 17, 4295, 4994, 4521, 1960, 1903, 6876, 676, 21, 4303, 712, 4643, 4732, 1988, 589, 4299, 12550, 4036, 4304, 1236, 4846, 2]
+// Dependencies: [32, 19, 17, 4295, 4994, 4521, 1979, 1922, 6878, 676, 21, 4303, 712, 4643, 4732, 2007, 589, 4299, 12554, 4042, 4304, 1236, 4846, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 12549 (openLoadingIndicatorDebugBody)
+// Module 12553 (openLoadingIndicatorDebugBody)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_4036";
+import importAllResult from "module_4042";
 import { View } from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -239,7 +239,7 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
     }
     return isStaffResult;
   });
-  let obj2 = stateFromStores(4036);
+  let obj2 = stateFromStores(4042);
   const fn = function t() {
     let obj = { transform: null };
     if (stateFromStores) {
@@ -267,14 +267,14 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
     }
     return tmp7;
   };
-  obj = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(4036).withRepeat, withSequence: stateFromStores(4036).withSequence, withTiming: stateFromStores(4304).withTiming, Easing: stateFromStores(4036).Easing };
+  obj = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(4042).withRepeat, withSequence: stateFromStores(4042).withSequence, withTiming: stateFromStores(4304).withTiming, Easing: stateFromStores(4042).Easing };
   fn.__closure = obj;
   fn.__workletHash = 17454673879926;
   fn.__initData = closure_19;
   obj = { style: tmp.container, children: null };
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items2 = [tmp.pulse, animatedStyle];
-  const items3 = [callback2(importDefault(4036).View, { style: items2 }), ];
+  const items3 = [callback2(importDefault(4042).View, { style: items2 }), ];
   obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
   const intl = stateFromStores(1236).intl;
   obj1[2] = intl.string(stateFromStores(1236).t.JwIJMV);

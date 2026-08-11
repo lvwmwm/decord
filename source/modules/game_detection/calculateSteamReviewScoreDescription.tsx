@@ -1,10 +1,10 @@
-// Module ID: 9318
-// Function ID: 9319
+// Module ID: 9324
+// Function ID: 9325
 // Name: calculateSteamReviewScoreDescription
 // Dependencies: [4338, 2]
 // Exports: calculateSteamReviewScoreDescription
 
-// Module 9318 (calculateSteamReviewScoreDescription)
+// Module 9324 (calculateSteamReviewScoreDescription)
 const result = require("set").fileFinishedImporting("modules/game_detection/calculateSteamReviewScoreDescription.tsx");
 
 export const calculateSteamReviewScoreDescription = function calculateSteamReviewScoreDescription(rating, ratingCount, isRecentRating) {

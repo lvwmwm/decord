@@ -1,10 +1,10 @@
-// Module ID: 10847
-// Function ID: 10848
+// Module ID: 10852
+// Function ID: 10853
 // Name: getUserAgnosticState
-// Dependencies: [676, 698, 500, 1605, 589, 709, 2]
+// Dependencies: [676, 698, 500, 1624, 589, 709, 2]
 // Exports: isMobileOverlaySupported
 
-// Module 10847 (getUserAgnosticState)
+// Module 10852 (getUserAgnosticState)
 import { AnalyticEvents } from "ME";
 import { DeviceSettingsStore } from "initialize";
 
@@ -27,8 +27,8 @@ prototype["initialize"] = function initialize(enabled) {
 prototype["getEnabled"] = function getEnabled() {
   let isAndroidResult = require(500) /* set */.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = !require(1605) /* isMetaQuest */.isMetaQuest();
-    const tmpResult = require(1605) /* isMetaQuest */;
+    isAndroidResult = !require(1624) /* isMetaQuest */.isMetaQuest();
+    const tmpResult = require(1624) /* isMetaQuest */;
   }
   if (isAndroidResult) {
     isAndroidResult = c4;
@@ -51,8 +51,8 @@ export default mobileVoiceOverlayStore;
 export const isMobileOverlaySupported = function isMobileOverlaySupported() {
   let isAndroidResult = require(500) /* set */.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = !require(1605) /* isMetaQuest */.isMetaQuest();
-    const tmpResult = require(1605) /* isMetaQuest */;
+    isAndroidResult = !require(1624) /* isMetaQuest */.isMetaQuest();
+    const tmpResult = require(1624) /* isMetaQuest */;
   }
   return isAndroidResult;
 };

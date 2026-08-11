@@ -1,10 +1,10 @@
-// Module ID: 12131
-// Function ID: 12132
+// Module ID: 12134
+// Function ID: 12135
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 4295, 4328, 21, 4303, 589, 4036, 4304, 1297, 1236, 4714, 2]
+// Dependencies: [19, 17, 4295, 4328, 21, 4303, 589, 4042, 4304, 1297, 1236, 4714, 2]
 // Exports: default
 
-// Module 12131 (ActivitiesPrivateChannelCallTooltip)
+// Module 12134 (ActivitiesPrivateChannelCallTooltip)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -46,11 +46,11 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
       return obj;
     }
   }
-  obj = { withRepeat: tmp2(4036).withRepeat, withSequence: tmp2(4036).withSequence, withTiming: tmp2(4304).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
+  obj = { withRepeat: tmp2(4042).withRepeat, withSequence: tmp2(4042).withSequence, withTiming: tmp2(4304).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
   T.__closure = obj;
   T.__workletHash = 4621705591670;
   T.__initData = closure_9;
-  const animatedStyle = num(4036).useAnimatedStyle(T);
+  const animatedStyle = num(4042).useAnimatedStyle(T);
   obj = { style: items1, children: null };
   items1 = [tmp.tooltipContainer, animatedStyle];
   const obj1 = { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: null, title: null, children: null };
@@ -67,5 +67,5 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   obj3[1] = jsx(num(4714).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
   obj1[5] = <View style={tmp.closeButtonWrapper}>{null}</View>;
   obj[1] = jsx(num(1297).Tooltip, { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: null, title: null, children: null });
-  return jsx(importDefault(4036).View, { style: items1, children: null });
+  return jsx(importDefault(4042).View, { style: items1, children: null });
 };

@@ -1,8 +1,8 @@
-// Module ID: 9677
-// Function ID: 9678
-// Dependencies: [19, 21, 8570, 5783, 8382, 9678, 500, 2]
+// Module ID: 9682
+// Function ID: 9683
+// Dependencies: [19, 21, 8576, 5783, 8388, 9683, 500, 2]
 
-// Module 9677
+// Module 9682
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 import importAllResult from "noop";
@@ -29,9 +29,9 @@ const memoResult = require("noop").memo(function ModalStackNavigator(children) {
         headerLeft: null,
         headerTitleAlign: "center"
       };
-      obj[1] = outer1_0(8382).getRenderModalCloseImage(navigation.navigation);
+      obj[1] = outer1_0(8388).getRenderModalCloseImage(navigation.navigation);
       let merged = Object.assign(dependencyMap);
-      let merged1 = Object.assign(outer1_1(9678)());
+      let merged1 = Object.assign(outer1_1(9683)());
       return obj;
     },
     children: <createNativeStackNavigator.Screen {...obj} />

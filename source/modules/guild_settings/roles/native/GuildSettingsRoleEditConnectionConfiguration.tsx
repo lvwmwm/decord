@@ -1,10 +1,10 @@
-// Module ID: 16723
-// Function ID: 16724
+// Module ID: 16735
+// Function ID: 16736
 // Name: Header
-// Dependencies: [32, 19, 17, 676, 5125, 21, 4303, 712, 4239, 11036, 1297, 1416, 4153, 5374, 1236, 4846, 5326, 5768, 16724, 500, 4299, 5000, 5767, 2]
+// Dependencies: [32, 19, 17, 676, 5125, 21, 4303, 712, 4239, 11041, 1297, 1435, 1363, 5374, 1236, 4846, 5326, 5768, 16736, 500, 4299, 5000, 5767, 2]
 // Exports: default
 
-// Module 16723 (Header)
+// Module 16735 (Header)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "TableSwitchRow";
@@ -30,7 +30,7 @@ function Header(arg0) {
   let platform;
   ({ platform, integration, applicationId } = arg0);
   ({ onRemove, locked } = arg0);
-  let obj = require(11036) /* request */;
+  let obj = require(11041) /* request */;
   let application;
   if (integration != null) {
     application = integration.application;
@@ -80,8 +80,8 @@ function Header(arg0) {
       tmp8Result = tmp11;
     }
   } else if (null != platform) {
-    let tmp3Result = tmp3(1416);
-    tmp3Result = tmp3(4153);
+    let tmp3Result = tmp3(1435);
+    tmp3Result = tmp3(1363);
     const icon = platform.icon;
     const obj1 = { source: null, disableColor: true };
     obj1[0] = tmp3Result.makeSource(tmp3Result.isThemeDark(tmp2) ? icon.darkPNG : icon.lightPNG);
@@ -214,7 +214,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (num == null) {
     num = -1;
   }
-  let obj = metadataField(16724);
+  let obj = metadataField(16736);
   const realizedOperatorForResult = obj.realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   let value;
@@ -223,7 +223,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  let tmpResult = tmp(16724);
+  let tmpResult = tmp(16736);
   str = tmpResult.displayedValueFor(value, realizedOperatorForResult);
   str = str.toString();
   let mapped = React;
@@ -645,7 +645,7 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
     }
     if (configurationItems[0].configuration.connectionType === closure_11) {
       let obj = { hasIcons: true, children: null };
-      obj = { platform: null, integration: "a", applicationId: "_desired", onRemove: "a", locked: "isArray" };
+      obj = { platform: null, integration: "a", applicationId: "<string:4261413309>", onRemove: "<string:1358955360>", locked: "<string:910274058>" };
       obj[2] = applicationId;
       obj[3] = function onRemove() {
         return onConfigurationChange(null, configurationItems[0].index);

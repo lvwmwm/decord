@@ -1,9 +1,9 @@
-// Module ID: 10678
-// Function ID: 10679
+// Module ID: 10683
+// Function ID: 10684
 // Name: areParticipantsEqual
-// Dependencies: [32, 19, 17, 1371, 4316, 1218, 4351, 1960, 5137, 10658, 9739, 4321, 21, 4303, 1297, 712, 9748, 12, 10655, 10679, 589, 4497, 10680, 10683, 10693, 10709, 10710, 10717, 10651, 10751, 4005, 8235, 9063, 10665, 10661, 10664, 1474, 500, 8895, 2]
+// Dependencies: [32, 19, 17, 1390, 4316, 1218, 4351, 1979, 5137, 10663, 9744, 4321, 21, 4303, 1297, 712, 9753, 12, 10660, 10684, 589, 4497, 10685, 10688, 10698, 10714, 10715, 10722, 10656, 10756, 4024, 8239, 9069, 10670, 10666, 10669, 1493, 500, 8901, 2]
 
-// Module 10678 (areParticipantsEqual)
+// Module 10683 (areParticipantsEqual)
 import registerAsset from "registerAsset";
 import importAllResult from "isWatchTogetherApplication";
 import get_ActivityIndicator from "apply";
@@ -348,18 +348,18 @@ const memoResult = importAllResult.memo((arg0) => {
   let width;
   ({ channel, pipParticipant, selfParticipant } = arg0);
   const tmp = callback4();
-  let obj = require(10665) /* useIsViewingActivity */;
+  let obj = require(10670) /* useIsViewingActivity */;
   obj = { channelId: channel.id };
   const isViewingActivity = obj.useIsViewingActivity(obj);
-  let obj2 = require(10661) /* useShouldForcePipOrientation */;
+  let obj2 = require(10666) /* useShouldForcePipOrientation */;
   const shouldForcePipOrientation = obj2.useShouldForcePipOrientation({ channel });
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
-  const tmp6 = importDefault(10664)(obj);
+  const tmp6 = importDefault(10669)(obj);
   const obj1 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background, children: null };
   const items = [isViewingActivity ? tmp.pipFab : tmp.pip, , , ];
-  ({ width, height } = importDefault(1474)());
+  ({ width, height } = importDefault(1493)());
   const tmp10 = closure_4;
-  const tmp7 = importDefault(1474)();
+  const tmp7 = importDefault(1493)();
   let elevationShadow;
   if (tmp2Result.isAndroid()) {
     elevationShadow = tmp.elevationShadow;

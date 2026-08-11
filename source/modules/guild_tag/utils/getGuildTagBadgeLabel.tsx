@@ -1,10 +1,10 @@
-// Module ID: 16679
-// Function ID: 16680
+// Module ID: 16691
+// Function ID: 16692
 // Name: getGuildTagBadgeLabel
-// Dependencies: [8052, 1236, 1351, 2]
+// Dependencies: [8054, 1236, 1370, 2]
 // Exports: default
 
-// Module 16679 (getGuildTagBadgeLabel)
+// Module 16691 (getGuildTagBadgeLabel)
 import { GuildTagBadgeKind } from "items";
 
 const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("modules/guild_tag/utils/getGuildTagBadgeLabel.tsx");
@@ -134,6 +134,6 @@ export default function getGuildTagBadgeLabel(arg0) {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t["6euAa8"]);
   } else {
-    require(1351) /* isDiscordFrontendDevelopment */.assertNever(arg0);
+    require(1370) /* isDiscordFrontendDevelopment */.assertNever(arg0);
   }
 };

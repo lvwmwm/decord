@@ -1,10 +1,10 @@
-// Module ID: 8698
-// Function ID: 8699
+// Module ID: 8704
+// Function ID: 8705
 // Name: saveGuildFolders
-// Dependencies: [5, 4119, 1303, 1302, 676, 1305, 1355, 1306, 1337, 709, 4149, 3974, 2]
+// Dependencies: [5, 4124, 1303, 1302, 676, 1305, 1374, 1306, 1337, 709, 4151, 3993, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 8698 (saveGuildFolders)
+// Module 8704 (saveGuildFolders)
 import closure_3 from "SystemThemeState";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import initialize from "initialize";
@@ -36,19 +36,19 @@ export default {
       obj = {};
     } else {
       obj = { inlineAttachmentMedia: null, inlineEmbedMedia: null, renderEmbeds: null, renderReactions: null, animateEmoji: null, animateStickers: null, gifAutoPlay: null };
-      const InlineAttachmentMedia = require(3974) /* explicitContentFromProto */.InlineAttachmentMedia;
+      const InlineAttachmentMedia = require(3993) /* explicitContentFromProto */.InlineAttachmentMedia;
       obj[0] = InlineAttachmentMedia.getSetting();
-      const InlineEmbedMedia = require(3974) /* explicitContentFromProto */.InlineEmbedMedia;
+      const InlineEmbedMedia = require(3993) /* explicitContentFromProto */.InlineEmbedMedia;
       obj[1] = InlineEmbedMedia.getSetting();
-      const RenderEmbeds = require(3974) /* explicitContentFromProto */.RenderEmbeds;
+      const RenderEmbeds = require(3993) /* explicitContentFromProto */.RenderEmbeds;
       obj[2] = RenderEmbeds.getSetting();
-      const RenderReactions = require(3974) /* explicitContentFromProto */.RenderReactions;
+      const RenderReactions = require(3993) /* explicitContentFromProto */.RenderReactions;
       obj[3] = RenderReactions.getSetting();
-      const AnimateEmoji = require(3974) /* explicitContentFromProto */.AnimateEmoji;
+      const AnimateEmoji = require(3993) /* explicitContentFromProto */.AnimateEmoji;
       obj[4] = AnimateEmoji.getSetting();
-      const AnimateStickers = require(3974) /* explicitContentFromProto */.AnimateStickers;
+      const AnimateStickers = require(3993) /* explicitContentFromProto */.AnimateStickers;
       obj[5] = AnimateStickers.getSetting();
-      const GifAutoPlay = require(3974) /* explicitContentFromProto */.GifAutoPlay;
+      const GifAutoPlay = require(3993) /* explicitContentFromProto */.GifAutoPlay;
       obj[6] = GifAutoPlay.getSetting();
     }
     obj[1] = obj;
@@ -86,7 +86,7 @@ export default {
               let closure_0 = tmp3;
               if (outer1_0) {
                 let dependencyMap = 1;
-                const PreloadedUserSettingsActionCreators = outer1_0(1355).PreloadedUserSettingsActionCreators;
+                const PreloadedUserSettingsActionCreators = outer1_0(1374).PreloadedUserSettingsActionCreators;
                 v0 = 2;
                 c3 = 1;
                 let obj1 = { value: null, done: false };
@@ -119,7 +119,7 @@ export default {
                   if (gradientPreset != null) {
                     id = gradientPreset.id;
                   }
-                  const ClientThemeSettings = tmp4(3974).ClientThemeSettings;
+                  const ClientThemeSettings = tmp4(3993).ClientThemeSettings;
                   const setting = ClientThemeSettings.getSetting();
                   let prop;
                   if (setting != null) {
@@ -141,7 +141,7 @@ export default {
                   }
                   obj[1] = tmp17;
                   arg0.clientThemeSettings = obj;
-                }, outer1_0(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
+                }, outer1_0(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
                 return obj1;
               }
             }
@@ -176,10 +176,10 @@ export default {
             }
             const obj4 = { backgroundGradientPresetId: null, customUserThemeSettings: null };
             obj4[0] = id;
-            let ClientThemeSettings = outer1_0(3974).ClientThemeSettings;
+            let ClientThemeSettings = outer1_0(3993).ClientThemeSettings;
             obj4[1] = ClientThemeSettings.getSetting().customUserThemeSettings;
             obj3[1] = obj4;
-            const DeveloperMode = outer1_0(3974).DeveloperMode;
+            const DeveloperMode = outer1_0(3993).DeveloperMode;
             obj3[2] = DeveloperMode.getSetting();
           }
           const obj5 = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: null };
@@ -211,11 +211,11 @@ export default {
   },
   updateLocale(arg0) {
     const _require = arg0;
-    const PreloadedUserSettingsActionCreators = _require(1355).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = _require(1374).PreloadedUserSettingsActionCreators;
     return PreloadedUserSettingsActionCreators.updateAsync("localization", (arg0) => {
       const StringValue = callback(outer1_2[8]).StringValue;
       arg0.locale = StringValue.create({ value: callback });
-    }, _require(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, _require(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
   },
   updateTheme(theme) {
     const _require = theme;
@@ -223,7 +223,7 @@ export default {
     obj = { theme };
     obj.dispatch({ type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: { appearance: { settings: obj } } });
     if (initialize.shouldSync("appearance")) {
-      const PreloadedUserSettingsActionCreators = _require(1355).PreloadedUserSettingsActionCreators;
+      const PreloadedUserSettingsActionCreators = _require(1374).PreloadedUserSettingsActionCreators;
       PreloadedUserSettingsActionCreators.updateAsync("appearance", (arg0) => {
         if (outer1_7.DARK === theme) {
           let DARK = theme(outer1_2[7]).Theme.DARK;
@@ -237,13 +237,13 @@ export default {
           DARK = theme(outer1_2[7]).Theme.DARK;
         }
         arg0.theme = DARK;
-      }, _require(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      }, _require(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
     }
   }
 };
 export const saveGuildFolders = function saveGuildFolders(compatibleGuildFolders) {
   const _require = compatibleGuildFolders;
-  const PreloadedUserSettingsActionCreators = _require(1355).PreloadedUserSettingsActionCreators;
+  const PreloadedUserSettingsActionCreators = _require(1374).PreloadedUserSettingsActionCreators;
   return PreloadedUserSettingsActionCreators.updateAsync("guildFolders", (arg0) => {
     arg0.folders = compatibleGuildFolders.map((guildIds) => {
       const GuildFolder = callback(table[7]).GuildFolder;
@@ -276,7 +276,7 @@ export const saveGuildFolders = function saveGuildFolders(compatibleGuildFolders
       }
       return obj;
     });
-  }, _require(1355).UserSettingsDelay.FREQUENT_USER_ACTION);
+  }, _require(1374).UserSettingsDelay.FREQUENT_USER_ACTION);
 };
 export const saveClientTheme = function saveClientTheme(backgroundGradientPresetId, INFREQUENT_USER_ACTION) {
   backgroundGradientPresetId = backgroundGradientPresetId.backgroundGradientPresetId;

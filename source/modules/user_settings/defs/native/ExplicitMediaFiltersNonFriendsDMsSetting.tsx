@@ -1,16 +1,16 @@
-// Module ID: 14076
-// Function ID: 14077
+// Module ID: 14084
+// Function ID: 14085
 // Name: useObscuredContentNonFriendsDmSettingValue
-// Dependencies: [8082, 14067, 7059, 5915, 1236, 14068, 10447, 14070, 2]
+// Dependencies: [8084, 14075, 7062, 5915, 1236, 14076, 10452, 14078, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 14076 (useObscuredContentNonFriendsDmSettingValue)
+// Module 14084 (useObscuredContentNonFriendsDmSettingValue)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
 function useObscuredContentNonFriendsDmSettingValue() {
-  const obj = require(14067) /* useExplicitContentSettingOrDefault */;
-  return require(7059) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
+  const obj = require(14075) /* useExplicitContentSettingOrDefault */;
+  return require(7062) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
 }
 function onObscuredContentNonFriendsDmOnPress() {
   let obj = require(5915) /* resolveExplicitContentSettingWithDefaults */;
@@ -25,7 +25,7 @@ function onObscuredContentNonFriendsDmOnPress() {
     return obj.updateExplicitContentSetting(obj);
   };
   obj[3] = obj.getExplicitContentSettingOrDefault().explicitContentNonFriendDm;
-  const result = require(14068) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+  const result = require(14076) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
 }
 const pressable = createToggle.createPressable({
   useTitle: function getTitle() {

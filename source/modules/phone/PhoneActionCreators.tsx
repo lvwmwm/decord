@@ -1,9 +1,9 @@
-// Module ID: 8519
-// Function ID: 8520
+// Module ID: 8525
+// Function ID: 8526
 // Name: ChangePhoneReason
-// Dependencies: [5, 1218, 8517, 676, 709, 530, 5127, 503, 2]
+// Dependencies: [5, 1218, 8523, 676, 709, 530, 5127, 503, 2]
 
-// Module 8519 (ChangePhoneReason)
+// Module 8525 (ChangePhoneReason)
 import sendRequest from "sendRequest";
 import fetchFingerprint from "fetchFingerprint";
 import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY";

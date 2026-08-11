@@ -1,10 +1,10 @@
-// Module ID: 9644
-// Function ID: 9645
+// Module ID: 9649
+// Function ID: 9650
 // Name: TvIcon
-// Dependencies: [19, 21, 712, 4004, 9645, 2]
+// Dependencies: [19, 21, 712, 4023, 9650, 2]
 // Exports: TvIcon
 
-// Module 9644 (TvIcon)
+// Module 9649 (TvIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const TvIcon = function TvIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9645) /* registerAsset */;
+  obj[0] = require(9650) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

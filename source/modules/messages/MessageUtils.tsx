@@ -1,10 +1,10 @@
-// Module ID: 9756
-// Function ID: 9757
+// Module ID: 9761
+// Function ID: 9762
 // Name: canViewPotentiallyNSFWChannel
-// Dependencies: [1372, 1903, 4517, 2]
+// Dependencies: [1391, 1922, 4517, 2]
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 9756 (canViewPotentiallyNSFWChannel)
+// Module 9761 (canViewPotentiallyNSFWChannel)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

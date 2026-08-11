@@ -1,10 +1,10 @@
-// Module ID: 14756
-// Function ID: 14757
+// Module ID: 14766
+// Function ID: 14767
 // Name: _writeCaches
-// Dependencies: [5, 1372, 6935, 709, 2]
+// Dependencies: [5, 1391, 6938, 709, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 14756 (_writeCaches)
+// Module 14766 (_writeCaches)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { ChannelLoader } from "ensureGuildLoaded";
 import handleClearCaches from "handleClearCaches";

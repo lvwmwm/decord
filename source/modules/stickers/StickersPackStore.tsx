@@ -1,7 +1,7 @@
 // Module ID: 5221
 // Function ID: 5222
 // Name: parseServerPackSticker
-// Dependencies: [32, 1413, 1892, 687, 4985, 2]
+// Dependencies: [32, 1432, 1911, 687, 4985, 2]
 
 // Module 5221 (parseServerPackSticker)
 import _slicedToArray from "_slicedToArray";

@@ -1,7 +1,7 @@
 // Module ID: 5762
 // Function ID: 5763
 // Name: showSimpleActionSheet
-// Dependencies: [4271, 5763, 1988, 2]
+// Dependencies: [4271, 5763, 2007, 2]
 // Exports: showSimpleActionSheet
 
 // Module 5762 (showSimpleActionSheet)
@@ -16,5 +16,5 @@ export const showSimpleActionSheet = function showSimpleActionSheet(key) {
   obj.hideActionSheet = function hideActionSheet() {
     outer1_1(outer1_2[0]).hideActionSheet(key);
   };
-  obj.openLazy(key(1988)(5763, dependencyMap.paths), key, obj, key.stackingBehavior);
+  obj.openLazy(key(2007)(5763, dependencyMap.paths), key, obj, key.stackingBehavior);
 };

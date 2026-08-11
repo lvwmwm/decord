@@ -1,10 +1,10 @@
-// Module ID: 15642
-// Function ID: 15643
+// Module ID: 15659
+// Function ID: 15660
 // Name: MainTabsContentScrim
-// Dependencies: [17, 21, 4303, 712, 4036, 2]
+// Dependencies: [17, 21, 4303, 712, 4042, 2]
 // Exports: MainTabsContentScrim
 
-// Module 15642 (MainTabsContentScrim)
+// Module 15659 (MainTabsContentScrim)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -21,7 +21,7 @@ const result = require("createCacheKey").fileFinishedImporting("modules/main_tab
 export const MainTabsContentScrim = function MainTabsContentScrim(translateX) {
   translateX = translateX.translateX;
   const maxWidth = translateX.maxWidth;
-  let obj = translateX(4036);
+  let obj = translateX(4042);
   const fn = function c() {
     const obj = { opacity: null };
     const value = translateX.get();
@@ -29,11 +29,11 @@ export const MainTabsContentScrim = function MainTabsContentScrim(translateX) {
     obj[0] = translateX(outer1_2[4]).interpolate(value, items, [0, 0.5], translateX(outer1_2[4]).Extrapolation.CLAMP);
     return obj;
   };
-  obj = { interpolate: translateX(4036).interpolate, translateX, maxWidth, Extrapolation: translateX(4036).Extrapolation };
+  obj = { interpolate: translateX(4042).interpolate, translateX, maxWidth, Extrapolation: translateX(4042).Extrapolation };
   fn.__closure = obj;
   fn.__workletHash = 7933670426250;
   fn.__initData = closure_5;
   const animatedStyle = obj.useAnimatedStyle(fn);
   const style = [callback().scrim, animatedStyle];
-  return jsx(maxWidth(4036).View, { style, pointerEvents: "none" });
+  return jsx(maxWidth(4042).View, { style, pointerEvents: "none" });
 };

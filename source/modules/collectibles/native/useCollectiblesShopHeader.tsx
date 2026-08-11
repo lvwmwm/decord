@@ -1,10 +1,10 @@
-// Module ID: 14857
-// Function ID: 14858
+// Module ID: 14867
+// Function ID: 14868
 // Name: CollectiblesShopHeaderTitle
-// Dependencies: [19, 17, 1903, 678, 676, 5161, 8785, 21, 4303, 712, 11526, 4299, 1236, 589, 9423, 10461, 7000, 5748, 5363, 4271, 10151, 1988, 698, 11166, 5164, 4509, 8783, 10139, 7751, 8767, 8598, 14858, 1480, 2]
+// Dependencies: [19, 17, 1922, 678, 676, 5161, 8791, 21, 4303, 712, 11529, 4299, 1236, 589, 9429, 10466, 7003, 5748, 5363, 4271, 10156, 2007, 698, 11171, 5164, 4509, 8789, 10144, 7753, 8773, 8604, 14868, 1499, 2]
 // Exports: default
 
-// Module 14857 (CollectiblesShopHeaderTitle)
+// Module 14867 (CollectiblesShopHeaderTitle)
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
 import { View } from "QUICK_SWITCHER";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -21,7 +21,7 @@ const require = arg1;
 function CollectiblesShopHeaderTitle(currentScreen) {
   const tmp = createCacheKey();
   let obj = { style: tmp.headerTitleContainer, children: null };
-  const items = [callback(require(11526) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(11529) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: null };
   if (currentScreen.currentScreen === constants.ORBS) {
     const intl2 = tmp5(1236).intl;
@@ -53,7 +53,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl = currentScreen(balance[12]).intl;
     obj[0] = intl.string(currentScreen(balance[12]).t["xNiB/O"]);
     obj[1] = function action() {
-      let obj = callback(7000);
+      let obj = callback(7003);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
       const items = [callback2(5748).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
       obj[0] = items;
@@ -71,7 +71,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl2 = tmp(tmp2[12]).intl;
     obj[0] = intl2.string(currentScreen(balance[12]).t.RSyoZu);
     obj[1] = function action() {
-      let obj = callback(7000);
+      let obj = callback(7003);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
       const items = [callback2(5748).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
       obj[0] = items;
@@ -89,7 +89,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl3 = tmp(tmp2[12]).intl;
     obj[0] = intl3.string(currentScreen(balance[12]).t.EBYkzk);
     obj[1] = function action() {
-      let obj = callback(7000);
+      let obj = callback(7003);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
       const items = [callback2(5748).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
       obj[0] = items;
@@ -221,7 +221,7 @@ export default function useCollectiblesShopHeader() {
   }
   const currentScreen = obj.currentScreen;
   let navigation;
-  navigation = currentScreen(1480).useNavigation();
+  navigation = currentScreen(1499).useNavigation();
   const items = [navigation, currentScreen];
   const layoutEffect = React.useLayoutEffect(() => {
     navigation.setOptions({

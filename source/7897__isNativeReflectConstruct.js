@@ -1,7 +1,7 @@
 // Module ID: 7897
 // Function ID: 7898
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 7851]
+// Dependencies: [41, 42, 93, 95, 98, 7853, 7876]
 
 // Module 7897 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,7 +9,7 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
-const FePointLight = arg1;
+const FeImage = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FePointLight {
+class FeImage {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FePointLight);
+    tmp = _isNativeReflectConstruct(this, FeImage);
     tmp2 = __esModule;
-    obj = __esModule(FePointLight);
+    obj = __esModule(FeImage);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,18 +49,19 @@ class FePointLight {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FePointLight, require("noop").Component);
-const items = [
-  {
-    key: "render",
-    value: function render() {
-      const result = FePointLight(7851).warnUnimplementedFilter();
-      return null;
-    }
+require("_inherits")(FeImage, require("_isNativeReflectConstruct"));
+let obj = {
+  key: "render",
+  value: function render() {
+    const result = FeImage(7853).warnUnimplementedFilter();
+    return null;
   }
-];
-const importDefaultResultResult = importDefaultResult(FePointLight, items);
-importDefaultResultResult.displayName = "FePointLight";
-importDefaultResultResult.defaultProps = {};
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeImage, items);
+importDefaultResultResult.displayName = "FeImage";
+obj = {};
+const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

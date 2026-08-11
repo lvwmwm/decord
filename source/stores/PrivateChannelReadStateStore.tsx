@@ -1,9 +1,9 @@
-// Module ID: 13017
-// Function ID: 13018
+// Module ID: 13021
+// Function ID: 13022
 // Name: rebuildUnreads
-// Dependencies: [1376, 1372, 4315, 1960, 5840, 1970, 589, 709, 2]
+// Dependencies: [1395, 1391, 4315, 1979, 5840, 1989, 589, 709, 2]
 
-// Module 13017 (rebuildUnreads)
+// Module 13021 (rebuildUnreads)
 import { isPrivate } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
@@ -18,7 +18,7 @@ function rebuildUnreads() {
   if (found.length > 20) {
     found.length = 20;
   }
-  const result = require(1970) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
+  const result = require(1989) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
   let flag = !result;
   if (!result) {
     const _Set = Set;
@@ -33,7 +33,7 @@ function handleConnectionOpen() {
   if (found.length > 20) {
     found.length = 20;
   }
-  const result = require(1970) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
+  const result = require(1989) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
   let flag = !result;
   if (!result) {
     const _Set = Set;
@@ -55,7 +55,7 @@ function handleGenericUpdate(channelId) {
     if (found.length > 20) {
       found.length = 20;
     }
-    const result = require(1970) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
+    const result = require(1989) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
     let flag = !result;
     if (!result) {
       const _Set = Set;
@@ -63,7 +63,7 @@ function handleGenericUpdate(channelId) {
       flag = true;
     }
     tmp4 = flag;
-    const obj = require(1970) /* areArraysShallowlyEqual */;
+    const obj = require(1989) /* areArraysShallowlyEqual */;
   }
   return tmp4;
 }
@@ -97,7 +97,7 @@ const privateChannelReadStateStore = new PrivateChannelReadStateStore(require("d
       if (found.length > 20) {
         found.length = 20;
       }
-      const result = require(1970) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
+      const result = require(1989) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
       let flag = !result;
       if (!result) {
         const _Set = Set;
@@ -105,7 +105,7 @@ const privateChannelReadStateStore = new PrivateChannelReadStateStore(require("d
         flag = true;
       }
       tmp4 = flag;
-      const obj = require(1970) /* areArraysShallowlyEqual */;
+      const obj = require(1989) /* areArraysShallowlyEqual */;
     }
     return tmp4;
   },
@@ -117,7 +117,7 @@ const privateChannelReadStateStore = new PrivateChannelReadStateStore(require("d
       if (found.length > 20) {
         found.length = 20;
       }
-      const result = require(1970) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
+      const result = require(1989) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
       let flag = !result;
       if (!result) {
         const _Set = Set;
@@ -125,7 +125,7 @@ const privateChannelReadStateStore = new PrivateChannelReadStateStore(require("d
         flag = true;
       }
       hasItem = flag;
-      const obj = require(1970) /* areArraysShallowlyEqual */;
+      const obj = require(1989) /* areArraysShallowlyEqual */;
     }
     return hasItem;
   },
@@ -142,7 +142,7 @@ const privateChannelReadStateStore = new PrivateChannelReadStateStore(require("d
       if (found.length > 20) {
         found.length = 20;
       }
-      const result = require(1970) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
+      const result = require(1989) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
       let flag = !result;
       if (!result) {
         const _Set = Set;
@@ -150,7 +150,7 @@ const privateChannelReadStateStore = new PrivateChannelReadStateStore(require("d
         flag = true;
       }
       tmp4 = flag;
-      const obj = require(1970) /* areArraysShallowlyEqual */;
+      const obj = require(1989) /* areArraysShallowlyEqual */;
     }
     return tmp4;
   },
@@ -167,7 +167,7 @@ const privateChannelReadStateStore = new PrivateChannelReadStateStore(require("d
       if (found.length > 20) {
         found.length = 20;
       }
-      const result = require(1970) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
+      const result = require(1989) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
       let flag = !result;
       if (!result) {
         const _Set = Set;
@@ -175,7 +175,7 @@ const privateChannelReadStateStore = new PrivateChannelReadStateStore(require("d
         flag = true;
       }
       tmp4 = flag;
-      const obj = require(1970) /* areArraysShallowlyEqual */;
+      const obj = require(1989) /* areArraysShallowlyEqual */;
     }
     return tmp4;
   },

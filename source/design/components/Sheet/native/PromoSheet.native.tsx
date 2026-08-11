@@ -1,10 +1,10 @@
-// Module ID: 7733
-// Function ID: 7734
+// Module ID: 7735
+// Function ID: 7736
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 4303, 712, 1348, 7734, 5397, 4712, 7735, 4299, 2]
+// Dependencies: [109, 19, 17, 21, 4303, 712, 1367, 7736, 5397, 4712, 7737, 4299, 2]
 // Exports: PromoSheet
 
-// Module 7733 (PromoSheet)
+// Module 7735 (PromoSheet)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -31,7 +31,7 @@ export const PromoSheet = function PromoSheet(arg0) {
   let title;
   ({ description, illustration, graphic, gradientColor } = arg0);
   ({ title, actions } = arg0);
-  const tmp3 = importDefault(1348)("PromoSheet");
+  const tmp3 = importDefault(1367)("PromoSheet");
   importDefault = tmp3;
   const tmp4 = createCacheKey();
   const items = [tmp3, gradientColor];
@@ -59,7 +59,7 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj = {};
       const merged1 = Object.assign(graphic);
       obj.style = tmp4.graphic;
-      let tmp6Result = tmp6(tmp7(7735).Graphic, obj);
+      let tmp6Result = tmp6(tmp7(7737).Graphic, obj);
     }
     const items1 = [tmp6Result, , ];
     let str = "heading-xl/bold";

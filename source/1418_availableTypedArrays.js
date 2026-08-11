@@ -1,0 +1,28 @@
+// Module ID: 1418
+// Function ID: 1419
+// Name: availableTypedArrays
+// Dependencies: [1419]
+
+// Module 1418 (availableTypedArrays)
+if (typeof globalThis !== "undefined") {
+  const global = globalThis;
+}
+
+export default function availableTypedArrays() {
+  let tmp2;
+  const items = [];
+  let num = 0;
+  if (0 < require(1419).length) {
+    do {
+      let tmp = global;
+      tmp2 = require;
+      let tmp3 = dependencyMap;
+      let tmp4 = num;
+      if (typeof global[require(undefined, 1419)[num]] === "function") {
+        items[items.length] = tmp2(1419)[num];
+      }
+      num = num + 1;
+    } while (num < tmp2(1419).length);
+  }
+  return items;
+};

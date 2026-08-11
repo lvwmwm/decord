@@ -1,9 +1,9 @@
-// Module ID: 15783
-// Function ID: 15784
+// Module ID: 15800
+// Function ID: 15801
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 1372, 676, 1235, 21, 4303, 712, 5889, 5369, 10164, 4311, 15784, 647, 1481, 2]
+// Dependencies: [19, 17, 1391, 676, 1235, 21, 4303, 712, 5889, 5369, 10169, 4311, 15801, 647, 1500, 2]
 
-// Module 15783 (ThreadsScreen)
+// Module 15800 (ThreadsScreen)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -42,7 +42,7 @@ function ThreadsScreen(channel) {
   }
   obj[1] = tmp10;
   obj[2] = callback1;
-  const tmp9 = importDefault(15784);
+  const tmp9 = importDefault(15801);
   obj[3] = { paddingBottom: importDefault(5369)({ includeKeyboardHeight: true }).insets.bottom + tmp4(712).space.PX_16, paddingHorizontal: 16 };
   obj[1] = <tmp9 channel={channel} onCreateThreadPress={null} onThreadPress={null} contentContainerStyle={null} />;
   return <tmp8 channel={channel} onCreateThreadPress={null} onThreadPress={null} contentContainerStyle={null} />;
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo((searchContext) => {
   return tmp4;
 });
 const memoResult1 = importAllResult.memo(() => {
-  let obj = channelId(1481);
+  let obj = channelId(1500);
   channelId = obj.useRoute().params.channelId;
   const items = [ensureGuildLoaded];
   const stateFromStores = channelId(647).useStateFromStores(items, () => outer1_5.getChannel(channelId));

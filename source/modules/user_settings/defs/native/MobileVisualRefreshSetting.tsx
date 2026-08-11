@@ -1,9 +1,9 @@
-// Module ID: 14561
-// Function ID: 14562
+// Module ID: 14569
+// Function ID: 14570
 // Name: toggle
-// Dependencies: [1212, 1218, 8082, 1348, 589, 709, 10447, 1236, 2]
+// Dependencies: [1212, 1218, 8084, 1367, 589, 709, 10452, 1236, 2]
 
-// Module 14561 (toggle)
+// Module 14569 (toggle)
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
 import createToggle from "createToggle";
@@ -32,7 +32,7 @@ createToggle = {
     });
   },
   useValue: function useIsRefreshEnabled() {
-    const MobileVisualRefreshExperiment = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */.MobileVisualRefreshExperiment;
+    const MobileVisualRefreshExperiment = require(1367) /* useIsMobileVisualRefreshExperimentEnabled */.MobileVisualRefreshExperiment;
     return MobileVisualRefreshExperiment.useConfig({ location: "SettingsAppearance" }).enabled;
   },
   onValueChange: function onToggleRefresh(arg0) {

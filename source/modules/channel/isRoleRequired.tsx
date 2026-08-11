@@ -1,7 +1,7 @@
 // Module ID: 4794
 // Function ID: 4795
 // Name: isRoleRequired
-// Dependencies: [1376, 505, 3934, 506, 2]
+// Dependencies: [1395, 505, 3953, 506, 2]
 // Exports: default
 
 // Module 4794 (isRoleRequired)
@@ -20,7 +20,7 @@ export default function isRoleRequired(guild_id) {
           if (!obj.canEveryoneRole(Permissions.CONNECT, guild_id)) {
             return true;
           }
-          obj = importAll(3934);
+          obj = importAll(3953);
         }
         let hasItem = null != tmp4;
         if (hasItem) {

@@ -1,0 +1,10 @@
+// Module ID: 11734
+// Function ID: 11735
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 11734 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "856ae0fb80fb3c5e7cc40888f4bebb2b", name: "YoutubeNeutralIcon", type: "png" });

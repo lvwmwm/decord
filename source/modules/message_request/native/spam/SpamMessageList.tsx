@@ -1,10 +1,10 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 15981
+// Function ID: 15982
 // Name: PendingSpamMessageRequestRow
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 11811, 4002, 8445, 4311, 4509, 11803, 698, 4846, 15949, 1297, 9878, 14170, 7967, 1609, 15958, 15965, 15956, 4730, 7061, 7066, 15959, 500, 4299, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 11814, 4021, 8451, 4311, 4509, 11806, 698, 4846, 15966, 1297, 9883, 14178, 7969, 1628, 15975, 15982, 15973, 4730, 7064, 7069, 15976, 500, 4299, 2]
 // Exports: default
 
-// Module 15964 (PendingSpamMessageRequestRow)
+// Module 15981 (PendingSpamMessageRequestRow)
 import Form from "Form";
 import get_ActivityIndicator from "registerAsset";
 import { AnalyticEvents } from "ME";
@@ -204,24 +204,24 @@ export default function SpamMessageList(goToMessageRequestPreview) {
   let closure_4;
   const tmp = createCacheKey();
   importDefault = tmp;
-  const bottom = importDefault(1609)().bottom;
-  let obj = goToMessageRequestPreview(15958);
+  const bottom = importDefault(1628)().bottom;
+  let obj = goToMessageRequestPreview(15975);
   dependencyMap = obj.useSpamMessageRequestCount();
-  arr = importDefault(15965)();
-  let obj1 = goToMessageRequestPreview(15956);
+  arr = importDefault(15982)();
+  let obj1 = goToMessageRequestPreview(15973);
   closure_4 = obj1.useListHasSingleSpamMessageRequest();
   importDefault(4730)(() => {
     let obj = _undefined(698);
     obj = { num_spam_message_requests: dependencyMap };
     obj.track(outer1_7.SPAM_MESSAGE_REQUESTS_VIEWED, obj);
-    obj = { name: goToMessageRequestPreview(7066).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
-    _undefined(7061).increment(obj);
+    obj = { name: goToMessageRequestPreview(7069).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
+    _undefined(7064).increment(obj);
   });
   if (0 === arr.length) {
     obj = { bodyText: null };
     let intl = tmp4(1236).intl;
     obj[0] = intl.string(tmp4(1236).t.hasFPQ);
-    return callback(tmp2(15959), obj);
+    return callback(tmp2(15976), obj);
   } else {
     const items = ["header-section"];
     HermesBuiltin.arraySpread(arr, 1);

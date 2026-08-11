@@ -1,7 +1,7 @@
 // Module ID: 4158
 // Function ID: 4159
 // Name: navigationToRootTabHelper
-// Dependencies: [32, 19, 676, 4159, 1481, 514, 4160, 4165, 4166, 4183, 2]
+// Dependencies: [32, 19, 676, 4159, 1500, 514, 4160, 4165, 4166, 4183, 2]
 // Exports: coerceICYMIRoute, coerceModalRoute, coerceSidebarRoute, getCurrentNavigationRouteName, getCurrentRouteParents, getICYMIRouteIfActive, getOpenModalKey, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToMemberVerification, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, setHomeDrawerState, useCurrentNavigationRouteName, useIsModalOpen, useOpenModalKey
 
 // Module 4158 (navigationToRootTabHelper)
@@ -31,7 +31,7 @@ function navigationToRootTabHelper(arg0, resetRoot) {
         const items = [obj];
         const items1 = [];
         HermesBuiltin.arraySpread(found, HermesBuiltin.arraySpread(tmpResult.wrapRouteForRootNavigator(items), 0));
-        const CommonActions = tmp(1481).CommonActions;
+        const CommonActions = tmp(1500).CommonActions;
         obj = {};
         const merged = Object.assign(rootState);
         obj.routes = items1;
@@ -185,7 +185,7 @@ function popModal(c3, onExited) {
             items[index] = obj;
             let tmp37 = _require;
             let tmp38 = dependencyMap;
-            let CommonActions2 = _require(1481).CommonActions;
+            let CommonActions2 = _require(1500).CommonActions;
             let obj3 = {};
             let tmp39 = obj3;
             let tmp40 = rootState;
@@ -213,7 +213,7 @@ function popModal(c3, onExited) {
           flag = false;
         }
       } else if (null == onExited) {
-        const CommonActions = _require(1481).CommonActions;
+        const CommonActions = _require(1500).CommonActions;
         const obj4 = {};
         const merged5 = Object.assign(rootState);
         obj4.routes = tmp2;
@@ -295,7 +295,7 @@ export const navigateToChannel = function navigateToChannel(channelId) {
         if (null != tmp5) {
           if (tmp5.params.channelId === channelId) {
             const obj3 = {};
-            const CommonActions = tmp(1481).CommonActions;
+            const CommonActions = tmp(1500).CommonActions;
             const obj4 = { channelId: null, guildId: null, messageId: null };
             obj4[0] = channelId;
             obj4[1] = guildId;
@@ -412,7 +412,7 @@ export const resetToAuthRoute = function resetToAuthRoute() {
   let flag = !tmp;
   if (!tmp) {
     rootNavigationRef.dispatch(() => {
-      const CommonActions = callback(1481).CommonActions;
+      const CommonActions = callback(1500).CommonActions;
       return CommonActions.reset(callback(4160).getInitialAuthState());
     });
     flag = true;
@@ -515,7 +515,7 @@ export const popModalsAboveKey = function popModalsAboveKey(voiceChannelKey) {
         if (-1 !== num) {
           if (num !== routes.length - 1) {
             const substr = routes.slice(0, num + 1);
-            const CommonActions = require(1481) /* createStandardNavigationFactories */.CommonActions;
+            const CommonActions = require(1500) /* createStandardNavigationFactories */.CommonActions;
             obj = {};
             const merged = Object.assign(rootState1);
             obj.routes = substr;
@@ -550,7 +550,7 @@ export const popAllModals = function popAllModals() {
       }
       let flag = routes.length !== items.length;
       if (flag) {
-        const CommonActions = require(1481) /* createStandardNavigationFactories */.CommonActions;
+        const CommonActions = require(1500) /* createStandardNavigationFactories */.CommonActions;
         obj = {};
         const merged = Object.assign(rootState);
         obj.routes = items;

@@ -1,13 +1,13 @@
-// Module ID: 14055
-// Function ID: 14056
+// Module ID: 14063
+// Function ID: 14064
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 3938, 21, 4303, 712, 5728, 5748, 1297, 14049, 1236, 5328, 4299, 5767, 14056, 589, 2]
+// Dependencies: [19, 17, 3957, 21, 4303, 712, 5728, 5748, 1297, 14057, 1236, 5328, 4299, 5767, 14064, 589, 2]
 // Exports: default
 
-// Module 14055 (IgnoredUsersList)
+// Module 14063 (IgnoredUsersList)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -20,7 +20,7 @@ function IgnoredUsersList(userIds) {
   importDefault(5728);
   if (0 === userIds.length) {
     let obj = { Illustration: null, body: null };
-    obj[0] = require(14049) /* getBlockedSource */.Blocked;
+    obj[0] = require(14057) /* getBlockedSource */.Blocked;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t.PYrWFW);
     let tmp7 = callback(require(1297) /* Button */.EmptyState, obj);
@@ -55,11 +55,11 @@ createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj1 = { marginTop: require("Themes").space.PX_12, marginBottom: require("Themes").space.PX_8 };
-const result = require("upsertRelationship").fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUsersList.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUsersList.tsx");
 
 export default function ConnectedIgnoredUsersList() {
   let obj = require(589) /* initialize */;
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   obj = { userIds: obj.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs()) };
   return callback(IgnoredUsersList, obj);
 };

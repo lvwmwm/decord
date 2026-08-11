@@ -1,15 +1,15 @@
-// Module ID: 15778
-// Function ID: 15779
+// Module ID: 15795
+// Function ID: 15796
 // Name: SearchIndexingScreen
-// Dependencies: [19, 21, 11732, 11712, 15721, 2]
+// Dependencies: [19, 21, 11735, 11715, 15738, 2]
 // Exports: default
 
-// Module 15778 (SearchIndexingScreen)
+// Module 15795 (SearchIndexingScreen)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("module_11732").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchIndexingScreen.tsx");
+const result = require("module_11735").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchIndexingScreen.tsx");
 
 export default function SearchIndexingScreen(searchContext) {
   searchContext = searchContext.searchContext;
@@ -19,6 +19,6 @@ export default function SearchIndexingScreen(searchContext) {
     obj = { searchContext };
     obj.trackSearchIndexing(obj);
   }, items);
-  const text = searchContext(11712).getIndexingErrorText(searchContext);
-  return jsx(importDefault(15721), { text });
+  const text = searchContext(11715).getIndexingErrorText(searchContext);
+  return jsx(importDefault(15738), { text });
 };

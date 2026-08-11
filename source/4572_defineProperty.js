@@ -1,7 +1,7 @@
 // Module ID: 4572
 // Function ID: 4573
 // Name: defineProperty
-// Dependencies: [1405, 1406, 4573]
+// Dependencies: [1424, 1425, 4573]
 
 // Module 4572 (defineProperty)
 let tmp = typeof Symbol === "function";
@@ -31,7 +31,7 @@ function defineProperties(prototype, ownPropertyDescriptors) {
         let tmp11 = closure_5;
         let tmp12 = require;
         let tmp13 = dependencyMap;
-        let tmp14 = require(1406) /* defineDataProperty */;
+        let tmp14 = require(1425) /* defineDataProperty */;
         if (closure_5) {
           let tmp16 = prototype;
           let tmp17 = tmp7;

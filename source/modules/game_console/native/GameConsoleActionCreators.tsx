@@ -1,10 +1,10 @@
-// Module ID: 10886
-// Function ID: 10887
+// Module ID: 10891
+// Function ID: 10892
 // Name: _transferToPlaystationWithAlert
-// Dependencies: [5, 10879, 4642, 1236, 2]
+// Dependencies: [5, 10884, 4642, 1236, 2]
 // Exports: transferToPlaystationWithAlert
 
-// Module 10886 (_transferToPlaystationWithAlert)
+// Module 10891 (_transferToPlaystationWithAlert)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -22,7 +22,7 @@ function _transferToPlaystationWithAlert() {
       let asyncGeneratorStep = tmp5;
       const lib = lib2;
       let c6 = 1;
-      yield lib(10879).transferToPlayStation(lib, lib2.id, dependencyMap);
+      yield lib(10884).transferToPlayStation(lib, lib2.id, dependencyMap);
       if (1 === tmp8) {
         c6 = 0;
         const obj1 = lib2(4642);

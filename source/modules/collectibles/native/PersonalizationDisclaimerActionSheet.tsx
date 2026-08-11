@@ -1,10 +1,10 @@
-// Module ID: 14851
-// Function ID: 14852
+// Module ID: 14861
+// Function ID: 14862
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 676, 21, 4303, 712, 3998, 1974, 5397, 4299, 1236, 5150, 4714, 7955, 4271, 2]
+// Dependencies: [19, 676, 21, 4303, 712, 4017, 1993, 5397, 4299, 1236, 5150, 4714, 7957, 4271, 2]
 // Exports: default
 
-// Module 14851 (PersonalizationDisclaimerActionSheet)
+// Module 14861 (PersonalizationDisclaimerActionSheet)
 import noop from "noop";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -25,8 +25,8 @@ const result = require("jsxProd").fileFinishedImporting("modules/collectibles/na
 export default function PersonalizationDisclaimerActionSheet() {
   const tmp = createCacheKey();
   const callback = React.useCallback(() => {
-    const obj = callback(3998);
-    obj.openURL(callback(1974).getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
+    const obj = callback(4017);
+    obj.openURL(callback(1993).getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
   }, []);
   let obj = { contentStyles: tmp.container, children: null };
   obj = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: null };
@@ -40,7 +40,7 @@ export default function PersonalizationDisclaimerActionSheet() {
   obj1[2] = callback;
   const obj2 = { color: null };
   obj2[0] = importDefault(712).colors.WHITE;
-  obj1[3] = callback(require(7955) /* LinkExternalSmallIcon */.LinkExternalSmallIcon, obj2);
+  obj1[3] = callback(require(7957) /* LinkExternalSmallIcon */.LinkExternalSmallIcon, obj2);
   const items1 = [callback(require(4714) /* Button */.Button, obj1), ];
   const obj3 = { variant: "tertiary", size: "lg", text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;

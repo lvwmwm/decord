@@ -1,9 +1,9 @@
-// Module ID: 7593
-// Function ID: 7594
+// Module ID: 7595
+// Function ID: 7596
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 7593 (dispatcher)
+// Module 7595 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/UserSettingsModalActionCreators.tsx");
 
 export default {

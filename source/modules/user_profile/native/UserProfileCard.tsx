@@ -1,7 +1,7 @@
 // Module ID: 5775
 // Function ID: 5776
 // Name: Divider
-// Dependencies: [19, 17, 5776, 21, 4303, 712, 4846, 4299, 5778, 1348, 2]
+// Dependencies: [19, 17, 5776, 21, 4303, 712, 4846, 4299, 5778, 1367, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
 // Module 5775 (Divider)
@@ -51,7 +51,7 @@ export default function UserProfileCard(arg0) {
   ({ titleLeadingIcon, titleIcon, titleStyle, children, style } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   const tmp2 = createCacheKey();
-  const tmp4 = importDefault(1348)("UserProfileCard");
+  const tmp4 = importDefault(1367)("UserProfileCard");
   let obj = { style };
   const merged1 = Object.assign(merged);
   let tmp5Result = null != title || null != trailingAction;
@@ -150,7 +150,7 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
 };
 export const UserProfileCardRows = function UserProfileCardRows(children) {
   let closure_0;
-  closure_0 = importDefault(1348)("UserProfileCardRows");
+  closure_0 = importDefault(1367)("UserProfileCardRows");
   const Children = React.Children;
   return callback(closure_8, {
     children: Children.map(children.children, (arg0, arg1) => {

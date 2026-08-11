@@ -1,10 +1,10 @@
-// Module ID: 14582
-// Function ID: 14583
+// Module ID: 14590
+// Function ID: 14591
 // Name: DisplayNameStylesGummyCustomColorSheet
-// Dependencies: [19, 17, 1915, 21, 4303, 712, 4036, 1914, 688, 4272, 4271, 5397, 5396, 1236, 4714, 14583, 13911, 2]
+// Dependencies: [19, 17, 1934, 21, 4303, 712, 4042, 1933, 688, 4272, 4271, 5397, 5396, 1236, 4714, 14591, 13919, 2]
 // Exports: default
 
-// Module 14582 (DisplayNameStylesGummyCustomColorSheet)
+// Module 14590 (DisplayNameStylesGummyCustomColorSheet)
 import noop from "noop";
 import { View } from "set";
 import items3 from "items3";
@@ -33,8 +33,8 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
   onSelect = onSelect.onSelect;
   let sharedValue;
   const tmp = createCacheKey();
-  let obj = onSelect(4036);
-  let obj1 = onSelect(1914);
+  let obj = onSelect(4042);
+  let obj1 = onSelect(1933);
   let obj2 = onSelect(688);
   sharedValue = obj.useSharedValue(obj1.wrapHue(obj2.int2hslRaw(onSelect.initialColor).h));
   const items = [sharedValue, onSelect];
@@ -60,10 +60,10 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
   obj[0] = callback(onSelect(5396).BottomSheetTitleHeader, obj);
   obj2 = { style: tmp.body, children: null };
   const obj3 = { style: tmp.previewWrapper, children: null };
-  obj3[1] = callback(View, { style: tmp.preview, children: callback(sharedValue(14583), { hue: sharedValue }) });
+  obj3[1] = callback(View, { style: tmp.preview, children: callback(sharedValue(14591), { hue: sharedValue }) });
   const items1 = [callback(View, obj3), ];
-  const obj4 = { style: tmp.preview, children: callback(sharedValue(14583), { hue: sharedValue }) };
-  items1[1] = callback(View, { style: tmp.huePickerInset, children: callback(sharedValue(13911), obj6) });
+  const obj4 = { style: tmp.preview, children: callback(sharedValue(14591), { hue: sharedValue }) };
+  items1[1] = callback(View, { style: tmp.huePickerInset, children: callback(sharedValue(13919), obj6) });
   obj2[1] = items1;
   obj[1] = callback2(View, obj2);
   return callback(onSelect(5397).BottomSheet, obj);

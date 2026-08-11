@@ -1,7 +1,7 @@
 // Module ID: 5844
 // Function ID: 5845
 // Name: useCanSeeOnboardingHome
-// Dependencies: [1963, 1372, 1891, 4505, 676, 1379, 5845, 647, 1894, 5249, 4507, 2]
+// Dependencies: [1982, 1391, 1910, 4505, 676, 1398, 5845, 647, 1913, 5249, 4507, 2]
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
 // Module 5844 (useCanSeeOnboardingHome)
@@ -142,7 +142,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           return hasItem1;
         }
       }
-      obj3 = require(1894) /* getFavoritesAwareGuildName */;
+      obj3 = require(1913) /* getFavoritesAwareGuildName */;
       tmp14 = require;
     }
     return false;

@@ -1,12 +1,12 @@
-// Module ID: 9640
-// Function ID: 9641
+// Module ID: 9645
+// Function ID: 9646
 // Name: getDiscoverableApplicationStream
-// Dependencies: [4322, 3938, 676, 589, 2]
+// Dependencies: [4322, 3957, 676, 589, 2]
 // Exports: default
 
-// Module 9640 (getDiscoverableApplicationStream)
+// Module 9645 (getDiscoverableApplicationStream)
 import reset from "reset";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { RelationshipTypes } from "ME";
 
 const require = arg1;
@@ -15,7 +15,7 @@ function getDiscoverableApplicationStream(arg0) {
   let obj2;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [reset, upsertRelationship];
+    const items = [reset, markAllUserIdListsStale];
     tmp = items;
   }
   [obj, obj2] = tmp;
@@ -41,7 +41,7 @@ const result = require("ME").fileFinishedImporting("modules/blocking/useDiscover
 
 export default function useDiscoverableApplicationStream(arg0) {
   const _require = arg0;
-  let items = [reset, upsertRelationship];
+  let items = [reset, markAllUserIdListsStale];
   const items1 = [arg0];
   return _require(589).useStateFromStores(items, () => {
     const items = [outer1_2, outer1_3];

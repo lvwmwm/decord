@@ -1,10 +1,10 @@
-// Module ID: 10035
-// Function ID: 10036
+// Module ID: 10040
+// Function ID: 10041
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1903, 21, 7374, 4303, 712, 589, 9356, 1236, 5270, 10036, 10112, 10115, 10120, 2380, 10159, 10034, 5748, 5728, 5716, 514, 4509, 3960, 9579, 9611, 10163, 5783, 2]
+// Dependencies: [32, 19, 1922, 21, 7376, 4303, 712, 589, 9362, 1236, 5270, 10041, 10117, 10120, 10125, 2399, 10164, 10039, 5748, 5728, 5716, 514, 4509, 3979, 9584, 9616, 10168, 5783, 2]
 // Exports: default
 
-// Module 10035 (PremiumGiftModal)
+// Module 10040 (PremiumGiftModal)
 import _slicedToArray from "_slicedToArray";
 import context from "context";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -75,10 +75,10 @@ export default function PremiumGiftModal(analyticsLocations) {
       }
       return user;
     });
-    let obj2 = recipientUserId(9356);
+    let obj2 = recipientUserId(9362);
     const fetchWishlistAndProfileInfoForUser = obj2.useFetchWishlistAndProfileInfoForUser(recipientUserId);
     ({ wishlist: c1, userProfile: c2, wishlistId: c3, error: c4 } = fetchWishlistAndProfileInfoForUser);
-    let obj3 = recipientUserId(9356);
+    let obj3 = recipientUserId(9362);
     obj = { isGift: true, giftRecipient: null, isSocialLayerStorefrontEnabled: false };
     obj[1] = stateFromStores;
     shouldShowWishlistInDMGifting = obj3.useShouldShowWishlistInDMGifting(obj);
@@ -161,7 +161,7 @@ export default function PremiumGiftModal(analyticsLocations) {
     obj2[obj.SUCCESS] = obj5;
     const obj6 = { title: null, headerLeft: null, headerTransparent: true, headerStyle: null, render: null };
     const intl2 = tmp11(1236).intl;
-    obj6[0] = intl2.string(tmp(2380).roVAey);
+    obj6[0] = intl2.string(tmp(2399).roVAey);
     const tmp11Result4 = recipientUserId(5270);
     obj6[1] = recipientUserId(5270).getHeaderCloseButton(callback);
     obj6[3] = { backgroundColor: "transparent", shadowColor: "transparent" };
@@ -169,7 +169,7 @@ export default function PremiumGiftModal(analyticsLocations) {
       return callback(_undefined(_undefined2[16]), {
         currentProgress: currentProgress.currentProgress,
         onSendGift(arg0) {
-          let obj = callback(10034);
+          let obj = callback(10039);
           obj = { analyticsLocations: null };
           const items = [callback2(5748).GIFTING_BADGE_POST_PURCHASE];
           obj[0] = items;
@@ -194,7 +194,7 @@ export default function PremiumGiftModal(analyticsLocations) {
       obj8[6] = order;
       const obj9 = { currentStep: null, children: null };
       obj9[0] = tmp21[0];
-      let tmpResult = tmp(10163);
+      let tmpResult = tmp(10168);
       const obj10 = { initialRouteName: null, screens: null, onStateChange: null };
       obj10[0] = initialRoute;
       obj10[1] = obj2;
@@ -205,11 +205,11 @@ export default function PremiumGiftModal(analyticsLocations) {
       };
       obj9[1] = tmp23(tmp11(5783).Navigator, obj10);
       obj8[7] = tmp23(tmpResult, obj9);
-      obj7[1] = tmp23(tmp11(9611).NativeGiftContextProvider, obj8);
+      obj7[1] = tmp23(tmp11(9616).NativeGiftContextProvider, obj8);
       let tmp23Result = tmp23(tmp11(5728).AnalyticsLocationProvider, obj7);
     } else {
       const obj11 = { title: null };
-      tmpResult = tmp(9579);
+      tmpResult = tmp(9584);
       const intl3 = tmp11(1236).intl;
       obj11[0] = intl3.string(tmp11(1236).t["JCFN/y"]);
       tmp23Result = tmp23(tmpResult, obj11);

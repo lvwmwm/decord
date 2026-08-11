@@ -1,10 +1,10 @@
-// Module ID: 12580
-// Function ID: 12581
+// Module ID: 12584
+// Function ID: 12585
 // Name: getGiftStyleUrl
-// Dependencies: [17, 1218, 10412, 1903, 4349, 676, 1905, 12581, 12582, 12583, 12584, 12585, 12586, 12587, 12588, 12589, 12590, 12591, 12152, 4146, 8053, 4153, 4118, 1236, 11207, 11208, 712, 3883, 8045, 8055, 12592, 12593, 12594, 12595, 12596, 5848, 3947, 2]
+// Dependencies: [17, 1218, 10417, 1922, 4349, 676, 1924, 12585, 12586, 12587, 12588, 12589, 12590, 12591, 12592, 12593, 12594, 12595, 12155, 4148, 8055, 1363, 4123, 1236, 11212, 11213, 712, 3902, 8047, 8057, 12596, 12597, 12598, 12599, 12600, 5848, 3966, 2]
 // Exports: createGiftCodeEmbed
 
-// Module 12580 (getGiftStyleUrl)
+// Module 12584 (getGiftStyleUrl)
 import get_ActivityIndicator from "registerAsset";
 import fetchFingerprint from "fetchFingerprint";
 import updateGiftCode from "updateGiftCode";
@@ -21,33 +21,33 @@ let closure_12;
 let unpackModuleId;
 function getGiftStyleUrl(arg0) {
   if (constants.BOX === arg0) {
-    return importDefault(12581);
-  } else if (tmp.CUP === arg0) {
-    return importDefault(12582);
-  } else if (tmp.SNOWGLOBE === arg0) {
-    return importDefault(12583);
-  } else if (tmp.STANDARD_BOX === arg0) {
-    return importDefault(12584);
-  } else if (tmp.COFFEE === arg0) {
     return importDefault(12585);
-  } else if (tmp.CAKE === arg0) {
+  } else if (tmp.CUP === arg0) {
     return importDefault(12586);
-  } else if (tmp.CHEST === arg0) {
+  } else if (tmp.SNOWGLOBE === arg0) {
     return importDefault(12587);
-  } else if (tmp.SEASONAL_STANDARD_BOX === arg0) {
+  } else if (tmp.STANDARD_BOX === arg0) {
     return importDefault(12588);
-  } else if (tmp.SEASONAL_CAKE === arg0) {
+  } else if (tmp.COFFEE === arg0) {
     return importDefault(12589);
-  } else if (tmp.SEASONAL_CHEST === arg0) {
+  } else if (tmp.CAKE === arg0) {
     return importDefault(12590);
-  } else if (tmp.SEASONAL_COFFEE === arg0) {
+  } else if (tmp.CHEST === arg0) {
     return importDefault(12591);
+  } else if (tmp.SEASONAL_STANDARD_BOX === arg0) {
+    return importDefault(12592);
+  } else if (tmp.SEASONAL_CAKE === arg0) {
+    return importDefault(12593);
+  } else if (tmp.SEASONAL_CHEST === arg0) {
+    return importDefault(12594);
+  } else if (tmp.SEASONAL_COFFEE === arg0) {
+    return importDefault(12595);
   } else if (tmp.NITROWEEN_STANDARD === arg0) {
     const obj = { uri: null };
-    obj[0] = importDefault(12152);
+    obj[0] = importDefault(12155);
     return obj;
   } else {
-    return importDefault(12584);
+    return importDefault(12588);
   }
 }
 ({ Image: c3, processColor: c4 } = get_ActivityIndicator);
@@ -72,19 +72,19 @@ export const createGiftCodeEmbed = function createGiftCodeEmbed(message, forcedT
   const importDefault = forcedTheme;
   if (null != message.author) {
     if (0 !== message.giftCodes.length) {
-      const colors = importDefault(8053)(forcedTheme).colors;
+      const colors = importDefault(8055)(forcedTheme).colors;
       ({ headerColor: dependencyMap, titleColor: closure_3, subtitleColor: closure_4, bodyTextColor: fetchFingerprint, backgroundColor, resolvingGradientStart: updateGiftCode, resolvingGradientEnd: mergeGuildAvatar, acceptLabelDisabledBackgroundColor: addSku, acceptLabelDisabledColor: closure_9, thumbnailBackgroundColor: closure_10, acceptLabelGreenColor: closure_11, acceptBlurpleLabelBackgroundColor: closure_12 } = colors);
       let obj = { borderColor: null, backgroundColor: null, thumbnailCornerRadius: 3 };
       obj[0] = colors.borderColor;
       let tmp4 = backgroundColor;
       if (obj2.isThemeDark(forcedTheme)) {
-        const embedBackground = _require(4118).getEmbedBackground();
+        const embedBackground = _require(4123).getEmbedBackground();
         let tmp5Result = closure_4(embedBackground);
         if (tmp5Result == null) {
           tmp5Result = backgroundColor;
         }
         tmp4 = tmp5Result;
-        const tmp3Result = _require(4118);
+        const tmp3Result = _require(4123);
         const tmp5 = closure_4;
       }
       obj[1] = tmp4;

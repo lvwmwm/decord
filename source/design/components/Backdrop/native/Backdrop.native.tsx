@@ -1,7 +1,7 @@
 // Module ID: 4702
 // Function ID: 4703
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 4303, 712, 1236, 4013, 1609, 4036, 4703, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1236, 4031, 1628, 4042, 4703, 2]
 // Exports: Backdrop
 
 // Module 4702 (Backdrop)
@@ -51,7 +51,7 @@ export const Backdrop = function Backdrop(animatedProps) {
     accessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.WAI6xu);
   }
   let backgroundColor = createCacheKey();
-  let obj = require(4013) /* ManaContext */;
+  let obj = require(4031) /* ManaContext */;
   obj = { onPress: onDismiss, "aria-hidden": true };
   obj = { style: items, pointerEvents: "box-none", animatedProps, children: null };
   items = [backgroundColor.fill, style];
@@ -60,7 +60,7 @@ export const Backdrop = function Backdrop(animatedProps) {
     const obj1 = { style: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, "aria-hidden": null };
     const items1 = [backgroundColor.accessibilityDismiss, , ];
     const obj2 = { top: null };
-    obj2[0] = importDefault(1609)().top;
+    obj2[0] = importDefault(1628)().top;
     items1[1] = obj2;
     items1[2] = accessibleDismissStyle;
     obj1[0] = items1;
@@ -95,6 +95,6 @@ export const Backdrop = function Backdrop(animatedProps) {
     obj5.style = items3;
     items2[1] = tmp7(tmp8, obj5);
     obj[3] = items2;
-    return closure_5(importDefault(4036).View, obj);
+    return closure_5(importDefault(4042).View, obj);
   }
 };

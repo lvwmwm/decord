@@ -1,7 +1,7 @@
 // Module ID: 5920
 // Function ID: 5921
 // Name: loadForumPostData
-// Dependencies: [5, 1372, 5921, 5895, 5925, 676, 12, 11, 589, 530, 709, 2]
+// Dependencies: [5, 1391, 5921, 5895, 5925, 676, 12, 11, 589, 530, 709, 2]
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
 // Module 5920 (loadForumPostData)

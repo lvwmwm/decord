@@ -1,9 +1,9 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 15499
+// Function ID: 15500
 // Name: PreviewItem
-// Dependencies: [19, 5155, 15406, 21, 4303, 15159, 4036, 4713, 8009, 4648, 15416, 15437, 3914, 2]
+// Dependencies: [19, 5155, 15423, 21, 4303, 15168, 4042, 4713, 8011, 4648, 15433, 15454, 3933, 2]
 
-// Module 15482 (PreviewItem)
+// Module 15499 (PreviewItem)
 import importAllResult from "noop";
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import withEqualityFn from "withEqualityFn";
@@ -130,7 +130,7 @@ function PreviewItem(dragRegion) {
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "HermesInternal", expanded: 524288, children: true };
+        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "HermesInternal", expanded: 15, children: "premium_tab_tooltip" };
         obj[0] = listInsets.FOLDER;
         const items = [tmp2];
         obj[6] = items;
@@ -340,7 +340,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "contentEncoding", scrollPosition: "contentMediaType", dragRegion: "contentSchema", windowSize: "heading-sm/medium", dropComplete: 2, listInsets: null };
+          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "RED_400", scrollPosition: 0.05, dragRegion: "RED_345", windowSize: 0.08, dropComplete: "RED_400", listInsets: 0.1 };
           ({ node: obj[0], itemSize: obj[1] } = dragSpecs);
           obj[2] = state;
           let node;
@@ -359,7 +359,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       }
       return null;
     }
-  }, require(3914) /* isIterable */.shallow);
+  }, require(3933) /* isIterable */.shallow);
   let tmp2 = null;
   if (null != tmp) {
     let obj = {};

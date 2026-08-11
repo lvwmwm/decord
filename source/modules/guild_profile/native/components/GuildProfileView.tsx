@@ -1,10 +1,10 @@
-// Module ID: 9256
-// Function ID: 9257
+// Module ID: 9262
+// Function ID: 9263
 // Name: GuildProfileBackground
-// Dependencies: [19, 17, 1891, 676, 21, 4011, 4013, 4303, 712, 589, 1411, 1474, 1416, 9257, 4239, 4005, 9258, 4725, 9259, 4299, 9271, 12208, 2]
+// Dependencies: [19, 17, 1910, 676, 21, 1364, 4031, 4303, 712, 589, 1430, 1493, 1435, 9263, 4239, 4024, 9264, 4725, 9265, 4299, 9277, 12211, 2]
 // Exports: default, getBackgroundForProfile
 
-// Module 9256 (GuildProfileBackground)
+// Module 9262 (GuildProfileBackground)
 import Text from "Text";
 import get_ActivityIndicator from "LinearGradient";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -34,10 +34,10 @@ function GuildProfileBackground(guildProfile) {
     if (null != guildProfile.customBanner) {
       obj = { id: null, splash: null, size: null };
       ({ id: obj3[0], customBanner: obj3[1] } = guildProfile);
-      obj[2] = tmp3(9257)() * importDefault(1474)().width;
+      obj[2] = tmp3(9263)() * importDefault(1493)().width;
       obj = { style: null, source: null };
       obj[0] = tmp4.imageBanner;
-      obj[1] = tmp3(1416).getGuildDiscoverySplashSource(obj);
+      obj[1] = tmp3(1435).getGuildDiscoverySplashSource(obj);
       return callback(closure_5, obj);
     }
   }
@@ -45,17 +45,17 @@ function GuildProfileBackground(guildProfile) {
 }
 function GuildProfileGradient(guildProfile) {
   const tmp = createCacheKey();
-  let obj = require(4005) /* map */;
+  let obj = require(4024) /* map */;
   const token = obj.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWEST);
   const tmp2 = importDefault(4239)();
-  const profilePrimaryColor = require(9258) /* useProfilePrimaryColor */.useProfilePrimaryColor(guildProfile.guildProfile, token);
+  const profilePrimaryColor = require(9264) /* useProfilePrimaryColor */.useProfilePrimaryColor(guildProfile.guildProfile, token);
   obj = { style: tmp.colorBanner, start: frozen.START, end: frozen.END, colors: null };
   const items = [profilePrimaryColor, ];
-  const obj2 = require(9258) /* useProfilePrimaryColor */;
+  const obj2 = require(9264) /* useProfilePrimaryColor */;
   const tmp5 = closure_8;
   const tmp6 = importDefault(4725);
-  const obj4 = require(4011) /* isThemeLight */;
-  const obj5 = require(4013) /* ManaContext */;
+  const obj4 = require(1364) /* isThemeLight */;
+  const obj5 = require(4031) /* ManaContext */;
   if (isThemeDarkResult) {
     let brightenColorResult = obj5.brightenColor(profilePrimaryColor, 0.8);
   } else {
@@ -104,7 +104,7 @@ export default function GuildProfileView(guildProfile) {
     }
     tmp = guildProfile;
   }, items);
-  const items1 = [callback(GuildProfileBackground, { guildProfile }), callback(importDefault(9259), { profile: guildProfile, guildIconSource: memo }), ];
+  const items1 = [callback(GuildProfileBackground, { guildProfile }), callback(importDefault(9265), { profile: guildProfile, guildIconSource: memo }), ];
   obj = { style: tmp.body, children: null };
   let tmp5Result = null != guildProfile.description;
   if (tmp5Result) {
@@ -115,7 +115,7 @@ export default function GuildProfileView(guildProfile) {
     obj[2] = guildProfile.description;
     tmp5Result = tmp5(guildProfile(4299).Text, obj);
   }
-  const items2 = [tmp5Result, callback(importDefault(9271), { profile: guildProfile }), callback(importDefault(12208), { profile: guildProfile })];
+  const items2 = [tmp5Result, callback(importDefault(9277), { profile: guildProfile }), callback(importDefault(12211), { profile: guildProfile })];
   obj[1] = items2;
   items1[2] = closure_9(closure_4, obj);
   obj[1] = items1;
@@ -123,8 +123,8 @@ export default function GuildProfileView(guildProfile) {
 };
 export const getBackgroundForProfile = function getBackgroundForProfile(closure_2, token) {
   const items = [token, ];
-  const obj = require(4011) /* isThemeLight */;
-  const obj2 = require(4013) /* ManaContext */;
+  const obj = require(1364) /* isThemeLight */;
+  const obj2 = require(4031) /* ManaContext */;
   if (isThemeDarkResult) {
     let brightenColorResult = obj2.brightenColor(token, 0.8);
   } else {

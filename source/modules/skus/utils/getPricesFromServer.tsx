@@ -1,7 +1,7 @@
 // Module ID: 4345
 // Function ID: 4346
 // Name: getPricesFromServer
-// Dependencies: [3948, 2]
+// Dependencies: [3967, 2]
 // Exports: default
 
 // Module 4345 (getPricesFromServer)

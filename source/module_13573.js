@@ -1,16 +1,6 @@
 // Module ID: 13573
 // Function ID: 13574
-// Dependencies: [13572]
+// Dependencies: []
 
 // Module 13573
-
-export default (arg0, arg1) => {
-  try {
-    const obj = { value: null, configurable: true, writable: true };
-    obj[0] = arg1;
-    defineProperty(require(13572), arg0, obj);
-    return arg1;
-  } catch (err) {
-    require(13572)[tmp2] = tmp;
-  }
-};
+arg5.units = ["degree", "acre", "hectare", "percent", "bit", "byte", "gigabit", "gigabyte", "kilobit", "kilobyte", "megabit", "megabyte", "petabyte", "terabit", "terabyte", "day", "hour", "millisecond", "minute", "month", "second", "week", "year", "centimeter", "foot", "inch", "kilometer", "meter", "mile-scandinavian", "mile", "millimeter", "yard", "gram", "kilogram", "ounce", "pound", "stone", "celsius", "fahrenheit", "fluid-ounce", "gallon", "liter", "milliliter"];

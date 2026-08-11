@@ -1,9 +1,9 @@
-// Module ID: 7004
-// Function ID: 7005
+// Module ID: 7007
+// Function ID: 7008
 // Name: fromServer
 // Dependencies: [4345, 2]
 
-// Module 7004 (fromServer)
+// Module 7007 (fromServer)
 let prototype;
 prototype = function CollectiblesBundledProductRecord(arg0) {
   ({ prices: tmp.prices, type: tmp.type, premiumType: tmp.premiumType, name: tmp.name, skuId: tmp.skuId, summary: tmp.summary } = arg0);

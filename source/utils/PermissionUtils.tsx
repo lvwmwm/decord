@@ -1,10 +1,10 @@
-// Module ID: 3934
-// Function ID: 3935
+// Module ID: 3953
+// Function ID: 3954
 // Name: applyOverwrites
-// Dependencies: [1963, 3930, 3931, 1376, 1415, 1965, 1218, 1372, 1971, 1964, 1891, 1903, 676, 506, 12, 3935, 3918, 11, 1968, 1935, 2]
+// Dependencies: [1982, 3949, 3950, 1395, 1434, 1984, 1218, 1391, 1990, 1983, 1910, 1922, 676, 506, 12, 3954, 3937, 11, 1987, 1954, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 3934 (applyOverwrites)
+// Module 3953 (applyOverwrites)
 import initialize from "initialize";
 import closure_5 from "initialize";
 import storeThread from "storeThread";
@@ -90,7 +90,7 @@ function applyOverwrites(id, member, closure_23, overwrites) {
     const hasItem = importAll(506).has(addResult4, Permissions.ADMINISTRATOR);
     const tmp19Result1 = importAll(506);
     const tmp28 = require;
-    const result = require(3935) /* GuildMemberFlags */.hasAutomodQuarantinedProfile(member);
+    const result = require(3954) /* GuildMemberFlags */.hasAutomodQuarantinedProfile(member);
     let tmp31 = result;
     if (result) {
       tmp31 = !hasItem;
@@ -100,14 +100,14 @@ function applyOverwrites(id, member, closure_23, overwrites) {
       found = tmp19(506).filter(addResult4, closure_29);
       const tmp19Result2 = tmp19(506);
     }
-    const obj10 = require(3935) /* GuildMemberFlags */;
-    const tmp28Result = tmp28(3918);
+    const obj10 = require(3954) /* GuildMemberFlags */;
+    const tmp28Result = tmp28(3937);
     found1 = found;
     if (tmp34) {
       found1 = tmp19(506).filter(found, closure_28);
       const tmp19Result3 = tmp19(506);
     }
-    tmp34 = tmp28(3918).isMemberCommunicationDisabled(member) && !hasItem;
+    tmp34 = tmp28(3937).isMemberCommunicationDisabled(member) && !hasItem;
   }
   return found1;
 }
@@ -497,7 +497,7 @@ export const areChannelsLocked = function areChannelsLocked(channel, channel2) {
           if (null == obj[guild_id]) {
             obj = { id: null, type: null, allow: null, deny: null };
             obj[0] = guild_id;
-            obj[1] = obj(1935).PermissionOverwriteType.ROLE;
+            obj[1] = obj(1954).PermissionOverwriteType.ROLE;
             obj[2] = closure_23;
             obj[3] = closure_23;
             obj[guild_id] = obj;
@@ -505,7 +505,7 @@ export const areChannelsLocked = function areChannelsLocked(channel, channel2) {
           if (null == obj[guild_id]) {
             const obj1 = { id: null, type: null, allow: null, deny: null };
             obj1[0] = guild_id;
-            obj1[1] = obj(1935).PermissionOverwriteType.ROLE;
+            obj1[1] = obj(1954).PermissionOverwriteType.ROLE;
             obj1[2] = closure_23;
             obj1[3] = closure_23;
             obj[guild_id] = obj1;
@@ -561,8 +561,8 @@ export const isRoleHigher = function isRoleHigher(arg0, arg1, guildId, id) {
     if (tmp6) {
       let doesRoleSortHigherResult = null == id;
       if (!doesRoleSortHigherResult) {
-        doesRoleSortHigherResult = require(1968) /* compareGuildRoles */.doesRoleSortHigher(guildId, id);
-        const obj = require(1968) /* compareGuildRoles */;
+        doesRoleSortHigherResult = require(1987) /* compareGuildRoles */.doesRoleSortHigher(guildId, id);
+        const obj = require(1987) /* compareGuildRoles */;
       }
       tmp6 = doesRoleSortHigherResult;
     }
@@ -588,7 +588,7 @@ export const getHighestHoistedRole = function getHighestHoistedRole(id, hoistRol
   return role;
 };
 export const makeEveryoneOverwrite = function makeEveryoneOverwrite(guild_id) {
-  return { id: guild_id, type: require(1935) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, allow: closure_23, deny: closure_23 };
+  return { id: guild_id, type: require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, allow: closure_23, deny: closure_23 };
 };
 export const canManageACategory = function canManageACategory(currentUser, guild, _categories) {
   let context;

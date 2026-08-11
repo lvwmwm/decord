@@ -1,7 +1,7 @@
 // Module ID: 5418
 // Function ID: 5419
 // Name: n
-// Dependencies: [5400, 1634]
+// Dependencies: [5400, 1653]
 
 // Module 5418 (n)
 const require = arg1;
@@ -29,10 +29,10 @@ const fn = function n(arg0) {
       let TIMING = require(5400) /* GESTURE_SOURCE */.ANIMATION_METHOD.SPRING;
     }
     if (TIMING === tmp3(5400).ANIMATION_METHOD.TIMING) {
-      let tmp3Result = tmp3(1634);
+      let tmp3Result = tmp3(1653);
       let withTimingResult = tmp3Result.withTiming(point, configs, onComplete);
     } else {
-      tmp3Result = tmp3(1634);
+      tmp3Result = tmp3(1653);
       const _Object = Object;
       const obj = { velocity: null };
       obj[0] = velocity;

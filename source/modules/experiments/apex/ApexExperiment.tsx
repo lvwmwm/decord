@@ -1,10 +1,10 @@
-// Module ID: 1349
-// Function ID: 1350
+// Module ID: 1368
+// Function ID: 1369
 // Name: getUnitId
-// Dependencies: [32, 1218, 1212, 1350, 513, 1351, 589, 2]
+// Dependencies: [32, 1218, 1212, 1369, 513, 1370, 589, 2]
 // Exports: default
 
-// Module 1349 (getUnitId)
+// Module 1368 (getUnitId)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import initialize from "initialize";
@@ -22,7 +22,7 @@ function getUnitId(arg0, guildId) {
     }
     return str2;
   } else {
-    require(1351) /* isDiscordFrontendDevelopment */.assertNever(arg0);
+    require(1370) /* isDiscordFrontendDevelopment */.assertNever(arg0);
   }
 }
 function useUnitId(arg0, guildId) {
@@ -43,7 +43,7 @@ function useUnitId(arg0, guildId) {
     }
     return str3;
   } else {
-    tmpResult = tmp(1351);
+    tmpResult = tmp(1370);
     tmpResult.assertNever(arg0);
   }
   const obj = require(589) /* initialize */;
@@ -51,7 +51,7 @@ function useUnitId(arg0, guildId) {
 const result = require("initialize").fileFinishedImporting("modules/experiments/apex/ApexExperiment.tsx");
 
 export default function createApexExperiment(arg0) {
-  return importDefault(1350)(arg0, initialize, getUnitId, useUnitId);
+  return importDefault(1369)(arg0, initialize, getUnitId, useUnitId);
 };
 export const ApexExperiment = require("logger").ApexExperiment;
 export { getUnitId };

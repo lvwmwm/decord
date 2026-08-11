@@ -1,9 +1,9 @@
-// Module ID: 7310
-// Function ID: 7311
+// Module ID: 7311
+// Function ID: 7312
 // Name: handleUserUpdate
-// Dependencies: [32, 1372, 1971, 5896, 4390, 4996, 1903, 676, 12, 11, 3934, 4146, 1351, 589, 709, 2]
+// Dependencies: [32, 1391, 1990, 5896, 4390, 4996, 1922, 676, 12, 11, 3953, 4148, 1370, 589, 709, 2]
 
-// Module 7310 (handleUserUpdate)
+// Module 7311 (handleUserUpdate)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -280,7 +280,7 @@ prototype["calculateNewState"] = function calculateNewState(userId, channel) {
   }
   let canResult = null != user && null != channel;
   if (canResult) {
-    let obj = importAll(3934);
+    let obj = importAll(3953);
     obj = { permission: null, user: null, context: null };
     obj[0] = constants2.VIEW_CHANNEL;
     obj[1] = user;
@@ -306,8 +306,8 @@ prototype["calculateNewState"] = function calculateNewState(userId, channel) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4146).getName(user);
-    const obj3 = importDefault(4146);
+    nick = importDefault(4148).getName(user);
+    const obj3 = importDefault(4148);
   }
   const items = [str, , ];
   let formatted;
@@ -549,7 +549,7 @@ const threadMemberListStore = new ThreadMemberListStore(require("dispatcher"), {
       }
       return id;
     });
-    const found = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    const found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     const arr = importDefault(12)(presences.presences);
     let flag = false;
     let flag2 = false;

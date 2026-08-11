@@ -1,10 +1,10 @@
-// Module ID: 8216
-// Function ID: 8217
+// Module ID: 8220
+// Function ID: 8221
 // Name: isInteractionComponent
-// Dependencies: [32, 19, 8049, 3930, 1372, 1971, 5131, 1903, 8217, 21, 1935, 4531, 4529, 589, 8084, 5889, 8219, 8220, 709, 4730, 4525, 2]
+// Dependencies: [32, 19, 8051, 3949, 1391, 1990, 5131, 1922, 8221, 21, 1954, 4531, 4529, 589, 8086, 5889, 8223, 8224, 709, 4730, 4525, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 8216 (isInteractionComponent)
+// Module 8220 (isInteractionComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useMountLayoutEffect";
 import deleteNonce from "deleteNonce";
@@ -19,16 +19,16 @@ import { jsx } from "set";
 const require = arg1;
 function isInteractionComponent(type) {
   type = type.type;
-  if (require(1935) /* PermissionOverwriteType */.ComponentType.BUTTON === type) {
-    return type.style !== tmp(1935).ButtonStyle.LINK;
+  if (require(1954) /* PermissionOverwriteType */.ComponentType.BUTTON === type) {
+    return type.style !== tmp(1954).ButtonStyle.LINK;
   } else {
-    if (tmp(1935).ComponentType.STRING_SELECT !== type) {
-      if (tmp(1935).ComponentType.USER_SELECT !== type) {
-        if (tmp(1935).ComponentType.ROLE_SELECT !== type) {
-          if (tmp(1935).ComponentType.MENTIONABLE_SELECT !== type) {
-            if (tmp(1935).ComponentType.CHANNEL_SELECT !== type) {
-              if (tmp(1935).ComponentType.ACTION_ROW !== type) {
-                const TEXT_INPUT = tmp(1935).ComponentType.TEXT_INPUT;
+    if (tmp(1954).ComponentType.STRING_SELECT !== type) {
+      if (tmp(1954).ComponentType.USER_SELECT !== type) {
+        if (tmp(1954).ComponentType.ROLE_SELECT !== type) {
+          if (tmp(1954).ComponentType.MENTIONABLE_SELECT !== type) {
+            if (tmp(1954).ComponentType.CHANNEL_SELECT !== type) {
+              if (tmp(1954).ComponentType.ACTION_ROW !== type) {
+                const TEXT_INPUT = tmp(1954).ComponentType.TEXT_INPUT;
               }
               return false;
             }
@@ -59,7 +59,7 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
     }
     return DISABLED;
   } else {
-    if (interaction.data.interactionType !== tmp(1935).InteractionTypes.MESSAGE_COMPONENT) {
+    if (interaction.data.interactionType !== tmp(1954).InteractionTypes.MESSAGE_COMPONENT) {
       if (isInteractionComponent(id)) {
         LOADING = tmp(4531).ActionComponentState.DISABLED;
       }

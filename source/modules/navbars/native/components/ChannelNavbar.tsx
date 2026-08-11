@@ -1,10 +1,10 @@
-// Module ID: 12125
-// Function ID: 12126
+// Module ID: 12128
+// Function ID: 12129
 // Name: ChannelTitleContent
-// Dependencies: [19, 17, 4994, 1376, 1372, 1891, 4390, 3938, 1903, 676, 1379, 1369, 21, 4303, 5236, 712, 589, 1236, 4764, 4494, 9638, 12126, 12127, 1297, 12128, 12129, 5268, 12130, 8679, 4846, 4299, 4146, 8302, 9057, 4123, 1358, 10001, 12131, 2]
+// Dependencies: [19, 17, 4994, 1395, 1391, 1910, 4390, 3957, 1922, 676, 1398, 1388, 21, 4303, 5236, 712, 589, 1236, 4764, 4494, 9643, 12129, 12130, 1297, 12131, 12132, 5268, 12133, 8685, 4846, 4299, 4148, 8307, 9063, 4125, 1377, 10006, 12134, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 12125 (ChannelTitleContent)
+// Module 12128 (ChannelTitleContent)
 import importAllResult from "computeChannelName";
 import { View } from "getSystemLocale";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -12,7 +12,7 @@ import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import sortActivity from "sortActivity";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { StaticChannelRoute } from "set";
@@ -77,16 +77,16 @@ function ParentChannelSubTitle(parentChannel) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { channelName: null };
   const tmp = callback3();
-  obj[0] = require(4494) /* computeChannelName */.computeChannelName(parentChannel, mergeGuildAvatar, upsertRelationship);
+  obj[0] = require(4494) /* computeChannelName */.computeChannelName(parentChannel, mergeGuildAvatar, markAllUserIdListsStale);
   obj[2] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.BjYvHO, obj);
   const obj3 = require(4494) /* computeChannelName */;
-  obj[6] = require(4494) /* computeChannelName */.computeChannelName(parentChannel, mergeGuildAvatar, upsertRelationship, true);
+  obj[6] = require(4494) /* computeChannelName */.computeChannelName(parentChannel, mergeGuildAvatar, markAllUserIdListsStale, true);
   return callback(require(4299) /* Text */.Text, obj);
 }
 function DMChannelName(style) {
   const userId = style.userId;
   let obj = userId(589);
-  const items = [mergeGuildAvatar, upsertRelationship];
+  const items = [mergeGuildAvatar, markAllUserIdListsStale];
   const items1 = [userId];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let str = outer1_10.getNickname(userId);
@@ -337,7 +337,7 @@ const memoResult = importAllResult.memo((threadDraft) => {
       obj16[1] = callback(ChannelTitleContent, obj17);
       return callback(ChannelTitleWrapper, obj16);
     } else {
-      const channelName = tmp2(tmp3[19]).computeChannelName(stateFromStores1, mergeGuildAvatar, upsertRelationship);
+      const channelName = tmp2(tmp3[19]).computeChannelName(stateFromStores1, mergeGuildAvatar, markAllUserIdListsStale);
       const tmp2Result1 = tmp2(tmp3[19]);
       const channelIconWithGuild = tmp2(tmp3[18]).getChannelIconWithGuild(stateFromStores1, stateFromStores2);
       if (stateFromStores1.isDM()) {
@@ -443,7 +443,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
   let channelName = null;
   if (null != stateFromStores) {
     tmp2Result = tmp2(4494);
-    channelName = tmp2Result.computeChannelName(stateFromStores, mergeGuildAvatar, upsertRelationship);
+    channelName = tmp2Result.computeChannelName(stateFromStores, mergeGuildAvatar, markAllUserIdListsStale);
   }
   let isDMResult;
   if (stateFromStores != null) {
@@ -471,7 +471,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
     obj3[0] = callback(DMChannelName, obj);
     obj3[1] = channelIcon;
     obj3[2] = tmp16Result;
-    obj3[3] = callback(importDefault(9638), obj1);
+    obj3[3] = callback(importDefault(9643), obj1);
     obj2[1] = callback(ChannelTitleContent, obj3);
     return callback(ChannelTitleWrapper, obj2);
   } else {

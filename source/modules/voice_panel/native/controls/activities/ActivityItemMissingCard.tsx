@@ -1,9 +1,9 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 16235
+// Function ID: 16236
 // Name: ActivityItemEmptyCard
-// Dependencies: [5, 19, 17, 21, 4303, 712, 11645, 5728, 10647, 10750, 4846, 16222, 16223, 5781, 2]
+// Dependencies: [5, 19, 17, 21, 4303, 712, 11648, 5728, 10652, 10755, 4846, 16236, 16237, 5781, 2]
 
-// Module 16221 (ActivityItemEmptyCard)
+// Module 16235 (ActivityItemEmptyCard)
 import Themes from "Themes";
 import importAllResult from "noop";
 import { ActivityIndicator } from "get ActivityIndicator";

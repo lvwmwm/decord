@@ -1,9 +1,9 @@
-// Module ID: 6984
-// Function ID: 6985
+// Module ID: 6987
+// Function ID: 6988
 // Name: handleReset
-// Dependencies: [1371, 1962, 6985, 5223, 3931, 1340, 1218, 5260, 1372, 6986, 3929, 4315, 1960, 4499, 685, 6987, 12, 1351, 3919, 11, 589, 709, 2]
+// Dependencies: [1390, 1981, 6988, 5223, 3950, 1340, 1218, 5260, 1391, 6989, 3948, 4315, 1979, 4499, 685, 6990, 12, 1370, 3938, 11, 589, 709, 2]
 
-// Module 6984 (handleReset)
+// Module 6987 (handleReset)
 import participantFromServer from "participantFromServer";
 import isSubscriptionGated from "isSubscriptionGated";
 import scheduledEventSort from "scheduledEventSort";
@@ -144,7 +144,7 @@ const channelListStore = new ChannelListStore(require("dispatcher"), {
       }
       return guild_id;
     });
-    const found = mapped.filter(_require(1351).isNotNullish);
+    const found = mapped.filter(_require(1370).isNotNullish);
     const arr = importDefault(12)(channels.channels);
     const item = found.uniq().forEach((guildId) => {
       if (outer1_20.clearGuildId(guildId)) {
@@ -199,9 +199,9 @@ const channelListStore = new ChannelListStore(require("dispatcher"), {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = require(3919) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
-    const obj = require(3919) /* getEmbeddedActivityLocationChannelId */;
-    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3919) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
+    const embeddedActivityLocationGuildId = require(3938) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
+    const obj = require(3938) /* getEmbeddedActivityLocationChannelId */;
+    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3938) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function handleEmbeddedActivityLaunchStart() {
     tmp2.updateSubtitles();
@@ -380,7 +380,7 @@ let obj = {
       }
       return guild_id;
     });
-    const found = mapped.filter(_require(1351).isNotNullish);
+    const found = mapped.filter(_require(1370).isNotNullish);
     const arr = importDefault(12)(channels.channels);
     const item = found.uniq().forEach((guildId) => {
       if (outer1_20.clearGuildId(guildId)) {
@@ -435,9 +435,9 @@ let obj = {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = require(3919) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
-    const obj = require(3919) /* getEmbeddedActivityLocationChannelId */;
-    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3919) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
+    const embeddedActivityLocationGuildId = require(3938) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
+    const obj = require(3938) /* getEmbeddedActivityLocationChannelId */;
+    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3938) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function handleEmbeddedActivityLaunchStart() {
     tmp2.updateSubtitles();

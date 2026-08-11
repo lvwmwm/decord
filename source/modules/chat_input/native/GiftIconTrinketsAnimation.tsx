@@ -1,9 +1,9 @@
-// Module ID: 11621
-// Function ID: 11622
+// Module ID: 11624
+// Function ID: 11625
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 4295, 21, 4303, 4718, 1348, 4005, 712, 589, 1884, 500, 9386, 5268, 2]
+// Dependencies: [19, 17, 4295, 21, 4303, 4718, 1367, 4024, 712, 589, 1903, 500, 9392, 5268, 2]
 
-// Module 11621 (GiftIconTrinketsAnimation)
+// Module 11624 (GiftIconTrinketsAnimation)
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
@@ -20,10 +20,10 @@ const memoResult = require("noop").memo((trinketsAnimationUrl) => {
   trinketsAnimationUrl = trinketsAnimationUrl.trinketsAnimationUrl;
   let APNGPlayer = require;
   let obj = dependencyMap;
-  let obj1 = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */;
+  let obj1 = require(1367) /* useIsMobileVisualRefreshExperimentEnabled */;
   const enabled = obj1.useMobileVisualRefreshConfig({ location: "GiftIconTrinketsAnimation" }).enabled;
-  const tmp2 = callback(require(4005) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE));
-  const obj3 = require(4005) /* map */;
+  const tmp2 = callback(require(4024) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE));
+  const obj3 = require(4024) /* map */;
   const tmp = importDefault;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
@@ -35,7 +35,7 @@ const memoResult = require("noop").memo((trinketsAnimationUrl) => {
     obj = { style: null, pointerEvents: "none", children: null };
     obj[0] = enabled ? tmp2.containerRefresh : tmp2.container;
     if (APNGPlayerResult1.isAndroid()) {
-      APNGPlayer = APNGPlayer(9386).APNGPlayer;
+      APNGPlayer = APNGPlayer(9392).APNGPlayer;
       obj = { url: null, autoplay: null, style: null };
       obj[0] = trinketsAnimationUrl;
       obj[1] = !stateFromStores;

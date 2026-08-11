@@ -1,7 +1,7 @@
 // Module ID: 5152
 // Function ID: 5153
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [32, 19, 1302, 5153, 676, 21, 5154, 5270, 5151, 6008, 4153, 6009, 6010, 6011, 1236, 6013, 6016, 1297, 6018, 12880, 5716, 4711, 5783, 2]
+// Dependencies: [32, 19, 1302, 5153, 676, 21, 5154, 5270, 5151, 6010, 1363, 6011, 6012, 6013, 1236, 6015, 6018, 1297, 6020, 12884, 5716, 4711, 5783, 2]
 // Exports: default
 
 // Module 5152 (PremiumGuildSubscribeModal)
@@ -51,27 +51,27 @@ export default function PremiumGuildSubscribeModal(arg0) {
         const obj4 = { headerLeft: null, headerRight: null, headerTitle: null, render: null };
         obj4[0] = outer1_0(outer1_2[7]).getHeaderCloseButton(outer1_0(outer1_2[8]).closeApplyBoostModal);
         obj4[1] = function headerRight() {
-          let obj = callback(4153);
+          let obj = callback(1363);
           if (obj.isThemeDark(theme.theme)) {
-            let tmp4Result = tmp4(6009);
+            let tmp4Result = tmp4(6011);
           } else {
-            tmp4Result = tmp4(6010);
+            tmp4Result = tmp4(6012);
           }
-          obj = { source: tmp4Result, IconComponent: tmp2(6011).SettingsIcon, accessibilityLabel: null, accessibilityHint: null, onPress: null };
+          obj = { source: tmp4Result, IconComponent: tmp2(6013).SettingsIcon, accessibilityLabel: null, accessibilityHint: null, onPress: null };
           const intl = tmp2(1236).intl;
           obj[2] = intl.string(callback(1236).t["3D5yo/"]);
           const intl2 = tmp2(1236).intl;
           obj[3] = intl2.string(callback(1236).t["+CbP2v"]);
           obj[4] = function onPress() {
-            let obj = callback(6013);
+            let obj = callback(6015);
             obj = { destinationPane: constants.GUILD_BOOSTING };
             const result = obj.trackUserSettingsPaneViewed(obj);
             callback(5151).closeApplyBoostModal();
             const obj3 = callback(5151);
             obj = { screen: constants.GUILD_BOOSTING };
-            callback(6016).openUserSettings(obj);
+            callback(6018).openUserSettings(obj);
           };
-          return closure_8(callback(6008).HeaderActionButton, obj);
+          return closure_8(callback(6010).HeaderActionButton, obj);
         };
         obj4[2] = function headerTitle(children) {
           children = children.children;
@@ -89,7 +89,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
         };
         obj4[3] = function render(arg0) {
           const merged = Object.assign(arg0);
-          return callback3(callback2(6018), {});
+          return callback3(callback2(6020), {});
         };
         obj2[outer1_6.OVERVIEW] = obj4;
         const obj5 = { headerLeft: null, headerTitle: null, render: null };
@@ -99,7 +99,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
         obj5[1] = intl.string(outer1_0(outer1_2[14]).t.VJEVbu);
         obj5[2] = function render(arg0) {
           const merged = Object.assign(arg0);
-          return callback3(callback2(12880), {});
+          return callback3(callback2(12884), {});
         };
         obj2[outer1_6.CONFIRMATION] = obj5;
         obj1[1] = obj2;

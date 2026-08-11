@@ -1,7 +1,7 @@
 // Module ID: 4191
 // Function ID: 4192
 // Name: BoostedGuildTiers
-// Dependencies: [1905, 676, 4192, 4194, 1358, 4195, 1236, 4230, 4231, 4232, 4233, 4214, 2]
+// Dependencies: [1924, 676, 4192, 4194, 1377, 4195, 1236, 4230, 4231, 4232, 4233, 4214, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
 // Module 4191 (BoostedGuildTiers)

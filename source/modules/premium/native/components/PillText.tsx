@@ -1,10 +1,10 @@
-// Module ID: 12711
-// Function ID: 12712
+// Module ID: 12715
+// Function ID: 12716
 // Name: PillText
-// Dependencies: [676, 21, 4303, 712, 12712, 4725, 4299, 2]
+// Dependencies: [676, 21, 4303, 712, 12716, 4725, 4299, 2]
 // Exports: default
 
-// Module 12711 (PillText)
+// Module 12715 (PillText)
 import { HorizontalGradient } from "ME";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -21,9 +21,9 @@ export default function PillText(arg0) {
   let style;
   ({ pillText, style } = arg0);
   const tmp = callback();
-  let obj = { style: items, start: HorizontalGradient.START, end: HorizontalGradient.END, colors: importDefault(12712)(), children: null };
+  let obj = { style: items, start: HorizontalGradient.START, end: HorizontalGradient.END, colors: importDefault(12716)(), children: null };
   items = [tmp.pillTextContainer, style];
-  const tmp2 = importDefault(12712)();
+  const tmp2 = importDefault(12716)();
   obj = { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText };
   obj[4] = jsx(require(4299) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
   return jsx(importDefault(4725), { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });

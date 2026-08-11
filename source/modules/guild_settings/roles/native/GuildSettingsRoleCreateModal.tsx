@@ -1,10 +1,10 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 16707
+// Function ID: 16708
 // Name: RoleCreateScene
-// Dependencies: [5, 32, 19, 17, 1415, 1964, 1903, 9022, 16696, 676, 21, 4303, 5267, 712, 698, 4498, 4299, 1236, 16694, 589, 38, 3934, 1480, 6004, 5270, 5232, 4001, 16693, 4271, 15414, 1988, 4712, 7790, 5767, 5374, 13907, 688, 4714, 16700, 16701, 9021, 16702, 5369, 4700, 4710, 5822, 4730, 5783, 2]
+// Dependencies: [5, 32, 19, 17, 1434, 1983, 1922, 9028, 16708, 676, 21, 4303, 5267, 712, 698, 4498, 4299, 1236, 16706, 589, 38, 3953, 1499, 6006, 5270, 5232, 4020, 16705, 4271, 15431, 2007, 4712, 7792, 5767, 5374, 13915, 688, 4714, 16712, 16713, 9027, 16714, 5369, 4700, 4710, 5822, 4730, 5783, 2]
 // Exports: default
 
-// Module 16695 (RoleCreateScene)
+// Module 16707 (RoleCreateScene)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import TextInput from "TextInput";
 import importAllResult from "initialize";
@@ -82,7 +82,7 @@ function RoleCreateScene() {
     if (1 === tmp7) {
       c2 = 0;
       callback(false);
-      const obj1 = outer1_0(4001);
+      const obj1 = outer1_0(4020);
       const result = obj1.roleCreateFailedToast();
       let c4 = 3;
     } else if (arg0 === 1) {
@@ -103,16 +103,16 @@ function RoleCreateScene() {
         if (null != selectedRoleId) {
           if (null != role) {
             if (null != guild) {
-              tmp3(4001).roleCreatedToast();
-              const obj5 = tmp3(4001);
+              tmp3(4020).roleCreatedToast();
+              const obj5 = tmp3(4020);
               const tmp13 = tmp3;
-              tmp3(16693).setRoleJustCreated(true);
+              tmp3(16705).setRoleJustCreated(true);
               let STEP_MEMBERS = outer1_25.STEP_PERMISSIONS;
               const guild2 = obj.getProps().guild;
               tmp32(38)(null != guild2, "shouldSkipPermissions: Guild cannot be null");
               const currentUser = outer1_11.getCurrentUser();
               const tmp23 = outer1_9(guild2, currentUser);
-              const obj6 = tmp3(16693);
+              const obj6 = tmp3(16705);
               const tmp18 = tmp32;
               obj = { permission: null, user: null, context: null };
               obj[0] = outer1_20.ADMINISTRATOR;
@@ -126,7 +126,7 @@ function RoleCreateScene() {
                 STEP_MEMBERS = tmp17.STEP_MEMBERS;
               }
               tmp3.push(STEP_MEMBERS);
-              obj7 = v0(3934);
+              obj7 = v0(3953);
               obj = { flow_type: null, from_step: null, to_step: null, skip: false };
               obj[0] = outer1_19.GUILD_ROLE_CREATION_MODAL;
               obj[1] = outer1_26[outer1_25.STEP_DISPLAY];

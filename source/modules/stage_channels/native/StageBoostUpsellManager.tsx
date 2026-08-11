@@ -1,9 +1,9 @@
-// Module ID: 16572
-// Function ID: 16573
+// Module ID: 16584
+// Function ID: 16585
 // Name: handleVoiceChannelSelect
-// Dependencies: [3994, 1372, 3929, 1960, 5132, 5261, 4271, 5135, 9154, 1380, 5147, 1988, 2]
+// Dependencies: [4013, 1391, 3948, 1979, 5132, 5261, 4271, 5135, 9160, 1399, 5147, 2007, 2]
 
-// Module 16572 (handleVoiceChannelSelect)
+// Module 16584 (handleVoiceChannelSelect)
 import setContent from "setContent";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -45,15 +45,15 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
           let obj = require(5135) /* useStageHasMedia */;
           if (obj.getStageHasMedia(channel.id)) {
             if (tmp5Result.getChannelVideoLimit(channel).reachedLimit) {
-              if (getUncachedChannelPermissions.can(tmp5(1380).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
+              if (getUncachedChannelPermissions.can(tmp5(1399).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
                 obj = { channel: null };
                 obj[0] = channel;
-                importDefault(4271).openLazy(tmp5(1988)(5147, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
+                importDefault(4271).openLazy(tmp5(2007)(5147, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
                 c8 = true;
                 const obj3 = importDefault(4271);
               }
             }
-            tmp5Result = tmp5(9154);
+            tmp5Result = tmp5(9160);
           }
           tmp6 = dependencyMap;
         }

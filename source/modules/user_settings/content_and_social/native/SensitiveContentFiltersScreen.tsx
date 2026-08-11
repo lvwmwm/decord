@@ -1,10 +1,10 @@
-// Module ID: 14061
-// Function ID: 14062
+// Module ID: 14069
+// Function ID: 14070
 // Name: UserSettingsSensitiveContentFilters
-// Dependencies: [19, 8082, 21, 1236, 10447, 14062, 13888, 2]
+// Dependencies: [19, 8084, 21, 1236, 10452, 14070, 13895, 2]
 // Exports: default
 
-// Module 14061 (UserSettingsSensitiveContentFilters)
+// Module 14069 (UserSettingsSensitiveContentFilters)
 import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/c
 export default function UserSettingsSensitiveContentFilters() {
   let obj = { children: null };
   const memo = React.useMemo(() => {
-    let obj = callback(10447);
+    let obj = callback(10452);
     obj = { sections: null };
     obj = { label: null, settings: null, subLabel: null };
     const intl = callback(1236).intl;
@@ -43,8 +43,8 @@ export default function UserSettingsSensitiveContentFilters() {
     return obj.createList(obj);
   }, []);
   obj = { screen: null };
-  obj[0] = require(14062) /* items */.SettingsScreen.SENSITIVE_CONTENT_FILTERS;
-  let items = [callback(importDefault(14062), obj), callback(importDefault(13888), { node: memo })];
+  obj[0] = require(14070) /* items */.SettingsScreen.SENSITIVE_CONTENT_FILTERS;
+  let items = [callback(importDefault(14070), obj), callback(importDefault(13895), { node: memo })];
   obj[0] = items;
   return callback2(closure_6, obj);
 };

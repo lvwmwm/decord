@@ -1,10 +1,10 @@
-// Module ID: 6998
-// Function ID: 6999
+// Module ID: 7001
+// Function ID: 7002
 // Name: maybeFetchCollectiblesForInvoices
-// Dependencies: [5, 6999, 6997, 676, 7000, 709, 530, 698, 1356, 1306, 1342, 2]
+// Dependencies: [5, 7002, 7000, 676, 7003, 709, 530, 698, 1375, 1306, 1342, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 6998 (maybeFetchCollectiblesForInvoices)
+// Module 7001 (maybeFetchCollectiblesForInvoices)
 import dispatcher from "dispatcher";
 import getSettings from "getSettings";
 import { FamilyCenterAction } from "items";
@@ -1155,13 +1155,13 @@ export default {
               let closure_1 = tmp2;
               let settings = tmp5;
               settings = undefined;
-              const protoFieldClass = outer1_0(1356).getProtoFieldClass(outer1_0(1306).PreloadedUserSettings, outer1_1);
+              const protoFieldClass = outer1_0(1375).getProtoFieldClass(outer1_0(1306).PreloadedUserSettings, outer1_1);
               settings = outer1_4.getSettings(outer1_0);
               let tmp13;
               if (settings != null) {
                 tmp13 = settings[tmp37];
               }
-              let tmp34Result = tmp34(1356);
+              let tmp34Result = tmp34(1375);
               const modifiedProto = tmp34Result.createModifiedProto(tmp13, dependencyMap, protoFieldClass, tmp34(1306).PreloadedUserSettings, tmp37);
               if (null != modifiedProto) {
                 const HTTP = tmp34(530).HTTP;
@@ -1180,7 +1180,7 @@ export default {
               } else {
                 c3 = 3;
               }
-              const obj12 = outer1_0(1356);
+              const obj12 = outer1_0(1375);
             }
           } else if (arg0 === 1) {
             c3 = 3;

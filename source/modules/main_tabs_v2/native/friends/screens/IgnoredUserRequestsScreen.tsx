@@ -1,12 +1,12 @@
-// Module ID: 15859
-// Function ID: 15860
+// Module ID: 15876
+// Function ID: 15877
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 3938, 1903, 9620, 676, 21, 5728, 5748, 589, 15857, 8783, 9626, 2]
+// Dependencies: [19, 3957, 1922, 9625, 676, 21, 5728, 5748, 589, 15874, 8789, 9631, 2]
 // Exports: default
 
-// Module 15859 (IgnoredUserRequestsScreen)
+// Module 15876 (IgnoredUserRequestsScreen)
 import noop from "noop";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
 import { RelationshipTypes } from "ME";
@@ -23,7 +23,7 @@ export default function IgnoredUserRequestsScreen(navigation) {
   let callback;
   analyticsLocations = stateFromStoresArray(stateFromStores[6])(stateFromStoresArray(stateFromStores[7]).FRIEND_REQUESTS).analyticsLocations;
   let obj = analyticsLocations(stateFromStores[8]);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => analyticsLocations(stateFromStores[9]).getPendingRelationshipIds(mutableRelationships.getMutableRelationships()).ignoredUserIds);
   const tmp = stateFromStores;
   const tmp2 = stateFromStoresArray(stateFromStores[6]);

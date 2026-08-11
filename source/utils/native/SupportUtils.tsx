@@ -1,10 +1,10 @@
-// Module ID: 14723
-// Function ID: 14724
+// Module ID: 14733
+// Function ID: 14734
 // Name: _emailSupport
-// Dependencies: [5, 1975, 1606, 4283, 3998, 1974, 2]
+// Dependencies: [5, 1994, 1625, 4283, 4017, 1993, 2]
 // Exports: emailSupport
 
-// Module 14723 (_emailSupport)
+// Module 14733 (_emailSupport)
 import combined from "combined";
 import _getSystemLocale from "_getSystemLocale";
 
@@ -38,10 +38,10 @@ function _emailSupport() {
             obj[0] = arg1;
             return obj;
           } else {
-            const tmp10 = outer1_1(3998);
+            const tmp10 = outer1_1(4017);
             let closure_1 = tmp10;
             const openURL = tmp10.openURL;
-            let obj1 = outer1_1(1974);
+            let obj1 = outer1_1(1993);
             c2 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };

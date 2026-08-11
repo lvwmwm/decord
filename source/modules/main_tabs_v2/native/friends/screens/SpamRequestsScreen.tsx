@@ -1,12 +1,12 @@
-// Module ID: 15858
-// Function ID: 15859
+// Module ID: 15875
+// Function ID: 15876
 // Name: SpamRequestsScreen
-// Dependencies: [19, 3938, 1903, 9620, 676, 21, 5728, 5748, 589, 15857, 9349, 503, 8783, 9626, 2]
+// Dependencies: [19, 3957, 1922, 9625, 676, 21, 5728, 5748, 589, 15874, 9355, 503, 8789, 9631, 2]
 // Exports: default
 
-// Module 15858 (SpamRequestsScreen)
+// Module 15875 (SpamRequestsScreen)
 import noop from "noop";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
 import { RelationshipTypes } from "ME";
@@ -23,7 +23,7 @@ export default function SpamRequestsScreen(navigation) {
   let callback;
   analyticsLocations = stateFromStoresArray(stateFromStoresArray1[6])(stateFromStoresArray(stateFromStoresArray1[7]).FRIEND_REQUESTS).analyticsLocations;
   let obj = analyticsLocations(stateFromStoresArray1[8]);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => analyticsLocations(stateFromStoresArray1[9]).getPendingRelationshipIds(mutableRelationships.getMutableRelationships()).spamIds);
   obj = { name: null };
   const tmp = stateFromStoresArray1;

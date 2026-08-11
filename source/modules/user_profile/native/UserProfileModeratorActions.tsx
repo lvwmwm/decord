@@ -1,10 +1,10 @@
-// Module ID: 12325
-// Function ID: 12326
+// Module ID: 12328
+// Function ID: 12329
 // Name: ModeratorActionRow
-// Dependencies: [19, 5139, 1372, 1961, 1971, 1891, 3929, 4319, 676, 3917, 21, 4303, 1348, 5374, 5775, 4299, 8788, 4271, 9641, 589, 5889, 11234, 1380, 11235, 4494, 4488, 4486, 3934, 1236, 10795, 7778, 10797, 7967, 4829, 10305, 1988, 5232, 6011, 4509, 11236, 1384, 11138, 3918, 11253, 11239, 9186, 10872, 9182, 11889, 8400, 4245, 11255, 10540, 11257, 12326, 11977, 7224, 5767, 2]
+// Dependencies: [19, 5139, 1391, 1980, 1990, 1910, 3948, 4319, 676, 3936, 21, 4303, 1367, 5374, 5775, 4299, 8794, 4271, 9646, 589, 5889, 11239, 1399, 11240, 4494, 4488, 4486, 3953, 1236, 10800, 7780, 10802, 7969, 4829, 10310, 2007, 5232, 6013, 4509, 11241, 1403, 11143, 3937, 11258, 11244, 9192, 10877, 9188, 11892, 8406, 4245, 11260, 10545, 11262, 12329, 11980, 7225, 5767, 2]
 // Exports: default
 
-// Module 12325 (ModeratorActionRow)
+// Module 12328 (ModeratorActionRow)
 import "initialize";
 import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -31,7 +31,7 @@ function ModeratorActionRow(arg0) {
   let onPress;
   let sublabel;
   ({ label, sublabel, icon, hint, disabled, isDestructive, onPress } = arg0);
-  if (importDefault(1348)("UserProfileModeratorActions")) {
+  if (importDefault(1367)("UserProfileModeratorActions")) {
     let str = "default";
     if (isDestructive) {
       str = "danger";

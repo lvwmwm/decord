@@ -1,7 +1,7 @@
 // Module ID: 4186
 // Function ID: 4187
 // Name: handleEnd
-// Dependencies: [1218, 4187, 4188, 709, 1890, 12, 589, 2]
+// Dependencies: [1218, 4187, 4188, 709, 1909, 12, 589, 2]
 
 // Module 4186 (handleEnd)
 import fetchFingerprint from "fetchFingerprint";
@@ -124,9 +124,9 @@ const guildThemePreviewStore = new GuildThemePreviewStore(require("dispatcher"),
     ({ guildId, draft, original, draftEnabled, originalEnabled, origin } = owner);
     timeout.stop();
     const obj = { guildId, draft: null, original: null, draftEnabled: null, originalEnabled: null, origin: null, owner: null, isSaving: false, isAwaitingGuildUpdate: false, saveError: null };
-    obj[1] = require(1890) /* cloneGuildThemeSettings */.cloneGuildThemeSettings(draft);
-    const obj2 = require(1890) /* cloneGuildThemeSettings */;
-    obj[2] = require(1890) /* cloneGuildThemeSettings */.cloneGuildThemeSettings(original);
+    obj[1] = require(1909) /* cloneGuildThemeSettings */.cloneGuildThemeSettings(draft);
+    const obj2 = require(1909) /* cloneGuildThemeSettings */;
+    obj[2] = require(1909) /* cloneGuildThemeSettings */.cloneGuildThemeSettings(original);
     obj[3] = draftEnabled;
     obj[4] = originalEnabled;
     obj[5] = origin;
@@ -139,7 +139,7 @@ const guildThemePreviewStore = new GuildThemePreviewStore(require("dispatcher"),
     if (null == obj.guildId) {
       return false;
     } else {
-      obj = { presetId: null, customUserThemeSettings: "Array" };
+      obj = { presetId: null, customUserThemeSettings: "a" };
       obj[0] = tmp;
       const isEqualResult = require(12) /* apply */.isEqual(obj.draft, obj);
       let flag = !isEqualResult;
@@ -234,9 +234,9 @@ const guildThemePreviewStore = new GuildThemePreviewStore(require("dispatcher"),
         }
         obj = {};
         const merged = Object.assign(obj);
-        obj.draft = require(1890) /* cloneGuildThemeSettings */.cloneGuildThemeSettings(themeSettings);
-        const obj2 = require(1890) /* cloneGuildThemeSettings */;
-        obj.original = require(1890) /* cloneGuildThemeSettings */.cloneGuildThemeSettings(themeSettings);
+        obj.draft = require(1909) /* cloneGuildThemeSettings */.cloneGuildThemeSettings(themeSettings);
+        const obj2 = require(1909) /* cloneGuildThemeSettings */;
+        obj.original = require(1909) /* cloneGuildThemeSettings */.cloneGuildThemeSettings(themeSettings);
         obj.draftEnabled = flag;
         obj.originalEnabled = flag;
         obj.isSaving = false;
@@ -366,7 +366,7 @@ const guildThemePreviewStore = new GuildThemePreviewStore(require("dispatcher"),
     if (!tmp) {
       let tmp6 = undefined !== guild.theme;
       if (tmp6) {
-        const fromServerGuildThemeResult = require(1890) /* cloneGuildThemeSettings */.fromServerGuildTheme(guild.theme);
+        const fromServerGuildThemeResult = require(1909) /* cloneGuildThemeSettings */.fromServerGuildTheme(guild.theme);
         let flag;
         if (fromServerGuildThemeResult != null) {
           flag = fromServerGuildThemeResult.enabled;
@@ -400,7 +400,7 @@ const guildThemePreviewStore = new GuildThemePreviewStore(require("dispatcher"),
           }
         }
         tmp6 = flag2;
-        const obj = require(1890) /* cloneGuildThemeSettings */;
+        const obj = require(1909) /* cloneGuildThemeSettings */;
         tmp7 = require;
       }
       tmp5 = tmp6;

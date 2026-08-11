@@ -1,10 +1,10 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 15792
+// Function ID: 15793
 // Name: BaseMessagesScreen
-// Dependencies: [19, 5899, 11711, 8396, 21, 11732, 589, 11712, 15766, 15776, 11710, 15777, 15778, 15721, 15733, 2]
+// Dependencies: [19, 5899, 11714, 8402, 21, 11735, 589, 11715, 15783, 15793, 11713, 15794, 15795, 15738, 15750, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 15775 (BaseMessagesScreen)
+// Module 15792 (BaseMessagesScreen)
 import noop from "noop";
 import handleReaction from "handleReaction";
 import prototype from "prototype";
@@ -125,7 +125,7 @@ export const trackMessageItemPress = function trackMessageItemPress(messageId) {
   messageId = messageId.messageId;
   ({ searchContext, channelId, index } = messageId);
   message = message.getMessage(messageId);
-  let obj = importDefault(11732);
+  let obj = importDefault(11735);
   obj = { searchContext, channelId, messageId, userId: null, index: null, entityType: null };
   let id;
   if (message != null) {

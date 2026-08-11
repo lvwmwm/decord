@@ -1,7 +1,7 @@
 // Module ID: 4339
 // Function ID: 4340
 // Name: setLibraryApplications
-// Dependencies: [4340, 1218, 676, 595, 4348, 1384, 589, 12, 709, 2]
+// Dependencies: [4340, 1218, 676, 595, 4348, 1403, 589, 12, 709, 2]
 
 // Module 4339 (setLibraryApplications)
 import createFromServer from "createFromServer";
@@ -259,8 +259,8 @@ const libraryApplicationStore = new LibraryApplicationStore(require("dispatcher"
     }
     let hasFlagResult = null != obj3 && !obj3.isHidden();
     if (hasFlagResult) {
-      hasFlagResult = importAll(1384).hasFlag(flags.flags, LibraryApplicationFlags.HIDDEN);
-      const obj4 = importAll(1384);
+      hasFlagResult = importAll(1403).hasFlag(flags.flags, LibraryApplicationFlags.HIDDEN);
+      const obj4 = importAll(1403);
     }
     if (hasFlagResult) {
       let c14 = true;

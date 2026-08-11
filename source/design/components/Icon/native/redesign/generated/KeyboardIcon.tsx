@@ -1,10 +1,10 @@
-// Module ID: 10188
-// Function ID: 10189
+// Module ID: 10193
+// Function ID: 10194
 // Name: KeyboardIcon
-// Dependencies: [19, 21, 712, 4004, 10189, 2]
+// Dependencies: [19, 21, 712, 4023, 10194, 2]
 // Exports: KeyboardIcon
 
-// Module 10188 (KeyboardIcon)
+// Module 10193 (KeyboardIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const KeyboardIcon = function KeyboardIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10189) /* registerAsset */;
+  obj[0] = require(10194) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,7 +1,7 @@
 // Module ID: 4167
 // Function ID: 4168
 // Name: set
-// Dependencies: [19, 4036, 2]
+// Dependencies: [19, 4042, 2]
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener, useIsScreenIndexFrozenSharedValue
 
 // Module 4167 (set)

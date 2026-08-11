@@ -1,7 +1,7 @@
 // Module ID: 5925
 // Function ID: 5926
 // Name: handleLoadThreadsSuccess
-// Dependencies: [1372, 1903, 11, 4523, 1351, 589, 709, 2]
+// Dependencies: [1391, 1922, 11, 4523, 1370, 589, 709, 2]
 
 // Module 5925 (handleLoadThreadsSuccess)
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -18,7 +18,7 @@ function handleLoadThreadsSuccess(arg0) {
     return true;
   });
   if (mostRecentMessages != null) {
-    const found = mostRecentMessages.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    const found = mostRecentMessages.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     const item1 = found.forEach((channel_id) => {
       let messageRecord = null;
       if (null != channel_id) {

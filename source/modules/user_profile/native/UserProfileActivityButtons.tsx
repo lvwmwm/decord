@@ -1,10 +1,10 @@
-// Module ID: 12309
-// Function ID: 12310
+// Module ID: 12312
+// Function ID: 12313
 // Name: JoinActivityButton
-// Dependencies: [5, 19, 1371, 1372, 4998, 4224, 1891, 10436, 3929, 3938, 1960, 4996, 4319, 676, 8903, 21, 4303, 712, 5728, 3919, 647, 12310, 12311, 7199, 4714, 1236, 7690, 10649, 4271, 11164, 9654, 1297, 8244, 11147, 3998, 12313, 8302, 4509, 4159, 7773, 4513, 5000, 1416, 10492, 6016, 8907, 11151, 1467, 8932, 2]
+// Dependencies: [5, 19, 1390, 1391, 4998, 4224, 1910, 10441, 3948, 3957, 1979, 4996, 4319, 676, 8909, 21, 4303, 712, 5728, 3938, 647, 12313, 12314, 7200, 4714, 1236, 7692, 10654, 4271, 11169, 9659, 1297, 8248, 11152, 4017, 12316, 8307, 4509, 4159, 7775, 4513, 5000, 1435, 10497, 6018, 8913, 11156, 1486, 8938, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 12309 (JoinActivityButton)
+// Module 12312 (JoinActivityButton)
 import handleInviteData from "handleInviteData";
 import "getEmbeddedActivityLocationChannelId";
 import participantFromServer from "participantFromServer";
@@ -14,7 +14,7 @@ import closure_7 from "handleInviteData";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import updateActivities from "updateActivities";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import filterPlayingActivities from "filterPlayingActivities";
 import updateVoiceState from "updateVoiceState";
@@ -62,7 +62,7 @@ export const JoinActivityButton = function JoinActivityButton(user) {
   let tmp5Result = tmp5(JOINED[20]);
   closure_7 = tmp5Result.useStateFromStores([], () => outer1_1(activity[21])({ channelId: set, userId: user.id, activity }));
   tmp5Result = tmp5(JOINED[20]);
-  const items = [analyticsLocations, createGuildRecordFromRust, closure_7, upsertRelationship, handleConnectionOpen, updateVoiceState, getUncachedChannelPermissions, updateActivities, filterPlayingActivities, onAction];
+  const items = [analyticsLocations, createGuildRecordFromRust, closure_7, markAllUserIdListsStale, handleConnectionOpen, updateVoiceState, getUncachedChannelPermissions, updateActivities, filterPlayingActivities, onAction];
   const stateFromStores = tmp5Result.useStateFromStores(items, () => outer1_1(activity[22])({ isEmbedded: true, user, currentUser: closure_1, activity, application, channelId: closure_7, ChannelStore: analyticsLocations, GuildStore: outer1_8, GuildMemberCountStore: closure_7, RelationshipStore: outer1_11, SelectedChannelStore: outer1_12, VoiceStateStore: outer1_14, PermissionStore: outer1_10, LocalActivityStore: outer1_9, SelfPresenceStore: outer1_13, EmbeddedActivitiesStore: onAction }));
   let tmp8 = null;
   if (importDefault(JOINED[23])(activity)) {
@@ -106,13 +106,13 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
   analyticsLocations = importDefault(5728)().analyticsLocations;
   set = { id: application.id, deeplink_uri: application.deepLinkUri };
   let obj = require(647) /* defaultAreStatesEqual */;
-  const items = [analyticsLocations, createGuildRecordFromRust, closure_7, upsertRelationship, handleConnectionOpen, updateVoiceState, getUncachedChannelPermissions, updateActivities, filterPlayingActivities, onAction];
+  const items = [analyticsLocations, createGuildRecordFromRust, closure_7, markAllUserIdListsStale, handleConnectionOpen, updateVoiceState, getUncachedChannelPermissions, updateActivities, filterPlayingActivities, onAction];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_1(outer1_2[22])({ user: closure_0, currentUser: closure_1, activity: closure_2, application, channelId: null, isEmbedded: false, ChannelStore: analyticsLocations, GuildStore: outer1_8, GuildMemberCountStore: outer1_7, RelationshipStore: outer1_11, SelectedChannelStore: outer1_12, VoiceStateStore: outer1_14, PermissionStore: outer1_10, LocalActivityStore: outer1_9, SelfPresenceStore: outer1_13, EmbeddedActivitiesStore: onAction }));
   let tmp3 = null;
   if (null != application) {
     tmp3 = null;
-    if (stateFromStores !== tmp(12311).ActivityJoinability.CANNOT_JOIN) {
-      if (stateFromStores === tmp(12311).ActivityJoinability.JOINED) {
+    if (stateFromStores !== tmp(12314).ActivityJoinability.CANNOT_JOIN) {
+      if (stateFromStores === tmp(12314).ActivityJoinability.JOINED) {
         const intl2 = tmp(1236).intl;
         let stringResult = intl2.string(tmp(1236).t.DPfdsq);
       } else {
@@ -121,7 +121,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
       }
       obj = { text: null, variant: "active", disabled: null, onPress: null };
       obj[0] = stringResult;
-      JOINED = tmp(12311).ActivityJoinability.JOINED;
+      JOINED = tmp(12314).ActivityJoinability.JOINED;
       obj[2] = stateFromStores === JOINED;
       obj[3] = function onPress() {
         onAction({ action: "PRESS_JOIN_BUTTON" });
@@ -143,7 +143,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
   let sync_id;
   sync_id = activity.sync_id;
   let tmp4 = null;
-  if (sync_id(9654)(activity)) {
+  if (sync_id(9659)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       let obj = { text: null, icon: null, variant: "secondary", onPress: null };
@@ -153,7 +153,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
       obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.LEgD7t, obj);
       obj = { size: null, source: null, disableColor: true, style: null };
       obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
-      obj[1] = sync_id(8244);
+      obj[1] = sync_id(8248);
       obj[3] = tmp.icon;
       obj[1] = jsx(require(1297) /* Button */.Icon, { size: null, source: null, disableColor: true, style: null });
       obj[3] = callback(function*() {
@@ -242,10 +242,10 @@ export const WatchActivityButton = function WatchActivityButton(arg0) {
   let require;
   ({ activity, onAction: require } = arg0);
   let importDefault;
-  const tmp2 = importDefault(12313)(activity);
+  const tmp2 = importDefault(12316)(activity);
   importDefault = tmp2;
   let tmp3 = null;
-  if (importDefault(8302)(activity)) {
+  if (importDefault(8307)(activity)) {
     tmp3 = null;
     if (null != tmp2) {
       const obj = { text: null, variant: "secondary", onPress: null };

@@ -1,7 +1,7 @@
 // Module ID: 4154
 // Function ID: 4155
 // Name: getGuildThemeName
-// Dependencies: [19, 1302, 4119, 1236, 4121, 4155, 4157, 647, 4236, 2]
+// Dependencies: [19, 1302, 4124, 1236, 1349, 4155, 4157, 647, 4236, 2]
 // Exports: default
 
 // Module 4154 (getGuildThemeName)

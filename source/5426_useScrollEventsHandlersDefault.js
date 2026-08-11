@@ -1,7 +1,7 @@
 // Module ID: 5426
 // Function ID: 5427
 // Name: useScrollEventsHandlersDefault
-// Dependencies: [5407, 1634, 5400, 5427]
+// Dependencies: [5407, 1653, 5400, 5427]
 
 // Module 5426 (useScrollEventsHandlersDefault)
 const require = arg1;
@@ -23,9 +23,9 @@ arg5.useScrollEventsHandlersDefault = (scrollableRef, scrollableContentOffsetY, 
   const animatedAnimationState = bottomSheetInternal.animatedAnimationState;
   const animatedHandleGestureState = bottomSheetInternal.animatedHandleGestureState;
   const animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
-  let obj1 = _require(1634);
+  let obj1 = _require(1653);
   const sharedValue = obj1.useSharedValue(0);
-  let obj2 = _require(1634);
+  let obj2 = _require(1653);
   const fn = function _() {
     return sharedValue.value;
   };
@@ -94,13 +94,13 @@ arg5.useScrollEventsHandlersDefault = (scrollableRef, scrollableContentOffsetY, 
       }
     }
   }
-  obj = { animatedSheetState, SHEET_STATE: _require(5400).SHEET_STATE, animatedHandleGestureState, State: _require(5427).State, animatedScrollableState, SCROLLABLE_STATE: _require(5400).SCROLLABLE_STATE, scrollTo: _require(1634).scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue };
+  obj = { animatedSheetState, SHEET_STATE: _require(5400).SHEET_STATE, animatedHandleGestureState, State: _require(5427).State, animatedScrollableState, SCROLLABLE_STATE: _require(5400).SCROLLABLE_STATE, scrollTo: _require(1653).scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue };
   E.__closure = obj;
   E.__workletHash = 5039788283731;
   E.__initData = animatedScrollableState;
   const items = [scrollableRef, scrollableContentOffsetY, animatedScrollableState, animatedSheetState];
-  obj[0] = _require(1634).useWorkletCallback(E, items);
-  const obj5 = _require(1634);
+  obj[0] = _require(1653).useWorkletCallback(E, items);
+  const obj5 = _require(1653);
   class O {
     constructor(arg0, arg1) {
       y = scrollableRef.contentOffset.y;
@@ -130,8 +130,8 @@ arg5.useScrollEventsHandlersDefault = (scrollableRef, scrollableContentOffsetY, 
   O.__workletHash = 13124284367046;
   O.__initData = animatedAnimationState;
   const items1 = [scrollableContentOffsetY, animatedSheetState, animatedScrollableContentOffsetY];
-  obj[1] = _require(1634).useWorkletCallback(O, items1);
-  const obj7 = _require(1634);
+  obj[1] = _require(1653).useWorkletCallback(O, items1);
+  const obj7 = _require(1653);
   const fn2 = function b(contentOffset, shouldLockInitialPosition) {
     const y = contentOffset.contentOffset.y;
     if (animatedScrollableState.value === scrollableRef(scrollableContentOffsetY[2]).SCROLLABLE_STATE.LOCKED) {
@@ -153,13 +153,13 @@ arg5.useScrollEventsHandlersDefault = (scrollableRef, scrollableContentOffsetY, 
       animatedScrollableContentOffsetY.value = y;
     }
   };
-  obj2 = { animatedScrollableState, SCROLLABLE_STATE: _require(5400).SCROLLABLE_STATE, scrollTo: _require(1634).scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue, animatedAnimationState, ANIMATION_STATE: _require(5400).ANIMATION_STATE, rootScrollableContentOffsetY: animatedScrollableContentOffsetY };
+  obj2 = { animatedScrollableState, SCROLLABLE_STATE: _require(5400).SCROLLABLE_STATE, scrollTo: _require(1653).scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue, animatedAnimationState, ANIMATION_STATE: _require(5400).ANIMATION_STATE, rootScrollableContentOffsetY: animatedScrollableContentOffsetY };
   fn2.__closure = obj2;
   fn2.__workletHash = 10064727970609;
   fn2.__initData = animatedHandleGestureState;
   const items2 = [scrollableRef, scrollableContentOffsetY, animatedAnimationState, animatedScrollableState, animatedScrollableContentOffsetY];
-  obj[2] = _require(1634).useWorkletCallback(fn2, items2);
-  const obj9 = _require(1634);
+  obj[2] = _require(1653).useWorkletCallback(fn2, items2);
+  const obj9 = _require(1653);
   class C {
     constructor(arg0, arg1) {
       y = scrollableRef.contentOffset.y;
@@ -203,8 +203,8 @@ arg5.useScrollEventsHandlersDefault = (scrollableRef, scrollableContentOffsetY, 
       }
     }
   }
-  const obj11 = _require(1634);
-  C.__closure = { animatedScrollableState, SCROLLABLE_STATE: _require(5400).SCROLLABLE_STATE, scrollTo: _require(1634).scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue, animatedAnimationState, ANIMATION_STATE: _require(5400).ANIMATION_STATE, rootScrollableContentOffsetY: animatedScrollableContentOffsetY };
+  const obj11 = _require(1653);
+  C.__closure = { animatedScrollableState, SCROLLABLE_STATE: _require(5400).SCROLLABLE_STATE, scrollTo: _require(1653).scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue, animatedAnimationState, ANIMATION_STATE: _require(5400).ANIMATION_STATE, rootScrollableContentOffsetY: animatedScrollableContentOffsetY };
   C.__workletHash = 15660341750098;
   C.__initData = animatedScrollableContentOffsetY;
   const items3 = [scrollableContentOffsetY, scrollableRef, animatedAnimationState, animatedScrollableState, animatedScrollableContentOffsetY];

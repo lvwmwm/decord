@@ -1,17 +1,17 @@
-// Module ID: 12564
-// Function ID: 12565
+// Module ID: 12568
+// Function ID: 12569
 // Name: validateJumpWithAlert
-// Dependencies: [1372, 3929, 3938, 676, 4642, 1236, 6966, 2]
+// Dependencies: [1391, 3948, 3957, 676, 4642, 1236, 6969, 2]
 // Exports: default
 
-// Module 12564 (validateJumpWithAlert)
+// Module 12568 (validateJumpWithAlert)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { Permissions } from "ME";
 
 const require = arg1;
-const result = require("upsertRelationship").fileFinishedImporting("modules/messages/validateJumpWithAlert.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/messages/validateJumpWithAlert.tsx");
 
 export default function validateJumpWithAlert(author) {
   let obj = blockedForMessage;
@@ -40,7 +40,7 @@ export default function validateJumpWithAlert(author) {
     importDefault(4642).show(obj1);
     return false;
   } else {
-    obj1 = require(6966) /* isSpamSupported */;
+    obj1 = require(6969) /* isSpamSupported */;
     if (obj1.isSpam(author)) {
       channel = channel.getChannel(author.channel_id);
       let isPrivateResult;

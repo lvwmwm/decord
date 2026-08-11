@@ -1,9 +1,9 @@
-// Module ID: 16390
-// Function ID: 16391
+// Module ID: 16406
+// Function ID: 16407
 // Name: handleMessageCreate
-// Dependencies: [1218, 1903, 5261, 16391, 2]
+// Dependencies: [1218, 1922, 5261, 16407, 2]
 
-// Module 16390 (handleMessageCreate)
+// Module 16406 (handleMessageCreate)
 import fetchFingerprint from "fetchFingerprint";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import "initialize";
@@ -36,13 +36,13 @@ prototype["handleMessageCreate"] = function handleMessageCreate(message) {
       tmp2 = "run bg sync" === message.content;
     }
     if (tmp2) {
-      require(16391) /* _backgroundSync */.backgroundSync({ force: true });
-      const obj2 = require(16391) /* _backgroundSync */;
+      require(16407) /* _backgroundSync */.backgroundSync({ force: true });
+      const obj2 = require(16407) /* _backgroundSync */;
     }
   }
 };
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
-  require(16391) /* _backgroundSync */.backgroundSync({ force: false, messagesOnly: true, checkLastMessageId: true });
+  require(16407) /* _backgroundSync */.backgroundSync({ force: false, messagesOnly: true, checkLastMessageId: true });
 };
 const backgroundSyncManager = new BackgroundSyncManager();
 const result = require("initialize").fileFinishedImporting("modules/app_database/background_sync/native/BackgroundSyncManager.tsx");

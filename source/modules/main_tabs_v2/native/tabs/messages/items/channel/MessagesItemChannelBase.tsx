@@ -1,14 +1,14 @@
-// Module ID: 15167
-// Function ID: 15168
+// Module ID: 15176
+// Function ID: 15177
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
-// Dependencies: [19, 17, 4390, 4315, 3938, 1960, 4499, 1903, 676, 21, 4303, 712, 589, 1348, 15168, 8814, 500, 4313, 4311, 9666, 4846, 9033, 9390, 15169, 3979, 8294, 15170, 8302, 15171, 2]
+// Dependencies: [19, 17, 4390, 4315, 3957, 1979, 4499, 1922, 676, 21, 4303, 712, 589, 1367, 15177, 8820, 500, 4313, 4311, 9671, 4846, 9039, 9396, 15178, 3998, 8299, 15179, 8307, 15180, 2]
 
-// Module 15167 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+// Module 15176 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
 import importAllResult from "openChannelLongPressActionSheet";
 import { View } from "module_4313";
 import sortActivity from "sortActivity";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -99,7 +99,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelBase(channel
       obj[0] = _undefined.getStatus(obj.getRecipientId());
       obj[1] = activities;
     } else {
-      obj = { status: "Array", activities: "ct" };
+      obj = { status: "Array", activities: "HermesInternal" };
     }
     return obj;
   });
@@ -125,7 +125,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelBase(channel
   const stateFromStoresObject2 = obj4.useStateFromStoresObject(items5, () => ({ resolvedUnreadSetting: outer1_9.resolveUnreadSetting(channel), muted: outer1_9.isChannelMuted(channel.getGuildId(), channel.id), favorite: outer1_9.isMessagesFavorite(channel.id) }));
   ({ resolvedUnreadSetting, muted, favorite } = stateFromStoresObject2);
   let obj5 = channel(isPressed[12]);
-  const items6 = [upsertRelationship];
+  const items6 = [markAllUserIdListsStale];
   const stateFromStoresObject3 = obj5.useStateFromStoresObject(items6, () => {
     let obj = channel;
     let isIgnoredResult = channel.isDM();

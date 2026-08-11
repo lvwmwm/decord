@@ -1,9 +1,9 @@
-// Module ID: 14684
-// Function ID: 14685
+// Module ID: 14694
+// Function ID: 14695
 // Name: toggle
-// Dependencies: [8082, 10447, 1236, 3974, 14685, 8181, 2]
+// Dependencies: [8084, 10452, 1236, 3993, 14695, 8183, 2]
 
-// Module 14684 (toggle)
+// Module 14694 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -19,7 +19,7 @@ const toggle = createToggle.createToggle({
   },
   onValueChange: require("onFriendAnniversaryNotificationSettingsChanged").onFriendAnniversaryNotificationSettingsChanged,
   usePredicate() {
-    return importDefault(8181).useConfig({ location: "FriendAnniversaryNotificationSetting" }).enabled;
+    return importDefault(8183).useConfig({ location: "FriendAnniversaryNotificationSetting" }).enabled;
   }
 });
 const obj = {
@@ -35,7 +35,7 @@ const obj = {
   },
   onValueChange: require("onFriendAnniversaryNotificationSettingsChanged").onFriendAnniversaryNotificationSettingsChanged,
   usePredicate() {
-    return importDefault(8181).useConfig({ location: "FriendAnniversaryNotificationSetting" }).enabled;
+    return importDefault(8183).useConfig({ location: "FriendAnniversaryNotificationSetting" }).enabled;
   }
 };
 const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/FriendAnniversaryNotificationSetting.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9953
-// Function ID: 9954
+// Module ID: 9958
+// Function ID: 9959
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 9013, 5268, 9954, 8744, 4299, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 9019, 5268, 9959, 8750, 4299, 2]
 // Exports: default
 
-// Module 9953 (GIFPickerCategoryView)
+// Module 9958 (GIFPickerCategoryView)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -54,7 +54,7 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   let obj = { categoryName: item.name };
   const formatToPlainStringResult = intl.formatToPlainString(onSelectCategory(1236).t["j+63pw"], obj);
   obj = { style: tmp.container, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult };
-  const merged = Object.assign(item(9013)(callback, formatToPlainStringResult));
+  const merged = Object.assign(item(9019)(callback, formatToPlainStringResult));
   obj = { style: tmp.gifImage, source: obj1 };
   const items1 = [callback(item(5268), obj), callback(closure_4, { style: tmp.gifOverlay }), ];
   const obj3 = { style: tmp.categoryName, accessible: false, children: null };
@@ -62,14 +62,14 @@ export default function GIFPickerCategoryView(onSelectCategory) {
     const obj4 = { size: "sm", style: null, color: null };
     obj4[1] = tmp.categoryNameIcon;
     obj4[2] = tmp6(712).colors.WHITE;
-    let tmp10Result = tmp10(tmp3(9954).AnalyticsIcon, obj4);
+    let tmp10Result = tmp10(tmp3(9959).AnalyticsIcon, obj4);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {
       const obj5 = { size: "sm", style: null, color: null };
       obj5[1] = tmp.categoryNameIcon;
       obj5[2] = tmp6(712).colors.WHITE;
-      tmp10Result = tmp10(tmp3(8744).StarIcon, obj5);
+      tmp10Result = tmp10(tmp3(8750).StarIcon, obj5);
     }
   }
   const items2 = [tmp10Result, callback(onSelectCategory(4299).Text, { variant: "text-sm/semibold", color: "text-overlay-light", maxFontSizeMultiplier: 2, accessible: false, children: item.name })];

@@ -1,10 +1,10 @@
-// Module ID: 9919
-// Function ID: 9920
+// Module ID: 9924
+// Function ID: 9925
 // Name: MediaPostThumbnailActionSheet
-// Dependencies: [19, 17, 1369, 21, 4303, 712, 1609, 5397, 5399, 4299, 1236, 1297, 4714, 2]
+// Dependencies: [19, 17, 1388, 21, 4303, 712, 1628, 5397, 5399, 4299, 1236, 1297, 4714, 2]
 // Exports: default
 
-// Module 9919 (MediaPostThumbnailActionSheet)
+// Module 9924 (MediaPostThumbnailActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -40,7 +40,7 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
   };
   obj = { style: tmp.container, children: null };
   obj = { contentContainerStyle: items, children: null };
-  items = [tmp.contentContainer, { paddingBottom: importDefault(1609)().bottom }];
+  items = [tmp.contentContainer, { paddingBottom: importDefault(1628)().bottom }];
   const obj1 = { style: tmp.topContainer, children: null };
   const obj2 = { style: tmp.setAsThumbnailContainer, children: null };
   const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };

@@ -1,10 +1,10 @@
-// Module ID: 9165
-// Function ID: 9166
+// Module ID: 9171
+// Function ID: 9172
 // Name: getLastUsedVideoBackgroundOption
-// Dependencies: [19, 1340, 1903, 9162, 3947, 589, 2]
+// Dependencies: [19, 1340, 1922, 9168, 3966, 589, 2]
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 9165 (getLastUsedVideoBackgroundOption)
+// Module 9171 (getLastUsedVideoBackgroundOption)
 import noop from "noop";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -18,20 +18,20 @@ export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgro
   if (voiceAndVideo != null) {
     prop = voiceAndVideo.videoBackgroundFilterDesktop;
   }
-  const videoBackgroundOptionFromProto = require(9162) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
-  const obj = require(9162) /* isAnimatedBackgroundOption */;
+  const videoBackgroundOptionFromProto = require(9168) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
+  const obj = require(9168) /* isAnimatedBackgroundOption */;
   const tmp2 = require;
   if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
     if (typeof videoBackgroundOptionFromProto !== "number") {
       let tmp7 = videoBackgroundOptionFromProto;
     } else {
       tmp7 = null;
-      const tmp2Result = tmp2(9162);
+      const tmp2Result = tmp2(9168);
     }
     let tmp6 = tmp7;
   } else {
     tmp6 = null;
-    const obj3 = importDefault(3947);
+    const obj3 = importDefault(3966);
   }
   return tmp6;
 };

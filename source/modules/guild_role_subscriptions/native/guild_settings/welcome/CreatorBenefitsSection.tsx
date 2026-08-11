@@ -1,10 +1,10 @@
-// Module ID: 16785
-// Function ID: 16786
+// Module ID: 16797
+// Function ID: 16798
 // Name: EarningPreview
-// Dependencies: [19, 17, 14441, 21, 4303, 712, 4153, 4239, 4299, 1236, 5268, 16786, 16787, 16788, 16789, 16790, 16791, 16792, 16793, 2]
+// Dependencies: [19, 17, 14449, 21, 4303, 712, 1363, 4239, 4299, 1236, 5268, 16798, 16799, 16800, 16801, 16802, 16803, 16804, 16805, 2]
 // Exports: default
 
-// Module 16785 (EarningPreview)
+// Module 16797 (EarningPreview)
 import "set";
 import { View } from "registerAsset";
 import { CREATOR_REVENUE_SHARE_PERCENTAGE as closure_4 } from "MAX_SUBSCRIPTION_TIERS";
@@ -18,12 +18,12 @@ function EarningPreview() {
   const tmp3 = importDefault(4239)();
   const tmp4 = createCacheKey();
   const items = [tmp4.earningMetricsShadowContainer, ];
-  let obj = require(4153) /* AccessibilityAnnouncer */;
+  let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = { style: items, children: null };
   items[1] = obj.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
   const items1 = [, , ];
   ({ earningMetrics: arr2[0], horizontalContainer: arr2[1] } = tmp4);
-  let tmp7Result = tmp7(4153);
+  let tmp7Result = tmp7(1363);
   obj = { style: null, children: null };
   items1[2] = tmp7Result.isThemeDark(tmp3) ? tmp4.earningMetricsDarkMode : tmp4.earningMetricsLightMode;
   obj[0] = items1;
@@ -31,7 +31,7 @@ function EarningPreview() {
   const intl = tmp7(1236).intl;
   obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.TXPK7B);
   const items2 = [closure_5(require(4299) /* Text */.Text, obj1), ];
-  tmp7Result = tmp7(4153);
+  tmp7Result = tmp7(1363);
   const obj2 = { children: null };
   const obj3 = { style: tmp7Result.isThemeDark(tmp3) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode, variant: "heading-lg/extrabold", children: null };
   const intl2 = tmp7(1236).intl;
@@ -41,7 +41,7 @@ function EarningPreview() {
   const items3 = [closure_6(View, obj2), ];
   const obj4 = { style: tmp4.earningMetricsAvatar, source: null };
   const tmp8 = obj.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
-  obj4[1] = importDefault(16786);
+  obj4[1] = importDefault(16798);
   items3[1] = closure_5(importDefault(5268), obj4);
   obj[1] = items3;
   obj[1] = closure_6(View, obj);
@@ -59,15 +59,15 @@ function ConsistentEarningBenefit() {
   ({ horizontalContainer: arr2[0], benefitAvatars: arr2[1] } = tmp4);
   const tmp3 = importDefault(4239)();
   if (obj4.isThemeDark(tmp3)) {
-    let tmpResult = tmp(16787);
+    let tmpResult = tmp(16799);
   } else {
-    tmpResult = tmp(16788);
+    tmpResult = tmp(16800);
   }
   const items2 = [callback(BenefitAvatar, { avatarSource: tmpResult }), , ];
-  obj4 = require(4153) /* AccessibilityAnnouncer */;
-  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16789) });
-  const obj1 = { avatarSource: importDefault(16789) };
-  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16790) });
+  obj4 = require(1363) /* AccessibilityAnnouncer */;
+  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16801) });
+  const obj1 = { avatarSource: importDefault(16801) };
+  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16802) });
   obj[1] = items2;
   items[2] = closure_6(View, obj);
   obj[1] = items;
@@ -81,11 +81,11 @@ function FollowerAwardBenefit() {
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.qsKRUQ);
   const items = [callback(require(4299) /* Text */.Text, obj), , ];
   obj = { style: tmp.socialIllo, source: null };
-  obj[1] = importDefault(16791);
+  obj[1] = importDefault(16803);
   items[1] = callback(importDefault(5268), obj);
   const obj1 = { style: tmp.lanyardIllo, source: null };
   const tmp2 = importDefault(5268);
-  obj1[1] = importDefault(16792);
+  obj1[1] = importDefault(16804);
   items[2] = callback(importDefault(5268), obj1);
   obj[1] = items;
   return callback2(View, obj);
@@ -96,7 +96,7 @@ function RevenueShareBenefit() {
   items = [, ];
   ({ benefitCard: arr[0], revenueShareContainer: arr[1] } = tmp4);
   const items1 = [tmp4.revenueShare, ];
-  let obj1 = require(4153) /* AccessibilityAnnouncer */;
+  let obj1 = require(1363) /* AccessibilityAnnouncer */;
   obj = { style: null, variant: "heading-xxl/extrabold", color: "status-positive", children: null };
   items1[1] = obj1.isThemeDark(importDefault(4239)()) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode;
   obj[0] = items1;
@@ -110,7 +110,7 @@ function RevenueShareBenefit() {
   const tmp3 = importDefault(4239)();
   const tmp5 = closure_6;
   const tmp6 = View;
-  obj1[1] = importDefault(16793);
+  obj1[1] = importDefault(16805);
   items2[2] = closure_5(importDefault(5268), obj1);
   obj[1] = items2;
   return tmp5(tmp6, obj);

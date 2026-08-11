@@ -1,9 +1,9 @@
-// Module ID: 16925
-// Function ID: 16926
+// Module ID: 16937
+// Function ID: 16938
 // Name: AVErrorStreamViewHighPacketLossDefinition
-// Dependencies: [4322, 1218, 4389, 16924, 4367, 9169, 16921, 2]
+// Dependencies: [4322, 1218, 4389, 16936, 4367, 9175, 16933, 2]
 
-// Module 16925 (AVErrorStreamViewHighPacketLossDefinition)
+// Module 16937 (AVErrorStreamViewHighPacketLossDefinition)
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
 import initialize from "initialize";

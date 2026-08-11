@@ -1,16 +1,16 @@
-// Module ID: 10532
-// Function ID: 10533
+// Module ID: 10537
+// Function ID: 10538
 // Name: styles
-// Dependencies: [5, 32, 19, 17, 1376, 3938, 1903, 21, 4303, 712, 4271, 8968, 1988, 1236, 4494, 10517, 4299, 1297, 7967, 2]
+// Dependencies: [5, 32, 19, 17, 1395, 3957, 1922, 21, 4303, 712, 4271, 8974, 2007, 1236, 4494, 10522, 4299, 1297, 7969, 2]
 // Exports: default
 
-// Module 10532 (styles)
-import upsertRelationship from "upsertRelationship";
+// Module 10537 (styles)
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "Button";
 import { createChannelRecord } from "createChannelRecord";
-import closure_8 from "upsertRelationship";
+import closure_8 from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

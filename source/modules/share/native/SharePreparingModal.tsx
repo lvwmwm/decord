@@ -1,10 +1,10 @@
-// Module ID: 8929
-// Function ID: 8930
+// Module ID: 8935
+// Function ID: 8936
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4303, 712, 4702, 8930, 8931, 1236, 5326, 5823, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4702, 8936, 8937, 1236, 5326, 5823, 4299, 2]
 // Exports: default
 
-// Module 8929 (SharePreparingModal)
+// Module 8935 (SharePreparingModal)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -42,8 +42,8 @@ export default function SharePreparingModal(onCancel) {
   obj1[0] = intl.string(onCancel(1236).t.cpT0Cq);
   obj1[1] = callback(onCancel(5326).XSmallIcon, { size: "md", color: "interactive-text-active" });
   obj1[2] = onCancel;
-  obj[1] = callback(importDefault(8931), obj1);
-  obj[2] = callback(onCancel(8930).MediaModalOverlayHeaderWrapper, obj);
+  obj[1] = callback(importDefault(8937), obj1);
+  obj[2] = callback(onCancel(8936).MediaModalOverlayHeaderWrapper, obj);
   items1[1] = callback(closure_4, obj);
   items1[2] = callback(onCancel(5823).ActivityIndicator, {});
   const obj2 = { variant: "text-sm/medium", color: "text-overlay-light", children: null };

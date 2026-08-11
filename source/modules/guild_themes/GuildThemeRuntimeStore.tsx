@@ -1,7 +1,7 @@
 // Module ID: 4189
 // Function ID: 4190
 // Name: snapshotSelectedGuildId
-// Dependencies: [4190, 1891, 4124, 676, 4194, 1890, 12, 589, 709, 2]
+// Dependencies: [4190, 1910, 4126, 676, 4194, 1909, 12, 589, 709, 2]
 
 // Module 4189 (snapshotSelectedGuildId)
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -25,7 +25,7 @@ function snapshotSelectedGuildId(guildId) {
     if (guild != null) {
       guildTheme = guild.guildTheme;
     }
-    const cloneGuildThemeResult = require(1890) /* cloneGuildThemeSettings */.cloneGuildTheme(guildTheme);
+    const cloneGuildThemeResult = require(1909) /* cloneGuildThemeSettings */.cloneGuildTheme(guildTheme);
     const guild1 = store.getGuild(guildId);
     let hasItem;
     if (guild1 != null) {
@@ -51,7 +51,7 @@ function snapshotSelectedGuildId(guildId) {
       obj[2] = tmp8;
       flag = true;
     }
-    const obj3 = require(1890) /* cloneGuildThemeSettings */;
+    const obj3 = require(1909) /* cloneGuildThemeSettings */;
     const obj4 = store;
     tmp11 = require;
   }
@@ -64,7 +64,7 @@ function handleSavedGuildTheme(guildId) {
   guildId = guildId.guildId;
   let tmp = guildId === store2.getGuildId();
   if (tmp) {
-    let obj = require(1890) /* cloneGuildThemeSettings */;
+    let obj = require(1909) /* cloneGuildThemeSettings */;
     const cloneGuildThemeResult = obj.cloneGuildTheme(guildId.guildTheme);
     const guild = store.getGuild(guildId);
     let hasItem;
@@ -231,7 +231,7 @@ const guildThemeRuntimeStore = new GuildThemeRuntimeStore(require("dispatcher"),
             tmp19 = tmp17;
           }
           if (tmp19) {
-            obj = require(1890) /* cloneGuildThemeSettings */;
+            obj = require(1909) /* cloneGuildThemeSettings */;
             const guild2 = obj4.getGuild(id);
             guildTheme = undefined;
             if (guild2 != null) {

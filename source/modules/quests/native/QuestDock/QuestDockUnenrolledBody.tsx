@@ -1,9 +1,9 @@
-// Module ID: 14438
-// Function ID: 14439
+// Module ID: 14446
+// Function ID: 14447
 // Name: QUEST_DOCK_EXPANDED_PADDING_BOTTOM
-// Dependencies: [5, 19, 17, 7160, 14335, 5161, 14337, 21, 4303, 712, 14359, 14423, 647, 14333, 10460, 1609, 10479, 10480, 14341, 14360, 10462, 7187, 5164, 14366, 11173, 14405, 14402, 11169, 14406, 4299, 1236, 1297, 11166, 2]
+// Dependencies: [5, 19, 17, 7161, 14343, 5161, 14345, 21, 4303, 712, 14367, 14431, 647, 14341, 10465, 1628, 10484, 10485, 14349, 14368, 10467, 7188, 5164, 14374, 11178, 14413, 14410, 11174, 14414, 4299, 1236, 1297, 11171, 2]
 
-// Module 14438 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
+// Module 14446 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
 import closure_3 from "QuestsExperimentLocations";
 import importAllResult from "openQuestAccessSuspendedBottomSheet";
 import { View } from "items";
@@ -101,12 +101,12 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
           } else {
             let closure_0 = tmp2;
             if (outer1_5) {
-              v0(14360)();
+              v0(14368)();
               dependencyMap = 3;
             } else {
-              let obj4 = outer1_0(10462);
+              let obj4 = outer1_0(10467);
               const obj1 = { questContentCTA: null, questContent: null, sourceQuestContent: null };
-              obj1[0] = outer1_0(7187).QuestContentCTA.ACCEPT_QUEST;
+              obj1[0] = outer1_0(7188).QuestContentCTA.ACCEPT_QUEST;
               obj1[1] = outer1_0(5164).QuestContent.QUEST_BAR_MOBILE;
               obj1[2] = outer1_0(5164).QuestContent.QUEST_BAR_MOBILE;
               v0 = 1;
@@ -135,9 +135,9 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
             const obj5 = { questId: null, sourceQuestContent: null };
             obj5[0] = outer1_0.id;
             obj5[1] = outer1_0(5164).QuestContent.QUEST_BAR_MOBILE;
-            v0(14366)(obj5);
+            v0(14374)(obj5);
             outer1_4(outer1_8.COLLAPSED);
-            const tmp13 = v0(14366);
+            const tmp13 = v0(14374);
           }
         } else if (arg0 === 1) {
           dependencyMap = 3;

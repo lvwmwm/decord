@@ -1,7 +1,7 @@
 // Module ID: 5330
 // Function ID: 5331
 // Name: PromptHeader
-// Dependencies: [32, 19, 17, 5176, 5265, 1891, 5242, 5239, 1906, 21, 4303, 5267, 712, 1480, 589, 1609, 4005, 689, 5328, 5331, 4299, 1236, 4714, 5334, 4725, 691, 5249, 5355, 5356, 5360, 1416, 4271, 5365, 1988, 4846, 5718, 2]
+// Dependencies: [32, 19, 17, 5176, 5265, 1910, 5242, 5239, 1925, 21, 4303, 5267, 712, 1499, 589, 1628, 4024, 689, 5328, 5331, 4299, 1236, 4714, 5334, 4725, 691, 5249, 5355, 5356, 5360, 1435, 4271, 5365, 2007, 4846, 5718, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
 // Module 5330 (PromptHeader)
@@ -214,8 +214,8 @@ function DropdownOption(option) {
     const obj2 = { id: null, animated: null, size: null };
     ({ id: obj6[0], animated: obj6[1] } = stateFromStores);
     obj2[2] = EMOJI_URL_BASE_SIZE;
-    emojiURL = importDefault(1416).getEmojiURL(obj2);
-    const tmp8Result = importDefault(1416);
+    emojiURL = importDefault(1435).getEmojiURL(obj2);
+    const tmp8Result = importDefault(1435);
   }
   obj1[2] = emojiURL;
   let emoji = option.emoji;

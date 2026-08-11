@@ -1,10 +1,10 @@
-// Module ID: 10132
-// Function ID: 10133
+// Module ID: 10137
+// Function ID: 10138
 // Name: useHandleUseNow
-// Dependencies: [5, 32, 19, 678, 1930, 1236, 9374, 10133, 8268, 8510, 2]
+// Dependencies: [5, 32, 19, 678, 1949, 1236, 9380, 10138, 8273, 8516, 2]
 // Exports: useHandleUseNow
 
-// Module 10132 (useHandleUseNow)
+// Module 10137 (useHandleUseNow)
 import getSystemLocale from "getSystemLocale";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

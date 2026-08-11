@@ -1,10 +1,10 @@
-// Module ID: 12178
-// Function ID: 12179
+// Module ID: 12181
+// Function ID: 12182
 // Name: Spacer
-// Dependencies: [19, 17, 21, 712, 4303, 9273, 9283, 9277, 1236, 4299, 9308, 12179, 1474, 7745, 2]
+// Dependencies: [19, 17, 21, 712, 4303, 9279, 9289, 9283, 1236, 4299, 9314, 12182, 1493, 7747, 2]
 // Exports: default
 
-// Module 12178 (Spacer)
+// Module 12181 (Spacer)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -126,16 +126,16 @@ export default function GameProfileSimilarGames(trackAction) {
   trackAction = trackAction.trackAction;
   let importDefault;
   const tmp = createCacheKey();
-  const GameProfileSimilarGamesMobileExperiment = trackAction(9308).GameProfileSimilarGamesMobileExperiment;
+  const GameProfileSimilarGamesMobileExperiment = trackAction(9314).GameProfileSimilarGamesMobileExperiment;
   const config = GameProfileSimilarGamesMobileExperiment.useConfig({ location: "GameProfileSimilarGames" });
   ({ enabled, dense } = config);
-  const tmp6 = importDefault(12179)(trackAction.gameId, enabled);
+  const tmp6 = importDefault(12182)(trackAction.gameId, enabled);
   const similarGames = tmp6.similarGames;
   let num = 3;
   if (dense) {
     num = 4;
   }
-  const result = (importDefault(1474)().width - 2 * PX_16 - (num - 1) * PX_12 - PX_12) / num;
+  const result = (importDefault(1493)().width - 2 * PX_16 - (num - 1) * PX_12 - PX_12) / num;
   importDefault = result;
   if (tmp6.isFetching) {
     let obj = { style: null, children: null };
@@ -155,7 +155,7 @@ export default function GameProfileSimilarGames(trackAction) {
     obj1[4] = Spacer;
     obj1[5] = ListPadding;
     obj1[6] = ListPadding;
-    items[1] = callback(tmp2(7745).FlashList, obj1);
+    items[1] = callback(tmp2(7747).FlashList, obj1);
     obj[1] = items;
     let tmp10 = callback2(closure_6, obj);
   } else {
@@ -179,7 +179,7 @@ export default function GameProfileSimilarGames(trackAction) {
       obj5[5] = ListPadding;
       obj5[6] = ListPadding;
       obj5[8] = result + PX_12;
-      items1[1] = callback(tmp2(7745).FlashList, obj5);
+      items1[1] = callback(tmp2(7747).FlashList, obj5);
       obj2[1] = items1;
       tmp10 = callback2(closure_6, obj2);
     }

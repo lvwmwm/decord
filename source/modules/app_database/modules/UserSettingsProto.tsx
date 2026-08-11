@@ -1,9 +1,9 @@
-// Module ID: 6948
-// Function ID: 6949
+// Module ID: 6951
+// Function ID: 6952
 // Name: getAll
-// Dependencies: [5, 1340, 1218, 3, 1936, 1952, 12, 2]
+// Dependencies: [5, 1340, 1218, 3, 1955, 1971, 12, 2]
 
-// Module 6948 (getAll)
+// Module 6951 (getAll)
 import databaseName from "databaseName";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";
@@ -36,7 +36,7 @@ class UserSettingsProto {
       if (databaseResult != null) {
         databaseResult.transaction((database) => {
           const state = handleConnectionClosedOrResumed.computeState();
-          let obj = callback(1936);
+          let obj = callback(1955);
           const result = obj.userSettingsTransaction(database);
           for (const key10014 in state) {
             let tmp3 = key10014;
@@ -55,7 +55,7 @@ class UserSettingsProto {
           if (num == null) {
             num = -1;
           }
-          const result1 = callback(1936).nonGuildVersionsTransaction(database);
+          const result1 = callback(1955).nonGuildVersionsTransaction(database);
           result1.put({ id: "user_settings_version", version: num });
         }, "handleUserSettingsProtoChange");
       }
@@ -206,7 +206,7 @@ obj.handleUserSettingsProtoChange = function handleUserSettingsProtoChange() {
   if (databaseResult != null) {
     databaseResult.transaction((database) => {
       const state = handleConnectionClosedOrResumed.computeState();
-      let obj = callback(1936);
+      let obj = callback(1955);
       const result = obj.userSettingsTransaction(database);
       for (const key10014 in state) {
         let tmp3 = key10014;
@@ -225,7 +225,7 @@ obj.handleUserSettingsProtoChange = function handleUserSettingsProtoChange() {
       if (num == null) {
         num = -1;
       }
-      const result1 = callback(1936).nonGuildVersionsTransaction(database);
+      const result1 = callback(1955).nonGuildVersionsTransaction(database);
       result1.put({ id: "user_settings_version", version: num });
     }, "handleUserSettingsProtoChange");
   }

@@ -1,10 +1,10 @@
-// Module ID: 9624
-// Function ID: 9625
+// Module ID: 9629
+// Function ID: 9630
 // Name: UserFlashListActions
-// Dependencies: [19, 17, 21, 9625, 5767, 5374, 2]
+// Dependencies: [19, 17, 21, 9630, 5767, 5374, 2]
 // Exports: useUserListActionsProps
 
-// Module 9624 (UserFlashListActions)
+// Module 9629 (UserFlashListActions)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -48,7 +48,7 @@ export const useUserListActionsProps = function useUserListActionsProps(actions)
   actions = actions.actions;
   const style = actions.style;
   let dependencyMap;
-  const tmp = style(9625)();
+  const tmp = style(9630)();
   dependencyMap = tmp;
   const items = [actions, tmp, style];
   return React.useMemo(() => {

@@ -1,7 +1,7 @@
 // Module ID: 4720
 // Function ID: 4721
 // Name: getFontScale
-// Dependencies: [19, 1475, 1477, 2]
+// Dependencies: [19, 1494, 1496, 2]
 // Exports: getFontScale, useFontScale
 
 // Module 4720 (getFontScale)
@@ -19,7 +19,7 @@ export const getFontScale = function getFontScale() {
   return state.getState().byAppEntry[str].fontScale;
 };
 export const useFontScale = function useFontScale() {
-  appEntryKey = appEntryKey(1477).useAppEntryKey();
+  appEntryKey = appEntryKey(1496).useAppEntryKey();
   const items = [appEntryKey];
   return state(React.useCallback((arg0) => arg0.byAppEntry[appEntryKey].fontScale, items));
 };

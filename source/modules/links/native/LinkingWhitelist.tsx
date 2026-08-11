@@ -1,9 +1,9 @@
-// Module ID: 3999
-// Function ID: 4000
+// Module ID: 4018
+// Function ID: 4019
 // Name: LINKING_WHITELIST
 // Dependencies: [2]
 
-// Module 3999 (LINKING_WHITELIST)
+// Module 4018 (LINKING_WHITELIST)
 obj = { discordConnect: obj, facebook: obj, instagram: obj1, snapchat: obj2, spotify: obj3, tiktok: obj4, twitch: obj5, telegram: obj6, twitter: obj7, whatsapp: obj8, youtube: obj9, zoom: obj10 };
 obj = { regex: /(?:^discordconnect:\/\/)/i, protocol: "discordconnect://" };
 obj = { regex: /(?:^https?:\/\/)(?:www\.)?(facebook\.com)(?:$|\/)/i, protocol: "fb://" };

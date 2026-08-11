@@ -1,15 +1,15 @@
-// Module ID: 8120
-// Function ID: 8121
+// Module ID: 8122
+// Function ID: 8123
 // Name: createAutoModerationActionSystemMessage
-// Dependencies: [17, 1372, 1971, 3929, 3938, 1903, 676, 12, 4153, 712, 8045, 6967, 4532, 1236, 8098, 3883, 8121, 8122, 1416, 8125, 7795, 1419, 8126, 5752, 8072, 4494, 3918, 3971, 8127, 8128, 2]
+// Dependencies: [17, 1391, 1990, 3948, 3957, 1922, 676, 12, 1363, 712, 8047, 6970, 4532, 1236, 8100, 3902, 8123, 8124, 1435, 8127, 7797, 1438, 8128, 5752, 8074, 4494, 3937, 3990, 8129, 8130, 2]
 // Exports: createAutoModerationActionSystemMessage
 
-// Module 8120 (createAutoModerationActionSystemMessage)
+// Module 8122 (createAutoModerationActionSystemMessage)
 import get_ActivityIndicator from "DATE_CONFIG";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
 import apply from "useNullableMessageAuthor";
@@ -18,13 +18,13 @@ let c3;
 let c4;
 ({ processColor: c3, Image: c4 } = get_ActivityIndicator);
 let closure_11 = apply.memoize((arg0) => {
-  let obj = require(4153) /* AccessibilityAnnouncer */;
+  let obj = require(1363) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   obj = { defaultUsernameColor: null };
   const isThemeDarkResult = obj.isThemeDark(arg0);
   const tmp = require;
   const tmp4 = obj.isThemeDark(arg0) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_630;
-  obj[0] = tmp(8045).processColorOrThrow(tmp4);
+  obj[0] = tmp(8047).processColorOrThrow(tmp4);
   return obj;
 });
 let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/messages/native/renderer/system_messages/AutoModerationActionSystemMessage.tsx");
@@ -46,9 +46,9 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
   ({ message, theme, roleStyle } = message);
   const defaultUsernameColor = callback2(theme).defaultUsernameColor;
   const tmp = require;
-  let obj = require(6967) /* getDecisionOutcomeFromMessage */;
+  let obj = require(6970) /* getDecisionOutcomeFromMessage */;
   if (obj.isAutomodMessageRecord(message)) {
-    let tmpResult = tmp(6967);
+    let tmpResult = tmp(6970);
     const result = tmpResult.extractAutomodMessageFields(message);
     ({ keyword, embedChannel, flaggedMessageId, quarantineType } = result);
     ({ ruleName, content, embedChannelId, interactionUserId } = result);
@@ -62,43 +62,43 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
     ({ guildMemberAvatar, colorString, iconRoleId } = messageAuthor);
     const author = message.author;
     const canResult = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, embedChannel);
-    let str = tmp(6967).getActionHeaderTextMobile(message, author, interactionUserId);
+    let str = tmp(6970).getActionHeaderTextMobile(message, author, interactionUserId);
     const intl = tmp(1236).intl;
     const stringResult = intl.string(tmp(1236).t["94JbM3"]);
-    const tmpResult1 = tmp(6967);
-    const result1 = tmp(6967).isAutomodNotification(message);
+    const tmpResult1 = tmp(6970);
+    const result1 = tmp(6970).isAutomodNotification(message);
     let tmp14 = null;
     let tmp15 = stringResult;
     if (result1) {
-      let resolvedReason = tmp(6967).extractAutomodNotificationFields(message);
+      let resolvedReason = tmp(6970).extractAutomodNotificationFields(message);
       const notificationType = resolvedReason.notificationType;
-      if (tmp(6967).IS_BACKWARDS_COMPAT_RAID_TYPE !== notificationType) {
-        if (tmp(8098).AutomodNotificationEmbedTypeKeys.RAID !== notificationType) {
-          if (tmp(8098).AutomodNotificationEmbedTypeKeys.MENTION_RAID === notificationType) {
+      if (tmp(6970).IS_BACKWARDS_COMPAT_RAID_TYPE !== notificationType) {
+        if (tmp(8100).AutomodNotificationEmbedTypeKeys.RAID !== notificationType) {
+          if (tmp(8100).AutomodNotificationEmbedTypeKeys.MENTION_RAID === notificationType) {
             let fromNowResult;
             if (null != resolvedReason.raidDatetime) {
-              fromNowResult = importDefault(3883)(resolvedReason.raidDatetime).fromNow();
-              const obj17 = importDefault(3883)(resolvedReason.raidDatetime);
+              fromNowResult = importDefault(3902)(resolvedReason.raidDatetime).fromNow();
+              const obj17 = importDefault(3902)(resolvedReason.raidDatetime);
             }
             obj = { subtitleLeft: null, header: null, headerColor: null, headerIconURL: null, headerIconColor: null, body: null, shouldShowActions: false };
             obj[0] = fromNowResult;
             const intl5 = tmp(1236).intl;
             obj[1] = intl5.string(tmp(1236).t.C2uIXE);
             const internal3 = importDefault(712).internal;
-            obj[2] = tmp(8045).processColorOrThrow(internal3.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
-            const tmpResult4 = tmp(8045);
-            obj[3] = closure_4.resolveAssetSource(tmp(1416).makeSource(importDefault(7795))).uri;
-            const tmpResult5 = tmp(1416);
+            obj[2] = tmp(8047).processColorOrThrow(internal3.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
+            const tmpResult4 = tmp(8047);
+            obj[3] = closure_4.resolveAssetSource(tmp(1435).makeSource(importDefault(7797))).uri;
+            const tmpResult5 = tmp(1435);
             const internal4 = importDefault(712).internal;
-            obj[4] = tmp(8045).processColorOrThrow(internal4.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
+            obj[4] = tmp(8047).processColorOrThrow(internal4.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
             const intl6 = tmp(1236).intl;
             obj[5] = intl6.string(tmp(1236).t.SWIWEV);
             str = "";
             tmp14 = obj;
             tmp15 = stringResult;
-            const tmpResult6 = tmp(8045);
-          } else if (tmp(8098).AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === notificationType) {
-            const userIdOfAutomodAction = tmp(6967).getUserIdOfAutomodAction(message);
+            const tmpResult6 = tmp(8047);
+          } else if (tmp(8100).AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === notificationType) {
+            const userIdOfAutomodAction = tmp(6970).getUserIdOfAutomodAction(message);
             user = user.getUser(userIdOfAutomodAction);
             let member = null;
             if (null != userIdOfAutomodAction) {
@@ -118,7 +118,7 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
               }
               nick = username;
             }
-            const tmpResult7 = tmp(6967);
+            const tmpResult7 = tmp(6970);
             let avatar;
             if (member != null) {
               avatar = member.avatar;
@@ -133,24 +133,24 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
                 }
                 obj[1] = avatar1;
                 obj[2] = guildId;
-                let guildMemberAvatarSource = tmp(1416).getGuildMemberAvatarSource(obj, author);
-                const tmpResult9 = tmp(1416);
+                let guildMemberAvatarSource = tmp(1435).getGuildMemberAvatarSource(obj, author);
+                const tmpResult9 = tmp(1435);
               }
               const obj1 = { header: null, headerColor: null, headerIconURL: null, headerIconColor: null, body: null, shouldShowActions: false, subtitleRight: null, subtitleLeft: null, enabledByAvatarURL: null, enabledByUsername: null, enabledByColor: null };
               const intl2 = tmp(1236).intl;
               obj1[0] = intl2.string(tmp(1236).t.lVLiFp);
               const ensureAvatarSourceResult = tmpResult8.ensureAvatarSource(guildMemberAvatarSource);
               const internal = importDefault(712).internal;
-              obj1[1] = tmp(8045).processColorOrThrow(internal.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_POSITIVE));
-              const tmpResult10 = tmp(8045);
-              obj1[2] = closure_4.resolveAssetSource(tmp(1416).makeSource(importDefault(8126))).uri;
-              const tmpResult11 = tmp(1416);
+              obj1[1] = tmp(8047).processColorOrThrow(internal.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_POSITIVE));
+              const tmpResult10 = tmp(8047);
+              obj1[2] = closure_4.resolveAssetSource(tmp(1435).makeSource(importDefault(8128))).uri;
+              const tmpResult11 = tmp(1435);
               const internal2 = importDefault(712).internal;
-              obj1[3] = tmp(8045).processColorOrThrow(internal2.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_POSITIVE));
+              obj1[3] = tmp(8047).processColorOrThrow(internal2.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_POSITIVE));
               const intl3 = tmp(1236).intl;
               obj1[4] = intl3.string(tmp(1236).t["QV/8u5"]);
-              const tmpResult12 = tmp(8045);
-              obj1[6] = importDefault(3883)(message.timestamp).fromNow();
+              const tmpResult12 = tmp(8047);
+              obj1[6] = importDefault(3902)(message.timestamp).fromNow();
               const intl4 = tmp(1236).intl;
               obj1[7] = intl4.string(tmp(1236).t.qlFrXW);
               obj1[8] = ensureAvatarSourceResult.uri;
@@ -167,42 +167,42 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
               str = "";
               tmp14 = obj1;
               tmp15 = stringResult;
-              const obj16 = importDefault(3883)(message.timestamp);
+              const obj16 = importDefault(3902)(message.timestamp);
             }
             guildMemberAvatarSource = author.getAvatarSource(undefined, false, 16);
-            tmpResult8 = tmp(1419);
+            tmpResult8 = tmp(1438);
           } else {
             const obj2 = { header: null, headerColor: null, headerIconURL: null, headerIconColor: null, body: null, shouldShowActions: false };
             const intl17 = tmp(1236).intl;
             obj2[0] = intl17.string(tmp(1236).t.VdZCcC);
             const internal7 = importDefault(712).internal;
-            obj2[1] = tmp(8045).processColorOrThrow(internal7.resolveSemanticColor(theme, importDefault(712).colors.TEXT_SUBTLE));
-            const tmpResult13 = tmp(8045);
-            obj2[2] = closure_4.resolveAssetSource(tmp(1416).makeSource(importDefault(7795))).uri;
-            const tmpResult14 = tmp(1416);
+            obj2[1] = tmp(8047).processColorOrThrow(internal7.resolveSemanticColor(theme, importDefault(712).colors.TEXT_SUBTLE));
+            const tmpResult13 = tmp(8047);
+            obj2[2] = closure_4.resolveAssetSource(tmp(1435).makeSource(importDefault(7797))).uri;
+            const tmpResult14 = tmp(1435);
             const internal8 = importDefault(712).internal;
-            obj2[3] = tmp(8045).processColorOrThrow(internal8.resolveSemanticColor(theme, importDefault(712).colors.TEXT_SUBTLE));
+            obj2[3] = tmp(8047).processColorOrThrow(internal8.resolveSemanticColor(theme, importDefault(712).colors.TEXT_SUBTLE));
             const intl18 = tmp(1236).intl;
             obj2[4] = intl18.string(tmp(1236).t["NxHYX/"]);
             str = "";
             tmp14 = obj2;
             tmp15 = stringResult;
-            const tmpResult15 = tmp(8045);
+            const tmpResult15 = tmp(8047);
           }
         }
       }
       let fromNowResult1;
       if (null != resolvedReason.raidDatetime) {
-        fromNowResult1 = importDefault(3883)(resolvedReason.raidDatetime).fromNow();
-        const obj22 = importDefault(3883)(resolvedReason.raidDatetime);
+        fromNowResult1 = importDefault(3902)(resolvedReason.raidDatetime).fromNow();
+        const obj22 = importDefault(3902)(resolvedReason.raidDatetime);
       }
       let str2 = "";
       if (null != resolvedReason.raidDatetime) {
         const _Date = Date;
         const date = new Date(resolvedReason.raidDatetime);
-        str2 = date.toLocaleString(tmp(1236).intl.currentLocale, tmp(8122).DATE_CONFIG);
+        str2 = date.toLocaleString(tmp(1236).intl.currentLocale, tmp(8124).DATE_CONFIG);
       }
-      const tmp42 = resolvedReason.raidType === tmp(8121).AutomodRaidAlertTypes.DM_RAID;
+      const tmp42 = resolvedReason.raidType === tmp(8123).AutomodRaidAlertTypes.DM_RAID;
       const intl7 = tmp(1236).intl;
       const formatToPlainString = intl7.formatToPlainString;
       const t = tmp(1236).t;
@@ -229,28 +229,28 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
         stringResult1 = string(t2.xMwcwV);
       }
       obj5[4] = stringResult1;
-      const tmpResult3 = tmp(6967);
+      const tmpResult3 = tmp(6970);
       const internal5 = importDefault(712).internal;
-      obj5[5] = tmp(8045).processColorOrThrow(internal5.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
+      obj5[5] = tmp(8047).processColorOrThrow(internal5.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
       let tmpResult18 = closure_4;
       let getRaidAlertResolveCTAText = closure_4.resolveAssetSource;
-      let internal6 = tmp(1416);
+      let internal6 = tmp(1435);
       let intl9 = internal6.makeSource;
-      obj5[6] = getRaidAlertResolveCTAText(intl9(importDefault(tmp42 ? 8125 : 7795))).uri;
-      const tmpResult16 = tmp(8045);
+      obj5[6] = getRaidAlertResolveCTAText(intl9(importDefault(tmp42 ? 8127 : 7797))).uri;
+      const tmpResult16 = tmp(8047);
       internal6 = tmp45(712).internal;
-      obj5[7] = tmp(8045).processColorOrThrow(internal6.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
+      obj5[7] = tmp(8047).processColorOrThrow(internal6.resolveSemanticColor(theme, importDefault(712).colors.TEXT_FEEDBACK_CRITICAL));
       intl9 = tmp(1236).intl;
       const obj6 = { dateTime: null };
       obj6[0] = str2;
       obj5[8] = intl9.formatToPlainString(tmp(1236).t["4QIIZl"], obj6);
       const intl10 = tmp(1236).intl;
       intl10.string(tmp(1236).t.ufawcw);
-      tmpResult18 = tmp(6967);
+      tmpResult18 = tmp(6970);
       getRaidAlertResolveCTAText = tmpResult18.getRaidAlertResolveCTAText;
       resolvedReason = resolvedReason.resolvedReason;
       const raidAlertResolveCTAText = getRaidAlertResolveCTAText(resolvedReason);
-      const tmpResult17 = tmp(8045);
+      const tmpResult17 = tmp(8047);
     }
     if (null == guildId) {
       let member1 = null;
@@ -268,15 +268,15 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
         }
       }
       const obj8 = {};
-      const merged = Object.assign(importDefault(8072)(message));
+      const merged = Object.assign(importDefault(8074)(message));
       obj8.roleIcon = roleIcon;
       obj8.authorId = author.id;
       const intl11 = tmp(1236).intl;
       obj8.username = intl11.string(tmp(1236).t.hG1StD);
       const tmp57 = importDefault;
-      const tmpResult20 = tmp(1419);
-      const tmpResult21 = tmp(1416);
-      obj8.avatarURL = tmpResult20.ensureAvatarSource(tmpResult21.makeSource(tmp(1419).getAutomodAvatarURL())).uri;
+      const tmpResult20 = tmp(1438);
+      const tmpResult21 = tmp(1435);
+      obj8.avatarURL = tmpResult20.ensureAvatarSource(tmpResult21.makeSource(tmp(1438).getAutomodAvatarURL())).uri;
       obj8.colorString = callback(colorString);
       const obj9 = { headerText: null, headerBadgeText: null, keywordDisplayText: null, message: null, notification: null, ruleDisplayText: null, reasonDisplayText: null, actionsIconURL: null, actionsText: null, feedbackText: null };
       obj9[0] = str;
@@ -312,7 +312,7 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
       if (canResult) {
         if (null == quarantineType) {
           if (null != embedChannel) {
-            channelName = tmp(4494).computeChannelName(embedChannel, user, upsertRelationship);
+            channelName = tmp(4494).computeChannelName(embedChannel, user, markAllUserIdListsStale);
             const tmpResult23 = tmp(4494);
           }
         }
@@ -340,10 +340,10 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
       obj11[11] = content;
       const tmp61 = colorString;
       const tmp69 = colorString;
-      const tmpResult22 = tmp(1419);
-      obj11[12] = tmp(3918).isMemberCommunicationDisabled(member1);
-      const tmpResult24 = tmp(3918);
-      obj11[13] = tmp(3971).accessibilityLabelCalendarFormat(message.timestamp);
+      const tmpResult22 = tmp(1438);
+      obj11[12] = tmp(3937).isMemberCommunicationDisabled(member1);
+      const tmpResult24 = tmp(3937);
+      obj11[13] = tmp(3990).accessibilityLabelCalendarFormat(message.timestamp);
       obj9[3] = obj11;
       obj9[4] = tmp14;
       const intl14 = tmp(1236).intl;
@@ -354,13 +354,13 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
       if (null != quarantineType) {
         const intl15 = tmp(1236).intl;
         const obj13 = { reason: null };
-        obj13[0] = tmp(6967).getQuarantineReasonString(quarantineType);
+        obj13[0] = tmp(6970).getQuarantineReasonString(quarantineType);
         formatToPlainStringResult1 = intl15.formatToPlainString(tmp(1236).t["26bB2M"], obj13);
-        const tmpResult26 = tmp(6967);
+        const tmpResult26 = tmp(6970);
       }
       obj9[6] = formatToPlainStringResult1;
-      const tmpResult25 = tmp(3971);
-      obj9[7] = closure_4.resolveAssetSource(tmp(1416).makeSource(tmp57(result1 ? 8127 : 8128))).uri;
+      const tmpResult25 = tmp(3990);
+      obj9[7] = closure_4.resolveAssetSource(tmp(1435).makeSource(tmp57(result1 ? 8129 : 8130))).uri;
       const intl16 = tmp(1236).intl;
       const string2 = intl16.string;
       const t3 = tmp(1236).t;
@@ -374,7 +374,7 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
       obj8.autoModerationContext = obj9;
       return obj8;
     } else {
-      tmp(1419);
+      tmp(1438);
       if (null == guildMemberAvatar) {
         let avatarSource = author.getAvatarSource(undefined);
         const uri = tmp52(avatarSource).uri;
@@ -383,10 +383,10 @@ export const createAutoModerationActionSystemMessage = function createAutoModera
       obj14[0] = author.id;
       obj14[1] = guildMemberAvatar;
       obj14[2] = guildId;
-      avatarSource = tmp(1416).getGuildMemberAvatarSource(obj14, author);
-      const tmpResult29 = tmp(1416);
+      avatarSource = tmp(1435).getGuildMemberAvatarSource(obj14, author);
+      const tmpResult29 = tmp(1435);
     }
-    const tmpResult2 = tmp(6967);
+    const tmpResult2 = tmp(6970);
   } else {
     return null;
   }

@@ -1,10 +1,10 @@
-// Module ID: 8199
-// Function ID: 8200
+// Module ID: 8203
+// Function ID: 8204
 // Name: InstagramNeutralIcon
-// Dependencies: [19, 21, 712, 4004, 8200, 2]
+// Dependencies: [19, 21, 712, 4023, 8204, 2]
 // Exports: InstagramNeutralIcon
 
-// Module 8199 (InstagramNeutralIcon)
+// Module 8203 (InstagramNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const InstagramNeutralIcon = function InstagramNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8200) /* registerAsset */;
+  obj[0] = require(8204) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

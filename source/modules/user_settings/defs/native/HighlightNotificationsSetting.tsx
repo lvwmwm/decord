@@ -1,10 +1,10 @@
-// Module ID: 14707
-// Function ID: 14708
+// Module ID: 14717
+// Function ID: 14718
 // Name: useHighlightNotifications
-// Dependencies: [1891, 8082, 676, 589, 10447, 1236, 14708, 2]
+// Dependencies: [1910, 8084, 676, 589, 10452, 1236, 14718, 2]
 // Exports: useHighlightNotifications
 
-// Module 14707 (useHighlightNotifications)
+// Module 14717 (useHighlightNotifications)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import createToggle from "createToggle";
 
@@ -29,7 +29,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.HIGHLIGHT_NOTIFICATIONS,
   getComponent() {
-    return require(14708) /* Row */.default;
+    return require(14718) /* Row */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

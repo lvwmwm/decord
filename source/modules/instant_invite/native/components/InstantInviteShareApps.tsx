@@ -1,8 +1,8 @@
-// Module ID: 9088
-// Function ID: 9089
-// Dependencies: [32, 19, 17, 9089, 21, 4303, 712, 4720, 5427, 9124, 7751, 9093, 2]
+// Module ID: 9094
+// Function ID: 9095
+// Dependencies: [32, 19, 17, 9095, 21, 4303, 712, 4720, 5427, 9130, 7753, 9099, 2]
 
-// Module 9088
+// Module 9094
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -32,10 +32,8 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
   closure_1 = obj.useFontScale();
   const tmp = callback2();
   [arr, c2] = callback(importAllResult.useState(closure_8), 2);
-  const gesture = importAllResult.useMemo(() => {
-    const Gesture = onItemPressed(_undefined[8]).Gesture;
-    return Gesture.Native().disallowInterruption(true);
-  }, []);
+  const tmp2 = callback(importAllResult.useState(closure_8), 2);
+  const gesture = onItemPressed(5427).useNativeGesture({ disallowInterruption: true });
   const effect = importAllResult.useEffect(() => {
     Promise.all(outer1_7.map((isAvailable) => isAvailable.isAvailable)).then((arr) => {
       const items = [];

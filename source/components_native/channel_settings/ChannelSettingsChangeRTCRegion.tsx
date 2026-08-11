@@ -1,10 +1,10 @@
-// Module ID: 15927
-// Function ID: 15928
+// Module ID: 15944
+// Function ID: 15945
 // Name: handleSetRegion
-// Dependencies: [853, 19, 1372, 15886, 21, 4303, 712, 4013, 1236, 8016, 7984, 7985, 7967, 589, 38, 2]
+// Dependencies: [853, 19, 1391, 15903, 21, 4303, 712, 4031, 1236, 8018, 7986, 7987, 7969, 589, 38, 2]
 // Exports: default
 
-// Module 15927 (handleSetRegion)
+// Module 15944 (handleSetRegion)
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import initialize from "initialize";
@@ -79,7 +79,7 @@ prototype["handleSetRegion"] = function handleSetRegion(arg0) {
     c0 = null;
     tmp = null;
   }
-  self(8016).updateChannel({ rtcRegion: tmp });
+  self(8018).updateChannel({ rtcRegion: tmp });
   self.setState({ submitting: true }, () => {
     let obj = self(outer1_2[9]);
     obj = { rtcRegion: c0 };
@@ -87,13 +87,13 @@ prototype["handleSetRegion"] = function handleSetRegion(arg0) {
   });
 };
 prototype["renderRegion"] = function renderRegion(label) {
-  return jsx(require(7984) /* TableRadioRow */.TableRadioRow, { label: label.name, value: label.id }, label.id);
+  return jsx(require(7986) /* TableRadioRow */.TableRadioRow, { label: label.name, value: label.id }, label.id);
 };
 prototype["renderRegions"] = function renderRegions() {
   const self = this;
   const substr = callback(this.state.regions).slice(0);
   const mapped = substr.map(this.renderRegion, this);
-  return jsx(self(7985).TableRadioGroup, {
+  return jsx(self(7987).TableRadioGroup, {
     defaultValue: this.state.selectedRegionId,
     onChange(arg0) {
       return self.handleSetRegion(arg0);
@@ -105,7 +105,7 @@ prototype["renderRegions"] = function renderRegions() {
 prototype["render"] = function render() {
   const obj = { style: createCacheKey(this.context).form, children: null };
   obj[1] = this.renderRegions();
-  return jsx(require(7967) /* Form */.Form, { style: createCacheKey(this.context).form, children: null });
+  return jsx(require(7969) /* Form */.Form, { style: createCacheKey(this.context).form, children: null });
 };
 ChannelSettingsChangeRTCRegion.contextType = require("ManaContext").ThemeContext;
 const result = require("ensureGuildLoaded").fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeRTCRegion.tsx");

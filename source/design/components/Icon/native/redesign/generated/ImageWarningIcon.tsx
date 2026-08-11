@@ -1,7 +1,7 @@
 // Module ID: 4810
 // Function ID: 4811
 // Name: ImageWarningIcon
-// Dependencies: [19, 21, 712, 4004, 4788, 2]
+// Dependencies: [19, 21, 712, 4023, 4788, 2]
 // Exports: ImageWarningIcon
 
 // Module 4810 (ImageWarningIcon)
@@ -22,5 +22,5 @@ export const ImageWarningIcon = function ImageWarningIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

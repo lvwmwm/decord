@@ -1,12 +1,12 @@
-// Module ID: 9535
-// Function ID: 9536
+// Module ID: 9541
+// Function ID: 9542
 // Name: useFriendsSinceDate
-// Dependencies: [1975, 3938, 676, 647, 5124, 2]
+// Dependencies: [1994, 3957, 676, 647, 5124, 2]
 // Exports: useFriendsSinceDate
 
-// Module 9535 (useFriendsSinceDate)
+// Module 9541 (useFriendsSinceDate)
 import _getSystemLocale from "_getSystemLocale";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { RelationshipTypes } from "ME";
 
 const require = arg1;
@@ -17,7 +17,7 @@ export const useFriendsSinceDate = function useFriendsSinceDate(userId) {
   const items = [_getSystemLocale];
   const stateFromStores = _require(647).useStateFromStores(items, () => locale.locale);
   const obj = _require(647);
-  const items1 = [upsertRelationship];
+  const items1 = [markAllUserIdListsStale];
   const items2 = [userId];
   const stateFromStores1 = _require(647).useStateFromStores(items1, () => {
     let since = null;

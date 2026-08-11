@@ -1,10 +1,10 @@
-// Module ID: 7983
-// Function ID: 7984
+// Module ID: 7985
+// Function ID: 7986
 // Name: FormRadioRow
-// Dependencies: [19, 21, 5373, 4019, 7984, 5367, 5390, 2]
+// Dependencies: [19, 21, 5373, 4032, 7986, 5367, 5390, 2]
 // Exports: default
 
-// Module 7983 (FormRadioRow)
+// Module 7985 (FormRadioRow)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -26,7 +26,7 @@ export default function FormRadioRow(arg0) {
   ({ value, style } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   const context = React.useContext(require(5373) /* context */.RedesignCompatContext);
-  let obj = require(4019) /* useCheckboxA11yNative */;
+  let obj = require(4032) /* useCheckboxA11yNative */;
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   if (context) {
     obj = { icon: null, value: null, legacyCompat_selected: null, legacyCompat_onPress: null };
@@ -35,7 +35,7 @@ export default function FormRadioRow(arg0) {
     obj[2] = selected;
     obj[3] = onPress;
     const merged1 = Object.assign(merged);
-    let tmp8Result = tmp8(require(7984) /* TableRadioRow */.TableRadioRow, obj);
+    let tmp8Result = tmp8(require(7986) /* TableRadioRow */.TableRadioRow, obj);
   } else {
     obj = {};
     const merged2 = Object.assign(merged);

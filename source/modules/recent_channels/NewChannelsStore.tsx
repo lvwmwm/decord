@@ -1,9 +1,9 @@
-// Module ID: 6991
-// Function ID: 6992
+// Module ID: 6994
+// Function ID: 6995
 // Name: guildHasCommunity
-// Dependencies: [1340, 1218, 1372, 1961, 1971, 1891, 4315, 4499, 676, 687, 5900, 709, 5253, 11, 589, 2]
+// Dependencies: [1340, 1218, 1391, 1980, 1990, 1910, 4315, 4499, 676, 687, 5900, 709, 5253, 11, 589, 2]
 
-// Module 6991 (guildHasCommunity)
+// Module 6994 (guildHasCommunity)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

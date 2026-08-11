@@ -1,7 +1,7 @@
 // Module ID: 5855
 // Function ID: 5856
 // Name: formatSingleCurrencyPrice
-// Dependencies: [1975, 3949, 1905, 505, 500, 5856, 5858, 5860, 1236, 3947, 2]
+// Dependencies: [1994, 3968, 1924, 505, 500, 5856, 5858, 5860, 1236, 3966, 2]
 // Exports: formatDualPriceForBG, formatPercent, formatSubscriptionPlanRate, maybeShortenPrice, shortenAndFormatPrice
 
 // Module 5855 (formatSingleCurrencyPrice)
@@ -130,7 +130,7 @@ export const formatPercent = function formatPercent(arg0, arg1) {
   return Intl.NumberFormat(arg0, { style: "percent", minimumFractionDigits: 0 }).format(arg1);
 };
 export const formatSubscriptionPlanRate = function formatSubscriptionPlanRate(interval_count) {
-  const price = require(3947) /* getPremiumPlanItem */.getPrice(interval_count.id);
+  const price = require(3966) /* getPremiumPlanItem */.getPrice(interval_count.id);
   return formatRate(formatPrice(price.amount, price.currency), interval_count.interval, "interval_count" in interval_count ? interval_count.interval_count : interval_count.intervalCount);
 };
 export const maybeShortenPrice = function maybeShortenPrice(str) {

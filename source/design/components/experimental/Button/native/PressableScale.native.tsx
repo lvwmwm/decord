@@ -1,17 +1,17 @@
-// Module ID: 8668
-// Function ID: 8669
+// Module ID: 8674
+// Function ID: 8675
 // Name: PressableScale
-// Dependencies: [109, 19, 17, 21, 4036, 4719, 2]
+// Dependencies: [109, 19, 17, 21, 4042, 4719, 2]
 
-// Module 8668 (PressableScale)
+// Module 8674 (PressableScale)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 
 const require = arg1;
 let closure_2 = ["style"];
-let closure_5 = require("module_4036").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_5 = require("module_4042").createAnimatedComponent(require("get ActivityIndicator").Pressable);
 const forwardRefResult = importAllResult.forwardRef((scaleAmountInPx, ref) => {
   let onPressIn;
   let onPressOut;
@@ -21,7 +21,7 @@ const forwardRefResult = importAllResult.forwardRef((scaleAmountInPx, ref) => {
   }
   ({ onPressIn, onPressOut } = scaleAmountInPx);
   const merged = Object.assign(scaleAmountInPx, Object.create(null));
-  let obj = require(4036);
+  let obj = require(4042);
   const sharedValue = obj.useSharedValue(0);
   const buttonPressAnimationProps = require(4719) /* styleProperties */.useButtonPressAnimationProps(sharedValue, num, scaleAmountInPx.onLayout, onPressIn, onPressOut);
   obj = {};

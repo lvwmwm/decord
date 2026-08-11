@@ -1,10 +1,10 @@
-// Module ID: 6016
-// Function ID: 6017
+// Module ID: 6018
+// Function ID: 6019
 // Name: openUserSettings
-// Dependencies: [6017, 676, 4159, 709, 2]
+// Dependencies: [6019, 676, 4159, 709, 2]
 // Exports: openUserSettings
 
-// Module 6016 (openUserSettings)
+// Module 6018 (openUserSettings)
 import handleFormClose from "handleFormClose";
 import { UserSettingsSections } from "ME";
 

@@ -1,10 +1,10 @@
-// Module ID: 7005
-// Function ID: 7006
+// Module ID: 7008
+// Function ID: 7009
 // Name: createCollectiblesItemsFromServerResponse
-// Dependencies: [7006, 1928, 7007, 7008, 7009, 676, 1930, 2]
+// Dependencies: [7009, 1947, 7010, 7011, 7012, 676, 1949, 2]
 // Exports: createCollectiblesItemsFromServerResponse
 
-// Module 7005 (createCollectiblesItemsFromServerResponse)
+// Module 7008 (createCollectiblesItemsFromServerResponse)
 import fromServer from "fromServer";
 import closure_3 from "fromServer";
 import closure_4 from "fromServer";
@@ -60,7 +60,7 @@ function transformSKUToCollectiblesItem(productLine) {
       }
       if (null != item) {
         type = item.type;
-        if (require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+        if (require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
           obj = { type: "single", item: null };
           const obj1 = { skuId: null, type: null, asset: null, label: null };
           obj1[0] = productLine.id;
@@ -68,7 +68,7 @@ function transformSKUToCollectiblesItem(productLine) {
           const tmp28 = new fromServer(obj1);
           obj[1] = tmp28;
           return obj;
-        } else if (tmp4(1930).CollectiblesItemType.NAMEPLATE === type) {
+        } else if (tmp4(1949).CollectiblesItemType.NAMEPLATE === type) {
           const obj2 = { type: "single", item: null };
           const obj3 = { skuId: null, type: null, asset: null, label: null, palette: null };
           obj3[0] = productLine.id;
@@ -76,7 +76,7 @@ function transformSKUToCollectiblesItem(productLine) {
           const tmp22 = new closure_3(obj3);
           obj2[1] = tmp22;
           return obj2;
-        } else if (tmp4(1930).CollectiblesItemType.PROFILE_EFFECT === type) {
+        } else if (tmp4(1949).CollectiblesItemType.PROFILE_EFFECT === type) {
           const obj4 = { skuId: null, type: null, title: null, description: null, thumbnailPreviewSrc: null, reducedMotionSrc: null, effects: null, accessibilityLabel: null, animationType: null, staticFrameSrc: null };
           obj4[0] = productLine.id;
           ({ type: obj3[1], title: obj3[2], description: obj3[3], thumbnailPreviewSrc: obj3[4], reducedMotionSrc: obj3[5], effects } = item);
@@ -90,7 +90,7 @@ function transformSKUToCollectiblesItem(productLine) {
           tmp12 = new tmp12(obj4);
           obj5[1] = tmp12;
           return obj5;
-        } else if (tmp4(1930).CollectiblesItemType.PROFILE_FRAME === type) {
+        } else if (tmp4(1949).CollectiblesItemType.PROFILE_FRAME === type) {
           obj = { type: "single", item: null };
           const obj6 = { skuId: null, type: null, label: null, layers: null, innerWidth: null, overflowTop: null, overflowBottom: null, overflowHorizontal: null };
           obj6[0] = productLine.id;

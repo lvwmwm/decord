@@ -1,10 +1,10 @@
-// Module ID: 15651
-// Function ID: 15652
+// Module ID: 15668
+// Function ID: 15669
 // Name: useTrackRoleSubscriptionUpsellAnalytics
-// Dependencies: [19, 3923, 676, 14449, 15652, 589, 5728, 1222, 698, 4498, 2]
+// Dependencies: [19, 3942, 676, 14457, 15669, 589, 5728, 1222, 698, 4498, 2]
 // Exports: default
 
-// Module 15651 (useTrackRoleSubscriptionUpsellAnalytics)
+// Module 15668 (useTrackRoleSubscriptionUpsellAnalytics)
 import noop from "noop";
 import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
 import { AnalyticEvents } from "ME";

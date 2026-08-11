@@ -1,10 +1,10 @@
-// Module ID: 14024
-// Function ID: 14025
+// Module ID: 14032
+// Function ID: 14033
 // Name: componentWillUnmount
-// Dependencies: [19, 17, 1365, 6017, 1903, 676, 21, 4303, 712, 4013, 8510, 8512, 12, 698, 7593, 8514, 14025, 4299, 1236, 4712, 7790, 4714, 6878, 589, 38, 1480, 2]
+// Dependencies: [19, 17, 1384, 6019, 1922, 676, 21, 4303, 712, 4031, 8516, 8518, 12, 698, 7595, 8520, 14033, 4299, 1236, 4712, 7792, 4714, 6880, 589, 38, 1499, 2]
 // Exports: default
 
-// Module 14024 (componentWillUnmount)
+// Module 14032 (componentWillUnmount)
 import get_ActivityIndicator from "Text";
 import handleUpdateUser from "handleUpdateUser";
 import handleFormClose from "handleFormClose";
@@ -26,7 +26,7 @@ let require = arg1;
 ({ Image: c4, View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ AnalyticEvents: c10, LoginRequiredActions: unpackModuleId } = ME);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let closure_14 = { newPassword: "call", password: 17061441 };
+let closure_14 = { newPassword: "call", password: 17069377 };
 createCacheKey = { onePass: { width: 20, height: 20 }, unverifiedWrapper: null, container: null, header: null, requiredActionsSubtitle: null, requiredActionsTitle: null, image: null };
 createCacheKey = { overflow: "hidden", borderRadius: require("Themes").radii.xs, marginVertical: 16 };
 createCacheKey[1] = createCacheKey;
@@ -130,7 +130,7 @@ class EditPassword extends Component {
 const prototype = EditPassword.prototype;
 prototype["componentWillUnmount"] = function componentWillUnmount() {
   try {
-    importAll(8510).resetAccount();
+    importAll(8516).resetAccount();
   } catch (err) {
   }
 };
@@ -162,7 +162,7 @@ prototype["render"] = function render() {
   if (hasBannerText) {
     obj = { style: null, children: null };
     obj[0] = tmp.unverifiedWrapper;
-    obj[1] = tmp2(importDefault(8514), {});
+    obj[1] = tmp2(importDefault(8520), {});
     hasBannerText = tmp2(tmp5, obj);
   }
   const items = [hasBannerText, , , ];
@@ -171,7 +171,7 @@ prototype["render"] = function render() {
     obj = { style: null, children: null };
     obj[0] = tmp.header;
     const obj1 = { source: null, style: null };
-    obj1[0] = importDefault(14025);
+    obj1[0] = importDefault(14033);
     obj1[1] = tmp.image;
     const items1 = [tmp2(closure_4, obj1), , ];
     const obj2 = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
@@ -211,7 +211,7 @@ prototype["render"] = function render() {
   obj7[3] = self.handlePasswordChange;
   obj7[4] = password;
   obj7[5] = self.canSubmit() ? self.handleSubmit : self.handleFocusNewPassword;
-  const items3 = [closure_12(require(7790) /* TextInput */.TextInput, obj7), , ];
+  const items3 = [closure_12(require(7792) /* TextInput */.TextInput, obj7), , ];
   const obj8 = { label: newPasswordLabel, ref: self.handleSetNewPasswordRef, secureTextEntry: true, errorMessage: null, onChange: null, value: null, returnKeyType: "done", autoComplete: "new-password", onSubmitEditing: null, required: true };
   obj8[3] = self.getError("new_password");
   obj8[4] = self.handleNewPasswordChange;
@@ -221,7 +221,7 @@ prototype["render"] = function render() {
     handleSubmit = self.handleSubmit;
   }
   obj8[8] = handleSubmit;
-  items3[1] = closure_12(require(7790) /* TextInput */.TextInput, obj8);
+  items3[1] = closure_12(require(7792) /* TextInput */.TextInput, obj8);
   const obj9 = { text: null, onPress: null, loading: null, disabled: null };
   const intl5 = tmp16(1236).intl;
   obj9[0] = intl5.string(require(1236) /* getSystemLocale */.t["FRep5/"]);
@@ -247,7 +247,7 @@ EditPassword.contextType = require("ManaContext").ThemeContext;
 let result = require("handleUpdateUser").fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountEditPassword.tsx");
 
 export default function EditPasswordWrapper() {
-  let obj = flag(6878);
+  let obj = flag(6880);
   const params = obj.useSettingNavigationRoute().params;
   flag = undefined;
   if (params != null) {
@@ -296,7 +296,7 @@ export default function EditPasswordWrapper() {
     obj[8] = null != obj.getBannerText(currentUser);
     return obj;
   });
-  tmpResult = tmp(1480);
+  tmpResult = tmp(1499);
   obj = { navigation: tmpResult.useNavigation() };
   const merged = Object.assign(stateFromStoresObject);
   return callback(EditPassword, obj);

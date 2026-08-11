@@ -1,9 +1,9 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 12985
+// Function ID: 12986
 // Name: isLatest
-// Dependencies: [3939, 4315, 4523, 11, 2]
+// Dependencies: [3958, 4315, 4523, 11, 2]
 
-// Module 12981 (isLatest)
+// Module 12985 (isLatest)
 import hasFlag from "hasFlag";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 

@@ -1,10 +1,10 @@
-// Module ID: 8712
-// Function ID: 8713
+// Module ID: 8718
+// Function ID: 8719
 // Name: EMOJI_PICKER_PREMIUM_UPSELL_HEIGHT
-// Dependencies: [19, 17, 1903, 676, 1905, 21, 4303, 712, 698, 3947, 4271, 8622, 8623, 1297, 8713, 4299, 1236, 4846, 2]
+// Dependencies: [19, 17, 1922, 676, 1924, 21, 4303, 712, 698, 3966, 4271, 8628, 8629, 1297, 8719, 4299, 1236, 4846, 2]
 // Exports: useEmojiPickerPremiumSearchUpsellClick, useEmojiPickerPremiumSearchUpsellViewed
 
-// Module 8712 (EMOJI_PICKER_PREMIUM_UPSELL_HEIGHT)
+// Module 8718 (EMOJI_PICKER_PREMIUM_UPSELL_HEIGHT)
 import importAllResult from "noop";
 import { View } from "PressableBase";
 import mergeGuildAvatar from "mergeGuildAvatar";

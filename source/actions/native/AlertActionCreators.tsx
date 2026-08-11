@@ -1,6 +1,6 @@
 // Module ID: 4643
 // Function ID: 4644
-// Dependencies: [19, 21, 4271, 709, 4644, 1236, 1348, 4647, 4732, 4732, 1988, 2]
+// Dependencies: [19, 21, 4271, 709, 4644, 1236, 1367, 4647, 4732, 4732, 2007, 2]
 
 // Module 4643
 import "noop";
@@ -68,7 +68,7 @@ export default {
     let callback;
     c4 = undefined;
     let c5;
-    let obj = confirmText(1348);
+    let obj = confirmText(1367);
     if (obj.isMobileVisualRefreshEnabled("AlertActionCreators")) {
       obj = {};
       let merged1 = Object.assign(merged);

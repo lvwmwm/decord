@@ -1,10 +1,10 @@
-// Module ID: 9054
-// Function ID: 9055
+// Module ID: 9060
+// Function ID: 9061
 // Name: createStageChannelForEvent
-// Dependencies: [5, 1376, 1372, 1891, 1378, 676, 8995, 38, 7786, 8940, 2]
+// Dependencies: [5, 1395, 1391, 1910, 1397, 676, 9001, 38, 7788, 8946, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 9054 (createStageChannelForEvent)
+// Module 9060 (createStageChannelForEvent)
 import ME from "ME";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";

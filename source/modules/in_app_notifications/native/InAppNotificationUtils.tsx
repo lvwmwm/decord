@@ -1,10 +1,10 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9773
+// Function ID: 9774
 // Name: extractMetadataFromNotification
-// Dependencies: [19, 9769, 676, 12, 514, 501, 687, 5918, 4498, 2]
+// Dependencies: [19, 9774, 676, 12, 514, 501, 687, 5918, 4498, 2]
 // Exports: generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed, trackInAppNotificationAccessoryClicked, useHasPreviewableMedia
 
-// Module 9768 (extractMetadataFromNotification)
+// Module 9773 (extractMetadataFromNotification)
 import noop from "noop";
 import { REACTION_MILESTONE_COUNTS } from "set";
 import ME from "ME";

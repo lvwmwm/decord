@@ -1,10 +1,10 @@
-// Module ID: 11570
-// Function ID: 11571
+// Module ID: 11573
+// Function ID: 11574
 // Name: UsernameText
 // Dependencies: [19, 21, 4493, 4299, 2]
 // Exports: default
 
-// Module 11570 (UsernameText)
+// Module 11573 (UsernameText)
 import "noop";
 import jsxProd from "jsxProd";
 

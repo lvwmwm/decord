@@ -1,10 +1,10 @@
-// Module ID: 5933
-// Function ID: 5934
+// Module ID: 5935
+// Function ID: 5936
 // Name: SimpleLoadingModal
 // Dependencies: [19, 17, 21, 4303, 5823, 2]
 // Exports: default
 
-// Module 5933 (SimpleLoadingModal)
+// Module 5935 (SimpleLoadingModal)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

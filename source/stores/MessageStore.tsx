@@ -1,7 +1,7 @@
 // Module ID: 4521
 // Function ID: 4522
 // Name: reinjectEphemerals
-// Dependencies: [32, 5, 1963, 4522, 1975, 1218, 1372, 4988, 1961, 1971, 1891, 3929, 3938, 1960, 4124, 1903, 676, 3, 11, 4989, 4994, 1936, 4992, 4523, 1384, 12, 7059, 4532, 3940, 7293, 13030, 589, 11144, 1935, 709, 2]
+// Dependencies: [32, 5, 1982, 4522, 1994, 1218, 1391, 4988, 1980, 1990, 1910, 3948, 3957, 1979, 4126, 1922, 676, 3, 11, 4989, 4994, 1955, 4992, 4523, 1403, 12, 7062, 4532, 3959, 7294, 13039, 589, 11149, 1954, 709, 2]
 
 // Module 4521 (reinjectEphemerals)
 import canEditMessage from "canEditMessage";
@@ -16,7 +16,7 @@ import comparator from "comparator";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_17 from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -97,20 +97,20 @@ function _addPushNotificationMessageIfNotCached() {
               let fetchFingerprint = tmp3;
               let orCreate = tmp28;
               orCreate = undefined;
-              const databaseResult = lib(1936).database();
+              const databaseResult = lib(1955).database();
               const basicChannel = outer1_9.getBasicChannel(closure_0);
               if (null != databaseResult) {
                 if (null != basicChannel) {
                   let c5 = 1;
-                  const obj4 = lib(1936);
+                  const obj4 = lib(1955);
                   c6 = 2;
                   c7 = 1;
                   let obj1 = { value: null, done: false };
-                  obj1[0] = lib(1936).messages(databaseResult).get(basicChannel.guild_id, tmp35, tmp36.id);
+                  obj1[0] = lib(1955).messages(databaseResult).get(basicChannel.guild_id, tmp35, tmp36.id);
                   return obj1;
                 }
               }
-              const obj9 = lib(1936);
+              const obj9 = lib(1955);
               tmp35 = closure_0;
               tmp36 = lib;
             }
@@ -280,7 +280,7 @@ function handleReaction(optimistic) {
     } else {
       return false;
     }
-    obj3 = _require(3940);
+    obj3 = _require(3959);
   }
   const obj = importDefault(4989);
   tmp = importDefault;
@@ -289,8 +289,8 @@ function handleMessageSendFailedAutomod(arg0) {
   let messageData;
   let require;
   ({ type: require, messageData } = arg0);
-  const failedMessageId = require(7293) /* items */.getFailedMessageId(messageData);
-  const obj = require(7293) /* items */;
+  const failedMessageId = require(7294) /* items */.getFailedMessageId(messageData);
+  const obj = require(7294) /* items */;
   const tmp3 = importDefault;
   const orCreate = importDefault(4989).getOrCreate(messageData.message.channelId);
   if (orCreate.has(failedMessageId)) {
@@ -325,7 +325,7 @@ class MessageStore extends Store {
 }
 const prototype = MessageStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(closure_8, ensureGuildLoaded, percentageScrolled, dropChannelIfEmpty, comparator, trackCommunicationDisabled, createGuildRecordFromRust, initialize, _getSystemLocale, getUncachedChannelPermissions, upsertRelationship, handleConnectionOpen, closure_17, mergeGuildAvatar);
+  this.waitFor(closure_8, ensureGuildLoaded, percentageScrolled, dropChannelIfEmpty, comparator, trackCommunicationDisabled, createGuildRecordFromRust, initialize, _getSystemLocale, getUncachedChannelPermissions, markAllUserIdListsStale, handleConnectionOpen, closure_17, mergeGuildAvatar);
   const items = [initialize];
   this.syncWith(items, () => {
 
@@ -851,7 +851,7 @@ const messageStore = new MessageStore(require("dispatcher"), {
     const value = importDefault(4989).get(messageId.channelId);
     if (null != value) {
       if (value.has(messageId)) {
-        const updateResult = value.update(messageId, require(7059) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage);
+        const updateResult = value.update(messageId, require(7062) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage);
         importDefault(4989).commit(updateResult);
       }
     }

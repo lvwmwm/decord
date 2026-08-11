@@ -1,13 +1,13 @@
-// Module ID: 9817
-// Function ID: 9818
+// Module ID: 9822
+// Function ID: 9823
 // Name: ConnectedInAppNotificationSettingsScreen
-// Dependencies: [19, 1376, 1372, 3938, 4499, 1903, 676, 21, 5262, 5257, 4494, 7967, 1236, 9818, 6016, 589, 5270, 5783, 2]
+// Dependencies: [19, 1395, 1391, 3957, 4499, 1922, 676, 21, 5262, 5257, 4494, 7969, 1236, 9823, 6018, 589, 5270, 5783, 2]
 
-// Module 9817 (ConnectedInAppNotificationSettingsScreen)
+// Module 9822 (ConnectedInAppNotificationSettingsScreen)
 import importAllResult from "noop";
 import { isMultiUserDM } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -72,7 +72,7 @@ prototype["renderGroupDMNotificationSettings"] = function renderGroupDMNotificat
     return null;
   } else {
     let obj = require(4494) /* computeChannelName */;
-    const channelName = obj.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+    const channelName = obj.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
     obj = { children: null };
     obj = { label: null, value: null, onValueChange: null };
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -81,8 +81,8 @@ prototype["renderGroupDMNotificationSettings"] = function renderGroupDMNotificat
     obj[0] = intl.format(require(1236) /* getSystemLocale */.t["u/rEuc"], obj1);
     obj[1] = tmp2;
     obj[2] = tmp.handleGroupDMMute;
-    obj[0] = callback(require(7967) /* Form */.FormSwitchRow, obj);
-    return callback(require(7967) /* Form */.FormSection, obj);
+    obj[0] = callback(require(7969) /* Form */.FormSwitchRow, obj);
+    return callback(require(7969) /* Form */.FormSection, obj);
   }
 };
 prototype["renderTextChannelNotificationSettings"] = function renderTextChannelNotificationSettings() {
@@ -91,7 +91,7 @@ prototype["renderTextChannelNotificationSettings"] = function renderTextChannelN
   if (null != channel) {
     const obj = { channelId: null };
     obj[0] = channel.id;
-    tmp = callback(importDefault(9818), obj);
+    tmp = callback(importDefault(9823), obj);
   }
   return tmp;
 };
@@ -124,15 +124,15 @@ prototype["render"] = function render() {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.cHMaba);
   obj[1] = this.handleOpenUserSettings;
-  obj[2] = callback(require(7967) /* Form */.FormRow.Arrow, {});
-  obj[1] = callback(require(7967) /* Form */.FormRow, obj);
-  items[1] = callback(require(7967) /* Form */.FormSection, obj);
+  obj[2] = callback(require(7969) /* Form */.FormRow.Arrow, {});
+  obj[1] = callback(require(7969) /* Form */.FormRow, obj);
+  items[1] = callback(require(7969) /* Form */.FormSection, obj);
   const obj1 = { children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.avgbp1);
-  items[2] = callback(require(7967) /* Form */.FormHint, obj1);
+  items[2] = callback(require(7969) /* Form */.FormHint, obj1);
   obj[0] = items;
-  return callback2(require(7967) /* Form */.Form, obj);
+  return callback2(require(7969) /* Form */.Form, obj);
 };
 const memoResult = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;

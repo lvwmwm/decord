@@ -1,9 +1,9 @@
-// Module ID: 14224
-// Function ID: 14225
+// Module ID: 14232
+// Function ID: 14233
 // Name: toggle
-// Dependencies: [19, 8082, 676, 14071, 3974, 6013, 1384, 10447, 1236, 2]
+// Dependencies: [19, 8084, 676, 14079, 3993, 6015, 1403, 10452, 1236, 2]
 
-// Module 14224 (toggle)
+// Module 14232 (toggle)
 import noop from "noop";
 import { FriendSourceFlags } from "ME";
 import createToggle from "createToggle";
@@ -16,16 +16,16 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useFriendRequestsMutualFriendsSettingValue() {
-    const FriendSourceFlagsSetting = setting(3974).FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = setting(3993).FriendSourceFlagsSetting;
     setting = FriendSourceFlagsSetting.useSetting();
     const items = [setting];
     return React.useMemo(() => setting(outer1_2[5]).computeFlags(setting), items).mutualFriends;
   },
   onValueChange: function onFriendRequestsMutualFriendsSettingValueChange(arg0) {
-    const FriendSourceFlagsSetting = require(3974) /* explicitContentFromProto */.FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = require(3993) /* explicitContentFromProto */.FriendSourceFlagsSetting;
     const setting = FriendSourceFlagsSetting.getSetting();
-    const FriendSourceFlagsSetting2 = require(3974) /* explicitContentFromProto */.FriendSourceFlagsSetting;
-    const obj = importAll(1384);
+    const FriendSourceFlagsSetting2 = require(3993) /* explicitContentFromProto */.FriendSourceFlagsSetting;
+    const obj = importAll(1403);
     if (arg0) {
       let addFlagResult = obj.addFlag(setting, FriendSourceFlags.MUTUAL_FRIENDS);
     } else {
@@ -34,7 +34,7 @@ createToggle = {
     FriendSourceFlagsSetting2.updateSetting(addFlagResult);
   },
   useIsDisabled() {
-    return require(14071) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(14079) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

@@ -1,9 +1,9 @@
-// Module ID: 8755
-// Function ID: 8756
+// Module ID: 8761
+// Function ID: 8762
 // Name: EXPRESSION_FOOTER_HEIGHT
-// Dependencies: [19, 5180, 676, 1338, 21, 4303, 712, 4036, 698, 4272, 4273, 8756, 8771, 5427, 8772, 8526, 8775, 8777, 2]
+// Dependencies: [19, 5180, 676, 1338, 21, 4303, 712, 4042, 698, 4272, 4273, 8762, 8777, 5427, 8778, 8532, 8781, 8783, 2]
 
-// Module 8755 (EXPRESSION_FOOTER_HEIGHT)
+// Module 8761 (EXPRESSION_FOOTER_HEIGHT)
 import importAllResult from "noop";
 import { EmojiCategoryTypes } from "EmojiCategoryTypes";
 import ME from "ME";

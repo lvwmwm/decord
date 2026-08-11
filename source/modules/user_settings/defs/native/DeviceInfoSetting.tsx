@@ -1,8 +1,8 @@
-// Module ID: 14744
-// Function ID: 14745
-// Dependencies: [14743, 4283, 10447, 1236, 14745, 3974, 2]
+// Module ID: 14754
+// Function ID: 14755
+// Dependencies: [14753, 4283, 10452, 1236, 14755, 3993, 2]
 
-// Module 14744
+// Module 14754
 import createToggle from "createToggle";
 
 let obj = {
@@ -13,10 +13,10 @@ let obj = {
   parent: null,
   IconComponent: require("MobilePhoneSettingsIcon").MobilePhoneSettingsIcon,
   useTrailing: function useDeviceInfo() {
-    const obj = require(14743) /* getClientInfo */;
+    const obj = require(14753) /* getClientInfo */;
     const clientInfoString = obj.getClientInfoString(require(4283) /* DCDDeviceManager */.getDeviceInfo());
     const obj2 = require(4283) /* DCDDeviceManager */;
-    const obj3 = require(14743) /* getClientInfo */;
+    const obj3 = require(14753) /* getClientInfo */;
     return "" + clientInfoString + " (" + obj3.getClientInfoString(require(4283) /* DCDDeviceManager */.getSystemVersion()) + ")";
   },
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting
@@ -29,10 +29,10 @@ const createStaticResult = createToggle.createStatic({
   parent: null,
   IconComponent: require("MobilePhoneSettingsIcon").MobilePhoneSettingsIcon,
   useTrailing: function useDeviceInfo() {
-    const obj = require(14743) /* getClientInfo */;
+    const obj = require(14753) /* getClientInfo */;
     const clientInfoString = obj.getClientInfoString(require(4283) /* DCDDeviceManager */.getDeviceInfo());
     const obj2 = require(4283) /* DCDDeviceManager */;
-    const obj3 = require(14743) /* getClientInfo */;
+    const obj3 = require(14753) /* getClientInfo */;
     return "" + clientInfoString + " (" + obj3.getClientInfoString(require(4283) /* DCDDeviceManager */.getSystemVersion()) + ")";
   },
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting

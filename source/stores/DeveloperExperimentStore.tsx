@@ -1,9 +1,9 @@
-// Module ID: 7179
-// Function ID: 7180
+// Module ID: 7180
+// Function ID: 7181
 // Name: init
-// Dependencies: [1891, 1903, 4218, 1910, 1909, 589, 709, 2]
+// Dependencies: [1910, 1922, 4218, 1929, 1928, 589, 709, 2]
 
-// Module 7179 (init)
+// Module 7180 (init)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ExperimentBuckets } from "ExperimentBuckets";
@@ -17,7 +17,7 @@ if (!tmp2) {
   tmp2 = window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING;
 }
 function init() {
-  let closure_5 = require(1909) /* validatePremiumType */.isStaffEnv(authStore.getCurrentUser());
+  let closure_5 = require(1928) /* validatePremiumType */.isStaffEnv(authStore.getCurrentUser());
 }
 let c5 = tmp2;
 class DeveloperExperimentStore extends Store {
@@ -37,7 +37,7 @@ prototype["initialize"] = function initialize() {
       }
     }
   });
-  let closure_5 = self(1909).isStaffEnv(authStore.getCurrentUser());
+  let closure_5 = self(1928).isStaffEnv(authStore.getCurrentUser());
   const timerId = setTimeout(() => Object.freeze(self));
 };
 prototype["getExperimentDescriptor"] = function getExperimentDescriptor() {

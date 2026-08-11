@@ -1,10 +1,10 @@
-// Module ID: 11855
-// Function ID: 11856
+// Module ID: 11858
+// Function ID: 11859
 // Name: isContentDismissed
-// Dependencies: [1340, 676, 1369, 685, 1357, 589, 1355, 698, 1358, 2]
+// Dependencies: [1340, 676, 1388, 685, 1376, 589, 1374, 698, 1377, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 11855 (isContentDismissed)
+// Module 11858 (isContentDismissed)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { AnalyticEvents } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -17,8 +17,8 @@ export const isContentDismissed = function isContentDismissed(GAME_SERVER_HOSTIN
   dismissedGuildContent = dismissedGuildContent.getDismissedGuildContent(closure_1);
   let hasBitResult = null != dismissedGuildContent;
   if (hasBitResult) {
-    hasBitResult = require(1357) /* hasBit */.hasBit(dismissedGuildContent, GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK);
-    const obj = require(1357) /* hasBit */;
+    hasBitResult = require(1376) /* hasBit */.hasBit(dismissedGuildContent, GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK);
+    const obj = require(1376) /* hasBit */;
   }
   return hasBitResult;
 };
@@ -40,7 +40,7 @@ export const markContentAsDismissed = function markContentAsDismissed(GAME_SERVE
   const _require = true;
   const importDefault = GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK;
   const dependencyMap = closure_0;
-  let obj = _require(1355);
+  let obj = _require(1374);
   const result = obj.updateUserGuildSettings(closure_0, (dismissedGuildContent) => {
     dismissedGuildContent = outer1_3.getDismissedGuildContent(guildId);
     let hasBitResult = null != dismissedGuildContent;
@@ -57,7 +57,7 @@ export const markContentAsDismissed = function markContentAsDismissed(GAME_SERVE
   if (arg2) {
     let UNKNOWN = AUTO_DISMISS;
     obj = { type: null, guild_id: null, action: null };
-    obj[0] = _require(1358).DismissibleGuildContent[GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK];
+    obj[0] = _require(1377).DismissibleGuildContent[GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK];
     obj[1] = closure_0;
     if (AUTO_DISMISS == null) {
       UNKNOWN = ContentDismissActionType.UNKNOWN;
@@ -71,7 +71,7 @@ export const unmarkContentAsDismissed = function unmarkContentAsDismissed(dc, gu
   const _require = false;
   let closure_1 = dc;
   const dependencyMap = guildId;
-  const result = _require(1355).updateUserGuildSettings(guildId, (dismissedGuildContent) => {
+  const result = _require(1374).updateUserGuildSettings(guildId, (dismissedGuildContent) => {
     dismissedGuildContent = outer1_3.getDismissedGuildContent(guildId);
     let hasBitResult = null != dismissedGuildContent;
     if (hasBitResult) {

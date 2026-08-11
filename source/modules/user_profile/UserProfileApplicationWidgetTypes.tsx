@@ -1,10 +1,10 @@
-// Module ID: 7094
-// Function ID: 7095
+// Module ID: 7095
+// Function ID: 7096
 // Name: toSubmission
-// Dependencies: [7081, 2]
+// Dependencies: [7084, 2]
 // Exports: isApplicationWidgetWithId
 
-// Module 7094 (toSubmission)
+// Module 7095 (toSubmission)
 let ApplicationWidget;
 class ApplicationWidget {
   constructor(arg0) {
@@ -21,6 +21,9 @@ prototype["toSubmission"] = function toSubmission() {
   obj = { id: this.id, data: obj };
   obj = { type: this.type, application_id: this.applicationId };
   return obj;
+};
+prototype["isUpdatable"] = function isUpdatable() {
+  return true;
 };
 prototype["isDiscardable"] = function isDiscardable() {
   return false;

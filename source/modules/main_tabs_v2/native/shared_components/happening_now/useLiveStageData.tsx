@@ -1,10 +1,10 @@
-// Module ID: 15205
-// Function ID: 15206
+// Module ID: 15214
+// Function ID: 15215
 // Name: useLiveStageData
-// Dependencies: [19, 5136, 1372, 647, 5142, 12, 2]
+// Dependencies: [19, 5136, 1391, 647, 5142, 12, 2]
 // Exports: useLiveStageData
 
-// Module 15205 (useLiveStageData)
+// Module 15214 (useLiveStageData)
 import noop from "noop";
 import getActiveStageChannelIds from "getActiveStageChannelIds";
 import ensureGuildLoaded from "ensureGuildLoaded";

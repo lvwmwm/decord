@@ -1,10 +1,10 @@
-// Module ID: 16813
-// Function ID: 16814
+// Module ID: 16825
+// Function ID: 16826
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 4303, 712, 4019, 9057, 1297, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4032, 9063, 1297, 4299, 2]
 // Exports: default
 
-// Module 16813 (FormBigRadioBox)
+// Module 16825 (FormBigRadioBox)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -45,7 +45,7 @@ export default function FormBigRadioBox(arg0) {
     disabled = false;
   }
   const tmp = createCacheKey();
-  let obj = require(4019) /* useCheckboxA11yNative */;
+  let obj = require(4032) /* useCheckboxA11yNative */;
   const radioA11yNative = obj.useRadioA11yNative({ selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const items = [tmp.container, , , ];
@@ -73,7 +73,7 @@ export default function FormBigRadioBox(arg0) {
     selected = tmp.iconContainerSelected;
   }
   const tmp5 = closure_5;
-  const tmp6 = importDefault(9057);
+  const tmp6 = importDefault(9063);
   const tmp9 = View;
   items2[1] = selected;
   items1[1] = callback(tmp9, { style: items2, children: callback(require(1297) /* Button */.Icon, { source: icon }) });

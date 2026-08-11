@@ -1,7 +1,7 @@
 // Module ID: 5340
 // Function ID: 5341
 // Name: context
-// Dependencies: [32, 19, 676, 21, 1231, 5341, 1887, 5342, 2]
+// Dependencies: [32, 19, 676, 21, 1231, 5341, 1906, 5342, 2]
 // Exports: AppWindowContextProvider, getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
 // Module 5340 (context)

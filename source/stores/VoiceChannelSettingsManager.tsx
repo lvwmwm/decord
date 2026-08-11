@@ -1,9 +1,9 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16602
+// Function ID: 16603
 // Name: updateVoiceSettings
-// Dependencies: [1218, 4373, 1372, 1960, 13097, 676, 709, 5261, 2]
+// Dependencies: [1218, 4373, 1391, 1979, 13106, 676, 709, 5261, 2]
 
-// Module 16590 (updateVoiceSettings)
+// Module 16602 (updateVoiceSettings)
 import fetchFingerprint from "fetchFingerprint";
 import bitrate from "bitrate";
 import ensureGuildLoaded from "ensureGuildLoaded";

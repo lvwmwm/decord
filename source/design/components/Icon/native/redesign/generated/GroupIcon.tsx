@@ -1,7 +1,7 @@
 // Module ID: 4817
 // Function ID: 4818
 // Name: GroupIcon
-// Dependencies: [19, 21, 712, 4004, 4769, 2]
+// Dependencies: [19, 21, 712, 4023, 4769, 2]
 // Exports: GroupIcon
 
 // Module 4817 (GroupIcon)
@@ -22,5 +22,5 @@ export const GroupIcon = function GroupIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

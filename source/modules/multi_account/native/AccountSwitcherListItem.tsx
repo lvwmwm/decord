@@ -1,10 +1,10 @@
-// Module ID: 15089
-// Function ID: 15090
+// Module ID: 15098
+// Function ID: 15099
 // Name: AccountStatusIcon
-// Dependencies: [19, 17, 1911, 4147, 1903, 11782, 21, 4303, 589, 4264, 712, 4259, 4299, 1236, 4846, 4019, 1297, 4146, 2]
+// Dependencies: [19, 17, 1930, 4149, 1922, 11785, 21, 4303, 589, 4264, 712, 4259, 4299, 1236, 4846, 4032, 1297, 4148, 2]
 // Exports: default
 
-// Module 15089 (AccountStatusIcon)
+// Module 15098 (AccountStatusIcon)
 import "noop";
 import get_ActivityIndicator from "nameFromUser";
 import createdAt from "createdAt";
@@ -97,7 +97,7 @@ export default function AccountSwitcherListItem(arg0) {
     }
     obj = { selected: null };
     obj[0] = tmp7;
-    const radioA11yNative = tmp2(4019).useRadioA11yNative(obj);
+    const radioA11yNative = tmp2(4032).useRadioA11yNative(obj);
     obj1 = { accessibilityRole: null, accessibilityState: null, accessibilityHint: null, style: null, delayLongPress: null, onPress: null };
     ({ accessibilityRole: obj7[0], accessibilityState: obj7[1] } = radioA11yNative);
     let stringResult;
@@ -113,7 +113,7 @@ export default function AccountSwitcherListItem(arg0) {
     const items2 = [leading, , ];
     obj2 = { style: null, children: null };
     obj2[0] = tmp.accountInfo;
-    const obj3 = { user: null, guildId: "Array" };
+    const obj3 = { user: null, guildId: "a" };
     obj3[0] = obj2;
     const items3 = [callback(tmp2(1297).Avatar, obj3), ];
     const obj4 = { style: null, children: null };
@@ -122,14 +122,14 @@ export default function AccountSwitcherListItem(arg0) {
     obj5[0] = tmp.tagContainer;
     const obj6 = { variant: "text-md/semibold", color: "text-default", style: null, lineClamp: 1, children: null };
     obj6[2] = tmp.username;
-    const tmp2Result = tmp2(4019);
+    const tmp2Result = tmp2(4032);
     let str = "always";
     if (stateFromStores) {
       str = "never";
     }
     const obj7 = { mode: "username", identifiable: null };
     obj7[1] = str;
-    obj6[4] = importDefault(4146).getUserTag(obj2, obj7);
+    obj6[4] = importDefault(4148).getUserTag(obj2, obj7);
     const items4 = [callback(tmp2(4299).Text, obj6), ];
     let tmp18Result = !stateFromStores;
     if (!stateFromStores) {

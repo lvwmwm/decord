@@ -1,9 +1,9 @@
-// Module ID: 7112
-// Function ID: 7113
+// Module ID: 7113
+// Function ID: 7114
 // Name: getAll
-// Dependencies: [5, 1936, 2]
+// Dependencies: [5, 1955, 2]
 
-// Module 7112 (getAll)
+// Module 7113 (getAll)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import set from "set";
 
@@ -105,7 +105,7 @@ prototype["handleConnectionOpen"] = function handleConnectionOpen(guilds, databa
   const found = guilds.filter((unableToSyncDeletes) => unableToSyncDeletes.unableToSyncDeletes);
   const mapped = found.map((id) => ({ id: id.id }));
   if (mapped.length > 0) {
-    obj = obj(1936);
+    obj = obj(1955);
     const result = obj.guildsRequiringDeletedIdsSyncTransaction(database);
     result.putAll(mapped);
   }
@@ -115,7 +115,7 @@ prototype["handleBackgroundSync"] = function handleBackgroundSync(guilds, databa
   const found = guilds.filter((data_mode) => "partial" === data_mode.data_mode && data_mode.unable_to_sync_deletes);
   const mapped = found.map((id) => ({ id: id.id }));
   if (mapped.length > 0) {
-    obj = obj(1936);
+    obj = obj(1955);
     const result = obj.guildsRequiringDeletedIdsSyncTransaction(database);
     result.putAll(mapped);
   }
@@ -123,7 +123,7 @@ prototype["handleBackgroundSync"] = function handleBackgroundSync(guilds, databa
 prototype["handleGuildCreate"] = function handleGuildCreate(guild, database) {
   guild = guild.guild;
   if (guild.unableToSyncDeletes) {
-    obj = obj(1936);
+    obj = obj(1955);
     const result = obj.guildsRequiringDeletedIdsSyncTransaction(database);
     obj = { id: null };
     obj[0] = guild.id;
@@ -131,7 +131,7 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild, database) {
   }
 };
 prototype["handleDeletedEntityIds"] = function handleDeletedEntityIds(guild_id, database) {
-  obj = obj(1936);
+  obj = obj(1955);
   const result = obj.guildsRequiringDeletedIdsSyncTransaction(database);
   result.delete(guild_id.guild_id);
 };

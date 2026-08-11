@@ -1,10 +1,10 @@
-// Module ID: 10137
-// Function ID: 10138
+// Module ID: 10142
+// Function ID: 10143
 // Name: useIsEligibleForUserProfileWYSIWYGEditing
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 10137 (useIsEligibleForUserProfileWYSIWYGEditing)
+// Module 10142 (useIsEligibleForUserProfileWYSIWYGEditing)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

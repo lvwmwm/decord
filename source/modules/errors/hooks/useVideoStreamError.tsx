@@ -1,10 +1,10 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10689
+// Function ID: 10690
 // Name: useVideoStreamError
-// Dependencies: [1218, 10685, 4364, 589, 9169, 2]
+// Dependencies: [1218, 10690, 4364, 589, 9175, 2]
 // Exports: default, useVideoStreamErrorContext
 
-// Module 10684 (useVideoStreamError)
+// Module 10689 (useVideoStreamError)
 import fetchFingerprint from "fetchFingerprint";
 import isAVErrorContextOfType from "isAVErrorContextOfType";
 import { MediaEngineContextTypes } from "DesktopSources";
@@ -21,12 +21,12 @@ export default function useVideoStreamError(arg0, arg1) {
     let getActiveErrorsOfType2;
     if (outer1_2.getId() !== dependencyMap) {
       const items = [];
-      let arraySpreadResult = HermesBuiltin.arraySpread(outer1_3.getActiveErrorsOfType(callback(9169).AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT), 0);
-      arraySpreadResult = HermesBuiltin.arraySpread(outer1_3.getActiveErrorsOfType(callback(9169).AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM), arraySpreadResult);
+      let arraySpreadResult = HermesBuiltin.arraySpread(outer1_3.getActiveErrorsOfType(callback(9175).AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT), 0);
+      arraySpreadResult = HermesBuiltin.arraySpread(outer1_3.getActiveErrorsOfType(callback(9175).AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM), arraySpreadResult);
       items[Symbol.iterator]();
     }
     if (callback === outer1_4.STREAM) {
-      let activeErrorsOfType = outer1_3.getActiveErrorsOfType(callback(9169).AVError.SCREENSHARE_OS_ERROR);
+      let activeErrorsOfType = outer1_3.getActiveErrorsOfType(callback(9175).AVError.SCREENSHARE_OS_ERROR);
     } else {
       activeErrorsOfType = [];
     }
@@ -47,12 +47,12 @@ export const useVideoStreamErrorContext = function useVideoStreamErrorContext(ar
     let getActiveErrorsOfType2;
     if (outer1_2.getId() !== dependencyMap) {
       const items = [];
-      let arraySpreadResult = HermesBuiltin.arraySpread(outer1_3.getActiveErrorsOfType(callback(9169).AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT), 0);
-      arraySpreadResult = HermesBuiltin.arraySpread(outer1_3.getActiveErrorsOfType(callback(9169).AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM), arraySpreadResult);
+      let arraySpreadResult = HermesBuiltin.arraySpread(outer1_3.getActiveErrorsOfType(callback(9175).AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT), 0);
+      arraySpreadResult = HermesBuiltin.arraySpread(outer1_3.getActiveErrorsOfType(callback(9175).AVError.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM), arraySpreadResult);
       items[Symbol.iterator]();
     }
     if (callback === outer1_4.STREAM) {
-      let activeErrorsOfType = outer1_3.getActiveErrorsOfType(callback(9169).AVError.SCREENSHARE_OS_ERROR);
+      let activeErrorsOfType = outer1_3.getActiveErrorsOfType(callback(9175).AVError.SCREENSHARE_OS_ERROR);
     } else {
       activeErrorsOfType = [];
     }

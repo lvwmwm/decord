@@ -1,9 +1,9 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15143
+// Function ID: 15144
 // Name: _initialize
-// Dependencies: [5, 17, 11778, 676, 4516, 12060, 4482, 709, 1368, 15135, 500, 11781, 9065, 12101, 12059, 5957, 7219, 2]
+// Dependencies: [5, 17, 11781, 676, 4516, 12063, 4482, 709, 1387, 15144, 500, 11784, 9071, 12104, 12062, 5959, 7220, 2]
 
-// Module 15134 (_initialize)
+// Module 15143 (_initialize)
 import NewUserTypes from "NewUserTypes";
 import get_ActivityIndicator from "set";
 import { PermissionStateType } from "set";
@@ -21,15 +21,15 @@ let c11 = null;
 class AuthManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f111569 = applyArgumentsResult;
+    f111651 = applyArgumentsResult;
     applyArgumentsResult.handleRegister = function handleRegister() {
       const REGISTER = constants2.REGISTER;
     };
     applyArgumentsResult.handleLogin = function handleLogin() {
       const LOGIN = constants2.LOGIN;
     };
-    f111569 = undefined;
-    f111569 = NewUserTypes((arg0) => {
+    f111651 = undefined;
+    f111651 = NewUserTypes((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -117,16 +117,16 @@ class AuthManager extends tmp3 {
     };
     applyArgumentsResult.handleRegisterComplete = function handleRegisterComplete() {
       if (!obj.hasDeferredInvite()) {
-        let tmpResult = tmp(12101);
+        let tmpResult = tmp(12104);
         tmpResult.setNewUser(constants.ORGANIC_REGISTERED);
       }
-      tmpResult = tmp(12059);
+      tmpResult = tmp(12062);
       tmpResult.startOnboarding();
     };
     applyArgumentsResult.handleLoginWithConnection = function handleLoginWithConnection() {
       const result = lib.handlePushNotificationOptIn(() => {
-        callback(5957).transitionToGuild(closure_7);
-        const obj = callback(5957);
+        callback(5959).transitionToGuild(closure_7);
+        const obj = callback(5959);
         callback2(709).dispatch({ type: "DEFERRED_INVITE_SHOW" });
       });
     };
@@ -150,7 +150,7 @@ class AuthManager extends tmp3 {
       outer1_11 = null;
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
-      const result = callback(7219).deleteAllInteractions();
+      const result = callback(7220).deleteAllInteractions();
       DCDShortcutManager = DCDShortcutManager.DCDShortcutManager;
       if (DCDShortcutManager != null) {
         DCDShortcutManager.handleLogout();

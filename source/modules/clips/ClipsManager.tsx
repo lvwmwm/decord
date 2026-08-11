@@ -1,9 +1,9 @@
-// Module ID: 16890
-// Function ID: 16891
+// Module ID: 16902
+// Function ID: 16903
 // Name: handleRTCConnectionState
-// Dependencies: [5, 4372, 1218, 4351, 4375, 4389, 4357, 4358, 676, 4368, 5261, 4362, 4400, 4367, 698, 4855, 3974, 709, 4363, 3912, 500, 4361, 2]
+// Dependencies: [5, 4372, 1218, 4351, 4375, 4389, 4357, 4358, 676, 4368, 5261, 4362, 4400, 4367, 698, 4855, 3993, 709, 4363, 3931, 500, 4361, 2]
 
-// Module 16890 (handleRTCConnectionState)
+// Module 16902 (handleRTCConnectionState)
 import initialize from "initialize";
 import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo";
 import fetchFingerprint from "fetchFingerprint";
@@ -146,7 +146,7 @@ prototype["maybeShowClipsWarning"] = function maybeShowClipsWarning(userId) {
     if (!authStore2.getClipsWarningShown(channelId)) {
       let setting = userId !== store.getId() && obj3.isClipsEnabledForUser(userId);
       if (setting) {
-        const ClipsAllowVoiceRecording = require(3974) /* explicitContentFromProto */.ClipsAllowVoiceRecording;
+        const ClipsAllowVoiceRecording = require(3993) /* explicitContentFromProto */.ClipsAllowVoiceRecording;
         setting = ClipsAllowVoiceRecording.getSetting();
       }
       if (setting) {
@@ -344,7 +344,7 @@ prototype["classifyHardware"] = function classifyHardware(closure_1) {
     return MEETS_AUTO_ENABLE;
   } else {
     if (tmpResult.isMac()) {
-      const app = importDefault(3912).app;
+      const app = importDefault(3931).app;
       if ("arm64" === app.getAppArch()) {
         let MEETS_MINIMUM = constants.MEETS_AUTO_ENABLE;
       } else {

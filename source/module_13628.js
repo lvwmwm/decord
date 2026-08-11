@@ -1,10 +1,14 @@
 // Module ID: 13628
 // Function ID: 13629
-// Dependencies: [13575, 13626, 13609]
+// Dependencies: [13629]
 
 // Module 13628
 
-export default require("getOwnPropertyDescriptor") ? ((arg0, arg1, arg2) => require(13626) /* defineProperty */.f(arg0, arg1, require(13609)(1, arg2))) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
-});
+export default (arg0) => {
+  const tmp = require(13629)(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
+  }
+  return num;
+};

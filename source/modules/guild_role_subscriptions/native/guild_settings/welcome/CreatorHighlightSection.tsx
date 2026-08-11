@@ -1,10 +1,10 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16806
+// Function ID: 16807
 // Name: GuildServerSubscriberCount
-// Dependencies: [19, 17, 21, 4303, 712, 4299, 1297, 8688, 1236, 16795, 3998, 16767, 5268, 14476, 4715, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4299, 1297, 8694, 1236, 16807, 4017, 16779, 5268, 14484, 4715, 2]
 // Exports: default
 
-// Module 16794 (GuildServerSubscriberCount)
+// Module 16806 (GuildServerSubscriberCount)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,7 +30,7 @@ function GuildServerSubscriberCount(arg0) {
   obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
   obj[1] = importDefault(712).unsafe_rawColors.WHITE;
   obj[2] = tmp.subscriberCountIcon;
-  obj[3] = importDefault(8688);
+  obj[3] = importDefault(8694);
   items1[1] = callback(require(1297) /* Button */.Icon, obj);
   const obj1 = { variant: "text-sm/normal", color: "text-overlay-light", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -57,14 +57,14 @@ function CreatorGuildCard(highlightedCreatorGuild) {
   guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp4 = guild_id(16795)(guild_id, 3, 60);
+  const tmp4 = guild_id(16807)(guild_id, 3, 60);
   dependencyMap = tmp4;
   hasAllImperativeDetails = tmp4.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp4];
   if (tmp4.isLoading) {
     let obj = { style: null, children: null };
     obj[0] = tmp.cardContainer;
-    obj[1] = callback(tmp2(16767), {});
+    obj[1] = callback(tmp2(16779), {});
     return callback(closure_4, obj);
   } else if (hasAllImperativeDetails) {
     const details = tmp4.details;

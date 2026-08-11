@@ -1,9 +1,9 @@
-// Module ID: 1365
-// Function ID: 1366
+// Module ID: 1384
+// Function ID: 1385
 // Name: handleUpdateUser
 // Dependencies: [589, 709, 2]
 
-// Module 1365 (handleUpdateUser)
+// Module 1384 (handleUpdateUser)
 import { PersistedStore } from "initialize";
 
 function handleUpdateUser(user) {

@@ -1,9 +1,9 @@
-// Module ID: 1940
-// Function ID: 1941
+// Module ID: 1959
+// Function ID: 1960
 // Name: prefix
-// Dependencies: [1941, 1943, 2]
+// Dependencies: [1960, 1962, 2]
 
-// Module 1940 (prefix)
+// Module 1959 (prefix)
 let Dao;
 class Dao {
   constructor(arg0, arg1, arg2) {
@@ -35,7 +35,7 @@ prototype["withoutLogging"] = function withoutLogging() {
   const obj = Object.create(Dao.prototype);
   obj.originalPrefix = originalPrefix;
   const items = [originalPrefix];
-  const table = new require(1941) /* fromDatabaseTransaction */.Table(items, this.table.tableId, this.table.database, false);
+  const table = new require(1960) /* fromDatabaseTransaction */.Table(items, this.table.tableId, this.table.database, false);
   obj.table = table;
   return obj;
 };
@@ -74,7 +74,7 @@ prototype["getParentId"] = function getParentId(arg0) {
 prototype["put"] = function put(arg0, data) {
   let Replace = arg2;
   if (arg2 === undefined) {
-    Replace = require(1943) /* TableId */.ConflictOptions.Replace;
+    Replace = require(1962) /* TableId */.ConflictOptions.Replace;
   }
   const table = this.table;
   const items = [arg0];
@@ -131,7 +131,7 @@ class DaoTransaction {
 }
 const prototype2 = DaoTransaction.prototype;
 DaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(prefix, tableId, transaction) {
-  const tableTransaction = new require(1941) /* fromDatabaseTransaction */.TableTransaction(prefix, tableId, transaction);
+  const tableTransaction = new require(1960) /* fromDatabaseTransaction */.TableTransaction(prefix, tableId, transaction);
   if (typeof DaoTransaction !== "function") {
     HermesBuiltin.throwTypeError();
   }
@@ -142,7 +142,7 @@ DaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(pre
 prototype2["put"] = function put(arg0, data) {
   let Replace = arg2;
   if (arg2 === undefined) {
-    Replace = require(1943) /* TableId */.ConflictOptions.Replace;
+    Replace = require(1962) /* TableId */.ConflictOptions.Replace;
   }
   const transaction = this.transaction;
   const items = [arg0];

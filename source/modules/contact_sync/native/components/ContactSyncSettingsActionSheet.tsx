@@ -1,10 +1,10 @@
-// Module ID: 12042
-// Function ID: 12043
+// Module ID: 12045
+// Function ID: 12046
 // Name: ContactSyncSettingsActionSheet
-// Dependencies: [19, 17, 12032, 676, 21, 4303, 712, 7967, 1236, 4299, 12035, 5764, 2]
+// Dependencies: [19, 17, 12035, 676, 21, 4303, 712, 7969, 1236, 4299, 12038, 5764, 2]
 // Exports: default
 
-// Module 12042 (ContactSyncSettingsActionSheet)
+// Module 12045 (ContactSyncSettingsActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ContactSyncModes from "ContactSyncModes";

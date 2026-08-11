@@ -1,10 +1,10 @@
-// Module ID: 15452
-// Function ID: 15453
+// Module ID: 15469
+// Function ID: 15470
 // Name: canConnectToChannel
-// Dependencies: [1371, 1377, 1376, 4322, 1218, 1372, 1891, 3929, 3938, 1960, 4499, 4319, 676, 692, 589, 15453, 9038, 15442, 3919, 8337, 11, 1380, 2]
+// Dependencies: [1390, 1396, 1395, 4322, 1218, 1391, 1910, 3948, 3957, 1979, 4499, 4319, 676, 692, 589, 15470, 9044, 15459, 3938, 8342, 11, 1399, 2]
 // Exports: default
 
-// Module 15452 (canConnectToChannel)
+// Module 15469 (canConnectToChannel)
 import participantFromServer from "participantFromServer";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import { isVoiceChannel } from "createChannelRecord";
@@ -13,7 +13,7 @@ import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import updateVoiceState from "updateVoiceState";
@@ -48,7 +48,7 @@ export default function useGuildMediaState(guild_id) {
   let obj2 = _require(isDontBadgeMutedVcsEnabled[15]);
   const guildActiveEvent = _require(isDontBadgeMutedVcsEnabled[16]).useGuildActiveEvent(guild_id);
   const obj3 = _require(isDontBadgeMutedVcsEnabled[16]);
-  const items1 = [guildActiveEvent, upsertRelationship];
+  const items1 = [guildActiveEvent, markAllUserIdListsStale];
   const stateFromStoresArray = _require(isDontBadgeMutedVcsEnabled[14]).useStateFromStoresArray(items1, () => {
     const embeddedActivitiesForGuild = guildActiveEvent.getEmbeddedActivitiesForGuild(closure_0);
     return embeddedActivitiesForGuild.filter((userIds) => {

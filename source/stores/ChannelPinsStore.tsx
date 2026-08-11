@@ -1,15 +1,15 @@
-// Module ID: 10225
-// Function ID: 10226
+// Module ID: 10230
+// Function ID: 10231
 // Name: handleChannelDelete
-// Dependencies: [1975, 1372, 1971, 1891, 4521, 3938, 1903, 4523, 12, 7059, 589, 709, 2]
+// Dependencies: [1994, 1391, 1990, 1910, 4521, 3957, 1922, 4523, 12, 7062, 589, 709, 2]
 
-// Module 10225 (handleChannelDelete)
+// Module 10230 (handleChannelDelete)
 import _getSystemLocale from "_getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import reinjectEphemerals from "reinjectEphemerals";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
 
@@ -22,8 +22,8 @@ function handleRelationshipUpdate() {
     items = items.items;
     const item = items.forEach((message) => {
       message = message.message;
-      const result = message.set("blocked", upsertRelationship.isBlockedForMessage(message));
-      const result1 = message.set("ignored", upsertRelationship.isIgnoredForMessage(message));
+      const result = message.set("blocked", markAllUserIdListsStale.isBlockedForMessage(message));
+      const result1 = message.set("ignored", markAllUserIdListsStale.isIgnoredForMessage(message));
     });
     const items1 = items.items;
     items.items = items1.slice();
@@ -35,7 +35,7 @@ class ChannelPinsStore extends Store {
 }
 const prototype = ChannelPinsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, trackCommunicationDisabled, createGuildRecordFromRust, _getSystemLocale, reinjectEphemerals, upsertRelationship, mergeGuildAvatar);
+  this.waitFor(ensureGuildLoaded, trackCommunicationDisabled, createGuildRecordFromRust, _getSystemLocale, reinjectEphemerals, markAllUserIdListsStale, mergeGuildAvatar);
 };
 prototype["getPins"] = function getPins(channelId) {
   return dependencyMap[channelId];
@@ -190,7 +190,7 @@ obj = {
       } else {
         const items = tmp.items;
         tmp.items = items.slice();
-        tmp.items[findIndexResult].message = messageId(7059).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
+        tmp.items[findIndexResult].message = messageId(7062).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
       }
       const obj2 = importDefault(12);
     }

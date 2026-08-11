@@ -1,7 +1,7 @@
 // Module ID: 5769
 // Function ID: 5770
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 4036, 4303, 712, 4716, 4020, 1348, 4713, 4717, 4005, 5770, 5771, 4272, 4273, 2]
+// Dependencies: [32, 19, 17, 21, 4042, 4303, 712, 4716, 1356, 1367, 4713, 4717, 4024, 5770, 5771, 4272, 4273, 2]
 // Exports: FormSwitch
 
 // Module 5769 (FormSwitch)
@@ -9,12 +9,12 @@ import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 import IconSizes from "IconSizes";
-import importDefaultResult1 from "module_4036";
+import importDefaultResult1 from "module_4042";
 
 const require = arg1;
-let closure_6 = require("module_4036").createAnimatedComponent(require("set").Pressable);
+let closure_6 = require("module_4042").createAnimatedComponent(require("set").Pressable);
 let obj = { switch: null, unselectedBackground: null, unselectedIcon: null, selectedIcon: null, selected: null, knob: null };
 obj = { width: require("Themes").modules.mobile.CONTROL_SWITCH_WIDTH, height: require("Themes").modules.mobile.CONTROL_SWITCH_HEIGHT, padding: require("Themes").space.PX_4 - 1, flexGrow: 0, flexShrink: 0, borderRadius: require("Themes").radii.lg, borderWidth: 1 };
 obj[0] = obj;

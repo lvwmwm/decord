@@ -1,10 +1,10 @@
-// Module ID: 17006
-// Function ID: 17007
+// Module ID: 17018
+// Function ID: 17019
 // Name: libDiscoreSmokeTest
-// Dependencies: [5, 676, 3, 1901, 1898, 1895, 698, 2]
+// Dependencies: [5, 676, 3, 1920, 1917, 1914, 698, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 17006 (libDiscoreSmokeTest)
+// Module 17018 (libDiscoreSmokeTest)
 import items from "items";
 import { AnalyticEvents } from "ME";
 
@@ -109,7 +109,7 @@ function _libDiscoreSmokeTest() {
 }
 function trackLibdiscoreSuccess() {
   const items = [];
-  const prop = items(1895).ALL_LIBDISCORE_EXPERIMENTS;
+  const prop = items(1914).ALL_LIBDISCORE_EXPERIMENTS;
   const item = prop.forEach((getEnabledFeatureName) => {
     const enabledFeatureName = getEnabledFeatureName.getEnabledFeatureName();
     if (null != enabledFeatureName) {

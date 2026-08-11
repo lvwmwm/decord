@@ -1,10 +1,10 @@
-// Module ID: 15743
-// Function ID: 15744
+// Module ID: 15760
+// Function ID: 15761
 // Name: ChannelContentComponent
-// Dependencies: [19, 17, 9795, 4500, 21, 4303, 500, 9796, 4794, 15744, 4823, 7962, 15250, 4299, 2]
+// Dependencies: [19, 17, 9800, 4500, 21, 4303, 500, 9801, 4794, 15761, 4823, 7964, 15259, 4299, 2]
 // Exports: renderChannelContent
 
-// Module 15743 (ChannelContentComponent)
+// Module 15760 (ChannelContentComponent)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
@@ -35,7 +35,7 @@ function ChannelContentComponent(arg0) {
   ({ subtitle, resolvedUnreadSetting, locked, lastMessageTimestampString, channel, layout, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
   ({ name, unread, muted, connected, needSubscriptionToAccess } = arg0);
   const tmp = createCacheKey();
-  let obj = require(9796) /* getLayoutStyles */;
+  let obj = require(9801) /* getLayoutStyles */;
   let tmp10Result = null != channel;
   const layoutStyles = obj.getLayoutStyles(layout);
   if (tmp10Result) {
@@ -74,7 +74,7 @@ function ChannelContentComponent(arg0) {
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
   obj3[5] = layout;
-  const items1 = [closure_6(importDefault(15744), obj3), ];
+  const items1 = [closure_6(importDefault(15761), obj3), ];
   let tmp12Result = tmp10Result;
   if (!tmp10Result) {
     tmp12Result = isNSFWResult;
@@ -102,13 +102,13 @@ function ChannelContentComponent(arg0) {
     if (isNSFWResult) {
       const obj7 = { size: "xxs", color: "icon-muted", style: null };
       obj7[2] = tmp.channelTraitIcon;
-      isNSFWResult = tmp10(tmp2(7962).WarningIcon, obj7);
+      isNSFWResult = tmp10(tmp2(7964).WarningIcon, obj7);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj8 = { locked: null, isInMainTabsExperiment: true };
       obj8[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp10(importDefault(15250), obj8);
+      isSubscriptionGated = tmp10(importDefault(15259), obj8);
     }
     items3[2] = isSubscriptionGated;
     obj4[1] = items3;

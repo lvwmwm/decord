@@ -1,10 +1,10 @@
-// Module ID: 12076
-// Function ID: 12077
+// Module ID: 12079
+// Function ID: 12080
 // Name: InviteErrorBase
-// Dependencies: [19, 17, 676, 21, 4303, 712, 4153, 4239, 12077, 12078, 12079, 1236, 4299, 4714, 1416, 1297, 12080, 5779, 1974, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1363, 4239, 12080, 12081, 12082, 1236, 4299, 4714, 1435, 1297, 12083, 5779, 1993, 2]
 // Exports: default
 
-// Module 12076 (InviteErrorBase)
+// Module 12079 (InviteErrorBase)
 import "set";
 import get_ActivityIndicator from "GuildIconSizes";
 import ME from "ME";
@@ -25,14 +25,14 @@ function InviteErrorBase(invite) {
   let require;
   ({ onPressClose: require, inviteError } = invite);
   const tmp = createCacheKey();
-  let obj = require(4153) /* AccessibilityAnnouncer */;
+  let obj = require(1363) /* AccessibilityAnnouncer */;
   const tmp4 = importDefault;
-  const tmp4Result = importDefault(obj.isThemeDark(importDefault(4239)()) ? 12077 : 12078);
+  const tmp4Result = importDefault(obj.isThemeDark(importDefault(4239)()) ? 12080 : 12081);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
-  const descriptiveInviteError = require(12079) /* getDescriptiveInviteError */.getDescriptiveInviteError(code);
+  const descriptiveInviteError = require(12082) /* getDescriptiveInviteError */.getDescriptiveInviteError(code);
   if (invite.invite.state === constants3.BANNED) {
     const intl2 = tmp2(1236).intl;
     let stringResult = intl2.string(tmp2(1236).t["GzD/aa"]);
@@ -82,7 +82,7 @@ function InviteDisabledError(onPressClose) {
     function handlePressClose() {
       onPressClose();
     }
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: null, icon: null, size: 64, canAnimate: false };
     ({ id: obj2[0], icon: obj2[1] } = guild);
     obj = { children: null };
@@ -91,7 +91,7 @@ function InviteDisabledError(onPressClose) {
     const guildIconURL = obj.getGuildIconURL(obj);
     const obj2 = { style: null, source: null };
     obj2[0] = tmp.disabledPauseIcon;
-    obj2[1] = importDefault(12080);
+    obj2[1] = importDefault(12083);
     const items = [callback(onPressClose(1297).Icon, obj2), ];
     const obj3 = { style: null, icon: null, size: null };
     obj3[0] = tmp.guildIcon;
@@ -110,7 +110,7 @@ function InviteDisabledError(onPressClose) {
     const intl2 = onPressClose(1236).intl;
     const obj6 = { articleLink: null };
     const tmp10 = importDefault(5779);
-    obj6[0] = importDefault(1974).getArticleURL(constants2.INVITE_DISABLED);
+    obj6[0] = importDefault(1993).getArticleURL(constants2.INVITE_DISABLED);
     obj5[3] = intl2.format(onPressClose(1236).t.RXSeLl, obj6);
     items1[2] = callback(onPressClose(4299).Text, obj5);
     const obj7 = { variant: "primary", size: "lg", text: null, onPress: null };

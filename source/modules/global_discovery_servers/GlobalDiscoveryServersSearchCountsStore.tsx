@@ -1,9 +1,9 @@
-// Module ID: 12967
-// Function ID: 12968
+// Module ID: 12971
+// Function ID: 12972
 // Name: map
 // Dependencies: [4202, 589, 709, 2]
 
-// Module 12967 (map)
+// Module 12971 (map)
 import { Store } from "initialize";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 8748
-// Function ID: 8749
+// Module ID: 8754
+// Function ID: 8755
 // Name: EmojiOptionsActionSheet
-// Dependencies: [19, 21, 5756, 4001, 4271, 5764, 5767, 5374, 4247, 1236, 2]
+// Dependencies: [19, 21, 5756, 4020, 4271, 5764, 5767, 5374, 4247, 1236, 2]
 // Exports: default
 
-// Module 8748 (EmojiOptionsActionSheet)
+// Module 8754 (EmojiOptionsActionSheet)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

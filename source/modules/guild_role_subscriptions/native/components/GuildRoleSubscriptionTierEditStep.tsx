@@ -1,10 +1,10 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 16832
+// Function ID: 16833
 // Name: Header
-// Dependencies: [19, 17, 21, 4303, 712, 5328, 4299, 14453, 1236, 1609, 4714, 1480, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5328, 4299, 14461, 1236, 1628, 4714, 1499, 2]
 // Exports: default
 
-// Module 16820 (Header)
+// Module 16832 (Header)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ function Header(arg0) {
   const items = [callback(require(4299) /* Text */.Text, obj), , ];
   obj = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: description };
   items[1] = callback(require(4299) /* Text */.Text, obj);
-  items[2] = callback(importDefault(14453), { style: tmp.separator });
+  items[2] = callback(importDefault(14461), { style: tmp.separator });
   obj[2] = items;
   return callback2(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
@@ -46,7 +46,7 @@ function Footer(arg0) {
   }
   let obj = { style: null, children: null };
   const items = [createCacheKey().footerContainer, ];
-  obj = { paddingBottom: importDefault(1609)().bottom };
+  obj = { paddingBottom: importDefault(1628)().bottom };
   items[1] = obj;
   obj[0] = items;
   obj = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };

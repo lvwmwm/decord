@@ -1,7 +1,7 @@
 // Module ID: 5787
 // Function ID: 5788
 // Name: _isNativeReflectConstruct
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5788, 5791, 1481, 5277, 1612, 5795, 5797]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5788, 5791, 1500, 5277, 1631, 5795, 5797]
 
 // Module 5787 (_isNativeReflectConstruct)
 import _objectWithoutProperties from "_objectWithoutProperties";
@@ -64,7 +64,7 @@ class StackView {
     }
     tmp3Result = tmp3(self, constructResult);
     apply = tmp3Result;
-    obj = { routes: [], previousState: "y", openingRouteKeys: "column", closingRouteKeys: "hidden", replacingRouteKeys: false, descriptors: false };
+    obj = { routes: [], previousState: "y", openingRouteKeys: 0, closingRouteKeys: true, replacingRouteKeys: true, descriptors: null };
     obj[2] = [];
     obj[3] = [];
     obj[4] = [];

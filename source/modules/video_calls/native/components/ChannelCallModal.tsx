@@ -1,9 +1,9 @@
-// Module ID: 10652
-// Function ID: 10653
+// Module ID: 10657
+// Function ID: 10658
 // Name: ChannelCallCameraPreview
-// Dependencies: [32, 19, 4316, 1372, 9739, 9740, 10653, 676, 21, 9743, 10654, 4158, 10657, 10754, 7748, 10755, 4036, 4166, 10960, 589, 1474, 10655, 10961, 5728, 5748, 10971, 4513, 5427, 9748, 2]
+// Dependencies: [32, 19, 4316, 1391, 9744, 9745, 10658, 676, 21, 9748, 10659, 4158, 10662, 10759, 7750, 10760, 4042, 4166, 10965, 589, 1493, 10660, 10966, 5728, 5748, 10976, 4513, 5427, 9753, 2]
 
-// Module 10652 (ChannelCallCameraPreview)
+// Module 10657 (ChannelCallCameraPreview)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "initialize";
 import getParticipants from "getParticipants";
@@ -55,7 +55,7 @@ class ChannelCallModal {
   constructor(arg0) {
     channel = global.channel;
     obj = { channelId: channel.id, guildId: channel.guild_id };
-    return jsx(f49587, obj);
+    return jsx(f49624, obj);
   }
 }
 let c4 = importAllResult;
@@ -71,10 +71,10 @@ let closure_18 = importAllResult.memo((arg0) => {
     if (null != first) {
       outer1_1(outer1_2[13]).initialize(tmp);
       return () => {
-        callback2(10754).terminate();
-        const obj = callback2(10754);
-        callback2(7748).setHidden(false);
-        const obj2 = callback2(7748);
+        callback2(10759).terminate();
+        const obj = callback2(10759);
+        callback2(7750).setHidden(false);
+        const obj2 = callback2(7750);
         if (!obj3.isModalOpen(closure_31)) {
           callback3();
         }
@@ -85,7 +85,7 @@ let closure_18 = importAllResult.memo((arg0) => {
   if (null != first) {
     let obj = { channel: null };
     obj[0] = first;
-    tmp4 = callback5(importDefault(10755), obj);
+    tmp4 = callback5(importDefault(10760), obj);
   }
   return tmp4;
 });

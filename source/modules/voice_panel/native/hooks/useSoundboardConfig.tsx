@@ -1,10 +1,10 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16286
+// Function ID: 16287
 // Name: useSoundboardConfig
-// Dependencies: [19, 1372, 16112, 4123, 1358, 16137, 5990, 2]
+// Dependencies: [19, 1391, 16129, 4125, 1377, 16154, 5992, 2]
 // Exports: default
 
-// Module 16271 (useSoundboardConfig)
+// Module 16286 (useSoundboardConfig)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 
@@ -15,8 +15,8 @@ let result = require("useIsConnectedToVoiceChannel").fileFinishedImporting("modu
 export default function useSoundboardConfig(arg0, arg1) {
   const _require = arg0;
   const importDefault = arg1;
-  const tmp = importDefault(16112)(arg0);
-  let obj = _require(4123);
+  const tmp = importDefault(16129)(arg0);
+  let obj = _require(4125);
   let tmp3 = tmp;
   if (tmp) {
     if (obj.VOICE_CONTROLS === arg1) {
@@ -39,7 +39,7 @@ export default function useSoundboardConfig(arg0, arg1) {
       }
     }, items),
     disabled: React.useMemo(() => !callback2(outer1_2[6])(outer1_4.getChannel(closure_0)), items1),
-    showIndicator: !obj.useIsDismissibleContentDismissed_UNSAFE(_require(1358).DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE)
+    showIndicator: !obj.useIsDismissibleContentDismissed_UNSAFE(_require(1377).DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE)
   };
   items = [arg0, arg1];
   items1 = [arg0];

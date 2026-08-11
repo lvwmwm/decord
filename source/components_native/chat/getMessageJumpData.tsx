@@ -1,10 +1,10 @@
-// Module ID: 10987
-// Function ID: 10988
+// Module ID: 10992
+// Function ID: 10993
 // Name: getMessageJumpData
-// Dependencies: [32, 19, 1476, 1903, 500, 1875, 4235, 11, 2]
+// Dependencies: [32, 19, 1495, 1922, 500, 1894, 4235, 11, 2]
 // Exports: default, useMessageJumpAndroidKeyboardHeight
 
-// Module 10987 (getMessageJumpData)
+// Module 10992 (getMessageJumpData)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
@@ -113,8 +113,8 @@ export const useMessageJumpAndroidKeyboardHeight = function useMessageJumpAndroi
   let tmp4;
   let num = 0;
   if (obj2.isAndroid()) {
-    num = tmp(1875).getSystemKeyboardHeight();
-    const tmpResult = tmp(1875);
+    num = tmp(1894).getSystemKeyboardHeight();
+    const tmpResult = tmp(1894);
   }
   const obj = React;
   obj2 = require(500) /* set */;

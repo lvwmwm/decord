@@ -1,13 +1,13 @@
-// Module ID: 8231
-// Function ID: 8232
+// Module ID: 8235
+// Function ID: 8236
 // Name: set
-// Dependencies: [8232, 1467, 2]
+// Dependencies: [8236, 1486, 2]
 // Exports: isSuspiciousDownload
 
-// Module 8231 (set)
+// Module 8235 (set)
 import set from "set";
 
-let set = new Set(require("module_8232"));
+let set = new Set(require("module_8236"));
 let obj = { "github.com": null, "bitbucket.org": null, "gitlab.com": null };
 const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
 obj[0] = regExp;
@@ -20,7 +20,7 @@ const result = set.fileFinishedImporting("modules/suspicious_downloads/Suspiciou
 export const isSuspiciousDownload = function isSuspiciousDownload(localUri) {
   let hostname;
   let pathname;
-  const obj = importDefault(1467);
+  const obj = importDefault(1486);
   let toURLSafeResult = obj.toURLSafe(localUri);
   if (toURLSafeResult == null) {
     toURLSafeResult = {};

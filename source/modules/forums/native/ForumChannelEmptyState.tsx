@@ -1,8 +1,8 @@
-// Module ID: 12121
-// Function ID: 12122
-// Dependencies: [19, 17, 21, 4303, 4153, 1609, 12122, 12123, 4299, 1236, 2]
+// Module ID: 12124
+// Function ID: 12125
+// Dependencies: [19, 17, 21, 4303, 1363, 1628, 12125, 12126, 4299, 1236, 2]
 
-// Module 12121
+// Module 12124
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -23,15 +23,15 @@ const memoResult = require("noop").memo((topViewHeight) => {
   }
   const tagFilter = topViewHeight.tagFilter;
   const tmp = callback();
-  let obj = require(4153) /* AccessibilityAnnouncer */;
-  const rect = importDefault(1609)();
+  let obj = require(1363) /* AccessibilityAnnouncer */;
+  const rect = importDefault(1628)();
   obj = { style: items, children: null };
   items = [tmp.container, { marginBottom: rect.bottom + rect.top + num }];
-  let obj2 = require(4153) /* AccessibilityAnnouncer */;
+  let obj2 = require(1363) /* AccessibilityAnnouncer */;
   if (obj2.isThemeLight(obj.useThemeContext().theme)) {
-    let tmp4Result = tmp4(12122);
+    let tmp4Result = tmp4(12125);
   } else {
-    tmp4Result = tmp4(12123);
+    tmp4Result = tmp4(12126);
   }
   obj = { source: tmp4Result, style: tmp.image };
   const items1 = [closure_5(closure_4, obj), , ];

@@ -1,10 +1,10 @@
-// Module ID: 6468
-// Function ID: 6469
+// Module ID: 6470
+// Function ID: 6471
 // Name: HdStreamAbstractUI
-// Dependencies: [21, 5268, 6469, 2]
+// Dependencies: [21, 5268, 6471, 2]
 // Exports: HdStreamAbstractUI
 
-// Module 6468 (HdStreamAbstractUI)
+// Module 6470 (HdStreamAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HdStreamAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const HdStreamAbstractUI = function HdStreamAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6469);
+  obj[0] = importDefault(6471);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

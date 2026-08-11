@@ -1,10 +1,10 @@
-// Module ID: 7636
-// Function ID: 7637
+// Module ID: 7638
+// Function ID: 7639
 // Name: GoogleManagementLink
-// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 3960, 4299, 1236, 3947, 7632, 5728, 5748, 6866, 7637, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 3979, 4299, 1236, 3966, 7634, 5728, 5748, 6868, 7639, 2]
 // Exports: default
 
-// Module 7636 (GoogleManagementLink)
+// Module 7638 (GoogleManagementLink)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -57,14 +57,14 @@ const result = require("get ActivityIndicator").fileFinishedImporting("component
 export default function PremiumBillingInfo(subscription) {
   subscription = subscription.subscription;
   const tmp = createCacheKey();
-  let obj = require(7632) /* createSubscriptionInvoicePreview */;
+  let obj = require(7634) /* createSubscriptionInvoicePreview */;
   obj = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: importDefault(5728)(), analyticsLocation: importDefault(5748).PREMIUM_BILLING_INFO };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
-  require(7632) /* createSubscriptionInvoicePreview */;
+  require(7634) /* createSubscriptionInvoicePreview */;
   if (null == first) {
     return null;
   } else {
-    let tmp2Result = tmp2(6866);
+    let tmp2Result = tmp2(6868);
     const externalManagementMessage = tmp2Result.getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
     obj = { style: null, children: null };
     obj[0] = subscription.style;
@@ -81,7 +81,7 @@ export default function PremiumBillingInfo(subscription) {
     const items1 = [callback2(tmp2(4299).Text, obj3), , ];
     const obj4 = { style: null, variant: "text-sm/medium", children: null };
     obj4[0] = tmp.billingRenewalInfo;
-    tmp2Result = tmp2(7637);
+    tmp2Result = tmp2(7639);
     obj4[2] = tmp2Result.getBillingInformationStringNative(subscription, first, tmp6);
     items1[1] = callback2(tmp2(4299).Text, obj4);
     const obj5 = { style: null, subscription: null };

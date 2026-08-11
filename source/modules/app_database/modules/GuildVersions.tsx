@@ -1,9 +1,9 @@
-// Module ID: 7114
-// Function ID: 7115
+// Module ID: 7115
+// Function ID: 7116
 // Name: getCommittedVersions
-// Dependencies: [32, 5, 1891, 3, 1936, 1351, 2]
+// Dependencies: [32, 5, 1910, 3, 1955, 1370, 2]
 
-// Module 7114 (getCommittedVersions)
+// Module 7115 (getCommittedVersions)
 import _slicedToArray from "_slicedToArray";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -184,7 +184,7 @@ prototype["handleConnectionOpen"] = function handleConnectionOpen(unavailableGui
   const self = this;
   this.reset();
   const items = [...unavailableGuilds.unavailableGuilds];
-  const result = importDefault(1936).guildVersionsTransaction(database);
+  const result = importDefault(1955).guildVersionsTransaction(database);
   result.deleteAllExcept(items);
   for (const item10029 of tmp3) {
     let items1 = [item10029];
@@ -206,7 +206,7 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   } else if ("update" === op) {
     writes = emojis.writes;
   } else {
-    obj = obj(1351);
+    obj = obj(1370);
     obj.assertNever(emojis);
   }
   this.updateWith(id, writes);
@@ -217,8 +217,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   } else if ("update" === op2) {
     writes2 = stickers.writes;
   } else {
-    obj(1351).assertNever(stickers);
-    const obj2 = obj(1351);
+    obj(1370).assertNever(stickers);
+    const obj2 = obj(1370);
   }
   self.updateWith(id, writes2);
   const channels = guild.channels;
@@ -228,8 +228,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   } else if ("update" === op3) {
     writes3 = channels.writes;
   } else {
-    obj(1351).assertNever(channels);
-    const obj3 = obj(1351);
+    obj(1370).assertNever(channels);
+    const obj3 = obj(1370);
   }
   self.updateWith(id, writes3);
   const roles = guild.roles;
@@ -239,8 +239,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   } else if ("update" === op4) {
     writes4 = roles.writes;
   } else {
-    obj(1351).assertNever(roles);
-    const obj4 = obj(1351);
+    obj(1370).assertNever(roles);
+    const obj4 = obj(1370);
   }
   self.updateWith(id, writes4);
   self.commit(arg1);
@@ -358,7 +358,7 @@ prototype["commit"] = function commit(database) {
   let tmp7;
   const self = this;
   if (this.pending.size > 0) {
-    const result = importDefault(1936).guildVersionsTransaction(database);
+    const result = importDefault(1955).guildVersionsTransaction(database);
     const pending2 = self.pending;
     const tmp21 = pending2[Symbol.iterator]();
     while (tmp21 !== undefined) {
@@ -385,7 +385,7 @@ prototype["commit"] = function commit(database) {
     }
     const pending = self.pending;
     pending.clear();
-    const obj2 = importDefault(1936);
+    const obj2 = importDefault(1955);
   }
 };
 let set = Object.create(GuildVersions.prototype);

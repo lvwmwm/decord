@@ -1,10 +1,10 @@
-// Module ID: 12663
-// Function ID: 12664
+// Module ID: 12667
+// Function ID: 12668
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 5132, 676, 21, 4303, 712, 4271, 9148, 7965, 1297, 1236, 4299, 4714, 7778, 2]
+// Dependencies: [19, 17, 5132, 676, 21, 4303, 712, 4271, 9154, 7967, 1297, 1236, 4299, 4714, 7780, 2]
 // Exports: default
 
-// Module 12663 (EndStageActionSheet)
+// Module 12667 (EndStageActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH";
@@ -63,5 +63,5 @@ export default function EndStageActionSheet(channel) {
   items[3] = callback(View, obj4);
   obj[1] = items;
   obj[0] = callback2(View, obj);
-  return callback(importDefault(7965), obj);
+  return callback(importDefault(7967), obj);
 };

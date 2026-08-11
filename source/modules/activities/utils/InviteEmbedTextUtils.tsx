@@ -1,10 +1,10 @@
-// Module ID: 12623
-// Function ID: 12624
+// Module ID: 12627
+// Function ID: 12628
 // Name: getAskToJoinText
-// Dependencies: [1903, 676, 1236, 2738, 4493, 2]
+// Dependencies: [1922, 676, 1236, 2757, 4493, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
 
-// Module 12623 (getAskToJoinText)
+// Module 12627 (getAskToJoinText)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ActivityActionTypes } from "ME";
 
@@ -84,7 +84,7 @@ export const getHeaderText = function getHeaderText(arg0, arg1, arg2) {
     return stringResult;
   } else if (tmp.STREAM_REQUEST === arg1) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
-    return intl2.string(importDefault(2738).DKHhec);
+    return intl2.string(importDefault(2757).DKHhec);
   } else {
     const JOIN_REQUEST = tmp.JOIN_REQUEST;
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -94,12 +94,12 @@ export const getHeaderText = function getHeaderText(arg0, arg1, arg2) {
 export const getRequestToStreamText = function getRequestToStreamText(author, guild_id, id) {
   if (author.author.id === id) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
-    let stringResult = intl2.string(importDefault(2738)["8B3U5O"]);
+    let stringResult = intl2.string(importDefault(2757)["8B3U5O"]);
   } else {
     const intl = require(1236) /* getSystemLocale */.intl;
     const obj = { username: null };
     obj[0] = require(4493) /* getNickname */.getName(guild_id.guild_id, guild_id.id, author.author);
-    stringResult = intl.formatToPlainString(importDefault(2738)["d/qbC0"], obj);
+    stringResult = intl.formatToPlainString(importDefault(2757)["d/qbC0"], obj);
     const obj2 = require(4493) /* getNickname */;
   }
   return stringResult;
@@ -117,12 +117,12 @@ export const getDeadGameInviteText = function getDeadGameInviteText(activity, na
         if (tmp2.STREAM_REQUEST === type) {
           if (activity.author.id === id1) {
             const intl2 = require(1236) /* getSystemLocale */.intl;
-            let stringResult = intl2.string(importDefault(2738)["8B3U5O"]);
+            let stringResult = intl2.string(importDefault(2757)["8B3U5O"]);
           } else {
             const intl = require(1236) /* getSystemLocale */.intl;
             const obj = { username: null };
             obj[0] = require(4493) /* getNickname */.getName(guild_id.guild_id, guild_id.id, activity.author);
-            stringResult = intl.formatToPlainString(importDefault(2738)["d/qbC0"], obj);
+            stringResult = intl.formatToPlainString(importDefault(2757)["d/qbC0"], obj);
             const obj2 = require(4493) /* getNickname */;
           }
           return stringResult;

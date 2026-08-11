@@ -1,14 +1,14 @@
-// Module ID: 9855
-// Function ID: 9856
+// Module ID: 9860
+// Function ID: 9861
 // Name: LocationText
-// Dependencies: [19, 17, 4295, 3938, 1903, 21, 4303, 712, 4299, 4494, 692, 4800, 4802, 4764, 589, 4846, 1236, 5326, 2]
+// Dependencies: [19, 17, 4295, 3957, 1922, 21, 4303, 712, 4299, 4494, 692, 4800, 4802, 4764, 589, 4846, 1236, 5326, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 9855 (LocationText)
+// Module 9860 (LocationText)
 import noop from "noop";
 import { View } from "XSmallIcon";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -109,7 +109,7 @@ export default function MessageNotificationHeader(locationTextColor) {
     const tmp6 = obj;
   }
   let tmp2Result = tmp2(4494);
-  const channelName = tmp2Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+  const channelName = tmp2Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
   const type = channel.type;
   let tmp10 = channelName;
   if (onDismiss(692).ChannelTypes.GROUP_DM !== type) {
@@ -124,7 +124,7 @@ export default function MessageNotificationHeader(locationTextColor) {
           let channelName1 = null;
           if (null != parentChannel) {
             tmp2Result = tmp2(4494);
-            channelName1 = tmp2Result.computeChannelName(parentChannel, mergeGuildAvatar, upsertRelationship);
+            channelName1 = tmp2Result.computeChannelName(parentChannel, mergeGuildAvatar, markAllUserIdListsStale);
           }
           if (null != channelName1) {
             const _HermesInternal2 = HermesInternal;

@@ -1,7 +1,7 @@
 // Module ID: 5360
 // Function ID: 5361
 // Name: Emoji
-// Dependencies: [19, 17, 1302, 21, 500, 3946, 1297, 5268, 4153, 5361, 5362, 2]
+// Dependencies: [19, 17, 1302, 21, 500, 3965, 1297, 5268, 1363, 5361, 5362, 2]
 // Exports: default
 
 // Module 5360 (Emoji)
@@ -28,7 +28,7 @@ export default function Emoji(arg0) {
   if (obj.isAndroid()) {
     uRL = src;
     if (null == src) {
-      let obj1 = importDefault(3946);
+      let obj1 = importDefault(3965);
       uRL = obj1.getURL(name);
     }
   }
@@ -49,7 +49,7 @@ export default function Emoji(arg0) {
         obj1[0] = uRL;
         obj[3] = obj1;
         let tmp6Result = tmp6(tmp10, obj);
-        tmpResult = tmp(4153);
+        tmpResult = tmp(1363);
       }
       obj[1] = tmp6Result;
       return tmp6(tmp7, obj);

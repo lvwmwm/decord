@@ -1,9 +1,9 @@
-// Module ID: 6950
-// Function ID: 6951
+// Module ID: 6953
+// Function ID: 6954
 // Name: getAll
-// Dependencies: [5, 4499, 3, 1936, 12, 2]
+// Dependencies: [5, 4499, 3, 1955, 12, 2]
 
-// Module 6950 (getAll)
+// Module 6953 (getAll)
 import closure_2 from "set";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import set from "timestamp";
@@ -48,7 +48,7 @@ prototype["resetInMemoryState"] = function resetInMemoryState() {
 };
 prototype["handleConnectionOpen"] = function handleConnectionOpen(userGuildSettings, database) {
   if (!userGuildSettings.userGuildSettings.partial) {
-    obj = obj(1936);
+    obj = obj(1955);
     const result = obj.userGuildSettingsTransaction(database);
     result.delete();
   }
@@ -70,7 +70,7 @@ prototype["handleUserGuildSettingsUpdate"] = function handleUserGuildSettingsUpd
   }
 };
 prototype["write"] = function write(arg0, version, database) {
-  obj = obj(1936);
+  obj = obj(1955);
   const result = obj.userGuildSettingsTransaction(database);
   const iter = arg0[Symbol.iterator]();
   const nextResult = iter.next();
@@ -93,7 +93,7 @@ prototype["write"] = function write(arg0, version, database) {
     let putResult = result.put(str, tmp9);
     continue;
   }
-  const result1 = obj(1936).nonGuildVersionsTransaction(database);
+  const result1 = obj(1955).nonGuildVersionsTransaction(database);
   obj = { id: "user_guild_settings_version", version };
   result1.put(obj);
 };

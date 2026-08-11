@@ -1,17 +1,17 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 10027
+// Function ID: 10028
 // Name: NewCaption
-// Dependencies: [19, 17, 4639, 10023, 21, 4036, 4303, 712, 4151, 1297, 9967, 4299, 589, 4858, 10024, 1236, 4890, 4860, 8841, 10025, 4304, 1474, 10026, 4815, 9791, 2]
+// Dependencies: [19, 17, 4639, 10028, 21, 4042, 4303, 712, 4152, 1297, 9972, 4299, 589, 4858, 10029, 1236, 4890, 4860, 8847, 10030, 4304, 1493, 10031, 4815, 9796, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10022 (NewCaption)
+// Module 10027 (NewCaption)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "openImagePickerUnhandled";
 import map from "map";
 import frozen from "frozen";
 import jsxProd from "useWindowDimensions";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 import hexToRgba from "hexToRgba";
 import hexToRgba from "hexToRgba";
 import hexToRgba from "hexToRgba";
@@ -33,7 +33,7 @@ function NewCaption(arg0) {
   let obj = { style: items, children: null };
   items = [tmp.labelContainer, style];
   obj = { source: null, style: null };
-  obj[0] = importDefault(9967);
+  obj[0] = importDefault(9972);
   obj[1] = tmp.icon;
   const items1 = [callback(require(1297) /* Button */.Icon, obj), callback(require(4299) /* Text */.Text, { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label })];
   obj[1] = items1;
@@ -385,7 +385,7 @@ let c3 = importAllResult;
 ({ View: c4, Pressable } = get_ActivityIndicator);
 ({ ALAssetsType: error, DeviceMediaType: metroImportAll } = frozen);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
-let closure_11 = require("module_4036").createAnimatedComponent(Pressable);
+let closure_11 = require("module_4042").createAnimatedComponent(Pressable);
 let obj = { container: { flexDirection: "row", paddingHorizontal: 12, alignItems: "center" }, image: null, imageContainer: null, labelContainer: null, mediaKeyboardItemLabelContainer: null, icon: null, checkIcon: null, checkIconContainer: null, selectedOverlay: null, specialButton: null, disabled: null, imageDisabled: null };
 obj = { backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj[1] = obj;
@@ -436,15 +436,15 @@ const memoResult = importAllResult.memo((arg0) => {
   let closure_11;
   let obj;
   ({ handleCameraPress, handleAttachPress, handleViewAllPhotosPress } = arg0);
-  closure_11 = (importDefault(1474)().width - (24 + 4 * (numPerRow - 1))) / numPerRow;
+  closure_11 = (importDefault(1493)().width - (24 + 4 * (numPerRow - 1))) / numPerRow;
   obj = { camera: null, allphotos: null, attach: null };
-  obj = { text: require(1236) /* getSystemLocale */.t.uje3P9, onPress: handleCameraPress, Icon: require(10026) /* CameraIcon */.CameraIcon };
+  obj = { text: require(1236) /* getSystemLocale */.t.uje3P9, onPress: handleCameraPress, Icon: require(10031) /* CameraIcon */.CameraIcon };
   obj[0] = obj;
   obj = { text: require(1236) /* getSystemLocale */.t.Zmm6dN, onPress: handleViewAllPhotosPress, Icon: require(4815) /* ImageIcon */.ImageIcon };
   obj[1] = obj;
   const tmp = obj();
-  obj[2] = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9791) /* AttachmentIcon */.AttachmentIcon };
-  let obj1 = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9791) /* AttachmentIcon */.AttachmentIcon };
+  obj[2] = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9796) /* AttachmentIcon */.AttachmentIcon };
+  let obj1 = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9796) /* AttachmentIcon */.AttachmentIcon };
   return callback(closure_4, {
     style: tmp.container,
     children: items.map((type) => {

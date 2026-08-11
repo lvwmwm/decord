@@ -1,8 +1,8 @@
-// Module ID: 15787
-// Function ID: 15788
-// Dependencies: [19, 17, 21, 4303, 712, 1297, 11609, 4299, 1236, 4714, 2]
+// Module ID: 15804
+// Function ID: 15805
+// Dependencies: [19, 17, 21, 4303, 712, 1297, 11612, 4299, 1236, 4714, 2]
 
-// Module 15787
+// Module 15804
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -24,7 +24,7 @@ const memoResult = require("noop").memo((onCreateThreadPress) => {
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.iconWrapper, children: null };
   obj = { source: null, size: null };
-  obj[0] = importDefault(11609);
+  obj[0] = importDefault(11612);
   obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
   obj[1] = callback(require(1297) /* Button */.Icon, obj);
   const items = [callback(View, obj), , , ];

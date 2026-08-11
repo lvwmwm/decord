@@ -1,13 +1,13 @@
-// Module ID: 10374
-// Function ID: 10375
+// Module ID: 10379
+// Function ID: 10380
 // Name: SafetyToolsActionSheet
-// Dependencies: [19, 17, 3938, 10339, 21, 4303, 712, 10372, 10375, 10376, 589, 10352, 5778, 1236, 8768, 8767, 4271, 10380, 1988, 3998, 8498, 8496, 8497, 8495, 9243, 10383, 5996, 7784, 4643, 10370, 8770, 8769, 8020, 9650, 9649, 4509, 10384, 10388, 10389, 10390, 10232, 10233, 10391, 10381, 5767, 5374, 5380, 2]
+// Dependencies: [19, 17, 3957, 10344, 21, 4303, 712, 10377, 10380, 10381, 589, 10357, 5778, 1236, 8774, 8773, 4271, 10385, 2007, 4017, 8504, 8502, 8503, 8501, 9249, 10388, 5998, 7786, 4643, 10375, 8776, 8775, 8022, 9655, 9654, 4509, 10389, 10393, 10394, 10395, 10237, 10238, 10396, 10386, 5767, 5374, 5380, 2]
 // Exports: default
 
-// Module 10374 (SafetyToolsActionSheet)
-import module_3998 from "module_3998";
+// Module 10379 (SafetyToolsActionSheet)
+import module_4017 from "module_4017";
 import { View } from "SafetyToolsCrisisTextLineActionSheet";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
 import { jsx } from "registerAsset";
 import createCacheKey from "createCacheKey";
@@ -23,7 +23,7 @@ createCacheKey = { container: { flex: 1 }, actionRowGroup: null };
 createCacheKey = { marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_24 };
 createCacheKey[1] = createCacheKey;
 createCacheKey = createCacheKey.createStyles(createCacheKey);
-let result = require("upsertRelationship").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheet.tsx");
+let result = require("markAllUserIdListsStale").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheet.tsx");
 
 export default function SafetyToolsActionSheet(channelId) {
   channelId = channelId.channelId;
@@ -80,7 +80,7 @@ export default function SafetyToolsActionSheet(channelId) {
       closure_0 = outer1_7(closure_0);
       let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: module_3998,
+        recipientId: module_4017,
         channelId: closure_0,
         warningId: closure_1,
         warningType: closure_2,
@@ -140,10 +140,10 @@ export default function SafetyToolsActionSheet(channelId) {
     obj2[5] = function onPress() {
       const obj = outer1_1(outer1_2[24]);
       if (closure_11) {
-        obj.unignoreUser(module_3998, outer1_6, closure_0);
+        obj.unignoreUser(module_4017, outer1_6, closure_0);
         callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNIGNORE);
       } else {
-        obj.ignoreUser(module_3998, outer1_6, closure_0);
+        obj.ignoreUser(module_4017, outer1_6, closure_0);
         callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_IGNORE);
       }
     };
@@ -167,8 +167,8 @@ export default function SafetyToolsActionSheet(channelId) {
         let tmpResult = tmp(tmp2[24]);
         let obj = { location: null };
         obj[0] = outer1_6;
-        tmpResult.unblockUser(module_3998, obj);
-        const result = outer1_1(outer1_2[27]).showUnblockSuccessToast(module_3998, closure_0);
+        tmpResult.unblockUser(module_4017, obj);
+        const result = outer1_1(outer1_2[27]).showUnblockSuccessToast(module_4017, closure_0);
         callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNBLOCK);
         const obj5 = outer1_1(outer1_2[27]);
       } else {
@@ -231,7 +231,7 @@ export default function SafetyToolsActionSheet(channelId) {
       closure_0 = outer1_7(closure_0);
       let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: module_3998,
+        recipientId: module_4017,
         channelId: closure_0,
         warningId: closure_1,
         warningType: closure_2,
@@ -262,7 +262,7 @@ export default function SafetyToolsActionSheet(channelId) {
       closure_0 = outer1_7(closure_0);
       let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: module_3998,
+        recipientId: module_4017,
         channelId: closure_0,
         warningId: closure_1,
         warningType: closure_2,

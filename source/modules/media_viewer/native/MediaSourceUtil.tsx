@@ -1,10 +1,10 @@
-// Module ID: 8846
-// Function ID: 8847
+// Module ID: 8852
+// Function ID: 8853
 // Name: isValidImageAttachment
-// Dependencies: [19, 17, 676, 4491, 1384, 5909, 5914, 1473, 8319, 8201, 4636, 8055, 4525, 1935, 8214, 8230, 1351, 8732, 691, 4001, 8847, 4643, 1236, 8848, 2]
+// Dependencies: [19, 17, 676, 4491, 1403, 5909, 5914, 1492, 8324, 8205, 4636, 8057, 4525, 1954, 8218, 8234, 1370, 8738, 691, 4020, 8853, 4643, 1236, 8854, 2]
 // Exports: downloadMediaAsset, downloadMediaAssetWithContentType, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, flattenSource, getAttachmentUrl, getEmbedMedia, getEmbedUrl, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedAvifSource, isAnimatedImageSource, isAnimatedWebpSource, isGIFSource, isThumbnailAttachment, isValidImageEmbed, isValidVideoAttachment, isValidVideoEmbed, setMediaSourcePortal, supportOverlayVideoControls, useSelectedMediaSource
 
-// Module 8846 (isValidImageAttachment)
+// Module 8852 (isValidImageAttachment)
 import presentAddedFriendToast from "presentAddedFriendToast";
 import { NativeModules } from "map";
 import ME from "ME";
@@ -34,8 +34,8 @@ function isValidImageAttachment(filename) {
       if (tmp2) {
         let hasFlagResult = null != filename.flags;
         if (hasFlagResult) {
-          hasFlagResult = require(1384) /* hasFlag */.hasFlag(filename.flags, constants.IS_THUMBNAIL);
-          const tmp5Result = require(1384) /* hasFlag */;
+          hasFlagResult = require(1403) /* hasFlag */.hasFlag(filename.flags, constants.IS_THUMBNAIL);
+          const tmp5Result = require(1403) /* hasFlag */;
         }
         tmp2 = hasFlagResult;
       }
@@ -62,7 +62,7 @@ function extractMediaFromAttachment(width, closure_0, index, closure_02, arg4) {
             if ("" !== width.proxy_url) {
               let url = width.proxy_url;
             }
-            obj = importDefault(1473);
+            obj = importDefault(1492);
             ({ width, height } = width);
             let str2;
             if (isVideoFileResult) {
@@ -76,12 +76,12 @@ function extractMediaFromAttachment(width, closure_0, index, closure_02, arg4) {
               obj[2] = closure_02;
               obj[3] = closure_0.channel_id;
               obj[4] = url;
-              obj[5] = tmp(8319)(width);
+              obj[5] = tmp(8324)(width);
               obj[6] = index;
               ({ width: obj10[7], height: obj10[8] } = width);
               obj[9] = url;
               ({ content_type: obj10[10], description: obj10[11] } = width);
-              let tmp39Result = tmp39(1384);
+              let tmp39Result = tmp39(1403);
               let num3 = width.flags;
               if (num3 == null) {
                 num3 = 0;
@@ -100,10 +100,10 @@ function extractMediaFromAttachment(width, closure_0, index, closure_02, arg4) {
               obj1[1] = closure_0.id;
               obj1[2] = closure_02;
               obj1[3] = closure_0.channel_id;
-              obj1[4] = tmp(8319)(width);
+              obj1[4] = tmp(8324)(width);
               obj1[5] = index;
               ({ width: obj2[6], height: obj2[7], url: obj2[8], content_type: obj2[9], description: obj2[10] } = width);
-              tmp39Result = tmp39(1384);
+              tmp39Result = tmp39(1403);
               let num = width.flags;
               if (num == null) {
                 num = 0;
@@ -117,13 +117,13 @@ function extractMediaFromAttachment(width, closure_0, index, closure_02, arg4) {
               const obj2 = {};
               const merged = Object.assign(obj1);
               obj2.uri = url;
-              const formatted = tmp(8319)(width).toLowerCase();
-              const str3 = tmp(8319)(width);
+              const formatted = tmp(8324)(width).toLowerCase();
+              const str3 = tmp(8324)(width);
               const tmp11 = constants;
               const endsWithResult = formatted.endsWith(".webp");
-              const formatted1 = tmp(8319)(width).toLowerCase();
+              const formatted1 = tmp(8324)(width).toLowerCase();
               const endsWithResult1 = formatted1.endsWith(".avif");
-              const str5 = tmp(8319)(width);
+              const str5 = tmp(8324)(width);
               let num2 = width.flags;
               if (num2 == null) {
                 num2 = 0;
@@ -163,7 +163,7 @@ function extractMediaFromAttachment(width, closure_0, index, closure_02, arg4) {
                 }
                 return tmp17;
               }
-              tmp39Result1 = tmp39(1384);
+              tmp39Result1 = tmp39(1403);
             }
           }
           url = width.url;
@@ -230,11 +230,11 @@ function extractMediaFromEmbed(image, closure_0, contentMessage, arg3, closure_0
       } else if (null != image.content_scan_version) {
         content_scan_version = image.content_scan_version;
       }
-      let obj = importDefault(1473);
+      let obj = importDefault(1492);
       const mobileOptimizedSrc = obj.getMobileOptimizedSrc(str, thumbnail.width, thumbnail.height);
       obj = { contentMessage: null };
       obj[0] = contentMessage;
-      const hasSpoilerEmbeds = importDefault(8201)(closure_0, obj).hasSpoilerEmbeds;
+      const hasSpoilerEmbeds = importDefault(8205)(closure_0, obj).hasSpoilerEmbeds;
       let obj2 = require(5909) /* getEligibleHarmTypesConfigsForContext */;
       const enabledHarmTypesForMessage = obj2.getEnabledHarmTypesForMessage(closure_0);
       let obj3 = require(5909) /* getEligibleHarmTypesConfigsForContext */;
@@ -264,7 +264,7 @@ function extractMediaFromEmbed(image, closure_0, contentMessage, arg3, closure_0
         url = video.url;
       }
       let url3 = tmp16Result.getEffectiveVideoProvider(name, url);
-      const result1 = require(8055) /* frozen */.shouldPlayVideoInline(url3);
+      const result1 = require(8057) /* frozen */.shouldPlayVideoInline(url3);
       let tmp26 = result1;
       if (result1) {
         tmp26 = null != image.video;
@@ -464,7 +464,7 @@ function extractMediaFromEmbed(image, closure_0, contentMessage, arg3, closure_0
           }
         }
         let obj7 = { uri: null, guildId: null, spoiler: null, flags: null, obscure: null, contentScanVersion: null, contentType: null, messageId: null, noCarousel: null, mediaIndex: null, accessoryType: "embed", channelId: null, sourceURI: null, width: null, height: null, shareURI: null };
-        obj7[0] = tmp13(1473).getMobileOptimizedSrc(str2, image.thumbnail.width, image.thumbnail.height);
+        obj7[0] = tmp13(1492).getMobileOptimizedSrc(str2, image.thumbnail.width, image.thumbnail.height);
         obj7[1] = closure_02;
         obj7[2] = hasSpoilerEmbeds;
         obj7[3] = image.flags;
@@ -487,10 +487,10 @@ function extractMediaFromEmbed(image, closure_0, contentMessage, arg3, closure_0
         obj7[14] = image.thumbnail.height;
         obj7[15] = image.thumbnail.url;
         obj7 = items1.push(obj7);
-        const tmp13Result = tmp13(1473);
+        const tmp13Result = tmp13(1492);
       }
       tmp13 = importDefault;
-      const tmp16Result1 = require(8055) /* frozen */;
+      const tmp16Result1 = require(8057) /* frozen */;
     } else {
       ({ proxyURL, url } = image.video);
       let str3 = url;
@@ -540,12 +540,12 @@ function toMediaSourceFromUnfurledMedia(id, guild_id, media, description, spoile
   let proxyUrl2;
   let width;
   let width2;
-  let obj = require(8214) /* transformToRowGeneratedComponent */;
+  let obj = require(8218) /* transformToRowGeneratedComponent */;
   const unfurledMediaItemType = obj.getUnfurledMediaItemType(media);
-  if (unfurledMediaItemType === require(8230) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER) {
+  if (unfurledMediaItemType === require(8234) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER) {
     return null;
   } else {
-    const obj8 = importDefault(1473);
+    const obj8 = importDefault(1492);
     ({ proxyUrl: proxyUrl2, width } = media);
     if (width == null) {
       width = 0;
@@ -554,7 +554,7 @@ function toMediaSourceFromUnfurledMedia(id, guild_id, media, description, spoile
     if (num == null) {
       num = 0;
     }
-    const tmp4 = unfurledMediaItemType === tmp(8230).MediaGalleryItemType.VIDEO;
+    const tmp4 = unfurledMediaItemType === tmp(8234).MediaGalleryItemType.VIDEO;
     let str;
     if (tmp4) {
       str = "png";
@@ -662,8 +662,8 @@ export const isThumbnailAttachment = function isThumbnailAttachment(flags) {
   if (tmp) {
     let hasFlagResult = null != flags.flags;
     if (hasFlagResult) {
-      hasFlagResult = require(1384) /* hasFlag */.hasFlag(flags.flags, constants.IS_THUMBNAIL);
-      const obj = require(1384) /* hasFlag */;
+      hasFlagResult = require(1403) /* hasFlag */.hasFlag(flags.flags, constants.IS_THUMBNAIL);
+      const obj = require(1403) /* hasFlag */;
     }
     tmp = hasFlagResult;
   }
@@ -734,7 +734,7 @@ export const extractMediaFromMessageComponents = function extractMediaFromMessag
       let tmp6 = require;
       let tmp7 = dependencyMap;
       let tmp8 = dependencyMap;
-      if (require(1935) /* PermissionOverwriteType */.ComponentType.MEDIA_GALLERY === type) {
+      if (require(1954) /* PermissionOverwriteType */.ComponentType.MEDIA_GALLERY === type) {
         let tmp9 = nextResult;
         items = tmp4.items;
         let tmp10 = items;
@@ -759,7 +759,7 @@ export const extractMediaFromMessageComponents = function extractMediaFromMessag
       } else {
         let tmp29 = tmp5;
         let tmp30 = tmp7;
-        if (tmp6(1935).ComponentType.THUMBNAIL === type) {
+        if (tmp6(1954).ComponentType.THUMBNAIL === type) {
           let tmp31 = toMediaSourceFromUnfurledMedia;
           let tmp32 = nextResult;
           let num3 = 0;
@@ -786,7 +786,7 @@ export const extractMediaSourcesFromEmbed = function extractMediaSourcesFromEmbe
   const importDefault = images;
   const dependencyMap = index;
   let presentAddedFriendToast = guild_id;
-  const hasSpoilerEmbeds = importDefault(8201)(arg0, { contentMessage }).hasSpoilerEmbeds;
+  const hasSpoilerEmbeds = importDefault(8205)(arg0, { contentMessage }).hasSpoilerEmbeds;
   images = images.images;
   if (images == null) {
     let items = [images.image];
@@ -855,7 +855,7 @@ export const extractMediaSourcesFromComponent = function extractMediaSourcesFrom
     return null;
   } else {
     const type = value.type;
-    if (tmp(1935).ComponentType.MEDIA_GALLERY === type) {
+    if (tmp(1954).ComponentType.MEDIA_GALLERY === type) {
       let num2 = 0;
       if (null != componentMediaIndex) {
         num2 = 0;
@@ -877,9 +877,9 @@ export const extractMediaSourcesFromComponent = function extractMediaSourcesFrom
       });
       obj = { initialIndex: null, sources: null };
       obj[0] = num2;
-      obj[1] = mapped.filter(tmp(1351).isNotNullish);
+      obj[1] = mapped.filter(tmp(1370).isNotNullish);
       return obj;
-    } else if (tmp(1935).ComponentType.THUMBNAIL === type) {
+    } else if (tmp(1954).ComponentType.THUMBNAIL === type) {
       const tmp7 = toMediaSourceFromUnfurledMedia(id, guild_id, value.media, value.description, value.spoiler);
       let tmp8 = null;
       if (null != tmp7) {
@@ -936,7 +936,7 @@ export const extractMediaSourcesFromMessage = function extractMediaSourcesFromMe
         if (hasFlagResult) {
           let tmp19 = require;
           let tmp20 = dependencyMap;
-          let obj2 = require(1384) /* hasFlag */;
+          let obj2 = require(1403) /* hasFlag */;
           let tmp21 = constants;
           hasFlagResult = obj2.hasFlag(tmp.flags, constants.IS_THUMBNAIL);
         }
@@ -1005,7 +1005,7 @@ export const getSelectedMediaSource = function getSelectedMediaSource(mediaViewe
 };
 export const useSelectedMediaSource = function useSelectedMediaSource(syncer) {
   let closure_0 = syncer;
-  const tmp = importDefault(8732)(syncer.index);
+  const tmp = importDefault(8738)(syncer.index);
   importDefault = tmp;
   const items = [syncer.sources, tmp];
   const items1 = [
@@ -1130,7 +1130,7 @@ export const getVideoSourceType = function getVideoSourceType(source) {
     if (!obj2.isPortalExpired(source.portal)) {
       PORTAL = obj.PORTAL;
     }
-    obj2 = require(8848) /* MediaPlayerManager */;
+    obj2 = require(8854) /* MediaPlayerManager */;
   }
   if (null == source.embedURI) {
     const DEFAULT = obj.DEFAULT;

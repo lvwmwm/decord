@@ -3,4 +3,5 @@
 // Dependencies: []
 
 // Module 13625
-arg5.f = Object.getOwnPropertySymbols;
+
+export default {};

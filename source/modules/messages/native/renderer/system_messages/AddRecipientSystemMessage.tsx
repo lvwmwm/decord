@@ -1,10 +1,10 @@
-// Module ID: 8068
-// Function ID: 8069
+// Module ID: 8070
+// Function ID: 8071
 // Name: createAddRecipientSystemMessage
-// Dependencies: [1376, 1372, 1903, 8069, 8071, 1236, 8072, 2]
+// Dependencies: [1395, 1391, 1922, 8071, 8073, 1236, 8074, 2]
 // Exports: createAddRecipientSystemMessage
 
-// Module 8068 (createAddRecipientSystemMessage)
+// Module 8070 (createAddRecipientSystemMessage)
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -21,10 +21,10 @@ export const createAddRecipientSystemMessage = function createAddRecipientSystem
   if (hasItem) {
     hasItem = THREAD_CHANNEL_TYPES.has(channel.type);
   }
-  let obj = require(8069) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(8071) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const userAuthorWithProcessedColor = require(8069) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(8071)({ message, author: messageAuthorWithProcessedColor, roleStyle }), otherUsername: userAuthorWithProcessedColor.nick, otherUsernameOnClick: importDefault(8071)({ userId: first, message, author: userAuthorWithProcessedColor, roleStyle }) };
+  const userAuthorWithProcessedColor = require(8071) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(8073)({ message, author: messageAuthorWithProcessedColor, roleStyle }), otherUsername: userAuthorWithProcessedColor.nick, otherUsernameOnClick: importDefault(8073)({ userId: first, message, author: userAuthorWithProcessedColor, roleStyle }) };
   const intl = require(1236) /* getSystemLocale */.intl;
   const formatToParts = intl.formatToParts;
   const t = require(1236) /* getSystemLocale */.t;
@@ -34,6 +34,6 @@ export const createAddRecipientSystemMessage = function createAddRecipientSystem
     formatToPartsResult = formatToParts(t["7/Xl0S"], obj);
   }
   obj = { content: formatToPartsResult };
-  const merged = Object.assign(importDefault(8072)(message));
+  const merged = Object.assign(importDefault(8074)(message));
   return obj;
 };

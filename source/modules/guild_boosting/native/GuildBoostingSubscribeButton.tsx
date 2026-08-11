@@ -1,10 +1,10 @@
-// Module ID: 6864
-// Function ID: 6865
+// Module ID: 6866
+// Function ID: 6867
 // Name: _handleBoostPress
-// Dependencies: [5, 19, 17, 4196, 676, 5153, 1905, 21, 6865, 4509, 5151, 12848, 1480, 5728, 647, 1921, 11897, 4714, 1236, 4823, 2]
+// Dependencies: [5, 19, 17, 4196, 676, 5153, 1924, 21, 6867, 4509, 5151, 12852, 1499, 5728, 647, 1940, 11900, 4714, 1236, 4823, 2]
 // Exports: default
 
-// Module 6864 (_handleBoostPress)
+// Module 6866 (_handleBoostPress)
 import PremiumGuildSubscribeModalScenes from "PremiumGuildSubscribeModalScenes";
 import LockIcon from "LockIcon";
 import { View } from "Button";
@@ -70,7 +70,7 @@ function _handleBoostPress() {
               c4 = 1;
               c5 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback(6865).launchGuildBoostFlowOrAlert(obj1);
+              obj3[0] = callback(6867).launchGuildBoostFlowOrAlert(obj1);
               return obj3;
             }
           } else if (arg0 === 1) {

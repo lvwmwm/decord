@@ -1,10 +1,10 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 16973
+// Function ID: 16974
 // Name: ResendVerificationCodeButton
-// Dependencies: [5, 32, 19, 17, 21, 16952, 4001, 4002, 1236, 2546, 14170, 4257, 4299, 2]
+// Dependencies: [5, 32, 19, 17, 21, 16964, 4020, 4021, 1236, 2565, 14178, 4257, 4299, 2]
 // Exports: default
 
-// Module 16961 (ResendVerificationCodeButton)
+// Module 16973 (ResendVerificationCodeButton)
 import _getCurrentTask from "_getCurrentTask";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

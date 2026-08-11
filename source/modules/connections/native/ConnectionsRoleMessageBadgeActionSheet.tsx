@@ -1,10 +1,10 @@
-// Module ID: 11218
-// Function ID: 11219
+// Module ID: 11223
+// Function ID: 11224
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1911, 1218, 1971, 1964, 1891, 11219, 5125, 676, 21, 4303, 712, 1236, 5124, 4255, 4299, 4239, 12, 4005, 5000, 11039, 9131, 1297, 1416, 4153, 38, 5728, 5748, 589, 698, 4498, 5232, 5397, 5772, 4714, 4271, 11042, 8783, 2]
+// Dependencies: [32, 19, 17, 1930, 1218, 1990, 1983, 1910, 11224, 5125, 676, 21, 4303, 712, 1236, 5124, 4255, 4299, 4239, 12, 4024, 5000, 11044, 9137, 1297, 1435, 1363, 38, 5728, 5748, 589, 698, 4498, 5232, 5397, 5772, 4714, 4271, 11047, 8789, 2]
 // Exports: default
 
-// Module 11218 (PopoutCheck)
+// Module 11223 (PopoutCheck)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import apply from "apply";
 import get_ActivityIndicator from "Text";

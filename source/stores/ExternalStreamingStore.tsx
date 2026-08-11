@@ -1,9 +1,9 @@
-// Module ID: 10439
-// Function ID: 10440
+// Module ID: 10444
+// Function ID: 10445
 // Name: makeTwitchRequest
-// Dependencies: [5, 4998, 4147, 676, 687, 530, 5123, 709, 8241, 5000, 659, 589, 2]
+// Dependencies: [5, 4998, 4149, 676, 687, 530, 5123, 709, 8245, 5000, 659, 589, 2]
 
-// Module 10439 (makeTwitchRequest)
+// Module 10444 (makeTwitchRequest)
 import sendRequest from "sendRequest";
 import closure_4 from "set";
 import initialize from "initialize";

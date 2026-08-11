@@ -1,7 +1,7 @@
 // Module ID: 4190
 // Function ID: 4191
 // Name: calculateAppliedBoosts
-// Dependencies: [32, 1891, 4191, 676, 589, 709, 2]
+// Dependencies: [32, 1910, 4191, 676, 589, 709, 2]
 
 // Module 4190 (calculateAppliedBoosts)
 import _slicedToArray from "_slicedToArray";

@@ -1,10 +1,10 @@
-// Module ID: 15094
-// Function ID: 15095
+// Module ID: 15103
+// Function ID: 15104
 // Name: _scorePassword
-// Dependencies: [5, 15095, 1218, 676, 1221, 3883, 698, 5127, 503, 4203, 10463, 709, 15096, 15097, 2]
+// Dependencies: [5, 15104, 1218, 676, 1221, 3902, 698, 5127, 503, 4203, 10468, 709, 15105, 15106, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 15094 (_scorePassword)
+// Module 15103 (_scorePassword)
 import closure_4 from "t";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -182,7 +182,7 @@ function _registerPhone() {
           } else if (2 === tmp8) {
             c4 = 0;
             callback = dependencyMap;
-            if (callback instanceof phone(10463).CaptchaCancelError) {
+            if (callback instanceof phone(10468).CaptchaCancelError) {
               throw callback;
             } else {
               const tmp23 = new callback(4203)(callback);
@@ -257,13 +257,13 @@ function registerFull(giftCodeSKUId) {
   let obj = importDefault(709);
   obj.dispatch({ type: "REGISTER" });
   if (null != birthday) {
-    tmp4(15096)(birthday, constants2.REGISTER);
+    tmp4(15105)(birthday, constants2.REGISTER);
     let tmp4Result = tmp4(698);
     obj = { source: null, action: null };
     obj[0] = constants5.REGISTER;
     obj[1] = constants4.AGE_GATE_SUBMITTED;
     tmp4Result.track(constants.AGE_GATE_ACTION, obj);
-    const diffResult = tmp4(3883)().diff(birthday, "years");
+    const diffResult = tmp4(3902)().diff(birthday, "years");
     if (diffResult >= 13) {
       if (diffResult < 13) {
         let str3 = "23+";
@@ -282,7 +282,7 @@ function registerFull(giftCodeSKUId) {
       obj[0] = str;
       tmp4Result.track(tmp14.USER_AGE_SUBMITTED, obj);
     }
-    const obj11 = tmp4(3883)();
+    const obj11 = tmp4(3902)();
     tmp14 = constants;
   }
   const obj1 = { url: constants3.REGISTER, body: null, trackedActionData: null, rejectWithError: false };
@@ -324,13 +324,13 @@ function registerFull(giftCodeSKUId) {
     const obj3 = callback2(709);
     callback2(698).track(constants.AGE_GATE_ACTION, { source: constants3.REGISTER, action: constants2.AGE_GATE_SUCCESS });
   }, (arg0) => {
-    if (arg0 instanceof callback(10463).CaptchaCancelError) {
+    if (arg0 instanceof callback(10468).CaptchaCancelError) {
       throw arg0;
     } else {
       let obj = new callback2(4203)(arg0);
       if (null != obj.getFieldErrors("date_of_birth")) {
-        const result = callback3(15097).preventUnderageRegistration(constants3.REGISTER);
-        const obj2 = callback3(15097);
+        const result = callback3(15106).preventUnderageRegistration(constants3.REGISTER);
+        const obj2 = callback3(15106);
       }
       obj = { is_unique_username_registration: true, email_error_reason: null, phone_error_reason: null, password_error_reason: null, username_error_reason: null, global_name_error_reason: null, date_of_birth_error_reason: null, promotional_email_opt_in_error_reason: null, fingerprint_error_reason: null, invite_error_reason: null, gift_code_sku_id_error_reason: null, guild_template_code_error_reason: null, consent_error_reason: null, generic_error_reason: null };
       obj[1] = obj.getFirstFieldErrorMessage("email");

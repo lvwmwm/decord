@@ -1,10 +1,10 @@
-// Module ID: 11496
-// Function ID: 11497
+// Module ID: 11499
+// Function ID: 11500
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4303, 11438, 9549, 1236, 4014, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 11441, 9555, 1236, 1351, 4299, 2]
 // Exports: default
 
-// Module 11496 (EmptyState)
+// Module 11499 (EmptyState)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,8 +20,8 @@ export default function EmptyState(showsGenericMessage) {
     flag = false;
   }
   const tmp = callback();
-  let obj = flag(11438);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(9549).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
+  let obj = flag(11441);
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(9555).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
   const items = [flag];
   const effect = React.useEffect(() => {
     const intl = flag(outer1_1[6]).intl;

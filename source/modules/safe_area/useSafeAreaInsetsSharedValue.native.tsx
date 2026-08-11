@@ -1,25 +1,25 @@
-// Module ID: 10329
-// Function ID: 10330
+// Module ID: 10334
+// Function ID: 10335
 // Name: _loop
-// Dependencies: [4036, 1609, 10330, 10331, 1622, 1477, 2]
+// Dependencies: [4042, 1628, 10335, 10336, 1641, 1496, 2]
 // Exports: default
 
-// Module 10329 (_loop)
-import module_4036 from "module_4036";
+// Module 10334 (_loop)
+import module_4042 from "module_4042";
 import useSafeAreaInsets from "useSafeAreaInsets";
-import module_4036 from "module_4036";
+import module_4042 from "module_4042";
 import useSafeAreaInsets from "useSafeAreaInsets";
 
 let obj = { main: null, share: null };
 obj = {};
 const merged = Object.assign(useSafeAreaInsets.getSafeAreaInsets("main"));
-obj[0] = module_4036.makeMutable(obj);
+obj[0] = module_4042.makeMutable(obj);
 obj = {};
 const merged1 = Object.assign(useSafeAreaInsets.getSafeAreaInsets("share"));
-obj[1] = module_4036.makeMutable(obj);
+obj[1] = module_4042.makeMutable(obj);
 function _loop(iter) {
   let closure_0 = iter;
-  importDefault(10330)((arg0) => {
+  importDefault(10335)((arg0) => {
     outer1_1(outer1_2[3])(outer1_3[closure_0], arg0);
   }, iter);
 }
@@ -46,6 +46,6 @@ const tmp5 = (() => {
 const result = require("subscribeToSafeAreaInsets").fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
 
 export default function useSafeAreaInsetsSharedValue() {
-  const obj = require(1477) /* context */;
+  const obj = require(1496) /* context */;
   return obj[obj.useAppEntryKey(obj)];
 };

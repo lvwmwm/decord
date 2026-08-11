@@ -1,10 +1,10 @@
-// Module ID: 12079
-// Function ID: 12080
+// Module ID: 12082
+// Function ID: 12083
 // Name: getDescriptiveInviteError
-// Dependencies: [1903, 676, 3947, 1236, 1974, 2]
+// Dependencies: [1922, 676, 3966, 1236, 1993, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 12079 (getDescriptiveInviteError)
+// Module 12082 (getDescriptiveInviteError)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
@@ -37,7 +37,7 @@ export const getDescriptiveInviteError = function getDescriptiveInviteError(code
       return obj;
     }
     tmp14 = closure_7;
-    obj5 = importDefault(3947);
+    obj5 = importDefault(3966);
   } else if (tmp.GUILD_AT_CAPACITY === code) {
     const obj1 = { title: null, description: null };
     const intl5 = require(1236) /* getSystemLocale */.intl;
@@ -79,7 +79,7 @@ export const getInviteError = function getInviteError(arg0) {
   } else if (tmp.INVITES_DISABLED === arg0) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     const obj = { articleLink: null };
-    obj[0] = importDefault(1974).getArticleURL(constants2.INVITE_DISABLED);
+    obj[0] = importDefault(1993).getArticleURL(constants2.INVITE_DISABLED);
     return intl2.format(require(1236) /* getSystemLocale */.t.RXSeLl, obj);
   } else {
     const intl = require(1236) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 14454
-// Function ID: 14455
+// Module ID: 14462
+// Function ID: 14463
 // Name: ResubscribedAlert
-// Dependencies: [19, 17, 21, 4303, 712, 4732, 1236, 14455, 1297, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4732, 1236, 14463, 1297, 4299, 2]
 // Exports: default
 
-// Module 14454 (ResubscribedAlert)
+// Module 14462 (ResubscribedAlert)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,7 +34,7 @@ export default function ResubscribedAlert(onClose) {
   obj[1] = onClose.onClose;
   obj[2] = tmp.container;
   obj = { style: tmp.body, children: null };
-  obj = { source: importDefault(14455), style: tmp.headerImage };
+  obj = { source: importDefault(14463), style: tmp.headerImage };
   const items = [callback(closure_4, obj), callback(require(1297) /* Button */.Spacer, { size: 27 }), , , ];
   const obj1 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;

@@ -1,21 +1,22 @@
-// Module ID: 7084
-// Function ID: 7085
+// Module ID: 7087
+// Function ID: 7088
 // Name: initialize
-// Dependencies: [32, 1903, 7080, 589, 12, 709, 2]
+// Dependencies: [32, 1922, 7083, 589, 1370, 12, 709, 2]
 
-// Module 7084 (initialize)
+// Module 7087 (initialize)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import { Store } from "initialize";
 
-let c5 = null;
+const require = arg1;
 let c6 = null;
-let c7 = false;
-let closure_8 = { suggestedGamesIds: [], suggestedWishlistGamesIds: [] };
-let c9 = false;
+let c7 = null;
+let c8 = false;
+let closure_9 = { suggestedGamesIds: [], suggestedWishlistGamesIds: [] };
 let c10 = false;
 let c11 = false;
+let c12 = false;
 class WidgetStore extends Store {
 }
 const prototype = WidgetStore.prototype;
@@ -23,21 +24,38 @@ prototype["initialize"] = function initialize() {
   this.waitFor(mergeGuildAvatar);
 };
 prototype["getPendingWidgets"] = function getPendingWidgets() {
-  return c5;
+  return c6;
 };
 prototype["getSaveablePendingWidgets"] = function getSaveablePendingWidgets() {
-  let found = null;
+  let found1 = null;
   if (null != _null) {
-    found = _null.filter((isDiscardable) => !isDiscardable.isDiscardable());
+    const mapped = _null.map((isUpdatable) => {
+      let tmp = isUpdatable;
+      let closure_0 = isUpdatable;
+      if (!isUpdatable.isUpdatable()) {
+        let found;
+        if (closure_7 != null) {
+          found = arr.find((getUniqueKey) => {
+            const uniqueKey = getUniqueKey.getUniqueKey();
+            return uniqueKey === isUpdatable.getUniqueKey();
+          });
+        }
+        tmp = found;
+        arr = closure_7;
+      }
+      return tmp;
+    });
+    let found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+    found1 = found.filter((isDiscardable) => !isDiscardable.isDiscardable());
   }
-  return found;
+  return found1;
 };
 prototype["hasPendingChanges"] = function hasPendingChanges() {
-  let tmp = null !== c5;
+  let tmp = null !== c6;
   if (tmp) {
-    let tmp3 = null === c6;
+    let tmp3 = null === c7;
     if (!tmp3) {
-      tmp3 = !importDefault(12).isEqual(c5, c6);
+      tmp3 = !importDefault(12).isEqual(c6, c7);
       const obj = importDefault(12);
     }
     tmp = tmp3;
@@ -156,31 +174,31 @@ prototype["canSaveChanges"] = function canSaveChanges() {
 };
 Object.defineProperty(prototype, "isSubmitting", {
   get: function isSubmitting() {
-    return c7;
+    return c8;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "suggestedFetchError", {
   get: function suggestedFetchError() {
-    return c9;
+    return c10;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "suggestedFetchIsLoading", {
   get: function suggestedFetchIsLoading() {
-    return c10;
+    return c11;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "suggestedFetchAttempted", {
   get: function suggestedFetchAttempted() {
-    return c11;
+    return c12;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "suggestedGameIds", {
   get: function suggestedGameIds() {
-    return closure_8;
+    return closure_9;
   },
   set: undefined
 });
@@ -202,42 +220,42 @@ const widgetStore = new WidgetStore(require("dispatcher"), {
     }
   },
   WIDGET_PENDING_SAVE_START: function handleSavePendingWidgetsStart() {
-    let c7 = true;
+    let c8 = true;
   },
   WIDGET_PENDING_SAVE_SUCCESS: function handleSavePendingWidgetsSuccess() {
-    let c7 = false;
-    if (null !== c5) {
-      let c6 = null;
-      c5 = null;
+    let c8 = false;
+    if (null !== c6) {
+      let c7 = null;
+      c6 = null;
     }
   },
   WIDGET_PENDING_SAVE_FAILURE: function handleSavePendingWidgetsFailure() {
-    let c7 = false;
+    let c8 = false;
   },
   WIDGET_SUGGESTED_FETCH_SUCCESS: function handleSetSuggestedGameIds(arg0) {
-    ({ suggestedGamesIds: closure_8.suggestedGamesIds, suggestedWishlistGamesIds: closure_8.suggestedWishlistGamesIds } = arg0);
+    ({ suggestedGamesIds: closure_9.suggestedGamesIds, suggestedWishlistGamesIds: closure_9.suggestedWishlistGamesIds } = arg0);
+    let c11 = false;
     let c10 = false;
-    let c9 = false;
   },
   WIDGET_SUGGESTED_FETCH_FAILURE: function handleSetSuggestedFetchFailure() {
-    let c9 = true;
-    let c10 = false;
+    let c10 = true;
+    let c11 = false;
   },
   WIDGET_SUGGESTED_FETCH_START: function handleSetSuggestedFetchStart() {
-    let c10 = true;
-    let c9 = false;
     let c11 = true;
+    let c10 = false;
+    let c12 = true;
   },
   WIDGET_PENDING_CLEAR: function handleClearPendingWidgets() {
-    let c5 = null;
     let c6 = null;
+    let c7 = null;
   },
   WIDGET_SUGGESTED_REMOVE_GAME: function handleRemoveApplicationIdFromSuggestedGames(applicationId) {
     applicationId = applicationId.applicationId;
-    const suggestedGamesIds = closure_8.suggestedGamesIds;
-    closure_8.suggestedGamesIds = suggestedGamesIds.filter((arg0) => arg0 !== applicationId);
-    const prop = closure_8.suggestedWishlistGamesIds;
-    closure_8.suggestedWishlistGamesIds = prop.filter((arg0) => arg0 !== applicationId);
+    const suggestedGamesIds = closure_9.suggestedGamesIds;
+    closure_9.suggestedGamesIds = suggestedGamesIds.filter((arg0) => arg0 !== applicationId);
+    const prop = closure_9.suggestedWishlistGamesIds;
+    closure_9.suggestedWishlistGamesIds = prop.filter((arg0) => arg0 !== applicationId);
   }
 });
 const result = require("createUserWidgetFromServer").fileFinishedImporting("modules/user_profile/WidgetStore.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 5254
 // Function ID: 5255
 // Name: setIndex
-// Dependencies: [1375, 1218, 1372, 1961, 1891, 676, 5255, 589, 709, 2]
+// Dependencies: [1394, 1218, 1391, 1980, 1910, 676, 5255, 589, 709, 2]
 
 // Module 5254 (setIndex)
 import initializeFromUserSettings from "initializeFromUserSettings";

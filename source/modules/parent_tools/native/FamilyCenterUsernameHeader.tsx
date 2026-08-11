@@ -1,10 +1,10 @@
-// Module ID: 14139
-// Function ID: 14140
+// Module ID: 14147
+// Function ID: 14148
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [19, 17, 21, 4303, 4146, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 4148, 4299, 2]
 // Exports: default
 
-// Module 14139 (FamilyCenterUsernameHeader)
+// Module 14147 (FamilyCenterUsernameHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,11 +19,11 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterUsernameHeader(user) {
   user = user.user;
-  let obj = importDefault(4146);
+  let obj = importDefault(4148);
   const name = obj.useName(user);
   const tmp = callback3();
   obj = { style: tmp.container, children: null };
-  const combined = " (@" + importDefault(4146).getUserTag(user, { decoration: "never" }) + ")";
+  const combined = " (@" + importDefault(4148).getUserTag(user, { decoration: "never" }) + ")";
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
   const items = [name, callback(require(4299) /* Text */.Text, { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined })];
   obj[3] = items;

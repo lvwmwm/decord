@@ -1,10 +1,10 @@
-// Module ID: 8301
-// Function ID: 8302
+// Module ID: 8306
+// Function ID: 8307
 // Name: useAvatarDecorationIfNotExpired
-// Dependencies: [32, 19, 676, 1880, 4188, 2]
+// Dependencies: [32, 19, 676, 1899, 4188, 2]
 // Exports: default
 
-// Module 8301 (useAvatarDecorationIfNotExpired)
+// Module 8306 (useAvatarDecorationIfNotExpired)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { MAX_TIMEOUT_MS } from "ME";

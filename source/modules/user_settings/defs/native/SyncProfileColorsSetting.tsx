@@ -1,9 +1,9 @@
-// Module ID: 14600
-// Function ID: 14601
+// Module ID: 14610
+// Function ID: 14611
 // Name: toggle
-// Dependencies: [4295, 8082, 589, 10447, 1236, 13712, 2]
+// Dependencies: [4295, 8084, 589, 10452, 1236, 13720, 2]
 
-// Module 14600 (toggle)
+// Module 14610 (toggle)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 

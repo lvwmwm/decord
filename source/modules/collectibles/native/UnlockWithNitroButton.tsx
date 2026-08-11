@@ -1,10 +1,10 @@
-// Module ID: 12170
-// Function ID: 12171
+// Module ID: 12173
+// Function ID: 12174
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 5858, 7017, 678, 21, 589, 5861, 9567, 1236, 4715, 4299, 7704, 2]
+// Dependencies: [19, 5858, 7020, 678, 21, 589, 5861, 9572, 1236, 4715, 4299, 7706, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 12170 (UnlockWithNitroButton)
+// Module 12173 (UnlockWithNitroButton)
 import "noop";
 import updateProduct from "updateProduct";
 import map from "map";
@@ -32,7 +32,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
     }
     return isPurchasingProductResult;
   });
-  importDefault = importDefault(9567)();
+  importDefault = importDefault(9572)();
   if (text == null) {
     const intl = tmp(1236).intl;
     text = intl.string(tmp(1236).t.sEAnVH);
@@ -55,7 +55,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
     str = "sm";
   }
   obj[4] = str;
-  obj[6] = jsx(require(7704) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
+  obj[6] = jsx(require(7706) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
   obj[7] = function onPress() {
     if (closure_0 != null) {
       tmp(outer1_5.UNLOCK_WITH_NITRO);

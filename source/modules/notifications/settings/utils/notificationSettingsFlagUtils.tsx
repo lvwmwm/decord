@@ -1,10 +1,10 @@
-// Module ID: 9827
-// Function ID: 9828
+// Module ID: 9832
+// Function ID: 9833
 // Name: resetGuildUnreadFlags
-// Dependencies: [685, 1384, 2]
+// Dependencies: [685, 1403, 2]
 // Exports: resetChannelUnreadFlags, resetGuildUnreadFlags, withChannelUnreadFlags, withGuildUnreadFlags
 
-// Module 9827 (resetGuildUnreadFlags)
+// Module 9832 (resetGuildUnreadFlags)
 import MAX_FAVORITES from "MAX_FAVORITES";
 
 let c3;
@@ -13,16 +13,16 @@ let obj1;
 const result = require("set").fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsFlagUtils.tsx");
 
 export const resetGuildUnreadFlags = function resetGuildUnreadFlags(setting) {
-  return importAll(1384).removeFlags(setting, constants.UNREADS_ALL_MESSAGES, constants.UNREADS_ONLY_MENTIONS);
+  return importAll(1403).removeFlags(setting, constants.UNREADS_ALL_MESSAGES, constants.UNREADS_ONLY_MENTIONS);
 };
 export const withGuildUnreadFlags = function withGuildUnreadFlags(guildFlags, UNREADS_ONLY_MENTIONS) {
-  const obj = importAll(1384);
-  return obj.addFlag(importAll(1384).removeFlags(guildFlags, constants.UNREADS_ALL_MESSAGES, constants.UNREADS_ONLY_MENTIONS), UNREADS_ONLY_MENTIONS);
+  const obj = importAll(1403);
+  return obj.addFlag(importAll(1403).removeFlags(guildFlags, constants.UNREADS_ALL_MESSAGES, constants.UNREADS_ONLY_MENTIONS), UNREADS_ONLY_MENTIONS);
 };
 export const resetChannelUnreadFlags = function resetChannelUnreadFlags(channelIdFlags) {
-  return importAll(1384).removeFlags(channelIdFlags, constants2.UNREADS_ALL_MESSAGES, constants2.UNREADS_ONLY_MENTIONS);
+  return importAll(1403).removeFlags(channelIdFlags, constants2.UNREADS_ALL_MESSAGES, constants2.UNREADS_ONLY_MENTIONS);
 };
 export const withChannelUnreadFlags = function withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS) {
-  const obj = importAll(1384);
-  return obj.addFlag(importAll(1384).removeFlags(channelIdFlags, constants2.UNREADS_ALL_MESSAGES, constants2.UNREADS_ONLY_MENTIONS), UNREADS_ONLY_MENTIONS);
+  const obj = importAll(1403);
+  return obj.addFlag(importAll(1403).removeFlags(channelIdFlags, constants2.UNREADS_ALL_MESSAGES, constants2.UNREADS_ONLY_MENTIONS), UNREADS_ONLY_MENTIONS);
 };

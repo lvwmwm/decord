@@ -1,10 +1,10 @@
-// Module ID: 7302
-// Function ID: 7303
+// Module ID: 7303
+// Function ID: 7304
 // Name: logMessageSendFailure
 // Dependencies: [676, 4498, 2]
 // Exports: getAttachmentMimeTypes, logMessageSendFailure
 
-// Module 7302 (logMessageSendFailure)
+// Module 7303 (logMessageSendFailure)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/messages/logMessageSendFailure.tsx");

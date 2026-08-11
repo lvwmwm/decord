@@ -1,7 +1,7 @@
 // Module ID: 5128
 // Function ID: 5129
 // Name: checkIdleAFK
-// Dependencies: [1218, 676, 4364, 500, 3974, 687, 709, 3912, 5129, 636, 589, 2]
+// Dependencies: [1218, 676, 4364, 500, 3993, 687, 709, 3931, 5129, 636, 589, 2]
 
 // Module 5128 (checkIdleAFK)
 import fetchFingerprint from "fetchFingerprint";
@@ -28,7 +28,7 @@ function checkIdleAFK() {
         const obj2 = importDefault(709);
       }
     }
-    const AfkTimeout = require(3974) /* explicitContentFromProto */.AfkTimeout;
+    const AfkTimeout = require(3993) /* explicitContentFromProto */.AfkTimeout;
     const setting = AfkTimeout.getSetting();
     if (0 !== setting) {
       if (null == closure_3) {
@@ -83,7 +83,7 @@ if (require("set").isPlatformEmbedded) {
   }
   if (null != powerMonitor) {
     function checkNativeIdle() {
-      const tmp3 = importDefault(3912);
+      const tmp3 = importDefault(3931);
       let getSystemIdleTimeMs;
       if (tmp3 != null) {
         const powerMonitor = tmp3.powerMonitor;
@@ -92,7 +92,7 @@ if (require("set").isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(3912).powerMonitor;
+        const powerMonitor2 = tmp(3931).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(arg0) {

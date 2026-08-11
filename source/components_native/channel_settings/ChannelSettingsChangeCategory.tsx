@@ -1,17 +1,17 @@
-// Module ID: 15926
-// Function ID: 15927
+// Module ID: 15943
+// Function ID: 15944
 // Name: shouldComponentUpdate
-// Dependencies: [32, 853, 19, 1372, 5254, 1891, 3929, 3938, 1903, 676, 21, 4303, 712, 4013, 5255, 11785, 3934, 5232, 4642, 1236, 4494, 5374, 5767, 7967, 4712, 4299, 589, 1480, 38, 2]
+// Dependencies: [32, 853, 19, 1391, 5254, 1910, 3948, 3957, 1922, 676, 21, 4303, 712, 4031, 5255, 11788, 3953, 5232, 4642, 1236, 4494, 5374, 5767, 7969, 4712, 4299, 589, 1499, 38, 2]
 // Exports: default
 
-// Module 15926 (shouldComponentUpdate)
+// Module 15943 (shouldComponentUpdate)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import setIndex from "setIndex";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
 import jsxProd from "TableRowInner";
@@ -276,7 +276,7 @@ prototype["render"] = function render() {
   items[2] = self.renderCategories();
   obj[2] = items;
   obj[1] = closure_14(first(4712).Stack, obj);
-  return closure_13(first(7967).Form, obj);
+  return closure_13(first(7969).Form, obj);
 };
 ChannelSettingsChangeCategory.contextType = require("ManaContext").ThemeContext;
 let obj1 = { paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };
@@ -287,7 +287,7 @@ export default function ConnectedChannelSettingsChangeCategory(channelId) {
   const items = [ensureGuildLoaded];
   const channel = channelId(589).useStateFromStores(items, () => outer1_6.getChannel(channelId));
   const obj = channelId(589);
-  const navigation = channelId(1480).useNavigation();
+  const navigation = channelId(1499).useNavigation();
   importDefault(38)(null != channel, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
   return callback3(ChannelSettingsChangeCategory, { channel, navigation });
 };

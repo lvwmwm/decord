@@ -1,10 +1,10 @@
-// Module ID: 8487
-// Function ID: 8488
+// Module ID: 8493
+// Function ID: 8494
 // Name: MobilePhoneIcon
-// Dependencies: [19, 21, 712, 4004, 8488, 2]
+// Dependencies: [19, 21, 712, 4023, 8494, 2]
 // Exports: MobilePhoneIcon
 
-// Module 8487 (MobilePhoneIcon)
+// Module 8493 (MobilePhoneIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const MobilePhoneIcon = function MobilePhoneIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8488) /* registerAsset */;
+  obj[0] = require(8494) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

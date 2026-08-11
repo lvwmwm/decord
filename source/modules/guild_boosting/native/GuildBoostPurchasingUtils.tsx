@@ -1,10 +1,10 @@
-// Module ID: 6865
-// Function ID: 6866
+// Module ID: 6867
+// Function ID: 6868
 // Name: _launchGuildBoostFlowOrAlert
-// Dependencies: [5, 3953, 676, 1905, 4643, 1236, 698, 4623, 6866, 6871, 5861, 6872, 6873, 3947, 2]
+// Dependencies: [5, 3972, 676, 1924, 4643, 1236, 698, 4623, 6868, 6873, 5861, 6874, 6875, 3966, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 6865 (_launchGuildBoostFlowOrAlert)
+// Module 6867 (_launchGuildBoostFlowOrAlert)
 import getSystemLocale from "getSystemLocale";
 import reset from "reset";
 import ME from "ME";
@@ -86,7 +86,7 @@ function _launchGuildBoostFlowOrAlert() {
                 return obj1;
               } else if (c4.hasFetchedSubscriptions()) {
                 premiumTypeSubscription = c4.getPremiumTypeSubscription();
-                let obj3 = callback(6866);
+                let obj3 = callback(6868);
                 externalManagementMessage = obj3.getExternalManagementMessage(premiumTypeSubscription);
                 if (null != externalManagementMessage) {
                   (function alertUnableToManageSub(closure_7, c0) {
@@ -103,7 +103,7 @@ function _launchGuildBoostFlowOrAlert() {
                   c8 = null;
                   if (null != premiumTypeSubscription) {
                     c4 = 1;
-                    constants = callback(6871).getProductIdFromSubscription(premiumTypeSubscription, true);
+                    constants = callback(6873).getProductIdFromSubscription(premiumTypeSubscription, true);
                     const tmp65 = callback(5861).AppStorePremiumProductIdsToPremiumBundledItems[constants];
                     let interval;
                     if (tmp65 != null) {
@@ -115,7 +115,7 @@ function _launchGuildBoostFlowOrAlert() {
                     }
                     c8 = c1;
                     c4 = 0;
-                    const obj11 = callback(6871);
+                    const obj11 = callback(6873);
                   }
                 }
                 premiumTypeSubscription = 3;
@@ -141,11 +141,11 @@ function _launchGuildBoostFlowOrAlert() {
               c4 = 0;
               c8 = null;
             }
-            mobileBoostingEnabled = callback(6872).getMobileBoostingEnabled("GuildBoostPurchasing");
+            mobileBoostingEnabled = callback(6874).getMobileBoostingEnabled("GuildBoostPurchasing");
             if (mobileBoostingEnabled) {
               mobileBoostingEnabled = c8 === constants.YEAR;
             }
-            const obj5 = callback(6872);
+            const obj5 = callback(6874);
             obj3 = { showCurrentPlan: false, isBoostPurchaseFlow: true, allowYearlyBundles: null, predicate: null, analyticsLocation: null, analyticsLocations: null, guildId: null, onBack: null, onPaymentSuccess: null, onPaymentDismiss: null };
             obj3[2] = mobileBoostingEnabled;
             obj3[3] = function predicate(interval) {
@@ -180,8 +180,8 @@ function _launchGuildBoostFlowOrAlert() {
             obj3[7] = c3;
             obj3[8] = c4;
             obj3[9] = c5;
-            const result = callback(6873).launchPremiumPlanSelect(obj3);
-            const obj6 = callback(6873);
+            const result = callback(6875).launchPremiumPlanSelect(obj3);
+            const obj6 = callback(6875);
           }
         } catch (tmp45) {
           if (tmp3 === c4) {

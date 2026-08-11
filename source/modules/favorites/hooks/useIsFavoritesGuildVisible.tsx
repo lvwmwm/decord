@@ -1,10 +1,10 @@
-// Module ID: 15477
-// Function ID: 15478
+// Module ID: 15494
+// Function ID: 15495
 // Name: useIsFavoritesGuildVisible
-// Dependencies: [4124, 1375, 1894, 9718, 9711, 9720, 589, 2]
+// Dependencies: [4126, 1394, 1913, 9723, 9716, 9725, 589, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 15477 (useIsFavoritesGuildVisible)
+// Module 15494 (useIsFavoritesGuildVisible)
 import handleConnectionOpen from "handleConnectionOpen";
 import initializeFromUserSettings from "initializeFromUserSettings";
 
@@ -49,21 +49,21 @@ export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
   let hasAccess;
   let isExperimentEnabled;
   let isFreemium;
-  const favoritesAccess = require(9711) /* useFavoritesAccess */.getFavoritesAccess();
+  const favoritesAccess = require(9716) /* useFavoritesAccess */.getFavoritesAccess();
   ({ isExperimentEnabled, isFreemium, hasAccess } = favoritesAccess);
-  const obj = require(9711) /* useFavoritesAccess */;
+  const obj = require(9716) /* useFavoritesAccess */;
   const obj2 = handleConnectionOpen;
   const tmp4 = initializeFromUserSettings;
   let tmp5 = isExperimentEnabled;
   if (tmp5) {
     let result = obj3.isFavoritesIntroPopoverShown();
     if (!result) {
-      let tmpResult = tmp(1894);
+      let tmpResult = tmp(1913);
       let isFavoritesGuildIdResult = tmpResult.isFavoritesGuildId(obj2.getGuildId());
       if (!isFavoritesGuildIdResult) {
         let isFavoritesGuildEnabled = hasAccess;
         if (isFavoritesGuildEnabled) {
-          tmpResult = tmp(9718);
+          tmpResult = tmp(9723);
           isFavoritesGuildEnabled = tmpResult.computeIsFavoritesGuildEnabled(isFreemium, tmp4);
         }
         isFavoritesGuildIdResult = isFavoritesGuildEnabled;

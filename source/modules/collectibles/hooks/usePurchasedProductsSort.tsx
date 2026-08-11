@@ -1,10 +1,10 @@
-// Module ID: 14321
-// Function ID: 14322
+// Module ID: 14329
+// Function ID: 14330
 // Name: usePurchasedProductsSort
-// Dependencies: [19, 7017, 1930, 7012, 647, 2]
+// Dependencies: [19, 7020, 1949, 7015, 647, 2]
 // Exports: usePurchasedProductsSort
 
-// Module 14321 (usePurchasedProductsSort)
+// Module 14329 (usePurchasedProductsSort)
 import { useMemo } from "noop";
 import map from "map";
 

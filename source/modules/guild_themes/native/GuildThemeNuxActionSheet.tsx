@@ -1,10 +1,10 @@
-// Module ID: 15290
-// Function ID: 15291
+// Module ID: 15301
+// Function ID: 15302
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 4124, 4189, 1369, 21, 3, 4303, 712, 15291, 4235, 589, 4271, 1236, 5397, 15292, 4299, 7985, 7984, 1297, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 4126, 4189, 1388, 21, 3, 4303, 712, 15302, 4235, 589, 4271, 1236, 5397, 15303, 4299, 7987, 7986, 1297, 4714, 2]
 // Exports: default
 
-// Module 15290 (GuildThemeNuxActionSheet)
+// Module 15301 (GuildThemeNuxActionSheet)
 import snapshotSelectedGuildId from "snapshotSelectedGuildId";
 import _slicedToArray from "_slicedToArray";
 import context from "context";
@@ -54,8 +54,8 @@ export default function GuildThemeNuxActionSheet(guildId) {
   let stateFromStores;
   let callback1;
   const tmp = createCacheKey();
-  [tmp5, c2] = callback2(React.useState(guildId(15291).getInitialGuildThemeNuxSelection), 2);
-  const tmp4 = callback2(React.useState(guildId(15291).getInitialGuildThemeNuxSelection), 2);
+  [tmp5, c2] = callback2(React.useState(guildId(15302).getInitialGuildThemeNuxSelection), 2);
+  const tmp4 = callback2(React.useState(guildId(15302).getInitialGuildThemeNuxSelection), 2);
   [tmp7, c3] = callback2(React.useState(null), 2);
   const tmp6 = callback2(React.useState(null), 2);
   [tmp9, c4] = callback2(React.useState(false), 2);
@@ -199,7 +199,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   obj[1] = intl2.string(guildId(1236).t.cpT0Cq);
   obj[2] = callback3;
   obj[3] = tmp.container;
-  const items7 = [callback3(markAsDismissed(15292), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  const items7 = [callback3(markAsDismissed(15303), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   obj = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   const intl3 = tmp2(1236).intl;
   obj[4] = intl3.string(guildId(1236).t.Q9zFy9);
@@ -214,14 +214,14 @@ export default function GuildThemeNuxActionSheet(guildId) {
   const intl5 = tmp2(1236).intl;
   obj4[0] = intl5.string(guildId(1236).t.aN3RNQ);
   obj4[1] = guildId(4235).GuildThemeSourcePreference.GUILD;
-  const items8 = [callback3(guildId(7984).TableRadioRow, obj4), ];
+  const items8 = [callback3(guildId(7986).TableRadioRow, obj4), ];
   const obj5 = { label: null, value: null };
   const intl6 = tmp2(1236).intl;
   obj5[0] = intl6.string(guildId(1236).t.js8y7t);
   obj5[1] = guildId(4235).GuildThemeSourcePreference.PERSONAL;
-  items8[1] = callback3(guildId(7984).TableRadioRow, obj5);
+  items8[1] = callback3(guildId(7986).TableRadioRow, obj5);
   obj3[3] = items8;
-  obj2[1] = callback4(guildId(7985).TableRadioGroup, obj3);
+  obj2[1] = callback4(guildId(7987).TableRadioGroup, obj3);
   items7[3] = callback3(c6, obj2);
   let tmp20Result = null;
   if (tmp10) {

@@ -1,8 +1,8 @@
-// Module ID: 14015
-// Function ID: 14016
-// Dependencies: [8082, 4519, 3980, 10447, 1236, 2]
+// Module ID: 14023
+// Function ID: 14024
+// Dependencies: [8084, 4519, 3999, 10452, 1236, 2]
 
-// Module 14015
+// Module 14023
 import createToggle from "createToggle";
 
 let obj = {
@@ -20,8 +20,8 @@ let obj = {
     const obj = require(4519) /* useAgeVerificationRunner */;
     const isVerifiedTeen = require(4519) /* useAgeVerificationRunner */.useIsVerifiedTeen();
     const obj2 = require(4519) /* useAgeVerificationRunner */;
-    const obj3 = require(3980) /* isFeatureAgeGated */;
-    return require(3980) /* isFeatureAgeGated */.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
+    const obj3 = require(3999) /* isFeatureAgeGated */;
+    return require(3999) /* isFeatureAgeGated */.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
   }
 };
 const createStaticResult = createToggle.createStatic({
@@ -39,8 +39,8 @@ const createStaticResult = createToggle.createStatic({
     const obj = require(4519) /* useAgeVerificationRunner */;
     const isVerifiedTeen = require(4519) /* useAgeVerificationRunner */.useIsVerifiedTeen();
     const obj2 = require(4519) /* useAgeVerificationRunner */;
-    const obj3 = require(3980) /* isFeatureAgeGated */;
-    return require(3980) /* isFeatureAgeGated */.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
+    const obj3 = require(3999) /* isFeatureAgeGated */;
+    return require(3999) /* isFeatureAgeGated */.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
   }
 });
 const result = require("isFeatureAgeGated").fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupAdultSetting.tsx");

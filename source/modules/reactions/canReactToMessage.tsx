@@ -1,10 +1,10 @@
-// Module ID: 8078
-// Function ID: 8079
+// Module ID: 8080
+// Function ID: 8081
 // Name: canReactToMessageInternal
-// Dependencies: [1971, 5131, 3929, 1903, 676, 1384, 3918, 589, 2]
+// Dependencies: [1990, 5131, 3948, 1922, 676, 1403, 3937, 589, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 8078 (canReactToMessageInternal)
+// Module 8080 (canReactToMessageInternal)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import recomputeGuild from "recomputeGuild";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -52,12 +52,12 @@ function canReactToMessageInternal(state, getGuildId, items) {
     canResult = state.type !== constants3.THREAD_STARTER_MESSAGE;
   }
   if (canResult) {
-    canResult = !require(1384) /* hasFlag */.hasFlag(state.flags, constants4.EPHEMERAL);
-    const obj5 = require(1384) /* hasFlag */;
+    canResult = !require(1403) /* hasFlag */.hasFlag(state.flags, constants4.EPHEMERAL);
+    const obj5 = require(1403) /* hasFlag */;
   }
   if (canResult) {
-    canResult = !require(3918) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member);
-    const obj6 = require(3918) /* isCommunicationDisabled */;
+    canResult = !require(3937) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member);
+    const obj6 = require(3937) /* isCommunicationDisabled */;
   }
   return canResult;
 }

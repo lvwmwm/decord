@@ -1,0 +1,41 @@
+// Module ID: 10971
+// Function ID: 10972
+// Name: NativeRouter
+// Dependencies: [19, 17, 21, 4137, 4134]
+
+// Module 10971 (NativeRouter)
+import "noop";
+import { Alert } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+class NativeRouter {
+  constructor(arg0) {
+    obj = {};
+    merged = Object.assign(global);
+    return jsx(require("_extends").MemoryRouter, obj);
+  }
+}
+NativeRouter.defaultProps = {
+  getUserConfirmation(arg0, arg1) {
+    let closure_0 = arg1;
+    const items = [
+      {
+        text: "Cancel",
+        onPress() {
+          return callback(false);
+        }
+      },
+      {
+        text: "OK",
+        onPress() {
+          return callback(true);
+        }
+      }
+    ];
+    Alert.alert("Confirm", arg0, items);
+  }
+};
+NativeRouter.propTypes = { initialEntries: require("emptyFunction").array, initialIndex: require("emptyFunction").number, getUserConfirmation: require("emptyFunction").func, keyLength: require("emptyFunction").number, children: require("emptyFunction").node };
+
+export default NativeRouter;

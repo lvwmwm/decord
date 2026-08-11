@@ -1,9 +1,9 @@
-// Module ID: 1941
-// Function ID: 1942
+// Module ID: 1960
+// Function ID: 1961
 // Name: fromDatabaseTransaction
-// Dependencies: [5, 1942, 1943, 2]
+// Dependencies: [5, 1961, 1962, 2]
 
-// Module 1941 (fromDatabaseTransaction)
+// Module 1960 (fromDatabaseTransaction)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -138,7 +138,7 @@ TableTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(p
 prototype["put"] = function put(key) {
   let Replace = arg1;
   if (arg1 === undefined) {
-    Replace = require(1943) /* TableId */.ConflictOptions.Replace;
+    Replace = require(1962) /* TableId */.ConflictOptions.Replace;
   }
   const transaction = this.transaction;
   let obj = { type: "kv.put_one", table: this.tableId, cell: null, overwrite: null };
@@ -146,19 +146,19 @@ prototype["put"] = function put(key) {
   let tmp3 = key;
   if (0 !== prefix.length) {
     obj = { key: null, data: null, generation: null };
-    obj[0] = require(1942) /* combineKey */.combineKey(prefix, key.key);
+    obj[0] = require(1961) /* combineKey */.combineKey(prefix, key.key);
     ({ data: obj2[1], generation: obj2[2] } = key);
     tmp3 = obj;
-    const obj3 = require(1942) /* combineKey */;
+    const obj3 = require(1961) /* combineKey */;
   }
   obj[2] = tmp3;
-  obj[3] = Replace === require(1943) /* TableId */.ConflictOptions.Replace;
+  obj[3] = Replace === require(1962) /* TableId */.ConflictOptions.Replace;
   transaction.add(obj);
 };
 prototype["putAll"] = function putAll(arr) {
   let Replace = arg1;
   if (arg1 === undefined) {
-    Replace = prefix(1943).ConflictOptions.Replace;
+    Replace = prefix(1962).ConflictOptions.Replace;
   }
   const transaction = this.transaction;
   const obj = { type: "kv.put_many", table: this.tableId, cells: null, overwrite: null };
@@ -178,7 +178,7 @@ prototype["putAll"] = function putAll(arr) {
     });
   }
   obj[2] = mapped;
-  obj[3] = Replace === prefix(1943).ConflictOptions.Replace;
+  obj[3] = Replace === prefix(1962).ConflictOptions.Replace;
   transaction.add(obj);
 };
 prototype["delete"] = function delete(items) {
@@ -187,15 +187,15 @@ prototype["delete"] = function delete(items) {
   }
   const transaction = this.transaction;
   const obj = { type: "kv.delete_many", table: this.tableId, key: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   transaction.add(obj);
 };
 prototype["deleteRange"] = function deleteRange(key, key) {
-  let obj = require(1942) /* combineKey */;
+  let obj = require(1961) /* combineKey */;
   const combineKeyResult = obj.combineKey(this.prefix, key);
   const transaction = this.transaction;
   obj = { type: "kv.delete_range", table: this.tableId, range: null };
-  const items = [combineKeyResult, require(1942) /* combineKey */.combineKey(this.prefix, key)];
+  const items = [combineKeyResult, require(1961) /* combineKey */.combineKey(this.prefix, key)];
   obj[2] = items;
   transaction.add(obj);
 };
@@ -205,7 +205,7 @@ prototype["deleteAllExcept"] = function deleteAllExcept(items) {
   }
   const transaction = this.transaction;
   const obj = { type: "kv.delete_all_except", table: this.tableId, key: null, retain: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   obj[3] = arg1;
   transaction.add(obj);
 };
@@ -215,7 +215,7 @@ prototype["deleteGeneration"] = function deleteGeneration(items) {
   }
   const transaction = this.transaction;
   const obj = { type: "kv.delete_generation", table: this.tableId, key: null, generation: null, comparer: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   obj[3] = arg2;
   obj[4] = arg1;
   transaction.add(obj);
@@ -264,7 +264,7 @@ prototype2["getMany"] = function getMany(items, ordering) {
   }
   const database = this.database;
   const obj = { type: "kv.get_many", table: this.tableId, key: null, ordering: null, limit: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   ordering = undefined;
   if (ordering != null) {
     ordering = ordering.ordering;
@@ -278,11 +278,11 @@ prototype2["getMany"] = function getMany(items, ordering) {
   return database.execute(obj, this.defaultDebugTag);
 };
 prototype2["getRange"] = function getRange(key, key, ordering) {
-  let obj = require(1942) /* combineKey */;
+  let obj = require(1961) /* combineKey */;
   const combineKeyResult = obj.combineKey(this.prefix, key);
   const database = this.database;
   obj = { type: "kv.get_range", table: this.tableId, range: null, ordering: null, limit: null };
-  const items = [combineKeyResult, require(1942) /* combineKey */.combineKey(this.prefix, key)];
+  const items = [combineKeyResult, require(1961) /* combineKey */.combineKey(this.prefix, key)];
   obj[2] = items;
   ordering = undefined;
   if (ordering != null) {
@@ -302,7 +302,7 @@ prototype2["getKvEntries"] = function getKvEntries(items) {
   }
   const database = this.database;
   const obj = { type: "kv.get_kv_entries", table: this.tableId, key: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   return database.execute(obj, this.defaultDebugTag);
 };
 prototype2["getMapEntries"] = function getMapEntries(items) {
@@ -311,7 +311,7 @@ prototype2["getMapEntries"] = function getMapEntries(items) {
   }
   const database = this.database;
   const obj = { type: "kv.get_map_entries", table: this.tableId, key: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   return database.execute(obj, this.defaultDebugTag);
 };
 prototype2["getChildIds"] = function getChildIds(items) {
@@ -320,7 +320,7 @@ prototype2["getChildIds"] = function getChildIds(items) {
   }
   const database = this.database;
   const obj = { type: "kv.get_child_ids", table: this.tableId, key: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   return database.execute(obj, this.defaultDebugTag);
 };
 prototype2["getParentId"] = function getParentId(key) {
@@ -330,13 +330,13 @@ prototype2["getParentId"] = function getParentId(key) {
   }
   const database = this.database;
   const obj = { type: "kv.get_parent_id", table: this.tableId, key: null };
-  obj[2] = require(1942) /* combineKey */.combineKey(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKey(this.prefix, items);
   return database.execute(obj, this.defaultDebugTag);
 };
 prototype2["put"] = function put(key) {
   let Replace = arg1;
   if (arg1 === undefined) {
-    Replace = require(1943) /* TableId */.ConflictOptions.Replace;
+    Replace = require(1962) /* TableId */.ConflictOptions.Replace;
   }
   const database = this.database;
   let obj = { type: "kv.put_one", table: this.tableId, cell: null, overwrite: null };
@@ -344,19 +344,19 @@ prototype2["put"] = function put(key) {
   let tmp3 = key;
   if (0 !== prefix.length) {
     obj = { key: null, data: null, generation: null };
-    obj[0] = require(1942) /* combineKey */.combineKey(prefix, key.key);
+    obj[0] = require(1961) /* combineKey */.combineKey(prefix, key.key);
     ({ data: obj2[1], generation: obj2[2] } = key);
     tmp3 = obj;
-    const obj3 = require(1942) /* combineKey */;
+    const obj3 = require(1961) /* combineKey */;
   }
   obj[2] = tmp3;
-  obj[3] = Replace === require(1943) /* TableId */.ConflictOptions.Replace;
+  obj[3] = Replace === require(1962) /* TableId */.ConflictOptions.Replace;
   return database.execute(obj, this.defaultDebugTag);
 };
 prototype2["putAll"] = function putAll(arr) {
   let Replace = arg1;
   if (arg1 === undefined) {
-    Replace = prefix(1943).ConflictOptions.Replace;
+    Replace = prefix(1962).ConflictOptions.Replace;
   }
   const database = this.database;
   let obj = { type: "kv.put_many", table: this.tableId, cells: null, overwrite: null };
@@ -376,7 +376,7 @@ prototype2["putAll"] = function putAll(arr) {
     });
   }
   obj[2] = mapped;
-  obj[3] = Replace === prefix(1943).ConflictOptions.Replace;
+  obj[3] = Replace === prefix(1962).ConflictOptions.Replace;
   return database.execute(obj, this.defaultDebugTag);
 };
 prototype2["replaceAll"] = function replaceAll(arg0) {
@@ -392,15 +392,15 @@ prototype2["delete"] = function delete(items) {
   }
   const database = this.database;
   const obj = { type: "kv.delete_many", table: this.tableId, key: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   return database.execute(obj, this.defaultDebugTag);
 };
 prototype2["deleteRange"] = function deleteRange(key, key) {
-  let obj = require(1942) /* combineKey */;
+  let obj = require(1961) /* combineKey */;
   const combineKeyResult = obj.combineKey(this.prefix, key);
   const database = this.database;
   obj = { type: "kv.delete_range", table: this.tableId, range: null };
-  const items = [combineKeyResult, require(1942) /* combineKey */.combineKey(this.prefix, key)];
+  const items = [combineKeyResult, require(1961) /* combineKey */.combineKey(this.prefix, key)];
   obj[2] = items;
   return database.execute(obj, this.defaultDebugTag);
 };
@@ -410,7 +410,7 @@ prototype2["deleteGeneration"] = function deleteGeneration(items) {
   }
   const database = this.database;
   const obj = { type: "kv.delete_generation", table: this.tableId, key: null, generation: null, comparer: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   obj[3] = arg2;
   obj[4] = arg1;
   return database.execute(obj, this.defaultDebugTag);
@@ -558,7 +558,7 @@ prototype2["getManySyncUnsafe"] = function getManySyncUnsafe(items, ordering) {
   }
   const database = this.database;
   const obj = { type: "kv.get_many", table: this.tableId, key: null, ordering: null, limit: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   ordering = undefined;
   if (ordering != null) {
     ordering = ordering.ordering;
@@ -577,7 +577,7 @@ prototype2["getMapEntriesSyncUnsafe"] = function getMapEntriesSyncUnsafe(items) 
   }
   const database = this.database;
   const obj = { type: "kv.get_map_entries", table: this.tableId, key: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   return database.executeSync(obj);
 };
 prototype2["deleteSyncUnsafe"] = function deleteSyncUnsafe(items) {
@@ -586,7 +586,7 @@ prototype2["deleteSyncUnsafe"] = function deleteSyncUnsafe(items) {
   }
   const database = this.database;
   const obj = { type: "kv.delete_many", table: this.tableId, key: null };
-  obj[2] = require(1942) /* combineKey */.combineKeyPrefix(this.prefix, items);
+  obj[2] = require(1961) /* combineKey */.combineKeyPrefix(this.prefix, items);
   database.executeSync(obj);
 };
 

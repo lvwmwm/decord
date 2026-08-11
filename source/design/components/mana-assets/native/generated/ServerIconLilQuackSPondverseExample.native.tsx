@@ -1,10 +1,10 @@
-// Module ID: 6706
-// Function ID: 6707
+// Module ID: 6708
+// Function ID: 6709
 // Name: ServerIconLilQuackSPondverseExample
-// Dependencies: [21, 5268, 6707, 2]
+// Dependencies: [21, 5268, 6709, 2]
 // Exports: ServerIconLilQuackSPondverseExample
 
-// Module 6706 (ServerIconLilQuackSPondverseExample)
+// Module 6708 (ServerIconLilQuackSPondverseExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconLilQuackSPondverseExample.native.tsx");
@@ -28,7 +28,7 @@ export const ServerIconLilQuackSPondverseExample = function ServerIconLilQuackSP
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6707);
+  obj[0] = importDefault(6709);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

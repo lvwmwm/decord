@@ -1,9 +1,9 @@
-// Module ID: 1372
-// Function ID: 1373
+// Module ID: 1391
+// Function ID: 1392
 // Name: ensureGuildLoaded
-// Dependencies: [32, 5, 1373, 1375, 1376, 1218, 1891, 1903, 676, 3, 1351, 1936, 1955, 1956, 709, 1957, 10, 11, 1958, 12, 589, 2]
+// Dependencies: [32, 5, 1392, 1394, 1395, 1218, 1910, 1922, 676, 3, 1370, 1955, 1974, 1975, 709, 1976, 10, 11, 1977, 12, 589, 2]
 
-// Module 1372 (ensureGuildLoaded)
+// Module 1391 (ensureGuildLoaded)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import hasChannel from "hasChannel";
@@ -31,13 +31,13 @@ function ensureGuildLoaded(guild_id, Basic, getBasicChannel) {
     if ("null" !== guild_id) {
       if (!set.has(guild_id)) {
         if (Basic !== closure_35.Basic) {
-          const databaseResult = importDefault(1936).database();
+          const databaseResult = importDefault(1955).database();
           importDefault = databaseResult;
           if (null != databaseResult) {
             const _HermesInternal4 = HermesInternal;
             tmp3.verbose("hydrating guild (guild: " + guild_id + ", trace: " + getBasicChannel + ")");
             const _HermesInternal5 = HermesInternal;
-            const result = _require(1955).tryLoadOrResetCacheGateway("ensureGuildLoaded(" + guild_id + ")", () => databaseResult(outer1_2[13]).getSync(closure_1, closure_0), "ensureGuildLoaded");
+            const result = _require(1974).tryLoadOrResetCacheGateway("ensureGuildLoaded(" + guild_id + ")", () => databaseResult(outer1_2[13]).getSync(closure_1, closure_0), "ensureGuildLoaded");
             if (null == result) {
               set.add(guild_id);
               store.restored(guild_id);
@@ -45,7 +45,7 @@ function ensureGuildLoaded(guild_id, Basic, getBasicChannel) {
               obj3.log("load returned null; early returning (guild: " + guild_id + ", database: " + databaseResult + ")");
             } else {
               [arr, tmp41] = callback(result, 2);
-              tmp4(1957)(arr);
+              tmp4(1976)(arr);
               if (Basic !== tmp2.Basic) {
                 closure_34 = closure_34 + 1;
               }
@@ -71,9 +71,9 @@ function ensureGuildLoaded(guild_id, Basic, getBasicChannel) {
               const tmp4Result = tmp4(10);
             }
             obj3 = tmp3;
-            const obj4 = _require(1955);
+            const obj4 = _require(1974);
           }
-          const obj = importDefault(1936);
+          const obj = importDefault(1955);
         }
       }
     }
@@ -593,17 +593,17 @@ prototype["loadGuildFromChannelId"] = function loadGuildFromChannelId(channel_id
   return guildIds;
 };
 prototype["loadGuildIds"] = function loadGuildIds(items) {
-  found = items.filter(found(1351).isNotNullish);
+  found = items.filter(found(1370).isNotNullish);
   if (0 === found.length) {
     return null;
   } else {
-    const databaseResult = importDefault(1936).database();
+    const databaseResult = importDefault(1955).database();
     importDefault = databaseResult;
     if (null == databaseResult) {
       return null;
     } else if (found.some((arg0) => !set.has(arg0))) {
       const dependencyMap = c31;
-      return tmp(1955).tryLoadOrResetCacheGatewayAsync("loadChannels", callback2(function*() {
+      return tmp(1974).tryLoadOrResetCacheGatewayAsync("loadChannels", callback2(function*() {
         if (c7 === 2) {
           c7 = 3;
           HermesBuiltin.throwTypeError();
@@ -783,7 +783,7 @@ prototype["loadGuildIds"] = function loadGuildIds(items) {
     } else {
       return null;
     }
-    let obj = importDefault(1936);
+    let obj = importDefault(1955);
   }
   tmp = found;
 };
@@ -1087,7 +1087,7 @@ const channelStore = new ChannelStore(require("dispatcher"), {
         let tmp4 = setChannel;
         let tmp5 = require;
         let tmp6 = dependencyMap;
-        let obj = require(1957) /* deserializeChannels */;
+        let obj = require(1976) /* deserializeChannels */;
         let tmp7 = callback5;
         let tmp8 = setChannel(obj.deserializeChannel(callback5(item10021)));
         continue;
@@ -1258,7 +1258,7 @@ const channelStore = new ChannelStore(require("dispatcher"), {
       let fileOnlyResult = tmp3.fileOnly("Lazy loaded guild channels for " + guildId);
       let tmp4 = importDefault;
       let tmp5 = dependencyMap;
-      let tmp6 = importDefault(1957)(channels);
+      let tmp6 = importDefault(1976)(channels);
       let tmp7 = set;
       let addResult = set.add(guildId);
       let tmp9 = store;
@@ -1303,7 +1303,7 @@ const channelStore = new ChannelStore(require("dispatcher"), {
       let tmp3 = setChannel;
       let tmp4 = require;
       let tmp5 = dependencyMap;
-      let obj = require(1957) /* deserializeChannels */;
+      let obj = require(1976) /* deserializeChannels */;
       let tmp6 = callback5;
       let tmp7 = setChannel(obj.deserializeChannel(callback5(tmp2)));
       continue;

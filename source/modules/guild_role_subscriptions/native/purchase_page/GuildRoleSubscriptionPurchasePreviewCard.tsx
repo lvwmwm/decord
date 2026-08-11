@@ -1,10 +1,10 @@
-// Module ID: 15660
-// Function ID: 15661
+// Module ID: 15677
+// Function ID: 15678
 // Name: ContentHeader
-// Dependencies: [32, 19, 17, 1372, 21, 4303, 712, 4299, 4271, 15661, 1988, 8754, 14476, 1297, 589, 4494, 1236, 4764, 14463, 15656, 5268, 15662, 2]
+// Dependencies: [32, 19, 17, 1391, 21, 4303, 712, 4299, 4271, 15678, 2007, 8760, 14484, 1297, 589, 4494, 1236, 4764, 14471, 15673, 5268, 15679, 2]
 // Exports: default
 
-// Module 15660 (ContentHeader)
+// Module 15677 (ContentHeader)
 import _slicedToArray from "_slicedToArray";
 import "TruncatedText";
 import get_ActivityIndicator from "getChannelIcon";
@@ -53,7 +53,7 @@ function EmojiGallery(arg0) {
     tmp3Result = tmp3(tmp4, obj, "andMore");
   }
   items[tmp7] = tmp3Result;
-  obj[1] = closure_8(require(8754) /* GappedList */.GappedList, { gap: 18, children: items });
+  obj[1] = closure_8(require(8760) /* GappedList */.GappedList, { gap: 18, children: items });
   return closure_8(closure_6, obj);
 }
 function BenefitShowCase(arg0) {
@@ -143,16 +143,16 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   listingId = listingId.listingId;
   const guildId = listingId.guildId;
   const tmp = createCacheKey();
-  let obj = importAll(14463);
+  let obj = importAll(14471);
   let str = callback(obj.useImage(listingId), 1)[0];
-  let obj1 = importAll(14463);
-  let obj2 = importAll(14463);
+  let obj1 = importAll(14471);
+  let obj2 = importAll(14471);
   const first = callback(obj2.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj3 = importAll(14463);
+  let obj3 = importAll(14471);
   const first1 = callback(obj3.useChannelBenefits(listingId), 1)[0];
-  let obj4 = importAll(14463);
+  let obj4 = importAll(14471);
   const first2 = callback(obj4.useIntangibleBenefits(listingId), 1)[0];
-  let obj5 = listingId(15656);
+  let obj5 = listingId(15673);
   const first3 = first1[0];
   const first4 = first2[0];
   const size = first.size;
@@ -169,7 +169,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   obj2[0] = items1;
   items[2] = closure_9(closure_6, obj2);
   obj[1] = items;
-  const items2 = [closure_9(closure_6, obj), closure_8(listingId(1297).Spacer, { size: 16 }), closure_8(guildId(15662), { listingId }), ];
+  const items2 = [closure_9(closure_6, obj), closure_8(listingId(1297).Spacer, { size: 16 }), closure_8(guildId(15679), { listingId }), ];
   let tmp8Result2 = length > 0 || size > 0 || length2 > 0;
   if (tmp8Result2) {
     const items3 = [tmp10(tmp4(1297).Spacer, { size: 24 }), , ];
@@ -236,7 +236,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
     const obj16 = { children: null };
     items6[2] = tmp8Result1;
     obj4[1] = items6;
-    obj3[1] = tmp8(tmp4(8754).GappedList, obj4);
+    obj3[1] = tmp8(tmp4(8760).GappedList, obj4);
     items3[1] = tmp10(tmp9, obj3);
     const obj17 = { onPress: null };
     obj17[0] = function onPress() {

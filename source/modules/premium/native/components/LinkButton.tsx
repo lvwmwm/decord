@@ -1,10 +1,10 @@
-// Module ID: 6870
-// Function ID: 6871
+// Module ID: 6872
+// Function ID: 6873
 // Name: LinkButton
 // Dependencies: [19, 21, 4303, 4846, 4299, 2]
 // Exports: LinkButton
 
-// Module 6870 (LinkButton)
+// Module 6872 (LinkButton)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

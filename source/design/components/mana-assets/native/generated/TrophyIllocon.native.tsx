@@ -1,10 +1,10 @@
-// Module ID: 6826
-// Function ID: 6827
+// Module ID: 6828
+// Function ID: 6829
 // Name: TrophyIllocon
-// Dependencies: [21, 5268, 6827, 2]
+// Dependencies: [21, 5268, 6829, 2]
 // Exports: TrophyIllocon
 
-// Module 6826 (TrophyIllocon)
+// Module 6828 (TrophyIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TrophyIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const TrophyIllocon = function TrophyIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6827);
+  obj[0] = importDefault(6829);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

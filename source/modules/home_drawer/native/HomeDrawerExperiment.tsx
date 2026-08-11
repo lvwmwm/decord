@@ -1,7 +1,7 @@
 // Module ID: 4164
 // Function ID: 4165
 // Name: MobileHomeDrawerExperiment
-// Dependencies: [1349, 2]
+// Dependencies: [1368, 2]
 
 // Module 4164 (MobileHomeDrawerExperiment)
 const obj = { 1: null, 2: { enableHome: true, landOnHome: false, enablePeekHint: true } };

@@ -1,14 +1,14 @@
-// Module ID: 12091
-// Function ID: 12092
+// Module ID: 12094
+// Function ID: 12095
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 12074, 676, 21, 4303, 712, 1480, 5369, 12087, 4202, 12082, 1297, 1236, 4299, 8465, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 12077, 676, 21, 4303, 712, 1499, 5369, 12090, 4202, 12085, 1297, 1236, 4299, 8471, 4714, 2]
 // Exports: default
 
-// Module 12091 (HubEmailConnectionSubmitSchool)
+// Module 12094 (HubEmailConnectionSubmitSchool)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
-import get_ActivityIndicator from "module_8465";
+import get_ActivityIndicator from "module_8471";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -140,7 +140,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
     return applyArgumentsResult;
   }
   let tmp = createCacheKey();
-  let obj = require(1480) /* useNavigation */;
+  let obj = require(1499) /* useNavigation */;
   dependencyMap = obj.useNavigation();
   const tmp4 = callback(ref.useState(false), 2);
   ME = tmp4[1];
@@ -196,7 +196,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       }
     }, 100);
   };
-  items1[2] = callback2(importDefault(8465), obj4);
+  items1[2] = callback2(importDefault(8471), obj4);
   obj1[1] = items1;
   const items2 = [closure_10(first, obj1), callback2(first, { style: tmp.redesignGrowSpacing }), ];
   const obj7 = { style: tmp.redesignSubmit, children: null };
@@ -217,5 +217,5 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   items2[2] = callback2(first, obj7);
   obj[2] = items2;
   obj5[0] = closure_10(tmp11, obj);
-  return callback2(require(12082) /* HubEmailConnectionModal */.HubEmailConnectionScreen, obj5);
+  return callback2(require(12085) /* HubEmailConnectionModal */.HubEmailConnectionScreen, obj5);
 };

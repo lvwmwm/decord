@@ -1,10 +1,10 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9679
+// Function ID: 9680
 // Name: ChatGDMCustomizeActionSheet
-// Dependencies: [19, 21, 9675, 9677, 1236, 9679, 2]
+// Dependencies: [19, 21, 9680, 9682, 1236, 9684, 2]
 // Exports: default
 
-// Module 9674 (ChatGDMCustomizeActionSheet)
+// Module 9679 (ChatGDMCustomizeActionSheet)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -17,13 +17,13 @@ export default function ChatGDMCustomizeActionSheet(channelId) {
   channelId = channelId.channelId;
   let importDefault;
   let dependencyMap;
-  ({ onGoBack: c1, ref: c2 } = importDefault(9675)());
+  ({ onGoBack: c1, ref: c2 } = importDefault(9680)());
   const obj = { screenKey: "kick", title: null, render: null };
-  const tmp = importDefault(9675)();
+  const tmp = importDefault(9680)();
   const intl = channelId(1236).intl;
   obj[1] = intl.string(channelId(1236).t["1r5E+m"]);
   obj[2] = function render() {
     return outer1_3(_undefined(_undefined2[5]), { ref: _undefined2, onFinish: _undefined, channelId });
   };
-  return jsx(importDefault(9677), { screenKey: "kick", title: null, render: null });
+  return jsx(importDefault(9682), { screenKey: "kick", title: null, render: null });
 };

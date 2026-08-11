@@ -1,10 +1,10 @@
-// Module ID: 14405
-// Function ID: 14406
+// Module ID: 14413
+// Function ID: 14414
 // Name: PremiumRewardFillGradient
-// Dependencies: [19, 17, 21, 4303, 4151, 712, 4005, 4239, 4122, 4725, 5310, 2]
+// Dependencies: [19, 17, 21, 4303, 4152, 712, 4024, 4239, 1350, 4725, 5310, 2]
 // Exports: default
 
-// Module 14405 (PremiumRewardFillGradient)
+// Module 14413 (PremiumRewardFillGradient)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -76,16 +76,16 @@ function PremiumRewardGlowGradient(arg0) {
   const tmp = callback3();
   let token;
   let token1;
-  let obj = token(4005);
+  let obj = token(4024);
   token = obj.useToken(token1(712).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
-  let obj1 = token(4005);
+  let obj1 = token(4024);
   token1 = obj1.useToken(token1(712).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
   let items = [token, token1];
   const memo = React.useMemo(() => {
     const items = [token, token1];
     return items;
   }, items);
-  let obj2 = token(4122);
+  let obj2 = token(1350);
   const isThemeDarkResult = obj2.isThemeDark(token1(4239)());
   obj = { style: items1, children: null };
   items1 = [tmp.wrapper, style];

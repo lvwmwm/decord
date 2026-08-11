@@ -1,9 +1,9 @@
-// Module ID: 8034
-// Function ID: 8035
+// Module ID: 8036
+// Function ID: 8037
 // Name: items
-// Dependencies: [5915, 1306, 1236, 8021, 2]
+// Dependencies: [5915, 1306, 1236, 8023, 2]
 
-// Module 8034 (items)
+// Module 8036 (items)
 let obj = {
   getTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;

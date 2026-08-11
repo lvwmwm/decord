@@ -1,7 +1,7 @@
 // Module ID: 4366
 // Function ID: 4367
 // Name: apexExperiment
-// Dependencies: [4357, 1452, 4361, 589, 2]
+// Dependencies: [4357, 1471, 4361, 589, 2]
 // Exports: isClipsSettingsRedesignEnabled, useDisabledWhenAutoclippingOff, useDisabledWhenClippingOff, useIsClipsSettingsRedesignEnabled
 
 // Module 4366 (apexExperiment)

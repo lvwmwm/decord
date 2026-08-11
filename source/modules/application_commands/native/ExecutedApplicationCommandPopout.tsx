@@ -1,17 +1,17 @@
-// Module ID: 11082
-// Function ID: 11083
+// Module ID: 11087
+// Function ID: 11088
 // Name: getCommandOptionComponents
-// Dependencies: [19, 17, 1372, 1964, 1891, 4521, 3938, 1903, 8339, 4737, 676, 1479, 4738, 21, 4303, 712, 1935, 1297, 4271, 8783, 4146, 4299, 4494, 1236, 5728, 589, 5268, 1419, 5376, 500, 11083, 4001, 5374, 1607, 6982, 4712, 5767, 5748, 8221, 5397, 2]
+// Dependencies: [19, 17, 1391, 1983, 1910, 4521, 3957, 1922, 8344, 4737, 676, 1498, 4738, 21, 4303, 712, 1954, 1297, 4271, 8789, 4148, 4299, 4494, 1236, 5728, 589, 5268, 1438, 5376, 500, 11088, 4020, 5374, 1626, 6985, 4712, 5767, 5748, 8225, 5397, 2]
 // Exports: default
 
-// Module 11082 (getCommandOptionComponents)
+// Module 11087 (getCommandOptionComponents)
 import showUserProfileActionSheet from "showUserProfileActionSheet";
 import get_ActivityIndicator from "Button";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import reinjectEphemerals from "reinjectEphemerals";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getIndexKey from "getIndexKey";
 import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME";
@@ -60,8 +60,8 @@ function getCommandOptionComponents(option) {
     const _HermesInternal = HermesInternal;
     combined = " " + name_localized;
   }
-  if (iter.type !== iter(1935).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (iter.type !== tmp6(1935).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  if (iter.type !== iter(1954).ApplicationCommandOptionType.SUB_COMMAND) {
+    if (iter.type !== tmp6(1954).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       if (null != iter.value) {
         function getUserComponent(user, styles) {
           let obj = {
@@ -87,20 +87,20 @@ function getCommandOptionComponents(option) {
           return outer1_21(iter(outer1_3[21]).Text, { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl }, "optionValue-" + iter.name);
         }
         const type = iter.type;
-        if (tmp6(1935).ApplicationCommandOptionType.USER === type) {
+        if (tmp6(1954).ApplicationCommandOptionType.USER === type) {
           const user = authStore.getUser(iter.value.toString());
           let userComponent = null;
           if (null != user) {
             userComponent = getUserComponent(user, styles);
           }
           const str5 = iter.value;
-        } else if (tmp6(1935).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (tmp6(1954).ApplicationCommandOptionType.CHANNEL === type) {
           channel = store.getChannel(iter.value.toString());
           userComponent = null;
           if (null != channel) {
             let obj = { style: null, children: null };
             obj[0] = styles.commandOptionMentionText;
-            const items1 = [closure_18, tmp6(4494).computeChannelName(channel, authStore, upsertRelationship)];
+            const items1 = [closure_18, tmp6(4494).computeChannelName(channel, authStore, markAllUserIdListsStale)];
             obj[1] = items1;
             const _HermesInternal3 = HermesInternal;
             userComponent = callback2(tmp6(1297).LegacyText, obj, "optionValue-" + iter.name);
@@ -112,7 +112,7 @@ function getCommandOptionComponents(option) {
             const items = [outer1_20, role.name];
             return outer1_22(iter(outer1_3[17]).LegacyText, { style: styles.commandOptionMentionText, children: items }, "optionValue-" + iter.name);
           }
-          if (tmp6(1935).ApplicationCommandOptionType.ROLE === type) {
+          if (tmp6(1954).ApplicationCommandOptionType.ROLE === type) {
             const value = iter.value;
             let role;
             if (null != guild) {
@@ -122,7 +122,7 @@ function getCommandOptionComponents(option) {
             if (null != role) {
               userComponent = getRoleComponent(role);
             }
-          } else if (tmp6(1935).ApplicationCommandOptionType.MENTIONABLE === type) {
+          } else if (tmp6(1954).ApplicationCommandOptionType.MENTIONABLE === type) {
             str = iter.value.toString();
             let role1;
             if (null != guild) {
@@ -140,7 +140,7 @@ function getCommandOptionComponents(option) {
             const str2 = iter.value;
           } else {
             userComponent = null;
-            if (tmp6(1935).ApplicationCommandOptionType.ATTACHMENT === type) {
+            if (tmp6(1954).ApplicationCommandOptionType.ATTACHMENT === type) {
               const intl = tmp6(1236).intl;
               userComponent = getCommandValueText(intl.string(tmp6(1236).t.nONJVc));
             }
@@ -241,28 +241,28 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
     let str = "";
     combined = "" + name_localized;
   }
-  if (item10118.type !== _require(1935).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (item10118.type !== tmp5(1935).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  if (item10118.type !== _require(1954).ApplicationCommandOptionType.SUB_COMMAND) {
+    if (item10118.type !== tmp5(1954).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       let sum = null;
       if (null != item10118.value) {
         const type = item10118.type;
-        if (tmp5(1935).ApplicationCommandOptionType.USER === type) {
+        if (tmp5(1954).ApplicationCommandOptionType.USER === type) {
           const user = authStore.getUser(item10118.value.toString());
           sum = null;
           if (null != user) {
-            sum = closure_20 + importDefault(4146).getUserTag(user, { decoration: "never" });
-            const obj3 = importDefault(4146);
+            sum = closure_20 + importDefault(4148).getUserTag(user, { decoration: "never" });
+            const obj3 = importDefault(4148);
           }
           const str5 = item10118.value;
-        } else if (tmp5(1935).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (tmp5(1954).ApplicationCommandOptionType.CHANNEL === type) {
           const channel = store.getChannel(item10118.value.toString());
           sum = null;
           if (null != channel) {
-            sum = closure_18 + tmp5(4494).computeChannelName(channel, authStore, upsertRelationship);
+            sum = closure_18 + tmp5(4494).computeChannelName(channel, authStore, markAllUserIdListsStale);
             const tmp5Result = tmp5(4494);
           }
           const str4 = item10118.value;
-        } else if (tmp5(1935).ApplicationCommandOptionType.ROLE === type) {
+        } else if (tmp5(1954).ApplicationCommandOptionType.ROLE === type) {
           const value = item10118.value;
           let role;
           if (null != id) {
@@ -274,7 +274,7 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
           }
         } else {
           sum = null;
-          if (tmp5(1935).ApplicationCommandOptionType.MENTIONABLE === type) {
+          if (tmp5(1954).ApplicationCommandOptionType.MENTIONABLE === type) {
             str = item10118.value.toString();
             let role1;
             if (null != id) {
@@ -286,8 +286,8 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
               const user1 = authStore.getUser(str);
               sum = null;
               if (null != user1) {
-                sum = closure_20 + importDefault(4146).getUserTag(user1, { decoration: "never" });
-                const obj = importDefault(4146);
+                sum = closure_20 + importDefault(4148).getUserTag(user1, { decoration: "never" });
+                const obj = importDefault(4148);
               }
             }
             const str6 = item10118.value;

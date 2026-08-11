@@ -1,10 +1,10 @@
-// Module ID: 12302
-// Function ID: 12303
+// Module ID: 12305
+// Function ID: 12306
 // Name: usePersonalizedVoiceChannelUsers
-// Dependencies: [7120, 5829, 1903, 4376, 676, 589, 2]
+// Dependencies: [7121, 5829, 1922, 4376, 676, 589, 2]
 // Exports: default
 
-// Module 12302 (usePersonalizedVoiceChannelUsers)
+// Module 12305 (usePersonalizedVoiceChannelUsers)
 import recomputeAffinities from "recomputeAffinities";
 import hasConsented from "hasConsented";
 import mergeGuildAvatar from "mergeGuildAvatar";

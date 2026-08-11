@@ -1,7 +1,7 @@
 // Module ID: 4342
 // Function ID: 4343
 // Name: createFromServer
-// Dependencies: [1912, 4343, 1911, 676, 3947, 4347, 2]
+// Dependencies: [1931, 4343, 1930, 676, 3966, 4347, 2]
 
 // Module 4342 (createFromServer)
 import "toJS";
@@ -135,7 +135,7 @@ prototype["isValid"] = function isValid(isPremiumWithFractionalPremiumOnly, get)
         if (!obj.canInstallPremiumApplications(isPremiumWithFractionalPremiumOnly)) {
           return false;
         }
-        obj = importDefault(3947);
+        obj = importDefault(3966);
       }
       const _Date = Date;
       const date = new Date();

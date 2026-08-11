@@ -1,10 +1,10 @@
-// Module ID: 7988
-// Function ID: 7989
+// Module ID: 7990
+// Function ID: 7991
 // Name: FormSliderRow
-// Dependencies: [19, 17, 21, 4303, 5373, 5376, 4299, 7989, 5367, 2]
+// Dependencies: [19, 17, 21, 4303, 5373, 5376, 4299, 7991, 5367, 2]
 // Exports: default
 
-// Module 7988 (FormSliderRow)
+// Module 7990 (FormSliderRow)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,10 +37,10 @@ export default function FormSliderRow(arg0) {
     const obj2 = {};
     const merged1 = Object.assign(merged);
     obj2.style = tmp5.slider;
-    items1[1] = callback(importDefault(7989), obj2);
+    items1[1] = callback(importDefault(7991), obj2);
     obj[0] = items1;
     let tmp6Result = tmp6(tmp2(5376).Card, obj);
-    const tmp18 = importDefault(7989);
+    const tmp18 = importDefault(7991);
   } else {
     obj = { children: null };
     const obj3 = { label: null, trailing: null };
@@ -49,10 +49,10 @@ export default function FormSliderRow(arg0) {
     const items2 = [callback(importDefault(5367), obj3), ];
     const obj4 = {};
     const merged2 = Object.assign(merged);
-    items2[1] = callback(importDefault(7989), obj4);
+    items2[1] = callback(importDefault(7991), obj4);
     obj[0] = items2;
     tmp6Result = tmp6(closure_7, obj);
-    const tmp10 = importDefault(7989);
+    const tmp10 = importDefault(7991);
   }
   return tmp6Result;
 };

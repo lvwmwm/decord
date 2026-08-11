@@ -1,10 +1,10 @@
-// Module ID: 16008
-// Function ID: 16009
+// Module ID: 16025
+// Function ID: 16026
 // Name: markAsDismissed
-// Dependencies: [19, 1905, 676, 1369, 21, 5728, 5748, 698, 7592, 8622, 6886, 5397, 16009, 2]
+// Dependencies: [19, 1924, 676, 1388, 21, 5728, 5748, 698, 7594, 8628, 6888, 5397, 16026, 2]
 // Exports: default
 
-// Module 16008 (markAsDismissed)
+// Module 16025 (markAsDismissed)
 import noop from "noop";
 import GuildFeatures from "GuildFeatures";
 import ME from "ME";

@@ -1,9 +1,9 @@
-// Module ID: 9630
-// Function ID: 9631
+// Module ID: 9635
+// Function ID: 9636
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4295, 4341, 7123, 1372, 4390, 3938, 9620, 676, 21, 4303, 712, 4313, 38, 9631, 9632, 4001, 9633, 9243, 7124, 589, 1297, 4299, 4146, 9638, 5728, 8813, 1236, 9658, 4257, 4255, 4714, 1885, 8398, 4800, 8783, 1988, 8814, 9659, 7695, 4742, 8070, 4533, 9236, 9470, 9131, 9661, 9252, 8448, 9557, 5374, 2]
+// Dependencies: [19, 17, 4295, 4341, 7124, 1391, 4390, 3957, 9625, 676, 21, 4303, 712, 4313, 38, 9636, 9637, 4020, 9638, 9249, 7125, 589, 1297, 4299, 4148, 9643, 5728, 8819, 1236, 9663, 4257, 4255, 4714, 1904, 8404, 4800, 8789, 2007, 8820, 9664, 7697, 4742, 8072, 4533, 9242, 9476, 9137, 9666, 9258, 8454, 9562, 5374, 2]
 
-// Module 9630 (UserRowSubLabel)
+// Module 9635 (UserRowSubLabel)
 import importAllResult from "handleRelationshipAddError";
 import { View } from "presentAddedFriendToast";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -11,7 +11,7 @@ import addApplication from "addApplication";
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import sortActivity from "sortActivity";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { UserRowModes } from "UserRowModes";
 import ME from "ME";
 import jsxProd from "initialize";
@@ -45,15 +45,15 @@ function UserRowSubLabel(arg0) {
         obj[1] = guildId;
         obj[2] = gameIcon.activityText;
         obj[3] = animate;
-        return callback(importDefault(9638), obj);
+        return callback(importDefault(9643), obj);
       }
     }
   }
   if (!isGameRelationship) {
     obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
-    obj[3] = tmp(4146).getUserTag(user);
+    obj[3] = tmp(4148).getUserTag(user);
     callback(tmp(4299).Text, obj);
-    const tmpResult = tmp(4146);
+    const tmpResult = tmp(4148);
   }
   if (null == stateFromStores) {
     const obj1 = { style: null };
@@ -207,7 +207,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== guildId.ACTIONS) {
-      let obj = { accessibilityActions: null, actions: "Array" };
+      let obj = { accessibilityActions: null, actions: "a" };
       obj[0] = items;
       return obj;
     } else {

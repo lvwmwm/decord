@@ -1,10 +1,10 @@
-// Module ID: 15435
-// Function ID: 15436
+// Module ID: 15452
+// Function ID: 15453
 // Name: HomeDrawerFavoritesRowExpandedChildren
-// Dependencies: [19, 21, 15428, 4299, 1236, 2]
+// Dependencies: [19, 21, 15445, 4299, 1236, 2]
 // Exports: HomeDrawerFavoritesRowExpandedChildren
 
-// Module 15435 (HomeDrawerFavoritesRowExpandedChildren)
+// Module 15452 (HomeDrawerFavoritesRowExpandedChildren)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -17,5 +17,5 @@ export const HomeDrawerFavoritesRowExpandedChildren = function HomeDrawerFavorit
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.wMWyci);
   obj[0] = jsx(require(4299) /* Text */.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
-  return jsx(require(15428) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
+  return jsx(require(15445) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
 };

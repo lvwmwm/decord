@@ -1,7 +1,7 @@
 // Module ID: 5621
 // Function ID: 5622
 // Name: BottomSheetScrollView
-// Dependencies: [19, 17, 1634, 5612, 5400]
+// Dependencies: [19, 17, 1653, 5612, 5400]
 
 // Module 5621 (BottomSheetScrollView)
 import createBottomSheetScrollableComponent from "createBottomSheetScrollableComponent";

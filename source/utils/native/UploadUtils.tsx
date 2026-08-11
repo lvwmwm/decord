@@ -1,7 +1,7 @@
 // Module ID: 4860
 // Function ID: 4861
 // Name: openImagePickerUnhandled
-// Dependencies: [109, 5, 17, 1304, 4395, 1903, 676, 4516, 3, 4861, 4872, 4852, 4878, 500, 4001, 1236, 3947, 4851, 1271, 4881, 4883, 4856, 4283, 4884, 4885, 4886, 1351, 4887, 4888, 4889, 4530, 4890, 2]
+// Dependencies: [109, 5, 17, 1304, 4395, 1922, 676, 4516, 3, 4861, 4872, 4852, 4878, 500, 4020, 1236, 3966, 4851, 1271, 4881, 4883, 4856, 4283, 4884, 4885, 4886, 1370, 4887, 4888, 4889, 4530, 4890, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, isHEVCEncodingSupported, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
 // Module 4860 (openImagePickerUnhandled)
@@ -1466,7 +1466,7 @@ function convertVideo(videoMetadata) {
                   } else {
                     isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                     if (isVideo2) {
-                      const obj4 = { uri: null, overrideType: "Array" };
+                      const obj4 = { uri: null, overrideType: "a" };
                       obj4[0] = str3;
                       isVideo2 = tmp12(tmp13[11]).getFile(obj4).isVideo;
                       const tmp12Result3 = tmp12(tmp13[11]);
@@ -1485,7 +1485,7 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj5 = { uri: null, overrideType: "Array" };
+                  const obj5 = { uri: null, overrideType: "a" };
                   obj5[0] = str3;
                   isVideo = tmp12(tmp13[11]).getFile(obj5).isVideo;
                   const tmp12Result5 = tmp12(tmp13[11]);

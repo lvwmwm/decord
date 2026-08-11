@@ -1,10 +1,10 @@
-// Module ID: 7409
-// Function ID: 7410
+// Module ID: 7411
+// Function ID: 7412
 // Name: Divider
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1348, 4013, 5750, 4151, 5373, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1367, 4031, 5750, 4152, 5373, 2]
 // Exports: default
 
-// Module 7409 (Divider)
+// Module 7411 (Divider)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -41,17 +41,17 @@ export default function Divider(outer) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const tmp2 = callback(importDefault(1348)("FormDivider"));
-  let obj = require(4013) /* ManaContext */;
+  const tmp2 = callback(importDefault(1367)("FormDivider"));
+  let obj = require(4031) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ theme, primaryColor } = themeContext);
   const profileThemeValues = require(5750) /* useProfileThemeValues */.useProfileThemeValues(theme);
   let tmp7 = null;
   if (tmp6) {
     obj = { backgroundColor: null };
-    obj[0] = tmp3(4151).hexOpacityToRgba(createCacheKey[theme], profileThemeValues.dividerOpacity);
+    obj[0] = tmp3(4152).hexOpacityToRgba(createCacheKey[theme], profileThemeValues.dividerOpacity);
     tmp7 = obj;
-    const tmp3Result = tmp3(4151);
+    const tmp3Result = tmp3(4152);
   }
   let tmp10Result = null;
   if (!React.useContext(require(5373) /* context */.RedesignCompatContext)) {

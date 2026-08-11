@@ -1,13 +1,13 @@
-// Module ID: 15923
-// Function ID: 15924
+// Module ID: 15940
+// Function ID: 15941
 // Name: componentDidMount
-// Dependencies: [19, 1961, 3929, 3938, 1903, 676, 21, 4303, 712, 4013, 500, 8389, 5270, 8382, 1236, 15916, 10304, 530, 5756, 4643, 4732, 4299, 7967, 4712, 15924, 1416, 7790, 5767, 5374, 4494, 1297, 4764, 1480, 5714, 2]
+// Dependencies: [19, 1980, 3948, 3957, 1922, 676, 21, 4303, 712, 4031, 500, 8395, 5270, 8388, 1236, 15933, 10309, 530, 5756, 4643, 4732, 4299, 7969, 4712, 15941, 1435, 7792, 5767, 5374, 4494, 1297, 4764, 1499, 5714, 2]
 // Exports: default
 
-// Module 15923 (componentDidMount)
+// Module 15940 (componentDidMount)
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "comparator";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import jsxProd from "Text";
@@ -262,8 +262,8 @@ prototype["render"] = function render() {
     obj[0] = obj1;
     const intl2 = tmp3(1236).intl;
     obj[1] = intl2.string(tmp3(1236).t["7+5GQa"]);
-    tmp2Result = tmp2(importDefault(15924), obj);
-    const tmp8Result = importDefault(15924);
+    tmp2Result = tmp2(importDefault(15941), obj);
+    const tmp8Result = importDefault(15941);
   }
   const items1 = [tmp2Result, , , , ];
   const obj2 = { label: null, value: null, onChange: null, errorMessage: null };
@@ -278,13 +278,13 @@ prototype["render"] = function render() {
     }
   }
   obj2[3] = first;
-  items1[1] = closure_11(webhookId(7790).TextInput, obj2);
+  items1[1] = closure_11(webhookId(7792).TextInput, obj2);
   const obj3 = { title: null, hasIcons: true, children: null };
   const intl4 = tmp3(1236).intl;
   obj3[0] = intl4.string(webhookId(1236).t.GK18KJ);
   const obj4 = { label: null, arrow: true, onPress: null, icon: null };
   let tmp3Result = tmp3(4494);
-  obj4[0] = tmp3Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+  obj4[0] = tmp3Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
   obj4[2] = self.handleChannelChange;
   const obj5 = { size: null, source: null, style: null };
   obj5[0] = webhookId(1297).Icon.Sizes.CUSTOM;
@@ -318,14 +318,14 @@ prototype["render"] = function render() {
   items1[4] = closure_11(webhookId(5767).TableRowGroup, obj8);
   obj[2] = items1;
   obj[2] = closure_12(webhookId(4712).Stack, obj);
-  return closure_11(webhookId(7967).Form, obj);
+  return closure_11(webhookId(7969).Form, obj);
 };
 EditWebhook.contextType = require("ManaContext").ThemeContext;
 let obj1 = { padding: require("Themes").modules.mobile.TABLE_ROW_PADDING };
 const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/integration_settings/native/IntegrationsSettingsEditWebhook.tsx");
 
 export default function ConnectedEditWebhook(arg0) {
-  let obj = require(1480) /* useNavigation */;
+  let obj = require(1499) /* useNavigation */;
   obj = { children: null };
   obj = { navigation: obj.useNavigation() };
   const merged = Object.assign(arg0);

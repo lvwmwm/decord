@@ -1,7 +1,7 @@
 // Module ID: 4507
 // Function ID: 4508
 // Name: guildHasOnboardingHome
-// Dependencies: [676, 1894, 2]
+// Dependencies: [676, 1913, 2]
 // Exports: default
 
 // Module 4507 (guildHasOnboardingHome)
@@ -18,8 +18,8 @@ export default function guildHasOnboardingHome(id) {
     isFavoritesGuildIdResult = id.id === closure_3;
   }
   if (!isFavoritesGuildIdResult) {
-    isFavoritesGuildIdResult = require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id.id);
-    const obj = require(1894) /* getFavoritesAwareGuildName */;
+    isFavoritesGuildIdResult = require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id.id);
+    const obj = require(1913) /* getFavoritesAwareGuildName */;
   }
   if (!isFavoritesGuildIdResult) {
     const features = id.features;

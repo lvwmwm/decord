@@ -1,10 +1,10 @@
-// Module ID: 10318
-// Function ID: 10319
+// Module ID: 10323
+// Function ID: 10324
 // Name: useIsSelectedResourceChannel
-// Dependencies: [5898, 1372, 1960, 676, 1379, 647, 1384, 10319, 5844, 2]
+// Dependencies: [5898, 1391, 1979, 676, 1398, 647, 1403, 10324, 5844, 2]
 // Exports: default
 
-// Module 10318 (useIsSelectedResourceChannel)
+// Module 10323 (useIsSelectedResourceChannel)
 import handlePermissionsChange from "handlePermissionsChange";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";

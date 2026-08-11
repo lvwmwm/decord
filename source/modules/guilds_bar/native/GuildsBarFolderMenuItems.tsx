@@ -1,10 +1,10 @@
-// Module ID: 15409
-// Function ID: 15410
+// Module ID: 15426
+// Function ID: 15427
 // Name: getGuildFolderMenuItems
-// Dependencies: [5, 5155, 676, 8548, 1236, 13309, 1988, 6011, 15410, 2]
+// Dependencies: [5, 5155, 676, 8554, 1236, 13317, 2007, 6013, 15427, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 15409 (getGuildFolderMenuItems)
+// Module 15426 (getGuildFolderMenuItems)
 import markGuildsAsRead from "markGuildsAsRead";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 import { AnalyticsSections } from "ME";
@@ -14,7 +14,7 @@ let result = require("ME").fileFinishedImporting("modules/guilds_bar/native/Guil
 
 export const getGuildFolderMenuItems = function getGuildFolderMenuItems(guildFolderMenuItems) {
   const _require = guildFolderMenuItems;
-  let obj = { IconComponent: _require(8548).EnvelopeIcon, label: null, action: null };
+  let obj = { IconComponent: _require(8554).EnvelopeIcon, label: null, action: null };
   const intl = _require(1236).intl;
   obj[1] = intl.string(_require(1236).t.e6RscS);
   obj[2] = function action() {
@@ -77,7 +77,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(guildFol
     })();
   };
   const items = [obj, ];
-  obj = { IconComponent: _require(6011).SettingsIcon, label: null, action: null };
+  obj = { IconComponent: _require(6013).SettingsIcon, label: null, action: null };
   const intl2 = _require(1236).intl;
   obj[1] = intl2.string(_require(1236).t.Dx7im5);
   obj[2] = function action() {

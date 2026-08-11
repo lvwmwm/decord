@@ -1,14 +1,14 @@
-// Module ID: 16180
-// Function ID: 16181
+// Module ID: 16196
+// Function ID: 16197
 // Name: useVoicePanelHeaderUserStateIcons
-// Dependencies: [19, 4316, 21, 4036, 8663, 4303, 712, 16181, 16179, 9178, 5781, 11645, 589, 4304, 2]
+// Dependencies: [19, 4316, 21, 4042, 8669, 4303, 712, 16197, 16195, 9184, 5781, 11648, 589, 4304, 2]
 
-// Module 16180 (useVoicePanelHeaderUserStateIcons)
+// Module 16196 (useVoicePanelHeaderUserStateIcons)
 import importAllResult from "noop";
 import getParticipants from "getParticipants";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 
 const require = arg1;
 function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
@@ -17,14 +17,14 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
   if (participant != null) {
     type = participant.type;
   }
-  let obj = require(16179) /* areStableParticipantsEqual */;
+  let obj = require(16195) /* areStableParticipantsEqual */;
   let id;
   if (obj.isStableParticipantWithUser(participant)) {
     id = participant.user.id;
   }
-  const tmp4 = importDefault(16181);
+  const tmp4 = importDefault(16197);
   const items = [];
-  const iter = importDefault(16181)(type, id, guildId)[Symbol.iterator]();
+  const iter = importDefault(16197)(type, id, guildId)[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp9 = nextResult;
@@ -32,7 +32,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
     let tmp11 = require;
     let tmp12 = dependencyMap;
     let tmp13 = dependencyMap;
-    if (nextResult.type === require(16181) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
+    if (nextResult.type === require(16197) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
       let tmp29 = jsx;
       let tmp30 = jsx;
       let tmp31 = tmp10;
@@ -43,13 +43,13 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
       obj[0] = tmp.floatingIcon;
       let tmp33 = nextResult;
       obj[1] = tmp9.videoIconState;
-      obj[2] = jsx(tmp11(9178).VideoIcon, { style: null, state: null });
-      let arr = items.push(jsx(tmp11(8663).BackgroundBlurView, { style: null, state: null }, "video"));
+      obj[2] = jsx(tmp11(9184).VideoIcon, { style: null, state: null });
+      let arr = items.push(jsx(tmp11(8669).BackgroundBlurView, { style: null, state: null }, "video"));
     }
     let tmp14 = nextResult;
     let tmp15 = tmp10;
     let tmp16 = tmp12;
-    if (tmp9.type === tmp11(16181).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(16197).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let tmp37 = tmp10;
       let tmp38 = tmp12;
@@ -70,8 +70,8 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
       obj2[0] = tmp.floatingIcon;
       let tmp21 = nextResult;
       obj2[1] = tmp9.muteDeafenIconState;
-      obj1[2] = tmp36(tmp11(9178).MuteDeafenIcon, obj2);
-      arr = items.push(tmp35(tmp11(8663).BackgroundBlurView, obj1, "mute-deafen"));
+      obj1[2] = tmp36(tmp11(9184).MuteDeafenIcon, obj2);
+      arr = items.push(tmp35(tmp11(8669).BackgroundBlurView, obj1, "mute-deafen"));
     }
     continue;
   }
@@ -82,10 +82,10 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
     obj3[1] = items;
     return jsx(importDefault(5781), { style: null, children: null });
   }
-  const tmp4Result = importDefault(16181)(type, id, guildId);
+  const tmp4Result = importDefault(16197)(type, id, guildId);
 }
 let c3 = importAllResult;
-let closure_6 = require("module_4036").createAnimatedComponent(require("TwinButtons").BackgroundBlurView);
+let closure_6 = require("module_4042").createAnimatedComponent(require("TwinButtons").BackgroundBlurView);
 let closure_7 = { duration: 100 };
 let obj = { container: null, iconContainer: null, floatingIconWrapper: null, floatingIcon: null, leftMargin: null };
 obj = { position: "absolute", top: 0, left: 0, borderRadius: require("Themes").radii.round, padding: 6 };
@@ -101,7 +101,7 @@ let obj1 = { width: 20, height: 20, borderRadius: require("Themes").radii.round,
 const memoResult = importAllResult.memo(function VoicePanelHeaderUserState(isHeaderHidden) {
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
   let channelId;
-  const context = importAllResult.useContext(channelId(11645));
+  const context = importAllResult.useContext(channelId(11648));
   channelId = context.channelId;
   const guildId = context.guildId;
   let obj = isHeaderHidden(589);
@@ -114,8 +114,8 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderUserState(isHea
     }
     return id;
   });
-  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(16179)(stateFromStores, channelId, guildId), guildId);
-  isHeaderHidden(4036);
+  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(16195)(stateFromStores, channelId, guildId), guildId);
+  isHeaderHidden(4042);
   const fn = function h() {
     let obj = isHeaderHidden(outer1_2[13]);
     let num = 0;

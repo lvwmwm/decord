@@ -1,9 +1,9 @@
-// Module ID: 10394
-// Function ID: 10395
+// Module ID: 10399
+// Function ID: 10400
 // Name: startInterval
-// Dependencies: [1218, 1372, 1891, 1960, 4499, 676, 4500, 685, 687, 11, 1384, 589, 9826, 709, 2]
+// Dependencies: [1218, 1391, 1910, 1979, 4499, 676, 4500, 685, 687, 11, 1403, 589, 9831, 709, 2]
 
-// Module 10394 (startInterval)
+// Module 10399 (startInterval)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -76,8 +76,8 @@ function shouldTrackChannel(channelId) {
                 if (!tmp9) {
                   let tmp11 = null == tmp7.flags;
                   if (!tmp11) {
-                    tmp11 = !require(1384) /* hasFlag */.hasAnyFlag(tmp7.flags, constants.UNREADS_ALL_MESSAGES | constants.UNREADS_ONLY_MENTIONS);
-                    const obj2 = require(1384) /* hasFlag */;
+                    tmp11 = !require(1403) /* hasFlag */.hasAnyFlag(tmp7.flags, constants.UNREADS_ALL_MESSAGES | constants.UNREADS_ONLY_MENTIONS);
+                    const obj2 = require(1403) /* hasFlag */;
                   }
                   tmp9 = !tmp11;
                 }
@@ -101,8 +101,8 @@ function shouldTrackChannel(channelId) {
                   if (!tmp18) {
                     let tmp20 = null == tmp16.flags;
                     if (!tmp20) {
-                      tmp20 = !require(1384) /* hasFlag */.hasAnyFlag(tmp16.flags, constants.UNREADS_ALL_MESSAGES | constants.UNREADS_ONLY_MENTIONS);
-                      const obj3 = require(1384) /* hasFlag */;
+                      tmp20 = !require(1403) /* hasFlag */.hasAnyFlag(tmp16.flags, constants.UNREADS_ALL_MESSAGES | constants.UNREADS_ONLY_MENTIONS);
+                      const obj3 = require(1403) /* hasFlag */;
                     }
                     tmp18 = !tmp20;
                   }
@@ -211,9 +211,9 @@ prototype["maybeAutoUpgradeChannel"] = function maybeAutoUpgradeChannel(id) {
         const channels = closure_14.channels;
         delete tmp[tmp2];
         set.add(id);
-        const result = require(9826) /* useChannelPresetSettings */.updateChannelUnreadSetting(basicChannel.guild_id, basicChannel.id, UnreadSetting.ALL_MESSAGES);
+        const result = require(9831) /* useChannelPresetSettings */.updateChannelUnreadSetting(basicChannel.guild_id, basicChannel.id, UnreadSetting.ALL_MESSAGES);
         flag2 = true;
-        let obj = require(9826) /* useChannelPresetSettings */;
+        let obj = require(9831) /* useChannelPresetSettings */;
       }
       tmp6 = flag2;
     }

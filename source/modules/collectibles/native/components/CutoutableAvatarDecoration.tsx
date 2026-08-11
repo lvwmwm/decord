@@ -1,10 +1,10 @@
-// Module ID: 8292
-// Function ID: 8293
+// Module ID: 8297
+// Function ID: 8298
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 17, 4295, 21, 647, 1416, 500, 8293, 8297, 5268, 2]
+// Dependencies: [19, 17, 4295, 21, 647, 1435, 500, 8298, 8302, 5268, 2]
 // Exports: default
 
-// Module 8292 (CutoutableAvatarDecoration)
+// Module 8297 (CutoutableAvatarDecoration)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -30,23 +30,26 @@ export default function CutoutableAvatarDecoration(size) {
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const items1 = [animate, size, avatarDecoration, decorationStyle, stateFromStores];
   const memo = animate.useMemo(() => {
-    let tmp = animate;
-    if (animate) {
-      tmp = !stateFromStores;
+    let tmp2 = true === animate;
+    if (tmp2) {
+      tmp2 = !stateFromStores;
     }
-    if (tmp) {
-      tmp = null != avatarDecoration;
+    if (!tmp2) {
+      tmp2 = "always" === animate;
+    }
+    if (tmp2) {
+      tmp2 = null != avatarDecoration;
     }
     let obj = size(decorationStyle[5]);
-    obj = { avatarDecoration, canAnimate: tmp, size };
+    obj = { avatarDecoration, canAnimate: tmp2, size };
     const avatarDecorationURL = obj.getAvatarDecorationURL(obj);
-    obj = { avatarDecorationUrl: avatarDecorationURL, sizeStyle: obj1, style: items, shouldAnimate: tmp, source: null };
+    obj = { avatarDecorationUrl: avatarDecorationURL, sizeStyle: obj1, style: items, shouldAnimate: tmp2, source: null };
     items = [{ width: size, height: size }, decorationStyle];
-    let str = avatarDecorationURL;
+    let str2 = avatarDecorationURL;
     if (avatarDecorationURL == null) {
-      str = "";
+      str2 = "";
     }
-    obj[4] = { uri: str };
+    obj[4] = { uri: str2 };
     return obj;
   }, items1);
   ({ avatarDecorationUrl, style, sizeStyle, source } = memo);

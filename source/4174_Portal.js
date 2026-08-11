@@ -1,7 +1,7 @@
 // Module ID: 4174
 // Function ID: 4175
 // Name: Portal
-// Dependencies: [19, 4175, 1489]
+// Dependencies: [19, 4175, 1508]
 
 // Module 4174 (Portal)
 import noop from "noop";

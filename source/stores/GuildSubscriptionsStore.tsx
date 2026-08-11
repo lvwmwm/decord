@@ -1,7 +1,7 @@
 // Module ID: 5896
 // Function ID: 5897
 // Name: handleConnectionOpenOrResumed
-// Dependencies: [32, 4217, 3930, 4997, 1218, 5897, 5898, 1372, 4641, 1971, 1891, 4375, 3938, 1960, 4124, 676, 5901, 709, 12, 1894, 589, 2]
+// Dependencies: [32, 4217, 3949, 4997, 1218, 5897, 5898, 1391, 4641, 1990, 1910, 4375, 3957, 1979, 4126, 676, 5901, 709, 12, 1913, 589, 2]
 
 // Module 5896 (handleConnectionOpenOrResumed)
 import _slicedToArray from "_slicedToArray";
@@ -16,7 +16,7 @@ import handleConnectionOpen from "handleConnectionOpen";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import createRTCConnection from "createRTCConnection";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import closure_17 from "handleConnectionOpen";
 import closure_18 from "handleConnectionOpen";
 import ME from "ME";
@@ -89,7 +89,7 @@ function handleConnectionOpenOrResumed(type) {
       }
     }
     tmp3.subscribeToGuild(tmp11);
-    obj5 = obj(1894);
+    obj5 = obj(1913);
   }
   obj = {};
   set = new Set(initialize.lurkingGuildIds());
@@ -135,7 +135,7 @@ function handleChannelSelect(arg0) {
     }
     dependencyMap.subscribeToGuild(tmp4);
     flag = false;
-    obj = require(1894) /* getFavoritesAwareGuildName */;
+    obj = require(1913) /* getFavoritesAwareGuildName */;
   }
   return flag;
 }
@@ -217,7 +217,7 @@ class GuildSubscriptionsStore extends Store {
 }
 const prototype = GuildSubscriptionsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, handlePermissionsChange, ensureGuildLoaded, getHash, handleConnectionOpen, trackCommunicationDisabled, createGuildRecordFromRust, initialize, createRTCConnection, upsertRelationship, closure_17, closure_18, upsertAccount);
+  this.waitFor(fetchFingerprint, handlePermissionsChange, ensureGuildLoaded, getHash, handleConnectionOpen, trackCommunicationDisabled, createGuildRecordFromRust, initialize, createRTCConnection, markAllUserIdListsStale, closure_17, closure_18, upsertAccount);
   const items = [upsertAccount];
   this.syncWith(items, handleSpotifyUpdate);
   const items1 = [handlePermissionsChange];
@@ -355,7 +355,7 @@ const guildSubscriptionsStore = new GuildSubscriptionsStore(require("dispatcher"
         }
       }
       tmp3.subscribeToGuild(tmp2);
-      obj3 = require(1894) /* getFavoritesAwareGuildName */;
+      obj3 = require(1913) /* getFavoritesAwareGuildName */;
     }
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
@@ -401,8 +401,8 @@ const guildSubscriptionsStore = new GuildSubscriptionsStore(require("dispatcher"
         guildId = parent_id.getGuildId();
         let isFavoritesGuildIdResult = guildId !== guildId;
         if (isFavoritesGuildIdResult) {
-          isFavoritesGuildIdResult = require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-          const obj = require(1894) /* getFavoritesAwareGuildName */;
+          isFavoritesGuildIdResult = require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+          const obj = require(1913) /* getFavoritesAwareGuildName */;
         }
         if (isFavoritesGuildIdResult) {
           tmp3.subscribeToGuild(guildId);
@@ -619,7 +619,7 @@ let obj = {
         }
       }
       tmp3.subscribeToGuild(tmp2);
-      obj3 = require(1894) /* getFavoritesAwareGuildName */;
+      obj3 = require(1913) /* getFavoritesAwareGuildName */;
     }
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
@@ -665,8 +665,8 @@ let obj = {
         guildId = parent_id.getGuildId();
         let isFavoritesGuildIdResult = guildId !== guildId;
         if (isFavoritesGuildIdResult) {
-          isFavoritesGuildIdResult = require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-          const obj = require(1894) /* getFavoritesAwareGuildName */;
+          isFavoritesGuildIdResult = require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+          const obj = require(1913) /* getFavoritesAwareGuildName */;
         }
         if (isFavoritesGuildIdResult) {
           tmp3.subscribeToGuild(guildId);

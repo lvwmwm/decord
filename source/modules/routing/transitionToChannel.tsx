@@ -1,7 +1,7 @@
 // Module ID: 4311
 // Function ID: 4312
 // Name: transitionToChannel
-// Dependencies: [1372, 676, 4312, 4313, 1222, 4497, 38, 2]
+// Dependencies: [1391, 676, 4312, 4313, 1222, 4497, 38, 2]
 // Exports: transitionToChannel, transitionToMessage, transitionToStaticChannelRoute, transitionToThread, transitionToThreadMessage, tryTransitionToThreadMessage
 
 // Module 4311 (transitionToChannel)

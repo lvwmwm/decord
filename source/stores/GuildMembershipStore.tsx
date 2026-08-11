@@ -1,9 +1,9 @@
-// Module ID: 1374
-// Function ID: 1375
+// Module ID: 1393
+// Function ID: 1394
 // Name: allGuildIds
 // Dependencies: [589, 709, 2]
 
-// Module 1374 (allGuildIds)
+// Module 1393 (allGuildIds)
 import { Store } from "initialize";
 import importDefaultResult from "dispatcher";
 import set from "set";

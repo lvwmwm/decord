@@ -1,10 +1,10 @@
-// Module ID: 15687
-// Function ID: 15688
+// Module ID: 15704
+// Function ID: 15705
 // Name: showMembersManagementActionSheet
-// Dependencies: [1903, 1236, 4271, 15688, 1988, 5885, 15689, 5761, 2]
+// Dependencies: [1922, 1236, 4271, 15705, 2007, 5885, 15706, 5761, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 15687 (showMembersManagementActionSheet)
+// Module 15704 (showMembersManagementActionSheet)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

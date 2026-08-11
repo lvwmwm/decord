@@ -1,10 +1,10 @@
-// Module ID: 12024
-// Function ID: 12025
+// Module ID: 12027
+// Function ID: 12028
 // Name: getHubProgressTitleForStep
-// Dependencies: [19, 1340, 4998, 9077, 676, 589, 1306, 1236, 1351, 1384, 2]
+// Dependencies: [19, 1340, 4998, 9083, 676, 589, 1306, 1236, 1370, 1403, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 12024 (getHubProgressTitleForStep)
+// Module 12027 (getHubProgressTitleForStep)
 import noop from "noop";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import set from "set";
@@ -27,7 +27,7 @@ export const getHubProgressTitleForStep = function getHubProgressTitleForStep(ne
   } else if (tmp(1306).HubProgressStep.NO_PROGRESS === nextHubProgressStep) {
     return null;
   } else {
-    tmp(1351).assertNever(nextHubProgressStep);
+    tmp(1370).assertNever(nextHubProgressStep);
   }
 };
 export const useHubProgressBarCompletedSteps = function useHubProgressBarCompletedSteps(guild) {

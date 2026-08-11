@@ -1,10 +1,10 @@
-// Module ID: 15010
-// Function ID: 15011
+// Module ID: 15020
+// Function ID: 15021
 // Name: markAsDismissed
-// Dependencies: [19, 1905, 676, 1369, 21, 5728, 5748, 698, 7591, 8622, 3947, 5397, 15011, 2]
+// Dependencies: [19, 1924, 676, 1388, 21, 5728, 5748, 698, 7593, 8628, 3966, 5397, 15021, 2]
 // Exports: default
 
-// Module 15010 (markAsDismissed)
+// Module 15020 (markAsDismissed)
 import noop from "noop";
 import { PremiumTypes } from "GuildFeatures";
 import { AnalyticEvents } from "ME";

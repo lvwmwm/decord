@@ -1,9 +1,9 @@
-// Module ID: 12556
-// Function ID: 12557
+// Module ID: 12560
+// Function ID: 12561
 // Name: GuildChannelMemberCount
-// Dependencies: [32, 19, 17, 12557, 4994, 1376, 5897, 1372, 4224, 1891, 3938, 1903, 676, 1369, 21, 4005, 712, 589, 12551, 5777, 8679, 1236, 4494, 12549, 6022, 1358, 1974, 4764, 8653, 1348, 9907, 12545, 2]
+// Dependencies: [32, 19, 17, 12561, 4994, 1395, 5897, 1391, 4224, 1910, 3957, 1922, 676, 1388, 21, 4024, 712, 589, 12555, 5777, 8685, 1236, 4494, 12553, 6024, 1377, 1993, 4764, 8659, 1367, 9912, 12549, 2]
 
-// Module 12556 (GuildChannelMemberCount)
+// Module 12560 (GuildChannelMemberCount)
 import set from "set";
 import importAllResult from "ICON_SIZE";
 import { View } from "initialize";
@@ -14,7 +14,7 @@ import getMemberListId from "getMemberListId";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleInviteData from "handleInviteData";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -35,8 +35,8 @@ function GuildChannelMemberCount(channel) {
   if (flag === undefined) {
     flag = false;
   }
-  const token = channel(4005).useToken(importDefault(712).modules.mobile.CHANNEL_HEADER_ICON_SIZE);
-  let obj = channel(4005);
+  const token = channel(4024).useToken(importDefault(712).modules.mobile.CHANNEL_HEADER_ICON_SIZE);
+  let obj = channel(4024);
   const items = [getMemberListId, initialize];
   const stateFromStoresObject = channel(589).useStateFromStoresObject(items, () => {
     let flag = false;
@@ -88,7 +88,7 @@ function GuildChannelMemberCount(channel) {
     const count = outer1_6.requestCount(channel.guild_id, channel.id);
   }, items1);
   if (null == total) {
-    const tmpResult = tmp(12551);
+    const tmpResult = tmp(12555);
     return tmpResult.renderMemberCountText(online, total, flag, tmp(5777).ICON_SIZE[token]);
   }
 }
@@ -115,7 +115,7 @@ function computeVisibleChannelName(channel) {
       stringResult1 = string(ai6Lbr.ZTNur7);
     }
   } else {
-    stringResult = tmp(4494).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+    stringResult = tmp(4494).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
     const tmpResult = tmp(4494);
   }
   return stringResult;
@@ -125,10 +125,10 @@ function ChannelLinkedLobbyCoachmark(guild) {
   const channel = guild.channel;
   let dependencyMap;
   let callback;
-  const items = [guild(1358).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP];
-  const tmp = callback(guild(6022).useSelectedDismissibleContent(items, undefined, true), 2);
+  const items = [guild(1377).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP];
+  const tmp = callback(guild(6024).useSelectedDismissibleContent(items, undefined, true), 2);
   dependencyMap = tmp2;
-  const tmp3 = tmp[0] === guild(1358).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP;
+  const tmp3 = tmp[0] === guild(1377).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP;
   callback = tmp3;
   const items1 = [channel, guild, tmp[1], tmp3];
   const memo = importAllResult.useMemo(() => {
@@ -155,8 +155,8 @@ function ChannelLinkedLobbyCoachmark(guild) {
     obj[6] = channelIconWithGuild;
     return obj;
   }, items1);
-  let obj = guild(6022);
-  const coachmark = guild(8653).useCoachmark(guild.iconRef, memo);
+  let obj = guild(6024);
+  const coachmark = guild(8659).useCoachmark(guild.iconRef, memo);
   return null;
 }
 let c4 = importAllResult;

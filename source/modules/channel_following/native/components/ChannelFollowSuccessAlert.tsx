@@ -1,10 +1,10 @@
-// Module ID: 10307
-// Function ID: 10308
+// Module ID: 10312
+// Function ID: 10313
 // Name: items
-// Dependencies: [19, 17, 21, 10308, 10309, 10310, 10311, 10312, 10313, 1236, 4303, 4239, 4153, 6904, 12, 4732, 4299, 2]
+// Dependencies: [19, 17, 21, 10313, 10314, 10315, 10316, 10317, 10318, 1236, 4303, 4239, 1363, 6906, 12, 4732, 4299, 2]
 // Exports: default
 
-// Module 10307 (items)
+// Module 10312 (items)
 import "noop";
 import { Image } from "set";
 import jsxProd from "jsxProd";
@@ -63,13 +63,13 @@ const result = require("jsxProd").fileFinishedImporting("modules/channel_followi
 
 export default function ChannelFollowSuccessAlert(arg0) {
   const tmp = callback3();
-  let obj = require(4153) /* AccessibilityAnnouncer */;
+  let obj = require(1363) /* AccessibilityAnnouncer */;
   const tmp6 = obj.isThemeDark(importDefault(4239)()) ? items1 : items;
   require = tmp6;
-  let tmp5Result = tmp5(6904);
+  let tmp5Result = tmp5(6906);
   items = [tmp6];
   const stableMemo = tmp5Result.useStableMemo(() => outer1_1(outer1_2[14]).sample(closure_0), items);
-  tmp5Result = tmp5(6904);
+  tmp5Result = tmp5(6906);
   const stableMemo1 = tmp5Result.useStableMemo(() => callback(table[14]).sample(closure_8), []);
   obj = {};
   const tmp2 = importDefault;

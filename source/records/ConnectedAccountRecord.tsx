@@ -1,7 +1,7 @@
 // Module ID: 4999
 // Function ID: 5000
 // Name: toString
-// Dependencies: [1912, 2]
+// Dependencies: [1931, 2]
 
 // Module 4999 (toString)
 import "toJS";

@@ -1,10 +1,10 @@
-// Module ID: 8308
-// Function ID: 8309
+// Module ID: 8313
+// Function ID: 8314
 // Name: maybeFetchUserProfile
-// Dependencies: [1372, 1971, 7080, 7000, 8235, 5124, 709, 8309, 8310, 2]
+// Dependencies: [1391, 1990, 7083, 7003, 8239, 5124, 709, 8314, 8315, 2]
 // Exports: default
 
-// Module 8308 (maybeFetchUserProfile)
+// Module 8313 (maybeFetchUserProfile)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
@@ -117,8 +117,8 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       profileEffect = userProfile.profileEffect;
     }
     if (null != profileEffect) {
-      const result = _require(7000).maybeFetchCollectiblesProduct(profileEffect.skuId);
-      const obj2 = _require(7000);
+      const result = _require(7003).maybeFetchCollectiblesProduct(profileEffect.skuId);
+      const obj2 = _require(7003);
     }
     if (null != guildId) {
       let profileFrame;
@@ -129,12 +129,12 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       profileFrame = userProfile.profileFrame;
     }
     if (null != profileFrame) {
-      const result1 = _require(7000).maybeFetchCollectiblesProduct(profileFrame.skuId);
-      const obj3 = _require(7000);
+      const result1 = _require(7003).maybeFetchCollectiblesProduct(profileFrame.skuId);
+      const obj3 = _require(7003);
     }
     if (null != closure_0) {
-      _require(8235).maybeFetchColors(closure_0);
-      const obj4 = _require(8235);
+      _require(8239).maybeFetchColors(closure_0);
+      const obj4 = _require(8239);
     }
     obj = { type: null, withMutualGuilds: null, withMutualFriends: null, withMutualFriendsCount: null, guildId: null, joinRequestId: null, abortSignal: null, connectionsRoleId: null };
     obj[0] = type;
@@ -165,7 +165,7 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       });
       return Promise.resolve();
     } else {
-      const profile = _require(8309).fetchProfile(id, obj, obj(8310));
+      const profile = _require(8314).fetchProfile(id, obj, obj(8315));
       let resolved = profile;
       if (tmp18) {
         resolved = profile;

@@ -1,7 +1,7 @@
 // Module ID: 4568
 // Function ID: 4569
 // Name: trim
-// Dependencies: [1403, 4569, 4557, 4572, 4570, 4576]
+// Dependencies: [1422, 4569, 4557, 4572, 4570, 4576]
 
 // Module 4568 (trim)
 import callBind from "callBind";

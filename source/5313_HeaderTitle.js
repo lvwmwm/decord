@@ -1,7 +1,7 @@
 // Module ID: 5313
 // Function ID: 5314
 // Name: HeaderTitle
-// Dependencies: [17, 21, 1481]
+// Dependencies: [17, 21, 1500]
 // Exports: HeaderTitle
 
 // Module 5313 (HeaderTitle)
@@ -19,7 +19,7 @@ export const HeaderTitle = function HeaderTitle(tintColor) {
   let fonts;
   let text = tintColor.tintColor;
   const merged = Object.assign(tintColor, Object.create(null));
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   const theme = obj.useTheme();
   obj = { role: "heading", "aria-level": "1", numberOfLines: 1 };
   ({ colors, fonts } = theme);

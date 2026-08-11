@@ -1,7 +1,7 @@
 // Module ID: 4825
 // Function ID: 4826
 // Name: StageIcon
-// Dependencies: [19, 21, 712, 4004, 4772, 2]
+// Dependencies: [19, 21, 712, 4023, 4772, 2]
 // Exports: StageIcon
 
 // Module 4825 (StageIcon)
@@ -22,5 +22,5 @@ export const StageIcon = function StageIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

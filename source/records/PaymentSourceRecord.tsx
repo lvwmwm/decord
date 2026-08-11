@@ -1,9 +1,9 @@
-// Module ID: 3951
-// Function ID: 3952
+// Module ID: 3970
+// Function ID: 3971
 // Name: createFromServer
-// Dependencies: [1912, 676, 1351, 1384, 2]
+// Dependencies: [1931, 676, 1370, 1403, 2]
 
-// Module 3951 (createFromServer)
+// Module 3970 (createFromServer)
 import "toJS";
 import ME from "ME";
 
@@ -517,7 +517,7 @@ PaymentSourceRecord["createFromServer"] = function createFromServer(billing_addr
           }
           const tmp11 = prototype2;
         } else {
-          obj4 = require(1351) /* isDiscordFrontendDevelopment */;
+          obj4 = require(1370) /* isDiscordFrontendDevelopment */;
           obj4.assertNever(billing_address);
         }
       }
@@ -921,7 +921,7 @@ PaymentSourceRecord["createFromSerialized"] = function createFromSerialized(type
             return tmp16;
           }
         } else {
-          require(1351) /* isDiscordFrontendDevelopment */.assertNever(type);
+          require(1370) /* isDiscordFrontendDevelopment */.assertNever(type);
         }
       }
     }
@@ -953,7 +953,7 @@ PaymentSourceRecord["createFromSerialized"] = function createFromSerialized(type
   }
 };
 prototype["hasFlag"] = function hasFlag(arg0) {
-  return require(1384) /* hasFlag */.hasFlag(this.flags, arg0);
+  return require(1403) /* hasFlag */.hasFlag(this.flags, arg0);
 };
 Object.defineProperty(prototype, "paymentMethodCountry", {
   get: function paymentMethodCountry() {

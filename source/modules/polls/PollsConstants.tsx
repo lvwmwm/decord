@@ -1,9 +1,9 @@
-// Module ID: 7288
-// Function ID: 7289
+// Module ID: 7289
+// Function ID: 7290
 // Name: POLL_ATTACHMENT_FOLDER
 // Dependencies: [1338, 2]
 
-// Module 7288 (POLL_ATTACHMENT_FOLDER)
+// Module 7289 (POLL_ATTACHMENT_FOLDER)
 import set from "set";
 
 const items = [, ];

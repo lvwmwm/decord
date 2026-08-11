@@ -1,0 +1,10 @@
+// Module ID: 10697
+// Function ID: 10698
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 10697 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 238, height: 96, scales: [2, 3], hash: "b1d330bd5ccfa2833454c026755830a6", name: "img_stream_failed_darker", type: "png" });

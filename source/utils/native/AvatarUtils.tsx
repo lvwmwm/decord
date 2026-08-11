@@ -1,10 +1,10 @@
-// Module ID: 1419
-// Function ID: 1420
+// Module ID: 1438
+// Function ID: 1439
 // Name: ensureAvatarSource
-// Dependencies: [17, 1420, 1421, 1422, 1423, 1424, 1425, 1426, 1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434, 1435, 1436, 1437, 1438, 1439, 1440, 1441, 1442, 1443, 1444, 1445, 1446, 1447, 1448, 1449, 2]
+// Dependencies: [17, 1439, 1440, 1441, 1442, 1443, 1444, 1445, 1446, 1447, 1448, 1449, 1450, 1451, 1452, 1453, 1454, 1455, 1456, 1457, 1458, 1459, 1460, 1461, 1462, 1463, 1464, 1465, 1466, 1467, 1468, 2]
 // Exports: ensureAvatarSource, getAutomodAvatarURL
 
-// Module 1419 (ensureAvatarSource)
+// Module 1438 (ensureAvatarSource)
 import get_ActivityIndicator from "registerAsset";
 import set from "registerAsset";
 
@@ -43,5 +43,5 @@ export const DEFAULT_AVATARS_SMALL_MAX_SIZE = 24;
 export const DEFAULT_PROVISIONAL_AVATARS = items2;
 export { ensureAvatarSource };
 export const getAutomodAvatarURL = function getAutomodAvatarURL() {
-  return importDefault(1448);
+  return importDefault(1467);
 };

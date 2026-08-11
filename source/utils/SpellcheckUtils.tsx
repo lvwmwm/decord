@@ -1,7 +1,7 @@
 // Module ID: 5343
 // Function ID: 5344
 // Name: _setEnabled
-// Dependencies: [5, 5344, 3912, 500, 5346, 2]
+// Dependencies: [5, 5344, 3931, 500, 5346, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
 // Module 5343 (_setEnabled)
@@ -427,7 +427,7 @@ if (promise != null) {
 function isSupported() {
   let isDesktopResult = require(500) /* set */.isDesktop();
   if (isDesktopResult) {
-    const tmp4 = importDefault(3912);
+    const tmp4 = importDefault(3931);
     let spellCheck;
     if (tmp4 != null) {
       spellCheck = tmp4.spellCheck;
@@ -505,13 +505,13 @@ export const setAppLocale = function setAppLocale(arg0) {
   }
 };
 export const addResultListener = function addResultListener(arg0) {
-  const tmp3 = importDefault(3912);
+  const tmp3 = importDefault(3931);
   let spellCheck;
   if (tmp3 != null) {
     spellCheck = tmp3.spellCheck;
   }
   if (null != spellCheck) {
-    spellCheck = importDefault(3912).spellCheck;
+    spellCheck = importDefault(3931).spellCheck;
     let fn2 = spellCheck.on("spellcheck-result", arg0);
     if (fn2 == null) {
       fn2 = () => {

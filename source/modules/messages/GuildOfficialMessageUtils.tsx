@@ -1,7 +1,7 @@
 // Module ID: 5887
 // Function ID: 5888
 // Name: useCanManageGuildOfficialMessages
-// Dependencies: [1891, 3929, 4296, 676, 688, 689, 4151, 4153, 5888, 589, 5889, 5890, 2]
+// Dependencies: [1910, 3948, 4296, 676, 688, 689, 4152, 1363, 5888, 589, 5889, 5890, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages, useIsGuildOfficialMessagesEnabled
 
 // Module 5887 (useCanManageGuildOfficialMessages)
@@ -70,8 +70,8 @@ export const getAccessibleGuildOfficialTextColor = function getAccessibleGuildOf
     tmp5 = mixResult;
   }
   obj4 = importDefault(689);
-  obj = { foreground: tmp6, background: tmp5, ratio: tmp2(4153).WCAGContrastRatios.Text, saturationFactor: num };
-  return require(4151) /* hexToRgba */.getAccessibleForegroundColor(obj);
+  obj = { foreground: tmp6, background: tmp5, ratio: tmp2(1363).WCAGContrastRatios.Text, saturationFactor: num };
+  return require(4152) /* hexToRgba */.getAccessibleForegroundColor(obj);
 };
 export function showGuildOfficialMessageGradient(officialMessageStyle) {
   let tmp = "no_gradient" !== officialMessageStyle;

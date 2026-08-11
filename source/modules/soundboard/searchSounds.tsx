@@ -1,10 +1,10 @@
-// Module ID: 5958
-// Function ID: 5959
+// Module ID: 5960
+// Function ID: 5961
 // Name: trackSearchStart
-// Dependencies: [5176, 676, 636, 698, 3942, 5229, 5959, 2]
+// Dependencies: [5176, 676, 636, 698, 3961, 5229, 5961, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 5958 (trackSearchStart)
+// Module 5960 (trackSearchStart)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import ME from "ME";
 
@@ -49,13 +49,13 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
     }
     let result = null;
     if (null != name.emojiName) {
-      result = stateFromStores(3942).convertSurrogateToName(name.emojiName, false);
-      const obj2 = stateFromStores(3942);
+      result = stateFromStores(3961).convertSurrogateToName(name.emojiName, false);
+      const obj2 = stateFromStores(3961);
     }
     let byName = null;
     if (null != result) {
-      byName = stateFromStores(3942).getByName(result);
-      const obj3 = stateFromStores(3942);
+      byName = stateFromStores(3961).getByName(result);
+      const obj3 = stateFromStores(3961);
     }
     if (null != customEmojiById) {
       const items = [customEmojiById.name];
@@ -104,8 +104,8 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
     }
     let result1 = sum6 > 0;
     if (0 < sum6) {
-      result1 = lib(5959).canUseSoundboardSound(stateFromStores, name, tmp3);
-      const obj4 = lib(5959);
+      result1 = lib(5961).canUseSoundboardSound(stateFromStores, name, tmp3);
+      const obj4 = lib(5961);
     }
     let sum7 = sum6;
     if (result1) {

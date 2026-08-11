@@ -1,10 +1,10 @@
-// Module ID: 7773
-// Function ID: 7774
+// Module ID: 7775
+// Function ID: 7776
 // Name: connectToStage
-// Dependencies: [5, 4322, 1372, 1891, 3929, 1960, 1380, 7774, 5936, 5232, 12664, 12665, 5129, 4367, 4483, 12667, 2]
+// Dependencies: [5, 4322, 1391, 1910, 3948, 1979, 1399, 7776, 5938, 5232, 12668, 12669, 5129, 4367, 4483, 12671, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 7773 (connectToStage)
+// Module 7775 (connectToStage)
 import handleConnectionOpen from "handleConnectionOpen";
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -19,28 +19,28 @@ function connectToStage(channel, flag) {
   }
   if (!flag) {
     const _require = channel;
-    const canResult = getUncachedChannelPermissions.can(_require(1380).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
+    const canResult = getUncachedChannelPermissions.can(_require(1399).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
     let tmp6 = !canResult;
     if (canResult) {
-      let num = importAll(7774).shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
+      let num = importAll(7776).shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       if (num) {
-        const result = tmp7(7774).openStageBlockedUsersSheet(channel, () => {
+        const result = tmp7(7776).openStageBlockedUsersSheet(channel, () => {
           outer1_11(closure_0, true);
         });
         num = 1;
-        const tmp7Result = tmp7(7774);
+        const tmp7Result = tmp7(7776);
       }
       tmp6 = num;
-      const obj2 = importAll(7774);
+      const obj2 = importAll(7776);
       tmp7 = importAll;
     }
     if (tmp6) {
       return false;
     }
   }
-  importDefault(12665).initialize();
+  importDefault(12669).initialize();
   const obj = closure_9;
-  const obj4 = importDefault(12665);
+  const obj4 = importDefault(12669);
   const voiceChannel = importDefault(5129).selectVoiceChannel(channel.id);
   if (obj.getVoiceChannelId() !== channel.id) {
     return false;
@@ -74,19 +74,19 @@ function connectAndOpen(channel, flag) {
     result = voiceChannelId !== channel.id;
   }
   if (result) {
-    result = _require(12667).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(12667);
+    result = _require(12671).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(12671);
   }
   if (result) {
-    result = flag2(7774).showChannelChangeConfirmationAlert(channel, () => {
+    result = flag2(7776).showChannelChangeConfirmationAlert(channel, () => {
       outer1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(7774);
+    const obj2 = flag2(7776);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      flag2(7774).navigateToStage(channel, voiceChannelId);
-      const obj3 = flag2(7774);
+      flag2(7776).navigateToStage(channel, voiceChannelId);
+      const obj3 = flag2(7776);
     }
   }
 }
@@ -211,8 +211,8 @@ export const connectOrLurkStage = function connectOrLurkStage(closure_0, closure
 export { connectToStage };
 export { connectAndOpen };
 export const navigateToStage = function navigateToStage(arg0, arg1) {
-  importAll(7774).navigateToStage(arg0, arg1);
+  importAll(7776).navigateToStage(arg0, arg1);
 };
 export const showUserProfile = function showUserProfile(arg0) {
-  const result = importAll(7774).showPlatformUserProfile(arg0);
+  const result = importAll(7776).showPlatformUserProfile(arg0);
 };

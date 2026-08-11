@@ -1,10 +1,10 @@
-// Module ID: 8469
-// Function ID: 8470
+// Module ID: 8475
+// Function ID: 8476
 // Name: Label
-// Dependencies: [19, 21, 4007, 4153, 4299, 2]
+// Dependencies: [19, 21, 4026, 1363, 4299, 2]
 // Exports: default
 
-// Module 8469 (Label)
+// Module 8475 (Label)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ const result = require("getNodeText").fileFinishedImporting("design/void/Form/na
 export default function Label(style) {
   const children = style.children;
   let nodeText;
-  nodeText = nodeText(4007).getNodeText(children);
+  nodeText = nodeText(4026).getNodeText(children);
   const items = [nodeText];
   const effect = React.useEffect(() => {
     let tmp2 = null != nodeText;

@@ -1,10 +1,10 @@
-// Module ID: 8589
-// Function ID: 8590
+// Module ID: 8595
+// Function ID: 8596
 // Name: DCDChatItem
-// Dependencies: [32, 19, 17, 4295, 676, 8042, 21, 4039, 8590, 8591, 8592, 686, 5890, 4303, 712, 500, 8230, 4005, 689, 4725, 2]
+// Dependencies: [32, 19, 17, 4295, 676, 8044, 21, 4045, 8596, 8597, 8598, 686, 5890, 4303, 712, 500, 8234, 4024, 689, 4725, 2]
 // Exports: default
 
-// Module 8589 (DCDChatItem)
+// Module 8595 (DCDChatItem)
 import _slicedToArray from "_slicedToArray";
 import LinearGradient from "LinearGradient";
 import get_ActivityIndicator from "map";

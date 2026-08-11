@@ -1,10 +1,10 @@
-// Module ID: 16673
-// Function ID: 16674
+// Module ID: 16685
+// Function ID: 16686
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 4190, 21, 4303, 712, 589, 4194, 11881, 11849, 4725, 4712, 11884, 4299, 1236, 4714, 15342, 2]
+// Dependencies: [19, 17, 4190, 21, 4303, 712, 589, 4194, 11884, 11852, 4725, 4712, 11887, 4299, 1236, 4714, 15356, 2]
 // Exports: default
 
-// Module 16673 (GuildSettingsServerTagUpsellCard)
+// Module 16685 (GuildSettingsServerTagUpsellCard)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -49,7 +49,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
     }
     return tmp2;
   }, items1);
-  const tmp6 = importDefault(11881)(stateFromStores, true);
+  const tmp6 = importDefault(11884)(stateFromStores, true);
   const items2 = [guildId];
   const effect = React.useEffect(() => {
     if (outer1_5.shouldFetchCatalogForGuild(guildId)) {
@@ -69,7 +69,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
     const obj5 = { imageUrl: null, style: null };
     obj5[0] = tmp6;
     obj5[1] = tmp.powerupImage;
-    tmp10Result = tmp10(tmp5(11884), obj5);
+    tmp10Result = tmp10(tmp5(11887), obj5);
   }
   obj4[3] = tmp10Result;
   const items5 = [callback(closure_4, obj4), , ];
@@ -91,7 +91,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   const obj9 = { variant: "primary", size: "lg", text: null, icon: null, iconPosition: "start", onPress: null };
   const intl3 = tmp2(1236).intl;
   obj9[2] = intl3.string(guildId(1236).t.kMRDWs);
-  obj9[3] = callback(guildId(15342).BoostTier2Icon, { color: "white" });
+  obj9[3] = callback(guildId(15356).BoostTier2Icon, { color: "white" });
   obj9[5] = guildId.onUnlockPress;
   items5[2] = callback(guildId(4714).Button, obj9);
   obj3[1] = items5;

@@ -1,10 +1,10 @@
-// Module ID: 7960
-// Function ID: 7961
+// Module ID: 7962
+// Function ID: 7963
 // Name: useIsGoogleWalletEnabled
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: isGoogleWalletEnabled, useIsGoogleWalletEnabled
 
-// Module 7960 (useIsGoogleWalletEnabled)
+// Module 7962 (useIsGoogleWalletEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

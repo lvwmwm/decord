@@ -1,10 +1,10 @@
-// Module ID: 15419
-// Function ID: 15420
+// Module ID: 15436
+// Function ID: 15437
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [32, 19, 21, 4303, 1297, 4005, 712, 15420, 15421, 15425, 2]
+// Dependencies: [32, 19, 21, 4303, 1297, 4024, 712, 15437, 15438, 15442, 2]
 // Exports: default
 
-// Module 15419 (useGuildsBarBottomRightBadge)
+// Module 15436 (useGuildsBarBottomRightBadge)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -97,7 +97,7 @@ export default function useGuildsBarBottomRightBadge(mentionCount) {
       obj5[2] = items2;
       return obj5;
     } else {
-      return { badge: null, cutout: "Array", cutouts: "call" };
+      return { badge: null, cutout: "Array", cutouts: "options" };
     }
   }, items1);
 };

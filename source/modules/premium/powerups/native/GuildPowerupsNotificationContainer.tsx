@@ -1,10 +1,10 @@
-// Module ID: 11914
-// Function ID: 11915
+// Module ID: 11917
+// Function ID: 11918
 // Name: Tier3OverrideNotice
-// Dependencies: [17, 21, 4303, 712, 4299, 11915, 11916, 1236, 2316, 11919, 2]
+// Dependencies: [17, 21, 4303, 712, 4299, 11918, 11919, 1236, 2335, 11922, 2]
 // Exports: default
 
-// Module 11914 (Tier3OverrideNotice)
+// Module 11917 (Tier3OverrideNotice)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,14 +25,14 @@ const result = require("createCacheKey").fileFinishedImporting("modules/premium/
 
 export default function GuildPowerupsNotificationContainer(guildId) {
   guildId = guildId.guildId;
-  const tmp4 = importDefault(11915)(guildId);
-  const tmp5 = importDefault(11916)(guildId);
+  const tmp4 = importDefault(11918)(guildId);
+  const tmp5 = importDefault(11919)(guildId);
   if (tmp4.shouldShow) {
     let obj = { style: null, children: null };
     obj[0] = tmp.container;
     obj = { variant: "eyebrow", color: "text-subtle", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl.string(tmp2(2316)["3FRirU"]);
+    obj[2] = intl.string(tmp2(2335)["3FRirU"]);
     const items = [callback(require(4299) /* Text */.Text, obj), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
@@ -46,7 +46,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
       const obj1 = { guildId: null, powerupNames: null, warnings: null };
       obj1[0] = guildId;
       ({ expiringPowerupNames: obj4[1], warnings: obj4[2] } = tmp5);
-      shouldShow2 = tmp9(tmp2(11919), obj1);
+      shouldShow2 = tmp9(tmp2(11922), obj1);
     }
     items[2] = shouldShow2;
     obj[1] = items;

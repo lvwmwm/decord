@@ -1,10 +1,10 @@
-// Module ID: 8344
-// Function ID: 8345
+// Module ID: 8349
+// Function ID: 8350
 // Name: computePermissions
-// Dependencies: [19, 1963, 1376, 1415, 1218, 1372, 1971, 1891, 3929, 1903, 676, 8345, 589, 506, 1935, 2]
+// Dependencies: [19, 1982, 1395, 1434, 1218, 1391, 1990, 1910, 3948, 1922, 676, 8350, 589, 506, 1954, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 8344 (computePermissions)
+// Module 8349 (computePermissions)
 import noop from "noop";
 import initialize from "initialize";
 import { ChannelRecordBase } from "createChannelRecord";
@@ -74,7 +74,7 @@ export const buildPermissionContext = function buildPermissionContext(channel, i
     }
   }
   if (null == obj) {
-    let viewNsfwCommandsOrDefault = require(8345) /* resolveNsfwTogglesWithDefaults */.getViewNsfwCommandsOrDefault();
+    let viewNsfwCommandsOrDefault = require(8350) /* resolveNsfwTogglesWithDefaults */.getViewNsfwCommandsOrDefault();
     id = id.getId();
     currentUser = currentUser.getCurrentUser();
     let flag;
@@ -98,7 +98,7 @@ export const buildPermissionContext = function buildPermissionContext(channel, i
       items = [];
     }
     let isThreadResult = channel instanceof tmp;
-    const obj2 = require(8345) /* resolveNsfwTogglesWithDefaults */;
+    const obj2 = require(8350) /* resolveNsfwTogglesWithDefaults */;
     if (isThreadResult) {
       isThreadResult = channel.isThread();
     }
@@ -226,17 +226,17 @@ export const computeCommandContextType = function computeCommandContextType(chan
         type = channel.type;
       }
       if (type !== constants.DM) {
-        const PRIVATE_CHANNEL = require(1935) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL;
+        const PRIVATE_CHANNEL = require(1954) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL;
       } else {
         let recipientId;
         if (channel != null) {
           recipientId = channel.getRecipientId();
         }
       }
-      const BOT_DM = require(1935) /* PermissionOverwriteType */.InteractionContextType.BOT_DM;
+      const BOT_DM = require(1954) /* PermissionOverwriteType */.InteractionContextType.BOT_DM;
     }
   }
-  return require(1935) /* PermissionOverwriteType */.InteractionContextType.GUILD;
+  return require(1954) /* PermissionOverwriteType */.InteractionContextType.GUILD;
 };
 export const getContextGuildId = function getContextGuildId(context) {
   return context instanceof ChannelRecordBase ? context.guild_id : context.id;

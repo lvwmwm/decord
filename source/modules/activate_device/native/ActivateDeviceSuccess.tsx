@@ -1,10 +1,10 @@
-// Module ID: 13234
-// Function ID: 13235
+// Module ID: 13242
+// Function ID: 13243
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 4303, 1236, 10511, 5268, 1416, 13233, 4299, 4714, 2]
+// Dependencies: [19, 17, 21, 4303, 1236, 10516, 5268, 1435, 13241, 4299, 4714, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 13234 (ActivateDeviceSuccess)
+// Module 13242 (ActivateDeviceSuccess)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,23 +36,23 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
   let tmp9 = null;
   if (null != successImage) {
     let obj = { source: null, style: null, resizeMode: "contain" };
-    let obj1 = require(1416) /* getAvatarURL */;
+    let obj1 = require(1435) /* getAvatarURL */;
     obj[0] = obj1.makeSource(successImage);
     obj[1] = tmp.image;
     tmp9 = callback(importDefault(5268), obj);
     const tmp13 = importDefault(5268);
   }
   const items = [tmp9, , ];
-  obj = { style: importDefault(13233).innerContent, children: null };
+  obj = { style: importDefault(13241).innerContent, children: null };
   obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
-  obj[2] = importDefault(13233).centerText;
+  obj[2] = importDefault(13241).centerText;
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl3.string(require(1236) /* getSystemLocale */.t.qDtJmD);
   const items1 = [callback(require(4299) /* Text */.Text, obj), ];
   let tmp18Result = null;
   if (null != stringResult) {
     obj1 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
-    obj1[2] = importDefault(13233).centerText;
+    obj1[2] = importDefault(13241).centerText;
     obj1[3] = stringResult;
     tmp18Result = tmp18(tmp19(4299).Text, obj1);
   }

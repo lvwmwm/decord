@@ -1,10 +1,10 @@
-// Module ID: 11405
-// Function ID: 11406
+// Module ID: 11408
+// Function ID: 11409
 // Name: ForumPostTimestamp
-// Dependencies: [19, 11392, 21, 4303, 8403, 4299, 2]
+// Dependencies: [19, 11395, 21, 4303, 8409, 4299, 2]
 // Exports: default
 
-// Module 11405 (ForumPostTimestamp)
+// Module 11408 (ForumPostTimestamp)
 import "noop";
 import { useForumChannelStore } from "set";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ export default function ForumPostTimestamp(thread) {
   const tmp = callback();
   const tmp2 = require;
   let color = "text-muted";
-  const children = require(8403) /* useLoadForumUnreadCounts */.useLastActiveTimestamp(thread, useForumChannelStore(thread.parent_id).sortOrder, format);
+  const children = require(8409) /* useLoadForumUnreadCounts */.useLastActiveTimestamp(thread, useForumChannelStore(thread.parent_id).sortOrder, format);
   if (hasUnreads) {
     color = "text-default";
   }

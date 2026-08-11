@@ -1,10 +1,10 @@
-// Module ID: 5932
-// Function ID: 5933
+// Module ID: 5934
+// Function ID: 5935
 // Name: showSimpleLoadingModal
-// Dependencies: [4509, 5933, 1988, 2]
+// Dependencies: [4509, 5935, 2007, 2]
 // Exports: showSimpleLoadingModal
 
-// Module 5932 (showSimpleLoadingModal)
+// Module 5934 (showSimpleLoadingModal)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/mobile_web_handoff/native/SimpleLoadingModal.tsx");
 
 export const showSimpleLoadingModal = function showSimpleLoadingModal(closure_4, arg1) {
@@ -20,5 +20,5 @@ export const showSimpleLoadingModal = function showSimpleLoadingModal(closure_4,
       onDismissed();
     }
   };
-  obj.pushLazy(_require(1988)(5933, dependencyMap.paths), obj, closure_4, { animation: "none" });
+  obj.pushLazy(_require(2007)(5935, dependencyMap.paths), obj, closure_4, { animation: "none" });
 };

@@ -1,10 +1,10 @@
-// Module ID: 12184
-// Function ID: 12185
+// Module ID: 12187
+// Function ID: 12188
 // Name: PlaystationNeutralIcon
-// Dependencies: [19, 21, 712, 4004, 12185, 2]
+// Dependencies: [19, 21, 712, 4023, 12188, 2]
 // Exports: PlaystationNeutralIcon
 
-// Module 12184 (PlaystationNeutralIcon)
+// Module 12187 (PlaystationNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const PlaystationNeutralIcon = function PlaystationNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12185) /* registerAsset */;
+  obj[0] = require(12188) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

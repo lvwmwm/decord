@@ -1,14 +1,14 @@
 // Module ID: 4530
 // Function ID: 4531
 // Name: messageAttachmentToUnfurledMediaItem
-// Dependencies: [676, 1384, 1935, 4491, 1467, 2]
+// Dependencies: [676, 1403, 1954, 4491, 1486, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
 // Module 4530 (messageAttachmentToUnfurledMediaItem)
 import { MessageAttachmentFlags } from "ME";
 
 function messageAttachmentToUnfurledMediaItem(flags) {
-  let obj = require(1384) /* hasFlag */;
+  let obj = require(1403) /* hasFlag */;
   let num = flags.flags;
   if (num == null) {
     num = 0;
@@ -25,7 +25,7 @@ function messageAttachmentToUnfurledMediaItem(flags) {
   if (tmpResult.hasFlag(num3, MessageAttachmentFlags.IS_ANIMATED)) {
     num4 = obj.IS_ANIMATED | 0;
   }
-  obj = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: tmp(1935).UnfurledMediaLoadingState.LOADED_SUCCESS, contentScanMetadata: null, flags: null };
+  obj = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: tmp(1954).UnfurledMediaLoadingState.LOADED_SUCCESS, contentScanMetadata: null, flags: null };
   let tmp6;
   if (null != flags.content_scan_version) {
     obj = { version: null, flags: null };
@@ -75,7 +75,7 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(conten
         if (null != obj3.toURLSafe(contentType.proxyUrl)) {
           str3 = "VIDEO";
         }
-        obj3 = importDefault(1467);
+        obj3 = importDefault(1486);
       }
     }
     str = str3;
@@ -124,7 +124,7 @@ export const getMediaItemDisplayUrl = function getMediaItemDisplayUrl(type) {
   } else {
     if ("VIDEO" === type.type) {
       if (null != type.proxyUrl) {
-        let str = importDefault(1467).toURLSafe(type.proxyUrl);
+        let str = importDefault(1486).toURLSafe(type.proxyUrl);
         str = null;
         if (null != str) {
           const searchParams = str.searchParams;

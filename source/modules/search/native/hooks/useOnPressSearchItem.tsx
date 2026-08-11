@@ -1,10 +1,10 @@
-// Module ID: 15725
-// Function ID: 15726
+// Module ID: 15742
+// Function ID: 15743
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 1372, 11711, 8397, 15726, 8396, 676, 1379, 11710, 11735, 1467, 4001, 1236, 8932, 3998, 1480, 15704, 15727, 1231, 8844, 4313, 4311, 7773, 1988, 4513, 4517, 12669, 4745, 4790, 8412, 1222, 11732, 2]
+// Dependencies: [5, 19, 1391, 11714, 8403, 15743, 8402, 676, 1398, 11713, 11738, 1486, 4020, 1236, 8938, 4017, 1499, 15721, 15744, 1231, 8850, 4313, 4311, 7775, 2007, 4513, 4517, 12673, 4745, 4790, 8418, 1222, 11735, 2]
 // Exports: useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 15725 (handleVoiceOrStageChannelConnectPress)
+// Module 15742 (handleVoiceOrStageChannelConnectPress)
 import SearchNavigatorScreens from "SearchNavigatorScreens";
 import ComponentDispatcher from "ComponentDispatcher";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -308,7 +308,7 @@ export const useOnPressMediaItem = function useOnPressMediaItem(searchContext) {
 export const useOnPressGroupDMItem = function useOnPressGroupDMItem(searchContext) {
   searchContext = searchContext.searchContext;
   let navigation;
-  navigation = searchContext(1480).useNavigation();
+  navigation = searchContext(1499).useNavigation();
   const items = [navigation, searchContext];
   return React.useCallback((channelId) => {
     const searchContext = channelId;
@@ -335,7 +335,7 @@ export const useOnPressGroupDMItem = function useOnPressGroupDMItem(searchContex
 export const useOnPressDMItem = function useOnPressDMItem(searchContext) {
   searchContext = searchContext.searchContext;
   let navigation;
-  navigation = searchContext(1480).useNavigation();
+  navigation = searchContext(1499).useNavigation();
   const items = [navigation, searchContext];
   return React.useCallback((userId) => {
     const searchContext = arg1;

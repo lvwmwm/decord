@@ -1,7 +1,7 @@
 // Module ID: 4558
 // Function ID: 4559
 // Name: isString
-// Dependencies: [574, 1393]
+// Dependencies: [574, 1412]
 
 // Module 4558 (isString)
 let closure_0 = require("callBoundIntrinsic")("String.prototype.valueOf");

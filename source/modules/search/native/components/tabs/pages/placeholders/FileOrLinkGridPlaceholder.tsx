@@ -1,10 +1,10 @@
-// Module ID: 15749
-// Function ID: 15750
+// Module ID: 15766
+// Function ID: 15767
 // Name: FileOrLinkGridPlaceholderItem
-// Dependencies: [19, 21, 15729, 4720, 4036, 15750, 2]
+// Dependencies: [19, 21, 15746, 4720, 4042, 15767, 2]
 // Exports: default
 
-// Module 15749 (FileOrLinkGridPlaceholderItem)
+// Module 15766 (FileOrLinkGridPlaceholderItem)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -15,7 +15,7 @@ export default function FileOrLinkGridPlaceholderItem(imageStyle) {
   imageStyle = imageStyle.imageStyle;
   let width;
   let importDefault;
-  let obj = width(15729);
+  let obj = width(15746);
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
   width = imageStyle.width;
   const sum = imageStyle.height + 108 * width(4720).useFontScale();
@@ -24,6 +24,6 @@ export default function FileOrLinkGridPlaceholderItem(imageStyle) {
   const memo = React.useMemo(() => ({ width, height: c1 }), items);
   obj = { style: items1, pointerEvents: "none", children: null };
   items1 = [imageStyle.containerStyle, placeholderAnimatedStyle];
-  obj[2] = jsx(width(15750).SearchListCardContainer, { containerStyle: memo });
-  return jsx(importDefault(4036).View, { style: items1, pointerEvents: "none", children: null });
+  obj[2] = jsx(width(15767).SearchListCardContainer, { containerStyle: memo });
+  return jsx(importDefault(4042).View, { style: items1, pointerEvents: "none", children: null });
 };

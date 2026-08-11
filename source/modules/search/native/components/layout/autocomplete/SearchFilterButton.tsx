@@ -1,8 +1,8 @@
-// Module ID: 15718
-// Function ID: 15719
-// Dependencies: [19, 8396, 21, 15717, 15712, 1348, 8598, 1236, 7751, 14246, 2]
+// Module ID: 15735
+// Function ID: 15736
+// Dependencies: [19, 8402, 21, 15734, 15729, 1367, 8604, 1236, 7753, 14254, 2]
 
-// Module 15718
+// Module 15735
 import importAllResult from "noop";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const memoResult = importAllResult.memo((searchContext) => {
   searchContext = searchContext.searchContext;
   let validOrderedFilterTokens;
   let dependencyMap;
-  let obj = searchContext(15717);
+  let obj = searchContext(15734);
   validOrderedFilterTokens = obj.useValidOrderedFilterTokens(searchContext);
   const items = [searchContext, validOrderedFilterTokens];
   const memo = importAllResult.useMemo(() => validOrderedFilterTokens.map((searchTokenType) => {
@@ -25,7 +25,7 @@ const memoResult = importAllResult.memo((searchContext) => {
     obj[2] = outer1_0(outer1_2[4]).getSearchTokenPressHandler(closure_0, searchTokenType, outer1_4.CONTEXT_MENU);
     return obj;
   }), items);
-  dependencyMap = validOrderedFilterTokens(1348)("SearchFilterButton");
+  dependencyMap = validOrderedFilterTokens(1367)("SearchFilterButton");
   obj = { items: memo, align: "below", title: null, keyboardShouldPersistTaps: "handled", children: null };
   let intl = searchContext(1236).intl;
   obj[2] = intl.string(searchContext(1236).t.oYEmhB);
@@ -41,10 +41,10 @@ const memoResult = importAllResult.memo((searchContext) => {
       str = "md";
     }
     obj.size = str;
-    obj.icon = outer1_5(searchContext(14246).FiltersHorizontalIcon, { size: "sm", color: "redesign-button-tertiary-text" });
-    return outer1_5(searchContext(7751).IconButton, obj);
+    obj.icon = outer1_5(searchContext(14254).FiltersHorizontalIcon, { size: "sm", color: "redesign-button-tertiary-text" });
+    return outer1_5(searchContext(7753).IconButton, obj);
   };
-  return jsx(searchContext(8598).ContextMenu, { items: memo, align: "below", title: null, keyboardShouldPersistTaps: "handled", children: null });
+  return jsx(searchContext(8604).ContextMenu, { items: memo, align: "below", title: null, keyboardShouldPersistTaps: "handled", children: null });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterButton.tsx");
 

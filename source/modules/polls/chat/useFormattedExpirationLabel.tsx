@@ -1,12 +1,12 @@
-// Module ID: 8322
-// Function ID: 8323
+// Module ID: 8327
+// Function ID: 8328
 // Name: formatExpirationLabel
-// Dependencies: [3883, 1236, 2]
+// Dependencies: [3902, 1236, 2]
 // Exports: default
 
-// Module 8322 (formatExpirationLabel)
+// Module 8327 (formatExpirationLabel)
 function formatExpirationLabel(expiry) {
-  const tmp2 = importDefault(3883)();
+  const tmp2 = importDefault(3902)();
   if (expiry > tmp2) {
     const diffResult = expiry.diff(tmp2, "days");
     if (diffResult > 1) {

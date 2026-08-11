@@ -1,10 +1,10 @@
-// Module ID: 9564
-// Function ID: 9565
+// Module ID: 9569
+// Function ID: 9570
 // Name: ProductNameAndDescription
-// Dependencies: [17, 21, 4303, 712, 9565, 4299, 7013, 9413, 1236, 9566, 9394, 1930, 2]
+// Dependencies: [17, 21, 4303, 712, 9570, 4299, 7016, 9419, 1236, 9571, 9400, 1949, 2]
 // Exports: default
 
-// Module 9564 (ProductNameAndDescription)
+// Module 9569 (ProductNameAndDescription)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,7 +14,7 @@ let c5;
 function ProductNameAndDescription(product) {
   product = product.product;
   const tmp = callback3();
-  let obj = require(9565) /* getBundleDescription */;
+  let obj = require(9570) /* getBundleDescription */;
   obj = { style: tmp.description, children: null };
   const productDescription = obj.useProductDescription(product);
   obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
@@ -24,9 +24,9 @@ function ProductNameAndDescription(product) {
 }
 function ProductPurchaseStatus(product) {
   product = product.product;
-  let obj = require(7013) /* getItemRecordsFromPurchases */;
+  let obj = require(7016) /* getItemRecordsFromPurchases */;
   const result = obj.isPremiumCollectiblesProduct(product);
-  let obj1 = require(9413) /* getProductPurchaseState */;
+  let obj1 = require(9419) /* getProductPurchaseState */;
   const productPurchaseState = obj1.useProductPurchaseState(product);
   if (productPurchaseState.isPurchased) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
@@ -44,7 +44,7 @@ function ProductPurchaseStatus(product) {
       obj1 = { product: null, onTrackPress: null };
       obj1[0] = product;
       obj1[1] = product.onTrackPress;
-      children = tmp6(importDefault(9566), obj1);
+      children = tmp6(importDefault(9571), obj1);
     }
   }
   return closure_4(View, { children });
@@ -52,7 +52,7 @@ function ProductPurchaseStatus(product) {
 function BundleProductDetailsActionSheetInfo(onTrackPress) {
   const product = onTrackPress.product;
   const tmp = callback3();
-  let obj = require(9394) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(9400) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   const enabled = obj.useCollectiblesMobileFlexibleBundlesExperiment("BundleProductDetailsActionSheetInfo").enabled;
   const items = [tmp.body, ];
   let bundleBody = enabled;
@@ -84,7 +84,7 @@ export default function ProductDetailsActionSheetInfo(arg0) {
   let onTrackPress;
   let product;
   ({ product, onTrackPress } = arg0);
-  if (product.type === require(1930) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE) {
+  if (product.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE) {
     let obj = { product: null, onTrackPress: null };
     obj[0] = product;
     obj[1] = onTrackPress;

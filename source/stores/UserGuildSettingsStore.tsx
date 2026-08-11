@@ -1,7 +1,7 @@
 // Module ID: 4499
 // Function ID: 4500
 // Name: updateUserGuildSettingsInternal
-// Dependencies: [1963, 3931, 1376, 1372, 1891, 1903, 676, 3941, 4500, 685, 3932, 12, 1384, 709, 11, 589, 2]
+// Dependencies: [1982, 3950, 1395, 1391, 1910, 1922, 676, 3960, 4500, 685, 3951, 12, 1403, 709, 11, 589, 2]
 // Exports: convertChannelOverridesToMap, getGuildDefaults
 
 // Module 4499 (updateUserGuildSettingsInternal)
@@ -144,7 +144,7 @@ function updateUserGuildSettingsInternal(id, channel_overrides) {
       let tmp33 = key10101;
       let tmp34 = importAll;
       let tmp35 = dependencyMap;
-      let obj8 = importAll(1384);
+      let obj8 = importAll(1403);
       let tmp36 = constants;
       if (obj8.hasFlag(obj[key10101].flags, constants.OPT_IN_ENABLED)) {
         let addResult = set2.add(key10101);
@@ -338,7 +338,7 @@ prototype["isMobilePushEnabled"] = function isMobilePushEnabled(closure_2) {
 };
 prototype["isMuted"] = function isMuted(arg0) {
   if (dependencyMap[arg0] != null) {
-    const obj = require(3932) /* reset */;
+    const obj = require(3951) /* reset */;
     return obj.computeIsMuted(tmp);
   } else {
     let guild = store2.getGuild(arg0);
@@ -352,7 +352,7 @@ prototype["isMuted"] = function isMuted(arg0) {
 };
 prototype["isTemporarilyMuted"] = function isTemporarilyMuted(arg0) {
   if (dependencyMap[arg0] != null) {
-    const obj = require(3932) /* reset */;
+    const obj = require(3951) /* reset */;
     return obj.isTemporarilyMuted(tmp);
   } else {
     let guild = store2.getGuild(arg0);
@@ -588,9 +588,9 @@ prototype["getNewForumThreadsCreated"] = function getNewForumThreadsCreated(chan
         if (tmp2Result.hasFlag(tmp.flags, tmp4.NEW_FORUM_THREADS_OFF)) {
           return false;
         }
-        tmp2Result = tmp2(1384);
+        tmp2Result = tmp2(1403);
       }
-      obj = importAll(1384);
+      obj = importAll(1403);
       tmp2 = importAll;
       tmp4 = constants;
     }
@@ -605,8 +605,8 @@ prototype["isOptInEnabled"] = function isOptInEnabled(closure_0) {
       let isOptInEnabledResult = obj.isOptInEnabled(closure_0);
     } else {
       const self = this;
-      isOptInEnabledResult = importAll(1384).hasFlag(this.getGuildFlags(closure_0), constants2.OPT_IN_CHANNELS_ON);
-      const obj2 = importAll(1384);
+      isOptInEnabledResult = importAll(1403).hasFlag(this.getGuildFlags(closure_0), constants2.OPT_IN_CHANNELS_ON);
+      const obj2 = importAll(1403);
     }
     obj = initialize;
   }
@@ -652,7 +652,7 @@ prototype["isChannelOptedIn"] = function isChannelOptedIn(closure_0) {
       if (num == null) {
         num = 0;
       }
-      return importAll(1384).hasFlag(num, constants.OPT_IN_ENABLED);
+      return importAll(1403).hasFlag(num, constants.OPT_IN_ENABLED);
     }
     obj3 = initialize;
   }
@@ -730,7 +730,7 @@ prototype["isMessagesFavorite"] = function isMessagesFavorite(id) {
   if (num == null) {
     num = 0;
   }
-  return importAll(1384).hasFlag(num, constants.FAVORITED);
+  return importAll(1403).hasFlag(num, constants.FAVORITED);
 };
 Object.defineProperty(prototype, "accountNotificationSettings", {
   get: function accountNotificationSettings() {
@@ -751,8 +751,8 @@ prototype["getGuildUnreadSetting"] = function getGuildUnreadSetting(guild_id) {
     if (obj.hasFlag(guildFlags, constants2.UNREADS_ALL_MESSAGES)) {
       let ALL_MESSAGES = UnreadSetting.ALL_MESSAGES;
     } else {
-      ALL_MESSAGES = importAll(1384).hasFlag(guildFlags, constants2.UNREADS_ONLY_MENTIONS) ? tmp7.ONLY_MENTIONS : tmp7.UNSET;
-      const tmp4Result = importAll(1384);
+      ALL_MESSAGES = importAll(1403).hasFlag(guildFlags, constants2.UNREADS_ONLY_MENTIONS) ? tmp7.ONLY_MENTIONS : tmp7.UNSET;
+      const tmp4Result = importAll(1403);
     }
     return ALL_MESSAGES;
   } else {
@@ -772,9 +772,9 @@ prototype["resolveGuildUnreadSetting"] = function resolveGuildUnreadSetting(guil
       } else {
         ONLY_MENTIONS = UnreadSetting.ONLY_MENTIONS;
       }
-      tmp3Result = tmp3(1384);
+      tmp3Result = tmp3(1403);
     }
-    obj = importAll(1384);
+    obj = importAll(1403);
     tmp3 = importAll;
     tmp5 = constants2;
   } else {
@@ -789,8 +789,8 @@ prototype["getChannelUnreadSetting"] = function getChannelUnreadSetting(guild_id
   if (obj.hasFlag(channelIdFlags, constants.UNREADS_ALL_MESSAGES)) {
     let ALL_MESSAGES = UnreadSetting.ALL_MESSAGES;
   } else {
-    ALL_MESSAGES = importAll(1384).hasFlag(channelIdFlags, constants.UNREADS_ONLY_MENTIONS) ? tmp5.ONLY_MENTIONS : tmp5.UNSET;
-    const tmp2Result = importAll(1384);
+    ALL_MESSAGES = importAll(1403).hasFlag(channelIdFlags, constants.UNREADS_ONLY_MENTIONS) ? tmp5.ONLY_MENTIONS : tmp5.UNSET;
+    const tmp2Result = importAll(1403);
   }
   return ALL_MESSAGES;
 };
@@ -889,9 +889,9 @@ const userGuildSettingsStoreClass = new UserGuildSettingsStoreClass(require("dis
     let tmp5;
     let tmp6;
     notificationSettings = notificationSettings.notificationSettings;
-    let closure_18 = importAll(1384).hasFlag(notificationSettings.flags, AccountNotificationFlags.USE_NEW_NOTIFICATIONS);
-    const obj = importAll(1384);
-    let closure_19 = importAll(1384).hasFlag(notificationSettings.flags, AccountNotificationFlags.MENTION_ON_ALL_MESSAGES);
+    let closure_18 = importAll(1403).hasFlag(notificationSettings.flags, AccountNotificationFlags.USE_NEW_NOTIFICATIONS);
+    const obj = importAll(1403);
+    let closure_19 = importAll(1403).hasFlag(notificationSettings.flags, AccountNotificationFlags.MENTION_ON_ALL_MESSAGES);
     tmp5.reset();
     tmp6.reset();
     if (!notificationSettings.userGuildSettings.partial) {
@@ -1101,9 +1101,9 @@ const userGuildSettingsStoreClass = new UserGuildSettingsStoreClass(require("dis
   },
   NOTIFICATION_SETTINGS_UPDATE: function handleNotificationSettingsUpdate(settings) {
     settings = settings.settings;
-    let closure_18 = importAll(1384).hasFlag(settings.flags, AccountNotificationFlags.USE_NEW_NOTIFICATIONS);
-    const obj = importAll(1384);
-    let closure_19 = importAll(1384).hasFlag(settings.flags, AccountNotificationFlags.MENTION_ON_ALL_MESSAGES);
+    let closure_18 = importAll(1403).hasFlag(settings.flags, AccountNotificationFlags.USE_NEW_NOTIFICATIONS);
+    const obj = importAll(1403);
+    let closure_19 = importAll(1403).hasFlag(settings.flags, AccountNotificationFlags.MENTION_ON_ALL_MESSAGES);
   },
   GUILD_MUTE_EXPIRED() {
     return true;

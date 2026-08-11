@@ -1,16 +1,16 @@
 // Module ID: 4513
 // Function ID: 4514
 // Name: openChannelCallModal
-// Dependencies: [5, 19, 3994, 4514, 1372, 3938, 1960, 1903, 676, 1221, 4516, 21, 4517, 4497, 10769, 1231, 4509, 10652, 1988, 5821, 5826, 4271, 13032, 5129, 4643, 1236, 4861, 4166, 13067, 4644, 9242, 4158, 7774, 2]
+// Dependencies: [5, 19, 4013, 4514, 1391, 3957, 1979, 1922, 676, 1221, 4516, 21, 4517, 4497, 10774, 1231, 4509, 10657, 2007, 5821, 5826, 4271, 13041, 5129, 4643, 1236, 4861, 4166, 13076, 4644, 9248, 4158, 7776, 2]
 // Exports: dismissVoiceChannelScreens, getVoiceChannelKey, getVoiceChannelKeyByChannelId, handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openGuildVoiceModal, openVoiceChannelActionSheet, showGuardCallAlert
 
 // Module 4513 (openChannelCallModal)
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import runAfterInteractions from "runAfterInteractions";
 import setContent from "setContent";
 import withEqualityFn from "withEqualityFn";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import closure_8 from "upsertRelationship";
+import closure_8 from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -40,10 +40,10 @@ function openChannelCallModal(channel) {
       obj[0] = channel;
       const _HermesInternal = HermesInternal;
       const tmp3Result = tmp3(4509);
-      tmp3Result.pushLazy(tmp(1988)(10652, dependencyMap.paths), obj, "" + c17 + "-" + channel.id);
-      const tmp5 = tmp(1988)(10652, dependencyMap.paths);
+      tmp3Result.pushLazy(tmp(2007)(10657, dependencyMap.paths), obj, "" + c17 + "-" + channel.id);
+      const tmp5 = tmp(2007)(10657, dependencyMap.paths);
     }
-    tmpResult = tmp(10769);
+    tmpResult = tmp(10774);
   }
 }
 function monkeyPatchCall() {
@@ -168,7 +168,7 @@ export const maybeShowAgeGateModal = function maybeShowAgeGateModal(width) {
 export const openVoiceChannelActionSheet = function openVoiceChannelActionSheet(closure_0) {
   let obj = importDefault(4271);
   obj = { channel: closure_0 };
-  obj.openLazy(require(1988) /* asyncRequireImpl */(13032, dependencyMap.paths), "" + c17 + "-" + closure_0.id, obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(13041, dependencyMap.paths), "" + c17 + "-" + closure_0.id, obj);
 };
 export const hideVoiceChannelActionSheet = function hideVoiceChannelActionSheet(closure_0) {
   importDefault(4271).hideActionSheet("" + c17 + "-" + closure_0.id);
@@ -355,7 +355,7 @@ export const handleStartCall = function handleStartCall(channel, flag) {
             recipientId = outer1_0.getRecipientId();
           }
           outer1_1 = recipientId;
-          const tmp25 = outer1_1(9242);
+          const tmp25 = outer1_1(9248);
           const call = tmp25.call;
           const id = c0.id;
           let tmp28 = outer1_0;
@@ -470,7 +470,7 @@ export const handleRedesignGroupDMCall = function handleRedesignGroupDMCall(id) 
           }
           obj1 = outer1_0(4166);
           obj1.dismissKeyboard();
-          const tmp11 = v0(9242);
+          const tmp11 = v0(9248);
           const call = tmp11.call;
           id = id.id;
           if (typeof call === "unknown") {
@@ -602,8 +602,8 @@ export const navigateToVoiceChannel = function navigateToVoiceChannel(channel, L
   if (channel.isPrivate()) {
     openChannelCallModal(channel);
   } else if (channel.isGuildStageVoice()) {
-    require(7774) /* openStageChannelSettings */.openStageChannel(channel);
-    const obj2 = require(7774) /* openStageChannelSettings */;
+    require(7776) /* openStageChannelSettings */.openStageChannel(channel);
+    const obj2 = require(7776) /* openStageChannelSettings */;
   } else {
     const _HermesInternal = HermesInternal;
     const combined = "" + c17 + "-" + channel.id;

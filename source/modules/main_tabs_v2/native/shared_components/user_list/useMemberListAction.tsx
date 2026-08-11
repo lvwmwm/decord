@@ -1,16 +1,16 @@
-// Module ID: 11062
-// Function ID: 11063
+// Module ID: 11067
+// Function ID: 11068
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 1372, 3929, 3938, 1903, 9627, 676, 21, 4303, 1348, 647, 8997, 8523, 4158, 11063, 11064, 1236, 9722, 9721, 4123, 1358, 11066, 11071, 6011, 11072, 1872, 9065, 7970, 5374, 2]
+// Dependencies: [32, 19, 17, 1391, 3948, 3957, 1922, 9632, 676, 21, 4303, 1367, 647, 9003, 8529, 4158, 11068, 11069, 1236, 9727, 9726, 4125, 1377, 11071, 11076, 6013, 11077, 1891, 9071, 7972, 5374, 2]
 // Exports: default
 
-// Module 11062 (useMemberListAction)
+// Module 11067 (useMemberListAction)
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
 import { View } from "ChatPlusIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { jsx } from "UNSAFE_isDismissibleContentDismissed";
@@ -21,7 +21,7 @@ let closure_12;
 let unpackModuleId;
 const require = arg1;
 ({ Permissions: c10, AnalyticsSections: unpackModuleId, InstantInviteSources: closure_12 } = ME);
-let closure_14 = { listActionRenderer: "Array", listActionHeight: "ct" };
+let closure_14 = { listActionRenderer: "Array", listActionHeight: "HermesInternal" };
 let closure_15 = createCacheKey.createStyles({ wrapper: { paddingTop: require("PX_24").USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 
@@ -46,7 +46,7 @@ export default function useMemberListAction(channel) {
   let callback1;
   let tmp = callback();
   importDefault = tmp;
-  const tmp4 = importDefault(1348)("useMemberListAction");
+  const tmp4 = importDefault(1367)("useMemberListAction");
   dependencyMap = tmp4;
   const items = [c9];
   stateFromStores = channel(647).useStateFromStores(items, () => {
@@ -67,8 +67,8 @@ export default function useMemberListAction(channel) {
   });
   let canResult = flag3.can(first.MANAGE_ROLES, channel);
   if (canResult) {
-    canResult = channel(8997).isPrivateGuildChannel(channel);
-    const tmp5Result = channel(8997);
+    canResult = channel(9003).isPrivateGuildChannel(channel);
+    const tmp5Result = channel(9003);
   }
   React = canResult;
   let tmp9 = null != channel && !flag;
@@ -100,7 +100,7 @@ export default function useMemberListAction(channel) {
   if (channel != null) {
     id = channel.id;
   }
-  const tmp15 = importDefault(8523)();
+  const tmp15 = importDefault(8529)();
   c9 = tmp15;
   const tmp16 = stateFromStores(React.useState(undefined), 2);
   first = tmp16[0];
@@ -155,7 +155,7 @@ export default function useMemberListAction(channel) {
             const intl3 = channel(_undefined2[18]).intl;
             obj[2] = intl3.string(channel(_undefined2[18]).t["LR+Ptf"]);
             obj[3] = function handlePress() {
-              if (null != outer1_6.getChannel(upsertRelationship)) {
+              if (null != outer1_6.getChannel(markAllUserIdListsStale)) {
                 let obj = callback(outer1_2[21]);
                 if (obj.UNSAFE_isDismissibleContentDismissed(callback(outer1_2[22]).DismissibleContent.GDM_INVITE_REMINDER)) {
                   callback3();
@@ -174,7 +174,7 @@ export default function useMemberListAction(channel) {
             const intl2 = channel(_undefined2[18]).intl;
             obj[2] = intl2.string(channel(_undefined2[18]).t.z9Mqln);
             obj[3] = function handlePress() {
-              const channel = outer1_6.getChannel(upsertRelationship);
+              const channel = outer1_6.getChannel(markAllUserIdListsStale);
               if (null != channel) {
                 const result = callback(outer1_2[26]).openChannelMembersActionSheet(channel.id, channel.guild_id);
                 const obj = callback(outer1_2[26]);
@@ -187,7 +187,7 @@ export default function useMemberListAction(channel) {
             const intl = channel(_undefined2[18]).intl;
             obj[2] = intl.string(channel(_undefined2[18]).t["Ab/6S0"]);
             obj[3] = function handlePress() {
-              const channel = outer1_6.getChannel(upsertRelationship);
+              const channel = outer1_6.getChannel(markAllUserIdListsStale);
               if (null != channel) {
                 let obj = callback(outer1_2[27]);
                 const result = obj.dismissGlobalKeyboard();

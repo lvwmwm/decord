@@ -1,9 +1,9 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14448
+// Function ID: 14449
 // Name: route
-// Dependencies: [8082, 676, 14441, 14442, 10447, 1236, 14443, 14445, 2]
+// Dependencies: [8084, 676, 14449, 14450, 10452, 1236, 14451, 14453, 2]
 
-// Module 14440 (route)
+// Module 14448 (route)
 import { UserGuildRoleSubscriptionRelationship as closure_3 } from "MAX_SUBSCRIPTION_TIERS";
 import createToggle from "createToggle";
 
@@ -15,14 +15,14 @@ obj = {
   parent: require("MobileSetting").MobileSetting.PREMIUM,
   IconComponent: require("TicketIcon").TicketIcon,
   usePredicate: function useHasGuildRoleSubscriptionsSetting() {
-    return importDefault(14442)() === constants.SUBSCRIBED;
+    return importDefault(14450)() === constants.SUBSCRIBED;
   },
   screen: obj
 };
 obj = {
   route: require("ME").UserSettingsSections.GUILD_ROLE_SUBSCRIPTIONS,
   getComponent() {
-    return require(14445) /* GuildRoleSubscriptionsSectionHeader */.default;
+    return require(14453) /* GuildRoleSubscriptionsSectionHeader */.default;
   }
 };
 const route = createToggle.createRoute(obj);

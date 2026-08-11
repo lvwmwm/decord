@@ -1,9 +1,9 @@
-// Module ID: 9944
-// Function ID: 9945
+// Module ID: 9949
+// Function ID: 9950
 // Name: FavoritesSearch
-// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 9938, 6001, 4036, 4304, 4307, 7751, 6007, 1236, 5992, 9936, 4846, 9945, 4299, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 9943, 6003, 4042, 4304, 4307, 7753, 6009, 1236, 5994, 9941, 4846, 9950, 4299, 2]
 
-// Module 9944 (FavoritesSearch)
+// Module 9949 (FavoritesSearch)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Text";
 import { View } from "PressableBase";
@@ -145,7 +145,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
   ({ categoryType, onQueryClear } = arg0);
   ({ columnWidth, onQueryChange, onFavoritesQueryChange, searchInputRef } = arg0);
   const tmp = callback();
-  require(9936) /* GIF_PROVIDER */;
+  require(9941) /* GIF_PROVIDER */;
   let obj = { style: tmp.container, children: null };
   if (categoryType === GIFPickerResultTypes.SEARCH) {
     obj = { size: "md", onChange: null, placeholder: null, onClear: null, ref: null, isRound: true };
@@ -153,7 +153,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj[2] = tmp5;
     obj[3] = onQueryClear;
     obj[4] = searchInputRef;
-    let tmp13Result = tmp6(tmp2(5992).SearchField, obj);
+    let tmp13Result = tmp6(tmp2(5994).SearchField, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
@@ -167,7 +167,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj1[3] = intl4.formatToPlainString(tmp2(1236).t.UTypEu, obj2);
     const obj3 = { color: null, size: "sm" };
     obj3[0] = importDefault(712).colors.INTERACTIVE_TEXT_ACTIVE;
-    const items = [tmp6(tmp2(9945).ChevronLargeLeftIcon, obj3), ];
+    const items = [tmp6(tmp2(9950).ChevronLargeLeftIcon, obj3), ];
     if (categoryType === tmp8.TRENDING_GIFS) {
       const intl3 = tmp2(1236).intl;
       let stringResult = intl3.string(tmp2(1236).t.TsWCdW);

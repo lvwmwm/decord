@@ -1,7 +1,7 @@
 // Module ID: 4809
 // Function ID: 4810
 // Name: TextIcon
-// Dependencies: [19, 21, 712, 4004, 4768, 2]
+// Dependencies: [19, 21, 712, 4023, 4768, 2]
 // Exports: TextIcon
 
 // Module 4809 (TextIcon)
@@ -22,5 +22,5 @@ export const TextIcon = function TextIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

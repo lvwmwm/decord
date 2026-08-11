@@ -1,10 +1,10 @@
-// Module ID: 15585
-// Function ID: 15586
+// Module ID: 15602
+// Function ID: 15603
 // Name: getPrimaryCategories
-// Dependencies: [9023, 12, 589, 1351, 1236, 709, 2]
+// Dependencies: [9029, 12, 589, 1370, 1236, 709, 2]
 // Exports: areDiscoveryCategoriesEqual
 
-// Module 15585 (getPrimaryCategories)
+// Module 15602 (getPrimaryCategories)
 import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID";
 import { Store } from "initialize";
 
@@ -29,7 +29,7 @@ prototype["getDiscoveryCategories"] = function getDiscoveryCategories() {
     return closure_9.find((categoryId) => categoryId.categoryId === closure_0);
   });
   const obj = { categoryId: closure_5, name: null };
-  const found = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+  const found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.Ym2Ri6);
   const items = [obj, ...found];
@@ -41,7 +41,7 @@ prototype["getClanDiscoveryCategories"] = function getClanDiscoveryCategories() 
     return closure_9.find((categoryId) => categoryId.categoryId === closure_0);
   });
   const obj = { categoryId: closure_5, name: null };
-  const found = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+  const found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.QToH29);
   const items = [obj, ...found];

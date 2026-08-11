@@ -1,10 +1,10 @@
-// Module ID: 15291
-// Function ID: 15292
+// Module ID: 15302
+// Function ID: 15303
 // Name: _saveGuildThemeNuxPreference
-// Dependencies: [5, 1340, 4235, 1355, 2]
+// Dependencies: [5, 1340, 4235, 1374, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 15291 (_saveGuildThemeNuxPreference)
+// Module 15302 (_saveGuildThemeNuxPreference)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 
@@ -51,7 +51,7 @@ function _saveGuildThemeNuxPreference() {
               } else {
                 GUILD = GuildThemeSourcePreference.GUILD;
               }
-              GuildThemeSourcePreference = callback(1355);
+              GuildThemeSourcePreference = callback(1374);
               const result = GuildThemeSourcePreference.setDefaultGuildThemePreference(GUILD);
               c4 = 1;
               c5 = 1;
@@ -66,7 +66,7 @@ function _saveGuildThemeNuxPreference() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              obj1 = callback(1355);
+              obj1 = callback(1374);
               c4 = 2;
               c5 = 1;
               const obj2 = { value: null, done: false };

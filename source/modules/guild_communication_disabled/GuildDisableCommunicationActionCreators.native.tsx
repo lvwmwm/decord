@@ -1,10 +1,10 @@
-// Module ID: 11239
-// Function ID: 11240
+// Module ID: 11244
+// Function ID: 11245
 // Name: openDisableCommunication
-// Dependencies: [19, 1903, 21, 4509, 11240, 1988, 4643, 11243, 2]
+// Dependencies: [19, 1922, 21, 4509, 11245, 2007, 4643, 11248, 2]
 // Exports: openDisableCommunication, openEnableCommunication
 
-// Module 11239 (openDisableCommunication)
+// Module 11244 (openDisableCommunication)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ export const openDisableCommunication = function openDisableCommunication(userId
     obj[0] = guildId;
     obj[1] = user;
     obj[2] = cancelButtonCallback;
-    obj.pushLazy(require(1988) /* asyncRequireImpl */(11240, dependencyMap.paths), obj);
+    obj.pushLazy(require(2007) /* asyncRequireImpl */(11245, dependencyMap.paths), obj);
   }
 };
 export const openEnableCommunication = function openEnableCommunication(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 12134
-// Function ID: 12135
+// Module ID: 12137
+// Function ID: 12138
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 676, 12135, 1894, 1236, 3030, 2]
+// Dependencies: [19, 676, 12138, 1913, 1236, 3049, 2]
 // Exports: default
 
-// Module 12134 (useFavoritesGuildCategoryAddAction)
+// Module 12137 (useFavoritesGuildCategoryAddAction)
 import noop from "noop";
 import { ChannelTypes } from "ME";
 
@@ -17,14 +17,14 @@ export default function useFavoritesGuildCategoryAddAction(id) {
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[2])({ parentId: id.id, source: "favorites_add_to_category" });
   }, items);
-  let obj = _require(1894);
+  let obj = _require(1913);
   let tmp4 = null;
   if (obj.isFavoritesGuildId(id.getGuildId())) {
     tmp4 = null;
     if (id.type === ChannelTypes.GUILD_CATEGORY) {
       obj = { label: null, perform: null };
       const intl = _require(1236).intl;
-      obj[0] = intl.string(importDefault(3030)["1QJmIL"]);
+      obj[0] = intl.string(importDefault(3049)["1QJmIL"]);
       obj[1] = callback;
       tmp4 = obj;
     }

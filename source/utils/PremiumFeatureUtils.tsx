@@ -1,10 +1,10 @@
-// Module ID: 8699
-// Function ID: 8700
+// Module ID: 8705
+// Function ID: 8706
 // Name: getUserMaxFileSize
-// Dependencies: [1904, 676, 1905, 1926, 2]
+// Dependencies: [1923, 676, 1924, 1945, 2]
 // Exports: getUserMaxFileSize
 
-// Module 8699 (getUserMaxFileSize)
+// Module 8705 (getUserMaxFileSize)
 import setPremiumTypeActual from "setPremiumTypeActual";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
@@ -29,7 +29,7 @@ function getUserMaxFileSize(currentUser) {
       if (obj.isPremium(currentUser)) {
         fileSize = table[currentUser.premiumType].fileSize;
       }
-      obj = require(1926) /* isPremiumAtLeast */;
+      obj = require(1945) /* isPremiumAtLeast */;
     }
     fileSize = closure_3;
   }

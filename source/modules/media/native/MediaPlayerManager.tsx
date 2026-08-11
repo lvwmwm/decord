@@ -1,10 +1,10 @@
-// Module ID: 13800
-// Function ID: 13801
+// Module ID: 13808
+// Function ID: 13809
 // Name: _initialize
-// Dependencies: [17, 1371, 4514, 1372, 4521, 3929, 6876, 676, 9759, 13801, 505, 3, 644, 705, 4482, 4159, 709, 500, 643, 6917, 9762, 2]
+// Dependencies: [17, 1390, 4514, 1391, 4521, 3948, 6878, 676, 9764, 13809, 505, 3, 644, 705, 4482, 4159, 709, 500, 643, 6920, 9767, 2]
 // Exports: isPlaybackComplete
 
-// Module 13800 (_initialize)
+// Module 13808 (_initialize)
 import get_ActivityIndicator from "set";
 import participantFromServer from "participantFromServer";
 import withEqualityFn from "withEqualityFn";
@@ -28,9 +28,20 @@ let map1;
 let closure_16 = new require("ensureGuildLoaded")("MediaPlayerManager");
 let obj = keys.create((arg0) => {
   let closure_0 = arg0;
-  const obj = { activeMediaPlayerSource: "HermesInternal", mediaSourceMessage: "PX_16", canAccessMedia: "disabled", isPlaying: false, wasPipClosedByUser: null, progress: null, rate: "ct", showPip: "onPressHeaderBarButtonMenuItem", closePip: "obscureBackground", displayedMediaItemIdsPerChannel: "hideNavigationBar", currentlyDisplayedChannelId: "onFocus" };
-  obj[8] = function closePip() {
-    callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
+  const obj = {
+    activeMediaPlayerSource: "HermesInternal",
+    mediaSourceMessage: "PX_16",
+    canAccessMedia: "disabled",
+    isPlaying: false,
+    wasPipClosedByUser: null,
+    progress: null,
+    rate: "ct",
+    showPip: "indented",
+    closePip() {
+      callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
+    },
+    displayedMediaItemIdsPerChannel: "\u{1F468}\u{1F3FD}\u200D\u{1F37C}",
+    currentlyDisplayedChannelId: true
   };
   obj[9] = {};
   return obj;
@@ -340,13 +351,13 @@ prototype["getOrFetchMediaSourceMessage"] = function getOrFetchMediaSourceMessag
         const obj = { channelId: null, messageId: null };
         obj[0] = channelId;
         obj[1] = messageId;
-        const message1 = self(6917).fetchMessage(obj);
+        const message1 = self(6920).fetchMessage(obj);
         message1.then((arg0) => {
           if (null != arg0) {
             const result = self.handleMediaSourceMessageUpdated(arg0);
           }
         });
-        const obj2 = self(6917);
+        const obj2 = self(6920);
       }
       obj4 = message;
     }

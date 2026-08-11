@@ -1,12 +1,12 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16700
+// Function ID: 16701
 // Name: SyncingToGamesItem
-// Dependencies: [19, 3938, 1903, 676, 21, 1480, 5734, 5767, 5374, 4494, 4764, 4005, 712, 16611, 12, 7967, 4712, 5714, 2]
+// Dependencies: [19, 3957, 1922, 676, 21, 1499, 5734, 5767, 5374, 4494, 4764, 4024, 712, 16623, 12, 7969, 4712, 5714, 2]
 // Exports: default
 
-// Module 16688 (SyncingToGamesItem)
+// Module 16700 (SyncingToGamesItem)
 import "noop";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { GuildSettingsSections } from "ME";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function SyncingToGamesItem(channels) {
   channels = channels.channels;
   const isOnlySection = channels.isOnlySection;
   let dependencyMap;
-  let obj = channels(1480);
+  let obj = channels(1499);
   dependencyMap = obj.useNavigation();
   const getOrFetchApplication = channels(5734).useGetOrFetchApplication(channels.applicationId);
   let tmp5Result = null;
@@ -66,9 +66,9 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   let _require;
   let keys;
   ({ contentContainerStyle, guildId } = arg0);
-  let obj = _require(4005);
+  let obj = _require(4024);
   const token = obj.useToken(keys(712).modules.mobile.TABLE_ROW_PADDING);
-  let obj1 = _require(16611);
+  let obj1 = _require(16623);
   const channelsAllowedToUnlink = obj1.useChannelsAllowedToUnlink(guildId);
   let obj2 = keys(12);
   const groupByResult = obj2.groupBy(channelsAllowedToUnlink, (linkedLobby) => {
@@ -91,7 +91,7 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   obj2[1] = keys(712).space.PX_24;
   obj2[2] = keys.map((applicationId) => outer1_6(outer1_9, { applicationId, channels: _undefined[applicationId], isOnlySection: 1 === keys.length }, applicationId));
   obj[1] = callback(_require(4712).Stack, obj2);
-  const items1 = [callback(_require(7967).Form, obj), callback(_require(5714).NavScrim, {})];
+  const items1 = [callback(_require(7969).Form, obj), callback(_require(5714).NavScrim, {})];
   obj[0] = items1;
   return callback2(closure_7, obj);
 };

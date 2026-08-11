@@ -1,9 +1,9 @@
-// Module ID: 12896
-// Function ID: 12897
+// Module ID: 12900
+// Function ID: 12901
 // Name: componentDidMount
 // Dependencies: [109, 19, 17, 21, 5720, 2]
 
-// Module 12896 (componentDidMount)
+// Module 12900 (componentDidMount)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

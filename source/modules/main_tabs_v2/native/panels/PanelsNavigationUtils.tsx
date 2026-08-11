@@ -1,10 +1,10 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15150
+// Function ID: 15151
 // Name: convertPortraitToLandscapeScreens
-// Dependencies: [4159, 4158, 1485, 514, 2]
+// Dependencies: [4159, 4158, 1504, 514, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 15141 (convertPortraitToLandscapeScreens)
+// Module 15150 (convertPortraitToLandscapeScreens)
 const result = require("CommonActions").fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");
 
 export const convertPortraitToLandscapeScreens = function convertPortraitToLandscapeScreens() {
@@ -45,7 +45,7 @@ export const convertPortraitToLandscapeScreens = function convertPortraitToLands
                   const items1 = [coerceMainRouteResult];
                   const routes1 = state.routes;
                   HermesBuiltin.arraySpread(routes1.slice(1), 1);
-                  const CommonActions = tmp(1485).CommonActions;
+                  const CommonActions = tmp(1504).CommonActions;
                   obj = {};
                   const merged1 = Object.assign(state);
                   obj.routes = items1;
@@ -130,7 +130,7 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               const items1 = [coerceMainRouteResult];
               const routes1 = state.routes;
               HermesBuiltin.arraySpread(routes1.slice(1), 1);
-              const CommonActions = tmp(1485).CommonActions;
+              const CommonActions = tmp(1504).CommonActions;
               const obj2 = {};
               const merged1 = Object.assign(state);
               obj2.routes = items1;

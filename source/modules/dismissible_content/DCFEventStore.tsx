@@ -1,9 +1,9 @@
-// Module ID: 1361
-// Function ID: 1362
+// Module ID: 1380
+// Function ID: 1381
 // Name: getDCFEvents
 // Dependencies: [589, 709, 2]
 
-// Module 1361 (getDCFEvents)
+// Module 1380 (getDCFEvents)
 import { Store } from "initialize";
 
 let obj = { DC_SHOWN: 0, [0]: "DC_SHOWN", DC_SHOW_REQUEST: 1, [1]: "DC_SHOW_REQUEST", DC_DISMISSED: 2, [2]: "DC_DISMISSED" };

@@ -1,10 +1,10 @@
-// Module ID: 11027
-// Function ID: 11028
+// Module ID: 11032
+// Function ID: 11033
 // Name: useBatchUpdateSelectOption
-// Dependencies: [19, 4499, 5242, 685, 709, 12, 1351, 11028, 589, 5247, 1384, 2]
+// Dependencies: [19, 4499, 5242, 685, 709, 12, 1370, 11033, 589, 5247, 1403, 2]
 // Exports: default
 
-// Module 11027 (useBatchUpdateSelectOption)
+// Module 11032 (useBatchUpdateSelectOption)
 import noop from "noop";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import handleUpdate from "handleUpdate";

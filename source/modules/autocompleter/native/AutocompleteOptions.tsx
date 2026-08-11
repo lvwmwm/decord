@@ -1,10 +1,10 @@
-// Module ID: 9993
-// Function ID: 9994
+// Module ID: 9998
+// Function ID: 9999
 // Name: getAutocompleteOptions
-// Dependencies: [7238, 7239, 4832, 5219, 1372, 1971, 1891, 676, 4737, 4738, 9994, 1906, 12, 9995, 5159, 5949, 3974, 7314, 9958, 5952, 1416, 1236, 2]
+// Dependencies: [7239, 7240, 4832, 5219, 1391, 1990, 1910, 676, 4737, 4738, 9999, 1925, 12, 10000, 5159, 5951, 3993, 7315, 9963, 5954, 1435, 1236, 2]
 // Exports: getAutocompleteOptions
 
-// Module 9993 (getAutocompleteOptions)
+// Module 9998 (getAutocompleteOptions)
 import handleInit from "handleInit";
 import closure_4 from "handleInit";
 import closure_5 from "set";
@@ -241,7 +241,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
                 const obj4 = _private(tmp3[18]);
               }
               const items2 = [query];
-              const items3 = [_private, (arg0, arg1) => arg1 === callback(5952).StickerSendability.SENDABLE];
+              const items3 = [_private, (arg0, arg1) => arg1 === callback(5954).StickerSendability.SENDABLE];
               items1 = flag(tmp3[14]).queryStickers(items2, true, items3);
               const tmp2Result = flag(tmp3[14]);
             }
@@ -257,8 +257,8 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
                 obj = { id: null, animated: null, size: null };
                 ({ id: obj3[0], animated: obj3[1] } = name);
                 obj[2] = closure_19;
-                let url = callback2(1416).getEmojiURL(obj);
-                const obj2 = callback2(1416);
+                let url = callback2(1435).getEmojiURL(obj);
+                const obj2 = callback2(1435);
               } else {
                 url = name.url;
               }

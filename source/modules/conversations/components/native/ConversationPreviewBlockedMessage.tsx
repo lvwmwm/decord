@@ -1,10 +1,10 @@
-// Module ID: 8585
-// Function ID: 8586
+// Module ID: 8591
+// Function ID: 8592
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 4712, 712, 8586, 8495, 4299, 1236, 2]
+// Dependencies: [19, 21, 4712, 712, 8592, 8501, 4299, 1236, 2]
 // Exports: default
 
-// Module 8585 (ConversationPreviewBlockedMessage)
+// Module 8591 (ConversationPreviewBlockedMessage)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -18,9 +18,9 @@ export default function ConversationPreviewBlockedMessage(reason) {
   let obj = { direction: "horizontal", spacing: null, align: "center", children: null };
   obj[1] = importDefault(712).space.PX_8;
   if ("blocked" === reason.reason) {
-    let EyeSlashIcon = tmp2(8586).DenyIcon;
+    let EyeSlashIcon = tmp2(8592).DenyIcon;
   } else {
-    EyeSlashIcon = tmp2(8495).EyeSlashIcon;
+    EyeSlashIcon = tmp2(8501).EyeSlashIcon;
   }
   obj = { size: "sm", color: importDefault(712).colors.TEXT_MUTED };
   const items = [closure_3(EyeSlashIcon, obj), ];

@@ -1,10 +1,10 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11515
+// Function ID: 11516
 // Name: getCollectionItemAssetUrl
-// Dependencies: [676, 1450, 1416, 2]
+// Dependencies: [676, 1469, 1435, 2]
 // Exports: getCollectionItemAssetUrl
 
-// Module 11512 (getCollectionItemAssetUrl)
+// Module 11515 (getCollectionItemAssetUrl)
 import { Endpoints } from "ME";
 
 let c3;
@@ -20,13 +20,13 @@ export const getCollectionItemAssetUrl = function getCollectionItemAssetUrl(arg0
   if (containerWidth === undefined) {
     containerWidth = 1024;
   }
-  let obj = require(1450) /* handleImageLoad */;
-  let str = obj.getBestMediaProxySize(containerWidth * require(1450) /* handleImageLoad */.getDevicePixelRatio());
+  let obj = require(1469) /* handleImageLoad */;
+  let str = obj.getBestMediaProxySize(containerWidth * require(1469) /* handleImageLoad */.getDevicePixelRatio());
   obj = { size: str.toString() };
-  const obj2 = require(1450) /* handleImageLoad */;
+  const obj2 = require(1469) /* handleImageLoad */;
   str = new URLSearchParams(obj).toString();
   let str3 = "png";
-  if (require(1416) /* getAvatarURL */.SUPPORTS_WEBP) {
+  if (require(1435) /* getAvatarURL */.SUPPORTS_WEBP) {
     str3 = "webp";
   }
   if (null != closure_4) {

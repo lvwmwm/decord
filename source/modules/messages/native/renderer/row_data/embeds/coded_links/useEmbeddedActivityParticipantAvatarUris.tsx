@@ -1,10 +1,10 @@
-// Module ID: 12607
-// Function ID: 12608
+// Module ID: 12611
+// Function ID: 12612
 // Name: useEmbeddedActivityParticipantAvatarUris
-// Dependencies: [19, 1371, 1903, 1351, 647, 2]
+// Dependencies: [19, 1390, 1922, 1370, 647, 2]
 // Exports: default, getEmbeddedActivityParticipantAvatarUris
 
-// Module 12607 (useEmbeddedActivityParticipantAvatarUris)
+// Module 12611 (useEmbeddedActivityParticipantAvatarUris)
 import noop from "noop";
 import participantFromServer from "participantFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -61,5 +61,5 @@ export const getEmbeddedActivityParticipantAvatarUris = function getEmbeddedActi
     }
     return "" + avatarURL;
   });
-  return mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+  return mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
 };

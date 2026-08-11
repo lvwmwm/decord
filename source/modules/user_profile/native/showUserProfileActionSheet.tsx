@@ -1,20 +1,20 @@
-// Module ID: 8783
-// Function ID: 8784
+// Module ID: 8789
+// Function ID: 8790
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 5344, 3938, 1903, 1988, 3974, 8784, 4271, 8796, 2]
+// Dependencies: [5, 5344, 3957, 1922, 2007, 3993, 8790, 4271, 8802, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8783 (showUserProfileActionSheet)
+// Module 8789 (showUserProfileActionSheet)
 import explicitContentFromProto from "explicitContentFromProto";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 
 const require = arg1;
 function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
   const timestamp = Date.now();
-  const IgnoreProfileSpeedbumpDisabled = require(3974) /* explicitContentFromProto */.IgnoreProfileSpeedbumpDisabled;
+  const IgnoreProfileSpeedbumpDisabled = require(3993) /* explicitContentFromProto */.IgnoreProfileSpeedbumpDisabled;
   if (!ignoreBlockedSpeedBump.ignoreBlockedSpeedBump) {
-    const isBlockedResult = upsertRelationship.isBlocked(ignoreBlockedSpeedBump.userId);
-    const isIgnoredResult = upsertRelationship.isIgnored(ignoreBlockedSpeedBump.userId);
+    const isBlockedResult = markAllUserIdListsStale.isBlocked(ignoreBlockedSpeedBump.userId);
+    const isIgnoredResult = markAllUserIdListsStale.isIgnored(ignoreBlockedSpeedBump.userId);
     if (isIgnoredResult) {
       let obj = importDefault(4271);
       const _HermesInternal = HermesInternal;
@@ -27,10 +27,10 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       }
       obj.speedBumpType = str2;
       obj.openedAt = timestamp;
-      obj.openLazy(tmp2(1988)(8784, tmp3.paths), combined, obj);
+      obj.openLazy(tmp2(2007)(8790, tmp3.paths), combined, obj);
     }
   }
-  const tmp15 = require(1988) /* asyncRequireImpl */(8796, dependencyMap.paths);
+  const tmp15 = require(2007) /* asyncRequireImpl */(8802, dependencyMap.paths);
   const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
   obj = {};
   const merged1 = Object.assign(ignoreBlockedSpeedBump);
@@ -38,7 +38,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
   importDefault(4271).openLazy(tmp15, combined1, obj, "replaceAll");
 }
 require("processCallbacks").addPostConnectionCallback;
-const result = require("upsertRelationship").fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");
 
 export default showUserProfileActionSheet;
 export const getUserProfileActionSheetKey = function getUserProfileActionSheetKey(id) {

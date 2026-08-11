@@ -1,10 +1,10 @@
-// Module ID: 14531
-// Function ID: 14532
+// Module ID: 14539
+// Function ID: 14540
 // Name: HAPPENING_NOW_CARD_MARGIN_RIGHT
-// Dependencies: [19, 17, 14530, 21, 4303, 712, 7641, 1348, 4154, 5376, 4299, 2]
+// Dependencies: [19, 17, 14538, 21, 4303, 712, 7643, 1367, 4154, 5376, 4299, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 14531 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
+// Module 14539 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
 import "noop";
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
@@ -104,15 +104,15 @@ export default function HappeningNowCard(IconComponent) {
   let accessibilityLabel;
   let panelVariant;
   let width;
-  const tmp4 = importDefault(1348)("HappeningNowCard");
+  const tmp4 = importDefault(1367)("HappeningNowCard");
   ({ width, panelVariant } = IconComponent);
   if (panelVariant == null) {
     panelVariant = false;
   }
-  const tmp5Result = closure_21(width, panelVariant, importDefault(7641)(), tmp4);
+  const tmp5Result = closure_21(width, panelVariant, importDefault(7643)(), tmp4);
   IconComponent = IconComponent.IconComponent;
   const tmp = importDefault;
-  const tmp3 = importDefault(7641)();
+  const tmp3 = importDefault(7643)();
   const tmp5 = closure_21;
   ({ accessibilityLabel, accessibilityHint } = IconComponent);
   let obj = { variant: "secondary", style: items, onPress: IconComponent.onPress, border: "faint", shadow: null, onLongPress: null, disabled: null, accessibilityLabel: null, accessibilityHint: null, children: null };
@@ -184,7 +184,7 @@ export const HappeningNowCardHeader = function HappeningNowCardHeader(displayNam
 export const HappeningNowCardSubtitle = function HappeningNowCardSubtitle(variant) {
   variant = variant.variant;
   const merged = Object.assign(variant, Object.create(null));
-  const tmp2 = importDefault(1348)("HappeningNowCardSubtitle");
+  const tmp2 = importDefault(1367)("HappeningNowCardSubtitle");
   if (variant == null) {
     let str = "text-xs/medium";
     if (tmp2) {

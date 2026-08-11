@@ -1,7 +1,7 @@
 // Module ID: 4567
 // Function ID: 4568
 // Name: StringToNumber
-// Dependencies: [540, 574, 1395, 541, 4568]
+// Dependencies: [540, 574, 1414, 541, 4568]
 
 // Module 4567 (StringToNumber)
 let tmp = require("getEvalledConstructor")("%RegExp%");

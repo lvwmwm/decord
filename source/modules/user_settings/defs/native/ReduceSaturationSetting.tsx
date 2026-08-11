@@ -1,9 +1,9 @@
-// Module ID: 14599
-// Function ID: 14600
+// Module ID: 14609
+// Function ID: 14610
 // Name: slider
-// Dependencies: [19, 4295, 8082, 21, 13712, 14548, 9527, 10447, 1236, 1297, 2]
+// Dependencies: [19, 4295, 8084, 21, 13720, 14556, 9533, 10452, 1236, 1297, 2]
 
-// Module 14599 (slider)
+// Module 14609 (slider)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
@@ -22,7 +22,7 @@ createToggle = {
     return jsx(require(1297) /* Button */.BetaTag, { size: null });
   },
   useProps: function useSaturationSettingProps() {
-    return React.useMemo(() => ({ value: saturation.saturation, onSlidingComplete: callback(13712).setSaturation, minimumValue: 0, maximumValue: 1, step: 0.05, startIcon: callback2(callback(14548).CircleMinusIcon, {}), endIcon: callback2(callback(9527).CirclePlusIcon, {}) }), []);
+    return React.useMemo(() => ({ value: saturation.saturation, onSlidingComplete: callback(13720).setSaturation, minimumValue: 0, maximumValue: 1, step: 0.05, startIcon: callback2(callback(14556).CircleMinusIcon, {}), endIcon: callback2(callback(9533).CirclePlusIcon, {}) }), []);
   }
 };
 createToggle = createToggle.createSlider(createToggle);

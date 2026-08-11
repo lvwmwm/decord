@@ -1,14 +1,14 @@
-// Module ID: 9900
-// Function ID: 9901
+// Module ID: 9905
+// Function ID: 9906
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 3994, 1372, 3938, 1903, 5895, 5925, 676, 1235, 7222, 38, 4494, 4764, 1467, 8405, 9746, 8844, 500, 4272, 4273, 7226, 4311, 4166, 9901, 8613, 8610, 2]
+// Dependencies: [19, 4013, 1391, 3957, 1922, 5895, 5925, 676, 1235, 7223, 38, 4494, 4764, 1486, 8411, 9751, 8850, 500, 4272, 4273, 7227, 4311, 4166, 9906, 8619, 8616, 2]
 // Exports: default
 
-// Module 9900 (useNativeForumPostHandlers)
+// Module 9905 (useNativeForumPostHandlers)
 import IMPACT_LIGHT from "IMPACT_LIGHT";
 import setContent from "setContent";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleLoadThreadsSuccess from "handleLoadThreadsSuccess";
 import closure_9 from "handleLoadThreadsSuccess";

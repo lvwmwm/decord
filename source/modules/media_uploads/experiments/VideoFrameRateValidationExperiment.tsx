@@ -1,7 +1,7 @@
 // Module ID: 4884
 // Function ID: 4885
 // Name: getVideoFrameRateValidationExperimentConfig
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: getVideoFrameRateValidationExperimentConfig
 
 // Module 4884 (getVideoFrameRateValidationExperimentConfig)

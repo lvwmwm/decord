@@ -1,10 +1,10 @@
-// Module ID: 14149
-// Function ID: 14150
+// Module ID: 14157
+// Function ID: 14158
 // Name: getCollectibleTypeName
-// Dependencies: [7006, 7007, 1905, 1930, 1236, 2284, 1416, 2]
+// Dependencies: [7009, 7010, 1924, 1949, 1236, 2303, 1435, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 14149 (getCollectibleTypeName)
+// Module 14157 (getCollectibleTypeName)
 import { isAvatarDecorationRecord } from "fromServer";
 import { isProfileEffectRecord } from "fromServer";
 import GuildFeatures from "GuildFeatures";
@@ -12,21 +12,21 @@ import GuildFeatures from "GuildFeatures";
 let c5;
 let closure_6;
 function getCollectibleTypeName(type) {
-  if (require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+  if (require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl5 = tmp(1236).intl;
-    return intl5.string(importDefault(2284).obi47v);
-  } else if (tmp(1930).CollectiblesItemType.PROFILE_EFFECT === type) {
+    return intl5.string(importDefault(2303).obi47v);
+  } else if (tmp(1949).CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl4 = tmp(1236).intl;
-    return intl4.string(importDefault(2284).RX8BMR);
-  } else if (tmp(1930).CollectiblesItemType.NAMEPLATE === type) {
+    return intl4.string(importDefault(2303).RX8BMR);
+  } else if (tmp(1949).CollectiblesItemType.NAMEPLATE === type) {
     const intl3 = tmp(1236).intl;
-    return intl3.string(importDefault(2284).nNGEHk);
-  } else if (tmp(1930).CollectiblesItemType.BUNDLE === type) {
+    return intl3.string(importDefault(2303).nNGEHk);
+  } else if (tmp(1949).CollectiblesItemType.BUNDLE === type) {
     const intl2 = tmp(1236).intl;
-    return intl2.string(importDefault(2284).VS1fKo);
-  } else if (tmp(1930).CollectiblesItemType.PROFILE_FRAME === type) {
+    return intl2.string(importDefault(2303).VS1fKo);
+  } else if (tmp(1949).CollectiblesItemType.PROFILE_FRAME === type) {
     const intl = tmp(1236).intl;
-    return intl.string(importDefault(2284).JiIY1l);
+    return intl.string(importDefault(2303).JiIY1l);
   } else {
     return "";
   }
@@ -44,7 +44,7 @@ export const getAvatarDecorationPreviewUrl = function getAvatarDecorationPreview
     const first = product.items[0];
     let avatarDecorationURL = null;
     if (isAvatarDecorationRecord(first)) {
-      let obj = require(1416) /* getAvatarURL */;
+      let obj = require(1435) /* getAvatarURL */;
       obj = { avatarDecoration: null, size: 40, canAnimate: true };
       obj = { asset: null };
       obj[0] = first.asset;

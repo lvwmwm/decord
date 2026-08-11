@@ -1,10 +1,10 @@
-// Module ID: 13196
-// Function ID: 13197
+// Module ID: 13204
+// Function ID: 13205
 // Name: MarkupGameMention
-// Dependencies: [19, 21, 4303, 712, 4831, 1236, 4334, 4294, 7947, 5268, 9277, 9283, 4299, 2]
+// Dependencies: [19, 21, 4303, 712, 4831, 1236, 4334, 4294, 7949, 5268, 9283, 9289, 4299, 2]
 // Exports: default
 
-// Module 13196 (MarkupGameMention)
+// Module 13204 (MarkupGameMention)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -61,7 +61,7 @@ export default function MarkupGameMention(state) {
     if (tmp11) {
       tmp11 = "" !== tmp8Result;
     }
-    let tmp17Result = callback(tmp2(7947).UnknownGameIcon, obj);
+    let tmp17Result = callback(tmp2(7949).UnknownGameIcon, obj);
     if (tmp11) {
       const obj1 = { style: null, source: null };
       obj1[0] = tmp.icon;

@@ -1,10 +1,10 @@
-// Module ID: 6620
-// Function ID: 6621
+// Module ID: 6622
+// Function ID: 6623
 // Name: PaintPaletteSpotIllustration
-// Dependencies: [21, 5268, 6621, 2]
+// Dependencies: [21, 5268, 6623, 2]
 // Exports: PaintPaletteSpotIllustration
 
-// Module 6620 (PaintPaletteSpotIllustration)
+// Module 6622 (PaintPaletteSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PaintPaletteSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const PaintPaletteSpotIllustration = function PaintPaletteSpotIllustratio
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6621);
+  obj[0] = importDefault(6623);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

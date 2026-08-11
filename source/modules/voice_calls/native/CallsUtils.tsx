@@ -1,10 +1,10 @@
-// Module ID: 9148
-// Function ID: 9149
+// Module ID: 9154
+// Function ID: 9155
 // Name: _handleToggleVideo
-// Dependencies: [32, 5, 19, 17, 4322, 1372, 4351, 1960, 4319, 9149, 9152, 4516, 9154, 4643, 1236, 4861, 9155, 9169, 1872, 4513, 5129, 12, 9170, 9171, 9172, 500, 589, 9173, 9153, 10844, 9150, 2]
+// Dependencies: [32, 5, 19, 17, 4322, 1391, 4351, 1979, 4319, 9155, 9158, 4516, 9160, 4643, 1236, 4861, 9161, 9175, 1891, 4513, 5129, 12, 9176, 9177, 9178, 500, 589, 9179, 9159, 10849, 9156, 2]
 // Exports: getAudioDeviceToDisplayText, handleDisconnect, handleToggleSelfDeaf, handleToggleSelfMute, handleToggleVideo, showCameraDisabledAlert, showMinOSScreenshareRequirementAlert, showScreenshareDisabledAlert, showServerDeafenAlert, showServerMuteAlert, showSuppressedAlert, showTabletRequirementAlert, useImmediateMaskedSpeakerStates
 
-// Module 9148 (_handleToggleVideo)
+// Module 9154 (_handleToggleVideo)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import openChannelCallModal from "openChannelCallModal";
@@ -124,12 +124,12 @@ export const handleToggleVideo = function handleToggleVideo(channel) {
   return applyArgumentsResult;
 };
 export const handleToggleSelfDeaf = function handleToggleSelfDeaf() {
-  importDefault(9155).toggleSelfDeaf();
+  importDefault(9161).toggleSelfDeaf();
 };
 export const handleToggleSelfMute = function handleToggleSelfMute() {
   const permission = importDefault(4861).requestPermission(NativePermissionTypes.AUDIO, { showAuthorizationError: true });
   const obj = importDefault(4861);
-  importDefault(9155).toggleSelfMute();
+  importDefault(9161).toggleSelfMute();
 };
 export const showSuppressedAlert = function showSuppressedAlert() {
   let obj = importDefault(4643);
@@ -178,8 +178,8 @@ export const showScreenshareDisabledAlert = function showScreenshareDisabledAler
 };
 export const showMinOSScreenshareRequirementAlert = function showMinOSScreenshareRequirementAlert() {
   const intl = require(1236) /* getSystemLocale */.intl;
-  let obj = require(9169) /* mapped */;
-  const errorInfo = obj.getErrorInfo(require(9169) /* mapped */.AVError.SCREENSHARE_OS_NOT_SUPPORTED);
+  let obj = require(9175) /* mapped */;
+  const errorInfo = obj.getErrorInfo(require(9175) /* mapped */.AVError.SCREENSHARE_OS_NOT_SUPPORTED);
   let errorCode;
   if (errorInfo != null) {
     errorCode = errorInfo.errorCode;
@@ -202,8 +202,8 @@ export const showTabletRequirementAlert = function showTabletRequirementAlert() 
   obj.show(obj);
 };
 export const handleDisconnect = function handleDisconnect(channel) {
-  const result = importAll(1872).dismissGlobalKeyboard();
-  const obj = importAll(1872);
+  const result = importAll(1891).dismissGlobalKeyboard();
+  const obj = importAll(1891);
   const result1 = require(4513) /* openChannelCallModal */.dismissVoiceChannelScreens(channel, () => {
     const voiceChannel = callback(table[20]).selectVoiceChannel(null);
   });
@@ -248,10 +248,10 @@ export const useMaskedSpeakerStates = set.isAndroid() ? (() => {
   let obj = isEnabled(589);
   const items = [closure_9, handleConnectionOpen, reset, updateVoiceState, _detectH265HardwareDecode, handleAudioRouteChanged];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const isVideoMode = isEnabled(10844).isVideoMode(closure_9, handleConnectionOpen, reset, updateVoiceState, _detectH265HardwareDecode);
+    const isVideoMode = isEnabled(10849).isVideoMode(closure_9, handleConnectionOpen, reset, updateVoiceState, _detectH265HardwareDecode);
     currentRouteType = currentRouteType.getCurrentRouteType();
-    isEnabled = currentRouteType === isEnabled(9150).RouteTypes.SPEAKER;
-    const isBluetoothRoute = currentRouteType === isEnabled(9150).RouteTypes.BLUETOOTH;
+    isEnabled = currentRouteType === isEnabled(9156).RouteTypes.SPEAKER;
+    const isBluetoothRoute = currentRouteType === isEnabled(9156).RouteTypes.BLUETOOTH;
     if (!isEnabled) {
       isEnabled = isBluetoothRoute;
     }
@@ -284,17 +284,17 @@ export const useMaskedSpeakerStates = set.isAndroid() ? (() => {
     }
     dependencyMap(isEnabled);
   }, items2);
-  obj = { isAudioRouteEnabled: first, toggleAudio: callback, routeSource: isVideoMode(stateFromStoresObject.isBluetoothRoute ? 9171 : 9172) };
+  obj = { isAudioRouteEnabled: first, toggleAudio: callback, routeSource: isVideoMode(stateFromStoresObject.isBluetoothRoute ? 9177 : 9178) };
   return obj;
 });
 export const useImmediateMaskedSpeakerStates = () => {
   let obj = require(589) /* initialize */;
   const items = [handleAudioRouteChanged];
   const stateFromStores = obj.useStateFromStores(items, () => currentRouteType.getCurrentRouteType());
-  const tmp4 = importDefault(10844)();
+  const tmp4 = importDefault(10849)();
   require = tmp4;
-  let tmp5 = stateFromStores === require(9150) /* RouteTypes */.RouteTypes.SPEAKER;
-  const tmp6 = stateFromStores === require(9150) /* RouteTypes */.RouteTypes.BLUETOOTH;
+  let tmp5 = stateFromStores === require(9156) /* RouteTypes */.RouteTypes.SPEAKER;
+  const tmp6 = stateFromStores === require(9156) /* RouteTypes */.RouteTypes.BLUETOOTH;
   if (!tmp5) {
     tmp5 = tmp6;
   }
@@ -319,6 +319,6 @@ export const useImmediateMaskedSpeakerStates = () => {
   const effect = React.useEffect(() => {
     callback(closure_1);
   }, items2);
-  obj = { isAudioRouteEnabled: first, toggleAudio: callback, routeSource: importDefault(tmp6 ? 9171 : 9172) };
+  obj = { isAudioRouteEnabled: first, toggleAudio: callback, routeSource: importDefault(tmp6 ? 9177 : 9178) };
   return obj;
 };

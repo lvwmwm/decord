@@ -1,7 +1,7 @@
 // Module ID: 4238
 // Function ID: 4239
 // Name: useCustomThemeDisplaySettings
-// Dependencies: [32, 1346, 589, 2]
+// Dependencies: [32, 1346, 589, 1347, 2]
 // Exports: useCustomThemeDisplaySettings
 
 // Module 4238 (useCustomThemeDisplaySettings)
@@ -12,23 +12,23 @@ const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/client_themes/native/useCustomThemeDisplaySettings.tsx");
 
 export const useCustomThemeDisplaySettings = function useCustomThemeDisplaySettings(base_theme) {
-  let tmp2;
-  let tmp3;
   let tmp4;
+  let tmp5;
+  let tmp6;
   let obj = require(589) /* initialize */;
   let items = [reset];
-  [tmp2, tmp3, tmp4] = callback(obj.useStateFromStoresArray(items, () => {
+  [tmp4, tmp5, tmp6] = callback(obj.useStateFromStoresArray(items, () => {
     const items = [store.getCustomTheme(), store.getBaseTheme(), store.getPreviewTheme()];
     return items;
   }), 3);
-  if (undefined !== tmp4) {
-    return tmp4;
+  if (undefined !== tmp6) {
+    return tmp6;
   } else {
-    if (undefined !== tmp2) {
-      if (undefined !== tmp3) {
+    if (undefined !== tmp4) {
+      if (undefined !== tmp5) {
         obj = { baseTheme: null, customTheme: null };
-        obj[0] = tmp3;
-        obj[1] = tmp2;
+        obj[0] = tmp5;
+        obj[1] = tmp4;
         return obj;
       }
     }
@@ -37,12 +37,13 @@ export const useCustomThemeDisplaySettings = function useCustomThemeDisplaySetti
       ({ colors: obj2[0], gradient_angle: obj2[1], base_mix: obj2[2] } = base_theme);
       obj[3] = [];
       const obj1 = { baseTheme: null, customTheme: null };
-      obj1[0] = base_theme.base_theme;
+      obj1[0] = tmp(1347).getCustomThemeBaseTheme(base_theme.base_theme);
       obj1[1] = obj;
       return obj1;
     }
   }
-  const tmp = callback(obj.useStateFromStoresArray(items, () => {
+  tmp = require;
+  const tmp3 = callback(obj.useStateFromStoresArray(items, () => {
     const items = [store.getCustomTheme(), store.getBaseTheme(), store.getPreviewTheme()];
     return items;
   }), 3);

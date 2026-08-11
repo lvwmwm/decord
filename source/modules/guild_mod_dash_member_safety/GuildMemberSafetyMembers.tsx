@@ -1,10 +1,10 @@
-// Module ID: 6955
-// Function ID: 6956
+// Module ID: 6958
+// Function ID: 6959
 // Name: getGuildMemberSecondaryIndexes
-// Dependencies: [1903, 3925, 6956, 6957, 6959, 6960, 6966, 4463, 2]
+// Dependencies: [1922, 3944, 6959, 6960, 6962, 6963, 6969, 4463, 2]
 // Exports: hasUnusualDmActivity
 
-// Module 6955 (getGuildMemberSecondaryIndexes)
+// Module 6958 (getGuildMemberSecondaryIndexes)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -42,7 +42,7 @@ const prototype = GuildMemberSafetyMembers.prototype;
 prototype["reset"] = function reset() {
   const _membersMap = this._membersMap;
   _membersMap.clear();
-  const secondaryIndexMap = new require(3925) /* version */.SecondaryIndexMap(getGuildMemberSecondaryIndexes, getGuildMemberSecondarySortBy);
+  const secondaryIndexMap = new require(3944) /* version */.SecondaryIndexMap(getGuildMemberSecondaryIndexes, getGuildMemberSecondarySortBy);
   this._membersMap = secondaryIndexMap;
   const result = this.resetNewMemberTimestamp();
 };
@@ -62,7 +62,7 @@ prototype["enhanceNewMember"] = function enhanceNewMember(trueMember, searchStat
   if (isIncludedInSearchResults === undefined) {
     obj = {};
   }
-  const joinedAtTimestamp = require(6957) /* getJoinedAtDateFormatter */.getJoinedAtTimestamp(trueMember.joinedAt);
+  const joinedAtTimestamp = require(6960) /* getJoinedAtDateFormatter */.getJoinedAtTimestamp(trueMember.joinedAt);
   const result = this._computeMemberSupplementals(trueMember.userId, trueMember.unusualDMActivityUntil);
   ({ hasUnusualDmActivity, hasUnusualAccountActivity, sourceInviteCode, joinSourceType, inviterId, integrationType, joinSourceApplicationId, joinSourceChannelId } = result);
   obj = { hasUnusualDmActivity, hasUnusualAccountActivity, sourceInviteCode, joinSourceType, inviterId, integrationType, joinSourceApplicationId, joinSourceChannelId };
@@ -71,19 +71,19 @@ prototype["enhanceNewMember"] = function enhanceNewMember(trueMember, searchStat
   obj.isCurrentGuildMemberByTimestamp = joinedAtTimestamp <= this.newMemberTimestamp;
   obj.isIncludedInSearchResults = false;
   obj.user = user;
-  const obj2 = require(6957) /* getJoinedAtDateFormatter */;
+  const obj2 = require(6960) /* getJoinedAtDateFormatter */;
   const tmp = require;
   let ORDER_BY_UNSPECIFIED = searchState.selectedSort;
   if (ORDER_BY_UNSPECIFIED == null) {
-    ORDER_BY_UNSPECIFIED = tmp(6956).OrderBy.ORDER_BY_UNSPECIFIED;
+    ORDER_BY_UNSPECIFIED = tmp(6959).OrderBy.ORDER_BY_UNSPECIFIED;
   }
-  obj.sort = require(6959) /* getSortValueForMember */.getSortValueForMember(trueMember, ORDER_BY_UNSPECIFIED);
+  obj.sort = require(6962) /* getSortValueForMember */.getSortValueForMember(trueMember, ORDER_BY_UNSPECIFIED);
   obj.joinedAtTimestamp = joinedAtTimestamp;
   const merged1 = Object.assign(obj);
   return obj;
 };
 prototype["_computeMemberSupplementals"] = function _computeMemberSupplementals(userId, unusualDMActivityUntil) {
-  let obj = require(6960) /* hasMemberSupplemental */;
+  let obj = require(6963) /* hasMemberSupplemental */;
   obj = obj.getMemberSupplementalByGuildId(this.guildId)[userId];
   if (obj == null) {
     obj = {};
@@ -123,10 +123,10 @@ prototype["_computeMemberSupplementals"] = function _computeMemberSupplementals(
     const _Date = Date;
     const date = new Date(unusualDMActivityUntil);
     const time = date.getTime();
-    tmp9 = time >= closure_4 - tmp(6956).UNUSUAL_DM_COMPARISON_DELTA;
+    tmp9 = time >= closure_4 - tmp(6959).UNUSUAL_DM_COMPARISON_DELTA;
   }
   obj[6] = tmp9;
-  obj[7] = require(6966) /* isSpamSupported */.isSpammer(userId);
+  obj[7] = require(6969) /* isSpamSupported */.isSpammer(userId);
   return obj;
 };
 prototype["createMember"] = function createMember(userId) {
@@ -235,7 +235,7 @@ export const hasUnusualDmActivity = function hasUnusualDmActivity(arg0) {
     const _Date = Date;
     const date = new Date(arg0);
     const time = date.getTime();
-    tmp = time >= closure_4 - require(6956) /* result */.UNUSUAL_DM_COMPARISON_DELTA;
+    tmp = time >= closure_4 - require(6959) /* result */.UNUSUAL_DM_COMPARISON_DELTA;
   }
   return tmp;
 };

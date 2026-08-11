@@ -1,10 +1,10 @@
-// Module ID: 14463
-// Function ID: 14464
+// Module ID: 14471
+// Function ID: 14472
 // Name: getRoleEmojis
-// Dependencies: [5, 32, 19, 5176, 3923, 14464, 14441, 676, 1905, 589, 5716, 4541, 14465, 14466, 688, 3921, 14467, 14448, 14468, 705, 38, 5232, 5875, 12, 8740, 14469, 514, 2]
+// Dependencies: [5, 32, 19, 5176, 3942, 14472, 14449, 676, 1924, 589, 5716, 4541, 14473, 14474, 688, 3940, 14475, 14456, 14476, 705, 38, 5232, 5875, 12, 8746, 14477, 514, 2]
 // Exports: useApplicationId, useChannelAccessFormat, useChannelBenefits, useClearEditStateOnUnmount, useCreateOrUpdateListingFromEditState, useDescription, useEditStateIds, useHasChanges, useHasChangesForEditStateIds, useImage, useIntangibleBenefits, useListingEditState, useName, usePriceTier, useRole, useRoleColor, useRoleIcon, useSubscriptionPlan, useTierEmojiIds, useTrialInterval, useTrialLimit
 
-// Module 14463 (getRoleEmojis)
+// Module 14471 (getRoleEmojis)
 import closure_4 from "AllChannelAccessOptions";
 import _slicedToArray from "_slicedToArray";
 import batchUpdates from "batchUpdates";
@@ -196,7 +196,7 @@ function _updateListingPeripheralsFromEditState() {
                   closure_15 = closure_13.map((emojiId) => {
                     const customEmojiById = roleIcon.getCustomEmojiById(emojiId);
                     if (null != customEmojiById) {
-                      let obj = _undefined(8740);
+                      let obj = _undefined(8746);
                       obj = { guildId: null, emojiId: null, roles: null };
                       obj[0] = _undefined;
                       obj[1] = customEmojiById.id;
@@ -216,10 +216,10 @@ function _updateListingPeripheralsFromEditState() {
                         obj[0] = _undefined;
                         obj[1] = customEmojiById.id;
                         obj[2] = found;
-                        let updateEmojiResult = _undefined(8740).updateEmoji(obj);
-                        const obj2 = _undefined(8740);
+                        let updateEmojiResult = _undefined(8746).updateEmoji(obj);
+                        const obj2 = _undefined(8746);
                       } else {
-                        obj = _undefined(8740);
+                        obj = _undefined(8746);
                         updateEmojiResult = obj.deleteEmoji(_undefined, customEmojiById.id);
                       }
                       return updateEmojiResult;
@@ -334,7 +334,7 @@ function _createListingFromEditState() {
               tmp9 = length.length > 0;
             }
             if (tmp9) {
-              const obj7 = callback(14469);
+              const obj7 = callback(14477);
               description = 3;
               length = 1;
               let obj3 = { value: null, done: false };
@@ -375,7 +375,7 @@ function _createListingFromEditState() {
         dependencyMap = [];
       }
       callback2 = HermesBuiltin.arraySpread(dependencyMap, callback2);
-      obj2 = callback(14469);
+      obj2 = callback(14477);
       const templateTierCreationAnalyticsContext = obj2.getTemplateTierCreationAnalyticsContext(callback2, callback);
       obj3 = callback3(5875);
       const obj5 = { guildId: null, groupListingId: null, data: null, analyticsContext: null, onBeforeDispatchNewListing: null };
@@ -697,7 +697,7 @@ export const useImage = function useImage(editStateId, arg1) {
 };
 export const useApplicationId = function useApplicationId(listingId) {
   const _require = listingId;
-  const f94521 = (application_id) => {
+  const f94586 = (application_id) => {
     application_id = undefined;
     if (application_id != null) {
       application_id = application_id.application_id;
@@ -706,13 +706,13 @@ export const useApplicationId = function useApplicationId(listingId) {
   };
   const items = [makeGroupListingIndexSubscriptionListingTag];
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_8.getSubscriptionListing(closure_0));
-  const tmp2 = f94521(5716)(() => first);
+  const tmp2 = f94586(5716)(() => first);
   const dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
   return React.useMemo(() => _undefined(c2), items1);
 };
 export const useRoleIcon = function useRoleIcon(arg0, arg1) {
-  const tmp = roleIcon(14465)(arg1, arg0);
+  const tmp = roleIcon(14473)(arg1, arg0);
   let closure_0 = tmp;
   const items = [tmp];
   let memo = React.useMemo(() => {
@@ -768,7 +768,7 @@ export const useRoleIcon = function useRoleIcon(arg0, arg1) {
 };
 export const useRole = function useRole(listingId, guildId) {
   let closure_0 = listingId;
-  const tmp = importDefault(14465)(guildId, listingId);
+  const tmp = importDefault(14473)(guildId, listingId);
   importDefault = tmp;
   const tmp2 = callback3((arg0) => {
     let roleColor;
@@ -815,7 +815,7 @@ export const useRole = function useRole(listingId, guildId) {
   }, items);
 };
 export const useRoleColor = function useRoleColor(editStateId, guildId) {
-  const tmp = roleColor(14465)(guildId, editStateId);
+  const tmp = roleColor(14473)(guildId, editStateId);
   let closure_0 = tmp;
   const items = [tmp];
   let memo = React.useMemo(() => {
@@ -867,7 +867,7 @@ export const useRoleColor = function useRoleColor(editStateId, guildId) {
   return items2;
 };
 export const useChannelAccessFormat = function useChannelAccessFormat(editStateId, guildId) {
-  const tmp = channelAccessFormat(14465)(guildId, editStateId);
+  const tmp = channelAccessFormat(14473)(guildId, editStateId);
   let closure_0 = tmp;
   const items = [tmp];
   let memo = React.useMemo(() => {
@@ -1031,7 +1031,7 @@ export const useIntangibleBenefits = function useIntangibleBenefits(listingId) {
 };
 export const useTierEmojiIds = function useTierEmojiIds(listingId, guildId) {
   let _require = guildId;
-  const tmp = tierEmojiIds(14465)(guildId, listingId);
+  const tmp = tierEmojiIds(14473)(guildId, listingId);
   tierEmojiIds = tmp;
   const items = [getEmojiToGroupId];
   const items1 = [guildId];
@@ -1096,16 +1096,16 @@ export const useTierEmojiIds = function useTierEmojiIds(listingId, guildId) {
   return items4;
 };
 export const useTrialInterval = function useTrialInterval(editStateId) {
-  const subscriptionTrial = _require(14448).useSubscriptionTrial(editStateId);
+  const subscriptionTrial = _require(14456).useSubscriptionTrial(editStateId);
   let active_trial;
-  const obj = _require(14448);
+  const obj = _require(14456);
   if (subscriptionTrial != null) {
     active_trial = subscriptionTrial.active_trial;
   }
   if (active_trial == null) {
     active_trial = null;
   }
-  let selectedOption = trialInterval(14468)(active_trial).selectedOption;
+  let selectedOption = trialInterval(14476)(active_trial).selectedOption;
   if (selectedOption == null) {
     selectedOption = null;
   }
@@ -1147,7 +1147,7 @@ export const useTrialInterval = function useTrialInterval(editStateId) {
   return items1;
 };
 export const useTrialLimit = function useTrialLimit(editStateId) {
-  const subscriptionTrial = _require(14448).useSubscriptionTrial(editStateId);
+  const subscriptionTrial = _require(14456).useSubscriptionTrial(editStateId);
   let prop;
   if (subscriptionTrial != null) {
     prop = subscriptionTrial.max_num_active_trial_users;
@@ -1619,7 +1619,7 @@ export const useEditStateIds = function useEditStateIds(groupListingId, guildId,
   let c2;
   let dependencyMap;
   let c4;
-  subscriptionListingsForGroup = _require(14448).useSubscriptionListingsForGroup(groupListingId, obj);
+  subscriptionListingsForGroup = _require(14456).useSubscriptionListingsForGroup(groupListingId, obj);
   const tmp2 = callback3((arg0) => arg0.editStateIdsForGroup[closure_0]);
   c2 = tmp2;
   const tmp3 = callback3((setEditStateIdsForGroup) => setEditStateIdsForGroup.setEditStateIdsForGroup);

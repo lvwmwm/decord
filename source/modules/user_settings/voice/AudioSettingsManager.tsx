@@ -1,9 +1,9 @@
-// Module ID: 16389
-// Function ID: 16390
+// Module ID: 16405
+// Function ID: 16406
 // Name: handleConnectionOpen
-// Dependencies: [32, 4317, 4749, 1218, 4351, 4364, 9158, 11, 1306, 595, 1355, 9157, 12, 13171, 10879, 5261, 2]
+// Dependencies: [32, 4317, 4749, 1218, 4351, 4364, 9164, 11, 1306, 595, 1374, 9163, 12, 13180, 10884, 5261, 2]
 
-// Module 16389 (handleConnectionOpen)
+// Module 16405 (handleConnectionOpen)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
@@ -22,7 +22,7 @@ function handleConnectionOpen() {
     HermesBuiltin.throwTypeError();
   }
   if (!Storage.get("AudioContextSettingsMigrated:" + id)) {
-    const PreloadedUserSettingsActionCreators = tmp(1355).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = tmp(1374).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", (arg0) => {
       let tmp42;
       let tmp43;
@@ -36,7 +36,7 @@ function handleConnectionOpen() {
         let tmp8 = tmp5[1];
         let tmp9 = callback;
         let tmp10 = dependencyMap;
-        let obj = callback(9157);
+        let obj = callback(9163);
         let result = obj.coerceAudioContextForProto(first);
         if (null != result) {
           let tmp52 = result;
@@ -81,7 +81,7 @@ function handleConnectionOpen() {
             let merged = Object.assign(obj[first1]);
             let tmp31 = callback;
             let tmp32 = dependencyMap;
-            let obj4 = callback(9157);
+            let obj4 = callback(9163);
             let tmp33 = first;
             obj1.volume = obj4.snapVolumeToDefault(tmp25[1], tmp7);
             obj[first1] = obj1;
@@ -126,7 +126,7 @@ function handleConnectionOpen() {
       const Storage = callback(595).Storage;
       const result1 = Storage.set(callback3(id.getId()), true);
       return flag;
-    }, tmp(1355).UserSettingsDelay.AUTOMATED);
+    }, tmp(1374).UserSettingsDelay.AUTOMATED);
   }
 }
 function handleSetLocalVolume(arg0) {
@@ -144,9 +144,9 @@ function handleSetLocalVolume(arg0) {
     }
     obj = { volume: null };
     obj[0] = volume;
-    const result = require(13171) /* getPendingAudioSettings */.updatePendingSettings(context, userId, obj);
+    const result = require(13180) /* getPendingAudioSettings */.updatePendingSettings(context, userId, obj);
     lib();
-    const obj2 = require(13171) /* getPendingAudioSettings */;
+    const obj2 = require(13180) /* getPendingAudioSettings */;
   }
 }
 function handleSetLocalMute(arg0) {
@@ -154,12 +154,12 @@ function handleSetLocalMute(arg0) {
   let userId;
   ({ context, userId } = arg0);
   if (userId !== store.getId()) {
-    let obj = require(13171) /* getPendingAudioSettings */;
+    let obj = require(13180) /* getPendingAudioSettings */;
     obj = { muted: null };
     obj[0] = _detectH265HardwareDecode.isLocalMute(userId, context);
     const result = obj.updatePendingSettings(context, userId, obj);
     lib.cancel();
-    const PreloadedUserSettingsActionCreators = require(1355) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", (arg0) => {
       const callback = arg0;
       let c1 = false;
@@ -227,7 +227,7 @@ function handleSetLocalMute(arg0) {
         callback2 = tmp25;
       });
       return c1;
-    }, require(1355) /* updateUserGuildSettings */.UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, require(1374) /* updateUserGuildSettings */.UserSettingsDelay.INFREQUENT_USER_ACTION);
     const isLocalMuteResult = _detectH265HardwareDecode.isLocalMute(userId, context);
   }
 }
@@ -235,12 +235,12 @@ function handleSetLocalSoundboardMute(userId) {
   userId = userId.userId;
   if (userId !== store.getId()) {
     const result = localSoundboardMuted.isLocalSoundboardMuted(userId);
-    let obj = require(13171) /* getPendingAudioSettings */;
+    let obj = require(13180) /* getPendingAudioSettings */;
     obj = { soundboardMuted: null };
     obj[0] = result;
     const result1 = obj.updatePendingSettings(userId.context, userId, obj);
     lib.cancel();
-    const PreloadedUserSettingsActionCreators = require(1355) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", (arg0) => {
       const callback = arg0;
       let c1 = false;
@@ -308,18 +308,18 @@ function handleSetLocalSoundboardMute(userId) {
         callback2 = tmp25;
       });
       return c1;
-    }, require(1355) /* updateUserGuildSettings */.UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, require(1374) /* updateUserGuildSettings */.UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function handleResetMediaEngineSettings(arg0) {
   if (arg0 == null) {
     HermesBuiltin.throwTypeError();
   } else {
-    const PreloadedUserSettingsActionCreators = require(1355) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", (arg0) => {
       arg0.user = {};
       arg0.stream = {};
-    }, require(1355) /* updateUserGuildSettings */.UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, require(1374) /* updateUserGuildSettings */.UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function SETTINGS_MIGRATION_KEY(arg0) {
@@ -327,14 +327,14 @@ function SETTINGS_MIGRATION_KEY(arg0) {
 }
 function DEFAULT_VOLUME_FOR_CONTEXT(arg0) {
   if (arg0 === MediaEngineContextTypes.STREAM) {
-    let USER = require(9158) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.STREAM;
+    let USER = require(9164) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.STREAM;
   } else {
-    USER = require(9158) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.USER;
+    USER = require(9164) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.USER;
   }
   return USER;
 }
 let closure_12 = require("apply").debounce(() => {
-  const PreloadedUserSettingsActionCreators = require(1355) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
+  const PreloadedUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", (arg0) => {
     const callback = arg0;
     let c1 = false;
@@ -402,7 +402,7 @@ let closure_12 = require("apply").debounce(() => {
       callback2 = tmp25;
     });
     return c1;
-  }, require(1355) /* updateUserGuildSettings */.UserSettingsDelay.INFREQUENT_USER_ACTION);
+  }, require(1374) /* updateUserGuildSettings */.UserSettingsDelay.INFREQUENT_USER_ACTION);
 }, 2000);
 let closure_13 = require("apply").debounce(require("disconnectRemote").remoteAudioSettingsUpdate, 500, { maxWait: 500 });
 let prototype = function AudioSettingsManager() {

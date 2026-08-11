@@ -1,10 +1,10 @@
-// Module ID: 10260
-// Function ID: 10261
+// Module ID: 10265
+// Function ID: 10266
 // Name: isVisualMedia
-// Dependencies: [676, 4491, 1384, 10261, 2]
+// Dependencies: [676, 4491, 1403, 10266, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 10260 (isVisualMedia)
+// Module 10265 (isVisualMedia)
 import { MessageAttachmentFlags } from "ME";
 
 const re3 = /\.(mp3|m4a|ogg|opus|wav|flac)$/i;
@@ -40,7 +40,7 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
               if (tmp5Result.isVideoFile(filename)) {
                 str5 = "INVALID";
                 if (null != proxy_url.proxy_url) {
-                  tmp5Result = tmp5(1384);
+                  tmp5Result = tmp5(1403);
                   let num2 = proxy_url.flags;
                   if (num2 == null) {
                     num2 = 0;
@@ -73,7 +73,7 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
     if (obj.isPlaintextPreviewableFile(filename)) {
       str2 = "PLAINTEXT_PREVIEW";
     }
-    obj = require(10261) /* set */;
+    obj = require(10266) /* set */;
   }
   str = str2;
 };

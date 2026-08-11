@@ -1,9 +1,9 @@
-// Module ID: 7113
-// Function ID: 7114
+// Module ID: 7114
+// Function ID: 7115
 // Name: getAll
-// Dependencies: [1376, 1218, 1372, 1971, 1964, 1891, 3929, 676, 1379, 505, 506, 3, 1936, 3920, 514, 698, 1384, 2]
+// Dependencies: [1395, 1218, 1391, 1990, 1983, 1910, 3948, 676, 1398, 505, 506, 3, 1955, 3939, 514, 698, 1403, 2]
 
-// Module 7113 (getAll)
+// Module 7114 (getAll)
 import createChannelRecord from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -53,7 +53,7 @@ class GuildsRequiringChannelSync {
 }
 const prototype = GuildsRequiringChannelSync.prototype;
 prototype["getAll"] = function getAll() {
-  const result = importDefault(1936).guildsRequiringChannelSync();
+  const result = importDefault(1955).guildsRequiringChannelSync();
   if (null == result) {
     let resolved = Promise.resolve([]);
   } else {
@@ -101,21 +101,21 @@ prototype["detectRoleVisibilityChanges"] = function detectRoleVisibilityChanges(
     if (isSubscriptionRoleResult) {
       let tmp = obj;
       let tmp2 = dependencyMap;
-      obj = obj(3920);
+      obj = obj(3939);
       isSubscriptionRoleResult = obj.isSubscriptionRole(tmp18);
     }
     if (isSubscriptionRoleResult) {
       let tmp4 = obj;
       let tmp5 = dependencyMap;
-      let obj2 = obj(3920);
+      let obj2 = obj(3939);
       isSubscriptionRoleResult = obj2.isSubscriptionRoleAvailableForPurchase(tmp18);
     }
     let tmp7 = dependencyMap;
     let tmp6 = obj;
-    let obj3 = obj(3920);
+    let obj3 = obj(3939);
     let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
     if (isSubscriptionRoleResult1) {
-      let tmp6Result = tmp6(3920);
+      let tmp6Result = tmp6(3939);
       isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
     }
     if (!isSubscriptionRoleResult) {
@@ -391,12 +391,12 @@ prototype["markGuildForResync"] = function markGuildForResync(id, database, Back
   obj = { guild_id: id, request_id: v4Result, trigger: BackgroundSync, change_type: ChannelVisibleParentHidden };
   importDefault(698).track(constants.GUILD_CHANNEL_RESYNC_REQUESTED, obj);
   const obj2 = importDefault(698);
-  const result = importDefault(1936).guildsRequiringChannelSyncTransaction(database);
+  const result = importDefault(1955).guildsRequiringChannelSyncTransaction(database);
   obj = { id, requestId: v4Result };
   result.put(obj);
 };
 prototype["unmarkGuildForResync"] = function unmarkGuildForResync(id, database) {
-  const result = importDefault(1936).guildsRequiringChannelSyncTransaction(database);
+  const result = importDefault(1955).guildsRequiringChannelSyncTransaction(database);
   result.delete(id);
 };
 prototype["hasNewlyVisibleChannelWithHiddenParent"] = function hasNewlyVisibleChannelWithHiddenParent(id, channels, deleted_channel_ids) {

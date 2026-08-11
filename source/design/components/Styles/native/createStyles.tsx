@@ -1,7 +1,7 @@
 // Module ID: 4303
 // Function ID: 4304
 // Name: createCacheKey
-// Dependencies: [32, 17, 4295, 4119, 4013, 500, 712, 4006, 4036, 4304, 4307, 4236, 1348, 2]
+// Dependencies: [32, 17, 4295, 4124, 4031, 500, 712, 4025, 4042, 4304, 4307, 4236, 1367, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, processColorOrThrow, useLegacyClassComponentStyles
 
 // Module 4303 (createCacheKey)
@@ -64,7 +64,7 @@ function parseThemedStyles(obj, enabledExperiments) {
       let internal = importDefault(712).internal;
       if (internal.isSemanticColor(obj2)) {
         let tmp16 = require;
-        let obj3 = require(4006) /* getSemanticColorContextFromThemeContext */;
+        let obj3 = require(4025) /* getSemanticColorContextFromThemeContext */;
         let semanticColorContextFromThemeContext = obj3.getSemanticColorContextFromThemeContext(arg1);
         let internal4 = tmp6(712).internal;
         obj[key10022] = internal4.resolveSemanticColor(theme, obj2, semanticColorContextFromThemeContext);
@@ -221,7 +221,7 @@ export const createLegacyClassComponentStyles = function createLegacyClassCompon
   };
 };
 export const useLegacyClassComponentStyles = function useLegacyClassComponentStyles(createCacheKey) {
-  return createCacheKey(require(4013) /* ManaContext */.useThemeContext());
+  return createCacheKey(require(4031) /* ManaContext */.useThemeContext());
 };
 export const createStyleProperties = function createStyleProperties(createCacheKey) {
   let closure_0 = createCacheKey;

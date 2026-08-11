@@ -1,10 +1,10 @@
-// Module ID: 11234
-// Function ID: 11235
+// Module ID: 11239
+// Function ID: 11240
 // Name: getGuildMemberAgeInRange
-// Dependencies: [1971, 1891, 3929, 1903, 3917, 676, 589, 11, 1384, 2]
+// Dependencies: [1990, 1910, 3948, 1922, 3936, 676, 589, 11, 1403, 2]
 // Exports: canManageMessages, hasBanMemberPerms, hasKickMemberPerms, useCanBanMember, useCanKickMember, useCanManageMessages, useGuildMemberAgeInRange, useNewMemberBadge
 
-// Module 11234 (getGuildMemberAgeInRange)
+// Module 11239 (getGuildMemberAgeInRange)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -128,7 +128,7 @@ export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
   obj = _require(589);
   const items = [trackCommunicationDisabled];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const obj = callback(1384);
+    const obj = callback(1403);
     const member = outer1_3.getMember(callback, obj);
     let num;
     if (member != null) {

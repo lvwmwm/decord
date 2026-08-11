@@ -1,10 +1,10 @@
-// Module ID: 6186
-// Function ID: 6187
+// Module ID: 6188
+// Function ID: 6189
 // Name: CompassSpotIllustration
-// Dependencies: [21, 5268, 6187, 2]
+// Dependencies: [21, 5268, 6189, 2]
 // Exports: CompassSpotIllustration
 
-// Module 6186 (CompassSpotIllustration)
+// Module 6188 (CompassSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CompassSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const CompassSpotIllustration = function CompassSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6187);
+  obj[0] = importDefault(6189);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

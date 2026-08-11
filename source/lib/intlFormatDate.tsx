@@ -1,10 +1,10 @@
-// Module ID: 3991
-// Function ID: 3992
+// Module ID: 4010
+// Function ID: 4011
 // Name: makeIntlFormatter
-// Dependencies: [1975, 3988, 1236, 2]
+// Dependencies: [1994, 4007, 1236, 2]
 // Exports: makeFormatter
 
-// Module 3991 (makeIntlFormatter)
+// Module 4010 (makeIntlFormatter)
 import _getSystemLocale from "_getSystemLocale";
 
 const require = arg1;

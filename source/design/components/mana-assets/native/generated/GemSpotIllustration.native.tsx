@@ -1,10 +1,10 @@
-// Module ID: 6404
-// Function ID: 6405
+// Module ID: 6406
+// Function ID: 6407
 // Name: GemSpotIllustration
-// Dependencies: [21, 5268, 6405, 2]
+// Dependencies: [21, 5268, 6407, 2]
 // Exports: GemSpotIllustration
 
-// Module 6404 (GemSpotIllustration)
+// Module 6406 (GemSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GemSpotIllustration = function GemSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6405);
+  obj[0] = importDefault(6407);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

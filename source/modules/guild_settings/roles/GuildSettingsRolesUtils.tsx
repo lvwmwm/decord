@@ -1,10 +1,10 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16713
+// Function ID: 16714
 // Name: ADD_MEMBER_QUERY_LIMIT
-// Dependencies: [19, 1971, 1903, 16692, 676, 589, 4146, 5359, 5231, 698, 5229, 1351, 2]
+// Dependencies: [19, 1990, 1922, 16704, 676, 589, 4148, 5359, 5231, 698, 5229, 1370, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildMembers, useGuildRoleMembers, useQueryGuildMembers
 
-// Module 16701 (ADD_MEMBER_QUERY_LIMIT)
+// Module 16713 (ADD_MEMBER_QUERY_LIMIT)
 import noop from "noop";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -209,7 +209,7 @@ export const getSectionAnalyticsName = function getSectionAnalyticsName(DISPLAY)
   } else if (tmp.VERIFICATIONS === DISPLAY) {
     return "Connections";
   } else {
-    require(1351) /* isDiscordFrontendDevelopment */.assertNever(DISPLAY);
+    require(1370) /* isDiscordFrontendDevelopment */.assertNever(DISPLAY);
   }
 };
 export const filterRole = function filterRole(name, str) {

@@ -1,14 +1,14 @@
-// Module ID: 15463
-// Function ID: 15464
+// Module ID: 15480
+// Function ID: 15481
 // Name: HomeDrawerDMExpandedChildren
-// Dependencies: [19, 17, 1376, 3938, 4499, 1903, 505, 21, 4303, 589, 4494, 15464, 14553, 12566, 9731, 4299, 9790, 3979, 15428, 4164, 4161, 2]
+// Dependencies: [19, 17, 1395, 3957, 4499, 1922, 505, 21, 4303, 589, 4494, 15481, 14561, 12570, 9736, 4299, 9795, 3998, 15445, 4164, 4161, 2]
 // Exports: default
 
-// Module 15463 (HomeDrawerDMExpandedChildren)
+// Module 15480 (HomeDrawerDMExpandedChildren)
 import MobileHomeDrawerExperiment from "MobileHomeDrawerExperiment";
 import { View } from "ChannelListLayoutTypes";
 import { isMultiUserDM } from "createChannelRecord";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { NOOP } from "sum";
@@ -46,9 +46,9 @@ function HomeDrawerDMExpandedChildren(channel) {
     return tmp2;
   });
   const obj2 = channel(589);
-  const tmp3 = importDefault(14553)(channel, { unread: channel(15464).useBaseChannelUnreadBadgeState(channel, false).unread });
+  const tmp3 = importDefault(14561)(channel, { unread: channel(15481).useBaseChannelUnreadBadgeState(channel, false).unread });
   c4 = tmp3;
-  const obj3 = channel(15464);
+  const obj3 = channel(15481);
   const items2 = [updateUserGuildSettingsInternal];
   stateFromStores1 = channel(589).useStateFromStores(items2, () => outer1_7.getChannelMuteConfig(channel.guild_id, channel.id));
   const items3 = [stateFromStores1];
@@ -85,10 +85,10 @@ function HomeDrawerDMExpandedChildren(channel) {
       }
       let tmp5Result = dependencyMap;
       if (isTemporary) {
-        tmp5Result = tmp5(12566);
+        tmp5Result = tmp5(12570);
         let BellSlashIcon = tmp5Result.BellZIcon;
       } else {
-        BellSlashIcon = tmp5(9731).BellSlashIcon;
+        BellSlashIcon = tmp5(9736).BellSlashIcon;
       }
     } else {
       let obj = { style: null, children: null };
@@ -107,13 +107,13 @@ function HomeDrawerDMExpandedChildren(channel) {
       const obj = { channel: null, message: null, variant: "text-xs/medium", color: "text-strong", layout: null, muted: null };
       obj[0] = channel;
       obj[1] = tmp;
-      obj[4] = channel(3979).ChannelListLayoutTypes.COZY;
+      obj[4] = channel(3998).ChannelListLayoutTypes.COZY;
       obj[5] = memo.isMuted;
-      tmp2 = outer1_10(channel(9790).ChannelRowPreview, obj);
+      tmp2 = outer1_10(channel(9795).ChannelRowPreview, obj);
     }
     return tmp2;
   }, items5);
-  return callback(channel(15428).HomeDrawerSharedItem, { title, subtitle });
+  return callback(channel(15445).HomeDrawerSharedItem, { title, subtitle });
 }
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });

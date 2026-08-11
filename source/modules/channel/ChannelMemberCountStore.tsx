@@ -1,9 +1,9 @@
-// Module ID: 12557
-// Function ID: 12558
+// Module ID: 12561
+// Function ID: 12562
 // Name: initialize
-// Dependencies: [4994, 1372, 11, 589, 709, 2]
+// Dependencies: [4994, 1391, 11, 589, 709, 2]
 
-// Module 12557 (initialize)
+// Module 12561 (initialize)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { PersistedStore } from "initialize";

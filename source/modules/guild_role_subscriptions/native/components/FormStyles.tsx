@@ -1,9 +1,9 @@
-// Module ID: 13247
-// Function ID: 13248
+// Module ID: 13255
+// Function ID: 13256
 // Name: styles
 // Dependencies: [676, 4303, 5236, 712, 2]
 
-// Module 13247 (styles)
+// Module 13255 (styles)
 import { Fonts } from "ME";
 import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";

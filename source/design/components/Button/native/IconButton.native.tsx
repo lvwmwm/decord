@@ -1,9 +1,9 @@
-// Module ID: 7751
-// Function ID: 7752
+// Module ID: 7753
+// Function ID: 7754
 // Name: IconButton
-// Dependencies: [19, 21, 4303, 712, 4721, 7752, 4299, 2]
+// Dependencies: [19, 21, 4303, 712, 4721, 7754, 4299, 2]
 
-// Module 7751 (IconButton)
+// Module 7753 (IconButton)
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -43,7 +43,7 @@ const forwardRefResult = require("noop").forwardRef((grow) => {
     obj.accessibilityLabel = "";
     obj.size = "lg";
     obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
-    const items = [callback(require(7752) /* BaseIconButton */.BaseIconButton, obj), ];
+    const items = [callback(require(7754) /* BaseIconButton */.BaseIconButton, obj), ];
     const obj1 = { style: null, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier: null, children: null };
     obj1[0] = tmp2.label;
     obj1[3] = maxFontSizeMultiplier;
@@ -58,7 +58,7 @@ const forwardRefResult = require("noop").forwardRef((grow) => {
     obj.accessibilityLabel = accessibilityLabel;
     obj.accessibilityHint = accessibilityHint;
     obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
-    tmp9 = callback(require(7752) /* BaseIconButton */.BaseIconButton, obj);
+    tmp9 = callback(require(7754) /* BaseIconButton */.BaseIconButton, obj);
   }
   return tmp9;
 });

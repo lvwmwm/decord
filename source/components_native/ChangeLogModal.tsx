@@ -1,10 +1,10 @@
-// Module ID: 14728
-// Function ID: 14729
+// Module ID: 14738
+// Function ID: 14739
 // Name: ChangeLogScreen
-// Dependencies: [19, 17, 676, 1959, 21, 4303, 712, 4013, 698, 8844, 14729, 5268, 8870, 1236, 4846, 9057, 9967, 1297, 8190, 1474, 8191, 1481, 5270, 3883, 8192, 4299, 4509, 5783, 2]
+// Dependencies: [19, 17, 676, 1978, 21, 4303, 712, 4031, 698, 8850, 14739, 5268, 8876, 1236, 4846, 9063, 9972, 1297, 8192, 1493, 8193, 1500, 5270, 3902, 8194, 4299, 4509, 5783, 2]
 // Exports: default
 
-// Module 14728 (ChangeLogScreen)
+// Module 14738 (ChangeLogScreen)
 import importAllResult from "useWindowDimensions";
 import { View } from "Button";
 import { AnalyticEvents } from "ME";
@@ -287,7 +287,7 @@ prototype["renderVideo"] = function renderVideo() {
       obj1[3] = function onReady() {
         return self.setState({ ytVideoReady: true });
       };
-      const items = [callback(importDefault(14729), obj1), ];
+      const items = [callback(importDefault(14739), obj1), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj2 = { style: null, source: null };
@@ -320,21 +320,21 @@ prototype["renderVideo"] = function renderVideo() {
   obj6[8] = function onPress() {
     self.track(outer1_5.CHANGE_LOG_VIDEO_INTERACTED);
   };
-  const items1 = [callback(importDefault(8870), obj6), ];
+  const items1 = [callback(importDefault(8876), obj6), ];
   let tmp12Result = null;
   if (null != video) {
     const obj7 = { accessibilityLabel: "Play Video", accessibilityRole: "button", style: null, onPress: null, children: null };
     obj7[2] = tmp.videoOverlay;
     obj7[3] = self.playVideo;
     const obj8 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: null, onPress: null, style: null, iconSize: null, iconStyle: null };
-    obj8[2] = tmp15(9967);
+    obj8[2] = tmp15(9972);
     obj8[3] = self.playVideo;
     obj8[4] = tmp.playButton;
     obj8[5] = tmp18(1297).IconSizes.CUSTOM;
     obj8[6] = tmp.playIcon;
-    obj7[4] = tmp12(tmp15(9057), obj8);
+    obj7[4] = tmp12(tmp15(9063), obj8);
     tmp12Result = tmp12(tmp18(4846).PressableOpacity, obj7);
-    const tmp15Result = tmp15(9057);
+    const tmp15Result = tmp15(9063);
   }
   items1[1] = tmp12Result;
   obj5[2] = items1;
@@ -346,7 +346,7 @@ prototype["render"] = function render() {
   const merged = Object.assign(this.props);
   obj.video = this.renderVideo();
   obj.onScroll = this.handleScroll;
-  return callback(importDefault(8190), obj);
+  return callback(importDefault(8192), obj);
 };
 ChangeLog.contextType = require("ManaContext").ThemeContext;
 let obj3 = { width: 7, height: 7, borderRadius: 3.5, marginRight: 13, marginTop: 7, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };

@@ -1,7 +1,7 @@
 // Module ID: 5301
 // Function ID: 5302
 // Name: useFrameSize
-// Dependencies: [19, 17, 21, 5302, 5303, 1502]
+// Dependencies: [19, 17, 21, 5302, 5303, 1521]
 // Exports: FrameSizeProvider, useFrameSize
 
 // Module 5301 (useFrameSize)
@@ -40,9 +40,9 @@ export const FrameSizeProvider = function FrameSizeProvider(initialFrame) {
   let obj = { width: initialFrame.width, height: initialFrame.height };
   closure_0 = React.useRef(obj);
   importDefault = React.useRef(new Set());
-  const tmp2 = importDefault(1502)(() => ref.current);
+  const tmp2 = importDefault(1521)(() => ref.current);
   dependencyMap = tmp2;
-  const tmp3 = importDefault(1502)((arg0) => {
+  const tmp3 = importDefault(1521)((arg0) => {
     let closure_0 = arg0;
     let current = ref2.current;
     current.add(arg0);
@@ -52,7 +52,7 @@ export const FrameSizeProvider = function FrameSizeProvider(initialFrame) {
     };
   });
   React = tmp3;
-  const tmp4 = importDefault(1502)((arg0) => {
+  const tmp4 = importDefault(1521)((arg0) => {
     let closure_0 = arg0;
     let c2 = false;
     const _undefined = false;
@@ -85,7 +85,7 @@ export const FrameSizeProvider = function FrameSizeProvider(initialFrame) {
   callback = tmp4;
   const items = [tmp3, tmp4, tmp2];
   const memo = React.useMemo(() => ({ getCurrent: c2, subscribe: c3, subscribeThrottled: c4 }), items);
-  const tmp6 = importDefault(1502)((height) => {
+  const tmp6 = importDefault(1521)((height) => {
     if (!tmp2) {
       const obj = { width: null, height: null };
       ({ width: obj[0], height: obj[1] } = height);

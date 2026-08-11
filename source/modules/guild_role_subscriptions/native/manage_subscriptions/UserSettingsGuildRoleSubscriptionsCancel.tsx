@@ -1,10 +1,10 @@
-// Module ID: 14462
-// Function ID: 14463
+// Module ID: 14470
+// Function ID: 14471
 // Name: WhatYouLose
-// Dependencies: [5, 32, 19, 17, 3953, 21, 4303, 712, 14463, 3883, 1236, 5779, 1297, 4299, 14453, 5268, 14471, 5728, 5748, 7651, 4643, 4623, 4001, 3969, 4714, 14459, 14448, 14472, 14473, 589, 2]
+// Dependencies: [5, 32, 19, 17, 3972, 21, 4303, 712, 14471, 3902, 1236, 5779, 1297, 4299, 14461, 5268, 14479, 5728, 5748, 7653, 4643, 4623, 4020, 3988, 4714, 14467, 14456, 14480, 14481, 589, 2]
 // Exports: default
 
-// Module 14462 (WhatYouLose)
+// Module 14470 (WhatYouLose)
 import closure_4 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import notSupported from "notSupported";
@@ -24,11 +24,11 @@ function WhatYouLose(subscription) {
   let listingId;
   ({ listingId, guild } = subscription);
   const tmp = callback4();
-  let obj = importAll(14463);
-  let obj1 = importAll(14463);
-  let obj2 = importAll(14463);
-  let obj3 = importAll(14463);
-  let obj4 = importDefault(3883)(subscription.subscription.currentPeriodEnd);
+  let obj = importAll(14471);
+  let obj1 = importAll(14471);
+  let obj2 = importAll(14471);
+  let obj3 = importAll(14471);
+  let obj4 = importDefault(3902)(subscription.subscription.currentPeriodEnd);
   const intl = require(1236) /* getSystemLocale */.intl;
   const formatResult = obj4.format(c12);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -44,7 +44,7 @@ function WhatYouLose(subscription) {
   obj2[0] = items1;
   items[2] = callback3(closure_7, obj2);
   obj1[1] = items;
-  const items2 = [callback3(closure_7, obj1), callback2(importDefault(14453), { style: { marginVertical: 16 } }), , , , , ];
+  const items2 = [callback3(closure_7, obj1), callback2(importDefault(14461), { style: { marginVertical: 16 } }), , , , , ];
   obj4 = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj4[2] = intl3.string(require(1236) /* getSystemLocale */.t["9SgXmT"]);
@@ -55,7 +55,7 @@ function WhatYouLose(subscription) {
   items2[5] = callback2(require(4299) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.OVlNGT, obj) });
   const obj5 = { source: null, style: null };
   const formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.OVlNGT, obj);
-  obj5[0] = importDefault(14471);
+  obj5[0] = importDefault(14479);
   obj5[1] = tmp.cactus;
   items2[6] = callback2(importDefault(5268), obj5);
   obj[1] = items2;
@@ -75,7 +75,7 @@ function CancelSubscriptionButtonFooter(guild) {
   [tmp3, c3] = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
   const tmp2 = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
   analyticsLocations = subscription(5728)(subscription(5748).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
-  let obj = subscription(7651);
+  let obj = subscription(7653);
   cancelSubscription = obj.useCancelSubscription(subscription.id, subscription.isACOM);
   cancelSubscription = cancelSubscription.cancelSubscription;
   isPurchasedViaAppleGeneric = subscription.isPurchasedViaAppleGeneric;
@@ -123,7 +123,7 @@ function CancelSubscriptionButtonFooter(guild) {
             obj1[0] = intl2.formatToPlainString(outer1_0(1236).t.sBs7sh, obj2);
             const obj15 = outer1_1(4643);
             const _HermesInternal = HermesInternal;
-            obj1[1] = "You can resubscribe any time before " + outer1_1(3883)(outer1_1.currentPeriodEnd).format(outer1_12) + ".";
+            obj1[1] = "You can resubscribe any time before " + outer1_1(3902)(outer1_1.currentPeriodEnd).format(outer1_12) + ".";
             const intl3 = outer1_0(1236).intl;
             obj1[2] = intl3.string(outer1_0(1236).t["3KZjFH"]);
             obj1[3] = outer1_0(1297).ButtonColors.RED;
@@ -171,11 +171,11 @@ function CancelSubscriptionButtonFooter(guild) {
               dependencyMap = 0;
               outer1_1 = closure_2;
               dependencyMap(false);
-              obj6 = outer1_0(4001);
+              obj6 = outer1_0(4020);
               obj6.presentFailedToast(outer1_1.message);
-              let tmp38 = outer1_1 instanceof outer1_1(3969);
+              let tmp38 = outer1_1 instanceof outer1_1(3988);
               if (tmp38) {
-                tmp38 = code.code === outer1_0(3969).ErrorCodes.ALREADY_CANCELED;
+                tmp38 = code.code === outer1_0(3988).ErrorCodes.ALREADY_CANCELED;
               }
               if (tmp38) {
                 if (outer1_2 != null) {
@@ -226,7 +226,7 @@ function CancelSubscriptionButtonFooter(guild) {
                   outer1_2();
                 }
               } else {
-                obj4 = outer1_0(4001);
+                obj4 = outer1_0(4020);
                 const intl = outer1_0(1236).intl;
                 obj4.presentFailedToast(intl.string(outer1_0(1236).t.R0RpRX));
               }
@@ -268,8 +268,8 @@ function Content(subscription) {
   let listing;
   subscription = subscription.subscription;
   const tmp = createCacheKey();
-  ({ listing, guild } = importDefault(14459)(subscription));
-  let obj = require(14448) /* useFetchListingsForGuild */;
+  ({ listing, guild } = importDefault(14467)(subscription));
+  let obj = require(14456) /* useFetchListingsForGuild */;
   let id;
   if (guild != null) {
     id = guild.id;
@@ -289,7 +289,7 @@ function Content(subscription) {
       const obj1 = { style: null, asset: null };
       obj1[0] = tmp.heroImage;
       obj1[1] = cover_image_asset;
-      const items = [callback2(importDefault(14472), obj1), ];
+      const items = [callback2(importDefault(14480), obj1), ];
       const obj2 = { style: null, children: null };
       obj2[0] = tmp.body;
       const obj3 = { guild: null, listingId: null, subscription: null };
@@ -306,7 +306,7 @@ function Content(subscription) {
       const obj5 = { listingId: null, guildId: null };
       obj5[0] = listing.id;
       obj5[1] = guild.id;
-      items1[4] = callback2(importAll(14473).Content, obj5);
+      items1[4] = callback2(importAll(14481).Content, obj5);
       obj2[1] = items1;
       items[1] = callback3(closure_7, obj2);
       obj[0] = items;

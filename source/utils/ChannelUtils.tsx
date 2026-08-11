@@ -1,7 +1,7 @@
 // Module ID: 4486
 // Function ID: 4487
 // Name: allowChannelAccess
-// Dependencies: [1376, 1372, 1961, 3929, 1960, 4376, 676, 1905, 3934, 506, 1935, 4487, 4488, 1236, 4146, 4489, 11, 2, 4496]
+// Dependencies: [1395, 1391, 1980, 3948, 1979, 4376, 676, 1924, 3953, 506, 1954, 4487, 4488, 1236, 4148, 4489, 11, 2, 4496]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
 // Module 4486 (allowChannelAccess)
@@ -28,7 +28,7 @@ let closure_23;
 let closure_6;
 let map1;
 function allowChannelAccess(id, channelType, MEMBER) {
-  const NONE = importAll(3934).NONE;
+  const NONE = importAll(3953).NONE;
   let tmp3 = callback(channelType);
   if (!tmp3) {
     tmp3 = channelType === closure_22;
@@ -56,7 +56,7 @@ function allowChannelAccess(id, channelType, MEMBER) {
     addResult2 = tmp(506).add(addResult1, constants.CONNECT);
     const tmpResult1 = tmp(506);
   }
-  return { id, type: MEMBER, deny: importAll(3934).NONE, allow: addResult2 };
+  return { id, type: MEMBER, deny: importAll(3953).NONE, allow: addResult2 };
 }
 ({ isGuildSelectableChannelType: c4, TEXT_CHANNEL_TYPES: c5, THREAD_CHANNEL_TYPES: closure_6 } = createChannelRecord);
 const ChannelTypes = ME.ChannelTypes;
@@ -69,9 +69,9 @@ export const denyChannelAccessForNonPaidUsers = function denyChannelAccessForNon
     let obj = importAll(506);
     obj = { id: null, type: null, allow: null, deny: null };
     obj[0] = arg0;
-    obj[1] = require(1935) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE;
-    obj[2] = importAll(3934).NONE;
-    obj[3] = obj.add(importAll(3934).NONE, constants.CONNECT);
+    obj[1] = require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE;
+    obj[2] = importAll(3953).NONE;
+    obj[3] = obj.add(importAll(3953).NONE, constants.CONNECT);
     return obj;
   } else {
     const _Error = Error;
@@ -89,7 +89,7 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
   }
   const items = [];
   if (tmp) {
-    const NONE = importAll(3934).NONE;
+    const NONE = importAll(3953).NONE;
     let tmp6 = callback(channelType);
     if (!tmp6) {
       tmp6 = channelType === closure_22;
@@ -112,8 +112,8 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
     }
     const obj = { id: null, type: null, allow: null, deny: null };
     obj[0] = guildId;
-    obj[1] = _require(1935).PermissionOverwriteType.ROLE;
-    obj[2] = importAll(3934).NONE;
+    obj[1] = _require(1954).PermissionOverwriteType.ROLE;
+    obj[2] = importAll(3953).NONE;
     obj[3] = addResult2;
     items.push(obj);
   }
@@ -123,13 +123,13 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
   return items;
 };
 export const permissionOverwriteForUser = function permissionOverwriteForUser(id, channelType) {
-  return allowChannelAccess(id, channelType, require(1935) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER);
+  return allowChannelAccess(id, channelType, require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER);
 };
 export const permissionOverwriteForRole = function permissionOverwriteForRole(id, channelType) {
-  return allowChannelAccess(id, channelType, require(1935) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE);
+  return allowChannelAccess(id, channelType, require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE);
 };
 export const permissionOverwritesForAnnouncement = function permissionOverwritesForAnnouncement(id) {
-  const items = [{ id, type: require(1935) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, deny: constants.SEND_MESSAGES, allow: importAll(3934).NONE }];
+  const items = [{ id, type: require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, deny: constants.SEND_MESSAGES, allow: importAll(3953).NONE }];
   return items;
 };
 export const isChannelFull = function isChannelFull(channel, outer1_11, handleConnectionOpen) {

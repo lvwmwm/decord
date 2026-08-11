@@ -1,10 +1,10 @@
-// Module ID: 11576
-// Function ID: 11577
+// Module ID: 11579
+// Function ID: 11580
 // Name: ChannelIcon
-// Dependencies: [32, 19, 1891, 21, 4303, 712, 4809, 4764, 11567, 5159, 4271, 11554, 11555, 4494, 5374, 4299, 2]
+// Dependencies: [32, 19, 1910, 21, 4303, 712, 4809, 4764, 11570, 5159, 4271, 11557, 11558, 4494, 5374, 4299, 2]
 // Exports: default
 
-// Module 11576 (ChannelIcon)
+// Module 11579 (ChannelIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

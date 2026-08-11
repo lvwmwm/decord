@@ -1,7 +1,7 @@
 // Module ID: 4523
 // Function ID: 4524
 // Name: createMinimalMessageRecord
-// Dependencies: [4524, 3939, 1911, 1218, 3938, 1903, 676, 4525, 4287, 4532, 11, 4537, 4538, 4635, 3883, 4636, 4638, 2]
+// Dependencies: [4524, 3958, 1930, 1218, 3957, 1922, 676, 4525, 4287, 4532, 11, 4537, 4538, 4635, 3902, 4636, 4638, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
 // Module 4523 (createMinimalMessageRecord)
@@ -10,7 +10,7 @@ import hasFlag from "hasFlag";
 import closure_6 from "hasFlag";
 import importDefaultResult from "createdAt";
 import fetchFingerprint from "fetchFingerprint";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
@@ -195,13 +195,13 @@ function createMessageRecord(message, message) {
     if (null != call.ended_timestamp) {
       const _Date = Date;
       const date = new Date(call.ended_timestamp);
-      tmp39Result = importDefault(3883)(date);
-      const tmp39 = importDefault(3883);
+      tmp39Result = importDefault(3902)(date);
+      const tmp39 = importDefault(3902);
     }
     let durationResult = null;
     if (null != tmp39Result) {
-      durationResult = importDefault(3883).duration(tmp39Result.diff(tmp35));
-      const obj12 = importDefault(3883);
+      durationResult = importDefault(3902).duration(tmp39Result.diff(tmp35));
+      const obj12 = importDefault(3902);
     }
     obj2 = { participants: null, endedTimestamp: null, duration: null };
     obj2[0] = call.participants;
@@ -336,12 +336,12 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         if (null != call.ended_timestamp) {
           const _Date = Date;
           const date = new Date(call.ended_timestamp);
-          tmp = importDefault(3883)(date);
-          const tmp4 = importDefault(3883);
+          tmp = importDefault(3902)(date);
+          const tmp4 = importDefault(3902);
         }
         let durationResult = null;
         if (null != tmp) {
-          obj = importDefault(3883);
+          obj = importDefault(3902);
           durationResult = obj.duration(tmp.diff(tmp46));
         }
         obj = { participants: null, endedTimestamp: null, duration: null };

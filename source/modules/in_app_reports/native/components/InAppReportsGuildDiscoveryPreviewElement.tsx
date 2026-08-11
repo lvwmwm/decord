@@ -1,10 +1,10 @@
-// Module ID: 12647
-// Function ID: 12648
+// Module ID: 12651
+// Function ID: 12652
 // Name: GuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4295, 21, 4303, 712, 589, 4151, 4299, 1236, 5779, 1411, 2]
+// Dependencies: [19, 17, 4295, 21, 4303, 712, 589, 4152, 4299, 1236, 5779, 1430, 2]
 // Exports: default
 
-// Module 12647 (GuildDiscoveryPreviewElement)
+// Module 12651 (GuildDiscoveryPreviewElement)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -34,7 +34,7 @@ export default function GuildDiscoveryPreviewElement(guild) {
   let obj = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj1 = require(4151) /* hexToRgba */;
+  let obj1 = require(4152) /* hexToRgba */;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -46,7 +46,7 @@ export default function GuildDiscoveryPreviewElement(guild) {
   const obj3 = { style: tmp.guildIcon, guild: null, animate: null };
   const hexWithOpacityResult = obj1.hexWithOpacity(tmp.borderColor.color, 0.08);
   const tmp4 = importDefault(5779);
-  obj3[1] = require(1411) /* fromGuildPropertiesWithAdditionalFields */.fromClientDiscoverableGuild(guild);
+  obj3[1] = require(1430) /* fromGuildPropertiesWithAdditionalFields */.fromClientDiscoverableGuild(guild);
   obj3[2] = !stateFromStores;
   const items3 = [callback(tmp4, obj3), callback(require(4299) /* Text */.Text, { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name })];
   obj2[1] = items3;

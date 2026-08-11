@@ -1,14 +1,14 @@
-// Module ID: 8005
-// Function ID: 8006
+// Module ID: 8007
+// Function ID: 8008
 // Name: RestrictedUser
-// Dependencies: [32, 19, 17, 3938, 5139, 5132, 21, 4303, 712, 589, 1236, 1297, 8006, 4299, 4271, 8007, 5328, 4714, 5397, 8008, 2]
+// Dependencies: [32, 19, 17, 3957, 5139, 5132, 21, 4303, 712, 589, 1236, 1297, 8008, 4299, 4271, 8009, 5328, 4714, 5397, 8010, 2]
 // Exports: default
 
-// Module 8005 (RestrictedUser)
+// Module 8007 (RestrictedUser)
 import _slicedToArray from "_slicedToArray";
 import renderDefaultEmpty from "renderDefaultEmpty";
 import { View } from "Button";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 import { STAGE_BLOCKED_USERS_SHEET_KEY as closure_8 } from "MAX_STAGE_TOPIC_LENGTH";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ function RestrictedUser(guildId) {
   const items = [buildStageChannelUserRoles];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.isModerator(user.id, closure_0));
   let obj1 = require(589) /* initialize */;
-  const items1 = [upsertRelationship];
+  const items1 = [markAllUserIdListsStale];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_6.isBlocked(user.id));
   const avatarSource = user.getAvatarSource(guildId.guildId);
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -55,7 +55,7 @@ function RestrictedUser(guildId) {
     obj2[0] = items3;
     const obj3 = { style: null, source: null, color: null };
     obj3[0] = tmp.icon;
-    obj3[1] = user(8006);
+    obj3[1] = user(8008);
     obj3[2] = user(712).unsafe_rawColors.WHITE;
     obj2[1] = tmp11(tmp2(1297).Icon, obj3);
     speaker = tmp11(tmp10, obj2);
@@ -190,9 +190,9 @@ export default function StageBlockedUsersActionSheet(channel) {
   const tmp = createCacheKey();
   const tmp2 = items1(React.useState(0), 2);
   dependencyMap = tmp2[1];
-  let obj = channel(8007);
+  let obj = channel(8009);
   const stageBlockedUsers = obj.useStageBlockedUsers(channel.id);
-  let obj1 = channel(8007);
+  let obj1 = channel(8009);
   const stageIgnoredUsers = obj1.useStageIgnoredUsers(channel.id);
   const callback = React.useCallback((nativeEvent) => {
     dependencyMap(nativeEvent.nativeEvent.layout.height);
@@ -231,7 +231,7 @@ export default function StageBlockedUsersActionSheet(channel) {
   obj3[5] = function itemSize() {
     return 48;
   };
-  const items3 = [callback(onAccept(8008), obj3), callback(View, { style: { height: tmp2[0] } })];
+  const items3 = [callback(onAccept(8010), obj3), callback(View, { style: { height: tmp2[0] } })];
   obj2[3] = items3;
   return callback2(channel(5397).BottomSheet, obj2);
 };

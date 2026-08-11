@@ -1,9 +1,9 @@
-// Module ID: 7003
-// Function ID: 7004
+// Module ID: 7006
+// Function ID: 7007
 // Name: fromServer
-// Dependencies: [32, 7004, 7005, 7010, 678, 676, 4345, 1930, 2]
+// Dependencies: [32, 7007, 7008, 7013, 678, 676, 4345, 1949, 2]
 
-// Module 7003 (fromServer)
+// Module 7006 (fromServer)
 import _slicedToArray from "_slicedToArray";
 import fromServer from "fromServer";
 import createCollectiblesItemsFromServerResponse from "createCollectiblesItemsFromServerResponse";
@@ -97,7 +97,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
     }
     if (null != collectibles) {
       if (skus.skus.length > 1) {
-        let type = _require(1930).CollectiblesItemType.VARIANTS_GROUP;
+        let type = _require(1949).CollectiblesItemType.VARIANTS_GROUP;
       } else {
         type = collectibles.type;
       }
@@ -106,7 +106,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
         obj = {};
       }
       let items = obj.items;
-      obj = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type: null, premiumType: null, items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, variants: null, googleSkuIds: null, eligibleOffers: "r", isFirstParty: 135.25, bundledProducts: null };
+      obj = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type: null, premiumType: null, items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, variants: null, googleSkuIds: null, eligibleOffers: "r", isFirstParty: "PX_16", bundledProducts: "TRANSPARENT" };
       ({ id: obj2[0], id: obj2[1] } = first);
       ({ name: obj2[2], summary: obj2[3], primaryCollectionStyles: obj2[4] } = skus);
       obj[5] = type;
@@ -133,7 +133,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
       obj[9] = closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === first.id);
       ({ prices: obj2[10], previewAssetPaths } = first);
       obj[11] = previewAssetPaths;
-      let str2 = _require(1930).CollectiblesItemType.VARIANTS_GROUP;
+      let str2 = _require(1949).CollectiblesItemType.VARIANTS_GROUP;
       let found;
       if (type === str2) {
         skus = skus.skus;
@@ -157,7 +157,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
             }
             ({ items, item } = obj);
             const first = outer1_3(tenantMetadata.selectedOptions, 1)[0];
-            obj = { baseVariantName: null, baseVariantSkuId: null, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "e", type: "Array", premiumType: "call", items: "LIGHT", categorySkuId: null, isCategoryReward: "finger", prices: "hand", previewAssets: "index", googleSkuIds: "pointing", eligibleOffers: "poke", variants: "viewer", bundledProducts: "you", isFirstParty: "+1" };
+            obj = { baseVariantName: null, baseVariantSkuId: null, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "e", type: "Array", premiumType: "accessibilityRole", items: "__packager_asset", categorySkuId: "isArrayBuffer", isCategoryReward: "getCanonicalGameId", prices: "pf", previewAssets: "resolveSheetAllowedDetents", googleSkuIds: "e", eligibleOffers: "isArray", variants: "\u{1F468}\u{1F3FC}\u200D\u{1F3ED}", bundledProducts: "\u{1F1E8}\u{1F1F0}", isFirstParty: "selectedCustomReactionIcon" };
             obj[0] = skus.name;
             obj[1] = first.id;
             let str;

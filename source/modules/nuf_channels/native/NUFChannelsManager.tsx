@@ -1,9 +1,9 @@
-// Module ID: 13034
-// Function ID: 13035
+// Module ID: 13043
+// Function ID: 13044
 // Name: _initialize
-// Dependencies: [1971, 1891, 4124, 1903, 676, 3917, 595, 4146, 5261, 4159, 4158, 1384, 4271, 13035, 1988, 2]
+// Dependencies: [1990, 1910, 4126, 1922, 676, 3936, 595, 4148, 5261, 4159, 4158, 1403, 4271, 13044, 2007, 2]
 
-// Module 13034 (_initialize)
+// Module 13043 (_initialize)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -95,8 +95,8 @@ class NUFChannelsManager extends tmp2 {
       const value = Storage.get(closure_10);
       let isNewUserResult = !value;
       if (!value) {
-        isNewUserResult = applyArgumentsResult(4146).isNewUser(currentUser.getCurrentUser());
-        const tmpResult = applyArgumentsResult(4146);
+        isNewUserResult = applyArgumentsResult(4148).isNewUser(currentUser.getCurrentUser());
+        const tmpResult = applyArgumentsResult(4148);
       }
       return isNewUserResult;
     };
@@ -119,7 +119,7 @@ prototype["_initialize"] = function _initialize() {
   const value = Storage.get(c9);
   let isNewUserResult = !value;
   if (!value) {
-    let tmpResult = tmp(4146);
+    let tmpResult = tmp(4148);
     isNewUserResult = tmpResult.isNewUser(currentUser.getCurrentUser());
   }
   if (isNewUserResult) {

@@ -1,10 +1,10 @@
-// Module ID: 15680
-// Function ID: 15681
+// Module ID: 15697
+// Function ID: 15698
 // Name: ResourceChannelRow
-// Dependencies: [19, 17, 1372, 1961, 4521, 3929, 676, 21, 4303, 712, 589, 8405, 11400, 15681, 6917, 11657, 1416, 4846, 4299, 4293, 15674, 1222, 1236, 15682, 4714, 2]
+// Dependencies: [19, 17, 1391, 1980, 4521, 3948, 676, 21, 4303, 712, 589, 8411, 11403, 15698, 6920, 11660, 1435, 4846, 4299, 4293, 15691, 1222, 1236, 15699, 4714, 2]
 // Exports: default
 
-// Module 15680 (ResourceChannelRow)
+// Module 15697 (ResourceChannelRow)
 import getDefaultRules from "get defaultRules";
 import get_ActivityIndicator from "PressableBase";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -40,9 +40,9 @@ function ResourceChannelRow(channelId) {
   const items2 = [reinjectEphemerals];
   const stateFromStores2 = obj2.useStateFromStores(items2, () => outer1_8.getMessages(channelId));
   const firstResult = stateFromStores2.first();
-  let obj4 = channelId(8405);
+  let obj4 = channelId(8411);
   const forumPostMediaProperties = obj4.useForumPostMediaProperties(firstResult, false);
-  let obj5 = channelId(8405);
+  let obj5 = channelId(8411);
   let length;
   const firstMediaIsEmbed = obj5.useFirstMediaIsEmbed(firstResult, false);
   if (forumPostMediaProperties != null) {
@@ -52,9 +52,9 @@ function ResourceChannelRow(channelId) {
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  let tmp2Result = tmp2(11400);
+  let tmp2Result = tmp2(11403);
   let flag = tmp2Result.useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(15681)(firstResult);
+  const tmp11 = stateFromStores(15698)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];
@@ -70,7 +70,7 @@ function ResourceChannelRow(channelId) {
   [][0] = stateFromStores;
   if (null != stateFromStores) {
     if (stateFromStores1) {
-      let tmp10Result = tmp10(1416);
+      let tmp10Result = tmp10(1435);
       obj = { channelId: null, icon: null };
       obj[0] = stateFromStores.id;
       obj[1] = icon;
@@ -139,7 +139,7 @@ function ResourceChannelRow(channelId) {
               obj9[0] = stateFromStores;
               obj9[1] = first;
               obj9[2] = firstMediaIsEmbed;
-              tmp2Result = tmp2(8405);
+              tmp2Result = tmp2(8411);
               if (flag == null) {
                 flag = false;
               }
@@ -150,7 +150,7 @@ function ResourceChannelRow(channelId) {
               }
               obj9[4] = id;
               obj9[5] = tmp.thumbnail;
-              tmp19Result2 = tmp19(tmp2(11400).ForumPostMediaThumbnail, obj9);
+              tmp19Result2 = tmp19(tmp2(11403).ForumPostMediaThumbnail, obj9);
             }
           }
         }
@@ -179,7 +179,7 @@ const result = require("ensureGuildLoaded").fileFinishedImporting("modules/guild
 export default function GuildHomeResources(guildId) {
   guildId = guildId.guildId;
   const tmp = createCacheKey();
-  const arr = importDefault(15674)(guildId);
+  const arr = importDefault(15691)(guildId);
   if (0 === arr.length) {
     let obj = { style: null, children: null };
     obj[0] = tmp.emptyStateContainer;
@@ -189,7 +189,7 @@ export default function GuildHomeResources(guildId) {
     const items = [callback(guildId(4299).Text, obj), , ];
     const obj1 = { style: null, source: null };
     obj1[0] = tmp.emptyStateImage;
-    obj1[1] = importDefault(15682);
+    obj1[1] = importDefault(15699);
     items[1] = callback(closure_5, obj1);
     const obj2 = { onPress: null, text: null };
     obj2[0] = function onPress() {

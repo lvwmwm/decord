@@ -1,10 +1,10 @@
-// Module ID: 12838
-// Function ID: 12839
+// Module ID: 12842
+// Function ID: 12843
 // Name: textLogoTier2
-// Dependencies: [19, 17, 6896, 1905, 21, 4303, 712, 5158, 1348, 4725, 691, 3947, 12839, 12840, 7390, 7329, 7330, 7385, 5376, 2]
+// Dependencies: [19, 17, 6898, 1924, 21, 4303, 712, 5158, 1367, 4725, 691, 3966, 12843, 12844, 7392, 7330, 7331, 7387, 5376, 2]
 // Exports: default
 
-// Module 12838 (textLogoTier2)
+// Module 12842 (textLogoTier2)
 import "set";
 import get_ActivityIndicator from "registerAsset";
 import { getPremiumGradientColor } from "items";
@@ -33,13 +33,13 @@ export default function _default(children) {
   let style;
   ({ premiumType, style } = children);
   const tmp = createCacheKey();
-  const tmp4 = importDefault(1348)("PremiumTierCard");
+  const tmp4 = importDefault(1367)("PremiumTierCard");
   let obj = { style: tmp.header, start: null, end: null, colors: null, children: null };
   obj[1] = require(691) /* keys */.HorizontalGradient.START;
   obj[2] = require(691) /* keys */.HorizontalGradient.END;
   obj[3] = getPremiumGradientColor(premiumType);
   obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, source: null };
-  let obj2 = require(3947) /* getPremiumPlanItem */;
+  let obj2 = require(3966) /* getPremiumPlanItem */;
   obj[1] = obj2.getPremiumTypeDisplayName(premiumType);
   if (PremiumTypes.TIER_0 === premiumType) {
     let textLogoTier2 = tmp.textLogoTier0;
@@ -50,11 +50,11 @@ export default function _default(children) {
   }
   obj[3] = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp2Result = tmp2(12839);
+    let tmp2Result = tmp2(12843);
   } else if (tmp11.TIER_1 === premiumType) {
-    tmp2Result = tmp2(12840);
+    tmp2Result = tmp2(12844);
   } else if (tmp11.TIER_2 === premiumType) {
-    tmp2Result = tmp2(7390);
+    tmp2Result = tmp2(7392);
   }
   obj[4] = tmp2Result;
   obj[4] = closure_7(closure_4, obj);
@@ -70,11 +70,11 @@ export default function _default(children) {
   obj = { accessible: false, importantForAccessibility: "no", style: items1, source: null };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp2Result = tmp2(7329);
-  } else if (tmp11.TIER_1 === premiumType) {
     tmp2Result = tmp2(7330);
+  } else if (tmp11.TIER_1 === premiumType) {
+    tmp2Result = tmp2(7331);
   } else if (tmp11.TIER_2 === premiumType) {
-    tmp2Result = tmp2(7385);
+    tmp2Result = tmp2(7387);
   }
   obj[3] = tmp2Result;
   items[1] = closure_7(closure_4, obj);

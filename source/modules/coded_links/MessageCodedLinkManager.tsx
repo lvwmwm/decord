@@ -1,9 +1,9 @@
-// Module ID: 16492
-// Function ID: 16493
+// Module ID: 16503
+// Function ID: 16504
 // Name: resolveMessageCodedLinks
-// Dependencies: [5, 6919, 4288, 4287, 4292, 16493, 7758, 5939, 11458, 5261, 16500, 2]
+// Dependencies: [5, 6922, 4288, 4287, 4292, 16504, 7760, 5941, 11461, 5261, 16511, 2]
 
-// Module 16492 (resolveMessageCodedLinks)
+// Module 16503 (resolveMessageCodedLinks)
 import queueMessageLinkFetch from "queueMessageLinkFetch";
 import handleGuildTemplateResolveSuccess from "handleGuildTemplateResolveSuccess";
 import updateInvite from "updateInvite";

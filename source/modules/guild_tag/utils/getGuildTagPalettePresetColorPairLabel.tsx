@@ -1,10 +1,10 @@
-// Module ID: 16681
-// Function ID: 16682
+// Module ID: 16693
+// Function ID: 16694
 // Name: getGuildTagPalettePresetColorLabel
-// Dependencies: [8052, 1236, 1351, 2]
+// Dependencies: [8054, 1236, 1370, 2]
 // Exports: default
 
-// Module 16681 (getGuildTagPalettePresetColorLabel)
+// Module 16693 (getGuildTagPalettePresetColorLabel)
 import { GuildTagPalettePresetColor as closure_2 } from "items";
 
 function getGuildTagPalettePresetColorLabel(primary) {
@@ -87,7 +87,7 @@ function getGuildTagPalettePresetColorLabel(primary) {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.ZBQ1JR);
   } else {
-    require(1351) /* isDiscordFrontendDevelopment */.assertNever(primary);
+    require(1370) /* isDiscordFrontendDevelopment */.assertNever(primary);
   }
 }
 const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("modules/guild_tag/utils/getGuildTagPalettePresetColorPairLabel.tsx");

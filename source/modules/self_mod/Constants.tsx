@@ -1,10 +1,10 @@
-// Module ID: 10339
-// Function ID: 10340
+// Module ID: 10344
+// Function ID: 10345
 // Name: LOCATION_CONTEXT_MOBILE
 // Dependencies: [1236, 2]
 // Exports: getInappropriateConversationsSafetyTips, getSafetyToolsActionSheetKey, getStrangerDangerSafetyTips
 
-// Module 10339 (LOCATION_CONTEXT_MOBILE)
+// Module 10344 (LOCATION_CONTEXT_MOBILE)
 const result = require("set").fileFinishedImporting("modules/self_mod/Constants.tsx");
 
 export const LOCATION_CONTEXT_MOBILE = "SAFETY_WARNING_BANNER_MOBILE";

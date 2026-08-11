@@ -1,10 +1,10 @@
-// Module ID: 8556
-// Function ID: 8557
+// Module ID: 8562
+// Function ID: 8563
 // Name: _fetchChannelConversations
-// Dependencies: [5, 7055, 8557, 7057, 676, 8554, 709, 530, 6917, 8558, 8559, 8566, 2]
+// Dependencies: [5, 7058, 8563, 7060, 676, 8560, 709, 530, 6920, 8564, 8565, 8572, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 8556 (_fetchChannelConversations)
+// Module 8562 (_fetchChannelConversations)
 import apexExperiment from "apexExperiment";
 import removePendingListFetch from "removePendingListFetch";
 import initialize from "initialize";
@@ -139,7 +139,7 @@ function _fetchChannelConversations() {
                     return obj5;
                   }
                 }
-                obj15 = callback(8554);
+                obj15 = callback(8560);
               }
             } else if (2 === tmp7) {
               c6 = 0;
@@ -314,7 +314,7 @@ function _fetchConversationMessages() {
                   }
                 }
               }
-              obj14 = callback(8554);
+              obj14 = callback(8560);
               tmp52 = callback;
             }
           } else {
@@ -405,8 +405,8 @@ export const setSelectedConversation = function setSelectedConversation(channelI
     obj = { channelId: null, messageId: null, flash: false };
     obj[0] = channelId;
     obj[1] = conversationMetadata.conversation.startMessageId;
-    importDefault(6917).jumpToMessage(obj);
-    const tmpResult = importDefault(6917);
+    importDefault(6920).jumpToMessage(obj);
+    const tmpResult = importDefault(6920);
   }
 };
 export const clearConversationSelection = function clearConversationSelection(channelId, conversationId) {
@@ -421,11 +421,11 @@ export const setConversationFeedbackRating = function setConversationFeedbackRat
 };
 export { fetchConversationMessages };
 export const trackTopicalNavigationEntrypointImpression = function trackTopicalNavigationEntrypointImpression(id, stateFromStores1) {
-  const ConversationsAnalytics = require(8558) /* ConversationsAnalytics */.ConversationsAnalytics;
+  const ConversationsAnalytics = require(8564) /* ConversationsAnalytics */.ConversationsAnalytics;
   const result = ConversationsAnalytics.trackEntrypointImpression({ channelId: id, conversationCount: stateFromStores1 });
   if (initialize.shouldTriggerOnNextExposure()) {
-    importDefault(8559).fireSurveyAction(require(8566) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
-    const obj2 = importDefault(8559);
+    importDefault(8565).fireSurveyAction(require(8572) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
+    const obj2 = importDefault(8565);
   }
   importDefault(709).dispatch({ type: "TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION" });
 };

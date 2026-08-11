@@ -1,10 +1,10 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 14805
+// Function ID: 14806
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 4303, 712, 4299, 8956, 4712, 9141, 9562, 4714, 4014, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 4299, 8962, 4712, 9147, 9567, 4714, 1351, 2]
 // Exports: default
 
-// Module 14795 (UserSettingsDesignSystemSegmentedControl)
+// Module 14805 (UserSettingsDesignSystemSegmentedControl)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -67,7 +67,7 @@ export default function UserSettingsDesignSystemSegmentedControl() {
     }
     return items;
   }, items);
-  let obj = first(8956);
+  let obj = first(8962);
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: tmp[0], defaultIndex: 1 });
   obj = { children: null };
   obj = {
@@ -78,7 +78,7 @@ export default function UserSettingsDesignSystemSegmentedControl() {
     children: null
   };
   const obj1 = { spacing: 24, children: null };
-  let items1 = [callback3(first(9141).SegmentedControl, { state: segmentedControlState }), callback3(first(9562).SegmentedControlPages, { state: segmentedControlState }), ];
+  let items1 = [callback3(first(9147).SegmentedControl, { state: segmentedControlState }), callback3(first(9567).SegmentedControlPages, { state: segmentedControlState }), ];
   const obj2 = { spacing: 8, direction: "horizontal", children: null };
   const items2 = [
     callback3(first(4714).Button, {

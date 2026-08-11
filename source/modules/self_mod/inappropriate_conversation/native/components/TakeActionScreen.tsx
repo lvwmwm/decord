@@ -1,16 +1,16 @@
-// Module ID: 15045
-// Function ID: 15046
+// Module ID: 15055
+// Function ID: 15056
 // Name: TakeActionButtons
-// Dependencies: [5, 32, 19, 17, 3938, 1903, 10339, 21, 4303, 712, 589, 10372, 10375, 1480, 9243, 7784, 10352, 8020, 4002, 1236, 4264, 4001, 4714, 10383, 8770, 4783, 7956, 3998, 4299, 2]
+// Dependencies: [5, 32, 19, 17, 3957, 1922, 10344, 21, 4303, 712, 589, 10377, 10380, 1499, 9249, 7786, 10357, 8022, 4021, 1236, 4264, 4020, 4714, 10388, 8776, 4783, 7958, 4017, 4299, 2]
 // Exports: default
 
-// Module 15045 (TakeActionButtons)
+// Module 15055 (TakeActionButtons)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
 import { useState } from "getSystemLocale";
 import { View } from "_submitHamReportForFirstDM";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import closure_9 from "mergeGuildAvatar";
 import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
 import jsxProd from "presentAddedFriendToast";
@@ -50,11 +50,11 @@ export default function TakeActionButtons(senderId) {
   let lastChannelMessage;
   let useState;
   let closure_7;
-  let upsertRelationship;
+  let markAllUserIdListsStale;
   const tmp = createCacheKey();
   callback = tmp;
   let obj = senderId(setReported[10]);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const items1 = [senderId];
   const stateFromStores = obj.useStateFromStores(items, () => blocked.isBlocked(senderId), items1);
   let obj1 = senderId(setReported[11]);
@@ -84,7 +84,7 @@ export default function TakeActionButtons(senderId) {
     trackAnalyticsEvent(senderId(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_UNBLOCK);
   }, items3);
   const items4 = [senderId, channelId, tmp.toastContainer, setReported, lastChannelMessage, trackAnalyticsEvent];
-  upsertRelationship = lastChannelMessage.useCallback(trackAnalyticsEvent(function*() {
+  markAllUserIdListsStale = lastChannelMessage.useCallback(trackAnalyticsEvent(function*() {
     if (dependencyMap === 2) {
       dependencyMap = 3;
       HermesBuiltin.throwTypeError();
@@ -114,13 +114,13 @@ export default function TakeActionButtons(senderId) {
             let closure_0 = tmp4;
             if (null != outer1_9.getUser(outer1_0)) {
               outer1_6(true);
-              let obj2 = outer1_0(8020);
+              let obj2 = outer1_0(8022);
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
               obj1[0] = obj2.submitReportForInappropriateConversationSafetyAlert(outer1_5, () => {
                 dependencyMap(true);
-                let obj = v1(4002);
+                let obj = v1(4021);
                 obj = { key: outer1_13, content: null, IconComponent: null, iconColor: null, containerStyle: null };
                 const intl = tmp4(1236).intl;
                 obj[1] = intl.string(tmp4(1236).t.gn2c6X);
@@ -130,7 +130,7 @@ export default function TakeActionButtons(senderId) {
                 obj.open(obj);
               }, () => {
                 const intl = tmp4(1236).intl;
-                tmp4(4001).presentFailedToast(intl.string(tmp4(1236).t["0YV04/"]));
+                tmp4(4020).presentFailedToast(intl.string(tmp4(1236).t["0YV04/"]));
               });
               return obj1;
             } else {
@@ -142,9 +142,9 @@ export default function TakeActionButtons(senderId) {
           throw arg1;
         } else if (arg0 !== 2) {
           callback2(false);
-          obj = v0(7784);
+          obj = v0(7786);
           const result = obj.showReportSuccessToast(closure_0, v0);
-          callback(outer1_0(10352).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          callback(outer1_0(10357).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         dependencyMap = 3;
         obj2 = { value: null, done: true };

@@ -1,10 +1,10 @@
-// Module ID: 11168
-// Function ID: 11169
+// Module ID: 11173
+// Function ID: 11174
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1903, 21, 4303, 712, 11166, 4271, 10460, 10477, 7165, 1236, 589, 5397, 4712, 11169, 4299, 2]
+// Dependencies: [19, 17, 1922, 21, 4303, 712, 11171, 4271, 10465, 10482, 7166, 1236, 589, 5397, 4712, 11174, 4299, 2]
 // Exports: default
 
-// Module 11168 (QuestRewardDetailsBottomSheet)
+// Module 11173 (QuestRewardDetailsBottomSheet)
 import noop from "noop";
 import { View } from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -39,14 +39,14 @@ function QuestRewardDetailsBottomSheet(quest) {
   let obj = quest(589);
   const items2 = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  let obj1 = quest(10477);
+  let obj1 = quest(10482);
   const defaultRewardName = obj1.getDefaultRewardName(quest.config, stateFromStores);
   obj = { direction: "vertical", spacing: null, style: null, children: null };
   obj[1] = memo(712).space.PX_16;
   obj[2] = tmp.wrapper;
   obj = { align: "center", direction: "horizontal", spacing: null, children: null };
   obj[2] = memo(712).space.PX_16;
-  const items3 = [callback(memo(11169), { quest, height: 56, width: 56, withAnimation: true }), ];
+  const items3 = [callback(memo(11174), { quest, height: 56, width: 56, withAnimation: true }), ];
   obj1 = { direction: "vertical", spacing: null, style: null, children: null };
   obj1[1] = memo(712).space.PX_4;
   obj1[2] = tmp.rewardDetailsCopy;
@@ -86,11 +86,11 @@ let result = require("mergeGuildAvatar").fileFinishedImporting("modules/quests/n
 
 export default function QuestRewardDetailsBottomSheetConnected(questId) {
   const callback = React.useCallback(() => {
-    const result = callback(11166).showQuestUnavailableAlert();
-    const obj = callback(11166);
+    const result = callback(11171).showQuestUnavailableAlert();
+    const obj = callback(11171);
     callback2(4271).hideActionSheet();
   }, []);
-  let obj = require(10460) /* useQuests */;
+  let obj = require(10465) /* useQuests */;
   const nonNullableQuest = obj.useNonNullableQuest(questId.questId, callback);
   let tmp3 = null;
   if (null != nonNullableQuest) {

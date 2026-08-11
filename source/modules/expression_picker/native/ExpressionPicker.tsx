@@ -1,9 +1,9 @@
-// Module ID: 9929
-// Function ID: 9930
-// Dependencies: [19, 17, 1338, 676, 1906, 21, 4303, 712, 9930, 8643, 8956, 1478, 1607, 4498, 8677, 9931, 4700, 9141, 9932, 9933, 9956, 2]
+// Module ID: 9934
+// Function ID: 9935
+// Dependencies: [19, 17, 1338, 676, 1925, 21, 4303, 712, 9935, 8649, 8962, 1497, 1626, 4498, 8683, 9936, 4700, 9147, 9937, 9938, 9961, 2]
 
-// Module 9929
-import importAllResult from "module_9933";
+// Module 9934
+import importAllResult from "module_9938";
 import { View } from "SegmentedControl";
 import ExpressionPickerViewType from "ExpressionPickerViewType";
 import { AnalyticEvents } from "ME";
@@ -71,9 +71,7 @@ const memoResult = importAllResult.memo(function ExpressionPicker(expressionType
     pageWidth: 0,
     defaultIndex: tmp4.expressionPickerSelectedIndex,
     onSetActiveIndex(arg0) {
-      let obj = channel(expressionPickerViewType[11]);
-      obj = { type: channel(expressionPickerViewType[12]).KeyboardTypes.EXPRESSION, context: table[arg0] };
-      obj.setKeyboardType(obj);
+      channel(expressionPickerViewType[11]).setKeyboardContext(channel(expressionPickerViewType[12]).KeyboardTypes.EXPRESSION, table[arg0]);
     },
     items: prop.map((id) => ({ id, label: id, page: null }))
   };

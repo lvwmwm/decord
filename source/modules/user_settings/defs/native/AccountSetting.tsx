@@ -1,9 +1,9 @@
-// Module ID: 13965
-// Function ID: 13966
+// Module ID: 13973
+// Function ID: 13974
 // Name: route
-// Dependencies: [676, 10447, 1236, 9670, 13966, 2]
+// Dependencies: [676, 10452, 1236, 9675, 13974, 2]
 
-// Module 13965 (route)
+// Module 13973 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.ACCOUNT,
   getComponent() {
-    return require(13966) /* PasswordlessUpsell */.default;
+    return require(13974) /* PasswordlessUpsell */.default;
   }
 };
 const route = createToggle.createRoute(obj);

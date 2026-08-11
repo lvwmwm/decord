@@ -1,10 +1,10 @@
-// Module ID: 9570
-// Function ID: 9571
+// Module ID: 9575
+// Function ID: 9576
 // Name: VariantOption
-// Dependencies: [19, 17, 21, 4303, 712, 9413, 4846, 1236, 9431, 5363, 7012, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 9419, 4846, 1236, 9437, 5363, 7015, 4299, 2]
 // Exports: default
 
-// Module 9570 (VariantOption)
+// Module 9575 (VariantOption)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function VariantOption(onPress) {
   let variant;
   ({ variant, isSelected } = onPress);
   const tmp = callback2(isSelected);
-  let obj = require(9413) /* getProductPurchaseState */;
+  let obj = require(9419) /* getProductPurchaseState */;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
   if (isPurchased) {
     const intl = tmp2(1236).intl;
@@ -43,9 +43,9 @@ function VariantOption(onPress) {
 }
 function VariantCheckmark(variant) {
   const colors = importDefault(712).colors;
-  const tmp = importDefault(9431)(variant.variant);
+  const tmp = importDefault(9437)(variant.variant);
   const tmp2 = closure_4;
-  return tmp2(require(5363) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: importDefault(9431)(variant.variant) ? colors.BLACK : colors.WHITE, size: "md" });
+  return tmp2(require(5363) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: importDefault(9437)(variant.variant) ? colors.BLACK : colors.WHITE, size: "md" });
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, headerRow: null, variantsContainer: null, text: null };
@@ -74,7 +74,7 @@ export default function ProductDetailsActionSheetVariants(onVariantSelect) {
   ({ product, selectedVariantIndex } = onVariantSelect);
   onVariantSelect = onVariantSelect.onVariantSelect;
   const tmp = createCacheKey();
-  let obj = selectedVariantIndex(7012);
+  let obj = selectedVariantIndex(7015);
   let tmp5Result = null;
   if (obj.getIsVariantProduct(product)) {
     obj = { style: null, children: null };

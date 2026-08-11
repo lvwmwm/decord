@@ -1,7 +1,7 @@
 // Module ID: 4362
 // Function ID: 4363
 // Name: apexExperiment
-// Dependencies: [4351, 1903, 1905, 1452, 4363, 589, 3947, 2]
+// Dependencies: [4351, 1922, 1924, 1471, 4363, 589, 3966, 2]
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useScreenshotKeybindEnabled
 
 // Module 4362 (apexExperiment)
@@ -24,7 +24,7 @@ export const areClipsAvailable = function areClipsAvailable() {
     if (currentUser != null) {
       premiumType = currentUser.premiumType;
     }
-    let enableClips = tmp(3947).isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
+    let enableClips = tmp(3966).isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
     if (!enableClips) {
       enableClips = apexExperiment.getConfig({ location: "areClipsEnabled" }).enableClips;
     }
@@ -53,7 +53,7 @@ export const isUserPremiumTypeForClipsEarlyAccess = function isUserPremiumTypeFo
   if (premiumType != null) {
     premiumType = premiumType.premiumType;
   }
-  return importDefault(3947).isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
+  return importDefault(3966).isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
 };
 export function isScreenshotKeybindEnabled() {
   return false;

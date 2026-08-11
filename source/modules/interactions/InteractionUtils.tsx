@@ -1,10 +1,10 @@
-// Module ID: 8220
-// Function ID: 8221
+// Module ID: 8224
+// Function ID: 8225
 // Name: _executeMessageComponentInteraction
-// Dependencies: [5, 1218, 8049, 676, 11, 7224, 8221, 1935, 530, 6917, 8222, 709, 4529, 2, 4527]
+// Dependencies: [5, 1218, 8051, 676, 11, 7225, 8225, 1954, 530, 6920, 8226, 709, 4529, 2, 4527]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 8220 (_executeMessageComponentInteraction)
+// Module 8224 (_executeMessageComponentInteraction)
 import patchThread from "patchThread";
 import fetchFingerprint from "fetchFingerprint";
 import deleteNonce from "deleteNonce";
@@ -91,7 +91,7 @@ function _executeMessageComponentInteraction() {
                 closure_9 = callback2(11).fromTimestamp(Date.now());
                 if (c5.canQueueInteraction(callback2, closure_9)) {
                   c3 = 1;
-                  let obj8 = callback2(7224);
+                  let obj8 = callback2(7225);
                   sessionId = 3;
                   c5 = 1;
                   const obj2 = { value: null, done: false };
@@ -119,7 +119,7 @@ function _executeMessageComponentInteraction() {
                 const obj4 = { messageId: null, data: null, onFailure: null };
                 obj4[0] = callback2;
                 let obj5 = { interactionType: null, applicationId: null, customId: null, componentId: null };
-                obj5[0] = callback(1935).InteractionTypes.MESSAGE_COMPONENT;
+                obj5[0] = callback(1954).InteractionTypes.MESSAGE_COMPONENT;
                 obj5[1] = c5;
                 obj5[2] = c3;
                 obj5[3] = sessionId;
@@ -134,13 +134,13 @@ function _executeMessageComponentInteraction() {
                     const obj = _undefined(_undefined2[9]);
                   }
                 };
-                callback(8221).addQueued(closure_9, obj4);
+                callback(8225).addQueued(closure_9, obj4);
                 if (null != c8) {
-                  obj1 = callback(8221);
+                  obj1 = callback(8225);
                   const result = obj1.queueInteractionComponentState(callback2, closure_9, c8, sessionId);
                 }
                 obj6 = { type: null, nonce: null, guild_id: null, channel_id: null, message_flags: null, message_id: null, application_id: null, session_id: null, data: null };
-                obj6[0] = callback(1935).InteractionTypes.MESSAGE_COMPONENT;
+                obj6[0] = callback(1954).InteractionTypes.MESSAGE_COMPONENT;
                 obj6[1] = closure_9;
                 obj6[2] = c7;
                 obj6[3] = constants;
@@ -206,18 +206,18 @@ function mapMessageComponentLocalStateForAPI(type) {
     return null;
   } else {
     type = type.type;
-    if (require(1935) /* PermissionOverwriteType */.ComponentType.TEXT_INPUT !== type) {
-      if (tmp(1935).ComponentType.FILE_UPLOAD !== type) {
-        if (tmp(1935).ComponentType.RADIO_GROUP !== type) {
-          if (tmp(1935).ComponentType.CHECKBOX_GROUP !== type) {
-            if (tmp(1935).ComponentType.CHECKBOX !== type) {
-              if (tmp(1935).ComponentType.STRING_SELECT === type) {
+    if (require(1954) /* PermissionOverwriteType */.ComponentType.TEXT_INPUT !== type) {
+      if (tmp(1954).ComponentType.FILE_UPLOAD !== type) {
+        if (tmp(1954).ComponentType.RADIO_GROUP !== type) {
+          if (tmp(1954).ComponentType.CHECKBOX_GROUP !== type) {
+            if (tmp(1954).ComponentType.CHECKBOX !== type) {
+              if (tmp(1954).ComponentType.STRING_SELECT === type) {
                 return type;
               } else {
-                if (tmp(1935).ComponentType.USER_SELECT !== type) {
-                  if (tmp(1935).ComponentType.ROLE_SELECT !== type) {
-                    if (tmp(1935).ComponentType.MENTIONABLE_SELECT !== type) {
-                      if (tmp(1935).ComponentType.CHANNEL_SELECT !== type) {
+                if (tmp(1954).ComponentType.USER_SELECT !== type) {
+                  if (tmp(1954).ComponentType.ROLE_SELECT !== type) {
+                    if (tmp(1954).ComponentType.MENTIONABLE_SELECT !== type) {
+                      if (tmp(1954).ComponentType.CHANNEL_SELECT !== type) {
                         return null;
                       }
                     }
@@ -240,8 +240,8 @@ function mapMessageComponentLocalStateForAPI(type) {
 function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId) {
   if (!ok.ok) {
     if (ok.hasErr) {
-      require(8221) /* _fetchMessageInteractionData */.setFailed(nonce);
-      const obj10 = require(8221) /* _fetchMessageInteractionData */;
+      require(8225) /* _fetchMessageInteractionData */.setFailed(nonce);
+      const obj10 = require(8225) /* _fetchMessageInteractionData */;
     } else {
       if (ok.status >= 400) {
         if (ok.status < 500) {
@@ -249,7 +249,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
             let tmp9 = guildId;
             if (ok.body.code === constants.INVALID_FORM_BODY) {
               if (ok.body.errors) {
-                const firstSkemaError = require(8222) /* getFirstSkemaFieldError */.getFirstSkemaError(ok.body.errors);
+                const firstSkemaError = require(8226) /* getFirstSkemaFieldError */.getFirstSkemaError(ok.body.errors);
                 let tmp28 = null == firstSkemaError;
                 if (!tmp28) {
                   let tmp29 = "INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" !== firstSkemaError.code;
@@ -269,13 +269,13 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
                   importDefault(709).dispatch(obj);
                   const obj7 = importDefault(709);
                 }
-                const obj6 = require(8222) /* getFirstSkemaFieldError */;
+                const obj6 = require(8226) /* getFirstSkemaFieldError */;
                 const tmp24 = require;
                 let message;
                 if (firstSkemaError != null) {
                   message = firstSkemaError.message;
                 }
-                require(8221) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, message);
+                require(8225) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, message);
               }
             }
             if (ok.body.code === constants.UNKNOWN_INTEGRATION) {
@@ -289,17 +289,17 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
               obj[3] = tmp20;
               importDefault(709).dispatch(obj);
               const obj3 = importDefault(709);
-              require(8221) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, ok.body.message);
-              const obj5 = require(8221) /* _fetchMessageInteractionData */;
+              require(8225) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, ok.body.message);
+              const obj5 = require(8225) /* _fetchMessageInteractionData */;
             } else {
-              const obj2 = require(8221) /* _fetchMessageInteractionData */;
+              const obj2 = require(8225) /* _fetchMessageInteractionData */;
               obj2.setFailed(nonce, ok.body.code, ok.body.message, ok.status);
             }
             return tmp16;
           }
         }
       }
-      obj = require(8221) /* _fetchMessageInteractionData */;
+      obj = require(8225) /* _fetchMessageInteractionData */;
       const body = ok.body;
       let code;
       if (body != null) {
@@ -361,7 +361,7 @@ export const getInteractionStatusViewState = function getInteractionStatusViewSt
       if (state2 != null) {
         interactionType = state2.data.interactionType;
       }
-      const tmp21 = interactionType === require(1935) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND;
+      const tmp21 = interactionType === require(1954) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND;
       const isCommandTypeResult = state.isCommandType();
       if (!tmp21) {
         if (isCommandTypeResult) {
@@ -429,7 +429,7 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
   let items = options;
   if (1 === length) {
     let tmp4 = options;
-    if (options[0].type === require(1935) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+    if (options[0].type === require(1954) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       while (true) {
         let options1 = tmp4[0].options;
         let length1;
@@ -445,14 +445,14 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
           let tmp8 = dependencyMap;
           let tmp9 = dependencyMap;
           tmp4 = options1;
-          if (options1[0].type === require(1935) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+          if (options1[0].type === require(1954) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
             continue;
           } else {
             let tmp10 = tmp6;
             let tmp11 = tmp8;
             tmp4 = options1;
             items = options1;
-            if (options1[0].type !== tmp7(1935).ApplicationCommandOptionType.SUB_COMMAND) {
+            if (options1[0].type !== tmp7(1954).ApplicationCommandOptionType.SUB_COMMAND) {
               break;
             }
           }
@@ -475,7 +475,7 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
     let tmp13 = require;
     let tmp14 = dependencyMap;
     let tmp15 = dependencyMap;
-    if (item10042.type === require(1935) /* PermissionOverwriteType */.ApplicationCommandOptionType.ATTACHMENT) {
+    if (item10042.type === require(1954) /* PermissionOverwriteType */.ApplicationCommandOptionType.ATTACHMENT) {
       let tmp16 = obj;
       obj.return();
       let flag = false;

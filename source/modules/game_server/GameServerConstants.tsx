@@ -1,7 +1,7 @@
 // Module ID: 4192
 // Function ID: 4193
 // Name: str11
-// Dependencies: [1910, 4193, 2]
+// Dependencies: [1929, 4193, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
 // Module 4192 (str11)

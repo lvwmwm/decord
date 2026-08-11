@@ -1,10 +1,10 @@
-// Module ID: 9958
-// Function ID: 9959
+// Module ID: 9963
+// Function ID: 9964
 // Name: _fetchStickerPack
-// Dependencies: [5, 4994, 1975, 4641, 1903, 5219, 676, 685, 4541, 530, 709, 4638, 8273, 1355, 12, 4642, 1236, 2]
+// Dependencies: [5, 4994, 1994, 4641, 1922, 5219, 676, 685, 4541, 530, 709, 4638, 8278, 1374, 12, 4642, 1236, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 9958 (_fetchStickerPack)
+// Module 9963 (_fetchStickerPack)
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import _getSystemLocale from "_getSystemLocale";
@@ -560,7 +560,7 @@ export const clearStickerPreview = function clearStickerPreview(channelId, draft
 };
 export const favoriteSticker = function favoriteSticker(id) {
   const _require = id;
-  const FrecencyUserSettingsActionCreators = _require(1355).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", (stickerIds) => {
     stickerIds = stickerIds.stickerIds;
     let tmp = stickerIds;
@@ -599,7 +599,7 @@ export const favoriteSticker = function favoriteSticker(id) {
 };
 export const unfavoriteSticker = function unfavoriteSticker(id) {
   const _require = id;
-  const FrecencyUserSettingsActionCreators = _require(1355).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", (stickerIds) => {
     stickerIds = stickerIds.stickerIds;
     stickerIds.stickerIds = stickerIds.filter((arg0) => arg0 !== closure_0);

@@ -1,9 +1,9 @@
-// Module ID: 15994
-// Function ID: 15995
+// Module ID: 16011
+// Function ID: 16012
 // Name: render
-// Dependencies: [19, 21, 15991, 4732, 1236, 2]
+// Dependencies: [19, 21, 16008, 4732, 1236, 2]
 
-// Module 15994 (render)
+// Module 16011 (render)
 import { jsx } from "jsxProd";
 import { Component } from "noop";
 import importAllResult from "noop";

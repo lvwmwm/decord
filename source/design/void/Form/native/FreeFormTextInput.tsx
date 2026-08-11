@@ -1,9 +1,9 @@
-// Module ID: 8467
-// Function ID: 8468
+// Module ID: 8473
+// Function ID: 8474
 // Name: ClearButton
-// Dependencies: [19, 17, 21, 4303, 712, 4846, 1236, 1297, 8468, 38, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4846, 1236, 1297, 8474, 38, 2]
 
-// Module 8467 (ClearButton)
+// Module 8473 (ClearButton)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,7 +22,7 @@ function ClearButton(onPress) {
   obj[3] = onPress.onPress;
   obj[4] = { top: 8, bottom: 8, right: 8 };
   obj = { source: null, style: null, size: null };
-  obj[0] = importDefault(8468);
+  obj[0] = importDefault(8474);
   obj[1] = callback2().closeIcon;
   obj[2] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
   obj[5] = callback(require(1297) /* Button */.Icon, obj);

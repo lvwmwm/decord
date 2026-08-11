@@ -1,7 +1,7 @@
 // Module ID: 5906
 // Function ID: 5907
 // Name: canReportUser
-// Dependencies: [1372, 4224, 3929, 1903, 676, 2]
+// Dependencies: [1391, 4224, 3948, 1922, 676, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
 // Module 5906 (canReportUser)

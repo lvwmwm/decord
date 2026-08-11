@@ -1,10 +1,10 @@
-// Module ID: 7594
-// Function ID: 7595
+// Module ID: 7596
+// Function ID: 7597
 // Name: useBuyNitroExperiment
-// Dependencies: [32, 19, 6885, 5716, 7595, 2]
+// Dependencies: [32, 19, 6887, 5716, 7597, 2]
 // Exports: useBuyNitroExperiment
 
-// Module 7594 (useBuyNitroExperiment)
+// Module 7596 (useBuyNitroExperiment)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { usePremiumPlanPurchasedStore as closure_5 } from "usePremiumPlanPurchasedStore";

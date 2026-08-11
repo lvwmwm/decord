@@ -1,7 +1,7 @@
 // Module ID: 4392
 // Function ID: 4393
 // Name: isOwner
-// Dependencies: [4357, 4372, 4393, 1218, 1372, 4394, 4351, 4395, 4375, 4396, 676, 4364, 687, 4377, 4397, 4188, 4367, 4398, 12, 709, 4399, 4400, 4473, 698, 4297, 4479, 4379, 4480, 4481, 4361, 7131, 2]
+// Dependencies: [4357, 4372, 4393, 1218, 1391, 4394, 4351, 4395, 4375, 4396, 676, 4364, 687, 4377, 4397, 4188, 4367, 4398, 12, 709, 4399, 4400, 4473, 698, 4297, 4479, 4379, 4480, 4481, 4361, 7132, 2]
 
 // Module 4392 (isOwner)
 import _migrateDefaultStorage from "_migrateDefaultStorage";
@@ -778,7 +778,7 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(arg0) {
         obj.hardware_enabled = outer1_9.getHardwareEncoding();
         let tmp = null;
         if (self.isOwner) {
-          tmp = tmp4(7131)();
+          tmp = tmp4(7132)();
         }
         obj.device_performance_class = tmp;
         obj.soundshare_experimental = outer1_9.getExperimentalSoundshare();
@@ -822,7 +822,7 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(arg0) {
         obj.hardware_enabled = outer1_9.getHardwareEncoding();
         let tmp2 = null;
         if (self.isOwner) {
-          tmp2 = tmp4(7131)();
+          tmp2 = tmp4(7132)();
         }
         obj.device_performance_class = tmp2;
         obj.track(outer1_13.VIDEO_STREAM_ENDED, obj);

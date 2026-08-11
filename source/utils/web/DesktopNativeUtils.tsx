@@ -1,7 +1,7 @@
 // Module ID: 5351
 // Function ID: 5352
 // Name: sanitizeFilename
-// Dependencies: [32, 5, 676, 38, 4235, 500, 595, 5352, 4338, 4, 5353, 5354, 1467, 530, 4365, 2]
+// Dependencies: [32, 5, 676, 38, 4235, 500, 595, 5352, 4338, 4, 5353, 5354, 1486, 530, 4365, 2]
 
 // Module 5351 (sanitizeFilename)
 import _slicedToArray from "_slicedToArray";

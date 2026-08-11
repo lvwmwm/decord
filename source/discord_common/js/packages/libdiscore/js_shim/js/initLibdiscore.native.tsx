@@ -1,10 +1,10 @@
-// Module ID: 1901
-// Function ID: 1902
+// Module ID: 1920
+// Function ID: 1921
 // Name: _initLibdiscore
-// Dependencies: [5, 17, 1902, 2]
+// Dependencies: [5, 17, 1921, 2]
 // Exports: initLibdiscore, isLibdiscoreInitialized
 
-// Module 1901 (_initLibdiscore)
+// Module 1920 (_initLibdiscore)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { NativeModules } from "get ActivityIndicator";
 import importAllResult from "setTimeout";

@@ -1,10 +1,10 @@
-// Module ID: 14339
-// Function ID: 14340
+// Module ID: 14347
+// Function ID: 14348
 // Name: useYouBarHorizontalMargin
-// Dependencies: [14340, 1609, 501, 1348, 4005, 712, 2]
+// Dependencies: [14348, 1628, 501, 1367, 4024, 712, 2]
 // Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
 
-// Module 14339 (useYouBarHorizontalMargin)
+// Module 14347 (useYouBarHorizontalMargin)
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 
 let c3;
@@ -14,7 +14,7 @@ let c5;
 const result = require("PlatformTypes").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarMargins.tsx");
 
 export const useYouBarHorizontalMargin = function useYouBarHorizontalMargin() {
-  if (importDefault(1609)().bottom > 0) {
+  if (importDefault(1628)().bottom > 0) {
     if (obj.isIOS()) {
       let tmp3 = closure_3;
     }
@@ -23,8 +23,8 @@ export const useYouBarHorizontalMargin = function useYouBarHorizontalMargin() {
   tmp3 = closure_4;
 };
 export const useYouBarBottomMargin = function useYouBarBottomMargin() {
-  const bottom = importDefault(1609)().bottom;
-  require(4005) /* map */;
+  const bottom = importDefault(1628)().bottom;
+  require(4024) /* map */;
   if (tmp2) {
     const _Math2 = Math;
     let bound = Math.max(tmp5, bottom);

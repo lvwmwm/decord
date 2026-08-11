@@ -1,10 +1,10 @@
-// Module ID: 10109
-// Function ID: 10110
+// Module ID: 10114
+// Function ID: 10115
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [19, 4341, 10107, 21, 4303, 712, 589, 9398, 5268, 9355, 2]
+// Dependencies: [19, 4341, 10112, 21, 4303, 712, 589, 9404, 5268, 9361, 2]
 // Exports: default
 
-// Module 10109 (SocialLayerStorefrontWishlistItemCard)
+// Module 10114 (SocialLayerStorefrontWishlistItemCard)
 import noop from "noop";
 import addApplication from "addApplication";
 import initialize from "initialize";
@@ -19,7 +19,7 @@ const require = arg1;
 createCacheKey = { applicationIcon: null, nestedCard: null };
 createCacheKey = { position: "absolute", top: require("Themes").space.PX_8, left: require("Themes").space.PX_8, width: 24, height: 24, borderRadius: require("Themes").radii.sm, zIndex: 1 };
 createCacheKey[0] = createCacheKey;
-const obj1 = { shadowColor: "Array", shadowOffset: 0, shadowOpacity: 0, shadowRadius: 0, elevation: "visible", overflow: null, borderRadius: "\u{1F9DB}\u{1F3FD}\u200D\u2642\uFE0F" };
+const obj1 = { shadowColor: "Array", shadowOffset: 0, shadowOpacity: 0, shadowRadius: 0, elevation: "visible", overflow: null, borderRadius: "\u{1F9D9}\u{1F3FD}" };
 obj1[1] = { width: 0, height: 0 };
 obj1[6] = require("Themes").radii.none;
 createCacheKey[1] = obj1;

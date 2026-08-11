@@ -1,7 +1,7 @@
 // Module ID: 5846
 // Function ID: 5847
 // Name: isGuildSpaceAdmin
-// Dependencies: [3929, 676, 589, 5847, 2]
+// Dependencies: [3948, 676, 589, 5847, 2]
 // Exports: canUseGuildSpace, isGuildSpaceAdmin, useCanUseGuildSpace, useIsGuildSpaceAdmin
 
 // Module 5846 (isGuildSpaceAdmin)

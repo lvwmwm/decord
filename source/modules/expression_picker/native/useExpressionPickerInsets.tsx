@@ -1,10 +1,10 @@
-// Module ID: 9931
-// Function ID: 9932
+// Module ID: 9936
+// Function ID: 9937
 // Name: useExpressionPickerInsets
-// Dependencies: [19, 676, 1609, 5369, 712, 2]
+// Dependencies: [19, 676, 1628, 5369, 712, 2]
 // Exports: default
 
-// Module 9931 (useExpressionPickerInsets)
+// Module 9936 (useExpressionPickerInsets)
 import noop from "noop";
 import { EXPRESSION_FOOTER_HEIGHT } from "ME";
 
@@ -12,7 +12,7 @@ const result = require("useSafeAreaInsets").fileFinishedImporting("modules/expre
 
 export default function useExpressionPickerInsets(hasCategories) {
   let bottom;
-  bottom = bottom(1609)().bottom;
+  bottom = bottom(1628)().bottom;
   const obj = { safeAreaStyle: null, safeAreaBottomKeyboardAware: null };
   const items = [bottom];
   obj[0] = React.useMemo(() => ({ paddingBottom: bottom }), items);

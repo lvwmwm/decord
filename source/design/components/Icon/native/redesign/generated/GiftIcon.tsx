@@ -1,10 +1,10 @@
-// Module ID: 9575
-// Function ID: 9576
+// Module ID: 9580
+// Function ID: 9581
 // Name: GiftIcon
-// Dependencies: [19, 21, 712, 4004, 8183, 2]
+// Dependencies: [19, 21, 712, 4023, 8185, 2]
 // Exports: GiftIcon
 
-// Module 9575 (GiftIcon)
+// Module 9580 (GiftIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const GiftIcon = function GiftIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8183) /* registerAsset */;
+  obj[0] = require(8185) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

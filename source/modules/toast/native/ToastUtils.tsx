@@ -1,24 +1,24 @@
-// Module ID: 4001
-// Function ID: 4002
+// Module ID: 4020
+// Function ID: 4021
 // Name: presentAddedFriendToast
-// Dependencies: [676, 4002, 1236, 4003, 4241, 4243, 4245, 4247, 4249, 4251, 4253, 4255, 1416, 4257, 4259, 4262, 514, 4264, 4267, 2]
+// Dependencies: [676, 4021, 1236, 4022, 4241, 4243, 4245, 4247, 4249, 4251, 4253, 4255, 1435, 4257, 4259, 4262, 514, 4264, 4267, 2]
 // Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildMemberBio, presentGuildMemberPronouns, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
 
-// Module 4001 (presentAddedFriendToast)
+// Module 4020 (presentAddedFriendToast)
 import { VerificationCriteria } from "ME";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/toast/native/ToastUtils.tsx");
 
 export const presentAddedFriendToast = function presentAddedFriendToast() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_ADD_FRIEND", content: null, iconColor: "status-positive", IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.Fn5bwO);
-  obj[3] = require(4003) /* FriendsIcon */.FriendsIcon;
+  obj[3] = require(4022) /* FriendsIcon */.FriendsIcon;
   obj.open(obj);
 };
 export const presentFriendRequestAcceptedToast = function presentFriendRequestAcceptedToast(username) {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   if (null == username) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     let stringResult = intl2.string(require(1236) /* getSystemLocale */.t.UhJna5);
@@ -34,7 +34,7 @@ export const presentFriendRequestAcceptedToast = function presentFriendRequestAc
   obj.open(obj);
 };
 export const presentGameFriendRequestAcceptedToast = function presentGameFriendRequestAcceptedToast() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_GAME_FRIEND_REQUEST_ACCEPTED", content: null, IconComponent: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.xjNLeZ);
@@ -42,7 +42,7 @@ export const presentGameFriendRequestAcceptedToast = function presentGameFriendR
   obj.open(obj);
 };
 export const presentFriendRequestIgnoredToast = function presentFriendRequestIgnoredToast() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_FRIEND_REQUEST_IGNORED", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.YlavlY);
@@ -50,7 +50,7 @@ export const presentFriendRequestIgnoredToast = function presentFriendRequestIgn
   obj.open(obj);
 };
 export const presentGameFriendRequestIgnoredToast = function presentGameFriendRequestIgnoredToast() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_GAME_FRIEND_REQUEST_IGNORED", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.P6BzJP);
@@ -58,7 +58,7 @@ export const presentGameFriendRequestIgnoredToast = function presentGameFriendRe
   obj.open(obj);
 };
 export const presentLinkCopied = function presentLinkCopied() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "LINK_COPIED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["+5kSoW"]);
@@ -66,7 +66,7 @@ export const presentLinkCopied = function presentLinkCopied() {
   obj.open(obj);
 };
 export const presentInviteSent = function presentInviteSent() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "INVITE_SENT", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.sVwWdV);
@@ -74,7 +74,7 @@ export const presentInviteSent = function presentInviteSent() {
   obj.open(obj);
 };
 export const presentIdCopied = function presentIdCopied() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_ID_COPIED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.eNjAah);
@@ -82,7 +82,7 @@ export const presentIdCopied = function presentIdCopied() {
   obj.open(obj);
 };
 export const presentImageSaved = function presentImageSaved() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_IMAGE_SAVED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.cqpdJW);
@@ -90,7 +90,7 @@ export const presentImageSaved = function presentImageSaved() {
   obj.open(obj);
 };
 export const presentVideoSaved = function presentVideoSaved() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_VIDEO_SAVED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["cEK+1g"]);
@@ -98,7 +98,7 @@ export const presentVideoSaved = function presentVideoSaved() {
   obj.open(obj);
 };
 export const presentGifSaved = function presentGifSaved() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_GIF_SAVED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.LktEtN);
@@ -106,7 +106,7 @@ export const presentGifSaved = function presentGifSaved() {
   obj.open(obj);
 };
 export const presentMessageCopied = function presentMessageCopied() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_MESSAGE_COPIED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.R3o53R);
@@ -114,7 +114,7 @@ export const presentMessageCopied = function presentMessageCopied() {
   obj.open(obj);
 };
 export const presentMessageIdCopied = function presentMessageIdCopied() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_MESSAGE_ID_COPIED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.svRBmK);
@@ -122,7 +122,7 @@ export const presentMessageIdCopied = function presentMessageIdCopied() {
   obj.open(obj);
 };
 export const presentPostIdCopied = function presentPostIdCopied() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_FORUM_POST_ID_COPIED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.aBQ2RP);
@@ -130,7 +130,7 @@ export const presentPostIdCopied = function presentPostIdCopied() {
   obj.open(obj);
 };
 export const presentUsernameCopied = function presentUsernameCopied() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_USERNAME_SAVED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["FHVR/+"]);
@@ -138,7 +138,7 @@ export const presentUsernameCopied = function presentUsernameCopied() {
   obj.open(obj);
 };
 export const presentFeedbackSent = function presentFeedbackSent() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_FEEDBACK_SENT", content: null, IconComponent: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.xpiDtu);
@@ -146,14 +146,14 @@ export const presentFeedbackSent = function presentFeedbackSent() {
   obj.open(obj);
 };
 export const presentEmoji = function presentEmoji(closure_0) {
-  let obj = importDefault(1416);
+  let obj = importDefault(1435);
   obj = { id: closure_0.id, animated: closure_0.animated, size: 48 };
   const emojiURL = obj.getEmojiURL(obj);
   obj = { key: "PRESENT_EMOJI-" + closure_0.id, content: ":" + closure_0.name + ":", icon: { uri: emojiURL } };
-  importDefault(4002).open(obj);
+  importDefault(4021).open(obj);
 };
 export const presentNoiseCancellation = function presentNoiseCancellation(arg0) {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
   const t = require(1236) /* getSystemLocale */.t;
@@ -179,7 +179,7 @@ export const presentNoiseCancellation = function presentNoiseCancellation(arg0) 
   obj.open(obj);
 };
 export const presentNoiseCancellationError = function presentNoiseCancellationError() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "MOBILE_NOISE_CANCELLATION_CPU_OVERUSE", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.DnmX2G);
@@ -187,12 +187,12 @@ export const presentNoiseCancellationError = function presentNoiseCancellationEr
   obj.open(obj);
 };
 export const presentError = function presentError(intl) {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "ERROR", content: intl, IconComponent: require(4257) /* XLargeIcon */.XLargeIcon, iconColor: "icon-feedback-critical" };
   obj.open(obj);
 };
 export const presentVoiceActivityDetectionError = function presentVoiceActivityDetectionError() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "MOBILE_ADVANCED_VOICE_ACTIVITY_CPU_OVERUSE", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.zz1Tft);
@@ -200,7 +200,7 @@ export const presentVoiceActivityDetectionError = function presentVoiceActivityD
   obj.open(obj);
 };
 export const roleIdCopied = function roleIdCopied(closure_2) {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "ROLE_ID_COPIED-" + closure_2, content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { role: closure_2 };
@@ -209,7 +209,7 @@ export const roleIdCopied = function roleIdCopied(closure_2) {
   obj.open(obj);
 };
 export const communityRequirementSatisfied = function communityRequirementSatisfied() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "ENABLE_COMMUNITY_MODAL_REQUIREMENT_SATISFIED_TOOLTIP", content: null, IconComponent: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.PHjrpp);
@@ -217,7 +217,7 @@ export const communityRequirementSatisfied = function communityRequirementSatisf
   obj.open(obj);
 };
 export const communityAdminOnly = function communityAdminOnly() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "GUILD_SETTINGS_COMMUNITY_ADMINISTRATOR_ONLY", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["pjG+T3"]);
@@ -264,12 +264,12 @@ export const unverifiedVoiceGate = function unverifiedVoiceGate(check) {
     const obj1 = { key: "UNVERIFIED_VOICE_GATE", content: null, IconComponent: null };
     obj1[1] = stringResult;
     obj1[2] = require(4259) /* CircleInformationIcon */.CircleInformationIcon;
-    importDefault(4002).open(obj1);
-    const obj4 = importDefault(4002);
+    importDefault(4021).open(obj1);
+    const obj4 = importDefault(4021);
   }
 };
 export const transferOwnershipProtected = function transferOwnershipProtected() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TRANSFER_OWNERSHIP_PROTECTED_GUILD", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.wDkfrN);
@@ -277,7 +277,7 @@ export const transferOwnershipProtected = function transferOwnershipProtected() 
   obj.open(obj);
 };
 export const memberOrRoleRemovedToast = function memberOrRoleRemovedToast(closure_1) {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "PRIVATE_CHANNEL_MEMBERS_REMOVED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { name: closure_1 };
@@ -295,8 +295,8 @@ export const memberOrRoleAddedToast = function memberOrRoleAddedToast(c1, c0) {
       let obj = { key: "MEMBER_OR_ROLE_ADDED", content: null, IconComponent: null, iconColor: "status-positive" };
       obj[1] = stringResult;
       obj[2] = require(4255) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
-      importDefault(4002).open(obj);
-      const obj3 = importDefault(4002);
+      importDefault(4021).open(obj);
+      const obj3 = importDefault(4021);
     }
   }
   if (c1 > 0) {
@@ -312,7 +312,7 @@ export const memberOrRoleAddedToast = function memberOrRoleAddedToast(c1, c0) {
   }
 };
 export const roleTemplateAppliedToast = function roleTemplateAppliedToast() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "ROLE_PERMISSION_TEMPLATE_SELECT_CONFIRMATION_TOAST", content: null, IconComponent: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.e6xHUV);
@@ -320,7 +320,7 @@ export const roleTemplateAppliedToast = function roleTemplateAppliedToast() {
   obj.open(obj);
 };
 export const roleCreatedToast = function roleCreatedToast() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "ROLE_CREATED_TOAST", content: null, IconComponent: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.kubT4R);
@@ -328,7 +328,7 @@ export const roleCreatedToast = function roleCreatedToast() {
   obj.open(obj);
 };
 export const roleCreateFailedToast = function roleCreateFailedToast() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "ROLE_CREATION_FAILED", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.hbr6Uj);
@@ -336,12 +336,12 @@ export const roleCreateFailedToast = function roleCreateFailedToast() {
   obj.open(obj);
 };
 export const presentFailedToast = function presentFailedToast(intl) {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "FAILED", content: intl, IconComponent: require(4257) /* XLargeIcon */.XLargeIcon, iconColor: "icon-feedback-critical" };
   obj.open(obj);
 };
 export const presentCommandCopied = function presentCommandCopied() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TOAST_COMMAND_COPIED", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.U989ct);
@@ -350,7 +350,7 @@ export const presentCommandCopied = function presentCommandCopied() {
 };
 export const presentGuildMemberBio = function presentGuildMemberBio(guildName) {
   const _require = arg1;
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "GUILD_IDENTITY_BIO_TOAST", content: null, icon: null };
   const intl = _require(1236).intl;
   obj = { guildName };
@@ -362,7 +362,7 @@ export const presentGuildMemberBio = function presentGuildMemberBio(guildName) {
 };
 export const presentGuildMemberPronouns = function presentGuildMemberPronouns(guildName) {
   const _require = arg1;
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "GUILD_IDENTITY_PRONOUNS_TOAST", content: null, icon: null };
   const intl = _require(1236).intl;
   obj = { guildName };
@@ -373,14 +373,14 @@ export const presentGuildMemberPronouns = function presentGuildMemberPronouns(gu
   obj.open(obj);
 };
 export const presentUserPronouns = function presentUserPronouns() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "USER_POPOUT_PRONOUNS", content: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["1w6drw"]);
   obj.open(obj);
 };
 export const presentCopiedToClipboard = function presentCopiedToClipboard() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: null, content: null, IconComponent: null };
   obj[0] = "COPIED_TEXT_" + require(514) /* v1 */.v4();
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -389,7 +389,7 @@ export const presentCopiedToClipboard = function presentCopiedToClipboard() {
   obj.open(obj);
 };
 export const presentGuildRoleSubscriptionTrialTierMonthCost = function presentGuildRoleSubscriptionTrialTierMonthCost() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "GUILD_ROLE_SUBSCRIPTION_MANAGE_SUBSCRIPTION_PAGE_TRIAL_PRICE_INFO", content: null, IconComponent: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["/q6fpa"]);
@@ -397,7 +397,7 @@ export const presentGuildRoleSubscriptionTrialTierMonthCost = function presentGu
   obj.open(obj);
 };
 export const showVoiceRecordingFailed = function showVoiceRecordingFailed() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "VOICE_MESSAGES_RECORDING_FAILED", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.H03AqF);
@@ -405,7 +405,7 @@ export const showVoiceRecordingFailed = function showVoiceRecordingFailed() {
   obj.open(obj);
 };
 export const showMaxGroupMembers = function showMaxGroupMembers() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "GROUP_DM_INVITE_FULL_MAIN", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.OtTQDz);
@@ -413,7 +413,7 @@ export const showMaxGroupMembers = function showMaxGroupMembers() {
   obj.open(obj);
 };
 export const showTransferOwnershipSuccess = function showTransferOwnershipSuccess() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "TRANSFER_OWNERSHIP_SUCCESS", content: null, IconComponent: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["2Eyydu"]);
@@ -421,12 +421,12 @@ export const showTransferOwnershipSuccess = function showTransferOwnershipSucces
   obj.open(obj);
 };
 export const showSafetySuccess = function showSafetySuccess(BLOCK_SUCCESS, safetyToastTypeContent) {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: BLOCK_SUCCESS, content: safetyToastTypeContent, IconComponent: require(4264) /* CircleCheckIcon */.CircleCheckIcon, iconColor: "status-positive" };
   obj.open(obj);
 };
 export const showVerificationSent = function showVerificationSent() {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "VERIFICATION_RESENT", content: null, IconComponent: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.gI8IST);
@@ -434,7 +434,7 @@ export const showVerificationSent = function showVerificationSent() {
   obj.open(obj);
 };
 export const presentTimestamp = function presentTimestamp(full) {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = { key: "MESSAGE_TIMESTAMP", content: full, IconComponent: require(4267) /* ClockIcon */.ClockIcon };
   obj.open(obj);
 };

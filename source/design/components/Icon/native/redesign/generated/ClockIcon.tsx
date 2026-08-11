@@ -1,7 +1,7 @@
 // Module ID: 4267
 // Function ID: 4268
 // Name: ClockIcon
-// Dependencies: [19, 21, 712, 4004, 4268, 2]
+// Dependencies: [19, 21, 712, 4023, 4268, 2]
 // Exports: ClockIcon
 
 // Module 4267 (ClockIcon)
@@ -22,5 +22,5 @@ export const ClockIcon = function ClockIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

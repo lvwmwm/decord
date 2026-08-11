@@ -1,10 +1,10 @@
-// Module ID: 11184
-// Function ID: 11185
+// Module ID: 11189
+// Function ID: 11190
 // Name: CloudIcon
-// Dependencies: [19, 21, 712, 4004, 11185, 2]
+// Dependencies: [19, 21, 712, 4023, 11190, 2]
 // Exports: CloudIcon
 
-// Module 11184 (CloudIcon)
+// Module 11189 (CloudIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const CloudIcon = function CloudIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11185) /* registerAsset */;
+  obj[0] = require(11190) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 14829
+// Function ID: 14830
 // Name: DemoActionSheet
-// Dependencies: [32, 19, 17, 676, 21, 4303, 5764, 5396, 8976, 5765, 4712, 7790, 5766, 4271, 1348, 4714, 1236, 7733, 6139, 13037, 5376, 4299, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 5764, 5396, 8982, 5765, 4712, 7792, 5766, 4271, 1367, 4714, 1236, 7735, 6141, 13046, 5376, 4299, 2]
 // Exports: default
 
-// Module 14819 (DemoActionSheet)
+// Module 14829 (DemoActionSheet)
 import _slicedToArray from "_slicedToArray";
 import NUFChannelIllustration from "NUFChannelIllustration";
 import { ScrollView } from "PromoSheet";
@@ -44,7 +44,7 @@ function DemoActionSheet() {
     obj = { onPress: null, label: null };
     obj[0] = NOOP;
     obj[1] = tmp12;
-    tmp14Result = tmp14(tmp15(8976).ActionSheetHeaderPressableText, obj);
+    tmp14Result = tmp14(tmp15(8982).ActionSheetHeaderPressableText, obj);
   }
   obj[2] = tmp14Result;
   tmp14Result = tmp2;
@@ -58,8 +58,8 @@ function DemoActionSheet() {
   const obj2 = { spacing: 24, children: null };
   const obj3 = { children: null };
   const items = [
-    closure_7(require(7790) /* TextInput */.TextInput, { value: first1, onChange: tmp6[1], label: "Title" }),
-    closure_7(require(7790) /* TextInput */.TextInput, {
+    closure_7(require(7792) /* TextInput */.TextInput, { value: first1, onChange: tmp6[1], label: "Title" }),
+    closure_7(require(7792) /* TextInput */.TextInput, {
       value: tmp9,
       onChange: tmp10,
       label: "Subtitle",
@@ -76,7 +76,7 @@ function DemoActionSheet() {
   const items2 = [closure_7(require(5766) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: first, onValueChange: tmp4[1], label: "Show Leading" }), closure_7(require(5766) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: tmp2, onValueChange: tmp3, label: "Show Trailing" })];
   obj5[1] = items2;
   items1[1] = callback3(require(5766) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj5);
-  items1[2] = closure_7(require(7790) /* TextInput */.TextInput, {
+  items1[2] = closure_7(require(7792) /* TextInput */.TextInput, {
     value: tmp12,
     onChange: tmp13,
     label: "Leading",
@@ -108,17 +108,17 @@ function DemoPromoSheet() {
     obj = { graphic: null, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
     obj = { type: "image", src: null, aspectRatio: "16/9" };
     const obj1 = { uri: null };
-    obj1[0] = tmp(6139);
+    obj1[0] = tmp(6141);
     obj[1] = obj1;
     obj[0] = obj;
     obj[4] = tmp5;
     let obj2 = obj;
   } else {
     obj2 = { illustration: null, title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
-    obj2[0] = tmp4(tmp(13037), {});
+    obj2[0] = tmp4(tmp(13046), {});
     obj2[3] = tmp5;
   }
-  return callback2(require(7733) /* PromoSheet */.PromoSheet, obj2);
+  return callback2(require(7735) /* PromoSheet */.PromoSheet, obj2);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ container: { padding: 16, alignItems: "center" } });

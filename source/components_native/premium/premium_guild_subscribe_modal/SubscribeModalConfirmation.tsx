@@ -1,10 +1,10 @@
-// Module ID: 12880
-// Function ID: 12881
+// Module ID: 12884
+// Function ID: 12885
 // Name: PendingCancellationWarning
-// Dependencies: [5, 19, 17, 11921, 1891, 4196, 3953, 676, 6896, 4191, 21, 4303, 4151, 712, 589, 4195, 8445, 4299, 1236, 12881, 12882, 4714, 12891, 4725, 691, 698, 12848, 38, 4199, 4643, 12895, 1988, 2]
+// Dependencies: [5, 19, 17, 11924, 1910, 4196, 3972, 676, 6898, 4191, 21, 4303, 4152, 712, 589, 4195, 8451, 4299, 1236, 12885, 12886, 4714, 12895, 4725, 691, 698, 12852, 38, 4199, 4643, 12899, 2007, 2]
 // Exports: default
 
-// Module 12880 (PendingCancellationWarning)
+// Module 12884 (PendingCancellationWarning)
 import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "Text";
@@ -47,7 +47,7 @@ function PendingCancellationWarning(slots) {
       obj[0] = tmp.pendingCancellation;
       obj = { style: null, source: null };
       obj[0] = tmp.pendingCancellationIcon;
-      obj[1] = importDefault(8445);
+      obj[1] = importDefault(8451);
       const items1 = [callback(closure_6, obj), ];
       const obj1 = { style: null, variant: "text-sm/medium", children: null };
       obj1[0] = tmp.pendingCancellationMessage;
@@ -72,13 +72,13 @@ function SubscribeConfirmation(arg0) {
   ({ guild, isModifyingSubscription } = arg0);
   const tmp = createCacheKey();
   let obj = { children: null };
-  obj = { style: tmp.subscribeImage, source: importDefault(12881) };
+  obj = { style: tmp.subscribeImage, source: importDefault(12885) };
   const items = [callback(closure_6, obj), , , , , ];
   obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.yTlZV0);
   items[1] = callback(require(4299) /* Text */.Text, obj);
-  items[2] = callback(importDefault(12882), { style: tmp.guildPreview, guild });
+  items[2] = callback(importDefault(12886), { style: tmp.guildPreview, guild });
   const obj2 = { style: items1, variant: "text-sm/medium", children: null };
   items1 = [, ];
   ({ blurb: arr2[0], warning: arr2[1] } = tmp);
@@ -106,7 +106,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
   const onPremiumGuildSubscribe = previousGuildSubscriptionSlots.onPremiumGuildSubscribe;
   ({ guild, isModifyingSubscription } = previousGuildSubscriptionSlots);
   const tmp = createCacheKey();
-  let obj = prop(12891);
+  let obj = prop(12895);
   const guildSubscriptionRemovalSource = obj.useGuildSubscriptionRemovalSource();
   let obj1 = prop(589);
   const items = [createGuildRecordFromRust];
@@ -153,7 +153,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     const obj7 = { style: null, guild: null };
     obj7[0] = tmp.guildPreview;
     obj7[1] = stateFromStores;
-    items2[1] = callback(onPremiumGuildSubscribe(12882), obj7);
+    items2[1] = callback(onPremiumGuildSubscribe(12886), obj7);
     const obj8 = { style: null, variant: "eyebrow", color: "text-default", children: null };
     obj8[0] = tmp.previewHeader;
     const intl4 = tmp2(1236).intl;
@@ -170,7 +170,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj10[3] = Gradients.PREMIUM_GUILD;
     const obj11 = { guild: null };
     obj11[0] = guild;
-    obj10[4] = callback(onPremiumGuildSubscribe(12882), obj11);
+    obj10[4] = callback(onPremiumGuildSubscribe(12886), obj11);
     items2[3] = callback(onPremiumGuildSubscribe(4725), obj10);
     obj5[1] = items2;
     items1[3] = callback2(closure_7, obj5);

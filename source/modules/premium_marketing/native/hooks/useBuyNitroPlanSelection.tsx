@@ -1,10 +1,10 @@
-// Module ID: 7649
-// Function ID: 7650
+// Module ID: 7651
+// Function ID: 7652
 // Name: PremiumTypes
-// Dependencies: [32, 19, 1905, 6871, 6910, 7412, 500, 7341, 7343, 7403, 7650, 2]
+// Dependencies: [32, 19, 1924, 6873, 6912, 7414, 500, 7342, 7344, 7405, 7652, 2]
 // Exports: useBuyNitroPlanSelection
 
-// Module 7649 (PremiumTypes)
+// Module 7651 (PremiumTypes)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import GuildFeatures from "GuildFeatures";
@@ -79,7 +79,7 @@ export const useBuyNitroPlanSelection = function useBuyNitroPlanSelection(tier) 
   if (premiumDiscountOffer != null) {
     const discount = premiumDiscountOffer.discount;
     if (discount != null) {
-      num2 = discount.userUsageLimit;
+      num2 = discount.intervalCount;
     }
   }
   if (num2 == null) {

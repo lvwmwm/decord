@@ -1,10 +1,10 @@
-// Module ID: 6188
-// Function ID: 6189
+// Module ID: 6190
+// Function ID: 6191
 // Name: ConnectionCablesSpotIllustration
-// Dependencies: [21, 5268, 6189, 2]
+// Dependencies: [21, 5268, 6191, 2]
 // Exports: ConnectionCablesSpotIllustration
 
-// Module 6188 (ConnectionCablesSpotIllustration)
+// Module 6190 (ConnectionCablesSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ConnectionCablesSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const ConnectionCablesSpotIllustration = function ConnectionCablesSpotIll
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6189);
+  obj[0] = importDefault(6191);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

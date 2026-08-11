@@ -1,7 +1,7 @@
 // Module ID: 4474
 // Function ID: 4475
 // Name: _openRobloxURLWithRootPlaceId
-// Dependencies: [5, 4323, 676, 4475, 12, 4476, 3992, 2]
+// Dependencies: [5, 4323, 676, 4475, 12, 4476, 4011, 2]
 // Exports: convertMapToRobloxSubgameInfo, getSubgameMetadata, hasRunningGameChanged, hasSubgameInfoChanged, isRobloxSubgame, isRobloxSubgameApplication, isRobloxSubgameGame, keyForRobloxGame, maybeAddAdditionalGameMetadata, maybeTransformRobloxSubgameToRoblox, openRobloxURLWithRootPlaceId, updateRunningGameWithRobloxSubgameInfo
 
 // Module 4474 (_openRobloxURLWithRootPlaceId)

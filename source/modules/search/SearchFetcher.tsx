@@ -1,9 +1,9 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11725
+// Function ID: 11726
 // Name: fetch
-// Dependencies: [5, 1372, 676, 687, 3, 530, 1464, 2]
+// Dependencies: [5, 1391, 676, 687, 3, 530, 1483, 2]
 
-// Module 11722 (fetch)
+// Module 11725 (fetch)
 import sendRequest from "sendRequest";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
@@ -202,10 +202,10 @@ prototype2["makeRequest"] = function makeRequest(rejectWithError) {
     const HTTP = require(530) /* sendRequest */.HTTP;
     const obj = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
     obj[0] = endpoint;
-    obj[1] = importDefault(1464).stringify(this.query);
+    obj[1] = importDefault(1483).stringify(this.query);
     obj[3] = rejectWithError.rejectWithError;
     value = HTTP.get(obj);
-    const obj2 = importDefault(1464);
+    const obj2 = importDefault(1483);
   }
   return value;
 };

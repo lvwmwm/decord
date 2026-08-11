@@ -1,10 +1,10 @@
-// Module ID: 6818
-// Function ID: 6819
+// Module ID: 6820
+// Function ID: 6821
 // Name: Tome3dIllustration
-// Dependencies: [21, 5268, 6819, 2]
+// Dependencies: [21, 5268, 6821, 2]
 // Exports: Tome3dIllustration
 
-// Module 6818 (Tome3dIllustration)
+// Module 6820 (Tome3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/Tome3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const Tome3dIllustration = function Tome3dIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6819);
+  obj[0] = importDefault(6821);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

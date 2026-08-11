@@ -1,10 +1,10 @@
-// Module ID: 16670
-// Function ID: 16671
+// Module ID: 16682
+// Function ID: 16683
 // Name: showGuildSettingsModalStickerInfoActionSheet
-// Dependencies: [4271, 16671, 1988, 2]
+// Dependencies: [4271, 16683, 2007, 2]
 // Exports: showGuildSettingsModalStickerInfoActionSheet
 
-// Module 16670 (showGuildSettingsModalStickerInfoActionSheet)
+// Module 16682 (showGuildSettingsModalStickerInfoActionSheet)
 const GuildSettingsModalStickerInfoActionSheet = "GuildSettingsModalStickerInfoActionSheet";
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/showGuildSettingsModalStickerInfoActionSheet.tsx");
 
@@ -20,5 +20,5 @@ export const showGuildSettingsModalStickerInfoActionSheet = function showGuildSe
       callback(table[0]).hideActionSheet(closure_3);
     }
   };
-  obj.openLazy(require(1988) /* asyncRequireImpl */(16671, dependencyMap.paths), GuildSettingsModalStickerInfoActionSheet, obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(16683, dependencyMap.paths), GuildSettingsModalStickerInfoActionSheet, obj);
 };

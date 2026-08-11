@@ -1,10 +1,10 @@
-// Module ID: 14283
-// Function ID: 14284
+// Module ID: 14291
+// Function ID: 14292
 // Name: BountiesModalAdvertiserCtaContent
-// Dependencies: [109, 19, 17, 4295, 5161, 21, 4036, 4303, 712, 4304, 4307, 14284, 10472, 4719, 10489, 10491, 7188, 7187, 5166, 7971, 5268, 4299, 4714, 14253, 589, 14254, 8659, 2]
+// Dependencies: [109, 19, 17, 4295, 5161, 21, 4042, 4303, 712, 4304, 4307, 14292, 10477, 4719, 10494, 10496, 7189, 7188, 5166, 7973, 5268, 4299, 4714, 14261, 589, 14262, 8665, 2]
 // Exports: default
 
-// Module 14283 (BountiesModalAdvertiserCtaContent)
+// Module 14291 (BountiesModalAdvertiserCtaContent)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import BackgroundBlurView from "BackgroundBlurView";
 import get_ActivityIndicator from "getQuestContentName";
@@ -12,7 +12,7 @@ import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLi
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 import jsxProd from "Text";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 
 let Pressable;
 let c10;
@@ -92,7 +92,7 @@ function BountiesModalAdvertiserCtaContent(bounty) {
 let closure_3 = ["style"];
 ({ StyleSheet: closure_6, View: error, Pressable } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
-let closure_12 = require("module_4036").createAnimatedComponent(Pressable);
+let closure_12 = require("module_4042").createAnimatedComponent(Pressable);
 let closure_13 = createCacheKey.createStyles(() => {
   let obj = { outerContainer: null, ctaPressable: null, cta: null, ctaLogoContainer: null, ctaLogo: null, ctaInfo: null };
   obj = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: importDefault(712).space.PX_16, paddingBottom: importDefault(712).space.PX_16, alignItems: "center" };

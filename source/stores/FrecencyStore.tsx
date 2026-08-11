@@ -1,7 +1,7 @@
 // Module ID: 5226
 // Function ID: 5227
 // Name: handleChannelSelect
-// Dependencies: [1340, 1372, 1891, 1960, 4124, 676, 685, 4387, 12, 589, 709, 2]
+// Dependencies: [1340, 1391, 1910, 1979, 4126, 676, 685, 4387, 12, 589, 709, 2]
 
 // Module 5226 (handleChannelSelect)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";

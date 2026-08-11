@@ -1,10 +1,10 @@
-// Module ID: 8737
-// Function ID: 8738
+// Module ID: 8743
+// Function ID: 8744
 // Name: useTrackOpenPopout
-// Dependencies: [19, 1372, 1960, 1906, 676, 4498, 4730, 8638, 698, 2]
+// Dependencies: [19, 1391, 1979, 1925, 676, 4498, 4730, 8644, 698, 2]
 // Exports: useTrackOpenPopout
 
-// Module 8737 (useTrackOpenPopout)
+// Module 8743 (useTrackOpenPopout)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";

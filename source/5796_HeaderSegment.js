@@ -1,7 +1,7 @@
 // Module ID: 5796
 // Function ID: 5797
 // Name: HeaderSegment
-// Dependencies: [109, 32, 19, 17, 21, 1481, 5277]
+// Dependencies: [109, 32, 19, 17, 21, 1500, 5277]
 // Exports: HeaderSegment
 
 // Module 5796 (HeaderSegment)

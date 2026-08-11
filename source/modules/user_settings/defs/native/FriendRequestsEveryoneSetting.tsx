@@ -1,9 +1,9 @@
-// Module ID: 14223
-// Function ID: 14224
+// Module ID: 14231
+// Function ID: 14232
 // Name: toggle
-// Dependencies: [19, 8082, 676, 3974, 6013, 14071, 10447, 1236, 2]
+// Dependencies: [19, 8084, 676, 3993, 6015, 14079, 10452, 1236, 2]
 
-// Module 14223 (toggle)
+// Module 14231 (toggle)
 import noop from "noop";
 import ME from "ME";
 import createToggle from "createToggle";
@@ -19,13 +19,13 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useFriendRequestsEveryoneSettingValue() {
-    const FriendSourceFlagsSetting = setting(3974).FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = setting(3993).FriendSourceFlagsSetting;
     setting = FriendSourceFlagsSetting.useSetting();
     const items = [setting];
     return React.useMemo(() => setting(outer1_1[4]).computeFlags(setting), items).all;
   },
   onValueChange: function onFriendRequestsEveryoneSettingValueChange(arg0) {
-    const FriendSourceFlagsSetting = require(3974) /* explicitContentFromProto */.FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = require(3993) /* explicitContentFromProto */.FriendSourceFlagsSetting;
     if (arg0) {
       let tmp3 = tmp;
     } else {
@@ -34,7 +34,7 @@ createToggle = {
     FriendSourceFlagsSetting.updateSetting(tmp3);
   },
   useIsDisabled() {
-    return require(14071) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(14079) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

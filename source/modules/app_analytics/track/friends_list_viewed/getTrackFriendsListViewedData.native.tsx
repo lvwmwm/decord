@@ -1,15 +1,15 @@
-// Module ID: 15828
-// Function ID: 15829
+// Module ID: 15845
+// Function ID: 15846
 // Name: getTrackFriendsListViewedData
-// Dependencies: [12034, 7123, 7119, 4998, 3938, 676, 3974, 1384, 15829, 12035, 2]
+// Dependencies: [12037, 7124, 7120, 4998, 3957, 676, 3993, 1403, 15846, 12038, 2]
 // Exports: default
 
-// Module 15828 (getTrackFriendsListViewedData)
+// Module 15845 (getTrackFriendsListViewedData)
 import { useContactSyncStore } from "setStoredContacts";
 import initialize from "initialize";
 import recountRelationshipTypes from "recountRelationshipTypes";
 import set from "set";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import ME from "ME";
 
 let c9;
@@ -19,15 +19,15 @@ const result = require("recountRelationshipTypes").fileFinishedImporting("module
 
 export default function getTrackFriendsListViewedData() {
   localAccount = localAccount.getLocalAccount(constants.CONTACTS);
-  const FriendDiscoverySettings = require(3974) /* explicitContentFromProto */.FriendDiscoverySettings;
+  const FriendDiscoverySettings = require(3993) /* explicitContentFromProto */.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.getSetting();
-  let obj = require(1384) /* hasFlag */;
+  let obj = require(1403) /* hasFlag */;
   const hasFlagResult = obj.hasFlag(setting, constants2.FIND_BY_PHONE);
-  const obj2 = require(1384) /* hasFlag */;
+  const obj2 = require(1403) /* hasFlag */;
   suggestionCount = suggestionCount.getSuggestionCount();
   obj = { num_friends: null };
   obj[0] = store2.getFriendCount();
-  const merged = Object.assign(importDefault(15829)());
+  const merged = Object.assign(importDefault(15846)());
   obj.num_outgoing_requests = store2.getOutgoingCount();
   obj.num_incoming_requests = store2.getPendingCount();
   obj.num_game_friends = store.getGameFriendCount();
@@ -35,8 +35,8 @@ export default function getTrackFriendsListViewedData() {
   obj.num_game_incoming_requests = store.getPendingIncomingCount();
   obj.num_suggestions = suggestionCount;
   obj.was_dismissed = useContactSyncStore.getState().upsellCTADismissed;
-  const hasFlagResult1 = require(1384) /* hasFlag */.hasFlag(setting, constants2.FIND_BY_EMAIL);
-  obj.contact_sync_is_enabled = require(12035) /* _uploadContacts */.isContactSyncEnabled(localAccount);
+  const hasFlagResult1 = require(1403) /* hasFlag */.hasFlag(setting, constants2.FIND_BY_EMAIL);
+  obj.contact_sync_is_enabled = require(12038) /* _uploadContacts */.isContactSyncEnabled(localAccount);
   obj.is_discoverable_email = hasFlagResult1;
   obj.is_discoverable_phone = hasFlagResult;
   return obj;

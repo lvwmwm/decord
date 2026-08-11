@@ -1,7 +1,7 @@
 // Module ID: 5786
 // Function ID: 5787
 // Name: StackNavigator
-// Dependencies: [19, 21, 1481, 5787]
+// Dependencies: [19, 21, 1500, 5787]
 // Exports: createStackNavigator
 
 // Module 5786 (StackNavigator)
@@ -74,6 +74,6 @@ function StackNavigator(arg0) {
 }
 
 export const createStackNavigator = function createStackNavigator(arg0) {
-  return require(1481) /* createStandardNavigationFactories */.createNavigatorFactory(StackNavigator)(arg0);
+  return require(1500) /* createStandardNavigationFactories */.createNavigatorFactory(StackNavigator)(arg0);
 };
 export const createStackScreen = createStandardNavigationFactories.createScreenFactory();

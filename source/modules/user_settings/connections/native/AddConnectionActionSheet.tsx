@@ -1,10 +1,10 @@
-// Module ID: 14204
-// Function ID: 14205
+// Module ID: 14212
+// Function ID: 14213
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [676, 4330, 21, 4303, 1297, 4239, 1609, 6962, 5734, 5397, 5396, 1236, 5399, 5374, 4271, 10492, 1416, 4153, 5731, 5728, 5748, 2]
+// Dependencies: [676, 4330, 21, 4303, 1297, 4239, 1628, 6965, 5734, 5397, 5396, 1236, 5399, 5374, 4271, 10497, 1435, 1363, 5731, 5728, 5748, 2]
 // Exports: default
 
-// Module 14204 (AddApplicationIdentityTableRow)
+// Module 14212 (AddApplicationIdentityTableRow)
 import { AnalyticsLocations } from "ME";
 import { getMigratedApplicationIdentityConnectionsScreenApplications as closure_4 } from "items1";
 import jsxProd from "set";

@@ -1,10 +1,10 @@
-// Module ID: 12772
-// Function ID: 12773
+// Module ID: 12776
+// Function ID: 12777
 // Name: componentDidMount
-// Dependencies: [19, 17, 1903, 3949, 4196, 3952, 3953, 676, 1905, 21, 4303, 5158, 4013, 4199, 5877, 4623, 7593, 6013, 4299, 1236, 1974, 12773, 1921, 12787, 12789, 12791, 12795, 12693, 6860, 8166, 12733, 589, 1480, 6866, 1605, 2]
+// Dependencies: [19, 17, 1922, 3968, 4196, 3971, 3972, 676, 1924, 21, 4303, 5158, 4031, 4199, 5877, 4623, 7595, 6015, 4299, 1236, 1993, 12777, 1940, 12791, 12793, 12795, 12799, 12697, 6862, 8168, 12737, 589, 1499, 6868, 1624, 2]
 // Exports: default
 
-// Module 12772 (componentDidMount)
+// Module 12776 (componentDidMount)
 import importAllResult from "getSystemLocale";
 import get_ActivityIndicator from "getSanitizedRestrictedGuilds";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -95,7 +95,7 @@ prototype["renderPremiumGuildSubscriptions"] = function renderPremiumGuildSubscr
     obj[0] = tmp.blurb;
     const intl2 = require(1236) /* getSystemLocale */.intl;
     const obj1 = { helpdeskArticle: null };
-    obj1[0] = importDefault(1974).getArticleURL(constants.GUILD_SUBSCRIPTIONS);
+    obj1[0] = importDefault(1993).getArticleURL(constants.GUILD_SUBSCRIPTIONS);
     obj[3] = intl2.format(require(1236) /* getSystemLocale */.t.A4UTjH, obj1);
     items1[1] = callback(require(4299) /* Text */.Text, obj);
     let tmp6Result = null != externalManagementMessage;
@@ -108,10 +108,10 @@ prototype["renderPremiumGuildSubscriptions"] = function renderPremiumGuildSubscr
     const obj3 = { children: null };
     items1[2] = tmp6Result;
     obj[1] = items1;
-    const items2 = [closure_15(closure_4, obj), callback(importDefault(12773), {})];
+    const items2 = [closure_15(closure_4, obj), callback(importDefault(12777), {})];
     obj3[0] = items2;
     tmp3Result = tmp3(importAllResult.Fragment, obj3);
-    const obj5 = importDefault(1974);
+    const obj5 = importDefault(1993);
     const tmp5 = closure_4;
     tmp7 = require;
     const tmp9 = importDefault;
@@ -130,10 +130,10 @@ prototype["render"] = function render() {
   const props = this.props;
   ({ fractionalState, isInReverseTrial } = props);
   ({ hasFetchedSubscriptionPlans, hasAvailableSlots, fpDurationText, premiumGroupRole } = props);
-  if (premiumGroupRole === require(1921) /* create */.PremiumSubscriptionGroupRole.MEMBER) {
+  if (premiumGroupRole === require(1940) /* create */.PremiumSubscriptionGroupRole.MEMBER) {
     let obj = { style: null };
     obj[0] = tmp.boostingUnavailablePill;
-    let tmp5 = callback(importDefault(12787), obj);
+    let tmp5 = callback(importDefault(12791), obj);
   } else {
     tmp5 = null;
     if (fractionalState !== FractionalPremiumStates.NONE) {
@@ -141,13 +141,13 @@ prototype["render"] = function render() {
       obj[0] = fpDurationText;
       obj[1] = isInReverseTrial;
       obj[2] = tmp.boostingUnavailablePill;
-      tmp5 = callback(importDefault(12789), obj);
+      tmp5 = callback(importDefault(12793), obj);
     }
   }
   obj = { style: tmp.scroller, children: null };
   const items = [tmp5, self.renderPremiumGuildSubscriptions(), ];
   const obj1 = { style: tmp.upsellSection, children: null };
-  const items1 = [callback(require(12791) /* getTopPatternSource */.TopPattern, { style: tmp.background }), ];
+  const items1 = [callback(require(12795) /* getTopPatternSource */.TopPattern, { style: tmp.background }), ];
   let tmp13Result = null;
   if (hasFetchedSubscriptionPlans) {
     const obj3 = { onLearnMorePremium: null, fractionalState: null, isInReverseTrial: null, hasAvailableSlots: null };
@@ -155,7 +155,7 @@ prototype["render"] = function render() {
     obj3[1] = fractionalState;
     obj3[2] = isInReverseTrial;
     obj3[3] = hasAvailableSlots;
-    tmp13Result = callback(importDefault(12795), obj3);
+    tmp13Result = callback(importDefault(12799), obj3);
   }
   items1[1] = tmp13Result;
   obj1[1] = items1;
@@ -175,7 +175,7 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   let dependencyMap;
   let closure_3;
   let closure_4;
-  let obj = _require(12693);
+  let obj = _require(12697);
   _require = obj.useSubscriptionPlansLoaded();
   flag = undefined;
   if (route != null) {
@@ -187,11 +187,11 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   if (flag == null) {
     flag = true;
   }
-  ({ fractionalState: c2, endsAt } = flag(6860)({ forceFetch: true }));
-  let tmpResult = tmp(8166);
+  ({ fractionalState: c2, endsAt } = flag(6862)({ forceFetch: true }));
+  let tmpResult = tmp(8168);
   closure_3 = tmpResult.useIsInReverseTrial();
-  const tmp3 = flag(6860)({ forceFetch: true });
-  closure_4 = flag(12733)(endsAt, tmp(12733).CountDownMessageTypes.LONG_TIME_LEFT);
+  const tmp3 = flag(6862)({ forceFetch: true });
+  closure_4 = flag(12737)(endsAt, tmp(12737).CountDownMessageTypes.LONG_TIME_LEFT);
   tmpResult = tmp(589);
   const items = [handleGuildBoostsUpdate, handlePaymentSourceCreateEnd, addSubscriptionPlan, mergeGuildAvatar];
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(items, () => {
@@ -213,17 +213,17 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
     obj[10] = premiumGroupRole;
     return obj;
   });
-  const tmp4 = flag(12733);
+  const tmp4 = flag(12737);
   const items1 = [reset];
   const stateFromStores = _require(589).useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
   const tmpResult1 = _require(589);
-  const navigation = _require(1480).useNavigation();
-  const tmpResult2 = _require(1480);
+  const navigation = _require(1499).useNavigation();
+  const tmpResult2 = _require(1499);
   obj = { navigation, externalManagementMessage: null };
-  const externalManagementMessage = _require(6866).getExternalManagementMessage(stateFromStores, { shouldAllowExternalManagement: true });
+  const externalManagementMessage = _require(6868).getExternalManagementMessage(stateFromStores, { shouldAllowExternalManagement: true });
   const tmp10 = UserSettingsPremiumGuildSubscriptions;
   const tmp9 = closure_14;
-  const tmpResult3 = _require(6866);
+  const tmpResult3 = _require(6868);
   let tmp11 = null;
   if (tmpResult4.isMetaQuest()) {
     tmp11 = externalManagementMessage;

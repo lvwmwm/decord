@@ -1,10 +1,10 @@
-// Module ID: 11194
-// Function ID: 11195
+// Module ID: 11199
+// Function ID: 11200
 // Name: GuildTemplateResolving
-// Dependencies: [19, 17, 1376, 1965, 676, 5941, 21, 4303, 712, 5236, 5823, 1297, 11195, 1236, 38, 1609, 1966, 4299, 11197, 8465, 4714, 7409, 12, 8971, 11202, 11203, 9700, 688, 2]
+// Dependencies: [19, 17, 1395, 1984, 676, 5943, 21, 4303, 712, 5236, 5823, 1297, 11200, 1236, 38, 1628, 1985, 4299, 11202, 8471, 4714, 7411, 12, 8977, 11207, 11208, 9705, 688, 2]
 // Exports: default
 
-// Module 11194 (GuildTemplateResolving)
+// Module 11199 (GuildTemplateResolving)
 import get_ActivityIndicator from "Text";
 import { isGuildVocalChannelType } from "createChannelRecord";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";
@@ -12,7 +12,7 @@ import ME from "ME";
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
 import jsxProd from "Divider";
 import createCacheKey from "createCacheKey";
-import importAllResult from "module_8465";
+import importAllResult from "module_8471";
 import importDefaultResult from "createTextStyle";
 import importDefaultResult1 from "createTextStyle";
 
@@ -44,14 +44,14 @@ function GuildTemplateResolved(guildTemplate) {
   const mapped = roles.map((arg0) => outer1_2(outer1_3[16]).fromServer(guildTemplate.serializedSourceGuild.id, arg0));
   const found = mapped.filter((arg0) => !callback(arg0));
   let obj = { contentContainerStyle: items, keyboardShouldPersistTaps: "handled", children: null };
-  items = [tmp.wrapper, { marginBottom: importDefault(1609)().bottom }];
+  items = [tmp.wrapper, { marginBottom: importDefault(1628)().bottom }];
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = guildTemplate(1236).intl;
   obj[3] = intl.string(guildTemplate(1236).t.QzUORX);
   const items1 = [callback(guildTemplate(4299).Text, obj), , , , , , , , , , ];
   obj = { style: tmp.description, variant: "text-lg/medium", color: "text-default", children: guildTemplate.name };
   items1[1] = callback(guildTemplate(4299).Text, obj);
-  items1[2] = callback(importDefault(11197), { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon });
+  items1[2] = callback(importDefault(11202), { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon });
   const obj2 = { label: null, error: null, hint: null, value: null, onChangeText: null, autoFocus: true, autoCorrect: false, returnKeyType: "done" };
   const intl2 = guildTemplate(1236).intl;
   obj2[0] = intl2.string(guildTemplate(1236).t.dBih7e);
@@ -64,7 +64,7 @@ function GuildTemplateResolved(guildTemplate) {
   obj2[2] = intl3.format(guildTemplate(1236).t["2bprXx"], { guidelinesURL: constants.GUIDELINES });
   obj2[3] = name;
   obj2[4] = setName;
-  items1[3] = callback(importDefault(8465), obj2);
+  items1[3] = callback(importDefault(8471), obj2);
   const obj4 = { style: tmp.createButtonWrapper, children: null };
   const obj5 = { size: "md", text: null, onPress: null, loading: null, disabled: null, grow: true };
   const intl4 = tmp10(1236).intl;
@@ -74,7 +74,7 @@ function GuildTemplateResolved(guildTemplate) {
   obj5[4] = guildTemplate.state === GuildTemplateStates.ACCEPTING;
   obj4[1] = callback(guildTemplate(4714).Button, obj5);
   items1[4] = callback(closure_4, obj4);
-  items1[5] = callback(importDefault(7409), { style: tmp.divider, outer: true });
+  items1[5] = callback(importDefault(7411), { style: tmp.divider, outer: true });
   const obj7 = { style: tmp.sectionHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl5 = tmp10(1236).intl;
   obj7[3] = intl5.string(guildTemplate(1236).t.OGiMXJ);
@@ -233,7 +233,7 @@ obj[17] = { color: require("Themes").unsafe_rawColors.GREEN_360, fontFamily: Fon
 let closure_14 = createCacheKey.createStyles(obj);
 let closure_16 = importAllResult.memo(() => {
   const obj = { Illustration: null, title: null, body: null };
-  obj[0] = require(11195) /* getInvalidLinkSource */.InvalidLink;
+  obj[0] = require(11200) /* getInvalidLinkSource */.InvalidLink;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.C7ZRNw);
   const intl2 = require(1236) /* getSystemLocale */.intl;

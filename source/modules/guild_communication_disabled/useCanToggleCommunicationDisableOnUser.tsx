@@ -1,10 +1,10 @@
-// Module ID: 11235
-// Function ID: 11236
+// Module ID: 11240
+// Function ID: 11241
 // Name: canToggleCommunicationDisableOnUser
-// Dependencies: [1415, 1891, 3929, 1903, 676, 3934, 589, 2]
+// Dependencies: [1434, 1910, 3948, 1922, 676, 3953, 589, 2]
 // Exports: default
 
-// Module 11235 (canToggleCommunicationDisableOnUser)
+// Module 11240 (canToggleCommunicationDisableOnUser)
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -34,8 +34,8 @@ function canToggleCommunicationDisableOnUser(id, id2, items) {
         obj[0] = Permissions.ADMINISTRATOR;
         obj[1] = user;
         obj[2] = guild;
-        canResult = importAll(3934).can(obj);
-        const obj5 = importAll(3934);
+        canResult = importAll(3953).can(obj);
+        const obj5 = importAll(3953);
       }
       let canManageUserResult = !canResult;
       if (!canResult) {

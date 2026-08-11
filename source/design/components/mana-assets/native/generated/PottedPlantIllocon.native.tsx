@@ -1,10 +1,10 @@
-// Module ID: 6636
-// Function ID: 6637
+// Module ID: 6638
+// Function ID: 6639
 // Name: PottedPlantIllocon
-// Dependencies: [21, 5268, 6637, 2]
+// Dependencies: [21, 5268, 6639, 2]
 // Exports: PottedPlantIllocon
 
-// Module 6636 (PottedPlantIllocon)
+// Module 6638 (PottedPlantIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PottedPlantIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const PottedPlantIllocon = function PottedPlantIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6637);
+  obj[0] = importDefault(6639);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

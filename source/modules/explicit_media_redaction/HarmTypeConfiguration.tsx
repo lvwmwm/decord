@@ -1,7 +1,7 @@
 // Module ID: 5912
 // Function ID: 5913
 // Name: ContentHarmType
-// Dependencies: [676, 5913, 4530, 5914, 3974, 5915, 5917, 1306, 2]
+// Dependencies: [676, 5913, 4530, 5914, 3993, 5915, 5917, 1306, 2]
 
 // Module 5912 (ContentHarmType)
 import ME from "ME";
@@ -49,7 +49,7 @@ obj[obj.EXPLICIT] = {
   getUserSettingsWithDefaults(arg0) {
     let tmp = arg0;
     if (arg0 == null) {
-      const ExplicitContentSettings3 = require(3974) /* explicitContentFromProto */.ExplicitContentSettings;
+      const ExplicitContentSettings3 = require(3993) /* explicitContentFromProto */.ExplicitContentSettings;
       const setting = ExplicitContentSettings3.getSetting();
       let prop;
       if (setting != null) {
@@ -57,14 +57,14 @@ obj[obj.EXPLICIT] = {
       }
       let obj = {};
       obj[require(5914) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop;
-      const ExplicitContentSettings = tmp12(3974).ExplicitContentSettings;
+      const ExplicitContentSettings = tmp12(3993).ExplicitContentSettings;
       const setting1 = ExplicitContentSettings.getSetting();
       let prop1;
       if (setting1 != null) {
         prop1 = setting1.explicitContentFriendDm;
       }
       obj[require(5914) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop1;
-      const ExplicitContentSettings2 = tmp12(3974).ExplicitContentSettings;
+      const ExplicitContentSettings2 = tmp12(3993).ExplicitContentSettings;
       const setting2 = ExplicitContentSettings2.getSetting();
       let prop2;
       if (setting2 != null) {
@@ -130,7 +130,7 @@ const obj1 = {
   getUserSettingsWithDefaults(arg0) {
     let tmp = arg0;
     if (arg0 == null) {
-      const ExplicitContentSettings3 = require(3974) /* explicitContentFromProto */.ExplicitContentSettings;
+      const ExplicitContentSettings3 = require(3993) /* explicitContentFromProto */.ExplicitContentSettings;
       const setting = ExplicitContentSettings3.getSetting();
       let prop;
       if (setting != null) {
@@ -138,14 +138,14 @@ const obj1 = {
       }
       let obj = {};
       obj[require(5914) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = prop;
-      const ExplicitContentSettings = tmp12(3974).ExplicitContentSettings;
+      const ExplicitContentSettings = tmp12(3993).ExplicitContentSettings;
       const setting1 = ExplicitContentSettings.getSetting();
       let prop1;
       if (setting1 != null) {
         prop1 = setting1.explicitContentFriendDm;
       }
       obj[require(5914) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = prop1;
-      const ExplicitContentSettings2 = tmp12(3974).ExplicitContentSettings;
+      const ExplicitContentSettings2 = tmp12(3993).ExplicitContentSettings;
       const setting2 = ExplicitContentSettings2.getSetting();
       let prop2;
       if (setting2 != null) {
@@ -211,7 +211,7 @@ obj[obj.GORE] = {
   getUserSettingsWithDefaults(arg0) {
     let tmp = arg0;
     if (arg0 == null) {
-      const GoreContentSettings3 = require(3974) /* explicitContentFromProto */.GoreContentSettings;
+      const GoreContentSettings3 = require(3993) /* explicitContentFromProto */.GoreContentSettings;
       const setting = GoreContentSettings3.getSetting();
       let goreContentGuilds;
       if (setting != null) {
@@ -219,14 +219,14 @@ obj[obj.GORE] = {
       }
       let obj = {};
       obj[require(5914) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = goreContentGuilds;
-      const GoreContentSettings = tmp12(3974).GoreContentSettings;
+      const GoreContentSettings = tmp12(3993).GoreContentSettings;
       const setting1 = GoreContentSettings.getSetting();
       let goreContentFriendDm;
       if (setting1 != null) {
         goreContentFriendDm = setting1.goreContentFriendDm;
       }
       obj[require(5914) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = goreContentFriendDm;
-      const GoreContentSettings2 = tmp12(3974).GoreContentSettings;
+      const GoreContentSettings2 = tmp12(3993).GoreContentSettings;
       const setting2 = GoreContentSettings2.getSetting();
       let prop;
       if (setting2 != null) {
@@ -292,7 +292,7 @@ const obj2 = {
   getUserSettingsWithDefaults(arg0) {
     let tmp = arg0;
     if (arg0 == null) {
-      const GoreContentSettings3 = require(3974) /* explicitContentFromProto */.GoreContentSettings;
+      const GoreContentSettings3 = require(3993) /* explicitContentFromProto */.GoreContentSettings;
       const setting = GoreContentSettings3.getSetting();
       let goreContentGuilds;
       if (setting != null) {
@@ -300,14 +300,14 @@ const obj2 = {
       }
       let obj = {};
       obj[require(5914) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.GUILD] = goreContentGuilds;
-      const GoreContentSettings = tmp12(3974).GoreContentSettings;
+      const GoreContentSettings = tmp12(3993).GoreContentSettings;
       const setting1 = GoreContentSettings.getSetting();
       let goreContentFriendDm;
       if (setting1 != null) {
         goreContentFriendDm = setting1.goreContentFriendDm;
       }
       obj[require(5914) /* ContentHarmTypeChannel */.ContentHarmTypeChannel.FRIEND_DM] = goreContentFriendDm;
-      const GoreContentSettings2 = tmp12(3974).GoreContentSettings;
+      const GoreContentSettings2 = tmp12(3993).GoreContentSettings;
       const setting2 = GoreContentSettings2.getSetting();
       let prop;
       if (setting2 != null) {

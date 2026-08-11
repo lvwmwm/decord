@@ -1,7 +1,7 @@
 // Module ID: 5840
 // Function ID: 5841
 // Name: makeSortedChannel
-// Dependencies: [5841, 5842, 1376, 1372, 1891, 4315, 4499, 1903, 11, 3925, 3883, 5843, 589, 709, 2]
+// Dependencies: [5841, 5842, 1395, 1391, 1910, 4315, 4499, 1922, 11, 3944, 3902, 5843, 589, 709, 2]
 
 // Module 5840 (makeSortedChannel)
 import processChannel from "processChannel";
@@ -28,7 +28,7 @@ function makeSortedChannel(channel, id) {
     const isMessageRequestTimestamp = channel.isMessageRequestTimestamp;
     let tmp2 = id;
     if (null != isMessageRequestTimestamp) {
-      let obj = importDefault(3883)(isMessageRequestTimestamp);
+      let obj = importDefault(3902)(isMessageRequestTimestamp);
       const valueOfResult = obj.valueOf();
       let fromTimestampResult = importDefault(11).fromTimestamp(valueOfResult);
       const obj2 = importDefault(11);
@@ -79,7 +79,7 @@ const secondaryIndexMap = new require("version").SecondaryIndexMap(function inde
 let closure_15 = [];
 let closure_16 = [];
 let closure_17 = [];
-const f36357 = () => {
+const f36382 = () => {
 
 };
 class PrivateChannelSortStore extends Store {
@@ -91,7 +91,7 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, handleConnectionOpen);
 };
 prototype["getPrivateChannelIds"] = function getPrivateChannelIds() {
-  if (typeof f36357 !== "function") {
+  if (typeof f36382 !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let values = secondaryIndexMap.values(constants.FAVORITE);

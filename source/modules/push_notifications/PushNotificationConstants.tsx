@@ -1,7 +1,7 @@
 // Module ID: 5830
 // Function ID: 5831
 // Name: str2
-// Dependencies: [1606, 1605, 500, 2]
+// Dependencies: [1625, 1624, 500, 2]
 // Exports: getDevicePushProvider
 
 // Module 5830 (str2)

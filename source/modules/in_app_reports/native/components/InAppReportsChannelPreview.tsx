@@ -1,10 +1,10 @@
-// Module ID: 12644
-// Function ID: 12645
+// Module ID: 12648
+// Function ID: 12649
 // Name: ChannelPreview
-// Dependencies: [19, 17, 1891, 21, 4303, 712, 589, 4151, 4299, 1236, 5779, 2]
+// Dependencies: [19, 17, 1910, 21, 4303, 712, 589, 4152, 4299, 1236, 5779, 2]
 // Exports: default
 
-// Module 12644 (ChannelPreview)
+// Module 12648 (ChannelPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -37,7 +37,7 @@ export default function ChannelPreview(stageInstance) {
     if (null != stageInstance) {
       obj = { style: null, children: null };
       obj[0] = tmp.container;
-      const tmp2Result = tmp2(4151);
+      const tmp2Result = tmp2(4152);
       obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
       obj[0] = tmp.title;
       const intl = tmp2(1236).intl;
@@ -46,14 +46,14 @@ export default function ChannelPreview(stageInstance) {
       const obj1 = { style: null, children: null };
       const items2 = [tmp.itemContainer, ];
       const obj2 = { borderColor: null };
-      obj2[0] = tmp2(4151).hexWithOpacity(tmp.borderColor.color, 0.08);
+      obj2[0] = tmp2(4152).hexWithOpacity(tmp.borderColor.color, 0.08);
       items2[1] = obj2;
       obj1[0] = items2;
       const obj3 = { style: null, children: null };
       obj3[0] = tmp.guildInfo;
       const obj4 = { guild: null, size: null, selected: false };
       obj4[0] = stateFromStores;
-      const hexWithOpacityResult = tmp2(4151).hexWithOpacity(tmp.borderColor.color, 0.08);
+      const hexWithOpacityResult = tmp2(4152).hexWithOpacity(tmp.borderColor.color, 0.08);
       obj4[1] = tmp2(5779).GuildIconSizes.XXSMALL;
       const items3 = [callback(importDefault(5779), obj4), ];
       const obj5 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };

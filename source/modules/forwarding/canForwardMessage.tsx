@@ -1,10 +1,10 @@
-// Module ID: 11123
-// Function ID: 11124
+// Module ID: 11128
+// Function ID: 11129
 // Name: canForwardMessage
-// Dependencies: [1962, 1372, 1891, 3929, 676, 1384, 589, 2]
+// Dependencies: [1981, 1391, 1910, 3948, 676, 1403, 589, 2]
 // Exports: useCanForwardMessage
 
-// Module 11123 (canForwardMessage)
+// Module 11128 (canForwardMessage)
 import isSubscriptionGated from "isSubscriptionGated";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -58,8 +58,8 @@ function canForwardMessage(state) {
       hasItem = null == state.activityInstance;
     }
     if (hasItem) {
-      hasItem = 0 === require(1384) /* hasFlag */.removeFlag(state.flags, closure_10);
-      const obj5 = require(1384) /* hasFlag */;
+      hasItem = 0 === require(1403) /* hasFlag */.removeFlag(state.flags, closure_10);
+      const obj5 = require(1403) /* hasFlag */;
     }
     if (hasItem) {
       const channel = obj3.getChannel(state.channel_id);
@@ -105,7 +105,7 @@ function canForwardMessage(state) {
   }
 }
 ({ GuildFeatures: closure_6, MessageFlags, MessageStates: error, MessageTypesSets: metroImportAll, Permissions: c9 } = ME);
-let closure_10 = MessageFlags.CROSSPOSTED | MessageFlags.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | MessageFlags.GUILD_FEED_HIDDEN | MessageFlags.HAS_SNAPSHOT | MessageFlags.HAS_THREAD | MessageFlags.IS_CROSSPOST | MessageFlags.IS_VOICE_MESSAGE | MessageFlags.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | MessageFlags.SUPPRESS_EMBEDS | MessageFlags.SUPPRESS_NOTIFICATIONS | MessageFlags.URGENT | MessageFlags.IS_COMPONENTS_V2 | MessageFlags.IS_GUILD_OFFICIAL;
+let closure_10 = MessageFlags.CROSSPOSTED | MessageFlags.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | MessageFlags.GUILD_FEED_HIDDEN | MessageFlags.HAS_SNAPSHOT | MessageFlags.HAS_THREAD | MessageFlags.IS_CROSSPOST | MessageFlags.IS_VOICE_MESSAGE | MessageFlags.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | MessageFlags.SUPPRESS_EMBEDS | MessageFlags.SUPPRESS_NOTIFICATIONS | MessageFlags.URGENT | MessageFlags.IS_COMPONENTS_V2 | MessageFlags.IS_GUILD_OFFICIAL | MessageFlags.IS_SCHEDULED;
 const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/forwarding/canForwardMessage.tsx");
 
 export { canForwardMessage };

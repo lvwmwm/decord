@@ -1,10 +1,10 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12310
+// Function ID: 12311
 // Name: getChannelIconURL
-// Dependencies: [32, 1903, 676, 1351, 1416, 2]
+// Dependencies: [32, 1922, 676, 1370, 1435, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 12307 (getChannelIconURL)
+// Module 12310 (getChannelIconURL)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ChannelTypes } from "ME";
@@ -21,14 +21,14 @@ export const getChannelIconURL = function getChannelIconURL(type) {
   if (ChannelTypes.DM === type) {
     const recipients = type.recipients;
     const mapped = recipients.map(mergeGuildAvatar.getUser);
-    const first = callback(mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish), 1)[0];
+    const first = callback(mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish), 1)[0];
     let avatarURL = null;
     if (null != first) {
       avatarURL = first.getAvatarURL(undefined, num, arg2);
     }
     return avatarURL;
   } else if (tmp.GROUP_DM === type) {
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: null, icon: null, applicationId: null, size: null };
     ({ id: obj2[0], icon: obj2[1] } = type);
     obj[2] = type.getApplicationId();
@@ -41,14 +41,14 @@ export const getChannelIconSource = function getChannelIconSource(type) {
   if (ChannelTypes.DM === type) {
     const recipients = type.recipients;
     const mapped = recipients.map(mergeGuildAvatar.getUser);
-    const first = callback(mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish), 1)[0];
+    const first = callback(mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish), 1)[0];
     let avatarSource = null;
     if (null != first) {
       avatarSource = first.getAvatarSource(undefined);
     }
     return avatarSource;
   } else if (tmp.GROUP_DM === type) {
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: null, icon: null, applicationId: null, size: 128 };
     ({ id: obj2[0], icon: obj2[1] } = type);
     obj[2] = type.getApplicationId();

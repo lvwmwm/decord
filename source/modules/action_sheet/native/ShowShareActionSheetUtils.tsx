@@ -1,10 +1,10 @@
-// Module ID: 8925
-// Function ID: 8926
+// Module ID: 8931
+// Function ID: 8932
 // Name: trackAppClickInNativeShareSheet
-// Dependencies: [676, 8926, 698, 8927, 1467, 500, 5354, 2]
+// Dependencies: [676, 8932, 698, 8933, 1486, 500, 5354, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 8925 (trackAppClickInNativeShareSheet)
+// Module 8931 (trackAppClickInNativeShareSheet)
 import { AnalyticEvents } from "ME";
 import { SHARE_SHEET_PRESENT_DELAY_MS as closure_4 } from "SHARE_PREPARING_MODAL_KEY";
 
@@ -22,7 +22,7 @@ export const trackAppClickInNativeShareSheet = function trackAppClickInNativeSha
 export const getMediaShareParams = function getMediaShareParams(source) {
   let contentType;
   let videoURI;
-  let obj = require(8927) /* apexExperiment */;
+  let obj = require(8933) /* apexExperiment */;
   if (obj.getMobileMediaViewerShareExperimentEnabled("shareMediaSource")) {
     if (true !== source.disableDownload) {
       if (null != source.shareURI) {
@@ -68,7 +68,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
           obj4[0] = source.shareURI;
           return obj4;
         }
-        obj11 = importDefault(1467);
+        obj11 = importDefault(1486);
       }
     }
   }

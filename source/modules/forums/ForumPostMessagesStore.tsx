@@ -1,7 +1,7 @@
 // Module ID: 5895
 // Function ID: 5896
 // Name: handleLoadThreadsSuccess
-// Dependencies: [5896, 1903, 11, 4523, 589, 709, 2]
+// Dependencies: [5896, 1922, 11, 4523, 589, 709, 2]
 
 // Module 5895 (handleLoadThreadsSuccess)
 import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";

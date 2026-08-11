@@ -1,7 +1,7 @@
 // Module ID: 5778
 // Function ID: 5779
 // Name: ChevronSmallRightIcon
-// Dependencies: [19, 21, 712, 4004, 5382, 2]
+// Dependencies: [19, 21, 712, 4023, 5382, 2]
 // Exports: ChevronSmallRightIcon
 
 // Module 5778 (ChevronSmallRightIcon)
@@ -22,5 +22,5 @@ export const ChevronSmallRightIcon = function ChevronSmallRightIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

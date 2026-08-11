@@ -1,23 +1,23 @@
-// Module ID: 8113
-// Function ID: 8114
+// Module ID: 8115
+// Function ID: 8116
 // Name: createChannelFollowAddSystemMessage
-// Dependencies: [8069, 1236, 8071, 8072, 2]
+// Dependencies: [8071, 1236, 8073, 8074, 2]
 // Exports: createChannelFollowAddSystemMessage
 
-// Module 8113 (createChannelFollowAddSystemMessage)
+// Module 8115 (createChannelFollowAddSystemMessage)
 const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelFollowAddSystemMessage.tsx");
 
 export const createChannelFollowAddSystemMessage = function createChannelFollowAddSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(8069) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(8071) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   obj = { content: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, webhookName: null, webhookNameOnClick: null };
-  obj[1] = importDefault(8071)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
+  obj[1] = importDefault(8073)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
   obj[2] = message.content;
   obj[3] = { action: "bindGuildMenu", messageReference: message.messageReference, medium: true };
   obj[0] = intl.formatToParts(require(1236) /* getSystemLocale */.t.xH8qGO, obj);
-  const merged = Object.assign(importDefault(8072)(roleStyle));
+  const merged = Object.assign(importDefault(8074)(roleStyle));
   return obj;
 };

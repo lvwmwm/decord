@@ -1,10 +1,10 @@
-// Module ID: 12119
-// Function ID: 12120
+// Module ID: 12122
+// Function ID: 12123
 // Name: EmojiIcon
-// Dependencies: [32, 19, 5176, 11392, 676, 21, 4303, 7226, 4730, 5764, 5396, 1236, 8976, 5399, 5767, 8448, 589, 5360, 1416, 2]
+// Dependencies: [32, 19, 5176, 11395, 676, 21, 4303, 7227, 4730, 5764, 5396, 1236, 8982, 5399, 5767, 8454, 589, 5360, 1435, 2]
 // Exports: default
 
-// Module 12119 (EmojiIcon)
+// Module 12122 (EmojiIcon)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "set";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -39,8 +39,8 @@ function EmojiIcon(arg0) {
   if (null != stateFromStores) {
     obj = { id: null, animated: null, size: 18 };
     ({ id: obj4[0], animated: obj4[1] } = stateFromStores);
-    emojiURL = importDefault(1416).getEmojiURL(obj);
-    const tmp5Result = importDefault(1416);
+    emojiURL = importDefault(1435).getEmojiURL(obj);
+    const tmp5Result = importDefault(1435);
   }
   obj[3] = emojiURL;
   if (emojiName == null) {

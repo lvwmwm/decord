@@ -1,10 +1,10 @@
-// Module ID: 10236
-// Function ID: 10237
+// Module ID: 10241
+// Function ID: 10242
 // Name: trackForwardStart
-// Dependencies: [19, 1372, 676, 698, 4498, 12, 2]
+// Dependencies: [19, 1391, 676, 698, 4498, 12, 2]
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart, useTrackForwardAddRecipientOnce, useTrackForwardEditContextMessageOnce, useTrackForwardEditSearchOnce
 
-// Module 10236 (trackForwardStart)
+// Module 10241 (trackForwardStart)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";

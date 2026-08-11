@@ -1,7 +1,7 @@
 // Module ID: 4619
 // Function ID: 4620
 // Name: PromiseResolve
-// Dependencies: [540, 1403, 562]
+// Dependencies: [540, 1422, 562]
 
 // Module 4619 (PromiseResolve)
 const tmp = require("getEvalledConstructor")("%Promise.resolve%", true);

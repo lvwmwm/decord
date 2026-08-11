@@ -1,12 +1,12 @@
-// Module ID: 11837
-// Function ID: 11838
+// Module ID: 11840
+// Function ID: 11841
 // Name: GuildProgressHeader
-// Dependencies: [5, 19, 17, 9022, 1961, 11830, 676, 21, 4303, 712, 589, 11835, 4001, 698, 11838, 11839, 9065, 6507, 1236, 9021, 4860, 6137, 4311, 4271, 1231, 6629, 11840, 5748, 6127, 4299, 4714, 4846, 5764, 1297, 2]
+// Dependencies: [5, 19, 17, 9028, 1980, 11833, 676, 21, 4303, 712, 589, 11838, 4020, 698, 11841, 11842, 9071, 6509, 1236, 9027, 4860, 6139, 4311, 4271, 1231, 6631, 11843, 5748, 6129, 4299, 4714, 4846, 5764, 1297, 2]
 // Exports: default
 
-// Module 11837 (GuildProgressHeader)
+// Module 11840 (GuildProgressHeader)
 import closure_3 from "Steps";
-import module_9021 from "module_9021";
+import module_9027 from "module_9027";
 import { View } from "metadata";
 import handleFormInit from "handleFormInit";
 import comparator from "comparator";
@@ -93,10 +93,10 @@ export default function GuildProgressActionSheet(guild) {
               let closure_1 = tmp5;
               let base64 = tmp2;
               base64 = undefined;
-              outer1_1(9021).init(outer1_5);
-              const obj6 = outer1_1(9021);
-              outer1_0(11835).hideActionSheet(outer1_0.id);
-              const obj7 = outer1_0(11835);
+              outer1_1(9027).init(outer1_5);
+              const obj6 = outer1_1(9027);
+              outer1_0(11838).hideActionSheet(outer1_0.id);
+              const obj7 = outer1_0(11838);
               const obj1 = { size: null };
               obj1[0] = outer1_10;
               dependencyMap = 1;
@@ -116,7 +116,7 @@ export default function GuildProgressActionSheet(guild) {
           } else {
             base64 = arg1.base64;
             if (null != base64) {
-              obj = outer1_1(9021);
+              obj = outer1_1(9027);
               obj.updateIcon(closure_5, base64);
             }
             c3 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 13262
-// Function ID: 13263
+// Module ID: 13270
+// Function ID: 13271
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1903, 8052, 21, 4303, 712, 589, 4493, 1416, 13263, 4299, 1236, 4712, 9836, 9252, 13264, 13308, 4714, 5376, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 8054, 21, 4303, 712, 589, 4493, 1435, 13271, 4299, 1236, 4712, 9841, 9258, 13272, 13316, 4714, 5376, 2]
 // Exports: default
 
-// Module 13262 (GuildSettingsServerTagPreview)
+// Module 13270 (GuildSettingsServerTagPreview)
 import items from "items";
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
@@ -59,7 +59,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj2 = onAdopted(4493);
   const name = obj2.useName(guildId, null, stateFromStores);
-  let obj3 = onAdopted(1416);
+  let obj3 = onAdopted(1435);
   let avatarURL;
   if (stateFromStores != null) {
     avatarURL = stateFromStores.getAvatarURL(guildId, 40);
@@ -116,7 +116,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
             let ok = tmp2;
             ok = undefined;
             dependencyMap(true);
-            let obj1 = outer1_0(13263);
+            let obj1 = outer1_0(13271);
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
@@ -164,7 +164,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   let obj1 = { style: items3, children: null };
   items3 = [, ];
   ({ message: arr4[0], unfocused: arr4[1] } = tmp);
-  obj2 = { source: tmp4(9836), style: tmp.avatar, importantForAccessibility: "no" };
+  obj2 = { source: tmp4(9841), style: tmp.avatar, importantForAccessibility: "no" };
   const items4 = [closure_10(closure_6, obj2), ];
   obj3 = { style: tmp.messageBody, children: null };
   const items5 = [closure_10(guildId(4299).Text, { variant: "text-md/semibold", color: "text-default", children: "Locke" }), ];
@@ -195,10 +195,10 @@ export default function GuildSettingsServerTagPreview(guildId) {
       obj10[1] = primaryColor;
       obj10[2] = secondaryColor;
       ({ SIZE_12: obj16[3], SIZE_12: obj16[4] } = GuildTagBadgeSize);
-      tmp15Result = tmp15(tmp2(13264).GuildBadge, obj10);
+      tmp15Result = tmp15(tmp2(13272).GuildBadge, obj10);
     }
     obj9[1] = tmp15Result;
-    tmp15Result = tmp15(tmp2(9252).BaseGuildTagChiplet, obj9);
+    tmp15Result = tmp15(tmp2(9258).BaseGuildTagChiplet, obj9);
   }
   items8[1] = tmp15Result;
   obj8[1] = items8;
@@ -218,7 +218,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const tmp10 = callback2(React.useState(false), 2);
   const tmp14 = closure_12;
   const tmp18 = closure_6;
-  const items11 = [closure_10(tmp18, { source: onAdopted(13308), style: tmp.avatar, importantForAccessibility: "no" }), ];
+  const items11 = [closure_10(tmp18, { source: onAdopted(13316), style: tmp.avatar, importantForAccessibility: "no" }), ];
   const obj14 = { style: tmp.messageBody, children: null };
   const items12 = [closure_10(guildId(4299).Text, { variant: "text-md/semibold", color: "text-default", children: "Phibi" }), ];
   const obj15 = { variant: "text-md/normal", color: "text-default", children: null };

@@ -1,10 +1,10 @@
-// Module ID: 8457
-// Function ID: 8458
+// Module ID: 8463
+// Function ID: 8464
 // Name: ChangeEmailWarning
-// Dependencies: [19, 17, 1903, 8455, 676, 21, 4303, 712, 1480, 589, 698, 691, 6027, 4299, 1236, 4714, 8451, 2]
+// Dependencies: [19, 17, 1922, 8461, 676, 21, 4303, 712, 1499, 589, 698, 691, 6029, 4299, 1236, 4714, 8457, 2]
 // Exports: default
 
-// Module 8457 (ChangeEmailWarning)
+// Module 8463 (ChangeEmailWarning)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -36,7 +36,7 @@ export default function ChangeEmailWarning(changeEmailReason) {
   changeEmailReason = changeEmailReason.changeEmailReason;
   let navigation;
   const tmp = createCacheKey();
-  let obj = changeEmailReason(1480);
+  let obj = changeEmailReason(1499);
   navigation = obj.useNavigation();
   let obj1 = changeEmailReason(589);
   const items = [mergeGuildAvatar];
@@ -47,7 +47,7 @@ export default function ChangeEmailWarning(changeEmailReason) {
     obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    const items2 = [callback(tmp2(6027).TrafficConeSpotIllustration, {}), , , ];
+    const items2 = [callback(tmp2(6029).TrafficConeSpotIllustration, {}), , , ];
     obj1 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj1[0] = tmp.title;
     const intl = tmp2(1236).intl;

@@ -1,10 +1,10 @@
-// Module ID: 16982
-// Function ID: 16983
+// Module ID: 16994
+// Function ID: 16995
 // Name: handleAppStateChanged
-// Dependencies: [1218, 6876, 676, 3, 10, 709, 4375, 16981, 6934, 4149, 9, 698, 2]
+// Dependencies: [1218, 6878, 676, 3, 10, 709, 4375, 16993, 6937, 4151, 9, 698, 2]
 // Exports: default
 
-// Module 16982 (handleAppStateChanged)
+// Module 16994 (handleAppStateChanged)
 import fetchFingerprint from "fetchFingerprint";
 import getState from "getState";
 import ME from "ME";
@@ -32,14 +32,14 @@ export default function handleAppStateChanged(state) {
     const _default = require(4375) /* createRTCConnection */.default;
   }
   if (isAuthenticatedResult) {
-    let tmp2Result = tmp2(16981);
+    let tmp2Result = tmp2(16993);
     tmp2Result.deferUpdate();
   }
   if (state === constants2.ACTIVE) {
-    require(6934) /* getDeviceMetadata */.trackAppOpened("launcher");
-    const obj5 = require(6934) /* getDeviceMetadata */;
-    const result = require(4149) /* setSystemTheme */.setSystemThemeIfNeeded();
-    const obj6 = require(4149) /* setSystemTheme */;
+    require(6937) /* getDeviceMetadata */.trackAppOpened("launcher");
+    const obj5 = require(6937) /* getDeviceMetadata */;
+    const result = require(4151) /* setSystemTheme */.setSystemThemeIfNeeded();
+    const obj6 = require(4151) /* setSystemTheme */;
   }
   tmp2Result = tmp2(9);
   tmp2Result.appStateChanged(state);

@@ -1,10 +1,10 @@
-// Module ID: 8028
-// Function ID: 8029
+// Module ID: 8030
+// Function ID: 8031
 // Name: HeaderView
-// Dependencies: [32, 19, 17, 4302, 1372, 3929, 8029, 8026, 676, 505, 21, 4303, 712, 5716, 4733, 4299, 4151, 4259, 589, 4846, 8030, 1480, 4700, 4710, 8023, 8021, 4498, 4014, 8032, 8036, 7337, 5328, 8037, 8038, 8039, 8040, 12642, 12643, 12644, 12645, 12646, 12647, 12648, 12649, 12650, 12652, 12653, 12654, 12655, 12656, 12657, 12658, 12659, 12662, 2]
+// Dependencies: [32, 19, 17, 4302, 1391, 3948, 8031, 8028, 676, 505, 21, 4303, 712, 5716, 4733, 4299, 4152, 4259, 589, 4846, 8032, 1499, 4700, 4710, 8025, 8023, 4498, 1351, 8034, 8038, 7338, 5328, 8039, 8040, 8041, 8042, 12646, 12647, 12648, 12649, 12650, 12651, 12652, 12653, 12654, 12656, 12657, 12658, 12659, 12660, 12661, 12662, 12663, 12666, 2]
 // Exports: default
 
-// Module 8028 (HeaderView)
+// Module 8030 (HeaderView)
 import ShieldElement from "ShieldElement";
 import PressableBase from "PressableBase";
 import get_ActivityIndicator from "CircleInformationIcon";
@@ -77,7 +77,7 @@ function InfoView(node) {
     let obj = { style: null, children: null };
     const items = [tmp.infoBox, ];
     obj = { backgroundColor: null };
-    obj[0] = require(4151) /* hexToRgba */.hexWithOpacity(tmp.infoBox.backgroundColor, 0.1);
+    obj[0] = require(4152) /* hexToRgba */.hexWithOpacity(tmp.infoBox.backgroundColor, 0.1);
     items[1] = obj;
     obj[0] = items;
     obj = { size: "md", color: null };
@@ -89,7 +89,7 @@ function InfoView(node) {
     items1[1] = callback2(require(4299) /* Text */.Text, obj1);
     obj[1] = items1;
     tmp4 = callback3(closure_6, obj);
-    const obj3 = require(4151) /* hexToRgba */;
+    const obj3 = require(4152) /* hexToRgba */;
   }
   return tmp4;
 }
@@ -121,7 +121,7 @@ function ChildItem(child) {
   }
   items1[1] = stateFromStores;
   obj1[1] = items1;
-  const items2 = [closure_17(closure_6, obj1), callback2(importDefault(8030), {})];
+  const items2 = [closure_17(closure_6, obj1), callback2(importDefault(8032), {})];
   obj[1] = items2;
   obj[3] = closure_17(closure_6, obj);
   return callback2(child(4846).PressableHighlight, obj);

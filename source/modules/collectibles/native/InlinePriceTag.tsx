@@ -1,10 +1,10 @@
-// Module ID: 9566
-// Function ID: 9567
+// Module ID: 9571
+// Function ID: 9572
 // Name: PriceTag
-// Dependencies: [19, 17, 5858, 678, 676, 21, 4303, 712, 4299, 1930, 7012, 7013, 9408, 1236, 9348, 3947, 9567, 9568, 9419, 9569, 589, 9403, 9428, 500, 7730, 7704, 2]
+// Dependencies: [19, 17, 5858, 678, 676, 21, 4303, 712, 4299, 1949, 7015, 7016, 9414, 1236, 9354, 3966, 9572, 9573, 9425, 9574, 589, 9409, 9434, 500, 7732, 7706, 2]
 // Exports: default
 
-// Module 9566 (PriceTag)
+// Module 9571 (PriceTag)
 import "useVirtualCurrencyData";
 import get_ActivityIndicator from "useProductDisableState";
 import updateProduct from "updateProduct";
@@ -56,16 +56,16 @@ function OrbsPriceTag(arg0) {
   if (null == vcData.price) {
     return null;
   } else {
-    let result = product.type === require(1930) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE;
+    let result = product.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE;
     if (result) {
-      let tmp16Result = tmp16(7012);
+      let tmp16Result = tmp16(7015);
       result = tmp16Result.isOrbsExclusiveProduct(product);
     }
-    tmp16Result = tmp16(7013);
+    tmp16Result = tmp16(7016);
     const productDiscount = tmp16Result.getProductDiscount(product, eligibleForShopDiscount, constants2.DISCORD_ORB);
     ({ original, discountPercentage } = productDiscount);
     if (result) {
-      result = discountPercentage >= tmp16(7013).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+      result = discountPercentage >= tmp16(7016).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
     }
     const items = [tmp.priceTagRow, ];
     const canAfford = vcData.canAfford;
@@ -86,7 +86,7 @@ function OrbsPriceTag(arg0) {
       obj[2] = tmp.strikedOrbPrice;
       const obj1 = { color: "interactive-text-active", size: "sm", style: null };
       obj1[2] = tmp.orbsIcon;
-      obj[3] = callback(tmp16(9408).OrbsIcon, obj1);
+      obj[3] = callback(tmp16(9414).OrbsIcon, obj1);
       const intl = tmp16(1236).intl;
       const obj2 = { orbAmount: null };
       obj2[0] = original.toString();
@@ -100,7 +100,7 @@ function OrbsPriceTag(arg0) {
     if (!result) {
       const obj4 = { color: "interactive-text-active", size: "sm", style: null };
       obj4[2] = tmp.orbsIcon;
-      tmp10Result = tmp10(tmp16(9408).OrbsIcon, obj4);
+      tmp10Result = tmp10(tmp16(9414).OrbsIcon, obj4);
     }
     obj3[2] = tmp10Result;
     const intl2 = tmp16(1236).intl;
@@ -134,7 +134,7 @@ function OrbsPriceTag(arg0) {
 function BundleDiscountV2(discountPercentage) {
   discountPercentage = discountPercentage.discountPercentage;
   let tmp4 = null;
-  if (discountPercentage >= require(7013) /* getItemRecordsFromPurchases */.DISCOUNT_DISPLAY_MINIMUM_THRESHOLD) {
+  if (discountPercentage >= require(7016) /* getItemRecordsFromPurchases */.DISCOUNT_DISPLAY_MINIMUM_THRESHOLD) {
     let obj = { style: null, children: null };
     obj[0] = tmp.discount;
     obj = { variant: "text-md/normal", color: "text-feedback-positive", children: null };
@@ -181,27 +181,27 @@ export default function InlinePriceTag(arg0) {
   let dependencyMap;
   const tmp = createCacheKey();
   importDefault = tmp;
-  let obj = require(9348) /* useCurrentUser */;
+  let obj = require(9354) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(7013) /* getItemRecordsFromPurchases */;
+  let obj1 = require(7016) /* getItemRecordsFromPurchases */;
   const shopDiscountSource = obj1.getShopDiscountSource(currentUser);
-  let obj2 = importDefault(3947);
+  let obj2 = importDefault(3966);
   const canUseShopDiscountsResult = obj2.canUseShopDiscounts(currentUser);
-  dependencyMap = importDefault(9567)(constants.SHOP_PRODUCT_DETAILS);
-  let obj3 = require(9568) /* useProductDisableState */;
+  dependencyMap = importDefault(9572)(constants.SHOP_PRODUCT_DETAILS);
+  let obj3 = require(9573) /* useProductDisableState */;
   const isDisabled = obj3.useProductDisableState(product.skuId).isDisabled;
-  let obj4 = require(9419) /* hasAtLeastOneGPlaySynced */;
+  let obj4 = require(9425) /* hasAtLeastOneGPlaySynced */;
   const formattedPriceForCollectiblesProduct = obj4.getFormattedPriceForCollectiblesProduct(product, false, true);
-  let obj5 = require(9569) /* useVirtualCurrencyData */;
+  let obj5 = require(9574) /* useVirtualCurrencyData */;
   const virtualCurrencyData = obj5.useVirtualCurrencyData(product, canUseShopDiscountsResult);
   let obj6 = require(589) /* initialize */;
   const items = [updateProduct];
   const stateFromStores = obj6.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus());
-  let obj7 = require(9403) /* useCanPurchaseFrames */;
+  let obj7 = require(9409) /* useCanPurchaseFrames */;
   const isProfileFramesEarlyAccessPhase = obj7.useIsProfileFramesEarlyAccessPhase("InlinePriceTag");
   if (stateFromStores) {
     if (null == formattedPriceForCollectiblesProduct) {
-      return callback(tmp2(9428).CollectiblesShopPricePlaceholder, {});
+      return callback(tmp2(9434).CollectiblesShopPricePlaceholder, {});
     }
   }
   if (null == formattedPriceForCollectiblesProduct) {
@@ -220,9 +220,9 @@ export default function InlinePriceTag(arg0) {
     if (!canUseShopDiscountsResult) {
       tmp13 = tmp11;
     }
-    let tmp2Result = tmp2(9419);
+    let tmp2Result = tmp2(9425);
     const formattedPriceForCollectiblesProduct1 = tmp2Result.getFormattedPriceForCollectiblesProduct(product, true, true);
-    tmp2Result = tmp2(7013);
+    tmp2Result = tmp2(7016);
     obj = { style: null, children: null };
     obj[0] = tmp.container;
     obj1 = { style: null, children: null };
@@ -239,7 +239,7 @@ export default function InlinePriceTag(arg0) {
     obj3[4] = intl.formatToPlainString(tmp2(1236).t.sPvyr8, obj4);
     const items1 = [callback(PriceTag, obj3), , ];
     let tmp17Result = null;
-    if (product.type === tmp2(1930).CollectiblesItemType.BUNDLE) {
+    if (product.type === tmp2(1949).CollectiblesItemType.BUNDLE) {
       tmp17Result = null;
       if (!canUseShopDiscountsResult) {
         obj5 = { discountPercentage: null };
@@ -268,7 +268,7 @@ export default function InlinePriceTag(arg0) {
         const items3 = [, ];
         ({ nitroIcon: arr4[0], nitroIconSubscribeNow: arr4[1] } = tmp);
         obj8[1] = items3;
-        const items4 = [tmp17(tmp2(7704).NitroWheelIcon, obj8), ];
+        const items4 = [tmp17(tmp2(7706).NitroWheelIcon, obj8), ];
         let androidTextPadding;
         if (tmp2Result1.isAndroid()) {
           androidTextPadding = tmp.androidTextPadding;
@@ -316,14 +316,14 @@ export default function InlinePriceTag(arg0) {
         androidTextPadding1 = tmp.androidTextPadding;
       }
       obj12[4] = androidTextPadding1;
-      if (shopDiscountSource === tmp2(7013).ShopDiscountSource.THIRDPARTY) {
+      if (shopDiscountSource === tmp2(7016).ShopDiscountSource.THIRDPARTY) {
         const obj14 = { color: "interactive-text-active", style: null };
         obj14[1] = tmp.nitroIcon;
-        let tmp17Result2 = tmp17(tmp2(7730).TagIcon, obj14);
+        let tmp17Result2 = tmp17(tmp2(7732).TagIcon, obj14);
       } else {
         const obj15 = { color: "interactive-text-active", style: null };
         obj15[1] = tmp.nitroIcon;
-        tmp17Result2 = tmp17(tmp2(7704).NitroWheelIcon, obj15);
+        tmp17Result2 = tmp17(tmp2(7706).NitroWheelIcon, obj15);
       }
       obj12[5] = tmp17Result2;
       tmp17(tmp18, obj12);

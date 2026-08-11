@@ -1,10 +1,10 @@
-// Module ID: 10472
-// Function ID: 10473
+// Module ID: 10477
+// Function ID: 10478
 // Name: resolveAsset
-// Dependencies: [5161, 676, 10473, 10474, 10475, 10476, 10477, 7165, 10484, 10485, 5168, 1467, 1877, 2]
+// Dependencies: [5161, 676, 10478, 10479, 10480, 10481, 10482, 7166, 10489, 10490, 5168, 1486, 1896, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 10472 (resolveAsset)
+// Module 10477 (resolveAsset)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_5 } from "ME";
 
@@ -49,7 +49,7 @@ function resolveAsset(id, questBarHeroVideo) {
 }
 function getMimetype(questBarHeroVideo) {
   const startsWithResult = questBarHeroVideo.startsWith("blob:");
-  const toURLSafeResult = importDefault(1467).toURLSafe(questBarHeroVideo);
+  const toURLSafeResult = importDefault(1486).toURLSafe(questBarHeroVideo);
   if (startsWithResult) {
     let value;
     if (!tmp3) {
@@ -79,10 +79,315 @@ function getMimetype(questBarHeroVideo) {
           formatted1 = str3.toLowerCase();
         }
       }
+      formatted = formatted1;
     }
-    return "application/x-mpegURL";
+    switch (formatted) {
+      case "Date":
+      break;
+      case "TypeError":
+      break;
+      case "Error":
+      break;
+      case "HTTP":
+      break;
+      case "T":
+      break;
+      case "HermesInternal":
+      break;
+      case "Icon":
+      break;
+      case "IconComponent":
+      break;
+      case "c":
+      break;
+      case "p":
+      break;
+      case "LIGHT":
+      break;
+      case "LengthDelimited":
+      break;
+      case "limit":
+      break;
+      case "i":
+      break;
+      case "it":
+      break;
+      case "d":
+      break;
+      case "Map":
+      break;
+      case "Math":
+      break;
+      case "h":
+      break;
+      case "Number":
+      break;
+      case "Object":
+      break;
+      case "ct":
+      break;
+      case "PX_16":
+      break;
+      case "flex":
+      break;
+      case "flexDirection":
+      break;
+      case "PX_8":
+      break;
+      case "Path":
+      break;
+      case "Promise":
+      break;
+      case "s":
+      break;
+      case "Reflect":
+      break;
+      case "Set":
+      break;
+      case "format":
+      break;
+      case "formatToPlainString":
+      break;
+      case "String":
+      break;
+      case "Symbol":
+        return "video/webm";
+      case "Text":
+      break;
+      case "x":
+        return "video/mp4";
+      case "View":
+      break;
+      case "w":
+        return "image/webp";
+      case "WireType":
+      break;
+      case "__closure":
+        return "image/jpeg";
+      case "__d":
+      break;
+      case "__esModule":
+        return "image/jpeg";
+      case "__initData":
+      break;
+      case "filter":
+        return "image/png";
+      case "__packager_asset":
+      break;
+      case "k":
+        return "image/gif";
+      case "set":
+      break;
+      case "__workletHash":
+        return "image/svg+xml";
+      case "_desired":
+      break;
+      case "_distance":
+        return "text/plain";
+      case "st":
+      break;
+      case "accessibilityLabel":
+        return "text/vtt";
+      case "accessibilityRole":
+      break;
+      case "accessible":
+        return "video/mp2t";
+      case "padding":
+      break;
+      case "paddingHorizontal":
+        return "application/x-mpegURL";
+      case "add":
+      break;
+      case "alignItems":
+      break;
+      case "ao":
+      break;
+      case "applicationId":
+      break;
+      case "ti":
+      break;
+      case "apply":
+      break;
+      case "backgroundColor":
+      break;
+      case "round":
+      break;
+      case "bm":
+      break;
+      case "body":
+      break;
+      case "borderRadius":
+      break;
+      case "bottom":
+      break;
+      case "call":
+      break;
+      case "channel":
+      break;
+      case "channelId":
+      break;
+      case "channel_id":
+      break;
+      case "id":
+      break;
+      case "children":
+      break;
+      case "cix":
+      break;
+      case "ix":
+      break;
+      case "unicodeVersion":
+      break;
+      case "code":
+      break;
+      case "color":
+      break;
+      case "colors":
+      break;
+      case "concat":
+      break;
+      case "constructor":
+      break;
+      case "container":
+      break;
+      case "content":
+      break;
+      case "context":
+      break;
+      case "text":
+      break;
+      case "count":
+      break;
+      case "create":
+      break;
+      case "createStyles":
+      break;
+      case "ty":
+      break;
+      case "current":
+      break;
+      case "cursor":
+      break;
+      case "data":
+      break;
+      case "ddd":
+      break;
+      case "default":
+      break;
+      case "defineProperty":
+      break;
+      case "op":
+      break;
+      case "delete":
+      break;
+      case "description":
+      break;
+      case "ip":
+      break;
+      case "disabled":
+      break;
+      case "sa":
+      break;
+      case "dispatch":
+      break;
+      case "displayName":
+      break;
+      case "diversity":
+      break;
+      case "v":
+      break;
+      case "done":
+      break;
+      case "duration":
+      break;
+      case "enabled":
+      break;
+      case "end":
+      break;
+      case "enumerable":
+      break;
+      case "error":
+      break;
+      case "exports":
+      break;
+      case "fileFinishedImporting":
+      break;
+      case "fill":
+      break;
+      case "find":
+      break;
+      case "ind":
+      break;
+      case "flags":
+      break;
+      case "forEach":
+      break;
+      case "gap":
+      break;
+      case "get":
+      break;
+      case "getChannel":
+      break;
+      case "getCurrentUser":
+      break;
+      case "getGuild":
+      break;
+      case "guild":
+      break;
+      case "guildId":
+      break;
+      case "guild_id":
+      break;
+      case "has":
+      break;
+      case "hasDiversityParent":
+      break;
+      case "hash":
+      break;
+      case "hd":
+      break;
+      case "header":
+      break;
+      case "height":
+      break;
+      case "httpServerLocation":
+      break;
+      case "icon":
+      break;
+      case "includes":
+      break;
+      case "index":
+      break;
+      case "indexOf":
+      break;
+      case "intl":
+      break;
+      case "items":
+      break;
+      case "join":
+      break;
+      case "jsx":
+      break;
+      case "jsxs":
+      break;
+      case "justifyContent":
+      break;
+      case "key":
+      break;
+      case "keys":
+      break;
+      case "kind":
+      break;
+      case "ks":
+      break;
+      case "space":
+      break;
+      case "label":
+      break;
+      default:
+        return null;
+    }
   }
-  const obj = importDefault(1467);
 }
 function getAssetUrlWithMediaProxyQueryParams(assetUrl, arg1) {
   let size = arg1;
@@ -92,7 +397,7 @@ function getAssetUrlWithMediaProxyQueryParams(assetUrl, arg1) {
   if (assetUrl.startsWith("blob:")) {
     return assetUrl;
   } else {
-    let str = importDefault(1467).toURLSafe(assetUrl);
+    let str = importDefault(1486).toURLSafe(assetUrl);
     str = assetUrl;
     if (null != str) {
       if (null != size.format) {
@@ -122,7 +427,7 @@ function convertVideoToFirstFrameImageWithMediaProxy(assetUrl, width) {
   if (assetUrl.startsWith("blob:")) {
     return assetUrl;
   } else {
-    let str = importDefault(1467).toURLSafe(assetUrl);
+    let str = importDefault(1486).toURLSafe(assetUrl);
     str = null;
     if (null != str) {
       const searchParams = str.searchParams;
@@ -200,9 +505,9 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
     flag = false;
     flag2 = false;
   } else if (tmp.REWARD === VIDEO_PLAYER_TRANSCRIPT) {
-    let obj1 = require(10477) /* _getDefaultRewardName */;
+    let obj1 = require(10482) /* _getDefaultRewardName */;
     const questPrimaryReward = obj1.getQuestPrimaryReward(quest);
-    if (questPrimaryReward.type === require(7165) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+    if (questPrimaryReward.type === require(7166) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       let tmp25;
       if (null != arg4) {
         tmp25 = obj8[arg4];
@@ -213,11 +518,11 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
         obj1 = obj;
       } else if (flag) {
         obj = { url: null, mimetype: "video/mp4", isAnimated: true };
-        obj[0] = importDefault(10484);
+        obj[0] = importDefault(10489);
         obj1 = obj;
       } else {
         obj1 = { url: null, mimetype: "video/webm", isAnimated: true };
-        obj1[0] = importDefault(10485);
+        obj1[0] = importDefault(10490);
       }
       return obj1;
     } else {
@@ -226,9 +531,9 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
       flag2 = false;
     }
   } else if (tmp.REWARD_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
-    obj = require(10477) /* _getDefaultRewardName */;
+    obj = require(10482) /* _getDefaultRewardName */;
     const questPrimaryReward1 = obj.getQuestPrimaryReward(quest);
-    if (questPrimaryReward1.type === require(7165) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+    if (questPrimaryReward1.type === require(7166) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       return null;
     } else {
       asset = questPrimaryReward1.asset;
@@ -397,7 +702,7 @@ export const resolveAdCreativeCdnUrl = function resolveAdCreativeCdnUrl(hero_ima
 };
 export { getMimetype };
 export const getDevicePixelScaledDimensions = function getDevicePixelScaledDimensions(arg0, arg1) {
-  const tmp = importDefault(1877)();
+  const tmp = importDefault(1896)();
   if (tmp < 3) {
     let obj = { width: null, height: null };
     obj[0] = arg0;
@@ -415,7 +720,7 @@ export const getScaledImageUrl = function getScaledImageUrl(arg0) {
   let height;
   let width;
   ({ assetUrl, width, height } = arg0);
-  const tmp = importDefault(1877)();
+  const tmp = importDefault(1896)();
   return getAssetUrlWithMediaProxyQueryParams(assetUrl, { width: width * tmp, height: height * tmp, format: "webp" });
 };
 export { convertVideoToFirstFrameImageWithMediaProxy };
@@ -424,6 +729,6 @@ export const getScaledFirstFrameImageUrl = function getScaledFirstFrameImageUrl(
   let height;
   let width;
   ({ assetUrl, width, height } = arg0);
-  const tmp = importDefault(1877)();
+  const tmp = importDefault(1896)();
   return convertVideoToFirstFrameImageWithMediaProxy(assetUrl, { width: width * tmp, height: height * tmp });
 };

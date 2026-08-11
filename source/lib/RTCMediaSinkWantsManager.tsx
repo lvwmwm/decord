@@ -1,9 +1,9 @@
-// Module ID: 13072
-// Function ID: 13073
+// Module ID: 13081
+// Function ID: 13082
 // Name: getDefaultWants
-// Dependencies: [32, 1218, 676, 4364, 687, 4621, 13073, 4403, 4413, 4188, 10698, 11, 12, 500, 643, 4400, 2]
+// Dependencies: [32, 1218, 676, 4364, 687, 4621, 13082, 4403, 4413, 4188, 10703, 11, 12, 500, 643, 4400, 2]
 
-// Module 13072 (getDefaultWants)
+// Module 13081 (getDefaultWants)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import { VideoToggleState } from "ME";
@@ -13,7 +13,7 @@ import num2 from "num2";
 
 let require = arg1;
 function getDefaultWants(arg0) {
-  let obj = require(13073) /* getBrowserInvertedWantsConfig */;
+  let obj = require(13082) /* getBrowserInvertedWantsConfig */;
   if (obj.getBrowserInvertedWantsConfig("RTCMediaSinkWantsManager.getDefaultWants").invertWants) {
     obj = {};
     const merged = Object.assign(obj);
@@ -518,7 +518,7 @@ prototype["shouldReceiveFromUser"] = function shouldReceiveFromUser(arg0) {
     }
     localVideoDisabled = userVideoDisabledResult;
   }
-  const WindowVisibilityVideoManager = require(10698) /* isIncomingVideoEnabled */.WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = require(10703) /* isIncomingVideoEnabled */.WindowVisibilityVideoManager;
   return WindowVisibilityVideoManager.isIncomingVideoEnabled() && !localVideoDisabled;
 };
 prototype["invertWants"] = function invertWants(arg0, wantsLevel) {
@@ -696,7 +696,7 @@ prototype["reset"] = function reset() {
   this.framesReceived = {};
   this.streamIds = {};
   this.streamPixelCounts = {};
-  let obj = require(13073) /* getBrowserInvertedWantsConfig */;
+  let obj = require(13082) /* getBrowserInvertedWantsConfig */;
   if (obj.getBrowserInvertedWantsConfig("RTCMediaSinkWantsManager.getDefaultWants").invertWants) {
     obj = {};
     const merged = Object.assign(obj);
@@ -705,8 +705,8 @@ prototype["reset"] = function reset() {
     obj[0] = c7;
   }
   self.latestWants = obj;
-  const WindowVisibilityVideoManager = tmp3(10698).WindowVisibilityVideoManager;
-  WindowVisibilityVideoManager.off(require(10698) /* isIncomingVideoEnabled */.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
+  const WindowVisibilityVideoManager = tmp3(10703).WindowVisibilityVideoManager;
+  WindowVisibilityVideoManager.off(require(10703) /* isIncomingVideoEnabled */.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
 };
 prototype["setSelectedParticipant"] = function setSelectedParticipant(selectedParticipantId) {
   let self = this;

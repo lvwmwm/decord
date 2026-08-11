@@ -1,7 +1,7 @@
 // Module ID: 5124
 // Function ID: 5125
 // Name: officialApplicationIds
-// Dependencies: [1964, 1891, 3929, 5125, 676, 1467, 38, 1236, 12, 5126, 589, 4123, 1358, 2]
+// Dependencies: [1983, 1910, 3948, 5125, 676, 1486, 38, 1236, 12, 5126, 589, 4125, 1377, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible, useShowLinkedRolesAdminNux
 
 // Module 5124 (officialApplicationIds)
@@ -27,7 +27,7 @@ export const getCallbackParamsFromURL = function getCallbackParamsFromURL(c0) {
   let error;
   let error_description;
   let state;
-  let obj = importDefault(1467);
+  let obj = importDefault(1486);
   let toURLSafeResult = obj.toURLSafe(c0);
   if (toURLSafeResult == null) {
     obj = { searchParams: null };

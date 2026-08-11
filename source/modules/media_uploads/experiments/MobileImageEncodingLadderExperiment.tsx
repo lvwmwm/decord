@@ -1,7 +1,7 @@
 // Module ID: 4889
 // Function ID: 4890
 // Name: getMobileImageEncodingLadderConfig
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: getMobileImageEncodingLadderConfig
 
 // Module 4889 (getMobileImageEncodingLadderConfig)

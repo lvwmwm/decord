@@ -1,10 +1,10 @@
-// Module ID: 14874
-// Function ID: 14875
+// Module ID: 14884
+// Function ID: 14885
 // Name: VerificationListItem
-// Dependencies: [19, 17, 1903, 21, 4303, 9209, 5374, 1236, 4846, 5326, 4299, 6878, 1480, 589, 4146, 8382, 14871, 7745, 2]
+// Dependencies: [19, 17, 1922, 21, 4303, 9215, 5374, 1236, 4846, 5326, 4299, 6880, 1499, 589, 4148, 8388, 14881, 7747, 2]
 // Exports: default
 
-// Module 14874 (VerificationListItem)
+// Module 14884 (VerificationListItem)
 import noop from "noop";
 import { View } from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -88,14 +88,14 @@ let result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_set
 
 export default function SettingsSecureFramesVerificationsScreen() {
   const tmp = callback();
-  let obj = userId(6878);
+  let obj = userId(6880);
   userId = obj.useSettingNavigationRoute().params.userId;
-  let obj1 = userId(1480);
+  let obj1 = userId(1499);
   const navigation = obj1.useNavigation();
   let items = [mergeGuildAvatar];
   const stateFromStores = userId(589).useStateFromStores(items, () => outer1_5.getUser(userId));
   const obj3 = userId(589);
-  const dependencyMap = navigation(4146).getFormattedName(stateFromStores, false);
+  const dependencyMap = navigation(4148).getFormattedName(stateFromStores, false);
   const layoutEffect = secureFramesUserVerifiedKeys.useLayoutEffect(() => {
     let obj = { title: null, headerTitle: null };
     let intl = userId(1236).intl;
@@ -109,8 +109,8 @@ export default function SettingsSecureFramesVerificationsScreen() {
     };
     navigation.setOptions(obj);
   });
-  const obj4 = navigation(4146);
-  secureFramesUserVerifiedKeys = userId(14871).useSecureFramesUserVerifiedKeys(userId);
+  const obj4 = navigation(4148);
+  secureFramesUserVerifiedKeys = userId(14881).useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];
   const memo = secureFramesUserVerifiedKeys.useMemo(() => {
@@ -135,6 +135,6 @@ export default function SettingsSecureFramesVerificationsScreen() {
   obj1 = { style: tmp.listFooter, children: null };
   obj1[1] = <ClearVerificationsListFooter userId={userId} />;
   obj[5] = <View style={tmp.listFooter}>{null}</View>;
-  obj[1] = jsx(userId(7745).FlashList, { keyExtractor, getItemType, renderItem, data: memo, contentContainerStyle: tmp.listContent, ListFooterComponent: null });
+  obj[1] = jsx(userId(7747).FlashList, { keyExtractor, getItemType, renderItem, data: memo, contentContainerStyle: tmp.listContent, ListFooterComponent: null });
   return <View keyExtractor={keyExtractor} getItemType={getItemType} renderItem={renderItem} data={memo} contentContainerStyle={tmp.listContent} ListFooterComponent={null} />;
 };

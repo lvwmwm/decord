@@ -1,10 +1,10 @@
-// Module ID: 12089
-// Function ID: 12090
+// Module ID: 12092
+// Function ID: 12093
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1480, 6008, 1236, 12090, 1297, 4299, 4714, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1499, 6010, 1236, 12093, 1297, 4299, 4714, 2]
 // Exports: default
 
-// Module 12089 (HubEmailConnectionWaitlist)
+// Module 12092 (HubEmailConnectionWaitlist)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export default function HubEmailConnectionWaitlist(school) {
   const onClose = school.onClose;
   let navigation;
   const tmp = createCacheKey();
-  let obj = onClose(1480);
+  let obj = onClose(1499);
   navigation = obj.useNavigation();
   const items = [navigation, onClose];
   const layoutEffect = React.useLayoutEffect(() => {
@@ -44,7 +44,7 @@ export default function HubEmailConnectionWaitlist(school) {
     });
   }, items);
   obj = { style: tmp.container, children: null };
-  obj = { source: navigation(12090), style: tmp.header };
+  obj = { source: navigation(12093), style: tmp.header };
   const items1 = [callback(closure_5, obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", children: null };
   let intl = onClose(1236).intl;

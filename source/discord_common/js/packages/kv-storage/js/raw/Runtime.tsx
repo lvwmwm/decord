@@ -1,9 +1,9 @@
-// Module ID: 1946
-// Function ID: 1947
+// Module ID: 1965
+// Function ID: 1966
 // Name: logger
-// Dependencies: [4, 1938, 2]
+// Dependencies: [4, 1957, 2]
 
-// Module 1946 (logger)
+// Module 1965 (logger)
 let c2 = 1000000;
 let closure_3 = "1" === process.env.KV_STORAGE_LOGGING;
 const logger = new require("log").Logger("Runtime");
@@ -100,7 +100,7 @@ prototype["initialize"] = function initialize() {
   let self = this;
   self = this;
   if (!this.initialized) {
-    const KV_RAW = self(1938).KV_RAW;
+    const KV_RAW = self(1957).KV_RAW;
     const obj = { status: null, response: null };
     obj[0] = function status(handle) {
       return self.onStatus(handle);

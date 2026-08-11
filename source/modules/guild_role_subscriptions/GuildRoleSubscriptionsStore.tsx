@@ -1,9 +1,9 @@
-// Module ID: 3923
-// Function ID: 3924
+// Module ID: 3942
+// Function ID: 3943
 // Name: makeGroupListingIndexSubscriptionListingTag
-// Dependencies: [3924, 3925, 589, 38, 709, 2]
+// Dependencies: [3943, 3944, 589, 38, 709, 2]
 
-// Module 3923 (makeGroupListingIndexSubscriptionListingTag)
+// Module 3942 (makeGroupListingIndexSubscriptionListingTag)
 import { DefaultCreatorMonetizationRestrictions as closure_2 } from "CreatorMonetizationRestrictions";
 import { Store } from "initialize";
 import set from "initialize";

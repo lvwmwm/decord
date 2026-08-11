@@ -1,10 +1,10 @@
-// Module ID: 15911
-// Function ID: 15912
+// Module ID: 15928
+// Function ID: 15929
 // Name: LinkedLobbyFormSection
-// Dependencies: [19, 1372, 676, 21, 1480, 5734, 5767, 1236, 5374, 1297, 1416, 4303, 712, 589, 7967, 4712, 15806, 15912, 2]
+// Dependencies: [19, 1391, 676, 21, 1499, 5734, 5767, 1236, 5374, 1297, 1435, 4303, 712, 589, 7969, 4712, 15823, 15929, 2]
 // Exports: default
 
-// Module 15911 (LinkedLobbyFormSection)
+// Module 15928 (LinkedLobbyFormSection)
 import "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelSettingsSections } from "ME";
@@ -17,7 +17,7 @@ const require = arg1;
 function LinkedLobbyFormSection(channel) {
   channel = channel.channel;
   let importDefault;
-  let obj = channel(1480);
+  let obj = channel(1499);
   importDefault = obj.useNavigation();
   let obj1 = channel(5734);
   const linkedLobby = channel.linkedLobby;
@@ -35,7 +35,7 @@ function LinkedLobbyFormSection(channel) {
     obj[0] = getOrFetchApplication.name;
     obj1 = { source: null, size: null };
     ({ id: obj7[0], icon: obj7[1] } = getOrFetchApplication);
-    obj1[0] = importDefault(1416).getApplicationIconSource({ id: null, icon: null });
+    obj1[0] = importDefault(1435).getApplicationIconSource({ id: null, icon: null });
     obj1[1] = tmp(1297).AvatarSizes.REFRESH_MEDIUM_32;
     obj[1] = callback(tmp(1297).Avatar, obj1);
     obj[3] = function onPress() {
@@ -44,7 +44,7 @@ function LinkedLobbyFormSection(channel) {
     obj[2] = callback(tmp(5374).TableRow, obj);
     tmp5 = callback(tmp(5767).TableRowGroup, obj);
     const obj2 = { id: null, icon: null };
-    const obj6 = importDefault(1416);
+    const obj6 = importDefault(1435);
   }
   return tmp5;
 }
@@ -61,7 +61,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
   let require;
   ({ channelId: require, canManageWebhooks, canUnlinkLobby } = arg0);
   let importDefault;
-  let obj = require(1480) /* useNavigation */;
+  let obj = require(1499) /* useNavigation */;
   importDefault = obj.useNavigation();
   let obj1 = require(589) /* initialize */;
   const items = [ensureGuildLoaded];
@@ -82,7 +82,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
       obj3[0] = intl.string(tmp(1236).t.jp25Id);
       const intl2 = tmp(1236).intl;
       obj3[1] = intl2.string(tmp(1236).t.mKIOkI);
-      obj3[2] = tmp6(tmp(15806).WebhookIcon, {});
+      obj3[2] = tmp6(tmp(15823).WebhookIcon, {});
       obj3[4] = function onPress() {
         return arr.push(outer1_4.WEBHOOKS);
       };
@@ -92,7 +92,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
       obj4[0] = intl3.string(tmp(1236).t.OrV60r);
       const intl4 = tmp(1236).intl;
       obj4[1] = intl4.string(tmp(1236).t.rQREJl);
-      obj4[2] = tmp6(tmp(15912).ChannelsFollowedIcon, {});
+      obj4[2] = tmp6(tmp(15929).ChannelsFollowedIcon, {});
       obj4[4] = function onPress() {
         return arr.push(outer1_4.CHANNELS_FOLLOWED);
       };
@@ -112,7 +112,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
     items2[1] = canUnlinkLobby;
     obj[2] = items2;
     obj[1] = closure_6(tmp(4712).Stack, obj);
-    tmp6Result = tmp6(tmp(7967).Form, obj);
+    tmp6Result = tmp6(tmp(7969).Form, obj);
   }
   return tmp6Result;
 };

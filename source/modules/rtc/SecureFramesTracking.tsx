@@ -1,10 +1,10 @@
-// Module ID: 9219
-// Function ID: 9220
+// Module ID: 9225
+// Function ID: 9226
 // Name: trackRTCPanelViewed
-// Dependencies: [1372, 676, 4498, 8789, 698, 2]
+// Dependencies: [1391, 676, 4498, 8795, 698, 2]
 // Exports: trackE2EECallVerificationCopied, trackE2EECallVerificationShareClicked, trackE2EEPublicKeyMismatch, trackE2EESettingsDeviceDelete, trackE2EESettingsUserDelete, trackE2EEStreamVerificationCopied, trackE2EEStreamVerificationShareClicked, trackE2EEUserVerificationCopied, trackE2EEUserVerificationFailed, trackE2EEUserVerificationShareClicked, trackE2EEUserVerificationViewed, trackE2EEUserVerified, trackRTCPanelViewed
 
-// Module 9219 (trackRTCPanelViewed)
+// Module 9225 (trackRTCPanelViewed)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 
@@ -34,7 +34,7 @@ export const trackE2EEUserVerificationViewed = function trackE2EEUserVerificatio
     guild_id = channel.guild_id;
   }
   obj[1] = guild_id;
-  const merged = Object.assign(require(8789) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
+  const merged = Object.assign(require(8795) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
   obj.trackWithMetadata(AnalyticEvents.E2EE_USER_VERIFICATION_VIEWED, obj);
 };
 export const trackE2EEUserVerified = function trackE2EEUserVerified(channelId) {
@@ -51,7 +51,7 @@ export const trackE2EEUserVerified = function trackE2EEUserVerified(channelId) {
   }
   obj[1] = guild_id;
   obj[2] = analyticsLocation;
-  const merged = Object.assign(require(8789) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId }));
+  const merged = Object.assign(require(8795) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId }));
   obj.trackWithMetadata(AnalyticEvents.E2EE_USER_VERIFIED, obj);
 };
 export const trackE2EEUserVerificationFailed = function trackE2EEUserVerificationFailed(channelId) {
@@ -70,7 +70,7 @@ export const trackE2EEUserVerificationFailed = function trackE2EEUserVerificatio
   obj[1] = guild_id;
   obj[2] = reason;
   obj[3] = "" + keyVersion;
-  const merged = Object.assign(require(8789) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId }));
+  const merged = Object.assign(require(8795) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId }));
   obj.trackWithMetadata(AnalyticEvents.E2EE_USER_VERIFICATION_FAILED, obj);
 };
 export const trackE2EEUserVerificationShareClicked = function trackE2EEUserVerificationShareClicked(userId) {
@@ -83,7 +83,7 @@ export const trackE2EEUserVerificationShareClicked = function trackE2EEUserVerif
     guild_id = channel.guild_id;
   }
   obj[1] = guild_id;
-  const merged = Object.assign(require(8789) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
+  const merged = Object.assign(require(8795) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
   obj.trackWithMetadata(AnalyticEvents.E2EE_USER_VERIFICATION_SHARE_CLICKED, obj);
 };
 export const trackE2EEUserVerificationCopied = function trackE2EEUserVerificationCopied(userId) {
@@ -96,7 +96,7 @@ export const trackE2EEUserVerificationCopied = function trackE2EEUserVerificatio
     guild_id = channel.guild_id;
   }
   obj[1] = guild_id;
-  const merged = Object.assign(require(8789) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
+  const merged = Object.assign(require(8795) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
   obj.trackWithMetadata(AnalyticEvents.E2EE_USER_VERIFICATION_CODE_COPIED, obj);
 };
 export const trackE2EECallVerificationShareClicked = function trackE2EECallVerificationShareClicked(channelId) {

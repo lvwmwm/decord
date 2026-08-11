@@ -1,9 +1,9 @@
-// Module ID: 16697
-// Function ID: 16698
+// Module ID: 16709
+// Function ID: 16710
 // Name: handleSetSection
-// Dependencies: [1412, 16698, 1965, 1964, 9022, 16692, 676, 16699, 11785, 4742, 1351, 506, 3934, 688, 1967, 12, 589, 709, 2]
+// Dependencies: [1431, 16710, 1984, 1983, 9028, 16704, 676, 16711, 11788, 4742, 1370, 506, 3953, 688, 1986, 12, 589, 709, 2]
 
-// Module 16697 (handleSetSection)
+// Module 16709 (handleSetSection)
 import { set } from "isValueEqual";
 import map from "map";
 import { isRoleEqual } from "GuildRoleRecordTypeTag";
@@ -215,7 +215,7 @@ let closure_33 = require("applyOverwrites").debounce(() => {
   if (c24) {
     if (null != user) {
       if (null != closure_25) {
-        let obj = importDefault(11785);
+        let obj = importDefault(11788);
         obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: false };
         obj[0] = store.getSortedRoles(user.id);
         obj[1] = closure_25;
@@ -368,7 +368,7 @@ Object.defineProperty(prototype, "formState", {
 prototype["getSortDeltas"] = function getSortDeltas() {
   if (null != user) {
     if (null != closure_25) {
-      let obj = importDefault(11785);
+      let obj = importDefault(11788);
       obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: false };
       obj[0] = store.getSortedRoles(user.id);
       obj[1] = closure_25;
@@ -414,7 +414,7 @@ obj = {
       let closure_0 = arg0;
       return closure_25.find((id) => id.id === closure_0);
     });
-    closure_25 = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    closure_25 = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     let c24 = true;
     callback();
   },
@@ -479,7 +479,7 @@ obj = {
     let tmp2 = null != found;
     if (tmp2) {
       let obj = { permissions: null };
-      obj[0] = importAll(3934).NONE;
+      obj[0] = importAll(3953).NONE;
       const index = items.indexOf(found);
       if (index >= 0) {
         obj = {};
@@ -604,7 +604,7 @@ obj = {
     if (null == found) {
       return false;
     } else {
-      const result = id(1967).extractColorStringsFromServerColors(colors);
+      const result = id(1986).extractColorStringsFromServerColors(colors);
       const value = map2.get(id);
       let tmp21 = null != value;
       if (tmp21) {
@@ -988,7 +988,7 @@ obj = {
         obj[0] = currentStyle;
         obj[1] = value.styleColors;
         const result = obj3.set(id, obj);
-        const result1 = id(1967).extractColorStringsFromServerColors(tmp19);
+        const result1 = id(1986).extractColorStringsFromServerColors(tmp19);
         const primary_color = tmp19.primary_color;
         obj = { color: null, colors: null, colorString: null, colorStrings: null };
         obj[0] = primary_color;

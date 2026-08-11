@@ -1,10 +1,10 @@
-// Module ID: 15240
-// Function ID: 15241
+// Module ID: 15249
+// Function ID: 15250
 // Name: useFavoritesGuildCategoryLongPress
-// Dependencies: [19, 676, 1894, 1236, 15241, 2]
+// Dependencies: [19, 676, 1913, 1236, 15250, 2]
 // Exports: default
 
-// Module 15240 (useFavoritesGuildCategoryLongPress)
+// Module 15249 (useFavoritesGuildCategoryLongPress)
 import noop from "noop";
 import { ChannelTypes } from "ME";
 
@@ -12,7 +12,7 @@ let require = arg1;
 const result = require("getFavoritesAwareGuildName").fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildCategoryLongPress.tsx");
 
 export default function useFavoritesGuildCategoryLongPress(getGuildId) {
-  let isFavoritesGuildIdResult = require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(getGuildId.getGuildId());
+  let isFavoritesGuildIdResult = require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(getGuildId.getGuildId());
   if (isFavoritesGuildIdResult) {
     isFavoritesGuildIdResult = getGuildId.type === ChannelTypes.GUILD_CATEGORY;
   }

@@ -1,10 +1,10 @@
-// Module ID: 15268
-// Function ID: 15269
+// Module ID: 15278
+// Function ID: 15279
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 1375, 21, 15269, 15270, 9711, 589, 5764, 5396, 1236, 5766, 11539, 4271, 15271, 5326, 8495, 4262, 2]
+// Dependencies: [19, 1394, 21, 15279, 15280, 9716, 589, 5764, 5396, 1236, 5766, 11542, 4271, 15281, 5326, 8501, 4262, 2]
 // Exports: openFavoritesGuildActionSheet
 
-// Module 15268 (FavoritesGuildActionSheet)
+// Module 15278 (FavoritesGuildActionSheet)
 import "noop";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import jsxProd from "jsxProd";
@@ -13,11 +13,11 @@ let c4;
 let c5;
 let require = arg1;
 function FavoritesGuildActionSheet() {
-  const tmp2 = importDefault(15269)();
+  const tmp2 = importDefault(15279)();
   const require = tmp2;
-  const tmp3 = importDefault(15270)();
+  const tmp3 = importDefault(15280)();
   importDefault = tmp3;
-  let obj = require(9711) /* useFavoritesAccess */;
+  let obj = require(9716) /* useFavoritesAccess */;
   let obj1 = require(589) /* initialize */;
   const items = [initializeFromUserSettings];
   const stateFromStores = obj1.useStateFromStores(items, () => initializeFromUserSettings.hasStoredFavorites());
@@ -35,11 +35,11 @@ function FavoritesGuildActionSheet() {
       const intl2 = tmp4(1236).intl;
       obj2[0] = intl2.string(tmp4(1236).t["0dOFq+"]);
       const obj3 = { IconComponent: null };
-      obj3[0] = tmp4(11539).ArrowsUpDownIcon;
+      obj3[0] = tmp4(11542).ArrowsUpDownIcon;
       obj2[1] = tmp7(tmp4(5766).ActionSheetRow.Icon, obj3);
       obj2[2] = function onPress() {
         tmp3(4271).hideActionSheet(closure_6);
-        tmp3(15271)();
+        tmp3(15281)();
       };
       obj1[1] = tmp7(tmp4(5766).ActionSheetRow, obj2);
       tmp7Result = tmp7(tmp4(5766).ActionSheetRow.Group, obj1);
@@ -50,7 +50,7 @@ function FavoritesGuildActionSheet() {
   if (tmp2.isPreview) {
     let EyeSlashIcon = tmp4(5326).XSmallIcon;
   } else {
-    EyeSlashIcon = tmp4(8495).EyeSlashIcon;
+    EyeSlashIcon = tmp4(8501).EyeSlashIcon;
   }
   obj4[2] = callback(require(5766) /* ActionSheetRowIcon */.ActionSheetRow.Icon, { IconComponent: EyeSlashIcon });
   let str = "danger";

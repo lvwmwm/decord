@@ -1,10 +1,10 @@
-// Module ID: 14476
-// Function ID: 14477
+// Module ID: 14484
+// Function ID: 14485
 // Name: EmojiIcon
-// Dependencies: [19, 21, 14477, 5268, 8688, 5360, 1416, 2]
+// Dependencies: [19, 21, 14485, 5268, 8694, 5360, 1435, 2]
 // Exports: default
 
-// Module 14476 (EmojiIcon)
+// Module 14484 (EmojiIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -29,7 +29,7 @@ export default function EmojiIcon(size) {
   if (lineHeight === undefined) {
     lineHeight = num + 4;
   }
-  let obj = require(14477) /* useEmojiByIdOrName */;
+  let obj = require(14485) /* useEmojiByIdOrName */;
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, id);
   if (null == emojiByIdOrName) {
     let tmp4 = null;
@@ -39,7 +39,7 @@ export default function EmojiIcon(size) {
       obj[0] = num;
       obj[1] = num;
       obj[1] = obj;
-      obj[2] = importDefault(8688);
+      obj[2] = importDefault(8694);
       tmp4 = jsx(importDefault(5268), { width: null, height: null });
       const tmp7 = importDefault(5268);
     }
@@ -74,8 +74,8 @@ export default function EmojiIcon(size) {
       const obj4 = { id: null, animated: null, size: null };
       ({ id: obj4[0], animated: obj4[1] } = emojiByIdOrName);
       obj4[2] = num;
-      let url = tmp9(1416).getEmojiURL(obj4);
-      const tmp9Result = tmp9(1416);
+      let url = tmp9(1435).getEmojiURL(obj4);
+      const tmp9Result = tmp9(1435);
     } else {
       url = emojiByIdOrName.url;
     }

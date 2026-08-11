@@ -1,13 +1,13 @@
 // Module ID: 4697
 // Function ID: 4698
 // Name: AccessibilityView
-// Dependencies: [19, 17, 21, 4698, 4036, 2]
+// Dependencies: [19, 17, 21, 4698, 4042, 2]
 
 // Module 4697 (AccessibilityView)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 
 const forwardRefResult = require("noop").forwardRef((accessibilityViewIsModal, ref) => {
   let nativeID;
@@ -37,7 +37,7 @@ const forwardRefResult = require("noop").forwardRef((accessibilityViewIsModal, r
   const merged1 = Object.assign(merged);
   return <View ref={arg1} nativeID={nativeID} collapsable={null} onAccessibilityEscape={null} accessibilityViewIsModal={null} />;
 });
-const animatedComponent = require("module_4036").createAnimatedComponent(forwardRefResult);
+const animatedComponent = require("module_4042").createAnimatedComponent(forwardRefResult);
 const result = require("jsxProd").fileFinishedImporting("design/components/AccessibilityView/AccessibilityView.native.tsx");
 
 export const AccessibilityView = forwardRefResult;

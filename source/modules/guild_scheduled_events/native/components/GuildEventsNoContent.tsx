@@ -1,10 +1,10 @@
-// Module ID: 9042
-// Function ID: 9043
+// Module ID: 9048
+// Function ID: 9049
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 3929, 676, 505, 21, 4303, 5236, 712, 589, 7787, 9043, 9044, 4299, 1236, 9021, 2]
+// Dependencies: [19, 17, 3948, 676, 505, 21, 4303, 5236, 712, 589, 7789, 9049, 9050, 4299, 1236, 9027, 2]
 // Exports: default
 
-// Module 9042 (GuildEventsNoContent)
+// Module 9048 (GuildEventsNoContent)
 import "noop";
 import { View } from "get ActivityIndicator";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -40,9 +40,9 @@ export default function GuildEventsNoContent(guild) {
   let stateFromStores = obj.useStateFromStores(items, () => outer1_4.can(outer1_6.MANAGE_ROLES, guild), items1);
   obj = { style: tmp.container, children: null };
   obj = { icon: null, IconComponent: null };
-  obj[0] = onClose(9043);
-  obj[1] = guild(9044).CalendarIcon;
-  const items2 = [callback(onClose(7787), obj), , , ];
+  obj[0] = onClose(9049);
+  obj[1] = guild(9050).CalendarIcon;
+  const items2 = [callback(onClose(7789), obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = guild(1236).intl;
   obj1[4] = intl.string(guild(1236).t["WgZ+3D"]);

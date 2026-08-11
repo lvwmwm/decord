@@ -1,7 +1,7 @@
 // Module ID: 5872
 // Function ID: 5873
 // Name: computeHasRoleSubscriptionsInGuild
-// Dependencies: [1218, 1971, 1964, 1891, 676, 589, 2]
+// Dependencies: [1218, 1990, 1983, 1910, 676, 589, 2]
 // Exports: default
 
 // Module 5872 (computeHasRoleSubscriptionsInGuild)

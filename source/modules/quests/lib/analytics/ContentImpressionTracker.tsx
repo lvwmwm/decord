@@ -1,10 +1,10 @@
-// Module ID: 10490
-// Function ID: 10491
+// Module ID: 10495
+// Function ID: 10496
 // Name: set
-// Dependencies: [5, 19, 7160, 9520, 676, 21, 514, 9516, 7158, 7188, 7189, 7187, 500, 7137, 9518, 10462, 9517, 9521, 7166, 7177, 7194, 7061, 7066, 10489, 589, 4730, 2]
+// Dependencies: [5, 19, 7161, 9526, 676, 21, 514, 9522, 7159, 7189, 7190, 7188, 500, 7138, 9524, 10467, 9523, 9527, 7167, 7178, 7195, 7064, 7069, 10494, 589, 4730, 2]
 // Exports: QuestContentImpressionTracker
 
-// Module 10490 (set)
+// Module 10495 (set)
 import jsxProd from "jsxProd";
 import importAllResult from "trackQuestEvent";
 import initializeState from "initializeState";
@@ -86,11 +86,11 @@ class QuestContentImpression {
               closure_0 = undefined;
               obj3 = undefined;
               obj4 = undefined;
-              const obj10 = outer1_0(7189);
+              const obj10 = outer1_0(7190);
               obj4 = 1;
               c3 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = obj10.getAdUser(outer1_0(7187).getQuestContentName(outer1_0.questContent));
+              obj1[0] = obj10.getAdUser(outer1_0(7188).getQuestContentName(outer1_0.questContent));
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -128,8 +128,8 @@ class QuestContentImpression {
               }
             }
             obj4[4] = advertisingId1;
-            let merged = Object.assign(outer1_1(7137)());
-            obj2 = outer1_0(9518);
+            let merged = Object.assign(outer1_1(7138)());
+            obj2 = outer1_0(9524);
             let merged1 = Object.assign(obj2.getBrandSafetyContext(outer1_0.questContent));
             const adContentIds = outer1_0.entity.adContentIds;
             const item = adContentIds.forEach((adCreativeId) => {

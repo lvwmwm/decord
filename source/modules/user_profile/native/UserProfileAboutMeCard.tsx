@@ -1,10 +1,10 @@
-// Module ID: 9530
-// Function ID: 9531
+// Module ID: 9536
+// Function ID: 9537
 // Name: Heading
-// Dependencies: [19, 17, 1975, 1971, 1891, 5776, 676, 1479, 21, 4303, 4005, 712, 4299, 1236, 9531, 589, 5124, 11, 9533, 5779, 9535, 1297, 8932, 5728, 8788, 9536, 8783, 4271, 4159, 1222, 5821, 4166, 1607, 9542, 4714, 5775, 2]
+// Dependencies: [19, 17, 1994, 1990, 1910, 5776, 676, 1498, 21, 4303, 4024, 712, 4299, 1236, 9537, 589, 5124, 11, 9539, 5779, 9541, 1297, 8938, 5728, 8794, 9542, 8789, 4271, 4159, 1222, 5821, 4166, 1626, 9548, 4714, 5775, 2]
 // Exports: default
 
-// Module 9530 (Heading)
+// Module 9536 (Heading)
 import GuildIconSizes from "GuildIconSizes";
 import { View } from "DISCORD_EPOCH";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,7 +34,7 @@ function Heading(children) {
     tmp = closure_14;
   }
   ({ headingVariant, headingSpacing } = tmp);
-  let variant = require(4005) /* map */.useToken(importDefault(712).modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
+  let variant = require(4024) /* map */.useToken(importDefault(712).modules.mobile.USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE);
   if (variant == null) {
     variant = headingVariant;
   }
@@ -93,7 +93,7 @@ function Bio(arg0) {
       obj[1] = userId;
       obj[2] = tmp.textVariant;
       obj[3] = lineClamp;
-      items[1] = callback(importDefault(9531), obj);
+      items[1] = callback(importDefault(9537), obj);
       obj[0] = items;
       tmp4 = callback2(View, obj);
     }
@@ -151,7 +151,7 @@ function MemberJoinDates(userId) {
   const items3 = [callback(Heading, obj), ];
   obj = { style: items4, children: null };
   items4 = [callback3().memberJoinDates, { columnGap }];
-  obj1 = { themeType, icon: callback(tmp4(9533).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  obj1 = { themeType, icon: callback(tmp4(9539).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
   const intl2 = tmp4(1236).intl;
   obj1[2] = intl2.formatToPlainString(userId(1236).t["9t7w53"], { date: createdAtDate });
   obj1[3] = createdAtDate;
@@ -196,7 +196,7 @@ function FriendsSinceDate(themeType) {
   if (tmp == null) {
     tmp = closure_14;
   }
-  let obj = require(9535) /* useFriendsSinceDate */;
+  let obj = require(9541) /* useFriendsSinceDate */;
   const friendsSinceDate = obj.useFriendsSinceDate(themeType.userId);
   let tmp6 = null;
   if (null != friendsSinceDate) {

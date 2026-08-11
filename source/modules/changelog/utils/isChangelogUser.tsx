@@ -1,10 +1,10 @@
-// Module ID: 1958
-// Function ID: 1959
+// Module ID: 1977
+// Function ID: 1978
 // Name: isChangelogUser
-// Dependencies: [1959, 2]
+// Dependencies: [1978, 2]
 // Exports: default
 
-// Module 1958 (isChangelogUser)
+// Module 1977 (isChangelogUser)
 import { SYSTEM_UPDATES_USER_ID } from "CHANGELOG_MODAL_KEY";
 
 const result = require("set").fileFinishedImporting("modules/changelog/utils/isChangelogUser.tsx");

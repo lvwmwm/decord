@@ -1,10 +1,10 @@
-// Module ID: 8458
-// Function ID: 8459
+// Module ID: 8464
+// Function ID: 8465
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 1366, 1903, 676, 21, 4303, 1480, 589, 38, 8459, 8451, 6027, 4299, 1236, 4714, 5827, 4002, 2]
+// Dependencies: [32, 19, 17, 1385, 1922, 676, 21, 4303, 1499, 589, 38, 8465, 8457, 6029, 4299, 1236, 4714, 5827, 4021, 2]
 // Exports: default
 
-// Module 8458 (ResendEmail)
+// Module 8464 (ResendEmail)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "handleLogout";
@@ -25,7 +25,7 @@ export default function ResendEmail() {
   let dependencyMap;
   let tmp10;
   let tmp = callback3();
-  let obj = navigation(1480);
+  let obj = navigation(1499);
   navigation = obj.useNavigation();
   let obj1 = navigation(589);
   const items = [mergeGuildAvatar];
@@ -38,7 +38,7 @@ export default function ResendEmail() {
   let obj2 = navigation(589);
   const items1 = [handleRequiredAction];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => action.getAction());
-  let obj3 = verified(8459);
+  let obj3 = verified(8465);
   const result = obj3.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = callback(React.useState(false), 2);
@@ -62,7 +62,7 @@ export default function ResendEmail() {
   callback = React.useCallback(() => {
     navigation.push(outer1_8.ENTER_EMAIL);
   }, items3);
-  const items4 = [callback2(navigation(6027).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const items4 = [callback2(navigation(6029).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = navigation(1236).intl;
   obj[4] = intl.string(navigation(1236).t.fUtddV);

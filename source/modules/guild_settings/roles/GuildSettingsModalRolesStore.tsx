@@ -1,9 +1,9 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16703
+// Function ID: 16704
 // Name: handleGuildRoleCreateOrUpdate
-// Dependencies: [1964, 1891, 676, 11785, 4153, 1236, 506, 589, 709, 2]
+// Dependencies: [1983, 1910, 676, 11788, 1363, 1236, 506, 589, 709, 2]
 
-// Module 16691 (handleGuildRoleCreateOrUpdate)
+// Module 16703 (handleGuildRoleCreateOrUpdate)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { FormStates } from "ME";
@@ -41,7 +41,7 @@ Object.defineProperty(prototype, "submitting", {
 prototype["getUpdates"] = function getUpdates() {
   if (null != c9) {
     if (null != _null2) {
-      let obj = importDefault(11785);
+      let obj = importDefault(11788);
       obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: false };
       obj[0] = store.getSortedRoles(_null2.id);
       obj[1] = store.getManyRoles(_null2.id, c9);
@@ -110,17 +110,17 @@ const guildSettingsModalRolesStore = new GuildSettingsModalRolesStore(require("d
     if (null == _null) {
       return false;
     } else {
-      const moveItemFromToResult = importDefault(11785).moveItemFromTo(_null, from, to);
+      const moveItemFromToResult = importDefault(11788).moveItemFromTo(_null, from, to);
       _null = moveItemFromToResult;
       if (moveItemFromToResult[from] !== _null[from]) {
-        const AccessibilityAnnouncer2 = require(4153) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+        const AccessibilityAnnouncer2 = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
         const intl2 = require(1236) /* getSystemLocale */.intl;
         const obj = { from: null, to: null };
         obj[0] = from + 1;
         obj[1] = to + 1;
         AccessibilityAnnouncer2.announce(intl2.formatToPlainString(require(1236) /* getSystemLocale */.t["+tmElp"], obj));
       } else {
-        const AccessibilityAnnouncer = require(4153) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+        const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
         const intl = require(1236) /* getSystemLocale */.intl;
         AccessibilityAnnouncer.announce(intl.string(require(1236) /* getSystemLocale */.t.WaxXjc));
       }

@@ -1,11 +1,11 @@
-// Module ID: 13016
-// Function ID: 13017
+// Module ID: 13020
+// Function ID: 13021
 // Name: initialize
-// Dependencies: [1218, 3938, 687, 11, 589, 709, 2]
+// Dependencies: [1218, 3957, 687, 11, 589, 709, 2]
 
-// Module 13016 (initialize)
+// Module 13020 (initialize)
 import fetchFingerprint from "fetchFingerprint";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { Store } from "initialize";
 
 let closure_4 = 180 * require("set").Millis.DAY;
@@ -14,7 +14,7 @@ class PremiumPromoStore extends Store {
 }
 const prototype = PremiumPromoStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(upsertRelationship, fetchFingerprint);
+  this.waitFor(markAllUserIdListsStale, fetchFingerprint);
 };
 prototype["isEligible"] = function isEligible() {
   return c5;

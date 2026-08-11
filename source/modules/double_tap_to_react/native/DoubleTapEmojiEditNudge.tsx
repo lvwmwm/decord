@@ -1,10 +1,10 @@
-// Module ID: 11131
-// Function ID: 11132
+// Module ID: 11136
+// Function ID: 11137
 // Name: DoubleTapEmojiEditNudgeInner
-// Dependencies: [5, 19, 17, 4295, 1475, 676, 1906, 21, 4303, 712, 3974, 8076, 1477, 589, 1416, 8637, 698, 8650, 4299, 1236, 5360, 4846, 2]
+// Dependencies: [5, 19, 17, 4295, 1494, 676, 1925, 21, 4303, 712, 3993, 8078, 1496, 589, 1435, 8643, 698, 8656, 4299, 1236, 5360, 4846, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 11131 (DoubleTapEmojiEditNudgeInner)
+// Module 11136 (DoubleTapEmojiEditNudgeInner)
 import ME from "ME";
 import getSystemLocale from "getSystemLocale";
 import { View } from "ToastEmoji";
@@ -26,7 +26,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
   const emoji = location.emoji;
   let dependencyMap;
   let stateFromStores;
-  let obj = _location(1477);
+  let obj = _location(1496);
   dependencyMap = obj.useAppEntryKey();
   let obj1 = _location(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -36,7 +36,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
   const items2 = [_location];
   const memo = React.useMemo(() => {
     if (null != emoji.id) {
-      let obj = emoji(1416);
+      let obj = emoji(1435);
       obj = { id: null, size: null, animated: null };
       obj[0] = tmp.id;
       obj[1] = outer1_9;
@@ -53,7 +53,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
   }, items1);
   obj = { style: tmp5.doubleTapEmojiEditNudgeContainer, children: null };
   callback = React.useCallback(() => {
-    let obj = _location(8637);
+    let obj = _location(8643);
     obj = { pickerIntention: outer1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
     let closure_0 = stateFromStores((arg0) => {
       let closure_0 = arg0;
@@ -179,7 +179,7 @@ let result = set.fileFinishedImporting("modules/double_tap_to_react/native/Doubl
 export const DoubleTapEmojiEditNudge = function DoubleTapEmojiEditNudge(location) {
   const _location = location.location;
   let setting;
-  const DoubleTapReactionEmoji = setting(3974).DoubleTapReactionEmoji;
+  const DoubleTapReactionEmoji = setting(3993).DoubleTapReactionEmoji;
   setting = DoubleTapReactionEmoji.useSetting();
   const items = [setting];
   const memo = React.useMemo(() => setting(outer1_2[11]).disambiguatedEmojiFromSettingsValue(setting), items);

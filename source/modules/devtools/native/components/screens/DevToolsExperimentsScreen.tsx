@@ -1,11 +1,11 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 11216
+// Function ID: 11217
 // Name: UserExperimentDebugView
-// Dependencies: [32, 19, 17, 4217, 1218, 1891, 4218, 21, 4303, 712, 10457, 10458, 5369, 8523, 11212, 12, 1297, 8827, 5992, 8526, 8205, 4225, 4271, 5374, 4299, 513, 11209, 5767, 8203, 5756, 4002, 4264, 5397, 5396, 2]
+// Dependencies: [32, 19, 17, 4217, 1218, 1910, 4218, 21, 4303, 712, 10462, 10463, 5369, 8529, 11217, 12, 1297, 8833, 5994, 8532, 8209, 4225, 4271, 5374, 4299, 513, 11214, 5767, 8207, 5756, 4021, 4264, 5397, 5396, 2]
 
-// Module 11211 (UserExperimentDebugView)
+// Module 11216 (UserExperimentDebugView)
 import Background from "Background";
-import importAllResult from "module_8526";
+import importAllResult from "module_8532";
 import { View } from "getNoResultsSource";
 import getHash from "getHash";
 import fetchFingerprint from "fetchFingerprint";
@@ -37,9 +37,9 @@ function UserExperimentDebugView(id) {
       tmp7 = maybeExtractIdResult;
     }
   }
-  let obj1 = require(11209) /* useExperimentAssignment */;
+  let obj1 = require(11214) /* useExperimentAssignment */;
   const experimentAssignment = obj1.useExperimentAssignment(experiment, tmp7);
-  let obj2 = require(11209) /* useExperimentAssignment */;
+  let obj2 = require(11214) /* useExperimentAssignment */;
   const experimentServerAssignment = obj2.useExperimentServerAssignment(experiment, tmp7);
   let obj3 = importDefault(12);
   const tmp = callback3();

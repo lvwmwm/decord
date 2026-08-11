@@ -1,10 +1,10 @@
-// Module ID: 7947
-// Function ID: 7948
+// Module ID: 7949
+// Function ID: 7950
 // Name: UnknownGameIcon
-// Dependencies: [19, 21, 712, 4004, 7948, 2]
+// Dependencies: [19, 21, 712, 4023, 7950, 2]
 // Exports: UnknownGameIcon
 
-// Module 7947 (UnknownGameIcon)
+// Module 7949 (UnknownGameIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const UnknownGameIcon = function UnknownGameIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7948) /* registerAsset */;
+  obj[0] = require(7950) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

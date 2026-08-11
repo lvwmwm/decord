@@ -1,9 +1,9 @@
-// Module ID: 1378
-// Function ID: 1379
+// Module ID: 1397
+// Function ID: 1398
 // Name: GUILD_EVENT_MAX_NAME_LENGTH
 // Dependencies: [676, 687, 2]
 
-// Module 1378 (GUILD_EVENT_MAX_NAME_LENGTH)
+// Module 1397 (GUILD_EVENT_MAX_NAME_LENGTH)
 import { ChannelTypes } from "ME";
 import set from "set";
 

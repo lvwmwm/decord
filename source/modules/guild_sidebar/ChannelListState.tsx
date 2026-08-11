@@ -1,9 +1,9 @@
-// Module ID: 6987
-// Function ID: 6988
+// Module ID: 6990
+// Function ID: 6991
 // Name: computeSubtitle
-// Dependencies: [1371, 4341, 6988, 1962, 6985, 1963, 6989, 6990, 6991, 5223, 3931, 1376, 5260, 1372, 6986, 1891, 3929, 4315, 1960, 4499, 4319, 4376, 6992, 6993, 676, 1379, 505, 12, 6994, 5844, 5907, 5886, 6995, 38, 1351, 11, 4487, 2]
+// Dependencies: [1390, 4341, 6991, 1981, 6988, 1982, 6992, 6993, 6994, 5223, 3950, 1395, 5260, 1391, 6989, 1910, 3948, 4315, 1979, 4499, 4319, 4376, 6995, 6996, 676, 1398, 505, 12, 6997, 5844, 5907, 5886, 6998, 38, 1370, 11, 4487, 2]
 
-// Module 6987 (computeSubtitle)
+// Module 6990 (computeSubtitle)
 import participantFromServer from "participantFromServer";
 import addApplication from "addApplication";
 import handleConnectionReset from "handleConnectionReset";
@@ -74,7 +74,7 @@ function computeSubtitle(type) {
         }
         return name;
       });
-      const found = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+      const found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
       let tmp16 = null;
       if (found.length > 0) {
         obj1 = { type: "embedded-activities", name: null };

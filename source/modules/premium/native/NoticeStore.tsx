@@ -1,9 +1,9 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 12989
+// Function ID: 12990
 // Name: clearDismissUntil
-// Dependencies: [6914, 1905, 676, 595, 3883, 589, 709, 2]
+// Dependencies: [6916, 1924, 676, 595, 3902, 589, 709, 2]
 
-// Module 12985 (clearDismissUntil)
+// Module 12989 (clearDismissUntil)
 import emitChanges from "emitChanges";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";
 import { NoticeTypes } from "ME";
@@ -23,10 +23,10 @@ function isNoticeDismissed(PREMIUM_TIER_0_TRIAL_ENDING) {
       const value = Storage.get(`${tmp10[PREMIUM_TIER_0_TRIAL_ENDING]}-untilAtLeast`);
       let tmp4 = null;
       if (null != value) {
-        tmp4 = importDefault(3883)(value);
+        tmp4 = importDefault(3902)(value);
       }
       if (null != tmp4) {
-        return tmp4.isAfter(importDefault(3883)());
+        return tmp4.isAfter(importDefault(3902)());
       }
     }
     let tmp6 = null != tmp11;

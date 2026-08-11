@@ -1,9 +1,9 @@
-// Module ID: 8520
-// Function ID: 8521
+// Module ID: 8526
+// Function ID: 8527
 // Name: CountryCodeSelector
-// Dependencies: [19, 17, 21, 4303, 712, 4846, 1236, 4299, 8490, 8466, 8467, 8469, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4846, 1236, 4299, 8496, 8472, 8473, 8475, 2]
 
-// Module 8520 (CountryCodeSelector)
+// Module 8526 (CountryCodeSelector)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

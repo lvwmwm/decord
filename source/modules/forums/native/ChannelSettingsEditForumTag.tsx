@@ -1,10 +1,10 @@
-// Module ID: 15928
-// Function ID: 15929
+// Module ID: 15945
+// Function ID: 15946
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 5176, 1372, 1906, 21, 4303, 712, 1480, 589, 4299, 1236, 8406, 6008, 4712, 5767, 5374, 4846, 8637, 5360, 1416, 7655, 1297, 5996, 5768, 4643, 2]
+// Dependencies: [32, 19, 17, 5176, 1391, 1925, 21, 4303, 712, 1499, 589, 4299, 1236, 8412, 6010, 4712, 5767, 5374, 4846, 8643, 5360, 1435, 7657, 1297, 5998, 5768, 4643, 2]
 // Exports: default
 
-// Module 15928 (ChannelSettingsEditForumTag)
+// Module 15945 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import { View } from "TableRowInner";
@@ -72,7 +72,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
   const tmp = createCacheKey();
   dependencyMap = tmp;
   callback = tmp2;
-  let obj = channelId(1480);
+  let obj = channelId(1499);
   navigation = obj.useNavigation();
   let obj1 = navigation;
   let tmp6 = null;
@@ -235,7 +235,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "Promise" });
+      setOptions({ headerRight: "r" });
     }
   }, items5);
   obj = { style: tmp.container, children: null };
@@ -270,7 +270,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
           usableCustomEmojiById(null);
           callback("");
         };
-        obj5[2] = tmp27(tmp3(5996).CircleXIcon, { size: "xs" });
+        obj5[2] = tmp27(tmp3(5998).CircleXIcon, { size: "xs" });
         let tmp27Result = tmp27(tmp3(4846).PressableOpacity, obj5);
       } else {
         tmp27Result = null;
@@ -352,8 +352,8 @@ export default function ChannelSettingsEditForumTag(channelId) {
       const obj15 = { id: null, animated: null, size: null };
       ({ id: obj11[0], animated: obj11[1] } = stateFromStores);
       obj15[2] = closure_8;
-      emojiURL = tmp31(1416).getEmojiURL(obj15);
-      const tmp31Result = tmp31(1416);
+      emojiURL = tmp31(1435).getEmojiURL(obj15);
+      const tmp31Result = tmp31(1435);
     }
     obj14[2] = emojiURL;
     let str2;
@@ -368,5 +368,5 @@ export default function ChannelSettingsEditForumTag(channelId) {
     tmp31 = tag;
     const tmp32 = tag(5360);
   }
-  tmp27Result1 = tmp27(tmp3(7655).ReactionIcon, {});
+  tmp27Result1 = tmp27(tmp3(7657).ReactionIcon, {});
 };

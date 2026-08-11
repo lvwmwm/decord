@@ -1,10 +1,10 @@
-// Module ID: 8470
-// Function ID: 8471
+// Module ID: 8476
+// Function ID: 8477
 // Name: LinkButton
-// Dependencies: [5, 32, 19, 17, 8471, 1218, 676, 21, 4303, 4846, 4299, 4643, 1236, 500, 4870, 8472, 1480, 589, 1483, 5827, 8473, 4644, 8474, 8475, 8476, 4202, 8477, 8481, 8482, 8484, 8478, 4714, 8485, 1605, 8487, 8489, 7790, 8495, 8497, 8499, 4712, 8506, 8469, 2]
+// Dependencies: [5, 32, 19, 17, 8477, 1218, 676, 21, 4303, 4846, 4299, 4643, 1236, 500, 4870, 8478, 1499, 589, 1502, 5827, 8479, 4644, 8480, 8481, 8482, 4202, 8483, 8487, 8488, 8490, 8484, 4714, 8491, 1624, 8493, 8495, 7792, 8501, 8503, 8505, 4712, 8512, 8475, 2]
 // Exports: default
 
-// Module 8470 (LinkButton)
+// Module 8476 (LinkButton)
 import fetchFingerprint from "fetchFingerprint";
 import KeyIcon from "KeyIcon";
 import handleLogout from "handleLogout";

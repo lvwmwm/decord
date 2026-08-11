@@ -1,10 +1,10 @@
-// Module ID: 1605
-// Function ID: 1606
+// Module ID: 1624
+// Function ID: 1625
 // Name: isMetaQuest
-// Dependencies: [670, 1606, 2]
+// Dependencies: [670, 1625, 2]
 // Exports: isMetaQuest, isQuestRelease
 
-// Module 1605 (isMetaQuest)
+// Module 1624 (isMetaQuest)
 import importDefaultResult from "enforcing";
 
 const isMetaQuestResult = require("enforcing").isMetaQuest();
@@ -14,7 +14,7 @@ export const isMetaQuest = function isMetaQuest() {
   return importDefault(670).isMetaQuest();
 };
 export const isQuestRelease = function isQuestRelease() {
-  const constants = importAll(1606).getConstants();
+  const constants = importAll(1625).getConstants();
   let flag;
   if (constants != null) {
     const ReleaseChannel = constants.ReleaseChannel;

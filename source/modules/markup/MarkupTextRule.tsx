@@ -1,7 +1,7 @@
 // Module ID: 4743
 // Function ID: 4744
 // Name: textRegexp
-// Dependencies: [4000, 2]
+// Dependencies: [4019, 2]
 // Exports: textMarkupPatternWithExclusions
 
 // Module 4743 (textRegexp)

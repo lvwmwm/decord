@@ -1,7 +1,7 @@
 // Module ID: 4255
 // Function ID: 4256
 // Name: CheckmarkLargeIcon
-// Dependencies: [19, 21, 712, 4004, 4256, 2]
+// Dependencies: [19, 21, 712, 4023, 4256, 2]
 // Exports: CheckmarkLargeIcon
 
 // Module 4255 (CheckmarkLargeIcon)
@@ -22,5 +22,5 @@ export const CheckmarkLargeIcon = function CheckmarkLargeIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,7 +1,7 @@
 // Module ID: 4602
 // Function ID: 4603
 // Name: result
-// Dependencies: [1405, 4587, 574, 564]
+// Dependencies: [1424, 4587, 574, 564]
 
 // Module 4602 (result)
 import hasPropertyDescriptors from "hasPropertyDescriptors";

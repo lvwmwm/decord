@@ -1,10 +1,10 @@
-// Module ID: 14838
-// Function ID: 14839
+// Module ID: 14848
+// Function ID: 14849
 // Name: SkeletonLoading
-// Dependencies: [19, 17, 7001, 678, 676, 21, 9344, 4303, 712, 14324, 14839, 1480, 9347, 589, 10461, 4239, 12172, 4005, 4151, 14316, 14318, 5728, 5748, 14840, 698, 4153, 14842, 14843, 12175, 4725, 4299, 4714, 1236, 11166, 5166, 4846, 5778, 5715, 14844, 7745, 2]
+// Dependencies: [19, 17, 7004, 678, 676, 21, 9350, 4303, 712, 14332, 14849, 1499, 9353, 589, 10466, 4239, 12175, 4024, 4152, 14324, 14326, 5728, 5748, 14850, 698, 1363, 14852, 14853, 12178, 4725, 4299, 4714, 1236, 11171, 5166, 4846, 5778, 5715, 14854, 7747, 2]
 // Exports: default
 
-// Module 14838 (SkeletonLoading)
+// Module 14848 (SkeletonLoading)
 import useGetProductsFromSkus from "useGetProductsFromSkus";
 import get_ActivityIndicator from "map";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -26,8 +26,8 @@ function SkeletonLoading(accessibilityLabel) {
   let obj = { style: createCacheKey().skeletonContainer, accessibilityRole: "list", accessibilityLabel: accessibilityLabel.accessibilityLabel, accessibilityState: { busy: true }, accessible: true, children: null };
   obj[5] = Array.from({ length: 10 }).map((arg0, arg1) => {
     const obj = { width: null };
-    obj[0] = callback(9344).COLLECTIBLES_SHOP_CARD_WIDTH;
-    return callback3(callback2(14324), obj, arg1);
+    obj[0] = callback(9350).COLLECTIBLES_SHOP_CARD_WIDTH;
+    return callback3(callback2(14332), obj, arg1);
   });
   return callback(closure_5, obj);
 }
@@ -60,10 +60,10 @@ export default function _default(heroBlock) {
   let stateFromStores;
   let c5;
   let c6;
-  let obj = heroBlock(14839);
-  let obj1 = heroBlock(1480);
+  let obj = heroBlock(14849);
+  let obj1 = heroBlock(1499);
   dependencyMap = obj1.useNavigation();
-  let obj2 = heroBlock(9347);
+  let obj2 = heroBlock(9353);
   React = obj2.useCollectiblesAnalyticsContext();
   let heroBannerUrl = heroBlock.mobileHeroUrl;
   if (heroBannerUrl == null) {
@@ -73,25 +73,25 @@ export default function _default(heroBlock) {
   let tmpResult = tmp(589);
   const items = [c6];
   stateFromStores = tmpResult.useStateFromStores(items, () => _undefined2.getCategory(heroBlock.categorySkuId));
-  tmpResult = tmp(10461);
+  tmpResult = tmp(10466);
   let isEligibleForQuests = tmpResult.getIsEligibleForQuests();
   const tmp7 = preferVCPrice(4239)();
   const tmp8 = createCacheKey();
-  const tmpResult1 = heroBlock(12172);
-  const token = heroBlock(4005).useToken(preferVCPrice(712).colors.BACKGROUND_BASE_LOW);
-  const tmpResult2 = heroBlock(4005);
-  const tmpResult3 = heroBlock(4151);
-  const tmpResult4 = heroBlock(4151);
-  const hexToRgbaStringResult = tmpResult3.hexToRgbaString(heroBlock(4151).hexWithOpacity(token, 0));
-  const token1 = heroBlock(4005).useToken(preferVCPrice(712).colors.BACKGROUND_BASE_LOWEST);
-  const tmp12 = preferVCPrice(14316)();
+  const tmpResult1 = heroBlock(12175);
+  const token = heroBlock(4024).useToken(preferVCPrice(712).colors.BACKGROUND_BASE_LOW);
+  const tmpResult2 = heroBlock(4024);
+  const tmpResult3 = heroBlock(4152);
+  const tmpResult4 = heroBlock(4152);
+  const hexToRgbaStringResult = tmpResult3.hexToRgbaString(heroBlock(4152).hexWithOpacity(token, 0));
+  const token1 = heroBlock(4024).useToken(preferVCPrice(712).colors.BACKGROUND_BASE_LOWEST);
+  const tmp12 = preferVCPrice(14324)();
   c5 = tmp12;
   const items1 = [heroBlock.rankedSkuIds, tmp12];
   const memo = React.useMemo(() => _undefined(heroBlock.rankedSkuIds), items1);
-  const tmpResult5 = heroBlock(4005);
-  const filteredAndSortedProducts = heroBlock(14318).useFilteredAndSortedProducts({ products: memo, bypassAndroidUnsyncedFilter: tmp4 });
+  const tmpResult5 = heroBlock(4024);
+  const filteredAndSortedProducts = heroBlock(14326).useFilteredAndSortedProducts({ products: memo, bypassAndroidUnsyncedFilter: tmp4 });
   c6 = tmp14;
-  const tmpResult6 = heroBlock(14318);
+  const tmpResult6 = heroBlock(14326);
   let unpublishedAt;
   if (stateFromStores != null) {
     unpublishedAt = stateFromStores.unpublishedAt;
@@ -113,7 +113,7 @@ export default function _default(heroBlock) {
       obj2 = { style: null, children: null };
       obj2[0] = tmp8.heroBannerContainer;
       let tmp24Result = null != heroBannerUrl;
-      let tmp6Result = tmp6(12175);
+      let tmp6Result = tmp6(12178);
       if (tmp24Result) {
         let tmp22Result = tmp4;
         if (tmp4) {
@@ -251,7 +251,7 @@ export default function _default(heroBlock) {
         const obj23 = { products: null, loadingCardsNum: null, preferVCPrice: null, accessibilityLabel: null };
         obj23[0] = filteredAndSortedProducts;
         let num = 4;
-        tmp6Result = tmp6(14844);
+        tmp6Result = tmp6(14854);
         if (0 !== filteredAndSortedProducts.length) {
           num = filteredAndSortedProducts.length;
         }
@@ -279,7 +279,7 @@ export default function _default(heroBlock) {
           obj27[3] = filteredAndSortedProducts;
           obj27[4] = obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll;
           obj27[5] = tmp17;
-          obj27[7] = tmp(9344).COLLECTIBLES_SHOP_CARD_WIDTH + tmp6(712).space.PX_12;
+          obj27[7] = tmp(9350).COLLECTIBLES_SHOP_CARD_WIDTH + tmp6(712).space.PX_12;
           obj27[9] = function ListHeaderComponent() {
             let obj = { style: null };
             obj = { width: preferVCPrice(navigation[8]).space.PX_16 };
@@ -298,7 +298,7 @@ export default function _default(heroBlock) {
             obj[0] = obj;
             return callback(c5, obj);
           };
-          tmp22Result4 = tmp22(tmp(7745).FlashList, obj27);
+          tmp22Result4 = tmp22(tmp(7747).FlashList, obj27);
         }
         const obj29 = { children: null };
         obj29[0] = tmp22Result4;
@@ -315,11 +315,11 @@ export default function _default(heroBlock) {
       return closure_11(tmp(5728).AnalyticsLocationProvider, obj);
     } else {
       if (tmpResult7.isThemeDark(tmp7)) {
-        let tmp6Result1 = tmp6(14842);
+        let tmp6Result1 = tmp6(14852);
       } else {
-        tmp6Result1 = tmp6(14843);
+        tmp6Result1 = tmp6(14853);
       }
-      tmpResult7 = tmp(4153);
+      tmpResult7 = tmp(1363);
     }
   }
 };

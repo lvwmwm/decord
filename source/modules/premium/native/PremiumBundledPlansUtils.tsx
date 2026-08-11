@@ -1,10 +1,10 @@
-// Module ID: 6871
-// Function ID: 6872
+// Module ID: 6873
+// Function ID: 6874
 // Name: getPremiumBundledItemsFromProductId
-// Dependencies: [32, 1905, 5861, 3947, 2]
+// Dependencies: [32, 1924, 5861, 3966, 2]
 // Exports: excludeNitroOnlyPlansForActiveTrial, getModifySubscriptionItemsForProduct, getPremiumBundleWithPredicate, getPremiumBundlesWithPredicate, getProductIdFromSubscription, getProductIdsForBothIntervals, getToggledIntervalProduct, makeExternalPaymentGatewayPlanIdOrThrow, productsHaveSamePerks, shouldAlwaysExcludeFromPlanSelect
 
-// Module 6871 (getPremiumBundledItemsFromProductId)
+// Module 6873 (getPremiumBundledItemsFromProductId)
 import _slicedToArray from "_slicedToArray";
 import GuildFeatures from "GuildFeatures";
 
@@ -263,9 +263,9 @@ export const getModifySubscriptionItemsForProduct = function getModifySubscripti
   if (productId in found(5861).AppStorePremiumProductIdsToPremiumBundledItems) {
     const tmp8 = tmp(5861).AppStorePremiumProductIdsToPremiumBundledItems[productId];
     if (null != tmp8.premiumTier) {
-      let tmpResult = tmp(3947);
+      let tmpResult = tmp(3966);
       if (tmpResult.isBoostOnlySubscription(closure_0)) {
-        tmpResult = tmp(3947);
+        tmpResult = tmp(3966);
         const itemsWithUpsertedPremiumPlanId = tmpResult.getItemsWithUpsertedPremiumPlanId(closure_0, tmp8.basePlanId);
         const reversed = itemsWithUpsertedPremiumPlanId.reverse();
         const additionalPlans = tmp8.additionalPlans;

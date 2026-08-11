@@ -1,10 +1,10 @@
-// Module ID: 8835
-// Function ID: 8836
+// Module ID: 8841
+// Function ID: 8842
 // Name: useSharedStyles
-// Dependencies: [5776, 4303, 712, 1348, 2]
+// Dependencies: [5776, 4303, 712, 1367, 2]
 // Exports: default
 
-// Module 8835 (useSharedStyles)
+// Module 8841 (useSharedStyles)
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
 import createCacheKey from "createCacheKey";
 
@@ -37,5 +37,5 @@ let closure_9 = createCacheKey.createStyles((arg0) => {
 const result = require("Themes").fileFinishedImporting("modules/user_profile/native/UserProfileSharedStyles.tsx");
 
 export default function useSharedStyles() {
-  return callback(importDefault(1348)("UserProfileSharedStyles"));
+  return callback(importDefault(1367)("UserProfileSharedStyles"));
 };

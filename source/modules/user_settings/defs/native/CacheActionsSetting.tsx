@@ -1,9 +1,9 @@
-// Module ID: 14755
-// Function ID: 14756
+// Module ID: 14765
+// Function ID: 14766
 // Name: handleCacheActionPress
-// Dependencies: [5, 4994, 21, 4271, 4002, 4259, 1236, 589, 3974, 5764, 5396, 5766, 13884, 14756, 14757, 10447, 2]
+// Dependencies: [5, 4994, 21, 4271, 4021, 4259, 1236, 589, 3993, 5764, 5396, 5766, 13891, 14766, 14767, 10452, 2]
 
-// Module 14755 (handleCacheActionPress)
+// Module 14765 (handleCacheActionPress)
 import CircleInformationIcon from "CircleInformationIcon";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import jsxProd from "jsxProd";
@@ -13,7 +13,7 @@ let c5;
 let closure_6;
 const require = arg1;
 function handleCacheActionPress(key) {
-  let obj = importDefault(4002);
+  let obj = importDefault(4021);
   obj = {
     key,
     icon() {
@@ -32,7 +32,7 @@ function CacheActionsActionSheet() {
   obj[0] = callback2(require(5396) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { hasIcons: true, children: null };
   let obj1 = { icon: null, label: null, onPress: null };
-  obj1[0] = callback2(require(13884) /* FileUpIcon */.FileUpIcon, {});
+  obj1[0] = callback2(require(13891) /* FileUpIcon */.FileUpIcon, {});
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t["/GUaXh"]);
   obj1[2] = callback(function*() {
@@ -63,7 +63,7 @@ function CacheActionsActionSheet() {
             return obj;
           } else {
             const callback = tmp2;
-            let obj1 = outer1_0(14756);
+            let obj1 = outer1_0(14766);
             c1 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };
@@ -92,11 +92,11 @@ function CacheActionsActionSheet() {
   });
   const items = [callback2(require(5766) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
   let obj2 = { variant: "danger", icon: null, label: null, onPress: null };
-  obj2[1] = callback2(require(14757) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" });
+  obj2[1] = callback2(require(14767) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" });
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.tgwiMO);
   obj2[3] = function onPress() {
-    let obj = callback(14756);
+    let obj = callback(14766);
     obj.clearCaches();
     const intl = callback(1236).intl;
     const stringResult = intl.string(callback(1236).t["23xR5w"]);
@@ -107,8 +107,8 @@ function CacheActionsActionSheet() {
       },
       content: stringResult
     };
-    callback2(4002).open(obj);
-    const obj2 = callback2(4002);
+    callback2(4021).open(obj);
+    const obj2 = callback2(4021);
     callback2(4271).hideActionSheet(closure_7);
   };
   items[1] = callback2(require(5766) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
@@ -133,7 +133,7 @@ createToggle = {
   usePredicate: function useCacheActionsPredicate() {
     const items = [_handleConnectionOpen];
     const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => connected.isConnected());
-    const DeveloperMode = require(3974) /* explicitContentFromProto */.DeveloperMode;
+    const DeveloperMode = require(3993) /* explicitContentFromProto */.DeveloperMode;
     const obj = require(589) /* initialize */;
     return DeveloperMode.useSetting() && stateFromStores;
   },

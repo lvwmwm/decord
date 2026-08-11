@@ -1,7 +1,7 @@
 // Module ID: 4331
 // Function ID: 4332
 // Name: useIsRiotSocialSDKMigrationEnabled
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: getIsRiotSocialSDKMigrationEnabled, useIsRiotSocialSDKMigrationEnabled
 
 // Module 4331 (useIsRiotSocialSDKMigrationEnabled)

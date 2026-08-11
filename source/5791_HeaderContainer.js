@@ -1,7 +1,7 @@
 // Module ID: 5791
 // Function ID: 5792
 // Name: HeaderContainer
-// Dependencies: [19, 17, 21, 5277, 1481, 5792, 5793]
+// Dependencies: [19, 17, 21, 5277, 1500, 5792, 5793]
 // Exports: HeaderContainer
 
 // Module 5791 (HeaderContainer)
@@ -28,7 +28,7 @@ export const HeaderContainer = function HeaderContainer(getFocusedRoute) {
   let buildHref;
   focusedRoute = getFocusedRoute.getFocusedRoute();
   closure_6 = React.useContext(require(5277) /* Background */.HeaderBackContext);
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   buildHref = obj.useLinkBuilder().buildHref;
   obj = { pointerEvents: "box-none", style: getFocusedRoute.style, children: null };
   let substr = scenes.slice(-2);

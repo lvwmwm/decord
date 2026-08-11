@@ -1,10 +1,10 @@
-// Module ID: 10625
-// Function ID: 10626
+// Module ID: 10630
+// Function ID: 10631
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 4303, 712, 10508, 1609, 4036, 4713, 4846, 1236, 10626, 5326, 4299, 5328, 10628, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 10513, 1628, 4042, 4713, 4846, 1236, 10631, 5326, 4299, 5328, 10633, 2]
 // Exports: default
 
-// Module 10625 (OAuth2AuthorizeModal)
+// Module 10630 (OAuth2AuthorizeModal)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,11 +30,11 @@ let result = require("jsxProd").fileFinishedImporting("modules/oauth2/native/OAu
 
 export default function OAuth2AuthorizeModal(arg0) {
   const tmp = createCacheKey();
-  const tmp4 = sharedValue(10508)(arg0);
+  const tmp4 = sharedValue(10513)(arg0);
   const require = tmp4;
-  let obj = require(4036);
+  let obj = require(4042);
   sharedValue = obj.useSharedValue(0);
-  let obj1 = require(4036);
+  let obj1 = require(4042);
   const fn = function b() {
     let opacity = sharedValue.get();
     if (opacity == null) {
@@ -50,7 +50,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   obj = { style: tmp.container, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.titleContainer, ];
-  obj1 = { paddingTop: sharedValue(1609)().top + 16 };
+  obj1 = { paddingTop: sharedValue(1628)().top + 16 };
   items1[1] = obj1;
   const callback = React.useCallback((nativeEvent) => {
     let num = 0;
@@ -82,7 +82,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   if (null != tmp4.backStep) {
     const obj3 = { color: null };
     obj3[0] = tmp2(712).colors.INTERACTIVE_TEXT_DEFAULT;
-    let tmp11Result = tmp11(tmp5(10626).ArrowSmallLeftIcon, obj3);
+    let tmp11Result = tmp11(tmp5(10631).ArrowSmallLeftIcon, obj3);
   } else {
     const obj4 = { color: null };
     obj4[0] = tmp2(712).colors.INTERACTIVE_TEXT_DEFAULT;
@@ -97,7 +97,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   obj5[1] = closure_5(require(4299) /* Text */.Text, obj6);
   items2[1] = closure_5(View, obj5);
   const items3 = [tmp.titleContainerBorder, animatedStyle];
-  items2[2] = closure_5(sharedValue(4036).View, { style: items3 });
+  items2[2] = closure_5(sharedValue(4042).View, { style: items3 });
   obj[1] = items2;
   const items4 = [closure_6(View, obj), ];
   const obj7 = { bottom: true, style: tmp.contentContainer, children: null };
@@ -105,7 +105,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   const merged = Object.assign(tmp4);
   obj8.onScroll = callback;
   obj8.centerContent = true;
-  obj7[2] = closure_5(sharedValue(10628), obj8);
+  obj7[2] = closure_5(sharedValue(10633), obj8);
   items4[1] = closure_5(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj7);
   obj[1] = items4;
   return closure_6(View, obj);

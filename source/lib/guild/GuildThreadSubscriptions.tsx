@@ -1,7 +1,7 @@
 // Module ID: 5904
 // Function ID: 5905
 // Name: reset
-// Dependencies: [1386, 2]
+// Dependencies: [1405, 2]
 
 // Module 5904 (reset)
 let result = require("set").fileFinishedImporting("lib/guild/GuildThreadSubscriptions.tsx");
@@ -38,7 +38,7 @@ prototype["getSubscribedThreadIds"] = function getSubscribedThreadIds() {
 prototype["_get"] = function _get(arg0) {
   let tmp = this._subscriptions[arg0];
   if (tmp == null) {
-    tmp = new importDefault(1386)({ max: 3, updateAgeOnGet: true });
+    tmp = new importDefault(1405)({ max: 3, updateAgeOnGet: true });
   }
   return tmp;
 };

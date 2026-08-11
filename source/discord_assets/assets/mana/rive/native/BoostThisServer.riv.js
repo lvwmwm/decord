@@ -1,9 +1,9 @@
-// Module ID: 4086
-// Function ID: 4087
+// Module ID: 4092
+// Function ID: 4093
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4086 (metadata)
+// Module 4092 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/BoostThisServer.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/4e02ee0451e556464805350795ce905d3f1fae8d476d249189c0d236fd312029.riv";

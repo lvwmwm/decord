@@ -1,10 +1,10 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 15422
+// Function ID: 15423
 // Name: getDropIndex
-// Dependencies: [5, 19, 17, 1891, 5155, 15406, 15407, 4036, 636, 4272, 4153, 12, 1208, 1236, 8008, 15159, 4005, 712, 3914, 10252, 705, 5232, 8698, 8599, 500, 1609, 4700, 15408, 15409, 14341, 5427, 2]
+// Dependencies: [5, 19, 17, 1910, 5155, 15423, 15424, 4042, 636, 4272, 1363, 12, 1208, 1236, 8010, 15168, 4024, 712, 3933, 10257, 705, 5232, 8704, 8605, 500, 1628, 4700, 15425, 15426, 14349, 5427, 2]
 // Exports: default
 
-// Module 15405 (getDropIndex)
+// Module 15422 (getDropIndex)
 import withEqualityFn from "withEqualityFn";
 import closure_4 from "t";
 import { Dimensions } from "Themes";
@@ -13,9 +13,9 @@ import insertUnsortedGuilds from "insertUnsortedGuilds";
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import importDefaultResult from "withEqualityFn";
 import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
-import module_4036 from "module_4036";
-import module_4036 from "module_4036";
-import module_4036 from "module_4036";
+import module_4042 from "module_4042";
+import module_4042 from "module_4042";
+import module_4042 from "module_4042";
 import apply from "module_1208";
 import apply from "module_1208";
 import importDefaultResult1 from "debounce";
@@ -79,7 +79,7 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
       tmp39 = name4;
     }
     if (null != tmp39) {
-      const AccessibilityAnnouncer = require(4153) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
       const intl12 = require(1236) /* getSystemLocale */.intl;
       let obj = { itemName: null };
       obj[0] = tmp39;
@@ -230,7 +230,7 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
     lib(require(4272) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_END);
     lib.flush();
     lib2.flush();
-    const AccessibilityAnnouncer2 = require(4153) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const AccessibilityAnnouncer2 = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     const intl13 = require(1236) /* getSystemLocale */.intl;
     AccessibilityAnnouncer2.announce(intl13.string(require(1236) /* getSystemLocale */.t.lMkmz7));
   }
@@ -278,8 +278,8 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, current) {
         GUILDS = store2.getFastListGuildFolders()[item.section - tmp8.GUILDS];
         if (null != GUILDS) {
           const type = item.type;
-          if (require(8008) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
-            if (tmp10(8008).FastListItemTypes.ITEM === type) {
+          if (require(8010) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
+            if (tmp10(8010).FastListItemTypes.ITEM === type) {
               if (GUILDS.type !== GuildsNodeType.ROOT) {
                 let tmp13 = GUILDS;
                 if (GUILDS.type !== tmp12.FOLDER) {
@@ -307,11 +307,11 @@ let c12 = 160;
 let c13 = 16.666666666666668;
 let obj = { pan: null, itemMeasurements: null, activeIndex: null };
 obj[0] = require("module_4294967295");
-obj[1] = module_4036.makeMutable([]);
+obj[1] = module_4042.makeMutable([]);
 obj[2] = require("module_4294967295");
 let closure_16 = require("debounce")(require("HapticFeedbackTypes").triggerHapticFeedback, 16);
 let closure_17 = require("debounce")((intl) => {
-  const AccessibilityAnnouncer = require(4153) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(intl);
 }, 500);
 let closure_18 = apply.throttle((data) => {
@@ -648,7 +648,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    state.setStateShallow({ dragSpecs: "Array", overSpecs: "ct" });
+    state.setStateShallow({ dragSpecs: "Array", overSpecs: "HermesInternal" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj5 = {};

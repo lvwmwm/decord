@@ -1,10 +1,10 @@
-// Module ID: 9716
-// Function ID: 9717
+// Module ID: 9721
+// Function ID: 9722
 // Name: useTrackFavoritesGuildUpsellModalOpened
 // Dependencies: [19, 676, 5728, 5748, 698, 2]
 // Exports: default
 
-// Module 9716 (useTrackFavoritesGuildUpsellModalOpened)
+// Module 9721 (useTrackFavoritesGuildUpsellModalOpened)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 

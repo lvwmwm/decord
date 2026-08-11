@@ -1,10 +1,10 @@
-// Module ID: 1879
-// Function ID: 1880
+// Module ID: 1898
+// Function ID: 1899
 // Name: shortenAndLocalizeNumber
 // Dependencies: [1236, 2]
 // Exports: formatPercent, humanizeValue, parseInteger, shortenAndLocalizeNumber
 
-// Module 1879 (shortenAndLocalizeNumber)
+// Module 1898 (shortenAndLocalizeNumber)
 let c2 = 1000000;
 let result = require("set").fileFinishedImporting("utils/NumberUtils.tsx");
 

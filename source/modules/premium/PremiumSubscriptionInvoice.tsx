@@ -1,10 +1,10 @@
-// Module ID: 7632
-// Function ID: 7633
+// Module ID: 7634
+// Function ID: 7635
 // Name: createSubscriptionInvoicePreview
-// Dependencies: [109, 32, 5, 19, 3956, 676, 3947, 530, 709, 4202, 38, 4541, 2]
+// Dependencies: [109, 32, 5, 19, 3975, 676, 3966, 530, 709, 4202, 38, 4541, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 7632 (createSubscriptionInvoicePreview)
+// Module 7634 (createSubscriptionInvoicePreview)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
@@ -105,7 +105,7 @@ function _createSubscriptionInvoicePreview() {
               return obj1;
             } else {
               obj2 = { items: null, payment_source_id: null, trial_id: null, code: null, apply_entitlements: null, currency: null, renewal: null, metadata: null, load_id: null };
-              const result = callback(3947).coerceExistingItemsToNewItemInterval(callback);
+              const result = callback(3966).coerceExistingItemsToNewItemInterval(callback);
               callback = result;
               obj2[0] = result.map((planId) => {
                 const obj = {};
@@ -280,7 +280,7 @@ function _updateSubscriptionInvoicePreview() {
               return obj1;
             } else {
               if (null != callback2) {
-                let obj4 = callback(3947);
+                let obj4 = callback(3966);
                 callback2 = obj4.coerceExistingItemsToNewItemInterval(callback2);
               }
               let mapped;

@@ -1,10 +1,10 @@
-// Module ID: 9761
-// Function ID: 9762
+// Module ID: 9766
+// Function ID: 9767
 // Name: computeThreadNotificationSetting
-// Dependencies: [1372, 4499, 3931, 1235, 676, 1384, 589, 2]
+// Dependencies: [1391, 4499, 3950, 1235, 676, 1403, 589, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 9761 (computeThreadNotificationSetting)
+// Module 9766 (computeThreadNotificationSetting)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import storeThread from "storeThread";
@@ -32,11 +32,11 @@ function computeThreadNotificationSetting(channel) {
     if (obj6.hasFlag(flagsResult, ThreadMemberFlags.ALL_MESSAGES)) {
       return tmp8.ALL_MESSAGES;
     } else {
-      let tmp6Result = tmp6(1384);
+      let tmp6Result = tmp6(1403);
       if (tmp6Result.hasFlag(flagsResult, tmp8.ONLY_MENTIONS)) {
         return tmp8.ONLY_MENTIONS;
       } else {
-        tmp6Result = tmp6(1384);
+        tmp6Result = tmp6(1403);
         if (tmp6Result.hasFlag(flagsResult, tmp8.NO_MESSAGES)) {
           return tmp8.NO_MESSAGES;
         } else {
@@ -57,7 +57,7 @@ function computeThreadNotificationSetting(channel) {
         }
       }
     }
-    obj6 = require(1384) /* hasFlag */;
+    obj6 = require(1403) /* hasFlag */;
   }
 }
 let result = require("storeThread").fileFinishedImporting("modules/threads/ThreadNotificationSettings.tsx");

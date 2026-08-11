@@ -1,10 +1,10 @@
-// Module ID: 11919
-// Function ID: 11920
+// Module ID: 11922
+// Function ID: 11923
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 4303, 712, 11920, 7793, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 11923, 7795, 4299, 2]
 // Exports: default
 
-// Module 11919 (GuildPowerupsWarning)
+// Module 11922 (GuildPowerupsWarning)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export default function GuildPowerupsWarning(warnings) {
     obj[0] = tmp.contentContainer;
     obj = { color: null, size: "md" };
     obj[0] = importDefault(712).colors.TEXT_FEEDBACK_WARNING;
-    let items = [callback(_require(7793).CircleErrorIcon, obj), , , ];
+    let items = [callback(_require(7795).CircleErrorIcon, obj), , , ];
     const obj1 = { variant: "text-md/semibold", color: "text-feedback-warning", style: null, children: null };
     obj1[2] = tmp.text;
     obj1[3] = tmp5;

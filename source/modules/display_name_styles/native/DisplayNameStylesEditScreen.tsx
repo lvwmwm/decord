@@ -1,10 +1,10 @@
-// Module ID: 14570
-// Function ID: 14571
+// Module ID: 14578
+// Function ID: 14579
 // Name: ApplyButton
-// Dependencies: [32, 19, 17, 4295, 1903, 676, 1604, 21, 1916, 4303, 712, 1481, 589, 14571, 8267, 4533, 4239, 1917, 1914, 9237, 9473, 9474, 643, 14572, 14573, 14574, 14575, 698, 4272, 8268, 8265, 4271, 14578, 1988, 14579, 14580, 14584, 14587, 1236, 13925, 4013, 4535, 14588, 2642, 4299, 1297, 5778, 688, 13926, 4714, 9405, 8586, 1609, 4036, 4713, 2]
+// Dependencies: [32, 19, 17, 4295, 1922, 676, 1623, 21, 1935, 4303, 712, 1500, 589, 14579, 8272, 4533, 4239, 1936, 1933, 9243, 9479, 9480, 643, 14580, 14581, 14582, 14583, 698, 4272, 8273, 8270, 4271, 14586, 2007, 14587, 14588, 14592, 14595, 1236, 13933, 4031, 4535, 14596, 2661, 4299, 1297, 5778, 688, 13934, 4714, 9411, 8592, 1628, 4042, 4713, 2]
 // Exports: default
 
-// Module 14570 (ApplyButton)
+// Module 14578 (ApplyButton)
 import DisplayNameStylesFontPickerSheet from "DisplayNameStylesFontPickerSheet";
 import apexExperiment from "apexExperiment";
 import get_ActivityIndicator from "DisplayNameFont";

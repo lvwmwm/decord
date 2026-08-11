@@ -1,10 +1,10 @@
-// Module ID: 8669
-// Function ID: 8670
+// Module ID: 8675
+// Function ID: 8676
 // Name: CollapsableButton
-// Dependencies: [19, 21, 4718, 4303, 4036, 4713, 4717, 4715, 8670, 712, 2]
+// Dependencies: [19, 21, 4718, 4303, 4042, 4713, 4717, 4715, 8676, 712, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 8669 (CollapsableButton)
+// Module 8675 (CollapsableButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA";
@@ -18,7 +18,7 @@ function CollapsableButton(arg0) {
   let collapseText;
   collapseText = state.collapseText;
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = collapseText(4036);
+  let obj = collapseText(4042);
   class B {
     constructor() {
       obj = { minWidth: collapseText(outer1_2[2]).FAB_BUTTON_SIZE, minHeight: collapseText(outer1_2[2]).FAB_BUTTON_SIZE, paddingHorizontal: null, paddingVertical: null };
@@ -32,7 +32,7 @@ function CollapsableButton(arg0) {
       return obj;
     }
   }
-  obj = { FAB_BUTTON_SIZE: collapseText(4718).FAB_BUTTON_SIZE, withSpring: collapseText(4713).withSpring, interpolate: collapseText(4036).interpolate, collapseText, FAB_PADDING_HORIZONTAL: 20, FAB_PADDING_VERTICAL: buttonPadding, SUBTLE_SPRING: collapseText(4717).SUBTLE_SPRING };
+  obj = { FAB_BUTTON_SIZE: collapseText(4718).FAB_BUTTON_SIZE, withSpring: collapseText(4713).withSpring, interpolate: collapseText(4042).interpolate, collapseText, FAB_PADDING_HORIZONTAL: 20, FAB_PADDING_VERTICAL: buttonPadding, SUBTLE_SPRING: collapseText(4717).SUBTLE_SPRING };
   B.__closure = obj;
   B.__workletHash = 5958377845220;
   B.__initData = closure_7;
@@ -60,7 +60,7 @@ export const CollapsibleFloatingActionButton = function CollapsibleFloatingActio
   let text;
   ({ icon, positionBottom, positionRight, text, state } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(8670) /* styles */;
+  let obj = require(8676) /* styles */;
   let obj1 = validElement;
   const styles = obj.useStyles();
   let cloneElementResult = icon;
@@ -71,11 +71,11 @@ export const CollapsibleFloatingActionButton = function CollapsibleFloatingActio
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(8670).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(8676).DEFAULT_POSITION_OFFSET;
   }
   obj = { position: "absolute", right: positionRight, bottom: null };
   if (positionBottom == null) {
-    positionBottom = tmp3(8670).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(8676).DEFAULT_POSITION_OFFSET;
   }
   obj[2] = positionBottom;
   items[1] = obj;

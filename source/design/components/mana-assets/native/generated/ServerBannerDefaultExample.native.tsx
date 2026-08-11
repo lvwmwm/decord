@@ -1,10 +1,10 @@
-// Module ID: 6686
-// Function ID: 6687
+// Module ID: 6688
+// Function ID: 6689
 // Name: ServerBannerDefaultExample
-// Dependencies: [21, 5268, 6687, 2]
+// Dependencies: [21, 5268, 6689, 2]
 // Exports: ServerBannerDefaultExample
 
-// Module 6686 (ServerBannerDefaultExample)
+// Module 6688 (ServerBannerDefaultExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerDefaultExample.native.tsx");
@@ -28,7 +28,7 @@ export const ServerBannerDefaultExample = function ServerBannerDefaultExample(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6687);
+  obj[0] = importDefault(6689);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,7 +1,7 @@
 // Module ID: 5131
 // Function ID: 5132
 // Name: recomputeGuild
-// Dependencies: [1415, 1971, 1964, 1891, 1903, 676, 3917, 1384, 709, 11, 589, 2]
+// Dependencies: [1434, 1990, 1983, 1910, 1922, 676, 3936, 1403, 709, 11, 589, 2]
 
 // Module 5131 (recomputeGuild)
 import { isGuildOwner } from "GuildNSFWContentLevel";
@@ -209,7 +209,7 @@ function recomputeGuild(guildId) {
             if (num == null) {
               num = 0;
             }
-            const obj2 = _require(1384);
+            const obj2 = _require(1403);
           }
         }
       }

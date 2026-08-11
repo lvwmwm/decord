@@ -1,10 +1,10 @@
-// Module ID: 8842
-// Function ID: 8843
+// Module ID: 8848
+// Function ID: 8849
 // Name: OpenableUserProfileAvatar
-// Dependencies: [19, 17, 8785, 5776, 21, 8835, 8300, 8788, 8843, 1236, 2]
+// Dependencies: [19, 17, 8791, 5776, 21, 8841, 8305, 8794, 8849, 1236, 2]
 // Exports: OpenableUserProfileAvatar
 
-// Module 8842 (OpenableUserProfileAvatar)
+// Module 8848 (OpenableUserProfileAvatar)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { TrackUserProfileActions } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -23,7 +23,7 @@ const forwardRefResult = importAllResult.forwardRef((backgroundColor, ref) => {
     size = AVATAR_SIZE_VARIANT;
   }
   const merged = Object.assign(backgroundColor, Object.create(null));
-  const tmp2 = importDefault(8835)();
+  const tmp2 = importDefault(8841)();
   let obj = { children: null };
   const items = [, , ];
   ({ avatarBackground: arr[0], avatarPosition: arr[1] } = tmp2);
@@ -33,7 +33,7 @@ const forwardRefResult = importAllResult.forwardRef((backgroundColor, ref) => {
   items2 = [, ];
   ({ avatar: arr3[0], avatarPosition: arr3[1] } = tmp2);
   const merged1 = Object.assign(merged);
-  items1[1] = callback(importDefault(8300), obj);
+  items1[1] = callback(importDefault(8305), obj);
   obj[0] = items1;
   return callback2(closure_8, obj);
 });

@@ -1,10 +1,10 @@
-// Module ID: 6738
-// Function ID: 6739
+// Module ID: 6740
+// Function ID: 6741
 // Name: SmokeIllocon
-// Dependencies: [21, 5268, 6739, 2]
+// Dependencies: [21, 5268, 6741, 2]
 // Exports: SmokeIllocon
 
-// Module 6738 (SmokeIllocon)
+// Module 6740 (SmokeIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SmokeIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const SmokeIllocon = function SmokeIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6739);
+  obj[0] = importDefault(6741);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

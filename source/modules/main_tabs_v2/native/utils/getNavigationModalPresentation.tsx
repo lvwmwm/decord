@@ -1,10 +1,10 @@
-// Module ID: 9678
-// Function ID: 9679
+// Module ID: 9683
+// Function ID: 9684
 // Name: getNavigationModalPresentation
-// Dependencies: [500, 7641, 4283, 8895, 2]
+// Dependencies: [500, 7643, 4283, 8901, 2]
 // Exports: default
 
-// Module 9678 (getNavigationModalPresentation)
+// Module 9683 (getNavigationModalPresentation)
 import set from "set";
 import set from "set";
 import set from "DCDDeviceManager";
@@ -47,20 +47,20 @@ export default function getNavigationModalPresentation() {
   obj = { presentation, orientation: null };
   let tmp4;
   if (lockOrientation) {
-    const orientationLock = require(8895) /* handleOrientationChange */.getOrientationLock();
+    const orientationLock = require(8901) /* handleOrientationChange */.getOrientationLock();
     let str2 = "landscape";
     let str4 = "landscape";
     if ("LANDSCAPE" !== orientationLock) {
       if (null != orientationLock) {
         str2 = "portrait";
       } else {
-        const orientation = tmp5(8895).getOrientation();
-        const tmp5Result = tmp5(8895);
+        const orientation = tmp5(8901).getOrientation();
+        const tmp5Result = tmp5(8901);
       }
       str4 = str2;
     }
     tmp4 = str4;
-    const obj2 = require(8895) /* handleOrientationChange */;
+    const obj2 = require(8901) /* handleOrientationChange */;
   }
   obj[1] = tmp4;
   return obj;

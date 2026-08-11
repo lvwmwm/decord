@@ -1,9 +1,9 @@
-// Module ID: 6017
-// Function ID: 6018
+// Module ID: 6019
+// Function ID: 6020
 // Name: handleFormClose
-// Dependencies: [1903, 676, 589, 709, 2]
+// Dependencies: [1922, 676, 589, 709, 2]
 
-// Module 6017 (handleFormClose)
+// Module 6019 (handleFormClose)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { FormStates } from "ME";
 import { Store } from "initialize";

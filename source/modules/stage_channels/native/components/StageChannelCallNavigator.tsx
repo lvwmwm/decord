@@ -1,13 +1,13 @@
-// Module ID: 10757
-// Function ID: 10758
+// Module ID: 10762
+// Function ID: 10763
 // Name: ModeratorViewOverlay
-// Dependencies: [32, 19, 17, 505, 21, 10758, 4036, 4713, 712, 10759, 10818, 10761, 9743, 9742, 9745, 10709, 4497, 10819, 10896, 4013, 10654, 10904, 10905, 10764, 10910, 10918, 10922, 10955, 10956, 4303, 10957, 10781, 2]
+// Dependencies: [32, 19, 17, 505, 21, 10763, 4042, 4713, 712, 10764, 10823, 10766, 9748, 9747, 9750, 10714, 4497, 10824, 10901, 4031, 10659, 10909, 10910, 10769, 10915, 10923, 10927, 10960, 10961, 4303, 10962, 10786, 2]
 // Exports: default
 
-// Module 10757 (ModeratorViewOverlay)
+// Module 10762 (ModeratorViewOverlay)
 import set from "set";
 import ManaContext from "ManaContext";
-import get_ActivityIndicator from "module_10819";
+import get_ActivityIndicator from "module_10824";
 import { ThemeTypes } from "sum";
 import jsxProd from "GestureContainer";
 import createCacheKey from "createCacheKey";
@@ -81,7 +81,7 @@ function JoinStageOverlay(channel) {
   const tmp = callback(React.useState(false), 2);
   first = tmp[0];
   importDefault = tmp[1];
-  let obj = first(4036);
+  let obj = first(4042);
   const fn = function s() {
     let obj = first(outer1_2[7]);
     let num = 0;
@@ -111,17 +111,17 @@ function JoinStageOverlay(channel) {
   items[1] = obj1;
   items[2] = animatedStyle;
   obj[0] = items;
-  obj[1] = callback2(importDefault(10818), { channel: channel.channel });
-  return callback2(importDefault(4036).View, obj);
+  obj[1] = callback2(importDefault(10823), { channel: channel.channel });
+  return callback2(importDefault(4042).View, obj);
 }
 function StagePromptWrapper(channel) {
   const obj = { children: null };
   obj[0] = callback2(StagePromptInner, { channel: channel.channel });
-  return callback2(require(10957) /* RootThemeContextProvider */.DisableCustomTheme, obj);
+  return callback2(require(10962) /* RootThemeContextProvider */.DisableCustomTheme, obj);
 }
 function StagePromptInner(channel) {
   const tmp = createCacheKey();
-  return callback2(require(10781) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
+  return callback2(require(10786) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
 }
 ({ StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);

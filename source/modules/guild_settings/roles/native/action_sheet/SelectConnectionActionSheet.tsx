@@ -1,10 +1,10 @@
-// Module ID: 16725
-// Function ID: 16726
+// Module ID: 16737
+// Function ID: 16738
 // Name: IdentityApplicationRow
-// Dependencies: [32, 19, 17, 21, 11036, 5374, 1297, 4239, 5396, 1236, 6962, 1416, 4153, 4271, 8956, 5764, 9141, 5399, 5328, 5767, 2]
+// Dependencies: [32, 19, 17, 21, 11041, 5374, 1297, 4239, 5396, 1236, 6965, 1435, 1363, 4271, 8962, 5764, 9147, 5399, 5328, 5767, 2]
 // Exports: default
 
-// Module 16725 (IdentityApplicationRow)
+// Module 16737 (IdentityApplicationRow)
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
 import { View } from "BottomSheetModal";
@@ -17,7 +17,7 @@ function IdentityApplicationRow(arg0) {
   let applicationId;
   let onPress;
   ({ applicationId, onPress } = arg0);
-  let obj = require(11036) /* request */;
+  let obj = require(11041) /* request */;
   const getOrFetchApplicationBatched = obj.useGetOrFetchApplicationBatched(applicationId);
   if (null == getOrFetchApplicationBatched) {
     return null;
@@ -81,7 +81,7 @@ export default function SelectConnectionActionSheet(arg0) {
       return tmp2;
     });
   }
-  let tmp3Result = tmp3(6962);
+  let tmp3Result = tmp3(6965);
   const platforms = tmp3Result.usePlatforms();
   const found1 = platforms.filter((type) => !set.has(type.type));
   let mapped1;
@@ -161,7 +161,7 @@ export default function SelectConnectionActionSheet(arg0) {
     const intl4 = tmp3(1236).intl;
     items.push(intl4.string(tmp3(1236).t.y3ZnnU));
   }
-  tmp3Result = tmp3(8956);
+  tmp3Result = tmp3(8962);
   obj = { pageWidth: 0, defaultIndex: first, onSetActiveIndex: tmp5[1], items: items.map((id) => ({ id, label: id, page: null })) };
   const segmentedControlState = tmp3Result.useSegmentedControlState(obj);
   if (1 === first) {
@@ -180,7 +180,7 @@ export default function SelectConnectionActionSheet(arg0) {
     const obj1 = { children: null };
     const obj2 = { state: null };
     obj2[0] = segmentedControlState;
-    obj1[0] = tmp2(tmp3(9141).SegmentedControl, obj2);
+    obj1[0] = tmp2(tmp3(9147).SegmentedControl, obj2);
     let tmp2Result = tmp2(closure_5, obj1);
   } else {
     tmp2Result = null;

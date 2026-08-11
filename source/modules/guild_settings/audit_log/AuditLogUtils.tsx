@@ -1,10 +1,10 @@
-// Module ID: 16625
-// Function ID: 16626
+// Module ID: 16637
+// Function ID: 16638
 // Name: getPermissionChanges
-// Dependencies: [5176, 5242, 4505, 1377, 5219, 16624, 1372, 1964, 3938, 1903, 16623, 676, 1379, 11262, 1378, 3, 4379, 1236, 7772, 11, 16626, 506, 1384, 4494, 1935, 14, 688, 9067, 16627, 3971, 3883, 2]
+// Dependencies: [5176, 5242, 4505, 1396, 5219, 16636, 1391, 1983, 3957, 1922, 16635, 676, 1398, 11267, 1397, 3, 4379, 1236, 7774, 11, 16638, 506, 1403, 4494, 1954, 14, 688, 9073, 16639, 3990, 3902, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 16625 (getPermissionChanges)
+// Module 16637 (getPermissionChanges)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import handleUpdate from "handleUpdate";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
@@ -13,7 +13,7 @@ import loadSavedGuildStickers from "loadSavedGuildStickers";
 import { AuditLogChange } from "getTargetType";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import AuditLogActions from "AuditLogActions";
 import ME from "ME";
@@ -842,7 +842,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           __3TkD = __3TkD(1236).t.MWp6H7;
           obj16[AuditLogChangeKeys.TEMPORARY] = (newValue) => newValue.newValue ? __3TkD : _5kDYS3;
           const obj19 = {};
-          obj19[__3TkD(7772).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1236).t.XYZMbL;
+          obj19[__3TkD(7774).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1236).t.XYZMbL;
           __3TkD = obj19;
           obj16[AuditLogChangeKeys.FLAGS] = (arg0) => __3TkD[arg0.newValue];
           obj16[AuditLogChangeKeys.ROLE_IDS] = () => __3TkD(1236).t.gb1Owj;
@@ -1713,9 +1713,9 @@ export const getChangeTitle = function getChangeTitle(log) {
             const newValue = found2.newValue;
             found = require;
             found = dependencyMap;
-            if (require(16626) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
+            if (require(16638) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
               return found(1236).t["PyEa+J"];
-            } else if (found(16626).GuildFeedItemTypes.FORUM_POST === newValue) {
+            } else if (found(16638).GuildFeedItemTypes.FORUM_POST === newValue) {
               return found(1236).t.hCuAb1;
             } else {
               return found(1236).t["UZ+U3A"];
@@ -2382,7 +2382,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                       let name = found.name_localized;
                                     }
                                     let combined = name;
-                                    if (found.type === found(1935).ApplicationCommandType.CHAT) {
+                                    if (found.type === found(1954).ApplicationCommandType.CHAT) {
                                       const _HermesInternal = HermesInternal;
                                       combined = "/\u2060" + name;
                                     }
@@ -2539,7 +2539,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                             let tmp7 = ((targetId) => store.getChannel(targetId))(targetId);
                             let tmp10 = null;
                             if (tmp9) {
-                              tmp10 = ((channel) => found(4494).computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true))(tmp7);
+                              tmp10 = ((channel) => found(4494).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true))(tmp7);
                             }
                             let tmp11 = tmp10;
                             if (null == tmp10) {
@@ -2624,7 +2624,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
           found = null != found && true;
           found = null;
           if (found) {
-            found = ((found) => found(4494).computeChannelName(found, mergeGuildAvatar, upsertRelationship, true))(found);
+            found = ((found) => found(4494).computeChannelName(found, mergeGuildAvatar, markAllUserIdListsStale, true))(found);
           }
           if (null == found) {
             found = outer1_14;
@@ -3420,7 +3420,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                                   role = outer2_10;
                                                   const mapped6 = newValue1.map(outer2_10.getChannel);
                                                   found = mapped6.filter((arg0) => null != arg0);
-                                                  const mapped7 = found.map((channel) => newValue(table[23]).computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true));
+                                                  const mapped7 = found.map((channel) => newValue(table[23]).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true));
                                                   role = mapped7;
                                                   if (null == mapped7) {
                                                     newValue5 = mapped7;
@@ -3437,7 +3437,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                                   role = outer2_10;
                                                   const mapped8 = oldValue1.map(outer2_10.getChannel);
                                                   const found1 = mapped8.filter((arg0) => null != arg0);
-                                                  const mapped9 = found1.map((channel) => newValue(table[23]).computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true));
+                                                  const mapped9 = found1.map((channel) => newValue(table[23]).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true));
                                                   role = mapped9;
                                                   if (null == mapped9) {
                                                     oldValue5 = mapped9;

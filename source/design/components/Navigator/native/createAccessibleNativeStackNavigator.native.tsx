@@ -1,10 +1,10 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13434
+// Function ID: 13435
 // Name: AccessibleNativeStackNavigator
-// Dependencies: [19, 21, 5783, 1481, 8570, 2]
+// Dependencies: [19, 21, 5783, 1500, 8576, 2]
 // Exports: default, useAccessibilityPatchedDescriptors
 
-// Module 13426 (AccessibleNativeStackNavigator)
+// Module 13434 (AccessibleNativeStackNavigator)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -75,7 +75,7 @@ function AccessibleNativeStackNavigator(arg0) {
 const result = require("NavigationStack").fileFinishedImporting("design/components/Navigator/native/createAccessibleNativeStackNavigator.native.tsx");
 
 export default function createAccessibleNativeStackNavigator(arg0) {
-  return require(1481) /* createStandardNavigationFactories */.createNavigatorFactory(AccessibleNativeStackNavigator)(arg0);
+  return require(1500) /* createStandardNavigationFactories */.createNavigatorFactory(AccessibleNativeStackNavigator)(arg0);
 };
 export const useAccessibilityPatchedDescriptors = function useAccessibilityPatchedDescriptors(filteredDescriptors) {
   const _require = filteredDescriptors;

@@ -1,9 +1,9 @@
-// Module ID: 7981
-// Function ID: 7982
+// Module ID: 7983
+// Function ID: 7984
 // Name: FormTextColors
 // Dependencies: [19, 21, 4303, 5158, 712, 1297, 2]
 
-// Module 7981 (FormTextColors)
+// Module 7983 (FormTextColors)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";

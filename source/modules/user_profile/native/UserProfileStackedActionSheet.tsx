@@ -1,10 +1,10 @@
-// Module ID: 9468
-// Function ID: 9469
+// Module ID: 9474
+// Function ID: 9475
 // Name: UserProfileStackedActionSheet
-// Dependencies: [19, 17, 21, 4303, 712, 1609, 5399, 7967, 500, 5397, 4846, 1236, 5274, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1628, 5399, 7969, 500, 5397, 4846, 1236, 5274, 4299, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 9468 (UserProfileStackedActionSheet)
+// Module 9474 (UserProfileStackedActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -82,7 +82,7 @@ export const UserProfileStackedActionSheetList = function UserProfileStackedActi
   if (obj2.isAndroid()) {
     num = renderItem(712).space.PX_16;
   }
-  items[1] = { paddingBottom: renderItem(1609)().bottom + num };
+  items[1] = { paddingBottom: renderItem(1628)().bottom + num };
   items[2] = data.contentContainerStyle;
   obj.contentContainerStyle = items;
   obj.renderItem = function renderItem(index) {

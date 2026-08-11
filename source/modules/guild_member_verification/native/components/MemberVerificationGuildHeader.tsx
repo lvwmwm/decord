@@ -1,10 +1,10 @@
-// Module ID: 8436
-// Function ID: 8437
+// Module ID: 8442
+// Function ID: 8443
 // Name: AVATAR_SIZE
-// Dependencies: [19, 17, 8415, 21, 4303, 712, 1416, 8437, 1609, 4036, 4725, 5779, 8438, 4299, 1236, 2]
+// Dependencies: [19, 17, 8421, 21, 4303, 712, 1435, 8443, 1628, 4042, 4725, 5779, 8444, 4299, 1236, 2]
 // Exports: default
 
-// Module 8436 (AVATAR_SIZE)
+// Module 8442 (AVATAR_SIZE)
 import "noop";
 import { View } from "get ActivityIndicator";
 import BANNER_RATIO_HEIGHT_16_9 from "BANNER_RATIO_HEIGHT_16_9";

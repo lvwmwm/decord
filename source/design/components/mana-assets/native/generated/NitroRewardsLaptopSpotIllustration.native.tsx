@@ -1,10 +1,10 @@
-// Module ID: 6562
-// Function ID: 6563
+// Module ID: 6564
+// Function ID: 6565
 // Name: NitroRewardsLaptopSpotIllustration
-// Dependencies: [21, 5268, 6563, 2]
+// Dependencies: [21, 5268, 6565, 2]
 // Exports: NitroRewardsLaptopSpotIllustration
 
-// Module 6562 (NitroRewardsLaptopSpotIllustration)
+// Module 6564 (NitroRewardsLaptopSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroRewardsLaptopSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const NitroRewardsLaptopSpotIllustration = function NitroRewardsLaptopSpo
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6563);
+  obj[0] = importDefault(6565);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

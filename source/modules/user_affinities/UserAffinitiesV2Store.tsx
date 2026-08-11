@@ -1,10 +1,10 @@
-// Module ID: 7120
-// Function ID: 7121
+// Module ID: 7121
+// Function ID: 7122
 // Name: recomputeAffinities
-// Dependencies: [3938, 7121, 589, 709, 2]
+// Dependencies: [3957, 7122, 589, 709, 2]
 
-// Module 7120 (recomputeAffinities)
-import upsertRelationship from "upsertRelationship";
+// Module 7121 (recomputeAffinities)
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { USER_AFFINITY_TTL } from "result";
 import { PersistedStore } from "initialize";
 
@@ -26,7 +26,7 @@ class UserAffinitiesV2Store extends PersistedStore {
 const prototype = UserAffinitiesV2Store.prototype;
 prototype["initialize"] = function initialize(userAffinities) {
   const self = this;
-  this.waitFor(upsertRelationship);
+  this.waitFor(markAllUserIdListsStale);
   if (null != userAffinities) {
     obj.userAffinities = userAffinities.userAffinities;
     obj.lastFetched = userAffinities.lastFetched;
@@ -38,7 +38,7 @@ prototype["initialize"] = function initialize(userAffinities) {
       return items;
     }));
   }
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   self.syncWith(items, recomputeAffinities);
 };
 prototype["shouldFetch"] = function shouldFetch() {

@@ -1,9 +1,9 @@
-// Module ID: 16374
-// Function ID: 16375
+// Module ID: 16390
+// Function ID: 16391
 // Name: handlePostConnectionOpen
-// Dependencies: [5, 1372, 1960, 4124, 1221, 676, 5261, 4517, 4509, 16375, 1988, 691, 2]
+// Dependencies: [5, 1391, 1979, 4126, 1221, 676, 5261, 4517, 4509, 16391, 2007, 691, 2]
 
-// Module 16374 (handlePostConnectionOpen)
+// Module 16390 (handlePostConnectionOpen)
 import closure_3 from "ME";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";

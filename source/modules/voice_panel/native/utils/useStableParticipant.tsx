@@ -1,10 +1,10 @@
-// Module ID: 16179
-// Function ID: 16180
+// Module ID: 16195
+// Function ID: 16196
 // Name: areStableParticipantsEqual
-// Dependencies: [4316, 1218, 4351, 1903, 4321, 643, 589, 4493, 8813, 10709, 2]
+// Dependencies: [4316, 1218, 4351, 1922, 4321, 643, 589, 4493, 8819, 10714, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 16179 (areStableParticipantsEqual)
+// Module 16195 (areStableParticipantsEqual)
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -40,19 +40,19 @@ export default function useStableParticipant(arg0, arg1, arg2) {
       if (null == participant) {
         const user = outer1_6.getUser(tmp);
         if (null != user) {
-          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: 0.778, isSelf: 0.275 };
+          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: 0.132, isSelf: 1 };
           obj[0] = outer1_7.USER;
           obj[1] = tmp;
           obj[2] = user;
           const id = outer1_4.getId();
           obj[5] = callback(4493).getName(dependencyMap, tmp3, user);
           const obj5 = callback(4493);
-          obj[6] = callback(8813).getAvatarDecoration(user, dependencyMap);
+          obj[6] = callback(8819).getAvatarDecoration(user, dependencyMap);
           obj[10] = user.id === id;
           return obj;
         }
       } else {
-        const tmp15 = callback2(10709)(participant);
+        const tmp15 = callback2(10714)(participant);
         const type = participant.type;
         if (outer1_7.ACTIVITY === type) {
           obj = { type: null, id: null, applicationId: null };

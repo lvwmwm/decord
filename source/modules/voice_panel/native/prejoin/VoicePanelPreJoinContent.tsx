@@ -1,9 +1,9 @@
-// Module ID: 16233
-// Function ID: 16234
+// Module ID: 16247
+// Function ID: 16248
 // Name: StreamPreview
-// Dependencies: [5, 32, 19, 17, 1371, 4317, 12996, 4322, 1218, 1372, 3929, 4318, 1903, 4319, 4376, 11646, 11649, 676, 13001, 21, 4303, 11650, 712, 11645, 5129, 4483, 4367, 589, 5781, 4299, 1236, 12315, 5734, 3919, 16224, 1474, 4036, 10648, 10647, 10750, 4846, 16222, 4714, 9349, 503, 7793, 9177, 4493, 5374, 10252, 10404, 5728, 5748, 698, 16190, 16234, 4713, 4648, 8009, 16112, 16236, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 4317, 13000, 4322, 1218, 1391, 3948, 4318, 1922, 4319, 4376, 11649, 11652, 676, 13005, 21, 4303, 11653, 712, 11648, 5129, 4483, 4367, 589, 5781, 4299, 1236, 12318, 5734, 3938, 16238, 1493, 4042, 10653, 10652, 10755, 4846, 16236, 4714, 9355, 503, 7795, 9183, 4493, 5374, 10257, 10409, 5728, 5748, 698, 16206, 16248, 4713, 4648, 8011, 16129, 16250, 2]
 
-// Module 16233 (StreamPreview)
+// Module 16247 (StreamPreview)
 import set from "set";
 import useGetOrFetchApplications from "useGetOrFetchApplications";
 import importAllResult from "jsxProd";
@@ -280,7 +280,7 @@ function RoomMembersSection(title) {
     }
     return items;
   })();
-  return callback(require(9177) /* VoiceBadges */.VoicePanelFormSection, obj);
+  return callback(require(9183) /* VoiceBadges */.VoicePanelFormSection, obj);
 }
 function RoomMembers(members) {
   let blockedMembers;
@@ -555,7 +555,7 @@ let closure_32 = importAllResult.memo((blockedUserIds) => {
   obj[0] = require(503) /* encodeProperties */.ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING;
   obj = { channel_id: channelId, blocked_user_ids: Array.from(blockedUserIds), warning_surface: constants2.PRE_JOIN_SHEET };
   obj[1] = obj;
-  importDefault(9349)(obj);
+  importDefault(9355)(obj);
   const size = ignoredUserIds.size;
   const size2 = blockedUserIds.size;
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -567,7 +567,7 @@ let closure_32 = importAllResult.memo((blockedUserIds) => {
     }
     obj = { style: null, children: null };
     obj[0] = tmp.blockedMemberWarning;
-    const items = [callback(tmp5(7793).CircleErrorIcon, { color: "text-feedback-warning" }), ];
+    const items = [callback(tmp5(7795).CircleErrorIcon, { color: "text-feedback-warning" }), ];
     const obj1 = { variant: "text-sm/bold", color: "interactive-text-active", style: null, children: null };
     obj1[2] = { flexShrink: 1 };
     const items1 = [stringResult1, " ", ];
@@ -707,10 +707,10 @@ let closure_37 = { code: "function VoicePanelPreJoinContentTsx3(){const{windowDi
 let closure_38 = { code: "function VoicePanelPreJoinContentTsx4(finished=false){const{transitionState,TransitionStates,runOnJS,transitionCleanUp}=this.__closure;finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();}" };
 let obj4 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, padding: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: require("Themes").space.PX_16 };
 const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
-  const context = importAllResult.useContext(guildId(11645));
+  const context = importAllResult.useContext(guildId(11648));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(16112)(channelId);
+  const tmp2 = guildId(16129)(channelId);
   const dependencyMap = tmp2;
   let obj = channelId(589);
   let items = [getVoiceStatesForGuild, init, participantFromServer, reset];
@@ -751,7 +751,7 @@ const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
       obj[4] = ignoredUsersForVoiceChannel;
       return obj;
     }
-  }, items1, channelId(16236).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(16250).areVoicePanelPreJoinContentPropsEqual);
   obj = { item: stateFromStores, renderItem };
   return callback(channelId(4648).TransitionItem, obj);
 });

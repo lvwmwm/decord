@@ -1,10 +1,10 @@
-// Module ID: 7643
-// Function ID: 7644
+// Module ID: 7645
+// Function ID: 7646
 // Name: usePromotionMarketingComponent
-// Dependencies: [32, 19, 6914, 7344, 7644, 589, 7346, 2]
+// Dependencies: [32, 19, 6916, 7345, 7646, 589, 7347, 2]
 // Exports: usePromotionMarketingComponent
 
-// Module 7643 (usePromotionMarketingComponent)
+// Module 7645 (usePromotionMarketingComponent)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import emitChanges from "emitChanges";

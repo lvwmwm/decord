@@ -1,20 +1,20 @@
-// Module ID: 8933
-// Function ID: 8934
+// Module ID: 8939
+// Function ID: 8940
 // Name: isBlockedDomain
-// Dependencies: [676, 1898, 698, 2]
+// Dependencies: [676, 1917, 698, 2]
 
-// Module 8933 (isBlockedDomain)
+// Module 8939 (isBlockedDomain)
 import { AnalyticEvents } from "ME";
 
 const prototype = function BlockedDomainStore() {
   return Object.create(new.target.prototype);
 }.prototype;
 prototype["isBlockedDomain"] = function isBlockedDomain(arg0) {
-  let obj = require(1898) /* isBlockedDomain */;
+  let obj = require(1917) /* isBlockedDomain */;
   let isBlockedDomainResult = null;
   if (obj.isLibdiscoreInitialized()) {
-    isBlockedDomainResult = require(1898) /* isBlockedDomain */.isBlockedDomain(arg0);
-    const tmpResult = require(1898) /* isBlockedDomain */;
+    isBlockedDomainResult = require(1917) /* isBlockedDomain */.isBlockedDomain(arg0);
+    const tmpResult = require(1917) /* isBlockedDomain */;
   }
   if (tmp5) {
     obj = { blocked_domain: null };

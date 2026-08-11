@@ -1,10 +1,10 @@
-// Module ID: 16864
-// Function ID: 16865
+// Module ID: 16876
+// Function ID: 16877
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 1369, 21, 4303, 712, 1609, 5397, 5399, 4299, 1236, 1297, 4715, 2]
+// Dependencies: [19, 17, 1388, 21, 4303, 712, 1628, 5397, 5399, 4299, 1236, 1297, 4715, 2]
 // Exports: default
 
-// Module 16864 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 16876 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -34,7 +34,7 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
     children: null
   };
   obj = { style: tmp.container, children: null };
-  obj = { contentContainerStyle: { paddingBottom: importDefault(1609)().bottom }, children: null };
+  obj = { contentContainerStyle: { paddingBottom: importDefault(1628)().bottom }, children: null };
   const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1236).intl;
   obj1[2] = intl.string(markAsDismissed(1236).t.Y0PTc0);

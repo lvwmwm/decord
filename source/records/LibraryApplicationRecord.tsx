@@ -1,7 +1,7 @@
 // Module ID: 4340
 // Function ID: 4341
 // Name: createFromServer
-// Dependencies: [1912, 4341, 4342, 676, 3883, 1384, 2]
+// Dependencies: [1931, 4341, 4342, 676, 3902, 1403, 2]
 
 // Module 4340 (createFromServer)
 import "toJS";
@@ -37,7 +37,7 @@ LibraryApplicationRecord["createFromServer"] = function createFromServer(id) {
   obj = { id: id.sku.id, type: id.sku.type, premium: id.sku.premium, preorderReleaseAt: null, preorderApproximateReleaseDate: null };
   let entitlementsResult = null;
   if (null != id.sku.preorder_release_at) {
-    entitlements = importDefault(3883);
+    entitlements = importDefault(3902);
     entitlementsResult = entitlements(id.sku.preorder_release_at);
   }
   obj[3] = entitlementsResult;
@@ -82,7 +82,7 @@ prototype["getFlags"] = function getFlags() {
   return this.flags;
 };
 prototype["hasFlag"] = function hasFlag(arg0) {
-  return importAll(1384).hasFlag(this.flags, arg0);
+  return importAll(1403).hasFlag(this.flags, arg0);
 };
 prototype["isHidden"] = function isHidden() {
   return this.hasFlag(closure_5.HIDDEN);

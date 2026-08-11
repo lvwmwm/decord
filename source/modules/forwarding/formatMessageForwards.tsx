@@ -1,15 +1,15 @@
-// Module ID: 8063
-// Function ID: 8064
+// Module ID: 8065
+// Function ID: 8066
 // Name: getForwardInfo
-// Dependencies: [8064, 1372, 1891, 3929, 3938, 1903, 1416, 1236, 3971, 4494, 5918, 2]
+// Dependencies: [8066, 1391, 1910, 3948, 3957, 1922, 1435, 1236, 3990, 4494, 5918, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 8063 (getForwardInfo)
+// Module 8065 (getForwardInfo)
 import getGuild from "getGuild";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -22,7 +22,7 @@ class MessageForward {
     return obj;
   }
 }
-MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closure_9, upsertRelationship, arg3, arg4, maxSettingsForPreset) {
+MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closure_9, markAllUserIdListsStale, arg3, arg4, maxSettingsForPreset) {
   let parentMessage;
   let snapshotIndex;
   let obj = arg0;
@@ -33,9 +33,9 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
   if (closure_9 === undefined) {
     tmp = mergeGuildAvatar;
   }
-  let tmp2 = upsertRelationship;
-  if (upsertRelationship === undefined) {
-    tmp2 = upsertRelationship;
+  let tmp2 = markAllUserIdListsStale;
+  if (markAllUserIdListsStale === undefined) {
+    tmp2 = markAllUserIdListsStale;
   }
   let obj1 = arg3;
   if (arg3 === undefined) {
@@ -50,7 +50,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
     obj3 = getGuild;
   }
   ({ snapshotIndex, parentMessage } = this);
-  let obj4 = require(3971) /* resetCache */;
+  let obj4 = require(3990) /* resetCache */;
   const result = obj4.calendarFormatCompact(this.messageSnapshot.message.timestamp);
   const channel = obj.getChannel(this.parentMessage.channel_id);
   if (null != channel) {
@@ -78,7 +78,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
           obj1[0] = guild.name;
           obj2 = { id: null, size: 16, icon: null, canAnimate: false };
           ({ id: obj22[0], icon: obj22[2] } = guild);
-          obj1[1] = importDefault(1416).getGuildIconURL(obj2);
+          obj1[1] = importDefault(1435).getGuildIconURL(obj2);
           obj1[2] = result;
           const intl3 = tmp3(1236).intl;
           obj3 = { origin: null, timestamp: null };
@@ -86,7 +86,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
           obj3[1] = result;
           obj1[3] = intl3.formatToPlainString(tmp3(1236).t["+l04BN"], obj3);
           obj[1] = obj1;
-          const obj21 = importDefault(1416);
+          const obj21 = importDefault(1435);
         }
         return obj;
       } else {
@@ -137,7 +137,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
       const obj11 = { originLabel: null, originIconUrl: null, timestampLabel: null, accessibilityLabel: null };
       obj11[0] = guild1.name;
       ({ id: obj18[0], icon: obj18[2] } = guild1);
-      obj11[1] = importDefault(1416).getGuildIconURL({ id: null, size: 16, icon: null, canAnimate: false });
+      obj11[1] = importDefault(1435).getGuildIconURL({ id: null, size: 16, icon: null, canAnimate: false });
       obj11[2] = result;
       const intl2 = tmp3(1236).intl;
       const obj13 = { origin: null, timestamp: null };
@@ -146,7 +146,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
       obj11[3] = intl2.formatToPlainString(tmp3(1236).t["+l04BN"], obj13);
       obj10[1] = obj11;
       const obj12 = { id: null, size: 16, icon: null, canAnimate: false };
-      const obj17 = importDefault(1416);
+      const obj17 = importDefault(1435);
     }
     return obj10;
   }

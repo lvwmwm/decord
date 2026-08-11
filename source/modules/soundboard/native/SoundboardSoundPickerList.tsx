@@ -1,9 +1,9 @@
-// Module ID: 16145
-// Function ID: 16146
+// Module ID: 16162
+// Function ID: 16163
 // Name: getSectionLabel
-// Dependencies: [19, 17, 1903, 16140, 21, 4303, 712, 4756, 1236, 8752, 589, 3947, 8683, 8706, 16146, 4720, 12, 5779, 1297, 16152, 9961, 4267, 8705, 8008, 4299, 2]
+// Dependencies: [19, 17, 1922, 16157, 21, 4303, 712, 4756, 1236, 8758, 589, 3966, 8689, 8712, 16163, 4720, 12, 5779, 1297, 16169, 9966, 4267, 8711, 8010, 4299, 2]
 
-// Module 16145 (getSectionLabel)
+// Module 16162 (getSectionLabel)
 import importAllResult from "registerAsset";
 import { View } from "GuildIconSizes";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -50,15 +50,15 @@ function SoundPickerButtonRow(section) {
   } else {
     let result = !stateFromStores;
     if (!stateFromStores) {
-      result = tmp2(8683).isSoundboardSectionNitroLocked(channel.guild_id, section.category.categoryInfo);
-      const tmp2Result = tmp2(8683);
+      result = tmp2(8689).isSoundboardSectionNitroLocked(channel.guild_id, section.category.categoryInfo);
+      const tmp2Result = tmp2(8689);
     }
     c3 = result;
     obj = { style: null, children: null };
     const items1 = [tmp.row];
     obj[0] = items1;
     if (result) {
-      result = callback(tmp2(8706).PremiumUpsellGradientBackground, {});
+      result = callback(tmp2(8712).PremiumUpsellGradientBackground, {});
     }
     const items2 = [
       result,
@@ -171,7 +171,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     while (iter !== undefined) {
       let tmp2 = callback;
       let tmp3 = dependencyMap;
-      let arr2 = callback(8752)(nextResult.items, c6);
+      let arr2 = callback(8758)(nextResult.items, c6);
       let tmp4 = closure_9;
       let obj = { category: null, height: null, soundsByRow: null };
       obj[0] = nextResult;
@@ -264,7 +264,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
   });
   let obj3 = channel(12);
   const items2 = [mergeGuildAvatar];
-  callback2 = channel(589).useStateFromStores(items2, () => callback(3947).canUseSoundboardEverywhere(currentUser.getCurrentUser()));
+  callback2 = channel(589).useStateFromStores(items2, () => callback(3966).canUseSoundboardEverywhere(currentUser.getCurrentUser()));
   obj = {
     onLayout(nativeEvent) {
       return callback4(0, nativeEvent.nativeEvent.layout.height);
@@ -372,7 +372,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     optimizeListItemRender: true,
     inActionSheet: true
   };
-  return callback(importDefault(8008), obj);
+  return callback(importDefault(8010), obj);
 });
 let result = require("mergeGuildAvatar").fileFinishedImporting("modules/soundboard/native/SoundboardSoundPickerList.tsx");
 

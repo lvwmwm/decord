@@ -1,10 +1,10 @@
-// Module ID: 10413
-// Function ID: 10414
+// Module ID: 10418
+// Function ID: 10419
 // Name: resolveGiftCode
-// Dependencies: [5, 4341, 7001, 7009, 676, 1905, 709, 4538, 5729, 7000, 4202, 530, 10414, 10415, 2]
+// Dependencies: [5, 4341, 7004, 7012, 676, 1924, 709, 4538, 5729, 7003, 4202, 530, 10419, 10420, 2]
 // Exports: resolveGiftCode
 
-// Module 10413 (resolveGiftCode)
+// Module 10418 (resolveGiftCode)
 import GuildFeatures from "GuildFeatures";
 import addApplication from "addApplication";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -347,7 +347,7 @@ export default {
     })();
   },
   openNativeGiftCodeModal(arg0) {
-    importDefault(10414).openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
+    importDefault(10419).openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
   }
 };
 export { resolveGiftCode };

@@ -1,10 +1,10 @@
-// Module ID: 11351
-// Function ID: 11352
+// Module ID: 11356
+// Function ID: 11357
 // Name: items
-// Dependencies: [4151, 712, 8235, 8236, 1416, 2]
+// Dependencies: [4152, 712, 8239, 8240, 1435, 2]
 // Exports: getAppGradientColors, getAppIconSrc
 
-// Module 11351 (items)
+// Module 11356 (items)
 import hexToRgba from "hexToRgba";
 import hexToRgba from "hexToRgba";
 
@@ -20,26 +20,26 @@ export const getAppGradientColors = function getAppGradientColors(id2) {
     return tmp;
   } else {
     if (obj5.hasFetchedColors(id2)) {
-      let tmp6Result = tmp6(8236);
+      let tmp6Result = tmp6(8240);
       const heroColors = tmp6Result.getHeroColors(id2);
       ({ primaryColor, secondaryColor } = heroColors);
       let tmp5 = tmp;
       if (false === tmp4) {
-        tmp6Result = tmp6(4151);
-        const items = [tmp6Result.hexToRgba(primaryColor), tmp6(4151).hexToRgba(secondaryColor)];
+        tmp6Result = tmp6(4152);
+        const items = [tmp6Result.hexToRgba(primaryColor), tmp6(4152).hexToRgba(secondaryColor)];
         tmp5 = items;
-        const tmp6Result1 = tmp6(4151);
+        const tmp6Result1 = tmp6(4152);
       }
       return tmp5;
     } else {
-      tmp6(8235).maybeFetchColors(id2);
+      tmp6(8239).maybeFetchColors(id2);
       return tmp;
     }
-    obj5 = require(8235) /* hasFetchedColors */;
+    obj5 = require(8239) /* hasFetchedColors */;
   }
 };
 export const getAppIconSrc = function getAppIconSrc(id, icon, bot) {
-  let obj = importDefault(1416);
+  let obj = importDefault(1435);
   obj = { id, icon, bot, fallbackAvatar: false };
   let applicationIconURL = obj.getApplicationIconURL(obj);
   if (applicationIconURL == null) {

@@ -1,9 +1,9 @@
-// Module ID: 6097
-// Function ID: 6098
+// Module ID: 6099
+// Function ID: 6100
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6097 (metadata)
+// Module 6099 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarLockeExample-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/9f648a7a07f0d21bd65960599ac2eae0a7be276b1e3491eba88295a5082ec6fa.png";

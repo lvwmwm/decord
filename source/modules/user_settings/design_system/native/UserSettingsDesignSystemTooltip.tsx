@@ -1,10 +1,10 @@
-// Module ID: 14807
-// Function ID: 14808
+// Module ID: 14817
+// Function ID: 14818
 // Name: Content
-// Dependencies: [32, 19, 17, 21, 4303, 8895, 8654, 4714, 5768, 4299, 5328, 5715, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 8901, 8660, 4714, 5768, 4299, 5328, 5715, 2]
 // Exports: default, useCanRotate
 
-// Module 14807 (Content)
+// Module 14817 (Content)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -27,7 +27,7 @@ function Content() {
   const tmp4 = first2(React.useState(false), 2);
   first1 = tmp4[0];
   const effect = React.useEffect(() => {
-    const obj = first1(8895);
+    const obj = first1(8901);
     if (first1) {
       obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
     } else {
@@ -60,7 +60,7 @@ function Content() {
       }
     };
   }, items1);
-  let obj1 = first1(8654);
+  let obj1 = first1(8660);
   const tooltip = obj1.useTooltip(ref, memo);
   obj = { children: null };
   obj = { style: tmp.container, children: callback2(first1(4714).Button, obj1) };
@@ -102,7 +102,7 @@ export const useCanRotate = function useCanRotate() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const effect = React.useEffect(() => {
-    const obj = first1(8895);
+    const obj = first1(8901);
     if (first1) {
       obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
     } else {

@@ -1,10 +1,10 @@
-// Module ID: 1414
-// Function ID: 1415
+// Module ID: 1433
+// Function ID: 1434
 // Name: areSetsEqual
 // Dependencies: [2]
 // Exports: areSetsEqual, toSetInplace
 
-// Module 1414 (areSetsEqual)
+// Module 1433 (areSetsEqual)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/SetUtils.tsx");
 
 export const areSetsEqual = function areSetsEqual(set, set1) {

@@ -1,23 +1,23 @@
-// Module ID: 3963
-// Function ID: 3964
+// Module ID: 3982
+// Function ID: 3983
 // Name: getBraintreeSDK
-// Dependencies: [3964, 676, 3965, 3968, 1988, 3968, 2]
+// Dependencies: [3983, 676, 3984, 3987, 2007, 3987, 2]
 // Exports: collectDeviceData, getBraintreeSDK
 
-// Module 3963 (getBraintreeSDK)
+// Module 3982 (getBraintreeSDK)
 import getClient from "getClient";
 import { PaymentSettings } from "ME";
 
 const require = arg1;
-const result = require("module_3965").fileFinishedImporting("utils/BraintreeUtils.tsx");
+const result = require("module_3984").fileFinishedImporting("utils/BraintreeUtils.tsx");
 
 export const getBraintreeSDK = function getBraintreeSDK() {
-  let obj = require(3965);
+  let obj = require(3984);
   obj = {
     createPromise() {
       return callback(paths[4])(paths[3], paths.paths);
     },
-    webpackId: 3968
+    webpackId: 3987
   };
   return obj.importWithRetry(obj).then((arg0) => arg0.default);
 };
@@ -28,21 +28,21 @@ export const collectDeviceData = function collectDeviceData() {
     obj[0] = function createPromise() {
       return callback(paths[4])(paths[3], paths.paths);
     };
-    obj[1] = 3968;
-    const obj3 = client(3965);
-    let importWithRetryResult = client(3965).importWithRetry(obj);
-    let nextPromise1 = client(3965).importWithRetry(obj).then((arg0) => arg0.default).then((client) => {
+    obj[1] = 3987;
+    const obj3 = client(3984);
+    let importWithRetryResult = client(3984).importWithRetry(obj);
+    let nextPromise1 = client(3984).importWithRetry(obj).then((arg0) => arg0.default).then((client) => {
       client = client.client;
       let obj = { authorization: constants.BRAINTREE.KEY };
       obj = client.create(obj);
       return obj.then((arg0) => {
         const callback = arg0;
-        let obj = callback(3965);
+        let obj = callback(3984);
         obj = {
           createPromise() {
             return callback(paths[4])(paths[3], paths.paths);
           },
-          webpackId: 3968
+          webpackId: 3987
         };
         const importWithRetryResult = obj.importWithRetry(obj);
         return obj.importWithRetry(obj).then((arg0) => arg0.default).then((dataCollector) => {
@@ -53,14 +53,14 @@ export const collectDeviceData = function collectDeviceData() {
         });
       }).catch(() => null);
     });
-    const nextPromise = client(3965).importWithRetry(obj).then((arg0) => arg0.default);
+    const nextPromise = client(3984).importWithRetry(obj).then((arg0) => arg0.default);
   } else {
-    obj = client(3965);
+    obj = client(3984);
     obj = { createPromise: null, webpackId: null };
     obj[0] = function createPromise() {
       return callback(paths[4])(paths[3], paths.paths);
     };
-    obj[1] = 3968;
+    obj[1] = 3987;
     const importWithRetryResult1 = obj.importWithRetry(obj);
     nextPromise1 = obj.importWithRetry(obj).then((arg0) => arg0.default).then((dataCollector) => {
       dataCollector = dataCollector.dataCollector;

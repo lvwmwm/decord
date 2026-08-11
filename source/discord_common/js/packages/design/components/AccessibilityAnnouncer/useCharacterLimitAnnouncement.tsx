@@ -1,10 +1,10 @@
-// Module ID: 7978
-// Function ID: 7979
+// Module ID: 7980
+// Function ID: 7981
 // Name: useCharacterLimitAnnouncement
-// Dependencies: [19, 4014, 2]
+// Dependencies: [19, 1351, 2]
 // Exports: useCharacterLimitAnnouncement
 
-// Module 7978 (useCharacterLimitAnnouncement)
+// Module 7980 (useCharacterLimitAnnouncement)
 import noop from "noop";
 
 const require = arg1;

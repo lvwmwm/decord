@@ -1,9 +1,9 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11662
+// Function ID: 11663
 // Name: ActionChannelInfo
-// Dependencies: [32, 19, 17, 4295, 5176, 1372, 1971, 676, 1906, 21, 4303, 712, 647, 4494, 4299, 1236, 1297, 11203, 5268, 1416, 3942, 11660, 11658, 4036, 4304, 11661, 4846, 1222, 7753, 5844, 2]
+// Dependencies: [32, 19, 17, 4295, 5176, 1391, 1990, 676, 1925, 21, 4303, 712, 647, 4494, 4299, 1236, 1297, 11208, 5268, 1435, 3961, 11663, 11661, 4042, 4304, 11664, 4846, 1222, 7755, 5844, 2]
 
-// Module 11659 (ActionChannelInfo)
+// Module 11662 (ActionChannelInfo)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getAvatarURL";
 import { View } from "registerAsset";
@@ -49,7 +49,7 @@ function ChannelActionEmoji(emoji) {
   let obj = { style: tmp.emojiPlaceholder, children: null };
   obj = { size: null, source: null };
   obj[0] = id(1297).Icon.Sizes.REFRESH_SMALL_16;
-  obj[1] = importDefault(11203);
+  obj[1] = importDefault(11208);
   obj[1] = callback(id(1297).Icon, obj);
   const tmp6 = callback(View, obj);
   id = undefined;
@@ -73,7 +73,7 @@ function ChannelActionEmoji(emoji) {
     obj[0] = tmp.emoji;
     const obj1 = { uri: null };
     let tmp5Result = tmp5(5268);
-    tmp5Result = tmp5(1416);
+    tmp5Result = tmp5(1435);
     const obj2 = { id: null, animated: null, size: null };
     ({ id: obj10[0], animated: obj10[1] } = stateFromStores);
     obj2[2] = EMOJI_URL_BASE_SIZE;
@@ -83,7 +83,7 @@ function ChannelActionEmoji(emoji) {
   } else {
     tmp2Result = tmp6;
     if (null != name) {
-      const tmp5Result1 = tmp5(3942);
+      const tmp5Result1 = tmp5(3961);
       tmp2Result = tmp6;
       if (null != tmp5Result1.getByName(tmp5Result2.convertSurrogateToName(name, false))) {
         const obj3 = { style: null, variant: "heading-lg/normal", children: null };
@@ -91,7 +91,7 @@ function ChannelActionEmoji(emoji) {
         obj3[2] = name;
         tmp2Result = tmp2(tmp3(4299).Text, obj3);
       }
-      tmp5Result2 = tmp5(3942);
+      tmp5Result2 = tmp5(3961);
     }
   }
   return tmp2Result;
@@ -407,7 +407,7 @@ const memoResult1 = importAllResult.memo((channel) => {
   let channelAction;
   let completed;
   channel = channel.channel;
-  let obj = require(11660) /* useMemberActionsForChannel */;
+  let obj = require(11663) /* useMemberActionsForChannel */;
   const memberActionsForChannel = obj.useMemberActionsForChannel(channel.guild_id, channel);
   ({ channelAction, completed } = memberActionsForChannel);
   let channelId;
@@ -415,11 +415,11 @@ const memoResult1 = importAllResult.memo((channel) => {
     channelId = channelAction.channelId;
   }
   let actionType;
-  const nextMemberAction = require(11660) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
+  const nextMemberAction = require(11663) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
   if (channelAction != null) {
     actionType = channelAction.actionType;
   }
-  if (actionType !== require(11658) /* newMemberActionFromServer */.NewMemberActionTypes.VIEW) {
+  if (actionType !== require(11661) /* newMemberActionFromServer */.NewMemberActionTypes.VIEW) {
     obj = { channel: null };
     obj[0] = channel;
     let tmp7 = callback(closure_21, obj);

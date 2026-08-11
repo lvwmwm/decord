@@ -1,7 +1,7 @@
 // Module ID: 5877
 // Function ID: 5878
 // Name: fetchSubscriptionPlansForSKU
-// Dependencies: [5, 3949, 676, 1905, 709, 4623, 530, 3962, 3970, 2]
+// Dependencies: [5, 3968, 676, 1924, 709, 4623, 530, 3981, 3989, 2]
 // Exports: fetchPremiumSubscriptionPlans, fetchSubscriptionPlansBySKUs, resetSubscriptionPlanData
 
 // Module 5877 (fetchSubscriptionPlansForSKU)

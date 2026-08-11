@@ -1,10 +1,10 @@
-// Module ID: 8853
-// Function ID: 8854
+// Module ID: 8859
+// Function ID: 8860
 // Name: usePrevious
 // Dependencies: [19, 2]
 // Exports: default, useCurrentWhen, usePreviousWhen
 
-// Module 8853 (usePrevious)
+// Module 8859 (usePrevious)
 import noop from "noop";
 
 let c0;

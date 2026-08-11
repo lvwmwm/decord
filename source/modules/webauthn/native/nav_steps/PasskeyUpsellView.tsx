@@ -1,10 +1,10 @@
-// Module ID: 13972
-// Function ID: 13973
+// Module ID: 13980
+// Function ID: 13981
 // Name: PasskeyUpsellView
-// Dependencies: [32, 19, 17, 13968, 676, 1369, 21, 4303, 712, 1480, 1236, 13973, 13974, 5270, 1974, 5328, 13977, 4299, 500, 4714, 8476, 2]
+// Dependencies: [32, 19, 17, 13976, 676, 1388, 21, 4303, 712, 1499, 1236, 13981, 13982, 5270, 1993, 5328, 13985, 4299, 500, 4714, 8482, 2]
 // Exports: default
 
-// Module 13972 (PasskeyUpsellView)
+// Module 13980 (PasskeyUpsellView)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "Text";
@@ -55,11 +55,11 @@ export default function PasskeyUpsellView() {
     navigation.push(outer1_8.NAME, obj);
   }
   function onCancel() {
-    callback(13973).markDismissed(constants.USER_DISMISS);
-    const obj = callback(13973);
-    const result = callback(13974).closePasskeyUpsellModal();
+    callback(13981).markDismissed(constants.USER_DISMISS);
+    const obj = callback(13981);
+    const result = callback(13982).closePasskeyUpsellModal();
   }
-  let obj = navigation(1480);
+  let obj = navigation(1499);
   navigation = obj.useNavigation();
   const tmp4 = createCacheKey();
   [r10018, importDefault] = onRegisterSuccess(onCancel.useState(""), 2);
@@ -71,13 +71,13 @@ export default function PasskeyUpsellView() {
     obj[0] = navigation(outer1_2[13]).getHeaderCloseButton(onCancel);
     navigation.setOptions(obj);
   }, items);
-  let obj1 = importDefault(1974);
+  let obj1 = importDefault(1993);
   const articleURL = obj1.getArticleURL(HelpdeskArticles.SETTING_UP_TWO_FACTOR);
   obj = { bottom: true, style: tmp4.container, children: null };
   obj = { contentContainerStyle: tmp4.scrollViewContainer, children: null };
   obj1 = { style: tmp4.headerContainer, children: null };
   const obj2 = { source: null, style: null };
-  obj2[0] = importDefault(13977);
+  obj2[0] = importDefault(13985);
   obj2[1] = tmp4.headerImage;
   const items1 = [callback(closure_6, obj2), , ];
   const obj3 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp4.headerText, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 15982
+// Function ID: 15983
 // Name: useSortedSpamMessageRequests
-// Dependencies: [19, 1372, 1903, 5842, 589, 15955, 2]
+// Dependencies: [19, 1391, 1922, 5842, 589, 15972, 2]
 // Exports: default
 
-// Module 15965 (useSortedSpamMessageRequests)
+// Module 15982 (useSortedSpamMessageRequests)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";

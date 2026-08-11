@@ -1,7 +1,7 @@
 // Module ID: 5834
 // Function ID: 5835
 // Name: useShouldShowInlineGuildCapUpsell
-// Dependencies: [1891, 1903, 676, 589, 5835, 3947, 2]
+// Dependencies: [1910, 1922, 676, 589, 5835, 3966, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
 // Module 5834 (useShouldShowInlineGuildCapUpsell)
@@ -23,7 +23,7 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   });
   const obj2 = require(589) /* initialize */;
   const items2 = [mergeGuildAvatar];
-  const stateFromStoresObject = require(589) /* initialize */.useStateFromStoresObject(items2, () => !callback2(3947).isPremium(currentUser.getCurrentUser()));
+  const stateFromStoresObject = require(589) /* initialize */.useStateFromStoresObject(items2, () => !callback2(3966).isPremium(currentUser.getCurrentUser()));
   if (stateFromStores) {
     stateFromStores = stateFromStores1;
   }
@@ -36,7 +36,7 @@ export const hideInlineGuildCapUpsell = function hideInlineGuildCapUpsell() {
   require(5835) /* HotspotStore */.hideHotspot(require(5835) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
 };
 export const hasIncreasedGuildCap = function hasIncreasedGuildCap(currentUser) {
-  let result = importDefault(3947).canUseIncreasedGuildCap(currentUser);
+  let result = importDefault(3966).canUseIncreasedGuildCap(currentUser);
   if (!result) {
     let isStaffResult;
     if (currentUser != null) {
@@ -50,7 +50,7 @@ export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {
   let tmp = guildCount.getGuildCount() >= MAX_USER_GUILDS;
   if (tmp) {
     currentUser = currentUser.getCurrentUser();
-    let result = importDefault(3947).canUseIncreasedGuildCap(currentUser);
+    let result = importDefault(3966).canUseIncreasedGuildCap(currentUser);
     if (!result) {
       let isStaffResult;
       if (currentUser != null) {
@@ -59,7 +59,7 @@ export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {
       result = true === isStaffResult;
     }
     tmp = !result;
-    const obj2 = importDefault(3947);
+    const obj2 = importDefault(3966);
   }
   return tmp;
 };

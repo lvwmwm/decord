@@ -1,10 +1,10 @@
-// Module ID: 15914
-// Function ID: 15915
+// Module ID: 15931
+// Function ID: 15932
 // Name: WebhookItem
-// Dependencies: [5, 19, 1372, 1961, 1891, 3929, 1903, 15915, 676, 21, 4303, 712, 1480, 1416, 5374, 1297, 1236, 11, 4146, 589, 15916, 7970, 15917, 4013, 1974, 4299, 15919, 5767, 7967, 4712, 5714, 2]
+// Dependencies: [5, 19, 1391, 1980, 1910, 3948, 1922, 15932, 676, 21, 4303, 712, 1499, 1435, 5374, 1297, 1236, 11, 4148, 589, 15933, 7972, 15934, 4031, 1993, 4299, 15936, 5767, 7969, 4712, 5714, 2]
 // Exports: default
 
-// Module 15914 (WebhookItem)
+// Module 15931 (WebhookItem)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import importAllResult from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -222,15 +222,15 @@ prototype["getHelpText"] = function getHelpText() {
   if (this.props.webhookType === constants2.CHANNEL_FOLLOWER) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     let obj = { helpdeskArticle: null };
-    obj[0] = importDefault(1974).getArticleURL(constants.CHANNEL_FOLLOWING);
+    obj[0] = importDefault(1993).getArticleURL(constants.CHANNEL_FOLLOWING);
     let formatResult = intl2.format(require(1236) /* getSystemLocale */.t["5u+aV1"], obj);
-    const obj4 = importDefault(1974);
+    const obj4 = importDefault(1993);
   } else {
     const intl = require(1236) /* getSystemLocale */.intl;
     obj = { articleURL: null };
-    obj[0] = importDefault(1974).getArticleURL(constants.WEBHOOKS_INTRODUCTION);
+    obj[0] = importDefault(1993).getArticleURL(constants.WEBHOOKS_INTRODUCTION);
     formatResult = intl.format(require(1236) /* getSystemLocale */.t["3hX7G+"], obj);
-    const obj2 = importDefault(1974);
+    const obj2 = importDefault(1993);
   }
   return formatResult;
 };
@@ -256,7 +256,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   items[1] = tmp4Result;
   if (0 === found.length) {
     obj = { Illustration: null, title: null };
-    obj[0] = tmp5(15919).WebhookEmpty;
+    obj[0] = tmp5(15936).WebhookEmpty;
     if (webhookType === constants2.CHANNEL_FOLLOWER) {
       const intl2 = tmp5(1236).intl;
       dkHRkE = tmp5(1236).t.dkHRkE;
@@ -303,7 +303,7 @@ prototype["render"] = function render() {
   obj[1] = tmp.content;
   obj[2] = this.renderWebhooks();
   obj[2] = callback(require(4712) /* Stack */.Stack, obj);
-  const items = [callback(require(7967) /* Form */.Form, obj), callback(require(5714) /* NavScrim */.NavScrim, {})];
+  const items = [callback(require(7969) /* Form */.Form, obj), callback(require(5714) /* NavScrim */.NavScrim, {})];
   obj[0] = items;
   return callback2(closure_19, obj);
 };

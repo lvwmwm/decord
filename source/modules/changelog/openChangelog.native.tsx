@@ -1,10 +1,10 @@
-// Module ID: 16398
-// Function ID: 16399
+// Module ID: 16414
+// Function ID: 16415
 // Name: openChangelog
-// Dependencies: [1959, 4158, 4509, 14728, 1988, 2]
+// Dependencies: [1978, 4158, 4509, 14738, 2007, 2]
 // Exports: openChangelog
 
-// Module 16398 (openChangelog)
+// Module 16414 (openChangelog)
 import { CHANGELOG_MODAL_KEY } from "CHANGELOG_MODAL_KEY";
 
 const result = require("module_4509").fileFinishedImporting("modules/changelog/openChangelog.native.tsx");
@@ -20,7 +20,7 @@ export const openChangelog = function openChangelog() {
     const obj = require(4158) /* navigationToRootTabHelper */;
   }
   if (!isModalOpenResult) {
-    importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(14728, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
+    importDefault(4509).pushLazy(require(2007) /* asyncRequireImpl */(14738, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
     const obj2 = importDefault(4509);
   }
 };

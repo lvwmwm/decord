@@ -1,9 +1,9 @@
-// Module ID: 14724
-// Function ID: 14725
+// Module ID: 14734
+// Function ID: 14735
 // Name: _handleUploadDebugLogSettingPress
-// Dependencies: [5, 17, 676, 21, 644, 705, 500, 9870, 4002, 4259, 1236, 10447, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 500, 9875, 4021, 4259, 1236, 10452, 2]
 
-// Module 14724 (_handleUploadDebugLogSettingPress)
+// Module 14734 (_handleUploadDebugLogSettingPress)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { DebugLogCategory } from "ME";
@@ -70,7 +70,7 @@ function _handleUploadDebugLogSettingPress() {
         } else {
           if (2 === tmp8) {
             c3 = 1;
-            let obj1 = callback2(4002);
+            let obj1 = callback2(4021);
             obj1 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
             obj1[1] = callback(4259).CircleInformationIcon;
             const intl = callback(1236).intl;
@@ -90,9 +90,9 @@ function _handleUploadDebugLogSettingPress() {
             obj2[1] = callback(4259).CircleInformationIcon;
             const intl2 = callback(1236).intl;
             obj2[2] = intl2.string(callback(1236).t.BvyxE7);
-            callback2(4002).open(obj2);
+            callback2(4021).open(obj2);
             c3 = 1;
-            const obj6 = callback2(4002);
+            const obj6 = callback2(4021);
           }
           c3 = 0;
           (function onUploadDebugLogsRequestFinish() {

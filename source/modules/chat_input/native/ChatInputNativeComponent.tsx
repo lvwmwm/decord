@@ -1,26 +1,22 @@
-// Module ID: 11622
-// Function ID: 11623
+// Module ID: 11625
+// Function ID: 11626
 // Name: ChatInputNativeComponent
-// Dependencies: [32, 19, 17, 4119, 21, 4303, 712, 1236, 4239, 4153, 4151, 500, 11373, 11379, 11381, 2]
+// Dependencies: [19, 4124, 21, 4303, 712, 1236, 4239, 1363, 4152, 500, 11378, 11384, 2]
 
-// Module 11622 (ChatInputNativeComponent)
-import _slicedToArray from "_slicedToArray";
-import importAllResult from "noop";
+// Module 11625 (ChatInputNativeComponent)
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
-import set from "set";
-import set from "get ActivityIndicator";
+import importAllResult from "noop";
 
 const require = arg1;
-let c4 = importAllResult;
 let obj = { style: { flex: 1 }, textColor: null, placeholderColor: null };
 obj = { color: require("Themes").colors.TEXT_DEFAULT };
 obj[1] = obj;
 createCacheKey = { color: require("Themes").colors.TEXT_MUTED };
 obj[2] = createCacheKey;
-let closure_7 = createCacheKey.createStyles(obj);
-const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) => {
+let closure_5 = createCacheKey.createStyles(obj);
+const forwardRefResult = require("noop").forwardRef((markAsSpoilerTitle, ref) => {
   let accessibilityLabel;
   let customKeyboard;
   let editable;
@@ -41,16 +37,15 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
   markAsSpoilerTitle = markAsSpoilerTitle.markAsSpoilerTitle;
   ({ accessibilityLabel, customKeyboard, placeholder, editable } = markAsSpoilerTitle);
   if (markAsSpoilerTitle === undefined) {
-    const intl = _require(1236).intl;
-    markAsSpoilerTitle = intl.string(_require(1236).t["gsI+xC"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    markAsSpoilerTitle = intl.string(require(1236) /* getSystemLocale */.t["gsI+xC"]);
   }
-  _require = undefined;
   ({ setNoExtractUI, shouldShowCursor, onBeginFocus, onEndBlur, onChangeContentSize, onMaxHeightChanged, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, verticalInset } = markAsSpoilerTitle);
-  const tmp3 = callback2();
-  let obj = _require(4239);
+  const tmp3 = callback();
+  let obj = require(4239) /* useTheme */;
   const theme = obj.useTheme();
-  const isThemeDarkResult = _require(4153).isThemeDark(theme);
-  const obj2 = _require(4153);
+  const isThemeDarkResult = require(1363) /* AccessibilityAnnouncer */.isThemeDark(theme);
+  const obj2 = require(1363) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   if (isThemeDarkResult) {
     let PRIMARY_500 = unsafe_rawColors.WHITE;
@@ -63,7 +58,7 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
   if (null != gradientPreset.gradientPreset) {
     num = 0.8;
   }
-  const obj3 = _require(4151);
+  const obj3 = require(4152) /* hexToRgba */;
   let tmp4Result = tmp4(500);
   let tmp11;
   if (!tmp4Result.isAndroid()) {
@@ -74,30 +69,16 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
   if (!tmp4Result.isAndroid()) {
     tmp12 = customKeyboard;
   }
-  const hexWithOpacityResult = _require(4151).hexWithOpacity(PRIMARY_500, num);
+  const hexWithOpacityResult = require(4152) /* hexToRgba */.hexWithOpacity(PRIMARY_500, num);
   let num2 = 2;
   if (isThemeDarkResult) {
     num2 = 1;
   }
-  const tmp4Result1 = _require(500);
-  const tmp13 = tmp9(11373)(onMaxHeightChanged);
-  _require = _require(11379).useShouldUseFabricChatInput();
-  obj = { accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: str, markAsSpoilerTitle, maxHeight: tmp13, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset };
-  return jsx(callback(importAllResult.useState(() => {
-    if (callback) {
-      let _default = callback(outer1_2[14]).default;
-    } else {
-      _default = outer1_8;
-    }
-    return _default;
-  }), 1)[0], { accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: str, markAsSpoilerTitle, maxHeight: tmp13, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset });
+  const tmp4Result1 = require(500) /* set */;
+  obj = { accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: str, markAsSpoilerTitle, maxHeight: tmp9(11378)(onMaxHeightChanged), onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset };
+  return jsx(require(11384) /* __INTERNAL_VIEW_CONFIG */.default, { accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: str, markAsSpoilerTitle, maxHeight: tmp9(11378)(onMaxHeightChanged), onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset });
 });
-if (set.isAndroid()) {
-  let _default = require("__INTERNAL_VIEW_CONFIG").default;
-} else {
-  _default = require("get ActivityIndicator").requireNativeComponent("DCDChatInputLegacy");
-}
 forwardRefResult.displayName = "ChatInputNativeComponent";
-const result = set.fileFinishedImporting("modules/chat_input/native/ChatInputNativeComponent.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/ChatInputNativeComponent.tsx");
 
 export default forwardRefResult;

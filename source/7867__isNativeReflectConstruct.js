@@ -1,7 +1,7 @@
 // Module ID: 7867
 // Function ID: 7868
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7868]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7868, 7852, 7861]
 
 // Module 7867 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Defs = importDefault;
+const ClipPath = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Defs {
+class ClipPath {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Defs);
+    tmp = _isNativeReflectConstruct(this, ClipPath);
     tmp2 = __esModule;
-    obj = __esModule(Defs);
+    obj = __esModule(ClipPath);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,16 +51,21 @@ class Defs {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Defs, require("noop").Component);
+require("_inherits")(ClipPath, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "render",
     value: function render() {
-      return jsx(Defs(7868), { children: this.props.children });
+      const props = this.props;
+      const obj = { ref: this.refMethod };
+      const tmp = importDefault(7868);
+      const merged = Object.assign(ClipPath(7852).extract(this, props));
+      obj.children = props.children;
+      return <tmp ref={this.refMethod} />;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Defs, items);
-importDefaultResultResult.displayName = "Defs";
+const importDefaultResultResult = importDefaultResult(ClipPath, items);
+importDefaultResultResult.displayName = "ClipPath";
 
 export default importDefaultResultResult;

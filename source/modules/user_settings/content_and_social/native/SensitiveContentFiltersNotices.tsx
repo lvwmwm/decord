@@ -1,10 +1,10 @@
-// Module ID: 14064
-// Function ID: 14065
+// Module ID: 14072
+// Function ID: 14073
 // Name: SensitiveContentFiltersTeenNotice
-// Dependencies: [19, 7779, 21, 5917, 13994, 1236, 3998, 1974, 7797, 7799, 2]
+// Dependencies: [19, 7781, 21, 5917, 14002, 1236, 4017, 1993, 7799, 7801, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 14064 (SensitiveContentFiltersTeenNotice)
+// Module 14072 (SensitiveContentFiltersTeenNotice)
 import "noop";
 import { SafetySettingsNoticeType } from "SafetyToastType";
 import { jsx } from "jsxProd";
@@ -22,16 +22,16 @@ export const SensitiveContentFiltersTeenNotice = function SensitiveContentFilter
     obj.openURL(outer1_1(outer1_2[7]).getArticleURL(closure_0));
   };
   obj[2] = SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE;
-  return jsx(importDefault(13994), { label: null, labelHook: null, noticeType: null });
+  return jsx(importDefault(14002), { label: null, labelHook: null, noticeType: null });
 };
 export const SensitiveContentFiltersAgeVerificationNotice = function SensitiveContentFiltersAgeVerificationNotice() {
   let obj = { label: null, labelHook: null, noticeType: null };
   obj[0] = require(1236) /* getSystemLocale */.t.OX4ybh;
   obj[1] = function labelHook() {
-    let obj = callback2(7797);
-    obj = { entryPoint: callback(7799).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+    let obj = callback2(7799);
+    obj = { entryPoint: callback(7801).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   };
   obj[2] = SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE;
-  return jsx(importDefault(13994), { label: null, labelHook: null, noticeType: null });
+  return jsx(importDefault(14002), { label: null, labelHook: null, noticeType: null });
 };

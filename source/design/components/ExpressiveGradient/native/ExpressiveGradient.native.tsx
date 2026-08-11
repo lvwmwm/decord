@@ -1,10 +1,10 @@
-// Module ID: 7734
-// Function ID: 7735
+// Module ID: 7736
+// Function ID: 7737
 // Name: ExpressiveGradient
-// Dependencies: [19, 17, 21, 712, 4005, 689, 4725, 2]
+// Dependencies: [19, 17, 21, 712, 4024, 689, 4725, 2]
 // Exports: ExpressiveGradient
 
-// Module 7734 (ExpressiveGradient)
+// Module 7736 (ExpressiveGradient)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -58,11 +58,11 @@ export const ExpressiveGradient = function ExpressiveGradient(color) {
   } else {
     tmp3 = str;
   }
-  obj = require(4005) /* map */;
+  obj = require(4024) /* map */;
   const token = obj.useToken(tmp3.start);
-  let obj1 = require(4005) /* map */;
+  let obj1 = require(4024) /* map */;
   const token1 = obj1.useToken(tmp3.end);
-  let obj2 = require(4005) /* map */;
+  let obj2 = require(4024) /* map */;
   const token2 = obj2.useToken(backgroundColor);
   let obj3 = importDefault(689)(token2);
   obj = { style: items, children: null };

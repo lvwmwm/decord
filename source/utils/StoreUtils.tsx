@@ -1,7 +1,7 @@
 // Module ID: 4541
 // Function ID: 4542
 // Name: _httpGetWithCountryCodeQuery
-// Dependencies: [5, 1218, 3949, 3950, 3953, 676, 4542, 4540, 4621, 1450, 4623, 530, 500, 1236, 2]
+// Dependencies: [5, 1218, 3968, 3969, 3972, 676, 4542, 4540, 4621, 1469, 4623, 530, 500, 1236, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
 // Module 4541 (_httpGetWithCountryCodeQuery)
@@ -63,7 +63,7 @@ function _httpGetWithCountryCodeQuery() {
                   let closure_0 = arg0;
                   let c2 = 0;
                   let c3 = 0;
-                  return (/* F120291 */ function*() { ... })();
+                  return (/* F120388 */ function*() { ... })();
                 });
                 return new Promise(function() {
                   const self = this;
@@ -204,10 +204,10 @@ export const getAssetURL = function getAssetURL(closure_7, mimeType, arg2, mp4) 
   }
   let sum = combined;
   if (null != arg2) {
-    const obj = require(1450) /* handleImageLoad */;
+    const obj = require(1469) /* handleImageLoad */;
     const _HermesInternal3 = HermesInternal;
-    sum = combined + "?size=" + obj.getBestMediaProxySize(arg2 * require(1450) /* handleImageLoad */.getDevicePixelRatio());
-    const obj2 = require(1450) /* handleImageLoad */;
+    sum = combined + "?size=" + obj.getBestMediaProxySize(arg2 * require(1469) /* handleImageLoad */.getDevicePixelRatio());
+    const obj2 = require(1469) /* handleImageLoad */;
   }
   return sum;
 };

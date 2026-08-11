@@ -1,7 +1,7 @@
 // Module ID: 4713
 // Function ID: 4714
 // Name: CONFIG_NEVER_ANIMATE
-// Dependencies: [4305, 4306, 4036, 2]
+// Dependencies: [4305, 4306, 4042, 2]
 // Exports: withSpring
 
 // Module 4713 (CONFIG_NEVER_ANIMATE)
@@ -22,19 +22,19 @@ function withSpring(value, SUBTLE_SPRING, fn, fn2) {
       }
       obj = {};
       const merged = Object.assign(obj);
-      obj.reduceMotion = tmp(4036).ReduceMotion.Never;
+      obj.reduceMotion = tmp(4042).ReduceMotion.Never;
       tmp7 = obj;
     }
     let tmp5 = tmp7;
   } else {
     tmp5 = CONFIG_NEVER_ANIMATE;
   }
-  return require(4036).withSpring(value, tmp5, fn2);
+  return require(4042).withSpring(value, tmp5, fn2);
 }
-withSpring.__closure = { accessibilityPreferencesSharedValue: require("mutable").accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE, ReduceMotion: require("module_4036").ReduceMotion, REAwithSpring: require("module_4036").withSpring };
+withSpring.__closure = { accessibilityPreferencesSharedValue: require("mutable").accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE, ReduceMotion: require("module_4042").ReduceMotion, REAwithSpring: require("module_4042").withSpring };
 withSpring.__workletHash = 14783154107972;
 withSpring.__initData = { code: "function withSpring_springTsx1(toValue,config,shouldAnimate='respect-motion-settings',callback){const{accessibilityPreferencesSharedValue,CONFIG_NEVER_ANIMATE,ReduceMotion,REAwithSpring}=this.__closure;const reducedMotionEnabled=accessibilityPreferencesSharedValue.get().reduceMotion;const animate=shouldAnimate==='animate-always'||shouldAnimate==='respect-motion-settings'&&!reducedMotionEnabled;const configForRea=!animate?CONFIG_NEVER_ANIMATE:shouldAnimate==='animate-always'?{...(config!==null&&config!==void 0?config:{}),reduceMotion:ReduceMotion.Never}:config;return REAwithSpring(toValue,configForRea,callback);}" };
-let obj = { accessibilityPreferencesSharedValue: require("mutable").accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE, ReduceMotion: require("module_4036").ReduceMotion, REAwithSpring: require("module_4036").withSpring };
-const result = require("module_4036").fileFinishedImporting("design/animation/reanimated/spring/spring.tsx");
+let obj = { accessibilityPreferencesSharedValue: require("mutable").accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE, ReduceMotion: require("module_4042").ReduceMotion, REAwithSpring: require("module_4042").withSpring };
+const result = require("module_4042").fileFinishedImporting("design/animation/reanimated/spring/spring.tsx");
 
 export { withSpring };

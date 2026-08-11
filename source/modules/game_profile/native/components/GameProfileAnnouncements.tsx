@@ -1,10 +1,10 @@
-// Module ID: 9334
-// Function ID: 9335
+// Module ID: 9340
+// Function ID: 9341
 // Name: EmbedAnnouncementCard
-// Dependencies: [19, 17, 21, 4733, 1236, 4303, 712, 9335, 4299, 9337, 3971, 7655, 5728, 9339, 9283, 9277, 9342, 4714, 5778, 2]
+// Dependencies: [19, 17, 21, 4733, 1236, 4303, 712, 9341, 4299, 9343, 3990, 7657, 5728, 9345, 9289, 9283, 9348, 4714, 5778, 2]
 // Exports: default
 
-// Module 9334 (EmbedAnnouncementCard)
+// Module 9340 (EmbedAnnouncementCard)
 import importAllResult from "set";
 import get_ActivityIndicator from "Button";
 import jsxProd from "jsxProd";
@@ -44,7 +44,7 @@ function EmbedAnnouncementCard(message) {
   }
   let posterUrl = null;
   if (null != proxyUrl) {
-    let obj1 = message(9335);
+    let obj1 = message(9341);
     posterUrl = obj1.getPosterUrl(proxyUrl, 160, c12);
   }
   if (posterUrl == null) {
@@ -108,7 +108,7 @@ function EmbedAnnouncementCard(message) {
       obj9[1] = message.media.placeholder;
       obj9[2] = message.media.placeholderVersion;
       obj9[3] = tmp.mediaImage;
-      obj8[1] = tmp12(message(9337).ImageWithPlaceholder, obj9);
+      obj8[1] = tmp12(message(9343).ImageWithPlaceholder, obj9);
       tmp12Result1 = tmp12(tmp15, obj8);
     }
     items3[1] = tmp12Result1;
@@ -153,7 +153,7 @@ function EmbedAnnouncementCard(message) {
     const items5 = [str2, ];
     const _Date = Date;
     const date = new Date(message.timestamp);
-    items5[1] = message(3971).dateFormat(date, "LL");
+    items5[1] = message(3990).dateFormat(date, "LL");
     obj17[2] = items5;
     items4[1] = closure_11(message(4299).Text, obj17);
     tmp14Result = message.reactionCount > 0;
@@ -162,7 +162,7 @@ function EmbedAnnouncementCard(message) {
       obj18[0] = tmp.reactionInfo;
       const obj19 = { size: "xs", color: null };
       obj19[1] = importDefault(712).colors.TEXT_MUTED;
-      const items6 = [tmp12(tmp35(7655).ReactionIcon, obj19), ];
+      const items6 = [tmp12(tmp35(7657).ReactionIcon, obj19), ];
       let tmp46 = null != obj20;
       if (tmp46) {
         tmp46 = obj20.locale === tmp35(1236).intl.currentLocale;
@@ -217,7 +217,7 @@ function MessageAnnouncementCard(message) {
   }
   let posterUrl = null;
   if (null != proxyUrl) {
-    let obj1 = message(9335);
+    let obj1 = message(9341);
     posterUrl = obj1.getPosterUrl(proxyUrl, 160, c12);
   }
   if (posterUrl == null) {
@@ -244,7 +244,7 @@ function MessageAnnouncementCard(message) {
     obj1[1] = message.media.placeholder;
     obj1[2] = message.media.placeholderVersion;
     obj1[3] = tmp.mediaImage;
-    obj[1] = callback(message(9337).ImageWithPlaceholder, obj1);
+    obj[1] = callback(message(9343).ImageWithPlaceholder, obj1);
     tmp13 = callback(closure_7, obj);
   }
   const items = [tmp13, ];
@@ -271,7 +271,7 @@ function MessageAnnouncementCard(message) {
   items1[1] = tmp23;
   const obj7 = { style: tmp.metadataRow, children: null };
   const obj8 = { variant: "text-xs/medium", color: "text-muted", children: null };
-  let obj12 = message(3971);
+  let obj12 = message(3990);
   obj8[2] = obj12.dateFormat(new Date(message.timestamp), "LL");
   const items2 = [callback(message(4299).Text, obj8), ];
   let tmp11Result = message.reactionCount > 0;
@@ -280,7 +280,7 @@ function MessageAnnouncementCard(message) {
     obj9[0] = tmp.reactionInfo;
     const obj10 = { size: "xs", color: null };
     obj10[1] = importDefault(712).colors.TEXT_MUTED;
-    const items3 = [tmp27(tmp28(7655).ReactionIcon, obj10), ];
+    const items3 = [tmp27(tmp28(7657).ReactionIcon, obj10), ];
     let tmp34 = null != obj11;
     if (tmp34) {
       tmp34 = obj11.locale === tmp28(1236).intl.currentLocale;
@@ -366,7 +366,7 @@ function PollAnnouncementCard(message) {
     const _Date = Date;
     const date = new Date(message.timestamp);
     obj6[0] = date;
-    obj6[1] = message(9335).getPollExpiryLabel(poll);
+    obj6[1] = message(9341).getPollExpiryLabel(poll);
     obj5[2] = intl2.format(message(1236).t.t0FTsH, obj6);
     obj4[1] = callback(message(4299).Text, obj5);
     items[2] = callback(closure_7, obj4);

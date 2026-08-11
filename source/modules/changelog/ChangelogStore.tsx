@@ -1,7 +1,7 @@
 // Module ID: 4314
 // Function ID: 4315
 // Name: handleUserSettingsProtoStoreChange
-// Dependencies: [1975, 1340, 1959, 595, 3974, 589, 709, 2]
+// Dependencies: [1994, 1340, 1978, 595, 3993, 589, 709, 2]
 
 // Module 4314 (handleUserSettingsProtoStoreChange)
 import _getSystemLocale from "_getSystemLocale";
@@ -14,7 +14,7 @@ let c4;
 let c5;
 const require = arg1;
 function handleUserSettingsProtoStoreChange() {
-  const LastReceivedChangelogId = require(3974) /* explicitContentFromProto */.LastReceivedChangelogId;
+  const LastReceivedChangelogId = require(3993) /* explicitContentFromProto */.LastReceivedChangelogId;
   const setting = LastReceivedChangelogId.getSetting();
 }
 ({ AssetType: c4, ChangelogLoadState: c5 } = CHANGELOG_MODAL_KEY);

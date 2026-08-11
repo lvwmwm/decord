@@ -1,7 +1,7 @@
 // Module ID: 4745
 // Function ID: 4746
 // Name: getChannelRoleSubscriptionStatus
-// Dependencies: [1962, 1372, 3929, 676, 589, 2]
+// Dependencies: [1981, 1391, 3948, 676, 589, 2]
 // Exports: default
 
 // Module 4745 (getChannelRoleSubscriptionStatus)

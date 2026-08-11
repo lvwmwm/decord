@@ -1,10 +1,10 @@
-// Module ID: 13786
-// Function ID: 13787
+// Module ID: 13794
+// Function ID: 13795
 // Name: transformGuildMember
-// Dependencies: [1880, 2]
+// Dependencies: [1899, 2]
 // Exports: default
 
-// Module 13786 (transformGuildMember)
+// Module 13794 (transformGuildMember)
 const result = require("set").fileFinishedImporting("modules/rpc/helpers/transformGuildMember.tsx");
 
 export default function transformGuildMember(userId) {
@@ -15,7 +15,7 @@ export default function transformGuildMember(userId) {
   let pronouns;
   const obj = { user_id: userId.userId, nick: userId.nick, guild_id: userId.guildId, avatar: userId.avatar, avatar_decoration_data: null, banner: null, bio: null, pronouns: null, color_string: null };
   ({ avatarDecoration, banner, bio, pronouns, colorString } = userId);
-  obj[4] = require(1880) /* parseAvatarDecorationData */.parseAvatarDecorationData(avatarDecoration);
+  obj[4] = require(1899) /* parseAvatarDecorationData */.parseAvatarDecorationData(avatarDecoration);
   obj[5] = banner;
   obj[6] = bio;
   obj[7] = pronouns;

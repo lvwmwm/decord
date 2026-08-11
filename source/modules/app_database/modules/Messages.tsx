@@ -1,10 +1,10 @@
-// Module ID: 6936
-// Function ID: 6937
+// Module ID: 6939
+// Function ID: 6940
 // Name: computeUsersAndMembers
-// Dependencies: [5, 32, 4994, 1372, 6937, 3, 4993, 1936, 6943, 6946, 1937, 2]
+// Dependencies: [5, 32, 4994, 1391, 6940, 3, 4993, 1955, 6946, 6949, 1956, 2]
 // Exports: isLikelyNotDelta
 
-// Module 6936 (computeUsersAndMembers)
+// Module 6939 (computeUsersAndMembers)
 import timestamp from "timestamp";
 import _slicedToArray from "_slicedToArray";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -213,7 +213,7 @@ prototype2["handleMessageCreate"] = function handleMessageCreate(optimistic, dat
     tmp = null != optimistic.sendMessageOptions;
   }
   if (!tmp) {
-    obj = obj(6943);
+    obj = obj(6946);
     if (obj.isReadableChannelId(optimistic.channelId)) {
       const self = this;
       const self2 = this;
@@ -224,7 +224,7 @@ prototype2["handleMessageCreate"] = function handleMessageCreate(optimistic, dat
 prototype2["handleMessageUpdate"] = function handleMessageUpdate(message, database) {
   let isReadableChannelIdResult = null != message.message.id && null != message.message.channel_id;
   if (isReadableChannelIdResult) {
-    obj = obj(6943);
+    obj = obj(6946);
     isReadableChannelIdResult = obj.isReadableChannelId(message.message.channel_id);
   }
   if (isReadableChannelIdResult) {
@@ -244,7 +244,7 @@ prototype2["handleMessagePreviewsLoaded"] = function handleMessagePreviewsLoaded
     let tmp2 = item10009;
     let tmp3 = obj;
     let tmp4 = dependencyMap;
-    let obj = obj(6943);
+    let obj = obj(6946);
     if (obj.isReadableChannelId(item10009.channel_id)) {
       let tmp5 = item10009;
       let tmp6 = self;
@@ -258,7 +258,7 @@ prototype2["handleMessagePreviewsLoaded"] = function handleMessagePreviewsLoaded
 prototype2["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(channelId, database) {
   basicChannel = basicChannel.getBasicChannel(channelId.channelId);
   if (null != basicChannel) {
-    obj = obj(6943);
+    obj = obj(6946);
     if (obj.isReadableChannelId(channelId.channelId)) {
       const self = this;
       if (!channelId.isAfter) {
@@ -304,22 +304,22 @@ prototype2["resetInMemoryState"] = function resetInMemoryState() {
 
 };
 prototype2["insertStale"] = function insertStale(guildId, channel_id, item10009, database) {
-  const obj = importDefault(1936);
+  const obj = importDefault(1955);
   const result = _handleConnectionOpen.lastTimeConnectedChanged();
-  const KvMessage = obj(6946).KvMessage;
+  const KvMessage = obj(6949).KvMessage;
   const messagesTransactionResult = obj.messagesTransaction(database);
-  messagesTransactionResult.put(guildId, channel_id, KvMessage.fromMessage(guildId, channel_id, item10009, result), obj(1937).ConflictOptions.Skip);
+  messagesTransactionResult.put(guildId, channel_id, KvMessage.fromMessage(guildId, channel_id, item10009, result), obj(1956).ConflictOptions.Skip);
 };
 prototype2["upsertOne"] = function upsertOne(guildId, channelId, message, database) {
-  const obj = importDefault(1936);
+  const obj = importDefault(1955);
   const messagesTransactionResult = obj.messagesTransaction(database);
   const result = _handleConnectionOpen.lastTimeConnectedChanged();
-  const KvMessage = obj(6946).KvMessage;
-  messagesTransactionResult.put(guildId, channelId, KvMessage.fromMessage(guildId, channelId, message, result), obj(1937).ConflictOptions.Replace);
+  const KvMessage = obj(6949).KvMessage;
+  messagesTransactionResult.put(guildId, channelId, KvMessage.fromMessage(guildId, channelId, message, result), obj(1956).ConflictOptions.Replace);
   messagesTransactionResult.trimChannel(guildId, channelId, handleSelectedChannelStoreChanged.saveLimit(channelId));
 };
 prototype2["upsertMany"] = function upsertMany(guild_id, channelId, messages, database) {
-  const obj = importDefault(1936);
+  const obj = importDefault(1955);
   const messagesTransactionResult = obj.messagesTransaction(database);
   const result = _handleConnectionOpen.lastTimeConnectedChanged();
   const iter = messages[Symbol.iterator]();
@@ -327,7 +327,7 @@ prototype2["upsertMany"] = function upsertMany(guild_id, channelId, messages, da
   while (iter !== undefined) {
     let tmp3 = obj;
     let tmp4 = dependencyMap;
-    let KvMessage = obj(6946).KvMessage;
+    let KvMessage = obj(6949).KvMessage;
     let tmp5 = KvMessage;
     let tmp6 = guild_id;
     let tmp7 = channelId;
@@ -341,7 +341,7 @@ prototype2["upsertMany"] = function upsertMany(guild_id, channelId, messages, da
 prototype2["replaceChannel"] = function replaceChannel(arg0, channelId, arr, database) {
   let closure_0 = arg0;
   const importDefault = channelId;
-  const messagesTransactionResult = importDefault(1936).messagesTransaction(database);
+  const messagesTransactionResult = importDefault(1955).messagesTransaction(database);
   const dependencyMap = _handleConnectionOpen.lastTimeConnectedChanged();
   const saveLimitResult = handleSelectedChannelStoreChanged.saveLimit(channelId);
   let substr = arr;
@@ -431,16 +431,16 @@ prototype2["updateOne"] = function updateOne(guildId, channel_id, message, datab
   })();
 };
 prototype2["deleteOne"] = function deleteOne(arg0, arg1, arg2, database) {
-  const obj = importDefault(1936);
-  importDefault(1936).messagesTransaction(database).deleteMessage(arg0, arg1, arg2);
+  const obj = importDefault(1955);
+  importDefault(1955).messagesTransaction(database).deleteMessage(arg0, arg1, arg2);
 };
 prototype2["deleteChannel"] = function deleteChannel(arg0, arg1, database) {
-  const obj = importDefault(1936);
-  importDefault(1936).messagesTransaction(database).deleteChannel(arg0, arg1);
+  const obj = importDefault(1955);
+  importDefault(1955).messagesTransaction(database).deleteChannel(arg0, arg1);
 };
 prototype2["deleteGuild"] = function deleteGuild(arg0, database) {
-  const obj = importDefault(1936);
-  importDefault(1936).messagesTransaction(database).deleteGuild(arg0);
+  const obj = importDefault(1955);
+  importDefault(1955).messagesTransaction(database).deleteGuild(arg0);
 };
 let set = Object.create(Messages.prototype);
 set.actions = {

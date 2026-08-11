@@ -1,9 +1,9 @@
-// Module ID: 16591
-// Function ID: 16592
+// Module ID: 16603
+// Function ID: 16604
 // Name: prototype
-// Dependencies: [5261, 4001, 2]
+// Dependencies: [5261, 4020, 2]
 
-// Module 16591 (prototype)
+// Module 16603 (prototype)
 import "initialize";
 
 let require = arg1;
@@ -19,10 +19,10 @@ let prototype = function VoiceProcessingErrorManager() {
     }
   };
   applyArgumentsResult.handleNoiseCancellationError = function handleNoiseCancellationError() {
-    const result = applyArgumentsResult(4001).presentNoiseCancellationError();
+    const result = applyArgumentsResult(4020).presentNoiseCancellationError();
   };
   applyArgumentsResult.handleVoiceActivityDetectionError = function handleVoiceActivityDetectionError() {
-    const result = applyArgumentsResult(4001).presentVoiceActivityDetectionError();
+    const result = applyArgumentsResult(4020).presentVoiceActivityDetectionError();
   };
   return applyArgumentsResult;
 }.prototype;

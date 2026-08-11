@@ -1,7 +1,7 @@
 // Module ID: 5858
 // Function ID: 5859
 // Name: updateProduct
-// Dependencies: [5859, 505, 5855, 3962, 589, 709, 2]
+// Dependencies: [5859, 505, 5855, 3981, 589, 709, 2]
 
 // Module 5858 (updateProduct)
 import GPlayConnectionState from "GPlayConnectionState";
@@ -67,8 +67,8 @@ function skusLoaded(arg0) {
       let c13 = false;
     }
   } catch (tmp7) {
-    let result = require(3962) /* _createGatewayCheckoutContext */.captureBillingException(tmp7);
-    const obj = require(3962) /* _createGatewayCheckoutContext */;
+    let result = require(3981) /* _createGatewayCheckoutContext */.captureBillingException(tmp7);
+    const obj = require(3981) /* _createGatewayCheckoutContext */;
   }
 }
 GPlayConnectionState = GPlayConnectionState.GPlayConnectionState;

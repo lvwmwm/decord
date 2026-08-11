@@ -1,12 +1,12 @@
-// Module ID: 7055
-// Function ID: 7056
+// Module ID: 7058
+// Function ID: 7059
 // Name: removePendingListFetch
-// Dependencies: [1218, 1372, 3938, 1960, 1903, 7056, 7057, 1386, 11, 4523, 7058, 1351, 3940, 589, 709, 2]
+// Dependencies: [1218, 1391, 3957, 1979, 1922, 7059, 7060, 1405, 11, 4523, 7061, 1370, 3959, 589, 709, 2]
 
-// Module 7055 (removePendingListFetch)
+// Module 7058 (removePendingListFetch)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import initialize from "initialize";
@@ -202,7 +202,7 @@ function handleReaction(channelId) {
       } else {
         return false;
       }
-      obj = messageId(3940);
+      obj = messageId(3959);
     }
   }
 }
@@ -296,7 +296,7 @@ class ConversationsStore extends Store {
 }
 const prototype = ConversationsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, ensureGuildLoaded, initialize, upsertRelationship, handleConnectionOpen, mergeGuildAvatar);
+  this.waitFor(fetchFingerprint, ensureGuildLoaded, initialize, markAllUserIdListsStale, handleConnectionOpen, mergeGuildAvatar);
 };
 prototype["hasChannelData"] = function hasChannelData(id) {
   return tmp3.has(id);
@@ -574,8 +574,8 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(7058).mapConversation);
-      const found = mapped.filter(set(1351).isNotNullish);
+      const mapped = rawConversations.map(set(7061).mapConversation);
+      const found = mapped.filter(set(1370).isNotNullish);
       const peekResult = tmp3.peek(channelId);
       if (isJump) {
         let prop;
@@ -1348,6 +1348,6 @@ obj = {
 };
 const conversationsStore = new ConversationsStore(require("dispatcher"), obj);
 let tmp3 = new require("priv")(obj);
-let result = require("upsertRelationship").fileFinishedImporting("modules/conversations/ConversationsStore.tsx");
+let result = require("markAllUserIdListsStale").fileFinishedImporting("modules/conversations/ConversationsStore.tsx");
 
 export default conversationsStore;

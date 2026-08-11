@@ -1,7 +1,7 @@
 // Module ID: 5591
 // Function ID: 5592
 // Name: memo
-// Dependencies: [19, 21, 5404, 1634, 5403, 5400, 5416, 5592]
+// Dependencies: [19, 21, 5404, 1653, 5403, 5400, 5416, 5592]
 
 // Module 5591 (memo)
 import noop from "noop";

@@ -1,10 +1,10 @@
-// Module ID: 6858
-// Function ID: 6859
+// Module ID: 6860
+// Function ID: 6861
 // Name: WumpusMahjongSpotIllustration
-// Dependencies: [21, 5268, 6859, 2]
+// Dependencies: [21, 5268, 6861, 2]
 // Exports: WumpusMahjongSpotIllustration
 
-// Module 6858 (WumpusMahjongSpotIllustration)
+// Module 6860 (WumpusMahjongSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WumpusMahjongSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const WumpusMahjongSpotIllustration = function WumpusMahjongSpotIllustrat
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6859);
+  obj[0] = importDefault(6861);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,8 +1,8 @@
-// Module ID: 7087
-// Function ID: 7088
-// Dependencies: [5, 1903, 676, 709, 530, 7088, 1208, 2]
+// Module ID: 7090
+// Function ID: 7091
+// Dependencies: [5, 1922, 676, 709, 530, 7091, 1208, 2]
 
-// Module 7087
+// Module 7090
 import convertClip from "convertClip";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Endpoints } from "ME";
@@ -247,7 +247,7 @@ export default {
       obj5[0] = upload_url;
       obj5[1] = body;
       const obj6 = { "Content-Type": null };
-      obj6[0] = outer1_0(7088).WIDGET_CLIP_CONTENT_TYPE;
+      obj6[0] = outer1_0(7091).WIDGET_CLIP_CONTENT_TYPE;
       obj5[2] = obj6;
       obj5[3] = function onRequestProgress(direction) {
         let tmp = "upload" === direction.direction;

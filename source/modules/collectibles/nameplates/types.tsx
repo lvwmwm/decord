@@ -1,9 +1,9 @@
-// Module ID: 1932
-// Function ID: 1933
+// Module ID: 1951
+// Function ID: 1952
 // Name: PaletteKeys
 // Dependencies: [2]
 
-// Module 1932 (PaletteKeys)
+// Module 1951 (PaletteKeys)
 const result = require("set").fileFinishedImporting("modules/collectibles/nameplates/types.tsx");
 
 export const PaletteKeys = { None: "none", Crimson: "crimson", Berry: "berry", Sky: "sky", Teal: "teal", Forest: "forest", BubbleGum: "bubble_gum", Violet: "violet", Cobalt: "cobalt", Clover: "clover", Lemon: "lemon", White: "white", Black: "black" };

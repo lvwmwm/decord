@@ -1,10 +1,10 @@
-// Module ID: 12068
-// Function ID: 12069
+// Module ID: 12071
+// Function ID: 12072
 // Name: SeeMoreFooter
-// Dependencies: [32, 19, 17, 9128, 1372, 9066, 1961, 9079, 8507, 676, 21, 4303, 5267, 712, 698, 5374, 4817, 1236, 9127, 1480, 4700, 589, 4710, 4730, 9080, 5270, 4153, 7218, 12063, 9065, 4498, 5328, 4299, 12069, 4846, 1297, 9094, 9125, 4714, 2]
+// Dependencies: [32, 19, 17, 9134, 1391, 9072, 1980, 9085, 8513, 676, 21, 4303, 5267, 712, 698, 5374, 4817, 1236, 9133, 1499, 4700, 589, 4710, 4730, 9086, 5270, 1363, 7219, 12066, 9071, 4498, 5328, 4299, 12072, 4846, 1297, 9100, 9131, 4714, 2]
 // Exports: default
 
-// Module 12068 (SeeMoreFooter)
+// Module 12071 (SeeMoreFooter)
 import Text from "Text";
 import useNavigation from "useNavigation";
 import get_ActivityIndicator from "getSystemLocale";
@@ -261,8 +261,8 @@ export default function GuildInvite(closeOnEditInviteLink) {
         obj[2] = tmp24;
         tmp27 = callback(GuildInviteSuggestionRows, obj);
       }
-      obj = { top: true, style: null, children: null };
-      obj[1] = tmp.container;
+      obj = { top: true, left: true, right: true, style: null, children: null };
+      obj[3] = tmp.container;
       obj1 = { ref: null, style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
       obj1[0] = ref;
       obj1[1] = tmp.header;
@@ -326,7 +326,7 @@ export default function GuildInvite(closeOnEditInviteLink) {
       obj4[1] = items10;
       items8[3] = closure_20(closure_6, obj4);
       items8[4] = tmp27;
-      obj[2] = items8;
+      obj[4] = items8;
       return closure_20(tmp2(tmp3[31]).SafeAreaPaddingView, obj);
     }
   }

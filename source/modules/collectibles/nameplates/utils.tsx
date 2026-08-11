@@ -1,10 +1,10 @@
-// Module ID: 1927
-// Function ID: 1928
+// Module ID: 1946
+// Function ID: 1947
 // Name: getNameplateData
-// Dependencies: [1928, 505, 1931, 1933, 1236, 2]
+// Dependencies: [1947, 505, 1950, 1952, 1236, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
-// Module 1927 (getNameplateData)
+// Module 1946 (getNameplateData)
 import { isNameplateRecord } from "fromServer";
 import { ThemeTypes } from "sum";
 
@@ -15,9 +15,9 @@ export const getNameplateData = function getNameplateData(nameplate) {
   if (null != nameplate) {
     const obj = { skuId: null, src: null, imgAlt: null, palette: null };
     ({ skuId: obj[0], asset: obj[1], label: obj[2] } = nameplate);
-    let INVALID_NAMEPLATE_PALETTE = require(1931) /* NAMEPLATE_PALETTES */.NAMEPLATE_PALETTES[nameplate.palette];
+    let INVALID_NAMEPLATE_PALETTE = require(1950) /* NAMEPLATE_PALETTES */.NAMEPLATE_PALETTES[nameplate.palette];
     if (INVALID_NAMEPLATE_PALETTE == null) {
-      INVALID_NAMEPLATE_PALETTE = tmp2(1931).INVALID_NAMEPLATE_PALETTE;
+      INVALID_NAMEPLATE_PALETTE = tmp2(1950).INVALID_NAMEPLATE_PALETTE;
     }
     obj[3] = INVALID_NAMEPLATE_PALETTE;
     tmp = obj;
@@ -37,9 +37,9 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
       if (null != first) {
         const obj = { skuId: null, src: null, imgAlt: null, palette: null };
         ({ skuId: obj[0], asset: obj[1], label: obj[2], palette } = first);
-        let INVALID_NAMEPLATE_PALETTE = require(1931) /* NAMEPLATE_PALETTES */.NAMEPLATE_PALETTES[palette];
+        let INVALID_NAMEPLATE_PALETTE = require(1950) /* NAMEPLATE_PALETTES */.NAMEPLATE_PALETTES[palette];
         if (INVALID_NAMEPLATE_PALETTE == null) {
-          INVALID_NAMEPLATE_PALETTE = tmp2(1931).INVALID_NAMEPLATE_PALETTE;
+          INVALID_NAMEPLATE_PALETTE = tmp2(1950).INVALID_NAMEPLATE_PALETTE;
         }
         obj[3] = INVALID_NAMEPLATE_PALETTE;
         tmp = obj;
@@ -51,9 +51,9 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
   }
 };
 export const getBackgroundGradientColors = function getBackgroundGradientColors(palette, arg1) {
-  let tmp3 = palette.name !== require(1931) /* NAMEPLATE_PALETTES */.INVALID_PALETTE_KEY;
+  let tmp3 = palette.name !== require(1950) /* NAMEPLATE_PALETTES */.INVALID_PALETTE_KEY;
   if (tmp3) {
-    let tmp4 = palette.name !== tmp(1931).CUSTOM_PALETTE_KEY;
+    let tmp4 = palette.name !== tmp(1950).CUSTOM_PALETTE_KEY;
     if (!tmp4) {
       let obj = /^#([0-9a-fA-F]{6})$/;
       let isMatch = obj.test(palette.darkBackground);
@@ -77,9 +77,9 @@ export const getBackgroundGradientColors = function getBackgroundGradientColors(
   tmp = require;
 };
 export const isValidPalette = function isValidPalette(name) {
-  let tmp3 = name.name !== require(1931) /* NAMEPLATE_PALETTES */.INVALID_PALETTE_KEY;
+  let tmp3 = name.name !== require(1950) /* NAMEPLATE_PALETTES */.INVALID_PALETTE_KEY;
   if (tmp3) {
-    let tmp4 = name.name !== require(1931) /* NAMEPLATE_PALETTES */.CUSTOM_PALETTE_KEY;
+    let tmp4 = name.name !== require(1950) /* NAMEPLATE_PALETTES */.CUSTOM_PALETTE_KEY;
     if (!tmp4) {
       let isMatch = /^#([0-9a-fA-F]{6})$/.test(name.darkBackground);
       if (isMatch) {
@@ -94,19 +94,19 @@ export const isValidPalette = function isValidPalette(name) {
   return tmp3;
 };
 export const getNameplatePalette = function getNameplatePalette(arg0) {
-  let INVALID_NAMEPLATE_PALETTE = require(1931) /* NAMEPLATE_PALETTES */.NAMEPLATE_PALETTES[arg0];
+  let INVALID_NAMEPLATE_PALETTE = require(1950) /* NAMEPLATE_PALETTES */.NAMEPLATE_PALETTES[arg0];
   if (INVALID_NAMEPLATE_PALETTE == null) {
-    INVALID_NAMEPLATE_PALETTE = require(1931) /* NAMEPLATE_PALETTES */.INVALID_NAMEPLATE_PALETTE;
+    INVALID_NAMEPLATE_PALETTE = require(1950) /* NAMEPLATE_PALETTES */.INVALID_NAMEPLATE_PALETTE;
   }
   return INVALID_NAMEPLATE_PALETTE;
 };
 export const parseFirstFrame = function parseFirstFrame(arg0) {
-  const size = importDefault(1933).decode(arg0);
-  const obj = importDefault(1933);
+  const size = importDefault(1952).decode(arg0);
+  const obj = importDefault(1952);
   const element = <canvas />;
   ({ width: obj3.width, height: obj3.height } = size);
   const context = element.getContext("2d");
-  const uint8ClampedArray = new Uint8ClampedArray(importDefault(1933).toRGBA8(size)[0]);
+  const uint8ClampedArray = new Uint8ClampedArray(importDefault(1952).toRGBA8(size)[0]);
   const imageData = new globalThis.ImageData(uint8ClampedArray, size.width, size.height);
   context.putImageData(imageData, 0, 0);
   return element.toDataURL("image/png");

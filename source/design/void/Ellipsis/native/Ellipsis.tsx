@@ -1,9 +1,9 @@
-// Module ID: 13343
-// Function ID: 13344
+// Module ID: 13351
+// Function ID: 13352
 // Name: AnimatedEllipsisDot
-// Dependencies: [19, 17, 4295, 21, 4303, 712, 4036, 4304, 589, 2]
+// Dependencies: [19, 17, 4295, 21, 4303, 712, 4042, 4304, 589, 2]
 
-// Module 13343 (AnimatedEllipsisDot)
+// Module 13351 (AnimatedEllipsisDot)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

@@ -1,7 +1,7 @@
 // Module ID: 5257
 // Function ID: 5258
 // Name: UserNotificationSettings
-// Dependencies: [5258, 1372, 4521, 4499, 676, 3941, 4500, 685, 1384, 4498, 698, 2]
+// Dependencies: [5258, 1391, 4521, 4499, 676, 3960, 4500, 685, 1403, 4498, 698, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
 // Module 5257 (UserNotificationSettings)
@@ -170,8 +170,8 @@ export const trackGuildNotificationSettingsUpdate = function trackGuildNotificat
   }
   const isMutedResult = store2.isMuted(guild_id);
   const tmp10 = num2 ^ num;
-  const obj4 = require(1384) /* hasFlag */;
-  const removeFlagsResult = require(1384) /* hasFlag */.removeFlags(tmp10, constants4.OPT_IN_CHANNELS_OFF, constants4.OPT_IN_CHANNELS_ON);
+  const obj4 = require(1403) /* hasFlag */;
+  const removeFlagsResult = require(1403) /* hasFlag */.removeFlags(tmp10, constants4.OPT_IN_CHANNELS_OFF, constants4.OPT_IN_CHANNELS_ON);
   obj = {};
   const merged = Object.assign(computeResult1);
   const merged1 = Object.assign(store.getStats(guild_id));
@@ -325,7 +325,7 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
   }
   const isChannelMutedResult = store2.isChannelMuted(guildId, channelId);
   const tmp12 = num2 ^ num;
-  const obj4 = guildId(1384);
+  const obj4 = guildId(1403);
   lastMessage = lastMessage.getLastMessage(channelId);
   let type;
   if (lastMessage != null) {
@@ -334,7 +334,7 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
   if (type == null) {
     type = null;
   }
-  const removeFlagsResult = guildId(1384).removeFlags(tmp12, constants3.FAVORITED, constants3.OPT_IN_ENABLED);
+  const removeFlagsResult = guildId(1403).removeFlags(tmp12, constants3.FAVORITED, constants3.OPT_IN_ENABLED);
   obj = {};
   const merged = Object.assign(computeResult1);
   const merged1 = Object.assign(store.getStats(guildId));

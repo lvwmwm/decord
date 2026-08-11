@@ -1,7 +1,7 @@
 // Module ID: 4542
 // Function ID: 4543
 // Name: allSettled
-// Dependencies: [4543, 1403, 4544, 4572, 4545, 4620]
+// Dependencies: [4543, 1422, 4544, 4572, 4545, 4620]
 
 // Module 4542 (allSettled)
 import callBind from "callBind";

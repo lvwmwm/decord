@@ -1,10 +1,10 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 12828
+// Function ID: 12829
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 1975, 5858, 12815, 1905, 505, 21, 4303, 5236, 5158, 6871, 589, 1879, 4732, 12825, 1297, 1236, 3947, 4714, 2]
+// Dependencies: [32, 19, 17, 1994, 5858, 12819, 1924, 505, 21, 4303, 5236, 5158, 6873, 589, 1898, 4732, 12829, 1297, 1236, 3966, 4714, 2]
 // Exports: default
 
-// Module 12824 (PremiumPlanSelectYearlyUpsellModal)
+// Module 12828 (PremiumPlanSelectYearlyUpsellModal)
 import _slicedToArray from "_slicedToArray";
 import getPremiumPlanItem from "getPremiumPlanItem";
 import get_ActivityIndicator from "Button";
@@ -54,7 +54,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   let obj = React;
   [tmp4, c3] = callback(React.useState(null), 2);
-  let obj1 = productId(6871);
+  let obj1 = productId(6873);
   const premiumBundledItemsFromProductId = obj1.getPremiumBundledItemsFromProductId(productId);
   let obj2 = productId(589);
   let items = [_getSystemLocale];
@@ -87,7 +87,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   if (null == premiumTier || null == orderPriceString) {
     return null;
   } else {
-    let tmp5Result = tmp5(1879);
+    let tmp5Result = tmp5(1898);
     const formatPercentResult = tmp5Result.formatPercent(stateFromStores, closure_10 / 100);
     obj = { onClose: null, noDefaultButtons: true, children: null };
     obj[0] = onClose;
@@ -95,14 +95,14 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     obj[0] = tmp.container;
     obj1 = { style: null, source: null };
     obj1[0] = tmp.image;
-    obj1[1] = importDefault(12825);
+    obj1[1] = importDefault(12829);
     const items2 = [callback2(closure_5, obj1), , , , , ];
     obj2 = { style: null, accessibilityRole: "header", children: null };
     obj2[0] = tmp.header;
     const intl = tmp5(1236).intl;
     obj3 = { discountPercentage: null, planName: null };
     obj3[0] = formatPercentResult;
-    tmp5Result = tmp5(3947);
+    tmp5Result = tmp5(3966);
     obj3[1] = tmp5Result.getPremiumTypeDisplayName(premiumTier);
     obj2[2] = intl.format(tmp5(1236).t.LQCVfK, obj3);
     items2[1] = callback2(tmp5(1297).LegacyText, obj2);

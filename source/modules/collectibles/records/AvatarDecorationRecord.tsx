@@ -1,10 +1,10 @@
-// Module ID: 7006
-// Function ID: 7007
+// Module ID: 7009
+// Function ID: 7010
 // Name: fromServer
-// Dependencies: [1929, 1930, 2]
+// Dependencies: [1948, 1949, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 7006 (fromServer)
+// Module 7009 (fromServer)
 import "fromServer";
 
 const require = arg1;
@@ -12,7 +12,7 @@ let prototype;
 prototype = function AvatarDecorationRecord(arg0) {
   const tmp2 = new prototype(arg0, new.target, new.target, tmp);
   // ThrowIfThisInitialized (0x7c)
-  tmp2.type = require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION;
+  tmp2.type = require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION;
   ({ asset: tmp2.asset, label: tmp2.label } = arg0);
   return tmp2;
 }.prototype;
@@ -28,7 +28,7 @@ prototype["fromServer"] = function fromServer(arg0) {
   }
   tmp = new tmp(obj, arg0, this, merged);
   // ThrowIfThisInitialized (0x7c)
-  tmp.type = require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION;
+  tmp.type = require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION;
   ({ asset: tmp4.asset, label: tmp4.label } = obj);
   return tmp;
 };

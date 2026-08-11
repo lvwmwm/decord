@@ -1,9 +1,9 @@
-// Module ID: 1922
-// Function ID: 1923
+// Module ID: 1941
+// Function ID: 1942
 // Name: create
-// Dependencies: [32, 1307, 1336, 1923, 1337, 2]
+// Dependencies: [32, 1307, 1336, 1942, 1337, 2]
 
-// Module 1922 (create)
+// Module 1941 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 import { MessageType as MessageType2 } from "module_1307";
@@ -466,7 +466,7 @@ const items2 = [
     kind: "enum",
     repeat: 1,
     T() {
-      const items = ["discord_protos.safety_common.v1.ClassificationType", require(1923) /* ClassificationType */.ClassificationType];
+      const items = ["discord_protos.safety_common.v1.ClassificationType", require(1942) /* ClassificationType */.ClassificationType];
       return items;
     }
   },
@@ -491,7 +491,7 @@ class BannedState$Type extends MessageType5 {
       kind: "enum",
       repeat: 1,
       T() {
-            const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1923).ClassificationType];
+            const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1942).ClassificationType];
             return items;
           }
     };
@@ -634,7 +634,7 @@ const items3 = [
     kind: "enum",
     repeat: 1,
     T() {
-      const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1923).ClassificationType];
+      const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1942).ClassificationType];
       return items;
     }
   },
@@ -734,7 +734,7 @@ class SafetyState$Type extends MessageType6 {
 }
 const prototype6 = SafetyState$Type.prototype;
 prototype6["create"] = function create(arr) {
-  let obj = { state: { oneofKind: "Promise" }, reason: 0, annotations: [] };
+  let obj = { state: { oneofKind: "r" }, reason: 0, annotations: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
@@ -1012,7 +1012,7 @@ const obj4 = {
   kind: "enum",
   repeat: 1,
   T() {
-    const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1923).ClassificationType];
+    const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1942).ClassificationType];
     return items;
   }
 };

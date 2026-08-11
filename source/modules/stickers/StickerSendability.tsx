@@ -1,10 +1,10 @@
-// Module ID: 5952
-// Function ID: 5953
+// Module ID: 5954
+// Function ID: 5955
 // Name: getStickerSendability
-// Dependencies: [1971, 5221, 676, 3947, 4638, 3934, 2]
+// Dependencies: [1990, 5221, 676, 3966, 4638, 3953, 2]
 // Exports: isSendableSticker
 
-// Module 5952 (getStickerSendability)
+// Module 5954 (getStickerSendability)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import parseServerPackSticker from "parseServerPackSticker";
 import { Permissions } from "ME";
@@ -14,8 +14,8 @@ function getStickerSendability(stickerById, trackCommunicationDisabled, channel)
   if (null == trackCommunicationDisabled) {
     return obj.NONSENDABLE;
   } else {
-    const result = importDefault(3947).canUseCustomStickersEverywhere(trackCommunicationDisabled);
-    const obj4 = importDefault(3947);
+    const result = importDefault(3966).canUseCustomStickersEverywhere(trackCommunicationDisabled);
+    const obj4 = importDefault(3966);
     const tmp22 = require;
     if (obj5.isStandardSticker(stickerById)) {
       if (null == stickerPack.getStickerPack(stickerById.pack_id)) {
@@ -42,7 +42,7 @@ function getStickerSendability(stickerById, trackCommunicationDisabled, channel)
               if (!obj2.can(obj)) {
                 const NONSENDABLE = obj.NONSENDABLE;
               }
-              obj2 = importAll(3934);
+              obj2 = importAll(3953);
             }
           } else {
             SENDABLE_WITH_BOOSTED_GUILD = obj.SENDABLE_WITH_BOOSTED_GUILD;

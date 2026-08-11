@@ -1,10 +1,10 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15086
+// Function ID: 15087
 // Name: apexExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: useRiveAppStatePlaybackExperiment
 
-// Module 15077 (apexExperiment)
+// Module 15086 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

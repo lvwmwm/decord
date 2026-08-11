@@ -1,9 +1,9 @@
-// Module ID: 7029
-// Function ID: 7030
+// Module ID: 7032
+// Function ID: 7033
 // Name: fromServer
-// Dependencies: [7004, 7005, 7003, 678, 676, 4345, 2]
+// Dependencies: [7007, 7008, 7006, 678, 676, 4345, 2]
 
-// Module 7029 (fromServer)
+// Module 7032 (fromServer)
 import fromServer from "fromServer";
 import { createCollectiblesItemsFromServerResponse as closure_3 } from "createCollectiblesItemsFromServerResponse";
 import { CollectiblesVariantProductRecord as closure_4 } from "fromServer";

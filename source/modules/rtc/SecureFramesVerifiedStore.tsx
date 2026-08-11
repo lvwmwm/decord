@@ -1,9 +1,9 @@
-// Module ID: 9191
-// Function ID: 9192
+// Module ID: 9197
+// Function ID: 9198
 // Name: computeCallVerification
-// Dependencies: [1218, 4375, 4389, 9192, 9193, 676, 9209, 4367, 4400, 589, 709, 2]
+// Dependencies: [1218, 4375, 4389, 9198, 9199, 676, 9215, 4367, 4400, 589, 709, 2]
 
-// Module 9191 (computeCallVerification)
+// Module 9197 (computeCallVerification)
 import fetchFingerprint from "fetchFingerprint";
 import createRTCConnection from "createRTCConnection";
 import initialize from "initialize";
@@ -58,7 +58,7 @@ function handleUserUpdate(userId) {
       }
       flag = isKeyVerifiedResult !== map.get(userId);
       const result = map.set(userId, isKeyVerifiedResult);
-      obj = require(9209) /* getCurrentUserSigningKey */;
+      obj = require(9215) /* getCurrentUserSigningKey */;
     }
     const allActiveStreamKeys = store2.getAllActiveStreamKeys();
     const reduced = allActiveStreamKeys.reduce((arg0, streamKey) => {

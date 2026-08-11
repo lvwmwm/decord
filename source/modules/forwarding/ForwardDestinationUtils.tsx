@@ -1,16 +1,16 @@
-// Module ID: 7305
-// Function ID: 7306
+// Module ID: 7306
+// Function ID: 7307
 // Name: useSelectedDestinationChannel
-// Dependencies: [19, 5219, 1376, 1372, 3929, 3938, 1903, 676, 7306, 1351, 589, 692, 4638, 1935, 4517, 1236, 4636, 7147, 4146, 4494, 2]
+// Dependencies: [19, 5219, 1395, 1391, 3948, 3957, 1922, 676, 7307, 1370, 589, 692, 4638, 1954, 4517, 1236, 4636, 7148, 4148, 4494, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 7305 (useSelectedDestinationChannel)
+// Module 7306 (useSelectedDestinationChannel)
 import computeChannelName from "computeChannelName";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
@@ -25,8 +25,8 @@ const require = arg1;
 const result = require("createChannelRecord").fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
 
 export const useSelectedDestinationChannel = function useSelectedDestinationChannel(selectedDestinations) {
-  const mapped = selectedDestinations.map(found(7306).getChannelIdFromDestinationId);
-  found = mapped.find(found(1351).isNotNullish);
+  const mapped = selectedDestinations.map(found(7307).getChannelIdFromDestinationId);
+  found = mapped.find(found(1370).isNotNullish);
   const items = [ensureGuildLoaded];
   const items1 = [found];
   const stateFromStores = found(589).useStateFromStores(items, () => outer1_8.getChannel(found), items1);
@@ -52,14 +52,14 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
   if (null != components) {
     let tmp5 = components.components.length > 0;
     if (tmp5) {
-      tmp5 = components.components[0].type === _require(1935).ComponentType.CHECKPOINT_CARD;
+      tmp5 = components.components[0].type === _require(1954).ComponentType.CHECKPOINT_CARD;
     }
     let tmp6 = components.messageSnapshots.length > 0;
     if (tmp6) {
       let message = components.messageSnapshots[0].message;
       let tmp7 = message.components.length > 0;
       if (tmp7) {
-        tmp7 = message.components[0].type === _require(1935).ComponentType.CHECKPOINT_CARD;
+        tmp7 = message.components[0].type === _require(1954).ComponentType.CHECKPOINT_CARD;
       }
       tmp6 = tmp7;
     }
@@ -157,14 +157,14 @@ export const isRatelimitedInChannel = function isRatelimitedInChannel(channel, o
     tmp = channel.rateLimitPerUser > 0;
   }
   if (tmp) {
-    tmp = !require(7147) /* canBypassSlowmodeHelper */.canBypassSlowmodeHelper(channel, outer1_6);
-    const obj = require(7147) /* canBypassSlowmodeHelper */;
+    tmp = !require(7148) /* canBypassSlowmodeHelper */.canBypassSlowmodeHelper(channel, outer1_6);
+    const obj = require(7148) /* canBypassSlowmodeHelper */;
   }
   return tmp;
 };
 export const useSelectedDestinationNames = function useSelectedDestinationNames(arg0) {
   const _require = arg0;
-  const items = [mergeGuildAvatar, ensureGuildLoaded, upsertRelationship];
+  const items = [mergeGuildAvatar, ensureGuildLoaded, markAllUserIdListsStale];
   const items1 = [arg0];
   return _require(589).useStateFromStoresArray(items, () => {
     const mapped = lib.map((id) => {
@@ -175,8 +175,8 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         if (null != user) {
           nickname = nickname.getNickname(user.id);
           if (nickname == null) {
-            nickname = callback2(4146).getName(user);
-            const obj2 = callback2(4146);
+            nickname = callback2(4148).getName(user);
+            const obj2 = callback2(4148);
           }
           tmp13 = nickname;
         }
@@ -220,7 +220,7 @@ export const useDestinationNamesWithSlowmode = function useDestinationNamesWithS
     });
   }, items1);
   let obj = _require(589);
-  const items2 = [mergeGuildAvatar, upsertRelationship];
+  const items2 = [mergeGuildAvatar, markAllUserIdListsStale];
   const items3 = [stateFromStoresArray];
-  return _require(589).useStateFromStoresArray(items2, () => stateFromStoresArray.map((channel) => callback(table[19]).computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true)), items3);
+  return _require(589).useStateFromStoresArray(items2, () => stateFromStoresArray.map((channel) => callback(table[19]).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true)), items3);
 };

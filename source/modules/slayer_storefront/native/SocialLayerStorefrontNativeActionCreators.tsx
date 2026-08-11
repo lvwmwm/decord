@@ -1,10 +1,10 @@
-// Module ID: 10089
-// Function ID: 10090
+// Module ID: 10094
+// Function ID: 10095
 // Name: SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY
-// Dependencies: [21, 4643, 1236, 3222, 8213, 7757, 4509, 10090, 1988, 10099, 10103, 2]
+// Dependencies: [21, 4643, 1236, 3241, 8217, 7759, 4509, 10095, 2007, 10104, 10108, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal, openSocialLayerStorefrontUnsupportedOnMobileAlert
 
-// Module 10089 (SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY)
+// Module 10094 (SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY)
 import { jsx } from "jsxProd";
 
 let c4 = "social-layer-storefront-product-details-native-modal";
@@ -19,24 +19,24 @@ export const openSocialLayerStorefrontUnsupportedOnMobileAlert = function openSo
   let obj = importDefault(4643);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(importDefault(3222).XjhkM5);
+  obj[0] = intl.string(importDefault(3241).XjhkM5);
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl2.string(importDefault(3222).NBFa62);
+  obj[1] = intl2.string(importDefault(3241).NBFa62);
   obj.show(obj);
 };
 export const openSocialLayerStorefrontProductDetailsModal = function openSocialLayerStorefrontProductDetailsModal(closure_0) {
-  let obj = require(8213) /* apexExperiment */;
+  let obj = require(8217) /* apexExperiment */;
   if (obj.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "social_layer_storefront_product_details_modal" })) {
-    const socialLayerStorefrontConfig = tmp(7757).fetchSocialLayerStorefrontConfig();
+    const socialLayerStorefrontConfig = tmp(7759).fetchSocialLayerStorefrontConfig();
     const obj5 = importDefault(4509);
-    obj5.pushLazy(tmp(1988)(10090, dependencyMap.paths), closure_0, c4, { presentation: "modal" });
-    const tmpResult = tmp(7757);
+    obj5.pushLazy(tmp(2007)(10095, dependencyMap.paths), closure_0, c4, { presentation: "modal" });
+    const tmpResult = tmp(7759);
   } else {
     obj = { title: null, body: null };
     const intl = tmp(1236).intl;
-    obj[0] = intl.string(importDefault(3222).XjhkM5);
+    obj[0] = intl.string(importDefault(3241).XjhkM5);
     const intl2 = tmp(1236).intl;
-    obj[1] = intl2.string(importDefault(3222).NBFa62);
+    obj[1] = intl2.string(importDefault(3241).NBFa62);
     importDefault(4643).show(obj);
     const obj2 = importDefault(4643);
   }
@@ -46,7 +46,7 @@ export const closeSocialLayerStorefrontProductDetailsModal = function closeSocia
 };
 export const openSocialLayerStorefrontGiftModal = function openSocialLayerStorefrontGiftModal(closure_0) {
   if (obj.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "social_layer_storefront_gift_modal" })) {
-    importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(10099, dependencyMap.paths), closure_0, c5);
+    importDefault(4509).pushLazy(require(2007) /* asyncRequireImpl */(10104, dependencyMap.paths), closure_0, c5);
     const obj2 = importDefault(4509);
   }
 };

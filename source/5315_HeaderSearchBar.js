@@ -1,7 +1,7 @@
 // Module ID: 5315
 // Function ID: 5316
 // Name: HeaderSearchBar
-// Dependencies: [32, 19, 17, 21, 1481, 5307, 5280, 5286, 5312, 5281]
+// Dependencies: [32, 19, 17, 21, 1500, 5307, 5280, 5286, 5312, 5281]
 
 // Module 5315 (HeaderSearchBar)
 import _slicedToArray from "_slicedToArray";

@@ -1,7 +1,7 @@
 // Module ID: 4640
 // Function ID: 4641
 // Name: handleChanged
-// Dependencies: [32, 1218, 1372, 4641, 676, 12, 11, 589, 1351, 709, 2]
+// Dependencies: [32, 1218, 1391, 4641, 676, 12, 11, 589, 1370, 709, 2]
 
 // Module 4640 (handleChanged)
 import _slicedToArray from "_slicedToArray";
@@ -221,14 +221,14 @@ prototype["getRecentlyEditedDrafts"] = function getRecentlyEditedDrafts(ChannelM
         tmp = arg0[closure_0];
       }
       return tmp;
-    }).pickBy(_require(1351).isNotNullish);
+    }).pickBy(_require(1370).isNotNullish);
     const mapped = importDefault(12)(tmp3).mapValues((arg0) => {
       let tmp;
       if (arg0 != null) {
         tmp = arg0[closure_0];
       }
       return tmp;
-    }).pickBy(_require(1351).isNotNullish).toPairs().map((arg0) => {
+    }).pickBy(_require(1370).isNotNullish).toPairs().map((arg0) => {
       let tmp;
       [tmp, ] = arg0;
       return { channelId, timestamp, draft };
@@ -239,7 +239,7 @@ prototype["getRecentlyEditedDrafts"] = function getRecentlyEditedDrafts(ChannelM
         tmp = arg0[closure_0];
       }
       return tmp;
-    }).pickBy(_require(1351).isNotNullish).toPairs();
+    }).pickBy(_require(1370).isNotNullish).toPairs();
     return mapped.sortBy((timestamp) => -timestamp.timestamp).value();
   }
 };

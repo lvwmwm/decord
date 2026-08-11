@@ -1,7 +1,7 @@
 // Module ID: 4856
 // Function ID: 4857
 // Name: getUploadFileSizeSum
-// Dependencies: [1891, 1903, 676, 1905, 12, 4857, 4230, 3947, 4198, 1236, 2]
+// Dependencies: [1910, 1922, 676, 1924, 12, 4857, 4230, 3966, 4198, 1236, 2]
 // Exports: anyFileTooLarge, classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, getMaxRequestSize, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
 // Module 4856 (getUploadFileSizeSum)
@@ -123,7 +123,7 @@ export const sizeString = function sizeString(createGuildRecordFromRust) {
 };
 export const maxFileSize = function maxFileSize(guildId) {
   const currentUser = authStore.getCurrentUser();
-  const userMaxFileSize = enabled(3947).getUserMaxFileSize(currentUser);
+  const userMaxFileSize = enabled(3966).getUserMaxFileSize(currentUser);
   if (null == guildId) {
     return userMaxFileSize;
   } else {
@@ -156,12 +156,12 @@ export const maxFileSize = function maxFileSize(guildId) {
     const _Math = Math;
     return Math.max(reduced, userMaxFileSize);
   }
-  const obj = enabled(3947);
+  const obj = enabled(3966);
 };
 export const anyFileTooLarge = function anyFileTooLarge(arg0, arg1) {
   let reduce = dependencyMap;
   const currentUser = authStore.getCurrentUser();
-  const userMaxFileSize = enabled(3947).getUserMaxFileSize(currentUser);
+  const userMaxFileSize = enabled(3966).getUserMaxFileSize(currentUser);
   if (null == arg1) {
     let guild = userMaxFileSize;
     const _Array = Array;
@@ -224,7 +224,7 @@ export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadb
   let obj = _Math(4198);
   if (maxSize == null) {
     const currentUser = authStore.getCurrentUser();
-    const userMaxFileSize = enabled(3947).getUserMaxFileSize(currentUser);
+    const userMaxFileSize = enabled(3966).getUserMaxFileSize(currentUser);
     if (null == guildId) {
       maxSize = userMaxFileSize;
     } else {
@@ -257,7 +257,7 @@ export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadb
       _Math = Math;
       const bound = Math.max(reduced, userMaxFileSize);
     }
-    const obj5 = enabled(3947);
+    const obj5 = enabled(3966);
   }
   const formatSizeResult = obj.formatSize(maxSize / 1024, { useKibibytes: true });
   const formatSizeResult1 = _Math(4198).formatSize(closure_7 / 1024, { useKibibytes: true });

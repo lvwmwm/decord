@@ -1,10 +1,10 @@
-// Module ID: 1384
-// Function ID: 1385
+// Module ID: 1403
+// Function ID: 1404
 // Name: hasFlag
 // Dependencies: [2]
 // Exports: addFlag, hasAnyFlag, hasFlag, removeFlag, removeFlags, setFlag, toggleFlag
 
-// Module 1384 (hasFlag)
+// Module 1403 (hasFlag)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/FlagUtils.tsx");
 
 export const hasFlag = function hasFlag(arg0, arg1) {

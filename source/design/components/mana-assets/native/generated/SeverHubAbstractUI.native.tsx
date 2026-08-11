@@ -1,10 +1,10 @@
-// Module ID: 6722
-// Function ID: 6723
+// Module ID: 6724
+// Function ID: 6725
 // Name: SeverHubAbstractUI
-// Dependencies: [21, 5268, 6723, 2]
+// Dependencies: [21, 5268, 6725, 2]
 // Exports: SeverHubAbstractUI
 
-// Module 6722 (SeverHubAbstractUI)
+// Module 6724 (SeverHubAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SeverHubAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const SeverHubAbstractUI = function SeverHubAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6723);
+  obj[0] = importDefault(6725);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

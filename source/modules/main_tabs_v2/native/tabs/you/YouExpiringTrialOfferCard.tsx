@@ -1,10 +1,10 @@
-// Module ID: 15880
-// Function ID: 15881
+// Module ID: 15897
+// Function ID: 15898
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 12985, 676, 6896, 1905, 21, 687, 4303, 712, 15881, 698, 1236, 3883, 647, 6911, 6903, 15879, 1974, 4299, 3947, 4846, 1297, 7704, 4725, 5775, 2]
+// Dependencies: [19, 17, 12989, 676, 6898, 1924, 21, 687, 4303, 712, 15898, 698, 1236, 3902, 647, 6913, 6905, 15896, 1993, 4299, 3966, 4846, 1297, 7706, 4725, 5775, 2]
 // Exports: default
 
-// Module 15880 (YouExpiringTrialOfferCard)
+// Module 15897 (YouExpiringTrialOfferCard)
 import Text from "Text";
 import { View } from "useShouldShowExpiringTrialOfferCard";
 import clearDismissUntil from "clearDismissUntil";
@@ -41,14 +41,14 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   let stateFromStores;
   let premiumTrialOffer;
   let shouldShowExpiringTrialOfferCard;
-  let obj = importDefault(3883)();
+  let obj = importDefault(3902)();
   importDefault = obj.add(5, "days");
   const tmp3 = createCacheKey();
   dependencyMap = tmp3;
   let obj1 = navigateToPremium(647);
   let items = [shouldShowExpiringTrialOfferCard];
   stateFromStores = obj1.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj2 = navigateToPremium(6911);
+  let obj2 = navigateToPremium(6913);
   premiumTrialOffer = obj2.usePremiumTrialOffer();
   let num = 0;
   if (null != premiumTrialOffer) {
@@ -58,8 +58,8 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
       num = Date.parse(premiumTrialOffer.expires_at);
     }
   }
-  const tmp7Result = importDefault(6903)(num, closure_15);
-  let tmp4Result = tmp4(15879);
+  const tmp7Result = importDefault(6905)(num, closure_15);
+  let tmp4Result = tmp4(15896);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -86,10 +86,10 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         } else {
           PREMIUM_TRIAL = constants.PREMIUM_TRIAL;
         }
-        const articleURL = tmp(1974).getArticleURL(PREMIUM_TRIAL);
+        const articleURL = tmp(1993).getArticleURL(PREMIUM_TRIAL);
         obj = { style: null, children: null };
         obj[0] = tmp3.header;
-        tmp4Result = tmp4(3947);
+        tmp4Result = tmp4(3966);
         const subscription_trial = premiumTrialOffer.subscription_trial;
         let interval;
         if (subscription_trial != null) {
@@ -190,7 +190,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         const tmp15 = closure_14;
         const tmp16 = closure_13;
         const tmp18 = premiumTrialOffer;
-        const tmpResult = tmp(1974);
+        const tmpResult = tmp(1993);
         const obj9 = { style: null, children: null };
         obj9[0] = navigateToPremium.style;
         obj9[1] = closure_14(closure_13, obj4);
@@ -201,5 +201,5 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   } else {
     return null;
   }
-  const tmp7 = importDefault(6903);
+  const tmp7 = importDefault(6905);
 };

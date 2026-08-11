@@ -1,7 +1,7 @@
 // Module ID: 5154
 // Function ID: 5155
 // Name: SubscribeModalGuildSelect
-// Dependencies: [32, 19, 17, 1891, 5155, 5153, 21, 4303, 712, 5158, 1480, 589, 5159, 5328, 5991, 1236, 5151, 4846, 5779, 1297, 2]
+// Dependencies: [32, 19, 17, 1910, 5155, 5153, 21, 4303, 712, 5158, 1499, 589, 5159, 5328, 5993, 1236, 5151, 4846, 5779, 1297, 2]
 // Exports: default
 
 // Module 5154 (SubscribeModalGuildSelect)
@@ -39,7 +39,7 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   let memo;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = guildBoostSlots(1480);
+  let obj = guildBoostSlots(1499);
   callback = obj.useNavigation();
   const tmp2 = callback(first.useState(""), 2);
   first = tmp2[0];
@@ -111,7 +111,7 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   obj[0] = intl.string(guildBoostSlots(1236).t.vf3ZTa);
   obj[1] = tmp2[1];
   obj[2] = importAll(5151).closeApplyBoostModal;
-  const items3 = [callback2(importDefault(5991), obj), ];
+  const items3 = [callback2(importDefault(5993), obj), ];
   obj1 = { style: tmp.guildList, keyboardShouldPersistTaps: "always", children: null };
   const obj2 = { bottom: true, children: null };
   obj2[1] = stateFromStoresArray.map((children) => {

@@ -1,10 +1,10 @@
-// Module ID: 10726
-// Function ID: 10727
+// Module ID: 10731
+// Function ID: 10732
 // Name: getSafeArea
-// Dependencies: [5, 32, 19, 17, 7588, 4328, 676, 4206, 21, 4303, 3, 500, 10727, 514, 7810, 10728, 10729, 1606, 10730, 10731, 698, 1231, 647, 4642, 1236, 530, 10732, 1467, 10603, 10733, 8853, 4497, 10601, 2]
+// Dependencies: [5, 32, 19, 17, 7590, 4328, 676, 4206, 21, 4303, 3, 500, 10732, 514, 7812, 10733, 10734, 1625, 10735, 10736, 698, 1231, 647, 4642, 1236, 530, 10737, 1486, 10608, 10738, 8859, 4497, 10606, 2]
 // Exports: default, useHasInvalidUrlErrorState
 
-// Module 10726 (getSafeArea)
+// Module 10731 (getSafeArea)
 import closure_4 from "items3";
 import postMessageToWebView from "postMessageToWebView";
 import _createWebviewHtmlFile from "_createWebviewHtmlFile";
@@ -1043,5 +1043,5 @@ export { BaseActivityWebView };
 export const useHasInvalidUrlErrorState = function useHasInvalidUrlErrorState() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(8853)(first) };
+  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(8859)(first) };
 };

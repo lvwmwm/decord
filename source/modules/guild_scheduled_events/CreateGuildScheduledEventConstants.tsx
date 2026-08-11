@@ -1,9 +1,9 @@
-// Module ID: 8943
-// Function ID: 8944
+// Module ID: 8949
+// Function ID: 8950
 // Name: RecurrenceOptions
 // Dependencies: [2]
 
-// Module 8943 (RecurrenceOptions)
+// Module 8949 (RecurrenceOptions)
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/CreateGuildScheduledEventConstants.tsx");
 
 export const RecurrenceOptions = { NONE: 0, [0]: "NONE", WEEKLY: 1, [1]: "WEEKLY", MONTHLY: 2, [2]: "MONTHLY", YEARLY: 3, [3]: "YEARLY", WEEKDAY_ONLY: 4, [4]: "WEEKDAY_ONLY", BIWEEKLY: 5, [5]: "BIWEEKLY", WEEKEND_ONLY: 6, [6]: "WEEKEND_ONLY", DAILY: 7, [7]: "DAILY" };

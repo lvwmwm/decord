@@ -1,24 +1,23 @@
-// Module ID: 13899
-// Function ID: 13900
+// Module ID: 13906
+// Function ID: 13907
 // Name: EditUserProfileBanner
-// Dependencies: [19, 17, 10136, 5776, 676, 685, 13900, 21, 13901, 3947, 5728, 5748, 13902, 4271, 13903, 1988, 8268, 8265, 8267, 1236, 8835, 13913, 6004, 5369, 712, 9462, 13914, 8280, 11271, 8307, 9448, 13916, 8275, 8836, 8823, 8832, 13917, 4299, 4013, 9449, 13918, 9450, 9469, 13923, 13924, 13929, 13931, 13935, 13936, 13940, 13944, 13949, 13950, 13953, 13954, 2]
+// Dependencies: [19, 17, 10141, 5776, 676, 685, 13907, 21, 8281, 13908, 3966, 5728, 5748, 13909, 4271, 13910, 2007, 8273, 8270, 8272, 1236, 8841, 13921, 8268, 6006, 5369, 712, 9468, 13922, 8285, 11276, 8312, 9454, 13924, 8280, 8842, 8829, 8838, 13925, 4299, 4031, 9455, 13926, 9456, 9475, 13931, 13932, 13937, 13939, 13943, 13944, 13948, 13952, 13957, 13958, 13961, 13962, 2]
 // Exports: default
 
-// Module 13899 (EditUserProfileBanner)
-import getSystemLocale from "getSystemLocale";
-import get_ActivityIndicator from "setPendingChanges";
+// Module 13906 (EditUserProfileBanner)
+import useAvatarsWithGuilds from "useAvatarsWithGuilds";
+import get_ActivityIndicator from "_saveProfileChanges";
 import zustandStore from "zustandStore";
 import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET";
 import ME from "ME";
-import { ProfileCustomizationScrollPositions as closure_11 } from "MAX_FAVORITES";
-import { UserProfileEditAutoFocusElement as closure_12 } from "UserProfileEditAutoFocusElement";
-import jsxProd from "styles";
+import { ProfileCustomizationScrollPositions as closure_10 } from "MAX_FAVORITES";
+import { UserProfileEditAutoFocusElement as closure_11 } from "UserProfileEditAutoFocusElement";
+import jsxProd from "useSharedStyles";
 
-let c10;
 let c4;
 let c5;
 let c9;
-let closure_14;
+let closure_12;
 let map1;
 let metroImportAll;
 const require = arg1;
@@ -38,54 +37,55 @@ function EditUserProfileBanner(user) {
   ({ pendingAvatarSrc, pendingAccentColor, pendingThemeColors, disabled } = user);
   if (isTryItOut) {
     if (tryItOutBanner == null) {
-      tryItOutBanner = displayProfile(isTryItOut[8]);
+      tryItOutBanner = obj;
     }
     pendingBanner = tryItOutBanner;
   }
-  let obj = displayProfile(isTryItOut[9]);
+  obj = displayProfile(isTryItOut[10]);
   const canUseCollectiblesResult = obj.canUseCollectibles(user);
-  analyticsLocations = displayProfile(isTryItOut[10])(displayProfile(isTryItOut[11]).EDIT_BANNER).analyticsLocations;
+  analyticsLocations = displayProfile(isTryItOut[11])(displayProfile(isTryItOut[12]).EDIT_BANNER).analyticsLocations;
   obj = { value: analyticsLocations, children: null };
   obj = { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea: null, showProfilePreviewButton: null, onPressEdit: null, editButtonAccessibilityLabel: null, editDisabled: null };
   let banner;
-  const tmp6 = displayProfile(isTryItOut[10]);
+  let tmp4 = displayProfile(isTryItOut[11]);
   if (displayProfile != null) {
     banner = displayProfile.banner;
   }
   obj[6] = 12;
   obj[7] = canUseCollectiblesResult;
   obj[8] = function onPressEdit() {
-    let obj = displayProfile(isTryItOut[13]);
+    let obj = displayProfile(isTryItOut[14]);
     obj = { user, analyticsLocations, onBannerChange: null, showRemoveBanner: null, isTryItOut: null };
     if (isTryItOut) {
-      let fn = tmp2(tmp[16]).setTryItOutBanner;
+      let fn = tmp2(tmp[17]).setTryItOutBanner;
     } else {
-      fn = (banner, bannerOriginalMd5) => {
-        let obj = callback(table[17]);
-        obj = { banner, bannerOriginalMd5 };
+      fn = (banner) => {
+        let obj = callback(table[18]);
+        obj = { banner };
         return obj.setPendingChanges(obj);
       };
     }
     obj[2] = fn;
-    const tmp3 = user(isTryItOut[15])(isTryItOut[14], isTryItOut.paths);
+    const tmp3 = user(isTryItOut[16])(isTryItOut[15], isTryItOut.paths);
     const tmp4 = isTryItOut;
     let banner;
     if (displayProfile != null) {
       banner = displayProfile.banner;
     }
-    obj[3] = user(isTryItOut[18]).showRemoveBanner(pendingBanner, banner);
+    obj[3] = user(isTryItOut[19]).showRemoveBanner(pendingBanner, banner);
     obj[4] = tmp4;
     obj.openLazy(tmp3, "Change Banner", obj);
   };
-  const intl = tmp8(tmp4[19]).intl;
-  obj[9] = intl.string(user(isTryItOut[19]).t.VqsHy0);
+  const intl = tmp6(tmp2[20]).intl;
+  obj[9] = intl.string(user(isTryItOut[20]).t.VqsHy0);
   obj[10] = disabled;
-  obj[1] = closure_13(displayProfile(isTryItOut[12]), obj);
-  return closure_13(user(isTryItOut[10]).AnalyticsLocationProvider, obj);
+  obj[1] = closure_12(displayProfile(isTryItOut[13]), obj);
+  return closure_12(user(isTryItOut[11]).AnalyticsLocationProvider, obj);
 }
 ({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
-({ BIO_MAX_LENGTH: metroImportAll, DISPLAY_NAME_MAX_LENGTH: c9, PRONOUNS_MAX_LENGTH: c10 } = ME);
-({ jsx: map1, jsxs: closure_14 } = jsxProd);
+({ DISPLAY_NAME_MAX_LENGTH: metroImportAll, PRONOUNS_MAX_LENGTH: c9 } = ME);
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+let obj = { assetOrigin: require("AssetOriginTypes").AssetOriginTypes.NEW_ASSET, imageUri: require("registerAsset"), staticImageUri: require("registerAsset"), description: "", originalAsset: "paddingHorizontal" };
 let result = require("zustandStore").fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 
 export default function UserProfileEditForm(arg0) {
@@ -124,89 +124,91 @@ export default function UserProfileEditForm(arg0) {
     isTryItOut = false;
   }
   let _require;
-  const tmp3 = importDefault(8835)();
-  const tmp4 = importDefault(13913)();
-  const tmp5 = importDefault(6004)();
+  const tmp3 = importDefault(8841)();
+  const tmp4 = importDefault(13921)();
+  let obj = _require(8268);
+  const bioMaxLength = obj.useBioMaxLength({ location: "user_profile_edit_form" });
+  const tmp7 = importDefault(6006)();
   const ref = React.useRef(null);
   const ref1 = React.useRef(null);
   const ref2 = React.useRef(null);
   const ref3 = React.useRef(null);
   const insets = importDefault(5369)({ includeKeyboardHeight: true }).insets;
   const PX_16 = importDefault(712).space.PX_16;
-  let obj = { insets, inputs: null, scrollViewRef: null };
+  obj = { insets, inputs: null, scrollViewRef: null };
   const items = [{ ref: ref1, offset: { type: "toRef", ref: ref2, extraOffset: PX_16 } }, { ref: ref2, offset: { type: "toRef", ref: ref3, extraOffset: PX_16 } }, ];
   obj = { ref: ref3, offset: null };
-  obj = { type: "toValue", value: null };
-  obj[1] = importDefault(712).space.PX_64;
-  obj[1] = obj;
+  const obj1 = { type: "toValue", value: null };
+  obj1[1] = importDefault(712).space.PX_64;
+  obj[1] = obj1;
   items[2] = obj;
   obj[1] = items;
   obj[2] = ref;
-  const onFocus = importDefault(9462)(obj).onFocus;
-  const tmp10 = importDefault(9462);
-  ({ errors, isSubmitting, pendingAvatarDecoration, pendingProfileEffect, pendingThemeColors, tryItOutThemeColors, pendingGlobalName, pendingPronouns, pendingBio, pendingLegacyUsernameDisabled, pendingDisplayNameStyles, pendingAvatar, pendingBanner, pendingProfileFrame, pendingNameplate, pendingAccentColor, tryItOutBanner, tryItOutAvatarDecoration, tryItOutProfileEffect, tryItOutDisplayNameStyles, pendingPrimaryGuildId } = importDefault(13914)());
-  importDefault(8280)();
-  let obj3 = _require(11271);
-  const guildAutomodProfileQuarantineErrors = obj3.useGuildAutomodProfileQuarantineErrors();
+  const onFocus = importDefault(9468)(obj).onFocus;
+  const tmp12 = importDefault(9468);
+  ({ errors, isSubmitting, pendingAvatarDecoration, pendingProfileEffect, pendingThemeColors, tryItOutThemeColors, pendingGlobalName, pendingPronouns, pendingBio, pendingLegacyUsernameDisabled, pendingDisplayNameStyles, pendingAvatar, pendingBanner, pendingProfileFrame, pendingNameplate, pendingAccentColor, tryItOutBanner, tryItOutAvatarDecoration, tryItOutProfileEffect, tryItOutDisplayNameStyles, pendingPrimaryGuildId } = importDefault(13922)());
+  importDefault(8285)();
+  let obj4 = _require(11276);
+  const guildAutomodProfileQuarantineErrors = obj4.useGuildAutomodProfileQuarantineErrors();
   let str = currentUser.id;
-  const tmp11 = importDefault(13914)();
+  const tmp13 = importDefault(13922)();
   if (str == null) {
     str = "";
   }
-  const tmp15Result = importDefault(8307)(str);
-  let tmp13Result = tmp13(9448);
-  const customStatusActivity = tmp13Result.useCustomStatusActivity();
-  tmp13Result = tmp13(13916);
-  const tmp15 = importDefault(8307);
-  const pendingAvatarSrc = _require(8275).getPendingAvatarSrc({ userId: currentUser.id, image: pendingAvatar });
-  const tmp18 = importDefault(8836)(tmp15Result, pendingLegacyUsernameDisabled);
-  let tmpResult = tmp(3947);
+  const tmp16Result = importDefault(8312)(str);
+  let tmp5Result = tmp5(9454);
+  const customStatusActivity = tmp5Result.useCustomStatusActivity();
+  tmp5Result = tmp5(13924);
+  const tmp16 = importDefault(8312);
+  const pendingAvatarSrc = _require(8280).getPendingAvatarSrc({ userId: currentUser.id, image: pendingAvatar });
+  const tmp19 = importDefault(8842)(tmp16Result, pendingLegacyUsernameDisabled);
+  let tmpResult = tmp(3966);
   const result = tmpResult.canUsePremiumProfileCustomization(currentUser);
   let legacyUsername;
-  if (tmp15Result != null) {
-    legacyUsername = tmp15Result.getLegacyUsername();
+  if (tmp16Result != null) {
+    legacyUsername = tmp16Result.getLegacyUsername();
   }
   let str2 = currentUser.globalName;
   if (str2 == null) {
     str2 = "";
   }
   let str3;
-  if (tmp15Result != null) {
-    str3 = tmp15Result.pronouns;
+  if (tmp16Result != null) {
+    str3 = tmp16Result.pronouns;
   }
   if (str3 == null) {
     str3 = "";
   }
   let str4;
-  if (tmp15Result != null) {
-    str4 = tmp15Result.bio;
+  if (tmp16Result != null) {
+    str4 = tmp16Result.bio;
   }
   if (str4 == null) {
     str4 = "";
   }
-  const obj2 = { user: currentUser, displayProfile: tmp15Result, pendingThemeColors: null, isPreview: null };
-  let tmp22 = pendingThemeColors;
-  tmpResult = tmp(8823);
+  const obj3 = { user: currentUser, displayProfile: tmp16Result, pendingThemeColors: null, isPreview: null };
+  let tmp23 = pendingThemeColors;
+  tmpResult = tmp(8829);
   if (isTryItOut) {
-    tmp22 = tryItOutThemeColors;
+    tmp23 = tryItOutThemeColors;
   }
-  obj2[2] = tmp22;
-  obj2[3] = isTryItOut;
-  const obj1 = { userId: currentUser.id, image: pendingAvatar };
-  const tmp13Result1 = _require(8275);
-  ({ theme, primaryColor, secondaryColor } = tmpResult(obj2));
-  const tmpResult1Result = tmpResult(obj2);
-  const userProfileColors = _require(8832).useUserProfileColors({ theme, primaryColor, secondaryColor });
+  obj3[2] = tmp23;
+  obj3[3] = isTryItOut;
+  const obj2 = { userId: currentUser.id, image: pendingAvatar };
+  const tmp5Result1 = _require(8280);
+  ({ theme, primaryColor, secondaryColor } = tmpResult(obj3));
+  const tmpResult1Result = tmpResult(obj3);
+  const userProfileColors = _require(8838).useUserProfileColors({ theme, primaryColor, secondaryColor });
   ({ gradientFallbackBackground, gradientSecondaryBackground, containerBackground } = userProfileColors);
   let num = 0;
   if (!result) {
     num = 0;
-    if (!tmp5) {
+    if (!tmp7) {
       num = FLOATING_UPSELL_HEIGHT;
     }
   }
   const sum = insets.bottom + num;
-  obj3 = { backgroundColor: userProfileColors.avatarBackground };
+  obj4 = { backgroundColor: userProfileColors.avatarBackground };
   let first;
   const sum1 = sum + tmp(712).space.PX_16;
   if (errors != null) {
@@ -247,227 +249,227 @@ export default function UserProfileEditForm(arg0) {
   if (Object.keys(errors).length > 0) {
     stringResult = null;
     if (null == first4) {
-      const intl = tmp13(1236).intl;
-      stringResult = intl.string(tmp13(1236).t["84MExs"]);
+      const intl = tmp5(1236).intl;
+      stringResult = intl.string(tmp5(1236).t["84MExs"]);
     }
   }
   const field = zustandStore.useField("scrollPosition");
-  _require = tmp(13917)(ref, field);
-  const obj4 = { theme, primaryColor, secondaryColor, children: null };
-  const obj5 = { style: items1, children: null };
+  _require = tmp(13925)(ref, field);
+  const obj5 = { theme, primaryColor, secondaryColor, children: null };
+  const obj6 = { style: items1, children: null };
   items1 = [tmp4.container, { backgroundColor: gradientSecondaryBackground }];
-  const obj6 = { ref, children: null };
+  const obj7 = { ref, children: null };
   const items2 = [callback(closure_5, { style: tmp4.bounceOffset }), ];
-  const obj8 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: { backgroundColor: gradientSecondaryBackground }, children: null };
-  const obj7 = { style: tmp4.bounceOffset };
-  const tmp13Result2 = _require(8832);
-  const tmp37 = closure_4;
-  const items3 = [callback(EditUserProfileBanner, { user: currentUser, displayProfile: tmp15Result, pendingAvatarSrc, pendingBanner, pendingAccentColor, pendingThemeColors, tryItOutBanner, isTryItOut, disabled: isSubmitting }), ];
-  const tmpResult1 = importDefault(9449);
+  const obj9 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: { backgroundColor: gradientSecondaryBackground }, children: null };
+  const obj8 = { style: tmp4.bounceOffset };
+  const tmp38 = closure_4;
+  const tmp5Result2 = _require(8838);
+  const items3 = [callback(EditUserProfileBanner, { user: currentUser, displayProfile: tmp16Result, pendingAvatarSrc, pendingBanner, pendingAccentColor, pendingThemeColors, tryItOutBanner, isTryItOut, disabled: isSubmitting }), ];
+  const tmpResult1 = importDefault(9455);
   const items4 = [, , , ];
   ({ avatarBackground: arr5[0], avatarPosition: arr5[1] } = tmp3);
   items4[2] = tmp4.avatarContainer;
-  items4[3] = obj3;
-  const items5 = [callback(closure_5, { style: items4, children: callback(importDefault(13918), obj10) }), ];
-  const obj11 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: items6, children: null };
+  items4[3] = obj4;
+  const items5 = [callback(closure_5, { style: items4, children: callback(importDefault(13926), obj11) }), ];
+  const obj12 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: items6, children: null };
   items6 = [, , ];
   ({ profileContentWrapper: arr7[0], profileContent: arr7[1] } = tmp3);
   items6[2] = { paddingTop: 0, paddingBottom: sum1 };
-  const obj9 = { style: items4, children: callback(importDefault(13918), obj10) };
-  const tmp39 = constants;
-  const items7 = [callback(importDefault(9450), { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: tmp3.customStatusBubble, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, editEnabled: true }), , ];
-  const obj13 = { user: currentUser, displayName: pendingGlobalName, badges: tmp18, pronouns: null, badgeContainerBackground: null, displayNameAccessibilityRole: "header", pendingDisplayNameStyles: null };
-  let tmp42 = pendingPronouns;
-  const obj12 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: tmp3.customStatusBubble, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, editEnabled: true };
-  const tmpResult2 = importDefault(9449);
+  const obj10 = { style: items4, children: callback(importDefault(13926), obj11) };
+  const tmp40 = constants;
+  const items7 = [callback(importDefault(9456), { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: tmp3.customStatusBubble, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, editEnabled: true }), , ];
+  const obj14 = { user: currentUser, displayName: pendingGlobalName, badges: tmp19, pronouns: null, badgeContainerBackground: null, displayNameAccessibilityRole: "header", pendingDisplayNameStyles: null };
+  let tmp43 = pendingPronouns;
+  const obj13 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: tmp3.customStatusBubble, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, editEnabled: true };
+  const tmpResult2 = importDefault(9455);
   if (pendingPronouns == null) {
-    tmp42 = str3;
+    tmp43 = str3;
   }
-  obj13[3] = tmp42;
-  obj13[4] = containerBackground;
+  obj14[3] = tmp43;
+  obj14[4] = containerBackground;
   if (isTryItOut) {
     pendingDisplayNameStyles = tryItOutDisplayNameStyles;
   }
-  obj13[6] = pendingDisplayNameStyles;
-  items7[1] = callback(importDefault(9469), obj13);
-  const obj14 = { style: items8, children: null };
+  obj14[6] = pendingDisplayNameStyles;
+  items7[1] = callback(importDefault(9475), obj14);
+  const obj15 = { style: items8, children: null };
   items8 = [tmp4.formContainer, { backgroundColor: containerBackground }];
-  let tmp34Result = null;
+  let tmp35Result = null;
   if (null != stringResult) {
-    tmp34Result = null;
+    tmp35Result = null;
     if ("" !== stringResult) {
-      const obj15 = { style: null, children: null };
-      obj15[0] = tmp4.errorContainer;
-      const obj16 = { variant: "text-sm/bold", color: "text-feedback-critical", children: null };
-      obj16[2] = stringResult;
-      obj15[1] = tmp34(tmp13(4299).Text, obj16);
-      tmp34Result = tmp34(tmp36, obj15);
+      const obj16 = { style: null, children: null };
+      obj16[0] = tmp4.errorContainer;
+      const obj17 = { variant: "text-sm/bold", color: "text-feedback-critical", children: null };
+      obj17[2] = stringResult;
+      obj16[1] = tmp35(tmp5(4299).Text, obj17);
+      tmp35Result = tmp35(tmp37, obj16);
     }
   }
-  const items9 = [tmp34Result, , , , , , , , , , , , , ];
-  const obj17 = { inputRef: ref1, label: null, errorMessage: null, value: null, onFocus: null, onChange: null, placeholder: null, maxLength: null, isDisabled: null };
-  const tmpResult3 = importDefault(9469);
-  const intl2 = tmp13(1236).intl;
-  obj17[1] = intl2.string(_require(1236).t["9AjdkD"]);
-  obj17[2] = first;
+  const items9 = [tmp35Result, , , , , , , , , , , , , ];
+  const obj18 = { inputRef: ref1, label: null, errorMessage: null, value: null, onFocus: null, onChange: null, placeholder: null, maxLength: null, isDisabled: null };
+  const tmpResult3 = importDefault(9475);
+  const intl2 = tmp5(1236).intl;
+  obj18[1] = intl2.string(_require(1236).t["9AjdkD"]);
+  obj18[2] = first;
   if (pendingGlobalName == null) {
     pendingGlobalName = str2;
   }
-  obj17[3] = pendingGlobalName;
-  obj17[4] = onFocus;
-  obj17[5] = function onChange(globalName) {
-    let obj = ref(8265);
+  obj18[3] = pendingGlobalName;
+  obj18[4] = onFocus;
+  obj18[5] = function onChange(globalName) {
+    let obj = ref(8270);
     obj = { globalName };
     return obj.setPendingChanges(obj);
   };
-  obj17[6] = currentUser.toString();
-  obj17[7] = closure_9;
-  obj17[8] = isSubmitting;
-  items9[1] = callback(importDefault(13923), obj17);
-  tmp34Result = result;
+  obj18[6] = currentUser.toString();
+  obj18[7] = closure_8;
+  obj18[8] = isSubmitting;
+  items9[1] = callback(importDefault(13931), obj18);
+  tmp35Result = result;
   if (!result) {
-    tmp34Result = isTryItOut;
+    tmp35Result = isTryItOut;
   }
-  if (tmp34Result) {
-    const obj18 = { user: null, isTryItOut: null };
-    obj18[0] = currentUser;
-    obj18[1] = isTryItOut;
-    tmp34Result = tmp34(tmp(13924), obj18);
+  if (tmp35Result) {
+    const obj19 = { user: null, isTryItOut: null };
+    obj19[0] = currentUser;
+    obj19[1] = isTryItOut;
+    tmp35Result = tmp35(tmp(13932), obj19);
   }
-  items9[2] = tmp34Result;
-  const obj19 = { inputRef: ref2, label: null, errorMessage: null, value: null, onFocus: null, onChange: null, maxLength: null, isDisabled: null };
-  const tmpResult4 = importDefault(13923);
-  const intl3 = tmp13(1236).intl;
-  obj19[1] = intl3.string(_require(1236).t["+T3RI/"]);
-  obj19[2] = first3;
+  items9[2] = tmp35Result;
+  const obj20 = { inputRef: ref2, label: null, errorMessage: null, value: null, onFocus: null, onChange: null, maxLength: null, isDisabled: null };
+  const tmpResult4 = importDefault(13931);
+  const intl3 = tmp5(1236).intl;
+  obj20[1] = intl3.string(_require(1236).t["+T3RI/"]);
+  obj20[2] = first3;
   if (pendingPronouns == null) {
     pendingPronouns = str3;
   }
-  obj19[3] = pendingPronouns;
-  obj19[4] = onFocus;
-  obj19[5] = function onChange(pronouns) {
-    let obj = ref(8265);
+  obj20[3] = pendingPronouns;
+  obj20[4] = onFocus;
+  obj20[5] = function onChange(pronouns) {
+    let obj = ref(8270);
     obj = { pronouns };
     return obj.setPendingChanges(obj);
   };
-  obj19[6] = closure_10;
-  obj19[7] = isSubmitting;
-  items9[3] = callback(importDefault(13923), obj19);
-  const obj20 = { inputRef: ref3, label: null, errorMessage: null, value: null, onFocus: null, onChange: null, autoFocus: null, maxLength: null, numberOfLines: 5, isDisabled: null };
-  const tmpResult5 = importDefault(13923);
-  const intl4 = tmp13(1236).intl;
-  obj20[1] = intl4.string(_require(1236).t.ZzAR2Y);
-  obj20[2] = first4;
+  obj20[6] = closure_9;
+  obj20[7] = isSubmitting;
+  items9[3] = callback(importDefault(13931), obj20);
+  const obj21 = { inputRef: ref3, label: null, errorMessage: null, value: null, onFocus: null, onChange: null, autoFocus: null, maxLength: null, numberOfLines: 5, isDisabled: null };
+  const tmpResult5 = importDefault(13931);
+  const intl4 = tmp5(1236).intl;
+  obj21[1] = intl4.string(_require(1236).t.ZzAR2Y);
+  obj21[2] = first4;
   if (pendingBio == null) {
     pendingBio = str4;
   }
-  obj20[3] = pendingBio;
-  obj20[4] = onFocus;
-  obj20[5] = function onChange(bio) {
-    let obj = ref(8265);
+  obj21[3] = pendingBio;
+  obj21[4] = onFocus;
+  obj21[5] = function onChange(bio) {
+    let obj = ref(8270);
     obj = { bio };
     return obj.setPendingChanges(obj);
   };
-  obj20[6] = autoFocusElement === tmp39.BIO;
-  obj20[7] = closure_8;
-  obj20[9] = isSubmitting;
-  items9[4] = callback(importDefault(13923), obj20);
-  const obj21 = { user: currentUser, onProfileThemeColorsChanged: null, pendingAvatarSrc: null, pendingThemeColors: null, isTryItOut: null };
-  const tmpResult6 = importDefault(13923);
+  obj21[6] = autoFocusElement === tmp40.BIO;
+  obj21[7] = bioMaxLength;
+  obj21[9] = isSubmitting;
+  items9[4] = callback(importDefault(13931), obj21);
+  const obj22 = { user: currentUser, onProfileThemeColorsChanged: null, pendingAvatarSrc: null, pendingThemeColors: null, isTryItOut: null };
+  const tmpResult6 = importDefault(13931);
   if (isTryItOut) {
-    let fn = tmp13(8268).setTryItOutThemeColors;
+    let fn = tmp5(8273).setTryItOutThemeColors;
   } else {
     fn = (themeColors) => {
-      let obj = ref(8265);
+      let obj = ref(8270);
       obj = { themeColors };
       return obj.setPendingChanges(obj);
     };
   }
-  obj21[1] = fn;
-  obj21[2] = pendingAvatarSrc;
+  obj22[1] = fn;
+  obj22[2] = pendingAvatarSrc;
   if (isTryItOut) {
     pendingThemeColors = tryItOutThemeColors;
   }
-  obj21[3] = pendingThemeColors;
-  obj21[4] = isTryItOut;
-  items9[5] = callback(importDefault(13929), obj21);
-  let tmp34Result1 = !isTryItOut;
+  obj22[3] = pendingThemeColors;
+  obj22[4] = isTryItOut;
+  items9[5] = callback(importDefault(13937), obj22);
+  let tmp35Result1 = !isTryItOut;
   if (!isTryItOut) {
-    const obj22 = { badges: null };
-    obj22[0] = tmp18;
-    tmp34Result1 = tmp34(tmp(13931), obj22);
+    const obj23 = { badges: null };
+    obj23[0] = tmp19;
+    tmp35Result1 = tmp35(tmp(13939), obj23);
   }
-  items9[6] = tmp34Result1;
-  const obj23 = { user: currentUser, pendingAvatarDecoration: null, isTryItOut: null };
-  const tmpResult7 = importDefault(13929);
+  items9[6] = tmp35Result1;
+  const obj24 = { user: currentUser, pendingAvatarDecoration: null, isTryItOut: null };
+  const tmpResult7 = importDefault(13937);
   if (isTryItOut) {
     pendingAvatarDecoration = tryItOutAvatarDecoration;
   }
-  obj23[1] = pendingAvatarDecoration;
-  obj23[2] = isTryItOut;
-  items9[7] = callback(importDefault(13935), obj23);
-  const obj24 = { user: currentUser, pendingProfileEffect: null, displayProfile: null, isTryItOut: null };
-  const tmpResult8 = importDefault(13935);
+  obj24[1] = pendingAvatarDecoration;
+  obj24[2] = isTryItOut;
+  items9[7] = callback(importDefault(13943), obj24);
+  const obj25 = { user: currentUser, pendingProfileEffect: null, displayProfile: null, isTryItOut: null };
+  const tmpResult8 = importDefault(13943);
   if (isTryItOut) {
     pendingProfileEffect = tryItOutProfileEffect;
   }
-  let tmp34Result2 = "profile" === tmp13Result.useCustomTypingIndicatorConfig("UserProfileEditForm").entryPoint;
-  obj24[1] = pendingProfileEffect;
-  obj24[2] = tmp15Result;
-  obj24[3] = isTryItOut;
-  items9[8] = callback(importDefault(13936), obj24);
-  items9[9] = callback(importDefault(13940), { user: currentUser, pendingProfileFrame, displayProfile: tmp15Result });
-  items9[10] = callback(importDefault(13944), { user: currentUser, pendingNameplate });
-  if (tmp34Result2) {
-    let tmp53 = result;
+  let tmp35Result2 = "profile" === tmp5Result.useCustomTypingIndicatorConfig("UserProfileEditForm").entryPoint;
+  obj25[1] = pendingProfileEffect;
+  obj25[2] = tmp16Result;
+  obj25[3] = isTryItOut;
+  items9[8] = callback(importDefault(13944), obj25);
+  items9[9] = callback(importDefault(13948), { user: currentUser, pendingProfileFrame, displayProfile: tmp16Result });
+  items9[10] = callback(importDefault(13952), { user: currentUser, pendingNameplate });
+  if (tmp35Result2) {
+    let tmp54 = result;
     if (!result) {
-      tmp53 = isTryItOut;
+      tmp54 = isTryItOut;
     }
-    tmp34Result2 = tmp53;
+    tmp35Result2 = tmp54;
   }
-  if (tmp34Result2) {
-    tmp34Result2 = tmp34(tmp(13949), {});
+  if (tmp35Result2) {
+    tmp35Result2 = tmp35(tmp(13957), {});
   }
-  items9[11] = tmp34Result2;
-  const tmpResult9 = importDefault(13936);
+  items9[11] = tmp35Result2;
+  const tmpResult9 = importDefault(13944);
   items9[12] = callback(closure_5, {
     ref(arg0) {
       if (null != arg0) {
-        ref.current[outer1_11.GUILD_TAG] = arg0;
+        ref.current[outer1_10.GUILD_TAG] = arg0;
       }
     },
-    children: callback(importDefault(13950), { user: currentUser, disabled: isSubmitting, tagStyle: { backgroundColor: containerBackground }, pendingPrimaryGuildId })
+    children: callback(importDefault(13958), { user: currentUser, disabled: isSubmitting, tagStyle: { backgroundColor: containerBackground }, pendingPrimaryGuildId })
   });
-  let tmp34Result3 = null != legacyUsername;
-  if (tmp34Result3) {
-    const obj26 = { legacyUsername: null, pendingLegacyUsernameDisabled: null };
-    obj26[0] = legacyUsername;
-    obj26[1] = pendingLegacyUsernameDisabled;
-    tmp34Result3 = tmp34(tmp(13953), obj26);
+  let tmp35Result3 = null != legacyUsername;
+  if (tmp35Result3) {
+    const obj27 = { legacyUsername: null, pendingLegacyUsernameDisabled: null };
+    obj27[0] = legacyUsername;
+    obj27[1] = pendingLegacyUsernameDisabled;
+    tmp35Result3 = tmp35(tmp(13961), obj27);
   }
-  const obj27 = { children: null };
-  items9[13] = tmp34Result3;
-  obj14[1] = items9;
-  items7[2] = closure_14(closure_5, obj14);
-  obj11[4] = items7;
-  items5[1] = closure_14(tmpResult2, obj11);
-  obj27[0] = items5;
-  items3[1] = closure_14(closure_5, obj27);
-  obj8[4] = items3;
-  items2[1] = closure_14(tmpResult1, obj8);
-  obj6[1] = items2;
-  const items10 = [closure_14(tmp37, obj6), ];
-  let tmp34Result4 = !result;
+  const obj28 = { children: null };
+  items9[13] = tmp35Result3;
+  obj15[1] = items9;
+  items7[2] = closure_13(closure_5, obj15);
+  obj12[4] = items7;
+  items5[1] = closure_13(tmpResult2, obj12);
+  obj28[0] = items5;
+  items3[1] = closure_13(closure_5, obj28);
+  obj9[4] = items3;
+  items2[1] = closure_13(tmpResult1, obj9);
+  obj7[1] = items2;
+  const items10 = [closure_13(tmp38, obj7), ];
+  let tmp35Result4 = !result;
   if (!result) {
-    tmp34Result4 = !tmp5;
+    tmp35Result4 = !tmp7;
   }
-  if (tmp34Result4) {
-    const obj28 = { isTryItOut: null };
-    obj28[0] = isTryItOut;
-    tmp34Result4 = tmp34(tmp13(13954).UserProfilePremiumUpsellCard, obj28);
+  if (tmp35Result4) {
+    const obj29 = { isTryItOut: null };
+    obj29[0] = isTryItOut;
+    tmp35Result4 = tmp35(tmp5(13962).UserProfilePremiumUpsellCard, obj29);
   }
-  items10[1] = tmp34Result4;
-  obj5[1] = items10;
-  obj4[3] = closure_14(closure_5, obj5);
-  return callback(_require(4013).ThemeContextProvider, obj4);
+  items10[1] = tmp35Result4;
+  obj6[1] = items10;
+  obj5[3] = closure_13(closure_5, obj6);
+  return callback(_require(4031).ThemeContextProvider, obj5);
 };

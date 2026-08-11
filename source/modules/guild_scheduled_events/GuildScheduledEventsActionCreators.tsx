@@ -1,8 +1,8 @@
-// Module ID: 8940
-// Function ID: 8941
-// Dependencies: [5, 1218, 6985, 1378, 676, 530, 5129, 1222, 8941, 4541, 709, 8946, 11, 2]
+// Module ID: 8946
+// Function ID: 8947
+// Dependencies: [5, 1218, 6988, 1397, 676, 530, 5129, 1222, 8947, 4541, 709, 8952, 11, 2]
 
-// Module 8940
+// Module 8946
 import sendRequest from "sendRequest";
 import fetchFingerprint from "fetchFingerprint";
 import scheduledEventSort from "scheduledEventSort";
@@ -55,19 +55,19 @@ export default {
       let obj = /^data:/;
     }
     obj = { name: entityType.name, description: entityType.description, image, privacy_level: entityType.privacyLevel, scheduled_start_time: entityType.scheduledStartTime, scheduled_end_time: entityType.scheduledEndTime, entity_type: entityType.entityType, channel_id: channelId, entity_metadata: entityMetadata, recurrence_rule: null };
-    obj[9] = require(8941) /* EditGuildEventScreens */.recurrenceRuleToServer(entityType.recurrenceRule);
+    obj[9] = require(8947) /* EditGuildEventScreens */.recurrenceRuleToServer(entityType.recurrenceRule);
     const HTTP = require(530) /* sendRequest */.HTTP;
     obj = { url: closure_10.GUILD_EVENT(arg2, arg0), body: obj, rejectWithError: null };
-    const obj3 = require(8941) /* EditGuildEventScreens */;
+    const obj3 = require(8947) /* EditGuildEventScreens */;
     obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
     return HTTP.patch(obj);
   },
   createGuildEvent(first, id) {
     let obj = { name: first.name, description: first.description, image: first.image, privacy_level: first.privacyLevel, scheduled_start_time: first.scheduledStartTime, scheduled_end_time: first.scheduledEndTime, entity_type: first.entityType, channel_id: first.channelId, entity_metadata: first.entityMetadata, recurrence_rule: null };
-    obj[9] = require(8941) /* EditGuildEventScreens */.recurrenceRuleToServer(first.recurrenceRule);
+    obj[9] = require(8947) /* EditGuildEventScreens */.recurrenceRuleToServer(first.recurrenceRule);
     const HTTP = require(530) /* sendRequest */.HTTP;
     obj = { url: closure_10.GUILD_EVENTS_FOR_GUILD(id), body: obj, rejectWithError: null };
-    const obj2 = require(8941) /* EditGuildEventScreens */;
+    const obj2 = require(8947) /* EditGuildEventScreens */;
     obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
     return HTTP.post(obj);
   },

@@ -1,15 +1,15 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9073
+// Function ID: 9074
 // Name: isGuildMember
-// Dependencies: [1371, 1372, 1971, 4315, 3938, 1903, 5840, 676, 7196, 5159, 9068, 1236, 2]
+// Dependencies: [1390, 1391, 1990, 4315, 3957, 1922, 5840, 676, 7197, 5159, 9074, 1236, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 9067 (isGuildMember)
+// Module 9073 (isGuildMember)
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import makeSortedChannel from "makeSortedChannel";
 import { ChannelTypes } from "ME";
@@ -130,7 +130,7 @@ const minutes = "minutes";
 const hours = "hours";
 const days = "days";
 const never = "never";
-let closure_19 = { [arg1(9068).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [arg1(9068).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [arg1(9068).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [arg1(9068).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [arg1(9068).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [arg1(9068).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [arg1(9068).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [arg1(9068).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [arg1(9068).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [arg1(9068).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
+let closure_19 = { [arg1(9074).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [arg1(9074).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [arg1(9074).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [arg1(9074).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [arg1(9074).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [arg1(9074).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [arg1(9074).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [arg1(9074).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [arg1(9074).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [arg1(9074).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
 let items = [require("get label").INVITE_OPTIONS_14_DAYS, require("get label").INVITE_OPTIONS_30_DAYS, require("get label").INVITE_OPTIONS_60_DAYS];
 obj = {
   getMaxAgeOptionByValue(label) {
@@ -140,7 +140,7 @@ obj = {
   },
   getMaxAgeOptions(arg0) {
     const _require = arg0;
-    const MAX_AGE_OPTIONS = _require(9068).MAX_AGE_OPTIONS;
+    const MAX_AGE_OPTIONS = _require(9074).MAX_AGE_OPTIONS;
     return MAX_AGE_OPTIONS.filter((value) => {
       const hasItem = outer1_20.includes(value);
       let tmp2 = !hasItem;
@@ -381,7 +381,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       ({ rows: c0, counts: c1 } = obj5);
       if (obj5.inviteTargetType === tmp40.EMBEDDED_APPLICATION) {
         obj1 = importDefault(5159);
-        const obj6 = { query: null, limit: 3, guildId: "channel" };
+        const obj6 = { query: null, limit: 3, guildId: "View" };
         obj6[0] = tmp44;
         let item = obj1.queryChannels(obj6).forEach((item) => {
           _undefined.push({ type: outer1_12.CHANNEL, item: item.record, isSuggested: false, score: item.score });

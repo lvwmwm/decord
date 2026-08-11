@@ -1,10 +1,10 @@
-// Module ID: 14256
-// Function ID: 14257
+// Module ID: 14264
+// Function ID: 14265
 // Name: useBountySwipeUpNux
-// Dependencies: [32, 10982, 14257, 1358, 6022, 2]
+// Dependencies: [32, 10987, 14265, 1377, 6024, 2]
 // Exports: useBountySwipeUpNux
 
-// Module 14256 (useBountySwipeUpNux)
+// Module 14264 (useBountySwipeUpNux)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -12,22 +12,22 @@ const result = require("FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY").fileFinishedIm
 
 export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
   let isEligible = location.isEligible;
-  const BountiesVerticalScrollExperiment = require(10982) /* apexExperiment */.BountiesVerticalScrollExperiment;
+  const BountiesVerticalScrollExperiment = require(10987) /* apexExperiment */.BountiesVerticalScrollExperiment;
   const tmp3 = "none" === BountiesVerticalScrollExperiment.useConfig({ location: location.location }).scrollAffordanceVariant;
-  let obj = require(14257) /* FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY */;
+  let obj = require(14265) /* FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY */;
   const first = callback(obj.useForceBountiesSwipeUpNux(), 1)[0];
   if (isEligible) {
     if (tmp3) {
-      const items = [tmp(1358).DismissibleContent.BOUNTIES_SWIPE_UP_NUX];
+      const items = [tmp(1377).DismissibleContent.BOUNTIES_SWIPE_UP_NUX];
     }
     let prop = null;
     if (isEligible) {
       prop = null;
       if (!tmp3) {
-        prop = tmp(1358).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+        prop = tmp(1377).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
       }
     }
-    let tmpResult = tmp(6022);
+    let tmpResult = tmp(6024);
     let tmp4Result = tmp4(tmpResult.useSelectedDismissibleContent([]), 2);
     if (first) {
       let tmp11 = isEligible;
@@ -36,9 +36,9 @@ export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
       }
       let tmp10 = tmp11;
     } else {
-      tmp10 = tmp9 === tmp(1358).DismissibleContent.BOUNTIES_SWIPE_UP_NUX;
+      tmp10 = tmp9 === tmp(1377).DismissibleContent.BOUNTIES_SWIPE_UP_NUX;
     }
-    tmpResult = tmp(6022);
+    tmpResult = tmp(6024);
     tmp4Result = tmp4(tmpResult.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 86400000 }), 2);
     obj = { hasSingleUseSwipeUpNux: null, dismissSingleUseSwipeUpNux: null, hasRecurringSwipeUpNux: null, dismissRecurringSwipeUpNux: null };
     obj[0] = tmp10;
@@ -49,7 +49,7 @@ export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
       }
       let tmp14 = isEligible;
     } else {
-      tmp14 = tmp13 === tmp(1358).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+      tmp14 = tmp13 === tmp(1377).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
     }
     obj[2] = tmp14;
     obj[3] = tmp4Result[1];

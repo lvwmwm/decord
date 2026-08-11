@@ -1,10 +1,10 @@
-// Module ID: 10909
-// Function ID: 10910
+// Module ID: 10914
+// Function ID: 10915
 // Name: SingleVideoCall
-// Dependencies: [19, 9739, 21, 1609, 5728, 10710, 1297, 10693, 4497, 8783, 2]
+// Dependencies: [19, 9744, 21, 1628, 5728, 10715, 1297, 10698, 4497, 8789, 2]
 // Exports: default
 
-// Module 10909 (SingleVideoCall)
+// Module 10914 (SingleVideoCall)
 import noop from "noop";
 import VoiceChatDrawerState from "VoiceChatDrawerState";
 import { jsx } from "jsxProd";

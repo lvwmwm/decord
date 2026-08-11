@@ -4,7 +4,7 @@
 
 // Module 16327
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "no",
+  locale: "bg",
   pluralRuleFunction(arg0, arg1) {
     let str = "other";
     let str2 = "other";

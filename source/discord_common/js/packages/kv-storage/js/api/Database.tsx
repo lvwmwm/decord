@@ -1,9 +1,9 @@
-// Module ID: 1944
-// Function ID: 1945
+// Module ID: 1963
+// Function ID: 1964
 // Name: open
-// Dependencies: [5, 1945, 1943, 1946, 10, 2]
+// Dependencies: [5, 1964, 1962, 1965, 10, 2]
 
-// Module 1944 (open)
+// Module 1963 (open)
 import set from "set";
 
 const require = arg1;
@@ -37,7 +37,7 @@ Database["open"] = function open(arg0, arg1) {
   })();
 };
 Database["openSyncUnsafe"] = function openSyncUnsafe(arg0, arg1) {
-  const Host = obj(1945).Host;
+  const Host = obj(1964).Host;
   const openSyncUnsafeResult = Host.openSyncUnsafe(arg0, arg1);
   if (typeof Database !== "function") {
     HermesBuiltin.throwTypeError();
@@ -45,9 +45,9 @@ Database["openSyncUnsafe"] = function openSyncUnsafe(arg0, arg1) {
   obj = Object.create(Database.prototype);
   obj.raw = openSyncUnsafeResult;
   obj.name = openSyncUnsafeResult.name;
-  obj.lastState = obj(1943).DatabaseState.Open;
+  obj.lastState = obj(1962).DatabaseState.Open;
   obj.handle = openSyncUnsafeResult.handle;
-  const Runtime = tmp2(1946).Runtime;
+  const Runtime = tmp2(1965).Runtime;
   obj.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
     if (obj.handle === arg0) {
       tmp.lastState = lastState;
@@ -56,18 +56,18 @@ Database["openSyncUnsafe"] = function openSyncUnsafe(arg0, arg1) {
   return obj;
 };
 Database["delete"] = function delete(arg0) {
-  const Host = require(1945) /* open */.Host;
+  const Host = require(1964) /* open */.Host;
   return Host.delete(arg0);
 };
 prototype["close"] = function close() {
   const self = this;
-  this.lastState = require(1943) /* TableId */.DatabaseState.Closed;
+  this.lastState = require(1962) /* TableId */.DatabaseState.Closed;
   const raw = this.raw;
   if (raw != null) {
     raw.close();
   }
   self.raw = null;
-  const Runtime = require(1946) /* logger */.Runtime;
+  const Runtime = require(1965) /* logger */.Runtime;
   const result = Runtime.removeCompletionCallback(self.databaseStateCallback);
 };
 prototype["disable"] = function disable(arg0) {
@@ -75,7 +75,7 @@ prototype["disable"] = function disable(arg0) {
   if (null == this.raw) {
     let resolved = Promise.resolve();
   } else {
-    self.lastState = require(1943) /* TableId */.DatabaseState.Disabled;
+    self.lastState = require(1962) /* TableId */.DatabaseState.Disabled;
     const obj = { type: "db.disable", handle: 0, reason: null };
     obj[2] = arg0;
     resolved = self.execute(obj);
@@ -178,7 +178,7 @@ prototype["incrementalVacuum"] = function incrementalVacuum() {
 prototype["instantaneousState"] = function instantaneousState() {
   const self = this;
   if (null == this.raw) {
-    let Closed = require(1943) /* TableId */.DatabaseState.Closed;
+    let Closed = require(1962) /* TableId */.DatabaseState.Closed;
   } else {
     Closed = self.executeSync({ type: "db.state" });
     self.lastState = Closed;

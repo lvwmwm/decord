@@ -1,29 +1,48 @@
-// Module ID: 4150
-// Function ID: 4151
+// Module ID: 1347
+// Function ID: 1348
 // Name: getThemeForColor
-// Dependencies: [4120, 1305, 505, 711, 2]
-// Exports: areThemesEqualForGradientThemes, getBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName
+// Dependencies: [1348, 1305, 505, 1363, 711, 2]
+// Exports: areThemesEqualForGradientThemes, getBaseTheme, getCustomThemeBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName, hasCustomTheme, resolveThemeWithCustomSettings
 
-// Module 4150 (getThemeForColor)
+// Module 1347 (getThemeForColor)
 import ThemeTypes from "ThemeTypes";
-import SystemThemeState from "SystemThemeState";
+import { PROTO_THEME_MAP_WEB_REFRESH as closure_4 } from "SystemThemeState";
 import { ThemeTypes } from "sum";
 
-let PROTO_THEME_MAP_WEB_REFRESH;
 let c3;
-let c4;
 let obj1;
 ({ LEGACY_STANDARD_BACKGROUND_THEMES: obj1, REFRESH_STANDARD_BACKGROUND_THEMES: c3 } = ThemeTypes);
-({ PROTO_THEME_MAP_MOBILE: c4, PROTO_THEME_MAP_WEB_REFRESH } = SystemThemeState);
 const result = require("sum").fileFinishedImporting("modules/client_themes/ClientThemesUtils.tsx");
 
 export const getThemeForColor = function getThemeForColor(l) {
   if (l.l <= 0.3) {
-    let LIGHT = ThemeTypes.DARK;
+    let LIGHT = ThemeTypes.DARKER;
   } else {
     LIGHT = ThemeTypes.LIGHT;
   }
   return LIGHT;
+};
+export const getCustomThemeBaseTheme = function getCustomThemeBaseTheme(theme) {
+  return require(1363) /* AccessibilityAnnouncer */.isThemeDark(theme) ? ThemeTypes.DARKER : ThemeTypes.LIGHT;
+};
+export const hasCustomTheme = function hasCustomTheme(colors) {
+  let tmp = null != colors;
+  if (tmp) {
+    tmp = colors.colors.length > 0;
+  }
+  return tmp;
+};
+export const resolveThemeWithCustomSettings = function resolveThemeWithCustomSettings(theme, customUserThemeSettings) {
+  let tmp = null != customUserThemeSettings;
+  if (tmp) {
+    tmp = customUserThemeSettings.colors.length > 0;
+  }
+  if (!tmp) {
+    return theme;
+  } else {
+    require(1363) /* AccessibilityAnnouncer */.isThemeDark(theme) ? ThemeTypes.DARKER : ThemeTypes.LIGHT;
+    const obj = require(1363) /* AccessibilityAnnouncer */;
+  }
 };
 export const getLinearGradientForBackgroundGradient = function getLinearGradientForBackgroundGradient(gradientPreset) {
   let angle;
@@ -33,7 +52,7 @@ export const getLinearGradientForBackgroundGradient = function getLinearGradient
     let stop;
     let token;
     ({ token, stop } = arg0);
-    return "" + callback(table[3]).unsafe_getResolvedRawColor(token, { saturation: 1 }) + " " + stop + "%";
+    return "" + callback(table[4]).unsafe_getResolvedRawColor(token, { saturation: 1 }) + " " + stop + "%";
   });
   return "linear-gradient(" + angle + "deg, " + mapped.join(", ") + ")";
 };
@@ -50,7 +69,7 @@ export const areThemesEqualForGradientThemes = function areThemesEqualForGradien
   return tmp;
 };
 export const getBaseTheme = function getBaseTheme(arg0) {
-  return table[arg0];
+  return require(1363) /* AccessibilityAnnouncer */.isThemeDark(table[arg0]) ? ThemeTypes.DARKER : ThemeTypes.LIGHT;
 };
 export const getThemeName = function getThemeName(DARK, closure_1) {
   let closure_0 = DARK;

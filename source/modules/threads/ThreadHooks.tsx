@@ -1,7 +1,7 @@
 // Module ID: 5889
 // Function ID: 5890
 // Name: useCanUnarchiveThread
-// Dependencies: [32, 4216, 1376, 1218, 1372, 3929, 5223, 676, 589, 506, 5890, 11, 12, 5891, 5892, 4517, 2]
+// Dependencies: [32, 4216, 1395, 1218, 1391, 3948, 5223, 676, 589, 506, 5890, 11, 12, 5891, 5892, 4517, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartPrivateThread, useCanStartPublicThread, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useHasPermissionToJoinThreadVoice, useIsActiveChannelOrUnarchivableThread, useIsNonModInLockedThread, useIsThreadModerator
 
 // Module 5889 (useCanUnarchiveThread)

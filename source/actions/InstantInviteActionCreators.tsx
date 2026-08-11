@@ -1,10 +1,10 @@
-// Module ID: 7758
-// Function ID: 7759
+// Module ID: 7760
+// Function ID: 7761
 // Name: generateAcceptInviteOptions
-// Dependencies: [5, 5344, 6985, 1376, 1218, 1372, 1961, 1971, 1891, 7759, 4288, 3929, 3938, 4124, 1903, 676, 1221, 1379, 4368, 7196, 5132, 1384, 7772, 5844, 1234, 1222, 5129, 1988, 7773, 9155, 4400, 4483, 12668, 6982, 4790, 8412, 8337, 5237, 8949, 709, 9332, 4517, 12669, 5232, 698, 530, 4203, 687, 5127, 503, 1385, 4289, 5234, 5826, 3970, 12671, 12672, 10414, 4622, 4540, 12673, 12674, 513, 12676, 2]
+// Dependencies: [5, 5344, 6988, 1395, 1218, 1391, 1980, 1990, 1910, 7761, 4288, 3948, 3957, 4126, 1922, 676, 1221, 1398, 4368, 7197, 5132, 1403, 7774, 5844, 1234, 1222, 5129, 2007, 7775, 9161, 4400, 4483, 12672, 6985, 4790, 8418, 8342, 5237, 8955, 709, 9338, 4517, 12673, 5232, 698, 530, 4203, 687, 5127, 503, 1404, 4289, 5234, 5826, 3989, 12675, 12676, 10419, 4622, 4540, 12677, 12678, 513, 12680, 2]
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
-// Module 7758 (generateAcceptInviteOptions)
+// Module 7760 (generateAcceptInviteOptions)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import scheduledEventSort from "scheduledEventSort";
 import { isGuildScheduledEventActive as closure_7 } from "scheduledEventSort";
@@ -17,7 +17,7 @@ import createGuildRecordFromRust from "createGuildRecordFromRust";
 import map from "map";
 import updateInvite from "updateInvite";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -88,13 +88,13 @@ function generateAcceptInviteOptions(target_type) {
   if (num == null) {
     num = 0;
   }
-  obj.isGuestInvite = require(1384) /* hasFlag */.hasFlag(num, require(7772) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
-  const obj2 = require(1384) /* hasFlag */;
+  obj.isGuestInvite = require(1403) /* hasFlag */.hasFlag(num, require(7774) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
+  const obj2 = require(1403) /* hasFlag */;
   let num2 = target_type.flags;
   if (num2 == null) {
     num2 = 0;
   }
-  obj.isApplicationBypassInvite = require(1384) /* hasFlag */.hasFlag(num2, require(7772) /* set */.GuildInviteFlags.IS_APPLICATION_BYPASS);
+  obj.isApplicationBypassInvite = require(1403) /* hasFlag */.hasFlag(num2, require(7774) /* set */.GuildInviteFlags.IS_APPLICATION_BYPASS);
   const inviter = target_type.inviter;
   let id3;
   if (inviter != null) {
@@ -668,7 +668,7 @@ export default {
       obj[1] = arg0;
       tmp(709).dispatch(obj);
       const tmpResult = tmp(709);
-      nextPromise = tmp(9332)(arg0, arg1, arg2).then((arg0) => {
+      nextPromise = tmp(9338)(arg0, arg1, arg2).then((arg0) => {
         let code;
         let invite;
         ({ invite, code } = arg0);
@@ -687,7 +687,7 @@ export default {
         }
         return { invite, code };
       });
-      const promise = tmp(9332)(arg0, arg1, arg2);
+      const promise = tmp(9338)(arg0, arg1, arg2);
     }
     return nextPromise;
   },
@@ -2004,26 +2004,26 @@ export default {
         hasItem = features.includes(constants2.HUB);
       }
       if (hasItem) {
-        obj(12671).onOpenHubInvite(closure_0);
-        const obj6 = obj(12671);
+        obj(12675).onOpenHubInvite(closure_0);
+        const obj6 = obj(12675);
       }
     }
     let num = closure_0.flags;
     if (num == null) {
       num = 0;
     }
-    let hasFlagResult = id(1384).hasFlag(num, id(7772).GuildInviteFlags.IS_GUEST_INVITE);
+    let hasFlagResult = id(1403).hasFlag(num, id(7774).GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
-      let tmp6Result = tmp6(1384);
-      hasFlagResult = tmp6Result.hasFlag(num, tmp6(7772).GuildInviteFlags.IS_APPLICATION_BYPASS);
+      let tmp6Result = tmp6(1403);
+      hasFlagResult = tmp6Result.hasFlag(num, tmp6(7774).GuildInviteFlags.IS_APPLICATION_BYPASS);
     }
     if (null != guild) {
       if (!hasFlagResult) {
         if (closure_0.new_member) {
-          tmp6Result = tmp6(12672);
+          tmp6Result = tmp6(12676);
           if (tmp6Result.inviteGuildHasPendingMemberDisabledVerification(guild)) {
-            const result1 = tmp6(12672).openVerificationModalOrTransitionToApplication(guild.id);
-            const tmp6Result1 = tmp6(12672);
+            const result1 = tmp6(12676).openVerificationModalOrTransitionToApplication(guild.id);
+            const tmp6Result1 = tmp6(12676);
           }
         }
       }
@@ -2388,7 +2388,7 @@ export default {
     let obj = require(4289) /* readSnowflake */;
     const result = obj.parseExtraDataFromInviteKey(inviteKey);
     obj = { installationId: store.getInstallationForTracking(), targetChannelId: result.targetChannelId, targetMessageId: result.targetMessageId, guildScheduledEventId: result.guildScheduledEventId };
-    importDefault(10414).openNativeAppModal(result.baseCode, constants.INVITE_BROWSER, obj);
+    importDefault(10419).openNativeAppModal(result.baseCode, constants.INVITE_BROWSER, obj);
   },
   transitionToInviteOnboarding(baseCode, closure_1) {
     let obj = closure_1;
@@ -2477,7 +2477,7 @@ export default {
           const _HermesInternal = HermesInternal;
           let combined = "discord://" + substr;
         }
-        tmp7Result = tmp7(12676);
+        tmp7Result = tmp7(12680);
         tmp7Result.launch(combined, (arg0) => {
           let obj = outer1_1(outer1_3[39]);
           if (arg0) {
@@ -2492,15 +2492,15 @@ export default {
       }
     }
     if (null != baseCode) {
-      let inviteDynamicLinkTemplate = _require(12673).getInviteDynamicLinkTemplate(baseCode);
+      let inviteDynamicLinkTemplate = _require(12677).getInviteDynamicLinkTemplate(baseCode);
       let tmp20 = _require;
-      const obj5 = _require(12673);
+      const obj5 = _require(12677);
     } else {
-      inviteDynamicLinkTemplate = _require(12673).getDefaultDynamicLinkTemplate();
+      inviteDynamicLinkTemplate = _require(12677).getDefaultDynamicLinkTemplate();
       tmp20 = _require;
-      const obj4 = _require(12673);
+      const obj4 = _require(12677);
     }
-    let tmp20Result = tmp20(12674);
+    let tmp20Result = tmp20(12678);
     const attemptId = tmp20Result.generateAttemptId();
     let str7 = "friend_invite";
     if (2 !== arg4) {
@@ -2515,8 +2515,8 @@ export default {
     obj1[6] = targetChannelId;
     obj1[7] = targetMessageId;
     obj1[8] = "https://discord.com/api/download/mobile?invite_code=" + baseCode;
-    combined = importDefault(12674)(inviteDynamicLinkTemplate, obj1);
-    const tmp7Result1 = importDefault(12674);
+    combined = importDefault(12678)(inviteDynamicLinkTemplate, obj1);
+    const tmp7Result1 = importDefault(12678);
     const obj2 = { fingerprint: null, attempt_id: null, source: null, invite_code: null };
     tmp20Result = tmp20(513);
     obj2[0] = tmp20Result.maybeExtractId(fingerprint);

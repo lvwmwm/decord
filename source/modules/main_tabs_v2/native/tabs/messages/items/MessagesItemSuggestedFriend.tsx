@@ -1,14 +1,14 @@
-// Module ID: 15178
-// Function ID: 15179
+// Module ID: 15187
+// Function ID: 15188
 // Name: getMessagesItemSuggestedFriendHeight
-// Dependencies: [32, 19, 17, 3938, 676, 21, 4303, 712, 9452, 8783, 1988, 647, 1236, 4146, 15179, 15180, 698, 4846, 1297, 4299, 4714, 4249, 7745, 15177, 2]
+// Dependencies: [32, 19, 17, 3957, 676, 21, 4303, 712, 9458, 8789, 2007, 647, 1236, 4148, 15188, 15189, 698, 4846, 1297, 4299, 4714, 4249, 7747, 15186, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 15178 (getMessagesItemSuggestedFriendHeight)
+// Module 15187 (getMessagesItemSuggestedFriendHeight)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Text";
 import { View } from "PressableBase";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import ME from "ME";
 import jsxProd from "SendMessageIcon";
 import createCacheKey from "createCacheKey";
@@ -53,7 +53,7 @@ let closure_12 = importAllResult.memo(function MessagesItemSuggestedFriendView(h
     height(suggestedFriend[10])(suggestedFriend[9], suggestedFriend.paths).then((arg0) => arg0.default({ userId: closure_2.user.id, localUser: closure_2.user, location: "Messages Tab User Profile" }));
   }, items1);
   let obj1 = height(suggestedFriend[11]);
-  const items2 = [upsertRelationship];
+  const items2 = [markAllUserIdListsStale];
   if (!addedPressed) {
     addedPressed = obj1.useStateFromStores(items2, () => outer1_6.getRelationshipType(suggestedFriend.user.id) === outer1_8.PENDING_OUTGOING);
   }
@@ -105,7 +105,7 @@ let closure_12 = importAllResult.memo(function MessagesItemSuggestedFriendView(h
     setAddedPressed(true);
   }, items4);
   obj = { accessibilityRole: "button", style: memo, onPress: callback, collapsable: false, children: null };
-  obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: "Array", size: 0.3 };
+  obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: "Array", size: "ClipPath" };
   obj[3] = height(suggestedFriend[18]).AvatarSizes.REFRESH_MEDIUM_32;
   const items5 = [callback2(height(suggestedFriend[18]).Avatar, obj), , ];
   obj1 = { style: tmp.textContainer, children: null };
@@ -146,7 +146,7 @@ const memoResult = importAllResult.memo((arg0) => {
 const memoResult1 = importAllResult.memo((suggestedFriend) => {
   let tmp2;
   let tmp3;
-  let obj = require(7745) /* noop */;
+  let obj = require(7747) /* noop */;
   const items = [suggestedFriend.suggestedFriend.user.id];
   obj = {};
   [tmp2, tmp3] = callback(obj.useRecyclingState(false, items), 2);
@@ -158,7 +158,7 @@ const memoResult1 = importAllResult.memo((suggestedFriend) => {
 const memoResult2 = importAllResult.memo((arg0) => {
   let tmp2;
   let tmp3;
-  let obj = require(15177) /* toNativeHorizontalOffset */;
+  let obj = require(15186) /* toNativeHorizontalOffset */;
   obj = {};
   [tmp2, tmp3] = callback(obj.useRecyclingState(false), 2);
   const merged = Object.assign(arg0);
@@ -169,9 +169,9 @@ const memoResult2 = importAllResult.memo((arg0) => {
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSuggestedFriend.tsx");
 
 export const getMessagesItemSuggestedFriendHeight = function getMessagesItemSuggestedFriendHeight(fontScale) {
-  const obj = require(9452) /* map */;
-  const scaleTextLineHeightResult = require(9452) /* map */.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
-  const sum = scaleTextLineHeightResult + require(9452) /* map */.scaleTextLineHeight("text-xs/medium", fontScale);
+  const obj = require(9458) /* map */;
+  const scaleTextLineHeightResult = require(9458) /* map */.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
+  const sum = scaleTextLineHeightResult + require(9458) /* map */.scaleTextLineHeight("text-xs/medium", fontScale);
   return sum + importDefault(712).space.PX_16;
 };
 export const MessagesItemSuggestedFriendFast = memoResult;

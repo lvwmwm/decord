@@ -1,10 +1,10 @@
-// Module ID: 14289
-// Function ID: 14290
+// Module ID: 14297
+// Function ID: 14298
 // Name: BountiesModalEndedCtaButtons
-// Dependencies: [21, 4303, 712, 10489, 4036, 4304, 4307, 14284, 4714, 10491, 7188, 5166, 7187, 1236, 2]
+// Dependencies: [21, 4303, 712, 10494, 4042, 4304, 4307, 14292, 4714, 10496, 7189, 5166, 7188, 1236, 2]
 // Exports: default
 
-// Module 14289 (BountiesModalEndedCtaButtons)
+// Module 14297 (BountiesModalEndedCtaButtons)
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -34,9 +34,9 @@ export default function BountiesModalEndedCtaButtons(bounty) {
     flag = false;
   }
   let callback;
-  let obj = bounty(10489);
+  let obj = bounty(10494);
   callback = obj.useGetQuestImpressionId();
-  let obj1 = bounty(4036);
+  let obj1 = bounty(4042);
   const fn = function y() {
     let obj = bounty(outer1_2[5]);
     let num = 0;
@@ -51,7 +51,7 @@ export default function BountiesModalEndedCtaButtons(bounty) {
   fn.__workletHash = 11417131685254;
   fn.__initData = closure_6;
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  bounty(14284);
+  bounty(14292);
   if (visible) {
     obj = { style: null, children: null };
     const items = [tmp.container, animatedStyle];
@@ -77,7 +77,7 @@ export default function BountiesModalEndedCtaButtons(bounty) {
     }
     items1[1] = tmp9Result;
     obj[1] = items1;
-    visible = closure_4(visible(4036).View, obj);
+    visible = closure_4(visible(4042).View, obj);
     const tmp7 = closure_4;
     tmp9 = callback;
   }

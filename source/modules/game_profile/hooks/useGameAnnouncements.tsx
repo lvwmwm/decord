@@ -1,10 +1,10 @@
-// Module ID: 9339
-// Function ID: 9340
+// Module ID: 9345
+// Function ID: 9346
 // Name: useGameAnnouncements
-// Dependencies: [19, 9279, 589, 9340, 2]
+// Dependencies: [19, 9285, 589, 9346, 2]
 // Exports: default
 
-// Module 9339 (useGameAnnouncements)
+// Module 9345 (useGameAnnouncements)
 import { useEffect } from "noop";
 import getSimilarGames from "getSimilarGames";
 

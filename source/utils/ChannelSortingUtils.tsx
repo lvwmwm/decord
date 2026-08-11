@@ -1,10 +1,10 @@
-// Module ID: 15277
-// Function ID: 15278
+// Module ID: 15287
+// Function ID: 15288
 // Name: getFirstChannelOfType
-// Dependencies: [1376, 676, 11785, 5255, 2]
+// Dependencies: [1395, 676, 11788, 5255, 2]
 // Exports: areTypesInSameSection, getDnDUpdates, getDropData
 
-// Module 15277 (getFirstChannelOfType)
+// Module 15287 (getFirstChannelOfType)
 import createChannelRecord from "createChannelRecord";
 import { ChannelTypes } from "ME";
 
@@ -554,7 +554,7 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
           tmp4 = null != substr[tmp2];
         }
         if (tmp4) {
-          let obj = localChannel2(11785);
+          let obj = localChannel2(11788);
           let moveItemFromToResult = obj.moveItemFromTo(substr, tmp, tmp2);
         }
         obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null };
@@ -566,7 +566,7 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
         obj[3] = function existingPositionGetter(channel) {
           return channel.channel.position;
         };
-        closure_4 = closure_4.concat(localChannel2(11785).calculatePositionDeltas(obj));
+        closure_4 = closure_4.concat(localChannel2(11788).calculatePositionDeltas(obj));
         return moveItemFromToResult;
       }
     }

@@ -1,7 +1,7 @@
 // Module ID: 5231
 // Function ID: 5232
 // Name: getGuildNameSuggestion
-// Dependencies: [1891, 1903, 1386, 687, 5232, 4146, 1236, 2]
+// Dependencies: [1910, 1922, 1405, 687, 5232, 4148, 1236, 2]
 // Exports: getGuildNameSuggestion
 
 // Module 5231 (getGuildNameSuggestion)
@@ -12,7 +12,7 @@ import importDefaultResult from "priv";
 const require = arg1;
 function getGuildNameSuggestion(truncateUsername) {
   currentUser = currentUser.getCurrentUser();
-  let obj = importAll(4146);
+  let obj = importAll(4148);
   const name = obj.getName(currentUser);
   let str = "";
   if (null != name) {

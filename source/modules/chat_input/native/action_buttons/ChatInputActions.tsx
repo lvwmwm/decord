@@ -1,9 +1,9 @@
-// Module ID: 11606
-// Function ID: 11607
+// Module ID: 11609
+// Function ID: 11610
 // Name: CHAT_INPUT_TIMING_CONFIG
-// Dependencies: [32, 19, 11369, 676, 21, 4303, 712, 4718, 1348, 8391, 4005, 6004, 4168, 1607, 11607, 4710, 4873, 1236, 10026, 4815, 10012, 11608, 7690, 9791, 698, 4036, 4304, 8598, 11610, 4009, 11611, 11612, 11616, 2]
+// Dependencies: [32, 19, 11374, 676, 21, 4303, 712, 4718, 1367, 8397, 4024, 6006, 4168, 1626, 11610, 4710, 4873, 1236, 10031, 4815, 10017, 11611, 7692, 9796, 698, 4042, 4304, 8604, 11613, 4028, 11614, 11615, 11619, 2]
 
-// Module 11606 (CHAT_INPUT_TIMING_CONFIG)
+// Module 11609 (CHAT_INPUT_TIMING_CONFIG)
 import renderChatInputActionButtonGiftAndThread from "renderChatInputActionButtonGiftAndThread";
 import importAllResult from "ImageIcon";
 import TextAreaCta from "TextAreaCta";

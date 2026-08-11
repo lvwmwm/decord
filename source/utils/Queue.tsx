@@ -1,9 +1,9 @@
-// Module ID: 7294
-// Function ID: 7295
+// Module ID: 7295
+// Function ID: 7296
 // Name: enqueue
 // Dependencies: [3, 8, 2]
 
-// Module 7294 (enqueue)
+// Module 7295 (enqueue)
 const tmp2 = new require("timestamp")("Queue");
 const result = require("set").fileFinishedImporting("utils/Queue.tsx");
 class Queue {

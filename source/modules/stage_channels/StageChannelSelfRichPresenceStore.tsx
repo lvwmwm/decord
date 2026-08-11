@@ -1,13 +1,13 @@
-// Module ID: 10438
-// Function ID: 10439
+// Module ID: 10443
+// Function ID: 10444
 // Name: handleUpdateActivity
-// Dependencies: [1372, 1891, 4375, 3938, 1960, 1903, 5136, 1377, 5132, 676, 3934, 9655, 5142, 4494, 5135, 659, 589, 709, 2]
+// Dependencies: [1391, 1910, 4375, 3957, 1979, 1922, 5136, 1396, 5132, 676, 3953, 9660, 5142, 4494, 5135, 659, 589, 709, 2]
 
-// Module 10438 (handleUpdateActivity)
+// Module 10443 (handleUpdateActivity)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import createRTCConnection from "createRTCConnection";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getActiveStageChannelIds from "getActiveStageChannelIds";
@@ -31,7 +31,7 @@ function handleUpdateActivity() {
       channel = channel.getChannel(voiceChannelId);
       tmp2 = null;
       if (null != channel) {
-        let obj1 = importAll(3934);
+        let obj1 = importAll(3953);
         tmp2 = null;
         if (obj1.canEveryone(constants2.VIEW_CHANNEL, channel)) {
           guild = guild.getGuild(channel.getGuildId());
@@ -40,7 +40,7 @@ function handleUpdateActivity() {
             const features = guild.features;
             tmp2 = null;
             if (features.has(constants.DISCOVERABLE)) {
-              let obj2 = require(9655) /* unpackStageChannelParty */;
+              let obj2 = require(9660) /* unpackStageChannelParty */;
               const result = obj2.packStageChannelPartyId(channel, stageInstanceByChannel);
               let id;
               if (_null != null) {
@@ -76,7 +76,7 @@ function handleUpdateActivity() {
               }
               if (topic == null) {
                 let tmp12Result = tmp12(4494);
-                topic = tmp12Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+                topic = tmp12Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
               }
               obj[1] = topic;
               tmp12Result = tmp12(5135);
@@ -169,9 +169,9 @@ const stageChannelSelfRichPresenceStore = new StageChannelSelfRichPresenceStore(
     voiceStates = voiceStates.voiceStates;
     let _require;
     if (null != c17) {
-      const result = _require(9655).unpackStageChannelParty(c17);
+      const result = _require(9660).unpackStageChannelParty(c17);
       _require = result;
-      const obj = _require(9655);
+      const obj = _require(9660);
       if (tmp5) {
         handleUpdateActivity();
       }

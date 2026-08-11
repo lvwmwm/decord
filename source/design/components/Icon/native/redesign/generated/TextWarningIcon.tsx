@@ -1,7 +1,7 @@
 // Module ID: 4805
 // Function ID: 4806
 // Name: TextWarningIcon
-// Dependencies: [19, 21, 712, 4004, 4779, 2]
+// Dependencies: [19, 21, 712, 4023, 4779, 2]
 // Exports: TextWarningIcon
 
 // Module 4805 (TextWarningIcon)
@@ -22,5 +22,5 @@ export const TextWarningIcon = function TextWarningIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

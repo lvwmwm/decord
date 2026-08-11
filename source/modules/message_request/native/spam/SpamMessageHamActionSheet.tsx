@@ -1,10 +1,10 @@
-// Module ID: 11808
-// Function ID: 11809
+// Module ID: 11811
+// Function ID: 11812
 // Name: SpamMessageRequestHamActionSheet
-// Dependencies: [32, 19, 17, 1903, 21, 4303, 712, 589, 11803, 4002, 1236, 8445, 4271, 5397, 5396, 5765, 7967, 4714, 2]
+// Dependencies: [32, 19, 17, 1922, 21, 4303, 712, 589, 11806, 4021, 1236, 8451, 4271, 5397, 5396, 5765, 7969, 4714, 2]
 // Exports: default
 
-// Module 11808 (SpamMessageRequestHamActionSheet)
+// Module 11811 (SpamMessageRequestHamActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "Button";
@@ -45,15 +45,15 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(recipientId.getRecipientId()));
-  let obj1 = require(11803) /* useMessageRequestActions */;
+  let obj1 = require(11806) /* useMessageRequestActions */;
   obj = {
     user: stateFromStores,
     onError() {
-      let obj = callback(4002);
+      let obj = callback(4021);
       obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
       const intl = recipientId(1236).intl;
       obj[1] = intl.string(recipientId(1236).t["EDYbS+"]);
-      obj[2] = callback(8445);
+      obj[2] = callback(8451);
       obj.open(obj);
     },
     onAcceptSuccess(arg0) {
@@ -88,7 +88,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   obj4[4] = function onValueChange(arg0) {
     return callback2(arg0);
   };
-  const items2 = [callback(require(7967) /* Form */.FormSwitchRow, obj4), ];
+  const items2 = [callback(require(7969) /* Form */.FormSwitchRow, obj4), ];
   const obj5 = { style: tmp.buttonContainer, children: null };
   const obj6 = {
     size: "md",

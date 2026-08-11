@@ -1,7 +1,7 @@
 // Module ID: 4996
 // Function ID: 4997
 // Name: filterPlayingActivities
-// Dependencies: [4997, 1340, 4336, 5128, 4339, 10436, 4390, 4318, 676, 4348, 3974, 1384, 9654, 659, 12, 589, 709, 2]
+// Dependencies: [4997, 1340, 4336, 5128, 4339, 10441, 4390, 4318, 676, 4348, 3993, 1403, 9659, 659, 12, 589, 709, 2]
 
 // Module 4996 (filterPlayingActivities)
 import upsertAccount from "upsertAccount";
@@ -65,7 +65,7 @@ function shouldShowActivity(flags) {
   } else {
     const type = flags.type;
     if (constants2.LISTENING === type) {
-      if (importDefault(9654)(flags)) {
+      if (importDefault(9659)(flags)) {
         let shouldShowActivityResult = upsertAccount.shouldShowActivity();
       } else {
         shouldShowActivityResult = null != flags.application_id;
@@ -85,7 +85,7 @@ function shouldShowActivity(flags) {
           result = tmp(4348).shouldShareApplicationActivity(searchGamesByNameResult[0], setLibraryApplications);
           const tmpResult1 = tmp(4348);
         } else {
-          const ShowCurrentGame = tmp(3974).ShowCurrentGame;
+          const ShowCurrentGame = tmp(3993).ShowCurrentGame;
           result = ShowCurrentGame.getSetting();
         }
       }
@@ -102,7 +102,7 @@ function shouldShowActivity(flags) {
       return result1;
     }
   }
-  obj = require(1384) /* hasFlag */;
+  obj = require(1403) /* hasFlag */;
 }
 function handleUpdate() {
   let num = idleSince.getIdleSince();
@@ -118,7 +118,7 @@ function handleUpdate() {
     IDLE = INVISIBLE;
     ONLINE = INVISIBLE;
   } else {
-    const StatusSetting = require(3974) /* explicitContentFromProto */.StatusSetting;
+    const StatusSetting = require(3993) /* explicitContentFromProto */.StatusSetting;
     ONLINE = StatusSetting.getSetting();
     if (ONLINE === StatusTypes.UNKNOWN) {
       ONLINE = StatusTypes.ONLINE;

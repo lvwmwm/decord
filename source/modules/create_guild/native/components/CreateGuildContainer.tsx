@@ -1,10 +1,10 @@
-// Module ID: 11705
-// Function ID: 11706
+// Module ID: 11708
+// Function ID: 11709
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 1961, 1903, 676, 21, 4303, 5267, 5231, 4860, 11692, 5232, 1411, 9080, 5328, 11706, 2]
+// Dependencies: [5, 32, 19, 1980, 1922, 676, 21, 4303, 5267, 5231, 4860, 11695, 5232, 1430, 9086, 5328, 11709, 2]
 // Exports: default
 
-// Module 11705 (CreateGuildContainer)
+// Module 11708 (CreateGuildContainer)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -268,7 +268,7 @@ export default function CreateGuildContainer(onCreate) {
       }
     }
   }), items);
-  obj = { top: true, style: items1, children: null };
+  obj = { top: true, left: true, right: true, style: items1, children: null };
   items1 = [, ];
   ({ flex: arr2[0], contentContainer: arr2[1] } = tmp2);
   obj = {};
@@ -282,6 +282,6 @@ export default function CreateGuildContainer(onCreate) {
   obj.onStaffOnlyChange = tmp11[1];
   obj.onCreate = callback1;
   obj.autoFocus = flag;
-  obj[2] = first2(guildTemplate(onHubGuildInfoSet[16]), obj);
+  obj[4] = first2(guildTemplate(onHubGuildInfoSet[16]), obj);
   return first2(onCreate(onHubGuildInfoSet[15]).SafeAreaPaddingView, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 13376
-// Function ID: 13377
+// Module ID: 13384
+// Function ID: 13385
 // Name: RoleDot
-// Dependencies: [19, 17, 21, 4303, 712, 500, 4720, 4742, 4725, 1351, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 500, 4720, 4742, 4725, 1370, 2]
 // Exports: RoleDot
 
-// Module 13376 (RoleDot)
+// Module 13384 (RoleDot)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -89,7 +89,7 @@ export const RoleDot = function RoleDot(background) {
         const obj5 = { colors: null, start: null, end: null, style: null };
         const items5 = [, , ];
         ({ primaryColor: arr7[0], secondaryColor: arr7[1], tertiaryColor: arr7[2] } = colors);
-        obj5[0] = items5.filter(tmp2(1351).isNotNullish);
+        obj5[0] = items5.filter(tmp2(1370).isNotNullish);
         obj5[1] = { x: 0, y: 0 };
         obj5[2] = { x: 1, y: 0 };
         const items6 = [tmp.dot, obj1];

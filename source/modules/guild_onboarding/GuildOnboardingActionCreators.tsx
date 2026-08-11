@@ -1,7 +1,7 @@
 // Module ID: 5247
 // Function ID: 5248
 // Name: _updateOnboardingResponses
-// Dependencies: [5, 32, 1963, 1372, 1971, 1903, 5242, 676, 3917, 4500, 530, 709, 1208, 5248, 12, 5249, 1351, 5252, 698, 4498, 5253, 11, 1384, 5256, 5263, 2]
+// Dependencies: [5, 32, 1982, 1391, 1990, 1922, 5242, 676, 3936, 4500, 530, 709, 1208, 5248, 12, 5249, 1370, 5252, 698, 4498, 5253, 11, 1403, 5256, 5263, 2]
 
 // Module 5247 (_updateOnboardingResponses)
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -213,7 +213,7 @@ obj[3] = function completeOnboarding(guildId, prompts) {
   [arr3, arr4] = callback2(tmp2Result.getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds), 2);
   const items = [...defaultChannelIds];
   const mapped = items.map((arg0) => channel.getChannel(arg0));
-  const found = mapped.filter(tmp2(1351).isNotNullish);
+  const found = mapped.filter(tmp2(1370).isNotNullish);
   tmp2Result = tmp2(5252);
   const tmp6 = callback2(tmp2Result.getChannelCoverageForOnboarding(guildId, prompts, defaultChannelIds), 2);
   if (null == tmp) {
@@ -273,10 +273,10 @@ obj[3] = function completeOnboarding(guildId, prompts) {
       obj = { memberOptions: null };
       obj1 = { flags: null };
       const tmp2Result8 = tmp2(5248);
-      obj1[0] = tmp2(1384).setFlag(num3, GuildMemberFlags.COMPLETED_ONBOARDING, true);
+      obj1[0] = tmp2(1403).setFlag(num3, GuildMemberFlags.COMPLETED_ONBOARDING, true);
       obj[0] = obj1;
       const result3 = tmp2Result8.updateImpersonatedData(guildId, obj);
-      const tmp2Result9 = tmp2(1384);
+      const tmp2Result9 = tmp2(1403);
     }
     const tmp2Result7 = tmp2(5248);
   }
@@ -350,7 +350,7 @@ obj[7] = function resetOnboarding(arg0) {
               }
               let obj1 = outer1_0(5263);
               obj1 = { flags: null };
-              obj1[0] = outer1_0(1384).setFlag(c0, outer1_13.COMPLETED_ONBOARDING, false);
+              obj1[0] = outer1_0(1403).setFlag(c0, outer1_13.COMPLETED_ONBOARDING, false);
               dependencyMap = 1;
               c1 = 1;
               const obj2 = { value: null, done: false };

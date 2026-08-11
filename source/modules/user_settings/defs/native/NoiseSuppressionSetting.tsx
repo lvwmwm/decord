@@ -1,9 +1,9 @@
-// Module ID: 14492
-// Function ID: 14493
+// Module ID: 14500
+// Function ID: 14501
 // Name: toggle
-// Dependencies: [4351, 8082, 589, 10860, 10447, 1236, 2]
+// Dependencies: [4351, 8084, 589, 10865, 10452, 1236, 2]
 
-// Module 14492 (toggle)
+// Module 14500 (toggle)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
@@ -19,8 +19,8 @@ createToggle = {
     return require(589) /* initialize */.useStateFromStores(items, () => noiseSuppression.getNoiseSuppression());
   },
   onValueChange: function onNoiseSuppressionSettingValueChange(arg0) {
-    const NoiseSuppressionOpt = require(10860) /* handleAutomaticGainControlChange */.NoiseSuppressionOpt;
-    const result = require(10860) /* handleAutomaticGainControlChange */.handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
+    const NoiseSuppressionOpt = require(10865) /* handleAutomaticGainControlChange */.NoiseSuppressionOpt;
+    const result = require(10865) /* handleAutomaticGainControlChange */.handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
   },
   usePredicate: function useHasNoiseSuppressionSetting() {
     const items = [_detectH265HardwareDecode];

@@ -1,10 +1,10 @@
-// Module ID: 7314
-// Function ID: 7315
+// Module ID: 7315
+// Function ID: 7316
 // Name: queryGamesAutocomplete
-// Dependencies: [4832, 636, 7315, 4833, 2]
+// Dependencies: [4832, 636, 7316, 4833, 2]
 // Exports: queryGamesAutocomplete
 
-// Module 7314 (queryGamesAutocomplete)
+// Module 7315 (queryGamesAutocomplete)
 import set from "set";
 import importDefaultResult from "debounce";
 
@@ -12,7 +12,7 @@ const require = arg1;
 const obj = { leading: true, maxWait: null };
 obj[1] = require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS;
 let closure_3 = require("debounce")((arg0) => {
-  const useGameAutocomplete = require(7315) /* fetchStore */.useGameAutocomplete;
+  const useGameAutocomplete = require(7316) /* fetchStore */.useGameAutocomplete;
   const items = [arg0];
   const many = useGameAutocomplete.fetchMany(items);
 }, require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MS, obj);

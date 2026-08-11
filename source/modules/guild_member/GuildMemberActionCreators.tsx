@@ -1,7 +1,7 @@
 // Module ID: 5263
 // Function ID: 5264
 // Name: updateGuildSelfMember
-// Dependencies: [1963, 676, 5248, 709, 530, 2]
+// Dependencies: [1982, 676, 5248, 709, 530, 2]
 // Exports: updateGuildSelfMember
 
 // Module 5263 (updateGuildSelfMember)

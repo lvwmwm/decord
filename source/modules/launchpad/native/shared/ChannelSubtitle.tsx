@@ -1,10 +1,10 @@
-// Module ID: 16063
-// Function ID: 16064
+// Module ID: 16080
+// Function ID: 16081
 // Name: ChannelSubtitle
-// Dependencies: [19, 9795, 21, 16052, 4299, 15349, 9793, 2]
+// Dependencies: [19, 9800, 21, 16069, 4299, 15363, 9798, 2]
 // Exports: renderChannelSubtitle
 
-// Module 16063 (ChannelSubtitle)
+// Module 16080 (ChannelSubtitle)
 import "noop";
 import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ function ChannelSubtitle(arg0) {
   let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, subtitle } = arg0);
-  let obj = require(15349) /* getChannelSubtitleData */;
+  let obj = require(15363) /* getChannelSubtitleData */;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
@@ -41,7 +41,7 @@ function ChannelSubtitle(arg0) {
       str = "text-muted";
     }
     obj[5] = str;
-    obj.children = tmp(9793).renderMessagePreviewMarkup(obj);
+    obj.children = tmp(9798).renderMessagePreviewMarkup(obj);
     return jsx(tmp(4299).Text, { content: null, muted: null, channelId: null, guildId: null, disableAnimatedEmoji: null, color: null });
   }
 }
@@ -55,7 +55,7 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
     return null;
   } else {
     let obj = { variant: null, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75, style: null };
-    obj[0] = importDefault(16052)().messagePreview.text.variant;
+    obj[0] = importDefault(16069)().messagePreview.text.variant;
     let num = 1;
     if (!muted) {
       num = SUBTITLE_OPACITY_NORMAL;

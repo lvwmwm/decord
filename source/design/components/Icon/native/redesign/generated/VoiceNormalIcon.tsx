@@ -1,7 +1,7 @@
 // Module ID: 4829
 // Function ID: 4830
 // Name: VoiceNormalIcon
-// Dependencies: [19, 21, 712, 4004, 4773, 2]
+// Dependencies: [19, 21, 712, 4023, 4773, 2]
 // Exports: VoiceNormalIcon
 
 // Module 4829 (VoiceNormalIcon)
@@ -22,5 +22,5 @@ export const VoiceNormalIcon = function VoiceNormalIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,8 +1,8 @@
-// Module ID: 4036
-// Function ID: 4037
-// Dependencies: [501, 1634, 4037, 2]
+// Module ID: 4042
+// Function ID: 4043
+// Dependencies: [501, 1653, 4043, 2]
 
-// Module 4036
+// Module 4042
 import PlatformTypes from "PlatformTypes";
 
 if (PlatformTypes.isAndroid()) {

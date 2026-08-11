@@ -1,11 +1,11 @@
-// Module ID: 10363
-// Function ID: 10364
+// Module ID: 10368
+// Function ID: 10369
 // Name: StrangerDangerWarningBanner
-// Dependencies: [19, 3938, 9668, 10339, 676, 10364, 21, 4303, 712, 589, 10352, 10353, 4509, 4271, 10365, 1988, 503, 10354, 1236, 10357, 4299, 10367, 2]
+// Dependencies: [19, 3957, 9673, 10344, 676, 10369, 21, 4303, 712, 589, 10357, 10358, 4509, 4271, 10370, 2007, 503, 10359, 1236, 10362, 4299, 10372, 2]
 
-// Module 10363 (StrangerDangerWarningBanner)
+// Module 10368 (StrangerDangerWarningBanner)
 import MoreTipsModalScreen from "MoreTipsModalScreen";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { SafetyWarningTypes } from "handleConnectionOpen";
 import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
 import { AnalyticEvents } from "ME";
@@ -23,7 +23,7 @@ class StrangerDangerWarningBanner {
     senderId = global.senderId;
     MoreTipsModalScreen = undefined;
     c4 = undefined;
-    f85006 = undefined;
+    f85060 = undefined;
     c6 = undefined;
     MoreTipsModalScreen = jsx();
     tmp = channelId;
@@ -67,7 +67,7 @@ class StrangerDangerWarningBanner {
         obj.trackCtaEvent(obj);
       };
     }, items4);
-    f85006 = callback1;
+    f85060 = callback1;
     items5 = [, , , , ];
     items5[0] = callback1;
     items5[1] = callback;
@@ -95,7 +95,7 @@ class StrangerDangerWarningBanner {
     }, items5);
     c6 = callback2;
     tmp8 = jsx;
-    obj = { channelId, warningId, senderId, warningType: f85006.STRANGER_DANGER, header: null, description: null, onDismiss: null, buttons: null };
+    obj = { channelId, warningId, senderId, warningType: f85060.STRANGER_DANGER, header: null, description: null, onDismiss: null, buttons: null };
     tmp9 = require("SafetyWarningBanner");
     intl = require("getSystemLocale").intl;
     obj[4] = intl.string(require("getSystemLocale").t.iOkDpM);

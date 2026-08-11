@@ -1,10 +1,10 @@
-// Module ID: 10008
-// Function ID: 10009
+// Module ID: 10013
+// Function ID: 10014
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 4640, 5398, 21, 4303, 712, 38, 4851, 1474, 1609, 4730, 4271, 4872, 10009, 4002, 7793, 4860, 10177, 10178, 5397, 5399, 4712, 4299, 500, 8870, 8841, 5767, 5374, 10179, 10181, 1236, 8448, 10183, 8357, 4815, 10185, 4714, 4262, 2]
+// Dependencies: [32, 19, 17, 4640, 5398, 21, 4303, 712, 38, 4851, 1493, 1628, 4730, 4271, 4872, 10014, 4021, 7795, 4860, 10182, 10183, 5397, 5399, 4712, 4299, 500, 8876, 8847, 5767, 5374, 10184, 10186, 1236, 8454, 10188, 8362, 4815, 10190, 4714, 4262, 2]
 // Exports: default
 
-// Module 10008 (UploadPreviewActionSheet)
+// Module 10013 (UploadPreviewActionSheet)
 import getSystemLocale from "getSystemLocale";
 import useCanSetThumbnail from "useCanSetThumbnail";
 import get_ActivityIndicator from "CircleErrorIcon";
@@ -134,9 +134,9 @@ export default function UploadPreviewActionSheet(onAdd) {
       }
     }).catch((code) => {
       if ("E_PICKER_CANCELLED" !== code.code) {
-        let obj = callback2(4002);
+        let obj = callback2(4021);
         obj = { key: "CROP_ERROR", IconComponent: null, content: null };
-        obj[1] = callback(7793).CircleErrorIcon;
+        obj[1] = callback(7795).CircleErrorIcon;
         obj[2] = code.message;
         obj.open(obj);
       }

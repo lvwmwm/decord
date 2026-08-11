@@ -1,6 +1,6 @@
 // Module ID: 5129
 // Function ID: 5130
-// Dependencies: [4317, 1372, 4351, 676, 709, 1222, 5130, 10879, 2]
+// Dependencies: [4317, 1391, 4351, 676, 709, 1222, 5130, 10884, 2]
 
 // Module 5129
 import set from "set";
@@ -61,8 +61,8 @@ export default {
   disconnect() {
     remoteSessionId = remoteSessionId.getRemoteSessionId();
     if (null != remoteSessionId) {
-      importAll(10879).remoteDisconnect(remoteSessionId);
-      const obj = importAll(10879);
+      importAll(10884).remoteDisconnect(remoteSessionId);
+      const obj = importAll(10884);
     }
     const voiceChannel = this.selectVoiceChannel(null);
   }

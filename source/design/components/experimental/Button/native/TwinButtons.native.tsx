@@ -1,10 +1,10 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 8671
+// Function ID: 8672
 // Name: TwinButtons
 // Dependencies: [19, 17, 21, 4303, 712, 4720, 4714, 2]
 // Exports: TwinButtons
 
-// Module 8665 (TwinButtons)
+// Module 8671 (TwinButtons)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

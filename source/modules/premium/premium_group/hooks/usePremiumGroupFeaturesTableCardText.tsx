@@ -1,10 +1,10 @@
-// Module ID: 12758
-// Function ID: 12759
+// Module ID: 12762
+// Function ID: 12763
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [3953, 3961, 1236, 2866, 1921, 8156, 12759, 589, 2]
+// Dependencies: [3972, 3980, 1236, 2885, 1940, 8158, 12763, 589, 2]
 // Exports: default
 
-// Module 12758 (usePremiumGroupFeaturesTableCardText)
+// Module 12762 (usePremiumGroupFeaturesTableCardText)
 import reset from "reset";
 import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 
@@ -15,17 +15,17 @@ const require = arg1;
 const result = require("getSystemLocale").fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupFeaturesTableCardText.tsx");
 
 export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
-  let obj = { useCachedData: true, fetch: arg0 === require(1921) /* create */.PremiumSubscriptionGroupRole.MEMBER };
-  const tmp4 = importDefault(12759)(obj);
+  let obj = { useCachedData: true, fetch: arg0 === require(1940) /* create */.PremiumSubscriptionGroupRole.MEMBER };
+  const tmp4 = importDefault(12763)(obj);
   let obj1 = require(589) /* initialize */;
   const items = [reset];
   const stateFromStores = obj1.useStateFromStores(items, () => premiumGroupSubscription.getPremiumGroupSubscription());
-  if (arg0 === require(1921) /* create */.PremiumSubscriptionGroupRole.UNSPECIFIED) {
+  if (arg0 === require(1940) /* create */.PremiumSubscriptionGroupRole.UNSPECIFIED) {
     return null;
   } else {
-    if (arg0 === tmp(1921).PremiumSubscriptionGroupRole.PRIMARY) {
-      let priceString = tmp(8156).getPriceString(stateFromStores, { withIntervals: true });
-      const tmpResult = tmp(8156);
+    if (arg0 === tmp(1940).PremiumSubscriptionGroupRole.PRIMARY) {
+      let priceString = tmp(8158).getPriceString(stateFromStores, { withIntervals: true });
+      const tmpResult = tmp(8158);
     } else {
       priceString = null;
       if (null != tmp4) {
@@ -33,22 +33,22 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
         obj = { primaryName: null, premiumGroupProductName: null };
         obj[0] = tmp4;
         obj[1] = callback();
-        priceString = intl.format(tmp3(2866).Nu9LNm, obj);
+        priceString = intl.format(tmp3(2885).Nu9LNm, obj);
       }
     }
     let str = "...";
     if (null != priceString) {
       str = priceString;
     }
-    if (arg0 === tmp(1921).PremiumSubscriptionGroupRole.PRIMARY) {
+    if (arg0 === tmp(1940).PremiumSubscriptionGroupRole.PRIMARY) {
       const intl3 = tmp(1236).intl;
       obj = { helpCenterLink: null, premiumGroupProductName: null };
       obj[0] = closure_5;
       obj[1] = callback();
-      let formatResult = intl3.format(tmp3(2866)["+R/K74"], obj);
+      let formatResult = intl3.format(tmp3(2885)["+R/K74"], obj);
     } else {
       const intl2 = tmp(1236).intl;
-      const tmp3Result = tmp3(2866);
+      const tmp3Result = tmp3(2885);
       obj1 = { helpCenterLink: null };
       obj1[0] = closure_5;
       formatResult = intl2.format(arg1 ? tmp3Result["xF+upx"] : tmp3Result.qqfnOm, obj1);

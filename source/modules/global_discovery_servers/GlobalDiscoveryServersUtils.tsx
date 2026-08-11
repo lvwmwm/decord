@@ -1,10 +1,10 @@
-// Module ID: 16915
-// Function ID: 16916
+// Module ID: 16927
+// Function ID: 16928
 // Name: _navigateToGuild
-// Dependencies: [5, 1975, 12969, 9023, 676, 1236, 1351, 5956, 698, 16914, 514, 2]
+// Dependencies: [5, 1994, 12973, 9029, 676, 1236, 1370, 5958, 698, 16926, 514, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 16915 (_navigateToGuild)
+// Module 16927 (_navigateToGuild)
 import getSystemLocale from "getSystemLocale";
 import _getSystemLocale from "_getSystemLocale";
 import map from "map";
@@ -85,7 +85,7 @@ function _navigateToGuild() {
               obj2 = {};
               const merged = Object.assign(c5);
               obj2.loadId = c0;
-              let obj4 = callback2(5956);
+              let obj4 = callback2(5958);
               dependencyMap = 2;
               c4 = 1;
               const obj3 = { value: null, done: false };
@@ -254,7 +254,7 @@ export const getCategoryIdFromServerTab = function getCategoryIdFromServerTab(ar
   } else if (tmp.HUBS === arg0) {
     return closure_13;
   } else {
-    require(1351) /* isDiscordFrontendDevelopment */.assertNever(arg0);
+    require(1370) /* isDiscordFrontendDevelopment */.assertNever(arg0);
   }
 };
 export const isStaleFeaturedGuilds = function isStaleFeaturedGuilds(outer1_2) {
@@ -272,7 +272,7 @@ export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: null, presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "call", discoverySplash: "<string:3679519297>", emojis: "<string:1360077165>" };
+  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: null, presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "call", discoverySplash: true, emojis: true };
   obj[6] = new Set(id.features);
   ({ approximate_presence_count: obj[7], approximate_member_count: obj[8], discovery_splash: obj[11] } = id);
   obj[12] = [];
@@ -311,8 +311,8 @@ export const handleTabPressPrefetch = function handleTabPressPrefetch() {
   let isInitialFetchComplete = store.getIsInitialFetchComplete(closure_9);
   if (!isInitialFetchComplete) {
     if (!isFetching) {
-      const featuredGuilds = importDefault(16914).fetchFeaturedGuilds();
-      const obj = importDefault(16914);
+      const featuredGuilds = importDefault(16926).fetchFeaturedGuilds();
+      const obj = importDefault(16926);
     }
   }
   if (isInitialFetchComplete) {
@@ -322,8 +322,8 @@ export const handleTabPressPrefetch = function handleTabPressPrefetch() {
     isInitialFetchComplete = null != error;
   }
   if (isInitialFetchComplete) {
-    const featuredGuilds1 = importDefault(16914).fetchFeaturedGuilds({ forceRefresh: true });
-    const obj2 = importDefault(16914);
+    const featuredGuilds1 = importDefault(16926).fetchFeaturedGuilds({ forceRefresh: true });
+    const obj2 = importDefault(16926);
   }
 };
 export const makeAnalyticsID = function makeAnalyticsID() {

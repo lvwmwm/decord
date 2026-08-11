@@ -1,10 +1,10 @@
-// Module ID: 7419
-// Function ID: 7420
+// Module ID: 7421
+// Function ID: 7422
 // Name: useResubscribeSubscriptionParams
-// Dependencies: [19, 7417, 514, 2]
+// Dependencies: [19, 7419, 514, 2]
 // Exports: default
 
-// Module 7419 (useResubscribeSubscriptionParams)
+// Module 7421 (useResubscribeSubscriptionParams)
 import noop from "noop";
 
 const require = arg1;
@@ -12,7 +12,7 @@ const result = require("v1").fileFinishedImporting("modules/billing/native/subsc
 
 export default function useResubscribeSubscriptionParams(arg0) {
   let closure_0 = arg0;
-  const tmp = importDefault(7417)();
+  const tmp = importDefault(7419)();
   importDefault = tmp;
   const items = [arg0, tmp];
   return React.useMemo(() => {

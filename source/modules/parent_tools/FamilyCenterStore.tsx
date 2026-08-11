@@ -1,9 +1,9 @@
-// Module ID: 6996
-// Function ID: 6997
+// Module ID: 6999
+// Function ID: 7000
 // Name: freshTeenActivityWithMap
-// Dependencies: [32, 3982, 1220, 1903, 6997, 1411, 11, 6998, 7052, 7053, 2]
+// Dependencies: [32, 4001, 1220, 1922, 7000, 1430, 11, 7001, 7055, 7056, 2]
 
-// Module 6996 (freshTeenActivityWithMap)
+// Module 6999 (freshTeenActivityWithMap)
 import _slicedToArray from "_slicedToArray";
 import { getCountryCodeByAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME";
 import "clearAll";
@@ -69,7 +69,7 @@ function handleInitialLoad(arg0) {
     let obj = {};
     const merged = Object.assign(arg0);
     obj = {};
-    const merged1 = Object.assign(_undefined(1411).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+    const merged1 = Object.assign(_undefined(1430).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
     let num = approximate_member_count.approximate_member_count;
     if (num == null) {
       num = 0;
@@ -199,7 +199,7 @@ function handleTeenActivityFetch(familyCenterTeenActivity) {
       let obj = {};
       const merged = Object.assign(arg0);
       obj = {};
-      const merged1 = Object.assign(_undefined(1411).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+      const merged1 = Object.assign(_undefined(1430).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
       let num = approximate_member_count.approximate_member_count;
       if (num == null) {
         num = 0;
@@ -260,7 +260,7 @@ function handleTeenActivityMoreFetch(familyCenterTeenActivity) {
     let obj = {};
     const merged = Object.assign(arg0);
     obj = {};
-    const merged1 = Object.assign(_undefined(1411).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+    const merged1 = Object.assign(_undefined(1430).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
     let num = approximate_member_count.approximate_member_count;
     if (num == null) {
       num = 0;
@@ -323,8 +323,8 @@ function handleCurrentUserUpdate(user) {
     if (linked_users.some((arg0) => undefined === table[arg0.user_id])) {
       const _Object = Object;
       if (user.linked_users.length > Object.keys(reduced).length) {
-        const linkedUsers = importDefault(6998).fetchLinkedUsers();
-        const obj2 = importDefault(6998);
+        const linkedUsers = importDefault(7001).fetchLinkedUsers();
+        const obj2 = importDefault(7001);
       }
     }
     linked_users = user.linked_users;
@@ -524,7 +524,7 @@ prototype["loadCache"] = function loadCache() {
       let obj = {};
       const merged = Object.assign(arg0);
       obj = {};
-      const merged1 = Object.assign(_undefined(1411).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+      const merged1 = Object.assign(_undefined(1430).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
       let num = approximate_member_count.approximate_member_count;
       if (num == null) {
         num = 0;
@@ -558,7 +558,7 @@ prototype["loadCache"] = function loadCache() {
       let tmp2;
       let tmp3;
       [tmp2, tmp3] = callback(str.split(":"), 2);
-      let obj = _undefined(7052);
+      let obj = _undefined(7055);
       const result = obj.displayTypeFromString(tmp2);
       let tmp5 = arg0;
       if (undefined !== result) {
@@ -747,7 +747,7 @@ prototype["isCurrentUserInRestrictedHours"] = function isCurrentUserInRestricted
   } else {
     return false;
   }
-  obj = prototype(7053);
+  obj = prototype(7056);
 };
 FamilyCenterStore.displayName = "FamilyCenterStore";
 FamilyCenterStore.LATEST_SNAPSHOT_VERSION = 3;

@@ -1,9 +1,9 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 13680
+// Function ID: 13681
 // Name: getModalState
-// Dependencies: [1935, 38, 8221, 687, 6917, 589, 709, 2]
+// Dependencies: [1954, 38, 8225, 687, 6920, 589, 709, 2]
 
-// Module 13672 (getModalState)
+// Module 13680 (getModalState)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -29,21 +29,21 @@ obj = {
   },
   INTERACTION_MODAL_CREATE: function handleInteractionModalCreate(nonce) {
     if (nonce.nonce === c7) {
-      importDefault(6917).deleteMessage(c6, c5, true);
+      importDefault(6920).deleteMessage(c6, c5, true);
       c5 = null;
       c6 = null;
       c7 = null;
-      const obj = importDefault(6917);
+      const obj = importDefault(6920);
     }
     return false;
   },
   INTERACTION_IFRAME_MODAL_CREATE: function handleInteractionIframeModalCreate(nonce) {
     if (nonce.nonce === c7) {
-      importDefault(6917).deleteMessage(c6, c5, true);
+      importDefault(6920).deleteMessage(c6, c5, true);
       c5 = null;
       c6 = null;
       c7 = null;
-      const obj = importDefault(6917);
+      const obj = importDefault(6920);
     }
     return false;
   },
@@ -54,11 +54,11 @@ obj = {
     ({ data, preflight } = nonce);
     let startTimeout;
     const interactionType = data.interactionType;
-    if (nonce(1935).InteractionTypes.APPLICATION_COMMAND === interactionType) {
+    if (nonce(1954).InteractionTypes.APPLICATION_COMMAND === interactionType) {
       const messageId = nonce.messageId;
       const channelId = data.channelId;
       return false;
-    } else if (tmp(1935).InteractionTypes.MODAL_SUBMIT === interactionType) {
+    } else if (tmp(1954).InteractionTypes.MODAL_SUBMIT === interactionType) {
       let tmp7 = null == nonce;
       if (!tmp7) {
         tmp7 = IN_FLIGHT === obj.ERRORED;

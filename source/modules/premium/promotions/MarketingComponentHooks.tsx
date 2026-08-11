@@ -1,10 +1,10 @@
-// Module ID: 10043
-// Function ID: 10044
+// Module ID: 10048
+// Function ID: 10049
 // Name: useThemeAndReducedMotionAwareAssetUrl
-// Dependencies: [4295, 4239, 589, 4011, 2]
+// Dependencies: [4295, 4239, 589, 1364, 2]
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
-// Module 10043 (useThemeAndReducedMotionAwareAssetUrl)
+// Module 10048 (useThemeAndReducedMotionAwareAssetUrl)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const require = arg1;
@@ -18,6 +18,6 @@ export const useThemeAndReducedMotionAwareAssetUrl = function useThemeAndReduced
   if (null == asset) {
     return null;
   } else {
-    const tmp3Result = tmp3(4011);
+    const tmp3Result = tmp3(1364);
   }
 };

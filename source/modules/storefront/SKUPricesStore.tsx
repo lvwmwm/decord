@@ -1,7 +1,7 @@
 // Module ID: 5853
 // Function ID: 5854
 // Name: resetStoreState
-// Dependencies: [1975, 589, 1351, 709, 2]
+// Dependencies: [1994, 589, 1370, 709, 2]
 
 // Module 5853 (resetStoreState)
 import _getSystemLocale from "_getSystemLocale";
@@ -69,7 +69,7 @@ prototype["getRewardsForSkuId"] = function getRewardsForSkuId(id) {
   if (null != id) {
     if (null != dependencyMap[id]) {
       const mapped = tmp2.rewardResultIds.map((arg0) => table[arg0]);
-      return mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+      return mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     }
   }
 };

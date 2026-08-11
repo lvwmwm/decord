@@ -1,10 +1,10 @@
-// Module ID: 11662
-// Function ID: 11663
+// Module ID: 11665
+// Function ID: 11666
 // Name: DoubleTapToReactChatInputBannerInner
-// Dependencies: [32, 19, 17, 4295, 1369, 1906, 21, 4303, 712, 500, 647, 5360, 1416, 4299, 1236, 11663, 4846, 5326, 9349, 503, 4036, 4304, 1297, 4271, 11755, 1988, 8853, 4731, 8663, 3974, 11145, 8076, 10001, 1358, 2]
+// Dependencies: [32, 19, 17, 4295, 1388, 1925, 21, 4303, 712, 500, 647, 5360, 1435, 4299, 1236, 11666, 4846, 5326, 9355, 503, 4042, 4304, 1297, 4271, 11758, 2007, 8859, 4731, 8669, 3993, 11150, 8078, 10006, 1377, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 11662 (DoubleTapToReactChatInputBannerInner)
+// Module 11665 (DoubleTapToReactChatInputBannerInner)
 import SelectedDismissibleContent from "SelectedDismissibleContent";
 import encodeProperties from "encodeProperties";
 import { View } from "XSmallIcon";
@@ -44,8 +44,8 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
     }
     obj2[1] = animated;
     obj2[2] = EMOJI_URL_BASE_SIZE;
-    let url = importDefault(1416).getEmojiURL(obj2);
-    const tmp8Result = importDefault(1416);
+    let url = importDefault(1435).getEmojiURL(obj2);
+    const tmp8Result = importDefault(1435);
   } else {
     url = emoji.url;
   }
@@ -58,7 +58,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp2(1236).intl;
   obj5[2] = intl.string(require(1236) /* getSystemLocale */.t["6RUX7d"]);
-  const items3 = [closure_9(require(4299) /* Text */.Text, obj5), closure_9(require(11663) /* renderChannelBadge */.NewBadge, {})];
+  const items3 = [closure_9(require(4299) /* Text */.Text, obj5), closure_9(require(11666) /* renderChannelBadge */.NewBadge, {})];
   obj4[1] = items3;
   const items4 = [closure_10(View, obj4), ];
   const obj6 = { variant: "text-xs/medium", color: "text-default", children: null };

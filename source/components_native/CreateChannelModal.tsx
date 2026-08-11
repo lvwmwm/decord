@@ -1,10 +1,10 @@
-// Module ID: 8992
-// Function ID: 8993
+// Module ID: 8998
+// Function ID: 8999
 // Name: ChannelTypeRow
-// Dependencies: [32, 19, 17, 1376, 1415, 1372, 1891, 3929, 3938, 1903, 676, 7781, 21, 4303, 712, 4809, 4816, 4829, 4825, 4822, 4815, 4807, 4814, 4826, 4824, 4821, 1236, 4299, 1974, 4019, 5374, 7986, 7967, 1297, 5369, 589, 38, 4494, 5133, 8993, 1480, 8994, 4498, 5270, 8996, 6008, 8997, 12, 4486, 4712, 7791, 5993, 5767, 9000, 5768, 4823, 9004, 503, 9017, 5716, 5783, 2]
+// Dependencies: [32, 19, 17, 1395, 1434, 1391, 1910, 3948, 3957, 1922, 676, 7783, 21, 4303, 712, 4809, 4816, 4829, 4825, 4822, 4815, 4807, 4814, 4826, 4824, 4821, 1236, 4299, 1993, 4032, 5374, 7988, 7969, 1297, 5369, 589, 38, 4494, 5133, 8999, 1499, 9000, 4498, 5270, 9002, 6010, 9003, 12, 4486, 4712, 7793, 5995, 5767, 9006, 5768, 4823, 9010, 503, 9023, 5716, 5783, 2]
 // Exports: default
 
-// Module 8992 (ChannelTypeRow)
+// Module 8998 (ChannelTypeRow)
 import Form from "Form";
 import AnnouncementsIcon from "AnnouncementsIcon";
 import get_ActivityIndicator from "VoiceNormalIcon";
@@ -13,7 +13,7 @@ import { isGuildOwner } from "GuildNSFWContentLevel";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { RowType } from "RowType";
@@ -241,7 +241,7 @@ class CreateChannel {
       let obj = { headerLeft: null, headerRight: null, headerTitle: null };
       obj[0] = categoryId(createMode[43]).getHeaderCloseButton(outer1_1(createMode[44]).close);
       obj[1] = function headerRight() {
-        if (upsertRelationship) {
+        if (markAllUserIdListsStale) {
           let tmpResult = tmp(outer1_0(outer1_2[43]).HeaderSubmittingIndicator, {});
         } else {
           let tmp5 = closure_15;

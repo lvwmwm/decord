@@ -1,10 +1,10 @@
-// Module ID: 14827
-// Function ID: 14828
+// Module ID: 14837
+// Function ID: 14838
 // Name: CollectiblesShopScreen
-// Dependencies: [19, 678, 21, 6878, 14828, 6019, 14829, 5748, 2]
+// Dependencies: [19, 678, 21, 6880, 14838, 6021, 14839, 5748, 2]
 // Exports: default
 
-// Module 14827 (CollectiblesShopScreen)
+// Module 14837 (CollectiblesShopScreen)
 import "noop";
 import { CollectiblesMobileShopScreen as closure_3 } from "items";
 import { jsx } from "jsxProd";
@@ -13,12 +13,12 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/shop/native/CollectiblesShopScreen.tsx");
 
 export default function CollectiblesShopScreen() {
-  let obj = require(6878) /* useSettingNavigationRoute */;
+  let obj = require(6880) /* useSettingNavigationRoute */;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
-  const shopOrientationLock = require(14828) /* useShopOrientationLock */.useShopOrientationLock();
-  const obj2 = require(14828) /* useShopOrientationLock */;
+  const shopOrientationLock = require(14838) /* useShopOrientationLock */.useShopOrientationLock();
+  const obj2 = require(14838) /* useShopOrientationLock */;
   const tmp = require;
-  const giftCardMobileConsumptionHalfsheet = require(6019) /* useGiftCardMobileConsumptionHalfsheet */.useGiftCardMobileConsumptionHalfsheet();
+  const giftCardMobileConsumptionHalfsheet = require(6021) /* useGiftCardMobileConsumptionHalfsheet */.useGiftCardMobileConsumptionHalfsheet();
   const params = settingNavigationRoute.params;
   let screen;
   if (params != null) {
@@ -42,5 +42,5 @@ export default function CollectiblesShopScreen() {
     onNavigateAway = params3.onNavigateAway;
   }
   obj[2] = onNavigateAway;
-  return jsx(tmp(14829).CollectiblesShopV2, { analyticsSource, screen, onNavigateAway: null });
+  return jsx(tmp(14839).CollectiblesShopV2, { analyticsSource, screen, onNavigateAway: null });
 };

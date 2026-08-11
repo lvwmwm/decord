@@ -1,10 +1,10 @@
-// Module ID: 16010
-// Function ID: 16011
+// Module ID: 16027
+// Function ID: 16028
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1903, 676, 1369, 21, 4020, 4153, 4239, 589, 3947, 1236, 2642, 6016, 5821, 4123, 1358, 5397, 5328, 5712, 6027, 500, 5268, 16011, 9386, 1297, 4299, 4714, 4303, 712, 2]
+// Dependencies: [19, 17, 1922, 676, 1388, 21, 1356, 1363, 4239, 589, 3966, 1236, 2661, 6018, 5821, 4125, 1377, 5397, 5328, 5712, 6029, 500, 5268, 16028, 9392, 1297, 4299, 4714, 4303, 712, 2]
 // Exports: default
 
-// Module 16010 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 16027 (DisplayNameStylesFlywheelMobileActionSheet)
 import ActionSheetHeaderBar from "ActionSheetHeaderBar";
 import { View } from "Background";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -43,19 +43,19 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   let dependencyMap;
   let obj = React;
   ref = React.useRef(null);
-  const enabled = React.useContext(markAsDismissed(4020).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let obj1 = markAsDismissed(4153);
+  const enabled = React.useContext(markAsDismissed(1356).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj1 = markAsDismissed(1363);
   const isThemeDarkResult = obj1.isThemeDark(ref(4239)());
   const tmp6 = callback2();
   let obj2 = markAsDismissed(589);
   const items = [mergeGuildAvatar];
   const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj3 = ref(3947);
+  let obj3 = ref(3966);
   let result = obj3.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
   const intl = markAsDismissed(1236).intl;
   const string = intl.string;
-  const tmp9 = ref(2642);
+  const tmp9 = ref(2661);
   if (result) {
     let stringResult = string(tmp9.TyUdka);
   } else {
@@ -99,7 +99,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   obj2 = { style: tmp6.imageContainer, children: null };
   let tmp14Result = enabled;
   if (enabled) {
-    tmp14Result = tmp14(tmp2(6027).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+    tmp14Result = tmp14(tmp2(6029).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   }
   const items5 = [tmp14Result, ];
   if (enabled) {
@@ -118,7 +118,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     }
     obj4[2] = str2;
     const intl2 = tmp2(1236).intl;
-    obj4[3] = intl2.string(tmp4(2642).Uzms61);
+    obj4[3] = intl2.string(tmp4(2661).Uzms61);
     items4[3] = tmp14(tmp2(4299).Text, obj4);
     const obj5 = { variant: "text-lg/medium", style: null, color: null, children: null };
     obj5[1] = tmp6.subtitle;
@@ -151,7 +151,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     if (tmp2Result.isIOS()) {
       const obj10 = { source: null, style: null, resizeMode: "contain", enableAnimation: null };
       const obj11 = { uri: null };
-      obj11[0] = tmp4(16011);
+      obj11[0] = tmp4(16028);
       obj10[0] = obj11;
       obj10[1] = tmp6.image;
       obj10[3] = !enabled;
@@ -159,9 +159,9 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       const tmp4Result = tmp4(5268);
     } else {
       const obj12 = { url: null, style: null, autoplay: true };
-      obj12[0] = tmp4(16011);
+      obj12[0] = tmp4(16028);
       obj12[1] = tmp6.image;
-      tmp14Result = tmp14(tmp2(9386).APNGPlayer, obj12);
+      tmp14Result = tmp14(tmp2(9392).APNGPlayer, obj12);
     }
     tmp2Result = tmp2(500);
   }

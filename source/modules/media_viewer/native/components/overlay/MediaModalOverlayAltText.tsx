@@ -1,8 +1,8 @@
-// Module ID: 12246
-// Function ID: 12247
-// Dependencies: [19, 21, 4303, 712, 1609, 3974, 4846, 11005, 4299, 1236, 2]
+// Module ID: 12249
+// Function ID: 12250
+// Dependencies: [19, 21, 4303, 712, 1628, 3993, 4846, 11010, 4299, 1236, 2]
 
-// Module 12246
+// Module 12249
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -20,7 +20,7 @@ const memoResult = require("noop").memo(function MediaModalOverlayAltTextButton(
   if (str == null) {
     str = "";
   }
-  const ViewImageDescriptions = str(3974).ViewImageDescriptions;
+  const ViewImageDescriptions = str(3993).ViewImageDescriptions;
   let tmp4 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp4 = null;

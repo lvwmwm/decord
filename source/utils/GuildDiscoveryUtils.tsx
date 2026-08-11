@@ -1,10 +1,10 @@
-// Module ID: 5956
-// Function ID: 5957
+// Module ID: 5958
+// Function ID: 5959
 // Name: _startLurking
-// Dependencies: [5, 3930, 4224, 1891, 676, 1222, 5957, 5865, 5232, 698, 530, 1464, 2]
+// Dependencies: [5, 3949, 4224, 1910, 676, 1222, 5959, 5865, 5232, 698, 530, 1483, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 5956 (_startLurking)
+// Module 5958 (_startLurking)
 import transitionTo from "transitionTo";
 import initialize from "initialize";
 import handleInviteData from "handleInviteData";
@@ -467,7 +467,7 @@ const result = require("handleInviteData").fileFinishedImporting("utils/GuildDis
 export const AnalyticsContexts = { SEARCH: "Search", RECOMMENDED: "Recommended", POPULAR: "Popular", RECOMMENDED_E3: "Recommended - E3", HEADER: "Header", GLOBAL_DISCOVERY: "Global Discovery", FORWARD_BREADCRUMB: "Forward Breadcrumb" };
 export const IOS_MINIMUM_MEMBER_COUNT = ">1000";
 export const MINIMUM_MEMBER_COUNT = ">200";
-export const startLurking = function startLurking(guildId, c4, arg2, c42) {
+export const startLurking = function startLurking(id, c4, arg2, c42) {
   const self = this;
   const apply = _startLurking.apply;
   if (typeof apply === "unknown") {

@@ -1,10 +1,10 @@
-// Module ID: 12841
-// Function ID: 12842
+// Module ID: 12845
+// Function ID: 12846
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 3953, 5858, 21, 4719, 4299, 589, 5861, 7421, 5728, 10038, 4643, 1236, 3947, 10034, 4715, 12842, 2]
+// Dependencies: [5, 19, 17, 3972, 5858, 21, 4719, 4299, 589, 5861, 7423, 5728, 10043, 4643, 1236, 3966, 10039, 4715, 12846, 2]
 // Exports: default
 
-// Module 12841 (GiftPurchaseButton)
+// Module 12845 (GiftPurchaseButton)
 import jsxProd from "jsxProd";
 import set from "set";
 import { View } from "CollapsingText";
@@ -124,10 +124,10 @@ export default function GiftPurchaseButton(style) {
         } else {
           closure_0 = arg1;
           premiumType = 0;
-          premiumTypeFromPlanId = outer1_0(3947).getPremiumTypeFromPlanId(closure_0);
+          premiumTypeFromPlanId = outer1_0(3966).getPremiumTypeFromPlanId(closure_0);
           premiumType = premiumTypeFromPlanId.premiumType;
           planInterval = premiumTypeFromPlanId.planInterval;
-          const obj9 = outer1_0(3947);
+          const obj9 = outer1_0(3966);
           const obj5 = { recipientUserId: null, premiumType: null, planInterval: null, analyticsLocation: null, analyticsLocations: null, order: null };
           obj5[0] = premiumType;
           obj5[1] = premiumType;
@@ -135,7 +135,7 @@ export default function GiftPurchaseButton(style) {
           obj5[3] = premiumTypeFromPlanId;
           obj5[4] = c4;
           obj5[5] = closure_0;
-          outer1_0(10034).openGiftModal(obj5);
+          outer1_0(10039).openGiftModal(obj5);
           c4 = 3;
           return { value: "HermesInternal", done: null };
         }

@@ -1,9 +1,9 @@
-// Module ID: 7061
-// Function ID: 7062
+// Module ID: 7064
+// Function ID: 7065
 // Name: set
-// Dependencies: [676, 500, 7062, 7063, 17, 7064, 7065, 530, 2]
+// Dependencies: [676, 500, 7065, 7066, 17, 7067, 7068, 530, 2]
 
-// Module 7061 (set)
+// Module 7064 (set)
 import { Endpoints } from "ME";
 import get_ActivityIndicator from "get ActivityIndicator";
 import set from "set";
@@ -43,7 +43,7 @@ const prototype = MonitoringAgent.prototype;
 prototype["_getMetricWithDefaults"] = function _getMetricWithDefaults(name, COUNT) {
   let tags = name.tags;
   const obj = { name: name.name, type: COUNT, tags: null };
-  obj[2] = obj(7065).getGlobalTagsArray();
+  obj[2] = obj(7068).getGlobalTagsArray();
   if (null != tags) {
     const item = tags.forEach((arg0) => {
       const tags = obj.tags;
@@ -66,10 +66,10 @@ prototype["_getMetricWithDefaults"] = function _getMetricWithDefaults(name, COUN
     const _HermesInternal = HermesInternal;
     tags1.push("platform:" + str);
   }
-  const CurrentReleaseChannel = tmp(7062).CurrentReleaseChannel;
+  const CurrentReleaseChannel = tmp(7065).CurrentReleaseChannel;
   let tmp9 = null;
   if (null != CurrentReleaseChannel) {
-    const ALL = tmp(7063).ReleaseChannelsSets.ALL;
+    const ALL = tmp(7066).ReleaseChannelsSets.ALL;
     tmp9 = null;
     if (ALL.has(CurrentReleaseChannel)) {
       tmp9 = CurrentReleaseChannel;
@@ -126,7 +126,7 @@ prototype["_flush"] = function _flush() {
     obj[0] = Endpoints.METRICS_V2;
     obj = { metrics: null, client_info: null };
     obj[0] = items;
-    obj[1] = { built_at: "1786339120387", build_number: "6193" };
+    obj[1] = { built_at: "1786425562001", build_number: "6201" };
     obj[1] = obj;
     HTTP.post(obj).catch(() => {
       if (self._metrics.length + items.length < 100) {

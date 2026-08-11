@@ -1,9 +1,9 @@
-// Module ID: 1366
-// Function ID: 1367
+// Module ID: 1385
+// Function ID: 1386
 // Name: handleRequiredAction
 // Dependencies: [589, 709, 2]
 
-// Module 1366 (handleRequiredAction)
+// Module 1385 (handleRequiredAction)
 import { Store } from "initialize";
 
 function handleRequiredAction(requiredAction) {

@@ -1,10 +1,10 @@
-// Module ID: 15750
-// Function ID: 15751
+// Module ID: 15767
+// Function ID: 15768
 // Name: SearchListContentAuthor
-// Dependencies: [19, 17, 21, 4303, 712, 1297, 4299, 4146, 4494, 9663, 4816, 1236, 4764, 5376, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1297, 4299, 4148, 4494, 9668, 4816, 1236, 4764, 5376, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 15750 (SearchListContentAuthor)
+// Module 15767 (SearchListContentAuthor)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -43,7 +43,7 @@ function SearchListPrivateChannel(channel) {
     obj = { channel: null, size: null };
     obj[0] = channel;
     obj[1] = require(1297) /* Button */.AvatarSizes.SIZE_16;
-    obj[1] = callback(importDefault(9663), obj);
+    obj[1] = callback(importDefault(9668), obj);
     const items = [callback(tmp6, obj), ];
     const obj1 = { style: null, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: null };
     obj1[0] = tmp.channelName;
@@ -51,7 +51,7 @@ function SearchListPrivateChannel(channel) {
     items[1] = callback(require(4299) /* Text */.Text, obj1);
     obj[1] = items;
     let tmp5Result = tmp5(tmp6, obj);
-    const tmp2Result = importDefault(9663);
+    const tmp2Result = importDefault(9668);
   } else {
     obj[0] = tmp.privateChannelIcon;
     const obj2 = { style: null, size: "xs", color: "interactive-text-default" };

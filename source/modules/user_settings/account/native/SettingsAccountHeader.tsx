@@ -1,12 +1,12 @@
-// Module ID: 13993
-// Function ID: 13994
+// Module ID: 14001
+// Function ID: 14002
 // Name: RestrictedAccountRedirect
-// Dependencies: [19, 17, 3938, 1903, 676, 7779, 21, 4303, 712, 13994, 1236, 6016, 589, 8514, 8451, 5374, 4714, 2]
+// Dependencies: [19, 17, 3957, 1922, 676, 7781, 21, 4303, 712, 14002, 1236, 6018, 589, 8520, 8457, 5374, 4714, 2]
 
-// Module 13993 (RestrictedAccountRedirect)
+// Module 14001 (RestrictedAccountRedirect)
 import importAllResult from "noop";
 import { View } from "set";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { AnalyticsSections } from "ME";
 import { SafetySettingsNoticeType } from "SafetyToastType";
@@ -25,7 +25,7 @@ function RestrictedAccountRedirect() {
     obj.openUserSettings(obj);
   };
   obj[2] = SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE;
-  return callback(importDefault(13994), obj);
+  return callback(importDefault(14002), obj);
 }
 let c3 = importAllResult;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
@@ -37,11 +37,11 @@ const memoResult = importAllResult.memo(() => {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = require(8514) /* handleOpenEmailVerification */;
+  let obj1 = require(8520) /* handleOpenEmailVerification */;
   const bannerText = obj1.getBannerText(stateFromStores);
   const tmp = callback2();
-  const items1 = [upsertRelationship];
-  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => blockedOrIgnoredIDs.getBlockedOrIgnoredIDs().length > 0);
+  const items1 = [markAllUserIdListsStale];
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => blockedOrIgnoredIDs.getBlockedOrIgnoredIDs().size > 0);
   const callback = importAllResult.useCallback(() => {
     callback(table[14]).open();
   }, []);
@@ -74,6 +74,6 @@ const memoResult = importAllResult.memo(() => {
   }
   return tmp9Result;
 });
-const result = require("upsertRelationship").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
 
 export default memoResult;

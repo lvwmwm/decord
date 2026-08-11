@@ -1,10 +1,10 @@
-// Module ID: 8410
-// Function ID: 8411
+// Module ID: 8416
+// Function ID: 8417
 // Name: getIsWindowSmall
 // Dependencies: [4162, 2]
 // Exports: default, useIsWindowSmall
 
-// Module 8410 (getIsWindowSmall)
+// Module 8416 (getIsWindowSmall)
 const result = require("set").fileFinishedImporting("modules/screen/native/useIsWindowSmall.tsx");
 
 export default function getIsWindowSmall() {

@@ -1,7 +1,7 @@
 // Module ID: 5753
 // Function ID: 5754
 // Name: getRoleIconData
-// Dependencies: [676, 500, 3942, 1450, 1416, 2]
+// Dependencies: [676, 500, 3961, 1469, 1435, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
 // Module 5753 (getRoleIconData)
@@ -25,9 +25,9 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
   } else {
     let byName;
     if (null != role.unicodeEmoji) {
-      let obj = importDefault(3942);
-      byName = obj.getByName(importDefault(3942).convertSurrogateToName(role.unicodeEmoji, false));
-      const obj2 = importDefault(3942);
+      let obj = importDefault(3961);
+      byName = obj.getByName(importDefault(3961).convertSurrogateToName(role.unicodeEmoji, false));
+      const obj2 = importDefault(3961);
     }
     ({ id, icon } = role);
     let tmp4;
@@ -35,14 +35,14 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
       tmp4 = icon;
       if (!icon.startsWith("data:")) {
         let str2 = "png";
-        if (require(1416) /* getAvatarURL */.SUPPORTS_WEBP) {
+        if (require(1435) /* getAvatarURL */.SUPPORTS_WEBP) {
           str2 = "webp";
         }
         let str3 = "quality=lossless";
         let str5 = "";
         if (null != arg1) {
-          tmp5(1450);
-          tmp5(1450);
+          tmp5(1469);
+          tmp5(1469);
           let str7 = "";
           const text = `size=${tmp9(arg1 * obj3.getDevicePixelRatio())}`;
           if (!set) {
@@ -69,8 +69,8 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
   }
 };
 export const replaceRoleIconSourceSize = function replaceRoleIconSourceSize(str) {
-  const obj = require(1450) /* handleImageLoad */;
-  return str.replace(/size=[0-9]+/g, "size=" + obj.getBestMediaProxySize(arg1 * require(1450) /* handleImageLoad */.getDevicePixelRatio()));
+  const obj = require(1469) /* handleImageLoad */;
+  return str.replace(/size=[0-9]+/g, "size=" + obj.getBestMediaProxySize(arg1 * require(1469) /* handleImageLoad */.getDevicePixelRatio()));
 };
 export const isRoleIconAssetUrl = function isRoleIconAssetUrl(str) {
   let startsWithResult = str.startsWith(closure_5);

@@ -1,7 +1,7 @@
 // Module ID: 4532
 // Function ID: 4533
 // Name: useNullableMessageAuthor
-// Dependencies: [1372, 1971, 1964, 1891, 3938, 1903, 38, 589, 4146, 4533, 2]
+// Dependencies: [1391, 1990, 1983, 1910, 3957, 1922, 38, 589, 4148, 4533, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
 // Module 4532 (useNullableMessageAuthor)
@@ -9,7 +9,7 @@ import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -84,7 +84,7 @@ function useNullableMessageAuthor(message) {
     return role;
   }, items7);
   const tmpResult2 = _require(id[7]);
-  const items8 = [upsertRelationship];
+  const items8 = [markAllUserIdListsStale];
   const stateFromStores5 = _require(id[7]).useStateFromStores(items8, () => {
     let nickname = null;
     if (null != id) {
@@ -157,7 +157,7 @@ function useNullableUserAuthor(author, channel) {
     return role;
   }, items4);
   tmp3Result = tmp3(tmp4[7]);
-  const items5 = [upsertRelationship];
+  const items5 = [markAllUserIdListsStale];
   const stateFromStores3 = tmp3Result.useStateFromStores(items5, () => {
     let nickname = null;
     if (null != id) {
@@ -239,7 +239,7 @@ function computeMessageAuthor(channel) {
   let str = "???";
   if (null != user) {
     if (userName == null) {
-      let obj = importDefault(4146);
+      let obj = importDefault(4148);
       userName = obj.getName(user);
     }
     str = userName;

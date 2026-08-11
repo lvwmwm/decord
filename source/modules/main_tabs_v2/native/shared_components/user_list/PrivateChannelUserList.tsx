@@ -1,11 +1,11 @@
-// Module ID: 11574
-// Function ID: 11575
-// Dependencies: [19, 1372, 3938, 1903, 676, 21, 5728, 589, 12, 1351, 11062, 1236, 8783, 9626, 2]
+// Module ID: 11577
+// Function ID: 11578
+// Dependencies: [19, 1391, 3957, 1922, 676, 21, 5728, 589, 12, 1370, 11067, 1236, 8789, 9631, 2]
 
-// Module 11574
+// Module 11577
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -154,6 +154,6 @@ const memoResult = importAllResult.memo(function PrivateChannelUserList(channelI
   }, items5);
   return num(tmp2(tmp[13]).UsersFastList, { sections, getItemProps, getSectionProps, listHeaderSize, renderListHeader, disableStickySections, disableBackgroundOverlay: true, listStyleOverride, disableBottomSafeZone, insetEnd, inActionSheet });
 });
-const result = require("upsertRelationship").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/PrivateChannelUserList.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/PrivateChannelUserList.tsx");
 
 export default memoResult;

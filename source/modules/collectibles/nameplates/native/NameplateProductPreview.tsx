@@ -1,10 +1,10 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 9561
+// Function ID: 9562
 // Name: NameplateUser
-// Dependencies: [19, 17, 4295, 21, 4303, 712, 9374, 1927, 1236, 4299, 4725, 9348, 8301, 8267, 589, 4146, 4533, 9470, 9471, 1297, 9557, 5374, 2]
+// Dependencies: [19, 17, 4295, 21, 4303, 712, 9380, 1946, 1236, 4299, 4725, 9354, 8306, 8272, 589, 4148, 4533, 9476, 9477, 1297, 9562, 5374, 2]
 // Exports: default
 
-// Module 9556 (NameplateUser)
+// Module 9561 (NameplateUser)
 import Button from "Button";
 import { View } from "AVERAGE_FONT_WIDTH_RATIO";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -49,7 +49,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = React.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: true, avatarDecoration: true, animate: "LottieAnimationView", autoStatusCutout: null, "aria-hidden": null };
+    const obj = { user: currentUser, guildId: "a", size: true, avatarDecoration: true, animate: null, autoStatusCutout: null, "aria-hidden": null };
     obj[2] = currentUser(stateFromStores[19]).AvatarSizes.NORMAL;
     obj[3] = c1;
     obj[4] = !stateFromStores;
@@ -93,12 +93,12 @@ export default function NameplateProductPreview(product) {
   let firstAvatarDecoration;
   let firstNameplate;
   const tmp = createCacheKey();
-  let obj = require(9374) /* firstAvatarDecoration */;
+  let obj = require(9380) /* firstAvatarDecoration */;
   const shopProductItems = obj.useShopProductItems(product.product);
   ({ firstNameplate, firstAvatarDecoration } = shopProductItems);
-  let obj1 = require(1927) /* getNameplateData */;
+  let obj1 = require(1946) /* getNameplateData */;
   const nameplateData = obj1.getNameplateData(firstNameplate);
-  let obj2 = require(1927) /* getNameplateData */;
+  let obj2 = require(1946) /* getNameplateData */;
   const nameplateSampleUsers = obj2.getNameplateSampleUsers();
   let tmp7 = null;
   if (null != nameplateData) {

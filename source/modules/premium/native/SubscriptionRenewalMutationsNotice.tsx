@@ -1,10 +1,10 @@
-// Module ID: 7633
-// Function ID: 7634
+// Module ID: 7635
+// Function ID: 7636
 // Name: SubscriptionRenewalMutationsNotice
-// Dependencies: [19, 17, 3948, 21, 4303, 712, 5158, 1297, 1236, 3947, 2]
+// Dependencies: [19, 17, 3967, 21, 4303, 712, 5158, 1297, 1236, 3966, 2]
 // Exports: default
 
-// Module 7633 (SubscriptionRenewalMutationsNotice)
+// Module 7635 (SubscriptionRenewalMutationsNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { isNoneSubscription } from "createFromServer";
@@ -37,8 +37,8 @@ export default function SubscriptionRenewalMutationsNotice(arg0) {
   const intl = require(1236) /* getSystemLocale */.intl;
   if (!subscription.hasExternalPlanChange) {
     if (!isNoneSubscription(renewalMutations.planId)) {
-      let displayName = importDefault(3947).getDisplayName(renewalMutations.planId);
-      const obj4 = importDefault(3947);
+      let displayName = importDefault(3966).getDisplayName(renewalMutations.planId);
+      const obj4 = importDefault(3966);
     }
     const obj1 = { planName: null, date: null };
     obj1[0] = displayName;
@@ -48,5 +48,5 @@ export default function SubscriptionRenewalMutationsNotice(arg0) {
     obj[1] = items;
     return closure_6(View, obj);
   }
-  displayName = require(3947) /* getPremiumPlanItem */.getExternalPlanDisplayName(renewalMutations);
+  displayName = require(3966) /* getPremiumPlanItem */.getExternalPlanDisplayName(renewalMutations);
 };

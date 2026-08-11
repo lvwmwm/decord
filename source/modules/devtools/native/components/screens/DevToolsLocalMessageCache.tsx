@@ -1,10 +1,10 @@
-// Module ID: 13857
-// Function ID: 13858
+// Module ID: 13864
+// Function ID: 13865
 // Name: CacheLogEntry
-// Dependencies: [17, 1372, 21, 4303, 712, 5374, 4712, 5767, 6947, 4299, 2]
+// Dependencies: [17, 1391, 21, 4303, 712, 5374, 4712, 5767, 6950, 4299, 2]
 // Exports: default
 
-// Module 13857 (CacheLogEntry)
+// Module 13864 (CacheLogEntry)
 import { ScrollView } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import jsxProd from "jsxProd";
@@ -74,21 +74,21 @@ export default function DevToolsLocalMessageCache() {
   obj = { spacing: 8, children: null };
   obj = { title: "Local Message Cache Stats", hasIcons: false, children: null };
   const obj1 = { label: "Channels Fetched", subLabel: null };
-  obj1[1] = importDefault(6947).channelsFetchStarted.size;
+  obj1[1] = importDefault(6950).channelsFetchStarted.size;
   const items = [callback(require(5374) /* TableRowInner */.TableRow, obj1), , , ];
   const obj2 = { label: "Cache Hits", subLabel: null };
-  obj2[1] = importDefault(6947).channelsFetchedWithLocalMessages.size;
+  obj2[1] = importDefault(6950).channelsFetchedWithLocalMessages.size;
   items[1] = callback(require(5374) /* TableRowInner */.TableRow, obj2);
   const obj3 = { label: "Cache Misses", subLabel: null };
-  obj3[1] = importDefault(6947).channelsFetchedNetwork.size - importDefault(6947).channelsFetchedWithLocalMessages.size;
+  obj3[1] = importDefault(6950).channelsFetchedNetwork.size - importDefault(6950).channelsFetchedWithLocalMessages.size;
   items[2] = callback(require(5374) /* TableRowInner */.TableRow, obj3);
   const obj4 = { label: "Incomplete Fetches", subLabel: null };
-  obj4[1] = importDefault(6947).channelsFetchStarted.size - importDefault(6947).channelsFetchedNetwork.size;
+  obj4[1] = importDefault(6950).channelsFetchStarted.size - importDefault(6950).channelsFetchedNetwork.size;
   items[3] = callback(require(5374) /* TableRowInner */.TableRow, obj4);
   obj[2] = items;
   const items1 = [callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj), callback(require(4299) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
   const obj5 = { title: "Fetch Log (Reversed)", hasIcons: false, children: null };
-  const fetchLogs = importDefault(6947).fetchLogs;
+  const fetchLogs = importDefault(6950).fetchLogs;
   const reversed = Array.from(fetchLogs.values()).reverse();
   obj5[2] = reversed.map((entry) => callback(closure_8, { entry }, arg1));
   items1[2] = callback(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj5);

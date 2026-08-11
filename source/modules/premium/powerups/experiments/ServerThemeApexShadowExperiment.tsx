@@ -1,7 +1,7 @@
 // Module ID: 4234
 // Function ID: 4235
 // Name: apexExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 
 // Module 4234 (apexExperiment)
 import ApexExperiment from "ApexExperiment";

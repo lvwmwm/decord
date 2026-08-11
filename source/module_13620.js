@@ -1,14 +1,26 @@
 // Module ID: 13620
 // Function ID: 13621
-// Dependencies: [13621]
+// Dependencies: [13621, 13634, 13582, 13603]
 
 // Module 13620
 
-export default (arg0) => {
-  const tmp = require(13621)(arg0);
-  let num = 0;
-  if (tmp > 0) {
-    num = min(tmp, 9007199254740991);
+export default (arg0, arg1, arg2) => {
+  const arr = require(13621)(arg1);
+  for (let num = 0; num < arr.length; num = num + 1) {
+    let tmp3 = arr[num];
+    let tmp4 = require;
+    let tmp5 = dependencyMap;
+    let tmp6 = require(13603) /* call */(arg0, tmp3);
+    let tmp7 = num;
+    if (!tmp6) {
+      let tmp8 = arg2;
+      if (arg2) {
+        tmp8 = tmp4(13603)(arg2, tmp3);
+      }
+      tmp6 = tmp8;
+    }
+    if (!tmp6) {
+      let tmpResult = tmp(arg0, tmp3, tmp2(arg1, tmp3));
+    }
   }
-  return num;
 };

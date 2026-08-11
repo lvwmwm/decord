@@ -1,10 +1,10 @@
-// Module ID: 7644
-// Function ID: 7645
+// Module ID: 7646
+// Function ID: 7647
 // Name: fetchActivePromotions
-// Dependencies: [5, 1975, 7345, 7344, 1905, 676, 709, 7645, 530, 6862, 1355, 1337, 7646, 2]
+// Dependencies: [5, 1994, 7346, 7345, 1924, 676, 709, 7647, 530, 6864, 1374, 1337, 7648, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 7644 (fetchActivePromotions)
+// Module 7646 (fetchActivePromotions)
 import ME from "ME";
 import _getSystemLocale from "_getSystemLocale";
 import createFromServer from "createFromServer";
@@ -112,11 +112,11 @@ function dismissOutboundPromotionNotice() {
   importDefault(709).dispatch({ type: "OUTBOUND_PROMOTION_NOTICE_DISMISS" });
   const lastDismissedOutboundPromotionStartDate = createEmptyPromotionsByType.lastDismissedOutboundPromotionStartDate;
   if (null != lastDismissedOutboundPromotionStartDate) {
-    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(1355).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(1374).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("userContent", (arg0) => {
       const StringValue = lastDismissedOutboundPromotionStartDate(outer1_2[11]).StringValue;
       arg0.lastDismissedOutboundPromotionStartDate = StringValue.create({ value: lastDismissedOutboundPromotionStartDate });
-    }, lastDismissedOutboundPromotionStartDate(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, lastDismissedOutboundPromotionStartDate(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function fetchActiveBogoPromotion() {
@@ -254,7 +254,7 @@ function _fetchClaimedOutboundPromotionCodes() {
       throw arg1;
     } else if (arg0 !== 2) {
       const body = arg1.body;
-      callback = body.map(callback(7646).claimedOutboundPromotionCodeFromServer);
+      callback = body.map(callback(7648).claimedOutboundPromotionCodeFromServer);
       const obj = callback2(709);
       const obj4 = { type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes: null };
       obj4[1] = callback;

@@ -1,10 +1,10 @@
-// Module ID: 15049
-// Function ID: 15050
+// Module ID: 15059
+// Function ID: 15060
 // Name: effectName
-// Dependencies: [32, 19, 17, 1903, 1915, 21, 1916, 9477, 1236, 9473, 2642, 4303, 712, 4712, 4299, 4714, 9470, 9471, 589, 15050, 5767, 5374, 10534, 4535, 2]
+// Dependencies: [32, 19, 17, 1922, 1934, 21, 1935, 9483, 1236, 9479, 2661, 4303, 712, 4712, 4299, 4714, 9476, 9477, 589, 15060, 5767, 5374, 10539, 4535, 2]
 // Exports: default
 
-// Module 15049 (effectName)
+// Module 15059 (effectName)
 import _slicedToArray from "_slicedToArray";
 import FRAME_BUDGET_MS from "FRAME_BUDGET_MS";
 import get_ActivityIndicator from "DisplayNameStyleColorPreset";
@@ -19,9 +19,9 @@ let metroImportAll;
 let require = arg1;
 function effectName(arg0) {
   const intl = require(1236) /* getSystemLocale */.intl;
-  let OpWJ3f = require(9473) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
+  let OpWJ3f = require(9479) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (OpWJ3f == null) {
-    OpWJ3f = importDefault(2642).OpWJ3f;
+    OpWJ3f = importDefault(2661).OpWJ3f;
   }
   return intl.string(OpWJ3f);
 }
@@ -56,13 +56,13 @@ function BenchmarkRow(arg0) {
   let userId;
   let userName;
   ({ userId, effect, userName, style } = arg0);
-  let obj = require(9473) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
+  let obj = require(9479) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
   obj = { style, children: null };
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(effect);
   obj = { userId, userName, effectDisplayType: null, pendingDisplayNameStyles: null, variant: "text-md/semibold" };
-  obj[2] = require(9471) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC;
+  obj[2] = require(9477) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC;
   obj[3] = displayNameStylesEffectConfig.previewStyles;
-  obj[1] = callback2(importDefault(9470), obj);
+  obj[1] = callback2(importDefault(9476), obj);
   return callback2(closure_6, obj);
 }
 ({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);

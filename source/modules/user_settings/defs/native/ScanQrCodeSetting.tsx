@@ -1,9 +1,9 @@
-// Module ID: 14226
-// Function ID: 14227
+// Module ID: 14234
+// Function ID: 14235
 // Name: pressable
-// Dependencies: [5, 4516, 12, 1605, 4861, 4509, 13217, 1988, 10447, 1236, 14129, 2]
+// Dependencies: [5, 4516, 12, 1624, 4861, 4509, 13225, 2007, 10452, 1236, 14137, 2]
 
-// Module 14226 (pressable)
+// Module 14234 (pressable)
 import { NativePermissionTypes } from "NativePermissionStatus";
 import apply from "apply";
 import importDefaultResult from "module_4509";

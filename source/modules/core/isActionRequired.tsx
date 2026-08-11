@@ -1,10 +1,10 @@
-// Module ID: 1368
-// Function ID: 1369
+// Module ID: 1387
+// Function ID: 1388
 // Name: isActionRequired
-// Dependencies: [1365, 1366, 2]
+// Dependencies: [1384, 1385, 2]
 // Exports: default
 
-// Module 1368 (isActionRequired)
+// Module 1387 (isActionRequired)
 import handleUpdateUser from "handleUpdateUser";
 import handleRequiredAction from "handleRequiredAction";
 

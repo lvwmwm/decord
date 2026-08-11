@@ -1,7 +1,7 @@
 // Module ID: 5346
 // Function ID: 5347
 // Name: _install
-// Dependencies: [5, 32, 1975, 3, 3912, 5347, 5348, 5349, 5350, 1351, 12, 1887, 2]
+// Dependencies: [5, 32, 1994, 3, 3931, 5347, 5348, 5349, 5350, 1370, 12, 1906, 2]
 // Exports: install
 
 // Module 5346 (_install)
@@ -258,7 +258,7 @@ prototype["applyLanguages"] = function applyLanguages(locale) {
     }
     outer1_6.error("" + str2 + " is not a valid locale.");
   });
-  const arr = Array.from(new Set(mapped.filter(mapped1(1351).isNotNullish)));
+  const arr = Array.from(new Set(mapped.filter(mapped1(1370).isNotNullish)));
   if (0 !== arr.length) {
     mapped1 = arr.map((arg0) => {
       let tmp = self.rawLocaleByNormalized[arg0];
@@ -310,9 +310,9 @@ let closure_9 = require("set").debounce((detectLanguage, hasAttribute) => {
   let textContent = null;
   if (null != hasAttribute) {
     if (!obj.isElement(hasAttribute, globalThis.HTMLInputElement)) {
-      let tmp2Result = tmp2(1887);
+      let tmp2Result = tmp2(1906);
       if (!tmp2Result.isElement(hasAttribute, globalThis.HTMLTextAreaElement)) {
-        tmp2Result = tmp2(1887);
+        tmp2Result = tmp2(1906);
         if (tmp2Result.isElement(hasAttribute)) {
           if (hasAttribute.hasAttribute("contenteditable")) {
             textContent = hasAttribute.textContent;
@@ -321,7 +321,7 @@ let closure_9 = require("set").debounce((detectLanguage, hasAttribute) => {
       }
     }
     textContent = hasAttribute.value;
-    obj = require(1887) /* set */;
+    obj = require(1906) /* set */;
   }
   if (null != textContent) {
     detectLanguage.detectLanguage(textContent);

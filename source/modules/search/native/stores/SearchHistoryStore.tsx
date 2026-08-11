@@ -1,9 +1,9 @@
-// Module ID: 15724
-// Function ID: 15725
+// Module ID: 15741
+// Function ID: 15742
 // Name: deserialize
-// Dependencies: [8397, 1385, 12, 589, 709, 2]
+// Dependencies: [8403, 1404, 12, 589, 709, 2]
 
-// Module 15724 (deserialize)
+// Module 15741 (deserialize)
 import MessageEmbedTypes from "MessageEmbedTypes";
 import { PersistedStore } from "initialize";
 

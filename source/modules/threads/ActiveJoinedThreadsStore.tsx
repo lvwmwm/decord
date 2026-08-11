@@ -1,7 +1,7 @@
 // Module ID: 5223
 // Function ID: 5224
 // Name: rebuild
-// Dependencies: [1376, 1372, 1891, 4315, 1960, 5224, 3931, 1379, 11, 4517, 5225, 709, 12, 589, 2]
+// Dependencies: [1395, 1391, 1910, 4315, 1979, 5224, 3950, 1398, 11, 4517, 5225, 709, 12, 589, 2]
 
 // Module 5223 (rebuild)
 import createChannelRecord from "createChannelRecord";

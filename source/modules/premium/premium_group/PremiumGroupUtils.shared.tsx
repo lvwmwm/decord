@@ -1,10 +1,10 @@
-// Module ID: 8157
-// Function ID: 8158
+// Module ID: 8159
+// Function ID: 8160
 // Name: getPriceString
-// Dependencies: [3952, 3947, 5855, 2]
+// Dependencies: [3971, 3966, 5855, 2]
 // Exports: getPriceString
 
-// Module 8157 (getPriceString)
+// Module 8159 (getPriceString)
 import addSubscriptionPlan from "addSubscriptionPlan";
 
 const require = arg1;
@@ -23,8 +23,8 @@ export const getPriceString = function getPriceString(hasAnyPremiumGroup) {
         if (null == value) {
           return null;
         } else {
-          const price = require(3947) /* getPremiumPlanItem */.getPrice(planIdFromItems);
-          const obj2 = require(3947) /* getPremiumPlanItem */;
+          const price = require(3966) /* getPremiumPlanItem */.getPrice(planIdFromItems);
+          const obj2 = require(3966) /* getPremiumPlanItem */;
           const tmp2 = require;
           const formatPriceResult = require(5855) /* formatSingleCurrencyPrice */.formatPrice(price.amount, price.currency);
           if (tmp) {

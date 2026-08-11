@@ -1,8 +1,8 @@
-// Module ID: 8831
-// Function ID: 8832
-// Dependencies: [32, 19, 17, 21, 4013, 8832, 8833, 4725, 2]
+// Module ID: 8837
+// Function ID: 8838
+// Dependencies: [32, 19, 17, 21, 4031, 8838, 8839, 4725, 2]
 
-// Module 8831
+// Module 8837
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,13 +20,13 @@ const memoResult = require("noop").memo((style) => {
   let theme;
   style = style.style;
   ({ gradientHeight, bannerHeight } = style);
-  let obj = require(4013) /* ManaContext */;
+  let obj = require(4031) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ primaryColor, secondaryColor, theme } = themeContext);
-  const gradientFallbackBackground = require(8832) /* useUserProfileColors */.useUserProfileColors({ theme, primaryColor, secondaryColor }).gradientFallbackBackground;
-  const obj2 = require(8832) /* useUserProfileColors */;
-  const obj3 = require(8833) /* useUserProfileGradientColors */;
-  const first = callback(require(8833) /* useUserProfileGradientColors */.useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2)[0];
+  const gradientFallbackBackground = require(8838) /* useUserProfileColors */.useUserProfileColors({ theme, primaryColor, secondaryColor }).gradientFallbackBackground;
+  const obj2 = require(8838) /* useUserProfileColors */;
+  const obj3 = require(8839) /* useUserProfileGradientColors */;
+  const first = callback(require(8839) /* useUserProfileGradientColors */.useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2)[0];
   if (null != primaryColor) {
     if (null != secondaryColor) {
       const _Math = Math;

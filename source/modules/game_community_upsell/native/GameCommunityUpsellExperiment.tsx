@@ -1,15 +1,15 @@
-// Module ID: 12976
-// Function ID: 12977
-// Name: GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT
-// Dependencies: [1452, 2]
+// Module ID: 12980
+// Function ID: 12981
+// Name: GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT
+// Dependencies: [1471, 2]
 
-// Module 12976 (GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT)
+// Module 12980 (GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { 1: null, 2: { enabled: true, visualVariant: "one-column" } };
-obj[2] = { enabled: true, visualVariant: "two-column" };
-const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-game-community-upsell-multi", kind: "user", defaultConfig: { enabled: false, visualVariant: "one-column" }, variations: obj });
+const obj = { 1: null, 2: { enabled: true, cardAction: "join" } };
+obj[2] = { enabled: true, cardAction: "preview" };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-08-game-community-add-server-entry", kind: "user", defaultConfig: { enabled: false, cardAction: "join" }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/game_community_upsell/native/GameCommunityUpsellExperiment.tsx");
 
-export const GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT = "2026-02-game-community-upsell-multi";
-export const GameCommunityUpsellMultiExperiment = apexExperiment;
+export const GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT = "2026-08-game-community-add-server-entry";
+export const GameCommunityAddServerEntryExperiment = apexExperiment;

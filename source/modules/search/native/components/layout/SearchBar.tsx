@@ -1,19 +1,19 @@
-// Module ID: 15709
-// Function ID: 15710
-// Dependencies: [19, 17, 1372, 1891, 3938, 1903, 11711, 8397, 8396, 676, 21, 4303, 712, 1236, 4494, 589, 1348, 4720, 11710, 11735, 4014, 11732, 11713, 9009, 15710, 2]
+// Module ID: 15726
+// Function ID: 15727
+// Dependencies: [19, 17, 1391, 1910, 3957, 1922, 11714, 8403, 8402, 676, 21, 4303, 712, 1236, 4494, 589, 1367, 4720, 11713, 11738, 1351, 11735, 11716, 9015, 15727, 2]
 
-// Module 15709
-import importAllResult from "module_11735";
+// Module 15726
+import importAllResult from "module_11738";
 import { View } from "getFontScale";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import prototype from "prototype";
 import MessageEmbedTypes from "MessageEmbedTypes";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import { SearchTypes } from "ME";
-import { jsx } from "module_11732";
+import { jsx } from "module_11735";
 import createCacheKey from "createCacheKey";
 
 let c10;

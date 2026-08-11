@@ -1,13 +1,13 @@
-// Module ID: 15793
-// Function ID: 15794
+// Module ID: 15810
+// Function ID: 15811
 // Name: snowballStem
-// Dependencies: [15794, 2]
+// Dependencies: [15811, 2]
 // Exports: snowballStem
 
-// Module 15793 (snowballStem)
-import module_15794 from "module_15794";
+// Module 15810 (snowballStem)
+import module_15811 from "module_15811";
 
-let closure_0 = module_15794.newStemmer("english");
+let closure_0 = module_15811.newStemmer("english");
 const result = require("set").fileFinishedImporting("lib/search/snowballStemmer.tsx");
 
 export const snowballStem = function snowballStem(arg0) {

@@ -1,9 +1,9 @@
-// Module ID: 10663
-// Function ID: 10664
+// Module ID: 10668
+// Function ID: 10669
 // Name: updateSpeaker
 // Dependencies: [4322, 1218, 4351, 5137, 4316, 4321, 4367, 12, 589, 709, 2]
 
-// Module 10663 (updateSpeaker)
+// Module 10668 (updateSpeaker)
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";

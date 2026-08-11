@@ -1,10 +1,10 @@
-// Module ID: 8371
-// Function ID: 8372
+// Module ID: 8376
+// Function ID: 8377
 // Name: AlwaysCompressImagesSwitch
-// Dependencies: [32, 19, 17, 4295, 1302, 1304, 4124, 1903, 1905, 676, 4359, 8372, 21, 4303, 712, 4005, 3947, 8373, 4897, 4856, 8374, 8375, 1236, 3998, 1974, 8377, 8378, 4271, 8370, 8379, 8381, 12572, 7629, 691, 589, 8698, 5768, 4299, 500, 9386, 5268, 5728, 8362, 8683, 698, 8728, 4166, 5764, 4725, 12575, 4714, 7705, 2]
+// Dependencies: [32, 19, 17, 4295, 1302, 1304, 4126, 1922, 1924, 676, 4359, 8377, 21, 4303, 712, 4024, 3966, 8378, 4897, 4856, 8379, 8380, 1236, 4017, 1993, 8382, 8383, 4271, 8375, 8384, 8385, 12576, 7631, 691, 589, 8704, 5768, 4299, 500, 9392, 5268, 5728, 8367, 8689, 698, 8734, 4166, 5764, 4725, 12579, 4714, 7707, 2]
 // Exports: default
 
-// Module 8371 (AlwaysCompressImagesSwitch)
+// Module 8376 (AlwaysCompressImagesSwitch)
 import registerAsset from "registerAsset";
 import getUploadFileSizeSum from "getUploadFileSizeSum";
 import { View } from "EntitlementFeatureNames";
@@ -77,7 +77,7 @@ function PremiumUpsellImage(arg0) {
         obj = { url: null, style: null, autoplay: true };
         obj[0] = image.uri;
         obj[1] = style;
-        let tmp5 = callback2(require(9386) /* useAPNGPlayerControls */.APNGPlayer, obj);
+        let tmp5 = callback2(require(9392) /* useAPNGPlayerControls */.APNGPlayer, obj);
       }
       return tmp5;
     }

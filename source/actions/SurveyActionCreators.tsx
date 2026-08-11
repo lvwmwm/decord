@@ -1,10 +1,10 @@
-// Module ID: 8561
-// Function ID: 8562
+// Module ID: 8567
+// Function ID: 8568
 // Name: overrideSurvey
-// Dependencies: [8560, 676, 709, 698, 5127, 503, 1385, 530, 2]
+// Dependencies: [8566, 676, 709, 698, 5127, 503, 1404, 530, 2]
 // Exports: overrideSurvey, surveyFetch, surveyHide, surveySeen
 
-// Module 8561 (overrideSurvey)
+// Module 8567 (overrideSurvey)
 import fetchSurveyIfNeeded from "fetchSurveyIfNeeded";
 import { SURVEY_REFETCH_INTERVAL } from "fetchSurveyIfNeeded";
 import ME from "ME";
@@ -61,7 +61,7 @@ export const surveyFetch = function surveyFetch(surveyOverride, disable_auto_see
       if (survey != null) {
         key = survey.key;
       }
-      return callback(1385).exact({ key });
+      return callback(1404).exact({ key });
     }
   };
   obj[2] = obj;

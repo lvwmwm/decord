@@ -1,10 +1,10 @@
-// Module ID: 16037
-// Function ID: 16038
+// Module ID: 16054
+// Function ID: 16055
 // Name: setLaunchPadPullTabExclusionRect
-// Dependencies: [10443, 595, 500, 4870, 1474, 2]
+// Dependencies: [10448, 595, 500, 4870, 1493, 2]
 // Exports: clearLaunchPadPullTabExclusionRect, getLaunchPadPullTabPositionCached, persistLaunchPadPullTabPosition, setLaunchPadPullTabPositionCached
 
-// Module 16037 (setLaunchPadPullTabExclusionRect)
+// Module 16054 (setLaunchPadPullTabExclusionRect)
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
 
 let c3;
@@ -22,9 +22,9 @@ function setLaunchPadPullTabExclusionRect() {
   }
   let obj = require(500) /* set */;
   if (obj.isAndroid()) {
-    let tmp7Result = tmp7(1474);
+    let tmp7Result = tmp7(1493);
     const diff = tmp7Result.getWindowDimensions().width - closure_5;
-    tmp7Result = tmp7(1474);
+    tmp7Result = tmp7(1493);
     const width = tmp7Result.getWindowDimensions().width;
     const sum = tmp + closure_3;
     let left;

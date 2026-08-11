@@ -1,10 +1,10 @@
-// Module ID: 14160
-// Function ID: 14161
+// Module ID: 14168
+// Function ID: 14169
 // Name: FamilyCenterLinkingBannerParentContent
-// Dependencies: [19, 17, 21, 4303, 712, 7338, 11327, 1236, 2284, 14161, 4299, 14123, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 7339, 11332, 1236, 2303, 14169, 4299, 14131, 2]
 // Exports: default
 
-// Module 14160 (FamilyCenterLinkingBannerParentContent)
+// Module 14168 (FamilyCenterLinkingBannerParentContent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,28 +22,28 @@ function FamilyCenterLinkingBannerParentContent() {
   let obj = { style: callback3().container, children: null };
   obj = { index: 1, header: null, description: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(importDefault(2284)["7xxAni"]);
+  obj[1] = intl.string(importDefault(2303)["7xxAni"]);
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl2.string(importDefault(2284)["1M9So2"]);
+  obj[2] = intl2.string(importDefault(2303)["1M9So2"]);
   const items = [callback(FamilyCenterLinkingInstructionsRow, obj), , , ];
   obj = { index: 2, header: null, description: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl3.string(importDefault(2284)["AXgx+a"]);
+  obj[1] = intl3.string(importDefault(2303)["AXgx+a"]);
   const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl4.string(importDefault(2284).GzMFnb);
+  obj[2] = intl4.string(importDefault(2303).GzMFnb);
   items[1] = callback(FamilyCenterLinkingInstructionsRow, obj);
   const obj1 = { index: 3, header: null, description: null, isLast: true };
   const intl5 = require(1236) /* getSystemLocale */.intl;
-  obj1[1] = intl5.string(importDefault(2284).MZn1tG);
+  obj1[1] = intl5.string(importDefault(2303).MZn1tG);
   const intl6 = require(1236) /* getSystemLocale */.intl;
-  obj1[2] = intl6.string(importDefault(2284)["8rLBxD"]);
+  obj1[2] = intl6.string(importDefault(2303)["8rLBxD"]);
   items[2] = callback(FamilyCenterLinkingInstructionsRow, obj1);
-  items[3] = callback(require(14123) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterParentQRCodeButton, {});
+  items[3] = callback(require(14131) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterParentQRCodeButton, {});
   obj[1] = items;
   return callback2(closure_3, obj);
 }
 function FamilyCenterLinkingBannerTeenContent() {
-  return callback(closure_3, { style: createCacheKey().container, children: callback(require(14123) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterTeenQRCodeButton, {}) });
+  return callback(closure_3, { style: createCacheKey().container, children: callback(require(14131) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterTeenQRCodeButton, {}) });
 }
 function FamilyCenterLinkingInstructionsRow(arg0) {
   let description;
@@ -97,19 +97,19 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterLinkingBanner() {
   const tmp = createCacheKey();
-  let obj = require(11327) /* useAgeSpecificText */;
+  let obj = require(11332) /* useAgeSpecificText */;
   const intl = require(1236) /* getSystemLocale */.intl;
-  const tmp2 = importDefault(7338)();
+  const tmp2 = importDefault(7339)();
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2284).zUCWEL), intl2.string(importDefault(2284).B0NPbp));
-  let obj1 = require(11327) /* useAgeSpecificText */;
+  const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2303).zUCWEL), intl2.string(importDefault(2303).B0NPbp));
+  let obj1 = require(11332) /* useAgeSpecificText */;
   const intl3 = require(1236) /* getSystemLocale */.intl;
-  const stringResult = intl.string(importDefault(2284).zUCWEL);
+  const stringResult = intl.string(importDefault(2303).zUCWEL);
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj = { style: tmp.container, children: null };
   obj = { source: null, style: null, resizeMethod: "resize" };
-  const ageSpecificText1 = obj1.useAgeSpecificText(intl3.format(importDefault(2284).yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" }), intl4.string(importDefault(2284).JsAEDi));
-  obj[0] = importDefault(14161);
+  const ageSpecificText1 = obj1.useAgeSpecificText(intl3.format(importDefault(2303).yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" }), intl4.string(importDefault(2303).JsAEDi));
+  obj[0] = importDefault(14169);
   obj[1] = tmp.art;
   const items = [callback(closure_4, obj), , ];
   obj1 = { style: tmp.content, children: null };

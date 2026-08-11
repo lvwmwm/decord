@@ -1,10 +1,10 @@
-// Module ID: 13819
-// Function ID: 13820
+// Module ID: 13827
+// Function ID: 13828
 // Name: DiscordGestureHandlerRootView
-// Dependencies: [19, 17, 21, 13820, 5427, 2]
+// Dependencies: [19, 17, 21, 13828, 5427, 2]
 // Exports: default
 
-// Module 13819 (DiscordGestureHandlerRootView)
+// Module 13827 (DiscordGestureHandlerRootView)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -23,5 +23,5 @@ export default function DiscordGestureHandlerRootView(arg0) {
   ({ children, style } = arg0);
   const obj = { style: styles.flex, children: null };
   obj[1] = jsx(require(5427) /* LegacyBaseButton */.GestureHandlerRootView, { style, children });
-  return jsx(importDefault(13820), { style: styles.flex, children: null });
+  return jsx(importDefault(13828), { style: styles.flex, children: null });
 };

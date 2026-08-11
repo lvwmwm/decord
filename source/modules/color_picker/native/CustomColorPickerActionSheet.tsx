@@ -1,10 +1,10 @@
-// Module ID: 13906
-// Function ID: 13907
+// Module ID: 13914
+// Function ID: 13915
 // Name: SuggestedColors
-// Dependencies: [32, 19, 17, 21, 4303, 712, 13907, 688, 4036, 13908, 4151, 689, 4271, 5397, 5396, 1236, 4714, 7790, 12, 13909, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 13915, 688, 4042, 13916, 4152, 689, 4271, 5397, 5396, 1236, 4714, 7792, 12, 13917, 2]
 // Exports: default
 
-// Module 13906 (SuggestedColors)
+// Module 13914 (SuggestedColors)
 import _slicedToArray from "_slicedToArray";
 import HSVColorPicker from "HSVColorPicker";
 import { View } from "TextInput";
@@ -78,9 +78,9 @@ export default function CustomColorPickerActionSheet(arg0) {
   let sharedValue2;
   let callback;
   function updateInputHexValueFromHsv(h) {
-    const hsvToRgbWorkletResult = onSelect(13908).hsvToRgbWorklet(h);
-    const obj = onSelect(13908);
-    dependencyMap(onSelect(4151).rgbToHex(hsvToRgbWorkletResult[0], hsvToRgbWorkletResult[1], hsvToRgbWorkletResult[2]));
+    const hsvToRgbWorkletResult = onSelect(13916).hsvToRgbWorklet(h);
+    const obj = onSelect(13916);
+    dependencyMap(onSelect(4152).rgbToHex(hsvToRgbWorkletResult[0], hsvToRgbWorkletResult[1], hsvToRgbWorkletResult[2]));
   }
   let obj = onSelect(688);
   let tmp = createCacheKey();
@@ -103,12 +103,12 @@ export default function CustomColorPickerActionSheet(arg0) {
       }
     }
   }, items);
-  let obj3 = onSelect(4036);
+  let obj3 = onSelect(4042);
   sharedValue = obj3.useSharedValue(h);
-  let obj5 = onSelect(4036);
+  let obj5 = onSelect(4042);
   sharedValue1 = obj5.useSharedValue(s);
   let int2hsvResult = obj1.int2hsv(color);
-  sharedValue2 = onSelect(4036).useSharedValue(v);
+  sharedValue2 = onSelect(4042).useSharedValue(v);
   let combined;
   if (suggestedColors != null) {
     const mapped = suggestedColors.map((callback) => onSelect(688).hex2int(callback));
@@ -155,7 +155,7 @@ export default function CustomColorPickerActionSheet(arg0) {
     if (tmp) {
       text = `#${first4}`;
     }
-    const hex2rgb2hsvResult = onSelect(4151).hex2rgb2hsv(text);
+    const hex2rgb2hsvResult = onSelect(4152).hex2rgb2hsv(text);
     dependencyMap(text);
     if (null != hex2rgb2hsvResult) {
       const result = sharedValue.set(hex2rgb2hsvResult.h);
@@ -163,9 +163,9 @@ export default function CustomColorPickerActionSheet(arg0) {
       const result2 = sharedValue2.set(hex2rgb2hsvResult.v / 100);
     }
   };
-  const items3 = [sharedValue2(onSelect(7790).TextInput, obj3), , ];
+  const items3 = [sharedValue2(onSelect(7792).TextInput, obj3), , ];
   const obj4 = { suggestedColors: null, onSelect: null, color: null };
-  const obj8 = onSelect(4036);
+  const obj8 = onSelect(4042);
   const tmp13 = updateInputHexValueFromHsv;
   const tmp14 = sharedValue1;
   const tmp15 = SuggestedColors;
@@ -195,7 +195,7 @@ export default function CustomColorPickerActionSheet(arg0) {
     saturation: sharedValue1,
     value: sharedValue2,
     onPanFinalize() {
-      let obj = onSelect(4036);
+      let obj = onSelect(4042);
       obj = { h: null, s: null, v: null };
       obj[0] = sharedValue.get();
       obj[1] = sharedValue1.get();
@@ -203,7 +203,7 @@ export default function CustomColorPickerActionSheet(arg0) {
       obj.runOnJS(updateInputHexValueFromHsv)(obj);
     }
   };
-  items3[2] = sharedValue2(tmp16(13909), obj5);
+  items3[2] = sharedValue2(tmp16(13917), obj5);
   obj2[1] = items3;
   obj[3] = tmp13(tmp14, obj2);
   return sharedValue2(onSelect(5397).BottomSheet, obj);

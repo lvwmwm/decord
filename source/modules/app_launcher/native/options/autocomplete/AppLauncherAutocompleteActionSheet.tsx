@@ -1,10 +1,10 @@
-// Module ID: 11559
-// Function ID: 11560
+// Module ID: 11562
+// Function ID: 11563
 // Name: Item
-// Dependencies: [32, 19, 17, 7238, 1891, 676, 4737, 21, 12, 9995, 4303, 712, 647, 4271, 11554, 11555, 1236, 38, 5374, 4503, 4299, 1297, 11556, 2]
+// Dependencies: [32, 19, 17, 7239, 1910, 676, 4737, 21, 12, 10000, 4303, 712, 647, 4271, 11557, 11558, 1236, 38, 5374, 4503, 4299, 1297, 11559, 2]
 // Exports: default
 
-// Module 11559 (Item)
+// Module 11562 (Item)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "t";
 import { View } from "module_38";
@@ -129,8 +129,8 @@ function Item(arg0) {
 }
 function AutocompleteFailedEmptyState() {
   const obj = { style: callback2().emptyState, lightSource: null, darkSource: null, title: null };
-  obj[1] = importDefault(11556);
-  obj[2] = importDefault(11556);
+  obj[1] = importDefault(11559);
+  obj[2] = importDefault(11559);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.rTAbPn);
   return callback(require(1297) /* Button */.EmptyState, obj);

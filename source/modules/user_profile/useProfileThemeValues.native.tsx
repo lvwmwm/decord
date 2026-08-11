@@ -1,7 +1,7 @@
 // Module ID: 5750
 // Function ID: 5751
 // Name: useProfileThemeValues
-// Dependencies: [19, 4295, 647, 1348, 712, 711, 2]
+// Dependencies: [19, 4295, 647, 1367, 712, 711, 2]
 // Exports: useProfileThemeValues
 
 // Module 5750 (useProfileThemeValues)
@@ -14,7 +14,7 @@ export const useProfileThemeValues = function useProfileThemeValues(theme) {
   const _require = theme;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = _require(647).useStateFromStores(items, () => saturation.saturation);
-  const tmp2 = stateFromStores(1348)("useProfileThemeValues");
+  const tmp2 = stateFromStores(1367)("useProfileThemeValues");
   const dependencyMap = tmp2;
   const items1 = [theme, stateFromStores, tmp2];
   return useMemo(() => {

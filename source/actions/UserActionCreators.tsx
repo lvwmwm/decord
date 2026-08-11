@@ -1,10 +1,10 @@
-// Module ID: 8309
-// Function ID: 8310
+// Module ID: 8314
+// Function ID: 8315
 // Name: _fetchProfile
-// Dependencies: [5, 1911, 1903, 676, 677, 3, 530, 709, 5127, 663, 38, 4202, 2]
+// Dependencies: [5, 1930, 1922, 676, 677, 3, 530, 709, 5127, 663, 38, 4202, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8309 (_fetchProfile)
+// Module 8314 (_fetchProfile)
 import timestamp from "timestamp";
 import createdAt from "createdAt";
 import mergeGuildAvatar from "mergeGuildAvatar";

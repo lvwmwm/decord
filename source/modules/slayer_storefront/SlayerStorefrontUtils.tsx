@@ -1,7 +1,7 @@
 // Module ID: 5848
 // Function ID: 5849
 // Name: getPrice
-// Dependencies: [4341, 5849, 4326, 1891, 5850, 5851, 676, 678, 505, 4541, 12, 5852, 1467, 5173, 589, 5734, 2]
+// Dependencies: [4341, 5849, 4326, 1910, 5850, 5851, 676, 678, 505, 4541, 12, 5852, 1486, 5173, 589, 5734, 2]
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getCountryPrices, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
 // Module 5848 (getPrice)
@@ -409,20 +409,20 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       if (0 !== tenantMetadata.tenantMetadata.socialLayer.carouselItems.length) {
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          obj = { primaryIconAsset: "Array", primaryIconLabel: "ct" };
+          obj = { primaryIconAsset: "Array", primaryIconLabel: "HermesInternal" };
         } else {
           const obj3 = require(4541) /* _httpGetWithCountryCodeQuery */;
-          const toURLSafeResult = importDefault(1467).toURLSafe(obj3.getAssetURL(arg1, first.labelIconAssetId, num, "webp"));
+          const toURLSafeResult = importDefault(1486).toURLSafe(obj3.getAssetURL(arg1, first.labelIconAssetId, num, "webp"));
           obj = { primaryIconAsset: null, primaryIconLabel: null };
           obj[0] = toURLSafeResult;
           obj[1] = first.label;
-          const obj2 = importDefault(1467);
+          const obj2 = importDefault(1486);
         }
         return obj;
       }
     }
   }
-  return { primaryIconAsset: "Array", primaryIconLabel: "ct" };
+  return { primaryIconAsset: "Array", primaryIconLabel: "HermesInternal" };
 };
 export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(error) {
   let obj = arg1;
@@ -437,7 +437,7 @@ export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(error) {
   if (null != error) {
     if (null != error.thumbnailAssetId) {
       const obj3 = require(4541) /* _httpGetWithCountryCodeQuery */;
-      return importDefault(1467).toURLSafe(obj3.getAssetURL(error.applicationId, error.thumbnailAssetId, num, "webp"));
+      return importDefault(1486).toURLSafe(obj3.getAssetURL(error.applicationId, error.thumbnailAssetId, num, "webp"));
     }
   }
 };
@@ -474,7 +474,7 @@ export const getCardImageURL = function getCardImageURL(sku, arg1) {
   if (null != cardImageAssetId) {
     if (null != applicationId) {
       const obj3 = require(4541) /* _httpGetWithCountryCodeQuery */;
-      return importDefault(1467).toURLSafe(obj3.getAssetURL(applicationId, cardImageAssetId, num, "webp"));
+      return importDefault(1486).toURLSafe(obj3.getAssetURL(applicationId, cardImageAssetId, num, "webp"));
     }
   }
 };
@@ -505,7 +505,7 @@ export const getCardBackgroundImageURL = function getCardBackgroundImageURL(sku,
     }
     if (null != applicationId) {
       const obj3 = require(4541) /* _httpGetWithCountryCodeQuery */;
-      return importDefault(1467).toURLSafe(obj3.getAssetURL(sku.applicationId, sku.tenantMetadata.socialLayer.cardBackgroundImageAssetId, num, str));
+      return importDefault(1486).toURLSafe(obj3.getAssetURL(sku.applicationId, sku.tenantMetadata.socialLayer.cardBackgroundImageAssetId, num, str));
     }
   }
 };

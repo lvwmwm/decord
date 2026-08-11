@@ -1,9 +1,9 @@
-// Module ID: 7109
-// Function ID: 7110
+// Module ID: 7110
+// Function ID: 7111
 // Name: hasBasicChannelChanged
-// Dependencies: [32, 5, 4994, 1376, 1218, 1372, 1964, 1891, 3929, 1373, 3, 1936, 7110, 506, 3937, 2]
+// Dependencies: [32, 5, 4994, 1395, 1218, 1391, 1983, 1910, 3948, 1392, 3, 1955, 7111, 506, 3956, 2]
 
-// Module 7109 (hasBasicChannelChanged)
+// Module 7110 (hasBasicChannelChanged)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -309,7 +309,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
                             outer2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                             c6 = 3;
                             const obj2 = { value: null, done: true };
-                            obj2[0] = { v: "Promise" };
+                            obj2[0] = { v: "r" };
                             return obj2;
                           } else if (2 === tmp7) {
                             if (arg0 === 1) {
@@ -566,10 +566,10 @@ prototype["onGuildSync"] = function onGuildSync(id, closure_0) {
 };
 prototype["delete"] = function delete(guild_id, database) {
   this.unsync(guild_id, database);
-  const result = importDefault(1936).basicChannelsTransaction(database);
+  const result = importDefault(1955).basicChannelsTransaction(database);
   result.delete(guild_id);
-  const obj = importDefault(1936);
-  const result1 = importDefault(1936).syncedBasicChannelsTransaction(database);
+  const obj = importDefault(1955);
+  const result1 = importDefault(1955).syncedBasicChannelsTransaction(database);
   result1.delete(guild_id);
 };
 prototype["unsync"] = function unsync(guild_id, closure_0) {
@@ -577,10 +577,10 @@ prototype["unsync"] = function unsync(guild_id, closure_0) {
   if (synced != null) {
     synced.delete(guild_id);
   }
-  const result = importDefault(1936).basicChannelsTransaction(closure_0);
+  const result = importDefault(1955).basicChannelsTransaction(closure_0);
   result.delete(guild_id);
-  const obj = importDefault(1936);
-  const result1 = importDefault(1936).syncedBasicChannelsTransaction(closure_0);
+  const obj = importDefault(1955);
+  const result1 = importDefault(1955).syncedBasicChannelsTransaction(closure_0);
   result1.put(guild_id, false);
   hasChannel.invalidate(guild_id);
 };
@@ -619,7 +619,7 @@ prototype["syncOne"] = function syncOne(closure_0, database) {
     if (synced2 != null) {
       synced2.add(closure_0);
     }
-    const result = importDefault(1936).basicChannelsTransaction(database);
+    const result = importDefault(1955).basicChannelsTransaction(database);
     const _Object = Object;
     const values = Object.values(store.getMutableGuildChannelsForGuild(closure_0));
     result.put(closure_0, values.map((id) => {
@@ -627,11 +627,11 @@ prototype["syncOne"] = function syncOne(closure_0, database) {
       obj[4] = callback(table[14]).asBasicFlag(getUncachedChannelPermissions.computePermissions(id));
       return obj;
     }));
-    let obj = importDefault(1936);
-    const result1 = importDefault(1936).syncedBasicChannelsTransaction(database);
+    let obj = importDefault(1955);
+    const result1 = importDefault(1955).syncedBasicChannelsTransaction(database);
     result1.put(closure_0, true);
     flag = true;
-    const obj3 = importDefault(1936);
+    const obj3 = importDefault(1955);
   }
   return flag;
 };

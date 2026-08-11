@@ -1,7 +1,7 @@
 // Module ID: 4243
 // Function ID: 4244
 // Name: UserPlatformIcon
-// Dependencies: [19, 21, 712, 4004, 4244, 2]
+// Dependencies: [19, 21, 712, 4023, 4244, 2]
 // Exports: UserPlatformIcon
 
 // Module 4243 (UserPlatformIcon)
@@ -22,5 +22,5 @@ export const UserPlatformIcon = function UserPlatformIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

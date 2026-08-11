@@ -1,7 +1,7 @@
 // Module ID: 5349
 // Function ID: 5350
 // Name: apexExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: isElectronMultilangSpellcheckEnabled
 
 // Module 5349 (apexExperiment)

@@ -1,10 +1,10 @@
-// Module ID: 14415
-// Function ID: 14416
+// Module ID: 14423
+// Function ID: 14424
 // Name: QuestEmbedPreview
-// Dependencies: [19, 3939, 1903, 676, 21, 8041, 589, 4292, 10482, 14414, 1236, 8589, 2]
+// Dependencies: [19, 3958, 1922, 676, 21, 8043, 589, 4292, 10487, 14422, 1236, 8595, 2]
 // Exports: QuestEmbedPreview
 
-// Module 14415 (QuestEmbedPreview)
+// Module 14423 (QuestEmbedPreview)
 import noop from "noop";
 import hasFlag from "hasFlag";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -62,9 +62,9 @@ export const QuestEmbedPreview = function QuestEmbedPreview(questId) {
     obj = { rowGenerator: null, message: null, horizontalOffset: 0, pointerEvents: "none" };
     obj[0] = memo;
     obj[1] = memo1;
-    obj[1] = jsx(stateFromStores(8589), { rowGenerator: null, message: null, horizontalOffset: 0, pointerEvents: "none" });
-    tmp6 = jsx(stateFromStores(14414), { rowGenerator: null, message: null, horizontalOffset: 0, pointerEvents: "none" });
-    const tmp9 = stateFromStores(14414);
+    obj[1] = jsx(stateFromStores(8595), { rowGenerator: null, message: null, horizontalOffset: 0, pointerEvents: "none" });
+    tmp6 = jsx(stateFromStores(14422), { rowGenerator: null, message: null, horizontalOffset: 0, pointerEvents: "none" });
+    const tmp9 = stateFromStores(14422);
   }
   return tmp6;
 };

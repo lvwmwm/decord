@@ -1,10 +1,10 @@
-// Module ID: 10100
-// Function ID: 10101
+// Module ID: 10105
+// Function ID: 10106
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 676, 21, 4303, 712, 5734, 10093, 1416, 9398, 4299, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 5734, 10098, 1435, 9404, 4299, 2]
 // Exports: default
 
-// Module 10100 (SocialLayerStorefrontGiftProductDetails)
+// Module 10105 (SocialLayerStorefrontGiftProductDetails)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PriceSetAssignmentPurchaseTypes as closure_6 } from "ME";
@@ -36,7 +36,7 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
   const tmp = createCacheKey();
   let obj = getOrFetchApplication(5734);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  let obj1 = getOrFetchApplication(10093);
+  let obj1 = getOrFetchApplication(10098);
   obj = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj1.useFormattedSKUPrice(obj).userPrice;
   const items = [getOrFetchApplication];
@@ -51,7 +51,7 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     return applicationIconURL;
   }, items);
   obj = { style: tmp.container, children: null };
-  const items1 = [callback(importDefault(9398), { sku, size: 55 }), , ];
+  const items1 = [callback(importDefault(9404), { sku, size: 55 }), , ];
   obj1 = { style: tmp.text, children: null };
   let tmp6Result = null != getOrFetchApplication;
   if (tmp6Result) {

@@ -1,10 +1,10 @@
-// Module ID: 9278
-// Function ID: 9279
+// Module ID: 9284
+// Function ID: 9285
 // Name: GetButton
-// Dependencies: [32, 19, 17, 9279, 21, 4303, 712, 4714, 1236, 7404, 9280, 3998, 9283, 7092, 4835, 4036, 9284, 4304, 9285, 9290, 4271, 9307, 9308, 5397, 5399, 9309, 9311, 12200, 5712, 2]
+// Dependencies: [32, 19, 17, 9285, 21, 4303, 712, 4714, 1236, 7406, 9286, 4017, 9289, 5926, 4835, 4042, 9290, 4304, 9291, 9296, 4271, 9313, 9314, 5397, 5399, 9315, 9317, 12203, 5712, 2]
 // Exports: default
 
-// Module 9278 (GetButton)
+// Module 9284 (GetButton)
 import _slicedToArray from "_slicedToArray";
 import getGameProfileStoreWebsiteData from "getGameProfileStoreWebsiteData";
 import get_ActivityIndicator from "CONFIG_NEVER_ANIMATE_TIMING";

@@ -1,10 +1,10 @@
-// Module ID: 10618
-// Function ID: 10619
+// Module ID: 10623
+// Function ID: 10624
 // Name: _installApplicationOnDemandIfNeeded
-// Dependencies: [5, 4326, 4341, 676, 10619, 5729, 9541, 4498, 4166, 10620, 2]
+// Dependencies: [5, 4326, 4341, 676, 10624, 5729, 9547, 4498, 4166, 10625, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 10618 (_installApplicationOnDemandIfNeeded)
+// Module 10623 (_installApplicationOnDemandIfNeeded)
 import fetchApplication from "fetchApplication";
 import createExecutable from "createExecutable";
 import addApplication from "addApplication";
@@ -55,7 +55,7 @@ function _installApplicationOnDemandIfNeeded() {
             obj4[0] = Promise.resolve({ isAuthorized: true });
             return obj4;
           }
-          obj11 = callback(10619);
+          obj11 = callback(10624);
         }
       } else if (arg0 === 1) {
         application = 3;
@@ -69,7 +69,7 @@ function _installApplicationOnDemandIfNeeded() {
         obj = arg1;
         application = c3.createFromServer(obj);
       }
-      const USER_INSTALL = callback(9541).ApplicationIntegrationType.USER_INSTALL;
+      const USER_INSTALL = callback(9547).ApplicationIntegrationType.USER_INSTALL;
       if (application != null) {
         const integrationTypesConfig = application.integrationTypesConfig;
         if (integrationTypesConfig != null) {

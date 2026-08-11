@@ -1,10 +1,10 @@
-// Module ID: 12320
-// Function ID: 12321
+// Module ID: 12323
+// Function ID: 12324
 // Name: UserVoiceSettings
-// Dependencies: [19, 17, 4749, 4351, 3929, 676, 505, 21, 4303, 8788, 589, 4488, 9228, 10853, 9155, 5775, 1236, 9186, 10872, 12321, 7709, 12323, 7714, 7793, 4299, 11977, 12212, 7967, 4271, 9213, 9209, 2]
+// Dependencies: [19, 17, 4749, 4351, 3948, 676, 505, 21, 4303, 8794, 589, 4488, 9234, 10858, 9161, 5775, 1236, 9192, 10877, 12324, 7711, 12326, 7716, 7795, 4299, 11980, 12215, 7969, 4271, 9219, 9215, 2]
 // Exports: default
 
-// Module 12320 (UserVoiceSettings)
+// Module 12323 (UserVoiceSettings)
 import "SoundboardSlashIcon";
 import { View } from "MicrophoneSlashIcon";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
@@ -194,7 +194,7 @@ function CurrentUserVoiceSettings(channel) {
   ({ user, style } = channel);
   const tmp = callback3();
   let tmp9Result = dependencyMap;
-  let obj = channel(8788);
+  let obj = channel(8794);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let obj1 = channel(589);
   const items = [_detectH265HardwareDecode];
@@ -229,9 +229,9 @@ function CurrentUserVoiceSettings(channel) {
     obj = { label: null, icon: null, onPress: null };
     obj[0] = stringResult;
     if (stateFromStores) {
-      let MicrophoneIcon = tmp2(9186).MicrophoneSlashIcon;
+      let MicrophoneIcon = tmp2(9192).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp2(10872).MicrophoneIcon;
+      MicrophoneIcon = tmp2(10877).MicrophoneIcon;
     }
     obj1 = { children: null };
     obj[1] = MicrophoneIcon;

@@ -1,10 +1,10 @@
-// Module ID: 13342
-// Function ID: 13343
+// Module ID: 13350
+// Function ID: 13351
 // Name: Close
-// Dependencies: [19, 21, 7835, 2]
+// Dependencies: [19, 21, 7837, 2]
 // Exports: default
 
-// Module 13342 (Close)
+// Module 13350 (Close)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -30,6 +30,6 @@ export default function Close(width) {
   obj.width = num;
   obj.height = num2;
   obj.viewBox = "0 0 24 24";
-  obj.children = jsx(require(7835) /* inlineStyles */.Path, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
-  return jsx(require(7835) /* inlineStyles */.Svg, {});
+  obj.children = jsx(require(7837) /* inlineStyles */.Path, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
+  return jsx(require(7837) /* inlineStyles */.Svg, {});
 };

@@ -1,10 +1,10 @@
-// Module ID: 16510
-// Function ID: 16511
+// Module ID: 16521
+// Function ID: 16522
 // Name: handlePressNext
-// Dependencies: [16511, 676, 698, 8510, 4642, 1236, 8265, 8267, 4509, 16512, 1988, 12059, 2]
+// Dependencies: [16522, 676, 698, 8516, 4642, 1236, 8270, 8272, 4509, 16523, 2007, 12062, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 16510 (handlePressNext)
+// Module 16521 (handlePressNext)
 import { ADD_AVATAR_MODAL_KEY } from "ADD_AVATAR_MODAL_KEY";
 import { AnalyticEvents } from "ME";
 
@@ -19,16 +19,16 @@ export const handlePressNext = function handlePressNext(pendingImage, first, fn)
     const obj3 = importDefault(698);
     obj = { avatar: null, avatar_description: null };
     ({ imageUri: obj6[0], description: obj6[1] } = pendingImage);
-    const result = require(8510) /* saveProfileAndAccountRequest */.saveProfileAndAccountRequest(obj);
-    const obj5 = require(8510) /* saveProfileAndAccountRequest */;
+    const result = require(8516) /* saveProfileAndAccountRequest */.saveProfileAndAccountRequest(obj);
+    const obj5 = require(8516) /* saveProfileAndAccountRequest */;
   }
   if (null != fn) {
     fn();
   } else {
     obj = importDefault(4509);
     obj.popWithKey(ADD_AVATAR_MODAL_KEY);
-    require(12059) /* _startContactSyncForDiscoverability */.nextOnboardingStep({ skip: false });
-    const obj2 = require(12059) /* _startContactSyncForDiscoverability */;
+    require(12062) /* _startContactSyncForDiscoverability */.nextOnboardingStep({ skip: false });
+    const obj2 = require(12062) /* _startContactSyncForDiscoverability */;
   }
 };
 export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
@@ -61,5 +61,5 @@ export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
   importDefault(4642).show(obj);
 };
 export const openAddAvatarModal = function openAddAvatarModal() {
-  importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(16512, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
+  importDefault(4509).pushLazy(require(2007) /* asyncRequireImpl */(16523, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
 };

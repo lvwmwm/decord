@@ -1,15 +1,15 @@
-// Module ID: 7098
-// Function ID: 7099
+// Module ID: 7099
+// Function ID: 7100
 // Name: findOrCreateMessageRecord
-// Dependencies: [3939, 1218, 1372, 4521, 4315, 3938, 4124, 4499, 1903, 676, 595, 4523, 4517, 4537, 12, 4379, 5890, 7099, 589, 709, 2]
+// Dependencies: [3958, 1218, 1391, 4521, 4315, 3957, 4126, 4499, 1922, 676, 595, 4523, 4517, 4537, 12, 4379, 5890, 7100, 589, 709, 2]
 
-// Module 7098 (findOrCreateMessageRecord)
+// Module 7099 (findOrCreateMessageRecord)
 import hasFlag from "hasFlag";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -99,7 +99,7 @@ function parseMessage(message, channelId) {
       }
       id = id.getId();
       if (!blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message)) {
-        if (!tmp2(7099)(message, id)) {
+        if (!tmp2(7100)(message, id)) {
           let tmp12 = message;
           if (!(message instanceof hasFlag)) {
             message = store2.getMessage(message.channel_id, message.id);
@@ -263,7 +263,7 @@ function handleRelationshipUpdate() {
   let addedMessages;
   let deletedMessages;
   const obj = { deletedMessages: null };
-  obj[0] = importDefault(12).filter(closure_18, (message) => upsertRelationship.isBlockedOrIgnoredForMessage(message));
+  obj[0] = importDefault(12).filter(closure_18, (message) => markAllUserIdListsStale.isBlockedOrIgnoredForMessage(message));
   ({ addedMessages, deletedMessages } = obj);
   if (null != addedMessages) {
     const item = addedMessages.forEach((getChannelId) => {
@@ -283,7 +283,7 @@ function handleRelationshipUpdate() {
       }
     });
   }
-  closure_18 = closure_18.filter((message) => !upsertRelationship.isBlockedOrIgnoredForMessage(message));
+  closure_18 = closure_18.filter((message) => !markAllUserIdListsStale.isBlockedOrIgnoredForMessage(message));
 }
 function handleDeleteChannel(channel) {
   let addedMessages;
@@ -337,7 +337,7 @@ class RecentMentionsStore extends Store {
 }
 const prototype = RecentMentionsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(fetchFingerprint, ensureGuildLoaded, reinjectEphemerals, generateOldThreadCutoff, upsertRelationship, handleConnectionOpen, updateUserGuildSettingsInternal, mergeGuildAvatar);
+  this.waitFor(fetchFingerprint, ensureGuildLoaded, reinjectEphemerals, generateOldThreadCutoff, markAllUserIdListsStale, handleConnectionOpen, updateUserGuildSettingsInternal, mergeGuildAvatar);
 };
 Object.defineProperty(prototype, "hasLoadedEver", {
   get: function hasLoadedEver() {

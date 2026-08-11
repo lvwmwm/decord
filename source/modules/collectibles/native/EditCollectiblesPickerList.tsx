@@ -1,10 +1,10 @@
-// Module ID: 8299
-// Function ID: 8300
+// Module ID: 8304
+// Function ID: 8305
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 4303, 8286, 4299, 12, 7745, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 8291, 4299, 12, 7747, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 8299 (EditCollectiblesPickerList)
+// Module 8304 (EditCollectiblesPickerList)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

@@ -1,10 +1,10 @@
-// Module ID: 16484
-// Function ID: 16485
+// Module ID: 16495
+// Function ID: 16496
 // Name: isIOSAppTransactionIdTrackingEnabled
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: isIOSAppTransactionIdTrackingEnabled
 
-// Module 16484 (isIOSAppTransactionIdTrackingEnabled)
+// Module 16495 (isIOSAppTransactionIdTrackingEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

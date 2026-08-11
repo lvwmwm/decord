@@ -1,10 +1,10 @@
-// Module ID: 1359
-// Function ID: 1360
+// Module ID: 1378
+// Function ID: 1379
 // Name: isSingleUseDismissibleContent
-// Dependencies: [1358, 2]
+// Dependencies: [1377, 2]
 // Exports: isGuildDismissibleContent, isRecurringDismissibleContent, isSingleUseDismissibleContent, isSingleUseGuildDismissibleContent, isSnowflakeBoundDismissibleContent, isSnowflakeBoundGuildDismissibleContent, isTimeRecurringDismissibleContent, isTimeRecurringGuildDismissibleContent, isVersionedDismissibleContent
 
-// Module 1359 (isSingleUseDismissibleContent)
+// Module 1378 (isSingleUseDismissibleContent)
 function isSingleUseDismissibleContent(item10020) {
   let hasItem = items1.includes(item10020);
   if (!hasItem) {

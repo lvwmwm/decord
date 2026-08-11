@@ -1,7 +1,7 @@
 // Module ID: 5265
 // Function ID: 5266
 // Name: get
-// Dependencies: [589, 12, 4127, 709, 2]
+// Dependencies: [589, 12, 4129, 709, 2]
 
 // Module 5265 (get)
 import { Store } from "initialize";
@@ -22,7 +22,7 @@ prototype["getRulesPrompt"] = function getRulesPrompt(guildId) {
   if (dependencyMap[guildId] != null) {
     formFields = tmp2.formFields;
   }
-  return importDefault(12).find(formFields, require(4127) /* MAX_RESULTS_PER_PAGE */.isTermsFormField);
+  return importDefault(12).find(formFields, require(4129) /* MAX_RESULTS_PER_PAGE */.isTermsFormField);
 };
 MemberVerificationFormStore.displayName = "MemberVerificationFormStore";
 obj = {

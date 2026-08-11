@@ -1,13 +1,13 @@
-// Module ID: 12997
-// Function ID: 12998
+// Module ID: 13001
+// Function ID: 13002
 // Name: handleChannelSelect
-// Dependencies: [1372, 4375, 3938, 12998, 12996, 687, 12999, 691, 13003, 5261, 2]
+// Dependencies: [1391, 4375, 3957, 13002, 13000, 687, 13003, 691, 13007, 5261, 2]
 // Exports: userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 12997 (handleChannelSelect)
+// Module 13001 (handleChannelSelect)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import useSharedSpacesWarningStore from "useSharedSpacesWarningStore";
 import init from "init";
 import "initialize";
@@ -25,9 +25,9 @@ function handleChannelSelect(channelId) {
     if (null != channel) {
       if (channel.isGroupDM()) {
         const recipients = channel.recipients;
-        const found = recipients.filter((arg0) => upsertRelationship.isBlocked(arg0));
+        const found = recipients.filter((arg0) => markAllUserIdListsStale.isBlocked(arg0));
         const recipients1 = channel.recipients;
-        const found1 = recipients1.filter((arg0) => upsertRelationship.isIgnored(arg0));
+        const found1 = recipients1.filter((arg0) => markAllUserIdListsStale.isIgnored(arg0));
         if (tmp) {
           let blockedUserWarningDismissed = channel.blockedUserWarningDismissed;
           if (!blockedUserWarningDismissed) {
@@ -39,7 +39,7 @@ function handleChannelSelect(channelId) {
             blockedUserWarningDismissed = num2 > Date.now() - closure_11;
           }
           if (!blockedUserWarningDismissed) {
-            let obj = require(12999) /* showGdmBlockedUserModal */;
+            let obj = require(13003) /* showGdmBlockedUserModal */;
             obj = { channelId: null, blockedUserIds: null, ignoredUserIds: null };
             obj[0] = channelId;
             obj[1] = found;
@@ -89,8 +89,8 @@ function handleAppStateChanged(state) {
           if (!everyResult) {
             const items1 = [];
             HermesBuiltin.arraySpread(ignoredUsersForVoiceChannel, HermesBuiltin.arraySpread(blockedUsersForVoiceChannel, 0));
-            const result = require(13003) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, items1[0]);
-            const tmpResult = require(13003) /* showVoiceChannelBlockedUserWarning */;
+            const result = require(13007) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, items1[0]);
+            const tmpResult = require(13007) /* showVoiceChannelBlockedUserWarning */;
           }
         }
       }
@@ -132,14 +132,14 @@ SharedSpacesWarningManager.prototype["handleBlockedOrIgnoredUserVoiceChannelJoin
         tmp6 = num2 > Date.now() - closure_12;
       }
       if (!tmp6) {
-        const result = require(13003) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, id);
-        const obj = require(13003) /* showVoiceChannelBlockedUserWarning */;
+        const result = require(13007) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, id);
+        const obj = require(13007) /* showVoiceChannelBlockedUserWarning */;
       }
     }
   }
 };
 const sharedSpacesWarningManager = new SharedSpacesWarningManager();
-let result = require("upsertRelationship").fileFinishedImporting("modules/shared_space_warnings/SharedSpacesWarningManager.tsx");
+let result = require("markAllUserIdListsStale").fileFinishedImporting("modules/shared_space_warnings/SharedSpacesWarningManager.tsx");
 
 export default sharedSpacesWarningManager;
 export const voiceBlockedWarningInCooldownForUsers = function voiceBlockedWarningInCooldownForUsers(arg0) {

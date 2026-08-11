@@ -1,20 +1,20 @@
-// Module ID: 14157
-// Function ID: 14158
+// Module ID: 14165
+// Function ID: 14166
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 4299, 1236, 2284, 2]
+// Dependencies: [21, 4299, 1236, 2303, 2]
 // Exports: default
 
-// Module 14157 (useScheduleTimeControlsRowProps)
+// Module 14165 (useScheduleTimeControlsRowProps)
 import { jsx } from "jsxProd";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");
 
 export default function useScheduleTimeControlsRowProps(arr) {
   if (0 === arr.length) {
-    let obj = { subLabel: null, trailing: "Array" };
+    let obj = { subLabel: null, trailing: "a" };
     obj = { variant: "text-xs/medium", color: "text-muted", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl.string(importDefault(2284).fOBIZH);
+    obj[2] = intl.string(importDefault(2303).fOBIZH);
     obj[0] = jsx(require(4299) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: null });
     return obj;
   } else {
@@ -22,10 +22,10 @@ export default function useScheduleTimeControlsRowProps(arr) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     const obj2 = { count: null };
     obj2[0] = arr.length;
-    obj1[0] = intl2.formatToPlainString(importDefault(2284).XfwcpX, obj2);
+    obj1[0] = intl2.formatToPlainString(importDefault(2303).XfwcpX, obj2);
     const intl3 = require(1236) /* getSystemLocale */.intl;
     const string = intl3.string;
-    const tmp11 = importDefault(2284);
+    const tmp11 = importDefault(2303);
     if (someResult) {
       let stringResult = string(tmp11["8vDHRq"]);
     } else {

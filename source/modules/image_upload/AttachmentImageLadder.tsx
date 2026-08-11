@@ -1,10 +1,10 @@
-// Module ID: 1876
-// Function ID: 1877
+// Module ID: 1895
+// Function ID: 1896
 // Name: items
 // Dependencies: [2]
 // Exports: snapAttachmentDimensions
 
-// Module 1876 (items)
+// Module 1895 (items)
 const items = [128, 192, 256, 320, 384, 512, 640, 768, 1024, 1280, 1536, 2048, 3072, 4096];
 let result = require("set").fileFinishedImporting("modules/image_upload/AttachmentImageLadder.tsx");
 

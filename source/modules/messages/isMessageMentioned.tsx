@@ -1,7 +1,7 @@
 // Module ID: 4537
 // Function ID: 4538
 // Name: isMentioned
-// Dependencies: [1372, 1971, 1891, 2]
+// Dependencies: [1391, 1990, 1910, 2]
 // Exports: default, isRawMessageMentioned
 
 // Module 4537 (isMentioned)

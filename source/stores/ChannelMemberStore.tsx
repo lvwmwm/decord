@@ -1,7 +1,7 @@
 // Module ID: 5897
 // Function ID: 5898
 // Name: getMemberListId
-// Dependencies: [4217, 4322, 1218, 1372, 4224, 1971, 1964, 1891, 4390, 4996, 1903, 676, 1236, 3934, 1217, 12, 506, 589, 709, 2]
+// Dependencies: [4217, 4322, 1218, 1391, 4224, 1990, 1983, 1910, 4390, 4996, 1922, 676, 1236, 3953, 1217, 12, 506, 589, 709, 2]
 
 // Module 5897 (getMemberListId)
 import getHash from "getHash";
@@ -53,7 +53,7 @@ function getMemberListId(arg0) {
       str = obj2.v3(sorted.join(",")).toString();
       const str2 = obj2.v3(sorted.join(","));
     }
-    obj = importAll(3934);
+    obj = importAll(3953);
   } else {
     memberListId = channel.memberListId;
   }
@@ -96,7 +96,7 @@ prototype["updateOwnerId"] = function updateOwnerId() {
   if (null == guild) {
     return false;
   } else {
-    const guildVisualOwnerId = importAll(3934).getGuildVisualOwnerId(guild);
+    const guildVisualOwnerId = importAll(3953).getGuildVisualOwnerId(guild);
     let flag = self.ownerId !== guildVisualOwnerId;
     if (flag) {
       self.ownerId = guildVisualOwnerId;

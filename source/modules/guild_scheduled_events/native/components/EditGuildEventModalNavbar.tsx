@@ -1,10 +1,10 @@
-// Module ID: 8964
-// Function ID: 8965
+// Module ID: 8970
+// Function ID: 8971
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 4303, 8941, 1351, 5328, 4299, 1236, 6008, 8027, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 8947, 1370, 5328, 4299, 1236, 6010, 8029, 2]
 // Exports: default
 
-// Module 8964 (EditGuildEventModalNavbar)
+// Module 8970 (EditGuildEventModalNavbar)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -23,15 +23,15 @@ export default function EditGuildEventModalNavbar(screen) {
   let tmp7;
   screen = screen.screen;
   const tmp = callback4();
-  if (require(8941) /* EditGuildEventScreens */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
+  if (require(8947) /* EditGuildEventScreens */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items = [1, 3];
-  } else if (tmp2(8941).EditGuildEventScreens.DETAILS === screen) {
+  } else if (tmp2(8947).EditGuildEventScreens.DETAILS === screen) {
     items = [2, 3];
-  } else if (tmp2(8941).EditGuildEventScreens.PREVIEW === screen) {
+  } else if (tmp2(8947).EditGuildEventScreens.PREVIEW === screen) {
     items = [3, 3];
   } else {
-    tmp2(1351).assertNever(screen);
-    const tmp2Result = tmp2(1351);
+    tmp2(1370).assertNever(screen);
+    const tmp2Result = tmp2(1370);
   }
   [tmp6, tmp7] = callback(items, 2);
   let obj = { top: true, style: tmp.header, children: null };
@@ -46,9 +46,9 @@ export default function EditGuildEventModalNavbar(screen) {
   const intl2 = tmp2(1236).intl;
   obj3[0] = intl2.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj3[1] = screen.onClose;
-  obj3[2] = importDefault(8027);
+  obj3[2] = importDefault(8029);
   obj3[3] = tmp.rightButton;
-  obj2[1] = callback2(require(6008) /* HeaderActionButton */.HeaderActionButton, obj3);
+  obj2[1] = callback2(require(6010) /* HeaderActionButton */.HeaderActionButton, obj3);
   items1[2] = callback2(View, obj2);
   obj[2] = items1;
   return callback3(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

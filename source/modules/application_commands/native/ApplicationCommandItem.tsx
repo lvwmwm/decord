@@ -1,10 +1,10 @@
-// Module ID: 11772
-// Function ID: 11773
+// Module ID: 11775
+// Function ID: 11776
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 1971, 9917, 21, 4303, 712, 4720, 589, 11602, 4846, 1236, 5268, 4299, 2]
+// Dependencies: [19, 17, 1990, 9922, 21, 4303, 712, 4720, 589, 11605, 4846, 1236, 5268, 4299, 2]
 // Exports: default
 
-// Module 11772 (ApplicationCommandItem)
+// Module 11775 (ApplicationCommandItem)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

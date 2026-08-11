@@ -1,10 +1,10 @@
-// Module ID: 16223
-// Function ID: 16224
+// Module ID: 16237
+// Function ID: 16238
 // Name: ParticipantsSummary
-// Dependencies: [32, 19, 17, 21, 4303, 712, 4151, 16224, 10935, 1297, 4723, 4299, 4036, 4729, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 4152, 16238, 10940, 1297, 4723, 4299, 4042, 4729, 2]
 // Exports: default
 
-// Module 16223 (ParticipantsSummary)
+// Module 16237 (ParticipantsSummary)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -19,12 +19,12 @@ function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
   ({ applicationId, channelId } = arg0);
-  const obj = { users: importDefault(16224)(applicationId, channelId), max: 5, avatarSize: null, withPlusCount: true, style: null, cutout: null };
-  const tmp = importDefault(16224)(applicationId, channelId);
+  const obj = { users: importDefault(16238)(applicationId, channelId), max: 5, avatarSize: null, withPlusCount: true, style: null, cutout: null };
+  const tmp = importDefault(16238)(applicationId, channelId);
   obj[2] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[4] = { marginBottom: 8 };
   obj[5] = { inset: -8 };
-  return callback2(importDefault(10935), obj);
+  return callback2(importDefault(10940), obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { ongoingActivityContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.4)", alignItems: "center", justifyContent: "center" }, overlayActivityName: null, overlayActivityNameText: null, loadingTextColor: null, ellipsis: null };
@@ -59,7 +59,7 @@ export default function ActivityShelfItemSummary(submitting) {
     tmp7Result = tmp7(require(4729) /* EllipsisCircle */.Ellipsis, { variant: "active", size: "md" });
   }
   obj2[1] = tmp7Result;
-  items[1] = closure_5(importDefault(4036).View, obj2);
+  items[1] = closure_5(importDefault(4042).View, obj2);
   obj[1] = items;
   const items2 = [closure_6(View, obj), closure_5(ParticipantsSummary, { channelId, applicationId })];
   obj[1] = items2;

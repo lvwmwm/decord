@@ -1,10 +1,10 @@
-// Module ID: 8516
-// Function ID: 8517
+// Module ID: 8522
+// Function ID: 8523
 // Name: PhoneVerificationModal
-// Dependencies: [5, 19, 676, 8517, 21, 5270, 8518, 8519, 4509, 503, 8545, 8513, 5783, 1236, 2]
+// Dependencies: [5, 19, 676, 8523, 21, 5270, 8524, 8525, 4509, 503, 8551, 8519, 5783, 1236, 2]
 // Exports: default
 
-// Module 8516 (PhoneVerificationModal)
+// Module 8522 (PhoneVerificationModal)
 import HeaderBackImage from "HeaderBackImage";
 import "noop";
 import { VerificationModalScenes } from "ME";

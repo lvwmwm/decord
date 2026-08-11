@@ -1,10 +1,10 @@
-// Module ID: 12175
-// Function ID: 12176
+// Module ID: 12178
+// Function ID: 12179
 // Name: onChange
-// Dependencies: [19, 17, 21, 1474, 2]
+// Dependencies: [19, 17, 21, 1493, 2]
 // Exports: default
 
-// Module 12175 (onChange)
+// Module 12178 (onChange)
 import noop from "noop";
 import closure_4 from "noop";
 import { View } from "get ActivityIndicator";
@@ -39,7 +39,7 @@ export default function _default(onChange) {
   let tmp = width(null);
   dependencyMap = tmp;
   callback = width(false);
-  const size = onChange(1474)();
+  const size = onChange(1493)();
   width = size.width;
   height = size.height;
   closure_5 = width(null);

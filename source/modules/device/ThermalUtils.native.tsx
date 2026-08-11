@@ -1,9 +1,9 @@
-// Module ID: 10608
-// Function ID: 10609
+// Module ID: 10613
+// Function ID: 10614
 // Name: NativeModules
-// Dependencies: [17, 500, 10609, 4283, 644, 705, 2]
+// Dependencies: [17, 500, 10614, 4283, 644, 705, 2]
 
-// Module 10608 (NativeModules)
+// Module 10613 (NativeModules)
 import get_ActivityIndicator from "get ActivityIndicator";
 import set from "set";
 import keys from "keys";
@@ -21,9 +21,9 @@ let closure_5 = keys.create((arg0) => {
   let thermalState = dependencyMap;
   if (obj.isAndroid()) {
     if (tmpResult.getSystemVersionMajor() >= 29) {
-      thermalState = importDefault(10609).getThermalState();
+      thermalState = importDefault(10614).getThermalState();
       let resolved = Promise.resolve(thermalState);
-      const obj3 = importDefault(10609);
+      const obj3 = importDefault(10614);
     } else {
       resolved = Promise.resolve(undefined);
     }
@@ -55,7 +55,7 @@ let closure_5 = keys.create((arg0) => {
         return tmp;
       }));
     });
-    return { rawThermalState: "Promise" };
+    return { rawThermalState: "r" };
   }
 });
 const result = set.fileFinishedImporting("modules/device/ThermalUtils.native.tsx");

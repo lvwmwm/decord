@@ -1,7 +1,7 @@
 // Module ID: 5270
 // Function ID: 5271
 // Name: HeaderBackImage
-// Dependencies: [5, 19, 17, 676, 21, 4303, 712, 4299, 5271, 5274, 1481, 5276, 1236, 5277, 5326, 500, 1609, 5267, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4303, 712, 4299, 5271, 5274, 1500, 5276, 1236, 5277, 5326, 500, 1628, 5267, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
 // Module 5270 (HeaderBackImage)
@@ -285,7 +285,7 @@ export const FauxHeader = function FauxHeader(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);
-  const top = importDefault(1609)().top;
+  const top = importDefault(1628)().top;
   let obj = { style: null, children: null };
   const items = [createCacheKey().fauxHeaderWrapper, , ];
   obj = { paddingTop: top, height: top + require(5267) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT };

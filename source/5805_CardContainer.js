@@ -1,7 +1,7 @@
 // Module ID: 5805
 // Function ID: 5806
 // Name: CardContainer
-// Dependencies: [19, 17, 21, 1481, 5277, 5806, 5807, 5808, 5795]
+// Dependencies: [19, 17, 21, 1500, 5277, 5806, 5807, 5808, 5795]
 
 // Module 5805 (CardContainer)
 import importAllResult from "noop";
@@ -79,7 +79,7 @@ export const CardContainer = importAllResult.memo(function CardContainerInner(ac
   let obj = importAllResult;
   ({ interpolationIndex, index, opening, closing, gesture, modal, getFocusedRoute, hasAbsoluteFloatHeader, onHeaderHeightChange, isNextScreenTransparent, detachCurrentScreen, preloaded, renderHeader, safeAreaInsetBottom, safeAreaInsetLeft, safeAreaInsetRight, safeAreaInsetTop } = active);
   ref = importAllResult.useRef(null);
-  let obj1 = active(1481);
+  let obj1 = active(1500);
   let num = importAllResult.useContext(active(5277).HeaderHeightContext);
   let tmp4 = focused;
   if (focused) {
@@ -88,7 +88,7 @@ export const CardContainer = importAllResult.memo(function CardContainerInner(ac
   let tmp2Result = tmp2(5806);
   const keyboardManager = tmp2Result.useKeyboardManager({ enabled: tmp4, focused });
   ({ onPageChangeStart: c10, onPageChangeCancel: c11, onPageChangeConfirm: c12 } = keyboardManager);
-  tmp2Result = tmp2(1481);
+  tmp2Result = tmp2(1500);
   const items = [scene.progress.next];
   const effect = obj.useEffect(() => {
     let next = scene.progress.next;
@@ -267,7 +267,7 @@ export const CardContainer = importAllResult.memo(function CardContainerInner(ac
     headerHeight = num;
   }
   const tmp22 = closure_5;
-  tmp2Result1 = active(1481);
+  tmp2Result1 = active(1500);
   const descriptor = scene.descriptor;
   obj8[1] = closure_4(active(5277).HeaderHeightContext.Provider, { value: headerHeight, children: descriptor.render() });
   obj7[1] = closure_4(active(5277).HeaderShownContext.Provider, obj8);

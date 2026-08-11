@@ -1,10 +1,10 @@
-// Module ID: 12874
-// Function ID: 12875
+// Module ID: 12878
+// Function ID: 12879
 // Name: items
-// Dependencies: [19, 17, 4295, 21, 4303, 712, 1236, 12875, 5719, 12876, 12877, 4299, 11923, 2]
+// Dependencies: [19, 17, 4295, 21, 4303, 712, 1236, 12879, 5719, 12880, 12881, 4299, 11926, 2]
 // Exports: default
 
-// Module 12874 (items)
+// Module 12878 (items)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -37,7 +37,7 @@ let items = [
       return intl.string(require(1236) /* getSystemLocale */.t.HTvLGu);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(12875) });
+      return callback(closure_3, { style, source: importDefault(12879) });
     }
   },
   {
@@ -51,7 +51,7 @@ let items = [
     },
     getGraphic(arg0) {
       const obj = { source: null, autoPlay: null, style: null };
-      obj[0] = require(12876);
+      obj[0] = require(12880);
       obj[1] = !useReducedMotion.useReducedMotion;
       obj[2] = arg0;
       return callback(importDefault(5719), obj);
@@ -67,7 +67,7 @@ let items = [
       return intl.string(require(1236) /* getSystemLocale */.t.yCjoUC);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(12877) });
+      return callback(closure_3, { style, source: importDefault(12881) });
     }
   }
 ];
@@ -82,7 +82,7 @@ const obj2 = {
     return intl.string(require(1236) /* getSystemLocale */.t.HTvLGu);
   },
   getGraphic(style) {
-    return callback(closure_3, { style, source: importDefault(12875) });
+    return callback(closure_3, { style, source: importDefault(12879) });
   }
 };
 const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");
@@ -114,7 +114,7 @@ export default function GuildBoostingMarketingTopPerksCards() {
     obj[1] = items1;
     return outer1_7(outer1_4, obj, arg1);
   });
-  items[1] = callback(require(11923) /* items */.MarketingCardsScroller, obj);
+  items[1] = callback(require(11926) /* items */.MarketingCardsScroller, obj);
   obj[1] = items;
   return callback2(closure_4, obj);
 };

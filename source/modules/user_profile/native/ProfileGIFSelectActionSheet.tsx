@@ -1,14 +1,14 @@
-// Module ID: 13921
-// Function ID: 13922
+// Module ID: 13929
+// Function ID: 13930
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4303, 712, 4879, 8275, 8268, 8265, 8267, 4271, 5397, 5396, 1236, 7704, 9933, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4303, 712, 4879, 13911, 8280, 8273, 8270, 8272, 8281, 4271, 5397, 5396, 1236, 7706, 9938, 2]
 // Exports: default
 
-// Module 13921 (ProfileGIFSelectActionSheet)
+// Module 13929 (ProfileGIFSelectActionSheet)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "createCacheKey";
-import noop from "noop";
-import { View } from "module_9933";
+import module_9938 from "module_9938";
+import { View } from "getSystemLocale";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -72,6 +72,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
                 c5 = undefined;
                 let closure_6;
                 let closure_7;
+                let closure_8;
                 const gifSrc = lib.gifSrc;
                 src = gifSrc;
                 if (gifSrc == null) {
@@ -119,7 +120,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
                   const asDataURL = fileReader.readAsDataURL(closure_0);
                 });
                 const items = [promise, ];
-                const obj20 = outer1_1(outer1_2[7]);
+                const obj22 = outer1_1(outer1_2[7]);
                 items[1] = outer1_1(outer1_2[7]).fromBlob(closure_2).catch(() => null);
                 dependencyMap = 3;
                 c5 = 1;
@@ -144,38 +145,44 @@ export default function ProfileGIFSelectActionSheet(arg0) {
                 obj3 = lib(outer1_2[8]);
                 const obj7 = { imageUri: null, description: null, originalMd5: null };
                 obj7[0] = c5;
-                obj5 = lib(outer1_2[8]);
+                obj5 = lib(outer1_2[9]);
                 obj7[1] = obj5.generateAvatarDescription();
                 obj7[2] = closure_6;
                 closure_7 = obj3.createPendingImage(obj7);
                 if (outer1_1 === outer1_11.PROFILE_TRY_IT_OUT) {
-                  let obj9 = lib(outer1_2[9]);
+                  let obj9 = lib(outer1_2[10]);
                   obj9.setTryItOutAvatar(outer1_7);
                 } else {
-                  obj6 = lib(outer1_2[10]);
+                  obj6 = lib(outer1_2[11]);
                   let obj8 = { guildId: null, avatar: null };
                   obj8[0] = closure_2;
                   obj8[1] = closure_7;
                   obj6.setPendingChanges(obj8);
-                  obj8 = lib(outer1_2[11]);
+                  obj8 = lib(outer1_2[12]);
                   let result = obj8.announcePendingAvatarChange("set");
                 }
               } else {
                 if (outer1_10.BANNER === tmp65) {
-                  if (outer1_1 !== outer1_11.PROFILE_TRY_IT_OUT) {
-                    obj = lib(outer1_2[10]);
-                    obj9 = { banner: null, bannerOriginalMd5: null };
-                    obj9[0] = c5;
-                    obj9[1] = closure_6;
-                    obj.setPendingChanges(obj9);
+                  obj9 = { assetOrigin: null, imageUri: null, description: "", originalAsset: "Array", originalMd5: "text-xs/normal" };
+                  obj9[0] = lib(outer1_2[13]).AssetOriginTypes.NEW_ASSET;
+                  obj9[1] = c5;
+                  obj9[4] = closure_6;
+                  closure_8 = lib(outer1_2[8]).createPendingImage(obj9);
+                  if (src !== outer1_11.PROFILE_TRY_IT_OUT) {
+                    obj = lib(outer1_2[11]);
+                    let obj10 = { guildId: null, banner: null };
+                    obj10[0] = closure_2;
+                    obj10[1] = closure_8;
+                    obj.setPendingChanges(obj10);
                   }
+                  const obj20 = lib(outer1_2[8]);
                 }
-                obj2 = lib(outer1_2[9]);
-                obj2.setTryItOutBanner(c5);
+                obj2 = lib(outer1_2[10]);
+                obj2.setTryItOutBanner(outer1_8);
               }
-              outer1_1(outer1_2[12]).hideActionSheet();
+              obj10 = outer1_1(outer1_2[14]);
+              obj10.hideActionSheet();
               c5 = 3;
-              const obj11 = outer1_1(outer1_2[12]);
             }
           } catch (tmp53) {
             c5 = tmp;
@@ -199,10 +206,10 @@ export default function ProfileGIFSelectActionSheet(arg0) {
   obj = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["xsC+/y"]);
-  obj[1] = callback(require(7704) /* NitroWheelIcon */.NitroWheelIcon, {});
+  obj[1] = callback(require(7706) /* NitroWheelIcon */.NitroWheelIcon, {});
   ({ titleWrapper: obj2[2], titleContainer: obj2[3] } = tmp);
   let items = [callback(require(5396) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
-  obj = { style: tmp.gifPicker, children: callback(importDefault(9933), obj1) };
+  obj = { style: tmp.gifPicker, children: callback(importDefault(9938), obj1) };
   items[1] = callback(View, obj);
   obj[3] = items;
   return callback2(require(5397) /* Background */.BottomSheet, obj);

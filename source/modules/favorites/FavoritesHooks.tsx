@@ -1,10 +1,10 @@
-// Module ID: 9711
-// Function ID: 9712
+// Module ID: 9716
+// Function ID: 9717
 // Name: useFavoritesAccess
-// Dependencies: [4124, 1903, 1375, 1410, 1905, 9712, 9713, 589, 1926, 11, 1306, 1894, 2]
+// Dependencies: [4126, 1922, 1394, 1429, 1924, 9717, 9718, 589, 1945, 11, 1306, 1913, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
-// Module 9711 (useFavoritesAccess)
+// Module 9716 (useFavoritesAccess)
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import initializeFromUserSettings from "initializeFromUserSettings";
@@ -19,7 +19,7 @@ function useFavoritesAccess(FavoritesGuildActionSheet) {
   if (FavoritesGuildActionSheet === undefined) {
     str = "useFavoritesAccess";
   }
-  let obj = require(9713) /* useFavoritesGuildConfig */;
+  let obj = require(9718) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.useFavoritesGuildConfig({ location: str });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   let tmp4 = undefined !== isFreemium;
@@ -29,7 +29,7 @@ function useFavoritesAccess(FavoritesGuildActionSheet) {
   const items = [mergeGuildAvatar];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
   const tmpResult = require(589) /* initialize */;
-  const isPremiumExactlyResult = importDefault(1926).isPremiumExactly(stateFromStores, PremiumTypes.TIER_2);
+  const isPremiumExactlyResult = importDefault(1945).isPremiumExactly(stateFromStores, PremiumTypes.TIER_2);
   let tmp7 = enabled;
   if (enabled) {
     let tmp8 = isPremiumExactlyResult;
@@ -58,7 +58,7 @@ function useFavoritesAccess(FavoritesGuildActionSheet) {
   } else {
     num = 0;
     if (tmp4) {
-      num = tmp(9712).FREE_FAVORITE_LIMIT;
+      num = tmp(9717).FREE_FAVORITE_LIMIT;
     }
   }
 }
@@ -68,14 +68,14 @@ export { useFavoritesAccess };
 export const getFavoritesAccess = function getFavoritesAccess() {
   let enabled;
   let isFreemium;
-  let obj = require(9713) /* useFavoritesGuildConfig */;
+  let obj = require(9718) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   let tmp4 = undefined !== isFreemium;
   if (tmp4) {
     tmp4 = isFreemium;
   }
-  const isPremiumExactlyResult = importDefault(1926).isPremiumExactly(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
+  const isPremiumExactlyResult = importDefault(1945).isPremiumExactly(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
   let tmp6 = enabled;
   if (enabled) {
     let tmp7 = isPremiumExactlyResult;
@@ -104,7 +104,7 @@ export const getFavoritesAccess = function getFavoritesAccess() {
   } else {
     num = 0;
     if (tmp4) {
-      num = require(9712) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
+      num = require(9717) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
     }
   }
 };
@@ -184,7 +184,7 @@ export const useIsFavoritesGuildSelected = function useIsFavoritesGuildSelected(
   const items = [handleConnectionOpen];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => guildId.getGuildId());
   const obj = require(589) /* initialize */;
-  return require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(stateFromStores);
+  return require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(stateFromStores);
 };
 export const useFavoritesAwareChannel = function useFavoritesAwareChannel(arg0, FavoritesGuildActionSheet) {
   let tmp = arg0;
@@ -192,7 +192,7 @@ export const useFavoritesAwareChannel = function useFavoritesAwareChannel(arg0, 
   const items = [handleConnectionOpen];
   const stateFromStores = _require(589).useStateFromStores(items, () => guildId.getGuildId());
   const obj = _require(589);
-  const obj2 = _require(1894);
+  const obj2 = _require(1913);
   _require(589);
   [][0] = arg0;
   if (!isFavoritesGuildIdResult) {

@@ -1,10 +1,10 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 9662
+// Function ID: 9663
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: [19, 3929, 505, 21, 589, 8398, 4794, 4824, 4825, 4827, 4826, 4829, 2]
+// Dependencies: [19, 3948, 505, 21, 589, 8404, 4794, 4824, 4825, 4827, 4826, 4829, 2]
 // Exports: default
 
-// Module 9657 (UserProfileVoiceActivityIcon)
+// Module 9662 (UserProfileVoiceActivityIcon)
 import "noop";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
@@ -61,5 +61,5 @@ export default function UserProfileVoiceActivityIcon(channel) {
     }
   }
   const merged5 = Object.assign(merged);
-  return jsx(channel(8398).PhoneCallIcon, {});
+  return jsx(channel(8404).PhoneCallIcon, {});
 };

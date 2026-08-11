@@ -1,10 +1,10 @@
-// Module ID: 8264
-// Function ID: 8265
+// Module ID: 8269
+// Function ID: 8270
 // Name: useTrackCollectiblesItemTryOut
-// Dependencies: [19, 7001, 676, 1905, 1930, 647, 698, 7013, 2]
+// Dependencies: [19, 7004, 676, 1924, 1949, 647, 698, 7016, 2]
 // Exports: default
 
-// Module 8264 (useTrackCollectiblesItemTryOut)
+// Module 8269 (useTrackCollectiblesItemTryOut)
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { AnalyticEvents } from "ME";
 import GuildFeatures from "GuildFeatures";
@@ -13,7 +13,7 @@ let AnalyticsPremiumFeatureNames;
 let closure_6;
 require("noop").useCallback;
 ({ AnalyticsPremiumFeatureNames, AnalyticsPremiumFeatureTiers: closure_6 } = GuildFeatures);
-let obj = { [require(1930).CollectiblesItemType.AVATAR_DECORATION]: AnalyticsPremiumFeatureNames.AVATAR_DECORATION, [require(1930).CollectiblesItemType.PROFILE_EFFECT]: AnalyticsPremiumFeatureNames.PROFILE_EFFECT, [require(1930).CollectiblesItemType.PROFILE_FRAME]: undefined, [require(1930).CollectiblesItemType.NAMEPLATE]: undefined, [require(1930).CollectiblesItemType.NONE]: undefined, [require(1930).CollectiblesItemType.BUNDLE]: undefined, [require(1930).CollectiblesItemType.VARIANTS_GROUP]: undefined, [require(1930).CollectiblesItemType.EXTERNAL_SKU]: undefined };
+let obj = { [require(1949).CollectiblesItemType.AVATAR_DECORATION]: AnalyticsPremiumFeatureNames.AVATAR_DECORATION, [require(1949).CollectiblesItemType.PROFILE_EFFECT]: AnalyticsPremiumFeatureNames.PROFILE_EFFECT, [require(1949).CollectiblesItemType.PROFILE_FRAME]: undefined, [require(1949).CollectiblesItemType.NAMEPLATE]: undefined, [require(1949).CollectiblesItemType.NONE]: undefined, [require(1949).CollectiblesItemType.BUNDLE]: undefined, [require(1949).CollectiblesItemType.VARIANTS_GROUP]: undefined, [require(1949).CollectiblesItemType.EXTERNAL_SKU]: undefined };
 const result = require("ME").fileFinishedImporting("modules/collectibles/hooks/useTrackCollectiblesItemTryOut.tsx");
 
 export default function useTrackCollectiblesItemTryOut(arg0) {

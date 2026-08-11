@@ -1,10 +1,10 @@
-// Module ID: 7290
-// Function ID: 7291
+// Module ID: 7291
+// Function ID: 7292
 // Name: updateCombo
-// Dependencies: [1218, 1960, 7138, 7139, 676, 3925, 4188, 7291, 1231, 589, 709, 2]
+// Dependencies: [1218, 1979, 7139, 7140, 676, 3944, 4188, 7292, 1231, 589, 709, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 7290 (updateCombo)
+// Module 7291 (updateCombo)
 import fetchFingerprint from "fetchFingerprint";
 import handleConnectionOpen from "handleConnectionOpen";
 import initialize from "initialize";
@@ -114,8 +114,8 @@ prototype["getComboScore"] = function getComboScore(arg0, arg1) {
   const value = secondaryIndexMap.get("" + arg0 + "-" + arg1);
   let num = 0;
   if (null != value) {
-    num = require(7291) /* getComboShakeIntensity */.getComboScore(value);
-    const obj = require(7291) /* getComboShakeIntensity */;
+    num = require(7292) /* getComboShakeIntensity */.getComboScore(value);
+    const obj = require(7292) /* getComboShakeIntensity */;
   }
   return num;
 };
@@ -161,8 +161,8 @@ prototype["getUserComboShakeIntensity"] = function getUserComboShakeIntensity(id
   const userCombo = this.getUserCombo(id, throwTypeErrorResult);
   let num = 0;
   if (null != userCombo) {
-    num = require(7291) /* getComboShakeIntensity */.getComboShakeIntensity(userCombo, LEVEL_4) * arg2;
-    const obj = require(7291) /* getComboShakeIntensity */;
+    num = require(7292) /* getComboShakeIntensity */.getComboShakeIntensity(userCombo, LEVEL_4) * arg2;
+    const obj = require(7292) /* getComboShakeIntensity */;
   }
   return num;
 };
@@ -221,12 +221,12 @@ const poggermodeStore = new PoggermodeStore(require("dispatcher"), {
             if (null != mentions) {
               if (null != mentions.find((id) => id.id === id)) {
                 if (null != value) {
-                  let num2 = id(7291).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
+                  let num2 = id(7292).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
                   if (num2 == null) {
                     num2 = 0.001;
                   }
                   let result = num2;
-                  const obj2 = id(7291);
+                  const obj2 = id(7292);
                 } else {
                   const _Math = Math;
                   result = 4 * Math.random();

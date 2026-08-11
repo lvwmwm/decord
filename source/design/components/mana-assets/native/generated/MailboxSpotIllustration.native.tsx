@@ -1,10 +1,10 @@
-// Module ID: 6508
-// Function ID: 6509
+// Module ID: 6510
+// Function ID: 6511
 // Name: MailboxSpotIllustration
-// Dependencies: [21, 5268, 6509, 2]
+// Dependencies: [21, 5268, 6511, 2]
 // Exports: MailboxSpotIllustration
 
-// Module 6508 (MailboxSpotIllustration)
+// Module 6510 (MailboxSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MailboxSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const MailboxSpotIllustration = function MailboxSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6509);
+  obj[0] = importDefault(6511);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

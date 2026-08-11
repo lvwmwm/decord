@@ -1,10 +1,10 @@
-// Module ID: 15184
-// Function ID: 15185
+// Module ID: 15193
+// Function ID: 15194
 // Name: useMessagesScrollToTop
-// Dependencies: [19, 4295, 4158, 9552, 1481, 2]
+// Dependencies: [19, 4295, 4158, 9558, 1500, 2]
 // Exports: default
 
-// Module 15184 (useMessagesScrollToTop)
+// Module 15193 (useMessagesScrollToTop)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
@@ -44,5 +44,5 @@ export default function useMessagesScrollToTop(listRef) {
       }
     }
   }), items));
-  const scrollToTop = listRef(1481).useScrollToTop(ref);
+  const scrollToTop = listRef(1500).useScrollToTop(ref);
 };

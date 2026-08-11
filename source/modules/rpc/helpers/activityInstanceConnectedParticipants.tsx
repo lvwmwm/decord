@@ -1,10 +1,10 @@
-// Module ID: 13733
-// Function ID: 13734
+// Module ID: 13741
+// Function ID: 13742
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [1371, 1903, 4206, 3919, 4493, 10743, 1351, 12, 2]
+// Dependencies: [1390, 1922, 4206, 3938, 4493, 10748, 1370, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 13733 (activityInstanceConnectedParticipants)
+// Module 13741 (activityInstanceConnectedParticipants)
 import participantFromServer from "participantFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
@@ -26,12 +26,12 @@ obj = {
         let obj = { participants: null };
         obj[0] = [];
       } else {
-        callback = callback(3919).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
-        const obj4 = callback(3919);
-        callback2 = callback(3919).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
+        callback = callback(3938).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
+        const obj4 = callback(3938);
+        callback2 = callback(3938).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
         obj = { participants: null };
         const _Array = Array;
-        const obj5 = callback(3919);
+        const obj5 = callback(3938);
         obj[0] = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
           const user = outer1_4.getUser(arg0);
           if (null != user) {
@@ -42,7 +42,7 @@ obj = {
             obj.nickname = nickname;
             return obj;
           }
-        }).filter(callback(1351).isNotNullish);
+        }).filter(callback(1370).isNotNullish);
         const arr = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
           const user = outer1_4.getUser(arg0);
           if (null != user) {
@@ -71,12 +71,12 @@ export const activityInstanceConnectedParticipants = function activityInstanceCo
     obj[0] = [];
     return obj;
   } else {
-    _require = _require(3919).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
-    const obj2 = _require(3919);
-    const embeddedActivityLocationChannelId = _require(3919).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
+    _require = _require(3938).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
+    const obj2 = _require(3938);
+    const embeddedActivityLocationChannelId = _require(3938).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
     obj = { participants: null };
     const _Array = Array;
-    const obj3 = _require(3919);
+    const obj3 = _require(3938);
     obj[0] = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
       const user = outer1_4.getUser(arg0);
       if (null != user) {
@@ -87,7 +87,7 @@ export const activityInstanceConnectedParticipants = function activityInstanceCo
         obj.nickname = nickname;
         return obj;
       }
-    }).filter(_require(1351).isNotNullish);
+    }).filter(_require(1370).isNotNullish);
     return obj;
   }
 };

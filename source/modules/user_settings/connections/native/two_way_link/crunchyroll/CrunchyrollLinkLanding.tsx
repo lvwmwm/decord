@@ -1,10 +1,10 @@
-// Module ID: 10572
-// Function ID: 10573
+// Module ID: 10577
+// Function ID: 10578
 // Name: CrunchyrollLinkLanding
-// Dependencies: [19, 10571, 676, 21, 4303, 1236, 8855, 1480, 10498, 10573, 1974, 2]
+// Dependencies: [19, 10576, 676, 21, 4303, 1236, 8861, 1499, 10503, 10578, 1993, 2]
 // Exports: default
 
-// Module 10572 (CrunchyrollLinkLanding)
+// Module 10577 (CrunchyrollLinkLanding)
 import noop from "noop";
 import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes";
 import ME from "ME";
@@ -19,14 +19,14 @@ let closure_8 = createCacheKey.createStyles({ image: { width: 234, height: 147 }
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkLanding.tsx");
 
 export default function CrunchyrollLinkLanding() {
-  let obj = navigation(1480);
+  let obj = navigation(1499);
   navigation = obj.useNavigation();
   let items = [navigation];
   const memo = React.useMemo(() => {
     const obj = { label: null, icon: null };
     const intl = navigation(1236).intl;
     obj[0] = intl.string(navigation(1236).t["2TXHQd"]);
-    obj[1] = navigation(8855).PlayIcon;
+    obj[1] = navigation(8861).PlayIcon;
     const items = [obj];
     return items;
   }, []);
@@ -34,15 +34,15 @@ export default function CrunchyrollLinkLanding() {
     navigation.push(outer1_4.PRE_CONNECT);
   }, items);
   obj = { platformType: constants2.CRUNCHYROLL, img: null, imgStyle: null, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null };
-  obj[1] = importDefault(10573);
+  obj[1] = importDefault(10578);
   obj[2] = callback().image;
   let intl = navigation(1236).intl;
   obj[3] = intl.string(navigation(1236).t["Da+3NJ"]);
   const intl2 = navigation(1236).intl;
   obj[4] = intl2.string(navigation(1236).t.MaPpPL);
   const tmp = callback();
-  obj[5] = importDefault(1974).getArticleURL(constants.CRUNCHYROLL_CONNECTION);
+  obj[5] = importDefault(1993).getArticleURL(constants.CRUNCHYROLL_CONNECTION);
   obj[6] = callback;
   obj[7] = memo;
-  return jsx(navigation(10498).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: null, imgStyle: null, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null });
+  return jsx(navigation(10503).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: null, imgStyle: null, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null });
 };

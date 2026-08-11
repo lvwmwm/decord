@@ -1,10 +1,10 @@
-// Module ID: 1976
-// Function ID: 1977
+// Module ID: 1995
+// Function ID: 1996
 // Name: _setAppLocale
-// Dependencies: [5, 700, 1977, 1236, 1987, 1274, 3375, 3850, 3881, 3883, 1208, 2]
+// Dependencies: [5, 700, 1996, 1236, 2006, 1274, 3394, 3869, 3900, 3902, 1208, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
-// Module 1976 (_setAppLocale)
+// Module 1995 (_setAppLocale)
 import module_1274 from "module_1274";
 import identity from "identity";
 
@@ -81,7 +81,7 @@ function _setAppLocale() {
                         c1 = 1;
                         dependencyMap = 1;
                         let obj1 = { value: null, done: false };
-                        obj1[0] = outer1_0(1987).preloadAllIntlMessageFiles();
+                        obj1[0] = outer1_0(2006).preloadAllIntlMessageFiles();
                         return obj1;
                       }
                     } else if (1 === tmp4) {
@@ -433,30 +433,27 @@ function _setMomentLocale() {
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   const importDefault = arg1;
-  return {
-    isLoading: false,
-    inProgressLocale: "Boolean",
-    error: "HermesInternal",
-    localeData: importDefault(1977),
-    setLoadingStarted(closure_0) {
-      return callback({ isLoading: true, inProgressLocale: closure_0 });
-    },
-    setLoadingSucceeded(closure_0) {
-      if (callback2().inProgressLocale === closure_0) {
-        callback({ isLoading: false, inProgressLocale: "Boolean", error: "HermesInternal" });
-      }
-    },
-    setLoadingFailed(arg0, closure_0) {
-      if (callback2().inProgressLocale === closure_0) {
-        const obj = { isLoading: false, inProgressLocale: "Array", error: null };
-        obj[2] = arg0;
-        callback(obj);
-      }
-    },
-    setLocaleData(closure_1) {
-      callback({ localeData: closure_1 });
+  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "accessibilityRole", localeData: "Array", setLoadingStarted: "isArray", setLoadingSucceeded: "call", setLoadingFailed: "ks", setLocaleData: "marginBottom" };
+  obj[3] = importDefault(1996);
+  obj[4] = function setLoadingStarted(closure_0) {
+    return callback({ isLoading: true, inProgressLocale: closure_0 });
+  };
+  obj[5] = function setLoadingSucceeded(closure_0) {
+    if (callback2().inProgressLocale === closure_0) {
+      callback({ isLoading: false, inProgressLocale: "Boolean", error: "accessibilityRole" });
     }
   };
+  obj[6] = function setLoadingFailed(arg0, closure_0) {
+    if (callback2().inProgressLocale === closure_0) {
+      const obj = { isLoading: false, inProgressLocale: "Array", error: 0 };
+      obj[2] = arg0;
+      callback(obj);
+    }
+  };
+  obj[7] = function setLocaleData(closure_1) {
+    callback({ localeData: closure_1 });
+  };
+  return obj;
 });
 const result = require("code").fileFinishedImporting("intl/IntlLoaderStore.tsx");
 
@@ -482,7 +479,7 @@ export const setAppLocale = function setAppLocale() {
 export const useLocaleData = function useLocaleData() {
   let tmp = withEqualityFn((localeData) => localeData.localeData);
   if (tmp == null) {
-    tmp = importDefault(1977);
+    tmp = importDefault(1996);
   }
   return tmp;
 };

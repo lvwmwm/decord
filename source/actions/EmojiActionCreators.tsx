@@ -1,10 +1,10 @@
-// Module ID: 8740
-// Function ID: 8741
+// Module ID: 8746
+// Function ID: 8747
 // Name: _updateEmoji
-// Dependencies: [5, 5176, 4994, 4641, 676, 685, 1355, 1337, 709, 530, 8273, 4153, 1236, 4203, 3942, 1351, 5183, 12, 4642, 2]
+// Dependencies: [5, 5176, 4994, 4641, 676, 685, 1374, 1337, 709, 530, 8278, 1363, 1236, 4203, 3961, 1370, 5183, 12, 4642, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 8740 (_updateEmoji)
+// Module 8746 (_updateEmoji)
 import closure_3 from "MAX_FAVORITES";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -137,7 +137,7 @@ let result = require("_handleConnectionOpen").fileFinishedImporting("actions/Emo
 
 export const setDiversityColor = function setDiversityColor(arg0) {
   const _require = arg0;
-  const PreloadedUserSettingsActionCreators = _require(1355).PreloadedUserSettingsActionCreators;
+  const PreloadedUserSettingsActionCreators = _require(1374).PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("textAndImages", (diversitySurrogate) => {
     const StringValue = callback(outer1_2[7]).StringValue;
     diversitySurrogate.diversitySurrogate = StringValue.create();
@@ -174,13 +174,13 @@ export const uploadEmoji = function uploadEmoji(guildId) {
   obj.dispatch({ type: "EMOJI_UPLOAD_START", guildId });
   const HTTP = guildId(530).HTTP;
   obj = { url: Endpoints.GUILD_EMOJIS(guildId), body: { image, name, roles }, headers: null, context: null, oldFormErrors: true, rejectWithError: null };
-  obj[2] = importDefault(8273).buildHeadersForMd5(originalMd5);
+  obj[2] = importDefault(8278).buildHeadersForMd5(originalMd5);
   let page;
   if (analyticsLocation != null) {
     page = analyticsLocation.page;
   }
   obj[3] = { client_event_source: page };
-  const obj3 = importDefault(8273);
+  const obj3 = importDefault(8278);
   const tmp3 = guildId;
   obj[5] = guildId(530).rejectWithMigratedError();
   const tmp3Result = guildId(530);
@@ -213,7 +213,7 @@ export const deleteEmoji = function deleteEmoji(c0, id) {
   const tmp3 = require;
   const tmp3Result = require(530) /* sendRequest */;
   return HTTP.del(obj).then(() => {
-    const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
     const intl = callback(1236).intl;
     AccessibilityAnnouncer.announce(intl.string(callback(1236).t.L3UUha));
   });
@@ -233,12 +233,12 @@ export const favoriteEmoji = function favoriteEmoji(customEmojiFromJoinedGuild) 
   if (null != customEmojiFromJoinedGuild) {
     let name = customEmojiFromJoinedGuild.id;
     if (name == null) {
-      const result = importDefault(3942).convertSurrogateToBase(customEmojiFromJoinedGuild.surrogates);
+      const result = importDefault(3961).convertSurrogateToBase(customEmojiFromJoinedGuild.surrogates);
       name = undefined;
       if (result != null) {
         name = result.name;
       }
-      let obj = importDefault(3942);
+      let obj = importDefault(3961);
     }
     if (name == null) {
       name = customEmojiFromJoinedGuild.name;
@@ -247,7 +247,7 @@ export const favoriteEmoji = function favoriteEmoji(customEmojiFromJoinedGuild) 
   }
   const require = tmp;
   if (null != tmp) {
-    const FrecencyUserSettingsActionCreators = require(1355) /* updateUserGuildSettings */.FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.FrecencyUserSettingsActionCreators;
     FrecencyUserSettingsActionCreators.updateAsync("favoriteEmojis", (emojis) => {
       emojis = emojis.emojis;
       let tmp = emojis;
@@ -300,12 +300,12 @@ export const unfavoriteEmoji = function unfavoriteEmoji(customEmojiFromJoinedGui
   if (null != customEmojiFromJoinedGuild) {
     let name = customEmojiFromJoinedGuild.id;
     if (name == null) {
-      const result = importDefault(3942).convertSurrogateToBase(customEmojiFromJoinedGuild.surrogates);
+      const result = importDefault(3961).convertSurrogateToBase(customEmojiFromJoinedGuild.surrogates);
       name = undefined;
       if (result != null) {
         name = result.name;
       }
-      let obj = importDefault(3942);
+      let obj = importDefault(3961);
     }
     if (name == null) {
       name = customEmojiFromJoinedGuild.name;
@@ -314,7 +314,7 @@ export const unfavoriteEmoji = function unfavoriteEmoji(customEmojiFromJoinedGui
   }
   const require = tmp;
   if (null != tmp) {
-    const FrecencyUserSettingsActionCreators = require(1355) /* updateUserGuildSettings */.FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = require(1374) /* updateUserGuildSettings */.FrecencyUserSettingsActionCreators;
     FrecencyUserSettingsActionCreators.updateAsync("favoriteEmojis", (emojis) => {
       emojis = emojis.emojis;
       let tmp = emojis;

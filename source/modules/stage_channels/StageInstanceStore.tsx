@@ -1,9 +1,9 @@
-// Module ID: 1377
-// Function ID: 1378
+// Module ID: 1396
+// Function ID: 1397
 // Name: handleStageInstanceCreateOrUpdate
-// Dependencies: [1378, 589, 709, 2]
+// Dependencies: [1397, 589, 709, 2]
 
-// Module 1377 (handleStageInstanceCreateOrUpdate)
+// Module 1396 (handleStageInstanceCreateOrUpdate)
 import { GuildScheduledEventPrivacyLevel as closure_0 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import { Store } from "initialize";
 

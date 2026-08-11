@@ -1,12 +1,12 @@
-// Module ID: 12603
-// Function ID: 12604
+// Module ID: 12607
+// Function ID: 12608
 // Name: createFriendInvite
-// Dependencies: [17, 3938, 7196, 8053, 1236, 4146, 1416, 2]
+// Dependencies: [17, 3957, 7197, 8055, 1236, 4148, 1435, 2]
 // Exports: createFriendInvite
 
-// Module 12603 (createFriendInvite)
+// Module 12607 (createFriendInvite)
 import { Image } from "get ActivityIndicator";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { InviteTypes } from "InviteSendStates";
 
 const result = require("InviteSendStates").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/FriendInvite.tsx");
@@ -18,7 +18,7 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   let acceptLabelGreenColor;
   let baseColors;
   let colors;
-  ({ colors, baseColors } = importDefault(8053)(arg3));
+  ({ colors, baseColors } = importDefault(8055)(arg3));
   const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
   const t = require(1236) /* getSystemLocale */.t;
@@ -35,7 +35,7 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   }
   let str3 = "";
   if (null != inviter.inviter) {
-    let tmpResult = tmp(4146);
+    let tmpResult = tmp(4148);
     str3 = tmpResult.getUserTag(inviter.inviter);
   }
   let isFriendResult = null != inviter.inviter;
@@ -49,7 +49,7 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   }
   let str4 = "";
   if (null != inviter.inviter) {
-    tmpResult = tmp(1416);
+    tmpResult = tmp(1435);
     str4 = Image.resolveAssetSource(tmpResult.getUserAvatarSource(inviter.inviter)).uri;
   }
   const inviter2 = inviter.inviter;

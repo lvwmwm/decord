@@ -1,7 +1,7 @@
 // Module ID: 4185
 // Function ID: 4186
 // Name: resolveSavedActiveGuildTheme
-// Dependencies: [19, 1340, 1891, 4124, 4186, 4189, 676, 4155, 589, 4232, 4235, 2]
+// Dependencies: [19, 1340, 1910, 4126, 4186, 4189, 676, 4155, 589, 4232, 4235, 2]
 // Exports: getActiveGuildTheme, getActiveGuildThemeForGuildId, isRenderableGuildThemeSettings, resolveRenderableGuildThemeSettings, useActiveGuildTheme, useEnabledGuildThemeForGuildId, useIsGuildThemePreviewActive
 
 // Module 4185 (resolveSavedActiveGuildTheme)

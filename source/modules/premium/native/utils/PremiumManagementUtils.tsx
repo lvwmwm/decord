@@ -1,10 +1,10 @@
-// Module ID: 6866
-// Function ID: 6867
+// Module ID: 6868
+// Function ID: 6869
 // Name: defaultMobileWebNitroManagementSuccessCallback
-// Dependencies: [676, 505, 21, 3, 4643, 1236, 500, 1605, 6867, 6870, 2]
+// Dependencies: [676, 505, 21, 3, 4643, 1236, 500, 1624, 6869, 6872, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 6866 (defaultMobileWebNitroManagementSuccessCallback)
+// Module 6868 (defaultMobileWebNitroManagementSuccessCallback)
 import { SubscriptionStatusTypes } from "ME";
 import { PaymentGatewayToFriendlyName as closure_4 } from "sum";
 import { jsx } from "jsxProd";
@@ -54,7 +54,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
       if (null !== obj.IN_APP) {
         let str2 = "iOS";
         if (!obj7.isIOS()) {
-          let tmp13Result = tmp13(1605);
+          let tmp13Result = tmp13(1624);
           let str = "Android";
           if (tmp13Result.isMetaQuest()) {
             str = "Meta Quest";
@@ -76,7 +76,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
           if (null != tmp) {
             if (tmp.shouldAllowExternalManagement) {
               if ("iOS" !== str2) {
-                tmp13Result = tmp13(1605);
+                tmp13Result = tmp13(1624);
               }
               let status;
               if (subscription != null) {
@@ -98,7 +98,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
                 const intl3 = tmp13(1236).intl;
                 const t = tmp13(1236).t;
                 obj[2] = intl3.string(tmp8 ? t.tqSSSA : t["olSp/D"]);
-                jsx(tmp13(6870).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
+                jsx(tmp13(6872).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
                 const tmp9 = jsx;
               } else {
                 function manageExternalNitroSubscription() {

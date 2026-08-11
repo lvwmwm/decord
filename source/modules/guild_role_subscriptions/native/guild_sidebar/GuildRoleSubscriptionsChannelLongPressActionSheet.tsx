@@ -1,10 +1,10 @@
-// Module ID: 15331
-// Function ID: 15332
+// Module ID: 15345
+// Function ID: 15346
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 1379, 21, 4303, 712, 5764, 5396, 1297, 12130, 1236, 7967, 15233, 9725, 2]
+// Dependencies: [19, 17, 1398, 21, 4303, 712, 5764, 5396, 1297, 12133, 1236, 7969, 15242, 9730, 2]
 // Exports: default
 
-// Module 15331 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 15345 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { StaticChannelRoute } from "set";
@@ -29,7 +29,7 @@ export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) 
   obj = { leading: null, title: null };
   obj = { style: createCacheKey().headerIcon, children: null };
   const obj1 = { disableColor: true, source: null };
-  obj1[1] = importDefault(12130);
+  obj1[1] = importDefault(12133);
   obj[1] = callback(require(1297) /* Button */.Icon, obj1);
   obj[0] = callback(View, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -37,17 +37,17 @@ export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) 
   const items = [callback(require(5396) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
   const obj2 = { leading: null, label: null, onPress: null };
   const obj3 = { source: null };
-  obj3[0] = importDefault(15233);
+  obj3[0] = importDefault(15242);
   obj2[0] = callback(require(1297) /* Button */.Icon, obj3);
   const obj4 = { text: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj4[0] = intl2.string(require(1236) /* getSystemLocale */.t.WqhZss);
-  obj2[1] = callback(require(7967) /* Form */.FormLabel, obj4);
+  obj2[1] = callback(require(7969) /* Form */.FormLabel, obj4);
   obj2[2] = function onPress() {
     callback();
     const result = outer1_0(outer1_2[13]).copyGuildChannelOrThreadLink(closure_0, outer1_4.ROLE_SUBSCRIPTIONS);
   };
-  items[1] = callback(require(7967) /* Form */.FormRow, obj2);
+  items[1] = callback(require(7969) /* Form */.FormRow, obj2);
   obj[0] = items;
   return callback2(require(5764) /* ActionSheet */.ActionSheet, obj);
 };

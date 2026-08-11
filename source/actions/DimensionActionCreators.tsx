@@ -1,9 +1,9 @@
-// Module ID: 10249
-// Function ID: 10250
+// Module ID: 10254
+// Function ID: 10255
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 10249 (dispatcher)
+// Module 10254 (dispatcher)
 let result = require("set").fileFinishedImporting("actions/DimensionActionCreators.tsx");
 
 export default {

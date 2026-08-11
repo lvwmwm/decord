@@ -1,10 +1,10 @@
-// Module ID: 15851
-// Function ID: 15852
+// Module ID: 15868
+// Function ID: 15869
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 676, 21, 4303, 712, 698, 5369, 4700, 8391, 500, 5824, 4848, 13204, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 698, 5369, 4700, 8397, 500, 5824, 4848, 13212, 1236, 2]
 // Exports: default
 
-// Module 15851 (UsernameSearchScreen)
+// Module 15868 (UsernameSearchScreen)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -61,7 +61,7 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  let obj = navigation(8391);
+  let obj = navigation(8397);
   const clientThemesOverride = obj.useClientThemesOverride();
   let obj1 = navigation(500);
   let prop = null;
@@ -83,7 +83,7 @@ export default function UsernameSearchScreen(navigation) {
   const items3 = [tmp.container, prop, { paddingBottom: insets.bottom + ref(712).space.PX_16 }];
   obj1[2] = items3;
   const obj3 = { style: tmp.inputContainer, autoFocusInput: false, headerText: null, headerTextStyle: null, ref: null };
-  tmp3Result = tmp3(13204);
+  tmp3Result = tmp3(13212);
   const intl = tmp7(1236).intl;
   obj3[2] = intl.string(navigation(1236).t.YEOwDM);
   obj3[3] = tmp.headerText;

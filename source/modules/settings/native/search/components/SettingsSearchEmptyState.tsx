@@ -1,8 +1,8 @@
-// Module ID: 14935
-// Function ID: 14936
-// Dependencies: [19, 17, 21, 4303, 4014, 1236, 9014, 4712, 4299, 2]
+// Module ID: 14945
+// Function ID: 14946
+// Dependencies: [19, 17, 21, 4303, 1351, 1236, 9020, 4712, 4299, 2]
 
-// Module 14935
+// Module 14945
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,12 +16,12 @@ let closure_6 = createCacheKey.createStyles({ container: { paddingTop: 24, justi
 const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
   const tmp = callback3();
   const effect = importAllResult.useEffect(() => {
-    const AccessibilityAnnouncer = callback(4014).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = callback(1351).AccessibilityAnnouncer;
     const intl = callback(1236).intl;
     AccessibilityAnnouncer.announce(intl.string(callback(1236).t.zihbmv), "polite");
   }, []);
   let obj = { style: tmp.container, children: null };
-  const items = [callback(require(9014) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
+  const items = [callback(require(9020) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
   obj = { style: tmp.textContainer, align: "center", justify: "center", children: null };
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 7149
-// Function ID: 7150
+// Module ID: 7150
+// Function ID: 7151
 // Name: set
-// Dependencies: [4292, 1351, 7150, 7151, 2]
+// Dependencies: [4292, 1370, 7151, 7152, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 7149 (set)
+// Module 7150 (set)
 import set from "makeStorefrontSKUCodedLink";
 
 const items = [require("CodedLinkType").CodedLinkType.APP_DIRECTORY_PROFILE, require("CodedLinkType").CodedLinkType.ACTIVITY_BOOKMARK, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, require("CodedLinkType").CodedLinkType.APP_OAUTH2_LINK];
@@ -15,18 +15,18 @@ let result = set.fileFinishedImporting("modules/coded_links/ApplicationCodedLink
 
 export const APP_LINK_CODED_TYPES = set;
 export const isApplicationCodedLink = function isApplicationCodedLink(type) {
-  return require(1351) /* isDiscordFrontendDevelopment */.isInSet(type, set);
+  return require(1370) /* isDiscordFrontendDevelopment */.isInSet(type, set);
 };
 export const APP_LINK_CODED_TYPES_MOBILE_SUPPORT = set1;
 export const isApplicationCodedLinkMobileSupported = function isApplicationCodedLinkMobileSupported(type) {
-  return require(1351) /* isDiscordFrontendDevelopment */.isInSet(type, set1);
+  return require(1370) /* isDiscordFrontendDevelopment */.isInSet(type, set1);
 };
 export const getApplicationCodedLinkData = function getApplicationCodedLinkData(type, code, url) {
   if (require(4292) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
     if (tmp(4292).CodedLinkType.APP_OAUTH2_LINK !== type) {
       if (tmp(4292).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
         if (tmp(4292).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          let tmpResult = tmp(7150);
+          let tmpResult = tmp(7151);
           const result = tmpResult.parseStorefrontSkuCodedLink(code);
           let tmp5 = null;
           if (null != result) {
@@ -40,7 +40,7 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
           obj = { type: null, applicationId: null, params: null };
           obj[0] = type;
           obj[1] = code;
-          tmpResult = tmp(7151);
+          tmpResult = tmp(7152);
           obj[2] = tmpResult.extractActivityBookmarkParams(url);
           return obj;
         }

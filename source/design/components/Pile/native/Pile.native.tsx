@@ -1,10 +1,10 @@
-// Module ID: 10270
-// Function ID: 10271
+// Module ID: 10275
+// Function ID: 10276
 // Name: Pile
-// Dependencies: [19, 17, 21, 4303, 1351, 12, 8293, 10271, 2]
+// Dependencies: [19, 17, 21, 4303, 1370, 12, 8298, 10276, 2]
 // Exports: Pile
 
-// Module 10270 (Pile)
+// Module 10275 (Pile)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -27,7 +27,7 @@ export const Pile = function Pile(aria_label) {
   let Children = React.Children;
   const tmp = callback();
   const tmp2 = React;
-  length = Children.toArray(children).filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish).length;
+  length = Children.toArray(children).filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish).length;
   let obj = require(12) /* apply */;
   if (obj.isArray(size)) {
     if (size.length !== length) {

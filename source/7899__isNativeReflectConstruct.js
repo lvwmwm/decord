@@ -1,7 +1,7 @@
 // Module ID: 7899
 // Function ID: 7900
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 7851]
+// Dependencies: [41, 42, 93, 95, 98, 19, 7853]
 
 // Module 7899 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,7 +9,7 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
-const FeSpotLight = arg1;
+const FePointLight = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeSpotLight {
+class FePointLight {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeSpotLight);
+    tmp = _isNativeReflectConstruct(this, FePointLight);
     tmp2 = __esModule;
-    obj = __esModule(FeSpotLight);
+    obj = __esModule(FePointLight);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,18 +49,18 @@ class FeSpotLight {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeSpotLight, require("noop").Component);
+require("_inherits")(FePointLight, require("noop").Component);
 const items = [
   {
     key: "render",
     value: function render() {
-      const result = FeSpotLight(7851).warnUnimplementedFilter();
+      const result = FePointLight(7853).warnUnimplementedFilter();
       return null;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(FeSpotLight, items);
-importDefaultResultResult.displayName = "FeSpotLight";
+const importDefaultResultResult = importDefaultResult(FePointLight, items);
+importDefaultResultResult.displayName = "FePointLight";
 importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

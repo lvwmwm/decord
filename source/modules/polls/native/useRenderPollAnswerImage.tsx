@@ -1,10 +1,10 @@
-// Module ID: 11597
-// Function ID: 11598
+// Module ID: 11600
+// Function ID: 11601
 // Name: useRenderPollAnswerImage
-// Dependencies: [32, 19, 17, 4640, 4639, 1906, 21, 589, 11591, 5268, 5360, 3945, 1416, 2]
+// Dependencies: [32, 19, 17, 4640, 4639, 1925, 21, 589, 11594, 5268, 5360, 3964, 1435, 2]
 // Exports: default
 
-// Module 11597 (useRenderPollAnswerImage)
+// Module 11600 (useRenderPollAnswerImage)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ActivityIndicator } from "get ActivityIndicator";
@@ -34,7 +34,7 @@ export default function useRenderPollAnswerImage(arg0, arg1, mediaAttachmentStat
       status = mediaAttachmentState.status;
     }
   }
-  const tmp7 = status === _require(11591).PollMediaUploadAttachmentStatus.PREPARING;
+  const tmp7 = status === _require(11594).PollMediaUploadAttachmentStatus.PREPARING;
   map = tmp7;
   obj = {
     renderImage: React.useMemo(() => {

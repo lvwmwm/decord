@@ -1,10 +1,10 @@
-// Module ID: 9076
-// Function ID: 9077
+// Module ID: 9082
+// Function ID: 9083
 // Name: setHubProgressActionComplete
-// Dependencies: [1891, 9077, 676, 1355, 1384, 2]
+// Dependencies: [1910, 9083, 676, 1374, 1403, 2]
 // Exports: setHubProgressActionComplete, skipHubProgress
 
-// Module 9076 (setHubProgressActionComplete)
+// Module 9082 (setHubProgressActionComplete)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { HUB_PROGRESS_STEP_ORDER } from "items";
 import { GuildFeatures } from "ME";
@@ -12,7 +12,7 @@ import { GuildFeatures } from "ME";
 const require = arg1;
 let result = require("ME").fileFinishedImporting("modules/hub/HubProgressActionCreators.tsx");
 
-export const setHubProgressActionComplete = function setHubProgressActionComplete(guildId, INVITE_USER) {
+export const setHubProgressActionComplete = function setHubProgressActionComplete(guildId, JOIN_GUILD) {
   if (null != guildId) {
     guild = guild.getGuild(guildId);
     let hasItem = null != guild;
@@ -21,8 +21,8 @@ export const setHubProgressActionComplete = function setHubProgressActionComplet
       hasItem = features.has(GuildFeatures.HUB);
     }
     if (hasItem) {
-      const items = [INVITE_USER];
-      const result = items(1355).updateUserGuildSettings(guildId, (hubProgress) => {
+      const items = [JOIN_GUILD];
+      const result = items(1374).updateUserGuildSettings(guildId, (hubProgress) => {
         let flag = false;
         for (const item10008 of closure_0) {
           let tmp = item10008;
@@ -38,14 +38,14 @@ export const setHubProgressActionComplete = function setHubProgressActionComplet
           continue;
         }
         return flag;
-      }, items(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
-      const obj = items(1355);
+      }, items(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      const obj = items(1374);
     }
   }
 };
 export const skipHubProgress = function skipHubProgress(id) {
   const _require = HUB_PROGRESS_STEP_ORDER;
-  const result = _require(1355).updateUserGuildSettings(id, (hubProgress) => {
+  const result = _require(1374).updateUserGuildSettings(id, (hubProgress) => {
     let flag = false;
     for (const item10008 of closure_0) {
       let tmp = item10008;
@@ -61,5 +61,5 @@ export const skipHubProgress = function skipHubProgress(id) {
       continue;
     }
     return flag;
-  }, _require(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
+  }, _require(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
 };

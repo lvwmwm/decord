@@ -1,8 +1,8 @@
-// Module ID: 11707
-// Function ID: 11708
-// Dependencies: [5, 32, 19, 17, 1372, 1891, 676, 21, 4303, 712, 589, 5957, 5232, 9076, 1306, 1416, 1236, 5376, 5779, 1411, 4299, 11685, 4714, 2]
+// Module ID: 11710
+// Function ID: 11711
+// Dependencies: [5, 32, 19, 17, 1391, 1910, 676, 21, 4303, 712, 589, 5959, 5232, 9082, 1306, 1435, 1236, 5376, 5779, 1430, 4299, 11688, 4714, 2]
 
-// Module 11707
+// Module 11710
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "fromGuildPropertiesWithAdditionalFields";
@@ -154,7 +154,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   importDefault = tmp4;
   const tmp5 = callback(importAllResult.useState(false), 2);
   dependencyMap = tmp5[1];
-  let obj1 = importDefault(1416);
+  let obj1 = importDefault(1435);
   obj = { id: entry.guildId, icon: entry.icon, size: 40 };
   const guildIconURL = obj1.getGuildIconURL(obj);
   const intl = tmp2(1236).intl;
@@ -170,8 +170,8 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   const obj4 = { style: tmp.guildIcon, icon: guildIconURL, guild: null, selected: false };
   let result;
   if (null == guildIconURL) {
-    result = tmp2(1411).fromGuildDirectoryEntry(entry);
-    const tmp2Result = tmp2(1411);
+    result = tmp2(1430).fromGuildDirectoryEntry(entry);
+    const tmp2Result = tmp2(1430);
   }
   obj4[2] = result;
   const items1 = [closure_10(importDefault(5779), obj4), ];
@@ -217,7 +217,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   obj3[1] = items1;
   const items6 = [closure_12(View, obj3), ];
   const tmp6Result = importDefault(5779);
-  items6[1] = closure_10(View, { children: closure_10(importDefault(11685), { entry }) });
+  items6[1] = closure_10(View, { children: closure_10(importDefault(11688), { entry }) });
   obj2[1] = items6;
   const items7 = [closure_12(View, obj2), , , ];
   let tmp9Result = null != description;

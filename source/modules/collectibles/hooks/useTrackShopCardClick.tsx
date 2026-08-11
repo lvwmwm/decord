@@ -1,10 +1,10 @@
-// Module ID: 9400
-// Function ID: 9401
+// Module ID: 9406
+// Function ID: 9407
 // Name: useTrackShopCardClick
-// Dependencies: [19, 9401, 676, 9347, 9348, 7013, 7012, 698, 2]
+// Dependencies: [19, 9407, 676, 9353, 9354, 7016, 7015, 698, 2]
 // Exports: useTrackShopCardClick
 
-// Module 9400 (useTrackShopCardClick)
+// Module 9406 (useTrackShopCardClick)
 import noop from "noop";
 import { useSelectedVariantIndex } from "useSelectedVariantIndex";
 import { AnalyticEvents } from "ME";

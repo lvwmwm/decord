@@ -1,16 +1,16 @@
-// Module ID: 8008
-// Function ID: 8009
+// Module ID: 8010
+// Function ID: 8011
 // Name: renderDefaultEmpty
-// Dependencies: [109, 32, 19, 17, 21, 12, 643, 5781, 4299, 500, 4036, 8009, 8010, 5399, 8011, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 643, 5781, 4299, 500, 4042, 8011, 8012, 5399, 8013, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 8008 (renderDefaultEmpty)
+// Module 8010 (renderDefaultEmpty)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 
 let StyleSheet;
 let c10;
@@ -2243,8 +2243,8 @@ prototype4["getInitialState"] = function getInitialState(result, setInfo, isFirs
     const result2 = scrollPosValue.set(tmp10);
     self.scrollPosValue = scrollPosValue;
   } else {
-    self.scrollPosValue = require(4036).makeMutable(tmp10);
-    const obj3 = require(4036);
+    self.scrollPosValue = require(4042).makeMutable(tmp10);
+    const obj3 = require(4042);
   }
   if (result > 0) {
     let computeResult = setInfo.compute(tmp3, sum, items, true);
@@ -2765,7 +2765,7 @@ prototype4["render"] = function render() {
   obj = {};
   const merged = Object.assign(callback(props, closure_3));
   obj.accessibilityRole = "list";
-  obj.ref = importDefault(8011)(self.scrollView);
+  obj.ref = importDefault(8013)(self.scrollView);
   obj.scrollEventThrottle = 16;
   obj.contentOffset = self.state.initialContentOffset;
   ({ handleScroll: obj2.onScroll, handleLayout: obj2.onLayout, handleMomentumScrollEnd: obj2.onMomentumScrollEnd, handleScrollBeginDrag: obj2.onScrollBeginDrag } = self);
@@ -2789,7 +2789,7 @@ prototype4["render"] = function render() {
 };
 FastList.defaultProps = { batchesToRender: 12, contentInset: { top: 0, right: 0, left: 0, bottom: 0 }, disableLegacyGestureHandling: false, disableRecyclingOnFullCompute: false, stickyHeaderFooter: false };
 let closure_29 = { code: "function FastListTsx2(event){const{horizontal,workletMounted,scrollPosValue,onScrollWorklet}=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get())return;workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}}" };
-const animatedComponent = require("module_4036").createAnimatedComponent(FastList);
+const animatedComponent = require("module_4042").createAnimatedComponent(FastList);
 let result = require("noop").fileFinishedImporting("lib/native/FastList.tsx");
 
 export default FastList;

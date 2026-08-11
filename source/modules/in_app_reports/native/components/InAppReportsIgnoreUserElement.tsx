@@ -1,18 +1,18 @@
-// Module ID: 12650
-// Function ID: 12651
+// Module ID: 12654
+// Function ID: 12655
 // Name: IgnoreUserElement
-// Dependencies: [19, 1372, 3938, 676, 21, 589, 4493, 4498, 9243, 12651, 1236, 8495, 2]
+// Dependencies: [19, 1391, 3957, 676, 21, 589, 4493, 4498, 9249, 12655, 1236, 8501, 2]
 // Exports: default
 
-// Module 12650 (IgnoreUserElement)
+// Module 12654 (IgnoreUserElement)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("upsertRelationship").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsIgnoreUserElement.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsIgnoreUserElement.tsx");
 
 export default function IgnoreUserElement(user) {
   let isBlocked;
@@ -22,7 +22,7 @@ export default function IgnoreUserElement(user) {
   const reportId = user.reportId;
   let stateFromStores;
   let obj = user(reportId[5]);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const items1 = [user];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isIgnored: outer1_5.isIgnored(user.id), isBlocked: outer1_5.isBlocked(user.id) }), items1);
   ({ isIgnored, isBlocked } = stateFromStoresObject);

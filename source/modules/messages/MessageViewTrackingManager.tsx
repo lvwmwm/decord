@@ -1,9 +1,9 @@
-// Module ID: 10989
-// Function ID: 10990
+// Module ID: 10994
+// Function ID: 10995
 // Name: getAnalyticsConfig
-// Dependencies: [676, 503, 5748, 1351, 5261, 1386, 698, 2]
+// Dependencies: [676, 503, 5748, 1370, 5261, 1405, 698, 2]
 
-// Module 10989 (getAnalyticsConfig)
+// Module 10994 (getAnalyticsConfig)
 import { AnalyticEvents } from "ME";
 import "initialize";
 
@@ -46,7 +46,7 @@ function getAnalyticsConfig(type) {
     obj5[1] = obj6;
     return obj5;
   } else {
-    obj = require(1351) /* isDiscordFrontendDevelopment */;
+    obj = require(1370) /* isDiscordFrontendDevelopment */;
     return obj.assertNever(type);
   }
 }

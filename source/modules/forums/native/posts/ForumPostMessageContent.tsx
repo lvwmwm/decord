@@ -1,10 +1,10 @@
-// Module ID: 11415
-// Function ID: 11416
+// Module ID: 11418
+// Function ID: 11419
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4303, 11416, 4299, 2]
+// Dependencies: [19, 21, 4303, 11419, 4299, 2]
 // Exports: default
 
-// Module 11415 (ForumPostMessageContent)
+// Module 11418 (ForumPostMessageContent)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -28,8 +28,8 @@ export default function ForumPostMessageContent(senderModifier) {
     num = 2;
   }
   const tmp = callback();
-  ({ content, style, variant } = importDefault(11416)({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
-  const obj = { variant, color: null, lineClamp: null, ellipsizeMode: "tail", style: null, children: null };
+  ({ content, style, variant } = importDefault(11419)({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
+  const obj = { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null };
   let str = "text-muted";
   if (hasUnreads) {
     str = "text-default";
@@ -37,7 +37,7 @@ export default function ForumPostMessageContent(senderModifier) {
   obj[1] = str;
   obj[2] = num;
   const items = [style, tmp.text];
-  obj[4] = items;
-  obj[5] = content;
-  return jsx(require(4299) /* Text */.Text, { variant, color: null, lineClamp: null, ellipsizeMode: "tail", style: null, children: null });
+  obj[5] = items;
+  obj[6] = content;
+  return jsx(require(4299) /* Text */.Text, { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null });
 };

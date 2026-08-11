@@ -1,10 +1,10 @@
-// Module ID: 6732
-// Function ID: 6733
+// Module ID: 6734
+// Function ID: 6735
 // Name: ShopIllocon
-// Dependencies: [21, 5268, 6733, 2]
+// Dependencies: [21, 5268, 6735, 2]
 // Exports: ShopIllocon
 
-// Module 6732 (ShopIllocon)
+// Module 6734 (ShopIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ShopIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const ShopIllocon = function ShopIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6733);
+  obj[0] = importDefault(6735);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

@@ -1,10 +1,10 @@
-// Module ID: 12535
-// Function ID: 12536
+// Module ID: 12539
+// Function ID: 12540
 // Name: MessagePreviewReactions
-// Dependencies: [19, 7055, 8922, 21, 589, 5728, 5748, 8781, 2]
+// Dependencies: [19, 7058, 8928, 21, 589, 5728, 5748, 8787, 2]
 // Exports: default
 
-// Module 12535 (MessagePreviewReactions)
+// Module 12539 (MessagePreviewReactions)
 import "noop";
 import removePendingListFetch from "removePendingListFetch";
 import messages from "messages";
@@ -35,9 +35,9 @@ export default function MessagePreviewReactions(emoji) {
     obj[1] = messageId;
     obj[2] = emoji.emoji;
     obj[3] = stateFromStores;
-    let tmp4Result = tmp4(tmp(8781).MessageReactionsContent, obj);
+    let tmp4Result = tmp4(tmp(8787).MessageReactionsContent, obj);
   } else {
-    tmp4Result = tmp4(tmp(8781).MessageReactionsEmpty, {});
+    tmp4Result = tmp4(tmp(8787).MessageReactionsEmpty, {});
   }
   obj[1] = tmp4Result;
   return jsx(channelId(5728).AnalyticsLocationProvider, { value: messageId(5728)(messageId(5748).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });

@@ -1,10 +1,10 @@
-// Module ID: 10686
-// Function ID: 10687
+// Module ID: 10691
+// Function ID: 10692
 // Name: VideoEmptyState
-// Dependencies: [19, 17, 1372, 676, 21, 4303, 712, 10687, 1297, 1236, 10690, 9169, 589, 4730, 4483, 4367, 4299, 4715, 2]
+// Dependencies: [19, 17, 1391, 676, 21, 4303, 712, 10692, 1297, 1236, 10695, 9175, 589, 4730, 4483, 4367, 4299, 4715, 2]
 // Exports: default
 
-// Module 10686 (VideoEmptyState)
+// Module 10691 (VideoEmptyState)
 import "noop";
 import { View } from "CollapsingText";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -44,7 +44,7 @@ export default function VideoEmptyState(style) {
     if (!removeSplashImage) {
       obj = { style: null };
       obj[0] = tmp2.placeholderImage;
-      tmp16 = callback(stream(10687).StreamEnded, obj);
+      tmp16 = callback(stream(10692).StreamEnded, obj);
     }
     obj = { children: null };
     const items = [tmp16, ];
@@ -62,7 +62,7 @@ export default function VideoEmptyState(style) {
     if (!removeSplashImage) {
       obj = { style: null };
       obj[0] = tmp2.placeholderImage;
-      tmp7 = callback(stream(10690).StreamFailed, obj);
+      tmp7 = callback(stream(10695).StreamFailed, obj);
     }
     let obj2 = { children: null };
     const items1 = [tmp7, ];
@@ -79,13 +79,13 @@ export default function VideoEmptyState(style) {
     tmp5Result = null;
   }
   if (null != avError) {
-    let obj7 = stream(9169);
+    let obj7 = stream(9175);
     let errorCode = obj7.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
     if (type === tmp3.STREAM_FAILED) {
-      let obj6 = stream(9169);
-      errorCode = obj6.getErrorInfo(stream(9169).AVError.STREAM_FAILED_TO_START).errorCode;
+      let obj6 = stream(9175);
+      errorCode = obj6.getErrorInfo(stream(9175).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
   let obj8 = stream(589);

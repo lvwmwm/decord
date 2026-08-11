@@ -1,9 +1,9 @@
-// Module ID: 1961
-// Function ID: 1962
+// Module ID: 1980
+// Function ID: 1981
 // Name: comparator
-// Dependencies: [1962, 1375, 3928, 1376, 1218, 1372, 1971, 1891, 3929, 3938, 1903, 676, 1894, 12, 4494, 506, 3934, 589, 709, 2]
+// Dependencies: [1981, 1394, 3947, 1395, 1218, 1391, 1990, 1910, 3948, 3957, 1922, 676, 1913, 12, 4494, 506, 3953, 589, 709, 2]
 
-// Module 1961 (comparator)
+// Module 1980 (comparator)
 import isSubscriptionGated from "isSubscriptionGated";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import { createFavoritesGuildChannelRecord as closure_6 } from "createFavoritesGuildChannelRecord";
@@ -13,7 +13,7 @@ import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { Store } from "initialize";
@@ -52,7 +52,7 @@ function rebuildGuildChannels(guildId) {
   let importDefault;
   const id = obj.id;
   importDefault = id;
-  let obj1 = obj2(1894);
+  let obj1 = obj2(1913);
   obj = {};
   if (obj1.isFavoritesGuildId(id)) {
     favoriteChannels = favoriteChannels.getFavoriteChannels();
@@ -211,7 +211,7 @@ function handleGuildRoleUpdate(guildId) {
 function hasElevatedPermissions(user, context) {
   let obj = importAll(506);
   obj = { user, context, checkElevated: false };
-  return obj.hasAny(importAll(3934).computePermissions(obj), closure_20);
+  return obj.hasAny(importAll(3953).computePermissions(obj), closure_20);
 }
 function handleFavoritesUpdate() {
   rebuildGuildChannels(closure_17);

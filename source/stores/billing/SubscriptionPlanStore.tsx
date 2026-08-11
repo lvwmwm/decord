@@ -1,9 +1,9 @@
-// Module ID: 3952
-// Function ID: 3953
+// Module ID: 3971
+// Function ID: 3972
 // Name: addSubscriptionPlan
-// Dependencies: [3948, 676, 1905, 1970, 589, 11, 709, 2]
+// Dependencies: [3967, 676, 1924, 1989, 589, 11, 709, 2]
 
-// Module 3952 (addSubscriptionPlan)
+// Module 3971 (addSubscriptionPlan)
 import createFromServer from "createFromServer";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
@@ -52,15 +52,15 @@ function addSubscriptionPlanFromServer(subscription_plan) {
   addSubscriptionPlan(createFromServer.createFromServer(subscription_plan));
 }
 function reset() {
-  require(1970) /* areArraysShallowlyEqual */.clearObject(closure_10);
-  const obj = require(1970) /* areArraysShallowlyEqual */;
-  require(1970) /* areArraysShallowlyEqual */.clearObject(closure_11);
+  require(1989) /* areArraysShallowlyEqual */.clearObject(closure_10);
+  const obj = require(1989) /* areArraysShallowlyEqual */;
+  require(1989) /* areArraysShallowlyEqual */.clearObject(closure_11);
   set.clear();
   set1.clear();
-  const obj2 = require(1970) /* areArraysShallowlyEqual */;
-  require(1970) /* areArraysShallowlyEqual */.clearObject(closure_14);
-  const obj3 = require(1970) /* areArraysShallowlyEqual */;
-  require(1970) /* areArraysShallowlyEqual */.clearObject(closure_15);
+  const obj2 = require(1989) /* areArraysShallowlyEqual */;
+  require(1989) /* areArraysShallowlyEqual */.clearObject(closure_14);
+  const obj3 = require(1989) /* areArraysShallowlyEqual */;
+  require(1989) /* areArraysShallowlyEqual */.clearObject(closure_15);
   const items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
   const item = items.forEach((id) => {
     callback(createFromServer.createFromServer({ id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 }));

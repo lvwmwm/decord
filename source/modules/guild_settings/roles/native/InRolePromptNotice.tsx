@@ -1,10 +1,10 @@
-// Module ID: 16717
-// Function ID: 16718
+// Module ID: 16729
+// Function ID: 16730
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1384, 16718, 1297, 9063, 4299, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1403, 16730, 1297, 9069, 4299, 1236, 2]
 // Exports: default
 
-// Module 16717 (InRolePromptNotice)
+// Module 16729 (InRolePromptNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { RoleFlags } from "ME";
@@ -28,18 +28,18 @@ export default function InRolePromptNotice(role) {
   role = role.role;
   let string = createCacheKey();
   let stringResult = dependencyMap;
-  let obj = require(1384) /* hasFlag */;
+  let obj = require(1403) /* hasFlag */;
   if (!obj.hasFlag(role.flags, RoleFlags.IN_PROMPT)) {
     return null;
   } else {
     obj = { style: null, children: null };
     obj[0] = string.promptRow;
-    const tmpResult = tmp(16718);
+    const tmpResult = tmp(16730);
     let Icon = tmp(1297).Icon;
     if (isRolePowerfulResult) {
       obj = { style: null, source: null, color: null };
       obj[0] = string.icon;
-      obj[1] = importDefault(9063);
+      obj[1] = importDefault(9069);
       obj[2] = importDefault(712).unsafe_rawColors.YELLOW_300;
       const items = [tmp6(Icon, obj), ];
       const obj1 = { style: null, variant: "text-sm/medium", children: null };
@@ -55,7 +55,7 @@ export default function InRolePromptNotice(role) {
     } else {
       const obj2 = { style: null, source: null };
       obj2[0] = string.icon;
-      obj2[1] = importDefault(9063);
+      obj2[1] = importDefault(9069);
       const items1 = [tmp6(Icon, obj2), ];
       const obj3 = { style: null, variant: "text-sm/medium", children: null };
       obj3[0] = string.promptText;
@@ -65,6 +65,6 @@ export default function InRolePromptNotice(role) {
       obj[1] = items1;
       tmp4Result = tmp4(tmp5, obj);
     }
-    isRolePowerfulResult = tmp(16718).isRolePowerful(role);
+    isRolePowerfulResult = tmp(16730).isRolePowerful(role);
   }
 };

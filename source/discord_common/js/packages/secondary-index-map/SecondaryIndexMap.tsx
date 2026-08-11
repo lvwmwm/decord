@@ -1,9 +1,9 @@
-// Module ID: 3925
-// Function ID: 3926
+// Module ID: 3944
+// Function ID: 3945
 // Name: version
-// Dependencies: [32, 3926, 2]
+// Dependencies: [32, 3945, 2]
 
-// Module 3925 (version)
+// Module 3944 (version)
 import _slicedToArray from "_slicedToArray";
 
 let closure_3 = [];
@@ -136,7 +136,7 @@ prototype["set"] = function set(arg0, value) {
       }
       ({ valueArray, sortBy } = self);
       if (null != value) {
-        let tmp7 = importDefault(3926)(valueArray, value, sortBy);
+        let tmp7 = importDefault(3945)(valueArray, value, sortBy);
         let tmp8 = tmp7;
         if (valueArray[tmp7] !== value) {
           let tmp9 = tmp7;
@@ -156,7 +156,7 @@ prototype["set"] = function set(arg0, value) {
         valueArray.splice(tmp8, 1);
       }
       if (null != value) {
-        valueArray.splice(importDefault(3926)(valueArray, value, sortBy), 0, value);
+        valueArray.splice(importDefault(3945)(valueArray, value, sortBy), 0, value);
       }
       if (null != value) {
         const item = self.indexBy(value).forEach((arg0) => {

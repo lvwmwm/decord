@@ -1,10 +1,10 @@
-// Module ID: 8514
-// Function ID: 8515
+// Module ID: 8520
+// Function ID: 8521
 // Name: handleOpenEmailVerification
-// Dependencies: [19, 1903, 21, 4303, 712, 8451, 1236, 589, 4846, 4299, 2]
+// Dependencies: [19, 1922, 21, 4303, 712, 8457, 1236, 589, 4846, 4299, 2]
 // Exports: default
 
-// Module 8514 (handleOpenEmailVerification)
+// Module 8520 (handleOpenEmailVerification)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
@@ -14,7 +14,7 @@ let c4;
 let c5;
 const require = arg1;
 function handleOpenEmailVerification() {
-  importDefault(8451).open();
+  importDefault(8457).open();
 }
 function getBannerText(currentUser) {
   if (null == currentUser) {

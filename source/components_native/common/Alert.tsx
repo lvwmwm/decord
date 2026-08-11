@@ -1,7 +1,7 @@
 // Module ID: 4732
 // Function ID: 4733
 // Name: componentDidMount
-// Dependencies: [19, 17, 21, 4303, 712, 1297, 4013, 4733, 4188, 4710, 4299, 1236, 4714, 4846, 4848, 1474, 4849, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1297, 4031, 4733, 4188, 4710, 4299, 1236, 4714, 4846, 4848, 1493, 4849, 2]
 // Exports: getAlertButtonVariant
 
 // Module 4732 (componentDidMount)
@@ -327,7 +327,7 @@ Alert.contextType = require("ManaContext").ThemeContext;
 const obj4 = { borderRadius: require("Themes").radii.sm };
 Alert.defaultProps = { confirmColor: require("Button").ButtonColors.BRAND, autoCloseOnConfirm: true };
 const memoResult = importAllResult.memo((arg0) => {
-  const size = importDefault(1474)();
+  const size = importDefault(1493)();
   let obj = require(4849) /* getIsScreenLandscape */;
   const isScreenLandscape = obj.useIsScreenLandscape();
   obj = { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape };

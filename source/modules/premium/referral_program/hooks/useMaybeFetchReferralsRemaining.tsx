@@ -1,10 +1,10 @@
-// Module ID: 8163
-// Function ID: 8164
+// Module ID: 8165
+// Function ID: 8166
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1903, 6915, 1905, 589, 8164, 8165, 6860, 1926, 2]
+// Dependencies: [19, 1922, 6918, 1924, 589, 8166, 8167, 6862, 1945, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 8163 (useMaybeFetchReferralsRemaining)
+// Module 8165 (useMaybeFetchReferralsRemaining)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import emitChanges from "emitChanges";
@@ -25,18 +25,18 @@ export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRe
   const stateFromStores = flag(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = flag(589);
   let tmp = flag;
-  const hasDiscountApplied = flag(8164).useHasDiscountApplied();
-  const obj2 = flag(8164);
-  const hasActiveTrial = flag(8165).useHasActiveTrial();
-  const tmp6 = fetched(6860)();
+  const hasDiscountApplied = flag(8166).useHasDiscountApplied();
+  const obj2 = flag(8166);
+  const hasActiveTrial = flag(8167).useHasActiveTrial();
+  const tmp6 = fetched(6862)();
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;
   }
   fetched = true === verified;
   if (fetched) {
-    fetched = tmp(1926).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
-    const tmpResult = tmp(1926);
+    fetched = tmp(1945).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
+    const tmpResult = tmp(1945);
   }
   if (fetched) {
     fetched = tmp6.fetched;

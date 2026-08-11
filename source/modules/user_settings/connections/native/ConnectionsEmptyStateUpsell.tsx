@@ -1,10 +1,10 @@
-// Module ID: 14206
-// Function ID: 14207
+// Module ID: 14214
+// Function ID: 14215
 // Name: EmptyStateCard
-// Dependencies: [19, 17, 676, 21, 4303, 712, 4239, 10492, 14207, 14208, 1416, 4153, 5376, 1297, 4271, 14204, 1988, 4299, 6962, 1609, 4712, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 4239, 10497, 14215, 14216, 1435, 1363, 5376, 1297, 4271, 14212, 2007, 4299, 6965, 1628, 4712, 1236, 2]
 // Exports: default
 
-// Module 14206 (EmptyStateCard)
+// Module 14214 (EmptyStateCard)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import { View } from "Text";
 import { AnalyticsLocations } from "ME";
@@ -75,7 +75,7 @@ let result = require("ME").fileFinishedImporting("modules/user_settings/connecti
 
 export default function ConnectionsEmptyStateUpsell() {
   const tmp = callback3();
-  let obj = emptyStatePlatforms(6962);
+  let obj = emptyStatePlatforms(6965);
   emptyStatePlatforms = obj.useEmptyStatePlatforms();
   const items = [emptyStatePlatforms];
   const memo = React.useMemo(() => emptyStatePlatforms.slice(0, 3), items);
@@ -83,7 +83,7 @@ export default function ConnectionsEmptyStateUpsell() {
   const memo1 = React.useMemo(() => emptyStatePlatforms.slice(3, 5), items1);
   obj = { style: null, children: null };
   const items2 = [tmp.container, ];
-  obj = { paddingBottom: importDefault(1609)().bottom };
+  obj = { paddingBottom: importDefault(1628)().bottom };
   items2[1] = obj;
   obj[0] = items2;
   const obj1 = { style: tmp.content, children: null };

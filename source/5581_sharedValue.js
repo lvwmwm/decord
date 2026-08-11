@@ -1,7 +1,7 @@
 // Module ID: 5581
 // Function ID: 5582
 // Name: sharedValue
-// Dependencies: [19, 21, 5404, 1634, 5400, 5410]
+// Dependencies: [19, 21, 5404, 1653, 5400, 5410]
 // Exports: default
 
 // Module 5581 (sharedValue)

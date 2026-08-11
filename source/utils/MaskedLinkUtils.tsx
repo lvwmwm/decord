@@ -1,16 +1,16 @@
-// Module ID: 8932
-// Function ID: 8933
+// Module ID: 8938
+// Function ID: 8939
 // Name: isLinkTrusted
-// Dependencies: [8933, 1372, 1891, 8934, 4521, 3938, 1960, 676, 4000, 4642, 1236, 698, 8935, 8936, 8937, 8939, 3992, 12224, 12228, 4739, 12229, 12231, 2]
+// Dependencies: [8939, 1391, 1910, 8940, 4521, 3957, 1979, 676, 4019, 4642, 1236, 698, 8941, 8942, 8943, 8945, 4011, 12227, 12231, 4739, 12232, 12234, 2]
 // Exports: handleClick, isLinkTrusted
 
-// Module 8932 (isLinkTrusted)
+// Module 8938 (isLinkTrusted)
 import isBlockedDomain from "isBlockedDomain";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import set from "set";
 import reinjectEphemerals from "reinjectEphemerals";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import ME from "ME";
 
@@ -62,7 +62,7 @@ export const handleClick = function handleClick(href, preventDefault) {
   let channel_id;
   guild_id = undefined;
   ({ trusted, onClick, onConfirm: c0, onCancel, shouldConfirm, messageId, channelId } = href);
-  let obj = channelId(4000);
+  let obj = channelId(4019);
   const sanitizeUrlResult = obj.sanitizeUrl(href.href);
   if (null == sanitizeUrlResult) {
     if (null != preventDefault) {
@@ -208,26 +208,26 @@ export const handleClick = function handleClick(href, preventDefault) {
         if (hasItem1) {
           tmp3Result = tmp3(698);
           const obj1 = { url_domain: null, guild_id: null, channel_id: null };
-          let obj4 = _require(8935);
+          let obj4 = _require(8941);
           obj1[0] = obj4.getHostname(tmp8);
           obj1[1] = guild1.id;
           obj1[2] = channel.id;
           tmp3Result.track(constants2.URL_CLICKED, obj1);
         }
-        if (tmp3(8936)(channelId)) {
+        if (tmp3(8942)(channelId)) {
           const obj2 = { cta_type: "inline_link", target: null };
           obj2[1] = tmp8;
           tmp3(698).track(constants2.CHANGE_LOG_CTA_CLICKED, obj2);
           const tmp3Result1 = tmp3(698);
         }
       }
-      tmp3(8937).trackLinkClicked(tmp8);
+      tmp3(8943).trackLinkClicked(tmp8);
       if (null == onClick) {
-        const obj3 = { skipExtensionCheck: "a", analyticsLocations: true, messageId: true, channelId: true };
+        const obj3 = { skipExtensionCheck: "a", analyticsLocations: false, messageId: false, channelId: "a" };
         obj3[1] = items;
         obj3[2] = messageId;
         obj3[3] = channelId;
-        const defaultResult = _require(8939).default(tmp8, obj3);
+        const defaultResult = _require(8945).default(tmp8, obj3);
       }
       if (onCancel == null) {
         onCancel = () => {
@@ -238,17 +238,17 @@ export const handleClick = function handleClick(href, preventDefault) {
         if (preventDefault != null) {
           preventDefault.preventDefault();
         }
-        tmp3(12224).show(tmp8);
+        tmp3(12227).show(tmp8);
       } else {
         let trustedResult = trusted;
         if (typeof trusted === "function") {
           trustedResult = trusted();
         }
         if (!trustedResult) {
-          const TRUSTED_URLS = _require(12228).TRUSTED_URLS;
+          const TRUSTED_URLS = _require(12231).TRUSTED_URLS;
           trustedResult = TRUSTED_URLS.has(tmp8);
         }
-        const protocol = _require(8935).getProtocol(tmp8);
+        const protocol = _require(8941).getProtocol(tmp8);
         let tmp55 = "http:" === protocol;
         if (!tmp55) {
           tmp55 = "https:" === protocol;
@@ -277,12 +277,12 @@ export const handleClick = function handleClick(href, preventDefault) {
           if (tmp56) {
             obj4 = { url: null, trustUrl: null, onConfirm: null, onCancel: null, isProtocol: true, contextKey: null };
             obj4[0] = tmp8;
-            obj4[1] = tmp53(12231).trustProtocol;
+            obj4[1] = tmp53(12234).trustProtocol;
             obj4[2] = handleConfirm;
             obj4[3] = onCancel;
             obj4[5] = arg3;
-            tmp3(12229).show(obj4);
-            const tmp3Result4 = tmp3(12229);
+            tmp3(12232).show(obj4);
+            const tmp3Result4 = tmp3(12232);
           } else {
             const punycodeLinkResult = tmp53(4739).punycodeLink(tmp8);
             let displayTarget = tmp8;
@@ -292,12 +292,12 @@ export const handleClick = function handleClick(href, preventDefault) {
             const tmp53Result = tmp53(4739);
             const obj5 = { url: null, trustUrl: null, onConfirm: null, onCancel: null, isProtocol: false, contextKey: null };
             obj5[0] = displayTarget;
-            obj5[1] = tmp53(12231).trustDomain;
+            obj5[1] = tmp53(12234).trustDomain;
             obj5[2] = handleConfirm;
             obj5[3] = onCancel;
             obj5[5] = arg3;
-            tmp3(12229).show(obj5);
-            const tmp3Result5 = tmp3(12229);
+            tmp3(12232).show(obj5);
+            const tmp3Result5 = tmp3(12232);
           }
         }
         if (null == preventDefault) {
@@ -309,12 +309,12 @@ export const handleClick = function handleClick(href, preventDefault) {
           obj6[2] = tmp14;
           obj6[3] = tmp12;
           obj6[4] = tmp11;
-          let result = tmp3(8937).trackAnnouncementMessageLinkClicked(obj6);
-          const tmp3Result6 = tmp3(8937);
+          let result = tmp3(8943).trackAnnouncementMessageLinkClicked(obj6);
+          const tmp3Result6 = tmp3(8943);
         }
-        const obj10 = _require(8935);
+        const obj10 = _require(8941);
       }
-      const tmp3Result2 = tmp3(8937);
+      const tmp3Result2 = tmp3(8943);
     } catch (err) {
       const _encodeURI = encodeURI;
       const encodeURIResult = encodeURI(tmp2);

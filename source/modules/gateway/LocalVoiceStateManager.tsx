@@ -1,9 +1,9 @@
-// Module ID: 12945
-// Function ID: 12946
+// Module ID: 12949
+// Function ID: 12950
 // Name: guildId
-// Dependencies: [4323, 4322, 1372, 4351, 4396, 676, 12943, 3974, 1384, 4361, 2]
+// Dependencies: [4323, 4322, 1391, 4351, 4396, 676, 12947, 3993, 1403, 4361, 2]
 
-// Module 12945 (guildId)
+// Module 12949 (guildId)
 import initialize from "initialize";
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -39,11 +39,11 @@ Object.defineProperty(prototype, "channelId", {
   set: undefined
 });
 prototype["computeVoiceFlags"] = function computeVoiceFlags() {
-  const ClipsAllowVoiceRecording = require(3974) /* explicitContentFromProto */.ClipsAllowVoiceRecording;
+  const ClipsAllowVoiceRecording = require(3993) /* explicitContentFromProto */.ClipsAllowVoiceRecording;
   const setting = ClipsAllowVoiceRecording.getSetting();
-  const obj = require(1384) /* hasFlag */;
+  const obj = require(1403) /* hasFlag */;
   const tmp4 = constants3;
-  const setFlagResult = require(1384) /* hasFlag */.setFlag(0, constants3.ALLOW_VOICE_RECORDING, setting);
+  const setFlagResult = require(1403) /* hasFlag */.setFlag(0, constants3.ALLOW_VOICE_RECORDING, setting);
   let isClipsEnabledResult = require(4361) /* isClipsEnabled */.isClipsEnabled();
   if (isClipsEnabledResult) {
     currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
@@ -73,7 +73,7 @@ prototype["computeVoiceFlags"] = function computeVoiceFlags() {
     }
     result = null != windowHandle;
   }
-  tmpResult = tmp(1384);
+  tmpResult = tmp(1403);
   if (!isClipsEnabledResult) {
     isClipsEnabledResult = result;
   }

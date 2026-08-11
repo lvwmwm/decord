@@ -1,10 +1,10 @@
-// Module ID: 16121
-// Function ID: 16122
+// Module ID: 16138
+// Function ID: 16139
 // Name: FrameWebView
-// Dependencies: [19, 21, 10726, 10978, 10596, 2]
+// Dependencies: [19, 21, 10731, 10983, 10601, 2]
 // Exports: default
 
-// Module 16121 (FrameWebView)
+// Module 16138 (FrameWebView)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

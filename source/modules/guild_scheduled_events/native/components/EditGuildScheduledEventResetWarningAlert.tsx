@@ -1,10 +1,10 @@
-// Module ID: 9035
-// Function ID: 9036
+// Module ID: 9041
+// Function ID: 9042
 // Name: EditGuildScheduledEventResetWarningAlert
 // Dependencies: [19, 21, 4732, 1236, 2]
 // Exports: default
 
-// Module 9035 (EditGuildScheduledEventResetWarningAlert)
+// Module 9041 (EditGuildScheduledEventResetWarningAlert)
 import "noop";
 import { jsx } from "jsxProd";
 

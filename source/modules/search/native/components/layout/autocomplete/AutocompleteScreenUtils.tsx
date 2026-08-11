@@ -1,12 +1,12 @@
-// Module ID: 15805
-// Function ID: 15806
+// Module ID: 15822
+// Function ID: 15823
 // Name: getSearchQueryChannelIds
-// Dependencies: [1971, 3938, 1903, 11711, 8397, 676, 1236, 10242, 4247, 10538, 10012, 9791, 7714, 4815, 7709, 7706, 11224, 10542, 15806, 11712, 4146, 2]
+// Dependencies: [1990, 3957, 1922, 11714, 8403, 676, 1236, 10247, 4247, 10543, 10017, 9796, 7716, 4815, 7711, 7708, 11229, 10547, 15823, 11715, 4148, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 15805 (getSearchQueryChannelIds)
+// Module 15822 (getSearchQueryChannelIds)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import prototype from "prototype";
 import { SearchListItemTypes } from "MessageEmbedTypes";
@@ -34,7 +34,7 @@ export const getSearchQueryUserIds = function getSearchQueryUserIds(items) {
 export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
   const intl = require(1236) /* getSystemLocale */.intl;
   if (intl.string(require(1236) /* getSystemLocale */.t.nrpA5E) === text) {
-    return importDefault(10242);
+    return importDefault(10247);
   } else {
     const intl3 = tmp(1236).intl;
     if (intl3.string(tmp(1236).t.ZNR2fi) === text) {
@@ -42,19 +42,19 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
     } else {
       const intl4 = tmp(1236).intl;
       if (intl4.string(tmp(1236).t["20uQR3"]) === text) {
-        return tmp(10538).EmbedIcon;
+        return tmp(10543).EmbedIcon;
       } else {
         const intl5 = tmp(1236).intl;
         if (intl5.string(tmp(1236).t.L4lxyE) === text) {
-          return tmp(10012).PollsIcon;
+          return tmp(10017).PollsIcon;
         } else {
           const intl6 = tmp(1236).intl;
           if (intl6.string(tmp(1236).t["AV/v6i"]) === text) {
-            return tmp(9791).AttachmentIcon;
+            return tmp(9796).AttachmentIcon;
           } else {
             const intl7 = tmp(1236).intl;
             if (intl7.string(tmp(1236).t.XM9XGP) === text) {
-              return tmp(7714).VideoIcon;
+              return tmp(7716).VideoIcon;
             } else {
               const intl8 = tmp(1236).intl;
               if (intl8.string(tmp(1236).t.TNLcpx) === text) {
@@ -62,11 +62,11 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
               } else {
                 const intl9 = tmp(1236).intl;
                 if (intl9.string(tmp(1236).t.F8Wf0e) === text) {
-                  return tmp(7709).SoundboardIcon;
+                  return tmp(7711).SoundboardIcon;
                 } else {
                   const intl2 = tmp(1236).intl;
                   if (intl2.string(tmp(1236).t.PJgX2h) === text) {
-                    return tmp(7706).StickerIcon;
+                    return tmp(7708).StickerIcon;
                   }
                 }
               }
@@ -80,21 +80,21 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
   const intl = require(1236) /* getSystemLocale */.intl;
   if (intl.string(require(1236) /* getSystemLocale */.t.tPZo4p) === text) {
-    return tmp(11224).UserIcon;
+    return tmp(11229).UserIcon;
   } else {
     const intl3 = tmp(1236).intl;
     if (intl3.string(tmp(1236).t.JL7sRS) === text) {
-      return tmp(10542).RobotIcon;
+      return tmp(10547).RobotIcon;
     } else {
       const intl2 = tmp(1236).intl;
       if (intl2.string(tmp(1236).t.WjkIKU) === text) {
-        return tmp(15806).WebhookIcon;
+        return tmp(15823).WebhookIcon;
       }
     }
   }
 };
 export const toSearchListUserItem = function toSearchListUserItem(items, user, callback2) {
-  let obj = require(11712) /* SearchTokenTypes */;
+  let obj = require(11715) /* SearchTokenTypes */;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(items);
   if (null == user) {
     return null;
@@ -107,8 +107,8 @@ export const toSearchListUserItem = function toSearchListUserItem(items, user, c
       nickname = nick.getNick(guildIdFromSearchContext, user.id);
     }
     if (nickname == null) {
-      nickname = importDefault(4146).getName(user);
-      const obj2 = importDefault(4146);
+      nickname = importDefault(4148).getName(user);
+      const obj2 = importDefault(4148);
     }
     obj = { type: null, props: null };
     obj[0] = SearchListItemTypes.DM;
@@ -138,8 +138,8 @@ export const toSearchListChannelItem = function toSearchListChannelItem(channel,
       obj[1] = user;
       let nickname = store.getNickname(user.id);
       if (nickname == null) {
-        nickname = importDefault(4146).getName(user);
-        const obj6 = importDefault(4146);
+        nickname = importDefault(4148).getName(user);
+        const obj6 = importDefault(4148);
       }
       obj[2] = nickname;
       obj[3] = function onPress() {

@@ -1,9 +1,9 @@
-// Module ID: 11372
-// Function ID: 11373
+// Module ID: 11377
+// Function ID: 11378
 // Name: handleTypingStart
-// Dependencies: [1218, 1372, 7146, 676, 687, 5843, 530, 709, 589, 2]
+// Dependencies: [1218, 1391, 7147, 676, 687, 5843, 530, 709, 589, 2]
 
-// Module 11372 (handleTypingStart)
+// Module 11377 (handleTypingStart)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { SlowmodeType } from "setCooldown";

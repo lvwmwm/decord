@@ -1,16 +1,16 @@
-// Module ID: 13886
-// Function ID: 13887
+// Module ID: 13893
+// Function ID: 13894
 // Name: DevToolsPersistedStoresActionSheet
-// Dependencies: [32, 19, 17, 590, 1218, 21, 4303, 712, 5374, 1936, 4002, 589, 1952, 1481, 5369, 8523, 9629, 9628, 5992, 4271, 4299, 8526, 5764, 5396, 5766, 2]
+// Dependencies: [32, 19, 17, 590, 1218, 21, 4303, 712, 5374, 1955, 4021, 589, 1971, 1500, 5369, 8529, 9634, 9633, 5994, 4271, 4299, 8532, 5764, 5396, 5766, 2]
 // Exports: default
 
-// Module 13886 (DevToolsPersistedStoresActionSheet)
+// Module 13893 (DevToolsPersistedStoresActionSheet)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "ACTION_SHEET_HEIGHT_HALF";
 import { View } from "styles";
 import { PersistedStore } from "getClass";
 import fetchFingerprint from "fetchFingerprint";
-import { jsx } from "module_8526";
+import { jsx } from "module_8532";
 import createCacheKey from "createCacheKey";
 
 let require = arg1;
@@ -56,7 +56,7 @@ let closure_10 = importAllResult.memo(() => jsx(require(5374) /* TableRowInner *
 }));
 let closure_11 = importAllResult.memo(() => {
   let obj = require(589) /* initialize */;
-  const items = [importDefault(1952), fetchFingerprint];
+  const items = [importDefault(1971), fetchFingerprint];
   const stateFromStores = obj.useStateFromStores(items, () => callback(table[12]).database(id.getId()));
   let str = "No active database.";
   if (null != stateFromStores) {
@@ -74,13 +74,13 @@ let closure_11 = importAllResult.memo(() => {
 let closure_12 = importAllResult.memo(() => jsx(require(5374) /* TableRowInner */.TableRow, {
   label: "Disable + Remove Database",
   onPress() {
-    const result = callback(1952).replaceDisableAllDatabases("via UserSettingsDatabaseControls");
-    const obj = callback(1952);
-    callback(4002).open({ key: "disable_database_and_remove", content: "Database has been removed." });
+    const result = callback(1971).replaceDisableAllDatabases("via UserSettingsDatabaseControls");
+    const obj = callback(1971);
+    callback(4021).open({ key: "disable_database_and_remove", content: "Database has been removed." });
   }
 }));
 let closure_13 = importAllResult.memo(() => {
-  let obj = _require(1481);
+  let obj = _require(1500);
   _require = obj.useNavigation();
   obj = {
     label: "View Cache Stats",

@@ -1,7 +1,7 @@
 // Module ID: 5752
 // Function ID: 5753
 // Name: useRoleIcon
-// Dependencies: [19, 1964, 1891, 21, 589, 5753, 5754, 1236, 2]
+// Dependencies: [19, 1983, 1910, 21, 589, 5753, 5754, 1236, 2]
 // Exports: getRoleIcon, useRoleIcon
 
 // Module 5752 (useRoleIcon)

@@ -1,10 +1,10 @@
-// Module ID: 9825
-// Function ID: 9826
+// Module ID: 9830
+// Function ID: 9831
 // Name: NotificationSettingsChannel
-// Dependencies: [19, 17, 4499, 21, 4303, 712, 9826, 1236, 4494, 1480, 5270, 5262, 5257, 589, 7967, 9828, 9829, 9833, 9840, 9846, 4714, 2]
+// Dependencies: [19, 17, 4499, 21, 4303, 712, 9831, 1236, 4494, 1499, 5270, 5262, 5257, 589, 7969, 9833, 9834, 9838, 9845, 9851, 4714, 2]
 // Exports: default
 
-// Module 9825 (NotificationSettingsChannel)
+// Module 9830 (NotificationSettingsChannel)
 import NotificationSettingsChannelPost from "NotificationSettingsChannelPost";
 import { View } from "NotificationSettingsMessageNotification";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -23,12 +23,12 @@ let result = require("updateUserGuildSettingsInternal").fileFinishedImporting("m
 
 export default function NotificationSettingsChannel(channel) {
   const _require = channel;
-  let obj = _require(9826);
+  let obj = _require(9831);
   const channelPresetInheritance = obj.useChannelPresetInheritance(channel.channel);
   const intl = _require(1236).intl;
   const importDefault = intl.string(_require(1236).t.h850Ss);
   const dependencyMap = importDefault(4494)(channel.channel);
-  let obj1 = _require(1480);
+  let obj1 = _require(1499);
   const React = obj1.useNavigation();
   const layoutEffect = React.useLayoutEffect(() => {
     let obj = options;
@@ -48,7 +48,7 @@ export default function NotificationSettingsChannel(channel) {
   });
   const items = [channel.channel];
   const items1 = [channel.channel];
-  const callback = React.useCallback(() => channel(9826).updateChannelToGuildDefault(channel.channel.guild_id, channel.channel.id), items);
+  const callback = React.useCallback(() => channel(9831).updateChannelToGuildDefault(channel.channel.guild_id, channel.channel.id), items);
   const callback1 = React.useCallback(() => {
     const result = callback(5262).updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, { muted: false }, channel(5257).NotificationLabels.Unmuted);
   }, items1);
@@ -62,24 +62,24 @@ export default function NotificationSettingsChannel(channel) {
     obj[0] = { marginBottom: 16 };
     const intl2 = tmp(1236).intl;
     obj[1] = intl2.string(tmp(1236).t["6MCxAy"]);
-    obj[2] = tmp(9828).getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
+    obj[2] = tmp(9833).getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
     obj[3] = callback1;
-    muted = callback(tmp(9828).NotificationSettingsMuteBanner, obj);
-    const tmpResult = tmp(9828);
+    muted = callback(tmp(9833).NotificationSettingsMuteBanner, obj);
+    const tmpResult = tmp(9833);
   }
   const items3 = [muted, , , , , ];
   obj1 = { channel: channel.channel };
-  items3[1] = callback(_require(9829).NotificationSettingsChannelPresets, obj1);
+  items3[1] = callback(_require(9834).NotificationSettingsChannelPresets, obj1);
   obj2 = { style: { marginTop: 24 }, channel: channel.channel };
-  items3[2] = callback(_require(9833).NotificationSettingsChannelMessageNotification, obj2);
-  items3[3] = callback(_require(9840).NotificationSettingsChannelMessageUnread, { style: { marginTop: 24 }, channel: channel.channel });
+  items3[2] = callback(_require(9838).NotificationSettingsChannelMessageNotification, obj2);
+  items3[3] = callback(_require(9845).NotificationSettingsChannelMessageUnread, { style: { marginTop: 24 }, channel: channel.channel });
   channel = channel.channel;
   let isForumLikeChannelResult = channel.isForumLikeChannel();
   if (isForumLikeChannelResult) {
     let obj4 = { style: null, channel: null };
     obj4[0] = { marginTop: 24 };
     obj4[1] = channel.channel;
-    isForumLikeChannelResult = tmp11(tmp(9846).NotificationSettingsChannelPost, obj4);
+    isForumLikeChannelResult = tmp11(tmp(9851).NotificationSettingsChannelPost, obj4);
   }
   items3[4] = isForumLikeChannelResult;
   const inherited = channelPresetInheritance.inherited;
@@ -96,5 +96,5 @@ export default function NotificationSettingsChannel(channel) {
   }
   items3[5] = tmp11Result;
   obj[1] = items3;
-  return closure_7(_require(7967).Form, obj);
+  return closure_7(_require(7969).Form, obj);
 };

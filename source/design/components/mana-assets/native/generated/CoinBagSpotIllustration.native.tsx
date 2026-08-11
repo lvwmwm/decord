@@ -1,10 +1,10 @@
-// Module ID: 6180
-// Function ID: 6181
+// Module ID: 6182
+// Function ID: 6183
 // Name: CoinBagSpotIllustration
-// Dependencies: [21, 5268, 6181, 2]
+// Dependencies: [21, 5268, 6183, 2]
 // Exports: CoinBagSpotIllustration
 
-// Module 6180 (CoinBagSpotIllustration)
+// Module 6182 (CoinBagSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CoinBagSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const CoinBagSpotIllustration = function CoinBagSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6181);
+  obj[0] = importDefault(6183);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

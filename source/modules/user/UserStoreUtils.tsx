@@ -1,10 +1,10 @@
-// Module ID: 1909
-// Function ID: 1910
+// Module ID: 1928
+// Function ID: 1929
 // Name: validatePremiumType
-// Dependencies: [1910, 676, 38, 1384, 2]
+// Dependencies: [1929, 676, 38, 1403, 2]
 // Exports: getEnv, getPremiumTypeFromRawValue, isStaffEnv, isStaffEnvRawData, validatePremiumType
 
-// Module 1909 (validatePremiumType)
+// Module 1928 (validatePremiumType)
 import { Environments } from "Environments";
 import ME from "ME";
 
@@ -74,8 +74,8 @@ export const isStaffEnvRawData = function isStaffEnvRawData(flags) {
     if (tmp9) {
       let tmp10 = null == flags.flags;
       if (!tmp10) {
-        tmp10 = !require(1384) /* hasFlag */.hasFlag(flags.flags, constants.STAFF);
-        const obj = require(1384) /* hasFlag */;
+        tmp10 = !require(1403) /* hasFlag */.hasFlag(flags.flags, constants.STAFF);
+        const obj = require(1403) /* hasFlag */;
       }
       let tmp14 = !tmp10;
       if (tmp10) {

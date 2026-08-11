@@ -1,9 +1,9 @@
-// Module ID: 1375
-// Function ID: 1376
+// Module ID: 1394
+// Function ID: 1395
 // Name: initializeFromUserSettings
-// Dependencies: [1340, 1376, 1410, 676, 1306, 12, 589, 709, 2]
+// Dependencies: [1340, 1395, 1429, 676, 1306, 12, 589, 709, 2]
 
-// Module 1375 (initializeFromUserSettings)
+// Module 1394 (initializeFromUserSettings)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { createChannelRecord } from "createChannelRecord";
 import { FAVORITES_UNCATEGORIZED_PARENT_ID as closure_5 } from "date";

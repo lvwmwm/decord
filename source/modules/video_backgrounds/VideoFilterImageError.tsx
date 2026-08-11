@@ -1,9 +1,9 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9170
+// Function ID: 9171
 // Name: prototype
 // Dependencies: [530, 1236, 2]
 
-// Module 9164 (prototype)
+// Module 9170 (prototype)
 import { V8APIError } from "sendRequest";
 
 let closure_2 = { ASSET_SIZE: "BINARY_TYPE_MAX_SIZE" };

@@ -1,12 +1,12 @@
-// Module ID: 15637
-// Function ID: 15638
+// Module ID: 15654
+// Function ID: 15655
 // Name: jsx
-// Dependencies: [19, 8862, 21, 5781, 4661, 2]
+// Dependencies: [19, 8868, 21, 5781, 4661, 2]
 // Exports: default
 
-// Module 15637 (jsx)
+// Module 15654 (jsx)
 import "noop";
-import module_8862 from "module_8862";
+import module_8868 from "module_8868";
 import { jsx } from "jsxProd";
 import set from "set";
 

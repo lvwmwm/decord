@@ -1,13 +1,13 @@
-// Module ID: 12548
-// Function ID: 12549
+// Module ID: 12552
+// Function ID: 12553
 // Name: GroupDmMemberCount
-// Dependencies: [19, 1372, 4390, 3938, 1903, 676, 21, 1297, 4303, 712, 589, 12545, 4494, 1236, 9638, 12549, 4146, 12551, 2]
+// Dependencies: [19, 1391, 4390, 3957, 1922, 676, 21, 1297, 4303, 712, 589, 12549, 4494, 1236, 9643, 12553, 4148, 12555, 2]
 
-// Module 12548 (GroupDmMemberCount)
+// Module 12552 (GroupDmMemberCount)
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import sortActivity from "sortActivity";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import jsxProd from "jsxProd";
@@ -49,7 +49,7 @@ function GroupDmMemberCount(channel) {
     }, 0);
   });
   const obj = channel(589);
-  return channel(12551).renderMemberCountText(stateFromStores, channel.recipients.length);
+  return channel(12555).renderMemberCountText(stateFromStores, channel.recipients.length);
 }
 let c3 = importAllResult;
 ({ ChannelTypes: metroImportAll, StatusTypes: c9 } = ME);
@@ -112,7 +112,7 @@ const memoResult = importAllResult.memo(function PrivateChannelHeader(channelId)
   }, items3);
   if (null != stateFromStores) {
     let tmp2Result = tmp2(tmp3[12]);
-    let channelName = tmp2Result.computeChannelName(stateFromStores, tmp4, upsertRelationship);
+    let channelName = tmp2Result.computeChannelName(stateFromStores, tmp4, markAllUserIdListsStale);
   } else {
     const intl = tmp2(tmp3[13]).intl;
     channelName = intl.string(tmp2(tmp3[13]).t.ai6Lbr);

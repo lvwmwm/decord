@@ -1,7 +1,7 @@
 // Module ID: 4704
 // Function ID: 4705
 // Name: isBlurDisabled
-// Dependencies: [19, 17, 4705, 21, 500, 4706, 4005, 712, 4709, 2]
+// Dependencies: [19, 17, 4705, 21, 500, 4706, 4024, 712, 4709, 2]
 // Exports: isBlurDisabled
 
 // Module 4704 (isBlurDisabled)
@@ -40,9 +40,9 @@ export default require("noop").forwardRef(function VisualEffectView(blurAmount) 
   }
   const merged = Object.assign(blurAmount, Object.create(null));
   ({ blurAmountOverride, tintColorOverride, blurEffectNameOverride } = callback());
-  let obj = require(4005) /* map */;
+  let obj = require(4024) /* map */;
   const token = obj.useToken(importDefault(712).colors.LEGACY_BLUR_FALLBACK_DEFAULT, blurTheme);
-  let obj1 = require(4005) /* map */;
+  let obj1 = require(4024) /* map */;
   let token1 = obj1.useToken(importDefault(712).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN, blurTheme);
   if ("default" === blurStyle) {
     token1 = token;
@@ -55,9 +55,9 @@ export default require("noop").forwardRef(function VisualEffectView(blurAmount) 
     tmp8 = obj;
   }
   items[2] = tmp8;
-  let tmp3Result = tmp3(4005);
+  let tmp3Result = tmp3(4024);
   const token2 = tmp3Result.useToken(tmp5(712).colors.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT, blurTheme);
-  tmp3Result = tmp3(4005);
+  tmp3Result = tmp3(4024);
   let token3 = tmp3Result.useToken(tmp5(712).colors.LEGACY_ANDROID_BLUR_OVERLAY_ULTRA_THIN, blurTheme);
   if ("default" === blurStyle) {
     token3 = token2;

@@ -1,10 +1,10 @@
-// Module ID: 11472
-// Function ID: 11473
+// Module ID: 11475
+// Function ID: 11476
 // Name: ActivityShelfBadge
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1297, 1935, 4299, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1297, 1954, 4299, 1236, 2]
 // Exports: default
 
-// Module 11472 (ActivityShelfBadge)
+// Module 11475 (ActivityShelfBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -32,7 +32,7 @@ export default function ActivityShelfBadge(arg0) {
   if (replacementStyles == null) {
     replacementStyles = tmp.badge;
   }
-  if (labelType === require(1935) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW) {
+  if (labelType === require(1954) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW) {
     let obj = { style: null, children: null };
     const items = [replacementStyles, , ];
     ({ newBadge: arr[1], elevationShadow: arr[2] } = tmp);
@@ -45,7 +45,7 @@ export default function ActivityShelfBadge(arg0) {
     let tmp6 = <View variant="text-xs/semibold" style={null} color="text-overlay-light">{null}</View>;
   } else {
     tmp6 = null;
-    if (labelType === tmp2(1935).EmbeddedActivityLabelTypes.UPDATED) {
+    if (labelType === tmp2(1954).EmbeddedActivityLabelTypes.UPDATED) {
       obj = { style: null, children: null };
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);

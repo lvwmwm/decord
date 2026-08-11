@@ -1,10 +1,10 @@
-// Module ID: 13957
-// Function ID: 13958
+// Module ID: 13965
+// Function ID: 13966
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8262, 7080, 1891, 5155, 1903, 676, 589, 11271, 4188, 709, 10138, 13958, 10133, 8511, 13915, 8268, 4202, 1236, 2]
+// Dependencies: [109, 5, 19, 8266, 7083, 1910, 5155, 1922, 676, 589, 11276, 4188, 709, 10143, 13966, 10138, 8517, 13923, 8273, 4202, 1236, 2]
 // Exports: default
 
-// Module 13957 (useGuildProfileEditForm)
+// Module 13965 (useGuildProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
@@ -68,7 +68,7 @@ export default function useGuildProfileEditForm() {
   const merged1 = Object.assign(stateFromStoresObject.errors);
   const memo = pendingThemeColors.useMemo(() => {
     const delayedCall = new stateFromStores(pendingNickname[11]).DelayedCall(200, () => {
-      callback2(709).wait(callback(10138).resetAllPending);
+      callback2(709).wait(callback(10143).resetAllPending);
     });
     return delayedCall;
   }, []);

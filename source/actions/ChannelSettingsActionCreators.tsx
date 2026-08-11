@@ -1,10 +1,10 @@
-// Module ID: 8016
-// Function ID: 8017
+// Module ID: 8018
+// Function ID: 8019
 // Name: init
-// Dependencies: [5, 8017, 1372, 676, 709, 4159, 7224, 530, 5938, 2]
+// Dependencies: [5, 8019, 1391, 676, 709, 4159, 7225, 530, 5940, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8016 (init)
+// Module 8018 (init)
 import getRootNavigationRef from "getRootNavigationRef";
 import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare";
 import ensureGuildLoaded from "ensureGuildLoaded";

@@ -1,10 +1,10 @@
-// Module ID: 1474
-// Function ID: 1475
+// Module ID: 1493
+// Function ID: 1494
 // Name: useWindowDimensions
-// Dependencies: [19, 1475, 1477, 2]
+// Dependencies: [19, 1494, 1496, 2]
 // Exports: default, getWindowDimensions
 
-// Module 1474 (useWindowDimensions)
+// Module 1493 (useWindowDimensions)
 import noop from "noop";
 import getDimensionsStoreStateForEntry from "getDimensionsStoreStateForEntry";
 

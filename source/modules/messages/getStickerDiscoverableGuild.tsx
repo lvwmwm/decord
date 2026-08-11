@@ -1,10 +1,10 @@
-// Module ID: 9976
-// Function ID: 9977
+// Module ID: 9981
+// Function ID: 9982
 // Name: getStickerDiscoverableGuild
-// Dependencies: [676, 530, 5956, 2]
+// Dependencies: [676, 530, 5958, 2]
 // Exports: default
 
-// Module 9976 (getStickerDiscoverableGuild)
+// Module 9981 (getStickerDiscoverableGuild)
 import { Endpoints } from "ME";
 
 const result = require("_startLurking").fileFinishedImporting("modules/messages/getStickerDiscoverableGuild.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 5425
 // Function ID: 5426
 // Name: useScrollHandler
-// Dependencies: [5426, 1634, 5416]
+// Dependencies: [5426, 1653, 5416]
 
 // Module 5425 (useScrollHandler)
 const require = arg1;
@@ -20,9 +20,9 @@ arg5.useScrollHandler = (arg0, onScroll, onScrollBeginDrag, onScrollEndDrag) => 
   let workletNoop;
   let workletNoop2;
   let workletNoop3;
-  let obj = _require(1634);
+  let obj = _require(1653);
   const animatedRef = obj.useAnimatedRef();
-  let obj1 = _require(1634);
+  let obj1 = _require(1653);
   const sharedValue = obj1.useSharedValue(0);
   const scrollEventsHandlersDefault = useScrollEventsHandlersDefault(animatedRef, sharedValue, arg4);
   workletNoop = scrollEventsHandlersDefault.handleOnScroll;
@@ -56,7 +56,7 @@ arg5.useScrollHandler = (arg0, onScroll, onScrollBeginDrag, onScrollEndDrag) => 
       obj.runOnJS(tmp2)(obj);
     }
   };
-  obj1 = { handleOnScroll: workletNoop, onScroll, runOnJS: tmp3(1634).runOnJS };
+  obj1 = { handleOnScroll: workletNoop, onScroll, runOnJS: tmp3(1653).runOnJS };
   fn.__closure = obj1;
   fn.__workletHash = 13105350120634;
   fn.__initData = closure_2;
@@ -70,8 +70,8 @@ arg5.useScrollHandler = (arg0, onScroll, onScrollBeginDrag, onScrollEndDrag) => 
       obj.runOnJS(tmp2)(obj);
     }
   };
-  const tmp3Result = _require(1634);
-  fn2.__closure = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: _require(1634).runOnJS };
+  const tmp3Result = _require(1653);
+  fn2.__closure = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: _require(1653).runOnJS };
   fn2.__workletHash = 803385440782;
   fn2.__initData = workletNoop;
   obj[1] = fn2;
@@ -89,8 +89,8 @@ arg5.useScrollHandler = (arg0, onScroll, onScrollBeginDrag, onScrollEndDrag) => 
       return;
     }
   }
-  const obj2 = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: _require(1634).runOnJS };
-  O.__closure = { handleOnEndDrag: workletNoop3, onScrollEndDrag, runOnJS: _require(1634).runOnJS };
+  const obj2 = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: _require(1653).runOnJS };
+  O.__closure = { handleOnEndDrag: workletNoop3, onScrollEndDrag, runOnJS: _require(1653).runOnJS };
   O.__workletHash = 3274737678599;
   O.__initData = workletNoop2;
   obj[2] = O;

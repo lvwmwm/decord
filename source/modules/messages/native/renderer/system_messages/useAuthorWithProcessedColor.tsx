@@ -1,10 +1,10 @@
-// Module ID: 8069
-// Function ID: 8070
+// Module ID: 8071
+// Function ID: 8072
 // Name: getMessageAuthorWithProcessedColor
-// Dependencies: [17, 4532, 8070, 2]
+// Dependencies: [17, 4532, 8072, 2]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
-// Module 8069 (getMessageAuthorWithProcessedColor)
+// Module 8071 (getMessageAuthorWithProcessedColor)
 import { processColor } from "get ActivityIndicator";
 
 const result = require("processColorStrings").fileFinishedImporting("modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx");
@@ -22,7 +22,7 @@ export const getMessageAuthorWithProcessedColor = function getMessageAuthorWithP
     tmp4 = processColor(colorString);
   }
   obj[1] = tmp4;
-  obj[2] = require(8070) /* processColorStrings */.processColorStrings(colorStrings);
+  obj[2] = require(8072) /* processColorStrings */.processColorStrings(colorStrings);
   obj[3] = guildId;
   return obj;
 };
@@ -39,7 +39,7 @@ export const getUserAuthorWithProcessedColor = function getUserAuthorWithProcess
     tmp4 = processColor(colorString);
   }
   obj[1] = tmp4;
-  obj[2] = require(8070) /* processColorStrings */.processColorStrings(colorStrings);
+  obj[2] = require(8072) /* processColorStrings */.processColorStrings(colorStrings);
   obj[3] = guildId;
   return obj;
 };

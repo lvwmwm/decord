@@ -1,10 +1,10 @@
-// Module ID: 10190
-// Function ID: 10191
+// Module ID: 10195
+// Function ID: 10196
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 5924, 21, 4303, 1236, 5893, 5764, 5396, 10191, 4714, 8406, 4271, 2]
+// Dependencies: [32, 19, 17, 5924, 21, 4303, 1236, 5893, 5764, 5396, 10196, 4714, 8412, 4271, 2]
 // Exports: default
 
-// Module 10190 (ForumPostTagsActionSheet)
+// Module 10195 (ForumPostTagsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

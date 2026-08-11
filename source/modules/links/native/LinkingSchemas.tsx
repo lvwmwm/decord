@@ -1,9 +1,9 @@
-// Module ID: 3997
-// Function ID: 3998
+// Module ID: 4016
+// Function ID: 4017
 // Name: LINKING_SCHEMAS
 // Dependencies: [2]
 
-// Module 3997 (LINKING_SCHEMAS)
+// Module 4016 (LINKING_SCHEMAS)
 obj = { bestbuy: obj };
 obj = { regex: /(?:^https?:\/\/)(?:www\.)?bestbuy\.com(?:\/(.*))?$/i, protocol: "bestbuy://" };
 const values = Object.values(obj);

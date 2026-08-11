@@ -1,7 +1,7 @@
 // Module ID: 5808
 // Function ID: 5809
 // Name: StyleSheet
-// Dependencies: [32, 19, 17, 21, 5802, 5803, 1502, 5809, 5788, 5286, 5810, 5811, 5812, 5813]
+// Dependencies: [32, 19, 17, 21, 5802, 5803, 1521, 5809, 5788, 5286, 5810, 5811, 5812, 5813]
 // Exports: Card
 
 // Module 5808 (StyleSheet)
@@ -146,7 +146,7 @@ export const Card = function Card(shadowEnabled) {
     const value = new closing.Value(0);
     return value;
   }), 1)[0];
-  closure_32 = num(1502)(() => {
+  closure_32 = num(1521)(() => {
     if (null == ref3.current) {
       const InteractionManager = flag2(outer1_2[7]).InteractionManager;
       let interactionHandle;
@@ -156,7 +156,7 @@ export const Card = function Card(shadowEnabled) {
       tmp.current = interactionHandle;
     }
   });
-  closure_33 = num(1502)(() => {
+  closure_33 = num(1521)(() => {
     if (null != ref3.current) {
       const InteractionManager = flag2(outer1_2[7]).InteractionManager;
       if (InteractionManager != null) {
@@ -165,7 +165,7 @@ export const Card = function Card(shadowEnabled) {
       tmp.current = undefined;
     }
   });
-  let tmp7 = num(1502)((closing) => {
+  let tmp7 = num(1521)((closing) => {
     closing = closing.closing;
     const velocity = closing.velocity;
     let onFinish;
@@ -266,7 +266,7 @@ export const Card = function Card(shadowEnabled) {
     clearTimeout(ref3.current);
   }, []);
   closure_36 = opening.useRef(undefined);
-  const tmp11 = num(1502)(() => {
+  const tmp11 = num(1521)(() => {
     clearTimeout(ref5.current);
     clearTimeout(ref6.current);
     if (ref.current) {
@@ -419,7 +419,7 @@ export const Card = function Card(shadowEnabled) {
   const obj4 = {
     enabled: tmp23,
     onGestureEvent: memo2,
-    onHandlerStateChange: num(1502)((nativeEvent) => {
+    onHandlerStateChange: num(1521)((nativeEvent) => {
       let translationY;
       let velocityY;
       nativeEvent = nativeEvent.nativeEvent;
@@ -493,7 +493,7 @@ export const Card = function Card(shadowEnabled) {
     })
   };
   tmp5 = num;
-  let tmp8 = num(1502)((nativeEvent) => {
+  let tmp8 = num(1521)((nativeEvent) => {
     let translationY;
     let velocityY;
     nativeEvent = nativeEvent.nativeEvent;

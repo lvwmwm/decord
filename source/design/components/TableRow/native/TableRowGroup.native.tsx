@@ -1,7 +1,7 @@
 // Module ID: 5767
 // Function ID: 5768
 // Name: TableRowGroupTitle
-// Dependencies: [19, 17, 21, 4303, 712, 1348, 4299, 4005, 5332, 5375, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1367, 4299, 4024, 5332, 5375, 2]
 // Exports: TableRowGroup
 
 // Module 5767 (TableRowGroupTitle)
@@ -68,7 +68,7 @@ export const TableRowGroup = function TableRowGroup(accessibilityLabel) {
   }
   let importDefault;
   const tmp = createCacheKey();
-  let obj = require(4005) /* map */;
+  let obj = require(4024) /* map */;
   importDefault = false;
   const Children = React.Children;
   const token = obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_GROUP_HELPER_TEXT_STYLE);

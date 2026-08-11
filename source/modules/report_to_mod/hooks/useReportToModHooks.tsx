@@ -1,10 +1,10 @@
-// Module ID: 11128
-// Function ID: 11129
+// Module ID: 11133
+// Function ID: 11134
 // Name: useIsReportToModEnabled
-// Dependencies: [19, 1891, 4521, 589, 5886, 5907, 5894, 6917, 8309, 2]
+// Dependencies: [19, 1910, 4521, 589, 5886, 5907, 5894, 6920, 8314, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 11128 (useIsReportToModEnabled)
+// Module 11133 (useIsReportToModEnabled)
 import { useEffect } from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -94,7 +94,7 @@ export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSna
     }
   }
   if (null != reported_user_id) {
-    const user = require(8309) /* _fetchProfile */.getUser(reported_user_id);
-    const obj = require(8309) /* _fetchProfile */;
+    const user = require(8314) /* _fetchProfile */.getUser(reported_user_id);
+    const obj = require(8314) /* _fetchProfile */;
   }
 };

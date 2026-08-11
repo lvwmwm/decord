@@ -1,12 +1,12 @@
-// Module ID: 16373
-// Function ID: 16374
+// Module ID: 16389
+// Function ID: 16390
 // Name: DEFAULT_EXPIRATION_DAYS
-// Dependencies: [1372, 3938, 7758, 4002, 1236, 9878, 709, 9551, 2]
+// Dependencies: [1391, 3957, 7760, 4021, 1236, 9883, 709, 9557, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 16373 (DEFAULT_EXPIRATION_DAYS)
+// Module 16389 (DEFAULT_EXPIRATION_DAYS)
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 
 const require = arg1;
 let result = require("generateAcceptInviteOptions").fileFinishedImporting("modules/friend_invites/native/FriendInviteUtils.tsx");
@@ -14,13 +14,13 @@ let result = require("generateAcceptInviteOptions").fileFinishedImporting("modul
 export const DEFAULT_EXPIRATION_DAYS = 7;
 export const DEFAULT_EXPIRATION_USES = 5;
 export const revokeAllFriendInvites = function revokeAllFriendInvites() {
-  let obj = importDefault(7758);
-  importDefault(7758).revokeFriendInvites().then(() => {
-    let obj = callback2(4002);
+  let obj = importDefault(7760);
+  importDefault(7760).revokeFriendInvites().then(() => {
+    let obj = callback2(4021);
     obj = { key: "TOAST_FRIEND_INVITES_REVOKED", content: null, icon: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.jSHEOQ);
-    obj[2] = callback2(9878);
+    obj[2] = callback2(9883);
     obj.open(obj);
   });
 };
@@ -32,12 +32,12 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, arg1) {
       dMFromUserId = dMFromUserId.getDMFromUserId(invite.inviter.id);
     }
     if (null != dMFromUserId) {
-      importDefault(7758).transitionToInvite(invite, { forceTransition: true });
-      const obj3 = importDefault(7758);
+      importDefault(7760).transitionToInvite(invite, { forceTransition: true });
+      const obj3 = importDefault(7760);
       importDefault(709).wait(() => callback(table[7])());
       const obj4 = importDefault(709);
     } else {
-      let obj = importDefault(7758);
+      let obj = importDefault(7760);
       obj = { inviteKey: null, context: null, callback: null };
       obj[0] = invite.code;
       obj[1] = arg1;

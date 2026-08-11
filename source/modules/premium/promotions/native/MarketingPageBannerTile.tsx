@@ -1,10 +1,10 @@
-// Module ID: 7754
-// Function ID: 7755
+// Module ID: 7756
+// Function ID: 7757
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4303, 712, 5728, 7755, 9349, 503, 7647, 12678, 4299, 3998, 9512, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5728, 7757, 9355, 503, 7649, 12682, 4299, 4017, 9518, 2]
 // Exports: default
 
-// Module 7754 (MarketingPageBannerTile)
+// Module 7756 (MarketingPageBannerTile)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,7 +40,7 @@ export default function MarketingPageBannerTile(bannerFields) {
   let helpArticleLinkProps;
   ({ style, cardStyle, componentId, analyticsPage, onPaymentSuccess, onPaymentDismiss } = bannerFields);
   const tmp = createCacheKey();
-  let obj = helpArticleLinkProps(7755);
+  let obj = helpArticleLinkProps(7757);
   const button = bannerFields.button;
   let buttonAction;
   if (button != null) {
@@ -63,12 +63,12 @@ export default function MarketingPageBannerTile(bannerFields) {
   const buttonActionHandler = obj.getButtonActionHandler(obj);
   obj[0] = helpArticleLinkProps(503).ImpressionTypes.VIEW;
   obj[1] = helpArticleLinkProps(503).ImpressionNames.PREMIUM_MARKETING_COMPONENT;
-  const tmp2Result = importDefault(9349);
-  obj[2] = { component_type: helpArticleLinkProps(7647).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId };
+  const tmp2Result = importDefault(9355);
+  obj[2] = { component_type: helpArticleLinkProps(7649).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId };
   tmp2Result(obj);
-  let tmp4Result = tmp4(12678);
+  let tmp4Result = tmp4(12682);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  tmp4Result = tmp4(12678);
+  tmp4Result = tmp4(12682);
   helpArticleLinkProps = tmp4Result.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj2 = { style: items, children: null };
   items = [tmp.container, style];
@@ -105,7 +105,7 @@ export default function MarketingPageBannerTile(bannerFields) {
     const obj10 = { text: null, onPress: null };
     obj10[0] = bannerFields.button.copy;
     obj10[1] = buttonActionHandler;
-    obj9[1] = tmp12(tmp2(9512), obj10);
+    obj9[1] = tmp12(tmp2(9518), obj10);
     tmp12Result1 = tmp12(tmp13, obj9);
   }
   items2[3] = tmp12Result1;

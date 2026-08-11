@@ -1,10 +1,10 @@
-// Module ID: 9794
-// Function ID: 9795
+// Module ID: 9799
+// Function ID: 9800
 // Name: defaultReactFn
-// Dependencies: [19, 9795, 21, 4298, 9553, 9796, 5777, 4734, 4736, 9801, 5268, 501, 9802, 9803, 1297, 4039, 9791, 4783, 9804, 2]
+// Dependencies: [19, 9800, 21, 4298, 8198, 9801, 5777, 4734, 4736, 9806, 5268, 501, 9807, 9808, 1297, 4045, 9796, 4783, 9809, 2]
 // Exports: default
 
-// Module 9794 (defaultReactFn)
+// Module 9799 (defaultReactFn)
 import "set";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import jsxProd from "jsxProd";
@@ -16,8 +16,8 @@ function defaultReactFn(content, output, state) {
   if (typeof content.content === "string") {
     content = content.content;
   } else {
-    content = require(9553) /* smartOutput */.smartOutput(content, output, state);
-    const obj = require(9553) /* smartOutput */;
+    content = require(8198) /* smartOutput */.smartOutput(content, output, state);
+    const obj = require(8198) /* smartOutput */;
   }
   return content;
 }
@@ -235,7 +235,7 @@ const regExp = new RegExp(require("regExp").ANSI_CONTROL_SEQUENCE_RE, "g");
 const result = require("jsxProd").fileFinishedImporting("modules/markup/native/MarkupMessagePreviewReactRules.tsx");
 
 export default function createChannelListMessagePreviewReactRules(layout, iconColor) {
-  let obj = require(9796) /* getLayoutStyles */;
+  let obj = require(9801) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
   let bound = arg2;
   if (null != arg3) {

@@ -1,12 +1,12 @@
-// Module ID: 9790
-// Function ID: 9791
+// Module ID: 9795
+// Function ID: 9796
 // Name: PreviewIcon
-// Dependencies: [19, 17, 3938, 21, 4815, 7714, 9649, 9791, 4247, 7706, 8398, 8400, 4720, 9793, 1348, 9767, 9796, 9452, 4299, 4239, 4303, 712, 4005, 3974, 8041, 8589, 8230, 8045, 589, 2]
+// Dependencies: [19, 17, 3957, 21, 4815, 7716, 9654, 9796, 4247, 7708, 8404, 8406, 4720, 9798, 1367, 9772, 9801, 9458, 4299, 4239, 4303, 712, 4024, 3993, 8043, 8595, 8234, 8047, 589, 2]
 
-// Module 9790 (PreviewIcon)
+// Module 9795 (PreviewIcon)
 import importAllResult from "useTheme";
 import { View } from "map";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import jsxProd from "Themes";
 
 let closure_6;
@@ -22,15 +22,15 @@ function PreviewIcon(icon) {
   } else if ("video" === icon) {
     obj = {};
     const merged2 = Object.assign(merged);
-    return callback(require(7714) /* VideoIcon */.VideoIcon, obj);
+    return callback(require(7716) /* VideoIcon */.VideoIcon, obj);
   } else if ("audio" === icon) {
     const obj1 = {};
     const merged3 = Object.assign(merged);
-    return callback(require(9649) /* MusicIcon */.MusicIcon, obj1);
+    return callback(require(9654) /* MusicIcon */.MusicIcon, obj1);
   } else if ("attachment" === icon) {
     const obj2 = {};
     const merged4 = Object.assign(merged);
-    return callback(require(9791) /* AttachmentIcon */.AttachmentIcon, obj2);
+    return callback(require(9796) /* AttachmentIcon */.AttachmentIcon, obj2);
   } else if ("link" === icon) {
     const obj3 = {};
     const merged5 = Object.assign(merged);
@@ -38,15 +38,15 @@ function PreviewIcon(icon) {
   } else if ("sticker" === icon) {
     const obj4 = {};
     const merged6 = Object.assign(merged);
-    return callback(require(7706) /* StickerIcon */.StickerIcon, obj4);
+    return callback(require(7708) /* StickerIcon */.StickerIcon, obj4);
   } else if ("call-active" === icon) {
     const obj5 = {};
     const merged7 = Object.assign(merged);
-    return callback(require(8398) /* PhoneCallIcon */.PhoneCallIcon, obj5);
+    return callback(require(8404) /* PhoneCallIcon */.PhoneCallIcon, obj5);
   } else if ("call-ended" === icon) {
     obj = {};
     const merged8 = Object.assign(merged);
-    return callback(require(8400) /* PhoneHangUpIcon */.PhoneHangUpIcon, obj);
+    return callback(require(8406) /* PhoneHangUpIcon */.PhoneHangUpIcon, obj);
   }
 }
 class ChannelRowPreview {
@@ -81,7 +81,7 @@ class ChannelRowPreview {
         str2 = "markup";
         if ("markup" === type) {
           tmp9 = jsx;
-          tmp10 = f47494;
+          tmp10 = f47531;
           if ("markup" === formattedMessagePreview.type) {
             content = formattedMessagePreview.markup;
           } else {
@@ -236,12 +236,12 @@ let closure_9 = importAllResult.memo((arg0) => {
   ({ markup, channelId, guildId, muted, layout, color } = arg0);
   const fontScale = require(4720) /* getFontScale */.useFontScale();
   const obj = require(4720) /* getFontScale */;
-  return require(9793) /* getOrParseMessagePreviewMarkupAST */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
+  return require(9798) /* getOrParseMessagePreviewMarkupAST */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
 });
 const memoResult = importAllResult.memo((message) => {
   const _require = message;
   let obj = _require(589);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const items1 = [message.message.author.id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.isBlockedOrIgnored(message.message.author.id), items1);
   if (obj2.isMessageContentPreviewable(message.message)) {
@@ -256,7 +256,7 @@ const memoResult = importAllResult.memo((message) => {
   const merged1 = Object.assign(message);
   tmp7 = callback(ChannelRowPreview, obj);
 });
-const result = require("upsertRelationship").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/ChannelRowPreview.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/ChannelRowPreview.tsx");
 
 export { ChannelRowPreview };
 export { NativeChannelRowPreview };

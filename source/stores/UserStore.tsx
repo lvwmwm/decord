@@ -1,9 +1,9 @@
-// Module ID: 1903
-// Function ID: 1904
+// Module ID: 1922
+// Function ID: 1923
 // Name: mergeGuildAvatar
-// Dependencies: [1904, 1911, 1218, 1220, 676, 1905, 1913, 1909, 1880, 1881, 1914, 1918, 1924, 1384, 12, 1934, 1935, 1351, 2]
+// Dependencies: [1923, 1930, 1218, 1220, 676, 1924, 1932, 1928, 1899, 1900, 1933, 1937, 1943, 1403, 12, 1953, 1954, 1370, 2]
 
-// Module 1903 (mergeGuildAvatar)
+// Module 1922 (mergeGuildAvatar)
 import setPremiumTypeActual from "setPremiumTypeActual";
 import createdAt from "createdAt";
 import fetchFingerprint from "fetchFingerprint";
@@ -34,17 +34,17 @@ function mergeGuildAvatar(id, guildId, avatar) {
 function mergeUserPrimaryGuild(id, primary_guild) {
   let tmp3 = null != tmp2;
   if (tmp3) {
-    const obj = require(1913) /* isUserPrimaryGuildEqual */;
+    const obj = require(1932) /* isUserPrimaryGuildEqual */;
     const result = obj.isUserPrimaryGuildEqual(tmp2.primaryGuild, primary_guild.primary_guild);
     let tmp8 = !result;
     if (!result) {
       let flag = null == tmp2.primaryGuild || null != primary_guild.primary_guild;
       if (flag) {
-        tmp2.primaryGuild = tmp5(1913).ensureUserPrimaryGuild(primary_guild.primary_guild);
+        tmp2.primaryGuild = tmp5(1932).ensureUserPrimaryGuild(primary_guild.primary_guild);
         tmp[tmp2.id] = tmp2;
         closure_12 = closure_12 + 1;
         flag = true;
-        const tmp5Result = tmp5(1913);
+        const tmp5Result = tmp5(1932);
       }
       tmp8 = flag;
     }
@@ -59,7 +59,7 @@ function transformUser(mfa_enabled) {
     mfa_enabled.mfaEnabled = mfa_enabled;
     delete tmp[tmp2];
   }
-  const premiumTypeFromRawValue = require(1909) /* validatePremiumType */.getPremiumTypeFromRawValue(mfa_enabled.premium_type);
+  const premiumTypeFromRawValue = require(1928) /* validatePremiumType */.getPremiumTypeFromRawValue(mfa_enabled.premium_type);
   if (undefined !== premiumTypeFromRawValue) {
     mfa_enabled.premiumType = premiumTypeFromRawValue;
     delete tmp[tmp3];
@@ -94,14 +94,14 @@ function transformUser(mfa_enabled) {
   }
   const avatar_decoration_data = mfa_enabled.avatar_decoration_data;
   if (undefined !== avatar_decoration_data) {
-    let tmp4Result = tmp4(1880);
+    let tmp4Result = tmp4(1899);
     mfa_enabled.avatarDecorationData = tmp4Result.parseAvatarDecorationData(avatar_decoration_data);
     delete tmp[tmp3];
   }
   const collectibles = mfa_enabled.collectibles;
   if (undefined !== collectibles) {
     delete tmp[tmp3];
-    tmp4Result = tmp4(1881);
+    tmp4Result = tmp4(1900);
     mfa_enabled.collectibles = tmp4Result.parseServerUserCollectibles(collectibles);
   }
   const global_name = mfa_enabled.global_name;
@@ -111,24 +111,24 @@ function transformUser(mfa_enabled) {
   }
   const primary_guild = mfa_enabled.primary_guild;
   if (undefined !== primary_guild) {
-    mfa_enabled.primary_guild = tmp4(1913).ensureUserPrimaryGuild(primary_guild);
-    const tmp4Result1 = tmp4(1913);
+    mfa_enabled.primary_guild = tmp4(1932).ensureUserPrimaryGuild(primary_guild);
+    const tmp4Result1 = tmp4(1932);
   }
   const display_name_styles = mfa_enabled.display_name_styles;
   if (undefined !== display_name_styles) {
-    mfa_enabled.displayNameStyles = tmp4(1914).parseServerDisplayNameStyles(display_name_styles);
+    mfa_enabled.displayNameStyles = tmp4(1933).parseServerDisplayNameStyles(display_name_styles);
     delete tmp[tmp3];
-    const tmp4Result2 = tmp4(1914);
+    const tmp4Result2 = tmp4(1933);
   }
   const premium_state = mfa_enabled.premium_state;
   if (undefined !== premium_state) {
-    mfa_enabled.premiumState = tmp4(1918).parseServerPremiumState(premium_state);
+    mfa_enabled.premiumState = tmp4(1937).parseServerPremiumState(premium_state);
     delete tmp[tmp3];
-    const tmp4Result3 = tmp4(1918);
+    const tmp4Result3 = tmp4(1937);
   }
   const restricted_schedule = mfa_enabled.restricted_schedule;
   if (undefined !== restricted_schedule) {
-    const RestrictedScheduleRecord = tmp4(1924).RestrictedScheduleRecord;
+    const RestrictedScheduleRecord = tmp4(1943).RestrictedScheduleRecord;
     let fromServerResult = RestrictedScheduleRecord.fromServer(restricted_schedule);
     if (fromServerResult == null) {
       fromServerResult = null;
@@ -170,7 +170,7 @@ function mergeUser(user, arg1) {
       tmp26.premiumType = premiumType4;
       mergeResult = tmp26;
       tmp19 = premiumType3;
-      obj6 = require(1909) /* validatePremiumType */;
+      obj6 = require(1928) /* validatePremiumType */;
     }
     tmp28 = undefined !== premiumType3 && tmp2;
   } else {
@@ -183,8 +183,8 @@ function mergeUser(user, arg1) {
       }
       let isStaffEnvRawDataResult = undefined !== premiumType && tmp2;
       if (isStaffEnvRawDataResult) {
-        isStaffEnvRawDataResult = require(1909) /* validatePremiumType */.isStaffEnvRawData(user);
-        const obj2 = require(1909) /* validatePremiumType */;
+        isStaffEnvRawDataResult = require(1928) /* validatePremiumType */.isStaffEnvRawData(user);
+        const obj2 = require(1928) /* validatePremiumType */;
       }
       if (isStaffEnvRawDataResult) {
         let premiumType2 = user.premium_type;
@@ -203,15 +203,15 @@ function mergeUser(user, arg1) {
         } else if (undefined !== user.premium_type) {
           user.premium_type = premiumType2;
         }
-        obj3 = require(1909) /* validatePremiumType */;
+        obj3 = require(1928) /* validatePremiumType */;
       }
       if (tmp14 !== true) {
         if (tmp15 !== true) {
           if (obj4.isUserPrimaryGuildEqual(obj.primaryGuild, user.primary_guild) !== true) {
-            user.primary_guild = tmp16(1913).ensureUserPrimaryGuild(user.primary_guild);
-            const tmp16Result = tmp16(1913);
+            user.primary_guild = tmp16(1932).ensureUserPrimaryGuild(user.primary_guild);
+            const tmp16Result = tmp16(1932);
           }
-          obj4 = require(1913) /* isUserPrimaryGuildEqual */;
+          obj4 = require(1932) /* isUserPrimaryGuildEqual */;
           tmp16 = require;
         }
         user.primary_guild = obj.primaryGuild;
@@ -222,8 +222,8 @@ function mergeUser(user, arg1) {
       tmp14 = null == obj.primaryGuild && null == user.primary_guild;
     }
   }
-  const obj7 = require(1909) /* validatePremiumType */;
-  obj7.validatePremiumType(require(1909) /* validatePremiumType */.isStaffEnv(mergeResult), tmp19, mergeResult.premiumType);
+  const obj7 = require(1928) /* validatePremiumType */;
+  obj7.validatePremiumType(require(1928) /* validatePremiumType */.isStaffEnv(mergeResult), tmp19, mergeResult.premiumType);
   obj[user.id] = mergeResult;
   if (obj[user.id] !== mergeResult) {
     closure_12 = closure_12 + 1;
@@ -684,15 +684,15 @@ function handleIncomingMessage(message) {
   message = message.message;
   mergeUsersFromMessage(message, true);
   if (null != message.flags) {
-    const obj = importAll(1384);
+    const obj = importAll(1403);
     if (obj.hasFlag(message.flags, constants2.URGENT)) {
       const obj3 = obj[store2.getId(store2)];
       let flag = null != obj3;
       if (flag) {
         const id = store2.getId();
-        obj[id] = obj3.set("flags", tmp2(1384).setFlag(obj3.flags, constants.HAS_UNREAD_URGENT_MESSAGES, true));
+        obj[id] = obj3.set("flags", tmp2(1403).setFlag(obj3.flags, constants.HAS_UNREAD_URGENT_MESSAGES, true));
         flag = true;
-        const tmp2Result = tmp2(1384);
+        const tmp2Result = tmp2(1403);
       }
       return flag;
     }
@@ -1105,7 +1105,7 @@ function handleInitiateAgeVerification(arg0) {
     let flag = null != obj2;
     if (flag) {
       const id = obj.getId();
-      store2[id] = obj2.set("ageVerificationStatus", require(1935) /* PermissionOverwriteType */.AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING);
+      store2[id] = obj2.set("ageVerificationStatus", require(1954) /* PermissionOverwriteType */.AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING);
       flag = true;
     }
     return flag;
@@ -1115,7 +1115,7 @@ function handleCloseAgeVerificationModal(status) {
   const obj2 = store2[store2.getId(store2)];
   let tmp2 = null != obj2;
   if (tmp2) {
-    let flag = obj2.ageVerificationStatus === require(1935) /* PermissionOverwriteType */.AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+    let flag = obj2.ageVerificationStatus === require(1954) /* PermissionOverwriteType */.AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
     if (flag) {
       const id = obj.getId();
       store2[id] = obj2.set("ageVerificationStatus", status.status);
@@ -1259,7 +1259,7 @@ prototype["takeSnapshot"] = function takeSnapshot() {
   let obj = { version: UserStore.LATEST_SNAPSHOT_VERSION, data: null };
   obj = { users: null };
   const items = [this.getCurrentUser()];
-  obj[0] = items.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+  obj[0] = items.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
   obj[1] = obj;
   return obj;
 };

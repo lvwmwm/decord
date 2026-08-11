@@ -1,10 +1,10 @@
-// Module ID: 16652
-// Function ID: 16653
+// Module ID: 16664
+// Function ID: 16665
 // Name: showEmojiOverflowActionSheet
-// Dependencies: [4271, 16653, 1988, 2]
+// Dependencies: [4271, 16665, 2007, 2]
 // Exports: default
 
-// Module 16652 (showEmojiOverflowActionSheet)
+// Module 16664 (showEmojiOverflowActionSheet)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/guild_settings/native/showEmojiOverflowActionSheet.tsx");
 
 export default function showEmojiOverflowActionSheet(arg0) {
@@ -15,5 +15,5 @@ export default function showEmojiOverflowActionSheet(arg0) {
     }
   };
   const merged = Object.assign(arg0);
-  obj.openLazy(require(1988) /* asyncRequireImpl */(16653, dependencyMap.paths), "EmojiOverflowActionSheet", obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(16665, dependencyMap.paths), "EmojiOverflowActionSheet", obj);
 };

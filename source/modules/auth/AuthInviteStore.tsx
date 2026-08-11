@@ -1,7 +1,7 @@
 // Module ID: 4223
 // Function ID: 4224
 // Name: getGuild
-// Dependencies: [1411, 589, 709, 2]
+// Dependencies: [1430, 589, 709, 2]
 
 // Module 4223 (getGuild)
 import { Store } from "initialize";
@@ -20,7 +20,7 @@ const authInviteStore = new AuthInviteStore(require("dispatcher"), {
     if (null == guild) {
       return false;
     } else {
-      closure_2[guild.id] = require(1411) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(guild);
+      closure_2[guild.id] = require(1430) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(guild);
     }
   }
 });

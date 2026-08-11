@@ -1,10 +1,10 @@
-// Module ID: 10402
-// Function ID: 10403
+// Module ID: 10407
+// Function ID: 10408
 // Name: OptInChannelBanner
-// Dependencies: [19, 17, 4994, 4315, 10403, 676, 21, 4303, 712, 10404, 10405, 589, 11, 1348, 698, 4498, 5256, 4299, 1236, 4714, 5889, 7224, 4846, 5253, 8080, 2]
+// Dependencies: [19, 17, 4994, 4315, 10408, 676, 21, 4303, 712, 10409, 10410, 589, 11, 1367, 698, 4498, 5256, 4299, 1236, 4714, 5889, 7225, 4846, 5253, 8082, 2]
 // Exports: default
 
-// Module 10402 (OptInChannelBanner)
+// Module 10407 (OptInChannelBanner)
 import Button from "Button";
 import get_ActivityIndicator from "Text";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -233,7 +233,7 @@ function NewMessagesChatBar(channel) {
         obj = { section: outer1_11.NEW_MESSAGES_BANNER, object: outer1_9.MARK_CHANNEL_AS_READ_BUTTON, objectType: outer1_8.ACK_MANUAL };
         return obj.ack(channel.id, obj);
       };
-      XSmallBoldIcon = XSmallBoldIcon(8080).XSmallBoldIcon;
+      XSmallBoldIcon = XSmallBoldIcon(8082).XSmallBoldIcon;
       const obj3 = { size: "sm", color: null };
       WHITE = importDefault(712).colors.WHITE;
       obj3[1] = WHITE;
@@ -273,7 +273,7 @@ export default function ChatBanner(channel) {
   let oldestUnreadTimestamp;
   let unreadCount;
   channel = channel.channel;
-  let obj = importDefault(10405)();
+  let obj = importDefault(10410)();
   let obj1 = channel(589);
   const items = [generateOldThreadCutoff];
   const items1 = [channel.id];

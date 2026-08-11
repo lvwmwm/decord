@@ -1,10 +1,10 @@
-// Module ID: 15302
-// Function ID: 15303
+// Module ID: 15313
+// Function ID: 15314
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 4196, 4191, 676, 11897, 5728, 6883, 4199, 4195, 5151, 6865, 2]
+// Dependencies: [5, 19, 4196, 4191, 676, 11900, 5728, 6885, 4199, 4195, 5151, 6867, 2]
 // Exports: default
 
-// Module 15302 (useGuildPowerupsBoostAction)
+// Module 15313 (useGuildPowerupsBoostAction)
 import useGuildBoostPurchaseHandler from "useGuildBoostPurchaseHandler";
 import noop from "noop";
 import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";
@@ -25,7 +25,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
   const importDefault = arg1;
   let dependencyMap = arg2;
   const callback = arg4;
-  const tmp = importDefault(11897)(arg3);
+  const tmp = importDefault(11900)(arg3);
   const shouldUseMobileWebRedirectCheckout = tmp.shouldUseMobileWebRedirectCheckout;
   const handleMobileWebRedirectCheckout = tmp.handleMobileWebRedirectCheckout;
   const analyticsLocations = importDefault(5728)().analyticsLocations;
@@ -66,7 +66,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               tmp15 = dependencyMap;
               if (dependencyMap > 0) {
                 if (!outer1_5.hasFetched) {
-                  let obj1 = outer1_1(6883);
+                  let obj1 = outer1_1(6885);
                   const items = [obj1.init(), ];
                   let obj2 = outer1_0(4199);
                   items[1] = obj2.fetchGuildBoostSlots();
@@ -126,8 +126,8 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               const tmpResult = outer2_0(table[10]);
             }
           };
-          const result = outer1_0(6865).launchGuildBoostFlowOrAlert(obj3);
-          const obj6 = outer1_0(6865);
+          const result = outer1_0(6867).launchGuildBoostFlowOrAlert(obj3);
+          const obj6 = outer1_0(6867);
         }
       } catch (tmp50) {
         c3 = tmp;

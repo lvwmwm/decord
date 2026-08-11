@@ -1,7 +1,7 @@
 // Module ID: 4253
 // Function ID: 4254
 // Name: DownloadIcon
-// Dependencies: [19, 21, 712, 4004, 4254, 2]
+// Dependencies: [19, 21, 712, 4023, 4254, 2]
 // Exports: DownloadIcon
 
 // Module 4253 (DownloadIcon)
@@ -22,5 +22,5 @@ export const DownloadIcon = function DownloadIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

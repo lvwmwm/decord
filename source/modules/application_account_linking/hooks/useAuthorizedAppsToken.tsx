@@ -1,7 +1,7 @@
 // Module ID: 5735
 // Function ID: 5736
 // Name: useAuthorizedAppsTokens
-// Dependencies: [19, 5250, 589, 1351, 5736, 2]
+// Dependencies: [19, 5250, 589, 1370, 5736, 2]
 // Exports: useAuthorizedAppsToken
 
 // Module 5735 (useAuthorizedAppsTokens)

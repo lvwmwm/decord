@@ -1,9 +1,9 @@
-// Module ID: 15723
-// Function ID: 15724
+// Module ID: 15740
+// Function ID: 15741
 // Name: ClearAllHistory
-// Dependencies: [32, 5, 19, 5899, 11737, 15724, 11711, 8397, 11725, 676, 21, 4846, 11735, 1236, 4299, 9622, 15725, 4313, 11732, 11712, 589, 1481, 15728, 11710, 14068, 7797, 7799, 15729, 15730, 15733, 2]
+// Dependencies: [32, 5, 19, 5899, 11740, 15741, 11714, 8403, 11728, 676, 21, 4846, 11738, 1236, 4299, 9627, 15742, 4313, 11735, 11715, 589, 1500, 15745, 11713, 14076, 7799, 7801, 15746, 15747, 15750, 2]
 
-// Module 15723 (ClearAllHistory)
+// Module 15740 (ClearAllHistory)
 import _slicedToArray from "_slicedToArray";
 import deserialize from "deserialize";
 import importAllResult from "SearchTokenTypes";

@@ -1,10 +1,10 @@
-// Module ID: 8976
-// Function ID: 8977
+// Module ID: 8982
+// Function ID: 8983
 // Name: ActionSheetHeaderPressableText
-// Dependencies: [21, 4303, 1348, 4846, 4299, 2]
+// Dependencies: [21, 4303, 1367, 4846, 4299, 2]
 // Exports: ActionSheetHeaderPressableText
 
-// Module 8976 (ActionSheetHeaderPressableText)
+// Module 8982 (ActionSheetHeaderPressableText)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -16,7 +16,7 @@ export const ActionSheetHeaderPressableText = function ActionSheetHeaderPressabl
   let label;
   ({ label, accessibilityLabel } = onPress);
   let str = "text-md/semibold";
-  if (importDefault(1348)("ActionSheetHeaderPressableText")) {
+  if (importDefault(1367)("ActionSheetHeaderPressableText")) {
     str = "text-md/medium";
   }
   const obj = { style: callback().container, accessibilityRole: "button", onPress: onPress.onPress, accessibilityLabel: null, children: null };

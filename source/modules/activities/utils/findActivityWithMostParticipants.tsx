@@ -1,11 +1,11 @@
-// Module ID: 15197
-// Function ID: 15198
+// Module ID: 15206
+// Function ID: 15207
 // Name: findActivityWithMostParticipants
-// Dependencies: [3938, 2]
+// Dependencies: [3957, 2]
 // Exports: default, findActivityWithMostNonBlockedOrIgnoredParticipants
 
-// Module 15197 (findActivityWithMostParticipants)
-import upsertRelationship from "upsertRelationship";
+// Module 15206 (findActivityWithMostParticipants)
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/findActivityWithMostParticipants.tsx");
 
@@ -25,7 +25,7 @@ export default function findActivityWithMostParticipants(arr) {
   }
 };
 export const findActivityWithMostNonBlockedOrIgnoredParticipants = function findActivityWithMostNonBlockedOrIgnoredParticipants(embeddedActivitiesForChannel) {
-  let upsertRelationship;
+  let markAllUserIdListsStale;
   let closure_1;
   if (0 === embeddedActivitiesForChannel.length) {
     return null;
@@ -36,14 +36,14 @@ export const findActivityWithMostNonBlockedOrIgnoredParticipants = function find
     const items1 = [];
     HermesBuiltin.arraySpread(embeddedActivitiesForChannel[0].userIds, 0);
     items[1] = items1.map((id) => !blockedOrIgnored.isBlockedOrIgnored(id)).length;
-    [upsertRelationship, closure_1] = items;
+    [markAllUserIdListsStale, closure_1] = items;
     const item = embeddedActivitiesForChannel.forEach((userIds) => {
       const items = [...userIds.userIds];
       const length = items.filter((id) => !userIds.isBlockedOrIgnored(id)).length;
       if (length > length) {
-        let upsertRelationship = userIds;
+        let markAllUserIdListsStale = userIds;
       }
     });
-    return upsertRelationship;
+    return markAllUserIdListsStale;
   }
 };

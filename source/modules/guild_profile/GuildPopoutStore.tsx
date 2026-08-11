@@ -1,9 +1,9 @@
-// Module ID: 13317
-// Function ID: 13318
+// Module ID: 13325
+// Function ID: 13326
 // Name: initialize
-// Dependencies: [1218, 5956, 589, 709, 2]
+// Dependencies: [1218, 5958, 589, 709, 2]
 
-// Module 13317 (initialize)
+// Module 13325 (initialize)
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";
 
@@ -48,7 +48,7 @@ const guildPopoutStore = new GuildPopoutStore(require("dispatcher"), {
   },
   GUILD_POPOUT_FETCH_SUCCESS: function handleFetchSuccess(guildId) {
     guildId = guildId.guildId;
-    let obj = require(5956) /* _startLurking */;
+    let obj = require(5958) /* _startLurking */;
     obj = {};
     const discoverableGuild = obj.makeDiscoverableGuild(guildId.guild);
     const merged = Object.assign(closure_4.guilds[guildId]);

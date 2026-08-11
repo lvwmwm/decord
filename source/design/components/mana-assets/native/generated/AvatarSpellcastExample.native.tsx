@@ -1,10 +1,10 @@
-// Module ID: 6108
-// Function ID: 6109
+// Module ID: 6110
+// Function ID: 6111
 // Name: AvatarSpellcastExample
-// Dependencies: [21, 5268, 6109, 2]
+// Dependencies: [21, 5268, 6111, 2]
 // Exports: AvatarSpellcastExample
 
-// Module 6108 (AvatarSpellcastExample)
+// Module 6110 (AvatarSpellcastExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarSpellcastExample.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarSpellcastExample = function AvatarSpellcastExample(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6109);
+  obj[0] = importDefault(6111);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

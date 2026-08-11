@@ -1,7 +1,7 @@
 // Module ID: 5852
 // Function ID: 5853
 // Name: useSKUPrice
-// Dependencies: [19, 1975, 1903, 5853, 676, 1905, 12, 5854, 501, 1384, 589, 5848, 5855, 3947, 5862, 2]
+// Dependencies: [19, 1994, 1922, 5853, 676, 1924, 12, 5854, 501, 1403, 589, 5848, 5855, 3966, 5862, 2]
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer, useFormatSKUPrice, useFormattedSKUPrice, useSKUOrbPrice
 
 // Module 5852 (useSKUPrice)
@@ -87,7 +87,7 @@ function useSKUPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "accessibilityRole", purchaseType: "mi", storeHasPrice: null };
+    obj = { userPrice: "r", pricesForPurchaseType: "View", purchaseType: "ne", storeHasPrice: "USER_SETTINGS_PROTO_ENQUEUE_UPDATE" };
     obj[2] = SELF_PURCHASE;
     obj[3] = null != stateFromStores1;
     return obj;
@@ -283,15 +283,15 @@ export const isSlayerSkuAvailableOnThisPlatform = function isSlayerSkuAvailableO
         num = 0;
       }
       if (obj.isIOS()) {
-        let tmpResult = tmp(1384);
+        let tmpResult = tmp(1403);
         let hasFlagResult = tmpResult.hasFlag(num, constants2.AVAILABLE_ON_IOS);
       } else {
         tmpResult = tmp(501);
         const isAndroidResult = tmpResult.isAndroid();
         hasFlagResult = !isAndroidResult;
         if (isAndroidResult) {
-          hasFlagResult = tmp(1384).hasFlag(num, constants2.AVAILABLE_ON_ANDROID);
-          const tmpResult1 = tmp(1384);
+          hasFlagResult = tmp(1403).hasFlag(num, constants2.AVAILABLE_ON_ANDROID);
+          const tmpResult1 = tmp(1403);
         }
       }
       return hasFlagResult;
@@ -389,7 +389,7 @@ export const useSKUOrbPrice = function useSKUOrbPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "accessibilityRole", purchaseType: "mi", storeHasPrice: null };
+    obj = { userPrice: "r", pricesForPurchaseType: "View", purchaseType: "ne", storeHasPrice: "USER_SETTINGS_PROTO_ENQUEUE_UPDATE" };
     obj[2] = SELF_PURCHASE;
     obj[3] = null != stateFromStores1;
     return obj;

@@ -1,7 +1,7 @@
 // Module ID: 4566
 // Function ID: 4567
 // Name: isDateObject
-// Dependencies: [574, 1393]
+// Dependencies: [574, 1412]
 
 // Module 4566 (isDateObject)
 let closure_0 = require("callBoundIntrinsic")("Date.prototype.getDay");

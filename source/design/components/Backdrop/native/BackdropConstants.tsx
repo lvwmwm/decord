@@ -1,9 +1,9 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 13390
+// Function ID: 13391
 // Name: BACKDROP_OPAQUE_MAX_OPACITY
 // Dependencies: [2]
 
-// Module 13382 (BACKDROP_OPAQUE_MAX_OPACITY)
+// Module 13390 (BACKDROP_OPAQUE_MAX_OPACITY)
 const result = require("set").fileFinishedImporting("design/components/Backdrop/native/BackdropConstants.tsx");
 
 export const BACKDROP_OPAQUE_MAX_OPACITY = 0.7;

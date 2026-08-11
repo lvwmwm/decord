@@ -1,10 +1,10 @@
-// Module ID: 11266
-// Function ID: 11267
+// Module ID: 11271
+// Function ID: 11272
 // Name: Navbar
-// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 5328, 6008, 1236, 8027, 6977, 1609, 4299, 7967, 1297, 4714, 4498, 11267, 6976, 4001, 5783, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 5328, 6010, 1236, 8029, 6980, 1628, 4299, 7969, 1297, 4714, 4498, 11272, 6979, 4020, 5783, 2]
 // Exports: default
 
-// Module 11266 (Navbar)
+// Module 11271 (Navbar)
 import _slicedToArray from "_slicedToArray";
 import AutomodAlertActionType from "AutomodAlertActionType";
 import { View } from "collectGuildAnalyticsMetadata";
@@ -23,8 +23,8 @@ function Navbar(onClose) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj[1] = onClose.onClose;
-  obj[2] = importDefault(8027);
-  obj[1] = callback2(require(6008) /* HeaderActionButton */.HeaderActionButton, obj);
+  obj[2] = importDefault(8029);
+  obj[1] = callback2(require(6010) /* HeaderActionButton */.HeaderActionButton, obj);
   obj[2] = callback2(View, obj);
   return callback2(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
@@ -36,7 +36,7 @@ function SubmitFeedbackScreen(onSubmit) {
   let feedbackOptions;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = require(6977) /* Feedback */;
+  let obj = require(6980) /* Feedback */;
   feedbackOptions = obj.generateFeedbackOptions();
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
@@ -89,7 +89,7 @@ function SubmitFeedbackScreen(onSubmit) {
       return outer1_8(outer1_4.Fragment, { children }, value);
     })
   };
-  items1[1] = { paddingBottom: importDefault(1609)().bottom + 16 };
+  items1[1] = { paddingBottom: importDefault(1628)().bottom + 16 };
   const obj5 = { size: "md", text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj5[1] = intl3.string(require(1236) /* getSystemLocale */.t.Z6DZZ6);

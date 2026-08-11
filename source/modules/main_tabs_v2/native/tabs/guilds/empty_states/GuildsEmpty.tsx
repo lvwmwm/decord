@@ -1,9 +1,9 @@
-// Module ID: 15394
-// Function ID: 15395
+// Module ID: 15411
+// Function ID: 15412
 // Name: handleJoinGuild
-// Dependencies: [32, 19, 17, 1218, 1891, 4124, 676, 21, 4303, 712, 4299, 12063, 15395, 1236, 4712, 4714, 1481, 647, 9349, 503, 1894, 4160, 4849, 14342, 2]
+// Dependencies: [32, 19, 17, 1218, 1910, 4126, 676, 21, 4303, 712, 4299, 12066, 15412, 1236, 4712, 4714, 1500, 647, 9355, 503, 1913, 4160, 4849, 14350, 2]
 
-// Module 15394 (handleJoinGuild)
+// Module 15411 (handleJoinGuild)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "encodeProperties";
 import get_ActivityIndicator from "defaultAreStatesEqual";
@@ -23,10 +23,10 @@ let map1;
 let unpackModuleId;
 const require = arg1;
 function handleJoinGuild() {
-  const result = importDefault(12063).openGuildJoinServerScreen();
+  const result = importDefault(12066).openGuildJoinServerScreen();
 }
 function handleCreateGuild() {
-  importDefault(12063).openCreateGuildModal();
+  importDefault(12066).openCreateGuildModal();
 }
 class GuildsEmptyContent {
   constructor(arg0) {
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   let importDefault;
   ({ selectedGuildId, style } = arg0);
   const tmp = callback3();
-  let obj = navigation(1481);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   let obj1 = navigation(647);
   const items = [fetchFingerprint];
@@ -127,7 +127,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   obj = { type: null, name: null };
   obj[0] = navigation(503).ImpressionTypes.VIEW;
   obj[1] = navigation(503).ImpressionNames.GUILDS_EMPTY_NUX;
-  importDefault(9349)(obj);
+  importDefault(9355)(obj);
   const items1 = [tmp6, navigation];
   const effect = importAllResult.useEffect(() => {
     if (null != c1) {
@@ -166,7 +166,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   }, items1);
   let tmp2Result = tmp2(4849);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  tmp2Result = tmp2(14342);
+  tmp2Result = tmp2(14350);
   let tmp14Result = null;
   if (stateFromStores) {
     obj = { style: null, children: null };

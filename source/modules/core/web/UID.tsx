@@ -1,10 +1,10 @@
-// Module ID: 8601
-// Function ID: 8602
+// Module ID: 8607
+// Function ID: 8608
 // Name: uid
 // Dependencies: [4510, 5716, 2]
 // Exports: UID, uid, useUID
 
-// Module 8601 (uid)
+// Module 8607 (uid)
 const result = require("set").fileFinishedImporting("modules/core/web/UID.tsx");
 
 export const uid = function uid() {

@@ -1,7 +1,7 @@
 // Module ID: 5869
 // Function ID: 5870
 // Name: useIsVibegrationsGuildEnabled
-// Dependencies: [676, 1452, 2]
+// Dependencies: [676, 1471, 2]
 // Exports: isVibegrationsGuildEnabled, useIsVibegrationsGuildEnabled
 
 // Module 5869 (useIsVibegrationsGuildEnabled)

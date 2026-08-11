@@ -1,8 +1,8 @@
-// Module ID: 8413
-// Function ID: 8414
-// Dependencies: [4792, 676, 698, 5334, 4509, 8414, 1988, 2]
+// Module ID: 8419
+// Function ID: 8420
+// Dependencies: [4792, 676, 698, 5334, 4509, 8420, 2007, 2]
 
-// Module 8413
+// Module 8419
 import items from "items";
 import { AnalyticEvents } from "ME";
 
@@ -19,7 +19,7 @@ export default {
     importDefault(698).track(AnalyticEvents.OPEN_MODAL, obj);
     const obj2 = importDefault(698);
     obj = { guildId, onClose: connect };
-    importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(8414, dependencyMap.paths), obj, closure_4);
+    importDefault(4509).pushLazy(require(2007) /* asyncRequireImpl */(8420, dependencyMap.paths), obj, closure_4);
   },
   closeMemberVerificationModal() {
     let flag = arg0;

@@ -1,10 +1,10 @@
-// Module ID: 7621
-// Function ID: 7622
+// Module ID: 7623
+// Function ID: 7624
 // Name: WhatYouLoseItem
-// Dependencies: [19, 17, 1905, 21, 4303, 712, 5268, 4299, 3947, 5728, 7622, 38, 7627, 1236, 7628, 7629, 7630, 7631, 4271, 5397, 6895, 4714, 7374, 2]
+// Dependencies: [19, 17, 1924, 21, 4303, 712, 5268, 4299, 3966, 5728, 7624, 38, 7629, 1236, 7630, 7631, 7632, 7633, 4271, 5397, 6897, 4714, 7376, 2]
 // Exports: default
 
-// Module 7621 (WhatYouLoseItem)
+// Module 7623 (WhatYouLoseItem)
 import Background from "Background";
 import { View } from "registerAsset";
 import { PremiumTypes } from "GuildFeatures";

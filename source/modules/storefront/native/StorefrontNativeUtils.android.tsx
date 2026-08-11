@@ -1,10 +1,10 @@
-// Module ID: 10093
-// Function ID: 10094
+// Module ID: 10098
+// Function ID: 10099
 // Name: useFormattedSKUPrice
-// Dependencies: [19, 7378, 589, 5858, 2]
+// Dependencies: [19, 7380, 589, 5858, 2]
 // Exports: useFormattedSKUPrice
 
-// Module 10093 (useFormattedSKUPrice)
+// Module 10098 (useFormattedSKUPrice)
 import noop from "noop";
 
 const require = arg1;

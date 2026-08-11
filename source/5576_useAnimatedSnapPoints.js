@@ -1,7 +1,7 @@
 // Module ID: 5576
 // Function ID: 5577
 // Name: useAnimatedSnapPoints
-// Dependencies: [1634, 5403, 5416]
+// Dependencies: [1653, 5403, 5416]
 
 // Module 5576 (useAnimatedSnapPoints)
 const require = arg1;
@@ -15,7 +15,7 @@ arg5.useAnimatedSnapPoints = (snapPoints, containerHeight, contentHeight, handle
   let closure_3 = handleHeight;
   let closure_4 = enableDynamicSizing;
   let closure_5 = maxDynamicContentSize;
-  let obj = _require(1634);
+  let obj = _require(1653);
   const sharedValue = obj.useSharedValue(-1);
   class P {
     constructor() {
@@ -80,8 +80,8 @@ arg5.useAnimatedSnapPoints = (snapPoints, containerHeight, contentHeight, handle
   P.__workletHash = 15015207820492;
   P.__initData = closure_2;
   let items = [snapPoints, containerHeight, handleHeight, contentHeight, arg4, enableDynamicSizing, maxDynamicContentSize, sharedValue];
-  const derivedValue = _require(1634).useDerivedValue(P, items);
-  const obj2 = _require(1634);
+  const derivedValue = _require(1653).useDerivedValue(P, items);
+  const obj2 = _require(1653);
   class N {
     constructor() {
       if (closure_4) {
@@ -102,7 +102,7 @@ arg5.useAnimatedSnapPoints = (snapPoints, containerHeight, contentHeight, handle
         length = items.length;
         tmp = !length;
         if (length) {
-          tmp = !items.find(/* F105585 */ function() { ... });
+          tmp = !items.find(/* F105664 */ function() { ... });
         }
         return !tmp;
       }
@@ -111,6 +111,6 @@ arg5.useAnimatedSnapPoints = (snapPoints, containerHeight, contentHeight, handle
   N.__closure = { enableDynamicSizing, snapPoints };
   N.__workletHash = 4816362093278;
   N.__initData = closure_3;
-  let items1 = [derivedValue, sharedValue, _require(1634).useDerivedValue(N)];
+  let items1 = [derivedValue, sharedValue, _require(1653).useDerivedValue(N)];
   return items1;
 };

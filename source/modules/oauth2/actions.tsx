@@ -1,10 +1,10 @@
-// Module ID: 10517
-// Function ID: 10518
+// Module ID: 10522
+// Function ID: 10523
 // Name: getLocationContextServer
-// Dependencies: [5, 1372, 1960, 676, 530, 5827, 507, 2]
+// Dependencies: [5, 1391, 1979, 676, 530, 5827, 507, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 10517 (getLocationContextServer)
+// Module 10522 (getLocationContextServer)
 import handleLogout from "handleLogout";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";

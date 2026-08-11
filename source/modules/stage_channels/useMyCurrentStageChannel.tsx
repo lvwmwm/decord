@@ -1,10 +1,10 @@
-// Module ID: 10770
-// Function ID: 10771
+// Module ID: 10775
+// Function ID: 10776
 // Name: useMyCurrentStageChannel
-// Dependencies: [1372, 1960, 589, 2]
+// Dependencies: [1391, 1979, 589, 2]
 // Exports: default
 
-// Module 10770 (useMyCurrentStageChannel)
+// Module 10775 (useMyCurrentStageChannel)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 

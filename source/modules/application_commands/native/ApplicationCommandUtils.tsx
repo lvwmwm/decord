@@ -1,10 +1,10 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11605
+// Function ID: 11606
 // Name: getApplicationCommandsIconSource
-// Dependencies: [4640, 4639, 4737, 1416, 11603, 11604, 6982, 1883, 10007, 8357, 2]
+// Dependencies: [4640, 4639, 4737, 1435, 11606, 11607, 6985, 1902, 10012, 8362, 2]
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview
 
-// Module 11602 (getApplicationCommandsIconSource)
+// Module 11605 (getApplicationCommandsIconSource)
 import { DraftType } from "handleChanged";
 import map from "map";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
@@ -18,12 +18,12 @@ export const getApplicationCommandsIconSource = function getApplicationCommandsI
   } else {
     const id = section.id;
     if (BuiltInSectionId.BUILT_IN === id) {
-      return importDefault(1416).makeSource(importDefault(11603));
+      return importDefault(1435).makeSource(importDefault(11606));
     } else if (tmp10.FRECENCY === id) {
-      return importDefault(1416).makeSource(importDefault(11604));
+      return importDefault(1435).makeSource(importDefault(11607));
     } else {
-      if (section.type === require(6982) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION) {
-        let obj = importDefault(1416);
+      if (section.type === require(6985) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION) {
+        let obj = importDefault(1435);
         obj = { id: null, icon: null, bot: null, botIconFirst: true, guildMember: null };
         ({ id: obj2[0], icon: obj2[1], application } = section);
         let bot;
@@ -34,7 +34,7 @@ export const getApplicationCommandsIconSource = function getApplicationCommandsI
         obj[4] = stateFromStores;
         let applicationIconSource = obj.getApplicationIconSource(obj);
       } else {
-        applicationIconSource = importDefault(1883);
+        applicationIconSource = importDefault(1902);
       }
       return applicationIconSource;
     }
@@ -68,6 +68,6 @@ export const openCommandAttachmentPreview = function openCommandAttachmentPrevie
       }
     };
     obj[4] = upload;
-    importDefault(10007)(obj);
+    importDefault(10012)(obj);
   }
 };

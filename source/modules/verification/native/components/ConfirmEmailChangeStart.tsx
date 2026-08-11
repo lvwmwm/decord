@@ -1,10 +1,10 @@
-// Module ID: 8460
-// Function ID: 8461
+// Module ID: 8466
+// Function ID: 8467
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1903, 21, 4303, 1480, 589, 8461, 691, 4203, 4002, 1236, 8462, 4299, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 21, 4303, 1499, 589, 8467, 691, 4203, 4021, 1236, 8468, 4299, 4714, 2]
 // Exports: default
 
-// Module 8460 (ConfirmEmailChangeStart)
+// Module 8466 (ConfirmEmailChangeStart)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -27,7 +27,7 @@ const result = require("noop").fileFinishedImporting("modules/verification/nativ
 export default function ConfirmEmailChangeStart() {
   const tmp = callback4();
   const require = tmp;
-  let obj = require(1480) /* useNavigation */;
+  let obj = require(1499) /* useNavigation */;
   const navigation = obj.useNavigation();
   let obj1 = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
@@ -46,7 +46,7 @@ export default function ConfirmEmailChangeStart() {
     obj1[0] = tmp.container;
     let obj2 = { style: null, source: null };
     obj2[0] = tmp.image;
-    obj2[1] = navigation(8462);
+    obj2[1] = navigation(8468);
     const items1 = [callback2(closure_7, obj2), , , ];
     const obj3 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj3[0] = tmp.title;

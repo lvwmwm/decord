@@ -1,9 +1,9 @@
-// Module ID: 13889
-// Function ID: 13890
+// Module ID: 13896
+// Function ID: 13897
 // Name: SearchListSectionLabel
-// Dependencies: [19, 17, 13890, 13891, 10448, 21, 4303, 712, 5767, 4299, 13892, 1609, 13893, 14931, 7745, 14932, 14935, 14936, 1872, 2]
+// Dependencies: [19, 17, 13897, 13898, 10453, 21, 4303, 712, 5767, 4299, 13899, 1628, 13900, 14941, 7747, 14942, 14945, 14946, 1891, 2]
 
-// Module 13889 (SearchListSectionLabel)
+// Module 13896 (SearchListSectionLabel)
 import importAllResult from "set";
 import { View } from "SettingSearchBar";
 import zustandStore from "zustandStore";
@@ -66,11 +66,11 @@ function renderItem(item) {
     obj[0] = item.label;
     return <SearchListSectionSubLabel subLabel={null} />;
   } else if (tmp.SETTING_SEARCH_RESULT === type) {
-    return require(13892) /* GuildSelectDefaultIcon */.renderSettingSearchResultItem(item);
+    return require(13899) /* GuildSelectDefaultIcon */.renderSettingSearchResultItem(item);
   } else if (tmp.SECTION_ROW === type) {
-    return require(13892) /* GuildSelectDefaultIcon */.renderSettingItem(item);
+    return require(13899) /* GuildSelectDefaultIcon */.renderSettingItem(item);
   } else if (tmp.SECTION_ROW_PLACEHOLDER === type) {
-    obj = require(13892) /* GuildSelectDefaultIcon */;
+    obj = require(13899) /* GuildSelectDefaultIcon */;
     return obj.renderSettingSearchResultPlaceholderItem(item);
   }
 }
@@ -113,20 +113,20 @@ const memoResult = importAllResult.memo((node) => {
   const items = [field, node];
   const memo = importAllResult.useMemo(() => node(outer1_2[12]).toSettingListItems(node, field), items);
   const ref = importAllResult.useRef(null);
-  let obj = node(14931);
+  let obj = node(14941);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   obj = { style: tmp.container, children: null };
   obj = { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null };
   const obj1 = {};
   const merged = Object.assign(tmp.contentContainer);
-  obj1.paddingBottom = field(1609)().bottom + field(712).space.PX_16;
+  obj1.paddingBottom = field(1628)().bottom + field(712).space.PX_16;
   obj[2] = obj1;
   obj[3] = { right: 0.01 };
   obj[4] = keyExtractor;
   obj[5] = renderItem;
   obj[6] = memo;
   obj[7] = getItemType;
-  obj[1] = jsx(node(7745).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null });
+  obj[1] = jsx(node(7747).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null });
   return <View ref={ref} ListHeaderComponent={node.ListHeaderComponent} contentContainerStyle={null} scrollIndicatorInsets={null} keyExtractor={null} renderItem={null} data={null} getItemType={null} />;
 });
 const memoResult1 = importAllResult.memo((node) => {

@@ -1,7 +1,7 @@
 // Module ID: 4891
 // Function ID: 4892
 // Name: getUploadPayload
-// Dependencies: [1975, 1218, 706, 4852, 12, 698, 2]
+// Dependencies: [1994, 1218, 706, 4852, 12, 698, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
 // Module 4891 (getUploadPayload)

@@ -1,7 +1,7 @@
 // Module ID: 4163
 // Function ID: 4164
 // Name: useBaseAppContainerDimensions
-// Dependencies: [19, 1474, 1609, 2]
+// Dependencies: [19, 1493, 1628, 2]
 // Exports: default, getBaseAppContainerDimensions
 
 // Module 4163 (useBaseAppContainerDimensions)
@@ -23,10 +23,10 @@ export default function useBaseAppContainerDimensions() {
 export const getBaseAppContainerDimensions = function getBaseAppContainerDimensions() {
   let height;
   let width;
-  let obj = require(1474) /* useWindowDimensions */;
+  let obj = require(1493) /* useWindowDimensions */;
   const windowDimensions = obj.getWindowDimensions();
   ({ width, height } = windowDimensions);
-  const rect = require(1609) /* useSafeAreaInsets */.getSafeAreaInsets();
+  const rect = require(1628) /* useSafeAreaInsets */.getSafeAreaInsets();
   obj = { width: width - rect.left - rect.right, height };
   return obj;
 };

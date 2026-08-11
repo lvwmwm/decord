@@ -1,10 +1,10 @@
-// Module ID: 9055
-// Function ID: 9056
+// Module ID: 9061
+// Function ID: 9062
 // Name: _navigateToEvent
-// Dependencies: [5, 1372, 4375, 4124, 1378, 676, 38, 7773, 7778, 5129, 1222, 2]
+// Dependencies: [5, 1391, 4375, 4126, 1397, 676, 38, 7775, 7780, 5129, 1222, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 9055 (_navigateToEvent)
+// Module 9061 (_navigateToEvent)
 import ME from "ME";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -111,7 +111,7 @@ function _navigateToEvent() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(7778);
+              obj1 = callback(7780);
               c4 = 3;
               store = 1;
               const obj4 = { value: null, done: false };
@@ -133,7 +133,7 @@ function _navigateToEvent() {
           c4 = 2;
           store = 1;
           obj5 = { value: null, done: false };
-          obj5[0] = callback3(7773).navigateToStage(channel, null);
+          obj5[0] = callback3(7775).navigateToStage(channel, null);
           return obj5;
         } catch (tmp47) {
           store = tmp;

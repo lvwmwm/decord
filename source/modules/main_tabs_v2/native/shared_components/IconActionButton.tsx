@@ -1,10 +1,10 @@
-// Module ID: 12540
-// Function ID: 12541
+// Module ID: 12544
+// Function ID: 12545
 // Name: ButtonBadge
-// Dependencies: [19, 21, 4303, 712, 500, 1297, 1348, 4720, 4846, 4299, 8388, 2]
+// Dependencies: [19, 21, 4303, 712, 500, 1297, 1367, 4720, 4846, 4299, 8394, 2]
 // Exports: default
 
-// Module 12540 (ButtonBadge)
+// Module 12544 (ButtonBadge)
 import importAllResult from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,7 +18,7 @@ class ButtonBadge {
     if (str === undefined) {
       str = "left";
     }
-    tmp = f54665(false);
+    tmp = f54702(false);
     tmp2 = jsx;
     obj = { size: null, maskSize: 2, style: null, maskColor: null };
     tmp3 = require("DEFAULT_BADGE_SIZE");
@@ -109,7 +109,7 @@ export default function IconActionButton(variant) {
     num = 0;
   }
   ({ noMargin, hitSlop, disabled, onPress, onLongPress } = variant);
-  const tmp2 = importDefault(1348)("IconActionButton");
+  const tmp2 = importDefault(1367)("IconActionButton");
   const tmp3 = callback2(tmp2);
   require(4720) /* getFontScale */;
   let tmp11Result = null != buttonText;

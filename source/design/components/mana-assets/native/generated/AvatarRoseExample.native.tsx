@@ -1,10 +1,10 @@
-// Module ID: 6106
-// Function ID: 6107
+// Module ID: 6108
+// Function ID: 6109
 // Name: AvatarRoseExample
-// Dependencies: [21, 5268, 6107, 2]
+// Dependencies: [21, 5268, 6109, 2]
 // Exports: AvatarRoseExample
 
-// Module 6106 (AvatarRoseExample)
+// Module 6108 (AvatarRoseExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarRoseExample.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarRoseExample = function AvatarRoseExample(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6107);
+  obj[0] = importDefault(6109);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

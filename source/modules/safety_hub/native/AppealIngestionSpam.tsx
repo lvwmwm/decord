@@ -1,10 +1,10 @@
-// Module ID: 11314
-// Function ID: 11315
+// Module ID: 11319
+// Function ID: 11320
 // Name: AppealIngestionSpam
-// Dependencies: [19, 17, 21, 4303, 11301, 5328, 1297, 2]
+// Dependencies: [19, 17, 21, 4303, 11306, 5328, 1297, 2]
 // Exports: default
 
-// Module 11314 (AppealIngestionSpam)
+// Module 11319 (AppealIngestionSpam)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -22,5 +22,5 @@ export default function AppealIngestionSpam() {
   obj[2] = jsx(require(1297) /* Button */.LegacyText, { children: "TODO - SPAM" });
   obj[1] = jsx(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, style: tmp.container, children: null });
   obj[0] = <View bottom style={tmp.container}>{null}</View>;
-  return jsx(require(11301) /* AppealIngestionModal */.AppealIngestionModalScreen, { bottom: true, style: tmp.container, children: null });
+  return jsx(require(11306) /* AppealIngestionModal */.AppealIngestionModalScreen, { bottom: true, style: tmp.container, children: null });
 };

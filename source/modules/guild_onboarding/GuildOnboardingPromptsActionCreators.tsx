@@ -1,7 +1,7 @@
 // Module ID: 5241
 // Function ID: 5242
 // Name: fetchOnboardingPrompts
-// Dependencies: [5, 1218, 1971, 1891, 5242, 5243, 676, 3917, 698, 4498, 709, 530, 1384, 2]
+// Dependencies: [5, 1218, 1990, 1910, 5242, 5243, 676, 3936, 698, 4498, 709, 530, 1403, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
 // Module 5241 (fetchOnboardingPrompts)

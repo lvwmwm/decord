@@ -1,10 +1,10 @@
-// Module ID: 15436
-// Function ID: 15437
+// Module ID: 15453
+// Function ID: 15454
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [19, 676, 1369, 21, 9718, 9710, 9717, 15431, 1236, 3030, 15359, 8653, 2]
+// Dependencies: [19, 676, 1388, 21, 9723, 9715, 9722, 15448, 1236, 3049, 15373, 8659, 2]
 // Exports: default
 
-// Module 15436 (FavoritesGuildCoachmarkIntro)
+// Module 15453 (FavoritesGuildCoachmarkIntro)
 import noop from "noop";
 import { FAVORITES } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";

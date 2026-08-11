@@ -1,12 +1,12 @@
-// Module ID: 15615
-// Function ID: 15616
+// Module ID: 15632
+// Function ID: 15633
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 3938, 21, 589, 8234, 15616, 15625, 2]
+// Dependencies: [19, 3957, 21, 589, 8238, 15633, 15642, 2]
 // Exports: default
 
-// Module 15615 (ContentInventoryEntryRow)
+// Module 15632 (ContentInventoryEntryRow)
 import "noop";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -20,14 +20,14 @@ export default function ContentInventoryEntryRow(content) {
   }
   let flag2 = content.visible;
   let obj = content(589);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   if (obj.useStateFromStores(items, () => outer1_3.isBlockedOrIgnored(content.author_id))) {
     return null;
   } else {
     const content_type = content.content_type;
-    if (tmp(8234).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (tmp(8234).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (tmp(8234).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (tmp(8238).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (tmp(8238).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (tmp(8238).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           obj = { content: null, renderForScreenshot: null, visible: null };
           obj[0] = content;
           obj[1] = flag;
@@ -35,7 +35,7 @@ export default function ContentInventoryEntryRow(content) {
             flag2 = false;
           }
           obj[2] = flag2;
-          return jsx(importDefault(15625), { content: null, renderForScreenshot: null, visible: null });
+          return jsx(importDefault(15642), { content: null, renderForScreenshot: null, visible: null });
         } else {
           return null;
         }
@@ -44,6 +44,6 @@ export default function ContentInventoryEntryRow(content) {
     obj = { content: null, renderForScreenshot: null };
     obj[0] = content;
     obj[1] = flag;
-    return jsx(importDefault(15616), { content: null, renderForScreenshot: null });
+    return jsx(importDefault(15633), { content: null, renderForScreenshot: null });
   }
 };

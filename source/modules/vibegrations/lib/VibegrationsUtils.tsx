@@ -1,7 +1,7 @@
 // Module ID: 5868
 // Function ID: 5869
 // Name: vibegrationsAppIdFromTopic
-// Dependencies: [1961, 1891, 3929, 676, 5869, 589, 2]
+// Dependencies: [1980, 1910, 3948, 676, 5869, 589, 2]
 // Exports: canManageVibegrations, findVibegrationChannelId, isVibegrationsChannelCandidate, isVibegrationsProjectInGuild, useCanManageVibegrations, useIsVibegrationsChannelCandidate, vibegrationsTopicForApp
 
 // Module 5868 (vibegrationsAppIdFromTopic)

@@ -1,10 +1,10 @@
-// Module ID: 12043
-// Function ID: 12044
+// Module ID: 12046
+// Function ID: 12047
 // Name: NewUserPermissionsOnboarding
 // Dependencies: [19, 17, 21, 4303, 5267, 712, 4299, 4714, 1236, 2]
 // Exports: default
 
-// Module 12043 (NewUserPermissionsOnboarding)
+// Module 12046 (NewUserPermissionsOnboarding)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

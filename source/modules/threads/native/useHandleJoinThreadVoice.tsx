@@ -1,10 +1,10 @@
-// Module ID: 8411
-// Function ID: 8412
+// Module ID: 8417
+// Function ID: 8418
 // Name: useHandleJoinThreadVoice
-// Dependencies: [5, 3931, 4790, 8412, 1988, 7224, 4513, 2]
+// Dependencies: [5, 3950, 4790, 8418, 2007, 7225, 4513, 2]
 // Exports: default
 
-// Module 8411 (useHandleJoinThreadVoice)
+// Module 8417 (useHandleJoinThreadVoice)
 import patchThread from "patchThread";
 import storeThread from "storeThread";
 

@@ -1,9 +1,9 @@
-// Module ID: 7133
-// Function ID: 7134
+// Module ID: 7134
+// Function ID: 7135
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 7133 (enforcing)
+// Module 7134 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTTIModule");

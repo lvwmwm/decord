@@ -1,9 +1,9 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14104
+// Function ID: 14105
 // Name: toggle
-// Dependencies: [19, 17, 8082, 700, 705, 3914, 500, 3, 10447, 1236, 2]
+// Dependencies: [19, 17, 8084, 700, 705, 3933, 500, 3, 10452, 1236, 2]
 
-// Module 14096 (toggle)
+// Module 14104 (toggle)
 import noop from "noop";
 import identity from "identity";
 import createToggle from "createToggle";
@@ -25,7 +25,7 @@ identity = {
         callback(table[4]).batchUpdates(() => outer1_4.setState({ isEnabled: closure_0 }));
       });
     }, []);
-    return callback((isEnabled) => isEnabled.isEnabled, require(3914) /* isIterable */.shallow);
+    return callback((isEnabled) => isEnabled.isEnabled, require(3933) /* isIterable */.shallow);
   },
   onValueChange: function onIOSConversationSuggestionsSettingValueChange(arg0) {
     const result = IntentsHandler.setConversationSuggestionsEnabled(arg0);

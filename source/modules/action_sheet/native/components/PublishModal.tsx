@@ -1,10 +1,10 @@
-// Module ID: 10219
-// Function ID: 10220
+// Module ID: 10224
+// Function ID: 10225
 // Name: PublishModal
-// Dependencies: [32, 19, 17, 21, 4303, 5158, 10220, 1297, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 5158, 10225, 1297, 1236, 2]
 // Exports: default
 
-// Module 10219 (PublishModal)
+// Module 10224 (PublishModal)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,7 +23,7 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/a
 
 export default function PublishModal(channelId) {
   const tmp = createCacheKey();
-  const tmp3 = callback(importDefault(10220)(channelId.channelId), 2);
+  const tmp3 = callback(importDefault(10225)(channelId.channelId), 2);
   const first = tmp3[0];
   if (tmp3[1]) {
     let obj = { style: null, children: null };

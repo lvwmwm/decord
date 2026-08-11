@@ -1,10 +1,10 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16020
+// Function ID: 16021
 // Name: RobloxIcon
-// Dependencies: [32, 19, 17, 4998, 1903, 12973, 676, 1369, 21, 4303, 712, 4013, 1609, 4271, 5397, 5396, 5765, 4712, 4299, 1236, 4714, 12233, 10492, 6016, 4011, 5000, 1416, 1297, 7835, 589, 12974, 5123, 4123, 1358, 2]
+// Dependencies: [32, 19, 17, 4998, 1922, 12977, 676, 1388, 21, 4303, 712, 4031, 1628, 4271, 5397, 5396, 5765, 4712, 4299, 1236, 4714, 12236, 10497, 6018, 1364, 5000, 1435, 1297, 7837, 589, 12978, 5123, 4125, 1377, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 16003 (RobloxIcon)
+// Module 16020 (RobloxIcon)
 import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed";
 import getSystemLocale from "getSystemLocale";
 import { View } from "Stack";
@@ -23,7 +23,7 @@ let map1;
 let unpackModuleId;
 const require = arg1;
 function RobloxIcon(theme) {
-  let obj = require(4011) /* isThemeLight */;
+  let obj = require(1364) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(theme.theme);
   const tmp = createCacheKey();
   let str = "white";
@@ -35,7 +35,7 @@ function RobloxIcon(theme) {
   const icon = value.icon;
   obj = { style: items, children: null };
   items = [tmp.robloxIconContainer, { backgroundColor: str }];
-  const source = require(1416) /* getAvatarURL */.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
+  const source = require(1435) /* getAvatarURL */.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
   obj = { size: null, source: null, disableColor: true };
   obj[0] = require(1297) /* Button */.IconSizes.LARGE;
   obj[1] = source;
@@ -106,7 +106,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
     }
   }
   const tmp = createCacheKey();
-  let obj = markAsDismissed(4013);
+  let obj = markAsDismissed(4031);
   const theme = obj.useThemeContext().theme;
   obj = { startExpanded: true, contentStyles: tmp.content, header: null, onDismiss: null, children: null };
   obj = { title: null, leading: null };
@@ -115,7 +115,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
   obj[3] = function onDismiss() {
     return markAsDismissed(outer1_12.DISMISS);
   };
-  const obj1 = { spacing: 24, style: { paddingBottom: importDefault(1609)().bottom }, children: null };
+  const obj1 = { spacing: 24, style: { paddingBottom: importDefault(1628)().bottom }, children: null };
   const obj2 = { justify: "center", align: "center", direction: "horizontal", children: null };
   const items = [callback(RobloxIcon, { theme }), callback(UnionIcon, { theme }), callback(UserIcon, {})];
   obj2[3] = items;
@@ -137,7 +137,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
   obj7[0] = intl3.string(markAsDismissed(1236).t.ItuabN);
   const obj8 = { size: "sm", color: null };
   obj8[1] = importDefault(712).colors.WHITE;
-  obj7[1] = callback(markAsDismissed(12233).WindowLaunchIcon, obj8);
+  obj7[1] = callback(markAsDismissed(12236).WindowLaunchIcon, obj8);
   obj7[4] = function onPress() {
     let obj = outer1_1(outer1_2[13]);
     obj.hideActionSheet();
@@ -166,7 +166,7 @@ export const useShouldShowRobloxConnectionCoachmark = function useShouldShowRobl
   let fetchingAccounts;
   let hasRoloxAccount;
   const items = [initialize];
-  stateFromStores = stateFromStores(589).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(12974).DetectableAppNames.ROBLOX));
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(12978).DetectableAppNames.ROBLOX));
   const tmp2 = hasRoloxAccount(React.useState(false), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
@@ -194,10 +194,10 @@ export const useShouldShowRobloxConnectionCoachmark = function useShouldShowRobl
   const items3 = [hasRoloxAccount];
   const effect1 = React.useEffect(() => {
     if (hasRoloxAccount) {
-      let obj = stateFromStores(4123);
+      let obj = stateFromStores(4125);
       obj = { dismissAction: null };
       obj[0] = outer1_12.INDIRECT_ACTION;
-      const result = obj.UNSAFE_markDismissibleContentAsDismissed(stateFromStores(1358).DismissibleContent.ROBLOX_CONNECTION_COACHMARK, obj);
+      const result = obj.UNSAFE_markDismissibleContentAsDismissed(stateFromStores(1377).DismissibleContent.ROBLOX_CONNECTION_COACHMARK, obj);
     }
   }, items3);
   let tmp7 = !fetchingAccounts;

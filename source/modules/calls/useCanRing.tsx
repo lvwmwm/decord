@@ -1,10 +1,10 @@
-// Module ID: 9234
-// Function ID: 9235
+// Module ID: 9240
+// Function ID: 9241
 // Name: useCanRingToGuildVoiceChannel
-// Dependencies: [1218, 4995, 1372, 1971, 5131, 3929, 4390, 3938, 4319, 676, 589, 9235, 5134, 4745, 2]
+// Dependencies: [1218, 4995, 1391, 1990, 5131, 3948, 4390, 3957, 4319, 676, 589, 9241, 5134, 4745, 2]
 // Exports: canRingUsersInChannel, useCanRing
 
-// Module 9234 (useCanRingToGuildVoiceChannel)
+// Module 9240 (useCanRingToGuildVoiceChannel)
 import fetchFingerprint from "fetchFingerprint";
 import callConnect from "callConnect";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -12,7 +12,7 @@ import trackCommunicationDisabled from "trackCommunicationDisabled";
 import recomputeGuild from "recomputeGuild";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import sortActivity from "sortActivity";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateVoiceState from "updateVoiceState";
 import ME from "ME";
 
@@ -63,7 +63,7 @@ function useCanRingToGuildVoiceChannel(user, DisconnectedUserRow, stateFromStore
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
-  let enabled = tmp4(9235).useExperiment({ guildId: guild_id, location: str }).enabled;
+  let enabled = tmp4(9241).useExperiment({ guildId: guild_id, location: str }).enabled;
   if (stateFromStores != null) {
     const type = stateFromStores.type;
   }
@@ -98,7 +98,7 @@ export const useCanRing = function useCanRing(user, DisconnectedUserRow, selecte
   const items1 = [fetchFingerprint];
   const stateFromStores1 = _require(stateFromStores[10]).useStateFromStores(items1, () => outer1_3.getId() === user.id);
   const obj2 = _require(stateFromStores[10]);
-  const items2 = [upsertRelationship];
+  const items2 = [markAllUserIdListsStale];
   let stateFromStores2 = _require(stateFromStores[10]).useStateFromStores(items2, () => outer1_10.isFriend(user.id));
   const obj3 = _require(stateFromStores[10]);
   const items3 = [sortActivity];
@@ -152,7 +152,7 @@ export const canRingUsersInChannel = function canRingUsersInChannel(channel) {
     call = call.getCall(channel.id);
     return null != call && null != call.messageId && !call.isCallUnavailable(channel.id);
   } else if (tmp === tmp2) {
-    let obj = importDefault(9235);
+    let obj = importDefault(9241);
     obj = { guildId: null, location: "ring" };
     obj[0] = channel.guild_id;
     let enabled = obj.getCurrentConfig(obj).enabled;

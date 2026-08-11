@@ -1,7 +1,7 @@
 // Module ID: 4724
 // Function ID: 4725
 // Name: useShineEffectStyles
-// Dependencies: [32, 19, 21, 4719, 689, 4153, 4036, 4304, 4303, 2]
+// Dependencies: [32, 19, 21, 4719, 689, 1363, 4042, 4304, 4303, 2]
 // Exports: ButtonShine
 
 // Module 4724 (useShineEffectStyles)
@@ -16,7 +16,7 @@ function useShineEffectStyles(width, variant) {
   const buttonTextColorStyles = obj.useButtonTextColorStyles(variant);
   const obj2 = enabled(689)(buttonTextColorStyles.color);
   const hexResult = enabled(689)(buttonTextColorStyles.color).alpha(0.1).hex();
-  enabled = React.useContext(_require(4153).AccessibilityPreferencesContext).reducedMotion.enabled;
+  enabled = React.useContext(_require(1363).AccessibilityPreferencesContext).reducedMotion.enabled;
   const alphaResult = enabled(689)(buttonTextColorStyles.color).alpha(0.1);
   const fn = function o() {
     if (null == width) {
@@ -47,13 +47,13 @@ function useShineEffectStyles(width, variant) {
     }
     return tmp5;
   };
-  obj = { width, SHINE_OFFSCREEN_OFFSET: 120, useReducedMotion: enabled, SHINE_WIDTH: 56, withRepeat: _require(4036).withRepeat, withSequence: _require(4036).withSequence, withTiming: _require(4304).withTiming, withDelay: _require(4036).withDelay, SHINE_INITIAL_ANIMATION_DELAY: 750, SHINE_ANIMATION_DURATION: 2000 };
+  obj = { width, SHINE_OFFSCREEN_OFFSET: 120, useReducedMotion: enabled, SHINE_WIDTH: 56, withRepeat: _require(4042).withRepeat, withSequence: _require(4042).withSequence, withTiming: _require(4304).withTiming, withDelay: _require(4042).withDelay, SHINE_INITIAL_ANIMATION_DELAY: 750, SHINE_ANIMATION_DURATION: 2000 };
   fn.__closure = obj;
   fn.__workletHash = 15814138938406;
   fn.__initData = closure_6;
   obj = { shineStyles: null, shineAnimatedStyle: null };
-  const animatedStyle = _require(4036).useAnimatedStyle(fn);
-  let obj4 = _require(4036);
+  const animatedStyle = _require(4042).useAnimatedStyle(fn);
+  let obj4 = _require(4042);
   let items = [{ rotate: "30deg" }];
   obj[0] = _require(4303).createStyles({ shineContainer: { width: "100%", height: "200%", position: "absolute", overflow: "hidden" }, shine: { width: 56, height: "500%", transform: items, backgroundColor: hexResult, top: "-100%", alignItems: "center" }, shineInner: { width: 16, height: "100%", backgroundColor: hexResult } })();
   obj[1] = animatedStyle;
@@ -79,7 +79,7 @@ export const ButtonShine = function ButtonShine(variant) {
   items = [shineStyles.shineContainer, tmp2.shineAnimatedStyle];
   obj = { style: shineStyles.shine, children: null };
   obj = { style: shineStyles.shineInner };
-  obj[1] = jsx(importDefault(4036).View, { style: shineStyles.shineInner });
-  obj[2] = jsx(importDefault(4036).View, { style: shineStyles.shineInner });
-  return jsx(importDefault(4036).View, { style: shineStyles.shineInner });
+  obj[1] = jsx(importDefault(4042).View, { style: shineStyles.shineInner });
+  obj[2] = jsx(importDefault(4042).View, { style: shineStyles.shineInner });
+  return jsx(importDefault(4042).View, { style: shineStyles.shineInner });
 };

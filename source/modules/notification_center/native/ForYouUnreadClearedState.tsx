@@ -1,10 +1,10 @@
-// Module ID: 15561
-// Function ID: 15562
+// Module ID: 15578
+// Function ID: 15579
 // Name: ForYouUnreadClearedState
-// Dependencies: [19, 17, 21, 4303, 712, 1297, 10025, 4299, 1236, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1297, 10030, 4299, 1236, 2]
 // Exports: ForYouUnreadClearedState
 
-// Module 15561 (ForYouUnreadClearedState)
+// Module 15578 (ForYouUnreadClearedState)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export const ForYouUnreadClearedState = function ForYouUnreadClearedState() {
   obj = { style: tmp.imageContainer };
   const items = [callback(View, obj), , ];
   obj = { source: null, style: null, color: null };
-  obj[0] = importDefault(10025);
+  obj[0] = importDefault(10030);
   obj[1] = tmp.icon;
   obj[2] = tmp.icon.color;
   items[1] = callback(require(1297) /* Button */.Icon, obj);

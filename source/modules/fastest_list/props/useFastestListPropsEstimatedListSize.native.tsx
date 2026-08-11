@@ -1,10 +1,10 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 8537
+// Function ID: 8538
 // Name: useFastestListPropsEstimatedListSize
-// Dependencies: [32, 19, 1474, 2]
+// Dependencies: [32, 19, 1493, 2]
 // Exports: default
 
-// Module 8531 (useFastestListPropsEstimatedListSize)
+// Module 8537 (useFastestListPropsEstimatedListSize)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

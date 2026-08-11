@@ -1,19 +1,19 @@
-// Module ID: 10367
-// Function ID: 10368
+// Module ID: 10372
+// Function ID: 10373
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 3938, 1903, 9668, 21, 589, 4146, 10352, 9243, 1236, 8497, 8495, 8586, 5767, 10368, 2]
+// Dependencies: [32, 19, 3957, 1922, 9673, 21, 589, 4148, 10357, 9249, 1236, 8503, 8501, 8592, 5767, 10373, 2]
 // Exports: default
 
-// Module 10367 (StrangerDangerMoreTipsModalActionItems)
+// Module 10372 (StrangerDangerMoreTipsModalActionItems)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SafetyWarningTypes } from "handleConnectionOpen";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("upsertRelationship").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerMoreTipsModalActionItems.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerMoreTipsModalActionItems.tsx");
 
 export default function StrangerDangerMoreTipsModalActionItems(channelId) {
   channelId = channelId.channelId;

@@ -1,10 +1,10 @@
-// Module ID: 16585
-// Function ID: 16586
+// Module ID: 16597
+// Function ID: 16598
 // Name: navigateToSystemDM
-// Dependencies: [1372, 16584, 5129, 2]
+// Dependencies: [1391, 16596, 5129, 2]
 // Exports: default
 
-// Module 16585 (navigateToSystemDM)
+// Module 16597 (navigateToSystemDM)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { SYSTEM_USER } from "SYSTEM_USER";
 

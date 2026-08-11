@@ -1,10 +1,10 @@
-// Module ID: 9681
-// Function ID: 9682
+// Module ID: 9686
+// Function ID: 9687
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 676, 21, 4303, 4860, 5779, 1416, 9682, 4846, 1236, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4303, 4860, 5779, 1435, 9687, 4846, 1236, 2]
 // Exports: default
 
-// Module 9681 (IconUploader)
+// Module 9686 (IconUploader)
 import closure_3 from "createCacheKey";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -144,7 +144,7 @@ export default function IconUploader(disabled) {
     }
     tmp8 = null == icon && null == name;
   } else {
-    let obj1 = require(1416) /* getAvatarURL */;
+    let obj1 = require(1435) /* getAvatarURL */;
     obj = { style: null, source: null };
     const items = [tmp.avatar, iconStyle];
     obj[0] = items;
@@ -156,7 +156,7 @@ export default function IconUploader(disabled) {
   if (!flag) {
     obj1 = { style: null, source: null };
     obj1[0] = tmp.uploadIcon;
-    obj1[1] = importDefault(9682);
+    obj1[1] = importDefault(9687);
     tmp16 = callback(closure_6, obj1);
   }
   items1[1] = tmp16;

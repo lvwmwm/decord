@@ -1,10 +1,10 @@
-// Module ID: 15031
-// Function ID: 15032
+// Module ID: 15041
+// Function ID: 15042
 // Name: toggle
 // Dependencies: [5273, 709, 2]
 // Exports: clearAll, toggle
 
-// Module 15031 (toggle)
+// Module 15041 (toggle)
 import getUserAgnosticState from "getUserAgnosticState";
 
 const result = require("set").fileFinishedImporting("modules/devtools/design_toggles/DesignTogglesActions.tsx");

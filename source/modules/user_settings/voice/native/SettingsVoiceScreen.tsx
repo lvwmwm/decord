@@ -1,10 +1,10 @@
-// Module ID: 14483
-// Function ID: 14484
+// Module ID: 14491
+// Function ID: 14492
 // Name: KrispLogo
-// Dependencies: [19, 17, 4351, 8082, 676, 21, 1974, 4303, 4239, 4153, 10865, 10866, 1236, 5427, 10864, 4299, 10861, 10447, 13888, 2]
+// Dependencies: [19, 17, 4351, 8084, 676, 21, 1993, 4303, 4239, 1363, 10870, 10871, 1236, 5427, 10869, 4299, 10866, 10452, 13895, 2]
 // Exports: default
 
-// Module 14483 (KrispLogo)
+// Module 14491 (KrispLogo)
 import set from "set";
 import get_ActivityIndicator from "createToggle";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -22,11 +22,11 @@ let unpackModuleId;
 const require = arg1;
 function KrispLogo() {
   const tmp = callback3();
-  let obj = require(4153) /* AccessibilityAnnouncer */;
+  let obj = require(1363) /* AccessibilityAnnouncer */;
   if (obj.isThemeLight(tmp4)) {
-    let tmp2Result = tmp2(10865);
+    let tmp2Result = tmp2(10870);
   } else {
-    tmp2Result = tmp2(10866);
+    tmp2Result = tmp2(10871);
   }
   obj = { style: tmp.krisp, children: null };
   obj = { style: tmp.logo, source: tmp2Result, accessibilityLabel: null };
@@ -36,7 +36,7 @@ function KrispLogo() {
   const obj1 = { accessibilityRole: "link", accessibilityLabel: null, onPress: null, children: null };
   const intl2 = tmp5(1236).intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
-  obj1[2] = require(10864) /* handleKrispLinkPressed */.handleKrispLinkPressed;
+  obj1[2] = require(10869) /* handleKrispLinkPressed */.handleKrispLinkPressed;
   const obj2 = { variant: "text-sm/medium", color: "text-link", children: null };
   const intl3 = tmp5(1236).intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
@@ -46,7 +46,7 @@ function KrispLogo() {
   return callback2(closure_4, obj);
 }
 function SystemProcessingSubLabel() {
-  let obj = require(10861) /* getNoiseCancellationDeferredToSystem */;
+  let obj = require(10866) /* getNoiseCancellationDeferredToSystem */;
   let tmp3 = null;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     obj = { variant: "text-sm/medium", children: null };
@@ -69,7 +69,7 @@ let result = require("_detectH265HardwareDecode").fileFinishedImporting("modules
 
 export default function SettingsVoiceScreen() {
   const node = React.useMemo(() => {
-    let obj = callback(10447);
+    let obj = callback(10452);
     obj = { sections: null };
     obj = { label: null, settings: null };
     const intl = callback(1236).intl;
@@ -94,7 +94,7 @@ export default function SettingsVoiceScreen() {
     obj3[1] = items3;
     const intl5 = callback(1236).intl;
     const obj4 = { helpCenterArticle: null };
-    let obj7 = callback2(1974);
+    let obj7 = callback2(1993);
     obj4[0] = obj7.getArticleURL(constants2.SOUNDBOARD);
     obj3[2] = intl5.format(callback(1236).t.BPbGq7, obj4);
     items1[2] = obj3;
@@ -133,5 +133,5 @@ export default function SettingsVoiceScreen() {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13888), { node });
+  return callback(importDefault(13895), { node });
 };

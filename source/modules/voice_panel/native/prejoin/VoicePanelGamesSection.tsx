@@ -1,9 +1,9 @@
-// Module ID: 16234
-// Function ID: 16235
+// Module ID: 16248
+// Function ID: 16249
 // Name: GameRow
-// Dependencies: [19, 21, 7092, 9272, 9283, 1236, 9251, 5374, 9238, 16235, 9177, 2]
+// Dependencies: [19, 21, 5926, 9278, 9289, 1236, 9257, 5374, 9244, 16249, 9183, 2]
 
-// Module 16234 (GameRow)
+// Module 16248 (GameRow)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -11,11 +11,11 @@ const require = arg1;
 function GameRow(gameId) {
   gameId = gameId.gameId;
   let _require;
-  let obj = _require(7092);
+  let obj = _require(5926);
   const data = obj.useGame(gameId).data;
   obj = { gameId, source: null };
-  obj[1] = _require(9283).GameProfileSources.VoiceChannelGames;
-  const tmp4Result = importDefault(9272)(obj);
+  obj[1] = _require(9289).GameProfileSources.VoiceChannelGames;
+  const tmp4Result = importDefault(9278)(obj);
   _require = tmp4Result;
   if (null == data) {
     return null;
@@ -28,7 +28,7 @@ function GameRow(gameId) {
     }
     obj = { game: null, size: 32, fallback: "placeholder" };
     obj[0] = data;
-    const tmp7 = jsx(tmp3(9251), { game: null, size: 32, fallback: "placeholder" });
+    const tmp7 = jsx(tmp3(9257), { game: null, size: 32, fallback: "placeholder" });
     if (null == tmp4Result) {
       const obj1 = { icon: null, label: null, disabled: true };
       obj1[0] = tmp7;
@@ -49,14 +49,14 @@ function GameRow(gameId) {
     return jsx(tmp(5374).TableRow, obj2);
   }
   tmp3 = importDefault;
-  const tmp4 = importDefault(9272);
+  const tmp4 = importDefault(9278);
 }
 const memoResult = require("noop").memo(function VoicePanelGamesSection(arg0) {
   let guildId;
   let members;
   ({ members, guildId } = arg0);
-  const tmp2 = importDefault(9238)("voice_pre_join_games_section");
-  const arr = importDefault(16235)(members, guildId, tmp2);
+  const tmp2 = importDefault(9244)("voice_pre_join_games_section");
+  const arr = importDefault(16249)(members, guildId, tmp2);
   let tmp3 = null;
   if (tmp2) {
     tmp3 = null;
@@ -65,7 +65,7 @@ const memoResult = require("noop").memo(function VoicePanelGamesSection(arg0) {
       const intl = require(1236) /* getSystemLocale */.intl;
       obj[0] = intl.string(require(1236) /* getSystemLocale */.t.crRMpG);
       obj[2] = arr.map((gameId) => callback(closure_4, { gameId }, gameId));
-      tmp3 = jsx(require(9177) /* VoiceBadges */.VoicePanelFormSection, { title: null, hasIcons: true, children: null });
+      tmp3 = jsx(require(9183) /* VoiceBadges */.VoicePanelFormSection, { title: null, hasIcons: true, children: null });
     }
   }
   return tmp3;

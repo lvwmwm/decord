@@ -1,10 +1,10 @@
-// Module ID: 8185
-// Function ID: 8186
+// Module ID: 8187
+// Function ID: 8188
 // Name: createEphemeralIndication
-// Dependencies: [8047, 676, 8186, 1236, 1974, 2]
+// Dependencies: [8049, 676, 8188, 1236, 1993, 2]
 // Exports: createEphemeralIndication
 
-// Module 8185 (createEphemeralIndication)
+// Module 8187 (createEphemeralIndication)
 import handleMessageSendFailedAutomod from "handleMessageSendFailedAutomod";
 import ME from "ME";
 
@@ -22,7 +22,7 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       ephemerality_reason = interactionMetadata.ephemerality_reason;
     }
     if (null != ephemerality_reason) {
-      let obj1 = require(8186) /* getEphemeralReasonMessage */;
+      let obj1 = require(8188) /* getEphemeralReasonMessage */;
       const interactionMetadata2 = message.interactionMetadata;
       let ephemerality_reason1;
       if (interactionMetadata2 != null) {
@@ -37,7 +37,7 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       obj[0] = obj1;
       obj[1] = ephemeralReasonMessage;
       obj[0] = intl2.formatToParts(require(1236) /* getSystemLocale */.t.xgCMRQ, obj);
-      obj[1] = importDefault(1974).getArticleURL(constants.USING_APPS_FAQ);
+      obj[1] = importDefault(1993).getArticleURL(constants.USING_APPS_FAQ);
       const intl3 = tmp3(1236).intl;
       obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.OIWSJe);
       return obj;
@@ -49,14 +49,14 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       obj4[1] = message;
       obj3[2] = obj4;
       obj2[0] = intl4.formatToParts(require(1236) /* getSystemLocale */.t.uX3ecL, obj3);
-      obj2[1] = importDefault(1974).getAppsSupportURL(constants.EPHEMERAL_MESSAGES);
+      obj2[1] = importDefault(1993).getAppsSupportURL(constants.EPHEMERAL_MESSAGES);
       const intl5 = require(1236) /* getSystemLocale */.intl;
       obj2[2] = intl5.string(require(1236) /* getSystemLocale */.t.htHOrp);
       if (null != message.getMessage(message.id)) {
-        obj2.helpArticleLink = importDefault(1974).getArticleURL(constants.GUILD_AUTOMOD_BLOCKED_MESSAGE);
+        obj2.helpArticleLink = importDefault(1993).getArticleURL(constants.GUILD_AUTOMOD_BLOCKED_MESSAGE);
         const intl = tmp9(1236).intl;
         obj2.helpButtonAccessibilityLabel = intl.string(tmp9(1236).t.OiCBhP);
-        const tmp11Result = importDefault(1974);
+        const tmp11Result = importDefault(1993);
       }
       return obj2;
     }

@@ -1,10 +1,10 @@
-// Module ID: 13000
-// Function ID: 13001
+// Module ID: 13004
+// Function ID: 13005
 // Name: getUserCalloutRowText
-// Dependencies: [19, 17, 1372, 1903, 13001, 676, 21, 4303, 712, 4299, 4493, 1236, 589, 1351, 1297, 11224, 9663, 4264, 4259, 698, 5764, 10356, 5767, 5374, 4714, 4271, 13002, 4313, 2]
+// Dependencies: [19, 17, 1391, 1922, 13005, 676, 21, 4303, 712, 4299, 4493, 1236, 589, 1370, 1297, 11229, 9668, 4264, 4259, 698, 5764, 10361, 5767, 5374, 4714, 4271, 13006, 4313, 2]
 // Exports: default
 
-// Module 13000 (getUserCalloutRowText)
+// Module 13004 (getUserCalloutRowText)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "CircleCheckIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -93,7 +93,7 @@ function UserCalloutAvatars(userIds) {
   const items = [mergeGuildAvatar];
   const items1 = [userIds];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => userIds.map((arg0) => user.getUser(arg0)), items1);
-  let found = stateFromStoresArray.filter(userIds(1351).isNotNullish);
+  let found = stateFromStoresArray.filter(userIds(1370).isNotNullish);
   if (1 === userIds.length) {
     if (null != mergeGuildAvatar.getUser(userIds[0])) {
       obj = { user: null, guildId: null, size: null, "aria-hidden": true };
@@ -104,13 +104,13 @@ function UserCalloutAvatars(userIds) {
       obj[2] = REFRESH_MEDIUM_32;
       let tmp6 = callback(tmp(1297).Avatar, obj);
     } else {
-      tmp6 = callback(tmp(11224).UserIcon, {});
+      tmp6 = callback(tmp(11229).UserIcon, {});
     }
   } else {
     obj = { users: null, size: null };
     obj[0] = found;
     obj[1] = tmp(1297).AvatarSizes.REFRESH_MEDIUM_32;
-    return callback(tmp(9663).FacepileGroupDMAvatar, obj);
+    return callback(tmp(9668).FacepileGroupDMAvatar, obj);
   }
 }
 function BlockedUserInGDMDescription(arg0) {

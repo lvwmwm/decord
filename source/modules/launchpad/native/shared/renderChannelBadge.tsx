@@ -1,10 +1,10 @@
-// Module ID: 16059
-// Function ID: 16060
+// Module ID: 16076
+// Function ID: 16077
 // Name: renderChannelBadge
-// Dependencies: [19, 21, 1297, 11668, 4299, 1236, 1879, 2]
+// Dependencies: [19, 21, 1297, 11671, 4299, 1236, 1898, 2]
 // Exports: default
 
-// Module 16059 (renderChannelBadge)
+// Module 16076 (renderChannelBadge)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -34,17 +34,17 @@ export default function renderChannelBadge(newChannel) {
     return tmp2;
   }
   if (flag) {
-    tmp2 = jsx(importDefault(11668), {});
+    tmp2 = jsx(importDefault(11671), {});
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {
         obj = { variant: "text-xs/bold", color: "text-brand", children: null };
         const intl = require(1236) /* getSystemLocale */.intl;
         const obj1 = { count: null };
-        obj1[0] = require(1879) /* shortenAndLocalizeNumber */.humanizeValue(newPostCount, newChannel.locale);
+        obj1[0] = require(1898) /* shortenAndLocalizeNumber */.humanizeValue(newPostCount, newChannel.locale);
         obj[2] = intl.format(require(1236) /* getSystemLocale */.t.GkAbqY, obj1);
         tmp2 = jsx(require(4299) /* Text */.Text, { variant: "text-xs/bold", color: "text-brand", children: null });
-        const obj5 = require(1879) /* shortenAndLocalizeNumber */;
+        const obj5 = require(1898) /* shortenAndLocalizeNumber */;
       }
     }
     if (null != postsWithUnreadsCount) {

@@ -1,10 +1,10 @@
-// Module ID: 12201
-// Function ID: 12202
+// Module ID: 12204
+// Function ID: 12205
 // Name: styles
-// Dependencies: [19, 17, 21, 4303, 712, 1416, 12202, 4846, 12203, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1435, 12205, 4846, 12206, 2]
 // Exports: default
 
-// Module 12201 (styles)
+// Module 12204 (styles)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export default function GameIcon(arg0) {
   const iconURL = game.getIconURL(24);
   let source = null;
   if (null != iconURL) {
-    let obj = onPress(1416);
+    let obj = onPress(1435);
     source = obj.makeSource(iconURL);
   }
   const items = [game, onPress];
@@ -70,7 +70,7 @@ export default function GameIcon(arg0) {
         source = closure_4;
         const obj1 = { style: null, children: null };
         obj1[0] = fireIcon.gameIconMask;
-        FireIcon = FireIcon(12203).FireIcon;
+        FireIcon = FireIcon(12206).FireIcon;
         const obj2 = { style: null, color: null };
         fireIcon = fireIcon.fireIcon;
         obj2[0] = fireIcon;
@@ -98,7 +98,7 @@ export default function GameIcon(arg0) {
         const obj6 = { style: null, color: null };
         obj6[0] = fireIcon.fireIcon;
         obj6[1] = onPress(712).unsafe_rawColors.ORANGE_330;
-        obj5[1] = tmp16(FireIcon(12203).FireIcon, obj6);
+        obj5[1] = tmp16(FireIcon(12206).FireIcon, obj6);
         tmp16Result = tmp16(tmp15, obj5);
       }
       items3[1] = tmp16Result;

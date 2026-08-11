@@ -1,10 +1,10 @@
-// Module ID: 12072
-// Function ID: 12073
+// Module ID: 12075
+// Function ID: 12076
 // Name: getInviteState
-// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 1351, 4005, 5371, 12073, 12076, 1416, 1450, 12081, 1474, 5376, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 1370, 4024, 5371, 12076, 12079, 1435, 1469, 12084, 1493, 5376, 2]
 // Exports: default
 
-// Module 12072 (getInviteState)
+// Module 12075 (getInviteState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -45,7 +45,7 @@ function getInviteState(invite) {
                       if (tmp4.APP_OPENED !== state) {
                         if (tmp4.APP_OPENING !== state) {
                           if (tmp4.ACCEPTING !== state) {
-                            require(1351) /* isDiscordFrontendDevelopment */.assertNever(state);
+                            require(1370) /* isDiscordFrontendDevelopment */.assertNever(state);
                           }
                         }
                       }
@@ -65,7 +65,7 @@ function getInviteState(invite) {
   return constants.LOADING;
 }
 function InviteResolving() {
-  let obj = require(4005) /* map */;
+  let obj = require(4024) /* map */;
   obj = { style: createCacheKey().resolvingContainer, children: null };
   obj = { color: obj.useToken(importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT), size: "large" };
   obj[1] = callback2(closure_5, obj);
@@ -91,12 +91,12 @@ function AcceptInviteCardComponent(invite) {
     let obj = {};
     const merged = Object.assign(invite);
     obj.invite = invite;
-    return callback2(first(12073), obj);
+    return callback2(first(12076), obj);
   } else if (tmp22.ERROR === first) {
     obj = {};
     const merged1 = Object.assign(invite);
     obj.invite = invite;
-    return callback2(first(12076), obj);
+    return callback2(first(12079), obj);
   } else {
     return callback2(InviteResolving, {});
   }
@@ -121,7 +121,7 @@ export default function AcceptInvite(invite) {
   invite = invite.invite;
   const merged = Object.assign(invite, Object.create(null));
   const tmp2 = createCacheKey();
-  ({ height, width } = importDefault(1474)());
+  ({ height, width } = importDefault(1493)());
   let obj = invite;
   if (invite == null) {
     obj = {};
@@ -132,14 +132,14 @@ export default function AcceptInvite(invite) {
     splash = guild.splash;
   }
   if (null == splash) {
-    let guildSplashSource = tmp3(12081);
+    let guildSplashSource = tmp3(12084);
   } else {
     obj = { id: null, splash: null, size: null };
     ({ id: obj3[0], splash: obj3[1] } = guild);
-    let obj3 = require(1450) /* handleImageLoad */;
+    let obj3 = require(1469) /* handleImageLoad */;
     obj[2] = width * obj3.getDevicePixelRatio();
-    guildSplashSource = tmp3(1416).getGuildSplashSource(obj);
-    const tmp3Result = tmp3(1416);
+    guildSplashSource = tmp3(1435).getGuildSplashSource(obj);
+    const tmp3Result = tmp3(1435);
   }
   obj = { style: items, children: null };
   items = [tmp2.parentContainer, { height, width }];

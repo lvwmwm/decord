@@ -1,10 +1,10 @@
-// Module ID: 15813
-// Function ID: 15814
+// Module ID: 15830
+// Function ID: 15831
 // Name: MainTabsEmptyChatPanel
-// Dependencies: [19, 17, 21, 4303, 712, 10997, 1609, 9711, 15814, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 11002, 1628, 9716, 15831, 2]
 // Exports: default
 
-// Module 15813 (MainTabsEmptyChatPanel)
+// Module 15830 (MainTabsEmptyChatPanel)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -32,15 +32,15 @@ let closure_6 = createCacheKey.createStyles((left, marginTop) => {
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/panels/MainTabsEmptyChatPanel.tsx");
 
 export default function MainTabsEmptyChatPanel() {
-  let obj = require(10997) /* sum */;
+  let obj = require(11002) /* sum */;
   const drawerWidth = obj.useDrawerWidth();
   const tmp3 = importDefault;
-  const tmp4 = callback(drawerWidth, importDefault(1609)().top);
+  const tmp4 = callback(drawerWidth, importDefault(1628)().top);
   let tmp5 = null;
   if (obj2.useIsFavoritesGuildSelected()) {
     obj = { style: null, pointerEvents: "box-none", children: null };
     obj[0] = tmp4.container;
-    obj[2] = jsx(tmp3(15814), {});
+    obj[2] = jsx(tmp3(15831), {});
     tmp5 = <closure_4 style={null} pointerEvents="box-none">{null}</closure_4>;
   }
   return tmp5;

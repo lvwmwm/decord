@@ -1,10 +1,10 @@
-// Module ID: 12249
-// Function ID: 12250
+// Module ID: 12252
+// Function ID: 12253
 // Name: MeasureMessage
-// Dependencies: [32, 19, 17, 5895, 5899, 1372, 4521, 8922, 676, 21, 8041, 8230, 4303, 8865, 8589, 712, 589, 10198, 1236, 11, 12250, 11020, 8610, 7223, 11057, 5427, 11293, 11078, 4311, 2]
+// Dependencies: [32, 19, 17, 5895, 5899, 1391, 4521, 8928, 676, 21, 8043, 8234, 4303, 8871, 8595, 712, 589, 10203, 1236, 11, 12253, 11025, 8616, 7224, 11062, 5427, 11298, 11083, 4311, 2]
 // Exports: default
 
-// Module 12249 (MeasureMessage)
+// Module 12252 (MeasureMessage)
 import _slicedToArray from "_slicedToArray";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import get_ActivityIndicator from "useReactionPermissions";
@@ -322,7 +322,7 @@ export default function MediaMessagePreview(channelId) {
           }
         }
         let obj = channelId(onClose[27]);
-        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: 40, message: null, messageChannel: "sm", selectedChannelId: null, tapLinkData: "secondary" };
+        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "EMBEDDED_ACTIVITY_DEFERRED_OPEN", message: null, messageChannel: null, selectedChannelId: null, tapLinkData: null };
         obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
           channel = channel.getChannel(arg1);
           if (null != channel) {

@@ -1,9 +1,9 @@
-// Module ID: 15924
-// Function ID: 15925
+// Module ID: 15941
+// Function ID: 15942
 // Name: renderLabel
-// Dependencies: [109, 19, 17, 21, 4303, 712, 4013, 1297, 4299, 9681, 4153, 2]
+// Dependencies: [109, 19, 17, 21, 4303, 712, 4031, 1297, 4299, 9686, 1363, 2]
 
-// Module 15924 (renderLabel)
+// Module 15941 (renderLabel)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -71,7 +71,7 @@ prototype["renderIcon"] = function renderIcon() {
     const tmp13 = closure_5;
     const tmp14 = callback2;
     const merged = Object.assign(tmp11);
-    const items = [callback2(importDefault(9681), obj), ];
+    const items = [callback2(importDefault(9686), obj), ];
     let tmp14Result = null;
     if (null != error) {
       const obj1 = { style: null };
@@ -86,7 +86,7 @@ prototype["renderIcon"] = function renderIcon() {
     return tmp12(tmp13, obj);
   } else {
     if (null == source) {
-      obj = require(4153) /* AccessibilityAnnouncer */;
+      obj = require(1363) /* AccessibilityAnnouncer */;
       if (obj.isThemeLight(this.context.theme)) {
         darkSource = tmp2;
       }

@@ -1,10 +1,10 @@
-// Module ID: 13989
-// Function ID: 13990
+// Module ID: 13997
+// Function ID: 13998
 // Name: WebAuthnSuccessStep
-// Dependencies: [19, 21, 1480, 5270, 13974, 13990, 1236, 2]
+// Dependencies: [19, 21, 1499, 5270, 13982, 13998, 1236, 2]
 // Exports: default
 
-// Module 13989 (WebAuthnSuccessStep)
+// Module 13997 (WebAuthnSuccessStep)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -12,7 +12,7 @@ const require = arg1;
 let result = require("useNavigation").fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnSuccessStep.tsx");
 
 export default function WebAuthnSuccessStep() {
-  let obj = navigation(1480);
+  let obj = navigation(1499);
   navigation = obj.useNavigation();
   const items = [navigation];
   const layoutEffect = React.useLayoutEffect(() => {
@@ -26,5 +26,5 @@ export default function WebAuthnSuccessStep() {
   obj = { onGenerate: null, headerLabel: null };
   const intl = navigation(1236).intl;
   obj[1] = intl.format(navigation(1236).t.iVTs6i, {});
-  return jsx(importDefault(13990), { onGenerate: null, headerLabel: null });
+  return jsx(importDefault(13998), { onGenerate: null, headerLabel: null });
 };

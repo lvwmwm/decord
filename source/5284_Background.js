@@ -1,7 +1,7 @@
 // Module ID: 5284
 // Function ID: 5285
 // Name: Background
-// Dependencies: [19, 17, 21, 1481]
+// Dependencies: [19, 17, 21, 1500]
 // Exports: Background
 
 // Module 5284 (Background)
@@ -13,7 +13,7 @@ const require = arg1;
 
 export const Background = function Background(style) {
   const merged = Object.assign(style, Object.create(null));
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   obj = {};
   const merged1 = Object.assign(merged);
   obj = { flex: 1, backgroundColor: obj.useTheme().colors.background };

@@ -1,10 +1,10 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 11799
+// Function ID: 11800
 // Name: usePendingGameProfileReturn
-// Dependencies: [19, 4324, 9279, 676, 589, 9277, 9283, 2]
+// Dependencies: [19, 4324, 9285, 676, 589, 9283, 9289, 2]
 // Exports: default
 
-// Module 11796 (usePendingGameProfileReturn)
+// Module 11799 (usePendingGameProfileReturn)
 import noop from "noop";
 import handleLoadMessages from "handleLoadMessages";
 import getSimilarGames from "getSimilarGames";

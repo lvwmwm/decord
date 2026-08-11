@@ -1,10 +1,10 @@
-// Module ID: 16275
-// Function ID: 16276
+// Module ID: 16290
+// Function ID: 16291
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 4303, 712, 16256, 16243, 16257, 5781, 9478, 12847, 2]
+// Dependencies: [19, 21, 4303, 712, 16270, 16257, 16271, 5781, 9484, 12851, 2]
 // Exports: default
 
-// Module 16275 (VoicePanelDrawerToggleButton)
+// Module 16290 (VoicePanelDrawerToggleButton)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,20 +29,20 @@ export default function VoicePanelDrawerToggleButton(arg0) {
   let wrapperSpecs;
   ({ props, openTab, wrapperSpecs } = arg0);
   const tmp = createCacheKey();
-  let obj = require(16256) /* useVoicePanelButtonStyles */;
+  let obj = require(16270) /* useVoicePanelButtonStyles */;
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  ({ isDrawerOpen, handlePress, accessibilityLabel } = importDefault(16243)(openTab));
+  ({ isDrawerOpen, handlePress, accessibilityLabel } = importDefault(16257)(openTab));
   obj = { onPress: handlePress, props, accessibilityLabel, children: null };
-  const tmp5 = importDefault(16243)(openTab);
+  const tmp5 = importDefault(16257)(openTab);
   const tmp6 = closure_4;
   const items = [tmp.circle, { backgroundColor: voicePanelButtonStyles.iconBg.backgroundColor }];
   const items1 = [callback(importDefault(5781), { style: items }), ];
   obj = { style: tmp.iconContainer, children: null };
-  const tmp7 = importDefault(16257);
+  const tmp7 = importDefault(16271);
   if (isDrawerOpen) {
-    let ChevronSmallUpIcon = tmp2(9478).ChevronSmallDownIcon;
+    let ChevronSmallUpIcon = tmp2(9484).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp2(12847).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp2(12851).ChevronSmallUpIcon;
   }
   obj[1] = callback(ChevronSmallUpIcon, { color: voicePanelButtonStyles.iconFill.color });
   items1[1] = callback(importDefault(5781), obj);

@@ -1,9 +1,9 @@
-// Module ID: 10746
-// Function ID: 10747
+// Module ID: 10751
+// Function ID: 10752
 // Name: send
-// Dependencies: [676, 10747, 10737, 10736, 2]
+// Dependencies: [676, 10752, 10742, 10741, 2]
 
-// Module 10746 (send)
+// Module 10751 (send)
 import { RPCCloseCodes } from "ME";
 import "checkRpcVersion";
 
@@ -65,7 +65,7 @@ prototype["send"] = function send(arg0) {
   if (onSendingToRPCClient != null) {
     onSendingToRPCClient(arg0, self.id);
   }
-  const items = [importDefault(10736).FRAME, arg0];
+  const items = [importDefault(10741).FRAME, arg0];
   const result = self.postMessageToRPCClient(items, self.source.origin);
 };
 prototype["close"] = function close(arg0, arg1) {

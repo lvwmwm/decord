@@ -1,10 +1,10 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7168
+// Function ID: 7169
 // Name: progressFromServer
-// Dependencies: [32, 4503, 7168, 7165, 2]
+// Dependencies: [32, 4503, 7169, 7166, 2]
 // Exports: excludedQuestFromServer, getClaimedQuestWithUserStatusFromServer, isQuestWithKnownConfigVersion, questConfigFromServer, questUserStatusFromServer, questWithUserStatusFromServer, questsEntitlementsFromServer, questsRewardCodeFromServer
 
-// Module 7167 (progressFromServer)
+// Module 7168 (progressFromServer)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -32,7 +32,7 @@ function progressFromServer(progress) {
   return obj;
 }
 function getSimpleRewardFromServer(type) {
-  if (type.type === require(7165) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+  if (type.type === require(7166) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
     let obj = { skuId: null, type: null, name: null, nameWithArticle: null, collectibleProduct: null, orbQuantity: null };
     ({ sku_id: obj2[0], type: obj2[1], name: obj2[2], name_with_article: obj2[3], collectible_product: obj2[4], orb_quantity: obj2[5] } = type);
   } else {
@@ -53,7 +53,7 @@ function _questsEntitlementFromServer(skuId) {
   if (null != quest_rewards) {
     quest_rewards = tenant_metadata.quest_rewards;
     const tag = quest_rewards.reward.tag;
-    if (require(7165) /* QuestRewardTypes */.QuestRewardTypes.IN_GAME === tag) {
+    if (require(7166) /* QuestRewardTypes */.QuestRewardTypes.IN_GAME === tag) {
       obj = { questRewards: null };
       obj = { reward: null };
       const obj1 = { tag: null };
@@ -61,7 +61,7 @@ function _questsEntitlementFromServer(skuId) {
       obj[0] = obj1;
       obj[0] = obj;
       tmp2 = obj;
-    } else if (tmp3(7165).QuestRewardTypes.REWARD_CODE === tag) {
+    } else if (tmp3(7166).QuestRewardTypes.REWARD_CODE === tag) {
       const obj2 = { tag: null, rewardCode: null };
       obj2[0] = quest_rewards.reward.tag;
       const obj3 = { userId: null, questId: null, code: null, platform: null, claimedAt: null, tier: null };
@@ -153,7 +153,7 @@ export const getClaimedQuestWithUserStatusFromServer = function getClaimedQuestW
   obj = { id: config.id, startsAt: config.starts_at, expiresAt: config.expires_at, features: config.features, messages: obj, assets: obj1, colors: obj2, rewards: rewards.map(getSimpleRewardFromServer), cosponsorMetadata: null };
   obj = { questName: config.messages.quest_name, gamePublisher: config.messages.game_publisher, gameTitle: config.messages.game_title };
   rewards = config.rewards;
-  obj[8] = require(7168) /* questFromServerV2 */.questCosponsorMetadataFromServer(config.cosponsor_metadata);
+  obj[8] = require(7169) /* questFromServerV2 */.questCosponsorMetadataFromServer(config.cosponsor_metadata);
   obj[1] = obj;
   let tmp = null;
   if (null != id.user_status) {

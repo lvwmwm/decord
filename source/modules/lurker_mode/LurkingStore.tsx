@@ -1,9 +1,9 @@
-// Module ID: 3930
-// Function ID: 3931
+// Module ID: 3949
+// Function ID: 3950
 // Name: initialize
-// Dependencies: [1415, 1971, 1891, 1903, 676, 589, 709, 2]
+// Dependencies: [1434, 1990, 1910, 1922, 676, 589, 709, 2]
 
-// Module 3930 (initialize)
+// Module 3949 (initialize)
 import { isGuildLurker } from "GuildNSFWContentLevel";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -46,10 +46,10 @@ prototype["isLurking"] = function isLurking(guildId) {
     return Boolean(tmp6);
   }
 };
-prototype["getLurkingSourceForGuild"] = function getLurkingSourceForGuild(arg0) {
+prototype["getLurkingSourceForGuild"] = function getLurkingSourceForGuild(closure_0) {
   let tmp = null;
-  if (null != arg0) {
-    let tmp3 = table2[arg0];
+  if (null != closure_0) {
+    let tmp3 = table2[closure_0];
     if (tmp3 == null) {
       tmp3 = null;
     }
@@ -96,6 +96,10 @@ const lurkingStore = new LurkingStore(require("dispatcher"), {
         obj = { type: null, directoryChannelId: null };
         obj[0] = tmp12.DIRECTORY_ENTRY;
         obj[1] = tmp3;
+        closure_8[guildId] = obj;
+      } else if (tmp12.GAME_COMMUNITY_UPSELL === source) {
+        obj = { type: null };
+        obj[0] = tmp12.GAME_COMMUNITY_UPSELL;
         closure_8[guildId] = obj;
       } else {
         delete tmp2[tmp];

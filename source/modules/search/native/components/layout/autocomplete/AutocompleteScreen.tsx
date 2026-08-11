@@ -1,12 +1,12 @@
-// Module ID: 15804
-// Function ID: 15805
-// Dependencies: [32, 19, 1372, 3938, 1903, 11714, 11711, 8397, 676, 21, 589, 15729, 11710, 11735, 11732, 4146, 4494, 11712, 15805, 11718, 11713, 15766, 15721, 1236, 15733, 2]
+// Module ID: 15821
+// Function ID: 15822
+// Dependencies: [32, 19, 1391, 3957, 1922, 11717, 11714, 8403, 676, 21, 589, 15746, 11713, 11738, 11735, 4148, 4494, 11715, 15822, 11721, 11716, 15783, 15738, 1236, 15750, 2]
 
-// Module 15804
+// Module 15821
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getMatch";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleUserSearchResults from "handleUserSearchResults";
 import prototype from "prototype";

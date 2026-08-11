@@ -1,7 +1,9 @@
 // Module ID: 13577
 // Function ID: 13578
-// Dependencies: [13578, 13582]
+// Dependencies: [13578, 13646]
 
 // Module 13577
+import module_13578 from "module_13578";
 
-export default (arg0) => require(13578)(require(13582)(arg0));
+
+export default require("module_13646").Object.assign;

@@ -1,7 +1,7 @@
 // Module ID: 5306
 // Function ID: 5307
 // Name: HeaderBackButton
-// Dependencies: [32, 19, 17, 21, 1481, 5307, 5278, 5308, 5279, 5312]
+// Dependencies: [32, 19, 17, 21, 1500, 5307, 5278, 5308, 5279, 5312]
 // Exports: HeaderBackButton
 
 // Module 5306 (HeaderBackButton)
@@ -81,10 +81,10 @@ export const HeaderBackButton = function HeaderBackButton(accessibilityLabel) {
   let importDefault;
   let dependencyMap;
   ({ testID, style, href } = accessibilityLabel);
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   const theme = obj.useTheme();
   ({ colors, fonts } = theme);
-  let obj1 = require(1481) /* createStandardNavigationFactories */;
+  let obj1 = require(1500) /* createStandardNavigationFactories */;
   const direction = obj1.useLocale().direction;
   [tmp6, c1] = callback(React.useState(null), 2);
   const tmp5 = callback(React.useState(null), 2);

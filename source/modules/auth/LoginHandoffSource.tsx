@@ -1,10 +1,10 @@
-// Module ID: 5935
-// Function ID: 5936
+// Module ID: 5937
+// Function ID: 5938
 // Name: LoginHandoffSource
-// Dependencies: [1379, 685, 4495, 5170, 2]
+// Dependencies: [1398, 685, 4495, 5170, 2]
 // Exports: getLoginHandoffSourceFromRedirectTo
 
-// Module 5935 (LoginHandoffSource)
+// Module 5937 (LoginHandoffSource)
 import { StaticChannelRoute } from "set";
 import { UserSettingsPath } from "MAX_FAVORITES";
 

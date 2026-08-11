@@ -1,7 +1,7 @@
 // Module ID: 5894
 // Function ID: 5895
 // Name: canReportMessageToMods
-// Dependencies: [5895, 1372, 1891, 4521, 1903, 5905, 5906, 5886, 5907, 5885, 506, 3934, 5908, 5909, 5912, 5919, 2]
+// Dependencies: [5895, 1391, 1910, 4521, 1922, 5905, 5906, 5886, 5907, 5885, 506, 3953, 5908, 5909, 5912, 5919, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannel, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportOrPostChannel, isModeratorReportOrPostChannelId, isModeratorReportPostChannel, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
 // Module 5894 (canReportMessageToMods)
@@ -58,8 +58,8 @@ export const canAccessReportsChannel = function canAccessReportsChannel(arg0) {
       obj = { user: null, context: null, checkElevated: false };
       obj[0] = contextForPermission.user;
       obj[1] = guild;
-      hasAnyResult = obj2.hasAny(importAll(3934).computePermissions(obj), ReportToModPermissions);
-      const obj3 = importAll(3934);
+      hasAnyResult = obj2.hasAny(importAll(3953).computePermissions(obj), ReportToModPermissions);
+      const obj3 = importAll(3953);
     }
     return hasAnyResult;
   }

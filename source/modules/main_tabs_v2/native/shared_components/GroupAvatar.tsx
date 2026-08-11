@@ -1,12 +1,12 @@
-// Module ID: 12316
-// Function ID: 12317
+// Module ID: 12319
+// Function ID: 12320
 // Name: AnimatedContainer
-// Dependencies: [19, 17, 4295, 21, 4303, 712, 5158, 1348, 4153, 5329, 647, 4036, 4304, 4713, 4299, 5268, 2]
+// Dependencies: [19, 17, 4295, 21, 4303, 712, 5158, 1367, 1363, 5329, 647, 4042, 4304, 4713, 8197, 4299, 5268, 2]
 // Exports: default
 
-// Module 12316 (AnimatedContainer)
+// Module 12319 (AnimatedContainer)
 import noop from "noop";
-import { View } from "get ActivityIndicator";
+import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
 import { createElement } from "noop";
@@ -28,7 +28,7 @@ function AnimatedContainer(scale) {
   let sharedValue2;
   let sharedValue3;
   ({ shadow, children } = scale);
-  const tmp3 = callback3(translateX(translateY[7])("GroupAvatar"));
+  const tmp3 = callback2(translateX(translateY[7])("GroupAvatar"));
   let obj = scale(translateY[10]);
   let items = [sharedValue1];
   stateFromStores = obj.useStateFromStores(items, () => sharedValue1.useReducedMotion);
@@ -121,17 +121,28 @@ function AnimatedContainer(scale) {
   return sharedValue2(tmp(translateY[11]).View, { style, children });
 }
 function GroupMemberCount(count) {
-  const tmp = callback3(importDefault(1348)("GroupAvatar"));
-  let obj = { style: tmp.avatarWrapper, children: null };
-  obj = { style: tmp.overflowCount, children: callback2(require(4299) /* Text */.Text, { variant: "text-sm/semibold", children: items }) };
-  items = ["+", count.count];
-  obj[1] = callback(View, obj);
-  return callback(View, obj);
+  count = count.count;
+  let obj = require(8197) /* apexExperiment */;
+  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GroupAvatar");
+  const tmp3 = callback2(importDefault(1367)("GroupAvatar"));
+  obj = { style: tmp3.avatarWrapper, children: null };
+  obj = { style: tmp3.overflowCount, children: null };
+  let str = "text-sm/semibold";
+  if (manaTypeConsolidationExperiment) {
+    str = "text-sm/semibold";
+    if (count < 100) {
+      str = "experimental/body-md/semibold";
+    }
+  }
+  const items = ["+", count];
+  obj[1] = closure_7(require(4299) /* Text */.Text, { variant: str, children: items });
+  obj[1] = closure_6(View, obj);
+  return closure_6(View, obj);
 }
 function GroupMemberAvatar(guildId) {
   guildId = guildId.guildId;
   const user = guildId.user;
-  const tmp3 = callback3(user(1348)("GroupAvatar"));
+  const tmp3 = callback2(user(1367)("GroupAvatar"));
   const items = [guildId, user];
   const memo = React.useMemo(() => {
     let avatarSource;
@@ -261,7 +272,7 @@ export default function GroupAvatar(users) {
   let c4;
   let num;
   let closure_6;
-  let tmp3 = callback3(guildId(ref[7])("GroupAvatar"));
+  let tmp3 = callback2(guildId(ref[7])("GroupAvatar"));
   let obj = users(ref[8]);
   const themeContext = obj.useThemeContext();
   ({ primaryColor, theme } = themeContext);

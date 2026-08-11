@@ -1,10 +1,10 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 14482
+// Function ID: 14483
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1903, 21, 4303, 712, 1236, 589, 4493, 1416, 5753, 5268, 4299, 688, 1297, 5754, 2]
+// Dependencies: [19, 17, 1922, 21, 4303, 712, 1236, 589, 4493, 1435, 5753, 5268, 4299, 688, 1297, 5754, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 14474 (GuildRoleSubscriptionMemberPreview)
+// Module 14482 (GuildRoleSubscriptionMemberPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -45,13 +45,13 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
   if (null == role) {
     return null;
   } else {
-    let tmp6Result = tmp6(1416);
+    let tmp6Result = tmp6(1435);
     let avatarURL;
     if (stateFromStores != null) {
       avatarURL = stateFromStores.getAvatarURL(guildId, 40);
     }
     if (avatarURL == null) {
-      tmp6Result = tmp6(1416);
+      tmp6Result = tmp6(1435);
       avatarURL = tmp6Result.getDefaultAvatarURL(undefined, undefined);
     }
     const source = tmp6Result.makeSource(avatarURL);

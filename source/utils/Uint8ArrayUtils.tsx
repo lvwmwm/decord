@@ -1,10 +1,10 @@
-// Module ID: 1357
-// Function ID: 1358
+// Module ID: 1376
+// Function ID: 1377
 // Name: hasBit
 // Dependencies: [2]
 // Exports: addBit, hasBit, isSerializedUint8Array, isUint8Array, removeBit
 
-// Module 1357 (hasBit)
+// Module 1376 (hasBit)
 let result = require("set").fileFinishedImporting("utils/Uint8ArrayUtils.tsx");
 
 export const hasBit = function hasBit(dismissedContents, closure_0) {

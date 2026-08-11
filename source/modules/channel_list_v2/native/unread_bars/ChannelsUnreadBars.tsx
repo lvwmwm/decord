@@ -1,11 +1,11 @@
-// Module ID: 15308
-// Function ID: 15309
+// Module ID: 15320
+// Function ID: 15321
 // Name: shouldSkipSection
-// Dependencies: [32, 19, 17, 4295, 1372, 7097, 4315, 4499, 9795, 4500, 21, 4303, 6987, 4720, 8008, 14342, 636, 643, 589, 4036, 15264, 7641, 4272, 4273, 15309, 2]
+// Dependencies: [32, 19, 17, 4295, 1391, 7098, 4315, 4499, 9800, 4500, 21, 4303, 6990, 4720, 8010, 14350, 636, 643, 589, 4042, 15273, 7643, 4272, 4273, 15321, 2]
 
-// Module 15308 (shouldSkipSection)
+// Module 15320 (shouldSkipSection)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_4036";
+import importAllResult from "module_4042";
 import get_ActivityIndicator from "shallowEqual";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -23,8 +23,8 @@ let closure_14;
 let map1;
 const require = arg1;
 function shouldSkipSection(diff1) {
-  if (require(6987) /* computeSubtitle */.SECTION_INDEX_CHANNEL_NOTICES !== diff1) {
-    if (require(6987) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS !== diff1) {
+  if (require(6990) /* computeSubtitle */.SECTION_INDEX_CHANNEL_NOTICES !== diff1) {
+    if (require(6990) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS !== diff1) {
       return false;
     }
   }
@@ -132,7 +132,7 @@ function findNearestUnreadItem(containerSize, id) {
         let tmp71 = require;
         let tmp72 = dependencyMap;
         let tmp73 = dependencyMap;
-        if (tmp12.type === require(8008) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
+        if (tmp12.type === require(8010) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
           let tmp16 = item10031;
           if (tmp12.layoutStart > tmp8) {
             let tmp29 = obj;
@@ -147,7 +147,7 @@ function findNearestUnreadItem(containerSize, id) {
             let tmp18 = item10031;
             let tmp19 = tmp70;
             let tmp20 = tmp72;
-            if (tmp12.type !== tmp71(8008).FastListItemTypes.ITEM) {
+            if (tmp12.type !== tmp71(8010).FastListItemTypes.ITEM) {
               tmp9 = item10031;
             } else {
               let tmp21 = shouldSkipSection;

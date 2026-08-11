@@ -1,10 +1,10 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 8992
+// Function ID: 8993
 // Name: canManageResource
-// Dependencies: [32, 19, 3929, 1903, 8985, 505, 506, 1411, 589, 2]
+// Dependencies: [32, 19, 3948, 1922, 8991, 505, 506, 1430, 589, 2]
 // Exports: attachChannelPermissions, getManageResourcePermissions, useManageResourcePermissions
 
-// Module 8986 (canManageResource)
+// Module 8992 (canManageResource)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -103,7 +103,7 @@ export const useManageResourcePermissions = function useManageResourcePermission
   let dependencyMap;
   let importAll;
   const _require = channel;
-  let obj = _require(1411);
+  let obj = _require(1430);
   if (obj.isGuildRecord(channel)) {
     let items = [, ];
     ({ CREATE_EVENTS: arr3[0], MANAGE_EVENTS: arr3[1] } = Permissions);

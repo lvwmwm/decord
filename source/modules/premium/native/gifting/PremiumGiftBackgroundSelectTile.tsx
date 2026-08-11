@@ -1,10 +1,10 @@
-// Module ID: 12146
-// Function ID: 12147
+// Module ID: 12149
+// Function ID: 12150
 // Name: PremiumGiftStyles
-// Dependencies: [19, 17, 1905, 12147, 21, 12148, 12149, 12150, 12151, 12152, 12153, 12154, 12155, 12156, 4303, 712, 1236, 2348, 5268, 2]
+// Dependencies: [19, 17, 1924, 12150, 21, 12151, 12152, 12153, 12154, 12155, 12156, 12157, 12158, 12159, 4303, 712, 1236, 2367, 5268, 2]
 // Exports: default
 
-// Module 12146 (PremiumGiftStyles)
+// Module 12149 (PremiumGiftStyles)
 import "set";
 import get_ActivityIndicator from "messagesProxy";
 import { PremiumGiftStyles } from "GuildFeatures";
@@ -65,7 +65,7 @@ export default function GiftBackgroundSelectTile(index) {
     obj = { giftStyle: null };
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]);
-    obj[0] = intl.formatToPlainString(importDefault(2348)["+utqaz"], obj);
+    obj[0] = intl.formatToPlainString(importDefault(2367)["+utqaz"], obj);
     obj[1] = selected;
     obj[2] = tmp.container;
     obj[3] = index.onPress;

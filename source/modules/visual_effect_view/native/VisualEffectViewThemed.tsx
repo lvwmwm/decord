@@ -1,14 +1,14 @@
-// Module ID: 8774
-// Function ID: 8775
-// Dependencies: [19, 21, 4239, 4153, 4704, 2]
+// Module ID: 8780
+// Function ID: 8781
+// Dependencies: [19, 21, 4239, 1363, 4704, 2]
 
-// Module 8774
+// Module 8780
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
 const require = arg1;
 const forwardRefResult = require("noop").forwardRef(function VisualEffectViewThemed(arg0, ref) {
-  let obj = require(4153) /* AccessibilityAnnouncer */;
+  let obj = require(1363) /* AccessibilityAnnouncer */;
   let str = "dark";
   if (obj.isThemeLight(tmp3)) {
     str = "light";

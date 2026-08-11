@@ -1,10 +1,10 @@
-// Module ID: 11912
-// Function ID: 11913
+// Module ID: 11915
+// Function ID: 11916
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4191, 21, 4303, 712, 11913, 7695, 4299, 2]
+// Dependencies: [17, 4191, 21, 4303, 712, 11916, 7697, 4299, 2]
 // Exports: default
 
-// Module 11912 (GuildPowerupsBoostInfo)
+// Module 11915 (GuildPowerupsBoostInfo)
 import { View } from "get ActivityIndicator";
 import { BoostInfoType } from "BoostedGuildTiers";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   let type;
   ({ count, type } = arg0);
   const tmp = callback();
-  let obj = require(11913) /* getGuildPowerupsBoostInfoText */;
+  let obj = require(11916) /* getGuildPowerupsBoostInfoText */;
   const guildPowerupsBoostInfoText = obj.getGuildPowerupsBoostInfoText(count, type);
   obj = { style: tmp.container, accessible: true, accessibilityLabel: "" + count + ", " + guildPowerupsBoostInfoText, children: null };
   obj = { style: tmp.headerContainer, importantForAccessibility: "no-hide-descendants", accessible: false, children: null };
@@ -34,7 +34,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   } else {
     TEXT_MUTED = importDefault(712).colors.TEXT_MUTED;
   }
-  const items = [closure_5(require(7695) /* BoostGemIcon */.BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
+  const items = [closure_5(require(7697) /* BoostGemIcon */.BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-subtle";
   if (type === BoostInfoType.AVAILABLE) {
     str = "text-strong";

@@ -1,10 +1,10 @@
-// Module ID: 15867
-// Function ID: 15868
+// Module ID: 15884
+// Function ID: 15885
 // Name: useHasSettingsBadge
-// Dependencies: [19, 17, 1903, 1369, 1905, 21, 4303, 501, 712, 1348, 12740, 6913, 4123, 1358, 589, 8307, 8823, 8832, 4153, 689, 3947, 15868, 10461, 15869, 15870, 11166, 5164, 15871, 14241, 1236, 15872, 15874, 7704, 6011, 4725, 2]
+// Dependencies: [19, 17, 1922, 1388, 1924, 21, 4303, 501, 712, 1367, 12744, 6915, 4125, 1377, 589, 8312, 8829, 8838, 1363, 689, 3966, 15885, 10466, 15886, 15887, 11171, 5164, 15888, 14249, 1236, 15889, 15891, 7706, 6013, 4725, 2]
 // Exports: useHasSettingsBadge
 
-// Module 15867 (useHasSettingsBadge)
+// Module 15884 (useHasSettingsBadge)
 import importAllResult from "n";
 import get_ActivityIndicator from "useUserProfileColors";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -46,7 +46,7 @@ let closure_13 = createCacheKey.createStyles((arg0, arg1, color) => {
   }
   const obj1 = { marginBottom: PX_24, paddingVertical: tmp8(712).space.PX_8, paddingHorizontal: tmp8(712).space.PX_24, borderRadius: null, backgroundColor: null, flexDirection: "row", borderColor: null, borderWidth: 1 };
   isIOSResult = require(501) /* PlatformTypes */.isIOS();
-  const result = tmp3(1348).isMobileVisualRefreshEnabled("YouBannerDecorations");
+  const result = tmp3(1367).isMobileVisualRefreshEnabled("YouBannerDecorations");
   const radii = tmp8(712).radii;
   let BACKGROUND_SURFACE_HIGH = arg1;
   obj1[3] = result ? radii.lg : radii.round;
@@ -57,7 +57,7 @@ let closure_13 = createCacheKey.createStyles((arg0, arg1, color) => {
   obj1[6] = arg3;
   const merged2 = Object.assign(tmp8(712).shadows.SHADOW_HIGH);
   obj[2] = obj1;
-  const tmp3Result = tmp3(1348);
+  const tmp3Result = tmp3(1367);
   obj[3] = { flexDirection: "row", alignItems: "center", gap: tmp8(712).space.PX_16 };
   obj[4] = { height: "100%", alignItems: "center", justifyContent: "center" };
   return obj;
@@ -268,11 +268,11 @@ let result = require("mergeGuildAvatar").fileFinishedImporting("modules/main_tab
 
 export default memoResult;
 export const useHasSettingsBadge = function useHasSettingsBadge() {
-  let tmp = require(12740) /* useEligibleActiveOutboundPromotions */.useUnseenOutboundPromotions().length > 0;
-  const obj = require(12740) /* useEligibleActiveOutboundPromotions */;
-  const obj2 = require(6913) /* hasUserTrialOfferExpired */;
-  const tmp2 = null != require(6913) /* hasUserTrialOfferExpired */.useTrialOffer(closure_9);
-  const result = require(4123) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1358) /* DismissibleContent */.DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+  let tmp = require(12744) /* useEligibleActiveOutboundPromotions */.useUnseenOutboundPromotions().length > 0;
+  const obj = require(12744) /* useEligibleActiveOutboundPromotions */;
+  const obj2 = require(6915) /* hasUserTrialOfferExpired */;
+  const tmp2 = null != require(6915) /* hasUserTrialOfferExpired */.useTrialOffer(closure_9);
+  const result = require(4125) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1377) /* DismissibleContent */.DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
   let tmp4 = !result;
   if (!result) {
     tmp4 = tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 6026
-// Function ID: 6027
+// Module ID: 6028
+// Function ID: 6029
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 1369, 21, 4303, 712, 1609, 4271, 5397, 4712, 6027, 4299, 1236, 2056, 4714, 2]
+// Dependencies: [19, 17, 1388, 21, 4303, 712, 1628, 4271, 5397, 4712, 6029, 4299, 1236, 2075, 4714, 2]
 // Exports: default
 
-// Module 6026 (GiftCardMobileConsumptionActionSheet)
+// Module 6028 (GiftCardMobileConsumptionActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -61,17 +61,17 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
     children: null
   };
   obj = { style: items2, children: null };
-  items2 = [tmp.container, { paddingBottom: importDefault(1609)().bottom }];
+  items2 = [tmp.container, { paddingBottom: importDefault(1628)().bottom }];
   obj = { spacing: null, children: null };
   obj[0] = importDefault(712).space.PX_16;
-  const items3 = [callback(View, { style: tmp.illustration, children: callback(markAsDismissed(6027).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
+  const items3 = [callback(View, { style: tmp.illustration, children: callback(markAsDismissed(6029).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
   const obj2 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: null };
   const intl = markAsDismissed(1236).intl;
-  obj2[3] = intl.string(importDefault(2056).V3DI1E);
+  obj2[3] = intl.string(importDefault(2075).V3DI1E);
   items3[1] = callback(markAsDismissed(4299).Text, obj2);
   const obj3 = { size: "lg", variant: "secondary", grow: true, text: null, onPress: null };
   const intl2 = markAsDismissed(1236).intl;
-  obj3[3] = intl2.string(importDefault(2056).YZePWx);
+  obj3[3] = intl2.string(importDefault(2075).YZePWx);
   obj3[4] = function onPress() {
     return callback(outer1_5.USER_DISMISS);
   };

@@ -1,10 +1,10 @@
-// Module ID: 7198
-// Function ID: 7199
+// Module ID: 7199
+// Function ID: 7200
 // Name: _findPlayingActivity
-// Dependencies: [4390, 676, 7199, 643, 589, 2]
+// Dependencies: [4390, 676, 7200, 643, 589, 2]
 // Exports: getStreamerActivity, getStreamerActivityByUserId, getStreamerApplication, useGetStreamApplication
 
-// Module 7198 (_findPlayingActivity)
+// Module 7199 (_findPlayingActivity)
 import sortActivity from "sortActivity";
 import { ActivityTypes } from "ME";
 
@@ -12,7 +12,7 @@ const require = arg1;
 function _findPlayingActivity(type) {
   let tmp = type.type === ActivityTypes.PLAYING;
   if (tmp) {
-    tmp = !importDefault(7199)(type);
+    tmp = !importDefault(7200)(type);
   }
   return tmp;
 }

@@ -1,10 +1,10 @@
-// Module ID: 12678
-// Function ID: 12679
+// Module ID: 12682
+// Function ID: 12683
 // Name: useFormatStringWithCommonPremiumParams
-// Dependencies: [3952, 1905, 589, 3947, 5855, 1236, 1974, 2]
+// Dependencies: [3971, 1924, 589, 3966, 5855, 1236, 1993, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12678 (useFormatStringWithCommonPremiumParams)
+// Module 12682 (useFormatStringWithCommonPremiumParams)
 import addSubscriptionPlan from "addSubscriptionPlan";
 import GuildFeatures from "GuildFeatures";
 
@@ -21,8 +21,8 @@ export const useFormatStringWithCommonPremiumParams = function useFormatStringWi
   if (-1 !== body.indexOf("{price}")) {
     if (stateFromStores) {
       try {
-        const defaultPrice = importDefault(3947).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
-        const obj2 = importDefault(3947);
+        const defaultPrice = importDefault(3966).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+        const obj2 = importDefault(3966);
         str = require(5855) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
         const tmpResult = require(5855) /* formatSingleCurrencyPrice */;
       } catch (err) {
@@ -55,7 +55,7 @@ export const getHelpArticleLinkProps = function getHelpArticleLinkProps(helpArti
         linkText = helpArticle.linkText;
       }
       const obj = { url: null, linkText: null };
-      obj[0] = importDefault(1974).getArticleURL(id);
+      obj[0] = importDefault(1993).getArticleURL(id);
       obj[1] = linkText;
       return obj;
     }

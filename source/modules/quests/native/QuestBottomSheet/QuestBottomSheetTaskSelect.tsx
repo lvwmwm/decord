@@ -1,10 +1,10 @@
-// Module ID: 14403
-// Function ID: 14404
+// Module ID: 14411
+// Function ID: 14412
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 5161, 21, 5767, 5374, 12182, 1236, 8762, 2]
+// Dependencies: [19, 5161, 21, 5767, 5374, 12185, 1236, 8768, 2]
 // Exports: default
 
-// Module 14403 (QuestBottomSheetTaskSelect)
+// Module 14411 (QuestBottomSheetTaskSelect)
 import "noop";
 import { QuestTaskPlatform } from "QuestsExperimentLocations";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
   onTaskSelect = onTaskSelect.onTaskSelect;
   let obj = { hasIcons: true, children: null };
   obj = { arrow: true, icon: null, label: null, onPress: null };
-  obj[1] = callback(onTaskSelect(12182).ScreenIcon, {});
+  obj[1] = callback(onTaskSelect(12185).ScreenIcon, {});
   const intl = onTaskSelect(1236).intl;
   obj[2] = intl.string(onTaskSelect(1236).t["QXc01+"]);
   obj[3] = function onPress() {
@@ -31,7 +31,7 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
   };
   const items = [callback(onTaskSelect(5374).TableRow, obj), ];
   obj = { arrow: true, icon: null, label: null, onPress: null };
-  obj[1] = callback(onTaskSelect(8762).GameControllerIcon, {});
+  obj[1] = callback(onTaskSelect(8768).GameControllerIcon, {});
   const intl2 = onTaskSelect(1236).intl;
   obj[2] = intl2.string(onTaskSelect(1236).t["8lAfuB"]);
   obj[3] = function onPress() {

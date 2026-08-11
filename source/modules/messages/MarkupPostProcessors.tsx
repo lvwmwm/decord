@@ -1,10 +1,10 @@
-// Module ID: 8202
-// Function ID: 8203
+// Module ID: 8206
+// Function ID: 8207
 // Name: checkSpoilerEmbeds
-// Dependencies: [676, 4636, 4219, 8203, 4287, 1208, 2]
+// Dependencies: [676, 4636, 4219, 8207, 4287, 1208, 2]
 // Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, runMessageMarkupPostProcessors
 
-// Module 8202 (checkSpoilerEmbeds)
+// Module 8206 (checkSpoilerEmbeds)
 import ME from "ME";
 import set from "Version";
 
@@ -39988,8 +39988,8 @@ export const removeExperimentLinks = function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(8203).isExperimentEmbedURL(type.target);
-      const obj = callback(8203);
+      tmp = !callback(8207).isExperimentEmbedURL(type.target);
+      const obj = callback(8207);
     }
     return tmp;
   });
@@ -40265,8 +40265,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     found1 = found.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !callback(8203).isExperimentEmbedURL(type.target);
-        const obj = callback(8203);
+        tmp = !callback(8207).isExperimentEmbedURL(type.target);
+        const obj = callback(8207);
       }
       return tmp;
     });

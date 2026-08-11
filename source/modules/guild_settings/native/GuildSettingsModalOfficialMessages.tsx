@@ -1,12 +1,12 @@
-// Module ID: 16877
-// Function ID: 16878
+// Module ID: 16889
+// Function ID: 16890
 // Name: MessagePreview
-// Dependencies: [32, 19, 17, 4295, 1891, 9022, 5333, 4296, 505, 21, 4303, 712, 1236, 14503, 10205, 14505, 4303, 1480, 589, 9021, 5270, 6008, 4271, 15414, 1988, 8956, 4036, 5374, 13907, 688, 4299, 9141, 3971, 5887, 689, 1297, 14518, 2]
+// Dependencies: [32, 19, 17, 4295, 1910, 9028, 5333, 4296, 505, 21, 4303, 712, 1236, 14511, 10210, 14513, 4303, 1499, 589, 9027, 5270, 6010, 4271, 15431, 2007, 8962, 4042, 5374, 13915, 688, 4299, 9147, 3990, 5887, 689, 1297, 14526, 2]
 // Exports: default
 
-// Module 16877 (MessagePreview)
+// Module 16889 (MessagePreview)
 import resetCache from "resetCache";
-import module_9021 from "module_9021";
+import module_9027 from "module_9027";
 import get_ActivityIndicator from "useNavigation";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -53,7 +53,7 @@ function MessagePreview(theme) {
   obj = { style: items1, children: null };
   items1 = [tmp.chatContainerInner, { backgroundColor: obj2.alpha(closure_10).hex() }];
   const obj1 = { source: null };
-  obj1[0] = importDefault(14518);
+  obj1[0] = importDefault(14526);
   const items2 = [callback(require(1297) /* Button */.Avatar, obj1), ];
   obj2 = { style: tmp.chatContent, children: null };
   const obj3 = { style: tmp.chatHeader, children: null };
@@ -73,7 +73,7 @@ function MessagePreview(theme) {
   items2[1] = callback2(closure_5, obj2);
   obj[1] = items2;
   obj[2] = callback2(closure_5, obj);
-  return callback(importDefault(4036).View, obj);
+  return callback(importDefault(4042).View, obj);
 }
 ({ View: c5, StyleSheet } = get_ActivityIndicator);
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: c9, GUILD_OFFICIAL_HIGHLIGHT_ALPHA: c10 } = MESSAGE_GROUP_SPACING);
@@ -162,7 +162,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
   const effect1 = officialMessageColor.useEffect(() => {
     function handleSaveChanges() {
       let obj = outer1_1(outer1_2[19]);
-      obj = { officialMessageColor: module_9021 };
+      obj = { officialMessageColor: module_9027 };
       obj.saveGuild(handleSaveChanges, obj);
     }
     let fn;

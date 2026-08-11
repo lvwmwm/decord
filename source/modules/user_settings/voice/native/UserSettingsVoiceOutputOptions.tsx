@@ -1,10 +1,10 @@
-// Module ID: 10852
-// Function ID: 10853
+// Module ID: 10857
+// Function ID: 10858
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 4322, 1218, 4351, 4364, 21, 4303, 589, 38, 9155, 10846, 1236, 5374, 10853, 2]
+// Dependencies: [19, 17, 4322, 1218, 4351, 4364, 21, 4303, 589, 38, 9161, 10851, 1236, 5374, 10858, 2]
 // Exports: default
 
-// Module 10852 (UserSettingsVoiceOutputOptions)
+// Module 10857 (UserSettingsVoiceOutputOptions)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import reset from "reset";
@@ -59,7 +59,7 @@ export default function UserSettingsVoiceOutputOptions() {
   obj = { label: null, subLabel: null };
   const intl2 = stateFromStores1(1236).intl;
   obj[0] = intl2.string(stateFromStores1(1236).t.xPHVBs);
-  obj1 = { style: tmp.slider, children: callback(importDefault(10853), obj2) };
+  obj1 = { style: tmp.slider, children: callback(importDefault(10858), obj2) };
   obj2 = {
     style: tmp.slider,
     value: stateFromStores,
@@ -79,11 +79,11 @@ export default function UserSettingsVoiceOutputOptions() {
     const obj5 = { value: null, onValueChange: null };
     obj5[0] = stateFromStores2;
     obj5[1] = callback;
-    obj4[1] = tmp9(importDefault(10853), obj5);
+    obj4[1] = tmp9(importDefault(10858), obj5);
     obj3[1] = tmp9(View, obj4);
     tmp9Result = tmp9(tmp2(5374).TableRow, obj3);
   }
   items4[1] = tmp9Result;
   obj[2] = items4;
-  return closure_10(stateFromStores1(10846).UserSettingsTableRowGroup, obj);
+  return closure_10(stateFromStores1(10851).UserSettingsTableRowGroup, obj);
 };

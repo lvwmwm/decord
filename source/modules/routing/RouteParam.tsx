@@ -1,9 +1,9 @@
-// Module ID: 4143
-// Function ID: 4144
+// Module ID: 4145
+// Function ID: 4146
 // Name: RouteParam
-// Dependencies: [677, 1379, 507, 4144, 2]
+// Dependencies: [677, 1398, 507, 4146, 2]
 
-// Module 4143 (RouteParam)
+// Module 4145 (RouteParam)
 import { PSEUDO_GUILD_IDS } from "INVITE";
 import { StaticChannelRoutes } from "set";
 
@@ -23,7 +23,7 @@ export const RouteParam = {
     if (flag === undefined) {
       flag = false;
     }
-    const mapped = PSEUDO_GUILD_IDS.map(importDefault(4144));
+    const mapped = PSEUDO_GUILD_IDS.map(importDefault(4146));
     const combined = "" + mapped.join("|") + "|\\d+";
     let flag2 = { optional: flag }.optional;
     if (flag2 === undefined) {
@@ -33,7 +33,7 @@ export const RouteParam = {
     if (flag2) {
       str2 = "?";
     }
-    const unescapedPathParam = new require(507) /* getAuthenticationPath */.UnescapedPathParam(":" + importDefault(4144)(str) + "(" + combined + ")" + str2);
+    const unescapedPathParam = new require(507) /* getAuthenticationPath */.UnescapedPathParam(":" + importDefault(4146)(str) + "(" + combined + ")" + str2);
     return unescapedPathParam;
   },
   channelId() {
@@ -50,7 +50,7 @@ export const RouteParam = {
       flag = false;
     }
     const items = [...StaticChannelRoutes];
-    const mapped = items.map(importDefault(4144));
+    const mapped = items.map(importDefault(4146));
     const combined = "" + mapped.join("|") + "|\\d+";
     let flag2 = { optional: flag }.optional;
     if (flag2 === undefined) {
@@ -60,7 +60,7 @@ export const RouteParam = {
     if (flag2) {
       str2 = "?";
     }
-    const unescapedPathParam = new require(507) /* getAuthenticationPath */.UnescapedPathParam(":" + importDefault(4144)(str) + "(" + combined + ")" + str2);
+    const unescapedPathParam = new require(507) /* getAuthenticationPath */.UnescapedPathParam(":" + importDefault(4146)(str) + "(" + combined + ")" + str2);
     return unescapedPathParam;
   }
 };

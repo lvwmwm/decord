@@ -1,9 +1,9 @@
-// Module ID: 1952
-// Function ID: 1953
+// Module ID: 1971
+// Function ID: 1972
 // Name: databaseName
-// Dependencies: [5, 1218, 3, 589, 709, 1953, 1937, 2]
+// Dependencies: [5, 1218, 3, 589, 709, 1972, 1956, 2]
 
-// Module 1952 (databaseName)
+// Module 1971 (databaseName)
 import getUserId from "getUserId";
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";
@@ -140,7 +140,7 @@ const prototype = DatabaseManager.prototype;
 prototype["initialize"] = function initialize() {
   const self = this;
   this.waitFor(store);
-  const result = this.carefullySpeculativelyOpen(importAll(1953).getUserId());
+  const result = this.carefullySpeculativelyOpen(importAll(1972).getUserId());
   const result1 = this.handleAuthenticationStoreChanged();
   store.addChangeListener(() => self.handleAuthenticationStoreChanged());
 };
@@ -254,7 +254,7 @@ prototype["handleConnectionOpen"] = function handleConnectionOpen() {
   }
   let tmp3 = null == value;
   if (tmp3) {
-    tmp3 = stateResult !== _undefined(1937).DatabaseState.Open;
+    tmp3 = stateResult !== _undefined(1956).DatabaseState.Open;
   }
   if (tmp3) {
     self.remove(id);
@@ -273,11 +273,11 @@ prototype["handleAuthenticationStoreChanged"] = function handleAuthenticationSto
     if (value != null) {
       value.close();
     }
-    importAll(1953).setUserId(id);
+    importAll(1972).setUserId(id);
     self.activeUserId = id;
     const databases = self.databases;
     databases.delete(activeUserId);
-    const obj = importAll(1953);
+    const obj = importAll(1972);
   }
 };
 function carefullySpeculativelyOpen(userId) {

@@ -1,10 +1,10 @@
-// Module ID: 15352
-// Function ID: 15353
+// Module ID: 15366
+// Function ID: 15367
 // Name: ChannelBadge
-// Dependencies: [19, 17, 1975, 21, 4303, 647, 15353, 11668, 4299, 1879, 2]
+// Dependencies: [19, 17, 1994, 21, 4303, 647, 15367, 11671, 4299, 1898, 2]
 // Exports: default
 
-// Module 15352 (ChannelBadge)
+// Module 15366 (ChannelBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,7 +34,7 @@ export default function ChannelBadge(arg0) {
       obj = { mentionsCount: null, isMentionLowImportance: null };
       obj[0] = mentionCount;
       obj[1] = isMentionLowImportance;
-      obj[1] = jsx(importDefault(15353), { mentionsCount: null, isMentionLowImportance: null });
+      obj[1] = jsx(importDefault(15367), { mentionsCount: null, isMentionLowImportance: null });
       let tmp5 = <View mentionsCount={null} isMentionLowImportance={null} />;
     }
     return tmp5;
@@ -42,7 +42,7 @@ export default function ChannelBadge(arg0) {
   if (isNewChannel) {
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.channelInfoContainer;
-    obj1[1] = jsx(importDefault(11668), {});
+    obj1[1] = jsx(importDefault(11671), {});
     tmp5 = <View style={null}>{null}</View>;
   } else {
     tmp5 = null;
@@ -56,10 +56,10 @@ export default function ChannelBadge(arg0) {
             const obj2 = { style: null, children: null };
             obj2[0] = tmp.channelInfoContainer;
             const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: null };
-            obj3[2] = tmp2(1879).humanizeValue(postsWithUnreadsCount, stateFromStores);
+            obj3[2] = tmp2(1898).humanizeValue(postsWithUnreadsCount, stateFromStores);
             obj2[1] = jsx(tmp2(4299).Text, { variant: "text-xs/semibold", color: "text-muted", children: null });
             tmp5 = <View style={null}>{null}</View>;
-            const tmp2Result = tmp2(1879);
+            const tmp2Result = tmp2(1898);
           }
         }
       }

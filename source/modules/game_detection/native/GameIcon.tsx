@@ -1,7 +1,7 @@
 // Module ID: 5738
 // Function ID: 5739
 // Name: GameIcon
-// Dependencies: [19, 17, 1905, 21, 4303, 712, 5739, 5740, 5741, 5742, 2]
+// Dependencies: [19, 17, 1924, 21, 4303, 712, 5739, 5740, 5741, 5742, 2]
 
 // Module 5738 (GameIcon)
 import "noop";

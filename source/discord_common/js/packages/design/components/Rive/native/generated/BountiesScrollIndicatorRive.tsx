@@ -1,9 +1,9 @@
-// Module ID: 4090
-// Function ID: 4091
+// Module ID: 4096
+// Function ID: 4097
 // Name: BountiesScrollIndicatorRive
-// Dependencies: [109, 19, 21, 4030, 4091, 4087, 2]
+// Dependencies: [109, 19, 21, 4036, 4097, 4093, 2]
 
-// Module 4090 (BountiesScrollIndicatorRive)
+// Module 4096 (BountiesScrollIndicatorRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -28,8 +28,8 @@ let closure_9 = {
     if (onDataBindingChange != null) {
       startAnimation1 = onDataBindingChange.startAnimation;
     }
-    const triggerBinding = require(4030) /* BaseRive */.useTriggerBinding("startAnimation", instance, startAnimation, startAnimation1, playIfNeeded);
-    let tmpResult = tmp(4030);
+    const triggerBinding = require(4036) /* BaseRive */.useTriggerBinding("startAnimation", instance, startAnimation, startAnimation1, playIfNeeded);
+    let tmpResult = tmp(4036);
     let looping;
     if (dataBinding != null) {
       looping = dataBinding.looping;
@@ -39,7 +39,7 @@ let closure_9 = {
       looping1 = onDataBindingChange.looping;
     }
     const booleanBinding = tmpResult.useBooleanBinding("looping", instance, looping, looping1, playIfNeeded);
-    tmpResult = tmp(4030);
+    tmpResult = tmp(4036);
     let color;
     if (dataBinding != null) {
       color = dataBinding.color;
@@ -95,7 +95,7 @@ const forwardRefResult = importAllResult.forwardRef(function BountiesScrollIndic
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4087) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4093) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BountiesScrollIndicatorRive.tsx");
 

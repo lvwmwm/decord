@@ -1,10 +1,10 @@
-// Module ID: 7125
-// Function ID: 7126
+// Module ID: 7126
+// Function ID: 7127
 // Name: maybeDispatchDevOnlyDummyFriendSuggestions
-// Dependencies: [1903, 2]
+// Dependencies: [1922, 2]
 // Exports: default
 
-// Module 7125 (maybeDispatchDevOnlyDummyFriendSuggestions)
+// Module 7126 (maybeDispatchDevOnlyDummyFriendSuggestions)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const result = require("set").fileFinishedImporting("modules/friend_suggestions/maybeDispatchDevOnlyDummyFriendSuggestions.tsx");

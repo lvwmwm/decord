@@ -1,7 +1,7 @@
 // Module ID: 4754
 // Function ID: 4755
 // Name: isSoundValid
-// Dependencies: [1372, 3929, 1903, 4750, 505, 3947, 2]
+// Dependencies: [1391, 3948, 1922, 4750, 505, 3966, 2]
 // Exports: default
 
 // Module 4754 (isSoundValid)
@@ -37,7 +37,7 @@ export default function isSoundValid(guildId) {
       }
       if (guildId2 !== arg1) {
         let canResult = null == channel;
-        const result = importDefault(3947).canUseSoundboardEverywhere(currentUser.getCurrentUser());
+        const result = importDefault(3966).canUseSoundboardEverywhere(currentUser.getCurrentUser());
         if (!canResult) {
           canResult = null == channel.guild_id;
         }

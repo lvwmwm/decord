@@ -1,7 +1,7 @@
 // Module ID: 5768
 // Function ID: 5769
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 4303, 500, 4007, 5374, 4299, 5769, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 500, 4026, 5374, 4299, 5769, 2]
 // Exports: TableSwitchRow
 
 // Module 5768 (TableSwitchRow)
@@ -35,10 +35,10 @@ export const TableSwitchRow = function TableSwitchRow(value) {
   let callback;
   let obj = require(500) /* set */;
   const tmp2 = callback2();
-  let obj1 = require(4007) /* getNodeText */;
+  let obj1 = require(4026) /* getNodeText */;
   const nodeText = obj1.getNodeText(label);
   const isAndroidResult = obj.isAndroid();
-  const nodeText1 = require(4007) /* getNodeText */.getNodeText(subLabel);
+  const nodeText1 = require(4026) /* getNodeText */.getNodeText(subLabel);
   const tmp8 = callback(React.useState(value), 2);
   callback = tmp8[1];
   const items = [value];

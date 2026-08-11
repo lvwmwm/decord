@@ -1,7 +1,7 @@
 // Module ID: 5146
 // Function ID: 5147
 // Name: getHighestHoistedRole
-// Dependencies: [1971, 1891, 3934, 589, 2]
+// Dependencies: [1990, 1910, 3953, 589, 2]
 // Exports: default
 
 // Module 5146 (getHighestHoistedRole)
@@ -27,8 +27,8 @@ function getHighestHoistedRole(arg0, arg1) {
         const member = obj2.getMember(guild.id, arg1);
         let highestHoistedRole = null;
         if (null != member) {
-          highestHoistedRole = importAll(3934).getHighestHoistedRole(guild, member);
-          const obj3 = importAll(3934);
+          highestHoistedRole = importAll(3953).getHighestHoistedRole(guild, member);
+          const obj3 = importAll(3953);
         }
         return highestHoistedRole;
       }

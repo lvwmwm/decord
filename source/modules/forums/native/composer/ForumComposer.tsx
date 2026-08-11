@@ -1,10 +1,10 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 9913
+// Function ID: 9914
 // Name: Tags
-// Dependencies: [5, 32, 19, 17, 4295, 1302, 4640, 1971, 3929, 1960, 7146, 4639, 1903, 676, 1379, 1369, 1338, 1235, 505, 21, 4303, 712, 5728, 589, 4153, 4168, 8353, 4494, 8403, 7142, 5893, 4146, 5369, 4036, 7236, 4311, 6917, 12, 8406, 8016, 9909, 9910, 4643, 1236, 9911, 9913, 500, 9914, 9915, 9918, 1358, 9919, 1988, 9920, 9921, 7967, 1297, 8355, 1607, 1478, 8469, 8783, 9924, 4299, 9925, 9991, 10001, 10002, 7730, 10003, 10005, 6008, 10188, 4815, 10009, 7226, 4271, 10190, 7655, 4714, 4800, 2]
+// Dependencies: [5, 32, 19, 17, 4295, 1302, 4640, 1990, 3948, 1979, 7147, 4639, 1922, 676, 1398, 1388, 1338, 1235, 505, 21, 4303, 712, 5728, 589, 1363, 4168, 8358, 4494, 8409, 7143, 5893, 4148, 5369, 4042, 7237, 4311, 6920, 12, 8412, 8018, 9914, 9915, 4643, 1236, 9916, 9918, 500, 9919, 9920, 9923, 1377, 9924, 2007, 9925, 9926, 7969, 1297, 8360, 1626, 1497, 8475, 8789, 9929, 4299, 9930, 9996, 10006, 10007, 7732, 10008, 10010, 6010, 10193, 4815, 10014, 7227, 4271, 10195, 7657, 4714, 4800, 2]
 // Exports: default
 
-// Module 9908 (Tags)
+// Module 9913 (Tags)
 import handleThemeChange from "handleThemeChange";
 import useSafeAreaInsetsKeyboardAware from "useSafeAreaInsetsKeyboardAware";
 import closure_5 from "jsxProd";
@@ -53,7 +53,7 @@ function Tags(tags) {
     obj = { size: "sm", style: null };
     obj[1] = tmp.tagIcon;
     let items = [
-      callback(require(7730) /* TagIcon */.TagIcon, obj),
+      callback(require(7732) /* TagIcon */.TagIcon, obj),
       tags.map((id) => {
           let tmp2 = 0 !== arg1;
           if (tmp2) {
@@ -107,7 +107,7 @@ function ActionBar(channel) {
   const tmp6 = importDefault(4168)();
   c7 = tmp6;
   let isMediaChannelResult = channel.isMediaChannel();
-  const tmp8 = tmp6 === channel(1607).KeyboardTypes.MEDIA;
+  const tmp8 = tmp6 === channel(1626).KeyboardTypes.MEDIA;
   c8 = tmp8;
   if (!isMediaChannelResult) {
     let tmp9 = stateFromStores1;
@@ -131,7 +131,7 @@ function ActionBar(channel) {
     obj = { attachments: null, channelId: null, highlightThumbnails: true };
     obj[0] = stateFromStores;
     obj[1] = channel.id;
-    isMediaChannelResult = callback(tmp5(10005), obj);
+    isMediaChannelResult = callback(tmp5(10010), obj);
   }
   const items3 = [isMediaChannelResult, ];
   obj1 = { style: tmp.actions, children: null };
@@ -144,7 +144,7 @@ function ActionBar(channel) {
       const items5 = [, ];
       ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
       obj2[1] = items5;
-      obj2[2] = tmp2(7730).TagIcon;
+      obj2[2] = tmp2(7732).TagIcon;
       obj2[3] = function onPress() {
         isEdit.dismiss();
         let obj = outer1_1(outer1_2[76]);
@@ -170,18 +170,18 @@ function ActionBar(channel) {
         };
         obj.openLazy(channel(outer1_2[52])(outer1_2[77], outer1_2.paths), "ForumPostTagsActionSheet", obj);
       };
-      tmp10 = callback(tmp2(6008).HeaderActionButton, obj2);
+      tmp10 = callback(tmp2(6010).HeaderActionButton, obj2);
     }
     items4[1] = tmp10;
-    let tmp18 = lastInput === tmp2(9913).PostComposerInputs.CONTENT;
+    let tmp18 = lastInput === tmp2(9918).PostComposerInputs.CONTENT;
     if (tmp18) {
       const obj3 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
       const intl3 = tmp2(1236).intl;
       obj3[0] = intl3.string(tmp2(1236).t.iZ7Mz9);
       obj3[1] = tmp.actionButton;
-      obj3[2] = tmp2(7655).ReactionIcon;
+      obj3[2] = tmp2(7657).ReactionIcon;
       obj3[3] = onShowExpressionPicker;
-      tmp18 = callback(tmp2(6008).HeaderActionButton, obj3);
+      tmp18 = callback(tmp2(6010).HeaderActionButton, obj3);
     }
     items4[2] = tmp18;
     const obj4 = { style: null, children: null };
@@ -223,7 +223,7 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     obj7[1] = items6;
     if (tmp8) {
-      let ImageIcon = tmp2(10188).KeyboardIcon;
+      let ImageIcon = tmp2(10193).KeyboardIcon;
     } else {
       ImageIcon = tmp2(4815).ImageIcon;
     }
@@ -238,7 +238,7 @@ function ActionBar(channel) {
       }
       const result1 = channel(outer1_2[75]).trackForumChannelMediaUploaderClicked({ isMobile: true });
     };
-    callback(tmp2(6008).HeaderActionButton, obj7);
+    callback(tmp2(6010).HeaderActionButton, obj7);
     const tmp15 = callback;
   }
 }

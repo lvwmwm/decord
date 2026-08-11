@@ -1,7 +1,7 @@
 // Module ID: 4992
 // Function ID: 4993
 // Name: isIOSPushNotificationRawPayloadFixExperimentEnabled
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: isIOSPushNotificationRawPayloadFixExperimentEnabled
 
 // Module 4992 (isIOSPushNotificationRawPayloadFixExperimentEnabled)

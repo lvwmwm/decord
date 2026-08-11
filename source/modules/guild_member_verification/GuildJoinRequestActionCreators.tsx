@@ -1,9 +1,9 @@
-// Module ID: 8427
-// Function ID: 8428
+// Module ID: 8433
+// Function ID: 8434
 // Name: _fetchGuildJoinRequests
-// Dependencies: [5, 1376, 6918, 4125, 676, 4127, 709, 530, 7322, 4642, 1236, 5129, 2]
+// Dependencies: [5, 1395, 6921, 4127, 676, 4129, 709, 530, 7323, 4642, 1236, 5129, 2]
 
-// Module 8427 (_fetchGuildJoinRequests)
+// Module 8433 (_fetchGuildJoinRequests)
 import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
@@ -471,7 +471,7 @@ function _updateGuildJoinRequest() {
               let APPROVED;
               let closure_4;
               if (APPROVED === undefined) {
-                APPROVED = callback(4127).GuildJoinRequestApplicationStatuses.APPROVED;
+                APPROVED = callback(4129).GuildJoinRequestApplicationStatuses.APPROVED;
               }
               updateSubmittedGuildJoinRequestTotal = undefined;
               c7 = 1;
@@ -488,7 +488,7 @@ function _updateGuildJoinRequest() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj7 = callback(7322);
+              let obj7 = callback(7323);
               const obj2 = { guildId: null, actionType: null, applicationUserId: null };
               obj2[0] = callback;
               obj2[1] = APPROVED;
@@ -888,7 +888,7 @@ export default {
   },
   setSelectedGuildJoinRequest(guildId, request) {
     if (null != request) {
-      let obj = require(7322) /* trackMemberApplicationViewed */;
+      let obj = require(7323) /* trackMemberApplicationViewed */;
       obj = { guildId: null, applicationStatus: null, applicationUserId: null };
       obj[0] = guildId;
       ({ applicationStatus: obj2[1], userId: obj2[2] } = request);

@@ -1,7 +1,7 @@
 // Module ID: 5133
 // Function ID: 5134
 // Name: createModeratorOverwrite
-// Dependencies: [3930, 1415, 1218, 1372, 1891, 3929, 1377, 676, 506, 3934, 1380, 589, 2]
+// Dependencies: [3949, 1434, 1218, 1391, 1910, 3948, 1396, 676, 506, 3953, 1399, 589, 2]
 // Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
 // Module 5133 (createModeratorOverwrite)
@@ -31,18 +31,18 @@ export const createModeratorOverwrite = function createModeratorOverwrite(id, ME
     deny = tmp.deny;
   }
   if (deny == null) {
-    deny = tmp2(3934).NONE;
+    deny = tmp2(3953).NONE;
   }
-  obj[2] = importAll(506).remove(deny, require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
+  obj[2] = importAll(506).remove(deny, require(1399) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   const obj2 = importAll(506);
   let allow;
   if (tmp != null) {
     allow = tmp.allow;
   }
   if (allow == null) {
-    allow = tmp2(3934).NONE;
+    allow = tmp2(3953).NONE;
   }
-  obj[3] = importAll(506).combine(require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
+  obj[3] = importAll(506).combine(require(1399) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
   return obj;
 };
 export const createOrUpdateModeratorOverwrite = function createOrUpdateModeratorOverwrite(id, type, deny) {
@@ -52,18 +52,18 @@ export const createOrUpdateModeratorOverwrite = function createOrUpdateModerator
     deny = deny.deny;
   }
   if (deny == null) {
-    deny = tmp(3934).NONE;
+    deny = tmp(3953).NONE;
   }
-  obj[2] = importAll(506).remove(deny, require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
+  obj[2] = importAll(506).remove(deny, require(1399) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   const obj2 = importAll(506);
   let allow;
   if (deny != null) {
     allow = deny.allow;
   }
   if (allow == null) {
-    allow = tmp(3934).NONE;
+    allow = tmp(3953).NONE;
   }
-  obj[3] = importAll(506).combine(require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
+  obj[3] = importAll(506).combine(require(1399) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
   return obj;
 };
 export const removeModeratorOverwrite = function removeModeratorOverwrite(id, MEMBER, closure_0) {
@@ -77,7 +77,7 @@ export const removeModeratorOverwrite = function removeModeratorOverwrite(id, ME
     deny = tmp.deny;
   }
   if (deny == null) {
-    deny = importAll(3934).NONE;
+    deny = importAll(3953).NONE;
   }
   obj[2] = deny;
   let allow;
@@ -85,18 +85,18 @@ export const removeModeratorOverwrite = function removeModeratorOverwrite(id, ME
     allow = tmp.allow;
   }
   if (allow == null) {
-    allow = importAll(3934).NONE;
+    allow = importAll(3953).NONE;
   }
-  obj[3] = importAll(506).remove(allow, require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
+  obj[3] = importAll(506).remove(allow, require(1399) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   return obj;
 };
 export const isEmptyOverwrite = function isEmptyOverwrite(c2) {
   let allow;
   let deny;
   ({ allow, deny } = c2);
-  let equalsResult = importAll(506).equals(allow, importAll(3934).NONE);
+  let equalsResult = importAll(506).equals(allow, importAll(3953).NONE);
   if (equalsResult) {
-    equalsResult = tmp(506).equals(deny, tmp(3934).NONE);
+    equalsResult = tmp(506).equals(deny, tmp(3953).NONE);
     const tmpResult = tmp(506);
   }
   return equalsResult;
@@ -166,7 +166,7 @@ export const canLurkerListen = function canLurkerListen(channel) {
     if (isLurkingResult) {
       let canResult = _public.isPublic(channel.id);
       if (canResult) {
-        canResult = getUncachedChannelPermissions.can(require(1380) /* Permissions */.JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
+        canResult = getUncachedChannelPermissions.can(require(1399) /* Permissions */.JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
       }
       isLurkingResult = canResult;
     }

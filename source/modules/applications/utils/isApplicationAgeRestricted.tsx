@@ -1,10 +1,10 @@
-// Module ID: 9539
-// Function ID: 9540
+// Module ID: 9545
+// Function ID: 9546
 // Name: isApplicationAgeRestricted
-// Dependencies: [4341, 9540, 4836, 2]
+// Dependencies: [4341, 9546, 4836, 2]
 // Exports: default
 
-// Module 9539 (isApplicationAgeRestricted)
+// Module 9545 (isApplicationAgeRestricted)
 import addApplication from "addApplication";
 
 const require = arg1;
@@ -21,5 +21,5 @@ export default function isApplicationAgeRestricted(arg0) {
   } else {
     return false;
   }
-  obj = importDefault(9540);
+  obj = importDefault(9546);
 };

@@ -1,7 +1,7 @@
 // Module ID: 4739
 // Function ID: 4740
 // Name: validateContentTypes
-// Dependencies: [32, 1386, 4740, 4734, 1351, 4287, 1467, 4741, 4000, 12, 2]
+// Dependencies: [32, 1405, 4740, 4734, 1370, 4287, 1486, 4741, 4019, 12, 2]
 
 // Module 4739 (validateContentTypes)
 import _slicedToArray from "_slicedToArray";
@@ -101,7 +101,7 @@ function getRawText(content) {
                         if (tmp3(4734).AST_KEY.LIST !== type) {
                           if (tmp3(4734).AST_KEY.HEADING !== type) {
                             if (tmp3(4734).AST_KEY.SUBTEXT !== type) {
-                              let tmp3Result = tmp3(1351);
+                              let tmp3Result = tmp3(1370);
                               let tmp5 = nextResult;
                               let assertNeverResult = tmp3Result.assertNever(tmp2.type);
                             }
@@ -150,7 +150,7 @@ function isSuspiciousUrl(url) {
     if (value.whitespaceSanitized !== url) {
       return true;
     } else {
-      const toURLSafeResult = importDefault(1467).toURLSafe(url);
+      const toURLSafeResult = importDefault(1486).toURLSafe(url);
       if (null == toURLSafeResult) {
         return true;
       } else {
@@ -164,14 +164,14 @@ function isSuspiciousUrl(url) {
         if (!tmp7) {
           let tmp8 = "" !== parts[1];
           if (!tmp8) {
-            tmp8 = tmp9(1467).safeDecodeURIComponent(parts[2]) !== parts[2];
-            const tmp9Result = tmp9(1467);
+            tmp8 = tmp9(1486).safeDecodeURIComponent(parts[2]) !== parts[2];
+            const tmp9Result = tmp9(1486);
           }
           tmp7 = tmp8;
         }
         return tmp7;
       }
-      const obj7 = importDefault(1467);
+      const obj7 = importDefault(1486);
       tmp9 = importDefault;
     }
     obj2 = tmp2;
@@ -271,7 +271,7 @@ obj.match = function match(arr, allowLinks) {
         }
         return null;
       }
-      return importDefault(4000).defaultRules.link.match(arr, allowLinks, arg2);
+      return importDefault(4019).defaultRules.link.match(arr, allowLinks, arg2);
     }
   } else {
     return null;
@@ -330,8 +330,8 @@ obj.parse = function parse(arg0, rules, allowEmojiLinks) {
     const trimmed = str3.trim();
     if (0 !== str2.trim().length) {
       if (0 !== trimmed.length) {
-        const tmp53 = punycodeLink(importDefault(4000).unescapeUrl(tmp4));
-        const obj20 = importDefault(4000);
+        const tmp53 = punycodeLink(importDefault(4019).unescapeUrl(tmp4));
+        const obj20 = importDefault(4019);
         if (null != tmp53) {
           if (!tmp23) {
             obj3 = {};
@@ -354,7 +354,7 @@ obj.parse = function parse(arg0, rules, allowEmojiLinks) {
                   return obj4;
                 } else {
                   let tmp51Result = tmp51(12);
-                  tmp51Result = tmp51(4000);
+                  tmp51Result = tmp51(4019);
                   const obj5 = { content: null, target: null, title: null };
                   obj5[0] = tmp51Result.parserFor(tmp51Result.pick(rules.rules, tmp28))(value.whitespaceSanitized, obj3);
                   obj5[1] = tmp53.target;

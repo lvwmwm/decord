@@ -1,7 +1,7 @@
 // Module ID: 5864
 // Function ID: 5865
 // Name: _signOrder
-// Dependencies: [5, 676, 3, 3969, 530, 3962, 2]
+// Dependencies: [5, 676, 3, 3988, 530, 3981, 2]
 // Exports: fetchOrderEntitlements, getOrder, signOrder
 
 // Module 5864 (_signOrder)

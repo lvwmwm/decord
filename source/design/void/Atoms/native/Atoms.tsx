@@ -1,12 +1,12 @@
-// Module ID: 13380
-// Function ID: 13381
+// Module ID: 13388
+// Function ID: 13389
 // Name: RNTextInput
-// Dependencies: [17, 2, 7999, 13381]
+// Dependencies: [17, 2, 8001, 13389]
 
-// Module 13380 (RNTextInput)
-const result = require("module_7999").fileFinishedImporting("design/void/Atoms/native/Atoms.tsx");
+// Module 13388 (RNTextInput)
+const result = require("module_8001").fileFinishedImporting("design/void/Atoms/native/Atoms.tsx");
 
 export const RNTextInput = require("get ActivityIndicator").TextInput;
 export const TextInputProps = require("get ActivityIndicator").TextInputProps;
-export const LegacyText = require("module_7999");
+export const LegacyText = require("module_8001");
 export const Text = require("AccessibilityAnnouncer").Text;

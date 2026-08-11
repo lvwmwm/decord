@@ -1,7 +1,7 @@
 // Module ID: 4736
 // Function ID: 4737
 // Name: parseLink
-// Dependencies: [32, 853, 1372, 1964, 1891, 1903, 676, 4737, 4738, 4739, 1236, 4742, 1967, 4493, 4146, 4000, 4743, 4744, 4747, 3942, 4748, 4758, 4759, 4760, 4761, 4762, 4735, 4763, 12, 2]
+// Dependencies: [32, 853, 1391, 1983, 1910, 1922, 676, 4737, 4738, 4739, 1236, 4742, 1986, 4493, 4148, 4019, 4743, 4744, 4747, 3961, 4748, 4758, 4759, 4760, 4761, 4762, 4735, 4763, 12, 2]
 // Exports: hydrateCommandMention
 
 // Module 4736 (parseLink)
@@ -80,8 +80,8 @@ function hydrateRoleMention(arg0, guildId) {
     }
     let hasEnhancedRoleColorsForRole = require(4742) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColorsForRole(id, role);
     if (hasEnhancedRoleColorsForRole) {
-      hasEnhancedRoleColorsForRole = !require(1967) /* extractColorStringsFromServerColors */.getIsDefaultErc(role);
-      const tmp19Result = require(1967) /* extractColorStringsFromServerColors */;
+      hasEnhancedRoleColorsForRole = !require(1986) /* extractColorStringsFromServerColors */.getIsDefaultErc(role);
+      const tmp19Result = require(1986) /* extractColorStringsFromServerColors */;
     }
     obj = { type: "mention", channelId: null, guildId: null, roleId: null, roleColor: null, roleColors: null, roleName: null, color: null, colorString: null, content: null };
     obj[1] = guildId.channelId;
@@ -140,8 +140,8 @@ function hydrateUserMention(everyoneOrHere, channelId) {
     if (null != channel) {
       let nickname = importDefault(4493).getNickname(channel.getGuildId(), channelId.channelId, str);
       if (nickname == null) {
-        nickname = tmp4(4146).getName(str);
-        const tmp4Result = tmp4(4146);
+        nickname = tmp4(4148).getName(str);
+        const tmp4Result = tmp4(4148);
       }
       str = nickname;
       const obj2 = importDefault(4493);
@@ -195,8 +195,8 @@ let merged = Object.assign(require("t").defaultRules.escape);
 obj.match = function match(arg0, allowEscape) {
   let match = null;
   if (false !== allowEscape.allowEscape) {
-    match = importDefault(4000).defaultRules.escape.match(arg0, allowEscape, arg2);
-    const str = importDefault(4000).defaultRules.escape;
+    match = importDefault(4019).defaultRules.escape.match(arg0, allowEscape, arg2);
+    const str = importDefault(4019).defaultRules.escape;
   }
   return match;
 };
@@ -328,7 +328,7 @@ obj[13] = require("textRegexp");
 const obj5 = {};
 const merged6 = Object.assign(require("t").defaultRules.inlineCode);
 obj5.parse = function parse(arg0, arg1, parseInlineCodeChildContent) {
-  const inlineCode = importDefault(4000).defaultRules.inlineCode;
+  const inlineCode = importDefault(4019).defaultRules.inlineCode;
   const parsed = inlineCode.parse(arg0, arg1, parseInlineCodeChildContent);
   let tmp2 = parsed;
   if (true === parseInlineCodeChildContent.parseInlineCodeChildContent) {
@@ -656,7 +656,7 @@ obj[27] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: [":"],
   match(arg0) {
-    const EMOJI_NAME_RE = importDefault(3942).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3961).EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(arg0);
     let tmp4 = null;
     if (null != match) {
@@ -664,12 +664,12 @@ obj[27] = {
       if ("" !== tmpResult.convertNameToSurrogate(match[1])) {
         tmp4 = match;
       }
-      tmpResult = importDefault(3942);
+      tmpResult = importDefault(3961);
     }
     return tmp4;
   },
   parse(arg0) {
-    let content = importDefault(3942).convertNameToSurrogate(arg0[1]);
+    let content = importDefault(3961).convertNameToSurrogate(arg0[1]);
     if (null == content) {
       const _HermesInternal = HermesInternal;
       content = ":" + arg0[1] + ":";
@@ -681,7 +681,7 @@ const obj14 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: [":"],
   match(arg0) {
-    const EMOJI_NAME_RE = importDefault(3942).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3961).EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(arg0);
     let tmp4 = null;
     if (null != match) {
@@ -689,12 +689,12 @@ const obj14 = {
       if ("" !== tmpResult.convertNameToSurrogate(match[1])) {
         tmp4 = match;
       }
-      tmpResult = importDefault(3942);
+      tmpResult = importDefault(3961);
     }
     return tmp4;
   },
   parse(arg0) {
-    let content = importDefault(3942).convertNameToSurrogate(arg0[1]);
+    let content = importDefault(3961).convertNameToSurrogate(arg0[1]);
     if (null == content) {
       const _HermesInternal = HermesInternal;
       content = ":" + arg0[1] + ":";

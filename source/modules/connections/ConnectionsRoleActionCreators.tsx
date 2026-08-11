@@ -1,10 +1,10 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11051
+// Function ID: 11052
 // Name: _putRoleConnectionsConfigurations
 // Dependencies: [5, 676, 530, 709, 5359, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 11046 (_putRoleConnectionsConfigurations)
+// Module 11051 (_putRoleConnectionsConfigurations)
 import set from "set";
 import { Endpoints } from "ME";
 

@@ -1,17 +1,17 @@
-// Module ID: 12613
-// Function ID: 12614
+// Module ID: 12617
+// Function ID: 12618
 // Name: createVoiceChannelLinkEmbed
-// Dependencies: [32, 17, 1415, 1372, 1891, 3929, 3938, 1903, 676, 7196, 8053, 1416, 500, 1236, 4764, 4494, 2]
+// Dependencies: [32, 17, 1434, 1391, 1910, 3948, 3957, 1922, 676, 7197, 8055, 1435, 500, 1236, 4764, 4494, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12613 (createVoiceChannelLinkEmbed)
+// Module 12617 (createVoiceChannelLinkEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "get ActivityIndicator";
 import { getGuildAcronym } from "GuildNSFWContentLevel";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Permissions } from "ME";
 import { InviteTypes } from "InviteSendStates";
@@ -30,7 +30,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
       if (null != guild) {
         if (getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel)) {
           if (obj9.can(tmp26.CONNECT, channel)) {
-            ({ colors, baseColors } = importDefault(8053)(closure_2));
+            ({ colors, baseColors } = importDefault(8055)(closure_2));
             let icon;
             if (guild != null) {
               icon = guild.icon;
@@ -47,15 +47,15 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
                 icon1 = guild.icon;
               }
               obj[1] = icon1;
-              const guildIconURL = tmp4(1416).getGuildIconURL(obj);
-              const tmp4Result = tmp4(1416);
+              const guildIconURL = tmp4(1435).getGuildIconURL(obj);
+              const tmp4Result = tmp4(1435);
             } else if (null != guild) {
               const tmp8 = getGuildAcronym(guild);
             }
             obj = {};
             const merged = Object.assign(baseColors);
             tmp4 = importDefault;
-            const tmp6 = importDefault(8053)(closure_2);
+            const tmp6 = importDefault(8055)(closure_2);
             let str;
             if (obj5.isAndroid()) {
               str = "";
@@ -82,7 +82,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             }
             obj.channelIcon = uri;
             tmp16Result = tmp16(4494);
-            obj.titleText = tmp16Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+            obj.titleText = tmp16Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
             obj.titleColor = colors.titleColor;
             let tmp24;
             if (null != guildIconURL) {

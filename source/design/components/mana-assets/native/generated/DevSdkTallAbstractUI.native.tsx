@@ -1,10 +1,10 @@
-// Module ID: 6214
-// Function ID: 6215
+// Module ID: 6216
+// Function ID: 6217
 // Name: DevSdkTallAbstractUI
-// Dependencies: [21, 5268, 6215, 2]
+// Dependencies: [21, 5268, 6217, 2]
 // Exports: DevSdkTallAbstractUI
 
-// Module 6214 (DevSdkTallAbstractUI)
+// Module 6216 (DevSdkTallAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DevSdkTallAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const DevSdkTallAbstractUI = function DevSdkTallAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6215);
+  obj[0] = importDefault(6217);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

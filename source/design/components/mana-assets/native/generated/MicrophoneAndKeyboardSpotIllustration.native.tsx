@@ -1,10 +1,10 @@
-// Module ID: 6512
-// Function ID: 6513
+// Module ID: 6514
+// Function ID: 6515
 // Name: MicrophoneAndKeyboardSpotIllustration
-// Dependencies: [21, 5268, 6513, 2]
+// Dependencies: [21, 5268, 6515, 2]
 // Exports: MicrophoneAndKeyboardSpotIllustration
 
-// Module 6512 (MicrophoneAndKeyboardSpotIllustration)
+// Module 6514 (MicrophoneAndKeyboardSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MicrophoneAndKeyboardSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const MicrophoneAndKeyboardSpotIllustration = function MicrophoneAndKeybo
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6513);
+  obj[0] = importDefault(6515);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

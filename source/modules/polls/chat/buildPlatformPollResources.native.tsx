@@ -1,10 +1,10 @@
-// Module ID: 8323
-// Function ID: 8324
+// Module ID: 8328
+// Function ID: 8329
 // Name: buildPlatformPollResources
-// Dependencies: [12, 8324, 4303, 712, 8055, 5391, 5770, 1419, 2]
+// Dependencies: [12, 8329, 4303, 712, 8057, 5391, 5770, 1438, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 8323 (buildPlatformPollResources)
+// Module 8328 (buildPlatformPollResources)
 import importDefaultResult from "apply";
 
 const require = arg1;
@@ -43,11 +43,11 @@ export const buildPlatformPollResources = function buildPlatformPollResources(th
   const obj = { styles: null, selectedIcon: null, checkmarkIcon: null };
   obj[0] = importDefault(12).mapValues(closure_3, (arg0) => arg0(closure_0, closure_1));
   const obj2 = importDefault(12);
-  obj[1] = _require(8055).getAssetUriForEmbed(importDefault(5391));
-  const obj3 = _require(8055);
-  obj[2] = _require(8055).getAssetUriForEmbed(importDefault(5770));
+  obj[1] = _require(8057).getAssetUriForEmbed(importDefault(5391));
+  const obj3 = _require(8057);
+  obj[2] = _require(8057).getAssetUriForEmbed(importDefault(5770));
   return obj;
 };
 export const getAvatarUrl = function getAvatarUrl(currentUser, guildId) {
-  return require(1419) /* ensureAvatarSource */.ensureAvatarSource(currentUser.getAvatarSource(guildId, false)).uri;
+  return require(1438) /* ensureAvatarSource */.ensureAvatarSource(currentUser.getAvatarSource(guildId, false)).uri;
 };

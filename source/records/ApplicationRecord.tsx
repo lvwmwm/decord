@@ -1,7 +1,7 @@
 // Module ID: 4326
 // Function ID: 4327
 // Name: createExecutable
-// Dependencies: [1912, 4327, 1911, 4328, 4329, 4330, 1416, 4333, 506, 11, 2]
+// Dependencies: [1931, 4327, 1930, 4328, 4329, 4330, 1435, 4333, 506, 11, 2]
 
 // Module 4326 (createExecutable)
 import "toJS";
@@ -101,7 +101,7 @@ Object.defineProperty(prototype, "connectionEntrypointUrl", {
 prototype["getIconURL"] = function getIconURL(arg0, arg1) {
   let gameAssetURL = null;
   if (null != this.icon) {
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: null, hash: null, size: null, format: null };
     ({ id: obj2[0], icon: obj2[1] } = this);
     obj[2] = arg0;
@@ -113,7 +113,7 @@ prototype["getIconURL"] = function getIconURL(arg0, arg1) {
 prototype["getIconSource"] = function getIconSource(arg0, arg1) {
   let gameAssetSource = null;
   if (null != this.icon) {
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: null, hash: null, size: null, format: null };
     ({ id: obj2[0], icon: obj2[1] } = this);
     obj[2] = arg0;
@@ -125,7 +125,7 @@ prototype["getIconSource"] = function getIconSource(arg0, arg1) {
 prototype["getSplashURL"] = function getSplashURL(arg0, arg1) {
   let gameAssetURL = null;
   if (null != this.splash) {
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: null, hash: null, size: null, keepAspectRatio: true, format: null };
     ({ id: obj2[0], splash: obj2[1] } = this);
     obj[2] = arg0;
@@ -137,7 +137,7 @@ prototype["getSplashURL"] = function getSplashURL(arg0, arg1) {
 prototype["getCoverImageURL"] = function getCoverImageURL(arg0) {
   let applicationIconURL = null;
   if (null != this.coverImage) {
-    let obj = importDefault(1416);
+    let obj = importDefault(1435);
     obj = { id: null, icon: null, size: null, keepAspectRatio: true };
     ({ id: obj2[0], coverImage: obj2[1] } = this);
     obj[2] = arg0;

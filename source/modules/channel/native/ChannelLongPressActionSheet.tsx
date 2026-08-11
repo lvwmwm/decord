@@ -1,10 +1,10 @@
-// Module ID: 9667
-// Function ID: 9668
+// Module ID: 9672
+// Function ID: 9673
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 9668, 5945, 1377, 5224, 1376, 5260, 1372, 6986, 1891, 3929, 3938, 1960, 4499, 1903, 676, 9669, 21, 7773, 1988, 4513, 1236, 9670, 8783, 4245, 4313, 4494, 4642, 9672, 9673, 4247, 4509, 9684, 3030, 9704, 1222, 9706, 9708, 9721, 9065, 9723, 5256, 4159, 5326, 9725, 7962, 9726, 9727, 9729, 8497, 5253, 9731, 9136, 5262, 5257, 9733, 8016, 4802, 9735, 9736, 4825, 4800, 4271, 9737, 12132, 4497, 7774, 8769, 8020, 8495, 5232, 6011, 4251, 8996, 9546, 5756, 4001, 5728, 5748, 9711, 589, 1380, 6994, 8402, 3974, 5779, 1297, 12133, 10196, 12134, 5764, 1605, 10197, 5766, 2]
+// Dependencies: [5, 19, 9673, 5947, 1396, 5224, 1395, 5260, 1391, 6989, 1910, 3948, 3957, 1979, 4499, 1922, 676, 9674, 21, 7775, 2007, 4513, 1236, 9675, 8789, 4245, 4313, 4494, 4642, 9677, 9678, 4247, 4509, 9689, 3049, 9709, 1222, 9711, 9713, 9726, 9071, 9728, 5256, 4159, 5326, 9730, 7964, 9731, 9732, 9734, 8503, 5253, 9736, 9142, 5262, 5257, 9738, 8018, 4802, 9740, 9741, 4825, 4800, 4271, 9742, 12135, 4497, 7776, 8775, 8022, 8501, 5232, 6013, 4251, 9002, 9552, 5756, 4020, 5728, 5748, 9716, 589, 1399, 6997, 8408, 3993, 5779, 1297, 12136, 10201, 12137, 5764, 1624, 10202, 5766, 2]
 // Exports: default
 
-// Module 9667 (handleVoiceOrStageChannelConnectPress)
+// Module 9672 (handleVoiceOrStageChannelConnectPress)
 import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
 import connectToStage from "connectToStage";
 import { SafetyWarningTypes } from "handleConnectionOpen";
@@ -17,7 +17,7 @@ import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import closure_19 from "handleConnectionOpen";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";

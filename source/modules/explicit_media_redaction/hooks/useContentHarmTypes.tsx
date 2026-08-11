@@ -1,14 +1,14 @@
-// Module ID: 9848
-// Function ID: 9849
+// Module ID: 9853
+// Function ID: 9854
 // Name: useEnabledHarmTypesBitmaskForChannelAndAuthorId
-// Dependencies: [19, 1340, 1372, 3938, 1903, 5909, 589, 5916, 5912, 2]
+// Dependencies: [19, 1340, 1391, 3957, 1922, 5909, 589, 5916, 5912, 2]
 // Exports: useEnabledHarmTypesBitmaskForMessage
 
-// Module 9848 (useEnabledHarmTypesBitmaskForChannelAndAuthorId)
+// Module 9853 (useEnabledHarmTypesBitmaskForChannelAndAuthorId)
 import noop from "noop";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

@@ -1,13 +1,13 @@
-// Module ID: 12518
-// Function ID: 12519
+// Module ID: 12522
+// Function ID: 12523
 // Name: RemediatedUserNotice
-// Dependencies: [19, 17, 3938, 676, 21, 4303, 712, 8835, 647, 4299, 1236, 9243, 2]
+// Dependencies: [19, 17, 3957, 676, 21, 4303, 712, 8841, 647, 4299, 1236, 9249, 2]
 // Exports: default
 
-// Module 12518 (RemediatedUserNotice)
+// Module 12522 (RemediatedUserNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { RelationshipTypes } from "ME";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -21,7 +21,7 @@ createCacheKey = { container: null };
 createCacheKey = { padding: require("Themes").space.PX_12, gap: require("Themes").space.PX_8, flexDirection: "row", alignItems: "center" };
 createCacheKey[0] = createCacheKey;
 createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("upsertRelationship").fileFinishedImporting("modules/user_profile/native/UserProfileRemediatedNotice.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/user_profile/native/UserProfileRemediatedNotice.tsx");
 
 export default function RemediatedUserNotice(user) {
   let isBlocked;
@@ -29,7 +29,7 @@ export default function RemediatedUserNotice(user) {
   user = user.user;
   const tmp = createCacheKey();
   let obj = user(647);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isPendingIncoming: outer1_4.getRelationshipType(user.id) === outer1_5.PENDING_INCOMING, isBlocked: outer1_4.isBlocked(user.id), isIgnored: outer1_4.isIgnored(user.id) }));
   ({ isBlocked, isIgnored } = stateFromStoresObject);
   if (isBlocked) {

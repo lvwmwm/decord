@@ -1,10 +1,10 @@
-// Module ID: 8643
-// Function ID: 8644
+// Module ID: 8649
+// Function ID: 8650
 // Name: maybeFetchTopEmojisByGuild
-// Dependencies: [1903, 5176, 5179, 8644, 2]
+// Dependencies: [1922, 5176, 5179, 8650, 2]
 // Exports: maybeFetchTopEmojisByGuild
 
-// Module 8643 (maybeFetchTopEmojisByGuild)
+// Module 8649 (maybeFetchTopEmojisByGuild)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import initialize from "initialize";
@@ -23,8 +23,8 @@ export const maybeFetchTopEmojisByGuild = function maybeFetchTopEmojisByGuild(gu
         }
       }
       if (!isFetching.getIsFetching(guildId)) {
-        const topEmojis = require(8644) /* fetchTopEmojis */.fetchTopEmojis(guildId);
-        const obj = require(8644) /* fetchTopEmojis */;
+        const topEmojis = require(8650) /* fetchTopEmojis */.fetchTopEmojis(guildId);
+        const obj = require(8650) /* fetchTopEmojis */;
       }
     }
   }

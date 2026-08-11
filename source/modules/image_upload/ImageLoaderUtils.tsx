@@ -1,10 +1,10 @@
-// Module ID: 1450
-// Function ID: 1451
+// Module ID: 1469
+// Function ID: 1470
 // Name: handleImageLoad
-// Dependencies: [32, 5, 676, 1451, 1386, 584, 1454, 1464, 1467, 1471, 1876, 12, 1877, 2]
+// Dependencies: [32, 5, 676, 1470, 1405, 584, 1473, 1483, 1486, 1490, 1895, 12, 1896, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1450 (handleImageLoad)
+// Module 1469 (handleImageLoad)
 import _slicedToArray from "_slicedToArray";
 import fails from "fails";
 import ME from "ME";
@@ -51,11 +51,11 @@ function getSrcWithWidthAndHeight(quality) {
     flag2 = false;
   }
   if (!src.startsWith("data:image")) {
-    let obj = importDefault(1467);
+    let obj = importDefault(1486);
     if (!obj.isDiscordCdnUrl(src)) {
       const items = [, ];
       [arr[0], tmp6] = callback(src.split("?"), 2);
-      let tmp2Result = tmp2(1464);
+      let tmp2Result = tmp2(1483);
       items[1] = tmp2Result.parse(tmp6);
       const tmp5 = callback(src.split("?"), 2);
       [tmp8, tmp9] = callback(items, 2);
@@ -87,8 +87,8 @@ function getSrcWithWidthAndHeight(quality) {
       obj[1] = targetHeight;
       obj[2] = closure_6;
       obj[3] = closure_6;
-      const obj3 = require(1471) /* fit */;
-      ({ width, height } = require(1471) /* fit */.fit(obj));
+      const obj3 = require(1490) /* fit */;
+      ({ width, height } = require(1490) /* fit */.fit(obj));
       if (width !== sourceWidth) {
         if ((function isAttachmentLadderEnabled(arg0) {
           try {
@@ -104,9 +104,9 @@ function getSrcWithWidthAndHeight(quality) {
           obj[1] = height;
           obj[2] = sourceWidth;
           obj[3] = sourceHeight;
-          obj[4] = tmp15(1876).ATTACHMENT_LADDER_MAX_UPSCALE;
-          let size = tmp15(1876).snapAttachmentDimensions(obj);
-          const tmp15Result = tmp15(1876);
+          obj[4] = tmp15(1895).ATTACHMENT_LADDER_MAX_UPSCALE;
+          let size = tmp15(1895).snapAttachmentDimensions(obj);
+          const tmp15Result = tmp15(1895);
         } else {
           size = { width: null, height: null };
           size[0] = width;
@@ -121,7 +121,7 @@ function getSrcWithWidthAndHeight(quality) {
       tmp2Result = tmp2(12);
       let text = tmp8;
       if (!tmp2Result.isEmpty(tmp9)) {
-        tmp2(1464);
+        tmp2(1483);
         text = `${tmp8}?${obj8.stringify(tmp9)}`;
       }
       return text;
@@ -295,7 +295,7 @@ export const loadImage = function loadImage(arg0, bind) {
                               tmp.backoff = tmp7;
                             }
                             backoff = tmp.backoff;
-                            image.onerror = outer1_4(/* F103305 */ function() { ... });
+                            image.onerror = outer1_4(/* F103386 */ function() { ... });
                             image.onload = function onload() { ... };
                             image.src = tmp2.url;
                           });
@@ -452,6 +452,6 @@ export const getImageSrc = function getImageSrc(format) {
     const _Math4 = Math;
     bound1 = Math.min(rounded1, maxHeight);
   }
-  const tmp10 = importDefault(1877)();
+  const tmp10 = importDefault(1896)();
   return getSrcWithWidthAndHeight({ src: format.src, sourceWidth: width, sourceHeight: height, targetWidth: bound * tmp10, targetHeight: bound1 * tmp10, format, quality, animated: flag, srcIsAnimated: flag2 });
 };

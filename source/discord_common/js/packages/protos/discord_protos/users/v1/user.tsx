@@ -1,9 +1,9 @@
-// Module ID: 1921
-// Function ID: 1922
+// Module ID: 1940
+// Function ID: 1941
 // Name: create
-// Dependencies: [32, 1307, 1337, 1922, 1336, 2]
+// Dependencies: [32, 1307, 1337, 1941, 1336, 2]
 
-// Module 1921 (create)
+// Module 1940 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 import { MessageType as MessageType2 } from "module_1307";
@@ -312,7 +312,7 @@ prototype2["internalBinaryWrite"] = function internalBinaryWrite(id, tag, writeU
     const internalBinaryWriteResult4 = mediumUserType3.internalBinaryWrite(id.collectibles, tag.tag(11, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (id.safetyState) {
-    const SafetyState = require(1922) /* create */.SafetyState;
+    const SafetyState = require(1941) /* create */.SafetyState;
     const tagResult10 = tag.tag(12, require(1307).WireType.LengthDelimited);
     const joined5 = SafetyState.internalBinaryWrite(id.safetyState, tag.tag(12, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult5 = SafetyState.internalBinaryWrite(id.safetyState, tag.tag(12, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -383,7 +383,7 @@ let items1 = [
     name: "safety_state",
     kind: "message",
     T() {
-      return require(1922) /* create */.SafetyState;
+      return require(1941) /* create */.SafetyState;
     }
   },
   {
@@ -2178,7 +2178,7 @@ class Badge$Type extends MessageType14 {
 }
 const prototype14 = Badge$Type.prototype;
 prototype14["create"] = function create(arr) {
-  let obj = { badge: { oneofKind: "Promise" } };
+  let obj = { badge: { oneofKind: "r" } };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
@@ -2896,7 +2896,7 @@ prototype17["internalBinaryWrite"] = function internalBinaryWrite(linkedUsers, t
     const internalBinaryWriteResult6 = mediumUserType3.internalBinaryWrite(linkedUsers.collectibles, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (linkedUsers.safetyState) {
-    const SafetyState = require(1922) /* create */.SafetyState;
+    const SafetyState = require(1941) /* create */.SafetyState;
     const tagResult13 = tag.tag(8, require(1307).WireType.LengthDelimited);
     const joined10 = SafetyState.internalBinaryWrite(linkedUsers.safetyState, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult7 = SafetyState.internalBinaryWrite(linkedUsers.safetyState, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -4331,7 +4331,7 @@ class PerkConfig$Type extends MessageType27 {
 }
 const prototype27 = PerkConfig$Type.prototype;
 prototype27["create"] = function create(arr) {
-  let obj = { source: [], kind: { oneofKind: "Promise" } };
+  let obj = { source: [], kind: { oneofKind: "r" } };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);

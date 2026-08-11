@@ -1,13 +1,13 @@
-// Module ID: 12264
-// Function ID: 12265
+// Module ID: 12267
+// Function ID: 12268
 // Name: BotUserProfileOverflowMenu
-// Dependencies: [19, 1372, 3938, 1960, 1903, 676, 10364, 21, 589, 12265, 8788, 5728, 5748, 8783, 1236, 9243, 4271, 10366, 1988, 503, 7784, 10365, 12266, 12266, 500, 11977, 698, 5756, 4146, 4001, 7589, 8338, 11520, 3974, 12267, 8598, 7751, 8604, 712, 2]
+// Dependencies: [19, 1391, 3957, 1979, 1922, 676, 10369, 21, 589, 12268, 8794, 5728, 5748, 8789, 1236, 9249, 4271, 10371, 2007, 503, 7786, 10370, 12269, 12269, 500, 11980, 698, 5756, 4148, 4020, 7591, 8343, 11523, 3993, 12270, 8604, 7753, 8610, 712, 2]
 // Exports: default
 
-// Module 12264 (BotUserProfileOverflowMenu)
+// Module 12267 (BotUserProfileOverflowMenu)
 import encodeProperties from "encodeProperties";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -23,7 +23,7 @@ let unpackModuleId;
 const require = arg1;
 ({ AnalyticEvents: metroImportAll, ApplicationFlags: c9, ChannelTypesSets: c10, RelationshipTypes: unpackModuleId } = ME);
 ({ BLOCK_CONFIRMATION_ACTION_SHEET_KEY: closure_12, IGNORE_CONFIRMATION_ACTION_SHEET_KEY: map1 } = IGNORE_CONFIRMATION_ACTION_SHEET_KEY);
-let result = require("upsertRelationship").fileFinishedImporting("modules/user_profile/native/BotUserProfileOverflowMenu.tsx");
+let result = require("markAllUserIdListsStale").fileFinishedImporting("modules/user_profile/native/BotUserProfileOverflowMenu.tsx");
 
 export default function BotUserProfileOverflowMenu(application) {
   let isIgnored;

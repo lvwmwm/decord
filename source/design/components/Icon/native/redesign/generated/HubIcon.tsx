@@ -1,7 +1,7 @@
 // Module ID: 4830
 // Function ID: 4831
 // Name: HubIcon
-// Dependencies: [19, 21, 712, 4004, 4774, 2]
+// Dependencies: [19, 21, 712, 4023, 4774, 2]
 // Exports: HubIcon
 
 // Module 4830 (HubIcon)
@@ -22,5 +22,5 @@ export const HubIcon = function HubIcon(color) {
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,7 +1,7 @@
 // Module ID: 5870
 // Function ID: 5871
 // Name: computeCanEveryoneInGuildSeeRoleSubscriptions
-// Dependencies: [1963, 1891, 676, 5871, 5872, 589, 5873, 5878, 2]
+// Dependencies: [1982, 1910, 676, 5871, 5872, 589, 5873, 5878, 2]
 // Exports: areRoleSubscriptionsVisibleInGuild, useRoleSubscriptionsVisibleInGuild, useShowRoleSubscriptionsInChannelList
 
 // Module 5870 (computeCanEveryoneInGuildSeeRoleSubscriptions)

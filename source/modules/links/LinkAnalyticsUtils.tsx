@@ -1,9 +1,9 @@
-// Module ID: 8937
-// Function ID: 8938
+// Module ID: 8943
+// Function ID: 8944
 // Name: SERVER_INVITE
-// Dependencies: [676, 8938, 1467, 4495, 698, 2]
+// Dependencies: [676, 8944, 1486, 4495, 698, 2]
 
-// Module 8937 (SERVER_INVITE)
+// Module 8943 (SERVER_INVITE)
 import { AnalyticEvents } from "ME";
 
 let closure_4 = { MESSAGE: "Discord Message Link", CHANNEL: "Discord Channel Link", SERVER_INVITE: "Discord Server Invite", GIFT: "Discord Gift Link", UNKNOWN: "Unknown", DISCOVERY: "Discord Discovery Link" };
@@ -18,7 +18,7 @@ const items = [
   (target) => {
     let channelId;
     let guildId;
-    const safeParseWithQueryResult = importDefault(1467).safeParseWithQuery(target);
+    const safeParseWithQueryResult = importDefault(1486).safeParseWithQuery(target);
     if (null == safeParseWithQueryResult) {
       return null;
     } else {
@@ -74,7 +74,7 @@ export default {
   },
   trackLinkClicked(closure_1) {
     if (null != closure_1) {
-      let obj = importDefault(1467);
+      let obj = importDefault(1486);
       let tmp3 = obj.isDiscordUrl(closure_1, true) || null != arg1;
       importDefault(698);
       obj = { is_discord_link: null, discord_link_type: null };

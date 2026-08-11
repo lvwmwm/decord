@@ -1,10 +1,10 @@
-// Module ID: 10864
-// Function ID: 10865
+// Module ID: 10869
+// Function ID: 10870
 // Name: handleKrispLinkPressed
-// Dependencies: [19, 17, 1302, 676, 21, 1974, 698, 1236, 3998, 589, 4153, 10865, 10866, 4299, 2]
+// Dependencies: [19, 17, 1302, 676, 21, 1993, 698, 1236, 4017, 589, 1363, 10870, 10871, 4299, 2]
 // Exports: default
 
-// Module 10864 (handleKrispLinkPressed)
+// Module 10869 (handleKrispLinkPressed)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
@@ -22,7 +22,7 @@ let metroImportAll;
 let unpackModuleId;
 const require = arg1;
 function handleKrispLinkPressed() {
-  let obj = importDefault(1974);
+  let obj = importDefault(1993);
   const articleURL = obj.getArticleURL(constants4.NOISE_SUPPRESSION);
   obj = { text: null, href: null, location: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -32,7 +32,7 @@ function handleKrispLinkPressed() {
   obj[2] = obj;
   importDefault(698).track(constants.NOISE_CANCELLATION_LINK_CLICKED, obj);
   const obj2 = importDefault(698);
-  importDefault(3998).openURL(articleURL);
+  importDefault(4017).openURL(articleURL);
 }
 ({ Image: c3, View: c4, Pressable: c5 } = get_ActivityIndicator);
 ({ AnalyticEvents: error, AnalyticsPages: metroImportAll, AnalyticsSections: c9, HelpdeskArticles: c10 } = ME);
@@ -44,11 +44,11 @@ export default function KrispLogo() {
   let obj = require(589) /* initialize */;
   const items = [handleThemeChange];
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
-  let obj1 = require(4153) /* AccessibilityAnnouncer */;
+  let obj1 = require(1363) /* AccessibilityAnnouncer */;
   if (obj1.isThemeLight(stateFromStores)) {
-    let tmp4Result = tmp4(10865);
+    let tmp4Result = tmp4(10870);
   } else {
-    tmp4Result = tmp4(10866);
+    tmp4Result = tmp4(10871);
   }
   obj = { style: closure_13.detailsView, children: null };
   obj = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: null };

@@ -1,15 +1,15 @@
-// Module ID: 9818
-// Function ID: 9819
+// Module ID: 9823
+// Function ID: 9824
 // Name: ChannelSettingsNotificationsGuard
-// Dependencies: [19, 1376, 1372, 4224, 3938, 4499, 1903, 676, 21, 1236, 4303, 712, 4013, 4498, 5262, 4271, 9819, 1988, 5257, 4494, 5767, 5374, 9823, 5768, 7985, 7984, 4299, 7967, 4712, 589, 9824, 9825, 2]
+// Dependencies: [19, 1395, 1391, 4224, 3957, 4499, 1922, 676, 21, 1236, 4303, 712, 4031, 4498, 5262, 4271, 9824, 2007, 5257, 4494, 5767, 5374, 9828, 5768, 7987, 7986, 4299, 7969, 4712, 589, 9829, 9830, 2]
 // Exports: default
 
-// Module 9818 (ChannelSettingsNotificationsGuard)
+// Module 9823 (ChannelSettingsNotificationsGuard)
 import importAllResult from "computeChannelName";
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleInviteData from "handleInviteData";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -190,7 +190,7 @@ prototype["renderMuteSection"] = function renderMuteSection() {
   const muted = this.state.muted;
   let MuteSettingType = dependencyMap;
   let obj = require(4494) /* computeChannelName */;
-  const channelName = obj.computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true);
+  const channelName = obj.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true);
   obj = { description: null, hasIcons: false, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["6yI+JS"]);
@@ -217,14 +217,14 @@ prototype["renderMuteSection"] = function renderMuteSection() {
     const obj4 = { muteConfig: null, type: null };
     obj4[0] = props.muteConfig;
     if (channel.type === constants3.GUILD_CATEGORY) {
-      MuteSettingType = tmp(9823).MuteSettingType;
+      MuteSettingType = tmp(9828).MuteSettingType;
       let CHANNEL = MuteSettingType.CATEGORY;
     } else {
-      CHANNEL = tmp(9823).MuteSettingType.CHANNEL;
+      CHANNEL = tmp(9828).MuteSettingType.CHANNEL;
     }
     obj4[1] = CHANNEL;
-    tmp5(importDefault(9823), obj4);
-    const tmp8 = importDefault(9823);
+    tmp5(importDefault(9828), obj4);
+    const tmp8 = importDefault(9828);
   }
 };
 prototype["renderForumSettings"] = function renderForumSettings() {
@@ -266,11 +266,11 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     tmp5 = require;
     tmp7 = require;
   }
-  const TableRadioGroup = tmp7(7985).TableRadioGroup;
+  const TableRadioGroup = tmp7(7987).TableRadioGroup;
   let obj = { value: state.messageNotifications, onChange: self.handleTypeChange, groupRef: self.radioGroupRef, title: null, hasIcons: false, children: null };
   const intl3 = tmp7(1236).intl;
   obj[3] = intl3.string(tmp7(1236).t.h850Ss);
-  const TableRadioRow = tmp7(7984).TableRadioRow;
+  const TableRadioRow = tmp7(7986).TableRadioRow;
   if (isGuildStageVoiceResult) {
     let tmp22 = muted;
     if (!muted) {
@@ -301,7 +301,7 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     obj[1] = constants2.ONLY_MENTIONS;
     const intl12 = tmp7(1236).intl;
     obj[2] = intl12.string(tmp7(1236).t["BENn/6"]);
-    items[1] = tmp12(tmp7(7984).TableRadioRow, obj);
+    items[1] = tmp12(tmp7(7986).TableRadioRow, obj);
     if (!muted) {
       muted = guildMuted;
     }
@@ -310,7 +310,7 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     obj1[1] = constants2.NO_MESSAGES;
     const intl13 = tmp7(1236).intl;
     obj1[2] = intl13.string(tmp7(1236).t.CtVGyQ);
-    items[2] = tmp12(tmp7(7984).TableRadioRow, obj1);
+    items[2] = tmp12(tmp7(7986).TableRadioRow, obj1);
     obj[5] = items;
     let tmp11Result = tmp11(TableRadioGroup, obj);
   } else {
@@ -352,7 +352,7 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     }
     obj3[2] = stringResult3;
     obj3[3] = constants2.ALL_MESSAGES;
-    items1[1] = tmp12(tmp7(7984).TableRadioRow, obj3);
+    items1[1] = tmp12(tmp7(7986).TableRadioRow, obj3);
     const obj4 = { label: null, disabled: null, value: null };
     const intl8 = tmp7(1236).intl;
     obj4[0] = intl8.format(tmp7(1236).t.L2hmYy, {});
@@ -362,7 +362,7 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     }
     obj4[1] = tmp19;
     obj4[2] = constants2.ONLY_MENTIONS;
-    items1[2] = tmp12(tmp7(7984).TableRadioRow, obj4);
+    items1[2] = tmp12(tmp7(7986).TableRadioRow, obj4);
     const obj5 = { label: null, disabled: null, value: null };
     const intl9 = tmp7(1236).intl;
     obj5[0] = intl9.string(tmp7(1236).t.CtVGyQ);
@@ -372,7 +372,7 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     }
     obj5[1] = tmp20;
     obj5[2] = constants2.NO_MESSAGES;
-    items1[3] = tmp12(tmp7(7984).TableRadioRow, obj5);
+    items1[3] = tmp12(tmp7(7986).TableRadioRow, obj5);
     obj[5] = items1;
     tmp11Result = tmp11(TableRadioGroup, obj);
   }
@@ -429,7 +429,7 @@ prototype["render"] = function render() {
     items[3] = tmp5;
     obj3[2] = items;
     obj2[1] = closure_18(require(4712) /* Stack */.Stack, obj3);
-    tmp9Result = tmp9(require(7967) /* Form */.Form, obj2);
+    tmp9Result = tmp9(require(7969) /* Form */.Form, obj2);
     const tmp12 = closure_18;
   }
   return tmp9Result;
@@ -444,7 +444,7 @@ export default function ChannelSettingsNotificationsSplit(arg0) {
   let obj = dependencyMap;
   const items = [ensureGuildLoaded];
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_6.getChannel(channelId.channelId));
-  _require(9824);
+  _require(9829);
   if (null == stateFromStores) {
     return null;
   } else {
@@ -456,7 +456,7 @@ export default function ChannelSettingsNotificationsSplit(arg0) {
     obj = { channel: null };
     obj[0] = stateFromStores;
     merged1 = Object.assign(merged1);
-    tmp11 = callback2(importDefault(9825), obj);
-    const tmp14 = importDefault(9825);
+    tmp11 = callback2(importDefault(9830), obj);
+    const tmp14 = importDefault(9830);
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 7099
-// Function ID: 7100
+// Module ID: 7100
+// Function ID: 7101
 // Name: shouldRemoveSelfMention
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 7099 (shouldRemoveSelfMention)
+// Module 7100 (shouldRemoveSelfMention)
 import { MessageTypesSets } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/messages/shouldRemoveSelfMention.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 1899
-// Function ID: 1900
+// Module ID: 1918
+// Function ID: 1919
 // Name: LIBDISCORE_JSI
-// Dependencies: [17, 1900, 2]
+// Dependencies: [17, 1919, 2]
 // Exports: consumeLogs, crash, generateLaunchSignature, getFluxApi, getHttpClientAPI, registerDevLogListener, rustMultiply
 
-// Module 1899 (LIBDISCORE_JSI)
+// Module 1918 (LIBDISCORE_JSI)
 import { NativeModules } from "get ActivityIndicator";
 
 if (NativeModules.LibDiscoreModule) {

@@ -1,10 +1,10 @@
-// Module ID: 9065
-// Function ID: 9066
+// Module ID: 9071
+// Function ID: 9072
 // Name: showInstantInviteActionSheet
-// Dependencies: [6919, 1376, 1372, 9066, 1961, 4288, 4390, 1903, 9070, 7196, 9071, 676, 698, 7198, 9072, 9073, 4289, 4271, 8923, 4001, 7218, 5756, 4477, 38, 9068, 2]
+// Dependencies: [6922, 1395, 1391, 9072, 1980, 4288, 4390, 1922, 9076, 7197, 9077, 676, 698, 7199, 9078, 9079, 4289, 4271, 8929, 4020, 7219, 5756, 4477, 38, 9074, 2]
 // Exports: getShareMessage, handleCopy, handleOpenInviteActionsheet, handleOpenShareSheet, handlePressSettings, hasDeferredInvite, isAppInstalled, showInstantInviteActionSheetForChannel, showVanityUrlInviteActionSheet
 
-// Module 9065 (showInstantInviteActionSheet)
+// Module 9071 (showInstantInviteActionSheet)
 import handleGuildTemplateResolveSuccess from "handleGuildTemplateResolveSuccess";
 import { ChannelRecordBase } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -38,7 +38,7 @@ function showInstantInviteActionSheet(channel, source) {
     stream = source.stream;
     obj.targetType = InviteTargetTypes.STREAM;
     obj.targetUserId = stream.ownerId;
-    const streamerApplication = require(7198) /* _findPlayingActivity */.getStreamerApplication(stream, sortActivity);
+    const streamerApplication = require(7199) /* _findPlayingActivity */.getStreamerApplication(stream, sortActivity);
     let tmpResult = tmp(698);
     obj = { type: "Send Stream Invite", location: null, other_user_id: null, application_id: null, application_name: null, game_id: null };
     obj[1] = obj.location;
@@ -59,7 +59,7 @@ function showInstantInviteActionSheet(channel, source) {
     }
     obj[5] = id1;
     tmpResult.track(constants.OPEN_MODAL, obj);
-    const obj3 = require(7198) /* _findPlayingActivity */;
+    const obj3 = require(7199) /* _findPlayingActivity */;
   } else {
     let targetApplicationId;
     if (source != null) {
@@ -83,7 +83,7 @@ function showInstantInviteActionSheet(channel, source) {
     tmp17 = null == code;
   }
   if (tmp17) {
-    tmpResult = tmp(9072);
+    tmpResult = tmp(9078);
     tmpResult.init(channel.getGuildId(), channel.id, obj);
   }
   const obj1 = { channel, source: null, guildScheduledEventId: null, targetApplicationId: null, code: null, vanityURLCode: null, stackingBehavior: null };
@@ -112,7 +112,7 @@ function showInstantInviteActionSheet(channel, source) {
     stackingBehavior = source.stackingBehavior;
   }
   obj1[6] = stackingBehavior;
-  importDefault(9073)(obj1);
+  importDefault(9079)(obj1);
 }
 function trackOptionClicked(code, channel, COPY, _location) {
   let obj = require(4289) /* readSnowflake */;
@@ -175,10 +175,10 @@ export const showVanityUrlInviteActionSheet = function showVanityUrlInviteAction
   let obj = importDefault(698);
   obj = { type: "Vanity URL Invite", source: GUILD_SCHEDULED_EVENT };
   obj.track(constants.OPEN_POPOUT, obj);
-  importDefault(9072).init(guild.id, channel.id, { skipCreateInvite: true });
+  importDefault(9078).init(guild.id, channel.id, { skipCreateInvite: true });
   obj = { vanityURLCode: guild.vanityURLCode, channel, source: GUILD_SCHEDULED_EVENT, guildScheduledEventId: null, stackingBehavior: null };
   let prop;
-  const obj3 = importDefault(9072);
+  const obj3 = importDefault(9078);
   if (guildScheduledEventId != null) {
     prop = guildScheduledEventId.guildScheduledEventId;
   }
@@ -188,7 +188,7 @@ export const showVanityUrlInviteActionSheet = function showVanityUrlInviteAction
     stackingBehavior = guildScheduledEventId.stackingBehavior;
   }
   obj[4] = stackingBehavior;
-  importDefault(9073)(obj);
+  importDefault(9079)(obj);
 };
 export { trackOptionClicked };
 export function getShareMessage(c10) {
@@ -268,8 +268,8 @@ export const handleOpenShareSheet = function handleOpenShareSheet(code, channel,
         const obj = callback(table[19]);
       }
     };
-    tmp21(8923).showShareActionSheet(obj, ADD_FRIENDS_WIDGET);
-    const tmp21Result = tmp21(8923);
+    tmp21(8929).showShareActionSheet(obj, ADD_FRIENDS_WIDGET);
+    const tmp21Result = tmp21(8929);
   }
 };
 export const handleCopy = function handleCopy(code, channel, GROUP_DM, arg3) {
@@ -281,7 +281,7 @@ export const handleCopy = function handleCopy(code, channel, GROUP_DM, arg3) {
     const result = require(4289) /* readSnowflake */.parseExtraDataFromInviteKey(code);
     const obj4 = require(4289) /* readSnowflake */;
     const tmp13 = require;
-    const tmp17 = importDefault(7218)(code);
+    const tmp17 = importDefault(7219)(code);
     require(5756) /* _copy */.copy(tmp17);
     const invite = store3.getInvite(result.baseCode);
     const obj5 = require(5756) /* _copy */;
@@ -324,8 +324,8 @@ export const handleCopy = function handleCopy(code, channel, GROUP_DM, arg3) {
       trackOptionClicked(code, channel, constants2.COPY);
     }
     const obj6 = importDefault(698);
-    tmp13(4001).presentLinkCopied();
-    const tmp13Result = tmp13(4001);
+    tmp13(4020).presentLinkCopied();
+    const tmp13Result = tmp13(4020);
   }
 };
 export const handlePressSettings = function handlePressSettings(channel, closure_1, handleGuildTemplateResolveSuccess) {
@@ -341,7 +341,7 @@ export const handlePressSettings = function handlePressSettings(channel, closure
   if (handleGuildTemplateResolveSuccess == null) {
     str = "Instant Invite Action Sheet";
   }
-  importDefault(9072).openSettings(guild_id, id, str, () => {
+  importDefault(9078).openSettings(guild_id, id, str, () => {
     if (null != closure_1) {
       tmp();
     } else {
@@ -373,7 +373,7 @@ export const handleOpenInviteActionsheet = function handleOpenInviteActionsheet(
       obj = { type: "Vanity URL Invite", source: null };
       obj[1] = GUILD_HEADER;
       tmp4Result.track(constants.OPEN_POPOUT, obj);
-      tmp4Result = tmp4(9072);
+      tmp4Result = tmp4(9078);
       tmp4Result.init(guild.id, channel.id, { skipCreateInvite: true });
       obj = { vanityURLCode: null, channel: null, source: null, guildScheduledEventId: null, stackingBehavior: null };
       obj[0] = guild.vanityURLCode;
@@ -381,10 +381,10 @@ export const handleOpenInviteActionsheet = function handleOpenInviteActionsheet(
       obj[2] = GUILD_HEADER;
       obj[3] = undefined;
       obj[4] = undefined;
-      tmp4(9073)(obj);
+      tmp4(9079)(obj);
     }
   }
-  let obj1 = require(9068) /* get label */;
+  let obj1 = require(9074) /* get label */;
   const inviteChannelId = obj1.getInviteChannelId(channel.id, channels);
   if (null != inviteChannelId) {
     let channel1 = obj.getChannel(inviteChannelId);

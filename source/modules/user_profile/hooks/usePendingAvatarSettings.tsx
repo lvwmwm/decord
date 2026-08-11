@@ -1,10 +1,10 @@
-// Module ID: 8261
-// Function ID: 8262
+// Module ID: 8265
+// Function ID: 8266
 // Name: usePendingAvatarSettings
-// Dependencies: [19, 8262, 8264, 647, 8265, 8267, 8268, 2]
+// Dependencies: [19, 8266, 8269, 647, 8270, 8272, 8273, 2]
 // Exports: default
 
-// Module 8261 (usePendingAvatarSettings)
+// Module 8265 (usePendingAvatarSettings)
 import handleFormOpen from "handleFormOpen";
 
 require("noop").useCallback;
@@ -17,7 +17,7 @@ export default function usePendingAvatarSettings(isTryItOut) {
   isTryItOut = isTryItOut.isTryItOut;
   const guildId = isTryItOut.guildId;
   let dependencyMap;
-  const tmp2 = guildId(8264)(isTryItOut.analyticsLocations);
+  const tmp2 = guildId(8269)(isTryItOut.analyticsLocations);
   dependencyMap = tmp2;
   let obj = isTryItOut(647);
   const items = [handleFormOpen];
@@ -60,11 +60,11 @@ export default function usePendingAvatarSettings(isTryItOut) {
   }, items2);
   obj = { pendingAvatar, pendingAvatarDecoration, pendingErrors, setPendingAvatar: null, setPendingAvatarDecoration: null };
   if (isTryItOut) {
-    setTryItOutAvatar = tmp3(8268).setTryItOutAvatar;
+    setTryItOutAvatar = tmp3(8273).setTryItOutAvatar;
   }
   obj[3] = setTryItOutAvatar;
   if (isTryItOut) {
-    setTryItOutAvatarDecoration = tmp3(8268).setTryItOutAvatarDecoration;
+    setTryItOutAvatarDecoration = tmp3(8273).setTryItOutAvatarDecoration;
   }
   obj[4] = setTryItOutAvatarDecoration;
   return obj;

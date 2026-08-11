@@ -1,10 +1,10 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12073
+// Function ID: 12074
 // Name: JoinServerContainer
-// Dependencies: [32, 19, 8507, 21, 4303, 5267, 1480, 5270, 12038, 5328, 8506, 1236, 7758, 2]
+// Dependencies: [32, 19, 8513, 21, 4303, 5267, 1499, 5270, 12041, 5328, 8512, 1236, 7760, 2]
 // Exports: default
 
-// Module 12070 (JoinServerContainer)
+// Module 12073 (JoinServerContainer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -57,7 +57,7 @@ export default function JoinServerContainer(initialRoute) {
     }
     navigation.setOptions({ headerLeft: headerCloseButton });
   }, items);
-  obj = { top: true, style: items1, children: null };
+  obj = { top: true, left: true, right: true, style: items1, children: null };
   items1 = [, ];
   ({ flex: arr2[0], contentContainer: arr2[1] } = tmp);
   obj = { inviteString: first, error: null, submitting: null, onInviteChange: null, onDone: null };
@@ -95,6 +95,6 @@ export default function JoinServerContainer(initialRoute) {
       _undefined(true);
     }
   };
-  obj[2] = navigation(onClose(location[10]), obj);
+  obj[4] = navigation(onClose(location[10]), obj);
   return navigation(initialRoute(location[9]).SafeAreaPaddingView, obj);
 };

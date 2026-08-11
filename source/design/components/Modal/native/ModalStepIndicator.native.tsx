@@ -1,10 +1,10 @@
-// Module ID: 13428
-// Function ID: 13429
+// Module ID: 13436
+// Function ID: 13437
 // Name: StepPill
-// Dependencies: [19, 17, 21, 4303, 712, 4036, 4005, 4713, 1236, 1990, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4042, 4024, 4713, 1236, 2009, 2]
 // Exports: ModalStepIndicator
 
-// Module 13428 (StepPill)
+// Module 13436 (StepPill)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -111,7 +111,7 @@ export const ModalStepIndicator = function ModalStepIndicator(arg0) {
     } else {
       const intl = require(1236) /* getSystemLocale */.intl;
       const obj1 = { accessible: true, accessibilityRole: "progressbar", accessibilityLabel: null, accessibilityValue: null, importantForAccessibility: "yes", style: null, children: null };
-      obj1[2] = intl.string(importDefault(1990).KUwsC0);
+      obj1[2] = intl.string(importDefault(2009).KUwsC0);
       const obj2 = { min: 1, max: null, now: null };
       obj2[1] = totalSteps;
       obj2[2] = currentStep + 1;

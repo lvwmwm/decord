@@ -1,15 +1,15 @@
-// Module ID: 15441
-// Function ID: 15442
+// Module ID: 15458
+// Function ID: 15459
 // Name: VoiceUsers
-// Dependencies: [19, 17, 1961, 3938, 4499, 4376, 676, 21, 4303, 712, 12304, 1297, 4299, 1236, 10943, 5268, 4725, 15440, 589, 12, 15442, 2]
+// Dependencies: [19, 17, 1980, 3957, 4499, 4376, 676, 21, 4303, 712, 12307, 1297, 4299, 1236, 10948, 5268, 4725, 15457, 589, 12, 15459, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 15441 (VoiceUsers)
+// Module 15458 (VoiceUsers)
 import apply from "apply";
 import { View } from "useIsHomeDrawerChannelInChannelList";
 import comparator from "comparator";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import getVoiceStatesForGuild from "getVoiceStatesForGuild";
 import { ChannelTypes } from "ME";
@@ -43,7 +43,7 @@ function VoiceUsers(arg0) {
       obj[2] = closure_0;
       return outer1_11(outer1_0(outer1_2[11]).Avatar, obj, id.id);
     });
-    obj[1] = callback(require(12304) /* AvatarPile */.AvatarPile, obj);
+    obj[1] = callback(require(12307) /* AvatarPile */.AvatarPile, obj);
     tmp = callback(View, obj);
   }
   return tmp;
@@ -88,7 +88,7 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
   if (streamingUser != null) {
     id = streamingUser.id;
   }
-  const previewUrl = importDefault(10943)(guildId, streamingChannelId, id).previewUrl;
+  const previewUrl = importDefault(10948)(guildId, streamingChannelId, id).previewUrl;
   if (!tmp2) {
     return null;
   } else {
@@ -147,10 +147,10 @@ export const useVoiceUsers = function useVoiceUsers(guild) {
   const id = guild.id;
   let obj = _require(isHomeDrawerChannelInChannelList[17]);
   isHomeDrawerChannelInChannelList = obj.useIsHomeDrawerChannelInChannelList();
-  let items = [stateFromStoresArray1, updateUserGuildSettingsInternal];
+  let items = [stateFromStores1, updateUserGuildSettingsInternal];
   const items1 = [id, isHomeDrawerChannelInChannelList];
   const stateFromStoresArray = _require(isHomeDrawerChannelInChannelList[18]).useStateFromStoresArray(items, () => {
-    const found = stateFromStoresArray1.getChannels(id)[outer1_6].filter((channel) => {
+    const found = stateFromStores1.getChannels(id)[outer1_6].filter((channel) => {
       channel = channel.channel;
       let tmp = channel.type === outer1_10.GUILD_VOICE;
       if (tmp) {
@@ -168,9 +168,9 @@ export const useVoiceUsers = function useVoiceUsers(guild) {
   const items3 = [id];
   const stateFromStores = _require(isHomeDrawerChannelInChannelList[18]).useStateFromStores(items2, () => outer1_9.getVoiceStates(id), items3);
   const obj3 = _require(isHomeDrawerChannelInChannelList[18]);
-  const items4 = [upsertRelationship];
-  stateFromStoresArray1 = _require(isHomeDrawerChannelInChannelList[18]).useStateFromStoresArray(items4, () => blockedOrIgnoredIDs.getBlockedOrIgnoredIDs());
-  const items5 = [stateFromStoresArray, stateFromStores, guild.afkChannelId, stateFromStoresArray1];
+  const items4 = [markAllUserIdListsStale];
+  stateFromStores1 = _require(isHomeDrawerChannelInChannelList[18]).useStateFromStores(items4, () => blockedOrIgnoredIDs.getBlockedOrIgnoredIDs());
+  const items5 = [stateFromStoresArray, stateFromStores, guild.afkChannelId, stateFromStores1];
   const items6 = [stateFromStores, guild.afkChannelId, stateFromStoresArray];
   const memo = stateFromStoresArray.useMemo(() => id(isHomeDrawerChannelInChannelList[19]).flatMap(stateFromStoresArray, (arg0) => {
     if (arg0 === afkChannelId.afkChannelId) {

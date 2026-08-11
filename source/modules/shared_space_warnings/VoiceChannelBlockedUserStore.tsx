@@ -1,10 +1,10 @@
-// Module ID: 12996
-// Function ID: 12997
+// Module ID: 13000
+// Function ID: 13001
 // Name: init
-// Dependencies: [3938, 4319, 12997, 589, 709, 2]
+// Dependencies: [3957, 4319, 13001, 589, 709, 2]
 
-// Module 12996 (init)
-import upsertRelationship from "upsertRelationship";
+// Module 13000 (init)
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateVoiceState from "updateVoiceState";
 import { Store } from "initialize";
 import set from "handleChannelSelect";
@@ -49,8 +49,8 @@ function processUserInChannel(channelId, id) {
             delete tmp[tmp2];
           }
           if (flag3) {
-            const result = importDefault(12997).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
-            const obj4 = importDefault(12997);
+            const result = importDefault(13001).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
+            const obj4 = importDefault(13001);
           }
           return flag4;
         }
@@ -83,7 +83,7 @@ class VoiceChannelBlockedUserStore extends Store {
 }
 const prototype = VoiceChannelBlockedUserStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(upsertRelationship, updateVoiceState);
+  this.waitFor(markAllUserIdListsStale, updateVoiceState);
 };
 prototype["getBlockedUsersForVoiceChannel"] = function getBlockedUsersForVoiceChannel(channelId) {
   let tmp = dependencyMap[channelId];

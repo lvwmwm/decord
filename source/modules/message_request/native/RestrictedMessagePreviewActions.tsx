@@ -1,13 +1,13 @@
-// Module ID: 15970
-// Function ID: 15971
+// Module ID: 15987
+// Function ID: 15988
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 3938, 676, 10364, 21, 4303, 712, 11951, 589, 9243, 9632, 11977, 4146, 4271, 10365, 1988, 8020, 4313, 4714, 1236, 4299, 2]
+// Dependencies: [19, 17, 3957, 676, 10369, 21, 4303, 712, 11954, 589, 9249, 9637, 11980, 4148, 4271, 10370, 2007, 8022, 4313, 4714, 1236, 4299, 2]
 // Exports: default
 
-// Module 15970 (RestrictedMessagePreviewActions)
+// Module 15987 (RestrictedMessagePreviewActions)
 import Button from "Button";
 import { View } from "_submitHamReportForFirstDM";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import ME from "ME";
 import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_8 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY";
 import jsxProd from "Text";
@@ -26,7 +26,7 @@ createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexDirection: "row", flexWrap: "wrap", gap: require("Themes").space.PX_8 };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj1 = { flexDirection: "row", flexWrap: "wrap", gap: require("Themes").space.PX_8 };
-let result = require("upsertRelationship").fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewActions.tsx");
+let result = require("markAllUserIdListsStale").fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewActions.tsx");
 
 export default function RestrictedMessagePreviewActions(channel) {
   let isLoaded;
@@ -40,7 +40,7 @@ export default function RestrictedMessagePreviewActions(channel) {
   message = dMMessageToReport.message;
   ({ isReportable, isLoaded } = dMMessageToReport);
   let obj1 = channel(message[9]);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const items1 = [user.id];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getRelationshipType(user.id), items1);
   const items2 = [user.id];
@@ -154,7 +154,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     tmp18 = null;
     formatResult = null;
   } else if (tmp13.PENDING_OUTGOING === stateFromStores) {
-    const obj6 = { size: "sm", variant: "active", text: null, disabled: true, onPress: "accessibilityRole" };
+    const obj6 = { size: "sm", variant: "active", text: null, disabled: true, onPress: "Boolean" };
     const intl3 = tmp2(tmp3[20]).intl;
     obj6[2] = intl3.string(tmp2(tmp3[20]).t.xMH6vD);
     tmp19 = callback(tmp2(tmp3[19]).Button, obj6);

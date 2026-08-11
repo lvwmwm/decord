@@ -1,10 +1,10 @@
-// Module ID: 16469
-// Function ID: 16470
+// Module ID: 16480
+// Function ID: 16481
 // Name: getData
-// Dependencies: [5, 32, 19, 1218, 1372, 4640, 1971, 4124, 4639, 13672, 8217, 676, 8216, 1935, 1416, 10594, 5874, 589, 5716, 11, 709, 8357, 1236, 38, 4525, 7301, 8221, 4852, 530, 687, 2]
+// Dependencies: [5, 32, 19, 1218, 1391, 4640, 1990, 4126, 4639, 13680, 8221, 676, 8220, 1954, 1435, 10599, 5874, 589, 5716, 11, 709, 8362, 1236, 38, 4525, 7302, 8225, 4852, 530, 687, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16469 (getData)
+// Module 16480 (getData)
 import handleChanged from "handleChanged";
 import _slicedToArray from "_slicedToArray";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
@@ -2142,7 +2142,7 @@ function _submitModal() {
                   let obj = { url: null, body: null, signal: null, rejectWithError: false };
                   obj[0] = outer1_15.INTERACTIONS;
                   obj = { type: null, application_id: null, channel_id: null, guild_id: null, data: null, session_id: null, nonce: null };
-                  obj[0] = lib(1935).InteractionTypes.MODAL_SUBMIT;
+                  obj[0] = lib(1954).InteractionTypes.MODAL_SUBMIT;
                   obj[1] = lib.application.id;
                   ({ id: obj2[2], guild_id: obj2[3] } = channel);
                   obj = { id: null, custom_id: null, components: null, attachments: null };
@@ -2194,7 +2194,7 @@ function _submitModal() {
 let result = require("noop").fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");
 
 export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id) {
-  const componentStateContext = require(8216) /* isInteractionComponent */.useComponentStateContext();
+  const componentStateContext = require(8220) /* isInteractionComponent */.useComponentStateContext();
   let first;
   if (componentStateContext != null) {
     const modal = componentStateContext.modal;
@@ -2206,14 +2206,14 @@ export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id
   if (first != null) {
     type = first.type;
   }
-  let tmp6 = type === tmp(1935).ComponentType.ACTION_ROW && first.components[0].id === id;
+  let tmp6 = type === tmp(1954).ComponentType.ACTION_ROW && first.components[0].id === id;
   if (!tmp6) {
     let type1;
     if (first != null) {
       type1 = first.type;
     }
-    tmp6 = type1 === tmp(1935).ComponentType.LABEL && first.component.id === id;
-    const tmp8 = type1 === tmp(1935).ComponentType.LABEL && first.component.id === id;
+    tmp6 = type1 === tmp(1954).ComponentType.LABEL && first.component.id === id;
+    const tmp8 = type1 === tmp(1954).ComponentType.LABEL && first.component.id === id;
   }
   return tmp6;
 };

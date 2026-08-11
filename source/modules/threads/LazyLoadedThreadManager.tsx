@@ -1,9 +1,9 @@
-// Module ID: 5929
-// Function ID: 5930
+// Module ID: 5931
+// Function ID: 5932
 // Name: initialize
-// Dependencies: [4994, 1376, 1372, 1960, 676, 1379, 709, 5843, 4129, 4142, 530, 2]
+// Dependencies: [4994, 1395, 1391, 1979, 676, 1398, 709, 5843, 4131, 4144, 530, 2]
 
-// Module 5929 (initialize)
+// Module 5931 (initialize)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -64,11 +64,11 @@ function loadThread(channelId) {
         }
         return resolved;
       } else {
-        let tmp13Result = tmp13(4129);
+        let tmp13Result = tmp13(4131);
         const _location = location;
         obj = { path: null, exact: true };
-        const RouteParam = tmp13(4142).RouteParam;
-        const RouteParam2 = tmp13(4142).RouteParam;
+        const RouteParam = tmp13(4144).RouteParam;
+        const RouteParam2 = tmp13(4144).RouteParam;
         obj[0] = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         importDefault = tmp13Result.matchPath(location.pathname, obj);
         const HTTP = tmp13(530).HTTP;

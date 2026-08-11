@@ -1,12 +1,12 @@
 // Module ID: 4489
 // Function ID: 4490
 // Name: getMediaPostEmbedCommonData
-// Dependencies: [1891, 3938, 1903, 676, 4490, 1236, 4493, 1416, 1384, 4494, 4287, 4495, 2]
+// Dependencies: [1910, 3957, 1922, 676, 4490, 1236, 4493, 1435, 1403, 4494, 4287, 4495, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedChannelPath, getMediaPostEmbedCommonData
 
 // Module 4489 (getMediaPostEmbedCommonData)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
@@ -63,8 +63,8 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     if (!tmp6) {
       obj = { id: null, icon: null, size: 40, canAnimate: false };
       ({ guild_id: obj3[0], guild_icon: obj3[1] } = mediaPostEmbedData);
-      avatarURL = importDefault(1416).getGuildIconURL(obj);
-      const obj2 = importDefault(1416);
+      avatarURL = importDefault(1435).getGuildIconURL(obj);
+      const obj2 = importDefault(1435);
     }
     const thumbnail = mediaPostEmbedData.thumbnail;
     let flag = false;
@@ -76,7 +76,7 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     if (flag) {
       flag = !has_media_attachment;
     }
-    let tmp17Result = tmp17(1384);
+    let tmp17Result = tmp17(1403);
     const thumbnail2 = mediaPostEmbedData.thumbnail;
     let num2;
     if (thumbnail2 != null) {
@@ -124,7 +124,7 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     let channelName;
     if (null != parentChannel) {
       tmp17Result = tmp17(4494);
-      channelName = tmp17Result.computeChannelName(parentChannel, mergeGuildAvatar, upsertRelationship);
+      channelName = tmp17Result.computeChannelName(parentChannel, mergeGuildAvatar, markAllUserIdListsStale);
     }
     obj[14] = channelName;
     obj[15] = avatarURL;

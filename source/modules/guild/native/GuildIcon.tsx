@@ -1,7 +1,7 @@
 // Module ID: 5779
 // Function ID: 5780
 // Name: GuildIconSizes
-// Dependencies: [32, 19, 5780, 1415, 676, 21, 4303, 712, 1884, 5329, 5268, 5781, 299, 2]
+// Dependencies: [32, 19, 5780, 1434, 676, 21, 4303, 712, 1903, 5329, 5268, 5781, 299, 2]
 
 // Module 5779 (GuildIconSizes)
 import _slicedToArray from "_slicedToArray";

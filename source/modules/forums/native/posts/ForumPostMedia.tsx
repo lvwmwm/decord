@@ -1,10 +1,10 @@
-// Module ID: 11400
-// Function ID: 11401
+// Module ID: 11403
+// Function ID: 11404
 // Name: ForumPostMediaAndroid
-// Dependencies: [32, 19, 17, 1302, 1301, 21, 4303, 712, 5268, 4704, 11401, 7059, 11402, 500, 5913, 4846, 7797, 7799, 11403, 4153, 3974, 9900, 1473, 2]
+// Dependencies: [32, 19, 17, 1302, 1301, 21, 4303, 712, 5268, 4704, 11404, 7062, 11405, 500, 5913, 4846, 7799, 7801, 11406, 1363, 3993, 9905, 1492, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail, useSharedMediaProps
 
-// Module 11400 (ForumPostMediaAndroid)
+// Module 11403 (ForumPostMediaAndroid)
 import _slicedToArray from "_slicedToArray";
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import get_ActivityIndicator from "AgeVerificationModalEntryPoint";
@@ -78,14 +78,14 @@ function ForumPostMedia(obscureReason) {
   const _require = obscureReason;
   const tmp = createCacheKey();
   const ref = React.useRef(null);
-  let obj = _require(7059);
+  let obj = _require(7062);
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     obj = {};
     const merged = Object.assign(obscureReason);
-    let tmp6Result = callback2(ref(11402), obj);
+    let tmp6Result = callback2(ref(11405), obj);
     let tmp12 = callback2;
-    const tmp19 = ref(11402);
+    const tmp19 = ref(11405);
   } else {
     if (tmp3Result.isAndroid()) {
       obj = {};
@@ -111,8 +111,8 @@ function ForumPostMedia(obscureReason) {
         const obj3 = { androidRippleConfig: null, activeOpacity: 0, onPress: null, children: null };
         obj3[0] = ANDROID_FOREGROUND_RIPPLE;
         obj3[2] = function onPress() {
-          let obj = ref(7797);
-          obj = { entryPoint: obscureReason(7799).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
+          let obj = ref(7799);
+          obj = { entryPoint: obscureReason(7801).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
           const result = obj.showAgeVerificationGetStartedModal(obj);
         };
         obj3[3] = tmp6Result;
@@ -169,7 +169,7 @@ export const useSharedMediaProps = function useSharedMediaProps(arg0) {
   let channel;
   let media;
   ({ channel, media } = arg0);
-  let obj = require(11403) /* getForumPostShouldObscure */;
+  let obj = require(11406) /* getForumPostShouldObscure */;
   const tmp3 = callback(obj.useShouldObscure({ media, channel }), 2);
   obj = { shouldObscure: tmp3[0], obscureReason: tmp3[1], blurTheme: null, format: null };
   let str = "light";
@@ -177,7 +177,7 @@ export const useSharedMediaProps = function useSharedMediaProps(arg0) {
     str = "dark";
   }
   obj[2] = str;
-  const GifAutoPlay = require(3974) /* explicitContentFromProto */.GifAutoPlay;
+  const GifAutoPlay = require(3993) /* explicitContentFromProto */.GifAutoPlay;
   let tmp4 = "png";
   if (GifAutoPlay.useSetting()) {
     tmp4 = null;

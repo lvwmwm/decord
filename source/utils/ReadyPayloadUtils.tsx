@@ -1,10 +1,10 @@
-// Module ID: 12947
-// Function ID: 12948
+// Module ID: 12951
+// Function ID: 12952
 // Name: hydrateGuild
-// Dependencies: [1376, 1936, 7110, 7114, 1956, 7115, 1952, 12, 38, 2]
+// Dependencies: [1395, 1955, 7111, 7115, 1975, 7116, 1971, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 12947 (hydrateGuild)
+// Module 12951 (hydrateGuild)
 import { createChannelRecordFromServer as closure_3 } from "createChannelRecord";
 
 function hydrateGuild(guild) {
@@ -363,18 +363,18 @@ export const hydrateReadySupplementalPayload = function hydrateReadySupplemental
   return obj;
 };
 export const preloadReadyPayloadData = function preloadReadyPayloadData() {
-  const databaseResult = importDefault(1936).database();
-  const obj = importDefault(1936);
+  const databaseResult = importDefault(1955).database();
+  const obj = importDefault(1955);
   const tmp4 = require;
   if (obj2.isCacheEnabled()) {
-    let tmpResult = tmp(7114);
+    let tmpResult = tmp(7115);
     let committedVersions = tmpResult.getCommittedVersions();
   } else {
     committedVersions = Promise.resolve({});
   }
-  obj2 = require(7110) /* isCacheEnabled */;
+  obj2 = require(7111) /* isCacheEnabled */;
   if (tmp4Result.isCacheEnabled()) {
-    tmpResult = tmp(1956);
+    tmpResult = tmp(1975);
     let guildIds = tmpResult.getGuildIds();
   } else {
     const _Set = Set;
@@ -382,13 +382,13 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
     guildIds = Promise.resolve(set);
   }
   if (null != databaseResult) {
-    let okAsyncResult = tmp(7115).okAsync(databaseResult);
-    const tmpResult1 = tmp(7115);
+    let okAsyncResult = tmp(7116).okAsync(databaseResult);
+    const tmpResult1 = tmp(7116);
   } else {
     okAsyncResult = Promise.resolve(false);
   }
   const items = [committedVersions, guildIds, okAsyncResult];
-  tmp4Result = tmp4(7110);
+  tmp4Result = tmp4(7111);
   return Promise.all(items).then((arg0) => {
     let tmp;
     let tmp2;
@@ -404,13 +404,13 @@ export const hydrateReadyPayloadPrioritized = function hydrateReadyPayloadPriori
   let users;
   ({ users, private_channels, merged_members: require, guilds } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = importDefault(1936);
+  let obj = importDefault(1955);
   let tmp4 = null != obj.database();
   if (tmp4) {
     tmp4 = false === closure_1.databaseOk;
   }
   if (tmp4) {
-    let tmp2Result = tmp2(1952);
+    let tmp2Result = tmp2(1971);
     const result = tmp2Result.replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok");
   }
   tmp2Result = tmp2(12);

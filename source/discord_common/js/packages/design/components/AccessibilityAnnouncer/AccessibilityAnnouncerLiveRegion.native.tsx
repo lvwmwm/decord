@@ -1,10 +1,10 @@
-// Module ID: 4015
-// Function ID: 4016
+// Module ID: 1352
+// Function ID: 1353
 // Name: updateAccessibilityAnnouncerLiveRegionMessage
-// Dependencies: [19, 17, 21, 4016, 2]
+// Dependencies: [19, 17, 21, 1353, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
-// Module 4015 (updateAccessibilityAnnouncerLiveRegionMessage)
+// Module 1352 (updateAccessibilityAnnouncerLiveRegionMessage)
 import { Text } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import keys from "keys";

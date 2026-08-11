@@ -1,13 +1,13 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 16894
+// Function ID: 16895
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 3938, 1903, 21, 4303, 4764, 4494, 16883, 9069, 16884, 4271, 16885, 1988, 16886, 1236, 5779, 5380, 4712, 712, 5767, 5374, 5768, 1384, 7772, 2]
+// Dependencies: [19, 17, 3957, 1922, 21, 4303, 4764, 4494, 16895, 9075, 16896, 4271, 16897, 2007, 16898, 1236, 5779, 5380, 4712, 712, 5767, 5374, 5768, 1403, 7774, 2]
 // Exports: default
 
-// Module 16882 (AdvancedInstantInvite)
+// Module 16894 (AdvancedInstantInvite)
 import Themes from "Themes";
 import { View } from "TableRowIcon";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "TableRowInner";
 import createCacheKey from "createCacheKey";
@@ -17,7 +17,7 @@ let metroImportAll;
 const require = arg1;
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ container: { flexGrow: 1 } });
-const result = require("upsertRelationship").fileFinishedImporting("modules/guild_invite/native/AdvancedInstantInvite.tsx");
+const result = require("markAllUserIdListsStale").fileFinishedImporting("modules/guild_invite/native/AdvancedInstantInvite.tsx");
 
 export default function AdvancedInstantInvite(maxAge) {
   let canCreateApplicationBypassInvites;

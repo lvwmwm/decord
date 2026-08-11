@@ -1,10 +1,10 @@
-// Module ID: 14054
-// Function ID: 14055
+// Module ID: 14062
+// Function ID: 14063
 // Name: route
-// Dependencies: [3938, 8082, 676, 589, 1236, 10447, 8495, 14055, 2]
+// Dependencies: [3957, 8084, 676, 589, 1236, 10452, 8501, 14063, 2]
 
-// Module 14054 (route)
-import upsertRelationship from "upsertRelationship";
+// Module 14062 (route)
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import createToggle from "createToggle";
 
 const require = arg1;
@@ -16,7 +16,7 @@ createToggle = {
   },
   useDescription: function useAccountIgnoredUsersSettingDescription() {
     let obj = require(589) /* initialize */;
-    const items = [upsertRelationship];
+    const items = [markAllUserIdListsStale];
     const stateFromStoresArray = obj.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs());
     const intl = require(1236) /* getSystemLocale */.intl;
     obj = { numberOfIgnoredUsers: stateFromStoresArray.length };
@@ -28,7 +28,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.IGNORED_USERS,
   getComponent() {
-    return require(14055) /* IgnoredUsersList */.default;
+    return require(14063) /* IgnoredUsersList */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

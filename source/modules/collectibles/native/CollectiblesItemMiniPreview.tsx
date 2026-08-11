@@ -1,9 +1,9 @@
-// Module ID: 9444
-// Function ID: 9445
+// Module ID: 9450
+// Function ID: 9451
 // Name: PX_8
-// Dependencies: [19, 17, 7006, 1928, 7007, 7008, 8818, 9376, 21, 712, 4303, 9387, 9395, 5268, 9396, 9379, 1927, 9390, 2]
+// Dependencies: [19, 17, 7009, 1947, 7010, 7011, 8824, 9382, 21, 712, 4303, 9393, 9401, 5268, 9402, 9385, 1946, 9396, 2]
 
-// Module 9444 (PX_8)
+// Module 9450 (PX_8)
 import { View } from "NameplateInner";
 import { isAvatarDecorationRecord } from "fromServer";
 import { isNameplateRecord } from "fromServer";
@@ -40,7 +40,7 @@ const memoResult = require("noop").memo(function CollectiblesItemMiniPreview(arg
     obj = { item: null, size: null };
     obj[0] = item;
     obj[1] = 0.75 * size;
-    obj[1] = callback(importDefault(9387), obj);
+    obj[1] = callback(importDefault(9393), obj);
     return callback(View, obj);
   } else if (isProfileFrameRecord(item)) {
     const obj1 = { style: null, children: null };
@@ -52,7 +52,7 @@ const memoResult = require("noop").memo(function CollectiblesItemMiniPreview(arg
     obj3[1] = size * closure_8;
     obj3[2] = size - 2 * PX_8;
     obj3[3] = importDefault(712).colors.BACKGROUND_BASE_LOW;
-    obj2[1] = callback(importDefault(9395), obj3);
+    obj2[1] = callback(importDefault(9401), obj3);
     obj1[1] = callback(View, obj2);
     return callback(View, obj1);
   } else if (isProfileEffectRecord(item)) {
@@ -62,18 +62,18 @@ const memoResult = require("noop").memo(function CollectiblesItemMiniPreview(arg
     obj5[0] = tmp.profileEffect;
     const obj6 = { source: null, style: null, resizeMode: "cover" };
     const obj7 = { uri: null };
-    obj7[0] = importDefault(9396);
+    obj7[0] = importDefault(9402);
     obj6[0] = obj7;
     obj6[1] = tmp.sampleProfile;
     const items1 = [callback(importDefault(5268), obj6), ];
     const obj8 = { skuId: null, bannerAdjustment: 0, useThumbnail: true };
     obj8[0] = item.skuId;
-    items1[1] = callback(importDefault(9379), obj8);
+    items1[1] = callback(importDefault(9385), obj8);
     obj5[3] = items1;
     obj4[1] = callback2(View, obj5);
     return callback(View, obj4);
   } else if (isNameplateRecord(item)) {
-    obj = require(1927) /* getNameplateData */;
+    obj = require(1946) /* getNameplateData */;
     const obj9 = { style: null, children: null };
     const items2 = [items, tmp.nameplateTile];
     obj9[0] = items2;
@@ -83,7 +83,7 @@ const memoResult = require("noop").memo(function CollectiblesItemMiniPreview(arg
     const obj11 = { nameplate: null, fullOpacity: true, style: null };
     obj11[0] = nameplateData;
     obj11[2] = tmp.nameplate;
-    obj10[1] = callback(importDefault(9390), obj11);
+    obj10[1] = callback(importDefault(9396), obj11);
     obj9[1] = callback(View, obj10);
     return callback(View, obj9);
   } else {

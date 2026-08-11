@@ -1,7 +1,7 @@
 // Module ID: 5883
 // Function ID: 5884
 // Name: useGuildShopPreviewVisible
-// Dependencies: [3929, 676, 4123, 1358, 647, 5878, 2]
+// Dependencies: [3948, 676, 4125, 1377, 647, 5878, 2]
 // Exports: useGuildShopPreviewVisible
 
 // Module 5883 (useGuildShopPreviewVisible)
@@ -16,8 +16,8 @@ let result = require("UNSAFE_isDismissibleContentDismissed").fileFinishedImporti
 
 export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(features) {
   const _require = features;
-  const result = _require(4123).useIsDismissibleContentDismissed_UNSAFE(_require(1358).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
-  const obj = _require(4123);
+  const result = _require(4125).useIsDismissibleContentDismissed_UNSAFE(_require(1377).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
+  const obj = _require(4125);
   const tmp = _require;
   const items = [getUncachedChannelPermissions];
   let flag;

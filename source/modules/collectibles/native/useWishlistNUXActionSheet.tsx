@@ -1,10 +1,10 @@
-// Module ID: 9352
-// Function ID: 9353
+// Module ID: 9358
+// Function ID: 9359
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7080, 1218, 1369, 589, 4123, 1358, 1360, 4271, 9353, 1988, 2]
+// Dependencies: [19, 7083, 1218, 1388, 589, 4125, 1377, 1379, 4271, 9359, 2007, 2]
 // Exports: default, useHasNeverWishlisted
 
-// Module 9352 (useWishlistNUXActionSheet)
+// Module 9358 (useWishlistNUXActionSheet)
 import noop from "noop";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import fetchFingerprint from "fetchFingerprint";
@@ -34,7 +34,7 @@ export default function useWishlistNUXActionSheet() {
   }
   const obj3 = _require(589);
   if (stateFromStores1) {
-    stateFromStores1 = !tmpResult.useIsDismissibleContentDismissed_UNSAFE(tmp(1358).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
+    stateFromStores1 = !tmpResult.useIsDismissibleContentDismissed_UNSAFE(tmp(1377).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
   }
   obj = {
     shouldShowWishlistNUXActionSheet: stateFromStores1,

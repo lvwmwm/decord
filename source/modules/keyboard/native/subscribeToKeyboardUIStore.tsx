@@ -1,17 +1,17 @@
-// Module ID: 1476
-// Function ID: 1477
+// Module ID: 1495
+// Function ID: 1496
 // Name: subscribeToKeyboardUIStore
-// Dependencies: [1477, 1478, 2]
+// Dependencies: [1496, 1497, 2]
 // Exports: default
 
-// Module 1476 (subscribeToKeyboardUIStore)
+// Module 1495 (subscribeToKeyboardUIStore)
 const result = require("set").fileFinishedImporting("modules/keyboard/native/subscribeToKeyboardUIStore.tsx");
 
 export default function subscribeToKeyboardUIStore(arg0) {
   const _require = arg0;
   let DEFAULT_APP_ENTRY_KEY = arg1;
   if (arg1 === undefined) {
-    DEFAULT_APP_ENTRY_KEY = _require(1477).DEFAULT_APP_ENTRY_KEY;
+    DEFAULT_APP_ENTRY_KEY = _require(1496).DEFAULT_APP_ENTRY_KEY;
   }
-  return DEFAULT_APP_ENTRY_KEY(1478).subscribe((arg0) => callback(arg0.byAppEntry[DEFAULT_APP_ENTRY_KEY]));
+  return DEFAULT_APP_ENTRY_KEY(1497).subscribe((arg0) => callback(arg0.byAppEntry[DEFAULT_APP_ENTRY_KEY]));
 };

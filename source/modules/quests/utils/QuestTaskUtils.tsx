@@ -1,10 +1,10 @@
-// Module ID: 7183
-// Function ID: 7184
+// Module ID: 7184
+// Function ID: 7185
 // Name: getApplicationIdsByTaskTypes
-// Dependencies: [7160, 5168, 12, 687, 7158, 1351, 2]
+// Dependencies: [7161, 5168, 12, 687, 7159, 1370, 2]
 // Exports: formatWatchTaskRemainingTime, formatWatchTaskTime, getActivityApplicationId, getAllApplicationIds, getConsoleApplicationId, getDefaultInGameTask, getDefaultWatchVideoTask, getDesktopApplicationIds, getInGameApplicationId, getPlayActivityApplicationId, getQuestTaskDetails, getQuestTaskTypes, getRemainingTaskTime, getStreamingApplicationId, getThirdPartyTaskDetails, hasAchievementActivityTask, hasAchievementInGameTask, hasActivityTasks, hasPlayActivityTask, hasPlayOnDesktopTask, hasSomeFirstPartyTasks, hasStandaloneGameplayTasks, hasStreamOnDesktopTask, isConsoleQuest, isDesktopOnlyPlayQuest, isInGameQuest, isVideoQuestForMobilePlatformOnly, parseMinutesAndSecondsFromSeconds, shouldUsePlayOnDesktopTask
 
-// Module 7183 (getApplicationIdsByTaskTypes)
+// Module 7184 (getApplicationIdsByTaskTypes)
 import initializeState from "initializeState";
 
 let items5 = arg1;
@@ -149,7 +149,7 @@ function _getTaskDetailsForType(arg0) {
     }
     obj[2] = Array.from(includeTaskTypes);
     obj[1] = obj;
-    const result = quest(7158).captureQuestsException(error, obj);
+    const result = quest(7159).captureQuestsException(error, obj);
     return null;
   } else {
     ({ target: target2, target } = floorResult);
@@ -547,7 +547,7 @@ export const getQuestTaskDetails = function getQuestTaskDetails(closure_0, DESKT
               }
             }
           });
-          const found = sorted.filter(callback(1351).isNotNullish);
+          const found = sorted.filter(callback(1370).isNotNullish);
           const obj3 = found[Symbol.iterator]();
           while (obj3 !== undefined) {
             let tmp5 = callback3;

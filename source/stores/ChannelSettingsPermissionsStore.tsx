@@ -1,9 +1,9 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15914
+// Function ID: 15915
 // Name: init
-// Dependencies: [8017, 1372, 676, 7781, 595, 3934, 12, 589, 709, 2]
+// Dependencies: [8019, 1391, 676, 7783, 595, 3953, 12, 589, 709, 2]
 
-// Module 15897 (init)
+// Module 15914 (init)
 import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
@@ -26,11 +26,11 @@ function init() {
     let obj = {};
     const merged = Object.assign(_null2.permissionOverwrites);
     if (tmp) {
-      obj = importAll(3934);
+      obj = importAll(3953);
       obj[guildId1] = obj.makeEveryoneOverwrite(guildId1);
     }
     let closure_5 = null != category;
-    let closure_4 = importAll(3934).areChannelsLocked(_null2, category);
+    let closure_4 = importAll(3953).areChannelsLocked(_null2, category);
     let c19 = null;
     let c13 = false;
     const CLOSED = FormStates.CLOSED;
@@ -53,7 +53,7 @@ function syncChannelUpdates(id) {
           let obj = {};
           const merged = Object.assign(channel.permissionOverwrites);
           if (tmp) {
-            obj = importAll(3934);
+            obj = importAll(3953);
             obj[guildId1] = obj.makeEveryoneOverwrite(guildId1);
           }
           obj = {};
@@ -67,8 +67,8 @@ function syncChannelUpdates(id) {
             tmp6 = null == channel.permissionOverwrites[guildId];
           }
           if (tmp6) {
-            obj[guildId] = importAll(3934).makeEveryoneOverwrite(guildId);
-            const obj3 = importAll(3934);
+            obj[guildId] = importAll(3953).makeEveryoneOverwrite(guildId);
+            const obj3 = importAll(3953);
           }
           const obj1 = {};
           const merged1 = Object.assign(channel.permissionOverwrites);
@@ -85,7 +85,7 @@ function syncChannelUpdates(id) {
               c19 = null;
             }
           }
-          let closure_4 = importAll(3934).areChannelsLocked(channel, category);
+          let closure_4 = importAll(3953).areChannelsLocked(channel, category);
           return true;
         }
       }
@@ -210,7 +210,7 @@ const channelSettingsPermissionsStore = new ChannelSettingsPermissionsStore(requ
         const OPEN = FormStates.OPEN;
         let closure_13 = !importDefault(12).isEqual(obj, c15);
         const obj3 = importDefault(12);
-        let closure_4 = importAll(3934).areChannelsLocked(c16, c17);
+        let closure_4 = importAll(3953).areChannelsLocked(c16, c17);
       }
     }
     return false;

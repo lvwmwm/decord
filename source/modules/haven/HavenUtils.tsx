@@ -1,10 +1,10 @@
-// Module ID: 13026
-// Function ID: 13027
+// Module ID: 13035
+// Function ID: 13036
 // Name: parseParticipant
-// Dependencies: [13027, 1236, 2996, 2]
+// Dependencies: [13036, 1236, 3015, 2]
 // Exports: getHavenSoundControlName, parseRoom
 
-// Module 13026 (parseParticipant)
+// Module 13035 (parseParticipant)
 function parseParticipant(userId) {
   return { userId: userId.user_id, position: userId.position, avatar: userId.avatar };
 }
@@ -21,15 +21,15 @@ export const parseRoom = function parseRoom(roomId) {
   return { roomId: roomId.room_id, participants: participants.map(parseParticipant), seats: seats.map(parseSeat) };
 };
 export const getHavenSoundControlName = function getHavenSoundControlName(arg0) {
-  if (require(13027) /* HavenGenres */.HavenSoundKeys.RADIO === arg0) {
+  if (require(13036) /* HavenGenres */.HavenSoundKeys.RADIO === arg0) {
     const intl3 = tmp(1236).intl;
-    return intl3.string(importDefault(2996).AjiGKB);
-  } else if (tmp(13027).HavenSoundKeys.ENVIRONMENT === arg0) {
+    return intl3.string(importDefault(3015).AjiGKB);
+  } else if (tmp(13036).HavenSoundKeys.ENVIRONMENT === arg0) {
     const intl2 = tmp(1236).intl;
-    return intl2.string(importDefault(2996).YEYIbI);
-  } else if (tmp(13027).HavenSoundKeys.CAMPFIRE === arg0) {
+    return intl2.string(importDefault(3015).YEYIbI);
+  } else if (tmp(13036).HavenSoundKeys.CAMPFIRE === arg0) {
     const intl = tmp(1236).intl;
-    return intl.string(importDefault(2996)["Vk9+Ez"]);
+    return intl.string(importDefault(3015)["Vk9+Ez"]);
   } else {
     return "";
   }

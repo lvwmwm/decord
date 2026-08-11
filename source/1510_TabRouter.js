@@ -1,0 +1,46 @@
+// Module ID: 1510
+// Function ID: 1511
+// Name: TabRouter
+// Dependencies: [1511]
+
+// Module 1510 (TabRouter)
+let require = arg1;
+const dependencyMap = arg6;
+let obj = {
+  jumpTo(name, params) {
+    const payload = { name, params };
+    return { type: "JUMP_TO", payload };
+  }
+};
+arg5.TabActions = obj;
+arg5.TabRouter = function TabRouter(merged) {
+  let obj = require(1511) /* getRouteHistory */;
+  const SwitchRouterResult = obj.SwitchRouter(merged);
+  require = SwitchRouterResult;
+  obj = {};
+  merged = Object.assign(SwitchRouterResult);
+  obj.type = "tab";
+  obj.getInitialState = function getInitialState(arg0) {
+    const initialState = SwitchRouterResult.getInitialState(arg0);
+    const obj = {};
+    const merged = Object.assign(initialState);
+    obj.type = "tab";
+    obj.key = "tab-" + initialState.key;
+    return obj;
+  };
+  obj.getRehydratedState = function getRehydratedState(stale) {
+    if (false === stale.stale) {
+      return stale;
+    } else {
+      const rehydratedState = SwitchRouterResult.getRehydratedState(stale, arg1);
+      const obj = {};
+      const merged = Object.assign(rehydratedState);
+      obj.type = "tab";
+      const _HermesInternal = HermesInternal;
+      obj.key = "tab-" + rehydratedState.key;
+      return obj;
+    }
+  };
+  obj.actionCreators = obj;
+  return obj;
+};

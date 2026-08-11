@@ -1,9 +1,9 @@
-// Module ID: 13090
-// Function ID: 13091
+// Module ID: 13099
+// Function ID: 13100
 // Name: calculateFps
-// Dependencies: [676, 3, 4540, 13091, 4379, 687, 2]
+// Dependencies: [676, 3, 4540, 13100, 4379, 687, 2]
 
-// Module 13090 (calculateFps)
+// Module 13099 (calculateFps)
 import { VideoToggleState } from "ME";
 
 class VideoHealthManager {
@@ -78,14 +78,14 @@ prototype["updateFps"] = function updateFps(arg0, arg1, arg2) {
               const streamDisabledUsers2 = self.streamDisabledUsers;
               streamDisabledUsers2.add(arg0);
               self.currentVideoAutoToggleState[arg0] = VideoToggleState.DISABLED;
-              importDefault(13091)(arg0, VideoToggleState.DISABLED);
+              importDefault(13100)(arg0, VideoToggleState.DISABLED);
               const result = self.startReenableBackoffTimer(arg0);
             } else if (self.currentVideoAutoToggleState[arg0] === VideoToggleState.AUTO_PROBING) {
               self.currentVideoAutoToggleState[arg0] = tmp7.AUTO_ENABLED;
               const logger2 = self.logger;
               const _HermesInternal2 = HermesInternal;
               logger2.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user " + arg0);
-              importDefault(13091)(arg0, tmp7.AUTO_ENABLED);
+              importDefault(13100)(arg0, tmp7.AUTO_ENABLED);
             }
             if (self.probingUserId === arg0) {
               self.probingUserId = undefined;
@@ -171,7 +171,7 @@ prototype["reenableVideo"] = function reenableVideo(arr) {
     const result = self.stateCleanupBeforeEnable(arr);
     self.currentVideoAutoToggleState[arr] = VideoToggleState.AUTO_PROBING;
     self.probingUserId = arr;
-    importDefault(13091)(arr, VideoToggleState.AUTO_PROBING);
+    importDefault(13100)(arr, VideoToggleState.AUTO_PROBING);
     flag = true;
     const obj = require(4379) /* sleep */;
   }

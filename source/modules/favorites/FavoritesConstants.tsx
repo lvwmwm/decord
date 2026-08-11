@@ -1,9 +1,9 @@
-// Module ID: 1410
-// Function ID: 1411
+// Module ID: 1429
+// Function ID: 1430
 // Name: date
-// Dependencies: [1411, 2]
+// Dependencies: [1430, 2]
 
-// Module 1410 (date)
+// Module 1429 (date)
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields";
 
 const obj = { id: "373", name: "Favorites", description: "The place for all your favorite channels!", joinedAt: null, maxMembers: 500000 };

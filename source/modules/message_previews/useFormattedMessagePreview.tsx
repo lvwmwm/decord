@@ -1,12 +1,12 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9772
+// Function ID: 9773
 // Name: formatMessagePreview
-// Dependencies: [1218, 3938, 1903, 676, 686, 589, 8088, 4532, 1236, 4491, 5918, 12, 8093, 8171, 2]
+// Dependencies: [1218, 3957, 1922, 676, 686, 589, 8090, 4532, 1236, 4491, 5918, 12, 8095, 8173, 2]
 // Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
-// Module 9767 (formatMessagePreview)
+// Module 9772 (formatMessagePreview)
 import fetchFingerprint from "fetchFingerprint";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { MessageFlags } from "ME";
 
@@ -315,7 +315,7 @@ function formatMessagePreview(type, isBlocked) {
               } else if (type.type === tmp4(686).MessageTypes.USER_JOIN) {
                 let obj38 = { type: "text", text: null };
                 const intl18 = tmp4(1236).intl;
-                obj38 = importDefault(8093);
+                obj38 = importDefault(8095);
                 const obj39 = { username: null, usernameHook: null };
                 obj39[0] = authorNick;
                 const systemMessageUserJoin = obj38.getSystemMessageUserJoin(type.id);
@@ -376,9 +376,9 @@ function formatMessagePreview(type, isBlocked) {
                 tmp21 = obj50;
               } else if (type.type === tmp4(686).MessageTypes.VOICE_SESSION) {
                 const obj52 = { type: "text", text: null };
-                obj52[1] = tmp4(8171).getVoiceSessionMessageContent(type);
+                obj52[1] = tmp4(8173).getVoiceSessionMessageContent(type);
                 tmp21 = obj52;
-                const tmp4Result = tmp4(8171);
+                const tmp4Result = tmp4(8173);
               }
             }
           }
@@ -414,11 +414,11 @@ export const useFormattedMessagePreview = function useFormattedMessagePreview(me
   let isIgnored;
   const _require = message;
   let obj = _require(589);
-  const items = [upsertRelationship];
+  const items = [markAllUserIdListsStale];
   const items1 = [message.author.id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isBlocked: outer1_4.isBlocked(message.author.id), isIgnored: outer1_4.isIgnored(message.author.id) }), items1);
   ({ isBlocked, isIgnored } = stateFromStoresObject);
-  const tmp4 = importDefault(8088)(channel.id, message.id);
+  const tmp4 = importDefault(8090)(channel.id, message.id);
   const items2 = [fetchFingerprint];
   const stateFromStores = _require(589).useStateFromStores(items2, () => id.getId());
   const nick = importDefault(4532)(message).nick;

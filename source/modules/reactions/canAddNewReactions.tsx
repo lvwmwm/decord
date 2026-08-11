@@ -1,9 +1,9 @@
-// Module ID: 11145
-// Function ID: 11146
-// Dependencies: [5131, 3929, 676, 2]
+// Module ID: 11150
+// Function ID: 11151
+// Dependencies: [5131, 3948, 676, 2]
 // Exports: default
 
-// Module 11145
+// Module 11150
 import recomputeGuild from "recomputeGuild";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";

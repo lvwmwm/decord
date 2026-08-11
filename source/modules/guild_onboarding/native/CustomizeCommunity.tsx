@@ -1,10 +1,10 @@
-// Module ID: 11023
-// Function ID: 11024
+// Module ID: 11028
+// Function ID: 11029
 // Name: EmptyCustomizeCommunity
-// Dependencies: [19, 17, 5176, 1891, 4315, 4124, 5242, 5243, 676, 1906, 4500, 21, 4303, 712, 5236, 4011, 4239, 589, 11024, 11025, 1297, 1236, 4299, 5249, 5355, 5726, 5748, 1609, 11026, 5241, 5253, 5247, 5360, 1416, 1351, 4005, 4036, 4304, 11027, 4271, 5365, 1988, 4846, 5718, 5356, 2]
+// Dependencies: [19, 17, 5176, 1910, 4315, 4126, 5242, 5243, 676, 1925, 4500, 21, 4303, 712, 5236, 1364, 4239, 589, 11029, 11030, 1297, 1236, 4299, 5249, 5355, 5726, 5748, 1628, 11031, 5241, 5253, 5247, 5360, 1435, 1370, 4024, 4042, 4304, 11032, 4271, 5365, 2007, 4846, 5718, 5356, 2]
 // Exports: default
 
-// Module 11023 (EmptyCustomizeCommunity)
+// Module 11028 (EmptyCustomizeCommunity)
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "initialize";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -32,12 +32,12 @@ function EmptyCustomizeCommunity(setTab) {
   setTab = setTab.setTab;
   let importDefault;
   const tmp = createCacheKey();
-  let obj = setTab(4011);
+  let obj = setTab(1364);
   let obj1 = setTab(589);
   const items = [handleConnectionOpen];
   importDefault = obj1.useStateFromStores(items, () => guildId.getGuildId());
   obj = { style: tmp.emptyContainer, children: null };
-  obj = { style: tmp.emptyContainerImage, source: importDefault(obj.isThemeDark(importDefault(4239)()) ? 11024 : 11025) };
+  obj = { style: tmp.emptyContainerImage, source: importDefault(obj.isThemeDark(importDefault(4239)()) ? 11029 : 11030) };
   const items1 = [closure_16(closure_5, obj), , ];
   obj1 = { style: tmp.emptyContainerHeader, children: null };
   const intl = tmp2(1236).intl;
@@ -212,8 +212,8 @@ function DropdownOption(option) {
       const obj2 = { id: null, animated: null, size: null };
       ({ id: obj6[0], animated: obj6[1] } = stateFromStores);
       obj2[2] = EMOJI_URL_BASE_SIZE;
-      emojiURL = tmp11(1416).getEmojiURL(obj2);
-      const tmp11Result = tmp11(1416);
+      emojiURL = tmp11(1435).getEmojiURL(obj2);
+      const tmp11Result = tmp11(1435);
     }
     obj1[2] = emojiURL;
     const emoji3 = option.emoji;
@@ -486,7 +486,7 @@ export default function CustomizeCommunity(guildId) {
   guildId = guildId.guildId;
   let stateFromStores;
   const tmp = createCacheKey();
-  const bottom = stateFromStores(1609)().bottom;
+  const bottom = stateFromStores(1628)().bottom;
   let obj = guildId(589);
   const items = [generateOldThreadCutoff];
   stateFromStores = obj.useStateFromStores(items, () => outer1_9.hasUnread(guildId, outer1_15.GUILD_ONBOARDING_QUESTION));
@@ -500,7 +500,7 @@ export default function CustomizeCommunity(guildId) {
     }
     return prop;
   });
-  const tmp7 = stateFromStores(11026)(guildId);
+  const tmp7 = stateFromStores(11031)(guildId);
   ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, onboardingPrompts } = tmp7);
   const items2 = [guildId, stateFromStores, stateFromStores1];
   ({ onboardingPromptsRaw, newAnswersCount } = tmp7);

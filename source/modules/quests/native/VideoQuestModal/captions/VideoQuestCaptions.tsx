@@ -1,10 +1,10 @@
-// Module ID: 14387
-// Function ID: 14388
+// Module ID: 14395
+// Function ID: 14396
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 4303, 712, 689, 14388, 14390, 4704, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 689, 14396, 14398, 4704, 4299, 2]
 // Exports: VideoQuestCaptions
 
-// Module 14387 (VideoQuestCaptions)
+// Module 14395 (VideoQuestCaptions)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

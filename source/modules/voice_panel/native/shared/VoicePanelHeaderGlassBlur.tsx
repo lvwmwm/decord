@@ -1,9 +1,9 @@
-// Module ID: 11654
-// Function ID: 11655
+// Module ID: 11657
+// Function ID: 11658
 // Name: StyleSheet
-// Dependencies: [19, 17, 21, 4303, 500, 4036, 4713, 4239, 8009, 4703, 4153, 5781, 2]
+// Dependencies: [19, 17, 21, 4303, 500, 4042, 4713, 4239, 8011, 4703, 1363, 5781, 2]
 
-// Module 11654 (StyleSheet)
+// Module 11657 (StyleSheet)
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -31,7 +31,7 @@ export default require("noop").memo(function HeaderGlassBlur(shown) {
   shown = shown.shown;
   ({ blurStyle, style } = shown);
   const tmp = callback();
-  let obj = shown(4036);
+  let obj = shown(4042);
   const fn = function k() {
     let opacity = 0;
     if (shown.get()) {
@@ -48,7 +48,7 @@ export default require("noop").memo(function HeaderGlassBlur(shown) {
   fn.__workletHash = 3451055086565;
   fn.__initData = closure_8;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj2 = shown(4036);
+  let obj2 = shown(4042);
   const fn2 = function p() {
     let obj = shown(outer1_2[6]);
     let num = 0;
@@ -67,7 +67,7 @@ export default require("noop").memo(function HeaderGlassBlur(shown) {
   const obj1 = { style: items, children: null };
   items = [tmp.blur, style, animatedStyle];
   const tmp2 = shown;
-  const tmp9 = importDefault(8009);
+  const tmp9 = importDefault(8011);
   const tmp11 = importDefault(4703);
   let str = "light";
   if (obj6.isThemeDark(tmp7)) {
@@ -80,9 +80,9 @@ export default require("noop").memo(function HeaderGlassBlur(shown) {
   const items3 = [closure_4(importDefault(5781), { style: tmp.stroke }), ];
   tmp6Result = tmp6(5781);
   const obj3 = { style: tmp.stroke };
-  obj6 = shown(4153);
-  const tmp2Result = tmp2(4153);
-  items3[1] = closure_4(tmp6Result, { style: tmp2(4153).isThemeDark(tmp7) ? tmp.strokeAlt : tmp.strokeAltLight });
+  obj6 = shown(1363);
+  const tmp2Result = tmp2(1363);
+  items3[1] = closure_4(tmp6Result, { style: tmp2(1363).isThemeDark(tmp7) ? tmp.strokeAlt : tmp.strokeAltLight });
   obj2[1] = items3;
   items2[1] = closure_5(tmp6Result, obj2);
   obj1[1] = items2;

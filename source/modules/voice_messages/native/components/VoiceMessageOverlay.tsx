@@ -1,9 +1,9 @@
-// Module ID: 12002
-// Function ID: 12003
+// Module ID: 12005
+// Function ID: 12006
 // Name: LockPill
-// Dependencies: [32, 19, 17, 4295, 1372, 11367, 11368, 676, 1301, 11369, 21, 4036, 1297, 4846, 4299, 12, 7835, 4303, 712, 5158, 589, 4005, 1348, 5329, 1236, 4304, 4799, 9904, 12003, 5369, 1609, 11370, 4700, 4710, 1231, 11273, 1474, 10723, 11632, 12004, 7751, 4263, 11627, 11610, 4249, 10872, 4250, 10873, 2]
+// Dependencies: [32, 19, 17, 4295, 1391, 11372, 11373, 676, 1301, 11374, 21, 4042, 1297, 4846, 4299, 12, 7837, 4303, 712, 5158, 589, 4024, 1367, 5329, 1236, 4304, 4799, 9909, 12006, 5369, 1628, 11375, 4700, 4710, 1231, 11278, 1493, 10728, 11635, 12007, 7753, 4263, 11630, 11613, 4249, 10877, 4250, 10878, 2]
 
-// Module 12002 (LockPill)
+// Module 12005 (LockPill)
 import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER";
 import importAllResult from "result";
 import get_ActivityIndicator from "createCacheKey";
@@ -15,9 +15,9 @@ import { ComponentActionsKeyed } from "ME";
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import { CHAT_INPUT_HEIGHT } from "TextAreaCta";
 import jsxProd from "map";
-import importDefaultResult from "module_4036";
-import importDefaultResult1 from "module_4036";
-import importDefaultResult2 from "module_4036";
+import importDefaultResult from "module_4042";
+import importDefaultResult1 from "module_4042";
+import importDefaultResult2 from "module_4042";
 import createCacheKey from "createCacheKey";
 import importDefaultResult3 from "Button";
 
@@ -250,10 +250,10 @@ function LockPill(safeAreaBottom) {
 let c4 = importAllResult;
 ({ View: c5, StyleSheet: closure_6, AppState: error } = get_ActivityIndicator);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
-let closure_18 = require("module_4036").createAnimatedComponent(require("Button").Icon);
-let closure_19 = require("module_4036").createAnimatedComponent(require("PressableBase").PressableOpacity);
-let closure_20 = require("module_4036").createAnimatedComponent(require("Text").Text);
-let closure_21 = require("Button").memoize(() => importDefault(4036).createAnimatedComponent(require(7835) /* inlineStyles */.Ellipse));
+let closure_18 = require("module_4042").createAnimatedComponent(require("Button").Icon);
+let closure_19 = require("module_4042").createAnimatedComponent(require("PressableBase").PressableOpacity);
+let closure_20 = require("module_4042").createAnimatedComponent(require("Text").Text);
+let closure_21 = require("Button").memoize(() => importDefault(4042).createAnimatedComponent(require(7837) /* inlineStyles */.Ellipse));
 let c22 = 68;
 let c23 = 56;
 let closure_24 = createCacheKey.createStyles((width) => {

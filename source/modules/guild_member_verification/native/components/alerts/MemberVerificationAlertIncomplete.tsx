@@ -1,10 +1,10 @@
-// Module ID: 8433
-// Function ID: 8434
+// Module ID: 8439
+// Function ID: 8440
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [19, 4125, 21, 647, 8412, 8419, 1236, 8423, 8434, 4714, 2]
+// Dependencies: [19, 4127, 21, 647, 8418, 8425, 1236, 8429, 8440, 4714, 2]
 // Exports: default
 
-// Module 8433 (MemberVerificationAlertIncomplete)
+// Module 8439 (MemberVerificationAlertIncomplete)
 import noop from "noop";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import jsxProd from "jsxProd";
@@ -59,7 +59,7 @@ export default function MemberVerificationAlertIncomplete(guildId) {
   }
   obj = {};
   const merged1 = Object.assign(merged);
-  obj.icon = guildId(8434).ListViewIcon;
+  obj.icon = guildId(8440).ListViewIcon;
   obj.header = formatToPlainStringResult;
   const obj1 = { children: null };
   const obj2 = { variant: "secondary", text: null, onPress: null };
@@ -74,5 +74,5 @@ export default function MemberVerificationAlertIncomplete(guildId) {
   items4[1] = callback(guildId(4714).Button, obj3);
   obj1[0] = items4;
   obj.buttons = callback2(closure_6, obj1);
-  return callback(onClose(8423), obj);
+  return callback(onClose(8429), obj);
 };

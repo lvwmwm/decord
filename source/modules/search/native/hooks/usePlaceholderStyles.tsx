@@ -1,10 +1,10 @@
-// Module ID: 15729
-// Function ID: 15730
+// Module ID: 15746
+// Function ID: 15747
 // Name: useFullscreenPlaceholderCount
-// Dependencies: [4295, 8397, 1474, 589, 4036, 4304, 1297, 2]
+// Dependencies: [4295, 8403, 1493, 589, 4042, 4304, 1297, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 15729 (useFullscreenPlaceholderCount)
+// Module 15746 (useFullscreenPlaceholderCount)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "MessageEmbedTypes";
 
@@ -16,7 +16,7 @@ export const useFullscreenPlaceholderCount = function useFullscreenPlaceholderCo
   let numColumns;
   let placeholderHeight;
   ({ placeholderHeight, numColumns } = arg0);
-  return Math.ceil(importDefault(1474)({ ignoreKeyboard: true }).height / placeholderHeight) * numColumns;
+  return Math.ceil(importDefault(1493)({ ignoreKeyboard: true }).height / placeholderHeight) * numColumns;
 };
 export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(visible) {
   const _require = visible;
@@ -79,9 +79,9 @@ export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(
       return tmp5;
     }
   }
-  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4036).withRepeat, withSequence: _require(4036).withSequence, withTiming: _require(4304).withTiming, STANDARD_EASING: _require(1297).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
+  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4042).withRepeat, withSequence: _require(4042).withSequence, withTiming: _require(4304).withTiming, STANDARD_EASING: _require(1297).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
   A.__closure = obj;
   A.__workletHash = 9750536800906;
   A.__initData = closure_5;
-  return _require(4036).useAnimatedStyle(A);
+  return _require(4042).useAnimatedStyle(A);
 };

@@ -1,7 +1,7 @@
 // Module ID: 4195
 // Function ID: 4196
 // Name: getGuildTierFromGuild
-// Dependencies: [1891, 1903, 4196, 3953, 676, 1906, 1905, 3961, 4197, 1236, 1351, 4198, 1974, 12, 3883, 4199, 2866, 3947, 1208, 4210, 4229, 2]
+// Dependencies: [1910, 1922, 4196, 3972, 676, 1925, 1924, 3980, 4197, 1236, 1370, 4198, 1993, 12, 3902, 4199, 2885, 3966, 1208, 4210, 4229, 2]
 // Exports: appliedGuildBoostsRequiredForPerks, boostedGuildTierToAnalyticsObjectType, generateBlockGuildSubscriptionPurchasesNode, getAppliedGuildBoostMonths, getAvailableGuildBoostSlots, getAvailableSoundboardSoundCount, getAvailableStickerSlotCount, getGracePeriodEndingDate, getGuildBoostingProgressBarFillFactor, getIncrementalSoundboardSoundCountForTier, getIncrementalStickerCountForTier, getMaxEmojiSlots, getMaxSoundboardSlots, getNextGuildTierFromGuild, getNextPremiumTierForSubscriberCount, getNextTier, getNumberOfAppliedBoostsNeededForTier, getShortenedTierName, getTheoreticalPremiumTierForSubscriberCount, getTierName, getTiers, getTotalSoundboardSoundCountForTier, getTotalStickerCountForTier, getUserLevel, isAppliedGuildBoostActive, isGuildBoostSlotCanceled, isGuildBoostedAtLeast, isInGracePeriod, isTierUnlocked
 
 // Module 4195 (getGuildTierFromGuild)
@@ -170,7 +170,7 @@ export const getTiers = (arg0) => {
   obj9[1] = intl15.string(tmp2(1236).t["puH/9R"]);
   obj9[2] = obj.STREAM;
   items[6] = obj9;
-  obj[2] = items.filter(tmp2(1351).isNotNullish);
+  obj[2] = items.filter(tmp2(1370).isNotNullish);
   const items1 = [obj, , ];
   const obj10 = { tier: BoostedGuildTiers.TIER_2, title: null, perks: null };
   const intl16 = tmp2(1236).intl;
@@ -254,7 +254,7 @@ export const getTiers = (arg0) => {
     tmp14 = obj24;
   }
   items2[8] = tmp14;
-  obj10[2] = items2.filter(tmp2(1351).isNotNullish);
+  obj10[2] = items2.filter(tmp2(1370).isNotNullish);
   items1[1] = obj10;
   const obj27 = { tier: BoostedGuildTiers.TIER_3, title: null, perks: null };
   const intl35 = tmp2(1236).intl;
@@ -297,7 +297,7 @@ export const getTiers = (arg0) => {
   obj36[0] = intl44.string(tmp2(1236).t.C2w2cM);
   const intl45 = tmp2(1236).intl;
   const obj37 = { helpdeskArticle: null };
-  let obj41 = importDefault(1974);
+  let obj41 = importDefault(1993);
   obj37[0] = obj41.getArticleURL(constants.GUILD_VANITY_URL);
   obj36[1] = intl45.format(tmp2(1236).t["3Reosx"], obj37);
   obj36[2] = obj.VANITY;
@@ -334,7 +334,7 @@ export const getTiers = (arg0) => {
     tmp18 = obj41;
   }
   items3[7] = tmp18;
-  obj27[2] = items3.filter(tmp2(1351).isNotNullish);
+  obj27[2] = items3.filter(tmp2(1370).isNotNullish);
   items1[2] = obj27;
   return items1;
 };
@@ -433,7 +433,7 @@ export const getNextGuildTierFromGuild = function getNextGuildTierFromGuild(id) 
   return BoostedGuildTiers.TIER_1;
 };
 export const getAppliedGuildBoostMonths = function getAppliedGuildBoostMonths(arg0) {
-  let num = importDefault(3883)().diff(importDefault(3883)(arg0), "months");
+  let num = importDefault(3902)().diff(importDefault(3902)(arg0), "months");
   if (num == null) {
     num = 1;
   }
@@ -441,7 +441,7 @@ export const getAppliedGuildBoostMonths = function getAppliedGuildBoostMonths(ar
 };
 export const getUserLevel = function getUserLevel(arg0) {
   let num = 1;
-  const obj = importDefault(3883)();
+  const obj = importDefault(3902)();
   const keys = Object.keys(table);
   for (const item10021 of keys) {
     let tmp4 = table;
@@ -503,7 +503,7 @@ export const generateBlockGuildSubscriptionPurchasesNode = function generateBloc
     const intl7 = require(1236) /* getSystemLocale */.intl;
     const obj = { premiumGroupProductName: null };
     obj[0] = callback();
-    return intl7.formatToPlainString(tmp7(2866)["5xN/C1"], obj);
+    return intl7.formatToPlainString(tmp7(2885)["5xN/C1"], obj);
   } else {
     const _Object = Object;
     values = Object.values(tmp2.boostSlots);
@@ -535,8 +535,8 @@ export const generateBlockGuildSubscriptionPurchasesNode = function generateBloc
         } else if (null == premiumTypeSubscription.renewalMutations) {
           return null;
         } else {
-          const numPremiumGuildSubscriptions = importAll(3947).getNumPremiumGuildSubscriptions(premiumTypeSubscription.renewalMutations.additionalPlans);
-          const obj5 = importAll(3947);
+          const numPremiumGuildSubscriptions = importAll(3966).getNumPremiumGuildSubscriptions(premiumTypeSubscription.renewalMutations.additionalPlans);
+          const obj5 = importAll(3966);
           if (obj6.getNumPremiumGuildSubscriptions(premiumTypeSubscription.additionalPlans) > numPremiumGuildSubscriptions) {
             const intl3 = require(1236) /* getSystemLocale */.intl;
             let stringResult = intl3.string(require(1236) /* getSystemLocale */.t.x25mZR);

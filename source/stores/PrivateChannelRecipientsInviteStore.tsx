@@ -1,9 +1,9 @@
-// Module ID: 13018
-// Function ID: 13019
+// Module ID: 13022
+// Function ID: 13023
 // Name: performQuery
-// Dependencies: [4217, 7120, 1376, 1372, 5829, 5226, 1971, 1891, 3938, 1903, 676, 1884, 4146, 7312, 589, 709, 2]
+// Dependencies: [4217, 7121, 1395, 1391, 5829, 5226, 1990, 1910, 3957, 1922, 676, 1903, 4148, 7313, 589, 709, 2]
 
-// Module 13018 (performQuery)
+// Module 13022 (performQuery)
 import getHash from "getHash";
 import recomputeAffinities from "recomputeAffinities";
 import { PrivateChannelRecord } from "createChannelRecord";
@@ -12,7 +12,7 @@ import hasConsented from "hasConsented";
 import handleChannelSelect from "handleChannelSelect";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { Store } from "initialize";
@@ -151,12 +151,12 @@ function updateHasFriends() {
   }
 }
 function sortUserList(user, user2) {
-  const obj = require(1884) /* isNullOrEmpty */;
-  const name = importDefault(4146).getName(user.user);
-  const obj2 = importDefault(4146);
+  const obj = require(1903) /* isNullOrEmpty */;
+  const name = importDefault(4148).getName(user.user);
+  const obj2 = importDefault(4148);
   const stripDiacriticsResult = obj.stripDiacritics(name.toLocaleLowerCase());
-  const obj5 = require(1884) /* isNullOrEmpty */;
-  const name1 = importDefault(4146).getName(user2.user);
+  const obj5 = require(1903) /* isNullOrEmpty */;
+  const name1 = importDefault(4148).getName(user2.user);
   return stripDiacriticsResult.localeCompare(obj5.stripDiacritics(name1.toLocaleLowerCase()));
 }
 function parseUserResults(results) {
@@ -217,7 +217,7 @@ function handleModalActionSheetOpen(key) {
       userSearchContext.destroy();
       userSearchContext = null;
     }
-    userSearchContext = importDefault(7312).getUserSearchContext(parseUserResults, 1000);
+    userSearchContext = importDefault(7313).getUserSearchContext(parseUserResults, 1000);
     let c22 = null;
     let c16 = "";
     let c17 = 0;
@@ -258,12 +258,12 @@ class PrivateChannelRecipientsInviteStoreClass extends Store {
 }
 const prototype = PrivateChannelRecipientsInviteStoreClass.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ensureGuildLoaded, hasConsented, getHash, handleChannelSelect, trackCommunicationDisabled, createGuildRecordFromRust, upsertRelationship, recomputeAffinities, mergeGuildAvatar);
+  this.waitFor(ensureGuildLoaded, hasConsented, getHash, handleChannelSelect, trackCommunicationDisabled, createGuildRecordFromRust, markAllUserIdListsStale, recomputeAffinities, mergeGuildAvatar);
   const items = [mergeGuildAvatar, ensureGuildLoaded];
   this.syncWith(items, performQuery);
   const items1 = [recomputeAffinities];
   this.syncWith(items1, performQueryOnAffinityChange);
-  const items2 = [upsertRelationship];
+  const items2 = [markAllUserIdListsStale];
   this.syncWith(items2, updateHasFriends);
 };
 prototype["getResults"] = function getResults() {
@@ -321,7 +321,7 @@ const privateChannelRecipientsInviteStoreClass = new PrivateChannelRecipientsInv
       userSearchContext.destroy();
       userSearchContext = null;
     }
-    userSearchContext = importDefault(7312).getUserSearchContext(parseUserResults, 1000);
+    userSearchContext = importDefault(7313).getUserSearchContext(parseUserResults, 1000);
     channelId = channelId.channelId;
     let c16 = "";
     let c17 = 0;

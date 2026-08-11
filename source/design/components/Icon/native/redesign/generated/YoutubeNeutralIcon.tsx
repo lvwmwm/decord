@@ -1,10 +1,10 @@
-// Module ID: 11730
-// Function ID: 11731
+// Module ID: 11733
+// Function ID: 11734
 // Name: YoutubeNeutralIcon
-// Dependencies: [19, 21, 712, 4004, 11731, 2]
+// Dependencies: [19, 21, 712, 4023, 11734, 2]
 // Exports: YoutubeNeutralIcon
 
-// Module 11730 (YoutubeNeutralIcon)
+// Module 11733 (YoutubeNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const YoutubeNeutralIcon = function YoutubeNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11731) /* registerAsset */;
+  obj[0] = require(11734) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

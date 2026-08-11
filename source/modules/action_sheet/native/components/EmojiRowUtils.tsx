@@ -1,10 +1,10 @@
-// Module ID: 11129
-// Function ID: 11130
+// Module ID: 11134
+// Function ID: 11135
 // Name: shouldShowEmojiRow
-// Dependencies: [676, 1384, 2]
+// Dependencies: [676, 1403, 2]
 // Exports: shouldShowEmojiRow
 
-// Module 11129 (shouldShowEmojiRow)
+// Module 11134 (shouldShowEmojiRow)
 import ME from "ME";
 
 let c3;
@@ -28,8 +28,8 @@ export const shouldShowEmojiRow = function shouldShowEmojiRow(closure_8, message
     tmp = message.type !== constants3.THREAD_STARTER_MESSAGE;
   }
   if (tmp) {
-    tmp = !require(1384) /* hasFlag */.hasFlag(message.flags, constants.EPHEMERAL);
-    const obj = require(1384) /* hasFlag */;
+    tmp = !require(1403) /* hasFlag */.hasFlag(message.flags, constants.EPHEMERAL);
+    const obj = require(1403) /* hasFlag */;
   }
   return tmp;
 };

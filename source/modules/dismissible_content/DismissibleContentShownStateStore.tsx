@@ -1,10 +1,10 @@
-// Module ID: 1364
-// Function ID: 1365
+// Module ID: 1383
+// Function ID: 1384
 // Name: withContent
-// Dependencies: [1365, 1366, 1367, 700, 1363, 705, 589, 1368, 709, 2]
+// Dependencies: [1384, 1385, 1386, 700, 1382, 705, 589, 1387, 709, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isInCooldown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown, useIsAnyContentShown, useIsContentShown
 
-// Module 1364 (withContent)
+// Module 1383 (withContent)
 import handleUpdateUser from "handleUpdateUser";
 import handleRequiredAction from "handleRequiredAction";
 import identity from "identity";
@@ -27,7 +27,7 @@ function withContent(currentlyShown, content) {
       const currentlyShownGroup = currentlyShown.currentlyShownGroup;
       currentlyShownGroup.add(content.groupName);
     }
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1363).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1382).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     if (!CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content)) {
       currentlyShown.shownFatigableCandidate = content;
       const prevFatigableCandidate = currentlyShown.prevFatigableCandidate;
@@ -192,7 +192,7 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, () => self.setHasRequiredAction());
 };
 prototype["setHasRequiredAction"] = function setHasRequiredAction() {
-  let closure_7 = importDefault(1368)(handleUpdateUser, handleRequiredAction);
+  let closure_7 = importDefault(1387)(handleUpdateUser, handleRequiredAction);
 };
 DismissibleContentShownStateStore.displayName = "DismissibleContentShownStateStore";
 identity = {
@@ -254,7 +254,7 @@ export const isStateInCooldown = function isStateInCooldown(shownFatigableCandid
 };
 export const addCandidateContent = function addCandidateContent(content) {
   const _require = content;
-  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1363).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1382).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
   let closure_1 = CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content);
   _require(705).batchUpdates(() => {
     outer1_6.setState((candidates) => {

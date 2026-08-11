@@ -1,7 +1,7 @@
 // Module ID: 4744
 // Function ID: 4745
 // Name: getChannel
-// Dependencies: [1962, 1372, 1891, 3929, 3938, 1903, 676, 1884, 1416, 1236, 4745, 4486, 4494, 4746, 4495, 4743, 4000, 2]
+// Dependencies: [1981, 1391, 1910, 3948, 3957, 1922, 676, 1903, 1435, 1236, 4745, 4486, 4494, 4746, 4495, 4743, 4019, 2]
 // Exports: getGuildIdFromChannelId
 
 // Module 4744 (getChannel)
@@ -9,7 +9,7 @@ import isSubscriptionGated from "isSubscriptionGated";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
@@ -48,7 +48,7 @@ function getChannel(id, arr) {
     obj = { type: null, id: null, guildId: null, name: null, isDm: null, isForumPost: null, isMentionable: null, canViewChannel: null, roleSubscriptionGated: null, iconType: null, parentId: null };
     ({ type: obj4[0], id: obj4[1], guild_id: obj4[2] } = channel);
     let tmpResult = tmp(4494);
-    obj[3] = tmpResult.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+    obj[3] = tmpResult.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
     obj[4] = channel.isPrivate();
     obj[5] = channel.isForumPost();
     tmpResult = tmp(4746);
@@ -75,20 +75,20 @@ function handleUnknownChannel(guildId, channelId, messageId, arg3, originalLink)
     if (id !== arg3) {
       obj = { type: "guild", guildId: null, content: null, icon: null };
       obj[1] = guild.id;
-      obj[2] = require(1884) /* isNullOrEmpty */.truncateText(guild.name, 32);
-      const obj5 = require(1884) /* isNullOrEmpty */;
+      obj[2] = require(1903) /* isNullOrEmpty */.truncateText(guild.name, 32);
+      const obj5 = require(1903) /* isNullOrEmpty */;
       obj = { id: null, icon: null, size: 40 };
       ({ id: obj7[0], icon: obj7[1] } = guild);
-      obj[3] = importDefault(1416).getGuildIconURL(obj);
+      obj[3] = importDefault(1435).getGuildIconURL(obj);
       const items = [obj];
       tmp2 = items;
-      const obj6 = importDefault(1416);
+      const obj6 = importDefault(1435);
     }
   }
   obj[5] = tmp2;
   const intl = require(1236) /* getSystemLocale */.intl;
   const formatted = intl.string(require(1236) /* getSystemLocale */.t.zLZPmk).toLowerCase();
-  let obj1 = require(1884) /* isNullOrEmpty */;
+  let obj1 = require(1903) /* isNullOrEmpty */;
   obj1 = { type: "text", content: obj1.truncateText(formatted, 32) };
   const items1 = [obj1];
   const items2 = [{ type: "em", content: items1 }];
@@ -109,7 +109,7 @@ function parseChannel(canViewChannel) {
           obj = {};
           const merged = Object.assign(obj);
           obj.guildId = closure_10;
-          let obj19 = require(1884) /* isNullOrEmpty */;
+          let obj19 = require(1903) /* isNullOrEmpty */;
           const obj1 = { type: "text", content: null };
           obj1[1] = obj19.truncateText(canViewChannel.name, 32);
           const obj2 = { type: "channel", content: null, channelType: null, iconType: null };
@@ -145,14 +145,14 @@ function parseChannel(canViewChannel) {
         const merged1 = Object.assign(obj);
         const obj8 = { type: "guild", guildId: null, content: null, icon: null };
         obj8[1] = guild.id;
-        obj8[2] = require(1884) /* isNullOrEmpty */.truncateText(guild.name, 32);
-        const obj26 = require(1884) /* isNullOrEmpty */;
+        obj8[2] = require(1903) /* isNullOrEmpty */.truncateText(guild.name, 32);
+        const obj26 = require(1903) /* isNullOrEmpty */;
         ({ id: obj28[0], icon: obj28[1] } = guild);
-        obj8[3] = importDefault(1416).getGuildIconURL({ id: null, icon: null, size: 40 });
-        const obj27 = importDefault(1416);
+        obj8[3] = importDefault(1435).getGuildIconURL({ id: null, icon: null, size: 40 });
+        const obj27 = importDefault(1435);
         const obj9 = { id: null, icon: null, size: 40 };
         const obj10 = { type: "text", content: null };
-        obj10[1] = require(1884) /* isNullOrEmpty */.truncateText(canViewChannel.name, 32);
+        obj10[1] = require(1903) /* isNullOrEmpty */.truncateText(canViewChannel.name, 32);
         const obj11 = { type: "channel", content: null, channelType: null, iconType: null };
         const items5 = [obj10];
         obj11[1] = items5;
@@ -171,7 +171,7 @@ function parseChannel(canViewChannel) {
               const channel = store.getChannel(canViewChannel.parentId);
               if (null != channel) {
                 let tmp35Result = tmp35(4494);
-                const channelName = tmp35Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+                const channelName = tmp35Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
                 tmp35Result = tmp35(4486);
                 let str3 = tmp35Result.getMentionIconType(channel);
                 if (str3 == null) {
@@ -179,7 +179,7 @@ function parseChannel(canViewChannel) {
                 }
                 const obj13 = { inContent: null, content: null };
                 const obj14 = { type: "text", content: null };
-                obj14[1] = tmp35(1884).truncateText(channelName, 32);
+                obj14[1] = tmp35(1903).truncateText(channelName, 32);
                 const obj15 = { type: "channel", content: null, channelType: null, iconType: null };
                 const items7 = [obj14];
                 obj15[1] = items7;
@@ -190,7 +190,7 @@ function parseChannel(canViewChannel) {
                 const items9 = [obj11];
                 obj13[1] = items9;
                 let obj17 = obj13;
-                const tmp35Result1 = tmp35(1884);
+                const tmp35Result1 = tmp35(1903);
               }
             }
             const obj16 = { inContent: null, content: null };
@@ -235,7 +235,7 @@ function parseChannel(canViewChannel) {
           }
         }
         obj18 = tmp12;
-        const obj29 = require(1884) /* isNullOrEmpty */;
+        const obj29 = require(1903) /* isNullOrEmpty */;
       }
     } else {
       const _HermesInternal = HermesInternal;

@@ -1,10 +1,10 @@
-// Module ID: 4125
-// Function ID: 4126
+// Module ID: 4127
+// Function ID: 4128
 // Name: handleGatewayJoinRequestUpdate
-// Dependencies: [1903, 4126, 589, 1411, 709, 2]
+// Dependencies: [1922, 4128, 589, 1430, 709, 2]
 // Exports: joinRequestFromServer
 
-// Module 4125 (handleGatewayJoinRequestUpdate)
+// Module 4127 (handleGatewayJoinRequestUpdate)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
 
@@ -22,7 +22,7 @@ function handleGatewayJoinRequestUpdate(arg0) {
         return false;
       }
     }
-    obj = require(4126) /* isActionedApplicationStatus */;
+    obj = require(4128) /* isActionedApplicationStatus */;
     if (obj.isApprovedAndAcked(obj)) {
       delete tmp[tmp2];
       if (c3 === guildId) {
@@ -60,8 +60,8 @@ prototype["computeGuildIds"] = function computeGuildIds() {
 prototype["getJoinRequestGuild"] = function getJoinRequestGuild(guildId) {
   let fromGuildBasicResult = null;
   if (null != dependencyMap[guildId]) {
-    fromGuildBasicResult = require(1411) /* fromGuildPropertiesWithAdditionalFields */.fromGuildBasic(dependencyMap[guildId]);
-    const obj = require(1411) /* fromGuildPropertiesWithAdditionalFields */;
+    fromGuildBasicResult = require(1430) /* fromGuildPropertiesWithAdditionalFields */.fromGuildBasic(dependencyMap[guildId]);
+    const obj = require(1430) /* fromGuildPropertiesWithAdditionalFields */;
   }
   return fromGuildBasicResult;
 };
@@ -113,7 +113,7 @@ const userGuildJoinRequestStore = new UserGuildJoinRequestStore(require("dispatc
       } else {
         tmp8[guildId] = obj;
       }
-      obj2 = require(4126) /* isActionedApplicationStatus */;
+      obj2 = require(4128) /* isActionedApplicationStatus */;
     } else {
       delete tmp3[tmp2];
       if (c3 === guildId) {

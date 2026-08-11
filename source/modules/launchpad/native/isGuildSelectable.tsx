@@ -1,10 +1,10 @@
-// Module ID: 16050
-// Function ID: 16051
+// Module ID: 16067
+// Function ID: 16068
 // Name: isGuildSelectable
-// Dependencies: [1377, 4322, 7097, 4499, 2]
+// Dependencies: [1396, 4322, 7098, 4499, 2]
 // Exports: default
 
-// Module 16050 (isGuildSelectable)
+// Module 16067 (isGuildSelectable)
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import reset from "reset";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";

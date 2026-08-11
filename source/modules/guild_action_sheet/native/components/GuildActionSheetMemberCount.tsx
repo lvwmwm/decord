@@ -1,8 +1,8 @@
-// Module ID: 12553
-// Function ID: 12554
-// Dependencies: [19, 17, 21, 4303, 712, 501, 1348, 1236, 4299, 2]
+// Module ID: 12557
+// Function ID: 12558
+// Dependencies: [19, 17, 21, 4303, 712, 501, 1367, 1236, 4299, 2]
 
-// Module 12553
+// Module 12557
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo(function MemberCount(arg0) {
   let dotContainerWidth;
   let type;
   ({ type, count, color, dotContainerWidth } = arg0);
-  const tmp2 = importDefault(1348)("GuildActionSheetMemberCount");
+  const tmp2 = importDefault(1367)("GuildActionSheetMemberCount");
   if (null == count) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     if ("online" === type) {

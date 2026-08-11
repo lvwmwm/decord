@@ -1,10 +1,10 @@
-// Module ID: 7801
-// Function ID: 7802
+// Module ID: 7803
+// Function ID: 7804
 // Name: AgeVerificationIncodeModal
-// Dependencies: [19, 21, 4303, 712, 4509, 6008, 1236, 7802, 7809, 5783, 2]
+// Dependencies: [19, 21, 4303, 712, 4509, 6010, 1236, 7804, 7811, 5783, 2]
 // Exports: default
 
-// Module 7801 (AgeVerificationIncodeModal)
+// Module 7803 (AgeVerificationIncodeModal)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -46,11 +46,11 @@ export default function AgeVerificationIncodeModal(webviewUrl) {
         const obj = { onPress: handleClose, text: null };
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.cpT0Cq);
-        return handleClose(callback(6008).HeaderActionButton, obj);
+        return handleClose(callback(6010).HeaderActionButton, obj);
       },
       render(arg0, arg1) {
         let closure_0 = arg1;
-        return handleClose(callback2(7802), {
+        return handleClose(callback2(7804), {
           onClose: handleClose,
           trustedOrigin: origin,
           onMethodSelected(injectedJavaScriptBeforeContentLoaded) {
@@ -66,10 +66,10 @@ export default function AgeVerificationIncodeModal(webviewUrl) {
         const obj = { onPress: handleClose, text: null };
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.cpT0Cq);
-        return handleClose(callback(6008).HeaderActionButton, obj);
+        return handleClose(callback(6010).HeaderActionButton, obj);
       },
       render(injectedJavaScriptBeforeContentLoaded) {
-        return handleClose(callback2(7809), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
+        return handleClose(callback2(7811), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
       }
     };
     return { [outer1_5.METHOD_SELECT]: obj, [outer1_5.VERIFY_AGE]: obj };

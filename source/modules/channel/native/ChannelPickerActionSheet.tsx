@@ -1,12 +1,12 @@
-// Module ID: 10305
-// Function ID: 10306
+// Module ID: 10310
+// Function ID: 10311
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 3938, 1903, 21, 1609, 5765, 4271, 5396, 7984, 5380, 10306, 5764, 5399, 7985, 4764, 4494, 2]
+// Dependencies: [19, 3957, 1922, 21, 1628, 5765, 4271, 5396, 7986, 5380, 10311, 5764, 5399, 7987, 4764, 4494, 2]
 // Exports: default
 
-// Module 10305 (ChannelPickerActionSheet)
+// Module 10310 (ChannelPickerActionSheet)
 import "noop";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
 
@@ -18,13 +18,13 @@ const result = require("mergeGuildAvatar").fileFinishedImporting("modules/channe
 
 export default function ChannelPickerActionSheet(noChannelOptionLabel) {
   let channels;
-  let upsertRelationship;
+  let markAllUserIdListsStale;
   let header;
   let importDefault;
   let selectedChannel;
   const _require = noChannelOptionLabel;
   ({ header, guild: importDefault, channels } = noChannelOptionLabel);
-  ({ onSelect: upsertRelationship, selectedChannel } = noChannelOptionLabel);
+  ({ onSelect: markAllUserIdListsStale, selectedChannel } = noChannelOptionLabel);
   let tmp3;
   if (null != header) {
     const onClose = header.onClose;

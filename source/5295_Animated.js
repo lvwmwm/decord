@@ -1,7 +1,7 @@
 // Module ID: 5295
 // Function ID: 5296
 // Name: Animated
-// Dependencies: [32, 19, 17, 21, 1481]
+// Dependencies: [32, 19, 17, 21, 1500]
 
 // Module 5295 (Animated)
 import _slicedToArray from "_slicedToArray";
@@ -43,7 +43,7 @@ const forwardRefResult = importAllResult.forwardRef(function PlatformPressableIn
   let first;
   let animateTo;
   let closure_9;
-  let obj = disabled(1481);
+  let obj = disabled(1500);
   first = callback(importAllResult.useState(() => {
     const value = new pressOpacity.Value(1);
     return value;
@@ -159,7 +159,7 @@ const forwardRefResult = importAllResult.forwardRef(function PlatformPressableIn
   if (!disabled) {
     const obj1 = {};
     const merged3 = Object.assign(hoverEffect);
-    tmp13 = callback2(f35342, obj1);
+    tmp13 = callback2(f35367, obj1);
   }
   const items3 = [tmp13, children];
   obj.children = items3;
@@ -167,7 +167,7 @@ const forwardRefResult = importAllResult.forwardRef(function PlatformPressableIn
 });
 forwardRefResult.displayName = "PlatformPressable";
 String.raw(HermesBuiltin.getTemplateObject(true, "\n  .", " {\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    border-radius: inherit;\n    background-color: var(--overlay-color);\n    opacity: 0;\n    transition: opacity 0.15s;\n    pointer-events: none;\n  }\n\n  a:hover > .", ", button:hover > .", " {\n    opacity: var(--overlay-hover-opacity);\n  }\n\n  a:active > .", ", button:active > .", " {\n    opacity: var(--overlay-active-opacity);\n  }\n"), "__react-navigation_elements_Pressable_hover", "__react-navigation_elements_Pressable_hover", "__react-navigation_elements_Pressable_hover", "__react-navigation_elements_Pressable_hover", "__react-navigation_elements_Pressable_hover");
-const f35342 = (arg0) => {
+const f35367 = (arg0) => {
   let activeOpacity;
   let color;
   let hoverOpacity;

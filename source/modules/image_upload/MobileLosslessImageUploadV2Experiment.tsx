@@ -1,7 +1,7 @@
 // Module ID: 4886
 // Function ID: 4887
 // Name: useMobileLosslessImageUploadV2Experiment
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: useMobileLosslessImageUploadV2Experiment
 
 // Module 4886 (useMobileLosslessImageUploadV2Experiment)

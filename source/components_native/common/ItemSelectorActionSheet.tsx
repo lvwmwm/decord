@@ -1,10 +1,10 @@
-// Module ID: 8968
-// Function ID: 8969
+// Module ID: 8974
+// Function ID: 8975
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 4005, 712, 1609, 5397, 5396, 5765, 5399, 7985, 7984, 2]
+// Dependencies: [19, 21, 4024, 712, 1628, 5397, 5396, 5765, 5399, 7987, 7986, 2]
 // Exports: default
 
-// Module 8968 (ItemSelectorActionSheet)
+// Module 8974 (ItemSelectorActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -25,7 +25,7 @@ export default function ItemSelectorActionSheet(arg0) {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(4005);
+  let obj = items(4024);
   const token = obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_PADDING);
   const findIndexResult = items.findIndex((value) => value.value === closure_1);
   obj = { title, trailing: null };
@@ -39,14 +39,14 @@ export default function ItemSelectorActionSheet(arg0) {
   obj[1] = tmp6Result;
   const obj2 = { contentContainerStyle: null, children: null };
   const obj3 = { paddingHorizontal: token, paddingBottom: null };
-  obj3[1] = importDefault(1609)().bottom + importDefault(712).space.PX_16;
+  obj3[1] = importDefault(1628)().bottom + importDefault(712).space.PX_16;
   obj2[0] = obj3;
   items = [body, ];
   let num = -1;
   if (findIndexResult >= 0) {
     num = findIndexResult;
   }
-  items[1] = closure_3(items(7985).TableRadioGroup, {
+  items[1] = closure_3(items(7987).TableRadioGroup, {
     value: num,
     accessibilityLabel: title,
     hasIcons,
@@ -55,7 +55,7 @@ export default function ItemSelectorActionSheet(arg0) {
         dependencyMap(iter.value);
       }
     },
-    children: items.map((label, value) => callback(items(7984).TableRadioRow, { label: label.label, value }, value))
+    children: items.map((label, value) => callback(items(7986).TableRadioRow, { label: label.label, value }, value))
   });
   obj2[1] = items;
   obj1[2] = closure_4(items(5399).BottomSheetScrollView, obj2);

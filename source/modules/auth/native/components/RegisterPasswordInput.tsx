@@ -1,9 +1,9 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15119
+// Function ID: 15120
 // Name: PasswordStrength
-// Dependencies: [109, 32, 19, 8471, 15083, 21, 4303, 712, 4036, 15107, 1236, 4299, 15101, 8484, 589, 3984, 7790, 4009, 8495, 8497, 2]
+// Dependencies: [109, 32, 19, 8477, 15092, 21, 4303, 712, 4042, 15116, 1236, 4299, 15110, 8490, 589, 4003, 7792, 4028, 8501, 8503, 2]
 
-// Module 15110 (PasswordStrength)
+// Module 15119 (PasswordStrength)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "EyeIcon";
@@ -11,10 +11,10 @@ import handleSetLocationMetadata from "handleSetLocationMetadata";
 import useRegistrationUIStore from "useRegistrationUIStore";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
-import { FadeIn } from "module_4036";
-import { FadeOut } from "module_4036";
-import { LinearTransition } from "module_4036";
-import { Easing } from "module_4036";
+import { FadeIn } from "module_4042";
+import { FadeOut } from "module_4042";
+import { LinearTransition } from "module_4042";
+import { Easing } from "module_4042";
 
 let c10;
 let c9;
@@ -33,17 +33,17 @@ function PasswordStrength(passwordScore) {
     if (isPasswordFocused) {
       if (0 !== password.length) {
         if (null == passwordError) {
-          if (passwordScore <= require(15107) /* PasswordScore */.PasswordScore.WEAK) {
+          if (passwordScore <= require(15116) /* PasswordScore */.PasswordScore.WEAK) {
             const intl2 = tmp9(1236).intl;
             let str = intl2.string(tmp9(1236).t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === tmp9(15107).PasswordScore.MEDIUM) {
+          } else if (passwordScore === tmp9(15116).PasswordScore.MEDIUM) {
             const intl = tmp9(1236).intl;
             str = intl.string(tmp9(1236).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === tmp9(15107).PasswordScore.STRONG) {
+            if (passwordScore === tmp9(15116).PasswordScore.STRONG) {
               const intl4 = tmp9(1236).intl;
               str = intl4.string(tmp9(1236).t.Xraqqc);
               strong = tmp.strong;
@@ -84,7 +84,7 @@ obj3[1] = require("module_300");
 const obj4 = { layout: null };
 const obj2 = { color: require("Themes").colors.TEXT_FEEDBACK_POSITIVE };
 obj4[0] = require("module_300");
-const easingResult = LinearTransition.easing(Easing.inOut(require("module_4036").Easing.quad));
+const easingResult = LinearTransition.easing(Easing.inOut(require("module_4042").Easing.quad));
 const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   let autoFocus;
   let onPasswordChange;

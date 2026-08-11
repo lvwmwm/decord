@@ -1,10 +1,10 @@
-// Module ID: 10500
-// Function ID: 10501
+// Module ID: 10505
+// Function ID: 10506
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 10499, 4299, 1236, 2]
+// Dependencies: [19, 21, 10504, 4299, 1236, 2]
 // Exports: TwoWayLinkStepHeader
 
-// Module 10500 (TwoWayLinkStepHeader)
+// Module 10505 (TwoWayLinkStepHeader)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -15,7 +15,7 @@ export const TwoWayLinkStepHeader = function TwoWayLinkStepHeader(arg0) {
   let idx;
   let total;
   ({ idx, total } = arg0);
-  let obj = require(10499) /* styles */;
+  let obj = require(10504) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { variant: "text-xs/bold", color: "text-default", style: twoWayLinkStyles.stepHeader, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

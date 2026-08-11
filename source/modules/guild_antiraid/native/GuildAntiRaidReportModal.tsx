@@ -1,10 +1,10 @@
-// Module ID: 13313
-// Function ID: 13314
+// Module ID: 13321
+// Function ID: 13322
 // Name: ReportModal
-// Dependencies: [32, 19, 17, 13314, 21, 4303, 712, 1609, 4299, 3998, 1236, 5767, 8448, 4714, 5270, 11230, 5783, 2]
+// Dependencies: [32, 19, 17, 13322, 21, 4303, 712, 1628, 4299, 4017, 1236, 5767, 8454, 4714, 5270, 11235, 5783, 2]
 // Exports: default
 
-// Module 13313 (ReportModal)
+// Module 13321 (ReportModal)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -55,7 +55,7 @@ function ReportModal(onSubmit) {
   obj[1] = callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj1);
   items1[1] = callback2(View, obj);
   const obj2 = { style: items2, children: null };
-  items2 = [tmp.submitButtonContainer, { paddingBottom: importDefault(1609)().bottom + 16 }];
+  items2 = [tmp.submitButtonContainer, { paddingBottom: importDefault(1628)().bottom + 16 }];
   const obj4 = { size: "md", text: null, onPress: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj4[1] = intl2.string(require(1236) /* getSystemLocale */.t.geKm7t);

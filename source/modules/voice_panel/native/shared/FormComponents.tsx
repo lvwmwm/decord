@@ -1,10 +1,10 @@
-// Module ID: 9177
-// Function ID: 9178
+// Module ID: 9183
+// Function ID: 9184
 // Name: VoiceBadges
-// Dependencies: [19, 4390, 21, 4303, 712, 5781, 5767, 9178, 1297, 5728, 9179, 9190, 9234, 4533, 9236, 8783, 589, 7198, 9238, 9239, 9241, 4299, 1236, 5374, 4714, 9242, 9251, 4146, 9252, 12212, 2]
+// Dependencies: [19, 4390, 21, 4303, 712, 5781, 5767, 9184, 1297, 5728, 9185, 9196, 9240, 4533, 9242, 8789, 589, 7199, 9244, 9245, 9247, 4299, 1236, 5374, 4714, 9248, 9257, 4148, 9258, 12215, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9177 (VoiceBadges)
+// Module 9183 (VoiceBadges)
 import usePlayingGameActivities from "usePlayingGameActivities";
 import sortActivity from "sortActivity";
 import jsxProd from "Text";
@@ -28,7 +28,7 @@ function VoiceBadges(arg0) {
     obj[0] = muteDeafenIconState;
     obj[1] = require(1297) /* Button */.IconSizes.SMALL;
     obj[2] = tmp.icon;
-    obj[1] = callback(require(9178) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj);
+    obj[1] = callback(require(9184) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj);
     tmp6 = callback(tmp3Result, obj);
   }
   const items = [tmp6, ];
@@ -41,7 +41,7 @@ function VoiceBadges(arg0) {
     obj2[0] = videoIconState;
     obj2[1] = require(1297) /* Button */.IconSizes.SMALL;
     obj2[2] = tmp.icon;
-    obj1[1] = callback(require(9178) /* VideoDisabledSvgIcon */.VideoIcon, obj2);
+    obj1[1] = callback(require(9184) /* VideoDisabledSvgIcon */.VideoIcon, obj2);
     tmp10 = callback(tmp3Result, obj1);
   }
   items[1] = tmp10;

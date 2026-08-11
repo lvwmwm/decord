@@ -1,10 +1,10 @@
-// Module ID: 6372
-// Function ID: 6373
+// Module ID: 6374
+// Function ID: 6375
 // Name: GamePresenceIllocon
-// Dependencies: [21, 5268, 6373, 2]
+// Dependencies: [21, 5268, 6375, 2]
 // Exports: GamePresenceIllocon
 
-// Module 6372 (GamePresenceIllocon)
+// Module 6374 (GamePresenceIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GamePresenceIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const GamePresenceIllocon = function GamePresenceIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6373);
+  obj[0] = importDefault(6375);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

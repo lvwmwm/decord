@@ -1,9 +1,9 @@
-// Module ID: 9508
-// Function ID: 9509
+// Module ID: 9514
+// Function ID: 9515
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9508 (metadata)
+// Module 9514 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_opal_badge_large.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/21312175f3abb2d0143e5b32fed7c0a0e003d5b04fd6d5410def14168a596994.png";

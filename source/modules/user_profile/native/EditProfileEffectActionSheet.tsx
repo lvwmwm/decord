@@ -1,12 +1,12 @@
-// Module ID: 13937
-// Function ID: 13938
+// Module ID: 13945
+// Function ID: 13946
 // Name: EditProfileEffectInner
-// Dependencies: [32, 19, 17, 7017, 7007, 676, 21, 4303, 712, 8307, 7404, 5728, 5748, 698, 8268, 8265, 5397, 4299, 1236, 8277, 8280, 589, 13938, 8267, 8308, 13939, 8298, 8299, 8278, 9446, 4725, 2]
+// Dependencies: [32, 19, 17, 7020, 7010, 676, 21, 4303, 712, 8312, 7406, 5728, 5748, 698, 8273, 8270, 5397, 4299, 1236, 8282, 8285, 589, 13946, 8272, 8313, 13947, 8303, 8304, 8283, 9452, 4725, 2]
 // Exports: default
 
-// Module 13937 (EditProfileEffectInner)
+// Module 13945 (EditProfileEffectInner)
 import _slicedToArray from "_slicedToArray";
-import module_8277 from "module_8277";
+import module_8282 from "module_8282";
 import get_ActivityIndicator from "Text";
 import map from "map";
 import { isProfileEffectRecord } from "fromServer";
@@ -113,7 +113,7 @@ function ProfileEffectSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = createCacheKey();
-  const tmp2 = purchase(8278)(previewSkuId);
+  const tmp2 = purchase(8283)(previewSkuId);
   const product = tmp2.product;
   c0 = product;
   purchase = tmp2.purchase;
@@ -137,7 +137,7 @@ function ProfileEffectSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const items1 = [callback(purchase(9446), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
+  const items1 = [callback(purchase(9452), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   obj = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj[3] = items2;
@@ -176,11 +176,11 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   if (str == null) {
     str = "";
   }
-  const tmp4Result = isTryItOut(8307)(str);
+  const tmp4Result = isTryItOut(8312)(str);
   dependencyMap = tmp4Result;
   const tmp6 = first(memo.useState(currentProfileEffect), 2);
   first = tmp6[0];
-  let obj = guildId(7404);
+  let obj = guildId(7406);
   let tmp2Result = tmp2(5728);
   const analyticsLocations = tmp2Result(tmp2(5748).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
   const items = [guildId, tmp4Result];
@@ -239,7 +239,7 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   const items4 = [callback2(closure_5, obj1), ];
   const obj4 = { user, currentSkuId: null, selectedSkuId: null, isTryItOut: null, onApply: null, analyticsLocations: null, analyticsSource: null };
   let skuId;
-  tmp2Result = tmp2(8277);
+  tmp2Result = tmp2(8282);
   if (currentProfileEffect != null) {
     skuId = currentProfileEffect.skuId;
   }

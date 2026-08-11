@@ -1,9 +1,9 @@
-// Module ID: 13081
-// Function ID: 13082
+// Module ID: 13090
+// Function ID: 13091
 // Name: apexExperiment
-// Dependencies: [4364, 1452, 2]
+// Dependencies: [4364, 1471, 2]
 
-// Module 13081 (apexExperiment)
+// Module 13090 (apexExperiment)
 import { ProcessPriority } from "DesktopSources";
 import ApexExperiment from "ApexExperiment";
 

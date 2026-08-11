@@ -1,10 +1,10 @@
-// Module ID: 15622
-// Function ID: 15623
+// Module ID: 15639
+// Function ID: 15640
 // Name: AddEmojiButton
-// Dependencies: [5, 32, 19, 17, 5398, 1906, 21, 1236, 4303, 712, 8637, 7222, 4846, 7655, 8234, 8913, 8641, 4154, 8391, 1474, 5764, 4299, 15619, 4848, 4118, 4013, 15615, 5268, 1416, 7790, 4146, 7751, 4249, 14451, 15568, 2]
+// Dependencies: [5, 32, 19, 17, 5398, 1925, 21, 1236, 4303, 712, 8643, 7223, 4846, 7657, 8238, 8919, 8647, 4154, 8397, 1493, 5764, 4299, 15636, 4848, 4123, 4031, 15632, 5268, 1435, 7792, 4148, 7753, 4249, 14459, 15585, 2]
 // Exports: default, getStatusReplyContent
 
-// Module 15622 (AddEmojiButton)
+// Module 15639 (AddEmojiButton)
 import set from "set";
 import SendMessageIcon from "SendMessageIcon";
 import useWindowDimensions from "useWindowDimensions";
@@ -128,13 +128,13 @@ function ReactActionSheetBase(content) {
             } else {
               let closure_0 = tmp4;
               outer1_5(true);
-              v0(8913).itemInteracted(outer1_0.id, outer1_6, "press_reply_send");
-              const obj5 = v0(8913);
+              v0(8919).itemInteracted(outer1_0.id, outer1_6, "press_reply_send");
+              const obj5 = v0(8919);
               const obj1 = { itemId: null, itemType: null, actionParameters: null };
               obj1[0] = outer1_0.id;
               obj1[1] = outer1_6;
               obj1[2] = { actionGestureType: "press", actionTargetElement: "reply_button", actionIntentType: "reply", actionDestinationType: null };
-              v0(8913).feedItemActioned(obj1);
+              v0(8919).feedItemActioned(obj1);
               v0 = 1;
               dependencyMap = 1;
               const obj2 = { value: null, done: false };
@@ -426,7 +426,7 @@ export default function ReactActionSheet(arg0) {
     obj = {};
     const merged1 = Object.assign(merged);
     obj[0] = callback2(ReactActionSheetBase, obj);
-    return callback2(require(15568) /* context */.ICYMIContextProvider, obj);
+    return callback2(require(15585) /* context */.ICYMIContextProvider, obj);
   }
 };
 export const getStatusReplyContent = function getStatusReplyContent(reply) {

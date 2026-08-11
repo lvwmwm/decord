@@ -1,9 +1,9 @@
-// Module ID: 16400
-// Function ID: 16401
+// Module ID: 16416
+// Function ID: 16417
 // Name: handleGuildCreate
-// Dependencies: [5, 1218, 1372, 4641, 1891, 4994, 676, 1379, 3, 687, 5261, 698, 709, 7113, 12940, 1384, 514, 2]
+// Dependencies: [5, 1218, 1391, 4641, 1910, 4994, 676, 1398, 3, 687, 5261, 698, 709, 7114, 12944, 1403, 514, 2]
 
-// Module 16400 (handleGuildCreate)
+// Module 16416 (handleGuildCreate)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -482,7 +482,7 @@ function _getResyncGuilds() {
 }
 function scheduleIntegrityCheck(guild_id) {
   const _require = guild_id;
-  let obj = _require(12940);
+  let obj = _require(12944);
   if (obj.isChannelMetadataIntegrityCheckEnabled("scheduleIntegrityCheck")) {
     if (null != dependencyMap3[guild_id]) {
       let _clearTimeout = clearTimeout;

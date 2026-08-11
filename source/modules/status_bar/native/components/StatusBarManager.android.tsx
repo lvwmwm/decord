@@ -1,9 +1,9 @@
-// Module ID: 7749
-// Function ID: 7750
+// Module ID: 7751
+// Function ID: 7752
 // Name: pushStackEntry
-// Dependencies: [17, 12, 1621, 2]
+// Dependencies: [17, 12, 1640, 2]
 
-// Module 7749 (pushStackEntry)
+// Module 7751 (pushStackEntry)
 import { StatusBar } from "get ActivityIndicator";
 
 class StatusBarManager {

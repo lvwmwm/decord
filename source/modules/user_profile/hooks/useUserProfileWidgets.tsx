@@ -1,10 +1,10 @@
-// Module ID: 12460
-// Function ID: 12461
+// Module ID: 12463
+// Function ID: 12464
 // Name: useUserProfileWidgets
-// Dependencies: [1218, 7080, 7084, 589, 2]
+// Dependencies: [1218, 7083, 7087, 589, 2]
 // Exports: default
 
-// Module 12460 (useUserProfileWidgets)
+// Module 12463 (useUserProfileWidgets)
 import fetchFingerprint from "fetchFingerprint";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import initialize from "initialize";

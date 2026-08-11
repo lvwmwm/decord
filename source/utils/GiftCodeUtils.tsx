@@ -1,7 +1,7 @@
 // Module ID: 4538
 // Function ID: 4539
 // Name: _resolveGiftCode
-// Dependencies: [5, 32, 4539, 1903, 676, 1905, 4291, 4540, 4541, 698, 3970, 4634, 1236, 4503, 1351, 589, 3947, 2]
+// Dependencies: [5, 32, 4539, 1922, 676, 1924, 4291, 4540, 4541, 698, 3989, 4634, 1236, 4503, 1370, 589, 3966, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
 // Module 4538 (_resolveGiftCode)
@@ -172,7 +172,7 @@ function getGiftCodeRedeemError(error, currentUser) {
     return intl8.string(v5(1236).t.roztIr);
   } else if (tmp.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE === code) {
     const intl6 = v5(1236).intl;
-    let obj = v5(3947);
+    let obj = v5(3966);
     const intl7 = v5(1236).intl;
     const string = intl7.string;
     const t = v5(1236).t;
@@ -748,7 +748,7 @@ export const firstLibraryApplicationForGiftCode = function firstLibraryApplicati
     arr = items;
   }
   const mapped = arr.map((arg0) => libraryApplication.getLibraryApplication(applicationId, arg0, true));
-  const found = mapped.filter(v5(1351).isNotNullish);
+  const found = mapped.filter(v5(1370).isNotNullish);
   let first = null;
   if (found.length === arr.length) {
     first = found[0];

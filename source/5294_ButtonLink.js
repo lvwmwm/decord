@@ -1,7 +1,7 @@
 // Module ID: 5294
 // Function ID: 5295
 // Name: ButtonLink
-// Dependencies: [19, 17, 21, 1481, 5286, 5295, 5296]
+// Dependencies: [19, 17, 21, 1500, 5286, 5295, 5296]
 // Exports: Button
 
 // Module 5294 (ButtonLink)
@@ -19,7 +19,7 @@ function ButtonLink(arg0) {
   let screen;
   ({ screen, params, action, href } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   const linkProps = obj.useLinkProps({ screen, params, action, href });
   obj = {};
   const merged1 = Object.assign(merged);
@@ -38,7 +38,7 @@ function ButtonBase(variant) {
   ({ color, android_ripple } = variant);
   ({ style, children } = variant);
   const merged = Object.assign(variant, Object.create(null));
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   const theme = obj.useTheme();
   if (color == null) {
     color = theme.colors.primary;

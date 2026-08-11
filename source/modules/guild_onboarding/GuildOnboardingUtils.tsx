@@ -1,7 +1,7 @@
 // Module ID: 5249
 // Function ID: 5250
 // Name: isChattableChannel
-// Dependencies: [1372, 4998, 1961, 1891, 3929, 5243, 676, 3917, 589, 1384, 4794, 5244, 3934, 1351, 643, 1884, 5250, 2]
+// Dependencies: [1391, 4998, 1980, 1910, 3948, 5243, 676, 3936, 589, 1403, 4794, 5244, 3953, 1370, 643, 1903, 5250, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
 // Module 5249 (isChattableChannel)
@@ -26,7 +26,7 @@ function isChattableChannel(guild_id) {
       tmp = canChannelBeDefaultResult;
     } else {
       const isForumChannelResult = guild_id.isForumChannel();
-      const canEveryoneRole = importAll(3934).canEveryoneRole;
+      const canEveryoneRole = importAll(3953).canEveryoneRole;
       let SEND_MESSAGES_IN_THREADS = closure_12;
       if (isForumChannelResult) {
         SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
@@ -34,7 +34,7 @@ function isChattableChannel(guild_id) {
       } else {
         canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, guild_id);
       }
-      const tmp7 = importAll(3934);
+      const tmp7 = importAll(3953);
     }
     const obj = require(5244) /* useCanChannelBeDefault */;
   }
@@ -153,10 +153,10 @@ export const isBlockedByOnboarding = function isBlockedByOnboarding(guild, selfM
             if (num == null) {
               num = 0;
             }
-            let hasFlagResult = importAll(1384).hasFlag(num, GuildMemberFlags.STARTED_ONBOARDING);
+            let hasFlagResult = importAll(1403).hasFlag(num, GuildMemberFlags.STARTED_ONBOARDING);
             if (hasFlagResult) {
-              hasFlagResult = !importAll(1384).hasFlag(num, GuildMemberFlags.COMPLETED_ONBOARDING);
-              const tmp2Result = importAll(1384);
+              hasFlagResult = !importAll(1403).hasFlag(num, GuildMemberFlags.COMPLETED_ONBOARDING);
+              const tmp2Result = importAll(1403);
             }
             return hasFlagResult;
           }
@@ -293,7 +293,7 @@ export const isChattableChannelId = function isChattableChannelId(arg0) {
       tmp = canChannelBeDefaultResult;
     } else {
       const isForumChannelResult = channel.isForumChannel();
-      const canEveryoneRole = importAll(3934).canEveryoneRole;
+      const canEveryoneRole = importAll(3953).canEveryoneRole;
       let SEND_MESSAGES_IN_THREADS = closure_12;
       if (isForumChannelResult) {
         SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
@@ -301,7 +301,7 @@ export const isChattableChannelId = function isChattableChannelId(arg0) {
       } else {
         canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, channel);
       }
-      const tmp7 = importAll(3934);
+      const tmp7 = importAll(3953);
     }
     const obj2 = require(5244) /* useCanChannelBeDefault */;
   }
@@ -490,12 +490,12 @@ export const useChattableDefaultChannels = function useChattableDefaultChannels(
 export const getSelectedRoleIds = function getSelectedRoleIds(selectedOptions) {
   const mapped = selectedOptions.map((roleIds) => roleIds.roleIds);
   const flatResult = mapped.flat();
-  return new Set(mapped.flat().filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish));
+  return new Set(mapped.flat().filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish));
 };
 export const getSelectedChannelIds = function getSelectedChannelIds(selectedOptions) {
   const mapped = selectedOptions.map((channelIds) => channelIds.channelIds);
   const flatResult = mapped.flat();
-  return new Set(mapped.flat().filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish));
+  return new Set(mapped.flat().filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish));
 };
 export const getProviderConnectionState = function getProviderConnectionState(connections) {
   const found = connections.filter((connection_type) => {

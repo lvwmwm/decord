@@ -1,10 +1,10 @@
-// Module ID: 12850
-// Function ID: 12851
+// Module ID: 12854
+// Function ID: 12855
 // Name: PerkText
-// Dependencies: [19, 17, 4190, 21, 4303, 712, 689, 4299, 12851, 11849, 11874, 1236, 2316, 12852, 2]
+// Dependencies: [19, 17, 4190, 21, 4303, 712, 689, 4299, 12855, 11852, 11877, 1236, 2335, 12856, 2]
 // Exports: default
 
-// Module 12850 (PerkText)
+// Module 12854 (PerkText)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -32,7 +32,7 @@ const result = require("calculateAppliedBoosts").fileFinishedImporting("modules/
 export default function GuildPowerupsMarketingHeader(guild) {
   guild = guild.guild;
   const tmp = createCacheKey();
-  const arr = importDefault(12851)(guild.id);
+  const arr = importDefault(12855)(guild.id);
   const items = [guild.id];
   const effect = React.useEffect(() => {
     if (outer1_5.shouldFetchCatalogForGuild(guild.id)) {
@@ -40,7 +40,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       const obj = guild(outer1_2[9]);
     }
   }, items);
-  if (importDefault(11874)(guild.id)) {
+  if (importDefault(11877)(guild.id)) {
     let num;
     if (arr != null) {
       num = arr.length;
@@ -58,7 +58,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       if (null != arr) {
         str2 = "";
         if (0 !== arr.length) {
-          let first = tmp2(12852)(arr);
+          let first = tmp2(12856)(arr);
           if (1 === first.length) {
             obj = { powerup: null };
             first = first[0];
@@ -73,13 +73,13 @@ export default function GuildPowerupsMarketingHeader(guild) {
             const obj3 = { powerup: null };
             obj3[0] = first[1];
             obj1[1] = tmp6(PerkText, obj3);
-            formatResult = intl2.format(tmp2(2316).MNO3sG, obj1);
+            formatResult = intl2.format(tmp2(2335).MNO3sG, obj1);
           }
         }
       }
       const obj4 = { perks: null };
       obj4[0] = str2;
-      obj[2] = intl.format(tmp2(2316)["7lwpzR"], obj4);
+      obj[2] = intl.format(tmp2(2335)["7lwpzR"], obj4);
       obj[1] = jsx(guild(4299).Text, { style: null, variant: "text-sm/semibold", children: null });
       return <View style={null} variant="text-sm/semibold">{null}</View>;
     }

@@ -1,9 +1,9 @@
-// Module ID: 8194
-// Function ID: 8195
+// Module ID: 8196
+// Function ID: 8197
 // Name: ChangeLogLink
-// Dependencies: [19, 17, 21, 4303, 712, 5158, 4733, 4299, 4000, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5158, 4733, 4299, 8197, 8198, 4019, 2]
 
-// Module 8194 (ChangeLogLink)
+// Module 8196 (ChangeLogLink)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -91,13 +91,39 @@ function ChangeLogParagraph(state) {
   const tmp = createCacheKey();
   return <Paragraph key={state.key} variant="text-sm/normal" style={createCacheKey().text}>{output(node.content, state)}</Paragraph>;
 }
+function ChangeLogStrong(arg0) {
+  let node;
+  let output;
+  let state;
+  ({ node, output, state } = arg0);
+  let obj = require(8197) /* apexExperiment */;
+  if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
+    let str;
+    if (state != null) {
+      str = state.textColor;
+    }
+    if (str == null) {
+      str = "text-default";
+    }
+    obj = { variant: "experimental/body-sm/semibold", color: null, children: null };
+    obj[1] = str;
+    obj[2] = tmp(8198).smartOutput(node, output, state);
+    let reactResult = jsx(tmp(4299).Text, { variant: "experimental/body-sm/semibold", color: null, children: null });
+    const tmp5 = jsx;
+    const tmpResult = tmp(8198);
+  } else {
+    const strong = rules.strong;
+    reactResult = strong.react(node, output, state);
+  }
+  return reactResult;
+}
 function ChangeLogImage(arg0) {
   let node;
   let state;
   ({ node, state } = arg0);
   let obj = { style: createCacheKey().image, source: null };
   obj = { uri: null };
-  obj[0] = importDefault(4000).sanitizeUrl(node.target);
+  obj[0] = importDefault(4019).sanitizeUrl(node.target);
   obj[1] = obj;
   return <closure_4 key={state.key} uri={null} />;
 }
@@ -130,7 +156,7 @@ const obj3 = {
     let closure_0 = uri;
     return {
       react(node, output, state) {
-        return outer1_5(outer1_7, { accessibilityRole: "link", node, output, state, styling: closure_0 });
+        return outer1_5(outer1_8, { accessibilityRole: "link", node, output, state, styling: closure_0 });
       }
     };
   },
@@ -154,17 +180,18 @@ const obj3 = {
     let closure_0 = arg0;
     return {
       react(node, output, state) {
-        return outer1_5(outer1_8, { node, output, state, styling: closure_0 });
+        return outer1_5(outer1_9, { node, output, state, styling: closure_0 });
       }
     };
   },
   image: obj4,
   blockQuote: obj5,
+  strong: obj6,
   paragraph(uri) {
     let closure_0 = uri;
     return {
       react(node, output, state) {
-        return outer1_5(outer1_9, { node, output, state, styling: closure_0 });
+        return outer1_5(outer1_10, { node, output, state, styling: closure_0 });
       }
     };
   }
@@ -177,6 +204,11 @@ obj4 = {
 obj5 = {
   react(node, output, state) {
     return <ChangeLogBlockQuote node={arg0} output={arg1} state={arg2} />;
+  }
+};
+obj6 = {
+  react(node, output, key) {
+    return <ChangeLogStrong key={arg2.key} node={arg0} output={arg1} state={arg2} />;
   }
 };
 const result = require("jsxProd").fileFinishedImporting("utils/native/ChangeLogUtils.tsx");

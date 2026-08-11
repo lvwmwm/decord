@@ -1,10 +1,10 @@
-// Module ID: 10954
-// Function ID: 10955
+// Module ID: 10959
+// Function ID: 10960
 // Name: throttleStateFn
 // Dependencies: [19, 12, 2]
 // Exports: useThrottledState
 
-// Module 10954 (throttleStateFn)
+// Module 10959 (throttleStateFn)
 import noop from "noop";
 
 const require = arg1;

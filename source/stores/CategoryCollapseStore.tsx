@@ -1,7 +1,7 @@
 // Module ID: 5260
 // Function ID: 5261
 // Name: incrementVersion
-// Dependencies: [1340, 1372, 4641, 1961, 676, 1306, 1351, 1894, 589, 709, 2]
+// Dependencies: [1340, 1391, 4641, 1980, 676, 1306, 1370, 1913, 589, 709, 2]
 
 // Module 5260 (incrementVersion)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
@@ -237,7 +237,7 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
         }
       });
     }
-    obj = require(1894) /* getFavoritesAwareGuildName */;
+    obj = require(1913) /* getFavoritesAwareGuildName */;
   },
   CATEGORY_EXPAND_ALL: function handleCategoryExpandAll(guildId) {
     guildId = guildId.guildId;
@@ -248,7 +248,7 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
         delete tmp2[tmp];
       });
     }
-    obj = require(1894) /* getFavoritesAwareGuildName */;
+    obj = require(1913) /* getFavoritesAwareGuildName */;
   },
   CHANNEL_DELETE: function handleChannelDelete(arg0) {
     if (null != dependencyMap[arg0.channel.id]) {

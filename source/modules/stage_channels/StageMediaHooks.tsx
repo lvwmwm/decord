@@ -1,7 +1,7 @@
 // Module ID: 5135
 // Function ID: 5136
 // Name: useStageHasMedia
-// Dependencies: [1891, 4319, 5136, 589, 5142, 2]
+// Dependencies: [1910, 4319, 5136, 589, 5142, 2]
 // Exports: getStageHasMedia, getStageHasStream, isStageVideoEnabled, useIsStageVideoEnabled, useStageHasMedia, useStageHasStream
 
 // Module 5135 (useStageHasMedia)

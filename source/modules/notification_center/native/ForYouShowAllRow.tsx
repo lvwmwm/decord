@@ -1,10 +1,10 @@
-// Module ID: 15560
-// Function ID: 15561
+// Module ID: 15577
+// Function ID: 15578
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 676, 12054, 21, 4303, 9796, 712, 500, 1480, 698, 1297, 4720, 15555, 4846, 15556, 13430, 4299, 1236, 5383, 2]
+// Dependencies: [19, 17, 676, 12057, 21, 4303, 9801, 712, 500, 1499, 698, 1297, 4720, 15572, 4846, 15573, 13438, 4299, 1236, 5383, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 15560 (ForYouShowAllRow)
+// Module 15577 (ForYouShowAllRow)
 import registerAsset from "registerAsset";
 import { View } from "Text";
 import { AnalyticEvents } from "ME";
@@ -25,25 +25,25 @@ function ForYouShowAllRow(panelVariant) {
   if (panelVariant === undefined) {
     panelVariant = false;
   }
-  let obj = require(9796) /* getLayoutStyles */;
+  let obj = require(9801) /* getLayoutStyles */;
   const layout = obj.useMessagesTabLayout(panelVariant);
   const tmp4 = callback2(layout);
-  let obj1 = require(9796) /* getLayoutStyles */;
+  let obj1 = require(9801) /* getLayoutStyles */;
   const layoutStyles = obj1.getLayoutStyles(layout);
   let obj2 = require(4720) /* getFontScale */;
   const fontScale = obj2.useFontScale();
-  let obj3 = require(15555) /* renderChannelPressableWrapper */;
+  let obj3 = require(15572) /* renderChannelPressableWrapper */;
   obj = { accessibilityRole: "button", underlayColor: tmp4.rowActive.backgroundColor, onPress, style: items, children: null };
   items = [tmp4.pressable, { borderRadius: layoutStyles.container.borderRadius }];
-  let obj5 = require(15556) /* renderChannelWrapper */;
+  let obj5 = require(15573) /* renderChannelWrapper */;
   obj = { style: tmp4.avatar, children: null };
-  const obj8 = require(9796) /* getLayoutStyles */;
+  const obj8 = require(9801) /* getLayoutStyles */;
   const tmp8 = closure_9;
   const tmp9 = closure_8;
   const AvatarSizes = require(1297) /* Button */.AvatarSizes;
   obj1 = { children: null };
-  obj2 = { size: require(9796) /* getLayoutStyles */.isLayoutCompact(layout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL, "aria-label": "", children };
-  obj[1] = closure_7(require(13430) /* AvatarDuoPile */.AvatarDuoPile, obj2);
+  obj2 = { size: require(9801) /* getLayoutStyles */.isLayoutCompact(layout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL, "aria-label": "", children };
+  obj[1] = closure_7(require(13438) /* AvatarDuoPile */.AvatarDuoPile, obj2);
   const items1 = [closure_7(View, obj), , ];
   obj3 = { style: tmp4.textContainer, children: null };
   const obj4 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: null };
@@ -61,9 +61,9 @@ function ForYouShowAllRow(panelVariant) {
 }
 ({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles((layout) => {
-  let obj = require(9796) /* getLayoutStyles */;
+  let obj = require(9801) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
-  let obj1 = require(9796) /* getLayoutStyles */;
+  let obj1 = require(9801) /* getLayoutStyles */;
   const sizeStyle = obj1.makeSizeStyle(layoutStyles.icon.wrapper.size);
   obj = { rowActive: null, pressable: null, textContainer: null, nameText: null, avatar: null, icon: null, iconColor: null };
   obj = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED };

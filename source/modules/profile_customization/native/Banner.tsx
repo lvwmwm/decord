@@ -1,10 +1,10 @@
-// Module ID: 8840
-// Function ID: 8841
+// Module ID: 8846
+// Function ID: 8847
 // Name: ProfileBanner
 // Dependencies: [19, 17, 676, 21, 4303, 688, 5268, 2]
 // Exports: default
 
-// Module 8840 (ProfileBanner)
+// Module 8846 (ProfileBanner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { BANNER_HEIGHT } from "ME";

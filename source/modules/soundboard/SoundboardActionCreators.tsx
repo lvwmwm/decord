@@ -1,10 +1,10 @@
-// Module ID: 5953
-// Function ID: 5954
+// Module ID: 5955
+// Function ID: 5956
 // Name: _fetchDefaultSoundsFromApi2
-// Dependencies: [5, 4749, 4750, 676, 685, 530, 4756, 709, 5954, 4203, 5955, 698, 1355, 12, 4642, 1236, 5956, 2]
+// Dependencies: [5, 4749, 4750, 676, 685, 530, 4756, 709, 5956, 4203, 5957, 698, 1374, 12, 4642, 1236, 5958, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, muteCustomJoinSound, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 5953 (_fetchDefaultSoundsFromApi2)
+// Module 5955 (_fetchDefaultSoundsFromApi2)
 import sendRequest from "sendRequest";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
@@ -31,7 +31,7 @@ function _fetchDefaultSoundsFromApi2() {
       callback2 = dependencyMap;
       let obj3 = callback2(709);
       obj3.dispatch({ type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE" });
-      const obj4 = callback(5954);
+      const obj4 = callback(5956);
       const tmp28 = new callback2(4203)(callback2);
       const result = obj4.captureOrIgnoreApiError(tmp28);
       let c5 = 3;
@@ -87,7 +87,7 @@ function _maybeFetchDefaultSounds() {
   }
 }
 function _maybeFetchGuildSoundboardSounds() {
-  let obj = SOUNDBOARD_SOUNDS_RECEIVED(5955);
+  let obj = SOUNDBOARD_SOUNDS_RECEIVED(5957);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
@@ -382,7 +382,7 @@ function _fetchSoundGuildData() {
             lib = arg1;
             let discoverableGuild = null;
             if (null != lib.body) {
-              obj = lib(5956);
+              obj = lib(5958);
               discoverableGuild = obj.makeDiscoverableGuild(lib.body);
             }
             c5 = 0;
@@ -459,7 +459,7 @@ export const deleteSound = function deleteSound() {
 };
 export const addFavoriteSound = function addFavoriteSound(soundId) {
   const _require = soundId;
-  const FrecencyUserSettingsActionCreators = _require(1355).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteSoundboardSounds", (soundIds) => {
     let obj = outer1_1(outer1_2[13]);
     if (obj.size(soundIds.soundIds) >= outer1_8) {
@@ -488,7 +488,7 @@ export const addFavoriteSound = function addFavoriteSound(soundId) {
 };
 export const removeFavoriteSound = function removeFavoriteSound(soundId) {
   const _require = soundId;
-  const FrecencyUserSettingsActionCreators = _require(1355).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteSoundboardSounds", (soundIds) => {
     soundIds = soundIds.soundIds;
     soundIds.soundIds = soundIds.filter((arg0) => arg0 !== closure_0);

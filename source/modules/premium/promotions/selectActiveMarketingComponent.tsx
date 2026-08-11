@@ -1,10 +1,10 @@
-// Module ID: 7373
-// Function ID: 7374
+// Module ID: 7374
+// Function ID: 7375
 // Name: comparePriorityDescending
 // Dependencies: [2]
 // Exports: default
 
-// Module 7373 (comparePriorityDescending)
+// Module 7374 (comparePriorityDescending)
 function comparePriorityDescending(effectiveStartDate, effectiveStartDate2) {
   effectiveStartDate = effectiveStartDate.effectiveStartDate;
   let num;
@@ -64,10 +64,16 @@ const result = require("set").fileFinishedImporting("modules/premium/promotions/
 
 export default function selectActiveMarketingComponent(arr) {
   let closure_0 = arg1;
-  const found = arr.filter((arg0) => {
+  let fn = arg2;
+  if (arg2 === undefined) {
+    fn = function f() {
+      return true;
+    };
+  }
+  const found = arr.filter((isTimed) => {
     let effectiveEndDate;
     let effectiveStartDate;
-    ({ effectiveStartDate, effectiveEndDate } = arg0);
+    ({ effectiveStartDate, effectiveEndDate } = isTimed);
     let tmp = null != effectiveStartDate;
     if (tmp) {
       const time = obj.getTime();
@@ -81,7 +87,16 @@ export default function selectActiveMarketingComponent(arr) {
       }
       tmp = tmp3;
     }
-    return !tmp;
+    let tmp5 = !tmp;
+    if (tmp5) {
+      isTimed = isTimed.isTimed;
+      let tmp6 = !isTimed;
+      if (isTimed) {
+        tmp6 = fn(isTimed);
+      }
+      tmp5 = tmp6;
+    }
+    return tmp5;
   });
   let tmp = null;
   if (0 !== found.length) {

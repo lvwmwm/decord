@@ -1,17 +1,17 @@
-// Module ID: 4148
-// Function ID: 4149
+// Module ID: 4150
+// Function ID: 4151
 // Name: apexExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1471, 2]
 // Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments, useOverlayChat, useOverlayStreamerMode
 
-// Module 4148 (apexExperiment)
+// Module 4150 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 
 let obj = { 1: null, 2: { keybindOverride: "ctrl+tab" }, 3: { keybindOverride: "alt+x" } };
 obj[3] = { keybindOverride: "ctrl+l" };
-const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "Promise" }, variations: obj });
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "r" }, variations: obj });
 obj = { 1: null, 2: { hasChat: true, hasFriendList: false, showNowPlayingForDifferentGames: false }, 3: { hasChat: true, hasFriendList: true, showNowPlayingForDifferentGames: false } };
 obj[3] = { hasChat: true, hasFriendList: true, showNowPlayingForDifferentGames: true };
 const apexExperiment1 = ApexExperiment.createApexExperiment({ name: "2025-11-overlay-chat", kind: "user", defaultConfig: { hasChat: false, hasFriendList: false, showNowPlayingForDifferentGames: false }, variations: obj });

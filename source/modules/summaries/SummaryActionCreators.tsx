@@ -1,10 +1,10 @@
-// Module ID: 10320
-// Function ID: 10321
+// Module ID: 10325
+// Function ID: 10326
 // Name: fetchSummary
-// Dependencies: [5, 19, 4994, 1372, 10321, 676, 687, 709, 530, 4202, 12, 10323, 647, 2]
+// Dependencies: [5, 19, 4994, 1391, 10326, 676, 687, 709, 530, 4202, 12, 10328, 647, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 10320 (fetchSummary)
+// Module 10325 (fetchSummary)
 import ME from "ME";
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";

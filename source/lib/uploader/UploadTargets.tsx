@@ -1,7 +1,7 @@
 // Module ID: 4892
 // Function ID: 4893
 // Name: getCreateAttachmentURL
-// Dependencies: [1372, 676, 4856, 4852, 4893, 4895, 2]
+// Dependencies: [1391, 676, 4856, 4852, 4893, 4895, 2]
 // Exports: getUploadTarget
 
 // Module 4892 (getCreateAttachmentURL)

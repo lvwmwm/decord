@@ -1,10 +1,10 @@
-// Module ID: 6052
-// Function ID: 6053
+// Module ID: 6054
+// Function ID: 6055
 // Name: AccountAgeTier6LargeBadge
-// Dependencies: [21, 5268, 6053, 2]
+// Dependencies: [21, 5268, 6055, 2]
 // Exports: AccountAgeTier6LargeBadge
 
-// Module 6052 (AccountAgeTier6LargeBadge)
+// Module 6054 (AccountAgeTier6LargeBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/AccountAgeTier6LargeBadge.native.tsx");
@@ -28,7 +28,7 @@ export const AccountAgeTier6LargeBadge = function AccountAgeTier6LargeBadge(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6053);
+  obj[0] = importDefault(6055);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

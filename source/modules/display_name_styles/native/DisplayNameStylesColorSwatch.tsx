@@ -1,10 +1,10 @@
-// Module ID: 13926
-// Function ID: 13927
+// Module ID: 13934
+// Function ID: 13935
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 4303, 712, 1916, 13927, 4725, 688, 2]
+// Dependencies: [17, 21, 4303, 712, 1935, 13935, 4725, 688, 2]
 // Exports: default
 
-// Module 13926 (DisplayNameStylesColorSwatch)
+// Module 13934 (DisplayNameStylesColorSwatch)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -19,7 +19,7 @@ const result = require("createCacheKey").fileFinishedImporting("modules/display_
 export default function DisplayNameStylesColorSwatch(colors) {
   colors = colors.colors;
   const tmp = callback();
-  if (colors.effectId === require(1916) /* DisplayNameEffect */.DisplayNameEffect.GUMMY) {
+  if (colors.effectId === require(1935) /* DisplayNameEffect */.DisplayNameEffect.GUMMY) {
     if (colors.length > 0) {
       let obj = { style: null, children: null };
       const items = [, ];
@@ -27,7 +27,7 @@ export default function DisplayNameStylesColorSwatch(colors) {
       obj[0] = items;
       obj = { colors: null };
       obj[0] = colors;
-      obj[1] = jsx(importDefault(13927), { colors: null });
+      obj[1] = jsx(importDefault(13935), { colors: null });
       return <View colors={null} />;
     }
   }

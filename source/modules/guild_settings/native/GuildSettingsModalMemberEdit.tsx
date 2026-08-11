@@ -1,10 +1,10 @@
-// Module ID: 11236
-// Function ID: 11237
+// Module ID: 11241
+// Function ID: 11242
 // Name: GuildSettingsModalMemberEditScene
-// Dependencies: [19, 17, 4295, 1415, 1965, 1971, 1964, 1891, 3929, 1903, 11237, 676, 21, 4303, 712, 3934, 12, 8448, 1297, 4299, 5374, 1236, 5767, 4013, 6008, 5270, 4146, 9131, 3918, 7967, 4712, 7790, 11238, 11239, 4001, 11244, 1480, 589, 38, 11235, 5926, 5714, 11249, 11251, 5716, 5783, 2]
+// Dependencies: [19, 17, 4295, 1434, 1984, 1990, 1983, 1910, 3948, 1922, 11242, 676, 21, 4303, 712, 3953, 12, 8454, 1297, 4299, 5374, 1236, 5767, 4031, 6010, 5270, 4148, 9137, 3937, 7969, 4712, 7792, 11243, 11244, 4020, 11249, 1499, 589, 38, 11240, 5928, 5714, 11254, 11256, 5716, 5783, 2]
 // Exports: default
 
-// Module 11236 (GuildSettingsModalMemberEditScene)
+// Module 11241 (GuildSettingsModalMemberEditScene)
 import importAllResult from "Text";
 import get_ActivityIndicator from "TableCheckboxRow";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -379,7 +379,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       outer1_1(outer1_3[32]).startEditingRoles(applyArgumentsResult.props.guild.id, applyArgumentsResult.props.user.id);
     };
     applyArgumentsResult.handleToggleRole = function handleToggleRole(roleId, state) {
-      callback(11238).toggleRole(roleId, state);
+      callback(11243).toggleRole(roleId, state);
     };
     applyArgumentsResult.handleSetCommunicationDisabled = function handleSetCommunicationDisabled() {
       let guild;
@@ -427,7 +427,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       }
     };
     applyArgumentsResult.handleCancelEditMemberRoles = function handleCancelEditMemberRoles() {
-      callback(11238).stopEditingRoles();
+      callback(11243).stopEditingRoles();
     };
     return applyArgumentsResult;
   }
@@ -507,12 +507,12 @@ prototype["render"] = function render() {
     let obj = { style: null, children: null };
     obj[0] = tmp.rowLabel;
     obj = { variant: "text-sm/medium", children: null };
-    obj[1] = importDefault(4146).getUserTag(user);
+    obj[1] = importDefault(4148).getUserTag(user);
     const items = [callback3(require(4299) /* Text */.Text, obj), ];
     let tmp18Result = null;
     if (user.bot) {
       obj = { verified: null };
-      let tmp21Result = tmp21(9131);
+      let tmp21Result = tmp21(9137);
       obj[0] = user.isVerifiedBot();
       tmp18Result = tmp18(tmp21Result, obj);
     }
@@ -568,7 +568,7 @@ prototype["render"] = function render() {
         obj8[2] = intl4.string(tmp19(1236).t.h7UKXj);
         ({ handleChangeNickname: obj16[3], handleSaveNickname: obj16[4] } = self);
         obj8[6] = tmp3;
-        canChangeNick = tmp18(tmp19(7790).TextInput, obj8);
+        canChangeNick = tmp18(tmp19(7792).TextInput, obj8);
       }
       items2[1] = canChangeNick;
       if (canManageRoles) {
@@ -599,7 +599,7 @@ prototype["render"] = function render() {
         const obj11 = { variant: "danger", label: null, onPress: null };
         const intl5 = tmp19(1236).intl;
         const obj12 = { user: null };
-        tmp21Result = tmp21(4146);
+        tmp21Result = tmp21(4148);
         obj12[0] = tmp21Result.getName(user);
         obj11[1] = intl5.formatToPlainString(tmp19(1236).t.yOiJHB, obj12);
         obj11[2] = self.handleKick;
@@ -612,20 +612,20 @@ prototype["render"] = function render() {
         const obj14 = { variant: "danger", label: null, onPress: null };
         const intl6 = tmp19(1236).intl;
         const obj15 = { user: null };
-        obj15[0] = tmp21(4146).getName(user);
+        obj15[0] = tmp21(4148).getName(user);
         obj14[1] = intl6.formatToPlainString(tmp19(1236).t.TuAZuW, obj15);
         obj14[2] = self.handleBan;
         obj13[1] = tmp18(tmp19(5374).TableRow, obj14);
         canBan = tmp18(tmp19(5767).TableRowGroup, obj13);
-        const tmp21Result1 = tmp21(4146);
+        const tmp21Result1 = tmp21(4148);
       }
       items2[5] = canBan;
       items2[6] = tmp18Result;
       obj4[2] = items2;
       obj3[2] = tmp16(tmp19(4712).Stack, obj4);
-      return tmp18(tmp19(7967).Form, obj3);
+      return tmp18(tmp19(7969).Form, obj3);
     } else {
-      const result = tmp19(3918).isMemberCommunicationDisabled(member);
+      const result = tmp19(3937).isMemberCommunicationDisabled(member);
       const TableRowGroup = tmp19(5767).TableRowGroup;
       const obj16 = { hasIcons: false, children: null };
       const TableRow = tmp19(5374).TableRow;
@@ -635,26 +635,26 @@ prototype["render"] = function render() {
       let handleClearCommunicationDisabled = tmp19(1236).t;
       if (result) {
         const obj18 = { user: null };
-        obj18[0] = tmp21(4146).getName(user);
+        obj18[0] = tmp21(4148).getName(user);
         obj17[1] = formatToPlainString(handleClearCommunicationDisabled.RuL6o7, obj18);
         handleClearCommunicationDisabled = self.handleClearCommunicationDisabled;
         obj17[2] = handleClearCommunicationDisabled;
         obj17 = tmp18(TableRow, obj17);
         obj16[1] = obj17;
         let tmp18Result1 = tmp18(TableRowGroup, obj16);
-        const tmp21Result2 = tmp21(4146);
+        const tmp21Result2 = tmp21(4148);
       } else {
         const obj19 = { user: null };
-        obj19[0] = tmp21(4146).getName(user);
+        obj19[0] = tmp21(4148).getName(user);
         obj17[1] = formatToPlainString(handleClearCommunicationDisabled.FN7NIS, obj19);
         obj17[2] = self.handleSetCommunicationDisabled;
         obj16[1] = tmp18(TableRow, obj17);
         tmp18Result1 = tmp18(TableRowGroup, obj16);
-        const tmp21Result3 = tmp21(4146);
+        const tmp21Result3 = tmp21(4148);
       }
-      const tmp19Result = tmp19(3918);
+      const tmp19Result = tmp19(3937);
     }
-    const obj28 = importDefault(4146);
+    const obj28 = importDefault(4148);
     tmp16 = closure_20;
   }
 };

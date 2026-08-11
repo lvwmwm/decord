@@ -1,10 +1,10 @@
-// Module ID: 8343
-// Function ID: 8344
+// Module ID: 8348
+// Function ID: 8349
 // Name: _fetchApplicationCommandIndex
-// Dependencies: [5, 676, 709, 530, 687, 698, 1351, 2]
+// Dependencies: [5, 676, 709, 530, 687, 698, 1370, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 8343 (_fetchApplicationCommandIndex)
+// Module 8348 (_fetchApplicationCommandIndex)
 import expandEventProperties from "expandEventProperties";
 import ME from "ME";
 
@@ -61,7 +61,7 @@ function _fetchApplicationCommandIndex() {
                   let closure_0 = arg0;
                   let c2 = 0;
                   let c3 = 0;
-                  return (/* F120054 */ function*() { ... })();
+                  return (/* F120151 */ function*() { ... })();
                 });
                 const _retry = tmp;
                 const apply = tmp.apply;
@@ -87,8 +87,8 @@ function _fetchApplicationCommandIndex() {
                     if ("application" === type) {
                       channelId = tmp3.applicationId;
                     } else {
-                      lib(1351).assertNever(tmp3);
-                      const obj3 = lib(1351);
+                      lib(1370).assertNever(tmp3);
+                      const obj3 = lib(1370);
                     }
                   }
                 }

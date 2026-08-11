@@ -1,8 +1,8 @@
-// Module ID: 13240
-// Function ID: 13241
-// Dependencies: [4217, 1415, 1236, 589, 5880, 5881, 3922, 2]
+// Module ID: 13248
+// Function ID: 13249
+// Dependencies: [4217, 1434, 1236, 589, 5880, 5881, 3941, 2]
 
-// Module 13240
+// Module 13248
 import getHash from "getHash";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 
@@ -29,9 +29,9 @@ export default {
         obj[0] = id;
         obj[3] = callback(5881).isUserInCreatorMonetizationEligibleCountry();
         const obj3 = callback(5881);
-        obj[4] = callback(3922).shouldRestrictUpdatingCreatorMonetizationSettings(id.id);
+        obj[4] = callback(3941).shouldRestrictUpdatingCreatorMonetizationSettings(id.id);
         result = obj.canSeeGuildRoleSubscriptionSettings(obj);
-        const obj4 = callback(3922);
+        const obj4 = callback(3941);
       }
       return result;
     }, [], require(589) /* initialize */.statesWillNeverBeEqual);

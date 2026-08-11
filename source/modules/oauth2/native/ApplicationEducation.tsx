@@ -1,10 +1,10 @@
-// Module ID: 10526
-// Function ID: 10527
+// Module ID: 10531
+// Function ID: 10532
 // Name: ApplicationEducationEntry
-// Dependencies: [19, 17, 676, 21, 4303, 712, 10516, 8902, 1236, 4003, 10527, 8762, 6011, 4299, 10529, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 10521, 8908, 1236, 4022, 10532, 8768, 6013, 4299, 10534, 2]
 // Exports: default
 
-// Module 10526 (ApplicationEducationEntry)
+// Module 10531 (ApplicationEducationEntry)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { MAX_FRIENDS } from "ME";
@@ -43,8 +43,8 @@ export default function ApplicationEducation(arg0) {
   let application;
   ({ application, accountScopes } = arg0);
   const items = [];
-  const tmp3 = importDefault(10516)(application);
-  if (accountScopes.includes(require(8902) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
+  const tmp3 = importDefault(10521)(application);
+  if (accountScopes.includes(require(8908) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
     const intl5 = tmp4(1236).intl;
     if (tmp3) {
       let obj = { applicationName: null };
@@ -54,7 +54,7 @@ export default function ApplicationEducation(arg0) {
       formatToPlainStringResult = intl5.string(tmp4(1236).t.ex4sMU);
     }
     obj = { iconComponent: null, text: null };
-    obj[0] = tmp4(4003).FriendsIcon;
+    obj[0] = tmp4(4022).FriendsIcon;
     const intl6 = tmp4(1236).intl;
     const formatToPlainString2 = intl6.formatToPlainString;
     const t4 = tmp4(1236).t;
@@ -69,7 +69,7 @@ export default function ApplicationEducation(arg0) {
     }
     obj[1] = formatToPlainString2Result;
     const obj3 = { iconComponent: null, text: null };
-    obj3[0] = tmp4(10527).ChatSmileIcon;
+    obj3[0] = tmp4(10532).ChatSmileIcon;
     const intl7 = tmp4(1236).intl;
     const string3 = intl7.string;
     const t5 = tmp4(1236).t;
@@ -80,7 +80,7 @@ export default function ApplicationEducation(arg0) {
     }
     obj3[1] = string3Result;
     const obj4 = { iconComponent: null, text: null };
-    obj4[0] = tmp4(8762).GameControllerIcon;
+    obj4[0] = tmp4(8768).GameControllerIcon;
     const intl8 = tmp4(1236).intl;
     const string4 = intl8.string;
     const t6 = tmp4(1236).t;
@@ -91,7 +91,7 @@ export default function ApplicationEducation(arg0) {
     }
     obj4[1] = string4Result;
     let obj5 = { iconComponent: null, text: null };
-    obj5[0] = tmp4(6011).SettingsIcon;
+    obj5[0] = tmp4(6013).SettingsIcon;
     const intl9 = tmp4(1236).intl;
     const string5 = intl9.string;
     let mSqazC = tmp4(1236).t;
@@ -104,7 +104,7 @@ export default function ApplicationEducation(arg0) {
     obj5[1] = string5Result;
     obj5 = items.push(obj, obj3, obj4, obj5);
   } else {
-    if (accountScopes.includes(tmp4(8902).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
+    if (accountScopes.includes(tmp4(8908).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
       const intl = tmp4(1236).intl;
       if (tmp3) {
         obj = { applicationName: null };
@@ -114,7 +114,7 @@ export default function ApplicationEducation(arg0) {
         formatToPlainStringResult1 = intl.string(tmp4(1236).t.ex4sMU);
       }
       const obj6 = { iconComponent: null, text: null };
-      obj6[0] = tmp4(4003).FriendsIcon;
+      obj6[0] = tmp4(4022).FriendsIcon;
       const intl2 = tmp4(1236).intl;
       const formatToPlainString = intl2.formatToPlainString;
       const t = tmp4(1236).t;
@@ -129,7 +129,7 @@ export default function ApplicationEducation(arg0) {
       }
       obj6[1] = formatToPlainStringResult2;
       const obj9 = { iconComponent: null, text: null };
-      obj9[0] = tmp4(8762).GameControllerIcon;
+      obj9[0] = tmp4(8768).GameControllerIcon;
       const intl3 = tmp4(1236).intl;
       const string = intl3.string;
       const t2 = tmp4(1236).t;
@@ -140,7 +140,7 @@ export default function ApplicationEducation(arg0) {
       }
       obj9[1] = stringResult;
       const obj10 = { iconComponent: null, text: null };
-      obj10[0] = tmp4(6011).SettingsIcon;
+      obj10[0] = tmp4(6013).SettingsIcon;
       const intl4 = tmp4(1236).intl;
       const string2 = intl4.string;
       const t3 = tmp4(1236).t;
@@ -168,7 +168,7 @@ export default function ApplicationEducation(arg0) {
       const obj13 = { children: null };
       const items1 = [tmp27, items.map((iconComponent) => callback(closure_9, { iconComponent: iconComponent.iconComponent, text: iconComponent.text }, arg1))];
       obj11[1] = items1;
-      const items2 = [closure_6(View, obj11), callback(tmp4(10529).AuthorizeFormSeparator, {})];
+      const items2 = [closure_6(View, obj11), callback(tmp4(10534).AuthorizeFormSeparator, {})];
       obj13[0] = items2;
       tmp30Result = tmp30(closure_7, obj13);
       const tmp31 = closure_7;

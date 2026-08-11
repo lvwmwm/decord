@@ -1,10 +1,10 @@
-// Module ID: 15044
-// Function ID: 15045
+// Module ID: 15054
+// Function ID: 15055
 // Name: IntroScreen
-// Dependencies: [32, 19, 17, 1903, 10339, 21, 4303, 712, 589, 4146, 1480, 6027, 4299, 1236, 4714, 10352, 15045, 10358, 5270, 10376, 4509, 10353, 5783, 2]
+// Dependencies: [32, 19, 17, 1922, 10344, 21, 4303, 712, 589, 4148, 1499, 6029, 4299, 1236, 4714, 10357, 15055, 10363, 5270, 10381, 4509, 10358, 5783, 2]
 // Exports: default
 
-// Module 15044 (IntroScreen)
+// Module 15054 (IntroScreen)
 import _slicedToArray from "_slicedToArray";
 import useSafetyToolsButtonTooltipForChannel from "useSafetyToolsButtonTooltipForChannel";
 import { useState } from "useSafetyToolsButtonTooltipForChannel";
@@ -33,12 +33,12 @@ function IntroScreen(arg0) {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getUser(closure_1));
-  let obj1 = importDefault(4146);
+  let obj1 = importDefault(4148);
   const name = obj1.getName(stateFromStores);
-  let obj2 = require(1480) /* useNavigation */;
+  let obj2 = require(1499) /* useNavigation */;
   _slicedToArray = obj2.useNavigation();
   obj = { style: tmp.container, children: null };
-  const items1 = [callback2(require(6027) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
+  const items1 = [callback2(require(6029) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
   obj = { style: tmp.warningText, children: null };
   obj1 = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -89,7 +89,7 @@ function TakeActionScreen(arg0) {
   obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.S0XtKF);
   items[1] = callback2(require(4299) /* Text */.Text, obj1);
   obj[1] = items;
-  const items1 = [callback3(closure_7, obj), callback2(importDefault(15045), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
+  const items1 = [callback3(closure_7, obj), callback2(importDefault(15055), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
   obj[1] = items1;
   return callback3(closure_7, obj);
 }
@@ -100,7 +100,7 @@ function SafetyTipsScreen() {
   obj = { showHeader: true, description: null, safetyTips: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.DJMZX6);
-  const tmp2 = importDefault(10358);
+  const tmp2 = importDefault(10363);
   obj[2] = callback().map((children) => callback2(callback(table[12]).Text, { variant: "text-sm/medium", children }, arg1));
   obj[1] = callback2(tmp2, obj);
   obj[1] = callback2(closure_7, obj);
@@ -110,7 +110,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = createCacheKey();
   let obj = { style: tmp.container, children: null };
-  const items = [callback2(trackAnalyticsEvent(6027).SafetyChatSpotIllustration, {}), , ];
+  const items = [callback2(trackAnalyticsEvent(6029).SafetyChatSpotIllustration, {}), , ];
   obj = { style: tmp.warningText, children: null };
   obj = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: null };
   const intl = trackAnalyticsEvent(1236).intl;

@@ -1,10 +1,10 @@
-// Module ID: 11438
-// Function ID: 11439
+// Module ID: 11441
+// Function ID: 11442
 // Name: handleApplicationSelected
-// Dependencies: [19, 1372, 1903, 1479, 676, 4737, 4498, 6982, 11439, 6980, 1935, 7237, 1883, 8338, 1416, 9548, 8731, 11444, 5734, 10601, 4272, 2]
+// Dependencies: [19, 1391, 1922, 1498, 676, 4737, 4498, 6985, 11442, 6983, 1954, 7238, 1902, 8343, 1435, 9554, 8737, 11447, 5734, 10606, 4272, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11438 (handleApplicationSelected)
+// Module 11441 (handleApplicationSelected)
 import postMessageToWebView from "postMessageToWebView";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -37,9 +37,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   let obj = require(4498) /* collectGuildAnalyticsMetadata */;
   obj = { location: _location, section: null, application_id: null, section_name: null, query: null, search_results_position: null, source: null };
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    let APP = tmp(6982).ApplicationCommandTriggerSections.BUILT_IN;
+    let APP = tmp(6985).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(6982).ApplicationCommandTriggerSections.APP;
+    APP = tmp(6985).ApplicationCommandTriggerSections.APP;
   }
   obj[1] = APP;
   let id = application.id;
@@ -77,7 +77,7 @@ export const handleViewAllSelected = function handleViewAllSelected(arg0) {
   ({ navigation, sectionName, applications, sectionItemType, commands } = arg0);
   ({ location: _location, context, sectionOverallPosition, sectionDescriptors, title, promotedApplicationIds } = arg0);
   let obj = require(4498) /* collectGuildAnalyticsMetadata */;
-  obj = { section_name: sectionName, num: sectionItemType === require(11439) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
+  obj = { section_name: sectionName, num: sectionItemType === require(11442) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
   obj.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_SECTION_VIEW_MORE, obj);
   navigation.navigate(constants.APP_LIST_VIEW, { analyticsLocation: _location, context, sectionName, sectionOverallPosition, applications, sectionItemType, commands, sectionDescriptors, title, promotedApplicationIds });
 };
@@ -97,16 +97,16 @@ export const handleApplicationCommandSelected = function handleApplicationComman
   ({ location: _location, context, command } = arg0);
   ({ section, sectionDescriptors, query, navigation, installOnDemand, sectionName, entrypoint } = arg0);
   ({ searchResultsPosition, onCommandExecuted } = arg0);
-  let obj = command(6980);
+  let obj = command(6983);
   obj = { command, location: _location, triggerSection: null, queryLength: null, sectionName: null, query: null, searchResultsPosition: null, source: null };
-  obj[2] = command(6980).getCommandTriggerSection(section);
+  obj[2] = command(6983).getCommandTriggerSection(section);
   obj[3] = query.length;
   obj[4] = sectionName;
   obj[5] = query;
   obj[6] = searchResultsPosition;
   obj[7] = entrypoint;
   obj.trackCommandSelected(obj);
-  if (command.type === command(1935).ApplicationCommandType.PRIMARY_ENTRY_POINT) {
+  if (command.type === command(1954).ApplicationCommandType.PRIMARY_ENTRY_POINT) {
     obj = { application: null, context: null, installOnDemand: null, sectionName: null, entrypoint: null };
     obj[0] = section.application;
     obj[1] = context;
@@ -124,7 +124,7 @@ export const handleApplicationCommandSelected = function handleApplicationComman
       }
     }
     if ("channel" === context.type) {
-      const result = importAll(7237).setAppLauncherActiveCommand(context.channel.id, command);
+      const result = importAll(7238).setAppLauncherActiveCommand(context.channel.id, command);
       const obj1 = { command: null, section: null, context: null, installOnDemand: null, sectionName: null, analyticsLocation: null, onCommandExecuted: null };
       obj1[0] = command;
       obj1[1] = tmp5;
@@ -134,7 +134,7 @@ export const handleApplicationCommandSelected = function handleApplicationComman
       obj1[5] = _location;
       obj1[6] = onCommandExecuted;
       navigation.navigate(constants.COMMAND_VIEW, obj1);
-      const obj4 = importAll(7237);
+      const obj4 = importAll(7238);
     }
   }
 };
@@ -149,7 +149,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
     found = prefilledValues.find((name) => name.name === option.name && name.type === tmp.type);
   }
   const type = option.type;
-  if (option(1935).ApplicationCommandOptionType.BOOLEAN === type) {
+  if (option(1954).ApplicationCommandOptionType.BOOLEAN === type) {
     if (null != found) {
       let obj = { type: "text", text: null };
       const _String8 = String;
@@ -162,10 +162,10 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
     }
     return items1;
   } else {
-    if (tmp2(1935).ApplicationCommandOptionType.STRING !== type) {
-      if (tmp2(1935).ApplicationCommandOptionType.INTEGER !== type) {
-        if (tmp2(1935).ApplicationCommandOptionType.NUMBER !== type) {
-          if (tmp2(1935).ApplicationCommandOptionType.CHANNEL === type) {
+    if (tmp2(1954).ApplicationCommandOptionType.STRING !== type) {
+      if (tmp2(1954).ApplicationCommandOptionType.INTEGER !== type) {
+        if (tmp2(1954).ApplicationCommandOptionType.NUMBER !== type) {
+          if (tmp2(1954).ApplicationCommandOptionType.CHANNEL === type) {
             if (null != found) {
               const _String5 = String;
               if (null != channel.getChannel(String(found.value))) {
@@ -178,7 +178,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               return items3;
             }
             items3 = [{ type: "text", text: "" }];
-          } else if (tmp2(1935).ApplicationCommandOptionType.USER === type) {
+          } else if (tmp2(1954).ApplicationCommandOptionType.USER === type) {
             if (null != found) {
               const _String3 = String;
               if (null != authStore.getUser(String(found.value))) {
@@ -191,7 +191,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               return items5;
             }
             items5 = [{ type: "text", text: "" }];
-          } else if (tmp2(1935).ApplicationCommandOptionType.ROLE === type) {
+          } else if (tmp2(1954).ApplicationCommandOptionType.ROLE === type) {
             if (null != found) {
               if (typeof found.value === "string") {
                 if (found.value in roles) {
@@ -204,7 +204,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               }
             }
             items7 = [{ type: "text", text: "" }];
-          } else if (tmp2(1935).ApplicationCommandOptionType.MENTIONABLE === type) {
+          } else if (tmp2(1954).ApplicationCommandOptionType.MENTIONABLE === type) {
             if (null != found) {
               if (found.value === option.guildId) {
                 const items8 = [{ type: "textMention", text: "@everyone" }];
@@ -261,10 +261,10 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
 };
 export const getAppLauncherIconSource = function getAppLauncherIconSource(application) {
   if (null == application) {
-    let applicationIconSource = importDefault(1883);
+    let applicationIconSource = importDefault(1902);
   } else {
-    let obj = require(8338) /* getShelfBadgeTypeIfActive */;
-    const obj2 = importDefault(1416);
+    let obj = require(8343) /* getShelfBadgeTypeIfActive */;
+    const obj2 = importDefault(1435);
     if (isRealApplicationResult) {
       obj = { id: null, icon: null, bot: null, botIconFirst: false };
       ({ id: obj3[0], icon: obj3[1], bot: obj3[2] } = application);
@@ -278,7 +278,7 @@ export const getAppLauncherIconSource = function getAppLauncherIconSource(applic
 };
 export const useLogAppLauncherEmptyStateView = function useLogAppLauncherEmptyStateView(COMMAND_NOT_FOUND, query) {
   const _require = COMMAND_NOT_FOUND;
-  const entrypoint = _require(9548).useAppLauncherContext().entrypoint;
+  const entrypoint = _require(9554).useAppLauncherContext().entrypoint;
   const items = [COMMAND_NOT_FOUND, query, entrypoint];
   const effect = React.useEffect(() => {
     if (null != COMMAND_NOT_FOUND) {

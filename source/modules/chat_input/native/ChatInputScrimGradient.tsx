@@ -1,10 +1,10 @@
-// Module ID: 11632
-// Function ID: 11633
+// Module ID: 11635
+// Function ID: 11636
 // Name: ChatInputScrimGradient
-// Dependencies: [19, 17, 21, 4118, 4005, 712, 688, 4725, 2]
+// Dependencies: [19, 17, 21, 4123, 4024, 712, 688, 4725, 2]
 // Exports: ChatInputScrimGradient, useChatInputFloatingOverlayStyle
 
-// Module 11632 (ChatInputScrimGradient)
+// Module 11635 (ChatInputScrimGradient)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,10 +23,10 @@ export const ChatInputScrimGradient = function ChatInputScrimGradient(scrimBase)
     inline = false;
   }
   scrimBase = scrimBase.scrimBase;
-  let obj = require(4118) /* getGradientColorByPercentage */;
-  const gradientValue = obj.useGradientValue(require(4118) /* getGradientColorByPercentage */.GradientPercentage.END);
-  const token = require(4005) /* map */.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWER);
-  const obj2 = require(4005) /* map */;
+  let obj = require(4123) /* getGradientColorByPercentage */;
+  const gradientValue = obj.useGradientValue(require(4123) /* getGradientColorByPercentage */.GradientPercentage.END);
+  const token = require(4024) /* map */.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWER);
+  const obj2 = require(4024) /* map */;
   const tmp4 = importDefault;
   if (gradientHeight == null) {
     gradientHeight = obj3.useToken(importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT);
@@ -60,6 +60,6 @@ export const ChatInputScrimGradient = function ChatInputScrimGradient(scrimBase)
 };
 export const useChatInputFloatingOverlayStyle = function useChatInputFloatingOverlayStyle() {
   const obj = { marginTop: null, overflow: "visible" };
-  obj[0] = -require(4005) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT) / 2;
+  obj[0] = -require(4024) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_SCRIM_GRADIENT_HEIGHT) / 2;
   return obj;
 };

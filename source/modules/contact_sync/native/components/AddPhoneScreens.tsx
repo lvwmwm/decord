@@ -1,10 +1,10 @@
-// Module ID: 12058
-// Function ID: 12059
+// Module ID: 12061
+// Function ID: 12062
 // Name: AddPhoneScreen
-// Dependencies: [5, 32, 19, 17, 1903, 12032, 21, 4303, 5267, 712, 1480, 4299, 1236, 8518, 8519, 12031, 647, 5821, 38, 8545, 8513, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 12035, 21, 4303, 5267, 712, 1499, 4299, 1236, 8524, 8525, 12034, 647, 5821, 38, 8551, 8519, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 12058 (AddPhoneScreen)
+// Module 12061 (AddPhoneScreen)
 import ContactSyncModes from "ContactSyncModes";
 import _slicedToArray from "_slicedToArray";
 import VerifyPhone from "VerifyPhone";
@@ -30,7 +30,7 @@ let obj1 = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_
 let result = require("noop").fileFinishedImporting("modules/contact_sync/native/components/AddPhoneScreens.tsx");
 
 export const AddPhoneScreen = function AddPhoneScreen() {
-  let obj = _require(1480);
+  let obj = _require(1499);
   _require = obj.useNavigation();
   const tmp = createCacheKey();
   obj = { style: tmp.header, children: null };
@@ -45,12 +45,12 @@ export const AddPhoneScreen = function AddPhoneScreen() {
   obj[1] = items;
   const obj2 = { style: tmp.container, reason: null, header: null, onComplete: null };
   const tmp2 = callback3(View, obj);
-  obj2[1] = _require(8519).ChangePhoneReason.CONTACT_SYNC;
+  obj2[1] = _require(8525).ChangePhoneReason.CONTACT_SYNC;
   obj2[2] = tmp2;
   obj2[3] = function onComplete(arg0) {
     return callback(outer1_2[15]).submitPhone(arg0, callback);
   };
-  return callback2(importDefault(8518), obj2);
+  return callback2(importDefault(8524), obj2);
 };
 export const VerifyPhoneScreen = function VerifyPhoneScreen() {
   let require;

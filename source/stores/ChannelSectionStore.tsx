@@ -1,7 +1,7 @@
 // Module ID: 5898
 // Function ID: 5899
 // Name: handlePermissionsChange
-// Dependencies: [4217, 5899, 1372, 1891, 3929, 1960, 4124, 1903, 676, 1379, 505, 5900, 1231, 11, 4540, 589, 709, 2]
+// Dependencies: [4217, 5899, 1391, 1910, 3948, 1979, 4126, 1922, 676, 1398, 505, 5900, 1231, 11, 4540, 589, 709, 2]
 // Exports: isViewChannelSidebar
 
 // Module 5898 (handlePermissionsChange)

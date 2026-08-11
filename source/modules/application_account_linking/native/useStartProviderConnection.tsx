@@ -1,7 +1,7 @@
 // Module ID: 5746
 // Function ID: 5747
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 5747, 3998, 2]
+// Dependencies: [5, 19, 5747, 4017, 2]
 // Exports: useStartProviderConnection
 
 // Module 5746 (useStartProviderConnection)

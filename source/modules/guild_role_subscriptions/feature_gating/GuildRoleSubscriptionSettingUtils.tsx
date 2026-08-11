@@ -1,7 +1,7 @@
 // Module ID: 5880
 // Function ID: 5881
 // Name: computeGuildRoleSubscriptionSettingsVisibility
-// Dependencies: [1415, 3929, 1903, 676, 589, 5881, 5873, 2]
+// Dependencies: [1434, 3948, 1922, 676, 589, 5881, 5873, 2]
 // Exports: canManageGuildRoleSubscriptions, canSeeGuildRoleSubscriptionSettings, canSeeGuildRoleSubscriptionSettingsContent, getGuildRoleSubscriptionSettingsVisibility, useCanManageGuildRoleSubscriptions, useCanSeeGuildRoleSubscriptionSettings
 
 // Module 5880 (computeGuildRoleSubscriptionSettingsVisibility)

@@ -1,10 +1,10 @@
-// Module ID: 16365
-// Function ID: 16366
+// Module ID: 16381
+// Function ID: 16382
 // Name: useFormattedEndTime
-// Dependencies: [1903, 1236, 589, 2]
+// Dependencies: [1922, 1236, 589, 2]
 // Exports: default
 
-// Module 16365 (useFormattedEndTime)
+// Module 16381 (useFormattedEndTime)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

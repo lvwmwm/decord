@@ -1,9 +1,9 @@
-// Module ID: 16044
-// Function ID: 16045
+// Module ID: 16061
+// Function ID: 16062
 // Name: HistorySeparator
-// Dependencies: [19, 17, 1372, 4315, 1903, 676, 21, 4303, 712, 5957, 16045, 589, 1297, 9663, 5268, 12307, 4313, 4311, 8387, 15239, 1348, 1474, 16050, 1236, 8008, 2]
+// Dependencies: [19, 17, 1391, 4315, 1922, 676, 21, 4303, 712, 5959, 16062, 589, 1297, 9668, 5268, 12310, 4313, 4311, 8393, 15248, 1367, 1493, 16067, 1236, 8010, 2]
 
-// Module 16044 (HistorySeparator)
+// Module 16061 (HistorySeparator)
 import importAllResult from "renderCategoryItem";
 import get_ActivityIndicator from "transitionToChannel";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -55,7 +55,7 @@ let closure_13 = importAllResult.memo(function GuildItemInner(guildId) {
     guildId(outer1_2[9]).transitionToGuild(guildId);
   }, items1);
   obj = { size: 48, borderRadius: 16, guildId, selected: guildId.selected, onPress: callback, onLongPress: callback1, backgroundColor: tmp.maskStrokeStyle.backgroundColor };
-  obj[1] = callback(onGuildSelect(16045), obj);
+  obj[1] = callback(onGuildSelect(16062), obj);
   return callback(closure_5, obj);
 });
 let closure_14 = importAllResult.memo(function PrivateChannelItemInner(channelId) {
@@ -94,7 +94,7 @@ let closure_14 = importAllResult.memo(function PrivateChannelItemInner(channelId
   }
   if (type === ChannelTypes.DM) {
     if (null != stateFromStores1) {
-      obj = { style: null, user: null, guildId: "Array", size: 0.3 };
+      obj = { style: null, user: null, guildId: "Array", size: "ClipPath" };
       obj[0] = tmp.privateChannelIcon;
       obj[1] = stateFromStores1;
       obj[3] = tmp2(tmp3[12]).AvatarSizes.LARGE_48;

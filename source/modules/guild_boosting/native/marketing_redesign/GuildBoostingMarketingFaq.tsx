@@ -1,10 +1,10 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12882
+// Function ID: 12883
 // Name: items1
-// Dependencies: [32, 19, 17, 676, 21, 4303, 6863, 712, 1236, 1974, 4299, 4846, 1297, 12879, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 6865, 712, 1236, 1993, 4299, 4846, 1297, 12883, 2]
 // Exports: default
 
-// Module 12878 (items1)
+// Module 12882 (items1)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -53,7 +53,7 @@ let items1 = [
     getAnswer() {
       const intl = require(1236) /* getSystemLocale */.intl;
       const obj = { helpCenterUrl: null };
-      obj[0] = importDefault(1974).getArticleURL(HelpdeskArticles.GUILD_BOOSTING_FAQ);
+      obj[0] = importDefault(1993).getArticleURL(HelpdeskArticles.GUILD_BOOSTING_FAQ);
       return intl.format(require(1236) /* getSystemLocale */.t["8zlqlD"], obj);
     }
   },

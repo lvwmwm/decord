@@ -1,10 +1,10 @@
-// Module ID: 11773
-// Function ID: 11774
+// Module ID: 11776
+// Function ID: 11777
 // Name: ApplicationCommandList
-// Dependencies: [19, 17, 9917, 21, 9537, 1935, 8347, 6982, 11771, 11772, 2]
+// Dependencies: [19, 17, 9922, 21, 9543, 1954, 8352, 6985, 11774, 11775, 2]
 // Exports: default
 
-// Module 11773 (ApplicationCommandList)
+// Module 11776 (ApplicationCommandList)
 import noop from "noop";
 import { FlatList } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

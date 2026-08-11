@@ -1,7 +1,7 @@
 // Module ID: 4533
 // Function ID: 4534
 // Name: useDisplayNameStyles
-// Dependencies: [19, 1971, 1903, 4534, 589, 4536, 2]
+// Dependencies: [19, 1990, 1922, 4534, 589, 4536, 2]
 // Exports: default
 
 // Module 4533 (useDisplayNameStyles)

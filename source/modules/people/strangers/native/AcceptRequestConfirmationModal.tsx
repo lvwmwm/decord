@@ -1,10 +1,10 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 9642
+// Function ID: 9643
 // Name: AcceptRequestConfirmationModal
 // Dependencies: [19, 17, 21, 4303, 712, 4732, 1236, 4642, 4299, 2]
 // Exports: default
 
-// Module 9637 (AcceptRequestConfirmationModal)
+// Module 9642 (AcceptRequestConfirmationModal)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

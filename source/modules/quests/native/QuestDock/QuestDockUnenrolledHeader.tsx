@@ -1,16 +1,16 @@
-// Module ID: 14432
-// Function ID: 14433
+// Module ID: 14440
+// Function ID: 14441
 // Name: QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED
-// Dependencies: [32, 19, 17, 5161, 14337, 505, 21, 4303, 712, 4713, 14359, 14338, 501, 14334, 14347, 5164, 7187, 4239, 4153, 4005, 14425, 4036, 14333, 8009, 14433, 14402, 5268, 14435, 14436, 14393, 4299, 1236, 4846, 10155, 8604, 2]
+// Dependencies: [32, 19, 17, 5161, 14345, 505, 21, 4303, 712, 4713, 14367, 14346, 501, 14342, 14355, 5164, 7188, 4239, 1363, 4024, 14433, 4042, 14341, 8011, 14441, 14410, 5268, 14443, 14444, 14401, 4299, 1236, 4846, 10160, 8610, 2]
 
-// Module 14432 (QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)
+// Module 14440 (QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)
 import PressableBase from "PressableBase";
 import importAllResult from "map";
 import get_ActivityIndicator from "useTheme";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
 import { ThemeTypes } from "sum";
-import jsxProd from "module_4036";
+import jsxProd from "module_4042";
 import createCacheKey from "createCacheKey";
 
 let QUEST_DOCK_COLLAPSED_HEIGHT;

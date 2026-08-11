@@ -1,10 +1,10 @@
-// Module ID: 7283
-// Function ID: 7284
+// Module ID: 7284
+// Function ID: 7285
 // Name: getDeviceSpecificString
-// Dependencies: [1236, 1605, 2]
+// Dependencies: [1236, 1624, 2]
 // Exports: getDeviceSpecificString
 
-// Module 7283 (getDeviceSpecificString)
+// Module 7284 (getDeviceSpecificString)
 const result = require("set").fileFinishedImporting("modules/intl/overrides/getDeviceSpecificString.tsx");
 
 export const getDeviceSpecificString = function getDeviceSpecificString(arg0, _2Yp7dF) {

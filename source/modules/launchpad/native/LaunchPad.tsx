@@ -1,9 +1,9 @@
-// Module ID: 16043
-// Function ID: 16044
+// Module ID: 16060
+// Function ID: 16061
 // Name: TabButton
-// Dependencies: [32, 19, 17, 3994, 6984, 5943, 5223, 1376, 1218, 1372, 7179, 7097, 1891, 13017, 4315, 5155, 4499, 4319, 676, 21, 712, 4303, 4846, 4299, 589, 4036, 4166, 5992, 1236, 12288, 9136, 14760, 500, 13843, 12132, 7319, 4158, 7320, 7308, 1474, 1609, 7309, 10968, 698, 16044, 16051, 13844, 16070, 16071, 2]
+// Dependencies: [32, 19, 17, 4013, 6987, 5945, 5223, 1395, 1218, 1391, 7180, 7098, 1910, 13021, 4315, 5155, 4499, 4319, 676, 21, 712, 4303, 4846, 4299, 589, 4042, 4166, 5994, 1236, 12291, 9142, 14770, 500, 13850, 12135, 7320, 4158, 7321, 7309, 1493, 1628, 7310, 10973, 698, 16061, 16068, 13851, 16087, 16088, 2]
 
-// Module 16043 (TabButton)
+// Module 16060 (TabButton)
 import set from "set";
 import importAllResult from "jsxProd";
 import { View } from "updateVoiceState";
@@ -65,7 +65,7 @@ function TabHeader(children) {
 }
 function createAndAppendChannel(arg0, has, arr) {
   if (!has.has(arg0)) {
-    const tmp3 = importDefault(7319)(arg0);
+    const tmp3 = importDefault(7320)(arg0);
     if (null != tmp3) {
       arr.push(tmp3);
       has.add(arg0);

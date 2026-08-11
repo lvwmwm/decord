@@ -1,14 +1,14 @@
-// Module ID: 9665
-// Function ID: 9666
-// Dependencies: [19, 17, 1372, 1891, 4315, 3938, 1903, 9620, 4500, 21, 4303, 712, 589, 4494, 9666, 10269, 4816, 4809, 4299, 3971, 3883, 8448, 5374, 2]
+// Module ID: 9670
+// Function ID: 9671
+// Dependencies: [19, 17, 1391, 1910, 4315, 3957, 1922, 9625, 4500, 21, 4303, 712, 589, 4494, 9671, 10274, 4816, 4809, 4299, 3990, 3902, 8454, 5374, 2]
 
-// Module 9665
+// Module 9670
 import importAllResult from "resetCache";
 import { View } from "TextIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
-import upsertRelationship from "upsertRelationship";
+import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
 import { ReadStateTypes } from "ReadStateTypes";

@@ -1,10 +1,10 @@
-// Module ID: 11755
-// Function ID: 11756
+// Module ID: 11758
+// Function ID: 11759
 // Name: EmojiConfetti
-// Dependencies: [5, 32, 19, 17, 4295, 5176, 676, 1906, 21, 4303, 500, 712, 4036, 4304, 4730, 589, 4713, 3974, 3942, 8076, 1416, 5360, 698, 5748, 8650, 4271, 5764, 4299, 1236, 11663, 11756, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 4295, 5176, 676, 1925, 21, 4303, 500, 712, 4042, 4304, 4730, 589, 4713, 3993, 3961, 8078, 1435, 5360, 698, 5748, 8656, 4271, 5764, 4299, 1236, 11666, 11759, 4714, 2]
 // Exports: default
 
-// Module 11755 (EmojiConfetti)
+// Module 11758 (EmojiConfetti)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import closure_4 from "set";
 import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji";
@@ -35,14 +35,14 @@ function EmojiConfetti(children) {
   let sharedValue1;
   let sharedValue2;
   let sharedValue3;
-  sharedValue = top(4036).useSharedValue(0);
-  let obj = top(4036);
-  sharedValue1 = top(4036).useSharedValue(0);
-  let obj2 = top(4036);
-  sharedValue2 = top(4036).useSharedValue(0.2);
-  let obj3 = top(4036);
-  sharedValue3 = top(4036).useSharedValue(0);
-  let obj4 = top(4036);
+  sharedValue = top(4042).useSharedValue(0);
+  let obj = top(4042);
+  sharedValue1 = top(4042).useSharedValue(0);
+  let obj2 = top(4042);
+  sharedValue2 = top(4042).useSharedValue(0.2);
+  let obj3 = top(4042);
+  sharedValue3 = top(4042).useSharedValue(0);
+  let obj4 = top(4042);
   const mountLayoutEffect = top(4730).useMountLayoutEffect(() => {
     let obj = sharedValue;
     let num = 0;
@@ -117,8 +117,8 @@ function EmojiConfetti(children) {
   fn.__closure = { sizeValue: sharedValue2, left, rotationValue: sharedValue1, top, positionValue: sharedValue, opacityValue: sharedValue3 };
   fn.__workletHash = 1455873119263;
   fn.__initData = closure_14;
-  const style = top(4036).useAnimatedStyle(fn);
-  return callback3(left(4036).View, { style, children: children.emojiComponent });
+  const style = top(4042).useAnimatedStyle(fn);
+  return callback3(left(4042).View, { style, children: children.emojiComponent });
 }
 function EmojiBurstAnimation(emojiComponent) {
   emojiComponent = emojiComponent.emojiComponent;

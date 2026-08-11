@@ -1,10 +1,10 @@
-// Module ID: 16473
-// Function ID: 16474
+// Module ID: 16484
+// Function ID: 16485
 // Name: LabelLayoutComponent
-// Dependencies: [19, 17, 21, 8216, 1935, 7791, 2]
+// Dependencies: [19, 17, 21, 8220, 1954, 7793, 2]
 // Exports: default
 
-// Module 16473 (LabelLayoutComponent)
+// Module 16484 (LabelLayoutComponent)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -19,9 +19,9 @@ export default function LabelLayoutComponent(arg0) {
   let renderComponent;
   ({ component, renderComponent } = arg0);
   ({ label, description } = arg0);
-  let obj = require(8216) /* isInteractionComponent */;
+  let obj = require(8220) /* isInteractionComponent */;
   const componentError = obj.useComponentError(component);
-  if (component.type === require(1935) /* PermissionOverwriteType */.ComponentType.CHECKBOX) {
+  if (component.type === require(1954) /* PermissionOverwriteType */.ComponentType.CHECKBOX) {
     let renderComponentResult = renderComponent(component, "label-child");
   } else {
     obj = { label: null, description: null, required: null, errorMessage: null, children: null };
@@ -33,7 +33,7 @@ export default function LabelLayoutComponent(arg0) {
     obj[0] = { width: "100%" };
     obj[1] = renderComponent(component, "label-child");
     obj[4] = <View style={null}>{null}</View>;
-    renderComponentResult = jsx(require(7791) /* Input */.Input, { style: null, children: null });
+    renderComponentResult = jsx(require(7793) /* Input */.Input, { style: null, children: null });
   }
   return renderComponentResult;
 };

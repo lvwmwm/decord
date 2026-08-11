@@ -1,10 +1,10 @@
-// Module ID: 12442
-// Function ID: 12443
+// Module ID: 12445
+// Function ID: 12446
 // Name: ImageSkeleton
 // Dependencies: [19, 17, 21, 4303, 712, 4299, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 12442 (ImageSkeleton)
+// Module 12445 (ImageSkeleton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

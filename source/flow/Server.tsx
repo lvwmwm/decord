@@ -1,9 +1,9 @@
-// Module ID: 1935
-// Function ID: 1936
+// Module ID: 1954
+// Function ID: 1955
 // Name: PermissionOverwriteType
 // Dependencies: [2]
 
-// Module 1935 (PermissionOverwriteType)
+// Module 1954 (PermissionOverwriteType)
 const result = require("set").fileFinishedImporting("flow/Server.tsx");
 
 export const PermissionOverwriteType = { ROLE: 0, [0]: "ROLE", MEMBER: 1, [1]: "MEMBER" };

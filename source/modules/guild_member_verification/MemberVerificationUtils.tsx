@@ -1,7 +1,7 @@
 // Module ID: 4791
 // Function ID: 4792
 // Name: isValidFormResponse
-// Dependencies: [4792, 676, 4127, 1351, 2]
+// Dependencies: [4792, 676, 4129, 1370, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
 // Module 4791 (isValidFormResponse)
@@ -21,14 +21,14 @@ export const isValidFormResponse = function isValidFormResponse(required) {
     if (null == response) {
       return false;
     } else {
-      if (require(4127) /* MAX_RESULTS_PER_PAGE */.VerificationFormFieldTypes.TERMS !== field_type) {
-        if (tmp4(4127).VerificationFormFieldTypes.VERIFICATION !== field_type) {
-          if (tmp4(4127).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
-            if (tmp4(4127).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
-              if (tmp4(4127).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+      if (require(4129) /* MAX_RESULTS_PER_PAGE */.VerificationFormFieldTypes.TERMS !== field_type) {
+        if (tmp4(4129).VerificationFormFieldTypes.VERIFICATION !== field_type) {
+          if (tmp4(4129).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
+            if (tmp4(4129).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
+              if (tmp4(4129).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
                 return typeof response === "number";
               } else {
-                return tmp4(1351).assertNever(field_type);
+                return tmp4(1370).assertNever(field_type);
               }
             }
           }

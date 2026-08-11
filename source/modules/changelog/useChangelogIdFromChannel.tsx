@@ -1,10 +1,10 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 11802
+// Function ID: 11803
 // Name: useChangelogIdFromChannel
 // Dependencies: [4521, 589, 2]
 // Exports: default
 
-// Module 11799 (useChangelogIdFromChannel)
+// Module 11802 (useChangelogIdFromChannel)
 import reinjectEphemerals from "reinjectEphemerals";
 
 const require = arg1;

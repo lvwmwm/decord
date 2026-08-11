@@ -1,10 +1,10 @@
-// Module ID: 10935
-// Function ID: 10936
+// Module ID: 10940
+// Function ID: 10941
 // Name: UserSummaryItem
-// Dependencies: [19, 17, 1971, 21, 4303, 712, 1297, 589, 1416, 4493, 1236, 4299, 2]
+// Dependencies: [19, 17, 1990, 21, 4303, 712, 1297, 589, 1435, 4493, 1236, 4299, 2]
 // Exports: default
 
-// Module 10935 (UserSummaryItem)
+// Module 10940 (UserSummaryItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -104,14 +104,14 @@ export default function UserSummaryItem(users) {
               }
               let tmp5 = avatarURL;
               if (null != avatar) {
-                let guildMemberAvatarURL = importDefault(1416).getGuildMemberAvatarURL(tmp3, flag);
+                let guildMemberAvatarURL = importDefault(1435).getGuildMemberAvatarURL(tmp3, flag);
                 if (guildMemberAvatarURL == null) {
                   guildMemberAvatarURL = avatarURL;
                 }
                 tmp5 = guildMemberAvatarURL;
-                const obj = importDefault(1416);
+                const obj = importDefault(1435);
               }
-              return importDefault(1416).makeSource(tmp5);
+              return importDefault(1435).makeSource(tmp5);
             };
           }
           if (num < tmp8) {

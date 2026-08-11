@@ -1,7 +1,7 @@
 // Module ID: 4336
 // Function ID: 4337
 // Name: gameFromServer
-// Dependencies: [4326, 676, 4329, 687, 4337, 595, 500, 4338, 589, 11, 1351, 1935, 698, 3974, 709, 2]
+// Dependencies: [4326, 676, 4329, 687, 4337, 595, 500, 4338, 589, 11, 1370, 1954, 698, 3993, 709, 2]
 
 // Module 4336 (gameFromServer)
 import { createExecutable } from "createExecutable";
@@ -255,13 +255,13 @@ prototype["findGame"] = function findGame(nextResult) {
     }
     if (null != nextResult.exePath) {
       let parts = nextResult.exePath.split("/");
-      let found = parts.filter(_require(1351).isNotNullish);
+      let found = parts.filter(_require(1370).isNotNullish);
       const gameByExecutable = self.getGameByExecutable(found.pop());
       if (null != gameByExecutable) {
         return gameByExecutable;
       } else {
         const parts1 = nextResult.exePath.split("/");
-        const found1 = parts1.filter(tmp15(1351).isNotNullish);
+        const found1 = parts1.filter(tmp15(1370).isNotNullish);
         const substr = found1.slice(-2);
         const gameByExecutable1 = self.getGameByExecutable(substr.join("/"));
         if (null != gameByExecutable1) {
@@ -578,7 +578,7 @@ prototype["shouldReport"] = function shouldReport(name) {
     if (tmp3) {
       tmp3 = null != obj[name.name];
     }
-    const ShowCurrentGame = require(3974) /* explicitContentFromProto */.ShowCurrentGame;
+    const ShowCurrentGame = require(3993) /* explicitContentFromProto */.ShowCurrentGame;
     let setting = ShowCurrentGame.getSetting();
     if (setting) {
       setting = !c13;

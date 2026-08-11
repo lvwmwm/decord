@@ -1,7 +1,7 @@
 // Module ID: 4378
 // Function ID: 4379
 // Name: DeviceTypes
-// Dependencies: [4351, 1903, 4364, 4379, 4387, 589, 12, 709, 2]
+// Dependencies: [4351, 1922, 4364, 4379, 4387, 589, 12, 709, 2]
 
 // Module 4378 (DeviceTypes)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";

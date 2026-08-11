@@ -1,7 +1,7 @@
 // Module ID: 5314
 // Function ID: 5315
 // Name: HeaderBackground
-// Dependencies: [19, 17, 21, 1481]
+// Dependencies: [19, 17, 21, 1500]
 // Exports: HeaderBackground
 
 // Module 5314 (HeaderBackground)
@@ -20,7 +20,7 @@ export const HeaderBackground = function HeaderBackground(style) {
   let colors;
   let dark;
   const merged = Object.assign(style, Object.create(null));
-  let obj = require(1481) /* createStandardNavigationFactories */;
+  let obj = require(1500) /* createStandardNavigationFactories */;
   const theme = obj.useTheme();
   ({ colors, dark } = theme);
   obj = { style: items };

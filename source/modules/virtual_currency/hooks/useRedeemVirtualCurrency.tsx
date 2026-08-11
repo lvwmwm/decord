@@ -1,10 +1,10 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9432
+// Function ID: 9433
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 4286, 9427, 3969, 5864, 3962, 9425, 1236, 2]
+// Dependencies: [5, 32, 19, 4286, 9433, 3988, 5864, 3981, 9431, 1236, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 9426 (useRedeemVirtualCurrency)
+// Module 9432 (useRedeemVirtualCurrency)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -30,7 +30,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   const isSubmitting = callback(callback2(false), 2);
   callback2 = isSubmitting[1];
   const tmp = callback(callback2(""), 2);
-  const enabled = entitlements(9427).useConfig({ location: "orb_checkout_modal" }).enabled;
+  const enabled = entitlements(9433).useConfig({ location: "orb_checkout_modal" }).enabled;
   order = undefined;
   if (order != null) {
     order = order.order;
@@ -98,7 +98,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
                   throwTypeErrorResult = dependencyMap;
                   throwTypeErrorResult = new.target;
                   throwTypeErrorResult = new.target;
-                  throwTypeErrorResult = new entitlements(3969)("Order not created yet");
+                  throwTypeErrorResult = new entitlements(3988)("Order not created yet");
                   throwTypeErrorResult = outer1_4;
                   throwTypeErrorResult = outer1_4(throwTypeErrorResult);
                   throwTypeErrorResult = outer1_5;
@@ -149,20 +149,20 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
                   obj4[0] = undefined;
                   return obj4;
                 } else {
-                  if (onSignFailure instanceof entitlements(3969)) {
+                  if (onSignFailure instanceof entitlements(3988)) {
                     throwTypeErrorResult = onSignFailure;
                   } else {
                     throwTypeErrorResult = onSignFailure;
                     throwTypeErrorResult = new.target;
                     throwTypeErrorResult = new.target;
-                    throwTypeErrorResult = new entitlements(3969)(onSignFailure);
+                    throwTypeErrorResult = new entitlements(3988)(onSignFailure);
                   }
                   throwTypeErrorResult = closure_9;
                   throwTypeErrorResult = closure_10;
                   const order = throwTypeErrorResult;
                   throwTypeErrorResult = callback;
                   throwTypeErrorResult = dependencyMap;
-                  let obj6 = callback(3962);
+                  let obj6 = callback(3981);
                   throwTypeErrorResult = onSignFailure;
                   if (obj6.isExpectedHttpClientError(onSignFailure)) {
                     throwTypeErrorResult = closure_9;
@@ -178,7 +178,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
                     throwTypeErrorResult = closure_10;
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = dependencyMap;
-                    let obj7 = callback(3962);
+                    let obj7 = callback(3981);
                     throwTypeErrorResult = onSignFailure;
                     const _Error3 = Error;
                     throwTypeErrorResult = closure_9;
@@ -475,7 +475,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   let closure_9 = tmp10;
   const tmp11 = order((skuId, loadId) => {
     const callback = arg2;
-    let obj = callback(9425);
+    let obj = callback(9431);
     obj = {
       skuId,
       loadId,

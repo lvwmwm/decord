@@ -1,10 +1,10 @@
-// Module ID: 15811
-// Function ID: 15812
+// Module ID: 15828
+// Function ID: 15829
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 676, 21, 4303, 712, 5734, 4299, 1236, 1974, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 5734, 4299, 1236, 1993, 2]
 // Exports: default
 
-// Module 15811 (ChannelDetailsLinkedLobby)
+// Module 15828 (ChannelDetailsLinkedLobby)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -56,7 +56,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
     intl = BPDKoA(1236).intl;
     BPDKoA = BPDKoA(1236).t.BPDKoA;
     const obj3 = { helpdeskArticle: null };
-    getArticleURL = importDefault(1974).getArticleURL;
+    getArticleURL = importDefault(1993).getArticleURL;
     obj3[0] = getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
     items1[2] = intl.format(BPDKoA, obj3);
     obj2[0] = items1;
@@ -70,6 +70,6 @@ export default function ChannelDetailsLinkedLobby(channel) {
     obj[1] = items2;
     closure_6(View, obj);
     const tmp5 = closure_5;
-    const tmp8 = importDefault(1974);
+    const tmp8 = importDefault(1993);
   }
 };

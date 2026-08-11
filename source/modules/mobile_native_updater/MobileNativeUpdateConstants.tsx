@@ -1,7 +1,7 @@
 // Module ID: 4285
 // Function ID: 4286
 // Name: UPDATE_CHECK_INTERVAL
-// Dependencies: [3883, 500, 1467, 1606, 2]
+// Dependencies: [3902, 500, 1486, 1625, 2]
 
 // Module 4285 (UPDATE_CHECK_INTERVAL)
 import importDefaultResult from "t";

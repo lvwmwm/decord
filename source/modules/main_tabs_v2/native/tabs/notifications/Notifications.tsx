@@ -1,10 +1,10 @@
-// Module ID: 15516
-// Function ID: 15517
+// Module ID: 15533
+// Function ID: 15534
 // Name: goBack
-// Dependencies: [19, 17, 9574, 1369, 21, 4303, 712, 4159, 7641, 8375, 15517, 5328, 4846, 1236, 15518, 4299, 15519, 8381, 15521, 5728, 5748, 6934, 5276, 5715, 15525, 15526, 11295, 4154, 1609, 15151, 4848, 4013, 2]
+// Dependencies: [19, 17, 9579, 1388, 21, 4303, 712, 4159, 7643, 8380, 15534, 5328, 4846, 1236, 15535, 4299, 15536, 8385, 15538, 5728, 5748, 6937, 5276, 5715, 15542, 15543, 11300, 4154, 1628, 15160, 4848, 4031, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 15516 (goBack)
+// Module 15533 (goBack)
 import importAllResult from "context";
 import { View } from "SavedMessageSortTypes";
 import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
@@ -38,7 +38,7 @@ class Notifications {
     }
     tmp = jsxs();
     tmp2 = require("context");
-    layoutEffect = defineProperty.useLayoutEffect(() => callback(6934).trackAppUIViewed(), []);
+    layoutEffect = defineProperty.useLayoutEffect(() => callback(6937).trackAppUIViewed(), []);
     callback = defineProperty.useCallback(() => {
       const navigation = callback(4159).getRootNavigationRef();
       if (null != navigation) {
@@ -138,10 +138,10 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   nestedInLaunchPad = nestedInLaunchPad.nestedInLaunchPad;
   let _require;
   const tmp = callback3();
-  let obj = _require(8375);
+  let obj = _require(8380);
   const isForLaterExperimentOn = obj.useIsForLaterExperimentOn("NativeNotifications");
   const ref = importAllResult.useRef(null);
-  const tmp8 = importDefault(15517)(ref);
+  const tmp8 = importDefault(15534)(ref);
   _require = tmp8;
   const items = [tmp8];
   const callback = importAllResult.useCallback(() => _undefined(outer1_6.TAKE_ACTION), items);
@@ -159,7 +159,7 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
     const intl = tmp5(1236).intl;
     obj1[1] = intl.string(tmp5(1236).t["13/7kX"]);
     obj1[2] = goBack;
-    obj1[3] = tmp12(tmp5(15518).LeftBackIconWithBadge, {});
+    obj1[3] = tmp12(tmp5(15535).LeftBackIconWithBadge, {});
     const items1 = [tmp12(tmp5(4846).PressableOpacity, obj1), , ];
     const obj2 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: null, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     obj2[2] = tmp.headerText;
@@ -173,19 +173,19 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
       const obj4 = { children: null };
       const obj5 = { ref: null, type: null, onOpen: null };
       obj5[0] = ref;
-      let tmp2Result = tmp2(15519);
-      obj5[1] = tmp5(8381).SavedMessageSortTypes.BOOKMARK;
+      let tmp2Result = tmp2(15536);
+      obj5[1] = tmp5(8385).SavedMessageSortTypes.BOOKMARK;
       obj5[2] = callback;
       const items2 = [tmp12(tmp2Result, obj5), ];
       const obj6 = { type: null, onOpen: null };
-      tmp2Result = tmp2(15519);
-      obj6[0] = tmp5(8381).SavedMessageSortTypes.REMINDER;
+      tmp2Result = tmp2(15536);
+      obj6[0] = tmp5(8385).SavedMessageSortTypes.REMINDER;
       obj6[1] = callback;
       items2[1] = tmp12(tmp2Result, obj6);
       obj4[0] = items2;
       tmp10Result = tmp10(closure_8, obj4);
     }
-    const items3 = [tmp10Result, tmp12(tmp2(15521), {})];
+    const items3 = [tmp10Result, tmp12(tmp2(15538), {})];
     obj3[1] = items3;
     items1[2] = tmp10(tmp11, obj3);
     obj[1] = items1;

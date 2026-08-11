@@ -1,7 +1,7 @@
 // Module ID: 4299
 // Function ID: 4300
 // Name: Text
-// Dependencies: [19, 17, 505, 21, 4036, 712, 12, 4300, 4301, 4303, 299, 4308, 2]
+// Dependencies: [19, 17, 505, 21, 4042, 712, 12, 4300, 4301, 4303, 299, 4308, 2]
 
 // Module 4299 (Text)
 import importAllResult from "noop";
@@ -11,10 +11,10 @@ import { jsx } from "jsxProd";
 import { TextVariantsFlat } from "TEXT_VARIANT";
 import useManaTextMigrationHighlight from "useManaTextMigrationHighlight";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4036";
+import importDefaultResult from "module_4042";
 
 const require = arg1;
-let closure_5 = require("module_4036").createAnimatedComponent(Text);
+let closure_5 = require("module_4042").createAnimatedComponent(Text);
 const keys = Object.keys(require("Themes").colors);
 let closure_6 = Object.fromEntries(keys.map((arg0) => {
   const items = [importDefault(12).kebabCase(arg0), arg0];

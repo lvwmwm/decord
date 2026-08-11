@@ -1,10 +1,10 @@
-// Module ID: 11497
-// Function ID: 11498
+// Module ID: 11500
+// Function ID: 11501
 // Name: AppInThisServer
-// Dependencies: [19, 17, 21, 4303, 712, 11475, 1351, 4299, 1236, 4846, 1348, 11438, 8663, 9549, 11443, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 11478, 1370, 4299, 1236, 4846, 1367, 11441, 8669, 9555, 11446, 2]
 // Exports: default
 
-// Module 11497 (AppInThisServer)
+// Module 11500 (AppInThisServer)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -18,10 +18,10 @@ const require = arg1;
 function AppInThisServer(onAppSelected) {
   onAppSelected = onAppSelected.onAppSelected;
   let application;
-  const tmp3 = application(1348)("AppLauncherInThisServer-native");
+  const tmp3 = application(1367)("AppLauncherInThisServer-native");
   const tmp4 = createCacheKey();
   application = onAppSelected.appItem.application;
-  let obj = onAppSelected(11438);
+  let obj = onAppSelected(11441);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
     accessible: true,
@@ -54,11 +54,11 @@ function AppInThisServer(onAppSelected) {
     obj = { iconSource: null, wrapperStyle: null, iconSize: 36 };
     obj[0] = appLauncherIconSource;
     obj[1] = tmp4.iconContainer;
-    tmp8 = callback(application(11443), obj);
+    tmp8 = callback(application(11446), obj);
   }
   const items1 = [tmp8, callback(onAppSelected(4299).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
   obj[5] = items1;
-  return closure_6(onAppSelected(8663).PressableScale, obj, application.id);
+  return closure_6(onAppSelected(8669).PressableScale, obj, application.id);
 }
 ({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -95,7 +95,7 @@ export default function InThisServerSection(arg0) {
     const substr = items.slice(0, 8);
     const mapped = substr.map((appItem) => outer1_5(outer1_8, { appItem, onAppSelected: closure_0 }, appItem.application.id));
     mapped1 = undefined;
-    const found = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    const found = mapped.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
     if (dependencyMap != null) {
       const applications = dependencyMap.applications;
       mapped1 = applications.map((arg0) => arg0);

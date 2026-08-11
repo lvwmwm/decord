@@ -1,10 +1,10 @@
-// Module ID: 13914
-// Function ID: 13915
+// Module ID: 13922
+// Function ID: 13923
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 8262, 7080, 676, 589, 709, 8510, 10133, 8511, 8512, 13915, 8268, 4202, 3974, 13263, 1236, 2]
+// Dependencies: [109, 5, 19, 8266, 7083, 676, 589, 709, 8516, 10138, 8517, 8518, 13923, 8273, 4202, 3993, 13271, 1236, 2]
 // Exports: default
 
-// Module 13914 (useUserProfileEditForm)
+// Module 13922 (useUserProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import ME from "ME";
 import noop from "noop";
@@ -32,7 +32,7 @@ export default function useUserProfileEditForm() {
     }
     return isSubmitting;
   });
-  const effect = React.useEffect(() => () => callback2(709).wait(callback(8510).resetAllPending), []);
+  const effect = React.useEffect(() => () => callback2(709).wait(callback(8516).resetAllPending), []);
   const items2 = [stateFromStores, pendingChanges];
   callback = React.useCallback(callback(function*() {
     if (bannerOriginalMd5 === 2) {
@@ -425,7 +425,7 @@ export default function useUserProfileEditForm() {
               if (outer1_1) {
                 c3 = 3;
               } else {
-                let obj2 = outer1_0(8510);
+                let obj2 = outer1_0(8516);
                 const obj1 = { avatarDecoration: null };
                 obj1[0] = outer1_0.pendingAvatarDecoration;
                 dependencyMap = 1;
@@ -445,7 +445,7 @@ export default function useUserProfileEditForm() {
               ok = ok.ok;
             }
             if (ok) {
-              obj = outer1_0(8510);
+              obj = outer1_0(8516);
               const result = obj.resetPendingAccountChanges();
             }
           }
@@ -459,7 +459,7 @@ export default function useUserProfileEditForm() {
         }
       }
     }), items3),
-    resetPending: pendingChanges(8510).resetAllPending
+    resetPending: pendingChanges(8516).resetAllPending
   };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);

@@ -1,7 +1,7 @@
 // Module ID: 5132
 // Function ID: 5133
 // Name: MAX_STAGE_TOPIC_LENGTH
-// Dependencies: [676, 1236, 1974, 2]
+// Dependencies: [676, 1236, 1993, 2]
 // Exports: getStagePublicInfoText
 
 // Module 5132 (MAX_STAGE_TOPIC_LENGTH)
@@ -31,7 +31,7 @@ export const getStagePublicInfoText = function getStagePublicInfoText() {
   items[1] = intl2.string(require(1236) /* getSystemLocale */.t.lF0IbB);
   const intl3 = require(1236) /* getSystemLocale */.intl;
   const obj = { articleURL: null };
-  obj[0] = importDefault(1974).getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES);
+  obj[0] = importDefault(1993).getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES);
   items[2] = intl3.format(require(1236) /* getSystemLocale */.t.q2jZ6N, obj);
   const intl4 = require(1236) /* getSystemLocale */.intl;
   items[3] = intl4.string(require(1236) /* getSystemLocale */.t.xfb7ZU);

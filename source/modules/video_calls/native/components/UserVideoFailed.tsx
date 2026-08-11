@@ -1,10 +1,10 @@
-// Module ID: 16216
-// Function ID: 16217
+// Module ID: 16230
+// Function ID: 16231
 // Name: UserVideoFailed
-// Dependencies: [17, 676, 21, 4303, 712, 9169, 10690, 4299, 1236, 4714, 10700, 4400, 9155, 2]
+// Dependencies: [17, 676, 21, 4303, 712, 9175, 10695, 4299, 1236, 4714, 10705, 4400, 9161, 2]
 // Exports: default
 
-// Module 16216 (UserVideoFailed)
+// Module 16230 (UserVideoFailed)
 import { View } from "get ActivityIndicator";
 import { VideoToggleState } from "ME";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function UserVideoFailed(arg0) {
   ({ style, avError } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   const tmp2 = callback2();
-  let obj = require(9169) /* mapped */;
+  let obj = require(9175) /* mapped */;
   obj = {};
   const merged1 = Object.assign(merged);
   const items = [tmp2.container, style];
@@ -41,7 +41,7 @@ export default function UserVideoFailed(arg0) {
   if (!removeSplashImage) {
     obj = { style: null };
     obj[0] = tmp2.placeholderImage;
-    tmp9 = callback(tmp3(10690).StreamFailed, obj);
+    tmp9 = callback(tmp3(10695).StreamFailed, obj);
   }
   const obj1 = { children: null };
   const items1 = [tmp9, ];

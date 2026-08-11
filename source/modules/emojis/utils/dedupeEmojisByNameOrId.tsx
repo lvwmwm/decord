@@ -1,7 +1,7 @@
 // Module ID: 5183
 // Function ID: 5184
 // Name: dedupeEmojisByNameOrId
-// Dependencies: [3942, 2]
+// Dependencies: [3961, 2]
 // Exports: default
 
 // Module 5183 (dedupeEmojisByNameOrId)
@@ -16,7 +16,7 @@ export default function dedupeEmojisByNameOrId(arg0) {
     if (null == nextResult.id) {
       let tmp5 = importDefault;
       let tmp6 = dependencyMap;
-      let obj2 = importDefault(3942);
+      let obj2 = importDefault(3961);
       let tmp7 = nextResult;
       let result = obj2.convertSurrogateToBase(tmp2.surrogates);
       if (result == null) {

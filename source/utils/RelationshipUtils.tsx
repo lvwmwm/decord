@@ -1,17 +1,17 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 16573
+// Function ID: 16574
 // Name: showPendingNotification
-// Dependencies: [676, 14703, 1416, 1236, 16563, 4313, 2]
+// Dependencies: [676, 14713, 1435, 1236, 16574, 4313, 2]
 // Exports: showAcceptedNotification, showPendingNotification
 
-// Module 16562 (showPendingNotification)
+// Module 16573 (showPendingNotification)
 import { FriendsSections } from "ME";
 
 const result = require("getAvatarURL").fileFinishedImporting("utils/RelationshipUtils.tsx");
 
 export const showPendingNotification = function showPendingNotification(user) {
   const intl = require(1236) /* getSystemLocale */.intl;
-  let obj = importDefault(14703);
+  let obj = importDefault(14713);
   const stringResult = intl.string(require(1236) /* getSystemLocale */.t["t3+Af3"]);
   obj = {
     omitViewTracking: true,
@@ -22,12 +22,12 @@ export const showPendingNotification = function showPendingNotification(user) {
     },
     isUserAvatar: true
   };
-  obj.showNotification(importDefault(1416).getUserAvatarURL(user), user.username, stringResult, {}, obj);
+  obj.showNotification(importDefault(1435).getUserAvatarURL(user), user.username, stringResult, {}, obj);
 };
 export const showAcceptedNotification = function showAcceptedNotification(user) {
   const _require = user;
   const intl = _require(1236).intl;
-  let obj = importDefault(14703);
+  let obj = importDefault(14713);
   const stringResult = intl.string(_require(1236).t.MYr3Ka);
   obj = {
     omitViewTracking: true,
@@ -40,5 +40,5 @@ export const showAcceptedNotification = function showAcceptedNotification(user) 
     },
     isUserAvatar: true
   };
-  obj.showNotification(importDefault(1416).getUserAvatarURL(user), user.username, stringResult, {}, obj);
+  obj.showNotification(importDefault(1435).getUserAvatarURL(user), user.username, stringResult, {}, obj);
 };

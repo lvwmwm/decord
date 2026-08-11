@@ -1,10 +1,10 @@
-// Module ID: 11357
-// Function ID: 11358
+// Module ID: 11362
+// Function ID: 11363
 // Name: useRowManager
-// Dependencies: [9, 11358, 4235, 11008, 500, 11014, 2]
+// Dependencies: [9, 11363, 4235, 11013, 500, 11019, 2]
 // Exports: default
 
-// Module 11357 (useRowManager)
+// Module 11362 (useRowManager)
 const result = require("GuildThemeSourcePreference").fileFinishedImporting("modules/messages/native/hooks/useRowManager.tsx");
 
 export default function useRowManager(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 11901
-// Function ID: 11902
+// Module ID: 11904
+// Function ID: 11905
 // Name: useDeactivateWarningText
-// Dependencies: [19, 4224, 1964, 1891, 589, 5357, 4194, 1236, 2316, 2]
+// Dependencies: [19, 4224, 1983, 1910, 589, 5357, 4194, 1236, 2335, 2]
 // Exports: default
 
-// Module 11901 (useDeactivateWarningText)
+// Module 11904 (useDeactivateWarningText)
 import noop from "noop";
 import handleInviteData from "handleInviteData";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

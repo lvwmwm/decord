@@ -1,7 +1,7 @@
 // Module ID: 5332
 // Function ID: 5333
 // Name: TableRowDivider
-// Dependencies: [19, 17, 5333, 21, 4303, 712, 5158, 1348, 4005, 2]
+// Dependencies: [19, 17, 5333, 21, 4303, 712, 5158, 1367, 4024, 2]
 // Exports: TableRowDivider
 
 // Module 5332 (TableRowDivider)
@@ -41,8 +41,8 @@ export const TableRowDivider = function TableRowDivider(adjustSpacingForIcon) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(4005) /* map */;
-  const tmp2 = callback(flag, importDefault(1348)("TableRowDivider"), obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_DIVIDER_PADDING));
+  let obj = require(4024) /* map */;
+  const tmp2 = callback(flag, importDefault(1367)("TableRowDivider"), obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_DIVIDER_PADDING));
   obj = { style: tmp2.container, children: <View {...obj} /> };
   obj = { style: tmp2.divider };
   return <View style={tmp2.divider} />;

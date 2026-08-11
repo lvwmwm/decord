@@ -1,7 +1,7 @@
 // Module ID: 5134
 // Function ID: 5135
 // Name: canJoinVoiceChannel
-// Dependencies: [1376, 676, 2]
+// Dependencies: [1395, 676, 2]
 // Exports: default
 
 // Module 5134 (canJoinVoiceChannel)

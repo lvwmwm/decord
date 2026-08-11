@@ -1,10 +1,10 @@
-// Module ID: 9365
-// Function ID: 9366
+// Module ID: 9371
+// Function ID: 9372
 // Name: shouldFetchStorefrontPromotions
-// Dependencies: [5, 3949, 5853, 7586, 9366, 9367, 676, 687, 709, 530, 5852, 2]
+// Dependencies: [5, 3968, 5853, 7588, 9372, 9373, 676, 687, 709, 530, 5852, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 9365 (shouldFetchStorefrontPromotions)
+// Module 9371 (shouldFetchStorefrontPromotions)
 import parseSkuIds from "parseSkuIds";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
 import "resetStoreState";

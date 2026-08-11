@@ -1,10 +1,10 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11311
+// Function ID: 11312
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 4303, 712, 4846, 3998, 4299, 1297, 8031, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4846, 4017, 4299, 1297, 8033, 2]
 // Exports: default
 
-// Module 11306 (AppealIngestionExternalLink)
+// Module 11311 (AppealIngestionExternalLink)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -45,7 +45,7 @@ export default function AppealIngestionExternalLink(children) {
   obj = { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: children.text };
   const items = [callback(require(4299) /* Text */.Text, obj), ];
   const obj1 = { source: null, color: null };
-  obj1[0] = require(8031) /* registerAsset */;
+  obj1[0] = require(8033) /* registerAsset */;
   obj1[1] = tmp.chevron.color;
   items[1] = callback(require(1297) /* Button */.Icon, obj1);
   obj[1] = items;

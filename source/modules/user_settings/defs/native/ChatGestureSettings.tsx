@@ -1,17 +1,17 @@
-// Module ID: 10446
-// Function ID: 10447
+// Module ID: 10451
+// Function ID: 10452
 // Name: useSwipeToReplySettingValue
-// Dependencies: [8082, 676, 1306, 1236, 698, 3974, 10447, 2]
+// Dependencies: [8084, 676, 1306, 1236, 698, 3993, 10452, 2]
 // Exports: getSwipeToReplySettingValue, useSwipeToReplySettingValue
 
-// Module 10446 (useSwipeToReplySettingValue)
+// Module 10451 (useSwipeToReplySettingValue)
 import ME from "ME";
 import createToggle from "createToggle";
 
 let c3;
 let c4;
 function useSwipeToReplySettingValue() {
-  const SwipeRightToLeftModeSetting = require(3974) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+  const SwipeRightToLeftModeSetting = require(3993) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
   let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.useSetting();
   if (SWIPE_RIGHT_TO_LEFT_REPLY === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
     SWIPE_RIGHT_TO_LEFT_REPLY = require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
@@ -37,7 +37,7 @@ const radio = createToggle.createRadio({
     obj = { enabled: NumberResult === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, location: obj };
     obj = { section: constants2.SETTINGS_TEXT_AND_IMAGES };
     obj.track(constants.USER_SETTINGS_SWIPE_TO_REPLY_TOGGLE, obj);
-    const SwipeRightToLeftModeSetting = require(3974) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+    const SwipeRightToLeftModeSetting = require(3993) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
     SwipeRightToLeftModeSetting.updateSetting(NumberResult);
   },
   useOptions: function useHasSwipeToReplySettingOptions() {
@@ -72,7 +72,7 @@ let obj = {
     obj = { enabled: NumberResult === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY, location: obj };
     obj = { section: constants2.SETTINGS_TEXT_AND_IMAGES };
     obj.track(constants.USER_SETTINGS_SWIPE_TO_REPLY_TOGGLE, obj);
-    const SwipeRightToLeftModeSetting = require(3974) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+    const SwipeRightToLeftModeSetting = require(3993) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
     SwipeRightToLeftModeSetting.updateSetting(NumberResult);
   },
   useOptions: function useHasSwipeToReplySettingOptions() {
@@ -94,7 +94,7 @@ const result = require("create").fileFinishedImporting("modules/user_settings/de
 export default radio;
 export { useSwipeToReplySettingValue };
 export const getSwipeToReplySettingValue = function getSwipeToReplySettingValue() {
-  const SwipeRightToLeftModeSetting = require(3974) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+  const SwipeRightToLeftModeSetting = require(3993) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
   let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.getSetting();
   if (SWIPE_RIGHT_TO_LEFT_REPLY === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
     SWIPE_RIGHT_TO_LEFT_REPLY = require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
