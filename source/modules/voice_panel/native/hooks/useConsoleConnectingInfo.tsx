@@ -1,10 +1,10 @@
-// Module ID: 16260
-// Function ID: 16261
+// Module ID: 16317
+// Function ID: 16318
 // Name: useConsoleConnectingInfo
-// Dependencies: [4317, 4318, 10773, 647, 16261, 12218, 16262, 16263, 2]
+// Dependencies: [4358, 4359, 10826, 647, 16318, 12281, 16319, 16320, 2]
 // Exports: default
 
-// Module 16260 (useConsoleConnectingInfo)
+// Module 16317 (useConsoleConnectingInfo)
 import set from "set";
 import handleUpdate from "handleUpdate";
 
@@ -12,7 +12,7 @@ let require = arg1;
 const result = require("useVoiceStateForRemoteSession").fileFinishedImporting("modules/voice_panel/native/hooks/useConsoleConnectingInfo.tsx");
 
 export default function useConsoleConnectingInfo(arg0) {
-  const tmp3 = importDefault(10773)();
+  const tmp3 = importDefault(10826)();
   const require = tmp3;
   let channelId;
   if (tmp3 != null) {
@@ -58,10 +58,10 @@ export default function useConsoleConnectingInfo(arg0) {
     channelId2 = stateFromStores.channelId;
   }
   obj[1] = channelId2 === arg0 || channelId === arg0;
-  obj[2] = importDefault(12218)(str);
-  const tmp9 = importDefault(16261)(stateFromStores);
-  obj[3] = tmp5(16262).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
-  obj[4] = importDefault(16263)(str);
+  obj[2] = importDefault(12281)(str);
+  const tmp9 = importDefault(16318)(stateFromStores);
+  obj[3] = tmp5(16319).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
+  obj[4] = importDefault(16320)(str);
   obj[5] = tmp9;
   return obj;
 };

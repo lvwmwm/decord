@@ -1,10 +1,10 @@
-// Module ID: 8861
-// Function ID: 8862
+// Module ID: 8900
+// Function ID: 8901
 // Name: PlayIcon
-// Dependencies: [19, 21, 712, 4023, 8862, 2]
+// Dependencies: [19, 21, 712, 4064, 8901, 2]
 // Exports: PlayIcon
 
-// Module 8861 (PlayIcon)
+// Module 8900 (PlayIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const PlayIcon = function PlayIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8862) /* registerAsset */;
+  obj[0] = require(8901) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

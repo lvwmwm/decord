@@ -1,10 +1,10 @@
-// Module ID: 9833
-// Function ID: 9834
+// Module ID: 9874
+// Function ID: 9875
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [19, 17, 21, 4303, 712, 4299, 4714, 1236, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 4340, 4754, 1236, 2]
 // Exports: NotificationSettingsMuteBanner, getMuteBannerSubtitleFromConfig
 
-// Module 9833 (NotificationSettingsMuteBanner)
+// Module 9874 (NotificationSettingsMuteBanner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,14 +26,14 @@ export const NotificationSettingsMuteBanner = function NotificationSettingsMuteB
   obj[0] = items;
   obj = { style: { flex: 1, marginRight: 8 }, children: null };
   obj = { variant: "text-md/semibold", color: "text-overlay-light", children: children.title };
-  const items1 = [callback(require(4299) /* Text */.Text, obj), callback(require(4299) /* Text */.Text, { variant: "text-xs/medium", color: "text-overlay-light", children: children.subtitle })];
+  const items1 = [callback(require(4340) /* Text */.Text, obj), callback(require(4340) /* Text */.Text, { variant: "text-xs/medium", color: "text-overlay-light", children: children.subtitle })];
   obj[1] = items1;
   const items2 = [callback2(View, obj), ];
   const obj2 = { text: null, onPress: null, variant: "primary-overlay" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[0] = intl.string(require(1236) /* getSystemLocale */.t.YqAjXy);
   obj2[1] = children.onPressUnmute;
-  items2[1] = callback(require(4714) /* Button */.Button, obj2);
+  items2[1] = callback(require(4754) /* Button */.Button, obj2);
   obj[1] = items2;
   return callback2(View, obj);
 };

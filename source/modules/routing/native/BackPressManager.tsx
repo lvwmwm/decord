@@ -1,15 +1,15 @@
-// Module ID: 13723
-// Function ID: 13724
+// Module ID: 13780
+// Function ID: 13781
 // Name: handleBackPress
-// Dependencies: [17, 8605, 4168, 1626, 1497, 4482, 500, 2]
+// Dependencies: [17, 8644, 4209, 1626, 1497, 4522, 500, 2]
 
-// Module 13723 (handleBackPress)
+// Module 13780 (handleBackPress)
 import "initialize";
 
 function handleBackPress() {
-  let obj = require(8605) /* updateContextMenuState */;
+  let obj = require(8644) /* updateContextMenuState */;
   obj.hideContextMenu();
-  const keyboardType = require(4168) /* useKeyboardType */.getKeyboardType();
+  const keyboardType = require(4209) /* useKeyboardType */.getKeyboardType();
   let flag = keyboardType !== require(1626) /* KeyboardTypes */.KeyboardTypes.SYSTEM;
   if (flag) {
     obj = { type: null };

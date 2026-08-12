@@ -1,10 +1,10 @@
-// Module ID: 8459
-// Function ID: 8460
+// Module ID: 8498
+// Function ID: 8499
 // Name: ChangeEmailFields
 // Dependencies: [644, 705, 2]
 // Exports: resetChangeEmailStore, setChangeEmailError, setEmailToken, useChangeEmailError
 
-// Module 8459 (ChangeEmailFields)
+// Module 8498 (ChangeEmailFields)
 import keys from "keys";
 
 let closure_2 = { errors: null, emailToken: null };

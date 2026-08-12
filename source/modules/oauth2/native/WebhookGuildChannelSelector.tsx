@@ -1,10 +1,10 @@
-// Module ID: 10537
-// Function ID: 10538
+// Module ID: 10578
+// Function ID: 10579
 // Name: styles
-// Dependencies: [5, 32, 19, 17, 1395, 3957, 1922, 21, 4303, 712, 4271, 8974, 2007, 1236, 4494, 10522, 4299, 1297, 7969, 2]
+// Dependencies: [5, 32, 19, 17, 1395, 3998, 1922, 21, 4344, 712, 4312, 9013, 2007, 1236, 4534, 10563, 4340, 1297, 8008, 2]
 // Exports: default
 
-// Module 10537 (styles)
+// Module 10578 (styles)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -58,7 +58,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
       const channels = tmp.channels;
       obj[1] = channels.map((id) => {
         const obj = { label: null, value: null };
-        obj[0] = callback(4494).computeChannelName(callback2(id), mergeGuildAvatar, closure_8);
+        obj[0] = callback(4534).computeChannelName(callback2(id), mergeGuildAvatar, closure_8);
         obj[1] = id.id;
         return obj;
       });

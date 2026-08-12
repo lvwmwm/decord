@@ -1,10 +1,10 @@
-// Module ID: 15619
-// Function ID: 15620
+// Module ID: 15675
+// Function ID: 15676
 // Name: useICYMIReloadHandler
-// Dependencies: [5, 19, 8927, 8919, 2]
+// Dependencies: [5, 19, 8966, 8958, 2]
 // Exports: useICYMIReloadHandler
 
-// Module 15619 (useICYMIReloadHandler)
+// Module 15675 (useICYMIReloadHandler)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import noop from "noop";
 
@@ -42,7 +42,7 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
             return obj;
           } else {
             let closure_0 = tmp2;
-            const ICYMIAnalytics = outer1_0(8927).ICYMIAnalytics;
+            const ICYMIAnalytics = outer1_0(8966).ICYMIAnalytics;
             let str = "NoDotShown";
             if (outer1_0) {
               str = "DotShown";
@@ -53,7 +53,7 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
             v0 = 1;
             dependencyMap = 1;
             let obj2 = { value: null, done: false };
-            obj2[0] = v0(8919).fetchDehydrated({ isReloading: true });
+            obj2[0] = v0(8958).fetchDehydrated({ isReloading: true });
             return obj2;
           }
         } else if (1 === tmp5) {
@@ -66,7 +66,7 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
             obj3[0] = arg1;
             return obj3;
           } else {
-            let obj5 = v0(8919);
+            let obj5 = v0(8958);
             v0 = 2;
             dependencyMap = 1;
             const obj4 = { value: null, done: false };
@@ -83,7 +83,7 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
             obj5[0] = arg1;
             return obj5;
           } else {
-            obj2 = v0(8919);
+            obj2 = v0(8958);
             v0 = 3;
             dependencyMap = 1;
             const obj6 = { value: null, done: false };
@@ -99,7 +99,7 @@ export const useICYMIReloadHandler = function useICYMIReloadHandler(showDot) {
           obj7[0] = arg1;
           return obj7;
         } else {
-          obj = v0(8919);
+          obj = v0(8958);
           const recommendedGuilds = obj.getRecommendedGuilds();
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };

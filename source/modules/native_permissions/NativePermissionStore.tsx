@@ -1,9 +1,9 @@
-// Module ID: 4866
-// Function ID: 4867
+// Module ID: 4906
+// Function ID: 4907
 // Name: initialize
-// Dependencies: [4516, 676, 589, 709, 698, 2]
+// Dependencies: [4556, 676, 589, 709, 698, 2]
 
-// Module 4866 (initialize)
+// Module 4906 (initialize)
 import { NativePermissionStates } from "NativePermissionStatus";
 import { AnalyticEvents } from "ME";
 import { DeviceSettingsStore } from "initialize";

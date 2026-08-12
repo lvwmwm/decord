@@ -1,10 +1,10 @@
-// Module ID: 14470
-// Function ID: 14471
+// Module ID: 14527
+// Function ID: 14528
 // Name: WhatYouLose
-// Dependencies: [5, 32, 19, 17, 3972, 21, 4303, 712, 14471, 3902, 1236, 5779, 1297, 4299, 14461, 5268, 14479, 5728, 5748, 7653, 4643, 4623, 4020, 3988, 4714, 14467, 14456, 14480, 14481, 589, 2]
+// Dependencies: [5, 32, 19, 17, 4013, 21, 4344, 712, 14528, 3943, 1236, 5818, 1297, 4340, 14518, 5307, 14536, 5767, 5787, 7692, 4683, 4663, 4061, 4029, 4754, 14524, 14513, 14537, 14538, 589, 2]
 // Exports: default
 
-// Module 14470 (WhatYouLose)
+// Module 14527 (WhatYouLose)
 import closure_4 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import notSupported from "notSupported";
@@ -24,11 +24,11 @@ function WhatYouLose(subscription) {
   let listingId;
   ({ listingId, guild } = subscription);
   const tmp = callback4();
-  let obj = importAll(14471);
-  let obj1 = importAll(14471);
-  let obj2 = importAll(14471);
-  let obj3 = importAll(14471);
-  let obj4 = importDefault(3902)(subscription.subscription.currentPeriodEnd);
+  let obj = importAll(14528);
+  let obj1 = importAll(14528);
+  let obj2 = importAll(14528);
+  let obj3 = importAll(14528);
+  let obj4 = importDefault(3943)(subscription.subscription.currentPeriodEnd);
   const intl = require(1236) /* getSystemLocale */.intl;
   const formatResult = obj4.format(c12);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -36,28 +36,28 @@ function WhatYouLose(subscription) {
   obj = { style: tmp.container, children: null };
   obj1 = { style: tmp.header, children: null };
   const formatResult1 = intl.format(require(1236) /* getSystemLocale */.t.EtAXzC, { subscriptionEndDate: obj4.format(c12) });
-  const items = [callback2(importDefault(5779), { guild }), callback2(require(1297) /* Button */.Spacer, { size: 16 }), ];
+  const items = [callback2(importDefault(5818), { guild }), callback2(require(1297) /* Button */.Spacer, { size: 16 }), ];
   obj2 = { children: null };
-  const items1 = [callback2(require(4299) /* Text */.Text, { variant: "text-md/semibold", color: "interactive-text-active", children: callback(obj3.useName(listingId), 1)[0] }), callback2(require(1297) /* Button */.Spacer, { size: 2 }), ];
+  const items1 = [callback2(require(4340) /* Text */.Text, { variant: "text-md/semibold", color: "interactive-text-active", children: callback(obj3.useName(listingId), 1)[0] }), callback2(require(1297) /* Button */.Spacer, { size: 2 }), ];
   obj3 = { variant: "text-sm/medium", color: "interactive-text-default", children: guild.name };
-  items1[2] = callback2(require(4299) /* Text */.Text, obj3);
+  items1[2] = callback2(require(4340) /* Text */.Text, obj3);
   obj2[0] = items1;
   items[2] = callback3(closure_7, obj2);
   obj1[1] = items;
-  const items2 = [callback3(closure_7, obj1), callback2(importDefault(14461), { style: { marginVertical: 16 } }), , , , , ];
+  const items2 = [callback3(closure_7, obj1), callback2(importDefault(14518), { style: { marginVertical: 16 } }), , , , , ];
   obj4 = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj4[2] = intl3.string(require(1236) /* getSystemLocale */.t["9SgXmT"]);
-  items2[2] = callback2(require(4299) /* Text */.Text, obj4);
+  items2[2] = callback2(require(4340) /* Text */.Text, obj4);
   items2[3] = callback2(require(1297) /* Button */.Spacer, { size: 12 });
   const items3 = [formatResult1, "\n"];
-  items2[4] = callback3(require(4299) /* Text */.Text, { variant: "text-sm/normal", color: "text-default", children: items3 });
-  items2[5] = callback2(require(4299) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.OVlNGT, obj) });
+  items2[4] = callback3(require(4340) /* Text */.Text, { variant: "text-sm/normal", color: "text-default", children: items3 });
+  items2[5] = callback2(require(4340) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.OVlNGT, obj) });
   const obj5 = { source: null, style: null };
   const formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.OVlNGT, obj);
-  obj5[0] = importDefault(14479);
+  obj5[0] = importDefault(14536);
   obj5[1] = tmp.cactus;
-  items2[6] = callback2(importDefault(5268), obj5);
+  items2[6] = callback2(importDefault(5307), obj5);
   obj[1] = items2;
   return callback3(closure_7, obj);
 }
@@ -74,8 +74,8 @@ function CancelSubscriptionButtonFooter(guild) {
   const tmp = createCacheKey();
   [tmp3, c3] = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
   const tmp2 = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
-  analyticsLocations = subscription(5728)(subscription(5748).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
-  let obj = subscription(7653);
+  analyticsLocations = subscription(5767)(subscription(5787).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
+  let obj = subscription(7692);
   cancelSubscription = obj.useCancelSubscription(subscription.id, subscription.isACOM);
   cancelSubscription = cancelSubscription.cancelSubscription;
   isPurchasedViaAppleGeneric = subscription.isPurchasedViaAppleGeneric;
@@ -121,9 +121,9 @@ function CancelSubscriptionButtonFooter(guild) {
             const obj2 = { guildName: null };
             obj2[0] = outer1_0.name;
             obj1[0] = intl2.formatToPlainString(outer1_0(1236).t.sBs7sh, obj2);
-            const obj15 = outer1_1(4643);
+            const obj15 = outer1_1(4683);
             const _HermesInternal = HermesInternal;
-            obj1[1] = "You can resubscribe any time before " + outer1_1(3902)(outer1_1.currentPeriodEnd).format(outer1_12) + ".";
+            obj1[1] = "You can resubscribe any time before " + outer1_1(3943)(outer1_1.currentPeriodEnd).format(outer1_12) + ".";
             const intl3 = outer1_0(1236).intl;
             obj1[2] = intl3.string(outer1_0(1236).t["3KZjFH"]);
             obj1[3] = outer1_0(1297).ButtonColors.RED;
@@ -154,7 +154,7 @@ function CancelSubscriptionButtonFooter(guild) {
                 obj5[0] = v0();
                 return obj5;
               } else if (outer1_1.isPurchasedViaDesktop) {
-                let obj7 = outer1_2(4623);
+                let obj7 = outer1_2(4663);
                 c4 = 4;
                 v0 = 1;
                 let obj6 = { value: null, done: false };
@@ -171,11 +171,11 @@ function CancelSubscriptionButtonFooter(guild) {
               dependencyMap = 0;
               outer1_1 = closure_2;
               dependencyMap(false);
-              obj6 = outer1_0(4020);
+              obj6 = outer1_0(4061);
               obj6.presentFailedToast(outer1_1.message);
-              let tmp38 = outer1_1 instanceof outer1_1(3988);
+              let tmp38 = outer1_1 instanceof outer1_1(4029);
               if (tmp38) {
-                tmp38 = code.code === outer1_0(3988).ErrorCodes.ALREADY_CANCELED;
+                tmp38 = code.code === outer1_0(4029).ErrorCodes.ALREADY_CANCELED;
               }
               if (tmp38) {
                 if (outer1_2 != null) {
@@ -201,7 +201,7 @@ function CancelSubscriptionButtonFooter(guild) {
                   obj7[0] = arg1;
                   return obj7;
                 } else {
-                  obj1 = outer1_2(4623);
+                  obj1 = outer1_2(4663);
                   c4 = 5;
                   v0 = 1;
                   const obj8 = { value: null, done: false };
@@ -226,7 +226,7 @@ function CancelSubscriptionButtonFooter(guild) {
                   outer1_2();
                 }
               } else {
-                obj4 = outer1_0(4020);
+                obj4 = outer1_0(4061);
                 const intl = outer1_0(1236).intl;
                 obj4.presentFailedToast(intl.string(outer1_0(1236).t.R0RpRX));
               }
@@ -260,7 +260,7 @@ function CancelSubscriptionButtonFooter(guild) {
   let intl = tmp10(1236).intl;
   obj[2] = intl.string(guild(1236).t.cM1H0K);
   obj[3] = callback;
-  obj[1] = closure_10(guild(4714).Button, obj);
+  obj[1] = closure_10(guild(4754).Button, obj);
   return closure_10(closure_7, obj);
 }
 function Content(subscription) {
@@ -268,8 +268,8 @@ function Content(subscription) {
   let listing;
   subscription = subscription.subscription;
   const tmp = createCacheKey();
-  ({ listing, guild } = importDefault(14467)(subscription));
-  let obj = require(14456) /* useFetchListingsForGuild */;
+  ({ listing, guild } = importDefault(14524)(subscription));
+  let obj = require(14513) /* useFetchListingsForGuild */;
   let id;
   if (guild != null) {
     id = guild.id;
@@ -289,7 +289,7 @@ function Content(subscription) {
       const obj1 = { style: null, asset: null };
       obj1[0] = tmp.heroImage;
       obj1[1] = cover_image_asset;
-      const items = [callback2(importDefault(14480), obj1), ];
+      const items = [callback2(importDefault(14537), obj1), ];
       const obj2 = { style: null, children: null };
       obj2[0] = tmp.body;
       const obj3 = { guild: null, listingId: null, subscription: null };
@@ -301,12 +301,12 @@ function Content(subscription) {
       obj4[2] = { textTransform: "uppercase" };
       const intl = tmp5(1236).intl;
       obj4[3] = intl.string(tmp5(1236).t.xyvN8p);
-      items1[2] = callback2(tmp5(4299).Text, obj4);
+      items1[2] = callback2(tmp5(4340).Text, obj4);
       items1[3] = callback2(tmp5(1297).Spacer, { size: 16 });
       const obj5 = { listingId: null, guildId: null };
       obj5[0] = listing.id;
       obj5[1] = guild.id;
-      items1[4] = callback2(importAll(14481).Content, obj5);
+      items1[4] = callback2(importAll(14538).Content, obj5);
       obj2[1] = items1;
       items[1] = callback3(closure_7, obj2);
       obj[0] = items;

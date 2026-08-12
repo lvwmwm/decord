@@ -1,9 +1,9 @@
-// Module ID: 9758
-// Function ID: 9759
+// Module ID: 9799
+// Function ID: 9800
 // Name: DesktopNotificationTypes
 // Dependencies: [676, 500, 589, 709, 2]
 
-// Module 9758 (DesktopNotificationTypes)
+// Module 9799 (DesktopNotificationTypes)
 import ME from "ME";
 import { DeviceSettingsStore } from "initialize";
 

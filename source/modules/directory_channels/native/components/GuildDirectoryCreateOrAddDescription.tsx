@@ -1,10 +1,10 @@
-// Module ID: 11694
-// Function ID: 11695
+// Module ID: 11751
+// Function ID: 11752
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4303, 11695, 1430, 11696, 11683, 11684, 4299, 1236, 11692, 2]
+// Dependencies: [5, 19, 17, 21, 4344, 11752, 1430, 11753, 11740, 11741, 4340, 1236, 11749, 2]
 // Exports: default
 
-// Module 11694 (GuildDirectoryCreateOrAddDescription)
+// Module 11751 (GuildDirectoryCreateOrAddDescription)
 import _createGuildFromTemplate from "_createGuildFromTemplate";
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -141,11 +141,11 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   let obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = directoryChannelId(1236).intl;
   obj1[4] = intl.string(directoryChannelId(1236).t["5bQcoa"]);
-  const items = [callback(directoryChannelId(4299).Text, obj1), ];
+  const items = [callback(directoryChannelId(4340).Text, obj1), ];
   let obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = directoryChannelId(1236).intl;
   obj2[3] = intl2.string(directoryChannelId(1236).t.Ie60Wc);
-  items[1] = callback(directoryChannelId(4299).Text, obj2);
+  items[1] = callback(directoryChannelId(4340).Text, obj2);
   obj[1] = items;
   const items1 = [callback2(_onSubmit, obj), ];
   let obj3 = {
@@ -165,8 +165,8 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   const intl3 = directoryChannelId(1236).intl;
   obj3[1] = intl3.string(directoryChannelId(1236).t.H9jxS1);
   obj3[2] = directoryChannelId;
-  items1[1] = callback(importDefault(11692), obj3);
+  items1[1] = callback(importDefault(11749), obj3);
   obj[2] = items1;
   obj[0] = callback2(closure_5, obj);
-  return callback(directoryChannelId(11684).GuildDirectoryAddModalScreen, obj);
+  return callback(directoryChannelId(11741).GuildDirectoryAddModalScreen, obj);
 };

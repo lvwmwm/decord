@@ -1,10 +1,10 @@
-// Module ID: 11764
-// Function ID: 11765
+// Module ID: 11821
+// Function ID: 11822
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1925, 21, 4303, 712, 5268, 1435, 4299, 1236, 2]
+// Dependencies: [19, 17, 1925, 21, 4344, 712, 5307, 1435, 4340, 1236, 2]
 // Exports: default
 
-// Module 11764 (ChannelAutocompleteEmojiUpsell)
+// Module 11821 (ChannelAutocompleteEmojiUpsell)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { EMOJI_URL_BASE_SIZE } from "set";
@@ -53,7 +53,7 @@ export default function ChannelAutocompleteEmojiUpsell(results) {
   const intl = _require(1236).intl;
   obj = { count: results.length };
   obj[3] = intl.format(_require(1236).t.uEky42, obj);
-  let items = [callback(_require(4299).Text, obj), ];
+  let items = [callback(_require(4340).Text, obj), ];
   const items1 = [tmp.emojis, { width: result + 16 }];
   items[1] = callback(View, { style: items1, children: mapped });
   obj[1] = items;

@@ -1,10 +1,10 @@
-// Module ID: 15425
-// Function ID: 15426
+// Module ID: 15481
+// Function ID: 15482
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 1910, 4499, 676, 9829, 8554, 1236, 13317, 2007, 9142, 5262, 6013, 13264, 11754, 4271, 9824, 11755, 5257, 2]
+// Dependencies: [5, 1910, 4539, 676, 9870, 8593, 1236, 13374, 2007, 9182, 5301, 6052, 13321, 11811, 4312, 9865, 11812, 5296, 2]
 // Exports: default
 
-// Module 15425 (getGuildsBarGuildMenuItems)
+// Module 15481 (getGuildsBarGuildMenuItems)
 import EnvelopeIcon from "EnvelopeIcon";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -15,10 +15,10 @@ let result = require("updateUserGuildSettingsInternal").fileFinishedImporting("m
 
 export default function getGuildsBarGuildMenuItems(arg0) {
   const _require = arg0;
-  let obj = _require(9829);
+  let obj = _require(9870);
   let result = obj.shouldShowUseNewNotificationSystem("GuildPopoutMenu");
   obj = { IconComponent: null, label: null, action: null };
-  obj[0] = _require(8554).EnvelopeIcon;
+  obj[0] = _require(8593).EnvelopeIcon;
   const intl = _require(1236).intl;
   obj[1] = intl.string(_require(1236).t.e6RscS);
   obj[2] = function action() {
@@ -78,14 +78,14 @@ export default function getGuildsBarGuildMenuItems(arg0) {
     })();
   };
   let items = [obj, , ];
-  obj = { IconComponent: _require(9142).BellIcon, label: null, action: null };
+  obj = { IconComponent: _require(9182).BellIcon, label: null, action: null };
   const intl2 = _require(1236).intl;
   obj[1] = intl2.string(_require(1236).t.HcoRu0);
   obj[2] = function action() {
     outer1_1(outer1_2[10]).open(closure_0);
   };
   items[1] = obj;
-  let obj1 = { IconComponent: _require(6013).SettingsIcon, label: null, action: null };
+  let obj1 = { IconComponent: _require(6052).SettingsIcon, label: null, action: null };
   const intl3 = _require(1236).intl;
   obj1[1] = intl3.string(_require(1236).t.PdRCRg);
   obj1[2] = function action() {
@@ -99,7 +99,7 @@ export default function getGuildsBarGuildMenuItems(arg0) {
     const splice = items.splice;
     const obj2 = { iconSource: null, label: null, action: null };
     if (isMutedResult) {
-      obj2[0] = tmp5(11755);
+      obj2[0] = tmp5(11812);
       const intl5 = tmp(1236).intl;
       obj2[1] = intl5.string(tmp(1236).t.De0BTC);
       obj2[2] = function action() {
@@ -110,7 +110,7 @@ export default function getGuildsBarGuildMenuItems(arg0) {
       };
       splice(1, 0, obj2);
     } else {
-      obj2[0] = tmp5(11754);
+      obj2[0] = tmp5(11811);
       const intl4 = tmp(1236).intl;
       obj2[1] = intl4.string(tmp(1236).t.vRzp7P);
       obj2[2] = function action() {

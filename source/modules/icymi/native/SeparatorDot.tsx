@@ -1,10 +1,10 @@
-// Module ID: 15644
-// Function ID: 15645
+// Module ID: 15700
+// Function ID: 15701
 // Name: SeparatorDot
-// Dependencies: [19, 17, 21, 4303, 712, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 2]
 // Exports: default
 
-// Module 15644 (SeparatorDot)
+// Module 15700 (SeparatorDot)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

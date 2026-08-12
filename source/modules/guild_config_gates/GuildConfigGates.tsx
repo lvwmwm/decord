@@ -1,10 +1,10 @@
-// Module ID: 16738
-// Function ID: 16739
+// Module ID: 16796
+// Function ID: 16797
 // Name: importDefaultResult1
-// Dependencies: [5, 16739, 676, 589, 530, 709, 2]
+// Dependencies: [5, 16797, 676, 589, 530, 709, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 16738 (importDefaultResult1)
+// Module 16796 (importDefaultResult1)
 import importDefaultResult1 from "hasLoaded";
 import { Endpoints } from "ME";
 import initialize from "initialize";

@@ -1,20 +1,20 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 17018
+// Function ID: 17019
 // Name: handleConnectionOpenSupplemental
-// Dependencies: [16961, 5261, 2]
+// Dependencies: [17019, 5300, 2]
 
-// Module 16960 (handleConnectionOpenSupplemental)
+// Module 17018 (handleConnectionOpenSupplemental)
 import "initialize";
 
 const require = arg1;
 function handleConnectionOpenSupplemental() {
-  require(16961) /* _openSafetyFlow */.openSafetyFlow();
+  require(17019) /* _openSafetyFlow */.openSafetyFlow();
 }
 function handleSafetyFlowsModalOpen() {
-  require(16961) /* _openSafetyFlow */.openSafetyFlow();
+  require(17019) /* _openSafetyFlow */.openSafetyFlow();
 }
 function handleUserRequiredActionUpdate(requiredAction) {
-  require(16961) /* _openSafetyFlow */.openSafetyFlow({ requiredAction: requiredAction.requiredAction });
+  require(17019) /* _openSafetyFlow */.openSafetyFlow({ requiredAction: requiredAction.requiredAction });
 }
 let prototype = function SafetyFlowsManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

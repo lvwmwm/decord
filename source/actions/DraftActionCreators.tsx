@@ -1,9 +1,9 @@
-// Module ID: 7237
-// Function ID: 7238
+// Module ID: 7276
+// Function ID: 7277
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 7237 (dispatcher)
+// Module 7276 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/DraftActionCreators.tsx");
 
 export default {
@@ -25,6 +25,11 @@ export default {
   changeThreadSettings(id, draft) {
     let obj = importDefault(709);
     obj = { type: "THREAD_SETTINGS_DRAFT_CHANGE", channelId: id, draft };
+    obj.dispatch(obj);
+  },
+  changeScheduledMessage(channelId, draft) {
+    let obj = importDefault(709);
+    obj = { type: "SCHEDULED_MESSAGE_DRAFT_CHANGE", channelId, draft };
     obj.dispatch(obj);
   }
 };

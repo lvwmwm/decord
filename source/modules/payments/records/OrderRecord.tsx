@@ -1,9 +1,9 @@
-// Module ID: 6891
-// Function ID: 6892
+// Module ID: 6930
+// Function ID: 6931
 // Name: createFromOrder
-// Dependencies: [1931, 3975, 6892, 6893, 2]
+// Dependencies: [1931, 4016, 6931, 6932, 2]
 
-// Module 6891 (createFromOrder)
+// Module 6930 (createFromOrder)
 import "toJS";
 import { BaseInvoiceRecord } from "createFromServer";
 import createFromServer from "createFromServer";

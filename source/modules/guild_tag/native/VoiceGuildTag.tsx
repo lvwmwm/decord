@@ -1,10 +1,10 @@
-// Module ID: 15266
-// Function ID: 15267
+// Module ID: 15323
+// Function ID: 15324
 // Name: VoiceGuildTagChiplet
-// Dependencies: [19, 17, 1922, 8054, 21, 500, 4303, 712, 589, 8271, 9258, 4299, 2]
+// Dependencies: [19, 17, 1922, 8093, 21, 500, 4344, 712, 589, 8310, 9298, 4340, 2]
 // Exports: default
 
-// Module 15266 (VoiceGuildTagChiplet)
+// Module 15323 (VoiceGuildTagChiplet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -43,7 +43,7 @@ export default function VoiceGuildTagChiplet(userId) {
   const items = [mergeGuildAvatar];
   const items1 = [userId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getUser(userId), items1);
-  let obj1 = userId(8271);
+  let obj1 = userId(8310);
   let primaryGuild;
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
@@ -56,17 +56,17 @@ export default function VoiceGuildTagChiplet(userId) {
       obj[0] = tmp.gapContainer;
       obj = { style: null, children: null };
       obj[0] = tmp.tagContainer;
-      const guildTagBadgeUrl = tmp2(8271).getGuildTagBadgeUrl(guildId, tmp7, GuildTagBadgeSize.SIZE_12);
+      const guildTagBadgeUrl = tmp2(8310).getGuildTagBadgeUrl(guildId, tmp7, GuildTagBadgeSize.SIZE_12);
       obj1 = { source: null, size: null };
       const obj2 = { uri: null };
       obj2[0] = guildTagBadgeUrl;
       obj1[0] = obj2;
       obj1[1] = GuildTagBadgeSize.SIZE_12;
-      const items2 = [callback(tmp2(9258).GuildTagBadge, obj1), ];
+      const items2 = [callback(tmp2(9298).GuildTagBadge, obj1), ];
       const obj3 = { variant: "text-xs/semibold", color: "text-default", style: null, children: null };
       obj3[2] = tmp.tag;
       obj3[3] = tag;
-      items2[1] = callback(tmp2(4299).Text, obj3);
+      items2[1] = callback(tmp2(4340).Text, obj3);
       obj[1] = items2;
       obj[1] = callback2(View, obj);
       return callback(View, obj);

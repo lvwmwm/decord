@@ -1,10 +1,10 @@
-// Module ID: 16446
-// Function ID: 16447
+// Module ID: 16503
+// Function ID: 16504
 // Name: _trackVoiceFeedback
-// Dependencies: [109, 5, 4351, 13088, 698, 2]
+// Dependencies: [109, 5, 4392, 13145, 698, 2]
 // Exports: default
 
-// Module 16446 (_trackVoiceFeedback)
+// Module 16503 (_trackVoiceFeedback)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import set from "set";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -76,7 +76,7 @@ function _trackVoiceFeedback() {
               let closure_21;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -103,7 +103,7 @@ function _trackVoiceFeedback() {
               c6 = 2;
               c7 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = callback(13088).getKrispModel();
+              obj2[0] = callback(13145).getKrispModel();
               return obj2;
             }
           } else if (arg0 === 1) {

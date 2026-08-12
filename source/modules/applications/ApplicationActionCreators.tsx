@@ -1,10 +1,10 @@
-// Module ID: 5729
-// Function ID: 5730
+// Module ID: 5768
+// Function ID: 5769
 // Name: fetchApplication
-// Dependencies: [5, 5730, 4326, 4341, 676, 709, 530, 589, 2]
+// Dependencies: [5, 5769, 4367, 4382, 676, 709, 530, 589, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 5729 (fetchApplication)
+// Module 5768 (fetchApplication)
 import dispatcher from "dispatcher";
 import set from "set";
 import createExecutable from "createExecutable";
@@ -71,7 +71,7 @@ function _fetchApplication() {
               dispatcher = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

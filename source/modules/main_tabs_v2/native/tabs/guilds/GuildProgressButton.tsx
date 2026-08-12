@@ -1,10 +1,10 @@
-// Module ID: 15337
-// Function ID: 15338
+// Module ID: 15394
+// Function ID: 15395
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 1367, 712, 9458, 11838, 11841, 7972, 15338, 1236, 11952, 2]
+// Dependencies: [19, 21, 1367, 712, 9498, 11895, 11898, 8011, 15395, 1236, 12009, 2]
 // Exports: default, getScaledGuildProgressButtonHeight
 
-// Module 15337 (GuildProgressButton)
+// Module 15394 (GuildProgressButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -16,7 +16,7 @@ export default function GuildProgressButton(guild) {
   let subtitle;
   guild = guild.guild;
   let completed;
-  let obj = guild(11838);
+  let obj = guild(11895);
   const guildProgressStep = obj.useGuildProgressStep(guild);
   completed = guildProgressStep.completed;
   const items = [completed, guild.id];
@@ -37,19 +37,19 @@ export default function GuildProgressButton(guild) {
   }, items1);
   obj = { icon: null, label: null, subLabel: null, onPress: null, trailing: null };
   obj = { source: null };
-  obj[0] = completed(15338);
-  obj[0] = jsx(guild(7972).RowButton.Icon, { source: null });
+  obj[0] = completed(15395);
+  obj[0] = jsx(guild(8011).RowButton.Icon, { source: null });
   const intl = guild(1236).intl;
   obj[1] = intl.string(guild(1236).t.o3HK3d);
   obj[2] = subtitle;
   obj[3] = callback;
-  obj[4] = jsx(completed(11952), { percent: percentComplete });
-  return jsx(guild(7972).RowButton, { source: null });
+  obj[4] = jsx(completed(12009), { percent: percentComplete });
+  return jsx(guild(8011).RowButton, { source: null });
 };
 export const getScaledGuildProgressButtonHeight = function getScaledGuildProgressButtonHeight(fontScale, isRefreshEnabled) {
   const refreshToken = require(1367) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(importDefault(712).modules.mobile.TABLE_ROW_PADDING, isRefreshEnabled);
   const obj = require(1367) /* useIsMobileVisualRefreshExperimentEnabled */;
-  const sum = refreshToken + require(9458) /* map */.scaleTextLineHeight("text-md/semibold", fontScale);
-  const obj2 = require(9458) /* map */;
-  return sum + 2 * require(9458) /* map */.scaleTextLineHeight("text-xs/medium", fontScale) + refreshToken;
+  const sum = refreshToken + require(9498) /* map */.scaleTextLineHeight("text-md/semibold", fontScale);
+  const obj2 = require(9498) /* map */;
+  return sum + 2 * require(9498) /* map */.scaleTextLineHeight("text-xs/medium", fontScale) + refreshToken;
 };

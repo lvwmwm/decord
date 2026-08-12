@@ -1,9 +1,9 @@
-// Module ID: 13752
-// Function ID: 13753
+// Module ID: 13809
+// Function ID: 13810
 // Name: items
-// Dependencies: [5, 1390, 1391, 4206, 676, 505, 13753, 8908, 10743, 10620, 13756, 692, 10619, 2]
+// Dependencies: [5, 1390, 1391, 4247, 676, 505, 13810, 8947, 10796, 10673, 13813, 692, 10672, 2]
 
-// Module 13752 (items)
+// Module 13809 (items)
 import closure_2 from "sum";
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -60,24 +60,24 @@ obj[1] = function handler(arg0) {
             if (null == id) {
               const obj1 = { errorCode: null };
               obj1[0] = outer1_6.INVALID_COMMAND;
-              const rPCError = new outer1_0(10743).RPCError(obj1, "No application.");
+              const rPCError = new outer1_0(10796).RPCError(obj1, "No application.");
               throw rPCError;
             } else {
               connectedActivityLocation = connectedActivityLocation.getConnectedActivityLocation();
               if (null == connectedActivityLocation) {
                 const obj2 = { errorCode: null };
                 obj2[0] = outer1_6.NO_ELIGIBLE_ACTIVITY;
-                const rPCError1 = new outer1_0(10743).RPCError(obj2, "No eligible activity for application. Ensure an activity was set using setActivity.");
+                const rPCError1 = new outer1_0(10796).RPCError(obj2, "No eligible activity for application. Ensure an activity was set using setActivity.");
                 throw rPCError1;
               } else {
                 const kind = connectedActivityLocation.kind;
-                if (outer1_0(10620).EmbeddedActivityLocationKind.GUILD_CHANNEL !== kind) {
-                  if (outer1_0(10620).EmbeddedActivityLocationKind.GUILD_CHANNEL_MESSAGE !== kind) {
-                    if (outer1_0(10620).EmbeddedActivityLocationKind.PRIVATE_CHANNEL !== kind) {
-                      if (outer1_0(10620).EmbeddedActivityLocationKind.PRIVATE_CHANNEL_MESSAGE !== kind) {
+                if (outer1_0(10673).EmbeddedActivityLocationKind.GUILD_CHANNEL !== kind) {
+                  if (outer1_0(10673).EmbeddedActivityLocationKind.GUILD_CHANNEL_MESSAGE !== kind) {
+                    if (outer1_0(10673).EmbeddedActivityLocationKind.PRIVATE_CHANNEL !== kind) {
+                      if (outer1_0(10673).EmbeddedActivityLocationKind.PRIVATE_CHANNEL_MESSAGE !== kind) {
                         const obj3 = { errorCode: null };
                         obj3[0] = outer1_6.NO_ELIGIBLE_ACTIVITY;
-                        const rPCError2 = new outer1_0(10743).RPCError(obj3, "Unsupported activity location");
+                        const rPCError2 = new outer1_0(10796).RPCError(obj3, "Unsupported activity location");
                         throw rPCError2;
                       }
                     }
@@ -85,17 +85,17 @@ obj[1] = function handler(arg0) {
                     if (null == channel) {
                       let obj4 = { errorCode: null };
                       obj4[0] = outer1_6.INVALID_CHANNEL;
-                      const rPCError3 = new outer1_0(10743).RPCError(obj4, "Invalid channel");
+                      const rPCError3 = new outer1_0(10796).RPCError(obj4, "Invalid channel");
                       throw rPCError3;
                     } else if (channel.type === outer1_0(692).ChannelTypes.DM) {
                       let obj5 = { errorCode: null };
                       obj5[0] = outer1_6.INVALID_CHANNEL;
-                      const rPCError4 = new outer1_0(10743).RPCError(obj5, "Cannot send invite to a DM");
+                      const rPCError4 = new outer1_0(10796).RPCError(obj5, "Cannot send invite to a DM");
                       throw rPCError4;
                     }
                   }
                   let c2 = 1;
-                  obj5 = outer1_0(10619);
+                  obj5 = outer1_0(10672);
                   const obj6 = { channelId: null, applicationId: null, userId: null, prefixedContent: null, location: "RPC_ACTIVITY_INVITE_USER", inviteAnalyticsMetadata: null };
                   obj6[0] = channel.id;
                   obj6[1] = id;
@@ -110,7 +110,7 @@ obj[1] = function handler(arg0) {
                   obj8[0] = obj5.sendEmbeddedActivityInviteUser(obj6);
                   return obj8;
                 }
-                obj4 = outer1_0(13756);
+                obj4 = outer1_0(13813);
                 channel = obj4.validateOpenInviteDialog(tmp69).channel;
               }
             }
@@ -119,7 +119,7 @@ obj[1] = function handler(arg0) {
           c2 = 0;
           const obj9 = { errorCode: null };
           obj9[0] = outer1_6.UNKNOWN_ERROR;
-          const rPCError5 = new outer1_0(10743).RPCError(obj9, "Failed to invite user");
+          const rPCError5 = new outer1_0(10796).RPCError(obj9, "Failed to invite user");
           throw rPCError5;
         } else if (arg0 === 1) {
           connectedActivityLocation = 3;

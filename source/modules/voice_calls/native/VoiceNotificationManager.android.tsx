@@ -1,9 +1,9 @@
-// Module ID: 13735
-// Function ID: 13736
+// Module ID: 13792
+// Function ID: 13793
 // Name: processColor
-// Dependencies: [32, 17, 1390, 4341, 4322, 1391, 4351, 4375, 3957, 1922, 676, 712, 7218, 7217, 10926, 9658, 4494, 1236, 4482, 2]
+// Dependencies: [32, 17, 1390, 4382, 4363, 1391, 4392, 4415, 3998, 1922, 676, 712, 7257, 7256, 10979, 9698, 4534, 1236, 4522, 2]
 
-// Module 13735 (processColor)
+// Module 13792 (processColor)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "getSystemLocale";
 import participantFromServer from "participantFromServer";
@@ -25,7 +25,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     VoiceNotificationManager = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/ZGVzaWdu", embeddedActivity: null, isStreaming: "ebe1bfed131aed04524ff151e2fd3860" };
+    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "HOSTED_FIELDS_FIELDS_EMPTY", embeddedActivity: "All fields are empty. Cannot tokenize empty card fields.", isStreaming: "ear_with_hearing_aid_tone5" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = outer1_9.getChannelId();
       const state = outer1_9.getState();
@@ -230,7 +230,7 @@ prototype["terminate"] = function terminate() {
 };
 let set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/ZGVzaWdu", embeddedActivity: null, isStreaming: "ebe1bfed131aed04524ff151e2fd3860" };
+set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "HOSTED_FIELDS_FIELDS_EMPTY", embeddedActivity: "All fields are empty. Cannot tokenize empty card fields.", isStreaming: "ear_with_hearing_aid_tone5" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = outer1_9.getChannelId();
   const state = outer1_9.getState();

@@ -1,10 +1,10 @@
-// Module ID: 11693
-// Function ID: 11694
+// Module ID: 11750
+// Function ID: 11751
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 1910, 3948, 5155, 11687, 676, 589, 4730, 11691, 2]
+// Dependencies: [5, 32, 19, 1910, 3989, 5195, 11744, 676, 589, 4770, 11748, 2]
 // Exports: default
 
-// Module 11693 (useAvailableAndAddedGuilds)
+// Module 11750 (useAvailableAndAddedGuilds)
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

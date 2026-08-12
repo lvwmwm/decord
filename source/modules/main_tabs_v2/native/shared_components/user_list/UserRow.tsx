@@ -1,9 +1,9 @@
-// Module ID: 9635
-// Function ID: 9636
+// Module ID: 9675
+// Function ID: 9676
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4295, 4341, 7124, 1391, 4390, 3957, 9625, 676, 21, 4303, 712, 4313, 38, 9636, 9637, 4020, 9638, 9249, 7125, 589, 1297, 4299, 4148, 9643, 5728, 8819, 1236, 9663, 4257, 4255, 4714, 1904, 8404, 4800, 8789, 2007, 8820, 9664, 7697, 4742, 8072, 4533, 9242, 9476, 9137, 9666, 9258, 8454, 9562, 5374, 2]
+// Dependencies: [19, 17, 4336, 4382, 7163, 1391, 4430, 3998, 9665, 676, 21, 4344, 712, 4354, 38, 9676, 9677, 4061, 9678, 9289, 7164, 589, 1297, 4340, 4189, 9683, 5767, 8858, 1236, 9703, 4298, 4296, 4754, 1904, 8443, 4840, 8828, 2007, 8859, 9704, 7736, 4782, 8111, 4573, 9282, 9516, 9177, 9706, 9298, 8493, 9602, 5413, 2]
 
-// Module 9635 (UserRowSubLabel)
+// Module 9675 (UserRowSubLabel)
 import importAllResult from "handleRelationshipAddError";
 import { View } from "presentAddedFriendToast";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -45,15 +45,15 @@ function UserRowSubLabel(arg0) {
         obj[1] = guildId;
         obj[2] = gameIcon.activityText;
         obj[3] = animate;
-        return callback(importDefault(9643), obj);
+        return callback(importDefault(9683), obj);
       }
     }
   }
   if (!isGameRelationship) {
     obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
-    obj[3] = tmp(4148).getUserTag(user);
-    callback(tmp(4299).Text, obj);
-    const tmpResult = tmp(4148);
+    obj[3] = tmp(4189).getUserTag(user);
+    callback(tmp(4340).Text, obj);
+    const tmpResult = tmp(4189);
   }
   if (null == stateFromStores) {
     const obj1 = { style: null };
@@ -75,7 +75,7 @@ function UserRowSubLabel(arg0) {
     const items1 = [callback(tmp(1297).Icon, obj3, stateFromStores.id), ];
     const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: null };
     obj5[3] = stateFromStores.name;
-    items1[1] = callback(tmp(4299).Text, obj5);
+    items1[1] = callback(tmp(4340).Text, obj5);
     obj2[1] = items1;
     closure_15(View, obj2);
     const tmp11 = closure_15;
@@ -387,17 +387,17 @@ const memoResult = importAllResult.memo(function UserRow(type) {
             const channel = outer1_8.getChannel(arg0);
             if (null != channel) {
               outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
-              const obj4 = outer1_1(outer1_2[15])(channel, false);
-              if (!obj4.inCall) {
-                obj4.onPress();
+              const obj2 = outer1_1(outer1_2[15])(channel, false);
+              if (!obj2.inCall) {
+                obj2.onPress();
               }
-              const tmp4 = outer1_1;
-              const tmp5 = outer1_2;
-              const tmp6 = outer1_1(outer1_2[14]);
+              const tmp = outer1_1;
+              const tmp2 = outer1_2;
+              const tmp3 = outer1_1(outer1_2[14]);
               const obj = { recipientIds: null };
               obj[0] = current.id;
               outer1_1(outer1_2[13]).openPrivateChannel(obj);
-              const tmp4Result = outer1_1(outer1_2[13]);
+              const tmpResult = outer1_1(outer1_2[13]);
             }
           });
         };
@@ -446,17 +446,17 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         const channel = outer1_8.getChannel(arg0);
         if (null != channel) {
           outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
-          const obj4 = outer1_1(outer1_2[15])(channel, false);
-          if (!obj4.inCall) {
-            obj4.onPress();
+          const obj2 = outer1_1(outer1_2[15])(channel, false);
+          if (!obj2.inCall) {
+            obj2.onPress();
           }
-          const tmp4 = outer1_1;
-          const tmp5 = outer1_2;
-          const tmp6 = outer1_1(outer1_2[14]);
+          const tmp = outer1_1;
+          const tmp2 = outer1_2;
+          const tmp3 = outer1_1(outer1_2[14]);
           const obj = { recipientIds: null };
           obj[0] = current.id;
           outer1_1(outer1_2[13]).openPrivateChannel(obj);
-          const tmp4Result = outer1_1(outer1_2[13]);
+          const tmpResult = outer1_1(outer1_2[13]);
         }
       });
     } else if (tmp.MESSAGE === actionName) {

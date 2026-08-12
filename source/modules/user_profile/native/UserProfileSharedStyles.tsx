@@ -1,10 +1,10 @@
-// Module ID: 8841
-// Function ID: 8842
+// Module ID: 8880
+// Function ID: 8881
 // Name: useSharedStyles
-// Dependencies: [5776, 4303, 712, 1367, 2]
+// Dependencies: [5815, 4344, 712, 1367, 2]
 // Exports: default
 
-// Module 8841 (useSharedStyles)
+// Module 8880 (useSharedStyles)
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
 import createCacheKey from "createCacheKey";
 

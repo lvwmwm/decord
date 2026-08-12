@@ -1,10 +1,10 @@
-// Module ID: 9867
-// Function ID: 9868
+// Module ID: 9908
+// Function ID: 9909
 // Name: RetryIcon
-// Dependencies: [19, 21, 712, 4023, 9868, 2]
+// Dependencies: [19, 21, 712, 4064, 9909, 2]
 // Exports: RetryIcon
 
-// Module 9867 (RetryIcon)
+// Module 9908 (RetryIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const RetryIcon = function RetryIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9868) /* registerAsset */;
+  obj[0] = require(9909) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

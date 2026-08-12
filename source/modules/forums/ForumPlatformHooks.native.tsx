@@ -1,12 +1,12 @@
-// Module ID: 12123
-// Function ID: 12124
-// Dependencies: [19, 4159, 4158, 8414, 2]
+// Module ID: 12180
+// Function ID: 12181
+// Dependencies: [19, 4200, 4199, 8453, 2]
 
-// Module 12123
+// Module 12180
 import noop from "noop";
 
 const require = arg1;
-let result = require("navigationToRootTabHelper").fileFinishedImporting("modules/forums/ForumPlatformHooks.native.tsx");
+let result = require("coerceMainRoute").fileFinishedImporting("modules/forums/ForumPlatformHooks.native.tsx");
 
 export default {
   useForumChannelSeenManager(guildId) {

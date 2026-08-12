@@ -1,10 +1,10 @@
-// Module ID: 11339
-// Function ID: 11340
+// Module ID: 11393
+// Function ID: 11394
 // Name: ModalFooter
-// Dependencies: [19, 17, 21, 4303, 2]
+// Dependencies: [19, 17, 21, 4344, 2]
 // Exports: ModalFooter
 
-// Module 11339 (ModalFooter)
+// Module 11393 (ModalFooter)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

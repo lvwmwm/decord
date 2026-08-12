@@ -1,8 +1,8 @@
-// Module ID: 9971
-// Function ID: 9972
-// Dependencies: [19, 17, 9932, 21, 4303, 712, 4299, 4638, 1297, 9972, 9973, 1236, 9974, 4846, 2]
+// Module ID: 10012
+// Function ID: 10013
+// Dependencies: [19, 17, 9973, 21, 4344, 712, 4340, 4678, 1297, 10013, 10014, 1236, 10015, 4886, 2]
 
-// Module 9971
+// Module 10012
 import { View } from "get ActivityIndicator";
 import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";
 import jsxProd from "jsxProd";
@@ -50,14 +50,14 @@ const memoResult = importAllResult.memo((withDescription) => {
   let obj = { style: tmp.header, children: null };
   obj = { style: tmp.headline, children: null };
   obj = { style: tmp.label, lineClamp: 1, variant: "text-md/bold", color: "mobile-text-heading-primary", children: stickerPack.name };
-  const items = [callback(require(4299) /* Text */.Text, obj), , ];
-  let obj3 = require(4638) /* getStickerExtensionFromFormatType */;
+  const items = [callback(require(4340) /* Text */.Text, obj), , ];
+  let obj3 = require(4678) /* getStickerExtensionFromFormatType */;
   let result = obj3.isStickerPackAnimated(stickerPack);
   if (result) {
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.iconContainer;
     const obj2 = { source: null, style: null, size: null, color: null };
-    obj2[0] = importDefault(9972);
+    obj2[0] = importDefault(10013);
     obj2[1] = tmp.animatedIcon;
     obj2[2] = tmp6(1297).Icon.Sizes.EXTRA_SMALL;
     obj2[3] = tmp.icon.color;
@@ -67,7 +67,7 @@ const memoResult = importAllResult.memo((withDescription) => {
   items[1] = result;
   obj3 = { style: tmp.iconContainer, children: null };
   const obj4 = { source: null, style: null, size: null, color: null };
-  obj4[0] = importDefault(9973);
+  obj4[0] = importDefault(10014);
   obj4[1] = tmp.premiumIcon;
   obj4[2] = require(1297) /* Button */.Icon.Sizes.EXTRA_SMALL;
   obj4[3] = tmp.icon.color;
@@ -82,21 +82,21 @@ const memoResult = importAllResult.memo((withDescription) => {
   if (flag) {
     const obj5 = { variant: "text-sm/medium", children: null };
     obj5[1] = stickerPack.description;
-    flag = tmp4(tmp6(4299).Text, obj5);
+    flag = tmp4(tmp6(4340).Text, obj5);
   }
   const obj6 = { children: null };
   items1[1] = flag;
   const obj7 = { lineClamp: 1, variant: "text-xs/medium", color: "text-default", children: null };
   const intl = tmp6(1236).intl;
   obj7[3] = intl.format(require(1236) /* getSystemLocale */.t["0S3JpO"], { numStickers: stickerPack.stickers.length });
-  items1[2] = callback(require(4299) /* Text */.Text, obj7);
+  items1[2] = callback(require(4340) /* Text */.Text, obj7);
   obj6[0] = items1;
   const tmp2Result = closure_5(closure_6, obj6);
   if (withBanner) {
     const obj9 = { stickerPack: null, containerStyle: null, style: null };
     obj9[0] = stickerPack;
     ({ bannerContainer: obj13[1], banner: obj13[2] } = tmp);
-    withBanner = tmp4(importDefault(9974), obj9);
+    withBanner = tmp4(importDefault(10015), obj9);
   }
   const children = [withBanner, ];
   if (null != onPress) {
@@ -105,7 +105,7 @@ const memoResult = importAllResult.memo((withDescription) => {
     obj10[0] = items3;
     obj10[1] = onPress;
     obj10[3] = tmp2Result;
-    let tmp4Result = tmp4(tmp6(4846).PressableOpacity, obj10);
+    let tmp4Result = tmp4(tmp6(4886).PressableOpacity, obj10);
   } else {
     const obj11 = { style: null, children: null };
     const items4 = [tmp.section, style];

@@ -1,10 +1,10 @@
-// Module ID: 5357
-// Function ID: 5358
+// Module ID: 5396
+// Function ID: 5397
 // Name: useGuildRoleMemberCounts
-// Dependencies: [19, 5358, 589, 5359, 2]
+// Dependencies: [19, 5397, 589, 5398, 2]
 // Exports: default
 
-// Module 5357 (useGuildRoleMemberCounts)
+// Module 5396 (useGuildRoleMemberCounts)
 import noop from "noop";
 import getRoleMemberCount from "getRoleMemberCount";
 

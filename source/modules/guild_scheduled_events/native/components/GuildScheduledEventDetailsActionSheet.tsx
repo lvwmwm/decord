@@ -1,10 +1,10 @@
-// Module ID: 8957
-// Function ID: 8958
+// Module ID: 8996
+// Function ID: 8997
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 1910, 6988, 1397, 21, 4303, 712, 1236, 5728, 5748, 589, 8958, 8960, 8961, 8959, 1628, 8962, 8963, 9147, 5397, 5399, 9149, 9150, 2]
+// Dependencies: [32, 19, 17, 1910, 7027, 1397, 21, 4344, 712, 1236, 5767, 5787, 589, 8997, 8999, 9000, 8998, 1628, 9001, 9002, 9187, 5436, 5438, 9189, 9190, 2]
 // Exports: default
 
-// Module 8957 (GuildScheduledEventDetailsActionSheet)
+// Module 8996 (GuildScheduledEventDetailsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import usePrimaryActionButtonType from "usePrimaryActionButtonType";
 import { View } from "useSafeAreaInsets";

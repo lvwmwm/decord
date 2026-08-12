@@ -1,10 +1,10 @@
-// Module ID: 15151
-// Function ID: 15152
+// Module ID: 15208
+// Function ID: 15209
 // Name: getActiveTabsRoute
-// Dependencies: [32, 19, 1391, 1979, 4126, 676, 1398, 4159, 4158, 4161, 2]
+// Dependencies: [32, 19, 1391, 1979, 4167, 676, 1398, 4200, 4199, 4202, 2]
 // Exports: default, isActiveTabsGuilds
 
-// Module 15151 (getActiveTabsRoute)
+// Module 15208 (getActiveTabsRoute)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -48,7 +48,7 @@ function getActiveTabsRoute(coerceTabsRouteResult) {
         obj[2] = coerceTabsRouteResult.params.params;
         return obj;
       } else {
-        obj = require(4159) /* getRootNavigationRef */;
+        obj = require(4200) /* getRootNavigationRef */;
         const rootNavigationRef = obj.getRootNavigationRef();
         let isReadyResult;
         if (rootNavigationRef != null) {
@@ -62,7 +62,7 @@ function getActiveTabsRoute(coerceTabsRouteResult) {
   }
 }
 function resolveBackgroundScreen(index) {
-  let obj = require(4158) /* navigationToRootTabHelper */;
+  let obj = require(4199) /* coerceMainRoute */;
   const coerceTabsRouteResult = obj.coerceTabsRoute(index.routes[0]);
   if (null == coerceTabsRouteResult) {
     return [];
@@ -71,7 +71,7 @@ function resolveBackgroundScreen(index) {
     if (null == tmp11) {
       return [];
     } else {
-      const coerceGuildsRouteResult = require(4158) /* navigationToRootTabHelper */.coerceGuildsRoute(tmp11);
+      const coerceGuildsRouteResult = require(4199) /* coerceMainRoute */.coerceGuildsRoute(tmp11);
       if (null == coerceGuildsRouteResult) {
         return [];
       } else {
@@ -111,7 +111,7 @@ function resolveBackgroundScreen(index) {
           BACKGROUND_SAVED = obj.BACKGROUND_SAVED;
         }
       }
-      const tmpResult = require(4158) /* navigationToRootTabHelper */;
+      const tmpResult = require(4199) /* coerceMainRoute */;
     }
   }
 }
@@ -120,7 +120,7 @@ function resolveChannelScreens(index, isChatLockedOpen) {
   for (let num = 0; num <= index.index; num = num + 1) {
     let tmp = arr2;
     let tmp2 = dependencyMap;
-    let obj = arr2(4158);
+    let obj = arr2(4199);
     let coerceChannelRouteResult = obj.coerceChannelRoute(index.routes[num]);
     let tmp4 = num;
     if (null != coerceChannelRouteResult) {
@@ -161,7 +161,7 @@ export default function useChannelScreensFromNavigation(arg0) {
   let dependencyMap;
   let tmp3;
   let closure_0 = arg0;
-  const tmp = importDefault(4161)();
+  const tmp = importDefault(4202)();
   importDefault = tmp;
   [tmp3, dependencyMap] = callback(React.useState(() => {
     const arr = outer1_13(store.getState(), closure_1);
@@ -246,18 +246,18 @@ export default function useChannelScreensFromNavigation(arg0) {
 export const ChannelScreenType = obj;
 export { getActiveTabsRoute };
 export const isActiveTabsGuilds = function isActiveTabsGuilds(state) {
-  const coerceTabsRouteResult = require(4158) /* navigationToRootTabHelper */.coerceTabsRoute(state.routes[0]);
+  const coerceTabsRouteResult = require(4199) /* coerceMainRoute */.coerceTabsRoute(state.routes[0]);
   if (null == coerceTabsRouteResult) {
     return false;
   } else {
     const tmp5 = getActiveTabsRoute(coerceTabsRouteResult);
     let tmp6 = null != tmp5;
     if (tmp6) {
-      tmp6 = null != tmp(4158).coerceGuildsRoute(tmp5);
-      const tmpResult = tmp(4158);
+      tmp6 = null != tmp(4199).coerceGuildsRoute(tmp5);
+      const tmpResult = tmp(4199);
     }
     return tmp6;
   }
-  const obj = require(4158) /* navigationToRootTabHelper */;
+  const obj = require(4199) /* coerceMainRoute */;
   tmp = require;
 };

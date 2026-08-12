@@ -1,10 +1,10 @@
-// Module ID: 10296
-// Function ID: 10297
+// Module ID: 10337
+// Function ID: 10338
 // Name: ContextMenuSubmenuActionSheetHeader
-// Dependencies: [19, 17, 21, 4303, 8982, 1236, 2]
+// Dependencies: [19, 17, 21, 4344, 9021, 1236, 2]
 // Exports: default
 
-// Module 10296 (ContextMenuSubmenuActionSheetHeader)
+// Module 10337 (ContextMenuSubmenuActionSheetHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -26,6 +26,6 @@ export default function ContextMenuSubmenuActionSheetHeader(onBack) {
     };
   }
   obj[1] = fn;
-  obj[1] = jsx(require(8982) /* ActionSheetHeaderPressableText */.ActionSheetHeaderPressableText, { label: null, onPress: null });
+  obj[1] = jsx(require(9021) /* ActionSheetHeaderPressableText */.ActionSheetHeaderPressableText, { label: null, onPress: null });
   return <View label={null} onPress={null} />;
 };

@@ -1,10 +1,10 @@
-// Module ID: 11811
-// Function ID: 11812
+// Module ID: 11868
+// Function ID: 11869
 // Name: SpamMessageRequestHamActionSheet
-// Dependencies: [32, 19, 17, 1922, 21, 4303, 712, 589, 11806, 4021, 1236, 8451, 4271, 5397, 5396, 5765, 7969, 4714, 2]
+// Dependencies: [32, 19, 17, 1922, 21, 4344, 712, 589, 11863, 4062, 1236, 8490, 4312, 5436, 5435, 5804, 8008, 4754, 2]
 // Exports: default
 
-// Module 11811 (SpamMessageRequestHamActionSheet)
+// Module 11868 (SpamMessageRequestHamActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "Button";
@@ -45,19 +45,19 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(recipientId.getRecipientId()));
-  let obj1 = require(11806) /* useMessageRequestActions */;
+  let obj1 = require(11863) /* useMessageRequestActions */;
   obj = {
     user: stateFromStores,
     onError() {
-      let obj = callback(4021);
+      let obj = callback(4062);
       obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
       const intl = recipientId(1236).intl;
       obj[1] = intl.string(recipientId(1236).t["EDYbS+"]);
-      obj[2] = callback(8451);
+      obj[2] = callback(8490);
       obj.open(obj);
     },
     onAcceptSuccess(arg0) {
-      callback(4271).hideActionSheet();
+      callback(4312).hideActionSheet();
     }
   };
   const messageRequestActions = obj1.useMessageRequestActions(obj);
@@ -71,14 +71,14 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   obj1 = { title: null, trailing: null, backgroundColor: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl.string(require(1236) /* getSystemLocale */.t["9ty6yc"]);
-  obj1[1] = callback(require(5765) /* ActionSheetCloseButton */.ActionSheetCloseButton, {
+  obj1[1] = callback(require(5804) /* ActionSheetCloseButton */.ActionSheetCloseButton, {
     onPress() {
       outer1_1(outer1_2[12]).hideActionSheet();
       dependencyMap();
     }
   });
   obj1[2] = tmp.header;
-  const items1 = [callback(require(5396) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj1), ];
+  const items1 = [callback(require(5435) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj1), ];
   const obj3 = { style: tmp.container, children: null };
   const obj4 = { style: tmp.switch, label: null, value: null, switchProps: null, onValueChange: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -88,7 +88,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   obj4[4] = function onValueChange(arg0) {
     return callback2(arg0);
   };
-  const items2 = [callback(require(7969) /* Form */.FormSwitchRow, obj4), ];
+  const items2 = [callback(require(8008) /* Form */.FormSwitchRow, obj4), ];
   const obj5 = { style: tmp.buttonContainer, children: null };
   const obj6 = {
     size: "md",
@@ -114,10 +114,10 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
     isAcceptLoading = isOptimisticAccepted;
   }
   obj6[4] = isAcceptLoading;
-  obj5[1] = callback(require(4714) /* Button */.Button, obj6);
+  obj5[1] = callback(require(4754) /* Button */.Button, obj6);
   items2[1] = callback(c5, obj5);
   obj3[1] = items2;
   items1[1] = closure_8(c5, obj3);
   obj[1] = items1;
-  return closure_8(require(5397) /* Background */.BottomSheet, obj);
+  return closure_8(require(5436) /* Background */.BottomSheet, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 6135
-// Function ID: 6136
+// Module ID: 6174
+// Function ID: 6175
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6135 (metadata)
+// Module 6174 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BountiesPosterSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/dc47a5a9e94ab053b818ec5dba64e489ea3e37b947bec10f4be6ed4a806d7164.png";

@@ -1,7 +1,7 @@
 // Module ID: 1301
 // Function ID: 1302
 // Name: semanticColor
-// Dependencies: [1302, 500, 712, 4283, 1363, 2]
+// Dependencies: [1302, 500, 712, 4324, 1363, 2]
 // Exports: getThemedRippleConfig
 
 // Module 1301 (semanticColor)

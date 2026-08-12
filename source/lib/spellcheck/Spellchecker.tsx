@@ -1,10 +1,10 @@
-// Module ID: 5346
-// Function ID: 5347
+// Module ID: 5385
+// Function ID: 5386
 // Name: _install
-// Dependencies: [5, 32, 1994, 3, 3931, 5347, 5348, 5349, 5350, 1370, 12, 1906, 2]
+// Dependencies: [5, 32, 1994, 3, 3972, 5386, 5387, 5388, 5389, 1370, 12, 1906, 2]
 // Exports: install
 
-// Module 5346 (_install)
+// Module 5385 (_install)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import _getSystemLocale from "_getSystemLocale";

@@ -1,10 +1,10 @@
-// Module ID: 10560
-// Function ID: 10561
+// Module ID: 10601
+// Function ID: 10602
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 4303, 10504, 10561, 4299, 5328, 4712, 4714, 1236, 2]
+// Dependencies: [19, 17, 21, 4344, 10545, 10602, 4340, 5367, 4752, 4754, 1236, 2]
 // Exports: TwoWayLinkError
 
-// Module 10560 (TwoWayLinkError)
+// Module 10601 (TwoWayLinkError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,12 +26,12 @@ export const TwoWayLinkError = function TwoWayLinkError(arg0) {
   let onRetry;
   let title;
   ({ onClose, title, body, onRetry } = arg0);
-  let obj = require(10504) /* styles */;
+  let obj = require(10545) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container, children: null };
   obj = { style: twoWayLinkStyles.content, children: null };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(10561), style: callback3().image }), callback(require(4299) /* Text */.Text, { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title }), callback(require(4299) /* Text */.Text, { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body })];
+  const items = [callback(closure_3, { source: importDefault(10602), style: callback3().image }), callback(require(4340) /* Text */.Text, { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title }), callback(require(4340) /* Text */.Text, { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body })];
   obj[1] = items;
   const items1 = [callback2(closure_4, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
@@ -40,15 +40,15 @@ export const TwoWayLinkError = function TwoWayLinkError(arg0) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj6[2] = intl.string(require(1236) /* getSystemLocale */.t["5911Lb"]);
   obj6[3] = onRetry;
-  const items2 = [callback(require(4714) /* Button */.Button, obj6), ];
+  const items2 = [callback(require(4754) /* Button */.Button, obj6), ];
   const obj7 = { size: "lg", variant: "secondary", text: null, onPress: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj7[2] = intl2.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
   obj7[3] = onClose;
-  items2[1] = callback(require(4714) /* Button */.Button, obj7);
+  items2[1] = callback(require(4754) /* Button */.Button, obj7);
   obj5[3] = items2;
-  obj4[2] = callback2(require(4712) /* Stack */.Stack, obj5);
-  items1[1] = callback(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  obj4[2] = callback2(require(4752) /* Stack */.Stack, obj5);
+  items1[1] = callback(require(5367) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

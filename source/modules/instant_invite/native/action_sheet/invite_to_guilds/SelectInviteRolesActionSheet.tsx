@@ -1,10 +1,10 @@
-// Module ID: 16897
-// Function ID: 16898
+// Module ID: 16955
+// Function ID: 16956
 // Name: SelectInviteRolesActionSheet
-// Dependencies: [32, 19, 17, 4295, 21, 4303, 589, 9633, 8529, 4271, 12, 7969, 1297, 4299, 4846, 1236, 5396, 5764, 8532, 2]
+// Dependencies: [32, 19, 17, 4336, 21, 4344, 589, 9673, 8568, 4312, 12, 8008, 1297, 4340, 4886, 1236, 5435, 5803, 8571, 2]
 // Exports: default
 
-// Module 16897 (SelectInviteRolesActionSheet)
+// Module 16955 (SelectInviteRolesActionSheet)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "ActionSheet";

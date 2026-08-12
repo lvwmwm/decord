@@ -1,10 +1,10 @@
-// Module ID: 8314
-// Function ID: 8315
+// Module ID: 8353
+// Function ID: 8354
 // Name: _fetchProfile
-// Dependencies: [5, 1930, 1922, 676, 677, 3, 530, 709, 5127, 663, 38, 4202, 2]
+// Dependencies: [5, 1930, 1922, 676, 677, 3, 530, 709, 5167, 663, 38, 4243, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8314 (_fetchProfile)
+// Module 8353 (_fetchProfile)
 import timestamp from "timestamp";
 import createdAt from "createdAt";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -81,7 +81,7 @@ function _fetchProfile() {
                 let closure_12;
                 c7 = 1;
                 logger = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "ct", done: true };
               }
             } else if (1 === tmp7) {
               if (arg0 === 1) {
@@ -161,7 +161,7 @@ function _fetchProfile() {
               }
               let obj7 = callback2(709);
               obj7 = { type: "USER_PROFILE_FETCH_FAILURE", apiError: null, fetchStartedAt: null, userId: null, guildId: null };
-              const aPIError = new callback(4202).APIError(closure_13);
+              const aPIError = new callback(4243).APIError(closure_13);
               obj7[1] = aPIError;
               obj7[2] = closure_10;
               obj7[3] = callback;
@@ -380,7 +380,7 @@ export const acceptAgreements = function acceptAgreements() {
   if (arg1 === undefined) {
     flag2 = true;
   }
-  let obj = importDefault(5127);
+  let obj = importDefault(5167);
   obj = { url: Endpoints.USER_AGREEMENTS, trackedActionData: null, body: null, oldFormErrors: true, rejectWithError: null };
   obj = { event: require(663) /* ImpressionNames */.NetworkActionNames.USER_ACCEPT_AGREEMENTS };
   obj[1] = obj;

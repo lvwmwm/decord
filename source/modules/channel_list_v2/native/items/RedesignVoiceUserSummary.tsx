@@ -1,10 +1,10 @@
-// Module ID: 15272
-// Function ID: 15273
+// Module ID: 15329
+// Function ID: 15330
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 1979, 4376, 21, 589, 4486, 15271, 2]
+// Dependencies: [19, 1979, 4416, 21, 589, 4526, 15328, 2]
 // Exports: default
 
-// Module 15272 (RedesignVoiceUserSummary)
+// Module 15329 (RedesignVoiceUserSummary)
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import getVoiceStatesForGuild from "getVoiceStatesForGuild";

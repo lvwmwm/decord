@@ -1,9 +1,9 @@
-// Module ID: 4295
-// Function ID: 4296
+// Module ID: 4336
+// Function ID: 4337
 // Name: maybeApplyNoTextColorForLightCustomTheme
-// Dependencies: [109, 1303, 1302, 1340, 676, 4296, 4297, 3993, 589, 595, 1363, 709, 2]
+// Dependencies: [109, 1303, 1302, 1340, 676, 4337, 4338, 4034, 589, 595, 1363, 709, 2]
 
-// Module 4295 (maybeApplyNoTextColorForLightCustomTheme)
+// Module 4336 (maybeApplyNoTextColorForLightCustomTheme)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import initialize from "initialize";
 import handleThemeChange from "handleThemeChange";
@@ -25,7 +25,7 @@ function maybeApplyNoTextColorForLightCustomTheme() {
       tmp3 = theme.theme !== ThemeTypes.LIGHT;
     }
     if (!tmp3) {
-      const ClientThemeSettings = require(3993) /* explicitContentFromProto */.ClientThemeSettings;
+      const ClientThemeSettings = require(4034) /* explicitContentFromProto */.ClientThemeSettings;
       const setting = ClientThemeSettings.getSetting();
       let tmp10 = null != setting.backgroundGradientPresetId;
       if (!tmp10) {
@@ -244,7 +244,7 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
     if (null != obj.messageGroupSpacing) {
       let messageGroupSpacing = obj.messageGroupSpacing;
     } else {
-      const MessageDisplayCompact = require(3993) /* explicitContentFromProto */.MessageDisplayCompact;
+      const MessageDisplayCompact = require(4034) /* explicitContentFromProto */.MessageDisplayCompact;
       messageGroupSpacing = MessageDisplayCompact.getSetting() ? closure_11 : closure_12;
     }
     return messageGroupSpacing;
@@ -253,14 +253,14 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
 });
 Object.defineProperty(prototype, "isMessageGroupSpacingIncreased", {
   get: function isMessageGroupSpacingIncreased() {
-    const MessageDisplayCompact = require(3993) /* explicitContentFromProto */.MessageDisplayCompact;
+    const MessageDisplayCompact = require(4034) /* explicitContentFromProto */.MessageDisplayCompact;
     return this.messageGroupSpacing > (MessageDisplayCompact.getSetting() ? closure_11 : closure_12);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isMessageGroupSpacingDecreased", {
   get: function isMessageGroupSpacingDecreased() {
-    const MessageDisplayCompact = require(3993) /* explicitContentFromProto */.MessageDisplayCompact;
+    const MessageDisplayCompact = require(4034) /* explicitContentFromProto */.MessageDisplayCompact;
     return this.messageGroupSpacing < (MessageDisplayCompact.getSetting() ? closure_11 : closure_12);
   },
   set: undefined
@@ -603,7 +603,7 @@ const accessibilityStore = new AccessibilityStore(require("dispatcher"), {
           obj = {};
           const merged = Object.assign(obj);
           obj.zoom = zoom.zoom;
-          importDefault(4297).setZoomFactor(obj.zoom);
+          importDefault(4338).setZoomFactor(obj.zoom);
         }
       }
     }
@@ -622,8 +622,8 @@ const accessibilityStore = new AccessibilityStore(require("dispatcher"), {
     }
     if (obj.zoom !== Accessibility.ZOOM_DEFAULT) {
       obj.zoom = tmp.ZOOM_DEFAULT;
-      importDefault(4297).setZoomFactor(obj.zoom);
-      const obj2 = importDefault(4297);
+      importDefault(4338).setZoomFactor(obj.zoom);
+      const obj2 = importDefault(4338);
     }
   },
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: function handleEnableKeyboardMode() {

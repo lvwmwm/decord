@@ -1,9 +1,9 @@
-// Module ID: 16202
-// Function ID: 16203
+// Module ID: 16259
+// Function ID: 16260
 // Name: VoicePanelSettingsOverviewHeader
-// Dependencies: [19, 1390, 4316, 10663, 1218, 1391, 4351, 3948, 1922, 4376, 676, 4321, 9217, 21, 4303, 712, 589, 16203, 4494, 9234, 9196, 5781, 4299, 12215, 1236, 4823, 7, 4021, 16200, 8929, 5374, 5380, 14758, 8020, 5381, 709, 5768, 3993, 9161, 4497, 8018, 10850, 4271, 16204, 2007, 9219, 9239, 16205, 16193, 16152, 10409, 9183, 16206, 6013, 16207, 9188, 16208, 7716, 10829, 9726, 9727, 2]
+// Dependencies: [19, 1390, 4357, 10716, 1218, 1391, 4392, 3989, 1922, 4416, 676, 4362, 9257, 21, 4344, 712, 589, 16260, 4534, 9274, 9236, 5820, 4340, 12278, 1236, 4863, 7, 4062, 16257, 8968, 5413, 5419, 14816, 8059, 5420, 709, 5807, 4034, 9201, 4537, 8057, 10903, 4312, 16261, 2007, 9259, 9279, 16262, 16250, 16209, 10450, 9223, 16263, 6052, 16264, 9228, 16265, 7755, 10882, 9767, 9768, 2]
 
-// Module 16202 (VoicePanelSettingsOverviewHeader)
+// Module 16259 (VoicePanelSettingsOverviewHeader)
 import importAllResult from "useIsSecureFramesUIEnabled";
 import participantFromServer from "participantFromServer";
 import getParticipants from "getParticipants";
@@ -116,13 +116,13 @@ function ShareActivityLogsButton() {
   }, []);
   let obj = { onPress: callback, icon: null, label: null, trailing: null };
   obj = { IconComponent: null, source: null };
-  obj[0] = require(14758) /* WrenchIcon */.WrenchIcon;
-  obj[1] = importDefault(8020);
-  obj[1] = callback(require(5380) /* TableRowIcon */.TableRowIcon, obj);
+  obj[0] = require(14816) /* WrenchIcon */.WrenchIcon;
+  obj[1] = importDefault(8059);
+  obj[1] = callback(require(5419) /* TableRowIcon */.TableRowIcon, obj);
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.iQzQs3);
-  obj[3] = callback(require(5381) /* TableRowArrow */.TableRowArrow, {});
-  return callback(require(5374) /* TableRowInner */.TableRow, obj);
+  obj[3] = callback(require(5420) /* TableRowArrow */.TableRowArrow, {});
+  return callback(require(5413) /* TableRowInner */.TableRow, obj);
 }
 function ActivityDebugToggle() {
   let obj = require(589) /* initialize */;
@@ -135,16 +135,16 @@ function ActivityDebugToggle() {
   }, []);
   obj = { icon: null, accessibilityHint: null, value: null, onValueChange: null, label: null };
   obj = { IconComponent: null, source: null };
-  obj[0] = require(14758) /* WrenchIcon */.WrenchIcon;
-  obj[1] = importDefault(8020);
-  obj[0] = callback(require(5380) /* TableRowIcon */.TableRowIcon, obj);
+  obj[0] = require(14816) /* WrenchIcon */.WrenchIcon;
+  obj[1] = importDefault(8059);
+  obj[0] = callback(require(5419) /* TableRowIcon */.TableRowIcon, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["qv5/SP"]);
   obj[2] = stateFromStores;
   obj[3] = callback;
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl2.string(require(1236) /* getSystemLocale */.t["qv5/SP"]);
-  return callback(require(5768) /* TableSwitchRow */.TableSwitchRow, obj);
+  return callback(require(5807) /* TableSwitchRow */.TableSwitchRow, obj);
 }
 let c3 = importAllResult;
 ({ AnalyticsSections: map1, Permissions: closure_14, RPC_APPLICATION_LOGGING_CATEGORY: closure_15 } = ME);

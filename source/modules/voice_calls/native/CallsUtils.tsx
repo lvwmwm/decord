@@ -1,10 +1,10 @@
-// Module ID: 9154
-// Function ID: 9155
+// Module ID: 9194
+// Function ID: 9195
 // Name: _handleToggleVideo
-// Dependencies: [32, 5, 19, 17, 4322, 1391, 4351, 1979, 4319, 9155, 9158, 4516, 9160, 4643, 1236, 4861, 9161, 9175, 1891, 4513, 5129, 12, 9176, 9177, 9178, 500, 589, 9179, 9159, 10849, 9156, 2]
+// Dependencies: [32, 5, 19, 17, 4363, 1391, 4392, 1979, 4360, 9195, 9198, 4556, 9200, 4683, 1236, 4901, 9201, 9215, 1891, 4553, 5169, 12, 9216, 9217, 9218, 500, 589, 9219, 9199, 10902, 9196, 2]
 // Exports: getAudioDeviceToDisplayText, handleDisconnect, handleToggleSelfDeaf, handleToggleSelfMute, handleToggleVideo, showCameraDisabledAlert, showMinOSScreenshareRequirementAlert, showScreenshareDisabledAlert, showServerDeafenAlert, showServerMuteAlert, showSuppressedAlert, showTabletRequirementAlert, useImmediateMaskedSpeakerStates
 
-// Module 9154 (_handleToggleVideo)
+// Module 9194 (_handleToggleVideo)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import openChannelCallModal from "openChannelCallModal";
@@ -31,62 +31,106 @@ function _handleToggleVideo() {
     let c4 = 0;
     let c5 = 0;
     const iter = (function*(arg0) {
-      let channelVideoLimit = 0;
-      let closure_2 = tmp2;
-      if (flag3 === undefined) {
-        flag3 = true;
-      }
-      yield "ct";
-      if (1 === tmp5) {
+      if (limit === 2) {
+        limit = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
         if (arg0 === 1) {
-          let limit = 3;
           throw arg1;
         } else if (arg0 === 2) {
-          limit = 3;
-          const obj1 = { value: null, done: true };
-          obj1[0] = arg1;
-          return obj1;
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
         } else {
-          closure_2 = videoEnabled.isVideoEnabled();
-          channelVideoLimit = callback(channelVideoLimit[12]).getChannelVideoLimit(callback);
-          let reachedLimit = channelVideoLimit.reachedLimit;
-          limit = channelVideoLimit.limit;
-          if (reachedLimit) {
-            if (flag3) {
-              const obj5 = flag3(channelVideoLimit[13]);
-              const obj2 = { title: null, body: null };
-              const intl = callback(channelVideoLimit[14]).intl;
-              obj2[0] = intl.string(callback(channelVideoLimit[14]).t["3ffmE+"]);
-              const intl2 = callback(channelVideoLimit[14]).intl;
-              const obj3 = { limit: null };
-              obj3[0] = limit.toString();
-              obj2[1] = intl2.formatToPlainString(callback(channelVideoLimit[14]).t.x9mtl4, obj3);
-              obj5.show(obj2);
-            }
-          } else if (closure_2) {
-            let tmp12Result = tmp12(tmp13[16]);
-            tmp12Result.setVideoEnabled(false);
-          } else {
-            tmp12Result = tmp12(tmp13[15]);
-            reachedLimit = 2;
-            limit = 1;
-            const obj4 = { value: null, done: false };
-            obj4[0] = tmp12Result.requestPermission(constants.CAMERA);
-            return obj4;
-          }
-          limit = 3;
-          const obj12 = callback(channelVideoLimit[12]);
+          return { value: "HermesInternal", done: null };
         }
-      } else if (arg0 === 1) {
-        limit = 3;
-        throw arg1;
-      } else if (arg0 !== 2) {
-        if (arg1) {
-          const obj = flag3(channelVideoLimit[16]);
-          obj.setVideoEnabled(true);
+      } else {
+        try {
+          limit = 2;
+          if (0 === reachedLimit) {
+            if (arg0 === 1) {
+              limit = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              limit = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let channelVideoLimit = 0;
+              let closure_2 = tmp2;
+              let flag3;
+              if (flag3 === undefined) {
+                flag3 = true;
+              }
+              closure_2 = undefined;
+              channelVideoLimit = undefined;
+              reachedLimit = undefined;
+              limit = undefined;
+              reachedLimit = 1;
+              limit = 1;
+              return { value: "ct", done: true };
+            }
+          } else {
+            if (1 === tmp5) {
+              if (arg0 === 1) {
+                limit = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                limit = 3;
+                const obj1 = { value: null, done: true };
+                obj1[0] = arg1;
+                return obj1;
+              } else {
+                closure_2 = videoEnabled.isVideoEnabled();
+                channelVideoLimit = callback(channelVideoLimit[12]).getChannelVideoLimit(callback);
+                reachedLimit = channelVideoLimit.reachedLimit;
+                limit = channelVideoLimit.limit;
+                if (reachedLimit) {
+                  if (flag3) {
+                    let obj5 = flag3(channelVideoLimit[13]);
+                    const obj2 = { title: null, body: null };
+                    const intl = callback(channelVideoLimit[14]).intl;
+                    obj2[0] = intl.string(callback(channelVideoLimit[14]).t["3ffmE+"]);
+                    const intl2 = callback(channelVideoLimit[14]).intl;
+                    const obj3 = { limit: null };
+                    obj3[0] = limit.toString();
+                    obj2[1] = intl2.formatToPlainString(callback(channelVideoLimit[14]).t.x9mtl4, obj3);
+                    obj5.show(obj2);
+                  }
+                } else if (closure_2) {
+                  let tmp12Result = tmp12(tmp13[16]);
+                  tmp12Result.setVideoEnabled(false);
+                } else {
+                  tmp12Result = tmp12(tmp13[15]);
+                  reachedLimit = 2;
+                  limit = 1;
+                  const obj4 = { value: null, done: false };
+                  obj4[0] = tmp12Result.requestPermission(constants.CAMERA);
+                  return obj4;
+                }
+                limit = 3;
+                const obj12 = callback(channelVideoLimit[12]);
+              }
+            } else if (arg0 === 1) {
+              limit = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              if (arg1) {
+                obj = flag3(channelVideoLimit[16]);
+                obj.setVideoEnabled(true);
+              }
+            }
+            limit = 3;
+            obj5 = { value: null, done: true };
+            obj5[0] = arg1;
+            return obj5;
+          }
+        } catch (tmp31) {
+          limit = tmp;
+          throw tmp31;
         }
       }
-      return arg1;
     })();
     iter.next();
     return iter;
@@ -124,15 +168,15 @@ export const handleToggleVideo = function handleToggleVideo(channel) {
   return applyArgumentsResult;
 };
 export const handleToggleSelfDeaf = function handleToggleSelfDeaf() {
-  importDefault(9161).toggleSelfDeaf();
+  importDefault(9201).toggleSelfDeaf();
 };
 export const handleToggleSelfMute = function handleToggleSelfMute() {
-  const permission = importDefault(4861).requestPermission(NativePermissionTypes.AUDIO, { showAuthorizationError: true });
-  const obj = importDefault(4861);
-  importDefault(9161).toggleSelfMute();
+  const permission = importDefault(4901).requestPermission(NativePermissionTypes.AUDIO, { showAuthorizationError: true });
+  const obj = importDefault(4901);
+  importDefault(9201).toggleSelfMute();
 };
 export const showSuppressedAlert = function showSuppressedAlert() {
-  let obj = importDefault(4643);
+  let obj = importDefault(4683);
   obj = { title: null, body: null, hideActionSheet: false };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.FJSZVM);
@@ -141,7 +185,7 @@ export const showSuppressedAlert = function showSuppressedAlert() {
   obj.show(obj);
 };
 export const showServerMuteAlert = function showServerMuteAlert() {
-  let obj = importDefault(4643);
+  let obj = importDefault(4683);
   obj = { title: null, body: null, hideActionSheet: false };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["+JQCa/"]);
@@ -150,7 +194,7 @@ export const showServerMuteAlert = function showServerMuteAlert() {
   obj.show(obj);
 };
 export const showServerDeafenAlert = function showServerDeafenAlert() {
-  let obj = importDefault(4643);
+  let obj = importDefault(4683);
   obj = { title: null, body: null, hideActionSheet: false };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.QZ7WSS);
@@ -159,7 +203,7 @@ export const showServerDeafenAlert = function showServerDeafenAlert() {
   obj.show(obj);
 };
 export const showCameraDisabledAlert = function showCameraDisabledAlert() {
-  let obj = importDefault(4643);
+  let obj = importDefault(4683);
   obj = { title: null, body: null, hideActionSheet: false };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.OYzPcW);
@@ -168,7 +212,7 @@ export const showCameraDisabledAlert = function showCameraDisabledAlert() {
   obj.show(obj);
 };
 export const showScreenshareDisabledAlert = function showScreenshareDisabledAlert() {
-  let obj = importDefault(4643);
+  let obj = importDefault(4683);
   obj = { title: null, body: null, hideActionSheet: false };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["/x4knx"]);
@@ -178,8 +222,8 @@ export const showScreenshareDisabledAlert = function showScreenshareDisabledAler
 };
 export const showMinOSScreenshareRequirementAlert = function showMinOSScreenshareRequirementAlert() {
   const intl = require(1236) /* getSystemLocale */.intl;
-  let obj = require(9175) /* mapped */;
-  const errorInfo = obj.getErrorInfo(require(9175) /* mapped */.AVError.SCREENSHARE_OS_NOT_SUPPORTED);
+  let obj = require(9215) /* mapped */;
+  const errorInfo = obj.getErrorInfo(require(9215) /* mapped */.AVError.SCREENSHARE_OS_NOT_SUPPORTED);
   let errorCode;
   if (errorInfo != null) {
     errorCode = errorInfo.errorCode;
@@ -190,10 +234,10 @@ export const showMinOSScreenshareRequirementAlert = function showMinOSScreenshar
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.oblMYa);
   const intl3 = tmp(1236).intl;
   obj[1] = "" + intl3.string(require(1236) /* getSystemLocale */.t.Wnhd3q) + "\n\n" + formatToPlainStringResult;
-  importDefault(4643).show(obj);
+  importDefault(4683).show(obj);
 };
 export const showTabletRequirementAlert = function showTabletRequirementAlert() {
-  let obj = importDefault(4643);
+  let obj = importDefault(4683);
   obj = { title: null, body: null, hideActionSheet: false };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["1N0dxa"]);
@@ -204,7 +248,7 @@ export const showTabletRequirementAlert = function showTabletRequirementAlert() 
 export const handleDisconnect = function handleDisconnect(channel) {
   const result = importAll(1891).dismissGlobalKeyboard();
   const obj = importAll(1891);
-  const result1 = require(4513) /* openChannelCallModal */.dismissVoiceChannelScreens(channel, () => {
+  const result1 = require(4553) /* openChannelCallModal */.dismissVoiceChannelScreens(channel, () => {
     const voiceChannel = callback(table[20]).selectVoiceChannel(null);
   });
 };
@@ -248,10 +292,10 @@ export const useMaskedSpeakerStates = set.isAndroid() ? (() => {
   let obj = isEnabled(589);
   const items = [closure_9, handleConnectionOpen, reset, updateVoiceState, _detectH265HardwareDecode, handleAudioRouteChanged];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const isVideoMode = isEnabled(10849).isVideoMode(closure_9, handleConnectionOpen, reset, updateVoiceState, _detectH265HardwareDecode);
+    const isVideoMode = isEnabled(10902).isVideoMode(closure_9, handleConnectionOpen, reset, updateVoiceState, _detectH265HardwareDecode);
     currentRouteType = currentRouteType.getCurrentRouteType();
-    isEnabled = currentRouteType === isEnabled(9156).RouteTypes.SPEAKER;
-    const isBluetoothRoute = currentRouteType === isEnabled(9156).RouteTypes.BLUETOOTH;
+    isEnabled = currentRouteType === isEnabled(9196).RouteTypes.SPEAKER;
+    const isBluetoothRoute = currentRouteType === isEnabled(9196).RouteTypes.BLUETOOTH;
     if (!isEnabled) {
       isEnabled = isBluetoothRoute;
     }
@@ -284,17 +328,17 @@ export const useMaskedSpeakerStates = set.isAndroid() ? (() => {
     }
     dependencyMap(isEnabled);
   }, items2);
-  obj = { isAudioRouteEnabled: first, toggleAudio: callback, routeSource: isVideoMode(stateFromStoresObject.isBluetoothRoute ? 9177 : 9178) };
+  obj = { isAudioRouteEnabled: first, toggleAudio: callback, routeSource: isVideoMode(stateFromStoresObject.isBluetoothRoute ? 9217 : 9218) };
   return obj;
 });
 export const useImmediateMaskedSpeakerStates = () => {
   let obj = require(589) /* initialize */;
   const items = [handleAudioRouteChanged];
   const stateFromStores = obj.useStateFromStores(items, () => currentRouteType.getCurrentRouteType());
-  const tmp4 = importDefault(10849)();
+  const tmp4 = importDefault(10902)();
   require = tmp4;
-  let tmp5 = stateFromStores === require(9156) /* RouteTypes */.RouteTypes.SPEAKER;
-  const tmp6 = stateFromStores === require(9156) /* RouteTypes */.RouteTypes.BLUETOOTH;
+  let tmp5 = stateFromStores === require(9196) /* RouteTypes */.RouteTypes.SPEAKER;
+  const tmp6 = stateFromStores === require(9196) /* RouteTypes */.RouteTypes.BLUETOOTH;
   if (!tmp5) {
     tmp5 = tmp6;
   }
@@ -319,6 +363,6 @@ export const useImmediateMaskedSpeakerStates = () => {
   const effect = React.useEffect(() => {
     callback(closure_1);
   }, items2);
-  obj = { isAudioRouteEnabled: first, toggleAudio: callback, routeSource: importDefault(tmp6 ? 9177 : 9178) };
+  obj = { isAudioRouteEnabled: first, toggleAudio: callback, routeSource: importDefault(tmp6 ? 9217 : 9218) };
   return obj;
 };

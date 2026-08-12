@@ -1,10 +1,10 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 14473
+// Function ID: 14474
 // Name: Footer
-// Dependencies: [19, 17, 676, 21, 4303, 712, 4271, 6018, 8734, 4017, 1993, 4714, 1236, 1628, 5712, 4031, 4299, 10485, 3177, 5397, 14413, 2]
+// Dependencies: [19, 17, 676, 21, 4344, 712, 4312, 6057, 8773, 4058, 1993, 4754, 1236, 1628, 5751, 4072, 4340, 10526, 3175, 5436, 14470, 2]
 // Exports: default
 
-// Module 14416 (Footer)
+// Module 14473 (Footer)
 import Background from "Background";
 import { View } from "items";
 import ME from "ME";
@@ -22,24 +22,24 @@ function Footer(eligibleToReceivePremiumRewards) {
   let loading;
   let onPress;
   const callback = React.useCallback(() => {
-    let obj = callback2(4271);
+    let obj = callback2(4312);
     obj.hideActionSheet();
     obj = { screen: constants2.PREMIUM };
-    callback(6018).openUserSettings(obj);
+    callback(6057).openUserSettings(obj);
   }, []);
   const tmp = createCacheKey();
-  ({ loading, onPress } = importDefault(8734)(false, callback, constants.QUEST_ORB_MULTIPLIER_PERK_INFO));
+  ({ loading, onPress } = importDefault(8773)(false, callback, constants.QUEST_ORB_MULTIPLIER_PERK_INFO));
   const callback1 = React.useCallback(() => {
-    callback2(4271).hideActionSheet();
-    const obj = callback2(4271);
-    const obj2 = callback2(4017);
+    callback2(4312).hideActionSheet();
+    const obj = callback2(4312);
+    const obj2 = callback2(4058);
     obj2.openURL(callback2(1993).getArticleURL(constants.VIRTUAL_CURRENCY_ORB_MULTIPLIER_LEARN_MORE));
   }, []);
   let obj = { style: tmp.buttonContainer, children: null };
   const callback2 = React.useCallback(() => {
-    callback2(4271).hideActionSheet();
+    callback2(4312).hideActionSheet();
   }, []);
-  const Button = require(4714) /* Button */.Button;
+  const Button = require(4754) /* Button */.Button;
   if (eligibleToReceivePremiumRewards.eligibleToReceivePremiumRewards) {
     obj = { size: "lg", text: null, variant: "primary", onPress: null };
     const intl3 = tmp10(1236).intl;
@@ -50,7 +50,7 @@ function Footer(eligibleToReceivePremiumRewards) {
     const intl4 = tmp10(1236).intl;
     obj[2] = intl4.string(tmp10(1236).t.cpT0Cq);
     obj[3] = callback2;
-    items[1] = tmp9(tmp10(4714).Button, obj);
+    items[1] = tmp9(tmp10(4754).Button, obj);
     obj[1] = items;
     let tmp11 = obj;
   } else {
@@ -64,7 +64,7 @@ function Footer(eligibleToReceivePremiumRewards) {
     const intl2 = tmp10(1236).intl;
     obj2[2] = intl2.string(tmp10(1236).t.PcTCB7);
     obj2[3] = callback;
-    items1[1] = tmp9(tmp10(4714).Button, obj2);
+    items1[1] = tmp9(tmp10(4754).Button, obj2);
     obj[1] = items1;
     tmp11 = obj;
   }
@@ -77,15 +77,15 @@ function SheetContent(arg0) {
   ({ title, body, eligibleToReceivePremiumRewards } = arg0);
   const tmp = createCacheKey();
   let obj = { children: null };
-  const items = [callback(require(5712) /* ActionSheetHeaderBar */.ActionSheetHeaderBar, { variant: "floating" }), ];
+  const items = [callback(require(5751) /* ActionSheetHeaderBar */.ActionSheetHeaderBar, { variant: "floating" }), ];
   obj = { style: items1, children: null };
   items1 = [tmp.container, { marginBottom: importDefault(1628)().bottom }];
   obj = { style: tmp.contentContainer, children: null };
-  const items2 = [callback(View, { style: tmp.riveContainer, children: callback(require(4031) /* ManaContext */.NitroQuestOrbsMultiplierRive, {}) }), , , ];
+  const items2 = [callback(View, { style: tmp.riveContainer, children: callback(require(4072) /* ManaContext */.NitroQuestOrbsMultiplierRive, {}) }), , , ];
   const items3 = [, ];
   ({ text: arr4[0], title: arr4[1] } = tmp);
-  items2[1] = callback(require(4299) /* Text */.Text, { style: items3, variant: "display-md", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title });
-  items2[2] = callback(require(4299) /* Text */.Text, { style: tmp.text, variant: "text-sm/normal", children: body });
+  items2[1] = callback(require(4340) /* Text */.Text, { style: items3, variant: "display-md", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title });
+  items2[2] = callback(require(4340) /* Text */.Text, { style: tmp.text, variant: "text-sm/normal", children: body });
   items2[3] = callback(Footer, { eligibleToReceivePremiumRewards });
   obj[1] = items2;
   obj[1] = callback2(View, obj);
@@ -114,7 +114,7 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
   multiplier = multiplier.multiplier;
   const orbMultiplierEligibility = multiplier.orbMultiplierEligibility;
   let dependencyMap;
-  let obj = multiplier(10485);
+  let obj = multiplier(10526);
   const result = obj.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
   dependencyMap = result;
   const items = [orbMultiplierEligibility];
@@ -152,9 +152,9 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
     return formatResult;
   }, items1);
   obj = { scrollable: false, handleDisabled: true, startExpanded: true, contentStyles: closure_11, children: null };
-  obj = { visible: orbMultiplierEligibility === multiplier(10485).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10485).QuestOrbMultiplierEligibilityType.UPSELL, children: null };
-  const tmp4 = orbMultiplierEligibility === multiplier(10485).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10485).QuestOrbMultiplierEligibilityType.UPSELL;
+  obj = { visible: orbMultiplierEligibility === multiplier(10526).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10526).QuestOrbMultiplierEligibilityType.UPSELL, children: null };
+  const tmp4 = orbMultiplierEligibility === multiplier(10526).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10526).QuestOrbMultiplierEligibilityType.UPSELL;
   obj[1] = callback(SheetContent, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result });
-  obj[4] = callback(orbMultiplierEligibility(14413), obj);
-  return callback(multiplier(5397).BottomSheet, obj);
+  obj[4] = callback(orbMultiplierEligibility(14470), obj);
+  return callback(multiplier(5436).BottomSheet, obj);
 };

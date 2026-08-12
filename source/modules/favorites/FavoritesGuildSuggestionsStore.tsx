@@ -1,10 +1,10 @@
-// Module ID: 15342
-// Function ID: 15343
+// Module ID: 15399
+// Function ID: 15400
 // Name: items
-// Dependencies: [32, 19, 1383, 1394, 676, 1388, 644, 9716, 6024, 1377, 589, 2]
+// Dependencies: [32, 19, 1383, 1394, 676, 1388, 644, 9755, 6063, 1377, 589, 2]
 // Exports: setFavoritesGuildSuggestions, useFavoritesGuildShouldShowSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useHasFavoritesGuildSuggestions
 
-// Module 15342 (items)
+// Module 15399 (items)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import withContent from "withContent";
@@ -34,10 +34,10 @@ export const setFavoritesGuildSuggestions = function setFavoritesGuildSuggestion
 export const useFavoritesGuildShouldShowSuggestions = function useFavoritesGuildShouldShowSuggestions() {
   let hasAccess;
   let isFreemium;
-  const favoritesAccess = require(9716) /* useFavoritesAccess */.useFavoritesAccess();
+  const favoritesAccess = require(9755) /* useFavoritesAccess */.useFavoritesAccess();
   ({ hasAccess, isFreemium } = favoritesAccess);
-  const obj = require(9716) /* useFavoritesAccess */;
-  require(6024) /* useSelectedDismissibleContent */;
+  const obj = require(9755) /* useFavoritesAccess */;
+  require(6063) /* useSelectedDismissibleContent */;
   if (hasAccess) {
     if (isFreemium) {
       if (tmp4) {

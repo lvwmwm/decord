@@ -1,10 +1,10 @@
-// Module ID: 10131
-// Function ID: 10132
+// Module ID: 10172
+// Function ID: 10173
 // Name: CancelButton
-// Dependencies: [32, 853, 19, 17, 4295, 676, 21, 4303, 712, 1949, 10130, 5277, 5326, 1236, 4042, 4713, 4304, 4272, 7014, 10132, 4024, 4725, 9354, 10134, 589, 10135, 10136, 9429, 8901, 9444, 9380, 5328, 10144, 9381, 9393, 9452, 9559, 10163, 4299, 7016, 4714, 2]
+// Dependencies: [32, 853, 19, 17, 4336, 676, 21, 4344, 712, 1949, 10171, 5316, 5365, 1236, 4083, 4753, 4345, 4313, 7053, 10173, 4065, 4765, 9394, 10175, 589, 10176, 10177, 9469, 8940, 9484, 9420, 5367, 10185, 9421, 9433, 9492, 9599, 10204, 4340, 7055, 4754, 2]
 // Exports: default
 
-// Module 10131 (CancelButton)
+// Module 10172 (CancelButton)
 import BalanceWidgetPill from "BalanceWidgetPill";
 import _toArray from "_toArray";
 import importDefaultResult1 from "importDefaultResult1";
@@ -48,7 +48,7 @@ function CancelButton(arg0) {
   };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
-  return callback(require(5277) /* Background */.HeaderBackButton, obj);
+  return callback(require(5316) /* Background */.HeaderBackButton, obj);
 }
 function ProductPurchaseGradientBackground(product) {
   product = product.product;

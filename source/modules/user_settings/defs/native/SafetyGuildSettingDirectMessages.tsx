@@ -1,9 +1,9 @@
-// Module ID: 14900
-// Function ID: 14901
+// Module ID: 14958
+// Function ID: 14959
 // Name: toggle
-// Dependencies: [1910, 14894, 8084, 10453, 14079, 14901, 3993, 4642, 1236, 4732, 6015, 14902, 10452, 2]
+// Dependencies: [1910, 14952, 8123, 10494, 14136, 14959, 4034, 4682, 1236, 4772, 6054, 14960, 10493, 2]
 
-// Module 14900 (toggle)
+// Module 14958 (toggle)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
@@ -15,7 +15,7 @@ const require = arg1;
 ({ getSelectedGuildId: c4, useUserSafetySettingsSelectedGuildStore: c5 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
 createToggle = {
   useTitle() {
-    const allowFriendsFromMutualGuildsOnly = require(14902) /* useAllowFriendsFromMutualGuildsOnly */.useAllowFriendsFromMutualGuildsOnly();
+    const allowFriendsFromMutualGuildsOnly = require(14960) /* useAllowFriendsFromMutualGuildsOnly */.useAllowFriendsFromMutualGuildsOnly();
     const intl = require(1236) /* getSystemLocale */.intl;
     const string = intl.string;
     const t = require(1236) /* getSystemLocale */.t;
@@ -27,7 +27,7 @@ createToggle = {
     return stringResult;
   },
   useDescription() {
-    const allowFriendsFromMutualGuildsOnly = require(14902) /* useAllowFriendsFromMutualGuildsOnly */.useAllowFriendsFromMutualGuildsOnly();
+    const allowFriendsFromMutualGuildsOnly = require(14960) /* useAllowFriendsFromMutualGuildsOnly */.useAllowFriendsFromMutualGuildsOnly();
     if (callback2().selectedGuildId === closure_6) {
       const intl2 = tmp(1236).intl;
       const string2 = intl2.string;
@@ -53,8 +53,8 @@ createToggle = {
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
     const selectedGuildId = callback2().selectedGuildId;
-    const obj = require(14901) /* useDefaultGuildsRestricted */;
-    const RestrictedGuildIds = require(3993) /* explicitContentFromProto */.RestrictedGuildIds;
+    const obj = require(14959) /* useDefaultGuildsRestricted */;
+    const RestrictedGuildIds = require(4034) /* explicitContentFromProto */.RestrictedGuildIds;
     const setting = RestrictedGuildIds.useSetting();
     let tmp2 = !setting.includes(selectedGuildId);
     if (selectedGuildId === closure_6) {
@@ -75,7 +75,7 @@ createToggle = {
       obj[2] = intl3.string(_require(1236).t.p89ACt);
       const intl4 = _require(1236).intl;
       obj[3] = intl4.string(_require(1236).t.gm1Vej);
-      obj[4] = importDefault(4732).Colors.RED;
+      obj[4] = importDefault(4772).Colors.RED;
       obj[5] = function onConfirm() {
         const DefaultGuildsRestrictedV2 = callback(outer1_2[6]).DefaultGuildsRestrictedV2;
         DefaultGuildsRestrictedV2.updateSetting(callback);
@@ -91,24 +91,24 @@ createToggle = {
         const DefaultGuildsRestrictedV2 = callback(outer1_2[6]).DefaultGuildsRestrictedV2;
         DefaultGuildsRestrictedV2.updateSetting(callback);
       };
-      importDefault(4642).show(obj);
-      const obj3 = importDefault(4642);
+      importDefault(4682).show(obj);
+      const obj3 = importDefault(4682);
     } else {
-      obj = _require(6015);
+      obj = _require(6054);
       const sanitizedRestrictedGuilds = obj.getSanitizedRestrictedGuilds();
       if (arg0) {
         sanitizedRestrictedGuilds.delete(tmp);
       } else {
         sanitizedRestrictedGuilds.add(tmp);
       }
-      let RestrictedGuildIds = _require(3993).RestrictedGuildIds;
+      let RestrictedGuildIds = _require(4034).RestrictedGuildIds;
       const _Array = Array;
       RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
       const tmp2 = _require;
     }
   },
   useIsDisabled() {
-    let isParentallyControlled = require(14079) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    let isParentallyControlled = require(14136) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
     if (isParentallyControlled) {
       isParentallyControlled = tmp2 === closure_6;
     }

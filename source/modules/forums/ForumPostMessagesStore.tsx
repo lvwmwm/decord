@@ -1,9 +1,9 @@
-// Module ID: 5895
-// Function ID: 5896
+// Module ID: 5934
+// Function ID: 5935
 // Name: handleLoadThreadsSuccess
-// Dependencies: [5896, 1922, 11, 4523, 589, 709, 2]
+// Dependencies: [5935, 1922, 11, 4563, 589, 709, 2]
 
-// Module 5895 (handleLoadThreadsSuccess)
+// Module 5934 (handleLoadThreadsSuccess)
 import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
@@ -33,8 +33,8 @@ function handleLoadThreadsSuccess(arg0) {
 function storeFirstMessage(channel_id, nextResult) {
   let messageRecord = null;
   if (null != nextResult) {
-    messageRecord = require(4523) /* createMinimalMessageRecord */.createMessageRecord(nextResult);
-    const obj = require(4523) /* createMinimalMessageRecord */;
+    messageRecord = require(4563) /* createMinimalMessageRecord */.createMessageRecord(nextResult);
+    const obj = require(4563) /* createMinimalMessageRecord */;
   }
   closure_5[channel_id] = { loaded: true, firstMessage: messageRecord };
 }
@@ -105,8 +105,8 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
         const message = isPushNotification.message;
         let messageRecord = null;
         if (null != message) {
-          messageRecord = require(4523) /* createMinimalMessageRecord */.createMessageRecord(message);
-          const obj2 = require(4523) /* createMinimalMessageRecord */;
+          messageRecord = require(4563) /* createMinimalMessageRecord */.createMessageRecord(message);
+          const obj2 = require(4563) /* createMinimalMessageRecord */;
         }
         obj = { loaded: true, firstMessage: null };
         obj[1] = messageRecord;
@@ -129,9 +129,9 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
           const result = importDefault(11).castMessageIdAsChannelId(message.message.id);
           const merged = Object.assign(tmp12);
           const tmp10Result = importDefault(11);
-          obj.firstMessage = require(4523) /* createMinimalMessageRecord */.updateMessageRecord(tmp12.firstMessage, message.message);
+          obj.firstMessage = require(4563) /* createMinimalMessageRecord */.updateMessageRecord(tmp12.firstMessage, message.message);
           dependencyMap[result] = obj;
-          const obj3 = require(4523) /* createMinimalMessageRecord */;
+          const obj3 = require(4563) /* createMinimalMessageRecord */;
         }
         tmp8 = tmp;
       }
@@ -229,7 +229,7 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
       if (null != first_message) {
         let tmp = require;
         let tmp2 = dependencyMap;
-        let obj = require(4523) /* createMinimalMessageRecord */;
+        let obj = require(4563) /* createMinimalMessageRecord */;
         messageRecord = obj.createMessageRecord(first_message);
       }
       let tmp4 = closure_5;
@@ -252,9 +252,9 @@ const forumPostMessagesStore = new ForumPostMessagesStore(require("dispatcher"),
     }
     if (tmp2) {
       obj = { loaded: true, firstMessage: null };
-      obj[1] = require(4523) /* createMinimalMessageRecord */.createMessageRecord(tmp);
+      obj[1] = require(4563) /* createMinimalMessageRecord */.createMessageRecord(tmp);
       closure_5[channelId] = obj;
-      const obj3 = require(4523) /* createMinimalMessageRecord */;
+      const obj3 = require(4563) /* createMinimalMessageRecord */;
     }
   }
 });

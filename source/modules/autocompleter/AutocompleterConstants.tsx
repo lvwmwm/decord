@@ -1,9 +1,9 @@
-// Module ID: 5227
-// Function ID: 5228
+// Module ID: 5266
+// Function ID: 5267
 // Name: HeaderRecord
 // Dependencies: [2]
 
-// Module 5227 (HeaderRecord)
+// Module 5266 (HeaderRecord)
 const result = require("set").fileFinishedImporting("modules/autocompleter/AutocompleterConstants.tsx");
 
 export const HeaderRecord = function HeaderRecord(id) {

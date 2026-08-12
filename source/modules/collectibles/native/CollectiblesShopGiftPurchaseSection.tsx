@@ -1,10 +1,10 @@
-// Module ID: 12146
-// Function ID: 12147
+// Module ID: 12203
+// Function ID: 12204
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8796, 6890, 676, 1924, 505, 21, 4303, 712, 5369, 9583, 589, 8792, 5728, 10107, 12147, 709, 4509, 4643, 12148, 2007, 500, 698, 10053, 4299, 1236, 4714, 7414, 9442, 3979, 9447, 9581, 9576, 7415, 2]
+// Dependencies: [5, 32, 19, 17, 8835, 6929, 676, 1924, 505, 21, 4344, 712, 5408, 9623, 589, 8831, 5767, 10148, 12204, 709, 4549, 4683, 12205, 2007, 500, 698, 10094, 4340, 1236, 4754, 7453, 9482, 4020, 9487, 9621, 9616, 7454, 2]
 // Exports: default
 
-// Module 12146 (CollectiblesShopGiftPurchaseSection)
+// Module 12203 (CollectiblesShopGiftPurchaseSection)
 import context from "context";
 import isPremiumGiftingSupported from "isPremiumGiftingSupported";
 import dispatcher from "dispatcher";
@@ -14,7 +14,7 @@ import { useNativeCheckoutStore } from "context";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
 import { PaymentGateways } from "sum";
-import jsxProd from "module_4643";
+import jsxProd from "module_4683";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -204,8 +204,8 @@ export default function WrappedCollectiblesShopGiftPurchaseSection(arg0) {
   let product;
   ({ product, onGiftModalDismiss } = arg0);
   ({ isPurchaseDisabled, giftOptions, baseAnalyticsFields, giftingOrigin } = arg0);
-  const GiftACOMOrderExperiment = onGiftModalDismiss(7414).GiftACOMOrderExperiment;
-  let obj = onGiftModalDismiss(9442);
+  const GiftACOMOrderExperiment = onGiftModalDismiss(7453).GiftACOMOrderExperiment;
+  let obj = onGiftModalDismiss(9482);
   const androidShopOrdersEnabled = obj.useAndroidShopOrdersEnabled({ location: "WrappedCollectiblesShopGiftPurchaseSection" });
   if (obj2.isIOS()) {
     let GOOGLE = tmp4.APPLE_ADVANCED_COMMERCE;
@@ -218,8 +218,8 @@ export default function WrappedCollectiblesShopGiftPurchaseSection(arg0) {
   if (!tmp6) {
     let result = GOOGLE === tmp5.GOOGLE;
     if (result) {
-      result = tmp(3979).isGooglePlayBillingSupported();
-      const tmpResult = tmp(3979);
+      result = tmp(4020).isGooglePlayBillingSupported();
+      const tmpResult = tmp(4020);
     }
     if (result) {
       result = androidShopOrdersEnabled;
@@ -235,10 +235,10 @@ export default function WrappedCollectiblesShopGiftPurchaseSection(arg0) {
     }
   }, items);
   obj = { skuIDs: [], activeSubscription: null, children: null };
-  obj = { paymentGateway: GOOGLE, orderRequired: tmp6, skuIds: items1, isGift: true, activeSubscription: null, initialExternalGatewayFacet: importDefault(9447)(product), onOrderRetryCancellation: callback, children: null };
+  obj = { paymentGateway: GOOGLE, orderRequired: tmp6, skuIds: items1, isGift: true, activeSubscription: null, initialExternalGatewayFacet: importDefault(9487)(product), onOrderRetryCancellation: callback, children: null };
   items1 = [product.skuId];
-  const tmp8 = importDefault(9447)(product);
+  const tmp8 = importDefault(9487)(product);
   obj[7] = callback2(CollectiblesShopGiftPurchaseSection, { product, isPurchaseDisabled, giftOptions, baseAnalyticsFields, giftingOrigin });
-  obj[2] = callback2(importDefault(7415), obj, product.skuId);
-  return callback2(onGiftModalDismiss(9576).NativePaymentContextProvider, obj);
+  obj[2] = callback2(importDefault(7454), obj, product.skuId);
+  return callback2(onGiftModalDismiss(9616).NativePaymentContextProvider, obj);
 };

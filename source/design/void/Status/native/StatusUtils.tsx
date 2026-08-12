@@ -1,10 +1,10 @@
-// Module ID: 13364
-// Function ID: 13365
+// Module ID: 13421
+// Function ID: 13422
 // Name: getAnimatedTypingTranslateX
-// Dependencies: [1298, 13365, 2]
+// Dependencies: [1298, 13422, 2]
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 13364 (getAnimatedTypingTranslateX)
+// Module 13421 (getAnimatedTypingTranslateX)
 import STATUS_PADDING from "STATUS_PADDING";
 
 let c3;
@@ -20,7 +20,7 @@ export const getMobileStatusContainerRect = function getMobileStatusContainerRec
   return { width: sum, height: 1.4 * sum, cornerRadius: sum / 4 };
 };
 export const getVRStatusContainerRect = function getVRStatusContainerRect(items) {
-  const size = importDefault(13365)(items, false, true);
+  const size = importDefault(13422)(items, false, true);
   return { width: size.width, height: size.height, cornerRadius: size.borderRadius };
 };
 export const getStatusTypingDimensions = function getStatusTypingDimensions(items) {

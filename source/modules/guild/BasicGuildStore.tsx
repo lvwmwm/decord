@@ -1,9 +1,9 @@
-// Module ID: 8066
-// Function ID: 8067
+// Module ID: 8105
+// Function ID: 8106
 // Name: getGuild
 // Dependencies: [589, 709, 2]
 
-// Module 8066 (getGuild)
+// Module 8105 (getGuild)
 import { Store } from "initialize";
 
 let c0 = 0;

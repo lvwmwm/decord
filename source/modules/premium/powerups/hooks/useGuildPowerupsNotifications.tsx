@@ -1,10 +1,10 @@
-// Module ID: 11855
-// Function ID: 11856
+// Module ID: 11912
+// Function ID: 11913
 // Name: maybeGetPerkPurchaseablePopoutDCF
-// Dependencies: [32, 19, 4211, 1910, 11856, 4190, 4191, 676, 1388, 4195, 11858, 11859, 4194, 11860, 1370, 1377, 4214, 4210, 11861, 1379, 647, 11857, 11865, 4233, 4232, 11867, 11868, 11869, 11870, 11872, 11873, 11874, 11852, 2]
+// Dependencies: [32, 19, 4252, 1910, 11913, 4231, 4232, 676, 1388, 4236, 11915, 11916, 4235, 11917, 1370, 1377, 4255, 4251, 11918, 1379, 647, 11914, 11922, 4274, 4273, 11924, 11925, 11926, 11927, 11929, 11930, 11931, 11909, 2]
 // Exports: default, maybeGetGameServerHostingGuildEligiblePopoutDCF, maybeGetLevelUnlockedPopoutDCF, useAutoDismissGuildPowerupsNotifications
 
-// Module 11855 (maybeGetPerkPurchaseablePopoutDCF)
+// Module 11912 (maybeGetPerkPurchaseablePopoutDCF)
 import guildPowerupsAckNotification from "guildPowerupsAckNotification";
 import addVersionedDismissedContent from "addVersionedDismissedContent";
 import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
@@ -83,26 +83,26 @@ function maybeGetPerkPurchaseablePopoutDCF(closure_1) {
   }).filter(_require(1370).isNotNullish);
   if (0 !== found.length) {
     if (1 === found.length) {
-      let tmp4Result = tmp4(11858);
+      let tmp4Result = tmp4(11915);
       if (!tmp4Result.isContentDismissed(tmp4(1377).DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, closure_1)) {
         let obj = { type: null, powerups: null, markAsDismissed: null };
-        obj[0] = tmp4(11859).GuildPowerupNotificationPopoutType.PERKS_PURCHASABLE;
+        obj[0] = tmp4(11916).GuildPowerupNotificationPopoutType.PERKS_PURCHASABLE;
         obj[1] = found;
         obj[2] = function markAsDismissed(AUTO_DISMISS) {
-          const result = callback(11858).markContentAsDismissed(callback(1377).DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, callback, true, AUTO_DISMISS);
+          const result = callback(11915).markContentAsDismissed(callback(1377).DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, callback, true, AUTO_DISMISS);
         };
       }
       return obj;
     }
     let tmp6;
     if (found.length > 1) {
-      tmp4Result = tmp4(11858);
+      tmp4Result = tmp4(11915);
       if (!tmp4Result.isContentDismissed(tmp4(1377).DismissibleGuildContent.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, closure_1)) {
         obj = { type: null, powerups: null, markAsDismissed: null };
-        obj[0] = tmp4(11859).GuildPowerupNotificationPopoutType.PERKS_PURCHASABLE;
+        obj[0] = tmp4(11916).GuildPowerupNotificationPopoutType.PERKS_PURCHASABLE;
         obj[1] = found;
         obj[2] = function markAsDismissed(AUTO_DISMISS) {
-          const result = callback(11858).markContentAsDismissed(callback(1377).DismissibleGuildContent.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, callback, true, AUTO_DISMISS);
+          const result = callback(11915).markContentAsDismissed(callback(1377).DismissibleGuildContent.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, callback, true, AUTO_DISMISS);
         };
         tmp6 = obj;
       }
@@ -114,8 +114,8 @@ function useGuildPowerupsNotificationIndicator(arg0, arg1, lastBoostCount) {
   const _require = arg0;
   const importDefault = arg1;
   const dependencyMap = lastBoostCount;
-  const available = importDefault(4210)(arg0).available;
-  const tmp2 = importDefault(11861)(arg0, "useGuildPowerupsNotificationIndicator");
+  const available = importDefault(4251)(arg0).available;
+  const tmp2 = importDefault(11918)(arg0, "useGuildPowerupsNotificationIndicator");
   let dismissibleContent = null;
   if (null != tmp2) {
     dismissibleContent = tmp2.dismissibleContent;
@@ -146,7 +146,7 @@ function useGuildPowerupsNotificationIndicator(arg0, arg1, lastBoostCount) {
   items1[5] = entitlements;
   return React.useMemo(() => {
     if (null == closure_1) {
-      return { indicator: "ct", showUnread: "Array" };
+      return { indicator: "ct", showUnread: true };
     } else {
       const _Object = Object;
       const items = [];
@@ -194,7 +194,7 @@ function useGuildPowerupsNotificationIndicator(arg0, arg1, lastBoostCount) {
               let obj1 = obj;
             }
           }
-          obj1 = { indicator: "ct", showUnread: "Array" };
+          obj1 = { indicator: "ct", showUnread: true };
         }
         return obj1;
       }
@@ -211,12 +211,12 @@ function useGuildPowerupsNotificationIndicator(arg0, arg1, lastBoostCount) {
 function useGuildPowerupsChannelListPopout(c0) {
   const _require = c0;
   const importDefault = arg1;
-  let tmp4 = callback(_require(11865).usePerksCoachmarkDCF(null != arg1), 2);
+  let tmp4 = callback(_require(11922).usePerksCoachmarkDCF(null != arg1), 2);
   const dependencyMap = tmp5;
   const tmp6 = tmp4[0] === _require(1377).DismissibleContent.GUILD_POWERUP_PERKS_COACHMARK;
   callback = tmp6;
-  const available = importDefault(4210)(c0).available;
-  let obj = _require(11865);
+  const available = importDefault(4251)(c0).available;
+  let obj = _require(11922);
   const items = [stateFromStores1];
   const stateFromStores = _require(647).useStateFromStores(items, () => {
     const guild = stateFromStores1.getGuild(closure_0);
@@ -234,14 +234,14 @@ function useGuildPowerupsChannelListPopout(c0) {
   const items1 = [stateFromStores];
   stateFromStores1 = _require(647).useStateFromStores(items1, () => stateFromStores.getLowestGameCostForGuild(closure_0));
   let obj3 = _require(647);
-  let serverThemeEnabled = _require(4233).useServerThemeEnabled(c0, "useGuildPowerupsChannelListPopout");
-  let obj4 = _require(4233);
+  let serverThemeEnabled = _require(4274).useServerThemeEnabled(c0, "useGuildPowerupsChannelListPopout");
+  let obj4 = _require(4274);
   if (serverThemeEnabled) {
     serverThemeEnabled = obj5.useServerThemeUserEnabled("useGuildPowerupsChannelListPopout");
   }
-  let tmp11 = importDefault(11867)(c0, arg1);
+  let tmp11 = importDefault(11924)(c0, arg1);
   let calculateAppliedBoosts = tmp11;
-  let tmpResult = tmp(11865);
+  let tmpResult = tmp(11922);
   let tmp12 = null != arg1;
   if (tmp12) {
     tmp12 = !tmp6;
@@ -250,10 +250,10 @@ function useGuildPowerupsChannelListPopout(c0) {
   let closure_9 = tmp14;
   const tmp15 = tmp3Result[0] === _require(1377).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK;
   let closure_10 = tmp15;
-  let tmp16 = importDefault(11868)(c0);
+  let tmp16 = importDefault(11925)(c0);
   let closure_11 = tmp16;
-  obj5 = _require(4232);
-  tmpResult = tmp(11865);
+  obj5 = _require(4273);
+  tmpResult = tmp(11922);
   let tmp18 = null != arg1;
   if (tmp18) {
     tmp18 = !tmp6;
@@ -271,9 +271,9 @@ function useGuildPowerupsChannelListPopout(c0) {
   let closure_12 = tmp20;
   let tmp21 = tmp3Result[0] === _require(1377).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
   let closure_13 = tmp21;
-  const tmp22 = importDefault(11870)(c0);
+  const tmp22 = importDefault(11927)(c0);
   let closure_14 = tmp22;
-  tmp17 = importDefault(11869)();
+  tmp17 = importDefault(11926)();
   let tmp23 = null != arg1;
   if (tmp23) {
     tmp23 = !tmp6;
@@ -287,15 +287,15 @@ function useGuildPowerupsChannelListPopout(c0) {
   if (tmp23) {
     tmp23 = null != tmp22;
   }
-  const tmp3Result1 = callback(_require(11865).useExpiringPowerupCoachmarkDCF(tmp23, c0), 2);
+  const tmp3Result1 = callback(_require(11922).useExpiringPowerupCoachmarkDCF(tmp23, c0), 2);
   let closure_15 = tmp25;
   let tmp26 = tmp3Result1[0] === _require(1377).DismissibleContent.EXPIRING_POWERUP_COACHMARK;
   let closure_16 = tmp26;
-  const tmpResult1 = _require(11865);
-  const gameServerEnabled = _require(4214).getGameServerEnabled(c0, "useGuildPowerupsChannelListPopout");
-  const tmpResult2 = _require(4214);
-  const isNewGamesCoachmarkEnabled = _require(11872).useIsNewGamesCoachmarkEnabled("useGuildPowerupsChannelListPopout");
-  const tmpResult3 = _require(11872);
+  const tmpResult1 = _require(11922);
+  const gameServerEnabled = _require(4255).getGameServerEnabled(c0, "useGuildPowerupsChannelListPopout");
+  const tmpResult2 = _require(4255);
+  const isNewGamesCoachmarkEnabled = _require(11929).useIsNewGamesCoachmarkEnabled("useGuildPowerupsChannelListPopout");
+  const tmpResult3 = _require(11929);
   let tmp29 = null != arg1;
   if (tmp29) {
     tmp29 = gameServerEnabled;
@@ -303,13 +303,13 @@ function useGuildPowerupsChannelListPopout(c0) {
   if (tmp29) {
     tmp29 = isNewGamesCoachmarkEnabled;
   }
-  const tmp3Result2 = callback(_require(11865).useNewGamesCoachmarkDC(tmp29), 2);
+  const tmp3Result2 = callback(_require(11922).useNewGamesCoachmarkDC(tmp29), 2);
   let closure_17 = tmp31;
   const tmp32 = tmp3Result2[0] === _require(1377).DismissibleContent.GAME_SERVER_NEW_GAMES_COACHMARK;
   const ContentDismissActionType = tmp32;
-  const tmpResult4 = _require(11865);
-  const isGameServerPricingEnabled = _require(11873).useIsGameServerPricingEnabled(c0, "useGuildPowerupsChannelListPopout");
-  const tmpResult5 = _require(11873);
+  const tmpResult4 = _require(11922);
+  const isGameServerPricingEnabled = _require(11930).useIsGameServerPricingEnabled(c0, "useGuildPowerupsChannelListPopout");
+  const tmpResult5 = _require(11930);
   let tmp34 = null != arg1;
   if (tmp34) {
     tmp34 = !stateFromStores;
@@ -320,7 +320,7 @@ function useGuildPowerupsChannelListPopout(c0) {
   if (tmp34) {
     tmp34 = isGameServerPricingEnabled;
   }
-  const tmp3Result3 = callback(_require(11865).useGameServerPricingCoachmarkDCF(tmp34), 2);
+  const tmp3Result3 = callback(_require(11922).useGameServerPricingCoachmarkDCF(tmp34), 2);
   const maybeGetPerkPurchaseablePopoutDCF = tmp36;
   const tmp37 = tmp3Result3[0] === _require(1377).DismissibleContent.GAME_SERVER_PRICING_CHANGE_COACHMARK;
   const useGuildPowerupsNotificationIndicator = tmp37;
@@ -412,8 +412,8 @@ function useGuildPowerupsChannelListPopout(c0) {
       }
     }
   }, items2);
-  const tmpResult6 = _require(11865);
-  const tmp3Result4 = callback(_require(11865).useGuildPowerupNotificationDCF(null != memo), 2);
+  const tmpResult6 = _require(11922);
+  const tmp3Result4 = callback(_require(11922).useGuildPowerupNotificationDCF(null != memo), 2);
   const first = tmp3Result4[0];
   let closure_23 = tmp41;
   const items3 = [arg1, tmp6, tmp4[1], memo, first, tmp3Result4[1], tmp15, tmp3Result[1], tmp11, tmp21, tmp16, tmp3Result[1], tmp26, tmp22, tmp3Result1[1], tmp32, tmp3Result2[1], tmp37, tmp3Result3[1]];
@@ -518,7 +518,7 @@ export default function useGuildPowerupsNotifications(arg0) {
 export const maybeGetLevelUnlockedPopoutDCF = function maybeGetLevelUnlockedPopoutDCF(closure_1) {
   const _require = closure_1;
   closure_1 = arg1;
-  const ReverseOrderedTiers = _require(4195).ReverseOrderedTiers;
+  const ReverseOrderedTiers = _require(4236).ReverseOrderedTiers;
   const found = ReverseOrderedTiers.find((arg0) => {
     let tmp2;
     if (null != outer1_9[arg0]) {
@@ -540,7 +540,7 @@ export const maybeGetLevelUnlockedPopoutDCF = function maybeGetLevelUnlockedPopo
         }
         if (null != tmp6) {
           const obj = { type: null, powerup: null, markAsDismissed: null };
-          obj[0] = tmp(11859).GuildPowerupNotificationPopoutType.LEVEL_REACHED;
+          obj[0] = tmp(11916).GuildPowerupNotificationPopoutType.LEVEL_REACHED;
           obj[1] = tmp6;
           obj[2] = function markAsDismissed(AUTO_DISMISS) {
             const result = tmp7(tmp13[10]).markContentAsDismissed(tmp13, tmp7, true, AUTO_DISMISS);
@@ -548,27 +548,27 @@ export const maybeGetLevelUnlockedPopoutDCF = function maybeGetLevelUnlockedPopo
           return obj;
         }
       }
-      tmpResult = tmp(11858);
+      tmpResult = tmp(11915);
     }
   }
 };
 export { maybeGetPerkPurchaseablePopoutDCF };
 export const maybeGetGameServerHostingGuildEligiblePopoutDCF = function maybeGetGameServerHostingGuildEligiblePopoutDCF(c0) {
   const _require = c0;
-  let obj = _require(4214);
+  let obj = _require(4255);
   if (obj.getGameServerEnabled(c0, "maybeGetGameServerHostingGuildEligiblePopoutDCF")) {
     if (!arg1) {
       if (null != arg3) {
         if (arg2 >= arg3) {
           if (!tmpResult.isContentDismissed(tmp(1377).DismissibleGuildContent.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, c0)) {
             obj = { type: null, markAsDismissed: null };
-            obj[0] = tmp(11859).GuildPowerupNotificationPopoutType.GAME_SERVER_HOSTING_GUILD_ELIGIBLE;
+            obj[0] = tmp(11916).GuildPowerupNotificationPopoutType.GAME_SERVER_HOSTING_GUILD_ELIGIBLE;
             obj[1] = function markAsDismissed(AUTO_DISMISS) {
               const result = tmp7(tmp13[10]).markContentAsDismissed(tmp7(tmp13[15]).DismissibleGuildContent.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, tmp7, true, AUTO_DISMISS);
             };
             return obj;
           }
-          tmpResult = tmp(11858);
+          tmpResult = tmp(11915);
         }
       }
     }
@@ -608,7 +608,7 @@ export const useAutoDismissGuildPowerupsNotifications = function useAutoDismissG
   const tmp10 = stateFromStores2;
   const tmp6Result = useGuildPowerupsNotificationIndicator(guildId, stateFromStores2, stateFromStores1);
   const tmp9 = useGuildPowerupsChannelListPopout;
-  const autoDismissGuildPowerupsNewBadge = tmp(11874).useAutoDismissGuildPowerupsNewBadge(guildId);
+  const autoDismissGuildPowerupsNewBadge = tmp(11931).useAutoDismissGuildPowerupsNewBadge(guildId);
   const items4 = [guildId];
   const effect = React.useEffect(() => {
     const result = guildId(tmp12[32]).guildPowerupsAckNotification(guildId);

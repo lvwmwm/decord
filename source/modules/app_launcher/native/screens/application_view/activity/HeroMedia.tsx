@@ -1,10 +1,10 @@
-// Module ID: 11473
-// Function ID: 11474
+// Module ID: 11530
+// Function ID: 11531
 // Name: HeroMedia
-// Dependencies: [19, 4295, 1498, 5398, 21, 4303, 9556, 10755, 589, 5734, 11448, 8876, 1236, 2]
+// Dependencies: [19, 4336, 1498, 5437, 21, 4344, 9596, 10808, 589, 5773, 11505, 8915, 1236, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 11473 (HeroMedia)
+// Module 11530 (HeroMedia)
 import "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -22,7 +22,7 @@ export default function HeroMedia(width) {
   ({ applicationId, containerHeight } = width);
   const tmp = callback();
   width = { width: width.width }.width;
-  require(9556) /* useDefaultAppLauncherWidth */;
+  require(9596) /* useDefaultAppLauncherWidth */;
   let bound = width;
   if (width == null) {
     let tmp8 = width;
@@ -33,11 +33,11 @@ export default function HeroMedia(width) {
   }
   const diff = bound - 2 * DEFAULT_CONTENT_PADDING;
   const rounded = Math.floor(9 * diff / 16);
-  const tmp13 = importDefault(10755)({ applicationId, size: diff, names: ["embedded_cover"] });
+  const tmp13 = importDefault(10808)({ applicationId, size: diff, names: ["embedded_cover"] });
   let tmp2Result = tmp2(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
-  tmp2Result = tmp2(5734);
+  tmp2Result = tmp2(5773);
   const getOrFetchApplication = tmp2Result.useGetOrFetchApplication(applicationId);
   let prop;
   if (getOrFetchApplication != null) {
@@ -49,7 +49,7 @@ export default function HeroMedia(width) {
   }
   let tmp18 = null;
   if (null != prop1) {
-    tmp18 = importDefault(11448)(applicationId, prop.activity_preview_video_asset_id);
+    tmp18 = importDefault(11505)(applicationId, prop.activity_preview_video_asset_id);
   }
   let tmp21Result = null;
   if (null != tmp18) {
@@ -113,7 +113,7 @@ export const useHeroMediaDimensions = function useHeroMediaDimensions(arg0) {
     obj = {};
   }
   const width = obj.width;
-  require(9556) /* useDefaultAppLauncherWidth */;
+  require(9596) /* useDefaultAppLauncherWidth */;
   let bound = width;
   if (width == null) {
     let tmp5 = width;

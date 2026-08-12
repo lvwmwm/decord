@@ -1,10 +1,10 @@
-// Module ID: 8807
-// Function ID: 8808
+// Module ID: 8846
+// Function ID: 8847
 // Name: _readFile
 // Dependencies: [5, 3, 1271, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8807 (_readFile)
+// Module 8846 (_readFile)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _readFile() {

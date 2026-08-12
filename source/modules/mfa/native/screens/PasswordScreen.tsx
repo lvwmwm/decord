@@ -1,10 +1,10 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 15070
+// Function ID: 15071
 // Name: PasswordScreen
-// Dependencies: [5, 32, 19, 17, 21, 8478, 15004, 15003, 1236, 7792, 15006, 2]
+// Dependencies: [5, 32, 19, 17, 21, 8517, 15062, 15061, 1236, 7831, 15064, 2]
 // Exports: default
 
-// Module 15012 (PasswordScreen)
+// Module 15070 (PasswordScreen)
 import useWideAuthView from "useWideAuthView";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

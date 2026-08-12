@@ -1,10 +1,10 @@
-// Module ID: 8920
-// Function ID: 8921
+// Module ID: 8959
+// Function ID: 8960
 // Name: apexExperiment
-// Dependencies: [8921, 1471, 8923, 2]
+// Dependencies: [8960, 1471, 8962, 2]
 // Exports: getICYMIEnabled, useICYMIEnabled
 
-// Module 8920 (apexExperiment)
+// Module 8959 (apexExperiment)
 import getUserAgnosticState from "getUserAgnosticState";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
@@ -25,7 +25,7 @@ const result = require("useLabFeature").fileFinishedImporting("modules/icymi/ICY
 export const ICYMI_LAB_FEATURE = "hide_icymi_tab";
 export const ICYMIStaffOnlyExperiment = apexExperiment;
 export const useICYMIEnabled = function useICYMIEnabled(TabsNavigator) {
-  const tmp = importDefault(8923)(hide_icymi_tab);
+  const tmp = importDefault(8962)(hide_icymi_tab);
   let obj = { location: TabsNavigator };
   obj = { location: TabsNavigator };
   const config = apexExperiment2.useConfig(obj);

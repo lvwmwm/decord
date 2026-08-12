@@ -1,9 +1,9 @@
-// Module ID: 7121
-// Function ID: 7122
+// Module ID: 7160
+// Function ID: 7161
 // Name: recomputeAffinities
-// Dependencies: [3957, 7122, 589, 709, 2]
+// Dependencies: [3998, 7161, 589, 709, 2]
 
-// Module 7121 (recomputeAffinities)
+// Module 7160 (recomputeAffinities)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { USER_AFFINITY_TTL } from "result";
 import { PersistedStore } from "initialize";

@@ -1,10 +1,10 @@
-// Module ID: 15364
-// Function ID: 15365
+// Module ID: 15421
+// Function ID: 15422
 // Name: LimitAndDurationInfo
-// Dependencies: [19, 6994, 1910, 3948, 4315, 4319, 676, 21, 4303, 589, 11449, 8409, 15365, 15366, 4487, 1297, 15368, 15369, 15259, 5135, 11669, 15260, 15370, 12288, 2]
+// Dependencies: [19, 7033, 1910, 3989, 4356, 4360, 676, 21, 4344, 589, 11506, 8448, 15422, 15423, 4527, 1297, 15425, 15426, 15316, 5175, 11726, 15317, 15427, 12351, 2]
 // Exports: default
 
-// Module 15364 (LimitAndDurationInfo)
+// Module 15421 (LimitAndDurationInfo)
 import "useStageHasMedia";
 import guildHasCommunity from "guildHasCommunity";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -53,7 +53,7 @@ function LimitAndDurationInfo(channel) {
     }
     obj[1] = hasVideo;
     obj[2] = channel;
-    let tmp6Result = tmp6(channel(15260).ConnectedUserLimit, obj);
+    let tmp6Result = tmp6(channel(15317).ConnectedUserLimit, obj);
   } else {
     const obj1 = { channel: null };
     obj1[0] = channel;
@@ -62,7 +62,7 @@ function LimitAndDurationInfo(channel) {
   return tmp6Result;
 }
 function DurationInfo(channel) {
-  let obj = require(15370) /* useStartTime */;
+  let obj = require(15427) /* useStartTime */;
   const startTime = obj.useStartTime(channel.channel);
   let tmp5 = null;
   if (null != startTime) {
@@ -71,7 +71,7 @@ function DurationInfo(channel) {
     obj[0] = startTime;
     obj[0] = obj;
     obj[1] = tmp.activeTimestamp;
-    tmp5 = jsx(require(12288) /* ActiveTimestamp */.ActiveTimestamp, { start: null });
+    tmp5 = jsx(require(12351) /* ActiveTimestamp */.ActiveTimestamp, { start: null });
   }
   return tmp5;
 }
@@ -97,10 +97,10 @@ export default function ChannelInfo(channel) {
   const items = [createGuildRecordFromRust, generateOldThreadCutoff, guildHasCommunity];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ guild: outer1_4.getGuild(channel.guild_id), mentionsCount: outer1_6.getMentionCount(channel.id), isMentionLowImportance: outer1_6.getIsMentionLowImportance(channel.id), isNewChannel: outer1_3.shouldIndicateNewChannel(channel.guild_id, channel.id) }));
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
-  const tmp5 = importDefault(11449)(channel);
-  let obj1 = channel(8409);
+  const tmp5 = importDefault(11506)(channel);
+  let obj1 = channel(8448);
   const postsWithUnreadsCount = obj1.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
-  if (importDefault(15365)({ mentionsCount, isNewChannel, postsWithUnreadsCount, muted })) {
+  if (importDefault(15422)({ mentionsCount, isNewChannel, postsWithUnreadsCount, muted })) {
     obj = { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null };
     obj[0] = mentionsCount;
     obj[1] = stateFromStoresObject.isMentionLowImportance;
@@ -111,9 +111,9 @@ export default function ChannelInfo(channel) {
     }
     obj[3] = tmp18;
     obj[4] = muted;
-    let tmp11Result = jsx(tmp4(15366), { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null });
+    let tmp11Result = jsx(tmp4(15423), { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null });
     const tmp16 = jsx;
-    const tmp4Result = tmp4(15366);
+    const tmp4Result = tmp4(15423);
   } else {
     if (null != isChannelCollapsed) {
       if (isChannelCollapsed) {
@@ -123,7 +123,7 @@ export default function ChannelInfo(channel) {
           hasItem = features.has(constants.COMMUNITY);
         }
         if (hasItem) {
-          let tmpResult = tmp(4487);
+          let tmpResult = tmp(4527);
           if (tmpResult.hasStream(voiceStates)) {
             tmp11Result = jsx(tmp(1297).LiveTag, {});
           }
@@ -132,12 +132,12 @@ export default function ChannelInfo(channel) {
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        tmpResult = tmp(15368);
+        tmpResult = tmp(15425);
         if (tmpResult.showChannelItemEmbeddedActivities(tmp5)) {
           obj = { embeddedApps: null, muted: null };
           obj[0] = tmp5;
           obj[1] = muted;
-          tmp11Result = jsx(tmp4(15369), { embeddedApps: null, muted: null });
+          tmp11Result = jsx(tmp4(15426), { embeddedApps: null, muted: null });
         }
       }
     }
@@ -146,7 +146,7 @@ export default function ChannelInfo(channel) {
         if (isSubscriptionGated) {
           obj1 = { locked: null };
           obj1[0] = needSubscriptionToAccess;
-          tmp11Result = jsx(tmp4(15259), { locked: null });
+          tmp11Result = jsx(tmp4(15316), { locked: null });
         }
       }
     }

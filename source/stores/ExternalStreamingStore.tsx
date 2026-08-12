@@ -1,9 +1,9 @@
-// Module ID: 10444
-// Function ID: 10445
+// Module ID: 10485
+// Function ID: 10486
 // Name: makeTwitchRequest
-// Dependencies: [5, 4998, 4149, 676, 687, 530, 5123, 709, 8245, 5000, 659, 589, 2]
+// Dependencies: [5, 5038, 4190, 676, 687, 530, 5163, 709, 8284, 5040, 659, 589, 2]
 
-// Module 10444 (makeTwitchRequest)
+// Module 10485 (makeTwitchRequest)
 import sendRequest from "sendRequest";
 import closure_4 from "set";
 import initialize from "initialize";
@@ -81,8 +81,8 @@ prototype["start"] = function start() {
   if (!this._started) {
     self._started = true;
     if (closure_4.isFetching()) {
-      const response = importDefault(5123).fetch();
-      const obj = importDefault(5123);
+      const response = importDefault(5163).fetch();
+      const obj = importDefault(5163);
     } else {
       self._check();
     }

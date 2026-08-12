@@ -1,9 +1,9 @@
-// Module ID: 14235
-// Function ID: 14236
+// Module ID: 14292
+// Function ID: 14293
 // Name: route
-// Dependencies: [19, 1922, 3972, 676, 21, 12694, 3966, 1236, 6883, 7447, 14236, 10452, 7706, 14238, 2]
+// Dependencies: [19, 1922, 4013, 676, 21, 12753, 4007, 1236, 6922, 7486, 14293, 10493, 7745, 14295, 2]
 
-// Module 14235 (route)
+// Module 14292 (route)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
@@ -13,10 +13,10 @@ import createToggle from "createToggle";
 const require = arg1;
 createToggle = {
   useTitle: function getPremiumSettingTitle() {
-    const mobileNitroManageSubscriptionsSettingsExperiment = require(12694) /* apexExperiment */.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
-    const obj = require(12694) /* apexExperiment */;
+    const mobileNitroManageSubscriptionsSettingsExperiment = require(12753) /* apexExperiment */.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
+    const obj = require(12753) /* apexExperiment */;
     currentUser = currentUser.getCurrentUser();
-    const result = require(3966) /* getPremiumPlanItem */.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
+    const result = require(4007) /* getPremiumPlanItem */.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
     const intl = require(1236) /* getSystemLocale */.intl;
     const string = intl.string;
     if (result) {
@@ -43,14 +43,14 @@ createToggle = {
     }, []);
   },
   useTrailing: function usePremiumSettingTrailing() {
-    return jsx(importDefault(14236), {});
+    return jsx(importDefault(14293), {});
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM,
   getComponent() {
-    return require(14238) /* PremiumScreen */.default;
+    return require(14295) /* PremiumScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

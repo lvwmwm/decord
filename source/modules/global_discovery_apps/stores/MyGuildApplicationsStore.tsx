@@ -1,9 +1,9 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 11522
+// Function ID: 11523
 // Name: addToApplicationIdToGuildIds
 // Dependencies: [687, 589, 709, 2]
 
-// Module 11465 (addToApplicationIdToGuildIds)
+// Module 11522 (addToApplicationIdToGuildIds)
 import { PersistedStore } from "initialize";
 
 function addToApplicationIdToGuildIds(applicationId) {

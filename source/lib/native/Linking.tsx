@@ -1,8 +1,8 @@
-// Module ID: 4017
-// Function ID: 4018
-// Dependencies: [17, 4012, 2]
+// Module ID: 4058
+// Function ID: 4059
+// Dependencies: [17, 4053, 2]
 
-// Module 4017
+// Module 4058
 import { Linking } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("lib/native/Linking.tsx");
@@ -13,10 +13,10 @@ export default {
     if (arg2 === undefined) {
       flag = true;
     }
-    require(4012) /* sanitizeURLPart */.default(arg0, arg1, { allowExternal: flag });
+    require(4053) /* sanitizeURLPart */.default(arg0, arg1, { allowExternal: flag });
   },
   openURLExternally(href, SAFARI) {
-    require(4012) /* sanitizeURLPart */.default(href, SAFARI, { forceExternalBrowser: true });
+    require(4053) /* sanitizeURLPart */.default(href, SAFARI, { forceExternalBrowser: true });
   },
   performURLNavigation(href) {
     Linking.openURL(href).catch(() => {

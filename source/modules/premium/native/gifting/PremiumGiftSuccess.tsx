@@ -1,10 +1,10 @@
-// Module ID: 10125
-// Function ID: 10126
+// Module ID: 10166
+// Function ID: 10167
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 7345, 1388, 21, 4303, 712, 1628, 9616, 38, 10126, 10050, 8285, 589, 1379, 1377, 10127, 10128, 10129, 2]
+// Dependencies: [19, 17, 7384, 1388, 21, 4344, 712, 1628, 9656, 38, 10167, 10091, 8324, 589, 1379, 1377, 10168, 10169, 10170, 2]
 // Exports: default
 
-// Module 10125 (PremiumGiftSuccess)
+// Module 10166 (PremiumGiftSuccess)
 import set from "set";
 import { View } from "PremiumGiftDMSuccessBody";
 import createEmptyPromotionsByType from "createEmptyPromotionsByType";

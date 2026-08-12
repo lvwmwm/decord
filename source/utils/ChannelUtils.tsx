@@ -1,10 +1,10 @@
-// Module ID: 4486
-// Function ID: 4487
+// Module ID: 4526
+// Function ID: 4527
 // Name: allowChannelAccess
-// Dependencies: [1395, 1391, 1980, 3948, 1979, 4376, 676, 1924, 3953, 506, 1954, 4487, 4488, 1236, 4148, 4489, 11, 2, 4496]
+// Dependencies: [1395, 1391, 1980, 3989, 1979, 4416, 676, 1924, 3994, 506, 1954, 4527, 4528, 1236, 4189, 4529, 11, 2, 4536]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 4486 (allowChannelAccess)
+// Module 4526 (allowChannelAccess)
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -28,7 +28,7 @@ let closure_23;
 let closure_6;
 let map1;
 function allowChannelAccess(id, channelType, MEMBER) {
-  const NONE = importAll(3953).NONE;
+  const NONE = importAll(3994).NONE;
   let tmp3 = callback(channelType);
   if (!tmp3) {
     tmp3 = channelType === closure_22;
@@ -56,7 +56,7 @@ function allowChannelAccess(id, channelType, MEMBER) {
     addResult2 = tmp(506).add(addResult1, constants.CONNECT);
     const tmpResult1 = tmp(506);
   }
-  return { id, type: MEMBER, deny: importAll(3953).NONE, allow: addResult2 };
+  return { id, type: MEMBER, deny: importAll(3994).NONE, allow: addResult2 };
 }
 ({ isGuildSelectableChannelType: c4, TEXT_CHANNEL_TYPES: c5, THREAD_CHANNEL_TYPES: closure_6 } = createChannelRecord);
 const ChannelTypes = ME.ChannelTypes;
@@ -70,8 +70,8 @@ export const denyChannelAccessForNonPaidUsers = function denyChannelAccessForNon
     obj = { id: null, type: null, allow: null, deny: null };
     obj[0] = arg0;
     obj[1] = require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE;
-    obj[2] = importAll(3953).NONE;
-    obj[3] = obj.add(importAll(3953).NONE, constants.CONNECT);
+    obj[2] = importAll(3994).NONE;
+    obj[3] = obj.add(importAll(3994).NONE, constants.CONNECT);
     return obj;
   } else {
     const _Error = Error;
@@ -89,7 +89,7 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
   }
   const items = [];
   if (tmp) {
-    const NONE = importAll(3953).NONE;
+    const NONE = importAll(3994).NONE;
     let tmp6 = callback(channelType);
     if (!tmp6) {
       tmp6 = channelType === closure_22;
@@ -113,7 +113,7 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
     const obj = { id: null, type: null, allow: null, deny: null };
     obj[0] = guildId;
     obj[1] = _require(1954).PermissionOverwriteType.ROLE;
-    obj[2] = importAll(3953).NONE;
+    obj[2] = importAll(3994).NONE;
     obj[3] = addResult2;
     items.push(obj);
   }
@@ -129,7 +129,7 @@ export const permissionOverwriteForRole = function permissionOverwriteForRole(id
   return allowChannelAccess(id, channelType, require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE);
 };
 export const permissionOverwritesForAnnouncement = function permissionOverwritesForAnnouncement(id) {
-  const items = [{ id, type: require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, deny: constants.SEND_MESSAGES, allow: importAll(3953).NONE }];
+  const items = [{ id, type: require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, deny: constants.SEND_MESSAGES, allow: importAll(3994).NONE }];
   return items;
 };
 export const isChannelFull = function isChannelFull(channel, outer1_11, handleConnectionOpen) {
@@ -157,8 +157,8 @@ export const isChannelFull = function isChannelFull(channel, outer1_11, handleCo
     if (tmp8) {
       let hasVideoResult = outer1_11.hasVideo(channel.id);
       if (!hasVideoResult) {
-        hasVideoResult = require(4487) /* hasStream */.hasStream(voiceStatesForChannel);
-        const obj2 = require(4487) /* hasStream */;
+        hasVideoResult = require(4527) /* hasStream */.hasStream(voiceStatesForChannel);
+        const obj2 = require(4527) /* hasStream */;
       }
       tmp8 = hasVideoResult;
     }
@@ -280,9 +280,9 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
           for (const item10017 of tmp10) {
             let tmp4 = require;
             let tmp5 = dependencyMap;
-            let obj3 = require(4488) /* useAudienceRequestToSpeakState */;
+            let obj3 = require(4528) /* useAudienceRequestToSpeakState */;
             let audienceRequestToSpeakState = obj3.getAudienceRequestToSpeakState(item10017.voiceState);
-            if (audienceRequestToSpeakState === require(4488) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE) {
+            if (audienceRequestToSpeakState === require(4528) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE) {
               let tmp7 = obj2;
               obj2.return();
               let tmp8 = iter;

@@ -1,64 +1,66 @@
-// Module ID: 10593
-// Function ID: 10594
+// Module ID: 10645
+// Function ID: 10646
 // Name: formatWatchRemainingDurationShort
-// Dependencies: [7184, 1236, 2]
-// Exports: formatWatchRemainingDurationShort, getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
+// Dependencies: [5201, 7223, 1236, 10646, 2]
+// Exports: getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 10593 (formatWatchRemainingDurationShort)
-const result = require("set").fileFinishedImporting("modules/quests/utils/MobileQuestVideoWatchCtaCopy.tsx");
+// Module 10645 (formatWatchRemainingDurationShort)
+import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 
-export const formatWatchRemainingDurationShort = function formatWatchRemainingDurationShort(targetSeconds) {
-  let obj = require(7184) /* getApplicationIdsByTaskTypes */;
-  const remainingTaskTime = obj.getRemainingTaskTime(targetSeconds);
-  const sum = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
-  if (sum >= 60) {
+function formatWatchRemainingDurationShort(questTaskDetails, truncate) {
+  let obj = require(7223) /* getApplicationIdsByTaskTypes */;
+  const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
+  let num = 60;
+  truncate = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
+  truncate = undefined;
+  if (truncate != null) {
+    truncate = truncate.truncate;
+  }
+  if (null != truncate && truncate > truncate.truncate) {
+    truncate = truncate.truncate;
+  }
+  if (truncate >= num) {
     const intl2 = tmp(1236).intl;
-    obj = { count: null };
+    let t = tmp(1236).t;
+    t = { count: null };
     const _Math = Math;
-    obj[0] = Math.round(sum / 60);
-    let formatToPlainStringResult = intl2.formatToPlainString(tmp(1236).t.PHhTXX, obj);
+    num = truncate / num;
+    t[0] = Math.round(num);
+    intl2.formatToPlainString(tmp5 ? t.XTdnRd : t.PHhTXX, t);
+    const tmp6 = tmp5 ? t.XTdnRd : t.PHhTXX;
   } else {
     const intl = tmp(1236).intl;
+    t = tmp(1236).t;
     obj = { count: null };
-    obj[0] = sum;
-    formatToPlainStringResult = intl.formatToPlainString(tmp(1236).t.rUfeQx, obj);
+    obj[0] = truncate;
+    return intl.formatToPlainString(tmp5 ? t["spl/XS"] : t.rUfeQx, obj);
   }
-  return formatToPlainStringResult;
-};
+}
+const result = require("getSystemLocale").fileFinishedImporting("modules/quests/utils/MobileQuestVideoWatchCtaCopy.tsx");
+
+export { formatWatchRemainingDurationShort };
 export const getVideoQuestWatchCtaText = function getVideoQuestWatchCtaText(questTaskDetails) {
-  let obj = require(7184) /* getApplicationIdsByTaskTypes */;
-  const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
-  const sum = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
-  if (sum >= 60) {
-    const intl2 = tmp2(1236).intl;
-    obj = { count: null };
-    const _Math = Math;
-    obj[0] = Math.round(sum / 60);
-    let formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.PHhTXX, obj);
+  if (questTaskDetails.percentComplete > 0) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    let obj = { durationShort: null };
+    obj[0] = formatWatchRemainingDurationShort(questTaskDetails);
+    return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["pF/deA"], obj);
   } else {
-    const intl = tmp2(1236).intl;
-    obj = { count: null };
-    obj[0] = sum;
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1236).t.rUfeQx, obj);
+    let obj1 = importDefault(10646);
+    obj = { location: null };
+    obj[0] = QuestsExperimentLocations.QUESTS_CARD;
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj = { durationShort: null };
+    obj1 = { truncate: null };
+    obj1[0] = obj1.getConfig(obj).truncateMoreThanSeconds;
+    obj[0] = formatWatchRemainingDurationShort(questTaskDetails, obj1);
+    return intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.CHrvqg, obj);
   }
-  const intl3 = tmp2(1236).intl;
-  const formatToPlainString = intl3.formatToPlainString;
-  const t = tmp2(1236).t;
-  if (tmp) {
-    const obj1 = { durationShort: null };
-    obj1[0] = formatToPlainStringResult;
-    let formatToPlainStringResult1 = formatToPlainString(t["pF/deA"], obj1);
-  } else {
-    const obj2 = { durationShort: null };
-    obj2[0] = formatToPlainStringResult;
-    formatToPlainStringResult1 = formatToPlainString(t.CHrvqg, obj2);
-  }
-  return formatToPlainStringResult1;
 };
 export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWatchCtaAccessibilityLabel(questTaskDetails) {
   let minutes;
   let seconds;
-  let obj = require(7184) /* getApplicationIdsByTaskTypes */;
+  let obj = require(7223) /* getApplicationIdsByTaskTypes */;
   const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
   ({ minutes, seconds } = remainingTaskTime);
   if (minutes > 0) {

@@ -1,10 +1,10 @@
-// Module ID: 9400
-// Function ID: 9401
+// Module ID: 9440
+// Function ID: 9441
 // Name: useCollectiblesMobileFlexibleBundlesExperiment
 // Dependencies: [1471, 2]
 // Exports: useCollectiblesMobileFlexibleBundlesExperiment
 
-// Module 9400 (useCollectiblesMobileFlexibleBundlesExperiment)
+// Module 9440 (useCollectiblesMobileFlexibleBundlesExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-05-mobile-collectibles-flexible-bundles", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

@@ -1,9 +1,9 @@
-// Module ID: 13042
-// Function ID: 13043
+// Module ID: 13099
+// Function ID: 13100
 // Name: _initialize
-// Dependencies: [4351, 4319, 4482, 709, 4513, 2]
+// Dependencies: [4392, 4360, 4522, 709, 4553, 2]
 
-// Module 13042 (_initialize)
+// Module 13099 (_initialize)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import updateVoiceState from "updateVoiceState";
 import "initialize";

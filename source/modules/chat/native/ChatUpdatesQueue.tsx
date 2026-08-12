@@ -1,9 +1,9 @@
-// Module ID: 10460
-// Function ID: 10461
+// Module ID: 10501
+// Function ID: 10502
 // Name: hasUpdates
 // Dependencies: [17, 2]
 
-// Module 10460 (hasUpdates)
+// Module 10501 (hasUpdates)
 import get_ActivityIndicator from "get ActivityIndicator";
 
 const NativeEventEmitter = get_ActivityIndicator.NativeEventEmitter;

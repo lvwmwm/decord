@@ -1,10 +1,10 @@
-// Module ID: 8024
-// Function ID: 8025
+// Module ID: 8063
+// Function ID: 8064
 // Name: _showReportModal
-// Dependencies: [5, 8025, 8026, 4509, 8027, 2007, 2]
+// Dependencies: [5, 8064, 8065, 4549, 8066, 2007, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 8024 (_showReportModal)
+// Module 8063 (_showReportModal)
 import asyncRequireImpl from "asyncRequireImpl";
 
 const require = arg1;
@@ -57,7 +57,7 @@ function _showReportModal() {
               closure_4 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -159,5 +159,5 @@ export const showReportModal = function showReportModal(arg0, arg1, arg2) {
   return applyArgumentsResult;
 };
 export const hideReportModal = function hideReportModal() {
-  importDefault(4509).popWithKey(IN_APP_REPORT_MODAL_KEY);
+  importDefault(4549).popWithKey(IN_APP_REPORT_MODAL_KEY);
 };

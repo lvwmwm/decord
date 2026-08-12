@@ -1,10 +1,10 @@
-// Module ID: 4493
-// Function ID: 4494
+// Module ID: 4533
+// Function ID: 4534
 // Name: getNickname
-// Dependencies: [1391, 1990, 3957, 1236, 4148, 589, 2]
+// Dependencies: [1391, 1990, 3998, 1236, 4189, 589, 2]
 // Exports: getNickname, useName
 
-// Module 4493 (getNickname)
+// Module 4533 (getNickname)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
@@ -54,8 +54,8 @@ function getName(id, arg1, id) {
       }
     }
     if (stringResult == null) {
-      stringResult = importDefault(4148).getName(id);
-      const obj2 = importDefault(4148);
+      stringResult = importDefault(4189).getName(id);
+      const obj2 = importDefault(4189);
     }
   }
   return stringResult;

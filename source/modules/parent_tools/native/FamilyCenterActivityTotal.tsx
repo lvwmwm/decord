@@ -1,10 +1,10 @@
-// Module ID: 14150
-// Function ID: 14151
+// Module ID: 14207
+// Function ID: 14208
 // Name: FamilyCenterActivityTotal
-// Dependencies: [19, 17, 21, 4303, 712, 14149, 7055, 4299, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 14206, 7094, 4340, 2]
 // Exports: default
 
-// Module 14150 (FamilyCenterActivityTotal)
+// Module 14207 (FamilyCenterActivityTotal)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,16 +23,16 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterActivityTotal(displayType) {
   displayType = displayType.displayType;
-  let obj = require(14149) /* useActionsForDisplayType */;
+  let obj = require(14206) /* useActionsForDisplayType */;
   const actionTotalsForDisplayType = obj.useActionTotalsForDisplayType(displayType);
   const tmp = createCacheKey();
-  let num = require(14149) /* useActionsForDisplayType */.useFormattedTotalForDisplayType(displayType);
+  let num = require(14206) /* useActionsForDisplayType */.useFormattedTotalForDisplayType(displayType);
   let str = "text-muted";
   if (actionTotalsForDisplayType > 0) {
     str = "text-brand";
   }
-  const obj2 = require(14149) /* useActionsForDisplayType */;
-  const activityTypeTextConfigs = require(7055) /* getEmptyActivityFormatter */.getActivityTypeTextConfigs();
+  const obj2 = require(14206) /* useActionsForDisplayType */;
+  const activityTypeTextConfigs = require(7094) /* getEmptyActivityFormatter */.getActivityTypeTextConfigs();
   const value = activityTypeTextConfigs.get(displayType);
   let tooltipHeaderResult;
   if (value != null) {
@@ -44,7 +44,7 @@ export default function FamilyCenterActivityTotal(displayType) {
     num = 0;
   }
   obj[2] = num;
-  const items = [closure_3(require(4299) /* Text */.Text, obj), closure_3(require(4299) /* Text */.Text, { variant: "text-sm/semibold", children: tooltipHeaderResult })];
+  const items = [closure_3(require(4340) /* Text */.Text, obj), closure_3(require(4340) /* Text */.Text, { variant: "text-sm/semibold", children: tooltipHeaderResult })];
   obj[1] = items;
   return closure_4(View, obj);
 };

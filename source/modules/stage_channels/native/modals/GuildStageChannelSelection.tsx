@@ -1,10 +1,10 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9106
+// Function ID: 9107
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 3957, 1922, 21, 4303, 8976, 4494, 1891, 4271, 8974, 2007, 1236, 4299, 2]
+// Dependencies: [19, 3998, 1922, 21, 4344, 9015, 4534, 1891, 4312, 9013, 2007, 1236, 4340, 2]
 // Exports: default
 
-// Module 9067 (GuildStageChannelSelection)
+// Module 9106 (GuildStageChannelSelection)
 import "noop";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";

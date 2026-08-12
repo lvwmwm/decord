@@ -1,10 +1,10 @@
-// Module ID: 6104
-// Function ID: 6105
+// Module ID: 6143
+// Function ID: 6144
 // Name: AvatarMoatmonsturrExample
-// Dependencies: [21, 5268, 6105, 2]
+// Dependencies: [21, 5307, 6144, 2]
 // Exports: AvatarMoatmonsturrExample
 
-// Module 6104 (AvatarMoatmonsturrExample)
+// Module 6143 (AvatarMoatmonsturrExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarMoatmonsturrExample.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarMoatmonsturrExample = function AvatarMoatmonsturrExample(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6105);
+  obj[0] = importDefault(6144);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarMoatmonsturrExample = function AvatarMoatmonsturrExample(widt
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
 };

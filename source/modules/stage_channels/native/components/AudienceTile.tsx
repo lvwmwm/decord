@@ -1,10 +1,10 @@
-// Module ID: 10956
-// Function ID: 10957
+// Module ID: 11009
+// Function ID: 11010
 // Name: RaisedHandIcon
-// Dependencies: [19, 17, 1990, 21, 4303, 712, 4488, 1297, 8005, 1493, 589, 5142, 4493, 5427, 1236, 7775, 10936, 1363, 10957, 2]
+// Dependencies: [19, 17, 1990, 21, 4344, 712, 4528, 1297, 8044, 1493, 589, 5182, 4533, 5466, 1236, 7814, 10989, 1363, 11010, 2]
 // Exports: getTileWidthStyle
 
-// Module 10956 (RaisedHandIcon)
+// Module 11009 (RaisedHandIcon)
 import { View } from "AccessibilityAnnouncer";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ let closure_6;
 const require = arg1;
 function RaisedHandIcon(rtsState) {
   const tmp = styles();
-  let activeBackground = rtsState.rtsState === require(4488) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  let activeBackground = rtsState.rtsState === require(4528) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   if (activeBackground) {
     let PRIMARY_800 = unsafe_rawColors.WHITE;
@@ -32,7 +32,7 @@ function RaisedHandIcon(rtsState) {
   let obj = { style: items, children: null };
   items[1] = activeBackground;
   obj = { style: tmp.raisedHand, source: null, color: null };
-  obj[1] = tmp5(8005);
+  obj[1] = tmp5(8044);
   obj[2] = PRIMARY_800;
   obj[1] = closure_5(require(1297) /* Button */.Icon, obj);
   return closure_5(View, obj);

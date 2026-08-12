@@ -1,10 +1,10 @@
-// Module ID: 14004
-// Function ID: 14005
+// Module ID: 14061
+// Function ID: 14062
 // Name: AutomatedUnderageAppealStatus
-// Dependencies: [19, 17, 11286, 7807, 676, 21, 1236, 4299, 5827, 1297, 589, 4303, 712, 14005, 11320, 11293, 14006, 4730, 11292, 698, 7064, 7069, 4271, 14007, 2007, 14008, 14010, 2]
+// Dependencies: [19, 17, 11340, 7846, 676, 21, 1236, 4340, 5866, 1297, 589, 4344, 712, 14062, 11374, 11347, 14063, 4770, 11346, 698, 7103, 7108, 4312, 14064, 2007, 14065, 14067, 2]
 // Exports: default
 
-// Module 14004 (AutomatedUnderageAppealStatus)
+// Module 14061 (AutomatedUnderageAppealStatus)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "useMountLayoutEffect";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";

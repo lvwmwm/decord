@@ -1,10 +1,10 @@
-// Module ID: 16722
-// Function ID: 16723
+// Module ID: 16780
+// Function ID: 16781
 // Name: componentDidMount
-// Dependencies: [109, 5, 19, 17, 1984, 1218, 1990, 1983, 1910, 9028, 16709, 16704, 676, 16711, 21, 4303, 712, 4031, 5270, 6010, 1236, 4498, 16713, 12, 698, 9003, 16723, 4021, 9883, 8451, 5232, 11051, 4642, 1297, 5767, 5374, 16724, 16731, 16733, 16734, 4712, 7969, 1499, 589, 3953, 5714, 2]
+// Dependencies: [109, 5, 19, 17, 1984, 1218, 1990, 1983, 1910, 9067, 16767, 16762, 676, 16769, 21, 4344, 712, 4072, 5309, 6049, 1236, 4538, 16771, 12, 698, 9042, 16781, 4062, 9924, 8490, 5271, 11104, 4682, 1297, 5806, 5413, 16782, 16789, 16791, 16792, 4752, 8008, 1499, 589, 3994, 5753, 2]
 // Exports: default
 
-// Module 16722 (componentDidMount)
+// Module 16780 (componentDidMount)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import fetchFingerprint from "fetchFingerprint";
 import importAllResult from "HeaderActionButton";
@@ -392,7 +392,7 @@ prototype["updateNavigation"] = function updateNavigation(role, submitting) {
   submitting = this.state.submitting;
   let setOptionsResult = { headerLeft: null, headerRight: null, headerTitle: null };
   const sectionChanges = self.getSectionChanges();
-  setOptionsResult[0] = role(5270).getHeaderConditionalBackButton(self.handleBack);
+  setOptionsResult[0] = role(5309).getHeaderConditionalBackButton(self.handleBack);
   if (submitting) {
     let fn = () => callback(role(table[18]).HeaderSubmittingIndicator, {});
   } else if (sectionChanges) {
@@ -421,23 +421,23 @@ prototype["renderSubScreenButtons"] = function renderSubScreenButtons() {
   obj[1] = function onPress() {
     return self.onSubScreenValueChange(outer1_17.PERMISSIONS);
   };
-  const items = [callback2(self(5374).TableRow, obj), , ];
+  const items = [callback2(self(5413).TableRow, obj), , ];
   obj = { label: null, onPress: null, arrow: true };
   const intl2 = self(1236).intl;
   obj[0] = intl2.string(self(1236).t["5//Muu"]);
   obj[1] = function onPress() {
     return self.onSubScreenValueChange(outer1_17.VERIFICATIONS);
   };
-  items[1] = callback2(self(5374).TableRow, obj);
+  items[1] = callback2(self(5413).TableRow, obj);
   const obj1 = { label: null, onPress: null, arrow: true };
   const intl3 = self(1236).intl;
   obj1[0] = intl3.string(self(1236).t.J4ZtH1);
   obj1[1] = function onPress() {
     return self.onSubScreenValueChange(outer1_17.MEMBERS);
   };
-  items[2] = callback2(self(5374).TableRow, obj1);
+  items[2] = callback2(self(5413).TableRow, obj1);
   obj[1] = items;
-  return callback3(self(5767).TableRowGroup, obj);
+  return callback3(self(5806).TableRowGroup, obj);
 };
 prototype["renderDeleteButton"] = function renderDeleteButton() {
   let obj = { hasIcons: false, children: null };
@@ -445,8 +445,8 @@ prototype["renderDeleteButton"] = function renderDeleteButton() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.c9ej8n);
   obj[2] = this.handleDeleteRole;
-  obj[1] = callback2(require(5374) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[1] = callback2(require(5413) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5806) /* TableRowGroupTitle */.TableRowGroup, obj);
 };
 prototype["renderManagedRoleWarningText"] = function renderManagedRoleWarningText() {
   let obj = { style: createCacheKey(this.context).managedRolesWarningContainer, children: null };
@@ -504,7 +504,7 @@ prototype["render"] = function render() {
     ({ handleNameChanged: obj3[6], handleMentionableChanged: obj3[7], handleHoistChanged: obj3[8] } = self);
     obj[9] = locked;
     obj[10] = newRole;
-    let tmp11Result = callback2(importDefault(16724), obj);
+    let tmp11Result = callback2(importDefault(16782), obj);
   } else if (tmp9.PERMISSIONS === effectiveSection) {
     obj = { guild: null, role: null, permissions: null, onPermissionsChanged: null, contentContainerStyle: null };
     obj[0] = guild;
@@ -512,7 +512,7 @@ prototype["render"] = function render() {
     obj[2] = permissions;
     obj[3] = self.handlePermissionsChanged;
     obj[4] = self.props.contentContainerStyle;
-    tmp11Result = callback2(importDefault(16731), obj);
+    tmp11Result = callback2(importDefault(16789), obj);
   } else if (tmp9.MEMBERS === effectiveSection) {
     obj = { guild: null, role: null, locked: null, contentContainerStyle: null };
     obj[0] = guild;
@@ -523,16 +523,16 @@ prototype["render"] = function render() {
     }
     obj[2] = tmp15;
     obj[3] = self.props.contentContainerStyle;
-    tmp11Result = callback2(importDefault(16733), obj);
+    tmp11Result = callback2(importDefault(16791), obj);
     const tmp11 = callback2;
-    const tmp14 = importDefault(16733);
+    const tmp14 = importDefault(16791);
   } else if (tmp9.VERIFICATIONS === effectiveSection) {
     const obj1 = { guild: null, role: null, locked: null, integrations: null };
     obj1[0] = guild;
     obj1[1] = role;
     obj1[2] = locked;
     obj1[3] = integrations;
-    tmp11Result = callback2(importDefault(16734), obj1);
+    tmp11Result = callback2(importDefault(16792), obj1);
   }
   const obj2 = { style: tmp.container, children: null };
   if (tmp2) {
@@ -542,7 +542,7 @@ prototype["render"] = function render() {
     obj4[1] = importDefault(712).space.PX_16;
     obj3[1] = obj4;
     obj3[2] = tmp11Result;
-    let tmp22Result = tmp22(tmp24(4712).Stack, obj3);
+    let tmp22Result = tmp22(tmp24(4752).Stack, obj3);
   } else {
     const obj5 = { contentContainerStyle: null, children: null };
     obj5[0] = tmp.form;
@@ -570,8 +570,8 @@ prototype["render"] = function render() {
     }
     items[3] = renderDeleteButtonResult;
     obj6[1] = items;
-    obj5[1] = closure_23(tmp24(4712).Stack, obj6);
-    tmp22Result = tmp22(tmp24(7969).Form, obj5);
+    obj5[1] = closure_23(tmp24(4752).Stack, obj6);
+    tmp22Result = tmp22(tmp24(8008).Form, obj5);
     const tmp26 = closure_23;
   }
   obj2[1] = tmp22Result;

@@ -1,9 +1,9 @@
-// Module ID: 16942
-// Function ID: 16943
+// Module ID: 17000
+// Function ID: 17001
 // Name: AVErrorStreamFailedToStartDefinition
-// Dependencies: [676, 9175, 16933, 4367, 2]
+// Dependencies: [676, 9215, 16991, 4407, 2]
 
-// Module 16942 (AVErrorStreamFailedToStartDefinition)
+// Module 17000 (AVErrorStreamFailedToStartDefinition)
 import { ApplicationStreamStates } from "ME";
 
 const result = require("getVoiceChannelErrorContext").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamFailedToStart.tsx");
@@ -19,9 +19,9 @@ export const AVErrorStreamFailedToStartDefinition = {
       return tmp;
     });
     return found.map((currentUserActiveStream) => {
-      const obj = { type: callback(9175).AVError.STREAM_FAILED_TO_START };
-      const obj2 = callback(16933);
-      const merged = Object.assign(obj2.getStreamErrorContext(callback(4367).encodeStreamKey(currentUserActiveStream)));
+      const obj = { type: callback(9215).AVError.STREAM_FAILED_TO_START };
+      const obj2 = callback(16991);
+      const merged = Object.assign(obj2.getStreamErrorContext(callback(4407).encodeStreamKey(currentUserActiveStream)));
       return obj;
     });
   },

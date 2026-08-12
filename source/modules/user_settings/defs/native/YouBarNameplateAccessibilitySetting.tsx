@@ -1,9 +1,9 @@
-// Module ID: 14604
-// Function ID: 14605
+// Module ID: 14662
+// Function ID: 14663
 // Name: toggle
-// Dependencies: [4295, 8084, 10452, 1236, 589, 13720, 2]
+// Dependencies: [4336, 8123, 10493, 1236, 589, 13777, 2]
 
-// Module 14604 (toggle)
+// Module 14662 (toggle)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
@@ -19,7 +19,7 @@ createToggle = {
     return require(589) /* initialize */.useStateFromStores(items, () => obj.animateYouBarNameplate);
   },
   onValueChange(animateNameplate) {
-    let obj = require(13720) /* setFontSize */;
+    let obj = require(13777) /* setFontSize */;
     obj = { animateNameplate };
     return obj.setYouBarAnimations(obj);
   }

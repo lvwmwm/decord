@@ -1,10 +1,10 @@
-// Module ID: 7650
-// Function ID: 7651
+// Module ID: 7689
+// Function ID: 7690
 // Name: useIsBuyNitroPurchaseBlocked
-// Dependencies: [5858, 644, 589, 2]
+// Dependencies: [5897, 644, 589, 2]
 // Exports: useIsBuyNitroPurchaseBlocked
 
-// Module 7650 (useIsBuyNitroPurchaseBlocked)
+// Module 7689 (useIsBuyNitroPurchaseBlocked)
 import updateProduct from "updateProduct";
 import keys from "keys";
 

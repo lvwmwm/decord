@@ -1,9 +1,9 @@
-// Module ID: 13000
-// Function ID: 13001
+// Module ID: 13059
+// Function ID: 13060
 // Name: init
-// Dependencies: [3957, 4319, 13001, 589, 709, 2]
+// Dependencies: [3998, 4360, 13060, 589, 709, 2]
 
-// Module 13000 (init)
+// Module 13059 (init)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import updateVoiceState from "updateVoiceState";
 import { Store } from "initialize";
@@ -49,8 +49,8 @@ function processUserInChannel(channelId, id) {
             delete tmp[tmp2];
           }
           if (flag3) {
-            const result = importDefault(13001).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
-            const obj4 = importDefault(13001);
+            const result = importDefault(13060).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
+            const obj4 = importDefault(13060);
           }
           return flag4;
         }

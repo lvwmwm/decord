@@ -1,9 +1,9 @@
-// Module ID: 4043
-// Function ID: 4044
+// Module ID: 4084
+// Function ID: 4085
 // Name: View
-// Dependencies: [19, 21, 1653, 4044, 4045, 2]
+// Dependencies: [19, 21, 1653, 4085, 4086, 2]
 
-// Module 4043 (View)
+// Module 4084 (View)
 import { jsx } from "jsxProd";
 import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
 import isFabric from "isFabric";

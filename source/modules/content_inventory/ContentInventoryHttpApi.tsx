@@ -1,10 +1,10 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 16968
+// Function ID: 16969
 // Name: _getMyContentInventory
-// Dependencies: [5, 8926, 676, 530, 4202, 709, 1236, 2]
+// Dependencies: [5, 8965, 676, 530, 4243, 709, 1236, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 16910 (_getMyContentInventory)
+// Module 16968 (_getMyContentInventory)
 import dispatcher from "dispatcher";
 import { ContentInventoryFeedKey } from "ContentInventoryFeedKey";
 import { Endpoints } from "ME";
@@ -58,7 +58,7 @@ function _getMyContentInventory() {
               date = undefined;
               date = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -88,7 +88,7 @@ function _getMyContentInventory() {
           } else if (2 === tmp7) {
             constants = 0;
             c6 = body;
-            const aPIError = new callback(4202).APIError(c6);
+            const aPIError = new callback(4243).APIError(c6);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -198,7 +198,7 @@ function _getContentInventoryOutbox() {
             obj4 = { type: "CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE", userId: null };
             obj4[1] = callback;
             obj4.dispatch(obj4);
-            const aPIError = new callback(4202).APIError(dependencyMap);
+            const aPIError = new callback(4243).APIError(dependencyMap);
             throw aPIError;
           } else if (arg0 === 1) {
             c7 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 4148
-// Function ID: 4149
+// Module ID: 4189
+// Function ID: 4190
 // Name: nameFromUser
-// Dependencies: [4149, 1922, 676, 589, 1236, 2]
+// Dependencies: [4190, 1922, 676, 589, 1236, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
 
-// Module 4148 (nameFromUser)
+// Module 4189 (nameFromUser)
 import initialize from "initialize";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";

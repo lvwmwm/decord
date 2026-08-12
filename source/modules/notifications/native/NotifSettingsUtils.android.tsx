@@ -1,9 +1,9 @@
-// Module ID: 13731
-// Function ID: 13732
+// Module ID: 13788
+// Function ID: 13789
 // Name: inferImportanceFromBehavior
-// Dependencies: [13727, 1236, 13732, 13733, 1208, 2]
+// Dependencies: [13784, 1236, 13789, 13790, 1208, 2]
 
-// Module 13731 (inferImportanceFromBehavior)
+// Module 13788 (inferImportanceFromBehavior)
 import items2 from "items2";
 
 let c3;
@@ -59,7 +59,7 @@ function formatSetting(item10022, arg1) {
 function buildChannelsAndMapping() {
   let mappings;
   let settings;
-  let obj = map(13733);
+  let obj = map(13790);
   const assignedNotifSettingsAndMappings = obj.getAssignedNotifSettingsAndMappings();
   ({ settings, mappings } = assignedNotifSettingsAndMappings);
   const obj2 = (function computeInheritedImportances(mappings) {
@@ -160,7 +160,7 @@ export default {
   clear() {
     let registerAndroidNotifGroupsAndChannels;
     let registerAndroidNotifTypeMappings;
-    let obj = importDefault(13732);
+    let obj = importDefault(13789);
     if (obj == null) {
       obj = {};
     }
@@ -178,7 +178,7 @@ export default {
     let mapping;
     let registerAndroidNotifGroupsAndChannels;
     let registerAndroidNotifTypeMappings;
-    let obj = importDefault(13732);
+    let obj = importDefault(13789);
     if (obj == null) {
       obj = {};
     }

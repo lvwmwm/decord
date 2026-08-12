@@ -1,10 +1,10 @@
-// Module ID: 12202
-// Function ID: 12203
+// Module ID: 12265
+// Function ID: 12266
 // Name: ReportContent
-// Dependencies: [32, 19, 17, 21, 4303, 712, 1499, 9289, 7316, 4509, 1236, 6010, 5326, 5270, 4299, 7987, 7986, 7792, 4714, 7978, 5783, 2]
+// Dependencies: [32, 19, 17, 21, 4344, 712, 1499, 9329, 7355, 4549, 1236, 6049, 5365, 5309, 4340, 8026, 8025, 7831, 4754, 8017, 5822, 2]
 // Exports: default
 
-// Module 12202 (ReportContent)
+// Module 12265 (ReportContent)
 import _slicedToArray from "_slicedToArray";
 import TextArea from "TextArea";
 import get_ActivityIndicator from "TextInput";
@@ -132,7 +132,7 @@ function ReportContent(applicationId) {
     const intl4 = tmp2(tmp3[10]).intl;
     obj1[2] = intl4.string(tmp2(tmp3[10]).t.IQHicr);
     const items3 = [tmp15(tmp2(tmp3[14]).Text, obj1), ];
-    let obj2 = { value: "Array", onChange: false, hasIcons: null, children: "mobile-text-heading-primary" };
+    let obj2 = { value: "Array", onChange: false, hasIcons: null, children: 6 };
     obj2[1] = function onChange(arg0) {
       let closure_0 = arg0;
       const timerId = setTimeout(() => {
@@ -266,6 +266,6 @@ export default function GameDetectionReportModal(applicationId) {
     }
   }), []);
   const initialRouteStack = [{ name: REPORT, params: { applicationId: applicationId.applicationId } }];
-  return callback2(require(5783) /* NavigationStack */.Navigator, { screens, initialRouteStack });
+  return callback2(require(5822) /* NavigationStack */.Navigator, { screens, initialRouteStack });
 };
 export const MODAL_KEY = "game-detection-report";

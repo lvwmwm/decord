@@ -1,10 +1,10 @@
-// Module ID: 12646
-// Function ID: 12647
+// Module ID: 12705
+// Function ID: 12706
 // Name: UserPreview
-// Dependencies: [19, 17, 21, 4303, 712, 4152, 4299, 1236, 1297, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 4193, 4340, 1236, 1297, 2]
 // Exports: default
 
-// Module 12646 (UserPreview)
+// Module 12705 (UserPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,13 +27,13 @@ const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/
 export default function UserPreview(user) {
   user = user.user;
   const tmp = createCacheKey();
-  let obj = require(4152) /* hexToRgba */;
+  let obj = require(4193) /* hexToRgba */;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.Rsth7z).toUpperCase();
-  const items = [callback(require(4299) /* Text */.Text, obj), ];
+  const items = [callback(require(4340) /* Text */.Text, obj), ];
   const obj1 = { style: items1, children: null };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
   const obj2 = { size: null, user: null, guildId: "Array" };
@@ -45,9 +45,9 @@ export default function UserPreview(user) {
   if (tmp7Result) {
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj4[2] = user.globalName;
-    tmp7Result = tmp7(tmp2(4299).Text, obj4);
+    tmp7Result = tmp7(tmp2(4340).Text, obj4);
   }
-  const items3 = [tmp7Result, callback(require(4299) /* Text */.Text, { color: "text-default", variant: "text-sm/normal", children: user.username })];
+  const items3 = [tmp7Result, callback(require(4340) /* Text */.Text, { color: "text-default", variant: "text-sm/normal", children: user.username })];
   obj3[1] = items3;
   items2[1] = closure_4(View, obj3);
   obj1[1] = items2;

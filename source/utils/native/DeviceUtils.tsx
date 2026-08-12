@@ -1,10 +1,10 @@
-// Module ID: 4283
-// Function ID: 4284
+// Module ID: 4324
+// Function ID: 4325
 // Name: DCDDeviceManager
 // Dependencies: [17, 500, 671, 595, 2]
 // Exports: getDevice, getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersion, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS, isOrientationLockSupported
 
-// Module 4283 (DCDDeviceManager)
+// Module 4324 (DCDDeviceManager)
 import set from "set";
 import set from "enforcing";
 

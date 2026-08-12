@@ -1,17 +1,17 @@
-// Module ID: 15129
-// Function ID: 15130
+// Module ID: 15186
+// Function ID: 15187
 // Name: isDateValidDateOfBirth
-// Dependencies: [3902, 2]
+// Dependencies: [3943, 2]
 // Exports: default
 
-// Module 15129 (isDateValidDateOfBirth)
+// Module 15186 (isDateValidDateOfBirth)
 const result = require("set").fileFinishedImporting("modules/auth/native/experiment/isDateValidDateOfBirth.tsx");
 
 export default function isDateValidDateOfBirth(arg0) {
   let tmp = null != arg0;
   if (tmp) {
-    tmp = importDefault(3902)().diff(arg0, "days") >= 1;
-    const obj = importDefault(3902)();
+    tmp = importDefault(3943)().diff(arg0, "days") >= 1;
+    const obj = importDefault(3943)();
   }
   return tmp;
 };

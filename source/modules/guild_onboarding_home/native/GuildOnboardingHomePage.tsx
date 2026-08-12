@@ -1,10 +1,10 @@
-// Module ID: 15682
-// Function ID: 15683
+// Module ID: 15738
+// Function ID: 15739
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 4217, 4505, 4506, 676, 21, 4042, 589, 5845, 11660, 698, 4498, 5232, 15683, 15684, 15689, 15693, 15694, 15697, 5844, 2]
+// Dependencies: [19, 4258, 4545, 4546, 676, 21, 4083, 589, 5884, 11717, 698, 4538, 5271, 15739, 15740, 15745, 15749, 15750, 15753, 5883, 2]
 // Exports: default
 
-// Module 15682 (GuildOnboardingHomePage)
+// Module 15738 (GuildOnboardingHomePage)
 import useCanSeeOnboardingHome from "useCanSeeOnboardingHome";
 import getHash from "getHash";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
@@ -22,13 +22,13 @@ function GuildOnboardingHomePage(guildId) {
   let stateFromStores;
   let dependencyMap;
   let tmp = dependencyMap;
-  let obj = guildId(4042);
+  let obj = guildId(4083);
   const sharedValue = obj.useSharedValue(-999);
   let obj1 = guildId(589);
   const items = [handleSettingsLoadSuccess];
   stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getSettings(guildId));
   let tmp4 = stateFromStores;
-  const tmp5 = stateFromStores(5845)(guildId);
+  const tmp5 = stateFromStores(5884)(guildId);
   let tmp6 = !tmp5;
   if (!tmp5) {
     let num;
@@ -101,16 +101,16 @@ function GuildOnboardingHomePage(guildId) {
     obj = { guildId: null, hideDescription: null };
     obj[0] = guildId;
     obj[1] = tmp5;
-    const items3 = [callback(tmp4(15684), obj), ];
+    const items3 = [callback(tmp4(15740), obj), ];
     if (tmp5) {
       obj1 = { children: null };
       let obj2 = { guildId: null };
       obj2[0] = guildId;
-      const items4 = [tmp12(tmp4(15689), obj2), , ];
+      const items4 = [tmp12(tmp4(15745), obj2), , ];
       let obj3 = { guildId: null };
       obj3[0] = guildId;
-      items4[1] = tmp12(tmp4(15693), obj3);
-      tmp4 = tmp4(15694);
+      items4[1] = tmp12(tmp4(15749), obj3);
+      tmp4 = tmp4(15750);
       const obj4 = { guildId: null };
       obj4[0] = guildId;
       tmp = tmp12(tmp4, obj4);
@@ -120,12 +120,12 @@ function GuildOnboardingHomePage(guildId) {
     } else {
       let obj5 = { guildId: null };
       obj5[0] = guildId;
-      tmp12Result = tmp12(tmp4(15697), obj5);
+      tmp12Result = tmp12(tmp4(15753), obj5);
     }
     items3[1] = tmp12Result;
     obj[2] = items3;
-    closure_11(tmp4(15683), obj);
-    const tmp4Result = tmp4(15683);
+    closure_11(tmp4(15739), obj);
+    const tmp4Result = tmp4(15739);
   }
 }
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);

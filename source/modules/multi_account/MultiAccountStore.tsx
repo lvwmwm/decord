@@ -1,9 +1,9 @@
-// Module ID: 11785
-// Function ID: 11786
+// Module ID: 11842
+// Function ID: 11843
 // Name: initialize
-// Dependencies: [11786, 11787, 707, 11788, 589, 709, 2]
+// Dependencies: [11843, 11844, 707, 11845, 589, 709, 2]
 
-// Module 11785 (initialize)
+// Module 11842 (initialize)
 import { MAX_ACCOUNTS } from "MAX_ACCOUNTS";
 import { PersistedStore } from "initialize";
 
@@ -70,7 +70,7 @@ obj = {
     let id = user.id;
     let tmp = !c5;
     if (!c5) {
-      tmp = importDefault(11787)(user);
+      tmp = importDefault(11844)(user);
     }
     if (tmp) {
       c5 = true;
@@ -136,7 +136,7 @@ obj = {
     let from;
     let to;
     ({ from, to } = arg0);
-    closure_8 = require(11788) /* calculatePositionDeltas */.moveItemFromTo(closure_8, from, to);
+    closure_8 = require(11845) /* calculatePositionDeltas */.moveItemFromTo(closure_8, from, to);
   },
   CURRENT_USER_UPDATE: function handleCurrentUserUpdate(user) {
     user = user.user;

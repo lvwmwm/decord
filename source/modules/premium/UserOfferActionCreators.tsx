@@ -1,10 +1,10 @@
-// Module ID: 7594
-// Function ID: 7595
+// Module ID: 7633
+// Function ID: 7634
 // Name: _fetchUserOffer
-// Dependencies: [5, 7327, 1924, 676, 500, 709, 698, 530, 7329, 1208, 4125, 1377, 1374, 2]
+// Dependencies: [5, 7366, 1924, 676, 500, 709, 698, 530, 7368, 1208, 4166, 1377, 1374, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer
 
-// Module 7594 (_fetchUserOffer)
+// Module 7633 (_fetchUserOffer)
 import dispatcher from "dispatcher";
 import createFromServer from "createFromServer";
 import { PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID as closure_5 } from "GuildFeatures";
@@ -69,7 +69,7 @@ function _fetchUserOffer() {
                   flag = true;
                 }
                 if (obj1 === undefined) {
-                  obj1 = { offerId: "Array", paymentGatewayOverride: "HermesInternal" };
+                  obj1 = { offerId: "isArray", paymentGatewayOverride: "accessibilityRole" };
                 }
                 throwTypeErrorResult = retries;
                 throwTypeErrorResult = createFromServer;
@@ -84,7 +84,7 @@ function _fetchUserOffer() {
                 let error;
                 discount_id = 1;
                 c12 = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "ct", done: true };
               }
             } else if (1 === tmp7) {
               if (arg0 === 1) {

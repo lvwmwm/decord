@@ -1,9 +1,9 @@
-// Module ID: 4374
-// Function ID: 4375
+// Module ID: 4414
+// Function ID: 4415
 // Name: initialize
-// Dependencies: [4364, 595, 589, 12, 709, 2]
+// Dependencies: [4405, 595, 589, 12, 709, 2]
 
-// Module 4374 (initialize)
+// Module 4414 (initialize)
 import { DeviceTypes } from "DesktopSources";
 import { Store } from "initialize";
 

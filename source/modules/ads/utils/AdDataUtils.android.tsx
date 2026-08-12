@@ -1,10 +1,10 @@
-// Module ID: 7190
-// Function ID: 7191
+// Module ID: 7229
+// Function ID: 7230
 // Name: getAdUser
-// Dependencies: [32, 19, 7191, 7192, 7193, 2]
+// Dependencies: [32, 19, 7230, 7231, 7232, 2]
 // Exports: getAdUser, useAdUser
 
-// Module 7190 (getAdUser)
+// Module 7229 (getAdUser)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import adUser from "adUser";
@@ -18,8 +18,8 @@ export const getAdUser = function getAdUser(questContentName) {
   if (null == adUser) {
     if (!adUser.hasFetchFailed) {
       if (!adUser.isFetching) {
-        adUser = require(7193) /* _fetchAdUser */.fetchAdUser(questContentName);
-        const obj = require(7193) /* _fetchAdUser */;
+        adUser = require(7232) /* _fetchAdUser */.fetchAdUser(questContentName);
+        const obj = require(7232) /* _fetchAdUser */;
       }
       let resolved = new Promise((arg0) => {
         let closure_0 = arg0;

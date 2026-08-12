@@ -1,10 +1,10 @@
-// Module ID: 6964
-// Function ID: 6965
+// Module ID: 7003
+// Function ID: 7004
 // Name: createFetchKeys
-// Dependencies: [5, 676, 1236, 5000, 6965, 4239, 1363, 530, 2]
+// Dependencies: [5, 676, 1236, 5040, 7004, 4280, 1363, 530, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 6964 (createFetchKeys)
+// Module 7003 (createFetchKeys)
 import useTheme from "useTheme";
 import { Endpoints } from "ME";
 
@@ -234,8 +234,8 @@ export const getIntegrationLabel = function getIntegrationLabel(arg0) {
   }
 };
 export const useGetIntegrationIconString = function useGetIntegrationIconString(arg0) {
-  const obj = importDefault(5000);
-  const value = obj.get(require(6965) /* PlatformTypes */.useLegacyPlatformType(arg0));
+  const obj = importDefault(5040);
+  const value = obj.get(require(7004) /* PlatformTypes */.useLegacyPlatformType(arg0));
   let tmp5 = null;
   if (null != value) {
     const items = [, ];

@@ -1,9 +1,9 @@
-// Module ID: 6141
-// Function ID: 6142
+// Module ID: 6180
+// Function ID: 6181
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6141 (metadata)
+// Module 6180 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BugSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/1682573b4a1f69ff627e91d746d5150a215a2d2fb4f4e1866495004d0d99e305.png";

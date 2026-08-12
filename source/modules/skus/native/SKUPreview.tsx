@@ -1,10 +1,10 @@
-// Module ID: 9360
-// Function ID: 9361
+// Module ID: 9400
+// Function ID: 9401
 // Name: CollectiblesPreview
-// Dependencies: [19, 17, 7008, 676, 21, 4303, 9361, 712, 9380, 9381, 1949, 9393, 9383, 9401, 9403, 8217, 9404, 4024, 4031, 1370, 2]
+// Dependencies: [19, 17, 7047, 676, 21, 4344, 9401, 712, 9420, 9421, 1949, 9433, 9423, 9441, 9443, 8256, 9444, 4065, 4072, 1370, 2]
 // Exports: default
 
-// Module 9360 (CollectiblesPreview)
+// Module 9400 (CollectiblesPreview)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
 import { View } from "map";
 import { transformSKUToCollectiblesItem as closure_5 } from "createCollectiblesItemsFromServerResponse";
@@ -28,7 +28,7 @@ class CollectiblesPreview {
       obj[1] = size;
       size2 = obj;
     }
-    tmp3 = f46525(size2.width, size2.height);
+    tmp3 = f46622(size2.width, size2.height);
     if ("bundle" === collectiblesItemData.type) {
       tmp18 = closure_0;
       tmp19 = closure_2;
@@ -48,8 +48,8 @@ class CollectiblesPreview {
       obj3 = { deco: null, pfx: null, nameplate: null, size: "small", previewAssets: null, disableStaticBackground: true, targetSize: null };
       ({ firstAvatarDecoration: obj15[0], firstProfileEffect: obj15[1], firstNameplate: obj15[2] } = itemsSortingHat);
       obj3[4] = collectiblesItemData.previewAssets;
-      tmp27 = f46525;
-      obj3[6] = f46525;
+      tmp27 = f46622;
+      obj3[6] = f46622;
       obj2[1] = jsx(require("BundleStaticPreviewContent"), obj3);
       obj1[1] = jsx(View, obj2);
       return jsx(View, obj1);
@@ -125,7 +125,7 @@ function CollectiblesSKUPreview(sku) {
   sku = sku.sku;
   let DEFAULT_ITEM_SIZE = sku.size;
   if (DEFAULT_ITEM_SIZE === undefined) {
-    DEFAULT_ITEM_SIZE = sku(9361).DEFAULT_ITEM_SIZE;
+    DEFAULT_ITEM_SIZE = sku(9401).DEFAULT_ITEM_SIZE;
   }
   const items = [sku];
   const memo = React.useMemo(() => outer1_5(sku), items);
@@ -153,7 +153,7 @@ class SocialLayerStorefrontSKUPreview {
       obj[1] = DEFAULT_ITEM_SIZE;
       size = obj;
     }
-    tmp3 = f46525(size.width, size.height);
+    tmp3 = f46622(size.width, size.height);
     tmp4 = closure_2;
     obj = require("apexExperiment");
     tmp5 = null;
@@ -183,7 +183,7 @@ class PremiumSKUPreview {
       obj[1] = DEFAULT_ITEM_SIZE;
       size = obj;
     }
-    tmp3 = f46525(size.width, size.height);
+    tmp3 = f46622(size.width, size.height);
     obj = require("map");
     obj1 = { style: tmp3.premiumRiveContainer, children: null };
     token = obj.useToken(require("Themes").colors.TEXT_DEFAULT);
@@ -193,14 +193,14 @@ class PremiumSKUPreview {
 }
 let closure_8 = createCacheKey.createStyles((width, height) => {
   let obj = { container: { width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }, scaler: null, bundleContainer: null, socialLayerStorefrontContainer: null, profileFrameContainer: null, premiumRiveContainer: null };
-  obj = { width: require(9361) /* SourceIcon */.DEFAULT_ITEM_SIZE, height: require(9361) /* SourceIcon */.DEFAULT_ITEM_SIZE, justifyContent: "center", alignItems: "center", transform: null };
-  obj = { scaleX: width / require(9361) /* SourceIcon */.DEFAULT_ITEM_SIZE };
-  const items = [obj, { scaleY: height / require(9361) /* SourceIcon */.DEFAULT_ITEM_SIZE }];
+  obj = { width: require(9401) /* SourceIcon */.DEFAULT_ITEM_SIZE, height: require(9401) /* SourceIcon */.DEFAULT_ITEM_SIZE, justifyContent: "center", alignItems: "center", transform: null };
+  obj = { scaleX: width / require(9401) /* SourceIcon */.DEFAULT_ITEM_SIZE };
+  const items = [obj, { scaleY: height / require(9401) /* SourceIcon */.DEFAULT_ITEM_SIZE }];
   obj[4] = items;
   obj[1] = obj;
   obj[2] = { paddingTop: 20 };
   obj[3] = { width, height };
-  const obj1 = { scaleY: height / require(9361) /* SourceIcon */.DEFAULT_ITEM_SIZE };
+  const obj1 = { scaleY: height / require(9401) /* SourceIcon */.DEFAULT_ITEM_SIZE };
   obj[4] = { padding: importDefault(712).space.PX_8 };
   obj[5] = { width, height };
   return obj;
@@ -213,7 +213,7 @@ export default function SKUPreview(arg0) {
   let sku;
   ({ sku, size } = arg0);
   if (size === undefined) {
-    size = require(9361) /* SourceIcon */.DEFAULT_ITEM_SIZE;
+    size = require(9401) /* SourceIcon */.DEFAULT_ITEM_SIZE;
   }
   const productLine = sku.productLine;
   if (SKUProductLines.COLLECTIBLES === productLine) {

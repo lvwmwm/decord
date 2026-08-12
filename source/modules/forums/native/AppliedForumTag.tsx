@@ -1,10 +1,10 @@
-// Module ID: 10008
-// Function ID: 10009
+// Module ID: 10049
+// Function ID: 10050
 // Name: AppliedForumTag
-// Dependencies: [19, 17, 5176, 1925, 21, 4303, 712, 589, 10009, 1236, 5360, 1435, 4299, 2]
+// Dependencies: [19, 17, 5215, 1925, 21, 4344, 712, 589, 10050, 1236, 5399, 1435, 4340, 2]
 // Exports: AppliedForumTagPill
 
-// Module 10008 (AppliedForumTag)
+// Module 10049 (AppliedForumTag)
 import "noop";
 import { View } from "get ActivityIndicator";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -22,7 +22,7 @@ class AppliedForumTag {
     name = undefined;
     emojiId = undefined;
     emojiName = undefined;
-    f84288 = undefined;
+    f84471 = undefined;
     c6 = undefined;
     containerStyle = jsxs();
     ({ name, emojiId, emojiName } = tag);
@@ -30,7 +30,7 @@ class AppliedForumTag {
     obj = require("initialize");
     items = [];
     items[0] = emojiName;
-    f84288 = obj.useStateFromStores(items, () => {
+    f84471 = obj.useStateFromStores(items, () => {
       let usableCustomEmojiById = null;
       if (null != c3) {
         usableCustomEmojiById = _undefined2.getUsableCustomEmojiById(tmp);

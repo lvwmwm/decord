@@ -1,10 +1,10 @@
-// Module ID: 15083
-// Function ID: 15084
+// Module ID: 15140
+// Function ID: 15141
 // Name: ScreenRecordingActionSheet
-// Dependencies: [19, 17, 15079, 21, 4303, 712, 4299, 4714, 4271, 4846, 5326, 4293, 5764, 2]
+// Dependencies: [19, 17, 15136, 21, 4344, 712, 4340, 4754, 4312, 4886, 5365, 4334, 5803, 2]
 // Exports: default
 
-// Module 15083 (ScreenRecordingActionSheet)
+// Module 15140 (ScreenRecordingActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { useScreenRecordingStore } from "useScreenRecordingStore";
@@ -71,7 +71,7 @@ export default function ScreenRecordingActionSheet() {
     }
   }
   obj = { style: tmp.container, children: null };
-  const items = [callback(_require(4299).Text, { variant: "heading-xl/bold", children: str }), callback(_require(4299).Text, { variant: "text-md/normal", children: str2 }), ];
+  const items = [callback(_require(4340).Text, { variant: "heading-xl/bold", children: str }), callback(_require(4340).Text, { variant: "text-md/normal", children: str2 }), ];
   obj = {
     disabled: tmp2,
     text: "Done",
@@ -81,7 +81,7 @@ export default function ScreenRecordingActionSheet() {
       callback2(outer1_2[8]).hideActionSheet();
     }
   };
-  items[2] = callback(_require(4714).Button, obj);
+  items[2] = callback(_require(4754).Button, obj);
   obj[1] = items;
   const obj1 = { style: tmp.container, children: null };
   const obj2 = {
@@ -92,21 +92,21 @@ export default function ScreenRecordingActionSheet() {
     accessibilityLabel: "close",
     children: null
   };
-  obj2[3] = callback(_require(5326).XSmallIcon, { size: "md", color: "text-default" });
-  const items1 = [callback(_require(4846).PressableOpacity, obj2), callback(_require(4299).Text, { variant: "heading-xl/bold", children: tmp5.title }), , ];
+  obj2[3] = callback(_require(5365).XSmallIcon, { size: "md", color: "text-default" });
+  const items1 = [callback(_require(4886).PressableOpacity, obj2), callback(_require(4340).Text, { variant: "heading-xl/bold", children: tmp5.title }), , ];
   const obj4 = { variant: "text-md/normal", children: null };
   const obj3 = { variant: "heading-xl/bold", children: tmp5.title };
   const tmp11 = callback2(View, obj);
   const tmp6 = callback2;
   const tmp9 = _require;
-  obj4[1] = importDefault(4293).parse(tmp5.instructions);
-  items1[2] = callback(_require(4299).Text, obj4);
+  obj4[1] = importDefault(4334).parse(tmp5.instructions);
+  items1[2] = callback(_require(4340).Text, obj4);
   const obj5 = { style: tmp.buttonContainer, children: null };
   let tmp12 = !flag;
   if (flag) {
     tmp12 = tmp2;
   }
-  obj5[1] = callback(_require(4714).Button, {
+  obj5[1] = callback(_require(4754).Button, {
     disabled: tmp12,
     text: "Next",
     loading: tmp2,
@@ -120,5 +120,5 @@ export default function ScreenRecordingActionSheet() {
   if (tmp3) {
     children = tmp11;
   }
-  return callback(tmp9(5764).ActionSheet, { children });
+  return callback(tmp9(5803).ActionSheet, { children });
 };

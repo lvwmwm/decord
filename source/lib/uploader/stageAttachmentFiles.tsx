@@ -1,10 +1,10 @@
-// Module ID: 7302
-// Function ID: 7303
+// Module ID: 7341
+// Function ID: 7342
 // Name: _stageAttachmentFiles
-// Dependencies: [5, 676, 4850, 2]
+// Dependencies: [5, 676, 4890, 2]
 // Exports: default
 
-// Module 7302 (_stageAttachmentFiles)
+// Module 7341 (_stageAttachmentFiles)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { AbortCodes } from "ME";
 
@@ -53,7 +53,7 @@ function _stageAttachmentFiles() {
               closure_3 = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

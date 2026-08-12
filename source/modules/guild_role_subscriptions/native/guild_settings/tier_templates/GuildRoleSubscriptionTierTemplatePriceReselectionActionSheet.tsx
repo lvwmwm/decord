@@ -1,10 +1,10 @@
-// Module ID: 16887
-// Function ID: 16888
+// Module ID: 16945
+// Function ID: 16946
 // Name: PriceOptionRow
-// Dependencies: [32, 19, 17, 1924, 505, 21, 4303, 712, 4032, 9063, 5268, 16791, 15695, 4299, 1236, 5855, 14475, 1628, 5397, 5399, 1297, 4715, 4271, 2]
+// Dependencies: [32, 19, 17, 1924, 505, 21, 4344, 712, 4073, 9102, 5307, 16849, 15751, 4340, 1236, 5894, 14532, 1628, 5436, 5438, 1297, 4755, 4312, 2]
 // Exports: default
 
-// Module 16887 (PriceOptionRow)
+// Module 16945 (PriceOptionRow)
 import _slicedToArray from "_slicedToArray";
 import BottomSheetModal from "BottomSheetModal";
 import get_ActivityIndicator from "useSafeAreaInsets";
@@ -26,7 +26,7 @@ function PriceOptionRow(selected) {
   selected = selected.selected;
   ({ price, onPress } = selected);
   const tmp = createCacheKey();
-  let obj = require(4032) /* useCheckboxA11yNative */;
+  let obj = require(4073) /* useCheckboxA11yNative */;
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const items = [tmp.rowContainer, ];
@@ -38,18 +38,18 @@ function PriceOptionRow(selected) {
   items[1] = containerSelected;
   obj = { style: tmp.rowStatusIcon, source: null };
   const tmp5 = closure_10;
-  const tmp7 = importDefault(9063);
-  obj[1] = importDefault(selected ? 16791 : 15695);
-  const items1 = [closure_9(importDefault(5268), obj), ];
+  const tmp7 = importDefault(9102);
+  obj[1] = importDefault(selected ? 16849 : 15751);
+  const items1 = [closure_9(importDefault(5307), obj), ];
   const obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl = tmp2(1236).intl;
   const obj2 = { price: null, interval: null };
-  let tmp2Result = tmp2(5855);
+  let tmp2Result = tmp2(5894);
   obj2[0] = tmp2Result.formatPrice(price, CurrencyCodes.USD);
-  tmp2Result = tmp2(14475);
+  tmp2Result = tmp2(14532);
   obj2[1] = tmp2Result.formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
   obj1[2] = intl.format(require(1236) /* getSystemLocale */.t.CgmBaG, obj2);
-  items1[1] = closure_9(require(4299) /* Text */.Text, obj1);
+  items1[1] = closure_9(require(4340) /* Text */.Text, obj1);
   obj[4] = items1;
   return tmp5(tmp7, obj);
 }

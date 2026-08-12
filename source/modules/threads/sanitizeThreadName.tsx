@@ -1,10 +1,10 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 8399
+// Function ID: 8400
 // Name: sanitizeThreadName
 // Dependencies: [2]
 // Exports: default
 
-// Module 8360 (sanitizeThreadName)
+// Module 8399 (sanitizeThreadName)
 const result = require("set").fileFinishedImporting("modules/threads/sanitizeThreadName.tsx");
 
 export default function sanitizeThreadName(str) {

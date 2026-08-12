@@ -1,10 +1,10 @@
-// Module ID: 14209
-// Function ID: 14210
+// Module ID: 14266
+// Function ID: 14267
 // Name: PuzzlePieceIcon
-// Dependencies: [19, 21, 712, 4023, 14210, 2]
+// Dependencies: [19, 21, 712, 4064, 14267, 2]
 // Exports: PuzzlePieceIcon
 
-// Module 14209 (PuzzlePieceIcon)
+// Module 14266 (PuzzlePieceIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const PuzzlePieceIcon = function PuzzlePieceIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14210) /* registerAsset */;
+  obj[0] = require(14267) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

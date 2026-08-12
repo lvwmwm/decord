@@ -1,11 +1,11 @@
-// Module ID: 4012
-// Function ID: 4013
+// Module ID: 4053
+// Function ID: 4054
 // Name: sanitizeURLPart
-// Dependencies: [5, 17, 4013, 676, 3, 4014, 4016, 4017, 4018, 4019, 4020, 1236, 4269, 500, 4271, 1488, 4284, 13207, 2]
+// Dependencies: [5, 17, 4054, 676, 3, 4055, 4057, 4058, 4059, 4060, 4061, 1236, 4310, 500, 4312, 1488, 4325, 13264, 2]
 // Exports: default
 
-// Module 4012 (sanitizeURLPart)
-import module_4014 from "module_4014";
+// Module 4053 (sanitizeURLPart)
+import module_4055 from "module_4055";
 import { Linking } from "handleSupportedURL";
 import setContent from "setContent";
 import { WebBrowserType } from "ME";
@@ -136,7 +136,7 @@ function _handleURL() {
               };
               c7 = 1;
               v0 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp8) {

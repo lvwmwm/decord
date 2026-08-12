@@ -1,35 +1,22 @@
-// Module ID: 15895
-// Function ID: 15896
+// Module ID: 15951
+// Function ID: 15952
 // Name: CoachmarkImage
-// Dependencies: [19, 17, 1922, 1388, 21, 4303, 712, 589, 3966, 1236, 2661, 8659, 6029, 1297, 2]
+// Dependencies: [19, 17, 1922, 1388, 21, 4344, 589, 4007, 1236, 2661, 8698, 6068, 2]
 // Exports: default
 
-// Module 15895 (CoachmarkImage)
+// Module 15951 (CoachmarkImage)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "jsxProd";
+import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
-let error;
-let metroImportAll;
 const require = arg1;
 function CoachmarkImage() {
-  const tmp = createCacheKey();
-  let obj = { style: tmp.coachmarkImageContainer, children: null };
-  const items = [callback(require(6029) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" }), ];
-  obj = { style: tmp.betaTag };
-  items[1] = callback(require(1297) /* Button */.BetaTag, obj);
-  obj[1] = items;
-  return callback2(View, obj);
+  return <View style={callback().coachmarkImageContainer}>{jsx(require(6068) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" })}</View>;
 }
-({ jsx: error, jsxs: metroImportAll } = jsxProd);
-createCacheKey = { coachmarkImageContainer: null, betaTag: null };
-createCacheKey = { alignItems: "center", justifyContent: "center", gap: require("Themes").space.PX_12 };
-createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { marginLeft: 0 };
-createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_8 = createCacheKey.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" } });
 let result = require("mergeGuildAvatar").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFlywheelProfileCoachmark.tsx");
 
 export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
@@ -42,7 +29,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   const stateFromStores = visible(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = visible(589);
   const tmp4 = markAsDismissed;
-  const result = markAsDismissed(3966).canUsePremiumProfileCustomization(stateFromStores);
+  const result = markAsDismissed(4007).canUsePremiumProfileCustomization(stateFromStores);
   const intl = visible(1236).intl;
   const string = intl.string;
   const tmp6 = markAsDismissed(2661);
@@ -73,10 +60,10 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
     position: "bottom",
     onDismiss: callback,
     renderImgComponent() {
-      return callback(closure_10, {});
+      return callback(closure_9, {});
     }
   }), items2);
-  const obj2 = markAsDismissed(3966);
-  const coachmark = visible(8659).useCoachmark(visible.targetRef, memo);
+  const obj2 = markAsDismissed(4007);
+  const coachmark = visible(8698).useCoachmark(visible.targetRef, memo);
   return null;
 };

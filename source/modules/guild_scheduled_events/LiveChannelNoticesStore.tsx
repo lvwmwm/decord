@@ -1,9 +1,9 @@
-// Module ID: 15324
-// Function ID: 15325
+// Module ID: 15381
+// Function ID: 15382
 // Name: initialize
 // Dependencies: [1397, 589, 709, 2]
 
-// Module 15324 (initialize)
+// Module 15381 (initialize)
 import { GuildScheduledEventStatus } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import { PersistedStore } from "initialize";
 

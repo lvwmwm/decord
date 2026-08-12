@@ -1,9 +1,9 @@
-// Module ID: 16079
-// Function ID: 16080
+// Module ID: 16136
+// Function ID: 16137
 // Name: CHANNEL_THEME_COLOR_PALETTE
 // Dependencies: [2]
 
-// Module 16079 (CHANNEL_THEME_COLOR_PALETTE)
+// Module 16136 (CHANNEL_THEME_COLOR_PALETTE)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/channel_emoji/ChannelEmojiConstants.tsx");
 
 export const CHANNEL_THEME_COLOR_PALETTE = ["#5865F2", "#9B59B6", "#206694", "#3498DB", "#11806A", "#1ABC9C", "#992D22", "#E91E63", "#E74C3C", "#E67E22", "#F1C40F", "#607D8B"];

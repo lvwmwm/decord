@@ -1,8 +1,8 @@
-// Module ID: 5184
-// Function ID: 5185
-// Dependencies: [5185, 5186, 2]
+// Module ID: 5223
+// Function ID: 5224
+// Dependencies: [5224, 5225, 2]
 
-// Module 5184
+// Module 5223
 const require = arg1;
 const obj = {
   setEmojiLocale(locale) {
@@ -20,7 +20,7 @@ const obj = {
   }
 };
 let tmp2 = new require("setParams")(function loadEmoji(arg0) {
-  const tmp = require(5186) /* emojiTermsImporter */.emojiTermsImporter[arg0];
+  const tmp = require(5225) /* emojiTermsImporter */.emojiTermsImporter[arg0];
   if (undefined !== tmp) {
     let nextPromise = tmp().then((arg0) => arg0.default);
     const tmpResult = tmp();

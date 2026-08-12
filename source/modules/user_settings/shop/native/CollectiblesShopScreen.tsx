@@ -1,10 +1,10 @@
-// Module ID: 14837
-// Function ID: 14838
+// Module ID: 14895
+// Function ID: 14896
 // Name: CollectiblesShopScreen
-// Dependencies: [19, 678, 21, 6880, 14838, 6021, 14839, 5748, 2]
+// Dependencies: [19, 678, 21, 6919, 14896, 6060, 14897, 5787, 2]
 // Exports: default
 
-// Module 14837 (CollectiblesShopScreen)
+// Module 14895 (CollectiblesShopScreen)
 import "noop";
 import { CollectiblesMobileShopScreen as closure_3 } from "items";
 import { jsx } from "jsxProd";
@@ -13,12 +13,12 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/shop/native/CollectiblesShopScreen.tsx");
 
 export default function CollectiblesShopScreen() {
-  let obj = require(6880) /* useSettingNavigationRoute */;
+  let obj = require(6919) /* useSettingNavigationRoute */;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
-  const shopOrientationLock = require(14838) /* useShopOrientationLock */.useShopOrientationLock();
-  const obj2 = require(14838) /* useShopOrientationLock */;
+  const shopOrientationLock = require(14896) /* useShopOrientationLock */.useShopOrientationLock();
+  const obj2 = require(14896) /* useShopOrientationLock */;
   const tmp = require;
-  const giftCardMobileConsumptionHalfsheet = require(6021) /* useGiftCardMobileConsumptionHalfsheet */.useGiftCardMobileConsumptionHalfsheet();
+  const giftCardMobileConsumptionHalfsheet = require(6060) /* useGiftCardMobileConsumptionHalfsheet */.useGiftCardMobileConsumptionHalfsheet();
   const params = settingNavigationRoute.params;
   let screen;
   if (params != null) {
@@ -33,7 +33,7 @@ export default function CollectiblesShopScreen() {
     analyticsSource = params2.analyticsSource;
   }
   if (analyticsSource == null) {
-    analyticsSource = importDefault(5748).COLLECTIBLES_SHOP;
+    analyticsSource = importDefault(5787).COLLECTIBLES_SHOP;
   }
   obj = { analyticsSource, screen, onNavigateAway: null };
   const params3 = settingNavigationRoute.params;
@@ -42,5 +42,5 @@ export default function CollectiblesShopScreen() {
     onNavigateAway = params3.onNavigateAway;
   }
   obj[2] = onNavigateAway;
-  return jsx(tmp(14839).CollectiblesShopV2, { analyticsSource, screen, onNavigateAway: null });
+  return jsx(tmp(14897).CollectiblesShopV2, { analyticsSource, screen, onNavigateAway: null });
 };

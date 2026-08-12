@@ -1,9 +1,9 @@
-// Module ID: 4714
-// Function ID: 4715
+// Module ID: 4754
+// Function ID: 4755
 // Name: Button
-// Dependencies: [2, 4715]
+// Dependencies: [2, 4755]
 
-// Module 4714 (Button)
+// Module 4754 (Button)
 const result = require("set").fileFinishedImporting("design/components/Button/native/Button.native.tsx");
 
 export const Button = require("CollapsingText").BaseTextButton;

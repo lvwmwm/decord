@@ -1,10 +1,10 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 13969
+// Function ID: 13970
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 676, 1924, 21, 4303, 5728, 6912, 698, 4714, 8367, 1236, 7706, 2]
+// Dependencies: [19, 676, 1924, 21, 4344, 5767, 6951, 698, 4754, 8406, 1236, 7745, 2]
 // Exports: default
 
-// Module 13912 (UserProfileUpsellButton)
+// Module 13969 (UserProfileUpsellButton)
 import noop from "noop";
 import ME from "ME";
 import { PremiumUpsellTypes } from "GuildFeatures";
@@ -23,8 +23,8 @@ let result = require("GuildFeatures").fileFinishedImporting("modules/user_profil
 export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5728)().analyticsLocations;
-  let obj = analyticsObject(6912);
+  analyticsLocations = analyticsLocations(5767)().analyticsLocations;
+  let obj = analyticsObject(6951);
   let label = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = React.useEffect(() => {
@@ -53,6 +53,6 @@ export default function UserProfileUpsellButton(analyticsObject) {
   }
   obj[2] = label;
   obj = { color: "white", size: "sm", style: callback().nitroWheel };
-  obj[3] = jsx(analyticsObject(7706).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
-  return jsx(analyticsObject(4714).Button, { color: "white", size: "sm", style: callback().nitroWheel });
+  obj[3] = jsx(analyticsObject(7745).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
+  return jsx(analyticsObject(4754).Button, { color: "white", size: "sm", style: callback().nitroWheel });
 };

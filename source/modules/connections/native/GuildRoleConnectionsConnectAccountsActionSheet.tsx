@@ -1,9 +1,9 @@
-// Module ID: 11040
-// Function ID: 11041
+// Module ID: 11093
+// Function ID: 11094
 // Name: PlatformIcon
-// Dependencies: [5, 32, 19, 17, 5250, 1994, 1930, 1218, 1391, 4998, 1990, 3948, 5125, 676, 21, 4303, 712, 4239, 5000, 1435, 1363, 1297, 4764, 4494, 4299, 1236, 5124, 11041, 5731, 9137, 11042, 11043, 12, 4024, 11044, 38, 4021, 8618, 4730, 7969, 5123, 589, 5126, 5232, 698, 4498, 4271, 6018, 11047, 10497, 709, 4509, 10630, 2007, 9547, 11051, 5397, 11052, 5772, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 5289, 1994, 1930, 1218, 1391, 5038, 1990, 3989, 5165, 676, 21, 4344, 712, 4280, 5040, 1435, 1363, 1297, 4804, 4534, 4340, 1236, 5164, 11094, 5770, 9177, 11095, 11096, 12, 4065, 11097, 38, 4062, 8657, 4770, 8008, 5163, 589, 5166, 5271, 698, 4538, 4312, 6057, 11100, 10538, 709, 4549, 10683, 2007, 9587, 11104, 5436, 11105, 5811, 4754, 2]
 
-// Module 11040 (PlatformIcon)
+// Module 11093 (PlatformIcon)
 import _getSystemLocale from "_getSystemLocale";
 import apply from "apply";
 import getAvatarURL from "getAvatarURL";
@@ -42,9 +42,9 @@ let metroImportAll;
 const require = arg1;
 function PlatformIcon(platformType) {
   const tmp = createCacheKey();
-  let obj = importDefault(5000);
+  let obj = importDefault(5040);
   const value = obj.get(platformType.platformType);
-  const tmp3 = importDefault(4239)();
+  const tmp3 = importDefault(4280)();
   const tmp5 = require;
   const obj2 = require(1435) /* getAvatarURL */;
   const icon = value.icon;
@@ -55,7 +55,7 @@ function PlatformIcon(platformType) {
 function ChannelName(channel) {
   channel = channel.channel;
   const tmp = createCacheKey();
-  let obj = require(4764) /* getChannelIcon */;
+  let obj = require(4804) /* getChannelIcon */;
   const channelIcon = obj.getChannelIcon(channel);
   obj = { style: items, children: null };
   items = [tmp.channelName, channel.style];
@@ -67,10 +67,10 @@ function ChannelName(channel) {
     tmp8 = callback2(tmp2(1297).Icon, obj);
   }
   const items1 = [tmp8, ];
-  const tmp5 = importDefault(4494)(channel);
+  const tmp5 = importDefault(4534)(channel);
   const tmp6 = closure_30;
   const tmp7 = closure_8;
-  items1[1] = callback2(require(4299) /* Text */.Text, { variant: "heading-lg/semibold", color: "text-default", style: tmp.channelNameText, lineClamp: 1, children: importDefault(4494)(channel) });
+  items1[1] = callback2(require(4340) /* Text */.Text, { variant: "heading-lg/semibold", color: "text-default", style: tmp.channelNameText, lineClamp: 1, children: importDefault(4534)(channel) });
   obj[1] = items1;
   return tmp6(tmp7, obj);
 }
@@ -120,7 +120,7 @@ function ConnectionsCheck(result) {
       } else {
         return null;
       }
-      obj = require(5124) /* officialApplicationIds */;
+      obj = require(5164) /* officialApplicationIds */;
       const obj1 = { connectionType: null, connectionMetadataField: null, operator: null, operatorText: null, value: null };
       obj1[0] = connectionType;
       obj1[1] = connectionMetadataField;
@@ -139,7 +139,7 @@ function ConnectionsCheck(result) {
       obj2[1] = str;
       obj2[2] = tmp.connectionsCheck;
       obj2[3] = formatResult;
-      tmp21Result = closure_29(require(4299) /* Text */.Text, obj2);
+      tmp21Result = closure_29(require(4340) /* Text */.Text, obj2);
       const tmp21 = closure_29;
     }
     return tmp21Result;
@@ -301,7 +301,7 @@ function IdentityConnectionsCheckGroup(eligibilityState) {
     obj3[3] = callback;
     let tmp15Result = null;
     if (null != memo) {
-      const obj4 = { style: null, user: null, size: null, guildId: "Array" };
+      const obj4 = { style: null, user: null, size: null, guildId: "a" };
       obj4[0] = tmp.appIcon;
       obj4[1] = memo;
       obj4[2] = tmp2(tmp3[21]).AvatarSizes.XSMALL;
@@ -433,7 +433,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
     }
   }, items3);
   let tmp3 = callback(React.useState(0), 2);
-  getUncachedChannelPermissions = eligibilityStatesGroups(4024).useToken(importDefault(712).unsafe_rawColors.GREEN_330);
+  getUncachedChannelPermissions = eligibilityStatesGroups(4065).useToken(importDefault(712).unsafe_rawColors.GREEN_330);
   obj = { children: null };
   const keys = Object.keys(memo1);
   const sorted = keys.sort((arg0, arg1) => {
@@ -628,7 +628,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
     items1[1] = tmp24Result1;
     let tmp24Result2 = null;
     if (null != tmp11) {
-      const obj10 = { style: null, user: null, size: null, guildId: "Array" };
+      const obj10 = { style: null, user: null, size: null, guildId: "a" };
       obj10[0] = tmp38.appIcon;
       obj10[1] = tmp11;
       obj10[2] = tmp15(tmp6[21]).AvatarSizes.XSMALL;
@@ -715,11 +715,11 @@ function ConnectedUserAccountOptions(account) {
   const tmp7 = callback(first.useState(1 === account.visibility), 2);
   first1 = tmp7[0];
   closure_8 = tmp7[1];
-  importDefault(4730)(() => {
+  importDefault(4770)(() => {
     callback(!first1);
     callback2(first);
   });
-  let obj = importDefault(5000);
+  let obj = importDefault(5040);
   const value = obj.get(account.type);
   let tmp12;
   if (set.has(account.type)) {
@@ -731,7 +731,7 @@ function ConnectedUserAccountOptions(account) {
       _undefined(closure_0);
       outer1_1(outer1_2[40]).setFriendSync(account.type, account.id, closure_0);
     };
-    tmp12 = callback2(account(7969).FormSwitchRow, obj);
+    tmp12 = callback2(account(8008).FormSwitchRow, obj);
   }
   let tmp15;
   if (set2.has(account.type)) {
@@ -745,7 +745,7 @@ function ConnectedUserAccountOptions(account) {
       callback3(closure_0);
       outer1_1(outer1_2[40]).setShowActivity(account.type, account.id, closure_0);
     };
-    tmp15 = callback2(account(7969).FormSwitchRow, obj);
+    tmp15 = callback2(account(8008).FormSwitchRow, obj);
   }
   let tmp18;
   if (true === value.hasMetadata) {
@@ -766,7 +766,7 @@ function ConnectedUserAccountOptions(account) {
       }
       const result = outer1_1(outer1_2[40]).setMetadataVisibility(type, id, num);
     };
-    tmp18 = callback2(account(7969).FormSwitchRow, obj2);
+    tmp18 = callback2(account(8008).FormSwitchRow, obj2);
   }
   const obj3 = { style: tmp.accountConnectedPrivacyOptionsContainer, children: null };
   const obj4 = { label: null, value: null, onValueChange: null };
@@ -785,7 +785,7 @@ function ConnectedUserAccountOptions(account) {
     }
     outer1_1(outer1_2[40]).setVisibility(type, id, num);
   };
-  const items = [callback2(account(7969).FormSwitchRow, obj4), tmp18, tmp15, tmp12];
+  const items = [callback2(account(8008).FormSwitchRow, obj4), tmp18, tmp15, tmp12];
   obj3[1] = items;
   return callback3(closure_8, obj3);
 }
@@ -857,9 +857,9 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     useState = undefined;
     c14 = undefined;
     useState = undefined;
-    f86758 = undefined;
+    f86965 = undefined;
     useState = undefined;
-    f86759 = undefined;
+    f86966 = undefined;
     c19 = undefined;
     _handleAssignRole = function _handleAssignRole() {
       const self = this;
@@ -980,7 +980,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
       }
       return tmp2;
     }), 2);
-    [tmp26, f86758] = tmp25;
+    [tmp26, f86965] = tmp25;
     tmp27 = onCloseModal(CHECKS_REQUIRED.useState(null), 2);
     [arr6, useState] = tmp27;
     tmp28 = role;
@@ -989,7 +989,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     items3 = [];
     items3[0] = useState;
     stateFromStores3 = obj4.useStateFromStores(items3, () => member.getMember(guildId, stateFromStores2));
-    f86759 = stateFromStores3;
+    f86966 = stateFromStores3;
     obj5 = require("initialize");
     items4 = [];
     items4[0] = useState;

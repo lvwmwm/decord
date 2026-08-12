@@ -1,10 +1,10 @@
-// Module ID: 11036
-// Function ID: 11037
+// Module ID: 11089
+// Function ID: 11090
 // Name: categoryCollapse
 // Dependencies: [709, 2]
 // Exports: categoryCollapse, categoryCollapseAll, categoryExpand, categoryExpandAll
 
-// Module 11036 (categoryCollapse)
+// Module 11089 (categoryCollapse)
 const result = require("set").fileFinishedImporting("actions/CategoryCollapseActionCreators.tsx");
 
 export const categoryCollapse = function categoryCollapse(id) {

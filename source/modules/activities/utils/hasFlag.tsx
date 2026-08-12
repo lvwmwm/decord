@@ -1,10 +1,10 @@
-// Module ID: 5930
-// Function ID: 5931
+// Module ID: 5969
+// Function ID: 5970
 // Name: hasFlag
 // Dependencies: [676, 1403, 2]
 // Exports: default
 
-// Module 5930 (hasFlag)
+// Module 5969 (hasFlag)
 import { ActivityFlags } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/hasFlag.tsx");

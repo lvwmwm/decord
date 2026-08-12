@@ -1,10 +1,10 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15135
+// Function ID: 15136
 // Name: DraggableContainer
-// Dependencies: [32, 19, 17, 15079, 21, 4303, 712, 4042, 10334, 15072, 5427, 4713, 4717, 4271, 15083, 2007, 15073, 4846, 4299, 4714, 4255, 15084, 2]
+// Dependencies: [32, 19, 17, 15136, 21, 4344, 712, 4083, 10375, 11434, 5466, 4753, 4757, 4312, 15140, 2007, 15130, 4886, 4340, 4754, 4296, 15141, 2]
 // Exports: default
 
-// Module 15078 (DraggableContainer)
+// Module 15135 (DraggableContainer)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import { View } from "PressableBase";

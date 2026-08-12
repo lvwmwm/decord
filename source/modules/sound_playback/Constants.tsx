@@ -1,9 +1,9 @@
-// Module ID: 9162
-// Function ID: 9163
+// Module ID: 9202
+// Function ID: 9203
 // Name: SoundOutputChannel
 // Dependencies: [2]
 
-// Module 9162 (SoundOutputChannel)
+// Module 9202 (SoundOutputChannel)
 const result = require("set").fileFinishedImporting("modules/sound_playback/Constants.tsx");
 
 export const SoundOutputChannel = { DEFAULT: "default", VOICE: "voice" };

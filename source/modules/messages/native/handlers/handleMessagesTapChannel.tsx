@@ -1,10 +1,10 @@
-// Module ID: 11026
-// Function ID: 11027
+// Module ID: 11079
+// Function ID: 11080
 // Name: maybeStartLurking
-// Dependencies: [5, 1395, 1434, 1391, 1990, 1983, 1910, 3948, 676, 1398, 5243, 5239, 5958, 8943, 8198, 4509, 11027, 2007, 5865, 4271, 11040, 11048, 1370, 4495, 4513, 5129, 2]
+// Dependencies: [5, 1395, 1434, 1391, 1990, 1983, 1910, 3989, 676, 1398, 5282, 5278, 5997, 8982, 8237, 4549, 11080, 2007, 5904, 4312, 11093, 11101, 1370, 4535, 4553, 5169, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11026 (maybeStartLurking)
+// Module 11079 (maybeStartLurking)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import { isGuildVocalChannelType } from "createChannelRecord";
 import { isGuildLurker } from "GuildNSFWContentLevel";
@@ -181,7 +181,7 @@ function _handleMessagesTapChannel() {
                 let role2;
                 v0 = 1;
                 channelId = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "ct", done: true };
               }
             } else {
               if (1 === tmp5) {

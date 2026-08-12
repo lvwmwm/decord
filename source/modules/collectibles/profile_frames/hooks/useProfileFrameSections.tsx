@@ -1,10 +1,10 @@
-// Module ID: 13950
-// Function ID: 13951
+// Module ID: 14007
+// Function ID: 14008
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 7004, 7020, 647, 9409, 7016, 1236, 2]
+// Dependencies: [32, 19, 7043, 7059, 647, 9449, 7055, 1236, 2]
 // Exports: default
 
-// Module 13950 (useProfileFrameSections)
+// Module 14007 (useProfileFrameSections)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";

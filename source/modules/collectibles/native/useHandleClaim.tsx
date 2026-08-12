@@ -1,10 +1,10 @@
-// Module ID: 12169
-// Function ID: 12170
+// Module ID: 12226
+// Function ID: 12227
 // Name: useHandleClaim
-// Dependencies: [5, 19, 7003, 4271, 10130, 4021, 1236, 2]
+// Dependencies: [5, 19, 7042, 4312, 10171, 4062, 1236, 2]
 // Exports: useHandleClaim
 
-// Module 12169 (useHandleClaim)
+// Module 12226 (useHandleClaim)
 import dispatcher from "dispatcher";
 import noop from "noop";
 

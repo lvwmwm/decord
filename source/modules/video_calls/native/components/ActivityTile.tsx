@@ -1,10 +1,10 @@
-// Module ID: 10722
-// Function ID: 10723
+// Module ID: 10775
+// Function ID: 10776
 // Name: ActivityTileInner
-// Dependencies: [5, 32, 19, 17, 1390, 1922, 676, 1301, 4328, 21, 1297, 4303, 712, 589, 1370, 5734, 4493, 4148, 10723, 5728, 5748, 8737, 1236, 10653, 10654, 10725, 10652, 4846, 10726, 10754, 4299, 4715, 4031, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1922, 676, 1301, 4369, 21, 1297, 4344, 712, 589, 1370, 5773, 4533, 4189, 10776, 5767, 5787, 8776, 1236, 10706, 10707, 10778, 10705, 4886, 10779, 10807, 4340, 4755, 4072, 2]
 // Exports: default
 
-// Module 10722 (ActivityTileInner)
+// Module 10775 (ActivityTileInner)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ManaContext from "ManaContext";
 import "context";
@@ -83,7 +83,7 @@ function ActivityTileInner(participant) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = v0(10654)(obj1);
+                obj2[0] = v0(10707)(obj1);
                 return obj2;
               } else {
                 dependencyMap = 3;
@@ -94,7 +94,7 @@ function ActivityTileInner(participant) {
             dependencyMap = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = outer1_0(10725);
+            obj = outer1_0(10778);
             const result = obj.setOrientationLockState(mergeGuildAvatar);
           }
           dependencyMap = 3;
@@ -312,5 +312,5 @@ export default function ActivityTile(arg0) {
   obj = {};
   const merged = Object.assign(arg0);
   obj[1] = callback(ActivityTileInner, obj);
-  return callback(require(4031) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(4072) /* ManaContext */.ThemeContextProvider, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 10682
-// Function ID: 10683
+// Module ID: 10735
+// Function ID: 10736
 // Name: PopoutMenuRow
-// Dependencies: [32, 19, 17, 21, 4303, 712, 5367, 1297, 7969, 1493, 1628, 12, 4042, 4304, 4274, 5427, 2]
+// Dependencies: [32, 19, 17, 21, 4344, 712, 5406, 1297, 8008, 1493, 1628, 12, 4083, 4345, 4315, 5466, 2]
 
-// Module 10682 (PopoutMenuRow)
+// Module 10735 (PopoutMenuRow)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -35,9 +35,9 @@ function PopoutMenuRow(onClose) {
     obj[0] = icon;
     tmp3Result = tmp3(onClick(1297).Icon, obj);
   }
-  obj = { leading: tmp3Result, label: tmp3(onClick(7969).FormLabel, obj), style: tmp.popoutMenuRow, onPress: callback };
+  obj = { leading: tmp3Result, label: tmp3(onClick(8008).FormLabel, obj), style: tmp.popoutMenuRow, onPress: callback };
   obj = { style: tmp.popoutMenuRowLabel, text: onClose.text };
-  return closure_6(onClose(5367), obj);
+  return closure_6(onClose(5406), obj);
 }
 let c4 = importAllResult;
 ({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);

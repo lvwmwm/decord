@@ -1,10 +1,10 @@
-// Module ID: 6905
-// Function ID: 6906
+// Module ID: 6944
+// Function ID: 6945
 // Name: useCountdown
-// Dependencies: [19, 3990, 6906, 6911, 2]
+// Dependencies: [19, 4031, 6945, 6950, 2]
 // Exports: default
 
-// Module 6905 (useCountdown)
+// Module 6944 (useCountdown)
 require("noop").useCallback;
 const result = require("useForceUpdate").fileFinishedImporting("hooks/useCountdown.tsx");
 

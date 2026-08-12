@@ -1,16 +1,16 @@
-// Module ID: 11927
-// Function ID: 11928
+// Module ID: 11984
+// Function ID: 11985
 // Name: GuildLevelPowerupHeader
-// Dependencies: [19, 17, 4191, 676, 11928, 21, 4303, 712, 4725, 7697, 11910, 11891, 4299, 1236, 2335, 11863, 11883, 11929, 11930, 11888, 2]
+// Dependencies: [19, 17, 4232, 676, 11985, 21, 4344, 712, 4765, 7736, 8236, 11967, 11948, 4340, 1236, 2335, 11920, 11940, 11986, 11987, 11945, 2]
 // Exports: default
 
-// Module 11927 (GuildLevelPowerupHeader)
-import GuildPowerupCardFooterActive from "GuildPowerupCardFooterActive";
-import { View } from "useGuildPowerupOnShowMore";
+// Module 11984 (GuildLevelPowerupHeader)
+import importDefaultResult1 from "importDefaultResult1";
+import { View } from "useCalculatePowerupCardStatus";
 import BoostedGuildTiers from "BoostedGuildTiers";
 import ME from "ME";
 import { TIER_CARDS } from "BoostedGuildTiers";
-import jsxProd from "jsxProd";
+import jsxProd from "set";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -44,7 +44,7 @@ function GuildLevelPowerupHeader(arg0) {
     items1[1] = progressStart;
     items1[2] = position === constants.END && tmp.progressEnd;
     obj[3] = items1;
-    const items2 = [closure_10(importDefault(4725), obj), , ];
+    const items2 = [closure_10(importDefault(4765), obj), , ];
     obj = { style: null };
     const items3 = [, ];
     ({ boostContainer: arr6[0], boostContainerBackground: arr6[1] } = tmp);
@@ -61,7 +61,7 @@ function GuildLevelPowerupHeader(arg0) {
     const colors = importDefault(712).colors;
     const obj2 = { size: "xs", color: null };
     obj2[1] = active ? colors.WHITE : colors.TEXT_MUTED;
-    obj1[1] = closure_10(require(7697) /* BoostGemIcon */.BoostGemIcon, obj2);
+    obj1[1] = closure_10(require(7736) /* BoostGemIcon */.BoostGemIcon, obj2);
     items2[2] = closure_10(View, obj1);
     obj[1] = items2;
     return closure_11(View, obj);
@@ -78,21 +78,30 @@ class GuildPowerupLevelBody {
   constructor(arg0) {
     index = global.index;
     c1 = undefined;
+    c2 = undefined;
     textColor = undefined;
     iconColor = undefined;
     tmp = jsxs();
     c1 = tmp;
-    tmp2 = require("useGuildPowerupColorConfig")(global.isActive);
-    textColor = tmp2.textColor;
-    iconColor = tmp2.iconColor;
-    items = [, , , ];
+    tmp3 = c2;
+    tmp2 = index;
+    obj = require("apexExperiment");
+    manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupLevelBody");
+    c2 = manaTypeConsolidationExperiment;
+    tmp5 = c1;
+    tmp6 = require("useGuildPowerupColorConfig")(global.isActive);
+    textColor = tmp6.textColor;
+    iconColor = tmp6.iconColor;
+    items = [, , , , ];
     items[0] = index;
     items[1] = iconColor;
     items[2] = textColor;
     items[3] = tmp;
+    items[4] = manaTypeConsolidationExperiment;
+    tmp8 = iconColor;
     obj = { style: tmp.perkRowContainer, children: null };
     items1 = [, ];
-    items1[0] = iconColor.useMemo(() => {
+    items1[0] = textColor.useMemo(() => {
       if (null == outer1_9[index]) {
         return [];
       } else {
@@ -105,13 +114,18 @@ class GuildPowerupLevelBody {
         let mapped;
         if (substr != null) {
           mapped = substr.map((perkIcon) => {
-            let obj = outer1_0(outer1_2[11]);
+            let obj = outer1_0(outer1_2[12]);
             obj = { style: closure_1.perkRowStyle, children: null };
-            obj = { color: GuildPowerupCardFooterActive, size: "sm" };
+            obj = { color: closure_4, size: "sm" };
             const items = [outer1_10(obj.getIconForPerk(perkIcon.perkIcon), obj), ];
-            const obj1 = { color: closure_2, style: closure_1.perkText, variant: "text-sm/medium", children: null };
+            const obj1 = { color: importDefaultResult1, style: closure_1.perkText, variant: null, children: null };
+            let str = "text-sm/medium";
+            if (closure_2) {
+              str = "experimental/body-sm/normal";
+            }
+            obj1[2] = str;
             obj1[3] = perkIcon.getCopy();
-            items[1] = outer1_10(outer1_0(outer1_2[12]).Text, obj1);
+            items[1] = outer1_10(outer1_0(outer1_2[13]).Text, obj1);
             obj[1] = items;
             return outer1_11(outer1_4, obj, "perk-" + closure_0 + "-" + arg1);
           });
@@ -119,14 +133,21 @@ class GuildPowerupLevelBody {
         return mapped;
       }
     }, items);
-    obj = { style: tmp.perkRow, children: null };
-    obj1 = { color: textColor, variant: "text-sm/medium", children: null };
+    tmp9 = jsx;
+    obj1 = { style: tmp.perkRow, children: null };
+    tmp7 = jsxs;
+    obj2 = { color: textColor, variant: null, children: null };
+    str = "text-sm/medium";
+    if (manaTypeConsolidationExperiment) {
+      str = "experimental/body-sm/normal";
+    }
+    obj2[1] = str;
     intl = require("getSystemLocale").intl;
-    obj1[2] = intl.string(require("messagesProxy").nIj3LZ);
-    obj[1] = jsx(require("Text").Text, obj1);
-    items1[1] = jsx(View, obj);
+    obj2[2] = intl.string(require("messagesProxy").nIj3LZ);
+    obj1[1] = tmp9(require("Text").Text, obj2);
+    items1[1] = tmp9(tmp8, obj1);
     obj[1] = items1;
-    return jsxs(View, obj);
+    return tmp7(tmp8, obj);
   }
 }
 ({ LevelCardPosition: c5, PowerupActiveStatusType: closure_6 } = BoostedGuildTiers);
@@ -171,11 +192,13 @@ export default function GuildPowerupsLevelCard(arg0) {
   ({ guildId, powerup, nextPowerup, index, isScrollingRef } = arg0);
   let importDefault;
   const tmp = createCacheKey();
-  const tmp4 = importDefault(11863)(guildId, powerup);
-  let obj = isScrollingRef(11883);
-  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp4, false);
-  const tmp8 = importDefault(11929)(guildId, powerup);
-  importDefault = tmp8;
+  let obj = isScrollingRef(8236);
+  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsLevelCard");
+  const tmp6 = importDefault(11920)(guildId, powerup);
+  let obj1 = isScrollingRef(11940);
+  const calculatePowerupCardStatus = obj1.useCalculatePowerupCardStatus(powerup, tmp6, false);
+  const tmp9 = importDefault(11986)(guildId, powerup);
+  importDefault = tmp9;
   if (0 === index) {
     let MIDDLE = constants.START;
   } else if (null == nextPowerup) {
@@ -183,31 +206,41 @@ export default function GuildPowerupsLevelCard(arg0) {
   } else {
     MIDDLE = constants.MIDDLE;
   }
-  const items = [isScrollingRef, tmp8];
+  const items = [isScrollingRef, tmp9];
   const callback = React.useCallback(() => {
     if (!isScrollingRef.current) {
       _undefined();
     }
   }, items);
   obj = { containerStyle: tmp.cardContainer, style: tmp.card, onPress: callback, status: calculatePowerupCardStatus, children: null };
-  obj = { position: MIDDLE, active: tmp13, nextActive: null };
-  let tmp19;
-  const tmp2 = importDefault;
-  const tmp5 = importDefault(11863)(guildId, nextPowerup);
+  obj = { position: MIDDLE, active: tmp14, nextActive: null };
+  let tmp20;
+  const tmp5 = importDefault;
+  const tmp7 = importDefault(11920)(guildId, nextPowerup);
   if (null != nextPowerup) {
-    tmp19 = tmp5.type !== constants2.INACTIVE;
+    tmp20 = tmp7.type !== constants2.INACTIVE;
   }
-  obj[2] = tmp19;
+  obj[2] = tmp20;
   const items1 = [closure_10(GuildLevelPowerupHeader, obj), ];
-  const obj1 = { style: tmp.contentContainer, children: null };
-  const items2 = [closure_10(isScrollingRef(4299).Text, { variant: "heading-lg/semibold", children: powerup.title }), closure_10(GuildPowerupLevelBody, { isActive: tmp4.type !== constants2.INACTIVE, index }), ];
-  const obj2 = { variant: "heading-lg/semibold", children: powerup.title };
-  const tmp18 = GuildLevelPowerupHeader;
-  const tmp2Result = importDefault(11930);
-  items2[2] = closure_10(View, { style: tmp.footerContainer, children: closure_10(isScrollingRef(11888).GuildPowerupsCardFooter, obj4) });
+  obj1 = { style: tmp.contentContainer, children: null };
+  let str;
+  if (manaTypeConsolidationExperiment) {
+    str = "text-strong";
+  }
+  const obj2 = { color: str, variant: null, children: null };
+  let str2 = "heading-lg/semibold";
+  if (manaTypeConsolidationExperiment) {
+    str2 = "experimental/heading-md/semibold";
+  }
+  obj2[1] = str2;
+  obj2[2] = powerup.title;
+  const items2 = [closure_10(isScrollingRef(4340).Text, obj2), closure_10(GuildPowerupLevelBody, { isActive: tmp6.type !== constants2.INACTIVE, index }), ];
+  const tmp19 = GuildLevelPowerupHeader;
+  const tmp5Result = importDefault(11987);
+  items2[2] = closure_10(View, { style: tmp.footerContainer, children: closure_10(isScrollingRef(11945).GuildPowerupsCardFooter, obj4) });
   obj1[1] = items2;
   items1[1] = closure_11(View, obj1);
   obj[4] = items1;
-  return closure_11(tmp2Result, obj);
+  return closure_11(tmp5Result, obj);
 };
 export { GuildPowerupLevelBody };

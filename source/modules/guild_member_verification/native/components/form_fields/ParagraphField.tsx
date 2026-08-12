@@ -1,10 +1,10 @@
-// Module ID: 8557
-// Function ID: 8558
+// Module ID: 8596
+// Function ID: 8597
 // Name: ParagraphField
-// Dependencies: [19, 17, 4792, 505, 21, 4303, 5236, 712, 4299, 7978, 1236, 2]
+// Dependencies: [19, 17, 4832, 505, 21, 4344, 5275, 712, 4340, 8017, 1236, 2]
 // Exports: default
 
-// Module 8557 (ParagraphField)
+// Module 8596 (ParagraphField)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { MAX_PARAGRAPH_RESPONSE_LENGTH as closure_3 } from "items";
@@ -30,7 +30,7 @@ export default function ParagraphField(field) {
   let str = field.response;
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.formHeader, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: field.label };
-  const items = [callback(require(4299) /* Text */.Text, obj), ];
+  const items = [callback(require(4340) /* Text */.Text, obj), ];
   obj = { maxLength: closure_3, value: null, placeholder: null, onChange: null };
   if (str == null) {
     str = "";
@@ -39,7 +39,7 @@ export default function ParagraphField(field) {
   const intl = tmp5(1236).intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["Sqn+Wh"]);
   obj[3] = field.onChange;
-  items[1] = callback(require(7978) /* TextArea */.TextArea, obj);
+  items[1] = callback(require(8017) /* TextArea */.TextArea, obj);
   obj[1] = items;
   return closure_5(View, obj);
 };

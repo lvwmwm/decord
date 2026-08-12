@@ -1,9 +1,9 @@
-// Module ID: 8079
-// Function ID: 8080
+// Module ID: 8118
+// Function ID: 8119
 // Name: NITRO_UPSELL_ALERT_KEY
 // Dependencies: [2]
 
-// Module 8079 (NITRO_UPSELL_ALERT_KEY)
+// Module 8118 (NITRO_UPSELL_ALERT_KEY)
 const result = require("set").fileFinishedImporting("modules/double_tap_to_react/DoubleTapToRaectConstants.tsx");
 
 export const NITRO_UPSELL_ALERT_KEY = "double-tap-nitro-alert";

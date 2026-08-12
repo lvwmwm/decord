@@ -1,10 +1,10 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 9618
+// Function ID: 9619
 // Name: GiftButton
-// Dependencies: [32, 19, 17, 6890, 7020, 678, 676, 9579, 1924, 21, 4303, 712, 7753, 9580, 4271, 9440, 9581, 1236, 9574, 9573, 9419, 1499, 5728, 4509, 12161, 2007, 7003, 12165, 679, 12166, 10130, 9414, 4299, 4715, 1949, 4239, 1363, 4024, 9354, 589, 9488, 3966, 7016, 7015, 9428, 10136, 12168, 12169, 12170, 7344, 12172, 1628, 501, 4725, 7837, 4714, 5748, 1993, 12173, 2]
+// Dependencies: [32, 19, 17, 6929, 7059, 678, 676, 9619, 1924, 21, 4344, 712, 7792, 9620, 4312, 9480, 9621, 1236, 9614, 9613, 9459, 1499, 5767, 4549, 12218, 2007, 7042, 12222, 679, 12223, 10171, 9454, 4340, 4755, 1949, 4280, 1363, 4065, 9394, 589, 9528, 4007, 7055, 7054, 9468, 10177, 12225, 12226, 12227, 7383, 12229, 1628, 501, 4765, 7876, 4754, 5787, 1993, 12230, 2]
 // Exports: default
 
-// Module 9578 (GiftButton)
+// Module 9618 (GiftButton)
 import Text from "Text";
 import useProductDisableState from "useProductDisableState";
 import { View } from "getSystemLocale";
@@ -224,7 +224,7 @@ function PurchaseDisclaimer(arg0) {
     formatResult = intl.format(tmp3(1236).t.iIglwJ, obj);
   }
   obj[3] = formatResult;
-  return closure_16(require(4299) /* Text */.Text, obj);
+  return closure_16(require(4340) /* Text */.Text, obj);
 }
 ({ EXTERNAL_PRODUCT_SKU_IDS: metroImportAll, ShopCtaEnum: c9 } = items);
 ({ HelpdeskArticles: c10, MarketingURLs: unpackModuleId, UserSettingsSections: closure_12 } = ME);
@@ -271,56 +271,56 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
   const tmp = createCacheKey();
   const tmp5 = require;
   let obj = require(1363) /* AccessibilityAnnouncer */;
-  const isThemeDarkResult = obj.isThemeDark(onTrackPress(4239)());
-  let obj1 = require(4024) /* map */;
+  const isThemeDarkResult = obj.isThemeDark(onTrackPress(4280)());
+  let obj1 = require(4065) /* map */;
   const token = obj1.useToken(onTrackPress(712).colors.MOBILE_ACTIONSHEET_BACKGROUND);
-  let obj2 = require(9354) /* useCurrentUser */;
+  let obj2 = require(9394) /* useCurrentUser */;
   const currentUser = obj2.useCurrentUser();
-  let obj3 = require(9419) /* getProductPurchaseState */;
+  let obj3 = require(9459) /* getProductPurchaseState */;
   const productPurchaseState = obj3.useProductPurchaseState(product);
   ({ isPurchased, isPartiallyOwnedBundle } = productPurchaseState);
   let obj4 = require(589) /* initialize */;
   let items = [map];
   const items1 = [product];
-  let obj5 = require(9488) /* useIsPremiumSubscriber */;
+  let obj5 = require(9528) /* useIsPremiumSubscriber */;
   const isPremiumSubscriber = obj5.useIsPremiumSubscriber(TIER_2.TIER_2);
-  let obj6 = onTrackPress(3966);
+  let obj6 = onTrackPress(4007);
   const canUseShopDiscountsResult = obj6.canUseShopDiscounts(currentUser);
-  let obj7 = require(7016) /* getItemRecordsFromPurchases */;
+  let obj7 = require(7055) /* getItemRecordsFromPurchases */;
   const result = obj7.isPremiumCollectiblesProduct(product);
-  let obj8 = require(7016) /* getItemRecordsFromPurchases */;
+  let obj8 = require(7055) /* getItemRecordsFromPurchases */;
   const result1 = obj8.isFreeCollectiblesProduct(product);
-  let obj9 = require(7015) /* getProductOrbPrice */;
+  let obj9 = require(7054) /* getProductOrbPrice */;
   const result2 = obj9.isOrbsExclusiveProduct(product);
-  let obj10 = require(9428);
+  let obj10 = require(9468);
   const balance = obj10.useFetchVirtualCurrencyBalance().balance;
-  let obj11 = require(9574) /* useVirtualCurrencyData */;
+  let obj11 = require(9614) /* useVirtualCurrencyData */;
   const canAfford = obj11.useVirtualCurrencyData(product, canUseShopDiscountsResult).canAfford;
-  let obj12 = require(10136) /* useHandleUseNow */;
+  let obj12 = require(10177) /* useHandleUseNow */;
   const handleUseNow = obj12.useHandleUseNow({ product, analyticsLocations });
   ({ handleUseNow: c2, handleEditProfile: c3 } = handleUseNow);
   ({ isApplying, canUseNow } = handleUseNow);
   const tmp16 = useNativeCheckoutStore((orderRecord) => orderRecord.orderRecord);
   obj = { product, analyticsLocations, onBuy: onBuy.onBuy, orderId: null };
   let id;
-  const tmp4 = onTrackPress(4239)();
+  const tmp4 = onTrackPress(4280)();
   if (tmp16 != null) {
     id = tmp16.id;
   }
   obj[3] = id;
-  const tmp17 = onTrackPress(12168);
-  ({ handleBuyNow: c4, isBuying } = onTrackPress(12168)(obj));
-  let tmp5Result = tmp5(12169);
+  const tmp17 = onTrackPress(12225);
+  ({ handleBuyNow: c4, isBuying } = onTrackPress(12225)(obj));
+  let tmp5Result = tmp5(12226);
   handleClaim = tmp5Result.useHandleClaim({ product }).handleClaim;
-  const tmp20 = onTrackPress(12170)({ location: "ProductDetailsActionSheetPurchaseSection", product });
+  const tmp20 = onTrackPress(12227)({ location: "ProductDetailsActionSheetPurchaseSection", product });
   let tmp25Result = tmp20;
   if (tmp20) {
     tmp25Result = !isPurchased;
   }
-  tmp5Result = tmp5(7344);
-  const tmp17Result = onTrackPress(12168)(obj);
+  tmp5Result = tmp5(7383);
+  const tmp17Result = onTrackPress(12225)(obj);
   const tmp23 = tmp5Result.useIsEligibleForBogoOffer() ? closure_15.MONTH : closure_15.YEAR;
-  let canGiftProduct = tmp5(12172).useCanGiftProduct(product);
+  let canGiftProduct = tmp5(12229).useCanGiftProduct(product);
   let PX_16 = tmp2(1628)().bottom;
   const items2 = [tmp.container, , ];
   let containerFramesEA = tmp25Result;
@@ -345,7 +345,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     obj1[3] = { x: 1, y: 1 };
     const items3 = [tmp.gradientOverlay, ];
     obj2 = !isThemeDarkResult;
-    let tmp2Result = tmp2(4725);
+    let tmp2Result = tmp2(4765);
     if (!isThemeDarkResult) {
       obj2 = { opacity: 0.4 };
     }
@@ -355,18 +355,18 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     const items4 = [callback2(tmp2Result, obj1), ];
     obj4 = { style: null, preserveAspectRatio: "none", viewBox: "0 0 100 100", pointerEvents: "none", children: null };
     obj4[0] = tmp.gradientOverlay;
-    tmp2Result = tmp2(7837);
+    tmp2Result = tmp2(7876);
     obj5 = { children: null };
     obj6 = { id: "frameEAVignette", cx: "50%", cy: "100%", rx: "100%", ry: "100%", fx: "50%", fy: "100%", children: null };
     obj7 = { offset: "60%", stopColor: null, stopOpacity: 1 };
     obj7[1] = token;
-    const items5 = [callback2(tmp5(7837).Stop, obj7), ];
+    const items5 = [callback2(tmp5(7876).Stop, obj7), ];
     obj8 = { offset: "100%", stopColor: null, stopOpacity: 0 };
     obj8[1] = token;
-    items5[1] = callback2(tmp5(7837).Stop, obj8);
+    items5[1] = callback2(tmp5(7876).Stop, obj8);
     obj6[7] = items5;
-    obj5[0] = tmp25(tmp5(7837).RadialGradient, obj6);
-    const items6 = [callback2(tmp5(7837).Defs, obj5), callback2(tmp5(7837).Rect, { x: "0", y: "0", width: "100", height: "100", fill: "url(#frameEAVignette)" })];
+    obj5[0] = tmp25(tmp5(7876).RadialGradient, obj6);
+    const items6 = [callback2(tmp5(7876).Defs, obj5), callback2(tmp5(7876).Rect, { x: "0", y: "0", width: "100", height: "100", fill: "url(#frameEAVignette)" })];
     obj4[4] = items6;
     items4[1] = tmp25(tmp2Result, obj4);
     obj3[0] = items4;
@@ -402,7 +402,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
           _undefined2();
         };
       }
-      const items8 = [callback2(tmp5(4714).Button, obj11), ];
+      const items8 = [callback2(tmp5(4754).Button, obj11), ];
       if (canGiftProduct) {
         obj12 = { product: null, analyticsLocations: null, onTrackPress: null };
         obj12[0] = product;
@@ -422,7 +422,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     const obj13 = { value: null, children: null };
     const items9 = [];
     const tmp49 = tmp5(501).isAndroid() ? t.COObWR : t["7wpqfj"];
-    items9[HermesBuiltin.arraySpread(analyticsLocations, 0)] = tmp2(5748).PROFILE_FRAMES_EA_MARKETING;
+    items9[HermesBuiltin.arraySpread(analyticsLocations, 0)] = tmp2(5787).PROFILE_FRAMES_EA_MARKETING;
     obj13[0] = items9;
     const obj14 = { style: null, children: null };
     obj14[0] = tmp.framesEAContainer;
@@ -432,33 +432,33 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     const arraySpreadResult = HermesBuiltin.arraySpread(analyticsLocations, 0);
     obj16[0] = tmp2(1993).getArticleURL(constants.SHOP_FRAMES_EARLY_ACCESS);
     obj15[2] = intl8.format(tmp5(1236).t["3cglst"], obj16);
-    const items10 = [callback2(tmp5(4299).Text, obj15), , ];
+    const items10 = [callback2(tmp5(4340).Text, obj15), , ];
     const obj17 = { onTrackPress: null, text: null };
     obj17[0] = onTrackPress;
     const intl9 = tmp5(1236).intl;
     obj17[1] = intl9.string(tmp5(1236).t["9wfL34"]);
-    items10[1] = callback2(tmp5(12173).UnlockWithNitroButton, obj17);
+    items10[1] = callback2(tmp5(12230).UnlockWithNitroButton, obj17);
     const obj18 = { variant: "text-xxs/normal", children: null };
     const intl10 = tmp5(1236).intl;
     const obj19 = { paidURL: null, interval: null, ctaText: null };
     obj19[0] = constants2.PAID_TERMS;
     const tmp2Result1 = tmp2(1993);
-    obj19[1] = tmp2(3966).getIntervalStringAsNoun(tmp23);
+    obj19[1] = tmp2(4007).getIntervalStringAsNoun(tmp23);
     const intl11 = tmp5(1236).intl;
     obj19[2] = intl11.string(tmp5(1236).t["9wfL34"]);
     obj18[1] = intl10.format(tmp49, obj19);
-    items10[2] = callback2(tmp5(4299).Text, obj18);
+    items10[2] = callback2(tmp5(4340).Text, obj18);
     obj14[1] = items10;
     obj13[1] = tmp25(tmp26, obj14);
-    tmp25Result2 = callback2(tmp5(5728).AnalyticsLocationProvider, obj13);
-    const tmp2Result2 = tmp2(3966);
+    tmp25Result2 = callback2(tmp5(5767).AnalyticsLocationProvider, obj13);
+    const tmp2Result2 = tmp2(4007);
   } else {
     if (result) {
       if (!isPremiumSubscriber) {
         if (!result1) {
           const obj20 = { onTrackPress: null };
           obj20[0] = onTrackPress;
-          tmp25Result2 = callback2(tmp5(12173).UnlockWithNitroButton, obj20);
+          tmp25Result2 = callback2(tmp5(12230).UnlockWithNitroButton, obj20);
         }
       }
     }
@@ -514,7 +514,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
           str2 = "secondary";
         }
         obj24[4] = str2;
-        const items12 = [callback2(tmp5(4714).Button, obj24), ];
+        const items12 = [callback2(tmp5(4754).Button, obj24), ];
         let tmp38Result = canGiftProduct;
         if (canGiftProduct) {
           const obj25 = { product: null, analyticsLocations: null, variant: null, onTrackPress: null };
@@ -567,7 +567,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
       }
       handleClaim();
     };
-    tmp25Result2 = callback2(tmp5(4714).Button, obj28);
+    tmp25Result2 = callback2(tmp5(4754).Button, obj28);
   }
   items7[1] = tmp25Result2;
   obj[1] = items7;

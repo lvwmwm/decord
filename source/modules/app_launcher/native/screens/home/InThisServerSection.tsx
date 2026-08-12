@@ -1,10 +1,10 @@
-// Module ID: 11500
-// Function ID: 11501
+// Module ID: 11557
+// Function ID: 11558
 // Name: AppInThisServer
-// Dependencies: [19, 17, 21, 4303, 712, 11478, 1370, 4299, 1236, 4846, 1367, 11441, 8669, 9555, 11446, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 11535, 1370, 4340, 1236, 4886, 1367, 11498, 8708, 9595, 11503, 2]
 // Exports: default
 
-// Module 11500 (AppInThisServer)
+// Module 11557 (AppInThisServer)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ function AppInThisServer(onAppSelected) {
   const tmp3 = application(1367)("AppLauncherInThisServer-native");
   const tmp4 = createCacheKey();
   application = onAppSelected.appItem.application;
-  let obj = onAppSelected(11441);
+  let obj = onAppSelected(11498);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
     accessible: true,
@@ -54,11 +54,11 @@ function AppInThisServer(onAppSelected) {
     obj = { iconSource: null, wrapperStyle: null, iconSize: 36 };
     obj[0] = appLauncherIconSource;
     obj[1] = tmp4.iconContainer;
-    tmp8 = callback(application(11446), obj);
+    tmp8 = callback(application(11503), obj);
   }
-  const items1 = [tmp8, callback(onAppSelected(4299).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
+  const items1 = [tmp8, callback(onAppSelected(4340).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
   obj[5] = items1;
-  return closure_6(onAppSelected(8669).PressableScale, obj, application.id);
+  return closure_6(onAppSelected(8708).PressableScale, obj, application.id);
 }
 ({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -107,7 +107,7 @@ export default function InThisServerSection(arg0) {
     obj = { variant: "text-lg/bold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp11(1236).intl;
     obj[2] = intl.string(require(1236) /* getSystemLocale */.t.oJyzCu);
-    const items1 = [callback(require(4299) /* Text */.Text, obj), ];
+    const items1 = [callback(require(4340) /* Text */.Text, obj), ];
     let tmp5Result = null != dependencyMap;
     if (tmp5Result) {
       const obj1 = { style: null, onPress: null, accessibilityRole: "button", children: null };
@@ -122,8 +122,8 @@ export default function InThisServerSection(arg0) {
       const obj2 = { variant: "text-sm/medium", color: "text-brand", children: null };
       const intl2 = tmp11(1236).intl;
       obj2[2] = intl2.string(tmp11(1236).t["/qG8v7"]);
-      obj1[3] = tmp5(tmp11(4299).Text, obj2);
-      tmp5Result = tmp5(tmp11(4846).PressableOpacity, obj1);
+      obj1[3] = tmp5(tmp11(4340).Text, obj2);
+      tmp5Result = tmp5(tmp11(4886).PressableOpacity, obj1);
     }
     items1[1] = tmp5Result;
     obj[1] = items1;

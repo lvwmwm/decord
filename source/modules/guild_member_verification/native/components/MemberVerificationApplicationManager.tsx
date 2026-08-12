@@ -1,9 +1,9 @@
-// Module ID: 16468
-// Function ID: 16469
+// Module ID: 16525
+// Function ID: 16526
 // Name: prototype
-// Dependencies: [4126, 4127, 5261, 4643, 4129, 8425, 8433, 2]
+// Dependencies: [4167, 4168, 5300, 4683, 4170, 8464, 8472, 2]
 
-// Module 16468 (prototype)
+// Module 16525 (prototype)
 import handleConnectionOpen from "handleConnectionOpen";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import "initialize";

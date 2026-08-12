@@ -1,10 +1,10 @@
-// Module ID: 12671
-// Function ID: 12672
+// Module ID: 12730
+// Function ID: 12731
 // Name: shouldShowVoiceChannelChangeConfirmation
-// Dependencies: [4317, 1304, 1218, 1910, 4319, 2]
+// Dependencies: [4358, 1304, 1218, 1910, 4360, 2]
 // Exports: shouldShowVoiceChannelChangeConfirmation
 
-// Module 12671 (shouldShowVoiceChannelChangeConfirmation)
+// Module 12730 (shouldShowVoiceChannelChangeConfirmation)
 import set from "set";
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import fetchFingerprint from "fetchFingerprint";

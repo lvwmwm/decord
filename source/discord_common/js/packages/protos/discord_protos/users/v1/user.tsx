@@ -2178,7 +2178,7 @@ class Badge$Type extends MessageType14 {
 }
 const prototype14 = Badge$Type.prototype;
 prototype14["create"] = function create(arr) {
-  let obj = { badge: { oneofKind: "r" } };
+  let obj = { badge: { oneofKind: "Array" } };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
@@ -2968,10 +2968,10 @@ class AgeAssuranceData$Type extends MessageType18 {
       name: "estimated_date_of_birth",
       kind: "message",
       T() {
-            return callback(table[4]).Timestamp;
+            return callback(1336).Timestamp;
           }
     };
-    items = [, , , , , , ];
+    items = [, , , , , , , ];
     items[0] = obj;
     items[1] = {
       no: 2,
@@ -2992,24 +2992,33 @@ class AgeAssuranceData$Type extends MessageType18 {
             return items;
           }
     };
-    obj = { no: 5, name: "verified_at", kind: "message", T: null };
+    items[4] = {
+      no: 5,
+      name: "verified_at",
+      kind: "message",
+      T() {
+            return callback(1336).Timestamp;
+          }
+    };
+    obj = { no: 6, name: "estimated_age_group", kind: "enum", T: null };
     class T {
       constructor() {
-        return require("now").Timestamp;
+        items = ["discord_protos.users.v1.AgeAssuranceGroup"];
+        items[1] = closure_9;
+        return items;
       }
     }
     obj[3] = T;
-    items[4] = obj;
-    items[5] = {
-      no: 6,
-      name: "estimated_age_group",
-      kind: "enum",
+    items[5] = obj;
+    items[6] = { no: 7, name: "is_regional_adult", kind: "scalar", T: 8 };
+    items[7] = {
+      no: 8,
+      name: "cooldown_reset_at",
+      kind: "message",
       T() {
-            const items = ["discord_protos.users.v1.AgeAssuranceGroup", closure_9];
-            return items;
+            return callback(1336).Timestamp;
           }
     };
-    items[6] = { no: 7, name: "is_regional_adult", kind: "scalar", T: 8 };
     tmp = new tmp("discord_protos.users.v1.AgeAssuranceData", items, T);
     // ThrowIfThisInitialized (0x7c)
     return tmp;
@@ -3042,13 +3051,13 @@ prototype18["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       let tmp4 = callback(pos.tag(), 2);
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
-        let tmp27 = require;
-        let tmp28 = dependencyMap;
-        let Timestamp2 = require(1336) /* now */.Timestamp;
-        let tmp29 = Timestamp2;
-        let tmp30 = pos;
-        let tmp31 = readUnknownField;
-        obj.estimatedDateOfBirth = Timestamp2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.estimatedDateOfBirth);
+        let tmp32 = require;
+        let tmp33 = dependencyMap;
+        let Timestamp3 = require(1336) /* now */.Timestamp;
+        let tmp34 = Timestamp3;
+        let tmp35 = pos;
+        let tmp36 = readUnknownField;
+        obj.estimatedDateOfBirth = Timestamp3.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.estimatedDateOfBirth);
       } else if (2 === tmp5) {
         obj.method = pos.int32();
       } else if (3 === tmp5) {
@@ -3056,17 +3065,25 @@ prototype18["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       } else if (4 === tmp5) {
         obj.vendor = pos.int32();
       } else if (5 === tmp5) {
+        let tmp27 = require;
+        let tmp28 = dependencyMap;
+        let Timestamp2 = require(1336) /* now */.Timestamp;
+        let tmp29 = Timestamp2;
+        let tmp30 = pos;
+        let tmp31 = readUnknownField;
+        obj.verifiedAt = Timestamp2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.verifiedAt);
+      } else if (6 === tmp5) {
+        obj.estimatedAgeGroup = pos.int32();
+      } else if (7 === tmp5) {
+        obj.isRegionalAdult = pos.bool();
+      } else if (8 === tmp5) {
         let tmp22 = require;
         let tmp23 = dependencyMap;
         let Timestamp = require(1336) /* now */.Timestamp;
         let tmp24 = Timestamp;
         let tmp25 = pos;
         let tmp26 = readUnknownField;
-        obj.verifiedAt = Timestamp.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.verifiedAt);
-      } else if (6 === tmp5) {
-        obj.estimatedAgeGroup = pos.int32();
-      } else if (7 === tmp5) {
-        obj.isRegionalAdult = pos.bool();
+        obj.cooldownResetAt = Timestamp.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.cooldownResetAt);
       } else {
         let onRead = readUnknownField.readUnknownField;
         if ("throw" === onRead) {
@@ -3136,6 +3153,12 @@ prototype18["internalBinaryWrite"] = function internalBinaryWrite(estimatedDateO
     tag.tag(7, require(1307).WireType.Varint).bool(estimatedDateOfBirth.isRegionalAdult);
     const tagResult6 = tag.tag(7, require(1307).WireType.Varint);
   }
+  if (estimatedDateOfBirth.cooldownResetAt) {
+    const Timestamp3 = require(1336) /* now */.Timestamp;
+    const tagResult7 = tag.tag(8, require(1307).WireType.LengthDelimited);
+    const joined2 = Timestamp3.internalBinaryWrite(estimatedDateOfBirth.cooldownResetAt, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult2 = Timestamp3.internalBinaryWrite(estimatedDateOfBirth.cooldownResetAt, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
@@ -3152,7 +3175,7 @@ const items16 = [
     name: "estimated_date_of_birth",
     kind: "message",
     T() {
-      return callback(table[4]).Timestamp;
+      return callback(1336).Timestamp;
     }
   },
   {
@@ -3179,7 +3202,7 @@ const items16 = [
     name: "verified_at",
     kind: "message",
     T() {
-      return require(1336) /* now */.Timestamp;
+      return callback(1336).Timestamp;
     }
   },
   {
@@ -3187,11 +3210,19 @@ const items16 = [
     name: "estimated_age_group",
     kind: "enum",
     T() {
-      const items = ["discord_protos.users.v1.AgeAssuranceGroup", closure_9];
+      const items = ["discord_protos.users.v1.AgeAssuranceGroup", obj6];
       return items;
     }
   },
-  { no: 7, name: "is_regional_adult", kind: "scalar", T: 8 }
+  { no: 7, name: "is_regional_adult", kind: "scalar", T: 8 },
+  {
+    no: 8,
+    name: "cooldown_reset_at",
+    kind: "message",
+    T() {
+      return callback(1336).Timestamp;
+    }
+  }
 ];
 let tmp26 = new "binaryReadMap3"("discord_protos.users.v1.AgeAssuranceData", items16, tmp7, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap2", undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, obj2, obj3, obj4, obj5, obj6, obj7);
 // ThrowIfThisInitialized (0x7c)
@@ -4331,7 +4362,7 @@ class PerkConfig$Type extends MessageType27 {
 }
 const prototype27 = PerkConfig$Type.prototype;
 prototype27["create"] = function create(arr) {
-  let obj = { source: [], kind: { oneofKind: "r" } };
+  let obj = { source: [], kind: { oneofKind: "Array" } };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);

@@ -1,10 +1,10 @@
-// Module ID: 11766
-// Function ID: 11767
+// Module ID: 11823
+// Function ID: 11824
 // Name: useMentionAnchor
-// Dependencies: [32, 19, 9921, 2]
+// Dependencies: [32, 19, 9962, 2]
 // Exports: default
 
-// Module 11766 (useMentionAnchor)
+// Module 11823 (useMentionAnchor)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -39,7 +39,7 @@ export default function useMentionAnchor(c22) {
       startsWithResult = arg1 >= anchor + arg3.length;
     }
     if (startsWithResult) {
-      let obj1 = _require(9921);
+      let obj1 = _require(9962);
       startsWithResult = obj1.isUnbrokenRun(c22, anchor + arg3.length, arg1);
     }
     tmp5 = startsWithResult;
@@ -68,8 +68,8 @@ export default function useMentionAnchor(c22) {
             startsWithResult1 = arg1 >= lastIndexOfResult + arg3.length;
           }
           if (startsWithResult1) {
-            startsWithResult1 = tmp25(9921).isUnbrokenRun(c22, lastIndexOfResult + arg3.length, arg1);
-            const tmp25Result = tmp25(9921);
+            startsWithResult1 = tmp25(9962).isUnbrokenRun(c22, lastIndexOfResult + arg3.length, arg1);
+            const tmp25Result = tmp25(9962);
           }
           tmp18 = null;
           if (startsWithResult1) {
@@ -77,7 +77,7 @@ export default function useMentionAnchor(c22) {
           }
         }
         tmp16 = tmp18;
-        obj9 = _require(9921);
+        obj9 = _require(9962);
         tmp25 = _require;
       }
       if (null != tmp16) {

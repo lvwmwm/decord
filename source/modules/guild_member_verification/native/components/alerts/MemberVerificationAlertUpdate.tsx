@@ -1,10 +1,10 @@
-// Module ID: 8437
-// Function ID: 8438
+// Module ID: 8476
+// Function ID: 8477
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 17, 676, 21, 4303, 4732, 1236, 4017, 8438, 4299, 2]
+// Dependencies: [19, 17, 676, 21, 4344, 4772, 1236, 4058, 8477, 4340, 2]
 // Exports: default
 
-// Module 8437 (MemberVerificationAlertUpdate)
+// Module 8476 (MemberVerificationAlertUpdate)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { DownloadLinks } from "ME";
@@ -30,16 +30,16 @@ export default function MemberVerificationAlertUpdate(onClose) {
     return callback(table[7]).openURL(constants.IOS);
   };
   obj.onCancel = onClose.onClose;
-  obj = { source: importDefault(8438), style: tmp.headerImage };
+  obj = { source: importDefault(8477), style: tmp.headerImage };
   const items = [callback(Image, obj), , ];
   obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl3.string(require(1236) /* getSystemLocale */.t.kkjNHU);
-  items[1] = callback(require(4299) /* Text */.Text, obj);
+  items[1] = callback(require(4340) /* Text */.Text, obj);
   const obj1 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t.gnkqzQ);
-  items[2] = callback(require(4299) /* Text */.Text, obj1);
+  items[2] = callback(require(4340) /* Text */.Text, obj1);
   obj.children = items;
-  return callback2(importDefault(4732), obj);
+  return callback2(importDefault(4772), obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 4833
-// Function ID: 4834
+// Module ID: 4873
+// Function ID: 4874
 // Name: GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH
-// Dependencies: [4834, 2]
+// Dependencies: [4874, 2]
 // Exports: isGameAutocompleteResultAllowedInGameWidgets, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
 
-// Module 4833 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
+// Module 4873 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
 const result = require("set").fileFinishedImporting("modules/games/autocomplete/GameAutocompleteUtils.tsx");
 
 export const GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH = 100;
@@ -39,6 +39,6 @@ export const normalizeGameAutocompleteQuery = function normalizeGameAutocomplete
   }
 };
 export const isGameAutocompleteResultAllowedInGameWidgets = function isGameAutocompleteResultAllowedInGameWidgets(id) {
-  const GAME_WIDGET_BANNED_APPLICATION_IDS = require(4834) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_BANNED_APPLICATION_IDS;
+  const GAME_WIDGET_BANNED_APPLICATION_IDS = require(4874) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_BANNED_APPLICATION_IDS;
   return !GAME_WIDGET_BANNED_APPLICATION_IDS.has(id.id);
 };

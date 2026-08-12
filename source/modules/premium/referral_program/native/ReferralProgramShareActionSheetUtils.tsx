@@ -1,10 +1,10 @@
-// Module ID: 12728
-// Function ID: 12729
+// Module ID: 12787
+// Function ID: 12788
 // Name: buildReferralUserRow
-// Dependencies: [3957, 9625, 2]
+// Dependencies: [3998, 9665, 2]
 // Exports: buildReferralUserRow
 
-// Module 12728 (buildReferralUserRow)
+// Module 12787 (buildReferralUserRow)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { UserRowModes } from "UserRowModes";
 

@@ -1,10 +1,10 @@
-// Module ID: 12828
-// Function ID: 12829
+// Module ID: 12887
+// Function ID: 12888
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 1994, 5858, 12819, 1924, 505, 21, 4303, 5236, 5158, 6873, 589, 1898, 4732, 12829, 1297, 1236, 3966, 4714, 2]
+// Dependencies: [32, 19, 17, 1994, 5897, 12878, 1924, 505, 21, 4344, 5275, 5198, 6912, 589, 1898, 4772, 12888, 1297, 1236, 4007, 4754, 2]
 // Exports: default
 
-// Module 12828 (PremiumPlanSelectYearlyUpsellModal)
+// Module 12887 (PremiumPlanSelectYearlyUpsellModal)
 import _slicedToArray from "_slicedToArray";
 import getPremiumPlanItem from "getPremiumPlanItem";
 import get_ActivityIndicator from "Button";
@@ -54,7 +54,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   let obj = React;
   [tmp4, c3] = callback(React.useState(null), 2);
-  let obj1 = productId(6873);
+  let obj1 = productId(6912);
   const premiumBundledItemsFromProductId = obj1.getPremiumBundledItemsFromProductId(productId);
   let obj2 = productId(589);
   let items = [_getSystemLocale];
@@ -95,14 +95,14 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     obj[0] = tmp.container;
     obj1 = { style: null, source: null };
     obj1[0] = tmp.image;
-    obj1[1] = importDefault(12829);
+    obj1[1] = importDefault(12888);
     const items2 = [callback2(closure_5, obj1), , , , , ];
     obj2 = { style: null, accessibilityRole: "header", children: null };
     obj2[0] = tmp.header;
     const intl = tmp5(1236).intl;
     obj3 = { discountPercentage: null, planName: null };
     obj3[0] = formatPercentResult;
-    tmp5Result = tmp5(3966);
+    tmp5Result = tmp5(4007);
     obj3[1] = tmp5Result.getPremiumTypeDisplayName(premiumTier);
     obj2[2] = intl.format(tmp5(1236).t.LQCVfK, obj3);
     items2[1] = callback2(tmp5(1297).LegacyText, obj2);
@@ -126,7 +126,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     };
     obj7[3] = tmp11;
     obj7[4] = "upsell" === tmp4 && tmp2;
-    obj6[1] = callback2(tmp5(4714).Button, obj7);
+    obj6[1] = callback2(tmp5(4754).Button, obj7);
     items2[3] = callback2(closure_6, obj6);
     const obj9 = { style: null, children: null };
     obj9[0] = tmp.continueButton;
@@ -139,7 +139,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     };
     obj10[3] = tmp11;
     obj10[4] = "default" === tmp4 && tmp2;
-    obj9[1] = callback2(tmp5(4714).Button, obj10);
+    obj9[1] = callback2(tmp5(4754).Button, obj10);
     items2[4] = callback2(closure_6, obj9);
     const obj11 = { style: null, children: null };
     obj11[0] = tmp.cancelButton;
@@ -147,11 +147,11 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     const intl5 = tmp5(1236).intl;
     obj12[1] = intl5.string(tmp5(1236).t.cpT0Cq);
     obj12[2] = onClose;
-    obj11[1] = callback2(tmp5(4714).Button, obj12);
+    obj11[1] = callback2(tmp5(4754).Button, obj12);
     items2[5] = callback2(closure_6, obj11);
     obj[1] = items2;
     obj[2] = closure_12(closure_6, obj);
-    return callback2(importDefault(4732), obj);
+    return callback2(importDefault(4772), obj);
   }
   const tmp3 = callback(React.useState(null), 2);
 };

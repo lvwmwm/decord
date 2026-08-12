@@ -1,10 +1,10 @@
-// Module ID: 15899
-// Function ID: 15900
+// Module ID: 15956
+// Function ID: 15957
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7121, 3957, 1922, 676, 21, 1297, 4303, 712, 589, 12343, 9087, 12, 1370, 4846, 1236, 4299, 5778, 2]
+// Dependencies: [32, 19, 17, 7160, 3998, 1922, 676, 21, 1297, 4344, 712, 589, 12406, 9127, 12, 1370, 4886, 1236, 4340, 5817, 2]
 // Exports: default
 
-// Module 15899 (UserProfileYourFriendsCard)
+// Module 15956 (UserProfileYourFriendsCard)
 import _slicedToArray from "_slicedToArray";
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import { View } from "getSystemLocale";
@@ -54,9 +54,9 @@ export default function UserProfileYourFriendsCard(arg0) {
   const items1 = [markAllUserIdListsStale];
   stateFromStoresArray1 = _require(589).useStateFromStoresArray(items1, () => friendIDs.getFriendIDs());
   const obj2 = _require(589);
-  gameRelationshipsByType = _require(12343).useGameRelationshipsByType(RelationshipTypes.FRIEND);
+  gameRelationshipsByType = _require(12406).useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const userAffinitiesV2 = _undefined(9087).fetchUserAffinitiesV2();
+    const userAffinitiesV2 = _undefined(9127).fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
   const effect1 = stateFromStoresArray1.useEffect(() => {
@@ -118,7 +118,7 @@ export default function UserProfileYourFriendsCard(arg0) {
   obj = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", style: tmp.label, children: null };
   const intl2 = _require(1236).intl;
   obj[4] = intl2.string(_require(1236).t.TdEu5X);
-  const items5 = [callback(_require(4299).Text, obj), memo, callback(_require(5778).ChevronSmallRightIcon, { size: "sm" })];
+  const items5 = [callback(_require(4340).Text, obj), memo, callback(_require(5817).ChevronSmallRightIcon, { size: "sm" })];
   obj[5] = items5;
-  return callback2(_require(4846).PressableOpacity, obj);
+  return callback2(_require(4886).PressableOpacity, obj);
 };

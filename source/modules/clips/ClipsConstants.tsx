@@ -1,10 +1,10 @@
-// Module ID: 4358
-// Function ID: 4359
+// Module ID: 4399
+// Function ID: 4400
 // Name: result
 // Dependencies: [687, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE, getClipCropAspectRatio, getClipCropBounds
 
-// Module 4358 (result)
+// Module 4399 (result)
 let obj = {};
 const result = 30 * require("set").Millis.SECOND;
 obj.SECONDS_30 = result;
@@ -56,9 +56,6 @@ export const CLIPS_EDUCATION_COOLDOWN = result4;
 export const CLIPS_EDUCATION_GAME_LAUNCH_THRESHOLD = 5;
 export const CLIPS_EDUCATION_MAX_DISMISSALS_ENABLED = 5;
 export const CLIPS_EDUCATION_MAX_DISMISSALS_DISABLED = 1;
-export const DEFAULT_MAX_AUTO_CLIPS = 20;
-export const MIN_MAX_AUTO_CLIPS = 1;
-export const MAX_MAX_AUTO_CLIPS = 50;
 export const MIN_CLIPS_BITRATE_PERCENT = 10;
 export const MAX_CLIPS_BITRATE_PERCENT = 100;
 export const DEFAULT_CLIPS_BITRATE_PERCENT = 75;

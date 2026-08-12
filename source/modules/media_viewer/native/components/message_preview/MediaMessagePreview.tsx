@@ -1,10 +1,10 @@
-// Module ID: 12252
-// Function ID: 12253
+// Module ID: 12315
+// Function ID: 12316
 // Name: MeasureMessage
-// Dependencies: [32, 19, 17, 5895, 5899, 1391, 4521, 8928, 676, 21, 8043, 8234, 4303, 8871, 8595, 712, 589, 10203, 1236, 11, 12253, 11025, 8616, 7224, 11062, 5427, 11298, 11083, 4311, 2]
+// Dependencies: [32, 19, 17, 5934, 5938, 1391, 4561, 8967, 676, 21, 8082, 8273, 4344, 8910, 8634, 712, 589, 10244, 1236, 11, 12316, 11078, 8655, 7263, 11115, 5466, 11352, 11136, 4352, 2]
 // Exports: default
 
-// Module 12252 (MeasureMessage)
+// Module 12315 (MeasureMessage)
 import _slicedToArray from "_slicedToArray";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import get_ActivityIndicator from "useReactionPermissions";

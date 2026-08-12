@@ -1,10 +1,10 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12206
+// Function ID: 12207
 // Name: PremiumGiftStyles
-// Dependencies: [19, 17, 1924, 12150, 21, 12151, 12152, 12153, 12154, 12155, 12156, 12157, 12158, 12159, 4303, 712, 1236, 2367, 5268, 2]
+// Dependencies: [19, 17, 1924, 12207, 21, 12208, 12209, 12210, 12211, 12212, 12213, 12214, 12215, 12216, 4344, 712, 1236, 2367, 5307, 2]
 // Exports: default
 
-// Module 12149 (PremiumGiftStyles)
+// Module 12206 (PremiumGiftStyles)
 import "set";
 import get_ActivityIndicator from "messagesProxy";
 import { PremiumGiftStyles } from "GuildFeatures";
@@ -78,7 +78,7 @@ export default function GiftBackgroundSelectTile(index) {
     const obj1 = { resizeMode: "contain", style: null, source: null };
     obj1[1] = tmp.image;
     obj1[2] = tmp2;
-    items[1] = callback(importDefault(5268), obj1);
+    items[1] = callback(importDefault(5307), obj1);
     obj[4] = items;
     tmp4Result = closure_7(closure_4, obj);
     const tmp4 = closure_7;

@@ -1,9 +1,9 @@
-// Module ID: 9155
-// Function ID: 9156
+// Module ID: 9195
+// Function ID: 9196
 // Name: handleAudioRouteChanged
-// Dependencies: [17, 4375, 9156, 500, 9157, 589, 709, 2]
+// Dependencies: [17, 4415, 9196, 500, 9197, 589, 709, 2]
 
-// Module 9155 (handleAudioRouteChanged)
+// Module 9195 (handleAudioRouteChanged)
 import get_ActivityIndicator from "get ActivityIndicator";
 import createRTCConnection from "createRTCConnection";
 import { Store } from "initialize";
@@ -16,20 +16,20 @@ function handleAudioRouteChanged(arr) {
   if (null != arr) {
     if ("" !== arr) {
       if (arr.includes("Bluetooth")) {
-        let UNKNOWN = require(9156) /* RouteTypes */.RouteTypes.BLUETOOTH;
+        let UNKNOWN = require(9196) /* RouteTypes */.RouteTypes.BLUETOOTH;
       } else if (arr.includes("Speaker")) {
-        UNKNOWN = require(9156) /* RouteTypes */.RouteTypes.SPEAKER;
+        UNKNOWN = require(9196) /* RouteTypes */.RouteTypes.SPEAKER;
       } else if (arr.includes("Receiver")) {
-        UNKNOWN = require(9156) /* RouteTypes */.RouteTypes.RECEIVER;
+        UNKNOWN = require(9196) /* RouteTypes */.RouteTypes.RECEIVER;
       } else {
         const hasItem = arr.includes("Headphones");
-        const RouteTypes = require(9156) /* RouteTypes */.RouteTypes;
+        const RouteTypes = require(9196) /* RouteTypes */.RouteTypes;
         UNKNOWN = hasItem ? RouteTypes.WIRED : RouteTypes.UNKNOWN;
       }
     }
     c6 = tmp;
   }
-  UNKNOWN = require(9156) /* RouteTypes */.RouteTypes.UNKNOWN;
+  UNKNOWN = require(9196) /* RouteTypes */.RouteTypes.UNKNOWN;
 }
 const NativeModules = get_ActivityIndicator.NativeModules;
 let UNKNOWN = require("RouteTypes").RouteTypes.UNKNOWN;
@@ -56,7 +56,7 @@ const audioRouteStoreClass = new AudioRouteStoreClass(require("dispatcher"), {
     if (null === _null) {
       if (isConnectedResult) {
         let _catch = dependencyMap;
-        let UNKNOWN = require(9156) /* RouteTypes */.RouteTypes.UNKNOWN;
+        let UNKNOWN = require(9196) /* RouteTypes */.RouteTypes.UNKNOWN;
         let addListenerResult;
         if (nativeEventEmitter != tmp3) {
           addListenerResult = obj.addListener("audio-route-changed", (routeType) => {
@@ -66,7 +66,7 @@ const audioRouteStoreClass = new AudioRouteStoreClass(require("dispatcher"), {
         }
         _null = addListenerResult;
         if (tmp11Result.isAndroid()) {
-          const obj3 = importDefault(9157);
+          const obj3 = importDefault(9197);
           tmp3 = obj3 == tmp3;
           let currentRoute;
           if (!tmp3) {
@@ -111,7 +111,7 @@ const audioRouteStoreClass = new AudioRouteStoreClass(require("dispatcher"), {
       if (AudioRoutePicker != tmp3) {
         AudioRoutePicker.resetPortOverride();
       }
-      UNKNOWN = require(9156) /* RouteTypes */.RouteTypes.UNKNOWN;
+      UNKNOWN = require(9196) /* RouteTypes */.RouteTypes.UNKNOWN;
       _null.remove();
       _null = tmp3;
     }

@@ -1,9 +1,9 @@
-// Module ID: 7379
-// Function ID: 7380
+// Module ID: 7418
+// Function ID: 7419
 // Name: handleConnectionStateUpdated
-// Dependencies: [109, 5, 19, 17, 6886, 6887, 1218, 3972, 5858, 7335, 5859, 676, 4286, 1924, 21, 3, 709, 7380, 1217, 5861, 3902, 6895, 3981, 4623, 698, 4643, 1236, 7381, 2007, 4509, 6876, 2]
+// Dependencies: [109, 5, 19, 17, 6925, 6926, 1218, 4013, 5897, 7374, 5898, 676, 4327, 1924, 21, 3, 709, 7419, 1217, 5900, 3943, 6934, 4022, 4663, 698, 4683, 1236, 7420, 2007, 4549, 6915, 2]
 
-// Module 7379 (handleConnectionStateUpdated)
+// Module 7418 (handleConnectionStateUpdated)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import closure_5 from "usePremiumPlanPurchasedStore";
 import "SubscriptionPlans";
@@ -35,9 +35,9 @@ function handleConnectionStateUpdated(connectionState) {
   connectionState = connectionState.connectionState;
   importDefault(709).dispatch({ type: "GPLAY_UPDATE_CONNECTION_STATE", connectionState });
   if (connectionState === constants.CONNECTED) {
-    const userCountry = require(7380) /* getPlanIdForProduct */.loadUserCountry();
+    const userCountry = require(7419) /* getPlanIdForProduct */.loadUserCountry();
     userCountry.finally(() => callback(table[17]).loadSkus());
-    const obj2 = require(7380) /* getPlanIdForProduct */;
+    const obj2 = require(7419) /* getPlanIdForProduct */;
   }
 }
 function handlePurchaseStateUpdated(arg0) {
@@ -106,7 +106,7 @@ function _handlePurchaseUpdated() {
                   let dispatchResult = obj4.dispatch(obj);
                   let tmp24 = lib;
                   let tmp25 = dependencyMap;
-                  let obj7 = lib(4623);
+                  let obj7 = lib(4663);
                   let c6 = 8;
                   let num4 = 1;
                   c7 = 1;
@@ -129,7 +129,7 @@ function _handlePurchaseUpdated() {
               } else {
                 let tmp15 = lib;
                 let tmp16 = dependencyMap;
-                obj1 = lib(4623);
+                obj1 = lib(4663);
                 c6 = 9;
                 let num2 = 1;
                 c7 = 1;
@@ -224,7 +224,7 @@ function _handleDowngradeCommand() {
               downgradeCommand = downgradeCommand.downgradeCommand;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp4) {
@@ -339,9 +339,9 @@ function _executePendingDowngrade() {
           if (2 === tmp8) {
             c3 = 1;
             lib = dependencyMap;
-            let obj5 = pendingDowngrade(3981);
+            let obj5 = pendingDowngrade(4022);
             const result = obj5.captureBillingException(lib);
-            let obj6 = lib(4643);
+            let obj6 = lib(4683);
             const obj2 = { title: null, body: null };
             const intl = pendingDowngrade(1236).intl;
             obj2[0] = intl.string(pendingDowngrade(1236).t["U+H+kd"]);
@@ -470,7 +470,7 @@ function _fetchAndAlertActiveSubscription() {
             let closure_1 = tmp5;
             let callback = tmp2;
             callback = undefined;
-            let obj1 = outer1_0(4623);
+            let obj1 = outer1_0(4663);
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
@@ -575,7 +575,7 @@ function _handleAppStateUpdated() {
               state = state.state;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp8) {

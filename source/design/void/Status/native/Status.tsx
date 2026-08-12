@@ -1,12 +1,12 @@
-// Module ID: 13366
-// Function ID: 13367
+// Module ID: 13423
+// Function ID: 13424
 // Name: Status
-// Dependencies: [32, 19, 17, 1298, 676, 12309, 21, 4303, 13364, 712, 13367, 13368, 13369, 13370, 13371, 13372, 13373, 13365, 13374, 4042, 4713, 13351, 2]
+// Dependencies: [32, 19, 17, 1298, 676, 12372, 21, 4344, 13421, 712, 13424, 13425, 13426, 13427, 13428, 13429, 13430, 13422, 13431, 4083, 4753, 13408, 2]
 // Exports: StatusWithTyping, default
 
-// Module 13366 (Status)
+// Module 13423 (Status)
 import _slicedToArray from "_slicedToArray";
-import "module_4042";
+import "module_4083";
 import get_ActivityIndicator from "STATUS_PADDING";
 import { STATUS_PADDING } from "STATUS_PADDING";
 import { StatusTypes } from "ME";
@@ -30,7 +30,7 @@ let closure_13 = createCacheKey.createStyles({ statusIcon: { width: "100%", heig
 let closure_14 = createCacheKey.createStyles((items) => {
   let dotSize;
   let height;
-  let obj = require(13364) /* getAnimatedTypingTranslateX */;
+  let obj = require(13421) /* getAnimatedTypingTranslateX */;
   const statusTypingDimensions = obj.getStatusTypingDimensions(items);
   ({ height, dotSize } = statusTypingDimensions);
   if (StatusTypes.ONLINE === arg1) {
@@ -81,27 +81,27 @@ export default function Status(isMobileOnline) {
     streaming = false;
   }
   let obj = { style: null, children: null };
-  const items = [importDefault(13365)(size, flag, flag2), style];
+  const items = [importDefault(13422)(size, flag, flag2), style];
   obj[0] = items;
   obj = { style: callback2().statusIcon, source: null, resizeMode: "stretch" };
   if (streaming) {
-    let tmp4Result = tmp4(13367);
+    let tmp4Result = tmp4(13424);
   } else if (flag2) {
-    tmp4Result = tmp4(13368);
+    tmp4Result = tmp4(13425);
   } else if (flag) {
-    tmp4Result = tmp4(13369);
+    tmp4Result = tmp4(13426);
   } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(13370);
+    tmp4Result = tmp4(13427);
   } else if (tmp7.DND === status) {
-    tmp4Result = tmp4(13371);
+    tmp4Result = tmp4(13428);
   } else {
     if (tmp7.OFFLINE !== status) {
       if (tmp7.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(13373);
+        tmp4Result = tmp4(13430);
       }
     }
-    tmp4Result = tmp4(13372);
+    tmp4Result = tmp4(13429);
   }
   obj[1] = tmp4Result;
   obj[1] = closure_11(closure_4, obj);

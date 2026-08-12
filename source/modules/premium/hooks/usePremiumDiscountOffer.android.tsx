@@ -1,10 +1,10 @@
-// Module ID: 7342
-// Function ID: 7343
+// Module ID: 7381
+// Function ID: 7382
 // Name: usePremiumDiscountOffer
-// Dependencies: [5858, 1924, 7343, 5861, 647, 2]
+// Dependencies: [5897, 1924, 7382, 5900, 647, 2]
 // Exports: usePremiumDiscountOffer, usePremiumGroupDiscountOffer
 
-// Module 7342 (usePremiumDiscountOffer)
+// Module 7381 (usePremiumDiscountOffer)
 import updateProduct from "updateProduct";
 import GuildFeatures from "GuildFeatures";
 
@@ -20,7 +20,7 @@ export const usePremiumDiscountOffer = function usePremiumDiscountOffer() {
   const obj = offerIds(647);
   const tmp = offerIds;
   const tmp3 = importDefault;
-  let values = Object.values(offerIds(5861).DiscountIdToProductOfferId[closure_4]);
+  let values = Object.values(offerIds(5900).DiscountIdToProductOfferId[closure_4]);
   let tmp5 = null;
   if (0 !== values.length) {
     let tmp6 = null;
@@ -29,8 +29,8 @@ export const usePremiumDiscountOffer = function usePremiumDiscountOffer() {
     }
     tmp5 = tmp6;
   }
-  tmp4 = importDefault(7343)(closure_4);
-  values = Object.values(tmp(5861).DiscountIdToProductOfferId[closure_5]);
+  tmp4 = importDefault(7382)(closure_4);
+  values = Object.values(tmp(5900).DiscountIdToProductOfferId[closure_5]);
   let tmp8 = null;
   if (0 !== values.length) {
     let tmp9 = null;

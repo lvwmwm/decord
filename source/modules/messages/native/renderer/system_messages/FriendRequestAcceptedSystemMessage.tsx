@@ -1,10 +1,10 @@
-// Module ID: 8176
-// Function ID: 8177
+// Module ID: 8215
+// Function ID: 8216
 // Name: createFriendRequestAcceptedSystemMessage
-// Dependencies: [1391, 1922, 8071, 8073, 4303, 712, 1236, 8057, 8177, 8074, 2]
+// Dependencies: [1391, 1922, 8110, 8112, 4344, 712, 1236, 8096, 8216, 8113, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 8176 (createFriendRequestAcceptedSystemMessage)
+// Module 8215 (createFriendRequestAcceptedSystemMessage)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -21,7 +21,7 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
       const currentUser = authStore.getCurrentUser();
       if (null != user) {
         if (null != currentUser) {
-          let colorString = require(8071) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
+          let colorString = require(8110) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
           let obj = { userId: null, message: null, author: null, roleStyle: null };
           obj[0] = recipientId;
           obj[1] = message;
@@ -29,11 +29,11 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
           obj[3] = message.roleStyle;
           obj = { username: null, usernameOnClick: null };
           obj[0] = colorString.nick;
-          obj[1] = importDefault(8073)(obj);
+          obj[1] = importDefault(8112)(obj);
           let content = message.content;
           if (null != content) {
             if ("" !== content) {
-              let tmp15Result = tmp15(4303);
+              let tmp15Result = tmp15(4344);
               const obj1 = { baseTextColor: null };
               obj1[0] = tmp17(712).colors.TEXT_SUBTLE;
               const intl2 = tmp15(1236).intl;
@@ -70,10 +70,10 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
           }
           const obj4 = { content: null, iconUrl: null, textColor: null };
           obj4[0] = formatToPartsResult;
-          tmp15Result = tmp15(8057);
-          obj4[1] = tmp15Result.getAssetUriForEmbed(importDefault(8177));
+          tmp15Result = tmp15(8096);
+          obj4[1] = tmp15Result.getAssetUriForEmbed(importDefault(8216));
           obj4[2] = undefined;
-          const merged1 = Object.assign(tmp17(8074)(message));
+          const merged1 = Object.assign(tmp17(8113)(message));
           return obj4;
         }
       }

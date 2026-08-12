@@ -1,9 +1,9 @@
-// Module ID: 9763
-// Function ID: 9764
+// Module ID: 9804
+// Function ID: 9805
 // Name: initialize
 // Dependencies: [1218, 589, 709, 2]
 
-// Module 9763 (initialize)
+// Module 9804 (initialize)
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";
 

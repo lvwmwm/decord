@@ -1,10 +1,10 @@
-// Module ID: 5340
-// Function ID: 5341
+// Module ID: 5379
+// Function ID: 5380
 // Name: context
-// Dependencies: [32, 19, 676, 21, 1231, 5341, 1906, 5342, 2]
+// Dependencies: [32, 19, 676, 21, 1231, 5380, 1906, 5381, 2]
 // Exports: AppWindowContextProvider, getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 5340 (context)
+// Module 5379 (context)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -24,7 +24,7 @@ export const MainWindowDispatch = componentDispatcher;
 export const getWindowDispatchForElement = function getWindowDispatchForElement(ownerDocument) {
   const defaultView = ownerDocument.ownerDocument.defaultView;
   if (null != defaultView) {
-    const value = map.get(require(5341) /* getWindowId */.getWindowId(defaultView));
+    const value = map.get(require(5380) /* getWindowId */.getWindowId(defaultView));
     let windowDispatch;
     if (value != null) {
       windowDispatch = value.windowDispatch;
@@ -42,13 +42,13 @@ export const getWindowDispatchForEvent = function getWindowDispatchForEvent(targ
     const defaultView = target.target.ownerDocument.defaultView;
     let tmp5;
     if (null != defaultView) {
-      const value = map.get(require(5341) /* getWindowId */.getWindowId(defaultView));
+      const value = map.get(require(5380) /* getWindowId */.getWindowId(defaultView));
       let windowDispatch;
       if (value != null) {
         windowDispatch = value.windowDispatch;
       }
       tmp5 = windowDispatch;
-      const tmpResult = require(5341) /* getWindowId */;
+      const tmpResult = require(5380) /* getWindowId */;
     }
     if (tmp5 == null) {
       tmp5 = null;
@@ -58,7 +58,7 @@ export const getWindowDispatchForEvent = function getWindowDispatchForEvent(targ
   return tmp4;
 };
 export const getCurrentlyInteractingAppWindowContext = function getCurrentlyInteractingAppWindowContext() {
-  const currentlyInteractingWindowId = require(5342) /* INTERACTION_EVENTS */.getCurrentlyInteractingWindowId();
+  const currentlyInteractingWindowId = require(5381) /* INTERACTION_EVENTS */.getCurrentlyInteractingWindowId();
   let tmp2 = null;
   if (null != currentlyInteractingWindowId) {
     let value = map.get(currentlyInteractingWindowId);
@@ -73,7 +73,7 @@ export const getAppWindowContextValue = function getAppWindowContextValue(arg0) 
   return map.get(arg0);
 };
 export const getCurrentlyInteractingAppContext = function getCurrentlyInteractingAppContext() {
-  const currentlyInteractingWindowId = require(5342) /* INTERACTION_EVENTS */.getCurrentlyInteractingWindowId();
+  const currentlyInteractingWindowId = require(5381) /* INTERACTION_EVENTS */.getCurrentlyInteractingWindowId();
   let tmp2 = null;
   if (null != currentlyInteractingWindowId) {
     let value = map.get(currentlyInteractingWindowId);

@@ -1,10 +1,10 @@
-// Module ID: 9860
-// Function ID: 9861
+// Module ID: 9901
+// Function ID: 9902
 // Name: LocationText
-// Dependencies: [19, 17, 4295, 3957, 1922, 21, 4303, 712, 4299, 4494, 692, 4800, 4802, 4764, 589, 4846, 1236, 5326, 2]
+// Dependencies: [19, 17, 4336, 3998, 1922, 21, 4344, 712, 4340, 4534, 692, 4840, 4842, 4804, 589, 4886, 1236, 5365, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 9860 (LocationText)
+// Module 9901 (LocationText)
 import noop from "noop";
 import { View } from "XSmallIcon";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -108,7 +108,7 @@ export default function MessageNotificationHeader(locationTextColor) {
     obj[0] = tmp5;
     const tmp6 = obj;
   }
-  let tmp2Result = tmp2(4494);
+  let tmp2Result = tmp2(4534);
   const channelName = tmp2Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
   const type = channel.type;
   let tmp10 = channelName;
@@ -123,7 +123,7 @@ export default function MessageNotificationHeader(locationTextColor) {
           }
           let channelName1 = null;
           if (null != parentChannel) {
-            tmp2Result = tmp2(4494);
+            tmp2Result = tmp2(4534);
             channelName1 = tmp2Result.computeChannelName(parentChannel, mergeGuildAvatar, markAllUserIdListsStale);
           }
           if (null != channelName1) {
@@ -155,7 +155,7 @@ export default function MessageNotificationHeader(locationTextColor) {
     const items1 = [tmp.primaryText, tmp6];
     obj2[3] = items1;
     obj2[4] = author.nick;
-    tmp19 = callback(tmp2(4299).Text, obj2);
+    tmp19 = callback(tmp2(4340).Text, obj2);
   }
   const items2 = [tmp19, ];
   let tmp21 = null != tmp10;
@@ -185,8 +185,8 @@ export default function MessageNotificationHeader(locationTextColor) {
     };
     const obj5 = { color: "icon-subtle", style: null };
     obj5[1] = { height: 20, width: 20 };
-    obj4[5] = callback(tmp2(5326).XSmallIcon, obj5);
-    expanded = callback(tmp2(4846).PressableOpacity, obj4);
+    obj4[5] = callback(tmp2(5365).XSmallIcon, obj5);
+    expanded = callback(tmp2(4886).PressableOpacity, obj4);
   }
   items3[1] = expanded;
   obj[1] = items3;
@@ -200,18 +200,18 @@ export const SimpleNotificationHeader = function SimpleNotificationHeader(second
   const tmp = createCacheKey();
   let obj = { style: tmp.container, children: null };
   const items = [tmp.primaryText, labelStyle];
-  const items1 = [callback(require(4299) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items, children: text }), ];
+  const items1 = [callback(require(4340) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items, children: text }), ];
   let tmp2Result = null != secondaryText;
   if (tmp2Result) {
     obj = { style: null, children: null };
     obj[0] = tmp.secondaryTextContainer;
     obj = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: null, children: "\u00B7" };
     obj[3] = tmp.separator;
-    const items2 = [tmp4(tmp5(4299).Text, obj), ];
+    const items2 = [tmp4(tmp5(4340).Text, obj), ];
     const obj1 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: null, children: null };
     obj1[3] = tmp.secondaryText;
     obj1[4] = secondaryText;
-    items2[1] = tmp4(tmp5(4299).Text, obj1);
+    items2[1] = tmp4(tmp5(4340).Text, obj1);
     obj[1] = items2;
     tmp2Result = tmp2(tmp3, obj);
   }

@@ -1,10 +1,10 @@
-// Module ID: 3980
-// Function ID: 3981
+// Module ID: 4021
+// Function ID: 4022
 // Name: SubscriptionStatusTypes
 // Dependencies: [676, 687, 1993, 1236, 2885, 2]
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName
 
-// Module 3980 (SubscriptionStatusTypes)
+// Module 4021 (SubscriptionStatusTypes)
 import ME from "ME";
 import importDefaultResult from "combined";
 

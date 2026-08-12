@@ -1,9 +1,9 @@
-// Module ID: 12633
-// Function ID: 12634
+// Module ID: 12692
+// Function ID: 12693
 // Name: getCoverImageURL
 // Dependencies: [1405, 589, 709, 2]
 
-// Module 12633 (getCoverImageURL)
+// Module 12692 (getCoverImageURL)
 import { Store } from "initialize";
 
 let c0 = new require("priv")({ max: 500 });

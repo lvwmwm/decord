@@ -1,9 +1,9 @@
-// Module ID: 5933
-// Function ID: 5934
+// Module ID: 5972
+// Function ID: 5973
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: [5, 1218, 676, 4509, 5934, 5936, 698, 513, 5937, 1486, 4017, 2]
+// Dependencies: [5, 1218, 676, 4549, 5973, 5975, 698, 513, 5976, 1486, 4058, 2]
 
-// Module 5933 (createHandoffTokenWithLoadingModal)
+// Module 5972 (createHandoffTokenWithLoadingModal)
 import _createHandoffToken from "_createHandoffToken";
 import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
@@ -103,7 +103,7 @@ function _redirectWithHandoffToken() {
               uRL = undefined;
               uRL = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -233,7 +233,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
               uRL = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 13334
-// Function ID: 13335
+// Module ID: 13391
+// Function ID: 13392
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 5176, 1302, 1922, 676, 21, 4303, 712, 589, 1493, 4024, 3966, 5728, 5748, 4271, 8367, 1363, 13335, 1236, 4846, 1297, 8719, 4272, 4273, 4020, 5268, 5361, 5362, 1435, 2]
+// Dependencies: [32, 19, 17, 5215, 1302, 1922, 676, 21, 4344, 712, 589, 1493, 4065, 4007, 5767, 5787, 4312, 8406, 1363, 13392, 1236, 4886, 1297, 8758, 4313, 4314, 4061, 5307, 5400, 5401, 1435, 2]
 // Exports: default
 
-// Module 13334 (GuildActionSheetEmojiSection)
+// Module 13391 (GuildActionSheetEmojiSection)
 import _slicedToArray from "_slicedToArray";
 import RowGroup from "RowGroup";
 import { View } from "usePremiumUpsellConfig";

@@ -1,10 +1,10 @@
-// Module ID: 8998
-// Function ID: 8999
+// Module ID: 9037
+// Function ID: 9038
 // Name: ChannelTypeRow
-// Dependencies: [32, 19, 17, 1395, 1434, 1391, 1910, 3948, 3957, 1922, 676, 7783, 21, 4303, 712, 4809, 4816, 4829, 4825, 4822, 4815, 4807, 4814, 4826, 4824, 4821, 1236, 4299, 1993, 4032, 5374, 7988, 7969, 1297, 5369, 589, 38, 4494, 5133, 8999, 1499, 9000, 4498, 5270, 9002, 6010, 9003, 12, 4486, 4712, 7793, 5995, 5767, 9006, 5768, 4823, 9010, 503, 9023, 5716, 5783, 2]
+// Dependencies: [32, 19, 17, 1395, 1434, 1391, 1910, 3989, 3998, 1922, 676, 7822, 21, 4344, 712, 4849, 4856, 4869, 4865, 4862, 4855, 4847, 4854, 4866, 4864, 4861, 1236, 4340, 1993, 4073, 5413, 8027, 8008, 1297, 5408, 589, 38, 4534, 5173, 9038, 1499, 9039, 4538, 5309, 9041, 6049, 9042, 12, 4526, 4752, 7832, 6034, 5806, 9045, 5807, 4863, 9049, 503, 9062, 5755, 5822, 2]
 // Exports: default
 
-// Module 8998 (ChannelTypeRow)
+// Module 9037 (ChannelTypeRow)
 import Form from "Form";
 import AnnouncementsIcon from "AnnouncementsIcon";
 import get_ActivityIndicator from "VoiceNormalIcon";
@@ -729,7 +729,7 @@ export default function CreateChannelModal(arg0) {
   let initialStack;
   let screens;
   const _require = arg0;
-  ({ screens, initialStack } = importDefault(5716)(() => {
+  ({ screens, initialStack } = importDefault(5755)(() => {
     let obj = { name: outer1_30.CREATE_CHANNEL, params: null };
     obj = {};
     let merged = Object.assign(callback);
@@ -767,6 +767,6 @@ export default function CreateChannelModal(arg0) {
     obj[1] = items;
     return obj;
   }));
-  return callback(_require(5783).Navigator, { screens, initialRouteStack });
+  return callback(_require(5822).Navigator, { screens, initialRouteStack });
 };
 export { CreateChannel };

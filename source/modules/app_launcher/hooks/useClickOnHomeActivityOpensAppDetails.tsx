@@ -1,13 +1,13 @@
-// Module ID: 11479
-// Function ID: 11480
+// Module ID: 11536
+// Function ID: 11537
 // Name: useClickOnHomeActivityOpensAppDetails
-// Dependencies: [3993, 2]
+// Dependencies: [4034, 2]
 // Exports: useClickOnHomeActivityOpensAppDetails
 
-// Module 11479 (useClickOnHomeActivityOpensAppDetails)
+// Module 11536 (useClickOnHomeActivityOpensAppDetails)
 const result = require("set").fileFinishedImporting("modules/app_launcher/hooks/useClickOnHomeActivityOpensAppDetails.tsx");
 
 export const useClickOnHomeActivityOpensAppDetails = function useClickOnHomeActivityOpensAppDetails() {
-  const DeveloperMode = require(3993) /* explicitContentFromProto */.DeveloperMode;
+  const DeveloperMode = require(4034) /* explicitContentFromProto */.DeveloperMode;
   return DeveloperMode.useSetting();
 };

@@ -1,9 +1,9 @@
-// Module ID: 10370
-// Function ID: 10371
+// Module ID: 10411
+// Function ID: 10412
 // Name: BlockedInformationTable
-// Dependencies: [32, 19, 17, 1391, 3957, 1922, 9250, 10369, 676, 21, 4303, 712, 8793, 1236, 4261, 5767, 5374, 1297, 1628, 5728, 5748, 589, 8314, 5397, 698, 5399, 8593, 4299, 4493, 8502, 4271, 10371, 2007, 503, 4714, 9249, 7786, 1993, 4017, 2]
+// Dependencies: [32, 19, 17, 1391, 3998, 1922, 9290, 10410, 676, 21, 4344, 712, 8832, 1236, 4302, 5806, 5413, 1297, 1628, 5767, 5787, 589, 8353, 5436, 698, 5438, 8632, 4340, 4533, 8541, 4312, 10412, 2007, 503, 4754, 9289, 7825, 1993, 4058, 2]
 
-// Module 10370 (BlockedInformationTable)
+// Module 10411 (BlockedInformationTable)
 import asyncRequireImpl from "asyncRequireImpl";
 import importAllResult from "context";
 import { View } from "Button";
@@ -34,9 +34,9 @@ function BlockedInformationTable() {
     obj[3] = icon.text();
     obj[4] = icon.subtext();
     obj[6] = icon.a11yLabel();
-    return callback2(callback(5374).TableRow, obj, arg1);
+    return callback2(callback(5413).TableRow, obj, arg1);
   });
-  return callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return callback2(require(5806) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 let c4 = importAllResult;
 ({ IGNORE_CONFIRMATION_ACTION_SHEET_KEY: c10, RESTRICTION_CONFIRMATION_ACTION_SHEET_HEIGHT: unpackModuleId } = IGNORE_CONFIRMATION_ACTION_SHEET_KEY);
@@ -167,8 +167,8 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
   let stateFromStores;
   let tmp = callback4();
   const bottom = channelId(1628)().bottom;
-  const items = [channelId(5748).IGNORE_CONFIRMATION_ACTION_SHEET];
-  const tmp4 = channelId(5728);
+  const items = [channelId(5787).IGNORE_CONFIRMATION_ACTION_SHEET];
+  const tmp4 = channelId(5767);
   [tmp6, c5] = callback(importAllResult.useState(false), 2);
   let obj = userId(589);
   const items1 = [mergeGuildAvatar];
@@ -230,7 +230,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     obj5[0] = tmp.avatarIconContainer;
     const obj6 = { size: null, source: null };
     obj6[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-    obj6[1] = tmp2(8593);
+    obj6[1] = tmp2(8632);
     obj5[1] = closure_14(tmp7(1297).Icon, obj6);
     items8[1] = closure_14(c5, obj5);
     obj3[1] = items8;
@@ -239,14 +239,14 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     obj7[0] = tmp.headerText;
     const intl = tmp7(1236).intl;
     const obj8 = { username: null };
-    obj8[0] = tmp2(4493).getName(stateFromStores2, channelId, stateFromStores);
+    obj8[0] = tmp2(4533).getName(stateFromStores2, channelId, stateFromStores);
     obj7[4] = intl.format(tmp7(1236).t.CIbzHR, obj8);
-    items9[1] = closure_14(tmp7(4299).Text, obj7);
+    items9[1] = closure_14(tmp7(4340).Text, obj7);
     const obj9 = { style: null, variant: "heading-md/medium", color: "text-default", accessibilityRole: "header", children: null };
     obj9[0] = tmp.headerText;
     const intl2 = tmp7(1236).intl;
     obj9[4] = intl2.string(tmp7(1236).t.S70jou);
-    items9[2] = closure_14(tmp7(4299).Text, obj9);
+    items9[2] = closure_14(tmp7(4340).Text, obj9);
     obj2[1] = items9;
     const items10 = [callback3(c5, obj2), , , ];
     const obj10 = { style: null, children: null };
@@ -263,7 +263,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
       const obj13 = { icon: null, label: null, subLabel: null, accessibilityLabel: null, onPress: null, arrow: true };
       const obj14 = { size: null, source: null };
       obj14[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-      obj14[1] = tmp2(8502);
+      obj14[1] = tmp2(8541);
       obj13[0] = tmp13(tmp7(1297).Icon, obj14);
       const intl4 = tmp7(1236).intl;
       obj13[1] = intl4.string(tmp7(1236).t.hC8tcc);
@@ -279,8 +279,8 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
         obj = { userId, channelId, onSuccess: closure_4, onIgnore: asyncRequireImpl, impressionName: userId(outer1_2[33]).ImpressionNames.IGNORE_USER_CONFIRMATION };
         obj3.openLazy(userId(outer1_2[32])(outer1_2[31], outer1_2.paths), outer1_10, obj, "replaceTopSheet");
       };
-      obj12[2] = tmp13(tmp7(5374).TableRow, obj13);
-      obj11[1] = tmp13(tmp7(5767).TableRowGroup, obj12);
+      obj12[2] = tmp13(tmp7(5413).TableRow, obj13);
+      obj11[1] = tmp13(tmp7(5806).TableRowGroup, obj12);
       tmp13Result = tmp13(tmp19, obj11);
     }
     const obj15 = { children: null };
@@ -314,27 +314,27 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     };
     obj17[4] = tmp6;
     obj17[5] = tmp6;
-    const items11 = [closure_14(tmp7(4714).Button, obj17), ];
+    const items11 = [closure_14(tmp7(4754).Button, obj17), ];
     const obj18 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
     obj18[0] = tmp.footerText;
     const intl8 = tmp7(1236).intl;
     const obj19 = { articleLink: null };
     obj19[0] = function articleLink() {
-      channelId(4271).hideActionSheet();
-      const obj = channelId(4271);
+      channelId(4312).hideActionSheet();
+      const obj = channelId(4312);
       const articleURL = channelId(1993).getArticleURL(constants2.STEALTH_REMEDIATION_FEATURE_GUIDE);
       const obj2 = channelId(1993);
-      channelId(4017).openURL(articleURL);
+      channelId(4058).openURL(articleURL);
     };
     obj18[3] = intl8.format(tmp7(1236).t.CpTgBn, obj19);
-    items11[1] = closure_14(tmp7(4299).Text, obj18);
+    items11[1] = closure_14(tmp7(4340).Text, obj18);
     obj16[1] = items11;
     items10[3] = callback3(c5, obj16);
     obj15[0] = items10;
-    obj[4] = callback3(tmp7(5399).BottomSheetScrollView, obj15);
-    obj[1] = closure_14(tmp7(5397).BottomSheet, obj);
-    tmp13Result = tmp13(tmp7(5728).AnalyticsLocationProvider, obj);
-    const tmp2Result = tmp2(4493);
+    obj[4] = callback3(tmp7(5438).BottomSheetScrollView, obj15);
+    obj[1] = closure_14(tmp7(5436).BottomSheet, obj);
+    tmp13Result = tmp13(tmp7(5767).AnalyticsLocationProvider, obj);
+    const tmp2Result = tmp2(4533);
   }
   return tmp13Result;
 });

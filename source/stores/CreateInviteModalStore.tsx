@@ -1,9 +1,9 @@
-// Module ID: 9072
-// Function ID: 9073
+// Module ID: 9111
+// Function ID: 9112
 // Name: updateWithLatestInvite
-// Dependencies: [1391, 1910, 7761, 676, 9073, 9075, 38, 589, 709, 2]
+// Dependencies: [1391, 1910, 7800, 676, 9112, 9114, 38, 589, 709, 2]
 
-// Module 9072 (updateWithLatestInvite)
+// Module 9111 (updateWithLatestInvite)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import map from "map";
@@ -22,7 +22,7 @@ function updateWithLatestInvite(channelId, arg1) {
     guild_id = channel.guild_id;
   }
   guild = guild.getGuild(guild_id);
-  let obj = require(9075) /* getDefaultInviteExpiration */;
+  let obj = require(9114) /* getDefaultInviteExpiration */;
   let maxAge = obj.getDefaultInviteExpiration({ guild });
   invite = invite.getInvite(channelId, { targetType, targetUserId, targetApplicationId });
   obj = { channelId, maxAge: null, maxUses: null, temporary: null, flags: null, targetType: null, targetUserId: null, targetApplicationId: null, roleIds: null };

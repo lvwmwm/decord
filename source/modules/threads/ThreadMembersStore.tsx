@@ -1,9 +1,9 @@
-// Module ID: 7230
-// Function ID: 7231
+// Module ID: 7269
+// Function ID: 7270
 // Name: updateFromGuild
 // Dependencies: [1395, 1391, 12, 589, 709, 2]
 
-// Module 7230 (updateFromGuild)
+// Module 7269 (updateFromGuild)
 import { ALL_CHANNEL_TYPES } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Store } from "initialize";

@@ -1,10 +1,10 @@
-// Module ID: 9449
-// Function ID: 9450
+// Module ID: 9489
+// Function ID: 9490
 // Name: memo
-// Dependencies: [32, 19, 17, 678, 21, 4303, 712, 9450, 5427, 1236, 7016, 9451, 4299, 2]
+// Dependencies: [32, 19, 17, 678, 21, 4344, 712, 9490, 5466, 1236, 7055, 9491, 4340, 2]
 // Exports: default
 
-// Module 9449 (memo)
+// Module 9489 (memo)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -81,7 +81,7 @@ let closure_16 = memo((arg0) => {
   let items;
   let require;
   ({ items, bundledProducts: require, activeIndex: importDefault, onSelect: dependencyMap, onTrackPress: _slicedToArray } = arg0);
-  let obj = require(5427) /* LegacyBaseButton */;
+  let obj = require(5466) /* LegacyBaseButton */;
   const nativeGesture = obj.useNativeGesture({ disallowInterruption: true });
   obj = { gesture: nativeGesture, children: null };
   obj = { horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: createCacheKey().bundleThumbnailRow, role: "radiogroup", "aria-label": null, children: null };
@@ -113,7 +113,7 @@ let closure_16 = memo((arg0) => {
     return outer1_12(outer1_15, obj, item.skuId);
   });
   obj[1] = callback6(closure_9, obj);
-  return callback6(require(5427) /* LegacyBaseButton */.GestureDetector, obj);
+  return callback6(require(5466) /* LegacyBaseButton */.GestureDetector, obj);
 });
 let obj5 = { gap: require("Themes").space.PX_8 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/BundleProductDetailsActionSheetPreview.tsx");
@@ -159,14 +159,14 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
   if (name == null) {
     name = tmp8.skuId;
   }
-  let obj = onActiveItemChange(7016);
+  let obj = onActiveItemChange(7055);
   const collectibleTypeLabel = obj.getCollectibleTypeLabel(tmp8.type);
   const items1 = [items[num]];
   obj = { style: tmp.previewContainer, children: null };
   const tmp12 = onActiveItemChange;
   tmp4 = callback(callback5(product.skuId), 2);
   const items2 = [
-    callback6(onActiveItemChange(9451).IndividualProductPreview, {
+    callback6(onActiveItemChange(9491).IndividualProductPreview, {
       product: callback4(() => {
         const items = [_undefined];
         return { skuId: _undefined.skuId, type: _undefined.type, items };
@@ -179,11 +179,11 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
   ];
   obj = { style: tmp.bundleContainer, children: null };
   const obj1 = { style: tmp.bundleInfoContainer, children: null };
-  const items3 = [callback6(onActiveItemChange(4299).Text, { variant: "heading-xl/bold", children: product.name }), ];
+  const items3 = [callback6(onActiveItemChange(4340).Text, { variant: "heading-xl/bold", children: product.name }), ];
   const obj3 = { variant: "text-sm/medium", color: "text-default", children: null };
   const intl = onActiveItemChange(1236).intl;
   obj3[2] = intl.formatToPlainString(onActiveItemChange(1236).t["/0Yndu"], { num: items.length });
-  items3[1] = callback6(onActiveItemChange(4299).Text, obj3);
+  items3[1] = callback6(onActiveItemChange(4340).Text, obj3);
   obj1[1] = items3;
   const items4 = [callback7(closure_10, obj1), ];
   const obj5 = { style: tmp.bundleInfoContainer, children: null };
@@ -194,10 +194,10 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
     const obj6 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const _HermesInternal = HermesInternal;
     obj6[2] = " - " + collectibleTypeLabel;
-    tmp18Result = callback6(tmp12(4299).Text, obj6);
+    tmp18Result = callback6(tmp12(4340).Text, obj6);
   }
   items6[1] = tmp18Result;
-  items5[1] = callback7(onActiveItemChange(4299).Text, { variant: "text-sm/medium", color: "text-default", children: items6 });
+  items5[1] = callback7(onActiveItemChange(4340).Text, { variant: "text-sm/medium", color: "text-default", children: items6 });
   obj5[1] = items5;
   items4[1] = callback7(closure_10, obj5);
   obj[1] = items4;

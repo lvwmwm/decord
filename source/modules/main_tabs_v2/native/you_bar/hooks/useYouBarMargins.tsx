@@ -1,10 +1,10 @@
-// Module ID: 14347
-// Function ID: 14348
+// Module ID: 14404
+// Function ID: 14405
 // Name: useYouBarHorizontalMargin
-// Dependencies: [14348, 1628, 501, 1367, 4024, 712, 2]
+// Dependencies: [14405, 1628, 501, 1367, 4065, 712, 2]
 // Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
 
-// Module 14347 (useYouBarHorizontalMargin)
+// Module 14404 (useYouBarHorizontalMargin)
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 
 let c3;
@@ -24,7 +24,7 @@ export const useYouBarHorizontalMargin = function useYouBarHorizontalMargin() {
 };
 export const useYouBarBottomMargin = function useYouBarBottomMargin() {
   const bottom = importDefault(1628)().bottom;
-  require(4024) /* map */;
+  require(4065) /* map */;
   if (tmp2) {
     const _Math2 = Math;
     let bound = Math.max(tmp5, bottom);

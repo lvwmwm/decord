@@ -1,9 +1,9 @@
-// Module ID: 8805
-// Function ID: 8806
+// Module ID: 8844
+// Function ID: 8845
 // Name: measure
-// Dependencies: [5, 17, 8806, 3, 8807, 1271, 8808, 8812, 644, 2]
+// Dependencies: [5, 17, 8845, 3, 8846, 1271, 8847, 8851, 644, 2]
 
-// Module 8805 (measure)
+// Module 8844 (measure)
 import enforcing from "enforcing";
 import { Image } from "get ActivityIndicator";
 import OVERRIDE_DIR from "OVERRIDE_DIR";

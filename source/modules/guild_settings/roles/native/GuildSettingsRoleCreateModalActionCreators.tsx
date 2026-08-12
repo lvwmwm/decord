@@ -1,16 +1,16 @@
-// Module ID: 16706
-// Function ID: 16707
-// Dependencies: [4509, 16707, 2007, 2]
+// Module ID: 16764
+// Function ID: 16765
+// Dependencies: [4549, 16765, 2007, 2]
 
-// Module 16706
+// Module 16764
 const GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY = "GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY";
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleCreateModalActionCreators.tsx");
 
 export default {
   open() {
-    importDefault(4509).pushLazy(require(2007) /* asyncRequireImpl */(16707, dependencyMap.paths), undefined, GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY);
+    importDefault(4549).pushLazy(require(2007) /* asyncRequireImpl */(16765, dependencyMap.paths), undefined, GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY);
   },
   close() {
-    importDefault(4509).popWithKey(GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY);
+    importDefault(4549).popWithKey(GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY);
   }
 };

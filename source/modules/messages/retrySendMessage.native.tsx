@@ -1,10 +1,10 @@
-// Module ID: 10231
-// Function ID: 10232
+// Module ID: 10272
+// Function ID: 10273
 // Name: retrySendMessage
-// Dependencies: [4296, 6920, 10000, 4850, 8363, 2]
+// Dependencies: [4337, 6959, 10041, 4890, 8402, 2]
 // Exports: default
 
-// Module 10231 (retrySendMessage)
+// Module 10272 (retrySendMessage)
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
 
 let result = require("_executeCommand").fileFinishedImporting("modules/messages/retrySendMessage.native.tsx");
@@ -19,11 +19,11 @@ export default function retrySendMessage(id, id2, arr) {
   if (arg3 === undefined) {
     obj = {};
   }
-  importDefault(6920).deleteMessage(id.id, id2.id, true);
+  importDefault(6959).deleteMessage(id.id, id2.id, true);
   if (id2.isCommandType()) {
     if (tmp17) {
-      _require(10000).retryCommandMessage(id2, id, obj);
-      const obj6 = _require(10000);
+      _require(10041).retryCommandMessage(id2, id, obj);
+      const obj6 = _require(10041);
     }
     tmp17 = null != id2.interactionData && null != obj.applicationId;
   } else {
@@ -40,7 +40,7 @@ export default function retrySendMessage(id, id2, arr) {
         return fromJsonResult;
       });
     }
-    const tmpResult = importDefault(6920);
+    const tmpResult = importDefault(6959);
     id = id.id;
     obj = { content: null, tts: null, invalidEmojis: null, validNonShortcutEmojis: null };
     obj[0] = content;

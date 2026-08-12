@@ -1,10 +1,10 @@
-// Module ID: 7305
-// Function ID: 7306
+// Module ID: 7344
+// Function ID: 7345
 // Name: MessageEmbedTypes
 // Dependencies: [676, 2]
 // Exports: typeToString
 
-// Module 7305 (MessageEmbedTypes)
+// Module 7344 (MessageEmbedTypes)
 import ME from "ME";
 import set from "set";
 

@@ -1,10 +1,10 @@
-// Module ID: 17019
-// Function ID: 17020
+// Module ID: 17077
+// Function ID: 17078
 // Name: onTimersDelayCallback
 // Dependencies: [676, 3, 698, 636, 1921, 2]
 // Exports: setupLibdiscoreTimersMonitor
 
-// Module 17019 (onTimersDelayCallback)
+// Module 17077 (onTimersDelayCallback)
 import { AnalyticEvents } from "ME";
 
 function onTimersDelayCallback(timerId, expectedDelay, actualDelay, executionTime) {

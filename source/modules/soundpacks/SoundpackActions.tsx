@@ -1,10 +1,10 @@
-// Module ID: 16475
-// Function ID: 16476
+// Module ID: 16532
+// Function ID: 16533
 // Name: setSoundpack
-// Dependencies: [9785, 676, 698, 709, 2]
+// Dependencies: [9826, 676, 698, 709, 2]
 // Exports: setSoundpack
 
-// Module 16475 (setSoundpack)
+// Module 16532 (setSoundpack)
 import Soundpacks from "Soundpacks";
 import { AnalyticEvents } from "ME";
 

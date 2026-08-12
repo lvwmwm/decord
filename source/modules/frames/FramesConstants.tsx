@@ -1,10 +1,10 @@
-// Module ID: 10598
-// Function ID: 10599
+// Module ID: 10651
+// Function ID: 10652
 // Name: FrameLayoutModes
 // Dependencies: [2]
 // Exports: asLaunched, getChannelIdForSurface, getFrameIntentForSurface, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
 
-// Module 10598 (FrameLayoutModes)
+// Module 10651 (FrameLayoutModes)
 let obj = { MAIN: 0, [0]: "MAIN", APP_CHANNEL: 1, [1]: "APP_CHANNEL" };
 obj = { type: obj.MAIN };
 obj = { MAIN: 0, [0]: "MAIN", INLINE: 1, [1]: "INLINE" };

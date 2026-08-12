@@ -1,9 +1,9 @@
-// Module ID: 4336
-// Function ID: 4337
+// Module ID: 4377
+// Function ID: 4378
 // Name: gameFromServer
-// Dependencies: [4326, 676, 4329, 687, 4337, 595, 500, 4338, 589, 11, 1370, 1954, 698, 3993, 709, 2]
+// Dependencies: [4367, 676, 4370, 687, 4378, 595, 500, 4379, 589, 11, 1370, 1954, 698, 4034, 709, 2]
 
-// Module 4336 (gameFromServer)
+// Module 4377 (gameFromServer)
 import { createExecutable } from "createExecutable";
 import { AnalyticEvents } from "ME";
 import { ApplicationTypes } from "ApplicationTypes";
@@ -73,7 +73,7 @@ function addGameIdToNameCache(id, item10026) {
 function addDetectableGame(id) {
   let name;
   let tmp = id;
-  if (id instanceof require(4338) /* GameTheme */.DetectableGameRecord) {
+  if (id instanceof require(4379) /* GameTheme */.DetectableGameRecord) {
     tmp = convertGameRecordToGame(id);
     const tmp2 = convertGameRecordToGame;
   }
@@ -578,7 +578,7 @@ prototype["shouldReport"] = function shouldReport(name) {
     if (tmp3) {
       tmp3 = null != obj[name.name];
     }
-    const ShowCurrentGame = require(3993) /* explicitContentFromProto */.ShowCurrentGame;
+    const ShowCurrentGame = require(4034) /* explicitContentFromProto */.ShowCurrentGame;
     let setting = ShowCurrentGame.getSetting();
     if (setting) {
       setting = !c13;

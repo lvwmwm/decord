@@ -1,10 +1,10 @@
-// Module ID: 8658
-// Function ID: 8659
+// Module ID: 8697
+// Function ID: 8698
 // Name: EducationCoachmarkImg
-// Dependencies: [32, 19, 17, 1922, 1388, 21, 1377, 4303, 712, 7703, 589, 3966, 6024, 1236, 8659, 2]
+// Dependencies: [32, 19, 17, 1922, 1388, 21, 1377, 4344, 712, 7742, 589, 4007, 6063, 1236, 8698, 2]
 // Exports: default
 
-// Module 8658 (EducationCoachmarkImg)
+// Module 8697 (EducationCoachmarkImg)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -18,7 +18,7 @@ function EducationCoachmarkImg() {
   let obj = { style: createCacheKey().upsellImageContainer, children: null };
   obj = { color: null, size: "md" };
   obj[0] = importDefault(712).colors.WHITE;
-  obj[1] = jsx(require(7703) /* SuperReactionIcon */.SuperReactionIcon, { color: null, size: "md" });
+  obj[1] = jsx(require(7742) /* SuperReactionIcon */.SuperReactionIcon, { color: null, size: "md" });
   return <View color={null} size="md" />;
 }
 let closure_9 = require("DismissibleContent").DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE;
@@ -38,7 +38,7 @@ export default function useBurstToggleCoachmark(targetRef) {
   } else {
     items2 = [];
   }
-  let tmpResult = tmp(6024);
+  let tmpResult = tmp(6063);
   const tmp5 = callback(tmpResult.useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   const importDefault = tmp7;
@@ -58,7 +58,7 @@ export default function useBurstToggleCoachmark(targetRef) {
     obj[5] = first === outer1_9;
     return obj;
   }, items3);
-  tmpResult = tmp(8659);
+  tmpResult = tmp(8698);
   const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return tmp5[1];
 };

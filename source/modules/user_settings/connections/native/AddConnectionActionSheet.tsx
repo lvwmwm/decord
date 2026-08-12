@@ -1,12 +1,12 @@
-// Module ID: 14212
-// Function ID: 14213
+// Module ID: 14269
+// Function ID: 14270
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [676, 4330, 21, 4303, 1297, 4239, 1628, 6965, 5734, 5397, 5396, 1236, 5399, 5374, 4271, 10497, 1435, 1363, 5731, 5728, 5748, 2]
+// Dependencies: [676, 4371, 21, 4344, 1297, 4280, 1628, 7004, 5773, 5436, 5435, 1236, 5438, 5413, 4312, 10538, 1435, 1363, 5770, 5767, 5787, 2]
 // Exports: default
 
-// Module 14212 (AddApplicationIdentityTableRow)
+// Module 14269 (AddApplicationIdentityTableRow)
 import { AnalyticsLocations } from "ME";
-import { getMigratedApplicationIdentityConnectionsScreenApplications as closure_4 } from "items1";
+import { getMigratedApplicationIdentityConnectionsScreenApplications as closure_4 } from "items";
 import jsxProd from "set";
 import createCacheKey from "createCacheKey";
 import Button from "Button";
@@ -22,10 +22,10 @@ function AddApplicationIdentityTableRow(application) {
   let _require;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5731)(application));
-  const tmp2 = analyticsLocations(5731)(application);
-  analyticsLocations = analyticsLocations(5728)(analyticsLocations(5748).ACTION_SHEET).analyticsLocations;
-  const tmp3 = analyticsLocations(5728);
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5770)(application));
+  const tmp2 = analyticsLocations(5770)(application);
+  analyticsLocations = analyticsLocations(5767)(analyticsLocations(5787).ACTION_SHEET).analyticsLocations;
+  const tmp3 = analyticsLocations(5767);
   let obj = _require(1297);
   const iconSource = application.getIconSource(obj.getIconSize(_require(1297).IconSizes.LARGE));
   obj = {
@@ -50,9 +50,9 @@ function AddApplicationIdentityTableRow(application) {
     tmp7Result = tmp7(tmp5(1297).Icon, obj);
   }
   obj[4] = tmp7Result;
-  obj[5] = closure_5(_require(5374).TableRow.Arrow, {});
+  obj[5] = closure_5(_require(5413).TableRow.Arrow, {});
   obj[6] = !canStartAuthorization;
-  return closure_5(_require(5374).TableRow, obj, application.id);
+  return closure_5(_require(5413).TableRow, obj, application.id);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { list: { paddingHorizontal: 16 }, icon: null };

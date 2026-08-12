@@ -1,10 +1,10 @@
-// Module ID: 6984
-// Function ID: 6985
+// Module ID: 7023
+// Function ID: 7024
 // Name: commandPermissions
-// Dependencies: [32, 1954, 6985, 2]
+// Dependencies: [32, 1954, 7024, 2]
 // Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions, toPermissionKey
 
-// Module 6984 (commandPermissions)
+// Module 7023 (commandPermissions)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -37,11 +37,11 @@ export const commandName = function commandName(arg0) {
   return text;
 };
 export const commandPermissionChannels = function commandPermissionChannels(arg0) {
-  const items = [require(6985) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL];
+  const items = [require(7024) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL];
   return commandPermissions(arg0, items);
 };
 export const commandPermissionMembersRoles = function commandPermissionMembersRoles(arg0) {
-  const items = [require(6985) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE, require(6985) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER];
+  const items = [require(7024) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE, require(7024) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER];
   return commandPermissions(arg0, items);
 };
 export const toPermissionKey = function toPermissionKey(allChannelsSentinelResult, CHANNEL) {

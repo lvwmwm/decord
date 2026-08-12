@@ -1,10 +1,10 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8129
+// Function ID: 8130
 // Name: useIsCallActive
-// Dependencies: [4995, 4316, 4321, 589, 2]
+// Dependencies: [5035, 4357, 4362, 589, 2]
 // Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 8090 (useIsCallActive)
+// Module 8129 (useIsCallActive)
 import callConnect from "callConnect";
 import getParticipants from "getParticipants";
 import { ParticipantTypes } from "ParticipantTypes";

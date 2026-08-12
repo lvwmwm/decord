@@ -1,10 +1,10 @@
-// Module ID: 8280
-// Function ID: 8281
+// Module ID: 8319
+// Function ID: 8320
 // Name: getArchivedAvatarURL
-// Dependencies: [676, 1435, 1469, 1483, 1236, 8281, 1370, 2]
+// Dependencies: [676, 1435, 1469, 1483, 1236, 8320, 1370, 2]
 // Exports: generateAvatarDescription, generateRecentAvatarFileDetails, getImageFormat, getPendingAvatarSrc
 
-// Module 8280 (getArchivedAvatarURL)
+// Module 8319 (getArchivedAvatarURL)
 import { Endpoints } from "ME";
 
 function getArchivedAvatarURL(allowWebp) {
@@ -123,9 +123,9 @@ export const generateAvatarDescription = function generateAvatarDescription(maxS
   }
   ({ filename, assetOrigin } = obj);
   if (undefined === assetOrigin) {
-    assetOrigin = require(8281) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
+    assetOrigin = require(8320) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
   }
-  if (assetOrigin !== require(8281) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+  if (assetOrigin !== require(8320) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
     if (filename == null) {
       const intl = tmp3(1236).intl;
       filename = intl.string(tmp3(1236).t.lqaIxI);
@@ -133,7 +133,7 @@ export const generateAvatarDescription = function generateAvatarDescription(maxS
     const _Date = Date;
     const date = new Date();
     const intl2 = tmp3(1236).intl;
-    if (assetOrigin === tmp3(8281).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
+    if (assetOrigin === tmp3(8320).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
       let DYil93 = tmp3(1236).t.eC2sZi;
     } else {
       DYil93 = tmp3(1236).t.DYil93;
@@ -212,7 +212,7 @@ export const getPendingAvatarSrc = function getPendingAvatarSrc(canAnimate) {
   if (null != image) {
     tmp = image;
     if (typeof image !== "string") {
-      if (image.assetOrigin === require(8281) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+      if (image.assetOrigin === require(8320) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
         const obj = { userId: null, avatarId: null, storageHash: null, size: null, canAnimate: null };
         obj[0] = userId;
         userId = image.originalAsset.id;

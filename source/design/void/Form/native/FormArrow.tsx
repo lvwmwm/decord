@@ -1,10 +1,10 @@
-// Module ID: 5389
-// Function ID: 5390
+// Module ID: 5428
+// Function ID: 5429
 // Name: FormArrow
-// Dependencies: [19, 17, 21, 4303, 712, 4299, 1297, 5383, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 4340, 1297, 5422, 2]
 // Exports: default
 
-// Module 5389 (FormArrow)
+// Module 5428 (FormArrow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,11 +30,11 @@ export default function FormArrow(arg0) {
     obj[0] = tmp.wrapper;
     obj = { maxFontSizeMultiplier: 1.5, variant: "text-md/medium", color: "text-muted", children: null };
     obj[3] = label;
-    const items = [callback(require(4299) /* Text */.Text, obj), ];
+    const items = [callback(require(4340) /* Text */.Text, obj), ];
     const obj1 = { style: null, source: null, size: null };
     const items1 = [tmp.icon, style];
     obj1[0] = items1;
-    obj1[1] = importDefault(5383);
+    obj1[1] = importDefault(5422);
     obj1[2] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
     items[1] = callback(require(1297) /* Button */.Icon, obj1);
     obj[1] = items;
@@ -43,7 +43,7 @@ export default function FormArrow(arg0) {
     obj = { style: null, source: null, size: null };
     const items2 = [tmp.icon, style];
     obj[0] = items2;
-    obj[1] = importDefault(5383);
+    obj[1] = importDefault(5422);
     obj[2] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
     tmp6 = callback(require(1297) /* Button */.Icon, obj);
   }

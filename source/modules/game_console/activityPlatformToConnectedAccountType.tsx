@@ -1,10 +1,10 @@
-// Module ID: 16215
-// Function ID: 16216
+// Module ID: 16272
+// Function ID: 16273
 // Name: activityPlatformToConnectedAccountType
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 16215 (activityPlatformToConnectedAccountType)
+// Module 16272 (activityPlatformToConnectedAccountType)
 import ME from "ME";
 
 let c0;

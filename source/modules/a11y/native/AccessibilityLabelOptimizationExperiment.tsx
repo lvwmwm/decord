@@ -1,10 +1,10 @@
-// Module ID: 8063
-// Function ID: 8064
+// Module ID: 8102
+// Function ID: 8103
 // Name: apexExperiment
-// Dependencies: [1471, 4700, 2]
+// Dependencies: [1471, 4740, 2]
 // Exports: shouldSkipAccessibilityLabels
 
-// Module 8063 (apexExperiment)
+// Module 8102 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { 1: null };
@@ -17,8 +17,8 @@ export default apexExperiment;
 export const shouldSkipAccessibilityLabels = function shouldSkipAccessibilityLabels() {
   enabled = enabled.enabled;
   if (enabled) {
-    enabled = !require(4700) /* SCREEN_READER_ENABLED_GETTER */.getIsScreenReaderEnabled();
-    const obj = require(4700) /* SCREEN_READER_ENABLED_GETTER */;
+    enabled = !require(4740) /* SCREEN_READER_ENABLED_GETTER */.getIsScreenReaderEnabled();
+    const obj = require(4740) /* SCREEN_READER_ENABLED_GETTER */;
   }
   return enabled;
 };

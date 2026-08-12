@@ -1,10 +1,10 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 5977
+// Function ID: 5978
 // Name: stopLurkingAll
-// Dependencies: [5, 4375, 3949, 676, 709, 530, 1370, 2]
+// Dependencies: [5, 4415, 3990, 676, 709, 530, 1370, 2]
 // Exports: stopLurking
 
-// Module 5938 (stopLurkingAll)
+// Module 5977 (stopLurkingAll)
 import sendRequest from "sendRequest";
 import createRTCConnection from "createRTCConnection";
 import initialize from "initialize";
@@ -75,7 +75,7 @@ function _stopLurkingAll() {
                     let c6 = 0;
                     let c7 = 0;
                     let c5 = 0;
-                    return (/* F120104 */ function*() { ... })();
+                    return (/* F120354 */ function*() { ... })();
                   });
                   return function() {
                     const self = this;
@@ -165,7 +165,7 @@ function _stopLurking() {
               table = undefined;
               c3 = 1;
               guildId = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp4) {

@@ -1,10 +1,10 @@
-// Module ID: 10855
-// Function ID: 10856
+// Module ID: 10908
+// Function ID: 10909
 // Name: handleInputModePress
-// Dependencies: [19, 17, 4351, 676, 21, 4303, 5761, 1236, 9161, 589, 10851, 5374, 4299, 5768, 10856, 2]
+// Dependencies: [19, 17, 4392, 676, 21, 4344, 5800, 1236, 9201, 589, 10904, 5413, 4340, 5807, 10909, 2]
 // Exports: default
 
-// Module 10855 (handleInputModePress)
+// Module 10908 (handleInputModePress)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -17,7 +17,7 @@ let error;
 let metroImportAll;
 const require = arg1;
 function handleInputModePress() {
-  let obj = require(5761) /* showSimpleActionSheet */;
+  let obj = require(5800) /* showSimpleActionSheet */;
   obj = { key: "InputMode", header: null, options: null, hasIcons: false };
   obj = { title: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -27,14 +27,14 @@ function handleInputModePress() {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl2.string(require(1236) /* getSystemLocale */.t.Q8gkVL);
   obj1[1] = function onPress() {
-    callback(9161).setMode(constants.PUSH_TO_TALK);
+    callback(9201).setMode(constants.PUSH_TO_TALK);
   };
   const items = [obj1, ];
   const obj2 = { label: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.cHCEOJ);
   obj2[1] = function onPress() {
-    callback(9161).setMode(constants.VOICE_ACTIVITY);
+    callback(9201).setMode(constants.VOICE_ACTIVITY);
   };
   items[1] = obj2;
   obj[2] = items;
@@ -66,9 +66,9 @@ export default function UserSettingsVoiceInputOptions() {
     stringResult = intl3.string(tmp(1236).t.cHCEOJ);
   }
   obj1[3] = stringResult;
-  obj[1] = closure_6(inputMode(4299).Text, obj1);
+  obj[1] = closure_6(inputMode(4340).Text, obj1);
   obj[2] = handleInputModePress;
-  const items1 = [closure_6(inputMode(5374).TableRow, obj), ];
+  const items1 = [closure_6(inputMode(5413).TableRow, obj), ];
   let tmp4Result = null;
   if (inputMode !== InputModes.PUSH_TO_TALK) {
     const obj2 = { children: null };
@@ -81,7 +81,7 @@ export default function UserSettingsVoiceInputOptions() {
       obj = { autoThreshold };
       return obj.setMode(inputMode, obj);
     };
-    const items2 = [tmp5(tmp(5768).TableSwitchRow, obj3), ];
+    const items2 = [tmp5(tmp(5807).TableSwitchRow, obj3), ];
     const obj4 = { label: null, subLabel: null };
     const intl6 = tmp(1236).intl;
     obj4[0] = intl6.string(tmp(1236).t["o+2oMK"]);
@@ -95,14 +95,14 @@ export default function UserSettingsVoiceInputOptions() {
       obj = { threshold };
       return obj.setMode(inputMode, obj);
     };
-    obj5[1] = tmp5(importDefault(10856), obj6);
+    obj5[1] = tmp5(importDefault(10909), obj6);
     obj4[1] = tmp5(View, obj5);
-    items2[1] = tmp5(tmp(5374).TableRow, obj4);
+    items2[1] = tmp5(tmp(5413).TableRow, obj4);
     obj2[0] = items2;
     tmp4Result = tmp4(closure_7, obj2);
   }
   items1[1] = tmp4Result;
   obj[2] = items1;
-  return closure_8(inputMode(10851).UserSettingsTableRowGroup, obj);
+  return closure_8(inputMode(10904).UserSettingsTableRowGroup, obj);
 };
 export { handleInputModePress };

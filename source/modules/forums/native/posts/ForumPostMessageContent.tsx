@@ -1,10 +1,10 @@
-// Module ID: 11418
-// Function ID: 11419
+// Module ID: 11474
+// Function ID: 11475
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4303, 11419, 4299, 2]
+// Dependencies: [19, 21, 4344, 11475, 4340, 2]
 // Exports: default
 
-// Module 11418 (ForumPostMessageContent)
+// Module 11474 (ForumPostMessageContent)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -28,7 +28,7 @@ export default function ForumPostMessageContent(senderModifier) {
     num = 2;
   }
   const tmp = callback();
-  ({ content, style, variant } = importDefault(11419)({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
+  ({ content, style, variant } = importDefault(11475)({ message, messageLoaded, messageContent, isMessageDeleted, senderModifier: senderModifier.senderModifier }));
   const obj = { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null };
   let str = "text-muted";
   if (hasUnreads) {
@@ -39,5 +39,5 @@ export default function ForumPostMessageContent(senderModifier) {
   const items = [style, tmp.text];
   obj[5] = items;
   obj[6] = content;
-  return jsx(require(4299) /* Text */.Text, { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null });
+  return jsx(require(4340) /* Text */.Text, { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null });
 };

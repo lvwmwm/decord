@@ -1,10 +1,10 @@
-// Module ID: 5876
-// Function ID: 5877
+// Module ID: 5915
+// Function ID: 5916
 // Name: _updateGuildRoleSubscriptionGroupListing
-// Dependencies: [5, 676, 505, 530, 4202, 2]
+// Dependencies: [5, 676, 505, 530, 4243, 2]
 // Exports: archiveGuildRoleSubscriptionListing, createGuildRoleSubscriptionGroupListing, createGuildRoleSubscriptionListing, deleteGuildRoleSubscriptionGroupListing, deleteGuildRoleSubscriptionListing, fetchHighlightedCreatorGuildDetails, getGuildMonetizationRestrictions, getGuildRoleSubscriptionGroupForSubscriptionPlan, getGuildRoleSubscriptionGroupListing, getGuildRoleSubscriptionGroupListingsForGuild, getGuildRoleSubscriptionTrialEligibility, getGuildRoleSubscriptionTrials, getGuildRoleSubscriptionsSettings, getPriceTiers, updateGuildRoleSubscriptionGroupListing, updateGuildRoleSubscriptionListing, updateGuildRoleSubscriptionsSettings, updateGuildRoleSubscriptionsTrial
 
-// Module 5876 (_updateGuildRoleSubscriptionGroupListing)
+// Module 5915 (_updateGuildRoleSubscriptionGroupListing)
 import set from "set";
 import { Endpoints } from "ME";
 import { PriceTierTypes } from "sum";
@@ -63,7 +63,7 @@ function _updateGuildRoleSubscriptionGroupListing() {
           } else if (1 === tmp7) {
             c6 = 0;
             callback = closure_5;
-            const aPIError = new callback(4202).APIError(callback);
+            const aPIError = new callback(4243).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -154,7 +154,7 @@ function _createGuildRoleSubscriptionGroupListing() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            const aPIError = new callback(4202).APIError(callback);
+            const aPIError = new callback(4243).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -244,7 +244,7 @@ function _deleteGuildRoleSubscriptionGroupListing() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            const aPIError = new callback(4202).APIError(callback);
+            const aPIError = new callback(4243).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -325,7 +325,7 @@ function _createGuildRoleSubscriptionListing() {
               closure_3 = Object.assign(priceTier, Object.create(null));
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -355,7 +355,7 @@ function _createGuildRoleSubscriptionListing() {
           } else if (2 === tmp8) {
             c6 = 0;
             closure_4 = closure_5;
-            const aPIError = new callback(4202).APIError(closure_4);
+            const aPIError = new callback(4243).APIError(closure_4);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -441,7 +441,7 @@ function _updateGuildRoleSubscriptionListing() {
               closure_4 = Object.assign(priceTier, Object.create(null));
               c8 = 1;
               c9 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -471,7 +471,7 @@ function _updateGuildRoleSubscriptionListing() {
           } else if (2 === tmp8) {
             c7 = 0;
             closure_5 = closure_6;
-            const aPIError = new callback(4202).APIError(closure_5);
+            const aPIError = new callback(4243).APIError(closure_5);
             throw aPIError;
           } else if (arg0 === 1) {
             c9 = 3;
@@ -556,7 +556,7 @@ function _getGuildRoleSubscriptionGroupListingsForGuild() {
               obj3 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -704,7 +704,7 @@ function _updateGuildRoleSubscriptionsSettings() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            const aPIError = new callback(4202).APIError(callback);
+            const aPIError = new callback(4243).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -880,7 +880,7 @@ function _getGuildRoleSubscriptionGroupListing() {
               }
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -910,7 +910,7 @@ function _getGuildRoleSubscriptionGroupListing() {
           } else if (2 === tmp8) {
             c6 = 0;
             closure_3 = closure_5;
-            const aPIError = new callback(4202).APIError(closure_3);
+            const aPIError = new callback(4243).APIError(closure_3);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -1092,7 +1092,7 @@ function _deleteGuildRoleSubscriptionListing() {
           } else if (1 === tmp7) {
             c6 = 0;
             callback = closure_5;
-            const aPIError = new callback(4202).APIError(callback);
+            const aPIError = new callback(4243).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -1181,7 +1181,7 @@ function _archiveGuildRoleSubscriptionListing() {
           } else if (1 === tmp7) {
             c6 = 0;
             callback = closure_5;
-            const aPIError = new callback(4202).APIError(callback);
+            const aPIError = new callback(4243).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -1362,7 +1362,7 @@ function _updateGuildRoleSubscriptionsTrial() {
           } else if (1 === tmp7) {
             c6 = 0;
             callback = closure_5;
-            const aPIError = new callback(4202).APIError(callback);
+            const aPIError = new callback(4243).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -1453,7 +1453,7 @@ function _getGuildRoleSubscriptionTrialEligibility() {
           } else if (1 === tmp7) {
             c6 = 0;
             callback = closure_5;
-            const aPIError = new callback(4202).APIError(callback);
+            const aPIError = new callback(4243).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -1537,7 +1537,7 @@ function _getGuildMonetizationRestrictions() {
               signal = obj1.signal;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

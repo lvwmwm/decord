@@ -1,10 +1,10 @@
-// Module ID: 7145
-// Function ID: 7146
+// Module ID: 7184
+// Function ID: 7185
 // Name: FSI
 // Dependencies: [2]
 // Exports: isolate
 
-// Module 7145 (FSI)
+// Module 7184 (FSI)
 const result = require("set").fileFinishedImporting("modules/bidi/IsolateString.tsx");
 
 export const FSI = "\u2068";

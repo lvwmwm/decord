@@ -1,10 +1,10 @@
-// Module ID: 9223
-// Function ID: 9224
+// Module ID: 9263
+// Function ID: 9264
 // Name: useIsPersistentSecureFramesFingerprint
-// Dependencies: [5, 32, 19, 4375, 9217, 589, 9215, 2]
+// Dependencies: [5, 32, 19, 4415, 9257, 589, 9255, 2]
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 9223 (useIsPersistentSecureFramesFingerprint)
+// Module 9263 (useIsPersistentSecureFramesFingerprint)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

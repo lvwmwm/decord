@@ -1,16 +1,16 @@
-// Module ID: 4363
-// Function ID: 4364
+// Module ID: 4404
+// Function ID: 4405
 // Name: isClientClipsCapable
-// Dependencies: [4364, 4362, 500, 2]
+// Dependencies: [4405, 4403, 500, 2]
 // Exports: default
 
-// Module 4363 (isClientClipsCapable)
+// Module 4404 (isClientClipsCapable)
 import { Features } from "DesktopSources";
 
 const result = require("set").fileFinishedImporting("modules/clips/isClientClipsCapable.tsx");
 
 export default function isClientClipsCapable(getMediaEngine) {
-  const ClipsExperiment = require(4362) /* apexExperiment */.ClipsExperiment;
+  const ClipsExperiment = require(4403) /* apexExperiment */.ClipsExperiment;
   let ignorePlatformRestriction = ClipsExperiment.getConfig({ location: "isClipsClientCapable" }).ignorePlatformRestriction;
   if (!ignorePlatformRestriction) {
     let isDesktopResult = importAll(500).isDesktop();

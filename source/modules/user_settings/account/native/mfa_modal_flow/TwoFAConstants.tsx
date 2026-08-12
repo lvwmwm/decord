@@ -1,9 +1,9 @@
-// Module ID: 14038
-// Function ID: 14039
+// Module ID: 14095
+// Function ID: 14096
 // Name: frozen
 // Dependencies: [676, 2]
 
-// Module 14038 (frozen)
+// Module 14095 (frozen)
 import { AnalyticsSections } from "ME";
 
 const frozen = Object.freeze({ LANDING: AnalyticsSections.IOS_TWO_FA_LANDING, SCAN: AnalyticsSections.IOS_TWO_FA_SCAN, ENTER_CODE: AnalyticsSections.IOS_TWO_FA_ENTER_CODE, SUCCESS: AnalyticsSections.IOS_TWO_FA_SUCCESS, ADD_SMS: AnalyticsSections.IOS_TWO_FA_ADD_SMS, VERIFY_SMS: AnalyticsSections.IOS_TWO_FA_VERIFY_SMS });

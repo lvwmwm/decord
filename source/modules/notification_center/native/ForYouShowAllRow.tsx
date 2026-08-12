@@ -1,10 +1,10 @@
-// Module ID: 15577
-// Function ID: 15578
+// Module ID: 15633
+// Function ID: 15634
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 676, 12057, 21, 4303, 9801, 712, 500, 1499, 698, 1297, 4720, 15572, 4846, 15573, 13438, 4299, 1236, 5383, 2]
+// Dependencies: [19, 17, 676, 12114, 21, 4344, 9842, 712, 500, 1499, 698, 1297, 4760, 15628, 4886, 15629, 13495, 4340, 1236, 5422, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 15577 (ForYouShowAllRow)
+// Module 15633 (ForYouShowAllRow)
 import registerAsset from "registerAsset";
 import { View } from "Text";
 import { AnalyticEvents } from "ME";
@@ -25,45 +25,45 @@ function ForYouShowAllRow(panelVariant) {
   if (panelVariant === undefined) {
     panelVariant = false;
   }
-  let obj = require(9801) /* getLayoutStyles */;
+  let obj = require(9842) /* getLayoutStyles */;
   const layout = obj.useMessagesTabLayout(panelVariant);
   const tmp4 = callback2(layout);
-  let obj1 = require(9801) /* getLayoutStyles */;
+  let obj1 = require(9842) /* getLayoutStyles */;
   const layoutStyles = obj1.getLayoutStyles(layout);
-  let obj2 = require(4720) /* getFontScale */;
+  let obj2 = require(4760) /* getFontScale */;
   const fontScale = obj2.useFontScale();
-  let obj3 = require(15572) /* renderChannelPressableWrapper */;
+  let obj3 = require(15628) /* renderChannelPressableWrapper */;
   obj = { accessibilityRole: "button", underlayColor: tmp4.rowActive.backgroundColor, onPress, style: items, children: null };
   items = [tmp4.pressable, { borderRadius: layoutStyles.container.borderRadius }];
-  let obj5 = require(15573) /* renderChannelWrapper */;
+  let obj5 = require(15629) /* renderChannelWrapper */;
   obj = { style: tmp4.avatar, children: null };
-  const obj8 = require(9801) /* getLayoutStyles */;
+  const obj8 = require(9842) /* getLayoutStyles */;
   const tmp8 = closure_9;
   const tmp9 = closure_8;
   const AvatarSizes = require(1297) /* Button */.AvatarSizes;
   obj1 = { children: null };
-  obj2 = { size: require(9801) /* getLayoutStyles */.isLayoutCompact(layout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL, "aria-label": "", children };
-  obj[1] = closure_7(require(13438) /* AvatarDuoPile */.AvatarDuoPile, obj2);
+  obj2 = { size: require(9842) /* getLayoutStyles */.isLayoutCompact(layout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL, "aria-label": "", children };
+  obj[1] = closure_7(require(13495) /* AvatarDuoPile */.AvatarDuoPile, obj2);
   const items1 = [closure_7(View, obj), , ];
   obj3 = { style: tmp4.textContainer, children: null };
   const obj4 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: null };
   const intl = tmp(1236).intl;
   obj4[4] = intl.format(require(1236) /* getSystemLocale */.t.NrzztX, { count });
-  obj3[1] = closure_7(require(4299) /* Text */.Text, obj4);
+  obj3[1] = closure_7(require(4340) /* Text */.Text, obj4);
   items1[1] = closure_7(View, obj3);
   obj5 = { style: tmp4.icon, color: tmp4.iconColor.color, source: null, size: null };
-  obj5[2] = importDefault(5383);
+  obj5[2] = importDefault(5422);
   obj5[3] = require(1297) /* Button */.IconSizes.CUSTOM;
   items1[2] = closure_7(require(1297) /* Button */.Icon, obj5);
   obj1[0] = items1;
   obj[4] = obj5.renderChannelWrapper(tmp8(tmp9, obj1), { layout, fontScale, panelVariant });
-  return obj3.renderChannelPressableWrapper(closure_7(require(4846) /* PressableBase */.PressableHighlight, obj), { layout, panelVariant });
+  return obj3.renderChannelPressableWrapper(closure_7(require(4886) /* PressableBase */.PressableHighlight, obj), { layout, panelVariant });
 }
 ({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
 let closure_10 = createCacheKey.createStyles((layout) => {
-  let obj = require(9801) /* getLayoutStyles */;
+  let obj = require(9842) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
-  let obj1 = require(9801) /* getLayoutStyles */;
+  let obj1 = require(9842) /* getLayoutStyles */;
   const sizeStyle = obj1.makeSizeStyle(layoutStyles.icon.wrapper.size);
   obj = { rowActive: null, pressable: null, textContainer: null, nameText: null, avatar: null, icon: null, iconColor: null };
   obj = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED };
@@ -111,7 +111,7 @@ export const ForYouSuggestedFriendShowAllRow = function ForYouSuggestedFriendSho
     children: React.useMemo(() => {
       const substr = suggestedFriends.slice(2, 4);
       return substr.map((user) => {
-        const obj = { user: user.user, guildId: "Array", size: "Array" };
+        const obj = { user: user.user, guildId: "Array", size: -1 };
         const obj2 = outer1_0(outer1_2[6]);
         const tmp = outer1_7;
         const AvatarSizes = outer1_0(outer1_2[11]).AvatarSizes;

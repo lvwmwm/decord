@@ -1,10 +1,10 @@
-// Module ID: 6158
-// Function ID: 6159
+// Module ID: 6197
+// Function ID: 6198
 // Name: CaterpillarIllocon
-// Dependencies: [21, 5268, 6159, 2]
+// Dependencies: [21, 5307, 6198, 2]
 // Exports: CaterpillarIllocon
 
-// Module 6158 (CaterpillarIllocon)
+// Module 6197 (CaterpillarIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CaterpillarIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const CaterpillarIllocon = function CaterpillarIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6159);
+  obj[0] = importDefault(6198);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { uri: null });
+  return jsx(importDefault(5307), { uri: null });
 };

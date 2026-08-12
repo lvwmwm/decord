@@ -1,10 +1,10 @@
-// Module ID: 15862
-// Function ID: 15863
+// Module ID: 15918
+// Function ID: 15919
 // Name: handleFindFriends
-// Dependencies: [32, 5, 19, 17, 7120, 3957, 1922, 12057, 676, 12036, 21, 4303, 712, 12034, 7760, 4020, 1236, 7219, 12038, 500, 5728, 5748, 4730, 698, 8789, 647, 12, 4148, 15191, 5734, 4848, 9094, 5823, 9631, 5374, 4022, 4818, 15863, 15864, 15866, 15867, 2]
+// Dependencies: [32, 5, 19, 17, 7159, 3998, 1922, 12114, 676, 12093, 21, 4344, 712, 12091, 7799, 4061, 1236, 7258, 12095, 500, 5767, 5787, 4770, 698, 8828, 647, 12, 4189, 15248, 5773, 4888, 9134, 5862, 9671, 5413, 4063, 4858, 15919, 15920, 15922, 15923, 2]
 // Exports: default
 
-// Module 15862 (handleFindFriends)
+// Module 15918 (handleFindFriends)
 import ActivityIndicator from "ActivityIndicator";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import set from "set";
@@ -28,7 +28,7 @@ let error;
 let map1;
 const require = arg1;
 function handleFindFriends() {
-  require(12034) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, constants.FRIENDS_ADD_FRIENDS_MODAL);
+  require(12091) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, constants.FRIENDS_ADD_FRIENDS_MODAL);
 }
 function handleShare() {
   const self = this;
@@ -87,7 +87,7 @@ function _handleShare() {
             }
           } else if (1 === tmp7) {
             c4 = 0;
-            obj1 = callback(4020);
+            obj1 = callback(4061);
             const intl = callback(1236).intl;
             obj1.presentError(intl.string(callback(1236).t.R0RpRX));
             c6 = 3;
@@ -110,7 +110,7 @@ function _handleShare() {
             obj3[1] = code;
             const intl2 = callback(1236).intl;
             const obj4 = { link: null };
-            obj4[0] = code(7219)(code);
+            obj4[0] = code(7258)(code);
             obj3[2] = intl2.formatToPlainString(callback(1236).t.PJf9P9, obj4);
             obj3[3] = constants.ADD_FRIENDS_MODAL;
             callback(obj3);
@@ -299,9 +299,9 @@ export default function AddFriendsScreen(navigation) {
     });
     const obj2 = callback(analyticsLocations[26]);
     return callback(analyticsLocations[26]).unionBy(items1, items, (id) => id.id).sort((arg0, arg1) => {
-      const name = callback(4148).getName(arg0);
-      const obj = callback(4148);
-      return name.localeCompare(callback(4148).getName(arg1));
+      const name = callback(4189).getName(arg0);
+      const obj = callback(4189);
+      return name.localeCompare(callback(4189).getName(arg1));
     });
   });
   let obj3 = _require(analyticsLocations[25]);
@@ -341,9 +341,9 @@ export default function AddFriendsScreen(navigation) {
     });
     let obj = callback(analyticsLocations[26]);
     return callback(analyticsLocations[26]).unionBy(items1, items, (user) => user.user.id).sort((user, user2) => {
-      const name = items1(4148).getName(user.user);
-      const obj = items1(4148);
-      return name.localeCompare(items1(4148).getName(user2.user));
+      const name = items1(4189).getName(user.user);
+      const obj = items1(4189);
+      return name.localeCompare(items1(4189).getName(user2.user));
     });
   }, items4, areHydratedGameFriendRequestRowStatesEqual);
   let tmp6 = callback(React.useState([]), 2);

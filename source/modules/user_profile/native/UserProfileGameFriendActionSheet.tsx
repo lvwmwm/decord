@@ -1,10 +1,10 @@
-// Module ID: 12342
-// Function ID: 12343
+// Module ID: 12405
+// Function ID: 12406
 // Name: GameFriendApplicationRow
-// Dependencies: [5, 32, 19, 17, 3957, 676, 21, 4303, 712, 11980, 5766, 5326, 1297, 4299, 12343, 5734, 4493, 9249, 4020, 4271, 5764, 5396, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 3998, 676, 21, 4344, 712, 12037, 5805, 5365, 1297, 4340, 12406, 5773, 4533, 9289, 4061, 4312, 5803, 5435, 1236, 2]
 // Exports: default
 
-// Module 12342 (GameFriendApplicationRow)
+// Module 12405 (GameFriendApplicationRow)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";

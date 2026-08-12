@@ -1,9 +1,9 @@
-// Module ID: 9564
-// Function ID: 9565
+// Module ID: 9604
+// Function ID: 9605
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9564 (metadata)
+// Module 9604 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/orbs/fn_pdp_preview_header.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/81644099db353c3ea7cefa334f8d298d06b768a68a349de663d2151fd01eddc7.png";

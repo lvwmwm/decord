@@ -1,10 +1,10 @@
-// Module ID: 14322
-// Function ID: 14323
+// Module ID: 14379
+// Function ID: 14380
 // Name: _search
-// Dependencies: [5, 676, 530, 585, 5956, 2]
+// Dependencies: [5, 676, 530, 585, 5995, 2]
 // Exports: search
 
-// Module 14322 (_search)
+// Module 14379 (_search)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -55,7 +55,7 @@ function _search() {
               aPIError = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

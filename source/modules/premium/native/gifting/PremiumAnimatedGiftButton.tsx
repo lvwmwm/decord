@@ -1,10 +1,10 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11680
+// Function ID: 11681
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 4295, 21, 4303, 712, 1367, 4024, 589, 500, 4042, 4846, 5719, 2]
+// Dependencies: [19, 4336, 21, 4344, 712, 1367, 4065, 589, 500, 4083, 4886, 5758, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 11623 (PremiumAnimatedGiftButton)
+// Module 11680 (PremiumAnimatedGiftButton)
 import noop from "noop";
 import { useRef } from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -38,16 +38,16 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   ({ style, activeStyle, channelId, animationDataUrl, onAnimationFinished, loop } = arg0);
   let obj = require(1367) /* useIsMobileVisualRefreshExperimentEnabled */;
   const enabled = obj.useMobileVisualRefreshConfig({ location: "PremiumAnimatedGiftButton" }).enabled;
-  let obj1 = require(4024) /* map */;
+  let obj1 = require(4065) /* map */;
   const token = obj1.useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  let obj2 = require(4024) /* map */;
+  let obj2 = require(4065) /* map */;
   const token1 = obj2.useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
-  const token2 = require(4024) /* map */.useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token2 = require(4065) /* map */.useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp7 = callback(token, token1);
   const bound = Math.max(0, (token2 - token) / 2);
   const tmp9 = useRef(null);
   require = tmp9;
-  const obj4 = require(4024) /* map */;
+  const obj4 = require(4065) /* map */;
   const tmp3 = stateFromStores;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
@@ -73,7 +73,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   }, items1);
   let FadeOut;
   if (!stateFromStores) {
-    FadeOut = tmp(4042).FadeOut;
+    FadeOut = tmp(4083).FadeOut;
   }
   obj = { exiting: FadeOut, children: null };
   const items2 = [enabled ? tmp7.containerRefresh : tmp7.container, style, ];
@@ -95,7 +95,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   obj[3] = obj1;
   const merged1 = Object.assign(arg0);
   obj2 = { ref: tmp9, style: enabled ? tmp7.animationRefresh : tmp7.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished };
-  obj.children = jsx(tmp3(5719), { ref: tmp9, style: enabled ? tmp7.animationRefresh : tmp7.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
-  obj[1] = jsx(require(4846) /* PressableBase */.PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
-  return jsx(stateFromStores(4042).View, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
+  obj.children = jsx(tmp3(5758), { ref: tmp9, style: enabled ? tmp7.animationRefresh : tmp7.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
+  obj[1] = jsx(require(4886) /* PressableBase */.PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
+  return jsx(stateFromStores(4083).View, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
 };

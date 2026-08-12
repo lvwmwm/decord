@@ -1,10 +1,10 @@
-// Module ID: 11087
-// Function ID: 11088
+// Module ID: 11140
+// Function ID: 11141
 // Name: getCommandOptionComponents
-// Dependencies: [19, 17, 1391, 1983, 1910, 4521, 3957, 1922, 8344, 4737, 676, 1498, 4738, 21, 4303, 712, 1954, 1297, 4271, 8789, 4148, 4299, 4494, 1236, 5728, 589, 5268, 1438, 5376, 500, 11088, 4020, 5374, 1626, 6985, 4712, 5767, 5748, 8225, 5397, 2]
+// Dependencies: [19, 17, 1391, 1983, 1910, 4561, 3998, 1922, 8383, 4777, 676, 1498, 4778, 21, 4344, 712, 1954, 1297, 4312, 8828, 4189, 4340, 4534, 1236, 5767, 589, 5307, 1438, 5415, 500, 11141, 4061, 5413, 1626, 7024, 4752, 5806, 5787, 8264, 5436, 2]
 // Exports: default
 
-// Module 11087 (getCommandOptionComponents)
+// Module 11140 (getCommandOptionComponents)
 import showUserProfileActionSheet from "showUserProfileActionSheet";
 import get_ActivityIndicator from "Button";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -100,11 +100,11 @@ function getCommandOptionComponents(option) {
           if (null != channel) {
             let obj = { style: null, children: null };
             obj[0] = styles.commandOptionMentionText;
-            const items1 = [closure_18, tmp6(4494).computeChannelName(channel, authStore, markAllUserIdListsStale)];
+            const items1 = [closure_18, tmp6(4534).computeChannelName(channel, authStore, markAllUserIdListsStale)];
             obj[1] = items1;
             const _HermesInternal3 = HermesInternal;
             userComponent = callback2(tmp6(1297).LegacyText, obj, "optionValue-" + iter.name);
-            const tmp6Result = tmp6(4494);
+            const tmp6Result = tmp6(4534);
           }
           const str3 = iter.value;
         } else {
@@ -250,16 +250,16 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
           const user = authStore.getUser(item10118.value.toString());
           sum = null;
           if (null != user) {
-            sum = closure_20 + importDefault(4148).getUserTag(user, { decoration: "never" });
-            const obj3 = importDefault(4148);
+            sum = closure_20 + importDefault(4189).getUserTag(user, { decoration: "never" });
+            const obj3 = importDefault(4189);
           }
           const str5 = item10118.value;
         } else if (tmp5(1954).ApplicationCommandOptionType.CHANNEL === type) {
           const channel = store.getChannel(item10118.value.toString());
           sum = null;
           if (null != channel) {
-            sum = closure_18 + tmp5(4494).computeChannelName(channel, authStore, markAllUserIdListsStale);
-            const tmp5Result = tmp5(4494);
+            sum = closure_18 + tmp5(4534).computeChannelName(channel, authStore, markAllUserIdListsStale);
+            const tmp5Result = tmp5(4534);
           }
           const str4 = item10118.value;
         } else if (tmp5(1954).ApplicationCommandOptionType.ROLE === type) {
@@ -286,8 +286,8 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
               const user1 = authStore.getUser(str);
               sum = null;
               if (null != user1) {
-                sum = closure_20 + importDefault(4148).getUserTag(user1, { decoration: "never" });
-                const obj = importDefault(4148);
+                sum = closure_20 + importDefault(4189).getUserTag(user1, { decoration: "never" });
+                const obj = importDefault(4189);
               }
             }
             const str6 = item10118.value;
@@ -699,7 +699,7 @@ export default function ExecutedCommandPopout(channelId) {
       const obj = stateFromStores(outer1_3[38]);
     }
   }, items1);
-  obj = { value: messageId(5728)(messageId(5748).EXECUTED_COMMAND).analyticsLocations, children: null };
+  obj = { value: messageId(5767)(messageId(5787).EXECUTED_COMMAND).analyticsLocations, children: null };
   obj = { startExpanded: true, bodyStyles: tmp.container, children: null };
   let interactionData1;
   if (stateFromStores != null) {
@@ -742,6 +742,6 @@ export default function ExecutedCommandPopout(channelId) {
     tmp9Result = tmp9(closure_5, obj4);
   }
   obj[2] = tmp9Result;
-  obj[1] = closure_21(channelId(5397).BottomSheet, obj);
-  return closure_21(channelId(5728).AnalyticsLocationProvider, obj);
+  obj[1] = closure_21(channelId(5436).BottomSheet, obj);
+  return closure_21(channelId(5767).AnalyticsLocationProvider, obj);
 };

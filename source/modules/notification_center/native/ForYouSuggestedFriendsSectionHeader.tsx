@@ -1,10 +1,10 @@
-// Module ID: 15570
-// Function ID: 15571
+// Module ID: 15626
+// Function ID: 15627
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [19, 17, 21, 4303, 712, 4299, 1236, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 4340, 1236, 2]
 // Exports: default
 
-// Module 15570 (ForYouSuggestedFriendsSectionHeader)
+// Module 15626 (ForYouSuggestedFriendsSectionHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -33,6 +33,6 @@ export default function ForYouSuggestedFriendsSectionHeader(showDivider) {
   obj = { style: tmp.text, color: "text-muted", variant: "text-sm/semibold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["1uAmCw"]);
-  obj[1] = jsx(require(4299) /* Text */.Text, { style: tmp.text, color: "text-muted", variant: "text-sm/semibold", children: null });
+  obj[1] = jsx(require(4340) /* Text */.Text, { style: tmp.text, color: "text-muted", variant: "text-sm/semibold", children: null });
   return <View style={tmp.text} color="text-muted" variant="text-sm/semibold">{null}</View>;
 };

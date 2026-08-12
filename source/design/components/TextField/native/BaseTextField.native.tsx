@@ -1,9 +1,9 @@
-// Module ID: 6004
-// Function ID: 6005
+// Module ID: 6043
+// Function ID: 6044
 // Name: BaseTextField
-// Dependencies: [19, 21, 500, 1367, 6002, 4029, 6005, 4028, 2]
+// Dependencies: [19, 21, 500, 1367, 6041, 4070, 6044, 4069, 2]
 
-// Module 6004 (BaseTextField)
+// Module 6043 (BaseTextField)
 import importAllResult from "noop";
 import jsxProd from "jsxProd";
 
@@ -18,10 +18,10 @@ const forwardRefResult = importAllResult.forwardRef((size, ref2) => {
   let isFocused;
   let keyboardType;
   let secureTextEntry;
-  let obj = ref(6002);
+  let obj = ref(6041);
   obj = { size: size.size, isRound: size.isRound, hasLeadingIcon: null != size.leadingIcon, isRefreshEnabled: onChangeText(1367)("InputFieldContainer") };
   const inputStyles = obj.useInputStyles(obj);
-  let obj2 = ref(4029);
+  let obj2 = ref(4070);
   const focus = obj2.useFocus();
   ({ focusProps, isFocused } = focus);
   ref = importAllResult.useRef(null);
@@ -81,7 +81,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref2) => {
   const tmp10 = closure_5;
   const tmp12 = closure_4;
   const tmp2 = onChangeText(1367)("InputFieldContainer");
-  const merged2 = Object.assign(ref(4028).mergeProps(size, focusProps));
+  const merged2 = Object.assign(ref(4069).mergeProps(size, focusProps));
   let replaced = str3;
   if (null != size.value) {
     replaced = str3.replace(/\r\n?|\n/g, " ");
@@ -93,17 +93,17 @@ const forwardRefResult = importAllResult.forwardRef((size, ref2) => {
   }
   obj2.defaultValue = replaced1;
   obj2.onChangeText = callback;
-  const tmp3Result2 = ref(4028);
-  obj2.ref = ref(4028).mergeRefs(ref, ref2);
+  const tmp3Result2 = ref(4069);
+  obj2.ref = ref(4069).mergeRefs(ref, ref2);
   const items2 = [, , ];
   ({ padding: arr3[0], text: arr3[1] } = inputStyles);
   items2[2] = size.inputStyle;
   obj2.style = items2;
   obj2.placeholderTextColor = inputStyles.placeholderText.color;
-  items1[1] = tmp12(ref(6005).NativeTextInput, obj2);
+  items1[1] = tmp12(ref(6044).NativeTextInput, obj2);
   items1[2] = size.trailing;
   obj1.children = items1;
-  return tmp10(ref(6002).InputFieldContainer, obj1);
+  return tmp10(ref(6041).InputFieldContainer, obj1);
 });
 const result = require("set").fileFinishedImporting("design/components/TextField/native/BaseTextField.native.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16648
+// Function ID: 16649
 // Name: prototype
-// Dependencies: [5, 1922, 3968, 3972, 6863, 1924, 5261, 1945, 4623, 6864, 2]
+// Dependencies: [5, 1922, 4009, 4013, 6902, 1924, 5300, 1945, 4663, 6903, 2]
 
-// Module 16590 (prototype)
+// Module 16648 (prototype)
 import closure_2 from "GuildFeatures";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
@@ -234,7 +234,7 @@ let prototype = function SubscriptionManager() {
             dependencyMap = 1;
             c2 = 1;
             let obj1 = { value: null, done: false };
-            obj1[0] = outer1_0(4623).fetchIpCountryCode();
+            obj1[0] = outer1_0(4663).fetchIpCountryCode();
             return obj1;
           }
         } else {
@@ -248,7 +248,7 @@ let prototype = function SubscriptionManager() {
               obj2[0] = arg1;
               return obj2;
             } else if (null != outer1_4.ipCountryCode) {
-              obj1 = outer1_0(4623);
+              obj1 = outer1_0(4663);
               dependencyMap = 2;
               c2 = 1;
               const obj3 = { value: null, done: false };

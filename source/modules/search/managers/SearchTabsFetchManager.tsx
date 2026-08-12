@@ -1,9 +1,9 @@
-// Module ID: 11723
-// Function ID: 11724
+// Module ID: 11780
+// Function ID: 11781
 // Name: createRequestPayload
-// Dependencies: [109, 8403, 676, 11724, 11725, 2]
+// Dependencies: [109, 8442, 676, 11781, 11782, 2]
 
-// Module 11723 (createRequestPayload)
+// Module 11780 (createRequestPayload)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import MessageEmbedTypes from "MessageEmbedTypes";
 import { SearchTypes } from "ME";
@@ -57,10 +57,10 @@ prototype["createWithPayload"] = function createWithPayload(searchTabs) {
     if (tmp2.GUILD_CHANNEL !== type) {
       if (tmp2.THREAD !== type) {
         if (tmp2.CHANNEL === type) {
-          const searchTabFetcherImpl = new require(11725) /* fetch */.SearchTabFetcherImpl(searchContext.channelId, searchContext.type, searchQuery, requestPayload);
+          const searchTabFetcherImpl = new require(11782) /* fetch */.SearchTabFetcherImpl(searchContext.channelId, searchContext.type, searchQuery, requestPayload);
           return searchTabFetcherImpl;
         } else if (tmp2.DMS === type) {
-          const searchTabFetcherImpl1 = new require(11725) /* fetch */.SearchTabFetcherImpl(searchContext.type, searchContext.type, searchQuery, requestPayload);
+          const searchTabFetcherImpl1 = new require(11782) /* fetch */.SearchTabFetcherImpl(searchContext.type, searchContext.type, searchQuery, requestPayload);
           return searchTabFetcherImpl1;
         } else {
           const _Error = Error;
@@ -71,7 +71,7 @@ prototype["createWithPayload"] = function createWithPayload(searchTabs) {
       }
     }
   }
-  const searchTabFetcherImpl2 = new require(11725) /* fetch */.SearchTabFetcherImpl(searchContext.guildId, searchContext.type, searchQuery, requestPayload);
+  const searchTabFetcherImpl2 = new require(11782) /* fetch */.SearchTabFetcherImpl(searchContext.guildId, searchContext.type, searchQuery, requestPayload);
   return searchTabFetcherImpl2;
 };
 prototype["create"] = function create(arg0) {

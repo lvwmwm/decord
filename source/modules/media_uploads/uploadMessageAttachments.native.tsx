@@ -1,10 +1,10 @@
-// Module ID: 7297
-// Function ID: 7298
+// Module ID: 7336
+// Function ID: 7337
 // Name: _uploadMessageAttachments
-// Dependencies: [5, 7298, 7299, 4523, 709, 2]
+// Dependencies: [5, 7337, 7338, 4563, 709, 2]
 // Exports: uploadMessageAttachments
 
-// Module 7297 (_uploadMessageAttachments)
+// Module 7336 (_uploadMessageAttachments)
 import closure_3 from "set";
 import initialize from "initialize";
 import set from "nativeEventEmitter";
@@ -61,7 +61,7 @@ function _uploadMessageAttachments() {
               let closure_7;
               c4 = 1;
               set = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -76,11 +76,11 @@ function _uploadMessageAttachments() {
               set = 3;
               return { value: "HermesInternal", done: null };
             } else {
-              const tmp16 = new callback2(7299)();
+              const tmp16 = new callback2(7338)();
               set = tmp16;
               const _HermesInternal = HermesInternal;
               closure_6 = "pending-upload-" + set._file.id;
-              let obj2 = callback(4523);
+              let obj2 = callback(4563);
               obj2 = {};
               const merged = Object.assign(callback2);
               obj2.key = closure_6;

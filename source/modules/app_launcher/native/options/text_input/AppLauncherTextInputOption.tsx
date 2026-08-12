@@ -1,10 +1,10 @@
-// Module ID: 11563
-// Function ID: 11564
+// Module ID: 11620
+// Function ID: 11621
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1925, 21, 4303, 712, 9554, 1954, 8649, 11560, 9555, 1297, 11564, 500, 11565, 1891, 8643, 2]
+// Dependencies: [32, 19, 17, 1925, 21, 4344, 712, 9594, 1954, 8688, 11617, 9595, 1297, 11621, 500, 11622, 1891, 8682, 2]
 // Exports: default
 
-// Module 11563 (AppLauncherTextInputOption)
+// Module 11620 (AppLauncherTextInputOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "EMOJI_PICKER_ACTION_SHEET_KEY";
@@ -61,7 +61,7 @@ export default function AppLauncherTextInputOption(guildId) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = onChangeText(9554);
+  let obj = onChangeText(9594);
   closure_5 = React.useRef({ start: 0, end: 0 });
   ref = React.useRef(null);
   let tmp14Result = option.type === onChangeText(1954).ApplicationCommandOptionType.STRING;
@@ -117,17 +117,17 @@ export default function AppLauncherTextInputOption(guildId) {
       const obj = onChangeText(outer1_2[9]);
     }
   }, items2);
-  let obj1 = onChangeText(11560);
+  let obj1 = onChangeText(11617);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
       current.focus();
     }
   });
-  if (obj.useAppLauncherContext().entrypoint === onChangeText(9555).AppLauncherEntrypoint.VOICE) {
+  if (obj.useAppLauncherContext().entrypoint === onChangeText(9595).AppLauncherEntrypoint.VOICE) {
     let TextInput = tmp4(1297).TextInput;
   } else {
-    TextInput = guildId(11564);
+    TextInput = guildId(11621);
   }
   const items3 = [tmp.container, , ];
   if (hasError) {
@@ -136,7 +136,7 @@ export default function AppLauncherTextInputOption(guildId) {
   obj = { style: items3, children: null };
   items3[1] = hasError;
   items3[2] = style;
-  obj = { ref, autoFocus: false, value: first, style: tmp.stringOptionInput, maxLength: null, autoComplete: "off", onChangeText: null, onSelectionChange: null, onFocus: null, onEndEditing: null, textAlignVertical: "center", returnKeyType: "done", multiline: true, keyboardType: null, onPressIn: null };
+  obj = { ref, autoFocus: false, value: first, style: tmp.stringOptionInput, maxLength: null, autoComplete: "off", onChangeText: null, onSelectionChange: null, onFocus: null, onEndEditing: null, textAlignVertical: "center", returnKeyType: "default", multiline: true, keyboardType: null, onPressIn: null };
   let maxLength;
   if (option.type === onChangeText(1954).ApplicationCommandOptionType.STRING) {
     maxLength = option.maxLength;
@@ -170,7 +170,7 @@ export default function AppLauncherTextInputOption(guildId) {
       obj = { pickerIntention: ref.CHAT, autoFocus: false, startExpanded: false, onPressEmoji: closure_9, guildId, onClose: closure_10 };
       const result1 = onChangeText(outer1_2[17]).openEmojiPickerActionSheet(obj);
     };
-    tmp14Result = tmp14(guildId(11565), obj1);
+    tmp14Result = tmp14(guildId(11622), obj1);
   }
   items4[1] = tmp14Result;
   obj[1] = items4;

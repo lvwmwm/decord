@@ -1,10 +1,10 @@
-// Module ID: 16048
-// Function ID: 16049
+// Module ID: 16105
+// Function ID: 16106
 // Name: ToastIcon
-// Dependencies: [32, 19, 17, 21, 4303, 712, 4024, 1297, 4299, 2]
+// Dependencies: [32, 19, 17, 21, 4344, 712, 4065, 1297, 4340, 2]
 // Exports: default
 
-// Module 16048 (ToastIcon)
+// Module 16105 (ToastIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -20,7 +20,7 @@ function ToastIcon(recolorLegacyIcon) {
   let icon;
   let iconColor;
   ({ icon, IconComponent, iconColor } = recolorLegacyIcon);
-  let obj = require(4024) /* map */;
+  let obj = require(4065) /* map */;
   if (iconColor == null) {
     iconColor = "mobile-text-heading-primary";
   }
@@ -63,7 +63,7 @@ function ToastContent(content) {
     obj[0] = content.onTextLayout;
     obj[1] = tmp.contentContainer;
     obj[5] = content;
-    tmp4 = callback2(require(4299) /* Text */.Text, obj);
+    tmp4 = callback2(require(4340) /* Text */.Text, obj);
   }
   return tmp4;
 }

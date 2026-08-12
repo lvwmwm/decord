@@ -1,10 +1,10 @@
-// Module ID: 9003
-// Function ID: 9004
+// Module ID: 9042
+// Function ID: 9043
 // Name: getRoleRowData
-// Dependencies: [1395, 1434, 1984, 1990, 1922, 7783, 676, 1987, 1236, 506, 11, 4148, 1370, 3953, 9004, 1954, 4486, 2]
+// Dependencies: [1395, 1434, 1984, 1990, 1922, 7822, 676, 1987, 1236, 506, 11, 4189, 1370, 3994, 9043, 1954, 4526, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 9003 (getRoleRowData)
+// Module 9042 (getRoleRowData)
 import { isGuildVocalChannelType } from "createChannelRecord";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
@@ -58,11 +58,11 @@ function getMemberRowData(id, id2) {
   const obj = { rowType: tmp3, name: null, username: null, id: null, avatarURL: null, bot: null, verifiedBot: null, disabled: null, key: null };
   nick = nick.getNick(id2.id, id.id);
   if (nick == null) {
-    nick = importDefault(4148).getName(id);
-    const obj2 = importDefault(4148);
+    nick = importDefault(4189).getName(id);
+    const obj2 = importDefault(4189);
   }
   obj[1] = nick;
-  obj[2] = importDefault(4148).getUserTag(id);
+  obj[2] = importDefault(4189).getUserTag(id);
   obj[3] = id.id;
   obj[4] = id.getAvatarURL(id2.id, 24);
   obj[5] = id.bot;
@@ -572,7 +572,7 @@ export const getRemoveTooltipHint = function getRemoveTooltipHint(arg0) {
 export const flipEveryonePermission = function flipEveryonePermission(outer1_0, accessPermissions, result) {
   let everyoneOverwrite = outer1_0.permissionOverwrites[outer1_0.guild_id];
   if (null == everyoneOverwrite) {
-    let obj = importAll(3953);
+    let obj = importAll(3994);
     everyoneOverwrite = obj.makeEveryoneOverwrite(outer1_0.guild_id);
   }
   obj = {};
@@ -590,7 +590,7 @@ export const flipEveryonePermission = function flipEveryonePermission(outer1_0, 
 export const toggleChannelEveryonePermission = function toggleChannelEveryonePermission(guild_id) {
   let everyoneOverwrite = guild_id.permissionOverwrites[guild_id.guild_id];
   if (null == everyoneOverwrite) {
-    let obj = importAll(3953);
+    let obj = importAll(3994);
     everyoneOverwrite = obj.makeEveryoneOverwrite(guild_id.guild_id);
   }
   obj = {};
@@ -604,7 +604,7 @@ export const toggleChannelEveryonePermission = function toggleChannelEveryonePer
     const tmp5Result = tmp5(506);
   }
   const obj4 = importAll(506);
-  require(9004) /* _updatePermission */.updatePermission(guild_id, obj.id, obj.allow, obj.deny);
+  require(9043) /* _updatePermission */.updatePermission(guild_id, obj.id, obj.allow, obj.deny);
 };
 export const grantUserChannelAccess = function grantUserChannelAccess(outer1_0, accessPermissions) {
   let allow;
@@ -615,15 +615,15 @@ export const grantUserChannelAccess = function grantUserChannelAccess(outer1_0, 
       let obj = { id: null, type: null, allow: null, deny: null };
       obj[0] = currentUser.id;
       obj[1] = require(1954) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER;
-      obj[2] = importAll(506).add(importAll(3953).NONE, accessPermissions);
-      obj[3] = importAll(3953).NONE;
+      obj[2] = importAll(506).add(importAll(3994).NONE, accessPermissions);
+      obj[3] = importAll(3994).NONE;
       const obj4 = importAll(506);
       const items = [obj];
-      return require(9004) /* _updatePermission */.savePermissionUpdates(outer1_0.id, items, true);
+      return require(9043) /* _updatePermission */.savePermissionUpdates(outer1_0.id, items, true);
     } else {
       ({ allow, deny } = tmp4);
       obj = importAll(506);
-      const obj2 = require(9004) /* _updatePermission */;
+      const obj2 = require(9043) /* _updatePermission */;
       return obj2.updatePermission(outer1_0, tmp4.id, obj.add(allow, accessPermissions), deny);
     }
   }

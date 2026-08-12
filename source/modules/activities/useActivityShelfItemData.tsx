@@ -1,17 +1,17 @@
-// Module ID: 16232
-// Function ID: 16233
+// Module ID: 16289
+// Function ID: 16290
 // Name: useActivityShelfItemData
-// Dependencies: [19, 11429, 2]
+// Dependencies: [19, 11486, 2]
 // Exports: useActivityShelfItemData
 
-// Module 16232 (useActivityShelfItemData)
+// Module 16289 (useActivityShelfItemData)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/activities/useActivityShelfItemData.tsx");
 
 export const useActivityShelfItemData = function useActivityShelfItemData(guild_id1, applicationId) {
   const importDefault = applicationId;
-  const tmp = importDefault(11429)({ guildId: guild_id1 });
+  const tmp = importDefault(11486)({ guildId: guild_id1 });
   const dependencyMap = tmp;
   const items = [tmp, applicationId];
   return React.useMemo(() => {

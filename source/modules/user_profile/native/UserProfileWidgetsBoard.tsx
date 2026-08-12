@@ -1,10 +1,10 @@
-// Module ID: 12345
-// Function ID: 12346
+// Module ID: 12408
+// Function ID: 12409
 // Name: WidgetRenderer
-// Dependencies: [32, 19, 17, 1218, 8791, 21, 4303, 712, 9278, 9289, 8794, 12346, 4299, 12350, 1903, 12351, 589, 1367, 12, 7084, 1236, 5775, 7086, 12353, 7095, 12354, 7092, 12458, 12461, 2]
+// Dependencies: [32, 19, 17, 1218, 8830, 21, 4344, 712, 9318, 9329, 8833, 12409, 4340, 12413, 1903, 12414, 589, 1367, 12, 7123, 1236, 5814, 7125, 12416, 7134, 12417, 7131, 12521, 12524, 2]
 // Exports: default
 
-// Module 12345 (WidgetRenderer)
+// Module 12408 (WidgetRenderer)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "WidgetType";
 import get_ActivityIndicator from "useIsMobileVisualRefreshExperimentEnabled";
@@ -25,19 +25,19 @@ function WidgetRenderer(isFirstWidget) {
   let userId;
   let widget;
   ({ userId, widget, cardStyle } = isFirstWidget);
-  if (widget instanceof require(7095) /* toSubmission */.ApplicationWidget) {
+  if (widget instanceof require(7134) /* toSubmission */.ApplicationWidget) {
     let obj = { userId: null, widget: null, cardStyle: null, isFirstWidget: null };
     obj[0] = userId;
     obj[1] = widget;
     obj[2] = cardStyle;
     obj[3] = isFirstWidget.isFirstWidget;
-    let tmp3Result = callback2(importDefault(12354), obj);
-  } else if (widget instanceof require(7092) /* isFieldEmpty */.UserProfilePersonalWidget) {
+    let tmp3Result = callback2(importDefault(12417), obj);
+  } else if (widget instanceof require(7131) /* isFieldEmpty */.UserProfilePersonalWidget) {
     obj = { userId: null, widget: null, cardStyle: null };
     obj[0] = userId;
     obj[1] = widget;
     obj[2] = cardStyle;
-    tmp3Result = tmp3(importDefault(12458), obj);
+    tmp3Result = tmp3(importDefault(12521), obj);
   } else {
     obj = { userId: null, widget: null, cardStyle: null };
     obj[0] = userId;
@@ -152,11 +152,11 @@ let closure_17 = importAllResult.memo((game) => {
   let _require;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  ({ gameName, coverImageUrl } = importDefault(12350)(game.gameId));
+  ({ gameName, coverImageUrl } = importDefault(12413)(game.gameId));
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp2 = importDefault;
-  const tmp4 = importDefault(12350)(game.gameId);
-  obj[2] = _require(9289).GameProfileSources.UserProfile;
+  const tmp4 = importDefault(12413)(game.gameId);
+  obj[2] = _require(9329).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp5Result;
   if (!disableInteraction) {
@@ -180,7 +180,7 @@ let closure_17 = importAllResult.memo((game) => {
   items = [tmp.favoriteCover, { width: coverWidth }];
   const items1 = [callback2(closure_6, obj), ];
   const obj1 = { style: tmp.favoriteDetails, children: null };
-  tmp5 = importDefault(9278);
+  tmp5 = importDefault(9318);
   const items2 = [
     callback2(closure_6, {
       onPress() {
@@ -193,7 +193,7 @@ let closure_17 = importAllResult.memo((game) => {
       disabled: null == tmp5Result,
       accessibilityRole: "button",
       accessibilityLabel: gameName,
-      children: callback2(_require(4299).Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
+      children: callback2(_require(4340).Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
     }),
   ,
 
@@ -209,7 +209,7 @@ let closure_17 = importAllResult.memo((game) => {
     disabled: null == tmp5Result,
     accessibilityRole: "button",
     accessibilityLabel: gameName,
-    children: callback2(_require(4299).Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
+    children: callback2(_require(4340).Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
   };
   let trimmed;
   if (game.comment != null) {
@@ -222,11 +222,11 @@ let closure_17 = importAllResult.memo((game) => {
     obj3[0] = tmp.comment;
     const obj4 = { size: "xxs", color: null };
     obj4[1] = tmp2(712).colors.TEXT_MUTED;
-    const items3 = [tmp10(tmp6(12351).QuoteIcon, obj4), ];
+    const items3 = [tmp10(tmp6(12414).QuoteIcon, obj4), ];
     const obj5 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: null, children: null };
     obj5[3] = tmp.commentText;
     obj5[4] = game.comment;
-    items3[1] = tmp10(tmp6(4299).Text, obj5);
+    items3[1] = tmp10(tmp6(4340).Text, obj5);
     obj3[1] = items3;
     tmp8Result = tmp8(tmp9, obj3);
   }
@@ -247,10 +247,10 @@ let closure_18 = importAllResult.memo((game) => {
   let _require;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  ({ gameName, coverImageUrl } = importDefault(12350)(game.gameId));
+  ({ gameName, coverImageUrl } = importDefault(12413)(game.gameId));
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
-  const tmp3 = importDefault(12350)(game.gameId);
-  obj[2] = _require(9289).GameProfileSources.UserProfile;
+  const tmp3 = importDefault(12413)(game.gameId);
+  obj[2] = _require(9329).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp4Result;
   if (!disableInteraction) {
@@ -274,7 +274,7 @@ let closure_18 = importAllResult.memo((game) => {
   items = [tmp.listCover, { width: coverWidth }];
   const items1 = [callback2(closure_6, obj), ];
   const obj1 = { style: tmp.listDetails, children: null };
-  tmp4 = importDefault(9278);
+  tmp4 = importDefault(9318);
   const tmp5 = _require;
   const items2 = [
     callback2(closure_6, {
@@ -288,7 +288,7 @@ let closure_18 = importAllResult.memo((game) => {
       disabled: null == tmp4Result,
       accessibilityRole: "button",
       accessibilityLabel: gameName,
-      children: callback2(_require(4299).Text, { variant: "text-md/medium", color: "text-default", lineClamp: 2, children: gameName })
+      children: callback2(_require(4340).Text, { variant: "text-md/medium", color: "text-default", lineClamp: 2, children: gameName })
     }),
     callback2(closure_16, { tags: game.tags })
   ];
@@ -307,10 +307,10 @@ let closure_19 = importAllResult.memo((game) => {
   let _require;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  ({ coverImageUrl, gameName } = importDefault(12350)(game.gameId));
+  ({ coverImageUrl, gameName } = importDefault(12413)(game.gameId));
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
-  const tmp2 = importDefault(12350)(game.gameId);
-  obj[2] = _require(9289).GameProfileSources.UserProfile;
+  const tmp2 = importDefault(12413)(game.gameId);
+  obj[2] = _require(9329).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp3Result;
   if (!disableInteraction) {

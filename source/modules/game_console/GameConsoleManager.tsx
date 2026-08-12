@@ -1,9 +1,9 @@
-// Module ID: 16453
-// Function ID: 16454
+// Module ID: 16510
+// Function ID: 16511
 // Name: syncLocalState
-// Dependencies: [5, 1218, 4351, 4375, 4318, 4319, 4317, 10511, 4364, 3, 38, 9161, 10882, 5261, 4188, 10884, 1370, 4642, 1236, 16454, 10887, 2]
+// Dependencies: [5, 1218, 4392, 4415, 4359, 4360, 4358, 10552, 4405, 3, 38, 9201, 10935, 5300, 4229, 10937, 1370, 4682, 1236, 16511, 10940, 2]
 
-// Module 16453 (syncLocalState)
+// Module 16510 (syncLocalState)
 import updateVoiceState from "updateVoiceState";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -108,9 +108,9 @@ function _syncLocalState() {
 let prototype = function GameConsoleManager() {
   let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   const require = applyArgumentsResult;
-  const timeout = new require(4188) /* start */.Timeout();
+  const timeout = new require(4229) /* start */.Timeout();
   applyArgumentsResult.rollbackCommandTimeout = timeout;
-  const timeout1 = new require(4188) /* start */.Timeout();
+  const timeout1 = new require(4229) /* start */.Timeout();
   applyArgumentsResult.awaitRemoteTimeout = timeout1;
   applyArgumentsResult.actions = {
     WAIT_FOR_REMOTE_SESSION() {
@@ -238,14 +238,14 @@ let prototype = function GameConsoleManager() {
   applyArgumentsResult.handleWaitForRemoteSession = function handleWaitForRemoteSession() {
     const awaitRemoteTimeout = applyArgumentsResult.awaitRemoteTimeout;
     awaitRemoteTimeout.start(60000, () => {
-      let obj = callback(10884);
+      let obj = callback(10937);
       obj.disconnectRemote();
       obj = { title: null, body: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.wGMxr3);
       const intl2 = callback(1236).intl;
       obj[1] = intl2.string(callback(1236).t.i5k8b5);
-      callback2(4642).show(obj);
+      callback2(4682).show(obj);
     });
   };
   applyArgumentsResult.handleConsoleCommandUpdate = function handleConsoleCommandUpdate(arg0) {

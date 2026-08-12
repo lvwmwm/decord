@@ -1,9 +1,9 @@
-// Module ID: 5780
-// Function ID: 5781
+// Module ID: 5819
+// Function ID: 5820
 // Name: getEmojiSourceData
 // Dependencies: [5, 1931, 676, 530, 1435, 1433, 1430, 2]
 
-// Module 5780 (getEmojiSourceData)
+// Module 5819 (getEmojiSourceData)
 import areSetsEqual from "areSetsEqual";
 import "toJS";
 import ME from "ME";

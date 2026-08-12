@@ -1,10 +1,10 @@
-// Module ID: 15693
-// Function ID: 15694
+// Module ID: 15749
+// Function ID: 15750
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 1910, 1922, 4505, 21, 4303, 712, 647, 8312, 8829, 5928, 8313, 4148, 4031, 688, 8305, 1297, 9455, 4299, 4493, 9013, 2]
+// Dependencies: [19, 17, 1910, 1922, 4545, 21, 4344, 712, 647, 8351, 8868, 5967, 8352, 4189, 4072, 688, 8344, 1297, 9495, 4340, 4533, 9052, 2]
 // Exports: default
 
-// Module 15693 (HomeWelcomeMessage)
+// Module 15749 (HomeWelcomeMessage)
 import Text from "Text";
 import { View } from "Button";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

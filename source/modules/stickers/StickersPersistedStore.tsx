@@ -1,9 +1,9 @@
-// Module ID: 5218
-// Function ID: 5219
+// Module ID: 5257
+// Function ID: 5258
 // Name: handleStickersStoreUpdate
-// Dependencies: [1340, 5219, 685, 687, 4387, 12, 589, 709, 2]
+// Dependencies: [1340, 5258, 685, 687, 4427, 12, 589, 709, 2]
 
-// Module 5218 (handleStickersStoreUpdate)
+// Module 5257 (handleStickersStoreUpdate)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import { UserSettingsTypes } from "MAX_FAVORITES";

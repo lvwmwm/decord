@@ -1,13 +1,13 @@
-// Module ID: 4041
-// Function ID: 4042
-// Dependencies: [4042, 2]
+// Module ID: 4082
+// Function ID: 4083
+// Dependencies: [4083, 2]
 
-// Module 4041
+// Module 4082
 const result = require("set").fileFinishedImporting("modules/gesture_handlers/native/reactNativeWorkletsCompat.js");
 
 export default {
   scheduleOnUI(fn) {
     const substr = [...arguments].slice();
-    return require(4042).runOnUI(fn)(...substr);
+    return require(4083).runOnUI(fn)(...substr);
   }
 };

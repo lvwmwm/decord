@@ -1,10 +1,10 @@
-// Module ID: 15045
-// Function ID: 15046
+// Module ID: 15103
+// Function ID: 15104
 // Name: SelectMenuNativeComponent
-// Dependencies: [19, 17, 21, 4045, 15046, 2]
+// Dependencies: [19, 17, 21, 4086, 15104, 2]
 // Exports: default
 
-// Module 15045 (SelectMenuNativeComponent)
+// Module 15103 (SelectMenuNativeComponent)
 import "noop";
 import { jsx } from "jsxProd";
 import isFabric from "isFabric";

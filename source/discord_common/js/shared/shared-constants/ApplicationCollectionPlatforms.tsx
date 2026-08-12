@@ -1,9 +1,9 @@
-// Module ID: 11466
-// Function ID: 11467
+// Module ID: 11523
+// Function ID: 11524
 // Name: ApplicationCollectionPlatforms
 // Dependencies: [2]
 
-// Module 11466 (ApplicationCollectionPlatforms)
+// Module 11523 (ApplicationCollectionPlatforms)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionPlatforms.tsx");
 
 export const ApplicationCollectionPlatforms = { IOS: 1, [1]: "IOS", ANDROID: 2, [2]: "ANDROID", WEB: 4, [4]: "WEB" };

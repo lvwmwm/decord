@@ -1,10 +1,10 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8706
+// Function ID: 8707
 // Name: renderTooltipItem
-// Dependencies: [32, 19, 17, 21, 4042, 8668, 1356, 8664, 8665, 2]
+// Dependencies: [32, 19, 17, 21, 4083, 8707, 1356, 8703, 8704, 2]
 // Exports: AnimatedCoachmark
 
-// Module 8667 (renderTooltipItem)
+// Module 8706 (renderTooltipItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
@@ -19,10 +19,10 @@ function renderTooltipItem(arg0, enterExitAnimatedStyles) {
     obj = {};
     const merged = Object.assign(arg0);
     obj.enterExitAnimatedStyles = enterExitAnimatedStyles;
-    tmpResult = tmp(require(8668) /* Coachmark */.CoachmarkContainer, obj);
+    tmpResult = tmp(require(8707) /* Coachmark */.CoachmarkContainer, obj);
   }
   obj[2] = tmpResult;
-  return jsx(importDefault(4042).View, { style: items, pointerEvents: "box-none", children: null });
+  return jsx(importDefault(4083).View, { style: items, pointerEvents: "box-none", children: null });
 }
 let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
 
@@ -33,7 +33,7 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   const merged = Object.assign(visible, Object.create(null));
   let importDefault;
   [tmp3, c1] = callback(React.useState(visible), 2);
-  let obj = visible(8664);
+  let obj = visible(8703);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const items = [visible];
   const effect = React.useEffect(() => {
@@ -50,5 +50,5 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   obj[2] = result;
   obj[3] = result;
   obj[4] = renderTooltipItem;
-  return tmp6(importDefault(8665), obj);
+  return tmp6(importDefault(8704), obj);
 };

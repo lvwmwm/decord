@@ -1,10 +1,10 @@
-// Module ID: 14286
-// Function ID: 14287
+// Module ID: 14343
+// Function ID: 14344
 // Name: FullscreenEnterIcon
-// Dependencies: [19, 21, 712, 4023, 14287, 2]
+// Dependencies: [19, 21, 712, 4064, 14344, 2]
 // Exports: FullscreenEnterIcon
 
-// Module 14286 (FullscreenEnterIcon)
+// Module 14343 (FullscreenEnterIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const FullscreenEnterIcon = function FullscreenEnterIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14287) /* registerAsset */;
+  obj[0] = require(14344) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

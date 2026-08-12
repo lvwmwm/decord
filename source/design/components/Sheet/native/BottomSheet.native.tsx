@@ -1,9 +1,9 @@
-// Module ID: 5397
-// Function ID: 5398
+// Module ID: 5436
+// Function ID: 5437
 // Name: Background
-// Dependencies: [32, 19, 17, 5398, 21, 4303, 712, 4045, 1628, 4700, 5399, 5267, 4725, 691, 4042, 5710, 1356, 5711, 4730, 5712, 5713, 5714, 1493, 4154, 500, 5715, 4031, 2]
+// Dependencies: [32, 19, 17, 5437, 21, 4344, 712, 500, 1628, 4740, 5438, 5306, 4765, 691, 4083, 5749, 1356, 5750, 4770, 5751, 5752, 5753, 1493, 4195, 5754, 4072, 2]
 
-// Module 5397 (Background)
+// Module 5436 (Background)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "ActionSheetHeaderBar";
 import get_ActivityIndicator from "useBottomSheetImperativeHandle";
@@ -77,9 +77,9 @@ let closure_18 = createCacheKey.createStyles((arg0) => {
   }
   obj1[3] = num2;
   obj[3] = obj1;
-  let obj4 = require(4045) /* isFabric */;
+  let obj4 = require(500) /* set */;
   let str2;
-  if (obj4.isIosFabric()) {
+  if (obj4.isIOS()) {
     str2 = "hidden";
   }
   obj[4] = { height: "100%", overflow: str2, borderTopLeftRadius: closure_14, borderTopRightRadius: closure_14 };
@@ -456,7 +456,7 @@ const forwardRefResult = importAllResult.forwardRef((scrollable, ref) => {
   if (backgroundComponent != null) {
     obj = { ref: null, accessible: null, accessibilityRole: "none", accessibilityLabel: "", startHeight: null, contentHeight: null, maxHeight: null, containerHeight: null, startExpanded: null, hasEverExpanded: null, windowDimensions: null, wrapperStyle: null, onExpand: null, enablePanDownToClose: true, containerStyle: null, backgroundStyle: null, topInset: null, keyboardBehavior: null, keyboardBlurBehavior: "restore", keyboardShouldPersistTaps: null, animationConfigs: null, overrideReduceMotion: null, handleIndicatorStyle: null, handleComponent: null, backdropComponent: null, backgroundComponent: null, renderFooter: null, animatedIndex: null, onAnimate: null, onClose: null, borderGradient: null, extraContent: null, children: null };
     obj[0] = ref;
-    const isIOSResult = tmp8(tmp3[24]).isIOS();
+    const isIOSResult = tmp8(tmp3[7]).isIOS();
     obj[1] = !isIOSResult;
     obj[4] = startHeight;
     obj[5] = contentHeight;
@@ -516,7 +516,7 @@ const forwardRefResult = importAllResult.forwardRef((scrollable, ref) => {
     items11[1] = closure_16(transitionState, obj4);
     obj1[1] = items11;
     obj3[0] = closure_17(transitionState, obj1);
-    obj[32] = closure_16(tmp8(tmp3[25]).LayerScope, obj3);
+    obj[32] = closure_16(tmp8(tmp3[24]).LayerScope, obj3);
     tmp26Result = tmp26(tmp23, obj);
     let tmp26Result1 = tmp26Result;
     if (showGradient) {
@@ -527,7 +527,7 @@ const forwardRefResult = importAllResult.forwardRef((scrollable, ref) => {
       const obj5 = { gradient: null, children: null };
       obj5[0] = tmp35;
       obj5[1] = tmp26Result;
-      tmp26Result1 = tmp26(tmp8(tmp3[26]).ThemeContextProvider, obj5);
+      tmp26Result1 = tmp26(tmp8(tmp3[25]).ThemeContextProvider, obj5);
     }
     return tmp26Result1;
   }

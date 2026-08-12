@@ -1,10 +1,10 @@
-// Module ID: 9624
-// Function ID: 9625
+// Module ID: 9664
+// Function ID: 9665
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 9625, 21, 4303, 712, 1499, 9626, 9586, 2]
+// Dependencies: [19, 17, 9665, 21, 4344, 712, 1499, 9666, 9626, 2]
 // Exports: default
 
-// Module 9624 (UnifiedGiftModalRecipientSelectScreen)
+// Module 9664 (UnifiedGiftModalRecipientSelectScreen)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { UserRowModes } from "UserRowModes";
@@ -23,7 +23,7 @@ export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) 
   let importDefault;
   let obj = setRecipientUser(1499);
   importDefault = obj.useNavigation();
-  obj = { style: createCacheKey().container, children: jsx(importDefault(9626), obj) };
+  obj = { style: createCacheKey().container, children: jsx(importDefault(9666), obj) };
   obj = {
     onSelectUser(user) {
       setRecipientUser(user);

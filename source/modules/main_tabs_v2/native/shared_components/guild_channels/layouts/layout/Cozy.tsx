@@ -1,9 +1,9 @@
-// Module ID: 9805
-// Function ID: 9806
+// Module ID: 9846
+// Function ID: 9847
 // Name: CHANNEL_LIST_STYLES_COZY
-// Dependencies: [9803, 9804, 712, 1297, 5779, 5738, 2]
+// Dependencies: [9844, 9845, 712, 1297, 5818, 5777, 2]
 
-// Module 9805 (CHANNEL_LIST_STYLES_COZY)
+// Module 9846 (CHANNEL_LIST_STYLES_COZY)
 import importDefaultResult from "merge";
 
 let obj = { layout: { margin: { marginVertical: 2 }, marginPanels: { marginVertical: 2 }, marginThread: { marginVertical: 2, marginLeft: 76 } }, container: null, category: null, voiceUsers: null, voiceOrStageSummaryRow: null, messagePreview: null, inviteRow: null, icon: null, unreadBadge: null, mentionBadge: null, joinVoiceButton: null, threadSpine: null, happeningNow: null, typing: null, separator: null };

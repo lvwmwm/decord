@@ -1,10 +1,10 @@
-// Module ID: 10110
-// Function ID: 10111
+// Module ID: 10151
+// Function ID: 10152
 // Name: WishlistItemCard
-// Dependencies: [19, 676, 21, 8217, 10111, 10113, 10114, 2]
+// Dependencies: [19, 676, 21, 8256, 10152, 10154, 10155, 2]
 // Exports: default
 
-// Module 10110 (WishlistItemCard)
+// Module 10151 (WishlistItemCard)
 import "noop";
 import { SKUProductLines } from "ME";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ export default function WishlistItemCard(arg0) {
   let wishlistOwnerId;
   ({ sku, isOwned, source, wishlistOwnerId } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  require(8217) /* apexExperiment */;
+  require(8256) /* apexExperiment */;
   const productLine = sku.productLine;
   if (SKUProductLines.COLLECTIBLES === productLine) {
     let obj = { sku: null, isOwned: null, source: null, wishlistOwnerId: null };
@@ -28,13 +28,13 @@ export default function WishlistItemCard(arg0) {
     obj[2] = source;
     obj[3] = wishlistOwnerId;
     const merged1 = Object.assign(merged);
-    return jsx(importDefault(10111), { sku: null, isOwned: null, source: null, wishlistOwnerId: null });
+    return jsx(importDefault(10152), { sku: null, isOwned: null, source: null, wishlistOwnerId: null });
   } else if (tmp5.PREMIUM === productLine) {
     obj = { sku: null, source: null };
     obj[0] = sku;
     obj[1] = source;
     const merged2 = Object.assign(merged);
-    return jsx(importDefault(10113), { sku: null, source: null });
+    return jsx(importDefault(10154), { sku: null, source: null });
   } else if (tmp5.SOCIAL_LAYER_GAME_ITEM === productLine) {
     let tmp6 = null;
     if (tmp4) {
@@ -44,8 +44,8 @@ export default function WishlistItemCard(arg0) {
       obj[2] = source;
       obj[3] = wishlistOwnerId;
       const merged3 = Object.assign(merged);
-      tmp6 = jsx(importDefault(10114), { sku: null, isOwned: null, source: null, wishlistOwnerId: null });
-      const tmp9 = importDefault(10114);
+      tmp6 = jsx(importDefault(10155), { sku: null, isOwned: null, source: null, wishlistOwnerId: null });
+      const tmp9 = importDefault(10155);
     }
     return tmp6;
   } else {

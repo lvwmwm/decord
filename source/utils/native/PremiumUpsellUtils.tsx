@@ -1,10 +1,10 @@
-// Module ID: 8367
-// Function ID: 8368
+// Module ID: 8406
+// Function ID: 8407
 // Name: usePremiumUpsellConfig
-// Dependencies: [19, 1922, 676, 1924, 21, 8368, 1236, 8369, 8370, 8371, 8372, 8373, 8374, 4643, 8695, 2007, 3966, 6913, 8629, 4166, 698, 4271, 8628, 2]
+// Dependencies: [19, 1922, 676, 1924, 21, 8407, 1236, 8408, 8409, 8410, 8411, 8412, 8413, 4683, 8734, 2007, 4007, 6952, 8668, 4207, 698, 4312, 8667, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
-// Module 8367 (usePremiumUpsellConfig)
+// Module 8406 (usePremiumUpsellConfig)
 import getBestActiveInput from "getBestActiveInput";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -21,7 +21,7 @@ function usePremiumUpsellConfig(initialUpsellKey, analyticsLocations2, analytics
   const _require = initialUpsellKey;
   let closure_1 = analyticsLocations2;
   const dependencyMap = analyticsLocation;
-  let obj = _require(6913);
+  let obj = _require(6952);
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let items = [, ];
   ({ GLOBAL_EMOJI: arr[0], UPLOAD: arr[1] } = closure_7);
@@ -232,7 +232,7 @@ export default {
   usePremiumUpsellConfig
 };
 export const getUpsellItems = function getUpsellItems() {
-  let obj = { key: constants.GLOBAL_EMOJI, image: importDefault(8368), activeTitle: null, passiveTitle: null, description: null };
+  let obj = { key: constants.GLOBAL_EMOJI, image: importDefault(8407), activeTitle: null, passiveTitle: null, description: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.gKtr8N);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -240,7 +240,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl3.format(require(1236) /* getSystemLocale */.t.rf7Ixp, {});
   const items = [obj, , , , , ];
-  obj = { key: constants.ANIMATED_EMOJI, image: importDefault(8369), activeTitle: null, passiveTitle: null, description: null };
+  obj = { key: constants.ANIMATED_EMOJI, image: importDefault(8408), activeTitle: null, passiveTitle: null, description: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl4.string(require(1236) /* getSystemLocale */.t.F6rmyq);
   const intl5 = require(1236) /* getSystemLocale */.intl;
@@ -248,7 +248,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl6 = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl6.format(require(1236) /* getSystemLocale */.t.JxTzzb, {});
   items[1] = obj;
-  obj = { key: constants.ANIMATED_AVATAR, image: importDefault(8370), activeTitle: null, passiveTitle: null, description: null };
+  obj = { key: constants.ANIMATED_AVATAR, image: importDefault(8409), activeTitle: null, passiveTitle: null, description: null };
   const intl7 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl7.string(require(1236) /* getSystemLocale */.t["tQh+gF"]);
   const intl8 = require(1236) /* getSystemLocale */.intl;
@@ -256,7 +256,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl9 = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl9.format(require(1236) /* getSystemLocale */.t["Tso/Fn"], {});
   items[2] = obj;
-  const obj1 = { key: constants.UPLOAD, image: importDefault(8371), activeTitle: null, passiveTitle: null, description: null };
+  const obj1 = { key: constants.UPLOAD, image: importDefault(8410), activeTitle: null, passiveTitle: null, description: null };
   const intl10 = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl10.string(require(1236) /* getSystemLocale */.t["1EOZqw"]);
   const intl11 = require(1236) /* getSystemLocale */.intl;
@@ -269,7 +269,7 @@ export const getUpsellItems = function getUpsellItems() {
   obj2[1] = intl14.string(require(1236) /* getSystemLocale */.t.EaBfeq);
   obj1[4] = intl12.format(require(1236) /* getSystemLocale */.t.DUT5IC, obj2);
   items[3] = obj1;
-  const obj3 = { key: constants.BADGE, image: importDefault(8372), activeTitle: null, passiveTitle: null, description: null };
+  const obj3 = { key: constants.BADGE, image: importDefault(8411), activeTitle: null, passiveTitle: null, description: null };
   const intl15 = require(1236) /* getSystemLocale */.intl;
   obj3[2] = intl15.string(require(1236) /* getSystemLocale */.t["602BK4"]);
   const intl16 = require(1236) /* getSystemLocale */.intl;
@@ -277,7 +277,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl17 = require(1236) /* getSystemLocale */.intl;
   obj3[4] = intl17.format(require(1236) /* getSystemLocale */.t["p7i+li"], {});
   items[4] = obj3;
-  const obj4 = { key: constants.APP_ICONS, image: importDefault(8373), activeTitle: null, passiveTitle: null, description: null };
+  const obj4 = { key: constants.APP_ICONS, image: importDefault(8412), activeTitle: null, passiveTitle: null, description: null };
   const intl18 = require(1236) /* getSystemLocale */.intl;
   obj4[2] = intl18.string(require(1236) /* getSystemLocale */.t["1B1Cyn"]);
   const intl19 = require(1236) /* getSystemLocale */.intl;

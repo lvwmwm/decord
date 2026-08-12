@@ -1,10 +1,10 @@
-// Module ID: 14813
-// Function ID: 14814
+// Module ID: 14871
+// Function ID: 14872
 // Name: UserSettingsDesignSystemToast
-// Dependencies: [19, 17, 21, 4303, 2]
+// Dependencies: [19, 17, 21, 4344, 2]
 // Exports: default
 
-// Module 14813 (UserSettingsDesignSystemToast)
+// Module 14871 (UserSettingsDesignSystemToast)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 9245
-// Function ID: 9246
+// Module ID: 9285
+// Function ID: 9286
 // Name: usePlayingGameActivities
-// Dependencies: [19, 1218, 4390, 4996, 589, 9246, 2]
+// Dependencies: [19, 1218, 4430, 5036, 589, 9286, 2]
 // Exports: default
 
-// Module 9245 (usePlayingGameActivities)
+// Module 9285 (usePlayingGameActivities)
 import noop from "noop";
 import fetchFingerprint from "fetchFingerprint";
 import sortActivity from "sortActivity";

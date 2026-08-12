@@ -1,9 +1,9 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 13013
+// Function ID: 13014
 // Name: resetAllState
-// Dependencies: [32, 4126, 4319, 589, 709, 2]
+// Dependencies: [32, 4167, 4360, 589, 709, 2]
 
-// Module 12954 (resetAllState)
+// Module 13013 (resetAllState)
 import _slicedToArray from "_slicedToArray";
 import handleConnectionOpen from "handleConnectionOpen";
 import updateVoiceState from "updateVoiceState";

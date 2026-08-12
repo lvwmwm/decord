@@ -1,10 +1,10 @@
-// Module ID: 4806
-// Function ID: 4807
+// Module ID: 4846
+// Function ID: 4847
 // Name: TextSpoilerIcon
-// Dependencies: [19, 21, 712, 4023, 4780, 2]
+// Dependencies: [19, 21, 712, 4064, 4820, 2]
 // Exports: TextSpoilerIcon
 
-// Module 4806 (TextSpoilerIcon)
+// Module 4846 (TextSpoilerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const TextSpoilerIcon = function TextSpoilerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4780) /* registerAsset */;
+  obj[0] = require(4820) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

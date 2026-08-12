@@ -1,8 +1,8 @@
-// Module ID: 4476
-// Function ID: 4477
-// Dependencies: [5, 4477, 4475, 2]
+// Module ID: 4516
+// Function ID: 4517
+// Dependencies: [5, 4517, 4515, 2]
 
-// Module 4476
+// Module 4516
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -38,7 +38,7 @@ export default {
               return obj;
             } else {
               let closure_0 = tmp4;
-              let obj2 = outer1_0(4477);
+              let obj2 = outer1_0(4517);
               dependencyMap = 1;
               c2 = 1;
               const obj1 = { value: null, done: false };
@@ -54,7 +54,7 @@ export default {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = outer1_0(4475);
+            obj = outer1_0(4515);
             if (arg1) {
               obj.ROBLOX_PROTOCOL_URL(closure_0);
             } else {

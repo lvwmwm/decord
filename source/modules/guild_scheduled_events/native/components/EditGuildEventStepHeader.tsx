@@ -1,10 +1,10 @@
-// Module ID: 9025
-// Function ID: 9026
+// Module ID: 9064
+// Function ID: 9065
 // Name: EditGuildEventStepHeader
-// Dependencies: [19, 17, 21, 4303, 4299, 2]
+// Dependencies: [19, 17, 21, 4344, 4340, 2]
 // Exports: default
 
-// Module 9025 (EditGuildEventStepHeader)
+// Module 9064 (EditGuildEventStepHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,7 +22,7 @@ export default function EditGuildEventStepHeader(children) {
   const tmp = callback2();
   let obj = { style: tmp.header, children: null };
   obj = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: children.title };
-  const items = [callback(require(4299) /* Text */.Text, obj), ];
+  const items = [callback(require(4340) /* Text */.Text, obj), ];
   let tmp4Result = null;
   if (null != subtitle) {
     tmp4Result = null;
@@ -30,7 +30,7 @@ export default function EditGuildEventStepHeader(children) {
       obj = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
       obj[0] = tmp.headerSubtitle;
       obj[3] = subtitle;
-      tmp4Result = callback(require(4299) /* Text */.Text, obj);
+      tmp4Result = callback(require(4340) /* Text */.Text, obj);
     }
   }
   items[1] = tmp4Result;

@@ -1,10 +1,10 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 11934
+// Function ID: 11935
 // Name: useHasAllocateBoostPermission
-// Dependencies: [1910, 3948, 505, 589, 2]
+// Dependencies: [1910, 3989, 505, 589, 2]
 // Exports: default, getHasAllocateBoostPermission
 
-// Module 11877 (useHasAllocateBoostPermission)
+// Module 11934 (useHasAllocateBoostPermission)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";

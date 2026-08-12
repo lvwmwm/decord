@@ -1,19 +1,19 @@
-// Module ID: 12468
-// Function ID: 12469
+// Module ID: 12531
+// Function ID: 12532
 // Name: usePageHeights
-// Dependencies: [32, 19, 4042, 1493, 1628, 2]
+// Dependencies: [32, 19, 4083, 1493, 1628, 2]
 // Exports: usePageHeights, usePagerFillHeight, usePagesHeightStyle
 
-// Module 12468 (usePageHeights)
+// Module 12531 (usePageHeights)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
 const require = arg1;
 let closure_5 = { code: "function useSegmentedPagesHeightTsx1(){const{pageHeights,visiblePageRange,fillHeight}=this.__closure;var _heights$lo,_heights$hi;const heights=pageHeights.get();const[lo,hi]=visiblePageRange.get();const contentHeight=Math.max((_heights$lo=heights[lo])!==null&&_heights$lo!==void 0?_heights$lo:0,(_heights$hi=heights[hi])!==null&&_heights$hi!==void 0?_heights$hi:0);const height=Math.max(contentHeight,fillHeight);return height>0?{height:height}:{};}" };
-let result = require("module_4042").fileFinishedImporting("modules/user_profile/native/useSegmentedPagesHeight.tsx");
+let result = require("module_4083").fileFinishedImporting("modules/user_profile/native/useSegmentedPagesHeight.tsx");
 
 export const usePageHeights = function usePageHeights() {
-  let obj = sharedValue(4042);
+  let obj = sharedValue(4083);
   sharedValue = obj.useSharedValue([]);
   let closure_1 = React.useRef([]);
   let items = [sharedValue];

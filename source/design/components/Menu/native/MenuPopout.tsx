@@ -1,10 +1,10 @@
-// Module ID: 13394
-// Function ID: 13395
+// Module ID: 13451
+// Function ID: 13452
 // Name: MenuPopout
-// Dependencies: [32, 19, 21, 8607, 4042, 10029, 13391, 13392, 13393, 2]
+// Dependencies: [32, 19, 21, 8646, 4083, 10070, 13448, 13449, 13450, 2]
 // Exports: MenuPopout
 
-// Module 13394 (MenuPopout)
+// Module 13451 (MenuPopout)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";
@@ -59,8 +59,8 @@ export const MenuPopout = function MenuPopout(onRequestOpen) {
       let obj = { children: null };
       obj = { showIconFirst: true };
       const merged = Object.assign(arg0);
-      obj[0] = callback2(callback(13393).MenuItem, obj);
-      return callback2(callback(13392).MenuGroup, obj, "chat-context-menu-group-" + arg1);
+      obj[0] = callback2(callback(13450).MenuItem, obj);
+      return callback2(callback(13449).MenuGroup, obj, "chat-context-menu-group-" + arg1);
     });
     return offset(menuItems(onRequestClose[6]).Menu, obj);
   }, items1);

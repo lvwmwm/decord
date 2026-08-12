@@ -1,10 +1,10 @@
-// Module ID: 15318
-// Function ID: 15319
+// Module ID: 15375
+// Function ID: 15376
 // Name: ServerPreviewPill
-// Dependencies: [19, 17, 21, 4303, 712, 4299, 1236, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 4340, 1236, 2]
 // Exports: default
 
-// Module 15318 (ServerPreviewPill)
+// Module 15375 (ServerPreviewPill)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -25,6 +25,6 @@ export default function ServerPreviewPill() {
   obj = { variant: "text-xs/bold", style: tmp.text, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.KNhFgD);
-  obj[2] = jsx(require(4299) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text, children: null });
+  obj[2] = jsx(require(4340) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text, children: null });
   return <View variant="text-xs/bold" style={tmp.text}>{null}</View>;
 };

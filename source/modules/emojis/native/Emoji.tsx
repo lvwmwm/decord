@@ -1,10 +1,10 @@
-// Module ID: 5360
-// Function ID: 5361
+// Module ID: 5399
+// Function ID: 5400
 // Name: Emoji
-// Dependencies: [19, 17, 1302, 21, 500, 3965, 1297, 5268, 1363, 5361, 5362, 2]
+// Dependencies: [19, 17, 1302, 21, 500, 4006, 1297, 5307, 1363, 5400, 5401, 2]
 // Exports: default
 
-// Module 5360 (Emoji)
+// Module 5399 (Emoji)
 import "noop";
 import { View } from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
@@ -28,7 +28,7 @@ export default function Emoji(arg0) {
   if (obj.isAndroid()) {
     uRL = src;
     if (null == src) {
-      let obj1 = importDefault(3965);
+      let obj1 = importDefault(4006);
       uRL = obj1.getURL(name);
     }
   }
@@ -38,11 +38,11 @@ export default function Emoji(arg0) {
       if ("" !== uRL) {
         obj = { resizeMode: "contain", style: null, placeholder: null, source: null };
         obj[1] = fastImageStyle;
-        const tmp10 = importDefault(5268);
+        const tmp10 = importDefault(5307);
         if (tmpResult.isThemeDark(theme.theme)) {
-          let tmp9Result = tmp9(5361);
+          let tmp9Result = tmp9(5400);
         } else {
-          tmp9Result = tmp9(5362);
+          tmp9Result = tmp9(5401);
         }
         obj[2] = tmp9Result;
         obj1 = { uri: null };

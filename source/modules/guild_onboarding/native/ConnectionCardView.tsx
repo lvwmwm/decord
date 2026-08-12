@@ -1,10 +1,10 @@
-// Module ID: 5743
-// Function ID: 5744
+// Module ID: 5782
+// Function ID: 5783
 // Name: ConnectionCardView
-// Dependencies: [19, 17, 21, 4303, 712, 4299, 1236, 4264, 4714, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 4340, 1236, 4305, 4754, 2]
 // Exports: default
 
-// Module 5743 (ConnectionCardView)
+// Module 5782 (ConnectionCardView)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -45,7 +45,7 @@ export default function ConnectionCardView(description) {
   obj = { style: tmp.icon, children: icon };
   const items = [callback(closure_2, obj), ];
   const obj1 = { style: tmp.textContent, children: null };
-  const items1 = [callback(require(4299) /* Text */.Text, { variant: "text-md/medium", color: "text-strong", children: displayName }), ];
+  const items1 = [callback(require(4340) /* Text */.Text, { variant: "text-md/medium", color: "text-strong", children: displayName }), ];
   let tmp4Result = null != description;
   if (tmp4Result) {
     tmp4Result = description.length > 0;
@@ -53,7 +53,7 @@ export default function ConnectionCardView(description) {
   if (tmp4Result) {
     const obj2 = { variant: "text-sm/normal", color: "text-subtle", children: null };
     obj2[2] = description;
-    tmp4Result = tmp4(tmp5(4299).Text, obj2);
+    tmp4Result = tmp4(tmp5(4340).Text, obj2);
   }
   items1[1] = tmp4Result;
   obj1[1] = items1;
@@ -68,7 +68,7 @@ export default function ConnectionCardView(description) {
     const obj4 = { variant: "text-sm/medium", color: "text-feedback-positive", children: null };
     const intl2 = tmp5(1236).intl;
     obj4[2] = intl2.string(tmp5(1236).t["LV+CXH"]);
-    const items3 = [tmp4(tmp5(4299).Text, obj4), tmp4(tmp5(4264).CircleCheckIcon, { size: "sm", color: "status-positive" })];
+    const items3 = [tmp4(tmp5(4340).Text, obj4), tmp4(tmp5(4305).CircleCheckIcon, { size: "sm", color: "status-positive" })];
     obj3[1] = items3;
     tmp4Result = tmp2(tmp3, obj3);
   } else {
@@ -77,7 +77,7 @@ export default function ConnectionCardView(description) {
     const intl = tmp5(1236).intl;
     obj5[3] = intl.string(tmp5(1236).t.S0W8Z5);
     obj5[4] = !canConnect;
-    tmp4Result = tmp4(tmp5(4714).Button, obj5);
+    tmp4Result = tmp4(tmp5(4754).Button, obj5);
   }
   items2[1] = tmp4Result;
   obj[1] = items2;

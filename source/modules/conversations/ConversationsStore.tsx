@@ -1,9 +1,9 @@
-// Module ID: 7058
-// Function ID: 7059
+// Module ID: 7097
+// Function ID: 7098
 // Name: removePendingListFetch
-// Dependencies: [1218, 1391, 3957, 1979, 1922, 7059, 7060, 1405, 11, 4523, 7061, 1370, 3959, 589, 709, 2]
+// Dependencies: [1218, 1391, 3998, 1979, 1922, 7098, 7099, 1405, 11, 4563, 7100, 1370, 4000, 589, 709, 2]
 
-// Module 7058 (removePendingListFetch)
+// Module 7097 (removePendingListFetch)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
@@ -104,7 +104,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
         while (tmp4 !== undefined) {
           let tmp8 = require;
           let tmp9 = dependencyMap;
-          let obj = require(4523) /* createMinimalMessageRecord */;
+          let obj = require(4563) /* createMinimalMessageRecord */;
           let messageRecord = obj.createMessageRecord(tmp6);
           let tmp11 = messageRecord;
           let arr = items1.push(messageRecord);
@@ -137,7 +137,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
             obj = { conversationId: null, moderationLabel: null, message: null };
             let tmp23 = require;
             let tmp24 = dependencyMap;
-            let obj4 = require(4523) /* createMinimalMessageRecord */;
+            let obj4 = require(4563) /* createMinimalMessageRecord */;
             obj[2] = obj4.createMessageRecord(tmp21);
             let result1 = messageMetadataByMessageId4.set(tmp21.id, obj);
           }
@@ -202,7 +202,7 @@ function handleReaction(channelId) {
       } else {
         return false;
       }
-      obj = messageId(3959);
+      obj = messageId(4000);
     }
   }
 }
@@ -574,7 +574,7 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(7061).mapConversation);
+      const mapped = rawConversations.map(set(7100).mapConversation);
       const found = mapped.filter(set(1370).isNotNullish);
       const peekResult = tmp3.peek(channelId);
       if (isJump) {
@@ -1142,7 +1142,7 @@ obj = {
           }
           let flag = null != message;
           if (flag) {
-            const updateMessageRecordResult = id(4523).updateMessageRecord(value.message, message);
+            const updateMessageRecordResult = id(4563).updateMessageRecord(value.message, message);
             value.message = updateMessageRecordResult;
             value = null;
             if (null != value.conversationId) {
@@ -1166,7 +1166,7 @@ obj = {
                 flag = true;
               }
             }
-            const obj = id(4523);
+            const obj = id(4563);
           }
           return flag;
         }

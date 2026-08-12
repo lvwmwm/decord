@@ -1,10 +1,10 @@
-// Module ID: 9413
-// Function ID: 9414
+// Module ID: 9453
+// Function ID: 9454
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 1994, 1302, 21, 4303, 712, 1236, 589, 1363, 6905, 4299, 2]
+// Dependencies: [19, 17, 1994, 1302, 21, 4344, 712, 1236, 589, 1363, 6944, 4340, 2]
 // Exports: default
 
-// Module 9413 (LimitedTimeBadge)
+// Module 9453 (LimitedTimeBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,7 +34,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
   const items1 = [_getSystemLocale];
   const items2 = ["en-US", "en-GB"];
   const hasItem = items2.includes(obj1.useStateFromStores(items1, () => locale.locale));
-  ({ days, hours } = importDefault(6905)(unpublishedAt.unpublishedAt, 1000, undefined, true));
+  ({ days, hours } = importDefault(6944)(unpublishedAt.unpublishedAt, 1000, undefined, true));
   if (hasItem) {
     if (days > 1) {
       const intl6 = tmp2(1236).intl;
@@ -81,7 +81,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
     obj3[0] = days;
     obj2[2] = intl7.formatToPlainString(tmp2(1236).t.TlZULM, obj3);
     obj2[4] = sum;
-    obj1[1] = jsx(tmp2(4299).Text, { color: null, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null });
+    obj1[1] = jsx(tmp2(4340).Text, { color: null, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null });
     return <View style={null}>{null}</View>;
   }
 };

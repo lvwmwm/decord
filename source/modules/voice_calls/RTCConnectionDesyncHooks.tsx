@@ -1,10 +1,10 @@
-// Module ID: 15375
-// Function ID: 15376
+// Module ID: 15431
+// Function ID: 15432
 // Name: useEnsureSyncedChannelVoiceStates
-// Dependencies: [32, 19, 4316, 4320, 1218, 1391, 1990, 13023, 4375, 1922, 4319, 12, 589, 1370, 10646, 2]
+// Dependencies: [32, 19, 4357, 4361, 1218, 1391, 1990, 13082, 4415, 1922, 4360, 12, 589, 1370, 10699, 2]
 // Exports: useDesyncedChannelParticipants, useEnsureSyncedChannelParticipants, useEnsureSyncedChannelVoiceStates, useIsRTCDisconnectedUIVisible
 
-// Module 15375 (useEnsureSyncedChannelVoiceStates)
+// Module 15431 (useEnsureSyncedChannelVoiceStates)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getParticipants from "getParticipants";

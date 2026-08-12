@@ -1,9 +1,9 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 14740
+// Function ID: 14741
 // Name: _handleEnableSystemNotification
-// Dependencies: [5, 17, 8084, 676, 4516, 11782, 11790, 698, 10779, 10452, 1236, 2]
+// Dependencies: [5, 17, 8123, 676, 4556, 11839, 11847, 698, 10832, 10493, 1236, 2]
 
-// Module 14682 (_handleEnableSystemNotification)
+// Module 14740 (_handleEnableSystemNotification)
 import closure_3 from "EventActionType";
 import { NativeModules } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -64,7 +64,7 @@ function _handleEnableSystemNotification() {
         } else {
           closure_0 = arg1;
           if (closure_0 === constants2.UNDETERMINED) {
-            let obj3 = callback(11790);
+            let obj3 = callback(11847);
             const permission = obj3.requestPermission((permission_granted) => {
               let obj = tmp2(table[7]);
               obj = { action_type: constants2.ALLOW_TO_REQUEST, action_location: constants3.NOTIFICATION_SETTING, permission_granted };
@@ -83,7 +83,7 @@ function _handleEnableSystemNotification() {
             obj3 = { setting_type: "os", current_status: null };
             obj3[1] = num3;
             obj.track(constants.NOTIFICATION_SETTINGS_CLICKED, obj3);
-            obj2 = callback(10779);
+            obj2 = callback(10832);
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;

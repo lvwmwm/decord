@@ -1,10 +1,10 @@
-// Module ID: 10140
-// Function ID: 10141
+// Module ID: 10181
+// Function ID: 10182
 // Name: useOpenProfileSettings
-// Dependencies: [19, 1922, 10141, 676, 685, 8266, 10142, 10143, 6018, 2]
+// Dependencies: [19, 1922, 10182, 676, 685, 8305, 10183, 10184, 6057, 2]
 // Exports: default
 
-// Module 10140 (useOpenProfileSettings)
+// Module 10181 (useOpenProfileSettings)
 import "mergeGuildAvatar";
 import zustandStore from "zustandStore";
 import { UserSettingsSections } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 15572
-// Function ID: 15573
+// Module ID: 15628
+// Function ID: 15629
 // Name: renderChannelPressableWrapper
-// Dependencies: [19, 17, 21, 9801, 2]
+// Dependencies: [19, 17, 21, 9842, 2]
 // Exports: renderChannelPressableWrapper
 
-// Module 15572 (renderChannelPressableWrapper)
+// Module 15628 (renderChannelPressableWrapper)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ export const renderChannelPressableWrapper = function renderChannelPressableWrap
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(9801) /* getLayoutStyles */;
+  let obj = require(9842) /* getLayoutStyles */;
   const layout2 = obj.getLayoutStyles(layout, launchpad).layout;
   if (isThread) {
     let marginThread = layout2.marginThread;

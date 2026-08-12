@@ -1,10 +1,10 @@
-// Module ID: 7641
-// Function ID: 7642
+// Module ID: 7680
+// Function ID: 7681
 // Name: BuyNitroMarketing
-// Dependencies: [19, 17, 1924, 21, 4303, 712, 7642, 1499, 7644, 7651, 7650, 7655, 5728, 7645, 7649, 7734, 7744, 7745, 7747, 7748, 7756, 12683, 12687, 12688, 12689, 2]
+// Dependencies: [19, 17, 1924, 21, 4344, 712, 7681, 1499, 7683, 7690, 7689, 7694, 5767, 7684, 7688, 7773, 7783, 7784, 7786, 7787, 7795, 12742, 12746, 12747, 12748, 2]
 // Exports: default
 
-// Module 7641 (BuyNitroMarketing)
+// Module 7680 (BuyNitroMarketing)
 import BuyNitroMarketingHeader from "BuyNitroMarketingHeader";
 import { View } from "BuyNitroPerk";
 import { PremiumTypes } from "GuildFeatures";

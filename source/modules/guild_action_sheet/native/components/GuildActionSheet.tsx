@@ -1,8 +1,8 @@
-// Module ID: 13329
-// Function ID: 13330
-// Dependencies: [19, 17, 21, 4303, 712, 1628, 7406, 5397, 5399, 500, 13324, 13330, 13267, 13331, 13334, 5712, 2]
+// Module ID: 13386
+// Function ID: 13387
+// Dependencies: [19, 17, 21, 4344, 712, 1628, 7445, 5436, 5438, 500, 13381, 13387, 13324, 13388, 13391, 5751, 2]
 
-// Module 13329
+// Module 13386
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -27,7 +27,7 @@ const memoResult = require("noop").memo(function GuildActionSheet(arg0) {
     expanded = false;
   }
   const tmp = callback();
-  let obj = require(7406) /* useBottomSheetRef */;
+  let obj = require(7445) /* useBottomSheetRef */;
   bottomSheetRef = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
   obj = { ref: bottomSheetRef, handleDisabled: true, showGradient: true, scrollable: true, startExpanded: expanded, children: null };
@@ -37,15 +37,15 @@ const memoResult = require("noop").memo(function GuildActionSheet(arg0) {
     num = 16;
   }
   obj[2] = { paddingBottom: importDefault(1628)().bottom + num };
-  const items = [closure_4(importDefault(13324), { guild }), closure_4(importDefault(13330), { guild }), , ];
+  const items = [closure_4(importDefault(13381), { guild }), closure_4(importDefault(13387), { guild }), , ];
   const obj1 = { style: tmp.actions, children: null };
-  const items1 = [closure_4(require(13267) /* HideMutedChannelsOption */.GuildUnreadAction, { guild }), closure_4(importDefault(13331), { guild }), closure_4(require(13267) /* HideMutedChannelsOption */.GuildActionSheetPrimaryActions, { guild }), closure_4(require(13267) /* HideMutedChannelsOption */.GuildActionSheetSecondaryActions, { guild }), closure_4(require(13267) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild }), closure_4(importDefault(13334), { guildId: guild.id })];
+  const items1 = [closure_4(require(13324) /* HideMutedChannelsOption */.GuildUnreadAction, { guild }), closure_4(importDefault(13388), { guild }), closure_4(require(13324) /* HideMutedChannelsOption */.GuildActionSheetPrimaryActions, { guild }), closure_4(require(13324) /* HideMutedChannelsOption */.GuildActionSheetSecondaryActions, { guild }), closure_4(require(13324) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild }), closure_4(importDefault(13391), { guildId: guild.id })];
   obj1[1] = items1;
   items[2] = closure_5(View, obj1);
-  items[3] = closure_4(require(5712) /* ActionSheetHeaderBar */.ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose });
+  items[3] = closure_4(require(5751) /* ActionSheetHeaderBar */.ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose });
   obj[3] = items;
-  obj[5] = closure_5(require(5399) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return closure_4(require(5397) /* Background */.BottomSheet, obj);
+  obj[5] = closure_5(require(5438) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  return closure_4(require(5436) /* Background */.BottomSheet, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheet.tsx");
 

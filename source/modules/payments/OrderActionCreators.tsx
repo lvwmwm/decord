@@ -1,10 +1,10 @@
-// Module ID: 5864
-// Function ID: 5865
+// Module ID: 5903
+// Function ID: 5904
 // Name: _signOrder
-// Dependencies: [5, 676, 3, 3988, 530, 3981, 2]
+// Dependencies: [5, 676, 3, 4029, 530, 4022, 2]
 // Exports: fetchOrderEntitlements, getOrder, signOrder
 
-// Module 5864 (_signOrder)
+// Module 5903 (_signOrder)
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext";
 import { Endpoints } from "ME";
 import "set";
@@ -58,7 +58,7 @@ function _signOrder() {
               let c4;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

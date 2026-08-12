@@ -1,10 +1,10 @@
-// Module ID: 5963
-// Function ID: 5964
+// Module ID: 6002
+// Function ID: 6003
 // Name: VoiceChannelEffectSentLocation
-// Dependencies: [5176, 1979, 5964, 5965, 676, 4750, 12, 5966, 530, 5989, 5748, 4756, 2]
+// Dependencies: [5215, 1979, 6003, 6004, 676, 4790, 12, 6005, 530, 6028, 5787, 4796, 2]
 // Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEffect
 
-// Module 5963 (VoiceChannelEffectSentLocation)
+// Module 6002 (VoiceChannelEffectSentLocation)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import handleConnectionOpen from "handleConnectionOpen";
 import initialize from "initialize";
@@ -33,16 +33,16 @@ export const sendVoiceChannelCustomCallSoundEffect = function sendVoiceChannelCu
       abortController.abort();
     }
   }, 1000);
-  obj[1] = abortController(5966).sampleAnimationId(BASIC, abortController(5966).CUSTOM_CALL_SOUND_ANIMATION_RANGE);
+  obj[1] = abortController(6005).sampleAnimationId(BASIC, abortController(6005).CUSTOM_CALL_SOUND_ANIMATION_RANGE);
   const HTTP = tmp2(530).HTTP;
   obj = { url: closure_7.CUSTOM_CALL_SOUNDS(id), body: obj, signal: abortController.signal, onRequestProgress: throttleResult, rejectWithError: true };
-  const tmp2Result = abortController(5966);
+  const tmp2Result = abortController(6005);
   HTTP.post(obj).then(closure_8, () => {
 
   });
   const postResult = HTTP.post(obj);
-  const items = [abortController(5748).CHANNEL_CALL];
-  abortController(5989)(items, arg2, c4, abortController(4756).AnalyticsSoundType.ENTRY);
+  const items = [abortController(5787).CHANNEL_CALL];
+  abortController(6028)(items, arg2, c4, abortController(4796).AnalyticsSoundType.ENTRY);
 };
 export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundboardEffect(channelId, emojiId, arg2, arg3, arg4) {
   let customEmojiById = null;
@@ -90,5 +90,5 @@ export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundbo
   if (arg3 == null) {
     items = [];
   }
-  abortController(5989)(items, arg2, emojiId, abortController(4756).AnalyticsSoundType.DEFAULT, arg4);
+  abortController(6028)(items, arg2, emojiId, abortController(4796).AnalyticsSoundType.DEFAULT, arg4);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8315
-// Function ID: 8316
+// Module ID: 8354
+// Function ID: 8355
 // Name: preloadUserBannerImage
-// Dependencies: [1435, 3993, 2]
+// Dependencies: [1435, 4034, 2]
 // Exports: default
 
-// Module 8315 (preloadUserBannerImage)
+// Module 8354 (preloadUserBannerImage)
 const result = require("set").fileFinishedImporting("modules/user_profile/preloadUserBannerImage.tsx");
 
 export default function preloadUserBannerImage(user) {
@@ -32,7 +32,7 @@ export default function preloadUserBannerImage(user) {
           obj[0] = id;
           obj[1] = arg1;
           obj[2] = user.guild_member_profile.banner;
-          const GifAutoPlay = require(3993) /* explicitContentFromProto */.GifAutoPlay;
+          const GifAutoPlay = require(4034) /* explicitContentFromProto */.GifAutoPlay;
           obj[3] = GifAutoPlay.getSetting();
           guildMemberBannerURL = obj.getGuildMemberBannerURL(obj);
         }
@@ -47,7 +47,7 @@ export default function preloadUserBannerImage(user) {
           obj = { id: null, banner: null, canAnimate: null, size: 600 };
           obj[0] = id;
           obj[1] = user.user_profile.banner;
-          const GifAutoPlay2 = require(3993) /* explicitContentFromProto */.GifAutoPlay;
+          const GifAutoPlay2 = require(4034) /* explicitContentFromProto */.GifAutoPlay;
           obj[2] = GifAutoPlay2.getSetting();
           guildMemberBannerURL = require(1435) /* getAvatarURL */.getUserBannerURL(obj);
           const obj3 = require(1435) /* getAvatarURL */;

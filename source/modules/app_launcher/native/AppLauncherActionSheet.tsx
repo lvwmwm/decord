@@ -1,10 +1,10 @@
-// Module ID: 15854
-// Function ID: 15855
+// Module ID: 15910
+// Function ID: 15911
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1498, 21, 4042, 9554, 9555, 9556, 5397, 11471, 11584, 5710, 2]
+// Dependencies: [32, 19, 1498, 21, 4083, 9594, 9595, 9596, 5436, 11528, 11641, 5749, 2]
 // Exports: useAppLauncherActionSheet
 
-// Module 15854 (AppLauncherActionSheet)
+// Module 15910 (AppLauncherActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";

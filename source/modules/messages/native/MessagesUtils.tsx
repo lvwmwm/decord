@@ -1,10 +1,10 @@
-// Module ID: 8616
-// Function ID: 8617
+// Module ID: 8655
+// Function ID: 8656
 // Name: getVisibleMessages
-// Dependencies: [32, 5, 8617, 7057, 1391, 1990, 5131, 4521, 4395, 3948, 4315, 1922, 8044, 676, 4491, 4525, 1954, 5914, 7224, 4790, 3937, 4021, 1236, 8618, 8619, 1945, 7223, 3959, 4272, 4273, 8418, 7225, 7227, 4498, 5756, 4486, 11, 4020, 11019, 9, 12, 500, 1626, 698, 11013, 6920, 5164, 4235, 10467, 10993, 2]
+// Dependencies: [32, 5, 8656, 7096, 1391, 1990, 5171, 4561, 4435, 3989, 4356, 1922, 8083, 676, 4531, 4565, 1954, 5953, 7263, 4830, 3978, 4062, 1236, 8657, 8658, 1945, 7262, 4000, 4313, 4314, 8457, 7264, 7266, 4538, 5795, 4526, 11, 4061, 11072, 9, 12, 500, 1626, 698, 11066, 6959, 5204, 4276, 10508, 11046, 2]
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, maybeRescrollToMessageId, recordTimings, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
-// Module 8616 (getVisibleMessages)
+// Module 8655 (getVisibleMessages)
 import trackForumChannelSeenBatch from "trackForumChannelSeenBatch";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { updateShouldShowJumpToPresentButton as closure_5 } from "updateChatInputContainerHeight";
@@ -260,10 +260,10 @@ export const getLongPressSelectedMedia = function getLongPressSelectedMedia(mess
       obj[1] = tmp13;
       let str3 = "video";
       if (!obj9.isVideoFile(tmp13.filename)) {
-        let tmp18Result = tmp18(4491);
+        let tmp18Result = tmp18(4531);
         let str4 = "audio";
         if (!tmp18Result.isAudioFile(tmp13.filename)) {
-          tmp18Result = tmp18(4491);
+          tmp18Result = tmp18(4531);
           let str5 = "file";
           if (tmp18Result.isImageFile(tmp13.filename)) {
             str5 = "image";
@@ -276,7 +276,7 @@ export const getLongPressSelectedMedia = function getLongPressSelectedMedia(mess
       ({ url: obj8[3], content_type } = tmp13);
       obj[4] = content_type;
       tmp17 = obj;
-      obj9 = require(4491) /* urlMatchesFileExtension */;
+      obj9 = require(4531) /* urlMatchesFileExtension */;
     }
     return tmp17;
   } else if ("embed" === mediaType) {
@@ -344,8 +344,8 @@ export const getLongPressSelectedMedia = function getLongPressSelectedMedia(mess
     if (null == tmpResult) {
       return null;
     } else {
-      const obj12 = require(4525) /* flattenComponents */;
-      const value = require(4525) /* flattenComponents */.flattenComponents(obj.components).get(tmpResult);
+      const obj12 = require(4565) /* flattenComponents */;
+      const value = require(4565) /* flattenComponents */.flattenComponents(obj.components).get(tmpResult);
       if (null == value) {
         return null;
       } else if (value.type === tmp20(1954).ComponentType.MEDIA_GALLERY) {
@@ -368,7 +368,7 @@ export const getLongPressSelectedMedia = function getLongPressSelectedMedia(mess
       } else {
         return null;
       }
-      const flattenComponentsResult = require(4525) /* flattenComponents */.flattenComponents(obj.components);
+      const flattenComponentsResult = require(4565) /* flattenComponents */.flattenComponents(obj.components);
     }
   } else {
     return null;
@@ -377,14 +377,14 @@ export const getLongPressSelectedMedia = function getLongPressSelectedMedia(mess
 export const toObscuredMedia = function toObscuredMedia(sourceType) {
   if ("attachment" === sourceType.sourceType) {
     let obj = { type: null, media: null };
-    obj[0] = require(5914) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Attachment;
+    obj[0] = require(5953) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Attachment;
     obj[1] = sourceType.source;
     let tmp = obj;
   } else {
     tmp = null;
     if ("embed" === sourceType.sourceType) {
       obj = { type: null, media: null };
-      obj[0] = require(5914) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Embed;
+      obj[0] = require(5953) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Embed;
       obj[1] = sourceType.source;
       tmp = obj;
     }
@@ -397,7 +397,7 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
     flag = false;
   }
   if (MESSAGE === undefined) {
-    MESSAGE = require(7224) /* checkReactionResponse */.ReactionLocations.MESSAGE;
+    MESSAGE = require(7263) /* checkReactionResponse */.ReactionLocations.MESSAGE;
   }
   const guildId = channel.getGuildId();
   currentUser = currentUser.getCurrentUser();
@@ -410,7 +410,7 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
   }
   let result = null != guildId;
   if (result) {
-    let obj = require(4790) /* shouldShowMembershipVerificationGate */;
+    let obj = require(4830) /* shouldShowMembershipVerificationGate */;
     result = obj.shouldShowMembershipVerificationGate(guildId);
   }
   let member = null;
@@ -421,10 +421,10 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
     }
   }
   let tmp36Result = dependencyMap;
-  let obj1 = require(3937) /* isCommunicationDisabled */;
+  let obj1 = require(3978) /* isCommunicationDisabled */;
   const result1 = obj1.isMemberCommunicationDisabled(member);
   if (channel.isArchivedLockedThread()) {
-    const obj15 = importDefault(4021);
+    const obj15 = importDefault(4062);
     const tmp36 = importDefault;
     const intl = tmp12(1236).intl;
     const string = intl.string;
@@ -436,7 +436,7 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
     }
     obj = { key: "ARCHIVED_POST_REACTIONS_DISABLED_TOAST", content: null, icon: null };
     obj[1] = stringResult;
-    tmp36Result = tmp36(8618);
+    tmp36Result = tmp36(8657);
     obj[2] = tmp36Result;
     t = obj15.open(obj);
     isForumPostResult = channel.isForumPost();
@@ -445,15 +445,15 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
       if (true === !reaction.me_burst) {
         let tmp12Result = tmp12(1945);
         if (!tmp12Result.isPremium(currentUser)) {
-          tmp12Result = tmp12(8619);
+          tmp12Result = tmp12(8658);
           return tmp12Result.handleOutOfSuperReactions();
         }
       }
     }
-    const ReactionTypes = tmp12(7223).ReactionTypes;
+    const ReactionTypes = tmp12(7262).ReactionTypes;
     if (tmp12Result1.isMeReaction(reaction.me, reaction.me_burst, tmp23)) {
-      const result2 = tmp12(4272).triggerHapticFeedback(importDefault(4273).IMPACT_LIGHT);
-      const tmp12Result2 = tmp12(4272);
+      const result2 = tmp12(4313).triggerHapticFeedback(importDefault(4314).IMPACT_LIGHT);
+      const tmp12Result2 = tmp12(4313);
       obj = { channelId: null, messageId: null, emoji: null, location: null, options: null };
       obj[0] = channel.id;
       obj[1] = messageId;
@@ -462,18 +462,18 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
       obj1 = { burst: null };
       obj1[0] = flag;
       obj[4] = obj1;
-      tmp12(7224).removeReaction(obj);
+      tmp12(7263).removeReaction(obj);
     } else {
       if (!result) {
         if (channel.isPrivate()) {
           if (!result1) {
-            const tmp12Result4 = tmp12(7224);
+            const tmp12Result4 = tmp12(7263);
             const obj2 = { burst: null };
             obj2[0] = flag;
             tmp12Result4.addReaction(channel.id, messageId, reaction.emoji, MESSAGE, obj2);
             if (!flag) {
-              const result3 = tmp12(4272).triggerHapticFeedback(importDefault(4273).IMPACT_LIGHT);
-              const tmp12Result5 = tmp12(4272);
+              const result3 = tmp12(4313).triggerHapticFeedback(importDefault(4314).IMPACT_LIGHT);
+              const tmp12Result5 = tmp12(4313);
             }
           }
         }
@@ -481,22 +481,22 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
       if (result) {
         const guildId1 = channel.getGuildId();
         if (null != guildId1) {
-          return tmp12(8418).openMemberVerificationModal(guildId1);
+          return tmp12(8457).openMemberVerificationModal(guildId1);
         }
       }
     }
-    tmp12Result1 = tmp12(3959);
+    tmp12Result1 = tmp12(4000);
     tmp23 = flag ? ReactionTypes.BURST : ReactionTypes.NORMAL;
   } else {
-    const tmp12Result7 = tmp12(8619);
+    const tmp12Result7 = tmp12(8658);
     const obj3 = { burst: null };
     obj3[0] = flag;
     const result4 = tmp12Result7.handleAddNewReactions(channel, messageId, MESSAGE, obj3);
   }
 };
 export const handleToggleFollowForumPost = function handleToggleFollowForumPost(channel, outer1_19) {
-  const result = require(4272) /* HapticFeedbackTypes */.triggerHapticFeedback(importDefault(4273).IMPACT_LIGHT);
-  const obj2 = importDefault(7225);
+  const result = require(4313) /* HapticFeedbackTypes */.triggerHapticFeedback(importDefault(4314).IMPACT_LIGHT);
+  const obj2 = importDefault(7264);
   if (outer1_19) {
     obj2.leaveThread(channel, "iOS Forum Toolbar");
   } else {
@@ -518,36 +518,36 @@ export const handleCopyLinkForumPost = function handleCopyLinkForumPost(guildId,
     flag = false;
   }
   let obj = { postId: id, location };
-  const result = require(7227) /* trackForumChannelSeenBatch */.trackForumPostLinkCopied(obj);
+  const result = require(7266) /* trackForumChannelSeenBatch */.trackForumPostLinkCopied(obj);
   if (flag) {
-    let tmp4Result = tmp4(4498);
+    let tmp4Result = tmp4(4538);
     obj = { media_post_id: null };
     obj[0] = id;
     tmp4Result.trackWithMetadata(constants3.MEDIA_POST_SHARE_PROMPT_CLICKED, obj);
   }
-  tmp4Result = tmp4(4272);
-  const result1 = tmp4Result.triggerHapticFeedback(importDefault(4273).IMPACT_LIGHT);
+  tmp4Result = tmp4(4313);
+  const result1 = tmp4Result.triggerHapticFeedback(importDefault(4314).IMPACT_LIGHT);
   if (null == channel) {
-    const tmp4Result1 = tmp4(5756);
+    const tmp4Result1 = tmp4(5795);
     let result2;
     if (true === flag) {
       result2 = tmp9(11).castChannelIdAsMessageId(id);
       const tmp9Result = tmp9(11);
     }
-    tmp4Result1.copy(tmp4(4486).getChannelPermalink(guildId, id, result2));
-    const tmp4Result2 = tmp4(4486);
+    tmp4Result1.copy(tmp4(4526).getChannelPermalink(guildId, id, result2));
+    const tmp4Result2 = tmp4(4526);
   } else {
-    const tmp4Result3 = tmp4(5756);
-    tmp4Result3.copy(tmp4(4486).getChannelLinkToCopy(channel, channel1));
-    const tmp4Result4 = tmp4(4486);
+    const tmp4Result3 = tmp4(5795);
+    tmp4Result3.copy(tmp4(4526).getChannelLinkToCopy(channel, channel1));
+    const tmp4Result4 = tmp4(4526);
   }
-  const obj2 = require(7227) /* trackForumChannelSeenBatch */;
+  const obj2 = require(7266) /* trackForumChannelSeenBatch */;
   tmp9 = importDefault;
-  require(4020) /* presentAddedFriendToast */.presentLinkCopied();
+  require(4061) /* presentAddedFriendToast */.presentLinkCopied();
 };
 export const findMessageIndex = function findMessageIndex(previousRows, ChatTTITracker) {
   if (null != ChatTTITracker) {
-    return require(11019) /* computeScrollData */.findMessageRowIndex(previousRows, ChatTTITracker);
+    return require(11072) /* computeScrollData */.findMessageRowIndex(previousRows, ChatTTITracker);
   }
 };
 export { getVisibleMessages };
@@ -587,7 +587,7 @@ export const recordTimings = function recordTimings(channelId, closure_0) {
 };
 export const findMessageIndexInRows = function findMessageIndexInRows(ChatTTITracker, previousRows) {
   if (null != ChatTTITracker) {
-    return require(11019) /* computeScrollData */.findMessageRowIndex(previousRows, ChatTTITracker);
+    return require(11072) /* computeScrollData */.findMessageRowIndex(previousRows, ChatTTITracker);
   }
 };
 export { getMessage };
@@ -650,7 +650,7 @@ export const scrollToBottom = function scrollToBottom(current) {
   if (flag) {
     flag = !arg1;
   }
-  importDefault(11013).scrollToBottom(current.current, flag);
+  importDefault(11066).scrollToBottom(current.current, flag);
 };
 export const scrollToTop = function scrollToTop(current) {
   let flag = arg2;
@@ -660,7 +660,7 @@ export const scrollToTop = function scrollToTop(current) {
   if (flag) {
     flag = !arg1;
   }
-  importDefault(11013).scrollToTop(current.current, flag);
+  importDefault(11066).scrollToTop(current.current, flag);
 };
 export const scrollToRelativeOffset = function scrollToRelativeOffset(current) {
   let flag = arg3;
@@ -670,13 +670,13 @@ export const scrollToRelativeOffset = function scrollToRelativeOffset(current) {
   if (flag) {
     flag = !arg1;
   }
-  const result = importDefault(11013).scrollToRelativeOffset(current.current, arg2, flag);
+  const result = importDefault(11066).scrollToRelativeOffset(current.current, arg2, flag);
 };
 export const scrollToTopMessage = function scrollToTopMessage(current, getPreviousRows) {
   const previousRows = getPreviousRows.getPreviousRows();
   if (previousRows.length > 0) {
-    importDefault(11013).scrollTo(current.current, previousRows.length - 1);
-    const obj = importDefault(11013);
+    importDefault(11066).scrollTo(current.current, previousRows.length - 1);
+    const obj = importDefault(11066);
   }
 };
 export const canAddNewReactions = function canAddNewReactions(isPrivate) {
@@ -692,7 +692,7 @@ export const canAddNewReactions = function canAddNewReactions(isPrivate) {
 export const loadMoreBefore = function loadMoreBefore(arg0, hasMoreBefore) {
   arg2(true);
   if (tmp2) {
-    let obj = importDefault(6920);
+    let obj = importDefault(6959);
     obj = { channelId: null, before: null, limit: null };
     obj[0] = arg0;
     const firstResult = hasMoreBefore.first();
@@ -708,7 +708,7 @@ export const loadMoreBefore = function loadMoreBefore(arg0, hasMoreBefore) {
 export const loadMoreAfter = function loadMoreAfter(arg0, hasMoreAfter) {
   arg2(true);
   if (tmp2) {
-    let obj = importDefault(6920);
+    let obj = importDefault(6959);
     obj = { channelId: null, after: null, limit: null };
     obj[0] = arg0;
     const lastResult = hasMoreAfter.last();
@@ -725,13 +725,13 @@ export const clearRows = function clearRows(current, clear) {
   arg4({ animated: false, hasHandledScroll: false, isNearBottom: false, isAtBottom: false, isNearTop: false, decelerating: false, dragging: false, hasMoreMessagesAfterForLastUpdate: false, pendingUpdatesQueue: [], _loaded: false, animatingStickerMessageId: null });
   clear.clear();
   callback3(arg2, arg3, false);
-  importDefault(11013).clearRows(current.current);
+  importDefault(11066).clearRows(current.current);
 };
 export const handleFirstLayout = function handleFirstLayout(arg0, firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible) {
-  arg0({ firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: require(5164) /* QuestsVisibleMessagesChangedSource */.QuestsVisibleMessagesChangedSource.FIRST_LAYOUT });
+  arg0({ firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: require(5204) /* QuestsVisibleMessagesChangedSource */.QuestsVisibleMessagesChangedSource.FIRST_LAYOUT });
 };
 export const handleMessageVisibilityChanged = function handleMessageVisibilityChanged(arg0, firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible) {
-  arg0({ firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: require(5164) /* QuestsVisibleMessagesChangedSource */.QuestsVisibleMessagesChangedSource.VISIBILITY_CHANGED });
+  arg0({ firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: require(5204) /* QuestsVisibleMessagesChangedSource */.QuestsVisibleMessagesChangedSource.VISIBILITY_CHANGED });
 };
 export const handleLongPressSticker = function handleLongPressSticker(arg0, arg1, arg2) {
   const items = [arg0];
@@ -764,14 +764,14 @@ export const jumpToPresent = function jumpToPresent(jumpReturnTargetId, id) {
         obj[0] = id.id;
         obj[1] = closure_21;
         obj[2] = { present: true };
-        const messages = importDefault(6920).fetchMessages(obj);
-        const obj3 = importDefault(6920);
+        const messages = importDefault(6959).fetchMessages(obj);
+        const obj3 = importDefault(6959);
       } else {
         arg2();
       }
     }
   } else {
-    obj = importDefault(6920);
+    obj = importDefault(6959);
     obj = { channelId: null, messageId: null, flash: true };
     obj[0] = id.id;
     obj[1] = jumpReturnTargetId;
@@ -781,7 +781,7 @@ export const jumpToPresent = function jumpToPresent(jumpReturnTargetId, id) {
 export const scrollToNewMessages = function scrollToNewMessages(channel) {
   channel = channel.channel;
   let id = generateOldThreadCutoff.ackMessageId(channel.id);
-  let obj = importDefault(6920);
+  let obj = importDefault(6959);
   obj = { channelId: channel.id, messageId: null, offset: 1, context: "Mark As Read" };
   if (id == null) {
     id = channel.id;
@@ -837,7 +837,7 @@ export const maybeRescrollToMessageId = function maybeRescrollToMessageId(arg0, 
   let trackCommunicationDisabled = undefined !== updateRowsEnabled && updateRowsEnabled;
   let INSTANT = jumpType.jumpType;
   if (undefined === INSTANT) {
-    INSTANT = _require(4235).JumpType.INSTANT;
+    INSTANT = _require(4276).JumpType.INSTANT;
   }
   if (null != arg0) {
     const _setTimeout = setTimeout;
@@ -982,16 +982,16 @@ export const handleVisibleMessagesChange = function handleVisibleMessagesChange(
             obj = { visibleMessages: null, source: null };
             obj[0] = arr;
             obj[1] = tmp;
-            const result = require(10467) /* _manuallyStartConsoleQuest */.questsVisibleMobileMessagesChanged(obj);
-            const obj4 = require(10993) /* getVoiceInviteEmbedRenderInfo */;
+            const result = require(10508) /* _manuallyStartConsoleQuest */.questsVisibleMobileMessagesChanged(obj);
+            const obj4 = require(11046) /* getVoiceInviteEmbedRenderInfo */;
             const result1 = obj4.handleAnnouncementMessageViewTracking(arr, shouldTrackAnnouncementMessageViews, guildId, channel);
-            const obj5 = require(10993) /* getVoiceInviteEmbedRenderInfo */;
+            const obj5 = require(11046) /* getVoiceInviteEmbedRenderInfo */;
             const result2 = obj5.handleOfficialMessageViewTracking(arr, shouldTrackOfficialMessageViews, guildId, channel);
-            const obj6 = require(10993) /* getVoiceInviteEmbedRenderInfo */;
+            const obj6 = require(11046) /* getVoiceInviteEmbedRenderInfo */;
             const result3 = obj6.handleRichPresenceInviteEmbedViewTracking(arr, shouldTrackRichPresenceInviteEmbedViews, guildId, channel);
-            const obj7 = require(10993) /* getVoiceInviteEmbedRenderInfo */;
+            const obj7 = require(11046) /* getVoiceInviteEmbedRenderInfo */;
             const result4 = obj7.handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEmbedViews, guildId, channel);
-            const obj2 = require(10467) /* _manuallyStartConsoleQuest */;
+            const obj2 = require(10508) /* _manuallyStartConsoleQuest */;
           }
         }
       }

@@ -1,10 +1,10 @@
-// Module ID: 11933
-// Function ID: 11934
+// Module ID: 11990
+// Function ID: 11991
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4303, 712, 4239, 1363, 11930, 11887, 4725, 4299, 11888, 1297, 1236, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 4280, 1363, 8236, 11987, 11944, 4765, 4340, 11945, 1297, 1236, 2]
 // Exports: default
 
-// Module 11933 (GuildPowerupsPerkCard)
+// Module 11990 (GuildPowerupsPerkCard)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -49,57 +49,76 @@ export default function GuildPowerupsPerkCard(arg0) {
   const merged = Object.assign(arg0, Object.create(null));
   const tmp2 = createCacheKey();
   let obj = require(1363) /* AccessibilityAnnouncer */;
-  const tmp5 = importDefault(4239)();
+  const tmp5 = importDefault(4280)();
+  let obj1 = require(8236) /* apexExperiment */;
+  const manaTypeConsolidationExperiment = obj1.useManaTypeConsolidationExperiment("GuildPowerupsPerkCard");
+  const isThemeDarkResult = obj.isThemeDark(importDefault(4280)());
   obj = { containerStyle: items, style: tmp2.card, status, onPress, children: null };
   items = [tmp2.container, style];
   obj = { style: tmp2.imageContainer, children: null };
-  let tmp3Result = tmp3(11930);
+  let tmp3Result = tmp3(11987);
   if (riveComponent == null) {
-    tmp3Result = tmp3(11887);
+    tmp3Result = tmp3(11944);
     if (imageUrl == null) {
       imageUrl = "";
     }
-    const obj1 = { imageUrl: null, isAnimated: null };
+    obj1 = { imageUrl: null, isAnimated: null };
     obj1[0] = imageUrl;
     obj1[1] = isImageAnimated;
     riveComponent = callback(tmp3Result, obj1);
-    const tmp11 = callback;
+    const tmp13 = callback;
   }
   const items1 = [riveComponent, ];
-  const tmp7 = obj.isThemeDark(importDefault(4239)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"];
-  items1[1] = callback(importDefault(4725), { colors: obj.isThemeDark(importDefault(4239)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"], style: tmp2.gradient });
+  const tmp9 = obj.isThemeDark(importDefault(4280)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"];
+  items1[1] = callback(importDefault(4765), { colors: obj.isThemeDark(importDefault(4280)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"], style: tmp2.gradient });
   obj[1] = items1;
   const items2 = [closure_5(View, obj), , , ];
   const obj3 = { style: tmp2.contentContainer, children: null };
   const obj4 = { style: tmp2.headerContainer, children: null };
-  const items3 = [callback(require(4299) /* Text */.Text, { variant: "heading-md/bold", children: title }), callback(require(4299) /* Text */.Text, { variant: "text-sm/medium", children: description })];
+  let str;
+  if (manaTypeConsolidationExperiment) {
+    str = "text-strong";
+  }
+  const obj5 = { color: str, variant: null, children: null };
+  let str2 = "heading-md/bold";
+  if (manaTypeConsolidationExperiment) {
+    str2 = "experimental/heading-md/semibold";
+  }
+  obj5[1] = str2;
+  obj5[2] = title;
+  const items3 = [callback(require(4340) /* Text */.Text, obj5), ];
+  let str3 = "text-sm/medium";
+  if (manaTypeConsolidationExperiment) {
+    str3 = "experimental/body-sm/normal";
+  }
+  items3[1] = callback(require(4340) /* Text */.Text, { variant: str3, children: description });
   obj4[1] = items3;
   const items4 = [closure_5(View, obj4), ];
-  const obj5 = {};
+  const obj6 = {};
   const merged1 = Object.assign(merged);
-  obj5.status = status;
-  items4[1] = callback(require(11888) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj5);
+  obj6.status = status;
+  items4[1] = callback(require(11945) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj6);
   obj3[1] = items4;
   items2[1] = closure_5(View, obj3);
-  let tmp13Result = "new" === badge;
-  if (tmp13Result) {
-    const obj6 = { text: null, style: null };
+  let tmp15Result = "new" === badge;
+  if (tmp15Result) {
+    const obj7 = { text: null, style: null };
     const intl = tmp6(1236).intl;
-    obj6[0] = intl.string(tmp6(1236).t.y2b7CA);
-    obj6[1] = tmp2.badge;
-    tmp13Result = tmp13(tmp6(1297).TextBadge, obj6);
+    obj7[0] = intl.string(tmp6(1236).t.y2b7CA);
+    obj7[1] = tmp2.badge;
+    tmp15Result = tmp15(tmp6(1297).TextBadge, obj7);
   }
-  items2[2] = tmp13Result;
-  tmp13Result = "beta" === badge;
-  if (tmp13Result) {
-    const obj7 = { text: null, color: null, style: null };
+  items2[2] = tmp15Result;
+  tmp15Result = "beta" === badge;
+  if (tmp15Result) {
+    const obj8 = { text: null, color: null, style: null };
     const intl2 = tmp6(1236).intl;
-    obj7[0] = intl2.string(tmp6(1236).t.oW0eUd);
-    obj7[1] = tmp6(1297).BadgeColors.BRAND;
-    obj7[2] = tmp2.badge;
-    tmp13Result = tmp13(tmp6(1297).TextBadge, obj7);
+    obj8[0] = intl2.string(tmp6(1236).t.oW0eUd);
+    obj8[1] = tmp6(1297).BadgeColors.BRAND;
+    obj8[2] = tmp2.badge;
+    tmp15Result = tmp15(tmp6(1297).TextBadge, obj8);
   }
-  items2[3] = tmp13Result;
+  items2[3] = tmp15Result;
   obj[4] = items2;
   return closure_5(tmp3Result, obj);
 };

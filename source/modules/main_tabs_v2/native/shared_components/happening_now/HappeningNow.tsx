@@ -1,9 +1,9 @@
-// Module ID: 15201
-// Function ID: 15202
+// Module ID: 15258
+// Function ID: 15259
 // Name: renderCard
-// Dependencies: [32, 19, 17, 14538, 676, 21, 8012, 4303, 712, 5427, 8497, 15202, 698, 4730, 1500, 15203, 5728, 5748, 15210, 15211, 4042, 10336, 12, 7747, 1236, 15212, 15213, 15230, 15232, 15233, 15216, 15229, 15234, 15228, 15215, 1370, 2]
+// Dependencies: [32, 19, 17, 14595, 676, 21, 8051, 4344, 712, 5466, 8536, 15259, 698, 4770, 1500, 15260, 5767, 5787, 15267, 15268, 4083, 10377, 12, 7786, 1236, 15269, 15270, 15287, 15289, 15290, 15273, 15286, 15291, 15285, 15272, 1370, 2]
 
-// Module 15201 (renderCard)
+// Module 15258 (renderCard)
 import HappeningNowCardCreateChannel from "HappeningNowCardCreateChannel";
 import importAllResult from "useHappeningNowScrollBehavior";
 import get_ActivityIndicator from "QUICK_SWITCHER";
@@ -25,9 +25,15 @@ function renderCard(kind, fullWidth) {
   if ("placeholder" !== kind.kind) {
     if (!fullWidth.loading) {
       kind = kind.kind;
+      let obj = {};
+      const merged = Object.assign(kind);
+      const merged1 = Object.assign(fullWidth);
+      obj.cardKey = keyExtractor(kind);
+      return jsx(importDefault(15272), {});
     }
   }
-  return jsx(require(15212) /* HappeningNowCardPlaceholder */.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
+  obj = { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant };
+  return jsx(require(15269) /* HappeningNowCardPlaceholder */.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
 }
 function keyExtractor(voiceState) {
   let kind;
@@ -56,7 +62,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   obj = { ref };
   const merged = Object.assign(arg0);
   obj[1] = <closure_5 ref={arg1} />;
-  return jsx(require(5427) /* LegacyBaseButton */.GestureDetector, { ref });
+  return jsx(require(5466) /* LegacyBaseButton */.GestureDetector, { ref });
 });
 forwardRefResult.displayName = "HappeningNowScrollView";
 const NativeResult = Gesture.Native();

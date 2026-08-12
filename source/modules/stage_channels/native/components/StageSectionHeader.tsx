@@ -1,10 +1,10 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 10992
+// Function ID: 10993
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 4303, 712, 4042, 4304, 4299, 1297, 5718, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 4083, 4345, 4340, 1297, 5757, 2]
 // Exports: default
 
-// Module 10939 (StageSectionHeader)
+// Module 10992 (StageSectionHeader)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,7 +34,7 @@ export default function StageSectionHeader(collapsed) {
   const children = collapsed.children;
   ({ label, count, onToggleCollapse } = collapsed);
   const tmp = createCacheKey();
-  let obj = collapsed(4042);
+  let obj = collapsed(4083);
   const fn = function y() {
     let obj = collapsed(outer1_2[6]);
     let str = "0deg";
@@ -47,7 +47,7 @@ export default function StageSectionHeader(collapsed) {
     obj[0] = items;
     return obj;
   };
-  obj = { withTiming: collapsed(4304).withTiming, collapsed };
+  obj = { withTiming: collapsed(4345).withTiming, collapsed };
   fn.__closure = obj;
   fn.__workletHash = 13855092771739;
   fn.__initData = closure_8;
@@ -55,7 +55,7 @@ export default function StageSectionHeader(collapsed) {
   const obj1 = { style: tmp.audience, onPress: onToggleCollapse, children: null };
   const animatedStyle = obj.useAnimatedStyle(fn);
   let items = [label, " \u2014 ", count];
-  const items1 = [callback(collapsed(4299).Text, { variant: "text-md/semibold", color: "text-overlay-light", accessibilityRole: "header", children: items }), , ];
+  const items1 = [callback(collapsed(4340).Text, { variant: "text-md/semibold", color: "text-overlay-light", accessibilityRole: "header", children: items }), , ];
   let tmp5Result = null != children;
   if (tmp5Result) {
     const obj2 = { style: null, children: null };
@@ -67,10 +67,10 @@ export default function StageSectionHeader(collapsed) {
   const obj3 = { style: tmp.collapseButton, children: null };
   const obj4 = { style: animatedStyle, children: null };
   const obj5 = { source: null, style: null };
-  obj5[0] = importDefault(5718);
+  obj5[0] = importDefault(5757);
   obj5[1] = tmp.collapseIcon;
   obj4[1] = closure_6(collapsed(1297).Icon, obj5);
-  obj3[1] = closure_6(importDefault(4042).View, obj4);
+  obj3[1] = closure_6(importDefault(4083).View, obj4);
   items1[2] = closure_6(closure_4, obj3);
   obj1[2] = items1;
   obj[1] = callback(closure_3, obj1);

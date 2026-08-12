@@ -1,10 +1,10 @@
-// Module ID: 16913
-// Function ID: 16914
+// Module ID: 16971
+// Function ID: 16972
 // Name: apexExperiment
 // Dependencies: [687, 1471, 2]
 // Exports: getQuestFetchReconnectJitterConfig
 
-// Module 16913 (apexExperiment)
+// Module 16971 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { questFetchJitterMs: 5 * require("set").Millis.SECOND, questHomeHeroJitterMs: 5 * require("set").Millis.SECOND };

@@ -1,10 +1,10 @@
-// Module ID: 4362
-// Function ID: 4363
+// Module ID: 4403
+// Function ID: 4404
 // Name: apexExperiment
-// Dependencies: [4351, 1922, 1924, 1471, 4363, 589, 3966, 2]
+// Dependencies: [4392, 1922, 1924, 1471, 4404, 589, 4007, 2]
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 4362 (apexExperiment)
+// Module 4403 (apexExperiment)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
@@ -18,13 +18,13 @@ const result = require("GuildFeatures").fileFinishedImporting("modules/clips/Cli
 
 export const ClipsExperiment = apexExperiment;
 export const areClipsAvailable = function areClipsAvailable() {
-  if (importDefault(4363)(_detectH265HardwareDecode)) {
+  if (importDefault(4404)(_detectH265HardwareDecode)) {
     currentUser = currentUser.getCurrentUser();
     let premiumType;
     if (currentUser != null) {
       premiumType = currentUser.premiumType;
     }
-    let enableClips = tmp(3966).isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
+    let enableClips = tmp(4007).isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
     if (!enableClips) {
       enableClips = apexExperiment.getConfig({ location: "areClipsEnabled" }).enableClips;
     }
@@ -35,7 +35,7 @@ export const areClipsAvailable = function areClipsAvailable() {
   tmp = importDefault;
 };
 export const useIsClipsAvailable = function useIsClipsAvailable() {
-  const tmp = importDefault(4363)(_detectH265HardwareDecode);
+  const tmp = importDefault(4404)(_detectH265HardwareDecode);
   const items = [mergeGuildAvatar];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
@@ -53,7 +53,7 @@ export const isUserPremiumTypeForClipsEarlyAccess = function isUserPremiumTypeFo
   if (premiumType != null) {
     premiumType = premiumType.premiumType;
   }
-  return importDefault(3966).isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
+  return importDefault(4007).isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
 };
 export function isScreenshotKeybindEnabled() {
   return false;

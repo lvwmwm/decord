@@ -1,9 +1,9 @@
-// Module ID: 11662
-// Function ID: 11663
+// Module ID: 11719
+// Function ID: 11720
 // Name: ActionChannelInfo
-// Dependencies: [32, 19, 17, 4295, 5176, 1391, 1990, 676, 1925, 21, 4303, 712, 647, 4494, 4299, 1236, 1297, 11208, 5268, 1435, 3961, 11663, 11661, 4042, 4304, 11664, 4846, 1222, 7755, 5844, 2]
+// Dependencies: [32, 19, 17, 4336, 5215, 1391, 1990, 676, 1925, 21, 4344, 712, 647, 4534, 4340, 1236, 1297, 11262, 5307, 1435, 4002, 11720, 11718, 4083, 4345, 11721, 4886, 1222, 7794, 5883, 2]
 
-// Module 11662 (ActionChannelInfo)
+// Module 11719 (ActionChannelInfo)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getAvatarURL";
 import { View } from "registerAsset";
@@ -40,7 +40,7 @@ function ActionChannelInfo(action) {
     obj2[0] = tmp4;
     obj1[2] = intl.format(tmp(1236).t.MkzlDL, obj2);
   }
-  return closure_12(action(4299).Text, obj1);
+  return closure_12(action(4340).Text, obj1);
 }
 function ChannelActionEmoji(emoji) {
   emoji = emoji.emoji;
@@ -49,7 +49,7 @@ function ChannelActionEmoji(emoji) {
   let obj = { style: tmp.emojiPlaceholder, children: null };
   obj = { size: null, source: null };
   obj[0] = id(1297).Icon.Sizes.REFRESH_SMALL_16;
-  obj[1] = importDefault(11208);
+  obj[1] = importDefault(11262);
   obj[1] = callback(id(1297).Icon, obj);
   const tmp6 = callback(View, obj);
   id = undefined;
@@ -72,7 +72,7 @@ function ChannelActionEmoji(emoji) {
     obj = { style: null, source: null, resizeMode: "contain" };
     obj[0] = tmp.emoji;
     const obj1 = { uri: null };
-    let tmp5Result = tmp5(5268);
+    let tmp5Result = tmp5(5307);
     tmp5Result = tmp5(1435);
     const obj2 = { id: null, animated: null, size: null };
     ({ id: obj10[0], animated: obj10[1] } = stateFromStores);
@@ -83,15 +83,15 @@ function ChannelActionEmoji(emoji) {
   } else {
     tmp2Result = tmp6;
     if (null != name) {
-      const tmp5Result1 = tmp5(3961);
+      const tmp5Result1 = tmp5(4002);
       tmp2Result = tmp6;
       if (null != tmp5Result1.getByName(tmp5Result2.convertSurrogateToName(name, false))) {
         const obj3 = { style: null, variant: "heading-lg/normal", children: null };
         obj3[0] = tmp.textEmoji;
         obj3[2] = name;
-        tmp2Result = tmp2(tmp3(4299).Text, obj3);
+        tmp2Result = tmp2(tmp3(4340).Text, obj3);
       }
-      tmp5Result2 = tmp5(3961);
+      tmp5Result2 = tmp5(4002);
     }
   }
   return tmp2Result;
@@ -376,7 +376,7 @@ let closure_18 = { code: "function MemberActionChatInputBannerTsx1(){const{useRe
 let closure_19 = { code: "function MemberActionChatInputBannerTsx2(){const{useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
-  let obj = channel(5844);
+  let obj = channel(5883);
   const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [trackCommunicationDisabled];
   const stateFromStores = channel(647).useStateFromStores(items, () => {
@@ -407,7 +407,7 @@ const memoResult1 = importAllResult.memo((channel) => {
   let channelAction;
   let completed;
   channel = channel.channel;
-  let obj = require(11663) /* useMemberActionsForChannel */;
+  let obj = require(11720) /* useMemberActionsForChannel */;
   const memberActionsForChannel = obj.useMemberActionsForChannel(channel.guild_id, channel);
   ({ channelAction, completed } = memberActionsForChannel);
   let channelId;
@@ -415,11 +415,11 @@ const memoResult1 = importAllResult.memo((channel) => {
     channelId = channelAction.channelId;
   }
   let actionType;
-  const nextMemberAction = require(11663) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
+  const nextMemberAction = require(11720) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
   if (channelAction != null) {
     actionType = channelAction.actionType;
   }
-  if (actionType !== require(11661) /* newMemberActionFromServer */.NewMemberActionTypes.VIEW) {
+  if (actionType !== require(11718) /* newMemberActionFromServer */.NewMemberActionTypes.VIEW) {
     obj = { channel: null };
     obj[0] = channel;
     let tmp7 = callback(closure_21, obj);

@@ -1,9 +1,9 @@
-// Module ID: 5137
-// Function ID: 5138
+// Module ID: 5177
+// Function ID: 5178
 // Name: anyoneHasFlagInContext
-// Dependencies: [32, 1391, 4351, 4375, 1979, 676, 4364, 3953, 589, 5138, 709, 2]
+// Dependencies: [32, 1391, 4392, 4415, 1979, 676, 4405, 3994, 589, 5178, 709, 2]
 
-// Module 5137 (anyoneHasFlagInContext)
+// Module 5177 (anyoneHasFlagInContext)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -230,7 +230,7 @@ prototype["getVoiceVolume"] = function getVoiceVolume(arg0) {
   if (arg1 === undefined) {
     DEFAULT = constants2.DEFAULT;
   }
-  const config = importDefault(5138).getConfig({ location: "SpeakingStore" });
+  const config = importDefault(5178).getConfig({ location: "SpeakingStore" });
   let num = -Infinity;
   if (config.enabled) {
     num = -Infinity;
@@ -265,7 +265,7 @@ const speakingStore = new SpeakingStore(require("dispatcher"), {
     if ((speakingFlags & constants.PRIORITY) === constants.PRIORITY) {
       channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
       if (null != channel) {
-        let obj = importAll(3953);
+        let obj = importAll(3994);
         obj = { permission: null, user: null, context: null };
         obj[0] = Permissions.PRIORITY_SPEAKER;
         obj[1] = userId;

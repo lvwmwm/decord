@@ -1,10 +1,10 @@
-// Module ID: 9185
-// Function ID: 9186
+// Module ID: 9225
+// Function ID: 9226
 // Name: isStableVoiceStateEqual
-// Dependencies: [4351, 4319, 643, 589, 2]
+// Dependencies: [4392, 4360, 643, 589, 2]
 // Exports: useMuteDeafenIconState, useStableVideoState, useStableVoiceParticipant, useVideoIconState
 
-// Module 9185 (isStableVoiceStateEqual)
+// Module 9225 (isStableVoiceStateEqual)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import updateVoiceState from "updateVoiceState";
 

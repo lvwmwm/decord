@@ -1,10 +1,10 @@
-// Module ID: 9850
-// Function ID: 9851
+// Module ID: 9891
+// Function ID: 9892
 // Name: NotificationSettingsMessageUnreadChannelActionSheet
-// Dependencies: [19, 4499, 676, 4500, 685, 21, 9831, 9849, 1236, 5262, 9832, 5257, 2]
+// Dependencies: [19, 4539, 676, 4540, 685, 21, 9872, 9890, 1236, 5301, 9873, 5296, 2]
 // Exports: default
 
-// Module 9850 (NotificationSettingsMessageUnreadChannelActionSheet)
+// Module 9891 (NotificationSettingsMessageUnreadChannelActionSheet)
 import "noop";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UserNotificationSettings } from "ME";
@@ -19,7 +19,7 @@ export default function NotificationSettingsMessageUnreadChannelActionSheet(chan
   let notification;
   let unread;
   const _require = channel;
-  let obj = _require(9831);
+  let obj = _require(9872);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   ({ unread, notification } = channelPresetSettings);
   obj = { value: unread, disabledMentionOnlyWithReason: null, onChange: null };
@@ -41,5 +41,5 @@ export default function NotificationSettingsMessageUnreadChannelActionSheet(chan
     const NotificationLabel = channel(outer1_2[11]).NotificationLabel;
     const result = obj.updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.unreads(ONLY_MENTIONS));
   };
-  return jsx(importDefault(9849), { value: unread, disabledMentionOnlyWithReason: null, onChange: null });
+  return jsx(importDefault(9890), { value: unread, disabledMentionOnlyWithReason: null, onChange: null });
 };

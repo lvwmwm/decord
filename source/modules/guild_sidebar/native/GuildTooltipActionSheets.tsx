@@ -1,10 +1,10 @@
-// Module ID: 15383
-// Function ID: 15384
+// Module ID: 15439
+// Function ID: 15440
 // Name: NUFChannelsActionSheetImporter
-// Dependencies: [32, 19, 1388, 21, 13044, 2007, 15384, 15386, 15389, 15391, 15392, 1377, 15393, 15394, 5216, 15395, 10006, 10007, 4042, 2]
+// Dependencies: [32, 19, 1388, 21, 13101, 2007, 15440, 15442, 15445, 15447, 15448, 1377, 15449, 15450, 5255, 15451, 10047, 10048, 4083, 2]
 // Exports: default
 
-// Module 15383 (NUFChannelsActionSheetImporter)
+// Module 15439 (NUFChannelsActionSheetImporter)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { DismissibleContentGroupName as closure_5 } from "ContentDismissActionType";
@@ -12,19 +12,19 @@ import { jsx } from "jsxProd";
 
 const require = arg1;
 function NUFChannelsActionSheetImporter() {
-  return require(2007) /* asyncRequireImpl */(13044, dependencyMap.paths);
+  return require(2007) /* asyncRequireImpl */(13101, dependencyMap.paths);
 }
 function GuildRoleSubscriptionsUpsellActionSheetImporter() {
-  return require(2007) /* asyncRequireImpl */(15384, dependencyMap.paths);
+  return require(2007) /* asyncRequireImpl */(15440, dependencyMap.paths);
 }
 function GuildRoleSubscriptionsIAPUpsellActionSheetImporter() {
-  return require(2007) /* asyncRequireImpl */(15386, dependencyMap.paths);
+  return require(2007) /* asyncRequireImpl */(15442, dependencyMap.paths);
 }
 function CreatorMonetizationOnboardingV2UpsellActionSheetImporter() {
-  return require(2007) /* asyncRequireImpl */(15389, dependencyMap.paths);
+  return require(2007) /* asyncRequireImpl */(15445, dependencyMap.paths);
 }
 function TierTemplatesUpsellActionSheetImporter() {
-  return require(2007) /* asyncRequireImpl */(15391, dependencyMap.paths);
+  return require(2007) /* asyncRequireImpl */(15447, dependencyMap.paths);
 }
 class GuildTooltipActionSheets {
   constructor(arg0) {

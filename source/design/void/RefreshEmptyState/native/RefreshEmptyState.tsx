@@ -1,10 +1,10 @@
-// Module ID: 13454
-// Function ID: 13455
+// Module ID: 13511
+// Function ID: 13512
 // Name: EmptyState
-// Dependencies: [19, 17, 676, 21, 4303, 5236, 712, 8001, 4714, 1363, 2]
+// Dependencies: [19, 17, 676, 21, 4344, 5275, 712, 8040, 4754, 1363, 2]
 // Exports: ThemedEmptyState
 
-// Module 13454 (EmptyState)
+// Module 13511 (EmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Fonts } from "ME";
@@ -54,7 +54,7 @@ class EmptyState {
       items3[1] = titleStyle;
       obj1[0] = items3;
       obj1[1] = title;
-      tmp7 = jsx(require("module_8001"), obj1);
+      tmp7 = jsx(require("module_8040"), obj1);
     }
     items2[1] = tmp7;
     tmp11 = jsx;
@@ -62,7 +62,7 @@ class EmptyState {
     items4 = [, ];
     items4[0] = tmp.body;
     items4[1] = bodyStyle;
-    items2[2] = jsx(require("module_8001"), { style: items4, children: body });
+    items2[2] = jsx(require("module_8040"), { style: items4, children: body });
     tmp11Result = null;
     if (null != callToAction) {
       obj2 = { style: null, children: null };

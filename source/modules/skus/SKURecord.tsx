@@ -1,9 +1,9 @@
-// Module ID: 4343
-// Function ID: 4344
+// Module ID: 4384
+// Function ID: 4385
 // Name: createFromServer
-// Dependencies: [1931, 4326, 4344, 676, 3902, 4345, 4346, 1403, 2]
+// Dependencies: [1931, 4367, 4385, 676, 3943, 4386, 4387, 1403, 2]
 
-// Module 4343 (createFromServer)
+// Module 4384 (createFromServer)
 import "toJS";
 import createExecutable from "createExecutable";
 import { THE_GAME_AWARD_WINNER_SKUS as closure_4 } from "set";
@@ -55,12 +55,12 @@ SKURecord["createFromServer"] = function createFromServer(id) {
   obj[7] = name;
   let tmp6 = null;
   if (null != id.release_date) {
-    tmp6 = importDefault(3902)(id.release_date);
+    tmp6 = importDefault(3943)(id.release_date);
   }
   obj[8] = tmp6;
   let tmp9 = null;
   if (null != id.preorder_release_at) {
-    tmp9 = importDefault(3902)(id.preorder_release_at);
+    tmp9 = importDefault(3943)(id.preorder_release_at);
   }
   obj[9] = tmp9;
   ({ preorder_approximate_release_date: obj[10], summary: obj[11] } = id);
@@ -76,7 +76,7 @@ SKURecord["createFromServer"] = function createFromServer(id) {
     tmp14 = obj;
   }
   obj[22] = tmp14;
-  obj[23] = importDefault(4345)(id.prices);
+  obj[23] = importDefault(4386)(id.prices);
   let flag = id.premium;
   if (flag == null) {
     flag = false;
@@ -114,7 +114,7 @@ SKURecord["createFromServer"] = function createFromServer(id) {
     mapped = [];
   }
   obj[34] = mapped;
-  obj[35] = importDefault(4346)(id.tenant_metadata);
+  obj[35] = importDefault(4387)(id.tenant_metadata);
   const selected_options = id.selected_options;
   let mapped1;
   if (selected_options != null) {

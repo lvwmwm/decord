@@ -1,10 +1,10 @@
-// Module ID: 9914
-// Function ID: 9915
+// Module ID: 9955
+// Function ID: 9956
 // Name: useCreateThread
-// Dependencies: [5, 19, 4640, 4296, 5728, 8359, 6920, 7143, 8363, 8362, 7299, 4897, 4856, 8364, 2]
+// Dependencies: [5, 19, 4680, 4337, 5767, 8398, 6959, 7182, 8402, 8401, 7338, 4937, 4896, 8403, 2]
 // Exports: default, useCreateForumPost
 
-// Module 9914 (useCreateThread)
+// Module 9955 (useCreateThread)
 import getIsPrivate from "getIsPrivate";
 import noop from "noop";
 import { DraftType } from "handleChanged";
@@ -23,8 +23,8 @@ export default function useCreateThread(arg0) {
   let useDefaultThreadName;
   let analyticsLocations;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
-  analyticsLocations = importDefault(5728)().analyticsLocations;
-  let obj = analyticsLocations(8359);
+  analyticsLocations = importDefault(5767)().analyticsLocations;
+  let obj = analyticsLocations(8398);
   obj = {
     parentChannel,
     parentMessageId,
@@ -66,7 +66,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
   const threadSettings = parentChannel.threadSettings;
   let analyticsLocations;
   ({ appliedTags, onThreadCreated } = parentChannel);
-  analyticsLocations = analyticsLocations(5728)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5767)().analyticsLocations;
   _require = undefined;
   _require = callback((arg0) => {
     let closure_0 = arg0;
@@ -82,7 +82,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
       obj7.on("progress", (currentSize) => {
         if (currentSize.currentSize > c3) {
           obj7.cancel();
-          let obj = outer2_1(8362);
+          let obj = outer2_1(8401);
           obj = { channelId: null, uploads: null, draftType: null, resetState: true };
           obj[0] = guildId.id;
           obj[1] = guildId;
@@ -94,8 +94,8 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
           obj[2] = dependencyMap;
           obj[3] = guildId.getGuildId();
           obj[4] = obj7;
-          outer2_1(8364)(obj);
-          const tmp10 = outer2_1(8364);
+          outer2_1(8403)(obj);
+          const tmp10 = outer2_1(8403);
         }
       });
       let noop = yield obj7.uploadFiles(guildId);
@@ -116,7 +116,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
     }
     return applyArgumentsResult;
   }, items);
-  let obj = _require(8359);
+  let obj = _require(8398);
   obj = { parentChannel, name: null, appliedTags: null, analyticsLocations: null, onThreadCreated: null, upload: null };
   let str;
   if (threadSettings != null) {

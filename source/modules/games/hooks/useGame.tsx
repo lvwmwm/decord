@@ -1,10 +1,10 @@
-// Module ID: 5926
-// Function ID: 5927
+// Module ID: 5965
+// Function ID: 5966
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4324, 676, 589, 687, 5927, 2]
+// Dependencies: [5, 19, 4365, 676, 589, 687, 5966, 2]
 // Exports: useGames
 
-// Module 5926 (importDefaultResult1)
+// Module 5965 (importDefaultResult1)
 import noop from "noop";
 import importDefaultResult1 from "handleLoadMessages";
 import initialize from "initialize";

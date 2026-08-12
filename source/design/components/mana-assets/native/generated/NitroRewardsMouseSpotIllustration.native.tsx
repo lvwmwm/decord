@@ -1,10 +1,10 @@
-// Module ID: 6566
-// Function ID: 6567
+// Module ID: 6605
+// Function ID: 6606
 // Name: NitroRewardsMouseSpotIllustration
-// Dependencies: [21, 5268, 6567, 2]
+// Dependencies: [21, 5307, 6606, 2]
 // Exports: NitroRewardsMouseSpotIllustration
 
-// Module 6566 (NitroRewardsMouseSpotIllustration)
+// Module 6605 (NitroRewardsMouseSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroRewardsMouseSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const NitroRewardsMouseSpotIllustration = function NitroRewardsMouseSpotI
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6567);
+  obj[0] = importDefault(6606);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroRewardsMouseSpotIllustration = function NitroRewardsMouseSpotI
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
 };

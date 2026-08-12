@@ -1,10 +1,10 @@
-// Module ID: 7775
-// Function ID: 7776
+// Module ID: 7814
+// Function ID: 7815
 // Name: connectToStage
-// Dependencies: [5, 4322, 1391, 1910, 3948, 1979, 1399, 7776, 5938, 5232, 12668, 12669, 5129, 4367, 4483, 12671, 2]
+// Dependencies: [5, 4363, 1391, 1910, 3989, 1979, 1399, 7815, 5977, 5271, 12727, 12728, 5169, 4407, 4523, 12730, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 7775 (connectToStage)
+// Module 7814 (connectToStage)
 import handleConnectionOpen from "handleConnectionOpen";
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -22,38 +22,38 @@ function connectToStage(channel, flag) {
     const canResult = getUncachedChannelPermissions.can(_require(1399).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
     let tmp6 = !canResult;
     if (canResult) {
-      let num = importAll(7776).shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
+      let num = importAll(7815).shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       if (num) {
-        const result = tmp7(7776).openStageBlockedUsersSheet(channel, () => {
+        const result = tmp7(7815).openStageBlockedUsersSheet(channel, () => {
           outer1_11(closure_0, true);
         });
         num = 1;
-        const tmp7Result = tmp7(7776);
+        const tmp7Result = tmp7(7815);
       }
       tmp6 = num;
-      const obj2 = importAll(7776);
+      const obj2 = importAll(7815);
       tmp7 = importAll;
     }
     if (tmp6) {
       return false;
     }
   }
-  importDefault(12669).initialize();
+  importDefault(12728).initialize();
   const obj = closure_9;
-  const obj4 = importDefault(12669);
-  const voiceChannel = importDefault(5129).selectVoiceChannel(channel.id);
+  const obj4 = importDefault(12728);
+  const voiceChannel = importDefault(5169).selectVoiceChannel(channel.id);
   if (obj.getVoiceChannelId() !== channel.id) {
     return false;
   } else {
     allApplicationStreamsForChannel = allApplicationStreamsForChannel.getAllApplicationStreamsForChannel(channel.id);
     const found = allApplicationStreamsForChannel.find((currentUserActiveStream) => !streamMarkedFull.isStreamMarkedFull(channel(table[13]).encodeStreamKey(currentUserActiveStream)));
     if (null != found) {
-      _require(4483).watchStream(found, { noFocus: true });
-      const obj6 = _require(4483);
+      _require(4523).watchStream(found, { noFocus: true });
+      const obj6 = _require(4523);
     }
     return true;
   }
-  const obj5 = importDefault(5129);
+  const obj5 = importDefault(5169);
 }
 function connectAndOpen(channel, flag) {
   const _require = channel;
@@ -74,19 +74,19 @@ function connectAndOpen(channel, flag) {
     result = voiceChannelId !== channel.id;
   }
   if (result) {
-    result = _require(12671).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(12671);
+    result = _require(12730).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(12730);
   }
   if (result) {
-    result = flag2(7776).showChannelChangeConfirmationAlert(channel, () => {
+    result = flag2(7815).showChannelChangeConfirmationAlert(channel, () => {
       outer1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(7776);
+    const obj2 = flag2(7815);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      flag2(7776).navigateToStage(channel, voiceChannelId);
-      const obj3 = flag2(7776);
+      flag2(7815).navigateToStage(channel, voiceChannelId);
+      const obj3 = flag2(7815);
     }
   }
 }
@@ -211,8 +211,8 @@ export const connectOrLurkStage = function connectOrLurkStage(closure_0, closure
 export { connectToStage };
 export { connectAndOpen };
 export const navigateToStage = function navigateToStage(arg0, arg1) {
-  importAll(7776).navigateToStage(arg0, arg1);
+  importAll(7815).navigateToStage(arg0, arg1);
 };
 export const showUserProfile = function showUserProfile(arg0) {
-  const result = importAll(7776).showPlatformUserProfile(arg0);
+  const result = importAll(7815).showPlatformUserProfile(arg0);
 };

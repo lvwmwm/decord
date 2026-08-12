@@ -1,10 +1,10 @@
-// Module ID: 10965
-// Function ID: 10966
+// Module ID: 11018
+// Function ID: 11019
 // Name: getNearestValue
-// Dependencies: [1297, 4713, 4304, 4042, 5427, 2]
+// Dependencies: [1297, 4753, 4345, 4083, 5466, 2]
 // Exports: default
 
-// Module 10965 (getNearestValue)
+// Module 11018 (getNearestValue)
 let obj = { damping: 30, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 obj = { duration: 500, easing: require("Button").STANDARD_EASING };
 let closure_4 = { code: "function getSortedByMeasure_PanGestureAnimationsTsx2(array,measure){const sorted=new Array(...array).sort(function(left,right){const al=Math.abs(left-measure);const ar=Math.abs(right-measure);return al<ar?-1:al>ar?1:0;});return sorted;}" };
@@ -87,7 +87,7 @@ getNearestValue.__workletHash = 4186929947751;
 getNearestValue.__initData = { code: "function getNearestValue_PanGestureAnimationsTsx1(array,measure,velocity=0){const unitVector=velocity<0?-1:velocity>0?1:0;function getSortedByMeasure(array,measure){'worklet';const sorted=new Array(...array).sort(function(left,right){const al=Math.abs(left-measure);const ar=Math.abs(right-measure);return al<ar?-1:al>ar?1:0;});return sorted;}if(array.length===0){return measure;}const sorted=getSortedByMeasure(array,measure);if(unitVector!==0){var _sorted$find;return(_sorted$find=sorted.find(function(value){const result=unitVector<0?measure>value:measure<value;return result;}))!==null&&_sorted$find!==void 0?_sorted$find:sorted[0];}return sorted[0];}" };
 function withPanGestureSpring(value, velocity) {
   let tmp = arg2;
-  let obj = require(4713) /* CONFIG_NEVER_ANIMATE */;
+  let obj = require(4753) /* CONFIG_NEVER_ANIMATE */;
   if (arg2 == null) {
     tmp = obj;
   }
@@ -102,7 +102,7 @@ withPanGestureSpring.__workletHash = 12189464558811;
 withPanGestureSpring.__initData = { code: "function withPanGestureSpring_PanGestureAnimationsTsx3(destination,velocity,config){const{SPRING_CONFIG,withSpring}=this.__closure;const springConfig=config!==null&&config!==void 0?config:SPRING_CONFIG;return withSpring(destination,{...springConfig,velocity:velocity});}" };
 function withPanGestureTiming(value, timingStandard) {
   let tmp = timingStandard;
-  const obj = require(4304) /* CONFIG_NEVER_ANIMATE_TIMING */;
+  const obj = require(4345) /* CONFIG_NEVER_ANIMATE_TIMING */;
   if (timingStandard == null) {
     tmp = obj;
   }

@@ -1,9 +1,9 @@
-// Module ID: 11657
-// Function ID: 11658
+// Module ID: 11714
+// Function ID: 11715
 // Name: StyleSheet
-// Dependencies: [19, 17, 21, 4303, 500, 4042, 4713, 4239, 8011, 4703, 1363, 5781, 2]
+// Dependencies: [19, 17, 21, 4344, 500, 4083, 4753, 4280, 8050, 4743, 1363, 5820, 2]
 
-// Module 11657 (StyleSheet)
+// Module 11714 (StyleSheet)
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -31,7 +31,7 @@ export default require("noop").memo(function HeaderGlassBlur(shown) {
   shown = shown.shown;
   ({ blurStyle, style } = shown);
   const tmp = callback();
-  let obj = shown(4042);
+  let obj = shown(4083);
   const fn = function k() {
     let opacity = 0;
     if (shown.get()) {
@@ -48,7 +48,7 @@ export default require("noop").memo(function HeaderGlassBlur(shown) {
   fn.__workletHash = 3451055086565;
   fn.__initData = closure_8;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj2 = shown(4042);
+  let obj2 = shown(4083);
   const fn2 = function p() {
     let obj = shown(outer1_2[6]);
     let num = 0;
@@ -58,17 +58,17 @@ export default require("noop").memo(function HeaderGlassBlur(shown) {
     obj = { blurAmount: obj.withSpring(num) };
     return obj;
   };
-  obj = { withSpring: shown(4713).withSpring, shown };
+  obj = { withSpring: shown(4753).withSpring, shown };
   fn2.__closure = obj;
   fn2.__workletHash = 5642055202507;
   fn2.__initData = closure_9;
   const animatedProps = obj2.useAnimatedProps(fn2);
-  const tmp7 = importDefault(4239)();
+  const tmp7 = importDefault(4280)();
   const obj1 = { style: items, children: null };
   items = [tmp.blur, style, animatedStyle];
   const tmp2 = shown;
-  const tmp9 = importDefault(8011);
-  const tmp11 = importDefault(4703);
+  const tmp9 = importDefault(8050);
+  const tmp11 = importDefault(4743);
   let str = "light";
   if (obj6.isThemeDark(tmp7)) {
     str = "dark";
@@ -76,9 +76,9 @@ export default require("noop").memo(function HeaderGlassBlur(shown) {
   const items1 = [StyleSheet.absoluteFillObject, blurStyle];
   const items2 = [closure_4(tmp11, { blurStyle: "ultra-thin", blurTheme: str, style: items1, animatedProps }), ];
   obj2 = { style: tmp.strokeContainer, children: null };
-  let tmp6Result = tmp6(5781);
-  const items3 = [closure_4(importDefault(5781), { style: tmp.stroke }), ];
-  tmp6Result = tmp6(5781);
+  let tmp6Result = tmp6(5820);
+  const items3 = [closure_4(importDefault(5820), { style: tmp.stroke }), ];
+  tmp6Result = tmp6(5820);
   const obj3 = { style: tmp.stroke };
   obj6 = shown(1363);
   const tmp2Result = tmp2(1363);

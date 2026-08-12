@@ -1,10 +1,10 @@
-// Module ID: 4155
-// Function ID: 4156
+// Module ID: 4196
+// Function ID: 4197
 // Name: set
-// Dependencies: [505, 689, 4156, 2]
+// Dependencies: [505, 689, 4197, 2]
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getGuildThemePresetAppearance, getGuildThemeToneRange, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSaturationPinnedColor, getSingleColorGuildThemeGradientColors, getThemeAdjustedToneColor, getToneAdjustedColor
 
-// Module 4155 (set)
+// Module 4196 (set)
 import { ThemeTypes } from "sum";
 import set from "items";
 
@@ -85,8 +85,8 @@ export const getSingleColorGuildThemeGradientColors = function getSingleColorGui
   return items;
 };
 export const getRandomSingleColorGuildTheme = function getRandomSingleColorGuildTheme() {
-  const diff = require(4156) /* items */.COLOR_PALETTE.length - 1;
-  const tmp2 = require(4156) /* items */.COLOR_PALETTE[Math.floor(Math, Math.random(Math) * (diff + 1))];
+  const diff = require(4197) /* items */.COLOR_PALETTE.length - 1;
+  const tmp2 = require(4197) /* items */.COLOR_PALETTE[Math.floor(Math, Math.random(Math) * (diff + 1))];
   const obj = { color: null, baseMix: null };
   const bound = Math.min(45, Math.round(100 * importDefault(689)(tmp2).get("hsl.l")));
   const obj2 = importDefault(689)(tmp2);

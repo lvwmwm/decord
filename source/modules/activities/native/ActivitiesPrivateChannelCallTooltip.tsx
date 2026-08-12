@@ -1,10 +1,10 @@
-// Module ID: 12134
-// Function ID: 12135
+// Module ID: 12191
+// Function ID: 12192
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 4295, 4328, 21, 4303, 589, 4042, 4304, 1297, 1236, 4714, 2]
+// Dependencies: [19, 17, 4336, 4369, 21, 4344, 589, 4083, 4345, 1297, 1236, 4754, 2]
 // Exports: default
 
-// Module 12134 (ActivitiesPrivateChannelCallTooltip)
+// Module 12191 (ActivitiesPrivateChannelCallTooltip)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -46,11 +46,11 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
       return obj;
     }
   }
-  obj = { withRepeat: tmp2(4042).withRepeat, withSequence: tmp2(4042).withSequence, withTiming: tmp2(4304).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
+  obj = { withRepeat: tmp2(4083).withRepeat, withSequence: tmp2(4083).withSequence, withTiming: tmp2(4345).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
   T.__closure = obj;
   T.__workletHash = 4621705591670;
   T.__initData = closure_9;
-  const animatedStyle = num(4042).useAnimatedStyle(T);
+  const animatedStyle = num(4083).useAnimatedStyle(T);
   obj = { style: items1, children: null };
   items1 = [tmp.tooltipContainer, animatedStyle];
   const obj1 = { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: null, title: null, children: null };
@@ -64,8 +64,8 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   const intl3 = tmp2(1236).intl;
   obj4[0] = intl3.string(num(1236).t["NX+WJN"]);
   obj4[1] = onClosePress.onClosePress;
-  obj3[1] = jsx(num(4714).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
+  obj3[1] = jsx(num(4754).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
   obj1[5] = <View style={tmp.closeButtonWrapper}>{null}</View>;
   obj[1] = jsx(num(1297).Tooltip, { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: null, title: null, children: null });
-  return jsx(importDefault(4042).View, { style: items1, children: null });
+  return jsx(importDefault(4083).View, { style: items1, children: null });
 };

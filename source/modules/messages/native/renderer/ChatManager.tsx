@@ -1,9 +1,9 @@
-// Module ID: 8614
-// Function ID: 8615
+// Module ID: 8653
+// Function ID: 8654
 // Name: getPreviousMessages
-// Dependencies: [8044, 8615, 659, 2]
+// Dependencies: [8083, 8654, 659, 2]
 
-// Module 8614 (getPreviousMessages)
+// Module 8653 (getPreviousMessages)
 import Changeset from "Changeset";
 
 let c3;
@@ -124,7 +124,7 @@ prototype["determineChangeTypeForUploadProgress"] = function determineChangeType
   }
 };
 prototype["determineChangeTypeForEmbeddedActivity"] = function determineChangeTypeForEmbeddedActivity(arg0) {
-  const tmp = importDefault(8615)(arg0);
+  const tmp = importDefault(8654)(arg0);
   this.embeddedActivities[tmp] = arg0;
   if (null != this.embeddedActivities[tmp]) {
     let INSERT = constants.UPDATE;

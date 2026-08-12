@@ -1,10 +1,10 @@
-// Module ID: 4154
-// Function ID: 4155
+// Module ID: 4195
+// Function ID: 4196
 // Name: getGuildThemeName
-// Dependencies: [19, 1302, 4124, 1236, 1349, 4155, 4157, 647, 4236, 2]
+// Dependencies: [19, 1302, 4165, 1236, 1349, 4196, 4198, 647, 4277, 2]
 // Exports: default
 
-// Module 4154 (getGuildThemeName)
+// Module 4195 (getGuildThemeName)
 import noop from "noop";
 import handleThemeChange from "handleThemeChange";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
@@ -17,7 +17,7 @@ function getGuildThemeName() {
 const result = require("isSyncedModeThemesEnabled").fileFinishedImporting("modules/client_themes/native/useColorThemeBackground.tsx");
 
 export default function useColorThemeBackground() {
-  const tmp = stateFromStores(4157)();
+  const tmp = stateFromStores(4198)();
   const require = tmp;
   let items = [handleThemeChange];
   stateFromStores = require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => theme.theme);
@@ -26,7 +26,7 @@ export default function useColorThemeBackground() {
   const stateFromStores1 = require(647) /* defaultAreStatesEqual */.useStateFromStores(items1, () => gradientPreset.gradientPreset);
   const obj2 = require(647) /* defaultAreStatesEqual */;
   const items2 = [tmp, stateFromStores];
-  const customBackgroundGradient = require(4236) /* getCustomThemesName */.useCustomBackgroundGradient();
+  const customBackgroundGradient = require(4277) /* getCustomThemesName */.useCustomBackgroundGradient();
   let memo = React.useMemo(() => {
     let colors;
     let tmp3 = null;

@@ -1,9 +1,9 @@
-// Module ID: 4186
-// Function ID: 4187
+// Module ID: 4227
+// Function ID: 4228
 // Name: handleEnd
-// Dependencies: [1218, 4187, 4188, 709, 1909, 12, 589, 2]
+// Dependencies: [1218, 4228, 4229, 709, 1909, 12, 589, 2]
 
-// Module 4186 (handleEnd)
+// Module 4227 (handleEnd)
 import fetchFingerprint from "fetchFingerprint";
 import GuildThemePreviewOrigin from "GuildThemePreviewOrigin";
 import { Store } from "initialize";

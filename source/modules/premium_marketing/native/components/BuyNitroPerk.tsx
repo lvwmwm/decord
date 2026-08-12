@@ -1,10 +1,10 @@
-// Module ID: 7745
-// Function ID: 7746
+// Module ID: 7784
+// Function ID: 7785
 // Name: BuyNitroPerk
-// Dependencies: [19, 17, 21, 4303, 712, 5374, 7746, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 5413, 7785, 2]
 // Exports: default
 
-// Module 7745 (BuyNitroPerk)
+// Module 7784 (BuyNitroPerk)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,7 +40,7 @@ export default function BuyNitroPerk(perk) {
   let obj = { label: perk.label, subLabel: perk.subLabel, disabled: perk.disabled, icon: null, arrow: null, onPress: null, start: null, end: null };
   obj = { style: createCacheKey().iconTile, children: null };
   obj = { selectedTier, nitroColors: perk.iconGradient, basicColors: perk.iconGradientBasic, start: closure_7, end: closure_8, style: absoluteFill.absoluteFill };
-  const items = [callback(onOpenDetails(7746), obj), ];
+  const items = [callback(onOpenDetails(7785), obj), ];
   const tmp = createCacheKey();
   const tmp4 = callback;
   items[1] = callback(perk.IconComponent, { size: "sm", color: onOpenDetails(712).colors.WHITE });
@@ -54,5 +54,5 @@ export default function BuyNitroPerk(perk) {
   obj[5] = fn;
   obj[6] = start;
   obj[7] = end;
-  return tmp4(perk(5374).TableRow, obj);
+  return tmp4(perk(5413).TableRow, obj);
 };

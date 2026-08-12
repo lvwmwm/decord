@@ -1,10 +1,10 @@
-// Module ID: 13770
-// Function ID: 13771
+// Module ID: 13827
+// Function ID: 13828
 // Name: transformSubscriptionListingToSku
-// Dependencies: [5, 676, 709, 10636, 5877, 2]
+// Dependencies: [5, 676, 709, 10689, 5916, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 13770 (transformSubscriptionListingToSku)
+// Module 13827 (transformSubscriptionListingToSku)
 import set from "set";
 import ME from "ME";
 
@@ -190,7 +190,7 @@ function _fetchSubscriptionListingForPlan() {
               set = undefined;
               c7 = 1;
               v0 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

@@ -1,8 +1,8 @@
-// Module ID: 4762
-// Function ID: 4763
-// Dependencies: [4019, 2]
+// Module ID: 4802
+// Function ID: 4803
+// Dependencies: [4060, 2]
 
-// Module 4762
+// Module 4802
 const re2 = /\n$/;
 const re3 = /^ *-# +((?!-#)[^\n]+)(?:\n|$)/;
 let obj = {
@@ -17,8 +17,8 @@ let obj = {
         }
         tmp = tmp4;
       }
-      tmp4 = require(4019) /* t */.anyScopeRegex(closure_3)(arg0, allowSubtext, str);
-      const obj = require(4019) /* t */;
+      tmp4 = require(4060) /* t */.anyScopeRegex(closure_3)(arg0, allowSubtext, str);
+      const obj = require(4060) /* t */;
     }
     return tmp;
   },
@@ -28,7 +28,7 @@ let obj = {
     const trimmed = arg0[1].trim();
     const merged = Object.assign(arg2);
     obj.allowSubtext = false;
-    obj[0] = require(4019) /* t */.parseInline(arg1, trimmed, obj);
+    obj[0] = require(4060) /* t */.parseInline(arg1, trimmed, obj);
     return obj;
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 13955
-// Function ID: 13956
+// Module ID: 14012
+// Function ID: 14013
 // Name: useNameplateSections
-// Dependencies: [32, 19, 7004, 7020, 647, 7016, 1236, 2]
+// Dependencies: [32, 19, 7043, 7059, 647, 7055, 1236, 2]
 // Exports: default
 
-// Module 13955 (useNameplateSections)
+// Module 14012 (useNameplateSections)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";

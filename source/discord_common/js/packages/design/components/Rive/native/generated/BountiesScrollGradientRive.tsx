@@ -1,9 +1,9 @@
-// Module ID: 4094
-// Function ID: 4095
+// Module ID: 4135
+// Function ID: 4136
 // Name: BountiesScrollGradientRive
-// Dependencies: [109, 19, 21, 4036, 4095, 4093, 2]
+// Dependencies: [109, 19, 21, 4077, 4136, 4134, 2]
 
-// Module 4094 (BountiesScrollGradientRive)
+// Module 4135 (BountiesScrollGradientRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -26,21 +26,21 @@ let closure_8 = importAllResult.forwardRef(function BountiesScrollGradientRiveIn
     tmp = defaultViewModelInstance;
   }
   const obj = { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null };
-  obj[1] = importDefault(4095);
+  obj[1] = importDefault(4136);
   obj[2] = str;
   obj[3] = closure_6;
   obj[4] = closure_7;
   obj[5] = tmp;
   obj[6] = defaultViewModelInstance.stateMachine;
   const merged = Object.assign(callback(defaultViewModelInstance, closure_3));
-  return jsx(require(4036) /* BaseRive */.BaseRive, { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null });
+  return jsx(require(4077) /* BaseRive */.BaseRive, { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null });
 });
 const forwardRefResult = importAllResult.forwardRef(function BountiesScrollGradientRiveWithBoundary(fallback, ref) {
   let obj = { fallback: fallback.fallback, children: null };
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_8 ref={arg1} />;
-  return jsx(require(4093) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4134) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BountiesScrollGradientRive.tsx");
 

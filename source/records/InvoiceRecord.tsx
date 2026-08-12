@@ -1,9 +1,9 @@
-// Module ID: 3975
-// Function ID: 3976
+// Module ID: 4016
+// Function ID: 4017
 // Name: createFromServer
-// Dependencies: [1931, 3976, 2]
+// Dependencies: [1931, 4017, 2]
 
-// Module 3975 (createFromServer)
+// Module 4016 (createFromServer)
 import "toJS";
 
 const require = arg1;
@@ -134,7 +134,7 @@ InvoiceRecord["createInvoiceFromServer"] = function createInvoiceFromServer(body
   const invoice_items = body.invoice_items;
   let mapped;
   if (invoice_items != null) {
-    mapped = invoice_items.map(require(3976) /* coalesceInvoiceItems */.createInvoiceItemFromServer);
+    mapped = invoice_items.map(require(4017) /* coalesceInvoiceItems */.createInvoiceItemFromServer);
     const tmp3 = require;
   }
   obj[1] = mapped;
@@ -163,7 +163,7 @@ InvoiceRecord["createFromOTPPreview"] = function createFromOTPPreview(invoice_it
   invoice_items = invoice_items.invoice_items;
   let mapped;
   if (invoice_items != null) {
-    mapped = invoice_items.map(require(3976) /* coalesceInvoiceItems */.createInvoiceItemFromServer);
+    mapped = invoice_items.map(require(4017) /* coalesceInvoiceItems */.createInvoiceItemFromServer);
     const tmp3 = require;
   }
   const obj = { id: "", invoiceItems: mapped, total: invoice_items.amount, subtotal: invoice_items.subtotal, currency: invoice_items.currency, tax: invoice_items.tax, taxInclusive: invoice_items.tax_inclusive, subscriptionPeriodStart: null, subscriptionPeriodEnd: null, orbsReward: null, checkoutContext: null };

@@ -1,9 +1,9 @@
-// Module ID: 10149
-// Function ID: 10150
+// Module ID: 10190
+// Function ID: 10191
 // Name: LottieIcon
-// Dependencies: [19, 17, 21, 712, 5777, 1356, 4024, 5720, 2]
+// Dependencies: [19, 17, 21, 712, 5816, 1356, 4065, 5759, 2]
 
-// Module 10149 (LottieIcon)
+// Module 10190 (LottieIcon)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

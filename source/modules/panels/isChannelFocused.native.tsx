@@ -1,10 +1,10 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9808
+// Function ID: 9809
 // Name: getFocusedChannelId
-// Dependencies: [32, 19, 4316, 5945, 4514, 4160, 4158, 4159, 4161, 2]
+// Dependencies: [32, 19, 4357, 5984, 4554, 4201, 4199, 4200, 4202, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 9767 (getFocusedChannelId)
+// Module 9808 (getFocusedChannelId)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getParticipants from "getParticipants";
@@ -16,18 +16,18 @@ const require = arg1;
 function getFocusedChannelId() {
   let params = require;
   let paramsResult3 = dependencyMap;
-  const rootNavigationRef = require(4159) /* getRootNavigationRef */.getRootNavigationRef();
-  const obj = require(4159) /* getRootNavigationRef */;
-  const isChatLockedOpen = require(4161) /* useChatLayout */.getChatLayout().isChatLockedOpen;
+  const rootNavigationRef = require(4200) /* getRootNavigationRef */.getRootNavigationRef();
+  const obj = require(4200) /* getRootNavigationRef */;
+  const isChatLockedOpen = require(4202) /* useChatLayout */.getChatLayout().isChatLockedOpen;
   let tmp2 = null;
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const currentRoute = rootNavigationRef.getCurrentRoute();
-      const coerceChannelRouteResult = params(4158).coerceChannelRoute(currentRoute);
+      const coerceChannelRouteResult = params(4199).coerceChannelRoute(currentRoute);
       if (tmp2 != coerceChannelRouteResult) {
         return coerceChannelRouteResult.params.channelId;
       } else if (isChatLockedOpen) {
-        const coerceGuildsRouteResult = params(4158).coerceGuildsRoute(currentRoute);
+        const coerceGuildsRouteResult = params(4199).coerceGuildsRoute(currentRoute);
         let tmp6;
         if (tmp2 != coerceGuildsRouteResult) {
           const params2 = coerceGuildsRouteResult.params;
@@ -39,14 +39,14 @@ function getFocusedChannelId() {
         }
         return tmp6;
       }
-      const paramsResult = params(4158);
+      const paramsResult = params(4199);
     }
   }
   if (tmp2 !== c9) {
     return c9;
   } else {
-    const tmp19 = importDefault(4160)();
-    let routes2 = params(4158);
+    const tmp19 = importDefault(4201)();
+    let routes2 = params(4199);
     let tmp8;
     if (tmp19 != tmp2) {
       const routes = tmp19.routes;
@@ -65,7 +65,7 @@ function getFocusedChannelId() {
     if (tmp2 == num2) {
       c9 = tmp9;
     } else {
-      routes2 = params(4158);
+      routes2 = params(4199);
       if (!isChatLockedOpen) {
         const state = num2.state;
         let tmp10;
@@ -112,7 +112,7 @@ function getFocusedChannelId() {
     }
     const coerceTabsRouteResult = routes2.coerceTabsRoute(tmp13);
     if (tmp2 != coerceTabsRouteResult) {
-      params = params(4158).coerceGuildsRoute;
+      params = params(4199).coerceGuildsRoute;
       routes2 = coerceTabsRouteResult.state;
       let tmp16;
       if (routes2 != tmp2) {
@@ -139,7 +139,7 @@ function getFocusedChannelId() {
         }
         tmp9 = paramsResult3;
       }
-      const paramsResult2 = params(4158);
+      const paramsResult2 = params(4199);
     }
   }
 }
@@ -153,7 +153,7 @@ export const isChannelFocused = function isChannelFocused() {
 export const useIsChannelFocused = function useIsChannelFocused() {
   const tmp = callback(React.useState(() => null != callback2()), 2);
   let closure_0 = tmp[1];
-  const items = [importDefault(4161)()];
+  const items = [importDefault(4202)()];
   const effect = React.useEffect(() => {
     callback(null != outer1_10());
   }, items);

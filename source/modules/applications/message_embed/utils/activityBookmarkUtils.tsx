@@ -1,10 +1,10 @@
-// Module ID: 7152
-// Function ID: 7153
+// Module ID: 7191
+// Function ID: 7192
 // Name: extractActivityBookmarkParams
 // Dependencies: [1486, 2]
 // Exports: extractActivityBookmarkParams
 
-// Module 7152 (extractActivityBookmarkParams)
+// Module 7191 (extractActivityBookmarkParams)
 const result = require("set").fileFinishedImporting("modules/applications/message_embed/utils/activityBookmarkUtils.tsx");
 
 export const extractActivityBookmarkParams = function extractActivityBookmarkParams(url) {

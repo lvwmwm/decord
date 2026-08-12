@@ -1,10 +1,10 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 9810
+// Function ID: 9811
 // Name: _setUserStatus
-// Dependencies: [5, 5258, 4996, 676, 4148, 1236, 9770, 1374, 1337, 1350, 698, 2]
+// Dependencies: [5, 5297, 5036, 676, 4189, 1236, 9811, 1374, 1337, 1350, 698, 2]
 // Exports: default
 
-// Module 9769 (_setUserStatus)
+// Module 9810 (_setUserStatus)
 import getSystemLocale from "getSystemLocale";
 import initialize from "initialize";
 import filterPlayingActivities from "filterPlayingActivities";
@@ -66,7 +66,7 @@ function _setUserStatus() {
               let obj5;
               c3 = 1;
               globalStats = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

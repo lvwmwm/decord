@@ -1,10 +1,10 @@
-// Module ID: 10985
-// Function ID: 10986
+// Module ID: 11038
+// Function ID: 11039
 // Name: _launchActivityInBotDM
-// Dependencies: [5, 10615, 10616, 4313, 10979, 2]
+// Dependencies: [5, 10668, 10669, 4354, 11032, 2]
 // Exports: launchActivityInBotDM
 
-// Module 10985 (_launchActivityInBotDM)
+// Module 11038 (_launchActivityInBotDM)
 import set from "set";
 
 const require = arg1;
@@ -59,7 +59,7 @@ function _launchActivityInBotDM() {
               let closure_6;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -74,14 +74,14 @@ function _launchActivityInBotDM() {
               const obj2 = { applicationId: null };
               obj2[0] = callback;
               if (obj14.tryLaunchAsFrame(obj2)) {
-                let obj7 = callback(10616);
+                let obj7 = callback(10669);
                 const result = obj7.stashPendingFrameLaunch(callback, { isStart: true });
                 c4 = 3;
                 const obj3 = { value: null, done: true };
                 obj3[0] = Promise.resolve(true);
                 return obj3;
               } else {
-                let obj4 = callback2(4313);
+                let obj4 = callback2(4354);
                 obj4 = { recipientIds: null };
                 obj4[0] = callback2;
                 c3 = 2;
@@ -90,7 +90,7 @@ function _launchActivityInBotDM() {
                 obj5[0] = obj4.openPrivateChannel(obj4);
                 return obj5;
               }
-              obj14 = callback(10615);
+              obj14 = callback(10668);
             }
           } else if (2 === tmp5) {
             if (arg0 === 1) {
@@ -113,7 +113,7 @@ function _launchActivityInBotDM() {
               c3 = 3;
               c4 = 1;
               const obj8 = { value: null, done: false };
-              obj8[0] = callback2(10979)(obj7);
+              obj8[0] = callback2(11032)(obj7);
               return obj8;
             }
           } else if (arg0 === 1) {

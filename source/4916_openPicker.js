@@ -1,0 +1,13 @@
+// Module ID: 4916
+// Function ID: 4917
+// Name: openPicker
+// Dependencies: [4917]
+
+// Module 4916 (openPicker)
+
+export { default } from "RNCImageCropPicker";
+export const openPicker = require("RNCImageCropPicker").openPicker;
+export const openCamera = require("RNCImageCropPicker").openCamera;
+export const openCropper = require("RNCImageCropPicker").openCropper;
+export const clean = require("RNCImageCropPicker").clean;
+export const cleanSingle = require("RNCImageCropPicker").cleanSingle;

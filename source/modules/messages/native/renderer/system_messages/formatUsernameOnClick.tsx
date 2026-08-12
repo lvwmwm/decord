@@ -1,10 +1,10 @@
-// Module ID: 8073
-// Function ID: 8074
+// Module ID: 8112
+// Function ID: 8113
 // Name: formatUsernameOnClick
-// Dependencies: [8072, 2]
+// Dependencies: [8111, 2]
 // Exports: default
 
-// Module 8073 (formatUsernameOnClick)
+// Module 8112 (formatUsernameOnClick)
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/formatUsernameOnClick.tsx");
 
 export default function formatUsernameOnClick(arg0) {

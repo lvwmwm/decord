@@ -1,10 +1,10 @@
-// Module ID: 11002
-// Function ID: 11003
+// Module ID: 11055
+// Function ID: 11056
 // Name: sum
-// Dependencies: [676, 4163, 4161, 2]
+// Dependencies: [676, 4204, 4202, 2]
 // Exports: getDrawerWidth, useDrawerWidth
 
-// Module 11002 (sum)
+// Module 11055 (sum)
 import { DM_WIDTH } from "ME";
 
 const sum = 260 + DM_WIDTH;
@@ -14,9 +14,9 @@ const result = require("useChatLayout").fileFinishedImporting("modules/screen/na
 
 export const DRAWER_LEFT_WIDTH_MIN = sum;
 export const getDrawerWidth = function getDrawerWidth() {
-  const width = require(4163) /* useBaseAppContainerDimensions */.getBaseAppContainerDimensions().width;
-  const obj = require(4163) /* useBaseAppContainerDimensions */;
-  const chatLayout = require(4161) /* useChatLayout */.getChatLayout();
+  const width = require(4204) /* useBaseAppContainerDimensions */.getBaseAppContainerDimensions().width;
+  const obj = require(4204) /* useBaseAppContainerDimensions */;
+  const chatLayout = require(4202) /* useChatLayout */.getChatLayout();
   if (!chatLayout.isChatBesideChannelList) {
     return width;
   } else if (tmp2) {
@@ -27,7 +27,7 @@ export const getDrawerWidth = function getDrawerWidth() {
   }
 };
 export const useDrawerWidth = function useDrawerWidth() {
-  const width = importDefault(4163)().width;
+  const width = importDefault(4204)().width;
   if (!tmp.isChatBesideChannelList) {
     return width;
   } else if (tmp2) {

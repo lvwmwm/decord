@@ -1,10 +1,10 @@
-// Module ID: 7306
-// Function ID: 7307
+// Module ID: 7345
+// Function ID: 7346
 // Name: useSelectedDestinationChannel
-// Dependencies: [19, 5219, 1395, 1391, 3948, 3957, 1922, 676, 7307, 1370, 589, 692, 4638, 1954, 4517, 1236, 4636, 7148, 4148, 4494, 2]
+// Dependencies: [19, 5258, 1395, 1391, 3989, 3998, 1922, 676, 7346, 1370, 589, 692, 4678, 1954, 4557, 1236, 4676, 7187, 4189, 4534, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 7306 (useSelectedDestinationChannel)
+// Module 7345 (useSelectedDestinationChannel)
 import computeChannelName from "computeChannelName";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import createChannelRecord from "createChannelRecord";
@@ -25,7 +25,7 @@ const require = arg1;
 const result = require("createChannelRecord").fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
 
 export const useSelectedDestinationChannel = function useSelectedDestinationChannel(selectedDestinations) {
-  const mapped = selectedDestinations.map(found(7307).getChannelIdFromDestinationId);
+  const mapped = selectedDestinations.map(found(7346).getChannelIdFromDestinationId);
   found = mapped.find(found(1370).isNotNullish);
   const items = [ensureGuildLoaded];
   const items1 = [found];
@@ -64,10 +64,10 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
       tmp6 = tmp7;
     }
     if (null != channel) {
-      let obj = _require(4517);
+      let obj = _require(4557);
       if (obj.isChannelOrGuildNSFW(channel)) {
         if (tmp) {
-          let tmp11Result = tmp11(4517);
+          let tmp11Result = tmp11(4557);
         }
         obj = { label: null, lineClamp: 2 };
         const intl = tmp11(1236).intl;
@@ -87,7 +87,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
             const messageSnapshots = components.messageSnapshots;
           }
           if (components.embeds.length > 0) {
-            tmp11Result = tmp11(4636);
+            tmp11Result = tmp11(4676);
             if (!tmp11Result.canEmbedLinks(type, getUncachedChannelPermissions)) {
               if (!tmp11Result1.shouldStripEmbeds(components)) {
                 const obj1 = { label: null };
@@ -95,7 +95,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
                 obj1[0] = intl3.string(tmp11(1236).t.Wr4RIX);
                 return obj1;
               }
-              tmp11Result1 = tmp11(4636);
+              tmp11Result1 = tmp11(4676);
             }
           } else {
             const messageSnapshots2 = components.messageSnapshots;
@@ -107,11 +107,11 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
               obj2[0] = intl4.string(tmp11(1236).t.Wr4RIX);
               return obj2;
             }
-            tmp11Result2 = tmp11(4636);
+            tmp11Result2 = tmp11(4676);
           }
           const items = [];
           const messageSnapshots3 = components.messageSnapshots;
-          let arraySpreadResult = HermesBuiltin.arraySpread(tmp11(4638).getMessageStickers(components), 0);
+          let arraySpreadResult = HermesBuiltin.arraySpread(tmp11(4678).getMessageStickers(components), 0);
           arraySpreadResult = HermesBuiltin.arraySpread(messageSnapshots3.flatMap((message) => type(table[12]).getMessageStickers(message.message)), arraySpreadResult);
           if (items.length > 0) {
             if (!getUncachedChannelPermissions.can(constants2.USE_EXTERNAL_STICKERS, type)) {
@@ -145,7 +145,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           } else {
             const messageSnapshots4 = components.messageSnapshots;
           }
-          const tmp11Result3 = tmp11(4638);
+          const tmp11Result3 = tmp11(4678);
         }
       }
     }
@@ -157,8 +157,8 @@ export const isRatelimitedInChannel = function isRatelimitedInChannel(channel, o
     tmp = channel.rateLimitPerUser > 0;
   }
   if (tmp) {
-    tmp = !require(7148) /* canBypassSlowmodeHelper */.canBypassSlowmodeHelper(channel, outer1_6);
-    const obj = require(7148) /* canBypassSlowmodeHelper */;
+    tmp = !require(7187) /* canBypassSlowmodeHelper */.canBypassSlowmodeHelper(channel, outer1_6);
+    const obj = require(7187) /* canBypassSlowmodeHelper */;
   }
   return tmp;
 };
@@ -175,8 +175,8 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         if (null != user) {
           nickname = nickname.getNickname(user.id);
           if (nickname == null) {
-            nickname = callback2(4148).getName(user);
-            const obj2 = callback2(4148);
+            nickname = callback2(4189).getName(user);
+            const obj2 = callback2(4189);
           }
           tmp13 = nickname;
         }
@@ -185,7 +185,7 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         channel = channel.getChannel(id);
         let channelName = null;
         if (null != channel) {
-          const obj = callback(4494);
+          const obj = callback(4534);
           channelName = obj.computeChannelName(channel, user, nickname, true);
         }
         return channelName;

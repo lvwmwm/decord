@@ -1,10 +1,10 @@
-// Module ID: 9529
-// Function ID: 9530
+// Module ID: 9569
+// Function ID: 9570
 // Name: ActivityEmoji
-// Dependencies: [19, 21, 4303, 3993, 1435, 7657, 5360, 2]
+// Dependencies: [19, 21, 4344, 4034, 1435, 7696, 5399, 2]
 // Exports: default
 
-// Module 9529 (ActivityEmoji)
+// Module 9569 (ActivityEmoji)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -30,7 +30,7 @@ export default function ActivityEmoji(emoji) {
   const tmp = callback();
   let ReactionIcon = emoji;
   let obj = dependencyMap;
-  const AnimateEmoji = emoji(3993).AnimateEmoji;
+  const AnimateEmoji = emoji(4034).AnimateEmoji;
   let animated;
   const setting = AnimateEmoji.useSetting();
   if (emoji != null) {
@@ -68,7 +68,7 @@ export default function ActivityEmoji(emoji) {
     }
   }
   if (null == emoji) {
-    ReactionIcon = ReactionIcon(7657).ReactionIcon;
+    ReactionIcon = ReactionIcon(7696).ReactionIcon;
     obj = { style: null, size: "sm" };
     obj[0] = style;
     <ReactionIcon style={null} size="sm" />;
@@ -89,6 +89,6 @@ export default function ActivityEmoji(emoji) {
     items2[2] = obj1;
     obj[3] = items2;
     obj[4] = tmp.emoji;
-    jsx(importDefault(5360), { width: null, height: null });
+    jsx(importDefault(5399), { width: null, height: null });
   }
 };

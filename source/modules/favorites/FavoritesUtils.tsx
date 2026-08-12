@@ -2,7 +2,7 @@
 // Function ID: 1914
 // Name: getFavoritesAwareGuildName
 // Dependencies: [1429, 676, 1236, 2]
-// Exports: canFavoriteChannelType, getFavoritesAwareGuildName, isFavoritesGuildCategoryNameValid, isFavoritesGuildId
+// Exports: getFavoritesAwareGuildName, isFavoritableChannel, isFavoritesGuildCategoryNameValid, isFavoritesGuildId
 
 // Module 1913 (getFavoritesAwareGuildName)
 import { FAVORITES_RAW_GUILD_ID } from "date";
@@ -36,16 +36,6 @@ export function isFavoritesGuildId(guildId) {
 export const isFavoritesGuildCategoryNameValid = function isFavoritesGuildCategoryNameValid(closure_0) {
   return "" !== closure_0.trim();
 };
-export const canFavoriteChannelType = function canFavoriteChannelType(record, hasHigherPrivileges) {
-  const isCategoryResult = record.isCategory();
-  let tmp2 = !isCategoryResult;
-  if (!isCategoryResult) {
-    const isThreadResult = record.isThread();
-    let tmp4 = !isThreadResult;
-    if (isThreadResult) {
-      tmp4 = hasHigherPrivileges;
-    }
-    tmp2 = tmp4;
-  }
-  return tmp2;
+export const isFavoritableChannel = function isFavoritableChannel(record) {
+  return !record.isCategory();
 };

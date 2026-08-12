@@ -1,10 +1,10 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 16052
+// Function ID: 16053
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 6878, 13897, 589, 691, 8859, 4730, 6016, 2]
+// Dependencies: [19, 6917, 13954, 589, 691, 8898, 4770, 6055, 2]
 // Exports: useAutoSettingsSearchSessionAnalytics
 
-// Module 15995 (useAutoSettingsSearchSessionAnalytics)
+// Module 16052 (useAutoSettingsSearchSessionAnalytics)
 import noop from "noop";
 import getState from "getState";
 import zustandStore from "zustandStore";
@@ -18,9 +18,9 @@ export const useAutoSettingsSearchSessionAnalytics = function useAutoSettingsSea
     state = state.getState();
     return state === stateFromStores(table[4]).AppStates.ACTIVE;
   });
-  const tmp2 = importDefault(8859)(stateFromStores);
+  const tmp2 = importDefault(8898)(stateFromStores);
   importDefault = tmp2;
-  importDefault(4730)(() => () => {
+  importDefault(4770)(() => () => {
     callback(table[7]).terminate();
   });
   const items1 = [stateFromStores, tmp2];

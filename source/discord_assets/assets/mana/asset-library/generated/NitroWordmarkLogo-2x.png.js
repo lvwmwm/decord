@@ -1,9 +1,9 @@
-// Module ID: 6589
-// Function ID: 6590
+// Module ID: 6628
+// Function ID: 6629
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6589 (metadata)
+// Module 6628 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWordmarkLogo-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/3dafc7ff1f2e9193fca3f13fbd2fe4ab6bbf7f9cb1db461ef7a1567f2fe7e02a.png";

@@ -1,10 +1,10 @@
-// Module ID: 8007
-// Function ID: 8008
+// Module ID: 8046
+// Function ID: 8047
 // Name: RestrictedUser
-// Dependencies: [32, 19, 17, 3957, 5139, 5132, 21, 4303, 712, 589, 1236, 1297, 8008, 4299, 4271, 8009, 5328, 4714, 5397, 8010, 2]
+// Dependencies: [32, 19, 17, 3998, 5179, 5172, 21, 4344, 712, 589, 1236, 1297, 8047, 4340, 4312, 8048, 5367, 4754, 5436, 8049, 2]
 // Exports: default
 
-// Module 8007 (RestrictedUser)
+// Module 8046 (RestrictedUser)
 import _slicedToArray from "_slicedToArray";
 import renderDefaultEmpty from "renderDefaultEmpty";
 import { View } from "Button";
@@ -55,7 +55,7 @@ function RestrictedUser(guildId) {
     obj2[0] = items3;
     const obj3 = { style: null, source: null, color: null };
     obj3[0] = tmp.icon;
-    obj3[1] = user(8008);
+    obj3[1] = user(8047);
     obj3[2] = user(712).unsafe_rawColors.WHITE;
     obj2[1] = tmp11(tmp2(1297).Icon, obj3);
     speaker = tmp11(tmp10, obj2);
@@ -66,7 +66,7 @@ function RestrictedUser(guildId) {
   const obj4 = { style: tmp.flex, children: null };
   const obj5 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: null };
   obj5[2] = participant.user.toString();
-  const items5 = [callback(require(4299) /* Text */.Text, obj5), ];
+  const items5 = [callback(require(4340) /* Text */.Text, obj5), ];
   const user2 = participant.user;
   const hasUniqueUsernameResult = user2.hasUniqueUsername();
   let tmp9Result = !hasUniqueUsernameResult;
@@ -74,7 +74,7 @@ function RestrictedUser(guildId) {
     const obj6 = { variant: "text-sm/medium", color: "text-default", children: null };
     const items6 = ["#", participant.user.discriminator];
     obj6[2] = items6;
-    tmp9Result = tmp9(tmp2(4299).Text, obj6);
+    tmp9Result = tmp9(tmp2(4340).Text, obj6);
   }
   items5[1] = tmp9Result;
   obj4[1] = items5;
@@ -93,7 +93,7 @@ function RestrictedUser(guildId) {
   obj8[1] = stringResult1;
   const items8 = [callback(require(1297) /* Button */.LegacyText, obj8), ];
   const items9 = [" ", "| ", stringResult];
-  items8[1] = closure_10(require(4299) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted", children: items9 });
+  items8[1] = closure_10(require(4340) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted", children: items9 });
   obj7[1] = items8;
   items7[1] = closure_10(View, obj7);
   obj9[0] = items7;
@@ -114,12 +114,12 @@ function StageBlockedUsersActionSheetHeader(arg0) {
       obj[0] = tmp.title;
       const intl3 = require(1236) /* getSystemLocale */.intl;
       obj[4] = intl3.string(require(1236) /* getSystemLocale */.t.Uzdyho);
-      const items = [callback(require(4299) /* Text */.Text, obj), ];
+      const items = [callback(require(4340) /* Text */.Text, obj), ];
       const obj1 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
       obj1[0] = tmp.description;
       const intl4 = require(1236) /* getSystemLocale */.intl;
       obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t["P/KFXz"]);
-      items[1] = callback(require(4299) /* Text */.Text, obj1);
+      items[1] = callback(require(4340) /* Text */.Text, obj1);
       obj[1] = items;
       let obj6 = obj;
     }
@@ -134,14 +134,14 @@ function StageBlockedUsersActionSheetHeader(arg0) {
     const obj3 = { number: null };
     obj3[0] = ignoredUserCount;
     obj2[4] = intl.format(require(1236) /* getSystemLocale */.t.wvygk8, obj3);
-    const items1 = [callback(require(4299) /* Text */.Text, obj2), ];
+    const items1 = [callback(require(4340) /* Text */.Text, obj2), ];
     const obj4 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj4[0] = tmp.description;
     const intl2 = require(1236) /* getSystemLocale */.intl;
     const obj5 = { number: null };
     obj5[0] = ignoredUserCount;
     obj4[3] = intl2.format(require(1236) /* getSystemLocale */.t.Ri3o33, obj5);
-    items1[1] = callback(require(4299) /* Text */.Text, obj4);
+    items1[1] = callback(require(4340) /* Text */.Text, obj4);
     obj[1] = items1;
     obj6 = obj;
   } else {
@@ -153,14 +153,14 @@ function StageBlockedUsersActionSheetHeader(arg0) {
     const obj8 = { number: null };
     obj8[0] = blockedUserCount;
     obj7[4] = intl5.format(require(1236) /* getSystemLocale */.t.HviVA9, obj8);
-    const items2 = [callback(require(4299) /* Text */.Text, obj7), ];
+    const items2 = [callback(require(4340) /* Text */.Text, obj7), ];
     const obj9 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj9[0] = tmp.description;
     const intl6 = require(1236) /* getSystemLocale */.intl;
     const obj10 = { number: null };
     obj10[0] = blockedUserCount;
     obj9[3] = intl6.format(require(1236) /* getSystemLocale */.t["28qZMU"], obj10);
-    items2[1] = callback(require(4299) /* Text */.Text, obj9);
+    items2[1] = callback(require(4340) /* Text */.Text, obj9);
     obj6[1] = items2;
   }
 }
@@ -190,9 +190,9 @@ export default function StageBlockedUsersActionSheet(channel) {
   const tmp = createCacheKey();
   const tmp2 = items1(React.useState(0), 2);
   dependencyMap = tmp2[1];
-  let obj = channel(8009);
+  let obj = channel(8048);
   const stageBlockedUsers = obj.useStageBlockedUsers(channel.id);
-  let obj1 = channel(8009);
+  let obj1 = channel(8048);
   const stageIgnoredUsers = obj1.useStageIgnoredUsers(channel.id);
   const callback = React.useCallback((nativeEvent) => {
     dependencyMap(nativeEvent.nativeEvent.layout.height);
@@ -203,24 +203,24 @@ export default function StageBlockedUsersActionSheet(channel) {
   obj[0] = intl.string(channel(1236).t.mbD50D);
   obj[1] = function onPress() {
     onAccept(channel);
-    onAccept(4271).hideActionSheet(outer1_8);
+    onAccept(4312).hideActionSheet(outer1_8);
   };
-  const items = [callback(channel(4714).Button, obj), ];
+  const items = [callback(channel(4754).Button, obj), ];
   obj1 = { variant: "secondary", text: null, onPress: null };
   const intl2 = channel(1236).intl;
   obj1[1] = intl2.string(channel(1236).t.CZGqeT);
   obj1[2] = function handleDismiss() {
-    onAccept(4271).hideActionSheet(closure_8);
+    onAccept(4312).hideActionSheet(closure_8);
   };
-  items[1] = callback(channel(4714).Button, obj1);
+  items[1] = callback(channel(4754).Button, obj1);
   obj[3] = items;
   items1 = [];
   HermesBuiltin.arraySpread(stageIgnoredUsers, HermesBuiltin.arraySpread(stageBlockedUsers, 0));
   const obj2 = { scrollable: true, header: null, footer: null, children: null };
   obj2[1] = callback(StageBlockedUsersActionSheetHeader, { blockedUserCount: stageBlockedUsers.length, ignoredUserCount: stageIgnoredUsers.length });
-  obj2[2] = callback2(channel(5328).SafeAreaPaddingView, obj);
+  obj2[2] = callback2(channel(5367).SafeAreaPaddingView, obj);
   const obj3 = { inActionSheet: true, contentContainerStyle: tmp.container, accessibilityLabel: null, sections: null, renderItem: null, itemSize: null };
-  const tmp4 = callback2(channel(5328).SafeAreaPaddingView, obj);
+  const tmp4 = callback2(channel(5367).SafeAreaPaddingView, obj);
   const intl3 = channel(1236).intl;
   obj3[2] = intl3.string(channel(1236).t["3VoRLH"]);
   const items2 = [items1.length];
@@ -231,7 +231,7 @@ export default function StageBlockedUsersActionSheet(channel) {
   obj3[5] = function itemSize() {
     return 48;
   };
-  const items3 = [callback(onAccept(8010), obj3), callback(View, { style: { height: tmp2[0] } })];
+  const items3 = [callback(onAccept(8049), obj3), callback(View, { style: { height: tmp2[0] } })];
   obj2[3] = items3;
-  return callback2(channel(5397).BottomSheet, obj2);
+  return callback2(channel(5436).BottomSheet, obj2);
 };

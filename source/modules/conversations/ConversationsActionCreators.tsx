@@ -1,10 +1,10 @@
-// Module ID: 8562
-// Function ID: 8563
+// Module ID: 8601
+// Function ID: 8602
 // Name: _fetchChannelConversations
-// Dependencies: [5, 7058, 8563, 7060, 676, 8560, 709, 530, 6920, 8564, 8565, 8572, 2]
+// Dependencies: [5, 7097, 8602, 7099, 676, 8599, 709, 530, 6959, 8603, 8604, 8611, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 8562 (_fetchChannelConversations)
+// Module 8601 (_fetchChannelConversations)
 import apexExperiment from "apexExperiment";
 import removePendingListFetch from "removePendingListFetch";
 import initialize from "initialize";
@@ -78,7 +78,7 @@ function _fetchChannelConversations() {
               let conversations;
               hydrateMessages = 1;
               c8 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp7) {
@@ -139,7 +139,7 @@ function _fetchChannelConversations() {
                     return obj5;
                   }
                 }
-                obj15 = callback(8560);
+                obj15 = callback(8599);
               }
             } else if (2 === tmp7) {
               c6 = 0;
@@ -314,7 +314,7 @@ function _fetchConversationMessages() {
                   }
                 }
               }
-              obj14 = callback(8560);
+              obj14 = callback(8599);
               tmp52 = callback;
             }
           } else {
@@ -405,8 +405,8 @@ export const setSelectedConversation = function setSelectedConversation(channelI
     obj = { channelId: null, messageId: null, flash: false };
     obj[0] = channelId;
     obj[1] = conversationMetadata.conversation.startMessageId;
-    importDefault(6920).jumpToMessage(obj);
-    const tmpResult = importDefault(6920);
+    importDefault(6959).jumpToMessage(obj);
+    const tmpResult = importDefault(6959);
   }
 };
 export const clearConversationSelection = function clearConversationSelection(channelId, conversationId) {
@@ -421,11 +421,11 @@ export const setConversationFeedbackRating = function setConversationFeedbackRat
 };
 export { fetchConversationMessages };
 export const trackTopicalNavigationEntrypointImpression = function trackTopicalNavigationEntrypointImpression(id, stateFromStores1) {
-  const ConversationsAnalytics = require(8564) /* ConversationsAnalytics */.ConversationsAnalytics;
+  const ConversationsAnalytics = require(8603) /* ConversationsAnalytics */.ConversationsAnalytics;
   const result = ConversationsAnalytics.trackEntrypointImpression({ channelId: id, conversationCount: stateFromStores1 });
   if (initialize.shouldTriggerOnNextExposure()) {
-    importDefault(8565).fireSurveyAction(require(8572) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
-    const obj2 = importDefault(8565);
+    importDefault(8604).fireSurveyAction(require(8611) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
+    const obj2 = importDefault(8604);
   }
   importDefault(709).dispatch({ type: "TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION" });
 };

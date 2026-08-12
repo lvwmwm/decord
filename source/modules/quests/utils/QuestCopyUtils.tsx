@@ -1,10 +1,10 @@
-// Module ID: 10487
-// Function ID: 10488
+// Module ID: 10528
+// Function ID: 10529
 // Name: getContextualEntrypointHeading
-// Dependencies: [5161, 1236, 9522, 9523, 9527, 7189, 7178, 5756, 2]
+// Dependencies: [5201, 1236, 9562, 9563, 9567, 7228, 7217, 5795, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 10487 (getContextualEntrypointHeading)
+// Module 10528 (getContextualEntrypointHeading)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 
 let c3;
@@ -160,18 +160,18 @@ export const getCtaLink = function getCtaLink(config) {
 };
 export const copyShareLink = function copyShareLink(id, ctaContent) {
   ctaContent = ctaContent.ctaContent;
-  let obj = require(9522) /* apexExperiment */;
-  if (obj.shouldMigrateToAdAnalyticsInterface(require(9522) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
-    let tmpResult = tmp(9523);
+  let obj = require(9562) /* apexExperiment */;
+  if (obj.shouldMigrateToAdAnalyticsInterface(require(9562) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
+    let tmpResult = tmp(9563);
     obj = { type: null, adCreativeType: null, adCreativeId: null, questContentCTA: null, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
-    obj[0] = tmp(9527).AdUserActionType.CLICK_INTERNAL;
-    obj[1] = tmp(7189).AdCreativeType.QUEST;
+    obj[0] = tmp(9567).AdUserActionType.CLICK_INTERNAL;
+    obj[1] = tmp(7228).AdCreativeType.QUEST;
     obj[2] = id;
     obj[3] = ctaContent;
     ({ content: obj5[4], sourceQuestContent: obj5[5], position: obj5[6], impressionId: obj5[7] } = ctaContent);
     tmpResult.captureAdUserAction(obj);
   } else {
-    tmpResult = tmp(7178);
+    tmpResult = tmp(7217);
     obj = { questId: null, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null };
     obj[0] = id;
     obj[1] = ctaContent.content;
@@ -179,7 +179,7 @@ export const copyShareLink = function copyShareLink(id, ctaContent) {
     ({ position: obj3[3], impressionId: obj3[4], sourceQuestContent: obj3[5] } = ctaContent);
     const result = tmpResult.trackQuestContentClicked(obj);
   }
-  require(5756) /* _copy */.copy("" + location.protocol + "//" + location.host + "/quests/" + id);
+  require(5795) /* _copy */.copy("" + location.protocol + "//" + location.host + "/quests/" + id);
 };
 export const getDefaultReward = function getDefaultReward(config) {
   if (0 === config.rewardsConfig.rewards.length) {

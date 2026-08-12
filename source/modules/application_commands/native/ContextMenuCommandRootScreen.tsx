@@ -1,12 +1,12 @@
-// Module ID: 15958
-// Function ID: 15959
+// Module ID: 16015
+// Function ID: 16016
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 1910, 4737, 21, 4303, 712, 589, 9543, 8352, 10000, 5369, 8529, 9458, 1236, 4299, 15959, 5994, 8532, 2]
+// Dependencies: [32, 19, 17, 1910, 4777, 21, 4344, 712, 589, 9583, 8391, 10041, 5408, 8568, 9498, 1236, 4340, 16016, 6033, 8571, 2]
 // Exports: default
 
-// Module 15958 (ContextMenuCommandRootScreen)
+// Module 16015 (ContextMenuCommandRootScreen)
 import _slicedToArray from "_slicedToArray";
-import module_8532 from "module_8532";
+import module_8571 from "module_8571";
 import { View } from "ContextMenuCommandItem";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";

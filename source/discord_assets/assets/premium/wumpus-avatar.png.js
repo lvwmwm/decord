@@ -1,9 +1,9 @@
-// Module ID: 12577
-// Function ID: 12578
+// Module ID: 12636
+// Function ID: 12637
 // Name: set
 // Dependencies: [2]
 
-// Module 12577 (set)
+// Module 12636 (set)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/premium/wumpus-avatar.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/2532e8cd0600ccfbc61ff81c21959bde90a6645d0e71644a92f6cde5bfc48439.png";

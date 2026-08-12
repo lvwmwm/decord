@@ -1,6 +1,6 @@
 // Module ID: 1208
 // Function ID: 1209
-// Dependencies: [17, 3, 1209, 810, 13476, 809, 1625, 2]
+// Dependencies: [17, 3, 1209, 810, 13533, 809, 1625, 2]
 
 // Module 1208
 import { NativeModules } from "get ActivityIndicator";
@@ -32,8 +32,8 @@ let obj = {
   },
   captureException(arg0, extra) {
     const _require = arg0;
-    const importAll = _require(13476).getUpdatedOptions(extra);
-    const obj = _require(13476);
+    const importAll = _require(13533).getUpdatedOptions(extra);
+    const obj = _require(13533);
     importAll(810).withScope((setTags) => {
       if (null != callback) {
         if (null != tmp.tags) {
@@ -49,7 +49,7 @@ let obj = {
   },
   captureCrash(error, extra) {
     const _require = error;
-    const updatedOptions = _require(13476).getUpdatedOptions(extra);
+    const updatedOptions = _require(13533).getUpdatedOptions(extra);
     let tags;
     if (updatedOptions != null) {
       tags = updatedOptions.tags;
@@ -61,7 +61,7 @@ let obj = {
       }
     }
     const dependencyMap = Object.assign({ crash: "true" }, {});
-    let obj = _require(13476);
+    let obj = _require(13533);
     updatedOptions(810).withScope((setExtras) => {
       if (tmp2) {
         setExtras.setExtras(tmp.extra);
@@ -91,8 +91,8 @@ let obj = {
   },
   captureMessage(arg0, extra) {
     const _require = arg0;
-    const updatedOptions = _require(13476).getUpdatedOptions(extra);
-    const obj = _require(13476);
+    const updatedOptions = _require(13533).getUpdatedOptions(extra);
+    const obj = _require(13533);
     importAll(810).withScope((setExtras) => {
       if (tmp2) {
         setExtras.setExtras(tmp.extra);
@@ -189,7 +189,7 @@ let obj = {
                 if (str != null) {
                   formatted = str.toLowerCase();
                 }
-                let obj = { type: "y", event_id: 0, timestamp: true, level: true, tags: null };
+                let obj = { type: "y", event_id: 0.8, timestamp: null, level: 0.3, tags: null };
                 obj[1] = timestamp.event_id;
                 obj[2] = result;
                 obj[3] = formatted;

@@ -1,22 +1,22 @@
-// Module ID: 15298
-// Function ID: 15299
+// Module ID: 15355
+// Function ID: 15356
 // Name: useShouldShowGuildThemeMemberCoachmark
-// Dependencies: [4191, 11877, 4233, 4232, 15299, 4210, 2]
+// Dependencies: [4232, 11934, 4274, 4273, 15356, 4251, 2]
 // Exports: default
 
-// Module 15298 (useShouldShowGuildThemeMemberCoachmark)
+// Module 15355 (useShouldShowGuildThemeMemberCoachmark)
 import { GUILD_THEME_POWERUP_BOOST_PRICE as closure_3 } from "BoostedGuildTiers";
 
 const result = require("experiment").fileFinishedImporting("modules/premium/powerups/hooks/useShouldShowGuildThemeMemberCoachmark.tsx");
 
 export default function useShouldShowGuildThemeMemberCoachmark(guildId) {
-  const tmp = importDefault(11877)(guildId);
-  let serverThemeEnabled = require(4233) /* experiment */.useServerThemeEnabled(guildId, "useShouldShowGuildThemeMemberCoachmark");
-  const obj = require(4233) /* experiment */;
-  const serverThemeUserEnabled = require(4232) /* apexExperiment */.useServerThemeUserEnabled("useShouldShowGuildThemeMemberCoachmark");
-  const obj2 = require(4232) /* apexExperiment */;
-  const tmp4 = importDefault(15299)(guildId);
-  const isLoading = importDefault(4210)(guildId).isLoading;
+  const tmp = importDefault(11934)(guildId);
+  let serverThemeEnabled = require(4274) /* experiment */.useServerThemeEnabled(guildId, "useShouldShowGuildThemeMemberCoachmark");
+  const obj = require(4274) /* experiment */;
+  const serverThemeUserEnabled = require(4273) /* apexExperiment */.useServerThemeUserEnabled("useShouldShowGuildThemeMemberCoachmark");
+  const obj2 = require(4273) /* apexExperiment */;
+  const tmp4 = importDefault(15356)(guildId);
+  const isLoading = importDefault(4251)(guildId).isLoading;
   let tmp7 = !isLoading;
   if (!isLoading) {
     if (serverThemeEnabled) {

@@ -1,9 +1,9 @@
-// Module ID: 6886
-// Function ID: 6887
+// Module ID: 6925
+// Function ID: 6926
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 6886 (initialize)
+// Module 6925 (initialize)
 import { PersistedStore } from "initialize";
 
 let closure_0 = { giftOptionsReceiptMap: {} };

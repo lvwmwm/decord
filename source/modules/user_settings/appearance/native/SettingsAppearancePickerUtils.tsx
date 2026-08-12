@@ -1,16 +1,16 @@
-// Module ID: 14543
-// Function ID: 14544
+// Module ID: 14600
+// Function ID: 14601
 // Name: getMaxColors
-// Dependencies: [19, 505, 4236, 1349, 4153, 4152, 712, 1339, 4024, 1236, 2]
+// Dependencies: [19, 505, 4277, 1349, 4194, 4193, 712, 1339, 4065, 1236, 2]
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 14543 (getMaxColors)
+// Module 14600 (getMaxColors)
 import noop from "noop";
 import { ThemeTypes } from "sum";
 
 const require = arg1;
 function getMaxColors() {
-  const allMobileThemes = require(4236) /* getCustomThemesName */.getAllMobileThemes();
+  const allMobileThemes = require(4277) /* getCustomThemesName */.getAllMobileThemes();
   let num = 0;
   const iter = allMobileThemes[Symbol.iterator]();
   const nextResult = iter.next();
@@ -261,7 +261,7 @@ export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThe
 export const useLaunchWelcomeSystemTheme = function useLaunchWelcomeSystemTheme() {
   let tmp = importDefault;
   const tmp4 = importDefault(1339)() === ThemeTypes.LIGHT ? ThemeTypes.LIGHT : ThemeTypes.DARKER;
-  token = token(4024).useToken(tmp(712).colors.BACKGROUND_BASE_LOW, tmp4);
+  token = token(4065).useToken(tmp(712).colors.BACKGROUND_BASE_LOW, tmp4);
   let items = [token];
   return React.useMemo(() => {
     let obj = { theme: "system", name: null, midpointPercentage: 50, angle: 0, colors: null };

@@ -1,9 +1,9 @@
-// Module ID: 3952
-// Function ID: 3953
+// Module ID: 3993
+// Function ID: 3994
 // Name: MemberSafetyPagePermissions
 // Dependencies: [676, 506, 2]
 
-// Module 3952 (MemberSafetyPagePermissions)
+// Module 3993 (MemberSafetyPagePermissions)
 import { Permissions } from "ME";
 import importAllResult from "fromString";
 

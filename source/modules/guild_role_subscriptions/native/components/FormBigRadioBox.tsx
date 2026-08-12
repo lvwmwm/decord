@@ -1,10 +1,10 @@
-// Module ID: 16825
-// Function ID: 16826
+// Module ID: 16883
+// Function ID: 16884
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 4303, 712, 4032, 9063, 1297, 4299, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 4073, 9102, 1297, 4340, 2]
 // Exports: default
 
-// Module 16825 (FormBigRadioBox)
+// Module 16883 (FormBigRadioBox)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -45,7 +45,7 @@ export default function FormBigRadioBox(arg0) {
     disabled = false;
   }
   const tmp = createCacheKey();
-  let obj = require(4032) /* useCheckboxA11yNative */;
+  let obj = require(4073) /* useCheckboxA11yNative */;
   const radioA11yNative = obj.useRadioA11yNative({ selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const items = [tmp.container, , , ];
@@ -73,12 +73,12 @@ export default function FormBigRadioBox(arg0) {
     selected = tmp.iconContainerSelected;
   }
   const tmp5 = closure_5;
-  const tmp6 = importDefault(9063);
+  const tmp6 = importDefault(9102);
   const tmp9 = View;
   items2[1] = selected;
   items1[1] = callback(tmp9, { style: items2, children: callback(require(1297) /* Button */.Icon, { source: icon }) });
-  items1[2] = callback(require(4299) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title });
-  items1[3] = callback(require(4299) /* Text */.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: description });
+  items1[2] = callback(require(4340) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title });
+  items1[3] = callback(require(4340) /* Text */.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: description });
   obj[4] = items1;
   return tmp5(tmp6, obj);
 };

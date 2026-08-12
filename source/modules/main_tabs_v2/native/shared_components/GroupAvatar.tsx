@@ -1,10 +1,10 @@
-// Module ID: 12319
-// Function ID: 12320
+// Module ID: 12382
+// Function ID: 12383
 // Name: AnimatedContainer
-// Dependencies: [19, 17, 4295, 21, 4303, 712, 5158, 1367, 1363, 5329, 647, 4042, 4304, 4713, 8197, 4299, 5268, 2]
+// Dependencies: [19, 17, 4336, 21, 4344, 712, 5198, 1367, 1363, 5368, 647, 4083, 4345, 4753, 8236, 4340, 5307, 2]
 // Exports: default
 
-// Module 12319 (AnimatedContainer)
+// Module 12382 (AnimatedContainer)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -122,7 +122,7 @@ function AnimatedContainer(scale) {
 }
 function GroupMemberCount(count) {
   count = count.count;
-  let obj = require(8197) /* apexExperiment */;
+  let obj = require(8236) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GroupAvatar");
   const tmp3 = callback2(importDefault(1367)("GroupAvatar"));
   obj = { style: tmp3.avatarWrapper, children: null };
@@ -135,7 +135,7 @@ function GroupMemberCount(count) {
     }
   }
   const items = ["+", count];
-  obj[1] = closure_7(require(4299) /* Text */.Text, { variant: str, children: items });
+  obj[1] = closure_7(require(4340) /* Text */.Text, { variant: str, children: items });
   obj[1] = closure_6(View, obj);
   return closure_6(View, obj);
 }
@@ -158,7 +158,7 @@ function GroupMemberAvatar(guildId) {
     obj = { style: null, source: null };
     obj[0] = tmp3.avatar;
     obj[1] = memo;
-    obj[1] = callback(user(5268), obj);
+    obj[1] = callback(user(5307), obj);
     tmp5 = callback(View, obj);
   }
   return tmp5;
@@ -227,7 +227,7 @@ let closure_12 = createCacheKey.createStyles((arg0) => {
   const obj4 = { shadowColor: BLACK1, shadowOpacity: null, shadowOffset: null, shadowRadius: null };
   let DARK_03_LIGHT_02;
   if (!arg0) {
-    DARK_03_LIGHT_02 = require(5158) /* result */.DARK_03_LIGHT_02;
+    DARK_03_LIGHT_02 = require(5198) /* result */.DARK_03_LIGHT_02;
   }
   obj4[1] = DARK_03_LIGHT_02;
   let obj5;

@@ -1,9 +1,9 @@
-// Module ID: 10417
-// Function ID: 10418
+// Module ID: 10458
+// Function ID: 10459
 // Name: updateGiftCode
-// Dependencies: [9617, 676, 4188, 3902, 4538, 709, 10418, 589, 2]
+// Dependencies: [9657, 676, 4229, 3943, 4578, 709, 10459, 589, 2]
 
-// Module 10417 (updateGiftCode)
+// Module 10458 (updateGiftCode)
 import frozen from "frozen";
 import ME from "ME";
 import { Store } from "initialize";
@@ -22,14 +22,14 @@ function updateGiftCode(giftCode) {
   } else {
     const result1 = set(code, fromServer);
     if (null != fromServer.expiresAt) {
-      const timeout = new code(4188).Timeout();
+      const timeout = new code(4229).Timeout();
       closure_7[code] = timeout;
       value = obj.get(code);
       if (null != value) {
         if (null != value.expiresAt) {
           const expiresAt = value.expiresAt;
           const valueOfResult = expiresAt.valueOf();
-          const diff = valueOfResult - importDefault(3902)().valueOf();
+          const diff = valueOfResult - importDefault(3943)().valueOf();
           if (diff <= 0) {
             obj.delete(code);
             delete tmp2[tmp];
@@ -110,7 +110,7 @@ function updateGiftCode(giftCode) {
               }
             });
           }
-          const obj4 = importDefault(3902)();
+          const obj4 = importDefault(3943)();
         }
       }
       tmp18 = closure_7;
@@ -127,9 +127,9 @@ function resolveMessageGiftCodes(message, arg1) {
       return false;
     }
   }
-  let obj = require(4538) /* _resolveGiftCode */;
-  const isGiftCodeEmbedResult = require(4538) /* _resolveGiftCode */.isGiftCodeEmbed(message);
-  const findGiftCodes = require(4538) /* _resolveGiftCode */.findGiftCodes;
+  let obj = require(4578) /* _resolveGiftCode */;
+  const isGiftCodeEmbedResult = require(4578) /* _resolveGiftCode */.isGiftCodeEmbed(message);
+  const findGiftCodes = require(4578) /* _resolveGiftCode */.findGiftCodes;
   if (isGiftCodeEmbedResult) {
     let embeds;
     if (message != null) {
@@ -252,10 +252,10 @@ prototype["getIsAccepting"] = function getIsAccepting(code) {
   return closure_10.includes(code);
 };
 prototype["getUserGiftCodesFetchingForSKUAndPlan"] = function getUserGiftCodesFetchingForSKUAndPlan(skuId, subscriptionPlanId) {
-  return set.has(require(4538) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
+  return set.has(require(4578) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
 };
 prototype["getUserGiftCodesLoadedAtForSKUAndPlan"] = function getUserGiftCodesLoadedAtForSKUAndPlan(skuId, subscriptionPlanId) {
-  const obj = require(4538) /* _resolveGiftCode */;
+  const obj = require(4578) /* _resolveGiftCode */;
   return table2[obj.makeComboId(obj, skuId, subscriptionPlanId)];
 };
 prototype["getResolvingCodes"] = function getResolvingCodes() {
@@ -360,7 +360,7 @@ const giftCodeStore = new GiftCodeStore(require("dispatcher"), {
     let skuId;
     let subscriptionPlanId;
     ({ skuId, subscriptionPlanId } = arg0);
-    set.add(require(4538) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
+    set.add(require(4578) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
   },
   GIFT_CODES_FETCH_SUCCESS: function handleGiftCodesFetchSuccess(giftCodes) {
     let skuId;
@@ -368,7 +368,7 @@ const giftCodeStore = new GiftCodeStore(require("dispatcher"), {
     giftCodes = giftCodes.giftCodes;
     ({ skuId, subscriptionPlanId } = giftCodes);
     const item = giftCodes.forEach(updateGiftCode);
-    const comboId = require(4538) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId);
+    const comboId = require(4578) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId);
     closure_13[comboId] = Date.now();
     set.delete(comboId);
   },
@@ -376,7 +376,7 @@ const giftCodeStore = new GiftCodeStore(require("dispatcher"), {
     let skuId;
     let subscriptionPlanId;
     ({ skuId, subscriptionPlanId } = arg0);
-    set.delete(require(4538) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
+    set.delete(require(4578) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
   },
   MESSAGE_CREATE: handleMessage,
   MESSAGE_UPDATE: handleMessage,

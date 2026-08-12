@@ -1,10 +1,10 @@
-// Module ID: 7789
-// Function ID: 7790
+// Module ID: 7828
+// Function ID: 7829
 // Name: StageSparkleInner
-// Dependencies: [19, 17, 21, 4303, 712, 7790, 5268, 7791, 4031, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 7829, 5307, 7830, 4072, 2]
 // Exports: default
 
-// Module 7789 (StageSparkleInner)
+// Module 7828 (StageSparkleInner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -18,7 +18,7 @@ function StageSparkleInner(style) {
   let icon;
   ({ IconComponent, icon } = style);
   if (icon === undefined) {
-    icon = importDefault(7790);
+    icon = importDefault(7829);
   }
   const tmp3 = createCacheKey();
   let obj = { style: items, children: null };
@@ -33,14 +33,14 @@ function StageSparkleInner(style) {
     const obj1 = { source: null, style: null };
     obj1[0] = icon;
     obj1[1] = tmp3.iconStyle;
-    tmp6Result = tmp6(importDefault(5268), obj1);
+    tmp6Result = tmp6(importDefault(5307), obj1);
     tmp10 = importDefault;
   }
   obj[1] = tmp6Result;
   const items1 = [closure_4(View, obj), ];
   const obj2 = { style: tmp3.sparkles, source: null };
-  obj2[1] = tmp10(7791);
-  items1[1] = closure_4(tmp10(5268), obj2);
+  obj2[1] = tmp10(7830);
+  items1[1] = closure_4(tmp10(5307), obj2);
   obj[1] = items1;
   return closure_5(View, obj);
 }
@@ -63,7 +63,7 @@ export default function StageSparkle(theme) {
     obj = {};
     const merged1 = Object.assign(merged);
     obj[1] = callback(StageSparkleInner, obj);
-    let tmp7 = callback(require(4031) /* ManaContext */.ThemeContextProvider, obj);
+    let tmp7 = callback(require(4072) /* ManaContext */.ThemeContextProvider, obj);
   } else {
     obj = {};
     const merged2 = Object.assign(merged);

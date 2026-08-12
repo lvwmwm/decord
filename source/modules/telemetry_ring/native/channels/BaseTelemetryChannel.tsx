@@ -1,9 +1,9 @@
-// Module ID: 13468
-// Function ID: 13469
+// Module ID: 13525
+// Function ID: 13526
 // Name: append
 // Dependencies: [2]
 
-// Module 13468 (append)
+// Module 13525 (append)
 const result = require("set").fileFinishedImporting("modules/telemetry_ring/native/channels/BaseTelemetryChannel.tsx");
 class BaseTelemetryChannel {
   constructor(arg0, arg1) {

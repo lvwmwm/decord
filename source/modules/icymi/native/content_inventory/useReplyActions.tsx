@@ -1,10 +1,10 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 15694
+// Function ID: 15695
 // Name: useReplyActions
-// Dependencies: [5, 19, 1391, 4640, 1922, 1925, 4296, 21, 589, 8238, 8362, 4313, 15639, 4148, 7143, 6920, 15635, 4271, 4021, 1236, 14142, 8919, 8643, 7223, 15639, 2007, 2]
+// Dependencies: [5, 19, 1391, 4680, 1922, 1925, 4337, 21, 589, 8277, 8401, 4354, 15695, 4189, 7182, 6959, 15691, 4312, 4062, 1236, 14199, 8958, 8682, 7262, 15695, 2007, 2]
 // Exports: useReplyActions
 
-// Module 15638 (useReplyActions)
+// Module 15694 (useReplyActions)
 import set from "set";
 import getSystemLocale from "getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -12,7 +12,7 @@ import { DraftType } from "handleChanged";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { EmojiIntention } from "set";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
-import { jsx } from "module_8919";
+import { jsx } from "module_8958";
 
 const require = arg1;
 let result = require("ensureGuildLoaded").fileFinishedImporting("modules/icymi/native/content_inventory/useReplyActions.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12338
+// Function ID: 12339
 // Name: AddAppButton
-// Dependencies: [5, 32, 19, 8344, 676, 1498, 21, 11536, 10625, 4271, 5756, 11523, 4020, 1486, 7957, 9438, 1236, 4714, 712, 5729, 4313, 4166, 1626, 698, 2]
+// Dependencies: [5, 32, 19, 8383, 676, 1498, 21, 11593, 10678, 4312, 5795, 11580, 4061, 1486, 7996, 9478, 1236, 4754, 712, 5768, 4354, 4207, 1626, 698, 2]
 // Exports: default
 
-// Module 12275 (AddAppButton)
+// Module 12338 (AddAppButton)
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import _slicedToArray from "_slicedToArray";
 import fetchApplication from "fetchApplication";
@@ -31,7 +31,7 @@ function AddAppButton(application) {
   const customInstallUrl = application.customInstallUrl;
   if (null != customInstallUrl) {
     if (!obj2.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(7957).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(7996).LinkExternalSmallIcon;
       let tmp6 = application;
     }
     const items1 = [application];
@@ -61,9 +61,9 @@ function AddAppButton(application) {
     obj = { size: "sm", color: null };
     obj[1] = guildId(712).colors.WHITE;
     obj[5] = <PlusSmallIcon size="sm" color={null} />;
-    return jsx(tmp6(4714).Button, { size: "sm", color: null });
+    return jsx(tmp6(4754).Button, { size: "sm", color: null });
   }
-  PlusSmallIcon = application(9438).PlusSmallIcon;
+  PlusSmallIcon = application(9478).PlusSmallIcon;
   tmp6 = application;
 }
 function OpenAppButton(profileApplication) {
@@ -216,7 +216,7 @@ export default function AddOrOpenAppButton(arg0) {
   let guildId;
   ({ application, channel } = arg0);
   ({ botUserId, guildId } = arg0);
-  if (importDefault(11536)(channel)) {
+  if (importDefault(11593)(channel)) {
     if (null != channel) {
       const obj = { profileApplication: null, botUserId: null, channel: null };
       obj[0] = application;

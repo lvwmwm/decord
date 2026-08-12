@@ -1,10 +1,10 @@
-// Module ID: 8778
-// Function ID: 8779
+// Module ID: 8817
+// Function ID: 8818
 // Name: ExpressionPickerCategories
-// Dependencies: [19, 17, 21, 4303, 712, 1367, 4173, 8779, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 1367, 4214, 8818, 2]
 // Exports: default
 
-// Module 8778 (ExpressionPickerCategories)
+// Module 8817 (ExpressionPickerCategories)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,10 +40,10 @@ export default function ExpressionPickerCategories(arg0) {
   items[2] = style;
   let tmp5Result = null;
   if (!tmp4) {
-    tmp5Result = tmp5(importDefault(8779), {});
+    tmp5Result = tmp5(importDefault(8818), {});
   }
   const items1 = [tmp5Result, children];
   obj[1] = items1;
   obj[1] = closure_5(View, obj);
-  return closure_4(require(4173) /* Portal */.Portal, obj);
+  return closure_4(require(4214) /* Portal */.Portal, obj);
 };

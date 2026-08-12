@@ -1,10 +1,10 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11451
+// Function ID: 11452
 // Name: set
-// Dependencies: [1391, 1401, 1400, 1402, 705, 38, 7232, 644, 589, 2]
+// Dependencies: [1391, 1401, 1400, 1402, 705, 38, 7271, 644, 589, 2]
 // Exports: useForumChannelStore, useForumChannelStoreApi
 
-// Module 11395 (set)
+// Module 11451 (set)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import keys from "keys";
 import set from "set";

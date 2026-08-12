@@ -1,10 +1,10 @@
-// Module ID: 5146
-// Function ID: 5147
+// Module ID: 5186
+// Function ID: 5187
 // Name: getHighestHoistedRole
-// Dependencies: [1990, 1910, 3953, 589, 2]
+// Dependencies: [1990, 1910, 3994, 589, 2]
 // Exports: default
 
-// Module 5146 (getHighestHoistedRole)
+// Module 5186 (getHighestHoistedRole)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 
@@ -27,8 +27,8 @@ function getHighestHoistedRole(arg0, arg1) {
         const member = obj2.getMember(guild.id, arg1);
         let highestHoistedRole = null;
         if (null != member) {
-          highestHoistedRole = importAll(3953).getHighestHoistedRole(guild, member);
-          const obj3 = importAll(3953);
+          highestHoistedRole = importAll(3994).getHighestHoistedRole(guild, member);
+          const obj3 = importAll(3994);
         }
         return highestHoistedRole;
       }

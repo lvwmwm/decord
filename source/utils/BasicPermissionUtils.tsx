@@ -1,18 +1,18 @@
-// Module ID: 3956
-// Function ID: 3957
+// Module ID: 3997
+// Function ID: 3998
 // Name: has
 // Dependencies: [506, 2]
 
-// Module 3956 (has)
+// Module 3997 (has)
 const result = require("set").fileFinishedImporting("utils/BasicPermissionUtils.tsx");
 const prototype = function BasicPermissionUtils() {
   return Object.create(new.target.prototype);
 }.prototype;
 prototype["has"] = function has(arg0, arg1) {
-  return arg0 & arg1;
+  return (arg0 & arg1) === arg1;
 };
 prototype["asBasicFlag"] = function asBasicFlag(permissions) {
-  return importAll(506).asUintN(20, permissions);
+  return importAll(506).asUintN(24, permissions);
 };
 prototype["asBigFlag"] = function asBigFlag(VIEW_CHANNEL) {
   const self = this;
@@ -25,3 +25,4 @@ prototype["asBigFlag"] = function asBigFlag(VIEW_CHANNEL) {
 prototype.cache = {};
 
 export default prototype;
+export const MAXIMUM_BITS = 24;

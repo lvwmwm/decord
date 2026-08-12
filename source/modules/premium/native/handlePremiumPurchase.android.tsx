@@ -1,10 +1,10 @@
-// Module ID: 7334
-// Function ID: 7335
+// Module ID: 7373
+// Function ID: 7374
 // Name: validatePurchase
-// Dependencies: [109, 5, 19, 7335, 1218, 3972, 5858, 676, 505, 530, 7336, 4202, 7337, 1236, 3988, 4642, 5861, 589, 6913, 7341, 7344, 7376, 7377, 7379, 5856, 3981, 7380, 698, 2]
+// Dependencies: [109, 5, 19, 7374, 1218, 4013, 5897, 676, 505, 530, 7375, 4243, 7376, 1236, 4029, 4682, 5900, 589, 6952, 7380, 7383, 7415, 7416, 7418, 5895, 4022, 7419, 698, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 7334 (validatePurchase)
+// Module 7373 (validatePurchase)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import reset from "reset";
 import set from "set";
@@ -79,7 +79,7 @@ function _validatePurchase() {
               ({ productId: c0, premiumSubscription: c1, offerId: c2, currency: c3, price: c4, isGift: c5 } = callback);
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -116,7 +116,7 @@ function _validatePurchase() {
           } else if (2 === tmp8) {
             c4 = 0;
             c6 = c3;
-            const tmp18 = new lib(7336)(c6);
+            const tmp18 = new lib(7375)(c6);
             throw tmp18;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -273,7 +273,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
                 let c21;
                 c6 = 1;
                 c7 = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "ct", done: true };
               }
             } else {
               if (1 === tmp10) {

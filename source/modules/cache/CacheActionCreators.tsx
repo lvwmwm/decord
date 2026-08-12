@@ -1,10 +1,10 @@
-// Module ID: 14766
-// Function ID: 14767
+// Module ID: 14824
+// Function ID: 14825
 // Name: _writeCaches
-// Dependencies: [5, 1391, 6938, 709, 2]
+// Dependencies: [5, 1391, 6977, 709, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 14766 (_writeCaches)
+// Module 14824 (_writeCaches)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { ChannelLoader } from "ensureGuildLoaded";
 import handleClearCaches from "handleClearCaches";
@@ -51,7 +51,7 @@ function _writeCaches() {
               table = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp5) {

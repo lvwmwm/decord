@@ -1,9 +1,9 @@
-// Module ID: 16938
-// Function ID: 16939
+// Module ID: 16996
+// Function ID: 16997
 // Name: AVErrorStreamSendHighPacketLossDefinition
-// Dependencies: [4322, 4389, 4367, 16936, 9175, 16933, 2]
+// Dependencies: [4363, 4429, 4407, 16994, 9215, 16991, 2]
 
-// Module 16938 (AVErrorStreamSendHighPacketLossDefinition)
+// Module 16996 (AVErrorStreamSendHighPacketLossDefinition)
 import reset from "reset";
 import initialize from "initialize";
 
@@ -19,7 +19,7 @@ export const AVErrorStreamSendHighPacketLossDefinition = {
     } else if (0 === obj.getViewerIds(currentUserActiveStream).length) {
       return null;
     } else {
-      rTCConnection = rTCConnection.getRTCConnection(require(4367) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
+      rTCConnection = rTCConnection.getRTCConnection(require(4407) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
       let mediaEngineConnectionId;
       if (rTCConnection != null) {
         mediaEngineConnectionId = rTCConnection.getMediaEngineConnectionId();
@@ -27,24 +27,24 @@ export const AVErrorStreamSendHighPacketLossDefinition = {
       if (null == mediaEngineConnectionId) {
         return null;
       } else {
-        let tmp8Result = tmp8(16936);
+        let tmp8Result = tmp8(16994);
         const accumulatedStatsWithMinDatapoints = tmp8Result.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
         let tmp6 = null;
         if (null != accumulatedStatsWithMinDatapoints) {
           if (10 < 100 * accumulatedStatsWithMinDatapoints.short.packetLossRate) {
             obj = { type: null };
-            obj[0] = tmp8(9175).AVError.STREAM_SEND_HIGH_PACKET_LOSS;
-            tmp8Result = tmp8(16933);
-            const merged = Object.assign(tmp8Result.getStreamErrorContext(tmp8(4367).encodeStreamKey(currentUserActiveStream)));
+            obj[0] = tmp8(9215).AVError.STREAM_SEND_HIGH_PACKET_LOSS;
+            tmp8Result = tmp8(16991);
+            const merged = Object.assign(tmp8Result.getStreamErrorContext(tmp8(4407).encodeStreamKey(currentUserActiveStream)));
             const items = [obj];
             const tmp3 = items;
-            const tmp8Result1 = tmp8(4367);
+            const tmp8Result1 = tmp8(4407);
           }
           tmp6 = tmp3;
         }
         return tmp6;
       }
-      const obj5 = require(4367) /* isStreamKey */;
+      const obj5 = require(4407) /* isStreamKey */;
     }
   },
   makeErrorContextKey(streamKey) {

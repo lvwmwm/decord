@@ -1,9 +1,9 @@
-// Module ID: 12261
-// Function ID: 12262
+// Module ID: 12324
+// Function ID: 12325
 // Name: MediaViewerItem
-// Dependencies: [32, 19, 17, 21, 500, 4166, 12262, 12263, 8852, 8851, 11129, 5427, 12264, 10707, 2]
+// Dependencies: [32, 19, 17, 21, 500, 4207, 12325, 12326, 8891, 8890, 11182, 5466, 12327, 10760, 2]
 
-// Module 12261 (MediaViewerItem)
+// Module 12324 (MediaViewerItem)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { ScrollView } from "get ActivityIndicator";

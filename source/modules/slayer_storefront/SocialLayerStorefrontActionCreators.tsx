@@ -1,10 +1,10 @@
-// Module ID: 7759
-// Function ID: 7760
+// Module ID: 7798
+// Function ID: 7799
 // Name: _fetchSocialLayerStorefront
-// Dependencies: [5, 7588, 5850, 676, 687, 709, 5848, 7589, 530, 1903, 584, 2]
+// Dependencies: [5, 7627, 5889, 676, 687, 709, 5887, 7628, 530, 1903, 584, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 7759 (_fetchSocialLayerStorefront)
+// Module 7798 (_fetchSocialLayerStorefront)
 import dispatcher from "dispatcher";
 import getPromotionIdOverride from "getPromotionIdOverride";
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
@@ -88,7 +88,7 @@ function _fetchSocialLayerStorefront2() {
                 let closure_17;
                 c8 = 1;
                 c9 = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "ct", done: true };
               }
             } else {
               if (1 === tmp7) {
@@ -395,7 +395,7 @@ function _fetchSocialLayerStorefrontSkuWithUrl2() {
               let storefront_metadata;
               c7 = 1;
               promotionIdOverride2 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

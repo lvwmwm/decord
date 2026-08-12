@@ -1,10 +1,10 @@
-// Module ID: 8018
-// Function ID: 8019
+// Module ID: 8057
+// Function ID: 8058
 // Name: init
-// Dependencies: [5, 8019, 1391, 676, 709, 4159, 7225, 530, 5940, 2]
+// Dependencies: [5, 8058, 1391, 676, 709, 4200, 7264, 530, 5979, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8018 (init)
+// Module 8057 (init)
 import getRootNavigationRef from "getRootNavigationRef";
 import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -20,7 +20,7 @@ function init(channelId, location, subsection) {
   obj.dispatch(obj);
 }
 function open(arg0, arg1, arg2) {
-  let obj = require(4159) /* getRootNavigationRef */;
+  let obj = require(4200) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
@@ -181,7 +181,7 @@ function _saveChannel() {
               let channel2;
               c4 = 1;
               channel = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

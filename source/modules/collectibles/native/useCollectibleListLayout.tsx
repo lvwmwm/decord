@@ -1,10 +1,10 @@
-// Module ID: 8291
-// Function ID: 8292
+// Module ID: 8330
+// Function ID: 8331
 // Name: useCollectibleListLayout
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 8291 (useCollectibleListLayout)
+// Module 8330 (useCollectibleListLayout)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

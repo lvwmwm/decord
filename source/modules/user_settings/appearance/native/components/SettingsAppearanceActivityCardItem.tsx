@@ -1,17 +1,17 @@
-// Module ID: 14537
-// Function ID: 14538
+// Module ID: 14594
+// Function ID: 14595
 // Name: ActivityCardItem
-// Dependencies: [19, 17, 1994, 14538, 21, 4042, 1297, 4303, 712, 647, 8298, 5268, 4299, 1898, 14539, 14540, 14541, 2]
+// Dependencies: [19, 17, 1994, 14595, 21, 4083, 1297, 4344, 712, 647, 8337, 5307, 4340, 1898, 14596, 14597, 14598, 2]
 // Exports: default
 
-// Module 14537 (ActivityCardItem)
+// Module 14594 (ActivityCardItem)
 import "noop";
 import get_ActivityIndicator from "set";
 import _getSystemLocale from "_getSystemLocale";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4042";
+import importDefaultResult from "module_4083";
 
 let HAPPENING_NOW_BADGE_SIZE;
 let HAPPENING_NOW_CARD_HEIGHT;
@@ -27,7 +27,7 @@ const require = arg1;
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
 ({ HAPPENING_NOW_BADGE_SIZE, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_CARD_HEIGHT, HAPPENING_NOW_CARD_MARGIN_RIGHT, HAPPENING_NOW_CARD_PADDING, HAPPENING_NOW_CARD_PADDING_RIGHT } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
-let closure_7 = require("module_4042").createAnimatedComponent(require("Button").Icon);
+let closure_7 = require("module_4083").createAnimatedComponent(require("Button").Icon);
 let obj = { card: null, cardBadgeWrapper: null, cardImage: null, cardBadge: null, cardImageAssetContainer: null, cardImageAssetBackground: null, cardImageAsset: null, shiftedAvatar: null, userCounter: null };
 obj = { borderRadius: require("Themes").radii.lg, borderWidth: StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" };
 obj[0] = obj;

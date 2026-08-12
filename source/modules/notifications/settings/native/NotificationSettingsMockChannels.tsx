@@ -1,10 +1,10 @@
-// Module ID: 9846
-// Function ID: 9847
+// Module ID: 9887
+// Function ID: 9888
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 4500, 21, 4303, 712, 1236, 9847, 4809, 4299, 1297, 2]
+// Dependencies: [19, 17, 4540, 21, 4344, 712, 1236, 9888, 4849, 4340, 1297, 2]
 // Exports: default
 
-// Module 9846 (NotificationSettingsMockChannels)
+// Module 9887 (NotificationSettingsMockChannels)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";

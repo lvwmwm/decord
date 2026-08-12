@@ -1,10 +1,10 @@
-// Module ID: 5844
-// Function ID: 5845
+// Module ID: 5883
+// Function ID: 5884
 // Name: useCanSeeOnboardingHome
-// Dependencies: [1982, 1391, 1910, 4505, 676, 1398, 5845, 647, 1913, 5249, 4507, 2]
+// Dependencies: [1982, 1391, 1910, 4545, 676, 1398, 5884, 647, 1913, 5288, 4547, 2]
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
-// Module 5844 (useCanSeeOnboardingHome)
+// Module 5883 (useCanSeeOnboardingHome)
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -20,7 +20,7 @@ let result = require("createGuildRecordFromRust").fileFinishedImporting("modules
 
 export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id) {
   const _require = guild_id;
-  const tmp = importDefault(5845)(guild_id);
+  const tmp = importDefault(5884)(guild_id);
   importDefault = tmp;
   const items = [ensureGuildLoaded, createGuildRecordFromRust, initialize];
   const items1 = [guild_id, tmp];
@@ -117,7 +117,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           }
           return hasItem;
         } else {
-          let result = tmp14(5249).isGuildOnboardingSettingsAvailable(id);
+          let result = tmp14(5288).isGuildOnboardingSettingsAvailable(id);
           if (result) {
             const features = guild.features;
             result = features.has(constants.GUILD_ONBOARDING);

@@ -1,10 +1,10 @@
-// Module ID: 16217
-// Function ID: 16218
+// Module ID: 16274
+// Function ID: 16275
 // Name: useCanConnect
-// Dependencies: [1391, 1910, 3948, 4319, 505, 589, 4486, 2]
+// Dependencies: [1391, 1910, 3989, 4360, 505, 589, 4526, 2]
 // Exports: default
 
-// Module 16217 (useCanConnect)
+// Module 16274 (useCanConnect)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

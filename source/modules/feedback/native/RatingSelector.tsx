@@ -1,10 +1,10 @@
-// Module ID: 11096
-// Function ID: 11097
+// Module ID: 11149
+// Function ID: 11150
 // Name: RatingSelector
-// Dependencies: [19, 17, 11092, 21, 4303, 11097, 11098, 1236, 11102, 11103, 11107, 11108, 7972, 4846, 2]
+// Dependencies: [19, 17, 11145, 21, 4344, 11150, 11151, 1236, 11155, 11156, 11160, 11161, 8011, 4886, 2]
 // Exports: default
 
-// Module 11096 (RatingSelector)
+// Module 11149 (RatingSelector)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import FeedbackRating from "FeedbackRating";
@@ -42,8 +42,8 @@ export default function RatingSelector(ratingOptions) {
   obj = undefined;
   obj = {};
   obj = { source: null, getLabel: null, rating: null };
-  obj = { selected: importDefault(11097), normal: null };
-  let obj3 = obj(11098);
+  obj = { selected: importDefault(11150), normal: null };
+  let obj3 = obj(11151);
   obj[1] = obj3.useFeedbackModalSadDesaturatedSource();
   obj[0] = obj;
   obj[1] = function getLabel() {
@@ -53,9 +53,9 @@ export default function RatingSelector(ratingOptions) {
   obj[2] = constants.BAD;
   obj[constants.BAD] = obj;
   let obj1 = { source: null, getLabel: null, rating: null };
-  let obj2 = { selected: importDefault(11102), normal: null };
+  let obj2 = { selected: importDefault(11155), normal: null };
   tmp = callback2();
-  obj2[1] = obj(11103).useFeedbackModalNeutralDesaturatedSource();
+  obj2[1] = obj(11156).useFeedbackModalNeutralDesaturatedSource();
   obj1[0] = obj2;
   obj1[1] = function getLabel() {
     const intl = obj(1236).intl;
@@ -64,9 +64,9 @@ export default function RatingSelector(ratingOptions) {
   obj1[2] = constants.NEUTRAL;
   obj[constants.NEUTRAL] = obj1;
   obj3 = { source: null, getLabel: null, rating: null };
-  let obj4 = { selected: importDefault(11107), normal: null };
-  const obj7 = obj(11103);
-  obj4[1] = obj(11108).useFeedbackModalHappyDesaturatedSource();
+  let obj4 = { selected: importDefault(11160), normal: null };
+  const obj7 = obj(11156);
+  obj4[1] = obj(11161).useFeedbackModalHappyDesaturatedSource();
   obj3[0] = obj4;
   obj3[1] = function getLabel() {
     const intl = obj(1236).intl;
@@ -75,7 +75,7 @@ export default function RatingSelector(ratingOptions) {
   obj3[2] = constants.GOOD;
   obj[constants.GOOD] = obj3;
   const mapped = ratingOptions.map((arg0) => obj[arg0]);
-  const obj10 = obj(11108);
+  const obj10 = obj(11161);
   return <c3 style={tmp2.ratings}>{mapped.map((rating) => {
     let normal;
     let selected;

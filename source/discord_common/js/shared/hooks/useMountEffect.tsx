@@ -1,10 +1,10 @@
-// Module ID: 4731
-// Function ID: 4732
+// Module ID: 4771
+// Function ID: 4772
 // Name: useMountEffect
 // Dependencies: [19, 2]
 // Exports: default, useMountLayoutEffect, useUnmountEffect
 
-// Module 4731 (useMountEffect)
+// Module 4771 (useMountEffect)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/hooks/useMountEffect.tsx");
@@ -17,9 +17,9 @@ export const useMountLayoutEffect = function useMountLayoutEffect(stateFromStore
   React = React.useRef(stateFromStores);
   const layoutEffect = React.useLayoutEffect(() => ref.current(), []);
 };
-export const useUnmountEffect = function useUnmountEffect(stateFromStores) {
-  const React = stateFromStores;
-  let closure_1 = React.useRef(stateFromStores);
+export const useUnmountEffect = function useUnmountEffect(callback) {
+  const React = callback;
+  let closure_1 = React.useRef(callback);
   const effect = React.useEffect(() => {
     closure_1.current = noop;
   });

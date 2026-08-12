@@ -1,9 +1,9 @@
-// Module ID: 5779
-// Function ID: 5780
+// Module ID: 5818
+// Function ID: 5819
 // Name: GuildIconSizes
-// Dependencies: [32, 19, 5780, 1434, 676, 21, 4303, 712, 1903, 5329, 5268, 5781, 299, 2]
+// Dependencies: [32, 19, 5819, 1434, 676, 21, 4344, 712, 1903, 5368, 5307, 5820, 299, 2]
 
-// Module 5779 (GuildIconSizes)
+// Module 5818 (GuildIconSizes)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { ExpressionSourceGuildRecord as closure_5 } from "getEmojiSourceData";

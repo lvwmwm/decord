@@ -1,10 +1,10 @@
-// Module ID: 16665
-// Function ID: 16666
+// Module ID: 16723
+// Function ID: 16724
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 4303, 5764, 1435, 4299, 5767, 5374, 4262, 1236, 8746, 9677, 4202, 4020, 5326, 2]
+// Dependencies: [5, 19, 17, 21, 4344, 5803, 1435, 4340, 5806, 5413, 4303, 1236, 8785, 9717, 4243, 4061, 5365, 2]
 // Exports: default
 
-// Module 16665 (EmojiOverflowActionSheet)
+// Module 16723 (EmojiOverflowActionSheet)
 import ActionSheet from "ActionSheet";
 import "noop";
 import get_ActivityIndicator from "set";

@@ -1,9 +1,9 @@
-// Module ID: 9617
-// Function ID: 9618
+// Module ID: 9657
+// Function ID: 9658
 // Name: frozen
-// Dependencies: [1931, 7346, 3967, 1924, 3902, 1403, 2]
+// Dependencies: [1931, 7385, 4008, 1924, 3943, 1403, 2]
 
-// Module 9617 (frozen)
+// Module 9657 (frozen)
 import "toJS";
 import createFromServer from "createFromServer";
 import closure_4 from "createFromServer";
@@ -38,7 +38,7 @@ GiftCodeRecord["createFromServer"] = function createFromServer(user) {
   }
   let tmp4 = null;
   if (null != user.expires_at) {
-    tmp4 = importDefault(3902)(user.expires_at);
+    tmp4 = importDefault(3943)(user.expires_at);
   }
   const redeemed = user.redeemed;
   if (null != user.subscription_plan) {
@@ -101,8 +101,8 @@ prototype["isExpired"] = function isExpired() {
   const expiresAt = this.expiresAt;
   let isAfterResult = null != expiresAt;
   if (isAfterResult) {
-    isAfterResult = importDefault(3902)().isAfter(expiresAt);
-    const obj = importDefault(3902)();
+    isAfterResult = importDefault(3943)().isAfter(expiresAt);
+    const obj = importDefault(3943)();
   }
   return isAfterResult;
 };

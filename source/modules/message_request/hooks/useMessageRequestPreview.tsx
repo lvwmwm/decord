@@ -1,10 +1,10 @@
-// Module ID: 11956
-// Function ID: 11957
+// Module ID: 12013
+// Function ID: 12014
 // Name: loadMessageRequestData
-// Dependencies: [5, 4521, 4315, 11957, 676, 589, 12, 530, 709, 2]
+// Dependencies: [5, 4561, 4356, 12014, 676, 589, 12, 530, 709, 2]
 // Exports: useMessageRequestPreview
 
-// Module 11956 (loadMessageRequestData)
+// Module 12013 (loadMessageRequestData)
 import initialize from "initialize";
 import reinjectEphemerals from "reinjectEphemerals";
 import generateOldThreadCutoff from "generateOldThreadCutoff";

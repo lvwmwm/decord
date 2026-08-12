@@ -1,10 +1,10 @@
-// Module ID: 10806
-// Function ID: 10807
+// Module ID: 10859
+// Function ID: 10860
 // Name: participantMemberInfo
-// Dependencies: [687, 4148, 1236, 2]
+// Dependencies: [687, 4189, 1236, 2]
 // Exports: participantMemberInfo
 
-// Module 10806 (participantMemberInfo)
+// Module 10859 (participantMemberInfo)
 const require = arg1;
 const DAY = require("set").Millis.DAY;
 const result = require("getSystemLocale").fileFinishedImporting("modules/stage_channels/StageChannelParticipantUtils.tsx");
@@ -51,5 +51,5 @@ export const participantMemberInfo = function participantMemberInfo(participant)
     }
     return stringResult;
   }
-  obj = require(4148) /* nameFromUser */;
+  obj = require(4189) /* nameFromUser */;
 };

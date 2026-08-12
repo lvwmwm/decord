@@ -1,9 +1,9 @@
-// Module ID: 4879
-// Function ID: 4880
+// Module ID: 4919
+// Function ID: 4920
 // Name: fromBlob
-// Dependencies: [5, 4880, 2]
+// Dependencies: [5, 4920, 2]
 
-// Module 4879 (fromBlob)
+// Module 4919 (fromBlob)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 let prototype;
@@ -18,7 +18,7 @@ prototype["fromBlob"] = function fromBlob(arg0) {
   })();
 };
 prototype["fromArrayBuffer"] = function fromArrayBuffer(arg0) {
-  const _ArrayBuffer = importDefault(4880).ArrayBuffer;
+  const _ArrayBuffer = importDefault(4920).ArrayBuffer;
   return _ArrayBuffer.hash(arg0);
 };
 prototype["fromDataURI"] = function fromDataURI(arg0) {

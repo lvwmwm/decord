@@ -1,10 +1,10 @@
-// Module ID: 12013
-// Function ID: 12014
+// Module ID: 12070
+// Function ID: 12071
 // Name: useShowWelcomeModal
-// Dependencies: [19, 12014, 1980, 1910, 4137, 12015, 589, 12016, 4271, 12017, 2007, 2]
+// Dependencies: [19, 12071, 1980, 1910, 4178, 12072, 589, 12073, 4312, 12074, 2007, 2]
 // Exports: openWelcomeActionSheet, useShowWelcomeModal
 
-// Module 12013 (useShowWelcomeModal)
+// Module 12070 (useShowWelcomeModal)
 import noop from "noop";
 import handleInviteData from "handleInviteData";
 import { NO_WELCOME_SCREEN } from "handleInviteData";
@@ -12,7 +12,7 @@ import comparator from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 
 const require = arg1;
-let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "r" };
+let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "Array" };
 const result = require("comparator").fileFinishedImporting("utils/native/WelcomeScreenUtils.tsx");
 
 export const useShowWelcomeModal = function useShowWelcomeModal(guildId, channelId) {
@@ -77,6 +77,6 @@ export const useShowWelcomeModal = function useShowWelcomeModal(guildId, channel
 };
 export const openWelcomeActionSheet = function openWelcomeActionSheet(onHide) {
   const guildId = onHide.guildId;
-  const obj = importDefault(4271);
-  obj.openLazy(require(2007) /* asyncRequireImpl */(12017, dependencyMap.paths), "GuildWelcomeActionSheet" + guildId, { guildId, onHide: onHide.onHide });
+  const obj = importDefault(4312);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(12074, dependencyMap.paths), "GuildWelcomeActionSheet" + guildId, { guildId, onHide: onHide.onHide });
 };

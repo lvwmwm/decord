@@ -1,10 +1,10 @@
-// Module ID: 8876
-// Function ID: 8877
+// Module ID: 8915
+// Function ID: 8916
 // Name: VideoComponent
-// Dependencies: [32, 19, 17, 21, 4303, 712, 8877, 4031, 8850, 5821, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4344, 712, 8916, 4072, 8889, 5860, 1236, 2]
 // Exports: createVideoControls
 
-// Module 8876 (VideoComponent)
+// Module 8915 (VideoComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -148,7 +148,7 @@ class Video extends PureComponent {
 const prototype = Video.prototype;
 prototype["componentDidMount"] = function componentDidMount() {
   const self = this;
-  this._renderTask = self(5821).runAfterInteractions(() => {
+  this._renderTask = self(5860).runAfterInteractions(() => {
     self.setState({ postponeRender: false });
   });
 };
@@ -249,8 +249,8 @@ const obj1 = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BRA
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/common/Video.tsx");
 
 export default Video;
-export const createVideoControls = function createVideoControls(ref1) {
-  let closure_0 = ref1;
+export const createVideoControls = function createVideoControls(NOOP) {
+  let closure_0 = NOOP;
   const ref = importAllResult.createRef();
   let c5 = 0;
   let c6 = 0;
@@ -267,7 +267,7 @@ export const createVideoControls = function createVideoControls(ref1) {
       }
     },
     pause(arg0) {
-      callback(arg0);
+      NOOP(arg0);
       if (closure_8 !== arg0) {
         closure_8 = arg0;
         if (_slicedToArray != null) {

@@ -1,10 +1,10 @@
-// Module ID: 15287
-// Function ID: 15288
+// Module ID: 15344
+// Function ID: 15345
 // Name: getFirstChannelOfType
-// Dependencies: [1395, 676, 11788, 5255, 2]
+// Dependencies: [1395, 676, 11845, 5294, 2]
 // Exports: areTypesInSameSection, getDnDUpdates, getDropData
 
-// Module 15287 (getFirstChannelOfType)
+// Module 15344 (getFirstChannelOfType)
 import createChannelRecord from "createChannelRecord";
 import { ChannelTypes } from "ME";
 
@@ -554,7 +554,7 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
           tmp4 = null != substr[tmp2];
         }
         if (tmp4) {
-          let obj = localChannel2(11788);
+          let obj = localChannel2(11845);
           let moveItemFromToResult = obj.moveItemFromTo(substr, tmp, tmp2);
         }
         obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null };
@@ -566,7 +566,7 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
         obj[3] = function existingPositionGetter(channel) {
           return channel.channel.position;
         };
-        closure_4 = closure_4.concat(localChannel2(11788).calculatePositionDeltas(obj));
+        closure_4 = closure_4.concat(localChannel2(11845).calculatePositionDeltas(obj));
         return moveItemFromToResult;
       }
     }
@@ -678,7 +678,7 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
     if (items.length > 0) {
       tmp11 = items;
     }
-    const tmp10Result = importDefault(5255)(tmp11, channels, (channel) => _null(channel.channel.type));
+    const tmp10Result = importDefault(5294)(tmp11, channels, (channel) => _null(channel.channel.type));
     importDefault = localChannel;
     dependencyMap = false;
     callback = undefined;
@@ -770,13 +770,13 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
     }
     num11 = num8;
     const updates1 = generateUpdates(tmp10Result);
-    const tmp10 = importDefault(5255);
+    const tmp10 = importDefault(5294);
   }
   if (localChannel.isGuildVocal()) {
     if (items.length > 0) {
       _categories = items;
     }
-    const tmp18Result = importDefault(5255)(_categories, channels, (channel) => {
+    const tmp18Result = importDefault(5294)(_categories, channels, (channel) => {
       channel = channel.channel;
       return channel.isGuildVocal();
     });
@@ -870,7 +870,7 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
       num11 = callback;
     }
     const updates2 = generateUpdates(tmp18Result);
-    const tmp18 = importDefault(5255);
+    const tmp18 = importDefault(5294);
   }
   let tmp23 = localChannel.parent_id !== parentId;
   if (tmp23) {

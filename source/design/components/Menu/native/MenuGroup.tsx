@@ -1,9 +1,9 @@
-// Module ID: 13392
-// Function ID: 13393
+// Module ID: 13449
+// Function ID: 13450
 // Name: MenuGroup
-// Dependencies: [19, 17, 21, 4303, 712, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 2]
 
-// Module 13392 (MenuGroup)
+// Module 13449 (MenuGroup)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

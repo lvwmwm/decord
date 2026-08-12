@@ -1,9 +1,9 @@
-// Module ID: 5932
-// Function ID: 5933
+// Module ID: 5971
+// Function ID: 5972
 // Name: performRoleSubscriptionUpsellRedirect
-// Dependencies: [5, 676, 1398, 5933, 2007, 3, 2]
+// Dependencies: [5, 676, 1398, 5972, 2007, 3, 2]
 
-// Module 5932 (performRoleSubscriptionUpsellRedirect)
+// Module 5971 (performRoleSubscriptionUpsellRedirect)
 import timestamp from "timestamp";
 import ME from "ME";
 import { StaticChannelRoute } from "set";

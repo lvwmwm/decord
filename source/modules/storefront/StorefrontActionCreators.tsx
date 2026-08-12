@@ -1,10 +1,10 @@
-// Module ID: 9371
-// Function ID: 9372
+// Module ID: 9411
+// Function ID: 9412
 // Name: shouldFetchStorefrontPromotions
-// Dependencies: [5, 3968, 5853, 7588, 9372, 9373, 676, 687, 709, 530, 5852, 2]
+// Dependencies: [5, 4009, 5892, 7627, 9412, 9413, 676, 687, 709, 530, 5891, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 9371 (shouldFetchStorefrontPromotions)
+// Module 9411 (shouldFetchStorefrontPromotions)
 import parseSkuIds from "parseSkuIds";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
 import "resetStoreState";
@@ -260,7 +260,7 @@ function _fetchStorefrontPricesForApplicationId() {
               applicationId = applicationId.applicationId;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -349,7 +349,7 @@ function _fetchStorefrontPricesForSkuIds() {
               skuIds = skuIds.skuIds;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -458,7 +458,7 @@ function _fetchStorefrontPrices() {
             obj = body(709);
             let obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: null, data: null };
             obj2[1] = callback;
-            obj2 = callback(5852);
+            obj2 = callback(5891);
             obj2[2] = obj2.transformStorefrontPricesServer(body);
             obj.dispatch(obj2);
             dependencyMap = 0;

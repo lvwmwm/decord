@@ -1,10 +1,10 @@
-// Module ID: 16388
-// Function ID: 16389
+// Module ID: 16445
+// Function ID: 16446
 // Name: AcceptInviteModal
-// Dependencies: [19, 8513, 21, 503, 4289, 12074, 9339, 5783, 2]
+// Dependencies: [19, 8552, 21, 503, 4330, 12131, 9379, 5822, 2]
 // Exports: default
 
-// Module 16388 (AcceptInviteModal)
+// Module 16445 (AcceptInviteModal)
 import noop from "noop";
 import { CreateGuildModalStates } from "NUXGuildTemplatesAnalytics";
 import { jsx } from "jsxProd";
@@ -35,5 +35,5 @@ export default function AcceptInviteModal(arg0) {
     return obj;
   }, items);
   obj[1] = CreateGuildModalStates.ACCEPT_INVITE;
-  return jsx(_require(5783).Navigator, { screens: null, initialRouteName: null });
+  return jsx(_require(5822).Navigator, { screens: null, initialRouteName: null });
 };

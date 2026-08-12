@@ -1,10 +1,10 @@
-// Module ID: 5958
-// Function ID: 5959
+// Module ID: 5997
+// Function ID: 5998
 // Name: _startLurking
-// Dependencies: [5, 3949, 4224, 1910, 676, 1222, 5959, 5865, 5232, 698, 530, 1483, 2]
+// Dependencies: [5, 3990, 4265, 1910, 676, 1222, 5998, 5904, 5271, 698, 530, 1483, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 5958 (_startLurking)
+// Module 5997 (_startLurking)
 import transitionTo from "transitionTo";
 import initialize from "initialize";
 import handleInviteData from "handleInviteData";
@@ -78,7 +78,7 @@ function _startLurking() {
                 let closure_13;
                 loadId = 1;
                 shouldNavigate = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "ct", done: true };
               }
             } else {
               if (1 === tmp5) {

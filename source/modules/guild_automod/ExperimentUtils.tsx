@@ -1,14 +1,14 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9820
+// Function ID: 9821
 // Name: isInMentionRaidExperiment
-// Dependencies: [9780, 2]
+// Dependencies: [9821, 2]
 // Exports: isInMentionRaidExperiment, useIsMentionRaidExperimentEnabled
 
-// Module 9779 (isInMentionRaidExperiment)
+// Module 9820 (isInMentionRaidExperiment)
 const result = require("set").fileFinishedImporting("modules/guild_automod/ExperimentUtils.tsx");
 
 export const isInMentionRaidExperiment = function isInMentionRaidExperiment(guildId) {
-  const AutomodMentionRaidLimit = require(9780) /* experiment */.AutomodMentionRaidLimit;
+  const AutomodMentionRaidLimit = require(9821) /* experiment */.AutomodMentionRaidLimit;
   return AutomodMentionRaidLimit.getCurrentConfig({ guildId, location: "988d4e_3" }).enabled;
 };
 export const useIsMentionRaidExperimentEnabled = function useIsMentionRaidExperimentEnabled(id, arg1) {
@@ -16,6 +16,6 @@ export const useIsMentionRaidExperimentEnabled = function useIsMentionRaidExperi
   if (arg1 === undefined) {
     autoTrackExposure = true;
   }
-  const AutomodMentionRaidLimit = require(9780) /* experiment */.AutomodMentionRaidLimit;
+  const AutomodMentionRaidLimit = require(9821) /* experiment */.AutomodMentionRaidLimit;
   return AutomodMentionRaidLimit.useExperiment({ guildId: id, location: "988d4e_4" }, { autoTrackExposure }).enabled;
 };

@@ -1,10 +1,10 @@
-// Module ID: 6718
-// Function ID: 6719
+// Module ID: 6757
+// Function ID: 6758
 // Name: ServerIconTheCrewExample
-// Dependencies: [21, 5268, 6719, 2]
+// Dependencies: [21, 5307, 6758, 2]
 // Exports: ServerIconTheCrewExample
 
-// Module 6718 (ServerIconTheCrewExample)
+// Module 6757 (ServerIconTheCrewExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconTheCrewExample.native.tsx");
@@ -28,7 +28,7 @@ export const ServerIconTheCrewExample = function ServerIconTheCrewExample(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6719);
+  obj[0] = importDefault(6758);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ServerIconTheCrewExample = function ServerIconTheCrewExample(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
 };

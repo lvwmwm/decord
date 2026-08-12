@@ -1,8 +1,8 @@
-// Module ID: 14258
-// Function ID: 14259
-// Dependencies: [19, 5161, 21, 10986, 14259, 14312, 8901, 11341, 2]
+// Module ID: 14315
+// Function ID: 14316
+// Dependencies: [19, 5201, 21, 11039, 14316, 14369, 11241, 11395, 2]
 
-// Module 14258
+// Module 14315
 import importAllResult from "noop";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 import { jsx } from "jsxProd";
@@ -29,8 +29,8 @@ const memoResult = importAllResult.memo(function BountiesModal(bountyId) {
     }
   }), items);
   const layoutEffect = importAllResult.useLayoutEffect(() => {
-    bountyId(verticalScrollEnabled[6]).lockOrientation("PORTRAIT", true);
-    return bountyId(verticalScrollEnabled[6]).restoreDefaultOrientation;
+    bountyId(verticalScrollEnabled[6]).applyOrientationLock("PORTRAIT");
+    return bountyId(verticalScrollEnabled[6]).restoreDefaultOrientationLock;
   }, []);
   obj = { hideTitle: true, initialRouteName: bounty_main, screens: memo, viewStyle: { backgroundColor: "#000000" } };
   return jsx(bountyId(verticalScrollEnabled[7]).Modal, { hideTitle: true, initialRouteName: bounty_main, screens: memo, viewStyle: { backgroundColor: "#000000" } });

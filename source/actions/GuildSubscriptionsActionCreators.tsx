@@ -1,10 +1,10 @@
-// Module ID: 5929
-// Function ID: 5930
+// Module ID: 5968
+// Function ID: 5969
 // Name: subscribeMembers
-// Dependencies: [709, 5903, 2]
+// Dependencies: [709, 5942, 2]
 // Exports: subscribeChannel, subscribeChannelDimensions, subscribeGuild, subscribeMembers, subscribeToMemberUpdates, unsubscribeFromMemberUpdates, unsubscribeMembers
 
-// Module 5929 (subscribeMembers)
+// Module 5968 (subscribeMembers)
 let result = require("set").fileFinishedImporting("actions/GuildSubscriptionsActionCreators.tsx");
 
 export const subscribeMembers = function subscribeMembers(guildId, userIds) {
@@ -57,18 +57,18 @@ export const subscribeChannelDimensions = function subscribeChannelDimensions(ar
   let bound3 = bound1;
   if (bound1 > 0) {
     const _Math = Math;
-    const diff = require(5903) /* reset */.MINIMUM_RANGE - 1;
+    const diff = require(5942) /* reset */.MINIMUM_RANGE - 1;
     const items1 = [0, diff];
     items.push(items1);
     bound3 = Math.max(diff + 1, bound1);
   }
-  const rounded = Math.floor(bound3 / require(5903) /* reset */.MINIMUM_RANGE);
-  let result = rounded * require(5903) /* reset */.MINIMUM_RANGE;
+  const rounded = Math.floor(bound3 / require(5942) /* reset */.MINIMUM_RANGE);
+  let result = rounded * require(5942) /* reset */.MINIMUM_RANGE;
   if (result <= bound2) {
     do {
       let tmp14 = require;
       let tmp15 = dependencyMap;
-      let sum1 = result + (require(5903) /* reset */.MINIMUM_RANGE - 1);
+      let sum1 = result + (require(5942) /* reset */.MINIMUM_RANGE - 1);
       let items2 = [result, sum1];
       let arr = items.push(items2);
       result = sum1 + 1;

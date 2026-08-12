@@ -1,10 +1,10 @@
-// Module ID: 3966
-// Function ID: 3967
+// Module ID: 4007
+// Function ID: 4008
 // Name: getPremiumPlanItem
-// Dependencies: [32, 19, 3967, 1922, 3968, 3969, 3971, 3972, 676, 1924, 3980, 505, 3, 3981, 3978, 1945, 38, 1236, 2885, 3902, 3990, 4011, 5855, 3979, 12737, 687, 589, 10425, 4198, 13337, 7018, 1938, 1940, 8705, 2]
+// Dependencies: [32, 19, 4008, 1922, 4009, 4010, 4012, 4013, 676, 1924, 4021, 505, 3, 4022, 4019, 1945, 38, 1236, 2885, 3943, 4031, 4052, 5894, 4020, 12796, 687, 589, 10466, 4239, 13394, 7057, 1938, 1940, 8744, 2]
 // Exports: calculateYearlyPlanDollarSavingsAmount, calculateYearlyPlanMonthlyRateAmount, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, experimentalGetPrice, extendDateWithUnconsumedFractionalPremium, formatInterval, formatIntervalDuration, formatPriceString, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getExternalSubscriptionMethodUrl, getFormattedPlanPriceFromInvoice, getFormattedRateForPlan, getFractionalPremiumUnitsHours, getFractionalPremiumUnitsHoursFromSkuIds, getGuildBoostPlanItem, getInterval, getIntervalForInvoice, getIntervalString, getIntervalStringAsNoun, getItemsFromNewAdditionalPlans, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getItemsWithoutPremiumPlanItem, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanItem, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumType, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBaseSubscriptionCanceled, isBoostOnlySubscription, isDiscountOffer, isNewUser, isNitroLockedState, isPremiumBaseSubscriptionPlan, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumGuildSubscriptionPlan, isPremiumSubscriptionPlan, isPrepaidPaymentSource, isSubscriptionPrepaidPaymentSource, isSubscriptionStatusFailedPayment, isSwitchingPlansDisabled, isTrialOffer, subscriptionHasPremiumGuildPlan, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState, withContextPlanPrices
 
-// Module 3966 (getPremiumPlanItem)
+// Module 4007 (getPremiumPlanItem)
 import create from "create";
 import closure_4 from "t";
 import { isNoneSubscription } from "createFromServer";
@@ -169,8 +169,8 @@ function getPrice(id) {
         }
         obj5[2] = currency;
         obj3[1] = obj5;
-        const result = currency2(3981).captureBillingException(error, obj3);
-        const obj10 = currency2(3981);
+        const result = currency2(4022).captureBillingException(error, obj3);
+        const obj10 = currency2(4022);
       }
       throw error;
     } else {
@@ -181,7 +181,7 @@ function getPrice(id) {
     const _Error2 = Error;
     const error1 = new Error("Plan not found");
     if (flag3) {
-      obj2 = currency2(3981);
+      obj2 = currency2(4022);
       const obj6 = { planId: null, currency: null };
       obj6[0] = id;
       let str = currency;
@@ -205,7 +205,7 @@ function getPurchaseTypePrices(id, DEFAULT) {
   if (null == value) {
     const _Error3 = Error;
     const error = new Error("Plan not found");
-    let obj = require(3981) /* _createGatewayCheckoutContext */;
+    let obj = require(4022) /* _createGatewayCheckoutContext */;
     obj = { tags: null };
     obj = { planId: null, purchaseType: null };
     obj[0] = id;
@@ -252,7 +252,7 @@ function experimentalGetPrices(id, arg1) {
       globalThis.info("prices: " + arr);
       const _Error = Error;
       const error = new Error("Missing prices for payment source on subscription plan");
-      let obj1 = require(3981) /* _createGatewayCheckoutContext */;
+      let obj1 = require(4022) /* _createGatewayCheckoutContext */;
       obj = { extra: null, tags: null };
       obj = { paymentSourceId: null };
       obj[0] = paymentSourceId;
@@ -277,7 +277,7 @@ function experimentalGetPrices(id, arg1) {
     obj3[0] = tmp3.countryPrices.countryCode;
     obj3[1] = id;
     obj2[0] = obj3;
-    const result1 = require(3981) /* _createGatewayCheckoutContext */.captureBillingException(error1, obj2);
+    const result1 = require(4022) /* _createGatewayCheckoutContext */.captureBillingException(error1, obj2);
     throw error1;
   } else {
     return tmp3.countryPrices.prices;
@@ -288,13 +288,13 @@ function getServerPriceFromClientPrice(amount) {
 }
 function getItemPlansTotalServerPrice(items, currency, id) {
   let obj = { currency, amount: 0, tax: 0, taxInclusive: false };
-  const baseSubscriptionItemForSubscriptionItems = require(3978) /* getNonePlanIdForIntervalType */.getBaseSubscriptionItemForSubscriptionItems(items);
+  const baseSubscriptionItemForSubscriptionItems = require(4019) /* getNonePlanIdForIntervalType */.getBaseSubscriptionItemForSubscriptionItems(items);
   let premiumType;
   if (null != baseSubscriptionItemForSubscriptionItems) {
     premiumType = dependencyMap3[baseSubscriptionItemForSubscriptionItems.planId].premiumType;
   }
   let tmpResult = tmp(1945);
-  const obj2 = require(3978) /* getNonePlanIdForIntervalType */;
+  const obj2 = require(4019) /* getNonePlanIdForIntervalType */;
   tmpResult = tmp(1945);
   const isPremiumAtLeastResult = tmpResult.isPremiumAtLeast(premiumType, closure_39.TIER_0);
   const iter = items[Symbol.iterator]();
@@ -346,7 +346,7 @@ function getInterval(basePlanId) {
   } else {
     const _Error = Error;
     const error = new Error("Unsupported plan");
-    obj = require(3981) /* _createGatewayCheckoutContext */;
+    obj = require(4022) /* _createGatewayCheckoutContext */;
     obj = { tags: null };
     const obj1 = { planId: null };
     obj1[0] = basePlanId;
@@ -448,7 +448,7 @@ function getPremiumType(planIdFromItems) {
   } else {
     const _Error = Error;
     const error = new Error("Unsupported plan");
-    let obj = require(3981) /* _createGatewayCheckoutContext */;
+    let obj = require(4022) /* _createGatewayCheckoutContext */;
     obj = { tags: null };
     obj = { planId: null };
     obj[0] = planIdFromItems;
@@ -601,7 +601,7 @@ function getDisplayName(arg0) {
   } else {
     const _Error = Error;
     const error = new Error("Unsupported plan");
-    obj = require(3981) /* _createGatewayCheckoutContext */;
+    obj = require(4022) /* _createGatewayCheckoutContext */;
     const obj4 = { tags: null };
     const obj5 = { planId: null };
     obj5[0] = arg0;
@@ -625,7 +625,7 @@ function getTierDisplayNameByPlanId(PREMIUM_MONTH_TIER_0) {
   } else {
     const _Error = Error;
     const error = new Error("Unsupported plan");
-    let obj = require(3981) /* _createGatewayCheckoutContext */;
+    let obj = require(4022) /* _createGatewayCheckoutContext */;
     obj = { tags: null };
     obj = { planId: null };
     obj[0] = PREMIUM_MONTH_TIER_0;
@@ -656,7 +656,7 @@ function getPlanDescription(arg0) {
   const tmp4 = getPrice(dependencyMap3[planId].id, false, false, obj, true);
   const interval = tmp.interval;
   const tmp5 = planIdsForSkus;
-  let obj1 = planIdsForSkus(5855);
+  let obj1 = planIdsForSkus(5894);
   if (constants7.MONTH === interval) {
     const intl2 = tmp5(1236).intl;
     let stringResult = intl2.string(tmp5(1236).t.FPybU7);
@@ -861,7 +861,7 @@ function getPlanDescription(arg0) {
                 } else if (tmp17.PAUSE_PENDING === CANCELED) {
                   let diffResult = null;
                   if (null != subscription.pauseEndsAt) {
-                    let obj18 = importDefault(3902)(subscription.pauseEndsAt);
+                    let obj18 = importDefault(3943)(subscription.pauseEndsAt);
                     diffResult = obj18.diff(subscription.currentPeriodEnd, "days");
                   }
                   if (null != diffResult) {
@@ -888,16 +888,16 @@ function getPlanDescription(arg0) {
                 } else if (tmp17.BILLING_RETRY === CANCELED) {
                   const intl8 = tmp5(1236).intl;
                   const obj11 = { endDate: null };
-                  let obj15 = importDefault(3902)(subscription.currentPeriodStart);
+                  let obj15 = importDefault(3943)(subscription.currentPeriodStart);
                   obj11[0] = obj15.add(closure_29, "days").toDate();
                   return intl8.format(tmp5(1236).t["IlJ/HV"], obj11);
                 } else if (tmp17.PAST_DUE === CANCELED) {
                   const intl7 = tmp5(1236).intl;
                   const obj12 = { endDate: null, onClick: null };
-                  let tmp5Result = tmp5(3990);
+                  let tmp5Result = tmp5(4031);
                   obj12[0] = tmp5Result.dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
                   obj12[1] = function onClick() {
-                    callback(4011)("https://support.discord.com/hc/articles/23082866222871");
+                    callback(4052)("https://support.discord.com/hc/articles/23082866222871");
                   };
                   return intl7.format(tmp5(1236).t["d+0vwo"], obj12);
                 } else if (!hasDiscountApplied) {
@@ -1005,8 +1005,8 @@ function getPlanDescription(arg0) {
             } else if (tmp17.PAUSE_PENDING === CANCELED) {
               let diffResult1 = null;
               if (null != subscription.pauseEndsAt) {
-                diffResult1 = importDefault(3902)(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
-                const obj32 = importDefault(3902)(subscription.pauseEndsAt);
+                diffResult1 = importDefault(3943)(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
+                const obj32 = importDefault(3943)(subscription.pauseEndsAt);
               }
               if (null != diffResult1) {
                 const intl18 = tmp5(1236).intl;
@@ -1032,10 +1032,10 @@ function getPlanDescription(arg0) {
             } else if (tmp17.PAST_DUE === CANCELED) {
               const intl15 = tmp5(1236).intl;
               const obj20 = { endDate: null, onClick: null };
-              tmp5Result = tmp5(3990);
+              tmp5Result = tmp5(4031);
               obj20[0] = tmp5Result.dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
               obj20[1] = function onClick() {
-                callback(4011)("https://support.discord.com/hc/articles/23082866222871");
+                callback(4052)("https://support.discord.com/hc/articles/23082866222871");
               };
               return intl15.format(tmp5(1236).t["d+0vwo"], obj20);
             } else {
@@ -1083,8 +1083,8 @@ function getPlanDescription(arg0) {
         } else if (tmp17.PAUSE_PENDING === CANCELED) {
           let diffResult2 = null;
           if (null != subscription.pauseEndsAt) {
-            diffResult2 = importDefault(3902)(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
-            const obj42 = importDefault(3902)(subscription.pauseEndsAt);
+            diffResult2 = importDefault(3943)(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
+            const obj42 = importDefault(3943)(subscription.pauseEndsAt);
           }
           if (null != diffResult2) {
             const intl25 = tmp5(1236).intl;
@@ -1110,9 +1110,9 @@ function getPlanDescription(arg0) {
         } else if (tmp17.PAST_DUE === CANCELED) {
           const intl22 = tmp5(1236).intl;
           const obj26 = { endDate: null, onClick: null };
-          obj26[0] = tmp5(3990).dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
+          obj26[0] = tmp5(4031).dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
           obj26[1] = function onClick() {
-            callback(4011)("https://support.discord.com/hc/articles/23082866222871");
+            callback(4052)("https://support.discord.com/hc/articles/23082866222871");
           };
           return intl22.format(tmp5(1236).t["d+0vwo"], obj26);
         } else {
@@ -1180,10 +1180,10 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
       prop = metadata.apple_grace_period_expires_date;
     }
     if (null != prop) {
-      const obj11 = importDefault(3902)(subscription.metadata.apple_grace_period_expires_date);
+      const obj11 = importDefault(3943)(subscription.metadata.apple_grace_period_expires_date);
       let obj = { days: null, expiresDate: null };
-      const obj13 = importDefault(3902);
-      obj[0] = importDefault(3902).duration(obj11.diff(subscription.currentPeriodStart)).days();
+      const obj13 = importDefault(3943);
+      obj[0] = importDefault(3943).duration(obj11.diff(subscription.currentPeriodStart)).days();
       obj[1] = obj11;
       return obj;
     }
@@ -1201,11 +1201,11 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
         prop2 = metadata3.google_original_expires_date;
       }
       if (null != prop2) {
-        const obj7 = importDefault(3902)(subscription.metadata.google_grace_period_expires_date);
+        const obj7 = importDefault(3943)(subscription.metadata.google_grace_period_expires_date);
         obj = { days: null, expiresDate: null };
-        const tmp20 = importDefault(3902)(subscription.metadata.google_original_expires_date);
-        const obj9 = importDefault(3902);
-        obj[0] = importDefault(3902).duration(obj7.diff(tmp20)).days();
+        const tmp20 = importDefault(3943)(subscription.metadata.google_original_expires_date);
+        const obj9 = importDefault(3943);
+        obj[0] = importDefault(3943).duration(obj7.diff(tmp20)).days();
         obj[1] = obj7;
         return obj;
       }
@@ -1215,7 +1215,7 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
     const tmp15 = subscription.isPurchasedViaApple ? closure_17 : closure_18;
     let obj1 = { days: null, expiresDate: null };
     obj1[0] = tmp15;
-    obj1[1] = importDefault(3902)(subscription.currentPeriodStart).add(tmp15, "days");
+    obj1[1] = importDefault(3943)(subscription.currentPeriodStart).add(tmp15, "days");
     return obj1;
   } else {
     const metadata4 = subscription.metadata;
@@ -1231,15 +1231,15 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
       }
       const obj2 = { days: null, expiresDate: null };
       const tmp11 = importDefault;
-      const tmp13 = importDefault(3902);
-      obj2[0] = importDefault(3902)(prop4).diff(subscription.currentPeriodStart, "days");
-      obj2[1] = tmp11(3902)(subscription.metadata.grace_period_expires_date);
+      const tmp13 = importDefault(3943);
+      obj2[0] = importDefault(3943)(prop4).diff(subscription.currentPeriodStart, "days");
+      obj2[1] = tmp11(3943)(subscription.metadata.grace_period_expires_date);
       return obj2;
     } else {
       const tmp8 = null == subscription.paymentSourceId ? closure_19 : closure_30;
       obj = { days: null, expiresDate: null };
       obj[0] = tmp8;
-      obj1 = importDefault(3902)(subscription.currentPeriodStart);
+      obj1 = importDefault(3943)(subscription.currentPeriodStart);
       obj[1] = obj1.add(tmp8, "days");
       return obj;
     }
@@ -1250,7 +1250,7 @@ function getExpectedRenewalDate(premiumSubscription, fractionalPremiumInfo) {
   let toDateResult = date;
   if (!tmp2) {
     const unactivatedUnits = fractionalPremiumInfo.unactivatedUnits;
-    const obj = importDefault(3902)(date);
+    const obj = importDefault(3943)(date);
     let addResult = obj;
     if (unactivatedUnits.length > 0) {
       const mapped = unactivatedUnits.map((skuId) => skuId.skuId);
@@ -1283,9 +1283,9 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
   if (fractionalPremiumInfo === undefined) {
     let obj = { isFractionalPremiumActive: false, fetched: true, fractionalState: null, startsAt: null, endsAt: null, currentEntitlementId: "", currentEntitlementEndsAt: null, unactivatedUnits: null };
     obj[2] = constants6.NONE;
-    obj[3] = importDefault(3902)(0);
-    obj[4] = importDefault(3902)(0);
-    obj[6] = importDefault(3902)(0);
+    obj[3] = importDefault(3943)(0);
+    obj[4] = importDefault(3943)(0);
+    obj[6] = importDefault(3943)(0);
     obj[7] = [];
     tmp2 = obj;
   }
@@ -1296,7 +1296,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       tmp6 = tmp;
     }
   }
-  const formatPrice = require(5855) /* formatSingleCurrencyPrice */.formatPrice;
+  const formatPrice = require(5894) /* formatSingleCurrencyPrice */.formatPrice;
   if (flag) {
     const invoiceItems = tmp6.invoiceItems;
     const found = invoiceItems.filter((subscriptionPlanId) => set.has(subscriptionPlanId.subscriptionPlanId));
@@ -1381,7 +1381,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       isPurchasedViaGoogle = null != prop;
     }
     if (isPurchasedViaGoogle) {
-      expiresDate = importDefault(3902)(status.metadata.google_grace_period_expires_date);
+      expiresDate = importDefault(3943)(status.metadata.google_grace_period_expires_date);
     }
     let isPurchasedViaApple = status.isPurchasedViaApple;
     if (isPurchasedViaApple) {
@@ -1393,7 +1393,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       isPurchasedViaApple = null != prop1;
     }
     if (isPurchasedViaApple) {
-      expiresDate = importDefault(3902)(status.metadata.apple_grace_period_expires_date);
+      expiresDate = importDefault(3943)(status.metadata.apple_grace_period_expires_date);
     }
     const intl9 = tmp14(1236).intl;
     const format2 = intl9.format;
@@ -1429,8 +1429,8 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
   } else if (status.status === tmp16.BILLING_RETRY) {
     const intl8 = tmp14(1236).intl;
     const obj8 = { endDate: null, price: null };
-    const obj18 = importDefault(3902)(status.currentPeriodStart);
-    obj8[0] = importDefault(3902)(status.currentPeriodStart).add(closure_29, "days").toDate();
+    const obj18 = importDefault(3943)(status.currentPeriodStart);
+    obj8[0] = importDefault(3943)(status.currentPeriodStart).add(closure_29, "days").toDate();
     obj8[1] = formatPriceResult;
     return intl8.format(tmp14(1236).t.EMTLOT, obj8);
   } else if (status.status === tmp16.ACCOUNT_HOLD) {
@@ -1438,7 +1438,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       if (!tmp14Result.isGooglePlayBillingSupported()) {
         const intl6 = tmp14(1236).intl;
         const obj9 = { endDate: null, paymentGatewayName: null, paymentSourceLink: null };
-        let obj11 = importDefault(3902)(status.currentPeriodStart);
+        let obj11 = importDefault(3943)(status.currentPeriodStart);
         obj9[0] = obj11.add(closure_26, "days").toDate();
         obj9[1] = dependencyMap4[status.paymentGateway];
         const paymentGateway2 = status.paymentGateway;
@@ -1465,7 +1465,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
     }
     const intl7 = tmp14(1236).intl;
     const obj10 = { endDate: null, price: null };
-    let obj14 = importDefault(3902)(status.currentPeriodStart);
+    let obj14 = importDefault(3943)(status.currentPeriodStart);
     obj10[0] = obj14.add(closure_26, "days").toDate();
     obj10[1] = formatPriceResult;
     formatResult2 = intl7.format(tmp14(1236).t.EMTLOT, obj10);
@@ -1524,7 +1524,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       let toDateResult = date;
       if (!tmp26) {
         const unactivatedUnits = tmp2.unactivatedUnits;
-        obj2 = importDefault(3902)(date);
+        obj2 = importDefault(3943)(date);
         let addResult3 = obj2;
         if (unactivatedUnits.length > 0) {
           const mapped1 = unactivatedUnits.map((skuId) => skuId.skuId);
@@ -1568,7 +1568,7 @@ function extendDateWithUnconsumedFractionalPremium(date, unactivatedFractionalPr
   if (!excludeReverseTrialFromCountdown) {
     tmp4 = date;
   }
-  const tmp3Result = importDefault(3902)(tmp4);
+  const tmp3Result = importDefault(3943)(tmp4);
   let addResult = tmp3Result;
   if (unactivatedFractionalPremiumUnits.length > 0) {
     const mapped = unactivatedFractionalPremiumUnits.map((skuId) => skuId.skuId);
@@ -1589,7 +1589,7 @@ function extendDateWithUnconsumedFractionalPremium(date, unactivatedFractionalPr
   if (!excludeReverseTrialFromCountdown) {
     addResult1 = addResult;
     if (undefined !== diff) {
-      const diffResult = diff.diff(importDefault(3902)(), "hours", true);
+      const diffResult = diff.diff(importDefault(3943)(), "hours", true);
       addResult1 = addResult;
       if (diffResult > 0) {
         addResult1 = addResult.add(diffResult, "hours");
@@ -1619,10 +1619,10 @@ function getUnactivatedFractionalPremiumDurationString(unactivatedUnits) {
       obj[0] = require(1236) /* getSystemLocale */.t.fYmirx;
       obj[1] = require(1236) /* getSystemLocale */.t["C3RO+g"];
       obj[2] = require(1236) /* getSystemLocale */.t.r77oHc;
-      const obj2 = require(12737) /* roundFPCountdownUnits */;
-      const result = obj2.roundFPCountdownUnits(require(3990) /* resetCache */.diffAsUnits(0, reduced * importDefault(687).Millis.HOUR));
-      const obj3 = require(3990) /* resetCache */;
-      return require(3990) /* resetCache */.unitsAsStrings(result, obj);
+      const obj2 = require(12796) /* roundFPCountdownUnits */;
+      const result = obj2.roundFPCountdownUnits(require(4031) /* resetCache */.diffAsUnits(0, reduced * importDefault(687).Millis.HOUR));
+      const obj3 = require(4031) /* resetCache */;
+      return require(4031) /* resetCache */.unitsAsStrings(result, obj);
     }
   }
   return "";
@@ -1709,7 +1709,7 @@ function getFormattedPriceForPlan(id, arg1, arg2, flag) {
   } else {
     tmp5 = getDefaultPrice(id.id, false, flag);
   }
-  const formatPriceResult = require(5855) /* formatSingleCurrencyPrice */.formatPrice(tmp5.amount, tmp5.currency);
+  const formatPriceResult = require(5894) /* formatSingleCurrencyPrice */.formatPrice(tmp5.amount, tmp5.currency);
   let tmp10 = id.currency !== constants8.USD;
   if (tmp10) {
     tmp10 = true === arg2;
@@ -1791,7 +1791,7 @@ function getPremiumGuildIntervalPrice(planId, paymentSourceId, currency, user) {
     const obj1 = { planId: null };
     obj1[0] = planId;
     obj[0] = obj1;
-    const result = require(3981) /* _createGatewayCheckoutContext */.captureBillingException(error, obj);
+    const result = require(4022) /* _createGatewayCheckoutContext */.captureBillingException(error, obj);
     throw error;
   } else {
     const forSkuAndInterval = obj2.getForSkuAndInterval(closure_38.GUILD, value.interval, value.intervalCount);
@@ -1802,7 +1802,7 @@ function getPremiumGuildIntervalPrice(planId, paymentSourceId, currency, user) {
       let obj3 = { planId: null };
       obj3[0] = planId;
       obj2[0] = obj3;
-      const result1 = require(3981) /* _createGatewayCheckoutContext */.captureBillingException(error1, obj2);
+      const result1 = require(4022) /* _createGatewayCheckoutContext */.captureBillingException(error1, obj2);
       throw error1;
     } else {
       const id = forSkuAndInterval.id;
@@ -1917,7 +1917,7 @@ function getBillingReviewSubheader(arg0, id) {
                       if (tmp2.PREMIUM_6_MONTH_GUILD !== id) {
                         const _Error = Error;
                         const error = new Error("User is purchasing an unsupported plan");
-                        obj = require(3981) /* _createGatewayCheckoutContext */;
+                        obj = require(4022) /* _createGatewayCheckoutContext */;
                         obj = { tags: null };
                         const obj1 = { planId: null };
                         obj1[0] = id;
@@ -1962,7 +1962,7 @@ function formatTrialCtaIntervalDuration(intervalType) {
   if (num === undefined) {
     num = 1;
   }
-  let obj = require(5855) /* formatSingleCurrencyPrice */;
+  let obj = require(5894) /* formatSingleCurrencyPrice */;
   const formatPriceResult = obj.formatPrice(0, getDefaultCurrency(), { maximumFractionDigits: 0, minimumFractionDigits: 0 });
   if (constants7.DAY === MONTH) {
     if (num >= 7) {
@@ -2042,7 +2042,7 @@ function getItemsWithUpsertedPlanIdForGroup(renewalMutations, basePlanId, arg2, 
     obj[0] = basePlanId;
     obj[1] = closure_31;
     obj[1] = obj;
-    const checkoutError = new _require(10425).CheckoutError(obj);
+    const checkoutError = new _require(10466).CheckoutError(obj);
     throw checkoutError;
   }
 }
@@ -2082,7 +2082,7 @@ function getPremiumSkuIdForSubscription(items) {
     if (null == dependencyMap3[planId]) {
       const _Error = Error;
       const error = new Error("Unsupported plan");
-      let obj = require(3981) /* _createGatewayCheckoutContext */;
+      let obj = require(4022) /* _createGatewayCheckoutContext */;
       obj = { tags: null };
       obj = { planId: null };
       obj[0] = planId;
@@ -2106,7 +2106,7 @@ function getPremiumTypeFromSubscription(subscription) {
       } else {
         const _Error = Error;
         const error = new Error("Unsupported plan");
-        let obj = require(3981) /* _createGatewayCheckoutContext */;
+        let obj = require(4022) /* _createGatewayCheckoutContext */;
         obj = { tags: null };
         obj = { planId: null };
         obj[0] = planId;
@@ -2128,7 +2128,7 @@ function isNewUser(createdAt) {
   return tmp;
 }
 function formatPriceString(amount) {
-  const obj = require(5855) /* formatSingleCurrencyPrice */;
+  const obj = require(5894) /* formatSingleCurrencyPrice */;
   if (constants7.MONTH === arg1) {
     const intl2 = tmp(1236).intl;
     let stringResult = intl2.string(tmp(1236).t.FPybU7);
@@ -2140,7 +2140,7 @@ function formatPriceString(amount) {
     const error = new Error("Unexpected interval");
     throw error;
   }
-  return "" + require(5855) /* formatSingleCurrencyPrice */.formatPrice(amount.amount, amount.currency) + "/" + stringResult;
+  return "" + require(5894) /* formatSingleCurrencyPrice */.formatPrice(amount.amount, amount.currency) + "/" + stringResult;
 }
 function castPremiumSubscriptionAsSkuId(skuIdForPlan) {
   return skuIdForPlan;
@@ -2319,13 +2319,13 @@ function getDaysSincePremium(arg0) {
     const date = new Date();
     const _Date2 = Date;
     const date1 = new Date(arg0);
-    num = Math.max(require(3990) /* resetCache */.differenceInCalendarDays(date, date1), 0);
-    const obj = require(3990) /* resetCache */;
+    num = Math.max(require(4031) /* resetCache */.differenceInCalendarDays(date, date1), 0);
+    const obj = require(4031) /* resetCache */;
   }
   return num;
 }
 function getDaysRemainingUntilSubscriptionCurrentPeriodEnds(currentPeriodEnd) {
-  const obj = require(3990) /* resetCache */;
+  const obj = require(4031) /* resetCache */;
   const date = new Date(currentPeriodEnd.currentPeriodEnd);
   return Math.max(1, Math.ceil(obj.differenceInDays(date, new Date())));
 }
@@ -2378,7 +2378,7 @@ obj = {
     if (null == dependencyMap3[planId]) {
       const _Error = Error;
       const error = new Error("Unsupported plan");
-      let obj = require(3981) /* _createGatewayCheckoutContext */;
+      let obj = require(4022) /* _createGatewayCheckoutContext */;
       obj = { tags: null };
       obj = { planId: null };
       obj[0] = planId;
@@ -2408,7 +2408,7 @@ obj = {
     } else {
       const _Error = Error;
       const error = new Error("Unsupported plan");
-      let obj = require(3981) /* _createGatewayCheckoutContext */;
+      let obj = require(4022) /* _createGatewayCheckoutContext */;
       obj = { tags: null };
       obj = { planId: null };
       obj[0] = planId;
@@ -2493,86 +2493,86 @@ obj = {
   getDaysSincePremium,
   getDaysRemainingUntilSubscriptionCurrentPeriodEnds,
   canUseAnimatedEmojis(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.ANIMATED_EMOJIS, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.ANIMATED_EMOJIS, currentUser);
   },
   canUseEmojisEverywhere(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.EMOJIS_EVERYWHERE, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.EMOJIS_EVERYWHERE, currentUser);
   },
   canUseSoundboardEverywhere(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.SOUNDBOARD_EVERYWHERE, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.SOUNDBOARD_EVERYWHERE, currentUser);
   },
   canUseCustomCallSounds(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.CUSTOM_CALL_SOUNDS, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.CUSTOM_CALL_SOUNDS, currentUser);
   },
   canUploadLargeFiles(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.UPLOAD_LARGE_FILES, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.UPLOAD_LARGE_FILES, currentUser);
   },
   canUseBadges(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.PROFILE_BADGES, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.PROFILE_BADGES, currentUser);
   },
   canUseHighVideoUploadQuality(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
   },
   canEditDiscriminator(stateFromStores) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.CUSTOM_DISCRIMINATOR, stateFromStores);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.CUSTOM_DISCRIMINATOR, stateFromStores);
   },
   hasBoostDiscount(stateFromStores) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.BOOST_DISCOUNT, stateFromStores);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.BOOST_DISCOUNT, stateFromStores);
   },
   canUseAnimatedAvatar(c3) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.ANIMATED_AVATAR, c3);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.ANIMATED_AVATAR, c3);
   },
   canInstallPremiumApplications(isPremiumWithFractionalPremiumOnly) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
   },
   canUseIncreasedMessageLength(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.INCREASED_MESSAGE_LENGTH, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.INCREASED_MESSAGE_LENGTH, currentUser);
   },
   canUseIncreasedGuildCap(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.INCREASED_GUILD_LIMIT, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.INCREASED_GUILD_LIMIT, currentUser);
   },
   canRedeemPremiumPerks(isPremiumWithFractionalPremiumOnly) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
   },
   canUsePremiumProfileCustomization(isPremiumWithFractionalPremiumOnly) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.PROFILE_PREMIUM_FEATURES, isPremiumWithFractionalPremiumOnly);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.PROFILE_PREMIUM_FEATURES, isPremiumWithFractionalPremiumOnly);
   },
   canUsePremiumAppIcons(c0) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.APP_ICONS, c0);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.APP_ICONS, c0);
   },
   canUsePremiumGuildMemberProfile(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
   },
   canUseClientThemes(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.CLIENT_THEMES, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.CLIENT_THEMES, currentUser);
   },
   canStreamQuality(HIGH, user) {
     if (HIGH === obj.HIGH) {
-      let canUserUseResult = require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.STREAM_HIGH_QUALITY, user);
-      const obj2 = require(13337) /* ProductCatalogFeature */;
+      let canUserUseResult = require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.STREAM_HIGH_QUALITY, user);
+      const obj2 = require(13394) /* ProductCatalogFeature */;
     } else {
-      obj = require(13337) /* ProductCatalogFeature */;
-      canUserUseResult = obj.canUserUse(require(13337) /* ProductCatalogFeature */.STREAM_MID_QUALITY, user);
+      obj = require(13394) /* ProductCatalogFeature */;
+      canUserUseResult = obj.canUserUse(require(13394) /* ProductCatalogFeature */.STREAM_MID_QUALITY, user);
     }
     return canUserUseResult;
   },
   canUseQuestOrbMultiplier(perks) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.QUEST_ORB_MULTIPLIER, perks);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.QUEST_ORB_MULTIPLIER, perks);
   },
   hasFreeBoosts(stateFromStores) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.FREE_BOOSTS, stateFromStores);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.FREE_BOOSTS, stateFromStores);
   },
   canUseCustomStickersEverywhere(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.STICKERS_EVERYWHERE, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.STICKERS_EVERYWHERE, currentUser);
   },
   canUseCustomBackgrounds(currentUser) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.VIDEO_FILTER_ASSETS, currentUser);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.VIDEO_FILTER_ASSETS, currentUser);
   },
   canUseCollectibles(user) {
-    return require(13337) /* ProductCatalogFeature */.canUserUse(require(13337) /* ProductCatalogFeature */.COLLECTIBLES, user);
+    return require(13394) /* ProductCatalogFeature */.canUserUse(require(13394) /* ProductCatalogFeature */.COLLECTIBLES, user);
   },
   canUseMonthlyOrbs(stateFromStores) {
-    let hasPerkResult = require(7018) /* apexExperiment */.getIsCrepeEnabled("canUseMonthlyOrbs");
+    let hasPerkResult = require(7057) /* apexExperiment */.getIsCrepeEnabled("canUseMonthlyOrbs");
     if (hasPerkResult) {
       let perks;
       if (stateFromStores != null) {
@@ -2584,7 +2584,7 @@ obj = {
     return hasPerkResult;
   },
   canUseShopDiscounts(currentUser) {
-    let isCrepeEnabled = require(7018) /* apexExperiment */.getIsCrepeEnabled("canUseShopDiscounts");
+    let isCrepeEnabled = require(7057) /* apexExperiment */.getIsCrepeEnabled("canUseShopDiscounts");
     if (isCrepeEnabled) {
       let tmpResult = tmp(1938);
       let perks;
@@ -2594,13 +2594,13 @@ obj = {
       isCrepeEnabled = tmpResult.hasPerk(perks, tmp(1940).Perk.SHOP_DISCOUNTS);
     }
     if (!isCrepeEnabled) {
-      tmpResult = tmp(13337);
-      isCrepeEnabled = tmpResult.canUserUse(tmp(13337).COLLECTIBLES, currentUser);
+      tmpResult = tmp(13394);
+      isCrepeEnabled = tmpResult.canUserUse(tmp(13394).COLLECTIBLES, currentUser);
     }
     return isCrepeEnabled;
   },
   canUseMoreQuestOrbs(perks) {
-    let isCrepeEnabled = require(7018) /* apexExperiment */.getIsCrepeEnabled("canUseMoreQuestOrbs");
+    let isCrepeEnabled = require(7057) /* apexExperiment */.getIsCrepeEnabled("canUseMoreQuestOrbs");
     if (isCrepeEnabled) {
       let tmpResult = tmp(1938);
       perks = undefined;
@@ -2610,8 +2610,8 @@ obj = {
       isCrepeEnabled = tmpResult.hasPerk(perks, tmp(1940).Perk.MORE_QUEST_ORBS);
     }
     if (!isCrepeEnabled) {
-      tmpResult = tmp(13337);
-      isCrepeEnabled = tmpResult.canUserUse(tmp(13337).QUEST_ORB_MULTIPLIER, perks);
+      tmpResult = tmp(13394);
+      isCrepeEnabled = tmpResult.canUserUse(tmp(13394).QUEST_ORB_MULTIPLIER, perks);
     }
     return isCrepeEnabled;
   },
@@ -2852,7 +2852,7 @@ export const getDisplayNameFromSku = function getDisplayNameFromSku(sku_id1) {
   } else {
     const _Error = Error;
     const error = new Error("Unsupported sku");
-    let obj = require(3981) /* _createGatewayCheckoutContext */;
+    let obj = require(4022) /* _createGatewayCheckoutContext */;
     obj = { tags: null };
     obj = { skuId: null };
     obj[0] = sku_id1;
@@ -2918,9 +2918,9 @@ export const getPlanDescriptionFromInvoice = function getPlanDescriptionFromInvo
   } else {
     amount = result.amount;
   }
-  const obj3 = require(5855) /* formatSingleCurrencyPrice */;
+  const obj3 = require(5894) /* formatSingleCurrencyPrice */;
   const tmp4 = getPlanDescription;
-  obj[2] = obj3.formatRate(require(5855) /* formatSingleCurrencyPrice */.formatPrice(amount, renewalInvoicePreview.currency), value.interval, value.intervalCount);
+  obj[2] = obj3.formatRate(require(5894) /* formatSingleCurrencyPrice */.formatPrice(amount, renewalInvoicePreview.currency), value.interval, value.intervalCount);
   obj[3] = includePremiumGuilds;
   obj[4] = flag;
   obj[5] = activeDiscountInfo;
@@ -3145,7 +3145,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
       }
       let formatPriceResult;
       if (null != amount) {
-        let obj = require(5855) /* formatSingleCurrencyPrice */;
+        let obj = require(5894) /* formatSingleCurrencyPrice */;
         formatPriceResult = obj.formatPrice(amount, subscription.currency);
       }
       tmp10 = formatPriceResult;
@@ -3154,7 +3154,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
   }
   let str = "";
   if (null != tmp10) {
-    let obj1 = require(5855) /* formatSingleCurrencyPrice */;
+    let obj1 = require(5894) /* formatSingleCurrencyPrice */;
     str = obj1.formatRate(tmp10, value.interval, value.intervalCount);
   }
   let flag3;
@@ -3224,7 +3224,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
             if (subscription.isBoostOnly) {
               const intl4 = require(1236) /* getSystemLocale */.intl;
               const obj5 = { endDate: null, onClick: null };
-              let obj8 = require(3990) /* resetCache */;
+              let obj8 = require(4031) /* resetCache */;
               obj5[0] = obj8.dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
               obj5[1] = function onClick() {
                 callback(table[21])("https://support.discord.com/hc/articles/23082866222871");
@@ -3296,7 +3296,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
 export { getFormattedPriceForPlan };
 export const getFormattedRateForPlan = function getFormattedRateForPlan(interval) {
   const tmp = getFormattedPriceForPlan(interval, arg1, arg2);
-  return require(5855) /* formatSingleCurrencyPrice */.formatRate(tmp, interval.interval, interval.intervalCount);
+  return require(5894) /* formatSingleCurrencyPrice */.formatRate(tmp, interval.interval, interval.intervalCount);
 };
 export { getPlanIdFromInvoice };
 export { getStatusFromInvoice };
@@ -3313,8 +3313,8 @@ export const getFormattedPlanPriceFromInvoice = function getFormattedPlanPriceFr
   } else {
     amount = result.amount;
   }
-  const obj2 = require(5855) /* formatSingleCurrencyPrice */;
-  return obj2.formatRate(require(5855) /* formatSingleCurrencyPrice */.formatPrice(amount, findInvoiceItemByPlanId.currency), id.interval, id.intervalCount);
+  const obj2 = require(5894) /* formatSingleCurrencyPrice */;
+  return obj2.formatRate(require(5894) /* formatSingleCurrencyPrice */.formatPrice(amount, findInvoiceItemByPlanId.currency), id.interval, id.intervalCount);
 };
 export { getPremiumGuildIntervalPrice };
 export { getBillingReviewSubheader };
@@ -3621,7 +3621,7 @@ export const getMaxFileSizeForPremiumType = function getMaxFileSizeForPremiumTyp
     obj = { useSpace: true };
   }
   obj = { useKibibytes: true, useSpace: obj.useSpace };
-  return require(4198) /* formatSize */.formatSize(table3[TIER_0].fileSize / 1024, obj);
+  return require(4239) /* formatSize */.formatSize(table3[TIER_0].fileSize / 1024, obj);
 };
 export { getGuildBoostPlanItem };
 export { isBoostOnlySubscription };

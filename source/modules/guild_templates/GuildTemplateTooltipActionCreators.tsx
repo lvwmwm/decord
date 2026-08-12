@@ -1,8 +1,8 @@
-// Module ID: 5940
-// Function ID: 5941
-// Dependencies: [5, 3948, 676, 5941, 709, 2]
+// Module ID: 5979
+// Function ID: 5980
+// Dependencies: [5, 3989, 676, 5980, 709, 2]
 
-// Module 5940
+// Module 5979
 import set from "set";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";

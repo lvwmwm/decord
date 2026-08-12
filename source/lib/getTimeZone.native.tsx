@@ -1,12 +1,12 @@
-// Module ID: 16368
-// Function ID: 16369
+// Module ID: 16425
+// Function ID: 16426
 // Name: getTimeZone
-// Dependencies: [4283, 2]
+// Dependencies: [4324, 2]
 // Exports: default
 
-// Module 16368 (getTimeZone)
+// Module 16425 (getTimeZone)
 const result = require("set").fileFinishedImporting("lib/getTimeZone.native.tsx");
 
 export default function getTimeZone() {
-  return require(4283) /* DCDDeviceManager */.getTimeZone();
+  return require(4324) /* DCDDeviceManager */.getTimeZone();
 };

@@ -1,10 +1,10 @@
-// Module ID: 7955
-// Function ID: 7956
+// Module ID: 7994
+// Function ID: 7995
 // Name: useIsManualAgeVerificationHidden
 // Dependencies: [1471, 2]
 // Exports: isManualAgeVerificationHidden, useIsManualAgeVerificationHidden
 
-// Module 7955 (useIsManualAgeVerificationHidden)
+// Module 7994 (useIsManualAgeVerificationHidden)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

@@ -1,9 +1,9 @@
-// Module ID: 14728
-// Function ID: 14729
+// Module ID: 14786
+// Function ID: 14787
 // Name: radio
-// Dependencies: [8084, 10448, 3993, 1306, 1236, 10452, 10449, 2]
+// Dependencies: [8123, 10489, 4034, 1306, 1236, 10493, 10490, 2]
 
-// Module 14728 (radio)
+// Module 14786 (radio)
 import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG";
 import createToggle from "createToggle";
 
@@ -16,16 +16,16 @@ const radio = createToggle.createRadio({
   useValue: require("useLaunchPadType"),
   onValueChange: function onLaunchpadSettingValueChange(arg0) {
     if (LaunchPadTypes.GESTURE_FULL === arg0) {
-      const LaunchPadModeSetting3 = require(3993) /* explicitContentFromProto */.LaunchPadModeSetting;
+      const LaunchPadModeSetting3 = require(4034) /* explicitContentFromProto */.LaunchPadModeSetting;
       LaunchPadModeSetting3.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_GESTURE_FULL_SCREEN);
     } else if (tmp.GESTURE_EDGE === arg0) {
-      const LaunchPadModeSetting2 = require(3993) /* explicitContentFromProto */.LaunchPadModeSetting;
+      const LaunchPadModeSetting2 = require(4034) /* explicitContentFromProto */.LaunchPadModeSetting;
       LaunchPadModeSetting2.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_GESTURE_RIGHT_EDGE);
     } else if (tmp.PULL_TAB === arg0) {
-      const LaunchPadModeSetting = require(3993) /* explicitContentFromProto */.LaunchPadModeSetting;
+      const LaunchPadModeSetting = require(4034) /* explicitContentFromProto */.LaunchPadModeSetting;
       LaunchPadModeSetting.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_PULL_TAB);
     } else if (tmp.DISABLED === arg0) {
-      const LaunchPadModeSetting4 = require(3993) /* explicitContentFromProto */.LaunchPadModeSetting;
+      const LaunchPadModeSetting4 = require(4034) /* explicitContentFromProto */.LaunchPadModeSetting;
       LaunchPadModeSetting4.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_DISABLED);
     }
   },
@@ -70,16 +70,16 @@ let obj = {
   useValue: require("useLaunchPadType"),
   onValueChange: function onLaunchpadSettingValueChange(arg0) {
     if (LaunchPadTypes.GESTURE_FULL === arg0) {
-      const LaunchPadModeSetting3 = require(3993) /* explicitContentFromProto */.LaunchPadModeSetting;
+      const LaunchPadModeSetting3 = require(4034) /* explicitContentFromProto */.LaunchPadModeSetting;
       LaunchPadModeSetting3.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_GESTURE_FULL_SCREEN);
     } else if (tmp.GESTURE_EDGE === arg0) {
-      const LaunchPadModeSetting2 = require(3993) /* explicitContentFromProto */.LaunchPadModeSetting;
+      const LaunchPadModeSetting2 = require(4034) /* explicitContentFromProto */.LaunchPadModeSetting;
       LaunchPadModeSetting2.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_GESTURE_RIGHT_EDGE);
     } else if (tmp.PULL_TAB === arg0) {
-      const LaunchPadModeSetting = require(3993) /* explicitContentFromProto */.LaunchPadModeSetting;
+      const LaunchPadModeSetting = require(4034) /* explicitContentFromProto */.LaunchPadModeSetting;
       LaunchPadModeSetting.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_PULL_TAB);
     } else if (tmp.DISABLED === arg0) {
-      const LaunchPadModeSetting4 = require(3993) /* explicitContentFromProto */.LaunchPadModeSetting;
+      const LaunchPadModeSetting4 = require(4034) /* explicitContentFromProto */.LaunchPadModeSetting;
       LaunchPadModeSetting4.updateSetting(require(1306) /* create */.LaunchPadMode.LAUNCH_PAD_DISABLED);
     }
   },

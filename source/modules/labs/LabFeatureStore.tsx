@@ -1,9 +1,9 @@
-// Module ID: 8921
-// Function ID: 8922
+// Module ID: 8960
+// Function ID: 8961
 // Name: getUserAgnosticState
-// Dependencies: [589, 8922, 709, 2]
+// Dependencies: [589, 8961, 709, 2]
 
-// Module 8921 (getUserAgnosticState)
+// Module 8960 (getUserAgnosticState)
 import { DeviceSettingsStore } from "initialize";
 
 let closure_2 = {};
@@ -14,7 +14,7 @@ prototype["getUserAgnosticState"] = function getUserAgnosticState() {
   return { toggleStates: closure_2 };
 };
 prototype["initialize"] = function initialize(toggleStates) {
-  for (const key10008 in importDefault(8922)) {
+  for (const key10008 in importDefault(8961)) {
     let tmp = key10008;
     let flag;
     let tmp2 = closure_2;

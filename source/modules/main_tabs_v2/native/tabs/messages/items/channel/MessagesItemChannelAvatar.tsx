@@ -1,8 +1,8 @@
-// Module ID: 15179
-// Function ID: 15180
-// Dependencies: [19, 4295, 1218, 4390, 11377, 1922, 9800, 21, 4303, 712, 1297, 589, 9668, 2]
+// Module ID: 15236
+// Function ID: 15237
+// Dependencies: [19, 4336, 1218, 4430, 11431, 1922, 9841, 21, 4344, 712, 1297, 589, 9708, 2]
 
-// Module 15179
+// Module 15236
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import fetchFingerprint from "fetchFingerprint";
 import sortActivity from "sortActivity";
@@ -112,11 +112,11 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
     obj[2] = channel;
     obj[3] = stateFromStores1;
     obj[4] = tmpResult.avatar;
-    let tmp11Result = jsx(importDefault(9668), { status: null, size: null, channel: null, animate: null, style: null });
+    let tmp11Result = jsx(importDefault(9708), { status: null, size: null, channel: null, animate: null, style: null });
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      obj = { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: null, status: false, streaming: false, style: null, size: null, animate: null, typing: null, autoStatusCutout: null };
+      obj = { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "redux.action", size: null, animate: "info", typing: null, autoStatusCutout: null };
       obj[0] = stateFromStores2;
       obj[1] = stateFromStores2.avatarDecoration;
       obj[3] = stateFromStores3;
@@ -131,7 +131,7 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
       obj[8] = REFRESH_MEDIUM_32;
       obj[9] = stateFromStores1;
       obj[10] = stateFromStores;
-      tmp11Result = jsx(tmp3(1297).Avatar, { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: null, status: false, streaming: false, style: null, size: null, animate: null, typing: null, autoStatusCutout: null });
+      tmp11Result = jsx(tmp3(1297).Avatar, { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "redux.action", size: null, animate: "info", typing: null, autoStatusCutout: null });
       const tmp11 = jsx;
     }
   }

@@ -1,32 +1,32 @@
-// Module ID: 11383
-// Function ID: 11384
-// Dependencies: [11384, 7214, 2]
+// Module ID: 11439
+// Function ID: 11440
+// Dependencies: [11440, 7253, 2]
 
-// Module 11383
+// Module 11439
 let result = require("set").fileFinishedImporting("modules/chat_input/native/ChatInputNativeCommands.tsx");
 
 export default {
   backspace(arg0) {
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       Commands.backspace(arg0);
     }
   },
   blur(arg0) {
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       Commands.blur(arg0);
     }
   },
   closeCustomKeyboard(arg0) {
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       Commands.closeCustomKeyboard(arg0);
     }
   },
   flushText(arg0, arg1) {
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       Commands.flushText(arg0, arg1);
     }
   },
@@ -36,48 +36,48 @@ export default {
     if (null == arg0) {
       return null;
     } else {
-      const nonce = _require(7214).createNonce();
+      const nonce = _require(7253).createNonce();
       const result = set.set(nonce, (arg0) => {
         set.delete(nonce);
         callback(arg0);
       });
-      const Commands = _require(11384).Commands;
+      const Commands = _require(11440).Commands;
       Commands.flushText(arg0, nonce);
     }
   },
   focus(arg0) {
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       Commands.focus(arg0);
     }
   },
   openCustomKeyboard(arg0) {
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       Commands.openCustomKeyboard(arg0);
     }
   },
   openSystemKeyboard(arg0) {
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       Commands.openSystemKeyboard(arg0);
     }
   },
   setText(arg0, arg1) {
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       Commands.setText(arg0, arg1);
     }
   },
   setSelectedRange(arg0, arg1, arg2) {
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       Commands.setSelectedRange(arg0, arg1, arg2);
     }
   },
   updateTextBlocks(arg0, arg1, arg2) {
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       const _JSON = JSON;
       const json = JSON.stringify(arg1);
       Commands.updateTextBlocks(arg0, json, arg2);
@@ -99,7 +99,7 @@ export default {
     }
     const editId = keepCursorPosition.editId;
     if (null != arg0) {
-      const Commands = require(11384) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(11440) /* __INTERNAL_VIEW_CONFIG */.Commands;
       const _JSON = JSON;
       Commands.replaceRange(arg0, _location, length, text, JSON.stringify(nodes), flag, editId);
     }

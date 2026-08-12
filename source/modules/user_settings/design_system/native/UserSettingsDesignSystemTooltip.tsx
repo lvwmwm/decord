@@ -1,10 +1,10 @@
-// Module ID: 14817
-// Function ID: 14818
+// Module ID: 14875
+// Function ID: 14876
 // Name: Content
-// Dependencies: [32, 19, 17, 21, 4303, 8901, 8660, 4714, 5768, 4299, 5328, 5715, 2]
+// Dependencies: [32, 19, 17, 21, 4344, 8940, 8699, 4754, 5807, 4340, 5367, 5754, 2]
 // Exports: default, useCanRotate
 
-// Module 14817 (Content)
+// Module 14875 (Content)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -27,7 +27,7 @@ function Content() {
   const tmp4 = first2(React.useState(false), 2);
   first1 = tmp4[0];
   const effect = React.useEffect(() => {
-    const obj = first1(8901);
+    const obj = first1(8940);
     if (first1) {
       obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
     } else {
@@ -60,10 +60,10 @@ function Content() {
       }
     };
   }, items1);
-  let obj1 = first1(8660);
+  let obj1 = first1(8699);
   const tooltip = obj1.useTooltip(ref, memo);
   obj = { children: null };
-  obj = { style: tmp.container, children: callback2(first1(4714).Button, obj1) };
+  obj = { style: tmp.container, children: callback2(first1(4754).Button, obj1) };
   obj1 = {
     ref,
     onPress() {
@@ -73,7 +73,7 @@ function Content() {
     text: str,
     size: "md"
   };
-  const items2 = [callback2(View, obj), callback2(first1(5768).TableSwitchRow, { label: "Unlock Orientation", value: tmp9, onValueChange: tmp10 }), callback2(first1(5768).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp11[1] }), callback2(TooltipNote, {})];
+  const items2 = [callback2(View, obj), callback2(first1(5807).TableSwitchRow, { label: "Unlock Orientation", value: tmp9, onValueChange: tmp10 }), callback2(first1(5807).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp11[1] }), callback2(TooltipNote, {})];
   obj[0] = items2;
   return callback3(closure_6, obj);
 }
@@ -95,14 +95,14 @@ export default function UserSettingsDesignSystemTooltip() {
   let obj = { style: callback4().flex, bottom: true, children: null };
   obj = { children: null };
   obj[0] = callback2(Content, {});
-  obj[2] = callback2(require(5715) /* Layer */.LayerScope, obj);
-  return callback2(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj[2] = callback2(require(5754) /* Layer */.LayerScope, obj);
+  return callback2(require(5367) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };
 export const useCanRotate = function useCanRotate() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const effect = React.useEffect(() => {
-    const obj = first1(8901);
+    const obj = first1(8940);
     if (first1) {
       obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
     } else {

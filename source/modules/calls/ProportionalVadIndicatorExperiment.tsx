@@ -1,9 +1,9 @@
-// Module ID: 5138
-// Function ID: 5139
+// Module ID: 5178
+// Function ID: 5179
 // Name: getUnitId
 // Dependencies: [1368, 2]
 
-// Module 5138 (getUnitId)
+// Module 5178 (getUnitId)
 const obj = { 1: null, 2: { enabled: true }, 3: { enabled: true, disableUI: true }, 4: { enabled: true, disableUI: true, swallowVolumeOnlySpeakingEvents: true } };
 obj[4] = { enabled: true, disableUI: true, dontEmitVolumeOnlySpeakingEvents: true };
 const tmp2 = require("getUnitId")({ kind: "user", name: "2025-12-proportional-vad-indicator", defaultConfig: { enabled: false }, variations: obj });

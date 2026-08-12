@@ -1,10 +1,10 @@
-// Module ID: 11137
-// Function ID: 11138
+// Module ID: 11190
+// Function ID: 11191
 // Name: ChatArrowRightIcon
-// Dependencies: [19, 21, 712, 4023, 11138, 2]
+// Dependencies: [19, 21, 712, 4064, 11191, 2]
 // Exports: ChatArrowRightIcon
 
-// Module 11137 (ChatArrowRightIcon)
+// Module 11190 (ChatArrowRightIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ChatArrowRightIcon = function ChatArrowRightIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11138) /* registerAsset */;
+  obj[0] = require(11191) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

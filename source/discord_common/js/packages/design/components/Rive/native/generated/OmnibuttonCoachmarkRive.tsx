@@ -1,9 +1,9 @@
-// Module ID: 4116
-// Function ID: 4117
+// Module ID: 4157
+// Function ID: 4158
 // Name: OmnibuttonCoachmarkRive
-// Dependencies: [109, 19, 21, 4036, 4117, 4093, 2]
+// Dependencies: [109, 19, 21, 4077, 4158, 4134, 2]
 
-// Module 4116 (OmnibuttonCoachmarkRive)
+// Module 4157 (OmnibuttonCoachmarkRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(4036) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(4077) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   }
 };
@@ -66,7 +66,7 @@ const forwardRefResult = importAllResult.forwardRef(function OmnibuttonCoachmark
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4093) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4134) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/OmnibuttonCoachmarkRive.tsx");
 

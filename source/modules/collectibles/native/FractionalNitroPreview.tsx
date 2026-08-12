@@ -1,10 +1,10 @@
-// Module ID: 9563
-// Function ID: 9564
+// Module ID: 9603
+// Function ID: 9604
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 4725, 5268, 9564, 9565, 5363, 4299, 2]
+// Dependencies: [19, 17, 676, 21, 4344, 712, 1236, 4765, 5307, 9604, 9605, 5402, 4340, 2]
 // Exports: FractionalNitroPreview
 
-// Module 9563 (FractionalNitroPreview)
+// Module 9603 (FractionalNitroPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { VerticalGradient } from "ME";
@@ -34,16 +34,16 @@ export const FractionalNitroPreview = function FractionalNitroPreview() {
   let items = [require(1236) /* getSystemLocale */.t.E1NP2x, require(1236) /* getSystemLocale */.t.kpMomJ, require(1236) /* getSystemLocale */.t.xT1Vfn, require(1236) /* getSystemLocale */.t.myyAEr, require(1236) /* getSystemLocale */.t.zTk8Ul];
   let obj = { style: tmp.container, children: null };
   obj = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
-  const items1 = [callback(importDefault(4725), obj), , , ];
+  const items1 = [callback(importDefault(4765), obj), , , ];
   obj = { source: null, style: null };
   const obj1 = { uri: null };
-  obj1[0] = importDefault(9564);
+  obj1[0] = importDefault(9604);
   obj[0] = obj1;
   obj[1] = tmp.headerImage;
-  items1[1] = callback(importDefault(5268), obj);
-  const tmp2 = importDefault(5268);
-  items1[2] = callback(View, { style: tmp.nitroIconContainer, children: callback(importDefault(9565), {}) });
-  const obj2 = { style: tmp.nitroIconContainer, children: callback(importDefault(9565), {}) };
+  items1[1] = callback(importDefault(5307), obj);
+  const tmp2 = importDefault(5307);
+  items1[2] = callback(View, { style: tmp.nitroIconContainer, children: callback(importDefault(9605), {}) });
+  const obj2 = { style: tmp.nitroIconContainer, children: callback(importDefault(9605), {}) };
   items1[3] = callback(View, {
     style: tmp.benefits,
     children: items.map((arg0, arg1) => {

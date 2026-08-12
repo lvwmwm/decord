@@ -1,10 +1,10 @@
-// Module ID: 8871
-// Function ID: 8872
+// Module ID: 8910
+// Function ID: 8911
 // Name: MediaViewerDimensionsProvider
 // Dependencies: [19, 21, 1493, 38, 2]
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
-// Module 8871 (MediaViewerDimensionsProvider)
+// Module 8910 (MediaViewerDimensionsProvider)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 

@@ -1,9 +1,9 @@
-// Module ID: 13070
-// Function ID: 13071
+// Module ID: 13127
+// Function ID: 13128
 // Name: PrivateChannelSubtitle
-// Dependencies: [19, 17, 1390, 1910, 3948, 676, 21, 4303, 712, 13071, 13072, 4299, 13073, 589, 10820, 4494, 9071, 1236, 4158, 1297, 4794, 13075, 10899, 9727, 4846, 2]
+// Dependencies: [19, 17, 1390, 1910, 3989, 676, 21, 4344, 712, 13128, 13129, 4340, 13130, 589, 10873, 4534, 9110, 1236, 4199, 1297, 4834, 13132, 10952, 9768, 4886, 2]
 
-// Module 13070 (PrivateChannelSubtitle)
+// Module 13127 (PrivateChannelSubtitle)
 import "Button";
 import { View } from "getSystemLocale";
 import participantFromServer from "participantFromServer";
@@ -22,23 +22,23 @@ const require = arg1;
 function PrivateChannelSubtitle(channel) {
   channel = channel.channel;
   const tmp = createCacheKey();
-  const state = importDefault(13071)(channel.id).state;
+  const state = importDefault(13128)(channel.id).state;
   let obj = { style: tmp.subtitleWrapper, children: null };
   obj = { useAllAloneText: false, channel, voiceState: state, style: tmp.subtitle };
-  const items = [callback(importDefault(13072), obj), , ];
-  let tmp6Result = state === require(13071) /* id */.CallStates.CONNECTED;
+  const items = [callback(importDefault(13129), obj), , ];
+  let tmp6Result = state === require(13128) /* id */.CallStates.CONNECTED;
   if (tmp6Result) {
     obj = { style: null, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
     obj[0] = tmp.subtitle;
-    tmp6Result = tmp6(tmp7(4299).Text, obj);
+    tmp6Result = tmp6(tmp7(4340).Text, obj);
   }
   items[1] = tmp6Result;
-  tmp6Result = state === tmp7(13071).CallStates.CONNECTED;
+  tmp6Result = state === tmp7(13128).CallStates.CONNECTED;
   if (tmp6Result) {
     const obj1 = { channelId: null, style: null };
     obj1[0] = channel.id;
     obj1[1] = tmp.subtitle;
-    tmp6Result = tmp6(importDefault(13073), obj1);
+    tmp6Result = tmp6(importDefault(13130), obj1);
   }
   items[2] = tmp6Result;
   obj[1] = items;
@@ -47,7 +47,7 @@ function PrivateChannelSubtitle(channel) {
 class VoiceChannelHeader {
   constructor(arg0) {
     channel = global.channel;
-    f91652 = undefined;
+    f91870 = undefined;
     tmp = jsxs();
     tmp2 = channel;
     tmp3 = closure_2;
@@ -55,14 +55,14 @@ class VoiceChannelHeader {
     items = [];
     items[0] = View;
     stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(channel.getGuildId()));
-    tmp5 = f91652;
+    tmp5 = f91870;
     tmp6 = require("useIsVoiceChannelFull")(channel);
     obj2 = require("initialize");
     items1 = [];
     items1[0] = View;
     items2 = [];
     items2[0] = channel;
-    f91652 = obj2.useStateFromStores(items1, () => outer1_4.getSelfEmbeddedActivityForChannel(channel.id), items2);
+    f91870 = obj2.useStateFromStores(items1, () => outer1_4.getSelfEmbeddedActivityForChannel(channel.id), items2);
     name = undefined;
     tmp7 = require("computeChannelName")(channel);
     if (stateFromStores != null) {
@@ -98,7 +98,7 @@ class VoiceChannelHeader {
       name = jsx(PrivateChannelSubtitle, obj1);
       class E {
         constructor() {
-          obj = require("navigationToRootTabHelper");
+          obj = require("coerceMainRoute");
           return obj.navigateToNewGroupDM(channel.id, outer1_8.CHANNEL_CALL);
         }
       }
@@ -152,7 +152,7 @@ class VoiceChannelHeader {
 }
 function AddMemberButton(onPress) {
   const obj = { onPress: onPress.onPress, iconSource: null, iconStyle: null, accessibilityLabel: null };
-  obj[1] = importDefault(9727);
+  obj[1] = importDefault(9768);
   obj[2] = createCacheKey().icons;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["6Qgrev"]);

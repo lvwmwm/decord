@@ -1,10 +1,10 @@
-// Module ID: 11915
-// Function ID: 11916
+// Module ID: 11972
+// Function ID: 11973
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4191, 21, 4303, 712, 11916, 7697, 4299, 2]
+// Dependencies: [17, 4232, 21, 4344, 712, 8236, 11973, 7736, 4340, 2]
 // Exports: default
 
-// Module 11915 (GuildPowerupsBoostInfo)
+// Module 11972 (GuildPowerupsBoostInfo)
 import { View } from "get ActivityIndicator";
 import { BoostInfoType } from "BoostedGuildTiers";
 import jsxProd from "jsxProd";
@@ -25,8 +25,10 @@ export default function GuildPowerupsBoostInfo(arg0) {
   let type;
   ({ count, type } = arg0);
   const tmp = callback();
-  let obj = require(11916) /* getGuildPowerupsBoostInfoText */;
-  const guildPowerupsBoostInfoText = obj.getGuildPowerupsBoostInfoText(count, type);
+  let obj = require(8236) /* apexExperiment */;
+  const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsBoostInfo");
+  let obj1 = require(11973) /* getGuildPowerupsBoostInfoText */;
+  const guildPowerupsBoostInfoText = obj1.getGuildPowerupsBoostInfoText(count, type);
   obj = { style: tmp.container, accessible: true, accessibilityLabel: "" + count + ", " + guildPowerupsBoostInfoText, children: null };
   obj = { style: tmp.headerContainer, importantForAccessibility: "no-hide-descendants", accessible: false, children: null };
   if (type === BoostInfoType.AVAILABLE) {
@@ -34,14 +36,21 @@ export default function GuildPowerupsBoostInfo(arg0) {
   } else {
     TEXT_MUTED = importDefault(712).colors.TEXT_MUTED;
   }
-  const items = [closure_5(require(7697) /* BoostGemIcon */.BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
-  let str = "text-subtle";
-  if (type === BoostInfoType.AVAILABLE) {
-    str = "text-strong";
+  const items = [closure_5(require(7736) /* BoostGemIcon */.BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
+  let str = "text-lg/medium";
+  if (manaTypeConsolidationExperiment) {
+    str = "experimental/body-lg/semibold";
   }
-  items[1] = closure_5(require(4299) /* Text */.Text, { variant: "text-lg/medium", color: str, importantForAccessibility: "no-hide-descendants", children: count });
+  obj1 = { variant: str, color: null, importantForAccessibility: "no-hide-descendants", children: null };
+  let str2 = "text-subtle";
+  if (type === BoostInfoType.AVAILABLE) {
+    str2 = "text-strong";
+  }
+  obj1[1] = str2;
+  obj1[3] = count;
+  items[1] = closure_5(require(4340) /* Text */.Text, obj1);
   obj[3] = items;
-  const items1 = [closure_6(View, obj), closure_5(require(4299) /* Text */.Text, { variant: "text-md/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText })];
+  const items1 = [closure_6(View, obj), closure_5(require(4340) /* Text */.Text, { variant: "text-md/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText })];
   obj[3] = items1;
   return closure_6(View, obj);
 };

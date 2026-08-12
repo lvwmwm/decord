@@ -1,9 +1,9 @@
-// Module ID: 9028
-// Function ID: 9029
+// Module ID: 9067
+// Function ID: 9068
 // Name: handleFormInit
-// Dependencies: [1431, 9007, 1395, 1434, 7762, 1930, 1910, 1922, 676, 9029, 8144, 11, 9030, 530, 709, 9032, 1430, 9033, 3902, 9034, 589, 12, 595, 2]
+// Dependencies: [1431, 9046, 1395, 1434, 7801, 1930, 1910, 1922, 676, 9068, 8183, 11, 9069, 530, 709, 9071, 1430, 9072, 3943, 9073, 589, 12, 595, 2]
 
-// Module 9028 (handleFormInit)
+// Module 9067 (handleFormInit)
 import { set } from "isValueEqual";
 import handleUpdateStart from "handleUpdateStart";
 import { createChannelRecordFromInvite as closure_15 } from "createChannelRecord";
@@ -63,7 +63,7 @@ function handleFormInit(location) {
     closure_44 = {};
     location = location.location;
     if (section === constants.TAG) {
-      obj = require(9030) /* canUseMobileServerTagSettings */;
+      obj = require(9069) /* canUseMobileServerTagSettings */;
       if (!obj.canUseMobileServerTagSettings(guildId)) {
         obj2 = undefined;
       }
@@ -104,7 +104,7 @@ function _createInvite(code) {
   obj[5] = fromInviteGuildResult;
   ({ uses: obj[6], max_uses: obj[7], max_age: obj[8] } = code);
   const created_at = code.created_at;
-  obj[9] = importDefault(3902)(created_at);
+  obj[9] = importDefault(3943)(created_at);
   ({ flags: obj[10], roles: obj[11] } = code);
   tmp = new tmp(obj);
   return tmp;
@@ -120,8 +120,8 @@ function handleIntegrationsUpdate(type) {
       tmp5 = type.guildId === user.id;
     }
     if (tmp5) {
-      const guildIntegrationsApplications = require(9034) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
-      const obj = require(9034) /* _fetchGuildIntegrationsApplications */;
+      const guildIntegrationsApplications = require(9073) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
+      const obj = require(9073) /* _fetchGuildIntegrationsApplications */;
     }
     tmp = tmp5;
   }
@@ -412,8 +412,8 @@ obj = {
   GUILD_SETTINGS_SUBMIT_FAILURE: function handleFormSubmitFailure(errors) {
     const OPEN = FormStates.OPEN;
     if (defaultGuildSettingsSection == null) {
-      defaultGuildSettingsSection = require(9033) /* getDefaultGuildSettingsSection */.getDefaultGuildSettingsSection();
-      const obj = require(9033) /* getDefaultGuildSettingsSection */;
+      defaultGuildSettingsSection = require(9072) /* getDefaultGuildSettingsSection */.getDefaultGuildSettingsSection();
+      const obj = require(9072) /* getDefaultGuildSettingsSection */;
     }
     let c4 = null;
     errors = errors.errors;
@@ -435,8 +435,8 @@ obj = {
               if (closure_3 === tmp27.MEMBERS) {
                 let c10 = getGuildEveryoneRoleId(user);
               } else if (closure_3 === tmp27.VANITY_URL) {
-                const vanityUrl = require(9032) /* fetchVanityUrl */.fetchVanityUrl(user.id);
-                const obj2 = require(9032) /* fetchVanityUrl */;
+                const vanityUrl = require(9071) /* fetchVanityUrl */.fetchVanityUrl(user.id);
+                const obj2 = require(9071) /* fetchVanityUrl */;
               } else if (closure_3 === tmp27.SAFETY) {
                 if (null == closure_4) {
                   let SAFETY_OVERVIEW = constants2.SAFETY_OVERVIEW;
@@ -462,8 +462,8 @@ obj = {
                 tmp13 = section.guildId === user.id;
               }
               if (tmp13) {
-                const guildIntegrationsApplications = require(9034) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
-                const obj3 = require(9034) /* _fetchGuildIntegrationsApplications */;
+                const guildIntegrationsApplications = require(9073) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
+                const obj3 = require(9073) /* _fetchGuildIntegrationsApplications */;
               }
               tmp12 = tmp13;
             }
@@ -761,9 +761,9 @@ obj = {
     }
     let tmp2 = profile.id === id;
     if (tmp2) {
-      const result = require(9030) /* canUseMobileServerTagSettings */.isServerTagDraftDirty(profile, profile);
+      const result = require(9069) /* canUseMobileServerTagSettings */.isServerTagDraftDirty(profile, profile);
       tmp2 = !result;
-      const obj = require(9030) /* canUseMobileServerTagSettings */;
+      const obj = require(9069) /* canUseMobileServerTagSettings */;
       const tmp8 = !result;
     }
     return tmp2;

@@ -1,9 +1,9 @@
-// Module ID: 9376
-// Function ID: 9377
+// Module ID: 9416
+// Function ID: 9417
 // Name: map
-// Dependencies: [589, 8906, 709, 2]
+// Dependencies: [589, 8945, 709, 2]
 
-// Module 9376 (map)
+// Module 9416 (map)
 import { Store } from "initialize";
 import set from "dispatcher";
 
@@ -21,7 +21,7 @@ prototype["getMatchingOutboxEntry"] = function getMatchingOutboxEntry(activity) 
   const value = map.get(activity.userId);
   if (null != value) {
     if (null != activity) {
-      return require(8906) /* isMatchingListeningActivity */.findMatchingEntry(value.entries, activity);
+      return require(8945) /* isMatchingListeningActivity */.findMatchingEntry(value.entries, activity);
     }
   }
 };

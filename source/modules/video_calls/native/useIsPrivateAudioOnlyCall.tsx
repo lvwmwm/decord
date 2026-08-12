@@ -1,10 +1,10 @@
-// Module ID: 9746
-// Function ID: 9747
+// Module ID: 9787
+// Function ID: 9788
 // Name: areParticipantStatesEqual
-// Dependencies: [32, 1390, 4316, 4322, 4351, 4319, 4321, 589, 2]
+// Dependencies: [32, 1390, 4357, 4363, 4392, 4360, 4362, 589, 2]
 // Exports: default
 
-// Module 9746 (areParticipantStatesEqual)
+// Module 9787 (areParticipantStatesEqual)
 import _slicedToArray from "_slicedToArray";
 import participantFromServer from "participantFromServer";
 import getParticipants from "getParticipants";

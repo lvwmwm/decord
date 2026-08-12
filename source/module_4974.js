@@ -1,46 +1,6 @@
 // Module ID: 4974
 // Function ID: 4975
-// Dependencies: [4951, 4952, 4931]
+// Dependencies: []
 
 // Module 4974
-const require = arg1;
-const dependencyMap = arg6;
-arg5.default = {
-  read(byteLength, sum, arg2, byteOrder) {
-    let obj = require(4951) /* readTag */;
-    const ifd = obj.readIfd(byteLength, require(4952) /* importDefaultResult1 */.IFD_TYPE_CANON, sum, sum + arg2, byteOrder, arg4);
-    let tmp6 = ifd;
-    if (ifd.ShotInfo) {
-      const value = ifd.ShotInfo.value;
-      obj = {};
-      if (undefined !== value[27]) {
-        obj = { value: null, description: null };
-        obj[0] = value[27];
-        let str = "None";
-        if (0 !== value[27]) {
-          let str2 = "Rotate 90 CW";
-          if (1 !== tmp7) {
-            let str3 = "Rotate 180";
-            if (2 !== tmp7) {
-              let str4 = "Unknown";
-              if (3 === tmp7) {
-                str4 = "Rotate 270 CW";
-              }
-              str3 = str4;
-            }
-            str2 = str3;
-          }
-          str = str2;
-        }
-        obj[1] = str;
-        obj.AutoRotate = obj;
-      }
-      const tmp3Result = require(4931) /* getDataView */;
-      delete tmp[tmp2];
-      tmp6 = require(4931) /* getDataView */.objectAssign({}, ifd, obj);
-      const objectAssignResult = require(4931) /* getDataView */.objectAssign({}, ifd, obj);
-    }
-    return tmp6;
-  },
-  SHOT_INFO_AUTO_ROTATE: 27
-};
+arg5.default = { USE_FILE: true, USE_JFIF: true, USE_PNG_FILE: true, USE_EXIF: true, USE_IPTC: true, USE_XMP: true, USE_ICC: true, USE_MPF: true, USE_PHOTOSHOP: true, USE_THUMBNAIL: true, USE_TIFF: true, USE_JPEG: true, USE_PNG: true, USE_HEIC: true, USE_AVIF: true, USE_WEBP: true, USE_GIF: true, USE_MAKER_NOTES: true };

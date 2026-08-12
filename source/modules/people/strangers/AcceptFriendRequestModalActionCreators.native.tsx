@@ -1,10 +1,10 @@
-// Module ID: 9640
-// Function ID: 9641
+// Module ID: 9680
+// Function ID: 9681
 // Name: openAcceptFriendRequestConfirmModal
-// Dependencies: [9641, 676, 21, 698, 4643, 9642, 2007, 2]
+// Dependencies: [9681, 676, 21, 698, 4683, 9682, 2007, 2]
 // Exports: openAcceptFriendRequestConfirmModal
 
-// Module 9640 (openAcceptFriendRequestConfirmModal)
+// Module 9680 (openAcceptFriendRequestConfirmModal)
 import { ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID as closure_3 } from "RELATIONSHIP_COUNT_ANIMATION_THRESHOLD";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
@@ -38,5 +38,5 @@ export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequ
       });
     }
   };
-  importDefault(4643).openLazy(obj);
+  importDefault(4683).openLazy(obj);
 };

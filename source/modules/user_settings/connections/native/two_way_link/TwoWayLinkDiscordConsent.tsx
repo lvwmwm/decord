@@ -1,10 +1,10 @@
-// Module ID: 10512
-// Function ID: 10513
+// Module ID: 10553
+// Function ID: 10554
 // Name: TwoWayLinkDiscordConsent
-// Dependencies: [5, 32, 19, 17, 21, 3, 4303, 10504, 5123, 10513, 38, 5824, 5328, 4714, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 21, 3, 4344, 10545, 5163, 10554, 38, 5863, 5367, 4754, 1236, 2]
 // Exports: TwoWayLinkDiscordConsent
 
-// Module 10512 (TwoWayLinkDiscordConsent)
+// Module 10553 (TwoWayLinkDiscordConsent)
 import timestamp from "timestamp";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

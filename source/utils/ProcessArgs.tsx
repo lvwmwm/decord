@@ -1,16 +1,16 @@
-// Module ID: 4863
-// Function ID: 4864
+// Module ID: 4903
+// Function ID: 4904
 // Name: get
-// Dependencies: [3931, 2]
+// Dependencies: [3972, 2]
 
-// Module 4863 (get)
+// Module 4903 (get)
 let prototype;
 prototype = function ProcessArgs() {
   return Object.create(new.target.prototype);
 }.prototype;
 prototype["get"] = function get() {
   if (null == prototype.cached) {
-    const tmp4 = importDefault(3931);
+    const tmp4 = importDefault(3972);
     let mainArgvSync;
     if (tmp4 != null) {
       const processUtils = tmp4.processUtils;
@@ -40,10 +40,10 @@ prototype["contains"] = function contains(arg0) {
   return value.includes(arg0);
 };
 prototype["isEnvVariableTrue"] = function isEnvVariableTrue(DISCORD_DISALLOW_POPUPS) {
-  if (undefined === importDefault(3931)) {
+  if (undefined === importDefault(3972)) {
     return false;
   } else {
-    const tmpResult = tmp(3931);
+    const tmpResult = tmp(3972);
     let tmp5;
     if (tmpResult != null) {
       const _process = tmpResult.process;

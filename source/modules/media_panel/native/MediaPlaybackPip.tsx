@@ -1,10 +1,10 @@
-// Module ID: 16311
-// Function ID: 16312
+// Module ID: 16368
+// Function ID: 16369
 // Name: MediaInfo
-// Dependencies: [32, 19, 17, 1391, 4521, 3957, 1922, 676, 16180, 21, 4303, 712, 4024, 589, 4494, 8324, 4299, 16312, 4725, 6920, 5865, 4042, 4304, 1236, 8669, 5274, 4257, 698, 13808, 3935, 16309, 8863, 8861, 14309, 2]
+// Dependencies: [32, 19, 17, 1391, 4561, 3998, 1922, 676, 16237, 21, 4344, 712, 4065, 589, 4534, 8363, 4340, 16369, 4765, 6959, 5904, 4083, 4345, 1236, 8708, 5313, 4298, 698, 13865, 3976, 16366, 8902, 8900, 14366, 2]
 // Exports: default
 
-// Module 16311 (MediaInfo)
+// Module 16368 (MediaInfo)
 import PlayIcon from "PlayIcon";
 import trackInvite from "trackInvite";
 import get_ActivityIndicator from "AnimatedChild";
@@ -14,7 +14,7 @@ import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 import { SquarePIPReferenceDimensions } from "VoicePanelPIPModes";
-import jsxProd from "module_4042";
+import jsxProd from "module_4083";
 import createCacheKey from "createCacheKey";
 
 let StyleSheet;
@@ -38,7 +38,7 @@ function MediaInfo(message) {
   let React;
   ({ isVoiceMessage, isControlVisible } = message);
   const tmp = createCacheKey();
-  let obj = message(4024);
+  let obj = message(4065);
   const token = obj.useToken(first(712).colors.BACKGROUND_SURFACE_HIGH);
   let obj1 = message(589);
   const items = [ensureGuildLoaded, mergeGuildAvatar, markAllUserIdListsStale];
@@ -51,7 +51,7 @@ function MediaInfo(message) {
     const channel = outer1_8.getChannel(channel_id);
     let channelName = null;
     if (null != channel) {
-      const obj = message(4494);
+      const obj = message(4534);
       channelName = obj.computeChannelName(channel, outer1_11, outer1_10, true, true);
     }
     return channelName;
@@ -77,7 +77,7 @@ function MediaInfo(message) {
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = tmp4(8324)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = tmp4(8363)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
@@ -86,7 +86,7 @@ function MediaInfo(message) {
           return callback(nativeEvent.nativeEvent.layout.width);
         };
         obj[4] = str2;
-        const tmp14 = callback2(tmp2(4299).Text, obj);
+        const tmp14 = callback2(tmp2(4340).Text, obj);
         obj = { accessibilityElementsHidden: null, style: null, onLayout: null, children: null };
         obj[0] = isControlVisible;
         obj[1] = tmp.infoContent;
@@ -101,7 +101,7 @@ function MediaInfo(message) {
           obj2[0] = { flex: 1 };
           const obj3 = { spacing: 20, speed: 0.2, children: null };
           obj3[2] = tmp14;
-          const items3 = [tmp13(tmp2(16312).Marquee, obj3), ];
+          const items3 = [tmp13(tmp2(16369).Marquee, obj3), ];
           const obj4 = { start: null, end: null, locations: null, colors: null, style: null };
           obj4[0] = { x: 0, y: 0 };
           obj4[1] = { x: 1, y: 0 };
@@ -109,7 +109,7 @@ function MediaInfo(message) {
           const items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
           obj4[3] = items4;
           obj4[4] = tmp.infoContainerGradient;
-          items3[1] = tmp13(tmp4(4725), obj4);
+          items3[1] = tmp13(tmp4(4765), obj4);
           obj2[1] = items3;
           tmp16Result = tmp16(tmp15, obj2);
         }
@@ -118,7 +118,7 @@ function MediaInfo(message) {
         if (tmp13Result) {
           const obj5 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: null };
           obj5[3] = stateFromStores;
-          tmp13Result = tmp13(tmp2(4299).Text, obj5);
+          tmp13Result = tmp13(tmp2(4340).Text, obj5);
         }
         items5[1] = tmp13Result;
         obj1[1] = items5;
@@ -154,7 +154,7 @@ function PiPControls(message) {
       }
     }
   }, items);
-  let obj = message(4042);
+  let obj = message(4083);
   const fn = function c() {
     let obj = message(outer1_2[22]);
     let num = 0;
@@ -164,7 +164,7 @@ function PiPControls(message) {
     obj = { opacity: obj.withTiming(num, { duration: 200 }) };
     return obj;
   };
-  obj = { withTiming: message(4304).withTiming, visible };
+  obj = { withTiming: message(4345).withTiming, visible };
   fn.__closure = obj;
   fn.__workletHash = 3641278982291;
   fn.__initData = closure_19;
@@ -187,16 +187,16 @@ function PiPControls(message) {
   }
   obj = { style: items1, children: null };
   items1 = [tmp.pipControls, animatedStyle];
-  const items2 = [callback2(message(8669).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  const items2 = [callback2(message(8708).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
   const items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
-  items2[1] = callback2(closure_6, { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5274).ArrowLargeLeftIcon, { size: "sm" }) });
-  const obj1 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5274).ArrowLargeLeftIcon, { size: "sm" }) };
+  items2[1] = callback2(closure_6, { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5313).ArrowLargeLeftIcon, { size: "sm" }) });
+  const obj1 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5313).ArrowLargeLeftIcon, { size: "sm" }) };
   const items4 = [, ];
   ({ pipButton: arr5[0], dismissButton: arr5[1] } = tmp);
-  items2[2] = callback2(closure_6, { disabled: !visible, style: items4, onPress: message.handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: callback2(message(4257).XLargeIcon, { size: "sm" }) });
+  items2[2] = callback2(closure_6, { disabled: !visible, style: items4, onPress: message.handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: callback2(message(4298).XLargeIcon, { size: "sm" }) });
   obj[1] = items2;
-  return callback3(visible(4042).View, obj);
+  return callback3(visible(4083).View, obj);
 }
 ({ Easing: c5, StyleSheet, TouchableOpacity: closure_6, View: error } = get_ActivityIndicator);
 ({ AnalyticEvents: closure_12, MessageFlags: map1, Routes: closure_14 } = ME);

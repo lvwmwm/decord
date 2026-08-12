@@ -1,9 +1,9 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 16278
+// Function ID: 16279
 // Name: SelfStreamCard
-// Dependencies: [32, 19, 17, 4322, 4375, 5137, 11649, 11647, 16180, 11652, 676, 4321, 11650, 21, 4042, 4299, 1297, 4303, 712, 4483, 4367, 5781, 1236, 4714, 11648, 589, 10689, 4400, 12318, 10691, 10688, 16222, 10701, 9405, 1367, 8312, 8317, 8313, 4304, 4713, 8011, 4725, 5268, 4024, 16223, 10257, 8782, 4648, 5728, 16184, 16195, 16179, 16224, 16225, 8789, 5427, 16226, 11651, 16227, 16228, 16229, 16230, 16231, 16241, 2]
+// Dependencies: [32, 19, 17, 4363, 4415, 5177, 11706, 11704, 16237, 11709, 676, 4362, 11707, 21, 4083, 4340, 1297, 4344, 712, 4523, 4407, 5820, 1236, 4754, 11705, 589, 10742, 4440, 12381, 10744, 10741, 16279, 10754, 9445, 1367, 8351, 8356, 8352, 4345, 4753, 8050, 4765, 5307, 4065, 16280, 10298, 8821, 4688, 5767, 16241, 16252, 16236, 16281, 16282, 8828, 5466, 16283, 11708, 16284, 16285, 16286, 16287, 16288, 16298, 2]
 
-// Module 16221 (SelfStreamCard)
+// Module 16278 (SelfStreamCard)
 import map from "map";
 import importAllResult from "watchStream";
 import { StyleSheet } from "createCacheKey";
@@ -19,7 +19,7 @@ import { ParticipantTypes } from "ParticipantTypes";
 import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE";
 import jsxProd from "set";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4042";
+import importDefaultResult from "module_4083";
 
 let c10;
 let c9;
@@ -819,7 +819,7 @@ let c4 = importAllResult;
 ({ VoicePanelCTACard: c9, VoicePanelModes: c10, MODE_CHANGE_PHYSICS: unpackModuleId, SPEAKING_PHYSICS: closure_12, VoicePanelCardItemType: map1 } = VoicePanelModes);
 ({ ApplicationStreamStates: closure_17, EMPTY_STRING_SNOWFLAKE_ID: closure_18 } = ME);
 ({ jsx: closure_21, Fragment: closure_22, jsxs: closure_23 } = jsxProd);
-let closure_24 = require("module_4042").createAnimatedComponent(require("Text").Text);
+let closure_24 = require("module_4083").createAnimatedComponent(require("Text").Text);
 const tmp5 = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.XXLARGE];
 let obj = {};
 let merged = Object.assign(SCALE_PHYSICS);
@@ -1203,26 +1203,26 @@ let closure_43 = { code: "function VoicePanelCardTsx9(){const{focused}=this.__cl
 let closure_44 = { code: "function VoicePanelCardTsx10(focusedId,previous){const{runOnJS,handleFocusedParticipantChange}=this.__closure;if(focusedId===previous)return;runOnJS(handleFocusedParticipantChange)(focusedId);}" };
 let closure_45 = { code: "function VoicePanelCardTsx11(){const{mode,focused,sharedTransitionState}=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};}" };
 let closure_46 = { code: "function VoicePanelCardTsx12(props,previous){const{cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,runOnJS,cleanUp,id}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}}" };
-let closure_47 = { isSelf: false, hasVideo: false, user: { id: "r" } };
+let closure_47 = { isSelf: false, hasVideo: false, user: { id: "Array" } };
 function layoutTransitionFunction(originX, SUBTLE_SPRING) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
-  let obj = require(4713) /* CONFIG_NEVER_ANIMATE */;
+  let obj = require(4753) /* CONFIG_NEVER_ANIMATE */;
   let str = "animate-always";
   let str2 = "animate-always";
   if (flag) {
     str2 = "animate-never";
   }
   obj = { originX: obj.withSpring(originX.targetOriginX, SUBTLE_SPRING, str2), originY: null, width: null, height: null };
-  let tmpResult = tmp(4713);
+  let tmpResult = tmp(4753);
   let str3 = str;
   if (flag) {
     str3 = "animate-never";
   }
   obj[1] = tmpResult.withSpring(originX.targetOriginY, SUBTLE_SPRING, str3);
-  tmpResult = tmp(4713);
+  tmpResult = tmp(4753);
   let str4 = str;
   if (flag) {
     str4 = "animate-never";
@@ -1232,7 +1232,7 @@ function layoutTransitionFunction(originX, SUBTLE_SPRING) {
     str = "animate-never";
   }
   obj = { animations: null, initialValues: null };
-  obj[3] = require(4713) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, SUBTLE_SPRING, str);
+  obj[3] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, SUBTLE_SPRING, str);
   obj[0] = obj;
   obj[1] = { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight };
   return obj;
@@ -1502,7 +1502,10 @@ const memoResult = importAllResult.memo(function VoicePanelCard(cleanUp) {
       tmp25 = callback;
     }
   }
-  tmp26Result = callback(closure_37, { isRinging: tmp8, avatarURI: "r", avatarDecoration: "accessibilityRole", layout: layoutTransition, layoutPhysics: physics });
+  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "accessible", layout: "rs", layoutPhysics: "errorTracker" };
+  obj8[3] = layoutTransition;
+  obj8[4] = physics;
+  tmp26Result = callback(closure_37, obj8);
   tmp25 = callback;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCard.tsx");

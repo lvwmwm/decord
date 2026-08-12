@@ -1,10 +1,10 @@
-// Module ID: 12218
-// Function ID: 12219
+// Module ID: 12281
+// Function ID: 12282
 // Name: getConsoleIcon
-// Dependencies: [676, 4321, 10553, 10951, 2]
+// Dependencies: [676, 4362, 10594, 11004, 2]
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 12218 (getConsoleIcon)
+// Module 12281 (getConsoleIcon)
 import { VoicePlatforms } from "ParticipantTypes";
 
 let PLAYSTATION;
@@ -19,11 +19,11 @@ export default function getConsoleIcon(arg0) {
 };
 export const getConsoleIconForVoicePlatform = function getConsoleIconForVoicePlatform(voicePlatform) {
   if (voicePlatform === VoicePlatforms.XBOX) {
-    let tmp2 = importDefault(10553);
+    let tmp2 = importDefault(10594);
   } else {
     tmp2 = null;
     if (voicePlatform === tmp.PLAYSTATION) {
-      tmp2 = importDefault(10951);
+      tmp2 = importDefault(11004);
     }
   }
   return tmp2;

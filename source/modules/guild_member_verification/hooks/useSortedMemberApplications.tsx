@@ -1,10 +1,10 @@
-// Module ID: 15715
-// Function ID: 15716
+// Module ID: 15771
+// Function ID: 15772
 // Name: useSortedMemberApplications
-// Dependencies: [19, 6921, 589, 4129, 2]
+// Dependencies: [19, 6960, 589, 4170, 2]
 // Exports: useSortedMemberApplications
 
-// Module 15715 (useSortedMemberApplications)
+// Module 15771 (useSortedMemberApplications)
 import noop from "noop";
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
 

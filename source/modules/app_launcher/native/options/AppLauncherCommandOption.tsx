@@ -1,10 +1,10 @@
-// Module ID: 11554
-// Function ID: 11555
+// Module ID: 11611
+// Function ID: 11612
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1498, 21, 4303, 712, 1954, 11555, 11561, 11563, 11566, 11568, 11569, 11571, 5228, 11574, 11575, 11578, 4846, 5998, 2]
+// Dependencies: [19, 17, 1498, 21, 4344, 712, 1954, 11612, 11618, 11620, 11623, 11625, 11626, 11628, 5267, 11631, 11632, 11635, 4886, 6037, 2]
 // Exports: default
 
-// Module 11554 (AppLauncherCommandOption)
+// Module 11611 (AppLauncherCommandOption)
 import "CircleXIcon";
 import { View } from "AppLauncherChannelOption";
 import { AppLauncherOptionAutoFocusType as closure_4 } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -64,7 +64,7 @@ export default function AppLauncherCommandOption(option) {
           obj[4] = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
           obj[5] = hasError;
           obj[6] = onPressAttachmentOption;
-          let tmp28Result = onDismiss(importDefault(11566), obj, name.name);
+          let tmp28Result = onDismiss(importDefault(11623), obj, name.name);
           let tmp13 = onDismiss;
         } else if (tmp2(1954).ApplicationCommandOptionType.BOOLEAN === type) {
           obj = { style: null, option: null, initialValue: null, onPress: null, hasError: null };
@@ -82,9 +82,9 @@ export default function AppLauncherCommandOption(option) {
             callback3(name, items);
           };
           obj[4] = hasError;
-          tmp28Result = tmp35(importDefault(11568), obj, name.name);
+          tmp28Result = tmp35(importDefault(11625), obj, name.name);
           tmp13 = tmp35;
-          const tmp37 = importDefault(11568);
+          const tmp37 = importDefault(11625);
         } else if (tmp2(1954).ApplicationCommandOptionType.MENTIONABLE === type) {
           const obj1 = { option: null, initialValue: null, onMentionablePress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
           obj1[0] = name;
@@ -131,9 +131,9 @@ export default function AppLauncherCommandOption(option) {
           obj1[5] = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
           obj1[6] = hasError;
           obj1[7] = onPress;
-          tmp28Result = tmp28(importDefault(11569), obj1);
+          tmp28Result = tmp28(importDefault(11626), obj1);
           tmp13 = tmp28;
-          const tmp30 = importDefault(11569);
+          const tmp30 = importDefault(11626);
         } else if (tmp2(1954).ApplicationCommandOptionType.ROLE === type) {
           const obj2 = { style: null, option: null, initialValue: null, onRolePress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
           obj2[0] = tmp.option;
@@ -161,9 +161,9 @@ export default function AppLauncherCommandOption(option) {
           obj2[6] = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
           obj2[7] = hasError;
           obj2[8] = onPress;
-          tmp28Result = tmp21(importDefault(11574), obj2, name.name);
+          tmp28Result = tmp21(importDefault(11631), obj2, name.name);
           tmp13 = tmp21;
-          const tmp23 = importDefault(11574);
+          const tmp23 = importDefault(11631);
         } else if (tmp2(1954).ApplicationCommandOptionType.USER === type) {
           const obj3 = { style: null, option: null, initialValue: null, onUserPress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
           obj3[0] = tmp.option;
@@ -195,9 +195,9 @@ export default function AppLauncherCommandOption(option) {
           obj3[6] = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
           obj3[7] = hasError;
           obj3[8] = onPress;
-          tmp28Result = tmp14(importDefault(11575), obj3, name.name);
+          tmp28Result = tmp14(importDefault(11632), obj3, name.name);
           tmp13 = tmp14;
-          const tmp16 = importDefault(11575);
+          const tmp16 = importDefault(11632);
         } else if (tmp2(1954).ApplicationCommandOptionType.CHANNEL === type) {
           obj = { style: null, option: null, initialValue: null, onChannelPress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
           obj[0] = tmp.option;
@@ -226,9 +226,9 @@ export default function AppLauncherCommandOption(option) {
           obj[6] = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
           obj[7] = hasError;
           obj[8] = onPress;
-          tmp28Result = tmp5(importDefault(11578), obj, name.name);
+          tmp28Result = tmp5(importDefault(11635), obj, name.name);
           tmp13 = tmp5;
-          const tmp7 = importDefault(11578);
+          const tmp7 = importDefault(11635);
         } else {
           return null;
         }
@@ -245,8 +245,8 @@ export default function AppLauncherCommandOption(option) {
           obj6[1] = function onPress() {
             return onDismiss(name);
           };
-          obj6[2] = tmp13(tmp2(5998).CircleXIcon, { size: "md" });
-          items[1] = tmp13(tmp2(4846).PressableOpacity, obj6);
+          obj6[2] = tmp13(tmp2(6037).CircleXIcon, { size: "md" });
+          items[1] = tmp13(tmp2(4886).PressableOpacity, obj6);
           obj4[1] = items;
           tmp62 = callback(View, obj4);
         }
@@ -288,8 +288,8 @@ export default function AppLauncherCommandOption(option) {
     obj7[6] = tmp44;
     obj7[7] = hasError;
     name = name.name;
-    onDismiss(importDefault(11555), obj7, name);
-    const tmp57 = importDefault(11555);
+    onDismiss(importDefault(11612), obj7, name);
+    const tmp57 = importDefault(11612);
   } else if (name.autocomplete) {
     const obj8 = { style: null, channel: null, option: null, activeCommand: null, optionValues: null, initialValue: null, autoFocus: null, onSelect: null, onOpenAutocompleteSheet: null, onDismissAutocompleteSheet: null, hasError: null };
     obj8[0] = tmp.option;
@@ -298,7 +298,7 @@ export default function AppLauncherCommandOption(option) {
     obj8[3] = command;
     obj8[4] = optionValues;
     let first6;
-    let tmp64Result = tmp64(11561);
+    let tmp64Result = tmp64(11618);
     if (optionValues.current[name.name] != tmp44) {
       first6 = tmp52[0];
     }
@@ -331,7 +331,7 @@ export default function AppLauncherCommandOption(option) {
     obj9[1] = name;
     obj9[2] = channel.guild_id;
     let first7;
-    tmp64Result = tmp64(11563);
+    tmp64Result = tmp64(11620);
     if (optionValues.current[name.name] != tmp44) {
       first7 = tmp46[0];
     }

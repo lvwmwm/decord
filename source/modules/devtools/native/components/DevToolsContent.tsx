@@ -1,9 +1,9 @@
-// Module ID: 13851
-// Function ID: 13852
+// Module ID: 13908
+// Function ID: 13909
 // Name: DevToolsContentSortButtons
-// Dependencies: [32, 19, 17, 10413, 4217, 1212, 21, 4303, 712, 589, 11191, 13852, 4299, 4846, 4272, 14307, 15069, 1499, 1628, 5767, 5374, 4021, 13850, 2]
+// Dependencies: [32, 19, 17, 10454, 4258, 1212, 21, 4344, 712, 589, 11245, 13909, 4340, 4886, 4313, 14364, 15127, 1499, 1628, 5806, 5413, 4062, 13907, 2]
 
-// Module 13851 (DevToolsContentSortButtons)
+// Module 13908 (DevToolsContentSortButtons)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "TableRowGroupTitle";
 import get_ActivityIndicator from "useNavigation";
@@ -43,8 +43,8 @@ function DevToolsContentSortButtons(arg0) {
   }
   items[1] = start;
   obj[2] = items;
-  obj[5] = closure_10(require(14307) /* ArrowSmallUpIcon */.ArrowSmallUpIcon, {});
-  const items1 = [closure_10(require(4846) /* PressableBase */.PressableOpacity, obj), ];
+  obj[5] = closure_10(require(14364) /* ArrowSmallUpIcon */.ArrowSmallUpIcon, {});
+  const items1 = [closure_10(require(4886) /* PressableBase */.PressableOpacity, obj), ];
   obj = {
     onPress() {
       const result = outer1_0(outer1_2[14]).triggerHapticFeedback(outer1_0(outer1_2[14]).HapticFeedbackTypes.IMPACT_MEDIUM);
@@ -63,8 +63,8 @@ function DevToolsContentSortButtons(arg0) {
   }
   items2[1] = end;
   obj[2] = items2;
-  obj[5] = closure_10(require(15069) /* ArrowSmallDownIcon */.ArrowSmallDownIcon, {});
-  items1[1] = closure_10(require(4846) /* PressableBase */.PressableOpacity, obj);
+  obj[5] = closure_10(require(15127) /* ArrowSmallDownIcon */.ArrowSmallDownIcon, {});
+  items1[1] = closure_10(require(4886) /* PressableBase */.PressableOpacity, obj);
   obj[1] = items1;
   return closure_11(closure_5, obj);
 }
@@ -84,9 +84,9 @@ const memoResult = importAllResult.memo((arg0) => {
   let value;
   ({ label, value } = arg0);
   const obj = { variant: "text-xs/medium", color: "text-subtle", children: null };
-  const items = [label, callback2(require(4299) /* Text */.Text, { variant: "text-xs/semibold", children: value })];
+  const items = [label, callback2(require(4340) /* Text */.Text, { variant: "text-xs/semibold", children: value })];
   obj[2] = items;
-  return callback3(require(4299) /* Text */.Text, obj);
+  return callback3(require(4340) /* Text */.Text, obj);
 });
 const obj2 = { backgroundColor: require("Themes").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, width: require("Themes").space.PX_32, height: require("Themes").space.PX_32, borderRadius: require("Themes").radii.round, justifyContent: "center", alignItems: "center" };
 const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
@@ -126,7 +126,7 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
   const items2 = [initialize];
   importDefault = stateFromStores + _require(589).useStateFromStores(items2, () => Object.keys(clientOverrides.getClientOverrides()).length);
   const obj4 = _require(589);
-  importDefault = importDefault(13852)().map((arg0) => {
+  importDefault = importDefault(13909)().map((arg0) => {
     let tmp;
     [tmp] = arg0;
     if ("buildOverride" === tmp) {
@@ -147,9 +147,9 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
       return tmp2;
     }
   });
-  const arr4 = importDefault(13852)();
+  const arr4 = importDefault(13909)();
   [c2, c3] = callback(arr5.useState(false), 2);
-  arr5 = importDefault(13852)();
+  arr5 = importDefault(13909)();
   obj = { title, hasIcons: true, children: null };
   obj[2] = arr5.map((arg0, arg1) => {
     let tmp;
@@ -197,7 +197,7 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
     };
     return outer1_10(callback(_undefined[20]).TableRow, obj, tmp);
   });
-  const tmp8 = callback2(_require(5767).TableRowGroup, obj);
+  const tmp8 = callback2(_require(5806).TableRowGroup, obj);
   let tmp7Result = tmp8;
   if (!embedded) {
     obj = { style: null, contentContainerStyle: null, children: null };

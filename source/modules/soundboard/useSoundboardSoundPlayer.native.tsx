@@ -1,10 +1,10 @@
-// Module ID: 16165
-// Function ID: 16166
+// Module ID: 16222
+// Function ID: 16223
 // Name: useSoundboardSoundPlayer
-// Dependencies: [19, 4749, 9162, 3993, 16166, 589, 5961, 2]
+// Dependencies: [19, 4789, 9202, 4034, 16223, 589, 6000, 2]
 // Exports: default
 
-// Module 16165 (useSoundboardSoundPlayer)
+// Module 16222 (useSoundboardSoundPlayer)
 import noop from "noop";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import { SoundOutputChannel } from "SoundOutputChannel";

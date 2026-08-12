@@ -1,10 +1,10 @@
-// Module ID: 13004
-// Function ID: 13005
+// Module ID: 13063
+// Function ID: 13064
 // Name: getUserCalloutRowText
-// Dependencies: [19, 17, 1391, 1922, 13005, 676, 21, 4303, 712, 4299, 4493, 1236, 589, 1370, 1297, 11229, 9668, 4264, 4259, 698, 5764, 10361, 5767, 5374, 4714, 4271, 13006, 4313, 2]
+// Dependencies: [19, 17, 1391, 1922, 13064, 676, 21, 4344, 712, 4340, 4533, 1236, 589, 1370, 1297, 11283, 9708, 4305, 4300, 698, 5803, 10402, 5806, 5413, 4754, 4312, 13065, 4354, 2]
 // Exports: default
 
-// Module 13004 (getUserCalloutRowText)
+// Module 13063 (getUserCalloutRowText)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "CircleCheckIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -36,13 +36,13 @@ function getUserCalloutRowText(arg0) {
     let obj = { usernameHook1: null, usernameHook2: null, numberOfOtherUsers: null };
     obj[0] = function usernameHook1() {
       const obj = { variant: "text-md/semibold", children: null };
-      obj[1] = outer1_1(4493).getName(closure_0, closure_1, 19);
-      return outer1_11(outer1_0(4299).Text, obj);
+      obj[1] = outer1_1(4533).getName(closure_0, closure_1, 19);
+      return outer1_11(outer1_0(4340).Text, obj);
     };
     obj[1] = function usernameHook2() {
       const obj = { variant: "text-md/semibold", children: null };
-      obj[1] = outer1_1(4493).getName(closure_0, closure_1, 17);
-      return outer1_11(outer1_0(4299).Text, obj);
+      obj[1] = outer1_1(4533).getName(closure_0, closure_1, 17);
+      return outer1_11(outer1_0(4340).Text, obj);
     };
     obj[2] = totalUsers - calledOutUserIds.length;
     let formatResult = intl4.format(require(1236) /* getSystemLocale */.t.qfo6KR, obj);
@@ -51,13 +51,13 @@ function getUserCalloutRowText(arg0) {
     obj = { usernameHook1: null, usernameHook2: null };
     obj[0] = function usernameHook1() {
       const obj = { variant: "text-md/semibold", children: null };
-      obj[1] = outer1_1(4493).getName(closure_0, closure_1, 19);
-      return outer1_11(outer1_0(4299).Text, obj);
+      obj[1] = outer1_1(4533).getName(closure_0, closure_1, 19);
+      return outer1_11(outer1_0(4340).Text, obj);
     };
     obj[1] = function usernameHook2() {
       const obj = { variant: "text-md/semibold", children: null };
-      obj[1] = outer1_1(4493).getName(closure_0, closure_1, 17);
-      return outer1_11(outer1_0(4299).Text, obj);
+      obj[1] = outer1_1(4533).getName(closure_0, closure_1, 17);
+      return outer1_11(outer1_0(4340).Text, obj);
     };
     formatResult = intl3.format(require(1236) /* getSystemLocale */.t["67ZE+9"], obj);
   } else if (2 === totalUsers) {
@@ -65,13 +65,13 @@ function getUserCalloutRowText(arg0) {
     const obj1 = { usernameHook1: null, usernameHook2: null };
     obj1[0] = function usernameHook1() {
       const obj = { variant: "text-md/semibold", children: null };
-      obj[1] = outer1_1(4493).getName(closure_0, closure_1, 19);
-      return outer1_11(outer1_0(4299).Text, obj);
+      obj[1] = outer1_1(4533).getName(closure_0, closure_1, 19);
+      return outer1_11(outer1_0(4340).Text, obj);
     };
     obj1[1] = function usernameHook2() {
       const obj = { variant: "text-md/semibold", children: null };
-      obj[1] = outer1_1(4493).getName(closure_0, closure_1, 17);
-      return outer1_11(outer1_0(4299).Text, obj);
+      obj[1] = outer1_1(4533).getName(closure_0, closure_1, 17);
+      return outer1_11(outer1_0(4340).Text, obj);
     };
     formatResult = intl2.format(require(1236) /* getSystemLocale */.t.veV4IN, obj1);
   } else {
@@ -79,8 +79,8 @@ function getUserCalloutRowText(arg0) {
     obj = { usernameHook: null };
     obj[0] = function usernameHook() {
       const obj = { variant: "text-md/semibold", children: null };
-      obj[1] = outer1_1(4493).getName(closure_0, closure_1, 19);
-      return outer1_11(outer1_0(4299).Text, obj);
+      obj[1] = outer1_1(4533).getName(closure_0, closure_1, 19);
+      return outer1_11(outer1_0(4340).Text, obj);
     };
     formatResult = intl.format(require(1236) /* getSystemLocale */.t["4WHCtq"], obj);
   }
@@ -104,13 +104,13 @@ function UserCalloutAvatars(userIds) {
       obj[2] = REFRESH_MEDIUM_32;
       let tmp6 = callback(tmp(1297).Avatar, obj);
     } else {
-      tmp6 = callback(tmp(11229).UserIcon, {});
+      tmp6 = callback(tmp(11283).UserIcon, {});
     }
   } else {
     obj = { users: null, size: null };
     obj[0] = found;
     obj[1] = tmp(1297).AvatarSizes.REFRESH_MEDIUM_32;
-    return callback(tmp(9668).FacepileGroupDMAvatar, obj);
+    return callback(tmp(9708).FacepileGroupDMAvatar, obj);
   }
 }
 function BlockedUserInGDMDescription(arg0) {

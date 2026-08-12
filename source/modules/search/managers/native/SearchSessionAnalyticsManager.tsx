@@ -1,9 +1,9 @@
-// Module ID: 11736
-// Function ID: 11737
+// Module ID: 11793
+// Function ID: 11794
 // Name: _initialize
-// Dependencies: [8402, 11737, 11715, 2]
+// Dependencies: [8441, 11794, 11772, 2]
 
-// Module 11736 (_initialize)
+// Module 11793 (_initialize)
 import { SEARCH_TAB_TO_ANALYTICS_SEARCH_TAB as closure_2 } from "SearchEntrypointAnalyticsLocations";
 import "getSession";
 
@@ -20,10 +20,10 @@ class SearchSessionAnalyticsManager extends tmp2 {
 const prototype = SearchSessionAnalyticsManager.prototype;
 prototype["_initialize"] = function _initialize(searchContext) {
   const locations = this.locations;
-  const result = locations.set(require(11715) /* SearchTokenTypes */.getSearchContextId(searchContext), arg1);
+  const result = locations.set(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext), arg1);
 };
 prototype["_terminate"] = function _terminate(searchContext) {
-  const searchContextId = require(11715) /* SearchTokenTypes */.getSearchContextId(searchContext);
+  const searchContextId = require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext);
   const locations = this.locations;
   locations.delete(searchContextId);
   const selectedTabs = this.selectedTabs;
@@ -34,15 +34,15 @@ prototype["_transferSession"] = function _transferSession(arg0, searchContext) {
 };
 prototype["getLocation"] = function getLocation(searchContext) {
   const locations = this.locations;
-  return locations.get(require(11715) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  return locations.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
 };
 prototype["getSelectedTab"] = function getSelectedTab(searchContext) {
   const selectedTabs = this.selectedTabs;
-  return selectedTabs.get(require(11715) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  return selectedTabs.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
 };
 prototype["setSelectedTab"] = function setSelectedTab(visibleTabs, arg1) {
   const selectedTabs = this.selectedTabs;
-  const result = selectedTabs.set(require(11715) /* SearchTokenTypes */.getSearchContextId(visibleTabs), table[arg1]);
+  const result = selectedTabs.set(require(11772) /* SearchTokenTypes */.getSearchContextId(visibleTabs), table[arg1]);
 };
 const searchSessionAnalyticsManager = new SearchSessionAnalyticsManager();
 let result = require("SearchTokenTypes").fileFinishedImporting("modules/search/managers/native/SearchSessionAnalyticsManager.tsx");

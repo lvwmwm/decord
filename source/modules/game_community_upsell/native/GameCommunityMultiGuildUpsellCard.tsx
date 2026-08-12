@@ -1,10 +1,10 @@
-// Module ID: 15410
-// Function ID: 15411
+// Module ID: 15466
+// Function ID: 15467
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4295, 3949, 1910, 676, 21, 4303, 712, 589, 1435, 1469, 1493, 698, 5232, 5959, 5958, 1236, 8298, 9269, 1297, 4299, 4714, 8604, 7753, 8610, 2]
+// Dependencies: [5, 32, 19, 17, 4336, 3990, 1910, 676, 21, 4344, 712, 589, 1435, 1469, 1493, 698, 5271, 5998, 5997, 1236, 8337, 9309, 1297, 4340, 4754, 8643, 7792, 8649, 2]
 // Exports: default
 
-// Module 15410 (GameCommunityMultiGuildUpsellCard)
+// Module 15466 (GameCommunityMultiGuildUpsellCard)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";

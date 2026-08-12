@@ -1,10 +1,10 @@
-// Module ID: 6830
-// Function ID: 6831
+// Module ID: 6869
+// Function ID: 6870
 // Name: TypingIndicatorAbstractUI
-// Dependencies: [21, 5268, 6831, 2]
+// Dependencies: [21, 5307, 6870, 2]
 // Exports: TypingIndicatorAbstractUI
 
-// Module 6830 (TypingIndicatorAbstractUI)
+// Module 6869 (TypingIndicatorAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TypingIndicatorAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const TypingIndicatorAbstractUI = function TypingIndicatorAbstractUI(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6831);
+  obj[0] = importDefault(6870);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const TypingIndicatorAbstractUI = function TypingIndicatorAbstractUI(widt
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
 };

@@ -1,10 +1,10 @@
-// Module ID: 5881
-// Function ID: 5882
+// Module ID: 5920
+// Function ID: 5921
 // Name: set
-// Dependencies: [1922, 3968, 676, 589, 2]
+// Dependencies: [1922, 4009, 676, 589, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsExpeditedOnboardingGuild, useIsRavenOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry, useIsWhitegloveOnboardingGuild
 
-// Module 5881 (set)
+// Module 5920 (set)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
 import { GuildFeatures } from "ME";

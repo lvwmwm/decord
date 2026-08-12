@@ -1,10 +1,10 @@
-// Module ID: 8272
-// Function ID: 8273
+// Module ID: 8311
+// Function ID: 8312
 // Name: useAvatarsWithGuilds
-// Dependencies: [19, 8266, 7083, 1990, 589, 1363, 1236, 2]
+// Dependencies: [19, 8305, 7122, 1990, 589, 1363, 1236, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame
 
-// Module 8272 (useAvatarsWithGuilds)
+// Module 8311 (useAvatarsWithGuilds)
 import noop from "noop";
 import handleFormOpen from "handleFormOpen";
 import createUserWidgetFromServer from "createUserWidgetFromServer";

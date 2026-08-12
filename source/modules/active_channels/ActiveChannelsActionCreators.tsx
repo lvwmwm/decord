@@ -1,10 +1,10 @@
-// Module ID: 15204
-// Function ID: 15205
+// Module ID: 15261
+// Function ID: 15262
 // Name: _fetchActiveChannels
-// Dependencies: [5, 676, 709, 530, 4203, 2]
+// Dependencies: [5, 676, 709, 530, 4244, 2]
 // Exports: fetchActiveChannels
 
-// Module 15204 (_fetchActiveChannels)
+// Module 15261 (_fetchActiveChannels)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -54,7 +54,7 @@ function _fetchActiveChannels() {
               set = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

@@ -1,8 +1,8 @@
-// Module ID: 15232
-// Function ID: 15233
-// Dependencies: [19, 17, 12974, 1391, 11377, 1922, 14538, 676, 21, 4303, 589, 11, 1370, 12, 15231, 698, 1222, 4494, 1236, 4764, 14539, 15225, 2]
+// Module ID: 15289
+// Function ID: 15290
+// Dependencies: [19, 17, 13033, 1391, 11431, 1922, 14595, 676, 21, 4344, 589, 11, 1370, 12, 15288, 698, 1222, 4534, 1236, 4804, 14596, 15282, 2]
 
-// Module 15232
+// Module 15289
 import importAllResult from "getChannelIcon";
 import { View } from "computeChannelName";
 import truncateOldMessageData from "truncateOldMessageData";

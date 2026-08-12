@@ -1,10 +1,10 @@
-// Module ID: 10261
-// Function ID: 10262
+// Module ID: 10302
+// Function ID: 10303
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 4303, 712, 5369, 4042, 4713, 4717, 4299, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 5408, 4083, 4753, 4757, 4340, 2]
 // Exports: default
 
-// Module 10261 (ShareFooterLayout)
+// Module 10302 (ShareFooterLayout)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,15 +37,15 @@ export default function ShareFooterLayout(arg0) {
   let _require;
   ({ chatInput, sendButton, avoidKeyboard } = arg0);
   const tmp = createCacheKey();
-  const sum = tmp.footer.paddingVertical + importDefault(5369)({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
+  const sum = tmp.footer.paddingVertical + importDefault(5408)({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
   _require = sum;
-  let obj = _require(4042);
+  let obj = _require(4083);
   const fn = function f() {
     const obj = { paddingBottom: null };
     obj[0] = _undefined(outer1_2[7]).withSpring(_undefined, _undefined(outer1_2[8]).ON_PRESS_SPRING, "respect-motion-settings");
     return obj;
   };
-  obj = { withSpring: _require(4713).withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: _require(4717).ON_PRESS_SPRING };
+  obj = { withSpring: _require(4753).withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: _require(4757).ON_PRESS_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 2871405301293;
   fn.__initData = closure_8;
@@ -70,11 +70,11 @@ export default function ShareFooterLayout(arg0) {
   if (tmp12) {
     const obj5 = { variant: "text-sm/normal", color: "text-feedback-warning", children: null };
     obj5[2] = warningText;
-    tmp12 = callback(_require(4299).Text, obj5);
+    tmp12 = callback(_require(4340).Text, obj5);
   }
   items4[1] = tmp12;
   obj3[1] = items4;
   items2[1] = closure_6(View, obj3);
   obj[1] = items2;
-  return closure_6(importDefault(4042).View, obj);
+  return closure_6(importDefault(4083).View, obj);
 };

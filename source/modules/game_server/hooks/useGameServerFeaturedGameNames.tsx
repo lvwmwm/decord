@@ -1,10 +1,10 @@
-// Module ID: 11939
-// Function ID: 11940
+// Module ID: 11996
+// Function ID: 11997
 // Name: useGameServerFeaturedGameNames
-// Dependencies: [4192, 5926, 2]
+// Dependencies: [4233, 5965, 2]
 // Exports: default
 
-// Module 11939 (useGameServerFeaturedGameNames)
+// Module 11996 (useGameServerFeaturedGameNames)
 import str11 from "str11";
 
 let c3;
@@ -13,9 +13,9 @@ let obj1;
 const result = require("set").fileFinishedImporting("modules/game_server/hooks/useGameServerFeaturedGameNames.tsx");
 
 export default function useGameServerFeaturedGameNames() {
-  let obj = require(5926) /* importDefaultResult1 */;
+  let obj = require(5965) /* importDefaultResult1 */;
   const data = obj.useGame(closure_2).data;
-  const data2 = require(5926) /* importDefaultResult1 */.useGame(closure_3).data;
+  const data2 = require(5965) /* importDefaultResult1 */.useGame(closure_3).data;
   let str;
   if (data != null) {
     str = data.name;

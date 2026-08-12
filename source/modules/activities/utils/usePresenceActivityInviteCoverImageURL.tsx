@@ -1,10 +1,10 @@
-// Module ID: 12632
-// Function ID: 12633
+// Module ID: 12691
+// Function ID: 12692
 // Name: _getPresenceActivityInviteCoverImageURL
-// Dependencies: [19, 12633, 1896, 8245, 589, 12634, 2]
+// Dependencies: [19, 12692, 1896, 8284, 589, 12693, 2]
 // Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
 
-// Module 12632 (_getPresenceActivityInviteCoverImageURL)
+// Module 12691 (_getPresenceActivityInviteCoverImageURL)
 import noop from "noop";
 import getCoverImageURL from "getCoverImageURL";
 
@@ -30,8 +30,8 @@ function _getPresenceActivityInviteCoverImageURL(messageId) {
     }
     let assetImage = null;
     if (null != invite_cover_image) {
-      assetImage = require(8245) /* updateAssets */.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
-      const obj2 = require(8245) /* updateAssets */;
+      assetImage = require(8284) /* updateAssets */.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
+      const obj2 = require(8284) /* updateAssets */;
     }
     if (assetImage == null) {
       assetImage = coverImageURL;
@@ -80,8 +80,8 @@ export const getPresenceActivityInviteCoverImageURL = function getPresenceActivi
     obj = { messageId: null, coverImageURL: null };
     obj[0] = messageId;
     obj[1] = imageURL;
-    importAll(12634).setCoverImageURL(obj);
-    const obj2 = importAll(12634);
+    importAll(12693).setCoverImageURL(obj);
+    const obj2 = importAll(12693);
   }
   return imageURL;
 };

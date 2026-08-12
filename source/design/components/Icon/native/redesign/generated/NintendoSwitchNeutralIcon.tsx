@@ -1,10 +1,10 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 12252
+// Function ID: 12253
 // Name: NintendoSwitchNeutralIcon
-// Dependencies: [19, 21, 712, 4023, 12190, 2]
+// Dependencies: [19, 21, 712, 4064, 12253, 2]
 // Exports: NintendoSwitchNeutralIcon
 
-// Module 12189 (NintendoSwitchNeutralIcon)
+// Module 12252 (NintendoSwitchNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const NintendoSwitchNeutralIcon = function NintendoSwitchNeutralIcon(colo
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12190) /* registerAsset */;
+  obj[0] = require(12253) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

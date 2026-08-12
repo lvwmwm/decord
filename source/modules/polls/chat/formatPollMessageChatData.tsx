@@ -1,10 +1,10 @@
-// Module ID: 8325
-// Function ID: 8326
+// Module ID: 8364
+// Function ID: 8365
 // Name: reactionForId
-// Dependencies: [4295, 5176, 1391, 1990, 4521, 1922, 8326, 676, 4503, 3961, 3965, 1435, 8327, 3954, 3937, 8328, 1236, 7221, 8330, 500, 8331, 8332, 2]
+// Dependencies: [4336, 5215, 1391, 1990, 4561, 1922, 8365, 676, 4543, 4002, 4006, 1435, 8366, 3995, 3978, 8367, 1236, 7260, 8369, 500, 8370, 8371, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
-// Module 8325 (reactionForId)
+// Module 8364 (reactionForId)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -51,8 +51,8 @@ function computeBasicPollChatData(message) {
     let str = "";
     if (message.state === MessageStates.SENT) {
       if (formattedExpirationLabel == null) {
-        formattedExpirationLabel = require(8327) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
-        const obj2 = require(8327) /* formatExpirationLabel */;
+        formattedExpirationLabel = require(8366) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
+        const obj2 = require(8366) /* formatExpirationLabel */;
       }
       str = formattedExpirationLabel;
     }
@@ -123,13 +123,13 @@ function computeBasicPollChatData(message) {
     if (null != guildId) {
       selfMember = selfMember.getSelfMember(guildId);
     }
-    const result = require(3954) /* GuildMemberFlags */.hasAutomodQuarantinedProfile(selfMember);
-    const obj4 = require(3954) /* GuildMemberFlags */;
+    const result = require(3995) /* GuildMemberFlags */.hasAutomodQuarantinedProfile(selfMember);
+    const obj4 = require(3995) /* GuildMemberFlags */;
     obj = { poll: null, canTapAnswers: null, canRemoveVote: null, canShowVoteCounts: null, canSubmitVote: null, expirationLabel: null, hasSelectedAnswer: null, hasVoted: null, hasVoteRecorded: null, isEditingVote: null, isExpired: null, isInteractive: null, isSent: null, reactions: null, selectedAnswerIds: null, submitting: null, tapShouldOpenVotersModal: null, showResults: null };
     obj[0] = poll;
     obj[1] = tmp19;
     let tmp30 = tmp16;
-    const result1 = require(3937) /* isCommunicationDisabled */.isMemberCommunicationDisabled(selfMember);
+    const result1 = require(3978) /* isCommunicationDisabled */.isMemberCommunicationDisabled(selfMember);
     if (tmp16) {
       tmp30 = tmp2;
     }

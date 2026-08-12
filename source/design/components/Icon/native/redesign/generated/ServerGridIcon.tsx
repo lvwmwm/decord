@@ -1,10 +1,10 @@
-// Module ID: 7720
-// Function ID: 7721
+// Module ID: 7759
+// Function ID: 7760
 // Name: ServerGridIcon
-// Dependencies: [19, 21, 712, 4023, 7721, 2]
+// Dependencies: [19, 21, 712, 4064, 7760, 2]
 // Exports: ServerGridIcon
 
-// Module 7720 (ServerGridIcon)
+// Module 7759 (ServerGridIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ServerGridIcon = function ServerGridIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7721) /* registerAsset */;
+  obj[0] = require(7760) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

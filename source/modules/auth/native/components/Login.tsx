@@ -1,10 +1,10 @@
-// Module ID: 8476
-// Function ID: 8477
+// Module ID: 8515
+// Function ID: 8516
 // Name: LinkButton
-// Dependencies: [5, 32, 19, 17, 8477, 1218, 676, 21, 4303, 4846, 4299, 4643, 1236, 500, 4870, 8478, 1499, 589, 1502, 5827, 8479, 4644, 8480, 8481, 8482, 4202, 8483, 8487, 8488, 8490, 8484, 4714, 8491, 1624, 8493, 8495, 7792, 8501, 8503, 8505, 4712, 8512, 8475, 2]
+// Dependencies: [5, 32, 19, 17, 8516, 1218, 676, 21, 4344, 4886, 4340, 4683, 1236, 500, 4910, 8517, 1499, 589, 1502, 5866, 8518, 4684, 8519, 8520, 8521, 4243, 8522, 8526, 8527, 8529, 8523, 4754, 8530, 1624, 8532, 8534, 7831, 8540, 8542, 8544, 4752, 8551, 8514, 2]
 // Exports: default
 
-// Module 8476 (LinkButton)
+// Module 8515 (LinkButton)
 import fetchFingerprint from "fetchFingerprint";
 import KeyIcon from "KeyIcon";
 import handleLogout from "handleLogout";
@@ -37,7 +37,7 @@ class LinkButton {
   }
 }
 function handlePressPasswordManagerHint() {
-  let obj = importDefault(4643);
+  let obj = importDefault(4683);
   obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.lzsy7t);
@@ -249,36 +249,98 @@ export default function Login(isMultiAccount) {
     let c8 = 0;
     let c6 = 0;
     const iter = (function*(arg0, arg1) {
-      let KeyIcon = tmp3;
-      if (flag === undefined) {
-        flag = false;
-      }
-      yield "ct";
-      outer1_4(true);
-      outer1_5({});
-      let c6 = 1;
-      const obj2 = { login: null, password: null, undelete: null, isMultiAccount: null };
-      obj2[0] = callback;
-      obj2[1] = closure_1;
-      obj2[2] = flag;
-      obj2[3] = callback;
-      yield navigation(ref[19]).login(obj2);
-      if (2 === tmp7) {
-        c6 = 0;
-        KeyIcon = handleLogout;
-        outer1_4(false);
-        const obj1 = callback(ref[23]);
-        const authenticationErrorsFromV6OrEarlierAPIError = obj1.getAuthenticationErrorsFromV6OrEarlierAPIError(KeyIcon);
-        outer1_12(authenticationErrorsFromV6OrEarlierAPIError);
-        let c8 = 3;
-      } else if (arg0 === 1) {
+      if (c8 === 2) {
         c8 = 3;
-        throw arg1;
-      } else if (arg0 !== 2) {
-        c6 = 0;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let KeyIcon = tmp3;
+              let authenticationErrorsFromV6OrEarlierAPIError = tmp7;
+              let flag;
+              if (flag === undefined) {
+                flag = false;
+              }
+              authenticationErrorsFromV6OrEarlierAPIError = undefined;
+              c7 = 1;
+              c8 = 1;
+              return { value: "ct", done: true };
+            }
+          } else if (1 === tmp7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              let obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              outer1_4(true);
+              outer1_5({});
+              let c6 = 1;
+              const obj2 = { login: null, password: null, undelete: null, isMultiAccount: null };
+              obj2[0] = callback;
+              obj2[1] = closure_1;
+              obj2[2] = flag;
+              obj2[3] = callback;
+              c7 = 3;
+              c8 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = navigation(ref[19]).login(obj2);
+              return obj3;
+            }
+          } else {
+            if (2 === tmp7) {
+              c6 = 0;
+              KeyIcon = handleLogout;
+              outer1_4(false);
+              obj1 = callback(ref[23]);
+              authenticationErrorsFromV6OrEarlierAPIError = obj1.getAuthenticationErrorsFromV6OrEarlierAPIError(KeyIcon);
+              outer1_12(authenticationErrorsFromV6OrEarlierAPIError);
+              c8 = 3;
+            } else if (arg0 === 1) {
+              c8 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              c6 = 0;
+            }
+            c6 = 0;
+            c8 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp22) {
+          handleLogout = tmp22;
+          if (tmp4 === c6) {
+            c8 = tmp2;
+            throw tmp22;
+          } else {
+            c7 = tmp;
+          }
+        }
       }
-      c6 = 0;
-      return arg1;
     })();
     iter.next();
     return iter;

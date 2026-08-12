@@ -1,15 +1,16 @@
-// Module ID: 7646
-// Function ID: 7647
+// Module ID: 7685
+// Function ID: 7686
 // Name: fetchActivePromotions
-// Dependencies: [5, 1994, 7346, 7345, 1924, 676, 709, 7647, 530, 6864, 1374, 1337, 7648, 2]
+// Dependencies: [5, 1994, 7385, 1922, 7384, 1924, 676, 709, 7686, 530, 6903, 1374, 1337, 7687, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 7646 (fetchActivePromotions)
-import ME from "ME";
+// Module 7685 (fetchActivePromotions)
+import GuildFeatures from "GuildFeatures";
 import _getSystemLocale from "_getSystemLocale";
 import createFromServer from "createFromServer";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import createEmptyPromotionsByType from "createEmptyPromotionsByType";
-import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_7 } from "GuildFeatures";
+import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_8 } from "GuildFeatures";
 import { Endpoints } from "ME";
 
 const require = arg1;
@@ -31,18 +32,18 @@ function _fetchActivePromotions() {
     locale = locale.locale;
     let obj1 = { type: "ACTIVE_PROMOTIONS_FETCH", locale: null };
     obj1[1] = locale;
-    outer1_1(outer1_2[6]).dispatch(obj1);
-    const HTTP = outer1_0(outer1_2[8]).HTTP;
+    outer1_1(outer1_2[7]).dispatch(obj1);
+    const HTTP = outer1_0(outer1_2[9]).HTTP;
     const obj2 = { url: null, query: null, oldFormErrors: true, rejectWithError: true };
-    obj2[0] = outer1_8.PROMOTIONS;
+    obj2[0] = outer1_9.PROMOTIONS;
     let obj3 = { locale: null, platform: null };
     obj3[0] = locale;
-    obj3[1] = outer1_0(outer1_2[7]).MarketingComponentPlatform.MOBILE;
+    obj3[1] = outer1_0(outer1_2[8]).MarketingComponentPlatform.MOBILE;
     obj2[1] = obj3;
     yield HTTP.get(obj2);
     if (1 === tmp7) {
       locale = 0;
-      let obj6 = callback(promotion_id[6]);
+      let obj6 = callback(promotion_id[7]);
       obj6.dispatch({ type: "ACTIVE_PROMOTIONS_FETCH_FAIL" });
       let c6 = 3;
     } else {
@@ -52,13 +53,13 @@ function _fetchActivePromotions() {
           throw arg1;
         } else if (arg0 !== 2) {
           let lib = arg1;
-          callback = c6.consumedInboundPromotionId;
-          if (!c6.hasFetchedConsumedInboundPromotionId) {
-            obj1 = lib(promotion_id[9]);
+          callback = createEmptyPromotionsByType.consumedInboundPromotionId;
+          if (!createEmptyPromotionsByType.hasFetchedConsumedInboundPromotionId) {
+            obj1 = lib(promotion_id[10]);
             let c5 = 3;
             c6 = 1;
             const obj5 = { value: null, done: false };
-            obj5[0] = obj1.fetchUserEntitlementsForApplication(closure_7, false);
+            obj5[0] = obj1.fetchUserEntitlementsForApplication(closure_8, false);
             return obj5;
           }
         }
@@ -89,7 +90,7 @@ function _fetchActivePromotions() {
         }
         callback = lib;
       }
-      obj3 = callback(promotion_id[6]);
+      obj3 = callback(promotion_id[7]);
       obj6 = { type: "ACTIVE_PROMOTIONS_FETCH_SUCCESS", promotions: null, consumedInboundPromotionId: null };
       obj6[1] = lib.body;
       obj6[2] = callback;
@@ -114,7 +115,7 @@ function dismissOutboundPromotionNotice() {
   if (null != lastDismissedOutboundPromotionStartDate) {
     const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(1374).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("userContent", (arg0) => {
-      const StringValue = lastDismissedOutboundPromotionStartDate(outer1_2[11]).StringValue;
+      const StringValue = lastDismissedOutboundPromotionStartDate(outer1_2[12]).StringValue;
       arg0.lastDismissedOutboundPromotionStartDate = StringValue.create({ value: lastDismissedOutboundPromotionStartDate });
     }, lastDismissedOutboundPromotionStartDate(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
@@ -161,13 +162,13 @@ function _fetchActiveBogoPromotion() {
             const callback = tmp3;
             let body = tmp7;
             body = undefined;
-            if (!outer1_6.isFetchingActiveBogoPromotion) {
+            if (!outer1_7.isFetchingActiveBogoPromotion) {
               let c3 = 1;
-              let obj4 = outer1_1(outer1_2[6]);
+              let obj4 = outer1_1(outer1_2[7]);
               obj4.dispatch({ type: "ACTIVE_BOGO_PROMOTION_FETCH" });
-              const HTTP = outer1_0(outer1_2[8]).HTTP;
+              const HTTP = outer1_0(outer1_2[9]).HTTP;
               const obj1 = { url: null, query: null, rejectWithError: true };
-              obj1[0] = outer1_8.BOGO_PROMOTIONS;
+              obj1[0] = outer1_9.BOGO_PROMOTIONS;
               const obj2 = { locale: null };
               obj2[0] = locale.locale;
               obj1[1] = obj2;
@@ -238,7 +239,7 @@ function _fetchClaimedOutboundPromotionCodes() {
     let dependencyMap = 1;
     const HTTP = outer1_0(530).HTTP;
     const obj1 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
-    obj1[0] = outer1_8.CLAIMED_OUTBOUND_PROMOTION_CODES;
+    obj1[0] = outer1_9.CLAIMED_OUTBOUND_PROMOTION_CODES;
     const obj2 = { locale: null };
     obj2[0] = locale.locale;
     obj1[1] = obj2;
@@ -254,7 +255,7 @@ function _fetchClaimedOutboundPromotionCodes() {
       throw arg1;
     } else if (arg0 !== 2) {
       const body = arg1.body;
-      callback = body.map(callback(7648).claimedOutboundPromotionCodeFromServer);
+      callback = body.map(callback(7687).claimedOutboundPromotionCodeFromServer);
       const obj = callback2(709);
       const obj4 = { type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes: null };
       obj4[1] = callback;
@@ -295,15 +296,17 @@ export const maybeFetchActivePromotions = function maybeFetchActivePromotions(ar
   if (arg0 === undefined) {
     flag = true;
   }
-  let isFetchingActivePromotions = createEmptyPromotionsByType.isFetchingActivePromotions;
-  if (!isFetchingActivePromotions) {
-    if (flag) {
-      flag = null != createEmptyPromotionsByType.lastFetchedActivePromotions;
+  if (null != currentUser.getCurrentUser()) {
+    let isFetchingActivePromotions = createEmptyPromotionsByType.isFetchingActivePromotions;
+    if (!isFetchingActivePromotions) {
+      if (flag) {
+        flag = null != createEmptyPromotionsByType.lastFetchedActivePromotions;
+      }
+      isFetchingActivePromotions = flag;
     }
-    isFetchingActivePromotions = flag;
-  }
-  if (!isFetchingActivePromotions) {
-    fetchActivePromotions();
+    if (!isFetchingActivePromotions) {
+      fetchActivePromotions();
+    }
   }
 };
 export const clearActivePromotions = function clearActivePromotions() {

@@ -1,10 +1,10 @@
-// Module ID: 9720
-// Function ID: 9721
+// Module ID: 9759
+// Function ID: 9760
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 1429, 676, 21, 9717, 9721, 4271, 9719, 7735, 1236, 3049, 6276, 5150, 4714, 8628, 9722, 1222, 2]
+// Dependencies: [19, 1429, 676, 21, 9756, 9760, 4312, 9758, 7774, 1236, 3047, 6315, 5190, 4754, 8667, 9761, 1222, 2]
 // Exports: default
 
-// Module 9720 (FavoritesGuildUpsellSheet)
+// Module 9759 (FavoritesGuildUpsellSheet)
 import noop from "noop";
 import { MAX_FAVORITE_CHANNELS } from "date";
 import { FAVORITES } from "ME";
@@ -19,7 +19,7 @@ let result = require("ME").fileFinishedImporting("modules/favorites/native/Favor
 export default function FavoritesGuildUpsellSheet(limit) {
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
-    FREE_FAVORITE_LIMIT = analyticsLocations(9717).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = analyticsLocations(9756).FREE_FAVORITE_LIMIT;
   }
   let str = limit.source;
   if (str === undefined) {
@@ -31,24 +31,24 @@ export default function FavoritesGuildUpsellSheet(limit) {
   }
   analyticsLocations = undefined;
   let importDefault;
-  analyticsLocations = importDefault(9721)(str).analyticsLocations;
+  analyticsLocations = importDefault(9760)(str).analyticsLocations;
   importDefault = React.useCallback(() => {
-    callback(4271).hideActionSheet(analyticsLocations(9719).FAVORITES_UPSELL_SHEET_KEY);
+    callback(4312).hideActionSheet(analyticsLocations(9758).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
   const intl = analyticsLocations(1236).intl;
-  const tmp8 = importDefault(3049);
+  const tmp8 = importDefault(3047);
   let obj = { title: intl.string(tmp5 ? tmp8.hINqUs : tmp8.aA0vO8), description: null, illustration: null, actions: null };
   const intl2 = tmp7(1236).intl;
   if ("limit_reached" === str2) {
     obj = { count: null, maxCount: null };
     obj[0] = FREE_FAVORITE_LIMIT;
     obj[1] = MAX_FAVORITE_CHANNELS;
-    let formatToPlainStringResult = intl2.formatToPlainString(tmp3(3049).D7S0Zo, obj);
+    let formatToPlainStringResult = intl2.formatToPlainString(tmp3(3047).D7S0Zo, obj);
   } else {
-    formatToPlainStringResult = intl2.string(tmp3(3049)["WaP/lz"]);
+    formatToPlainStringResult = intl2.string(tmp3(3047)["WaP/lz"]);
   }
   obj[1] = formatToPlainStringResult;
-  obj[2] = closure_6(analyticsLocations(6276).FavoritesSpotIllustration, {});
+  obj[2] = closure_6(analyticsLocations(6315).FavoritesSpotIllustration, {});
   obj = { size: "lg", variant: "primary", text: null, onPress: null };
   const intl3 = tmp7(1236).intl;
   obj[2] = intl3.string(analyticsLocations(1236).t.pj0XBN);
@@ -56,11 +56,11 @@ export default function FavoritesGuildUpsellSheet(limit) {
     callback();
     callback(outer1_2[14])({ analyticsLocations });
   };
-  const items = [closure_6(analyticsLocations(4714).Button, obj), ];
+  const items = [closure_6(analyticsLocations(4754).Button, obj), ];
   const intl4 = tmp7(1236).intl;
-  const tmp3Result = importDefault(3049);
+  const tmp3Result = importDefault(3047);
   const obj1 = { children: null };
-  items[1] = closure_6(analyticsLocations(4714).Button, {
+  items[1] = closure_6(analyticsLocations(4754).Button, {
     size: "lg",
     variant: "secondary",
     text: intl4.string("limit_reached" === str2 ? tmp3Result.PprSsy : tmp3Result["+dSwhE"]),
@@ -72,6 +72,6 @@ export default function FavoritesGuildUpsellSheet(limit) {
     }
   });
   obj1[0] = items;
-  obj[3] = closure_7(analyticsLocations(5150).ButtonGroup, obj1);
-  return closure_6(analyticsLocations(7735).PromoSheet, obj);
+  obj[3] = closure_7(analyticsLocations(5190).ButtonGroup, obj1);
+  return closure_6(analyticsLocations(7774).PromoSheet, obj);
 };

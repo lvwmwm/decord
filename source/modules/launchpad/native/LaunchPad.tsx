@@ -1,9 +1,9 @@
-// Module ID: 16060
-// Function ID: 16061
+// Module ID: 16117
+// Function ID: 16118
 // Name: TabButton
-// Dependencies: [32, 19, 17, 4013, 6987, 5945, 5223, 1395, 1218, 1391, 7180, 7098, 1910, 13021, 4315, 5155, 4499, 4319, 676, 21, 712, 4303, 4846, 4299, 589, 4042, 4166, 5994, 1236, 12291, 9142, 14770, 500, 13850, 12135, 7320, 4158, 7321, 7309, 1493, 1628, 7310, 10973, 698, 16061, 16068, 13851, 16087, 16088, 2]
+// Dependencies: [32, 19, 17, 4054, 7026, 5984, 5262, 1395, 1218, 1391, 7219, 7137, 1910, 13080, 4356, 5195, 4539, 4360, 676, 21, 712, 4344, 4886, 4340, 589, 4083, 4207, 6033, 1236, 12354, 9182, 14828, 500, 13907, 12192, 7359, 4199, 7360, 7348, 1493, 1628, 7349, 11026, 698, 16118, 16125, 13908, 16144, 16145, 2]
 
-// Module 16060 (TabButton)
+// Module 16117 (TabButton)
 import set from "set";
 import importAllResult from "jsxProd";
 import { View } from "updateVoiceState";
@@ -57,15 +57,15 @@ function TabButton(selected) {
   obj[4] = { selected };
   const colors = importDefault(712).colors;
   obj[5] = icon(selected ? colors.INTERACTIVE_TEXT_ACTIVE : colors.INTERACTIVE_TEXT_DEFAULT);
-  return closure_27(require(4846) /* PressableBase */.PressableHighlight, obj);
+  return closure_27(require(4886) /* PressableBase */.PressableHighlight, obj);
 }
 function TabHeader(children) {
   const tmp = callback3();
-  return callback2(require(4299) /* Text */.Text, { style: callback3().subheader, variant: "heading-md/extrabold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: children.text });
+  return callback2(require(4340) /* Text */.Text, { style: callback3().subheader, variant: "heading-md/extrabold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: children.text });
 }
 function createAndAppendChannel(arg0, has, arr) {
   if (!has.has(arg0)) {
-    const tmp3 = importDefault(7320)(arg0);
+    const tmp3 = importDefault(7359)(arg0);
     if (null != tmp3) {
       arr.push(tmp3);
       has.add(arg0);

@@ -1,10 +1,10 @@
-// Module ID: 10446
-// Function ID: 10447
+// Module ID: 10487
+// Function ID: 10488
 // Name: computeActivityFlags
-// Dependencies: [676, 3993, 595, 1403, 7200, 2]
+// Dependencies: [676, 4034, 595, 1403, 7239, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 10446 (computeActivityFlags)
+// Module 10487 (computeActivityFlags)
 import ME from "ME";
 
 let c3;
@@ -46,9 +46,9 @@ export const computeActivityFlags = function computeActivityFlags(activity, flag
     tmp6 = tmp4 | constants.CONTEXTLESS;
   }
   if (flag2) {
-    const AllowActivityPartyPrivacyFriends2 = require(3993) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
+    const AllowActivityPartyPrivacyFriends2 = require(4034) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
     const setting = AllowActivityPartyPrivacyFriends2.getSetting();
-    const AllowActivityPartyPrivacyVoiceChannel2 = require(3993) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
+    const AllowActivityPartyPrivacyVoiceChannel2 = require(4034) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
     const PARTY_PRIVACY_FRIENDS2 = constants.PARTY_PRIVACY_FRIENDS;
     const setting1 = AllowActivityPartyPrivacyVoiceChannel2.getSetting();
     if (setting) {
@@ -72,9 +72,9 @@ export const computeActivityFlags = function computeActivityFlags(activity, flag
     if (!value) {
       return tmp6;
     } else {
-      const AllowActivityPartyPrivacyFriends = require(3993) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
+      const AllowActivityPartyPrivacyFriends = require(4034) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
       const setting2 = AllowActivityPartyPrivacyFriends.getSetting();
-      const AllowActivityPartyPrivacyVoiceChannel = require(3993) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
+      const AllowActivityPartyPrivacyVoiceChannel = require(4034) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
       const PARTY_PRIVACY_FRIENDS = constants.PARTY_PRIVACY_FRIENDS;
       const setting3 = AllowActivityPartyPrivacyVoiceChannel.getSetting();
       if (setting2) {
@@ -103,7 +103,7 @@ export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActiv
   }
   let hasFlagResult = require(1403) /* hasFlag */.hasFlag(num, constants.CONTEXTLESS);
   if (hasFlagResult) {
-    hasFlagResult = importDefault(7200)(remoteApplicationActivity);
+    hasFlagResult = importDefault(7239)(remoteApplicationActivity);
   }
   return hasFlagResult;
 };

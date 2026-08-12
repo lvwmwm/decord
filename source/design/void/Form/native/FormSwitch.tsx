@@ -1,10 +1,10 @@
-// Module ID: 7982
-// Function ID: 7983
+// Module ID: 8021
+// Function ID: 8022
 // Name: FormSwitch
-// Dependencies: [19, 17, 21, 4303, 712, 4239, 1363, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 4280, 1363, 2]
 // Exports: default
 
-// Module 7982 (FormSwitch)
+// Module 8021 (FormSwitch)
 import "noop";
 import { Switch } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

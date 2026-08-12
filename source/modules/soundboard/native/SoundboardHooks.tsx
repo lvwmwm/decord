@@ -1,10 +1,10 @@
-// Module ID: 16164
-// Function ID: 16165
+// Module ID: 16221
+// Function ID: 16222
 // Name: useSoundButtonStyleConfig
-// Dependencies: [5, 19, 4295, 1302, 16157, 5398, 1493, 589, 1363, 1374, 5955, 2]
+// Dependencies: [5, 19, 4336, 1302, 16214, 5437, 1493, 589, 1363, 1374, 5994, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 16164 (useSoundButtonStyleConfig)
+// Module 16221 (useSoundButtonStyleConfig)
 import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

@@ -1,10 +1,10 @@
-// Module ID: 9982
-// Function ID: 9983
+// Module ID: 10023
+// Function ID: 10024
 // Name: _openStickersPremiumUpsellAlert
-// Dependencies: [5, 19, 676, 21, 698, 5877, 4623, 4643, 9983, 2007, 2]
+// Dependencies: [5, 19, 676, 21, 698, 5916, 4663, 4683, 10024, 2007, 2]
 // Exports: default
 
-// Module 9982 (_openStickersPremiumUpsellAlert)
+// Module 10023 (_openStickersPremiumUpsellAlert)
 import fetchSubscriptionPlansForSKU from "fetchSubscriptionPlansForSKU";
 import "noop";
 import ME from "ME";

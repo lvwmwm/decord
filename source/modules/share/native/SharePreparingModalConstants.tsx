@@ -1,9 +1,9 @@
-// Module ID: 8932
-// Function ID: 8933
+// Module ID: 8971
+// Function ID: 8972
 // Name: SHARE_PREPARING_MODAL_KEY
 // Dependencies: [2]
 
-// Module 8932 (SHARE_PREPARING_MODAL_KEY)
+// Module 8971 (SHARE_PREPARING_MODAL_KEY)
 const result = require("set").fileFinishedImporting("modules/share/native/SharePreparingModalConstants.tsx");
 
 export const SHARE_PREPARING_MODAL_KEY = "share-preparing";

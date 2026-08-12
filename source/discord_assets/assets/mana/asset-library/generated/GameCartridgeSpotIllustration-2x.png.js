@@ -1,9 +1,9 @@
-// Module ID: 6291
-// Function ID: 6292
+// Module ID: 6330
+// Function ID: 6331
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6291 (metadata)
+// Module 6330 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameCartridgeSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/7dbd6e28e71a0f64b551f1b95b33259aa46f4793d96346317c96da14180e5cc4.png";

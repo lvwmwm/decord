@@ -1,10 +1,10 @@
-// Module ID: 11028
-// Function ID: 11029
+// Module ID: 11081
+// Function ID: 11082
 // Name: EmptyCustomizeCommunity
-// Dependencies: [19, 17, 5176, 1910, 4315, 4126, 5242, 5243, 676, 1925, 4500, 21, 4303, 712, 5236, 1364, 4239, 589, 11029, 11030, 1297, 1236, 4299, 5249, 5355, 5726, 5748, 1628, 11031, 5241, 5253, 5247, 5360, 1435, 1370, 4024, 4042, 4304, 11032, 4271, 5365, 2007, 4846, 5718, 5356, 2]
+// Dependencies: [19, 17, 5215, 1910, 4356, 4167, 5281, 5282, 676, 1925, 4540, 21, 4344, 712, 5275, 1364, 4280, 589, 11082, 11083, 1297, 1236, 4340, 5288, 5394, 5765, 5787, 1628, 11084, 5280, 5292, 5286, 5399, 1435, 1370, 4065, 4083, 4345, 11085, 4312, 5404, 2007, 4886, 5757, 5395, 2]
 // Exports: default
 
-// Module 11028 (EmptyCustomizeCommunity)
+// Module 11081 (EmptyCustomizeCommunity)
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "initialize";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -37,7 +37,7 @@ function EmptyCustomizeCommunity(setTab) {
   const items = [handleConnectionOpen];
   importDefault = obj1.useStateFromStores(items, () => guildId.getGuildId());
   obj = { style: tmp.emptyContainer, children: null };
-  obj = { style: tmp.emptyContainerImage, source: importDefault(obj.isThemeDark(importDefault(4239)()) ? 11029 : 11030) };
+  obj = { style: tmp.emptyContainerImage, source: importDefault(obj.isThemeDark(importDefault(4280)()) ? 11082 : 11083) };
   const items1 = [closure_16(closure_5, obj), , ];
   obj1 = { style: tmp.emptyContainerHeader, children: null };
   const intl = tmp2(1236).intl;
@@ -52,7 +52,7 @@ function EmptyCustomizeCommunity(setTab) {
       }
     }
   });
-  items1[2] = closure_16(setTab(4299).Text, obj2);
+  items1[2] = closure_16(setTab(4340).Text, obj2);
   obj[1] = items1;
   return closure_17(closure_4, obj);
 }
@@ -64,10 +64,10 @@ function PromptTitle(item) {
   if (item.required) {
     obj = { variant: "text-md/bold", color: "text-feedback-critical", children: null };
     obj[2] = [" ", "*"];
-    tmp3Result = tmp3(require(4299) /* Text */.Text, obj);
+    tmp3Result = tmp3(require(4340) /* Text */.Text, obj);
   }
   items[1] = tmp3Result;
-  obj[1] = closure_17(require(4299) /* Text */.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: items });
+  obj[1] = closure_17(require(4340) /* Text */.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: items });
   return closure_16(closure_4, obj);
 }
 function PromptHelpText(arg0) {
@@ -147,11 +147,11 @@ function ConnectionsPrompt(guildId) {
     obj[0] = tmp.connectionsTitle;
     const intl = tmp2(1236).intl;
     obj[3] = intl.string(tmp2(1236).t.eDVMrA);
-    const items1 = [callback(tmp2(4299).Text, obj), , ];
+    const items1 = [callback(tmp2(4340).Text, obj), , ];
     const obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
     const intl2 = tmp2(1236).intl;
     obj1[2] = intl2.string(tmp2(1236).t.BozOXu);
-    items1[1] = callback(tmp2(4299).Text, obj1);
+    items1[1] = callback(tmp2(4340).Text, obj1);
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.connectionsContainer;
     obj2[1] = stateFromStores.map((connection) => {
@@ -225,12 +225,12 @@ function DropdownOption(option) {
       str = "";
     }
     obj1[3] = str;
-    obj[1] = callback(importDefault(5360), obj1);
+    obj[1] = callback(importDefault(5399), obj1);
     tmp10Result = tmp10(tmp9, obj);
     tmp11 = importDefault;
-    const tmp12 = importDefault(5360);
+    const tmp12 = importDefault(5399);
   }
-  const items1 = [tmp10Result, callback(option(4299).Text, { variant: "text-md/semibold", children: option.title })];
+  const items1 = [tmp10Result, callback(option(4340).Text, { variant: "text-md/semibold", children: option.title })];
   obj[1] = items1;
   return closure_17(closure_4, obj);
 }
@@ -500,7 +500,7 @@ export default function CustomizeCommunity(guildId) {
     }
     return prop;
   });
-  const tmp7 = stateFromStores(11031)(guildId);
+  const tmp7 = stateFromStores(11084)(guildId);
   ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, onboardingPrompts } = tmp7);
   const items2 = [guildId, stateFromStores, stateFromStores1];
   ({ onboardingPromptsRaw, newAnswersCount } = tmp7);
@@ -561,7 +561,7 @@ export default function CustomizeCommunity(guildId) {
       const obj6 = { count: null };
       obj6[0] = newOnboardingPrompts.length + newAnswersCount;
       obj5[3] = intl.format(tmp4(1236).t.iB5Gqe, obj6);
-      const items5 = [callback(tmp4(4299).Text, obj5), newOnboardingPrompts.map(callback), onboardingPromptsWithNewAnswers.map(callback), ];
+      const items5 = [callback(tmp4(4340).Text, obj5), newOnboardingPrompts.map(callback), onboardingPromptsWithNewAnswers.map(callback), ];
       const obj7 = { style: null };
       obj7[0] = tmp.sectionSeparator;
       items5[3] = callback(closure_4, obj7);
@@ -576,11 +576,11 @@ export default function CustomizeCommunity(guildId) {
       obj9[0] = tmp.sheetTitle;
       const intl2 = tmp4(1236).intl;
       obj9[3] = intl2.string(tmp4(1236).t.BGkaer);
-      const items7 = [callback(tmp4(4299).Text, obj9), , ];
+      const items7 = [callback(tmp4(4340).Text, obj9), , ];
       const obj10 = { variant: "text-xs/medium", color: "text-muted", children: null };
       const intl3 = tmp4(1236).intl;
       obj10[2] = intl3.string(tmp4(1236).t.r6Vm8T);
-      items7[1] = callback(tmp4(4299).Text, obj10);
+      items7[1] = callback(tmp4(4340).Text, obj10);
       items7[2] = onboardingPrompts.map(callback);
       obj8[0] = items7;
       tmp24Result = tmp24(closure_18, obj8);

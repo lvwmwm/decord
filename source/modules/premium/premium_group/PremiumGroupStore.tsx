@@ -1,9 +1,9 @@
-// Module ID: 12765
-// Function ID: 12766
+// Module ID: 12824
+// Function ID: 12825
 // Name: handleMutationStart
-// Dependencies: [3972, 3980, 676, 709, 12766, 589, 2]
+// Dependencies: [4013, 4021, 676, 709, 12825, 589, 2]
 
-// Module 12765 (handleMutationStart)
+// Module 12824 (handleMutationStart)
 import reset from "reset";
 import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 import { NOOP_NULL } from "ME";

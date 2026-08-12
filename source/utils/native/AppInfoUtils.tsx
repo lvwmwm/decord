@@ -1,10 +1,10 @@
-// Module ID: 16413
-// Function ID: 16414
+// Module ID: 16470
+// Function ID: 16471
 // Name: getAppMajorVersion
 // Dependencies: [1625, 2]
 // Exports: getAppMajorVersion
 
-// Module 16413 (getAppMajorVersion)
+// Module 16470 (getAppMajorVersion)
 import getConstants from "getConstants";
 
 getConstants = getConstants.getConstants();

@@ -1,9 +1,9 @@
-// Module ID: 7347
-// Function ID: 7348
+// Module ID: 7386
+// Function ID: 7387
 // Name: CountryListMode
 // Dependencies: [2]
 
-// Module 7347 (CountryListMode)
+// Module 7386 (CountryListMode)
 import set from "set";
 
 const items = ["logitech", "call_of_duty"];

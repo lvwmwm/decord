@@ -1,7 +1,7 @@
 // Module ID: 1995
 // Function ID: 1996
 // Name: _setAppLocale
-// Dependencies: [5, 700, 1996, 1236, 2006, 1274, 3394, 3869, 3900, 3902, 1208, 2]
+// Dependencies: [5, 700, 1996, 1236, 2006, 1274, 3435, 3910, 3941, 3943, 1208, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
 // Module 1995 (_setAppLocale)
@@ -433,7 +433,7 @@ function _setMomentLocale() {
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "accessibilityRole", localeData: "Array", setLoadingStarted: "isArray", setLoadingSucceeded: "call", setLoadingFailed: "ks", setLocaleData: "marginBottom" };
+  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "accessibilityRole", localeData: 139455987900731700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, setLoadingStarted: "nurturing", setLoadingSucceeded: "plant", setLoadingFailed: "pot", setLocaleData: "potted" };
   obj[3] = importDefault(1996);
   obj[4] = function setLoadingStarted(closure_0) {
     return callback({ isLoading: true, inProgressLocale: closure_0 });
@@ -445,7 +445,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   };
   obj[6] = function setLoadingFailed(arg0, closure_0) {
     if (callback2().inProgressLocale === closure_0) {
-      const obj = { isLoading: false, inProgressLocale: "Array", error: 0 };
+      const obj = { isLoading: false, inProgressLocale: "Array", error: 100 };
       obj[2] = arg0;
       callback(obj);
     }

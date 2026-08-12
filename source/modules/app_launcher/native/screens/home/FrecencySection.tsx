@@ -1,10 +1,10 @@
-// Module ID: 11442
-// Function ID: 11443
+// Module ID: 11499
+// Function ID: 11500
 // Name: Placeholder
-// Dependencies: [32, 19, 17, 1390, 11443, 676, 21, 4303, 712, 8343, 1370, 5734, 1367, 11444, 9554, 589, 9555, 4498, 4042, 4304, 1236, 9138, 11445, 11441, 1954, 8669, 11446, 4299, 8604, 9484, 4846, 11447, 6985, 5268, 11450, 2]
+// Dependencies: [32, 19, 17, 1390, 11500, 676, 21, 4344, 712, 8382, 1370, 5773, 1367, 11501, 9594, 589, 9595, 4538, 4083, 4345, 1236, 9178, 11502, 11498, 1954, 8708, 11503, 4340, 8643, 9524, 4886, 11504, 7024, 5307, 11507, 2]
 // Exports: default
 
-// Module 11442 (Placeholder)
+// Module 11499 (Placeholder)
 import ApplicationCommandSectionType from "ApplicationCommandSectionType";
 import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING";
 import get_ActivityIndicator from "collectGuildAnalyticsMetadata";
@@ -23,9 +23,9 @@ const require = arg1;
 function Placeholder() {
   const tmp = importDefault(1367)("AppLauncherRecents-native");
   const tmp2 = createCacheKey();
-  let obj = require(11444) /* usePlaceholderWidth */;
+  let obj = require(11501) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(20, 90);
-  let obj1 = require(11444) /* usePlaceholderWidth */;
+  let obj1 = require(11501) /* usePlaceholderWidth */;
   const items = [tmp2.commandContainer, ];
   let rowShadow = !tmp;
   const placeholderWidth1 = obj1.usePlaceholderWidth(20, 70);
@@ -117,7 +117,7 @@ function FrecentApp(app) {
   if (null == app.section) {
     return null;
   } else {
-    const appLauncherIconSource = app(11441).getAppLauncherIconSource(app.section.application);
+    const appLauncherIconSource = app(11498).getAppLauncherIconSource(app.section.application);
     let obj = { style: null, disabled: null, accessible: true, accessibilityLabel: null, accessibilityRole: "button", onPress: null, children: null };
     obj[0] = disabled ? tmp.appContainerDisabled : tmp.appContainer;
     obj[1] = disabled;
@@ -144,15 +144,15 @@ function FrecentApp(app) {
       obj = { style: null, source: null };
       obj[0] = tmp.appIcon;
       obj[1] = appLauncherIconSource;
-      tmp3 = callback2(onAppSelected(5268), obj);
+      tmp3 = callback2(onAppSelected(5307), obj);
     }
     const items = [tmp3, ];
     obj = { submitting: null, style: null };
     obj[0] = submitting;
     obj[1] = tmp.submittingOverlay;
-    items[1] = callback2(app(11450).SubmittingOverlay, obj);
+    items[1] = callback2(app(11507).SubmittingOverlay, obj);
     obj[6] = items;
-    return closure_12(app(4846).PressableOpacity, obj, app.applicationId);
+    return closure_12(app(4886).PressableOpacity, obj, app.applicationId);
   }
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);

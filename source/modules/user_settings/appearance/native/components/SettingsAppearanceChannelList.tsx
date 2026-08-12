@@ -1,10 +1,10 @@
-// Module ID: 14533
-// Function ID: 14534
+// Module ID: 14590
+// Function ID: 14591
 // Name: ChannelListPreview
-// Dependencies: [19, 17, 21, 4303, 712, 14534, 14535, 14536, 4042, 1236, 14542, 7747, 14545, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 14591, 14592, 14593, 4083, 1236, 14599, 7786, 14602, 2]
 // Exports: default
 
-// Module 14533 (ChannelListPreview)
+// Module 14590 (ChannelListPreview)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -80,9 +80,9 @@ export default function ChannelListPreview(useGradientBackground) {
     obj[0] = themes;
     obj[1] = themeIndex;
     obj[3] = tmp4(712).colors.BACKGROUND_BASE_LOW;
-    obj[1] = callback(tmp4(14542), obj);
+    obj[1] = callback(tmp4(14599), obj);
     tmp7 = callback(closure_4, obj);
-    const tmp4Result = tmp4(14542);
+    const tmp4Result = tmp4(14599);
   }
   const items2 = [tmp7, , ];
   const obj1 = { contentContainerStyle: null, data: null, renderItem: null, keyExtractor: null, showsVerticalScrollIndicator: false, importantForAccessibility: "no-hide-descendants" };
@@ -94,8 +94,8 @@ export default function ChannelListPreview(useGradientBackground) {
   obj1[3] = function keyExtractor(id) {
     return id.id;
   };
-  items2[1] = callback(animatedStyles(7747).FlashList, obj1);
-  items2[2] = callback(importDefault(14545), { visible: isNitroLocked, theme: themes[themeIndex] });
+  items2[1] = callback(animatedStyles(7786).FlashList, obj1);
+  items2[2] = callback(importDefault(14602), { visible: isNitroLocked, theme: themes[themeIndex] });
   obj[4] = items2;
-  return closure_6(importDefault(4042).View, obj);
+  return closure_6(importDefault(4083).View, obj);
 };

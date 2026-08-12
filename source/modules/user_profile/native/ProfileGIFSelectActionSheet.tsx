@@ -1,13 +1,13 @@
-// Module ID: 13929
-// Function ID: 13930
+// Module ID: 13986
+// Function ID: 13987
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4303, 712, 4879, 13911, 8280, 8273, 8270, 8272, 8281, 4271, 5397, 5396, 1236, 7706, 9938, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4344, 712, 4919, 13968, 8319, 8312, 8309, 8311, 8320, 4312, 5436, 5435, 1236, 7745, 9979, 2]
 // Exports: default
 
-// Module 13929 (ProfileGIFSelectActionSheet)
+// Module 13986 (ProfileGIFSelectActionSheet)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "createCacheKey";
-import module_9938 from "module_9938";
+import module_9979 from "module_9979";
 import { View } from "getSystemLocale";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -163,7 +163,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
                 }
               } else {
                 if (outer1_10.BANNER === tmp65) {
-                  obj9 = { assetOrigin: null, imageUri: null, description: "", originalAsset: "Array", originalMd5: "text-xs/normal" };
+                  obj9 = { assetOrigin: null, imageUri: null, description: "", originalAsset: "Array", originalMd5: "text-sm/normal" };
                   obj9[0] = lib(outer1_2[13]).AssetOriginTypes.NEW_ASSET;
                   obj9[1] = c5;
                   obj9[4] = closure_6;
@@ -206,13 +206,13 @@ export default function ProfileGIFSelectActionSheet(arg0) {
   obj = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["xsC+/y"]);
-  obj[1] = callback(require(7706) /* NitroWheelIcon */.NitroWheelIcon, {});
+  obj[1] = callback(require(7745) /* NitroWheelIcon */.NitroWheelIcon, {});
   ({ titleWrapper: obj2[2], titleContainer: obj2[3] } = tmp);
-  let items = [callback(require(5396) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
-  obj = { style: tmp.gifPicker, children: callback(importDefault(9938), obj1) };
+  let items = [callback(require(5435) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
+  obj = { style: tmp.gifPicker, children: callback(importDefault(9979), obj1) };
   items[1] = callback(View, obj);
   obj[3] = items;
-  return callback2(require(5397) /* Background */.BottomSheet, obj);
+  return callback2(require(5436) /* Background */.BottomSheet, obj);
 };
 export const ProfileAssetType = obj1;
 export const GIFSelectionContext = obj2;

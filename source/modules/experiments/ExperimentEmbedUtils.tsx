@@ -1,10 +1,10 @@
-// Module ID: 8207
-// Function ID: 8208
+// Module ID: 8246
+// Function ID: 8247
 // Name: regExp
-// Dependencies: [4225, 8208, 8209, 2]
+// Dependencies: [4266, 8247, 8248, 2]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 8207 (regExp)
+// Module 8246 (regExp)
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const result = require("getExperimentVariantsForDevTools").fileFinishedImporting("modules/experiments/ExperimentEmbedUtils.tsx");
 
@@ -49,9 +49,9 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
   if (null != experimentServerAssignment) {
     if (null != system) {
       const system2 = system.system;
-      if (require(4225) /* trackExposureToExperiment */.ExperimentSystem.LEGACY === system2) {
-        return importDefault(8208).getExperimentBucketName(experimentServerAssignment.bucket);
-      } else if (tmp4(4225).ExperimentSystem.APEX === system2) {
+      if (require(4266) /* trackExposureToExperiment */.ExperimentSystem.LEGACY === system2) {
+        return importDefault(8247).getExperimentBucketName(experimentServerAssignment.bucket);
+      } else if (tmp4(4266).ExperimentSystem.APEX === system2) {
         const _HermesInternal = HermesInternal;
         return "Variant " + experimentServerAssignment.variantId;
       } else {
@@ -64,6 +64,6 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
   return null;
 };
 export const getExperimentBuckets = function getExperimentBuckets(experiment) {
-  const experimentVariantsForDevTools = require(8209) /* getExperimentVariantsForDevTools */.getExperimentVariantsForDevTools(experiment);
+  const experimentVariantsForDevTools = require(8248) /* getExperimentVariantsForDevTools */.getExperimentVariantsForDevTools(experiment);
   return experimentVariantsForDevTools.map((id) => ({ id: id.id, label: id.label, value: id.id }));
 };

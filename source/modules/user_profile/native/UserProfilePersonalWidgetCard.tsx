@@ -1,10 +1,10 @@
-// Module ID: 12458
-// Function ID: 12459
+// Module ID: 12521
+// Function ID: 12522
 // Name: PersonalWidgetText
-// Dependencies: [19, 17, 1218, 676, 21, 4303, 712, 12459, 4299, 12460, 4725, 4031, 589, 5775, 7706, 12353, 2]
+// Dependencies: [19, 17, 1218, 676, 21, 4344, 712, 12522, 4340, 12523, 4765, 4072, 589, 5814, 7745, 12416, 2]
 // Exports: default
 
-// Module 12458 (PersonalWidgetText)
+// Module 12521 (PersonalWidgetText)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import fetchFingerprint from "fetchFingerprint";
@@ -63,7 +63,7 @@ function CoverSection(arg0) {
     obj = { colors: null, style: null };
     obj[0] = closure_11;
     obj[1] = closure_5.absoluteFill;
-    tmp6 = callback(image(4725), obj);
+    tmp6 = callback(image(4765), obj);
   }
   const items2 = [tmp6, , ];
   let tmp12 = null;
@@ -94,7 +94,7 @@ function CoverSection(arg0) {
     const items3 = [callback(closure_4, obj4), tmp3Result];
     obj3[1] = items3;
     obj2[3] = tmp3(tmp4, obj3);
-    tmp19 = callback(userId(4031).ThemeContextProvider, obj2);
+    tmp19 = callback(userId(4072).ThemeContextProvider, obj2);
   }
   return tmp19;
 }
@@ -196,7 +196,7 @@ export default function UserProfilePersonalWidgetCard(userId) {
   obj = { style: cardStyle, titleLeadingIcon: null, title: null, trailingAction: null, children: null };
   const tmp = createCacheKey();
   const tmp5 = importDefault;
-  obj[1] = callback(userId(7706).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+  obj[1] = callback(userId(7745).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
   obj[2] = widget.header;
   let tmp4Result = !stateFromStores;
   if (!stateFromStores) {
@@ -206,10 +206,10 @@ export default function UserProfilePersonalWidgetCard(userId) {
     obj = { userId: null, widget: null };
     obj[0] = userId;
     obj[1] = widget;
-    tmp4Result = tmp4(tmp5(12353), obj);
+    tmp4Result = tmp4(tmp5(12416), obj);
   }
   obj[3] = tmp4Result;
-  const tmp6 = importDefault(5775);
+  const tmp6 = importDefault(5814);
   const sections = widget.sections;
   obj[4] = callback(closure_6, {
     style: tmp.sectionsContainer,

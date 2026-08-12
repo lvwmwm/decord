@@ -1,10 +1,10 @@
-// Module ID: 10596
-// Function ID: 10597
+// Module ID: 10649
+// Function ID: 10650
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 10597, 1390, 10598, 5729, 589, 10600, 10601, 10656, 10985, 2]
+// Dependencies: [5, 19, 10650, 1390, 10651, 5768, 589, 10653, 10654, 10709, 11038, 2]
 // Exports: default
 
-// Module 10596 (useRefocusOrLaunchActivity)
+// Module 10649 (useRefocusOrLaunchActivity)
 import fetchApplication from "fetchApplication";
 import noop from "noop";
 import map from "map";
@@ -76,8 +76,8 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                     const obj1 = { frameId: null, layoutMode: null };
                     obj1[0] = tmp10.id;
                     obj1[1] = outer1_8.FOCUSED;
-                    const result = outer1_1(10601).updateFrameLayoutMode(obj1);
-                    const obj9 = outer1_1(10601);
+                    const result = outer1_1(10654).updateFrameLayoutMode(obj1);
+                    const obj9 = outer1_1(10654);
                   }
                 }
                 if (tmp9) {
@@ -86,15 +86,15 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                   if ("guild_id" in _location) {
                     guild_id = _location.guild_id;
                   }
-                  outer1_1(10656)(guild_id, _location);
-                  const tmp25 = outer1_1(10656);
+                  outer1_1(10709)(guild_id, _location);
+                  const tmp25 = outer1_1(10709);
                 } else {
                   if (dependencyMap != null) {
                     dependencyMap();
                   }
                   c4 = 1;
                   if (outer1_7) {
-                    let obj5 = outer1_1(10601);
+                    let obj5 = outer1_1(10654);
                     let obj2 = { applicationId: null, surface: null };
                     obj2[0] = tmp41;
                     obj2[1] = outer1_7;
@@ -116,7 +116,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                     }
                   }
                 }
-                obj2 = outer1_0(10985);
+                obj2 = outer1_0(11038);
                 const obj4 = { appId: null, botId: null, analyticsLocations: null };
                 obj4[0] = tmp41;
                 let id1;

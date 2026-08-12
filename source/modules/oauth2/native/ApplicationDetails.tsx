@@ -1,10 +1,10 @@
-// Module ID: 10540
-// Function ID: 10541
+// Module ID: 10581
+// Function ID: 10582
 // Name: ApplicationDetailsEntry
-// Dependencies: [19, 17, 21, 4303, 712, 10518, 10541, 10543, 11, 10516, 4247, 1236, 4823, 10520, 10545, 4267, 8908, 10547, 10238, 4299, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 10559, 10582, 10584, 11, 10557, 4288, 1236, 4863, 10561, 10586, 4308, 8947, 10588, 10279, 4340, 2]
 // Exports: default
 
-// Module 10540 (ApplicationDetailsEntry)
+// Module 10581 (ApplicationDetailsEntry)
 import "Text";
 import { View } from "RobotIcon";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ function ApplicationDetailsEntry(children) {
   }
   const items = [iconComponentResult, ];
   obj = { variant: "text-sm/normal", color: "text-default", style: tmp.entryText, children: children.text };
-  items[1] = callback(require(4299) /* Text */.Text, obj);
+  items[1] = callback(require(4340) /* Text */.Text, obj);
   obj[1] = items;
   return closure_5(View, obj);
 }
@@ -48,7 +48,7 @@ export default function ApplicationDetails(arg0) {
   ({ isEmbeddedFlow, connectedAccount } = arg0);
   let obj = importDefault(11);
   const tmp2 = createCacheKey();
-  let obj1 = require(10516) /* items */;
+  let obj1 = require(10557) /* items */;
   let joined = null;
   const securityMessage = obj1.getSecurityMessage(scopes);
   if (null != redirectUri) {
@@ -69,7 +69,7 @@ export default function ApplicationDetails(arg0) {
   let tmp15 = null;
   if (null != joined) {
     obj = { iconComponent: null, text: null };
-    obj[0] = tmp5(4247).LinkIcon;
+    obj[0] = tmp5(4288).LinkIcon;
     const intl = tmp5(1236).intl;
     obj1 = { origin: null };
     obj1[0] = joined;
@@ -77,31 +77,31 @@ export default function ApplicationDetails(arg0) {
     tmp15 = callback(ApplicationDetailsEntry, obj);
   }
   const items = [tmp15, , , , , , ];
-  const obj2 = { iconComponent: require(4823) /* LockIcon */.LockIcon, text: null };
+  const obj2 = { iconComponent: require(4863) /* LockIcon */.LockIcon, text: null };
   const date = new Date(obj.extractTimestamp(application.id));
   const tmp13 = closure_5;
   const tmp14 = View;
-  obj2[1] = require(10520) /* getApplicationDetailsText */.getApplicationDetailsText(application);
+  obj2[1] = require(10561) /* getApplicationDetailsText */.getApplicationDetailsText(application);
   items[1] = callback(ApplicationDetailsEntry, obj2);
   let tmp18Result = null;
   if (null != connectedAccount) {
     const obj3 = { iconComponent: null, text: null };
-    obj3[0] = tmp5(10545).HammerIcon;
+    obj3[0] = tmp5(10586).HammerIcon;
     const intl2 = tmp5(1236).intl;
     obj3[1] = intl2.string(tmp5(1236).t["8qui3M"]);
     tmp18Result = tmp18(tmp19, obj3);
   }
   items[2] = tmp18Result;
-  const obj4 = { iconComponent: require(4267) /* ClockIcon */.ClockIcon, text: null };
+  const obj4 = { iconComponent: require(4308) /* ClockIcon */.ClockIcon, text: null };
   const intl3 = tmp5(1236).intl;
   obj4[1] = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["+1bjc8"], { date });
   items[3] = callback(ApplicationDetailsEntry, obj4);
   tmp18Result = null;
-  if (scopes.includes(require(8908) /* set */.OAuth2Scopes.BOT)) {
+  if (scopes.includes(require(8947) /* set */.OAuth2Scopes.BOT)) {
     tmp18Result = null;
     if (null != approximateGuildCount) {
       const obj5 = { iconComponent: null, text: null };
-      obj5[0] = tmp5(10547).RobotIcon;
+      obj5[0] = tmp5(10588).RobotIcon;
       const intl4 = tmp5(1236).intl;
       const obj6 = { guildCount: null };
       obj6[0] = approximateGuildCount;
@@ -110,22 +110,22 @@ export default function ApplicationDetails(arg0) {
     }
   }
   items[4] = tmp18Result;
-  const tmp5Result = require(10520) /* getApplicationDetailsText */;
-  items[5] = callback(ApplicationDetailsEntry, { iconComponent: require(10238) /* ShieldIcon */.ShieldIcon, text: securityMessage });
+  const tmp5Result = require(10561) /* getApplicationDetailsText */;
+  items[5] = callback(ApplicationDetailsEntry, { iconComponent: require(10279) /* ShieldIcon */.ShieldIcon, text: securityMessage });
   let mapped = null;
   if (null != disclosures) {
     mapped = disclosures.map((toFixed) => {
-      let obj = callback(10518);
+      let obj = callback(10559);
       const textForDisclosure = obj.getTextForDisclosure(toFixed);
-      if (callback(10518).ApplicationDisclosure.IP_LOCATION === toFixed) {
+      if (callback(10559).ApplicationDisclosure.IP_LOCATION === toFixed) {
         obj = { iconComponent: null };
-        obj[0] = tmp(10541).GlobeEarthIcon;
+        obj[0] = tmp(10582).GlobeEarthIcon;
         let tmp4 = obj;
       } else {
         tmp4 = null;
-        if (tmp(10518).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
+        if (tmp(10559).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
           obj = { iconComponent: null };
-          obj[0] = tmp(10543).EmbedIcon;
+          obj[0] = tmp(10584).EmbedIcon;
           tmp4 = obj;
         }
       }

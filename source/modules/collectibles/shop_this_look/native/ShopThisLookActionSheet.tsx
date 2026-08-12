@@ -1,10 +1,10 @@
-// Module ID: 12507
-// Function ID: 12508
+// Module ID: 12570
+// Function ID: 12571
 // Name: ShopThisLookCard
-// Dependencies: [19, 17, 8822, 5398, 5776, 21, 4303, 712, 4021, 1236, 12508, 589, 12512, 12514, 9361, 10110, 8818, 12484, 5728, 5748, 4271, 7003, 9474, 4299, 2]
+// Dependencies: [19, 17, 8861, 5437, 5815, 21, 4344, 712, 4062, 1236, 12231, 589, 12571, 12573, 9401, 10151, 8857, 12547, 5767, 5787, 4312, 7042, 9514, 4340, 2]
 // Exports: default
 
-// Module 12507 (ShopThisLookCard)
+// Module 12570 (ShopThisLookCard)
 import QUICK_SWITCHER from "QUICK_SWITCHER";
 import get_ActivityIndicator from "useCardGridLayout";
 import getFetchState from "getFetchState";
@@ -137,29 +137,29 @@ export default function ShopThisLookActionSheet(arg0) {
   let dependencyMap;
   ({ userId, guildId } = arg0);
   const tmp = createCacheKey();
-  let obj = _require(8818);
+  let obj = _require(8857);
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12484)(obj));
-  const tmp2 = analyticsLocations(12484)(obj);
-  analyticsLocations = analyticsLocations(5728)(analyticsLocations(5748).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12547)(obj));
+  const tmp2 = analyticsLocations(12547)(obj);
+  analyticsLocations = analyticsLocations(5767)(analyticsLocations(5787).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = React.useCallback((initialProductSkuId) => {
-    let obj = analyticsLocations(4271);
+    let obj = analyticsLocations(4312);
     obj.hideActionSheet();
-    obj = { initialProductSkuId, analyticsLocations, analyticsSource: analyticsLocations(5748).USER_PROFILE_OVERFLOW_MENU };
-    const result = _undefined(7003).openCollectiblesShopMobile(obj);
+    obj = { initialProductSkuId, analyticsLocations, analyticsSource: analyticsLocations(5787).USER_PROFILE_OVERFLOW_MENU };
+    const result = _undefined(7042).openCollectiblesShopMobile(obj);
   }, items);
   obj = { startExpanded: true, title: null, children: null };
-  const tmp3 = analyticsLocations(5728);
+  const tmp3 = analyticsLocations(5767);
   const intl = _require(1236).intl;
   obj[1] = intl.string(_require(1236).t.xNdRDO);
   const obj1 = { style: tmp.container, children: null };
   const obj2 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.description, children: null };
   const intl2 = _require(1236).intl;
   obj2[3] = intl2.string(_require(1236).t["ws+0Lr"]);
-  const items1 = [callback(_require(4299).Text, obj2), ];
-  const tmp4 = analyticsLocations(9474);
+  const items1 = [callback(_require(4340).Text, obj2), ];
+  const tmp4 = analyticsLocations(9514);
   const items2 = [tmp.itemsContainer, { gap, width: rowWidth }];
   items1[1] = callback(closure_5, {
     style: items2,

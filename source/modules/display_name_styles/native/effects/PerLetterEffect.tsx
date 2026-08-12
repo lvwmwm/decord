@@ -1,10 +1,10 @@
-// Module ID: 9481
-// Function ID: 9482
+// Module ID: 9521
+// Function ID: 9522
 // Name: PerLetterEffect
-// Dependencies: [19, 17, 21, 4303, 9482, 9483, 4299, 2]
+// Dependencies: [19, 17, 21, 4344, 9522, 9523, 4340, 2]
 // Exports: default
 
-// Module 9481 (PerLetterEffect)
+// Module 9521 (PerLetterEffect)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -64,9 +64,9 @@ export default function PerLetterEffect(name) {
     accessibilityLabel = name;
   }
   obj.accessibilityLabel = accessibilityLabel;
-  const items2 = [textStyle, { lineHeight: "r" }];
+  const items2 = [textStyle, { lineHeight: "Array" }];
   obj.style = items2;
   obj.children = memo;
-  obj[1] = jsx(name(4299).Text, {});
+  obj[1] = jsx(name(4340).Text, {});
   return <closure_4 />;
 };

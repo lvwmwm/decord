@@ -1,10 +1,10 @@
-// Module ID: 11643
-// Function ID: 11644
+// Module ID: 11700
+// Function ID: 11701
 // Name: JumpToPresentButton
-// Dependencies: [19, 17, 8617, 4994, 4521, 21, 4303, 712, 500, 4024, 1367, 589, 10774, 1236, 11644, 11645, 7753, 11646, 2]
+// Dependencies: [19, 17, 8656, 5034, 4561, 21, 4344, 712, 500, 4065, 1367, 589, 10827, 1236, 11701, 11702, 7792, 11703, 2]
 // Exports: default
 
-// Module 11643 (JumpToPresentButton)
+// Module 11700 (JumpToPresentButton)
 import "noop";
 import { View } from "memoResult1";
 import updateChatInputContainerHeight from "updateChatInputContainerHeight";
@@ -23,7 +23,7 @@ createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { bottom: "100%", marginBottom: require("Themes").modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING, pointerEvents: "box-none" };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = set.isIOS() ? (() => null) : ((arg0) => {
-  let obj = require(4024) /* map */;
+  let obj = require(4065) /* map */;
   obj = { bottom: null };
   const token = obj.useToken(importDefault(712).modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING);
   obj[0] = callback2(arg0) + token;
@@ -57,11 +57,11 @@ export default function JumpToPresentButton(channelId) {
     }
     return tmp;
   });
-  let obj1 = channelId(10774);
+  let obj1 = channelId(10827);
   const isVoicePanelMounted = obj1.useIsVoicePanelMounted(channelId);
   let tmp5 = screenIndex(1367)("JumpToPresentButton");
-  const isVoicePanelOpen = channelId(10774).useIsVoicePanelOpen(channelId);
-  const obj3 = channelId(10774);
+  const isVoicePanelOpen = channelId(10827).useIsVoicePanelOpen(channelId);
+  const obj3 = channelId(10827);
   const items1 = [reinjectEphemerals];
   const stateFromStores = channelId(589).useStateFromStores(items1, () => null != outer1_7.getMessages(channelId).jumpReturnTargetId);
   if (!tmp7) {
@@ -85,8 +85,8 @@ export default function JumpToPresentButton(channelId) {
     if (tmp5) {
       obj = { accessibilityLabel: null, icon: null, onPress: null };
       obj[0] = stringResult;
-      tmp3Result = tmp3(11644);
-      tmp3Result = tmp3(11645);
+      tmp3Result = tmp3(11701);
+      tmp3Result = tmp3(11702);
       obj[1] = tmp3Result;
       obj[2] = onJumpToPresent;
       let tmp13Result = tmp13(tmp3Result, obj);
@@ -94,11 +94,11 @@ export default function JumpToPresentButton(channelId) {
       obj1 = { accessibilityLabel: null, onPress: null, icon: null, variant: "primary-overlay" };
       obj1[0] = stringResult;
       obj1[1] = onJumpToPresent;
-      obj1[2] = tmp3(11645);
-      tmp13Result = tmp13(tmp6(7753).IconButton, obj1);
+      obj1[2] = tmp3(11702);
+      tmp13Result = tmp13(tmp6(7792).IconButton, obj1);
     }
   } else {
-    obj[1] = tmp13(tmp6(11646).MemoedVoicePanelDismissChatButton, {});
+    obj[1] = tmp13(tmp6(11703).MemoedVoicePanelDismissChatButton, {});
     return tmp13(tmp14, obj);
   }
 };

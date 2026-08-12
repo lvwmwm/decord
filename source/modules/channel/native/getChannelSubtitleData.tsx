@@ -1,10 +1,10 @@
-// Module ID: 15363
-// Function ID: 15364
+// Module ID: 15420
+// Function ID: 15421
 // Name: getChannelSubtitleData
 // Dependencies: [1236, 2]
 // Exports: getChannelSubtitleData
 
-// Module 15363 (getChannelSubtitleData)
+// Module 15420 (getChannelSubtitleData)
 const result = require("set").fileFinishedImporting("modules/channel/native/getChannelSubtitleData.tsx");
 
 export const getChannelSubtitleData = function getChannelSubtitleData(subtitle) {

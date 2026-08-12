@@ -1,10 +1,10 @@
-// Module ID: 8554
-// Function ID: 8555
+// Module ID: 8593
+// Function ID: 8594
 // Name: EnvelopeIcon
-// Dependencies: [19, 21, 712, 4023, 8555, 2]
+// Dependencies: [19, 21, 712, 4064, 8594, 2]
 // Exports: EnvelopeIcon
 
-// Module 8554 (EnvelopeIcon)
+// Module 8593 (EnvelopeIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const EnvelopeIcon = function EnvelopeIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8555) /* registerAsset */;
+  obj[0] = require(8594) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

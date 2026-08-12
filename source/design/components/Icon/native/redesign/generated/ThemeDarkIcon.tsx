@@ -1,10 +1,10 @@
-// Module ID: 10210
-// Function ID: 10211
+// Module ID: 10251
+// Function ID: 10252
 // Name: ThemeDarkIcon
-// Dependencies: [19, 21, 712, 4023, 10211, 2]
+// Dependencies: [19, 21, 712, 4064, 10252, 2]
 // Exports: ThemeDarkIcon
 
-// Module 10210 (ThemeDarkIcon)
+// Module 10251 (ThemeDarkIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ThemeDarkIcon = function ThemeDarkIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10211) /* registerAsset */;
+  obj[0] = require(10252) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

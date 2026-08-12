@@ -1,10 +1,10 @@
-// Module ID: 15089
-// Function ID: 15090
+// Module ID: 15146
+// Function ID: 15147
 // Name: ChatPanelNativeStackNavigator
-// Dependencies: [19, 21, 1500, 4158, 13434, 8576, 2]
+// Dependencies: [19, 21, 1500, 4199, 13491, 8615, 2]
 // Exports: default
 
-// Module 15089 (ChatPanelNativeStackNavigator)
+// Module 15146 (ChatPanelNativeStackNavigator)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

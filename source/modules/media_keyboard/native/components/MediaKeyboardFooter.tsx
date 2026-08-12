@@ -1,9 +1,9 @@
-// Module ID: 10033
-// Function ID: 10034
+// Module ID: 10074
+// Function ID: 10075
 // Name: FOOTER_HEIGHT
-// Dependencies: [19, 17, 21, 4303, 712, 10023, 4299, 1236, 4714, 10034, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 10064, 4340, 1236, 4754, 10075, 2]
 
-// Module 10033 (FOOTER_HEIGHT)
+// Module 10074 (FOOTER_HEIGHT)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -31,7 +31,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardFooter(arg0) {
   let onViewAll;
   ({ disabled, onViewAll } = arg0);
   const tmp = callback3();
-  let obj = importDefault(10023);
+  let obj = importDefault(10064);
   if (obj.useHasReachedEnd()) {
     obj = { style: null, children: null };
     obj[0] = tmp.container;
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardFooter(arg0) {
     obj[1] = tmp.label;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[2] = intl.string(require(1236) /* getSystemLocale */.t.mKSwAW);
-    const items = [callback(require(4299) /* Text */.Text, obj), , ];
+    const items = [callback(require(4340) /* Text */.Text, obj), , ];
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.buttonWrapper;
     const obj2 = { variant: "primary", size: "sm", onPress: null, text: null, disabled: null };
@@ -47,10 +47,10 @@ const memoResult = importAllResult.memo(function MediaKeyboardFooter(arg0) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t.ZT24In);
     obj2[4] = disabled;
-    obj1[1] = callback(require(4714) /* Button */.Button, obj2);
+    obj1[1] = callback(require(4754) /* Button */.Button, obj2);
     items[1] = callback(closure_3, obj1);
     const obj3 = { source: null };
-    obj3[0] = importDefault(10034);
+    obj3[0] = importDefault(10075);
     items[2] = callback(closure_4, obj3);
     obj[1] = items;
     let tmp6 = callback2(closure_3, obj);

@@ -1,10 +1,10 @@
-// Module ID: 8662
-// Function ID: 8663
+// Module ID: 8701
+// Function ID: 8702
 // Name: Tooltip
-// Dependencies: [32, 19, 17, 21, 4303, 712, 4042, 4024, 8663, 4713, 4299, 2]
+// Dependencies: [32, 19, 17, 21, 4344, 712, 4083, 4065, 8702, 4753, 4340, 2]
 // Exports: Tooltip
 
-// Module 8662 (Tooltip)
+// Module 8701 (Tooltip)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { Pressable } from "get ActivityIndicator";

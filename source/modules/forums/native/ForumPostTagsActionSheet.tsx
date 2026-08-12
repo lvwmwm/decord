@@ -1,10 +1,10 @@
-// Module ID: 10195
-// Function ID: 10196
+// Module ID: 10236
+// Function ID: 10237
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 5924, 21, 4303, 1236, 5893, 5764, 5396, 10196, 4714, 8412, 4271, 2]
+// Dependencies: [32, 19, 17, 5963, 21, 4344, 1236, 5932, 5803, 5435, 10237, 4754, 8451, 4312, 2]
 // Exports: default
 
-// Module 10195 (ForumPostTagsActionSheet)
+// Module 10236 (ForumPostTagsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -51,7 +51,7 @@ export default function ForumPostTagsActionSheet(thread) {
     }
   }
   const tmp3 = callback3();
-  let obj = thread(5893);
+  let obj = thread(5932);
   let appliedTags = obj.useAppliedTags(thread);
   if (null != tags) {
     appliedTags = tags;
@@ -61,7 +61,7 @@ export default function ForumPostTagsActionSheet(thread) {
   closure_5 = tmp9[1];
   closure_6 = first.size >= closure_6;
   let set = new Set(appliedTags);
-  const visibleForumTags = thread(5893).useVisibleForumTags(thread.parentChannel);
+  const visibleForumTags = thread(5932).useVisibleForumTags(thread.parentChannel);
   obj = {
     onDismiss() {
       let tmp;
@@ -77,8 +77,8 @@ export default function ForumPostTagsActionSheet(thread) {
   const intl2 = tmp4(1236).intl;
   obj[1] = intl2.string(thread(1236).t["+HS9+m"]);
   obj[2] = tmp3.subtitle;
-  obj[1] = toggleTag(thread(5396).BottomSheetTitleHeader, obj);
-  const tmp4Result = thread(5893);
+  obj[1] = toggleTag(thread(5435).BottomSheetTitleHeader, obj);
+  const tmp4Result = thread(5932);
   let items = [
     toggleTag(closure_5, {
       style: tmp3.tagsContainer,
@@ -117,8 +117,8 @@ export default function ForumPostTagsActionSheet(thread) {
     }
     flag(outer1_2[13]).hideActionSheet();
   };
-  obj2[1] = toggleTag(thread(4714).Button, obj3);
+  obj2[1] = toggleTag(thread(4754).Button, obj3);
   items[1] = toggleTag(closure_5, obj2);
   obj[2] = items;
-  return callback2(thread(5764).ActionSheet, obj);
+  return callback2(thread(5803).ActionSheet, obj);
 };

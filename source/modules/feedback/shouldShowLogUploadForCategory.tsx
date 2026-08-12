@@ -1,10 +1,10 @@
-// Module ID: 16440
-// Function ID: 16441
+// Module ID: 16497
+// Function ID: 16498
 // Name: shouldShowLogUploadForCategory
-// Dependencies: [11092, 2]
+// Dependencies: [11145, 2]
 // Exports: shouldShowLogUploadForCategory
 
-// Module 16440 (shouldShowLogUploadForCategory)
+// Module 16497 (shouldShowLogUploadForCategory)
 import { FeedbackRating } from "FeedbackRating";
 
 let closure_1 = {};

@@ -1,10 +1,10 @@
-// Module ID: 6408
-// Function ID: 6409
+// Module ID: 6447
+// Function ID: 6448
 // Name: GiftBagFlyingSpotIllustration
-// Dependencies: [21, 5268, 6409, 2]
+// Dependencies: [21, 5307, 6448, 2]
 // Exports: GiftBagFlyingSpotIllustration
 
-// Module 6408 (GiftBagFlyingSpotIllustration)
+// Module 6447 (GiftBagFlyingSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GiftBagFlyingSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GiftBagFlyingSpotIllustration = function GiftBagFlyingSpotIllustrat
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6409);
+  obj[0] = importDefault(6448);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GiftBagFlyingSpotIllustration = function GiftBagFlyingSpotIllustrat
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
 };

@@ -1,10 +1,10 @@
-// Module ID: 12209
-// Function ID: 12210
+// Module ID: 12272
+// Function ID: 12273
 // Name: useGuildProfileGameProfilesExperiment
 // Dependencies: [1471, 2]
 // Exports: useGuildProfileGameProfilesExperiment
 
-// Module 12209 (useGuildProfileGameProfilesExperiment)
+// Module 12272 (useGuildProfileGameProfilesExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

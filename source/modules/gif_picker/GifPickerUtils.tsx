@@ -1,10 +1,10 @@
-// Module ID: 9946
-// Function ID: 9947
+// Module ID: 9987
+// Function ID: 9988
 // Name: filterFavoriteGIFsByQuery
 // Dependencies: [2]
 // Exports: filterFavoriteGIFsByQuery
 
-// Module 9946 (filterFavoriteGIFsByQuery)
+// Module 9987 (filterFavoriteGIFsByQuery)
 const result = require("set").fileFinishedImporting("modules/gif_picker/GifPickerUtils.tsx");
 
 export const filterFavoriteGIFsByQuery = function filterFavoriteGIFsByQuery(favorites, first2) {

@@ -1,21 +1,21 @@
-// Module ID: 12309
-// Function ID: 12310
+// Module ID: 12372
+// Function ID: 12373
 // Name: n
-// Dependencies: [4713, 2]
+// Dependencies: [4753, 2]
 // Exports: TYPING_ENTERING, TYPING_EXITING
 
-// Module 12309 (n)
+// Module 12372 (n)
 let obj = { damping: 35, stiffness: 275, mass: 1, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 const fn = function n() {
   let obj = { initialValues: { transform: items, opacity: 0 }, animations: null };
   items = [{ scale: 0 }];
   obj = { transform: null, opacity: null };
   obj = { scale: null };
-  obj[0] = require(4713) /* CONFIG_NEVER_ANIMATE */.withSpring(1, obj);
+  obj[0] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(1, obj);
   const items1 = [obj];
   obj[0] = items1;
-  const obj4 = require(4713) /* CONFIG_NEVER_ANIMATE */;
-  obj[1] = require(4713) /* CONFIG_NEVER_ANIMATE */.withSpring(1, obj);
+  const obj4 = require(4753) /* CONFIG_NEVER_ANIMATE */;
+  obj[1] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(1, obj);
   obj[1] = obj;
   return obj;
 };
@@ -28,11 +28,11 @@ const fn2 = function t() {
   items = [{ scale: 1 }];
   obj = { transform: null, opacity: null };
   obj = { scale: null };
-  obj[0] = require(4713) /* CONFIG_NEVER_ANIMATE */.withSpring(0, obj);
+  obj[0] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(0, obj);
   const items1 = [obj];
   obj[0] = items1;
-  const obj4 = require(4713) /* CONFIG_NEVER_ANIMATE */;
-  obj[1] = require(4713) /* CONFIG_NEVER_ANIMATE */.withSpring(0, obj);
+  const obj4 = require(4753) /* CONFIG_NEVER_ANIMATE */;
+  obj[1] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(0, obj);
   obj[1] = obj;
   return obj;
 };

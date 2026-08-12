@@ -1,9 +1,9 @@
-// Module ID: 4208
-// Function ID: 4209
+// Module ID: 4249
+// Function ID: 4250
 // Name: prototype
 // Dependencies: [676, 2]
 
-// Module 4208 (prototype)
+// Module 4249 (prototype)
 import { AbortCodes } from "ME";
 
 const prototype = function ClientOutdatedAcceptGiftError(arg0) {

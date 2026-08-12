@@ -1,10 +1,10 @@
-// Module ID: 6092
-// Function ID: 6093
+// Module ID: 6131
+// Function ID: 6132
 // Name: AvatarDecorationsAbstractUI
-// Dependencies: [21, 5268, 6093, 2]
+// Dependencies: [21, 5307, 6132, 2]
 // Exports: AvatarDecorationsAbstractUI
 
-// Module 6092 (AvatarDecorationsAbstractUI)
+// Module 6131 (AvatarDecorationsAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarDecorationsAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarDecorationsAbstractUI = function AvatarDecorationsAbstractUI(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6093);
+  obj[0] = importDefault(6132);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarDecorationsAbstractUI = function AvatarDecorationsAbstractUI(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
 };

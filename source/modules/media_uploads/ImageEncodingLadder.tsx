@@ -1,9 +1,9 @@
-// Module ID: 4885
-// Function ID: 4886
+// Module ID: 4925
+// Function ID: 4926
 // Name: getAdaptiveImageCompressionQuality
 // Dependencies: [676, 2]
 
-// Module 4885 (getAdaptiveImageCompressionQuality)
+// Module 4925 (getAdaptiveImageCompressionQuality)
 import { CompressionQuality } from "ME";
 
 function getAdaptiveImageCompressionQuality(outer1_13, ADAPTIVE_COMPRESSION_CONFIG) {

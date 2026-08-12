@@ -1,10 +1,10 @@
-// Module ID: 9921
-// Function ID: 9922
+// Module ID: 9962
+// Function ID: 9963
 // Name: AutocompleteFormDivider
-// Dependencies: [19, 17, 1395, 1980, 3957, 1922, 676, 9922, 4738, 21, 4303, 712, 4494, 5159, 4148, 7411, 2]
+// Dependencies: [19, 17, 1395, 1980, 3998, 1922, 676, 9963, 4778, 21, 4344, 712, 4534, 5199, 4189, 7450, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 9921 (AutocompleteFormDivider)
+// Module 9962 (AutocompleteFormDivider)
 import "noop";
 import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord";
 import comparator from "comparator";
@@ -27,7 +27,7 @@ let unpackModuleId;
 const require = arg1;
 function AutocompleteFormDivider() {
   const tmp = createCacheKey();
-  return jsx(importDefault(7411), { style: createCacheKey().itemDivider });
+  return jsx(importDefault(7450), { style: createCacheKey().itemDivider });
 }
 ({ AutoCompleteResultTypes: error, WHITESPACE_RE: metroImportAll } = ME);
 ({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: c9, AUTOCOMPLETE_ROW_HEIGHT: c10 } = AUTOCOMPLETE_ROW_HEIGHT);
@@ -64,8 +64,8 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
       let combined = "" + tmp34 + user.tag;
     } else {
       const _HermesInternal8 = HermesInternal;
-      combined = "" + tmp34 + importDefault(4148).getUserTag(user);
-      const tmp32Result = importDefault(4148);
+      combined = "" + tmp34 + importDefault(4189).getUserTag(user);
+      const tmp32Result = importDefault(4189);
     }
     return combined;
   } else if (tmp.GLOBAL === type) {
@@ -76,9 +76,9 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
   } else if (tmp.CHANNEL === type) {
     channel = type.channel;
     if (channel.isThread()) {
-      const obj3 = require(4494) /* computeChannelName */;
+      const obj3 = require(4534) /* computeChannelName */;
       const _HermesInternal6 = HermesInternal;
-      return "#\"" + obj3.escapeChannelName(require(4494) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, markAllUserIdListsStale)) + "\"";
+      return "#\"" + obj3.escapeChannelName(require(4534) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, markAllUserIdListsStale)) + "\"";
     } else {
       channel2 = type.channel;
       const guildId = channel2.getGuildId();
@@ -90,15 +90,15 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
             name = tmp16.name;
           }
           if (name == null) {
-            name = require(4494) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, markAllUserIdListsStale);
-            const obj2 = require(4494) /* computeChannelName */;
+            name = require(4534) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, markAllUserIdListsStale);
+            const obj2 = require(4534) /* computeChannelName */;
           }
           const _HermesInternal5 = HermesInternal;
           return "" + closure_11 + name;
         }
       }
       const _HermesInternal4 = HermesInternal;
-      return "" + closure_11 + require(4494) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, markAllUserIdListsStale);
+      return "" + closure_11 + require(4534) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, markAllUserIdListsStale);
     }
   } else if (tmp.GAME_MENTION === type) {
     const _HermesInternal3 = HermesInternal;
@@ -126,8 +126,8 @@ export const getMentionTextWithUser = function getMentionTextWithUser(messageCha
     let combined = "" + tmp3 + user.tag;
   } else {
     const _HermesInternal = HermesInternal;
-    combined = "" + tmp3 + importDefault(4148).getUserTag(user);
-    const tmpResult = importDefault(4148);
+    combined = "" + tmp3 + importDefault(4189).getUserTag(user);
+    const tmpResult = importDefault(4189);
   }
   return combined;
 };

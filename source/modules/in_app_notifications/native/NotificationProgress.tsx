@@ -1,10 +1,10 @@
-// Module ID: 9861
-// Function ID: 9862
+// Module ID: 9902
+// Function ID: 9903
 // Name: Progress
-// Dependencies: [32, 19, 17, 21, 4303, 712, 4042, 9821, 2]
+// Dependencies: [32, 19, 17, 21, 4344, 712, 4083, 9862, 2]
 // Exports: default
 
-// Module 9861 (Progress)
+// Module 9902 (Progress)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -21,7 +21,7 @@ function Progress(percent) {
   first = tmp2[0];
   dependencyMap = tmp2[1];
   callback = React.useCallback((nativeEvent) => callback(nativeEvent.nativeEvent.layout.width), []);
-  let obj = percent(4042);
+  let obj = percent(4083);
   const fn = function n() {
     let obj = percent;
     let value = percent;
@@ -45,7 +45,7 @@ function Progress(percent) {
   items[1] = { opacity: num };
   obj[1] = items;
   const items1 = [tmp.progress, animatedStyle];
-  obj[2] = jsx(first(4042).View, { style: items1 });
+  obj[2] = jsx(first(4083).View, { style: items1 });
   return <View onLayout={callback} style={null}>{null}</View>;
 }
 function RedesignProgress(percent) {
@@ -60,7 +60,7 @@ function RedesignProgress(percent) {
   first = tmp2[0];
   dependencyMap = tmp2[1];
   callback = React.useCallback((nativeEvent) => callback(nativeEvent.nativeEvent.layout.width), []);
-  let obj = percent(4042);
+  let obj = percent(4083);
   const fn = function n() {
     let obj = percent;
     let value = percent;
@@ -83,10 +83,10 @@ function RedesignProgress(percent) {
   }
   items[1] = { opacity: num };
   obj[1] = items;
-  obj = { style: tmp.progressTrack, children: tmp7(first(4042).View, { style: items1 }) };
+  obj = { style: tmp.progressTrack, children: tmp7(first(4083).View, { style: items1 }) };
   items1 = [tmp.progressRedesign, "ALERT" === type ? tmp.progressBarWarning : tmp.progressBarBrand, animatedStyle];
-  obj[2] = <View style={tmp.progressTrack}>{tmp7(first(4042).View, { style: items1 })}</View>;
-  return <View style={tmp.progressTrack}>{tmp7(first(4042).View, { style: items1 })}</View>;
+  obj[2] = <View style={tmp.progressTrack}>{tmp7(first(4083).View, { style: items1 })}</View>;
+  return <View style={tmp.progressTrack}>{tmp7(first(4083).View, { style: items1 })}</View>;
 }
 createCacheKey = { progress: null, progressRedesign: null, progressBarBrand: null, progressBarWarning: null, progressTrack: null, progressContainerTop: null, progressContainerBottom: null };
 createCacheKey = { borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.BACKGROUND_BRAND, height: 4 };
@@ -110,7 +110,7 @@ export default function NotificationProgress(percent) {
   let type;
   percent = percent.percent;
   ({ canExpand, type } = percent);
-  let obj = require(9821) /* context */;
+  let obj = require(9862) /* context */;
   const inAppNotificationContext = obj.useInAppNotificationContext();
   if (canExpand) {
     obj = { percent: null, hideProgress: null, type: null };

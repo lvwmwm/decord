@@ -1,10 +1,10 @@
-// Module ID: 15003
-// Function ID: 15004
+// Module ID: 15061
+// Function ID: 15062
 // Name: MFAOptionScreen
-// Dependencies: [17, 21, 8478, 15004, 5328, 4712, 4299, 15005, 8508, 2]
+// Dependencies: [17, 21, 8517, 15062, 5367, 4752, 4340, 15063, 8547, 2]
 // Exports: default
 
-// Module 15003 (MFAOptionScreen)
+// Module 15061 (MFAOptionScreen)
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
@@ -26,8 +26,8 @@ export default function MFAOptionScreen(arg0) {
   let subtitle;
   ({ headerImage, subtitle, screenProps, error } = arg0);
   ({ headerText, input, submit, mfaMethod, content } = arg0);
-  const tmp3 = importDefault(8478)();
-  let obj = importDefault(15004);
+  const tmp3 = importDefault(8517)();
+  let obj = importDefault(15062);
   const screenStyles = obj.useScreenStyles(tmp3);
   const first = screenProps.mfaChallenge.methods[0];
   let type;
@@ -40,40 +40,40 @@ export default function MFAOptionScreen(arg0) {
   if (tmp9) {
     tmp9 = headerImage;
   }
-  const items = [tmp9, callback(require(4299) /* Text */.Text, { variant: "heading-xl/extrabold", style: screenStyles.mfaContainerHeaderText, children: headerText }), , ];
+  const items = [tmp9, callback(require(4340) /* Text */.Text, { variant: "heading-xl/extrabold", style: screenStyles.mfaContainerHeaderText, children: headerText }), , ];
   let tmp10Result = null != subtitle;
   if (tmp10Result) {
     const obj2 = { variant: "heading-sm/normal", color: "text-default", children: null };
     obj2[2] = subtitle;
-    tmp10Result = tmp10(tmp8(4299).Text, obj2);
+    tmp10Result = tmp10(tmp8(4340).Text, obj2);
   }
   items[2] = tmp10Result;
   tmp10Result = null != error;
   if (tmp10Result) {
     const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: null };
     obj3[2] = error;
-    tmp10Result = tmp10(tmp8(4299).Text, obj3);
+    tmp10Result = tmp10(tmp8(4340).Text, obj3);
   }
   let tmp10Result1 = type === mfaMethod;
   const obj4 = { children: null };
   items[3] = tmp10Result;
   obj[2] = items;
-  const items1 = [closure_5(require(4712) /* Stack */.Stack, obj), input];
+  const items1 = [closure_5(require(4752) /* Stack */.Stack, obj), input];
   obj4[0] = items1;
-  const items2 = [closure_5(require(4712) /* Stack */.Stack, obj4), content, ];
+  const items2 = [closure_5(require(4752) /* Stack */.Stack, obj4), content, ];
   const obj5 = { style: screenStyles.submit, children: null };
   const items3 = [submit, ];
   if (tmp10Result1) {
     const obj6 = { props: null };
     obj6[0] = screenProps;
-    tmp10Result1 = tmp10(tmp(15005), obj6);
+    tmp10Result1 = tmp10(tmp(15063), obj6);
   }
   items3[1] = tmp10Result1;
   obj5[1] = items3;
-  items2[2] = closure_5(require(4712) /* Stack */.Stack, obj5);
+  items2[2] = closure_5(require(4752) /* Stack */.Stack, obj5);
   obj[3] = items2;
-  const tmp7Result = closure_5(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
-  const children = [callback(importDefault(8508), { backgroundImageCover: false }), ];
+  const tmp7Result = closure_5(require(5367) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  const children = [callback(importDefault(8547), { backgroundImageCover: false }), ];
   let tmp10Result2 = tmp7Result;
   if (tmp3) {
     const obj7 = { keyboardShouldPersistTaps: "handled", children: null };

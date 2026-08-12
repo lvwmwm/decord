@@ -1,10 +1,10 @@
-// Module ID: 11388
-// Function ID: 11389
+// Module ID: 11444
+// Function ID: 11445
 // Name: getUsers
-// Dependencies: [19, 5223, 1395, 1980, 1990, 1983, 3957, 1922, 4738, 12, 1370, 4494, 5159, 1954, 7143, 2]
+// Dependencies: [19, 5262, 1395, 1980, 1990, 1983, 3998, 1922, 4778, 12, 1370, 4534, 5199, 1954, 7182, 2]
 // Exports: getRoles, parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 11388 (getUsers)
+// Module 11444 (getUsers)
 import noop from "noop";
 import rebuild from "rebuild";
 import { isGuildSelectableChannelType as closure_5 } from "createChannelRecord";
@@ -45,14 +45,14 @@ function getChannels(getGuildId, arr) {
     tmp2 = null == arr || arr.includes(getGuildId.type);
     return guildId(12)(items).map((id) => {
       const obj = { id: id.id, text: null };
-      obj[1] = arr(4494).computeChannelName(id, mergeGuildAvatar, markAllUserIdListsStale);
+      obj[1] = arr(4534).computeChannelName(id, mergeGuildAvatar, markAllUserIdListsStale);
       return obj;
     });
   } else {
     const dependencyMap = textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId);
     const tmp9 = guildId(12);
-    const tmp9Result = guildId(12)(_require(5159).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
-    const combined = guildId(12)(_require(5159).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).flatMap((arg0) => outer1_6.getChannels(guildId)[arg0].map((channel) => channel.channel)).concat(rebuild.computeAllActiveJoinedThreads(guildId));
+    const tmp9Result = guildId(12)(_require(5199).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
+    const combined = guildId(12)(_require(5199).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).flatMap((arg0) => outer1_6.getChannels(guildId)[arg0].map((channel) => channel.channel)).concat(rebuild.computeAllActiveJoinedThreads(guildId));
     const found = combined.filter((type) => {
       let hasItem = null == closure_0;
       if (!hasItem) {
@@ -68,13 +68,13 @@ function getChannels(getGuildId, arr) {
           name = tmp7.name;
         }
         if (name == null) {
-          name = arr(4494).computeChannelName(id, outer1_10, outer1_9);
-          const obj3 = arr(4494);
+          name = arr(4534).computeChannelName(id, outer1_10, outer1_9);
+          const obj3 = arr(4534);
         }
         let channelName = name;
       } else {
-        channelName = arr(4494).computeChannelName(id, outer1_10, outer1_9);
-        const obj2 = arr(4494);
+        channelName = arr(4534).computeChannelName(id, outer1_10, outer1_9);
+        const obj2 = arr(4534);
       }
       obj[1] = channelName;
       return obj;
@@ -283,7 +283,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
   } else {
     let obj = {};
     const options = activeCommand.options;
-    const parserState = require(7143) /* rebuild */.createParserState(channel);
+    const parserState = require(7182) /* rebuild */.createParserState(channel);
     const iter = options[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
@@ -306,7 +306,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
                 obj = { type: "text", text: null };
                 let tmp10 = importDefault;
                 let tmp11 = tmp24;
-                let obj2 = importDefault(7143);
+                let obj2 = importDefault(7182);
                 let tmp12 = tmp5;
                 obj[1] = obj2.parse(channel, tmp6[0].text, parserState).content;
                 let items = [obj];

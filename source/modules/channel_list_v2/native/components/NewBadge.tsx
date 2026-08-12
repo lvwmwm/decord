@@ -1,10 +1,10 @@
-// Module ID: 11671
-// Function ID: 11672
+// Module ID: 11728
+// Function ID: 11729
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4303, 500, 712, 1363, 8398, 4239, 4299, 1236, 2]
+// Dependencies: [19, 17, 21, 4344, 500, 712, 1363, 8437, 4280, 4340, 1236, 2]
 // Exports: default
 
-// Module 11671 (NewBadge)
+// Module 11728 (NewBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -32,8 +32,8 @@ let closure_5 = createCacheKey.createStyles((arg0, arg1) => {
 const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
 export default function NewBadge() {
-  const tmp2 = importDefault(8398)();
-  const tmp3 = importDefault(4239)();
+  const tmp2 = importDefault(8437)();
+  const tmp3 = importDefault(4280)();
   const tmp4 = callback(tmp2, tmp3);
   let obj = { style: tmp4.base, children: null };
   obj = { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null };
@@ -45,6 +45,6 @@ export default function NewBadge() {
   obj[2] = str;
   const intl = tmp7(1236).intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
-  obj[1] = jsx(require(4299) /* Text */.Text, { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null });
+  obj[1] = jsx(require(4340) /* Text */.Text, { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null });
   return <View variant="text-xxs/bold" style={tmp4.text} color={null}>{null}</View>;
 };

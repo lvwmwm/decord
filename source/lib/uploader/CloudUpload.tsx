@@ -1,9 +1,9 @@
-// Module ID: 4850
-// Function ID: 4851
+// Module ID: 4890
+// Function ID: 4891
 // Name: set
-// Dependencies: [109, 5, 32, 4302, 1304, 4395, 676, 3, 530, 4851, 4858, 687, 584, 12, 1473, 4860, 4891, 4892, 4896, 4897, 1208, 4859, 4852, 4898, 4899, 2007, 698, 2]
+// Dependencies: [109, 5, 32, 4343, 1304, 4435, 676, 3, 530, 4891, 4898, 687, 584, 12, 1473, 4900, 4931, 4932, 4936, 4937, 1208, 4899, 4892, 4938, 4939, 2007, 698, 2]
 
-// Module 4850 (set)
+// Module 4890 (set)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import _slicedToArray from "_slicedToArray";
@@ -299,7 +299,7 @@ prototype["parseRangeHeader"] = function parseRangeHeader(str) {
   return tmp2;
 };
 prototype["retryOpts"] = function retryOpts() {
-  if (this.item.platform === require(4851) /* cancel */.UploadPlatform.REACT_NATIVE) {
+  if (this.item.platform === require(4891) /* cancel */.UploadPlatform.REACT_NATIVE) {
     let obj = { timeout: null, backoff: null, retries: 12 };
     obj[0] = importDefault(687).Millis.HOUR;
     let tmp8 = importDefault(584);
@@ -316,7 +316,7 @@ prototype["retryOpts"] = function retryOpts() {
 };
 prototype["createAttachmentUrlRetryOpts"] = function createAttachmentUrlRetryOpts() {
   const self = this;
-  if (this.item.platform === require(4851) /* cancel */.UploadPlatform.REACT_NATIVE) {
+  if (this.item.platform === require(4891) /* cancel */.UploadPlatform.REACT_NATIVE) {
     let obj = { timeout: null, backoff: null, retries: 8 };
     obj = { response: null, deadline: null };
     obj[0] = 30 * importDefault(687).Millis.SECOND;
@@ -335,7 +335,7 @@ prototype["createAttachmentUrlRetryOpts"] = function createAttachmentUrlRetryOpt
 prototype["supportsResume"] = function supportsResume() {
   let _libdiscoreEnabled = this._libdiscoreEnabled;
   if (!_libdiscoreEnabled) {
-    _libdiscoreEnabled = this.item.platform !== require(4851) /* cancel */.UploadPlatform.REACT_NATIVE;
+    _libdiscoreEnabled = this.item.platform !== require(4891) /* cancel */.UploadPlatform.REACT_NATIVE;
   }
   return _libdiscoreEnabled;
 };
@@ -1902,7 +1902,7 @@ prototype["delete"] = function delete() {
             obj[0] = arg1;
             return obj;
           } else if (null != v0.uploadedFilename) {
-            let obj1 = v0(4892);
+            let obj1 = v0(4932);
             const uploadTarget = obj1.getUploadTarget(tmp18.item.target);
             let dependencyMap = 1;
             const deleteUploadURL = uploadTarget.getDeleteUploadURL(tmp18.uploadedFilename);

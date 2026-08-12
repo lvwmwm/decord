@@ -1,10 +1,10 @@
-// Module ID: 7154
-// Function ID: 7155
+// Module ID: 7193
+// Function ID: 7194
 // Name: ClickArea
-// Dependencies: [19, 676, 698, 7155, 7156, 2]
+// Dependencies: [19, 676, 698, 7194, 7195, 2]
 // Exports: trackAppEmbedClick, trackAppEmbedLinkSent, trackAppEmbedViewed, useTrackAppEmbedViewed
 
-// Module 7154 (ClickArea)
+// Module 7193 (ClickArea)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 
@@ -36,10 +36,10 @@ export const trackAppEmbedViewed = function trackAppEmbedViewed(arg0) {
   importDefault(698).track(AnalyticEvents.APP_EMBED_VIEWED, { application_id: appId, link_type: linkType, referrer_id: referrerId, custom_id: customId, guild_id: guildId, channel_id: channelId, message_id: messageId, app_embed_state: appEmbedState });
 };
 export const useTrackAppEmbedViewed = function useTrackAppEmbedViewed(id) {
-  _require = _require(7155).trackingConfigWithDefaults(id);
+  _require = _require(7194).trackingConfigWithDefaults(id);
   let closure_1 = React.useRef(false);
-  let obj = _require(7155);
-  return _require(7156).useIsVisible((arg0) => {
+  let obj = _require(7194);
+  return _require(7195).useIsVisible((arg0) => {
     let activityCustomId;
     let appEmbedState;
     let channelId;

@@ -1,10 +1,10 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11749
+// Function ID: 11750
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 32, 19, 17, 11687, 11680, 21, 4303, 589, 4203, 7978, 1236, 7987, 7986, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 11744, 11737, 21, 4344, 589, 4244, 8017, 1236, 8026, 8025, 4754, 2]
 // Exports: default
 
-// Module 11692 (GuildDirectoryEditDescriptionTemplate)
+// Module 11749 (GuildDirectoryEditDescriptionTemplate)
 import closure_3 from "DirectoryEntryTypes";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

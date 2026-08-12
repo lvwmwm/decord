@@ -1,9 +1,9 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 13044
+// Function ID: 13045
 // Name: isLatest
-// Dependencies: [3958, 4315, 4523, 11, 2]
+// Dependencies: [3999, 4356, 4563, 11, 2]
 
-// Module 12985 (isLatest)
+// Module 13044 (isLatest)
 import hasFlag from "hasFlag";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 
@@ -61,8 +61,8 @@ prototype["messageRecord"] = function messageRecord(arg0) {
     tmp2 = value.message instanceof hasFlag;
   }
   if (!tmp2) {
-    value.message = require(4523) /* createMinimalMessageRecord */.createMessageRecord(value.message);
-    const obj = require(4523) /* createMinimalMessageRecord */;
+    value.message = require(4563) /* createMinimalMessageRecord */.createMessageRecord(value.message);
+    const obj = require(4563) /* createMinimalMessageRecord */;
   }
   let message;
   if (value != null) {
@@ -129,7 +129,7 @@ prototype["update"] = function update(id) {
         }
       }
       if (id === id.id) {
-        let obj = require(4523) /* createMinimalMessageRecord */;
+        let obj = require(4563) /* createMinimalMessageRecord */;
         if (tmp3) {
           let updateMessageRecordResult = obj.updateMessageRecord(merged.message, id);
         } else {

@@ -1,9 +1,9 @@
-// Module ID: 15703
-// Function ID: 15704
+// Module ID: 15759
+// Function ID: 15760
 // Name: items
-// Dependencies: [32, 19, 17, 1218, 4224, 1990, 1983, 1910, 3948, 1922, 9028, 676, 21, 7309, 4303, 712, 1499, 9705, 4493, 4148, 1236, 9700, 1628, 589, 5885, 9003, 8604, 15704, 6010, 9057, 5232, 9027, 11, 1351, 5994, 7747, 1297, 8833, 5714, 2]
+// Dependencies: [32, 19, 17, 1218, 4265, 1990, 1983, 1910, 3989, 1922, 9067, 676, 21, 7348, 4344, 712, 1499, 9745, 4533, 4189, 1236, 9740, 1628, 589, 5924, 9042, 8643, 15760, 6049, 9096, 5271, 9066, 11, 1351, 6033, 7786, 1297, 8872, 5753, 2]
 
-// Module 15703 (items)
+// Module 15759 (items)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import importAllResult from "nameFromUser";
 import { View } from "RolePill";
@@ -58,11 +58,11 @@ let closure_20 = importAllResult.memo((guild) => {
     let formatToPlainStringResult;
     if (found.length > 0) {
       user = user.getUser(guildMember.userId);
-      let obj1 = guildMember(4493);
+      let obj1 = guildMember(4533);
       let str = obj1.getNickname(guild.id, undefined, user);
       if (str == null) {
-        str = tmp9(4148).getGlobalName(user);
-        const tmp9Result = tmp9(4148);
+        str = tmp9(4189).getGlobalName(user);
+        const tmp9Result = tmp9(4189);
       }
       if (str == null) {
         let username;
@@ -101,7 +101,7 @@ let closure_20 = importAllResult.memo((guild) => {
     };
     obj[7] = start;
     obj[8] = end;
-    return closure_15(guildMember(9700), obj);
+    return closure_15(guildMember(9740), obj);
   }
   tmp = callback();
 });
@@ -292,12 +292,12 @@ const memoResult = importAllResult.memo(function GuildSettingsModalMembers(guild
           children(ref) {
             const merged = Object.assign(ref, Object.create(null));
             const obj = { source: null, accessibilityLabel: null, ref: null };
-            obj[0] = callback2(9057);
+            obj[0] = callback2(9096);
             const intl = callback(1236).intl;
             obj[1] = intl.string(callback(1236).t.ogxXGq);
             obj[2] = ref.ref;
             const merged1 = Object.assign(merged);
-            return callback3(callback(6010).HeaderActionButton, obj);
+            return callback3(callback(6049).HeaderActionButton, obj);
           }
         };
         return outer1_15(outer1_0(outer1_2[26]).ContextMenu, obj);

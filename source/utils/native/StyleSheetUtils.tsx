@@ -1,9 +1,9 @@
-// Module ID: 4847
-// Function ID: 4848
+// Module ID: 4887
+// Function ID: 4888
 // Name: getStyleProp
 // Dependencies: [2]
 
-// Module 4847 (getStyleProp)
+// Module 4887 (getStyleProp)
 function getStyleProp(style, borderRadius) {
   if (null != borderRadius) {
     if ("" !== borderRadius) {

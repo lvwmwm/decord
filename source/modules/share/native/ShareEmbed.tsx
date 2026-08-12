@@ -1,10 +1,10 @@
-// Module ID: 13261
-// Function ID: 13262
+// Module ID: 13318
+// Function ID: 13319
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 4303, 712, 5823, 4299, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 5862, 4340, 2]
 // Exports: default
 
-// Module 13261 (ShareEmbed)
+// Module 13318 (ShareEmbed)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

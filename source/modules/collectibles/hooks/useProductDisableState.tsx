@@ -1,10 +1,10 @@
-// Module ID: 9573
-// Function ID: 9574
+// Module ID: 9613
+// Function ID: 9614
 // Name: useProductDisableState
-// Dependencies: [3972, 589, 679, 1236, 2]
+// Dependencies: [4013, 589, 679, 1236, 2]
 // Exports: useProductDisableState
 
-// Module 9573 (useProductDisableState)
+// Module 9613 (useProductDisableState)
 import reset from "reset";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 10454
-// Function ID: 10455
+// Module ID: 10495
+// Function ID: 10496
 // Name: useSubscribeMissingActivities
-// Dependencies: [32, 19, 10455, 4390, 589, 10457, 2]
+// Dependencies: [32, 19, 10496, 4430, 589, 10498, 2]
 // Exports: default
 
-// Module 10454 (useSubscribeMissingActivities)
+// Module 10495 (useSubscribeMissingActivities)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";

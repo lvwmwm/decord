@@ -1,9 +1,9 @@
-// Module ID: 6022
-// Function ID: 6023
+// Module ID: 6061
+// Function ID: 6062
 // Name: set
 // Dependencies: [589, 709, 2]
 
-// Module 6022 (set)
+// Module 6061 (set)
 import { Store } from "initialize";
 import set from "set";
 

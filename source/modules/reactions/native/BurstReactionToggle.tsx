@@ -1,21 +1,21 @@
-// Module ID: 8657
-// Function ID: 8658
+// Module ID: 8696
+// Function ID: 8697
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4295, 1388, 21, 4042, 589, 4024, 712, 4304, 4713, 4303, 8658, 1236, 7703, 2]
+// Dependencies: [19, 17, 4336, 1388, 21, 4083, 589, 4065, 712, 4345, 4753, 4344, 8697, 1236, 7742, 2]
 // Exports: default
 
-// Module 8657 (BurstReactionToggle)
+// Module 8696 (BurstReactionToggle)
 import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
-import { Easing } from "module_4042";
+import { Easing } from "module_4083";
 import createCacheKey from "createCacheKey";
 
 const require = arg1;
 let obj = { duration: 100, easing: null };
-obj[1] = Easing.out(require("module_4042").Easing.quad);
+obj[1] = Easing.out(require("module_4083").Easing.quad);
 let closure_9 = { stiffness: 750, mass: 2.5, damping: 70 };
 let closure_10 = { code: "function BurstReactionToggleTsx1(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
 obj = { container: null };

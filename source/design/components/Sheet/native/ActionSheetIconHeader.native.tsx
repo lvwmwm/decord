@@ -1,10 +1,10 @@
-// Module ID: 10202
-// Function ID: 10203
+// Module ID: 10243
+// Function ID: 10244
 // Name: ActionSheetIconHeader
-// Dependencies: [19, 17, 21, 4303, 4299, 2]
+// Dependencies: [19, 17, 21, 4344, 4340, 2]
 // Exports: ActionSheetIconHeader
 
-// Module 10202 (ActionSheetIconHeader)
+// Module 10243 (ActionSheetIconHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,12 +26,12 @@ export const ActionSheetIconHeader = function ActionSheetIconHeader(subtitle) {
   let obj = { style: tmp.container, children: null };
   const items = [callback(View, { children: icon }), ];
   obj = { style: tmp.titles, children: null };
-  const items1 = [callback(require(4299) /* Text */.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title }), ];
+  const items1 = [callback(require(4340) /* Text */.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title }), ];
   let tmp4Result = null;
   if (null != subtitle) {
     obj = { variant: "text-xs/medium", color: "text-default", children: null };
     obj[2] = subtitle;
-    tmp4Result = callback(require(4299) /* Text */.Text, obj);
+    tmp4Result = callback(require(4340) /* Text */.Text, obj);
   }
   items1[1] = tmp4Result;
   obj[1] = items1;

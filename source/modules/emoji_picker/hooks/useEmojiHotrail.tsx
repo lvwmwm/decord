@@ -1,10 +1,10 @@
-// Module ID: 8652
-// Function ID: 8653
+// Module ID: 8691
+// Function ID: 8692
 // Name: useEmojiHotrail
-// Dependencies: [19, 5180, 2]
+// Dependencies: [19, 5219, 2]
 // Exports: default, getEmojiHotrail
 
-// Module 8652 (useEmojiHotrail)
+// Module 8691 (useEmojiHotrail)
 import noop from "noop";
 import { EMOJI_ROW_SIZE } from "EmojiCategoryTypes";
 

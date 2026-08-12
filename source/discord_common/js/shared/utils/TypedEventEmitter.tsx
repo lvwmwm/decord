@@ -1,9 +1,9 @@
-// Module ID: 4403
-// Function ID: 4404
+// Module ID: 4443
+// Function ID: 4444
 // Name: on
 // Dependencies: [652, 2]
 
-// Module 4403 (on)
+// Module 4443 (on)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/TypedEventEmitter.tsx");
 class TypedEventEmitter {
   constructor() {

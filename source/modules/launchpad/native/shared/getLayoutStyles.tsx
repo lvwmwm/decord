@@ -1,10 +1,10 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16126
+// Function ID: 16127
 // Name: getLayoutStyle
-// Dependencies: [712, 1297, 5779, 5738, 2]
+// Dependencies: [712, 1297, 5818, 5777, 2]
 // Exports: default
 
-// Module 16069 (getLayoutStyle)
+// Module 16126 (getLayoutStyle)
 let obj = { layout: { margin: { marginLeft: 8, marginRight: 8, marginVertical: 0 } }, container: null, voiceUsers: null, voiceOrStageSummaryRow: null, channelName: null, messagePreview: null, timestamp: null, inviteRow: null, icon: null, unreadBadge: null, mentionBadge: null, category: null, typing: null, activeThreadCount: null, joinVoiceButton: null, threadSpine: null, happeningNow: null, separator: null, searchButton: null };
 obj = { borderRadius: require("Themes").radii.md, padding: { paddingVertical: 4, paddingLeft: 8, paddingRight: 8 } };
 obj[1] = obj;

@@ -1,10 +1,10 @@
-// Module ID: 9173
-// Function ID: 9174
+// Module ID: 9213
+// Function ID: 9214
 // Name: isVideoBackgroundSupported
-// Dependencies: [4351, 4364, 2]
+// Dependencies: [4392, 4405, 2]
 // Exports: default
 
-// Module 9173 (isVideoBackgroundSupported)
+// Module 9213 (isVideoBackgroundSupported)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { Features } from "DesktopSources";
 

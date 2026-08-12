@@ -1,10 +1,10 @@
-// Module ID: 12265
-// Function ID: 12266
+// Module ID: 12328
+// Function ID: 12329
 // Name: useMediaViewerClosePosition
-// Dependencies: [32, 19, 676, 12262, 8497, 4042, 2]
+// Dependencies: [32, 19, 676, 12325, 8536, 4083, 2]
 // Exports: default
 
-// Module 12265 (useMediaViewerClosePosition)
+// Module 12328 (useMediaViewerClosePosition)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { NOOP } from "ME";

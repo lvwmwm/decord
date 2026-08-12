@@ -1,10 +1,10 @@
-// Module ID: 8106
-// Function ID: 8107
+// Module ID: 8145
+// Function ID: 8146
 // Name: computeIsStickerReplyEnabled
-// Dependencies: [1990, 3948, 1922, 676, 5889, 2]
+// Dependencies: [1990, 3989, 1922, 676, 5928, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 8106 (computeIsStickerReplyEnabled)
+// Module 8145 (computeIsStickerReplyEnabled)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -24,7 +24,7 @@ export const computeIsStickerReplyEnabled = function computeIsStickerReplyEnable
     }
     tmp2 = isPending;
   }
-  const isReadOnlyThread = require(5889) /* useCanUnarchiveThread */.computeIsReadOnlyThread(channel);
+  const isReadOnlyThread = require(5928) /* useCanUnarchiveThread */.computeIsReadOnlyThread(channel);
   let canResult = getUncachedChannelPermissions.can(Permissions.SEND_MESSAGES, channel);
   if (canResult) {
     canResult = !isReadOnlyThread;

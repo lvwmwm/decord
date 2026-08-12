@@ -1,9 +1,9 @@
-// Module ID: 10470
-// Function ID: 10471
+// Module ID: 10511
+// Function ID: 10512
 // Name: CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS
 // Dependencies: [2]
 
-// Module 10470 (CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS)
+// Module 10511 (CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS)
 const result = require("set").fileFinishedImporting("modules/captcha/CaptchaConstants.tsx");
 
 export const CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS = 30000;

@@ -1,10 +1,10 @@
-// Module ID: 8489
-// Function ID: 8490
+// Module ID: 8528
+// Function ID: 8529
 // Name: makePasswordResetLink
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 8489 (makePasswordResetLink)
+// Module 8528 (makePasswordResetLink)
 import { Routes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/auth/makePasswordResetLink.tsx");

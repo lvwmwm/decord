@@ -1,9 +1,9 @@
-// Module ID: 16423
-// Function ID: 16424
+// Module ID: 16480
+// Function ID: 16481
 // Name: experiment
-// Dependencies: [4218, 4215, 2]
+// Dependencies: [4259, 4256, 2]
 
-// Module 16423 (experiment)
+// Module 16480 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Treatment", config: { enabled: true } }];

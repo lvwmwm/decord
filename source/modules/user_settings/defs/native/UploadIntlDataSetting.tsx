@@ -1,9 +1,9 @@
-// Module ID: 14735
-// Function ID: 14736
+// Module ID: 14793
+// Function ID: 14794
 // Name: _serializeIntlData
-// Dependencies: [5, 17, 676, 21, 644, 705, 1625, 1239, 1273, 1236, 500, 530, 4021, 4259, 10452, 13891, 14097, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 1625, 1239, 1273, 1236, 500, 530, 4062, 4300, 10493, 13948, 14154, 2]
 
-// Module 14735 (_serializeIntlData)
+// Module 14793 (_serializeIntlData)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "set";
 import ME from "ME";
@@ -220,9 +220,9 @@ function _handleUploadIntlDataSettingPress() {
         } else {
           if (2 === tmp9) {
             dependencyMap = 1;
-            let obj5 = callback(4021);
+            let obj5 = callback(4062);
             const obj1 = { key: "USER_SETTINGS_INTL_DATA_UPLOAD_FAILED", IconComponent: null, content: "Failed to upload internationalization data." };
-            obj1[1] = ANDROID_APP(4259).CircleInformationIcon;
+            obj1[1] = ANDROID_APP(4300).CircleInformationIcon;
             obj5.open(obj1);
             dependencyMap = 0;
             (function onUploadIntlDataRequestFinish() {
@@ -262,9 +262,9 @@ function _handleUploadIntlDataSettingPress() {
             c5 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = callback(4021);
+            obj = callback(4062);
             obj5 = { key: "USER_SETTINGS_INTL_DATA_UPLOADED", IconComponent: null, content: "Internationalization data uploaded successfully." };
-            obj5[1] = ANDROID_APP(4259).CircleInformationIcon;
+            obj5[1] = ANDROID_APP(4300).CircleInformationIcon;
             obj.open(obj5);
             dependencyMap = 1;
           }

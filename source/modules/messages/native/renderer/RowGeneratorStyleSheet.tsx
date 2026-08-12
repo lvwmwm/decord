@@ -1,10 +1,10 @@
-// Module ID: 8047
-// Function ID: 8048
+// Module ID: 8086
+// Function ID: 8087
 // Name: processColorOrThrow
 // Dependencies: [17, 2]
 // Exports: processColorOrThrow
 
-// Module 8047 (processColorOrThrow)
+// Module 8086 (processColorOrThrow)
 import { processColor } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/RowGeneratorStyleSheet.tsx");

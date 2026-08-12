@@ -1,10 +1,10 @@
-// Module ID: 8781
-// Function ID: 8782
+// Module ID: 8820
+// Function ID: 8821
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 676, 21, 4303, 4042, 8782, 4846, 1236, 8763, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4344, 4083, 8821, 4886, 1236, 8802, 2]
 // Exports: default
 
-// Module 8781 (EmojiPickerCategoriesUnicodeShortcutItem)
+// Module 8820 (EmojiPickerCategoriesUnicodeShortcutItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

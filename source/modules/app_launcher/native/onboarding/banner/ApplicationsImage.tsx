@@ -1,10 +1,10 @@
-// Module ID: 11440
-// Function ID: 11441
+// Module ID: 11497
+// Function ID: 11498
 // Name: ApplicationsImage
-// Dependencies: [19, 17, 21, 4303, 712, 11441, 5268, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 11498, 5307, 2]
 // Exports: default
 
-// Module 11440 (ApplicationsImage)
+// Module 11497 (ApplicationsImage)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,12 +35,12 @@ export default function ApplicationsImage(arg0) {
   const tmp = createCacheKey();
   let appLauncherIconSource = null;
   if (null != firstApplication) {
-    let obj = require(11441) /* handleApplicationSelected */;
+    let obj = require(11498) /* handleApplicationSelected */;
     appLauncherIconSource = obj.getAppLauncherIconSource(firstApplication);
   }
   let appLauncherIconSource1 = null;
   if (null != secondApplication) {
-    let obj1 = require(11441) /* handleApplicationSelected */;
+    let obj1 = require(11498) /* handleApplicationSelected */;
     appLauncherIconSource1 = obj1.getAppLauncherIconSource(secondApplication);
   }
   let tmp8 = null != appLauncherIconSource;
@@ -48,14 +48,14 @@ export default function ApplicationsImage(arg0) {
     obj = { style: null, source: null };
     obj[0] = tmp.appIcon;
     obj[1] = appLauncherIconSource;
-    tmp8 = callback(importDefault(5268), obj);
+    tmp8 = callback(importDefault(5307), obj);
   }
   let tmp12 = null != appLauncherIconSource1;
   if (tmp12) {
     obj = { style: null, source: null };
     obj[0] = tmp.appIcon;
     obj[1] = appLauncherIconSource1;
-    tmp12 = callback(importDefault(5268), obj);
+    tmp12 = callback(importDefault(5307), obj);
   }
   obj1 = { children: null };
   const items = [, ];

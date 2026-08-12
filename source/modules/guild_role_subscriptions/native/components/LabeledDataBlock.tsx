@@ -1,10 +1,10 @@
-// Module ID: 14464
-// Function ID: 14465
+// Module ID: 14521
+// Function ID: 14522
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 676, 21, 4303, 712, 5236, 4299, 4846, 1297, 2]
+// Dependencies: [19, 17, 676, 21, 4344, 712, 5275, 4340, 4886, 1297, 2]
 // Exports: default
 
-// Module 14464 (LabeledDataBlock)
+// Module 14521 (LabeledDataBlock)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -39,7 +39,7 @@ export default function LabeledDataBlock(arg0) {
   items = [tmp.container, style];
   obj = { style: tmp.titleSection, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium", color: "interactive-text-default", children: title };
-  const items1 = [callback(require(4299) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4340) /* Text */.Text, obj), ];
   let tmp4Result = null != icon;
   if (tmp4Result) {
     const obj1 = { accessibilityRole: "button", onPress: null, children: null };
@@ -48,7 +48,7 @@ export default function LabeledDataBlock(arg0) {
     obj2[0] = tmp5(1297).Icon.Sizes.SMALL;
     obj2[1] = icon;
     obj1[2] = tmp4(tmp5(1297).Icon, obj2);
-    tmp4Result = tmp4(tmp5(4846).PressableOpacity, obj1);
+    tmp4Result = tmp4(tmp5(4886).PressableOpacity, obj1);
   }
   items1[1] = tmp4Result;
   obj[1] = items1;

@@ -1,10 +1,10 @@
-// Module ID: 14124
-// Function ID: 14125
+// Module ID: 14181
+// Function ID: 14182
 // Name: FamilyCenterLoading
-// Dependencies: [32, 19, 17, 6999, 1922, 676, 1221, 1388, 7000, 21, 4712, 4303, 712, 5728, 5748, 7338, 14125, 14126, 7340, 647, 8962, 1236, 2303, 14127, 14167, 7001, 698, 7064, 7069, 4730, 4125, 1377, 5826, 9147, 9567, 2]
+// Dependencies: [32, 19, 17, 7038, 1922, 676, 1221, 1388, 7039, 21, 4752, 4344, 712, 5767, 5787, 7377, 14182, 14183, 7379, 647, 9001, 1236, 2303, 14184, 14224, 7040, 698, 7103, 7108, 4770, 4166, 1377, 5865, 9187, 9607, 2]
 // Exports: default
 
-// Module 14124 (FamilyCenterLoading)
+// Module 14181 (FamilyCenterLoading)
 import openAgeGateModal from "openAgeGateModal";
 import defaultAreStatesEqual from "defaultAreStatesEqual";
 import get_ActivityIndicator from "useSelectedMyFamilyTab";
@@ -28,17 +28,17 @@ const require = arg1;
 function FamilyCenterLoading() {
   const obj = { justify: "center", align: "center", style: createCacheKey().loadingContainer, children: null };
   obj[3] = callback2(closure_6, {});
-  return callback2(require(4712) /* Stack */.Stack, obj);
+  return callback2(require(4752) /* Stack */.Stack, obj);
 }
 function FamilyCenter() {
   let openAgeGateModal;
   let tmp12;
   const tmp = createCacheKey();
-  let obj = familyCenterInitialized(7338);
+  let obj = familyCenterInitialized(7377);
   const acceptedRequestsCount = obj.useAcceptedRequestsCount();
-  const tmp6 = isLoading(14125)();
-  const selectedTab = isLoading(14126)().selectedTab;
-  let obj1 = familyCenterInitialized(7340);
+  const tmp6 = isLoading(14182)();
+  const selectedTab = isLoading(14183)().selectedTab;
+  let obj1 = familyCenterInitialized(7379);
   const selectedTeenId = obj1.useSelectedTeenId();
   let obj2 = familyCenterInitialized(647);
   const items = [freshTeenActivityWithMap];
@@ -47,24 +47,24 @@ function FamilyCenter() {
   isLoading = stateFromStoresObject.isLoading;
   const dependencyMap = tmp10;
   currentUser = currentUser.getCurrentUser();
-  const tmp3 = isLoading(5728);
+  const tmp3 = isLoading(5767);
   [tmp12, openAgeGateModal] = callback(obj2.useState(0), 2);
   callback = obj2.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj3 = familyCenterInitialized(8962);
+  let obj3 = familyCenterInitialized(9001);
   obj = { items: null, onPageChange: null, pageWidth: null, defaultIndex: null };
   obj = { label: null, id: null, page: null };
   const intl = familyCenterInitialized(1236).intl;
   obj[0] = intl.string(isLoading(2303).bdBmqy);
   obj[1] = FamilyCenterSubPages.ACTIVITY;
-  obj[2] = callback2(isLoading(14127), {});
+  obj[2] = callback2(isLoading(14184), {});
   const items1 = [obj, ];
   obj1 = { label: null, id: null, page: null };
   const intl2 = familyCenterInitialized(1236).intl;
   obj1[0] = intl2.string(isLoading(2303)["gVWG+6"]);
   obj1[1] = FamilyCenterSubPages.REQUESTS;
-  obj1[2] = callback2(isLoading(14167), {});
+  obj1[2] = callback2(isLoading(14224), {});
   items1[1] = obj1;
   obj[0] = items1;
   obj[1] = function onPageChange(arg0) {
@@ -102,7 +102,7 @@ function FamilyCenter() {
       }
     }
   }, items2);
-  isLoading(4730)(() => {
+  isLoading(4770)(() => {
     let obj = familyCenterInitialized(tmp10[30]);
     obj = { dismissAction: outer1_11.AUTO, forceTrack: true };
     const result = obj.UNSAFE_markDismissibleContentAsDismissed(familyCenterInitialized(tmp10[31]).DismissibleContent.FAMILY_CENTER_NEW_BADGE, obj);
@@ -118,15 +118,15 @@ function FamilyCenter() {
   if (familyCenterInitialized) {
     if (null != currentUser) {
       if (!tmp10) {
-        tmp4(5826).openAgeGateModal(AgeGateSource.FAMILY_CENTER);
+        tmp4(5865).openAgeGateModal(AgeGateSource.FAMILY_CENTER);
         return null;
       }
     }
   }
-  obj3 = { value: tmp3(isLoading(5748).FAMILY_CENTER).analyticsLocations, children: null };
+  obj3 = { value: tmp3(isLoading(5787).FAMILY_CENTER).analyticsLocations, children: null };
   let obj4 = { style: tmp.container, onLayout: callback, children: null };
   const obj5 = { style: tmp.segmentedControlContainer, children: null };
-  obj5[1] = callback2(familyCenterInitialized(9147).SegmentedControl, { state: segmentedControlState });
+  obj5[1] = callback2(familyCenterInitialized(9187).SegmentedControl, { state: segmentedControlState });
   const items3 = [callback2(closure_5, obj5), ];
   let obj6 = { style: tmp.container, children: null };
   if (isLoading) {
@@ -134,7 +134,7 @@ function FamilyCenter() {
   } else {
     const obj7 = { state: null };
     obj7[0] = segmentedControlState;
-    tmp14Result = tmp14(tmp4(9567).SegmentedControlPages, obj7);
+    tmp14Result = tmp14(tmp4(9607).SegmentedControlPages, obj7);
   }
   obj6[1] = tmp14Result;
   obj6 = tmp14(tmp23, obj6);
@@ -142,7 +142,7 @@ function FamilyCenter() {
   obj4[2] = items3;
   obj4 = closure_16(tmp23, obj4);
   obj3[1] = obj4;
-  tmp14Result = tmp14(tmp4(5728).AnalyticsLocationProvider, obj3);
+  tmp14Result = tmp14(tmp4(5767).AnalyticsLocationProvider, obj3);
 }
 ({ View: c5, ActivityIndicator: closure_6 } = get_ActivityIndicator);
 ({ FamilyCenterPageLocationAnalyticsIds: closure_12, FamilyCenterSubPageAnalyticsIds: map1, FamilyCenterSubPages } = items);

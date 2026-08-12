@@ -1,8 +1,8 @@
-// Module ID: 12503
-// Function ID: 12504
-// Dependencies: [19, 17, 12499, 7197, 21, 12498, 9139, 5779, 4299, 1236, 5374, 2]
+// Module ID: 12566
+// Function ID: 12567
+// Dependencies: [19, 17, 12562, 7236, 21, 12561, 9179, 5818, 4340, 1236, 5413, 2]
 
-// Module 12503
+// Module 12566
 import { View } from "get ActivityIndicator";
 import { useGuildInviteSendStates } from "setSendState";
 import { InviteSendStates } from "InviteSendStates";

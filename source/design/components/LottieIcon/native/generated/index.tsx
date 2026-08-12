@@ -1,8 +1,8 @@
-// Module ID: 15174
-// Function ID: 15175
-// Dependencies: [2, 13396, 13398, 13400, 13402, 13404, 10827, 13406, 13408, 13410, 13412, 13414, 13416, 13418, 13420, 13422, 13424, 10151, 10148]
+// Module ID: 15231
+// Function ID: 15232
+// Dependencies: [2, 13453, 13455, 13457, 13459, 13461, 10880, 13463, 13465, 13467, 13469, 13471, 13473, 13475, 13477, 13479, 13481, 10192, 10189]
 
-// Module 15174
+// Module 15231
 const result = require("items").fileFinishedImporting("design/components/LottieIcon/native/generated/index.tsx");
 for (const key10018 in require("items")) {
   let tmp3 = key10018;

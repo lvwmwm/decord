@@ -1,10 +1,10 @@
-// Module ID: 6662
-// Function ID: 6663
+// Module ID: 6701
+// Function ID: 6702
 // Name: QuestsIllocon
-// Dependencies: [21, 5268, 6663, 2]
+// Dependencies: [21, 5307, 6702, 2]
 // Exports: QuestsIllocon
 
-// Module 6662 (QuestsIllocon)
+// Module 6701 (QuestsIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/QuestsIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const QuestsIllocon = function QuestsIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6663);
+  obj[0] = importDefault(6702);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { uri: null });
+  return jsx(importDefault(5307), { uri: null });
 };

@@ -1,9 +1,9 @@
-// Module ID: 16520
-// Function ID: 16521
+// Module ID: 16577
+// Function ID: 16578
 // Name: items
-// Dependencies: [5, 8477, 4998, 1922, 5345, 12063, 676, 12077, 16521, 12034, 12062, 691, 9071, 709, 5261, 12041, 12104, 2]
+// Dependencies: [5, 8516, 5038, 1922, 5384, 12120, 676, 12134, 16578, 12091, 12119, 691, 9110, 709, 5300, 12098, 12161, 2]
 
-// Module 16520 (items)
+// Module 16577 (items)
 import NewUserTypes from "NewUserTypes";
 import handleSetLocationMetadata from "handleSetLocationMetadata";
 import set from "set";
@@ -74,7 +74,7 @@ const items = [
       }
     },
     transitionToStep() {
-      const result = require(12062) /* _startContactSyncForDiscoverability */.transitionToHubEmailConnectionModal(require(691) /* keys */.ModalAnimation.SLIDE_IN, true);
+      const result = require(12119) /* _startContactSyncForDiscoverability */.transitionToHubEmailConnectionModal(require(691) /* keys */.ModalAnimation.SLIDE_IN, true);
     }
   },
   {
@@ -83,7 +83,7 @@ const items = [
       return store2.getType() === NewUserTypes.ORGANIC_REGISTERED;
     },
     transitionToStep() {
-      return require(12062) /* _startContactSyncForDiscoverability */.transitionToNUFGuildTemplatesModal(require(691) /* keys */.ModalAnimation.SLIDE_IN);
+      return require(12119) /* _startContactSyncForDiscoverability */.transitionToNUFGuildTemplatesModal(require(691) /* keys */.ModalAnimation.SLIDE_IN);
     }
   },
 
@@ -174,7 +174,7 @@ let prototype = function NewUserManager() {
               let callback2;
               key2 = 1;
               v0 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

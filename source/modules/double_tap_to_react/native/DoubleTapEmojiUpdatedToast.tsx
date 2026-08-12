@@ -1,10 +1,10 @@
-// Module ID: 8656
-// Function ID: 8657
+// Module ID: 8695
+// Function ID: 8696
 // Name: ToastEmoji
-// Dependencies: [19, 4295, 1925, 21, 4303, 712, 500, 589, 1435, 5360, 4299, 1236, 4700, 1351, 4021, 2]
+// Dependencies: [19, 4336, 1925, 21, 4344, 712, 500, 589, 1435, 5399, 4340, 1236, 4740, 1351, 4062, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 8656 (ToastEmoji)
+// Module 8695 (ToastEmoji)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { EMOJI_URL_BASE_SIZE } from "set";
@@ -62,7 +62,7 @@ function ToastText(emoji) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { emojiName: emoji.emoji.name };
   obj[2] = intl.format(require(1236) /* getSystemLocale */.t.nKY0Fl, obj);
-  return jsx(require(4299) /* Text */.Text, { emojiName: emoji.emoji.name });
+  return jsx(require(4340) /* Text */.Text, { emojiName: emoji.emoji.name });
 }
 createCacheKey = { toastEmoji: null, toastEmojiCustom: null, toastEmojiText: null, toastText: null };
 createCacheKey = { marginLeft: require("Themes").space.PX_8, marginVertical: require("Themes").space.PX_8 };
@@ -87,7 +87,7 @@ const result = set.fileFinishedImporting("modules/double_tap_to_react/native/Dou
 export { ToastEmoji };
 export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
-  let obj = emoji(4700);
+  let obj = emoji(4740);
   if (obj.getIsScreenReaderEnabled()) {
     const AccessibilityAnnouncer = tmp(1351).AccessibilityAnnouncer;
     const intl = tmp(1236).intl;
@@ -102,7 +102,7 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
     obj[2] = function content() {
       return outer1_6(outer1_9, { emoji });
     };
-    importDefault(4021).open(obj);
-    const obj2 = importDefault(4021);
+    importDefault(4062).open(obj);
+    const obj2 = importDefault(4062);
   }
 };

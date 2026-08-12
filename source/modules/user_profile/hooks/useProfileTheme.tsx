@@ -1,10 +1,10 @@
-// Module ID: 8829
-// Function ID: 8830
+// Module ID: 8868
+// Function ID: 8869
 // Name: useProfileTheme
-// Dependencies: [32, 4295, 8830, 676, 4239, 589, 711, 8239, 688, 8318, 1363, 2]
+// Dependencies: [32, 4336, 8869, 676, 4280, 589, 711, 8278, 688, 8357, 1363, 2]
 // Exports: default
 
-// Module 8829 (useProfileTheme)
+// Module 8868 (useProfileTheme)
 import _slicedToArray from "_slicedToArray";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { useEffectiveThemeOverride } from "useProfileThemeOverrideStore";
@@ -22,7 +22,7 @@ export default function useProfileTheme(arg0) {
   let user;
   ({ user, displayProfile, pendingAvatarSrc } = arg0);
   ({ pendingThemeColors, isPreview, forceUserTheme } = arg0);
-  const tmp2 = importDefault(4239)();
+  const tmp2 = importDefault(4280)();
   const tmp3 = useEffectiveThemeOverride();
   let obj = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -40,7 +40,7 @@ export default function useProfileTheme(arg0) {
   }
   let tmp4Result = tmp4(711);
   const result = tmp4Result.unsafe_getResolvedRawColor("PRIMARY_530", { saturation: 1 });
-  tmp4Result = tmp4(8239);
+  tmp4Result = tmp4(8278);
   callback(tmp4Result.useAvatarColors(pendingAvatarSrc, result, false), 2);
   if (null != tmp3) {
     return tmp3;
@@ -80,12 +80,12 @@ export default function useProfileTheme(arg0) {
     if (!stateFromStores) {
       tmp16 = tmp2;
       if (!forceUserTheme) {
-        let profileTheme = tmp4(8318).getProfileTheme(first);
+        let profileTheme = tmp4(8357).getProfileTheme(first);
         if (profileTheme == null) {
           profileTheme = tmp2;
         }
         tmp16 = profileTheme;
-        const tmp4Result3 = tmp4(8318);
+        const tmp4Result3 = tmp4(8357);
       }
     }
     if (tmp16 !== ThemeTypes.DARK) {

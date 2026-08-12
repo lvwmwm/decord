@@ -1,9 +1,9 @@
-// Module ID: 5185
-// Function ID: 5186
+// Module ID: 5224
+// Function ID: 5225
 // Name: setParams
 // Dependencies: [2]
 
-// Module 5185 (setParams)
+// Module 5224 (setParams)
 const result = require("set").fileFinishedImporting("modules/emoji_terms/LazyPromiseInitializer.tsx");
 class LazyPromiseInitializer {
   constructor(arg0) {

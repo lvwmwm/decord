@@ -1,9 +1,9 @@
-// Module ID: 15488
-// Function ID: 15489
+// Module ID: 15544
+// Function ID: 15545
 // Name: handlePress
-// Dependencies: [19, 17, 4126, 15424, 676, 9579, 21, 4303, 712, 5959, 4024, 589, 4042, 4713, 15168, 15435, 1236, 15489, 15434, 5781, 8011, 15445, 4299, 2]
+// Dependencies: [19, 17, 4167, 15480, 676, 9619, 21, 4344, 712, 5998, 4065, 589, 4083, 4753, 15225, 15491, 1236, 15545, 15490, 5820, 8050, 15501, 4340, 2]
 
-// Module 15488 (handlePress)
+// Module 15544 (handlePress)
 import importAllResult from "set";
 import get_ActivityIndicator from "registerAsset";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -23,7 +23,7 @@ let map1;
 let metroImportAll;
 const require = arg1;
 function handlePress() {
-  require(5959) /* transitionToGuild */.transitionToGuild(EMPTY_NUX_SERVER);
+  require(5998) /* transitionToGuild */.transitionToGuild(EMPTY_NUX_SERVER);
 }
 let c3 = importAllResult;
 ({ Pressable: c4, Image: c5, View: closure_6 } = get_ActivityIndicator);

@@ -1,11 +1,11 @@
-// Module ID: 5000
-// Function ID: 5001
+// Module ID: 5040
+// Function ID: 5041
 // Name: getPlatformUserUrl
-// Dependencies: [676, 4330, 711, 5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 4331, 5013, 5014, 5015, 5016, 5017, 5018, 5019, 5020, 5021, 5022, 5023, 5024, 5025, 5026, 5027, 5028, 5029, 5030, 5031, 5032, 5033, 5034, 5035, 5036, 5037, 5038, 5039, 5040, 5041, 5042, 5043, 5044, 5045, 5046, 5047, 5048, 5049, 5050, 5051, 5052, 5053, 5054, 5055, 5056, 5057, 5058, 5059, 5060, 5061, 5062, 5063, 5064, 5065, 5066, 5067, 5068, 5069, 5070, 5071, 5072, 5073, 5074, 5075, 5076, 5077, 5078, 5079, 5080, 5081, 5082, 5083, 5084, 5085, 5086, 5087, 5088, 5089, 5090, 5091, 5092, 5093, 5094, 5095, 5096, 5097, 5098, 5099, 5100, 5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110, 5111, 5112, 5113, 5114, 5115, 5116, 5117, 5118, 5119, 5120, 5121, 5122, 12, 1486, 2]
+// Dependencies: [676, 4371, 711, 5041, 5042, 5043, 5044, 5045, 5046, 5047, 5048, 5049, 5050, 5051, 5052, 4372, 5053, 5054, 5055, 5056, 5057, 5058, 5059, 5060, 5061, 5062, 5063, 5064, 5065, 5066, 5067, 5068, 5069, 5070, 5071, 5072, 5073, 5074, 5075, 5076, 5077, 5078, 5079, 5080, 5081, 5082, 5083, 5084, 5085, 5086, 5087, 5088, 5089, 5090, 5091, 5092, 5093, 5094, 5095, 5096, 5097, 5098, 5099, 5100, 5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110, 5111, 5112, 5113, 5114, 5115, 5116, 5117, 5118, 5119, 5120, 5121, 5122, 5123, 5124, 5125, 5126, 5127, 5128, 5129, 5130, 5131, 5132, 5133, 5134, 5135, 5136, 5137, 5138, 5139, 5140, 5141, 5142, 5143, 5144, 5145, 5146, 5147, 5148, 5149, 5150, 5151, 5152, 5153, 5154, 5155, 5156, 5157, 5158, 5159, 5160, 5161, 5162, 12, 1486, 2]
 
-// Module 5000 (getPlatformUserUrl)
+// Module 5040 (getPlatformUserUrl)
 import { PlatformTypes } from "ME";
-import { ApplicationIdentityAppIds } from "items1";
+import { ApplicationIdentityAppIds } from "items";
 import unsafe_getRawColor from "unsafe_getRawColor";
 import unsafe_getRawColor from "unsafe_getRawColor";
 import unsafe_getRawColor from "unsafe_getRawColor";
@@ -50,11 +50,11 @@ obj2[3] = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset"
 const obj4 = {
   replacedBy: ApplicationIdentityAppIds.BATTLENET,
   getMigrationExperimentEnabled(location) {
-    const battlenetSocialSDKMigrationExperiment = require(4331) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
+    const battlenetSocialSDKMigrationExperiment = require(4372) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
     return battlenetSocialSDKMigrationExperiment.getConfig({ location }).enabled;
   },
   useMigrationExperimentEnabled(location) {
-    const battlenetSocialSDKMigrationExperiment = require(4331) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
+    const battlenetSocialSDKMigrationExperiment = require(4372) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
     return battlenetSocialSDKMigrationExperiment.useConfig({ location }).enabled;
   },
   helpCenterLink: "https://discord.com/blog/link-world-of-warcraft-with-discord",
@@ -91,12 +91,12 @@ obj11[3] = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset
 const obj13 = {
   replacedBy: ApplicationIdentityAppIds.RIOT_GAMES,
   getMigrationExperimentEnabled(location) {
-    let obj = require(4331) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4372) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.getIsRiotSocialSDKMigrationEnabled(obj);
   },
   useMigrationExperimentEnabled(location) {
-    let obj = require(4331) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4372) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.useIsRiotSocialSDKMigrationEnabled(obj);
   },
@@ -195,12 +195,12 @@ obj38[2] = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset
 const obj40 = {
   replacedBy: ApplicationIdentityAppIds.RIOT_GAMES,
   getMigrationExperimentEnabled(location) {
-    let obj = require(4331) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4372) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.getIsRiotSocialSDKMigrationEnabled(obj);
   },
   useMigrationExperimentEnabled(location) {
-    let obj = require(4331) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4372) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.useIsRiotSocialSDKMigrationEnabled(obj);
   },

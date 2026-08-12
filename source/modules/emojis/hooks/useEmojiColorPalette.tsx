@@ -1,10 +1,10 @@
-// Module ID: 10205
-// Function ID: 10206
+// Module ID: 10246
+// Function ID: 10247
 // Name: useEmojiColorPalette
-// Dependencies: [4295, 1302, 589, 1363, 8068, 2]
+// Dependencies: [4336, 1302, 589, 1363, 8107, 2]
 // Exports: useEmojiColorPalette
 
-// Module 10205 (useEmojiColorPalette)
+// Module 10246 (useEmojiColorPalette)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import handleThemeChange from "handleThemeChange";
 
@@ -18,5 +18,5 @@ export const useEmojiColorPalette = function useEmojiColorPalette(burst_colors) 
   const items1 = [handleThemeChange];
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => callback(table[3]).isThemeDark(theme.theme));
   const obj2 = require(589) /* initialize */;
-  return require(8068) /* buildPlatformedThemedEmojiColorPalette */.buildEmojiColorPalette(burst_colors, stateFromStores, stateFromStores1);
+  return require(8107) /* buildPlatformedThemedEmojiColorPalette */.buildEmojiColorPalette(burst_colors, stateFromStores, stateFromStores1);
 };

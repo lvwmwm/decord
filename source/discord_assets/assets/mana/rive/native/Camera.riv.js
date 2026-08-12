@@ -1,9 +1,9 @@
-// Module ID: 4099
-// Function ID: 4100
+// Module ID: 4140
+// Function ID: 4141
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4099 (metadata)
+// Module 4140 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/Camera.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/50c62483dc876c18d82d8e5f725485acbd672c61bb66f6d21bf13cc4186886de.riv";

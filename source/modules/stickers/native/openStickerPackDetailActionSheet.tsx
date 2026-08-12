@@ -1,10 +1,10 @@
-// Module ID: 9969
-// Function ID: 9970
+// Module ID: 10010
+// Function ID: 10011
 // Name: openStickerPackDetailActionSheet
-// Dependencies: [676, 698, 4271, 9970, 2007, 2]
+// Dependencies: [676, 698, 4312, 10011, 2007, 2]
 // Exports: default
 
-// Module 9969 (openStickerPackDetailActionSheet)
+// Module 10010 (openStickerPackDetailActionSheet)
 import { AnalyticEvents } from "ME";
 
 const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/stickers/native/openStickerPackDetailActionSheet.tsx");
@@ -17,6 +17,6 @@ export default function openStickerPackDetailActionSheet(stickerPack) {
   let obj = importDefault(698);
   obj = { location: analyticsLocation, sticker_pack_id: stickerPack.id };
   obj.track(AnalyticEvents.STICKER_PACK_VIEW_ALL, obj);
-  importDefault(4271).openLazy(require(2007) /* asyncRequireImpl */(9970, dependencyMap.paths), "StickerPackDetailActionSheet", { stickerPack, analyticsPopoutType });
+  importDefault(4312).openLazy(require(2007) /* asyncRequireImpl */(10011, dependencyMap.paths), "StickerPackDetailActionSheet", { stickerPack, analyticsPopoutType });
 };
 export const AnalyticsPopoutType = { EXPRESSION_SUGGESTIONS: "Sticker Pack Detail Sheet (Expression Suggestions Popout)", STICKER_PACK_DETAIL: "Sticker Pack Detail Sheet", STICKER_PACK_UPSELL: "Sticker Pack Detail Sheet (Sticker Upsell Popout)" };

@@ -1,9 +1,9 @@
-// Module ID: 15027
-// Function ID: 15028
+// Module ID: 15085
+// Function ID: 15086
 // Name: BalanceWidgetMenuSection
-// Dependencies: [32, 19, 17, 21, 8576, 5783, 8388, 9683, 4303, 712, 4712, 4299, 15028, 4271, 10156, 2007, 1236, 7792, 4714, 10145, 10155, 5369, 5715, 15030, 2]
+// Dependencies: [32, 19, 17, 21, 8615, 5822, 8427, 9723, 4344, 712, 4752, 4340, 15086, 4312, 10197, 2007, 1236, 7831, 4754, 10186, 10196, 5408, 5754, 15088, 2]
 
-// Module 15027 (BalanceWidgetMenuSection)
+// Module 15085 (BalanceWidgetMenuSection)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "BalanceWidgetPill";
 import get_ActivityIndicator from "TextInput";
@@ -20,9 +20,9 @@ function BalanceWidgetMenuSection() {
   const tmp = callback4();
   let obj = { spacing: 16, style: tmp.container, children: null };
   obj = { variant: "text-lg/semibold", style: tmp.title, children: "Balance Widget Menu" };
-  const items = [callback2(require(4299) /* Text */.Text, obj), callback2(importDefault(15028), {})];
+  const items = [callback2(require(4340) /* Text */.Text, obj), callback2(importDefault(15086), {})];
   obj[2] = items;
-  return callback3(require(4712) /* Stack */.Stack, obj);
+  return callback3(require(4752) /* Stack */.Stack, obj);
 }
 function BalanceWidgetPillSection() {
   const tmp = callback4();
@@ -78,14 +78,14 @@ function BalanceWidgetPillSection() {
   return callback3(first(first1[10]).Stack, obj);
 }
 function OrbsFlowTest() {
-  const insets = importDefault(5369)({ includeKeyboardHeight: true }).insets;
+  const insets = importDefault(5408)({ includeKeyboardHeight: true }).insets;
   let obj = { children: null };
   obj = { style: callback4().wrap, contentContainerStyle: obj, children: null };
   obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right };
-  const items = [callback2(BalanceWidgetMenuSection, {}), callback2(BalanceWidgetPillSection, {}), callback2(importDefault(15030), {})];
+  const items = [callback2(BalanceWidgetMenuSection, {}), callback2(BalanceWidgetPillSection, {}), callback2(importDefault(15088), {})];
   obj[2] = items;
   obj[0] = callback3(closure_5, obj);
-  return callback2(require(5715) /* Layer */.LayerScope, obj);
+  return callback2(require(5754) /* Layer */.LayerScope, obj);
 }
 let c4 = importAllResult;
 ({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
@@ -101,7 +101,7 @@ createCacheKey = { flexDirection: "row", justifyContent: "center", marginBottom:
 obj[3] = createCacheKey;
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function OrbsFlowTestModal() {
-  let obj = _require(5783);
+  let obj = _require(5822);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {

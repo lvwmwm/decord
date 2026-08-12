@@ -1,10 +1,10 @@
-// Module ID: 14134
-// Function ID: 14135
+// Module ID: 14191
+// Function ID: 14192
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 6999, 7000, 21, 4303, 712, 647, 4271, 14135, 5397, 4299, 1236, 2303, 14136, 4714, 2]
+// Dependencies: [19, 17, 7038, 7039, 21, 4344, 712, 647, 4312, 14192, 5436, 4340, 1236, 2303, 14193, 4754, 2]
 // Exports: default
 
-// Module 14134 (ConnectGuardianBottomSheet)
+// Module 14191 (ConnectGuardianBottomSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
@@ -44,7 +44,7 @@ export default function ConnectGuardianBottomSheet(arg0) {
   const callback = React.useCallback(() => {
     callback(table[8]).hideActionSheet(closure_6);
   }, []);
-  importDefault(14135)(callback);
+  importDefault(14192)(callback);
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.info, children: null };
   obj1 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
@@ -53,14 +53,14 @@ export default function ConnectGuardianBottomSheet(arg0) {
     title = intl.string(tmp7(2303).aCUVfL);
   }
   obj1[4] = title;
-  const items2 = [closure_7(require(4299) /* Text */.Text, obj1), ];
+  const items2 = [closure_7(require(4340) /* Text */.Text, obj1), ];
   const obj2 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: null };
   if (body == null) {
     const intl2 = tmp2(1236).intl;
     body = intl2.format(tmp7(2303)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
   }
   obj2[3] = body;
-  items2[1] = closure_7(require(4299) /* Text */.Text, obj2);
+  items2[1] = closure_7(require(4340) /* Text */.Text, obj2);
   obj[1] = items2;
   const items3 = [closure_8(View, obj), , ];
   const obj3 = { style: tmp.cardContainer, children: null };
@@ -74,14 +74,14 @@ export default function ConnectGuardianBottomSheet(arg0) {
   const obj5 = { startExpanded: true, children: null };
   obj4[1] = stateFromStores1;
   obj4[2] = onRefresh;
-  obj3[1] = closure_7(require(14136) /* ConnectGuardianCard */.ConnectGuardianCard, obj4);
+  obj3[1] = closure_7(require(14193) /* ConnectGuardianCard */.ConnectGuardianCard, obj4);
   items3[1] = closure_7(View, obj3);
   const obj6 = { variant: "secondary", size: "md", text: null, onPress: null };
   const intl3 = tmp2(1236).intl;
   obj6[2] = intl3.string(importDefault(2303).Hsm5IF);
   obj6[3] = callback;
-  items3[2] = closure_7(require(4714) /* Button */.Button, obj6);
+  items3[2] = closure_7(require(4754) /* Button */.Button, obj6);
   obj[1] = items3;
   obj5[1] = closure_8(View, obj);
-  return closure_7(require(5397) /* Background */.BottomSheet, obj5);
+  return closure_7(require(5436) /* Background */.BottomSheet, obj5);
 };

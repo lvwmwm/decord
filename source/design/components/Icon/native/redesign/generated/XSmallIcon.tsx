@@ -1,10 +1,10 @@
-// Module ID: 5326
-// Function ID: 5327
+// Module ID: 5365
+// Function ID: 5366
 // Name: XSmallIcon
-// Dependencies: [19, 21, 712, 4023, 5327, 2]
+// Dependencies: [19, 21, 712, 4064, 5366, 2]
 // Exports: XSmallIcon
 
-// Module 5326 (XSmallIcon)
+// Module 5365 (XSmallIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const XSmallIcon = function XSmallIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(5327) /* registerAsset */;
+  obj[0] = require(5366) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

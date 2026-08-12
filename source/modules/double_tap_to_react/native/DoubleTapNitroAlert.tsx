@@ -1,10 +1,10 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8122
+// Function ID: 8123
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 8079, 676, 8084, 21, 4303, 6018, 4644, 4647, 7795, 1236, 2]
+// Dependencies: [19, 17, 8118, 676, 8123, 21, 4344, 6057, 4684, 4687, 7834, 1236, 2]
 // Exports: default
 
-// Module 8083 (DoubleTapNitroAlert)
+// Module 8122 (DoubleTapNitroAlert)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { NITRO_UPSELL_ALERT_KEY } from "NITRO_UPSELL_ALERT_KEY";
@@ -23,13 +23,13 @@ const result = require("NITRO_UPSELL_ALERT_KEY").fileFinishedImporting("modules/
 
 export default function DoubleTapNitroAlert(emojiName) {
   const callback = React.useCallback(() => {
-    let obj = callback(6018);
+    let obj = callback(6057);
     obj = { screen: constants.TEXT, params: obj };
     obj = { initialSetting: constants2.DOUBLE_TAP_EMOJI };
     obj.openUserSettings(obj);
   }, []);
   const callback1 = React.useCallback(() => {
-    let obj = callback(6018);
+    let obj = callback(6057);
     obj = { screen: constants.PREMIUM };
     obj.openUserSettings(obj, () => {
       callback(table[8]).dismissAlert(closure_4);
@@ -37,7 +37,7 @@ export default function DoubleTapNitroAlert(emojiName) {
   }, []);
   let obj = { header: null, title: null, content: null, actions: null };
   obj = { style: callback3().icon, children: null };
-  obj[1] = callback(require(7795) /* CircleErrorIcon */.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } });
+  obj[1] = callback(require(7834) /* CircleErrorIcon */.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } });
   obj[0] = callback(View, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.HRAWfC);
@@ -47,12 +47,12 @@ export default function DoubleTapNitroAlert(emojiName) {
   const obj1 = { onPress: callback, text: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.LIIHRy);
-  const items = [callback(require(4647) /* getAlertModalItemKey */.AlertActionButton, obj1, "confirm"), ];
+  const items = [callback(require(4687) /* getAlertModalItemKey */.AlertActionButton, obj1, "confirm"), ];
   const obj2 = { variant: "secondary", text: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl4.string(require(1236) /* getSystemLocale */.t["Nr6v2+"]);
-  items[1] = callback(require(4647) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel");
+  items[1] = callback(require(4687) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel");
   obj[0] = items;
   obj[3] = callback2(closure_8, obj);
-  return callback(require(4647) /* getAlertModalItemKey */.AlertModal, obj);
+  return callback(require(4687) /* getAlertModalItemKey */.AlertModal, obj);
 };

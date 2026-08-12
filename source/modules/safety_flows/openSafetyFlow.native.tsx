@@ -1,10 +1,10 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 17019
+// Function ID: 17020
 // Name: _openSafetyFlow
-// Dependencies: [5, 1385, 676, 16962, 4509, 16963, 16964, 16965, 2007, 2]
+// Dependencies: [5, 1385, 676, 17020, 4549, 17021, 17022, 17023, 2007, 2]
 // Exports: openSafetyFlow
 
-// Module 16961 (_openSafetyFlow)
+// Module 17019 (_openSafetyFlow)
 import SAFETY_FLOWS_MODAL_KEY from "SAFETY_FLOWS_MODAL_KEY";
 import handleRequiredAction from "handleRequiredAction";
 import { UserRequiredActions } from "ME";
@@ -56,7 +56,7 @@ function _openSafetyFlow() {
               closure_2 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp7) {

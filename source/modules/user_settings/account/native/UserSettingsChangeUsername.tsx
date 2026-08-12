@@ -1,10 +1,10 @@
-// Module ID: 14013
-// Function ID: 14014
+// Module ID: 14070
+// Function ID: 14071
 // Name: UsernameStatusMessage
-// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4303, 712, 4503, 14014, 4299, 1236, 1499, 589, 3966, 14015, 7595, 8516, 530, 1500, 8388, 7792, 8520, 8472, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4344, 712, 4543, 14071, 4340, 1236, 1499, 589, 4007, 14072, 7634, 8555, 530, 1500, 8427, 7831, 8559, 8511, 2]
 // Exports: default
 
-// Module 14013 (UsernameStatusMessage)
+// Module 14070 (UsernameStatusMessage)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import sendRequest from "sendRequest";
@@ -21,16 +21,16 @@ let unpackModuleId;
 const require = arg1;
 function UsernameStatusMessage(showHint) {
   showHint = showHint.showHint;
-  const match = showHint(4503).match(showHint.usernameStatus);
-  let obj = { type: showHint(14014).NameValidationState.ERROR, message: null };
-  const P = showHint(4503).P;
+  const match = showHint(4543).match(showHint.usernameStatus);
+  let obj = { type: showHint(14071).NameValidationState.ERROR, message: null };
+  const P = showHint(4543).P;
   obj[1] = P.select();
-  const str = showHint(4503);
-  obj = { type: showHint(14014).NameValidationState.AVAILABLE, message: null };
-  const P2 = showHint(4503).P;
+  const str = showHint(4543);
+  obj = { type: showHint(14071).NameValidationState.AVAILABLE, message: null };
+  const P2 = showHint(4543).P;
   obj[1] = P2.select();
-  const withResult = match.with(obj, (children) => callback(showHint(4299).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
-  return match.with(obj, (children) => callback(showHint(4299).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })).with(obj, (children) => callback(showHint(4299).Text, { variant: "text-xs/medium", color: "text-feedback-positive", children })).otherwise(() => {
+  const withResult = match.with(obj, (children) => callback(showHint(4340).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
+  return match.with(obj, (children) => callback(showHint(4340).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })).with(obj, (children) => callback(showHint(4340).Text, { variant: "text-xs/medium", color: "text-feedback-positive", children })).otherwise(() => {
     let tmp = null;
     if (showHint) {
       const obj = { variant: "text-xs/medium", color: "text-default", children: null };

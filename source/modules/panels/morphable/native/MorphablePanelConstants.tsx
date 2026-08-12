@@ -1,9 +1,9 @@
-// Module ID: 11650
-// Function ID: 11651
+// Module ID: 11707
+// Function ID: 11708
 // Name: MIN_PAN_GESTURE_MOVE
 // Dependencies: [500, 2]
 
-// Module 11650 (MIN_PAN_GESTURE_MOVE)
+// Module 11707 (MIN_PAN_GESTURE_MOVE)
 import set from "set";
 import set from "set";
 

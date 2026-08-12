@@ -1,9 +1,9 @@
-// Module ID: 13790
-// Function ID: 13791
+// Module ID: 13847
+// Function ID: 13848
 // Name: items
-// Dependencies: [4206, 676, 8908, 10746, 2]
+// Dependencies: [4247, 676, 8947, 10799, 2]
 
-// Module 13790 (items)
+// Module 13847 (items)
 let obj = {};
 obj = { scope: null, handler: null };
 obj = {};
@@ -11,7 +11,7 @@ const items = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_
 obj[require("RPC_SCOPE_CONFIG").RPC_SCOPE_CONFIG.ANY] = items;
 obj[0] = obj;
 obj[1] = function handler() {
-  return require(10746) /* validateSocketClient */.getDeprecatedVoiceSettings();
+  return require(10799) /* validateSocketClient */.getDeprecatedVoiceSettings();
 };
 obj[require("ME").RPCCommands.GET_VOICE_SETTINGS] = obj;
 const result = require("set").fileFinishedImporting("modules/rpc/native/server/commands/voiceSettings.tsx");

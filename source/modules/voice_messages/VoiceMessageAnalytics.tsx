@@ -1,10 +1,10 @@
-// Module ID: 11278
-// Function ID: 11279
+// Module ID: 11332
+// Function ID: 11333
 // Name: logVoiceMessagePlaybackStarted
 // Dependencies: [676, 698, 2]
 // Exports: logVoiceMessagePlaybackEnded, logVoiceMessagePlaybackFailed, logVoiceMessagePlaybackStarted
 
-// Module 11278 (logVoiceMessagePlaybackStarted)
+// Module 11332 (logVoiceMessagePlaybackStarted)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/voice_messages/VoiceMessageAnalytics.tsx");

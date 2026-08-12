@@ -1,10 +1,10 @@
-// Module ID: 12792
-// Function ID: 12793
+// Module ID: 12851
+// Function ID: 12852
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 3980, 21, 4303, 712, 5397, 7795, 4299, 1236, 2885, 2]
+// Dependencies: [17, 4021, 21, 4344, 712, 5436, 7834, 4340, 1236, 2885, 2]
 // Exports: default
 
-// Module 12792 (PremiumGroupEducationActionSheet)
+// Module 12851 (PremiumGroupEducationActionSheet)
 import { View } from "get ActivityIndicator";
 import { HELP_CENTER_LINK } from "SubscriptionStatusTypes";
 import jsxProd from "jsxProd";
@@ -27,14 +27,14 @@ export default function PremiumGroupEducationActionSheet(children) {
   let obj = { children: null };
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.aboutContainer, children: null };
-  const items = [callback(require(7795) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), callback(View, { style: tmp.aboutTextContainer, children: callback(require(4299) /* Text */.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: children.aboutText }) })];
+  const items = [callback(require(7834) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), callback(View, { style: tmp.aboutTextContainer, children: callback(require(4340) /* Text */.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: children.aboutText }) })];
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl.format(importDefault(2885).ah1Ecm, { helpCenterLink: HELP_CENTER_LINK });
-  items1[1] = callback(require(4299) /* Text */.Text, obj3);
+  items1[1] = callback(require(4340) /* Text */.Text, obj3);
   obj[1] = items1;
   obj[0] = callback2(View, obj);
-  return callback(require(5397) /* Background */.BottomSheet, obj);
+  return callback(require(5436) /* Background */.BottomSheet, obj);
 };

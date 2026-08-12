@@ -1,10 +1,10 @@
-// Module ID: 5823
-// Function ID: 5824
+// Module ID: 5862
+// Function ID: 5863
 // Name: ActivityIndicator
-// Dependencies: [17, 21, 4024, 712, 2]
+// Dependencies: [17, 21, 4065, 712, 2]
 // Exports: ActivityIndicator
 
-// Module 5823 (ActivityIndicator)
+// Module 5862 (ActivityIndicator)
 import { ActivityIndicator } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ActivityIndicator = function ActivityIndicator(size) {
     flag = true;
   }
   const merged = Object.assign(size, Object.create(null));
-  let obj = require(4024) /* map */;
+  let obj = require(4065) /* map */;
   let color = merged.color;
   if (color == null) {
     color = obj.useToken(importDefault(712).colors.BACKGROUND_BRAND);

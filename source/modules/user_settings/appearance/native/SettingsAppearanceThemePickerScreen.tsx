@@ -1,10 +1,10 @@
-// Module ID: 14510
-// Function ID: 14511
+// Module ID: 14567
+// Function ID: 14568
 // Name: ThemeTypes
-// Dependencies: [32, 19, 17, 4124, 1346, 1303, 1302, 1304, 1305, 505, 21, 4303, 712, 500, 4303, 1236, 14511, 10210, 14513, 1493, 647, 4236, 1367, 1306, 1349, 1364, 5716, 14426, 1500, 5728, 5748, 5277, 8962, 4042, 4152, 4123, 4304, 4307, 4031, 8395, 4299, 4846, 5276, 14427, 14515, 9147, 14521, 14533, 14542, 5328, 7750, 2]
+// Dependencies: [32, 19, 17, 4165, 1346, 1303, 1302, 1304, 1305, 505, 21, 4344, 712, 500, 4344, 1236, 14568, 10251, 14570, 1493, 647, 4277, 1367, 1306, 1349, 1364, 5755, 14483, 1500, 5767, 5787, 5316, 9001, 4083, 4193, 4164, 4345, 4348, 4072, 8434, 4340, 4886, 5315, 14484, 14572, 9187, 14578, 14590, 14599, 5367, 7789, 2]
 // Exports: default
 
-// Module 14510 (ThemeTypes)
+// Module 14567 (ThemeTypes)
 import useSegmentedControlState from "useSegmentedControlState";
 import useWindowDimensions from "useWindowDimensions";
 import { View } from "ThemeDarkIcon";
@@ -102,19 +102,19 @@ function getSegmentedControlItems() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.K2sFfo);
   obj[1] = ThemeTypes.LIGHT;
-  obj[2] = callback(require(14511) /* ThemeLightIcon */.ThemeLightIcon, {});
+  obj[2] = callback(require(14568) /* ThemeLightIcon */.ThemeLightIcon, {});
   const items = [obj, , ];
   obj = { label: null, id: null, icon: null, page: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.b8Cei3);
   obj[1] = ThemeTypes.DARKER;
-  obj[2] = callback(require(10210) /* ThemeDarkIcon */.ThemeDarkIcon, {});
+  obj[2] = callback(require(10251) /* ThemeDarkIcon */.ThemeDarkIcon, {});
   items[1] = obj;
   obj = { label: null, id: null, icon: null, page: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.pQwSpQ);
   obj[1] = ThemeTypes.MIDNIGHT;
-  obj[2] = callback(require(14513) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
+  obj[2] = callback(require(14570) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
   items[2] = obj;
   return items;
 }

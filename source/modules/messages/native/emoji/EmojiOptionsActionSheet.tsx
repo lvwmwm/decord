@@ -1,10 +1,10 @@
-// Module ID: 8754
-// Function ID: 8755
+// Module ID: 8793
+// Function ID: 8794
 // Name: EmojiOptionsActionSheet
-// Dependencies: [19, 21, 5756, 4020, 4271, 5764, 5767, 5374, 4247, 1236, 2]
+// Dependencies: [19, 21, 5795, 4061, 4312, 5803, 5806, 5413, 4288, 1236, 2]
 // Exports: default
 
-// Module 8754 (EmojiOptionsActionSheet)
+// Module 8793 (EmojiOptionsActionSheet)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -24,11 +24,11 @@ export default function EmojiOptionsActionSheet(emojiSrc) {
   let obj = { children: null };
   obj = { hasIcons: true, children: null };
   obj = { icon: null, label: null, onPress: null };
-  obj[0] = jsx(emojiSrc(4247).LinkIcon, {});
+  obj[0] = jsx(emojiSrc(4288).LinkIcon, {});
   const intl = emojiSrc(1236).intl;
   obj[1] = intl.string(emojiSrc(1236).t.cIoudn);
   obj[2] = callback;
-  obj[1] = jsx(emojiSrc(5374).TableRow, { icon: null, label: null, onPress: null });
-  obj[0] = jsx(emojiSrc(5767).TableRowGroup, { icon: null, label: null, onPress: null });
-  return jsx(emojiSrc(5764).ActionSheet, { icon: null, label: null, onPress: null });
+  obj[1] = jsx(emojiSrc(5413).TableRow, { icon: null, label: null, onPress: null });
+  obj[0] = jsx(emojiSrc(5806).TableRowGroup, { icon: null, label: null, onPress: null });
+  return jsx(emojiSrc(5803).ActionSheet, { icon: null, label: null, onPress: null });
 };

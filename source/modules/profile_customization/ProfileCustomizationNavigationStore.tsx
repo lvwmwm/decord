@@ -1,9 +1,9 @@
-// Module ID: 10141
-// Function ID: 10142
+// Module ID: 10182
+// Function ID: 10183
 // Name: zustandStore
-// Dependencies: [4170, 685, 2]
+// Dependencies: [4211, 685, 2]
 
-// Module 10141 (zustandStore)
+// Module 10182 (zustandStore)
 import { ProfileCustomizationSubsection as closure_0 } from "MAX_FAVORITES";
 
 const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ subsection: constants.USER_PROFILE, scrollPosition: null }));

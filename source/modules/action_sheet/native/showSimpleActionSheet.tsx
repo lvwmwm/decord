@@ -1,9 +1,9 @@
-// Module ID: 5761
-// Function ID: 5762
+// Module ID: 5800
+// Function ID: 5801
 // Name: showSimpleActionSheet
-// Dependencies: [2, 5762]
+// Dependencies: [2, 5801]
 
-// Module 5761 (showSimpleActionSheet)
+// Module 5800 (showSimpleActionSheet)
 const result = require("set").fileFinishedImporting("modules/action_sheet/native/showSimpleActionSheet.tsx");
 
 export const showSimpleActionSheet = require("showSimpleActionSheet").showSimpleActionSheet;

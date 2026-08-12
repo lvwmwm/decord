@@ -1,10 +1,10 @@
-// Module ID: 7748
-// Function ID: 7749
+// Module ID: 7787
+// Function ID: 7788
 // Name: BuyNitroMarketingHeader
-// Dependencies: [19, 17, 6898, 21, 712, 4303, 4042, 4306, 4304, 4239, 7749, 500, 7750, 7746, 691, 5268, 6900, 7332, 4725, 1236, 7752, 4299, 7753, 7755, 2]
+// Dependencies: [19, 17, 6937, 21, 712, 4344, 4083, 4347, 4345, 4280, 7788, 500, 7789, 7785, 691, 5307, 6939, 7371, 4765, 1236, 7791, 4340, 7792, 7794, 2]
 // Exports: default
 
-// Module 7748 (BuyNitroMarketingHeader)
+// Module 7787 (BuyNitroMarketingHeader)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "registerAsset";
 import { Gradients } from "items";
@@ -65,8 +65,8 @@ let closure_11 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   obj[1] = obj;
   const tmp3 = -importDefault(712).space.PX_16;
   const tmp5 = absoluteFillObject;
-  obj[2] = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "__closure", alignSelf: 0.0000000000000000000000000000000000000000000000000000000000000000000000012027092305839254 };
-  const obj1 = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "__closure", alignSelf: 0.0000000000000000000000000000000000000000000000000000000000000000000000012027092305839254 };
+  obj[2] = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "space", alignSelf: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013175889103526936 };
+  const obj1 = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "space", alignSelf: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013175889103526936 };
   obj[3] = { position: "absolute", top: arg0 + importDefault(712).space.PX_20, right: importDefault(712).space.PX_4 };
   const obj3 = { height: null };
   obj3[0] = importDefault(712).space.PX_80 + importDefault(712).space.PX_4;

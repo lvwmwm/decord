@@ -1,9 +1,9 @@
-// Module ID: 12529
-// Function ID: 12530
+// Module ID: 12588
+// Function ID: 12589
 // Name: metadata
 // Dependencies: [2]
 
-// Module 12529 (metadata)
+// Module 12588 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/assets/mobile_wishlist_coachmark.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/1979309f7455b06e0bc1e8f5da89de9934155a0a9a74bfff5b680c82fb45d53f.png";

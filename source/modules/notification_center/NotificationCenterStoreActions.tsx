@@ -1,10 +1,10 @@
-// Module ID: 15548
-// Function ID: 15549
+// Module ID: 15604
+// Function ID: 15605
 // Name: setTab
 // Dependencies: [709, 2]
 // Exports: clearNotificationGuildMentions, refreshNotifications, setTab
 
-// Module 15548 (setTab)
+// Module 15604 (setTab)
 const result = require("set").fileFinishedImporting("modules/notification_center/NotificationCenterStoreActions.tsx");
 
 export const setTab = function setTab(BROWSE) {

@@ -1,10 +1,10 @@
-// Module ID: 12666
-// Function ID: 12667
+// Module ID: 12725
+// Function ID: 12726
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 505, 21, 4303, 712, 1236, 2403, 4299, 4714, 1297, 2]
+// Dependencies: [19, 17, 505, 21, 4344, 712, 1236, 2403, 4340, 4754, 1297, 2]
 // Exports: default
 
-// Module 12666 (InAppReportsBottomButton)
+// Module 12725 (InAppReportsBottomButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -77,7 +77,7 @@ export default function InAppReportsBottomButton(button) {
         const obj1 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
         obj1[0] = tmp.descriptionText;
         obj1[3] = tmp3;
-        tmp14Result = tmp14(tmp17(4299).Text, obj1);
+        tmp14Result = tmp14(tmp17(4340).Text, obj1);
       }
       const items1 = [tmp14Result, , ];
       const obj2 = { disabled: null, onPress: null, text: null, variant: null };
@@ -87,7 +87,7 @@ export default function InAppReportsBottomButton(button) {
       };
       obj2[2] = stringResult2;
       obj2[3] = str2;
-      items1[1] = callback(tmp17(4714).Button, obj2);
+      items1[1] = callback(tmp17(4754).Button, obj2);
       tmp14Result = null;
       if (hasError) {
         const obj3 = { style: null, children: null };

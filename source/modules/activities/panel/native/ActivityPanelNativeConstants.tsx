@@ -1,9 +1,9 @@
-// Module ID: 16110
-// Function ID: 16111
+// Module ID: 16167
+// Function ID: 16168
 // Name: DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG
-// Dependencies: [9764, 2]
+// Dependencies: [9805, 2]
 
-// Module 16110 (DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG)
+// Module 16167 (DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG)
 let obj = { top: null };
 obj = { disable: false, override: require("ActivityPanelModes").ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT };
 obj[0] = obj;

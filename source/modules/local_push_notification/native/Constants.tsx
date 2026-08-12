@@ -1,9 +1,9 @@
-// Module ID: 12982
-// Function ID: 12983
+// Module ID: 13041
+// Function ID: 13042
 // Name: LocalNotificationTypes
 // Dependencies: [2]
 
-// Module 12982 (LocalNotificationTypes)
+// Module 13041 (LocalNotificationTypes)
 const result = require("set").fileFinishedImporting("modules/local_push_notification/native/Constants.tsx");
 
 export const LocalNotificationTypes = { GUILD_VERIFICATION: "GUILD_VERIFICATION", CALL_RING: "CALL_RING", MESSAGE_SEND_FAILED: "MESSAGE_SEND_FAILED" };

@@ -1,10 +1,10 @@
-// Module ID: 7095
-// Function ID: 7096
+// Module ID: 7134
+// Function ID: 7135
 // Name: toSubmission
-// Dependencies: [7084, 2]
+// Dependencies: [7123, 2]
 // Exports: isApplicationWidgetWithId
 
-// Module 7095 (toSubmission)
+// Module 7134 (toSubmission)
 let ApplicationWidget;
 class ApplicationWidget {
   constructor(arg0) {

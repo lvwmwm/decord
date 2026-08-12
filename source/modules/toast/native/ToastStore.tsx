@@ -1,9 +1,9 @@
-// Module ID: 16047
-// Function ID: 16048
+// Module ID: 16104
+// Function ID: 16105
 // Name: ToastStore
 // Dependencies: [589, 709, 2]
 
-// Module 16047 (ToastStore)
+// Module 16104 (ToastStore)
 import { Store } from "initialize";
 
 let c0 = null;

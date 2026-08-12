@@ -1,9 +1,9 @@
-// Module ID: 4882
-// Function ID: 4883
+// Module ID: 4922
+// Function ID: 4923
 // Name: _initialize
-// Dependencies: [32, 17, 3, 4482, 2]
+// Dependencies: [32, 17, 3, 4522, 2]
 
-// Module 4882 (_initialize)
+// Module 4922 (_initialize)
 import _slicedToArray from "_slicedToArray";
 import { NativeModules } from "get ActivityIndicator";
 import "initialize";

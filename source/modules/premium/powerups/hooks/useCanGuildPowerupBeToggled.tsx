@@ -1,10 +1,10 @@
-// Module ID: 11896
-// Function ID: 11897
+// Module ID: 11953
+// Function ID: 11954
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 4190, 4191, 589, 11863, 1236, 2335, 2]
+// Dependencies: [19, 4231, 4232, 589, 11920, 1236, 2335, 2]
 // Exports: default
 
-// Module 11896 (useCanGuildPowerupBeToggled)
+// Module 11953 (useCanGuildPowerupBeToggled)
 import noop from "noop";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
 import { PowerupActiveStatusType } from "BoostedGuildTiers";
@@ -18,7 +18,7 @@ export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
   const dependencyMap = arg2;
   const items = [calculateAppliedBoosts];
   const stateFromStores = _require(589).useStateFromStores(items, () => tmp2.getStateForGuild(closure_0));
-  const tmp2 = importDefault(11863)(arg0, arg1);
+  const tmp2 = importDefault(11920)(arg0, arg1);
   calculateAppliedBoosts = tmp2;
   const items1 = [stateFromStores, , , , ];
   ({ skuId: arr2[1], dependencies: arr2[2] } = arg1);

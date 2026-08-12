@@ -1,10 +1,10 @@
-// Module ID: 12267
-// Function ID: 12268
+// Module ID: 12330
+// Function ID: 12331
 // Name: BotUserProfileOverflowMenu
-// Dependencies: [19, 1391, 3957, 1979, 1922, 676, 10369, 21, 589, 12268, 8794, 5728, 5748, 8789, 1236, 9249, 4271, 10371, 2007, 503, 7786, 10370, 12269, 12269, 500, 11980, 698, 5756, 4148, 4020, 7591, 8343, 11523, 3993, 12270, 8604, 7753, 8610, 712, 2]
+// Dependencies: [19, 1391, 3998, 1979, 1922, 676, 10410, 21, 589, 12331, 8833, 5767, 5787, 8828, 1236, 9289, 4312, 10412, 2007, 503, 7825, 10411, 12332, 12332, 500, 12037, 698, 5795, 4189, 4061, 7630, 8382, 11580, 4034, 12333, 8643, 7792, 8649, 712, 2]
 // Exports: default
 
-// Module 12267 (BotUserProfileOverflowMenu)
+// Module 12330 (BotUserProfileOverflowMenu)
 import encodeProperties from "encodeProperties";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";

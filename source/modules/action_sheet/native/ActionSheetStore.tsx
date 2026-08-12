@@ -1,9 +1,9 @@
-// Module ID: 4013
-// Function ID: 4014
+// Module ID: 4054
+// Function ID: 4055
 // Name: setContent
 // Dependencies: [589, 709, 2]
 
-// Module 4013 (setContent)
+// Module 4054 (setContent)
 import { Store } from "initialize";
 
 let array = new Array();

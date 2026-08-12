@@ -1,10 +1,10 @@
-// Module ID: 16300
-// Function ID: 16301
+// Module ID: 16357
+// Function ID: 16358
 // Name: voiceSettings
-// Dependencies: [19, 4389, 676, 21, 1236, 16301, 6018, 4271, 4497, 4643, 16298, 2007, 16302, 4367, 16303, 9071, 4158, 10873, 8020, 7, 4021, 8929, 2]
+// Dependencies: [19, 4429, 676, 21, 1236, 16358, 6057, 4312, 4537, 4683, 16355, 2007, 16359, 4407, 16360, 9110, 4199, 10926, 8059, 7, 4062, 8968, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 16300 (voiceSettings)
+// Module 16357 (voiceSettings)
 import "report";
 import initialize from "initialize";
 import ME from "ME";
@@ -22,12 +22,12 @@ export const voiceSettings = function voiceSettings() {
   let obj = { label: null, icon: null, onPress: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.NiTd0e);
-  obj[1] = importDefault(16301);
+  obj[1] = importDefault(16358);
   obj[2] = function onPress() {
-    let obj = callback(6018);
+    let obj = callback(6057);
     obj = { screen: constants.VOICE };
     obj.openUserSettings(obj);
-    callback2(4271).hideActionSheet();
+    callback2(4312).hideActionSheet();
   };
   return obj;
 };
@@ -46,7 +46,7 @@ export const videoParticipantsHidden = function videoParticipantsHidden(arg0, ar
 export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStreamAndVideoConfirmDialog(arg0, arg1) {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let obj = importDefault(4643);
+  let obj = importDefault(4683);
   obj = {
     importer() {
       return callback(outer1_2[11])(outer1_2[10], outer1_2.paths).then((arg0) => {
@@ -79,7 +79,7 @@ export const reportStreamIssue = function reportStreamIssue(stream) {
   let obj = { label: null, icon: null, onPress: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.KHGhHf);
-  obj[1] = importDefault(16302);
+  obj[1] = importDefault(16359);
   obj[2] = function onPress() {
     let obj = stream(outer1_2[13]);
     const encodeStreamKeyResult = obj.encodeStreamKey(stream);
@@ -101,19 +101,19 @@ export const invite = function invite(isPrivate) {
   const dependencyMap = arg2;
   if (null != arg1) {
     function onPress() {
-      let obj = isPrivate(9071);
+      let obj = isPrivate(9110);
       obj = { source: outer1_6.STREAM, stream: closure_1 };
       return obj.showInstantInviteActionSheet(isPrivate, obj);
     }
   } else {
     onPress = function onPress() {
-      let obj = isPrivate(9071);
+      let obj = isPrivate(9110);
       obj = { source: outer1_6.VOICE_CHANNEL };
       return obj.showInstantInviteActionSheet(isPrivate, obj);
     };
     if (null != arg2) {
       onPress = function onPress() {
-        let obj = isPrivate(9071);
+        let obj = isPrivate(9110);
         obj = { source: outer1_6.ACTIVITY_INVITE, targetApplicationId: dependencyMap };
         return obj.showInstantInviteActionSheet(isPrivate, obj);
       };
@@ -121,13 +121,13 @@ export const invite = function invite(isPrivate) {
   }
   if (isPrivate.isPrivate()) {
     onPress = function onPress() {
-      return isPrivate(4158).navigateToNewGroupDM(isPrivate.id, outer1_5.CHANNEL_CALL);
+      return isPrivate(4199).navigateToNewGroupDM(isPrivate.id, outer1_5.CHANNEL_CALL);
     };
   }
   let obj = { label: null, icon: null, onPress: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.VINpSK);
-  obj[1] = importDefault(10873);
+  obj[1] = importDefault(10926);
   obj[2] = onPress;
   return obj;
 };
@@ -136,7 +136,7 @@ export const rtcDebugPanel = function rtcDebugPanel(arg0) {
   const obj = { label: null, icon: null, onPress: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.X8bCMe);
-  obj[1] = importDefault(8020);
+  obj[1] = importDefault(8059);
   obj[2] = function onPress() {
     callback();
     outer1_1(outer1_2[7]).hideActionSheet();
@@ -147,7 +147,7 @@ export const shareActivityLogs = function shareActivityLogs() {
   let obj = { label: null, icon: null, onPress: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.iQzQs3);
-  obj[1] = importDefault(8020);
+  obj[1] = importDefault(8059);
   obj[2] = function onPress() {
     let obj = callback(table[19]);
     const items = [closure_7];

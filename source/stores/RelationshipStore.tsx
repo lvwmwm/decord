@@ -1,9 +1,9 @@
-// Module ID: 3957
-// Function ID: 3958
+// Module ID: 3998
+// Function ID: 3999
 // Name: markAllUserIdListsStale
-// Dependencies: [32, 3958, 1922, 676, 709, 589, 2]
+// Dependencies: [32, 3999, 1922, 676, 709, 589, 2]
 
-// Module 3957 (markAllUserIdListsStale)
+// Module 3998 (markAllUserIdListsStale)
 import _slicedToArray from "_slicedToArray";
 import hasFlag from "hasFlag";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -105,7 +105,7 @@ let closure_15 = {};
 let c16 = 0;
 let c17 = 0;
 let c18 = 0;
-let closure_19 = { friends: "Array", blocked: "flex", ignored: "y", blockedOrIgnored: "HermesInternal" };
+let closure_19 = { friends: "right", blocked: "channel", ignored: "source", blockedOrIgnored: "bottom" };
 const set3 = new Set();
 const map1 = new Map();
 class RelationshipStore extends Store {

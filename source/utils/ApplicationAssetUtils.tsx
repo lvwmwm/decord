@@ -1,10 +1,10 @@
-// Module ID: 8245
-// Function ID: 8246
+// Module ID: 8284
+// Function ID: 8285
 // Name: updateAssets
-// Dependencies: [32, 5, 8246, 676, 38, 3, 530, 709, 1469, 2]
+// Dependencies: [32, 5, 8285, 676, 38, 3, 530, 709, 1469, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8245 (updateAssets)
+// Module 8284 (updateAssets)
 import _slicedToArray from "_slicedToArray";
 import timestamp from "timestamp";
 import handleFetchEmbeddedActivityShelfSuccess from "handleFetchEmbeddedActivityShelfSuccess";
@@ -374,7 +374,7 @@ function _fetchAssetIds() {
               c5 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp5) {

@@ -1,10 +1,10 @@
-// Module ID: 15264
-// Function ID: 15265
+// Module ID: 15321
+// Function ID: 15322
 // Name: getVoiceUserHeight
-// Dependencies: [19, 17, 4295, 676, 21, 1297, 9458, 4303, 712, 9801, 589, 9244, 9245, 9247, 698, 4042, 4304, 1435, 15265, 9190, 9192, 9186, 9188, 7716, 7693, 12218, 9257, 2]
+// Dependencies: [19, 17, 4336, 676, 21, 1297, 9498, 4344, 712, 9842, 589, 9284, 9285, 9287, 698, 4083, 4345, 1435, 15322, 9230, 9232, 9226, 9228, 7755, 7732, 12281, 9297, 2]
 // Exports: getVoiceUserHeight
 
-// Module 15264 (getVoiceUserHeight)
+// Module 15321 (getVoiceUserHeight)
 import importAllResult from "MicrophoneDenyIcon";
 import { View } from "getAvatarURL";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -257,6 +257,6 @@ const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedI
 
 export default memoResult;
 export const getVoiceUserHeight = function getVoiceUserHeight(fontScale) {
-  const obj = require(9458) /* map */;
-  return Math.max(require(9458) /* map */.scaleTextLineHeight(c9, fontScale), require(1297) /* Button */.AVATAR_SIZE_MAP[XSMALL_20]) + 10;
+  const obj = require(9498) /* map */;
+  return Math.max(require(9498) /* map */.scaleTextLineHeight(c9, fontScale), require(1297) /* Button */.AVATAR_SIZE_MAP[XSMALL_20]) + 10;
 };

@@ -1,12 +1,12 @@
-// Module ID: 12038
-// Function ID: 12039
+// Module ID: 12095
+// Function ID: 12096
 // Name: _uploadContacts
-// Dependencies: [5, 17, 4998, 12037, 12036, 676, 501, 5127, 503, 709, 12039, 3993, 1208, 589, 1403, 1993, 4017, 4509, 2]
+// Dependencies: [5, 17, 5038, 12094, 12093, 676, 501, 5167, 503, 709, 12096, 4034, 1208, 589, 1403, 1993, 4058, 4549, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 12038 (_uploadContacts)
+// Module 12095 (_uploadContacts)
 import closure_3 from "ME";
-import { NativeModules } from "module_4509";
+import { NativeModules } from "module_4549";
 import set from "set";
 import setStoredContacts from "setStoredContacts";
 import ContactSyncLandingPage from "ContactSyncLandingPage";
@@ -31,33 +31,99 @@ function _uploadContacts() {
     let c4 = 0;
     let c5 = 0;
     const iter = (function*(arg0, body) {
-      let dependencyMap = tmp2;
-      if (flag === undefined) {
-        flag = false;
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              body = tmp5;
+              let dependencyMap = tmp2;
+              let flag;
+              if (flag === undefined) {
+                flag = false;
+              }
+              dependencyMap = undefined;
+              body = undefined;
+              c4 = 1;
+              c5 = 1;
+              return { value: "ct", done: true };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = body;
+              return obj1;
+            } else {
+              const _JSON = JSON;
+              dependencyMap = JSON.parse(callback);
+              let obj7 = flag(5167);
+              const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
+              obj2[0] = constants2.CONNECTION_SYNC_CONTACTS;
+              const obj3 = { friend_list_entries: null, background: null, allowed_in_suggestions: null, include_mutual_friends_count: false };
+              obj3[0] = dependencyMap;
+              obj3[1] = flag;
+              obj3[2] = constants.ANYONE_WITH_CONTACT_INFO;
+              obj2[1] = obj3;
+              const obj4 = { event: null };
+              obj4[0] = callback(503).NetworkActionNames.USER_CONTACTS_SYNC;
+              obj2[2] = obj4;
+              c4 = 2;
+              c5 = 1;
+              const obj5 = { value: null, done: false };
+              obj5[0] = obj7.put(obj2);
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = body;
+            return obj6;
+          } else {
+            body = body.body;
+            obj = flag(709);
+            obj.wait(() => {
+              let obj = flag(table[9]);
+              obj = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: body.friend_suggestions };
+              return obj.dispatch(obj);
+            });
+            c5 = 3;
+            obj7 = { value: null, done: true };
+            obj7[0] = body;
+            return obj7;
+          }
+        } catch (tmp12) {
+          c5 = tmp;
+          throw tmp12;
+        }
       }
-      yield "ct";
-      const _JSON = JSON;
-      dependencyMap = JSON.parse(callback);
-      const obj7 = flag(5127);
-      const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
-      obj2[0] = constants2.CONNECTION_SYNC_CONTACTS;
-      const obj3 = { friend_list_entries: null, background: null, allowed_in_suggestions: null, include_mutual_friends_count: false };
-      obj3[0] = dependencyMap;
-      obj3[1] = flag;
-      obj3[2] = constants.ANYONE_WITH_CONTACT_INFO;
-      obj2[1] = obj3;
-      const obj4 = { event: null };
-      obj4[0] = callback(503).NetworkActionNames.USER_CONTACTS_SYNC;
-      obj2[2] = obj4;
-      yield obj7.put(obj2);
-      body = body.body;
-      let obj = flag(709);
-      obj.wait(() => {
-        let obj = flag(table[9]);
-        obj = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: body.friend_suggestions };
-        return obj.dispatch(obj);
-      });
-      return body;
     })();
     iter.next();
     return iter;
@@ -129,7 +195,7 @@ export const uploadContacts = function uploadContacts(c3, arg1) {
   return applyArgumentsResult;
 };
 export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
-  let obj = importDefault(5127);
+  let obj = importDefault(5167);
   obj = { url: closure_12.USER_BULK_RELATIONSHIPS, body: obj, trackedActionData: null, rejectWithError: false };
   obj = { user_ids, token: bulkAddToken };
   obj[2] = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE };
@@ -139,14 +205,14 @@ export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
 export const adminDeleteContactSync = function adminDeleteContactSync() {
   callback2();
   callback3();
-  let obj = require(12039) /* _requestAndSyncContacts */;
+  let obj = require(12096) /* _requestAndSyncContacts */;
   const result = obj.removeLastUserContactsUpload();
-  const ContactSyncEnabled = require(3993) /* explicitContentFromProto */.ContactSyncEnabled;
+  const ContactSyncEnabled = require(4034) /* explicitContentFromProto */.ContactSyncEnabled;
   ContactSyncEnabled.updateSetting(false);
   obj = { url: closure_12.CONNECTION(constants2.CONTACTS, "@me"), oldFormErrors: true, trackedActionData: null, rejectWithError: false };
   obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_CONNECTIONS_UPDATE };
   obj[2] = obj;
-  return importDefault(5127).delete(obj);
+  return importDefault(5167).delete(obj);
 };
 export const getImageForContactId = function getImageForContactId(closure_0, arg1) {
   let DCDContactSyncManager = NativeModules.DCDContactSyncManager;
@@ -221,7 +287,7 @@ export const useContactSyncEnabled = function useContactSyncEnabled() {
   });
 };
 export const useContactSyncUserIsDiscoverable = function useContactSyncUserIsDiscoverable() {
-  const FriendDiscoverySettings = require(3993) /* explicitContentFromProto */.FriendDiscoverySettings;
+  const FriendDiscoverySettings = require(4034) /* explicitContentFromProto */.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
   let obj = require(1403) /* hasFlag */;
   let hasFlagResult = obj.hasFlag(setting, constants3.FIND_BY_PHONE);
@@ -244,9 +310,9 @@ export const getOpenLearnMoreUrl = function getOpenLearnMoreUrl() {
   return importDefault(1993).getArticleURL(constants4.CONTACT_SYNC);
 };
 export const handleOpenLearnMoreLink = function handleOpenLearnMoreLink() {
-  const obj = importDefault(4017);
+  const obj = importDefault(4058);
   obj.openURL(importDefault(1993).getArticleURL(constants4.CONTACT_SYNC));
 };
 export const transitionToAddFriendsLandingPage = function transitionToAddFriendsLandingPage() {
-  importDefault(4509).popWithKey(closure_9);
+  importDefault(4549).popWithKey(closure_9);
 };

@@ -1,9 +1,9 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 16958
+// Function ID: 16959
 // Name: resolveMediaPostEmbeds
-// Dependencies: [1981, 1218, 1990, 10415, 676, 693, 4489, 1403, 11280, 5261, 16511, 2]
+// Dependencies: [1981, 1218, 1990, 10456, 676, 693, 4529, 1403, 11334, 5300, 16568, 2]
 
-// Module 16900 (resolveMediaPostEmbeds)
+// Module 16958 (resolveMediaPostEmbeds)
 import isSubscriptionGated from "isSubscriptionGated";
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

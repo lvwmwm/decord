@@ -1,10 +1,10 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16334
+// Function ID: 16335
 // Name: VoicePanelNsfwAlert
-// Dependencies: [19, 1434, 1910, 21, 4647, 4647, 1236, 5232, 5129, 2]
+// Dependencies: [19, 1434, 1910, 21, 4687, 4687, 1236, 5271, 5169, 2]
 // Exports: default
 
-// Module 16277 (VoicePanelNsfwAlert)
+// Module 16334 (VoicePanelNsfwAlert)
 import "noop";
 import { isGuildNSFW } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -20,7 +20,7 @@ export default function VoicePanelNsfwAlert(guildId) {
   guildId = guildId.guildId;
   const channelId = guildId.channelId;
   let dependencyMap;
-  let obj = guildId(4647);
+  let obj = guildId(4687);
   dependencyMap = obj.useDismissModalCallback();
   const tmp3 = isGuildNSFW(guild.getGuild(guildId));
   const intl = guildId(1236).intl;
@@ -45,29 +45,29 @@ export default function VoicePanelNsfwAlert(guildId) {
   const obj1 = {
     variant: "primary",
     onPress() {
-      channelId(5232).nsfwAgree(guildId);
-      const obj = channelId(5232);
-      const voiceChannel = channelId(5129).selectVoiceChannel(channelId);
+      channelId(5271).nsfwAgree(guildId);
+      const obj = channelId(5271);
+      const voiceChannel = channelId(5169).selectVoiceChannel(channelId);
       dependencyMap();
     },
     text: null
   };
   const intl3 = tmp(1236).intl;
   obj1[2] = intl3.string(guildId(1236).t.wVq7uo);
-  const items = [closure_5(guildId(4647).AlertActionButton, obj1, "confirm"), ];
+  const items = [closure_5(guildId(4687).AlertActionButton, obj1, "confirm"), ];
   const obj2 = {
     variant: "secondary",
     onPress() {
-      channelId(5232).nsfwReturnToSafety(guildId);
+      channelId(5271).nsfwReturnToSafety(guildId);
       dependencyMap();
     },
     text: null
   };
   const intl4 = tmp(1236).intl;
   obj2[2] = intl4.string(guildId(1236).t["/g10LC"]);
-  items[1] = closure_5(guildId(4647).AlertActionButton, obj2, "add-profile-picture");
+  items[1] = closure_5(guildId(4687).AlertActionButton, obj2, "add-profile-picture");
   obj[0] = items;
-  obj[2] = callback(guildId(4647).AlertActions, obj);
-  return closure_5(guildId(4647).AlertModal, obj);
+  obj[2] = callback(guildId(4687).AlertActions, obj);
+  return closure_5(guildId(4687).AlertModal, obj);
 };
 export const VOICE_PANEL_NSFW_KEY = "voice-panel-nsfw";

@@ -1,10 +1,10 @@
-// Module ID: 9008
-// Function ID: 9009
+// Module ID: 9047
+// Function ID: 9048
 // Name: useGuildProfile
-// Dependencies: [5, 19, 9007, 589, 9009, 2]
+// Dependencies: [5, 19, 9046, 589, 9048, 2]
 // Exports: useGuildProfile
 
-// Module 9008 (useGuildProfile)
+// Module 9047 (useGuildProfile)
 import set from "set";
 import noop from "noop";
 import handleUpdateStart from "handleUpdateStart";
@@ -26,14 +26,78 @@ export const useGuildProfile = function useGuildProfile(guildId) {
     let c3 = 0;
     let c4 = 0;
     const iter = (function*() {
-      let closure_1 = tmp2;
-      if (flag === undefined) {
-        flag = false;
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let set = tmp5;
+              let closure_1 = tmp2;
+              let flag;
+              if (flag === undefined) {
+                flag = false;
+              }
+              c3 = 1;
+              c4 = 1;
+              return { value: "ct", done: true };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              let obj2 = callback(outer1_1[4]);
+              c3 = 2;
+              c4 = 1;
+              obj2 = { value: null, done: false };
+              obj2[0] = obj2.getGuildProfile(flag, flag);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          } else {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp12) {
+          c4 = tmp;
+          throw tmp12;
+        }
       }
-      yield "ct";
-      const obj2 = callback(outer1_1[4]);
-      yield obj2.getGuildProfile(flag, flag);
-      return arg1;
     })();
     iter.next();
     return iter;

@@ -1,8 +1,8 @@
-// Module ID: 9139
-// Function ID: 9140
-// Dependencies: [19, 17, 7197, 21, 4303, 1236, 4714, 2]
+// Module ID: 9179
+// Function ID: 9180
+// Dependencies: [19, 17, 7236, 21, 4344, 1236, 4754, 2]
 
-// Module 9139
+// Module 9179
 import { View } from "get ActivityIndicator";
 import { InviteSendStates } from "InviteSendStates";
 import { jsx } from "jsxProd";
@@ -46,7 +46,7 @@ const memoResult = require("noop").memo(function InviteButton(onPress) {
     disabled = flag;
   }
   obj[5] = disabled;
-  obj[1] = jsx(require(4714) /* Button */.Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPress.onPressSend, disabled: null, grow: true });
+  obj[1] = jsx(require(4754) /* Button */.Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: stringResult1, onPress: onPress.onPressSend, disabled: null, grow: true });
   return <View accessibilityRole="none" size="sm" variant="secondary" text={stringResult1} onPress={arg0.onPressSend} disabled={null} grow />;
 });
 const result = require("InviteSendStates").fileFinishedImporting("modules/instant_invite/native/components/InviteButton.tsx");

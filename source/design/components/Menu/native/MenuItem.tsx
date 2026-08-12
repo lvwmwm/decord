@@ -1,9 +1,9 @@
-// Module ID: 13393
-// Function ID: 13394
+// Module ID: 13450
+// Function ID: 13451
 // Name: MenuItem
-// Dependencies: [19, 21, 4303, 13391, 4716, 5367, 5387, 2]
+// Dependencies: [19, 21, 4344, 13448, 4756, 5406, 5426, 2]
 
-// Module 13393 (MenuItem)
+// Module 13450 (MenuItem)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,7 +29,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   action = action.action;
   let menuClose;
   const tmp = callback();
-  menuClose = importAllResult.useContext(action(13391).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(13448).MenuContext).menuClose;
   if (null != IconComponent) {
     let tmp3 = <IconComponent size="sm" />;
   } else {
@@ -38,7 +38,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
       let obj = { source: null, style: null };
       obj[0] = iconSource;
       obj[1] = tmp.formIcon;
-      tmp3 = jsx(menuClose(4716), { source: null, style: null });
+      tmp3 = jsx(menuClose(4756), { source: null, style: null });
     }
   }
   obj = { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null };
@@ -63,14 +63,14 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
     obj = { text: null, style: null };
     obj[0] = label;
     obj[1] = tmp.formLabel;
-    tmp7Result = tmp7(menuClose(5387), obj);
+    tmp7Result = tmp7(menuClose(5426), obj);
   }
   obj[6] = tmp7Result;
   obj[7] = function onPress() {
     action();
     menuClose();
   };
-  return jsx(menuClose(5367), { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null });
+  return jsx(menuClose(5406), { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null });
 });
 const result = require("createCacheKey").fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
 

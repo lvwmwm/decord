@@ -1,38 +1,36 @@
-// Module ID: 4330
-// Function ID: 4331
-// Name: items1
-// Dependencies: [4331, 4332, 2]
+// Module ID: 4371
+// Function ID: 4372
+// Name: items
+// Dependencies: [4372, 4373, 2]
 // Exports: getMigratedApplicationIdentityConnectionsScreenApplications
 
-// Module 4330 (items1)
+// Module 4371 (items)
 let obj = { RIOT_GAMES: "1443033465766281327", LEAGUE_OF_LEGENDS: "1443349464290168976", VALORANT: "1443350165678198935", BATTLENET: "1356665549089800303", WORLD_OF_WARCRAFT: "1384671873593512078" };
 obj = { [obj.RIOT_GAMES]: obj, [obj.LEAGUE_OF_LEGENDS]: obj1, [obj.VALORANT]: obj2, [obj.BATTLENET]: obj3, [obj.WORLD_OF_WARCRAFT]: obj4 };
 obj = {
   applicationId: obj.RIOT_GAMES,
   getMigrationExperimentEnabled(location) {
-    let obj = require(4331) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4372) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.getIsRiotSocialSDKMigrationEnabled(obj);
   },
   useMigrationExperimentEnabled(location) {
-    let obj = require(4331) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4372) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.useIsRiotSocialSDKMigrationEnabled(obj);
   },
   connectionEntrypointUrlOverride: "https://aes.sgp.pvp.net/providers/discord/link/v1?origin=Discord"
 };
-const items = [obj[obj.RIOT_GAMES]];
+const items = [obj[obj.RIOT_GAMES], obj[obj.BATTLENET]];
 const items1 = [obj[obj.RIOT_GAMES], obj[obj.BATTLENET]];
-const items2 = [obj[obj.RIOT_GAMES], obj[obj.BATTLENET]];
 const result = require("set").fileFinishedImporting("modules/user_application_identity/UserApplicationIdentityConstants.tsx");
 
 export const ApplicationIdentityAppIds = obj;
 export const APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS = items;
-export const APPLICATION_IDENTITY_CONNECTIONS_SCREEN_APPLICATIONS = items1;
-export const APPLICATION_IDENTITY_CONNECTIONS_INCENTIVIZED_APPLICATIONS = items2;
+export const APPLICATION_IDENTITY_CONNECTIONS_INCENTIVIZED_APPLICATIONS = items1;
 export const APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS = { [obj.WORLD_OF_WARCRAFT]: obj[obj.WORLD_OF_WARCRAFT], [obj.RIOT_GAMES]: obj[obj.RIOT_GAMES], [obj.LEAGUE_OF_LEGENDS]: obj[obj.LEAGUE_OF_LEGENDS], [obj.VALORANT]: obj[obj.VALORANT] };
 export const getMigratedApplicationIdentityConnectionsScreenApplications = function getMigratedApplicationIdentityConnectionsScreenApplications(arg0) {
   let closure_0 = arg0;
-  const found = items1.filter((getMigrationExperimentEnabled) => getMigrationExperimentEnabled.getMigrationExperimentEnabled(closure_0));
+  const found = items.filter((getMigrationExperimentEnabled) => getMigrationExperimentEnabled.getMigrationExperimentEnabled(closure_0));
   return found.map((applicationId) => applicationId.applicationId);
 };

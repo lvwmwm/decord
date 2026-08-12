@@ -1,10 +1,10 @@
-// Module ID: 9443
-// Function ID: 9444
+// Module ID: 9483
+// Function ID: 9484
 // Name: useTrackPdpClick
-// Dependencies: [19, 676, 9353, 9354, 7016, 698, 2]
+// Dependencies: [19, 676, 9393, 9394, 7055, 698, 2]
 // Exports: useTrackPdpClick
 
-// Module 9443 (useTrackPdpClick)
+// Module 9483 (useTrackPdpClick)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 

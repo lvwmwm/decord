@@ -1,9 +1,9 @@
-// Module ID: 6843
-// Function ID: 6844
+// Module ID: 6882
+// Function ID: 6883
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6843 (metadata)
+// Module 6882 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WateringCanSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/730c2361a9c4935f4203ac158c71d8928f9f47ed6f3118b12d0815e6f040d002.png";

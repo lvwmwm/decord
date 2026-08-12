@@ -1,10 +1,10 @@
-// Module ID: 10000
-// Function ID: 10001
+// Module ID: 10041
+// Function ID: 10042
 // Name: _executeCommand
-// Dependencies: [5, 5176, 1994, 1910, 4639, 1922, 7240, 676, 4296, 6985, 709, 7225, 6983, 1954, 10001, 10003, 38, 10004, 4498, 7238, 8362, 3961, 1370, 7214, 8225, 7294, 8224, 9543, 8314, 7213, 6920, 4856, 1236, 4852, 7302, 2]
+// Dependencies: [5, 5215, 1994, 1910, 4679, 1922, 7279, 676, 4337, 7024, 709, 7264, 7022, 1954, 10042, 10044, 38, 10045, 4538, 7277, 8401, 4002, 1370, 7253, 8264, 7333, 8263, 9583, 8353, 7252, 6959, 4896, 1236, 4892, 7341, 2]
 // Exports: default, retryCommandMessage
 
-// Module 10000 (_executeCommand)
+// Module 10041 (_executeCommand)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import _getSystemLocale from "_getSystemLocale";
@@ -123,7 +123,7 @@ function _executeCommand() {
                 c15 = 1;
                 let num11 = 1;
                 channelId = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "ct", done: true };
               }
             } else {
               if (1 === tmp4) {
@@ -1332,7 +1332,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj[3] = tmp;
     let nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      let obj1 = obj(7214);
+      let obj1 = obj(7253);
       nonce = obj1.createNonce();
     }
     obj[4] = nonce;
@@ -1349,7 +1349,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj[1] = applicationId;
     obj[2] = id;
     obj[4] = obj;
-    importAll(8225).addQueued(obj.nonce, obj);
+    importAll(8264).addQueued(obj.nonce, obj);
     if (null != attachments) {
       if (attachments.length > 0) {
         (function stageAttachments(attachments, nonce, id, maxSizeCallback) {
@@ -1401,12 +1401,12 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         })(attachments, obj.nonce, id, maxSizeCallback);
       }
     }
-    const obj3 = importAll(8225);
+    const obj3 = importAll(8264);
     const tmp10 = obj;
     obj1 = { type: null, message: null };
-    obj1[0] = tmp10(7294).MessageDataType.COMMAND;
+    obj1[0] = tmp10(7333).MessageDataType.COMMAND;
     obj1[1] = obj;
-    onMessageSuccess(7294).enqueue(obj1, (ok) => {
+    onMessageSuccess(7333).enqueue(obj1, (ok) => {
       let applicationId;
       let channelId;
       let guildId;
@@ -1424,7 +1424,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         callback2();
       }
     });
-    const obj6 = onMessageSuccess(7294);
+    const obj6 = onMessageSuccess(7333);
   }
 }
 function displayInteractionLifecycleInChat() {
@@ -1618,26 +1618,26 @@ function _displayInteractionLifecycleInChat() {
   return applyArgumentsResult;
 }
 function getAnalyticsLocationFromCommandOrigin(arg0) {
-  if (require(6985) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
-    return tmp(6985).ApplicationCommandTriggerLocations.APP_LAUNCHER;
-  } else if (tmp(6985).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
-    return tmp(6985).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
-  } else if (tmp(6985).CommandOrigin.IMAGE_RECS_MENU === arg0) {
-    return tmp(6985).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
-  } else if (tmp(6985).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
-    return tmp(6985).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
-  } else if (tmp(6985).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
-    return tmp(6985).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
-  } else if (tmp(6985).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
-    return tmp(6985).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
-  } else if (tmp(6985).CommandOrigin.MINI_SHELF === arg0) {
-    return tmp(6985).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
-  } else if (tmp(6985).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
-    return tmp(6985).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
-  } else if (tmp(6985).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
-    return tmp(6985).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
+  if (require(7024) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
+    return tmp(7024).ApplicationCommandTriggerLocations.APP_LAUNCHER;
+  } else if (tmp(7024).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
+    return tmp(7024).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
+  } else if (tmp(7024).CommandOrigin.IMAGE_RECS_MENU === arg0) {
+    return tmp(7024).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
+  } else if (tmp(7024).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
+    return tmp(7024).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
+  } else if (tmp(7024).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
+    return tmp(7024).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
+  } else if (tmp(7024).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
+    return tmp(7024).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
+  } else if (tmp(7024).CommandOrigin.MINI_SHELF === arg0) {
+    return tmp(7024).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
+  } else if (tmp(7024).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
+    return tmp(7024).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
+  } else if (tmp(7024).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
+    return tmp(7024).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
   } else {
-    return tmp(6985).ApplicationCommandTriggerLocations.SLASH_UI;
+    return tmp(7024).ApplicationCommandTriggerLocations.SLASH_UI;
   }
 }
 function getMaxAndTotalFileSize() {
@@ -1839,13 +1839,13 @@ function _stageAttachments() {
                 if (callback2 != null) {
                   tmp(dependencyMap, arg0);
                 }
-                let obj = callback2(8225);
+                let obj = callback2(8264);
                 const intl = callback(1236).intl;
                 obj = { maxSize: null };
-                obj[0] = callback(4856).sizeString(dependencyMap);
+                obj[0] = callback(4896).sizeString(dependencyMap);
                 obj.setFailed(closure_1, outer1_11.ENTITY_TOO_LARGE, intl.formatToPlainString(callback(1236).t.fxEKdS, obj));
               };
-              dependencyMap = lib(4856).maxFileSize(callback2);
+              dependencyMap = lib(4896).maxFileSize(callback2);
               largestUploadedFileSize = 1;
               c8 = 1;
               const obj1 = { value: null, done: false };
@@ -1867,12 +1867,12 @@ function _stageAttachments() {
               largestUploadedFileSize = getEmojiToGroupId.largestUploadedFileSize;
               const _Math = Math;
               if (largestUploadedFileSize <= Math.max(dependencyMap, outer1_15)) {
-                if (totalSize <= lib(4852).MAX_TOTAL_ATTACHMENT_SIZE) {
+                if (totalSize <= lib(4892).MAX_TOTAL_ATTACHMENT_SIZE) {
                   totalSize = 1;
                   largestUploadedFileSize = 4;
                   c8 = 1;
                   let obj3 = { value: null, done: false };
-                  obj3[0] = callback(7302)(lib);
+                  obj3[0] = callback(7341)(lib);
                   return obj3;
                 }
               }
@@ -1883,7 +1883,7 @@ function _stageAttachments() {
           } else {
             if (2 === tmp8) {
               totalSize = 0;
-              obj3 = callback2(8225);
+              obj3 = callback2(8264);
               let intl = lib(1236).intl;
               const obj4 = { count: null };
               obj4[0] = lib.length;
@@ -1906,7 +1906,7 @@ function _stageAttachments() {
                 largestUploadedFileSize = c8.largestUploadedFileSize;
                 let someResult = lib.some((error) => error.error === constants.ENTITY_TOO_LARGE);
                 if (!someResult) {
-                  someResult = totalSize > lib(4852).MAX_TOTAL_ATTACHMENT_SIZE;
+                  someResult = totalSize > lib(4892).MAX_TOTAL_ATTACHMENT_SIZE;
                 }
                 let flag = !someResult;
                 if (someResult) {

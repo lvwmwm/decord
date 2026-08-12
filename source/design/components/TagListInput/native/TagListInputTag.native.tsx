@@ -1,10 +1,10 @@
-// Module ID: 9018
-// Function ID: 9019
+// Module ID: 9057
+// Function ID: 9058
 // Name: TagListInputTagComponent
-// Dependencies: [19, 17, 21, 4303, 712, 1367, 1236, 9019, 4846, 4299, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 1367, 1236, 9058, 4886, 4340, 2]
 // Exports: TagListInputTagComponent
 
-// Module 9018 (TagListInputTagComponent)
+// Module 9057 (TagListInputTagComponent)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -74,7 +74,7 @@ export const TagListInputTagComponent = function TagListInputTagComponent(end) {
   const intl = require(1236) /* getSystemLocale */.intl;
   let obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = importDefault(9019)(() => callback("remove"), formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = importDefault(9058)(() => callback("remove"), formatToPlainStringResult));
   const items = [tmp2.tagWrapper, , , ];
   let prop;
   if (selected) {
@@ -117,7 +117,7 @@ export const TagListInputTagComponent = function TagListInputTagComponent(end) {
   }
   obj1[3] = str;
   obj1[4] = tag.text;
-  items1[1] = callback(require(4299) /* Text */.Text, obj1);
+  items1[1] = callback(require(4340) /* Text */.Text, obj1);
   obj[6] = items1;
-  return closure_5(require(4846) /* PressableBase */.PressableOpacity, obj);
+  return closure_5(require(4886) /* PressableBase */.PressableOpacity, obj);
 };

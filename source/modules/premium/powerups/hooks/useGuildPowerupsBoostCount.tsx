@@ -1,10 +1,10 @@
-// Module ID: 4210
-// Function ID: 4211
+// Module ID: 4251
+// Function ID: 4252
 // Name: useGuildAppliedBoostCount
-// Dependencies: [19, 4211, 1910, 4190, 4214, 589, 2]
+// Dependencies: [19, 4252, 1910, 4231, 4255, 589, 2]
 // Exports: default, getGuildPowerupsBoostCount
 
-// Module 4210 (useGuildAppliedBoostCount)
+// Module 4251 (useGuildAppliedBoostCount)
 import noop from "noop";
 import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -77,7 +77,7 @@ export const getGuildPowerupsBoostCount = function getGuildPowerupsBoostCount(id
   if (total == null) {
     total = 0;
   }
-  let obj = require(4214) /* experiment */;
+  let obj = require(4255) /* experiment */;
   const gameServerEnabled = obj.getGameServerEnabled(id, "GuildPowerupsBoostCount");
   const stateForGuild = stateForGuild2.getStateForGuild(id);
   let appliedBoosts;

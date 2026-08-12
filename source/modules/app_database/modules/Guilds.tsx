@@ -1,9 +1,9 @@
-// Module ID: 7112
-// Function ID: 7113
+// Module ID: 7151
+// Function ID: 7152
 // Name: getAsync
 // Dependencies: [5, 1434, 1218, 1990, 1983, 1910, 3, 1955, 1987, 1985, 1430, 2]
 
-// Module 7112 (getAsync)
+// Module 7151 (getAsync)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { updateJoinedAt } from "GuildNSFWContentLevel";
 import fetchFingerprint from "fetchFingerprint";

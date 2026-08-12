@@ -1,10 +1,10 @@
-// Module ID: 7831
-// Function ID: 7832
+// Module ID: 7870
+// Function ID: 7871
 // Name: useAgeVerificationMethodsV2
-// Dependencies: [5, 32, 19, 7832, 7833, 709, 2]
+// Dependencies: [5, 32, 19, 7871, 7872, 709, 2]
 // Exports: useAgeVerificationMethodsV2
 
-// Module 7831 (useAgeVerificationMethodsV2)
+// Module 7870 (useAgeVerificationMethodsV2)
 import dispatcher from "dispatcher";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -90,7 +90,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
               outer1_2(true);
               outer1_3(false);
               let c4 = 2;
-              let obj2 = lib(7833);
+              let obj2 = lib(7872);
               c5 = 3;
               c6 = 1;
               obj2 = { value: null, done: false };

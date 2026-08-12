@@ -1,27 +1,27 @@
-// Module ID: 10009
-// Function ID: 10010
+// Module ID: 10050
+// Function ID: 10051
 // Name: ForumTagContextMenu
-// Dependencies: [21, 3993, 1236, 9552, 5756, 4020, 8604, 2]
+// Dependencies: [21, 4034, 1236, 9592, 5795, 4061, 8643, 2]
 // Exports: default
 
-// Module 10009 (ForumTagContextMenu)
+// Module 10050 (ForumTagContextMenu)
 import { jsx } from "jsxProd";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/forums/native/ForumTagContextMenu.tsx");
 
 export default function ForumTagContextMenu(children) {
   const tagId = children.tagId;
-  const DeveloperMode = tagId(3993).DeveloperMode;
+  const DeveloperMode = tagId(4034).DeveloperMode;
   let obj = { label: null, IconComponent: null, action: null };
   const enabled = DeveloperMode.useSetting();
   const intl = tagId(1236).intl;
   obj[0] = intl.string(tagId(1236).t["8VG6IY"]);
-  obj[1] = tagId(9552).IdIcon;
+  obj[1] = tagId(9592).IdIcon;
   obj[2] = function action() {
     tagId(outer1_1[4]).copy(tagId);
     const obj = tagId(outer1_1[4]);
     tagId(outer1_1[5]).presentIdCopied();
   };
   const items = [obj];
-  return jsx(tagId(8604).ContextMenu, { triggerOnLongPress: true, items, enabled, children: children.children });
+  return jsx(tagId(8643).ContextMenu, { triggerOnLongPress: true, items, enabled, children: children.children });
 };

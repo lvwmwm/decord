@@ -1,10 +1,10 @@
-// Module ID: 16145
-// Function ID: 16146
+// Module ID: 16202
+// Function ID: 16203
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 1391, 1979, 676, 3938, 10411, 10645, 10656, 1231, 2]
+// Dependencies: [5, 19, 1391, 1979, 676, 3979, 10452, 10698, 10709, 1231, 2]
 // Exports: default
 
-// Module 16145 (useTransitionToConnectedActivityInVoice)
+// Module 16202 (useTransitionToConnectedActivityInVoice)
 import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -70,7 +70,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                   guild_id = undefined;
                   guild_id = 1;
                   c4 = 1;
-                  return { value: "ct", done: "Array" };
+                  return { value: "ct", done: true };
                 }
               } else {
                 if (1 === tmp5) {

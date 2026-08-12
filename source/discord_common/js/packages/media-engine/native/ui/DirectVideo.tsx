@@ -1,10 +1,10 @@
-// Module ID: 4405
-// Function ID: 4406
+// Module ID: 4445
+// Function ID: 4446
 // Name: logger
-// Dependencies: [19, 21, 4, 4353, 4406, 2]
+// Dependencies: [19, 21, 4, 4394, 4446, 2]
 // Exports: default
 
-// Module 4405 (logger)
+// Module 4445 (logger)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

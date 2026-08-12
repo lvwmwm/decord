@@ -1,42 +1,50 @@
-// Module ID: 7373
-// Function ID: 7374
+// Module ID: 7412
+// Function ID: 7413
 // Name: create
-// Dependencies: [32, 1307, 7351, 7361, 2]
+// Dependencies: [32, 1307, 7390, 7400, 7391, 2]
 
-// Module 7373 (create)
+// Module 7412 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 
 const require = arg1;
 class AdminEditorTestComponent$Type extends MessageType {
   constructor() {
-    items = [, , , , , , ];
+    items = [, , , , , , , ];
     items[0] = { no: 1, name: "deprecated_field", kind: "scalar", T: 9 };
     items[1] = {
       no: 2,
       name: "localized_text_field",
       kind: "message",
       T() {
-            return callback(7351).LocalizedString;
+            return callback(7390).LocalizedString;
           }
     };
     items[2] = { no: 3, name: "plain_text_field", kind: "scalar", T: 9 };
-    obj = { no: 4, name: "textarea_field", kind: "message", T: null };
+    items[3] = {
+      no: 4,
+      name: "textarea_field",
+      kind: "message",
+      T() {
+            return callback(7390).LocalizedString;
+          }
+    };
+    items[4] = { no: 5, name: "checkbox_field", kind: "scalar", T: 8 };
+    items[5] = { no: 6, name: "asset_field", kind: "scalar", T: 9 };
+    obj = { no: 7, name: "themed_asset_field", kind: "message", T: null };
     class T {
       constructor() {
-        return require("create").LocalizedString;
+        return require("create").ThemeAwareAsset;
       }
     }
     obj[3] = T;
-    items[3] = obj;
-    items[4] = { no: 5, name: "checkbox_field", kind: "scalar", T: 8 };
-    items[5] = { no: 6, name: "asset_field", kind: "scalar", T: 9 };
-    items[6] = {
-      no: 7,
-      name: "themed_asset_field",
+    items[6] = obj;
+    items[7] = {
+      no: 8,
+      name: "help_article_field",
       kind: "message",
       T() {
-            return callback(7361).ThemeAwareAsset;
+            return callback(7391).HelpArticle;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, T);
@@ -73,35 +81,43 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       if (1 === tmp5) {
         obj.deprecatedField = pos.string();
       } else if (2 === tmp5) {
-        let tmp32 = require;
-        let tmp33 = dependencyMap;
-        let LocalizedString2 = require(7351) /* create */.LocalizedString;
-        let tmp34 = LocalizedString2;
-        let tmp35 = pos;
-        let tmp36 = readUnknownField;
+        let tmp37 = require;
+        let tmp38 = dependencyMap;
+        let LocalizedString2 = require(7390) /* create */.LocalizedString;
+        let tmp39 = LocalizedString2;
+        let tmp40 = pos;
+        let tmp41 = readUnknownField;
         obj.localizedTextField = LocalizedString2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.localizedTextField);
       } else if (3 === tmp5) {
         obj.plainTextField = pos.string();
       } else if (4 === tmp5) {
-        let tmp27 = require;
-        let tmp28 = dependencyMap;
-        let LocalizedString = require(7351) /* create */.LocalizedString;
-        let tmp29 = LocalizedString;
-        let tmp30 = pos;
-        let tmp31 = readUnknownField;
+        let tmp32 = require;
+        let tmp33 = dependencyMap;
+        let LocalizedString = require(7390) /* create */.LocalizedString;
+        let tmp34 = LocalizedString;
+        let tmp35 = pos;
+        let tmp36 = readUnknownField;
         obj.textareaField = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.textareaField);
       } else if (5 === tmp5) {
         obj.checkboxField = pos.bool();
       } else if (6 === tmp5) {
         obj.assetField = pos.string();
       } else if (7 === tmp5) {
+        let tmp27 = require;
+        let tmp28 = dependencyMap;
+        let ThemeAwareAsset = require(7400) /* create */.ThemeAwareAsset;
+        let tmp29 = ThemeAwareAsset;
+        let tmp30 = pos;
+        let tmp31 = readUnknownField;
+        obj.themedAssetField = ThemeAwareAsset.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.themedAssetField);
+      } else if (8 === tmp5) {
         let tmp22 = require;
         let tmp23 = dependencyMap;
-        let ThemeAwareAsset = require(7361) /* create */.ThemeAwareAsset;
-        let tmp24 = ThemeAwareAsset;
+        let HelpArticle = require(7391) /* create */.HelpArticle;
+        let tmp24 = HelpArticle;
         let tmp25 = pos;
         let tmp26 = readUnknownField;
-        obj.themedAssetField = ThemeAwareAsset.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.themedAssetField);
+        obj.helpArticleField = HelpArticle.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.helpArticleField);
       } else {
         let onRead = readUnknownField.readUnknownField;
         if ("throw" === onRead) {
@@ -144,7 +160,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
   }
   if (deprecatedField.localizedTextField) {
-    const LocalizedString = require(7351) /* create */.LocalizedString;
+    const LocalizedString = require(7390) /* create */.LocalizedString;
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
     const joined = LocalizedString.internalBinaryWrite(deprecatedField.localizedTextField, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(deprecatedField.localizedTextField, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -154,7 +170,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
     const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
   }
   if (deprecatedField.textareaField) {
-    const LocalizedString2 = require(7351) /* create */.LocalizedString;
+    const LocalizedString2 = require(7390) /* create */.LocalizedString;
     const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
     const joined1 = LocalizedString2.internalBinaryWrite(deprecatedField.textareaField, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult1 = LocalizedString2.internalBinaryWrite(deprecatedField.textareaField, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -168,10 +184,16 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
     const tagResult5 = tag.tag(6, require(1307).WireType.LengthDelimited);
   }
   if (deprecatedField.themedAssetField) {
-    const ThemeAwareAsset = require(7361) /* create */.ThemeAwareAsset;
+    const ThemeAwareAsset = require(7400) /* create */.ThemeAwareAsset;
     const tagResult6 = tag.tag(7, require(1307).WireType.LengthDelimited);
     const joined2 = ThemeAwareAsset.internalBinaryWrite(deprecatedField.themedAssetField, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult2 = ThemeAwareAsset.internalBinaryWrite(deprecatedField.themedAssetField, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if (deprecatedField.helpArticleField) {
+    const HelpArticle = require(7391) /* create */.HelpArticle;
+    const tagResult7 = tag.tag(8, require(1307).WireType.LengthDelimited);
+    const joined3 = HelpArticle.internalBinaryWrite(deprecatedField.helpArticleField, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult3 = HelpArticle.internalBinaryWrite(deprecatedField.helpArticleField, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
@@ -190,31 +212,37 @@ let items = [
     name: "localized_text_field",
     kind: "message",
     T() {
-      return callback(7351).LocalizedString;
+      return callback(7390).LocalizedString;
     }
   },
   { no: 3, name: "plain_text_field", kind: "scalar", T: 9 },
-,
-,
+  {
+    no: 4,
+    name: "textarea_field",
+    kind: "message",
+    T() {
+      return callback(7390).LocalizedString;
+    }
+  },
+  { no: 5, name: "checkbox_field", kind: "scalar", T: 8 },
+  { no: 6, name: "asset_field", kind: "scalar", T: 9 },
 ,
 
 ];
-let obj = { no: 4, name: "textarea_field", kind: "message", T: null };
+let obj = { no: 7, name: "themed_asset_field", kind: "message", T: null };
 class T {
   constructor() {
-    return require("create").LocalizedString;
+    return require("create").ThemeAwareAsset;
   }
 }
 obj[3] = T;
-items[3] = obj;
-items[4] = { no: 5, name: "checkbox_field", kind: "scalar", T: 8 };
-items[5] = { no: 6, name: "asset_field", kind: "scalar", T: 9 };
-items[6] = {
-  no: 7,
-  name: "themed_asset_field",
+items[6] = obj;
+items[7] = {
+  no: 8,
+  name: "help_article_field",
   kind: "message",
   T() {
-    return callback(7361).ThemeAwareAsset;
+    return callback(7391).HelpArticle;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, tmp, T, AdminEditorTestComponent$Type, prototype, items);

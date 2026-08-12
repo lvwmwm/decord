@@ -1,10 +1,10 @@
-// Module ID: 6502
-// Function ID: 6503
+// Module ID: 6541
+// Function ID: 6542
 // Name: LightningIllocon
-// Dependencies: [21, 5268, 6503, 2]
+// Dependencies: [21, 5307, 6542, 2]
 // Exports: LightningIllocon
 
-// Module 6502 (LightningIllocon)
+// Module 6541 (LightningIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/LightningIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const LightningIllocon = function LightningIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6503);
+  obj[0] = importDefault(6542);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { uri: null });
+  return jsx(importDefault(5307), { uri: null });
 };

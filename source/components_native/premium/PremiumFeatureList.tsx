@@ -1,10 +1,10 @@
-// Module ID: 8640
-// Function ID: 8641
+// Module ID: 8679
+// Function ID: 8680
 // Name: PremiumFeatureList
-// Dependencies: [19, 17, 676, 21, 4303, 5236, 712, 7969, 2]
+// Dependencies: [19, 17, 676, 21, 4344, 5275, 712, 8008, 2]
 // Exports: default
 
-// Module 8640 (PremiumFeatureList)
+// Module 8679 (PremiumFeatureList)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

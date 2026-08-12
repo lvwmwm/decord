@@ -1,14 +1,14 @@
-// Module ID: 15820
-// Function ID: 15821
+// Module ID: 15876
+// Function ID: 15877
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: [19, 8403, 11735, 2]
+// Dependencies: [19, 8442, 11792, 2]
 // Exports: useAutoTrackSearchTabCountsViewedAnalytics
 
-// Module 15820 (useAutoTrackSearchTabCountsViewedAnalytics)
+// Module 15876 (useAutoTrackSearchTabCountsViewedAnalytics)
 import noop from "noop";
 import { SearchTabs } from "MessageEmbedTypes";
 
-let result = require("module_11735").fileFinishedImporting("modules/search/native/hooks/useAutoTrackSearchTabCountsViewedAnalytics.tsx");
+let result = require("module_11792").fileFinishedImporting("modules/search/native/hooks/useAutoTrackSearchTabCountsViewedAnalytics.tsx");
 
 export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackSearchTabCountsViewedAnalytics(searchContext) {
   searchContext = searchContext.searchContext;

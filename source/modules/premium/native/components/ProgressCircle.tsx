@@ -1,9 +1,9 @@
-// Module ID: 11953
-// Function ID: 11954
+// Module ID: 12010
+// Function ID: 12011
 // Name: renderCircle
-// Dependencies: [19, 17, 21, 4303, 4031, 712, 7837, 2]
+// Dependencies: [19, 17, 21, 4344, 4072, 712, 7876, 2]
 
-// Module 11953 (renderCircle)
+// Module 12010 (renderCircle)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -35,8 +35,8 @@ prototype["renderCircle"] = function renderCircle() {
   obj[7] = props.color;
   obj = { strokeDasharray: result1, strokeDashoffset: (1 - bound / 100) * result1 };
   obj[8] = obj;
-  obj[2] = callback(require(7837) /* inlineStyles */.Circle, obj);
-  return callback(importDefault(7837), obj);
+  obj[2] = callback(require(7876) /* inlineStyles */.Circle, obj);
+  return callback(importDefault(7876), obj);
 };
 prototype["render"] = function render() {
   const tmp = callback2(this.context);

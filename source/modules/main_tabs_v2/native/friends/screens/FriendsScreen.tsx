@@ -1,10 +1,10 @@
-// Module ID: 15842
-// Function ID: 15843
+// Module ID: 15898
+// Function ID: 15899
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7120, 3957, 21, 4303, 712, 1499, 5728, 5748, 1628, 589, 15843, 1891, 8789, 15844, 15847, 15576, 4249, 1236, 5374, 10258, 6029, 4714, 9626, 11300, 2]
+// Dependencies: [19, 17, 7159, 3998, 21, 4344, 712, 1499, 5767, 5787, 1628, 589, 15899, 1891, 8828, 15900, 15903, 15632, 4290, 1236, 5413, 10299, 6068, 4754, 9666, 11354, 2]
 // Exports: default
 
-// Module 15842 (FriendsScreen)
+// Module 15898 (FriendsScreen)
 import getSystemLocale from "getSystemLocale";
 import { View } from "registerAsset";
 import recountRelationshipTypes from "recountRelationshipTypes";

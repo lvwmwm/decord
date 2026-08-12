@@ -1,13 +1,13 @@
-// Module ID: 16851
-// Function ID: 16852
+// Module ID: 16909
+// Function ID: 16910
 // Name: resetImperatively
-// Dependencies: [700, 705, 3933, 2]
+// Dependencies: [700, 705, 3974, 2]
 // Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
 
-// Module 16851 (resetImperatively)
+// Module 16909 (resetImperatively)
 import identity from "identity";
 
-let closure_2 = Object.freeze({ name: "", emojiId: "call", emojiName: "string", description: "title", refId: "accessibilityRole" });
+let closure_2 = Object.freeze({ name: "", emojiId: "call", emojiName: "transform", description: "title", refId: "accessibilityRole" });
 let closure_3 = identity.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   const obj = {};
@@ -67,33 +67,33 @@ export const useDescriptionState = function useDescriptionState() {
     const items = [, ];
     ({ description: arr[0], setDescription: arr[1] } = arg0);
     return items;
-  }, require(3933) /* isIterable */.shallow);
+  }, require(3974) /* isIterable */.shallow);
 };
 export const useEmojiIdState = function useEmojiIdState() {
   return store((arg0) => {
     const items = [, ];
     ({ emojiId: arr[0], setEmojiId: arr[1] } = arg0);
     return items;
-  }, require(3933) /* isIterable */.shallow);
+  }, require(3974) /* isIterable */.shallow);
 };
 export const useEmojiNameState = function useEmojiNameState() {
   return store((arg0) => {
     const items = [, ];
     ({ emojiName: arr[0], setEmojiName: arr[1] } = arg0);
     return items;
-  }, require(3933) /* isIterable */.shallow);
+  }, require(3974) /* isIterable */.shallow);
 };
 export const useNameState = function useNameState() {
   return store((arg0) => {
     const items = [, ];
     ({ name: arr[0], setName: arr[1] } = arg0);
     return items;
-  }, require(3933) /* isIterable */.shallow);
+  }, require(3974) /* isIterable */.shallow);
 };
 export const useRefIdState = function useRefIdState() {
   return store((arg0) => {
     const items = [, ];
     ({ refId: arr[0], setRefId: arr[1] } = arg0);
     return items;
-  }, require(3933) /* isIterable */.shallow);
+  }, require(3974) /* isIterable */.shallow);
 };

@@ -1,10 +1,10 @@
-// Module ID: 12606
-// Function ID: 12607
+// Module ID: 12665
+// Function ID: 12666
 // Name: createGroupDMInvite
-// Dependencies: [1391, 3957, 1922, 7197, 8055, 10998, 1236, 12310, 1438, 4494, 2]
+// Dependencies: [1391, 3998, 1922, 7236, 8094, 11051, 1236, 12373, 1438, 4534, 2]
 // Exports: createGroupDMInvite
 
-// Module 12606 (createGroupDMInvite)
+// Module 12665 (createGroupDMInvite)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -20,9 +20,9 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   let channel;
   let colors;
   let recipients_;
-  ({ colors, baseColors } = importDefault(8055)(closure_2));
-  const tmp2 = importDefault(8055)(closure_2);
-  ({ channel, recipients_ } = importDefault(10998)(invite));
+  ({ colors, baseColors } = importDefault(8094)(closure_2));
+  const tmp2 = importDefault(8094)(closure_2);
+  ({ channel, recipients_ } = importDefault(11051)(invite));
   let id;
   if (channel != null) {
     id = channel.id;
@@ -59,7 +59,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   }
   let channelIconSource = null;
   if (null != channel) {
-    let tmp8Result = tmp8(12310);
+    let tmp8Result = tmp8(12373);
     channelIconSource = tmp8Result.getChannelIconSource(channel);
   }
   let uri = null;
@@ -71,8 +71,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   if (flag) {
     channelName = null;
     if (null != channel) {
-      channelName = tmp8(4494).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
-      const tmp8Result1 = tmp8(4494);
+      channelName = tmp8(4534).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+      const tmp8Result1 = tmp8(4534);
     }
   }
   if (!channelName) {
@@ -131,8 +131,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   if (flag) {
     channelName1 = channelName;
     if (null != channel) {
-      channelName1 = tmp8(4494).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
-      const tmp8Result2 = tmp8(4494);
+      channelName1 = tmp8(4534).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+      const tmp8Result2 = tmp8(4534);
     }
   }
   obj.channelName = channelName1;

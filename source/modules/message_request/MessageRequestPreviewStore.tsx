@@ -1,9 +1,9 @@
-// Module ID: 11957
-// Function ID: 11958
+// Module ID: 12014
+// Function ID: 12015
 // Name: isMessagePreviewEnabledForChannel
-// Dependencies: [1922, 5841, 5842, 4523, 589, 709, 2]
+// Dependencies: [1922, 5880, 5881, 4563, 589, 709, 2]
 
-// Module 11957 (isMessagePreviewEnabledForChannel)
+// Module 12014 (isMessagePreviewEnabledForChannel)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import processChannel from "processChannel";
 import closure_4 from "processChannel";
@@ -27,7 +27,7 @@ function storeMessagePreview(id, arg1) {
     if (true) {
       let messageRecord = null;
       if (!flag2) {
-        let obj = require(4523) /* createMinimalMessageRecord */;
+        let obj = require(4563) /* createMinimalMessageRecord */;
         messageRecord = obj.createMessageRecord(null);
       }
       obj = { loaded: true, error: null, message: null };
@@ -108,7 +108,7 @@ const messageRequestPreviewStore = new MessageRequestPreviewStore(require("dispa
         if (null == message) {
           let messageRecord = null;
           if (null != message) {
-            let obj = require(4523) /* createMinimalMessageRecord */;
+            let obj = require(4563) /* createMinimalMessageRecord */;
             messageRecord = obj.createMessageRecord(message);
           }
           obj = { loaded: true, error: null, message: null };
@@ -134,9 +134,9 @@ const messageRequestPreviewStore = new MessageRequestPreviewStore(require("dispa
         if (null != tmp2.message) {
           const obj = {};
           const merged = Object.assign(tmp2);
-          obj.message = require(4523) /* createMinimalMessageRecord */.updateMessageRecord(tmp2.message, message.message);
+          obj.message = require(4563) /* createMinimalMessageRecord */.updateMessageRecord(tmp2.message, message.message);
           dependencyMap[channel_id] = obj;
-          const obj2 = require(4523) /* createMinimalMessageRecord */;
+          const obj2 = require(4563) /* createMinimalMessageRecord */;
         }
         tmp3 = tmp4;
       }

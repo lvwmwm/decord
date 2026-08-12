@@ -1,10 +1,10 @@
-// Module ID: 11372
-// Function ID: 11373
+// Module ID: 11426
+// Function ID: 11427
 // Name: VoiceMessageRecordingStatus
-// Dependencies: [11373, 644, 4042, 705, 4713, 2]
+// Dependencies: [11427, 644, 4083, 705, 4753, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 11372 (VoiceMessageRecordingStatus)
+// Module 11426 (VoiceMessageRecordingStatus)
 import VoiceMessageAnimationState from "VoiceMessageAnimationState";
 import keys from "keys";
 
@@ -12,14 +12,14 @@ let c3;
 let obj1;
 ({ VoiceMessageAnimationState: obj1, WAVEFORM_WAVE_MAX_VALUE: c3 } = VoiceMessageAnimationState);
 let obj = keys.create(() => {
-  const obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: "ct", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "PX_16", showVoiceMessagesTooltip: "TYPING_START_LOCAL", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: "Do Not Disturb", isUsingHoldGesture: "option3" };
+  const obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: "ct", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "PX_16", showVoiceMessagesTooltip: "TYPING_START_LOCAL", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: "Show example", isUsingHoldGesture: "TYPING_STOP_LOCAL" };
   const items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = closure_2);
-  obj[0] = require(4042).makeMutable(items);
+  obj[0] = require(4083).makeMutable(items);
   obj[6] = [];
   return obj;
 });
-let result = require("module_4042").fileFinishedImporting("modules/voice_messages/native/VoiceMessagesUIStore.tsx");
+let result = require("module_4083").fileFinishedImporting("modules/voice_messages/native/VoiceMessagesUIStore.tsx");
 
 export const VoiceMessageRecordingStatus = { REQUESTED: 0, [0]: "REQUESTED", STARTED: 1, [1]: "STARTED" };
 export const useVoiceMessagesUIStore = obj;
@@ -59,7 +59,7 @@ export const addVoiceMessageWave = function addVoiceMessageWave(arg0) {
   const waveformVersion = obj.getState().waveformVersion;
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    obj = waveformVersion(4713);
+    obj = waveformVersion(4753);
     const result = currWaveHeight.set(obj.withSpring(arg0 / closure_3));
   }
   const items = [arg0, waveformVersion];
@@ -85,8 +85,8 @@ export const resetVoiceMessageState = function resetVoiceMessageState() {
   });
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    const result = currWaveHeight.set(require(4713) /* CONFIG_NEVER_ANIMATE */.withSpring(0));
-    const tmpResult = require(4713) /* CONFIG_NEVER_ANIMATE */;
+    const result = currWaveHeight.set(require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(0));
+    const tmpResult = require(4753) /* CONFIG_NEVER_ANIMATE */;
   }
 };
 export const setSavedVoiceMessageUploadData = function setSavedVoiceMessageUploadData(arg0) {

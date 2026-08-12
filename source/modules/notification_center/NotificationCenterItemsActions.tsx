@@ -1,10 +1,10 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 15602
+// Function ID: 15603
 // Name: _fetchNotificationCenterItems
-// Dependencies: [5, 7101, 676, 709, 5127, 503, 1404, 7103, 530, 3993, 2]
+// Dependencies: [5, 7140, 676, 709, 5167, 503, 1404, 7142, 530, 4034, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 15546 (_fetchNotificationCenterItems)
+// Module 15602 (_fetchNotificationCenterItems)
 import encodeProperties from "encodeProperties";
 import _validate from "_validate";
 import { Endpoints } from "ME";
@@ -98,7 +98,7 @@ function _fetchNotificationCenterItems() {
               c6 = 3;
               c7 = 1;
               let obj6 = { value: null, done: false };
-              obj6[0] = callback(5127).get(obj3);
+              obj6[0] = callback(5167).get(obj3);
               return obj6;
             }
           } else if (2 === tmp7) {
@@ -435,7 +435,7 @@ export const markNotificationCenterItemAcked = function markNotificationCenterIt
     importDefault(709).dispatch(obj);
     const obj4 = importDefault(709);
   } else {
-    obj = require(7103) /* getRelativeTimestamp */;
+    obj = require(7142) /* getRelativeTimestamp */;
     if (obj.isMentionItem(local_id)) {
       obj = { type: "NOTIFICATION_CENTER_ITEMS_ACK", optimistic: true, ids: null };
       const items1 = [local_id.id];

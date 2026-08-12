@@ -1,10 +1,10 @@
-// Module ID: 5998
-// Function ID: 5999
+// Module ID: 6037
+// Function ID: 6038
 // Name: CircleXIcon
-// Dependencies: [19, 17, 21, 712, 4023, 5999, 6000, 2]
+// Dependencies: [19, 17, 21, 712, 4064, 6038, 6039, 2]
 // Exports: CircleXIcon
 
-// Module 5998 (CircleXIcon)
+// Module 6037 (CircleXIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,20 +29,20 @@ export const CircleXIcon = function CircleXIcon(color) {
   const merged = Object.assign(color, Object.create(null));
   let obj = { children: null };
   obj = { source: null, color: null, style: null };
-  obj[0] = require(5999) /* registerAsset */;
+  obj[0] = require(6038) /* registerAsset */;
   obj[1] = secondaryColor;
   obj[2] = style;
   const merged1 = Object.assign(merged);
-  const items = [callback(require(4023) /* BaseIconImage */.BaseIconImage, obj), ];
+  const items = [callback(require(4064) /* BaseIconImage */.BaseIconImage, obj), ];
   obj = { source: null, color: null, style: null };
-  obj[0] = require(6000) /* registerAsset */;
+  obj[0] = require(6039) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   const items1 = [style];
   const items2 = [];
   items2[HermesBuiltin.arraySpread(items1.flat(), 0)] = { position: "absolute", top: 0 };
   obj[2] = items2;
   const merged2 = Object.assign(merged);
-  items[1] = callback(require(4023) /* BaseIconImage */.BaseIconImage, obj);
+  items[1] = callback(require(4064) /* BaseIconImage */.BaseIconImage, obj);
   obj[0] = items;
   return callback2(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 13189
-// Function ID: 13190
+// Module ID: 13246
+// Function ID: 13247
 // Name: getTitleFromPickedStreamContent
 // Dependencies: [1236, 2]
 // Exports: default
 
-// Module 13189 (getTitleFromPickedStreamContent)
+// Module 13246 (getTitleFromPickedStreamContent)
 const result = require("set").fileFinishedImporting("modules/go_live/utils/getTitleFromPickedStreamContent.tsx");
 
 export default function getTitleFromPickedStreamContent(windows) {

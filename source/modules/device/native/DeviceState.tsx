@@ -1,10 +1,10 @@
-// Module ID: 7211
-// Function ID: 7212
+// Module ID: 7250
+// Function ID: 7251
 // Name: _getDeviceState
-// Dependencies: [5, 17, 3, 7212, 2]
+// Dependencies: [5, 17, 3, 7251, 2]
 // Exports: getDeviceState
 
-// Module 7211 (_getDeviceState)
+// Module 7250 (_getDeviceState)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { NativeModules } from "get ActivityIndicator";
 
@@ -53,7 +53,7 @@ function _getDeviceState() {
               fallback = obj1.fallback;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

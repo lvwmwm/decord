@@ -1,10 +1,10 @@
-// Module ID: 4214
-// Function ID: 4215
+// Module ID: 4255
+// Function ID: 4256
 // Name: experiment
-// Dependencies: [4215, 2]
+// Dependencies: [4256, 2]
 // Exports: getGameServerEnabled, useGameServerEnabled
 
-// Module 4214 (experiment)
+// Module 4255 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Enable GameServer", config: { enabled: true } }];

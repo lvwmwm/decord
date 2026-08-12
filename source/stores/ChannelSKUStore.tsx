@@ -1,9 +1,9 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13071
+// Function ID: 13072
 // Name: getSkuIdForChannel
 // Dependencies: [589, 709, 2]
 
-// Module 13012 (getSkuIdForChannel)
+// Module 13071 (getSkuIdForChannel)
 import { Store } from "initialize";
 
 let closure_0 = {};

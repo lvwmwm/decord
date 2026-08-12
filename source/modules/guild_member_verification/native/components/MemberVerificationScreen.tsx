@@ -1,26 +1,28 @@
-// Module ID: 15838
-// Function ID: 15839
+// Module ID: 15894
+// Function ID: 15895
 // Name: Loading
-// Dependencies: [19, 17, 1980, 1910, 4127, 676, 21, 4303, 712, 5823, 8420, 589, 5716, 4129, 8425, 1222, 4158, 1628, 5824, 15839, 2]
+// Dependencies: [19, 17, 1980, 1910, 4168, 676, 21, 4344, 712, 5862, 8459, 589, 5755, 4170, 8464, 1222, 4199, 1628, 5863, 15895, 2]
 
-// Module 15838 (Loading)
+// Module 15894 (Loading)
 import closure_4 from "makeAuthenticated";
 import { View } from "useSafeAreaInsets";
 import comparator from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
-import { Routes } from "ME";
+import ME from "ME";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import makeAuthenticated from "makeAuthenticated";
 
+let c10;
+let c9;
 const require = arg1;
 function Loading() {
-  return <View style={createCacheKey().flexLoading}>{jsx(require(5823) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
+  return <View style={createCacheKey().flexLoading}>{jsx(require(5862) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
 }
 function MemberVerificationRouteView(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(8420), {});
+  return jsx(importDefault(8459), {});
 }
 function ExistingJoinRequestHandler(guildId) {
   guildId = guildId.guildId;
@@ -73,7 +75,7 @@ function ExistingJoinRequestHandler(guildId) {
     if (null != stateFromStores) {
       if (null != guildId) {
         if (null != stateFromStores1) {
-          stateFromStores(stateFromStores1[15]).transitionTo(outer1_9.CHANNEL(tmp, tmp2));
+          stateFromStores(stateFromStores1[15]).transitionTo(outer1_10.CHANNEL(tmp, tmp2));
           const obj = stateFromStores(stateFromStores1[15]);
         }
       }
@@ -95,6 +97,7 @@ function ExistingJoinRequestHandler(guildId) {
   }
   return <Loading />;
 }
+({ ME: c9, Routes: c10 } = ME);
 createCacheKey = { flex: { flex: 1 }, flexLoading: null };
 createCacheKey = { flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 createCacheKey[1] = createCacheKey;
@@ -106,24 +109,25 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
   const callback = React.useCallback(() => {
     let index;
     let routes;
+    let obj = navigation;
     const state = navigation.getState();
     ({ routes, index } = state);
     if (routes.length > 1) {
       let name;
       if (routes[index - 1] != null) {
-        name = tmp5.name;
+        name = tmp6.name;
       }
       if ("member-verification" !== name) {
-        navigation.goBack();
+        obj.goBack();
       } else {
         let diff = index;
         if (index >= 0) {
           while (null != routes[diff]) {
-            if ("member-verification" !== tmp9.name) {
-              let tmp11 = navigation;
-              let tmp12 = outer1_3;
-              let obj3 = navigation(outer1_3[16]);
-              let popScreensResult = obj3.popScreens(index - diff);
+            if ("member-verification" !== tmp10.name) {
+              let tmp12 = navigation;
+              let tmp13 = outer1_3;
+              let obj4 = navigation(outer1_3[16]);
+              let popScreensResult = obj4.popScreens(index - diff);
               break;
             } else {
               diff = diff - 1;
@@ -139,7 +143,9 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
         }
       }
     } else {
-      navigation(outer1_3[16]).navigateToRootTab({ screen: "messages" });
+      obj = { screen: "guilds", guildId: null };
+      obj[1] = outer1_9;
+      navigation(outer1_3[16]).navigateToRootTab(obj);
       const obj2 = navigation(outer1_3[16]);
     }
   }, items);
@@ -161,9 +167,9 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
     obj1[0] = guildId;
     obj1[1] = callback;
     obj[1] = <MemberVerificationRouteView guildId={null} onClose={null} />;
-    obj[2] = jsx(importDefault(5824), { marginLeft: null, marginRight: null });
+    obj[2] = jsx(importDefault(5863), { marginLeft: null, marginRight: null });
     tmp10 = <ExistingJoinRequestHandler marginLeft={null} marginRight={null} />;
-    const tmp3Result = importDefault(5824);
+    const tmp3Result = importDefault(5863);
   }
   return tmp10;
 });

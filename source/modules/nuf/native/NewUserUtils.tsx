@@ -1,10 +1,10 @@
-// Module ID: 16535
-// Function ID: 16536
+// Module ID: 16592
+// Function ID: 16593
 // Name: _shouldSkipContactSyncStep
-// Dependencies: [5, 17, 15104, 4998, 1922, 676, 12036, 4516, 12038, 500, 9071, 709, 1500, 12041, 4158, 16536, 4509, 1222, 12104, 2]
+// Dependencies: [5, 17, 15161, 5038, 1922, 676, 12093, 4556, 12095, 500, 9110, 709, 1500, 12098, 4199, 16593, 4549, 1222, 12161, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 16535 (_shouldSkipContactSyncStep)
+// Module 16592 (_shouldSkipContactSyncStep)
 import importDefaultResult from "ME";
 import { NativeModules } from "transitionTo";
 import initialize from "initialize";
@@ -47,13 +47,13 @@ function _shouldSkipContactSyncStep() {
             return obj;
           } else {
             const callback = tmp4;
-            let obj2 = outer1_0(12038);
+            let obj2 = outer1_0(12095);
             const result = obj2.isContactSyncAvailable();
             if (result) {
               c1 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(12038).checkContactPermissions();
+              obj1[0] = outer1_0(12095).checkContactPermissions();
               return obj1;
             } else {
               dependencyMap = 3;
@@ -88,15 +88,15 @@ function _shouldSkipContactSyncStep() {
   return applyArgumentsResult;
 }
 function lastStepComplete(STEP_GUILD_TEMPLATE) {
-  require(12041) /* trackNUFStep */.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
-  const obj = require(12041) /* trackNUFStep */;
-  if (obj2.isModalOpen(require(16536) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY)) {
-    importDefault(4509).popWithKey(tmp(16536).NEW_USER_MODAL_KEY);
-    const obj3 = importDefault(4509);
+  require(12098) /* trackNUFStep */.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
+  const obj = require(12098) /* trackNUFStep */;
+  if (obj2.isModalOpen(require(16593) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY)) {
+    importDefault(4549).popWithKey(tmp(16593).NEW_USER_MODAL_KEY);
+    const obj3 = importDefault(4549);
   }
   let tmpResult = tmp(1222);
   tmpResult.transitionTo(constants.ME, { navigationReplace: true });
-  tmpResult = tmp(12104);
+  tmpResult = tmp(12161);
   const result = tmpResult.setNewUserFlowCompleted();
 }
 function getNextOnboardingStep(flag, first1, first) {
@@ -159,7 +159,7 @@ function _getNextOnboardingStep() {
               transitionStep2 = undefined;
               v0 = 1;
               transitionStep2 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -213,7 +213,7 @@ function _getNextOnboardingStep() {
               return obj5;
             } else if (arg1) {
               callback = dependencyMap;
-              obj3 = flag(12041);
+              obj3 = flag(12098);
               const obj6 = { skip: null };
               obj6[0] = flag;
               obj3.trackNUFStep(closure_3, key, obj6);

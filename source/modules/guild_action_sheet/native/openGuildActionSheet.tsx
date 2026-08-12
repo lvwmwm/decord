@@ -1,10 +1,10 @@
-// Module ID: 13264
-// Function ID: 13265
+// Module ID: 13321
+// Function ID: 13322
 // Name: openGuildActionSheet
-// Dependencies: [676, 1913, 698, 8685, 4271, 13265, 2007, 13323, 13329, 2]
+// Dependencies: [676, 1913, 698, 8724, 4312, 13322, 2007, 13380, 13386, 2]
 // Exports: default
 
-// Module 13264 (openGuildActionSheet)
+// Module 13321 (openGuildActionSheet)
 import ME from "ME";
 
 let c3;
@@ -23,16 +23,16 @@ export default function openGuildActionSheet(id) {
     obj = { type: "Guild Profile", guild_id: null };
     obj[1] = id.id;
     obj1.track(constants.OPEN_POPOUT, obj);
-    let tmpResult = tmp(8685);
+    let tmpResult = tmp(8724);
     if (tmpResult.shouldNSFWGateGuild(id.id)) {
-      let tmp3Result = tmp3(4271);
+      let tmp3Result = tmp3(4312);
       obj = { guild: null };
       obj[0] = id;
-      tmp3Result.openLazy(tmp(2007)(13265, tmp2.paths), "NsfwGateGuildSettingsActionSheet", obj);
+      tmp3Result.openLazy(tmp(2007)(13322, tmp2.paths), "NsfwGateGuildSettingsActionSheet", obj);
     } else {
       const features = id.features;
       const hasItem = features.has(constants2.HUB);
-      tmp3Result = tmp3(4271);
+      tmp3Result = tmp3(4312);
       const openLazy = tmp3Result.openLazy;
       tmpResult = tmp(2007);
       if (hasItem) {
@@ -40,15 +40,15 @@ export default function openGuildActionSheet(id) {
         obj1 = { guild: null, expanded: null };
         obj1[0] = id;
         obj1[1] = flag;
-        openLazy(tmpResult(13323, tmp2.paths), "GuildActionSheet:" + id.id, obj1);
-        const tmpResult1Result = tmpResult(13323, tmp2.paths);
+        openLazy(tmpResult(13380, tmp2.paths), "GuildActionSheet:" + id.id, obj1);
+        const tmpResult1Result = tmpResult(13380, tmp2.paths);
       } else {
         const _HermesInternal = HermesInternal;
         const obj2 = { guild: null, expanded: null };
         obj2[0] = id;
         obj2[1] = flag;
-        openLazy(tmpResult(13329, tmp2.paths), "GuildActionSheet:" + id.id, obj2);
-        const tmpResult1Result1 = tmpResult(13329, tmp2.paths);
+        openLazy(tmpResult(13386, tmp2.paths), "GuildActionSheet:" + id.id, obj2);
+        const tmpResult1Result1 = tmpResult(13386, tmp2.paths);
       }
     }
   }

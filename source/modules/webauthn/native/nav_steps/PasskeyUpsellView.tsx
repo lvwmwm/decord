@@ -1,10 +1,10 @@
-// Module ID: 13980
-// Function ID: 13981
+// Module ID: 14037
+// Function ID: 14038
 // Name: PasskeyUpsellView
-// Dependencies: [32, 19, 17, 13976, 676, 1388, 21, 4303, 712, 1499, 1236, 13981, 13982, 5270, 1993, 5328, 13985, 4299, 500, 4714, 8482, 2]
+// Dependencies: [32, 19, 17, 14033, 676, 1388, 21, 4344, 712, 1499, 1236, 14038, 14039, 5309, 1993, 5367, 14042, 4340, 500, 4754, 8521, 2]
 // Exports: default
 
-// Module 13980 (PasskeyUpsellView)
+// Module 14037 (PasskeyUpsellView)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "Text";
@@ -55,9 +55,9 @@ export default function PasskeyUpsellView() {
     navigation.push(outer1_8.NAME, obj);
   }
   function onCancel() {
-    callback(13981).markDismissed(constants.USER_DISMISS);
-    const obj = callback(13981);
-    const result = callback(13982).closePasskeyUpsellModal();
+    callback(14038).markDismissed(constants.USER_DISMISS);
+    const obj = callback(14038);
+    const result = callback(14039).closePasskeyUpsellModal();
   }
   let obj = navigation(1499);
   navigation = obj.useNavigation();
@@ -77,13 +77,13 @@ export default function PasskeyUpsellView() {
   obj = { contentContainerStyle: tmp4.scrollViewContainer, children: null };
   obj1 = { style: tmp4.headerContainer, children: null };
   const obj2 = { source: null, style: null };
-  obj2[0] = importDefault(13985);
+  obj2[0] = importDefault(14042);
   obj2[1] = tmp4.headerImage;
   const items1 = [callback(closure_6, obj2), , ];
   const obj3 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp4.headerText, children: null };
   let intl = navigation(1236).intl;
   obj3[4] = intl.string(navigation(1236).t.CjleBl);
-  items1[1] = callback(navigation(4299).Text, obj3);
+  items1[1] = callback(navigation(4340).Text, obj3);
   const obj4 = { variant: "heading-md/normal", color: "text-default", style: tmp4.headerText, children: null };
   let obj8 = navigation(500);
   const tmp12 = closure_7;
@@ -97,7 +97,7 @@ export default function PasskeyUpsellView() {
     stringResult = string(t.d6uxJy);
   }
   obj4[3] = stringResult;
-  items1[2] = callback(navigation(4299).Text, obj4);
+  items1[2] = callback(navigation(4340).Text, obj4);
   obj1[1] = items1;
   const items2 = [closure_12(closure_5, obj1), , ];
   const obj5 = { style: tmp4.listContainer, children: null };
@@ -106,7 +106,7 @@ export default function PasskeyUpsellView() {
   obj8 = { variant: "heading-md/normal", color: "text-default", style: tmp4.text, children: null };
   const intl3 = tmp(1236).intl;
   obj8[3] = intl3.string(navigation(1236).t.HtqVkj);
-  items3[1] = callback(navigation(4299).Text, obj8);
+  items3[1] = callback(navigation(4340).Text, obj8);
   obj6[1] = items3;
   const items4 = [closure_12(closure_5, obj6), ];
   const obj9 = { style: tmp4.row, children: null };
@@ -125,7 +125,7 @@ export default function PasskeyUpsellView() {
     string2Result = string2(t2.uYfqlo);
   }
   obj11[3] = string2Result;
-  items5[1] = callback(navigation(4299).Text, obj11);
+  items5[1] = callback(navigation(4340).Text, obj11);
   obj9[1] = items5;
   items4[1] = closure_12(closure_5, obj9);
   obj5[1] = items4;
@@ -134,7 +134,7 @@ export default function PasskeyUpsellView() {
   const obj13 = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl5 = tmp(1236).intl;
   obj13[2] = intl5.format(navigation(1236).t.OeGXVv, { learnMoreLink: articleURL });
-  const items6 = [callback(navigation(4299).Text, obj13), , ];
+  const items6 = [callback(navigation(4340).Text, obj13), , ];
   const intl6 = tmp(1236).intl;
   const string3 = intl6.string;
   const t3 = tmp(1236).t;
@@ -143,7 +143,7 @@ export default function PasskeyUpsellView() {
   } else {
     string3Result = string3(t3.NIFmCJ);
   }
-  items6[1] = callback(navigation(4714).Button, {
+  items6[1] = callback(navigation(4754).Button, {
     text: string3Result,
     onPress() {
       let obj = outer1_1(outer1_2[11]);
@@ -164,10 +164,10 @@ export default function PasskeyUpsellView() {
   } else {
     string4Result = string4(t4["7J6/nG"]);
   }
-  items6[2] = callback(navigation(4714).Button, { text: string4Result, onPress: onCancel, size: "lg", variant: "secondary", grow: true });
+  items6[2] = callback(navigation(4754).Button, { text: string4Result, onPress: onCancel, size: "lg", variant: "secondary", grow: true });
   obj12[1] = items6;
   items2[2] = closure_12(closure_5, obj12);
   obj[1] = items2;
   obj[2] = closure_12(tmp12, obj);
-  return callback(navigation(5328).SafeAreaPaddingView, obj);
+  return callback(navigation(5367).SafeAreaPaddingView, obj);
 };

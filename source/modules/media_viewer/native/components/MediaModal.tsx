@@ -1,13 +1,13 @@
-// Module ID: 8867
-// Function ID: 8868
+// Module ID: 8906
+// Function ID: 8907
 // Name: MediaModal
-// Dependencies: [19, 17, 8868, 6878, 676, 21, 8851, 8869, 8857, 589, 500, 8852, 8854, 8873, 8875, 8876, 1891, 8901, 4272, 4273, 4271, 8903, 2007, 12238, 8858, 12255, 12257, 5268, 12259, 2]
+// Dependencies: [19, 17, 8907, 6917, 676, 21, 8890, 8908, 8896, 589, 500, 8891, 8893, 8912, 8914, 8915, 1891, 8940, 4313, 4314, 4312, 8942, 2007, 12301, 8897, 12318, 12320, 5307, 12322, 2]
 // Exports: default
 
-// Module 8867 (MediaModal)
+// Module 8906 (MediaModal)
 import IMPACT_LIGHT from "IMPACT_LIGHT";
 import get_ActivityIndicator from "handleOrientationChange";
-import module_8868 from "module_8868";
+import module_8907 from "module_8907";
 import getState from "getState";
 import ME from "ME";
 import { jsx } from "useMediaShareActions";
@@ -23,7 +23,7 @@ let unpackModuleId;
 const require = arg1;
 ({ Image: c5, Modal: closure_6, StyleSheet: error, View: metroImportAll } = get_ActivityIndicator);
 ({ Base64JPEGPrefix: unpackModuleId, Base64GIFPrefix: closure_12, AppStates: map1 } = ME);
-let result = require("module_8868").fileFinishedImporting("modules/media_viewer/native/components/MediaModal.tsx");
+let result = require("module_8907").fileFinishedImporting("modules/media_viewer/native/components/MediaModal.tsx");
 
 export default function MediaModal(originLayout) {
   let onEndReached;

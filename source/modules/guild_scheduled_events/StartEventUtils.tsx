@@ -1,10 +1,10 @@
-// Module ID: 9060
-// Function ID: 9061
+// Module ID: 9099
+// Function ID: 9100
 // Name: createStageChannelForEvent
-// Dependencies: [5, 1395, 1391, 1910, 1397, 676, 9001, 38, 7788, 8946, 2]
+// Dependencies: [5, 1395, 1391, 1910, 1397, 676, 9040, 38, 7827, 8985, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 9060 (createStageChannelForEvent)
+// Module 9099 (createStageChannelForEvent)
 import ME from "ME";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -70,7 +70,7 @@ function _createStageChannelForEvent() {
               lib2 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -273,7 +273,7 @@ function _setEventAsActive() {
               let guild_id;
               name = 1;
               id = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp5) {

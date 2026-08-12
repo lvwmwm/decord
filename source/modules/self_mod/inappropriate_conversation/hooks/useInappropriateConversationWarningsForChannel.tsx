@@ -1,10 +1,10 @@
-// Module ID: 10349
-// Function ID: 10350
+// Module ID: 10390
+// Function ID: 10391
 // Name: useInappropriateConversationWarningsForChannel
-// Dependencies: [9673, 589, 2]
+// Dependencies: [9713, 589, 2]
 // Exports: useInappropriateConversationWarningsForChannel
 
-// Module 10349 (useInappropriateConversationWarningsForChannel)
+// Module 10390 (useInappropriateConversationWarningsForChannel)
 import handleConnectionOpen from "handleConnectionOpen";
 import { SafetyWarningTypes } from "handleConnectionOpen";
 

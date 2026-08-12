@@ -1,10 +1,10 @@
-// Module ID: 8472
-// Function ID: 8473
+// Module ID: 8511
+// Function ID: 8512
 // Name: FreeFormLabel
-// Dependencies: [19, 21, 4299, 2]
+// Dependencies: [19, 21, 4340, 2]
 // Exports: default
 
-// Module 8472 (FreeFormLabel)
+// Module 8511 (FreeFormLabel)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -16,5 +16,5 @@ export default function FreeFormLabel(arg0) {
   let nativeID;
   let style;
   ({ children, style, nativeID } = arg0);
-  return jsx(require(4299) /* Text */.Text, { style, variant: "text-sm/semibold", color: "text-muted", nativeID, children });
+  return jsx(require(4340) /* Text */.Text, { style, variant: "text-sm/semibold", color: "text-muted", nativeID, children });
 };

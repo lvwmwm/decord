@@ -1,10 +1,10 @@
-// Module ID: 9881
-// Function ID: 9882
+// Module ID: 9922
+// Function ID: 9923
 // Name: addValue
 // Dependencies: [19, 21, 2]
 // Exports: clearComponentRenderStats, default, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
 
-// Module 9881 (addValue)
+// Module 9922 (addValue)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

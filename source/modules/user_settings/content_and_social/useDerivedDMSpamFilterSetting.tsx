@@ -1,10 +1,10 @@
-// Module ID: 14094
-// Function ID: 14095
+// Module ID: 14151
+// Function ID: 14152
 // Name: useDerivedDmSpamFilterSettingValue
-// Dependencies: [1922, 3995, 3993, 589, 3999, 4006, 1306, 2]
+// Dependencies: [1922, 4036, 4034, 589, 4040, 4047, 1306, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 14094 (useDerivedDmSpamFilterSettingValue)
+// Module 14151 (useDerivedDmSpamFilterSettingValue)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ExplicitContentFilterToDmSpamFilterV2 as closure_3 } from "items";
 
@@ -13,14 +13,14 @@ const result = require("explicitContentFromProto").fileFinishedImporting("module
 
 export const useDerivedDmSpamFilterSettingValue = function useDerivedDmSpamFilterSettingValue() {
   let DmSpamFilterV2 = dependencyMap;
-  const DmSpamFilterV22 = require(3993) /* explicitContentFromProto */.DmSpamFilterV2;
+  const DmSpamFilterV22 = require(4034) /* explicitContentFromProto */.DmSpamFilterV2;
   const setting = DmSpamFilterV22.useSetting();
-  const ExplicitContentFilter = require(3993) /* explicitContentFromProto */.ExplicitContentFilter;
+  const ExplicitContentFilter = require(4034) /* explicitContentFromProto */.ExplicitContentFilter;
   const setting1 = ExplicitContentFilter.useSetting();
   const items = [mergeGuildAvatar];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = require(589) /* initialize */;
-  const isSettingTeenByDefault = require(3999) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(4006) /* SettingsDefaultFeature */.SettingsDefaultFeature.SPAM_FILTERS);
+  const isSettingTeenByDefault = require(4040) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(4047) /* SettingsDefaultFeature */.SettingsDefaultFeature.SPAM_FILTERS);
   if (setting !== require(1306) /* create */.DmSpamFilterV2.DEFAULT_UNSET) {
     return setting;
   } else {

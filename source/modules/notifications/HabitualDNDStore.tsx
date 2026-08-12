@@ -1,9 +1,9 @@
-// Module ID: 12988
-// Function ID: 12989
+// Module ID: 13047
+// Function ID: 13048
 // Name: initialize
-// Dependencies: [4996, 676, 687, 3993, 709, 589, 2]
+// Dependencies: [5036, 676, 687, 4034, 709, 589, 2]
 
-// Module 12988 (initialize)
+// Module 13047 (initialize)
 import filterPlayingActivities from "filterPlayingActivities";
 import { StatusTypes } from "ME";
 import { PersistedStore } from "initialize";
@@ -33,7 +33,7 @@ prototype["getState"] = function getState() {
 };
 prototype["getTemp"] = function getTemp() {
   const obj = { x: null };
-  const StatusExpiresAtSetting = require(3993) /* explicitContentFromProto */.StatusExpiresAtSetting;
+  const StatusExpiresAtSetting = require(4034) /* explicitContentFromProto */.StatusExpiresAtSetting;
   obj[0] = StatusExpiresAtSetting.getSetting();
   return obj;
 };
@@ -42,7 +42,7 @@ HabitualDNDStore.persistKey = "habitualDND";
 const habitualDNDStore = new HabitualDNDStore(require("dispatcher"), {
   POST_CONNECTION_OPEN: function handleConnect() {
     if (status.getStatus() === StatusTypes.DND) {
-      const StatusExpiresAtSetting = require(3993) /* explicitContentFromProto */.StatusExpiresAtSetting;
+      const StatusExpiresAtSetting = require(4034) /* explicitContentFromProto */.StatusExpiresAtSetting;
       if ("0" === StatusExpiresAtSetting.getSetting()) {
         const _Date = Date;
         arr = arr.push(Date.now());

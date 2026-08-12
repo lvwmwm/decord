@@ -1,10 +1,10 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15930
+// Function ID: 15931
 // Name: filterFromPending
-// Dependencies: [3957, 676, 2]
+// Dependencies: [3998, 676, 2]
 // Exports: getPendingRelationshipIds
 
-// Module 15874 (filterFromPending)
+// Module 15930 (filterFromPending)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { RelationshipTypes } from "ME";
 

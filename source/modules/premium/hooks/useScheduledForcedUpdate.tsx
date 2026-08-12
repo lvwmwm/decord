@@ -1,10 +1,10 @@
-// Module ID: 12746
-// Function ID: 12747
+// Module ID: 12805
+// Function ID: 12806
 // Name: useScheduledForcedUpdate
-// Dependencies: [19, 6906, 2]
+// Dependencies: [19, 6945, 2]
 // Exports: default
 
-// Module 12746 (useScheduledForcedUpdate)
+// Module 12805 (useScheduledForcedUpdate)
 import noop from "noop";
 
 const require = arg1;

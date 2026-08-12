@@ -1,10 +1,10 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16421
+// Function ID: 16422
 // Name: I18nLink
-// Dependencies: [19, 676, 21, 1356, 4024, 712, 4017, 4019, 1297, 2]
+// Dependencies: [19, 676, 21, 1356, 4065, 712, 4058, 4060, 1297, 2]
 // Exports: default
 
-// Module 16364 (I18nLink)
+// Module 16421 (I18nLink)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

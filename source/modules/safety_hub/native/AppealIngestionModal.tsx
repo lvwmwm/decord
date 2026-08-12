@@ -1,10 +1,10 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11360
+// Function ID: 11361
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 11286, 7807, 676, 21, 4303, 712, 4299, 589, 11291, 1499, 7808, 11305, 11292, 7806, 5328, 1236, 4714, 5270, 11307, 503, 11312, 11314, 11316, 11318, 11319, 5716, 5783, 2]
+// Dependencies: [5, 32, 19, 17, 11340, 7846, 676, 21, 4344, 712, 4340, 589, 11345, 1499, 7847, 11359, 11346, 7845, 5367, 1236, 4754, 5309, 11361, 503, 11366, 11368, 11370, 11372, 11373, 5755, 5822, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 11306 (AppealIngestionModal)
+// Module 11360 (AppealIngestionModal)
 import closure_4 from "SafetyHubView";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -43,7 +43,8 @@ export default function AppealIngestionModal(classificationId) {
   let _require;
   let flag;
   let flag2;
-  let obj = _require(11291);
+  let flag3;
+  let obj = _require(flag3[12]);
   const safetyHubClassification = obj.useSafetyHubClassification(classificationId.classificationId);
   ({ isDsaEligible: c0, classification } = safetyHubClassification);
   flag = undefined;
@@ -61,79 +62,87 @@ export default function AppealIngestionModal(classificationId) {
   if (!flag2) {
     flag2 = false;
   }
+  const classification3 = safetyHubClassification.classification;
+  flag3 = undefined;
+  if (classification3 != null) {
+    flag3 = classification3.is_developer_classification;
+  }
+  if (!flag3) {
+    flag3 = false;
+  }
   obj = {
     initialRouteName: constants.SPEED_BUMP,
-    screens: flag(5716)(() => {
+    screens: flag(flag3[29])(() => {
       let obj = {};
       obj = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
-      let obj2 = _undefined(outer1_3[21]);
-      obj[0] = obj2.getHeaderCloseButton(flag(outer1_3[15]).close);
+      let obj2 = _undefined(flag3[21]);
+      obj[0] = obj2.getHeaderCloseButton(flag(flag3[15]).close);
       obj[1] = function headerTitle() {
-        return callback3(callback(4299).Text, { variant: "text-md/normal", children: "accessibilityRole" });
+        return callback3(callback(4340).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
       obj[2] = function render() {
-        return outer1_12(callback2(outer1_3[22]), { isDsaEligible: closure_0, isSpam: callback2, isCoppa: closure_2 });
+        return outer1_12(callback2(11361), { isDsaEligible: closure_0, isSpam: callback2, isCoppa: closure_2, isDeveloperClassification: dependencyMap });
       };
-      obj[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_SPEED_BUMP;
+      obj[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_SPEED_BUMP;
       obj[4] = outer1_9;
       obj[outer1_10.SPEED_BUMP] = obj;
       obj = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
-      let obj4 = _undefined(outer1_3[21]);
+      let obj4 = _undefined(flag3[21]);
       obj[0] = obj4.getHeaderBackButton();
       obj[1] = function headerTitle() {
-        return callback3(callback(4299).Text, { variant: "text-md/normal", children: "accessibilityRole" });
+        return callback3(callback(4340).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
       obj[2] = function render() {
-        return outer1_12(callback2(outer1_3[24]), { isDsaEligible: closure_0 });
+        return outer1_12(callback2(11366), { isDsaEligible: closure_0 });
       };
-      obj[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_COLLECT_SIGNAL;
+      obj[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_COLLECT_SIGNAL;
       obj[4] = outer1_9;
       obj[outer1_10.COLLECT_SIGNAL] = obj;
       const obj1 = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
-      obj1[0] = _undefined(outer1_3[21]).getHeaderBackButton();
+      obj1[0] = _undefined(flag3[21]).getHeaderBackButton();
       obj1[1] = function headerTitle() {
-        return callback3(callback(4299).Text, { variant: "text-md/normal", children: "accessibilityRole" });
+        return callback3(callback(4340).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
       obj1[2] = function render() {
-        return outer1_12(callback2(outer1_3[25]), { isDsaEligible: closure_0 });
+        return outer1_12(callback2(11368), { isDsaEligible: closure_0 });
       };
-      obj1[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_CONFIRM_SUBMISSION;
+      obj1[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_CONFIRM_SUBMISSION;
       obj1[4] = outer1_9;
       obj[outer1_10.CONFIRM_SUBMISSION] = obj1;
       obj2 = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
-      const obj7 = _undefined(outer1_3[21]);
-      obj2[0] = _undefined(outer1_3[21]).getHeaderCloseButton(flag(outer1_3[15]).close);
+      const obj7 = _undefined(flag3[21]);
+      obj2[0] = _undefined(flag3[21]).getHeaderCloseButton(flag(flag3[15]).close);
       obj2[1] = function headerTitle() {
-        return callback3(callback(4299).Text, { variant: "text-md/normal", children: "accessibilityRole" });
+        return callback3(callback(4340).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
       obj2[2] = function render() {
-        return callback3(callback2(11316), {});
+        return callback3(callback2(11370), {});
       };
-      obj2[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_REQUEST_SENT;
+      obj2[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_REQUEST_SENT;
       obj2[4] = outer1_9;
       obj[outer1_10.REQUEST_SENT] = obj2;
       const obj3 = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
-      const obj9 = _undefined(outer1_3[21]);
-      obj3[0] = _undefined(outer1_3[21]).getHeaderCloseButton(flag(outer1_3[15]).close);
+      const obj9 = _undefined(flag3[21]);
+      obj3[0] = _undefined(flag3[21]).getHeaderCloseButton(flag(flag3[15]).close);
       obj3[1] = function headerTitle() {
-        return callback3(callback(4299).Text, { variant: "text-md/normal", children: "accessibilityRole" });
+        return callback3(callback(4340).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
       obj3[2] = function render() {
-        return callback3(callback2(11318), {});
+        return callback3(callback2(11372), {});
       };
-      obj3[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_THANKS;
+      obj3[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_THANKS;
       obj3[4] = outer1_9;
       obj[outer1_10.THANKS] = obj3;
       obj4 = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
-      const obj11 = _undefined(outer1_3[21]);
-      obj4[0] = _undefined(outer1_3[21]).getHeaderCloseButton(flag(outer1_3[15]).close);
+      const obj11 = _undefined(flag3[21]);
+      obj4[0] = _undefined(flag3[21]).getHeaderCloseButton(flag(flag3[15]).close);
       obj4[1] = function headerTitle() {
-        return callback3(callback(4299).Text, { variant: "text-md/normal", children: "accessibilityRole" });
+        return callback3(callback(4340).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
       obj4[2] = function render() {
-        return callback3(callback2(11319), {});
+        return callback3(callback2(11373), {});
       };
-      obj4[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_SPAM;
+      obj4[3] = _undefined(flag3[23]).ImpressionNames.APPEAL_INGESTION_SPAM;
       obj4[4] = outer1_9;
       obj[outer1_10.SPAM] = obj4;
       return obj;
@@ -141,9 +150,9 @@ export default function AppealIngestionModal(classificationId) {
     headerBackTitle: null,
     headerTitleAlign: "center"
   };
-  const intl = tmp(1236).intl;
-  obj[2] = intl.string(_require(1236).t["13/7kX"]);
-  return callback2(_require(5783).Navigator, obj);
+  const intl = tmp(tmp2[19]).intl;
+  obj[2] = intl.string(_require(flag3[19]).t["13/7kX"]);
+  return callback2(_require(flag3[30]).Navigator, obj);
 };
 export const AppealIngestionModalHeader = function AppealIngestionModalHeader(arg0) {
   let headerText;
@@ -159,7 +168,7 @@ export const AppealIngestionModalHeader = function AppealIngestionModalHeader(ar
     obj = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
     obj[0] = tmp.header;
     obj[4] = headerText;
-    tmp4 = callback2(require(4299) /* Text */.Text, obj);
+    tmp4 = callback2(require(4340) /* Text */.Text, obj);
   }
   const items = [tmp4, ];
   let tmp8 = null;
@@ -169,7 +178,7 @@ export const AppealIngestionModalHeader = function AppealIngestionModalHeader(ar
       obj = { style: null, variant: "text-md/medium", color: "text-default", children: null };
       obj[0] = tmp.subheader;
       obj[3] = subHeaderText;
-      tmp8 = callback2(require(4299) /* Text */.Text, obj);
+      tmp8 = callback2(require(4340) /* Text */.Text, obj);
     }
   }
   items[1] = tmp8;
@@ -294,7 +303,7 @@ export const AppealIngestionModalScreen = function AppealIngestionModalScreen(ch
               v0 = 2;
               c5 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = outer1_2(11292).requestReview(tmp36, outer1_0, outer1_1);
+              obj1[0] = outer1_2(11346).requestReview(tmp36, outer1_0, outer1_1);
               return obj1;
             }
           }
@@ -302,7 +311,7 @@ export const AppealIngestionModalScreen = function AppealIngestionModalScreen(ch
           if (1 === tmp7) {
             dependencyMap = 0;
             body = closure_2;
-            obj1 = outer1_0(7806);
+            obj1 = outer1_0(7845);
             body = body.body;
             let code;
             if (body != null) {

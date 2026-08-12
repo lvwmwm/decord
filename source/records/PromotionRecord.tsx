@@ -1,9 +1,9 @@
-// Module ID: 7346
-// Function ID: 7347
+// Module ID: 7385
+// Function ID: 7386
 // Name: createFromServer
-// Dependencies: [1931, 7347, 1403, 2]
+// Dependencies: [1931, 7386, 1403, 2]
 
-// Module 7346 (createFromServer)
+// Module 7385 (createFromServer)
 import "toJS";
 
 const require = arg1;
@@ -110,7 +110,7 @@ PromotionRecord["createFromServer"] = function createFromServer(id) {
   obj[16] = allowed_countries;
   let BLOCKLIST = id.country_list_mode;
   if (BLOCKLIST == null) {
-    BLOCKLIST = require(7347) /* CountryListMode */.CountryListMode.BLOCKLIST;
+    BLOCKLIST = require(7386) /* CountryListMode */.CountryListMode.BLOCKLIST;
   }
   obj[17] = BLOCKLIST;
   ({ promotion_type: obj[18], partner_id } = id);
@@ -170,13 +170,13 @@ PromotionRecord["createFromServer"] = function createFromServer(id) {
 };
 Object.defineProperty(prototype, "isBogo", {
   get: function isBogo() {
-    return this.promotionType === require(7347) /* CountryListMode */.PromotionTypes.BOGO;
+    return this.promotionType === require(7386) /* CountryListMode */.PromotionTypes.BOGO;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isMarketingMoment", {
   get: function isMarketingMoment() {
-    return this.promotionType === require(7347) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT;
+    return this.promotionType === require(7386) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT;
   },
   set: undefined
 });
@@ -191,15 +191,15 @@ prototype["hasFlag"] = function hasFlag(arg0) {
 };
 prototype["isCountryRestricted"] = function isCountryRestricted(arg0) {
   const self = this;
-  if (this.countryListMode === require(7347) /* CountryListMode */.CountryListMode.ALLOWLIST) {
+  if (this.countryListMode === require(7386) /* CountryListMode */.CountryListMode.ALLOWLIST) {
     const allowedCountries = self.allowedCountries;
     return !allowedCountries.includes(arg0);
   } else {
     const promotionType = self.promotionType;
-    if (tmp(7347).PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
-      if (tmp(7347).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
-        if (tmp(7347).PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
-          if (tmp(7347).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
+    if (tmp(7386).PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
+      if (tmp(7386).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
+        if (tmp(7386).PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
+          if (tmp(7386).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
             return false;
           }
         }

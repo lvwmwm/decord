@@ -1,10 +1,10 @@
-// Module ID: 4301
-// Function ID: 4302
+// Module ID: 4342
+// Function ID: 4343
 // Name: useManaTextMigrationHighlight
-// Dependencies: [17, 4302, 1302, 4303, 712, 589, 1363, 2]
+// Dependencies: [17, 4343, 1302, 4344, 712, 589, 1363, 2]
 // Exports: useManaTextMigrationHighlight, withManaTextMigrationHighlight
 
-// Module 4301 (useManaTextMigrationHighlight)
+// Module 4342 (useManaTextMigrationHighlight)
 import { StyleSheet } from "get ActivityIndicator";
 import importDefaultResult from "getUserAgnosticState";
 import handleThemeChange from "handleThemeChange";

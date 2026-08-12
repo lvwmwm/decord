@@ -1,10 +1,10 @@
-// Module ID: 9840
-// Function ID: 9841
+// Module ID: 9881
+// Function ID: 9882
 // Name: NotificationSettingsMockMessage
-// Dependencies: [19, 17, 1922, 676, 21, 4303, 712, 589, 4148, 4042, 4304, 4307, 4299, 1236, 1297, 9841, 2]
+// Dependencies: [19, 17, 1922, 676, 21, 4344, 712, 589, 4189, 4083, 4345, 4348, 4340, 1236, 1297, 9882, 2]
 // Exports: default
 
-// Module 9840 (NotificationSettingsMockMessage)
+// Module 9881 (NotificationSettingsMockMessage)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -32,26 +32,26 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = sharedValue(4148);
+  let obj1 = sharedValue(4189);
   let str = obj1.getName(stateFromStores);
   if (str == null) {
     str = "Roka";
   }
   require = tmp7;
-  let tmp2Result = tmp2(4042);
+  let tmp2Result = tmp2(4083);
   let num = 0;
   if (notificationSetting.notificationSetting === UserNotificationSettings.NO_MESSAGES) {
     num = 0.8;
   }
   sharedValue = tmp2Result.useSharedValue(num);
-  tmp2Result = tmp2(4042);
+  tmp2Result = tmp2(4083);
   const fn = function h() {
     const obj = { opacity: null };
     const value = sharedValue.get();
     obj[0] = tmp7(outer1_2[10]).withTiming(value, tmp7(outer1_2[11]).timingStandard);
     return obj;
   };
-  obj = { withTiming: tmp2(4304).withTiming, opacity: sharedValue, timingStandard: tmp2(4307).timingStandard };
+  obj = { withTiming: tmp2(4345).withTiming, opacity: sharedValue, timingStandard: tmp2(4348).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 6531430956793;
   fn.__initData = closure_10;
@@ -60,7 +60,7 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
     obj = { variant: "text-sm/medium", color: "text-default", children: null };
     const intl = tmp2(1236).intl;
     obj[2] = intl.string(tmp2(1236).t.WYyzI5);
-    let tmp11 = callback(tmp2(4299).Text, obj);
+    let tmp11 = callback(tmp2(4340).Text, obj);
     let tmp12 = callback;
   } else {
     obj1 = { children: null };
@@ -68,11 +68,11 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
     const obj3 = { variant: "text-sm/normal", color: "text-link", children: null };
     const items1 = ["@", str, " "];
     obj3[2] = items1;
-    const items2 = [callback2(tmp2(4299).Text, obj3), ];
+    const items2 = [callback2(tmp2(4340).Text, obj3), ];
     const intl3 = tmp2(1236).intl;
     items2[1] = intl3.string(tmp2(1236).t.WYyzI5);
     obj2[2] = items2;
-    obj1[0] = callback2(tmp2(4299).Text, obj2);
+    obj1[0] = callback2(tmp2(4340).Text, obj2);
     tmp11 = callback(View, obj1);
     tmp12 = callback;
   }
@@ -88,7 +88,7 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   const obj5 = { style: tmp.cardContent, children: null };
   const obj6 = { children: null };
   const obj7 = { source: null, size: null };
-  obj7[0] = sharedValue(9841);
+  obj7[0] = sharedValue(9882);
   obj7[1] = require(1297) /* Button */.AvatarSizes.LARGE_48;
   obj6[0] = tmp12(require(1297) /* Button */.Avatar, obj7);
   const items4 = [tmp12(View, obj6), ];
@@ -96,13 +96,13 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   const obj9 = { variant: "text-sm/semibold", children: null };
   const intl2 = tmp2(1236).intl;
   obj9[1] = intl2.string(require(1236) /* getSystemLocale */.t.qSq0tD);
-  const items5 = [tmp12(require(4299) /* Text */.Text, obj9), tmp11];
+  const items5 = [tmp12(require(4340) /* Text */.Text, obj9), tmp11];
   obj8[1] = items5;
   items4[1] = callback2(View, obj8);
   obj5[1] = items4;
   const items6 = [callback2(View, obj5), ];
   const items7 = [animatedStyle, tmp.overlay];
-  items6[1] = tmp12(sharedValue(4042).View, { style: items7 });
+  items6[1] = tmp12(sharedValue(4083).View, { style: items7 });
   obj4[1] = items6;
   return callback2(View, obj4);
 };

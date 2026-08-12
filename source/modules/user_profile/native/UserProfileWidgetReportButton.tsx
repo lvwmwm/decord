@@ -1,10 +1,10 @@
-// Module ID: 12353
-// Function ID: 12354
+// Module ID: 12416
+// Function ID: 12417
 // Name: UserProfileWidgetReportButton
-// Dependencies: [19, 17, 21, 1236, 8775, 8022, 8604, 8610, 712, 2]
+// Dependencies: [19, 17, 21, 1236, 8814, 8061, 8643, 8649, 712, 2]
 // Exports: default
 
-// Module 12353 (UserProfileWidgetReportButton)
+// Module 12416 (UserProfileWidgetReportButton)
 import "noop";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ export default function UserProfileWidgetReportButton(arg0) {
   let obj = { label: null, variant: "destructive", IconComponent: null, action: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.D4GvHE);
-  obj[2] = require(8775) /* FlagIcon */.FlagIcon;
+  obj[2] = require(8814) /* FlagIcon */.FlagIcon;
   obj[3] = function action() {
     return outer1_0(outer1_2[5]).showReportModalForWidget(closure_0, closure_1);
   };
@@ -36,11 +36,11 @@ export default function UserProfileWidgetReportButton(arg0) {
       obj.accessibilityLabel = intl.string(callback(1236).t.xpSHSk);
       obj = { size: "sm", color: null };
       obj[1] = callback2(712).colors.TEXT_MUTED;
-      obj.children = callback3(callback(8610).MoreHorizontalIcon, obj);
+      obj.children = callback3(callback(8649).MoreHorizontalIcon, obj);
       return callback3(closure_3, obj);
     }
   };
-  return jsx(require(8604) /* ContextMenu */.ContextMenu, {
+  return jsx(require(8643) /* ContextMenu */.ContextMenu, {
     items,
     children(ref) {
       let obj = { ref: ref.ref };
@@ -51,7 +51,7 @@ export default function UserProfileWidgetReportButton(arg0) {
       obj.accessibilityLabel = intl.string(callback(1236).t.xpSHSk);
       obj = { size: "sm", color: null };
       obj[1] = callback2(712).colors.TEXT_MUTED;
-      obj.children = callback3(callback(8610).MoreHorizontalIcon, obj);
+      obj.children = callback3(callback(8649).MoreHorizontalIcon, obj);
       return callback3(closure_3, obj);
     }
   });

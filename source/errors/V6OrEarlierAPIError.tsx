@@ -1,9 +1,9 @@
-// Module ID: 3989
-// Function ID: 3990
+// Module ID: 4030
+// Function ID: 4031
 // Name: prototype
 // Dependencies: [676, 530, 1236, 2]
 
-// Module 3989 (prototype)
+// Module 4030 (prototype)
 import { Links } from "ME";
 import { V6OrEarlierAPIError } from "sendRequest";
 

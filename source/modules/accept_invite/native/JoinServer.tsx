@@ -1,10 +1,10 @@
-// Module ID: 8512
-// Function ID: 8513
+// Module ID: 8551
+// Function ID: 8552
 // Name: OrSeparator
-// Dependencies: [19, 17, 8513, 21, 4303, 712, 4299, 1236, 5369, 1499, 1493, 8471, 4714, 2]
+// Dependencies: [19, 17, 8552, 21, 4344, 712, 4340, 1236, 5408, 1499, 1493, 8510, 4754, 2]
 // Exports: default
 
-// Module 8512 (OrSeparator)
+// Module 8551 (OrSeparator)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -78,7 +78,7 @@ export default function JoinServer(arg0) {
   const callback = React.useCallback(() => {
     navigation.push(outer1_7.JOIN_STUDENT_HUB);
   }, items);
-  obj[0] = importDefault(5369)().insets.bottom + importDefault(712).space.PX_16;
+  obj[0] = importDefault(5408)().insets.bottom + importDefault(712).space.PX_16;
   items1[1] = obj;
   obj[1] = items1;
   let tmp7Result = null;
@@ -88,12 +88,12 @@ export default function JoinServer(arg0) {
     obj2[0] = tmp.header;
     const intl = tmp4(1236).intl;
     obj2[4] = intl.string(tmp4(1236).t.jlfuFW);
-    const items2 = [callback(tmp4(4299).Text, obj2), ];
+    const items2 = [callback(tmp4(4340).Text, obj2), ];
     const obj3 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj3[0] = tmp.description;
     const intl2 = tmp4(1236).intl;
     obj3[3] = intl2.string(tmp4(1236).t.lVvN3A);
-    items2[1] = callback(tmp4(4299).Text, obj3);
+    items2[1] = callback(tmp4(4340).Text, obj3);
     obj1[0] = items2;
     tmp7Result = tmp7(closure_10, obj1);
   }
@@ -110,7 +110,7 @@ export default function JoinServer(arg0) {
   obj5[5] = intl4.string(navigation(1236).t.qreV25);
   obj5[10] = tmp.textInput;
   obj5[11] = onDone;
-  items3[1] = callback(importDefault(8471), obj5);
+  items3[1] = callback(importDefault(8510), obj5);
   const obj6 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted", children: null };
   const intl5 = tmp4(1236).intl;
   obj6[3] = intl5.format(navigation(1236).t.vwWaTe, {
@@ -121,7 +121,7 @@ export default function JoinServer(arg0) {
       return callback(navigation(table[6]).Text, { variant: "text-sm/medium", color: "text-default", children }, arg1);
     }
   });
-  items3[2] = callback(navigation(4299).Text, obj6);
+  items3[2] = callback(navigation(4340).Text, obj6);
   obj4[0] = items3;
   const items4 = [closure_9(closure_4, obj4), ];
   const obj8 = { children: null };
@@ -134,7 +134,7 @@ export default function JoinServer(arg0) {
   obj10[3] = submitting;
   obj10[4] = submitting;
   obj10[5] = onDone;
-  items5[1] = callback(navigation(4714).Button, obj10);
+  items5[1] = callback(navigation(4754).Button, obj10);
   items5[2] = callback(OrSeparator, {});
   const obj11 = { size: "lg", variant: "secondary", text: null, accessibilityLabel: null, onPress: null };
   const intl8 = tmp4(1236).intl;
@@ -142,7 +142,7 @@ export default function JoinServer(arg0) {
   const intl9 = tmp4(1236).intl;
   obj11[3] = intl9.string(navigation(1236).t["MOqX/G"]);
   obj11[4] = callback;
-  items5[3] = callback(navigation(4714).Button, obj11);
+  items5[3] = callback(navigation(4754).Button, obj11);
   obj8[0] = items5;
   items4[1] = closure_9(closure_10, obj8);
   obj[2] = items4;

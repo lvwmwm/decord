@@ -1,9 +1,9 @@
-// Module ID: 5178
-// Function ID: 5179
+// Module ID: 5217
+// Function ID: 5218
 // Name: fromServer
-// Dependencies: [32, 1432, 1911, 3964, 1914, 2]
+// Dependencies: [32, 1432, 1911, 4005, 1914, 2]
 
-// Module 5178 (fromServer)
+// Module 5217 (fromServer)
 import _slicedToArray from "_slicedToArray";
 import { TypeTag } from "TypeTag";
 import { LibdiscoreStore } from "identity";
@@ -22,7 +22,7 @@ function fromServer(guildId) {
     ({ id: obj2.id, animated: obj2.animated, name: obj2.name, require_colons: obj2.require_colons, available: obj2.available, roles: obj2.roles, managed: obj2.managed, version: obj2.version } = nextResult);
     let tmp3 = require;
     let tmp4 = dependencyMap;
-    obj.type = require(3964) /* EmojiTypes */.EmojiTypes.GUILD;
+    obj.type = require(4005) /* EmojiTypes */.EmojiTypes.GUILD;
     obj[nextResult.id] = obj;
     continue;
   }

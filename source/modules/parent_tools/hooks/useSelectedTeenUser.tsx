@@ -1,10 +1,10 @@
-// Module ID: 14148
-// Function ID: 14149
+// Module ID: 14205
+// Function ID: 14206
 // Name: useSelectedTeenUser
-// Dependencies: [1922, 7002, 6999, 7339, 647, 2]
+// Dependencies: [1922, 7041, 7038, 7378, 647, 2]
 // Exports: useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 14148 (useSelectedTeenUser)
+// Module 14205 (useSelectedTeenUser)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getSettings from "getSettings";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("freshTeenActivityWithMap").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeenUser.tsx");
 
 export const useSelectedTeenUser = function useSelectedTeenUser() {
-  const _require = importDefault(7339)();
+  const _require = importDefault(7378)();
   const items = [freshTeenActivityWithMap, mergeGuildAvatar];
   return _require(647).useStateFromStores(items, () => {
     if (true !== closure_0) {

@@ -1,10 +1,10 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 15739
+// Function ID: 15740
 // Name: OnboardingHomeScrollView
-// Dependencies: [19, 17, 21, 4303, 712, 1628, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 1628, 2]
 // Exports: default
 
-// Module 15683 (OnboardingHomeScrollView)
+// Module 15739 (OnboardingHomeScrollView)
 import noop from "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

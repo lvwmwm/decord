@@ -1,10 +1,10 @@
-// Module ID: 12211
-// Function ID: 12212
+// Module ID: 12274
+// Function ID: 12275
 // Name: TraitEmoji
-// Dependencies: [19, 17, 21, 4303, 712, 1435, 3965, 5360, 4299, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 1435, 4006, 5399, 4340, 2]
 // Exports: default
 
-// Module 12211 (TraitEmoji)
+// Module 12274 (TraitEmoji)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,13 +25,13 @@ function TraitEmoji(emoji) {
       ({ id: obj2[0], animated: obj2[1] } = emoji);
       emojiURL = obj.getEmojiURL(obj);
     }
-    const obj3 = importDefault(3965);
+    const obj3 = importDefault(4006);
     const tmp5 = importDefault;
     obj = { src: null, name: null, fastImageStyle: null };
     obj[0] = emojiURL;
-    obj[1] = importDefault(3965).isCustomEmoji(emoji) ? emoji.name : emoji.surrogates;
+    obj[1] = importDefault(4006).isCustomEmoji(emoji) ? emoji.name : emoji.surrogates;
     obj[2] = tmp.emojiImage;
-    return callback(tmp5(5360), obj);
+    return callback(tmp5(5399), obj);
   }
 }
 function GuildProfileTraitView(trait) {
@@ -40,7 +40,7 @@ function GuildProfileTraitView(trait) {
   obj = { emoji: trait.emoji };
   const items = [callback(TraitEmoji, obj), ];
   obj = { variant: "text-sm/medium", color: "text-default", children: trait.label };
-  items[1] = callback(require(4299) /* Text */.Text, obj);
+  items[1] = callback(require(4340) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }

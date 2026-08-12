@@ -1,10 +1,10 @@
-// Module ID: 8133
-// Function ID: 8134
+// Module ID: 8172
+// Function ID: 8173
 // Name: createGuildProductPurchaseSystemMessage
-// Dependencies: [3958, 1391, 676, 4532, 8071, 1438, 1435, 8103, 8073, 1236, 8074, 2]
+// Dependencies: [3999, 1391, 676, 4572, 8110, 1438, 1435, 8142, 8112, 1236, 8113, 2]
 // Exports: createGuildProductPurchaseSystemMessage
 
-// Module 8133 (createGuildProductPurchaseSystemMessage)
+// Module 8172 (createGuildProductPurchaseSystemMessage)
 import hasFlag from "hasFlag";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { MessageTypes } from "ME";
@@ -34,9 +34,9 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
     if (channel != null) {
       const guildId = channel.getGuildId();
     }
-    let obj1 = require(4532) /* useNullableMessageAuthor */;
+    let obj1 = require(4572) /* useNullableMessageAuthor */;
     const guildMemberAvatar = obj1.getMessageAuthor(message).guildMemberAvatar;
-    let obj2 = require(8071) /* getMessageAuthorWithProcessedColor */;
+    let obj2 = require(8110) /* getMessageAuthorWithProcessedColor */;
     const messageAuthorWithProcessedColor = obj2.getMessageAuthorWithProcessedColor(message);
     require(1438) /* ensureAvatarSource */;
     if (null != guildMemberAvatar) {
@@ -49,21 +49,21 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
         let guildMemberAvatarSource = tmp5Result.getGuildMemberAvatarSource(obj, author);
       }
       obj = { content: null, totalMonthsSubscribed: 0, username: null, avatarURL: null, welcomeLabel: null };
-      tmp5Result = tmp5(8103);
+      tmp5Result = tmp5(8142);
       obj1 = { username: null, usernameOnClickHandler: null, productName: null };
       obj1[0] = messageAuthorWithProcessedColor.nick;
       obj2 = { message: null, author: null, roleStyle: null };
       obj2[0] = message;
       obj2[1] = messageAuthorWithProcessedColor;
       obj2[2] = message.roleStyle;
-      obj1[1] = importDefault(8073)(obj2);
+      obj1[1] = importDefault(8112)(obj2);
       obj1[2] = product_name;
       obj[0] = tmp5Result.getGuildProductPurchaseSystemMessageContentMobile(obj1);
       obj[2] = messageAuthorWithProcessedColor.nick;
       obj[3] = tmp9(guildMemberAvatarSource).uri;
       const intl = tmp5(1236).intl;
       obj[4] = intl.string(tmp5(1236).t.s2N5HS);
-      const merged1 = Object.assign(importDefault(8074)(obj));
+      const merged1 = Object.assign(importDefault(8113)(obj));
       return obj;
     }
     guildMemberAvatarSource = author.getAvatarSource(undefined);

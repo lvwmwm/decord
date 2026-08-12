@@ -1,10 +1,10 @@
-// Module ID: 11921
-// Function ID: 11922
+// Module ID: 11978
+// Function ID: 11979
 // Name: useGameServerGetExpiringEntitlements
-// Dependencies: [19, 4211, 589, 11857, 2]
+// Dependencies: [19, 4252, 589, 11914, 2]
 // Exports: default
 
-// Module 11921 (useGameServerGetExpiringEntitlements)
+// Module 11978 (useGameServerGetExpiringEntitlements)
 import noop from "noop";
 import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
 

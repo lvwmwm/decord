@@ -1,7 +1,7 @@
 // Module ID: 1980
 // Function ID: 1981
 // Name: comparator
-// Dependencies: [1981, 1394, 3947, 1395, 1218, 1391, 1990, 1910, 3948, 3957, 1922, 676, 1913, 12, 4494, 506, 3953, 589, 709, 2]
+// Dependencies: [1981, 1394, 3988, 1395, 1218, 1391, 1990, 1910, 3989, 3998, 1922, 676, 1913, 12, 4534, 506, 3994, 589, 709, 2]
 
 // Module 1980 (comparator)
 import isSubscriptionGated from "isSubscriptionGated";
@@ -211,7 +211,7 @@ function handleGuildRoleUpdate(guildId) {
 function hasElevatedPermissions(user, context) {
   let obj = importAll(506);
   obj = { user, context, checkElevated: false };
-  return obj.hasAny(importAll(3953).computePermissions(obj), closure_20);
+  return obj.hasAny(importAll(3994).computePermissions(obj), closure_20);
 }
 function handleFavoritesUpdate() {
   rebuildGuildChannels(closure_17);

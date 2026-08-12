@@ -1,12 +1,12 @@
-// Module ID: 11071
-// Function ID: 11072
+// Module ID: 11124
+// Function ID: 11125
 // Name: showChatGDMUpsellActionSheet
-// Dependencies: [4271, 11072, 2007, 2]
+// Dependencies: [4312, 11125, 2007, 2]
 // Exports: default
 
-// Module 11071 (showChatGDMUpsellActionSheet)
+// Module 11124 (showChatGDMUpsellActionSheet)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/group_dm/native/showChatGDMUpsellActionSheet.tsx");
 
 export default function showChatGDMUpsellActionSheet(arg0) {
-  importDefault(4271).openLazy(require(2007) /* asyncRequireImpl */(11072, dependencyMap.paths), "ChatGDMUpsellActionSheet", arg0);
+  importDefault(4312).openLazy(require(2007) /* asyncRequireImpl */(11125, dependencyMap.paths), "ChatGDMUpsellActionSheet", arg0);
 };

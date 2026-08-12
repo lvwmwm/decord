@@ -1,10 +1,10 @@
-// Module ID: 16178
-// Function ID: 16179
+// Module ID: 16235
+// Function ID: 16236
 // Name: calculatePIPState
-// Dependencies: [4316, 4322, 11649, 4321, 4367, 16179, 2]
+// Dependencies: [4357, 4363, 11706, 4362, 4407, 16236, 2]
 // Exports: default
 
-// Module 16178 (calculatePIPState)
+// Module 16235 (calculatePIPState)
 import getParticipants from "getParticipants";
 import reset from "reset";
 import { VoicePanelModes } from "VoicePanelModes";
@@ -26,15 +26,15 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
   const set = new Set();
   currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
-    set.add(require(4367) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
-    const obj2 = require(4367) /* isStreamKey */;
+    set.add(require(4407) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
+    const obj2 = require(4407) /* isStreamKey */;
   }
   let tmp10 = focusedId.mode === VoicePanelModes.PANEL;
   if (tmp11) {
     set.add(focusedId.focusedId);
   }
   let obj = { channelId, lastParticipantId, speakingUserId, focusedParticipantId: focusedId.focusedId, blockList: set, panelMode: focusedId.mode, showSecondaryPIP: focusedId.showSecondaryPIP };
-  const pIPParticipantToShow = require(16179) /* PIPReferenceDimensions */.computePIPParticipantToShow(obj);
+  const pIPParticipantToShow = require(16236) /* PIPReferenceDimensions */.computePIPParticipantToShow(obj);
   let type1;
   if (pIPParticipantToShow != null) {
     type1 = pIPParticipantToShow.type;
@@ -58,7 +58,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
     }
     tmp18 = tmp20;
   }
-  const obj3 = require(16179) /* PIPReferenceDimensions */;
+  const obj3 = require(16236) /* PIPReferenceDimensions */;
   tmp11 = null != focusedId.focusedId && tmp10;
   let id1;
   if (pIPParticipantToShow != null) {
@@ -66,11 +66,11 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
   }
   let SquarePIPReferenceDimensions = getTargetDimensions.getTargetDimensions(id1);
   if (SquarePIPReferenceDimensions == null) {
-    SquarePIPReferenceDimensions = tmp13(16179).SquarePIPReferenceDimensions;
+    SquarePIPReferenceDimensions = tmp13(16236).SquarePIPReferenceDimensions;
   }
   if (tmp10) {
     tmp10 = tmp;
   }
-  obj = { participant: pIPParticipantToShow, dimensions: require(16179) /* PIPReferenceDimensions */.computePIPSize(SquarePIPReferenceDimensions, tmp18, tmp10, focusedId.showSecondaryPIP) };
+  obj = { participant: pIPParticipantToShow, dimensions: require(16236) /* PIPReferenceDimensions */.computePIPSize(SquarePIPReferenceDimensions, tmp18, tmp10, focusedId.showSecondaryPIP) };
   return obj;
 };

@@ -1,10 +1,10 @@
-// Module ID: 14426
-// Function ID: 14427
+// Module ID: 14483
+// Function ID: 14484
 // Name: handleSaveTheme
-// Dependencies: [1346, 1302, 1305, 676, 1348, 1924, 1349, 1306, 14427, 11360, 8704, 1347, 4151, 14428, 698, 2]
+// Dependencies: [1346, 1302, 1305, 676, 1348, 1924, 1349, 1306, 14484, 11414, 8743, 1347, 4192, 14485, 698, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme, getSyncedModeThemeIndex, getUserThemeIndex, handleSaveSyncedModeTheme, handleSaveTheme, trackClientThemeUpdated
 
-// Module 14426 (handleSaveTheme)
+// Module 14483 (handleSaveTheme)
 import reset from "reset";
 import handleThemeChange from "handleThemeChange";
 import { SystemThemeState } from "SystemThemeState";
@@ -26,43 +26,43 @@ export const handleSaveTheme = function handleSaveTheme(found, analyticsLocation
     obj[4] = analyticsLocations;
     obj.track(AnalyticEvents.CLIENT_THEME_UPDATED, obj);
     if ("system" === found.theme) {
-      let tmpResult = tmp(14427);
+      let tmpResult = tmp(14484);
       const result = tmpResult.resetBackgroundGradientPreset();
-      tmpResult = tmp(11360);
+      tmpResult = tmp(11414);
       tmpResult.resetCustomTheme();
       obj = { theme: null };
       obj[0] = found.theme;
-      return tmp(8704).saveClientTheme(obj);
+      return tmp(8743).saveClientTheme(obj);
     } else if (found.type === tmp(1349).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
       const customThemeBaseTheme = tmp(1347).getCustomThemeBaseTheme(found.theme);
       const tmpResult2 = tmp(1347);
-      const result1 = tmp(14427).resetBackgroundGradientPreset();
-      const tmpResult3 = tmp(14427);
-      tmp(11360).updateCustomTheme(found.customThemeSettings, customThemeBaseTheme);
-      const tmpResult4 = tmp(11360);
+      const result1 = tmp(14484).resetBackgroundGradientPreset();
+      const tmpResult3 = tmp(14484);
+      tmp(11414).updateCustomTheme(found.customThemeSettings, customThemeBaseTheme);
+      const tmpResult4 = tmp(11414);
       const obj1 = { customUserThemeSettings: null, theme: null };
       obj1[0] = found.customThemeSettings;
       obj1[1] = customThemeBaseTheme;
-      return tmp(8704).saveClientTheme(obj1);
+      return tmp(8743).saveClientTheme(obj1);
     } else {
       if (found.type === tmp(1349).ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
-        const result2 = tmp(14427).updateBackgroundGradientPreset(found.id);
-        const tmpResult6 = tmp(14427);
-        tmp(11360).resetCustomTheme();
-        const tmpResult7 = tmp(11360);
+        const result2 = tmp(14484).updateBackgroundGradientPreset(found.id);
+        const tmpResult6 = tmp(14484);
+        tmp(11414).resetCustomTheme();
+        const tmpResult7 = tmp(11414);
         ({ id: obj10[0], theme: obj10[1] } = found);
-        let saveClientThemeResult = tmp(8704).saveClientTheme({ backgroundGradientPresetId: null, theme: null });
+        let saveClientThemeResult = tmp(8743).saveClientTheme({ backgroundGradientPresetId: null, theme: null });
         const obj2 = { backgroundGradientPresetId: null, theme: null };
-        const tmpResult8 = tmp(8704);
+        const tmpResult8 = tmp(8743);
       } else {
-        const result3 = tmp(14427).resetBackgroundGradientPreset();
-        const tmpResult9 = tmp(14427);
-        tmp(11360).resetCustomTheme();
-        const tmpResult10 = tmp(11360);
+        const result3 = tmp(14484).resetBackgroundGradientPreset();
+        const tmpResult9 = tmp(14484);
+        tmp(11414).resetCustomTheme();
+        const tmpResult10 = tmp(11414);
         const obj3 = { theme: null };
         obj3[0] = found.theme;
-        saveClientThemeResult = tmp(8704).saveClientTheme(obj3);
-        const tmpResult11 = tmp(8704);
+        saveClientThemeResult = tmp(8743).saveClientTheme(obj3);
+        const tmpResult11 = tmp(8743);
       }
       return saveClientThemeResult;
     }
@@ -90,25 +90,25 @@ export const handleSaveSyncedModeTheme = function handleSaveSyncedModeTheme(them
       } else {
         theme = theme.theme;
       }
-      tmp14Result = tmp14(4151);
+      tmp14Result = tmp14(4192);
       obj = {};
       obj[systemTheme] = theme;
       const result = tmp14Result.updateThemePreferences(obj);
       if (theme.type === tmp14(1349).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
         const obj1 = { customUserThemeSettings: null };
         obj1[0] = theme.customThemeSettings;
-        const result1 = tmp14(4151).updateSyncedClientTheme(systemTheme, obj1);
-        const tmp14Result1 = tmp14(4151);
+        const result1 = tmp14(4192).updateSyncedClientTheme(systemTheme, obj1);
+        const tmp14Result1 = tmp14(4192);
       } else if (theme.type === tmp14(1349).ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
         const obj2 = { backgroundGradientPresetId: null };
         obj2[0] = theme.id;
-        const result2 = tmp14(4151).updateSyncedClientTheme(systemTheme, obj2);
-        const tmp14Result2 = tmp14(4151);
+        const result2 = tmp14(4192).updateSyncedClientTheme(systemTheme, obj2);
+        const tmp14Result2 = tmp14(4192);
       } else {
         const obj3 = { theme: null };
         obj3[0] = theme.theme;
-        const result3 = tmp14(4151).updateSyncedClientTheme(systemTheme, obj3);
-        const tmp14Result3 = tmp14(4151);
+        const result3 = tmp14(4192).updateSyncedClientTheme(systemTheme, obj3);
+        const tmp14Result3 = tmp14(4192);
       }
     } else if (theme.type === tmp14(1349).ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
       let combined = tmp14(1306).BackgroundGradientPresetId[theme.id];
@@ -155,12 +155,12 @@ export const getSyncedModeThemeIndex = function getSyncedModeThemeIndex(memo2, c
   return num3;
 };
 export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme() {
-  const result = require(14428) /* enableSameAsDeviceTheme */.enableSameAsDeviceTheme(customTheme.getCustomTheme());
+  const result = require(14485) /* enableSameAsDeviceTheme */.enableSameAsDeviceTheme(customTheme.getCustomTheme());
 };
 export const disableSameAsDeviceTheme = function disableSameAsDeviceTheme() {
-  require(4151) /* setSystemTheme */.setUseSystemTheme(SystemThemeState.OFF);
-  const obj = require(4151) /* setSystemTheme */;
-  const result = require(4151) /* setSystemTheme */.clearSyncedClientThemes();
+  require(4192) /* setSystemTheme */.setUseSystemTheme(SystemThemeState.OFF);
+  const obj = require(4192) /* setSystemTheme */;
+  const result = require(4192) /* setSystemTheme */.clearSyncedClientThemes();
 };
 export const trackClientThemeUpdated = function trackClientThemeUpdated(arg0) {
   let analyticsLocations;

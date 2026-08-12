@@ -1,10 +1,10 @@
-// Module ID: 10716
-// Function ID: 10717
+// Module ID: 10769
+// Function ID: 10770
 // Name: recentlyUsedEmojis
-// Dependencies: [4321, 709, 687, 12, 5966, 1363, 589, 2]
+// Dependencies: [4362, 709, 687, 12, 6005, 1363, 589, 2]
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 10716 (recentlyUsedEmojis)
+// Module 10769 (recentlyUsedEmojis)
 import { EMOJI_PICKER_EMOJI_TO_SHOW_COUNT as closure_4 } from "ParticipantTypes";
 import apply from "apply";
 import { Store } from "initialize";
@@ -15,7 +15,7 @@ let closure_7 = [];
 let closure_8 = [];
 let closure_9 = 10 * require("set").Millis.SECOND;
 let closure_10 = apply.debounce(() => {
-  const effectAnnouncement = require(5966) /* VoiceChannelEffectAnimationType */.getEffectAnnouncement(closure_7);
+  const effectAnnouncement = require(6005) /* VoiceChannelEffectAnimationType */.getEffectAnnouncement(closure_7);
   const AccessibilityAnnouncer = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(effectAnnouncement, "polite");
   closure_7 = [];

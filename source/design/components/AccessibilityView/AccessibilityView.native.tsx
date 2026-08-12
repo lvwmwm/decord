@@ -1,13 +1,13 @@
-// Module ID: 4697
-// Function ID: 4698
+// Module ID: 4737
+// Function ID: 4738
 // Name: AccessibilityView
-// Dependencies: [19, 17, 21, 4698, 4042, 2]
+// Dependencies: [19, 17, 21, 4738, 4083, 2]
 
-// Module 4697 (AccessibilityView)
+// Module 4737 (AccessibilityView)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
-import importDefaultResult from "module_4042";
+import importDefaultResult from "module_4083";
 
 const forwardRefResult = require("noop").forwardRef((accessibilityViewIsModal, ref) => {
   let nativeID;
@@ -25,7 +25,7 @@ const forwardRefResult = require("noop").forwardRef((accessibilityViewIsModal, r
       throw error;
     }
   }
-  importDefault(4698)({ accessibilityViewIsModal: flag, nativeID });
+  importDefault(4738)({ accessibilityViewIsModal: flag, nativeID });
   const obj = { ref, nativeID, collapsable: null, onAccessibilityEscape: null, accessibilityViewIsModal: null };
   let collapsable = null == nativeID;
   if (collapsable) {
@@ -37,7 +37,7 @@ const forwardRefResult = require("noop").forwardRef((accessibilityViewIsModal, r
   const merged1 = Object.assign(merged);
   return <View ref={arg1} nativeID={nativeID} collapsable={null} onAccessibilityEscape={null} accessibilityViewIsModal={null} />;
 });
-const animatedComponent = require("module_4042").createAnimatedComponent(forwardRefResult);
+const animatedComponent = require("module_4083").createAnimatedComponent(forwardRefResult);
 const result = require("jsxProd").fileFinishedImporting("design/components/AccessibilityView/AccessibilityView.native.tsx");
 
 export const AccessibilityView = forwardRefResult;

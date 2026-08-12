@@ -1,10 +1,10 @@
-// Module ID: 4159
-// Function ID: 4160
+// Module ID: 4200
+// Function ID: 4201
 // Name: getRootNavigationRef
 // Dependencies: [1500, 2]
 // Exports: getRootNavigationRef
 
-// Module 4159 (getRootNavigationRef)
+// Module 4200 (getRootNavigationRef)
 import createStandardNavigationFactories from "createStandardNavigationFactories";
 
 createStandardNavigationFactories = createStandardNavigationFactories.createNavigationContainerRef();

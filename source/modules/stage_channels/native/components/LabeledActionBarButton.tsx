@@ -1,10 +1,10 @@
-// Module ID: 10898
-// Function ID: 10899
+// Module ID: 10951
+// Function ID: 10952
 // Name: IconPosition
-// Dependencies: [19, 17, 505, 21, 4303, 5158, 712, 4846, 1297, 2]
+// Dependencies: [19, 17, 505, 21, 4344, 5198, 712, 4886, 1297, 2]
 // Exports: LabeledActionButton
 
-// Module 10898 (IconPosition)
+// Module 10951 (IconPosition)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -109,6 +109,6 @@ export const LabeledActionButton = function LabeledActionButton(children) {
   const items5 = [closure_5(closure_3, obj3), children.children];
   obj1[1] = items5;
   obj.children = closure_5(closure_3, obj1);
-  obj[1] = closure_4(require(4846) /* PressableBase */.PressableOpacity, obj);
+  obj[1] = closure_4(require(4886) /* PressableBase */.PressableOpacity, obj);
   return closure_4(closure_3, obj);
 };

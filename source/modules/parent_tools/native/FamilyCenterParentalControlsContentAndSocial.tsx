@@ -1,10 +1,10 @@
-// Module ID: 14185
-// Function ID: 14186
+// Module ID: 14242
+// Function ID: 14243
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 676, 8084, 21, 10452, 1236, 1993, 13895, 2]
+// Dependencies: [19, 17, 676, 8123, 21, 10493, 1236, 1993, 13952, 2]
 // Exports: default
 
-// Module 14185 (FamilyCenterParentalControlsContentAndSocial)
+// Module 14242 (FamilyCenterParentalControlsContentAndSocial)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -15,7 +15,7 @@ const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsContentAndSocial.tsx");
 
 export default function FamilyCenterParentalControlsContentAndSocial() {
-  let obj = require(10452) /* createToggle */;
+  let obj = require(10493) /* createToggle */;
   obj = { sections: null };
   obj = { settings: items, subLabel: null };
   items = [MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS];
@@ -42,6 +42,6 @@ export default function FamilyCenterParentalControlsContentAndSocial() {
   obj[0] = items1;
   obj4 = { children: null };
   const list = obj.createList(obj);
-  obj4[0] = jsx(importDefault(13895), { node: list });
+  obj4[0] = jsx(importDefault(13952), { node: list });
   return <View>{null}</View>;
 };

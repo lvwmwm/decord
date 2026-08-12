@@ -1,10 +1,10 @@
-// Module ID: 4530
-// Function ID: 4531
+// Module ID: 4570
+// Function ID: 4571
 // Name: messageAttachmentToUnfurledMediaItem
-// Dependencies: [676, 1403, 1954, 4491, 1486, 2]
+// Dependencies: [676, 1403, 1954, 4531, 1486, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 4530 (messageAttachmentToUnfurledMediaItem)
+// Module 4570 (messageAttachmentToUnfurledMediaItem)
 import { MessageAttachmentFlags } from "ME";
 
 function messageAttachmentToUnfurledMediaItem(flags) {
@@ -79,7 +79,7 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(conten
       }
     }
     str = str3;
-    tmpResult = require(4491) /* urlMatchesFileExtension */;
+    tmpResult = require(4531) /* urlMatchesFileExtension */;
   }
   return str;
 };
@@ -93,7 +93,7 @@ export const messageAttachmentToMediaItem = function messageAttachmentToMediaIte
       str2 = "VIDEO";
     }
     str = str2;
-    tmp2Result = require(4491) /* urlMatchesFileExtension */;
+    tmp2Result = require(4531) /* urlMatchesFileExtension */;
   }
   obj.type = str;
   obj.alt = found2.description;

@@ -1,10 +1,10 @@
-// Module ID: 8524
-// Function ID: 8525
+// Module ID: 8563
+// Function ID: 8564
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 8477, 1385, 1922, 676, 505, 21, 4303, 712, 589, 8465, 8525, 4202, 4299, 1236, 8526, 8496, 4509, 8527, 2007, 4714, 4643, 8550, 2]
+// Dependencies: [5, 32, 19, 17, 8516, 1385, 1922, 676, 505, 21, 4344, 712, 589, 8504, 8564, 4243, 4340, 1236, 8565, 8535, 4549, 8566, 2007, 4754, 4683, 8589, 2]
 // Exports: default
 
-// Module 8524 (AddPhone)
+// Module 8563 (AddPhone)
 import handleRequiredAction from "handleRequiredAction";
 import _slicedToArray from "_slicedToArray";
 import PhoneOrEmailSelectorForceMode from "PhoneOrEmailSelectorForceMode";

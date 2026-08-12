@@ -1,8 +1,8 @@
-// Module ID: 15780
-// Function ID: 15781
-// Dependencies: [5, 19, 17, 21, 4303, 4299, 15752, 2]
+// Module ID: 15836
+// Function ID: 15837
+// Dependencies: [5, 19, 17, 21, 4344, 4340, 15808, 2]
 
-// Module 15780
+// Module 15836
 import Text from "Text";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";

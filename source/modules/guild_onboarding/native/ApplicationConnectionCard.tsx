@@ -1,10 +1,10 @@
-// Module ID: 5727
-// Function ID: 5728
+// Module ID: 5766
+// Function ID: 5767
 // Name: ApplicationConnectionCard
-// Dependencies: [19, 4341, 676, 21, 589, 5728, 5729, 1236, 5731, 5738, 698, 4498, 5743, 2]
+// Dependencies: [19, 4382, 676, 21, 589, 5767, 5768, 1236, 5770, 5777, 698, 4538, 5782, 2]
 // Exports: default
 
-// Module 5727 (ApplicationConnectionCard)
+// Module 5766 (ApplicationConnectionCard)
 import noop from "noop";
 import addApplication from "addApplication";
 import { AnalyticEvents } from "ME";

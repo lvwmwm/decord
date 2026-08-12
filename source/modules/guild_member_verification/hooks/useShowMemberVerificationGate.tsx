@@ -1,10 +1,10 @@
-// Module ID: 4790
-// Function ID: 4791
+// Module ID: 4830
+// Function ID: 4831
 // Name: shouldShowMembershipVerificationGate
-// Dependencies: [1990, 1910, 1922, 4791, 589, 2]
+// Dependencies: [1990, 1910, 1922, 4831, 589, 2]
 // Exports: useShowMemberVerificationGate
 
-// Module 4790 (shouldShowMembershipVerificationGate)
+// Module 4830 (shouldShowMembershipVerificationGate)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -38,8 +38,8 @@ function shouldShowMembershipVerificationGate(guildId, items) {
       flag = flag2;
     }
     if (flag) {
-      flag = require(4791) /* isValidFormResponse */.guildHasVerificationGate(guild);
-      const obj4 = require(4791) /* isValidFormResponse */;
+      flag = require(4831) /* isValidFormResponse */.guildHasVerificationGate(guild);
+      const obj4 = require(4831) /* isValidFormResponse */;
     }
     return flag;
   }

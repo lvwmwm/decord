@@ -1,18 +1,18 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 16201
+// Function ID: 16202
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 4295, 1390, 4316, 8868, 10761, 10663, 1391, 4351, 4375, 4514, 11649, 11647, 676, 4328, 9764, 4321, 11650, 21, 16145, 4042, 8782, 687, 16146, 589, 4021, 10718, 1236, 16147, 16148, 9161, 10619, 16149, 1493, 1628, 16172, 11651, 10336, 12, 514, 1231, 705, 10335, 11379, 7065, 698, 8901, 10646, 16101, 4648, 16173, 4497, 4498, 4166, 5821, 16174, 16175, 3938, 16176, 16182, 16183, 16106, 1208, 16184, 11648, 4184, 2]
+// Dependencies: [32, 19, 17, 4336, 1390, 4357, 8907, 10814, 10716, 1391, 4392, 4415, 4554, 11706, 11704, 676, 4369, 9805, 4362, 11707, 21, 16202, 4083, 8821, 687, 16203, 589, 4062, 10771, 1236, 16204, 16205, 9201, 10672, 16206, 1493, 1628, 16229, 11708, 10377, 12, 514, 1231, 705, 10376, 11435, 7104, 698, 8940, 10699, 16158, 4688, 16230, 4537, 4538, 4207, 5860, 16231, 16232, 3979, 16233, 16239, 16240, 16163, 1208, 16241, 11705, 4225, 2]
 // Exports: default
 
-// Module 16144 (VoicePanelController)
+// Module 16201 (VoicePanelController)
 import trackDeviceChanged from "trackDeviceChanged";
 import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE";
 import { AppState } from "ActivityPanelModes";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import participantFromServer from "participantFromServer";
 import getParticipants from "getParticipants";
-import module_8868 from "module_8868";
-import module_10761 from "module_10761";
+import module_8907 from "module_8907";
+import module_10814 from "module_10814";
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -234,16 +234,16 @@ export default function VoicePanelController(channelId) {
   const animatedReaction3Result16 = animatedReaction3(tmp2[22]);
   class H {
     constructor() {
-      value = f113599.get();
+      value = f113831.get();
       if (c16.PANEL === value) {
-        tmp5 = f113591;
-        return f113591.PANEL;
+        tmp5 = f113823;
+        return f113823.PANEL;
       } else if (tmp2.PIP === value) {
-        tmp4 = f113591;
-        return f113591.PIP;
+        tmp4 = f113823;
+        return f113823.PIP;
       } else {
-        tmp3 = f113591;
-        return f113591.UNDEFINED;
+        tmp3 = f113823;
+        return f113823.UNDEFINED;
       }
     }
   }
@@ -627,16 +627,16 @@ export default function VoicePanelController(channelId) {
     const items19 = [];
     class H {
       constructor() {
-        value = f113599.get();
+        value = f113831.get();
         if (c16.PANEL === value) {
-          tmp5 = f113591;
-          return f113591.PANEL;
+          tmp5 = f113823;
+          return f113823.PANEL;
         } else if (tmp2.PIP === value) {
-          tmp4 = f113591;
-          return f113591.PIP;
+          tmp4 = f113823;
+          return f113823.PIP;
         } else {
-          tmp3 = f113591;
-          return f113591.UNDEFINED;
+          tmp3 = f113823;
+          return f113823.UNDEFINED;
         }
       }
     }
@@ -1275,7 +1275,7 @@ export default function VoicePanelController(channelId) {
         items = [, , ];
         items[0] = id;
         items[1] = useSharedValue.get();
-        items[2] = f113599.get();
+        items[2] = f113831.get();
         return items;
       }
     }

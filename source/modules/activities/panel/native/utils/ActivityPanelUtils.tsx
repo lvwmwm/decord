@@ -1,10 +1,10 @@
-// Module ID: 16100
-// Function ID: 16101
+// Module ID: 16157
+// Function ID: 16158
 // Name: useIsActivityPanelFullscreen
-// Dependencies: [1390, 9764, 589, 3938, 10411, 2]
+// Dependencies: [1390, 9805, 589, 3979, 10452, 2]
 // Exports: useIsActivityPanelFullscreen
 
-// Module 16100 (useIsActivityPanelFullscreen)
+// Module 16157 (useIsActivityPanelFullscreen)
 import participantFromServer from "participantFromServer";
 import { ActivityPanelModes } from "ActivityPanelModes";
 

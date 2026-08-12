@@ -1,9 +1,9 @@
-// Module ID: 9745
-// Function ID: 9746
+// Module ID: 9786
+// Function ID: 9787
 // Name: BOX_MODE_ACTIONSHEET_WIDTH
 // Dependencies: [676, 2]
 
-// Module 9745 (BOX_MODE_ACTIONSHEET_WIDTH)
+// Module 9786 (BOX_MODE_ACTIONSHEET_WIDTH)
 const items = [, , , ];
 ({ TOP_LEFT: arr[0], TOP_RIGHT: arr[1], BOTTOM_LEFT: arr[2], BOTTOM_RIGHT: arr[3] } = require("ME").PictureInPicturePositions);
 const result = require("set").fileFinishedImporting("modules/video_calls/native/ChannelCallConstants.tsx");

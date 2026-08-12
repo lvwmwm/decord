@@ -1,9 +1,9 @@
-// Module ID: 4482
-// Function ID: 4483
+// Module ID: 4522
+// Function ID: 4523
 // Name: initialize
 // Dependencies: [2]
 
-// Module 4482 (initialize)
+// Module 4522 (initialize)
 const result = require("set").fileFinishedImporting("lib/LifecycleManager.tsx");
 class LifecycleManager {
 }

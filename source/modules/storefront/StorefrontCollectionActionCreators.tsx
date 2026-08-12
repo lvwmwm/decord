@@ -1,10 +1,10 @@
-// Module ID: 12511
-// Function ID: 12512
+// Module ID: 12234
+// Function ID: 12235
 // Name: _maybeFetchCollectionsWithProducts
-// Dependencies: [5, 1994, 12509, 7023, 676, 687, 709, 4541, 4203, 2]
+// Dependencies: [5, 1994, 12232, 7062, 676, 687, 709, 4581, 4244, 2]
 // Exports: maybeFetchCollectionsForApplication, maybeFetchCollectionsWithProducts
 
-// Module 12511 (_maybeFetchCollectionsWithProducts)
+// Module 12234 (_maybeFetchCollectionsWithProducts)
 import set from "set";
 import _getSystemLocale from "_getSystemLocale";
 import getFetchState from "getFetchState";
@@ -70,7 +70,7 @@ function _maybeFetchCollectionsWithProducts() {
               body = undefined;
               body = 1;
               fromServer = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp7) {
@@ -249,7 +249,7 @@ function _maybeFetchCollectionsForApplication() {
               let body;
               store = 1;
               fromServer = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp7) {

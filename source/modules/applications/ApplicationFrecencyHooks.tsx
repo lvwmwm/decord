@@ -1,10 +1,10 @@
-// Module ID: 11511
-// Function ID: 11512
+// Module ID: 11568
+// Function ID: 11569
 // Name: useSortApplicationsViaFrecency
-// Dependencies: [19, 8345, 685, 1374, 589, 11, 6983, 2]
+// Dependencies: [19, 8384, 685, 1374, 589, 11, 7022, 2]
 // Exports: useSortApplicationsViaFrecency
 
-// Module 11511 (useSortApplicationsViaFrecency)
+// Module 11568 (useSortApplicationsViaFrecency)
 import noop from "noop";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
 import { UserSettingsTypes } from "MAX_FAVORITES";

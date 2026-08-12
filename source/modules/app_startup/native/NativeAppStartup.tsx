@@ -1,13 +1,13 @@
-// Module ID: 16314
-// Function ID: 16315
+// Module ID: 16371
+// Function ID: 16372
 // Name: linkFromAppsFlyer
-// Dependencies: [32, 5, 16315, 16365, 17, 16385, 1995, 1979, 6878, 6925, 16386, 676, 9, 3, 16989, 6954, 16990, 11193, 589, 705, 1210, 16992, 13465, 500, 10, 16993, 10607, 709, 16994, 4045, 6937, 1208, 16995, 16996, 10779, 595, 698, 502, 1971, 8347, 2006, 1274, 16997, 2007, 8901, 16999, 13673, 7134, 17017, 17018, 17019, 9750, 6950, 6938, 4160, 1302, 4295, 1367, 13721, 16050, 16051, 707, 13462, 6924, 13726, 13739, 7098, 17020, 5427, 6926, 6938, 2]
+// Dependencies: [32, 5, 16372, 16422, 17, 16442, 1995, 1979, 6917, 6964, 16443, 676, 9, 3, 17047, 6993, 17048, 11247, 589, 705, 1210, 17050, 13522, 500, 10, 17051, 10660, 709, 17052, 6976, 1208, 17053, 17054, 10832, 595, 698, 502, 1971, 8386, 2006, 1274, 17055, 2007, 8940, 17057, 13730, 7173, 17075, 17076, 17077, 9791, 6989, 6977, 4201, 1302, 4336, 1367, 13778, 16107, 16108, 707, 13519, 6963, 13783, 13796, 7137, 17078, 5466, 6965, 6977, 2]
 // Exports: init, initHeadlessTask
 
-// Module 16314 (linkFromAppsFlyer)
-import onStageConnectionError from "onStageConnectionError";
+// Module 16371 (linkFromAppsFlyer)
+import receiveLocalNotification from "receiveLocalNotification";
 import closure_5 from "timestamp";
-import module_16315 from "module_16315";
+import module_16372 from "module_16372";
 import isAnalyticsEndpoint from "isAnalyticsEndpoint";
 import get_ActivityIndicator from "BundleUpdaterManager";
 import timestamp from "timestamp";
@@ -15,7 +15,7 @@ import { subscribeToIntlLoadingSuccess as closure_11 } from "_setAppLocale";
 import handleConnectionOpen from "handleConnectionOpen";
 import getState from "getState";
 import result from "result";
-import module_16386 from "module_16386";
+import module_16443 from "module_16443";
 import ME from "ME";
 import { loadImports } from "result";
 import { loadIndex } from "result";
@@ -77,7 +77,7 @@ function _getInitialURLs() {
         if (null != closure_1) {
           if (null != closure_1.url) {
             if (callback(closure_1.url)) {
-              let push = arr(16989).DeeplinkSource;
+              let push = arr(17047).DeeplinkSource;
               if (closure_1.isDeferred) {
                 let AppsFlyer = push.AppsFlyerDeferred;
               } else {
@@ -92,7 +92,7 @@ function _getInitialURLs() {
             } else {
               const obj4 = { url: null, source: null };
               obj4[0] = closure_1.url;
-              obj4[1] = arr(16989).DeeplinkSource.OS;
+              obj4[1] = arr(17047).DeeplinkSource.OS;
               arr = arr.push(obj4);
               dependencyMap = 3;
             }
@@ -112,7 +112,7 @@ function _getInitialURLs() {
       if (null != dependencyMap) {
         const obj6 = { url: null, source: null };
         obj6[0] = dependencyMap;
-        obj6[1] = arr(16989).DeeplinkSource.ReactNativeLinking;
+        obj6[1] = arr(17047).DeeplinkSource.ReactNativeLinking;
         arr.push(obj6);
       }
     }
@@ -130,7 +130,7 @@ function _getInitialURLs() {
 function sharedInit() {
   function handleNotification(arg0) {
     if (c0) {
-      arr(handleNotification[15])("receiveNotification", () => callback(table[32])).default(arg0, false);
+      arr(handleNotification[15])("receiveNotification", () => callback(table[31])).default(arg0, false);
       arr(handleNotification[12]).extraProperties.tapped_notification = true;
     } else {
       arr = arr.push(arg0);
@@ -138,7 +138,7 @@ function sharedInit() {
   }
   function handleLocalNotification(getData) {
     if (c0) {
-      const result = arr(handleNotification[15])("LocalPushNotificationActionCreators", () => callback(table[33])).receiveLocalNotification(getData);
+      const result = arr(handleNotification[15])("LocalPushNotificationActionCreators", () => callback(table[32])).receiveLocalNotification(getData);
     } else {
       arr = arr2.push(getData);
     }
@@ -172,6 +172,7 @@ function sharedInit() {
   });
   closure_9.ignoreLogs(["Non-serializable values were found in the navigation state", "Overriding previous layout animation with new one before the first began", "Check the render method of `SceneView`", "Open debugger to view warnings."]);
   const obj2 = _require(handleNotification[21]);
+  const tmp4 = _require;
   const initialBundleDownloaded = importDefault(handleNotification[17]).getInitialBundleDownloaded();
   initialBundleDownloaded.then((versionRequired) => {
     if (tmp) {
@@ -218,12 +219,12 @@ function sharedInit() {
   });
   if (state.getState() !== currentState.currentState) {
     tmp(tmp2[15])("handleAppStateChange", () => callback(handleNotification[28])).default(obj8.currentState);
-  } else if (tmp4(tmp2[29]).isBridgeless) {
+  } else {
     if (!tmp4Result.isAndroid()) {
       if (!c21) {
         if (obj8.currentState === constants.ACTIVE) {
           c21 = true;
-          tmp(tmp2[15])("trackAppOpened", () => callback(handleNotification[30])).trackAppOpened("launcher");
+          tmp(tmp2[15])("trackAppOpened", () => callback(handleNotification[29])).trackAppOpened("launcher");
         }
       }
     }
@@ -235,7 +236,7 @@ function sharedInit() {
     let obj = arr(handleNotification[24]);
     obj.resumeTracing();
     obj = { message: "App state changed to " + arg0, category: "appState" };
-    arr(handleNotification[31]).addBreadcrumb(obj);
+    arr(handleNotification[30]).addBreadcrumb(obj);
     arr(handleNotification[15])("handleAppStateChange", () => callback(table[28])).default(arg0);
     const appStateChangeEnd = arr(handleNotification[12]).imports.appStateChangeEnd;
     appStateChangeEnd.record();
@@ -254,20 +255,20 @@ function sharedInit() {
   _require = false;
   importDefault = [];
   let closure_2 = [];
-  let tmpResult = tmp(tmp2[34]);
+  let tmpResult = tmp(tmp2[33]);
   const result3 = tmpResult.addNotificationEventListener("notification", (arg0) => {
     const state = outer1_13.getState();
     outer1_20.log("Push notification received, the app state is " + state);
     if (state !== outer1_14.ACTIVE) {
       if (c0) {
-        arr(handleNotification[15])("receiveNotification", () => callback(table[32])).default(arg0, false);
+        arr(handleNotification[15])("receiveNotification", () => callback(table[31])).default(arg0, false);
         arr(handleNotification[12]).extraProperties.tapped_notification = true;
       } else {
         arr = arr.push(arg0);
       }
     }
   });
-  tmpResult = tmp(tmp2[34]);
+  tmpResult = tmp(tmp2[33]);
   const result4 = tmpResult.addNotificationEventListener("localNotification", handleLocalNotification);
   obj = {
     onStorageInitialize(arg0) {
@@ -310,9 +311,9 @@ function _trackFirstLaunched() {
             return obj;
           } else {
             let closure_2 = tmp2;
-            const Storage2 = outer1_0(outer1_3[35]).Storage;
+            const Storage2 = outer1_0(outer1_3[34]).Storage;
             if (Storage2.get(outer1_15.APP_FIRST_LAUNCHED, true)) {
-              const tmp18 = outer1_1(outer1_3[36]);
+              const tmp18 = outer1_1(outer1_3[35]);
               const table = tmp18;
               const track = tmp18.track;
               const APP_FIRST_LAUNCHED = outer1_15.APP_FIRST_LAUNCHED;
@@ -344,7 +345,7 @@ function _trackFirstLaunched() {
         } else if (arg0 !== 2) {
           obj1.referrer = arg1;
           track(APP_FIRST_LAUNCHED, obj1);
-          const Storage = obj1(table[35]).Storage;
+          const Storage = obj1(table[34]).Storage;
           const result = Storage.set(constants.APP_FIRST_LAUNCHED, false);
         }
         c6 = 3;
@@ -399,7 +400,7 @@ function _loadStorage() {
       loadStorage.recordEnd();
       const parseStorage = callback(9).parseStorage;
       parseStorage.measureAsync(() => {
-        const Storage = callback(table[35]).Storage;
+        const Storage = callback(table[34]).Storage;
         return Storage.parse(callback);
       });
       dependencyMap = 0;
@@ -476,7 +477,7 @@ function _initializeIntl() {
               callback = undefined;
               paths = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -491,7 +492,7 @@ function _initializeIntl() {
               paths = 2;
               c4 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = log(paths[40]).preloadAllIntlMessageFiles();
+              obj2[0] = log(paths[39]).preloadAllIntlMessageFiles();
               return obj2;
             }
           } else if (2 === tmp5) {
@@ -504,7 +505,7 @@ function _initializeIntl() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              let obj6 = log(paths[41]);
+              let obj6 = log(paths[40]);
               paths = 3;
               c4 = 1;
               const obj4 = { value: null, done: false };
@@ -528,7 +529,7 @@ function _initializeIntl() {
               paths = 4;
               c4 = 1;
               obj6 = { value: null, done: false };
-              obj6[0] = log(paths[43])(paths[42], paths.paths);
+              obj6[0] = log(paths[42])(paths[41], paths.paths);
               return obj6;
             }
           } else if (4 === tmp5) {
@@ -651,7 +652,7 @@ function _init(_payload) {
                 throwTypeErrorResult = outer1_0;
                 throwTypeErrorResult = c3;
                 throwTypeErrorResult = outer1_0(500).isAndroid();
-                let _Promise6 = outer1_0(8901);
+                let _Promise6 = outer1_0(8940);
                 if (throwTypeErrorResult) {
                   throwTypeErrorResult = _Promise6.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
                 } else {
@@ -673,7 +674,7 @@ function _init(_payload) {
                 throwTypeErrorResult = outer1_1;
                 throwTypeErrorResult = c3;
                 const obj14 = outer1_0(500);
-                const initialNotification = outer1_1(10779).getInitialNotification();
+                const initialNotification = outer1_1(10832).getInitialNotification();
                 items[1] = initialNotification.catch(() => null);
                 throwTypeErrorResult = outer1_28;
                 items[2] = outer1_28();
@@ -684,13 +685,13 @@ function _init(_payload) {
                 num2 = outer1_0(2007);
                 throwTypeErrorResult = c3;
                 throwTypeErrorResult = c3;
-                const obj15 = outer1_1(10779);
-                throwTypeErrorResult = num2(16999, c3.paths).then((arg0) => arg0.default());
+                const obj15 = outer1_1(10832);
+                throwTypeErrorResult = num2(17057, c3.paths).then((arg0) => arg0.default());
                 items[4] = throwTypeErrorResult;
                 throwTypeErrorResult = Promise.all(items);
                 v0 = 1;
                 c3 = 1;
-                const num2Result = num2(16999, c3.paths);
+                const num2Result = num2(17057, c3.paths);
               } else {
                 throwTypeErrorResult = outer1_1;
                 throwTypeErrorResult = c3;
@@ -727,12 +728,12 @@ function _init(_payload) {
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = c3;
                 if (obj18.isAndroid()) {
-                  if (callback(13673).isTTITest) {
+                  if (callback(13730).isTTITest) {
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = onStorageInitialize;
                     throwTypeErrorResult = outer1_0;
                     throwTypeErrorResult = c3;
-                    outer1_6 = outer1_0(7134).default;
+                    outer1_6 = outer1_0(7173).default;
                     throwTypeErrorResult = outer1_6;
                     v0 = 2;
                     c3 = 1;
@@ -768,9 +769,9 @@ function _init(_payload) {
               throwTypeErrorResult = dependencyMap;
               closure_16 = 5.default;
               throwTypeErrorResult = dependencyMap;
-              closure_17 = 16315.default;
+              closure_17 = 16372.default;
               throwTypeErrorResult = dependencyMap;
-              closure_18 = 16365.default;
+              closure_18 = 16422.default;
               throwTypeErrorResult = dependencyMap;
               closure_19 = 17;
               throwTypeErrorResult = closure_16;
@@ -781,14 +782,14 @@ function _init(_payload) {
               throwTypeErrorResult = closure_17.loadServer();
               throwTypeErrorResult = closure_18;
               throwTypeErrorResult = closure_18.addChangeListener(() => {
-                const result = onStorageInitialize(paths[34]).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
+                const result = onStorageInitialize(paths[33]).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
               });
               throwTypeErrorResult = callback;
               if (!callback) {
                 closure_19.init();
               }
-              callback(5427);
-              obj = callback(6926);
+              callback(5466);
+              obj = callback(6965);
               const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
             }
             if (callback) {
@@ -830,8 +831,8 @@ function _init(_payload) {
                 onStorageInitialize();
               }
             }
-            outer1_1(6954)("DispatcherBridge", () => {
-              _undefined(paths[48]);
+            outer1_1(6993)("DispatcherBridge", () => {
+              _undefined(paths[47]);
             });
             if (callback) {
               let obj5 = outer1_1(10);
@@ -843,15 +844,15 @@ function _init(_payload) {
                 closure_20.verbose("Flux has initialized");
               });
             }
-            outer1_1(17018)();
-            const result1 = outer1_0(17019).setupLibdiscoreTimersMonitor();
+            outer1_1(17076)();
+            const result1 = outer1_0(17077).setupLibdiscoreTimersMonitor();
             const item = outer1_4.forEach((url) => {
               url = url.url;
               onStorageInitialize(paths[15])("handleURL", () => callback(table[16])).default(url, true);
             });
             let outer1_8 = false;
             if (null != outer1_5) {
-              const outer1_9 = outer1_1(6954)("receiveNotification", () => _undefined(paths[32])).default;
+              const outer1_9 = outer1_1(6993)("receiveNotification", () => _undefined(paths[31])).default;
               outer1_1(9).extraProperties.tapped_notification = true;
               throwTypeErrorResult = outer1_9;
               throwTypeErrorResult = outer1_5;
@@ -874,9 +875,9 @@ function _init(_payload) {
                 obj4[0] = c10;
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = c3;
-                obj4[3] = callback(6950).INITIAL_MESSAGE_FETCH_KEY;
-                throwTypeErrorResult = onStorageInitialize(9750).fetchMessages(obj4);
-                const obj8 = onStorageInitialize(9750);
+                obj4[3] = callback(6989).INITIAL_MESSAGE_FETCH_KEY;
+                throwTypeErrorResult = onStorageInitialize(9791).fetchMessages(obj4);
+                const obj8 = onStorageInitialize(9791);
               }
             }
             throwTypeErrorResult = callback;
@@ -890,12 +891,12 @@ function _init(_payload) {
             throwTypeErrorResult = new.target;
             throwTypeErrorResult = new Promise((arg0) => {
               const _undefined = arg0;
-              _undefined(paths[43])(paths[53], paths.paths).then((arg0) => arg0.default.loadCacheAsync(outer1_4(callback(outer1_3[54]).computeInitialNavigationState(), 1)[0], () => {
-                outer1_0(outer1_3[58]).updateSaturation(outer1_0(outer1_3[56]).default.saturation);
-                const obj = outer1_0(outer1_3[58]);
-                outer1_0(outer1_3[59]).updateVisualRefresh(outer1_0(outer1_3[57]).isMobileVisualRefreshEnabled("NativeAppStartup"));
-                const obj2 = outer1_0(outer1_3[59]);
-                outer1_0(outer1_3[60]).updateTheme(outer1_0(outer1_3[55]).default.theme);
+              _undefined(paths[42])(paths[52], paths.paths).then((arg0) => arg0.default.loadCacheAsync(outer1_4(callback(outer1_3[53]).computeInitialNavigationState(), 1)[0], () => {
+                outer1_0(outer1_3[57]).updateSaturation(outer1_0(outer1_3[55]).default.saturation);
+                const obj = outer1_0(outer1_3[57]);
+                outer1_0(outer1_3[58]).updateVisualRefresh(outer1_0(outer1_3[56]).isMobileVisualRefreshEnabled("NativeAppStartup"));
+                const obj2 = outer1_0(outer1_3[58]);
+                outer1_0(outer1_3[59]).updateTheme(outer1_0(outer1_3[54]).default.theme);
                 callback();
               }));
             });
@@ -903,7 +904,7 @@ function _init(_payload) {
             outer1_12 = null;
             throwTypeErrorResult = v0;
             throwTypeErrorResult = c3;
-            const obj7 = outer1_0(17019);
+            const obj7 = outer1_0(17077);
             if (null != obj10.getToken()) {
               throwTypeErrorResult = callback;
               items2.Promise.resolve();
@@ -913,7 +914,7 @@ function _init(_payload) {
               throwTypeErrorResult = onStorageInitialize;
               throwTypeErrorResult = outer1_0;
               throwTypeErrorResult = c3;
-              getState = outer1_0(13462);
+              getState = outer1_0(13519);
               throwTypeErrorResult = getState;
               throwTypeErrorResult = getState.beginLoadedExperimentsTimeout();
               throwTypeErrorResult = getState;
@@ -934,27 +935,27 @@ function _init(_payload) {
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2 = [outer1_0(2007)(6924, c3.paths), , , , , ];
+            items2 = [outer1_0(2007)(6963, c3.paths), , , , , ];
             throwTypeErrorResult = outer1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[1] = outer1_0(2007)(13726, c3.paths);
+            items2[1] = outer1_0(2007)(13783, c3.paths);
             throwTypeErrorResult = outer1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[2] = outer1_0(2007)(13739, c3.paths);
+            items2[2] = outer1_0(2007)(13796, c3.paths);
             throwTypeErrorResult = outer1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[3] = outer1_0(2007)(7098, c3.paths);
+            items2[3] = outer1_0(2007)(7137, c3.paths);
             throwTypeErrorResult = outer1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[4] = outer1_0(2007)(17020, c3.paths);
+            items2[4] = outer1_0(2007)(17078, c3.paths);
             throwTypeErrorResult = outer1_7;
             items2[5] = outer1_7;
             throwTypeErrorResult = items2.Promise.all(items2);
@@ -1041,16 +1042,16 @@ function _initHeadlessTask() {
           } else {
             callback3();
             onStorageInitialize();
-            onStorageInitialize(c3[70]);
-            onStorageInitialize(c3[48]);
+            onStorageInitialize(c3[69]);
+            onStorageInitialize(c3[47]);
             callback(c3[18]).initialize();
             const obj8 = callback(c3[18]);
-            onStorageInitialize(c3[43])(c3[53], c3.paths).then((arg0) => {
+            onStorageInitialize(c3[42])(c3[52], c3.paths).then((arg0) => {
               const cacheAsync = arg0.default.loadCacheAsync({ page: "other" }, () => {
                 closure_32.resolve();
               });
             });
-            const items1 = [onStorageInitialize(c3[43])(c3[67], c3.paths)];
+            const items1 = [onStorageInitialize(c3[42])(c3[66], c3.paths)];
             c2 = 2;
             c3 = 1;
             const obj3 = { value: null, done: false };
@@ -1064,7 +1065,7 @@ function _initHeadlessTask() {
           callback = arg1;
           const first = callback2(callback, 1)[0];
           first.init();
-          callback(c3[49])();
+          callback(c3[48])();
         }
         c3 = 3;
         const obj4 = { value: null, done: true };
@@ -1130,7 +1131,7 @@ const promise = new Promise((arg0) => {
 });
 loadIndex.recordEnd();
 const tmp10 = new require("isAnalyticsEndpoint")("index.native.tsx");
-result = require("module_16315").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
+result = require("module_16372").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
 
 export const applicationReady = future;
 export const init = function init() {

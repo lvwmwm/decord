@@ -1,10 +1,10 @@
-// Module ID: 5954
-// Function ID: 5955
+// Module ID: 5993
+// Function ID: 5994
 // Name: getStickerSendability
-// Dependencies: [1990, 5221, 676, 3966, 4638, 3953, 2]
+// Dependencies: [1990, 5260, 676, 4007, 4678, 3994, 2]
 // Exports: isSendableSticker
 
-// Module 5954 (getStickerSendability)
+// Module 5993 (getStickerSendability)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import parseServerPackSticker from "parseServerPackSticker";
 import { Permissions } from "ME";
@@ -14,8 +14,8 @@ function getStickerSendability(stickerById, trackCommunicationDisabled, channel)
   if (null == trackCommunicationDisabled) {
     return obj.NONSENDABLE;
   } else {
-    const result = importDefault(3966).canUseCustomStickersEverywhere(trackCommunicationDisabled);
-    const obj4 = importDefault(3966);
+    const result = importDefault(4007).canUseCustomStickersEverywhere(trackCommunicationDisabled);
+    const obj4 = importDefault(4007);
     const tmp22 = require;
     if (obj5.isStandardSticker(stickerById)) {
       if (null == stickerPack.getStickerPack(stickerById.pack_id)) {
@@ -42,7 +42,7 @@ function getStickerSendability(stickerById, trackCommunicationDisabled, channel)
               if (!obj2.can(obj)) {
                 const NONSENDABLE = obj.NONSENDABLE;
               }
-              obj2 = importAll(3953);
+              obj2 = importAll(3994);
             }
           } else {
             SENDABLE_WITH_BOOSTED_GUILD = obj.SENDABLE_WITH_BOOSTED_GUILD;
@@ -51,7 +51,7 @@ function getStickerSendability(stickerById, trackCommunicationDisabled, channel)
       }
       return obj.NONSENDABLE;
     }
-    obj5 = require(4638) /* getStickerExtensionFromFormatType */;
+    obj5 = require(4678) /* getStickerExtensionFromFormatType */;
   }
 }
 let obj = { SENDABLE: 0, [0]: "SENDABLE", SENDABLE_WITH_PREMIUM: 1, [1]: "SENDABLE_WITH_PREMIUM", NONSENDABLE: 2, [2]: "NONSENDABLE", SENDABLE_WITH_BOOSTED_GUILD: 3, [3]: "SENDABLE_WITH_BOOSTED_GUILD" };

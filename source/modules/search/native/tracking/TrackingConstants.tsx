@@ -1,9 +1,9 @@
-// Module ID: 8402
-// Function ID: 8403
+// Module ID: 8441
+// Function ID: 8442
 // Name: SearchEntrypointAnalyticsLocations
-// Dependencies: [8403, 2]
+// Dependencies: [8442, 2]
 
-// Module 8402 (SearchEntrypointAnalyticsLocations)
+// Module 8441 (SearchEntrypointAnalyticsLocations)
 import MessageEmbedTypes from "MessageEmbedTypes";
 
 let SearchHistoryItemTypes;

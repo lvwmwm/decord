@@ -1,10 +1,10 @@
-// Module ID: 13812
-// Function ID: 13813
+// Module ID: 13869
+// Function ID: 13870
 // Name: getVolumeForSound
-// Dependencies: [4351, 4751, 3993, 2]
+// Dependencies: [4392, 4791, 4034, 2]
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 13812 (getVolumeForSound)
+// Module 13869 (getVolumeForSound)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 
 const require = arg1;
@@ -13,7 +13,7 @@ let result = require("explicitContentFromProto").fileFinishedImporting("modules/
 export default function getVolumeForSound(arg0, USER) {
   let tmp = USER;
   if (USER === undefined) {
-    const SoundboardSettings = require(3993) /* explicitContentFromProto */.SoundboardSettings;
+    const SoundboardSettings = require(4034) /* explicitContentFromProto */.SoundboardSettings;
     const setting = SoundboardSettings.getSetting();
     let num;
     if (setting != null) {
@@ -24,7 +24,7 @@ export default function getVolumeForSound(arg0, USER) {
     }
     tmp = num;
   }
-  const result = require(4751) /* perceptualToAmplitude */.amplitudeToPerceptual(tmp) / 100;
+  const result = require(4791) /* perceptualToAmplitude */.amplitudeToPerceptual(tmp) / 100;
   return Math.min(arg0 * result * Math.min(outputVolume.getOutputVolume() / 100, 1), 1);
 };
 export const getPerceptualSoundboardVolume = function getPerceptualSoundboardVolume(USER) {
@@ -32,5 +32,5 @@ export const getPerceptualSoundboardVolume = function getPerceptualSoundboardVol
   if (USER == null) {
     num = 100;
   }
-  return require(4751) /* perceptualToAmplitude */.amplitudeToPerceptual(num) / 100;
+  return require(4791) /* perceptualToAmplitude */.amplitudeToPerceptual(num) / 100;
 };

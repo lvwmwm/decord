@@ -1,10 +1,10 @@
-// Module ID: 14676
-// Function ID: 14677
+// Module ID: 14734
+// Function ID: 14735
 // Name: _initializeAndroidNotificationSettingsStore
-// Dependencies: [5, 700, 500, 10779, 705, 3933, 2]
+// Dependencies: [5, 700, 500, 10832, 705, 3974, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled, useAndroidMessageNotificationsEnabled, useAndroidNotificationLightsEnabled, useAndroidNotificationSoundsEnabled, useAndroidNotificationVibrationsEnabled
 
-// Module 14676 (_initializeAndroidNotificationSettingsStore)
+// Module 14734 (_initializeAndroidNotificationSettingsStore)
 import isIterable from "isIterable";
 import identity from "identity";
 
@@ -49,7 +49,7 @@ function _initializeAndroidNotificationSettingsStore() {
               isIterable = 2;
               c4 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_1(10779).getLightsEnabled();
+              obj1[0] = outer1_1(10832).getLightsEnabled();
               return obj1;
             }
             obj16 = outer1_0(500);
@@ -69,7 +69,7 @@ function _initializeAndroidNotificationSettingsStore() {
               return obj2;
             } else {
               callback = arg1;
-              let obj8 = callback2(10779);
+              let obj8 = callback2(10832);
               isIterable = 3;
               c4 = 1;
               const obj3 = { value: null, done: false };
@@ -88,7 +88,7 @@ function _initializeAndroidNotificationSettingsStore() {
               return obj4;
             } else {
               callback2 = arg1;
-              let obj5 = callback2(10779);
+              let obj5 = callback2(10832);
               isIterable = 4;
               c4 = 1;
               obj5 = { value: null, done: false };
@@ -107,7 +107,7 @@ function _initializeAndroidNotificationSettingsStore() {
               return obj6;
             } else {
               dependencyMap = arg1;
-              obj2 = callback2(10779);
+              obj2 = callback2(10832);
               isIterable = 5;
               c4 = 1;
               const obj7 = { value: null, done: false };
@@ -151,7 +151,7 @@ function _initializeAndroidNotificationSettingsStore() {
   }
   return applyArgumentsResult;
 }
-let closure_4 = identity.createWithEqualityFn(() => ({ isLightsEnabled: "Array", isVibrationsEnabled: "flex", isSoundsEnabled: "y", isNotifyEveryTime: "HermesInternal" }));
+let closure_4 = identity.createWithEqualityFn(() => ({ isLightsEnabled: "right", isVibrationsEnabled: "channel", isSoundsEnabled: "source", isNotifyEveryTime: "bottom" }));
 let result = require("set").fileFinishedImporting("modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx");
 
 export const initializeAndroidNotificationSettingsStore = function initializeAndroidNotificationSettingsStore() {
@@ -165,38 +165,38 @@ export const initializeAndroidNotificationSettingsStore = function initializeAnd
   return applyArgumentsResult;
 };
 export const useAndroidNotificationLightsEnabled = function useAndroidNotificationLightsEnabled() {
-  return callback2((isLightsEnabled) => isLightsEnabled.isLightsEnabled, require(3933) /* isIterable */.shallow);
+  return callback2((isLightsEnabled) => isLightsEnabled.isLightsEnabled, require(3974) /* isIterable */.shallow);
 };
 export const setAndroidNotificationLightsEnabled = function setAndroidNotificationLightsEnabled(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => outer1_4.setState({ isLightsEnabled: closure_0 }));
   const obj = _require(705);
-  importDefault(10779).setLightsEnabled(arg0);
+  importDefault(10832).setLightsEnabled(arg0);
 };
 export const useAndroidNotificationVibrationsEnabled = function useAndroidNotificationVibrationsEnabled() {
-  return callback2((isVibrationsEnabled) => isVibrationsEnabled.isVibrationsEnabled, require(3933) /* isIterable */.shallow);
+  return callback2((isVibrationsEnabled) => isVibrationsEnabled.isVibrationsEnabled, require(3974) /* isIterable */.shallow);
 };
 export const setAndroidNotificationVibrationsEnabled = function setAndroidNotificationVibrationsEnabled(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => outer1_4.setState({ isVibrationsEnabled: closure_0 }));
   const obj = _require(705);
-  importDefault(10779).setVibrationsEnabled(arg0);
+  importDefault(10832).setVibrationsEnabled(arg0);
 };
 export const useAndroidNotificationSoundsEnabled = function useAndroidNotificationSoundsEnabled() {
-  return callback2((isSoundsEnabled) => isSoundsEnabled.isSoundsEnabled, require(3933) /* isIterable */.shallow);
+  return callback2((isSoundsEnabled) => isSoundsEnabled.isSoundsEnabled, require(3974) /* isIterable */.shallow);
 };
 export const setAndroidNotificationSoundsEnabled = function setAndroidNotificationSoundsEnabled(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => outer1_4.setState({ isSoundsEnabled: closure_0 }));
   const obj = _require(705);
-  importDefault(10779).setSoundsEnabled(arg0);
+  importDefault(10832).setSoundsEnabled(arg0);
 };
 export const useAndroidMessageNotificationsEnabled = function useAndroidMessageNotificationsEnabled() {
-  return callback2((isNotifyEveryTime) => isNotifyEveryTime.isNotifyEveryTime, require(3933) /* isIterable */.shallow);
+  return callback2((isNotifyEveryTime) => isNotifyEveryTime.isNotifyEveryTime, require(3974) /* isIterable */.shallow);
 };
 export const setAndroidMessageNotificationsEnabled = function setAndroidMessageNotificationsEnabled(arg0) {
   const _require = arg0;
   _require(705).batchUpdates(() => outer1_4.setState({ isNotifyEveryTime: closure_0 }));
   const obj = _require(705);
-  const result = importDefault(10779).setAndroidNotifyEveryTime(arg0);
+  const result = importDefault(10832).setAndroidNotifyEveryTime(arg0);
 };

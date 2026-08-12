@@ -35,12 +35,12 @@ obj = {
     return obj;
   },
   timing(arg0, arg1) {
-    let f67239 = arg1;
+    let f67374 = arg1;
     let closure_1 = arg0;
     const obj = {};
     const merged = Object.assign(closure_1);
-    f67239 = (arg0) => {
-      value.setValue(f67239.toValue);
+    f67374 = (arg0) => {
+      value.setValue(f67374.toValue);
       if (arg0 != null) {
         arg0({ finished: true });
       }
@@ -73,12 +73,12 @@ obj = {
     return obj;
   },
   spring(animation, arg1) {
-    let f67240 = arg1;
+    let f67375 = arg1;
     let closure_1 = animation;
     const obj = {};
     const merged = Object.assign(closure_1);
-    f67240 = (arg0) => {
-      animation.setValue(f67240.toValue);
+    f67375 = (arg0) => {
+      animation.setValue(f67375.toValue);
       if (arg0 != null) {
         arg0({ finished: true });
       }
@@ -123,11 +123,11 @@ obj = {
     if (typeof mockCompositeAnimation !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    let f67238 = arg0;
+    let f67373 = arg0;
     const obj = {};
     const merged = Object.assign(obj);
-    f67238 = (arg0) => {
-      const item = f67238.forEach((start) => start.start());
+    f67373 = (arg0) => {
+      const item = f67373.forEach((start) => start.start());
       if (arg0 != null) {
         arg0({ finished: true });
       }
@@ -163,11 +163,11 @@ obj = {
     if (typeof mockCompositeAnimation !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    let f67238 = items;
+    let f67373 = items;
     const obj = {};
     const merged = Object.assign(obj);
-    f67238 = (arg0) => {
-      const item = f67238.forEach((start) => start.start());
+    f67373 = (arg0) => {
+      const item = f67373.forEach((start) => start.start());
       if (arg0 != null) {
         arg0({ finished: true });
       }
@@ -203,11 +203,11 @@ obj = {
     if (typeof mockCompositeAnimation !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    let f67238 = arg1;
+    let f67373 = arg1;
     const obj = {};
     const merged = Object.assign(obj);
-    f67238 = (arg0) => {
-      const item = f67238.forEach((start) => start.start());
+    f67373 = (arg0) => {
+      const item = f67373.forEach((start) => start.start());
       if (arg0 != null) {
         arg0({ finished: true });
       }

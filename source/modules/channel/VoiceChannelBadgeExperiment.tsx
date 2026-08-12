@@ -1,10 +1,10 @@
-// Module ID: 8335
-// Function ID: 8336
+// Module ID: 8374
+// Function ID: 8375
 // Name: experiment
-// Dependencies: [4218, 4215, 2]
+// Dependencies: [4259, 4256, 2]
 // Exports: getVoiceChannelBadgeExperiment, useVoiceChannelBadgeExperiment
 
-// Module 8335 (experiment)
+// Module 8374 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 0, label: "Control", config: { enabled: false } }, { id: 1, label: "Show voice badges", config: { enabled: true } }];

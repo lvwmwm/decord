@@ -1,9 +1,9 @@
-// Module ID: 6923
-// Function ID: 6924
+// Module ID: 6962
+// Function ID: 6963
 // Name: trackRoundtrip
-// Dependencies: [1391, 4224, 4395, 676, 3, 6924, 698, 7138, 589, 709, 2]
+// Dependencies: [1391, 4265, 4435, 676, 3, 6963, 698, 7177, 589, 709, 2]
 
-// Module 6923 (trackRoundtrip)
+// Module 6962 (trackRoundtrip)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleInviteData from "handleInviteData";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
@@ -24,10 +24,10 @@ function trackRoundtrip(channelId) {
       if (null != channelId.gatewaySeenTimestamp) {
         diff1 = channelId.gatewaySeenTimestamp - channelId.initialSendTimestamp;
       }
-      let obj = require(6924) /* receiveNetworkInfoformation */;
+      let obj = require(6963) /* receiveNetworkInfoformation */;
       const signalStrength = obj.getSignalStrength();
       obj = {};
-      const merged = Object.assign(importDefault(7138)());
+      const merged = Object.assign(importDefault(7177)());
       obj.api_latency_ms = diff;
       obj.gateway_latency_ms = diff1;
       ({ id: obj3.channel_id, type: obj3.channel_type, guild_id: obj3.guild_id } = basicChannel);

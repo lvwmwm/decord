@@ -1,10 +1,10 @@
-// Module ID: 15008
-// Function ID: 15009
+// Module ID: 15066
+// Function ID: 15067
 // Name: finishMFACheck
 // Dependencies: [5, 530, 2]
 // Exports: trySubmit
 
-// Module 15008 (finishMFACheck)
+// Module 15066 (finishMFACheck)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -69,7 +69,7 @@ function _finishMFACheck() {
               }
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

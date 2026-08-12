@@ -1,10 +1,10 @@
-// Module ID: 4854
-// Function ID: 4855
+// Module ID: 4894
+// Function ID: 4895
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 4854 (apexExperiment)
+// Module 4894 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

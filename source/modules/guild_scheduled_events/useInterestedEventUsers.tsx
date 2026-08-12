@@ -1,10 +1,10 @@
-// Module ID: 8960
-// Function ID: 8961
+// Module ID: 8999
+// Function ID: 9000
 // Name: useInterestedEventUsers
-// Dependencies: [19, 6988, 1397, 589, 2]
+// Dependencies: [19, 7027, 1397, 589, 2]
 // Exports: default
 
-// Module 8960 (useInterestedEventUsers)
+// Module 8999 (useInterestedEventUsers)
 import { useMemo } from "noop";
 import scheduledEventSort from "scheduledEventSort";
 import { GuildScheduledEventUserResponses as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";

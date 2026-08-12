@@ -1,10 +1,10 @@
-// Module ID: 5159
-// Function ID: 5160
+// Module ID: 5199
+// Function ID: 5200
 // Name: NOOP
-// Dependencies: [32, 5160, 5176, 4749, 5218, 5219, 5223, 3950, 1395, 1984, 1930, 1391, 5226, 1980, 1990, 1983, 1910, 4521, 3948, 4390, 3957, 1979, 4126, 1922, 4349, 676, 5227, 1398, 3, 5228, 1430, 4291, 5229, 1903, 4148, 5230, 4985, 12, 1989, 1370, 5231, 3953, 4494, 1236, 11, 5948, 3993, 5951, 5844, 5952, 5953, 1374, 5954, 5955, 4754, 5960, 2]
+// Dependencies: [32, 5200, 5215, 4789, 5257, 5258, 5262, 3991, 1395, 1984, 1930, 1391, 5265, 1980, 1990, 1983, 1910, 4561, 3989, 4430, 3998, 1979, 4167, 1922, 4390, 676, 5266, 1398, 3, 5267, 1430, 4332, 5268, 1903, 4189, 5269, 5025, 12, 1989, 1370, 5270, 3994, 4534, 1236, 11, 5987, 4034, 5990, 5883, 5991, 5992, 1374, 5993, 5994, 4794, 5999, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
-// Module 5159 (NOOP)
+// Module 5199 (NOOP)
 import fuzzysearch from "fuzzysearch";
 import fromType from "fromType";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -93,7 +93,7 @@ function getMatchValue(toLocaleLowerCaseResult1, nextResult, flag) {
       return 3;
     } else {
       if (flag) {
-        if (importDefault(5229)(queryLower, toLocaleLowerCaseResult1)) {
+        if (importDefault(5268)(queryLower, toLocaleLowerCaseResult1)) {
           return 1;
         }
       }
@@ -154,7 +154,7 @@ function queryMemberList(arg0) {
       }
       let tmp12 = importDefault;
       let tmp13 = dependencyMap;
-      let obj3 = importDefault(4148);
+      let obj3 = importDefault(4189);
       let globalName = obj3.getGlobalName(tmp9);
       let tmp14 = tmp9;
       if (globalName != null) {
@@ -229,21 +229,21 @@ function queryMemberList(arg0) {
                             if (substr5 !== normalizeResult) {
                               let tmp33 = num < 50;
                               if (num < 50) {
-                                let tmp28 = tmp12(5229)(toLocaleLowerCaseResult, str4) || tmp12(5229)(normalizeResult, str5);
+                                let tmp28 = tmp12(5268)(toLocaleLowerCaseResult, str4) || tmp12(5268)(normalizeResult, str5);
                                 if (!tmp28) {
-                                  let tmp29 = null != str6 && tmp12(5229)(toLocaleLowerCaseResult, str6);
+                                  let tmp29 = null != str6 && tmp12(5268)(toLocaleLowerCaseResult, str6);
                                   tmp28 = tmp29;
                                 }
                                 if (!tmp28) {
-                                  let tmp30 = null != str7 && tmp12(5229)(normalizeResult, str7);
+                                  let tmp30 = null != str7 && tmp12(5268)(normalizeResult, str7);
                                   tmp28 = tmp30;
                                 }
                                 if (!tmp28) {
-                                  let tmp31 = null != str8 && tmp12(5229)(toLocaleLowerCaseResult, str8);
+                                  let tmp31 = null != str8 && tmp12(5268)(toLocaleLowerCaseResult, str8);
                                   tmp28 = tmp31;
                                 }
                                 if (!tmp28) {
-                                  let tmp32 = null != str9 && tmp12(5229)(normalizeResult, str9);
+                                  let tmp32 = null != str9 && tmp12(5268)(normalizeResult, str9);
                                   tmp28 = tmp32;
                                 }
                                 tmp33 = tmp28;
@@ -362,10 +362,10 @@ function queryMemberList(arg0) {
       let tmp4 = tmp13;
     } while (num2 < length);
   }
-  const sorted = items.sort(importDefault(5230));
+  const sorted = items.sort(importDefault(5269));
   let combined = items;
   if (items.length < limit) {
-    const sorted1 = items1.sort(importDefault(5230));
+    const sorted1 = items1.sort(importDefault(5269));
     const _Math = Math;
     combined = items.concat(items1.slice(0, Math.max(0, limit - items.length)));
   }
@@ -375,15 +375,15 @@ function queryMemberList(arg0) {
   return combined;
 }
 function getPriorityForStickerMetadataType(arg0) {
-  if (require(4985) /* StickerFormat */.StickerMetadataTypes.STICKER_NAME === arg0) {
+  if (require(5025) /* StickerFormat */.StickerMetadataTypes.STICKER_NAME === arg0) {
     return 11;
-  } else if (tmp(4985).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
+  } else if (tmp(5025).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
     return 6;
-  } else if (tmp(4985).StickerMetadataTypes.TAG === arg0) {
+  } else if (tmp(5025).StickerMetadataTypes.TAG === arg0) {
     return 1;
   } else {
-    if (tmp(4985).StickerMetadataTypes.GUILD_NAME !== arg0) {
-      if (tmp(4985).StickerMetadataTypes.PACK_NAME !== arg0) {
+    if (tmp(5025).StickerMetadataTypes.GUILD_NAME !== arg0) {
+      if (tmp(5025).StickerMetadataTypes.PACK_NAME !== arg0) {
         return 1;
       }
     }
@@ -730,9 +730,9 @@ areArraysShallowlyEqual = {
           const found1 = members.filter(isValidGuildMember);
           tmp6 = found1;
           if (flag) {
-            const members1 = importDefault(5231).requestMembers(channel1.guild_id, query, limit);
+            const members1 = importDefault(5270).requestMembers(channel1.guild_id, query, limit);
             tmp6 = found1;
-            const obj3 = importDefault(5231);
+            const obj3 = importDefault(5270);
           }
         }
         obj = { query: null, members: null, limit: null, filter: null, allowSnowflake: null };
@@ -845,7 +845,7 @@ areArraysShallowlyEqual = {
         flag = query.length > 0;
       }
       if (flag) {
-        let obj = importDefault(5231);
+        let obj = importDefault(5270);
         const members1 = obj.requestMembers(guildId, query, limit);
       }
       obj = { query: null, members: null, limit: null, filter: null, allowSnowflake: null };
@@ -887,7 +887,7 @@ areArraysShallowlyEqual = {
       tmp = query.length > 0;
     }
     if (tmp) {
-      let obj = importDefault(5231);
+      let obj = importDefault(5270);
       const members = obj.requestMembers(null, query, limit);
     }
     obj = { query, limit, request: flag, filter, boosters, users: null };
@@ -919,10 +919,10 @@ areArraysShallowlyEqual = {
       const mapped = found.map((toLocaleLowerCase) => {
         const toLocaleLowerCaseResult = toLocaleLowerCase.toLocaleLowerCase();
         const obj = { queryLower: toLocaleLowerCaseResult, exactQuery: null, containQuery: null, isFullMatch: false };
-        const regExp = new RegExp("^" + callback(4291).escape(toLocaleLowerCaseResult), "i");
+        const regExp = new RegExp("^" + callback(4332).escape(toLocaleLowerCaseResult), "i");
         obj[1] = regExp;
-        const obj2 = callback(4291);
-        const regExp1 = new RegExp(callback(4291).escape(toLocaleLowerCaseResult), "i");
+        const obj2 = callback(4332);
+        const regExp1 = new RegExp(callback(4332).escape(toLocaleLowerCaseResult), "i");
         obj[2] = regExp1;
         return obj;
       });
@@ -931,17 +931,17 @@ areArraysShallowlyEqual = {
         let obj = { queryLower: null, exactQuery: null, containQuery: null, isFullMatch: true };
         obj[0] = toLocaleLowerCaseResult;
         const _RegExp = RegExp;
-        let obj2 = callback(4291);
+        let obj2 = callback(4332);
         const _HermesInternal = HermesInternal;
-        let regExp = new RegExp("^" + callback(4291).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
+        let regExp = new RegExp("^" + callback(4332).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
         obj[1] = regExp;
         const _RegExp2 = RegExp;
-        const str = callback(4291).escape(toLocaleLowerCaseResult);
-        const obj3 = callback(4291);
-        let regExp1 = new RegExp(callback(4291).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
+        const str = callback(4332).escape(toLocaleLowerCaseResult);
+        const obj3 = callback(4332);
+        let regExp1 = new RegExp(callback(4332).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
         obj[2] = regExp1;
         mapped.unshift(obj);
-        const str6 = callback(4291).escape(toLocaleLowerCaseResult);
+        const str6 = callback(4332).escape(toLocaleLowerCaseResult);
       }
       return mapped;
     })(guildId.query, flag2);
@@ -1010,10 +1010,10 @@ areArraysShallowlyEqual = {
       str = query.toLocaleLowerCase();
     }
     let obj = { exactQuery: null, containQuery: null, queryLower: null };
-    const regExp = new RegExp("^" + importDefault(4291).escape(str), "i");
+    const regExp = new RegExp("^" + importDefault(4332).escape(str), "i");
     obj[0] = regExp;
-    const obj3 = importDefault(4291);
-    const regExp1 = new RegExp(importDefault(4291).escape(str), "i");
+    const obj3 = importDefault(4332);
+    const regExp1 = new RegExp(importDefault(4332).escape(str), "i");
     obj[1] = regExp1;
     obj[2] = str;
     const items = [];
@@ -1052,7 +1052,7 @@ areArraysShallowlyEqual = {
       }
       continue;
     }
-    const sorted = items.sort(importDefault(5230));
+    const sorted = items.sort(importDefault(5269));
     if (items.length > limit) {
       items.length = limit;
     }
@@ -1092,7 +1092,7 @@ areArraysShallowlyEqual = {
         const obj2 = _undefined2(outer1_3[34]);
       }
     });
-    const sorted = items.sort(importDefault(5230));
+    const sorted = items.sort(importDefault(5269));
     if (items.length > num) {
       items.length = num;
     }
@@ -1121,13 +1121,13 @@ areArraysShallowlyEqual = {
     const stripDiacriticsResult = obj2.stripDiacritics(require(1903) /* isNullOrEmpty */.normalize(query.toLocaleLowerCase()));
     let obj = { exactQuery: null, containQuery: null, queryLower: null };
     const obj3 = require(1903) /* isNullOrEmpty */;
-    const regExp = new RegExp("^" + importDefault(4291).escape(stripDiacriticsResult), "i");
+    const regExp = new RegExp("^" + importDefault(4332).escape(stripDiacriticsResult), "i");
     obj[0] = regExp;
-    const obj5 = importDefault(4291);
-    const regExp1 = new RegExp(importDefault(4291).escape(stripDiacriticsResult), "i");
+    const obj5 = importDefault(4332);
+    const regExp1 = new RegExp(importDefault(4332).escape(stripDiacriticsResult), "i");
     obj[1] = regExp1;
     obj[2] = stripDiacriticsResult;
-    const obj6 = importDefault(4291);
+    const obj6 = importDefault(4332);
     const tmp4 = importDefault(12);
     const tmp4Result = importDefault(12)(authStore.getMutablePrivateChannels());
     const iter = importDefault(12)(authStore.getMutablePrivateChannels()).values();
@@ -1141,7 +1141,7 @@ areArraysShallowlyEqual = {
         if (filter(tmp6)) {
           let tmp8 = require;
           let tmp9 = dependencyMap;
-          let obj9 = require(4494) /* computeChannelName */;
+          let obj9 = require(4534) /* computeChannelName */;
           let tmp10 = nextResult;
           let tmp11 = authStore2;
           let tmp12 = store6;
@@ -1168,7 +1168,7 @@ areArraysShallowlyEqual = {
               let tmp57 = importDefault;
               let tmp58 = dependencyMap;
               let tmp56 = username;
-              let obj17 = importDefault(4148);
+              let obj17 = importDefault(4189);
               let globalName = obj17.getGlobalName(tmp23);
               let tmp60 = store6;
               let tmp61 = item10107;
@@ -1222,7 +1222,7 @@ areArraysShallowlyEqual = {
             obj[2] = calculateScore(tmp17, boosters[tmp6.id]);
             let tmp48 = require;
             let tmp49 = dependencyMap;
-            let obj16 = require(4494) /* computeChannelName */;
+            let obj16 = require(4534) /* computeChannelName */;
             let tmp50 = authStore2;
             let tmp51 = store6;
             obj[3] = obj16.computeChannelName(tmp6, authStore2, store6);
@@ -1234,7 +1234,7 @@ areArraysShallowlyEqual = {
       }
       continue;
     }
-    const sorted = items.sort(importDefault(5230));
+    const sorted = items.sort(importDefault(5269));
     if (items.length > limit) {
       items.length = limit;
     }
@@ -1257,13 +1257,13 @@ areArraysShallowlyEqual = {
     }
     const toLocaleLowerCaseResult = query.toLocaleLowerCase();
     let obj = { exactQuery: null, containQuery: null, queryLower: null };
-    const regExp = new RegExp("^" + importDefault(4291).escape(toLocaleLowerCaseResult), "i");
+    const regExp = new RegExp("^" + importDefault(4332).escape(toLocaleLowerCaseResult), "i");
     obj[0] = regExp;
-    const obj2 = importDefault(4291);
-    const regExp1 = new RegExp(importDefault(4291).escape(toLocaleLowerCaseResult), "i");
+    const obj2 = importDefault(4332);
+    const regExp1 = new RegExp(importDefault(4332).escape(toLocaleLowerCaseResult), "i");
     obj[1] = regExp1;
     obj[2] = toLocaleLowerCaseResult;
-    const obj3 = importDefault(4291);
+    const obj3 = importDefault(4332);
     const items = [];
     const iter = LAUNCHABLE_APPLICATIONS()[Symbol.iterator]();
     while (iter !== undefined) {
@@ -1292,7 +1292,7 @@ areArraysShallowlyEqual = {
       }
       continue;
     }
-    const sorted = items.sort(importDefault(5230));
+    const sorted = items.sort(importDefault(5269));
     if (items.length > limit) {
       items.length = limit;
     }
@@ -1311,10 +1311,10 @@ areArraysShallowlyEqual = {
     }
     const toLocaleLowerCaseResult = query.toLocaleLowerCase();
     let obj = { exactQuery: null, containQuery: null, queryLower: null };
-    const regExp = new RegExp("^" + importDefault(4291).escape(toLocaleLowerCaseResult), "i");
+    const regExp = new RegExp("^" + importDefault(4332).escape(toLocaleLowerCaseResult), "i");
     obj[0] = regExp;
-    const obj2 = importDefault(4291);
-    const regExp1 = new RegExp(importDefault(4291).escape(toLocaleLowerCaseResult), "i");
+    const obj2 = importDefault(4332);
+    const regExp1 = new RegExp(importDefault(4332).escape(toLocaleLowerCaseResult), "i");
     obj[1] = regExp1;
     obj[2] = toLocaleLowerCaseResult;
     obj = {};
@@ -1384,7 +1384,7 @@ areArraysShallowlyEqual = {
       }
       continue;
     }
-    const sorted = items7.sort(importDefault(5230));
+    const sorted = items7.sort(importDefault(5269));
     if (items7.length > limit) {
       items7.length = limit;
     }
@@ -1407,13 +1407,13 @@ areArraysShallowlyEqual = {
     }
     const toLocaleLowerCaseResult = query.toLocaleLowerCase();
     let obj = { exactQuery: null, containQuery: null, queryLower: null };
-    const regExp = new RegExp("^" + importDefault(4291).escape(toLocaleLowerCaseResult), "i");
+    const regExp = new RegExp("^" + importDefault(4332).escape(toLocaleLowerCaseResult), "i");
     obj[0] = regExp;
-    const obj2 = importDefault(4291);
-    const regExp1 = new RegExp(importDefault(4291).escape(toLocaleLowerCaseResult), "i");
+    const obj2 = importDefault(4332);
+    const regExp1 = new RegExp(importDefault(4332).escape(toLocaleLowerCaseResult), "i");
     obj[1] = regExp1;
     obj[2] = toLocaleLowerCaseResult;
-    const obj3 = importDefault(4291);
+    const obj3 = importDefault(4332);
     const tmp4 = importDefault(12);
     const tmp4Result = importDefault(12)(sKUs.getSKUs());
     const iter = importDefault(12)(sKUs.getSKUs()).values();
@@ -1449,7 +1449,7 @@ areArraysShallowlyEqual = {
       }
       continue;
     }
-    const sorted = items.sort(importDefault(5230));
+    const sorted = items.sort(importDefault(5269));
     if (items.length > limit) {
       items.length = limit;
     }
@@ -1901,23 +1901,23 @@ areArraysShallowlyEqual = {
     ({ query, guild } = arg0);
     const toLocaleLowerCaseResult = query.toLocaleLowerCase();
     let obj = { exactQuery: null, containQuery: null, queryLower: null };
-    let obj1 = importDefault(4291);
+    let obj1 = importDefault(4332);
     const regExp = new RegExp("^" + obj1.escape(toLocaleLowerCaseResult), "i");
     obj[0] = regExp;
-    let obj2 = importDefault(4291);
+    let obj2 = importDefault(4332);
     const regExp1 = new RegExp(obj2.escape(toLocaleLowerCaseResult), "i");
     obj[1] = regExp1;
     obj[2] = toLocaleLowerCaseResult;
-    let canSeeOnboardingHomeResult = require(5844) /* useCanSeeOnboardingHome */.canSeeOnboardingHome(guild.id);
+    let canSeeOnboardingHomeResult = require(5883) /* useCanSeeOnboardingHome */.canSeeOnboardingHome(guild.id);
     if (canSeeOnboardingHomeResult) {
       const features = guild.features;
       canSeeOnboardingHomeResult = !features.has(constants2.HUB);
     }
     const features2 = guild.features;
     const hasItem = features2.has(constants2.COMMUNITY);
-    const obj4 = require(5844) /* useCanSeeOnboardingHome */;
+    const obj4 = require(5883) /* useCanSeeOnboardingHome */;
     const tmp8 = constants2;
-    let result = require(5952) /* useGuildOnboardingAvailable */.isGuildOnboardingAvailable(guild);
+    let result = require(5991) /* useGuildOnboardingAvailable */.isGuildOnboardingAvailable(guild);
     if (result) {
       const features3 = guild.features;
       result = features3.has(tmp8.COMMUNITY);
@@ -2038,7 +2038,7 @@ areArraysShallowlyEqual = {
         continue;
       }
       const found = items1.filter((record) => "null" !== record.record.id);
-      let sorted = found.sort(importDefault(5953));
+      let sorted = found.sort(importDefault(5992));
       let tmp8 = null != limit;
       if (tmp8) {
         tmp8 = sorted.length > limit;
@@ -2101,11 +2101,11 @@ areArraysShallowlyEqual = {
         const _RegExp = RegExp;
         let obj2 = toLocaleLowerCaseResult(1903);
         const _HermesInternal = HermesInternal;
-        const regExp = new RegExp("^" + nextResult(4291).escape(stripDiacriticsResult), "i");
+        const regExp = new RegExp("^" + nextResult(4332).escape(stripDiacriticsResult), "i");
         const _RegExp2 = RegExp;
-        const obj3 = nextResult(4291);
+        const obj3 = nextResult(4332);
         const _HermesInternal2 = HermesInternal;
-        const regExp1 = new RegExp("" + nextResult(4291).escape(stripDiacriticsResult), "i");
+        const regExp1 = new RegExp("" + nextResult(4332).escape(stripDiacriticsResult), "i");
         const stickerMetadataArrays = outer1_10.getStickerMetadataArrays();
         let item = stickerMetadataArrays.forEach((arr) => {
           const item = arr.forEach((arg0, id) => {
@@ -2233,8 +2233,8 @@ areArraysShallowlyEqual = {
       tmp3 = !obj.hasFetchedAllSounds();
     }
     if (tmp3) {
-      const result = _require(5955).maybeFetchSoundboardSounds();
-      const obj2 = _require(5955);
+      const result = _require(5994).maybeFetchSoundboardSounds();
+      const obj2 = _require(5994);
     }
     const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
@@ -2257,7 +2257,7 @@ areArraysShallowlyEqual = {
       return arg0;
     }, []);
     let arr = Array.from(sounds.values());
-    return _require(5960).searchSounds(arg0, reduced, currentUser, channel);
+    return _require(5999).searchSounds(arg0, reduced, currentUser, channel);
   },
   matchSentinel(arg0, arg1, storeThread) {
     const isMatch = tmp7.test(arg1);

@@ -1,10 +1,10 @@
-// Module ID: 10948
-// Function ID: 10949
+// Module ID: 11001
+// Function ID: 11002
 // Name: useFetchStreamPreview
-// Dependencies: [19, 4485, 1391, 3948, 1979, 505, 589, 4483, 2]
+// Dependencies: [19, 4525, 1391, 3989, 1979, 505, 589, 4523, 2]
 // Exports: default
 
-// Module 10948 (useFetchStreamPreview)
+// Module 11001 (useFetchStreamPreview)
 import noop from "noop";
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -83,5 +83,5 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
     }
     return obj;
   }
-  obj = { previewUrl: "ct", isLoading: "Array" };
+  obj = { previewUrl: "ct", isLoading: true };
 };

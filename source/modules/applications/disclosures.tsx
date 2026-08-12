@@ -1,10 +1,10 @@
-// Module ID: 10518
-// Function ID: 10519
+// Module ID: 10559
+// Function ID: 10560
 // Name: _getDisclosures
-// Dependencies: [5, 676, 530, 10519, 1236, 2]
+// Dependencies: [5, 676, 530, 10560, 1236, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 10518 (_getDisclosures)
+// Module 10559 (_getDisclosures)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -139,10 +139,10 @@ export const ackDisclosures = function ackDisclosures(closure_0, outer1_50) {
   return applyArgumentsResult;
 };
 export const getTextForDisclosure = function getTextForDisclosure(toFixed) {
-  if (require(10519) /* create */.ApplicationDisclosureType.IP_LOCATION === toFixed) {
+  if (require(10560) /* create */.ApplicationDisclosureType.IP_LOCATION === toFixed) {
     const intl2 = tmp(1236).intl;
     return intl2.string(tmp(1236).t["6wPmjo"]);
-  } else if (tmp(10519).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
+  } else if (tmp(10560).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
     const intl = tmp(1236).intl;
     return intl.string(tmp(1236).t["/uOMKZ"]);
   } else {

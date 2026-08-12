@@ -1,9 +1,9 @@
-// Module ID: 7060
-// Function ID: 7061
+// Module ID: 7099
+// Function ID: 7100
 // Name: CONVERSATION_COLORS
 // Dependencies: [2]
 
-// Module 7060 (CONVERSATION_COLORS)
+// Module 7099 (CONVERSATION_COLORS)
 const result = require("set").fileFinishedImporting("modules/conversations/ConversationConstants.tsx");
 
 export const CONVERSATION_COLORS = ["rgba(237, 66, 69, 0.12)", "rgba(230, 126, 34, 0.12)", "rgba(254, 231, 92, 0.12)", "rgba(87, 242, 135, 0.12)", "rgba(52, 152, 219, 0.12)", "rgba(88, 101, 242, 0.12)", "rgba(155, 89, 182, 0.12)"];

@@ -1,9 +1,9 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11287
+// Function ID: 11288
 // Name: DurationSelectionActionSheet
-// Dependencies: [19, 9757, 11234, 8125, 676, 21, 4303, 5764, 5396, 1236, 5766, 647, 8124, 4271, 1297, 5374, 5767, 5768, 9069, 7964, 5150, 4714, 11235, 698, 11236, 2]
+// Dependencies: [19, 9798, 11288, 8164, 676, 21, 4344, 5803, 5435, 1236, 5805, 647, 8163, 4312, 1297, 5413, 5806, 5807, 9108, 8003, 5190, 4754, 11289, 698, 11290, 2]
 
-// Module 11233 (DurationSelectionActionSheet)
+// Module 11287 (DurationSelectionActionSheet)
 import WarningIcon from "WarningIcon";
 import computeAlertSettings from "computeAlertSettings";
 import useGuildIncidentsActionSheetStore from "useGuildIncidentsActionSheetStore";
@@ -29,7 +29,7 @@ function DurationSelectionActionSheet(onClose) {
   obj = { title: null };
   const intl = onClose(1236).intl;
   obj[0] = intl.string(onClose(1236).t.vKYZzc);
-  const items = [callback2(onClose(5396).BottomSheetTitleHeader, obj), ];
+  const items = [callback2(onClose(5435).BottomSheetTitleHeader, obj), ];
   obj = { hasIcons: false, children: null };
   obj[1] = getTimeframes().map((label) => {
     let closure_0 = label;
@@ -41,9 +41,9 @@ function DurationSelectionActionSheet(onClose) {
       }
     }, label.value);
   });
-  items[1] = callback2(onClose(5766).ActionSheetRow.Group, obj);
+  items[1] = callback2(onClose(5805).ActionSheetRow.Group, obj);
   obj[0] = items;
-  return callback3(onClose(5764).ActionSheet, obj);
+  return callback3(onClose(5803).ActionSheet, obj);
 }
 ({ resetGuildIncidentsActionSheetStore: c5, setInitialTime: closure_6, setPauseDms: error, setPauseInvites: metroImportAll, setTime: c9, useGuildIncidentsActionSheetStore: c10 } = useGuildIncidentsActionSheetStore);
 ({ AnalyticEvents: closure_12, GuildFeatures: map1 } = ME);

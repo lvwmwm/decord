@@ -1,10 +1,10 @@
-// Module ID: 14456
-// Function ID: 14457
+// Module ID: 14513
+// Function ID: 14514
 // Name: useFetchListingsForGuild
-// Dependencies: [5, 32, 19, 4994, 3942, 589, 5875, 5329, 14457, 14458, 11591, 1370, 2]
+// Dependencies: [5, 32, 19, 5034, 3983, 589, 5914, 5368, 14514, 14515, 11648, 1370, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 14456 (useFetchListingsForGuild)
+// Module 14513 (useFetchListingsForGuild)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -382,8 +382,8 @@ export const useSubscriptionGroupListing = function useSubscriptionGroupListing(
 };
 export const useGroupListingsForGuild = function useGroupListingsForGuild(guildId) {
   const _require = guildId;
-  let closure_1 = _require(14457).useGroupListingsFetchContext("useGroupListingsForGuild");
-  const obj = _require(14457);
+  let closure_1 = _require(14514).useGroupListingsFetchContext("useGroupListingsForGuild");
+  const obj = _require(14514);
   const items = [makeGroupListingIndexSubscriptionListingTag];
   return _require(589).useStateFromStores(items, () => {
     if (null != closure_0) {
@@ -563,7 +563,7 @@ export const useDeleteSubscriptionListing = function useDeleteSubscriptionListin
   };
 };
 export const useArchiveSubscriptionListing = function useArchiveSubscriptionListing() {
-  const tmp2 = callback2(importDefault(11591)(importAll(5875).archiveSubscriptionListing), 2);
+  const tmp2 = callback2(importDefault(11648)(importAll(5914).archiveSubscriptionListing), 2);
   return { error: tmp2[1].error, submitting: tmp2[1].loading, archiveSubscriptionListing: tmp2[0] };
 };
 export const usePublishSubscriptionListing = function usePublishSubscriptionListing() {
@@ -612,7 +612,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
                 ({ guildId: c0, groupListingId: c1, listingId: c2 } = callback);
                 c5 = 1;
                 c6 = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "ct", done: true };
               }
             } else if (1 === tmp9) {
               if (arg0 === 1) {

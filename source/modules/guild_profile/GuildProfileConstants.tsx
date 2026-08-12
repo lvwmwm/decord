@@ -1,9 +1,9 @@
-// Module ID: 9260
-// Function ID: 9261
+// Module ID: 9300
+// Function ID: 9301
 // Name: BannerPalettePresets
 // Dependencies: [2]
 
-// Module 9260 (BannerPalettePresets)
+// Module 9300 (BannerPalettePresets)
 let obj = { BOULDER: "Boulder", CASCADE: "Cascade", THUNDER: "Thunder", SOUL: "Soul", MARSH: "Marsh", VOLCANO: "Volcano", EARTH: "Earth", ZEPHYR: "Zephyr", RISING: "Rising" };
 obj = { name: obj.SOUL, color: "#ff1c90" };
 let items = [obj, { name: obj.VOLCANO, color: "#e81d1e" }, { name: obj.MARSH, color: "#e86e1d" }, { name: obj.THUNDER, color: "#e8c02f" }, { name: obj.RISING, color: "#71368a" }, { name: obj.ZEPHYR, color: "#029FFC" }, { name: obj.CASCADE, color: "#4fe2ca" }, { name: obj.EARTH, color: "#406601" }, { name: obj.BOULDER, color: "#272727" }];

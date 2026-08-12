@@ -1,9 +1,9 @@
-// Module ID: 13452
-// Function ID: 13453
+// Module ID: 13509
+// Function ID: 13510
 // Name: Fonts
-// Dependencies: [109, 19, 17, 676, 21, 4303, 712, 5158, 4031, 1297, 4299, 1236, 5998, 1363, 11564, 500, 2]
+// Dependencies: [109, 19, 17, 676, 21, 4344, 712, 5198, 4072, 1297, 4340, 1236, 6037, 1363, 11621, 500, 2]
 
-// Module 13452 (Fonts)
+// Module 13509 (Fonts)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Fonts } from "ME";
@@ -219,7 +219,7 @@ prototype["renderTopContainer"] = function renderTopContainer() {
     const items2 = [tmp.inputViewTitle];
     obj[2] = items2;
     obj[3] = title;
-    tmp12Result = callback2(require(4299) /* Text */.Text, obj);
+    tmp12Result = callback2(require(4340) /* Text */.Text, obj);
     const tmp12 = callback2;
   }
   let tmp15 = null != helpText;
@@ -230,7 +230,7 @@ prototype["renderTopContainer"] = function renderTopContainer() {
   if (tmp15) {
     obj = { variant: "text-xs/medium", children: null };
     obj[1] = helpText;
-    tmp16 = callback2(require(4299) /* Text */.Text, obj);
+    tmp16 = callback2(require(4340) /* Text */.Text, obj);
   }
   const obj1 = { style: tmp.topContainer, children: null };
   const items3 = [tmp12Result, tmp16, , ];
@@ -288,7 +288,7 @@ prototype["renderTrailingButton"] = function renderTrailingButton() {
         clearButtonAccessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.VkKicb);
       }
       obj[5] = clearButtonAccessibilityLabel;
-      obj[6] = closure_9(require(5998) /* CircleXIcon */.CircleXIcon, { size: "sm" });
+      obj[6] = closure_9(require(6037) /* CircleXIcon */.CircleXIcon, { size: "sm" });
       let tmp3Result = tmp3(closure_6, obj);
       const tmp4 = closure_6;
     } else {
@@ -372,7 +372,7 @@ prototype["renderTextView"] = function renderTextView() {
     const found = items1.filter(Boolean);
     const joined = found.join(",");
     if (inActionSheet) {
-      let TextInput = importDefault(11564);
+      let TextInput = importDefault(11621);
     } else {
       TextInput = require(1297) /* Button */.TextInput;
     }

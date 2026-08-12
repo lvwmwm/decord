@@ -1,9 +1,9 @@
-// Module ID: 9456
-// Function ID: 9457
+// Module ID: 9496
+// Function ID: 9497
 // Name: EmojiImage
-// Dependencies: [32, 19, 17, 5776, 1925, 21, 4303, 712, 3993, 5268, 1435, 500, 4299, 5360, 8794, 9457, 9458, 4271, 9460, 5748, 1236, 4846, 9533, 2]
+// Dependencies: [32, 19, 17, 5815, 1925, 21, 4344, 712, 4034, 5307, 1435, 500, 4340, 5399, 8833, 9497, 9498, 4312, 9500, 5787, 1236, 4886, 9573, 2]
 
-// Module 9456 (EmojiImage)
+// Module 9496 (EmojiImage)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "QUICK_SWITCHER";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
@@ -25,12 +25,12 @@ function EmojiImage(id) {
   if (animated === undefined) {
     animated = false;
   }
-  const AnimateEmoji = require(3993) /* explicitContentFromProto */.AnimateEmoji;
+  const AnimateEmoji = require(4034) /* explicitContentFromProto */.AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   let obj = { style: items, source: null, resizeMode: "contain" };
   items = [{ height: size, width: size }, id.style];
   const tmp2 = closure_8;
-  const tmp3 = importDefault(5268);
+  const tmp3 = importDefault(5307);
   obj = { id: id.emojiId, animated: null, size: null };
   const obj2 = importDefault(1435);
   obj = { uri: obj2.getEmojiURL(obj) };
@@ -103,7 +103,7 @@ function TextStatusContent(arg0) {
     }
     const items2 = [tmp7Result, text];
     obj[5] = items2;
-    return closure_10(require(4299) /* Text */.Text, obj);
+    return closure_10(require(4340) /* Text */.Text, obj);
   } else {
     obj1 = require(500) /* set */;
     obj1.isAndroid() ? { fontFamily: "ggsans-NormalItalic, NotoSans-NormalItalic" } : { fontStyle: "italic" };
@@ -113,7 +113,7 @@ function EmojiOnlyStatusContent(arg0) {
   let emoji;
   let size;
   ({ emoji, size } = arg0);
-  const AnimateEmoji = require(3993) /* explicitContentFromProto */.AnimateEmoji;
+  const AnimateEmoji = require(4034) /* explicitContentFromProto */.AnimateEmoji;
   let id;
   const setting = AnimateEmoji.useSetting();
   if (emoji != null) {
@@ -145,7 +145,7 @@ function EmojiOnlyStatusContent(arg0) {
     str = "";
   }
   obj1[3] = str;
-  obj[1] = closure_8(importDefault(5360), obj1);
+  obj[1] = closure_8(importDefault(5399), obj1);
   return closure_8(tmp12, obj);
 }
 let c4 = importAllResult;
@@ -182,7 +182,7 @@ let closure_11 = createCacheKey.createStyles((arg0) => {
   return obj;
 });
 let closure_12 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_13 = { [arg1(5776).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_13 = { [arg1(5815).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 let closure_16 = createCacheKey.createStyles(() => ({ container: { alignItems: "center" } }));
 const forwardRefResult = importAllResult.forwardRef((showFullStatus, ref) => {
   let customStatusActivity;

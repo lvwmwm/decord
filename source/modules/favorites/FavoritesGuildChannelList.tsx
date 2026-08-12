@@ -1,10 +1,10 @@
-// Module ID: 15414
-// Function ID: 15415
+// Module ID: 15470
+// Function ID: 15471
 // Name: getMissingFavoriteThreadIds
-// Dependencies: [32, 19, 1390, 4994, 6988, 5223, 3950, 1395, 5260, 1391, 6989, 3948, 4315, 1979, 4499, 1394, 3947, 1429, 6996, 505, 6990, 1306, 5931, 9716, 12, 15415, 1370, 2]
+// Dependencies: [32, 19, 1390, 5034, 7027, 5262, 3991, 1395, 5299, 1391, 7028, 3989, 4356, 1979, 4539, 1394, 3988, 1429, 7035, 505, 7029, 1306, 5970, 9755, 12, 15471, 1370, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 15414 (getMissingFavoriteThreadIds)
+// Module 15470 (getMissingFavoriteThreadIds)
 import _slicedToArray from "_slicedToArray";
 import sum from "sum";
 import importDefaultResult1 from "_handleConnectionOpen";
@@ -59,7 +59,7 @@ function getMissingFavoriteThreadIds(includeLoading) {
               continue;
             } else {
               let tmp5 = importDefault;
-              let obj = importDefault(5931);
+              let obj = importDefault(5970);
               let loadState = obj.getLoadState(key10013);
               let tmp7 = "NOT_FOUND" !== loadState;
               if (tmp7) {
@@ -289,7 +289,7 @@ function computeFavoritesState(favoriteChannels) {
     },
     set: undefined
   });
-  const favoritesCategories = favoriteChannels(9716).getFavoritesCategories(favoriteChannels);
+  const favoritesCategories = favoriteChannels(9755).getFavoritesCategories(favoriteChannels);
   let found = favoritesCategories.filter((id) => null != id.id);
   let mapped = found.map((id) => {
     id = id.id;
@@ -509,19 +509,19 @@ function computeFavoritesState(favoriteChannels) {
     getSections() {
       let length;
       const items = [];
-      items[favoriteChannels(6990).SECTION_INDEX_CHANNEL_NOTICES] = items2.length;
+      items[favoriteChannels(7029).SECTION_INDEX_CHANNEL_NOTICES] = items2.length;
       let num = 0;
-      items[favoriteChannels(6990).SECTION_INDEX_GUILD_ACTIONS] = 0;
-      items[favoriteChannels(6990).SECTION_INDEX_FAVORITES] = 0;
-      items[favoriteChannels(6990).SECTION_INDEX_RECENTS] = 0;
-      items[favoriteChannels(6990).SECTION_INDEX_UNCATEGORIZED_CHANNELS] = obj.channelList.length;
+      items[favoriteChannels(7029).SECTION_INDEX_GUILD_ACTIONS] = 0;
+      items[favoriteChannels(7029).SECTION_INDEX_FAVORITES] = 0;
+      items[favoriteChannels(7029).SECTION_INDEX_RECENTS] = 0;
+      items[favoriteChannels(7029).SECTION_INDEX_UNCATEGORIZED_CHANNELS] = obj.channelList.length;
       if (0 < found1.length) {
         do {
           let tmp = favoriteChannels;
           let tmp2 = dependencyMap;
           let _Math = Math;
           let tmp4 = found1;
-          let sum = favoriteChannels(6990).SECTION_INDEX_FIRST_NAMED_CATEGORY + num;
+          let sum = favoriteChannels(7029).SECTION_INDEX_FIRST_NAMED_CATEGORY + num;
           items[sum] = Math.max(1, found1[num].channelList.length);
           num = num + 1;
           length = found1.length;
@@ -530,26 +530,26 @@ function computeFavoritesState(favoriteChannels) {
       return items;
     },
     isPlaceholderRow(arg0, arg1) {
-      let tmp3 = arg0 < favoriteChannels(6990).SECTION_INDEX_FIRST_NAMED_CATEGORY;
+      let tmp3 = arg0 < favoriteChannels(7029).SECTION_INDEX_FIRST_NAMED_CATEGORY;
       if (!tmp3) {
         tmp3 = 0 !== arg1;
       }
       let tmp5 = !tmp3;
       if (!tmp3) {
-        tmp5 = 0 === found1[arg0 - tmp(undefined, 6990).SECTION_INDEX_FIRST_NAMED_CATEGORY].channelList.length;
+        tmp5 = 0 === found1[arg0 - tmp(undefined, 7029).SECTION_INDEX_FIRST_NAMED_CATEGORY].channelList.length;
       }
       return tmp5;
     },
     getCategoryFromSection(arg0) {
-      if (arg0 === favoriteChannels(6990).SECTION_INDEX_UNCATEGORIZED_CHANNELS) {
+      if (arg0 === favoriteChannels(7029).SECTION_INDEX_UNCATEGORIZED_CHANNELS) {
         let tmp4 = obj;
       } else {
-        tmp4 = found1[arg0 - tmp(undefined, 6990).SECTION_INDEX_FIRST_NAMED_CATEGORY];
+        tmp4 = found1[arg0 - tmp(undefined, 7029).SECTION_INDEX_FIRST_NAMED_CATEGORY];
       }
       return tmp4;
     },
     getNamedCategoryFromSection(arg0) {
-      return found1[arg0 - favoriteChannels(undefined, 6990).SECTION_INDEX_FIRST_NAMED_CATEGORY];
+      return found1[arg0 - favoriteChannels(undefined, 7029).SECTION_INDEX_FIRST_NAMED_CATEGORY];
     },
     getChannelFromSectionRow(arg0, arg1) {
       const categoryFromSection = this.getCategoryFromSection(arg0);
@@ -591,7 +591,7 @@ function computeFavoritesState(favoriteChannels) {
             obj = { section: null, row: null };
             let tmp3 = favoriteChannels;
             let tmp4 = dependencyMap;
-            obj[0] = num + favoriteChannels(6990).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+            obj[0] = num + favoriteChannels(7029).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
             obj[1] = num2;
             let items1 = [obj];
             return items1;
@@ -667,7 +667,7 @@ export const useFavoritesGuildChannelList = function useFavoritesGuildChannelLis
   let hasAccess;
   let dependencyMap;
   let callback;
-  hasAccess = _require(9716).useFavoritesAccess("FavoritesGuildChannelList").hasAccess;
+  hasAccess = _require(9755).useFavoritesAccess("FavoritesGuildChannelList").hasAccess;
   const tmp3 = callback(React.useState(() => outer1_26(undefined, { withSuggestionsNotice: c0 })), 2);
   dependencyMap = tmp3[1];
   const isConnectedResult = importDefaultResult1.isConnected();
@@ -698,12 +698,12 @@ export const useFavoritesGuildChannelList = function useFavoritesGuildChannelLis
       if (0 === arr.length) {
         const resolved = Promise.resolve();
       } else {
-        const threadsBulk = hasAccess(5931).loadThreadsBulk(arr);
-        const obj2 = hasAccess(5931);
+        const threadsBulk = hasAccess(5970).loadThreadsBulk(arr);
+        const obj2 = hasAccess(5970);
       }
     }
   }, items1);
-  hasAccess(15415)();
+  hasAccess(15471)();
   if (hasAccess) {
     memo = tmp3[0];
   }
@@ -711,7 +711,7 @@ export const useFavoritesGuildChannelList = function useFavoritesGuildChannelLis
     hasAccess = getMissingFavoriteThreadIds({ limit: 1, includeLoading: true }).length > 0;
   }
   let flag2 = false;
-  if (memo.getSections().length <= _require(6990).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+  if (memo.getSections().length <= _require(7029).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
     _require = false;
     memo.forEachShownChannel(() => {
       let c0 = true;

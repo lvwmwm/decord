@@ -1,10 +1,10 @@
-// Module ID: 14480
-// Function ID: 14481
+// Module ID: 14537
+// Function ID: 14538
 // Name: FastAssetImage
-// Dependencies: [32, 19, 21, 4541, 5268, 2]
+// Dependencies: [32, 19, 21, 4581, 5307, 2]
 // Exports: default
 
-// Module 14480 (FastAssetImage)
+// Module 14537 (FastAssetImage)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";

@@ -1,9 +1,9 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 11853
+// Function ID: 11854
 // Name: LeftSlot
-// Dependencies: [32, 19, 17, 11374, 21, 4303, 712, 4024, 4648, 11565, 1626, 11621, 4042, 11620, 11619, 2]
+// Dependencies: [32, 19, 17, 11428, 21, 4344, 712, 4065, 4688, 11622, 1626, 11678, 4083, 11677, 11676, 2]
 
-// Module 11796 (LeftSlot)
+// Module 11853 (LeftSlot)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -24,14 +24,14 @@ function LeftSlot(state) {
   let wrapperStyle;
   state = state.state;
   ({ cleanup, channel, onPress, slotWidth, wrapperStyle } = state);
-  let obj = { visible: state !== require(4648) /* wrapChildrenDefault */.TransitionStates.YEETED, initiallyVisible: state !== require(4648) /* wrapChildrenDefault */.TransitionStates.ENTERED, enterDelayMs: closure_6, onExitComplete: cleanup };
-  ({ animatedStyle, isInteractive } = importDefault(11621)(obj));
+  let obj = { visible: state !== require(4688) /* wrapChildrenDefault */.TransitionStates.YEETED, initiallyVisible: state !== require(4688) /* wrapChildrenDefault */.TransitionStates.ENTERED, enterDelayMs: closure_6, onExitComplete: cleanup };
+  ({ animatedStyle, isInteractive } = importDefault(11678)(obj));
   obj = { style: items };
   items = [wrapperStyle, { width: slotWidth }, animatedStyle];
-  const tmp = importDefault(11621)(obj);
-  const merged = Object.assign(require(11620) /* FadeTransitionItem */.interactivityProps(isInteractive));
-  obj.children = callback2(importDefault(11619), { canStartThreads: false, channel, onPress, styleButton: "ct", shouldShowThread: "indented" });
-  return callback2(importDefault(4042).View, obj);
+  const tmp = importDefault(11678)(obj);
+  const merged = Object.assign(require(11677) /* FadeTransitionItem */.interactivityProps(isInteractive));
+  obj.children = callback2(importDefault(11676), { canStartThreads: false, channel, onPress, styleButton: "ct", shouldShowThread: "onChatScrollPosition" });
+  return callback2(importDefault(4083).View, obj);
 }
 let c4 = importAllResult;
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
@@ -53,9 +53,9 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   let callback;
   let importAllResult;
   ({ keyboardType, showKeyboardIcon, shouldShowGiftButton, onPressExpression } = channel);
-  let obj = channel(4024);
+  let obj = channel(4065);
   const token = obj.useToken(onPressAction(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  let obj1 = channel(4024);
+  let obj1 = channel(4065);
   const sum = token + 2 * obj1.useToken(onPressAction(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   dependencyMap = sum;
   const tmp6 = callback3();
@@ -82,7 +82,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
     obj = { item: null, renderItem: null };
     obj[0] = tmp15;
     obj[1] = tmp10;
-    tmp14Result = callback2(tmp(4648).TransitionItem, obj);
+    tmp14Result = callback2(tmp(4688).TransitionItem, obj);
     const tmp14 = callback2;
   }
   const items1 = [tmp14Result, ];
@@ -90,7 +90,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   obj1[0] = keyboardType === channel(1626).KeyboardTypes.EXPRESSION;
   obj1[1] = showKeyboardIcon;
   obj1[2] = onPressExpression;
-  items1[1] = callback2(onPressAction(11565), obj1);
+  items1[1] = callback2(onPressAction(11622), obj1);
   obj[1] = items1;
   return closure_8(View, obj);
 });

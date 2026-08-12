@@ -1,8 +1,8 @@
-// Module ID: 12551
-// Function ID: 12552
-// Dependencies: [19, 17, 21, 4303, 712, 1297, 12131, 4299, 1236, 2]
+// Module ID: 12610
+// Function ID: 12611
+// Dependencies: [19, 17, 21, 4344, 712, 1297, 12188, 4340, 1236, 2]
 
-// Module 12551
+// Module 12610
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -19,13 +19,13 @@ let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = require("noop").memo(function HomeChannelHeader() {
   let obj = { style: callback3().container, children: null };
   obj = { source: null, size: null, disableColor: true };
-  obj[0] = importDefault(12131);
+  obj[0] = importDefault(12188);
   obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
   const items = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.Ym2Ri6);
-  items[1] = callback(require(4299) /* Text */.Text, obj);
+  items[1] = callback(require(4340) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 });

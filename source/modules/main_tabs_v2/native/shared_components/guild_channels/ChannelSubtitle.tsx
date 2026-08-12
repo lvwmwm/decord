@@ -1,10 +1,10 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15812
+// Function ID: 15813
 // Name: ChannelSubtitle
-// Dependencies: [19, 21, 9801, 4299, 15363, 9798, 2]
+// Dependencies: [19, 21, 9842, 4340, 15420, 9839, 2]
 // Exports: renderChannelSubtitle
 
-// Module 15756 (ChannelSubtitle)
+// Module 15812 (ChannelSubtitle)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -19,7 +19,7 @@ function ChannelSubtitle(arg0) {
   let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, layout, subtitle } = arg0);
-  let obj = require(15363) /* getChannelSubtitleData */;
+  let obj = require(15420) /* getChannelSubtitleData */;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
@@ -36,8 +36,8 @@ function ChannelSubtitle(arg0) {
     obj[3] = guildId;
     obj[4] = layout;
     obj[6] = !("voice" === channelSubtitleData.type && connected);
-    obj.children = tmp(9798).renderMessagePreviewMarkup(obj);
-    return jsx(tmp(4299).Text, { content: null, muted: null, channelId: null, guildId: null, layout: null, color: "text-muted", disableAnimatedEmoji: null });
+    obj.children = tmp(9839).renderMessagePreviewMarkup(obj);
+    return jsx(tmp(4340).Text, { content: null, muted: null, channelId: null, guildId: null, layout: null, color: "text-muted", disableAnimatedEmoji: null });
   }
 }
 const result = require("getLayoutStyles").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelSubtitle.tsx");
@@ -50,12 +50,12 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
     return null;
   } else {
     let obj = { variant: null, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
-    obj[0] = require(9801) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant;
+    obj[0] = require(9842) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant;
     if (typeof subtitle === "string") {
       obj = {};
       const merged = Object.assign(obj);
       obj.children = subtitle;
-      let tmp9 = jsx(require(4299) /* Text */.Text, {});
+      let tmp9 = jsx(require(4340) /* Text */.Text, {});
     } else {
       obj = { channelId: null, guildId: null, layout: null, subtitle: null, muted: null, connected: null, textProps: null };
       obj[0] = tmp2;

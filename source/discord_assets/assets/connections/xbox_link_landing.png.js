@@ -1,9 +1,9 @@
-// Module ID: 10502
-// Function ID: 10503
+// Module ID: 10543
+// Function ID: 10544
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10502 (metadata)
+// Module 10543 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/connections/xbox_link_landing.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/87626cb25be78ee682ab4ee85e63b0680a5d90f8a5e6f8d469ffb6889d7959e3.png";

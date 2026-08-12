@@ -1,17 +1,17 @@
-// Module ID: 4891
-// Function ID: 4892
+// Module ID: 4931
+// Function ID: 4932
 // Name: getUploadPayload
-// Dependencies: [1994, 1218, 706, 4852, 12, 698, 2]
+// Dependencies: [1994, 1218, 706, 4892, 12, 698, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 4891 (getUploadPayload)
+// Module 4931 (getUploadPayload)
 import _getSystemLocale from "_getSystemLocale";
 import fetchFingerprint from "fetchFingerprint";
 import refreshSourceMapCookie from "refreshSourceMapCookie";
 
 const require = arg1;
 function getUploadPayload(outer1_0) {
-  const obj = { filename: outer1_0.filename, file_size: outer1_0.currentSize, id: null, original_content_type: "Array" };
+  const obj = { filename: outer1_0.filename, file_size: outer1_0.currentSize, id: null, original_content_type: "a" };
   obj[2] = importDefault(12).uniqueId();
   return obj;
 }

@@ -1,9 +1,9 @@
-// Module ID: 8482
-// Function ID: 8483
+// Module ID: 8521
+// Function ID: 8522
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 17, 3, 5831, 1236, 500, 8483, 8484, 1624, 2]
+// Dependencies: [5, 17, 3, 5870, 1236, 500, 8522, 8523, 1624, 2]
 
-// Module 8482 (_promptForRegisterCredential)
+// Module 8521 (_promptForRegisterCredential)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 
@@ -15,19 +15,102 @@ function _promptForRegisterCredential() {
     let c4 = 0;
     let c5 = 0;
     const iter = (function*(arg0, credential) {
-      let challenge = tmp3;
-      let ticket = tmp2;
-      if (register === undefined) {
-        register = outer1_3.DCDSecurityKeyManager.register;
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw credential;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = credential;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw credential;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = credential;
+              return obj;
+            } else {
+              let challenge = tmp3;
+              let ticket = tmp2;
+              let register;
+              if (register === undefined) {
+                register = outer1_3.DCDSecurityKeyManager.register;
+              }
+              let obj4;
+              ticket = undefined;
+              challenge = undefined;
+              c4 = 1;
+              c5 = 1;
+              return { value: "ct", done: true };
+            }
+          } else if (1 === tmp6) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw credential;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = credential;
+              return obj1;
+            } else {
+              let obj5 = register(obj4[3]);
+              c4 = 2;
+              c5 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = obj5.startRegisterWebAuthnCredential();
+              return obj2;
+            }
+          } else if (2 === tmp6) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw credential;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value: null, done: true };
+              obj3[0] = credential;
+              return obj3;
+            } else {
+              obj4 = credential;
+              ticket = obj4.ticket;
+              challenge = obj4.challenge;
+              obj4 = { ticket };
+              c4 = 3;
+              c5 = 1;
+              obj5 = { value: null, done: false };
+              obj5[0] = register(challenge);
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw credential;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = credential;
+            return obj6;
+          } else {
+            obj4.credential = credential;
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = obj4;
+            return obj;
+          }
+        } catch (tmp19) {
+          c5 = tmp;
+          throw tmp19;
+        }
       }
-      yield "ct";
-      const obj5 = register(obj4[3]);
-      obj4 = yield obj5.startRegisterWebAuthnCredential();
-      ticket = obj4.ticket;
-      challenge = obj4.challenge;
-      obj4 = { ticket };
-      obj4.credential = yield register(challenge);
-      return obj4;
     })();
     iter.next();
     return iter;
@@ -119,7 +202,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
               let code = tmp5;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

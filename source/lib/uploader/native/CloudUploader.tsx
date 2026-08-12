@@ -1,9 +1,9 @@
-// Module ID: 7299
-// Function ID: 7300
+// Module ID: 7338
+// Function ID: 7339
 // Name: nativeEventEmitter
-// Dependencies: [5, 17, 676, 4296, 3, 7300, 7216, 1236, 4897, 4860, 4892, 7301, 500, 7302, 4850, 4851, 12, 2]
+// Dependencies: [5, 17, 676, 4337, 3, 7339, 7255, 1236, 4937, 4900, 4932, 7340, 500, 7341, 4890, 4891, 12, 2]
 
-// Module 7299 (nativeEventEmitter)
+// Module 7338 (nativeEventEmitter)
 import _fileSize from "_fileSize";
 import get_ActivityIndicator from "set";
 import ME from "ME";
@@ -120,7 +120,7 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
                       obj1[1] = intl2.formatToPlainString(callback(1236).t.D0noUt, obj2);
                       dependencyMap = 1;
                       const obj3 = { value: null, done: false };
-                      obj3[0] = files(7216).startBackgroundTask(obj1);
+                      obj3[0] = files(7255).startBackgroundTask(obj1);
                       return obj3;
                     }
                   } else if (arg0 === 1) {
@@ -134,7 +134,7 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
                   } else {
                     callback = arg1;
                     if (outer1_0._aborted) {
-                      obj = files(7216);
+                      obj = files(7255);
                       obj.endBackgroundTask(outer1_0);
                     }
                     dependencyMap = 3;

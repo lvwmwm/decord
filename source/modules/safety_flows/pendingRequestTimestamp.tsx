@@ -1,10 +1,10 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 17039
+// Function ID: 17040
 // Name: SENT_TIMESTAMP_FORMATTER
-// Dependencies: [1236, 2565, 7055, 2]
+// Dependencies: [1236, 2565, 7094, 2]
 // Exports: formatPendingRequestSentText
 
-// Module 16981 (SENT_TIMESTAMP_FORMATTER)
+// Module 17039 (SENT_TIMESTAMP_FORMATTER)
 function SENT_TIMESTAMP_FORMATTER() {
   const obj = { seconds: null, minutes: null, hours: null, yesterday: null, days: null, date: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -20,5 +20,5 @@ function SENT_TIMESTAMP_FORMATTER() {
 const result = require("getEmptyActivityFormatter").fileFinishedImporting("modules/safety_flows/pendingRequestTimestamp.tsx");
 
 export const formatPendingRequestSentText = function formatPendingRequestSentText(created_at) {
-  return require(7055) /* getEmptyActivityFormatter */.formatLinkTimestamp(Date.parse(created_at), SENT_TIMESTAMP_FORMATTER);
+  return require(7094) /* getEmptyActivityFormatter */.formatLinkTimestamp(Date.parse(created_at), SENT_TIMESTAMP_FORMATTER);
 };

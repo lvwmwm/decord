@@ -1,9 +1,9 @@
-// Module ID: 5219
-// Function ID: 5220
+// Module ID: 5258
+// Function ID: 5259
 // Name: loadSavedGuildStickers
-// Dependencies: [5, 1393, 1910, 5220, 5221, 1955, 1974, 10, 5222, 709, 589, 2]
+// Dependencies: [5, 1393, 1910, 5259, 5260, 1955, 1974, 10, 5261, 709, 589, 2]
 
-// Module 5219 (loadSavedGuildStickers)
+// Module 5258 (loadSavedGuildStickers)
 import items from "items";
 import allGuildIds from "allGuildIds";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

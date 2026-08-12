@@ -1,9 +1,9 @@
-// Module ID: 14321
-// Function ID: 14322
+// Module ID: 14378
+// Function ID: 14379
 // Name: BountiesShopCarouselExperimentVariation
 // Dependencies: [1471, 2]
 
-// Module 14321 (BountiesShopCarouselExperimentVariation)
+// Module 14378 (BountiesShopCarouselExperimentVariation)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { BASE: 0, [0]: "BASE", POPULARITY: 1, [1]: "POPULARITY", RECENCY: 2, [2]: "RECENCY" };

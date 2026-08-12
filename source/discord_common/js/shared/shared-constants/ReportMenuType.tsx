@@ -1,9 +1,9 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8064
+// Function ID: 8065
 // Name: set
 // Dependencies: [2]
 
-// Module 8025 (set)
+// Module 8064 (set)
 import set from "set";
 
 const obj = { IN_APP: null, REPORT_TO_MOD: null, UNAUTHENTICATED: null, CONSOLE: null };

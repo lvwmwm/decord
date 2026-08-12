@@ -1,14 +1,12 @@
 // Module ID: 7917
 // Function ID: 7918
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [26, 65]
+// Dependencies: [65]
 
 // Module 7917 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "RNSVGMarker", validAttributes: null };
-obj = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: require("result").colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, refX: true, refY: true, markerHeight: true, markerWidth: true, markerUnits: true, orient: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true };
-obj[1] = obj;
+const obj = { uiViewClassName: "RNSVGFeColorMatrix", validAttributes: { x: true, y: true, width: true, height: true, result: true, in1: true, type: true, values: true } };
 
-export default setRuntimeConfigProvider.get("RNSVGMarker", () => obj);
+export default setRuntimeConfigProvider.get("RNSVGFeColorMatrix", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

@@ -1,10 +1,10 @@
-// Module ID: 6432
-// Function ID: 6433
+// Module ID: 6471
+// Function ID: 6472
 // Name: GiftCardWallet3dIllustration
-// Dependencies: [21, 5268, 6433, 2]
+// Dependencies: [21, 5307, 6472, 2]
 // Exports: GiftCardWallet3dIllustration
 
-// Module 6432 (GiftCardWallet3dIllustration)
+// Module 6471 (GiftCardWallet3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardWallet3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GiftCardWallet3dIllustration = function GiftCardWallet3dIllustratio
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6433);
+  obj[0] = importDefault(6472);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GiftCardWallet3dIllustration = function GiftCardWallet3dIllustratio
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
 };

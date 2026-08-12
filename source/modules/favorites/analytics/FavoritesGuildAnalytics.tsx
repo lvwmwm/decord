@@ -1,10 +1,10 @@
-// Module ID: 9722
-// Function ID: 9723
+// Module ID: 9761
+// Function ID: 9762
 // Name: setNextFavoritesGuildViewSource
-// Dependencies: [4126, 676, 1913, 698, 2]
+// Dependencies: [4167, 676, 1913, 698, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 9722 (setNextFavoritesGuildViewSource)
+// Module 9761 (setNextFavoritesGuildViewSource)
 import handleConnectionOpen from "handleConnectionOpen";
 import { AnalyticEvents } from "ME";
 
@@ -21,14 +21,14 @@ export function consumeNextFavoritesGuildViewSource() {
   const manual_browsing = "manual_browsing";
   return manual_browsing;
 }
-export const trackFavoritesGuildAddToFavorites = function trackFavoritesGuildAddToFavorites(closure_1, channel_type, length) {
+export const trackFavoritesGuildAddToFavorites = function trackFavoritesGuildAddToFavorites(source, type, length) {
   let obj = importDefault(698);
-  obj = { source: closure_1, channel_type, total_favorites: length };
+  obj = { source, channel_type: type, total_favorites: length };
   obj.track(AnalyticEvents.FAVORITES_GUILD_ADD_TO_FAVORITES, obj);
 };
-export const trackFavoritesGuildRemoveFromFavorites = function trackFavoritesGuildRemoveFromFavorites(c3, length) {
+export const trackFavoritesGuildRemoveFromFavorites = function trackFavoritesGuildRemoveFromFavorites(channel_type, length) {
   let obj = importDefault(698);
-  obj = { channel_type: c3, total_favorites: length };
+  obj = { channel_type, total_favorites: length };
   obj.track(AnalyticEvents.FAVORITES_GUILD_REMOVE_FROM_FAVORITES, obj);
 };
 export const trackFavoritesGuildOrderUpdated = function trackFavoritesGuildOrderUpdated() {

@@ -1,12 +1,12 @@
-// Module ID: 15492
-// Function ID: 15493
+// Module ID: 15548
+// Function ID: 15549
 // Name: checkNodeAndIterate
-// Dependencies: [32, 19, 17, 7098, 4126, 5155, 15424, 14348, 21, 4303, 8010, 1628, 14341, 14350, 636, 643, 589, 4042, 15493, 2]
+// Dependencies: [32, 19, 17, 7137, 4167, 5195, 15480, 14405, 21, 4344, 8049, 1628, 14398, 14407, 636, 643, 589, 4083, 15549, 2]
 
-// Module 15492 (checkNodeAndIterate)
+// Module 15548 (checkNodeAndIterate)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
-import { View } from "module_4042";
+import { View } from "module_4083";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import handleConnectionOpen from "handleConnectionOpen";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
@@ -130,7 +130,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
       let tmp40 = nextResult;
       let tmp41 = require;
       let tmp42 = dependencyMap;
-      if (tmp4.type === require(8010) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
+      if (tmp4.type === require(8049) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
         let tmp6 = nextResult;
         if (tmp4.layoutStart > diff) {
           let tmp30 = iter;
@@ -158,7 +158,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
               }
               let tmp8 = nextResult;
               let type = tmp4.type;
-              if (tmp41(8010).FastListItemTypes.SECTION === type) {
+              if (tmp41(8049).FastListItemTypes.SECTION === type) {
                 let tmp18 = nextResult;
                 let node = guildsTree.getNode(tmp4.recyclerKey);
                 let element = node;
@@ -193,7 +193,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
                 }
                 continue;
               } else {
-                if (tmp41(8010).FastListItemTypes.ITEM === type) {
+                if (tmp41(8049).FastListItemTypes.ITEM === type) {
                   let tmp10 = nextResult;
                   let node1 = guildsTree.getNode(tmp4.recyclerKey);
                   let tmp12 = node1;
@@ -294,7 +294,7 @@ let c4 = importAllResult;
 ({ FastListRenderSections: c10, useGuildWrapperSize: unpackModuleId, GUILD_LIST_WIDTH } = GUILD_ITEM_SIZE);
 ({ YOU_BAR_HEIGHT: closure_12, YOU_BAR_MARGIN: map1 } = CONNECTION_BANNER_HEIGHT);
 let closure_15 = createCacheKey.createStyles({ wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } });
-let closure_17 = { beforeItem: "Array", afterItem: "HermesInternal" };
+let closure_17 = { beforeItem: "isArray", afterItem: "accessibilityRole" };
 let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "a" };
 let closure_20 = { code: "function GuildsBarUnreadBarsTsx1(){const{scrollPosValue}=this.__closure;return scrollPosValue.get();}" };
 let closure_21 = { code: "function GuildsBarUnreadBarsTsx2(position,lastPosition){const{runOnJS,debouncedUpdate}=this.__closure;if(position!==lastPosition){runOnJS(debouncedUpdate)();}}" };

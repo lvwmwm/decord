@@ -1,10 +1,10 @@
-// Module ID: 11661
-// Function ID: 11662
+// Module ID: 11718
+// Function ID: 11719
 // Name: newMemberActionFromServer
-// Dependencies: [1391, 676, 1370, 3953, 2]
+// Dependencies: [1391, 676, 1370, 3994, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, isWelcomeMessageEmpty, settingsFromServer, settingsToServer
 
-// Module 11661 (newMemberActionFromServer)
+// Module 11718 (newMemberActionFromServer)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
 
@@ -283,7 +283,7 @@ export const isSettingsValid = function isSettingsValid(welcomeMessage) {
                     if (null != channel) {
                       let tmp8 = importAll;
                       let tmp9 = dependencyMap;
-                      let obj2 = importAll(3953);
+                      let obj2 = importAll(3994);
                       let tmp10 = constants2;
                       let tmp11 = channel;
                     }
@@ -308,12 +308,12 @@ export const isSettingsValid = function isSettingsValid(welcomeMessage) {
 export const isChannelValidForResourceChannel = function isChannelValidForResourceChannel(type) {
   let canEveryoneRoleResult = type.type === constants.GUILD_TEXT;
   if (canEveryoneRoleResult) {
-    canEveryoneRoleResult = !importAll(3953).canEveryoneRole(constants2.SEND_MESSAGES, type);
-    const obj = importAll(3953);
+    canEveryoneRoleResult = !importAll(3994).canEveryoneRole(constants2.SEND_MESSAGES, type);
+    const obj = importAll(3994);
   }
   if (canEveryoneRoleResult) {
-    canEveryoneRoleResult = importAll(3953).canEveryoneRole(constants2.VIEW_CHANNEL, type);
-    const obj2 = importAll(3953);
+    canEveryoneRoleResult = importAll(3994).canEveryoneRole(constants2.VIEW_CHANNEL, type);
+    const obj2 = importAll(3994);
   }
   return canEveryoneRoleResult;
 };
@@ -328,6 +328,6 @@ export const isChannelValidForNewMemberAction = function isChannelValidForNewMem
       }
     }
   }
-  return importAll(3953).canEveryoneRole(constants2.VIEW_CHANNEL, type);
+  return importAll(3994).canEveryoneRole(constants2.VIEW_CHANNEL, type);
 };
 export const ChannelEditBlockTypes = { DEFAULT: 0, [0]: "DEFAULT", TODO: 1, [1]: "TODO", RESOURCE: 2, [2]: "RESOURCE", RULES: 3, [3]: "RULES", UPDATES: 4, [4]: "UPDATES" };

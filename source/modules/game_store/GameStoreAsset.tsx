@@ -1,10 +1,10 @@
-// Module ID: 13775
-// Function ID: 13776
+// Module ID: 13832
+// Function ID: 13833
 // Name: transformStoreAssetFromServer
 // Dependencies: [2]
 // Exports: transformStoreAssetFromServer
 
-// Module 13775 (transformStoreAssetFromServer)
+// Module 13832 (transformStoreAssetFromServer)
 const result = require("set").fileFinishedImporting("modules/game_store/GameStoreAsset.tsx");
 
 export const transformStoreAssetFromServer = function transformStoreAssetFromServer(box_art) {

@@ -1,9 +1,9 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 16010
+// Function ID: 16011
 // Name: UnmuteOptions
-// Dependencies: [19, 17, 1391, 1910, 3957, 1922, 676, 21, 4303, 712, 7225, 5262, 5257, 9825, 5374, 1297, 9827, 4299, 1236, 4494, 9828, 1499, 10199, 9824, 1500, 647, 8388, 1628, 2]
+// Dependencies: [19, 17, 1391, 1910, 3998, 1922, 676, 21, 4344, 712, 7264, 5301, 5296, 9866, 5413, 1297, 9868, 4340, 1236, 4534, 9869, 1499, 10240, 9865, 1500, 647, 8427, 1628, 2]
 
-// Module 15953 (UnmuteOptions)
+// Module 16010 (UnmuteOptions)
 import importAllResult from "computeChannelName";
 import { View } from "Text";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -31,7 +31,7 @@ function UnmuteOptions(channel) {
   }, items);
   obj = { icon: null, label: null, onPress: null, start: true, end: true };
   obj = { disableColor: true, source: null };
-  obj[1] = navigation(9827);
+  obj[1] = navigation(9868);
   obj[0] = callback(channel(1297).Icon, obj);
   const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = channel(1236).intl;
@@ -40,15 +40,15 @@ function UnmuteOptions(channel) {
   const tmp3 = closure_11;
   const tmp4 = View;
   const tmp5 = callback;
-  obj2[0] = channel(4494).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true);
+  obj2[0] = channel(4534).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale, true);
   obj1[2] = intl.format(channel(1236).t["eC+9rj"], obj2);
-  obj[1] = callback(channel(4299).Text, obj1);
+  obj[1] = callback(channel(4340).Text, obj1);
   obj[2] = callback;
-  const items1 = [callback(channel(5374).TableRow, obj), ];
+  const items1 = [callback(channel(5413).TableRow, obj), ];
   const obj3 = { muteConfig: channel.muteConfig, type: null };
-  const obj6 = channel(4494);
-  const tmp6 = navigation(9828);
-  const MuteSettingType = channel(9828).MuteSettingType;
+  const obj6 = channel(4534);
+  const tmp6 = navigation(9869);
+  const MuteSettingType = channel(9869).MuteSettingType;
   obj3[1] = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
   items1[1] = tmp5(tmp6, obj3);
   obj[1] = items1;

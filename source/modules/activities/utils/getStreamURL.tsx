@@ -1,10 +1,10 @@
-// Module ID: 12316
-// Function ID: 12317
+// Module ID: 12379
+// Function ID: 12380
 // Name: getStreamURL
-// Dependencies: [4328, 2]
+// Dependencies: [4369, 2]
 // Exports: default
 
-// Module 12316 (getStreamURL)
+// Module 12379 (getStreamURL)
 import { validStreamURL } from "items3";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/getStreamURL.tsx");

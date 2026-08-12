@@ -1,9 +1,9 @@
-// Module ID: 16309
-// Function ID: 16310
+// Module ID: 16366
+// Function ID: 16367
 // Name: setMode
-// Dependencies: [19, 13809, 11650, 8012, 2]
+// Dependencies: [19, 13866, 11707, 8051, 2]
 
-// Module 16309 (setMode)
+// Module 16366 (setMode)
 import createFakeSharedValue from "createFakeSharedValue";
 import createFakeSharedValue from "createFakeSharedValue";
 import createFakeSharedValue from "createFakeSharedValue";
@@ -27,7 +27,7 @@ obj[3] = createFakeSharedValue.createFakeSharedValue({ width: 0, height: 0 });
 obj[4] = createFakeSharedValue.createFakeSharedValue(false);
 obj[5] = createFakeSharedValue.createFakeSharedValue({ x: -1, y: -1 });
 obj[6] = createFakeSharedValue.createFakeSharedValue({ top: 0, bottom: 0 });
-obj[7] = { current: "r" };
+obj[7] = { current: "Array" };
 obj[8] = function dismissPanel() {
   const error = new Error("VoicePanelContextType.Provider.dismissDrawer: not called within a context provider");
   throw error;

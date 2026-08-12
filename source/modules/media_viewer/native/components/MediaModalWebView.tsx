@@ -1,9 +1,9 @@
-// Module ID: 8874
-// Function ID: 8875
+// Module ID: 8913
+// Function ID: 8914
 // Name: PlayerState
-// Dependencies: [19, 17, 21, 500, 4303, 4042, 4304, 4017, 7812, 2]
+// Dependencies: [19, 17, 21, 500, 4344, 4083, 4345, 4058, 7851, 2]
 
-// Module 8874 (PlayerState)
+// Module 8913 (PlayerState)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

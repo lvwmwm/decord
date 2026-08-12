@@ -1,10 +1,10 @@
-// Module ID: 12543
-// Function ID: 12544
+// Module ID: 12602
+// Function ID: 12603
 // Name: NewBadge
-// Dependencies: [32, 19, 17, 1388, 21, 1377, 4303, 712, 4299, 1236, 6024, 8659, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 1377, 4344, 712, 4340, 1236, 6063, 8698, 2]
 // Exports: ConversationCoachmark
 
-// Module 12543 (NewBadge)
+// Module 12602 (NewBadge)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -18,7 +18,7 @@ function NewBadge() {
   obj = { variant: "text-sm/bold", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.c2GSIl);
-  obj[1] = jsx(require(4299) /* Text */.Text, { variant: "text-sm/bold", color: "text-default", children: null });
+  obj[1] = jsx(require(4340) /* Text */.Text, { variant: "text-sm/bold", color: "text-default", children: null });
   return <View variant="text-sm/bold" color="text-default">{null}</View>;
 }
 const TOPICAL_NAVIGATION_HEADER_COACHMARK = require("DismissibleContent").DismissibleContent.TOPICAL_NAVIGATION_HEADER_COACHMARK;
@@ -38,7 +38,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
   let dependencyMap;
   ({ children, isLast } = arg0);
   const ref = React.useRef(null);
-  let obj = first(6024);
+  let obj = first(6063);
   const tmp3 = callback(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -59,7 +59,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
     return obj;
   }, items);
   const tmp = createCacheKey();
-  const coachmark = first(8659).useCoachmark(ref, memo);
+  const coachmark = first(8698).useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;
   callback = React.useCallback(() => {

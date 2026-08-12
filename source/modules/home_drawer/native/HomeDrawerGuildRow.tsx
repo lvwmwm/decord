@@ -1,10 +1,10 @@
-// Module ID: 15455
-// Function ID: 15456
+// Module ID: 15511
+// Function ID: 15512
 // Name: GuildRowWrapper
-// Dependencies: [19, 17, 3950, 1395, 1391, 1980, 7098, 1910, 4315, 3957, 4499, 1922, 676, 4500, 21, 4303, 589, 4164, 4161, 12570, 9736, 4299, 15456, 15457, 4494, 11, 15458, 15460, 11414, 15461, 15462, 15463, 15465, 15466, 15445, 2]
+// Dependencies: [19, 17, 3991, 1395, 1391, 1980, 7137, 1910, 4356, 3998, 4539, 1922, 676, 4540, 21, 4344, 589, 4205, 4202, 12629, 9777, 4340, 15512, 15513, 4534, 11, 15514, 15516, 11470, 15517, 15518, 15519, 15521, 15522, 15501, 2]
 // Exports: default
 
-// Module 15455 (GuildRowWrapper)
+// Module 15511 (GuildRowWrapper)
 import BellZIcon from "BellZIcon";
 import { View } from "MobileHomeDrawerExperiment";
 import storeThread from "storeThread";
@@ -351,7 +351,7 @@ export default function HomeDrawerGuildRow(guildId) {
   let obj = guildId(589);
   const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(4164).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = guildId(4205).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

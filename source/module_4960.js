@@ -1,14 +1,50 @@
 // Module ID: 4960
 // Function ID: 4961
-// Dependencies: []
+// Dependencies: [4961, 4962, 4963, 4964]
 
 // Module 4960
-let obj = { 4: null };
-obj = {
-  name: "ShotInfo",
-  description(arg0) {
-    return arg0;
+const self = this;
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (self2) {
+  let fn = self;
+  if (self) {
+    fn = self.__exportStar;
   }
-};
-obj[4] = obj;
-arg5.default = obj;
+  if (!fn) {
+    fn = (obj, exports) => {
+      for (const key10007 in arg0) {
+        let tmp5 = key10007;
+        let tmp6 = "default" === key10007;
+        if (tmp6) {
+          if (tmp6) {
+            continue;
+          } else {
+            let tmp3 = self2;
+            let tmp4 = self2(arg1, arg0, key10007);
+            continue;
+          }
+          continue;
+        } else {
+          let _Object = Object;
+          let call = hasOwnProperty.call;
+          if (typeof call === "unknown") {
+            let hasOwnPropertyResult = hasOwnProperty(key10007);
+          } else {
+            hasOwnPropertyResult = call(arg1, key10007);
+          }
+          let tmp2 = hasOwnPropertyResult;
+        }
+      }
+    };
+  }
+  const _Object2 = Object;
+  fn(require("module_4961"), exports);
+  fn(require("module_4962"), exports);
+  fn(require("module_4963"), exports);
+  fn(require("module_4964"), exports);
+} else {
+  let _Object = Object;
+}

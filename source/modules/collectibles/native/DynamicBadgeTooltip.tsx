@@ -1,10 +1,10 @@
-// Module ID: 9446
-// Function ID: 9447
+// Module ID: 9486
+// Function ID: 9487
 // Name: DynamicBadgeTooltip
-// Dependencies: [32, 19, 21, 1236, 8660, 4846, 2]
+// Dependencies: [32, 19, 21, 1236, 8699, 4886, 2]
 // Exports: DynamicBadgeTooltip
 
-// Module 9446 (DynamicBadgeTooltip)
+// Module 9486 (DynamicBadgeTooltip)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";

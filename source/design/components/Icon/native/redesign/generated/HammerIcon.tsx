@@ -1,10 +1,10 @@
-// Module ID: 10545
-// Function ID: 10546
+// Module ID: 10586
+// Function ID: 10587
 // Name: HammerIcon
-// Dependencies: [19, 21, 712, 4023, 10546, 2]
+// Dependencies: [19, 21, 712, 4064, 10587, 2]
 // Exports: HammerIcon
 
-// Module 10545 (HammerIcon)
+// Module 10586 (HammerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const HammerIcon = function HammerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10546) /* registerAsset */;
+  obj[0] = require(10587) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,9 +1,9 @@
-// Module ID: 8266
-// Function ID: 8267
+// Module ID: 8305
+// Function ID: 8306
 // Name: handleFormOpen
-// Dependencies: [676, 1429, 8267, 677, 589, 8268, 709, 2]
+// Dependencies: [676, 1429, 8306, 677, 589, 8307, 709, 2]
 
-// Module 8266 (handleFormOpen)
+// Module 8305 (handleFormOpen)
 import ME from "ME";
 import { Store } from "initialize";
 import set from "ANALYTICS_NAME";
@@ -93,7 +93,7 @@ prototype["showNotice"] = function showNotice() {
 };
 prototype["canSubmit"] = function canSubmit() {
   const self = this;
-  require(8268) /* useBioMaxLength */;
+  require(8307) /* useBioMaxLength */;
   const items = [closure_3, c11];
   for (const item10016 of items) {
     let pendingChanges = self.getPendingChanges(item10016);

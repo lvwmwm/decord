@@ -1,10 +1,10 @@
-// Module ID: 7700
-// Function ID: 7701
+// Module ID: 7739
+// Function ID: 7740
 // Name: ScreenStreamIcon
-// Dependencies: [19, 21, 712, 4023, 7701, 2]
+// Dependencies: [19, 21, 712, 4064, 7740, 2]
 // Exports: ScreenStreamIcon
 
-// Module 7700 (ScreenStreamIcon)
+// Module 7739 (ScreenStreamIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ScreenStreamIcon = function ScreenStreamIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7701) /* registerAsset */;
+  obj[0] = require(7740) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

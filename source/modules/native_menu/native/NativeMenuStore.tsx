@@ -1,9 +1,9 @@
-// Module ID: 9790
-// Function ID: 9791
+// Module ID: 9831
+// Function ID: 9832
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 9790 (initialize)
+// Module 9831 (initialize)
 import { Store } from "initialize";
 
 let c0 = null;

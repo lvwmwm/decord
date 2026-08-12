@@ -1,10 +1,10 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 14562
+// Function ID: 14563
 // Name: useAppearanceSettingTrailing
-// Dependencies: [4124, 1305, 676, 4239, 1367, 589, 1347, 8399, 1236, 2501, 10452, 7723, 14506, 2]
+// Dependencies: [4165, 1305, 676, 4280, 1367, 589, 1347, 8438, 1236, 2501, 10493, 7762, 14563, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 14505 (useAppearanceSettingTrailing)
+// Module 14562 (useAppearanceSettingTrailing)
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import { ActiveThemeType } from "SystemThemeState";
 import createToggle from "createToggle";
@@ -12,14 +12,14 @@ import createToggle from "createToggle";
 const require = arg1;
 function useAppearanceSettingTrailing() {
   const tmp = importDefault;
-  const tmp3 = importDefault(4239)();
+  const tmp3 = importDefault(4280)();
   const tmp4 = importDefault(1367)("AppearanceSettingTrailing");
   const items = [isSyncedModeThemesEnabled];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => gradientPreset.gradientPreset);
   const obj = require(589) /* initialize */;
   const themeName = require(1347) /* getThemeForColor */.getThemeName(tmp3, tmp4);
   const obj2 = require(1347) /* getThemeForColor */;
-  const activeThemeType = require(8399) /* useActiveThemeType */.useActiveThemeType();
+  const activeThemeType = require(8438) /* useActiveThemeType */.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
     const intl2 = tmp5(1236).intl;
     return intl2.string(tmp(2501).KSBBpC);
@@ -41,7 +41,7 @@ function useAppearanceSettingTrailing() {
   } else {
     return tmp9.DEFAULT === activeThemeType ? themeName : undefined;
   }
-  const obj3 = require(8399) /* useActiveThemeType */;
+  const obj3 = require(8438) /* useActiveThemeType */;
 }
 createToggle = {
   useTitle() {
@@ -56,7 +56,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE,
   getComponent() {
-    return require(14506).default;
+    return require(14563).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

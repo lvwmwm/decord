@@ -1,10 +1,10 @@
-// Module ID: 5768
-// Function ID: 5769
+// Module ID: 5807
+// Function ID: 5808
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 4303, 500, 4026, 5374, 4299, 5769, 2]
+// Dependencies: [32, 19, 17, 21, 4344, 500, 4067, 5413, 4340, 5808, 2]
 // Exports: TableSwitchRow
 
-// Module 5768 (TableSwitchRow)
+// Module 5807 (TableSwitchRow)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -35,10 +35,10 @@ export const TableSwitchRow = function TableSwitchRow(value) {
   let callback;
   let obj = require(500) /* set */;
   const tmp2 = callback2();
-  let obj1 = require(4026) /* getNodeText */;
+  let obj1 = require(4067) /* getNodeText */;
   const nodeText = obj1.getNodeText(label);
   const isAndroidResult = obj.isAndroid();
-  const nodeText1 = require(4026) /* getNodeText */.getNodeText(subLabel);
+  const nodeText1 = require(4067) /* getNodeText */.getNodeText(subLabel);
   const tmp8 = callback(React.useState(value), 2);
   callback = tmp8[1];
   const items = [value];
@@ -62,7 +62,7 @@ export const TableSwitchRow = function TableSwitchRow(value) {
       obj1 = { variant: "text-md/semibold", color: null, includeFontPadding: true, children: null };
       obj1[1] = str;
       obj1[3] = label;
-      tmp10Result = tmp10(tmp3(4299).Text, obj1);
+      tmp10Result = tmp10(tmp3(4340).Text, obj1);
     }
     const items1 = [tmp10Result, trailing];
     obj[1] = items1;
@@ -102,6 +102,6 @@ export const TableSwitchRow = function TableSwitchRow(value) {
       }
     });
   };
-  obj.trailing = closure_5(require(5769) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled });
-  return closure_5(require(5374) /* TableRowInner */.TableRow, obj);
+  obj.trailing = closure_5(require(5808) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled });
+  return closure_5(require(5413) /* TableRowInner */.TableRow, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 14562
-// Function ID: 14563
+// Module ID: 14619
+// Function ID: 14620
 // Name: useLatestChannelMessage
-// Dependencies: [32, 19, 12984, 589, 14563, 2]
+// Dependencies: [32, 19, 13043, 589, 14620, 2]
 // Exports: default
 
-// Module 14562 (useLatestChannelMessage)
+// Module 14619 (useLatestChannelMessage)
 import _slicedToArray from "_slicedToArray";
 import { useEffect } from "noop";
 import initialize from "initialize";

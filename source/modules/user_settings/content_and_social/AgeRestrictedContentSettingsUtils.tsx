@@ -1,10 +1,10 @@
-// Module ID: 8350
-// Function ID: 8351
+// Module ID: 8389
+// Function ID: 8390
 // Name: resolveNsfwTogglesWithDefaults
-// Dependencies: [1922, 3993, 4519, 8351, 3999, 5141, 2]
+// Dependencies: [1922, 4034, 4559, 8390, 4040, 5181, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 8350 (resolveNsfwTogglesWithDefaults)
+// Module 8389 (resolveNsfwTogglesWithDefaults)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -30,13 +30,13 @@ export const resolveNsfwTogglesWithDefaults = function resolveNsfwTogglesWithDef
   return tmp3;
 };
 export const useViewNsfwCommandsOrDefault = function useViewNsfwCommandsOrDefault() {
-  const ViewNsfwCommands = require(3993) /* explicitContentFromProto */.ViewNsfwCommands;
+  const ViewNsfwCommands = require(4034) /* explicitContentFromProto */.ViewNsfwCommands;
   let flag = ViewNsfwCommands.useSetting();
-  const isAgeVerified = require(4519) /* useAgeVerificationRunner */.useIsAgeVerified();
-  const obj = require(4519) /* useAgeVerificationRunner */;
-  const nSFWAllowed = require(8351) /* useNSFWAllowed */.useNSFWAllowed();
-  const obj2 = require(8351) /* useNSFWAllowed */;
-  const tmp3 = require(3999) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(5141) /* AgeGatedFeature */.AgeGatedFeature.COMMANDS_TOGGLE) && !isAgeVerified;
+  const isAgeVerified = require(4559) /* useAgeVerificationRunner */.useIsAgeVerified();
+  const obj = require(4559) /* useAgeVerificationRunner */;
+  const nSFWAllowed = require(8390) /* useNSFWAllowed */.useNSFWAllowed();
+  const obj2 = require(8390) /* useNSFWAllowed */;
+  const tmp3 = require(4040) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(5181) /* AgeGatedFeature */.AgeGatedFeature.COMMANDS_TOGGLE) && !isAgeVerified;
   let tmp4 = !tmp3;
   if (!tmp3) {
     let tmp5 = false !== nSFWAllowed;
@@ -51,13 +51,13 @@ export const useViewNsfwCommandsOrDefault = function useViewNsfwCommandsOrDefaul
   return tmp4;
 };
 export const useViewNsfwGuildsOrDefault = function useViewNsfwGuildsOrDefault() {
-  const ViewNsfwGuilds = require(3993) /* explicitContentFromProto */.ViewNsfwGuilds;
+  const ViewNsfwGuilds = require(4034) /* explicitContentFromProto */.ViewNsfwGuilds;
   let flag = ViewNsfwGuilds.useSetting();
-  const isAgeVerified = require(4519) /* useAgeVerificationRunner */.useIsAgeVerified();
-  const obj = require(4519) /* useAgeVerificationRunner */;
-  const nSFWAllowed = require(8351) /* useNSFWAllowed */.useNSFWAllowed();
-  const obj2 = require(8351) /* useNSFWAllowed */;
-  const tmp3 = require(3999) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(5141) /* AgeGatedFeature */.AgeGatedFeature.COMMANDS_TOGGLE) && !isAgeVerified;
+  const isAgeVerified = require(4559) /* useAgeVerificationRunner */.useIsAgeVerified();
+  const obj = require(4559) /* useAgeVerificationRunner */;
+  const nSFWAllowed = require(8390) /* useNSFWAllowed */.useNSFWAllowed();
+  const obj2 = require(8390) /* useNSFWAllowed */;
+  const tmp3 = require(4040) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(5181) /* AgeGatedFeature */.AgeGatedFeature.COMMANDS_TOGGLE) && !isAgeVerified;
   let tmp4 = !tmp3;
   if (!tmp3) {
     let tmp5 = false !== nSFWAllowed;
@@ -72,12 +72,12 @@ export const useViewNsfwGuildsOrDefault = function useViewNsfwGuildsOrDefault() 
   return tmp4;
 };
 export const getViewNsfwCommandsOrDefault = function getViewNsfwCommandsOrDefault() {
-  const ViewNsfwCommands = require(3993) /* explicitContentFromProto */.ViewNsfwCommands;
+  const ViewNsfwCommands = require(4034) /* explicitContentFromProto */.ViewNsfwCommands;
   let flag = ViewNsfwCommands.getSetting();
-  const obj = require(4519) /* useAgeVerificationRunner */;
+  const obj = require(4559) /* useAgeVerificationRunner */;
   const currentUser = authStore.getCurrentUser();
-  const isAgeVerifiedResult = require(4519) /* useAgeVerificationRunner */.isAgeVerified();
-  let isFeatureAgeGatedResult = require(3999) /* isFeatureAgeGated */.isFeatureAgeGated(require(5141) /* AgeGatedFeature */.AgeGatedFeature.COMMANDS_TOGGLE);
+  const isAgeVerifiedResult = require(4559) /* useAgeVerificationRunner */.isAgeVerified();
+  let isFeatureAgeGatedResult = require(4040) /* isFeatureAgeGated */.isFeatureAgeGated(require(5181) /* AgeGatedFeature */.AgeGatedFeature.COMMANDS_TOGGLE);
   if (currentUser != null) {
     const nsfwAllowed = currentUser.nsfwAllowed;
   }
@@ -98,12 +98,12 @@ export const getViewNsfwCommandsOrDefault = function getViewNsfwCommandsOrDefaul
   return tmp4;
 };
 export const getViewNsfwGuildsOrDefault = function getViewNsfwGuildsOrDefault() {
-  const ViewNsfwGuilds = require(3993) /* explicitContentFromProto */.ViewNsfwGuilds;
+  const ViewNsfwGuilds = require(4034) /* explicitContentFromProto */.ViewNsfwGuilds;
   let flag = ViewNsfwGuilds.getSetting();
-  const obj = require(4519) /* useAgeVerificationRunner */;
+  const obj = require(4559) /* useAgeVerificationRunner */;
   const currentUser = authStore.getCurrentUser();
-  const isAgeVerifiedResult = require(4519) /* useAgeVerificationRunner */.isAgeVerified();
-  let isFeatureAgeGatedResult = require(3999) /* isFeatureAgeGated */.isFeatureAgeGated(require(5141) /* AgeGatedFeature */.AgeGatedFeature.COMMANDS_TOGGLE);
+  const isAgeVerifiedResult = require(4559) /* useAgeVerificationRunner */.isAgeVerified();
+  let isFeatureAgeGatedResult = require(4040) /* isFeatureAgeGated */.isFeatureAgeGated(require(5181) /* AgeGatedFeature */.AgeGatedFeature.COMMANDS_TOGGLE);
   if (currentUser != null) {
     const nsfwAllowed = currentUser.nsfwAllowed;
   }

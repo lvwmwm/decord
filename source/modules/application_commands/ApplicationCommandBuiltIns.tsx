@@ -1,10 +1,10 @@
-// Module ID: 8354
-// Function ID: 8355
+// Module ID: 8393
+// Function ID: 8394
 // Name: getOptionValue
-// Dependencies: [5, 1391, 3948, 1922, 4737, 676, 8355, 1992, 4296, 6985, 1236, 8356, 1954, 3993, 8357, 8358, 5889, 8359, 692, 8361, 6920, 7143, 5232, 4148, 687, 11240, 3902, 4313, 38, 5866, 12583, 2]
+// Dependencies: [5, 1391, 3989, 1922, 4777, 676, 8394, 1992, 4337, 7024, 1236, 8395, 1954, 4034, 8396, 8397, 5928, 8398, 692, 8400, 6959, 7182, 5271, 4189, 687, 11294, 3943, 4354, 38, 5905, 12642, 2]
 // Exports: getBuiltInCommands
 
-// Module 8354 (getOptionValue)
+// Module 8393 (getOptionValue)
 import importDefaultResult from "ME";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -236,7 +236,7 @@ obj7.predicate = function predicate(channel) {
   channel = channel.channel;
   let setting = null != channel && !channel.isPrivate();
   if (setting) {
-    const EnableTTSCommand = require(3993) /* explicitContentFromProto */.EnableTTSCommand;
+    const EnableTTSCommand = require(4034) /* explicitContentFromProto */.EnableTTSCommand;
     setting = EnableTTSCommand.getSetting();
   }
   if (setting) {
@@ -413,7 +413,7 @@ obj13.execute = function execute(arr) {
       if (str == null) {
         str = "";
       }
-      const obj = importDefault(8357);
+      const obj = importDefault(8396);
       const id = guild.id;
       const id2 = channel.id;
       if (!str) {
@@ -473,7 +473,7 @@ Object.defineProperty(obj17, "displayDescription", {
   },
   set: undefined
 });
-Object.defineProperty(obj17, "maxLength", { get: () => require(8358) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj17, "maxLength", { get: () => require(8397) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
 obj17.required = true;
 items8[1] = obj17;
 obj15.options = items8;
@@ -481,8 +481,8 @@ obj15.predicate = function predicate(channel) {
   channel = channel.channel;
   let canStartPublicThread = null != channel;
   if (canStartPublicThread) {
-    canStartPublicThread = require(5889) /* useCanUnarchiveThread */.computeCanStartPublicThread(channel);
-    const obj = require(5889) /* useCanUnarchiveThread */;
+    canStartPublicThread = require(5928) /* useCanUnarchiveThread */.computeCanStartPublicThread(channel);
+    const obj = require(5928) /* useCanUnarchiveThread */;
   }
   return canStartPublicThread;
 };
@@ -527,7 +527,7 @@ let closure_14 = importDefaultResult((arg0, arg1) => {
             id = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "ct", done: "Array" };
+            return { value: "ct", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {
@@ -549,8 +549,8 @@ let closure_14 = importDefaultResult((arg0, arg1) => {
             if (tmp11 == null) {
               closure_3 = "";
             }
-            obj1 = callback(8359);
-            let obj2 = callback(8361);
+            obj1 = callback(8398);
+            let obj2 = callback(8400);
             c6 = 2;
             c7 = 1;
             obj2 = { value: null, done: false };
@@ -567,11 +567,11 @@ let closure_14 = importDefaultResult((arg0, arg1) => {
           return obj;
         } else {
           id = arg1;
-          const obj8 = channel(6920);
+          const obj8 = channel(6959);
           id = id.id;
           const obj3 = { location: null };
           obj3[0] = constants.THREAD_CREATION;
-          obj8.sendMessage(id, channel(7143).parse(id, closure_3), true, obj3);
+          obj8.sendMessage(id, channel(7182).parse(id, closure_3), true, obj3);
           c7 = 3;
           return { value: "HermesInternal", done: null };
         }
@@ -1337,7 +1337,7 @@ Object.defineProperty(obj31, "displayDescription", {
   set: undefined
 });
 obj31.required = true;
-Object.defineProperty(obj31, "maxLength", { get: () => require(8358) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj31, "maxLength", { get: () => require(8397) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
 items12[1] = obj31;
 obj29.options = items12;
 obj29.execute = function execute(arr, channel) {
@@ -1533,8 +1533,8 @@ obj32.execute = function execute(arr, channel) {
     }
     const NumberResult = Number(num);
     const NumberResult1 = Number(num2);
-    size(5866).startDiceRoll(channel.id, NumberResult, NumberResult1);
-    const obj = size(5866);
+    size(5905).startDiceRoll(channel.id, NumberResult, NumberResult1);
+    const obj = size(5905);
   }
 };
 items[sum10 + 1] = obj32;

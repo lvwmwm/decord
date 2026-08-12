@@ -1,10 +1,10 @@
-// Module ID: 11244
-// Function ID: 11245
+// Module ID: 11298
+// Function ID: 11299
 // Name: openDisableCommunication
-// Dependencies: [19, 1922, 21, 4509, 11245, 2007, 4643, 11248, 2]
+// Dependencies: [19, 1922, 21, 4549, 11299, 2007, 4683, 11302, 2]
 // Exports: openDisableCommunication, openEnableCommunication
 
-// Module 11244 (openDisableCommunication)
+// Module 11298 (openDisableCommunication)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -18,12 +18,12 @@ export const openDisableCommunication = function openDisableCommunication(userId
   ({ guildId, cancelButtonCallback } = userId);
   user = user.getUser(userId.userId);
   if (null != user) {
-    let obj = importDefault(4509);
+    let obj = importDefault(4549);
     obj = { guildId: null, user: null, cancelButtonCallback: null };
     obj[0] = guildId;
     obj[1] = user;
     obj[2] = cancelButtonCallback;
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(11245, dependencyMap.paths), obj);
+    obj.pushLazy(require(2007) /* asyncRequireImpl */(11299, dependencyMap.paths), obj);
   }
 };
 export const openEnableCommunication = function openEnableCommunication(arg0) {
@@ -31,7 +31,7 @@ export const openEnableCommunication = function openEnableCommunication(arg0) {
   let importDefault;
   let require;
   ({ guildId: require, userId: importDefault, cancelButtonCallback: dependencyMap } = arg0);
-  let obj = importDefault(4643);
+  let obj = importDefault(4683);
   obj = {
     importer() {
       return outer1_0(outer1_2[5])(outer1_2[7], outer1_2.paths).then((arg0) => {

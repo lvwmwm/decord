@@ -1,18 +1,18 @@
-// Module ID: 11220
-// Function ID: 11221
+// Module ID: 11274
+// Function ID: 11275
 // Name: _sendGiftIntentGif
-// Dependencies: [32, 5, 19, 17, 1391, 676, 4296, 21, 4303, 712, 6920, 7143, 698, 5748, 5369, 589, 7978, 1236, 11221, 9938, 4714, 4509, 5716, 5270, 5783, 2]
+// Dependencies: [32, 5, 19, 17, 1391, 676, 4337, 21, 4344, 712, 6959, 7182, 698, 5787, 5408, 589, 8017, 1236, 11275, 9979, 4754, 4549, 5755, 5309, 5822, 2]
 // Exports: default
 
-// Module 11220 (_sendGiftIntentGif)
+// Module 11274 (_sendGiftIntentGif)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
-import module_9938 from "module_9938";
+import module_9979 from "module_9979";
 import { View } from "getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
-import jsxProd from "module_4509";
+import jsxProd from "module_4549";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -65,7 +65,7 @@ function _sendGiftIntentGif() {
               c4 = undefined;
               url = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else {
             if (1 === tmp5) {

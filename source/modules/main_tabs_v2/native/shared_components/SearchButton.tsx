@@ -1,10 +1,10 @@
-// Module ID: 11747
-// Function ID: 11748
+// Module ID: 11804
+// Function ID: 11805
 // Name: SEARCH_BAR_HEIGHT
-// Dependencies: [19, 17, 21, 4303, 712, 6008, 4299, 1236, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 6047, 4340, 1236, 2]
 // Exports: SearchButtonContent
 
-// Module 11747 (SEARCH_BAR_HEIGHT)
+// Module 11804 (SEARCH_BAR_HEIGHT)
 import "noop";
 import { Pressable } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,11 +32,11 @@ export const SearchButtonContent = function SearchButtonContent(panelVariant) {
   const merged1 = Object.assign(merged);
   const items = [tmp2.searchButton, panelVariant.panelVariant ? tmp2.roundedCornersAlt : tmp2.roundedCorners, merged.style];
   obj.style = items;
-  const items1 = [callback(require(6008) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { size: "xs" }), ];
+  const items1 = [callback(require(6047) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { size: "xs" }), ];
   obj = { variant: "text-sm/medium", color: "text-muted", style: tmp2.text, maxFontSizeMultiplier: 2, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t["5h0QOP"]);
-  items1[1] = callback(require(4299) /* Text */.Text, obj);
+  items1[1] = callback(require(4340) /* Text */.Text, obj);
   obj.children = items1;
   return closure_4(Pressable, obj);
 };

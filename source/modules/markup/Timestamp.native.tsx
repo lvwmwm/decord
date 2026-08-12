@@ -1,10 +1,10 @@
-// Module ID: 9809
-// Function ID: 9810
+// Module ID: 9850
+// Function ID: 9851
 // Name: Timestamp
-// Dependencies: [19, 21, 4303, 712, 9810, 1297, 4021, 2]
+// Dependencies: [19, 21, 4344, 712, 9851, 1297, 4062, 2]
 // Exports: default
 
-// Module 9809 (Timestamp)
+// Module 9850 (Timestamp)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -23,7 +23,7 @@ export default function Timestamp(node) {
   if (style == null) {
     style = node.style;
   }
-  const tmp2 = importDefault(9810)(node);
+  const tmp2 = importDefault(9851)(node);
   const tmp3 = jsx;
   return tmp3(node(1297).LegacyText, {
     style,
@@ -32,6 +32,6 @@ export default function Timestamp(node) {
       obj = { key: "TIMESTAMP", content: node.full };
       obj.open(obj);
     },
-    children: importDefault(9810)(node)
+    children: importDefault(9851)(node)
   });
 };

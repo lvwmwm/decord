@@ -1,9 +1,9 @@
-// Module ID: 4398
-// Function ID: 4399
+// Module ID: 4438
+// Function ID: 4439
 // Name: start
-// Dependencies: [4393, 676, 4188, 4379, 2]
+// Dependencies: [4433, 676, 4229, 4419, 2]
 
-// Module 4398 (start)
+// Module 4438 (start)
 import ApplicationStreamPresets from "ApplicationStreamPresets";
 import { StreamLayouts } from "ME";
 
@@ -44,12 +44,12 @@ prototype["start"] = function start() {
   ({ resolution: this._targetResolution, fps: this._targetFPS } = state);
   const _statInterval = this._statInterval;
   _statInterval.start(1000, this._sampleStats);
-  this._lastLayoutChanged = require(4379) /* sleep */.now();
+  this._lastLayoutChanged = require(4419) /* sleep */.now();
 };
 prototype["stop"] = function stop() {
   const _statInterval = this._statInterval;
   _statInterval.stop();
-  this._streamEnd = require(4379) /* sleep */.now();
+  this._streamEnd = require(4419) /* sleep */.now();
   this._incrementLayout(this._lastLayout, (this._streamEnd - this._lastLayoutChanged) / 1000);
 };
 prototype["autoQualityChange"] = function autoQualityChange() {
@@ -59,12 +59,12 @@ prototype["layoutChange"] = function layoutChange(_lastLayout) {
   const self = this;
   if (_lastLayout !== this._lastLayout) {
     if (null == self._streamEnd) {
-      const nowResult = require(4379) /* sleep */.now();
+      const nowResult = require(4419) /* sleep */.now();
       self._incrementLayout(self._lastLayout, (nowResult - self._lastLayoutChanged) / 1000);
       self._layoutChanges = self._layoutChanges + 1;
       self._lastLayout = _lastLayout;
       self._lastLayoutChanged = nowResult;
-      const obj = require(4379) /* sleep */;
+      const obj = require(4419) /* sleep */;
     }
   }
 };

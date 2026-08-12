@@ -1,10 +1,10 @@
-// Module ID: 4251
-// Function ID: 4252
+// Module ID: 4292
+// Function ID: 4293
 // Name: CopyIcon
-// Dependencies: [19, 21, 712, 4023, 4252, 2]
+// Dependencies: [19, 21, 712, 4064, 4293, 2]
 // Exports: CopyIcon
 
-// Module 4251 (CopyIcon)
+// Module 4292 (CopyIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const CopyIcon = function CopyIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4252) /* registerAsset */;
+  obj[0] = require(4293) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

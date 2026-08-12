@@ -1,9 +1,9 @@
-// Module ID: 14241
-// Function ID: 14242
+// Module ID: 14298
+// Function ID: 14299
 // Name: route
-// Dependencies: [19, 676, 6883, 7447, 3966, 12694, 10452, 1236, 14242, 14240, 2]
+// Dependencies: [19, 676, 6922, 7486, 4007, 12753, 10493, 1236, 14299, 14297, 2]
 
-// Module 14241 (route)
+// Module 14298 (route)
 import noop from "noop";
 import createToggle from "createToggle";
 
@@ -27,8 +27,8 @@ createToggle = {
     }, []);
   },
   usePredicate: function useShowManageSubscriptionsSetting() {
-    let hasPremiumSubscriptionToDisplay = require(3966) /* getPremiumPlanItem */.useHasPremiumSubscriptionToDisplay();
-    const obj = require(3966) /* getPremiumPlanItem */;
+    let hasPremiumSubscriptionToDisplay = require(4007) /* getPremiumPlanItem */.useHasPremiumSubscriptionToDisplay();
+    const obj = require(4007) /* getPremiumPlanItem */;
     if (hasPremiumSubscriptionToDisplay) {
       hasPremiumSubscriptionToDisplay = obj2.useMobileNitroManageSubscriptionsSettingsExperiment({ location: "useShowManageSubscriptionsSetting" });
     }
@@ -39,7 +39,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM_MANAGE_PLAN,
   getComponent() {
-    return require(14240) /* PremiumPlanSelectSettingScreen */.default;
+    return require(14297) /* PremiumPlanSelectSettingScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

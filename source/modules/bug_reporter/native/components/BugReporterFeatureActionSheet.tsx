@@ -1,10 +1,10 @@
-// Module ID: 9899
-// Function ID: 9900
+// Module ID: 9940
+// Function ID: 9941
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4303, 712, 4299, 9874, 5374, 4271, 7988, 5369, 12, 5229, 8529, 9634, 5397, 5396, 1236, 5994, 8532, 2]
+// Dependencies: [32, 19, 17, 21, 4344, 712, 4340, 9915, 5413, 4312, 8027, 5408, 12, 5268, 8568, 9674, 5436, 5435, 1236, 6033, 8571, 2]
 // Exports: default
 
-// Module 9899 (BugReporterFeatureActionSheet)
+// Module 9940 (BugReporterFeatureActionSheet)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "SearchField";
 import { View } from "RedesignBottomSheetTitleHeaderBase";
@@ -30,7 +30,7 @@ let closure_9 = importAllResult.memo((arg0) => {
   const obj = { style: null, children: null };
   const items = [callback3().sectionHeader, { height }];
   obj[0] = items;
-  obj[1] = callback(require(4299) /* Text */.Text, { variant: "text-sm/bold", color: "text-muted", children: title });
+  obj[1] = callback(require(4340) /* Text */.Text, { variant: "text-sm/bold", color: "text-muted", children: title });
   return callback(View, obj);
 });
 let closure_10 = importAllResult.memo((item) => {
@@ -40,9 +40,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(9874);
+  let obj = item(9915);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(9874).getFeatureId(feature);
+  const featureId1 = item(9915).getFeatureId(feature);
   obj = {
     start,
     end,
@@ -54,8 +54,8 @@ let closure_10 = importAllResult.memo((item) => {
     trailing: null
   };
   obj = { selected: featureId === featureId1 };
-  obj[4] = callback(item(7988).FormRadio, obj);
-  return callback(item(5374).TableRow, obj);
+  obj[4] = callback(item(8027).FormRadio, obj);
+  return callback(item(5413).TableRow, obj);
 });
 const obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, justifyContent: "center" };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

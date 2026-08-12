@@ -1,10 +1,10 @@
-// Module ID: 8750
-// Function ID: 8751
+// Module ID: 8789
+// Function ID: 8790
 // Name: StarIcon
-// Dependencies: [19, 21, 712, 4023, 8751, 2]
+// Dependencies: [19, 21, 712, 4064, 8790, 2]
 // Exports: StarIcon
 
-// Module 8750 (StarIcon)
+// Module 8789 (StarIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const StarIcon = function StarIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8751) /* registerAsset */;
+  obj[0] = require(8790) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(4023) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4064) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

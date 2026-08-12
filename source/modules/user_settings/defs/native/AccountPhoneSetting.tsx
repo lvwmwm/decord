@@ -1,9 +1,9 @@
-// Module ID: 14022
-// Function ID: 14023
+// Module ID: 14079
+// Function ID: 14080
 // Name: pressable
-// Dependencies: [1922, 8084, 8523, 589, 4509, 8522, 2007, 8525, 10452, 1236, 2]
+// Dependencies: [1922, 8123, 8562, 589, 4549, 8561, 2007, 8564, 10493, 1236, 2]
 
-// Module 14022 (pressable)
+// Module 14079 (pressable)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PHONE_VERIFICATION_MODAL_KEY as closure_4 } from "PHONE_VERIFICATION_MODAL_KEY";
 import createToggle from "createToggle";
@@ -27,10 +27,10 @@ createToggle = {
     });
   },
   onPress: function onAccountPhoneSettingPress() {
-    let obj = importDefault(4509);
+    let obj = importDefault(4549);
     obj = { allowDeletePhone: true, reason: null };
-    obj[1] = require(8525) /* ChangePhoneReason */.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(8522, dependencyMap.paths), obj, closure_4);
+    obj[1] = require(8564) /* ChangePhoneReason */.ChangePhoneReason.USER_SETTINGS_UPDATE;
+    obj.pushLazy(require(2007) /* asyncRequireImpl */(8561, dependencyMap.paths), obj, closure_4);
   },
   withArrow: true
 };

@@ -1,10 +1,10 @@
-// Module ID: 4372
-// Function ID: 4373
+// Module ID: 4412
+// Function ID: 4413
 // Name: getSystemAnalyticsInfo
 // Dependencies: [2]
 // Exports: getSystemAnalyticsInfo
 
-// Module 4372 (getSystemAnalyticsInfo)
+// Module 4412 (getSystemAnalyticsInfo)
 const result = require("set").fileFinishedImporting("modules/system_analytics/SystemAnalyticsStore.native.tsx");
 
 export const getSystemAnalyticsInfo = function getSystemAnalyticsInfo() {

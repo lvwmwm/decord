@@ -1,10 +1,10 @@
-// Module ID: 6248
-// Function ID: 6249
+// Module ID: 6287
+// Function ID: 6288
 // Name: DollarSignIllocon
-// Dependencies: [21, 5268, 6249, 2]
+// Dependencies: [21, 5307, 6288, 2]
 // Exports: DollarSignIllocon
 
-// Module 6248 (DollarSignIllocon)
+// Module 6287 (DollarSignIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DollarSignIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const DollarSignIllocon = function DollarSignIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6249);
+  obj[0] = importDefault(6288);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { uri: null });
+  return jsx(importDefault(5307), { uri: null });
 };

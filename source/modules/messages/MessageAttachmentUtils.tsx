@@ -1,10 +1,10 @@
-// Module ID: 11406
-// Function ID: 11407
+// Module ID: 11462
+// Function ID: 11463
 // Name: getForumPostShouldObscure
-// Dependencies: [3948, 676, 5909, 5914, 5913, 1403, 8411, 647, 3993, 11000, 1236, 2]
+// Dependencies: [3989, 676, 5948, 5953, 5952, 1403, 8450, 647, 4034, 11053, 1236, 2]
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt, useShouldObscure
 
-// Module 11406 (getForumPostShouldObscure)
+// Module 11462 (getForumPostShouldObscure)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
@@ -17,21 +17,21 @@ function getForumPostShouldObscure(media, arg1, enabledHarmTypesBitmaskForChanne
     return items;
   } else {
     const type = media.type;
-    if (require(8411) /* isMediaAttachment */.ForumPostMediaTypes.EMBED === type) {
+    if (require(8450) /* isMediaAttachment */.ForumPostMediaTypes.EMBED === type) {
       let obj = { type: null, media: null };
-      obj[0] = tmp4(5914).ObscuredMediaTypes.Embed;
+      obj[0] = tmp4(5953).ObscuredMediaTypes.Embed;
       obj[1] = media;
       let tmp = obj;
-    } else if (tmp4(8411).ForumPostMediaTypes.ATTACHMENT === type) {
+    } else if (tmp4(8450).ForumPostMediaTypes.ATTACHMENT === type) {
       obj = { type: null, media: null };
-      obj[0] = tmp4(5914).ObscuredMediaTypes.Attachment;
+      obj[0] = tmp4(5953).ObscuredMediaTypes.Attachment;
       obj[1] = media;
       tmp = obj;
     } else {
       tmp = null;
-      if (tmp4(8411).ForumPostMediaTypes.COMPONENT === type) {
+      if (tmp4(8450).ForumPostMediaTypes.COMPONENT === type) {
         obj = { type: null, media: null };
-        obj[0] = tmp4(5914).ObscuredMediaTypes.GenericMedia;
+        obj[0] = tmp4(5953).ObscuredMediaTypes.GenericMedia;
         obj[1] = media.srcUnfurledMediaItem;
         tmp = obj;
       }
@@ -40,9 +40,9 @@ function getForumPostShouldObscure(media, arg1, enabledHarmTypesBitmaskForChanne
       const items1 = [false, undefined];
       return items1;
     } else {
-      let tmp4Result = tmp4(5909);
+      let tmp4Result = tmp4(5948);
       const mediaObscuredReasonFromBitmask = tmp4Result.getMediaObscuredReasonFromBitmask(tmp, enabledHarmTypesBitmaskForChannelType);
-      tmp4Result = tmp4(5909);
+      tmp4Result = tmp4(5948);
       if (mediaObscuredReasonFromBitmask.length > 0) {
         const items2 = [true, mediaObscuredReasonFromBitmask[0]];
         let tmp2 = items2;
@@ -50,11 +50,11 @@ function getForumPostShouldObscure(media, arg1, enabledHarmTypesBitmaskForChanne
         const items3 = [, ];
         if (tmp8) {
           items3[0] = true;
-          items3[1] = tmp4(5913).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+          items3[1] = tmp4(5952).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
           tmp2 = items3;
         } else if (media.spoiler) {
           items3[0] = arg1;
-          items3[1] = tmp4(5913).ObscureReason.SPOILER;
+          items3[1] = tmp4(5952).ObscureReason.SPOILER;
           tmp2 = items3;
         } else {
           items3[0] = false;
@@ -75,45 +75,45 @@ export const getObscureReasonForAttachment = function getObscureReasonForAttachm
   if (undefined !== flags) {
     num = flags;
   }
-  let obj = require(5909) /* getEligibleHarmTypesConfigsForContext */;
-  obj = { type: require(5914) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Attachment, media: attachment };
+  let obj = require(5948) /* getEligibleHarmTypesConfigsForContext */;
+  obj = { type: require(5953) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Attachment, media: attachment };
   const mediaObscuredReasonFromBitmask = obj.getMediaObscuredReasonFromBitmask(obj, enabledHarmTypesBitmaskForChannelAndAuthorId);
-  require(5909) /* getEligibleHarmTypesConfigsForContext */;
-  obj = { type: require(5914) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Attachment, media: attachment };
+  require(5948) /* getEligibleHarmTypesConfigsForContext */;
+  obj = { type: require(5953) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Attachment, media: attachment };
   if (mediaObscuredReasonFromBitmask.length > 0) {
     let first = mediaObscuredReasonFromBitmask[0];
   } else if (tmp4) {
-    first = tmp(5913).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    first = tmp(5952).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     first = null;
     if (tmpResult.hasFlag(num, constants.IS_SPOILER)) {
-      first = tmp(5913).ObscureReason.SPOILER;
+      first = tmp(5952).ObscureReason.SPOILER;
     }
     tmpResult = tmp(1403);
   }
   return first;
 };
 export const getObscureReasonForEmbed = function getObscureReasonForEmbed(embed, message, flag2, getUncachedChannelPermissions) {
-  let obj = require(5909) /* getEligibleHarmTypesConfigsForContext */;
-  obj = { type: require(5914) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Embed, media: embed };
+  let obj = require(5948) /* getEligibleHarmTypesConfigsForContext */;
+  obj = { type: require(5953) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Embed, media: embed };
   const mediaObscuredReasonFromBitmask = obj.getMediaObscuredReasonFromBitmask(obj, getUncachedChannelPermissions);
   const bot = message.author.bot;
   let isMediaScanPendingResult = !bot;
   if (!bot) {
     obj = { type: null, media: null };
-    obj[0] = tmp(5914).ObscuredMediaTypes.Embed;
+    obj[0] = tmp(5953).ObscuredMediaTypes.Embed;
     obj[1] = embed;
-    isMediaScanPendingResult = tmp(5909).isMediaScanPending(obj, getUncachedChannelPermissions);
-    const tmpResult = tmp(5909);
+    isMediaScanPendingResult = tmp(5948).isMediaScanPending(obj, getUncachedChannelPermissions);
+    const tmpResult = tmp(5948);
   }
   if (mediaObscuredReasonFromBitmask.length > 0) {
     let first = mediaObscuredReasonFromBitmask[0];
   } else if (isMediaScanPendingResult) {
-    first = tmp(5913).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    first = tmp(5952).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     first = null;
     if (flag2) {
-      first = tmp(5913).ObscureReason.SPOILER;
+      first = tmp(5952).ObscureReason.SPOILER;
     }
   }
   return first;
@@ -127,29 +127,29 @@ export const getObscureReasonForUnfurledMediaItem = function getObscureReasonFor
   if (isBot === undefined) {
     flag2 = false;
   }
-  let obj = require(5909) /* getEligibleHarmTypesConfigsForContext */;
-  obj = { type: require(5914) /* ContentHarmTypeChannel */.ObscuredMediaTypes.GenericMedia, media };
+  let obj = require(5948) /* getEligibleHarmTypesConfigsForContext */;
+  obj = { type: require(5953) /* ContentHarmTypeChannel */.ObscuredMediaTypes.GenericMedia, media };
   const mediaObscuredReasonFromBitmask = obj.getMediaObscuredReasonFromBitmask(obj, enabledContentHarmTypeFlags);
   let isMediaScanPendingResult = !flag2;
   if (!flag2) {
     obj = { type: null, media: null };
-    obj[0] = tmp(5914).ObscuredMediaTypes.GenericMedia;
+    obj[0] = tmp(5953).ObscuredMediaTypes.GenericMedia;
     obj[1] = media;
-    isMediaScanPendingResult = tmp(5909).isMediaScanPending(obj, enabledContentHarmTypeFlags);
-    const tmpResult = tmp(5909);
+    isMediaScanPendingResult = tmp(5948).isMediaScanPending(obj, enabledContentHarmTypeFlags);
+    const tmpResult = tmp(5948);
   }
-  if (mediaObscuredReasonFromBitmask.includes(require(5913) /* ObscureReason */.ObscureReason.EXPLICIT_CONTENT)) {
-    let EXPLICIT_CONTENT = tmp(5913).ObscureReason.EXPLICIT_CONTENT;
-  } else if (mediaObscuredReasonFromBitmask.includes(tmp(5913).ObscureReason.GORE_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(5913).ObscureReason.GORE_CONTENT;
-  } else if (mediaObscuredReasonFromBitmask.includes(tmp(5913).ObscureReason.SELF_HARM_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(5913).ObscureReason.SELF_HARM_CONTENT;
+  if (mediaObscuredReasonFromBitmask.includes(require(5952) /* ObscureReason */.ObscureReason.EXPLICIT_CONTENT)) {
+    let EXPLICIT_CONTENT = tmp(5952).ObscureReason.EXPLICIT_CONTENT;
+  } else if (mediaObscuredReasonFromBitmask.includes(tmp(5952).ObscureReason.GORE_CONTENT)) {
+    EXPLICIT_CONTENT = tmp(5952).ObscureReason.GORE_CONTENT;
+  } else if (mediaObscuredReasonFromBitmask.includes(tmp(5952).ObscureReason.SELF_HARM_CONTENT)) {
+    EXPLICIT_CONTENT = tmp(5952).ObscureReason.SELF_HARM_CONTENT;
   } else if (isMediaScanPendingResult) {
-    EXPLICIT_CONTENT = tmp(5913).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    EXPLICIT_CONTENT = tmp(5952).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     EXPLICIT_CONTENT = null;
     if (flag) {
-      EXPLICIT_CONTENT = tmp(5913).ObscureReason.SPOILER;
+      EXPLICIT_CONTENT = tmp(5952).ObscureReason.SPOILER;
     }
   }
   return EXPLICIT_CONTENT;
@@ -165,17 +165,17 @@ export const useShouldObscure = function useShouldObscure(channel) {
     }
     return canResult;
   });
-  const RenderSpoilers = channel(3993).RenderSpoilers;
+  const RenderSpoilers = channel(4034).RenderSpoilers;
   const setting = RenderSpoilers.useSetting();
   const obj = channel(647);
-  const enabledHarmTypesBitmaskForChannelType = channel(5909).getEnabledHarmTypesBitmaskForChannelType(channel(5914).ContentHarmTypeChannel.GUILD);
-  return getForumPostShouldObscure(channel.media, !importDefault(11000)(setting, stateFromStores), enabledHarmTypesBitmaskForChannelType);
+  const enabledHarmTypesBitmaskForChannelType = channel(5948).getEnabledHarmTypesBitmaskForChannelType(channel(5953).ContentHarmTypeChannel.GUILD);
+  return getForumPostShouldObscure(channel.media, !importDefault(11053)(setting, stateFromStores), enabledHarmTypesBitmaskForChannelType);
 };
 export const getObscuredAlt = function getObscuredAlt(obscureReason) {
-  if (require(5913) /* ObscureReason */.ObscureReason.EXPLICIT_CONTENT !== obscureReason) {
-    if (tmp(5913).ObscureReason.GORE_CONTENT !== obscureReason) {
-      if (tmp(5913).ObscureReason.SELF_HARM_CONTENT !== obscureReason) {
-        if (tmp(5913).ObscureReason.SPOILER === obscureReason) {
+  if (require(5952) /* ObscureReason */.ObscureReason.EXPLICIT_CONTENT !== obscureReason) {
+    if (tmp(5952).ObscureReason.GORE_CONTENT !== obscureReason) {
+      if (tmp(5952).ObscureReason.SELF_HARM_CONTENT !== obscureReason) {
+        if (tmp(5952).ObscureReason.SPOILER === obscureReason) {
           const intl = tmp(1236).intl;
           return intl.string(tmp(1236).t["XpfDH+"]);
         }

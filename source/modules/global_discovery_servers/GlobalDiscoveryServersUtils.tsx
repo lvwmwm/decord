@@ -1,10 +1,10 @@
-// Module ID: 16927
-// Function ID: 16928
+// Module ID: 16985
+// Function ID: 16986
 // Name: _navigateToGuild
-// Dependencies: [5, 1994, 12973, 9029, 676, 1236, 1370, 5958, 698, 16926, 514, 2]
+// Dependencies: [5, 1994, 13032, 9068, 676, 1236, 1370, 5997, 698, 16984, 514, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 16927 (_navigateToGuild)
+// Module 16985 (_navigateToGuild)
 import getSystemLocale from "getSystemLocale";
 import _getSystemLocale from "_getSystemLocale";
 import map from "map";
@@ -70,7 +70,7 @@ function _navigateToGuild() {
               let obj2;
               dependencyMap = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "ct", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -85,7 +85,7 @@ function _navigateToGuild() {
               obj2 = {};
               const merged = Object.assign(c5);
               obj2.loadId = c0;
-              let obj4 = callback2(5958);
+              let obj4 = callback2(5997);
               dependencyMap = 2;
               c4 = 1;
               const obj3 = { value: null, done: false };
@@ -311,8 +311,8 @@ export const handleTabPressPrefetch = function handleTabPressPrefetch() {
   let isInitialFetchComplete = store.getIsInitialFetchComplete(closure_9);
   if (!isInitialFetchComplete) {
     if (!isFetching) {
-      const featuredGuilds = importDefault(16926).fetchFeaturedGuilds();
-      const obj = importDefault(16926);
+      const featuredGuilds = importDefault(16984).fetchFeaturedGuilds();
+      const obj = importDefault(16984);
     }
   }
   if (isInitialFetchComplete) {
@@ -322,8 +322,8 @@ export const handleTabPressPrefetch = function handleTabPressPrefetch() {
     isInitialFetchComplete = null != error;
   }
   if (isInitialFetchComplete) {
-    const featuredGuilds1 = importDefault(16926).fetchFeaturedGuilds({ forceRefresh: true });
-    const obj2 = importDefault(16926);
+    const featuredGuilds1 = importDefault(16984).fetchFeaturedGuilds({ forceRefresh: true });
+    const obj2 = importDefault(16984);
   }
 };
 export const makeAnalyticsID = function makeAnalyticsID() {

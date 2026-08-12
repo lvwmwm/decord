@@ -1,10 +1,10 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 10993
+// Function ID: 10994
 // Name: UserSummaryItem
-// Dependencies: [19, 17, 1990, 21, 4303, 712, 1297, 589, 1435, 4493, 1236, 4299, 2]
+// Dependencies: [19, 17, 1990, 21, 4344, 712, 1297, 589, 1435, 4533, 1236, 4340, 2]
 // Exports: default
 
-// Module 10940 (UserSummaryItem)
+// Module 10993 (UserSummaryItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

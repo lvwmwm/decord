@@ -1,9 +1,9 @@
-// Module ID: 5719
-// Function ID: 5720
+// Module ID: 5758
+// Function ID: 5759
 // Name: play
-// Dependencies: [109, 19, 17, 21, 5720, 2]
+// Dependencies: [109, 19, 17, 21, 5759, 2]
 
-// Module 5719 (play)
+// Module 5758 (play)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -71,7 +71,7 @@ prototype["render"] = function render() {
   items1 = [tmp4, style];
   const tmp = callback(props, closure_2);
   const merged = Object.assign(tmp);
-  obj[2] = jsx(importDefault(5720), { ref: this.setRef, source, style: items1 });
+  obj[2] = jsx(importDefault(5759), { ref: this.setRef, source, style: items1 });
   return <View ref={this.setRef} source={source} style={items1} />;
 };
 LottieAnimationView.defaultProps = { autoPlay: true, loop: true, collapsable: false };

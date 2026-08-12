@@ -1,10 +1,10 @@
-// Module ID: 15166
-// Function ID: 15167
+// Module ID: 15223
+// Function ID: 15224
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 676, 4720, 1628, 1367, 15167, 15175, 15187, 712, 2]
+// Dependencies: [109, 19, 676, 4760, 1628, 1367, 15224, 15232, 15244, 712, 2]
 // Exports: default
 
-// Module 15166 (useMessagesSpecs)
+// Module 15223 (useMessagesSpecs)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import noop from "noop";
 import { DM_WIDTH } from "ME";
@@ -14,7 +14,7 @@ let closure_3 = ["height"];
 const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");
 
 export default function useMessagesSpecs() {
-  fontScale = fontScale(4720).useFontScale();
+  fontScale = fontScale(4760).useFontScale();
   top = top(1628)().top;
   const tmp2 = top(1367)("MessagesHeader");
   const dependencyMap = tmp2;

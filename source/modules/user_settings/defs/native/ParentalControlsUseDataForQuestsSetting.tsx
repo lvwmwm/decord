@@ -1,9 +1,9 @@
-// Module ID: 14928
-// Function ID: 14929
+// Module ID: 14986
+// Function ID: 14987
 // Name: toggle
-// Dependencies: [6999, 8084, 14080, 1236, 2303, 10452, 2]
+// Dependencies: [7038, 8123, 14137, 1236, 2303, 10493, 2]
 
-// Module 14928 (toggle)
+// Module 14986 (toggle)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
@@ -16,12 +16,12 @@ createToggle = {
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToSupportQuestsSettingValue() {
     const selectedTeenId = store.getSelectedTeenId();
-    const ParentalControlledDropsOptedOut = require(14080) /* result */.ParentalControlledDropsOptedOut;
+    const ParentalControlledDropsOptedOut = require(14137) /* result */.ParentalControlledDropsOptedOut;
     return !ParentalControlledDropsOptedOut.useControlledSetting(selectedTeenId);
   },
   onValueChange: function onDataToSupportQuestsSettingValueChange(arg0) {
     const selectedTeenId = store.getSelectedTeenId();
-    const ParentalControlledDropsOptedOut = require(14080) /* result */.ParentalControlledDropsOptedOut;
+    const ParentalControlledDropsOptedOut = require(14137) /* result */.ParentalControlledDropsOptedOut;
     const result = ParentalControlledDropsOptedOut.updateControlledSetting(selectedTeenId, !arg0);
   },
   unsearchable: true

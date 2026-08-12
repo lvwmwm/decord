@@ -1,10 +1,10 @@
-// Module ID: 11174
-// Function ID: 11175
+// Module ID: 11227
+// Function ID: 11228
 // Name: QuestRewardTile
-// Dependencies: [32, 19, 17, 4295, 21, 4303, 712, 500, 589, 10482, 10477, 8876, 5268, 2]
+// Dependencies: [32, 19, 17, 4336, 21, 4344, 712, 500, 589, 10523, 10518, 8915, 5307, 2]
 // Exports: default
 
-// Module 11174 (QuestRewardTile)
+// Module 11227 (QuestRewardTile)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { useMemo } from "noop";

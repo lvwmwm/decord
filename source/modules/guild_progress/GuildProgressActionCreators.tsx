@@ -1,9 +1,9 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11898
+// Function ID: 11899
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 11841 (dispatcher)
+// Module 11898 (dispatcher)
 const result = require("set").fileFinishedImporting("modules/guild_progress/GuildProgressActionCreators.tsx");
 
 export default {

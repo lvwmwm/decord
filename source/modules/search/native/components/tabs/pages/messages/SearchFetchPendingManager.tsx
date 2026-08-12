@@ -1,10 +1,10 @@
-// Module ID: 15793
-// Function ID: 15794
+// Module ID: 15849
+// Function ID: 15850
 // Name: useSearchFetchPendingManager
-// Dependencies: [19, 11713, 5716, 2]
+// Dependencies: [19, 11770, 5755, 2]
 // Exports: useSearchFetchPendingManager
 
-// Module 15793 (useSearchFetchPendingManager)
+// Module 15849 (useSearchFetchPendingManager)
 import noop from "noop";
 
 let closure_3 = function SearchFetchPendingManager() {
@@ -39,7 +39,7 @@ const result = require("useInitialValue").fileFinishedImporting("modules/search/
 
 export const useSearchFetchPendingManager = function useSearchFetchPendingManager(searchContext) {
   const importDefault = searchContext;
-  const tmp = importDefault(5716)(() => {
+  const tmp = importDefault(5755)(() => {
     if (typeof closure_3 !== "function") {
       HermesBuiltin.throwTypeError();
     }

@@ -1,10 +1,10 @@
-// Module ID: 15308
-// Function ID: 15309
+// Module ID: 15365
+// Function ID: 15366
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 1388, 21, 4303, 9027, 1236, 2335, 4031, 8659, 2]
+// Dependencies: [19, 17, 1388, 21, 4344, 9066, 1236, 2335, 4072, 8698, 2]
 // Exports: default
 
-// Module 15308 (BoostProgressBarCoachmark)
+// Module 15365 (BoostProgressBarCoachmark)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -48,6 +48,6 @@ export default function BoostProgressBarCoachmark(guild) {
     obj[9] = callback1;
     return obj;
   }, items2);
-  const coachmark = guild(8659).useCoachmark(guild.targetRef, memo);
+  const coachmark = guild(8698).useCoachmark(guild.targetRef, memo);
   return null;
 };

@@ -1,10 +1,10 @@
-// Module ID: 15745
-// Function ID: 15746
+// Module ID: 15801
+// Function ID: 15802
 // Name: useSearchMediaSize
-// Dependencies: [8403, 2]
+// Dependencies: [8442, 2]
 // Exports: default
 
-// Module 15745 (useSearchMediaSize)
+// Module 15801 (useSearchMediaSize)
 import MessageEmbedTypes from "MessageEmbedTypes";
 
 let c0;

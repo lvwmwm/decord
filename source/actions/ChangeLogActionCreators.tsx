@@ -1,9 +1,9 @@
-// Module ID: 8194
-// Function ID: 8195
+// Module ID: 8233
+// Function ID: 8234
 // Name: cacheBustParam
-// Dependencies: [5, 4314, 676, 1978, 709, 3993, 530, 2]
+// Dependencies: [5, 4355, 676, 1978, 709, 4034, 530, 2]
 
-// Module 8194 (cacheBustParam)
+// Module 8233 (cacheBustParam)
 import explicitContentFromProto from "explicitContentFromProto";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
 import { Endpoints } from "ME";
@@ -30,7 +30,7 @@ export default {
     let obj = importDefault(709);
     obj = { type: "CHANGE_LOG_MARK_SEEN", changelogId: id, changelogDate: date };
     obj.dispatch(obj);
-    const LastReceivedChangelogId = require(3993) /* explicitContentFromProto */.LastReceivedChangelogId;
+    const LastReceivedChangelogId = require(4034) /* explicitContentFromProto */.LastReceivedChangelogId;
     LastReceivedChangelogId.updateSetting(id);
   },
   setChangelogOverride(id) {

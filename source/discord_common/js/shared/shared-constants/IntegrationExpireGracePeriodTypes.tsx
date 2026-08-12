@@ -1,9 +1,9 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 16753
+// Function ID: 16754
 // Name: IntegrationExpireGracePeriodTypes
 // Dependencies: [2]
 
-// Module 16695 (IntegrationExpireGracePeriodTypes)
+// Module 16753 (IntegrationExpireGracePeriodTypes)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationExpireGracePeriodTypes.tsx");
 
 export const IntegrationExpireGracePeriodTypes = { ONE_DAY: 1, [1]: "ONE_DAY", THREE_DAYS: 3, [3]: "THREE_DAYS", SEVEN_DAYS: 7, [7]: "SEVEN_DAYS", FOURTEEN_DAYS: 14, [14]: "FOURTEEN_DAYS", THIRTY_DAYS: 30, [30]: "THIRTY_DAYS" };

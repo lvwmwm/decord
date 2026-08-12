@@ -1,9 +1,9 @@
-// Module ID: 9045
-// Function ID: 9046
+// Module ID: 9084
+// Function ID: 9085
 // Name: initialize
-// Dependencies: [1218, 6988, 1397, 9046, 589, 709, 2]
+// Dependencies: [1218, 7027, 1397, 9085, 589, 709, 2]
 
-// Module 9045 (initialize)
+// Module 9084 (initialize)
 import fetchFingerprint from "fetchFingerprint";
 import scheduledEventSort from "scheduledEventSort";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
@@ -81,7 +81,7 @@ const upcomingEventNoticesStore = new UpcomingEventNoticesStore(require("dispatc
       if (null != guildScheduledEvent) {
         if (guildScheduledEvent.status === constants.SCHEDULED) {
           if (null == obj[guildEventId]) {
-            obj = require(9046) /* getNextShownUpcomingEventNoticeType */;
+            obj = require(9085) /* getNextShownUpcomingEventNoticeType */;
             if (obj.getNextShownUpcomingEventNoticeType(guildScheduledEvent, undefined, dependencyMap[guildEventId], false) === constants2.NEW_EVENT) {
               obj = {};
               const merged = Object.assign(obj);

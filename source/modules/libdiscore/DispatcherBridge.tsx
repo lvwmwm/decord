@@ -1,9 +1,9 @@
-// Module ID: 17017
-// Function ID: 17018
+// Module ID: 17075
+// Function ID: 17076
 // Name: importDefaultResult2
-// Dependencies: [4302, 5178, 5220, 12333, 1218, 1983, 1910, 676, 3, 1916, 1914, 698, 709, 6878, 1208, 2]
+// Dependencies: [4343, 5217, 5259, 12396, 1218, 1983, 1910, 676, 3, 1916, 1914, 698, 709, 6917, 1208, 2]
 
-// Module 17017 (importDefaultResult2)
+// Module 17075 (importDefaultResult2)
 import getUserAgnosticState from "getUserAgnosticState";
 import importDefaultResult from "fromServer";
 import importDefaultResult1 from "parseServerGuildSticker";
@@ -247,7 +247,7 @@ class DispatcherBridge {
 
           }, require("dispatcher").DispatchBand.Database);
           _default = require("getState").default;
-          f101642 = _default;
+          f101860 = _default;
           addChangeListenerResult = _default.addChangeListener(() => {
             if ("active" !== _default.getState()) {
               let _Date = Date;

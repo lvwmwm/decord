@@ -1,10 +1,10 @@
-// Module ID: 15249
-// Function ID: 15250
+// Module ID: 15306
+// Function ID: 15307
 // Name: useFavoritesGuildCategoryLongPress
-// Dependencies: [19, 676, 1913, 1236, 15250, 2]
+// Dependencies: [19, 676, 1913, 1236, 15307, 2]
 // Exports: default
 
-// Module 15249 (useFavoritesGuildCategoryLongPress)
+// Module 15306 (useFavoritesGuildCategoryLongPress)
 import noop from "noop";
 import { ChannelTypes } from "ME";
 

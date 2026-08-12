@@ -1,10 +1,10 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 14064
+// Function ID: 14065
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [19, 17, 21, 4303, 712, 14005, 5397, 5998, 4299, 1236, 4714, 11292, 2]
+// Dependencies: [19, 17, 21, 4344, 712, 14062, 5436, 6037, 4340, 1236, 4754, 11346, 2]
 // Exports: default
 
-// Module 14007 (SafetyHubErrorActionSheet)
+// Module 14064 (SafetyHubErrorActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ export default function SafetyHubErrorActionSheet(arg0) {
     HermesBuiltin.throwTypeError();
   } else {
     const tmp3 = createCacheKey();
-    const tmp6 = importDefault(14005)();
+    const tmp6 = importDefault(14062)();
     let obj = { children: null };
     obj = { style: null, children: null };
     const items = [tmp3.errorContainer];
@@ -40,12 +40,12 @@ export default function SafetyHubErrorActionSheet(arg0) {
     obj1[1] = importDefault(712).colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT;
     const items2 = [tmp3.redesignErrorIcon];
     obj1[2] = items2;
-    obj[1] = callback(require(5998) /* CircleXIcon */.CircleXIcon, obj1);
+    obj[1] = callback(require(6037) /* CircleXIcon */.CircleXIcon, obj1);
     const items3 = [callback(View, obj), ];
     const obj2 = { variant: "heading-lg/normal", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj2[1] = intl.string(require(1236) /* getSystemLocale */.t.TDRvqs);
-    items3[1] = callback(require(4299) /* Text */.Text, obj2);
+    items3[1] = callback(require(4340) /* Text */.Text, obj2);
     obj[1] = items3;
     const items4 = [callback2(View, obj), ];
     const obj3 = { onPress: null, text: null, loading: null, disabled: null };
@@ -56,8 +56,8 @@ export default function SafetyHubErrorActionSheet(arg0) {
     obj3[1] = intl2.string(require(1236) /* getSystemLocale */.t.R1AN4F);
     obj3[2] = tmp6;
     obj3[3] = tmp6;
-    items4[1] = callback(require(4714) /* Button */.Button, obj3);
+    items4[1] = callback(require(4754) /* Button */.Button, obj3);
     obj[0] = items4;
-    return callback2(require(5397) /* Background */.BottomSheet, obj);
+    return callback2(require(5436) /* Background */.BottomSheet, obj);
   }
 };

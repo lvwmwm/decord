@@ -1,10 +1,10 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9809
+// Function ID: 9810
 // Name: useFocusModeEnabled
-// Dependencies: [4996, 3960, 676, 3993, 1374, 1337, 698, 4642, 1236, 9769, 2]
+// Dependencies: [5036, 4001, 676, 4034, 1374, 1337, 698, 4682, 1236, 9810, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 9768 (useFocusModeEnabled)
+// Module 9809 (useFocusModeEnabled)
 import filterPlayingActivities from "filterPlayingActivities";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 import ME from "ME";
@@ -16,9 +16,9 @@ const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/notifications/FocusModeUtils.tsx");
 
 export const useFocusModeEnabled = function useFocusModeEnabled() {
-  const FocusMode = require(3993) /* explicitContentFromProto */.FocusMode;
+  const FocusMode = require(4034) /* explicitContentFromProto */.FocusMode;
   let setting = FocusMode.useSetting();
-  const FocusModeExpiresAtSetting = require(3993) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
+  const FocusModeExpiresAtSetting = require(4034) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
   const setting1 = FocusModeExpiresAtSetting.useSetting();
   if (setting) {
     let tmp3 = "0" === setting1;
@@ -36,9 +36,9 @@ export const useFocusModeEnabled = function useFocusModeEnabled() {
   return setting;
 };
 export const getFocusModeEnabled = function getFocusModeEnabled() {
-  const FocusMode = require(3993) /* explicitContentFromProto */.FocusMode;
+  const FocusMode = require(4034) /* explicitContentFromProto */.FocusMode;
   let setting = FocusMode.getSetting();
-  const FocusModeExpiresAtSetting = require(3993) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
+  const FocusModeExpiresAtSetting = require(4034) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
   const setting1 = FocusModeExpiresAtSetting.getSetting();
   if (setting) {
     setting = null != setting1;
@@ -57,7 +57,7 @@ export const getFocusModeEnabled = function getFocusModeEnabled() {
 export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
   const _require = quiet_mode_enabled;
   const importDefault = arg1;
-  const FocusMode = _require(3993).FocusMode;
+  const FocusMode = _require(4034).FocusMode;
   const setting = FocusMode.getSetting();
   const PreloadedUserSettingsActionCreators = _require(1374).PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("notifications", (arg0) => {
@@ -94,7 +94,7 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
     obj[4] = function onConfirm() {
       callback(table[9])({ nextStatus: constants.ONLINE });
     };
-    importDefault(4642).show(obj);
-    const tmp5Result = importDefault(4642);
+    importDefault(4682).show(obj);
+    const tmp5Result = importDefault(4682);
   }
 };

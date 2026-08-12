@@ -1,10 +1,10 @@
-// Module ID: 6586
-// Function ID: 6587
+// Module ID: 6625
+// Function ID: 6626
 // Name: NitroWishlistTileAbstractUI
-// Dependencies: [21, 5268, 6587, 2]
+// Dependencies: [21, 5307, 6626, 2]
 // Exports: NitroWishlistTileAbstractUI
 
-// Module 6586 (NitroWishlistTileAbstractUI)
+// Module 6625 (NitroWishlistTileAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroWishlistTileAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const NitroWishlistTileAbstractUI = function NitroWishlistTileAbstractUI(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6587);
+  obj[0] = importDefault(6626);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroWishlistTileAbstractUI = function NitroWishlistTileAbstractUI(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
 };

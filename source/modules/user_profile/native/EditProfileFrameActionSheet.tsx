@@ -1,10 +1,10 @@
-// Module ID: 13949
-// Function ID: 13950
+// Module ID: 14006
+// Function ID: 14007
 // Name: EditProfileFrameInner
-// Dependencies: [32, 19, 17, 7020, 7011, 676, 21, 4303, 712, 8312, 7406, 5728, 5748, 698, 8270, 5397, 4299, 1236, 8282, 8285, 589, 13950, 8272, 8313, 13951, 8303, 8304, 8283, 9559, 4725, 2]
+// Dependencies: [32, 19, 17, 7059, 7050, 676, 21, 4344, 712, 8351, 7445, 5767, 5787, 698, 8309, 5436, 4340, 1236, 8321, 8324, 589, 14007, 8311, 8352, 14008, 8342, 8343, 8322, 9599, 4765, 2]
 // Exports: default
 
-// Module 13949 (EditProfileFrameInner)
+// Module 14006 (EditProfileFrameInner)
 import _slicedToArray from "_slicedToArray";
 import useFetchPurchases from "useFetchPurchases";
 import get_ActivityIndicator from "getSystemLocale";
@@ -109,7 +109,7 @@ function ProfileFrameSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = createCacheKey();
-  const tmp2 = purchase(8283)(previewSkuId);
+  const tmp2 = purchase(8322)(previewSkuId);
   const product = tmp2.product;
   c0 = product;
   purchase = tmp2.purchase;
@@ -133,11 +133,11 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const items1 = [callback(purchase(9559), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  const items1 = [callback(purchase(9599), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   obj = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj[3] = items2;
-  items1[1] = callback(purchase(4725), obj);
+  items1[1] = callback(purchase(4765), obj);
   obj[1] = items1;
   return callback2(closure_5, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 10617
-// Function ID: 10618
+// Module ID: 10670
+// Function ID: 10671
 // Name: _getActivityLaunchErrorInfo
-// Dependencies: [5, 7590, 676, 1236, 10618, 3993, 10619, 4528, 8224, 2]
+// Dependencies: [5, 7629, 676, 1236, 10671, 4034, 10672, 4568, 8263, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 10617 (_getActivityLaunchErrorInfo)
+// Module 10670 (_getActivityLaunchErrorInfo)
 import explicitContentFromProto from "explicitContentFromProto";
 import initialize from "initialize";
 import { DevShelfFetchState } from "initialize";

@@ -1,10 +1,10 @@
-// Module ID: 8538
-// Function ID: 8539
+// Module ID: 8577
+// Function ID: 8578
 // Name: createNativePlaceholderConfig
-// Dependencies: [19, 17, 8539, 4152, 2]
+// Dependencies: [19, 17, 8578, 4193, 2]
 // Exports: default
 
-// Module 8538 (createNativePlaceholderConfig)
+// Module 8577 (createNativePlaceholderConfig)
 import noop from "noop";
 import { processColor } from "get ActivityIndicator";
 
@@ -20,14 +20,14 @@ function createNativePlaceholderConfig(type) {
   }
   let NONE = type;
   if (type == null) {
-    NONE = require(8539) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
+    NONE = require(8578) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
   }
-  const obj = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "accessibilityRole", borderBottomLeftRadius: "flex", borderBottomRightRadius: "a", divider: "r", dividerColor: "isArray", dividerPaddingLeft: "call", dividerPaddingRight: "diversity", placeholderShape: "y", placeholderShapeColor: "e", placeholderShapeCount: "isArray", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "Boolean", placeholderShapePaddingVertical: "e", placeholderFeedBackgroundColor: "isArray", placeholderFeedColor: "isArray", placeholderFeedLabelPadding: "o", placeholderFeedLabelPaddingInnerRatio: "e", placeholderFeedLabelSize: "isArray", placeholderFeedLabelSecondarySize: "isArray", placeholderFeedPadding: "l", placeholderFeedShape: "e", placeholderFeedShapeSize: "isArray", placeholderType: NONE, width: null, height: null, verticalAlignment: null, horizontalAlignment: null };
+  const obj = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "diversity", borderBottomLeftRadius: "y", borderBottomRightRadius: "e", divider: "isArray", dividerColor: "isArray", dividerPaddingLeft: "Boolean", dividerPaddingRight: "e", placeholderShape: "isArray", placeholderShapeColor: "isArray", placeholderShapeCount: "o", placeholderShapeGap: "e", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "isArray", placeholderFeedBackgroundColor: "l", placeholderFeedColor: "e", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "e", placeholderFeedLabelSecondarySize: "e", placeholderFeedPadding: "isArray", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "call", placeholderType: NONE, width: null, height: null, verticalAlignment: null, horizontalAlignment: "Button" };
   if (null == type) {
     return obj;
   } else {
-    if (require(8539) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
-      if (tmp15(8539).FastestListPropsPlaceholderType.SHAPE === type) {
+    if (require(8578) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
+      if (tmp15(8578).FastestListPropsPlaceholderType.SHAPE === type) {
         let num9 = type.borderRadius;
         if (num9 == null) {
           num9 = 0;
@@ -48,7 +48,7 @@ function createNativePlaceholderConfig(type) {
           num11 = 0;
         }
         obj.placeholderShapePaddingVertical = num11;
-        const tmp14 = processColor(tmp15(4152).hexToRgbaString(type.colorHex, type.opacity));
+        const tmp14 = processColor(tmp15(4193).hexToRgbaString(type.colorHex, type.opacity));
         obj.placeholderShapeColor = tmp14;
         let num12 = type.shapeCount;
         if (num12 == null) {
@@ -65,8 +65,8 @@ function createNativePlaceholderConfig(type) {
           str2 = "center";
         }
         obj.horizontalAlignment = str2;
-        const tmp15Result = tmp15(4152);
-      } else if (tmp15(8539).FastestListPropsPlaceholderType.FEED_ITEM === type) {
+        const tmp15Result = tmp15(4193);
+      } else if (tmp15(8578).FastestListPropsPlaceholderType.FEED_ITEM === type) {
         let num = type.borderRadius;
         if (num == null) {
           num = 0;

@@ -1,7 +1,7 @@
 // Module ID: 7906
 // Function ID: 7907
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7907, 7852, 7851]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7907, 7891, 7900]
 
 // Module 7906 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const ForeignObject = arg1;
+const ClipPath = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ForeignObject {
+class ClipPath {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, ForeignObject);
+    tmp = _isNativeReflectConstruct(this, ClipPath);
     tmp2 = __esModule;
-    obj = __esModule(ForeignObject);
+    obj = __esModule(ClipPath);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,31 +51,21 @@ class ForeignObject {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(ForeignObject, require("_isNativeReflectConstruct"));
+require("_inherits")(ClipPath, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "render",
     value: function render() {
-      const self = this;
       const props = this.props;
-      let obj = { x: props.x, y: props.y, width: props.width, height: props.height };
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
+      const obj = { ref: this.refMethod };
       const tmp = importDefault(7907);
-      const merged = Object.assign(self(7852).withoutXY(this, props));
-      const merged1 = Object.assign(obj);
+      const merged = Object.assign(ClipPath(7891).extract(this, props));
       obj.children = props.children;
-      return <tmp ref={function ref(arg0) {
-        return self.refMethod(arg0);
-      }} />;
+      return <tmp ref={this.refMethod} />;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(ForeignObject, items);
-importDefaultResultResult.displayName = "ForeignObject";
-importDefaultResultResult.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
+const importDefaultResultResult = importDefaultResult(ClipPath, items);
+importDefaultResultResult.displayName = "ClipPath";
 
 export default importDefaultResultResult;

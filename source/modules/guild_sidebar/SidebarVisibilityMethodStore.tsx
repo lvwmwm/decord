@@ -1,10 +1,10 @@
-// Module ID: 9525
-// Function ID: 9526
+// Module ID: 9565
+// Function ID: 9566
 // Name: SidebarVisibilityMethodStore
 // Dependencies: [644, 2]
 // Exports: getVisibleChannelIdsMethod, getVisibleGuildIdsMethod, setGetVisibleChannelIds, setGetVisibleGuildIds
 
-// Module 9525 (SidebarVisibilityMethodStore)
+// Module 9565 (SidebarVisibilityMethodStore)
 import keys from "keys";
 
 let obj = keys.create(() => ({}));
