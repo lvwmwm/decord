@@ -1,9 +1,9 @@
-// Module ID: 16612
-// Function ID: 16613
+// Module ID: 16603
+// Function ID: 16604
 // Name: haveNotSeenPromptSince
-// Dependencies: [5, 17, 3991, 1218, 1391, 4540, 11836, 11837, 676, 4557, 4310, 16613, 2007, 503, 3943, 11839, 9807, 698, 500, 5301, 14744, 691, 2]
+// Dependencies: [5, 17, 3991, 1218, 1391, 4540, 11837, 11838, 676, 4557, 4310, 16604, 2007, 503, 3943, 11840, 9807, 698, 500, 5301, 14735, 691, 2]
 
-// Module 16612 (haveNotSeenPromptSince)
+// Module 16603 (haveNotSeenPromptSince)
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { NativeModules } from "expandEventProperties";
 import storeThread from "storeThread";
@@ -230,7 +230,7 @@ let c23 = null;
 class NotificationPermissionManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f114372 = applyArgumentsResult;
+    f114242 = applyArgumentsResult;
     applyArgumentsResult.previousAppState = null;
     applyArgumentsResult.actions = {
       MESSAGE_CREATE(message) {
@@ -253,7 +253,7 @@ class NotificationPermissionManager extends tmp4 {
             closure_0.handleAppStateUpdate(arg0);
           }
     };
-    f114372 = applyArgumentsResult;
+    f114242 = applyArgumentsResult;
     applyArgumentsResult.handleConnectionOpen = _logNotificationPermissionStatus2(function*() {
       if (c2 === 2) {
         c2 = 3;
@@ -322,7 +322,7 @@ class NotificationPermissionManager extends tmp4 {
         }
       }
     });
-    f114372 = _logNotificationPermissionStatus2((arg0) => {
+    f114242 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -439,7 +439,7 @@ class NotificationPermissionManager extends tmp4 {
       }
       return applyArgumentsResult;
     };
-    f114372 = _logNotificationPermissionStatus2((arg0) => {
+    f114242 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -563,7 +563,7 @@ class NotificationPermissionManager extends tmp4 {
       }
       return applyArgumentsResult;
     };
-    f114372 = _logNotificationPermissionStatus2((arg0) => {
+    f114242 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -678,9 +678,9 @@ class NotificationPermissionManager extends tmp4 {
       }
       return applyArgumentsResult;
     };
-    f114372 = undefined;
+    f114242 = undefined;
     closure_1 = applyArgumentsResult;
-    f114372 = _logNotificationPermissionStatus2((arg0) => {
+    f114242 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -881,8 +881,8 @@ prototype["handleMessageCreateForNudge"] = function handleMessageCreateForNudge(
               isMutedResult = closure_8.isChannelMuted(guildId, channel.id);
             }
             if (!isMutedResult) {
-              const result = require(11839) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.CHANNEL_BANNER);
-              const obj = require(11839) /* getOrRefreshPushSyncToken */;
+              const result = require(11840) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.CHANNEL_BANNER);
+              const obj = require(11840) /* getOrRefreshPushSyncToken */;
             }
           }
         }
@@ -902,8 +902,8 @@ prototype["handleReactionAddForNudge"] = function handleReactionAddForNudge(opti
           isMutedResult = closure_8.isChannelMuted(guildId, channel.id);
         }
         if (!isMutedResult) {
-          const result = require(11839) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.POST_REACTION_BANNER);
-          const obj = require(11839) /* getOrRefreshPushSyncToken */;
+          const result = require(11840) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.POST_REACTION_BANNER);
+          const obj = require(11840) /* getOrRefreshPushSyncToken */;
         }
       }
     }

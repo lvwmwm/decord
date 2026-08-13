@@ -1,7 +1,7 @@
 // Module ID: 7819
 // Function ID: 7820
 // Name: openStageChannelSettings
-// Dependencies: [7820, 5173, 4310, 7822, 2007, 8009, 8050, 8057, 12726, 4556, 4554, 4550, 10624, 8832, 8052, 2]
+// Dependencies: [7820, 5173, 4310, 7822, 2007, 8009, 8050, 8057, 12727, 4556, 4554, 4550, 10626, 8832, 8052, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannel, openStageChannelAudienceNoticeModal, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
 // Module 7819 (openStageChannelSettings)
@@ -42,7 +42,7 @@ export const openStageSettingsSheet = function openStageSettingsSheet(closure_0,
 export const openEndStageModal = function openEndStageModal(closure_0) {
   let obj = importDefault(4310);
   obj = { channel: closure_0 };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(12726, dependencyMap.paths), closure_8, obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(12727, dependencyMap.paths), closure_8, obj);
 };
 export const openStageChannel = function openStageChannel(outer1_0) {
   if (outer1_0.isGuildStageVoice()) {
@@ -55,8 +55,8 @@ export const openStageChannel = function openStageChannel(outer1_0) {
       obj[0] = outer1_0;
       const obj2 = importDefault(4550);
       tmpResult = tmp(4554);
-      obj2.pushLazy(tmp(2007)(10624, tmp2.paths), obj, tmpResult.getVoiceChannelKey(outer1_0.id));
-      const tmp4 = tmp(2007)(10624, tmp2.paths);
+      obj2.pushLazy(tmp(2007)(10626, tmp2.paths), obj, tmpResult.getVoiceChannelKey(outer1_0.id));
+      const tmp4 = tmp(2007)(10626, tmp2.paths);
     }
     tmp2 = dependencyMap;
   }
@@ -87,8 +87,8 @@ export const navigateToStage = function navigateToStage(id) {
       obj[0] = id;
       const obj2 = importDefault(4550);
       tmp3Result = tmp3(4554);
-      obj2.pushLazy(tmp3(2007)(10624, tmp4.paths), obj, tmp3Result.getVoiceChannelKey(id.id));
-      const tmp6 = tmp3(2007)(10624, tmp4.paths);
+      obj2.pushLazy(tmp3(2007)(10626, tmp4.paths), obj, tmp3Result.getVoiceChannelKey(id.id));
+      const tmp6 = tmp3(2007)(10626, tmp4.paths);
     }
     tmp4 = dependencyMap;
   }

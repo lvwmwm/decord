@@ -1,10 +1,10 @@
-// Module ID: 16767
-// Function ID: 16768
+// Module ID: 16758
+// Function ID: 16759
 // Name: getDerivedStateFromProps
-// Dependencies: [19, 17, 9071, 676, 21, 4342, 712, 16728, 16768, 5041, 1435, 1363, 5807, 5414, 5808, 1236, 9070, 4684, 4773, 4065, 1499, 589, 4278, 5310, 6051, 6059, 1993, 8012, 4753, 4338, 5754, 2]
+// Dependencies: [19, 17, 9071, 676, 21, 4342, 712, 16719, 16759, 5041, 1435, 1363, 5807, 5414, 5808, 1236, 9070, 4684, 4773, 4065, 1499, 589, 4278, 5310, 6051, 6059, 1993, 8012, 4753, 4338, 5754, 2]
 // Exports: default
 
-// Module 16767 (getDerivedStateFromProps)
+// Module 16758 (getDerivedStateFromProps)
 import get_ActivityIndicator from "module_4684";
 import handleFormInit from "handleFormInit";
 import ME from "ME";
@@ -104,17 +104,17 @@ IntegrationItem.prototype["render"] = function render() {
   const props = this.props;
   const integration = props.integration;
   ({ onPress: importDefault, styles } = props);
-  const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = integration(16728).SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
+  const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = integration(16719).SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
   if (SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS.includes(integration.type)) {
     const type = integration.type;
-    if (tmp(16768).IntegrationTypes.YOUTUBE === type) {
+    if (tmp(16759).IntegrationTypes.YOUTUBE === type) {
       const account = integration.account;
       let name;
       if (account != null) {
         name = account.name;
       }
       let combined = name;
-    } else if (tmp(16768).IntegrationTypes.TWITCH === type) {
+    } else if (tmp(16759).IntegrationTypes.TWITCH === type) {
       const _HermesInternal = HermesInternal;
       let str = "twitch.tv/";
       combined = "twitch.tv/" + integration.name;

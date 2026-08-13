@@ -1,10 +1,10 @@
-// Module ID: 12637
-// Function ID: 12638
+// Module ID: 12638
+// Function ID: 12639
 // Name: ForLaterNitroUpsellBar
-// Dependencies: [19, 17, 1924, 8420, 21, 4342, 712, 5768, 11157, 8007, 8779, 4338, 1236, 9562, 4755, 4007, 2]
+// Dependencies: [19, 17, 1924, 8420, 21, 4342, 712, 5768, 11158, 8007, 8779, 4338, 1236, 9562, 4755, 4007, 2]
 // Exports: default
 
-// Module 12637 (ForLaterNitroUpsellBar)
+// Module 12638 (ForLaterNitroUpsellBar)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";

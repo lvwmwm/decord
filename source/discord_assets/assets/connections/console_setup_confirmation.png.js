@@ -1,9 +1,9 @@
-// Module ID: 10512
-// Function ID: 10513
+// Module ID: 10514
+// Function ID: 10515
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10512 (metadata)
+// Module 10514 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/connections/console_setup_confirmation.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/78f63623b9a823fb08b553c956ad16d032c46e4375c55f374e1e6bc791b8a1a7.png";

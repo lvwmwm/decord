@@ -1,10 +1,10 @@
-// Module ID: 14805
-// Function ID: 14806
+// Module ID: 14796
+// Function ID: 14797
 // Name: ChangeLogScreen
-// Dependencies: [19, 17, 676, 1978, 21, 4342, 712, 4072, 698, 8893, 14806, 5308, 8919, 1236, 4887, 9106, 10011, 1297, 8235, 1493, 8236, 1500, 5310, 3943, 8237, 4338, 4550, 5823, 2]
+// Dependencies: [19, 17, 676, 1978, 21, 4342, 712, 4072, 698, 8893, 14797, 5308, 8919, 1236, 4887, 9106, 10011, 1297, 8235, 1493, 8236, 1500, 5310, 3943, 8237, 4338, 4550, 5823, 2]
 // Exports: default
 
-// Module 14805 (ChangeLogScreen)
+// Module 14796 (ChangeLogScreen)
 import importAllResult from "useWindowDimensions";
 import { View } from "Button";
 import { AnalyticEvents } from "ME";
@@ -287,7 +287,7 @@ prototype["renderVideo"] = function renderVideo() {
       obj1[3] = function onReady() {
         return self.setState({ ytVideoReady: true });
       };
-      const items = [callback(importDefault(14806), obj1), ];
+      const items = [callback(importDefault(14797), obj1), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj2 = { style: null, source: null };

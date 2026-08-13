@@ -1,10 +1,10 @@
-// Module ID: 11941
-// Function ID: 11942
+// Module ID: 11942
+// Function ID: 11943
 // Name: GuildPowerupsBottomSheetHeader
-// Dependencies: [17, 4334, 4230, 4231, 21, 4342, 712, 11922, 11919, 11942, 11943, 589, 11944, 4072, 11946, 4338, 11947, 11949, 11950, 4298, 1236, 2335, 11936, 11954, 4233, 9073, 11955, 11956, 11960, 11965, 11966, 4755, 11964, 5437, 2]
+// Dependencies: [17, 4334, 4230, 4231, 21, 4342, 712, 11923, 11920, 11943, 11944, 589, 11945, 4072, 11947, 4338, 11948, 11950, 11951, 4298, 1236, 2335, 11937, 11955, 4233, 9073, 11956, 11957, 11961, 11966, 11967, 4755, 11965, 5437, 2]
 // Exports: default
 
-// Module 11941 (GuildPowerupsBottomSheetHeader)
+// Module 11942 (GuildPowerupsBottomSheetHeader)
 import { View } from "useGuildPowerupLevelPerks";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import BoostedGuildTiers from "BoostedGuildTiers";
@@ -22,14 +22,14 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   let powerup;
   ({ guildId, powerup } = arg0);
   const tmp = callback3();
-  const tmp4 = importDefault(11922)(guildId, powerup);
-  let obj = require(11942) /* useCalculatePowerupCardStatus */;
-  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp4, importDefault(11919)(guildId, powerup, "GuildPowerupsBottomSheet"));
-  let str = importDefault(11943)(powerup, true);
+  const tmp4 = importDefault(11923)(guildId, powerup);
+  let obj = require(11943) /* useCalculatePowerupCardStatus */;
+  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp4, importDefault(11920)(guildId, powerup, "GuildPowerupsBottomSheet"));
+  let str = importDefault(11944)(powerup, true);
   if (str == null) {
     str = "";
   }
-  const tmp5 = importDefault(11919)(guildId, powerup, "GuildPowerupsBottomSheet");
+  const tmp5 = importDefault(11920)(guildId, powerup, "GuildPowerupsBottomSheet");
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   let str2;
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
@@ -39,7 +39,7 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   if (powerup.type === constants.LEVEL) {
     obj = { style: null };
     obj[0] = tmp.gemContainer;
-    let tmp15 = callback(tmp2(11944), obj);
+    let tmp15 = callback(tmp2(11945), obj);
     let tmp14 = callback;
   } else if (tmp10 === closure_7) {
     obj = { style: null, children: null };
@@ -56,12 +56,12 @@ function GuildPowerupsBottomSheetHeader(arg0) {
     obj3[0] = str;
     obj3[1] = tmp.image;
     tmp14 = callback;
-    tmp15 = callback(tmp2(11946), obj3);
+    tmp15 = callback(tmp2(11947), obj3);
   }
   const obj4 = { children: null };
   const items1 = [tmp15, ];
   const obj5 = { style: tmp.headerContainer, children: null };
-  const items2 = [tmp14(require(4338) /* Text */.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: powerup.title }), tmp14(require(11947) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, { cost: powerup.cost, costDecorator: str2, status: calculatePowerupCardStatus, style: tmp.statusContainer })];
+  const items2 = [tmp14(require(4338) /* Text */.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: powerup.title }), tmp14(require(11948) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, { cost: powerup.cost, costDecorator: str2, status: calculatePowerupCardStatus, style: tmp.statusContainer })];
   obj5[1] = items2;
   items1[1] = closure_9(View, obj5);
   obj4[0] = items1;
@@ -71,10 +71,10 @@ function GuildPowerupsBottomSheetLevelBody(powerup) {
   let c0;
   const tmp = callback3();
   c0 = tmp;
-  const arr = importDefault(11949)(powerup.powerup);
+  const arr = importDefault(11950)(powerup.powerup);
   return callback(View, {
     style: tmp.levelContainer,
-    children: importDefault(11949)(powerup.powerup).map((children) => {
+    children: importDefault(11950)(powerup.powerup).map((children) => {
       let obj = _undefined(outer1_2[18]);
       obj = { style: _undefined.perkContainer, children: null };
       const iconForPerk = obj.getIconForPerk(children.perkIcon);
@@ -138,8 +138,8 @@ function GuildPowerupsBottomSheetFooter(arg0) {
   let importDefault;
   let dependencyMap;
   const tmp = callback3();
-  const tmp4 = importDefault(11936)(guildId);
-  ({ showToggleButton, showConfigureButton, isPowerupActive } = importDefault(11954)(guildId, powerup));
+  const tmp4 = importDefault(11937)(guildId);
+  ({ showToggleButton, showConfigureButton, isPowerupActive } = importDefault(11955)(guildId, powerup));
   if (showConfigureButton) {
     let result = powerup.skuId !== isPowerupActive(4233).GUILD_POWERUP_TAG_SKU_ID;
     if (!result) {
@@ -149,11 +149,11 @@ function GuildPowerupsBottomSheetFooter(arg0) {
     showConfigureButton = result;
     tmp6 = isPowerupActive;
   }
-  const tmp5 = importDefault(11954)(guildId, powerup);
-  ({ disabled, reason } = importDefault(11955)(guildId, powerup, isPowerupActive));
-  const tmp8 = importDefault(11955)(guildId, powerup, isPowerupActive);
-  ({ onActivate: c1, isLoading } = importDefault(11956)(guildId, powerup));
-  dependencyMap = tmp2(11960)(guildId, powerup);
+  const tmp5 = importDefault(11955)(guildId, powerup);
+  ({ disabled, reason } = importDefault(11956)(guildId, powerup, isPowerupActive));
+  const tmp8 = importDefault(11956)(guildId, powerup, isPowerupActive);
+  ({ onActivate: c1, isLoading } = importDefault(11957)(guildId, powerup));
+  dependencyMap = tmp2(11961)(guildId, powerup);
   if (tmp4) {
     let tmp14 = !showConfigureButton;
     const hasItem = set.has(powerup.skuId);
@@ -186,7 +186,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
     if (tmp21) {
       const obj1 = { text: null };
       obj1[0] = reason;
-      tmp21 = callback(tmp2(11966), obj1);
+      tmp21 = callback(tmp2(11967), obj1);
     }
     items[1] = tmp21;
     if (showConfigureButton) {
@@ -273,8 +273,8 @@ export default function GuildPowerupsBottomSheet(arg0) {
   let guildId;
   let powerup;
   ({ guildId, powerup } = arg0);
-  let obj = require(11964) /* ModalType */;
-  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(11964) /* ModalType */.ModalType.DETAIL);
+  let obj = require(11965) /* ModalType */;
+  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(11965) /* ModalType */.ModalType.DETAIL);
   obj = { startExpanded: true, children: null };
   obj = { style: callback3().container, children: null };
   const items = [callback(GuildPowerupsBottomSheetHeader, { guildId, powerup }), callback(GuildPowerupsBottomSheetBody, { guildId, powerup }), callback(GuildPowerupsBottomSheetFooter, { guildId, powerup })];

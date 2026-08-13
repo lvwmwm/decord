@@ -1,10 +1,10 @@
-// Module ID: 16457
-// Function ID: 16458
+// Module ID: 16448
+// Function ID: 16449
 // Name: DEFAULT_EXPIRATION_DAYS
 // Dependencies: [1391, 3998, 7803, 4062, 1236, 9922, 709, 9601, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 16457 (DEFAULT_EXPIRATION_DAYS)
+// Module 16448 (DEFAULT_EXPIRATION_DAYS)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 

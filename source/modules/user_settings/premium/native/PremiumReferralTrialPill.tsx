@@ -1,10 +1,10 @@
-// Module ID: 12754
-// Function ID: 12755
+// Module ID: 12755
+// Function ID: 12756
 // Name: PremiumReferralTrialPill
 // Dependencies: [17, 21, 4342, 712, 4338, 1236, 2]
 // Exports: PremiumReferralTrialPill
 
-// Module 12754 (PremiumReferralTrialPill)
+// Module 12755 (PremiumReferralTrialPill)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

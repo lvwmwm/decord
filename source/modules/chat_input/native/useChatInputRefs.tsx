@@ -1,10 +1,10 @@
-// Module ID: 11429
-// Function ID: 11430
+// Module ID: 11430
+// Function ID: 11431
 // Name: useChatInputRefs
-// Dependencies: [19, 5259, 4681, 7187, 7192, 1922, 8660, 676, 4779, 4335, 5756, 4205, 12, 11430, 11432, 11433, 11436, 8401, 7281, 4207, 1626, 1497, 500, 4208, 1891, 698, 11103, 6965, 11105, 11437, 7188, 11438, 4679, 11475, 6047, 2]
+// Dependencies: [19, 5259, 4681, 7187, 7192, 1922, 8660, 676, 4779, 4335, 5756, 4205, 12, 11431, 11433, 11434, 11437, 8401, 7281, 4207, 1626, 1497, 500, 4208, 1891, 698, 11104, 6965, 11106, 11438, 7188, 11439, 4679, 11476, 6047, 2]
 // Exports: default
 
-// Module 11429 (useChatInputRefs)
+// Module 11430 (useChatInputRefs)
 import useKeyboardType from "useKeyboardType";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import { DraftType } from "handleChanged";
@@ -313,7 +313,7 @@ export default function useChatInputRefs(chatInputProps) {
           threadCreationCallback = outer1_13.current.threadCreationCallback;
           if (null != threadCreationCallback) {
             const text = chatInputTextFieldHeight(ref[13]).getText(outer1_8.current, outer1_10.current, (text) => {
-              let obj = chatInputProps(11438);
+              let obj = chatInputProps(11439);
               obj = { text, params: null };
               obj = {};
               const merged = Object.assign(outer2_13.current);
@@ -324,8 +324,8 @@ export default function useChatInputRefs(chatInputProps) {
                 const obj1 = { text: null, threadCreationCallback: null };
                 obj1[0] = result.content;
                 obj1[1] = threadCreationCallback;
-                const result1 = chatInputProps(11438).chatInputCreateThread(obj1);
-                const tmpResult = chatInputProps(11438);
+                const result1 = chatInputProps(11439).chatInputCreateThread(obj1);
+                const tmpResult = chatInputProps(11439);
               }
             });
             tmp.current.sending = false;
@@ -357,7 +357,7 @@ export default function useChatInputRefs(chatInputProps) {
                   }
                 } else {
                   closure_1.cancel();
-                  let obj = threadCreationCallback(11438);
+                  let obj = threadCreationCallback(11439);
                   obj = { text: null, params: null };
                   obj[0] = arg0;
                   obj = {};

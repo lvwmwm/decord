@@ -1,9 +1,9 @@
-// Module ID: 13014
-// Function ID: 13015
+// Module ID: 13015
+// Function ID: 13016
 // Name: updateState
-// Dependencies: [6983, 1218, 4562, 1979, 6923, 676, 3, 13015, 589, 1473, 709, 2]
+// Dependencies: [6983, 1218, 4562, 1979, 6923, 676, 3, 13016, 589, 1473, 709, 2]
 
-// Module 13014 (updateState)
+// Module 13015 (updateState)
 import handleClearCaches from "handleClearCaches";
 import fetchFingerprint from "fetchFingerprint";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -39,7 +39,7 @@ function updateState() {
             const obj1 = { state: null, delayMs: null };
             obj1[0] = tmp13.WAITING_FOR_NETWORK;
             if (handleClearCaches.hasCache()) {
-              let obj15 = state(13015);
+              let obj15 = state(13016);
               let num2 = obj15.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num2 == null) {
                 num2 = 10000;
@@ -70,7 +70,7 @@ function updateState() {
             const obj5 = { state: null, delayMs: null };
             obj5[0] = tmp13.WAITING_FOR_NETWORK;
             if (handleClearCaches.hasCache()) {
-              let obj10 = state(13015);
+              let obj10 = state(13016);
               let num = obj10.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num == null) {
                 num = 10000;

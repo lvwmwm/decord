@@ -1,17 +1,17 @@
-// Module ID: 13890
-// Function ID: 13891
+// Module ID: 13881
+// Function ID: 13882
 // Name: useRequestGatewaySocket
-// Dependencies: [19, 10430, 675, 2]
+// Dependencies: [19, 10446, 675, 2]
 // Exports: useRequestGatewaySocket
 
-// Module 13890 (useRequestGatewaySocket)
+// Module 13881 (useRequestGatewaySocket)
 import noop from "noop";
 
 const result = require("setRequestedBy").fileFinishedImporting("modules/gateway/useRequestGatewaySocket.tsx");
 
 export const useRequestGatewaySocket = function useRequestGatewaySocket(arg0) {
   const importDefault = arg0;
-  const canUIRequestGatewaySocket = importDefault(10430).useCanUIRequestGatewaySocket();
+  const canUIRequestGatewaySocket = importDefault(10446).useCanUIRequestGatewaySocket();
   const items = [arg0, canUIRequestGatewaySocket];
   const effect = React.useEffect(() => {
     if (canUIRequestGatewaySocket) {

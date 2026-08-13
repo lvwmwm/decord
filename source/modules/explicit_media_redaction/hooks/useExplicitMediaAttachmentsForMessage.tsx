@@ -1,10 +1,10 @@
-// Module ID: 11115
-// Function ID: 11116
+// Module ID: 11116
+// Function ID: 11117
 // Name: useRedactableMediaAttachmentsForMessage
 // Dependencies: [4562, 647, 9901, 5950, 5955, 2]
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 11115 (useRedactableMediaAttachmentsForMessage)
+// Module 11116 (useRedactableMediaAttachmentsForMessage)
 import reinjectEphemerals from "reinjectEphemerals";
 
 const require = arg1;

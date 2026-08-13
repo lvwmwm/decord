@@ -1,10 +1,10 @@
-// Module ID: 15543
-// Function ID: 15544
+// Module ID: 15534
+// Function ID: 15535
 // Name: getGuildBarNeighbors
 // Dependencies: [5196, 5198, 2]
 // Exports: default
 
-// Module 15543 (getGuildBarNeighbors)
+// Module 15534 (getGuildBarNeighbors)
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 
 const require = arg1;

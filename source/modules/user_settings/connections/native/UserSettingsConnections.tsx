@@ -1,10 +1,10 @@
-// Module ID: 14279
-// Function ID: 14280
+// Module ID: 14270
+// Function ID: 14271
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [19, 17, 5290, 1218, 5039, 1994, 676, 21, 4342, 712, 4278, 589, 12542, 5776, 5164, 4310, 14278, 2007, 10452, 14280, 8012, 14283, 4753, 14284, 2]
+// Dependencies: [19, 17, 5290, 1218, 5039, 1994, 676, 21, 4342, 712, 4278, 589, 12543, 5776, 5164, 4310, 14269, 2007, 10454, 14271, 8012, 14274, 4753, 14275, 2]
 // Exports: UserSettingsConnections
 
-// Module 14279 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 14270 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import EmptyStateCard from "EmptyStateCard";
 import { ActivityIndicator } from "asyncRequireImpl";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
@@ -50,7 +50,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   authorizedApps = stateFromStoresObject1.authorizedApps;
   const obj3 = selectedPlatformType(589);
   const tmp2 = importDefault;
-  const tmp7Result = importDefault(12542)(id.getId(), { includeHidden: true });
+  const tmp7Result = importDefault(12543)(id.getId(), { includeHidden: true });
   const prop = tmp7Result.filteredAppIdentities;
   const items3 = [authorizedAppsFetchState];
   const effect = authorizedAppsFetchState.useEffect(() => {
@@ -80,7 +80,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (!tmp7Result.isLoading) {
       if (0 === accounts.length) {
         if (0 === prop.length) {
-          let tmp14 = callback(tmp2(14280), {});
+          let tmp14 = callback(tmp2(14271), {});
         }
       }
       obj = { style: null, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 10566
-// Function ID: 10567
+// Module ID: 10568
+// Function ID: 10569
 // Name: getURLForApplication
 // Dependencies: [7635, 7633, 2]
 // Exports: default, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 10566 (getURLForApplication)
+// Module 10568 (getURLForApplication)
 import reset from "reset";
 import initialize from "initialize";
 

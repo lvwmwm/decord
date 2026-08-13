@@ -1,8 +1,8 @@
-// Module ID: 11254
-// Function ID: 11255
+// Module ID: 11255
+// Function ID: 11256
 // Dependencies: [5035, 1910, 676, 709, 530, 6000, 2]
 
-// Module 11254
+// Module 11255
 import _handleConnectionOpen from "_handleConnectionOpen";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Endpoints } from "ME";

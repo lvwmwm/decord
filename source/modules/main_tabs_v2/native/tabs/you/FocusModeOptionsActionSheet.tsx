@@ -1,10 +1,10 @@
-// Module ID: 15580
-// Function ID: 15581
+// Module ID: 15571
+// Function ID: 15572
 // Name: label
 // Dependencies: [19, 21, 687, 1236, 9813, 5804, 5807, 5414, 2]
 // Exports: default
 
-// Module 15580 (label)
+// Module 15571 (label)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -57,7 +57,7 @@ items[4] = {
     return intl.string(require(1236) /* getSystemLocale */.t["755t4q"]);
   }
 };
-const obj3 = { duration: "Array", label: "Array" };
+const obj3 = { duration: "Array", label: 0 };
 obj3[1] = function label() {
   const intl = require(1236) /* getSystemLocale */.intl;
   return intl.string(require(1236) /* getSystemLocale */.t["46dqJY"]);

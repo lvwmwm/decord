@@ -1,10 +1,10 @@
-// Module ID: 10590
-// Function ID: 10591
+// Module ID: 10592
+// Function ID: 10593
 // Name: _installApplicationOnDemandIfNeeded
-// Dependencies: [5, 4368, 4383, 676, 10591, 5769, 9591, 4539, 4205, 10592, 2]
+// Dependencies: [5, 4368, 4383, 676, 10593, 5769, 9591, 4539, 4205, 10594, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 10590 (_installApplicationOnDemandIfNeeded)
+// Module 10592 (_installApplicationOnDemandIfNeeded)
 import fetchApplication from "fetchApplication";
 import createExecutable from "createExecutable";
 import addApplication from "addApplication";
@@ -94,7 +94,7 @@ function _installApplicationOnDemandIfNeeded() {
                   obj4[0] = Promise.resolve({ isAuthorized: true });
                   return obj4;
                 }
-                obj11 = callback(10591);
+                obj11 = callback(10593);
               }
             } else if (arg0 === 1) {
               application = 3;

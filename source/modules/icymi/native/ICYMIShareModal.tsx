@@ -1,10 +1,10 @@
-// Module ID: 15699
-// Function ID: 15700
+// Module ID: 15690
+// Function ID: 15691
 // Name: Screenshot
-// Dependencies: [32, 5, 19, 17, 1391, 4681, 4680, 676, 9669, 4335, 21, 4342, 712, 9009, 1236, 15700, 4062, 1493, 4193, 8440, 15701, 4889, 4162, 4072, 5409, 11138, 11147, 4755, 4550, 7351, 1370, 7188, 8405, 514, 4892, 6965, 8406, 1628, 500, 5317, 8431, 5310, 11130, 2]
+// Dependencies: [32, 5, 19, 17, 1391, 4681, 4680, 676, 9669, 4335, 21, 4342, 712, 9009, 1236, 15691, 4062, 1493, 4193, 8440, 15692, 4889, 4162, 4072, 5409, 11139, 11148, 4755, 4550, 7351, 1370, 7188, 8405, 514, 4892, 6965, 8406, 1628, 500, 5317, 8431, 5310, 11131, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 15699 (Screenshot)
+// Module 15690 (Screenshot)
 import dispatcher from "dispatcher";
 import handleChanged from "handleChanged";
 import useGradientBottom from "useGradientBottom";
@@ -53,7 +53,7 @@ function Screenshot(setUri) {
   const tmp4 = ref(4193)();
   const obj3 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj4 = { dark: null, light: null };
-  const tmp6 = ref(15701);
+  const tmp6 = ref(15692);
   obj4[0] = setUri(4162).OverlayOpacity.LEVEL_7;
   obj4[1] = setUri(4162).OverlayOpacity.LEVEL_8;
   obj3[4] = obj4;
@@ -209,7 +209,7 @@ class ICYMIShareModal {
                     let closure_0 = arg0;
                     let c2 = 0;
                     let c1 = 0;
-                    return (/* F120739 */ function*() { ... })();
+                    return (/* F120607 */ function*() { ... })();
                   });
                   return function(arg0) {
                     const self = this;

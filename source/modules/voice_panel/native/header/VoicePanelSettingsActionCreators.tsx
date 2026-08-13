@@ -1,10 +1,10 @@
-// Module ID: 16268
-// Function ID: 16269
+// Module ID: 16259
+// Function ID: 16260
 // Name: VOICE_PANEL_SETTINGS_ACTION_SHEET_KEY
-// Dependencies: [4310, 16269, 2007, 2]
+// Dependencies: [4310, 16260, 2007, 2]
 // Exports: closeVoicePanelSettingsActionSheet, openVoicePanelSettingsActionSheet
 
-// Module 16268 (VOICE_PANEL_SETTINGS_ACTION_SHEET_KEY)
+// Module 16259 (VOICE_PANEL_SETTINGS_ACTION_SHEET_KEY)
 const VoicePanelSettingsActionSheet = "VoicePanelSettingsActionSheet";
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelSettingsActionCreators.tsx");
 
@@ -15,5 +15,5 @@ export const closeVoicePanelSettingsActionSheet = function closeVoicePanelSettin
 export const openVoicePanelSettingsActionSheet = function openVoicePanelSettingsActionSheet(guildId, channelId) {
   let obj = importDefault(4310);
   obj = { guildId, channelId };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(16269, dependencyMap.paths), VoicePanelSettingsActionSheet, obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(16260, dependencyMap.paths), VoicePanelSettingsActionSheet, obj);
 };

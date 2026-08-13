@@ -1,10 +1,10 @@
-// Module ID: 15319
-// Function ID: 15320
+// Module ID: 15310
+// Function ID: 15311
 // Name: FavoritesGuildCategorySettings
 // Dependencies: [32, 19, 17, 1394, 1429, 21, 4342, 712, 1499, 589, 1913, 9758, 8431, 1236, 4683, 1297, 4753, 7835, 5807, 5414, 4301, 9725, 9726, 2]
 // Exports: default
 
-// Module 15319 (FavoritesGuildCategorySettings)
+// Module 15310 (FavoritesGuildCategorySettings)
 import _slicedToArray from "_slicedToArray";
 import TableRowInner from "TableRowInner";
 import { ScrollView } from "TextInput";

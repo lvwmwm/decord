@@ -1,10 +1,10 @@
-// Module ID: 10957
-// Function ID: 10958
+// Module ID: 10959
+// Function ID: 10960
 // Name: fetchBountiesAndDispatch
-// Dependencies: [5, 4436, 7205, 676, 709, 7233, 10958, 7221, 4242, 6971, 7225, 530, 7204, 2]
+// Dependencies: [5, 4436, 7205, 676, 709, 7222, 10430, 7221, 4242, 6971, 7226, 530, 7204, 2]
 // Exports: claimBountyReward, fetchBountyPreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 10957 (fetchBountiesAndDispatch)
+// Module 10959 (fetchBountiesAndDispatch)
 import AdCreativeType from "AdCreativeType";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import set from "set";
@@ -61,10 +61,13 @@ function _fetchBountiesAndDispatch() {
               let tmpResult = tmp(tmp2[6]);
               const bountyFromServerResult = tmpResult.bountyFromServer(creative.creative.creative_content);
               tmpResult = tmp(tmp2[7]);
-              const obj = { fetchedAt: null, requestId: null, adCreativeId: null };
+              let obj = { fetchedAt: null, requestId: null, creative: null };
               obj[0] = closure_1;
               obj[1] = request_id.request_id;
-              obj[2] = bountyFromServerResult.id;
+              obj = { type: null, bounty: null };
+              obj[0] = tmp(tmp2[5]).AdCreativeType.BOUNTY;
+              obj[1] = bountyFromServerResult;
+              obj[2] = obj;
               const result = map.set(bountyFromServerResult.id, tmpResult.questAdDecisionFromAdDecision(creative, obj));
               const items = [bountyFromServerResult];
               return items;
@@ -134,7 +137,7 @@ function _fetchQuestHomeBounties() {
                 let uuid = tmp2;
                 let obj5 = outer1_0(6971);
                 uuid = yield obj5.getSession();
-                const uuid2 = outer1_0(7225).getOrRefreshAdSession();
+                const uuid2 = outer1_0(7226).getOrRefreshAdSession();
                 const HTTP = outer1_0(530).HTTP;
                 const obj3 = { url: null, query: null, rejectWithError: false, context: null };
                 obj3[0] = outer1_6.QUESTS_GET_DECISIONS;
@@ -439,10 +442,10 @@ export const fetchBountyPreview = function fetchBountyPreview(arr, c3) {
   return applyArgumentsResult;
 };
 export const setBountyVideoProgress = function setBountyVideoProgress(bountyId, arg1) {
-  let obj = require(7225) /* getOrRefreshAdSession */;
+  let obj = require(7226) /* getOrRefreshAdSession */;
   if (null != obj.getCurrentAdSession()) {
-    const orRefreshAdSession = require(7225) /* getOrRefreshAdSession */.getOrRefreshAdSession(true);
-    const tmpResult = require(7225) /* getOrRefreshAdSession */;
+    const orRefreshAdSession = require(7226) /* getOrRefreshAdSession */.getOrRefreshAdSession(true);
+    const tmpResult = require(7226) /* getOrRefreshAdSession */;
     obj = { type: "BOUNTIES_VIDEO_PROGRESS_UPDATE", bountyId: null, timestampSec: null, maxTimestampSec: null, duration: null };
     obj[1] = bountyId;
     ({ timestampSec: obj4[2], maxTimestampSec: obj4[3], duration: obj4[4] } = arg1);

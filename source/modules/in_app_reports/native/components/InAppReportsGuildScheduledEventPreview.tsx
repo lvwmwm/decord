@@ -1,10 +1,10 @@
-// Module ID: 12709
-// Function ID: 12710
+// Module ID: 12710
+// Function ID: 12711
 // Name: GuildScheduledEventPreview
 // Dependencies: [19, 17, 1910, 21, 4342, 712, 589, 4191, 4338, 1236, 5819, 2]
 // Exports: default
 
-// Module 12709 (GuildScheduledEventPreview)
+// Module 12710 (GuildScheduledEventPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

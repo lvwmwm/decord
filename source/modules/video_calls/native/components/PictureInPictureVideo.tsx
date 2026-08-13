@@ -1,9 +1,9 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10652
+// Function ID: 10653
 // Name: areParticipantsEqual
-// Dependencies: [32, 19, 17, 1390, 4358, 1218, 4393, 1979, 5178, 10630, 9789, 4363, 21, 4342, 1297, 712, 9798, 12, 10627, 10651, 589, 4538, 10652, 10655, 10665, 10681, 10682, 10689, 10623, 10723, 4065, 8282, 9112, 10637, 10633, 10636, 1493, 500, 8944, 2]
+// Dependencies: [32, 19, 17, 1390, 4358, 1218, 4393, 1979, 5178, 10632, 9789, 4363, 21, 4342, 1297, 712, 9798, 12, 10629, 10653, 589, 4538, 10654, 10657, 10667, 10683, 10684, 10691, 10625, 10725, 4065, 8282, 9112, 10639, 10635, 10638, 1493, 500, 8944, 2]
 
-// Module 10650 (areParticipantsEqual)
+// Module 10652 (areParticipantsEqual)
 import registerAsset from "registerAsset";
 import importAllResult from "isWatchTogetherApplication";
 import get_ActivityIndicator from "apply";
@@ -348,13 +348,13 @@ const memoResult = importAllResult.memo((arg0) => {
   let width;
   ({ channel, pipParticipant, selfParticipant } = arg0);
   const tmp = callback4();
-  let obj = require(10637) /* useIsViewingActivity */;
+  let obj = require(10639) /* useIsViewingActivity */;
   obj = { channelId: channel.id };
   const isViewingActivity = obj.useIsViewingActivity(obj);
-  let obj2 = require(10633) /* useShouldForcePipOrientation */;
+  let obj2 = require(10635) /* useShouldForcePipOrientation */;
   const shouldForcePipOrientation = obj2.useShouldForcePipOrientation({ channel });
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
-  const tmp6 = importDefault(10636)(obj);
+  const tmp6 = importDefault(10638)(obj);
   const obj1 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background, children: null };
   const items = [isViewingActivity ? tmp.pipFab : tmp.pip, , , ];
   ({ width, height } = importDefault(1493)());

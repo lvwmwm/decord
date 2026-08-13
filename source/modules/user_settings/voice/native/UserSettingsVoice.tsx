@@ -1,10 +1,10 @@
-// Module ID: 10818
-// Function ID: 10819
+// Module ID: 10820
+// Function ID: 10821
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 10819, 10820, 21, 4342, 5807, 10821, 4753, 10822, 10824, 4338, 1236, 10828, 10829, 10831, 5368, 2]
+// Dependencies: [19, 17, 10821, 10822, 21, 4342, 5807, 10823, 4753, 10824, 10826, 4338, 1236, 10830, 10831, 10833, 5368, 2]
 // Exports: UserSettingsTableRowGroup, default
 
-// Module 10818 (UserSettingsVoice)
+// Module 10820 (UserSettingsVoice)
 import "noop";
 import { View } from "set";
 import { isMobileOverlaySupported } from "getUserAgnosticState";
@@ -21,22 +21,22 @@ const result = require("getUserAgnosticState").fileFinishedImporting("modules/us
 
 export default function UserSettingsVoice() {
   const tmp = callback2();
-  let obj = importDefault(10821);
+  let obj = importDefault(10823);
   let nonContextualStreamOutputPresent = obj.useConfig({ location: "NewUserSettingsVoice" }).nonContextualStreamOutputPresent;
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(10822), {}), , , , , , ];
+  const items = [callback(importDefault(10824), {}), , , , , , ];
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp4(tmp2(10824), {});
+    nonContextualStreamOutputPresent = tmp4(tmp2(10826), {});
   }
   items[1] = nonContextualStreamOutputPresent;
   obj = { style: tmp.tableRow, variant: "text-sm/medium", children: null };
   const intl = tmp7(1236).intl;
   obj[2] = intl.format(require(1236) /* getSystemLocale */.t["V+B3FH"], { guideURL: closure_5 });
   items[2] = callback(require(4338) /* Text */.Text, obj);
-  items[3] = callback(importDefault(10828), {});
+  items[3] = callback(importDefault(10830), {});
   const obj2 = { spacing: 24, children: null };
-  items[4] = isMobileOverlaySupported() && callback(importDefault(10829), {});
-  items[5] = callback(importDefault(10831), {});
+  items[4] = isMobileOverlaySupported() && callback(importDefault(10831), {});
+  items[5] = callback(importDefault(10833), {});
   items[6] = callback(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true });
   obj2[1] = items;
   obj[1] = closure_7(require(4753) /* Stack */.Stack, obj2);

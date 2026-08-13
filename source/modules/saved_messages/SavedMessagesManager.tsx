@@ -1,9 +1,9 @@
-// Module ID: 16646
-// Function ID: 16647
+// Module ID: 16637
+// Function ID: 16638
 // Name: _refreshSavedMessages
-// Dependencies: [5, 8423, 11156, 16647, 5301, 2]
+// Dependencies: [5, 8423, 11157, 16638, 5301, 2]
 
-// Module 16646 (_refreshSavedMessages)
+// Module 16637 (_refreshSavedMessages)
 import set from "set";
 import "initialize";
 
@@ -43,7 +43,7 @@ function _refreshSavedMessages() {
               dependencyMap = 1;
               c2 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(11156).fetchAndUpdateSavedMessages();
+              obj1[0] = outer1_0(11157).fetchAndUpdateSavedMessages();
               return obj1;
             } else {
               c2 = 3;
@@ -53,7 +53,7 @@ function _refreshSavedMessages() {
           c2 = 3;
           throw arg1;
         } else if (arg0 !== 2) {
-          obj = callback(16647);
+          obj = callback(16638);
           const result = obj.showOverdueRemindersToast();
         }
         c2 = 3;

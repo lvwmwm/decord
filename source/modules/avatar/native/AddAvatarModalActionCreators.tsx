@@ -1,10 +1,10 @@
-// Module ID: 16589
-// Function ID: 16590
+// Module ID: 16580
+// Function ID: 16581
 // Name: handlePressNext
-// Dependencies: [16590, 676, 698, 8559, 4683, 1236, 8313, 8315, 4550, 16591, 2007, 12121, 2]
+// Dependencies: [16581, 676, 698, 8559, 4683, 1236, 8313, 8315, 4550, 16582, 2007, 12122, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 16589 (handlePressNext)
+// Module 16580 (handlePressNext)
 import { ADD_AVATAR_MODAL_KEY } from "ADD_AVATAR_MODAL_KEY";
 import { AnalyticEvents } from "ME";
 
@@ -27,8 +27,8 @@ export const handlePressNext = function handlePressNext(pendingImage, first, fn)
   } else {
     obj = importDefault(4550);
     obj.popWithKey(ADD_AVATAR_MODAL_KEY);
-    require(12121) /* _startContactSyncForDiscoverability */.nextOnboardingStep({ skip: false });
-    const obj2 = require(12121) /* _startContactSyncForDiscoverability */;
+    require(12122) /* _startContactSyncForDiscoverability */.nextOnboardingStep({ skip: false });
+    const obj2 = require(12122) /* _startContactSyncForDiscoverability */;
   }
 };
 export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
@@ -61,5 +61,5 @@ export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
   importDefault(4683).show(obj);
 };
 export const openAddAvatarModal = function openAddAvatarModal() {
-  importDefault(4550).pushLazy(require(2007) /* asyncRequireImpl */(16591, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
+  importDefault(4550).pushLazy(require(2007) /* asyncRequireImpl */(16582, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
 };

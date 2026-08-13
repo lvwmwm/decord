@@ -1,11 +1,11 @@
-// Module ID: 11727
-// Function ID: 11728
+// Module ID: 11728
+// Function ID: 11729
 // Name: handleInviteDisabledPress
-// Dependencies: [19, 17, 1391, 1980, 1910, 1979, 9844, 676, 21, 4342, 712, 11728, 2007, 4685, 1499, 11729, 8540, 11730, 11768, 5419, 7796, 9772, 1236, 9094, 4755, 6050, 4083, 11802, 589, 9117, 9114, 11803, 11804, 11806, 2]
+// Dependencies: [19, 17, 1391, 1980, 1910, 1979, 9844, 676, 21, 4342, 712, 11729, 2007, 4685, 1499, 11730, 8540, 11731, 11769, 5419, 7796, 9772, 1236, 9094, 4755, 6050, 4083, 11803, 589, 9117, 9114, 11804, 11805, 11807, 2]
 
-// Module 11727 (handleInviteDisabledPress)
+// Module 11728 (handleInviteDisabledPress)
 import importAllResult from "SPRING_CONFIG";
-import { View } from "module_11730";
+import { View } from "module_11731";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -164,9 +164,9 @@ const memoResult = importAllResult.memo(function ConnectedGuildSearchAndInviteIn
     const channels = outer1_6.getChannels(guild.id);
     const result = guild(outer1_2[30]).handleOpenInviteActionsheet(guild, channelId, channels, outer1_11.GUILD_HEADER);
   });
-  const shouldShowInvitesDisabledNotif = guild(11803).useShouldShowInvitesDisabledNotif(guild);
-  const obj2 = guild(11803);
-  const tmp5 = importDefault(11806)(guild);
+  const shouldShowInvitesDisabledNotif = guild(11804).useShouldShowInvitesDisabledNotif(guild);
+  const obj2 = guild(11804);
+  const tmp5 = importDefault(11807)(guild);
   obj = { guildId: guild.id, canInvite: stateFromStores, invitesDisabled: shouldShowInvitesDisabledNotif, onInvitePress: tmp2, onEventsPress: tmp5.handlePress, onEventsLongPress: tmp5.handleLongPress, hasUnreadEvents: tmp5.hasUnread, useEventsButton: null, useButtonComponent: null };
   if (flag2) {
     flag2 = tmp4;

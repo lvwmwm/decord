@@ -1,10 +1,10 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12283
+// Function ID: 12284
 // Name: onConnectToConsole
-// Dependencies: [19, 676, 4164, 1377, 10453, 10518, 10850, 2]
+// Dependencies: [19, 676, 4164, 1377, 10455, 10520, 10852, 2]
 // Exports: onConnectToConsole, useOnConnectToConsole
 
-// Module 12282 (onConnectToConsole)
+// Module 12283 (onConnectToConsole)
 import noop from "noop";
 import ME from "ME";
 
@@ -18,16 +18,16 @@ export const onConnectToConsole = function onConnectToConsole(channel, closure_0
   const result = require(4164) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1377) /* DismissibleContent */.DismissibleContent.DONUT_MOBILE_NUX);
   if (closure_0.twoWayLink) {
     if (!closure_0.revoked) {
-      tmp(10850).beginConsoleTransfer(channel, closure_0.type);
+      tmp(10852).beginConsoleTransfer(channel, closure_0.type);
     }
   }
   const type = closure_0.type;
   if (constants2.XBOX === type) {
     const items = [constants.CHANNEL_CALL];
-    return importDefault(10453).showModal(items);
+    return importDefault(10455).showModal(items);
   } else {
     const items1 = [constants.CHANNEL_CALL];
-    return importDefault(10518).showModal(items1, closure_0.type);
+    return importDefault(10520).showModal(items1, closure_0.type);
   }
   const obj = require(4164) /* UNSAFE_isDismissibleContentDismissed */;
   tmp = require;

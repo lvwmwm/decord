@@ -1,14 +1,14 @@
-// Module ID: 10559
-// Function ID: 10560
+// Module ID: 10561
+// Function ID: 10562
 // Name: formatWatchRemainingDurationShort
-// Dependencies: [5202, 7228, 1236, 10560, 2]
+// Dependencies: [5202, 7229, 1236, 10562, 2]
 // Exports: getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 10559 (formatWatchRemainingDurationShort)
+// Module 10561 (formatWatchRemainingDurationShort)
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 
 function formatWatchRemainingDurationShort(questTaskDetails, truncate) {
-  let obj = require(7228) /* getApplicationIdsByTaskTypes */;
+  let obj = require(7229) /* getApplicationIdsByTaskTypes */;
   const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
   let num = 60;
   truncate = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
@@ -46,7 +46,7 @@ export const getVideoQuestWatchCtaText = function getVideoQuestWatchCtaText(ques
     obj[0] = formatWatchRemainingDurationShort(questTaskDetails);
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["pF/deA"], obj);
   } else {
-    let obj1 = importDefault(10560);
+    let obj1 = importDefault(10562);
     obj = { location: null };
     obj[0] = QuestsExperimentLocations.QUESTS_CARD;
     const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -60,7 +60,7 @@ export const getVideoQuestWatchCtaText = function getVideoQuestWatchCtaText(ques
 export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWatchCtaAccessibilityLabel(questTaskDetails) {
   let minutes;
   let seconds;
-  let obj = require(7228) /* getApplicationIdsByTaskTypes */;
+  let obj = require(7229) /* getApplicationIdsByTaskTypes */;
   const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
   ({ minutes, seconds } = remainingTaskTime);
   if (minutes > 0) {

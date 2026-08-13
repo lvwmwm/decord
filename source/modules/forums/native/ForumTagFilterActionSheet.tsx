@@ -1,10 +1,10 @@
-// Module ID: 12181
-// Function ID: 12182
+// Module ID: 12182
+// Function ID: 12183
 // Name: EmojiIcon
-// Dependencies: [32, 19, 5216, 11447, 676, 21, 4342, 7271, 4771, 5804, 5436, 1236, 9025, 5439, 5807, 8497, 589, 5400, 1435, 2]
+// Dependencies: [32, 19, 5216, 11448, 676, 21, 4342, 7271, 4771, 5804, 5436, 1236, 9025, 5439, 5807, 8497, 589, 5400, 1435, 2]
 // Exports: default
 
-// Module 12181 (EmojiIcon)
+// Module 12182 (EmojiIcon)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "set";
 import getEmojiToGroupId from "getEmojiToGroupId";

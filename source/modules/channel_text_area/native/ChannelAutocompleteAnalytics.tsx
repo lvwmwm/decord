@@ -1,10 +1,10 @@
-// Module ID: 11822
-// Function ID: 11823
+// Module ID: 11823
+// Function ID: 11824
 // Name: iOSTrackAutocompleteOpen
 // Dependencies: [676, 698, 4539, 2]
 // Exports: iOSTrackAutocompleteOpen, iOSTrackAutocompleteSelect
 
-// Module 11822 (iOSTrackAutocompleteOpen)
+// Module 11823 (iOSTrackAutocompleteOpen)
 import { AnalyticEvents } from "ME";
 
 const result = require("collectGuildAnalyticsMetadata").fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteAnalytics.tsx");

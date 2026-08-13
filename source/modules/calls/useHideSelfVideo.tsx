@@ -1,10 +1,10 @@
-// Module ID: 16367
-// Function ID: 16368
+// Module ID: 16358
+// Function ID: 16359
 // Name: useHideSelfVideo
 // Dependencies: [1218, 4393, 676, 4406, 589, 9205, 2]
 // Exports: default
 
-// Module 16367 (useHideSelfVideo)
+// Module 16358 (useHideSelfVideo)
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { VideoToggleState } from "ME";

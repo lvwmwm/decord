@@ -1,9 +1,9 @@
-// Module ID: 13076
-// Function ID: 13077
+// Module ID: 13077
+// Function ID: 13078
 // Name: getIconURL
 // Dependencies: [4368, 1236, 5041, 2]
 
-// Module 13076 (getIconURL)
+// Module 13077 (getIconURL)
 import "createExecutable";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 16344
+// Function ID: 16345
 // Name: SoundboardButton
-// Dependencies: [19, 21, 4342, 712, 11703, 16338, 16354, 16339, 1236, 5821, 7754, 2]
+// Dependencies: [19, 21, 4342, 712, 11704, 16329, 16345, 16330, 1236, 5821, 7754, 2]
 // Exports: default
 
-// Module 16353 (SoundboardButton)
+// Module 16344 (SoundboardButton)
 import noop from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -28,10 +28,10 @@ export default function SoundboardButton(arg0) {
   let wrapperSpecs;
   ({ props, wrapperSpecs } = arg0);
   const tmp3 = createCacheKey();
-  let obj = require(16338) /* useVoicePanelButtonStyles */;
+  let obj = require(16329) /* useVoicePanelButtonStyles */;
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  const tmp6 = importDefault(16354);
-  ({ disabled, handlePress, visible } = importDefault(16354)(React.useContext(importDefault(11703)).channelId, require(16354) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
+  const tmp6 = importDefault(16345);
+  ({ disabled, handlePress, visible } = importDefault(16345)(React.useContext(importDefault(11704)).channelId, require(16345) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
   if (disabled) {
     let color = tmp(712).colors.ICON_MUTED;
   } else {
@@ -43,7 +43,7 @@ export default function SoundboardButton(arg0) {
     obj[0] = handlePress;
     obj[1] = disabled;
     obj[2] = props;
-    let tmpResult = tmp(16339);
+    let tmpResult = tmp(16330);
     const intl = tmp4(1236).intl;
     obj[3] = intl.string(tmp4(1236).t["6EJvHt"]);
     obj = { style: null };

@@ -1,10 +1,10 @@
-// Module ID: 12000
-// Function ID: 12001
+// Module ID: 12001
+// Function ID: 12002
 // Name: GuildPowerupsRecentActivityRow
-// Dependencies: [17, 4334, 21, 4342, 712, 8240, 12001, 4031, 589, 8115, 7740, 12003, 12005, 1297, 4338, 12007, 1236, 2]
+// Dependencies: [17, 4334, 21, 4342, 712, 8240, 12002, 4031, 589, 8115, 7740, 12004, 12006, 1297, 4338, 12008, 1236, 2]
 // Exports: default
 
-// Module 12000 (GuildPowerupsRecentActivityRow)
+// Module 12001 (GuildPowerupsRecentActivityRow)
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ function GuildPowerupsRecentActivityRow(row) {
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsRecentActivityRow");
   ({ boost, phase, sortKey } = row);
   const tmp4 = callback();
-  let obj1 = require(12001) /* useMaybeGetSortedBoosts */;
+  let obj1 = require(12002) /* useMaybeGetSortedBoosts */;
   const getBoostUserConfig = obj1.useGetBoostUserConfig(boost);
   ({ roleColor, roleColorStrings, username } = getBoostUserConfig);
   let obj2 = require(4031) /* resetCache */;
@@ -44,9 +44,9 @@ function GuildPowerupsRecentActivityRow(row) {
     if ("gave" === phase) {
       let BoostGemSlashIcon = tmp(7740).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(12003).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12004).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(12005).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12006).BoostGemSlashIcon;
     }
     obj = { style: null, children: null };
     obj[0] = tmp4.boostRowContainer;
@@ -84,7 +84,7 @@ function GuildPowerupsRecentActivityRow(row) {
     items2[2] = closure_5(tmp(4338).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
     const obj6 = { variant: "text-md/medium", lineClamp: 1, style: null, children: null };
     obj6[2] = tmp4.messageText;
-    obj6[3] = importDefault(12007)(row);
+    obj6[3] = importDefault(12008)(row);
     items2[3] = closure_5(tmp(4338).Text, obj6);
     obj3[1] = items2;
     items1[1] = closure_6(View, obj3);
@@ -124,7 +124,7 @@ export default function GuildPowerupsRecentActivitySection(guildId) {
   let obj = require(8240) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsRecentActivitySection");
   const tmp4 = callback();
-  const arr = importDefault(12001)(guildId.guildId, 10);
+  const arr = importDefault(12002)(guildId.guildId, 10);
   let tmp6Result = null;
   if (0 !== arr.length) {
     obj = { style: null, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15370
+// Function ID: 15371
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 4235, 4230, 676, 11959, 5768, 6930, 4238, 4234, 5192, 6912, 2]
+// Dependencies: [5, 19, 4235, 4230, 676, 11960, 5768, 6930, 4238, 4234, 5192, 6912, 2]
 // Exports: default
 
-// Module 15379 (useGuildPowerupsBoostAction)
+// Module 15370 (useGuildPowerupsBoostAction)
 import useGuildBoostPurchaseHandler from "useGuildBoostPurchaseHandler";
 import noop from "noop";
 import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";
@@ -25,7 +25,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
   const importDefault = arg1;
   let dependencyMap = arg2;
   const callback = arg4;
-  const tmp = importDefault(11959)(arg3);
+  const tmp = importDefault(11960)(arg3);
   const shouldUseMobileWebRedirectCheckout = tmp.shouldUseMobileWebRedirectCheckout;
   const handleMobileWebRedirectCheckout = tmp.handleMobileWebRedirectCheckout;
   const analyticsLocations = importDefault(5768)().analyticsLocations;

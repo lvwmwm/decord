@@ -1,10 +1,10 @@
-// Module ID: 11444
-// Function ID: 11445
+// Module ID: 11445
+// Function ID: 11446
 // Name: _upload2
-// Dependencies: [32, 5, 19, 17, 1391, 4681, 1910, 4562, 676, 21, 4342, 712, 7343, 4938, 4897, 4310, 8407, 8405, 11, 4893, 8406, 7269, 530, 11445, 6965, 7107, 4684, 1236, 589, 5768, 7271, 4901, 5437, 11446, 4338, 4756, 2]
+// Dependencies: [32, 5, 19, 17, 1391, 4681, 1910, 4562, 676, 21, 4342, 712, 7343, 4938, 4897, 4310, 8407, 8405, 11, 4893, 8406, 7269, 530, 11446, 6965, 7107, 4684, 1236, 589, 5768, 7271, 4901, 5437, 11447, 4338, 4756, 2]
 // Exports: default
 
-// Module 11444 (_upload2)
+// Module 11445 (_upload2)
 import Background from "Background";
 import handleChanged from "handleChanged";
 import items from "items";
@@ -224,7 +224,7 @@ function _upload2() {
               dependencyMap(false);
               obj3 = callback2(4310);
               obj3.hideActionSheet();
-              const tmp24 = new callback2(11445)(closure_12);
+              const tmp24 = new callback2(11446)(closure_12);
               store = tmp24;
               if (store.code === closure_11.EXPLICIT_CONTENT) {
                 obj4 = callback2(6965);

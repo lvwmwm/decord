@@ -1,7 +1,7 @@
 // Module ID: 5171
 // Function ID: 5172
 // Name: selectVoiceChannelAdditional
-// Dependencies: [1391, 1910, 5172, 3989, 1979, 1922, 4361, 5173, 4527, 5174, 4061, 5175, 5176, 4310, 5188, 2007, 12963, 514, 709, 2]
+// Dependencies: [1391, 1910, 5172, 3989, 1979, 1922, 4361, 5173, 4527, 5174, 4061, 5175, 5176, 4310, 5188, 2007, 12964, 514, 709, 2]
 // Exports: selectVoiceChannelAdditional
 
 // Module 5171 (selectVoiceChannelAdditional)

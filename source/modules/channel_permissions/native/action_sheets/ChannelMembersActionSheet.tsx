@@ -1,10 +1,10 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11047
+// Function ID: 11048
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 1391, 1990, 1983, 1910, 3989, 676, 21, 4342, 712, 1628, 589, 1499, 4535, 9046, 1236, 5437, 5436, 4887, 4310, 8061, 11047, 6054, 8015, 11045, 9771, 1297, 5439, 9054, 4338, 2]
+// Dependencies: [19, 17, 1391, 1990, 1983, 1910, 3989, 676, 21, 4342, 712, 1628, 589, 1499, 4535, 9046, 1236, 5437, 5436, 4887, 4310, 8061, 11048, 6054, 8015, 11046, 9771, 1297, 5439, 9054, 4338, 2]
 // Exports: default
 
-// Module 11046 (ChannelMembersActionSheet)
+// Module 11047 (ChannelMembersActionSheet)
 import "PressableBase";
 import { View } from "Background";
 import ensureGuildLoaded from "ensureGuildLoaded";

@@ -1,10 +1,10 @@
-// Module ID: 12722
-// Function ID: 12723
+// Module ID: 12723
+// Function ID: 12724
 // Name: ExternalLinkItem
-// Dependencies: [17, 21, 4342, 4338, 1236, 8015, 5420, 12723, 4058, 2]
+// Dependencies: [17, 21, 4342, 4338, 1236, 8015, 5420, 12724, 4058, 2]
 // Exports: default
 
-// Module 12722 (ExternalLinkItem)
+// Module 12723 (ExternalLinkItem)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -20,7 +20,7 @@ function ExternalLinkItem(data) {
     obj[0] = tmp;
     obj[1] = tmp2;
     obj = { IconComponent: null };
-    obj[0] = url(12723).LinkExternalMediumIcon;
+    obj[0] = url(12724).LinkExternalMediumIcon;
     obj[2] = callback(url(5420).TableRowIcon, obj);
     obj[3] = function onPress() {
       outer1_1(outer1_2[8]).openURL(url);

@@ -1,9 +1,9 @@
-// Module ID: 11111
-// Function ID: 11112
+// Module ID: 11112
+// Function ID: 11113
 // Name: handleChannelDelete
 // Dependencies: [1994, 1391, 1990, 1910, 4562, 3998, 1922, 4564, 12, 7107, 589, 709, 2]
 
-// Module 11111 (handleChannelDelete)
+// Module 11112 (handleChannelDelete)
 import _getSystemLocale from "_getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

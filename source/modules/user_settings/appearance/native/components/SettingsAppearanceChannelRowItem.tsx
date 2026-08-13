@@ -1,10 +1,10 @@
-// Module ID: 14600
-// Function ID: 14601
+// Module ID: 14591
+// Function ID: 14592
 // Name: ChannelRowItem
 // Dependencies: [19, 17, 676, 21, 4342, 712, 1297, 9712, 4338, 2]
 // Exports: default
 
-// Module 14600 (ChannelRowItem)
+// Module 14591 (ChannelRowItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { StatusTypes } from "ME";

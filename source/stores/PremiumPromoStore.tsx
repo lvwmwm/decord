@@ -1,9 +1,9 @@
-// Module ID: 13079
-// Function ID: 13080
+// Module ID: 13080
+// Function ID: 13081
 // Name: initialize
 // Dependencies: [1218, 3998, 687, 11, 589, 709, 2]
 
-// Module 13079 (initialize)
+// Module 13080 (initialize)
 import fetchFingerprint from "fetchFingerprint";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { Store } from "initialize";

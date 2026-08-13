@@ -1,10 +1,10 @@
-// Module ID: 13977
-// Function ID: 13978
+// Module ID: 13968
+// Function ID: 13969
 // Name: normalizeValue
 // Dependencies: [2]
 // Exports: hslToRgbWorklet, hsvToRgbWorklet, normalizeValue
 
-// Module 13977 (normalizeValue)
+// Module 13968 (normalizeValue)
 function normalizeValue(arg0) {
   let num = 0;
   if (arg0 >= 0) {

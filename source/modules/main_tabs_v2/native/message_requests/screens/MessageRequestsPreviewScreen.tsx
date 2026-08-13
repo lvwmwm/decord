@@ -1,10 +1,10 @@
-// Module ID: 16051
-// Function ID: 16052
+// Module ID: 16042
+// Function ID: 16043
 // Name: MessageRequestsScreen
-// Dependencies: [19, 4357, 676, 21, 11863, 9795, 9799, 16052, 10274, 2]
+// Dependencies: [19, 4357, 676, 21, 11864, 9795, 9799, 16043, 10274, 2]
 // Exports: default
 
-// Module 16051 (MessageRequestsScreen)
+// Module 16042 (MessageRequestsScreen)
 import noop from "noop";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { ME } from "ME";
@@ -15,7 +15,7 @@ const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/
 
 export default function MessageRequestsScreen(route) {
   const channelId = route.route.params.channelId;
-  let obj = channelId(11863);
+  let obj = channelId(11864);
   const items = [channelId];
   const isMessageRequestRestrictedViewer = obj.useIsMessageRequestRestrictedViewer("MessageRequestsPreviewScreen");
   const effect = React.useEffect(() => {
@@ -27,7 +27,7 @@ export default function MessageRequestsScreen(route) {
   if (isMessageRequestRestrictedViewer) {
     obj = { channelId: null };
     obj[0] = channelId;
-    let tmp5Result = tmp5(tmp7(16052), obj);
+    let tmp5Result = tmp5(tmp7(16043), obj);
   } else {
     const obj1 = { guildId: null, channelId: null, chatInputRef: null, HACK_fixModalInteraction: true, screenIndex: "message-request" };
     obj1[0] = tmp6;

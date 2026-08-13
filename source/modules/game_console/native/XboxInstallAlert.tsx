@@ -1,10 +1,10 @@
-// Module ID: 10864
-// Function ID: 10865
+// Module ID: 10866
+// Function ID: 10867
 // Name: XboxInstallAlert
-// Dependencies: [19, 10466, 21, 4342, 712, 4773, 1236, 1297, 10510, 500, 4058, 2]
+// Dependencies: [19, 10468, 21, 4342, 712, 4773, 1236, 1297, 10512, 500, 4058, 2]
 // Exports: default
 
-// Module 10864 (XboxInstallAlert)
+// Module 10866 (XboxInstallAlert)
 import "noop";
 import XBOX_URL_BASE from "XBOX_URL_BASE";
 import { jsx } from "jsxProd";

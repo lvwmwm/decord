@@ -1,10 +1,10 @@
-// Module ID: 12133
-// Function ID: 12134
+// Module ID: 12134
+// Function ID: 12135
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 1990, 1910, 4327, 3977, 21, 4342, 712, 1499, 589, 5310, 1403, 5277, 2007, 7240, 9010, 5973, 7803, 8728, 12134, 5368, 4072, 2]
+// Dependencies: [5, 19, 1990, 1910, 4327, 3977, 21, 4342, 712, 1499, 589, 5310, 1403, 5277, 2007, 7240, 9010, 5973, 7803, 8728, 12135, 5368, 4072, 2]
 // Exports: default
 
-// Module 12133 (AcceptInviteContainer)
+// Module 12134 (AcceptInviteContainer)
 import GuildMemberFlags from "GuildMemberFlags";
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

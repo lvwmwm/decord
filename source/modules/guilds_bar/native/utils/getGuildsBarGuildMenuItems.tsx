@@ -1,10 +1,10 @@
-// Module ID: 15490
-// Function ID: 15491
+// Module ID: 15481
+// Function ID: 15482
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 1910, 4540, 676, 9873, 8597, 1236, 13375, 2007, 9186, 5302, 6054, 13322, 11809, 4310, 9868, 11810, 5297, 2]
+// Dependencies: [5, 1910, 4540, 676, 9873, 8597, 1236, 13376, 2007, 9186, 5302, 6054, 13323, 11810, 4310, 9868, 11811, 5297, 2]
 // Exports: default
 
-// Module 15490 (getGuildsBarGuildMenuItems)
+// Module 15481 (getGuildsBarGuildMenuItems)
 import EnvelopeIcon from "EnvelopeIcon";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -99,7 +99,7 @@ export default function getGuildsBarGuildMenuItems(arg0) {
     const splice = items.splice;
     const obj2 = { iconSource: null, label: null, action: null };
     if (isMutedResult) {
-      obj2[0] = tmp5(11810);
+      obj2[0] = tmp5(11811);
       const intl5 = tmp(1236).intl;
       obj2[1] = intl5.string(tmp(1236).t.De0BTC);
       obj2[2] = function action() {
@@ -110,7 +110,7 @@ export default function getGuildsBarGuildMenuItems(arg0) {
       };
       splice(1, 0, obj2);
     } else {
-      obj2[0] = tmp5(11809);
+      obj2[0] = tmp5(11810);
       const intl4 = tmp(1236).intl;
       obj2[1] = intl4.string(tmp(1236).t.vRzp7P);
       obj2[2] = function action() {

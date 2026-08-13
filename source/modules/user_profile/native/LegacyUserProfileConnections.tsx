@@ -1,10 +1,10 @@
-// Module ID: 11020
-// Function ID: 11021
+// Module ID: 11021
+// Function ID: 11022
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 1994, 1930, 4188, 7128, 676, 1301, 5166, 21, 4342, 712, 5165, 11021, 5041, 1435, 1363, 1297, 11024, 11025, 4065, 11026, 11027, 4311, 5796, 4061, 1236, 8981, 4539, 4058, 4887, 4338, 4072, 589, 7010, 11028, 2]
+// Dependencies: [19, 17, 1994, 1930, 4188, 7128, 676, 1301, 5166, 21, 4342, 712, 5165, 11022, 5041, 1435, 1363, 1297, 11025, 11026, 4065, 11027, 11028, 4311, 5796, 4061, 1236, 8981, 4539, 4058, 4887, 4338, 4072, 589, 7010, 11029, 2]
 // Exports: default, useAppplicationRoleConnectionItems, useConnectedAccountItems
 
-// Module 11020 (LegacyUserProfileConnections)
+// Module 11021 (LegacyUserProfileConnections)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "Button";
 import _getSystemLocale from "_getSystemLocale";
@@ -365,7 +365,7 @@ class ConnectedApplicationUserRoleAccount {
             let obj = { style: _undefined.connectedAccountPoweredByText, children: null };
             let tmp5 = null;
             if (null != applicationRoleConnection.application.bot) {
-              obj = { style: null, user: null, size: null, guildId: "Array" };
+              obj = { style: null, user: null, size: null, guildId: "a" };
               obj[0] = tmp3.connectedAccountPoweredByAvatar;
               const tmp12 = new outer1_7(tmp4.application.bot);
               obj[1] = tmp12;

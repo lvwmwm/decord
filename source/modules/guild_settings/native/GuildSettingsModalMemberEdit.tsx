@@ -1,10 +1,10 @@
-// Module ID: 11286
-// Function ID: 11287
+// Module ID: 11287
+// Function ID: 11288
 // Name: GuildSettingsModalMemberEditScene
-// Dependencies: [19, 17, 4334, 1434, 1984, 1990, 1983, 1910, 3989, 1922, 11287, 676, 21, 4342, 712, 3994, 12, 8497, 1297, 4338, 5414, 1236, 5807, 4072, 6051, 5310, 4187, 9181, 3978, 8012, 4753, 7835, 11288, 11289, 4061, 11294, 1499, 589, 38, 11285, 5969, 5754, 11299, 11301, 5756, 5823, 2]
+// Dependencies: [19, 17, 4334, 1434, 1984, 1990, 1983, 1910, 3989, 1922, 11288, 676, 21, 4342, 712, 3994, 12, 8497, 1297, 4338, 5414, 1236, 5807, 4072, 6051, 5310, 4187, 9181, 3978, 8012, 4753, 7835, 11289, 11290, 4061, 11295, 1499, 589, 38, 11286, 5969, 5754, 11300, 11302, 5756, 5823, 2]
 // Exports: default
 
-// Module 11286 (GuildSettingsModalMemberEditScene)
+// Module 11287 (GuildSettingsModalMemberEditScene)
 import importAllResult from "Text";
 import get_ActivityIndicator from "TableCheckboxRow";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -379,7 +379,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       outer1_1(outer1_3[32]).startEditingRoles(applyArgumentsResult.props.guild.id, applyArgumentsResult.props.user.id);
     };
     applyArgumentsResult.handleToggleRole = function handleToggleRole(roleId, state) {
-      callback(11288).toggleRole(roleId, state);
+      callback(11289).toggleRole(roleId, state);
     };
     applyArgumentsResult.handleSetCommunicationDisabled = function handleSetCommunicationDisabled() {
       let guild;
@@ -427,7 +427,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       }
     };
     applyArgumentsResult.handleCancelEditMemberRoles = function handleCancelEditMemberRoles() {
-      callback(11288).stopEditingRoles();
+      callback(11289).stopEditingRoles();
     };
     return applyArgumentsResult;
   }

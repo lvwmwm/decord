@@ -1,9 +1,9 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 14982
+// Function ID: 14983
 // Name: pressable
-// Dependencies: [7044, 8127, 14145, 7107, 14149, 14142, 1236, 1306, 10407, 2]
+// Dependencies: [7044, 8127, 14136, 7107, 14140, 14133, 1236, 1306, 10407, 2]
 
-// Module 14991 (pressable)
+// Module 14982 (pressable)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
@@ -15,7 +15,7 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const parentalControlledGoreContentSettings = require(14145) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
+    const parentalControlledGoreContentSettings = require(14136) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
     let goreContentFriendDm;
     if (parentalControlledGoreContentSettings != null) {
       goreContentFriendDm = parentalControlledGoreContentSettings.goreContentFriendDm;
@@ -30,7 +30,7 @@ createToggle = {
   onPress: function onGoreContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(14149);
+      let obj = selectedTeenId(14140);
       obj = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
       const intl = selectedTeenId(1236).intl;
       obj[0] = intl.string(selectedTeenId(1236).t["16/3Bi"]);
@@ -44,8 +44,8 @@ createToggle = {
       obj[3] = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       const items = [selectedTeenId(1306).ExplicitContentRedaction.SHOW];
       obj[4] = items;
-      const result = selectedTeenId(14142).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(14142);
+      const result = selectedTeenId(14133).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(14133);
     }
   },
   unsearchable: true

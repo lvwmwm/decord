@@ -1,10 +1,10 @@
-// Module ID: 16054
-// Function ID: 16055
+// Module ID: 16045
+// Function ID: 16046
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 3998, 676, 10324, 21, 4342, 712, 12013, 589, 9293, 9681, 12039, 4187, 4310, 10325, 2007, 8065, 4355, 4755, 1236, 4338, 2]
+// Dependencies: [19, 17, 3998, 676, 10324, 21, 4342, 712, 12014, 589, 9293, 9681, 12040, 4187, 4310, 10325, 2007, 8065, 4355, 4755, 1236, 4338, 2]
 // Exports: default
 
-// Module 16054 (RestrictedMessagePreviewActions)
+// Module 16045 (RestrictedMessagePreviewActions)
 import Button from "Button";
 import { View } from "_submitHamReportForFirstDM";
 import markAllUserIdListsStale from "markAllUserIdListsStale";

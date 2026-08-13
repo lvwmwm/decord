@@ -1,10 +1,10 @@
-// Module ID: 14233
-// Function ID: 14234
+// Module ID: 14224
+// Function ID: 14225
 // Name: FamilyCenterMaxConnectionsBlurb
-// Dependencies: [19, 17, 7045, 10297, 21, 4342, 712, 7381, 7382, 11377, 1236, 2303, 4338, 10335, 5368, 14194, 14234, 14236, 14245, 2]
+// Dependencies: [19, 17, 7045, 10297, 21, 4342, 712, 7381, 7382, 11378, 1236, 2303, 4338, 10335, 5368, 14185, 14225, 14227, 14236, 2]
 // Exports: default
 
-// Module 14233 (FamilyCenterMaxConnectionsBlurb)
+// Module 14224 (FamilyCenterMaxConnectionsBlurb)
 import "set";
 import get_ActivityIndicator from "FamilyCenterAcceptedLinkRow";
 import items from "items";
@@ -26,7 +26,7 @@ function FamilyCenterMaxConnectionsBlurb() {
   const hasMaxConnections = obj.useHasMaxConnections();
   const tmp = createCacheKey();
   const tmp5 = importDefault;
-  require(11377) /* useAgeSpecificText */;
+  require(11378) /* useAgeSpecificText */;
   const intl = tmp2(1236).intl;
   intl.formatToPlainString(tmp5(2303)["1/PzIj"], { maxConnections: importDefault(7382)() ? closure_5 : closure_6 });
   const intl2 = tmp2(1236).intl;
@@ -99,7 +99,7 @@ export default function FamilyCenterRequestsPage() {
   let obj = { style: tmp.scrollView, children: null };
   obj = { bottom: true, children: null };
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(14194), {}), callback(importDefault(14234), {}), callback(importDefault(14236), {}), callback(importDefault(14245), {}), callback(FamilyCenterMaxConnectionsBlurb, {}), callback(FamilyCenterHelpLineInfo, {})];
+  const items = [callback(importDefault(14185), {}), callback(importDefault(14225), {}), callback(importDefault(14227), {}), callback(importDefault(14236), {}), callback(FamilyCenterMaxConnectionsBlurb, {}), callback(FamilyCenterHelpLineInfo, {})];
   obj[1] = items;
   obj[1] = callback2(closure_3, obj);
   obj[1] = callback(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

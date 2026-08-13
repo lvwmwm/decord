@@ -1,10 +1,10 @@
-// Module ID: 11824
-// Function ID: 11825
+// Module ID: 11825
+// Function ID: 11826
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 4778, 11825, 9961, 676, 21, 11826, 4342, 712, 4761, 11827, 9587, 1954, 8395, 1351, 1236, 4539, 12, 11828, 7030, 11829, 11830, 1297, 10032, 2]
+// Dependencies: [32, 19, 17, 4778, 11826, 9961, 676, 21, 11827, 4342, 712, 4761, 11828, 9587, 1954, 8395, 1351, 1236, 4539, 12, 11829, 7030, 11830, 11831, 1297, 10032, 2]
 // Exports: default
 
-// Module 11824 (ApplicationCommandDiscovery)
+// Module 11825 (ApplicationCommandDiscovery)
 import _slicedToArray from "_slicedToArray";
 import apply from "apply";
 import get_ActivityIndicator from "getSystemLocale";
@@ -74,7 +74,7 @@ export default function ApplicationCommandDiscovery(channel) {
   first = tmp4[0];
   c7 = tmp6;
   closure_8 = ref.useRef(false);
-  let obj2 = require(11827) /* useCommandDiscoveryManager */;
+  let obj2 = require(11828) /* useCommandDiscoveryManager */;
   commandDiscoveryManager = obj2.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
   let obj3 = channel(9587);
   obj = { context: { channel, type: "channel" }, filters: null, options: null, allowFetch: true };

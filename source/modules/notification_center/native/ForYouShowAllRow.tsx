@@ -1,10 +1,10 @@
-// Module ID: 15642
-// Function ID: 15643
+// Module ID: 15633
+// Function ID: 15634
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 676, 12116, 21, 4342, 9845, 712, 500, 1499, 698, 1297, 4761, 15637, 4887, 15638, 13496, 4338, 1236, 5423, 2]
+// Dependencies: [19, 17, 676, 12117, 21, 4342, 9845, 712, 500, 1499, 698, 1297, 4761, 15628, 4887, 15629, 13497, 4338, 1236, 5423, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 15642 (ForYouShowAllRow)
+// Module 15633 (ForYouShowAllRow)
 import registerAsset from "registerAsset";
 import { View } from "Text";
 import { AnalyticEvents } from "ME";
@@ -32,10 +32,10 @@ function ForYouShowAllRow(panelVariant) {
   const layoutStyles = obj1.getLayoutStyles(layout);
   let obj2 = require(4761) /* getFontScale */;
   const fontScale = obj2.useFontScale();
-  let obj3 = require(15637) /* renderChannelPressableWrapper */;
+  let obj3 = require(15628) /* renderChannelPressableWrapper */;
   obj = { accessibilityRole: "button", underlayColor: tmp4.rowActive.backgroundColor, onPress, style: items, children: null };
   items = [tmp4.pressable, { borderRadius: layoutStyles.container.borderRadius }];
-  let obj5 = require(15638) /* renderChannelWrapper */;
+  let obj5 = require(15629) /* renderChannelWrapper */;
   obj = { style: tmp4.avatar, children: null };
   const obj8 = require(9845) /* getLayoutStyles */;
   const tmp8 = closure_9;
@@ -43,7 +43,7 @@ function ForYouShowAllRow(panelVariant) {
   const AvatarSizes = require(1297) /* Button */.AvatarSizes;
   obj1 = { children: null };
   obj2 = { size: require(9845) /* getLayoutStyles */.isLayoutCompact(layout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL, "aria-label": "", children };
-  obj[1] = closure_7(require(13496) /* AvatarDuoPile */.AvatarDuoPile, obj2);
+  obj[1] = closure_7(require(13497) /* AvatarDuoPile */.AvatarDuoPile, obj2);
   const items1 = [closure_7(View, obj), , ];
   obj3 = { style: tmp4.textContainer, children: null };
   const obj4 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: null };
@@ -111,7 +111,7 @@ export const ForYouSuggestedFriendShowAllRow = function ForYouSuggestedFriendSho
     children: React.useMemo(() => {
       const substr = suggestedFriends.slice(2, 4);
       return substr.map((user) => {
-        const obj = { user: user.user, guildId: "Array", size: "Array" };
+        const obj = { user: user.user, guildId: "Array", size: -1 };
         const obj2 = outer1_0(outer1_2[6]);
         const tmp = outer1_7;
         const AvatarSizes = outer1_0(outer1_2[11]).AvatarSizes;

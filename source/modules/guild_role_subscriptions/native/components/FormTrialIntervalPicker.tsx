@@ -1,10 +1,10 @@
-// Module ID: 16915
-// Function ID: 16916
+// Module ID: 16906
+// Function ID: 16907
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 13311, 1236, 14541, 4310, 9017, 2007, 2]
+// Dependencies: [19, 21, 13312, 1236, 14532, 4310, 9017, 2007, 2]
 // Exports: default
 
-// Module 16915 (FormTrialIntervalPicker)
+// Module 16906 (FormTrialIntervalPicker)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -21,7 +21,7 @@ export default function FormTrialIntervalPicker(disabled) {
     let intl = interval(1236).intl;
     let stringResult = intl.string(interval(1236).t.WZG1BU);
   } else {
-    let obj = interval(14541);
+    let obj = interval(14532);
     stringResult = obj.formatPlanIntervalDuration(interval);
   }
   obj = {
@@ -47,7 +47,7 @@ export default function FormTrialIntervalPicker(disabled) {
     },
     disabled: disabled.disabled
   };
-  return jsx(importDefault(13311), {
+  return jsx(importDefault(13312), {
     label: stringResult,
     onPress() {
       let obj = outer1_1(outer1_2[5]);

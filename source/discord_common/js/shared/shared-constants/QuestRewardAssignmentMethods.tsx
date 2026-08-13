@@ -1,9 +1,9 @@
-// Module ID: 10443
-// Function ID: 10444
+// Module ID: 10442
+// Function ID: 10443
 // Name: QuestRewardAssignmentMethods
 // Dependencies: [2]
 
-// Module 10443 (QuestRewardAssignmentMethods)
+// Module 10442 (QuestRewardAssignmentMethods)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestRewardAssignmentMethods.tsx");
 
 export const QuestRewardAssignmentMethods = { ALL: 1, [1]: "ALL", TIERED: 2, [2]: "TIERED" };

@@ -1,17 +1,17 @@
-// Module ID: 15804
-// Function ID: 15805
+// Module ID: 15795
+// Function ID: 15796
 // Name: SearchTabsPage
-// Dependencies: [32, 19, 17, 1391, 8446, 676, 21, 4342, 589, 5987, 4558, 10930, 12084, 15805, 15847, 15849, 15853, 15854, 15862, 15864, 15865, 15871, 15878, 38, 8781, 2]
+// Dependencies: [32, 19, 17, 1391, 8446, 676, 21, 4342, 589, 5987, 4558, 10932, 12085, 15796, 15838, 15840, 15844, 15845, 15853, 15855, 15856, 15862, 15869, 38, 8781, 2]
 // Exports: default
 
-// Module 15804 (SearchTabsPage)
+// Module 15795 (SearchTabsPage)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_15864";
-import { View } from "module_15854";
+import importAllResult from "module_15855";
+import { View } from "module_15845";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { SearchTabs } from "MessageEmbedTypes";
 import { SearchTypes } from "ME";
-import { jsx } from "module_15871";
+import { jsx } from "module_15862";
 import createCacheKey from "createCacheKey";
 
 const require = arg1;
@@ -48,11 +48,11 @@ function SearchTabsPage(selectMediaTab) {
         if (tmp9) {
           obj = { guildId: null, channelId: null };
           ({ guildId: obj14[0], channelId: obj14[1] } = searchContext);
-          return jsx(importDefault(10930), { guildId: null, channelId: null });
+          return jsx(importDefault(10932), { guildId: null, channelId: null });
         } else if (isChannelSpoilerGated) {
           obj = { guildId: null, channelId: null };
           ({ guildId: obj13[0], channelId: obj13[1] } = searchContext);
-          return jsx(importDefault(12084), { guildId: null, channelId: null });
+          return jsx(importDefault(12085), { guildId: null, channelId: null });
         }
       }
     }
@@ -61,56 +61,56 @@ function SearchTabsPage(selectMediaTab) {
       obj1[0] = selectMediaTab.selectMediaTab;
       obj1[1] = searchContext;
       obj1[2] = width;
-      return jsx(importDefault(15805), { onJumpToMedia: null, searchContext: null, width: null });
+      return jsx(importDefault(15796), { onJumpToMedia: null, searchContext: null, width: null });
     } else if (tmp11.PEOPLE === tab) {
       const obj2 = { searchContext: null };
       obj2[0] = searchContext;
-      return jsx(importDefault(15847), { searchContext: null });
+      return jsx(importDefault(15838), { searchContext: null });
     } else if (tmp11.MEMBERS === tab) {
       const obj3 = { searchContext: null };
       obj3[0] = searchContext;
-      return jsx(importDefault(15849), { searchContext: null });
+      return jsx(importDefault(15840), { searchContext: null });
     } else if (tmp11.GUILD_CHANNELS === tab) {
       const obj4 = { searchContext: null };
       obj4[0] = searchContext;
-      return jsx(importDefault(15853), { searchContext: null });
+      return jsx(importDefault(15844), { searchContext: null });
     } else if (tmp11.MEDIA === tab) {
       const obj5 = { tab: null, searchContext: null, isFocused: null, width: null };
       obj5[0] = tab;
       obj5[1] = searchContext;
       obj5[2] = isFocused;
       obj5[3] = width;
-      return jsx(importDefault(15854), { tab: null, searchContext: null, isFocused: null, width: null });
+      return jsx(importDefault(15845), { tab: null, searchContext: null, isFocused: null, width: null });
     } else if (tmp11.FILES === tab) {
       const obj6 = { tab: null, searchContext: null, isFocused: null, width: null };
       obj6[0] = tab;
       obj6[1] = searchContext;
       obj6[2] = isFocused;
       obj6[3] = width;
-      return jsx(importDefault(15862), { tab: null, searchContext: null, isFocused: null, width: null });
+      return jsx(importDefault(15853), { tab: null, searchContext: null, isFocused: null, width: null });
     } else if (tmp11.LINKS === tab) {
       const obj7 = { tab: null, searchContext: null, isFocused: null, width: null };
       obj7[0] = tab;
       obj7[1] = searchContext;
       obj7[2] = isFocused;
       obj7[3] = width;
-      return jsx(importDefault(15864), { tab: null, searchContext: null, isFocused: null, width: null });
+      return jsx(importDefault(15855), { tab: null, searchContext: null, isFocused: null, width: null });
     } else if (tmp11.THREADS === tab) {
       const obj8 = { searchContext: null };
       obj8[0] = searchContext;
-      return jsx(tmp4(15865).SearchTabsThreadScreen, { searchContext: null });
+      return jsx(tmp4(15856).SearchTabsThreadScreen, { searchContext: null });
     } else if (tmp11.MESSAGES === tab) {
       const obj9 = { tab: null, searchContext: null, isFocused: null };
       obj9[0] = tab;
       obj9[1] = searchContext;
       obj9[2] = isFocused;
-      return jsx(importDefault(15871), { tab: null, searchContext: null, isFocused: null });
+      return jsx(importDefault(15862), { tab: null, searchContext: null, isFocused: null });
     } else if (tmp11.PINS === tab) {
       const obj10 = { tab: null, searchContext: null, isFocused: null };
       obj10[0] = tab;
       obj10[1] = searchContext;
       obj10[2] = isFocused;
-      return jsx(importDefault(15878), { tab: null, searchContext: null, isFocused: null });
+      return jsx(importDefault(15869), { tab: null, searchContext: null, isFocused: null });
     } else {
       return null;
     }

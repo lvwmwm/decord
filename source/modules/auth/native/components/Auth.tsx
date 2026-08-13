@@ -1,9 +1,9 @@
-// Module ID: 15156
-// Function ID: 15157
+// Module ID: 15147
+// Function ID: 15148
 // Name: NavigatorWithCaptchaHook
-// Dependencies: [32, 19, 17, 676, 21, 15157, 5310, 15166, 5825, 8527, 4342, 712, 15207, 8521, 1642, 8551, 15208, 8549, 5823, 501, 1236, 15209, 6982, 15213, 2]
+// Dependencies: [32, 19, 17, 676, 21, 15148, 5310, 15157, 5825, 8527, 4342, 712, 15198, 8521, 1642, 8551, 15199, 8549, 5823, 501, 1236, 15200, 6982, 15204, 2]
 
-// Module 15156 (NavigatorWithCaptchaHook)
+// Module 15147 (NavigatorWithCaptchaHook)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "PlatformTypes";
 import get_ActivityIndicator from "context";
@@ -22,7 +22,7 @@ const require = arg1;
 function NavigatorWithCaptchaHook() {
   let require;
   let tmp9;
-  let obj = require(15207) /* useIsHCaptchaModalOpenTracking */;
+  let obj = require(15198) /* useIsHCaptchaModalOpenTracking */;
   const isHCaptchaModalOpenTracking = obj.useIsHCaptchaModalOpenTracking();
   const tmp6 = callback3();
   const tmp5 = importDefault(8521)();
@@ -48,7 +48,7 @@ function NavigatorWithCaptchaHook() {
   const tmp15 = closure_10;
   const tmp16 = closure_9;
   const tmp8 = callback(importAllResult.useState(AuthStates.WELCOME), 2);
-  obj[0] = require(15208) /* registerAsset */;
+  obj[0] = require(15199) /* registerAsset */;
   const children = [callback2(importDefault(8551), obj), ];
   if (tmp5) {
     obj = { value: null, children: null };
@@ -199,11 +199,11 @@ const context = importAllResult.createContext(() => {
 let obj2 = { borderBottomWidth: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 const memoResult = importAllResult.memo(function Auth() {
   const effect = importAllResult.useEffect(() => {
-    callback2(15209).initialize();
+    callback2(15200).initialize();
     return () => callback(table[21]).terminate();
   }, []);
   const layoutEffect = importAllResult.useLayoutEffect(() => callback(6982).trackAppUIViewed(), []);
-  importDefault(15213)();
+  importDefault(15204)();
   let closure_0 = importAllResult.useRef(undefined);
   return callback2(context.Provider, { value: importAllResult.useCallback(() => callback(outer1_2[7]).getTrackRegTransition(callback), [])(), children: callback2(NavigatorWithCaptchaHook, {}) });
 });

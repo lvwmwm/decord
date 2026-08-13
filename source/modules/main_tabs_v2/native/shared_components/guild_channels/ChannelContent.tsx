@@ -1,10 +1,10 @@
-// Module ID: 15825
-// Function ID: 15826
+// Module ID: 15816
+// Function ID: 15817
 // Name: ChannelContentComponent
-// Dependencies: [19, 17, 9844, 4541, 21, 4342, 500, 9845, 4835, 15826, 4864, 8007, 15325, 4338, 2]
+// Dependencies: [19, 17, 9844, 4541, 21, 4342, 500, 9845, 4835, 15817, 4864, 8007, 15316, 4338, 2]
 // Exports: renderChannelContent
 
-// Module 15825 (ChannelContentComponent)
+// Module 15816 (ChannelContentComponent)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
@@ -74,7 +74,7 @@ function ChannelContentComponent(arg0) {
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
   obj3[5] = layout;
-  const items1 = [closure_6(importDefault(15826), obj3), ];
+  const items1 = [closure_6(importDefault(15817), obj3), ];
   let tmp12Result = tmp10Result;
   if (!tmp10Result) {
     tmp12Result = isNSFWResult;
@@ -108,7 +108,7 @@ function ChannelContentComponent(arg0) {
     if (isSubscriptionGated) {
       const obj8 = { locked: null, isInMainTabsExperiment: true };
       obj8[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp10(importDefault(15325), obj8);
+      isSubscriptionGated = tmp10(importDefault(15316), obj8);
     }
     items3[2] = isSubscriptionGated;
     obj4[1] = items3;

@@ -1,9 +1,9 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 16994
+// Function ID: 16995
 // Name: AVErrorNoInputDevicesDefinition
-// Dependencies: [1391, 4393, 4416, 9219, 17002, 2]
+// Dependencies: [1391, 4393, 4416, 9219, 16993, 2]
 
-// Module 17003 (AVErrorNoInputDevicesDefinition)
+// Module 16994 (AVErrorNoInputDevicesDefinition)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createRTCConnection from "createRTCConnection";
@@ -32,7 +32,7 @@ export const AVErrorNoInputDevicesDefinition = {
           if (!isGuildStageVoiceResult) {
             const obj = { type: null };
             obj[0] = require(9219) /* mapped */.AVError.NO_INPUT_DEVICES;
-            const merged = Object.assign(require(17002) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
+            const merged = Object.assign(require(16993) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
             const items = [obj];
             return items;
           }

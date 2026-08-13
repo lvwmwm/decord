@@ -1,10 +1,10 @@
-// Module ID: 14742
-// Function ID: 14743
+// Module ID: 14733
+// Function ID: 14734
 // Name: SystemNotificationsSubLabel
-// Dependencies: [19, 17, 14743, 8127, 21, 4342, 712, 8240, 11838, 14744, 14745, 4338, 1236, 5416, 7838, 7101, 10407, 14746, 14747, 13956, 2]
+// Dependencies: [19, 17, 14734, 8127, 21, 4342, 712, 8240, 11839, 14735, 14736, 4338, 1236, 5416, 7838, 7101, 10407, 14737, 14738, 13947, 2]
 
-// Module 14742 (SystemNotificationsSubLabel)
-import importAllResult from "module_13956";
+// Module 14733 (SystemNotificationsSubLabel)
+import importAllResult from "module_13947";
 import { View } from "NotificationPermissionSettingsHeader";
 import { initializeAndroidNotificationSettingsStore as closure_5 } from "_initializeAndroidNotificationSettingsStore";
 import { MobileSetting } from "MobileSetting";
@@ -19,10 +19,10 @@ function SystemNotificationsSubLabel() {
   const tmp = callback2();
   let obj = require(8240) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("SystemNotificationsSubLabel");
-  let obj1 = require(11838) /* _requestPushNotificationPermission */;
+  let obj1 = require(11839) /* _requestPushNotificationPermission */;
   let showReactivationPrompt = obj1.useShowReactivationPrompt();
-  let obj2 = importDefault(14744);
-  let obj3 = require(14745) /* hasAndroidNotificationChannels */;
+  let obj2 = importDefault(14735);
+  let obj3 = require(14736) /* hasAndroidNotificationChannels */;
   let result = obj3.hasAndroidNotificationChannels();
   if (result) {
     let str = "text-sm/medium";
@@ -75,7 +75,7 @@ let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
   isFamilyCenterV3Enabled = isFamilyCenterV3Enabled(7101).useIsFamilyCenterV3Enabled({ location: "SettingsNotificationsScreen" });
   let obj = isFamilyCenterV3Enabled(7101);
-  let tmp2 = !importDefault(14744).useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
+  let tmp2 = !importDefault(14735).useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
   importDefault = tmp2;
   let items = [tmp2];
   const node = importAllResult.useMemo(() => {
@@ -161,7 +161,7 @@ const memoResult = importAllResult.memo(() => {
   const effect1 = importAllResult.useEffect(() => {
     const result = isFamilyCenterV3Enabled(outer1_2[18]).prefetchFamilyCenterAgeGroupWhen(isFamilyCenterV3Enabled);
   }, items1);
-  return callback(importDefault(13956), { node });
+  return callback(importDefault(13947), { node });
 });
 let result = require("_initializeAndroidNotificationSettingsStore").fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationScreen.tsx");
 

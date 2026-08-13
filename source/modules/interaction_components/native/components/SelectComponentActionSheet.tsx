@@ -1,10 +1,10 @@
-// Module ID: 11271
-// Function ID: 11272
+// Module ID: 11272
+// Function ID: 11273
 // Name: SelectionHeader
 // Dependencies: [19, 17, 1391, 1979, 5438, 21, 4342, 712, 5436, 1236, 4755, 9058, 4073, 5414, 8014, 9182, 5409, 1351, 1628, 1493, 5307, 589, 4310, 5437, 5439, 2]
 // Exports: default
 
-// Module 11271 (SelectionHeader)
+// Module 11272 (SelectionHeader)
 import useWindowDimensions from "useWindowDimensions";
 import { View } from "AccessibilityAnnouncer";
 import ensureGuildLoaded from "ensureGuildLoaded";

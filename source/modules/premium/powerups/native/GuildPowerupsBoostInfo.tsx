@@ -1,10 +1,10 @@
-// Module ID: 11974
-// Function ID: 11975
+// Module ID: 11975
+// Function ID: 11976
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4230, 21, 4342, 712, 8240, 11975, 7740, 4338, 2]
+// Dependencies: [17, 4230, 21, 4342, 712, 8240, 11976, 7740, 4338, 2]
 // Exports: default
 
-// Module 11974 (GuildPowerupsBoostInfo)
+// Module 11975 (GuildPowerupsBoostInfo)
 import { View } from "get ActivityIndicator";
 import { BoostInfoType } from "BoostedGuildTiers";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   const tmp = callback();
   let obj = require(8240) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsBoostInfo");
-  let obj1 = require(11975) /* getGuildPowerupsBoostInfoText */;
+  let obj1 = require(11976) /* getGuildPowerupsBoostInfoText */;
   const guildPowerupsBoostInfoText = obj1.getGuildPowerupsBoostInfoText(count, type);
   obj = { style: tmp.container, accessible: true, accessibilityLabel: "" + count + ", " + guildPowerupsBoostInfoText, children: null };
   obj = { style: tmp.headerContainer, importantForAccessibility: "no-hide-descendants", accessible: false, children: null };

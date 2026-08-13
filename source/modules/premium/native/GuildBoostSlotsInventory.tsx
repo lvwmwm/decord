@@ -1,10 +1,10 @@
-// Module ID: 12836
-// Function ID: 12837
+// Module ID: 12837
+// Function ID: 12838
 // Name: GuildBoostSlotCooldown
-// Dependencies: [19, 17, 1302, 1910, 4235, 4013, 676, 21, 4342, 712, 5276, 6950, 4338, 1236, 11, 4887, 5192, 5819, 12837, 589, 1435, 12838, 12842, 4664, 4238, 12, 2]
+// Dependencies: [19, 17, 1302, 1910, 4235, 4013, 676, 21, 4342, 712, 5276, 6950, 4338, 1236, 11, 4887, 5192, 5819, 12838, 589, 1435, 12839, 12843, 4664, 4238, 12, 2]
 // Exports: default
 
-// Module 12836 (GuildBoostSlotCooldown)
+// Module 12837 (GuildBoostSlotCooldown)
 import initialize from "initialize";
 import get_ActivityIndicator from "GuildIconSizes";
 import handleThemeChange from "handleThemeChange";
@@ -209,7 +209,7 @@ function BoostedGuildInfo(guild) {
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.guildInfoRowBottom;
     const obj4 = { source: null, style: null };
-    obj4[0] = importDefault(12837);
+    obj4[0] = importDefault(12838);
     obj4[1] = tmp.guildInfoRowIcon;
     const items2 = [callback(closure_6, obj4), ];
     const obj5 = { style: null, variant: "text-xs/semibold", color: "interactive-text-active", children: null };
@@ -249,7 +249,7 @@ function BoostedGuild(arg0) {
       guildBannerSource = obj2.getGuildBannerSource(stateFromStores);
     }
   }
-  let subscriptionPlaceholderPatternSource = require(12838) /* getSubscriptionPlaceholderPatternSource */.useSubscriptionPlaceholderPatternSource();
+  let subscriptionPlaceholderPatternSource = require(12839) /* getSubscriptionPlaceholderPatternSource */.useSubscriptionPlaceholderPatternSource();
   if (null != guildBannerSource) {
     subscriptionPlaceholderPatternSource = guildBannerSource;
   }
@@ -272,7 +272,7 @@ function BoostedGuild(arg0) {
     tmp11Result = tmp11(tmp10, obj3);
   }
   items3[1] = tmp11Result;
-  items3[2] = closure_11(guildBoostSlots(12842), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = closure_11(guildBoostSlots(12843), { guild: stateFromStores, theme: stateFromStores1 });
   obj1[1] = items3;
   const items4 = [closure_12(closure_5, obj1), closure_11(BoostedGuildInfo, { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length })];
   obj[1] = items4;
@@ -280,7 +280,7 @@ function BoostedGuild(arg0) {
   const obj4 = { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length };
   const tmp12 = closure_6;
   const tmp2 = require;
-  const tmp2Result = require(12838) /* getSubscriptionPlaceholderPatternSource */;
+  const tmp2Result = require(12839) /* getSubscriptionPlaceholderPatternSource */;
   items5[1] = closure_11(closure_5, { children: guildBoostSlots.map((guildBoostSlot) => outer1_11(outer1_17, { guild: stateFromStores, guildBoostSlot, isLast: arg1 === guildBoostSlots.length - 1 }, guildBoostSlot.id)) });
   obj[1] = items5;
   return closure_12(closure_5, obj);

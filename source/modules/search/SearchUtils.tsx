@@ -1,10 +1,10 @@
-// Module ID: 11770
-// Function ID: 11771
+// Module ID: 11771
+// Function ID: 11772
 // Name: SearchTokenTypes
-// Dependencies: [32, 1391, 1980, 4559, 3998, 1979, 1922, 8446, 676, 3943, 1236, 11771, 11, 11776, 12, 11777, 4535, 4187, 2]
+// Dependencies: [32, 1391, 1980, 4559, 3998, 1979, 1922, 8446, 676, 3943, 1236, 11772, 11, 11777, 12, 11778, 4535, 4187, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 11770 (SearchTokenTypes)
+// Module 11771 (SearchTokenTypes)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -478,7 +478,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
   } else {
     if (obj9.isSearchFilterTokenType(currentToken.type)) {
       if (null != nextToken) {
-        if (nextToken.type !== importDefault(11776).NON_TOKEN_TYPE) {
+        if (nextToken.type !== importDefault(11777).NON_TOKEN_TYPE) {
           if (null != nextToken) {
             if (!regex.test(nextToken.type)) {
               const obj1 = { type: null, filter: null, token: null };
@@ -495,7 +495,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       obj2[2] = nextToken;
       return obj2;
     }
-    if (currentToken.type === importDefault(11776).NON_TOKEN_TYPE) {
+    if (currentToken.type === importDefault(11777).NON_TOKEN_TYPE) {
       if (null != previousToken) {
         if (tmp10Result.isSearchFilterTokenType(previousToken.type)) {
           const obj3 = { type: null, filter: null, token: null };
@@ -508,13 +508,13 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(11776).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(11777).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj4 = { type: null, filter: null, token: null };
     obj4[0] = constants2.FILTER_ALL;
     obj4[2] = tmp4;
-    obj9 = require(11771) /* getShortcuts */;
+    obj9 = require(11772) /* getShortcuts */;
     const tmp10 = require;
     tmp3 = importDefault;
   }
@@ -614,24 +614,24 @@ export const filterHasAnswer = function filterHasAnswer(type, type2) {
   return !tmp2;
 };
 export const refreshSearchTokens = function refreshSearchTokens() {
-  const result = require(11771) /* getShortcuts */.rebuildSearchTokenConfigs();
+  const result = require(11772) /* getShortcuts */.rebuildSearchTokenConfigs();
   tmp4.reset();
-  const obj = require(11771) /* getShortcuts */;
+  const obj = require(11772) /* getShortcuts */;
   const tmp3 = importDefault(12);
-  importDefault(12)(importDefault(11771)).forOwn((arg0, type) => {
+  importDefault(12)(importDefault(11772)).forOwn((arg0, type) => {
     const merged = Object.assign(arg0);
     return closure_19.addRule({ type });
   });
   tmp5.reset();
-  const tmp3Result = importDefault(12)(importDefault(11771));
-  const crossDMSearchTokensConfig = require(11771) /* getShortcuts */.buildCrossDMSearchTokensConfig();
-  const obj3 = require(11771) /* getShortcuts */;
+  const tmp3Result = importDefault(12)(importDefault(11772));
+  const crossDMSearchTokensConfig = require(11772) /* getShortcuts */.buildCrossDMSearchTokensConfig();
+  const obj3 = require(11772) /* getShortcuts */;
   importDefault(12)(crossDMSearchTokensConfig).forOwn((arg0, type) => {
     const merged = Object.assign(arg0);
     return closure_20.addRule({ type });
   });
   const obj4 = importDefault(12)(crossDMSearchTokensConfig);
-  const result1 = importDefault(11777).markSearchTokensRefreshed();
+  const result1 = importDefault(11778).markSearchTokensRefreshed();
 };
 export const getChannelDisplayName = function getChannelDisplayName(isDM) {
   const channelName = require(4535) /* computeChannelName */.computeChannelName(isDM, mergeGuildAvatar, markAllUserIdListsStale);

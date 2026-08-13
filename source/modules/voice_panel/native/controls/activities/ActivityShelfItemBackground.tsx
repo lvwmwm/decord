@@ -1,8 +1,8 @@
-// Module ID: 16304
-// Function ID: 16305
-// Dependencies: [32, 19, 17, 21, 4342, 5821, 11527, 2]
+// Module ID: 16295
+// Function ID: 16296
+// Dependencies: [32, 19, 17, 21, 4342, 5821, 11528, 2]
 
-// Module 16304
+// Module 16295
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { Image } from "get ActivityIndicator";
@@ -53,7 +53,7 @@ const memoResult = importAllResult.memo(function ActivityShelfItemBackground(asp
     return tmp9Result;
   }
   const obj2 = { style: tmp.previewImage, children: null };
-  obj2[1] = jsx(importDefault(11527), {});
+  obj2[1] = jsx(importDefault(11528), {});
   tmp9Result = jsx(importDefault(5821), { style: tmp.previewImage, children: null });
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemBackground.tsx");

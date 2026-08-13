@@ -1,16 +1,16 @@
-// Module ID: 14992
-// Function ID: 14993
+// Module ID: 14983
+// Function ID: 14984
 // Name: useGoreContentNonFriendsDmSettingValue
-// Dependencies: [7044, 8127, 14145, 7107, 14149, 14142, 1236, 1306, 10407, 2]
+// Dependencies: [7044, 8127, 14136, 7107, 14140, 14133, 1236, 1306, 10407, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 14992 (useGoreContentNonFriendsDmSettingValue)
+// Module 14983 (useGoreContentNonFriendsDmSettingValue)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useGoreContentNonFriendsDmSettingValue() {
-  const parentalControlledGoreContentSettings = require(14145) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
+  const parentalControlledGoreContentSettings = require(14136) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
   let prop;
   if (parentalControlledGoreContentSettings != null) {
     prop = parentalControlledGoreContentSettings.goreContentNonFriendDm;
@@ -25,7 +25,7 @@ function useGoreContentNonFriendsDmSettingValue() {
 function onGoreContentNonFriendsDmOnPress() {
   selectedTeenId = selectedTeenId.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(14149);
+    let obj = selectedTeenId(14140);
     obj = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
     const intl = selectedTeenId(1236).intl;
     obj[0] = intl.string(selectedTeenId(1236).t["16/3Bi"]);
@@ -39,8 +39,8 @@ function onGoreContentNonFriendsDmOnPress() {
     obj[3] = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentNonFriendDm;
     const items = [selectedTeenId(1306).ExplicitContentRedaction.SHOW];
     obj[4] = items;
-    const result = selectedTeenId(14142).handleSensitiveMediaFilterPress(obj);
-    const obj2 = selectedTeenId(14142);
+    const result = selectedTeenId(14133).handleSensitiveMediaFilterPress(obj);
+    const obj2 = selectedTeenId(14133);
   }
 }
 createToggle = {

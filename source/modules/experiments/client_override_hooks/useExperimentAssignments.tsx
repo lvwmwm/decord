@@ -1,10 +1,10 @@
-// Module ID: 11259
-// Function ID: 11260
+// Module ID: 11260
+// Function ID: 11261
 // Name: useExperimentAssignment
 // Dependencies: [32, 4256, 1212, 589, 4264, 2]
 // Exports: getExperimentServerAssignment, useExperimentAssignment, useExperimentServerAssignment
 
-// Module 11259 (useExperimentAssignment)
+// Module 11260 (useExperimentAssignment)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
 import initialize from "initialize";

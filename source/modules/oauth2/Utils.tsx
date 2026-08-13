@@ -1,16 +1,16 @@
-// Module ID: 10475
-// Function ID: 10476
+// Module ID: 10477
+// Function ID: 10478
 // Name: getApplicationDetailsText
-// Dependencies: [676, 10476, 1236, 4877, 2]
+// Dependencies: [676, 10478, 1236, 4877, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 10475 (getApplicationDetailsText)
+// Module 10477 (getApplicationDetailsText)
 import { MarketingURLs } from "ME";
 
 let result = require("getSystemLocale").fileFinishedImporting("modules/oauth2/Utils.tsx");
 
 export const getApplicationDetailsText = function getApplicationDetailsText(application) {
-  let obj = require(10476) /* useIsSocialLayerParentApplication */;
+  let obj = require(10478) /* useIsSocialLayerParentApplication */;
   const isSocialLayerParentApplication = obj.getIsSocialLayerParentApplication(application);
   if (null != application.privacy_policy_url) {
     if (null != application.terms_of_service_url) {

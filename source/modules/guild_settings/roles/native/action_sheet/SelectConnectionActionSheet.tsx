@@ -1,10 +1,10 @@
-// Module ID: 16806
-// Function ID: 16807
+// Module ID: 16797
+// Function ID: 16798
 // Name: IdentityApplicationRow
-// Dependencies: [32, 19, 17, 21, 11009, 5414, 1297, 4278, 5436, 1236, 7010, 1435, 1363, 4310, 9005, 5804, 9191, 5439, 5368, 5807, 2]
+// Dependencies: [32, 19, 17, 21, 11010, 5414, 1297, 4278, 5436, 1236, 7010, 1435, 1363, 4310, 9005, 5804, 9191, 5439, 5368, 5807, 2]
 // Exports: default
 
-// Module 16806 (IdentityApplicationRow)
+// Module 16797 (IdentityApplicationRow)
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
 import { View } from "BottomSheetModal";
@@ -17,7 +17,7 @@ function IdentityApplicationRow(arg0) {
   let applicationId;
   let onPress;
   ({ applicationId, onPress } = arg0);
-  let obj = require(11009) /* request */;
+  let obj = require(11010) /* request */;
   const getOrFetchApplicationBatched = obj.useGetOrFetchApplicationBatched(applicationId);
   if (null == getOrFetchApplicationBatched) {
     return null;
@@ -25,7 +25,7 @@ function IdentityApplicationRow(arg0) {
     const bot = getOrFetchApplicationBatched.bot;
     let tmp6Result = null;
     if (null != bot) {
-      obj = { user: null, size: null, guildId: "e" };
+      obj = { user: null, size: null, guildId: "Array" };
       obj[0] = bot;
       obj[1] = tmp(1297).AvatarSizes.XSMALL;
       tmp6Result = tmp6(tmp(1297).Avatar, obj);
@@ -105,7 +105,7 @@ export default function SelectConnectionActionSheet(arg0) {
       let tmp = null;
       if (null != application) {
         let obj = { icon: null, label: null, subLabel: null, onPress: null };
-        obj = { user: null, size: null, guildId: "e" };
+        obj = { user: null, size: null, guildId: "Array" };
         obj[0] = application.bot;
         obj[1] = outer1_0(outer1_2[6]).AvatarSizes.XSMALL;
         obj[0] = outer1_6(outer1_0(outer1_2[6]).Avatar, obj);

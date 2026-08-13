@@ -1,10 +1,10 @@
-// Module ID: 14549
-// Function ID: 14550
+// Module ID: 14540
+// Function ID: 14541
 // Name: EmojiGallery
-// Dependencies: [19, 17, 21, 8801, 8803, 14550, 2]
+// Dependencies: [19, 17, 21, 8801, 8803, 14541, 2]
 // Exports: default
 
-// Module 14549 (EmojiGallery)
+// Module 14540 (EmojiGallery)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

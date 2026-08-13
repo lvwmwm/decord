@@ -1,10 +1,10 @@
-// Module ID: 15344
-// Function ID: 15345
+// Module ID: 15335
+// Function ID: 15336
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 1394, 21, 15345, 15346, 9759, 589, 5804, 5436, 1236, 5806, 11595, 4310, 15347, 5366, 8544, 4301, 2]
+// Dependencies: [19, 1394, 21, 15336, 15337, 9759, 589, 5804, 5436, 1236, 5806, 11596, 4310, 15338, 5366, 8544, 4301, 2]
 // Exports: openFavoritesGuildActionSheet
 
-// Module 15344 (FavoritesGuildActionSheet)
+// Module 15335 (FavoritesGuildActionSheet)
 import "noop";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import jsxProd from "jsxProd";
@@ -13,9 +13,9 @@ let c4;
 let c5;
 let require = arg1;
 function FavoritesGuildActionSheet() {
-  const tmp2 = importDefault(15345)();
+  const tmp2 = importDefault(15336)();
   const require = tmp2;
-  const tmp3 = importDefault(15346)();
+  const tmp3 = importDefault(15337)();
   importDefault = tmp3;
   let obj = require(9759) /* useFavoritesAccess */;
   let obj1 = require(589) /* initialize */;
@@ -35,11 +35,11 @@ function FavoritesGuildActionSheet() {
       const intl2 = tmp4(1236).intl;
       obj2[0] = intl2.string(tmp4(1236).t["0dOFq+"]);
       const obj3 = { IconComponent: null };
-      obj3[0] = tmp4(11595).ArrowsUpDownIcon;
+      obj3[0] = tmp4(11596).ArrowsUpDownIcon;
       obj2[1] = tmp7(tmp4(5806).ActionSheetRow.Icon, obj3);
       obj2[2] = function onPress() {
         tmp3(4310).hideActionSheet(closure_6);
-        tmp3(15347)();
+        tmp3(15338)();
       };
       obj1[1] = tmp7(tmp4(5806).ActionSheetRow, obj2);
       tmp7Result = tmp7(tmp4(5806).ActionSheetRow.Group, obj1);

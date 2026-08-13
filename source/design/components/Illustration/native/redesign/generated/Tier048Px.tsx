@@ -1,10 +1,10 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12844
+// Function ID: 12845
 // Name: getTier048PxSource
-// Dependencies: [19, 17, 21, 7668, 12844, 12845, 12846, 1363, 2]
+// Dependencies: [19, 17, 21, 7668, 12845, 12846, 12847, 1363, 2]
 // Exports: Tier048Px, getTier048PxSource, useTier048PxSource
 
-// Module 12843 (getTier048PxSource)
+// Module 12844 (getTier048PxSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getTier048PxSource = function getTier048PxSource(theme) {
   let obj = require(7668) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(12844);
-    },
-    darker() {
       return callback(12845);
     },
-    light() {
+    darker() {
       return callback(12846);
+    },
+    light() {
+      return callback(12847);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useTier048PxSource = function useTier048PxSource() {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12844);
-    },
-    darker() {
       return callback(12845);
     },
-    light() {
+    darker() {
       return callback(12846);
+    },
+    light() {
+      return callback(12847);
     }
   };
   return require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const Tier048Px = function Tier048Px(arg0) {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12844);
-    },
-    darker() {
       return callback(12845);
     },
-    light() {
+    darker() {
       return callback(12846);
+    },
+    light() {
+      return callback(12847);
     }
   };
   obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 10658
-// Function ID: 10659
+// Module ID: 10660
+// Function ID: 10661
 // Name: VideoEmptyState
-// Dependencies: [19, 17, 1391, 676, 21, 4342, 712, 10659, 1297, 1236, 10662, 9219, 589, 4771, 4524, 4408, 4338, 4756, 2]
+// Dependencies: [19, 17, 1391, 676, 21, 4342, 712, 10661, 1297, 1236, 10664, 9219, 589, 4771, 4524, 4408, 4338, 4756, 2]
 // Exports: default
 
-// Module 10658 (VideoEmptyState)
+// Module 10660 (VideoEmptyState)
 import "noop";
 import { View } from "CollapsingText";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -44,7 +44,7 @@ export default function VideoEmptyState(style) {
     if (!removeSplashImage) {
       obj = { style: null };
       obj[0] = tmp2.placeholderImage;
-      tmp16 = callback(stream(10659).StreamEnded, obj);
+      tmp16 = callback(stream(10661).StreamEnded, obj);
     }
     obj = { children: null };
     const items = [tmp16, ];
@@ -62,7 +62,7 @@ export default function VideoEmptyState(style) {
     if (!removeSplashImage) {
       obj = { style: null };
       obj[0] = tmp2.placeholderImage;
-      tmp7 = callback(stream(10662).StreamFailed, obj);
+      tmp7 = callback(stream(10664).StreamFailed, obj);
     }
     let obj2 = { children: null };
     const items1 = [tmp7, ];

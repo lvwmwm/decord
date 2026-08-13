@@ -1,10 +1,10 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 16902
+// Function ID: 16903
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 16897, 14515, 21, 16901, 1236, 16891, 2]
+// Dependencies: [32, 19, 16888, 14506, 21, 16892, 1236, 16882, 2]
 // Exports: default
 
-// Module 16911 (GuildRoleSubscriptionGroupGatingModal)
+// Module 16902 (GuildRoleSubscriptionGroupGatingModal)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import usePriceTiers from "usePriceTiers";
@@ -26,6 +26,6 @@ export default function GuildRoleSubscriptionGroupGatingModal(arg0) {
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.csJWVI);
   obj[3] = constants.GROUP;
   const merged = Object.assign(arg0);
-  obj.children = jsx(importDefault(16891), { isFullServerGating: tmp2, onChange: tmp3 });
-  return jsx(importDefault(16901), { title: null, description: null, canProceedToNextStep: true, nextStep: null });
+  obj.children = jsx(importDefault(16882), { isFullServerGating: tmp2, onChange: tmp3 });
+  return jsx(importDefault(16892), { title: null, description: null, canProceedToNextStep: true, nextStep: null });
 };

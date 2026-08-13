@@ -1,10 +1,10 @@
-// Module ID: 10781
-// Function ID: 10782
+// Module ID: 10783
+// Function ID: 10784
 // Name: useLocalStorageState
 // Dependencies: [32, 19, 595, 4771, 2]
 // Exports: useLocalStorageState
 
-// Module 10781 (useLocalStorageState)
+// Module 10783 (useLocalStorageState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

@@ -1,9 +1,9 @@
-// Module ID: 13251
-// Function ID: 13252
+// Module ID: 13252
+// Function ID: 13253
 // Name: map
 // Dependencies: [38, 589, 5381, 709, 698, 2007, 2]
 
-// Module 13251 (map)
+// Module 13252 (map)
 import { Store } from "initialize";
 import set from "getWindowId";
 

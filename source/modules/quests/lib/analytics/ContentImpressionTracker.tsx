@@ -1,10 +1,10 @@
-// Module ID: 10450
-// Function ID: 10451
+// Module ID: 10452
+// Function ID: 10453
 // Name: set
-// Dependencies: [5, 19, 7206, 9570, 676, 21, 514, 9566, 7204, 7233, 7234, 7232, 500, 7183, 9568, 10422, 9567, 9571, 7212, 7222, 7239, 7109, 7114, 10449, 589, 4771, 2]
+// Dependencies: [5, 19, 7206, 9570, 676, 21, 514, 9566, 7204, 7222, 7234, 7233, 500, 7183, 9568, 10422, 9567, 9571, 7212, 7223, 7239, 7109, 7114, 10451, 589, 4771, 2]
 // Exports: QuestContentImpressionTracker
 
-// Module 10450 (set)
+// Module 10452 (set)
 import jsxProd from "jsxProd";
 import importAllResult from "trackQuestEvent";
 import initializeState from "initializeState";
@@ -90,7 +90,7 @@ class QuestContentImpression {
               obj4 = 1;
               c3 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = obj10.getAdUser(outer1_0(7232).getQuestContentName(outer1_0.questContent));
+              obj1[0] = obj10.getAdUser(outer1_0(7233).getQuestContentName(outer1_0.questContent));
               return obj1;
             }
           } else if (arg0 === 1) {

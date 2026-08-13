@@ -1,9 +1,9 @@
-// Module ID: 15498
-// Function ID: 15499
+// Module ID: 15489
+// Function ID: 15490
 // Name: MiniGuildIcon
-// Dependencies: [19, 7143, 1910, 4165, 5196, 15488, 15494, 15489, 21, 4342, 712, 4065, 589, 5819, 1367, 4754, 4191, 688, 8054, 4083, 4689, 4808, 8275, 5308, 15499, 15501, 12038, 15508, 4311, 5272, 5821, 15491, 15509, 2]
+// Dependencies: [19, 7143, 1910, 4165, 5196, 15479, 15485, 15480, 21, 4342, 712, 4065, 589, 5819, 1367, 4754, 4191, 688, 8054, 4083, 4689, 4808, 8275, 5308, 15490, 15492, 12039, 15499, 4311, 5272, 5821, 15482, 15500, 2]
 
-// Module 15498 (MiniGuildIcon)
+// Module 15489 (MiniGuildIcon)
 import importAllResult from "module_4083";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

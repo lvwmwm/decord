@@ -1,10 +1,10 @@
-// Module ID: 12206
-// Function ID: 12207
+// Module ID: 12207
+// Function ID: 12208
 // Name: useMobileCollectiblesPurchaseSKU
 // Dependencies: [1922, 589, 9469, 10141, 2]
 // Exports: default
 
-// Module 12206 (useMobileCollectiblesPurchaseSKU)
+// Module 12207 (useMobileCollectiblesPurchaseSKU)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

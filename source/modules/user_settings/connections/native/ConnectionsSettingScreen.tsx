@@ -1,15 +1,15 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14268
+// Function ID: 14269
 // Name: onPress
-// Dependencies: [19, 21, 4310, 14278, 2007, 1499, 6925, 8431, 1236, 14279, 2]
+// Dependencies: [19, 21, 4310, 14269, 2007, 1499, 6925, 8431, 1236, 14270, 2]
 
-// Module 14277 (onPress)
+// Module 14268 (onPress)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function onPress() {
-  importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(14278, dependencyMap.paths), "AddConnection");
+  importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(14269, dependencyMap.paths), "AddConnection");
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo(function ConnectionsSettingScreen() {
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo(function ConnectionsSettingScreen() {
       }
     });
   }, items);
-  return jsx(tmp(14279).UserSettingsConnections, { selectedPlatformType });
+  return jsx(tmp(14270).UserSettingsConnections, { selectedPlatformType });
 });
 const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
 

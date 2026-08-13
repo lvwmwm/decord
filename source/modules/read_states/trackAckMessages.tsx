@@ -1,10 +1,10 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13257
+// Function ID: 13258
 // Name: trackAckMessages
 // Dependencies: [1391, 7143, 1910, 4540, 676, 4539, 2]
 // Exports: default
 
-// Module 13256 (trackAckMessages)
+// Module 13257 (trackAckMessages)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

@@ -1,10 +1,10 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15361
+// Function ID: 15362
 // Name: PreviewOverlay
-// Dependencies: [19, 17, 21, 4342, 712, 4194, 15371, 4278, 4766, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4194, 15362, 4278, 4766, 2]
 // Exports: default
 
-// Module 15370 (PreviewOverlay)
+// Module 15361 (PreviewOverlay)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -12,7 +12,7 @@ import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function PreviewOverlay() {
-  return <View pointerEvents="none" style={createCacheKey().previewOverlay}>{jsx(importDefault(15371), {})}</View>;
+  return <View pointerEvents="none" style={createCacheKey().previewOverlay}>{jsx(importDefault(15362), {})}</View>;
 }
 createCacheKey = { previewArt: null, previewOverlay: null };
 createCacheKey = { position: "relative", width: 256, aspectRatio: 1.5705521472392638, overflow: "hidden", borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };

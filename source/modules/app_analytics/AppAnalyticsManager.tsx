@@ -1,9 +1,9 @@
-// Module ID: 16467
-// Function ID: 16468
+// Module ID: 16458
+// Function ID: 16459
 // Name: _initialize
-// Dependencies: [4365, 4393, 4416, 5037, 5178, 4417, 676, 687, 5301, 4227, 4539, 15902, 4515, 2]
+// Dependencies: [4365, 4393, 4416, 5037, 5178, 4417, 676, 687, 5301, 4227, 4539, 15893, 4515, 2]
 
-// Module 16467 (_initialize)
+// Module 16458 (_initialize)
 import initialize from "initialize";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createRTCConnection from "createRTCConnection";
@@ -127,7 +127,7 @@ prototype["_terminate"] = function _terminate() {
 prototype["getGameMetadata"] = function getGameMetadata() {
   const findActivityResult = filterPlayingActivities.findActivity((type) => type.type === constants.PLAYING);
   currentGameForAnalytics = currentGameForAnalytics.getCurrentGameForAnalytics();
-  const obj = { game_platform: importDefault(15902)(findActivityResult), game_name: null, game_exe_name: null, game_id: null, game_distributor: null, game_distributor_game_id: null, game_metadata: null };
+  const obj = { game_platform: importDefault(15893)(findActivityResult), game_name: null, game_exe_name: null, game_id: null, game_distributor: null, game_distributor_game_id: null, game_metadata: null };
   let name = null;
   if (null != findActivityResult) {
     name = findActivityResult.name;

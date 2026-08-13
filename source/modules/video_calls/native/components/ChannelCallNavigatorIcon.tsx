@@ -1,10 +1,10 @@
-// Module ID: 10774
-// Function ID: 10775
+// Module ID: 10776
+// Function ID: 10777
 // Name: ChannelCallNavigatorIcon
 // Dependencies: [19, 17, 9789, 676, 21, 4342, 712, 4887, 1363, 4745, 1297, 2]
 // Exports: default
 
-// Module 10774 (ChannelCallNavigatorIcon)
+// Module 10776 (ChannelCallNavigatorIcon)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetFocusTimer } from "VoiceChatDrawerState";

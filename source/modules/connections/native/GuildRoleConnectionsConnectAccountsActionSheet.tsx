@@ -1,9 +1,9 @@
-// Module ID: 11008
-// Function ID: 11009
+// Module ID: 11009
+// Function ID: 11010
 // Name: PlatformIcon
-// Dependencies: [5, 32, 19, 17, 5290, 1994, 1930, 1218, 1391, 5039, 1990, 3989, 5166, 676, 21, 4342, 712, 4278, 5041, 1435, 1363, 1297, 4805, 4535, 4338, 1236, 5165, 11009, 5771, 9181, 11010, 11011, 12, 4065, 11012, 38, 4062, 8661, 4771, 8012, 5164, 589, 5167, 5272, 698, 4539, 4310, 6059, 11015, 10452, 709, 4550, 10597, 2007, 9591, 11019, 5437, 11020, 5812, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 5290, 1994, 1930, 1218, 1391, 5039, 1990, 3989, 5166, 676, 21, 4342, 712, 4278, 5041, 1435, 1363, 1297, 4805, 4535, 4338, 1236, 5165, 11010, 5771, 9181, 11011, 11012, 12, 4065, 11013, 38, 4062, 8661, 4771, 8012, 5164, 589, 5167, 5272, 698, 4539, 4310, 6059, 11016, 10454, 709, 4550, 10599, 2007, 9591, 11020, 5437, 11021, 5812, 4755, 2]
 
-// Module 11008 (PlatformIcon)
+// Module 11009 (PlatformIcon)
 import _getSystemLocale from "_getSystemLocale";
 import apply from "apply";
 import getAvatarURL from "getAvatarURL";
@@ -301,7 +301,7 @@ function IdentityConnectionsCheckGroup(eligibilityState) {
     obj3[3] = callback;
     let tmp15Result = null;
     if (null != memo) {
-      const obj4 = { style: null, user: null, size: null, guildId: "Array" };
+      const obj4 = { style: null, user: null, size: null, guildId: "a" };
       obj4[0] = tmp.appIcon;
       obj4[1] = memo;
       obj4[2] = tmp2(tmp3[21]).AvatarSizes.XSMALL;
@@ -628,7 +628,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
     items1[1] = tmp24Result1;
     let tmp24Result2 = null;
     if (null != tmp11) {
-      const obj10 = { style: null, user: null, size: null, guildId: "Array" };
+      const obj10 = { style: null, user: null, size: null, guildId: "a" };
       obj10[0] = tmp38.appIcon;
       obj10[1] = tmp11;
       obj10[2] = tmp15(tmp6[21]).AvatarSizes.XSMALL;
@@ -857,9 +857,9 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     useState = undefined;
     c14 = undefined;
     useState = undefined;
-    f86773 = undefined;
+    f86753 = undefined;
     useState = undefined;
-    f86774 = undefined;
+    f86754 = undefined;
     c19 = undefined;
     _handleAssignRole = function _handleAssignRole() {
       const self = this;
@@ -980,7 +980,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
       }
       return tmp2;
     }), 2);
-    [tmp26, f86773] = tmp25;
+    [tmp26, f86753] = tmp25;
     tmp27 = onCloseModal(CHECKS_REQUIRED.useState(null), 2);
     [arr6, useState] = tmp27;
     tmp28 = role;
@@ -989,7 +989,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     items3 = [];
     items3[0] = useState;
     stateFromStores3 = obj4.useStateFromStores(items3, () => member.getMember(guildId, stateFromStores2));
-    f86774 = stateFromStores3;
+    f86754 = stateFromStores3;
     obj5 = require("initialize");
     items4 = [];
     items4[0] = useState;

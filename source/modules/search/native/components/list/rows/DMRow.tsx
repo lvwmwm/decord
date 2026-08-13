@@ -1,9 +1,9 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 15807
+// Function ID: 15808
 // Name: FriendPresence
-// Dependencies: [5, 32, 19, 17, 4334, 4431, 3998, 676, 21, 4342, 712, 4338, 4187, 9687, 589, 9181, 1297, 9056, 12837, 15817, 2]
+// Dependencies: [5, 32, 19, 17, 4334, 4431, 3998, 676, 21, 4342, 712, 4338, 4187, 9687, 589, 9181, 1297, 9056, 12838, 15808, 2]
 
-// Module 15816 (FriendPresence)
+// Module 15807 (FriendPresence)
 import sortActivity from "sortActivity";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "SearchListRow";

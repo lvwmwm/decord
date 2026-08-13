@@ -1,10 +1,10 @@
-// Module ID: 11584
-// Function ID: 11585
+// Module ID: 11585
+// Function ID: 11586
 // Name: Tag
-// Dependencies: [5, 32, 19, 17, 7633, 4368, 676, 21, 712, 4342, 4338, 9598, 11585, 11500, 11494, 7030, 8386, 1236, 698, 9599, 4755, 4355, 10946, 10589, 5768, 5788, 4890, 589, 5372, 5808, 10947, 7835, 5774, 11586, 11587, 11588, 1297, 11526, 10485, 4858, 11590, 2]
+// Dependencies: [5, 32, 19, 17, 7633, 4368, 676, 21, 712, 4342, 4338, 9598, 11586, 11501, 11495, 7030, 8386, 1236, 698, 9599, 4755, 4355, 10948, 10591, 5768, 5788, 4890, 589, 5372, 5808, 10949, 7835, 5774, 11587, 11588, 11589, 1297, 11527, 10487, 4858, 11591, 2]
 // Exports: default
 
-// Module 11584 (Tag)
+// Module 11585 (Tag)
 import createExecutable from "createExecutable";
 import useGetOrFetchApplications from "useGetOrFetchApplications";
 import AppLauncherEntrypoint from "AppLauncherEntrypoint";
@@ -152,7 +152,7 @@ function TryItOutButton(botUserId) {
         ref = 3;
         c5 = 1;
         const obj6 = { value: null, done: false };
-        obj6[0] = outer1_1(10946)(obj5);
+        obj6[0] = outer1_1(10948)(obj5);
         return obj6;
       }
     } else if (arg0 === 1) {
@@ -213,7 +213,7 @@ export default function ActivityDetailContent(application) {
   const tmp = createCacheKey();
   let obj = application(9598);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj1 = application(10589);
+  let obj1 = application(10591);
   const getPrimaryAppCommand = obj1.useGetPrimaryAppCommand(context, application.id);
   const analyticsLocations = importDefault(5768)(importDefault(5788).APP_DETAIL).analyticsLocations;
   let obj2 = application(4890);
@@ -245,7 +245,7 @@ export default function ActivityDetailContent(application) {
       let intl = tmp2(1236).intl;
       obj1[0] = intl.string(tmp2(1236).t["3TSGuD"]);
       obj1[1] = useActivityUrlOverride;
-      obj1[2] = importAll(10947).toggleUseActivityUrlOverride;
+      obj1[2] = importAll(10949).toggleUseActivityUrlOverride;
       items1[1] = callback3(tmp2(5808).TableSwitchRow, obj1);
       let tmp19Result = null;
       if (useActivityUrlOverride) {
@@ -253,7 +253,7 @@ export default function ActivityDetailContent(application) {
         obj2[0] = tmp.activityUrlOverrideInputContainer;
         const obj3 = { placeholder: "e.g. http://192.168.1.1:3000", value: null, onChange: null };
         obj3[1] = activityUrlOverride;
-        obj3[2] = tmp20(10947).setActivityUrlOverride;
+        obj3[2] = tmp20(10949).setActivityUrlOverride;
         obj2[1] = tmp19(tmp2(7835).TextInput, obj3);
         tmp19Result = tmp19(tmp18, obj2);
       }
@@ -272,20 +272,20 @@ export default function ActivityDetailContent(application) {
     const obj4 = { context: null, applicationId: null };
     obj4[0] = context;
     obj4[1] = application.id;
-    const activityAction = tmp2(11500).useActivityAction(obj4);
-    const tmp2Result2 = tmp2(11500);
-    const delayedSwapToActivityActionLeave = tmp2(11586).useDelayedSwapToActivityActionLeave(activityAction);
+    const activityAction = tmp2(11501).useActivityAction(obj4);
+    const tmp2Result2 = tmp2(11501);
+    const delayedSwapToActivityActionLeave = tmp2(11587).useDelayedSwapToActivityActionLeave(activityAction);
     const obj5 = { context: null, application: null, activityAction: null };
     obj5[0] = context;
     obj5[1] = application;
     obj5[2] = delayedSwapToActivityActionLeave;
-    const tmp2Result3 = tmp2(11586);
-    ({ reason, disabled } = tmp5(11587)(obj5));
+    const tmp2Result3 = tmp2(11587);
+    ({ reason, disabled } = tmp5(11588)(obj5));
     const obj6 = { context: null, application: null, botUserId: null };
     obj6[0] = context;
     obj6[1] = application;
     let id;
-    let tmp5Result = tmp5(11588);
+    let tmp5Result = tmp5(11589);
     if (bot != null) {
       id = bot.id;
     }
@@ -379,7 +379,7 @@ export default function ActivityDetailContent(application) {
     const obj20 = { applicationId: null, width: null };
     obj20[0] = application.id;
     let result = width;
-    tmp5Result = tmp5(11526);
+    tmp5Result = tmp5(11527);
     if (detailsContainerLandscape) {
       result = 65 * width / 100;
     }
@@ -395,25 +395,25 @@ export default function ActivityDetailContent(application) {
     obj21[0] = items6;
     const obj22 = { application: null };
     obj22[0] = application;
-    const items7 = [callback3(tmp5(10485), obj22), , , , ];
+    const items7 = [callback3(tmp5(10487), obj22), , , , ];
     const obj23 = { style: null, children: null };
     obj23[0] = tmp.tagList;
     const obj24 = { icon: null, tagName: null, accessibilityLabel: null };
     const obj25 = { style: null, size: "xs" };
     obj25[0] = tmp.tagIcon;
     obj24[0] = callback3(tmp2(4858).GroupIcon, obj25);
-    const tmp26 = tmp5(11587)(obj5);
+    const tmp26 = tmp5(11588)(obj5);
     const tmp49 = Tag;
     let num5 = num;
     if (num == null) {
       num5 = 0;
     }
-    obj24[1] = tmp2(11590).getItemSubtitleForMaxPlayersShort(num5);
-    const tmp2Result5 = tmp2(11590);
+    obj24[1] = tmp2(11591).getItemSubtitleForMaxPlayersShort(num5);
+    const tmp2Result5 = tmp2(11591);
     if (num == null) {
       num = 0;
     }
-    obj24[2] = tmp5(11590)(num);
+    obj24[2] = tmp5(11591)(num);
     const items8 = [callback3(tmp49, obj24, "participants"), ];
     const tags = application.tags;
     let mapped;

@@ -1,10 +1,10 @@
-// Module ID: 10471
-// Function ID: 10472
+// Module ID: 10473
+// Function ID: 10474
 // Name: items
 // Dependencies: [1236, 8951, 2]
 // Exports: getScopeNames, getSecurityMessage, isSocialLayerUmbrellaScope
 
-// Module 10471 (items)
+// Module 10473 (items)
 let items = [
   () => {
     const intl = require(1236) /* getSystemLocale */.intl;

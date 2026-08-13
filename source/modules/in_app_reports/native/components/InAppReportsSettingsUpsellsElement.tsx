@@ -1,10 +1,10 @@
-// Module ID: 12720
-// Function ID: 12721
+// Module ID: 12721
+// Function ID: 12722
 // Name: SettingsUpsellsTableRow
-// Dependencies: [32, 19, 17, 1391, 676, 21, 4342, 712, 4771, 8069, 12714, 6054, 589, 8077, 5807, 1236, 4338, 6059, 4539, 2]
+// Dependencies: [32, 19, 17, 1391, 676, 21, 4342, 712, 4771, 8069, 12715, 6054, 589, 8077, 5807, 1236, 4338, 6059, 4539, 2]
 // Exports: default
 
-// Module 12720 (SettingsUpsellsTableRow)
+// Module 12721 (SettingsUpsellsTableRow)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "openUserSettings";
@@ -45,7 +45,7 @@ function SettingsUpsellsTableRow(arg0) {
     icon: null
   };
   obj[5] = callback2(require(6054) /* SettingsIcon */.SettingsIcon, {});
-  return callback2(importDefault(12714), obj);
+  return callback2(importDefault(12715), obj);
 }
 ({ AnalyticEvents: error, UserSettingsSections: metroImportAll } = ME);
 ({ jsx: c9, jsxs: c10 } = jsxProd);

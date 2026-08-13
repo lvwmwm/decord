@@ -1,10 +1,10 @@
-// Module ID: 13511
-// Function ID: 13512
+// Module ID: 13502
+// Function ID: 13503
 // Name: BadgeColors
 // Dependencies: [19, 17, 21, 4342, 712, 4338, 2]
 // Exports: TextBadge
 
-// Module 13511 (BadgeColors)
+// Module 13502 (BadgeColors)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

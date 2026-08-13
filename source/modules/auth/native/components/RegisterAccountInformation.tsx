@@ -1,10 +1,10 @@
-// Module ID: 15180
-// Function ID: 15181
+// Module ID: 15171
+// Function ID: 15172
 // Name: RegisterAccountInformation
-// Dependencies: [5, 32, 19, 17, 5869, 4327, 9119, 15158, 15159, 676, 21, 4342, 712, 4083, 8521, 15156, 589, 15181, 15183, 15166, 1236, 15174, 15157, 15173, 8548, 15184, 15185, 4755, 8518, 5864, 2]
+// Dependencies: [5, 32, 19, 17, 5869, 4327, 9119, 15149, 15150, 676, 21, 4342, 712, 4083, 8521, 15147, 589, 15172, 15174, 15157, 1236, 15165, 15148, 15164, 8548, 15175, 15176, 4755, 8518, 5864, 2]
 // Exports: default
 
-// Module 15180 (RegisterAccountInformation)
+// Module 15171 (RegisterAccountInformation)
 import updateInvite from "updateInvite";
 import _slicedToArray from "_slicedToArray";
 import trackRegTransition from "trackRegTransition";
@@ -181,7 +181,7 @@ export default function RegisterAccountInformation() {
   const tmp3 = importDefault(8521)();
   const tmp4 = callback4(tmp3);
   let obj = React;
-  context = React.useContext(context(15156).TrackRegistrationContext);
+  context = React.useContext(context(15147).TrackRegistrationContext);
   let tmp8 = callback2((submitting) => submitting.submitting);
   const tmp7 = callback2((registrationOptions) => registrationOptions.registrationOptions);
   [tmp10, importDefault] = callback(React.useState(false), 2);
@@ -199,10 +199,10 @@ export default function RegisterAccountInformation() {
     return invite;
   });
   const ref = React.useRef(null);
-  let obj3 = context(15181);
+  let obj3 = context(15172);
   const passwordRegistrationStep = obj3.usePasswordRegistrationStep();
   ({ password, validatePassword: _slicedToArray, setPassword, passwordScore, preventSubmitPassword } = passwordRegistrationStep);
-  let obj4 = context(15183);
+  let obj4 = context(15174);
   const usernameRegistrationStep = obj4.useUsernameRegistrationStep(AuthStates.REGISTER_ACCOUNT_INFORMATION);
   ({ transitionToNextStepOrSubmit: trackRegTransition, username, preventSubmitUsername, validateUsername: closure_6 } = usernameRegistrationStep);
   obj = {};
@@ -218,7 +218,7 @@ export default function RegisterAccountInformation() {
   let tmp5Result = tmp5(589);
   const items2 = [hasConsented];
   const stateFromStores1 = tmp5Result.useStateFromStores(items2, () => authenticationConsentRequired.getAuthenticationConsentRequired());
-  tmp5Result = tmp5(15166);
+  tmp5Result = tmp5(15157);
   obj = { isConsentRequired: true === stateFromStores1 };
   const result = tmp5Result.hasAllRegistrationFieldsCompleted(obj, obj);
   hasConsented = result;
@@ -240,10 +240,10 @@ export default function RegisterAccountInformation() {
     }
     return applyArgumentsResult;
   }
-  let tmpResult = tmp(15174);
+  let tmpResult = tmp(15165);
   const tmp9 = callback(React.useState(false), 2);
-  tmpResult(context(15157).getPreviousRegistrationTransitionStep(AuthStates.REGISTER_ACCOUNT_INFORMATION));
-  importDefault(15173)(AuthStates.REGISTER_ACCOUNT_INFORMATION);
+  tmpResult(context(15148).getPreviousRegistrationTransitionStep(AuthStates.REGISTER_ACCOUNT_INFORMATION));
+  importDefault(15164)(AuthStates.REGISTER_ACCOUNT_INFORMATION);
   const items3 = [context];
   const effect = obj.useEffect(() => {
     context({ step: outer1_14.ACCOUNT_INFORMATION, actionType: outer1_15.VIEWED });
@@ -259,7 +259,7 @@ export default function RegisterAccountInformation() {
   const intl2 = tmp5(1236).intl;
   obj1[0] = intl2.string(context(1236).t.jec90v);
   obj2 = { contentContainerStyle: { flexGrow: 1 }, keyboardShouldPersistTaps: "handled", children: null };
-  obj3 = { style: tmp4.container, children: callback3(tmp5(15184).RegisterUsernameInput, { username, setUsername, onSubmitEditing: callback, usernameStatus, submitBehavior: "submit", autoFocus: true }) };
+  obj3 = { style: tmp4.container, children: callback3(tmp5(15175).RegisterUsernameInput, { username, setUsername, onSubmitEditing: callback, usernameStatus, submitBehavior: "submit", autoFocus: true }) };
   const items4 = [callback3(closure_6, obj3), , ];
   obj4 = { style: tmp4.password };
   const merged1 = Object.assign(createCacheKey);
@@ -269,7 +269,7 @@ export default function RegisterAccountInformation() {
     str = "done";
   }
   obj5[5] = str;
-  obj4.children = callback3(context(15185).RegisterPasswordInput, obj5);
+  obj4.children = callback3(context(15176).RegisterPasswordInput, obj5);
   items4[1] = callback3(importDefault(4083).View, obj4);
   const obj6 = { style: tmp4.button };
   const merged2 = Object.assign(createCacheKey);

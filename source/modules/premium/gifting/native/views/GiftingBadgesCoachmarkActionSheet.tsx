@@ -1,10 +1,10 @@
-// Module ID: 16096
-// Function ID: 16097
+// Module ID: 16087
+// Function ID: 16088
 // Name: HasBadgeCoachmark
-// Dependencies: [19, 17, 8839, 1388, 21, 4342, 712, 4310, 4198, 5437, 10085, 4338, 1236, 2399, 4755, 10078, 5788, 16097, 9624, 589, 8835, 2]
+// Dependencies: [19, 17, 8839, 1388, 21, 4342, 712, 4310, 4198, 5437, 10085, 4338, 1236, 2399, 4755, 10078, 5788, 16088, 9624, 589, 8835, 2]
 // Exports: default
 
-// Module 16096 (HasBadgeCoachmark)
+// Module 16087 (HasBadgeCoachmark)
 import initialize from "initialize";
 import get_ActivityIndicator from "metadata";
 import map from "map";
@@ -99,7 +99,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   obj = { style: tmp.graphicContainer, children: null };
   const obj1 = { source: null, style: null };
   const obj2 = { uri: null };
-  obj2[0] = importDefault(16097);
+  obj2[0] = importDefault(16088);
   obj1[0] = obj2;
   obj1[1] = tmp.newBadgeImage;
   obj[1] = callback(closure_4, obj1);

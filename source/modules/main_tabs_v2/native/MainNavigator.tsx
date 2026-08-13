@@ -1,13 +1,13 @@
-// Module ID: 15153
-// Function ID: 15154
+// Module ID: 15144
+// Function ID: 15145
 // Name: getAuthComponent
-// Dependencies: [32, 19, 17, 1218, 15154, 676, 21, 4342, 500, 4322, 13492, 15155, 15156, 15214, 15897, 15903, 15906, 15943, 15967, 8618, 16021, 16024, 16028, 16030, 16059, 16064, 4205, 1497, 1626, 4539, 8431, 16065, 16116, 647, 10628, 4200, 5823, 10976, 15958, 16119, 16157, 10743, 16159, 9727, 2]
+// Dependencies: [32, 19, 17, 1218, 15145, 676, 21, 4342, 500, 4322, 13493, 15146, 15147, 15205, 15888, 15894, 15897, 15934, 15958, 8618, 16012, 16015, 16019, 16021, 16050, 16055, 4205, 1497, 1626, 4539, 8431, 16056, 16107, 647, 10630, 4200, 5823, 10977, 15949, 16110, 16148, 10745, 16150, 9727, 2]
 // Exports: getChannelScreen
 
-// Module 15153 (getAuthComponent)
+// Module 15144 (getAuthComponent)
 import useNativeThemeUpdater from "useNativeThemeUpdater";
 import importAllResult from "HeaderWithBorder";
-import { View } from "module_15943";
+import { View } from "module_15934";
 import fetchFingerprint from "fetchFingerprint";
 import { StackNavigationAnimationSettings as closure_7 } from "StackNavigationAnimationSettings";
 import ME from "ME";
@@ -23,49 +23,49 @@ let metroImportAll;
 let unpackModuleId;
 let require = arg1;
 function getAuthComponent() {
-  return require(15156) /* NavigatorWithCaptchaHook */.default;
+  return require(15147) /* NavigatorWithCaptchaHook */.default;
 }
 function getTabsComponent() {
-  return require(15214).default;
+  return require(15205).default;
 }
 function getChannelComponent() {
   return View;
 }
 function WrappedAutoAnalytics() {
-  return callback2(require(15897) /* componentDidMount */.default, {});
+  return callback2(require(15888) /* componentDidMount */.default, {});
 }
 function getMemberVerificationComponent() {
-  return require(15903) /* Loading */.default;
+  return require(15894) /* Loading */.default;
 }
 function getFriendsNavigatorComponent() {
-  return require(15906) /* RequestsSettingsModalButton */.default;
+  return require(15897) /* RequestsSettingsModalButton */.default;
 }
 function getYouComponent() {
-  return require(15943).default;
+  return require(15934).default;
 }
 function getChannelDetailsComponent() {
-  return require(15967) /* ConnectedCreateThreadHeaderButton */.default;
+  return require(15958) /* ConnectedCreateThreadHeaderButton */.default;
 }
 function getConversationsComponent() {
   return require(8618) /* HeaderWithBorder */.default;
 }
 function getSearchComponent() {
-  return require(16021).default;
+  return require(16012).default;
 }
 function getContextMenuCommandNavigatorComponent() {
-  return require(16024) /* ContextMenuCommandNavigator */.default;
+  return require(16015) /* ContextMenuCommandNavigator */.default;
 }
 function getModalComponent() {
-  return require(16028) /* Modal */.default;
+  return require(16019) /* Modal */.default;
 }
 function getMessageRequestsComponent() {
-  return require(16030) /* MessageRequestsNavigator */.default;
+  return require(16021) /* MessageRequestsNavigator */.default;
 }
 function getSettingsComponent() {
-  return require(16059) /* Settings */.default;
+  return require(16050) /* Settings */.default;
 }
 function getAccountStanding() {
-  return require(16064) /* SuspendedUserSafetyHubPage */.default;
+  return require(16055) /* SuspendedUserSafetyHubPage */.default;
 }
 let c4 = importAllResult;
 ({ AnalyticEvents: metroImportAll, DrawerSourceTypes: c9 } = ME);

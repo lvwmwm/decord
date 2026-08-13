@@ -1,9 +1,9 @@
-// Module ID: 15834
-// Function ID: 15835
+// Module ID: 15825
+// Function ID: 15826
 // Name: GuildChannelMessageRowHeader
-// Dependencies: [19, 17, 4334, 1394, 1391, 1910, 4540, 676, 21, 4342, 712, 589, 4805, 4535, 1297, 4338, 9871, 10005, 9181, 4187, 8357, 15835, 12629, 15836, 4573, 8115, 5987, 15817, 1236, 9839, 4039, 2]
+// Dependencies: [19, 17, 4334, 1394, 1391, 1910, 4540, 676, 21, 4342, 712, 589, 4805, 4535, 1297, 4338, 9871, 10005, 9181, 4187, 8357, 15826, 12630, 15827, 4573, 8115, 5987, 15808, 1236, 9839, 4039, 2]
 
-// Module 15834 (GuildChannelMessageRowHeader)
+// Module 15825 (GuildChannelMessageRowHeader)
 import importAllResult from "nameFromUser";
 import get_ActivityIndicator from "registerAsset";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -94,7 +94,7 @@ function PrivateChannelMessageRowLabel(message) {
       const item = recipients.forEach((arg0) => callback(table[20]).getUser(arg0));
     }
   }, items1);
-  let obj = message(15835);
+  let obj = message(15826);
   const searchMessageTimestamp = obj.useSearchMessageTimestamp(message, channel);
   obj = { style: tmp.labelContainer, children: null };
   obj = { style: tmp.authorRow, children: null };
@@ -122,14 +122,14 @@ function PrivateChannelMessageRowLabel(message) {
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
     const obj4 = { size: "xs", style: null };
     obj4[1] = tmp.suppressNotificationsIcon;
-    tmp9Result = tmp9(tmp4(12629).BellZIcon, obj4);
+    tmp9Result = tmp9(tmp4(12630).BellZIcon, obj4);
   }
   items3[2] = tmp9Result;
   tmp9Result = null;
   if (message.isPoll()) {
     const obj5 = { style: null };
     obj5[0] = tmp.pollBadge;
-    tmp9Result = tmp9(channel(15836), obj5);
+    tmp9Result = tmp9(channel(15827), obj5);
   }
   items3[3] = tmp9Result;
   obj[1] = items3;
@@ -157,7 +157,7 @@ function GuildChannelMessageRowLabel(arg0) {
     const processColorStringsArray = tmp2Result.useProcessColorStringsArray(colorStrings);
     tmp2Result = tmp2(8115);
     const isRoleStyleAndRoleColorsEligibleForERC = tmp2Result.useIsRoleStyleAndRoleColorsEligibleForERC(channel.guild_id, message.author.id, stateFromStores, processColorStringsArray);
-    const searchMessageTimestamp = tmp2(15835).useSearchMessageTimestamp(message, channel);
+    const searchMessageTimestamp = tmp2(15826).useSearchMessageTimestamp(message, channel);
     obj = { style: null, children: null };
     obj[0] = tmp.labelContainer;
     const obj1 = { style: null, children: null };
@@ -194,14 +194,14 @@ function GuildChannelMessageRowLabel(arg0) {
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
       const obj5 = { size: "xs", style: null };
       obj5[1] = tmp.suppressNotificationsIcon;
-      tmp21Result = tmp21(tmp2(12629).BellZIcon, obj5);
+      tmp21Result = tmp21(tmp2(12630).BellZIcon, obj5);
     }
     items2[2] = tmp21Result;
     tmp21Result = null;
     if (message.isPoll()) {
       const obj6 = { style: null };
       obj6[0] = tmp.pollBadge;
-      tmp21Result = tmp21(importDefault(15836), obj6);
+      tmp21Result = tmp21(importDefault(15827), obj6);
     }
     items2[3] = tmp21Result;
     obj[1] = items2;

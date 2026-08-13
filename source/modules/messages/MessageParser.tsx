@@ -46,10 +46,10 @@ function rebuild(arr) {
   let c3 = "";
   const items = [];
   const item = arr.forEach((content) => {
-    (function handleEmoji(closure_0, type, f79168) {
-      if (null != f79168) {
+    (function handleEmoji(closure_0, type, f79148) {
+      if (null != f79148) {
         if ("customEmoticon" === type.type) {
-          f79168(type.emoji, false);
+          f79148(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           const result = callback(4002).translateSurrogatesToInlineEmoji(type.content);
@@ -66,7 +66,7 @@ function rebuild(arr) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f79168(byId, tmp11);
+                    let tmp12 = f79148(byId, tmp11);
                   }
                   let tmp13 = regex;
                   match = regex.exec(result);
@@ -84,7 +84,7 @@ function rebuild(arr) {
           const obj = callback(4002);
         }
       }
-    })(getGuildId, content, f79168);
+    })(getGuildId, content, f79148);
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {
@@ -109,8 +109,8 @@ function rebuild(arr) {
           }
         }
         if (true === tmp.isNotification) {
-          _var = _var + getGuildId(f79168[26]).isolate(content.content);
-          let obj2 = getGuildId(f79168[26]);
+          _var = _var + getGuildId(f79148[26]).isolate(content.content);
+          let obj2 = getGuildId(f79148[26]);
         } else {
           _var = _var + content.content;
         }
@@ -299,10 +299,10 @@ function unparseWithMeta(content, id, isNotification) {
   let c3 = "";
   const items = [];
   const item = translateSurrogatesToInlineEmoji(4060).parserFor(omitResult)(content, obj).forEach((content) => {
-    (function handleEmoji(closure_0, type, f79168) {
-      if (null != f79168) {
+    (function handleEmoji(closure_0, type, f79148) {
+      if (null != f79148) {
         if ("customEmoticon" === type.type) {
-          f79168(type.emoji, false);
+          f79148(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           const result = callback(4002).translateSurrogatesToInlineEmoji(type.content);
@@ -319,7 +319,7 @@ function unparseWithMeta(content, id, isNotification) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f79168(byId, tmp11);
+                    let tmp12 = f79148(byId, tmp11);
                   }
                   let tmp13 = regex;
                   match = regex.exec(result);
@@ -337,7 +337,7 @@ function unparseWithMeta(content, id, isNotification) {
           const obj = callback(4002);
         }
       }
-    })(getGuildId, content, f79168);
+    })(getGuildId, content, f79148);
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {
@@ -362,8 +362,8 @@ function unparseWithMeta(content, id, isNotification) {
           }
         }
         if (true === tmp.isNotification) {
-          _var = _var + getGuildId(f79168[26]).isolate(content.content);
-          let obj2 = getGuildId(f79168[26]);
+          _var = _var + getGuildId(f79148[26]).isolate(content.content);
+          let obj2 = getGuildId(f79148[26]);
         } else {
           _var = _var + content.content;
         }
@@ -1105,9 +1105,9 @@ const obj15 = {
     let obj = { content, tts: false, invalidEmojis: [], validNonShortcutEmojis: [] };
     importDefault = obj;
     closure_0 = tmp;
-    importDefault = importDefault(f79168[19]).translateInlineEmojiToSurrogates;
-    f79168 = (emoji) => {
-      let obj = lib(f79168[29]);
+    importDefault = importDefault(f79148[19]).translateInlineEmojiToSurrogates;
+    f79148 = (emoji) => {
+      let obj = lib(f79148[29]);
       obj = { emoji, channel: closure_0, intention: outer1_17.CHAT };
       if (obj.isEmojiPremiumLocked(obj)) {
         const invalidEmojis = lib.invalidEmojis;
@@ -1120,10 +1120,10 @@ const obj15 = {
     let c3 = "";
     let rebuild = [];
     const item = callback(obj.content, tmp).forEach((content) => {
-      (function handleEmoji(closure_0, type, f79168) {
-        if (null != f79168) {
+      (function handleEmoji(closure_0, type, f79148) {
+        if (null != f79148) {
           if ("customEmoticon" === type.type) {
-            f79168(type.emoji, false);
+            f79148(type.emoji, false);
           }
           if ("emoticon" === type.type) {
             const result = callback(4002).translateSurrogatesToInlineEmoji(type.content);
@@ -1140,7 +1140,7 @@ const obj15 = {
                     }
                     if (byId) {
                       let tmp11 = type.isShortcut || false;
-                      let tmp12 = f79168(byId, tmp11);
+                      let tmp12 = f79148(byId, tmp11);
                     }
                     let tmp13 = regex;
                     match = regex.exec(result);
@@ -1158,7 +1158,7 @@ const obj15 = {
             const obj = callback(4002);
           }
         }
-      })(getGuildId, content, f79168);
+      })(getGuildId, content, f79148);
       if (typeof content.content === "string") {
         const type = content.type;
         if ("emoji" === type) {
@@ -1183,8 +1183,8 @@ const obj15 = {
             }
           }
           if (true === tmp.isNotification) {
-            _var = _var + getGuildId(f79168[26]).isolate(content.content);
-            let obj2 = getGuildId(f79168[26]);
+            _var = _var + getGuildId(f79148[26]).isolate(content.content);
+            let obj2 = getGuildId(f79148[26]);
           } else {
             _var = _var + content.content;
           }
@@ -1228,10 +1228,10 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
   let c3 = "";
   let rebuild = [];
   const item = callback(arg0, arg1).forEach((content) => {
-    (function handleEmoji(closure_0, type, f79168) {
-      if (null != f79168) {
+    (function handleEmoji(closure_0, type, f79148) {
+      if (null != f79148) {
         if ("customEmoticon" === type.type) {
-          f79168(type.emoji, false);
+          f79148(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           const result = callback(4002).translateSurrogatesToInlineEmoji(type.content);
@@ -1248,7 +1248,7 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f79168(byId, tmp11);
+                    let tmp12 = f79148(byId, tmp11);
                   }
                   let tmp13 = regex;
                   match = regex.exec(result);
@@ -1266,7 +1266,7 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
           const obj = callback(4002);
         }
       }
-    })(getGuildId, content, f79168);
+    })(getGuildId, content, f79148);
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {
@@ -1291,8 +1291,8 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
           }
         }
         if (true === tmp.isNotification) {
-          _var = _var + getGuildId(f79168[26]).isolate(content.content);
-          let obj2 = getGuildId(f79168[26]);
+          _var = _var + getGuildId(f79148[26]).isolate(content.content);
+          let obj2 = getGuildId(f79148[26]);
         } else {
           _var = _var + content.content;
         }

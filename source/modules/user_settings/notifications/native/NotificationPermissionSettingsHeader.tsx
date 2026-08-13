@@ -1,10 +1,10 @@
-// Module ID: 14746
-// Function ID: 14747
+// Module ID: 14737
+// Function ID: 14738
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 676, 11837, 21, 4342, 712, 11838, 698, 5416, 9781, 4338, 1236, 4755, 2]
+// Dependencies: [19, 17, 676, 11838, 21, 4342, 712, 11839, 698, 5416, 9781, 4338, 1236, 4755, 2]
 // Exports: default
 
-// Module 14746 (NotificationPermissionSettingsHeader)
+// Module 14737 (NotificationPermissionSettingsHeader)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -37,7 +37,7 @@ const result = require("ME").fileFinishedImporting("modules/user_settings/notifi
 
 export default function NotificationPermissionSettingsHeader() {
   const tmp = createCacheKey();
-  let obj = canSeePushNotificationNudge(11838);
+  let obj = canSeePushNotificationNudge(11839);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = React.useEffect(() => {

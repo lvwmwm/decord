@@ -1,8 +1,8 @@
-// Module ID: 12746
-// Function ID: 12747
+// Module ID: 12747
+// Function ID: 12748
 // Dependencies: [19, 1922, 4013, 6908, 1924, 21, 4342, 712, 589, 1433, 7683, 2]
 
-// Module 12746
+// Module 12747
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
 import addEntitlement from "addEntitlement";

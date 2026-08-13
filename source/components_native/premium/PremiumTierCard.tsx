@@ -1,10 +1,10 @@
-// Module ID: 12901
-// Function ID: 12902
+// Module ID: 12902
+// Function ID: 12903
 // Name: textLogoTier2
-// Dependencies: [19, 17, 6943, 1924, 21, 4342, 712, 5199, 1367, 4766, 691, 4007, 12902, 12903, 7435, 7373, 7374, 7430, 5416, 2]
+// Dependencies: [19, 17, 6943, 1924, 21, 4342, 712, 5199, 1367, 4766, 691, 4007, 12903, 12904, 7435, 7373, 7374, 7430, 5416, 2]
 // Exports: default
 
-// Module 12901 (textLogoTier2)
+// Module 12902 (textLogoTier2)
 import "set";
 import get_ActivityIndicator from "registerAsset";
 import { getPremiumGradientColor } from "items";
@@ -50,9 +50,9 @@ export default function _default(children) {
   }
   obj[3] = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp2Result = tmp2(12902);
+    let tmp2Result = tmp2(12903);
   } else if (tmp11.TIER_1 === premiumType) {
-    tmp2Result = tmp2(12903);
+    tmp2Result = tmp2(12904);
   } else if (tmp11.TIER_2 === premiumType) {
     tmp2Result = tmp2(7435);
   }

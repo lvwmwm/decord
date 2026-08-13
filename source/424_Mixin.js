@@ -9,7 +9,7 @@ import { jsx } from "jsxProd";
 
 let touchableHandleBlur;
 let touchableHandleFocus;
-const f18593 = (arg0) => {
+const f18584 = (arg0) => {
 
 };
 const NOT_RESPONDER = "NOT_RESPONDER";
@@ -58,7 +58,7 @@ let obj2 = {
     }
   },
   touchableGetInitialState() {
-    return { touchable: { touchState: "Array", responderID: "Array" } };
+    return { touchable: { touchState: "Array", responderID: 0 } };
   },
   touchableHandleResponderTerminationRequest() {
     return !this.props.rejectResponderTermination;
@@ -164,7 +164,7 @@ let obj2 = {
         const tmp6 = touchableGetHitSlopResult.left || 0;
       }
       nativeEvent = nativeEvent.nativeEvent;
-      if (typeof f18593 !== "function") {
+      if (typeof f18584 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       ({ touches, changedTouches } = nativeEvent);
@@ -339,7 +339,7 @@ let obj2 = {
     let changedTouches;
     let touches;
     nativeEvent = nativeEvent.nativeEvent;
-    if (typeof f18593 !== "function") {
+    if (typeof f18584 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     ({ touches, changedTouches } = nativeEvent);

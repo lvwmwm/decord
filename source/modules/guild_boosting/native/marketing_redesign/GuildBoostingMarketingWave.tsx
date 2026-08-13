@@ -1,10 +1,10 @@
-// Module ID: 12917
-// Function ID: 12918
+// Module ID: 12918
+// Function ID: 12919
 // Name: GuildBoostingMarketingWave
 // Dependencies: [19, 21, 4065, 712, 7880, 2]
 // Exports: default
 
-// Module 12917 (GuildBoostingMarketingWave)
+// Module 12918 (GuildBoostingMarketingWave)
 import "noop";
 import { jsx } from "jsxProd";
 

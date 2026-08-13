@@ -1,10 +1,10 @@
-// Module ID: 12916
-// Function ID: 12917
+// Module ID: 12917
+// Function ID: 12918
 // Name: StarsBackgroundSvg
 // Dependencies: [19, 21, 7880, 2]
 // Exports: default
 
-// Module 12916 (StarsBackgroundSvg)
+// Module 12917 (StarsBackgroundSvg)
 import "noop";
 import jsxProd from "jsxProd";
 

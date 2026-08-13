@@ -1,10 +1,10 @@
-// Module ID: 15395
-// Function ID: 15396
+// Module ID: 15386
+// Function ID: 15387
 // Name: PX_8
-// Dependencies: [5, 19, 17, 676, 1388, 21, 712, 15396, 9502, 4759, 4342, 15397, 12413, 1236, 5416, 4887, 5366, 4338, 4755, 8000, 5974, 2]
+// Dependencies: [5, 19, 17, 676, 1388, 21, 712, 15387, 9502, 4759, 4342, 15388, 12414, 1236, 5416, 4887, 5366, 4338, 4755, 8000, 5974, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 15395 (PX_8)
+// Module 15386 (PX_8)
 import closure_3 from "jsxProd";
 import { View } from "Text";
 import ME from "ME";
@@ -39,15 +39,15 @@ const memoResult = importAllResult.memo((arg0) => {
   let require;
   ({ guild, markAsDismissed: require } = arg0);
   const tmp = callback4();
-  let obj = require(15397) /* fetchUnclaimedGames */;
+  let obj = require(15388) /* fetchUnclaimedGames */;
   let first = obj.useUnclaimedGameIdsForGuild(guild.id)[0];
   if (first == null) {
     first = null;
   }
   const intl = tmp2(1236).intl;
   const tmp5 = importDefault;
-  const tmp6 = importDefault(12413);
-  const coverImageUrl = importDefault(12413)(first, intl.string(require(1236) /* getSystemLocale */.t.VQq92a)).coverImageUrl;
+  const tmp6 = importDefault(12414);
+  const coverImageUrl = importDefault(12414)(first, intl.string(require(1236) /* getSystemLocale */.t.VQq92a)).coverImageUrl;
   if (null == coverImageUrl) {
     return null;
   } else {
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo((arg0) => {
     const items = [callback2(tmp2(4887).PressableOpacity, obj), , , , ];
     let obj1 = { imageSrc: null };
     obj1[0] = coverImageUrl;
-    items[1] = callback2(tmp5(15396), obj1);
+    items[1] = callback2(tmp5(15387), obj1);
     const obj2 = { variant: "text-md/medium", color: "text-overlay-light", style: null, children: null };
     obj2[2] = tmp.centeredText;
     const intl2 = tmp2(1236).intl;
@@ -150,7 +150,7 @@ const memoResult = importAllResult.memo((arg0) => {
     obj[2] = items;
     return callback3(tmp2(5416).Card, obj);
   }
-  const tmp6Result = importDefault(12413)(first, intl.string(require(1236) /* getSystemLocale */.t.VQq92a));
+  const tmp6Result = importDefault(12414)(first, intl.string(require(1236) /* getSystemLocale */.t.VQq92a));
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/game_claim/native/GameClaimCoachmark.tsx");
 
@@ -159,7 +159,7 @@ export const GAME_CLAIM_NOTICE_MARGIN_TOP = PX_8;
 export const GAME_CLAIM_NOTICE_MARGIN_BOTTOM = PX_82;
 export const getScaledGameClaimNoticeHeight = function getScaledGameClaimNoticeHeight(fontScale) {
   const sum = PX_8 + closure_12;
-  const sum1 = sum + require(15396) /* importDefaultResult1 */.CARD_STACK_HEIGHT;
+  const sum1 = sum + require(15387) /* importDefaultResult1 */.CARD_STACK_HEIGHT;
   const sum2 = sum1 + require(9502) /* map */.scaleTextLineHeight("text-md/medium", fontScale);
   const sum3 = sum2 + importDefault(712).space.PX_4;
   const obj = require(9502) /* map */;

@@ -1,10 +1,10 @@
-// Module ID: 11155
-// Function ID: 11156
+// Module ID: 11156
+// Function ID: 11157
 // Name: _addOrUpdateSavedMessage
-// Dependencies: [5, 11096, 676, 8423, 8418, 8421, 5788, 11156, 11157, 4683, 1236, 8427, 8428, 4062, 7838, 4306, 11158, 2]
+// Dependencies: [5, 11097, 676, 8423, 8418, 8421, 5788, 11157, 11158, 4683, 1236, 8427, 8428, 4062, 7838, 4306, 11159, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 11155 (_addOrUpdateSavedMessage)
+// Module 11156 (_addOrUpdateSavedMessage)
 import EntitlementFeatureNames from "EntitlementFeatureNames";
 import getTimeSafe from "getTimeSafe";
 import { AbortCodes } from "ME";
@@ -75,7 +75,7 @@ function _addOrUpdateSavedMessage() {
                   }
                   obj10 = displayToast(8423);
                 }
-                let obj3 = displayToast(11156);
+                let obj3 = displayToast(11157);
                 BookmarkIcon = 2;
                 savedMessage = 1;
                 obj3 = { value: null, done: false };
@@ -155,7 +155,7 @@ function _addOrUpdateSavedMessage() {
                   if (null != lib.dueAt) {
                     BookmarkIcon = displayToast(4306).ClockIcon;
                   } else {
-                    BookmarkIcon = displayToast(11158).BookmarkIcon;
+                    BookmarkIcon = displayToast(11159).BookmarkIcon;
                   }
                   obj = lib(4062);
                   const obj4 = { key: "SAVED_MESSAGE_CREATE_SUCCESS", IconComponent: null, content: null };

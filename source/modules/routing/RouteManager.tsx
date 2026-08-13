@@ -1,9 +1,9 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 10942
+// Function ID: 10943
 // Name: initialize
-// Dependencies: [5035, 10941, 676, 1222, 10942, 7494, 2]
+// Dependencies: [5035, 10943, 676, 1222, 10944, 7494, 2]
 
-// Module 10940 (initialize)
+// Module 10942 (initialize)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import getMatchData from "getMatchData";
 import { Routes } from "ME";

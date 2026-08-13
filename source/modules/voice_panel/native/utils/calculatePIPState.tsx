@@ -1,10 +1,10 @@
-// Module ID: 16246
-// Function ID: 16247
+// Module ID: 16237
+// Function ID: 16238
 // Name: calculatePIPState
-// Dependencies: [4358, 4364, 11704, 4363, 4408, 16247, 2]
+// Dependencies: [4358, 4364, 11705, 4363, 4408, 16238, 2]
 // Exports: default
 
-// Module 16246 (calculatePIPState)
+// Module 16237 (calculatePIPState)
 import getParticipants from "getParticipants";
 import reset from "reset";
 import { VoicePanelModes } from "VoicePanelModes";
@@ -34,7 +34,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
     set.add(focusedId.focusedId);
   }
   let obj = { channelId, lastParticipantId, speakingUserId, focusedParticipantId: focusedId.focusedId, blockList: set, panelMode: focusedId.mode, showSecondaryPIP: focusedId.showSecondaryPIP };
-  const pIPParticipantToShow = require(16247) /* PIPReferenceDimensions */.computePIPParticipantToShow(obj);
+  const pIPParticipantToShow = require(16238) /* PIPReferenceDimensions */.computePIPParticipantToShow(obj);
   let type1;
   if (pIPParticipantToShow != null) {
     type1 = pIPParticipantToShow.type;
@@ -58,7 +58,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
     }
     tmp18 = tmp20;
   }
-  const obj3 = require(16247) /* PIPReferenceDimensions */;
+  const obj3 = require(16238) /* PIPReferenceDimensions */;
   tmp11 = null != focusedId.focusedId && tmp10;
   let id1;
   if (pIPParticipantToShow != null) {
@@ -66,11 +66,11 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
   }
   let SquarePIPReferenceDimensions = getTargetDimensions.getTargetDimensions(id1);
   if (SquarePIPReferenceDimensions == null) {
-    SquarePIPReferenceDimensions = tmp13(16247).SquarePIPReferenceDimensions;
+    SquarePIPReferenceDimensions = tmp13(16238).SquarePIPReferenceDimensions;
   }
   if (tmp10) {
     tmp10 = tmp;
   }
-  obj = { participant: pIPParticipantToShow, dimensions: require(16247) /* PIPReferenceDimensions */.computePIPSize(SquarePIPReferenceDimensions, tmp18, tmp10, focusedId.showSecondaryPIP) };
+  obj = { participant: pIPParticipantToShow, dimensions: require(16238) /* PIPReferenceDimensions */.computePIPSize(SquarePIPReferenceDimensions, tmp18, tmp10, focusedId.showSecondaryPIP) };
   return obj;
 };

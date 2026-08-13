@@ -1,10 +1,10 @@
-// Module ID: 11245
-// Function ID: 11246
+// Module ID: 11246
+// Function ID: 11247
 // Name: getInvalidLinkSource
-// Dependencies: [19, 17, 21, 7668, 10393, 11246, 10394, 1363, 2]
+// Dependencies: [19, 17, 21, 7668, 10393, 11247, 10394, 1363, 2]
 // Exports: InvalidLink, getInvalidLinkSource, useInvalidLinkSource
 
-// Module 11245 (getInvalidLinkSource)
+// Module 11246 (getInvalidLinkSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ export const getInvalidLinkSource = function getInvalidLinkSource(theme) {
       return callback(10393);
     },
     darker() {
-      return callback(11246);
+      return callback(11247);
     },
     light() {
       return callback(10394);
@@ -34,7 +34,7 @@ export const useInvalidLinkSource = function useInvalidLinkSource() {
       return callback(10393);
     },
     darker() {
-      return callback(11246);
+      return callback(11247);
     },
     light() {
       return callback(10394);
@@ -49,7 +49,7 @@ export const InvalidLink = function InvalidLink(arg0) {
       return callback(10393);
     },
     darker() {
-      return callback(11246);
+      return callback(11247);
     },
     light() {
       return callback(10394);

@@ -1,9 +1,9 @@
-// Module ID: 14832
-// Function ID: 14833
+// Module ID: 14823
+// Function ID: 14824
 // Name: handleCacheActionPress
-// Dependencies: [5, 5035, 21, 4310, 4062, 4298, 1236, 589, 4034, 5804, 5436, 5806, 13952, 14833, 14834, 10407, 2]
+// Dependencies: [5, 5035, 21, 4310, 4062, 4298, 1236, 589, 4034, 5804, 5436, 5806, 13943, 14824, 14825, 10407, 2]
 
-// Module 14832 (handleCacheActionPress)
+// Module 14823 (handleCacheActionPress)
 import CircleInformationIcon from "CircleInformationIcon";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ function CacheActionsActionSheet() {
   obj[0] = callback2(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { hasIcons: true, children: null };
   let obj1 = { icon: null, label: null, onPress: null };
-  obj1[0] = callback2(require(13952) /* FileUpIcon */.FileUpIcon, {});
+  obj1[0] = callback2(require(13943) /* FileUpIcon */.FileUpIcon, {});
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t["/GUaXh"]);
   obj1[2] = callback(function*() {
@@ -63,7 +63,7 @@ function CacheActionsActionSheet() {
             return obj;
           } else {
             const callback = tmp2;
-            let obj1 = outer1_0(14833);
+            let obj1 = outer1_0(14824);
             c1 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };
@@ -92,11 +92,11 @@ function CacheActionsActionSheet() {
   });
   const items = [callback2(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
   let obj2 = { variant: "danger", icon: null, label: null, onPress: null };
-  obj2[1] = callback2(require(14834) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" });
+  obj2[1] = callback2(require(14825) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" });
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.tgwiMO);
   obj2[3] = function onPress() {
-    let obj = callback(14833);
+    let obj = callback(14824);
     obj.clearCaches();
     const intl = callback(1236).intl;
     const stringResult = intl.string(callback(1236).t["23xR5w"]);

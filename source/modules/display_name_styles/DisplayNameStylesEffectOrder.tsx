@@ -1,10 +1,10 @@
-// Module ID: 14648
-// Function ID: 14649
+// Module ID: 14639
+// Function ID: 14640
 // Name: items
 // Dependencies: [19, 1934, 9287, 2]
 // Exports: useVisibleEffectOrder
 
-// Module 14648 (items)
+// Module 14639 (items)
 import noop from "noop";
 import items3 from "items3";
 

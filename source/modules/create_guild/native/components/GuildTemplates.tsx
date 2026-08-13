@@ -1,10 +1,10 @@
-// Module ID: 12127
-// Function ID: 12128
+// Module ID: 12128
+// Function ID: 12129
 // Name: GuildTemplatesHeader
-// Dependencies: [32, 19, 17, 12124, 8556, 676, 21, 4342, 5307, 712, 4338, 1236, 1499, 1628, 4755, 12100, 698, 11754, 12128, 5368, 5807, 2]
+// Dependencies: [32, 19, 17, 12125, 8556, 676, 21, 4342, 5307, 712, 4338, 1236, 1499, 1628, 4755, 12101, 698, 11755, 12129, 5368, 5807, 2]
 // Exports: default
 
-// Module 12127 (GuildTemplatesHeader)
+// Module 12128 (GuildTemplatesHeader)
 import _slicedToArray from "_slicedToArray";
 import SafeAreaPaddingView from "SafeAreaPaddingView";
 import get_ActivityIndicator from "ListSelectionItem";
@@ -97,12 +97,12 @@ function GuildTemplatesItem(guildTemplate) {
   guildTemplate = guildTemplate.guildTemplate;
   const onGuildTemplatePress = guildTemplate.onGuildTemplatePress;
   const obj = { Icon: null, message: null, onPress: null };
-  obj[0] = guildTemplate(12128).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id];
+  obj[0] = guildTemplate(12129).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id];
   obj[1] = guildTemplate.label;
   obj[2] = function onPress() {
     return onGuildTemplatePress(guildTemplate);
   };
-  return callback3(onGuildTemplatePress(11754), obj);
+  return callback3(onGuildTemplatePress(11755), obj);
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ getGuildTemplatesMap: error, GuildTemplateId: metroImportAll } = GuildTemplateId);

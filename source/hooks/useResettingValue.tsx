@@ -1,10 +1,10 @@
-// Module ID: 12894
-// Function ID: 12895
+// Module ID: 12895
+// Function ID: 12896
 // Name: useResettingValue
 // Dependencies: [32, 19, 5756, 4227, 2]
 // Exports: default
 
-// Module 12894 (useResettingValue)
+// Module 12895 (useResettingValue)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

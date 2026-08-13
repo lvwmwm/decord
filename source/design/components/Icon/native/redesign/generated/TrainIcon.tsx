@@ -1,10 +1,10 @@
-// Module ID: 13936
-// Function ID: 13937
+// Module ID: 13927
+// Function ID: 13928
 // Name: TrainIcon
-// Dependencies: [19, 21, 712, 4064, 13937, 2]
+// Dependencies: [19, 21, 712, 4064, 13928, 2]
 // Exports: TrainIcon
 
-// Module 13936 (TrainIcon)
+// Module 13927 (TrainIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TrainIcon = function TrainIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13937) /* registerAsset */;
+  obj[0] = require(13928) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

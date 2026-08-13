@@ -1,9 +1,9 @@
-// Module ID: 13460
-// Function ID: 13461
+// Module ID: 13461
+// Function ID: 13462
 // Name: items
-// Dependencies: [19, 21, 10190, 13461, 2]
+// Dependencies: [19, 21, 10190, 13462, 2]
 
-// Module 13460 (items)
+// Module 13461 (items)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -12,7 +12,7 @@ let closure_3 = ["IconAnimation_Notifications_3D_LottieFix02"];
 const items = [{ name: "all", start: 0, duration: 67 }];
 const forwardRefResult = require("noop").forwardRef((arg0, arg1) => {
   const obj = { dotLottie: null, animation: "all", ref: null, layers: null, markers: null };
-  obj[0] = require(13461) /* registerAsset */;
+  obj[0] = require(13462) /* registerAsset */;
   obj[2] = arg1;
   obj[3] = closure_3;
   obj[4] = items;

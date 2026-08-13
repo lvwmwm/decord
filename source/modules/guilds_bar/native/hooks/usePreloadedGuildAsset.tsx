@@ -1,10 +1,10 @@
-// Module ID: 15541
-// Function ID: 15542
+// Module ID: 15532
+// Function ID: 15533
 // Name: usePreloadedGuildAsset
 // Dependencies: [32, 19, 5369, 5308, 2]
 // Exports: default
 
-// Module 15541 (usePreloadedGuildAsset)
+// Module 15532 (usePreloadedGuildAsset)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

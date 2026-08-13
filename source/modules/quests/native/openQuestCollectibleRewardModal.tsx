@@ -1,10 +1,10 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11234
+// Function ID: 11235
 // Name: QuestCollectibleRewardModalMessages
-// Dependencies: [1922, 5202, 21, 4342, 712, 589, 10437, 10420, 4338, 1236, 7212, 10171, 2]
+// Dependencies: [1922, 5202, 21, 4342, 712, 589, 10436, 10420, 4338, 1236, 7212, 10171, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 11233 (QuestCollectibleRewardModalMessages)
+// Module 11234 (QuestCollectibleRewardModalMessages)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 import jsxProd from "jsxProd";
@@ -20,7 +20,7 @@ function QuestCollectibleRewardModalMessages(quest) {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = require(10437) /* _getDefaultRewardName */;
+  let obj1 = require(10436) /* _getDefaultRewardName */;
   const defaultRewardNameWithArticle = obj1.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
   obj = { children: null };
   const claimedCollectibleRewardMessage = require(10420) /* useQuests */.useClaimedCollectibleRewardMessage(quest.config);

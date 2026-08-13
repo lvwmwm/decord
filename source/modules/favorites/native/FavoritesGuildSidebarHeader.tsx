@@ -1,10 +1,10 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 15473
+// Function ID: 15474
 // Name: EmptyBody
-// Dependencies: [19, 17, 15408, 21, 4342, 712, 9759, 12197, 4310, 9763, 2007, 9762, 4338, 1236, 3047, 4850, 4870, 4841, 4753, 2]
+// Dependencies: [19, 17, 15399, 21, 4342, 712, 9759, 12198, 4310, 9763, 2007, 9762, 4338, 1236, 3047, 4850, 4870, 4841, 4753, 2]
 // Exports: default
 
-// Module 15482 (EmptyBody)
+// Module 15473 (EmptyBody)
 import set from "set";
 import { View } from "ChatIcon";
 import { useHasFavoritesGuildSuggestions as closure_5 } from "items";

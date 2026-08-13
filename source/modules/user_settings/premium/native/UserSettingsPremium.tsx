@@ -1,7 +1,7 @@
 // Module ID: 6922
 // Function ID: 6923
 // Name: UserSettingsPremium
-// Dependencies: [32, 19, 17, 1922, 4012, 4013, 6908, 6923, 5899, 676, 1924, 21, 4342, 6924, 1628, 5768, 5788, 6925, 4771, 698, 589, 1499, 1433, 6926, 6928, 709, 6930, 6909, 6958, 7384, 6957, 7636, 7637, 7638, 6056, 4007, 7639, 7641, 7681, 7683, 7684, 8672, 12751, 12799, 7450, 500, 2]
+// Dependencies: [32, 19, 17, 1922, 4012, 4013, 6908, 6923, 5899, 676, 1924, 21, 4342, 6924, 1628, 5768, 5788, 6925, 4771, 698, 589, 1499, 1433, 6926, 6928, 709, 6930, 6909, 6958, 7384, 6957, 7636, 7637, 7638, 6056, 4007, 7639, 7641, 7681, 7683, 7684, 8672, 12752, 12800, 7450, 500, 2]
 // Exports: default
 
 // Module 6922 (UserSettingsPremium)
@@ -240,7 +240,7 @@ export default function UserSettingsPremium(applicationId) {
         if (null == premiumFeatureCardOrder) {
           obj6 = { onClose: null };
           obj6[0] = onClose;
-          tmp31Result1 = tmp31(tmp(12751), obj6);
+          tmp31Result1 = tmp31(tmp(12752), obj6);
         }
       }
       let TIER_2_LEADING = premiumFeatureCardOrder;
@@ -296,8 +296,8 @@ export default function UserSettingsPremium(applicationId) {
         obj7[8] = onPaymentSuccess;
         obj7[9] = onPaymentDismiss;
         obj7[10] = isFullScreenPresentation;
-        tmp31Result1 = tmp31(tmp(12799), obj7);
-        const tmpResult = tmp(12799);
+        tmp31Result1 = tmp31(tmp(12800), obj7);
+        const tmpResult = tmp(12800);
       } else if (premiumTrialOfferPremiumType === closure_17.TIER_0) {
         let TIER_2_LEADING2 = tmp5(8672).PremiumFeatureCardOrder.TIER_0_LEADING;
       } else {

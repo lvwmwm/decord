@@ -1,10 +1,10 @@
-// Module ID: 12129
-// Function ID: 12130
+// Module ID: 12130
+// Function ID: 12131
 // Name: CreationIntent
-// Dependencies: [19, 17, 8556, 676, 21, 4342, 5307, 712, 1499, 4741, 4751, 12100, 698, 5368, 4338, 1236, 5807, 11754, 6070, 2]
+// Dependencies: [19, 17, 8556, 676, 21, 4342, 5307, 712, 1499, 4741, 4751, 12101, 698, 5368, 4338, 1236, 5807, 11755, 6070, 2]
 // Exports: default
 
-// Module 12129 (CreationIntent)
+// Module 12130 (CreationIntent)
 import set from "set";
 import get_ActivityIndicator from "ListSelectionItem";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -130,7 +130,7 @@ export default function CreationIntent(arg0) {
   const items3 = [callback2(ref, obj1), , ];
   const obj4 = { style: tmp.sections, children: null };
   const obj5 = { hasIcons: true, children: null };
-  const tmp13 = trigger(11754);
+  const tmp13 = trigger(11755);
   const obj6 = { Icon: null, message: null, onPress: null };
   const tmp14 = require(6070) /* AccountAgeTier10LargeBadge */;
   if (closure_14) {
@@ -142,7 +142,7 @@ export default function CreationIntent(arg0) {
     };
     const items4 = [tmp8(tmp13, obj6), ];
     const obj7 = { Icon: null, message: null, onPress: null };
-    let tmp12Result = tmp12(11754);
+    let tmp12Result = tmp12(11755);
     obj7[0] = tmp2(6070).WorldIllocon;
     const intl6 = tmp2(1236).intl;
     obj7[1] = intl6.string(tmp2(1236).t.h9Q1lG);
@@ -161,7 +161,7 @@ export default function CreationIntent(arg0) {
     };
     const items5 = [tmp8(tmp13, obj6), ];
     const obj8 = { Icon: null, message: null, onPress: null };
-    tmp12Result = tmp12(11754);
+    tmp12Result = tmp12(11755);
     obj8[0] = tmp2(6070).ChairIllocon;
     const intl4 = tmp2(1236).intl;
     obj8[1] = intl4.string(tmp2(1236).t.uE7zcu);

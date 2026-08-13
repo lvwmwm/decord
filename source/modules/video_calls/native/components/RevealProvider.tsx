@@ -1,10 +1,10 @@
-// Module ID: 10626
-// Function ID: 10627
+// Module ID: 10628
+// Function ID: 10629
 // Name: useRevealProviderValue
-// Dependencies: [19, 4054, 4359, 9789, 21, 589, 9791, 10627, 500, 4278, 7793, 10628, 2]
+// Dependencies: [19, 4054, 4359, 9789, 21, 589, 9791, 10629, 500, 4278, 7793, 10630, 2]
 // Exports: default
 
-// Module 10626 (useRevealProviderValue)
+// Module 10628 (useRevealProviderValue)
 import importAllResult from "noop";
 import setContent from "setContent";
 import set from "set";
@@ -45,7 +45,7 @@ function useRevealProviderValue(arg0, channel) {
     tmp = stateFromStores1;
   }
   require = tmp;
-  const tmp8 = importDefault(10627)(channel.id);
+  const tmp8 = importDefault(10629)(channel.id);
   const tmp10 = tmp2(500).isIOS() && tmp8;
   importDefault = tmp10;
   const items2 = [tmp, tmp10];
@@ -99,7 +99,7 @@ export default function RevealProvider(showStatus) {
   }
   const items1 = [closure_10(tmp4Result, { hidden: tmp10, animated: true, barStyle: str }), children, ];
   let tmp12 = !reveal;
-  tmp4Result = tmp4(10628);
+  tmp4Result = tmp4(10630);
   if (!reveal) {
     tmp12 = !prefersDeferringSystemGestures;
   }

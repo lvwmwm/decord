@@ -1,10 +1,10 @@
-// Module ID: 11523
-// Function ID: 11524
+// Module ID: 11524
+// Function ID: 11525
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [19, 4334, 500, 1894, 4207, 1626, 1493, 11479, 5756, 10290, 2]
+// Dependencies: [19, 4334, 500, 1894, 4207, 1626, 1493, 11480, 5756, 10290, 2]
 // Exports: default
 
-// Module 11523 (useCustomKeyboardBottomSheetConfig)
+// Module 11524 (useCustomKeyboardBottomSheetConfig)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 

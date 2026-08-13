@@ -1,10 +1,10 @@
-// Module ID: 11775
-// Function ID: 11776
+// Module ID: 11776
+// Function ID: 11777
 // Name: getValidOrderedFilterTokens
-// Dependencies: [4188, 676, 11770, 2]
+// Dependencies: [4188, 676, 11771, 2]
 // Exports: getValidFilterTokens, isFromUserFilterSupported, isInChannelFilterSupported, isMentionsUserFilterSupported
 
-// Module 11775 (getValidOrderedFilterTokens)
+// Module 11776 (getValidOrderedFilterTokens)
 import initialize from "initialize";
 import ME from "ME";
 
@@ -25,7 +25,7 @@ function getValidOrderedFilterTokens(closure_0, items) {
   }
   const items2 = [tmp];
   [tmp5] = items2;
-  let result = require(11770) /* SearchTokenTypes */.isGuildLikeSearchContext(closure_0);
+  let result = require(11771) /* SearchTokenTypes */.isGuildLikeSearchContext(closure_0);
   if (!result) {
     result = closure_0.type === constants2.DMS && !tmp5.hidePersonalInformation;
     const tmp8 = closure_0.type === constants2.DMS && !tmp5.hidePersonalInformation;
@@ -76,7 +76,7 @@ export const isInChannelFilterSupported = function isInChannelFilterSupported(se
     tmp = items;
   }
   [tmp3] = tmp;
-  let result = require(11770) /* SearchTokenTypes */.isGuildLikeSearchContext(selectedSearchContext);
+  let result = require(11771) /* SearchTokenTypes */.isGuildLikeSearchContext(selectedSearchContext);
   if (!result) {
     result = selectedSearchContext.type === constants2.DMS && !tmp3.hidePersonalInformation;
     const tmp6 = selectedSearchContext.type === constants2.DMS && !tmp3.hidePersonalInformation;

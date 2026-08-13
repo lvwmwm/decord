@@ -1,10 +1,10 @@
-// Module ID: 14830
-// Function ID: 14831
+// Module ID: 14821
+// Function ID: 14822
 // Name: Code
-// Dependencies: [5, 32, 19, 17, 706, 676, 21, 4342, 712, 4338, 4204, 1628, 9919, 589, 9, 6982, 8972, 7790, 4753, 5807, 8497, 708, 5414, 12300, 2]
+// Dependencies: [5, 32, 19, 17, 706, 676, 21, 4342, 712, 4338, 4204, 1628, 9919, 589, 9, 6982, 8972, 7790, 4753, 5807, 8497, 708, 5414, 12301, 2]
 // Exports: default
 
-// Module 14830 (Code)
+// Module 14821 (Code)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
@@ -256,7 +256,7 @@ export default function UserSettingsStartupTimings() {
     items[3] = callback2(callback2(5807).TableRowGroup, obj21);
     const obj24 = { title: "Share Timings", hasIcons: true, children: null };
     const obj25 = { icon: null, label: "Copy timings to clipboard.", arrow: true, onPress: null };
-    obj25[0] = callback(callback2(12300).ShareIcon, {});
+    obj25[0] = callback(callback2(12301).ShareIcon, {});
     obj25[3] = closure_14;
     obj24[2] = callback(callback2(5414).TableRow, obj25);
     items[4] = callback(callback2(5807).TableRowGroup, obj24);

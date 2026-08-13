@@ -1,10 +1,10 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 11162
+// Function ID: 11163
 // Name: MessageReminderDurationActionSheet
-// Dependencies: [32, 19, 11096, 21, 4342, 712, 589, 687, 11162, 5436, 1236, 4887, 5314, 11163, 5414, 4310, 4550, 11164, 2007, 5437, 5807, 4294, 2]
+// Dependencies: [32, 19, 11097, 21, 4342, 712, 589, 687, 11163, 5436, 1236, 4887, 5314, 11164, 5414, 4310, 4550, 11165, 2007, 5437, 5807, 4294, 2]
 // Exports: default
 
-// Module 11161 (MessageReminderDurationActionSheet)
+// Module 11162 (MessageReminderDurationActionSheet)
 import _slicedToArray from "_slicedToArray";
 import Background from "Background";
 import getTimeSafe from "getTimeSafe";
@@ -51,8 +51,8 @@ export default function MessageReminderDurationActionSheet(createReminder) {
   if (stateFromStores != null) {
     dueAt = stateFromStores.saveData.dueAt;
   }
-  obj = { dueAt, now: tmp7, type: tmp2(11162).DueInStringTypes.SHORT };
-  const dueInString = createReminder(11162).useDueInString(obj);
+  obj = { dueAt, now: tmp7, type: tmp2(11163).DueInStringTypes.SHORT };
+  const dueInString = createReminder(11163).useDueInString(obj);
   dueInText = dueInString.dueInText;
   isOverdue = dueInString.isOverdue;
   const items1 = [onBack, dueInText, isOverdue];

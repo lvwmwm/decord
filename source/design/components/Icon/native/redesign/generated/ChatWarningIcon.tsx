@@ -1,10 +1,10 @@
-// Module ID: 11876
-// Function ID: 11877
+// Module ID: 11877
+// Function ID: 11878
 // Name: ChatWarningIcon
 // Dependencies: [19, 21, 712, 4064, 8170, 2]
 // Exports: ChatWarningIcon
 
-// Module 11876 (ChatWarningIcon)
+// Module 11877 (ChatWarningIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

@@ -1,9 +1,9 @@
-// Module ID: 16335
-// Function ID: 16336
+// Module ID: 16326
+// Function ID: 16327
 // Name: VoicePanelVisualEffectView
 // Dependencies: [19, 17, 21, 4342, 712, 4065, 1367, 8712, 2]
 
-// Module 16335 (VoicePanelVisualEffectView)
+// Module 16326 (VoicePanelVisualEffectView)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

@@ -1,10 +1,10 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 14005
+// Function ID: 14006
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [32, 19, 17, 5816, 1388, 505, 21, 712, 4342, 9453, 6065, 1377, 8315, 10160, 1949, 4310, 14015, 2007, 1236, 14001, 5863, 9445, 1297, 8336, 2]
+// Dependencies: [32, 19, 17, 5816, 1388, 505, 21, 712, 4342, 9453, 6065, 1377, 8315, 10160, 1949, 4310, 14006, 2007, 1236, 13992, 5863, 9445, 1297, 8336, 2]
 // Exports: default
 
-// Module 14014 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 14005 (COLLECTIBLES_PREVIEW_SIZE)
 import _slicedToArray from "_slicedToArray";
 import FormControlText from "FormControlText";
 import { View } from "asyncRequireImpl";
@@ -117,7 +117,7 @@ export default function UserProfileFrameEditButton(arg0) {
       obj2[0] = intl3.string(tmp2(1236).t.GWrZOd);
       const obj3 = { showNewBadge: null };
       obj3[0] = tmp5[0] === tmp2(1377).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE;
-      obj2[1] = tmp19(tmp2(14001).UserProfileEditFormLabelBadges, obj3);
+      obj2[1] = tmp19(tmp2(13992).UserProfileEditFormLabelBadges, obj3);
       obj2[2] = formatToPlainStringResult;
       const obj4 = { text: null };
       obj4[0] = formatToPlainStringResult;
@@ -142,7 +142,7 @@ export default function UserProfileFrameEditButton(arg0) {
       }
       obj2[5] = tmp19Result;
     }
-    return jsx(tmp2(14001).UserProfileEditFormButton, obj2);
+    return jsx(tmp2(13992).UserProfileEditFormButton, obj2);
   } else {
     return null;
   }

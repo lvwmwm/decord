@@ -1,9 +1,9 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 11797
+// Function ID: 11798
 // Name: setAutocompleteOptions
 // Dependencies: [1391, 676, 7353, 3994, 5271, 589, 709, 2]
 
-// Module 11796 (setAutocompleteOptions)
+// Module 11797 (setAutocompleteOptions)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Permissions } from "ME";
 import { Store } from "initialize";

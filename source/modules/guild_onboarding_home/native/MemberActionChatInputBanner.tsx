@@ -1,9 +1,9 @@
-// Module ID: 11717
-// Function ID: 11718
+// Module ID: 11718
+// Function ID: 11719
 // Name: ActionChannelInfo
-// Dependencies: [32, 19, 17, 4334, 5216, 1391, 1990, 676, 1925, 21, 4342, 712, 647, 4535, 4338, 1236, 1297, 11253, 5308, 1435, 4002, 11718, 11716, 4083, 4343, 11719, 4887, 1222, 7798, 5884, 2]
+// Dependencies: [32, 19, 17, 4334, 5216, 1391, 1990, 676, 1925, 21, 4342, 712, 647, 4535, 4338, 1236, 1297, 11254, 5308, 1435, 4002, 11719, 11717, 4083, 4343, 11720, 4887, 1222, 7798, 5884, 2]
 
-// Module 11717 (ActionChannelInfo)
+// Module 11718 (ActionChannelInfo)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getAvatarURL";
 import { View } from "registerAsset";
@@ -49,7 +49,7 @@ function ChannelActionEmoji(emoji) {
   let obj = { style: tmp.emojiPlaceholder, children: null };
   obj = { size: null, source: null };
   obj[0] = id(1297).Icon.Sizes.REFRESH_SMALL_16;
-  obj[1] = importDefault(11253);
+  obj[1] = importDefault(11254);
   obj[1] = callback(id(1297).Icon, obj);
   const tmp6 = callback(View, obj);
   id = undefined;
@@ -407,7 +407,7 @@ const memoResult1 = importAllResult.memo((channel) => {
   let channelAction;
   let completed;
   channel = channel.channel;
-  let obj = require(11718) /* useMemberActionsForChannel */;
+  let obj = require(11719) /* useMemberActionsForChannel */;
   const memberActionsForChannel = obj.useMemberActionsForChannel(channel.guild_id, channel);
   ({ channelAction, completed } = memberActionsForChannel);
   let channelId;
@@ -415,11 +415,11 @@ const memoResult1 = importAllResult.memo((channel) => {
     channelId = channelAction.channelId;
   }
   let actionType;
-  const nextMemberAction = require(11718) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
+  const nextMemberAction = require(11719) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
   if (channelAction != null) {
     actionType = channelAction.actionType;
   }
-  if (actionType !== require(11716) /* newMemberActionFromServer */.NewMemberActionTypes.VIEW) {
+  if (actionType !== require(11717) /* newMemberActionFromServer */.NewMemberActionTypes.VIEW) {
     obj = { channel: null };
     obj[0] = channel;
     let tmp7 = callback(closure_21, obj);

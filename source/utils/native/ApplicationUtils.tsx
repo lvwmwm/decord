@@ -1,10 +1,10 @@
-// Module ID: 10592
-// Function ID: 10593
+// Module ID: 10594
+// Function ID: 10595
 // Name: installApplication
-// Dependencies: [676, 10593, 698, 8981, 4058, 10594, 506, 4550, 10597, 2007, 8951, 2]
+// Dependencies: [676, 10595, 698, 8981, 4058, 10596, 506, 4550, 10599, 2007, 8951, 2]
 // Exports: installApplication, installPrivateChannelIntegration, openOAuth2Modal
 
-// Module 10592 (installApplication)
+// Module 10594 (installApplication)
 import { AnalyticEvents } from "ME";
 import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY";
 
@@ -83,7 +83,7 @@ export const installApplication = function installApplication(arg0) {
           }
           outer1_1(outer1_3[7]).popWithKey(outer1_5);
         };
-        obj10.pushLazy(obj5(2007)(10597, dependencyMap.paths), obj3, closure_5);
+        obj10.pushLazy(obj5(2007)(10599, dependencyMap.paths), obj3, closure_5);
       }
     }
     if (null != installParams) {
@@ -135,8 +135,8 @@ export const installApplication = function installApplication(arg0) {
         }
         outer1_1(outer1_3[7]).popWithKey(outer1_5);
       };
-      tmp32Result.pushLazy(obj5(2007)(10597, dependencyMap.paths), obj6, closure_5);
-      const tmp10 = obj5(2007)(10597, dependencyMap.paths);
+      tmp32Result.pushLazy(obj5(2007)(10599, dependencyMap.paths), obj6, closure_5);
+      const tmp10 = obj5(2007)(10599, dependencyMap.paths);
     }
   }
 };
@@ -154,7 +154,7 @@ export const openOAuth2Modal = function openOAuth2Modal(arg0) {
     }
     outer1_1(outer1_3[7]).popWithKey(outer1_5);
   };
-  obj2.pushLazy(_require(2007)(10597, dependencyMap.paths), obj, closure_5);
+  obj2.pushLazy(_require(2007)(10599, dependencyMap.paths), obj, closure_5);
 };
 export const installPrivateChannelIntegration = function installPrivateChannelIntegration(arg0) {
   let applicationId;
@@ -170,5 +170,5 @@ export const installPrivateChannelIntegration = function installPrivateChannelIn
     return callback(table[7]).popWithKey(closure_5);
   };
   obj[5] = callback;
-  obj.pushLazy(require(2007) /* asyncRequireImpl */(10597, dependencyMap.paths), obj, closure_5);
+  obj.pushLazy(require(2007) /* asyncRequireImpl */(10599, dependencyMap.paths), obj, closure_5);
 };

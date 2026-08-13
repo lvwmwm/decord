@@ -1,10 +1,10 @@
-// Module ID: 11196
-// Function ID: 11197
+// Module ID: 11197
+// Function ID: 11198
 // Name: render
-// Dependencies: [19, 17, 8952, 21, 1625, 530, 4058, 11197, 4755, 8291, 1236, 1297, 2]
+// Dependencies: [19, 17, 8952, 21, 1625, 530, 4058, 11198, 4755, 8291, 1236, 1297, 2]
 // Exports: SpotifyPlayButton, attributeInstall, canOpenSpotifyUrl, openAlbum, openArtist, openTrack, openUrl
 
-// Module 11196 (render)
+// Module 11197 (render)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import WEB_OPEN from "WEB_OPEN";

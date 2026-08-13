@@ -1,10 +1,10 @@
-// Module ID: 12249
-// Function ID: 12250
+// Module ID: 12250
+// Function ID: 12251
 // Name: GameUpdatePlatformIcon
-// Dependencies: [19, 21, 8954, 12250, 9355, 12252, 12254, 8536, 12256, 2]
+// Dependencies: [19, 21, 8954, 12251, 9355, 12253, 12255, 8536, 12257, 2]
 // Exports: GameUpdatePlatformIcon
 
-// Module 12249 (GameUpdatePlatformIcon)
+// Module 12250 (GameUpdatePlatformIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -23,7 +23,7 @@ export const GameUpdatePlatformIcon = function GameUpdatePlatformIcon(color) {
     let obj = { size: null, color: null };
     obj[0] = size;
     obj[1] = color;
-    return jsx(tmp(12250).ScreenIcon, { size: null, color: null });
+    return jsx(tmp(12251).ScreenIcon, { size: null, color: null });
   } else if (tmp(8954).PlatformType.XBOX === platform) {
     obj = { size: null, color: null };
     obj[0] = size;
@@ -33,12 +33,12 @@ export const GameUpdatePlatformIcon = function GameUpdatePlatformIcon(color) {
     const obj1 = { size: null, color: null };
     obj1[0] = size;
     obj1[1] = color;
-    return jsx(tmp(12252).PlaystationNeutralIcon, { size: null, color: null });
+    return jsx(tmp(12253).PlaystationNeutralIcon, { size: null, color: null });
   } else if (tmp(8954).PlatformType.NINTENDO === platform) {
     const obj2 = { size: null, color: null };
     obj2[0] = size;
     obj2[1] = color;
-    return jsx(tmp(12254).NintendoSwitchNeutralIcon, { size: null, color: null });
+    return jsx(tmp(12255).NintendoSwitchNeutralIcon, { size: null, color: null });
   } else if (tmp(8954).PlatformType.ANDROID === platform) {
     const obj3 = { size: null, color: null };
     obj3[0] = size;
@@ -48,7 +48,7 @@ export const GameUpdatePlatformIcon = function GameUpdatePlatformIcon(color) {
     obj = { size: null, color: null };
     obj[0] = size;
     obj[1] = color;
-    return jsx(tmp(12256).AppleNeutralIcon, { size: null, color: null });
+    return jsx(tmp(12257).AppleNeutralIcon, { size: null, color: null });
   } else {
     return null;
   }

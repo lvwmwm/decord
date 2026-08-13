@@ -1,10 +1,10 @@
-// Module ID: 11989
-// Function ID: 11990
+// Module ID: 11990
+// Function ID: 11991
 // Name: importDefaultResult1
 // Dependencies: [19, 17, 21, 4342, 689, 712, 5416, 2]
 // Exports: default
 
-// Module 11989 (importDefaultResult1)
+// Module 11990 (importDefaultResult1)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

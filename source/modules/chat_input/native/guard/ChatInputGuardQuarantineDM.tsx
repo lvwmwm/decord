@@ -1,8 +1,8 @@
-// Module ID: 11874
-// Function ID: 11875
-// Dependencies: [19, 11875, 21, 11871, 11876, 1236, 2]
+// Module ID: 11875
+// Function ID: 11876
+// Dependencies: [19, 11876, 21, 11872, 11877, 1236, 2]
 
-// Module 11874
+// Module 11875
 import { QUARANTINE_APPEAL_LINK } from "QUARANTINE_APPEAL_LINK";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -10,13 +10,13 @@ import importAllResult from "noop";
 const require = arg1;
 const memoResult = require("noop").memo(function ChatInputGuardQuarantineDM() {
   let obj = { type: "simple-action", icon: null, message: null, subtext: null };
-  obj[1] = jsx(require(11876) /* ChatWarningIcon */.ChatWarningIcon, {});
+  obj[1] = jsx(require(11877) /* ChatWarningIcon */.ChatWarningIcon, {});
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.EouHwv);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj = { appealLink: QUARANTINE_APPEAL_LINK };
   obj[3] = intl2.format(require(1236) /* getSystemLocale */.t.PThBel, obj);
-  return jsx(importDefault(11871), { appealLink: QUARANTINE_APPEAL_LINK });
+  return jsx(importDefault(11872), { appealLink: QUARANTINE_APPEAL_LINK });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardQuarantineDM.tsx");
 

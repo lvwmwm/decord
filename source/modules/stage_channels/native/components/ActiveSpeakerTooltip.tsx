@@ -1,8 +1,8 @@
-// Module ID: 10928
-// Function ID: 10929
-// Dependencies: [32, 19, 17, 4358, 10898, 676, 21, 4342, 712, 589, 5190, 4887, 10907, 4338, 1236, 2]
+// Module ID: 10930
+// Function ID: 10931
+// Dependencies: [32, 19, 17, 4358, 10900, 676, 21, 4342, 712, 589, 5190, 4887, 10909, 4338, 1236, 2]
 
-// Module 10928
+// Module 10930
 import _slicedToArray from "_slicedToArray";
 import { View } from "get ActivityIndicator";
 import getParticipants from "getParticipants";
@@ -55,7 +55,7 @@ const memoResult = importAllResult.memo((channel) => {
       obj2[1] = first;
       obj2[3] = channel.id;
       obj2[4] = channel.getGuildId();
-      obj1[1] = callback3(importDefault(10907), obj2);
+      obj1[1] = callback3(importDefault(10909), obj2);
       const items2 = [callback3(View, obj1), ];
       const obj3 = { style: null, children: null };
       obj3[0] = tmp.participantNameplateContainer;
@@ -70,7 +70,7 @@ const memoResult = importAllResult.memo((channel) => {
       obj[1] = items2;
       obj[3] = callback4(View, obj);
       tmp5 = callback3(tmp2(4887).PressableOpacity, obj);
-      const tmp10 = importDefault(10907);
+      const tmp10 = importDefault(10909);
     }
   }
   return tmp5;

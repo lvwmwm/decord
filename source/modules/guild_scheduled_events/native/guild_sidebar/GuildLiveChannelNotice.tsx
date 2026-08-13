@@ -1,10 +1,10 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 15384
+// Function ID: 15385
 // Name: UserSummaryRow
-// Dependencies: [19, 17, 5177, 1396, 4364, 3989, 4417, 1397, 505, 21, 712, 1297, 4332, 9852, 8241, 9502, 500, 4759, 4342, 4338, 11951, 9845, 1891, 4554, 7818, 4278, 8441, 4755, 1363, 4535, 589, 1236, 4805, 9093, 8994, 9022, 8998, 5189, 5183, 5176, 9087, 4866, 15392, 9715, 5416, 2]
+// Dependencies: [19, 17, 5177, 1396, 4364, 3989, 4417, 1397, 505, 21, 712, 1297, 4332, 9852, 8241, 9502, 500, 4759, 4342, 4338, 11952, 9845, 1891, 4554, 7818, 4278, 8441, 4755, 1363, 4535, 589, 1236, 4805, 9093, 8994, 9022, 8998, 5189, 5183, 5176, 9087, 4866, 15383, 9715, 5416, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 15393 (UserSummaryRow)
+// Module 15384 (UserSummaryRow)
 import importAllResult from "Text";
 import { View } from "MINIMUM_HIT_AREA";
 import getActiveStageChannelIds from "getActiveStageChannelIds";
@@ -105,7 +105,7 @@ function UserSummaryRow(arg0) {
       obj[0] = items2;
       let obj1 = { size: "custom", style: null };
       obj1[1] = max(9845).makeSizeStyle(14);
-      const items3 = [callback(max(11951).HeadphonesIcon, obj1), ];
+      const items3 = [callback(max(11952).HeadphonesIcon, obj1), ];
       let obj2 = { variant: "text-xs/semibold", style: null, maxFontSizeMultiplier: 1, children: null };
       obj2[1] = { marginLeft: 4 };
       obj2[3] = audienceCount;
@@ -426,7 +426,7 @@ export default importAllResult.memo((guild) => {
   guild = guild.guild;
   let activeEventOrStageInstanceChannel;
   let guildActiveEvent;
-  let obj = activeEventOrStageInstanceChannel(15392);
+  let obj = activeEventOrStageInstanceChannel(15383);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
   let obj1 = activeEventOrStageInstanceChannel(9087);
   guildActiveEvent = obj1.useGuildActiveEvent(guild.id);

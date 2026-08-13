@@ -1,10 +1,10 @@
-// Module ID: 14217
-// Function ID: 14218
+// Module ID: 14208
+// Function ID: 14209
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1922, 7044, 21, 4342, 712, 647, 4310, 14218, 2007, 14219, 9106, 1236, 2303, 4338, 1297, 5819, 2]
+// Dependencies: [19, 17, 1922, 7044, 21, 4342, 712, 647, 4310, 14209, 2007, 14210, 9106, 1236, 2303, 4338, 1297, 5819, 2]
 // Exports: default
 
-// Module 14217 (FamilyCenterTopActivity)
+// Module 14208 (FamilyCenterTopActivity)
 import noop from "noop";
 import { View } from "GuildIconSizes";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -67,7 +67,7 @@ export default function FamilyCenterTopActivity() {
         user = user.getUser(user_id.user_id);
         let tmp2 = null;
         if (null != user) {
-          const obj = { user: null, size: null, guildId: "e" };
+          const obj = { user: null, size: null, guildId: "Array" };
           obj[0] = user;
           obj[1] = tmp(stateFromStores1[16]).AvatarSizes.SMALL;
           tmp2 = callback(tmp(stateFromStores1[16]).Avatar, obj, user.id);

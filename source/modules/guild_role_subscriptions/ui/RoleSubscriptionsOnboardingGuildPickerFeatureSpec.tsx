@@ -1,8 +1,8 @@
-// Module ID: 13306
-// Function ID: 13307
+// Module ID: 13307
+// Function ID: 13308
 // Dependencies: [4256, 1434, 1236, 589, 5921, 5922, 3982, 2]
 
-// Module 13306
+// Module 13307
 import getHash from "getHash";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 

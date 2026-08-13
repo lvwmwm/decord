@@ -1,10 +1,10 @@
-// Module ID: 14519
-// Function ID: 14520
+// Module ID: 14510
+// Function ID: 14511
 // Name: GuildRoleSubscriptionsSectionHeader
-// Dependencies: [19, 17, 21, 4342, 4338, 1236, 1297, 14520, 14521, 14522, 14525, 14526, 2]
+// Dependencies: [19, 17, 21, 4342, 4338, 1236, 1297, 14511, 14512, 14513, 14516, 14517, 2]
 // Exports: default
 
-// Module 14519 (GuildRoleSubscriptionsSectionHeader)
+// Module 14510 (GuildRoleSubscriptionsSectionHeader)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -47,11 +47,11 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subs
 
 export default function UserSettingsGuildRoleSubscriptions() {
   const tmp = callback3();
-  importDefault(14520)({ forceRestore: true });
-  const tmp5 = importDefault(14521)({ ensureFresh: true });
-  let obj = require(14522) /* useFetchListingsForGuild */;
+  importDefault(14511)({ forceRestore: true });
+  const tmp5 = importDefault(14512)({ ensureFresh: true });
+  let obj = require(14513) /* useFetchListingsForGuild */;
   if (obj.useFetchListingsForSubscriptions(tmp5).loading) {
-    let tmp6Result = tmp6(importDefault(14525), {});
+    let tmp6Result = tmp6(importDefault(14516), {});
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.container;

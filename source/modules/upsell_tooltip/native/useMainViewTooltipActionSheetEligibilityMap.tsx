@@ -1,10 +1,10 @@
-// Module ID: 16107
-// Function ID: 16108
+// Module ID: 16098
+// Function ID: 16099
 // Name: PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID
-// Dependencies: [32, 19, 8839, 16090, 7388, 1340, 1385, 676, 1924, 685, 589, 16108, 1624, 7385, 6958, 16109, 7688, 7692, 9664, 12908, 8842, 8835, 4164, 1377, 16110, 16104, 16087, 12802, 16098, 9287, 2]
+// Dependencies: [32, 19, 8839, 16081, 7388, 1340, 1385, 676, 1924, 685, 589, 16099, 1624, 7385, 6958, 16100, 7688, 7692, 9664, 12909, 8842, 8835, 4164, 1377, 16101, 16095, 16078, 12803, 16089, 9287, 2]
 // Exports: useMainViewTooltipActionSheetMap
 
-// Module 16107 (PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID)
+// Module 16098 (PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID)
 import _slicedToArray from "_slicedToArray";
 import getGiftingBadgeProgressPercent from "getGiftingBadgeProgressPercent";
 import map from "map";
@@ -36,7 +36,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   let obj = isEligibleToShowGiftingBadgeCoachmark(589);
   let items = [handleConnectionClosedOrResumed];
   let stateFromStores = obj.useStateFromStores(items, () => handleConnectionClosedOrResumed.hasLoaded(constants.PRELOADED_USER_SETTINGS));
-  let obj1 = importDefault(16108);
+  let obj1 = importDefault(16099);
   obj = { location: MainViewTooltipActionSheets };
   let obj3 = isEligibleToShowGiftingBadgeCoachmark(589);
   const items1 = [handleRequiredAction];
@@ -67,7 +67,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   const premiumDiscountOffer = isEligibleToShowGiftingBadgeCoachmark(7385).usePremiumDiscountOffer();
   const tmpResult1 = isEligibleToShowGiftingBadgeCoachmark(7385);
   const premiumTrialOffer = isEligibleToShowGiftingBadgeCoachmark(6958).usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(16109).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(16100).PremiumTrialOfferActionSheetKillSwitchExperiment;
   const tmpResult2 = isEligibleToShowGiftingBadgeCoachmark(6958);
   const promotionMarketingComponent = isEligibleToShowGiftingBadgeCoachmark(7688).usePromotionMarketingComponent(tmp(7692).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;
@@ -116,7 +116,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   });
   const GiftPromotionReminderExperiment = tmp(9664).GiftPromotionReminderExperiment;
   const tmpResult6 = isEligibleToShowGiftingBadgeCoachmark(589);
-  isEligibleToShowGiftingBadgeCoachmark = isEligibleToShowGiftingBadgeCoachmark(12908).useIsEligibleToShowGiftingBadgeCoachmark({ platform: "native", location: tmp5 });
+  isEligibleToShowGiftingBadgeCoachmark = isEligibleToShowGiftingBadgeCoachmark(12909).useIsEligibleToShowGiftingBadgeCoachmark({ platform: "native", location: tmp5 });
   const items6 = [isEligibleToShowGiftingBadgeCoachmark];
   const effect = React.useEffect(() => {
     if (isEligibleToShowGiftingBadgeCoachmark) {
@@ -124,7 +124,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
       const obj = isEligibleToShowGiftingBadgeCoachmark(outer1_2[20]);
     }
   }, items6);
-  const tmpResult7 = isEligibleToShowGiftingBadgeCoachmark(12908);
+  const tmpResult7 = isEligibleToShowGiftingBadgeCoachmark(12909);
   const items7 = [map];
   let isDismissed = null != stateFromStores2;
   const stateFromStores5 = isEligibleToShowGiftingBadgeCoachmark(589).useStateFromStores(items7, () => null != badgeById.getBadgeById(isEligibleToShowGiftingBadgeCoachmark(8835).BadgeId.GIFTING));
@@ -146,21 +146,21 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   if (!isDismissed2) {
     tmp23 = stateFromStores4;
   }
-  const tmp4Result = tmp4(16110);
-  ({ isGiftCoachmarkAssetReady, isGiftReminderAssetReady } = tmp4(16110)(tmp22, tmp23));
-  const tmp4ResultResult = tmp4(16110)(tmp22, tmp23);
-  const tmpResult11 = isEligibleToShowGiftingBadgeCoachmark(16104);
-  const shouldShowRobloxConnectionCoachmark = isEligibleToShowGiftingBadgeCoachmark(16087).useShouldShowRobloxConnectionCoachmark();
-  const tmpResult12 = isEligibleToShowGiftingBadgeCoachmark(16087);
+  const tmp4Result = tmp4(16101);
+  ({ isGiftCoachmarkAssetReady, isGiftReminderAssetReady } = tmp4(16101)(tmp22, tmp23));
+  const tmp4ResultResult = tmp4(16101)(tmp22, tmp23);
+  const tmpResult11 = isEligibleToShowGiftingBadgeCoachmark(16095);
+  const shouldShowRobloxConnectionCoachmark = isEligibleToShowGiftingBadgeCoachmark(16078).useShouldShowRobloxConnectionCoachmark();
+  const tmpResult12 = isEligibleToShowGiftingBadgeCoachmark(16078);
   const items8 = [, ];
   ({ LEAGUE_OF_LEGENDS: arr9[0], RIOT_GAMES: arr9[1] } = PlatformTypes);
-  const isEligibleForBogoPromotion = isEligibleToShowGiftingBadgeCoachmark(12802).useIsEligibleForBogoPromotion();
+  const isEligibleForBogoPromotion = isEligibleToShowGiftingBadgeCoachmark(12803).useIsEligibleForBogoPromotion();
   const tmp27 = PlatformTypes;
-  const tmpResult13 = isEligibleToShowGiftingBadgeCoachmark(12802);
-  const shouldShowConnectionDeprecationBottomSheet = isEligibleToShowGiftingBadgeCoachmark(16098).useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items8 });
-  const tmpResult14 = isEligibleToShowGiftingBadgeCoachmark(16098);
+  const tmpResult13 = isEligibleToShowGiftingBadgeCoachmark(12803);
+  const shouldShowConnectionDeprecationBottomSheet = isEligibleToShowGiftingBadgeCoachmark(16089).useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items8 });
+  const tmpResult14 = isEligibleToShowGiftingBadgeCoachmark(16089);
   const items9 = [PlatformTypes.BATTLENET];
-  const shouldShowConnectionDeprecationBottomSheet1 = isEligibleToShowGiftingBadgeCoachmark(16098).useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items9 });
+  const shouldShowConnectionDeprecationBottomSheet1 = isEligibleToShowGiftingBadgeCoachmark(16089).useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items9 });
   isEligibleToShowGiftingBadgeCoachmark(9287);
   obj = {};
   if (stateFromStores) {

@@ -1,8 +1,8 @@
-// Module ID: 12606
-// Function ID: 12607
-// Dependencies: [19, 17, 4358, 1391, 3998, 1922, 4361, 8444, 676, 4363, 1978, 8445, 21, 1297, 4342, 712, 1367, 589, 10337, 8133, 12607, 9680, 12586, 12608, 11729, 11790, 4539, 4310, 12621, 2007, 4887, 1236, 6049, 12622, 8985, 4058, 698, 12301, 6054, 4554, 4870, 8449, 8447, 4338, 7759, 2]
+// Module ID: 12607
+// Function ID: 12608
+// Dependencies: [19, 17, 4358, 1391, 3998, 1922, 4361, 8444, 676, 4363, 1978, 8445, 21, 1297, 4342, 712, 1367, 589, 10337, 8133, 12608, 9680, 12587, 12609, 11730, 11791, 4539, 4310, 12622, 2007, 4887, 1236, 6049, 12623, 8985, 4058, 698, 12302, 6054, 4554, 4870, 8449, 8447, 4338, 7759, 2]
 
-// Module 12606
+// Module 12607
 import importAllResult from "useIsCallActive";
 import { View } from "initialize";
 import getParticipants from "getParticipants";
@@ -155,7 +155,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     tmp14 = callParticipants.length > 0;
   }
   c10 = tmp14;
-  const tmp15 = screenIndex(12607)({ context: { type: "channel", channel: stateFromStores } });
+  const tmp15 = screenIndex(12608)({ context: { type: "channel", channel: stateFromStores } });
   application = tmp15.application;
   const items6 = [stateFromStores];
   callback = obj7.useCallback(() => {
@@ -264,7 +264,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     };
     const intl5 = tmp4(1236).intl;
     obj[2] = intl5.string(tmp4(1236).t["+KSnWX"]);
-    obj[3] = callback(tmp4(12301).WindowLaunchIcon, { size: "sm" });
+    obj[3] = callback(tmp4(12302).WindowLaunchIcon, { size: "sm" });
     let tmp23Result = callback(tmp4(4887).PressableOpacity, obj);
   } else if (tmp15.isAppDM) {
     let tmp39 = null;

@@ -1,7 +1,7 @@
 // Module ID: 8406
 // Function ID: 8407
 // Name: handleUploadMessageAttachmentsErrors
-// Dependencies: [676, 4938, 4897, 8407, 4683, 1236, 12639, 2]
+// Dependencies: [676, 4938, 4897, 8407, 4683, 1236, 12640, 2]
 // Exports: handleUploadMessageAttachmentsErrors
 
 // Module 8406 (handleUploadMessageAttachmentsErrors)
@@ -66,7 +66,7 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
     obj2.show(obj3);
     return true;
   } else {
-    obj = require(12639) /* getAttachmentUploadAbortAlertContent */;
+    obj = require(12640) /* getAttachmentUploadAbortAlertContent */;
     const attachmentUploadAbortAlertContent = obj.getAttachmentUploadAbortAlertContent(code);
     let flag = null != attachmentUploadAbortAlertContent;
     if (flag) {

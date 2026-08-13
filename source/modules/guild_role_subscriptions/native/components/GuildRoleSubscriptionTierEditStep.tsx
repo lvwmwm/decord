@@ -1,10 +1,10 @@
-// Module ID: 16901
-// Function ID: 16902
+// Module ID: 16892
+// Function ID: 16893
 // Name: Header
-// Dependencies: [19, 17, 21, 4342, 712, 5368, 4338, 14527, 1236, 1628, 4755, 1499, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5368, 4338, 14518, 1236, 1628, 4755, 1499, 2]
 // Exports: default
 
-// Module 16901 (Header)
+// Module 16892 (Header)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ function Header(arg0) {
   const items = [callback(require(4338) /* Text */.Text, obj), , ];
   obj = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: description };
   items[1] = callback(require(4338) /* Text */.Text, obj);
-  items[2] = callback(importDefault(14527), { style: tmp.separator });
+  items[2] = callback(importDefault(14518), { style: tmp.separator });
   obj[2] = items;
   return callback2(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }

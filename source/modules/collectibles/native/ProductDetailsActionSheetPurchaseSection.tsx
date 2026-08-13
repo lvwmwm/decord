@@ -1,7 +1,7 @@
 // Module ID: 9622
 // Function ID: 9623
 // Name: GiftButton
-// Dependencies: [32, 19, 17, 6935, 7065, 678, 676, 9623, 1924, 21, 4342, 712, 7796, 9624, 4310, 9484, 9625, 1236, 9618, 9617, 9463, 1499, 5768, 4550, 12220, 2007, 7048, 12224, 679, 12225, 10171, 9458, 4338, 4756, 1949, 4278, 1363, 4065, 9398, 589, 9532, 4007, 7061, 7060, 9472, 10177, 12227, 12228, 12229, 7387, 12231, 1628, 501, 4766, 7880, 4755, 5788, 1993, 12232, 2]
+// Dependencies: [32, 19, 17, 6935, 7065, 678, 676, 9623, 1924, 21, 4342, 712, 7796, 9624, 4310, 9484, 9625, 1236, 9618, 9617, 9463, 1499, 5768, 4550, 12221, 2007, 7048, 12225, 679, 12226, 10171, 9458, 4338, 4756, 1949, 4278, 1363, 4065, 9398, 589, 9532, 4007, 7061, 7060, 9472, 10177, 12228, 12229, 12230, 7387, 12232, 1628, 501, 4766, 7880, 4755, 5788, 1993, 12233, 2]
 // Exports: default
 
 // Module 9622 (GiftButton)
@@ -308,19 +308,19 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     id = tmp16.id;
   }
   obj[3] = id;
-  const tmp17 = onTrackPress(12227);
-  ({ handleBuyNow: c4, isBuying } = onTrackPress(12227)(obj));
-  let tmp5Result = tmp5(12228);
+  const tmp17 = onTrackPress(12228);
+  ({ handleBuyNow: c4, isBuying } = onTrackPress(12228)(obj));
+  let tmp5Result = tmp5(12229);
   handleClaim = tmp5Result.useHandleClaim({ product }).handleClaim;
-  const tmp20 = onTrackPress(12229)({ location: "ProductDetailsActionSheetPurchaseSection", product });
+  const tmp20 = onTrackPress(12230)({ location: "ProductDetailsActionSheetPurchaseSection", product });
   let tmp25Result = tmp20;
   if (tmp20) {
     tmp25Result = !isPurchased;
   }
   tmp5Result = tmp5(7387);
-  const tmp17Result = onTrackPress(12227)(obj);
+  const tmp17Result = onTrackPress(12228)(obj);
   const tmp23 = tmp5Result.useIsEligibleForBogoOffer() ? closure_15.MONTH : closure_15.YEAR;
-  let canGiftProduct = tmp5(12231).useCanGiftProduct(product);
+  let canGiftProduct = tmp5(12232).useCanGiftProduct(product);
   let PX_16 = tmp2(1628)().bottom;
   const items2 = [tmp.container, , ];
   let containerFramesEA = tmp25Result;
@@ -437,7 +437,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     obj17[0] = onTrackPress;
     const intl9 = tmp5(1236).intl;
     obj17[1] = intl9.string(tmp5(1236).t["9wfL34"]);
-    items10[1] = callback2(tmp5(12232).UnlockWithNitroButton, obj17);
+    items10[1] = callback2(tmp5(12233).UnlockWithNitroButton, obj17);
     const obj18 = { variant: "text-xxs/normal", children: null };
     const intl10 = tmp5(1236).intl;
     const obj19 = { paidURL: null, interval: null, ctaText: null };
@@ -458,7 +458,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
         if (!result1) {
           const obj20 = { onTrackPress: null };
           obj20[0] = onTrackPress;
-          tmp25Result2 = callback2(tmp5(12232).UnlockWithNitroButton, obj20);
+          tmp25Result2 = callback2(tmp5(12233).UnlockWithNitroButton, obj20);
         }
       }
     }

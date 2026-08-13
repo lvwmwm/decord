@@ -1,8 +1,8 @@
-// Module ID: 15582
-// Function ID: 15583
-// Dependencies: [19, 4334, 14414, 21, 4065, 712, 14499, 589, 4083, 4754, 9440, 2]
+// Module ID: 15573
+// Function ID: 15574
+// Dependencies: [19, 4334, 14405, 21, 4065, 712, 14490, 589, 4083, 4754, 9440, 2]
 
-// Module 15582
+// Module 15573
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { YOU_BAR_SPRING_CONFIG } from "CONNECTION_BANNER_HEIGHT";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ const memoResult = require("noop").memo(function YouBarNameplate(isQuestRendered
   ({ nameplate, barWidth } = isQuestRendered);
   let obj = isQuestRendered(4065);
   token = obj.useToken(token(712).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(14499)(token);
+  const tmp4 = token(14490)(token);
   dependencyMap = tmp4;
   let obj1 = isQuestRendered(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];

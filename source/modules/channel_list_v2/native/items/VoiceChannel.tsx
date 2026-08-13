@@ -1,9 +1,9 @@
-// Module ID: 15439
-// Function ID: 15440
+// Module ID: 15430
+// Function ID: 15431
 // Name: _handleVoiceChannelPress
-// Dependencies: [5, 19, 17, 7034, 3989, 4357, 4540, 4417, 9844, 676, 21, 712, 4831, 8461, 2007, 4554, 9087, 15436, 15440, 9793, 589, 15429, 9501, 4332, 8106, 9082, 698, 15430, 15323, 9715, 1236, 4527, 15337, 15328, 11502, 2]
+// Dependencies: [5, 19, 17, 7034, 3989, 4357, 4540, 4417, 9844, 676, 21, 712, 4831, 8461, 2007, 4554, 9087, 15427, 15431, 9793, 589, 15420, 9501, 4332, 8106, 9082, 698, 15421, 15314, 9715, 1236, 4527, 15328, 15319, 11503, 2]
 
-// Module 15439 (_handleVoiceChannelPress)
+// Module 15430 (_handleVoiceChannelPress)
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import importAllResult from "useIsConnectedToVoiceChannel";
 import { View } from "useStartTime";
@@ -140,9 +140,9 @@ let closure_17 = importAllResult.memo((channel) => {
   ({ locked, voiceStates, embeddedActivitiesCount } = channel);
   let obj = channel(9087);
   const activeEvent = obj.useActiveEvent(channel.id);
-  let obj1 = channel(15436);
+  let obj1 = channel(15427);
   const startTime = obj1.useStartTime(channel);
-  let obj2 = channel(15440);
+  let obj2 = channel(15431);
   const ensureSyncedChannelVoiceStates = obj2.useEnsureSyncedChannelVoiceStates(channel.id, voiceStates);
   let obj3 = channel(9793);
   const isConnectedToVoiceChannel = obj3.useIsConnectedToVoiceChannel(channel);
@@ -151,7 +151,7 @@ let closure_17 = importAllResult.memo((channel) => {
   const items1 = [channel];
   const stateFromStoresObject = obj4.useStateFromStoresObject(items, () => ({ hasUnread: outer1_8.hasUnread(channel.id), mentionCount: outer1_8.getMentionCount(channel.id), resolvedUnreadSetting: outer1_9.resolveUnreadSetting(channel) }), items1);
   ({ hasUnread, mentionCount, resolvedUnreadSetting } = stateFromStoresObject);
-  let obj5 = channel(15429);
+  let obj5 = channel(15420);
   const channelSubtitleData = obj5.getChannelSubtitleData(subtitle);
   let type;
   if (subtitle != null) {
@@ -233,7 +233,7 @@ let closure_17 = importAllResult.memo((channel) => {
     channelInfo: null,
     children: null
   };
-  const tmp19 = jsx(gameMentionsAsPlainText(15430), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
+  const tmp19 = jsx(gameMentionsAsPlainText(15421), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
   const intl = tmp(1236).intl;
   obj1[6] = intl.string(channel(1236).t["9C444m"]);
   obj1[7] = channel;
@@ -262,7 +262,7 @@ let closure_17 = importAllResult.memo((channel) => {
       obj5 = { users: null, max: 8, guildId: null, renderIcon: false };
       obj5[0] = summarizedVoiceUsers;
       obj5[2] = channel.guild_id;
-      obj4[1] = tmp17(tmp18(15337), obj5);
+      obj4[1] = tmp17(tmp18(15328), obj5);
       tmp17Result = tmp17(View, obj4);
       const tmpResult1 = tmp(4527);
     } else {
@@ -272,12 +272,12 @@ let closure_17 = importAllResult.memo((channel) => {
       obj7[0] = channel;
       obj7[1] = collapsed;
       obj7[2] = ensureSyncedChannelVoiceStates;
-      obj6[1] = tmp17(tmp18(15328), obj7);
+      obj6[1] = tmp17(tmp18(15319), obj7);
       tmp17Result = tmp17(View, obj6);
     }
   }
   obj1[15] = tmp17Result;
-  return jsx(gameMentionsAsPlainText(15323), {
+  return jsx(gameMentionsAsPlainText(15314), {
     onPress() {
       return (function handleVoiceChannelPress(channel) {
         const self = this;
@@ -322,7 +322,7 @@ const memoResult = importAllResult.memo((channel) => {
   const items = [getVoiceStatesForGuild];
   const items1 = [channel.guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getVoiceStates(channel.guild_id), items1);
-  const arr3 = importDefault(11502)(channel);
+  const arr3 = importDefault(11503)(channel);
   const items2 = [getUncachedChannelPermissions, handleConnectionOpen];
   const stateFromStoresObject = channel(589).useStateFromStoresObject(items2, () => ({ locked: !outer1_7.can(outer1_13.CONNECT, channel), bypassLimit: outer1_7.can(outer1_13.MOVE_MEMBERS, channel), collapsed: outer1_6.isCollapsed(channel.id) }));
   obj = { channel, embeddedActivitiesCount: null, collapsed: null, voiceStates: null, selected: null, locked: null, bypassLimit: null, subtitle: null };

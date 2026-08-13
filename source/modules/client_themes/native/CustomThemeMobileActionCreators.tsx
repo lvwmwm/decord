@@ -1,10 +1,10 @@
-// Module ID: 11405
-// Function ID: 11406
+// Module ID: 11406
+// Function ID: 11407
 // Name: updateCustomTheme
 // Dependencies: [709, 2]
 // Exports: clearPreviewTheme, previewCustomTheme, resetCustomTheme, updateCustomTheme
 
-// Module 11405 (updateCustomTheme)
+// Module 11406 (updateCustomTheme)
 const result = require("set").fileFinishedImporting("modules/client_themes/native/CustomThemeMobileActionCreators.tsx");
 
 export const updateCustomTheme = function updateCustomTheme(customThemeSettings, customThemeBaseTheme) {

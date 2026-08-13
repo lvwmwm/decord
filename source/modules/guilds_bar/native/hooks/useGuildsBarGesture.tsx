@@ -1,10 +1,10 @@
-// Module ID: 15487
-// Function ID: 15488
+// Module ID: 15478
+// Function ID: 15479
 // Name: getDropIndex
-// Dependencies: [5, 19, 17, 1910, 5196, 15488, 15489, 4083, 636, 4311, 1363, 12, 1208, 1236, 8053, 15234, 4065, 712, 3974, 11135, 705, 5272, 8747, 8648, 500, 1628, 4741, 15490, 15491, 14415, 5467, 2]
+// Dependencies: [5, 19, 17, 1910, 5196, 15479, 15480, 4083, 636, 4311, 1363, 12, 1208, 1236, 8053, 15225, 4065, 712, 3974, 11136, 705, 5272, 8747, 8648, 500, 1628, 4741, 15481, 15482, 14406, 5467, 2]
 // Exports: default
 
-// Module 15487 (getDropIndex)
+// Module 15478 (getDropIndex)
 import withEqualityFn from "withEqualityFn";
 import closure_4 from "t";
 import { Dimensions } from "Themes";
@@ -648,7 +648,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    state.setStateShallow({ dragSpecs: "Array", overSpecs: "ct" });
+    state.setStateShallow({ dragSpecs: "isArray", overSpecs: "accessibilityRole" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj5 = {};
@@ -782,7 +782,7 @@ export default function useGuildsBarGesture() {
             }
           }
         }
-        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: "Array" };
+        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: -1 };
         obj5[0] = obj;
         obj5[2] = sum;
         setStateShallow(obj5);

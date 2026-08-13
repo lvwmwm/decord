@@ -1,9 +1,9 @@
-// Module ID: 11892
-// Function ID: 11893
+// Module ID: 11893
+// Function ID: 11894
 // Name: Steps
 // Dependencies: [2]
 
-// Module 11892 (Steps)
+// Module 11893 (Steps)
 const result = require("set").fileFinishedImporting("modules/guild_progress/GuildProgressConstants.tsx");
 
 export const Steps = { INVITE: "member_joined", CHANNEL: "create_channel", AVATAR: "avatar", MESSAGE: "send_message", COMPLETED: "completed", DISMISSED: "dismissed" };

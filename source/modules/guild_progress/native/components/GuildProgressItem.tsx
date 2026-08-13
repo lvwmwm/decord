@@ -1,10 +1,10 @@
-// Module ID: 12010
-// Function ID: 12011
+// Module ID: 12011
+// Function ID: 12012
 // Name: GuildProgressItem
-// Dependencies: [19, 21, 4342, 11897, 11901, 11900, 6670, 1236, 12011, 2]
+// Dependencies: [19, 21, 4342, 11898, 11902, 11901, 6670, 1236, 12012, 2]
 // Exports: default
 
-// Module 12010 (GuildProgressItem)
+// Module 12011 (GuildProgressItem)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

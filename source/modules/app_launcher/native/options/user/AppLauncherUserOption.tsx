@@ -1,10 +1,10 @@
-// Module ID: 11628
-// Function ID: 11629
+// Module ID: 11629
+// Function ID: 11630
 // Name: AppLauncherUserOption
-// Dependencies: [32, 19, 4334, 21, 4342, 712, 589, 11620, 1891, 4310, 11629, 2007, 11629, 1297, 11623, 9719, 11626, 4338, 2]
+// Dependencies: [32, 19, 4334, 21, 4342, 712, 589, 11621, 1891, 4310, 11630, 2007, 11630, 1297, 11624, 9719, 11627, 4338, 2]
 // Exports: default
 
-// Module 11628 (AppLauncherUserOption)
+// Module 11629 (AppLauncherUserOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -104,15 +104,15 @@ export default function AppLauncherUserOption(option) {
     const obj1 = { icon: null, wrapperStyle: null };
     obj1[0] = tmp9(tmp2(9719).UserCircleIcon, { size: "sm", color: "interactive-text-default" });
     obj1[1] = tmp.iconWrapper;
-    tmp9Result = tmp9(tmp10(11623), obj1);
-    const tmp10Result = tmp10(11623);
+    tmp9Result = tmp9(tmp10(11624), obj1);
+    const tmp10Result = tmp10(11624);
   }
   obj[5] = tmp9Result;
   if (null != tmp8) {
     let obj2 = { guildId: null, user: null };
     obj2[0] = guild_id;
     obj2[1] = tmp8;
-    tmp9Result = tmp9(tmp10(11626), obj2);
+    tmp9Result = tmp9(tmp10(11627), obj2);
   } else {
     tmp9Result = null;
     if (null != tmp6) {
@@ -123,5 +123,5 @@ export default function AppLauncherUserOption(option) {
   }
   obj[6] = tmp9Result;
   obj[7] = autoFocus;
-  return c6(importDefault(11620), obj);
+  return c6(importDefault(11621), obj);
 };

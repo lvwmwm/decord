@@ -1,10 +1,10 @@
-// Module ID: 11981
-// Function ID: 11982
+// Module ID: 11982
+// Function ID: 11983
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 4342, 712, 8240, 11982, 7838, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 8240, 11983, 7838, 4338, 2]
 // Exports: default
 
-// Module 11981 (GuildPowerupsWarning)
+// Module 11982 (GuildPowerupsWarning)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -4,17 +4,9 @@
 
 // Module 16399
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "el",
+  locale: "ko",
   pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    let str2 = "other";
-    if (!arg1) {
-      if (1 == arg0) {
-        str = "one";
-      }
-      str2 = str;
-    }
-    return str2;
+    return "other";
   }
 });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "el-CY", parentLocale: "el" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ko-KP", parentLocale: "ko" });

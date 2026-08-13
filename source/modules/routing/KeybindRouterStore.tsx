@@ -1,9 +1,9 @@
-// Module ID: 10941
-// Function ID: 10942
+// Module ID: 10943
+// Function ID: 10944
 // Name: getMatchData
 // Dependencies: [676, 4170, 4183, 700, 705, 2]
 
-// Module 10941 (getMatchData)
+// Module 10943 (getMatchData)
 import ME from "ME";
 import identity from "identity";
 

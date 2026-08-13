@@ -1,9 +1,9 @@
-// Module ID: 14118
-// Function ID: 14119
+// Module ID: 14109
+// Function ID: 14110
 // Name: renderContent
 // Dependencies: [19, 21, 530, 4753, 4338, 7835, 4773, 5864, 2]
 
-// Module 14118 (renderContent)
+// Module 14109 (renderContent)
 import jsxProd from "jsxProd";
 import { PureComponent } from "noop";
 import importAllResult from "noop";
@@ -12,7 +12,7 @@ let c3;
 let c4;
 let require = arg1;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
-let closure_5 = { input: "", error: "padding" };
+let closure_5 = { input: "", error: "apply" };
 class UserSettingsInputAlert extends PureComponent {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

@@ -1,10 +1,10 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12342
+// Function ID: 12343
 // Name: ActivityCardText
-// Dependencies: [32, 19, 17, 4383, 4364, 1391, 1910, 3989, 4431, 5037, 4361, 7128, 5816, 676, 21, 4342, 712, 500, 4338, 8981, 12342, 4072, 9703, 1236, 11196, 5308, 1435, 8956, 7992, 1363, 9696, 7244, 12347, 12357, 5768, 5788, 12363, 9322, 9333, 12364, 589, 4887, 5815, 1297, 12350, 12365, 12367, 12345, 12375, 12346, 12378, 8350, 12380, 10872, 4441, 7230, 10821, 12381, 5170, 4524, 4310, 10825, 12368, 4535, 12382, 9706, 9082, 4550, 4554, 6000, 10569, 12383, 12385, 12386, 2]
+// Dependencies: [32, 19, 17, 4383, 4364, 1391, 1910, 3989, 4431, 5037, 4361, 7128, 5816, 676, 21, 4342, 712, 500, 4338, 8981, 12343, 4072, 9703, 1236, 11197, 5308, 1435, 8956, 7992, 1363, 9696, 7244, 12348, 12358, 5768, 5788, 12364, 9322, 9333, 12365, 589, 4887, 5815, 1297, 12351, 12366, 12368, 12346, 12376, 12347, 12379, 8350, 12381, 10874, 4441, 7231, 10823, 12382, 5170, 4524, 4310, 10827, 12369, 4535, 12383, 9706, 9082, 4550, 4554, 6000, 10571, 12384, 12386, 12387, 2]
 // Exports: default
 
-// Module 12341 (ActivityCardText)
+// Module 12342 (ActivityCardText)
 import UserProfileActivityCardBadges from "UserProfileActivityCardBadges";
 import isLinkTrusted from "isLinkTrusted";
 import get_ActivityIndicator from "set";
@@ -329,14 +329,14 @@ function ActivityCard(user) {
   let c3;
   const tmp = createCacheKey();
   let obj = dependencyMap;
-  const tmp3 = activity(12357)(activity);
+  const tmp3 = activity(12358)(activity);
   const analyticsLocations = activity(5768)(activity(5788).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
   let id;
   const tmp4 = activity(5768);
   if (voiceChannel != null) {
     id = voiceChannel.id;
   }
-  const tmp5Result = activity(12363)({ display: "live", voiceChannelId: id, user, activity, analyticsLocations });
+  const tmp5Result = activity(12364)({ display: "live", voiceChannelId: id, user, activity, analyticsLocations });
   dependencyMap = tmp5Result;
   const application_id = activity.application_id;
   let tmp2Result = tmp2(9322);
@@ -351,7 +351,7 @@ function ActivityCard(user) {
     }
   }, items);
   obj = { userId: user.id, onAction: tmp5Result };
-  activity(12364)(obj);
+  activity(12365)(obj);
   let obj3 = user(589);
   const items1 = [createGuildRecordFromRust, updateVoiceState, ensureGuildLoaded];
   const stateFromStores = obj3.useStateFromStores(items1, () => {
@@ -429,12 +429,12 @@ function ActivityCard(user) {
       obj6[3] = tmp5Result;
       const items4 = [closure_21(ActivityCardBody, obj6), , , ];
       tmp34Result = null;
-      if (tmp2(12350)(activity)) {
+      if (tmp2(12351)(activity)) {
         ({ start, end } = activity.timestamps);
         const obj7 = { start: null, end: null };
         obj7[0] = start;
         obj7[1] = end;
-        tmp34Result = tmp34(tmp2(12365), obj7);
+        tmp34Result = tmp34(tmp2(12366), obj7);
       }
       items4[1] = tmp34Result;
       let tmp34Result1 = null;
@@ -446,21 +446,21 @@ function ActivityCard(user) {
           obj8[1] = voiceChannel;
           obj8[2] = tmp5Result;
           obj8[3] = tmp.voiceChannelDivider;
-          tmp34Result1 = tmp34(tmp2(12367), obj8);
+          tmp34Result1 = tmp34(tmp2(12368), obj8);
         }
       }
       items4[2] = tmp34Result1;
-      if (tmp2(12345)(activity)) {
-        ConnectPlatformButton = ConnectPlatformButton(12375).ConnectPlatformButton;
+      if (tmp2(12346)(activity)) {
+        ConnectPlatformButton = ConnectPlatformButton(12376).ConnectPlatformButton;
         obj = { type: null, onAction: null };
         obj[0] = constants2.XBOX;
         obj[1] = tmp5Result;
         let tmp34Result2 = tmp34(ConnectPlatformButton, obj);
-      } else if (tmp2(12346)(activity)) {
+      } else if (tmp2(12347)(activity)) {
         const obj9 = { type: null, onAction: null };
         obj9[0] = constants2.PLAYSTATION;
         obj9[1] = tmp5Result;
-        tmp34Result2 = tmp34(ConnectPlatformButton(12375).ConnectPlatformButton, obj9);
+        tmp34Result2 = tmp34(ConnectPlatformButton(12376).ConnectPlatformButton, obj9);
       } else {
         tmp34Result2 = null;
         if (user.id !== currentUser.id) {
@@ -468,7 +468,7 @@ function ActivityCard(user) {
             const obj10 = { activity: null, onAction: null };
             obj10[0] = activity;
             obj10[1] = tmp5Result;
-            tmp34Result2 = tmp34(ConnectPlatformButton(12375).PlayOnSpotifyButton, obj10);
+            tmp34Result2 = tmp34(ConnectPlatformButton(12376).PlayOnSpotifyButton, obj10);
           } else if (tmp2(7244)(activity)) {
             const obj11 = { user: null, currentUser: null, activity: null, application: null, onAction: null };
             obj11[0] = user;
@@ -476,10 +476,10 @@ function ActivityCard(user) {
             obj11[2] = activity;
             obj11[3] = stateFromStores1;
             obj11[4] = tmp5Result;
-            tmp34Result2 = tmp34(ConnectPlatformButton(12375).JoinActivityButton, obj11);
+            tmp34Result2 = tmp34(ConnectPlatformButton(12376).JoinActivityButton, obj11);
           } else {
             if (tmp2(9696)(activity)) {
-              const result1 = ConnectPlatformButton(12378);
+              const result1 = ConnectPlatformButton(12379);
               let supported_platforms = activity.supported_platforms;
               const currentActivityGamePlatform = result1.getCurrentActivityGamePlatform();
               if (supported_platforms == null) {
@@ -499,7 +499,7 @@ function ActivityCard(user) {
                     obj12[2] = activity;
                     obj12[3] = stateFromStores1;
                     obj12[4] = tmp5Result;
-                    tmp34Result2 = tmp34(ConnectPlatformButton(12375).JoinGameActivityButton, obj12);
+                    tmp34Result2 = tmp34(ConnectPlatformButton(12376).JoinGameActivityButton, obj12);
                   }
                 }
               }
@@ -508,7 +508,7 @@ function ActivityCard(user) {
               const obj13 = { activity: null, onAction: null };
               obj13[0] = activity;
               obj13[1] = tmp5Result;
-              let tmp34Result3 = tmp34(ConnectPlatformButton(12375).WatchActivityButton, obj13);
+              let tmp34Result3 = tmp34(ConnectPlatformButton(12376).WatchActivityButton, obj13);
             } else {
               tmp34Result3 = null;
               if (null != activity.buttons) {
@@ -626,16 +626,18 @@ function StreamActivityCard(user) {
   obj1[2] = tmp.cardTitle;
   obj1[3] = closure_21(user(activity[43]).LiveTag, {});
   obj3 = { style: tmp.streamPreview, children: tmp19(tmp2(tmp3[57]).VoicePanelStreamPreview, obj4) };
-  obj4 = { mode: "a", stream: "<string:1509950317>", disabled: "<string:1191183199>", onPress: "<string:1313341443>" };
-  obj4[1] = stream;
-  obj4[2] = !stateFromStores(tmp2Result.useCanWatchStream(stateFromStores), 1)[0];
-  obj4[3] = function onPress() {
-    _undefined({ action: "PRESS_IMAGE" });
-    const voiceChannel = stream(activity[58]).selectVoiceChannel(stream.channelId);
-    const obj = stream(activity[58]);
-    const result = user(activity[59]).watchStreamAndTransitionToStream(stream);
-    const obj2 = user(activity[59]);
-    stream(activity[60]).hideActionSheet();
+  obj4 = {
+    mode: "a",
+    stream,
+    disabled: !stateFromStores(tmp2Result.useCanWatchStream(stateFromStores), 1)[0],
+    onPress() {
+      _undefined({ action: "PRESS_IMAGE" });
+      const voiceChannel = stream(activity[58]).selectVoiceChannel(stream.channelId);
+      const obj = stream(activity[58]);
+      const result = user(activity[59]).watchStreamAndTransitionToStream(stream);
+      const obj2 = user(activity[59]);
+      stream(activity[60]).hideActionSheet();
+    }
   };
   const items7 = [closure_21(closure_7, obj3), , , , ];
   let tmp19Result = null != stateFromStores4 && !tmp9Result1.useConfig({ location: "UserProfileVoiceSettings" }).nonContextualStreamOutputPresent;
@@ -705,14 +707,14 @@ function VoiceCallActivityCard(arg0) {
     }
     return isPrivateResult;
   });
-  const tmp4 = stateFromStores(12368)(channel);
+  const tmp4 = stateFromStores(12369)(channel);
   const tmp9 = stateFromStores(5768);
   ({ newestAnalyticsLocation: c2, analyticsLocations } = stateFromStores(5768)(stateFromStores(5788).USER_PROFILE_VOICE_ACTIVITY_CARD));
   obj = { display: "voice", activity: { type: "VOICE" }, voiceChannelId: channel.id, user, analyticsLocations };
-  const tmp11 = stateFromStores(12363)(obj);
+  const tmp11 = stateFromStores(12364)(obj);
   c3 = tmp11;
   obj = { userId: user.id, onAction: tmp11 };
-  stateFromStores(12364)(obj);
+  stateFromStores(12365)(obj);
   obj1 = { style: items2, title: null, titleStyle: null, children: null };
   items2 = [tmp.card, style];
   const tmp9Result = stateFromStores(5768)(stateFromStores(5788).USER_PROFILE_VOICE_ACTIVITY_CARD);
@@ -739,7 +741,7 @@ function VoiceCallActivityCard(arg0) {
       id = stateFromStores.id;
     }
     obj3[1] = id;
-    const items3 = [closure_21(tmp2(12382), obj3), ];
+    const items3 = [closure_21(tmp2(12383), obj3), ];
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.voiceCallContent;
     if (stateFromStores1) {
@@ -812,7 +814,7 @@ function VoiceCallActivityCard(arg0) {
     obj17[0] = channel;
     obj17[1] = isInChannel;
     obj17[2] = tmp11;
-    items7[1] = closure_21(tmp6(12375).VoiceChannelButtons, obj17);
+    items7[1] = closure_21(tmp6(12376).VoiceChannelButtons, obj17);
     obj1[3] = items7;
     return tmp13(tmp14, obj1);
   }

@@ -1,10 +1,10 @@
-// Module ID: 11821
-// Function ID: 11822
+// Module ID: 11822
+// Function ID: 11823
 // Name: useMentionAnchor
 // Dependencies: [32, 19, 9960, 2]
 // Exports: default
 
-// Module 11821 (useMentionAnchor)
+// Module 11822 (useMentionAnchor)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

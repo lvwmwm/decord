@@ -1,9 +1,9 @@
-// Module ID: 11683
-// Function ID: 11684
+// Module ID: 11684
+// Function ID: 11685
 // Name: renderChatInputSendButton
-// Dependencies: [32, 19, 17, 4334, 7192, 11419, 21, 4342, 712, 4065, 11675, 11684, 11668, 4288, 1236, 1367, 589, 4689, 11688, 4083, 2]
+// Dependencies: [32, 19, 17, 4334, 7192, 11420, 21, 4342, 712, 4065, 11676, 11685, 11669, 4288, 1236, 1367, 589, 4689, 11689, 4083, 2]
 
-// Module 11683 (renderChatInputSendButton)
+// Module 11684 (renderChatInputSendButton)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "module_4083";
 import { View } from "wrapChildrenDefault";
@@ -31,7 +31,7 @@ function FloatingSlot(arg0) {
   let sendVoiceMessageEnabled;
   ({ buttonHeight, buttonMargin } = arg0);
   ({ buttonWidth, sendVoiceMessageEnabled, children } = arg0);
-  const style = [{ height: buttonHeight }, importDefault(11688)({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
+  const style = [{ height: buttonHeight }, importDefault(11689)({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
   return jsx(importDefault(4083).View, { style, children });
 }
 let c4 = importAllResult;
@@ -62,16 +62,16 @@ let closure_12 = importAllResult.memo((type) => {
     num = closure_8;
   }
   obj = { cleanup, state, withBounce, bounceEnterDelayMs: num, children: null };
-  let tmp3Result = tmp3(11675);
+  let tmp3Result = tmp3(11676);
   if (type === constants.BUTTON_SEND_VOICE_MESSAGE || type === constants.BUTTON_SEND_VOICE_MESSAGE_DISABLED) {
     obj = { disabled: null, channelId: null };
     obj[0] = isOnCooldown;
     obj[1] = channelId;
-    let tmp7Result = tmp7(tmp3(11684), obj);
+    let tmp7Result = tmp7(tmp3(11685), obj);
   } else {
     obj1 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: null, accessibilityLabel: null, onPress: null, disabled: null };
     ({ button: obj4[1], buttonActive: obj4[2], iconActive: obj4[3] } = tmp5);
-    tmp3Result = tmp3(11668);
+    tmp3Result = tmp3(11669);
     obj1[4] = tmp(4288).SendMessageIcon;
     const intl = tmp(1236).intl;
     obj1[5] = intl.string(tmp(1236).t.TXNS7S);

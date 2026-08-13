@@ -1,10 +1,10 @@
-// Module ID: 15345
-// Function ID: 15346
+// Module ID: 15336
+// Function ID: 15337
 // Name: useFavoritesGuildHideAction
 // Dependencies: [19, 4165, 676, 9759, 9758, 1913, 1222, 1236, 3047, 2]
 // Exports: default
 
-// Module 15345 (useFavoritesGuildHideAction)
+// Module 15336 (useFavoritesGuildHideAction)
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import { Routes } from "ME";

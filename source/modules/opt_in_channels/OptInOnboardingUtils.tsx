@@ -1,10 +1,10 @@
-// Module ID: 11001
-// Function ID: 11002
+// Module ID: 11002
+// Function ID: 11003
 // Name: optIntoAllChannelsForExistingMember
 // Dependencies: [1340, 1980, 1990, 4540, 3977, 7042, 1403, 5296, 5287, 1306, 2]
 // Exports: hasClearedGuildOnboardingNotice, hasNotSetUpChannelOptIn, toggleShowAllChannels
 
-// Module 11001 (optIntoAllChannelsForExistingMember)
+// Module 11002 (optIntoAllChannelsForExistingMember)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import comparator from "comparator";
 import closure_6 from "comparator";

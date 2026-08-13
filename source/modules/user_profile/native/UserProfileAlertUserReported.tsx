@@ -1,10 +1,10 @@
-// Module ID: 12044
-// Function ID: 12045
+// Module ID: 12045
+// Function ID: 12046
 // Name: UserProfileAlertUserReported
 // Dependencies: [19, 21, 4688, 1236, 4688, 2]
 // Exports: default
 
-// Module 12044 (UserProfileAlertUserReported)
+// Module 12045 (UserProfileAlertUserReported)
 import "noop";
 import { jsx } from "jsxProd";
 

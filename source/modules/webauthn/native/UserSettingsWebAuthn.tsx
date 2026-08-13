@@ -1,10 +1,10 @@
-// Module ID: 14044
-// Function ID: 14045
+// Module ID: 14035
+// Function ID: 14036
 // Name: UserSettingsWebAuthn
-// Dependencies: [19, 14042, 21, 14045, 5823, 2]
+// Dependencies: [19, 14033, 21, 14036, 5823, 2]
 // Exports: default
 
-// Module 14044 (UserSettingsWebAuthn)
+// Module 14035 (UserSettingsWebAuthn)
 import noop from "noop";
 import { WebAuthnScreens } from "WebAuthnScreens";
 import { jsx } from "jsxProd";

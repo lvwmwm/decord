@@ -1,7 +1,7 @@
 // Module ID: 9306
 // Function ID: 9307
 // Name: GuildProfileBackground
-// Dependencies: [19, 17, 1910, 676, 21, 1364, 4072, 4342, 712, 589, 1430, 1493, 1435, 9307, 4278, 4065, 9308, 4766, 9309, 4338, 9321, 12276, 2]
+// Dependencies: [19, 17, 1910, 676, 21, 1364, 4072, 4342, 712, 589, 1430, 1493, 1435, 9307, 4278, 4065, 9308, 4766, 9309, 4338, 9321, 12277, 2]
 // Exports: default, getBackgroundForProfile
 
 // Module 9306 (GuildProfileBackground)
@@ -115,7 +115,7 @@ export default function GuildProfileView(guildProfile) {
     obj[2] = guildProfile.description;
     tmp5Result = tmp5(guildProfile(4338).Text, obj);
   }
-  const items2 = [tmp5Result, callback(importDefault(9321), { profile: guildProfile }), callback(importDefault(12276), { profile: guildProfile })];
+  const items2 = [tmp5Result, callback(importDefault(9321), { profile: guildProfile }), callback(importDefault(12277), { profile: guildProfile })];
   obj[1] = items2;
   items1[2] = closure_9(closure_4, obj);
   obj[1] = items1;

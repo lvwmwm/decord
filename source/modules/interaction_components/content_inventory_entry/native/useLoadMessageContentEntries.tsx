@@ -1,10 +1,10 @@
-// Module ID: 10972
-// Function ID: 10973
+// Module ID: 10973
+// Function ID: 10974
 // Name: fetchColors
-// Dependencies: [32, 5, 19, 4383, 4370, 10973, 8357, 5769, 8282, 38, 8288, 1954, 8280, 5959, 2]
+// Dependencies: [32, 5, 19, 4383, 4370, 10974, 8357, 5769, 8282, 38, 8288, 1954, 8280, 5959, 2]
 // Exports: default
 
-// Module 10972 (fetchColors)
+// Module 10973 (fetchColors)
 import _slicedToArray from "_slicedToArray";
 import areArraysShallowlyEqual from "areArraysShallowlyEqual";
 import noop from "noop";
@@ -516,7 +516,7 @@ function _loadContentEntryParts() {
                       if (outer1_2.type === arr(outer1_2[11]).ComponentType.CONTENT_INVENTORY_ENTRY) {
                         function _fetchEntryParts() {
                           const self = this;
-                          const tmp = outer1_4(/* F120722 */ function() { ... });
+                          const tmp = outer1_4(/* F120590 */ function() { ... });
                           const _fetchEntryParts = tmp;
                           const apply = tmp.apply;
                           if (typeof apply === "unknown") {

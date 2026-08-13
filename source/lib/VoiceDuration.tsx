@@ -1,9 +1,9 @@
-// Module ID: 13154
-// Function ID: 13155
+// Module ID: 13155
+// Function ID: 13156
 // Name: start
 // Dependencies: [4420, 4456, 2]
 
-// Module 13154 (start)
+// Module 13155 (start)
 let closure_2 = [1, 100, 1000, 10000];
 let closure_3 = [100, 500, 1000, 5000];
 let result = require("set").fileFinishedImporting("lib/VoiceDuration.tsx");

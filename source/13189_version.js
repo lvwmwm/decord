@@ -1,16 +1,15 @@
 // Module ID: 13189
 // Function ID: 13190
 // Name: version
-// Dependencies: [13181]
+// Dependencies: [13182]
 
 // Module 13189 (version)
 
-export default (str) => {
-  const tmp = require(13181) /* SemVer */;
-  const tmpResult = tmp(str.trim().replace(/^[=v]+/, ""), arg1);
+export default (arg0, arg1) => {
+  const tmp = require(13182) /* SemVer */(arg0, arg1);
   let version = null;
-  if (tmpResult) {
-    version = tmpResult.version;
+  if (tmp) {
+    version = tmp.version;
   }
   return version;
 };

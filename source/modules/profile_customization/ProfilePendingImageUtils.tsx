@@ -1,10 +1,10 @@
-// Module ID: 13972
-// Function ID: 13973
+// Module ID: 13963
+// Function ID: 13964
 // Name: createPendingImage
 // Dependencies: [8324, 1370, 2]
 // Exports: createPendingImage
 
-// Module 13972 (createPendingImage)
+// Module 13963 (createPendingImage)
 const result = require("set").fileFinishedImporting("modules/profile_customization/ProfilePendingImageUtils.tsx");
 
 export const createPendingImage = function createPendingImage(assetOrigin) {
@@ -19,7 +19,7 @@ export const createPendingImage = function createPendingImage(assetOrigin) {
   }
   ({ imageUri, staticImageUri, description, originalAsset, originalMd5 } = assetOrigin);
   if (require(8324) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET === NEW_ASSET) {
-    let obj = { assetOrigin: null, imageUri: null, staticImageUri: null, description: null, originalAsset: "Array", originalMd5: "Array" };
+    let obj = { assetOrigin: null, imageUri: null, staticImageUri: null, description: null, originalAsset: "Array", originalMd5: false };
     obj[0] = NEW_ASSET;
     obj[1] = imageUri;
     obj[2] = staticImageUri;
@@ -36,7 +36,7 @@ export const createPendingImage = function createPendingImage(assetOrigin) {
     obj[5] = originalMd5;
     return obj;
   } else if (tmp3(8324).AssetOriginTypes.ARCHIVED_ASSET === NEW_ASSET) {
-    const obj1 = { assetOrigin: null, imageUri: null, description: "Array", originalAsset: true };
+    const obj1 = { assetOrigin: null, imageUri: null, description: "Array", originalAsset: "r" };
     obj1[0] = NEW_ASSET;
     obj1[1] = imageUri;
     obj1[3] = originalAsset;

@@ -50,7 +50,7 @@ const items = [
       }
     },
     analyticsType: "@Everyone Warning",
-    animation: "disabled"
+    animation: "accessibilityRole"
   },
   {
     check(arg0) {

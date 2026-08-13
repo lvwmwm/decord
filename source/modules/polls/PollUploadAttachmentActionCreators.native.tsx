@@ -1,10 +1,10 @@
-// Module ID: 11645
-// Function ID: 11646
+// Module ID: 11646
+// Function ID: 11647
 // Name: _handlePollGifAttachmentAdd
-// Dependencies: [5, 4681, 7333, 11646, 8850, 4901, 4892, 8405, 2]
+// Dependencies: [5, 4681, 7333, 11647, 8850, 4901, 4892, 8405, 2]
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 11645 (_handlePollGifAttachmentAdd)
+// Module 11646 (_handlePollGifAttachmentAdd)
 import openImagePickerUnhandled from "openImagePickerUnhandled";
 import { DraftType } from "handleChanged";
 import { POLL_ATTACHMENT_FOLDER } from "POLL_ATTACHMENT_FOLDER";
@@ -54,13 +54,13 @@ function _handlePollGifAttachmentAdd() {
               let closure_5;
               let styles;
               obj7 = undefined;
-              dependencyMap = callback(11646).getFileNameFromGifUrl(callback2, dependencyMap);
+              dependencyMap = callback(11647).getFileNameFromGifUrl(callback2, dependencyMap);
               styles = 1;
-              const obj16 = callback(11646);
+              const obj16 = callback(11647);
               obj7 = 2;
               c8 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = callback(11646).downloadPollGif(dependencyMap);
+              obj1[0] = callback(11647).downloadPollGif(dependencyMap);
               return obj1;
             }
           } else if (1 === tmp8) {
@@ -84,7 +84,7 @@ function _handlePollGifAttachmentAdd() {
                 c8 = 3;
                 return { value: "HermesInternal", done: null };
               } else {
-                obj7 = callback(11646);
+                obj7 = callback(11647);
                 Poll = obj7.getFilePathForGif(dependencyMap);
                 let obj8 = callback(8850);
                 obj7 = 3;
@@ -194,7 +194,7 @@ function _removePollUploadAttachment() {
       callback2(8405).remove(callback, callback2, Poll.Poll);
       const obj5 = callback2(8405);
       const obj6 = callback(8850);
-      yield obj6.removeFile("cache", callback(11646).getFilePathForGif(dependencyMap));
+      yield obj6.removeFile("cache", callback(11647).getFilePathForGif(dependencyMap));
       if (1 === tmp6) {
         c6 = 0;
         let c3 = 3;

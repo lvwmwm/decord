@@ -1,10 +1,10 @@
-// Module ID: 10547
-// Function ID: 10548
+// Module ID: 10549
+// Function ID: 10550
 // Name: _getAppStoreOverlayContent
-// Dependencies: [5, 1236, 10548, 2]
+// Dependencies: [5, 1236, 10550, 2]
 // Exports: getAppStoreOverlayContent
 
-// Module 10547 (_getAppStoreOverlayContent)
+// Module 10549 (_getAppStoreOverlayContent)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;

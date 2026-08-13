@@ -1,10 +1,10 @@
-// Module ID: 16844
-// Function ID: 16845
+// Module ID: 16835
+// Function ID: 16836
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 9071, 1391, 1980, 3998, 1922, 8187, 676, 21, 4065, 712, 16833, 589, 4535, 1236, 16834, 4310, 9017, 2007, 9070, 16831, 4338, 4753, 5807, 5414, 2]
+// Dependencies: [19, 17, 9071, 1391, 1980, 3998, 1922, 8187, 676, 21, 4065, 712, 16824, 589, 4535, 1236, 16825, 4310, 9017, 2007, 9070, 16822, 4338, 4753, 5807, 5414, 2]
 // Exports: default
 
-// Module 16844 (ChannelSetupScreen)
+// Module 16835 (ChannelSetupScreen)
 import asyncRequireImpl from "asyncRequireImpl";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
 import handleFormInit from "handleFormInit";

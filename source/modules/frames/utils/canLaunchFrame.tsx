@@ -1,10 +1,10 @@
-// Module ID: 10567
-// Function ID: 10568
+// Module ID: 10569
+// Function ID: 10570
 // Name: canLaunchFrame
 // Dependencies: [676, 8386, 7634, 2]
 // Exports: canLaunchFrame
 
-// Module 10567 (canLaunchFrame)
+// Module 10569 (canLaunchFrame)
 import { ApplicationFlags } from "ME";
 
 const result = require("getApplicationFlags").fileFinishedImporting("modules/frames/utils/canLaunchFrame.tsx");

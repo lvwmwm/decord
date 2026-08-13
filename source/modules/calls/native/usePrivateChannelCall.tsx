@@ -1,10 +1,10 @@
-// Module ID: 12585
-// Function ID: 12586
+// Module ID: 12586
+// Function ID: 12587
 // Name: usePrivateChannelCall
 // Dependencies: [5, 19, 1391, 589, 1236, 9680, 4355, 2]
 // Exports: default
 
-// Module 12585 (usePrivateChannelCall)
+// Module 12586 (usePrivateChannelCall)
 import getPrivateChannelCall from "getPrivateChannelCall";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";

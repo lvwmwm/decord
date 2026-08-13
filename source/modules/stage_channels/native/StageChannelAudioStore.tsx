@@ -1,9 +1,9 @@
-// Module ID: 16279
-// Function ID: 16280
+// Module ID: 16270
+// Function ID: 16271
 // Name: handleAudioRouteChanged
-// Dependencies: [17, 9199, 1391, 4416, 16280, 9200, 589, 709, 2]
+// Dependencies: [17, 9199, 1391, 4416, 16271, 9200, 589, 709, 2]
 
-// Module 16279 (handleAudioRouteChanged)
+// Module 16270 (handleAudioRouteChanged)
 import { NativeModules } from "get ActivityIndicator";
 import handleAudioRouteChanged from "handleAudioRouteChanged";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -66,16 +66,16 @@ const stageChannelAudioStore = new StageChannelAudioStore(require("dispatcher"),
             if (!isGuildStageVoiceResult) {
               let defaultSpeakerForGuildCall = channel.isGuildVoice();
               if (defaultSpeakerForGuildCall) {
-                defaultSpeakerForGuildCall = importDefault(16280).getConfig({ location: "StageChannelAudioStore" }).defaultSpeakerForGuildCall;
-                const obj2 = importDefault(16280);
+                defaultSpeakerForGuildCall = importDefault(16271).getConfig({ location: "StageChannelAudioStore" }).defaultSpeakerForGuildCall;
+                const obj2 = importDefault(16271);
               }
               isGuildStageVoiceResult = defaultSpeakerForGuildCall;
             }
             if (!isGuildStageVoiceResult) {
               let defaultSpeakerForDMCall = channel.isDM();
               if (defaultSpeakerForDMCall) {
-                defaultSpeakerForDMCall = importDefault(16280).getConfig({ location: "StageChannelAudioStore" }).defaultSpeakerForDMCall;
-                const obj3 = importDefault(16280);
+                defaultSpeakerForDMCall = importDefault(16271).getConfig({ location: "StageChannelAudioStore" }).defaultSpeakerForDMCall;
+                const obj3 = importDefault(16271);
               }
               isGuildStageVoiceResult = defaultSpeakerForDMCall;
             }

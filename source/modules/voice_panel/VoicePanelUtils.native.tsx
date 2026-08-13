@@ -1,10 +1,10 @@
-// Module ID: 10741
-// Function ID: 10742
+// Module ID: 10743
+// Function ID: 10744
 // Name: isVoicePanelEnabled
 // Dependencies: [1391, 4416, 4555, 4556, 647, 2]
 // Exports: isVoicePanelEnabled, useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 10741 (isVoicePanelEnabled)
+// Module 10743 (isVoicePanelEnabled)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import withEqualityFn from "withEqualityFn";

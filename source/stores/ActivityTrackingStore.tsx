@@ -1,9 +1,9 @@
-// Module ID: 13070
-// Function ID: 13071
+// Module ID: 13071
+// Function ID: 13072
 // Name: stopActivity
 // Dependencies: [4365, 1340, 1218, 4378, 4381, 4416, 1979, 676, 687, 595, 4390, 10411, 4227, 4514, 589, 709, 2]
 
-// Module 13070 (stopActivity)
+// Module 13071 (stopActivity)
 import initialize from "initialize";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";

@@ -1,10 +1,10 @@
-// Module ID: 10671
-// Function ID: 10672
+// Module ID: 10673
+// Function ID: 10674
 // Name: isDiscordVisible
 // Dependencies: [6923, 676, 9816, 2]
 // Exports: default
 
-// Module 10671 (isDiscordVisible)
+// Module 10673 (isDiscordVisible)
 import getState from "getState";
 import { AppStates } from "ME";
 

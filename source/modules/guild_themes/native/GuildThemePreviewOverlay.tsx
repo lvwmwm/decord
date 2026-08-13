@@ -1,10 +1,10 @@
-// Module ID: 15371
-// Function ID: 15372
+// Module ID: 15362
+// Function ID: 15363
 // Name: GuildThemePreviewOverlay
 // Dependencies: [19, 21, 7880, 2]
 // Exports: default
 
-// Module 15371 (GuildThemePreviewOverlay)
+// Module 15362 (GuildThemePreviewOverlay)
 import "noop";
 import jsxProd from "jsxProd";
 

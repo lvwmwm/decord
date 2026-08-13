@@ -1,10 +1,10 @@
-// Module ID: 12608
-// Function ID: 12609
+// Module ID: 12609
+// Function ID: 12610
 // Name: ChannelHeader
-// Dependencies: [19, 1391, 676, 1398, 21, 500, 4205, 10405, 1231, 4198, 647, 4558, 12609, 12610, 12611, 12617, 1236, 12619, 2]
+// Dependencies: [19, 1391, 676, 1398, 21, 500, 4205, 10405, 1231, 4198, 647, 4558, 12610, 12611, 12612, 12618, 1236, 12620, 2]
 // Exports: default, navigateToChannelDetails
 
-// Module 12608 (ChannelHeader)
+// Module 12609 (ChannelHeader)
 import "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ComponentActions } from "ME";
@@ -40,9 +40,9 @@ export default function ChannelHeader(channelId) {
     tmp4 = pressable;
   }
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
-    let tmp8Result = jsx(importDefault(12609), {});
+    let tmp8Result = jsx(importDefault(12610), {});
   } else if (channelId === tmp5.GUILD_HOME) {
-    tmp8Result = jsx(importDefault(12610), {});
+    tmp8Result = jsx(importDefault(12611), {});
   } else {
     let isPrivateResult;
     if (stateFromStores != null) {
@@ -53,7 +53,7 @@ export default function ChannelHeader(channelId) {
       obj[0] = channelId;
       obj[1] = tmp4;
       obj[2] = screenIndex;
-      tmp8Result = jsx(importDefault(12611), { channelId: null, pressable: null, screenIndex: null });
+      tmp8Result = jsx(importDefault(12612), { channelId: null, pressable: null, screenIndex: null });
     } else {
       let isForumLikeChannelResult;
       if (stateFromStores != null) {
@@ -63,7 +63,7 @@ export default function ChannelHeader(channelId) {
         obj = { channelId: null, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null, searchPlaceholder: null };
         obj[0] = channelId;
         let guild_id;
-        let tmp9Result = tmp9(12617);
+        let tmp9Result = tmp9(12618);
         if (stateFromStores != null) {
           guild_id = stateFromStores.guild_id;
         }
@@ -83,7 +83,7 @@ export default function ChannelHeader(channelId) {
         const obj1 = { channelId: null, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null, showCreateThread: null };
         obj1[0] = channelId;
         let guild_id1;
-        tmp9Result = tmp9(12619);
+        tmp9Result = tmp9(12620);
         if (stateFromStores != null) {
           guild_id1 = stateFromStores.guild_id;
         }

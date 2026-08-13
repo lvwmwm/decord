@@ -1,8 +1,8 @@
-// Module ID: 16021
-// Function ID: 16022
-// Dependencies: [19, 17, 8445, 15808, 676, 21, 4342, 712, 8619, 5823, 11790, 1628, 16022, 8431, 16017, 16018, 2]
+// Module ID: 16012
+// Function ID: 16013
+// Dependencies: [19, 17, 8445, 15799, 676, 21, 4342, 712, 8619, 5823, 11791, 1628, 16013, 8431, 16008, 16009, 2]
 
-// Module 16021
+// Module 16012
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { SearchEntrypointAnalyticsLocations as closure_5 } from "SearchEntrypointAnalyticsLocations";
@@ -52,7 +52,7 @@ const memoResult = importAllResult.memo((route) => {
       name: SearchNavigatorScreens.SEARCH_TABS,
       options: { headerShown: false, fullScreenGestureEnabled: true },
       getComponent() {
-        return searchContext(16022).default;
+        return searchContext(16013).default;
       }
     }),
     callback(createNativeStackNavigator.Screen, {
@@ -67,7 +67,7 @@ const memoResult = importAllResult.memo((route) => {
         return obj;
       },
       getComponent() {
-        return searchContext(16018).default;
+        return searchContext(16009).default;
       }
     })
   ];

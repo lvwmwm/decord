@@ -1,9 +1,9 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16690
+// Function ID: 16691
 // Name: getSource
-// Dependencies: [5, 19, 17, 676, 21, 4342, 712, 4072, 4901, 4887, 1236, 16700, 16701, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4342, 712, 4072, 4901, 4887, 1236, 16691, 16692, 1297, 2]
 
-// Module 16699 (getSource)
+// Module 16690 (getSource)
 import closure_3 from "createCacheKey";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UPLOAD_MEDIUM_SIZE } from "ME";
@@ -142,7 +142,7 @@ prototype["render"] = function render() {
   obj[4] = disabled;
   let tmp9 = source;
   if (null == source) {
-    tmp9 = importDefault(16700);
+    tmp9 = importDefault(16691);
   }
   obj = { source: tmp9, style: tmp.asset, children: null };
   let tmp5Result = null;
@@ -151,7 +151,7 @@ prototype["render"] = function render() {
     obj[0] = tmp.uploadIconWrapper;
     const obj1 = { style: null, source: null };
     obj1[0] = tmp.uploadIcon;
-    obj1[1] = importDefault(16701);
+    obj1[1] = importDefault(16692);
     obj[1] = tmp5(closure_5, obj1);
     tmp5Result = tmp5(closure_4, obj);
   }

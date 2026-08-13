@@ -1,10 +1,10 @@
-// Module ID: 12854
-// Function ID: 12855
+// Module ID: 12855
+// Function ID: 12856
 // Name: getTopPatternSource
-// Dependencies: [19, 17, 21, 7668, 12855, 12856, 12857, 1363, 2]
+// Dependencies: [19, 17, 21, 7668, 12856, 12857, 12858, 1363, 2]
 // Exports: TopPattern, getTopPatternSource, useTopPatternSource
 
-// Module 12854 (getTopPatternSource)
+// Module 12855 (getTopPatternSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getTopPatternSource = function getTopPatternSource(theme) {
   let obj = require(7668) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(12855);
-    },
-    darker() {
       return callback(12856);
     },
-    light() {
+    darker() {
       return callback(12857);
+    },
+    light() {
+      return callback(12858);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useTopPatternSource = function useTopPatternSource() {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12855);
-    },
-    darker() {
       return callback(12856);
     },
-    light() {
+    darker() {
       return callback(12857);
+    },
+    light() {
+      return callback(12858);
     }
   };
   return require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const TopPattern = function TopPattern(arg0) {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12855);
-    },
-    darker() {
       return callback(12856);
     },
-    light() {
+    darker() {
       return callback(12857);
+    },
+    light() {
+      return callback(12858);
     }
   };
   obj = {};

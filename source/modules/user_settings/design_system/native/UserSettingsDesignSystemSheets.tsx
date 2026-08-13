@@ -1,10 +1,10 @@
-// Module ID: 14896
-// Function ID: 14897
+// Module ID: 14887
+// Function ID: 14888
 // Name: DemoActionSheet
-// Dependencies: [32, 19, 17, 676, 21, 4342, 5804, 5436, 9025, 5805, 4753, 7835, 5806, 4310, 1367, 4755, 1236, 7778, 6182, 13103, 5416, 4338, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 5804, 5436, 9025, 5805, 4753, 7835, 5806, 4310, 1367, 4755, 1236, 7778, 6182, 13104, 5416, 4338, 2]
 // Exports: default
 
-// Module 14896 (DemoActionSheet)
+// Module 14887 (DemoActionSheet)
 import _slicedToArray from "_slicedToArray";
 import NUFChannelIllustration from "NUFChannelIllustration";
 import { ScrollView } from "PromoSheet";
@@ -115,7 +115,7 @@ function DemoPromoSheet() {
     let obj2 = obj;
   } else {
     obj2 = { illustration: null, title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
-    obj2[0] = tmp4(tmp(13103), {});
+    obj2[0] = tmp4(tmp(13104), {});
     obj2[3] = tmp5;
   }
   return callback2(require(7778) /* PromoSheet */.PromoSheet, obj2);

@@ -1,9 +1,9 @@
-// Module ID: 13531
-// Function ID: 13532
+// Module ID: 13522
+// Function ID: 13523
 // Name: NormalTelemetryImpl
-// Dependencies: [13526, 13527, 2]
+// Dependencies: [13517, 13518, 2]
 
-// Module 13531 (NormalTelemetryImpl)
+// Module 13522 (NormalTelemetryImpl)
 import importDefaultResult from "append";
 import importDefaultResult1 from "TelemetryChannel";
 

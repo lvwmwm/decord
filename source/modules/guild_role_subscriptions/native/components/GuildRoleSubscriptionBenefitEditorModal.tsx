@@ -1,9 +1,9 @@
-// Module ID: 16921
-// Function ID: 16922
+// Module ID: 16912
+// Function ID: 16913
 // Name: DeleteButton
-// Dependencies: [5, 32, 19, 17, 3998, 1922, 16920, 14515, 676, 21, 4342, 712, 5276, 13313, 4887, 4301, 1297, 1236, 1628, 16922, 4535, 8012, 16924, 9109, 16925, 2]
+// Dependencies: [5, 32, 19, 17, 3998, 1922, 16911, 14506, 676, 21, 4342, 712, 5276, 13314, 4887, 4301, 1297, 1236, 1628, 16913, 4535, 8012, 16915, 9109, 16916, 2]
 
-// Module 16921 (DeleteButton)
+// Module 16912 (DeleteButton)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "getSystemLocale";
@@ -27,7 +27,7 @@ const require = arg1;
 function DeleteButton(onDelete) {
   const tmp = callback4();
   let obj = { style: items, accessibilityRole: "button", onPress: onDelete.onDelete, children: null };
-  items = [importDefault(13313)().textInput, tmp.deleteButton];
+  items = [importDefault(13314)().textInput, tmp.deleteButton];
   obj = { style: tmp.deleteIcon, color: null, size: "custom" };
   obj[1] = importDefault(712).unsafe_rawColors.RED_400;
   const items1 = [callback2(require(4301) /* TrashIcon */.TrashIcon, obj), ];
@@ -175,7 +175,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
     return applyArgumentsResult;
   }
   let tmp = callback4();
-  const tmp4 = first(13313)();
+  const tmp4 = first(13314)();
   const tmp5 = callback(resetImperatively.useNameState(), 2);
   first = tmp5[0];
   const dependencyMap = tmp6;
@@ -240,7 +240,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
         callback3(id.id);
         tmp6(benefitType(tmp6[20]).computeChannelName(id, first4, first3));
       };
-      let tmp25 = callback2(tmp2(16922), obj);
+      let tmp25 = callback2(tmp2(16913), obj);
       let tmp26 = callback2;
     } else {
       obj = { style: null, showTopContainer: false, multiline: false, maxLength: null, value: null, placeholder: null, onChange: null, autoFocus: true, clearButtonVisibility: null };
@@ -271,7 +271,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       return applyArgumentsResult;
     };
     obj1[4] = benefitType.listingId;
-    const items = [tmp26(tmp2(16924), obj1), ];
+    const items = [tmp26(tmp2(16915), obj1), ];
     let obj2 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
     const items1 = [tmp.scrollContainer, ];
     const obj3 = { paddingBottom: null };
@@ -298,7 +298,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       callback(emojiId.emojiId);
       callback2(emojiId.emojiName);
     };
-    items2[3] = tmp26(tmp2(16925), obj6);
+    items2[3] = tmp26(tmp2(16916), obj6);
     const obj8 = { style: null, children: null };
     obj8[0] = tmp4.header;
     tmp2Result = tmp2(9109);

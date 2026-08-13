@@ -1,10 +1,10 @@
-// Module ID: 16251
-// Function ID: 16252
+// Module ID: 16242
+// Function ID: 16243
 // Name: usePanelOpenState
-// Dependencies: [32, 19, 4555, 11704, 676, 4083, 1231, 10940, 4170, 4183, 10933, 10569, 2]
+// Dependencies: [32, 19, 4555, 11705, 676, 4083, 1231, 10942, 4170, 4183, 10935, 10571, 2]
 // Exports: default
 
-// Module 16251 (usePanelOpenState)
+// Module 16242 (usePanelOpenState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import withEqualityFn from "withEqualityFn";
@@ -89,12 +89,12 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
       ComponentDispatch2.unsubscribe(outer2_7.VOICE_PANEL_CLOSE, componentActionClose);
     };
   }, items);
-  const tmp3 = callback(doCloseChannel.useState(() => callback2(10940).getHistory().location.pathname), 2);
+  const tmp3 = callback(doCloseChannel.useState(() => callback2(10942).getHistory().location.pathname), 2);
   const first = tmp3[0];
   let closure_6 = tmp3[1];
   const items1 = [arg0, first];
   const effect1 = doCloseChannel.useEffect(() => {
-    let closure_0 = callback2(10940).addRouteChangeListener((pathname) => {
+    let closure_0 = callback2(10942).addRouteChangeListener((pathname) => {
       if (withEqualityFn !== pathname.pathname) {
         callback2(tmp);
         let obj = callback(outer1_2[8]);

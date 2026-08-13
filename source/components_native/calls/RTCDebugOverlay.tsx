@@ -1,10 +1,10 @@
-// Module ID: 10890
-// Function ID: 10891
+// Module ID: 10892
+// Function ID: 10893
 // Name: Text
-// Dependencies: [19, 17, 1391, 1910, 4416, 10891, 4430, 1922, 4406, 21, 4342, 4191, 712, 1297, 589, 4535, 10893, 10892, 709, 5368, 4755, 1236, 2]
+// Dependencies: [19, 17, 1391, 1910, 4416, 10893, 4430, 1922, 4406, 21, 4342, 4191, 712, 1297, 589, 4535, 10895, 10894, 709, 5368, 4755, 1236, 2]
 // Exports: default
 
-// Module 10890 (Text)
+// Module 10892 (Text)
 import importAllResult from "SafeAreaPaddingView";
 import get_ActivityIndicator from "open";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -228,7 +228,7 @@ export default function RTCDebugOverlay(arg0) {
   const tmp = callback3();
   const effect = importAllResult.useEffect(() => {
     callback(table[17]).open();
-    return () => callback(709).wait(callback2(10892).close);
+    return () => callback(709).wait(callback2(10894).close);
   }, []);
   let obj = { top: true, left: true, right: true, bottom: true, style: items, children: null };
   items = [tmp.container, style];

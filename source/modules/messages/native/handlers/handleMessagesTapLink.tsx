@@ -1,10 +1,10 @@
-// Module ID: 11051
-// Function ID: 11052
+// Module ID: 11052
+// Function ID: 11053
 // Name: handleMessagesTapURLLink
-// Dependencies: [8387, 4383, 8092, 10279, 1930, 1391, 4327, 4562, 1922, 676, 1498, 1398, 5870, 1235, 11049, 4323, 7240, 11050, 9333, 9327, 8981, 10990, 8832, 4310, 9303, 2007, 5170, 4524, 11052, 9722, 11053, 6965, 5788, 8384, 1626, 11054, 4573, 1222, 8144, 11057, 11080, 2]
+// Dependencies: [8387, 4383, 8092, 10279, 1930, 1391, 4327, 4562, 1922, 676, 1498, 1398, 5870, 1235, 11050, 4323, 7240, 11051, 9333, 9327, 8981, 10991, 8832, 4310, 9303, 2007, 5170, 4524, 11053, 9722, 11054, 6965, 5788, 8384, 1626, 11055, 4573, 1222, 8144, 11058, 11081, 2]
 // Exports: handleMessagesTapLink
 
-// Module 11051 (handleMessagesTapURLLink)
+// Module 11052 (handleMessagesTapURLLink)
 import { getSection } from "getIndexKey";
 import addApplication from "addApplication";
 import handleMessageSendFailedAutomod from "handleMessageSendFailedAutomod";
@@ -32,7 +32,7 @@ function handleMessagesTapURLLink(data, channelId) {
     const node = data.node;
     let flag2 = false;
     if (null != node) {
-      let obj = require(11049) /* isLinkTrusted */;
+      let obj = require(11050) /* isLinkTrusted */;
       flag2 = false;
       if (obj.isLinkTrusted(node)) {
         const payload = importDefault(4323)(tmp).payload;
@@ -47,7 +47,7 @@ function handleMessagesTapURLLink(data, channelId) {
               const tmp2Result = tmp2(7240);
             }
             if (!num) {
-              tmp4(11050)(invite);
+              tmp4(11051)(invite);
               num = 0;
             }
             flag2 = !num;
@@ -92,8 +92,8 @@ function handleMessagesTapURLLink(data, channelId) {
       obj1[0] = data.url;
       let isLinkTrustedResult = null != data.node;
       if (isLinkTrustedResult) {
-        isLinkTrustedResult = tmp19(11049).isLinkTrusted(data.node);
-        const tmp19Result = tmp19(11049);
+        isLinkTrustedResult = tmp19(11050).isLinkTrusted(data.node);
+        const tmp19Result = tmp19(11050);
       }
       obj1[1] = isLinkTrustedResult;
       obj1[2] = data.messageId;
@@ -138,6 +138,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
     }
     tmp4 = handleMessagesTapURLLink;
   } else {
-    const obj = require(10990) /* isAlertOrActionSheetOpen */;
+    const obj = require(10991) /* isAlertOrActionSheetOpen */;
   }
 };

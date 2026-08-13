@@ -1,10 +1,10 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17030
+// Function ID: 17031
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 1499, 17040, 1236, 2565, 17031, 4753, 7835, 2]
+// Dependencies: [32, 19, 21, 1499, 17031, 1236, 2565, 17022, 4753, 7835, 2]
 // Exports: default
 
-// Module 17039 (EnterEmailScreen)
+// Module 17030 (EnterEmailScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -30,5 +30,5 @@ export default function EnterEmailScreen() {
   obj = { children: null };
   obj[0] = jsx(_require(7835).TextInput, { label: "Email", value: tmp2, onChange: tmp3 });
   obj[3] = jsx(_require(4753).Stack, { children: null });
-  return jsx(importDefault(17040), { children: null });
+  return jsx(importDefault(17031), { children: null });
 };

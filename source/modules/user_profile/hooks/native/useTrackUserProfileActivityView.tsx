@@ -1,10 +1,10 @@
-// Module ID: 12364
-// Function ID: 12365
+// Module ID: 12365
+// Function ID: 12366
 // Name: useTrackUserProfileActivityView
 // Dependencies: [32, 19, 9420, 589, 2]
 // Exports: default
 
-// Module 12364 (useTrackUserProfileActivityView)
+// Module 12365 (useTrackUserProfileActivityView)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import map from "map";

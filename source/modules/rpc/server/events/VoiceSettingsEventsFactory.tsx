@@ -1,10 +1,10 @@
-// Module ID: 13855
-// Function ID: 13856
+// Module ID: 13846
+// Function ID: 13847
 // Name: createVoiceSettingsEventHandlers
 // Dependencies: [4245, 676, 8951, 12, 2]
 // Exports: default
 
-// Module 13855 (createVoiceSettingsEventHandlers)
+// Module 13846 (createVoiceSettingsEventHandlers)
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import { RPCEvents } from "ME";
 

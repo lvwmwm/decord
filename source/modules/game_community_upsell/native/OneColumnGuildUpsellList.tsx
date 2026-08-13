@@ -1,10 +1,10 @@
-// Module ID: 15474
-// Function ID: 15475
+// Module ID: 15465
+// Function ID: 15466
 // Name: OneColumnGuildUpsellList
-// Dependencies: [19, 15020, 21, 9399, 503, 1500, 589, 5768, 5788, 15475, 7790, 2]
+// Dependencies: [19, 15011, 21, 9399, 503, 1500, 589, 5768, 5788, 15466, 7790, 2]
 // Exports: OneColumnGuildUpsellList
 
-// Module 15474 (OneColumnGuildUpsellList)
+// Module 15465 (OneColumnGuildUpsellList)
 import noop from "noop";
 import set from "set";
 import { jsx } from "jsxProd";

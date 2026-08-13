@@ -1,10 +1,10 @@
-// Module ID: 13830
-// Function ID: 13831
+// Module ID: 13821
+// Function ID: 13822
 // Name: fetchStoreListingsForApplications
-// Dependencies: [4383, 4391, 13831, 676, 4582, 530, 709, 7632, 2]
+// Dependencies: [4383, 4391, 13822, 676, 4582, 530, 709, 7632, 2]
 // Exports: fetchAllStoreListingsForApplication, fetchStoreListingForSku, fetchStoreListingsForApplications
 
-// Module 13830 (fetchStoreListingsForApplications)
+// Module 13821 (fetchStoreListingsForApplications)
 import addApplication from "addApplication";
 import addSku from "addSku";
 import addRegularStoreListing from "addRegularStoreListing";

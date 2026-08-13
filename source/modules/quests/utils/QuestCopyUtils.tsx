@@ -1,10 +1,10 @@
-// Module ID: 10442
-// Function ID: 10443
+// Module ID: 10441
+// Function ID: 10442
 // Name: getContextualEntrypointHeading
-// Dependencies: [5202, 1236, 9566, 9567, 9571, 7233, 7222, 5796, 2]
+// Dependencies: [5202, 1236, 9566, 9567, 9571, 7222, 7223, 5796, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 10442 (getContextualEntrypointHeading)
+// Module 10441 (getContextualEntrypointHeading)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 
 let c3;
@@ -165,13 +165,13 @@ export const copyShareLink = function copyShareLink(id, ctaContent) {
     let tmpResult = tmp(9567);
     obj = { type: null, adCreativeType: null, adCreativeId: null, questContentCTA: null, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
     obj[0] = tmp(9571).AdUserActionType.CLICK_INTERNAL;
-    obj[1] = tmp(7233).AdCreativeType.QUEST;
+    obj[1] = tmp(7222).AdCreativeType.QUEST;
     obj[2] = id;
     obj[3] = ctaContent;
     ({ content: obj5[4], sourceQuestContent: obj5[5], position: obj5[6], impressionId: obj5[7] } = ctaContent);
     tmpResult.captureAdUserAction(obj);
   } else {
-    tmpResult = tmp(7222);
+    tmpResult = tmp(7223);
     obj = { questId: null, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null };
     obj[0] = id;
     obj[1] = ctaContent.content;

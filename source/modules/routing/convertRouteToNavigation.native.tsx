@@ -1,10 +1,10 @@
-// Module ID: 10942
-// Function ID: 10943
+// Module ID: 10944
+// Function ID: 10945
 // Name: convertRouteToNavigation
 // Dependencies: [676, 4200, 4197, 4198, 4170, 4183, 2]
 // Exports: convertRouteToNavigation
 
-// Module 10942 (convertRouteToNavigation)
+// Module 10944 (convertRouteToNavigation)
 import { Routes } from "ME";
 
 let result = require("coerceMainRoute").fileFinishedImporting("modules/routing/convertRouteToNavigation.native.tsx");
@@ -107,7 +107,7 @@ export const convertRouteToNavigation = function convertRouteToNavigation(pathna
                 const tmpResult8 = tmp(4197);
               }
               if (tmp15) {
-                const obj6 = { channelId: null, guildId: null, messageId: null, replaceChannelAndFixRoot: "Array" };
+                const obj6 = { channelId: null, guildId: null, messageId: null, replaceChannelAndFixRoot: "a" };
                 obj6[0] = channelId;
                 obj6[1] = guildId;
                 obj6[2] = messageId;

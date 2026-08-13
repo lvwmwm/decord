@@ -1,10 +1,10 @@
-// Module ID: 15962
-// Function ID: 15963
+// Module ID: 15953
+// Function ID: 15954
 // Name: BadgeCustomizationProfileCoachmark
 // Dependencies: [19, 1922, 1388, 589, 4007, 1236, 8702, 2]
 // Exports: default
 
-// Module 15962 (BadgeCustomizationProfileCoachmark)
+// Module 15953 (BadgeCustomizationProfileCoachmark)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ContentDismissActionType } from "ContentDismissActionType";

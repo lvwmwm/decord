@@ -1,10 +1,10 @@
-// Module ID: 11605
-// Function ID: 11606
+// Module ID: 11606
+// Function ID: 11607
 // Name: OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION
 // Dependencies: [32, 19, 4343, 4083, 2]
 // Exports: useOptionEnteringAnimation
 
-// Module 11605 (OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION)
+// Module 11606 (OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

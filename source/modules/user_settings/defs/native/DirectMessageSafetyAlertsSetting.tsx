@@ -1,9 +1,9 @@
-// Module ID: 14155
-// Function ID: 14156
+// Module ID: 14146
+// Function ID: 14147
 // Name: toggle
-// Dependencies: [8127, 11327, 10304, 10306, 10407, 1236, 10305, 14156, 2]
+// Dependencies: [8127, 11328, 10304, 10306, 10407, 1236, 10305, 14147, 2]
 
-// Module 14155 (toggle)
+// Module 14146 (toggle)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
@@ -18,7 +18,7 @@ const toggle = createToggle.createToggle({
   useValue: require("useSafetyAlertsSettingOrDefault").useSafetyAlertsSettingOrDefault,
   onValueChange: require("updateDmSafetyAlertsSetting").updateDmSafetyAlertsSetting,
   usePredicate: function useHasDmSafetyAlertsSetting() {
-    let flag = importDefault(11327)();
+    let flag = importDefault(11328)();
     if (flag == null) {
       flag = true;
     }
@@ -46,7 +46,7 @@ let obj = {
   useValue: require("useSafetyAlertsSettingOrDefault").useSafetyAlertsSettingOrDefault,
   onValueChange: require("updateDmSafetyAlertsSetting").updateDmSafetyAlertsSetting,
   usePredicate: function useHasDmSafetyAlertsSetting() {
-    let flag = importDefault(11327)();
+    let flag = importDefault(11328)();
     if (flag == null) {
       flag = true;
     }

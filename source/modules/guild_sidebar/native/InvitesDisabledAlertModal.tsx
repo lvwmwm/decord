@@ -1,10 +1,10 @@
-// Module ID: 11728
-// Function ID: 11729
+// Module ID: 11729
+// Function ID: 11730
 // Name: InvitesDisabledAlertModal
 // Dependencies: [19, 21, 4688, 1236, 4688, 2]
 // Exports: default
 
-// Module 11728 (InvitesDisabledAlertModal)
+// Module 11729 (InvitesDisabledAlertModal)
 import "noop";
 import { jsx } from "jsxProd";
 

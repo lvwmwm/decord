@@ -1,10 +1,10 @@
-// Module ID: 11438
-// Function ID: 11439
+// Module ID: 11439
+// Function ID: 11440
 // Name: recoverDraft
-// Dependencies: [5, 4681, 7192, 4680, 1922, 676, 4335, 1924, 8405, 7281, 1208, 11437, 7188, 6965, 11439, 11105, 8406, 8401, 4007, 8410, 4683, 1236, 698, 9955, 8454, 4310, 11444, 2007, 4938, 4897, 5788, 10590, 10039, 11474, 7030, 2]
+// Dependencies: [5, 4681, 7192, 4680, 1922, 676, 4335, 1924, 8405, 7281, 1208, 11438, 7188, 6965, 11440, 11106, 8406, 8401, 4007, 8410, 4683, 1236, 698, 9955, 8454, 4310, 11445, 2007, 4938, 4897, 5788, 10592, 10039, 11475, 7030, 2]
 // Exports: chatInputCreateThread, chatInputHandleSendText, chatInputSendApplicationCommand
 
-// Module 11438 (recoverDraft)
+// Module 11439 (recoverDraft)
 import closure_3 from "ME";
 import handleChanged from "handleChanged";
 import { DraftType } from "handleChanged";
@@ -82,7 +82,7 @@ function chatInputSendMessage(params) {
   if (current2 != null) {
     current2.showSideActions();
   }
-  let obj3 = channel(11437);
+  let obj3 = channel(11438);
   const handleLegacyCommandsResult = obj3.handleLegacyCommands(text, { channel, isEdit: false });
   let tmp14 = tts;
   parsed = parsedMessage;
@@ -138,7 +138,7 @@ function chatInputSendMessage(params) {
     }
     const scheduledMessage = items.getScheduledMessage(channel.id);
     if (null == scheduledMessage) {
-      let tmp12Result = tmp12(11105);
+      let tmp12Result = tmp12(11106);
       tmp12Result.deletePendingReply(channel.id);
       const tmp6Result3 = tmp6(6965);
       const id2 = channel.id;
@@ -159,7 +159,7 @@ function chatInputSendMessage(params) {
       };
       tmp6Result3.sendMessage(id2, parsed, undefined, obj3);
     } else {
-      tmp12Result = tmp12(11439);
+      tmp12Result = tmp12(11440);
       const obj4 = { channelId: null, scheduledTimestamp: null, content: null, tts: null, messageReference: null, allowedMentions: null, attachmentsToUpload: null };
       obj4[0] = channel.id;
       obj4[1] = scheduledMessage.scheduledTimestamp;
@@ -366,7 +366,7 @@ function _chatInputSendApplicationCommand() {
                   tmp20 = null != closure_5;
                 }
                 if (tmp20) {
-                  const obj5 = { text: null, parsedMessage: "Array", tts: "handleSendApplicationCommand", source: null, params: "M14 6h-3v1h3V6ZM11 1h-1v1h1V1Z" };
+                  const obj5 = { text: null, parsedMessage: "Array", tts: "handleSendApplicationCommand", source: null, params: "M4 9H3V10H4V9Z" };
                   obj5[0] = closure_5.content;
                   obj5[2] = closure_5.tts;
                   obj5[4] = params;
@@ -454,7 +454,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
             let intl2 = require(1236) /* getSystemLocale */.intl;
             obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.KJnHq3);
             obj[3] = function onConfirm() {
-              const obj = { text: closure_0, parsedMessage: c2, tts: "accessibilityRole", source: "<string:1359020033>", params: "<string:1896123935>" };
+              const obj = { text: closure_0, parsedMessage: c2, tts: "accessibilityRole", source: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014136033605120474, params: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000029352622085869383 };
               obj[4] = params;
               outer1_15(obj);
             };
@@ -472,11 +472,11 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
             obj[0] = channel.id;
             obj[1] = uploads;
             obj[2] = function sendMessage() {
-              const obj = { text: closure_0, parsedMessage: c2, tts: "accessibilityRole", source: "<string:16777810>", params: "animal" };
+              const obj = { text: closure_0, parsedMessage: c2, tts: "accessibilityRole", source: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002486844014589198, params: "banana" };
               obj[4] = params;
               outer1_15(obj);
             };
-            params(4310).openLazy(tmp19(2007)(11444, tmp20.paths), "add-media-to-original-forum-post", obj);
+            params(4310).openLazy(tmp19(2007)(11445, tmp20.paths), "add-media-to-original-forum-post", obj);
             const obj6 = params(4310);
           }
           obj4 = require(8454) /* isMediaAttachment */;
@@ -484,7 +484,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
           tmp19 = require;
           tmp20 = dependencyMap;
         }
-        obj1 = { text: null, parsedMessage: null, tts: "accessibilityRole", source: true, params: true };
+        obj1 = { text: null, parsedMessage: null, tts: "accessibilityRole", source: null, params: null };
         obj1[0] = text;
         obj1[1] = tmp2;
         obj1[4] = params;

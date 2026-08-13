@@ -1,10 +1,10 @@
-// Module ID: 11604
-// Function ID: 11605
+// Module ID: 11605
+// Function ID: 11606
 // Name: set
-// Dependencies: [19, 17, 4334, 21, 1954, 4342, 712, 589, 4083, 11605, 11606, 4338, 11607, 1297, 10029, 2]
+// Dependencies: [19, 17, 4334, 21, 1954, 4342, 712, 589, 4083, 11606, 11607, 4338, 11608, 1297, 10029, 2]
 // Exports: default
 
-// Module 11604 (set)
+// Module 11605 (set)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -52,7 +52,7 @@ export default function CommandOptionView(option) {
   const stateFromStores = obj.useStateFromStores(items, () => lib.useReducedMotion);
   const ReduceMotion = option(4083).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const optionEnteringAnimation = option(11605).useOptionEnteringAnimation();
+  const optionEnteringAnimation = option(11606).useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   if (set.has(option.type)) {
     if (option.required || isPreSelectedOption) {
@@ -80,8 +80,8 @@ export default function CommandOptionView(option) {
     obj1[0] = fn;
     const obj2 = { collapsable: false, entering: null, exiting: null, layout: null, onLayout: null, children: null };
     obj2[1] = optionEnteringAnimation.EnteringAnimation;
-    obj2[2] = tmp2(11605).ExitingAnimation;
-    obj2[3] = tmp2(11605).LayoutAnimation;
+    obj2[2] = tmp2(11606).ExitingAnimation;
+    obj2[3] = tmp2(11606).LayoutAnimation;
     obj2[4] = function onLayout(arg0) {
       callback(arg0, option);
     };
@@ -115,7 +115,7 @@ export default function CommandOptionView(option) {
     obj5[10] = command;
     obj5[11] = optionValues;
     obj5[12] = hasItem;
-    items2[1] = closure_5(importDefault(11607), obj5);
+    items2[1] = closure_5(importDefault(11608), obj5);
     const obj6 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
     obj6[0] = tmp.optionDescription;
     obj6[3] = option.displayDescription;
@@ -140,10 +140,10 @@ export default function CommandOptionView(option) {
     obj3[2] = items2;
     obj2[5] = closure_6(View, obj3);
     obj1[1] = closure_5(importDefault(4083).View, obj2);
-    obj[1] = closure_5(tmp2(11606).AwaitAnimationContext, obj1);
+    obj[1] = closure_5(tmp2(11607).AwaitAnimationContext, obj1);
     return closure_5(tmp2(4083).LayoutAnimationConfig, obj);
   } else {
     return null;
   }
-  const tmp2Result = option(11605);
+  const tmp2Result = option(11606);
 };

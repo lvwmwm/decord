@@ -1,8 +1,8 @@
-// Module ID: 10868
-// Function ID: 10869
-// Dependencies: [19, 17, 4364, 1218, 1910, 21, 4342, 4191, 712, 10254, 9793, 589, 5176, 9204, 10869, 2]
+// Module ID: 10870
+// Function ID: 10871
+// Dependencies: [19, 17, 4364, 1218, 1910, 21, 4342, 4191, 712, 10254, 9793, 589, 5176, 9204, 10871, 2]
 
-// Module 10868
+// Module 10870
 import { View } from "get ActivityIndicator";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -47,7 +47,7 @@ const memoResult = require("noop").memo((channel) => {
   const obj4 = channel(589);
   const stageHasMedia = channel(5176).useStageHasMedia(channel.id);
   const items5 = [];
-  items5.push(jsx(channel(10869).StreamVolumeItem, {}));
+  items5.push(jsx(channel(10871).StreamVolumeItem, {}));
   if (tmp11) {
     obj = { channel: null, disabled: null };
     obj[0] = channel;
@@ -63,11 +63,11 @@ const memoResult = require("noop").memo((channel) => {
       tmp12 = reachedLimit;
     }
     obj[1] = tmp12;
-    items5.push(tmp9(tmp5(10869).ScreenshareButton, obj));
+    items5.push(tmp9(tmp5(10871).ScreenshareButton, obj));
   }
   obj = { channelId: channel.id, isConnectedToVoiceChannel };
-  items5.push(jsx(channel(10869).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
-  items5.push(jsx(channel(10869).DeafenButton, { channel }));
+  items5.push(jsx(channel(10871).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
+  items5.push(jsx(channel(10871).DeafenButton, { channel }));
   obj1 = { style: tmp.container, children: items5.map((children) => callback(closure_3, { children }, arg1)) };
   return <View style={tmp.container}>{items5.map((children) => callback(closure_3, { children }, arg1))}</View>;
 });

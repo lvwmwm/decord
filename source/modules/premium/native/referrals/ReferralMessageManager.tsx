@@ -1,9 +1,9 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 16989
+// Function ID: 16990
 // Name: handleReferralMessages
-// Dependencies: [4013, 6961, 686, 11, 7637, 5301, 16579, 2]
+// Dependencies: [4013, 6961, 686, 11, 7637, 5301, 16570, 2]
 
-// Module 16998 (handleReferralMessages)
+// Module 16989 (handleReferralMessages)
 import reset from "reset";
 import emitChanges from "emitChanges";
 import "initialize";

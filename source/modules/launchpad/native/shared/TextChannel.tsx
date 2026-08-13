@@ -1,8 +1,8 @@
-// Module ID: 16145
-// Function ID: 16146
-// Dependencies: [19, 17, 5263, 1994, 1391, 1301, 4541, 21, 4342, 16137, 712, 15547, 5930, 589, 4535, 8452, 14627, 5987, 4761, 16146, 4786, 11502, 9839, 4039, 16148, 8385, 15435, 16138, 4887, 16149, 16150, 16141, 16144, 2]
+// Module ID: 16136
+// Function ID: 16137
+// Dependencies: [19, 17, 5263, 1994, 1391, 1301, 4541, 21, 4342, 16128, 712, 15538, 5930, 589, 4535, 8452, 14618, 5987, 4761, 16137, 4786, 11503, 9839, 4039, 16139, 8385, 15426, 16129, 4887, 16140, 16141, 16132, 16135, 2]
 
-// Module 16145
+// Module 16136
 import importAllResult from "usePressUnderlayColor";
 import { View } from "isChannelSpoilerGated";
 import rebuild from "rebuild";
@@ -20,7 +20,7 @@ let c3 = importAllResult;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles(() => {
   let obj = { pressable: null, selectedBorder: null, rowSelected: null };
-  obj = { flex: 1, borderRadius: importDefault(16137)().container.borderRadius, marginBottom: 1 };
+  obj = { flex: 1, borderRadius: importDefault(16128)().container.borderRadius, marginBottom: 1 };
   obj[0] = obj;
   obj = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, borderWidth: 1, borderColor: importDefault(712).colors.BORDER_MUTED, borderRadius: importDefault(712).radii.md };
   obj[1] = obj;
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo(function TextChannel(subtitle) {
   let arr4;
   let dependencyMap;
   const isForumLikeChannelResult = channel.isForumLikeChannel();
-  let obj = channel(15547);
+  let obj = channel(15538);
   const channelUnreadBadgeState = obj.useChannelUnreadBadgeState(channel, flag);
   ({ newChannel, unread, resolvedUnreadSetting, mentionCount } = channelUnreadBadgeState);
   ({ optInEnabled, isMentionLowImportance } = channelUnreadBadgeState);
@@ -70,7 +70,7 @@ const memoResult = importAllResult.memo(function TextChannel(subtitle) {
   let tmp2Result = tmp2(8452);
   const unreadThreadsCountForParent = tmp2Result.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   let tmp12 = unread;
-  let tmp8Result = tmp8(14627);
+  let tmp8Result = tmp8(14618);
   if (unread) {
     tmp12 = !flag;
   }
@@ -81,10 +81,10 @@ const memoResult = importAllResult.memo(function TextChannel(subtitle) {
   const tmp2Result1 = channel(4761);
   const items2 = [_getSystemLocale];
   const stateFromStores2 = channel(589).useStateFromStores(items2, () => locale.locale);
-  const tmp17 = arr4(16146)();
+  const tmp17 = arr4(16137)();
   const tmp2Result2 = channel(589);
   ({ isSubscriptionGated, needSubscriptionToAccess } = arr4(4786)(channel.id));
-  arr4 = tmp8(11502)(channel);
+  arr4 = tmp8(11503)(channel);
   if (null != tmp8ResultResult) {
     if (!isChannelSpoilerGated) {
       obj = { channel: null, message: null, color: "text-muted", muted: null, layout: null };
@@ -106,7 +106,7 @@ const memoResult = importAllResult.memo(function TextChannel(subtitle) {
       }
       return tmp;
     }, items3);
-    tmp8Result = tmp8(16138);
+    tmp8Result = tmp8(16129);
     const items4 = [tmp5.pressable, ];
     let rowSelected;
     if (selected) {
@@ -121,13 +121,13 @@ const memoResult = importAllResult.memo(function TextChannel(subtitle) {
     obj[2] = getThemedRippleConfig(obj1);
     const tmp26 = closure_11;
     const tmp2Result3 = tmp2(8385);
-    const merged = Object.assign(tmp2(16149).useTextChannelPressEvents(channel, flag2));
-    const tmp2Result4 = tmp2(16149);
+    const merged = Object.assign(tmp2(16140).useTextChannelPressEvents(channel, flag2));
+    const tmp2Result4 = tmp2(16140);
     obj2 = { channel: null, unread: null, mentionCount: null };
     obj2[0] = channel;
     obj2[1] = unread;
     obj2[2] = mentionCount;
-    const merged1 = Object.assign(tmp2(16150).getChannelAccessibilityProps(obj2));
+    const merged1 = Object.assign(tmp2(16141).getChannelAccessibilityProps(obj2));
     if (selected) {
       obj3 = { style: null, pointerEvents: "none" };
       obj3[0] = tmp5.selectedBorder;
@@ -139,13 +139,13 @@ const memoResult = importAllResult.memo(function TextChannel(subtitle) {
     obj4[1] = tmp9;
     obj4[2] = result;
     obj4[3] = obj1.useHasActiveThreads(channel).hasActiveThreads;
-    const tmp2Result5 = tmp2(16150);
+    const tmp2Result5 = tmp2(16141);
     const obj5 = { unread: null, resolvedUnreadSetting: null, muted: null };
     obj5[0] = unread;
     obj5[1] = resolvedUnreadSetting;
     obj5[2] = flag;
-    obj4[4] = callback(tmp8(16141), obj5);
-    const tmp8Result1 = tmp8(16150);
+    obj4[4] = callback(tmp8(16132), obj5);
+    const tmp8Result1 = tmp8(16141);
     if (newChannel) {
       newChannel = optInEnabled;
     }
@@ -174,7 +174,7 @@ const memoResult = importAllResult.memo(function TextChannel(subtitle) {
     }
     obj6[4] = tmp40;
     obj6[5] = stateFromStores2;
-    obj4[5] = tmp8(16144)(obj6);
+    obj4[5] = tmp8(16135)(obj6);
     obj4[6] = unread;
     obj4[7] = resolvedUnreadSetting;
     obj4[8] = mentionCount;
@@ -194,7 +194,7 @@ const memoResult = importAllResult.memo(function TextChannel(subtitle) {
     return tmp8Result(tmp26(tmp2(4887).PressableHighlight, obj));
   }
   const tmp18 = arr4(4786)(channel.id);
-  result = channel(16148).renderChannelSubtitle({ subtitle: subtitle.subtitle, muted: flag, channelId: channel.id, guildId: channel.guild_id });
+  result = channel(16139).renderChannelSubtitle({ subtitle: subtitle.subtitle, muted: flag, channelId: channel.id, guildId: channel.guild_id });
 });
 let result = require("rebuild").fileFinishedImporting("modules/launchpad/native/shared/TextChannel.tsx");
 

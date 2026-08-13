@@ -1,7 +1,7 @@
 // Module ID: 9225
 // Function ID: 9226
 // Name: VoicePanelAudioPhoneOutputSection
-// Dependencies: [19, 17, 4359, 9202, 1391, 4360, 9224, 676, 21, 4342, 4310, 647, 9226, 9227, 1236, 8030, 8029, 5420, 9198, 10848, 10740, 12282, 4164, 1377, 12283, 5437, 5436, 5821, 2]
+// Dependencies: [19, 17, 4359, 9202, 1391, 4360, 9224, 676, 21, 4342, 4310, 647, 9226, 9227, 1236, 8030, 8029, 5420, 9198, 10850, 10742, 12283, 4164, 1377, 12284, 5437, 5436, 5821, 2]
 
 // Module 9225 (VoicePanelAudioPhoneOutputSection)
 import importAllResult from "useGameConsoleAccounts";
@@ -73,8 +73,8 @@ function VoicePanelAudioConsoleSection(channel) {
   let stateFromStores;
   let stateFromStores1;
   let c5;
-  arr = arr(10848)();
-  dependencyMap = arr(10740)();
+  arr = arr(10850)();
+  dependencyMap = arr(10742)();
   let obj = channel(647);
   const items = [c5];
   stateFromStores = obj.useStateFromStores(items, () => _undefined.getAwaitingRemoteSessionInfo());

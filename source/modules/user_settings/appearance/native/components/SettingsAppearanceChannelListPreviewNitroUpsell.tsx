@@ -1,9 +1,9 @@
-// Module ID: 14611
-// Function ID: 14612
+// Module ID: 14602
+// Function ID: 14603
 // Name: SettingsAppearanceChannelListPreviewNitroUpsellComponent
 // Dependencies: [19, 17, 4334, 676, 21, 4083, 4766, 4754, 4758, 4342, 712, 5768, 5788, 8671, 8672, 4755, 1236, 1297, 589, 8708, 2]
 
-// Module 14611 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
+// Module 14602 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
 import importAllResult from "AnimatedRenderItem";
 import get_ActivityIndicator from "Button";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

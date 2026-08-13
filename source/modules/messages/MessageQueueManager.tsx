@@ -1,9 +1,9 @@
-// Module ID: 16580
-// Function ID: 16581
+// Module ID: 16571
+// Function ID: 16572
 // Name: handleLogout
 // Dependencies: [5301, 7338, 2]
 
-// Module 16580 (handleLogout)
+// Module 16571 (handleLogout)
 import "initialize";
 
 class MessageQueueManager extends tmp2 {

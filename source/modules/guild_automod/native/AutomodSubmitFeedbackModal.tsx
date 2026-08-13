@@ -1,10 +1,10 @@
-// Module ID: 11316
-// Function ID: 11317
+// Module ID: 11317
+// Function ID: 11318
 // Name: Navbar
-// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 5368, 6051, 1236, 8072, 7025, 1628, 4338, 8012, 1297, 4755, 4539, 11317, 7024, 4061, 5823, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 5368, 6051, 1236, 8072, 7025, 1628, 4338, 8012, 1297, 4755, 4539, 11318, 7024, 4061, 5823, 2]
 // Exports: default
 
-// Module 11316 (Navbar)
+// Module 11317 (Navbar)
 import _slicedToArray from "_slicedToArray";
 import AutomodAlertActionType from "AutomodAlertActionType";
 import { View } from "collectGuildAnalyticsMetadata";

@@ -1,10 +1,10 @@
-// Module ID: 14091
-// Function ID: 14092
+// Module ID: 14082
+// Function ID: 14083
 // Name: SettingsAgeGroupHeader
-// Dependencies: [19, 17, 8127, 676, 21, 4342, 712, 7842, 1993, 4338, 1236, 2821, 10407, 13956, 2]
+// Dependencies: [19, 17, 8127, 676, 21, 4342, 712, 7842, 1993, 4338, 1236, 2821, 10407, 13947, 2]
 // Exports: default
 
-// Module 14091 (SettingsAgeGroupHeader)
+// Module 14082 (SettingsAgeGroupHeader)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { MobileSetting } from "MobileSetting";
@@ -54,5 +54,5 @@ export default function SettingsAgeGroupScreen() {
     obj[1] = closure_10;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13956), { node });
+  return callback(importDefault(13947), { node });
 };

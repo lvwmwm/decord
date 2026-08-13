@@ -1,9 +1,9 @@
-// Module ID: 13410
-// Function ID: 13411
+// Module ID: 13411
+// Function ID: 13412
 // Name: GradientBorder
 // Dependencies: [19, 17, 676, 21, 4544, 712, 4766, 2]
 
-// Module 13410 (GradientBorder)
+// Module 13411 (GradientBorder)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";

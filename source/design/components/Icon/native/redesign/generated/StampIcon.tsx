@@ -1,10 +1,10 @@
-// Module ID: 11187
-// Function ID: 11188
+// Module ID: 11188
+// Function ID: 11189
 // Name: StampIcon
-// Dependencies: [19, 21, 712, 4064, 11188, 2]
+// Dependencies: [19, 21, 712, 4064, 11189, 2]
 // Exports: StampIcon
 
-// Module 11187 (StampIcon)
+// Module 11188 (StampIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const StampIcon = function StampIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11188) /* registerAsset */;
+  obj[0] = require(11189) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

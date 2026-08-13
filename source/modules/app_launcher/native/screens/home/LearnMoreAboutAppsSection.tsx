@@ -1,10 +1,10 @@
-// Module ID: 11538
-// Function ID: 11539
+// Module ID: 11539
+// Function ID: 11540
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 676, 21, 4342, 712, 4058, 1993, 1236, 11539, 9599, 4338, 4887, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 4058, 1993, 1236, 11540, 9599, 4338, 4887, 2]
 // Exports: default
 
-// Module 11538 (LearnMoreAboutAppsSection)
+// Module 11539 (LearnMoreAboutAppsSection)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -54,5 +54,5 @@ export default function LearnMoreAboutAppsSection(visible) {
   items[5] = callback(View, { style: tmp.divider });
   obj[1] = items;
   obj[4] = callback2(View, obj);
-  return callback(importDefault(11539), obj);
+  return callback(importDefault(11540), obj);
 };

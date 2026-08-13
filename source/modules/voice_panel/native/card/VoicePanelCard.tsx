@@ -1,9 +1,9 @@
-// Module ID: 16289
-// Function ID: 16290
+// Module ID: 16280
+// Function ID: 16281
 // Name: SelfStreamCard
-// Dependencies: [32, 19, 17, 4364, 4416, 5178, 11704, 11702, 16248, 11707, 676, 4363, 11705, 21, 4083, 4338, 1297, 4342, 712, 4524, 4408, 5821, 1236, 4755, 11703, 589, 10656, 4441, 12381, 10658, 10655, 16290, 10668, 9449, 1367, 8355, 8360, 8356, 4343, 4754, 8054, 4766, 5308, 4065, 16291, 11135, 8825, 4689, 5768, 16252, 16263, 16247, 16292, 16293, 8832, 5467, 16294, 11706, 16295, 16296, 16297, 16298, 16299, 16309, 2]
+// Dependencies: [32, 19, 17, 4364, 4416, 5178, 11705, 11703, 16239, 11708, 676, 4363, 11706, 21, 4083, 4338, 1297, 4342, 712, 4524, 4408, 5821, 1236, 4755, 11704, 589, 10658, 4441, 12382, 10660, 10657, 16281, 10670, 9449, 1367, 8355, 8360, 8356, 4343, 4754, 8054, 4766, 5308, 4065, 16282, 11136, 8825, 4689, 5768, 16243, 16254, 16238, 16283, 16284, 8832, 5467, 16285, 11707, 16286, 16287, 16288, 16289, 16290, 16300, 2]
 
-// Module 16289 (SelfStreamCard)
+// Module 16280 (SelfStreamCard)
 import map from "map";
 import importAllResult from "watchStream";
 import { StyleSheet } from "createCacheKey";
@@ -1502,7 +1502,8 @@ const memoResult = importAllResult.memo(function VoicePanelCard(cleanUp) {
       tmp25 = callback;
     }
   }
-  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "isArray", layout: layoutTransition, layoutPhysics: "VoicePanelVideoRenderer" };
+  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "channel", layout: 294018179, layoutPhysics: 29109569 };
+  obj8[3] = layoutTransition;
   obj8[4] = physics;
   tmp26Result = callback(closure_37, obj8);
   tmp25 = callback;

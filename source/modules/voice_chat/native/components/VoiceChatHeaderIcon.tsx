@@ -1,10 +1,10 @@
-// Module ID: 10839
-// Function ID: 10840
+// Module ID: 10841
+// Function ID: 10842
 // Name: VoiceChatCallScreenHeaderIconInner
-// Dependencies: [19, 17, 4357, 676, 21, 4342, 712, 5307, 589, 10774, 12, 4072, 4887, 1297, 2]
+// Dependencies: [19, 17, 4357, 676, 21, 4342, 712, 5307, 589, 10776, 12, 4072, 4887, 1297, 2]
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
 
-// Module 10839 (VoiceChatCallScreenHeaderIconInner)
+// Module 10841 (VoiceChatCallScreenHeaderIconInner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
@@ -29,7 +29,7 @@ function VoiceChatCallScreenHeaderIconInner(onPress) {
   }
   obj[3] = noop;
   obj[4] = children;
-  obj[1] = closure_6(importDefault(10774), obj);
+  obj[1] = closure_6(importDefault(10776), obj);
   return closure_6(View, obj);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);

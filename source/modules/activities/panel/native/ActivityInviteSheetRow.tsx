@@ -1,8 +1,8 @@
-// Module ID: 16189
-// Function ID: 16190
+// Module ID: 16180
+// Function ID: 16181
 // Dependencies: [19, 17, 1391, 1910, 1922, 7241, 21, 4342, 712, 589, 4535, 9116, 4887, 1297, 9180, 4187, 1236, 1435, 1903, 4338, 5414, 9183, 2]
 
-// Module 16189
+// Module 16180
 import { View } from "getAvatarURL";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

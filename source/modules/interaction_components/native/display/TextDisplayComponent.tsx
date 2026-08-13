@@ -1,10 +1,10 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15106
+// Function ID: 15107
 // Name: TextDisplayComponent
-// Dependencies: [32, 19, 4334, 1979, 8262, 21, 8263, 38, 4332, 8248, 589, 4034, 15116, 11051, 11032, 2]
+// Dependencies: [32, 19, 4334, 1979, 8262, 21, 8263, 38, 4332, 8248, 589, 4034, 15107, 11052, 11033, 2]
 // Exports: default
 
-// Module 15115 (TextDisplayComponent)
+// Module 15106 (TextDisplayComponent)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -50,13 +50,13 @@ export default function TextDisplayComponent(content) {
   obj[2] = function onTapLink(nativeEvent) {
     const result = channelId(outer1_2[13]).handleMessagesTapURLLink(nativeEvent.nativeEvent.data, channelId);
   };
-  obj[3] = channelId(11032).contentHandlers.onLongPressLink;
-  obj[4] = channelId(11032).contentHandlers.onTapAttachmentLink;
-  obj[5] = channelId(11032).contentHandlers.onLongPressAttachmentLink;
-  obj[6] = channelId(11032).contentHandlers.onTapMention;
-  obj[7] = channelId(11032).contentHandlers.onTapTimestamp;
-  obj[8] = channelId(11032).contentHandlers.onTapInlineCode;
-  obj[9] = channelId(11032).contentHandlers.onTapEmoji;
+  obj[3] = channelId(11033).contentHandlers.onLongPressLink;
+  obj[4] = channelId(11033).contentHandlers.onTapAttachmentLink;
+  obj[5] = channelId(11033).contentHandlers.onLongPressAttachmentLink;
+  obj[6] = channelId(11033).contentHandlers.onTapMention;
+  obj[7] = channelId(11033).contentHandlers.onTapTimestamp;
+  obj[8] = channelId(11033).contentHandlers.onTapInlineCode;
+  obj[9] = channelId(11033).contentHandlers.onTapEmoji;
   obj[10] = { width: "100%" };
-  return jsx(importDefault(15116), { model: null, markdownTextRenderOptions: null, onTapLink: null, onLongPressLink: null, onTapAttachmentLink: null, onLongPressAttachmentLink: null, onTapMention: null, onTapTimestamp: null, onTapInlineCode: null, onTapEmoji: null, style: null });
+  return jsx(importDefault(15107), { model: null, markdownTextRenderOptions: null, onTapLink: null, onLongPressLink: null, onTapAttachmentLink: null, onLongPressAttachmentLink: null, onTapMention: null, onTapTimestamp: null, onTapInlineCode: null, onTapEmoji: null, style: null });
 };

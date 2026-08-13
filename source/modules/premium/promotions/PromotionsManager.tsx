@@ -1,9 +1,9 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16628
+// Function ID: 16629
 // Name: _terminate
-// Dependencies: [5, 1994, 1922, 4013, 7388, 1924, 676, 505, 5301, 7689, 4007, 12802, 2]
+// Dependencies: [5, 1994, 1922, 4013, 7388, 1924, 676, 505, 5301, 7689, 4007, 12803, 2]
 
-// Module 16637 (_terminate)
+// Module 16628 (_terminate)
 import GuildFeatures from "GuildFeatures";
 import _getSystemLocale from "_getSystemLocale";
 import mergeGuildAvatar from "mergeGuildAvatar";

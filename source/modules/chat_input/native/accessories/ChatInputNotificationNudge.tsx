@@ -1,10 +1,10 @@
-// Module ID: 11835
-// Function ID: 11836
+// Module ID: 11836
+// Function ID: 11837
 // Name: ChatInputNotificationNudgeImpl
-// Dependencies: [32, 19, 17, 3991, 4540, 11836, 676, 1388, 11837, 21, 4342, 712, 1367, 698, 9781, 4338, 4887, 11838, 1236, 11839, 5366, 589, 11589, 11847, 6065, 1377, 2]
+// Dependencies: [32, 19, 17, 3991, 4540, 11837, 676, 1388, 11838, 21, 4342, 712, 1367, 698, 9781, 4338, 4887, 11839, 1236, 11840, 5366, 589, 11590, 11848, 6065, 1377, 2]
 // Exports: default
 
-// Module 11835 (ChatInputNotificationNudgeImpl)
+// Module 11836 (ChatInputNotificationNudgeImpl)
 import _slicedToArray from "_slicedToArray";
 import noop from "getOrRefreshPushSyncToken";
 import { View } from "_requestPushNotificationPermission";
@@ -168,14 +168,14 @@ export default function ChatInputNotificationNudge(channel) {
   });
   let tmp5 = !stateFromStores;
   if (!stateFromStores) {
-    tmp5 = !importDefault(11589)(channel);
+    tmp5 = !importDefault(11590)(channel);
   }
-  let tmpResult = tmp(11838);
+  let tmpResult = tmp(11839);
   const shouldShowPushNotificationNudgeByPromptType = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
-  tmpResult = tmp(11838);
+  tmpResult = tmp(11839);
   const shouldShowPushNotificationNudgeByPromptType1 = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.POST_REACTION_BANNER);
   const tmp4 = importDefault;
-  const tmp4Result = importDefault(11847);
+  const tmp4Result = importDefault(11848);
   let prop = null;
   if (tmp5) {
     prop = null;

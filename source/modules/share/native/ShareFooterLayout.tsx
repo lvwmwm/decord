@@ -1,10 +1,10 @@
-// Module ID: 11139
-// Function ID: 11140
+// Module ID: 11140
+// Function ID: 11141
 // Name: ShareFooterLayout
 // Dependencies: [19, 17, 21, 4342, 712, 5409, 4083, 4754, 4758, 4338, 2]
 // Exports: default
 
-// Module 11139 (ShareFooterLayout)
+// Module 11140 (ShareFooterLayout)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

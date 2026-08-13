@@ -1,10 +1,10 @@
-// Module ID: 16236
-// Function ID: 16237
+// Module ID: 16227
+// Function ID: 16228
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [19, 17, 1922, 4790, 676, 21, 4342, 712, 500, 589, 5768, 5996, 6002, 4797, 5804, 5400, 11392, 4338, 4755, 8793, 8795, 1236, 9859, 8059, 2]
+// Dependencies: [19, 17, 1922, 4790, 676, 21, 4342, 712, 500, 589, 5768, 5996, 6002, 4797, 5804, 5400, 11393, 4338, 4755, 8793, 8795, 1236, 9859, 8059, 2]
 // Exports: default
 
-// Module 16236 (SoundboardSoundPreviewActionSheet)
+// Module 16227 (SoundboardSoundPreviewActionSheet)
 import StarIcon from "StarIcon";
 import get_ActivityIndicator from "Text";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -99,7 +99,7 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   ({ emoji: arr5[0], emojiFastImage: arr5[1] } = tmp);
   items5 = [, ];
   ({ emoji: arr6[0], emojiText: arr6[1] } = tmp);
-  obj[2] = sound(11392)(sound, 64);
+  obj[2] = sound(11393)(sound, 64);
   let str = sound.emojiName;
   if (str == null) {
     str = "";

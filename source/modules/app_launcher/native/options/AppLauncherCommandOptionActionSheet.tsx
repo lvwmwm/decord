@@ -1,10 +1,10 @@
-// Module ID: 11610
-// Function ID: 11611
+// Module ID: 11611
+// Function ID: 11612
 // Name: AppLauncherCommandOptionActionSheet
 // Dependencies: [19, 17, 1498, 21, 4342, 712, 5437, 5436, 5805, 4310, 1297, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 11610 (AppLauncherCommandOptionActionSheet)
+// Module 11611 (AppLauncherCommandOptionActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";

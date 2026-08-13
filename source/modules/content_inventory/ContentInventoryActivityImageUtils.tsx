@@ -1,10 +1,10 @@
-// Module ID: 12342
-// Function ID: 12343
+// Module ID: 12343
+// Function ID: 12344
 // Name: useComputedImagesForActivity
-// Dependencies: [19, 4383, 676, 4370, 8953, 8288, 1236, 12343, 5967, 9704, 1435, 12345, 5041, 12346, 5774, 589, 698, 8956, 2]
+// Dependencies: [19, 4383, 676, 4370, 8953, 8288, 1236, 12344, 5967, 9704, 1435, 12346, 5041, 12347, 5774, 589, 698, 8956, 2]
 // Exports: getApplicationImage, useImageForActivity, useImageForContentEntry
 
-// Module 12342 (useComputedImagesForActivity)
+// Module 12343 (useComputedImagesForActivity)
 import { useEffect } from "noop";
 import addApplication from "addApplication";
 import ME from "ME";
@@ -46,12 +46,12 @@ function useComputedImagesForActivity(activity, getIconURL) {
         obj1[0] = guildIconURL;
         tmp14 = obj1;
       }
-      const obj2 = { largeImage: null, smallImage: "Array" };
+      const obj2 = { largeImage: null, smallImage: "a" };
       obj2[0] = tmp14;
       obj8 = obj2;
       const tmp15Result = tmp15(9704);
-    } else if (importDefault(12345)(activity)) {
-      const obj3 = { largeImage: null, smallImage: "Array" };
+    } else if (importDefault(12346)(activity)) {
+      const obj3 = { largeImage: null, smallImage: "a" };
       const obj4 = { src: null, alt: null };
       let tmp2Result = tmp2(5041);
       obj4[0] = tmp2Result.get(constants.XBOX).icon.customPNG;
@@ -61,8 +61,8 @@ function useComputedImagesForActivity(activity, getIconURL) {
       obj8 = obj3;
     } else {
       if (null == smallImage) {
-        if (tmp2(12346)(activity)) {
-          const obj5 = { largeImage: null, smallImage: "Array" };
+        if (tmp2(12347)(activity)) {
+          const obj5 = { largeImage: null, smallImage: "a" };
           const obj6 = { src: null, alt: null };
           tmp2Result = tmp2(5041);
           obj6[0] = tmp2Result.get(constants.PLAYSTATION).icon.lightPNG;
@@ -86,7 +86,7 @@ function useComputedImagesForActivity(activity, getIconURL) {
           obj7[1] = smallImage;
           obj8 = obj7;
         } else {
-          obj8 = { largeImage: null, smallImage: "Array" };
+          obj8 = { largeImage: null, smallImage: "a" };
           obj8[0] = smallImage;
         }
       } else {
@@ -209,7 +209,7 @@ function useRichImageForActivity(activity, activityApplication) {
     const application_id = activity.application_id;
   }
   if (null == activity) {
-    return { largeImage: "Array", smallImage: "ct" };
+    return { largeImage: "isArray", smallImage: "accessibilityRole" };
   } else {
     let large_image;
     if (activity != null) {
@@ -345,7 +345,7 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
   if (showCoverImage === undefined) {
     showCoverImage = true;
   }
-  ({ activity, activityApplication, fallbackApplication } = importDefault(12343)(entry));
+  ({ activity, activityApplication, fallbackApplication } = importDefault(12344)(entry));
   let obj = fallbackApplication;
   if (fallbackApplication == null) {
     obj = activityApplication;
@@ -374,20 +374,20 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
       obj[1] = tmp3.smallImage;
       let obj4 = obj;
     } else if (null != tmp7) {
-      obj1 = { largeImage: null, smallImage: "Array" };
+      obj1 = { largeImage: null, smallImage: "a" };
       obj1[0] = tmp7;
       obj4 = obj1;
     } else {
       if (null != coverURL) {
         if (showCoverImage) {
-          const obj2 = { largeImage: null, smallImage: "Array" };
+          const obj2 = { largeImage: null, smallImage: "a" };
           const obj3 = { src: null };
           obj3[0] = coverURL;
           obj2[0] = obj3;
           obj4 = obj2;
         }
       }
-      obj4 = { largeImage: null, smallImage: "Array" };
+      obj4 = { largeImage: null, smallImage: "a" };
       obj4[0] = useComputedImagesForActivity(activity, obj).largeImage;
     }
     const obj5 = { activity: null, application: null, largeImageSrc: null, trackingSource: null };

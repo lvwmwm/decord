@@ -1,9 +1,9 @@
-// Module ID: 13845
-// Function ID: 13846
+// Module ID: 13836
+// Function ID: 13837
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4245, 676, 4557, 8951, 13814, 10709, 9114, 13803, 4902, 4913, 10586, 4242, 2]
+// Dependencies: [5, 4245, 676, 4557, 8951, 13805, 10711, 9114, 13794, 4902, 4913, 10588, 4242, 2]
 
-// Module 13845 (RPC_LOCAL_SCOPE)
+// Module 13836 (RPC_LOCAL_SCOPE)
 import validateOpenInviteDialog from "validateOpenInviteDialog";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -26,12 +26,12 @@ obj[RPC_SCOPE_CONFIG.ANY] = items;
 obj[0] = obj;
 obj[1] = function handler(socket) {
   socket = socket.socket;
-  let obj = require(13814) /* validateOpenInviteDialog */;
+  let obj = require(13805) /* validateOpenInviteDialog */;
   const result = obj.validateOpenInviteDialog(socket);
   if (null != result.frame) {
     obj = { errorCode: null };
     obj[0] = constants2.UNKNOWN_ERROR;
-    const tmp12 = new importDefault(10709)(obj, "Cannot support frames (yet)");
+    const tmp12 = new importDefault(10711)(obj, "Cannot support frames (yet)");
     throw tmp12;
   } else {
     obj = { source: null, targetApplicationId: null };

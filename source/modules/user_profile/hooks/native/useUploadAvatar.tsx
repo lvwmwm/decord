@@ -1,10 +1,10 @@
-// Module ID: 13992
-// Function ID: 13993
+// Module ID: 13983
+// Function ID: 13984
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1922, 676, 1924, 647, 8410, 4310, 4901, 4007, 13972, 8323, 8316, 8313, 8315, 2]
+// Dependencies: [5, 19, 1922, 676, 1924, 647, 8410, 4310, 4901, 4007, 13963, 8323, 8316, 8313, 8315, 2]
 // Exports: default
 
-// Module 13992 (useUploadAvatar)
+// Module 13983 (useUploadAvatar)
 import defaultAreStatesEqual from "defaultAreStatesEqual";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -114,7 +114,7 @@ export default function useUploadAvatar(guildId) {
               }
             }
           }
-          obj1 = outer1_0(13972);
+          obj1 = outer1_0(13963);
           const obj4 = { imageUri: null, description: null, originalMd5: null };
           obj4[0] = base64;
           obj3 = outer1_0(8323);

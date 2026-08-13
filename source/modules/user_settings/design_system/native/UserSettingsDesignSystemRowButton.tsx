@@ -1,10 +1,10 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 14853
+// Function ID: 14854
 // Name: UserSettingsDesignSystemRowButton
 // Dependencies: [19, 17, 21, 8012, 4753, 712, 4338, 8015, 6055, 2]
 // Exports: default
 
-// Module 14862 (UserSettingsDesignSystemRowButton)
+// Module 14853 (UserSettingsDesignSystemRowButton)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

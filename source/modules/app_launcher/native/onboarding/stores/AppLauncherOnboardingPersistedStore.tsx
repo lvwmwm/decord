@@ -1,9 +1,9 @@
-// Module ID: 11487
-// Function ID: 11488
+// Module ID: 11488
+// Function ID: 11489
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 11487 (initialize)
+// Module 11488 (initialize)
 import { PersistedStore } from "initialize";
 
 let obj = { canShowBotsBanner: false, canShowAppsOrActivitiesBanner: false, willShowGlobalSearchOnboarding: false, timeMs: 0, channelId: "0" };

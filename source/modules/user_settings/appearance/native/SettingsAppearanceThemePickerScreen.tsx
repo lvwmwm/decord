@@ -1,10 +1,10 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 14567
+// Function ID: 14568
 // Name: ThemeTypes
-// Dependencies: [32, 19, 17, 4163, 1346, 1303, 1302, 1304, 1305, 505, 21, 4342, 712, 500, 4342, 1236, 14577, 10251, 14579, 1493, 647, 4275, 1367, 1306, 1349, 1364, 5756, 14492, 1500, 5768, 5788, 5317, 9005, 4083, 4191, 4162, 4343, 4346, 4072, 8438, 4338, 4887, 5316, 14493, 14581, 9191, 14587, 14599, 14608, 5368, 7793, 2]
+// Dependencies: [32, 19, 17, 4163, 1346, 1303, 1302, 1304, 1305, 505, 21, 4342, 712, 500, 4342, 1236, 14568, 10251, 14570, 1493, 647, 4275, 1367, 1306, 1349, 1364, 5756, 14483, 1500, 5768, 5788, 5317, 9005, 4083, 4191, 4162, 4343, 4346, 4072, 8438, 4338, 4887, 5316, 14484, 14572, 9191, 14578, 14590, 14599, 5368, 7793, 2]
 // Exports: default
 
-// Module 14576 (ThemeTypes)
+// Module 14567 (ThemeTypes)
 import useSegmentedControlState from "useSegmentedControlState";
 import useWindowDimensions from "useWindowDimensions";
 import { View } from "ThemeDarkIcon";
@@ -102,7 +102,7 @@ function getSegmentedControlItems() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.K2sFfo);
   obj[1] = ThemeTypes.LIGHT;
-  obj[2] = callback(require(14577) /* ThemeLightIcon */.ThemeLightIcon, {});
+  obj[2] = callback(require(14568) /* ThemeLightIcon */.ThemeLightIcon, {});
   const items = [obj, , ];
   obj = { label: null, id: null, icon: null, page: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -114,7 +114,7 @@ function getSegmentedControlItems() {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.pQwSpQ);
   obj[1] = ThemeTypes.MIDNIGHT;
-  obj[2] = callback(require(14579) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
+  obj[2] = callback(require(14570) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
   items[2] = obj;
   return items;
 }

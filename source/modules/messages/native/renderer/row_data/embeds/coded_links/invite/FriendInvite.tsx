@@ -1,10 +1,10 @@
-// Module ID: 12666
-// Function ID: 12667
+// Module ID: 12667
+// Function ID: 12668
 // Name: createFriendInvite
 // Dependencies: [17, 3998, 7241, 8098, 1236, 4187, 1435, 2]
 // Exports: createFriendInvite
 
-// Module 12666 (createFriendInvite)
+// Module 12667 (createFriendInvite)
 import { Image } from "get ActivityIndicator";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { InviteTypes } from "InviteSendStates";

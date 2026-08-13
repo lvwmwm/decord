@@ -1,10 +1,10 @@
-// Module ID: 13924
-// Function ID: 13925
+// Module ID: 13915
+// Function ID: 13916
 // Name: DevToolsLoggingFlagsScreen
 // Dependencies: [17, 706, 21, 4342, 712, 589, 5807, 5808, 708, 2]
 // Exports: default
 
-// Module 13924 (DevToolsLoggingFlagsScreen)
+// Module 13915 (DevToolsLoggingFlagsScreen)
 import { ScrollView } from "get ActivityIndicator";
 import refreshSourceMapCookie from "refreshSourceMapCookie";
 import jsxProd from "jsxProd";

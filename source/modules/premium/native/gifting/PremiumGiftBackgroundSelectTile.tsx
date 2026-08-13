@@ -1,10 +1,10 @@
-// Module ID: 12208
-// Function ID: 12209
+// Module ID: 12209
+// Function ID: 12210
 // Name: PremiumGiftStyles
-// Dependencies: [19, 17, 1924, 12209, 21, 12210, 12211, 12212, 12213, 12214, 12215, 12216, 12217, 12218, 4342, 712, 1236, 2367, 5308, 2]
+// Dependencies: [19, 17, 1924, 12210, 21, 12211, 12212, 12213, 12214, 12215, 12216, 12217, 12218, 12219, 4342, 712, 1236, 2367, 5308, 2]
 // Exports: default
 
-// Module 12208 (PremiumGiftStyles)
+// Module 12209 (PremiumGiftStyles)
 import "set";
 import get_ActivityIndicator from "messagesProxy";
 import { PremiumGiftStyles } from "GuildFeatures";

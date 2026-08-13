@@ -1,10 +1,10 @@
-// Module ID: 15611
-// Function ID: 15612
+// Module ID: 15602
+// Function ID: 15603
 // Name: _fetchNotificationCenterItems
 // Dependencies: [5, 7146, 676, 709, 5168, 503, 1404, 7148, 530, 4034, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 15611 (_fetchNotificationCenterItems)
+// Module 15602 (_fetchNotificationCenterItems)
 import encodeProperties from "encodeProperties";
 import _validate from "_validate";
 import { Endpoints } from "ME";

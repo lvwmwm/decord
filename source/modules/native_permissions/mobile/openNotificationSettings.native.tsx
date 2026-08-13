@@ -1,10 +1,10 @@
-// Module ID: 10748
-// Function ID: 10749
+// Module ID: 10750
+// Function ID: 10751
 // Name: openNotificationSettings
 // Dependencies: [17, 500, 4911, 2]
 // Exports: default
 
-// Module 10748 (openNotificationSettings)
+// Module 10750 (openNotificationSettings)
 import { NativeModules } from "get ActivityIndicator";
 
 let result = require("enforcing").fileFinishedImporting("modules/native_permissions/mobile/openNotificationSettings.native.tsx");

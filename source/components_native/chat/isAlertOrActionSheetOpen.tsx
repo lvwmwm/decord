@@ -1,10 +1,10 @@
-// Module ID: 10990
-// Function ID: 10991
+// Module ID: 10991
+// Function ID: 10992
 // Name: isAlertOrActionSheetOpen
-// Dependencies: [4054, 10991, 4685, 2]
+// Dependencies: [4054, 10992, 4685, 2]
 // Exports: isAlertOrActionSheetOpen
 
-// Module 10990 (isAlertOrActionSheetOpen)
+// Module 10991 (isAlertOrActionSheetOpen)
 import setContent from "setContent";
 import getAlert from "getAlert";
 

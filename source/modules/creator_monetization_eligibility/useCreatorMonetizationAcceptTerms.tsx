@@ -1,10 +1,10 @@
-// Module ID: 16852
-// Function ID: 16853
+// Module ID: 16843
+// Function ID: 16844
 // Name: useCreateCreatorMonetizationAcceptTermsRequest
-// Dependencies: [5, 32, 19, 1434, 1910, 1922, 589, 5922, 16853, 4242, 2]
+// Dependencies: [5, 32, 19, 1434, 1910, 1922, 589, 5922, 16844, 4242, 2]
 // Exports: default
 
-// Module 16852 (useCreateCreatorMonetizationAcceptTermsRequest)
+// Module 16843 (useCreateCreatorMonetizationAcceptTermsRequest)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -79,10 +79,10 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
                 v0 = 4;
                 c5 = 1;
                 const obj1 = { value: null, done: false };
-                obj1[0] = outer1_2(16853).acceptCreatorMonetizationTerms(tmp56, tmp42);
+                obj1[0] = outer1_2(16844).acceptCreatorMonetizationTerms(tmp56, tmp42);
                 return obj1;
               } else {
-                let obj2 = outer1_2(16853);
+                let obj2 = outer1_2(16844);
                 v0 = 3;
                 c5 = 1;
                 obj2 = { value: null, done: false };

@@ -1,10 +1,10 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15686
+// Function ID: 15687
 // Name: thumbHashToRGBA
-// Dependencies: [14508, 2]
+// Dependencies: [14499, 2]
 // Exports: createThumbhashImageFromPlaceholder
 
-// Module 15695 (thumbHashToRGBA)
+// Module 15686 (thumbHashToRGBA)
 function thumbHashToRGBA(arg0) {
   let obj = arg1;
   if (arg1 === undefined) {
@@ -161,7 +161,7 @@ function thumbHashToRGBA(arg0) {
   } else {
     tmp39 = items3;
   }
-  const result9 = require(14508) /* thumbHashToRGBA */.thumbHashToApproximateAspectRatio(arg0);
+  const result9 = require(14499) /* thumbHashToRGBA */.thumbHashToApproximateAspectRatio(arg0);
   let num17 = 32;
   if (result9 <= 1) {
     num17 = 32 * result9;
@@ -336,6 +336,6 @@ let result = require("set").fileFinishedImporting("modules/thumbhash/ThumbhashUt
 
 export const createThumbhashImageFromPlaceholder = function createThumbhashImageFromPlaceholder(placeholder) {
   const tmp = thumbHashToRGBA(Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0)), { detail: 1, pop: 1.1 });
-  return require(14508) /* thumbHashToRGBA */.rgbaToDataURL(tmp.w, tmp.h, tmp.rgba);
+  return require(14499) /* thumbHashToRGBA */.rgbaToDataURL(tmp.w, tmp.h, tmp.rgba);
 };
 export { thumbHashToRGBA };

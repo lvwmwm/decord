@@ -1,10 +1,10 @@
-// Module ID: 11905
-// Function ID: 11906
+// Module ID: 11906
+// Function ID: 11907
 // Name: fetchGameServerCatalog
-// Dependencies: [1994, 1922, 11906, 4231, 676, 709, 11907, 4582, 530, 11909, 4252, 698, 11910, 11908, 2]
+// Dependencies: [1994, 1922, 11907, 4231, 676, 709, 11908, 4582, 530, 11910, 4252, 698, 11911, 11909, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, fetchMyGameServerRegions, fetchMyGameServers, optimisticallyMarkGameServerResizing, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, updateMyGameServerName, wakeGameServer, wakeMyGameServer
 
-// Module 11905 (fetchGameServerCatalog)
+// Module 11906 (fetchGameServerCatalog)
 import _getSystemLocale from "_getSystemLocale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleGameServerUpsert from "handleGameServerUpsert";
@@ -213,7 +213,7 @@ export const fetchGameServerRegions = function fetchGameServerRegions(arg0) {
     let obj = callback(709);
     obj = { type: "GAME_SERVER_FETCH_REGIONS_SUCCESS", regions: null };
     body = body.body;
-    const mapped = body.map(callback(11910));
+    const mapped = body.map(callback(11911));
     obj[1] = mapped.sort((name, name2) => {
       name = name.name;
       return name.localeCompare(name2.name);
@@ -228,7 +228,7 @@ export const fetchMyGameServerRegions = function fetchMyGameServerRegions() {
     let obj = callback(709);
     obj = { type: "GAME_SERVER_FETCH_REGIONS_SUCCESS", regions: null, creationDisabled: null };
     const regions = body.body.regions;
-    const mapped = regions.map(callback(11910));
+    const mapped = regions.map(callback(11911));
     obj[1] = mapped.sort((name, name2) => {
       name = name.name;
       return name.localeCompare(name2.name);
@@ -257,10 +257,10 @@ export const optimisticallyMarkGameServerResizing = function optimisticallyMarkG
   const found = gameServers.find((subscription_id) => subscription_id.subscription_id === closure_0);
   if (null != found) {
     let obj = importDefault(709);
-    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "9b50bd_1" };
+    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "Restricted Schedule Updated" };
     obj = {};
     const merged = Object.assign(found);
-    obj.status = _require(11908).GameServerStatus.STARTING;
+    obj.status = _require(11909).GameServerStatus.STARTING;
     obj[2] = obj;
     obj.dispatch(obj);
   }
@@ -273,7 +273,7 @@ export const updateMyGameServerName = function updateMyGameServerName(arg0, name
     let resolved = Promise.resolve();
   } else {
     let obj = importDefault(709);
-    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "9b50bd_1" };
+    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "Restricted Schedule Updated" };
     obj = {};
     const merged = Object.assign(found);
     obj.name = name;
@@ -343,10 +343,10 @@ export const wakeMyGameServer = function wakeMyGameServer(arg0) {
   const found = gameServers.find((id) => id.id === closure_0);
   if (null != found) {
     let obj = importDefault(709);
-    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "9b50bd_1" };
+    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "Restricted Schedule Updated" };
     obj = {};
     let merged = Object.assign(found);
-    obj.status = _require(11908).GameServerStatus.STARTING;
+    obj.status = _require(11909).GameServerStatus.STARTING;
     obj[2] = obj;
     obj.dispatch(obj);
   }
@@ -357,13 +357,13 @@ export const wakeMyGameServer = function wakeMyGameServer(arg0) {
     body = body.body;
     let obj = callback2(709);
     let tmp3 = body;
-    if (body.status === callback(11908).GameServerStatus.SLEEPING) {
+    if (body.status === callback(11909).GameServerStatus.SLEEPING) {
       obj = {};
       const merged = Object.assign(body);
-      obj.status = callback(11908).GameServerStatus.STARTING;
+      obj.status = callback(11909).GameServerStatus.STARTING;
       tmp3 = obj;
     }
-    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "9b50bd_1" };
+    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "Restricted Schedule Updated" };
     obj[2] = tmp3;
     obj.dispatch(obj);
   }).catch((arg0) => {

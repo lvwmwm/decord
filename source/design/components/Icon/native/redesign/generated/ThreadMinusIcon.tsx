@@ -1,10 +1,10 @@
-// Module ID: 12392
-// Function ID: 12393
+// Module ID: 12393
+// Function ID: 12394
 // Name: ThreadMinusIcon
-// Dependencies: [19, 21, 712, 4064, 12393, 2]
+// Dependencies: [19, 21, 712, 4064, 12394, 2]
 // Exports: ThreadMinusIcon
 
-// Module 12392 (ThreadMinusIcon)
+// Module 12393 (ThreadMinusIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ThreadMinusIcon = function ThreadMinusIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12393) /* registerAsset */;
+  obj[0] = require(12394) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

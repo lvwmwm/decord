@@ -1,10 +1,10 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14844
+// Function ID: 14845
 // Name: ExampleButton
-// Dependencies: [32, 19, 17, 1348, 21, 14854, 4755, 14855, 7796, 6055, 9174, 13484, 9782, 8103, 9237, 4342, 712, 1499, 4310, 14856, 2007, 4753, 4338, 10069, 9164, 9170, 9172, 9171, 9169, 9168, 5191, 4072, 688, 4766, 5416, 4889, 8719, 2]
+// Dependencies: [32, 19, 17, 1348, 21, 14845, 4755, 14846, 7796, 6055, 9174, 13485, 9782, 8103, 9237, 4342, 712, 1499, 4310, 14847, 2007, 4753, 4338, 10069, 9164, 9170, 9172, 9171, 9169, 9168, 5191, 4072, 688, 4766, 5416, 4889, 8719, 2]
 // Exports: default
 
-// Module 14853 (ExampleButton)
+// Module 14844 (ExampleButton)
 import int2hslRaw from "int2hslRaw";
 import items from "items";
 import get_ActivityIndicator from "useNavigation";
@@ -33,7 +33,7 @@ function ExampleButton(arg0) {
   let enableLoadingState;
   let importDefault;
   let dependencyMap;
-  const tmp3 = importDefault(14854)();
+  const tmp3 = importDefault(14845)();
   enableLoadingState = tmp3.enableLoadingState;
   ({ buttonScale, buttonSize, iconPosition, showIcon, showDisabled } = tmp3);
   importDefault = React.useRef(null);
@@ -74,7 +74,7 @@ function ExampleButton(arg0) {
   obj[7] = buttonSize;
   let tmpResult;
   if (showIcon) {
-    tmpResult = importDefault(14855);
+    tmpResult = importDefault(14846);
   }
   obj[8] = tmpResult;
   obj[9] = iconPosition;
@@ -94,7 +94,7 @@ function ExampleIconButton(arg0) {
   let importDefault;
   let dependencyMap;
   let callback;
-  const tmp3 = importDefault(14854)();
+  const tmp3 = importDefault(14845)();
   enableLoadingState = tmp3.enableLoadingState;
   const showDisabled = tmp3.showDisabled;
   importDefault = React.useRef(null);
@@ -159,7 +159,7 @@ function ExampleImageButton(arg0) {
   let importDefault;
   let dependencyMap;
   let callback;
-  const tmp = importDefault(14854)();
+  const tmp = importDefault(14845)();
   enableLoadingState = tmp.enableLoadingState;
   const showDisabled = tmp.showDisabled;
   importDefault = React.useRef(null);
@@ -204,7 +204,7 @@ function ExampleToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(13484);
+  let obj = first(13485);
   obj = { on: null, off: null };
   obj = { text: "Unfollow", icon: importDefault(9782) };
   obj[0] = obj;
@@ -223,7 +223,7 @@ function ExampleIconToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(13484);
+  let obj = first(13485);
   obj = { on: null, off: null };
   obj = { variant: "destructive", accessibilityLabel: "Mute", icon: importDefault(9237) };
   obj[0] = obj;

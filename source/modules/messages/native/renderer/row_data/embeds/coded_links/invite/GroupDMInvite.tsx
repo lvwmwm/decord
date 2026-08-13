@@ -1,10 +1,10 @@
-// Module ID: 12665
-// Function ID: 12666
+// Module ID: 12666
+// Function ID: 12667
 // Name: createGroupDMInvite
-// Dependencies: [1391, 3998, 1922, 7241, 8098, 10966, 1236, 12373, 1438, 4535, 2]
+// Dependencies: [1391, 3998, 1922, 7241, 8098, 10967, 1236, 12374, 1438, 4535, 2]
 // Exports: createGroupDMInvite
 
-// Module 12665 (createGroupDMInvite)
+// Module 12666 (createGroupDMInvite)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -22,7 +22,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   let recipients_;
   ({ colors, baseColors } = importDefault(8098)(closure_2));
   const tmp2 = importDefault(8098)(closure_2);
-  ({ channel, recipients_ } = importDefault(10966)(invite));
+  ({ channel, recipients_ } = importDefault(10967)(invite));
   let id;
   if (channel != null) {
     id = channel.id;
@@ -59,7 +59,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   }
   let channelIconSource = null;
   if (null != channel) {
-    let tmp8Result = tmp8(12373);
+    let tmp8Result = tmp8(12374);
     channelIconSource = tmp8Result.getChannelIconSource(channel);
   }
   let uri = null;

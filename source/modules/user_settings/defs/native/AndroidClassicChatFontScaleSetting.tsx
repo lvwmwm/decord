@@ -1,9 +1,9 @@
-// Module ID: 14625
-// Function ID: 14626
+// Module ID: 14616
+// Function ID: 14617
 // Name: toggle
-// Dependencies: [14573, 8127, 3974, 705, 1236, 10407, 500, 2]
+// Dependencies: [14564, 8127, 3974, 705, 1236, 10407, 500, 2]
 
-// Module 14625 (toggle)
+// Module 14616 (toggle)
 import { useFontScaleStore } from "DEFAULT_FONT_SCALE_STORE_STATE";
 import createToggle from "createToggle";
 

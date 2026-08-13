@@ -1,10 +1,10 @@
-// Module ID: 10556
-// Function ID: 10557
+// Module ID: 10558
+// Function ID: 10559
 // Name: useMediaModalFooterActionStore
 // Dependencies: [644, 705, 2]
 // Exports: clearMediaModalFooterAction, setMediaModalFooterAction
 
-// Module 10556 (useMediaModalFooterActionStore)
+// Module 10558 (useMediaModalFooterActionStore)
 import keys from "keys";
 
 const obj = keys.create(() => ({}));

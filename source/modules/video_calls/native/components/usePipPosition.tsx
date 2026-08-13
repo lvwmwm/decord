@@ -1,10 +1,10 @@
-// Module ID: 10631
-// Function ID: 10632
+// Module ID: 10633
+// Function ID: 10634
 // Name: usePipPosition
-// Dependencies: [32, 19, 595, 10632, 2]
+// Dependencies: [32, 19, 595, 10634, 2]
 // Exports: default
 
-// Module 10631 (usePipPosition)
+// Module 10633 (usePipPosition)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -15,7 +15,7 @@ let result = require("Storage").fileFinishedImporting("modules/video_calls/nativ
 export default function usePipPosition() {
   const tmp = callback(React.useState(() => {
     const Storage = callback(595).Storage;
-    return Storage.get(closure_4, callback(10632).DEFAULT_PIP_POSITION);
+    return Storage.get(closure_4, callback(10634).DEFAULT_PIP_POSITION);
   }), 2);
   let closure_0 = tmp[1];
   const items = [

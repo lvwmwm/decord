@@ -1,10 +1,10 @@
-// Module ID: 14302
-// Function ID: 14303
+// Module ID: 14293
+// Function ID: 14294
 // Name: ThemedTabBadge
-// Dependencies: [32, 19, 17, 4013, 1924, 6943, 21, 4342, 712, 1363, 4278, 4338, 9399, 503, 7692, 1297, 14303, 6958, 7385, 4007, 4164, 1377, 589, 6065, 8207, 8206, 7688, 1236, 4766, 691, 500, 2]
+// Dependencies: [32, 19, 17, 4013, 1924, 6943, 21, 4342, 712, 1363, 4278, 4338, 9399, 503, 7692, 1297, 14294, 6958, 7385, 4007, 4164, 1377, 589, 6065, 8207, 8206, 7688, 1236, 4766, 691, 500, 2]
 // Exports: default
 
-// Module 14302 (ThemedTabBadge)
+// Module 14293 (ThemedTabBadge)
 import _slicedToArray from "_slicedToArray";
 import "getPremiumPlanItem";
 import { View } from "usePremiumTrialOffer";
@@ -51,7 +51,7 @@ function OfferBadge(componentId) {
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.acked;
     const obj2 = { source: null, size: null, color: null, style: null };
-    obj2[0] = importDefault(14303);
+    obj2[0] = importDefault(14294);
     obj2[1] = tmp5(1297).Icon.Sizes.EXTRA_SMALL;
     obj2[2] = tmp.icon.color;
     obj2[3] = tmp.icon;
@@ -221,7 +221,7 @@ export default function PremiumTabBadge() {
           ({ premiumDiscountBadge: arr6[0], ackedBadge: arr6[1] } = tmp);
           obj4[0] = items4;
           const obj5 = { source: null, size: null, color: null, style: null };
-          obj5[0] = importDefault(14303);
+          obj5[0] = importDefault(14294);
           obj5[1] = tmp2(1297).Icon.Sizes.EXTRA_SMALL;
           obj5[2] = tmp.icon.color;
           obj5[3] = tmp.icon;

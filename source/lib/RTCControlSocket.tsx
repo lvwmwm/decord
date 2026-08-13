@@ -1,9 +1,9 @@
-// Module ID: 13141
-// Function ID: 13142
+// Module ID: 13142
+// Function ID: 13143
 // Name: noop
-// Dependencies: [706, 4393, 4406, 687, 4444, 584, 3, 4420, 13142, 500, 38, 2]
+// Dependencies: [706, 4393, 4406, 687, 4444, 584, 3, 4420, 13143, 500, 38, 2]
 
-// Module 13141 (noop)
+// Module 13142 (noop)
 import refreshSourceMapCookie from "refreshSourceMapCookie";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import DesktopSources from "DesktopSources";
@@ -79,7 +79,7 @@ prototype["createWebSocket"] = function createWebSocket() {
     self.handleClose(false, 0, "The connection timed out after " + self(outer1_2[7]).now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
   }, closure_13);
   obj = { location: "RTCControlSocket", supportsSfuUpdate: _detectH265HardwareDecode.supports(constants.UDP_ENDPOINT_UPDATE) };
-  const webSocket = new WebSocket("" + self.url + "?v=" + self(13142).getVoiceGatewayProtocolVersion(obj));
+  const webSocket = new WebSocket("" + self.url + "?v=" + self(13143).getVoiceGatewayProtocolVersion(obj));
   self.webSocket = webSocket;
   webSocket.binaryType = "arraybuffer";
   webSocket.onopen = () => {

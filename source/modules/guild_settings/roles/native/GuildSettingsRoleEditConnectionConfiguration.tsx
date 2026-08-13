@@ -1,10 +1,10 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 16795
+// Function ID: 16796
 // Name: Header
-// Dependencies: [32, 19, 17, 676, 5166, 21, 4342, 712, 4278, 11009, 1297, 1435, 1363, 5414, 1236, 4887, 5366, 5808, 16805, 500, 4338, 5041, 5807, 2]
+// Dependencies: [32, 19, 17, 676, 5166, 21, 4342, 712, 4278, 11010, 1297, 1435, 1363, 5414, 1236, 4887, 5366, 5808, 16796, 500, 4338, 5041, 5807, 2]
 // Exports: default
 
-// Module 16804 (Header)
+// Module 16795 (Header)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "TableSwitchRow";
@@ -30,7 +30,7 @@ function Header(arg0) {
   let platform;
   ({ platform, integration, applicationId } = arg0);
   ({ onRemove, locked } = arg0);
-  let obj = require(11009) /* request */;
+  let obj = require(11010) /* request */;
   let application;
   if (integration != null) {
     application = integration.application;
@@ -45,7 +45,7 @@ function Header(arg0) {
     application1 = integration.application;
   }
   if (null != application1) {
-    obj = { size: null, user: null, guildId: "e" };
+    obj = { size: null, user: null, guildId: "Array" };
     obj[0] = tmp3(1297).AvatarSizes.XSMALL;
     let bot;
     if (integration != null) {
@@ -68,7 +68,7 @@ function Header(arg0) {
       }
       let tmp11;
       if (null != bot1) {
-        obj = { size: null, user: null, guildId: "e" };
+        obj = { size: null, user: null, guildId: "Array" };
         obj[0] = tmp3(1297).AvatarSizes.XSMALL;
         obj[1] = getOrFetchApplicationBatched.bot;
         tmp11 = callback2(tmp3(1297).Avatar, obj);
@@ -214,7 +214,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (num == null) {
     num = -1;
   }
-  let obj = metadataField(16805);
+  let obj = metadataField(16796);
   const realizedOperatorForResult = obj.realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   let value;
@@ -223,7 +223,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  let tmpResult = tmp(16805);
+  let tmpResult = tmp(16796);
   str = tmpResult.displayedValueFor(value, realizedOperatorForResult);
   str = str.toString();
   let mapped = React;
@@ -645,7 +645,7 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
     }
     if (configurationItems[0].configuration.connectionType === closure_11) {
       let obj = { hasIcons: true, children: null };
-      obj = { platform: null, integration: "a", applicationId: 156303361, onRemove: 160005, locked: 1090584576 };
+      obj = { platform: null, integration: "a", applicationId: "<string:3638689793>", onRemove: "<string:222363649>", locked: "<string:1090519721>" };
       obj[2] = applicationId;
       obj[3] = function onRemove() {
         return onConfigurationChange(null, configurationItems[0].index);

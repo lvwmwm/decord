@@ -1,10 +1,10 @@
-// Module ID: 11255
-// Function ID: 11256
+// Module ID: 11256
+// Function ID: 11257
 // Name: regExp
-// Dependencies: [4310, 11256, 2007, 10417, 10418, 8250, 4264, 2]
+// Dependencies: [4310, 11257, 2007, 10417, 10418, 8250, 4264, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 11255 (regExp)
+// Module 11256 (regExp)
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/experiments/native/ExperimentEmbedPlatformUtils.tsx");
 
@@ -50,5 +50,5 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
     }
   }
   obj = { id: experimentFromEmbedURL };
-  importDefault(4310).openLazy(_require(2007)(11256, dependencyMap.paths), "ExperimentOverrideSheet", obj);
+  importDefault(4310).openLazy(_require(2007)(11257, dependencyMap.paths), "ExperimentOverrideSheet", obj);
 };

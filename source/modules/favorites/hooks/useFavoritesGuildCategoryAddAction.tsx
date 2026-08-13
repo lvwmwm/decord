@@ -1,10 +1,10 @@
-// Module ID: 12196
-// Function ID: 12197
+// Module ID: 12197
+// Function ID: 12198
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 676, 12197, 1913, 1236, 3047, 2]
+// Dependencies: [19, 676, 12198, 1913, 1236, 3047, 2]
 // Exports: default
 
-// Module 12196 (useFavoritesGuildCategoryAddAction)
+// Module 12197 (useFavoritesGuildCategoryAddAction)
 import noop from "noop";
 import { ChannelTypes } from "ME";
 

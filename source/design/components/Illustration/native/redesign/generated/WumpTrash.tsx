@@ -1,10 +1,10 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15181
+// Function ID: 15182
 // Name: getWumpTrashSource
-// Dependencies: [19, 17, 21, 7668, 15191, 15192, 1363, 2]
+// Dependencies: [19, 17, 21, 7668, 15182, 15183, 1363, 2]
 // Exports: WumpTrash, getWumpTrashSource, useWumpTrashSource
 
-// Module 15190 (getWumpTrashSource)
+// Module 15181 (getWumpTrashSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,10 +16,10 @@ export const getWumpTrashSource = function getWumpTrashSource(theme) {
   let obj = require(7668) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(15191);
+      return callback(15182);
     },
     darker() {
-      return callback(15192);
+      return callback(15183);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -28,10 +28,10 @@ export const useWumpTrashSource = function useWumpTrashSource() {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(15191);
+      return callback(15182);
     },
     darker() {
-      return callback(15192);
+      return callback(15183);
     }
   };
   return require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -40,10 +40,10 @@ export const WumpTrash = function WumpTrash(arg0) {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(15191);
+      return callback(15182);
     },
     darker() {
-      return callback(15192);
+      return callback(15183);
     }
   };
   obj = {};

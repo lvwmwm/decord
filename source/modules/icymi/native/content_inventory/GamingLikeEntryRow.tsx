@@ -1,10 +1,10 @@
-// Module ID: 15698
-// Function ID: 15699
+// Module ID: 15689
+// Function ID: 15690
 // Name: items
-// Dependencies: [19, 17, 1922, 21, 12351, 8285, 12356, 15649, 712, 589, 4574, 9286, 5774, 8283, 9322, 9333, 8281, 15699, 2007, 8962, 4550, 15703, 1236, 15705, 4338, 4187, 7148, 11, 689, 4887, 5308, 15706, 2]
+// Dependencies: [19, 17, 1922, 21, 12352, 8285, 12357, 15640, 712, 589, 4574, 9286, 5774, 8283, 9322, 9333, 8281, 15690, 2007, 8962, 4550, 15694, 1236, 15696, 4338, 4187, 7148, 11, 689, 4887, 5308, 15697, 2]
 // Exports: default
 
-// Module 15698 (items)
+// Module 15689 (items)
 import module_8962 from "module_8962";
 import { View } from "Screenshot";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -35,7 +35,7 @@ obj = {
     const trendingType = require(8285) /* calculateTimestampDurations */.getTrendingType(entry);
     const obj = require(8285) /* calculateTimestampDurations */;
     const tmp = require;
-    return null != trendingType && trendingType !== require(12356) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED;
+    return null != trendingType && trendingType !== require(12357) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED;
   }
 };
 items[2] = obj;

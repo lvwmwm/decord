@@ -1,9 +1,9 @@
-// Module ID: 14786
-// Function ID: 14787
+// Module ID: 14777
+// Function ID: 14778
 // Name: dismissiblePremiumNewBadgeRouteProps
-// Dependencies: [676, 14665, 1377, 10407, 1236, 14787, 7706, 14789, 2]
+// Dependencies: [676, 14656, 1377, 10407, 1236, 14778, 7706, 14780, 2]
 
-// Module 14786 (dismissiblePremiumNewBadgeRouteProps)
+// Module 14777 (dismissiblePremiumNewBadgeRouteProps)
 import createDismissiblePremiumNewBadgeRouteProps from "createDismissiblePremiumNewBadgeRouteProps";
 import createToggle from "createToggle";
 
@@ -28,7 +28,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.APP_ICONS,
   getComponent() {
-    return require(14789).default;
+    return require(14780).default;
   }
 };
 const route = createToggle.createRoute(obj);

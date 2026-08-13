@@ -1,10 +1,10 @@
-// Module ID: 14482
-// Function ID: 14483
+// Module ID: 14473
+// Function ID: 14474
 // Name: Footer
-// Dependencies: [19, 17, 676, 21, 4342, 712, 4310, 6059, 8777, 4058, 1993, 4755, 1236, 1628, 5752, 4072, 4338, 10440, 3175, 5437, 14479, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 4310, 6059, 8777, 4058, 1993, 4755, 1236, 1628, 5752, 4072, 4338, 10439, 3175, 5437, 14470, 2]
 // Exports: default
 
-// Module 14482 (Footer)
+// Module 14473 (Footer)
 import Background from "Background";
 import { View } from "items";
 import ME from "ME";
@@ -114,7 +114,7 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
   multiplier = multiplier.multiplier;
   const orbMultiplierEligibility = multiplier.orbMultiplierEligibility;
   let dependencyMap;
-  let obj = multiplier(10440);
+  let obj = multiplier(10439);
   const result = obj.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
   dependencyMap = result;
   const items = [orbMultiplierEligibility];
@@ -152,9 +152,9 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
     return formatResult;
   }, items1);
   obj = { scrollable: false, handleDisabled: true, startExpanded: true, contentStyles: closure_11, children: null };
-  obj = { visible: orbMultiplierEligibility === multiplier(10440).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10440).QuestOrbMultiplierEligibilityType.UPSELL, children: null };
-  const tmp4 = orbMultiplierEligibility === multiplier(10440).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10440).QuestOrbMultiplierEligibilityType.UPSELL;
+  obj = { visible: orbMultiplierEligibility === multiplier(10439).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10439).QuestOrbMultiplierEligibilityType.UPSELL, children: null };
+  const tmp4 = orbMultiplierEligibility === multiplier(10439).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10439).QuestOrbMultiplierEligibilityType.UPSELL;
   obj[1] = callback(SheetContent, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result });
-  obj[4] = callback(orbMultiplierEligibility(14479), obj);
+  obj[4] = callback(orbMultiplierEligibility(14470), obj);
   return callback(multiplier(5437).BottomSheet, obj);
 };

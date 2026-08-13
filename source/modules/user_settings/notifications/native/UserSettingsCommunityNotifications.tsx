@@ -1,10 +1,10 @@
-// Module ID: 14783
-// Function ID: 14784
+// Module ID: 14774
+// Function ID: 14775
 // Name: UserSettingsCommunityNotifications
 // Dependencies: [19, 9802, 21, 4342, 589, 11, 8012, 4753, 5807, 5808, 1236, 1374, 2]
 // Exports: default
 
-// Module 14783 (UserSettingsCommunityNotifications)
+// Module 14774 (UserSettingsCommunityNotifications)
 import "noop";
 import computeAlertSettings from "computeAlertSettings";
 import jsxProd from "jsxProd";

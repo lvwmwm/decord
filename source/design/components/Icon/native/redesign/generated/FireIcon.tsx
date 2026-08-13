@@ -1,10 +1,10 @@
-// Module ID: 12271
-// Function ID: 12272
+// Module ID: 12272
+// Function ID: 12273
 // Name: FireIcon
-// Dependencies: [19, 21, 712, 4064, 12272, 2]
+// Dependencies: [19, 21, 712, 4064, 12273, 2]
 // Exports: FireIcon
 
-// Module 12271 (FireIcon)
+// Module 12272 (FireIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const FireIcon = function FireIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12272) /* registerAsset */;
+  obj[0] = require(12273) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

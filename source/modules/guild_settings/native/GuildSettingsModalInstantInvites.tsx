@@ -1,10 +1,10 @@
-// Module ID: 16814
-// Function ID: 16815
+// Module ID: 16805
+// Function ID: 16806
 // Name: InvitesDisabledRow
-// Dependencies: [32, 19, 17, 9802, 7805, 1391, 1910, 9071, 676, 21, 4342, 1236, 1993, 8497, 4338, 5420, 8494, 11803, 589, 12, 8169, 8167, 4310, 11278, 2007, 4062, 9734, 5862, 1297, 16815, 5754, 2]
+// Dependencies: [32, 19, 17, 9802, 7805, 1391, 1910, 9071, 676, 21, 4342, 1236, 1993, 8497, 4338, 5420, 8494, 11804, 589, 12, 8169, 8167, 4310, 11279, 2007, 4062, 9734, 5862, 1297, 16806, 5754, 2]
 // Exports: default
 
-// Module 16814 (InvitesDisabledRow)
+// Module 16805 (InvitesDisabledRow)
 import _slicedToArray from "_slicedToArray";
 import apply from "apply";
 import get_ActivityIndicator from "useInvitesDisabledPermission";

@@ -1,9 +1,9 @@
-// Module ID: 16500
-// Function ID: 16501
+// Module ID: 16491
+// Function ID: 16492
 // Name: handleDeletedEntityIds
 // Dependencies: [5216, 5259, 1391, 1983, 1910, 5035, 3, 5301, 709, 589, 7158, 1217, 11, 2]
 
-// Module 16500 (handleDeletedEntityIds)
+// Module 16491 (handleDeletedEntityIds)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -37,7 +37,7 @@ function handleDeletedEntityIds(guild_id) {
         if (!set1.has(arg0)) {
           let obj = set3(set1[8]);
           obj = { type: "CHANNEL_DELETE", channel: null };
-          obj = { guild_id: null, id: null, parent_id: "e" };
+          obj = { guild_id: null, id: null, parent_id: "Array" };
           obj[0] = set3;
           obj[1] = arg0;
           obj[1] = obj;

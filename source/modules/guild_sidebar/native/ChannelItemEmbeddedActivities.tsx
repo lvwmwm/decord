@@ -1,10 +1,10 @@
-// Module ID: 15435
-// Function ID: 15436
+// Module ID: 15426
+// Function ID: 15427
 // Name: ChannelItemEmbeddedActivities
 // Dependencies: [19, 17, 21, 4342, 712, 5778, 4338, 2]
 // Exports: default
 
-// Module 15435 (ChannelItemEmbeddedActivities)
+// Module 15426 (ChannelItemEmbeddedActivities)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

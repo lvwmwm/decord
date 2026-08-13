@@ -1,10 +1,10 @@
-// Module ID: 14438
-// Function ID: 14439
+// Module ID: 14429
+// Function ID: 14430
 // Name: useQuestRewardClaimHandler
-// Dependencies: [32, 19, 17, 4334, 1922, 7206, 5438, 21, 712, 4342, 5205, 10420, 10437, 10442, 10160, 589, 4065, 7059, 11215, 14439, 4755, 10559, 10451, 14407, 11222, 14434, 14436, 7796, 1236, 5314, 11221, 10449, 13917, 9566, 9567, 9571, 7233, 7232, 1628, 1493, 4083, 4343, 4759, 2]
+// Dependencies: [32, 19, 17, 4334, 1922, 7206, 5438, 21, 712, 4342, 5205, 10420, 10436, 10441, 10160, 589, 4065, 7059, 11216, 14430, 4755, 10561, 10453, 14398, 11223, 14425, 14427, 7796, 1236, 5314, 11222, 10451, 13908, 9566, 9567, 9571, 7222, 7233, 1628, 1493, 4083, 4343, 4759, 2]
 // Exports: default
 
-// Module 14438 (useQuestRewardClaimHandler)
+// Module 14429 (useQuestRewardClaimHandler)
 import RefreshIcon from "RefreshIcon";
 import useWatchTaskPressHandler from "useWatchTaskPressHandler";
 import { View } from "tinycolor";
@@ -132,10 +132,10 @@ function WatchTaskButton(arg0) {
   let sourceQuestContent;
   let taskDetails;
   ({ questId, sourceQuestContent, taskDetails, disabled, onPressDisabled } = arg0);
-  let obj = require(14439) /* useWatchTaskPressHandler */;
+  let obj = require(14430) /* useWatchTaskPressHandler */;
   obj = { grow: true, size: "lg", onPress: obj.useWatchTaskPressHandler({ questId, sourceQuestContent }), disabled, onPressDisabled, text: null };
   const watchTaskPressHandler = obj.useWatchTaskPressHandler({ questId, sourceQuestContent });
-  obj[5] = require(10559) /* formatWatchRemainingDurationShort */.getVideoQuestWatchCtaText(taskDetails);
+  obj[5] = require(10561) /* formatWatchRemainingDurationShort */.getVideoQuestWatchCtaText(taskDetails);
   return callback2(require(4755) /* Button */.Button, obj);
 }
 function NextButton(arg0) {
@@ -158,11 +158,11 @@ function DefibButton(arg0) {
   let RefreshIcon;
   let useWatchTaskPressHandler;
   ({ loading, disabled, onPressDisabled } = arg0);
-  let obj = require(11221) /* useTrackQuestEventWithImpression */;
+  let obj = require(11222) /* useTrackQuestEventWithImpression */;
   RefreshIcon = obj.useTrackQuestContentClickedWithImpression();
-  useWatchTaskPressHandler = require(10449) /* useAdContentImpressionTrackerProps */.useQuestImpressionId();
+  useWatchTaskPressHandler = require(10451) /* useAdContentImpressionTrackerProps */.useQuestImpressionId();
   obj = { grow: true, size: "lg", variant: "secondary", loading, disabled, onPressDisabled, icon: null, iconPosition: "end", onPress: null, text: null };
-  obj[6] = callback2(require(13917) /* RefreshIcon */.RefreshIcon, {});
+  obj[6] = callback2(require(13908) /* RefreshIcon */.RefreshIcon, {});
   obj[8] = function onPress(arg0) {
     let obj = outer1_0(outer1_2[33]);
     if (obj.shouldMigrateToAdAnalyticsInterface(outer1_0(outer1_2[33]).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet_footer")) {
@@ -203,9 +203,9 @@ function ClaimButton(arg0) {
   let RefreshIcon;
   let useWatchTaskPressHandler;
   ({ disabled, loading, onPressDisabled } = arg0);
-  let obj = require(11221) /* useTrackQuestEventWithImpression */;
+  let obj = require(11222) /* useTrackQuestEventWithImpression */;
   RefreshIcon = obj.useTrackQuestContentClickedWithImpression();
-  useWatchTaskPressHandler = require(10449) /* useAdContentImpressionTrackerProps */.useQuestImpressionId();
+  useWatchTaskPressHandler = require(10451) /* useAdContentImpressionTrackerProps */.useQuestImpressionId();
   obj = {
     grow: true,
     size: "lg",
@@ -370,14 +370,14 @@ export default function QuestBottomSheetFooter(quest) {
       return null != closure_1.find((type) => type.type === closure_0);
     });
   }, items);
-  let obj4 = quest(14407);
+  let obj4 = quest(14398);
   const hasWatchVideoOnMobileTasks = obj4.useHasWatchVideoOnMobileTasks(quest.config);
-  let obj5 = quest(14407);
+  let obj5 = quest(14398);
   const mobileActivityQuest = obj5.useMobileActivityQuest(quest);
   ({ isMobileActivityQuest, launchMobileActivity, questApplication } = mobileActivityQuest);
-  let obj6 = quest(11222);
+  let obj6 = quest(11223);
   const primaryCtaCopy = obj6.usePrimaryCtaCopy({ quest, application: questApplication });
-  let obj7 = quest(14439);
+  let obj7 = quest(14430);
   obj = { questId: quest.id, sourceQuestContent, launchMobileActivity };
   const userStatus = quest.userStatus;
   let completedAt;
@@ -391,19 +391,19 @@ export default function QuestBottomSheetFooter(quest) {
   }
   let tmp2Result = tmp2(10420);
   const isQuestAccessSuspended = tmp2Result.useIsQuestAccessSuspended();
-  obj = { disabled: true, onPressDisabled: xboxAndPlaystationAccounts(14434) };
+  obj = { disabled: true, onPressDisabled: xboxAndPlaystationAccounts(14425) };
   let tmp40Result2 = null;
-  if (step !== quest(14436).QuestBottomSheetStep.TASK_SELECT) {
+  if (step !== quest(14427).QuestBottomSheetStep.TASK_SELECT) {
     obj1 = { onLayout: null, ctaButton: null, backButton: null, style: null, withSafeArea: null };
     obj1[0] = quest.onLayout;
-    if (tmp2(14436).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
+    if (tmp2(14427).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
       obj2 = { onPress: null, disabled: null };
       obj2[0] = onConnectConsoleNext;
       obj2[1] = 0 === memo.length;
       let tmp40Result = tmp40(NextButton, obj2);
     } else {
       tmp40Result = null;
-      if (tmp2(14436).QuestBottomSheetStep.TASK_STATUS === step) {
+      if (tmp2(14427).QuestBottomSheetStep.TASK_STATUS === step) {
         if (tmp11) {
           obj3 = { questId: null, onPress: null, disabled: null, loading: null, sourceQuestContent: null };
           obj3[0] = quest.id;
@@ -441,7 +441,7 @@ export default function QuestBottomSheetFooter(quest) {
           obj5 = { grow: true, size: "lg", onPress: null, text: null, icon: null };
           obj5[2] = mobileActivityPressHandler;
           obj5[3] = primaryCtaCopy;
-          tmp2Result = tmp2(11215);
+          tmp2Result = tmp2(11216);
           obj5[4] = tmp2Result.getPrimaryCtaIcon(quest);
           let tmp23 = null;
           if (isQuestAccessSuspended) {

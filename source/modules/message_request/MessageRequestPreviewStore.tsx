@@ -1,9 +1,9 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12017
+// Function ID: 12018
 // Name: isMessagePreviewEnabledForChannel
 // Dependencies: [1922, 5881, 5882, 4564, 589, 709, 2]
 
-// Module 12016 (isMessagePreviewEnabledForChannel)
+// Module 12017 (isMessagePreviewEnabledForChannel)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import processChannel from "processChannel";
 import closure_4 from "processChannel";

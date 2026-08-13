@@ -1,10 +1,10 @@
-// Module ID: 11574
-// Function ID: 11575
+// Module ID: 11575
+// Function ID: 11576
 // Name: xl
-// Dependencies: [19, 17, 1922, 11530, 1498, 676, 21, 712, 4342, 4083, 589, 11494, 4065, 8282, 11499, 8386, 7634, 11575, 4338, 1297, 7796, 4287, 698, 5796, 11576, 4061, 1236, 11577, 2]
+// Dependencies: [19, 17, 1922, 11531, 1498, 676, 21, 712, 4342, 4083, 589, 11495, 4065, 8282, 11500, 8386, 7634, 11576, 4338, 1297, 7796, 4287, 698, 5796, 11577, 4061, 1236, 11578, 2]
 // Exports: default
 
-// Module 11574 (xl)
+// Module 11575 (xl)
 import "Button";
 import { View } from "AppLauncherBackButton";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -59,7 +59,7 @@ export default function Header(application) {
   const tmp3 = createCacheKey();
   let appLauncherIconSource = null;
   if (null != application) {
-    let tmpResult = tmp(11494);
+    let tmpResult = tmp(11495);
     appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
   }
   tmpResult = tmp(4065);
@@ -80,7 +80,7 @@ export default function Header(application) {
     obj = { iconSource: null, iconBorderRadius: null, iconSize: 72 };
     obj[0] = appLauncherIconSource;
     obj[1] = xl;
-    let tmp12 = callback(tmp5(11499), obj);
+    let tmp12 = callback(tmp5(11500), obj);
     let tmp13 = callback;
   } else {
     obj = { style: null };
@@ -173,7 +173,7 @@ export default function Header(application) {
   const obj8 = { style: items4, pointerEvents: "box-none", children: null };
   items4 = [tmp3.collapsedHeaderBanner, { backgroundColor: tmp6Result }, animatedStyle1];
   const items5 = [tmp3.collapsedHeaderBannerOverlay, animatedStyle3];
-  const items6 = [tmp13(importDefault(4083).View, { style: items5, pointerEvents: "none" }), tmp13(importDefault(11575), { onPress: onPressBack }), , ];
+  const items6 = [tmp13(importDefault(4083).View, { style: items5, pointerEvents: "none" }), tmp13(importDefault(11576), { onPress: onPressBack }), , ];
   const obj9 = { style: animatedStyle2, pointerEvents: "none", children: null };
   obj9[2] = tmp13(scrollOffsetY(4338).Heading, { variant: "heading-lg/bold", color: "text-overlay-light", children: str2 });
   items6[2] = tmp13(importDefault(4083).View, obj9);
@@ -219,7 +219,7 @@ export default function Header(application) {
       const obj12 = { application: null, onAddAppMenuClick: null };
       obj12[0] = application;
       obj12[1] = onAddAppMenuClick;
-      items7[1] = tmp13(tmp5(11577), obj12);
+      items7[1] = tmp13(tmp5(11578), obj12);
       obj10[1] = items7;
       tmp22Result = tmp22(currentUser2, obj10);
     }

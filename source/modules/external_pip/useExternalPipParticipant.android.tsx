@@ -1,10 +1,10 @@
-// Module ID: 16165
-// Function ID: 16166
+// Module ID: 16156
+// Function ID: 16157
 // Name: useExternalPipParticipant
 // Dependencies: [32, 19, 4358, 1218, 4393, 4416, 4363, 589, 2]
 // Exports: default
 
-// Module 16165 (useExternalPipParticipant)
+// Module 16156 (useExternalPipParticipant)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getParticipants from "getParticipants";
@@ -62,7 +62,7 @@ export default function useExternalPipParticipant() {
       id1 = tmp4.id;
     }
     if (focusedParticipantStreamId.current !== id1) {
-      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "ct", focusedParticipantType: null };
+      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "accessibilityRole", focusedParticipantType: 1140851135 };
       obj[2] = stateFromStores1.current;
     } else {
       let type1;

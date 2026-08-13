@@ -1,10 +1,10 @@
-// Module ID: 11276
-// Function ID: 11277
+// Module ID: 11277
+// Function ID: 11278
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [19, 1391, 1910, 21, 8271, 11273, 11271, 8273, 1297, 9082, 2]
+// Dependencies: [19, 1391, 1910, 21, 8271, 11274, 11272, 8273, 1297, 9082, 2]
 // Exports: default
 
-// Module 11276 (ChannelSelectComponentActionSheet)
+// Module 11277 (ChannelSelectComponentActionSheet)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

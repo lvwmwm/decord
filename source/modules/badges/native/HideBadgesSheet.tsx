@@ -1,10 +1,10 @@
-// Module ID: 14005
-// Function ID: 14006
+// Module ID: 13996
+// Function ID: 13997
 // Name: HideBadgeTile
-// Dependencies: [32, 19, 17, 8309, 1922, 8839, 5438, 21, 4342, 712, 5416, 1236, 14006, 8544, 8546, 1628, 1493, 13989, 589, 13986, 8842, 13987, 4065, 9966, 5863, 4338, 5437, 5436, 5439, 2]
+// Dependencies: [32, 19, 17, 8309, 1922, 8839, 5438, 21, 4342, 712, 5416, 1236, 13997, 8544, 8546, 1628, 1493, 13980, 589, 13977, 8842, 13978, 4065, 9966, 5863, 4338, 5437, 5436, 5439, 2]
 // Exports: default
 
-// Module 14005 (HideBadgeTile)
+// Module 13996 (HideBadgeTile)
 import _slicedToArray from "_slicedToArray";
 import getSavedBadgeSettings from "getSavedBadgeSettings";
 import { View } from "apexExperiment";
@@ -40,7 +40,7 @@ function HideBadgeTile(badge) {
     badgeIconHidden = tmp.badgeIconHidden;
   }
   obj[2] = badgeIconHidden;
-  const items2 = [closure_10(onToggle(14006), obj), ];
+  const items2 = [closure_10(onToggle(13997), obj), ];
   const obj1 = { style: tmp.indicator, "aria-hidden": true, children: null };
   if (badge.hidden) {
     const obj2 = { size: "sm", color: null };

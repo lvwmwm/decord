@@ -1,10 +1,10 @@
-// Module ID: 15916
-// Function ID: 15917
+// Module ID: 15907
+// Function ID: 15908
 // Name: transitionGroupGetItemKey
-// Dependencies: [19, 1495, 21, 4689, 4207, 1626, 500, 15917, 4208, 4198, 5883, 9812, 1497, 4211, 8770, 2]
+// Dependencies: [19, 1495, 21, 4689, 4207, 1626, 500, 15908, 4208, 4198, 5883, 9812, 1497, 4211, 8770, 2]
 // Exports: PortalKeyboardRenderer
 
-// Module 15916 (transitionGroupGetItemKey)
+// Module 15907 (transitionGroupGetItemKey)
 import noop from "noop";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 import { jsx } from "jsxProd";
@@ -31,7 +31,7 @@ function transitionGroupRenderItem(arg0, arg1, arg2, arg3) {
     obj[0] = arg1;
     obj[1] = arg2;
     obj[2] = arg3;
-    tmp5 = jsx(importDefault(15917), { item: null, state: null, cleanUp: null }, arg0);
+    tmp5 = jsx(importDefault(15908), { item: null, state: null, cleanUp: null }, arg0);
   }
   return tmp5;
 }

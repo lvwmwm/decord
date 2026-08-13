@@ -1,10 +1,10 @@
-// Module ID: 14138
-// Function ID: 14139
+// Module ID: 14129
+// Function ID: 14130
 // Name: SensitiveContentFiltersTeenNotice
-// Dependencies: [19, 7824, 21, 5958, 14068, 1236, 4058, 1993, 7842, 7844, 2]
+// Dependencies: [19, 7824, 21, 5958, 14059, 1236, 4058, 1993, 7842, 7844, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 14138 (SensitiveContentFiltersTeenNotice)
+// Module 14129 (SensitiveContentFiltersTeenNotice)
 import "noop";
 import { SafetySettingsNoticeType } from "SafetyToastType";
 import { jsx } from "jsxProd";
@@ -22,7 +22,7 @@ export const SensitiveContentFiltersTeenNotice = function SensitiveContentFilter
     obj.openURL(outer1_1(outer1_2[7]).getArticleURL(closure_0));
   };
   obj[2] = SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE;
-  return jsx(importDefault(14068), { label: null, labelHook: null, noticeType: null });
+  return jsx(importDefault(14059), { label: null, labelHook: null, noticeType: null });
 };
 export const SensitiveContentFiltersAgeVerificationNotice = function SensitiveContentFiltersAgeVerificationNotice() {
   let obj = { label: null, labelHook: null, noticeType: null };
@@ -33,5 +33,5 @@ export const SensitiveContentFiltersAgeVerificationNotice = function SensitiveCo
     const result = obj.showAgeVerificationGetStartedModal(obj);
   };
   obj[2] = SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE;
-  return jsx(importDefault(14068), { label: null, labelHook: null, noticeType: null });
+  return jsx(importDefault(14059), { label: null, labelHook: null, noticeType: null });
 };

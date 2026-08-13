@@ -1,9 +1,9 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 13903
+// Function ID: 13904
 // Name: DevToolsContentSortButtons
-// Dependencies: [32, 19, 17, 10368, 4256, 1212, 21, 4342, 712, 589, 11236, 13913, 4338, 4887, 4311, 14373, 15136, 1499, 1628, 5807, 5414, 4062, 13911, 2]
+// Dependencies: [32, 19, 17, 10368, 4256, 1212, 21, 4342, 712, 589, 11237, 13904, 4338, 4887, 4311, 14364, 15127, 1499, 1628, 5807, 5414, 4062, 13902, 2]
 
-// Module 13912 (DevToolsContentSortButtons)
+// Module 13903 (DevToolsContentSortButtons)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "TableRowGroupTitle";
 import get_ActivityIndicator from "useNavigation";
@@ -43,7 +43,7 @@ function DevToolsContentSortButtons(arg0) {
   }
   items[1] = start;
   obj[2] = items;
-  obj[5] = closure_10(require(14373) /* ArrowSmallUpIcon */.ArrowSmallUpIcon, {});
+  obj[5] = closure_10(require(14364) /* ArrowSmallUpIcon */.ArrowSmallUpIcon, {});
   const items1 = [closure_10(require(4887) /* PressableBase */.PressableOpacity, obj), ];
   obj = {
     onPress() {
@@ -63,7 +63,7 @@ function DevToolsContentSortButtons(arg0) {
   }
   items2[1] = end;
   obj[2] = items2;
-  obj[5] = closure_10(require(15136) /* ArrowSmallDownIcon */.ArrowSmallDownIcon, {});
+  obj[5] = closure_10(require(15127) /* ArrowSmallDownIcon */.ArrowSmallDownIcon, {});
   items1[1] = closure_10(require(4887) /* PressableBase */.PressableOpacity, obj);
   obj[1] = items1;
   return closure_11(closure_5, obj);
@@ -126,7 +126,7 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
   const items2 = [initialize];
   importDefault = stateFromStores + _require(589).useStateFromStores(items2, () => Object.keys(clientOverrides.getClientOverrides()).length);
   const obj4 = _require(589);
-  importDefault = importDefault(13913)().map((arg0) => {
+  importDefault = importDefault(13904)().map((arg0) => {
     let tmp;
     [tmp] = arg0;
     if ("buildOverride" === tmp) {
@@ -147,9 +147,9 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
       return tmp2;
     }
   });
-  const arr4 = importDefault(13913)();
+  const arr4 = importDefault(13904)();
   [c2, c3] = callback(arr5.useState(false), 2);
-  arr5 = importDefault(13913)();
+  arr5 = importDefault(13904)();
   obj = { title, hasIcons: true, children: null };
   obj[2] = arr5.map((arg0, arg1) => {
     let tmp;

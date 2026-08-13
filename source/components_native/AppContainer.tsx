@@ -1,9 +1,9 @@
-// Module ID: 13884
-// Function ID: 13885
+// Module ID: 13875
+// Function ID: 13876
 // Name: GestureWrapper
-// Dependencies: [32, 19, 17, 5986, 1391, 1979, 676, 1398, 21, 4342, 712, 4083, 4890, 13885, 4553, 1231, 1209, 4198, 4691, 5859, 13887, 13888, 4197, 1222, 4278, 698, 4199, 13889, 5865, 1500, 1370, 13890, 500, 10976, 13891, 13899, 4128, 13901, 1496, 10699, 10934, 10940, 13902, 4212, 13903, 13905, 13907, 13908, 13909, 15144, 15152, 1208, 2]
+// Dependencies: [32, 19, 17, 5986, 1391, 1979, 676, 1398, 21, 4342, 712, 4083, 4890, 13876, 4553, 1231, 1209, 4198, 4691, 5859, 13878, 13879, 4197, 1222, 4278, 698, 4199, 13880, 5865, 1500, 1370, 13881, 500, 10977, 13882, 13890, 4128, 13892, 1496, 10701, 10936, 10942, 13893, 4212, 13894, 13896, 13898, 13899, 13900, 15135, 15143, 1208, 2]
 
-// Module 13884 (GestureWrapper)
+// Module 13875 (GestureWrapper)
 import set from "set";
 import designConfig from "designConfig";
 import { NativeModules } from "getRootNavigationRef";
@@ -38,7 +38,7 @@ function GestureWrapper(children) {
     items[1] = rootBackgroundColor;
     return items;
   }, items);
-  return callback2(importDefault(13885), { style, children: children.children });
+  return callback2(importDefault(13876), { style, children: children.children });
 }
 function handleNavigationOnReady() {
   importDefault(4553).flush();
@@ -96,7 +96,7 @@ function AppNavigationContainer(children) {
         name = first.name;
       }
     }
-    callback(13889).log("Initial Screen: " + name);
+    callback(13880).log("Initial Screen: " + name);
     return tmp;
   }, []);
   _require = React.useRef(true);
@@ -175,7 +175,7 @@ try {
     const appEntryKey = children.appEntryKey;
     let memo = appEntryKey;
     let memo1;
-    const requestGatewaySocket = memo(13890).useRequestGatewaySocket("AppContainer:" + appEntryKey);
+    const requestGatewaySocket = memo(13881).useRequestGatewaySocket("AppContainer:" + appEntryKey);
     const effect = React.useEffect(() => {
       if (!c22) {
         RNScreensTurboModule = RNScreensTurboModule.RNScreensTurboModule;
@@ -204,8 +204,8 @@ try {
     }, []);
     riveAppStatePlaybackExperiment = undefined;
     memo = undefined;
-    let obj = memo(13890);
-    riveAppStatePlaybackExperiment = memo(15152).useRiveAppStatePlaybackExperiment("AppContainer");
+    let obj = memo(13881);
+    riveAppStatePlaybackExperiment = memo(15143).useRiveAppStatePlaybackExperiment("AppContainer");
     let items = [riveAppStatePlaybackExperiment];
     memo = React.useMemo(() => {
       const items = [];

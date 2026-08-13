@@ -1,10 +1,10 @@
-// Module ID: 14983
-// Function ID: 14984
+// Module ID: 14974
+// Function ID: 14975
 // Name: UserSettingsSensitiveContentFilters
-// Dependencies: [19, 8127, 21, 1236, 10407, 13956, 2]
+// Dependencies: [19, 8127, 21, 1236, 10407, 13947, 2]
 // Exports: default
 
-// Module 14983 (UserSettingsSensitiveContentFilters)
+// Module 14974 (UserSettingsSensitiveContentFilters)
 import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -37,5 +37,5 @@ export default function UserSettingsSensitiveContentFilters() {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return jsx(importDefault(13956), { node });
+  return jsx(importDefault(13947), { node });
 };

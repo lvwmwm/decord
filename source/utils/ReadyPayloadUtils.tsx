@@ -1,10 +1,10 @@
-// Module ID: 13010
-// Function ID: 13011
+// Module ID: 13011
+// Function ID: 13012
 // Name: hydrateGuild
 // Dependencies: [1395, 1955, 7156, 7160, 1975, 7161, 1971, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 13010 (hydrateGuild)
+// Module 13011 (hydrateGuild)
 import { createChannelRecordFromServer as closure_3 } from "createChannelRecord";
 
 function hydrateGuild(guild) {

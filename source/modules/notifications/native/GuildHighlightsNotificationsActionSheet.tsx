@@ -1,10 +1,10 @@
-// Module ID: 11059
-// Function ID: 11060
+// Module ID: 11060
+// Function ID: 11061
 // Name: GuildPill
-// Dependencies: [32, 19, 17, 1910, 4540, 676, 11060, 21, 4342, 712, 5819, 4338, 11061, 647, 1236, 11062, 1628, 5437, 5439, 1993, 4083, 5416, 8012, 5302, 5297, 4310, 2]
+// Dependencies: [32, 19, 17, 1910, 4540, 676, 11061, 21, 4342, 712, 5819, 4338, 11062, 647, 1236, 11063, 1628, 5437, 5439, 1993, 4083, 5416, 8012, 5302, 5297, 4310, 2]
 // Exports: default
 
-// Module 11059 (GuildPill)
+// Module 11060 (GuildPill)
 import _slicedToArray from "_slicedToArray";
 import combined from "combined";
 import { View } from "Background";

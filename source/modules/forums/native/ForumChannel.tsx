@@ -1,10 +1,10 @@
-// Module ID: 12177
-// Function ID: 12178
+// Module ID: 12178
+// Function ID: 12179
 // Name: forumKeyExtractor
-// Dependencies: [19, 17, 3990, 5264, 1391, 4681, 5172, 11447, 676, 1301, 505, 21, 4342, 712, 5276, 500, 8440, 4338, 1236, 8452, 5961, 589, 12178, 9, 4310, 12180, 2007, 1367, 4755, 11595, 4887, 9528, 12181, 7775, 8457, 12182, 4535, 11473, 11446, 12183, 7790, 7271, 4889, 4062, 7680, 5930, 5768, 5788, 4831, 10364, 8455, 7281, 9949, 9967, 4311, 4312, 9965, 8461, 5409, 10362, 8719, 12186, 11717, 2]
+// Dependencies: [19, 17, 3990, 5264, 1391, 4681, 5172, 11448, 676, 1301, 505, 21, 4342, 712, 5276, 500, 8440, 4338, 1236, 8452, 5961, 589, 12179, 9, 4310, 12181, 2007, 1367, 4755, 11596, 4887, 9528, 12182, 7775, 8457, 12183, 4535, 11474, 11447, 12184, 7790, 7271, 4889, 4062, 7680, 5930, 5768, 5788, 4831, 10364, 8455, 7281, 9949, 9967, 4311, 4312, 9965, 8461, 5409, 10362, 8719, 12187, 11718, 2]
 // Exports: default
 
-// Module 12177 (forumKeyExtractor)
+// Module 12178 (forumKeyExtractor)
 import useLoadForumUnreadCounts from "useLoadForumUnreadCounts";
 import { View } from "Text";
 import initialize from "initialize";
@@ -119,7 +119,7 @@ function SortAndViewOptions(channel) {
     t = { variant: "secondary", text: null, onPress: null, size: "sm", icon: null };
     t[1] = string3Result;
     t[2] = callback;
-    ArrowsUpDownIcon = ArrowsUpDownIcon(11595).ArrowsUpDownIcon;
+    ArrowsUpDownIcon = ArrowsUpDownIcon(11596).ArrowsUpDownIcon;
     tmp5Result = tmp5(ArrowsUpDownIcon, { size: "xxs" });
     t[4] = tmp5Result;
     tmp5Result = tmp5(ArrowsUpDownIcon(4755).Button, t);
@@ -141,7 +141,7 @@ function SortAndViewOptions(channel) {
     obj[0] = tmp.optionsPill;
     obj = { size: "xs", style: null };
     obj[1] = tmp.sortOptionsIcon;
-    const items1 = [tmp5(ArrowsUpDownIcon(11595).ArrowsUpDownIcon, obj), , ];
+    const items1 = [tmp5(ArrowsUpDownIcon(11596).ArrowsUpDownIcon, obj), , ];
     const obj1 = { variant: "text-sm/medium", color: "interactive-text-default", style: null, children: null };
     obj1[2] = tmp.sortOptionsText;
     const intl2 = ArrowsUpDownIcon(1236).intl;

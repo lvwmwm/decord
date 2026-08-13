@@ -1,10 +1,10 @@
-// Module ID: 12643
-// Function ID: 12644
+// Module ID: 12644
+// Function ID: 12645
 // Name: getGiftStyleUrl
-// Dependencies: [17, 1218, 10372, 1922, 4391, 676, 1924, 12644, 12645, 12646, 12647, 12648, 12649, 12650, 12651, 12652, 12653, 12654, 12214, 4187, 8098, 1363, 4162, 1236, 11257, 11258, 712, 3943, 8090, 8100, 12655, 12656, 12657, 12658, 12659, 5888, 4007, 2]
+// Dependencies: [17, 1218, 10372, 1922, 4391, 676, 1924, 12645, 12646, 12647, 12648, 12649, 12650, 12651, 12652, 12653, 12654, 12655, 12215, 4187, 8098, 1363, 4162, 1236, 11258, 11259, 712, 3943, 8090, 8100, 12656, 12657, 12658, 12659, 12660, 5888, 4007, 2]
 // Exports: createGiftCodeEmbed
 
-// Module 12643 (getGiftStyleUrl)
+// Module 12644 (getGiftStyleUrl)
 import get_ActivityIndicator from "registerAsset";
 import fetchFingerprint from "fetchFingerprint";
 import updateGiftCode from "updateGiftCode";
@@ -21,33 +21,33 @@ let closure_12;
 let unpackModuleId;
 function getGiftStyleUrl(arg0) {
   if (constants.BOX === arg0) {
-    return importDefault(12644);
-  } else if (tmp.CUP === arg0) {
     return importDefault(12645);
-  } else if (tmp.SNOWGLOBE === arg0) {
+  } else if (tmp.CUP === arg0) {
     return importDefault(12646);
-  } else if (tmp.STANDARD_BOX === arg0) {
+  } else if (tmp.SNOWGLOBE === arg0) {
     return importDefault(12647);
-  } else if (tmp.COFFEE === arg0) {
+  } else if (tmp.STANDARD_BOX === arg0) {
     return importDefault(12648);
-  } else if (tmp.CAKE === arg0) {
+  } else if (tmp.COFFEE === arg0) {
     return importDefault(12649);
-  } else if (tmp.CHEST === arg0) {
+  } else if (tmp.CAKE === arg0) {
     return importDefault(12650);
-  } else if (tmp.SEASONAL_STANDARD_BOX === arg0) {
+  } else if (tmp.CHEST === arg0) {
     return importDefault(12651);
-  } else if (tmp.SEASONAL_CAKE === arg0) {
+  } else if (tmp.SEASONAL_STANDARD_BOX === arg0) {
     return importDefault(12652);
-  } else if (tmp.SEASONAL_CHEST === arg0) {
+  } else if (tmp.SEASONAL_CAKE === arg0) {
     return importDefault(12653);
-  } else if (tmp.SEASONAL_COFFEE === arg0) {
+  } else if (tmp.SEASONAL_CHEST === arg0) {
     return importDefault(12654);
+  } else if (tmp.SEASONAL_COFFEE === arg0) {
+    return importDefault(12655);
   } else if (tmp.NITROWEEN_STANDARD === arg0) {
     const obj = { uri: null };
-    obj[0] = importDefault(12214);
+    obj[0] = importDefault(12215);
     return obj;
   } else {
-    return importDefault(12647);
+    return importDefault(12648);
   }
 }
 ({ Image: c3, processColor: c4 } = get_ActivityIndicator);

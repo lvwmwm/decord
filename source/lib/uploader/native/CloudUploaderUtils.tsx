@@ -11,7 +11,7 @@ import refreshSourceMapCookie from "refreshSourceMapCookie";
 
 const require = arg1;
 function getUploadPayload(outer1_0) {
-  const obj = { filename: outer1_0.filename, file_size: outer1_0.currentSize, id: null, original_content_type: "Array" };
+  const obj = { filename: outer1_0.filename, file_size: outer1_0.currentSize, id: null, original_content_type: "a" };
   obj[2] = importDefault(12).uniqueId();
   return obj;
 }

@@ -1,10 +1,10 @@
-// Module ID: 10993
-// Function ID: 10994
+// Module ID: 10994
+// Function ID: 10995
 // Name: castNativeSyntheticEventData
 // Dependencies: [2]
 // Exports: castNativeSyntheticEventData, getNativeSyntheticEventData
 
-// Module 10993 (castNativeSyntheticEventData)
+// Module 10994 (castNativeSyntheticEventData)
 const result = require("set").fileFinishedImporting("modules/messages/native/snowflake/MessageDataSnowflakeUtils.tsx");
 
 export function castNativeSyntheticEventData(arg0) {

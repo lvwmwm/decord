@@ -1,10 +1,10 @@
-// Module ID: 12712
-// Function ID: 12713
+// Module ID: 12713
+// Function ID: 12714
 // Name: RemediationsElement
 // Dependencies: [19, 17, 21, 4342, 712, 5807, 1236, 2]
 // Exports: default
 
-// Module 12712 (RemediationsElement)
+// Module 12713 (RemediationsElement)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

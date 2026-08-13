@@ -1,10 +1,10 @@
-// Module ID: 11466
-// Function ID: 11467
+// Module ID: 11467
+// Function ID: 11468
 // Name: useTypingText
 // Dependencies: [32, 1922, 589, 4534, 1236, 2]
 // Exports: default
 
-// Module 11466 (useTypingText)
+// Module 11467 (useTypingText)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

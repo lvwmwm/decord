@@ -1,10 +1,10 @@
-// Module ID: 14020
-// Function ID: 14021
+// Module ID: 14011
+// Function ID: 14012
 // Name: EditNameplateInner
-// Dependencies: [32, 19, 17, 7065, 1947, 1990, 676, 21, 4342, 712, 7449, 5768, 5788, 698, 8313, 5437, 4338, 1236, 8325, 8328, 589, 14021, 8315, 14022, 8346, 8347, 8326, 9439, 4766, 10204, 2]
+// Dependencies: [32, 19, 17, 7065, 1947, 1990, 676, 21, 4342, 712, 7449, 5768, 5788, 698, 8313, 5437, 4338, 1236, 8325, 8328, 589, 14012, 8315, 14013, 8346, 8347, 8326, 9439, 4766, 10204, 2]
 // Exports: default
 
-// Module 14020 (EditNameplateInner)
+// Module 14011 (EditNameplateInner)
 import _slicedToArray from "_slicedToArray";
 import useFetchPurchases from "useFetchPurchases";
 import { View } from "getSystemLocale";

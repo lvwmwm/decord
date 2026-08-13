@@ -1,10 +1,10 @@
-// Module ID: 14410
-// Function ID: 14411
+// Module ID: 14401
+// Function ID: 14402
 // Name: QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED
-// Dependencies: [17, 14411, 687, 4754, 2]
+// Dependencies: [17, 14402, 687, 4754, 2]
 // Exports: dimensionsLayoutTransition, getQuestDockClosedWidth, getQuestDockCollapsedWidth, getQuestDockExpandedHeightLimits, getQuestDockExpandedWidth, isSoftDismissed, roundToNearestPixel
 
-// Module 14410 (QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED)
+// Module 14401 (QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED)
 import { PixelRatio } from "get ActivityIndicator";
 import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
 

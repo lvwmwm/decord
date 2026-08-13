@@ -1,10 +1,10 @@
-// Module ID: 11437
-// Function ID: 11438
+// Module ID: 11438
+// Function ID: 11439
 // Name: action
 // Dependencies: [32, 5216, 4562, 676, 4034, 8400, 4060, 7268, 4000, 6965, 4539, 2]
 // Exports: handleLegacyCommands
 
-// Module 11437 (action)
+// Module 11438 (action)
 import _slicedToArray from "_slicedToArray";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import reinjectEphemerals from "reinjectEphemerals";

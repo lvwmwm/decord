@@ -1,9 +1,9 @@
-// Module ID: 16468
-// Function ID: 16469
+// Module ID: 16459
+// Function ID: 16460
 // Name: handleAppStateUpdate
 // Dependencies: [5, 1922, 7707, 676, 3, 7708, 5301, 500, 7706, 4007, 698, 2]
 
-// Module 16468 (handleAppStateUpdate)
+// Module 16459 (handleAppStateUpdate)
 import FreemiumAppIconIds from "FreemiumAppIconIds";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { getIconById } from "items";

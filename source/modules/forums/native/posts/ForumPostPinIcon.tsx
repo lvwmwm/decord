@@ -1,10 +1,10 @@
-// Module ID: 11449
-// Function ID: 11450
+// Module ID: 11450
+// Function ID: 11451
 // Name: ForumPostPinIcon
-// Dependencies: [19, 17, 21, 4342, 712, 1297, 11450, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1297, 11451, 2]
 // Exports: default
 
-// Module 11449 (ForumPostPinIcon)
+// Module 11450 (ForumPostPinIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -24,7 +24,7 @@ export default function ForumPostPinIcon(containerStyle) {
   let obj = { style: items, children: null };
   items = [tmp.pin, containerStyle.containerStyle];
   obj = { source: null, style: null };
-  obj[0] = importDefault(11450);
+  obj[0] = importDefault(11451);
   obj[1] = tmp.pinIcon;
   obj[1] = jsx(require(1297) /* Button */.Icon, { source: null, style: null });
   return <View source={null} style={null} />;

@@ -1,10 +1,10 @@
-// Module ID: 11611
-// Function ID: 11612
+// Module ID: 11612
+// Function ID: 11613
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 4342, 1628, 11545, 1297, 11612, 1236, 6035, 2]
+// Dependencies: [19, 17, 21, 4342, 1628, 11546, 1297, 11613, 1236, 6035, 2]
 // Exports: AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 11611 (AppLauncherList)
+// Module 11612 (AppLauncherList)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,7 +14,7 @@ const require = arg1;
 let closure_5 = createCacheKey.createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start" }, emptyStateImage: { flex: 0 } });
 const forwardRefResult = require("noop").forwardRef((contentContainerStyle) => {
   const bottom = importDefault(1628)().bottom;
-  let obj = require(11545) /* useAppLauncherFlashListProps */;
+  let obj = require(11546) /* useAppLauncherFlashListProps */;
   const appLauncherFlashListProps = obj.useAppLauncherFlashListProps();
   obj = { contentContainerStyle: items, scrollIndicatorInsets: { bottom }, ref: null };
   items = [{ paddingBottom: bottom }, contentContainerStyle.contentContainerStyle];
@@ -25,7 +25,7 @@ const forwardRefResult = require("noop").forwardRef((contentContainerStyle) => {
   obj[2] = scrollerRef;
   const merged = Object.assign(contentContainerStyle);
   ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
-  return jsx(importDefault(11545), { contentContainerStyle: items, scrollIndicatorInsets: { bottom }, ref: null });
+  return jsx(importDefault(11546), { contentContainerStyle: items, scrollIndicatorInsets: { bottom }, ref: null });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherList.tsx");
 
@@ -33,8 +33,8 @@ export const AppLauncherList = forwardRefResult;
 export const AppLauncherListEmptyState = function AppLauncherListEmptyState() {
   const tmp = callback();
   const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: null, darkSource: null, title: null, body: null };
-  obj[2] = importDefault(11612);
-  obj[3] = importDefault(11612);
+  obj[2] = importDefault(11613);
+  obj[3] = importDefault(11613);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.vYocDz);
   const intl2 = require(1236) /* getSystemLocale */.intl;

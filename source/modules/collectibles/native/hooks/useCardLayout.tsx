@@ -1,10 +1,10 @@
-// Module ID: 14922
-// Function ID: 14923
+// Module ID: 14913
+// Function ID: 14914
 // Name: useCardLayout
 // Dependencies: [9394, 1493, 2]
 // Exports: useCardLayout
 
-// Module 14922 (useCardLayout)
+// Module 14913 (useCardLayout)
 let result = require("set").fileFinishedImporting("modules/collectibles/native/hooks/useCardLayout.tsx");
 
 export const useCardLayout = function useCardLayout() {

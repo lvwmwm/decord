@@ -1,10 +1,10 @@
-// Module ID: 11639
-// Function ID: 11640
+// Module ID: 11640
+// Function ID: 11641
 // Name: UnsavedChangesAlertModal
-// Dependencies: [19, 17, 7333, 21, 4342, 712, 500, 4688, 1236, 7835, 1297, 11640, 4338, 11641, 4310, 11642, 2007, 5414, 4205, 9399, 503, 5409, 11638, 4062, 10056, 1351, 11643, 11648, 5316, 7265, 4685, 11649, 6051, 5367, 11650, 8012, 11652, 8497, 2]
+// Dependencies: [19, 17, 7333, 21, 4342, 712, 500, 4688, 1236, 7835, 1297, 11641, 4338, 11642, 4310, 11643, 2007, 5414, 4205, 9399, 503, 5409, 11639, 4062, 10056, 1351, 11644, 11649, 5316, 7265, 4685, 11650, 6051, 5367, 11651, 8012, 11653, 8497, 2]
 // Exports: default
 
-// Module 11639 (UnsavedChangesAlertModal)
+// Module 11640 (UnsavedChangesAlertModal)
 import importAllResult from "trackImpression";
 import get_ActivityIndicator from "TableRowInner";
 import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER";
@@ -45,7 +45,7 @@ function UnsavedChangesAlertModal(onConfirm) {
 function AddAnswerButton(onPress) {
   const tmp = callback3();
   let obj = { source: null, size: null, color: null };
-  obj[0] = importDefault(11640);
+  obj[0] = importDefault(11641);
   obj[1] = require(1297) /* Button */.Icon.Sizes.LARGE;
   obj[2] = tmp.addAnswerIcon.color;
   obj = { onPress: onPress.onPress, style: tmp.addAnswerButtonDefault, accessibilityRole: "button", accessibilityLabel: null, children: null };
@@ -62,7 +62,7 @@ function AddAnswerButton(onPress) {
 function PollDurationSelectionRow(selectedDuration) {
   selectedDuration = selectedDuration.selectedDuration;
   const onChange = selectedDuration.onChange;
-  const tmp = onChange(11641)()[selectedDuration];
+  const tmp = onChange(11642)()[selectedDuration];
   let obj = { label: null, accessibilityLabel: null, accessibilityHint: null, onPress: null, trailing: null, arrow: true };
   const intl = selectedDuration(1236).intl;
   obj[0] = intl.string(selectedDuration(1236).t.bGHzxb);
@@ -178,7 +178,7 @@ export default function PollCreation(channel) {
   let obj4;
   function handleCancelClose() {
     callback();
-    channel(11638).closeCreatePollModal();
+    channel(11639).closeCreatePollModal();
     const AccessibilityAnnouncer = channel(1351).AccessibilityAnnouncer;
     const intl = channel(1236).intl;
     AccessibilityAnnouncer.announce(intl.string(channel(1236).t["+G3oRq"]));
@@ -200,7 +200,7 @@ export default function PollCreation(channel) {
   dependencyMap = answers.useRef(false);
   callback = answers.useCallback(() => {
     dependencyMap.current = true;
-    let obj = channel(11638);
+    let obj = channel(11639);
     obj.closeCreatePollModal();
     obj = { key: "POLL_CREATED_SUCCESS", IconComponent: channel(10056).PollsIcon, content: null };
     const intl = channel(1236).intl;
@@ -212,7 +212,7 @@ export default function PollCreation(channel) {
     const intl = channel(1236).intl;
     AccessibilityAnnouncer.announce(intl.formatToPlainString(channel(1236).t.BByGU4, { number: indexToRemove.indexToRemove + 1 }));
   }, []);
-  const tmp10 = onCancel(11643)(channel, callback, callback1);
+  const tmp10 = onCancel(11644)(channel, callback, callback1);
   answers = tmp10.answers;
   ({ question: c4, allowMultiSelect } = tmp10);
   ({ setAllowMultiSelect: c6, canAddMoreAnswers, canRemoveMoreAnswers: c7, handleAnswerTextChange: c8, handleEmojiSelect: c9, handleAddAnswer } = tmp10);
@@ -220,7 +220,7 @@ export default function PollCreation(channel) {
   ({ createPollError, shouldFocusOnInvalidField } = tmp10);
   setShouldFocusOnInvalidField = tmp10.setShouldFocusOnInvalidField;
   ({ handleQuestionChange, handleSubmitPoll, duration, setDuration, submitting } = tmp10);
-  let obj1 = channel(11648);
+  let obj1 = channel(11649);
   closure_16 = obj1.useTrackPollCreationEvents(answers, allowMultiSelect).trackPollCreationCancelled;
   let obj2 = channel(5316);
   obj2.useNavigatorBackPressHandler(() => {
@@ -245,7 +245,7 @@ export default function PollCreation(channel) {
       handleAddAnswer();
     }
   };
-  obj4 = onCancel(11649)(obj);
+  obj4 = onCancel(11650)(obj);
   const items1 = [fieldErrors, obj4, setShouldFocusOnInvalidField, shouldFocusOnInvalidField];
   const effect1 = answers.useEffect(() => {
     const keys = Object.keys(fieldErrors);
@@ -272,7 +272,7 @@ export default function PollCreation(channel) {
     let obj = channel(7265);
     if (obj.isPollCreationEmpty(c4, answers)) {
       callback();
-      let tmpResult = tmp(11638);
+      let tmpResult = tmp(11639);
       tmpResult.closeCreatePollModal();
       const AccessibilityAnnouncer = tmp(1351).AccessibilityAnnouncer;
       const intl = tmp(1236).intl;
@@ -311,8 +311,8 @@ export default function PollCreation(channel) {
     }
     const obj6 = { children: null };
     obj6[0] = anyErrorMessage;
-    tmp13Result = tmp13(onCancel(11650), obj6);
-    let tmpResult = onCancel(11650);
+    tmp13Result = tmp13(onCancel(11651), obj6);
+    let tmpResult = onCancel(11651);
   }
   const items6 = [tmp13Result, , ];
   const obj7 = { ref: obj4.refWithKey("question"), onChange: handleQuestionChange, onSubmitEditing: obj4.focusNext, error: null };
@@ -347,7 +347,7 @@ export default function PollCreation(channel) {
         tmp4 = tmp3["answer-" + localCreationAnswerId.localCreationAnswerId];
       }
       obj[10] = tmp4;
-      return c9(onCancel(11652), obj, localCreationAnswerId.localCreationAnswerId);
+      return c9(onCancel(11653), obj, localCreationAnswerId.localCreationAnswerId);
     }),
 
   ];

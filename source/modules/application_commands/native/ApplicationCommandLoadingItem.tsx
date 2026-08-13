@@ -1,10 +1,10 @@
-// Module ID: 11829
-// Function ID: 11830
+// Module ID: 11830
+// Function ID: 11831
 // Name: ApplicationCommandLoadingItem
 // Dependencies: [19, 17, 9961, 21, 4342, 712, 4761, 2]
 // Exports: default
 
-// Module 11829 (ApplicationCommandLoadingItem)
+// Module 11830 (ApplicationCommandLoadingItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT";

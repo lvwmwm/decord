@@ -1,10 +1,10 @@
-// Module ID: 15991
-// Function ID: 15992
+// Module ID: 15982
+// Function ID: 15983
 // Name: getGuildPermissionSpec
 // Dependencies: [505, 1236, 1370, 2]
 // Exports: generateChannelAppsSection, generateChannelEventsSection, generateChannelGeneralSection, generateChannelMembershipSection, generateChannelStageSection, generateChannelStageVoiceSection, generateChannelTextSection, generateChannelVoiceChatSection, generateChannelVoiceSection, generateGuildPermissionSpec, renderDescription
 
-// Module 15991 (getGuildPermissionSpec)
+// Module 15982 (getGuildPermissionSpec)
 import { Permissions } from "sum";
 
 function getGuildPermissionSpec(permissionOptions) {

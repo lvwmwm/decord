@@ -1,10 +1,10 @@
-// Module ID: 15537
-// Function ID: 15538
+// Module ID: 15528
+// Function ID: 15529
 // Name: getMediaIcon
-// Dependencies: [19, 21, 4342, 712, 4065, 5821, 1297, 9093, 9092, 4866, 8058, 12250, 15538, 7759, 15539, 4870, 15540, 7735, 7736, 15535, 2]
+// Dependencies: [19, 21, 4342, 712, 4065, 5821, 1297, 9093, 9092, 4866, 8058, 12251, 15529, 7759, 15530, 4870, 15531, 7735, 7736, 15526, 2]
 // Exports: useActivityIndicatorState
 
-// Module 15537 (getMediaIcon)
+// Module 15528 (getMediaIcon)
 import importAllResult from "canConnectToChannel";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -23,18 +23,18 @@ function getMediaIcon(closure_3) {
     tmp6 = obj;
   } else if (tmp3) {
     const obj1 = { icon: null, source: null };
-    obj1[0] = require(12250) /* ScreenIcon */.ScreenIcon;
-    obj1[1] = importDefault(15538);
+    obj1[0] = require(12251) /* ScreenIcon */.ScreenIcon;
+    obj1[1] = importDefault(15529);
     tmp6 = obj1;
   } else if (tmp2) {
     const obj2 = { icon: null, source: null };
     obj2[0] = require(7759) /* VideoIcon */.VideoIcon;
-    obj2[1] = importDefault(15539);
+    obj2[1] = importDefault(15530);
     tmp6 = obj2;
   } else if (tmp) {
     const obj3 = { icon: null, source: null };
     obj3[0] = require(4870) /* VoiceNormalIcon */.VoiceNormalIcon;
-    obj3[1] = importDefault(15540);
+    obj3[1] = importDefault(15531);
     tmp6 = obj3;
   } else {
     tmp6 = null;
@@ -106,7 +106,7 @@ const memoResult1 = importAllResult.memo(function GuildsBarGuildActivityIndicato
   let c0;
   let importDefault;
   ({ guildId, style } = arg0);
-  const tmp = importDefault(15535)(guildId);
+  const tmp = importDefault(15526)(guildId);
   c0 = tmp;
   const tmp2 = getMediaIcon(tmp);
   importDefault = tmp2;
@@ -156,7 +156,7 @@ export default memoResult1;
 export const GuildsBarActivityIndicatorBase = memoResult;
 export { getMediaIcon };
 export const useActivityIndicatorState = function useActivityIndicatorState(guildId) {
-  const tmp = importDefault(15535)(guildId);
+  const tmp = importDefault(15526)(guildId);
   const require = tmp;
   const tmp2 = getMediaIcon(tmp);
   importDefault = tmp2;

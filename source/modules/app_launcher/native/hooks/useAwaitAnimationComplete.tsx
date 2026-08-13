@@ -1,10 +1,10 @@
-// Module ID: 11606
-// Function ID: 11607
+// Module ID: 11607
+// Function ID: 11608
 // Name: AwaitAnimationContext
 // Dependencies: [19, 21, 2]
 // Exports: AwaitAnimationContext, useAwaitAnimationCompletion
 
-// Module 11606 (AwaitAnimationContext)
+// Module 11607 (AwaitAnimationContext)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 

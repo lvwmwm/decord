@@ -1,10 +1,10 @@
-// Module ID: 12049
-// Function ID: 12050
+// Module ID: 12050
+// Function ID: 12051
 // Name: useProvisionalAccountApplication
 // Dependencies: [7165, 589, 5774, 2]
 // Exports: default
 
-// Module 12049 (useProvisionalAccountApplication)
+// Module 12050 (useProvisionalAccountApplication)
 import recountRelationshipTypes from "recountRelationshipTypes";
 
 const require = arg1;

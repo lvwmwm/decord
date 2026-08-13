@@ -1,10 +1,10 @@
-// Module ID: 12737
-// Function ID: 12738
+// Module ID: 12738
+// Function ID: 12739
 // Name: generateDynamicLink
-// Dependencies: [109, 32, 669, 514, 12738, 2]
+// Dependencies: [109, 32, 669, 514, 12739, 2]
 // Exports: default, generateAttemptId, parseDynamicLink
 
-// Module 12737 (generateDynamicLink)
+// Module 12738 (generateDynamicLink)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 
@@ -70,7 +70,7 @@ export default function generateDynamicLink(arg0, arg1) {
     const _encodeURIComponent2 = encodeURIComponent;
     encodeURIComponentResult4 = encodeURIComponent(iosFallbackLink);
   }
-  const combined = "" + c6 + "/Hs5r/?deep_link_value=" + encodeURIComponentResult + "&pid=" + utmSource + "&af_force_deeplink=" + str3 + "&af_og_description=" + encodeURIComponent(importDefault(12738)()) + "&af_dp=" + encodeURIComponentResult1;
+  const combined = "" + c6 + "/Hs5r/?deep_link_value=" + encodeURIComponentResult + "&pid=" + utmSource + "&af_force_deeplink=" + str3 + "&af_og_description=" + encodeURIComponent(importDefault(12739)()) + "&af_dp=" + encodeURIComponentResult1;
   let sum = combined;
   if (null != encodeURIComponentResult3) {
     const _HermesInternal = HermesInternal;

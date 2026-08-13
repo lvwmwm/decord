@@ -1,10 +1,10 @@
-// Module ID: 12117
-// Function ID: 12118
+// Module ID: 12118
+// Function ID: 12119
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 589, 5308, 12118, 4338, 1236, 4755, 698, 4187, 8972, 2]
+// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 589, 5308, 12119, 4338, 1236, 4755, 698, 4187, 8972, 2]
 // Exports: default
 
-// Module 12117 (ContactSyncInviteFriends)
+// Module 12118 (ContactSyncInviteFriends)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -34,7 +34,7 @@ export default function ContactSyncInviteFriends() {
   obj = { children: null };
   obj = { style: tmp.container, children: null };
   const obj1 = { style: tmp.art, source: null };
-  obj1[1] = importDefault(12118);
+  obj1[1] = importDefault(12119);
   const items1 = [callback(importDefault(5308), obj1), , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = _require(1236).intl;

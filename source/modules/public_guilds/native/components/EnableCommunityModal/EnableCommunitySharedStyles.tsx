@@ -1,9 +1,9 @@
-// Module ID: 16833
-// Function ID: 16834
+// Module ID: 16824
+// Function ID: 16825
 // Name: styles
 // Dependencies: [17, 4342, 2]
 
-// Module 16833 (styles)
+// Module 16824 (styles)
 import { Platform } from "get ActivityIndicator";
 import createCacheKey from "createCacheKey";
 

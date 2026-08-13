@@ -1,10 +1,10 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12245
+// Function ID: 12246
 // Name: useGameProfileShopCollection
 // Dependencies: [19, 9329, 589, 9390, 2]
 // Exports: useGameProfileShopCollection
 
-// Module 12244 (useGameProfileShopCollection)
+// Module 12245 (useGameProfileShopCollection)
 import { useEffect } from "noop";
 import getSimilarGames from "getSimilarGames";
 

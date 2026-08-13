@@ -1,10 +1,10 @@
-// Module ID: 14139
-// Function ID: 14140
+// Module ID: 14130
+// Function ID: 14131
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7824, 21, 5958, 14069, 4058, 1993, 7842, 7844, 712, 1297, 4755, 1236, 4338, 2]
+// Dependencies: [19, 17, 7824, 21, 5958, 14060, 4058, 1993, 7842, 7844, 712, 1297, 4755, 1236, 4338, 2]
 // Exports: default
 
-// Module 14139 (AgeConfirmationNotice)
+// Module 14130 (AgeConfirmationNotice)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import SafetyToastType from "SafetyToastType";
@@ -20,7 +20,7 @@ export default function AgeConfirmationNotice() {
   let obj = sensitiveContentFilterHelpArticle(5958);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = React.useEffect(() => {
-    const result = sensitiveContentFilterHelpArticle(14069).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.VIEWED);
+    const result = sensitiveContentFilterHelpArticle(14060).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.VIEWED);
   }, []);
   const items = [sensitiveContentFilterHelpArticle];
   const importDefault = React.useCallback(() => {
@@ -35,7 +35,7 @@ export default function AgeConfirmationNotice() {
     let obj = callback(7842);
     obj = { entryPoint: sensitiveContentFilterHelpArticle(7844).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
     const result = obj.showAgeVerificationGetStartedModal(obj);
-    const result1 = sensitiveContentFilterHelpArticle(14069).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+    const result1 = sensitiveContentFilterHelpArticle(14060).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
   obj[0] = importDefault(712).space.PX_8;
   obj[0] = obj;

@@ -1,10 +1,10 @@
-// Module ID: 15093
-// Function ID: 15094
+// Module ID: 15084
+// Function ID: 15085
 // Name: GiftPurchaseSKUView
-// Dependencies: [5, 32, 19, 17, 1922, 4391, 676, 1924, 21, 3, 1628, 9660, 589, 10160, 7048, 1945, 7423, 12206, 4310, 4684, 7061, 4753, 4338, 5416, 4755, 9633, 514, 7419, 5437, 9620, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 4391, 676, 1924, 21, 3, 1628, 9660, 589, 10160, 7048, 1945, 7423, 12207, 4310, 4684, 7061, 4753, 4338, 5416, 4755, 9633, 514, 7419, 5437, 9620, 2]
 // Exports: default
 
-// Module 15093 (GiftPurchaseSKUView)
+// Module 15084 (GiftPurchaseSKUView)
 import addSku from "addSku";
 import _slicedToArray from "_slicedToArray";
 import module_4684 from "module_4684";
@@ -319,7 +319,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
     },
     giftParams: { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } }
   };
-  closure_8 = tmp(12206)(obj);
+  closure_8 = tmp(12207)(obj);
   const items5 = [product];
   [tmp16, tmp17] = callback(obj.useMemo(() => {
     if (null == c5) {

@@ -1,9 +1,9 @@
-// Module ID: 16984
-// Function ID: 16985
+// Module ID: 16975
+// Function ID: 16976
 // Name: handleMessageSendFailure
-// Dependencies: [1979, 4165, 1922, 6923, 676, 13041, 9818, 9820, 10746, 1236, 5301, 2]
+// Dependencies: [1979, 4165, 1922, 6923, 676, 13042, 9818, 9820, 10748, 1236, 5301, 2]
 
-// Module 16984 (handleMessageSendFailure)
+// Module 16975 (handleMessageSendFailure)
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_4 from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -21,7 +21,7 @@ function handleMessageSendFailure(shouldNotify) {
   ({ channelId, messageId } = shouldNotify);
   if (shouldNotify.shouldNotify) {
     if ("active" !== state.getState()) {
-      let obj = importDefault(10746);
+      let obj = importDefault(10748);
       obj = { category: "local", alertTitle: null, alertBody: null, userInfo: null };
       const intl = require(1236) /* getSystemLocale */.intl;
       obj[1] = intl.string(require(1236) /* getSystemLocale */.t.LdlH2M);

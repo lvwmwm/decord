@@ -1,10 +1,10 @@
-// Module ID: 11208
-// Function ID: 11209
+// Module ID: 11209
+// Function ID: 11210
 // Name: getRemoteJoinableActivityPlatform
 // Dependencies: [5291, 4360, 676, 501, 1403, 10401, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 11208 (getRemoteJoinableActivityPlatform)
+// Module 11209 (getRemoteJoinableActivityPlatform)
 import isConnected from "isConnected";
 import handleUpdate from "handleUpdate";
 import ME from "ME";

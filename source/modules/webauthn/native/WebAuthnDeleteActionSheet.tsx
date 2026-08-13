@@ -1,10 +1,10 @@
-// Module ID: 14054
-// Function ID: 14055
+// Module ID: 14045
+// Function ID: 14046
 // Name: WebAuthnDeleteActionSheet
-// Dependencies: [19, 17, 21, 4342, 712, 4310, 5437, 5436, 1236, 5805, 14055, 4338, 4755, 5871, 4062, 10069, 4303, 9112, 8007, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4310, 5437, 5436, 1236, 5805, 14046, 4338, 4755, 5871, 4062, 10069, 4303, 9112, 8007, 2]
 // Exports: default
 
-// Module 14054 (WebAuthnDeleteActionSheet)
+// Module 14045 (WebAuthnDeleteActionSheet)
 import "set";
 import get_ActivityIndicator from "registerAsset";
 import jsxProd from "jsxProd";
@@ -44,7 +44,7 @@ export default function WebAuthnDeleteActionSheet(credential) {
   obj[1] = callback(credential(5805).ActionSheetCloseButton, { onPress: handleClose });
   const items = [callback(credential(5436).BottomSheetTitleHeader, obj), , , ];
   const obj1 = { style: tmp.content, children: null };
-  const items1 = [callback(closure_3, { source: importDefault(14055) }), ];
+  const items1 = [callback(closure_3, { source: importDefault(14046) }), ];
   const obj3 = { variant: "heading-md/normal", style: tmp.subtitle, children: null };
   const intl2 = credential(1236).intl;
   obj3[2] = intl2.string(credential(1236).t.IfTbc1);

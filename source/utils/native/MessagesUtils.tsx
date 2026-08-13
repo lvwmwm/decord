@@ -1,8 +1,8 @@
-// Module ID: 11413
-// Function ID: 11414
+// Module ID: 11414
+// Function ID: 11415
 // Dependencies: [676, 5984, 4331, 8250, 4530, 2]
 
-// Module 11413
+// Module 11414
 import ME from "ME";
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
 

@@ -1,10 +1,10 @@
-// Module ID: 12570
-// Function ID: 12571
+// Module ID: 12571
+// Function ID: 12572
 // Name: ShopThisLookCard
-// Dependencies: [19, 17, 8865, 5438, 5816, 21, 4342, 712, 9405, 4062, 1236, 12233, 589, 12571, 7060, 12573, 10151, 9460, 8861, 12547, 5768, 5788, 4310, 7048, 9518, 4338, 2]
+// Dependencies: [19, 17, 8865, 5438, 5816, 21, 4342, 712, 9405, 4062, 1236, 12234, 589, 12572, 7060, 12574, 10151, 9460, 8861, 12548, 5768, 5788, 4310, 7048, 9518, 4338, 2]
 // Exports: default
 
-// Module 12570 (ShopThisLookCard)
+// Module 12571 (ShopThisLookCard)
 import useCardGridLayout from "useCardGridLayout";
 import get_ActivityIndicator from "WishlistButtonBase";
 import getFetchState from "getFetchState";
@@ -30,7 +30,7 @@ function ShopThisLookCard(skuId) {
   let getFetchState;
   let callback;
   let wishlistButton = createCacheKey();
-  let obj = skuId(12233);
+  let obj = skuId(12234);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, shouldFetchProduct: false });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
@@ -184,8 +184,8 @@ export default function ShopThisLookActionSheet(arg0) {
   let obj = _require(8861);
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12547)(obj));
-  const tmp2 = analyticsLocations(12547)(obj);
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12548)(obj));
+  const tmp2 = analyticsLocations(12548)(obj);
   analyticsLocations = analyticsLocations(5768)(analyticsLocations(5788).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = React.useCallback((initialProductSkuId) => {

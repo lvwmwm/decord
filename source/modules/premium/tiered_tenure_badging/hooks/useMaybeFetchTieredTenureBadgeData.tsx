@@ -1,10 +1,10 @@
-// Module ID: 12795
-// Function ID: 12796
+// Module ID: 12796
+// Function ID: 12797
 // Name: useMaybeFetchTieredTenureBadgeData
 // Dependencies: [1922, 1924, 589, 9532, 4771, 8356, 2]
 // Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 12795 (useMaybeFetchTieredTenureBadgeData)
+// Module 12796 (useMaybeFetchTieredTenureBadgeData)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
 

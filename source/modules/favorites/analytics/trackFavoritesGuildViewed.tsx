@@ -1,10 +1,10 @@
-// Module ID: 15899
-// Function ID: 15900
+// Module ID: 15890
+// Function ID: 15891
 // Name: trackFavoritesGuildViewed
 // Dependencies: [1922, 1394, 676, 1924, 9759, 1945, 698, 9765, 2]
 // Exports: default
 
-// Module 15899 (trackFavoritesGuildViewed)
+// Module 15890 (trackFavoritesGuildViewed)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import { AnalyticEvents } from "ME";

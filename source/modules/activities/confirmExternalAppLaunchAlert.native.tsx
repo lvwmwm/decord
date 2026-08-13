@@ -1,10 +1,10 @@
-// Module ID: 10607
-// Function ID: 10608
+// Module ID: 10609
+// Function ID: 10610
 // Name: ConfirmActivityGateContent
-// Dependencies: [19, 17, 4370, 21, 4342, 10608, 4338, 1236, 4755, 4058, 4683, 2]
+// Dependencies: [19, 17, 4370, 21, 4342, 10610, 4338, 1236, 4755, 4058, 4683, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 10607 (ConfirmActivityGateContent)
+// Module 10609 (ConfirmActivityGateContent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PRIVATE_APPS_HELP_ARTICLE } from "items3";
@@ -19,7 +19,7 @@ const require = arg1;
 function ConfirmActivityGateContent(activityName) {
   const tmp = callback3();
   let obj = { style: tmp.alertContainer, children: null };
-  obj = { source: importDefault(10608), style: tmp.announcementBirb };
+  obj = { source: importDefault(10610), style: tmp.announcementBirb };
   const items = [callback(closure_3, obj), , , ];
   obj = { style: tmp.alertEyebrowText, variant: "eyebrow", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

@@ -1,7 +1,7 @@
 // Module ID: 8988
 // Function ID: 8989
 // Name: openInviteModal
-// Dependencies: [32, 5, 4383, 7033, 5890, 1218, 1990, 1910, 4327, 4562, 1979, 4165, 5196, 676, 678, 5891, 709, 4328, 7803, 8989, 2007, 5272, 5906, 8998, 4326, 4331, 7196, 4052, 698, 10572, 11400, 12284, 10586, 4355, 10946, 12288, 10135, 10421, 1486, 11215, 5207, 12289, 7048, 4539, 4536, 8278, 12290, 2]
+// Dependencies: [32, 5, 4383, 7033, 5890, 1218, 1990, 1910, 4327, 4562, 1979, 4165, 5196, 676, 678, 5891, 709, 4328, 7803, 8989, 2007, 5272, 5906, 8998, 4326, 4331, 7196, 4052, 698, 10574, 11401, 12285, 10588, 4355, 10948, 12289, 10135, 10421, 1486, 11216, 5207, 12290, 7048, 4539, 4536, 8278, 12291, 2]
 // Exports: default
 
 // Module 8988 (openInviteModal)
@@ -76,7 +76,7 @@ function _openInviteModal() {
               return obj;
             } else {
               let obj1 = callback(table[16]);
-              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessibilityRole", invite_instance_id: "PX_16" };
+              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessibilityRole", invite_instance_id: false };
               obj1[1] = closure_0;
               obj1[4] = callback;
               c3 = 1;
@@ -290,7 +290,7 @@ function _handleInviteCodedLink() {
 }
 ({ AbortCodes, AnalyticEvents: closure_12, AppContext, InviteStates: map1, JoinGuildSources, Routes } = ME);
 ({ CollectibleShopTab: closure_14, CollectiblesMobileShopScreen: closure_15 } = items);
-let obj = { skipExtensionCheck: "Array", analyticsLocations: "Array" };
+let obj = { skipExtensionCheck: "Array", analyticsLocations: 0 };
 obj[1] = [];
 let result = require("addApplication").fileFinishedImporting("lib/getOnClick.tsx");
 
@@ -345,7 +345,7 @@ export default function getOnClick(url) {
         if (_undefined.type !== tmp3(tmp4[25]).CodedLinkType.APP_DIRECTORY_STOREFRONT) {
           let result = tmp3(tmp4[26]).parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "Array", skuId: "ct" };
+            result = { applicationId: "isArray", skuId: "accessibilityRole" };
           }
           const tmp3Result = tmp3(tmp4[26]);
         }
@@ -362,7 +362,7 @@ export default function getOnClick(url) {
         outer1_1(tmp4[27])(url);
         return true;
       }
-      result = { applicationId: code, skuId: "Array" };
+      result = { applicationId: code, skuId: "a" };
     };
   }
   if (null != findCodedLinkResult) {

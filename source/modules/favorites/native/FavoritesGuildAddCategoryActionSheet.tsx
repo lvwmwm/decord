@@ -1,10 +1,10 @@
-// Module ID: 15359
-// Function ID: 15360
+// Module ID: 15350
+// Function ID: 15351
 // Name: FavoritesGuildAddCategoryActionSheet
 // Dependencies: [32, 19, 1429, 21, 4342, 712, 1913, 9758, 4310, 5437, 5436, 1236, 7835, 4755, 2]
 // Exports: openFavoritesGuildAddCategoryActionSheet
 
-// Module 15359 (FavoritesGuildAddCategoryActionSheet)
+// Module 15350 (FavoritesGuildAddCategoryActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { MAX_FAVORITE_CATEGORY_NAME_LENGTH as closure_5 } from "date";

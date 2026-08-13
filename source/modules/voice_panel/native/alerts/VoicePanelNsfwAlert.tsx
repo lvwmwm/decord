@@ -1,10 +1,10 @@
-// Module ID: 16345
-// Function ID: 16346
+// Module ID: 16336
+// Function ID: 16337
 // Name: VoicePanelNsfwAlert
 // Dependencies: [19, 1434, 1910, 21, 4688, 4688, 1236, 5272, 5170, 2]
 // Exports: default
 
-// Module 16345 (VoicePanelNsfwAlert)
+// Module 16336 (VoicePanelNsfwAlert)
 import "noop";
 import { isGuildNSFW } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

@@ -1,10 +1,10 @@
-// Module ID: 12868
-// Function ID: 12869
+// Module ID: 12869
+// Function ID: 12870
 // Name: getGuildSubscriptionNoGuildsSource
-// Dependencies: [19, 17, 21, 7668, 12869, 12870, 12871, 1363, 2]
+// Dependencies: [19, 17, 21, 7668, 12870, 12871, 12872, 1363, 2]
 // Exports: GuildSubscriptionNoGuilds, getGuildSubscriptionNoGuildsSource, useGuildSubscriptionNoGuildsSource
 
-// Module 12868 (getGuildSubscriptionNoGuildsSource)
+// Module 12869 (getGuildSubscriptionNoGuildsSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getGuildSubscriptionNoGuildsSource = function getGuildSubscriptionN
   let obj = require(7668) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(12869);
-    },
-    darker() {
       return callback(12870);
     },
-    light() {
+    darker() {
       return callback(12871);
+    },
+    light() {
+      return callback(12872);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useGuildSubscriptionNoGuildsSource = function useGuildSubscriptionN
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12869);
-    },
-    darker() {
       return callback(12870);
     },
-    light() {
+    darker() {
       return callback(12871);
+    },
+    light() {
+      return callback(12872);
     }
   };
   return require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const GuildSubscriptionNoGuilds = function GuildSubscriptionNoGuilds(arg0
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12869);
-    },
-    darker() {
       return callback(12870);
     },
-    light() {
+    darker() {
       return callback(12871);
+    },
+    light() {
+      return callback(12872);
     }
   };
   obj = {};

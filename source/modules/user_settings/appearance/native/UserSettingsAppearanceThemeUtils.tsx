@@ -1,10 +1,10 @@
-// Module ID: 14492
-// Function ID: 14493
+// Module ID: 14483
+// Function ID: 14484
 // Name: handleSaveTheme
-// Dependencies: [1346, 1302, 1305, 676, 1348, 1924, 1349, 1306, 14493, 11405, 8747, 1347, 4190, 14494, 698, 2]
+// Dependencies: [1346, 1302, 1305, 676, 1348, 1924, 1349, 1306, 14484, 11406, 8747, 1347, 4190, 14485, 698, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme, getSyncedModeThemeIndex, getUserThemeIndex, handleSaveSyncedModeTheme, handleSaveTheme, trackClientThemeUpdated
 
-// Module 14492 (handleSaveTheme)
+// Module 14483 (handleSaveTheme)
 import reset from "reset";
 import handleThemeChange from "handleThemeChange";
 import { SystemThemeState } from "SystemThemeState";
@@ -26,9 +26,9 @@ export const handleSaveTheme = function handleSaveTheme(found, analyticsLocation
     obj[4] = analyticsLocations;
     obj.track(AnalyticEvents.CLIENT_THEME_UPDATED, obj);
     if ("system" === found.theme) {
-      let tmpResult = tmp(14493);
+      let tmpResult = tmp(14484);
       const result = tmpResult.resetBackgroundGradientPreset();
-      tmpResult = tmp(11405);
+      tmpResult = tmp(11406);
       tmpResult.resetCustomTheme();
       obj = { theme: null };
       obj[0] = found.theme;
@@ -36,29 +36,29 @@ export const handleSaveTheme = function handleSaveTheme(found, analyticsLocation
     } else if (found.type === tmp(1349).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
       const customThemeBaseTheme = tmp(1347).getCustomThemeBaseTheme(found.theme);
       const tmpResult2 = tmp(1347);
-      const result1 = tmp(14493).resetBackgroundGradientPreset();
-      const tmpResult3 = tmp(14493);
-      tmp(11405).updateCustomTheme(found.customThemeSettings, customThemeBaseTheme);
-      const tmpResult4 = tmp(11405);
+      const result1 = tmp(14484).resetBackgroundGradientPreset();
+      const tmpResult3 = tmp(14484);
+      tmp(11406).updateCustomTheme(found.customThemeSettings, customThemeBaseTheme);
+      const tmpResult4 = tmp(11406);
       const obj1 = { customUserThemeSettings: null, theme: null };
       obj1[0] = found.customThemeSettings;
       obj1[1] = customThemeBaseTheme;
       return tmp(8747).saveClientTheme(obj1);
     } else {
       if (found.type === tmp(1349).ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
-        const result2 = tmp(14493).updateBackgroundGradientPreset(found.id);
-        const tmpResult6 = tmp(14493);
-        tmp(11405).resetCustomTheme();
-        const tmpResult7 = tmp(11405);
+        const result2 = tmp(14484).updateBackgroundGradientPreset(found.id);
+        const tmpResult6 = tmp(14484);
+        tmp(11406).resetCustomTheme();
+        const tmpResult7 = tmp(11406);
         ({ id: obj10[0], theme: obj10[1] } = found);
         let saveClientThemeResult = tmp(8747).saveClientTheme({ backgroundGradientPresetId: null, theme: null });
         const obj2 = { backgroundGradientPresetId: null, theme: null };
         const tmpResult8 = tmp(8747);
       } else {
-        const result3 = tmp(14493).resetBackgroundGradientPreset();
-        const tmpResult9 = tmp(14493);
-        tmp(11405).resetCustomTheme();
-        const tmpResult10 = tmp(11405);
+        const result3 = tmp(14484).resetBackgroundGradientPreset();
+        const tmpResult9 = tmp(14484);
+        tmp(11406).resetCustomTheme();
+        const tmpResult10 = tmp(11406);
         const obj3 = { theme: null };
         obj3[0] = found.theme;
         saveClientThemeResult = tmp(8747).saveClientTheme(obj3);
@@ -155,7 +155,7 @@ export const getSyncedModeThemeIndex = function getSyncedModeThemeIndex(memo2, c
   return num3;
 };
 export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme() {
-  const result = require(14494) /* enableSameAsDeviceTheme */.enableSameAsDeviceTheme(customTheme.getCustomTheme());
+  const result = require(14485) /* enableSameAsDeviceTheme */.enableSameAsDeviceTheme(customTheme.getCustomTheme());
 };
 export const disableSameAsDeviceTheme = function disableSameAsDeviceTheme() {
   require(4190) /* setSystemTheme */.setUseSystemTheme(SystemThemeState.OFF);

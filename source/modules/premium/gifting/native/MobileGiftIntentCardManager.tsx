@@ -1,9 +1,9 @@
-// Module ID: 16635
-// Function ID: 16636
+// Module ID: 16626
+// Function ID: 16627
 // Name: isChannelEligible
-// Dependencies: [7166, 1391, 4562, 1979, 8223, 1924, 16636, 692, 4034, 7369, 9399, 503, 4227, 8226, 9131, 2]
+// Dependencies: [7166, 1391, 4562, 1979, 8223, 1924, 16627, 692, 4034, 7369, 9399, 503, 4227, 8226, 9131, 2]
 
-// Module 16635 (isChannelEligible)
+// Module 16626 (isChannelEligible)
 import recomputeAffinities from "recomputeAffinities";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";

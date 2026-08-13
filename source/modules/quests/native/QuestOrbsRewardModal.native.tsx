@@ -1,10 +1,10 @@
-// Module ID: 11226
-// Function ID: 11227
+// Module ID: 11227
+// Function ID: 11228
 // Name: OrbsBalance
-// Dependencies: [32, 5, 19, 17, 4334, 1922, 6923, 5202, 21, 4550, 11226, 2007, 4342, 712, 9458, 5317, 5366, 1236, 5308, 9436, 501, 11227, 8919, 11228, 11229, 11230, 11231, 589, 9472, 691, 10437, 11232, 11215, 5205, 5368, 4338, 4755, 2]
+// Dependencies: [32, 5, 19, 17, 4334, 1922, 6923, 5202, 21, 4550, 11227, 2007, 4342, 712, 9458, 5317, 5366, 1236, 5308, 9436, 501, 11228, 8919, 11229, 11230, 11231, 11232, 589, 9472, 691, 10436, 11233, 11216, 5205, 5368, 4338, 4755, 2]
 // Exports: default, openQuestOrbsRewardModal
 
-// Module 11226 (OrbsBalance)
+// Module 11227 (OrbsBalance)
 import openRewardClaimBottomSheet from "openRewardClaimBottomSheet";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import importAllResult from "useAPNGPlayerControls";
@@ -64,7 +64,7 @@ function StaticOrb() {
   obj = { source: null, style: null, fade: false };
   obj = { uri: null };
   const tmp = callback8();
-  obj[0] = importDefault(11229);
+  obj[0] = importDefault(11230);
   obj[0] = obj;
   obj[1] = tmp.animatedOrb;
   obj[1] = callback3(importDefault(5308), obj);
@@ -233,7 +233,7 @@ let closure_25 = importAllResult.memo((arg0) => {
   ({ onStaticBgLoad, onAnimatedBgLoad, isAppActive } = arg0);
   let obj = { source: null, style: null, resizeMode: "cover", onLoad: null };
   obj = { uri: null };
-  obj[0] = importDefault(11227);
+  obj[0] = importDefault(11228);
   obj[0] = obj;
   obj[1] = style;
   obj[3] = onStaticBgLoad;
@@ -245,7 +245,7 @@ let closure_25 = importAllResult.memo((arg0) => {
   if (tmp2Result) {
     obj = { source: null, style: null, resizeMode: "cover", onLoad: null, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
     const obj1 = { uri: null };
-    obj1[0] = importDefault(11228);
+    obj1[0] = importDefault(11229);
     obj[0] = obj1;
     obj[1] = style;
     obj[3] = onAnimatedBgLoad;
@@ -289,8 +289,8 @@ export default function QuestOrbsRewardModal(quest) {
     num2 = userStatus.orbQuantityClaimed;
   }
   if (num2 == null) {
-    num2 = tmp2(10437).getQuestOrbRewardQuantityForUser(quest.config, stateFromStores2);
-    const tmp2Result = tmp2(10437);
+    num2 = tmp2(10436).getQuestOrbRewardQuantityForUser(quest.config, stateFromStores2);
+    const tmp2Result = tmp2(10436);
   }
   const tmp11 = stateFromStores1 === num(691).AppStates.ACTIVE;
   const effect = obj2.useEffect(() => {

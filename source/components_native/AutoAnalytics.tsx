@@ -1,10 +1,10 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15888
+// Function ID: 15889
 // Name: componentDidMount
-// Dependencies: [19, 4358, 5035, 7033, 1396, 1391, 1990, 1910, 4393, 4436, 4416, 1979, 4165, 5037, 4540, 1922, 676, 1398, 21, 4539, 7279, 15898, 6974, 1913, 15899, 698, 1370, 15900, 589, 15901, 15902, 2]
+// Dependencies: [19, 4358, 5035, 7033, 1396, 1391, 1990, 1910, 4393, 4436, 4416, 1979, 4165, 5037, 4540, 1922, 676, 1398, 21, 4539, 7279, 15889, 6974, 1913, 15890, 698, 1370, 15891, 589, 15892, 15893, 2]
 // Exports: default
 
-// Module 15897 (componentDidMount)
+// Module 15888 (componentDidMount)
 import getParticipants from "getParticipants";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import scheduledEventSort from "scheduledEventSort";
@@ -75,7 +75,7 @@ prototype["componentDidMount"] = function componentDidMount() {
     const merged1 = Object.assign(obj3);
     obj4.postable_channels = postableChannelCount;
     obj4.viewing_all_channels = !updateUserGuildSettingsInternal.isOptInEnabled(selectedGuildId);
-    let obj5 = require(15898) /* collectGuildThemeAnalyticsMetadata */;
+    let obj5 = require(15889) /* collectGuildThemeAnalyticsMetadata */;
     const merged2 = Object.assign(obj5.collectGuildThemeAnalyticsMetadata(selectedGuildId));
     self._trackWithMetadata(constants.GUILD_VIEWED, obj4);
     obj5 = { guild_id: null };
@@ -83,7 +83,7 @@ prototype["componentDidMount"] = function componentDidMount() {
     require(6974) /* isClickstreamEnabled */.trackClickstream(constants.GUILD_VIEWED_CLICKSTREAM, obj5);
     const obj7 = require(6974) /* isClickstreamEnabled */;
     if (obj9.isFavoritesGuildId(selectedGuildId)) {
-      importDefault(15899)();
+      importDefault(15890)();
     }
     obj9 = require(1913) /* getFavoritesAwareGuildName */;
   }
@@ -229,7 +229,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
   }
   if (!tmp41) {
     obj2 = {};
-    let obj8 = require(15900) /* getChannelOpenedRouteTrackingProps */;
+    let obj8 = require(15891) /* getChannelOpenedRouteTrackingProps */;
     const merged7 = Object.assign(obj8.getChannelOpenedRouteTrackingProps(selectedChannelId));
     let obj9 = require(4539) /* collectGuildAnalyticsMetadata */;
     const merged8 = Object.assign(obj9.getChannelOpenedMetadata(selectedChannelId));
@@ -270,15 +270,15 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
       const merged9 = Object.assign(obj7);
       obj8.postable_channels = postableChannelCount;
       obj8.viewing_all_channels = !updateUserGuildSettingsInternal.isOptInEnabled(selectedGuildId);
-      const merged10 = Object.assign(require(15898) /* collectGuildThemeAnalyticsMetadata */.collectGuildThemeAnalyticsMetadata(selectedGuildId));
+      const merged10 = Object.assign(require(15889) /* collectGuildThemeAnalyticsMetadata */.collectGuildThemeAnalyticsMetadata(selectedGuildId));
       self._trackWithMetadata(constants.GUILD_VIEWED, obj8);
-      const obj19 = require(15898) /* collectGuildThemeAnalyticsMetadata */;
+      const obj19 = require(15889) /* collectGuildThemeAnalyticsMetadata */;
       obj9 = { guild_id: null };
       obj9[0] = selectedGuildId;
       require(6974) /* isClickstreamEnabled */.trackClickstream(constants.GUILD_VIEWED_CLICKSTREAM, obj9);
       const obj20 = require(6974) /* isClickstreamEnabled */;
       if (obj22.isFavoritesGuildId(selectedGuildId)) {
-        importDefault(15899)();
+        importDefault(15890)();
       }
       obj22 = require(1913) /* getFavoritesAwareGuildName */;
     }

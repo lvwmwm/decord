@@ -1,7 +1,7 @@
 // Module ID: 9198
 // Function ID: 9199
 // Name: _handleToggleVideo
-// Dependencies: [32, 5, 19, 17, 4364, 1391, 4393, 1979, 4361, 9199, 9202, 4557, 9204, 4684, 1236, 4902, 9205, 9219, 1891, 4554, 5170, 12, 9220, 9221, 9222, 500, 589, 9223, 9203, 10816, 9200, 2]
+// Dependencies: [32, 5, 19, 17, 4364, 1391, 4393, 1979, 4361, 9199, 9202, 4557, 9204, 4684, 1236, 4902, 9205, 9219, 1891, 4554, 5170, 12, 9220, 9221, 9222, 500, 589, 9223, 9203, 10818, 9200, 2]
 // Exports: getAudioDeviceToDisplayText, handleDisconnect, handleToggleSelfDeaf, handleToggleSelfMute, handleToggleVideo, showCameraDisabledAlert, showMinOSScreenshareRequirementAlert, showScreenshareDisabledAlert, showServerDeafenAlert, showServerMuteAlert, showSuppressedAlert, showTabletRequirementAlert, useImmediateMaskedSpeakerStates
 
 // Module 9198 (_handleToggleVideo)
@@ -292,7 +292,7 @@ export const useMaskedSpeakerStates = set.isAndroid() ? (() => {
   let obj = isEnabled(589);
   const items = [closure_9, handleConnectionOpen, reset, updateVoiceState, _detectH265HardwareDecode, handleAudioRouteChanged];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const isVideoMode = isEnabled(10816).isVideoMode(closure_9, handleConnectionOpen, reset, updateVoiceState, _detectH265HardwareDecode);
+    const isVideoMode = isEnabled(10818).isVideoMode(closure_9, handleConnectionOpen, reset, updateVoiceState, _detectH265HardwareDecode);
     currentRouteType = currentRouteType.getCurrentRouteType();
     isEnabled = currentRouteType === isEnabled(9200).RouteTypes.SPEAKER;
     const isBluetoothRoute = currentRouteType === isEnabled(9200).RouteTypes.BLUETOOTH;
@@ -335,7 +335,7 @@ export const useImmediateMaskedSpeakerStates = () => {
   let obj = require(589) /* initialize */;
   const items = [handleAudioRouteChanged];
   const stateFromStores = obj.useStateFromStores(items, () => currentRouteType.getCurrentRouteType());
-  const tmp4 = importDefault(10816)();
+  const tmp4 = importDefault(10818)();
   require = tmp4;
   let tmp5 = stateFromStores === require(9200) /* RouteTypes */.RouteTypes.SPEAKER;
   const tmp6 = stateFromStores === require(9200) /* RouteTypes */.RouteTypes.BLUETOOTH;

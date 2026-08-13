@@ -1,10 +1,10 @@
-// Module ID: 13139
-// Function ID: 13140
+// Module ID: 13140
+// Function ID: 13141
 // Name: getBrowserInvertedWantsConfig
 // Dependencies: [1471, 501, 2]
 // Exports: getBrowserInvertedWantsConfig
 
-// Module 13139 (getBrowserInvertedWantsConfig)
+// Module 13140 (getBrowserInvertedWantsConfig)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { 1: null };

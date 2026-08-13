@@ -1,9 +1,9 @@
-// Module ID: 14406
-// Function ID: 14407
+// Module ID: 14397
+// Function ID: 14398
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1922, 7206, 5202, 505, 21, 712, 4342, 1350, 4191, 5205, 7212, 11221, 10420, 1493, 10432, 14407, 7790, 7109, 7114, 7232, 589, 10437, 7228, 7204, 10442, 4278, 10160, 4065, 14434, 10449, 9566, 9567, 9571, 7233, 10451, 4310, 14436, 2007, 11222, 7059, 1236, 11215, 10559, 14440, 10422, 10439, 10440, 4761, 9502, 9333, 500, 9458, 4338, 14441, 5416, 14479, 5308, 4766, 691, 14467, 4753, 8488, 14447, 11218, 14480, 4755, 14483, 7796, 9907, 14468, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 7206, 5202, 505, 21, 712, 4342, 1350, 4191, 5205, 7212, 11222, 10420, 1493, 10431, 14398, 7790, 7109, 7114, 7233, 589, 10436, 7229, 7204, 10441, 4278, 10160, 4065, 14425, 10451, 9566, 9567, 9571, 7222, 10453, 4310, 14427, 2007, 11223, 7059, 1236, 11216, 10561, 14431, 10422, 10438, 10439, 4761, 9502, 9333, 500, 9458, 4338, 14432, 5416, 14470, 5308, 4766, 691, 14458, 4753, 8488, 14438, 11219, 14471, 4755, 14474, 7796, 9907, 14459, 2]
 
-// Module 14406 (ESTIMATED_CARD_HEIGHT)
+// Module 14397 (ESTIMATED_CARD_HEIGHT)
 import initializeState from "initializeState";
 import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet";
 import importAllResult from "useDeliveredDockCreative";
@@ -523,7 +523,7 @@ const memoResult = importAllResult.memo((questContent) => {
                 obj1[0] = dependencyMap;
                 if (!outer1_20) {
                   if (!outer1_14) {
-                    let START_QUEST = tmp31(7232).QuestContentCTA.ACCEPT_QUEST;
+                    let START_QUEST = tmp31(7233).QuestContentCTA.ACCEPT_QUEST;
                   }
                   obj1[1] = START_QUEST;
                   obj1[2] = outer1_4;
@@ -531,7 +531,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   v0 = 1;
                   dependencyMap = 1;
                 }
-                START_QUEST = tmp31(7232).QuestContentCTA.START_QUEST;
+                START_QUEST = tmp31(7233).QuestContentCTA.START_QUEST;
               }
             } else if (arg0 === 1) {
               dependencyMap = 3;
@@ -547,7 +547,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = openQuestAccessSuspendedBottomSheet;
-                  v0(14440)(obj);
+                  v0(14431)(obj);
                   dependencyMap = 3;
                 }
                 callback2();

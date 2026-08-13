@@ -1,10 +1,10 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12278
+// Function ID: 12279
 // Name: GuildProfileLoadingError
 // Dependencies: [19, 17, 21, 9306, 4278, 4065, 712, 4766, 8007, 4338, 1236, 4887, 2]
 // Exports: default
 
-// Module 12277 (GuildProfileLoadingError)
+// Module 12278 (GuildProfileLoadingError)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

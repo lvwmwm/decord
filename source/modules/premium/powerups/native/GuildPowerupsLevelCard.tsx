@@ -1,10 +1,10 @@
-// Module ID: 11986
-// Function ID: 11987
+// Module ID: 11987
+// Function ID: 11988
 // Name: GuildLevelPowerupHeader
-// Dependencies: [19, 17, 4230, 676, 11987, 21, 4342, 712, 4766, 7740, 8240, 11969, 11950, 4338, 1236, 2335, 11922, 11942, 11988, 11989, 11947, 2]
+// Dependencies: [19, 17, 4230, 676, 11988, 21, 4342, 712, 4766, 7740, 8240, 11970, 11951, 4338, 1236, 2335, 11923, 11943, 11989, 11990, 11948, 2]
 // Exports: default
 
-// Module 11986 (GuildLevelPowerupHeader)
+// Module 11987 (GuildLevelPowerupHeader)
 import importDefaultResult1 from "importDefaultResult1";
 import { View } from "useCalculatePowerupCardStatus";
 import BoostedGuildTiers from "BoostedGuildTiers";
@@ -194,10 +194,10 @@ export default function GuildPowerupsLevelCard(arg0) {
   const tmp = createCacheKey();
   let obj = isScrollingRef(8240);
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsLevelCard");
-  const tmp6 = importDefault(11922)(guildId, powerup);
-  let obj1 = isScrollingRef(11942);
+  const tmp6 = importDefault(11923)(guildId, powerup);
+  let obj1 = isScrollingRef(11943);
   const calculatePowerupCardStatus = obj1.useCalculatePowerupCardStatus(powerup, tmp6, false);
-  const tmp9 = importDefault(11988)(guildId, powerup);
+  const tmp9 = importDefault(11989)(guildId, powerup);
   importDefault = tmp9;
   if (0 === index) {
     let MIDDLE = constants.START;
@@ -216,7 +216,7 @@ export default function GuildPowerupsLevelCard(arg0) {
   obj = { position: MIDDLE, active: tmp14, nextActive: null };
   let tmp20;
   const tmp5 = importDefault;
-  const tmp7 = importDefault(11922)(guildId, nextPowerup);
+  const tmp7 = importDefault(11923)(guildId, nextPowerup);
   if (null != nextPowerup) {
     tmp20 = tmp7.type !== constants2.INACTIVE;
   }
@@ -236,8 +236,8 @@ export default function GuildPowerupsLevelCard(arg0) {
   obj2[2] = powerup.title;
   const items2 = [closure_10(isScrollingRef(4338).Text, obj2), closure_10(GuildPowerupLevelBody, { isActive: tmp6.type !== constants2.INACTIVE, index }), ];
   const tmp19 = GuildLevelPowerupHeader;
-  const tmp5Result = importDefault(11989);
-  items2[2] = closure_10(View, { style: tmp.footerContainer, children: closure_10(isScrollingRef(11947).GuildPowerupsCardFooter, obj4) });
+  const tmp5Result = importDefault(11990);
+  items2[2] = closure_10(View, { style: tmp.footerContainer, children: closure_10(isScrollingRef(11948).GuildPowerupsCardFooter, obj4) });
   obj1[1] = items2;
   items1[1] = closure_11(View, obj1);
   obj[4] = items1;

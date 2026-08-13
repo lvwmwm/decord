@@ -1,10 +1,10 @@
-// Module ID: 11112
-// Function ID: 11113
+// Module ID: 11113
+// Function ID: 11114
 // Name: retrySendMessage
 // Dependencies: [4335, 6965, 10039, 4891, 8406, 2]
 // Exports: default
 
-// Module 11112 (retrySendMessage)
+// Module 11113 (retrySendMessage)
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
 
 let result = require("_executeCommand").fileFinishedImporting("modules/messages/retrySendMessage.native.tsx");

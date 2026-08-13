@@ -1,10 +1,10 @@
-// Module ID: 12811
-// Function ID: 12812
+// Module ID: 12812
+// Function ID: 12813
 // Name: CheckIcon
-// Dependencies: [32, 19, 17, 676, 1924, 21, 4342, 712, 5199, 4278, 1363, 1297, 12812, 12813, 4338, 1236, 4766, 7695, 4007, 12814, 12815, 5308, 12816, 12817, 12818, 12819, 12820, 2]
+// Dependencies: [32, 19, 17, 676, 1924, 21, 4342, 712, 5199, 4278, 1363, 1297, 12813, 12814, 4338, 1236, 4766, 7695, 4007, 12815, 12816, 5308, 12817, 12818, 12819, 12820, 12821, 2]
 // Exports: default
 
-// Module 12811 (CheckIcon)
+// Module 12812 (CheckIcon)
 import _slicedToArray from "_slicedToArray";
 import PremiumTier0LogoSmall from "PremiumTier0LogoSmall";
 import { View } from "usePremiumPlanPrice";
@@ -28,14 +28,14 @@ function CheckIcon() {
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   const isThemeDarkResult = obj.isThemeDark(importDefault(4278)());
   obj = { source: null, color: null, size: null };
-  obj[0] = tmp(12812);
+  obj[0] = tmp(12813);
   obj[1] = obj.isThemeDark(importDefault(4278)()) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
   obj[2] = require(1297) /* Button */.IconSizes.SMALL;
   return callback2(require(1297) /* Button */.Icon, obj);
 }
 function CloseIcon() {
   const obj = { source: null, style: null, size: null };
-  obj[0] = importDefault(12813);
+  obj[0] = importDefault(12814);
   obj[1] = callback3().icon;
   obj[2] = require(1297) /* Button */.IconSizes.SMALL;
   return callback2(require(1297) /* Button */.Icon, obj);

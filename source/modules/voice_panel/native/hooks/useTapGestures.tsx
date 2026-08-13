@@ -1,10 +1,10 @@
-// Module ID: 16293
-// Function ID: 16294
+// Module ID: 16284
+// Function ID: 16285
 // Name: useTapGestures
-// Dependencies: [19, 11703, 5467, 4083, 4311, 2]
+// Dependencies: [19, 11704, 5467, 4083, 4311, 2]
 // Exports: default
 
-// Module 16293 (useTapGestures)
+// Module 16284 (useTapGestures)
 import noop from "noop";
 
 const require = arg1;
@@ -16,7 +16,7 @@ const result = require("LegacyBaseButton").fileFinishedImporting("modules/voice_
 
 export default function useTapGestures(onSingleTap) {
   let closure_0 = onSingleTap;
-  isFocusedVideoZoomed = React.useContext(isFocusedVideoZoomed(11703)).isFocusedVideoZoomed;
+  isFocusedVideoZoomed = React.useContext(isFocusedVideoZoomed(11704)).isFocusedVideoZoomed;
   const dependencyMap = React.useRef(onSingleTap);
   React = tmp;
   let closure_4 = tmp2;

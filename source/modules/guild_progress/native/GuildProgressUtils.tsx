@@ -1,10 +1,10 @@
-// Module ID: 11897
-// Function ID: 11898
+// Module ID: 11898
+// Function ID: 11899
 // Name: useIOSCompletionStates
-// Dependencies: [1980, 1910, 3989, 11898, 11892, 676, 4310, 11899, 2007, 11900, 589, 11895, 12009, 1236, 11, 2]
+// Dependencies: [1980, 1910, 3989, 11899, 11893, 676, 4310, 11900, 2007, 11901, 589, 11896, 12010, 1236, 11, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet, useGuildProgressStep, useIsEligibleForGuildProgress
 
-// Module 11897 (useIOSCompletionStates)
+// Module 11898 (useIOSCompletionStates)
 import comparator from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -20,10 +20,10 @@ function useIOSCompletionStates(guild) {
   let obj = _require(589);
   const items = [getUncachedChannelPermissions];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.can(outer1_9.ADMINISTRATOR, closure_0));
-  const guildPersonalized = _require(11895).useGuildPersonalized(guild);
-  const obj2 = _require(11895);
-  const guildPopulated = _require(11895).useGuildPopulated(guild);
-  const obj3 = _require(11895);
+  const guildPersonalized = _require(11896).useGuildPersonalized(guild);
+  const obj2 = _require(11896);
+  const guildPopulated = _require(11896).useGuildPopulated(guild);
+  const obj3 = _require(11896);
   const items1 = [comparator];
   const stateFromStores1 = _require(589).useStateFromStores(items1, () => outer1_3.getDefaultChannel(guild.id));
   const obj4 = _require(589);
@@ -33,7 +33,7 @@ function useIOSCompletionStates(guild) {
   } else {
     items3 = [];
   }
-  const channelsMessaged = _require(11895).useChannelsMessaged(items3);
+  const channelsMessaged = _require(11896).useChannelsMessaged(items3);
   let tmpResult = tmp(589);
   const items4 = [completeStep];
   let stateFromStores2 = channelsMessaged;
@@ -63,12 +63,12 @@ function useIOSCompletionStates(guild) {
     }
     return num > 0;
   });
-  const obj5 = _require(11895);
+  const obj5 = _require(11896);
   const tmp8 = completeStep;
   const items6 = [tmp8];
   const stateFromStores4 = _require(589).useStateFromStores(items6, () => outer1_6.getProgress(guild.id));
   if (stateFromStores) {
-    const ServerSetupBoostCtaExperiment = tmp(12009).ServerSetupBoostCtaExperiment;
+    const ServerSetupBoostCtaExperiment = tmp(12010).ServerSetupBoostCtaExperiment;
     const enabled = ServerSetupBoostCtaExperiment.getConfig({ location: "GuildProgress" }).enabled;
     const items7 = [guildPopulated, guildPersonalized, stateFromStores2];
     if (enabled) {
@@ -113,15 +113,15 @@ export const PROGRESS_BACKGROUND_COLOR = "rgba(78, 93, 148, 0.3)";
 export const openActionSheet = function openActionSheet(guild) {
   let obj = importDefault(4310);
   obj = { guild };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(11899, dependencyMap.paths), "guild-progress-" + guild.id, obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(11900, dependencyMap.paths), "guild-progress-" + guild.id, obj);
 };
 export const hideActionSheet = function hideActionSheet(arg0) {
   importDefault(4310).hideActionSheet("guild-progress-" + arg0);
 };
 export const createGuildProgress = function createGuildProgress(closure_0) {
   if (null != guild.getGuild(closure_0)) {
-    const progress = importDefault(11900).createProgress(closure_0);
-    const obj = importDefault(11900);
+    const progress = importDefault(11901).createProgress(closure_0);
+    const obj = importDefault(11901);
   }
 };
 export { useIOSCompletionStates };

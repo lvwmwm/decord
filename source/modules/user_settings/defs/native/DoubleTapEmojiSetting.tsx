@@ -1,9 +1,9 @@
-// Module ID: 14980
-// Function ID: 14981
+// Module ID: 14971
+// Function ID: 14972
 // Name: SettingsEmoji
 // Dependencies: [5, 19, 8127, 676, 1925, 21, 4342, 712, 4034, 8121, 1435, 5400, 8686, 698, 5788, 8699, 10407, 1236, 2]
 
-// Module 14980 (SettingsEmoji)
+// Module 14971 (SettingsEmoji)
 import jsxProd from "jsxProd";
 import "noop";
 import { AnalyticEvents } from "ME";

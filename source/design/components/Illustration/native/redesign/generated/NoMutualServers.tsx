@@ -1,10 +1,10 @@
-// Module ID: 12025
-// Function ID: 12026
+// Module ID: 12026
+// Function ID: 12027
 // Name: getNoMutualServersSource
-// Dependencies: [19, 17, 21, 7668, 12026, 12027, 12028, 1363, 2]
+// Dependencies: [19, 17, 21, 7668, 12027, 12028, 12029, 1363, 2]
 // Exports: NoMutualServers, getNoMutualServersSource, useNoMutualServersSource
 
-// Module 12025 (getNoMutualServersSource)
+// Module 12026 (getNoMutualServersSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getNoMutualServersSource = function getNoMutualServersSource(theme)
   let obj = require(7668) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(12026);
-    },
-    darker() {
       return callback(12027);
     },
-    light() {
+    darker() {
       return callback(12028);
+    },
+    light() {
+      return callback(12029);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useNoMutualServersSource = function useNoMutualServersSource() {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12026);
-    },
-    darker() {
       return callback(12027);
     },
-    light() {
+    darker() {
       return callback(12028);
+    },
+    light() {
+      return callback(12029);
     }
   };
   return require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const NoMutualServers = function NoMutualServers(arg0) {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12026);
-    },
-    darker() {
       return callback(12027);
     },
-    light() {
+    darker() {
       return callback(12028);
+    },
+    light() {
+      return callback(12029);
     }
   };
   obj = {};

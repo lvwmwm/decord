@@ -1,10 +1,10 @@
-// Module ID: 12227
-// Function ID: 12228
+// Module ID: 12228
+// Function ID: 12229
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 676, 3, 12206, 7048, 4310, 10171, 1624, 5974, 4022, 4062, 1236, 2]
+// Dependencies: [5, 32, 19, 676, 3, 12207, 7048, 4310, 10171, 1624, 5974, 4022, 4062, 1236, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 12227 (useHandleBuyNow)
+// Module 12228 (useHandleBuyNow)
 import useMobileCollectiblesPurchaseSKU from "useMobileCollectiblesPurchaseSKU";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

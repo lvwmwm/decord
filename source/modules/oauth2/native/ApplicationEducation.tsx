@@ -1,10 +1,10 @@
-// Module ID: 10486
-// Function ID: 10487
+// Module ID: 10488
+// Function ID: 10489
 // Name: ApplicationEducationEntry
-// Dependencies: [19, 17, 676, 21, 4342, 712, 10476, 8951, 1236, 4063, 10487, 8811, 6054, 4338, 10489, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 10478, 8951, 1236, 4063, 10489, 8811, 6054, 4338, 10491, 2]
 // Exports: default
 
-// Module 10486 (ApplicationEducationEntry)
+// Module 10488 (ApplicationEducationEntry)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { MAX_FRIENDS } from "ME";
@@ -43,7 +43,7 @@ export default function ApplicationEducation(arg0) {
   let application;
   ({ application, accountScopes } = arg0);
   const items = [];
-  const tmp3 = importDefault(10476)(application);
+  const tmp3 = importDefault(10478)(application);
   if (accountScopes.includes(require(8951) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
     const intl5 = tmp4(1236).intl;
     if (tmp3) {
@@ -69,7 +69,7 @@ export default function ApplicationEducation(arg0) {
     }
     obj[1] = formatToPlainString2Result;
     const obj3 = { iconComponent: null, text: null };
-    obj3[0] = tmp4(10487).ChatSmileIcon;
+    obj3[0] = tmp4(10489).ChatSmileIcon;
     const intl7 = tmp4(1236).intl;
     const string3 = intl7.string;
     const t5 = tmp4(1236).t;
@@ -168,7 +168,7 @@ export default function ApplicationEducation(arg0) {
       const obj13 = { children: null };
       const items1 = [tmp27, items.map((iconComponent) => callback(closure_9, { iconComponent: iconComponent.iconComponent, text: iconComponent.text }, arg1))];
       obj11[1] = items1;
-      const items2 = [closure_6(View, obj11), callback(tmp4(10489).AuthorizeFormSeparator, {})];
+      const items2 = [closure_6(View, obj11), callback(tmp4(10491).AuthorizeFormSeparator, {})];
       obj13[0] = items2;
       tmp30Result = tmp30(closure_7, obj13);
       const tmp31 = closure_7;

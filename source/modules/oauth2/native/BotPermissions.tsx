@@ -1,10 +1,10 @@
-// Module ID: 10493
-// Function ID: 10494
+// Module ID: 10495
+// Function ID: 10496
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 4342, 712, 3994, 506, 10480, 10494, 4753, 5366, 4338, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 3994, 506, 10482, 10496, 4753, 5366, 4338, 1236, 2]
 // Exports: default
 
-// Module 10493 (BotPermissions)
+// Module 10495 (BotPermissions)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

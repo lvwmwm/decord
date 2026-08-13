@@ -1,10 +1,10 @@
-// Module ID: 15691
-// Function ID: 15692
+// Module ID: 15682
+// Function ID: 15683
 // Name: getIconForChannel
 // Dependencies: [676, 4863, 4870, 4866, 4850, 4857, 4856, 2]
 // Exports: getIconForChannel
 
-// Module 15691 (getIconForChannel)
+// Module 15682 (getIconForChannel)
 import { ChannelTypes } from "ME";
 
 const result = require("VoiceNormalIcon").fileFinishedImporting("modules/icymi/native/util/getIconForChannel.tsx");

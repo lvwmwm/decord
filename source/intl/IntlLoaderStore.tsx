@@ -433,17 +433,10 @@ function _setMomentLocale() {
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let obj = {
-    isLoading: false,
-    inProgressLocale: "Boolean",
-    error: "call",
-    localeData: importDefault(1996),
-    setLoadingStarted(closure_0) {
-      return callback({ isLoading: true, inProgressLocale: closure_0 });
-    },
-    setLoadingSucceeded: 36478017,
-    setLoadingFailed: 381047040,
-    setLocaleData: 20759109
+  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "call", localeData: "sr", setLoadingStarted: "Array", setLoadingSucceeded: "bm", setLoadingFailed: -1124073067, setLocaleData: 1207960047 };
+  obj[3] = importDefault(1996);
+  obj[4] = function setLoadingStarted(closure_0) {
+    return callback({ isLoading: true, inProgressLocale: closure_0 });
   };
   obj[5] = function setLoadingSucceeded(closure_0) {
     if (callback2().inProgressLocale === closure_0) {
@@ -452,7 +445,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   };
   obj[6] = function setLoadingFailed(arg0, closure_0) {
     if (callback2().inProgressLocale === closure_0) {
-      const obj = { isLoading: false, inProgressLocale: "Array", error: 0 };
+      const obj = { isLoading: false, inProgressLocale: "Array", error: "cadenas" };
       obj[2] = arg0;
       callback(obj);
     }

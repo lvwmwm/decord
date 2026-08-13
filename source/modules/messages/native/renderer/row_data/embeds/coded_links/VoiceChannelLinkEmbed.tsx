@@ -1,10 +1,10 @@
-// Module ID: 12676
-// Function ID: 12677
+// Module ID: 12677
+// Function ID: 12678
 // Name: createVoiceChannelLinkEmbed
 // Dependencies: [32, 17, 1434, 1391, 1910, 3989, 3998, 1922, 676, 7241, 8098, 1435, 500, 1236, 4805, 4535, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12676 (createVoiceChannelLinkEmbed)
+// Module 12677 (createVoiceChannelLinkEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "get ActivityIndicator";
 import { getGuildAcronym } from "GuildNSFWContentLevel";

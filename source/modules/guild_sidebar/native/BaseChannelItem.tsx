@@ -1,10 +1,10 @@
-// Module ID: 11811
-// Function ID: 11812
+// Module ID: 11812
+// Function ID: 11813
 // Name: BaseChannelSubtitle
-// Dependencies: [19, 17, 9844, 4541, 21, 4342, 712, 4338, 501, 1297, 9891, 8712, 11812, 2]
+// Dependencies: [19, 17, 9844, 4541, 21, 4342, 712, 4338, 501, 1297, 9891, 8712, 11813, 2]
 // Exports: BaseChannelIcon, BaseChannelName, default, getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 11811 (BaseChannelSubtitle)
+// Module 11812 (BaseChannelSubtitle)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { CHANNEL_TITLE_LINE_HEIGHT } from "hairlineWidth";
@@ -18,8 +18,8 @@ const require = arg1;
 class BaseChannelSubtitle {
   constructor(arg0) {
     ({ mode, subtitle } = global);
-    tmp = f52407;
-    if (mode !== f52407.UNREAD_IMPORTANT) {
+    tmp = f52401;
+    if (mode !== f52401.UNREAD_IMPORTANT) {
       if (mode !== tmp.RELEVANT) {
         if (mode !== tmp.SELECTED) {
           MUTED = tmp.MUTED;
@@ -128,7 +128,7 @@ export default function BaseChannelItem(mode) {
     items1[3] = channelInfo;
     obj[1] = items1;
     if (flag) {
-      let AnimatedPressableHighlight = hideIcon(11812);
+      let AnimatedPressableHighlight = hideIcon(11813);
     } else {
       AnimatedPressableHighlight = mode(8712).AnimatedPressableHighlight;
     }

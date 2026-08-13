@@ -1,9 +1,9 @@
-// Module ID: 16772
-// Function ID: 16773
+// Module ID: 16763
+// Function ID: 16764
 // Name: handleGuildRoleCreateOrUpdate
-// Dependencies: [1983, 1910, 676, 11843, 1363, 1236, 506, 589, 709, 2]
+// Dependencies: [1983, 1910, 676, 11844, 1363, 1236, 506, 589, 709, 2]
 
-// Module 16772 (handleGuildRoleCreateOrUpdate)
+// Module 16763 (handleGuildRoleCreateOrUpdate)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { FormStates } from "ME";
@@ -41,7 +41,7 @@ Object.defineProperty(prototype, "submitting", {
 prototype["getUpdates"] = function getUpdates() {
   if (null != c9) {
     if (null != _null2) {
-      let obj = importDefault(11843);
+      let obj = importDefault(11844);
       obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: false };
       obj[0] = store.getSortedRoles(_null2.id);
       obj[1] = store.getManyRoles(_null2.id, c9);
@@ -110,7 +110,7 @@ const guildSettingsModalRolesStore = new GuildSettingsModalRolesStore(require("d
     if (null == _null) {
       return false;
     } else {
-      const moveItemFromToResult = importDefault(11843).moveItemFromTo(_null, from, to);
+      const moveItemFromToResult = importDefault(11844).moveItemFromTo(_null, from, to);
       _null = moveItemFromToResult;
       if (moveItemFromToResult[from] !== _null[from]) {
         const AccessibilityAnnouncer2 = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;

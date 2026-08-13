@@ -1,10 +1,10 @@
-// Module ID: 10797
-// Function ID: 10798
+// Module ID: 10799
+// Function ID: 10800
 // Name: stopScreenshare
-// Dependencies: [19, 17, 4364, 676, 4322, 7261, 4395, 9198, 4524, 4408, 9205, 9219, 10798, 10793, 1624, 10809, 10810, 10811, 10812, 10804, 589, 5768, 1236, 2]
+// Dependencies: [19, 17, 4364, 676, 4322, 7261, 4395, 9198, 4524, 4408, 9205, 9219, 10800, 10795, 1624, 10811, 10812, 10813, 10814, 10806, 589, 5768, 1236, 2]
 // Exports: default, getOSRequirement, getStreamPressHandler, handleCloseScreenshare, tryStartScreenShare
 
-// Module 10797 (stopScreenshare)
+// Module 10799 (stopScreenshare)
 import apexExperiment from "apexExperiment";
 import reset from "reset";
 import { ApplicationStreamStates } from "ME";
@@ -46,11 +46,11 @@ let result = require("reset").fileFinishedImporting("modules/video_calls/native/
 
 export default function useScreenshareUtils(arg0) {
   const _require = arg0;
-  let tmp = importDefault(10793)(arg0);
+  let tmp = importDefault(10795)(arg0);
   importDefault = tmp;
   const dependencyMap = tmp2;
-  const showMobileGoLiveUpsell = importDefault(10804).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
-  let obj = importDefault(10804);
+  const showMobileGoLiveUpsell = importDefault(10806).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
+  let obj = importDefault(10806);
   const items = [stateFromStores];
   stateFromStores = _require(589).useStateFromStores(items, () => stateFromStores.getCurrentUserActiveStream());
   const analyticsLocations = importDefault(5768)().analyticsLocations;
@@ -234,8 +234,8 @@ export const getStreamPressHandler = function getStreamPressHandler(analyticsLoc
 export const tryStartScreenShare = function tryStartScreenShare(channel) {
   let videoPermission = DCDDeviceManager >= 12;
   if (videoPermission) {
-    videoPermission = require(10793) /* useHasVideoPermission */.getVideoPermission(channel);
-    const obj = require(10793) /* useHasVideoPermission */;
+    videoPermission = require(10795) /* useHasVideoPermission */.getVideoPermission(channel);
+    const obj = require(10795) /* useHasVideoPermission */;
   }
   if (videoPermission) {
     if ("android" === obj2.getVoiceEngine().platform) {

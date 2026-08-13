@@ -1,10 +1,10 @@
-// Module ID: 14666
-// Function ID: 14667
+// Module ID: 14657
+// Function ID: 14658
 // Name: DismissiblePremiumNewBadge
 // Dependencies: [19, 6943, 21, 4342, 712, 10045, 500, 1297, 4766, 691, 2]
 // Exports: default
 
-// Module 14666 (DismissiblePremiumNewBadge)
+// Module 14657 (DismissiblePremiumNewBadge)
 import "noop";
 import { Gradients } from "items";
 import { jsx } from "jsxProd";

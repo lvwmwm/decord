@@ -1,10 +1,10 @@
-// Module ID: 16875
-// Function ID: 16876
+// Module ID: 16866
+// Function ID: 16867
 // Name: GuildServerSubscriberCount
-// Dependencies: [19, 17, 21, 4342, 712, 4338, 1297, 8737, 1236, 16876, 4058, 16848, 5308, 14550, 4756, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4338, 1297, 8737, 1236, 16867, 4058, 16839, 5308, 14541, 4756, 2]
 // Exports: default
 
-// Module 16875 (GuildServerSubscriberCount)
+// Module 16866 (GuildServerSubscriberCount)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -57,14 +57,14 @@ function CreatorGuildCard(highlightedCreatorGuild) {
   guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp4 = guild_id(16876)(guild_id, 3, 60);
+  const tmp4 = guild_id(16867)(guild_id, 3, 60);
   dependencyMap = tmp4;
   hasAllImperativeDetails = tmp4.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp4];
   if (tmp4.isLoading) {
     let obj = { style: null, children: null };
     obj[0] = tmp.cardContainer;
-    obj[1] = callback(tmp2(16848), {});
+    obj[1] = callback(tmp2(16839), {});
     return callback(closure_4, obj);
   } else if (hasAllImperativeDetails) {
     const details = tmp4.details;

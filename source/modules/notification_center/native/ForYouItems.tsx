@@ -1,9 +1,9 @@
-// Module ID: 15615
-// Function ID: 15616
+// Module ID: 15606
+// Function ID: 15607
 // Name: ForYouFooter
-// Dependencies: [5, 32, 19, 17, 4334, 4383, 1391, 1910, 1922, 15609, 676, 5870, 21, 4342, 4338, 712, 4774, 15614, 1236, 1403, 8194, 7265, 10233, 10034, 8051, 589, 8248, 1297, 12047, 15616, 1499, 4323, 13265, 7147, 698, 8382, 15617, 11057, 4062, 11080, 2007, 4310, 15619, 4301, 15611, 5801, 15620, 15621, 11, 4887, 15622, 7148, 12579, 1500, 4034, 4039, 15632, 15633, 15634, 15635, 15636, 15642, 810, 15643, 15644, 1370, 15613, 7790, 15645, 2]
+// Dependencies: [5, 32, 19, 17, 4334, 4383, 1391, 1910, 1922, 15600, 676, 5870, 21, 4342, 4338, 712, 4774, 15605, 1236, 1403, 8194, 7265, 10233, 10034, 8051, 589, 8248, 1297, 12048, 15607, 1499, 4323, 13266, 7147, 698, 8382, 15608, 11058, 4062, 11081, 2007, 4310, 15610, 4301, 15602, 5801, 15611, 15612, 11, 4887, 15613, 7148, 12580, 1500, 4034, 4039, 15623, 15624, 15625, 15626, 15627, 15633, 810, 15634, 15635, 1370, 15604, 7790, 15636, 2]
 
-// Module 15615 (ForYouFooter)
+// Module 15606 (ForYouFooter)
 import addApplication from "addApplication";
 import handleSupportedURL from "handleSupportedURL";
 import importAllResult from "hasFlag";
@@ -37,7 +37,7 @@ const require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15614) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(require(15605) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
   }
   return tmp;
 }
@@ -280,7 +280,7 @@ function ApplicationName(applicationId) {
     obj = { application: null, textVariant: null, iconSize: 16 };
     obj[0] = stateFromStores;
     obj[1] = applicationId.textVariant;
-    tmp5 = callback(importDefault(12047), obj, stateFromStores.id);
+    tmp5 = callback(importDefault(12048), obj, stateFromStores.id);
   }
   return tmp5;
 }
@@ -747,7 +747,9 @@ const memoResult = importAllResult.memo((loadMore) => {
     loadMore(true);
   }, items2);
   const items3 = [tmp.forYouDivider, suggestedFriendAdded, onAddSuggestionAnimationFinish, stateFromStores, setting, isSoftAcked, onSoftAckItem, forceHoistItem, isForceHoisted, tmp8, callback, flag];
-  const callback1 = suggestedFriendAdded.useCallback((arg0) => outer1_21(loadMore(onSoftAckItem[64]).ForYouLoadMore, { onPressLoad: callback }), items3);
+  const callback1 = suggestedFriendAdded.useCallback((arg0) => {
+
+  }, items3);
   ref = suggestedFriendAdded.useRef(null);
   const items4 = [shouldScrollToTop];
   const effect = suggestedFriendAdded.useEffect(() => {

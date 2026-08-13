@@ -1,10 +1,10 @@
-// Module ID: 13276
-// Function ID: 13277
+// Module ID: 13277
+// Function ID: 13278
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 1218, 1922, 676, 1348, 21, 4342, 712, 1628, 1493, 501, 698, 4550, 4197, 1222, 4685, 4688, 7838, 1236, 4688, 5867, 4889, 4162, 13277, 4338, 8519, 2]
+// Dependencies: [5, 19, 17, 1218, 1922, 676, 1348, 21, 4342, 712, 1628, 1493, 501, 698, 4550, 4197, 1222, 4685, 4688, 7838, 1236, 4688, 5867, 4889, 4162, 13278, 4338, 8519, 2]
 // Exports: default
 
-// Module 13276 (OneTimeLoginModal)
+// Module 13277 (OneTimeLoginModal)
 import closure_3 from "ME";
 import CircleErrorIcon from "CircleErrorIcon";
 import get_ActivityIndicator from "useAlertStore";
@@ -191,7 +191,7 @@ export default function OneTimeLoginModal(token) {
   let obj1 = { style: tmp.container, children: null };
   let obj2 = { style: tmp.centerContent, children: null };
   const tmp11 = importDefault(4889);
-  const items7 = [callback(callback3, { source: token(13277), style: tmp.logo }), ];
+  const items7 = [callback(callback3, { source: token(13278), style: tmp.logo }), ];
   let obj4 = { style: tmp.loadingContainer, children: null };
   const items8 = [callback(callback2, {}), ];
   let obj5 = { variant: "text-lg/semibold", children: null };

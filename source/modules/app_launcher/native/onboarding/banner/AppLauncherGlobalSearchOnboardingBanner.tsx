@@ -1,10 +1,10 @@
-// Module ID: 11559
-// Function ID: 11560
+// Module ID: 11560
+// Function ID: 11561
 // Name: GlobalSearchCoachmark
 // Dependencies: [19, 17, 1498, 1388, 21, 4342, 712, 7735, 8711, 1236, 2]
 // Exports: default
 
-// Module 11559 (GlobalSearchCoachmark)
+// Module 11560 (GlobalSearchCoachmark)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";

@@ -1,9 +1,9 @@
-// Module ID: 11291
-// Function ID: 11292
+// Module ID: 11292
+// Function ID: 11293
 // Name: items
-// Dependencies: [5, 32, 19, 17, 1992, 676, 21, 1236, 4342, 712, 5409, 9512, 4771, 698, 11292, 4062, 4534, 9922, 4338, 8030, 8029, 8021, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 1992, 676, 21, 1236, 4342, 712, 5409, 9512, 4771, 698, 11293, 4062, 4534, 9922, 4338, 8030, 8029, 8021, 4755, 2]
 
-// Module 11291 (items)
+// Module 11292 (items)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "context";
@@ -119,7 +119,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
               return obj;
             } else {
               let closure_1 = tmp4;
-              let obj3 = outer1_1(11292);
+              let obj3 = outer1_1(11293);
               dependencyMap = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };

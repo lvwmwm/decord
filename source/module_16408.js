@@ -4,9 +4,8 @@
 
 // Module 16408
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "ko",
+  locale: "th",
   pluralRuleFunction(arg0, arg1) {
     return "other";
   }
 });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "ko-KP", parentLocale: "ko" });

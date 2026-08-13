@@ -1,10 +1,10 @@
-// Module ID: 15013
-// Function ID: 15014
+// Module ID: 15004
+// Function ID: 15005
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 13958, 21, 4342, 712, 1891, 6058, 6035, 2]
+// Dependencies: [19, 17, 13949, 21, 4342, 712, 1891, 6058, 6035, 2]
 // Exports: default
 
-// Module 15013 (SettingSearchBar)
+// Module 15004 (SettingSearchBar)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import zustandStore from "zustandStore";

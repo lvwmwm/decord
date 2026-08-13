@@ -1,10 +1,10 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 14779
+// Function ID: 14780
 // Name: AppIcon
 // Dependencies: [19, 17, 7707, 21, 4342, 712, 4278, 1363, 2]
 // Exports: default
 
-// Module 14788 (AppIcon)
+// Module 14779 (AppIcon)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getIconById } from "items";

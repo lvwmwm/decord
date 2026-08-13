@@ -1,10 +1,10 @@
-// Module ID: 14726
-// Function ID: 14727
+// Module ID: 14717
+// Function ID: 14718
 // Name: UserSettingsText
 // Dependencies: [19, 17, 1922, 4013, 1303, 1304, 676, 21, 4342, 712, 698, 4034, 8747, 4065, 589, 4007, 1499, 7638, 1297, 10012, 4338, 1236, 8012, 4753, 5807, 5808, 8030, 8029, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 14726 (UserSettingsText)
+// Module 14717 (UserSettingsText)
 import "registerAsset";
 import { View } from "dispatcher";
 import mergeGuildAvatar from "mergeGuildAvatar";

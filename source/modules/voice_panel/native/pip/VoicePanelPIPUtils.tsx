@@ -1,10 +1,10 @@
-// Module ID: 16247
-// Function ID: 16248
+// Module ID: 16238
+// Function ID: 16239
 // Name: PIPReferenceDimensions
-// Dependencies: [4358, 4364, 1218, 11704, 16248, 4363, 11705, 10681, 13400, 712, 2]
+// Dependencies: [4358, 4364, 1218, 11705, 16239, 4363, 11706, 10683, 13401, 712, 2]
 // Exports: calculatePIPPositionFromVelocity, computePIPParticipantToShow, computePIPSize, getClampedPIPPosition, getPIPMode, getVoicePanelPIPBorderRadius
 
-// Module 16247 (PIPReferenceDimensions)
+// Module 16238 (PIPReferenceDimensions)
 import getParticipants from "getParticipants";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -334,7 +334,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
           if (!blockList.has(participant.user.id)) {
             const participant1 = store.getParticipant(channelId, participant.user.id);
             if (null != participant1) {
-              let obj = require(10681) /* canRenderParticipantVideo */;
+              let obj = require(10683) /* canRenderParticipantVideo */;
               if (obj.canRenderParticipantVideo(participant1)) {
                 obj = { id: null, type: null };
                 obj[0] = participant1.id;
@@ -367,7 +367,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
       for (const item10060 of activityParticipants) {
         let tmp17 = item10060;
         let participants = item10060.participants;
-        if (participants.some((userId) => callback(13400).isActivityParticipantCurrentUserCurrentSession(userId))) {
+        if (participants.some((userId) => callback(13401).isActivityParticipantCurrentUserCurrentSession(userId))) {
           let tmp18 = item10060;
           if (!blockList.has(tmp17.id)) {
             let obj1 = { id: null, type: null };
@@ -418,7 +418,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
       type = participant2.type;
       if (ParticipantTypes.STREAM === type) {
         if (null != authStore.getActiveStreamForUser(participant2.user.id, participant2.stream.guildId)) {
-          let obj9 = require(10681) /* canRenderParticipantVideo */;
+          let obj9 = require(10683) /* canRenderParticipantVideo */;
           if (obj9.canRenderParticipantVideo(participant2)) {
             ({ id: obj11[0], type: obj11[1] } = participant2);
             return { id: null, type: null };
@@ -426,7 +426,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
         }
       } else if (tmp31.ACTIVITY === type) {
         const participants2 = participant2.participants;
-        if (participants2.some((userId) => callback(13400).isActivityParticipantCurrentUserCurrentSession(userId))) {
+        if (participants2.some((userId) => callback(13401).isActivityParticipantCurrentUserCurrentSession(userId))) {
           const obj5 = { id: null, type: null };
           ({ id: obj9[0], type: obj9[1] } = participant2);
           return obj5;
@@ -446,7 +446,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
         obj7[1] = ParticipantTypes.USER;
         return obj7;
       }
-      obj13 = require(10681) /* canRenderParticipantVideo */;
+      obj13 = require(10683) /* canRenderParticipantVideo */;
     }
   }
   const videoParticipants = store.getVideoParticipants(channelId);
@@ -455,7 +455,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
     if (!blockList.has(item10162.id)) {
       let tmp41 = require;
       let tmp42 = dependencyMap;
-      let obj16 = require(10681) /* canRenderParticipantVideo */;
+      let obj16 = require(10683) /* canRenderParticipantVideo */;
       let tmp43 = item10162;
       if (obj16.canRenderParticipantVideo(tmp40)) {
         let obj8 = { id: null, type: null };
@@ -506,7 +506,7 @@ export const getPIPMode = function getPIPMode(connected) {
               if (obj.canRenderParticipantVideo(participant1)) {
                 return constants2.IN_PANEL;
               }
-              obj = require(10681) /* canRenderParticipantVideo */;
+              obj = require(10683) /* canRenderParticipantVideo */;
             }
           }
           if (tmp) {
@@ -520,7 +520,7 @@ export const getPIPMode = function getPIPMode(connected) {
                 if (item10032.id !== store2.getId()) {
                   let tmp14 = require;
                   let tmp15 = dependencyMap;
-                  let obj2 = require(10681) /* canRenderParticipantVideo */;
+                  let obj2 = require(10683) /* canRenderParticipantVideo */;
                   let tmp16 = item10032;
                   if (obj2.canRenderParticipantVideo(tmp12)) {
                     let tmp17 = constants2;

@@ -1,7 +1,7 @@
 // Module ID: 4357
 // Function ID: 4358
 // Name: generateOldThreadCutoff
-// Dependencies: [5, 32, 1390, 4358, 1981, 4256, 7033, 5881, 5882, 7146, 5264, 3991, 1340, 1395, 1218, 5939, 1391, 5029, 4682, 1910, 5169, 4562, 3989, 3998, 1979, 4540, 1922, 13251, 676, 9809, 1398, 1397, 4541, 1235, 3, 13252, 13253, 11, 687, 709, 4578, 13254, 530, 4227, 10430, 9812, 3997, 13255, 7042, 7143, 13256, 2007, 1403, 3943, 12, 1370, 5033, 4198, 9811, 3996, 1404, 589, 6923, 8985, 2]
+// Dependencies: [5, 32, 1390, 4358, 1981, 4256, 7033, 5881, 5882, 7146, 5264, 3991, 1340, 1395, 1218, 5939, 1391, 5029, 4682, 1910, 5169, 4562, 3989, 3998, 1979, 4540, 1922, 13252, 676, 9809, 1398, 1397, 4541, 1235, 3, 13253, 13254, 11, 687, 709, 4578, 13255, 530, 4227, 10446, 9812, 3997, 13256, 7042, 7143, 13257, 2007, 1403, 3943, 12, 1370, 5033, 4198, 9811, 3996, 1404, 589, 6923, 8985, 2]
 
 // Module 4357 (generateOldThreadCutoff)
 import getHash from "getHash";
@@ -316,7 +316,7 @@ function shouldAutomaticallyAck(value, arg1) {
           }
           return false;
         }
-        obj5 = importDefault(10430);
+        obj5 = importDefault(10446);
       }
       if (tmp4) {
         if (!value._persisted) {
@@ -1755,7 +1755,7 @@ prototype2["canBeUnread"] = function canBeUnread() {
     }
     return self.canTrackUnreads();
   }
-  obj = require(13255) /* filterOutMessageRequestsAndSpam */;
+  obj = require(13256) /* filterOutMessageRequestsAndSpam */;
   tmp = require;
 };
 prototype2["canHaveMentions"] = function canHaveMentions() {
@@ -1765,7 +1765,7 @@ prototype2["canHaveMentions"] = function canHaveMentions() {
     let tmp3 = !tmp2;
     if (!(self._isThread && !self._isJoinedThread)) {
       const items = [processChannel, closure_12];
-      const result = require(13255) /* filterOutMessageRequestsAndSpam */.isMessageRequestOrSpamRequest(self.channelId, items);
+      const result = require(13256) /* filterOutMessageRequestsAndSpam */.isMessageRequestOrSpamRequest(self.channelId, items);
       let tmp9 = !result;
       if (!result) {
         let result1 = tmp4(7042).isOptInEnabledForGuild(self._guildId);
@@ -1780,7 +1780,7 @@ prototype2["canHaveMentions"] = function canHaveMentions() {
         const tmp4Result = tmp4(7042);
       }
       tmp3 = tmp9;
-      const obj = require(13255) /* filterOutMessageRequestsAndSpam */;
+      const obj = require(13256) /* filterOutMessageRequestsAndSpam */;
       tmp4 = require;
     }
     tmp = tmp3;
@@ -1868,7 +1868,7 @@ prototype2["ackPins"] = function ackPins() {
         return false;
       } else {
         self._persisted = true;
-        importDefault(13254)(() => {
+        importDefault(13255)(() => {
           const HTTP = self(outer1_2[42]).HTTP;
           return HTTP.post({ url: outer1_39.PINS_ACK(self.channelId), oldFormErrors: true, rejectWithError: true });
         });
@@ -2083,7 +2083,7 @@ prototype2["_ack"] = function _ack(closure_1, c0) {
       tmp4 = recalculateFlagsResult;
     }
     const require = tmp4;
-    importDefault(13254)(() => {
+    importDefault(13255)(() => {
       const HTTP = tmp4(530).HTTP;
       obj = { url: outer1_39.MESSAGE_ACK(self.channelId, outgoingAck), body: obj, oldFormErrors: true, rejectWithError: true };
       obj = { token: outer1_63, last_viewed: self.lastViewed, flags: tmp4 };
@@ -2099,20 +2099,20 @@ prototype2["_ack"] = function _ack(closure_1, c0) {
         }
         callback(709).dispatch({ type: "MESSAGE_ACKED" });
         if (dependencyMap) {
-          tmp4(2007)(13256, tmp5.paths).then((arg0) => {
+          tmp4(2007)(13257, tmp5.paths).then((arg0) => {
             let obj = closure_1;
             if (closure_1 == null) {
               obj = {};
             }
             arg0.default(channelId.channelId, obj);
           });
-          const promise = tmp4(2007)(13256, tmp5.paths);
+          const promise = tmp4(2007)(13257, tmp5.paths);
         }
         let obj = callback(709);
         tmp5 = dependencyMap;
       }
     });
-    let promise = importDefault(13254)(() => {
+    let promise = importDefault(13255)(() => {
       const HTTP = tmp4(530).HTTP;
       obj = { url: outer1_39.MESSAGE_ACK(self.channelId, outgoingAck), body: obj, oldFormErrors: true, rejectWithError: true };
       obj = { token: outer1_63, last_viewed: self.lastViewed, flags: tmp4 };
@@ -2149,7 +2149,7 @@ prototype2["_nonChannelAck"] = function _nonChannelAck() {
         }
         self._persisted = true;
         self = importDefault;
-        importDefault(13254)(() => {
+        importDefault(13255)(() => {
           const HTTP = callback(outer1_2[42]).HTTP;
           return HTTP.post({ url: callback, body: {}, oldFormErrors: true, rejectWithError: true });
         });

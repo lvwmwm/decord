@@ -1,10 +1,10 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14857
+// Function ID: 14858
 // Name: MyTableRow
-// Dependencies: [32, 19, 17, 4165, 1922, 676, 21, 5414, 6054, 589, 1628, 4753, 5807, 4338, 1435, 1297, 5808, 8497, 8030, 8029, 5420, 13431, 13428, 13429, 13430, 8015, 4766, 2]
+// Dependencies: [32, 19, 17, 4165, 1922, 676, 21, 5414, 6054, 589, 1628, 4753, 5807, 4338, 1435, 1297, 5808, 8497, 8030, 8029, 5420, 13432, 13429, 13430, 13431, 8015, 4766, 2]
 // Exports: default
 
-// Module 14866 (MyTableRow)
+// Module 14857 (MyTableRow)
 import _slicedToArray from "_slicedToArray";
 import TableRadioRow from "TableRadioRow";
 import get_ActivityIndicator from "TableCheckboxRow";
@@ -194,22 +194,22 @@ export default function UserSettingsDesignSystemTableRow() {
   const obj51 = { title: "Online Status", hasIcons: true, defaultValue: "option1", onChange: closure_10, children: null };
   const obj52 = { icon: null, label: "Online", value: "option1" };
   const obj53 = { variant: "text-status-online", source: null };
-  obj53[1] = importDefault(13431);
+  obj53[1] = importDefault(13432);
   obj52[0] = callback2(require(5420) /* TableRowIcon */.TableRowIcon, obj53);
   const items8 = [callback2(require(8029) /* TableRadioRow */.TableRadioRow, obj52), , , ];
   const obj54 = { icon: null, label: "Idle", value: "option2" };
   const obj55 = { variant: "text-status-idle", source: null };
-  obj55[1] = importDefault(13428);
+  obj55[1] = importDefault(13429);
   obj54[0] = callback2(require(5420) /* TableRowIcon */.TableRowIcon, obj55);
   items8[1] = callback2(require(8029) /* TableRadioRow */.TableRadioRow, obj54);
   const obj56 = { icon: null, label: "Do Not Disturb", value: "option3" };
   const obj57 = { variant: "text-status-dnd", source: null };
-  obj57[1] = importDefault(13429);
+  obj57[1] = importDefault(13430);
   obj56[0] = callback2(require(5420) /* TableRowIcon */.TableRowIcon, obj57);
   items8[2] = callback2(require(8029) /* TableRadioRow */.TableRadioRow, obj56);
   const obj58 = { icon: null, label: "Invisible", value: "option4" };
   const obj59 = { variant: "text-status-offline", source: null };
-  obj59[1] = importDefault(13430);
+  obj59[1] = importDefault(13431);
   obj58[0] = callback2(require(5420) /* TableRowIcon */.TableRowIcon, obj59);
   items8[3] = callback2(require(8029) /* TableRadioRow */.TableRadioRow, obj58);
   obj51[4] = items8;

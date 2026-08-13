@@ -1,9 +1,9 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17084
+// Function ID: 17085
 // Name: sendReply
-// Dependencies: [5, 16382, 4256, 5384, 1218, 1391, 1910, 3, 4204, 9920, 16567, 709, 7181, 1625, 698, 5867, 7803, 4353, 14833, 1307, 2]
+// Dependencies: [5, 16373, 4256, 5384, 1218, 1391, 1910, 3, 4204, 9920, 16558, 709, 7181, 1625, 698, 5867, 7803, 4353, 14824, 1307, 2]
 
-// Module 17093 (sendReply)
+// Module 17084 (sendReply)
 import importDefaultResult from "ensureGuildLoaded";
 import { applicationReady } from "linkFromAppsFlyer";
 import getHash from "getHash";
@@ -318,7 +318,7 @@ function _apiLogin() {
               let obj = iter;
               obj = callback2(table[11]);
               callback2 = iter;
-              const f120656 = () => { ... };
+              const f120524 = () => { ... };
               function handler() { ... }
               const subscription = obj.subscribe(iter, handler);
             }
@@ -359,7 +359,7 @@ function subscribeOnce(subscribe) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f120656(arg0);
+    return f120524(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -406,7 +406,7 @@ let obj = {
     importDefault(4204).logToDevice(json);
   },
   () => {
-    let obj = importDefault(16567);
+    let obj = importDefault(16558);
     let report;
     if (obj != null) {
       report = obj.requestReport();
@@ -418,7 +418,7 @@ let obj = {
     importDefault(4204).logToDevice(json);
   },
   (multiplier) => {
-    let obj = importDefault(16567);
+    let obj = importDefault(16558);
     if (obj != null) {
       const result = obj.setJankHeuristicMultiplier(multiplier.multiplier);
     }
@@ -428,7 +428,7 @@ let obj = {
     importDefault(4204).logToDevice(json);
   },
   () => {
-    let obj = importDefault(16567);
+    let obj = importDefault(16558);
     if (obj != null) {
       obj.startTracking();
     }

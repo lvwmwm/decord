@@ -1,10 +1,10 @@
-// Module ID: 17087
-// Function ID: 17088
+// Module ID: 17078
+// Function ID: 17079
 // Name: libDiscoreSmokeTest
 // Dependencies: [5, 676, 3, 1920, 1917, 1914, 698, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 17087 (libDiscoreSmokeTest)
+// Module 17078 (libDiscoreSmokeTest)
 import items from "items";
 import { AnalyticEvents } from "ME";
 

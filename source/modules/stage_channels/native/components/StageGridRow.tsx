@@ -1,8 +1,8 @@
-// Module ID: 10908
-// Function ID: 10909
-// Dependencies: [19, 17, 21, 4342, 10900, 5183, 4890, 10909, 10899, 2]
+// Module ID: 10910
+// Function ID: 10911
+// Dependencies: [19, 17, 21, 4342, 10902, 5183, 4890, 10911, 10901, 2]
 
-// Module 10908
+// Module 10910
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -23,11 +23,11 @@ const memoResult = require("noop").memo((row) => {
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(10900).StageTileSize.FULL;
+    THIRD = tmp2(10902).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(10900).StageTileSize.HALF;
+    THIRD = tmp2(10902).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(10900).StageTileSize.THIRD;
+    THIRD = tmp2(10902).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   if (containerLandscape) {

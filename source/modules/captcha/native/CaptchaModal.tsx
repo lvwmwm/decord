@@ -1,10 +1,10 @@
-// Module ID: 16441
-// Function ID: 16442
+// Module ID: 16432
+// Function ID: 16433
 // Name: CaptchaModal
-// Dependencies: [19, 17, 15158, 15159, 21, 4342, 8521, 1500, 16442, 5437, 4753, 6070, 4338, 1236, 4755, 10423, 16443, 15166, 2]
+// Dependencies: [19, 17, 15149, 15150, 21, 4342, 8521, 1500, 16433, 5437, 4753, 6070, 4338, 1236, 4755, 10423, 16434, 15157, 2]
 // Exports: default
 
-// Module 16441 (CaptchaModal)
+// Module 16432 (CaptchaModal)
 import noop from "noop";
 import get_ActivityIndicator from "trackRegTransition";
 import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore";
@@ -68,7 +68,7 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  callback = onReject(16442)({ onReject, analyticsType: memo });
+  callback = onReject(16433)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
     closure_4.dismiss();
   }, []);

@@ -1,10 +1,10 @@
-// Module ID: 11417
-// Function ID: 11418
+// Module ID: 11418
+// Function ID: 11419
 // Name: VoiceMessageRecordingStatus
-// Dependencies: [11418, 644, 4083, 705, 4754, 2]
+// Dependencies: [11419, 644, 4083, 705, 4754, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 11417 (VoiceMessageRecordingStatus)
+// Module 11418 (VoiceMessageRecordingStatus)
 import VoiceMessageAnimationState from "VoiceMessageAnimationState";
 import keys from "keys";
 
@@ -12,7 +12,7 @@ let c3;
 let obj1;
 ({ VoiceMessageAnimationState: obj1, WAVEFORM_WAVE_MAX_VALUE: c3 } = VoiceMessageAnimationState);
 let obj = keys.create(() => {
-  const obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: "ct", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "PX_16", showVoiceMessagesTooltip: "TYPING_START_LOCAL", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: "heading-lg/semibold", isUsingHoldGesture: "No results found" };
+  const obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: "ct", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "PX_16", showVoiceMessagesTooltip: "TYPING_START_LOCAL", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: 36, isUsingHoldGesture: 120 };
   const items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = closure_2);
   obj[0] = require(4083).makeMutable(items);

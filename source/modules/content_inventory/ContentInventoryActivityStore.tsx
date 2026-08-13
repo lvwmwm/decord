@@ -1,9 +1,9 @@
-// Module ID: 12344
-// Function ID: 12345
+// Module ID: 12345
+// Function ID: 12346
 // Name: entryToKey
 // Dependencies: [4431, 8948, 676, 8281, 8285, 8967, 8953, 8949, 12, 589, 709, 2]
 
-// Module 12344 (entryToKey)
+// Module 12345 (entryToKey)
 import sortActivity from "sortActivity";
 import map from "map";
 import { ActivityTypes } from "ME";

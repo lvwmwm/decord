@@ -1,10 +1,10 @@
-// Module ID: 11256
-// Function ID: 11257
+// Module ID: 11257
+// Function ID: 11258
 // Name: ExperimentOverrideActionSheet
-// Dependencies: [19, 17, 1218, 4257, 7241, 21, 8098, 8250, 10417, 10418, 1364, 11257, 11258, 11259, 8100, 11260, 8252, 4310, 4264, 5437, 5436, 11261, 10416, 2]
+// Dependencies: [19, 17, 1218, 4257, 7241, 21, 8098, 8250, 10417, 10418, 1364, 11258, 11259, 11260, 8100, 11261, 8252, 4310, 4264, 5437, 5436, 11262, 10416, 2]
 // Exports: createExperimentEmbed, default
 
-// Module 11256 (ExperimentOverrideActionSheet)
+// Module 11257 (ExperimentOverrideActionSheet)
 import Background from "Background";
 import { Image } from "ACTION_SHEET_HEIGHT_HALF";
 import fetchFingerprint from "fetchFingerprint";
@@ -162,7 +162,7 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
         EXPERIMENT = ExperimentEmbedType.EXPERIMENT;
       }
       id = id.getId();
-      tmp4Result = tmp4(11259);
+      tmp4Result = tmp4(11260);
       const experimentServerAssignment = tmp4Result.getExperimentServerAssignment(tmp10, id);
       const experimentServerAssignmentLabel = tmp4(8250).getExperimentServerAssignmentLabel(tmp10, experimentServerAssignment);
       if (EXPERIMENT === tmp13.EXPERIMENT_TREATMENT) {
@@ -179,7 +179,7 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
         obj.titleColor = colors.titleColor;
         obj.subtitle = label;
         obj.subtitleColor = colors.subtitleColor;
-        obj.thumbnailUrl = tmp4(8100).getAssetUriForEmbed(tmp(11260));
+        obj.thumbnailUrl = tmp4(8100).getAssetUriForEmbed(tmp(11261));
         obj.thumbnailBackgroundColor = colors.backgroundColor;
         obj.acceptLabelColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedColor : colors.acceptLabelGreenColor;
         obj.acceptLabelBackgroundColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedBackgroundColor : colors.acceptLabelGreenBackgroundColor;
@@ -208,7 +208,7 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
         }
         obj.subtitle = combined1;
         obj.subtitleColor = colors.subtitleColor;
-        obj.thumbnailUrl = tmp4(8100).getAssetUriForEmbed(tmp(11260));
+        obj.thumbnailUrl = tmp4(8100).getAssetUriForEmbed(tmp(11261));
         ({ backgroundColor: obj13.thumbnailBackgroundColor, acceptLabelGreenColor: obj13.acceptLabelColor, acceptLabelGreenBackgroundColor: obj13.acceptLabelBackgroundColor } = colors);
         obj.acceptLabelText = "View Experiment Details";
         obj.embedCanBeTapped = true;
@@ -233,9 +233,9 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
   obj1.bodyTextColor = colors.bodyTextColor;
   const obj4 = experimentTreatmentFromEmbedURL(10418);
   if (tmp4Result4.isThemeDark(closure_2)) {
-    let tmpResult = tmp(11257);
+    let tmpResult = tmp(11258);
   } else {
-    tmpResult = tmp(11258);
+    tmpResult = tmp(11259);
   }
   obj1.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
   obj1.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;

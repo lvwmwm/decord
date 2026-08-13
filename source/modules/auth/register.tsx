@@ -1,10 +1,10 @@
-// Module ID: 15169
-// Function ID: 15170
+// Module ID: 15160
+// Function ID: 15161
 // Name: _scorePassword
-// Dependencies: [5, 15170, 1218, 676, 1221, 3943, 698, 5168, 503, 4242, 10423, 709, 15171, 15172, 2]
+// Dependencies: [5, 15161, 1218, 676, 1221, 3943, 698, 5168, 503, 4242, 10423, 709, 15162, 15163, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 15169 (_scorePassword)
+// Module 15160 (_scorePassword)
 import closure_4 from "t";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -257,7 +257,7 @@ function registerFull(giftCodeSKUId) {
   let obj = importDefault(709);
   obj.dispatch({ type: "REGISTER" });
   if (null != birthday) {
-    tmp4(15171)(birthday, constants2.REGISTER);
+    tmp4(15162)(birthday, constants2.REGISTER);
     let tmp4Result = tmp4(698);
     obj = { source: null, action: null };
     obj[0] = constants5.REGISTER;
@@ -329,8 +329,8 @@ function registerFull(giftCodeSKUId) {
     } else {
       let obj = new callback2(4242)(arg0);
       if (null != obj.getFieldErrors("date_of_birth")) {
-        const result = callback3(15172).preventUnderageRegistration(constants3.REGISTER);
-        const obj2 = callback3(15172);
+        const result = callback3(15163).preventUnderageRegistration(constants3.REGISTER);
+        const obj2 = callback3(15163);
       }
       obj = { is_unique_username_registration: true, email_error_reason: null, phone_error_reason: null, password_error_reason: null, username_error_reason: null, global_name_error_reason: null, date_of_birth_error_reason: null, promotional_email_opt_in_error_reason: null, fingerprint_error_reason: null, invite_error_reason: null, gift_code_sku_id_error_reason: null, guild_template_code_error_reason: null, consent_error_reason: null, generic_error_reason: null };
       obj[1] = obj.getFirstFieldErrorMessage("email");

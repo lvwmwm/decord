@@ -1,10 +1,10 @@
-// Module ID: 15636
-// Function ID: 15637
+// Module ID: 15627
+// Function ID: 15628
 // Name: ForYouSuggestedFriendRow
-// Dependencies: [19, 17, 4334, 3998, 676, 21, 4342, 9845, 712, 500, 5768, 4761, 647, 8832, 2007, 4187, 15254, 1236, 4083, 15637, 4887, 15638, 1297, 4338, 15639, 15640, 698, 2]
+// Dependencies: [19, 17, 4334, 3998, 676, 21, 4342, 9845, 712, 500, 5768, 4761, 647, 8832, 2007, 4187, 15245, 1236, 4083, 15628, 4887, 15629, 1297, 4338, 15630, 15631, 698, 2]
 // Exports: default
 
-// Module 15636 (ForYouSuggestedFriendRow)
+// Module 15627 (ForYouSuggestedFriendRow)
 import renderChannelPressableWrapper from "renderChannelPressableWrapper";
 import { View } from "getSystemLocale";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -74,7 +74,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
     if (suggestedFriend.friendSuggestionName.length > 0) {
       let friendSuggestionName = suggestedFriend.friendSuggestionName;
     }
-    let tmpResult = tmp(15254);
+    let tmpResult = tmp(15245);
     const suggestedContactNameForSuggestion = tmpResult.getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
     let str2 = "";
     if (null != suggestedContactNameForSuggestion) {
@@ -107,7 +107,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       obj1[0] = layoutStyles.container.borderRadius;
       items4[1] = obj1;
       obj[3] = items4;
-      const tmpResult2 = tmp(15637);
+      const tmpResult2 = tmp(15628);
       obj2 = { style: null, children: null };
       obj2[0] = tmp4.avatar;
       obj3 = { user: null, guildId: "r", size: "ct", animate: null };
@@ -124,7 +124,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       obj5[4] = friendSuggestionName;
       const items6 = [callback(tmp(4338).Text, obj5), ];
       const tmp20 = closure_11;
-      const tmpResult3 = tmp(15638);
+      const tmpResult3 = tmp(15629);
       let num3 = 0;
       if (tmpResult4.isAndroid()) {
         num3 = -2;
@@ -147,7 +147,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       const intl2 = tmp(1236).intl;
       obj8[5] = intl2.string(tmp(1236).t.Kzyxm9);
       obj8[6] = !stateFromStoresObject;
-      obj6[1] = callback(tmp(15639).ActionStatusSubLabel, obj8);
+      obj6[1] = callback(tmp(15630).ActionStatusSubLabel, obj8);
       items6[1] = callback(sharedValue, obj6);
       obj4[1] = items6;
       items5[1] = closure_10(sharedValue, obj4);
@@ -171,7 +171,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
         callback2(suggestedFriend);
       };
       obj9[5] = !stateFromStoresObject;
-      items5[2] = callback(tmp(15640).ContactSuggestionActions, obj9);
+      items5[2] = callback(tmp(15631).ContactSuggestionActions, obj9);
       obj10[0] = items5;
       const obj11 = { layout: null, fontScale: null, panelVariant: null };
       obj11[0] = messagesTabLayout;

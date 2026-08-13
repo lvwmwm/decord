@@ -1,7 +1,7 @@
 // Module ID: 4430
 // Function ID: 4431
 // Name: initialize
-// Dependencies: [4365, 1218, 4393, 4431, 4416, 676, 4409, 38, 4433, 12, 4408, 7243, 709, 4441, 500, 589, 13134, 2]
+// Dependencies: [4365, 1218, 4393, 4431, 4416, 676, 4409, 38, 4433, 12, 4408, 7243, 709, 4441, 500, 589, 13135, 2]
 
 // Module 4430 (initialize)
 import initialize from "initialize";
@@ -42,7 +42,7 @@ prototype["getRTCConnection"] = function getRTCConnection(arg0) {
   return dependencyMap3[arg0];
 };
 prototype["getQuality"] = function getQuality(arg0) {
-  if (importDefault(13134)(closure_6)) {
+  if (importDefault(13135)(closure_6)) {
     if (null != arg0) {
       let quality;
       if (dependencyMap3[arg0] != null) {
@@ -302,7 +302,7 @@ if (importDefaultResult.isSupported()) {
   obj[9] = function handleStreamStop(appContext) {
     appContext = appContext.appContext;
     const streamKey = appContext.streamKey;
-    closure_11[streamKey] = { appContext, analyticsLocations: "Array" };
+    closure_11[streamKey] = { appContext, analyticsLocations: "a" };
     const item = importDefault(12).forEach(closure_18, (analyticsContext) => {
       analyticsContext = analyticsContext.analyticsContext;
       analyticsContext.setActionContext(appContext);

@@ -1,10 +1,10 @@
-// Module ID: 15314
-// Function ID: 15315
+// Module ID: 15305
+// Function ID: 15306
 // Name: renderCategoryItem
-// Dependencies: [19, 17, 7038, 5300, 4540, 9844, 21, 4342, 500, 712, 4338, 12170, 4887, 9528, 11004, 9715, 1367, 589, 4535, 12196, 15315, 5296, 1236, 5802, 11005, 6039, 2]
+// Dependencies: [19, 17, 7038, 5300, 4540, 9844, 21, 4342, 500, 712, 4338, 12171, 4887, 9528, 11005, 9715, 1367, 589, 4535, 12197, 15306, 5296, 1236, 5802, 11006, 6039, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory, useCategoryPressEvents
 
-// Module 15314 (renderCategoryItem)
+// Module 15305 (renderCategoryItem)
 import useFavoritesGuildCategoryAddAction from "useFavoritesGuildCategoryAddAction";
 import { View } from "initialize";
 import set from "set";
@@ -86,7 +86,7 @@ function renderCategoryItem(longPressAction) {
     Icon = trailingAction.Icon;
   }
   if (Icon == null) {
-    Icon = trailingAction(12170).PlusMediumIcon;
+    Icon = trailingAction(12171).PlusMediumIcon;
   }
   if (null == trailingAction) {
     const obj1 = { children: null };
@@ -275,7 +275,7 @@ export const CategoryChannel = function CategoryChannel(channel) {
   const tmp4 = styles(tmp3);
   const tmp5 = id;
   const tmp9 = collapsed(4535)(channel);
-  const tmp11 = collapsed(15315)(channel);
+  const tmp11 = collapsed(15306)(channel);
   obj = { name: tmp9, muted: stateFromStoresObject.muted, collapsed, onPress: callback, onLongPress: null, withMarginTop: null, styles: null, isRefreshEnabled: null, trailingAction: null, longPressAction: null };
   let perform;
   if (tmp11 != null) {
@@ -288,7 +288,7 @@ export const CategoryChannel = function CategoryChannel(channel) {
   obj[5] = channel.withMarginTop;
   obj[6] = tmp4;
   obj[7] = tmp3;
-  obj[8] = collapsed(12196)(channel);
+  obj[8] = collapsed(12197)(channel);
   obj[9] = tmp11;
   ({ collapsed: collapsed2, isRefreshEnabled } = obj);
   const merged = Object.assign(obj, Object.create(null));

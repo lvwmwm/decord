@@ -1,10 +1,10 @@
-// Module ID: 12382
-// Function ID: 12383
+// Module ID: 12383
+// Function ID: 12384
 // Name: AnimatedContainer
 // Dependencies: [19, 17, 4334, 21, 4342, 712, 5199, 1367, 1363, 5369, 647, 4083, 4343, 4754, 8240, 4338, 5308, 2]
 // Exports: default
 
-// Module 12382 (AnimatedContainer)
+// Module 12383 (AnimatedContainer)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

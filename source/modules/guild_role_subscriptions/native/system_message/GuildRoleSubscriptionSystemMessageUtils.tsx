@@ -1,10 +1,10 @@
-// Module ID: 11277
-// Function ID: 11278
+// Module ID: 11278
+// Function ID: 11279
 // Name: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 // Dependencies: [676, 6965, 8144, 4539, 2]
 // Exports: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 
-// Module 11277 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
+// Module 11278 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
 import { AnalyticEvents } from "ME";
 
 const result = require("identityHook").fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");

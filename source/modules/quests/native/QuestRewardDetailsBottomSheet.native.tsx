@@ -1,10 +1,10 @@
-// Module ID: 11217
-// Function ID: 11218
+// Module ID: 11218
+// Function ID: 11219
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1922, 21, 4342, 712, 11215, 4310, 10420, 10437, 7211, 1236, 589, 5437, 4753, 11218, 4338, 2]
+// Dependencies: [19, 17, 1922, 21, 4342, 712, 11216, 4310, 10420, 10436, 7211, 1236, 589, 5437, 4753, 11219, 4338, 2]
 // Exports: default
 
-// Module 11217 (QuestRewardDetailsBottomSheet)
+// Module 11218 (QuestRewardDetailsBottomSheet)
 import noop from "noop";
 import { View } from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -39,14 +39,14 @@ function QuestRewardDetailsBottomSheet(quest) {
   let obj = quest(589);
   const items2 = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  let obj1 = quest(10437);
+  let obj1 = quest(10436);
   const defaultRewardName = obj1.getDefaultRewardName(quest.config, stateFromStores);
   obj = { direction: "vertical", spacing: null, style: null, children: null };
   obj[1] = memo(712).space.PX_16;
   obj[2] = tmp.wrapper;
   obj = { align: "center", direction: "horizontal", spacing: null, children: null };
   obj[2] = memo(712).space.PX_16;
-  const items3 = [callback(memo(11218), { quest, height: 56, width: 56, withAnimation: true }), ];
+  const items3 = [callback(memo(11219), { quest, height: 56, width: 56, withAnimation: true }), ];
   obj1 = { direction: "vertical", spacing: null, style: null, children: null };
   obj1[1] = memo(712).space.PX_4;
   obj1[2] = tmp.rewardDetailsCopy;
@@ -86,8 +86,8 @@ let result = require("mergeGuildAvatar").fileFinishedImporting("modules/quests/n
 
 export default function QuestRewardDetailsBottomSheetConnected(questId) {
   const callback = React.useCallback(() => {
-    const result = callback(11215).showQuestUnavailableAlert();
-    const obj = callback(11215);
+    const result = callback(11216).showQuestUnavailableAlert();
+    const obj = callback(11216);
     callback2(4310).hideActionSheet();
   }, []);
   let obj = require(10420) /* useQuests */;

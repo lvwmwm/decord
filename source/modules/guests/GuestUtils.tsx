@@ -1,8 +1,8 @@
-// Module ID: 10967
-// Function ID: 10968
+// Module ID: 10968
+// Function ID: 10969
 // Dependencies: [3977, 1403, 7817, 2]
 
-// Module 10967
+// Module 10968
 import { GuildMemberFlags } from "GuildMemberFlags";
 
 const result = require("set").fileFinishedImporting("modules/guests/GuestUtils.tsx");

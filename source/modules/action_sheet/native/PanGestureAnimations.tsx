@@ -1,10 +1,10 @@
-// Module ID: 10932
-// Function ID: 10933
+// Module ID: 10934
+// Function ID: 10935
 // Name: getNearestValue
 // Dependencies: [1297, 4754, 4343, 4083, 5467, 2]
 // Exports: default
 
-// Module 10932 (getNearestValue)
+// Module 10934 (getNearestValue)
 let obj = { damping: 30, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 obj = { duration: 500, easing: require("Button").STANDARD_EASING };
 let closure_4 = { code: "function getSortedByMeasure_PanGestureAnimationsTsx2(array,measure){const sorted=new Array(...array).sort(function(left,right){const al=Math.abs(left-measure);const ar=Math.abs(right-measure);return al<ar?-1:al>ar?1:0;});return sorted;}" };

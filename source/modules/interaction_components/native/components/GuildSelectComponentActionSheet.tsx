@@ -1,10 +1,10 @@
-// Module ID: 14035
-// Function ID: 14036
+// Module ID: 14026
+// Function ID: 14027
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 1910, 5196, 21, 4342, 4572, 1236, 4310, 11271, 5819, 4534, 1297, 4338, 5200, 2]
+// Dependencies: [32, 19, 17, 1910, 5196, 21, 4342, 4572, 1236, 4310, 11272, 5819, 4534, 1297, 4338, 5200, 2]
 // Exports: default
 
-// Module 14035 (GuildSelectComponentActionSheet)
+// Module 14026 (GuildSelectComponentActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -81,7 +81,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
   }, []);
   const items2 = [first, callback];
   const memo = obj.useMemo(() => callback(first), items2);
-  return callback(importDefault(11271), {
+  return callback(importDefault(11272), {
     onPressOptionItem(arg0, guild) {
       callback(guild.guild);
       callback2(guild);

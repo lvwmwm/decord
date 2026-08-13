@@ -1,9 +1,9 @@
-// Module ID: 15585
-// Function ID: 15586
+// Module ID: 15576
+// Function ID: 15577
 // Name: YouBarAvatarLarge
-// Dependencies: [5, 32, 19, 17, 4334, 5037, 1922, 14414, 676, 21, 4342, 712, 589, 1297, 4689, 4083, 8862, 8341, 4754, 4065, 8340, 8306, 4311, 6059, 2007, 5467, 2]
+// Dependencies: [5, 32, 19, 17, 4334, 5037, 1922, 14405, 676, 21, 4342, 712, 589, 1297, 4689, 4083, 8862, 8341, 4754, 4065, 8340, 8306, 4311, 6059, 2007, 5467, 2]
 
-// Module 15585 (YouBarAvatarLarge)
+// Module 15576 (YouBarAvatarLarge)
 import filterPlayingActivities from "filterPlayingActivities";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "map";
@@ -200,7 +200,7 @@ function YouBarAvatarLarge(transitionState) {
     obj4[0] = obj5;
     obj2[2] = closure_22(sharedValue1, obj4);
     const items6 = [closure_22(tmp23Result, obj2), , , ];
-    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: "SEARCH_RECENT_MESSAGES_CLEAR" };
+    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: "header" };
     obj6[0] = stateFromStores;
     obj6[2] = closure_11;
     if (OFFLINE === StatusTypes.UNKNOWN) {

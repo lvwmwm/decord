@@ -1,10 +1,10 @@
-// Module ID: 11033
-// Function ID: 11034
+// Module ID: 11034
+// Function ID: 11035
 // Name: RoleMembersActionSheet
-// Dependencies: [19, 17, 4334, 5938, 1983, 21, 4342, 712, 11, 5399, 589, 5397, 1297, 4338, 5437, 11034, 2]
+// Dependencies: [19, 17, 4334, 5938, 1983, 21, 4342, 712, 11, 5399, 589, 5397, 1297, 4338, 5437, 11035, 2]
 // Exports: default
 
-// Module 11033 (RoleMembersActionSheet)
+// Module 11034 (RoleMembersActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -87,9 +87,9 @@ export default function RoleMembersActionSheet(guildId) {
     }
     obj[1] = channelId;
     obj[2] = roleId;
-    obj[2] = closure_8(tmp9(11034), obj);
+    obj[2] = closure_8(tmp9(11035), obj);
     tmp16Result = tmp16(tmp3(5437).BottomSheet, obj);
-    let tmp9Result = tmp9(11034);
+    let tmp9Result = tmp9(11035);
   }
   return tmp16Result;
 };

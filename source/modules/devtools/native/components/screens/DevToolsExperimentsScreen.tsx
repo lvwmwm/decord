@@ -1,9 +1,9 @@
-// Module ID: 11261
-// Function ID: 11262
+// Module ID: 11262
+// Function ID: 11263
 // Name: UserExperimentDebugView
-// Dependencies: [32, 19, 17, 4256, 1218, 1910, 4257, 21, 4342, 712, 10417, 10418, 5409, 8572, 11262, 12, 1297, 8876, 6035, 8575, 8252, 4264, 4310, 5414, 4338, 513, 11259, 5807, 8250, 5796, 4062, 4303, 5437, 5436, 2]
+// Dependencies: [32, 19, 17, 4256, 1218, 1910, 4257, 21, 4342, 712, 10417, 10418, 5409, 8572, 11263, 12, 1297, 8876, 6035, 8575, 8252, 4264, 4310, 5414, 4338, 513, 11260, 5807, 8250, 5796, 4062, 4303, 5437, 5436, 2]
 
-// Module 11261 (UserExperimentDebugView)
+// Module 11262 (UserExperimentDebugView)
 import Background from "Background";
 import importAllResult from "module_8575";
 import { View } from "getNoResultsSource";
@@ -37,9 +37,9 @@ function UserExperimentDebugView(id) {
       tmp7 = maybeExtractIdResult;
     }
   }
-  let obj1 = require(11259) /* useExperimentAssignment */;
+  let obj1 = require(11260) /* useExperimentAssignment */;
   const experimentAssignment = obj1.useExperimentAssignment(experiment, tmp7);
-  let obj2 = require(11259) /* useExperimentAssignment */;
+  let obj2 = require(11260) /* useExperimentAssignment */;
   const experimentServerAssignment = obj2.useExperimentServerAssignment(experiment, tmp7);
   let obj3 = importDefault(12);
   const tmp = callback3();

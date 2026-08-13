@@ -1,9 +1,9 @@
-// Module ID: 11848
-// Function ID: 11849
+// Module ID: 11849
+// Function ID: 11850
 // Name: ChatInputReplyBarNoAuthor
-// Dependencies: [19, 17, 4334, 4681, 1922, 676, 21, 1297, 4342, 712, 1367, 4065, 4338, 1236, 4887, 8517, 589, 4073, 4574, 9286, 8115, 11849, 4162, 4083, 4343, 11105, 698, 11103, 1222, 4573, 11850, 7281, 2]
+// Dependencies: [19, 17, 4334, 4681, 1922, 676, 21, 1297, 4342, 712, 1367, 4065, 4338, 1236, 4887, 8517, 589, 4073, 4574, 9286, 8115, 11850, 4162, 4083, 4343, 11106, 698, 11104, 1222, 4573, 11851, 7281, 2]
 
-// Module 11848 (ChatInputReplyBarNoAuthor)
+// Module 11849 (ChatInputReplyBarNoAuthor)
 import importAllResult from "DISPLAY_NAME_STYLES_FONT_FAMILY_MAP";
 import get_ActivityIndicator from "useCheckboxA11yNative";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -91,8 +91,8 @@ class ChatInputReplyBar {
     colorStrings = undefined;
     nick = undefined;
     guildId = undefined;
-    f88853 = undefined;
-    f88853 = undefined;
+    f88833 = undefined;
+    f88833 = undefined;
     id = undefined;
     author = undefined;
     tmp = pendingReply;
@@ -100,7 +100,7 @@ class ChatInputReplyBar {
     ({ onToggleReplyMention, chatInputFloatingOverride } = global);
     obj = require("useIsMobileVisualRefreshExperimentEnabled");
     tmp3 = obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating || chatInputFloatingOverride;
-    tmp4 = f52527();
+    tmp4 = f52521();
     tmpResult = require("map");
     tmp5 = c1;
     token = tmpResult.useToken(require("Themes").modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
@@ -108,7 +108,7 @@ class ChatInputReplyBar {
     bound = require("noop");
     tmpResult2 = require("initialize");
     items = [];
-    items[0] = f88853;
+    items[0] = f88833;
     stateFromStores = tmpResult2.useStateFromStores(items, () => roleStyle.roleStyle);
     c1 = stateFromStores;
     tmpResult3 = require("useCheckboxA11yNative");
@@ -122,7 +122,7 @@ class ChatInputReplyBar {
     items1[0] = colorString;
     items1[1] = stateFromStores;
     ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-    f88853 = colorStrings.useMemo(() => {
+    f88833 = colorStrings.useMemo(() => {
       let tmp;
       if ("hidden" !== stateFromStores) {
         if (null != colorString) {
@@ -137,7 +137,7 @@ class ChatInputReplyBar {
     obj1 = { userId: pendingReply.message.author.id, guildId };
     tmp10 = require("useDisplayNameStyles")(obj1);
     tmpResult4 = require("DISPLAY_NAME_STYLES_FONT_FAMILY_MAP");
-    f88853 = tmpResult4.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
+    f88833 = tmpResult4.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
     tmpResult5 = require("processColorStrings");
     processColorStringsArray = tmpResult5.useProcessColorStringsArray(colorStrings);
     id = processColorStringsArray;

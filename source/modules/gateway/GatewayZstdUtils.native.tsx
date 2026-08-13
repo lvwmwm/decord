@@ -1,18 +1,18 @@
-// Module ID: 12983
-// Function ID: 12984
+// Module ID: 12984
+// Function ID: 12985
 // Name: supportsZstd
-// Dependencies: [17, 500, 12984, 2]
+// Dependencies: [17, 500, 12985, 2]
 // Exports: createZstdContextWeb, supportsZstd
 
-// Module 12983 (supportsZstd)
+// Module 12984 (supportsZstd)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("modules/gateway/GatewayZstdUtils.native.tsx");
 
 export const supportsZstd = function supportsZstd() {
   if (obj.isAndroid()) {
-    let flag = importDefault(12984).getConstants().supportsZstd;
-    const obj2 = importDefault(12984);
+    let flag = importDefault(12985).getConstants().supportsZstd;
+    const obj2 = importDefault(12985);
   } else {
     const DCDCompressionManager = NativeModules.DCDCompressionManager;
     flag = undefined;

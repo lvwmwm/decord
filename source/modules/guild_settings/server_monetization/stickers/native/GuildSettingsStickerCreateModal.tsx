@@ -1,10 +1,10 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 16737
+// Function ID: 16738
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [19, 21, 9724, 9726, 1236, 16747, 2]
+// Dependencies: [19, 21, 9724, 9726, 1236, 16738, 2]
 // Exports: default
 
-// Module 16746 (GuildSettingsStickerCreateModal)
+// Module 16737 (GuildSettingsStickerCreateModal)
 import "noop";
 import { jsx } from "jsxProd";
 

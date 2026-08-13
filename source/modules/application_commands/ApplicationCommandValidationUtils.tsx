@@ -1,10 +1,10 @@
-// Module ID: 11599
-// Function ID: 11600
+// Module ID: 11600
+// Function ID: 11601
 // Name: validateOptionContent
-// Dependencies: [4778, 7030, 10040, 1236, 11600, 2]
+// Dependencies: [4778, 7030, 10040, 1236, 11601, 2]
 // Exports: getValidationResults
 
-// Module 11599 (validateOptionContent)
+// Module 11600 (validateOptionContent)
 import { getValidationErrorText } from "TRUE_OPTION_NAME";
 
 function validateOptionContent(allowEmptyValues) {
@@ -59,7 +59,7 @@ function validateOptionContent(allowEmptyValues) {
     } else {
       first = content[0];
     }
-    const tmp8 = importDefault(11600);
+    const tmp8 = importDefault(11601);
     const tmp15 = tmp8[option.type](first, option, channelId, guildId, commandOrigin);
     if (!tmp16) {
       tmp15.error = getValidationErrorText(option);

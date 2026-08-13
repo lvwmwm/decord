@@ -1,9 +1,9 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16469
+// Function ID: 16470
 // Name: handleConnectionOpen
-// Dependencies: [5035, 6983, 3, 687, 5301, 7161, 14833, 500, 691, 2]
+// Dependencies: [5035, 6983, 3, 687, 5301, 7161, 14824, 500, 691, 2]
 
-// Module 16478 (handleConnectionOpen)
+// Module 16469 (handleConnectionOpen)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import handleClearCaches from "handleClearCaches";
 import "initialize";
@@ -50,8 +50,8 @@ prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
     isConnectedResult = connected.isConnected();
   }
   if (isConnectedResult) {
-    tmp(14833).writeCaches();
-    const tmpResult = tmp(14833);
+    tmp(14824).writeCaches();
+    const tmpResult = tmp(14824);
   }
   return false;
 };
@@ -60,8 +60,8 @@ prototype["handleWindowFocus"] = function handleWindowFocus(focused) {
     const _Date = Date;
     if (Date.now() - lastWriteTime.lastWriteTime > closure_6) {
       tmp2.verbose("Writing cache from window unfocus");
-      require(14833) /* _writeCaches */.writeCaches();
-      const obj = require(14833) /* _writeCaches */;
+      require(14824) /* _writeCaches */.writeCaches();
+      const obj = require(14824) /* _writeCaches */;
     } else {
       tmp2.verbose("Not writing cache from window unfocus");
     }

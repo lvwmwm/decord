@@ -1,10 +1,10 @@
-// Module ID: 15653
-// Function ID: 15654
+// Module ID: 15644
+// Function ID: 15645
 // Name: ICYMICustomScoresOverviewScreen
 // Dependencies: [19, 17, 1910, 5196, 8947, 21, 4342, 712, 589, 1628, 5807, 5414, 5819, 8961, 1236, 2]
 // Exports: default
 
-// Module 15653 (ICYMICustomScoresOverviewScreen)
+// Module 15644 (ICYMICustomScoresOverviewScreen)
 import noop from "noop";
 import { ScrollView } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

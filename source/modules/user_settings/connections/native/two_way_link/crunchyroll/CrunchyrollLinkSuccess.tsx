@@ -1,10 +1,10 @@
-// Module ID: 10537
-// Function ID: 10538
+// Module ID: 10539
+// Function ID: 10540
 // Name: CrunchyrollLinkDiscordSuccess
-// Dependencies: [19, 17, 21, 4342, 10459, 10538, 4338, 1236, 5368, 4755, 2]
+// Dependencies: [19, 17, 21, 4342, 10461, 10540, 4338, 1236, 5368, 4755, 2]
 // Exports: default
 
-// Module 10537 (CrunchyrollLinkDiscordSuccess)
+// Module 10539 (CrunchyrollLinkDiscordSuccess)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,12 +21,12 @@ let closure_7 = createCacheKey.createStyles({ image: { width: 232, height: 108, 
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkSuccess.tsx");
 
 export default function CrunchyrollLinkDiscordSuccess(onClose) {
-  let obj = require(10459) /* styles */;
+  let obj = require(10461) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container, children: null };
   obj = { style: twoWayLinkStyles.content, children: null };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(10538), style: callback3().image }), , ];
+  const items = [callback(closure_3, { source: importDefault(10540), style: callback3().image }), , ];
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.Fnvxvk);

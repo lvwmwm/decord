@@ -1,10 +1,10 @@
-// Module ID: 14115
-// Function ID: 14116
+// Module ID: 14106
+// Function ID: 14107
 // Name: getSMSBackupDisabledMessage
 // Dependencies: [1910, 3989, 1922, 676, 1236, 647, 8527, 2]
 // Exports: getSMSBackupDisabledMessage, use2FARemoveDisableReason, useIsMFAEnabled, useMFAAvailability
 
-// Module 14115 (getSMSBackupDisabledMessage)
+// Module 14106 (getSMSBackupDisabledMessage)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";

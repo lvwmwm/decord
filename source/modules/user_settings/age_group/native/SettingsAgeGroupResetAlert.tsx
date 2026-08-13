@@ -1,10 +1,10 @@
-// Module ID: 14095
-// Function ID: 14096
+// Module ID: 14086
+// Function ID: 14087
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1499, 13097, 4685, 4061, 1236, 4688, 2821, 4688, 2]
+// Dependencies: [5, 21, 1499, 13098, 4685, 4061, 1236, 4688, 2821, 4688, 2]
 // Exports: default
 
-// Module 14095 (SettingsAgeGroupResetAlert)
+// Module 14086 (SettingsAgeGroupResetAlert)
 import presentAddedFriendToast from "presentAddedFriendToast";
 import jsxProd from "jsxProd";
 
@@ -50,7 +50,7 @@ export default function SettingsAgeGroupResetAlert() {
               c1 = 2;
               c3 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(13097).resetAgeVerification();
+              obj1[0] = outer1_0(13098).resetAgeVerification();
               return obj1;
             }
           } else if (1 === tmp7) {

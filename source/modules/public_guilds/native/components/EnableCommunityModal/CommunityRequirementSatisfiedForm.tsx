@@ -1,10 +1,10 @@
-// Module ID: 16843
-// Function ID: 16844
+// Module ID: 16834
+// Function ID: 16835
 // Name: CommunityRequirementSatisfiedForm
-// Dependencies: [19, 17, 21, 4061, 16833, 4887, 2]
+// Dependencies: [19, 17, 21, 4061, 16824, 4887, 2]
 // Exports: default
 
-// Module 16843 (CommunityRequirementSatisfiedForm)
+// Module 16834 (CommunityRequirementSatisfiedForm)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -17,7 +17,7 @@ let result = require("jsxProd").fileFinishedImporting("modules/public_guilds/nat
 
 export default function CommunityRequirementSatisfiedForm(formSwitchDisabled) {
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
-  let obj = formSwitchDisabled(16833);
+  let obj = formSwitchDisabled(16824);
   const enableCommunitySharedStyles = obj.useEnableCommunitySharedStyles();
   obj = { style: enableCommunitySharedStyles.communityRequirementSatisfiedFormWrapper, children: null };
   const items = [formSwitchDisabled.children, ];

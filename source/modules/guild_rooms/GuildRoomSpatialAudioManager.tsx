@@ -1,9 +1,9 @@
-// Module ID: 16533
-// Function ID: 16534
+// Module ID: 16524
+// Function ID: 16525
 // Name: _initialize
-// Dependencies: [32, 4256, 1212, 1218, 1391, 4393, 4416, 16528, 5301, 9205, 16529, 16534, 2]
+// Dependencies: [32, 4256, 1212, 1218, 1391, 4393, 4416, 16519, 5301, 9205, 16520, 16525, 2]
 
-// Module 16533 (_initialize)
+// Module 16524 (_initialize)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
 import initialize from "initialize";
@@ -65,7 +65,7 @@ prototype["isLivingRoomAvailable"] = function isLivingRoomAvailable() {
   const guildId = store.getGuildId();
   let interactionsEnabled = null != guildId;
   if (interactionsEnabled) {
-    let obj = importDefault(16529);
+    let obj = importDefault(16520);
     obj = { guildId: null, location: "GuildRoomSpatialAudioManager" };
     obj[0] = guildId;
     interactionsEnabled = obj.getCurrentConfig(obj, { autoTrackExposure: false }).interactionsEnabled;
@@ -89,7 +89,7 @@ prototype["apply"] = function apply() {
           obj[0] = roomUsers.getRoomUsers(channelId);
           obj[1] = id.getId();
           obj[2] = channelId;
-          _require = _require(16534).computeLivingRoomWorldPoints(obj);
+          _require = _require(16525).computeLivingRoomWorldPoints(obj);
           const mediaEngine = obj.getMediaEngine();
           mediaEngine.eachConnection((setUserPosition) => {
             let tmp6;
@@ -106,7 +106,7 @@ prototype["apply"] = function apply() {
               continue;
             }
           });
-          const obj3 = _require(16534);
+          const obj3 = _require(16525);
         }
       }
     }

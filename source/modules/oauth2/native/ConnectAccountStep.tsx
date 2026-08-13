@@ -1,10 +1,10 @@
-// Module ID: 10483
-// Function ID: 10484
+// Module ID: 10485
+// Function ID: 10486
 // Name: ConnectAccountStep
-// Dependencies: [19, 17, 4383, 1218, 1922, 21, 4342, 712, 4278, 589, 5041, 1435, 1363, 5769, 1297, 8653, 4338, 1236, 4755, 10452, 4298, 4294, 2]
+// Dependencies: [19, 17, 4383, 1218, 1922, 21, 4342, 712, 4278, 589, 5041, 1435, 1363, 5769, 1297, 8653, 4338, 1236, 4755, 10454, 4298, 4294, 2]
 // Exports: ConnectedAccountCard, default
 
-// Module 10483 (ConnectAccountStep)
+// Module 10485 (ConnectAccountStep)
 import authorizeConnection from "authorizeConnection";
 import { View } from "getSystemLocale";
 import addApplication from "addApplication";

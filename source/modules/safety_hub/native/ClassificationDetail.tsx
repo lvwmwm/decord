@@ -1,10 +1,10 @@
-// Module ID: 11330
-// Function ID: 11331
+// Module ID: 11331
+// Function ID: 11332
 // Name: ClassificationHeader
-// Dependencies: [19, 17, 1994, 11331, 7850, 676, 21, 4342, 712, 4338, 7851, 1236, 589, 9106, 4058, 10319, 4755, 11336, 11338, 698, 5368, 11339, 7849, 11348, 7109, 7114, 11350, 2]
+// Dependencies: [19, 17, 1994, 11332, 7850, 676, 21, 4342, 712, 4338, 7851, 1236, 589, 9106, 4058, 10319, 4755, 11337, 11339, 698, 5368, 11340, 7849, 11349, 7109, 7114, 11351, 2]
 // Exports: default
 
-// Module 11330 (ClassificationHeader)
+// Module 11331 (ClassificationHeader)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "useSafetyHubClassifications";
 import _getSystemLocale from "_getSystemLocale";

@@ -1,10 +1,10 @@
-// Module ID: 10859
-// Function ID: 10860
+// Module ID: 10861
+// Function ID: 10862
 // Name: TransferFooter
-// Dependencies: [5, 32, 19, 17, 4359, 676, 21, 4342, 712, 5368, 4755, 1236, 10860, 4338, 10861, 589, 10851, 38, 10858, 4310, 1231, 1297, 10386, 5437, 5436, 5439, 2]
+// Dependencies: [5, 32, 19, 17, 4359, 676, 21, 4342, 712, 5368, 4755, 1236, 10862, 4338, 10863, 589, 10853, 38, 10860, 4310, 1231, 1297, 10386, 5437, 5436, 5439, 2]
 // Exports: default
 
-// Module 10859 (TransferFooter)
+// Module 10861 (TransferFooter)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
@@ -41,7 +41,7 @@ function TransferFooter(arg0) {
 function DeviceOption(children) {
   const tmp = createCacheKey();
   let obj = { style: tmp.deviceOption, children: null };
-  obj = { style: tmp.deviceIcon, source: importDefault(10860) };
+  obj = { style: tmp.deviceIcon, source: importDefault(10862) };
   const items = [callback(closure_8, obj), ];
   obj = { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "text-md/bold", children: children.name };
   items[1] = callback(require(4338) /* Text */.Text, obj);
@@ -51,7 +51,7 @@ function DeviceOption(children) {
 function EmptyState() {
   const tmp = createCacheKey();
   let obj = { style: tmp.emptyContainer, children: null };
-  obj = { source: importDefault(10861), style: tmp.emptyArt };
+  obj = { source: importDefault(10863), style: tmp.emptyArt };
   const items = [callback(closure_8, obj), , ];
   obj = { style: tmp.emptyHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -129,7 +129,7 @@ export default function GameConsoleListActionSheet(arg0) {
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(10858).transferToPlaystationWithAlert(outer1_0, dependencyMap[outer1_4], v0);
+              obj1[0] = outer1_0(10860).transferToPlaystationWithAlert(outer1_0, dependencyMap[outer1_4], v0);
               return obj1;
             }
           } else if (arg0 === 1) {

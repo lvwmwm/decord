@@ -1,9 +1,9 @@
-// Module ID: 14729
-// Function ID: 14730
+// Module ID: 14720
+// Function ID: 14721
 // Name: toggle
 // Dependencies: [1304, 8127, 589, 8747, 10407, 1236, 2]
 
-// Module 14729 (toggle)
+// Module 14720 (toggle)
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import createToggle from "createToggle";
 

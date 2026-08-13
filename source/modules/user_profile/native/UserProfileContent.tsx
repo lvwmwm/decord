@@ -1,9 +1,9 @@
-// Module ID: 12403
-// Function ID: 12404
+// Module ID: 12404
+// Function ID: 12405
 // Name: CustomStatusBubble
-// Dependencies: [32, 19, 17, 9407, 1910, 3998, 1922, 8309, 7128, 8834, 5816, 676, 5438, 1388, 21, 8884, 589, 4310, 9516, 2007, 9507, 9500, 8837, 5768, 9293, 4187, 7796, 12404, 1236, 12039, 12405, 4282, 8885, 4534, 5796, 4061, 9519, 10181, 12339, 4755, 9721, 712, 10569, 12407, 12408, 8874, 8886, 1628, 12406, 12527, 12528, 5969, 9517, 8323, 8872, 8881, 1367, 9406, 8260, 12529, 12524, 12530, 12531, 12532, 12533, 12046, 12534, 12341, 12539, 9580, 5791, 12391, 12540, 12394, 12545, 12552, 9005, 8891, 8887, 12559, 4083, 12560, 12576, 12577, 12581, 12582, 5755, 12035, 9611, 12587, 2]
+// Dependencies: [32, 19, 17, 9407, 1910, 3998, 1922, 8309, 7128, 8834, 5816, 676, 5438, 1388, 21, 8884, 589, 4310, 9516, 2007, 9507, 9500, 8837, 5768, 9293, 4187, 7796, 12405, 1236, 12040, 12406, 4282, 8885, 4534, 5796, 4061, 9519, 10181, 12340, 4755, 9721, 712, 10571, 12408, 12409, 8874, 8886, 1628, 12407, 12528, 12529, 5969, 9517, 8323, 8872, 8881, 1367, 9406, 8260, 12530, 12525, 12531, 12532, 12533, 12534, 12047, 12535, 12342, 12540, 9580, 5791, 12392, 12541, 12395, 12546, 12553, 9005, 8891, 8887, 12560, 4083, 12561, 12577, 12578, 12582, 12583, 5755, 12036, 9611, 12588, 2]
 
-// Module 12403 (CustomStatusBubble)
+// Module 12404 (CustomStatusBubble)
 import useBadges from "useBadges";
 import importAllResult from "asyncRequireImpl";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
@@ -249,7 +249,7 @@ function EditSection(guildId) {
   obj[3] = function onPress() {
     trackUserProfileAction({ action: "EDIT_PROFILE" });
     trackUserProfileAction(4310).hideActionSheet();
-    trackUserProfileAction(10569)();
+    trackUserProfileAction(10571)();
     dependencyMap();
   };
   obj[2] = callback(guildId(4755).Button, obj);
@@ -264,13 +264,13 @@ function EditSection(guildId) {
     obj2[3] = function onPress() {
       trackUserProfileAction({ action: "EDIT_GUILD_PROFILE" });
       trackUserProfileAction(4310).hideActionSheet();
-      trackUserProfileAction(10569)();
+      trackUserProfileAction(10571)();
       callback();
     };
     tmp6Result = tmp6(tmp4(4755).Button, obj2);
   }
   obj[3] = tmp6Result;
-  return callback(trackUserProfileAction(12339), obj);
+  return callback(trackUserProfileAction(12340), obj);
 }
 function UserProfileWidgetsBoardContainer(isCurrentUser) {
   let containerBackground;
@@ -282,9 +282,9 @@ function UserProfileWidgetsBoardContainer(isCurrentUser) {
   const items = [tmp3.card, { backgroundColor: containerBackground }];
   const obj = { style: tmp3.profileContent, children: null };
   if (isCurrentUser) {
-    isCurrentUser = callback(tmp(12407), {});
+    isCurrentUser = callback(tmp(12408), {});
   }
-  const items1 = [isCurrentUser, callback(importDefault(12408), { userId, isVisible, cardStyle: items })];
+  const items1 = [isCurrentUser, callback(importDefault(12409), { userId, isVisible, cardStyle: items })];
   obj[1] = items1;
   return closure_20(closure_6, obj);
 }

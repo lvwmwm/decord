@@ -1,10 +1,10 @@
-// Module ID: 15938
-// Function ID: 15939
+// Module ID: 15929
+// Function ID: 15930
 // Name: compareUserItems
-// Dependencies: [32, 19, 17, 7146, 3998, 1922, 9669, 676, 9685, 21, 4342, 712, 15939, 2007, 4685, 647, 7147, 4034, 15611, 7148, 11, 5768, 5788, 698, 12406, 5774, 15940, 659, 8832, 1236, 1499, 5807, 5414, 4338, 9005, 4889, 9191, 4887, 11136, 6070, 9675, 2]
+// Dependencies: [32, 19, 17, 7146, 3998, 1922, 9669, 676, 9685, 21, 4342, 712, 15930, 2007, 4685, 647, 7147, 4034, 15602, 7148, 11, 5768, 5788, 698, 12407, 5774, 15931, 659, 8832, 1236, 1499, 5807, 5414, 4338, 9005, 4889, 9191, 4887, 11137, 6070, 9675, 2]
 // Exports: default
 
-// Module 15938 (compareUserItems)
+// Module 15929 (compareUserItems)
 import TableRowInner from "TableRowInner";
 import getRelativeTimestamp from "getRelativeTimestamp";
 import { View } from "explicitContentFromProto";
@@ -96,9 +96,9 @@ export default function FriendRequestsScreen() {
   }), 2);
   first = tmp9[0];
   dependencyMap = tmp11;
-  let obj2 = stateFromStoresArray(12406);
+  let obj2 = stateFromStoresArray(12407);
   gameRelationshipsByType = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj3 = stateFromStoresArray(12406);
+  let obj3 = stateFromStoresArray(12407);
   gameRelationshipsByType1 = obj3.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   const items3 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
@@ -327,9 +327,9 @@ export default function FriendRequestsScreen() {
     obj9[0] = stringResult;
     WumpusCouchSpotIllustration = tmp4(6070).WumpusCouchSpotIllustration;
     obj9[1] = WumpusCouchSpotIllustration;
-    obj8[1] = tmp32(tmp2(11136), obj9);
+    obj8[1] = tmp32(tmp2(11137), obj9);
     tmp32Result = tmp32(tmp33, obj8);
-    const tmp2Result = tmp2(11136);
+    const tmp2Result = tmp2(11137);
   } else {
     if (first1 === tmp25.Incoming) {
       outgoingSection = incomingSection;

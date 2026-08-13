@@ -1,10 +1,10 @@
-// Module ID: 14245
-// Function ID: 14246
+// Module ID: 14236
+// Function ID: 14237
 // Name: FamilyCenterPendingLinkRow
-// Dependencies: [19, 17, 7045, 21, 4342, 712, 7381, 11377, 1236, 2303, 4338, 7382, 4887, 4550, 14246, 2007, 1297, 9922, 14247, 14244, 14248, 14239, 2]
+// Dependencies: [19, 17, 7045, 21, 4342, 712, 7381, 11378, 1236, 2303, 4338, 7382, 4887, 4550, 14237, 2007, 1297, 9922, 14238, 14235, 14239, 14230, 2]
 // Exports: default
 
-// Module 14245 (FamilyCenterPendingLinkRow)
+// Module 14236 (FamilyCenterPendingLinkRow)
 import "registerAsset";
 import { View } from "registerAsset";
 import { UserLinkStatus } from "items";
@@ -41,7 +41,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       obj[3] = tmp.actionButton;
       const obj1 = { size: null, disableColor: true, source: null };
       obj1[0] = tmp5(1297).Icon.Sizes.SMALL;
-      obj1[2] = tmp2(14244);
+      obj1[2] = tmp2(14235);
       obj[4] = closure_5(tmp5(1297).Icon, obj1);
       let tmp8Result = tmp17(tmp5(4887).PressableOpacity, obj);
       let tmp14 = tmp17;
@@ -91,7 +91,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       obj5[3] = tmp.actionButton;
       const obj7 = { size: null, disableColor: true, source: null };
       obj7[0] = tmp5(1297).Icon.Sizes.SMALL;
-      obj7[2] = tmp2(14244);
+      obj7[2] = tmp2(14235);
       obj5[4] = tmp14(tmp5(1297).Icon, obj7);
       items1[1] = tmp14(tmp5(4887).PressableOpacity, obj5);
       obj4[0] = items1;
@@ -102,7 +102,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
     const obj8 = { otherUser: null, actions: null };
     obj8[0] = str;
     obj8[1] = tmp8Result;
-    return tmp14(tmp2(14239), obj8);
+    return tmp14(tmp2(14230), obj8);
   }
   tmp4 = importDefault(7382)();
 }
@@ -124,7 +124,7 @@ export default function FamilyCenterPendingLinks() {
   const tmp = createCacheKey();
   let obj = require(7381) /* useUserIdsForLinkStatus */;
   const usersForLinkStatus = obj.useUsersForLinkStatus(UserLinkStatus.PENDING);
-  require(11377) /* useAgeSpecificText */;
+  require(11378) /* useAgeSpecificText */;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { count: usersForLinkStatus.length };
   intl.formatToPlainString(importDefault(2303).IkAgkG, obj);

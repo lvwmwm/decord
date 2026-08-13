@@ -1,10 +1,10 @@
-// Module ID: 15960
-// Function ID: 15961
+// Module ID: 15951
+// Function ID: 15952
 // Name: YouAvatar
-// Dependencies: [32, 19, 17, 1383, 5037, 7128, 8834, 5816, 1388, 21, 15953, 15570, 500, 8891, 8884, 12407, 12408, 8837, 9287, 13989, 1377, 6065, 12339, 4755, 9721, 712, 1236, 15961, 15962, 1500, 8355, 9498, 8885, 589, 1367, 8872, 8881, 12289, 15963, 12524, 12530, 12531, 9507, 15964, 12534, 15095, 12341, 9580, 7454, 12540, 15966, 12394, 12545, 12552, 9005, 4083, 5755, 9500, 9519, 9082, 12035, 9611, 2]
+// Dependencies: [32, 19, 17, 1383, 5037, 7128, 8834, 5816, 1388, 21, 15944, 15561, 500, 8891, 8884, 12408, 12409, 8837, 9287, 13980, 1377, 6065, 12340, 4755, 9721, 712, 1236, 15952, 15953, 1500, 8355, 9498, 8885, 589, 1367, 8872, 8881, 12290, 15954, 12525, 12531, 12532, 9507, 15955, 12535, 15086, 12342, 9580, 7454, 12541, 15957, 12395, 12546, 12553, 9005, 4083, 5755, 9500, 9519, 9082, 12036, 9611, 2]
 // Exports: default
 
-// Module 15960 (YouAvatar)
+// Module 15951 (YouAvatar)
 import useBadges from "useBadges";
 import apexExperiment from "apexExperiment";
 import get_ActivityIndicator from "UserProfileAnalyticsProvider";
@@ -24,9 +24,9 @@ let map1;
 const require = arg1;
 function YouAvatar(arg0) {
   const callback = React.useCallback(() => {
-    const result = callback(15953).trackYouTabAvatarPress();
-    const obj = callback(15953);
-    const result1 = callback(15570).showYouAccountActionSheet();
+    const result = callback(15944).trackYouTabAvatarPress();
+    const obj = callback(15944);
+    const result1 = callback(15561).showYouAccountActionSheet();
   }, []);
   let obj = require(500) /* set */;
   const isAndroidResult = obj.isAndroid();
@@ -60,7 +60,7 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
     tmp4 = items;
   }
   obj = { style: tmp3.profileContent, children: null };
-  const items1 = [callback2(importDefault(12407), {}), callback2(importDefault(12408), { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp4 })];
+  const items1 = [callback2(importDefault(12408), {}), callback2(importDefault(12409), { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp4 })];
   obj[1] = items1;
   return callback3(closure_6, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 15665
-// Function ID: 15666
+// Module ID: 15656
+// Function ID: 15657
 // Name: ICYMIInfoScreen
-// Dependencies: [32, 5, 19, 17, 505, 21, 4342, 712, 5307, 1628, 4278, 1499, 8970, 15666, 4550, 8431, 8439, 1236, 5308, 15668, 15669, 15670, 15671, 4338, 9753, 12352, 4303, 4310, 15672, 2007, 4755, 2]
+// Dependencies: [32, 5, 19, 17, 505, 21, 4342, 712, 5307, 1628, 4278, 1499, 8970, 15657, 4550, 8431, 8439, 1236, 5308, 15659, 15660, 15661, 15662, 4338, 9753, 12353, 4303, 4310, 15663, 2007, 4755, 2]
 // Exports: default
 
-// Module 15665 (ICYMIInfoScreen)
+// Module 15656 (ICYMIInfoScreen)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "jsxProd";
 import metadata from "metadata";
@@ -93,7 +93,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
               const ICYMIAnalytics = outer1_0(8970).ICYMIAnalytics;
               const result = ICYMIAnalytics.trackFeedOnboardingScreenSkipped({ location: "overview" });
               dependencyMap(true);
-              let obj1 = outer1_0(15666);
+              let obj1 = outer1_0(15657);
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -153,7 +153,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const tmp12 = closure_11;
   const tmp15 = closure_7;
   const tmp5 = navigation(4278)();
-  obj3[0] = navigation(15668);
+  obj3[0] = navigation(15659);
   obj2[0] = obj3;
   obj2[1] = tmp.bgImage;
   const items5 = [callback3(navigation(5308), obj2), ];
@@ -165,14 +165,14 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const obj6 = { style: tmp.header, children: null };
   const obj5 = { marginTop: top + navigation(712).space.PX_12 };
   if (tmp5 === ThemeTypes.LIGHT) {
-    let tmp2Result = tmp2(15669);
+    let tmp2Result = tmp2(15660);
   } else {
-    tmp2Result = tmp2(15670);
+    tmp2Result = tmp2(15661);
   }
   const items7 = [callback3(navigation(5308), { source: { uri: tmp2Result }, style: tmp.headerImg }), , , ];
   const obj8 = { source: null, style: null };
   tmp2Result = tmp2(5308);
-  obj8[0] = navigation(15671);
+  obj8[0] = navigation(15662);
   obj8[1] = tmp.flashIcon;
   items7[1] = callback3(tmp2Result, obj8);
   const obj9 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
@@ -200,7 +200,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const obj17 = { style: tmp.infoRow, children: null };
   const obj14 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(9753).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
   const obj16 = { style: tmp.divider };
-  const items11 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(12352).NewUserIcon, { size: "sm", color: "interactive-text-active" }) }), ];
+  const items11 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(12353).NewUserIcon, { size: "sm", color: "interactive-text-active" }) }), ];
   const obj19 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: null };
   const intl5 = tmp6(1236).intl;
   obj19[3] = intl5.string(extendedOnboarding(1236).t.BnUXZi);
@@ -209,7 +209,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items10[2] = closure_10(closure_6, obj17);
   items10[3] = callback3(closure_6, { style: tmp.divider });
   const obj21 = { style: tmp.infoRow, children: null };
-  const obj18 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(12352).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj18 = { style: tmp.infoIcon, children: callback3(extendedOnboarding(12353).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
   const obj20 = { style: tmp.divider };
   const items12 = [callback3(closure_6, { style: tmp.infoIcon, children: callback3(extendedOnboarding(4303).CircleCheckIcon, { size: "sm", color: "interactive-text-active" }) }), ];
   const obj23 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: null };

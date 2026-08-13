@@ -1,10 +1,10 @@
-// Module ID: 10944
-// Function ID: 10945
+// Module ID: 10946
+// Function ID: 10947
 // Name: openChannelCallModalForChannelId
 // Dependencies: [1391, 7818, 4554, 2]
 // Exports: default
 
-// Module 10944 (openChannelCallModalForChannelId)
+// Module 10946 (openChannelCallModalForChannelId)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;

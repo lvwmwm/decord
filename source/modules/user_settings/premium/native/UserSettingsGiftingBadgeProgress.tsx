@@ -1,10 +1,10 @@
-// Module ID: 12907
-// Function ID: 12908
+// Module ID: 12908
+// Function ID: 12909
 // Name: GiftingBadgeIntro
-// Dependencies: [32, 19, 17, 8839, 21, 4342, 712, 1367, 5768, 5788, 589, 8835, 4338, 1236, 2399, 10085, 4755, 9624, 10078, 12908, 12910, 9528, 2]
+// Dependencies: [32, 19, 17, 8839, 21, 4342, 712, 1367, 5768, 5788, 589, 8835, 4338, 1236, 2399, 10085, 4755, 9624, 10078, 12909, 12911, 9528, 2]
 // Exports: default
 
-// Module 12907 (GiftingBadgeIntro)
+// Module 12908 (GiftingBadgeIntro)
 import _slicedToArray from "_slicedToArray";
 import getGiftingBadgeProgressPercent from "getGiftingBadgeProgressPercent";
 import get_ActivityIndicator from "GiftIcon";
@@ -194,7 +194,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
   } else {
     let tmp21 = callback(currentTier);
     const tmp27 = callback(nextTier);
-    const giftingBadgeProgressPercent = tmp7(12908).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
+    const giftingBadgeProgressPercent = tmp7(12909).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
     if (null != nextTier) {
       const intl2 = tmp7(1236).intl;
       obj = { count: null, nextTier: null };
@@ -316,7 +316,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     obj19[2] = intl5.string(tmp(2399).WZ4cXA);
     const items6 = [callback2(tmp7(4338).Text, obj19), ];
     if (tmp11Result) {
-      let ChevronSmallDownIcon = tmp7(12910).ChevronSmallUpIcon;
+      let ChevronSmallDownIcon = tmp7(12911).ChevronSmallUpIcon;
     } else {
       ChevronSmallDownIcon = tmp7(9528).ChevronSmallDownIcon;
     }

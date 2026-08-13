@@ -1,10 +1,10 @@
-// Module ID: 14552
-// Function ID: 14553
+// Module ID: 14543
+// Function ID: 14544
 // Name: BenefitRow
-// Dependencies: [19, 17, 1391, 21, 4342, 4002, 14550, 1297, 4338, 589, 4535, 1236, 4805, 2]
+// Dependencies: [19, 17, 1391, 21, 4342, 4002, 14541, 1297, 4338, 589, 4535, 1236, 4805, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 14552 (BenefitRow)
+// Module 14543 (BenefitRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -22,7 +22,7 @@ function BenefitRow(description) {
   ({ emojiId, guildId, title } = description);
   const tmp = callback3();
   let obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(14550), { guildId, id: emojiId, size: 22, fontSize: 18 }), callback(require(1297) /* Button */.Spacer, { size: 16 }), ];
+  const items = [callback(importDefault(14541), { guildId, id: emojiId, size: 22, fontSize: 18 }), callback(require(1297) /* Button */.Spacer, { size: 16 }), ];
   obj = { style: tmp.textContainer, children: null };
   const items1 = [title, ];
   let tmp4Result = null;

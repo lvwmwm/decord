@@ -1,10 +1,10 @@
-// Module ID: 15288
-// Function ID: 15289
+// Module ID: 15279
+// Function ID: 15280
 // Name: HappeningNowVoiceCardSubtitle
-// Dependencies: [19, 17, 1391, 676, 21, 4342, 589, 4535, 14605, 9082, 1236, 8350, 9703, 2]
+// Dependencies: [19, 17, 1391, 676, 21, 4342, 589, 4535, 14596, 9082, 1236, 8350, 9703, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 15288 (HappeningNowVoiceCardSubtitle)
+// Module 15279 (HappeningNowVoiceCardSubtitle)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -30,7 +30,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
     obj[0] = stateFromStores;
     tmp8 = tmp4(9082)(obj);
   }
-  obj[1] = jsx(voiceState(14605).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp8, children: importDefault(4535)(stateFromStores) });
+  obj[1] = jsx(voiceState(14596).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp8, children: importDefault(4535)(stateFromStores) });
   return <View style={callback().cardDetails}>{null}</View>;
 };
 export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCardSubtitle(activity) {
@@ -46,7 +46,7 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
     }
     const obj = { lineClamp: 1, children: null };
     obj[1] = tmp3;
-    return jsx(require(14605) /* HAPPENING_NOW_CARD_MARGIN_RIGHT */.HappeningNowCardSubtitle, { lineClamp: 1, children: null });
+    return jsx(require(14596) /* HAPPENING_NOW_CARD_MARGIN_RIGHT */.HappeningNowCardSubtitle, { lineClamp: 1, children: null });
   }
   if (null != activity.stream) {
     if (null != activity) {

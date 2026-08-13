@@ -1,10 +1,10 @@
-// Module ID: 12318
-// Function ID: 12319
+// Module ID: 12319
+// Function ID: 12320
 // Name: showMediaMessagePreviewActionSheet
-// Dependencies: [1391, 1922, 4310, 12319, 2007, 2]
+// Dependencies: [1391, 1922, 4310, 12320, 2007, 2]
 // Exports: default
 
-// Module 12318 (showMediaMessagePreviewActionSheet)
+// Module 12319 (showMediaMessagePreviewActionSheet)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -24,7 +24,7 @@ export default function showMediaMessagePreviewActionSheet(message) {
         obj[1] = message;
         obj[2] = user;
         obj[3] = message.closeMediaModal;
-        obj.openLazy(require(2007) /* asyncRequireImpl */(12319, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
+        obj.openLazy(require(2007) /* asyncRequireImpl */(12320, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
       }
     }
   }

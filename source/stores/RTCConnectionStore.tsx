@@ -1,7 +1,7 @@
 // Module ID: 4416
 // Function ID: 4417
 // Name: createRTCConnection
-// Dependencies: [4359, 1218, 4417, 676, 4406, 3, 4418, 4440, 709, 13159, 4227, 4420, 5170, 13160, 589, 13162, 698, 2007, 2]
+// Dependencies: [4359, 1218, 4417, 676, 4406, 3, 4418, 4440, 709, 13160, 4227, 4420, 5170, 13161, 589, 13163, 698, 2007, 2]
 
 // Module 4416 (createRTCConnection)
 import set from "set";
@@ -129,7 +129,7 @@ function createRTCConnection(arg0, arg1) {
         obj.dispatch(obj);
       });
     });
-    let tmp31 = importDefault(13159);
+    let tmp31 = importDefault(13160);
     tmp31 = new tmp31(store.getId(), arg1);
     let c17 = tmp31;
     let c15 = null;
@@ -204,7 +204,7 @@ class RTCConnectionStore extends Store {
 const prototype = RTCConnectionStore.prototype;
 prototype["initialize"] = function initialize() {
   this.waitFor(fetchFingerprint, set, getVoiceStatesForGuild);
-  const result = require(13162) /* trackVideoToggle */.setVideoToggleAnalyticsParams(this.getRTCConnectionId, this.getMediaSessionId);
+  const result = require(13163) /* trackVideoToggle */.setVideoToggleAnalyticsParams(this.getRTCConnectionId, this.getMediaSessionId);
 };
 prototype["getRTCConnection"] = function getRTCConnection() {
   return closure_3;
@@ -625,8 +625,8 @@ const rTCConnectionStore = new RTCConnectionStore(require("dispatcher"), {
         flag = false;
       }
       if (flag) {
-        flag = require(13160) /* useIsSpatialAudioAvailable */.isSpatialAudioAvailable("RTCConnectionStore");
-        const obj = require(13160) /* useIsSpatialAudioAvailable */;
+        flag = require(13161) /* useIsSpatialAudioAvailable */.isSpatialAudioAvailable("RTCConnectionStore");
+        const obj = require(13161) /* useIsSpatialAudioAvailable */;
       }
       if (closure_3 != null) {
         const result = closure_3.setSpatialAudioEnabled(flag);
@@ -923,8 +923,8 @@ let obj = {
         flag = false;
       }
       if (flag) {
-        flag = require(13160) /* useIsSpatialAudioAvailable */.isSpatialAudioAvailable("RTCConnectionStore");
-        const obj = require(13160) /* useIsSpatialAudioAvailable */;
+        flag = require(13161) /* useIsSpatialAudioAvailable */.isSpatialAudioAvailable("RTCConnectionStore");
+        const obj = require(13161) /* useIsSpatialAudioAvailable */;
       }
       if (closure_3 != null) {
         const result = closure_3.setSpatialAudioEnabled(flag);

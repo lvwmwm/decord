@@ -1,10 +1,10 @@
-// Module ID: 14951
-// Function ID: 14952
+// Module ID: 14942
+// Function ID: 14943
 // Name: VerificationListItem
-// Dependencies: [19, 17, 1922, 21, 4342, 9259, 5414, 1236, 4887, 5366, 4338, 6925, 1499, 589, 4187, 8431, 14948, 7790, 2]
+// Dependencies: [19, 17, 1922, 21, 4342, 9259, 5414, 1236, 4887, 5366, 4338, 6925, 1499, 589, 4187, 8431, 14939, 7790, 2]
 // Exports: default
 
-// Module 14951 (VerificationListItem)
+// Module 14942 (VerificationListItem)
 import noop from "noop";
 import { View } from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -110,7 +110,7 @@ export default function SettingsSecureFramesVerificationsScreen() {
     navigation.setOptions(obj);
   });
   const obj4 = navigation(4187);
-  secureFramesUserVerifiedKeys = userId(14948).useSecureFramesUserVerifiedKeys(userId);
+  secureFramesUserVerifiedKeys = userId(14939).useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];
   const memo = secureFramesUserVerifiedKeys.useMemo(() => {

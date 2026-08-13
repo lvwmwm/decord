@@ -1,9 +1,9 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 12325
+// Function ID: 12326
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 500, 4083, 12325, 12326, 8781, 5467, 8053, 5768, 5788, 8914, 12330, 4343, 8900, 8944, 7793, 4084, 10628, 2]
+// Dependencies: [32, 19, 17, 21, 500, 4083, 12326, 12327, 8781, 5467, 8053, 5768, 5788, 8914, 12331, 4343, 8900, 8944, 7793, 4084, 10630, 2]
 
-// Module 12324 (MediaViewer)
+// Module 12325 (MediaViewer)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "REAWorkaroundView";
 import get_ActivityIndicator from "handleOrientationChange";
@@ -65,7 +65,7 @@ function MediaViewer(arg0) {
   let obj = _require(8914);
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(12330)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(12331)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj1 = _require(4083);
   sharedValue = obj1.useSharedValue(0);
@@ -76,7 +76,7 @@ function MediaViewer(arg0) {
   c6 = tmp13;
   const viewerProps = useViewerProps();
   ({ ref, onScroll, onContentSizeChange, useItemVisible } = viewerProps);
-  let obj4 = _require(12325);
+  let obj4 = _require(12326);
   const mediaViewerPanGestureConfig = obj4.useMediaViewerPanGestureConfig(tmp9, swipeVelocityThreshold, onClose);
   ({ dismiss, translatePos } = mediaViewerPanGestureConfig);
   isClosing = mediaViewerPanGestureConfig.isClosing;
@@ -268,7 +268,7 @@ function MediaViewer(arg0) {
   obj6[1] = str;
   obj6[2] = renderOverlay(dismiss, overlayEnabled);
   items5[3] = translatePos(height(4084), obj6);
-  items5[4] = translatePos(tmp(10628), {});
+  items5[4] = translatePos(tmp(10630), {});
   obj4[3] = items5;
   const children = tmp28(tmp29, obj4);
   return translatePos(tmp7(5768).AnalyticsLocationProvider, { value: tmp3(value).analyticsLocations, children });

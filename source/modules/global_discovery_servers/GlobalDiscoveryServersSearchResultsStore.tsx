@@ -1,9 +1,9 @@
-// Module ID: 13032
-// Function ID: 13033
+// Module ID: 13033
+// Function ID: 13034
 // Name: map
 // Dependencies: [9072, 4241, 589, 709, 2]
 
-// Module 13032 (map)
+// Module 13033 (map)
 import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID";
 import { Store } from "initialize";
 

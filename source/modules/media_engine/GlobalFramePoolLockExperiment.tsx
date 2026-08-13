@@ -1,10 +1,10 @@
-// Module ID: 13175
-// Function ID: 13176
+// Module ID: 13176
+// Function ID: 13177
 // Name: getGlobalFramePoolLockExperimentConfig
 // Dependencies: [1368, 2]
 // Exports: getGlobalFramePoolLockExperimentConfig
 
-// Module 13175 (getGlobalFramePoolLockExperimentConfig)
+// Module 13176 (getGlobalFramePoolLockExperimentConfig)
 let obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = require("getUnitId")({ kind: "user", name: "2025-11-global-frame-pool-lock", defaultConfig: { enabled: false }, variations: obj });

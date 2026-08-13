@@ -1,10 +1,10 @@
-// Module ID: 13529
-// Function ID: 13530
+// Module ID: 13520
+// Function ID: 13521
 // Name: buildZoomedInAnalyticsEvent
-// Dependencies: [676, 7181, 12971, 13141, 2]
+// Dependencies: [676, 7181, 12972, 13142, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 13529 (buildZoomedInAnalyticsEvent)
+// Module 13520 (buildZoomedInAnalyticsEvent)
 import { AnalyticEvents } from "ME";
 
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };
@@ -655,7 +655,7 @@ let closure_5 = {
             }
             let tmp41 = null;
             if (null != tmp37) {
-              const tmp44 = require(12971) /* Opcode */.Opcode[tmp37];
+              const tmp44 = require(12972) /* Opcode */.Opcode[tmp37];
               let tmp45 = null;
               if (typeof tmp44 === "string") {
                 tmp45 = tmp44;
@@ -744,7 +744,7 @@ let closure_5 = {
           }
           let tmp26 = null;
           if (null != tmp22) {
-            const tmp29 = require(13141) /* noop */.RTCSocketOpcode[tmp22];
+            const tmp29 = require(13142) /* noop */.RTCSocketOpcode[tmp22];
             let tmp30 = null;
             if (typeof tmp29 === "string") {
               tmp30 = tmp29;

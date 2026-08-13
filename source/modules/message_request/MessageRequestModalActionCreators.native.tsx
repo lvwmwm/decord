@@ -1,10 +1,10 @@
-// Module ID: 11869
-// Function ID: 11870
+// Module ID: 11870
+// Function ID: 11871
 // Name: openAcceptMessageRequestConfirmModal
-// Dependencies: [11866, 676, 698, 4684, 1236, 4773, 4310, 11870, 2007, 2]
+// Dependencies: [11867, 676, 698, 4684, 1236, 4773, 4310, 11871, 2007, 2]
 // Exports: onMarkAsNotSpamConfirmationModal, openAcceptMessageRequestConfirmModal
 
-// Module 11869 (openAcceptMessageRequestConfirmModal)
+// Module 11870 (openAcceptMessageRequestConfirmModal)
 import { MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL as closure_3 } from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL";
 import { AnalyticEvents } from "ME";
 
@@ -37,5 +37,5 @@ export const onMarkAsNotSpamConfirmationModal = function onMarkAsNotSpamConfirma
   let onCancel;
   let onConfirm;
   ({ onConfirm, onCancel, channel } = arg0);
-  importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(11870, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
+  importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(11871, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
 };

@@ -1,10 +1,10 @@
-// Module ID: 12202
-// Function ID: 12203
+// Module ID: 12203
+// Function ID: 12204
 // Name: ProfileEffectAssetPreview
-// Dependencies: [19, 17, 678, 9426, 21, 4342, 712, 8871, 5308, 12203, 8846, 9445, 9424, 9444, 9425, 1946, 9440, 1949, 679, 9467, 9466, 9437, 1236, 4338, 7060, 9469, 12204, 9398, 4007, 9479, 2]
+// Dependencies: [19, 17, 678, 9426, 21, 4342, 712, 8871, 5308, 12204, 8846, 9445, 9424, 9444, 9425, 1946, 9440, 1949, 679, 9467, 9466, 9437, 1236, 4338, 7060, 9469, 12205, 9398, 4007, 9479, 2]
 // Exports: default
 
-// Module 12202 (ProfileEffectAssetPreview)
+// Module 12203 (ProfileEffectAssetPreview)
 import FRACTIONAL_NITRO_COIN_SIZE from "FRACTIONAL_NITRO_COIN_SIZE";
 import { View } from "CollectiblesItemType";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
@@ -29,7 +29,7 @@ function ProfileEffectAssetPreview(item) {
     obj[0] = tmp.profileEffectContainer;
     obj = { source: null, alt: null, style: null, resizeMode: "cover" };
     obj = { uri: null };
-    obj[0] = tmp2(12203);
+    obj[0] = tmp2(12204);
     obj[0] = obj;
     obj[1] = tmp4.accessibilityLabel;
     obj[2] = tmp.profileEffect;

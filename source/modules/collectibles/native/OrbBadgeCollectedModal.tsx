@@ -1,10 +1,10 @@
-// Module ID: 12224
-// Function ID: 12225
+// Module ID: 12225
+// Function ID: 12226
 // Name: OrbBadgeCollectedRootScreen
-// Dependencies: [19, 17, 4334, 21, 4342, 712, 5310, 4550, 9472, 10185, 589, 5308, 11227, 8919, 11228, 5368, 9466, 4338, 1236, 4755, 8316, 9469, 5823, 2]
+// Dependencies: [19, 17, 4334, 21, 4342, 712, 5310, 4550, 9472, 10185, 589, 5308, 11228, 8919, 11229, 5368, 9466, 4338, 1236, 4755, 8316, 9469, 5823, 2]
 // Exports: default
 
-// Module 12224 (OrbBadgeCollectedRootScreen)
+// Module 12225 (OrbBadgeCollectedRootScreen)
 import Button from "Button";
 import get_ActivityIndicator from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -35,7 +35,7 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   if (stateFromStores) {
     obj = { source: null, style: null };
     const obj1 = { uri: null };
-    obj1[0] = onPressViewBadge(11227);
+    obj1[0] = onPressViewBadge(11228);
     obj[0] = obj1;
     obj[1] = tmp.background;
     let tmp9Result = tmp9(onPressViewBadge(5308), obj);
@@ -45,9 +45,9 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   } else {
     const obj2 = { source: null, poster: null, style: null, resizeMode: "contain", muted: true, pauseWhileAppInactive: true, paused: false };
     const obj3 = { uri: null };
-    obj3[0] = onPressViewBadge(11228);
+    obj3[0] = onPressViewBadge(11229);
     obj2[0] = obj3;
-    obj2[1] = onPressViewBadge(11227);
+    obj2[1] = onPressViewBadge(11228);
     obj2[2] = tmp.background;
     tmp9Result = tmp9(tmp2(8919).VideoComponent, obj2);
     tmp12 = onPressViewBadge;

@@ -1,9 +1,9 @@
-// Module ID: 15572
-// Function ID: 15573
+// Module ID: 15563
+// Function ID: 15564
 // Name: YouStatusRadioGroup
-// Dependencies: [19, 17, 11840, 1302, 1930, 7224, 4188, 1922, 676, 11841, 21, 4342, 712, 5420, 13431, 13428, 13429, 13430, 4034, 9814, 4310, 8030, 1236, 8029, 9082, 1367, 589, 14493, 11405, 8747, 14577, 1347, 15573, 10251, 14579, 4187, 1297, 15163, 15575, 698, 5788, 11844, 4887, 4338, 9813, 5807, 5808, 9781, 15580, 2007, 15570, 9498, 4065, 9501, 5416, 9504, 9573, 7700, 9511, 8105, 5312, 5804, 5436, 4753, 13912, 2]
+// Dependencies: [19, 17, 11841, 1302, 1930, 7225, 4188, 1922, 676, 11842, 21, 4342, 712, 5420, 13432, 13429, 13430, 13431, 4034, 9814, 4310, 8030, 1236, 8029, 9082, 1367, 589, 14484, 11406, 8747, 14568, 1347, 15564, 10251, 14570, 4187, 1297, 15154, 15566, 698, 5788, 11845, 4887, 4338, 9813, 5807, 5808, 9781, 15571, 2007, 15561, 9498, 4065, 9501, 5416, 9504, 9573, 7700, 9511, 8105, 5312, 5804, 5436, 4753, 13903, 2]
 
-// Module 15572 (YouStatusRadioGroup)
+// Module 15563 (YouStatusRadioGroup)
 import importAllResult from "_setUserStatus";
 import get_ActivityIndicator from "registerAsset";
 import initialize from "initialize";
@@ -31,25 +31,25 @@ function YouStatusRadioGroup() {
   const memo = importAllResult.useMemo(() => {
     let obj = { icon: null, value: null };
     obj = { source: null, variant: "text-status-online" };
-    obj[0] = callback(13431);
+    obj[0] = callback(13432);
     obj[0] = callback2(setting(5420).TableRowIcon, obj);
     obj[1] = constants.ONLINE;
     const items = [obj, , , ];
     obj = { icon: null, value: null };
     const obj1 = { source: null, variant: "text-status-idle" };
-    obj1[0] = callback(13428);
+    obj1[0] = callback(13429);
     obj[0] = callback2(setting(5420).TableRowIcon, obj1);
     obj[1] = constants.IDLE;
     items[1] = obj;
     const obj2 = { icon: null, value: null };
     const obj3 = { source: null, variant: "text-status-dnd" };
-    obj3[0] = callback(13429);
+    obj3[0] = callback(13430);
     obj2[0] = callback2(setting(5420).TableRowIcon, obj3);
     obj2[1] = constants.DND;
     items[2] = obj2;
     const obj4 = { icon: null, value: null };
     const obj5 = { source: null, variant: "text-status-offline" };
-    obj5[0] = callback(13430);
+    obj5[0] = callback(13431);
     obj4[0] = callback2(setting(5420).TableRowIcon, obj5);
     obj4[1] = constants.INVISIBLE;
     items[3] = obj4;
@@ -98,10 +98,10 @@ function ThemeRadioGroup() {
   const items = [handleThemeChange];
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const callback = importAllResult.useCallback((arg0) => {
-    const result = callback(14493).resetBackgroundGradientPreset();
-    const obj = callback(14493);
-    callback(11405).resetCustomTheme();
-    const obj2 = callback(11405);
+    const result = callback(14484).resetBackgroundGradientPreset();
+    const obj = callback(14484);
+    callback(11406).resetCustomTheme();
+    const obj2 = callback(11406);
     callback2(8747).updateTheme(arg0);
   }, []);
   obj = { title: null, onChange: null, defaultValue: null, hasIcons: true, children: null };
@@ -110,7 +110,7 @@ function ThemeRadioGroup() {
   obj[1] = callback;
   obj[2] = stateFromStores;
   obj = { icon: null, label: null, value: null };
-  obj[0] = callback(require(14577) /* ThemeLightIcon */.ThemeLightIcon, {});
+  obj[0] = callback(require(14568) /* ThemeLightIcon */.ThemeLightIcon, {});
   let obj3 = require(1347) /* getThemeForColor */;
   obj[1] = obj3.getThemeName(constants.LIGHT, tmp2);
   obj[2] = constants.LIGHT;
@@ -118,7 +118,7 @@ function ThemeRadioGroup() {
   let tmp6Result = tmp2;
   if (tmp2) {
     const obj1 = { icon: null, label: null, value: null };
-    obj1[0] = tmp6(tmp3(15573).ThemeGrayIcon, {});
+    obj1[0] = tmp6(tmp3(15564).ThemeGrayIcon, {});
     let tmp3Result = tmp3(1347);
     obj1[1] = tmp3Result.getThemeName(tmp9.DARK, true);
     obj1[2] = tmp9.DARK;
@@ -133,7 +133,7 @@ function ThemeRadioGroup() {
   obj3[2] = constants.DARKER;
   items1[2] = callback(require(8029) /* TableRadioRow */.TableRadioRow, obj3);
   const obj4 = { icon: null, label: null, value: null };
-  obj4[0] = callback(require(14579) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
+  obj4[0] = callback(require(14570) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
   obj4[1] = require(1347) /* getThemeForColor */.getThemeName(constants.MIDNIGHT, tmp2);
   obj4[2] = constants.MIDNIGHT;
   items1[3] = callback(require(8029) /* TableRadioRow */.TableRadioRow, obj4);
@@ -147,7 +147,7 @@ function YouAccountRadioGroup() {
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   multiAccountUsers = stateFromStores;
-  let obj1 = multiAccountUsers(15163);
+  let obj1 = multiAccountUsers(15154);
   multiAccountUsers = obj1.useMultiAccountUsers().multiAccountUsers;
   let stateFromStores1 = multiAccountUsers;
   stateFromStores1 = undefined;
@@ -170,7 +170,7 @@ function YouAccountRadioGroup() {
       str2 = "never";
     }
     obj = { label: outer1_1(outer1_3[35]).getUserTag(obj, { mode: "username", identifiable: str2 }), value: id.id, subLabel: combined, icon: null };
-    obj = { user: obj, guildId: "Array", size: "Array" };
+    obj = { user: obj, guildId: "Array", size: -1 };
     obj[2] = outer1_0(outer1_3[36]).AvatarSizes.REFRESH_MEDIUM_32;
     obj[3] = outer1_19(outer1_0(outer1_3[36]).Avatar, obj);
     return obj;
@@ -189,7 +189,7 @@ function YouAccountRadioGroup() {
     obj[0] = tmp3.manage;
     obj1 = { onPress: null, children: null };
     obj1[0] = function onPress() {
-      return stateFromStores1(15575)();
+      return stateFromStores1(15566)();
     };
     let str = "text-link";
     if (tmp2) {
@@ -244,7 +244,7 @@ function FocusModeSetting() {
           const obj = callback(9813);
           callback2(4310).hideActionSheet();
           const obj2 = callback2(4310);
-          const result = callback(15570).showYouAccountActionSheet();
+          const result = callback(15561).showYouAccountActionSheet();
         };
         callback2(paths[20]).openLazy(callback(paths[49])(paths[48], paths.paths), "FocusModeOptionsActionSheet", obj);
         let obj2 = callback2(paths[20]);
@@ -455,7 +455,7 @@ const memoResult = importAllResult.memo((statusOnly) => {
     tmp7Result1 = stateFromStores1;
   }
   if (tmp7Result1) {
-    tmp7Result1 = tmp7(importDefault(13912), { title: "Developer Tools", embedded: true });
+    tmp7Result1 = tmp7(importDefault(13903), { title: "Developer Tools", embedded: true });
   }
   items2[5] = tmp7Result1;
   obj[3] = closure_20(require(4753) /* Stack */.Stack, { spacing: 24, children: items2 });

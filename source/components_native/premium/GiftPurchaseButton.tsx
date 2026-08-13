@@ -1,10 +1,10 @@
-// Module ID: 12904
-// Function ID: 12905
+// Module ID: 12905
+// Function ID: 12906
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4013, 5899, 21, 4760, 4338, 589, 5902, 7466, 5768, 10082, 4684, 1236, 4007, 10078, 4756, 12905, 2]
+// Dependencies: [5, 19, 17, 4013, 5899, 21, 4760, 4338, 589, 5902, 7466, 5768, 10082, 4684, 1236, 4007, 10078, 4756, 12906, 2]
 // Exports: default
 
-// Module 12904 (GiftPurchaseButton)
+// Module 12905 (GiftPurchaseButton)
 import jsxProd from "jsxProd";
 import set from "set";
 import { View } from "CollapsingText";

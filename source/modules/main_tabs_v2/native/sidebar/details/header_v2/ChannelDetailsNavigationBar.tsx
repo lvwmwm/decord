@@ -1,9 +1,9 @@
-// Module ID: 15890
-// Function ID: 15891
+// Module ID: 15881
+// Function ID: 15882
 // Name: MuteButton
-// Dependencies: [19, 17, 3990, 3991, 1391, 4540, 8444, 9718, 676, 8445, 21, 4342, 11802, 712, 4065, 589, 1499, 7796, 1236, 9782, 8103, 11729, 11790, 4558, 6050, 9715, 8061, 6055, 15891, 4689, 4083, 4343, 15789, 4346, 11047, 4887, 5314, 2]
+// Dependencies: [19, 17, 3990, 3991, 1391, 4540, 8444, 9718, 676, 8445, 21, 4342, 11803, 712, 4065, 589, 1499, 7796, 1236, 9782, 8103, 11730, 11791, 4558, 6050, 9715, 8061, 6055, 15882, 4689, 4083, 4343, 15780, 4346, 11048, 4887, 5314, 2]
 
-// Module 15890 (MuteButton)
+// Module 15881 (MuteButton)
 import importAllResult from "registerAsset";
 import { View } from "IconButton";
 import initialize from "initialize";
@@ -299,7 +299,7 @@ let closure_24 = importAllResult.forwardRef((cleanUp, ref) => {
   const animatedStyle = obj.useAnimatedStyle(S);
   obj = { style: items, children: null };
   items = [callback4().searchHeader, animatedStyle];
-  obj[1] = callback2(cleanUp(15789), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
+  obj[1] = callback2(cleanUp(15780), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
   return callback2(cleanUp(4083).View, obj);
 });
 let closure_25 = { code: "function ChannelDetailsNavigationBarTsx3(){const{isActive,withTiming,timingFast,runOnJS,cleanUp,width}=this.__closure;return{pointerEvents:isActive?'auto':'none',opacity:withTiming(isActive?1:0,timingFast,'animate-always',function(finished){if(finished)runOnJS(cleanUp)();}),width:width};}" };

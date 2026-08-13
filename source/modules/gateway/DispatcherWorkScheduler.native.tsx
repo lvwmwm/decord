@@ -1,10 +1,10 @@
-// Module ID: 12976
-// Function ID: 12977
+// Module ID: 12977
+// Function ID: 12978
 // Name: _queueIdleCallback
-// Dependencies: [12975, 676, 12977, 709, 2]
+// Dependencies: [12976, 676, 12978, 709, 2]
 // Exports: createDispatcherWorkScheduler
 
-// Module 12976 (_queueIdleCallback)
+// Module 12977 (_queueIdleCallback)
 import DISPATCHER_STANDARD_TIMEOUT_MS from "DISPATCHER_STANDARD_TIMEOUT_MS";
 import { AppStates } from "ME";
 import { BasicWorkScheduler } from "_trackAppBackgrounded";

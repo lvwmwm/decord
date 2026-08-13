@@ -1,10 +1,10 @@
-// Module ID: 11401
-// Function ID: 11402
+// Module ID: 11402
+// Function ID: 11403
 // Name: items
 // Dependencies: [4191, 712, 8282, 8283, 1435, 2]
 // Exports: getAppGradientColors, getAppIconSrc
 
-// Module 11401 (items)
+// Module 11402 (items)
 import hexToRgba from "hexToRgba";
 import hexToRgba from "hexToRgba";
 

@@ -1,10 +1,10 @@
-// Module ID: 14557
-// Function ID: 14558
+// Module ID: 14548
+// Function ID: 14549
 // Name: KrispLogo
-// Dependencies: [19, 17, 4393, 8127, 676, 21, 1993, 4342, 4278, 1363, 10837, 10838, 1236, 5467, 10836, 4338, 10833, 10407, 13956, 2]
+// Dependencies: [19, 17, 4393, 8127, 676, 21, 1993, 4342, 4278, 1363, 10839, 10840, 1236, 5467, 10838, 4338, 10835, 10407, 13947, 2]
 // Exports: default
 
-// Module 14557 (KrispLogo)
+// Module 14548 (KrispLogo)
 import set from "set";
 import get_ActivityIndicator from "createToggle";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -24,9 +24,9 @@ function KrispLogo() {
   const tmp = callback3();
   let obj = require(1363) /* AccessibilityAnnouncer */;
   if (obj.isThemeLight(tmp4)) {
-    let tmp2Result = tmp2(10837);
+    let tmp2Result = tmp2(10839);
   } else {
-    tmp2Result = tmp2(10838);
+    tmp2Result = tmp2(10840);
   }
   obj = { style: tmp.krisp, children: null };
   obj = { style: tmp.logo, source: tmp2Result, accessibilityLabel: null };
@@ -36,7 +36,7 @@ function KrispLogo() {
   const obj1 = { accessibilityRole: "link", accessibilityLabel: null, onPress: null, children: null };
   const intl2 = tmp5(1236).intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
-  obj1[2] = require(10836) /* handleKrispLinkPressed */.handleKrispLinkPressed;
+  obj1[2] = require(10838) /* handleKrispLinkPressed */.handleKrispLinkPressed;
   const obj2 = { variant: "text-sm/medium", color: "text-link", children: null };
   const intl3 = tmp5(1236).intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
@@ -46,7 +46,7 @@ function KrispLogo() {
   return callback2(closure_4, obj);
 }
 function SystemProcessingSubLabel() {
-  let obj = require(10833) /* getNoiseCancellationDeferredToSystem */;
+  let obj = require(10835) /* getNoiseCancellationDeferredToSystem */;
   let tmp3 = null;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     obj = { variant: "text-sm/medium", children: null };
@@ -133,5 +133,5 @@ export default function SettingsVoiceScreen() {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13956), { node });
+  return callback(importDefault(13947), { node });
 };

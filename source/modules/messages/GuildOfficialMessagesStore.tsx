@@ -1,9 +1,9 @@
-// Module ID: 13045
-// Function ID: 13046
+// Module ID: 13046
+// Function ID: 13047
 // Name: updateGuildState
 // Dependencies: [1391, 1990, 1910, 3998, 1922, 676, 4564, 1403, 589, 709, 2]
 
-// Module 13045 (updateGuildState)
+// Module 13046 (updateGuildState)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

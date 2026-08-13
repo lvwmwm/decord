@@ -1,10 +1,10 @@
-// Module ID: 11494
-// Function ID: 11495
+// Module ID: 11495
+// Function ID: 11496
 // Name: handleApplicationSelected
-// Dependencies: [19, 1391, 1922, 1498, 676, 4778, 4539, 7030, 11495, 7028, 1954, 7282, 1902, 8386, 1435, 9598, 8780, 11500, 5774, 10573, 4311, 2]
+// Dependencies: [19, 1391, 1922, 1498, 676, 4778, 4539, 7030, 11496, 7028, 1954, 7282, 1902, 8386, 1435, 9598, 8780, 11501, 5774, 10575, 4311, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11494 (handleApplicationSelected)
+// Module 11495 (handleApplicationSelected)
 import postMessageToWebView from "postMessageToWebView";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -77,7 +77,7 @@ export const handleViewAllSelected = function handleViewAllSelected(arg0) {
   ({ navigation, sectionName, applications, sectionItemType, commands } = arg0);
   ({ location: _location, context, sectionOverallPosition, sectionDescriptors, title, promotedApplicationIds } = arg0);
   let obj = require(4539) /* collectGuildAnalyticsMetadata */;
-  obj = { section_name: sectionName, num: sectionItemType === require(11495) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
+  obj = { section_name: sectionName, num: sectionItemType === require(11496) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
   obj.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_SECTION_VIEW_MORE, obj);
   navigation.navigate(constants.APP_LIST_VIEW, { analyticsLocation: _location, context, sectionName, sectionOverallPosition, applications, sectionItemType, commands, sectionDescriptors, title, promotedApplicationIds });
 };

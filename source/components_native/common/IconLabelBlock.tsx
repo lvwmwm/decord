@@ -1,9 +1,9 @@
-// Module ID: 16008
-// Function ID: 16009
+// Module ID: 15999
+// Function ID: 16000
 // Name: renderLabel
 // Dependencies: [109, 19, 17, 21, 4342, 712, 4072, 1297, 4338, 9730, 1363, 2]
 
-// Module 16008 (renderLabel)
+// Module 15999 (renderLabel)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 10887
-// Function ID: 10888
+// Module ID: 10889
+// Function ID: 10890
 // Name: CameraButton
-// Dependencies: [19, 4393, 21, 589, 10774, 1236, 10888, 9205, 9791, 9792, 10889, 4538, 2]
+// Dependencies: [19, 4393, 21, 589, 10776, 1236, 10890, 9205, 9791, 9792, 10891, 4538, 2]
 // Exports: CameraButton, GridButton
 
-// Module 10887 (CameraButton)
+// Module 10889 (CameraButton)
 import "noop";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { jsx } from "jsxProd";
@@ -24,7 +24,7 @@ export const CameraButton = function CameraButton() {
     obj = { accessibilityLabel: null, source: null, onPress: null, disableBackground: true };
     const intl = tmp(1236).intl;
     obj[0] = intl.string(tmp(1236).t["t9eQ/g"]);
-    obj[1] = importDefault(10888);
+    obj[1] = importDefault(10890);
     obj[2] = function onPress() {
       const keys = Object.keys(closure_1);
       const found = keys.find((arg0) => arg0 !== closure_0);
@@ -33,8 +33,8 @@ export const CameraButton = function CameraButton() {
         const obj = outer1_1(outer1_2[7]);
       }
     };
-    tmp4 = jsx(importDefault(10774), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
-    const tmp7 = importDefault(10774);
+    tmp4 = jsx(importDefault(10776), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
+    const tmp7 = importDefault(10776);
   }
   return tmp4;
 };
@@ -47,12 +47,12 @@ export const GridButton = function GridButton(channel) {
       const obj = { accessibilityLabel: null, source: null, onPress: null, disableBackground: true };
       const intl = channel(1236).intl;
       obj[0] = intl.string(channel(1236).t.HK4JIu);
-      obj[1] = tmp(10889);
+      obj[1] = tmp(10891);
       obj[2] = function onPress() {
         return outer1_1(outer1_2[11]).selectParticipant(channel.id, null);
       };
-      tmp4 = jsx(tmp(10774), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
-      const tmpResult = tmp(10774);
+      tmp4 = jsx(tmp(10776), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
+      const tmpResult = tmp(10776);
     }
   }
   return tmp4;

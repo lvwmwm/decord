@@ -1,10 +1,10 @@
-// Module ID: 15900
-// Function ID: 15901
+// Module ID: 15891
+// Function ID: 15892
 // Name: getChannelOpenedRouteTrackingProps
 // Dependencies: [1391, 7278, 1222, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 15900 (getChannelOpenedRouteTrackingProps)
+// Module 15891 (getChannelOpenedRouteTrackingProps)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 14465
-// Function ID: 14466
+// Module ID: 14456
+// Function ID: 14457
 // Name: VideoQuestModalCloseButton
 // Dependencies: [21, 712, 4887, 1236, 5366, 2]
 // Exports: default
 
-// Module 14465 (VideoQuestModalCloseButton)
+// Module 14456 (VideoQuestModalCloseButton)
 import { jsx } from "jsxProd";
 
 const result = require("PressableBase").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalCloseButton.tsx");

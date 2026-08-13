@@ -1,10 +1,10 @@
-// Module ID: 14366
-// Function ID: 14367
+// Module ID: 14357
+// Function ID: 14358
 // Name: BountiesAutoScrollOverlayNuxGradient
 // Dependencies: [19, 17, 21, 712, 4083, 4343, 4346, 4766, 2]
 // Exports: default
 
-// Module 14366 (BountiesAutoScrollOverlayNuxGradient)
+// Module 14357 (BountiesAutoScrollOverlayNuxGradient)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 11977
+// Function ID: 11978
 // Name: Tier3OverrideNotice
-// Dependencies: [17, 21, 4342, 712, 8240, 4338, 11977, 11978, 1236, 2335, 11981, 2]
+// Dependencies: [17, 21, 4342, 712, 8240, 4338, 11978, 11979, 1236, 2335, 11982, 2]
 // Exports: default
 
-// Module 11976 (Tier3OverrideNotice)
+// Module 11977 (Tier3OverrideNotice)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -33,8 +33,8 @@ const result = require("createCacheKey").fileFinishedImporting("modules/premium/
 
 export default function GuildPowerupsNotificationContainer(guildId) {
   guildId = guildId.guildId;
-  const tmp4 = importDefault(11977)(guildId);
-  const tmp5 = importDefault(11978)(guildId);
+  const tmp4 = importDefault(11978)(guildId);
+  const tmp5 = importDefault(11979)(guildId);
   let obj = require(8240) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsNotificationContainer");
   if (tmp4.shouldShow) {
@@ -66,7 +66,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
       const obj2 = { guildId: null, powerupNames: null, warnings: null };
       obj2[0] = guildId;
       ({ expiringPowerupNames: obj5[1], warnings: obj5[2] } = tmp5);
-      shouldShow2 = tmp11(tmp2(11981), obj2);
+      shouldShow2 = tmp11(tmp2(11982), obj2);
     }
     items[2] = shouldShow2;
     obj[1] = items;

@@ -1,10 +1,10 @@
-// Module ID: 12710
-// Function ID: 12711
+// Module ID: 12711
+// Function ID: 12712
 // Name: GuildDiscoveryPreviewElement
 // Dependencies: [19, 17, 4334, 21, 4342, 712, 589, 4191, 4338, 1236, 5819, 1430, 2]
 // Exports: default
 
-// Module 12710 (GuildDiscoveryPreviewElement)
+// Module 12711 (GuildDiscoveryPreviewElement)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

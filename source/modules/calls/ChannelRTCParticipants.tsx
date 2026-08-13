@@ -1,10 +1,10 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 10615
+// Function ID: 10616
 // Name: sortKey
-// Dependencies: [1390, 4364, 1218, 5036, 1391, 4393, 5178, 1922, 10614, 4361, 4363, 676, 4406, 5186, 3985, 10615, 12, 10616, 10617, 4534, 8862, 4408, 2]
+// Dependencies: [1390, 4364, 1218, 5036, 1391, 4393, 5178, 1922, 10616, 4361, 4363, 676, 4406, 5186, 3985, 10617, 12, 10618, 10619, 4534, 8862, 4408, 2]
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual, getEmbeddedActivityParticipantId
 
-// Module 10613 (sortKey)
+// Module 10615 (sortKey)
 import participantFromServer from "participantFromServer";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -220,11 +220,11 @@ prototype["updateParticipant"] = function updateParticipant(arg0) {
   }
   return flag;
 };
-prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f74870) {
+prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f74850) {
   const self = this;
-  let closure_0 = f74870;
+  let closure_0 = f74850;
   let flag;
-  if (this.participants[f74870] != null) {
+  if (this.participants[f74850] != null) {
     flag = arr.reduce((arg0, type) => {
       let flag = arg0;
       if (type.type === outer1_14.USER) {
@@ -264,11 +264,11 @@ prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f748
   }
   return flag;
 };
-prototype["updateParticipantQuality"] = function updateParticipantQuality(f74877, closure_1, closure_2) {
+prototype["updateParticipantQuality"] = function updateParticipantQuality(f74857, closure_1, closure_2) {
   const self = this;
   let closure_0 = closure_2;
   let flag;
-  if (this.participants[f74877] != null) {
+  if (this.participants[f74857] != null) {
     flag = arr.reduce((arg0, type) => {
       let flag = arg0;
       if (type.type === outer1_14.STREAM) {
@@ -314,7 +314,7 @@ prototype["_getEmbeddedActivities"] = function _getEmbeddedActivities() {
     uniqByResult = require(12) /* apply */.uniqBy(items, (compositeInstanceId) => compositeInstanceId.compositeInstanceId);
     const obj = require(12) /* apply */;
   }
-  const ContentClassificationEmbeddedActivityFilterExperiment = require(10616) /* apexExperiment */.ContentClassificationEmbeddedActivityFilterExperiment;
+  const ContentClassificationEmbeddedActivityFilterExperiment = require(10618) /* apexExperiment */.ContentClassificationEmbeddedActivityFilterExperiment;
   const currentUser = authStore2.getCurrentUser();
   let nsfwAllowed;
   if (currentUser != null) {
@@ -403,7 +403,7 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       obj.id = user.id;
       obj.voiceState = voiceStateForChannel;
       obj.voicePlatform = voicePlatformForChannel;
-      let obj1 = require(10615) /* useIsSpeaking */;
+      let obj1 = require(10617) /* useIsSpeaking */;
       obj = { userId: null, checkIsMuted: true };
       obj[0] = userId;
       obj.speaking = obj1.getIsSpeaking(obj);

@@ -1,10 +1,10 @@
-// Module ID: 11199
-// Function ID: 11200
+// Module ID: 11200
+// Function ID: 11201
 // Name: apiRequest
-// Dependencies: [11198, 8952, 676, 4227, 530, 709, 687, 500, 9331, 2]
+// Dependencies: [11199, 8952, 676, 4227, 530, 709, 687, 500, 9331, 2]
 // Exports: fetchIsSpotifyProtocolRegistered, getAccessToken, getDevices, getProfile, pause, play, setActiveDevice, subscribePlayerStateNotifications
 
-// Module 11199 (apiRequest)
+// Module 11200 (apiRequest)
 import isProtocolRegistered from "isProtocolRegistered";
 import WEB_OPEN from "WEB_OPEN";
 import ME from "ME";

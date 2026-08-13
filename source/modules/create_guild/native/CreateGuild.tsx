@@ -1,10 +1,10 @@
-// Module ID: 11764
-// Function ID: 11765
+// Module ID: 11765
+// Function ID: 11766
 // Name: CreateGuild
-// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 4741, 4751, 4753, 4338, 1236, 11247, 7835, 5808, 4755, 8518, 2]
+// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 4741, 4751, 4753, 4338, 1236, 11248, 7835, 5808, 4755, 8518, 2]
 // Exports: default
 
-// Module 11764 (CreateGuild)
+// Module 11765 (CreateGuild)
 import noop from "noop";
 import { ScrollView } from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -82,7 +82,7 @@ export default function CreateGuild(arg0) {
   }
   obj1[3] = customDescription;
   items1[1] = closure_7(isScreenReaderEnabled(4338).Text, obj1);
-  items1[2] = closure_7(ref(11247), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
+  items1[2] = closure_7(ref(11248), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
   const obj3 = { isClearable: true, label: null, errorMessage: null, value: null, onChange: null, autoFocus: null, autoCorrect: false, returnKeyType: "done" };
   const intl3 = tmp4(1236).intl;
   obj3[1] = intl3.string(isScreenReaderEnabled(1236).t.dBih7e);

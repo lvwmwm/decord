@@ -1,10 +1,10 @@
-// Module ID: 12806
-// Function ID: 12807
+// Module ID: 12807
+// Function ID: 12808
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 // Exports: getBogoMarketingMaterialsEnabled, useBogoMarketingMaterialsEnabled
 
-// Module 12806 (apexExperiment)
+// Module 12807 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-bogo-promotion-marketing-materials-v2", kind: "user", defaultConfig: false, variations: { 1: true } });

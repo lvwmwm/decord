@@ -1,10 +1,10 @@
-// Module ID: 17040
-// Function ID: 17041
+// Module ID: 17031
+// Function ID: 17032
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 4342, 7852, 7853, 4753, 4338, 11384, 17038, 11149, 2]
+// Dependencies: [19, 21, 4342, 7852, 7853, 4753, 4338, 11385, 17029, 11150, 2]
 // Exports: default
 
-// Module 17040 (SafetyFlowTaskScreen)
+// Module 17031 (SafetyFlowTaskScreen)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -60,7 +60,7 @@ export default function SafetyFlowTaskScreen(action) {
   children = [closure_4(require(7853) /* ModalContent */.ModalContent, obj), ];
   if (undefined === footer) {
     if (withLogout) {
-      withLogout = tmp7(importDefault(17038), {});
+      withLogout = tmp7(importDefault(17029), {});
     }
     const items3 = [withLogout, ];
     tmp7Result = null != action;
@@ -69,12 +69,12 @@ export default function SafetyFlowTaskScreen(action) {
       obj1[1] = action;
       obj1[2] = onAction;
       obj1[3] = submitting;
-      tmp7Result = tmp7(tmp4(11149).ModalActionButton, obj1);
+      tmp7Result = tmp7(tmp4(11150).ModalActionButton, obj1);
     }
     const obj2 = { children: null };
     items3[1] = tmp7Result;
     obj2[0] = items3;
-    footer = tmp3(tmp4(11384).ModalFooter, obj2);
+    footer = tmp3(tmp4(11385).ModalFooter, obj2);
   }
   children[1] = footer;
   return closure_4(require(7852) /* ModalScreen */.ModalScreen, { children });

@@ -1,10 +1,10 @@
-// Module ID: 10851
-// Function ID: 10852
+// Module ID: 10853
+// Function ID: 10854
 // Name: disconnectRemote
-// Dependencies: [5, 4416, 4360, 4359, 676, 698, 709, 4683, 1236, 9207, 10852, 530, 1208, 10853, 10854, 10857, 2]
+// Dependencies: [5, 4416, 4360, 4359, 676, 698, 709, 4683, 1236, 9207, 10854, 530, 1208, 10855, 10856, 10859, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 10851 (disconnectRemote)
+// Module 10853 (disconnectRemote)
 import expandEventProperties from "expandEventProperties";
 import createRTCConnection from "createRTCConnection";
 import handleUpdate from "handleUpdate";

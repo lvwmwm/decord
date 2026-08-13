@@ -1,10 +1,10 @@
-// Module ID: 12707
-// Function ID: 12708
+// Module ID: 12708
+// Function ID: 12709
 // Name: ChannelPreview
 // Dependencies: [19, 17, 1910, 21, 4342, 712, 589, 4191, 4338, 1236, 5819, 2]
 // Exports: default
 
-// Module 12707 (ChannelPreview)
+// Module 12708 (ChannelPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

@@ -1,10 +1,10 @@
-// Module ID: 14228
-// Function ID: 14229
+// Module ID: 14219
+// Function ID: 14220
 // Name: ChangeSpendingLimitScreen
-// Dependencies: [5, 19, 17, 21, 4342, 712, 8007, 4338, 1236, 2303, 14229, 4062, 4303, 4550, 4061, 5896, 7852, 7853, 4753, 7835, 11384, 5191, 4755, 5310, 11386, 2]
+// Dependencies: [5, 19, 17, 21, 4342, 712, 8007, 4338, 1236, 2303, 14220, 4062, 4303, 4550, 4061, 5896, 7852, 7853, 4753, 7835, 11385, 5191, 4755, 5310, 11387, 2]
 // Exports: default
 
-// Module 14228 (ChangeSpendingLimitScreen)
+// Module 14219 (ChangeSpendingLimitScreen)
 import Themes from "Themes";
 import TextInput from "TextInput";
 import get_ActivityIndicator from "ModalContent";
@@ -68,7 +68,7 @@ function ChangeSpendingLimitScreen(teenId) {
     return applyArgumentsResult;
   }
   let formatToPlainStringResult = createCacheKey();
-  let obj = _require(14229);
+  let obj = _require(14220);
   const changeSpendingLimitFormState = obj.useChangeSpendingLimitFormState(teenId.teenId);
   ({ amountInput, isOverspending, canSave, isSubmitting, monthlySpend, save: c0 } = changeSpendingLimitFormState);
   let formatPriceResult = null;
@@ -167,7 +167,7 @@ function ChangeSpendingLimitScreen(teenId) {
     items4[1] = tmp9(tmp2(4755).Button, obj11);
     obj10[0] = items4;
     obj9[0] = tmp8(tmp2(5191).ButtonGroup, obj10);
-    items3[1] = tmp9(tmp2(11384).ModalFooter, obj9);
+    items3[1] = tmp9(tmp2(11385).ModalFooter, obj9);
     obj8[0] = items3;
     return tmp8(tmp2(7852).ModalScreen, obj8);
   } else if (isOverspending) {
@@ -235,5 +235,5 @@ export default function ChangeSpendingLimitModal(teenId) {
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo, headerBackTitle: null };
   let intl = teenId(1236).intl;
   obj[2] = intl.string(teenId(1236).t["13/7kX"]);
-  return callback(teenId(11386).Modal, obj);
+  return callback(teenId(11387).Modal, obj);
 };

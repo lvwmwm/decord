@@ -1,10 +1,10 @@
-// Module ID: 10765
-// Function ID: 10766
+// Module ID: 10767
+// Function ID: 10768
 // Name: RequestToSpeakRow
-// Dependencies: [32, 19, 17, 1218, 1391, 5173, 21, 4342, 712, 10766, 5808, 1236, 589, 4529, 10767, 10769, 5414, 5181, 7842, 7844, 4310, 7823, 1297, 10771, 4065, 5768, 5788, 5189, 5183, 5437, 5439, 4753, 5807, 4338, 10772, 2]
+// Dependencies: [32, 19, 17, 1218, 1391, 5173, 21, 4342, 712, 10768, 5808, 1236, 589, 4529, 10769, 10771, 5414, 5181, 7842, 7844, 4310, 7823, 1297, 10773, 4065, 5768, 5788, 5189, 5183, 5437, 5439, 4753, 5807, 4338, 10774, 2]
 // Exports: default
 
-// Module 10765 (RequestToSpeakRow)
+// Module 10767 (RequestToSpeakRow)
 import TableRowGroupTitle from "TableRowGroupTitle";
 import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint";
 import { View } from "useIsStageSpeakingDisabledForCurrentUser";
@@ -21,7 +21,7 @@ function RequestToSpeakRow(channel) {
   let c0;
   let tmp2;
   let _require;
-  let obj = _require(10766);
+  let obj = _require(10768);
   [tmp2, c0] = callback(obj.useRequestToSpeakPermission(channel.channel.id), 2);
   obj = { label: null, subLabel: null, value: null, onValueChange: null };
   const intl = _require(1236).intl;
@@ -64,9 +64,9 @@ function ManageSelfSpeakerRow(channel) {
     stringResult = string(t["8Joh+p"]);
   }
   if (tmp8) {
-    let MicrophoneArrowRightIcon = tmp(10767).GroupArrowDownIcon;
+    let MicrophoneArrowRightIcon = tmp(10769).GroupArrowDownIcon;
   } else {
-    MicrophoneArrowRightIcon = tmp(10769).MicrophoneArrowRightIcon;
+    MicrophoneArrowRightIcon = tmp(10771).MicrophoneArrowRightIcon;
   }
   obj = {
     onPress() {
@@ -92,7 +92,7 @@ function ManageSelfSpeakerRow(channel) {
   obj[1] = callback2(MicrophoneArrowRightIcon, {});
   obj[2] = stringResult;
   obj = { source: null };
-  obj[0] = tmp4(10771);
+  obj[0] = tmp4(10773);
   obj[3] = callback2(channel(1297).Icon, obj);
   return callback2(channel(5414).TableRow, obj);
 }
@@ -184,13 +184,13 @@ export default function RequestToSpeakActionSheet(channelId) {
     obj11[0] = stateFromStores;
     const _Math = Math;
     obj11[1] = Math.max(first1 - first - 8, 0);
-    items4[1] = callback2(tmp3(10772), obj11);
+    items4[1] = callback2(tmp3(10774), obj11);
     obj2[1] = items4;
     obj1[2] = callback3(tmp(4753).Stack, obj2);
     obj[2] = callback2(tmp(5439).BottomSheetScrollView, obj1);
     obj[1] = callback2(tmp(5437).BottomSheet, obj);
     tmp14 = callback2(tmp(5768).AnalyticsLocationProvider, obj);
-    const tmp3Result = tmp3(10772);
+    const tmp3Result = tmp3(10774);
   }
   return tmp14;
 };

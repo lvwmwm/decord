@@ -1,10 +1,10 @@
-// Module ID: 16305
-// Function ID: 16306
+// Module ID: 16296
+// Function ID: 16297
 // Name: ParticipantsSummary
-// Dependencies: [32, 19, 17, 21, 4342, 712, 4191, 16306, 10907, 1297, 4764, 4338, 4083, 4770, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 4191, 16297, 10909, 1297, 4764, 4338, 4083, 4770, 2]
 // Exports: default
 
-// Module 16305 (ParticipantsSummary)
+// Module 16296 (ParticipantsSummary)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -19,12 +19,12 @@ function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
   ({ applicationId, channelId } = arg0);
-  const obj = { users: importDefault(16306)(applicationId, channelId), max: 5, avatarSize: null, withPlusCount: true, style: null, cutout: null };
-  const tmp = importDefault(16306)(applicationId, channelId);
+  const obj = { users: importDefault(16297)(applicationId, channelId), max: 5, avatarSize: null, withPlusCount: true, style: null, cutout: null };
+  const tmp = importDefault(16297)(applicationId, channelId);
   obj[2] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[4] = { marginBottom: 8 };
   obj[5] = { inset: -8 };
-  return callback2(importDefault(10907), obj);
+  return callback2(importDefault(10909), obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { ongoingActivityContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.4)", alignItems: "center", justifyContent: "center" }, overlayActivityName: null, overlayActivityNameText: null, loadingTextColor: null, ellipsis: null };

@@ -1,9 +1,9 @@
-// Module ID: 12897
-// Function ID: 12898
+// Module ID: 12898
+// Function ID: 12899
 // Name: importDefaultResult1
-// Dependencies: [19, 17, 4383, 1218, 10372, 4012, 4391, 676, 1924, 21, 4342, 712, 4072, 10373, 4338, 1236, 4755, 5888, 9448, 1297, 5778, 9528, 5818, 12898, 12899, 12647, 12649, 12650, 12648, 12651, 12652, 12653, 12654, 12214, 12655, 12658, 12659, 12900, 589, 10379, 2]
+// Dependencies: [19, 17, 4383, 1218, 10372, 4012, 4391, 676, 1924, 21, 4342, 712, 4072, 10373, 4338, 1236, 4755, 5888, 9448, 1297, 5778, 9528, 5818, 12899, 12900, 12648, 12650, 12651, 12649, 12652, 12653, 12654, 12655, 12215, 12656, 12659, 12660, 12901, 589, 10379, 2]
 
-// Module 12897 (importDefaultResult1)
+// Module 12898 (importDefaultResult1)
 import importAllResult from "Button";
 import get_ActivityIndicator from "getPrice";
 import importDefaultResult from "addApplication";
@@ -218,7 +218,7 @@ prototype["renderHeader"] = function renderHeader(arg0, children) {
     const obj10 = { style: null, size: null, source: null, color: null };
     obj10[0] = tmp.rowArrow;
     obj10[1] = tmp2(1297).Icon.Sizes.LARGE;
-    obj10[2] = importDefault(isOpen ? 12898 : 12899);
+    obj10[2] = importDefault(isOpen ? 12899 : 12900);
     obj10[3] = tmp.arrow.color;
     items1[2] = tmp6(tmp2(1297).Icon, obj10);
     obj[1] = items1;
@@ -228,36 +228,36 @@ prototype["renderHeader"] = function renderHeader(arg0, children) {
 };
 prototype["getCardHeaderThumbnail"] = function getCardHeaderThumbnail(id, giftStyle) {
   if (constants2.STANDARD_BOX === giftStyle) {
-    return importDefault(12647);
-  } else if (tmp.CAKE === giftStyle) {
-    return importDefault(12649);
-  } else if (tmp.CHEST === giftStyle) {
-    return importDefault(12650);
-  } else if (tmp.COFFEE === giftStyle) {
     return importDefault(12648);
-  } else if (tmp.SEASONAL_STANDARD_BOX === giftStyle) {
+  } else if (tmp.CAKE === giftStyle) {
+    return importDefault(12650);
+  } else if (tmp.CHEST === giftStyle) {
     return importDefault(12651);
-  } else if (tmp.SEASONAL_CAKE === giftStyle) {
+  } else if (tmp.COFFEE === giftStyle) {
+    return importDefault(12649);
+  } else if (tmp.SEASONAL_STANDARD_BOX === giftStyle) {
     return importDefault(12652);
-  } else if (tmp.SEASONAL_CHEST === giftStyle) {
+  } else if (tmp.SEASONAL_CAKE === giftStyle) {
     return importDefault(12653);
-  } else if (tmp.SEASONAL_COFFEE === giftStyle) {
+  } else if (tmp.SEASONAL_CHEST === giftStyle) {
     return importDefault(12654);
+  } else if (tmp.SEASONAL_COFFEE === giftStyle) {
+    return importDefault(12655);
   } else if (tmp.NITROWEEN_STANDARD === giftStyle) {
     const obj = { uri: null };
-    obj[0] = importDefault(12214);
+    obj[0] = importDefault(12215);
     return obj;
   } else if (TIER_0.TIER_0 === id) {
-    return importDefault(12655);
+    return importDefault(12656);
   } else if (tmp3.TIER_1 === id) {
-    return importDefault(12658);
+    return importDefault(12659);
   } else {
     if (tmp3.TIER_2 !== id) {
       if (tmp3.LEGACY !== id) {
         return null;
       }
     }
-    return importDefault(12659);
+    return importDefault(12660);
   }
 };
 prototype["renderCardHeader"] = function renderCardHeader(sku) {

@@ -1,10 +1,10 @@
-// Module ID: 11468
-// Function ID: 11469
+// Module ID: 11469
+// Function ID: 11470
 // Name: ForumPostList
-// Dependencies: [32, 19, 17, 1398, 21, 4342, 5934, 11449, 11459, 11469, 11472, 2]
+// Dependencies: [32, 19, 17, 1398, 21, 4342, 5934, 11450, 11460, 11470, 11473, 2]
 // Exports: default
 
-// Module 11468 (ForumPostList)
+// Module 11469 (ForumPostList)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -49,7 +49,7 @@ export default function ForumPostList(arg0) {
     obj[0] = tmp.header;
     let tmp10 = hasFlagResult;
     if (hasFlagResult) {
-      tmp10 = callback2(importDefault(11449), {});
+      tmp10 = callback2(importDefault(11450), {});
     }
     const items = [tmp10, ];
     let tmp13 = 0 !== first.length;
@@ -58,16 +58,16 @@ export default function ForumPostList(arg0) {
       obj1[0] = first;
       obj1[1] = tmp4[1];
       obj1[2] = hasUnreads;
-      tmp13 = callback2(require(11459) /* ForumPostAppliedTagPills */.ForumPostAppliedTagPills, obj1);
+      tmp13 = callback2(require(11460) /* ForumPostAppliedTagPills */.ForumPostAppliedTagPills, obj1);
     }
     items[1] = tmp13;
     obj[1] = items;
     tmp6Result = tmp6(tmp8, obj);
   }
   const obj2 = { children: null };
-  const items1 = [tmp6Result, callback2(importDefault(11469), { thread, firstMessage, hasUnreads, isNew, messageContent, media, isEmbed, isLocalDeviceMedia, firstMessageLoaded, senderModifier })];
+  const items1 = [tmp6Result, callback2(importDefault(11470), { thread, firstMessage, hasUnreads, isNew, messageContent, media, isEmbed, isLocalDeviceMedia, firstMessageLoaded, senderModifier })];
   obj[1] = items1;
-  const items2 = [closure_7(View, obj), callback2(importDefault(11472), { thread, firstMessage, hasUnreads, parentChannel })];
+  const items2 = [closure_7(View, obj), callback2(importDefault(11473), { thread, firstMessage, hasUnreads, parentChannel })];
   obj2[0] = items2;
   return closure_7(closure_8, obj2);
 };

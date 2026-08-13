@@ -1,10 +1,10 @@
-// Module ID: 12563
-// Function ID: 12564
+// Module ID: 12564
+// Function ID: 12565
 // Name: EmptyGuildList
-// Dependencies: [32, 19, 17, 21, 4342, 712, 1297, 1236, 12564, 12565, 12561, 4338, 5409, 9518, 12566, 5436, 5437, 6035, 9116, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 1297, 1236, 12565, 12566, 12562, 4338, 5409, 9518, 12567, 5436, 5437, 6035, 9116, 2]
 // Exports: default
 
-// Module 12563 (EmptyGuildList)
+// Module 12564 (EmptyGuildList)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "SearchField";
@@ -20,8 +20,8 @@ function EmptyGuildList() {
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["2bfiLk"]);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.V6nAfF);
-  obj[3] = importDefault(12564);
-  obj[4] = importDefault(12565);
+  obj[3] = importDefault(12565);
+  obj[4] = importDefault(12566);
   return callback2(require(1297) /* Button */.ThemedEmptyState, obj);
 }
 function GuildList(recipientId) {
@@ -32,7 +32,7 @@ function GuildList(recipientId) {
   let dependencyMap;
   let callback;
   dependencyMap = createCacheKey();
-  let obj = recipientId(12561);
+  let obj = recipientId(12562);
   [arr, arr2] = callback(obj.useServerInviteRows(recipientId, recipientId.query), 2);
   if (0 === arr.length) {
     if (0 === arr2.length) {

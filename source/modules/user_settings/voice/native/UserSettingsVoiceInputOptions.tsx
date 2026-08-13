@@ -1,10 +1,10 @@
-// Module ID: 10822
-// Function ID: 10823
+// Module ID: 10824
+// Function ID: 10825
 // Name: handleInputModePress
-// Dependencies: [19, 17, 4393, 676, 21, 4342, 5801, 1236, 9205, 589, 10818, 5414, 4338, 5808, 10823, 2]
+// Dependencies: [19, 17, 4393, 676, 21, 4342, 5801, 1236, 9205, 589, 10820, 5414, 4338, 5808, 10825, 2]
 // Exports: default
 
-// Module 10822 (handleInputModePress)
+// Module 10824 (handleInputModePress)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -95,7 +95,7 @@ export default function UserSettingsVoiceInputOptions() {
       obj = { threshold };
       return obj.setMode(inputMode, obj);
     };
-    obj5[1] = tmp5(importDefault(10823), obj6);
+    obj5[1] = tmp5(importDefault(10825), obj6);
     obj4[1] = tmp5(View, obj5);
     items2[1] = tmp5(tmp(5414).TableRow, obj4);
     obj2[0] = items2;
@@ -103,6 +103,6 @@ export default function UserSettingsVoiceInputOptions() {
   }
   items1[1] = tmp4Result;
   obj[2] = items1;
-  return closure_8(inputMode(10818).UserSettingsTableRowGroup, obj);
+  return closure_8(inputMode(10820).UserSettingsTableRowGroup, obj);
 };
 export { handleInputModePress };

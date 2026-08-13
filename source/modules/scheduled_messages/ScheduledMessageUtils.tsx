@@ -1,10 +1,10 @@
-// Module ID: 11442
-// Function ID: 11443
+// Module ID: 11443
+// Function ID: 11444
 // Name: scheduledMessageLogger
-// Dependencies: [32, 3999, 1922, 676, 3, 7189, 1403, 589, 11443, 3943, 2]
+// Dependencies: [32, 3999, 1922, 676, 3, 7189, 1403, 589, 11444, 3943, 2]
 // Exports: canUseScheduledMessages, convertServerScheduledMessage, convertServerScheduledMessageSend, parseContentAndFlagsForSilentMessage, unparseContentAndFlagsForSilentMessage, useCanUseScheduledMessages
 
-// Module 11442 (scheduledMessageLogger)
+// Module 11443 (scheduledMessageLogger)
 import _slicedToArray from "_slicedToArray";
 import hasFlag from "hasFlag";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -85,8 +85,8 @@ export const canUseScheduledMessages = function canUseScheduledMessages(arg0) {
   if (!flag) {
     const obj = { location: null };
     obj[0] = arg0;
-    flag = importDefault(11443).getConfig(obj);
-    const obj2 = importDefault(11443);
+    flag = importDefault(11444).getConfig(obj);
+    const obj2 = importDefault(11444);
   }
   return flag;
 };

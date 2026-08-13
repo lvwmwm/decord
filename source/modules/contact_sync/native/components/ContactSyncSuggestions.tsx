@@ -1,10 +1,10 @@
-// Module ID: 12115
-// Function ID: 12116
+// Module ID: 12116
+// Function ID: 12117
 // Name: SuggestedFriendsSectionHeader
-// Dependencies: [32, 19, 17, 676, 12116, 21, 4342, 712, 5307, 4761, 4338, 4187, 1435, 8497, 1297, 1236, 4065, 4191, 11, 8012, 7790, 4766, 691, 4755, 698, 2]
+// Dependencies: [32, 19, 17, 676, 12117, 21, 4342, 712, 5307, 4761, 4338, 4187, 1435, 8497, 1297, 1236, 4065, 4191, 11, 8012, 7790, 4766, 691, 4755, 698, 2]
 // Exports: default
 
-// Module 12115 (SuggestedFriendsSectionHeader)
+// Module 12116 (SuggestedFriendsSectionHeader)
 import _slicedToArray from "_slicedToArray";
 import Form from "Form";
 import { View } from "hexToRgba";

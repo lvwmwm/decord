@@ -1,10 +1,10 @@
-// Module ID: 11870
-// Function ID: 11871
+// Module ID: 11871
+// Function ID: 11872
 // Name: SpamMessageRequestHamActionSheet
-// Dependencies: [32, 19, 17, 1922, 21, 4342, 712, 589, 11865, 4062, 1236, 8494, 4310, 5437, 5436, 5805, 8012, 4755, 2]
+// Dependencies: [32, 19, 17, 1922, 21, 4342, 712, 589, 11866, 4062, 1236, 8494, 4310, 5437, 5436, 5805, 8012, 4755, 2]
 // Exports: default
 
-// Module 11870 (SpamMessageRequestHamActionSheet)
+// Module 11871 (SpamMessageRequestHamActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "Button";
@@ -45,7 +45,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(recipientId.getRecipientId()));
-  let obj1 = require(11865) /* useMessageRequestActions */;
+  let obj1 = require(11866) /* useMessageRequestActions */;
   obj = {
     user: stateFromStores,
     onError() {

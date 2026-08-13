@@ -1,9 +1,9 @@
-// Module ID: 15589
-// Function ID: 15590
+// Module ID: 15580
+// Function ID: 15581
 // Name: YouBarButtonIcon
-// Dependencies: [19, 17, 14414, 21, 4342, 712, 8341, 8437, 7796, 2]
+// Dependencies: [19, 17, 14405, 21, 4342, 712, 8341, 8437, 7796, 2]
 
-// Module 15589 (YouBarButtonIcon)
+// Module 15580 (YouBarButtonIcon)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
@@ -88,7 +88,7 @@ class YouBarButtonIcon {
     items2 = [, ];
     items2[0] = memo;
     items2[1] = hasBadge;
-    memo1 = obj2.useMemo(() => ({ position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "call", bottom: "Math", padding: "id", minWidth: "Boolean" }), items1);
+    memo1 = obj2.useMemo(() => ({ position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "id", bottom: "result", padding: "justifyContent", minWidth: "ti" }), items1);
     obj1 = { style: { position: "relative", height: tmp, width: tmp }, children: null };
     memo2 = obj2.useMemo(() => {
       if (size2) {

@@ -1,10 +1,10 @@
-// Module ID: 14132
-// Function ID: 14133
+// Module ID: 14123
+// Function ID: 14124
 // Name: handleDisableAccount
-// Dependencies: [1910, 1922, 1236, 8559, 14117, 4683, 2]
+// Dependencies: [1910, 1922, 1236, 8559, 14108, 4683, 2]
 // Exports: default
 
-// Module 14132 (handleDisableAccount)
+// Module 14123 (handleDisableAccount)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -56,7 +56,7 @@ export default function handleDisableAccount() {
       tmp8 = obj;
       const str2 = intl2.string(tmp4(1236).t.jf5GGb);
     }
-    importDefault(14117)(tmp8);
+    importDefault(14108)(tmp8);
     const str = string(t["CIGa+7"]);
   }
 };

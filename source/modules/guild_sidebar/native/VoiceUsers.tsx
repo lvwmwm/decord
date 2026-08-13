@@ -1,10 +1,10 @@
-// Module ID: 15328
-// Function ID: 15329
+// Module ID: 15319
+// Function ID: 15320
 // Name: AudienceItem
-// Dependencies: [19, 17, 1990, 21, 4342, 712, 9845, 8441, 589, 15329, 9502, 1236, 11951, 4338, 9288, 15333, 5969, 15336, 2]
+// Dependencies: [19, 17, 1990, 21, 4342, 712, 9845, 8441, 589, 15320, 9502, 1236, 11952, 4338, 9288, 15324, 5969, 15327, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 15328 (AudienceItem)
+// Module 15319 (AudienceItem)
 import importAllResult from "noop";
 import { View } from "VoiceUsersItem";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -27,7 +27,7 @@ function AudienceItem(arg0) {
     formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["+v2pN2"], obj);
   }
   obj = { style: collapsed ? tmp2.listenersCollapsed : tmp2.listeners, children: null };
-  obj = { style: tmp2.listenersIconWrapper, children: callback(require(11951) /* HeadphonesIcon */.HeadphonesIcon, obj1) };
+  obj = { style: tmp2.listenersIconWrapper, children: callback(require(11952) /* HeadphonesIcon */.HeadphonesIcon, obj1) };
   const items = [callback(View, obj), callback(require(4338) /* Text */.Text, { style: tmp2.listenersText, variant: c10, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult })];
   obj[1] = items;
   return closure_7(View, obj);
@@ -93,7 +93,7 @@ let closure_12 = importAllResult.memo((voiceState) => {
   obj[9] = voiceState2.sessionId;
   obj[10] = channel;
   obj[11] = isGuest;
-  obj[1] = closure_6(channel(15329), obj, user.id);
+  obj[1] = closure_6(channel(15320), obj, user.id);
   return closure_6(tmp6, obj);
 });
 const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");

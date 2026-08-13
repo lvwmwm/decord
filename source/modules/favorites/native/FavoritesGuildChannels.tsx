@@ -1,10 +1,10 @@
-// Module ID: 15478
-// Function ID: 15479
+// Module ID: 15469
+// Function ID: 15470
 // Name: FavoritesGuildChannels
-// Dependencies: [19, 15408, 21, 8572, 4761, 15479, 15470, 15481, 15446, 15343, 15482, 15407, 15312, 2]
+// Dependencies: [19, 15399, 21, 8572, 4761, 15470, 15461, 15472, 15437, 15334, 15473, 15398, 15303, 2]
 // Exports: default
 
-// Module 15478 (FavoritesGuildChannels)
+// Module 15469 (FavoritesGuildChannels)
 import "noop";
 import { useFavoritesGuildSuggestionCount as closure_3 } from "items";
 import jsxProd from "jsxProd";
@@ -25,43 +25,43 @@ export default function FavoritesGuildChannels(arg0) {
   let tmp10Result = dependencyMap;
   let obj = require(4761) /* getFontScale */;
   const fontScale = obj.useFontScale();
-  let obj1 = require(15479) /* getMissingFavoriteThreadIds */;
+  let obj1 = require(15470) /* getMissingFavoriteThreadIds */;
   obj = { withSuggestionsNotice: tmp > 0 };
   const favoritesGuildChannelList = obj1.useFavoritesGuildChannelList(obj);
   ({ shouldShowEmptyState, guildChannels, hasNoChannels } = favoritesGuildChannelList);
-  let obj3 = require(15470) /* useShouldRenderChannelList */;
+  let obj3 = require(15461) /* useShouldRenderChannelList */;
   if (!obj3.useShouldRenderChannelList()) {
     return null;
   } else {
     let guild = arg0;
-    const items = [callback2(tmp2(15481), {}), ];
+    const items = [callback2(tmp2(15472), {}), ];
     if (hasNoChannels) {
       obj = { style: null, contentInset: null, children: null };
       ({ style: obj7[0], contentInset: obj7[1] } = guild);
       obj1 = { guild: null, showExtraButtons: false, canOpenGuildActionSheet: false };
       guild = guild.guild;
       obj1[0] = guild;
-      const items1 = [tmp10(tmp2(15343), obj1), , ];
+      const items1 = [tmp10(tmp2(15334), obj1), , ];
       tmp10Result = null;
       if (shouldShowEmptyState) {
         shouldShowEmptyState = {};
-        tmp10Result = tmp10(tmp2(15482), shouldShowEmptyState);
+        tmp10Result = tmp10(tmp2(15473), shouldShowEmptyState);
       }
       items1[1] = tmp10Result;
-      tmp2 = tmp2(15407);
+      tmp2 = tmp2(15398);
       tmp10Result = tmp10(tmp2, {});
       items1[2] = tmp10Result;
       obj[2] = items1;
-      let tmp10Result1 = tmp8(tmp2(15446), obj);
-      const tmp2Result = tmp2(15446);
+      let tmp10Result1 = tmp8(tmp2(15437), obj);
+      const tmp2Result = tmp2(15437);
     } else {
       const obj2 = {};
       const merged = Object.assign(guild);
       obj2.guildChannels = guildChannels;
       obj2.guildChannelsVersion = 0;
-      obj2.favoritesSuggestionsNoticeHeight = tmp5(15407).getFavoritesSuggestionsNoticeHeight(fontScale, tmp4, tmp);
-      tmp10Result1 = tmp10(tmp5(15312).ChannelList, obj2);
-      const tmp5Result = tmp5(15407);
+      obj2.favoritesSuggestionsNoticeHeight = tmp5(15398).getFavoritesSuggestionsNoticeHeight(fontScale, tmp4, tmp);
+      tmp10Result1 = tmp10(tmp5(15303).ChannelList, obj2);
+      const tmp5Result = tmp5(15398);
     }
     obj3 = { children: null };
     items[1] = tmp10Result1;

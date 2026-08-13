@@ -1,10 +1,10 @@
-// Module ID: 10550
-// Function ID: 10551
+// Module ID: 10552
+// Function ID: 10553
 // Name: AppStoreOverlayFooter
-// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 4065, 689, 4766, 5368, 4755, 1236, 1493, 7449, 4771, 4052, 4310, 5437, 5752, 5439, 5308, 4338, 10551, 10554, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 4065, 689, 4766, 5368, 4755, 1236, 1493, 7449, 4771, 4052, 4310, 5437, 5752, 5439, 5308, 4338, 10553, 10556, 2]
 // Exports: default
 
-// Module 10550 (AppStoreOverlayFooter)
+// Module 10552 (AppStoreOverlayFooter)
 import _slicedToArray from "_slicedToArray";
 import ActionSheetHeaderBar from "ActionSheetHeaderBar";
 import { View } from "ACTION_SHEET_HEIGHT_HALF";

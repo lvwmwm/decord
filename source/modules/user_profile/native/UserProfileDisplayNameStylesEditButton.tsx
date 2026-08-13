@@ -1,10 +1,10 @@
-// Module ID: 13997
-// Function ID: 13998
+// Module ID: 13988
+// Function ID: 13989
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 676, 1388, 21, 4342, 712, 1499, 9287, 6065, 1377, 8315, 4574, 9523, 1935, 698, 1236, 13998, 1297, 8336, 9520, 13999, 14001, 2661, 2]
+// Dependencies: [32, 19, 17, 676, 1388, 21, 4342, 712, 1499, 9287, 6065, 1377, 8315, 4574, 9523, 1935, 698, 1236, 13989, 1297, 8336, 9520, 13990, 13992, 2661, 2]
 // Exports: default
 
-// Module 13997 (UserProfileDisplayNameStylesEditButton)
+// Module 13988 (UserProfileDisplayNameStylesEditButton)
 import _slicedToArray from "_slicedToArray";
 import noop from "Button";
 import { View } from "getSystemLocale";

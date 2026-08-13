@@ -1,10 +1,10 @@
-// Module ID: 11751
-// Function ID: 11752
+// Module ID: 11752
+// Function ID: 11753
 // Name: _onAddDirectoryGuildEntry
-// Dependencies: [5, 19, 21, 11746, 4684, 11752, 2007, 2]
+// Dependencies: [5, 19, 21, 11747, 4684, 11753, 2007, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 11751 (_onAddDirectoryGuildEntry)
+// Module 11752 (_onAddDirectoryGuildEntry)
 import GuildDirectoryAddAlert from "GuildDirectoryAddAlert";
 import "noop";
 import { jsx } from "jsxProd";
@@ -72,7 +72,7 @@ function _onAddDirectoryGuildEntry() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj3 = lib(11746);
+              let obj3 = lib(11747);
               dependencyMap = 2;
               c4 = 1;
               const obj2 = { value: null, done: false };

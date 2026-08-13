@@ -1,12 +1,12 @@
-// Module ID: 10572
-// Function ID: 10573
+// Module ID: 10574
+// Function ID: 10575
 // Name: getEmbeddedActivitiesManager
-// Dependencies: [10573, 2]
+// Dependencies: [10575, 2]
 // Exports: default
 
-// Module 10572 (getEmbeddedActivitiesManager)
+// Module 10574 (getEmbeddedActivitiesManager)
 const result = require("set").fileFinishedImporting("modules/activities/utils/getEmbeddedActivitiesManager.native.tsx");
 
 export default function getEmbeddedActivitiesManager() {
-  return importDefault(10573);
+  return importDefault(10575);
 };

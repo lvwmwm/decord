@@ -1,10 +1,10 @@
-// Module ID: 15534
-// Function ID: 15535
+// Module ID: 15525
+// Function ID: 15526
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 9802, 4166, 1990, 1910, 3989, 1922, 676, 21, 4342, 589, 4167, 15535, 4065, 712, 1297, 15537, 15502, 15501, 2]
+// Dependencies: [109, 19, 9802, 4166, 1990, 1910, 3989, 1922, 676, 21, 4342, 589, 4167, 15526, 4065, 712, 1297, 15528, 15493, 15492, 2]
 // Exports: default
 
-// Module 15534 (useGuildsBarBadges)
+// Module 15525 (useGuildsBarBadges)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import useGuildsBarBottomRightBadge from "useGuildsBarBottomRightBadge";
 import computeAlertSettings from "computeAlertSettings";

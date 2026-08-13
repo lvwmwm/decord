@@ -1,9 +1,9 @@
-// Module ID: 10710
-// Function ID: 10711
+// Module ID: 10712
+// Function ID: 10713
 // Name: prototype
 // Dependencies: [2]
 
-// Module 10710 (prototype)
+// Module 10712 (prototype)
 const prototype = function RPCError(arg0, message) {
   const tmp = new prototype(message, new.target, new.target, arg0);
   // ThrowIfThisInitialized (0x7c)

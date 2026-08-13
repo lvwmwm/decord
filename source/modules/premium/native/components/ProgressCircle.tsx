@@ -1,9 +1,9 @@
-// Module ID: 12012
-// Function ID: 12013
+// Module ID: 12013
+// Function ID: 12014
 // Name: renderCircle
 // Dependencies: [19, 17, 21, 4342, 4072, 712, 7880, 2]
 
-// Module 12012 (renderCircle)
+// Module 12013 (renderCircle)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

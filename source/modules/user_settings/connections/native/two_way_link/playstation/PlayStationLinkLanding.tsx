@@ -1,10 +1,10 @@
-// Module ID: 10521
-// Function ID: 10522
+// Module ID: 10523
+// Function ID: 10524
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 10520, 676, 21, 4342, 1236, 4870, 8811, 1499, 1993, 10522, 10458, 2]
+// Dependencies: [19, 10522, 676, 21, 4342, 1236, 4870, 8811, 1499, 1993, 10524, 10460, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 10521 (PlayStationLinkLanding)
+// Module 10523 (PlayStationLinkLanding)
 import noop from "noop";
 import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
 import { HelpdeskArticles } from "ME";
@@ -42,7 +42,7 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
   callback = React.useCallback(() => {
     navigation.push(outer1_4.PRE_CONNECT);
   }, items);
-  const memo1 = React.useMemo(() => ({ uri: callback(10522) }), []);
+  const memo1 = React.useMemo(() => ({ uri: callback(10524) }), []);
   obj = { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null };
   let intl2 = navigation(1236).intl;
   obj[3] = intl2.string(navigation(1236).t.xAWHOy);
@@ -51,5 +51,5 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
   obj[5] = intl.format(navigation(1236).t.kqZQNe, { helpdeskArticleUrl: articleURL });
   obj[6] = callback;
   obj[7] = memo;
-  return jsx(navigation(10458).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
+  return jsx(navigation(10460).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 16904
-// Function ID: 16905
+// Module ID: 16895
+// Function ID: 16896
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 4342, 712, 1628, 38, 16905, 5437, 5439, 4338, 1297, 4755, 4310, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1628, 38, 16896, 5437, 5439, 4338, 1297, 4755, 4310, 1236, 2]
 // Exports: default
 
-// Module 16904 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 16895 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   ({ editStateId, guildId } = groupListingId);
   const tmp = createCacheKey();
   importDefault(38)(null != groupListingId, "group listing id cannot be null");
-  const tmp4 = importDefault(16905)(guildId, groupListingId, editStateId);
+  const tmp4 = importDefault(16896)(guildId, groupListingId, editStateId);
   let deleting = tmp4.deleting;
   ({ headerText, buttonText, descriptionText, handleArchiveOrDelete, archiving } = tmp4);
   let obj = { style: tmp.container, children: null };

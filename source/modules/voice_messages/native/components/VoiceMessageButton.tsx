@@ -1,9 +1,9 @@
-// Module ID: 11684
-// Function ID: 11685
+// Module ID: 11685
+// Function ID: 11686
 // Name: VoiceMessageRecordingCancelledToastIcon
-// Dependencies: [5, 32, 19, 17, 4054, 7186, 1391, 11417, 11418, 676, 4335, 4557, 21, 4342, 712, 8125, 4197, 4554, 11685, 4083, 1367, 8440, 10969, 1493, 11323, 4891, 4892, 6965, 8406, 11105, 1231, 4062, 1236, 9812, 4198, 4902, 4061, 9062, 5467, 11687, 11668, 10844, 2]
+// Dependencies: [5, 32, 19, 17, 4054, 7186, 1391, 11418, 11419, 676, 4335, 4557, 21, 4342, 712, 8125, 4197, 4554, 11686, 4083, 1367, 8440, 10970, 1493, 11324, 4891, 4892, 6965, 8406, 11106, 1231, 4062, 1236, 9812, 4198, 4902, 4061, 9062, 5467, 11688, 11669, 10846, 2]
 
-// Module 11684 (VoiceMessageRecordingCancelledToastIcon)
+// Module 11685 (VoiceMessageRecordingCancelledToastIcon)
 import getState from "getState";
 import getSystemLocale from "getSystemLocale";
 import importAllResult from "module_4083";
@@ -44,8 +44,8 @@ function VoiceMessageRecordingCancelledToastIcon() {
 }
 function triggerHapticGuarded() {
   if (state.getState().showRecordingOverlay) {
-    require(11685) /* _startAudioRecording */.triggerHaptic();
-    const obj = require(11685) /* _startAudioRecording */;
+    require(11686) /* _startAudioRecording */.triggerHaptic();
+    const obj = require(11686) /* _startAudioRecording */;
   }
 }
 let c5 = importAllResult;
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo((disabled) => {
   currentState = importAllResult.useRef(true);
   setContent = importAllResult.useRef(currentState.currentState);
   closure_9 = importAllResult.useRef(null);
-  const tmp11 = sharedValue1(10969)();
+  const tmp11 = sharedValue1(10970)();
   _require = undefined;
   _require = sharedValue((arg0) => {
     let closure_0 = arg0;
@@ -604,9 +604,9 @@ const memoResult = importAllResult.memo((disabled) => {
         items[0] = obj.get()[1];
         items[1] = disabled;
         result = obj.set(items);
-        tmp2 = f109643;
+        tmp2 = f109529;
         tmp3 = c2;
-        obj2 = f109643(c2[19]);
+        obj2 = f109529(c2[19]);
         tmp4 = outer1_29;
         tmp5 = obj2.runOnJS(outer1_29)();
       }
@@ -815,7 +815,7 @@ const memoResult = importAllResult.memo((disabled) => {
     return onUpdateResult.onFinalize(fn3);
   }, items10);
   obj = { gesture: memo, children: null };
-  obj1 = { ref: sharedValue1(11687)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null, style: null };
+  obj1 = { ref: sharedValue1(11688)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null, style: null };
   const tmp23Result = tmp23(sharedValue(function*() {
     if (c2 === 2) {
       c2 = 3;
@@ -872,7 +872,7 @@ const memoResult = importAllResult.memo((disabled) => {
       }
     }
   }), intl.string(_require(1236).t.lwy6aX));
-  obj1[1] = _require(10844).MicrophoneIcon;
+  obj1[1] = _require(10846).MicrophoneIcon;
   const intl2 = _require(1236).intl;
   obj1[3] = intl2.string(_require(1236).t.lwy6aX);
   obj1[4] = accessibilityActions;
@@ -883,7 +883,7 @@ const memoResult = importAllResult.memo((disabled) => {
     tmp30 = clientThemesOverride;
   }
   obj1[7] = tmp30;
-  obj[1] = jsx(sharedValue1(11668), { ref: sharedValue1(11687)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null, style: null });
+  obj[1] = jsx(sharedValue1(11669), { ref: sharedValue1(11688)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null, style: null });
   return jsx(_require(5467).GestureDetector, { gesture: memo, children: null });
 });
 let result = require("noop").fileFinishedImporting("modules/voice_messages/native/components/VoiceMessageButton.tsx");

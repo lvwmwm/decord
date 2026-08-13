@@ -1,10 +1,10 @@
-// Module ID: 15408
-// Function ID: 15409
+// Module ID: 15399
+// Function ID: 15400
 // Name: items
 // Dependencies: [32, 19, 1383, 1394, 676, 1388, 644, 9759, 6065, 1377, 589, 2]
 // Exports: setFavoritesGuildSuggestions, useFavoritesGuildShouldShowSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useHasFavoritesGuildSuggestions
 
-// Module 15408 (items)
+// Module 15399 (items)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import withContent from "withContent";

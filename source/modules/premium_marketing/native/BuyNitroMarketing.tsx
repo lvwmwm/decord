@@ -1,7 +1,7 @@
 // Module ID: 7684
 // Function ID: 7685
 // Name: BuyNitroMarketing
-// Dependencies: [19, 17, 1924, 21, 4342, 712, 7685, 1499, 7687, 7694, 7693, 7698, 5768, 7688, 7692, 7777, 7787, 7788, 7790, 7791, 7799, 12742, 12746, 12747, 12748, 2]
+// Dependencies: [19, 17, 1924, 21, 4342, 712, 7685, 1499, 7687, 7694, 7693, 7698, 5768, 7688, 7692, 7777, 7787, 7788, 7790, 7791, 7799, 12743, 12747, 12748, 12749, 2]
 // Exports: default
 
 // Module 7684 (BuyNitroMarketing)
@@ -60,7 +60,7 @@ export default function BuyNitroMarketing(onPaymentDismiss) {
   let obj3 = applicationId(onPaymentDismiss[9]);
   let tmp7;
   if (null != initialTier) {
-    obj = { tier: null, productId: "Array" };
+    obj = { tier: null, productId: "a" };
     obj[0] = initialTier;
     tmp7 = obj;
   }

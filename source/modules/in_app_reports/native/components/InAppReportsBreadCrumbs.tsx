@@ -1,10 +1,10 @@
-// Module ID: 12711
-// Function ID: 12712
+// Module ID: 12712
+// Function ID: 12713
 // Name: Breadcrumbs
 // Dependencies: [19, 17, 21, 4342, 712, 12, 4338, 8068, 1236, 2403, 2]
 // Exports: default
 
-// Module 12711 (Breadcrumbs)
+// Module 12712 (Breadcrumbs)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 16148
-// Function ID: 16149
+// Module ID: 16139
+// Function ID: 16140
 // Name: ChannelSubtitle
-// Dependencies: [19, 9844, 21, 16137, 4338, 15429, 9842, 2]
+// Dependencies: [19, 9844, 21, 16128, 4338, 15420, 9842, 2]
 // Exports: renderChannelSubtitle
 
-// Module 16148 (ChannelSubtitle)
+// Module 16139 (ChannelSubtitle)
 import "noop";
 import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ function ChannelSubtitle(arg0) {
   let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, subtitle } = arg0);
-  let obj = require(15429) /* getChannelSubtitleData */;
+  let obj = require(15420) /* getChannelSubtitleData */;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
@@ -55,7 +55,7 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
     return null;
   } else {
     let obj = { variant: null, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75, style: null };
-    obj[0] = importDefault(16137)().messagePreview.text.variant;
+    obj[0] = importDefault(16128)().messagePreview.text.variant;
     let num = 1;
     if (!muted) {
       num = SUBTITLE_OPACITY_NORMAL;

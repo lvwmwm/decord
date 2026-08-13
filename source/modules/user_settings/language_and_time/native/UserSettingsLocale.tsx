@@ -1,9 +1,9 @@
-// Module ID: 14686
-// Function ID: 14687
+// Module ID: 14677
+// Function ID: 14678
 // Name: handleLanguageChange
-// Dependencies: [5, 19, 17, 1995, 1994, 21, 4342, 712, 8747, 589, 5368, 8030, 1236, 8029, 14687, 2]
+// Dependencies: [5, 19, 17, 1995, 1994, 21, 4342, 712, 8747, 589, 5368, 8030, 1236, 8029, 14678, 2]
 
-// Module 14686 (handleLanguageChange)
+// Module 14677 (handleLanguageChange)
 import jsxProd from "jsxProd";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { setAppLocale } from "_setAppLocale";

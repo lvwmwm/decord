@@ -1,10 +1,10 @@
-// Module ID: 12219
-// Function ID: 12220
+// Module ID: 12220
+// Function ID: 12221
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
 // Dependencies: [19, 17, 21, 4342, 712, 1628, 4550, 7048, 5788, 7852, 1236, 5366, 4338, 2399, 10205, 2]
 // Exports: default
 
-// Module 12219 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 12220 (CollectiblesShopGiftBadgePostPurchaseModal)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

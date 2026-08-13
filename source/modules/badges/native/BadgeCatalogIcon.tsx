@@ -1,10 +1,10 @@
-// Module ID: 14006
-// Function ID: 14007
+// Module ID: 13997
+// Function ID: 13998
 // Name: BadgeCatalogIcon
-// Dependencies: [32, 19, 17, 21, 14007, 5308, 7880, 2]
+// Dependencies: [32, 19, 17, 21, 13998, 5308, 7880, 2]
 // Exports: default
 
-// Module 14006 (BadgeCatalogIcon)
+// Module 13997 (BadgeCatalogIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -79,7 +79,7 @@ export default function BadgeCatalogIcon(style) {
     if (url === complex_icon_animated_url) {
       let xml = tmp4.xml;
     } else {
-      let obj5 = complex_icon_animated_url(14007);
+      let obj5 = complex_icon_animated_url(13998);
       xml = obj5.getCachedSvgXml(complex_icon_animated_url);
     }
     obj = { style: null, "aria-hidden": true, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 14214
-// Function ID: 14215
+// Module ID: 14205
+// Function ID: 14206
 // Name: useSelectedTeenUser
 // Dependencies: [1922, 7047, 7044, 7382, 647, 2]
 // Exports: useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 14214 (useSelectedTeenUser)
+// Module 14205 (useSelectedTeenUser)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getSettings from "getSettings";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";

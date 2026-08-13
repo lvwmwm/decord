@@ -1,10 +1,10 @@
-// Module ID: 12385
-// Function ID: 12386
+// Module ID: 12386
+// Function ID: 12387
 // Name: useUserProfileVoiceActivity
 // Dependencies: [4431, 4361, 7244, 9690, 589, 2]
 // Exports: default, isUserProfileVoiceActivityForChannel
 
-// Module 12385 (useUserProfileVoiceActivity)
+// Module 12386 (useUserProfileVoiceActivity)
 import sortActivity from "sortActivity";
 import updateVoiceState from "updateVoiceState";
 

@@ -1,10 +1,10 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 10645
+// Function ID: 10646
 // Name: useIsFiveButtonLayout
-// Dependencies: [1391, 1910, 589, 9793, 10644, 10645, 5932, 2]
+// Dependencies: [1391, 1910, 589, 9793, 10646, 10647, 5932, 2]
 // Exports: useIsFiveButtonLayout
 
-// Module 10643 (useIsFiveButtonLayout)
+// Module 10645 (useIsFiveButtonLayout)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 
@@ -37,8 +37,8 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp6 = guild_id(10644);
-  const tmp6Result = guild_id(10644)(guild_id1, id);
+  const tmp6 = guild_id(10646);
+  const tmp6Result = guild_id(10646)(guild_id1, id);
   const items1 = [createGuildRecordFromRust];
   const items2 = [guild_id];
   const stateFromStores1 = tmp(589).useStateFromStores(items1, () => outer1_4.getGuild(guild_id), items2);
@@ -57,8 +57,8 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }
-  const tmp5Result = guild_id(10645);
-  const tmp5ResultResult = guild_id(10645)(id1);
+  const tmp5Result = guild_id(10647);
+  const tmp5ResultResult = guild_id(10647)(id1);
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp6Result;
   }

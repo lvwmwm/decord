@@ -1,10 +1,10 @@
-// Module ID: 14971
-// Function ID: 14972
+// Module ID: 14962
+// Function ID: 14963
 // Name: shouldAgeVerifyForDMDefaultOff
 // Dependencies: [4040, 5182, 4560, 2]
 // Exports: shouldAgeVerifyForDMDefaultOff
 
-// Module 14971 (shouldAgeVerifyForDMDefaultOff)
+// Module 14962 (shouldAgeVerifyForDMDefaultOff)
 const result = require("useAgeVerificationRunner").fileFinishedImporting("modules/user_settings/content_and_social/DefaultDMSettingsExperiment.tsx");
 
 export const shouldAgeVerifyForDMDefaultOff = function shouldAgeVerifyForDMDefaultOff() {

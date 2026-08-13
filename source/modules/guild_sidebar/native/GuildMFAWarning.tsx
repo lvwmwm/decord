@@ -1,10 +1,10 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 15396
+// Function ID: 15397
 // Name: handlePress
-// Dependencies: [5, 19, 17, 676, 21, 4342, 712, 9502, 1993, 2007, 4058, 4887, 15406, 4338, 1236, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4342, 712, 9502, 1993, 2007, 4058, 4887, 15397, 4338, 1236, 1297, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 15405 (handlePress)
+// Module 15396 (handlePress)
 import closure_3 from "createCacheKey";
 import "noop";
 import { Image } from "get ActivityIndicator";
@@ -110,7 +110,7 @@ export default function GuildMFAWarning() {
   const tmp = createCacheKey();
   let obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress, children: null };
   obj = { style: tmp.MFAWarningIcon, source: null };
-  obj[1] = importDefault(15406);
+  obj[1] = importDefault(15397);
   const items = [callback2(Image, obj), ];
   obj = { variant: "text-xs/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

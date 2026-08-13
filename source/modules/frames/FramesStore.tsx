@@ -1,9 +1,9 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10566
+// Function ID: 10567
 // Name: map
-// Dependencies: [10565, 9809, 505, 10566, 589, 709, 2]
+// Dependencies: [10567, 9809, 505, 10568, 589, 709, 2]
 
-// Module 10564 (map)
+// Module 10566 (map)
 import FrameLayoutModes from "FrameLayoutModes";
 import { ActivityPanelModes } from "ActivityPanelModes";
 import { NOOP_TRUE } from "sum";
@@ -72,7 +72,7 @@ const framesStoreClass = new FramesStoreClass(require("dispatcher"), {
     let obj = map;
     const value = map.get(frameId);
     if (null != value) {
-      const tmp14 = importDefault(10566)(value.applicationId);
+      const tmp14 = importDefault(10568)(value.applicationId);
       if (null == tmp14) {
         obj.delete(frameId);
         if (c10 === frameId) {

@@ -1,10 +1,10 @@
-// Module ID: 15821
-// Function ID: 15822
+// Module ID: 15812
+// Function ID: 15813
 // Name: ChannelSubtitle
-// Dependencies: [19, 21, 9845, 4338, 15429, 9842, 2]
+// Dependencies: [19, 21, 9845, 4338, 15420, 9842, 2]
 // Exports: renderChannelSubtitle
 
-// Module 15821 (ChannelSubtitle)
+// Module 15812 (ChannelSubtitle)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -19,7 +19,7 @@ function ChannelSubtitle(arg0) {
   let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, layout, subtitle } = arg0);
-  let obj = require(15429) /* getChannelSubtitleData */;
+  let obj = require(15420) /* getChannelSubtitleData */;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;

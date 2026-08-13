@@ -1,10 +1,10 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 16945
+// Function ID: 16946
 // Name: GuildRoleSubscriptionRolePreview
 // Dependencies: [19, 17, 1922, 21, 4342, 712, 1236, 647, 4534, 5308, 4338, 688, 1297, 5794, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 16954 (GuildRoleSubscriptionRolePreview)
+// Module 16945 (GuildRoleSubscriptionRolePreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

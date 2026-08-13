@@ -1,10 +1,10 @@
-// Module ID: 10790
-// Function ID: 10791
+// Module ID: 10792
+// Function ID: 10793
 // Name: JoinStageView
-// Dependencies: [19, 21, 5189, 5183, 10734, 1236, 7825, 10753, 2]
+// Dependencies: [19, 21, 5189, 5183, 10736, 1236, 7825, 10755, 2]
 // Exports: default
 
-// Module 10790 (JoinStageView)
+// Module 10792 (JoinStageView)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -19,8 +19,8 @@ export default function JoinStageView(channel) {
   obj = { title: null, body: null, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.WZOeQv);
-  const tmp2 = importDefault(10734);
+  const tmp2 = importDefault(10736);
   obj[1] = require(7825) /* fillChunk */.getParticipantNamesText(channel, found);
-  obj[2] = jsx(require(10753) /* AgeVerificationSpeakerActionSheet */.JoinStagePrompt, { channel });
+  obj[2] = jsx(require(10755) /* AgeVerificationSpeakerActionSheet */.JoinStagePrompt, { channel });
   return <tmp2 title={null} body={null}>{null}</tmp2>;
 };

@@ -1,10 +1,10 @@
-// Module ID: 15146
-// Function ID: 15147
+// Module ID: 15137
+// Function ID: 15138
 // Name: _getLatestVideo
-// Dependencies: [5, 17, 15145, 4683, 15147, 15148, 4310, 15149, 2007, 9913, 4892, 8850, 9912, 1493, 2]
+// Dependencies: [5, 17, 15136, 4683, 15138, 15139, 4310, 15140, 2007, 9913, 4892, 8850, 9912, 1493, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 15146 (_getLatestVideo)
+// Module 15137 (_getLatestVideo)
 import SURVEY_CONFIGS from "SURVEY_CONFIGS";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { useScreenRecordingStore } from "useScreenRecordingStore";
@@ -733,7 +733,7 @@ function _submitBugReportWithScreenRecording() {
                       throwTypeErrorResult = SURVEY_CONFIGS;
                       obj14 = SURVEY_CONFIGS;
                       if (SURVEY_CONFIGS == null) {
-                        obj14 = { name: null, squad: null, asana_inbox_id: "e" };
+                        obj14 = { name: null, squad: null, asana_inbox_id: "Array" };
                         obj14[0] = uri.uploadConfig.featureName;
                         obj14[1] = uri.uploadConfig.squadName;
                       }

@@ -1,10 +1,10 @@
-// Module ID: 16263
-// Function ID: 16264
+// Module ID: 16254
+// Function ID: 16255
 // Name: areStableParticipantsEqual
-// Dependencies: [4358, 1218, 4393, 1922, 4363, 643, 589, 4534, 8862, 10681, 2]
+// Dependencies: [4358, 1218, 4393, 1922, 4363, 643, 589, 4534, 8862, 10683, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 16263 (areStableParticipantsEqual)
+// Module 16254 (areStableParticipantsEqual)
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -40,7 +40,7 @@ export default function useStableParticipant(arg0, arg1, arg2) {
       if (null == participant) {
         const user = outer1_6.getUser(tmp);
         if (null != user) {
-          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: 0.272, isSelf: 0.331 };
+          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: 0, isSelf: 1 };
           obj[0] = outer1_7.USER;
           obj[1] = tmp;
           obj[2] = user;
@@ -52,7 +52,7 @@ export default function useStableParticipant(arg0, arg1, arg2) {
           return obj;
         }
       } else {
-        const tmp15 = callback2(10681)(participant);
+        const tmp15 = callback2(10683)(participant);
         const type = participant.type;
         if (outer1_7.ACTIVITY === type) {
           obj = { type: null, id: null, applicationId: null };

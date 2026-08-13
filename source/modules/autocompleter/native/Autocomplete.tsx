@@ -1,9 +1,9 @@
-// Module ID: 11818
-// Function ID: 11819
+// Module ID: 11819
+// Function ID: 11820
 // Name: AutocompleteLabel
-// Dependencies: [19, 17, 1910, 3998, 1922, 676, 9961, 21, 4342, 712, 8012, 589, 4187, 1297, 9180, 5414, 5424, 1236, 8275, 4805, 4535, 4338, 5308, 11819, 10001, 4887, 9902, 12, 4376, 1903, 7992, 2]
+// Dependencies: [19, 17, 1910, 3998, 1922, 676, 9961, 21, 4342, 712, 8012, 589, 4187, 1297, 9180, 5414, 5424, 1236, 8275, 4805, 4535, 4338, 5308, 11820, 10001, 4887, 9902, 12, 4376, 1903, 7992, 2]
 
-// Module 11818 (AutocompleteLabel)
+// Module 11819 (AutocompleteLabel)
 import getChannelIcon from "getChannelIcon";
 import { View } from "getSystemLocale";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -197,7 +197,7 @@ const obj9 = {
     let results;
     ({ results, onPress } = arg0);
     const obj = { onPress, accessibilityRole: "menuitem", label: null };
-    obj[2] = callback(importDefault(11819), { results });
+    obj[2] = callback(importDefault(11820), { results });
     return callback(require(8012) /* Form */.FormRow, obj);
   },
   Choice(arg0) {

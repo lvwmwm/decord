@@ -1,10 +1,10 @@
-// Module ID: 12300
-// Function ID: 12301
+// Module ID: 12301
+// Function ID: 12302
 // Name: ShareIcon
 // Dependencies: [19, 21, 712, 4064, 9143, 2]
 // Exports: ShareIcon
 
-// Module 12300 (ShareIcon)
+// Module 12301 (ShareIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

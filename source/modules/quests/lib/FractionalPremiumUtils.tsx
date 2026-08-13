@@ -1,10 +1,10 @@
-// Module ID: 10441
-// Function ID: 10442
+// Module ID: 10440
+// Function ID: 10441
 // Name: getDurationStringOfFractionalPremium
 // Dependencies: [4007, 1236, 7211, 4031, 687, 2]
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName, getFractionalPremiumQuestRewards
 
-// Module 10441 (getDurationStringOfFractionalPremium)
+// Module 10440 (getDurationStringOfFractionalPremium)
 const result = require("QuestRewardTypes").fileFinishedImporting("modules/quests/lib/FractionalPremiumUtils.tsx");
 
 export const getDurationStringOfFractionalPremium = function getDurationStringOfFractionalPremium(arr) {

@@ -1,10 +1,10 @@
-// Module ID: 10589
-// Function ID: 10590
+// Module ID: 10591
+// Function ID: 10592
 // Name: _getPrimaryAppCommand
 // Dependencies: [5, 19, 1391, 8387, 1954, 8395, 8391, 9591, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
 
-// Module 10589 (_getPrimaryAppCommand)
+// Module 10591 (_getPrimaryAppCommand)
 import ScoreMethod from "ScoreMethod";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";

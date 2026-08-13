@@ -1,10 +1,10 @@
-// Module ID: 16379
-// Function ID: 16380
+// Module ID: 16370
+// Function ID: 16371
 // Name: MediaInfo
-// Dependencies: [32, 19, 17, 1391, 4562, 3998, 1922, 676, 16248, 21, 4342, 712, 4065, 589, 4535, 8367, 4338, 16380, 4766, 6965, 5906, 4083, 4343, 1236, 8712, 5314, 4296, 698, 13866, 3976, 16377, 8906, 8904, 14375, 2]
+// Dependencies: [32, 19, 17, 1391, 4562, 3998, 1922, 676, 16239, 21, 4342, 712, 4065, 589, 4535, 8367, 4338, 16371, 4766, 6965, 5906, 4083, 4343, 1236, 8712, 5314, 4296, 698, 13857, 3976, 16368, 8906, 8904, 14366, 2]
 // Exports: default
 
-// Module 16379 (MediaInfo)
+// Module 16370 (MediaInfo)
 import PlayIcon from "PlayIcon";
 import trackInvite from "trackInvite";
 import get_ActivityIndicator from "AnimatedChild";
@@ -101,7 +101,7 @@ function MediaInfo(message) {
           obj2[0] = { flex: 1 };
           const obj3 = { spacing: 20, speed: 0.2, children: null };
           obj3[2] = tmp14;
-          const items3 = [tmp13(tmp2(16380).Marquee, obj3), ];
+          const items3 = [tmp13(tmp2(16371).Marquee, obj3), ];
           const obj4 = { start: null, end: null, locations: null, colors: null, style: null };
           obj4[0] = { x: 0, y: 0 };
           obj4[1] = { x: 1, y: 0 };

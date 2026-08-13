@@ -1,10 +1,10 @@
-// Module ID: 11425
-// Function ID: 11426
+// Module ID: 11426
+// Function ID: 11427
 // Name: mutable
-// Dependencies: [4083, 1493, 11426, 10289, 2]
+// Dependencies: [4083, 1493, 11427, 10289, 2]
 // Exports: default, getWindowDimensionsWorklet
 
-// Module 11425 (mutable)
+// Module 11426 (mutable)
 import module_4083 from "module_4083";
 import useWindowDimensions from "useWindowDimensions";
 import module_4083 from "module_4083";

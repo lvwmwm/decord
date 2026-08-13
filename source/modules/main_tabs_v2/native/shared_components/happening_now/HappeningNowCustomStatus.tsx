@@ -1,10 +1,10 @@
-// Module ID: 15285
-// Function ID: 15286
+// Module ID: 15276
+// Function ID: 15277
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
-// Dependencies: [5, 32, 19, 17, 4431, 14604, 505, 21, 4342, 712, 647, 4574, 9286, 15286, 15287, 9501, 9082, 14605, 500, 9573, 1297, 4338, 2]
+// Dependencies: [5, 32, 19, 17, 4431, 14595, 505, 21, 4342, 712, 647, 4574, 9286, 15277, 15278, 9501, 9082, 14596, 500, 9573, 1297, 4338, 2]
 // Exports: CustomStatusActivityCard
 
-// Module 15285 (HAPPENING_NOW_CONTENT_HEIGHT)
+// Module 15276 (HAPPENING_NOW_CONTENT_HEIGHT)
 import closure_3 from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import _slicedToArray from "_slicedToArray";
 import ActivityEmoji from "ActivityEmoji";
@@ -298,7 +298,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
     const obj8 = { noMargin: true, displayNameFont: null, children: null };
     obj8[1] = displayNameStylesFont;
     obj8[2] = userTitle;
-    items6[1] = tmp15(tmp6(14605).HappeningNowCardHeader, obj8);
+    items6[1] = tmp15(tmp6(14596).HappeningNowCardHeader, obj8);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -338,7 +338,7 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
     const obj14 = { noMargin: true, displayNameFont: null, children: null };
     obj14[1] = displayNameStylesFont;
     obj14[2] = userTitle;
-    const items8 = [tmp15(tmp6(14605).HappeningNowCardHeader, obj14), ];
+    const items8 = [tmp15(tmp6(14596).HappeningNowCardHeader, obj14), ];
     const obj15 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: null, maxFontSizeMultiplier: 2, children: null };
     obj15[3] = num;
     obj15[5] = gameMentionsAsPlainText;
@@ -350,5 +350,5 @@ export const CustomStatusActivityCard = function CustomStatusActivityCard(user) 
   }
   obj1[1] = tmp18Result;
   obj[5] = closure_12(closure_6, obj1);
-  return closure_12(activity(14605), obj);
+  return closure_12(activity(14596), obj);
 };

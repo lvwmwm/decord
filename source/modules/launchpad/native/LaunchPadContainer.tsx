@@ -1,10 +1,10 @@
-// Module ID: 16119
-// Function ID: 16120
+// Module ID: 16110
+// Function ID: 16111
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 10403, 21, 4342, 10404, 16120, 16122, 11425, 4083, 4754, 4203, 15220, 5467, 16123, 2]
+// Dependencies: [19, 17, 10403, 21, 4342, 10404, 16111, 16113, 11426, 4083, 4754, 4203, 15211, 5467, 16114, 2]
 // Exports: default
 
-// Module 16119 (LaunchPadContainer)
+// Module 16110 (LaunchPadContainer)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
@@ -48,11 +48,11 @@ export default function LaunchPadContainer(children) {
   let dependencyMap;
   const tmp = createCacheKey();
   const tmp4 = updaters(10404)();
-  const tmp5 = updaters(16120)();
+  const tmp5 = updaters(16111)();
   launchPadSharedState = tmp5.launchPadSharedState;
   ({ launchPadPullTabState, launchPadShown, gestureState, updaters } = tmp5);
-  ({ gesture, gestureRef } = updaters(16122)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
-  const tmp7 = updaters(11425)();
+  ({ gesture, gestureRef } = updaters(16113)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
+  const tmp7 = updaters(11426)();
   dependencyMap = tmp7;
   let obj = launchPadSharedState(4083);
   const fn = function o() {
@@ -111,11 +111,11 @@ export default function LaunchPadContainer(children) {
     obj3[3] = launchPadSharedState;
     obj3[4] = launchPadPullTabState;
     obj3[5] = updaters;
-    const tmp10Result = tmp10(updaters(16123), obj3);
+    const tmp10Result = tmp10(updaters(16114), obj3);
   }
   items1[1] = tmp10Result;
   obj2[1] = items1;
   obj1[1] = closure_7(closure_3, obj2);
   obj[1] = callback(launchPadSharedState(5467).GestureDetector, obj1);
-  return callback(updaters(15220).Provider, obj);
+  return callback(updaters(15211).Provider, obj);
 };

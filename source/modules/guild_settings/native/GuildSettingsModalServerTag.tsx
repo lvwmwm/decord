@@ -1,10 +1,10 @@
-// Module ID: 16753
-// Function ID: 16754
+// Module ID: 16744
+// Function ID: 16745
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 9050, 1910, 9071, 676, 8097, 21, 4342, 712, 1499, 9073, 589, 9051, 8314, 9052, 9070, 4061, 1236, 11902, 4233, 5310, 6051, 1500, 4684, 1297, 5862, 12277, 4338, 5807, 5808, 5414, 4753, 13330, 8012, 13328, 16754, 2]
+// Dependencies: [5, 32, 19, 17, 9050, 1910, 9071, 676, 8097, 21, 4342, 712, 1499, 9073, 589, 9051, 8314, 9052, 9070, 4061, 1236, 11903, 4233, 5310, 6051, 1500, 4684, 1297, 5862, 12278, 4338, 5807, 5808, 5414, 4753, 13331, 8012, 13329, 16745, 2]
 // Exports: default
 
-// Module 16753 (GuildSettingsModalServerTag)
+// Module 16744 (GuildSettingsModalServerTag)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import TableSwitchRow from "TableSwitchRow";
 import presentAddedFriendToast from "presentAddedFriendToast";
@@ -338,7 +338,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         obj[0] = function onRetry() {
           return guildId(_undefined[17]).getGuildProfile(guildId, true);
         };
-        return callback(navigation(12277), obj);
+        return callback(navigation(12278), obj);
       } else if (null == stateFromStores1) {
         return callback(tmp2(5862).SceneLoadingIndicator, {});
       } else {
@@ -385,7 +385,7 @@ export default function GuildSettingsModalServerTag(guildId) {
             let badgeColorSecondary = stateFromStores1.badgeColorSecondary;
             obj5[2] = badgeColorSecondary;
             ({ SIZE_16: obj16[3], SIZE_16: obj16[4] } = c12);
-            tmp32Result = tmp32(tmp2(13330).GuildBadge, obj5);
+            tmp32Result = tmp32(tmp2(13331).GuildBadge, obj5);
           }
           const items12 = [tmp32Result, tmp29];
           obj4[3] = items12;
@@ -416,14 +416,14 @@ export default function GuildSettingsModalServerTag(guildId) {
           obj10[0] = guildId;
           ({ tag: obj22[1], badge: obj22[2], badgeColorPrimary: obj22[3], badgeColorSecondary: obj22[4] } = stateFromStores1);
           obj10[5] = result1;
-          items14[3] = tmp32(tmp39(13328), obj10);
+          items14[3] = tmp32(tmp39(13329), obj10);
           obj7[1] = items14;
           let tmp40 = obj7;
         } else {
           const obj11 = { guildId: null, onUnlockPress: null };
           obj11[0] = guildId;
           obj11[1] = callback2;
-          const items15 = [tmp32(tmp39(16754), obj11), tmp31Result];
+          const items15 = [tmp32(tmp39(16745), obj11), tmp31Result];
           obj7[1] = items15;
           tmp40 = obj7;
         }

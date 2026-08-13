@@ -1,10 +1,10 @@
-// Module ID: 11502
-// Function ID: 11503
+// Module ID: 11503
+// Function ID: 11504
 // Name: useEmbeddedApps
 // Dependencies: [19, 4431, 1922, 1390, 589, 3979, 5774, 1370, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 11502 (useEmbeddedApps)
+// Module 11503 (useEmbeddedApps)
 import noop from "noop";
 import sortActivity from "sortActivity";
 import mergeGuildAvatar from "mergeGuildAvatar";

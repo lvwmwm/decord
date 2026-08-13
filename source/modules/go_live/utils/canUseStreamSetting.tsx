@@ -1,10 +1,10 @@
-// Module ID: 10803
-// Function ID: 10804
+// Module ID: 10805
+// Function ID: 10806
 // Name: canUseStreamSetting
 // Dependencies: [1924, 4007, 4234, 2]
 // Exports: default
 
-// Module 10803 (canUseStreamSetting)
+// Module 10805 (canUseStreamSetting)
 import { StreamQualities } from "GuildFeatures";
 
 let result = require("getGuildTierFromGuild").fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");

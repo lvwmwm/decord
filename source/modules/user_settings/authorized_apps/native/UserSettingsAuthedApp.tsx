@@ -1,10 +1,10 @@
-// Module ID: 14262
-// Function ID: 14263
+// Module ID: 14253
+// Function ID: 14254
 // Name: WarningLabel
-// Dependencies: [19, 17, 1390, 5290, 1391, 3998, 4540, 1994, 676, 9718, 10324, 21, 4342, 712, 4298, 4338, 1499, 1500, 1236, 5776, 10573, 10476, 589, 12019, 1435, 4685, 12018, 4310, 10325, 2007, 503, 9293, 7829, 7638, 6056, 8981, 4198, 5302, 5297, 11, 11499, 9582, 5807, 5808, 5414, 2]
+// Dependencies: [19, 17, 1390, 5290, 1391, 3998, 4540, 1994, 676, 9718, 10324, 21, 4342, 712, 4298, 4338, 1499, 1500, 1236, 5776, 10575, 10478, 589, 12020, 1435, 4685, 12019, 4310, 10325, 2007, 503, 9293, 7829, 7638, 6056, 8981, 4198, 5302, 5297, 11, 11500, 9582, 5807, 5808, 5414, 2]
 // Exports: default, handleDeleteApp
 
-// Module 14262 (WarningLabel)
+// Module 14253 (WarningLabel)
 import tokensToAppTokensMap from "tokensToAppTokensMap";
 import get_ActivityIndicator from "createStandardNavigationFactories";
 import participantFromServer from "participantFromServer";
@@ -373,5 +373,5 @@ export const handleDeleteApp = function handleDeleteApp(application) {
     _location = value.location;
   }
   obj = { location: _location, applicationId: application.id };
-  importDefault(10573).leaveActivity(obj);
+  importDefault(10575).leaveActivity(obj);
 };

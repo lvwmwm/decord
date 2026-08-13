@@ -1,7 +1,7 @@
 // Module ID: 8386
 // Function ID: 8387
 // Name: getShelfBadgeTypeIfActive
-// Dependencies: [109, 5, 8387, 4368, 11530, 676, 4778, 4335, 1236, 7634, 10578, 500, 1954, 7030, 10039, 7188, 6965, 4683, 1435, 9599, 11566, 7028, 10591, 2]
+// Dependencies: [109, 5, 8387, 4368, 11531, 676, 4778, 4335, 1236, 7634, 10580, 500, 1954, 7030, 10039, 7188, 6965, 4683, 1435, 9599, 11567, 7028, 10593, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
 // Module 8386 (getShelfBadgeTypeIfActive)
@@ -28,8 +28,8 @@ function getShelfBadgeTypeIfActive(application) {
   let tmp9;
   if (tmp2 != null) {
     const obj2 = require(500) /* set */;
-    tmp9 = tmp2.client_platform_config[importDefault(10578)(undefined, obj2.getOS(obj2))];
-    const tmp12 = importDefault(10578);
+    tmp9 = tmp2.client_platform_config[importDefault(10580)(undefined, obj2.getOS(obj2))];
+    const tmp12 = importDefault(10580);
   }
   const timestamp = Date.now();
   let label_until;
@@ -387,6 +387,6 @@ export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(
     result = require(7028) /* buildCommand */.hasCommandIndexForApp(id.id, guildState);
     const obj = require(7028) /* buildCommand */;
   }
-  const obj2 = require(10591) /* canInstallApplication */;
-  return require(10591) /* canInstallApplication */.isAppUserInstallable(id) || result;
+  const obj2 = require(10593) /* canInstallApplication */;
+  return require(10593) /* canInstallApplication */.isAppUserInstallable(id) || result;
 };

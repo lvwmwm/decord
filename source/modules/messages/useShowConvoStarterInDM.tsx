@@ -1,10 +1,10 @@
-// Module ID: 11695
-// Function ID: 11696
+// Module ID: 11696
+// Function ID: 11697
 // Name: MAX_MESSAGES_ALLOWED_FOR_GREETING
 // Dependencies: [19, 5881, 4562, 3998, 1922, 676, 1398, 10298, 589, 2]
 // Exports: useShowConvoStarterInDM
 
-// Module 11695 (MAX_MESSAGES_ALLOWED_FOR_GREETING)
+// Module 11696 (MAX_MESSAGES_ALLOWED_FOR_GREETING)
 import { useRef } from "noop";
 import processChannel from "processChannel";
 import reinjectEphemerals from "reinjectEphemerals";

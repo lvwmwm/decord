@@ -1,10 +1,10 @@
-// Module ID: 14076
-// Function ID: 14077
+// Module ID: 14067
+// Function ID: 14068
 // Name: SafetyHubViolationsHeader
-// Dependencies: [32, 19, 17, 11331, 7850, 676, 21, 4342, 712, 9106, 8007, 4338, 1236, 12910, 9528, 7849, 11, 14077, 7851, 4550, 11328, 2007, 11338, 589, 698, 11336, 2]
+// Dependencies: [32, 19, 17, 11332, 7850, 676, 21, 4342, 712, 9106, 8007, 4338, 1236, 12911, 9528, 7849, 11, 14068, 7851, 4550, 11329, 2007, 11339, 589, 698, 11337, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 14076 (SafetyHubViolationsHeader)
+// Module 14067 (SafetyHubViolationsHeader)
 import _slicedToArray from "_slicedToArray";
 import module_4550 from "module_4550";
 import get_ActivityIndicator from "useIsNewClassification";
@@ -63,7 +63,7 @@ function SafetyHubViolationsHeader(count) {
   obj1[1] = items4;
   items2[1] = closure_12(closure_6, obj1);
   if (opened) {
-    let ChevronSmallDownIcon = tmp7(12910).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp7(12911).ChevronSmallUpIcon;
   } else {
     ChevronSmallDownIcon = tmp7(9528).ChevronSmallDownIcon;
   }
@@ -211,7 +211,7 @@ class SafetyHubViolationsContainer {
     c3 = undefined;
     useState = undefined;
     c5 = undefined;
-    f93476 = undefined;
+    f93361 = undefined;
     useMemo = undefined;
     c8 = undefined;
     tmp = Fragment();
@@ -232,7 +232,7 @@ class SafetyHubViolationsContainer {
     items = [];
     items[0] = useMemo;
     stateFromStores = obj2.useStateFromStores(items, () => memo.getIsDsaEligible());
-    f93476 = stateFromStores;
+    f93361 = stateFromStores;
     items1 = [, ];
     items1[0] = classifications;
     items1[1] = first1;
@@ -261,7 +261,7 @@ class SafetyHubViolationsContainer {
     }
     c8 = num;
     tmp11 = jsxs;
-    tmp12 = f93476;
+    tmp12 = f93361;
     obj = { style: items3, children: null };
     items3 = [];
     items3[0] = tmp.container;
@@ -386,9 +386,9 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/s
 
 export default SafetyHubViolationsContainer;
 export const ConnectedSafetyHubViolationsContainer = function ConnectedSafetyHubViolationsContainer() {
-  let obj = require(11336) /* useSafetyHubClassifications */;
+  let obj = require(11337) /* useSafetyHubClassifications */;
   const activeSafetyHubClassifications = obj.useActiveSafetyHubClassifications();
-  let obj1 = require(11336) /* useSafetyHubClassifications */;
+  let obj1 = require(11337) /* useSafetyHubClassifications */;
   const expiredSafetyHubClassifications = obj1.useExpiredSafetyHubClassifications();
   if (0 !== activeSafetyHubClassifications.length) {
     obj = { style: null, children: null };

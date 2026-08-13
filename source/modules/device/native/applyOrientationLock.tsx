@@ -1,10 +1,10 @@
-// Module ID: 11232
-// Function ID: 11233
+// Module ID: 11233
+// Function ID: 11234
 // Name: applyOrientationLock
 // Dependencies: [9794, 8944, 2]
 // Exports: applyOrientationLock, releaseOrientationLock, restoreDefaultOrientationLock
 
-// Module 11232 (applyOrientationLock)
+// Module 11233 (applyOrientationLock)
 let result = require("set").fileFinishedImporting("modules/device/native/applyOrientationLock.tsx");
 
 export const applyOrientationLock = function applyOrientationLock(PORTRAIT, flag) {

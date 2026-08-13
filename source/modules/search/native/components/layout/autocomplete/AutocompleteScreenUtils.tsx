@@ -1,10 +1,10 @@
-// Module ID: 15887
-// Function ID: 15888
+// Module ID: 15878
+// Function ID: 15879
 // Name: getSearchQueryChannelIds
-// Dependencies: [1990, 3998, 1922, 11769, 8446, 676, 1236, 11126, 4286, 10498, 10056, 9840, 7759, 4856, 7754, 7751, 11274, 10502, 15888, 11770, 4187, 2]
+// Dependencies: [1990, 3998, 1922, 11770, 8446, 676, 1236, 11127, 4286, 10500, 10056, 9840, 7759, 4856, 7754, 7751, 11275, 10504, 15879, 11771, 4187, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 15887 (getSearchQueryChannelIds)
+// Module 15878 (getSearchQueryChannelIds)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -34,7 +34,7 @@ export const getSearchQueryUserIds = function getSearchQueryUserIds(items) {
 export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
   const intl = require(1236) /* getSystemLocale */.intl;
   if (intl.string(require(1236) /* getSystemLocale */.t.nrpA5E) === text) {
-    return importDefault(11126);
+    return importDefault(11127);
   } else {
     const intl3 = tmp(1236).intl;
     if (intl3.string(tmp(1236).t.ZNR2fi) === text) {
@@ -42,7 +42,7 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
     } else {
       const intl4 = tmp(1236).intl;
       if (intl4.string(tmp(1236).t["20uQR3"]) === text) {
-        return tmp(10498).EmbedIcon;
+        return tmp(10500).EmbedIcon;
       } else {
         const intl5 = tmp(1236).intl;
         if (intl5.string(tmp(1236).t.L4lxyE) === text) {
@@ -80,21 +80,21 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
   const intl = require(1236) /* getSystemLocale */.intl;
   if (intl.string(require(1236) /* getSystemLocale */.t.tPZo4p) === text) {
-    return tmp(11274).UserIcon;
+    return tmp(11275).UserIcon;
   } else {
     const intl3 = tmp(1236).intl;
     if (intl3.string(tmp(1236).t.JL7sRS) === text) {
-      return tmp(10502).RobotIcon;
+      return tmp(10504).RobotIcon;
     } else {
       const intl2 = tmp(1236).intl;
       if (intl2.string(tmp(1236).t.WjkIKU) === text) {
-        return tmp(15888).WebhookIcon;
+        return tmp(15879).WebhookIcon;
       }
     }
   }
 };
 export const toSearchListUserItem = function toSearchListUserItem(items, user, callback2) {
-  let obj = require(11770) /* SearchTokenTypes */;
+  let obj = require(11771) /* SearchTokenTypes */;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(items);
   if (null == user) {
     return null;

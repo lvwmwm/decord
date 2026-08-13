@@ -1,10 +1,10 @@
-// Module ID: 11504
-// Function ID: 11505
+// Module ID: 11505
+// Function ID: 11506
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 4334, 21, 712, 4342, 11493, 4083, 1493, 4191, 589, 4754, 4766, 5759, 11505, 4338, 2]
+// Dependencies: [32, 19, 17, 4334, 21, 712, 4342, 11494, 4083, 1493, 4191, 589, 4754, 4766, 5759, 11506, 4338, 2]
 // Exports: default
 
-// Module 11504 (BannerBase)
+// Module 11505 (BannerBase)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -106,7 +106,7 @@ export default function BannerBase(arg0) {
   obj1 = { style: tmp.imageContainer, children: null };
   obj2 = { style: tmp.trinketsLottie, source: null, autoPlay: null };
   const tmp2 = callback(React.useState(0), 2);
-  obj2[1] = _require(11505);
+  obj2[1] = _require(11506);
   obj2[2] = !stateFromStores;
   const items5 = [callback2(sharedValue(5759), obj2), image];
   obj1[1] = items5;

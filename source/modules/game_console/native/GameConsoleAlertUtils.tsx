@@ -1,8 +1,8 @@
-// Module ID: 10855
-// Function ID: 10856
-// Dependencies: [19, 4393, 10466, 676, 21, 4164, 1377, 1236, 4684, 10856, 10452, 2]
+// Module ID: 10857
+// Function ID: 10858
+// Dependencies: [19, 4393, 10468, 676, 21, 4164, 1377, 1236, 4684, 10858, 10454, 2]
 
-// Module 10855
+// Module 10857
 import "noop";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { GAME_CONSOLE_ALERT_MODAL_LOCATION as closure_4 } from "XBOX_URL_BASE";
@@ -58,7 +58,7 @@ export default {
     obj = { title, body: null, onConfirm: null };
     obj = { body, errorCodeMessage, dismissCallback: null };
     obj[2] = importDefault(4684).close;
-    obj[1] = jsx(reconnectPlatformType(10856).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: null });
+    obj[1] = jsx(reconnectPlatformType(10858).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: null });
     obj[2] = function onConfirm() {
       if (null != reconnectPlatformType) {
         const obj = { platformType: null, location: null };

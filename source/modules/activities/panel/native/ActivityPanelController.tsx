@@ -1,15 +1,15 @@
-// Module ID: 16167
-// Function ID: 16168
+// Module ID: 16158
+// Function ID: 16159
 // Name: BaseActivityPanelController
-// Dependencies: [32, 19, 4383, 8911, 10728, 1391, 1390, 4370, 9809, 21, 1989, 16168, 4083, 8944, 16169, 1628, 1493, 16170, 16173, 9794, 10692, 10741, 16174, 5316, 10694, 4205, 589, 3979, 10366, 5170, 4353, 16175, 10586, 2]
+// Dependencies: [32, 19, 4383, 8911, 10730, 1391, 1390, 4370, 9809, 21, 1989, 16159, 4083, 8944, 16160, 1628, 1493, 16161, 16164, 9794, 10694, 10743, 16165, 5316, 10696, 4205, 589, 3979, 10366, 5170, 4353, 16166, 10588, 2]
 // Exports: default
 
-// Module 16167 (BaseActivityPanelController)
+// Module 16158 (BaseActivityPanelController)
 import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
 import isOrientationLockSupported from "isOrientationLockSupported";
 import addApplication from "addApplication";
 import module_8911 from "module_8911";
-import module_10728 from "module_10728";
+import module_10730 from "module_10730";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import participantFromServer from "participantFromServer";
 import items3 from "items3";
@@ -64,7 +64,7 @@ class BaseActivityPanelController {
       defaultOrientationLockState = tmp5Result.getDefaultOrientationLockState(currentApp);
     }
     useRef = defaultOrientationLockState;
-    tmp12 = f63432(tmp4, tmp3.top, defaultOrientationLockState, tmp10);
+    tmp12 = f63412(tmp4, tmp3.top, defaultOrientationLockState, tmp10);
     c10 = tmp12;
     useRef = obj3.useRef(connectedActivityAppId);
     tmp5Result1 = require("isVoicePanelEnabled");
@@ -204,7 +204,7 @@ class BaseActivityPanelController {
     };
     fn.__closure = { wrapperOffset: sharedValue1 };
     fn.__workletHash = 5299695936442;
-    fn.__initData = f63432;
+    fn.__initData = f63412;
     fn2 = function s(arg0, arg1) {
       if (arg0 !== arg1) {
         sharedValue1(_undefined[12]).runOnJS(_undefined)(arg0);
@@ -214,7 +214,7 @@ class BaseActivityPanelController {
     obj = { runOnJS: require("module_4083").runOnJS, setWrapperGestureInProgress: tmp28 };
     fn2.__closure = obj;
     fn2.__workletHash = 5831467313798;
-    fn2.__initData = f63432;
+    fn2.__initData = f63412;
     animatedReaction = tmp5Result4.useAnimatedReaction(fn, fn2);
     items4 = [, , ];
     items4[0] = isActivityPanelFullscreen;
@@ -357,7 +357,7 @@ export default function ActivityPanelController(children) {
       }
     }
   }, items1);
-  obj = { context: connectedActivityInTextChannelId(16175), orientationLockStateForApp, mode, hasConnectedActivity, connectedActivityAppId, currentApp, updateActivityPanelMode: importAll(10586).updateActivityPanelMode, children: children.children };
-  return <BaseActivityPanelController context={connectedActivityInTextChannelId(16175)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={importAll(10586).updateActivityPanelMode}>{arg0.children}</BaseActivityPanelController>;
+  obj = { context: connectedActivityInTextChannelId(16166), orientationLockStateForApp, mode, hasConnectedActivity, connectedActivityAppId, currentApp, updateActivityPanelMode: importAll(10588).updateActivityPanelMode, children: children.children };
+  return <BaseActivityPanelController context={connectedActivityInTextChannelId(16166)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={importAll(10588).updateActivityPanelMode}>{arg0.children}</BaseActivityPanelController>;
 };
 export { BaseActivityPanelController };

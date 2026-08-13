@@ -1,10 +1,10 @@
-// Module ID: 12838
-// Function ID: 12839
+// Module ID: 12839
+// Function ID: 12840
 // Name: getSubscriptionPlaceholderPatternSource
-// Dependencies: [19, 17, 21, 7668, 12839, 12840, 12841, 1363, 2]
+// Dependencies: [19, 17, 21, 7668, 12840, 12841, 12842, 1363, 2]
 // Exports: SubscriptionPlaceholderPattern, getSubscriptionPlaceholderPatternSource, useSubscriptionPlaceholderPatternSource
 
-// Module 12838 (getSubscriptionPlaceholderPatternSource)
+// Module 12839 (getSubscriptionPlaceholderPatternSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getSubscriptionPlaceholderPatternSource = function getSubscriptionP
   let obj = require(7668) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(12839);
-    },
-    darker() {
       return callback(12840);
     },
-    light() {
+    darker() {
       return callback(12841);
+    },
+    light() {
+      return callback(12842);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useSubscriptionPlaceholderPatternSource = function useSubscriptionP
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12839);
-    },
-    darker() {
       return callback(12840);
     },
-    light() {
+    darker() {
       return callback(12841);
+    },
+    light() {
+      return callback(12842);
     }
   };
   return require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const SubscriptionPlaceholderPattern = function SubscriptionPlaceholderPa
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12839);
-    },
-    darker() {
       return callback(12840);
     },
-    light() {
+    darker() {
       return callback(12841);
+    },
+    light() {
+      return callback(12842);
     }
   };
   obj = {};

@@ -1,9 +1,9 @@
-// Module ID: 12270
-// Function ID: 12271
+// Module ID: 12271
+// Function ID: 12272
 // Name: ClanGameplayActivity
 // Dependencies: [2]
 
-// Module 12270 (ClanGameplayActivity)
+// Module 12271 (ClanGameplayActivity)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ClanGameplayActivity.tsx");
 
 export const ClanGameplayActivity = { NONE: 0, [0]: "NONE", LOW: 1, [1]: "LOW", HIGH: 2, [2]: "HIGH" };

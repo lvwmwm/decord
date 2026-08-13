@@ -1,8 +1,8 @@
-// Module ID: 15103
-// Function ID: 15104
-// Dependencies: [19, 21, 8619, 5823, 8431, 9727, 15104, 2]
+// Module ID: 15094
+// Function ID: 15095
+// Dependencies: [19, 21, 8619, 5823, 8431, 9727, 15095, 2]
 
-// Module 15103
+// Module 15094
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 import importAllResult from "noop";
@@ -37,15 +37,15 @@ const memoResult = require("noop").memo(function DevToolsGuildTagBadgesModal() {
     options() {
       return { title: "Guild Tag Badges" };
     },
-    component: importDefault(15104)
+    component: importDefault(15095)
   };
   ({ Navigator, Screen } = createNativeStackNavigator);
   obj[1] = <Screen name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
-  }} component={importDefault(15104)} />;
+  }} component={importDefault(15095)} />;
   return <Navigator name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
-  }} component={importDefault(15104)} />;
+  }} component={importDefault(15095)} />;
 });
 const result = require("createNativeStackNavigator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesModal.tsx");
 

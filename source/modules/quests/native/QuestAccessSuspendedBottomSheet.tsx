@@ -1,10 +1,10 @@
-// Module ID: 14435
-// Function ID: 14436
+// Module ID: 14426
+// Function ID: 14427
 // Name: QuestAccessSuspendedBottomSheet
-// Dependencies: [19, 676, 11329, 21, 4310, 14434, 6059, 7778, 1236, 4755, 2]
+// Dependencies: [19, 676, 11330, 21, 4310, 14425, 6059, 7778, 1236, 4755, 2]
 // Exports: default
 
-// Module 14435 (QuestAccessSuspendedBottomSheet)
+// Module 14426 (QuestAccessSuspendedBottomSheet)
 import noop from "noop";
 import { UserSettingsSections } from "ME";
 import { AccountSettingsTabs } from "AccountSettingsTabs";
@@ -16,7 +16,7 @@ const result = require("AccountSettingsTabs").fileFinishedImporting("modules/que
 export default function QuestAccessSuspendedBottomSheet() {
   const callback = React.useCallback(() => {
     let obj = callback2(4310);
-    obj.hideActionSheet(callback(14434).ACTION_SHEET_KEY);
+    obj.hideActionSheet(callback(14425).ACTION_SHEET_KEY);
     obj = { screen: constants.ACCOUNT, params: obj };
     obj = { initialTab: constants2.STANDING };
     callback(6059).openUserSettings(obj);

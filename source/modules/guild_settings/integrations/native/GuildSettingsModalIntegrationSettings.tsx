@@ -1,10 +1,10 @@
-// Module ID: 16763
-// Function ID: 16764
+// Module ID: 16754
+// Function ID: 16755
 // Name: GraceOption
-// Dependencies: [19, 17, 1983, 9071, 21, 16764, 1236, 4342, 712, 8029, 4887, 5414, 16765, 5807, 5808, 4072, 4338, 5041, 1435, 1363, 8012, 4753, 3943, 8030, 16766, 5754, 9070, 589, 4278, 16728, 2]
+// Dependencies: [19, 17, 1983, 9071, 21, 16755, 1236, 4342, 712, 8029, 4887, 5414, 16756, 5807, 5808, 4072, 4338, 5041, 1435, 1363, 8012, 4753, 3943, 8030, 16757, 5754, 9070, 589, 4278, 16719, 2]
 // Exports: default
 
-// Module 16763 (GraceOption)
+// Module 16754 (GraceOption)
 import get_ActivityIndicator from "getPlatformUserUrl";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import handleFormInit from "handleFormInit";
@@ -40,7 +40,7 @@ function ForceSyncIcon(isSyncing) {
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t["+Josox"]);
     obj[2] = tmp;
     obj = { source: null };
-    obj[0] = importDefault(16765);
+    obj[0] = importDefault(16756);
     obj[3] = tmp2(require(5414) /* TableRowInner */.TableRow.Icon, obj);
     tmp2Result = tmp2(require(4887) /* PressableBase */.PressableOpacity, obj);
   }
@@ -147,7 +147,7 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
   const value = obj2.get(integration.type);
   if (null == value) {
     const _Object = Object;
-    const values = Object.values(tmp12(16764).IntegrationExpireGracePeriodTypes);
+    const values = Object.values(tmp12(16755).IntegrationExpireGracePeriodTypes);
     const found = values.filter((arg0) => Number.isInteger(arg0));
     const mapped = found.map((days) => {
       let obj = { value: days, label: null };
@@ -209,12 +209,12 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
     obj11[1] = integration.expire_behavior;
     obj11[2] = self.handleExpireBehaviorChange;
     const obj12 = { value: null, label: null };
-    obj12[0] = tmp15(16766).IntegrationExpireBehaviorTypes.REMOVE_ROLE;
+    obj12[0] = tmp15(16757).IntegrationExpireBehaviorTypes.REMOVE_ROLE;
     const intl6 = tmp15(1236).intl;
     obj12[1] = intl6.string(tmp15(1236).t["6kpw4i"]);
     const items3 = [callback(tmp15(8029).TableRadioRow, obj12), ];
     const obj13 = { value: null, label: null };
-    obj13[0] = tmp15(16766).IntegrationExpireBehaviorTypes.KICK;
+    obj13[0] = tmp15(16757).IntegrationExpireBehaviorTypes.KICK;
     const intl7 = tmp15(1236).intl;
     obj13[1] = intl7.string(tmp15(1236).t.fQUQIJ);
     items3[1] = callback(tmp15(8029).TableRadioRow, obj13);

@@ -1,10 +1,10 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 13899
+// Function ID: 13900
 // Name: SafeAreaReporter
 // Dependencies: [19, 17, 21, 1624, 1630, 500, 1629, 1640, 705, 1631, 1496, 2]
 // Exports: SafeAreaProvider, SafeAreaReporter
 
-// Module 13908 (SafeAreaReporter)
+// Module 13899 (SafeAreaReporter)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

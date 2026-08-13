@@ -1,10 +1,10 @@
-// Module ID: 12308
-// Function ID: 12309
+// Module ID: 12309
+// Function ID: 12310
 // Name: ObscuredView
-// Dependencies: [32, 19, 17, 8913, 21, 12309, 4065, 712, 4083, 4745, 500, 4342, 5308, 8895, 4084, 8053, 2]
+// Dependencies: [32, 19, 17, 8913, 21, 12310, 4065, 712, 4083, 4745, 500, 4342, 5308, 8895, 4084, 8053, 2]
 // Exports: default
 
-// Module 12308 (ObscuredView)
+// Module 12309 (ObscuredView)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -24,7 +24,7 @@ function ObscuredView(source) {
   let tmp4;
   let tmp5;
   source = source.source;
-  let obj = require(12309) /* useMediaItemSpoilerState */;
+  let obj = require(12310) /* useMediaItemSpoilerState */;
   [tmp4, tmp5] = callback(obj.useMediaItemSpoilerState(source.index), 2);
   require(4065) /* map */;
   let tmp10Result = null;

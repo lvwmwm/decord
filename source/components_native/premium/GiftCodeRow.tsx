@@ -1,9 +1,9 @@
-// Module ID: 12900
-// Function ID: 12901
+// Module ID: 12901
+// Function ID: 12902
 // Name: handleRevoke
 // Dependencies: [19, 17, 676, 21, 4342, 712, 4072, 10373, 4579, 8972, 6043, 4338, 4755, 1236, 3943, 1297, 2]
 
-// Module 12900 (handleRevoke)
+// Module 12901 (handleRevoke)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { AnalyticsSections } from "ME";
 import jsxProd from "jsxProd";

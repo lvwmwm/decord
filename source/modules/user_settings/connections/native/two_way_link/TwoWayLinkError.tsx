@@ -1,10 +1,10 @@
-// Module ID: 10515
-// Function ID: 10516
+// Module ID: 10517
+// Function ID: 10518
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 4342, 10459, 10516, 4338, 5368, 4753, 4755, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 10461, 10518, 4338, 5368, 4753, 4755, 1236, 2]
 // Exports: TwoWayLinkError
 
-// Module 10515 (TwoWayLinkError)
+// Module 10517 (TwoWayLinkError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,12 +26,12 @@ export const TwoWayLinkError = function TwoWayLinkError(arg0) {
   let onRetry;
   let title;
   ({ onClose, title, body, onRetry } = arg0);
-  let obj = require(10459) /* styles */;
+  let obj = require(10461) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container, children: null };
   obj = { style: twoWayLinkStyles.content, children: null };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(10516), style: callback3().image }), callback(require(4338) /* Text */.Text, { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title }), callback(require(4338) /* Text */.Text, { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body })];
+  const items = [callback(closure_3, { source: importDefault(10518), style: callback3().image }), callback(require(4338) /* Text */.Text, { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title }), callback(require(4338) /* Text */.Text, { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body })];
   obj[1] = items;
   const items1 = [callback2(closure_4, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };

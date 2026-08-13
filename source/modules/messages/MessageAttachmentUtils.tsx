@@ -1,10 +1,10 @@
-// Module ID: 11458
-// Function ID: 11459
+// Module ID: 11459
+// Function ID: 11460
 // Name: getForumPostShouldObscure
-// Dependencies: [3989, 676, 5950, 5955, 5954, 1403, 8454, 647, 4034, 10968, 1236, 2]
+// Dependencies: [3989, 676, 5950, 5955, 5954, 1403, 8454, 647, 4034, 10969, 1236, 2]
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt, useShouldObscure
 
-// Module 11458 (getForumPostShouldObscure)
+// Module 11459 (getForumPostShouldObscure)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
@@ -169,7 +169,7 @@ export const useShouldObscure = function useShouldObscure(channel) {
   const setting = RenderSpoilers.useSetting();
   const obj = channel(647);
   const enabledHarmTypesBitmaskForChannelType = channel(5950).getEnabledHarmTypesBitmaskForChannelType(channel(5955).ContentHarmTypeChannel.GUILD);
-  return getForumPostShouldObscure(channel.media, !importDefault(10968)(setting, stateFromStores), enabledHarmTypesBitmaskForChannelType);
+  return getForumPostShouldObscure(channel.media, !importDefault(10969)(setting, stateFromStores), enabledHarmTypesBitmaskForChannelType);
 };
 export const getObscuredAlt = function getObscuredAlt(obscureReason) {
   if (require(5954) /* ObscureReason */.ObscureReason.EXPLICIT_CONTENT !== obscureReason) {

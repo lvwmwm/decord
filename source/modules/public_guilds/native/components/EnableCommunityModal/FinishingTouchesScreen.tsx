@@ -1,10 +1,10 @@
-// Module ID: 16845
-// Function ID: 16846
+// Module ID: 16836
+// Function ID: 16837
 // Name: FinishingTouchesScreen
-// Dependencies: [32, 19, 17, 9071, 1983, 8187, 676, 21, 4065, 712, 589, 3994, 9070, 506, 16792, 16834, 16833, 16831, 1236, 4338, 4753, 5807, 16843, 5808, 1993, 2]
+// Dependencies: [32, 19, 17, 9071, 1983, 8187, 676, 21, 4065, 712, 589, 3994, 9070, 506, 16783, 16825, 16824, 16822, 1236, 4338, 4753, 5807, 16834, 5808, 1993, 2]
 // Exports: default
 
-// Module 16845 (FinishingTouchesScreen)
+// Module 16836 (FinishingTouchesScreen)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import get_ActivityIndicator from "EnableCommunityModalSteps";
@@ -109,7 +109,7 @@ export default function FinishingTouchesScreen() {
       obj[6] = features.defaultMessageNotifications;
       first(9070).saveGuild(features.id, obj);
       if (removeResult !== everyoneRole.permissions) {
-        obj = guild(16792);
+        obj = guild(16783);
         const items = [obj];
         obj.saveRoleSettings(features.id, items);
       }
@@ -118,10 +118,10 @@ export default function FinishingTouchesScreen() {
   }, []);
   const tmp11 = callback(obj.useState(!closure_11.some((VIEW_CHANNEL) => outer1_2(outer1_3[11]).canEveryone(VIEW_CHANNEL, guild))), 2);
   const tmp8 = constants2;
-  const tmp19 = first(16834)();
-  const enableCommunitySharedStyles = guild(16833).useEnableCommunitySharedStyles();
+  const tmp19 = first(16825)();
+  const enableCommunitySharedStyles = guild(16824).useEnableCommunitySharedStyles();
   obj = { headerRef: ref, currentStep: null, onSuccess: null, disableNextStep: null, buttonText: null, children: null };
-  obj[1] = guild(16831).EnableCommunityModalSteps.STEP_3;
+  obj[1] = guild(16822).EnableCommunityModalSteps.STEP_3;
   obj[2] = callback1;
   obj[3] = !first1;
   const intl = tmp2(1236).intl;
@@ -145,7 +145,7 @@ export default function FinishingTouchesScreen() {
   const items3 = [callback3(closure_7, obj), , ];
   let obj5 = { spacing: 24, style: { paddingHorizontal: token }, children: null };
   const obj6 = { formSwitchDisabled: first === constants2.ONLY_MENTIONS, children: null };
-  let tmp4Result = tmp4(16843);
+  let tmp4Result = tmp4(16834);
   const obj7 = { label: null, value: null, disabled: null, onValueChange: null };
   const intl5 = tmp2(1236).intl;
   obj7[0] = intl5.format(guild(1236).t.K8Eg4P, {
@@ -164,7 +164,7 @@ export default function FinishingTouchesScreen() {
   obj6[1] = callback2(guild(5808).TableSwitchRow, obj7);
   const items4 = [callback2(tmp4Result, obj6), ];
   const obj10 = { formSwitchDisabled: first2, children: null };
-  tmp4Result = tmp4(16843);
+  tmp4Result = tmp4(16834);
   const obj11 = { label: null, value: null, disabled: null, onValueChange: null };
   const intl6 = tmp2(1236).intl;
   obj11[0] = intl6.format(guild(1236).t.v8qCoG, {
@@ -204,12 +204,12 @@ export default function FinishingTouchesScreen() {
       return null;
     }
   };
-  const tmp2Result = guild(16833);
+  const tmp2Result = guild(16824);
   obj16[0] = first(1993).getArticleURL(constants.PUBLIC_GUILD_GUILDLINES);
   const tmp4Result1 = first(1993);
   obj16[1] = first(1993).getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES);
   obj15[3] = intl9.format(guild(1236).t["BwbW/Q"], obj16);
   items3[2] = callback2(guild(4338).Text, obj15);
   obj[5] = items3;
-  return callback3(guild(16831).EnableCommunityModalScreen, obj);
+  return callback3(guild(16822).EnableCommunityModalScreen, obj);
 };

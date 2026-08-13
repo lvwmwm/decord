@@ -1,10 +1,10 @@
-// Module ID: 12573
-// Function ID: 12574
+// Module ID: 12574
+// Function ID: 12575
 // Name: ShopThisLookMenuAction
 // Dependencies: [676, 1949, 698, 2]
 // Exports: trackShopThisLookMenuAction, trackShopThisLookRowAction
 
-// Module 12573 (ShopThisLookMenuAction)
+// Module 12574 (ShopThisLookMenuAction)
 import { AnalyticEvents } from "ME";
 
 let obj = { PROFILE_FRAME: "profile_frame", PROFILE_EFFECT: "profile_effect", AVATAR_DECORATION: "avatar_decoration", NAMEPLATE: "nameplate" };

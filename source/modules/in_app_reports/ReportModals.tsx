@@ -256,7 +256,7 @@ export const showUnauthenticatedReportModalForTida = function showUnauthenticate
 export const showUnauthenticatedReportModalForMessage = function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   let obj = importDefault(4539);
   obj = { report_type: require(8066) /* ReportNames */.UnauthenticatedReportNames.MESSAGE };
-  const merged = Object.assign({ message_id: "Array", channel_id: "ct" });
+  const merged = Object.assign({ message_id: "isArray", channel_id: "accessibilityRole" });
   obj.trackWithMetadata(AnalyticEvents.IAR_MODAL_OPEN, obj);
   const tmp = new hasFlag({});
   obj = { name: require(8066) /* ReportNames */.UnauthenticatedReportNames.MESSAGE, record: tmp };

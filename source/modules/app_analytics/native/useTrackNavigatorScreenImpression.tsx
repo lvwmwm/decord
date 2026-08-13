@@ -1,10 +1,10 @@
-// Module ID: 13887
-// Function ID: 13888
+// Module ID: 13878
+// Function ID: 13879
 // Name: useTrackNavigatorScreenImpression
 // Dependencies: [9399, 503, 2]
 // Exports: useTrackNavigatorScreenImpression
 
-// Module 13887 (useTrackNavigatorScreenImpression)
+// Module 13878 (useTrackNavigatorScreenImpression)
 const result = require("set").fileFinishedImporting("modules/app_analytics/native/useTrackNavigatorScreenImpression.tsx");
 
 export const useTrackNavigatorScreenImpression = function useTrackNavigatorScreenImpression(impressionProperties, params) {

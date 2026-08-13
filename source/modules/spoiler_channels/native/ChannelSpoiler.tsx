@@ -1,10 +1,10 @@
-// Module ID: 12084
-// Function ID: 12085
+// Module ID: 12085
+// Function ID: 12086
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 4358, 1391, 1910, 11702, 21, 4342, 712, 589, 4535, 11703, 4538, 5272, 4198, 4805, 4338, 1236, 4753, 4332, 4887, 10931, 7844, 2]
+// Dependencies: [32, 19, 17, 4358, 1391, 1910, 11703, 21, 4342, 712, 589, 4535, 11704, 4538, 5272, 4198, 4805, 4338, 1236, 4753, 4332, 4887, 10933, 7844, 2]
 // Exports: default
 
-// Module 12084 (ChannelSpoiler)
+// Module 12085 (ChannelSpoiler)
 import _slicedToArray from "_slicedToArray";
 import Stack from "Stack";
 import { View } from "Text";
@@ -43,7 +43,7 @@ export default function ChannelSpoiler(channelId) {
     isVocalResult = stateFromStores1.isVocal();
   }
   const dependencyMap = isVocalResult;
-  setControlsMode = obj3.useContext(tmp6(11703)).setControlsMode;
+  setControlsMode = obj3.useContext(tmp6(11704)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;
@@ -164,5 +164,5 @@ export default function ChannelSpoiler(channelId) {
   }
   obj10[8] = id;
   obj10[9] = channelId.channelId;
-  return tmp20(importDefault(10931), obj10);
+  return tmp20(importDefault(10933), obj10);
 };

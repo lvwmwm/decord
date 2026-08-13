@@ -1,19 +1,19 @@
-// Module ID: 10969
-// Function ID: 10970
+// Module ID: 10970
+// Function ID: 10971
 // Name: useChatWidth
-// Dependencies: [19, 4200, 4202, 10970, 10971, 2]
+// Dependencies: [19, 4200, 4202, 10971, 10972, 2]
 // Exports: default, getChatWidth
 
-// Module 10969 (useChatWidth)
+// Module 10970 (useChatWidth)
 import noop from "noop";
 
 const require = arg1;
 const result = require("useBaseAppContainerDimensions").fileFinishedImporting("modules/chat/native/useChatWidth.tsx");
 
 export default function useChatWidth(arg0) {
-  let context = React.useContext(importDefault(10971));
+  let context = React.useContext(importDefault(10972));
   const width = importDefault(4202)().width;
-  require(10970) /* sum */;
+  require(10971) /* sum */;
   if (null == context) {
     if (null == arg0) {
       let diff = width;
@@ -35,8 +35,8 @@ export const getChatWidth = function getChatWidth(arg0) {
   if (null == arg0) {
     let diff = width;
     if (obj.getChatLayout().isChatLockedOpen) {
-      diff = width - tmp(10970).getDrawerWidth();
-      const tmpResult = tmp(10970);
+      diff = width - tmp(10971).getDrawerWidth();
+      const tmpResult = tmp(10971);
     }
     let tmp3 = diff;
   } else {

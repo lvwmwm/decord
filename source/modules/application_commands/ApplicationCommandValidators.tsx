@@ -1,9 +1,9 @@
-// Module ID: 11600
-// Function ID: 11601
+// Module ID: 11601
+// Function ID: 11602
 // Name: validateNumericOptionRange
 // Dependencies: [1994, 4680, 1954, 10042, 38, 1236, 10040, 7028, 10043, 2]
 
-// Module 11600 (validateNumericOptionRange)
+// Module 11601 (validateNumericOptionRange)
 import _getSystemLocale from "_getSystemLocale";
 import map from "map";
 

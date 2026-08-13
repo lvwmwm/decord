@@ -1,10 +1,10 @@
-// Module ID: 16341
-// Function ID: 16342
+// Module ID: 16332
+// Function ID: 16333
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 4688, 4688, 16342, 1236, 2]
+// Dependencies: [19, 21, 4688, 4688, 16333, 1236, 2]
 // Exports: default
 
-// Module 16341 (VoicePanelNoJoinPermissionsAlert)
+// Module 16332 (VoicePanelNoJoinPermissionsAlert)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ const result = require("getAlertModalItemKey").fileFinishedImporting("modules/vo
 export default function VoicePanelNoJoinPermissionsAlert() {
   let obj = require(4688) /* getAlertModalItemKey */;
   obj = { header: null, title: null, content: null, actions: null };
-  obj[0] = jsx(importDefault(16342), {});
+  obj[0] = jsx(importDefault(16333), {});
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["7/2/3M"]);
   const intl2 = require(1236) /* getSystemLocale */.intl;

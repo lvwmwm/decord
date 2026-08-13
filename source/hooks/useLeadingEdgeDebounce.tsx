@@ -1,10 +1,10 @@
-// Module ID: 10723
-// Function ID: 10724
+// Module ID: 10725
+// Function ID: 10726
 // Name: useLeadingEdgeDebounce
 // Dependencies: [32, 19, 2]
 // Exports: useLeadingEdgeDebounce
 
-// Module 10723 (useLeadingEdgeDebounce)
+// Module 10725 (useLeadingEdgeDebounce)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

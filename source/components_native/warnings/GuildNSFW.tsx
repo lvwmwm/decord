@@ -1,10 +1,10 @@
-// Module ID: 10930
-// Function ID: 10931
+// Module ID: 10932
+// Function ID: 10933
 // Name: GuildNSFW
-// Dependencies: [109, 19, 1910, 1221, 21, 589, 4558, 4560, 5272, 7842, 7844, 1236, 10931, 2]
+// Dependencies: [109, 19, 1910, 1221, 21, 589, 4558, 4560, 5272, 7842, 7844, 1236, 10933, 2]
 // Exports: default
 
-// Module 10930 (GuildNSFW)
+// Module 10932 (GuildNSFW)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -53,7 +53,7 @@ export default function GuildNSFW(channelId) {
         obj[0] = modalType;
         obj[2] = handleDisagree;
         const merged1 = Object.assign(obj);
-        return jsx(importDefault(10931), { modalType: null, disagreementButtonVariant: "primary", onDisagree: null });
+        return jsx(importDefault(10933), { modalType: null, disagreementButtonVariant: "primary", onDisagree: null });
       } else {
         obj1 = { modalType: null, onAgree: null, onDisagree: null };
         obj1[0] = modalType;
@@ -62,12 +62,12 @@ export default function GuildNSFW(channelId) {
         };
         obj1[2] = handleDisagree;
         const merged2 = Object.assign(obj);
-        return jsx(importDefault(10931), { modalType: null, onAgree: null, onDisagree: null });
+        return jsx(importDefault(10933), { modalType: null, onAgree: null, onDisagree: null });
       }
     }
   }
   obj2 = { modalType, onAgree: callback, onDisagree: handleDisagree };
   const tmp5 = callback(ageGateVerifyContentForGuild, closure_3);
   const merged3 = Object.assign(obj);
-  return jsx(importDefault(10931), { modalType, onAgree: callback, onDisagree: handleDisagree });
+  return jsx(importDefault(10933), { modalType, onAgree: callback, onDisagree: handleDisagree });
 };

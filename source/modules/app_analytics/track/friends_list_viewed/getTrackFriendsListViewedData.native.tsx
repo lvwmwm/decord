@@ -1,10 +1,10 @@
-// Module ID: 15910
-// Function ID: 15911
+// Module ID: 15901
+// Function ID: 15902
 // Name: getTrackFriendsListViewedData
-// Dependencies: [12096, 7169, 7165, 5039, 3998, 676, 4034, 1403, 15911, 12097, 2]
+// Dependencies: [12097, 7169, 7165, 5039, 3998, 676, 4034, 1403, 15902, 12098, 2]
 // Exports: default
 
-// Module 15910 (getTrackFriendsListViewedData)
+// Module 15901 (getTrackFriendsListViewedData)
 import { useContactSyncStore } from "setStoredContacts";
 import initialize from "initialize";
 import recountRelationshipTypes from "recountRelationshipTypes";
@@ -27,7 +27,7 @@ export default function getTrackFriendsListViewedData() {
   suggestionCount = suggestionCount.getSuggestionCount();
   obj = { num_friends: null };
   obj[0] = store2.getFriendCount();
-  const merged = Object.assign(importDefault(15911)());
+  const merged = Object.assign(importDefault(15902)());
   obj.num_outgoing_requests = store2.getOutgoingCount();
   obj.num_incoming_requests = store2.getPendingCount();
   obj.num_game_friends = store.getGameFriendCount();
@@ -36,7 +36,7 @@ export default function getTrackFriendsListViewedData() {
   obj.num_suggestions = suggestionCount;
   obj.was_dismissed = useContactSyncStore.getState().upsellCTADismissed;
   const hasFlagResult1 = require(1403) /* hasFlag */.hasFlag(setting, constants2.FIND_BY_EMAIL);
-  obj.contact_sync_is_enabled = require(12097) /* _uploadContacts */.isContactSyncEnabled(localAccount);
+  obj.contact_sync_is_enabled = require(12098) /* _uploadContacts */.isContactSyncEnabled(localAccount);
   obj.is_discoverable_email = hasFlagResult1;
   obj.is_discoverable_phone = hasFlagResult;
   return obj;

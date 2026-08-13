@@ -1,10 +1,10 @@
-// Module ID: 14241
-// Function ID: 14242
+// Module ID: 14232
+// Function ID: 14233
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [19, 17, 21, 4342, 1297, 712, 7381, 14213, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 1297, 712, 7381, 14204, 4338, 2]
 // Exports: default
 
-// Module 14241 (FamilyCenterRequestorDetails)
+// Module 14232 (FamilyCenterRequestorDetails)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,7 +34,7 @@ export default function FamilyCenterRequestorDetails(otherUser) {
   obj[4] = otherUser.avatarDecoration;
   const items = [callback(require(1297) /* Button */.Avatar, obj), ];
   const obj1 = { style: tmp.detailsContainer, children: null };
-  const items1 = [callback(importDefault(14213), { user: otherUser }), callback(require(4338) /* Text */.Text, { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText })];
+  const items1 = [callback(importDefault(14204), { user: otherUser }), callback(require(4338) /* Text */.Text, { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText })];
   obj1[1] = items1;
   items[1] = callback2(View, obj1);
   obj[1] = items;

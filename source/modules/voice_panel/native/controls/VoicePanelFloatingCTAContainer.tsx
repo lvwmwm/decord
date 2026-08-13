@@ -1,10 +1,10 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 16323
+// Function ID: 16324
 // Name: FloatingCTA
-// Dependencies: [32, 19, 1391, 11704, 11707, 505, 21, 1367, 712, 4342, 4753, 8015, 4072, 11703, 16221, 6066, 647, 16217, 4083, 11710, 4689, 11135, 4754, 8054, 10045, 2]
+// Dependencies: [32, 19, 1391, 11705, 11708, 505, 21, 1367, 712, 4342, 4753, 8015, 4072, 11704, 16212, 6066, 647, 16208, 4083, 11711, 4689, 11136, 4754, 8054, 10045, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 16332 (FloatingCTA)
+// Module 16323 (FloatingCTA)
 import _slicedToArray from "_slicedToArray";
 import VOICE_PANEL_DRAWER_MAX_WIDTH from "VOICE_PANEL_DRAWER_MAX_WIDTH";
 import ensureGuildLoaded from "ensureGuildLoaded";

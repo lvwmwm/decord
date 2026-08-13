@@ -1,9 +1,9 @@
-// Module ID: 10986
-// Function ID: 10987
+// Module ID: 10987
+// Function ID: 10988
 // Name: start
 // Dependencies: [676, 6974, 2]
 
-// Module 10986 (start)
+// Module 10987 (start)
 import { AnalyticEvents } from "ME";
 import set from "set";
 

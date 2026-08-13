@@ -1,10 +1,10 @@
-// Module ID: 12559
-// Function ID: 12560
+// Module ID: 12560
+// Function ID: 12561
 // Name: UserProfilePrivateBanner
 // Dependencies: [19, 17, 5816, 21, 4342, 712, 688, 4864, 4338, 1236, 2]
 // Exports: default
 
-// Module 12559 (UserProfilePrivateBanner)
+// Module 12560 (UserProfilePrivateBanner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

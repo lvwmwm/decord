@@ -1,10 +1,10 @@
-// Module ID: 11402
-// Function ID: 11403
+// Module ID: 11403
+// Function ID: 11404
 // Name: _joinOrStartActivityInChannel
-// Dependencies: [5, 1390, 1391, 1979, 10623, 10586, 10572, 2]
+// Dependencies: [5, 1390, 1391, 1979, 10625, 10588, 10574, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 11402 (_joinOrStartActivityInChannel)
+// Module 11403 (_joinOrStartActivityInChannel)
 import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -95,7 +95,7 @@ function _joinOrStartActivityInChannel() {
                     callback2 = null;
                   }
                   closure_8 = callback2;
-                  callback2(10623)(closure_8, channel.location);
+                  callback2(10625)(closure_8, channel.location);
                   channel = 3;
                   return { value: true, done: true };
                 }
@@ -106,12 +106,12 @@ function _joinOrStartActivityInChannel() {
               if (length.length > 0) {
                 compositeInstanceId = length[0].compositeInstanceId;
               }
-              let obj2 = callback(10586);
+              let obj2 = callback(10588);
               obj2 = { channelId: null, applicationId: null, isStart: null, embeddedActivitiesManager: null, analyticsLocations: null, customId: null, referrerId: null };
               obj2[0] = callback2;
               obj2[1] = callback;
               obj2[2] = null == compositeInstanceId;
-              obj2[3] = callback2(10572)();
+              obj2[3] = callback2(10574)();
               obj2[4] = dependencyMap;
               obj2[5] = c3;
               obj2[6] = store;

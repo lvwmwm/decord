@@ -1,10 +1,10 @@
-// Module ID: 10597
-// Function ID: 10598
+// Module ID: 10599
+// Function ID: 10600
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 4342, 712, 10468, 1628, 4083, 4754, 4887, 1236, 10598, 5366, 4338, 5368, 10600, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 10470, 1628, 4083, 4754, 4887, 1236, 10600, 5366, 4338, 5368, 10602, 2]
 // Exports: default
 
-// Module 10597 (OAuth2AuthorizeModal)
+// Module 10599 (OAuth2AuthorizeModal)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,7 +30,7 @@ let result = require("jsxProd").fileFinishedImporting("modules/oauth2/native/OAu
 
 export default function OAuth2AuthorizeModal(arg0) {
   const tmp = createCacheKey();
-  const tmp4 = sharedValue(10468)(arg0);
+  const tmp4 = sharedValue(10470)(arg0);
   const require = tmp4;
   let obj = require(4083);
   sharedValue = obj.useSharedValue(0);
@@ -82,7 +82,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   if (null != tmp4.backStep) {
     const obj3 = { color: null };
     obj3[0] = tmp2(712).colors.INTERACTIVE_TEXT_DEFAULT;
-    let tmp11Result = tmp11(tmp5(10598).ArrowSmallLeftIcon, obj3);
+    let tmp11Result = tmp11(tmp5(10600).ArrowSmallLeftIcon, obj3);
   } else {
     const obj4 = { color: null };
     obj4[0] = tmp2(712).colors.INTERACTIVE_TEXT_DEFAULT;
@@ -105,7 +105,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   const merged = Object.assign(tmp4);
   obj8.onScroll = callback;
   obj8.centerContent = true;
-  obj7[2] = closure_5(sharedValue(10600), obj8);
+  obj7[2] = closure_5(sharedValue(10602), obj8);
   items4[1] = closure_5(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj7);
   obj[1] = items4;
   return closure_6(View, obj);

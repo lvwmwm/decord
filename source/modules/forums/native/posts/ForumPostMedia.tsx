@@ -1,10 +1,10 @@
-// Module ID: 11455
-// Function ID: 11456
+// Module ID: 11456
+// Function ID: 11457
 // Name: ForumPostMediaAndroid
-// Dependencies: [32, 19, 17, 1302, 1301, 21, 4342, 712, 5308, 4745, 11456, 7107, 11457, 500, 5954, 4887, 7842, 7844, 11458, 1363, 4034, 9944, 1492, 2]
+// Dependencies: [32, 19, 17, 1302, 1301, 21, 4342, 712, 5308, 4745, 11457, 7107, 11458, 500, 5954, 4887, 7842, 7844, 11459, 1363, 4034, 9944, 1492, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail, useSharedMediaProps
 
-// Module 11455 (ForumPostMediaAndroid)
+// Module 11456 (ForumPostMediaAndroid)
 import _slicedToArray from "_slicedToArray";
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import get_ActivityIndicator from "AgeVerificationModalEntryPoint";
@@ -83,9 +83,9 @@ function ForumPostMedia(obscureReason) {
   if (obscureReason.isMediaPost) {
     obj = {};
     const merged = Object.assign(obscureReason);
-    let tmp6Result = callback2(ref(11457), obj);
+    let tmp6Result = callback2(ref(11458), obj);
     let tmp12 = callback2;
-    const tmp19 = ref(11457);
+    const tmp19 = ref(11458);
   } else {
     if (tmp3Result.isAndroid()) {
       obj = {};
@@ -169,7 +169,7 @@ export const useSharedMediaProps = function useSharedMediaProps(arg0) {
   let channel;
   let media;
   ({ channel, media } = arg0);
-  let obj = require(11458) /* getForumPostShouldObscure */;
+  let obj = require(11459) /* getForumPostShouldObscure */;
   const tmp3 = callback(obj.useShouldObscure({ media, channel }), 2);
   obj = { shouldObscure: tmp3[0], obscureReason: tmp3[1], blurTheme: null, format: null };
   let str = "light";

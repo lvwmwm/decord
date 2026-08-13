@@ -1,10 +1,10 @@
-// Module ID: 15325
-// Function ID: 15326
+// Module ID: 15316
+// Function ID: 15317
 // Name: SubscriptionGatedChannelIcon
 // Dependencies: [19, 21, 1297, 8737, 2]
 // Exports: default
 
-// Module 15325 (SubscriptionGatedChannelIcon)
+// Module 15316 (SubscriptionGatedChannelIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

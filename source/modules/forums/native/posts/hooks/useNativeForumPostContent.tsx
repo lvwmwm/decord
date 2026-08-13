@@ -1,10 +1,10 @@
-// Module ID: 11471
-// Function ID: 11472
+// Module ID: 11472
+// Function ID: 11473
 // Name: useNativeForumPostContent
 // Dependencies: [676, 4342, 1236, 5931, 4679, 2]
 // Exports: default
 
-// Module 11471 (useNativeForumPostContent)
+// Module 11472 (useNativeForumPostContent)
 import { MessageFlags } from "ME";
 import createCacheKey from "createCacheKey";
 

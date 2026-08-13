@@ -1,7 +1,7 @@
 // Module ID: 4333
 // Function ID: 4334
 // Name: MarkupText
-// Dependencies: [19, 17, 4334, 1391, 1983, 1910, 676, 1398, 505, 21, 4337, 4338, 4342, 712, 4353, 4536, 4198, 4550, 8832, 4683, 1236, 5796, 4061, 5819, 1297, 1486, 8981, 4058, 11049, 11030, 8241, 589, 4191, 8115, 4310, 11033, 2007, 11, 4034, 5308, 11011, 13257, 9593, 4775, 9851, 13258, 13260, 4286, 4777, 500, 4805, 13262, 9853, 2]
+// Dependencies: [19, 17, 4334, 1391, 1983, 1910, 676, 1398, 505, 21, 4337, 4338, 4342, 712, 4353, 4536, 4198, 4550, 8832, 4683, 1236, 5796, 4061, 5819, 1297, 1486, 8981, 4058, 11050, 11031, 8241, 589, 4191, 8115, 4310, 11034, 2007, 11, 4034, 5308, 11012, 13258, 9593, 4775, 9851, 13259, 13261, 4286, 4777, 500, 4805, 13263, 9853, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 4333 (MarkupText)
@@ -525,7 +525,7 @@ function MarkupChannelMention(state) {
       obj3 = fontScale < 2 ? { width: 12, height: 12 } : { width: 16, height: 16 };
     }
     obj2[1] = obj3;
-    obj2[2] = node(11011);
+    obj2[2] = node(11012);
     obj2[3] = tmp3(1297).Icon.Sizes.CUSTOM;
     closure_15(tmp3(1297).ThemedIcon, obj2);
     const tmp6 = closure_15;
@@ -551,7 +551,7 @@ function MarkupAttachmentLink(state) {
   let obj = { variant: str2, style: tmp.channelMentionText, children: null };
   obj = { themedColor: null, source: null, size: null };
   obj[0] = node(712).colors.MENTION_FOREGROUND;
-  obj[1] = node(13257);
+  obj[1] = node(13258);
   const fontScale = store.getFontScale();
   if (fontScale < 1) {
     let SMALL = tmp3(1297).Icon.Sizes.EXTRA_SMALL_10;
@@ -1039,7 +1039,7 @@ export default function createRules() {
     },
     [closure_0(closure_2[43]).AST_KEY.GAME_MENTION]: {
       react(node, arg1, key) {
-        return callback(str(13262), { node, state: key }, key.key);
+        return callback(str(13263), { node, state: key }, key.key);
       }
     },
     [closure_0(closure_2[43]).AST_KEY.TIMESTAMP]: {

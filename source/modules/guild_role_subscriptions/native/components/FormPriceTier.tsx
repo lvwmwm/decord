@@ -1,10 +1,10 @@
-// Module ID: 16938
-// Function ID: 16939
+// Module ID: 16929
+// Function ID: 16930
 // Name: FormPriceTier
-// Dependencies: [19, 16897, 676, 21, 1236, 13311, 5896, 38, 4310, 9017, 2007, 2]
+// Dependencies: [19, 16888, 676, 21, 1236, 13312, 5896, 38, 4310, 9017, 2007, 2]
 // Exports: default
 
-// Module 16938 (FormPriceTier)
+// Module 16929 (FormPriceTier)
 import "noop";
 import usePriceTiers from "usePriceTiers";
 import { CurrencyCodes } from "ME";

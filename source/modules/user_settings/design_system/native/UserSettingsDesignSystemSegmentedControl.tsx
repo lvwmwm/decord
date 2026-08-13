@@ -1,10 +1,10 @@
-// Module ID: 14872
-// Function ID: 14873
+// Module ID: 14863
+// Function ID: 14864
 // Name: UserSettingsDesignSystemSegmentedControl
 // Dependencies: [32, 19, 17, 21, 4342, 712, 4338, 9005, 4753, 9191, 9611, 4755, 1351, 2]
 // Exports: default
 
-// Module 14872 (UserSettingsDesignSystemSegmentedControl)
+// Module 14863 (UserSettingsDesignSystemSegmentedControl)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

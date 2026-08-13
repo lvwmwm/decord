@@ -1,10 +1,10 @@
-// Module ID: 11028
-// Function ID: 11029
+// Module ID: 11029
+// Function ID: 11030
 // Name: UserProfileSection
 // Dependencies: [19, 17, 21, 4342, 712, 4072, 5790, 4191, 7454, 4338, 2]
 // Exports: default
 
-// Module 11028 (UserProfileSection)
+// Module 11029 (UserProfileSection)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

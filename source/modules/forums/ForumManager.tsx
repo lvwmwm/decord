@@ -1,9 +1,9 @@
-// Module ID: 16519
-// Function ID: 16520
+// Module ID: 16510
+// Function ID: 16511
 // Name: handleChannelPreload
 // Dependencies: [1391, 1398, 5301, 5961, 2]
 
-// Module 16519 (handleChannelPreload)
+// Module 16510 (handleChannelPreload)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { isStaticChannelRoute } from "set";
 import "initialize";

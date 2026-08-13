@@ -1,10 +1,10 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 12551
+// Function ID: 12552
 // Name: navigateToPremiumHomePage
 // Dependencies: [676, 6059, 7094, 1222, 2]
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 12550 (navigateToPremiumHomePage)
+// Module 12551 (navigateToPremiumHomePage)
 import ME from "ME";
 
 let c3;

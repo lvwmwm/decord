@@ -1,10 +1,10 @@
-// Module ID: 15969
-// Function ID: 15970
+// Module ID: 15960
+// Function ID: 15961
 // Name: PinImage
-// Dependencies: [5, 19, 17, 3991, 1395, 1434, 8062, 1391, 1980, 1910, 3989, 4357, 15970, 3998, 1922, 15971, 676, 1398, 5965, 1235, 505, 21, 4342, 712, 589, 9773, 4072, 12, 15972, 4539, 1236, 5310, 8431, 8061, 4062, 9922, 8403, 4527, 4002, 1403, 1363, 15973, 9048, 4684, 4338, 9070, 4535, 4773, 4198, 4241, 15974, 7835, 8021, 500, 5807, 5808, 4558, 5416, 13497, 15975, 8404, 8030, 8029, 1400, 1402, 1993, 5414, 5930, 9055, 9186, 10240, 4286, 1401, 15976, 8483, 9735, 14275, 9771, 7269, 4306, 4296, 4864, 9775, 4284, 4301, 4753, 10237, 7796, 9482, 4887, 15360, 8012, 1499, 2]
+// Dependencies: [5, 19, 17, 3991, 1395, 1434, 8062, 1391, 1980, 1910, 3989, 4357, 15961, 3998, 1922, 15962, 676, 1398, 5965, 1235, 505, 21, 4342, 712, 589, 9773, 4072, 12, 15963, 4539, 1236, 5310, 8431, 8061, 4062, 9922, 8403, 4527, 4002, 1403, 1363, 15964, 9048, 4684, 4338, 9070, 4535, 4773, 4198, 4241, 15965, 7835, 8021, 500, 5807, 5808, 4558, 5416, 13498, 15966, 8404, 8030, 8029, 1400, 1402, 1993, 5414, 5930, 9055, 9186, 10240, 4286, 1401, 15967, 8483, 9735, 14266, 9771, 7269, 4306, 4296, 4864, 9775, 4284, 4301, 4753, 10237, 7796, 9482, 4887, 15351, 8012, 1499, 2]
 // Exports: default
 
-// Module 15969 (PinImage)
+// Module 15960 (PinImage)
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";
 import importAllResult from "AbortCodes";
 import { View } from "set";
@@ -608,7 +608,7 @@ prototype["componentDidMount"] = function componentDidMount() {
   const self = this;
   this.updateNavigation(undefined, this.state);
   if (tmp2) {
-    let obj = importDefault(15972);
+    let obj = importDefault(15963);
     const regions = obj.fetchRegions(self.props.guild.id);
   }
   obj = { settings_type: "channel", destination_pane: constants6.CHANNEL_SETTINGS };
@@ -685,7 +685,7 @@ prototype["renderChannelInfo"] = function renderChannelInfo() {
     const GUILD_THREADS_ONLY = constants3.GUILD_THREADS_ONLY;
     hasItem = GUILD_THREADS_ONLY.has(channel.type);
   }
-  let obj = require(15974) /* getIsChannelNameSettingEditable */;
+  let obj = require(15965) /* getIsChannelNameSettingEditable */;
   const isChannelNameSettingEditable = obj.getIsChannelNameSettingEditable({ canManageThread, canManageChannels, canSendMessages, isForumPost, isThread, isChannelOwner });
   if (channel.isForumPost()) {
     const intl4 = tmp3(1236).intl;
@@ -791,7 +791,7 @@ prototype["renderSlowmode"] = function renderSlowmode() {
   if (channel.type !== constants2.GUILD_TEXT) {
     return null;
   }
-  let obj = require(15973) /* getSecondsSliderLabel */;
+  let obj = require(15964) /* getSecondsSliderLabel */;
   const intl = require(1236) /* getSystemLocale */.intl;
   const secondsSliderLabel = obj.getSecondsSliderLabel(channel.rateLimitPerUser, false, intl.string(require(1236) /* getSystemLocale */.t.zvDu4h));
   if (channel.isForumLikeChannel()) {
@@ -823,7 +823,7 @@ prototype["renderSlowmode"] = function renderSlowmode() {
   const intl5 = tmp5(1236).intl;
   obj3[5] = intl5.string(require(1236) /* getSystemLocale */.t.piZgKF);
   obj3[6] = { text: secondsSliderLabel };
-  items2[1] = callback3(require(13497) /* Slider */.Slider, obj3);
+  items2[1] = callback3(require(13498) /* Slider */.Slider, obj3);
   obj[1] = items2;
   obj[2] = callback4(require(5416) /* PressableCard */.Card, obj);
   items.push(callback3(require(5807) /* TableRowGroupTitle */.TableRowGroup, obj, "slowmode-section"));
@@ -862,7 +862,7 @@ prototype["renderAutoArchiveDuration"] = function renderAutoArchiveDuration() {
       obj[2] = autoArchiveDuration;
       obj[3] = channel;
       obj[4] = this.handleAutoArchiveDurationChange;
-      return closure_43(tmp5(15975).AutoArchiveDurationOptions, obj);
+      return closure_43(tmp5(15966).AutoArchiveDurationOptions, obj);
     }
   }
   return null;
@@ -913,7 +913,7 @@ prototype["renderDefaultAutoArchiveDuration"] = function renderDefaultAutoArchiv
         stringResult = string(fyXclY.W3Noi9);
       }
       obj[4] = stringResult;
-      tmp2(require(15975) /* AutoArchiveDurationOptions */.AutoArchiveDurationOptions, obj);
+      tmp2(require(15966) /* AutoArchiveDurationOptions */.AutoArchiveDurationOptions, obj);
       isForumLikeChannelResult = channel.isForumLikeChannel();
     }
   }
@@ -1063,7 +1063,7 @@ prototype["renderBitrateSettings"] = function renderBitrateSettings() {
       obj5[2] = closure_24;
       obj5[3] = bitrateLimit;
       obj5[4] = this.handleBitRateChange;
-      items2[1] = callback3(require(13497) /* Slider */.Slider, obj5);
+      items2[1] = callback3(require(13498) /* Slider */.Slider, obj5);
       obj1[0] = items2;
       obj[2] = callback4(require(5416) /* PressableCard */.Card, obj1);
       items.push(callback3(require(5807) /* TableRowGroupTitle */.TableRowGroup, obj, "bitrate-section"));
@@ -1156,7 +1156,7 @@ prototype["renderUserLimitSettings"] = function renderUserLimitSettings() {
       obj4[1] = Math.min(channel.userLimit, tmp10);
       obj4[3] = tmp10;
       obj4[4] = this.handleUserLimitChange;
-      items2[1] = closure_43(tmp7(13497).Slider, obj4);
+      items2[1] = closure_43(tmp7(13498).Slider, obj4);
       obj[0] = items2;
       obj[2] = callback4(tmp7(5416).Card, obj);
       items.push(closure_43(tmp7(5807).TableRowGroup, obj, "channel-user-limit"));
@@ -1352,7 +1352,7 @@ prototype["renderDefaultForumLayout"] = function renderDefaultForumLayout() {
     obj1[0] = stringResult;
     obj[1] = closure_43(self(5414).TableRow.TrailingText, obj1);
     if (channel.defaultForumLayout === GridSquareIcon(1401).ForumLayout.GRID) {
-      GridSquareIcon = GridSquareIcon(15976).GridSquareIcon;
+      GridSquareIcon = GridSquareIcon(15967).GridSquareIcon;
       obj = {};
       let tmpResult = tmp(GridSquareIcon, obj);
     } else {
@@ -1737,7 +1737,7 @@ prototype["renderCategory"] = function renderCategory() {
         tmp7 = self;
       }
       obj = { icon: null, label: null, trailing: null, arrow: null, onPress: null };
-      obj[0] = callback3(tmp7(15360).FolderPlusIcon, {});
+      obj[0] = callback3(tmp7(15351).FolderPlusIcon, {});
       const intl2 = tmp7(1236).intl;
       obj[1] = intl2.string(tmp7(1236).t.vHCZwr);
       obj = { text: null };

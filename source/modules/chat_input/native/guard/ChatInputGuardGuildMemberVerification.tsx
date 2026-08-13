@@ -1,19 +1,19 @@
-// Module ID: 11879
-// Function ID: 11880
-// Dependencies: [19, 17, 4334, 11419, 676, 21, 4342, 8478, 4168, 11880, 1236, 4539, 8468, 11881, 5366, 8461, 589, 11871, 5759, 11882, 2]
+// Module ID: 11880
+// Function ID: 11881
+// Dependencies: [19, 17, 4334, 11420, 676, 21, 4342, 8478, 4168, 11881, 1236, 4539, 8468, 11882, 5366, 8461, 589, 11872, 5759, 11883, 2]
 
-// Module 11879
+// Module 11880
 import { Image } from "ChatInputGuard";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { TextAreaCta } from "TextAreaCta";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
-import importAllResult from "module_11882";
+import importAllResult from "module_11883";
 
 const require = arg1;
 let closure_8 = createCacheKey.createStyles({ noticeIcon: { height: 36, width: 36, resizeMode: "contain" }, lottieAnimation: { height: 36, width: 36 } });
-const memoResult = require("module_11882").memo(function ChatInputGuardGuildMemberVerification(guildId) {
+const memoResult = require("module_11883").memo(function ChatInputGuardGuildMemberVerification(guildId) {
   guildId = guildId.guildId;
   const tmp = callback();
   let obj = guildId(8478);
@@ -23,7 +23,7 @@ const memoResult = require("module_11882").memo(function ChatInputGuardGuildMemb
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
   if (guildId(4168).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
-    let tmp8 = importDefault(11880);
+    let tmp8 = importDefault(11881);
     const intl3 = tmp2(1236).intl;
     let stringResult = intl3.string(tmp2(1236).t.lk30cY);
     let fn = function _() {
@@ -34,7 +34,7 @@ const memoResult = require("module_11882").memo(function ChatInputGuardGuildMemb
       const result = guildId(outer1_2[12]).openMemberVerificationRejectedAlert(obj);
     };
   } else if (tmp2(4168).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-    tmp8 = importDefault(11881);
+    tmp8 = importDefault(11882);
     const intl2 = tmp2(1236).intl;
     stringResult = intl2.string(tmp2(1236).t["5iLvSx"]);
     fn = function _() {
@@ -69,7 +69,7 @@ const memoResult = require("module_11882").memo(function ChatInputGuardGuildMemb
   } else {
     obj = { style: null, source: null, autoPlay: null };
     obj[0] = tmp.lottieAnimation;
-    obj[1] = tmp2(11882);
+    obj[1] = tmp2(11883);
     obj[2] = !stateFromStores;
     tmp13Result = tmp13(tmp14(5759), obj);
     const tmp14Result = tmp14(5759);
@@ -78,7 +78,7 @@ const memoResult = require("module_11882").memo(function ChatInputGuardGuildMemb
   const intl4 = tmp2(1236).intl;
   obj1[4] = intl4.string(guildId(1236).t["r8/DT+"]);
   obj1[5] = fn;
-  return jsx(importDefault(11871), { type: "simple-action", icon: tmp13Result, message: stringResult, actionIcon: tmp7, actionLabel: null, actionOnPress: null });
+  return jsx(importDefault(11872), { type: "simple-action", icon: tmp13Result, message: stringResult, actionIcon: tmp7, actionLabel: null, actionOnPress: null });
 });
 let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardGuildMemberVerification.tsx");
 

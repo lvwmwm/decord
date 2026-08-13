@@ -1,10 +1,10 @@
-// Module ID: 13283
-// Function ID: 13284
+// Module ID: 13284
+// Function ID: 13285
 // Name: DCDQRScanner
-// Dependencies: [32, 19, 17, 676, 7045, 21, 500, 13284, 712, 5861, 1628, 1486, 13263, 4550, 13278, 2007, 6059, 11371, 4058, 4684, 1236, 9106, 8105, 1297, 2]
+// Dependencies: [32, 19, 17, 676, 7045, 21, 500, 13285, 712, 5861, 1628, 1486, 13264, 4550, 13279, 2007, 6059, 11372, 4058, 4684, 1236, 9106, 8105, 1297, 2]
 // Exports: default
 
-// Module 13283 (DCDQRScanner)
+// Module 13284 (DCDQRScanner)
 import _slicedToArray from "_slicedToArray";
 import module_4684 from "module_4684";
 import get_ActivityIndicator from "FAMILY_CENTER_REQUEST_MODAL_KEY";

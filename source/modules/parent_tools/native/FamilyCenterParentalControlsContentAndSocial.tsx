@@ -1,10 +1,10 @@
-// Module ID: 14251
-// Function ID: 14252
+// Module ID: 14242
+// Function ID: 14243
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 676, 8127, 21, 10407, 1236, 1993, 13956, 2]
+// Dependencies: [19, 17, 676, 8127, 21, 10407, 1236, 1993, 13947, 2]
 // Exports: default
 
-// Module 14251 (FamilyCenterParentalControlsContentAndSocial)
+// Module 14242 (FamilyCenterParentalControlsContentAndSocial)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -42,6 +42,6 @@ export default function FamilyCenterParentalControlsContentAndSocial() {
   obj[0] = items1;
   obj4 = { children: null };
   const list = obj.createList(obj);
-  obj4[0] = jsx(importDefault(13956), { node: list });
+  obj4[0] = jsx(importDefault(13947), { node: list });
   return <View>{null}</View>;
 };

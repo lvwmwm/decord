@@ -1,10 +1,10 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 16814
+// Function ID: 16815
 // Name: GuildSettingsModalCommunity
-// Dependencies: [19, 1391, 1980, 3989, 3998, 1922, 9071, 15674, 676, 21, 4342, 712, 4065, 1499, 589, 9070, 1236, 6051, 5310, 4535, 4310, 9017, 2007, 8012, 4753, 5807, 5414, 2]
+// Dependencies: [19, 1391, 1980, 3989, 3998, 1922, 9071, 15665, 676, 21, 4342, 712, 4065, 1499, 589, 9070, 1236, 6051, 5310, 4535, 4310, 9017, 2007, 8012, 4753, 5807, 5414, 2]
 // Exports: default
 
-// Module 16823 (GuildSettingsModalCommunity)
+// Module 16814 (GuildSettingsModalCommunity)
 import computeChannelName from "computeChannelName";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";

@@ -1,10 +1,10 @@
-// Module ID: 13987
-// Function ID: 13988
+// Module ID: 13978
+// Function ID: 13979
 // Name: set
 // Dependencies: [8835, 2]
 // Exports: getHideableBadges, getUnhideableBadgeIds
 
-// Module 13987 (set)
+// Module 13978 (set)
 import set from "set";
 
 let items = [require("BadgeId").BadgeId.STAFF];

@@ -1,10 +1,10 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 11595
+// Function ID: 11596
 // Name: CommandListSortActionSheet
-// Dependencies: [19, 11579, 21, 1236, 5437, 5436, 11595, 712, 8030, 8029, 2]
+// Dependencies: [19, 11580, 21, 1236, 5437, 5436, 11596, 712, 8030, 8029, 2]
 // Exports: default
 
-// Module 11594 (CommandListSortActionSheet)
+// Module 11595 (CommandListSortActionSheet)
 import "noop";
 import { CommandListSortOrder } from "CommandListSortOrder";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ export default function CommandListSortActionSheet(sortOrder) {
   obj = { leading: null, title: null };
   obj = { size: "sm", color: null };
   obj[1] = importDefault(712).colors.TEXT_DEFAULT;
-  obj[0] = jsx(require(11595) /* ArrowsUpDownIcon */.ArrowsUpDownIcon, { size: "sm", color: null });
+  obj[0] = jsx(require(11596) /* ArrowsUpDownIcon */.ArrowsUpDownIcon, { size: "sm", color: null });
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.yeYaHf);
   obj[1] = jsx(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { size: "sm", color: null });

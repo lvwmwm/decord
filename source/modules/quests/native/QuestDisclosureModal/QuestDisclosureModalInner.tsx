@@ -1,10 +1,10 @@
-// Module ID: 14423
-// Function ID: 14424
+// Module ID: 14414
+// Function ID: 14415
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 676, 21, 4342, 712, 4034, 9753, 1236, 10496, 11274, 8811, 6070, 4338, 10442, 5416, 1993, 4755, 2]
+// Dependencies: [17, 676, 21, 4342, 712, 4034, 9753, 1236, 10498, 11275, 8811, 6070, 4338, 10441, 5416, 1993, 4755, 2]
 // Exports: default
 
-// Module 14423 (QuestDisclosureModalInner)
+// Module 14414 (QuestDisclosureModalInner)
 import get_ActivityIndicator from "set";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -55,12 +55,12 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
     let tmp6 = tmp5;
     items1 = items;
   } else {
-    obj[0] = tmp5(tmp2(10496).GlobeEarthIcon, { size: "xs" });
+    obj[0] = tmp5(tmp2(10498).GlobeEarthIcon, { size: "xs" });
     const intl = tmp2(1236).intl;
     obj[1] = intl.string(tmp2(1236).t.xQSdPv);
     items1 = [obj, , ];
     obj = { icon: null, text: null };
-    obj[0] = tmp5(tmp2(11274).UserIcon, { size: "xs" });
+    obj[0] = tmp5(tmp2(11275).UserIcon, { size: "xs" });
     const intl2 = tmp2(1236).intl;
     obj[1] = intl2.string(tmp2(1236).t.mYt7hQ);
     items1[1] = obj;
@@ -78,7 +78,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   const tmp7 = closure_7;
   const tmp8 = closure_3;
   const tmp9 = closure_4;
-  obj3[2] = _require(10442).getDisclosureText({ gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest });
+  obj3[2] = _require(10441).getDisclosureText({ gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest });
   items2[1] = tmp6(_require(4338).Text, obj3);
   if (isTargetedDisclosure) {
     const obj4 = { radius: 16, style: null, children: null };
@@ -103,7 +103,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   const obj5 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
   const intl5 = tmp2(1236).intl;
   const obj6 = { privacySettingsUrl: null };
-  const tmp2Result = _require(10442);
+  const tmp2Result = _require(10441);
   obj6[0] = items1(1993).getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS);
   obj5[2] = intl5.format(_require(1236).t.tzq9Wa, obj6);
   items2[3] = tmp6(_require(4338).Text, obj5);

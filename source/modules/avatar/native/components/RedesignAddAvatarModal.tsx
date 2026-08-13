@@ -1,10 +1,10 @@
-// Module ID: 16607
-// Function ID: 16608
+// Module ID: 16598
+// Function ID: 16599
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8309, 676, 21, 4342, 712, 1628, 589, 13972, 16592, 8323, 8352, 4901, 8313, 8315, 4338, 1236, 16601, 4755, 16589, 2]
+// Dependencies: [5, 32, 19, 17, 8309, 676, 21, 4342, 712, 1628, 589, 13963, 16583, 8323, 8352, 4901, 8313, 8315, 4338, 1236, 16592, 4755, 16580, 2]
 // Exports: default
 
-// Module 16607 (RedesignAddAvatarModal)
+// Module 16598 (RedesignAddAvatarModal)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -100,7 +100,7 @@ export default function RedesignAddAvatarModal(route) {
             if (null == base64) {
               let pendingImage;
               if (null != outer1_0) {
-                obj = outer1_0(13972);
+                obj = outer1_0(13963);
                 const obj4 = { imageUri: null, description: null };
                 obj4[0] = base64;
                 obj2 = outer1_0(8323);

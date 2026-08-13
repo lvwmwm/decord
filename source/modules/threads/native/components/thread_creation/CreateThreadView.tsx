@@ -1,9 +1,9 @@
-// Module ID: 15782
-// Function ID: 15783
+// Module ID: 15773
+// Function ID: 15774
 // Name: CreateThreadViewInner
-// Dependencies: [5, 32, 19, 17, 4681, 7192, 676, 21, 4342, 712, 8402, 7281, 5768, 5788, 1628, 5409, 4889, 4843, 15783, 5808, 1236, 15785, 11697, 11415, 12061, 10292, 1500, 698, 4539, 4222, 1222, 9953, 15784, 4205, 2]
+// Dependencies: [5, 32, 19, 17, 4681, 7192, 676, 21, 4342, 712, 8402, 7281, 5768, 5788, 1628, 5409, 4889, 4843, 15774, 5808, 1236, 15776, 11698, 11416, 12062, 10292, 1500, 698, 4539, 4222, 1222, 9953, 15775, 4205, 2]
 
-// Module 15782 (CreateThreadViewInner)
+// Module 15773 (CreateThreadViewInner)
 import setCooldown from "setCooldown";
 import FormSubmitErrorType from "FormSubmitErrorType";
 import importAllResult from "TableSwitchRow";
@@ -137,8 +137,8 @@ function CreateThreadViewInner(screenIndex) {
                   if (null != tmp50.name) {
                     const str = tmp50.name;
                   }
-                  outer1_2(lib(15784).makeEmptyTitleError());
-                  const obj8 = lib(15784);
+                  outer1_2(lib(15775).makeEmptyTitleError());
+                  const obj8 = lib(15775);
                   lib(4205).dismissKeyboard();
                   outer1_4.current = false;
                   c5 = 0;
@@ -162,8 +162,8 @@ function CreateThreadViewInner(screenIndex) {
                 code = body.code;
               }
               if (code === outer2_10.AUTOMOD_TITLE_BLOCKED) {
-                outer1_2(lib(15784).makeAutomodViolationError(lib.body, lib));
-                const obj5 = lib(15784);
+                outer1_2(lib(15775).makeAutomodViolationError(lib.body, lib));
+                const obj5 = lib(15775);
                 lib(4205).dismissKeyboard();
                 const obj6 = lib(4205);
               } else {
@@ -185,7 +185,7 @@ function CreateThreadViewInner(screenIndex) {
                   tmp23 = null != name;
                 }
                 if (tmp23) {
-                  let obj2 = lib(15784);
+                  let obj2 = lib(15775);
                   outer1_2(obj2.makeApiNameRequiredError());
                   lib(4205).dismissKeyboard();
                   const obj4 = lib(4205);
@@ -251,7 +251,7 @@ function CreateThreadViewInner(screenIndex) {
   let obj5 = { style: tmp.optionsInner, children: null };
   const isForumLikeChannelResult = parentChannel.isForumLikeChannel();
   const tmp20 = null != threadSettingsDraft.parentMessageId;
-  const items6 = [callback2(c6, { style: tmp.threadIconContainer, children: callback2(_require(4843).ThreadIcon, { size: "lg" }) }), callback2(threadSettingsDraft(15783), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp6[0], optional: tmp20 }), ];
+  const items6 = [callback2(c6, { style: tmp.threadIconContainer, children: callback2(_require(4843).ThreadIcon, { size: "lg" }) }), callback2(threadSettingsDraft(15774), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp6[0], optional: tmp20 }), ];
   let tmp22Result = null;
   if (!isForumLikeChannelResult) {
     tmp22Result = null;
@@ -295,7 +295,7 @@ function CreateThreadViewInner(screenIndex) {
     const obj11 = { channelId: null, messageId: null };
     obj11[0] = parentChannel.id;
     obj11[1] = threadSettingsDraft.parentMessageId;
-    items8[1] = tmp22(tmp2(15785).ThreadCreationStarterMessage, obj11);
+    items8[1] = tmp22(tmp2(15776).ThreadCreationStarterMessage, obj11);
     obj9[1] = items8;
     tmp21Result = tmp21(tmp23, obj9);
   }
@@ -310,12 +310,12 @@ function CreateThreadViewInner(screenIndex) {
     const obj13 = { channel: null, hasTypingText: false, slowmodeType: null };
     obj13[0] = parentChannel;
     obj13[2] = SlowmodeType.CreateThread;
-    obj12[1] = tmp22(tmp11(11697), obj13);
+    obj12[1] = tmp22(tmp11(11698), obj13);
     tmp22Result = tmp22(tmp23, obj12);
   }
   items5[2] = tmp22Result;
-  items5[3] = callback2(threadSettingsDraft(11415), { ref, channel: parentChannel, onJumpToPresent: closure_12, screenIndex: screenIndex.screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: callback1 });
-  items5[4] = callback2(threadSettingsDraft(12061), { channelId: parentChannel.id });
+  items5[3] = callback2(threadSettingsDraft(11416), { ref, channel: parentChannel, onJumpToPresent: closure_12, screenIndex: screenIndex.screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: callback1 });
+  items5[4] = callback2(threadSettingsDraft(12062), { channelId: parentChannel.id });
   obj1[1] = items5;
   items3[1] = closure_14(c6, obj1);
   obj[1] = items3;

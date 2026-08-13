@@ -1,10 +1,10 @@
-// Module ID: 11464
-// Function ID: 11465
+// Module ID: 11465
+// Function ID: 11466
 // Name: num2
 // Dependencies: [19, 17, 21, 4342, 712, 500, 8452, 1236, 4841, 4338, 10247, 2]
 // Exports: default
 
-// Module 11464 (num2)
+// Module 11465 (num2)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

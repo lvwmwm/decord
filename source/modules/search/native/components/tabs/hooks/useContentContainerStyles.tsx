@@ -1,9 +1,9 @@
-// Module ID: 15850
-// Function ID: 15851
+// Module ID: 15841
+// Function ID: 15842
 // Name: styles
 // Dependencies: [8446, 4342, 2]
 
-// Module 15850 (styles)
+// Module 15841 (styles)
 import MessageEmbedTypes from "MessageEmbedTypes";
 import createCacheKey from "createCacheKey";
 

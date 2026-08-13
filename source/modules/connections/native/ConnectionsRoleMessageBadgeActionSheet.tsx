@@ -1,10 +1,10 @@
-// Module ID: 11268
-// Function ID: 11269
+// Module ID: 11269
+// Function ID: 11270
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1930, 1218, 1990, 1983, 1910, 11269, 5166, 676, 21, 4342, 712, 1236, 5165, 4294, 4338, 4278, 12, 4065, 5041, 11012, 9181, 1297, 1435, 1363, 38, 5768, 5788, 589, 698, 4539, 5272, 5437, 5812, 4755, 4310, 11015, 8832, 2]
+// Dependencies: [32, 19, 17, 1930, 1218, 1990, 1983, 1910, 11270, 5166, 676, 21, 4342, 712, 1236, 5165, 4294, 4338, 4278, 12, 4065, 5041, 11013, 9181, 1297, 1435, 1363, 38, 5768, 5788, 589, 698, 4539, 5272, 5437, 5812, 4755, 4310, 11016, 8832, 2]
 // Exports: default
 
-// Module 11268 (PopoutCheck)
+// Module 11269 (PopoutCheck)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import apply from "apply";
 import get_ActivityIndicator from "Text";
@@ -154,7 +154,7 @@ class PopoutChecks {
               const items1 = [null, , , ];
               let tmp26 = null;
               if (null != tmp7) {
-                const obj3 = { style: null, user: null, size: null, guildId: "Array" };
+                const obj3 = { style: null, user: null, size: null, guildId: "a" };
                 obj3[0] = tmp21.popoutCheckGroupPlatformIcon;
                 obj3[1] = tmp7;
                 obj3[2] = tmp11(tmp3[24]).AvatarSizes.XSMALL;

@@ -1,10 +1,10 @@
-// Module ID: 16769
-// Function ID: 16770
+// Module ID: 16760
+// Function ID: 16761
 // Name: SyncingToGamesItem
-// Dependencies: [19, 3998, 1922, 676, 21, 1499, 5774, 5807, 5414, 4535, 4805, 4065, 712, 16692, 12, 8012, 4753, 5754, 2]
+// Dependencies: [19, 3998, 1922, 676, 21, 1499, 5774, 5807, 5414, 4535, 4805, 4065, 712, 16683, 12, 8012, 4753, 5754, 2]
 // Exports: default
 
-// Module 16769 (SyncingToGamesItem)
+// Module 16760 (SyncingToGamesItem)
 import "noop";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -68,7 +68,7 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   ({ contentContainerStyle, guildId } = arg0);
   let obj = _require(4065);
   const token = obj.useToken(keys(712).modules.mobile.TABLE_ROW_PADDING);
-  let obj1 = _require(16692);
+  let obj1 = _require(16683);
   const channelsAllowedToUnlink = obj1.useChannelsAllowedToUnlink(guildId);
   let obj2 = keys(12);
   const groupByResult = obj2.groupBy(channelsAllowedToUnlink, (linkedLobby) => {

@@ -1,10 +1,10 @@
-// Module ID: 11178
-// Function ID: 11179
+// Module ID: 11179
+// Function ID: 11180
 // Name: DoubleTapEmojiEditNudgeInner
 // Dependencies: [5, 19, 17, 4334, 1494, 676, 1925, 21, 4342, 712, 4034, 8121, 1496, 589, 1435, 8686, 698, 8699, 4338, 1236, 5400, 4887, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 11178 (DoubleTapEmojiEditNudgeInner)
+// Module 11179 (DoubleTapEmojiEditNudgeInner)
 import ME from "ME";
 import getSystemLocale from "getSystemLocale";
 import { View } from "ToastEmoji";

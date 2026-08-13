@@ -1,7 +1,7 @@
 // Module ID: 9485
 // Function ID: 9486
 // Name: PreviewProfileTrigger
-// Dependencies: [32, 19, 17, 7049, 678, 676, 505, 21, 3, 4342, 712, 4759, 4072, 1363, 1236, 8546, 1949, 9398, 8832, 9484, 7457, 9486, 5768, 5788, 7060, 9487, 9488, 9397, 9399, 503, 9424, 698, 9453, 589, 9489, 9490, 8338, 9455, 7061, 9457, 9458, 9463, 4020, 9491, 5439, 9460, 9492, 9613, 9619, 1297, 9620, 7458, 4310, 9622, 5437, 12233, 8328, 8876, 4755, 12237, 500, 12238, 2]
+// Dependencies: [32, 19, 17, 7049, 678, 676, 505, 21, 3, 4342, 712, 4759, 4072, 1363, 1236, 8546, 1949, 9398, 8832, 9484, 7457, 9486, 5768, 5788, 7060, 9487, 9488, 9397, 9399, 503, 9424, 698, 9453, 589, 9489, 9490, 8338, 9455, 7061, 9457, 9458, 9463, 4020, 9491, 5439, 9460, 9492, 9613, 9619, 1297, 9620, 7458, 4310, 9622, 5437, 12234, 8328, 8876, 4755, 12238, 500, 12239, 2]
 // Exports: default
 
 // Module 9485 (PreviewProfileTrigger)
@@ -118,7 +118,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
   let dependencyMap;
   let ref1;
   ({ analyticsLocations, paymentGateway } = skuId);
-  let obj = skuId(12233);
+  let obj = skuId(12234);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
@@ -172,7 +172,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
     obj1[2] = callback3(tmp(4755).Button, obj2);
     callback3(tmp(1297).EmptyState, obj1);
   } else {
-    callback3(initialVariantIndex(12237), {});
+    callback3(initialVariantIndex(12238), {});
   }
 }
 function ProductDetailsActionSheetWithOrderCTX(arg0) {

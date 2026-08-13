@@ -1,10 +1,10 @@
-// Module ID: 10490
-// Function ID: 10491
+// Module ID: 10492
+// Function ID: 10493
 // Name: Scope
-// Dependencies: [19, 17, 21, 4342, 1236, 6039, 712, 4303, 4338, 5756, 10471, 9591, 8951, 2]
+// Dependencies: [19, 17, 21, 4342, 1236, 6039, 712, 4303, 4338, 5756, 10473, 9591, 8951, 2]
 // Exports: default
 
-// Module 10490 (Scope)
+// Module 10492 (Scope)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

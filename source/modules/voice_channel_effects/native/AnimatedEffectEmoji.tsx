@@ -1,10 +1,10 @@
-// Module ID: 10688
-// Function ID: 10689
+// Module ID: 10690
+// Function ID: 10691
 // Name: Emoji
 // Dependencies: [19, 17, 4334, 21, 687, 4342, 712, 5308, 1297, 589, 4083, 4343, 6007, 2]
 // Exports: default
 
-// Module 10688 (Emoji)
+// Module 10690 (Emoji)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

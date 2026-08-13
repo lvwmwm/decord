@@ -1,10 +1,10 @@
-// Module ID: 15920
-// Function ID: 15921
+// Module ID: 15911
+// Function ID: 15912
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1623, 676, 7265, 11663, 5930, 8385, 10053, 1954, 2]
+// Dependencies: [19, 1623, 676, 7265, 11664, 5930, 8385, 10053, 1954, 2]
 // Exports: default
 
-// Module 15920 (useMediaKeyboardConfig)
+// Module 15911 (useMediaKeyboardConfig)
 import noop from "noop";
 import { MediaKeyboardTarget } from "DRAG_HANDLE";
 import ME from "ME";
@@ -26,7 +26,7 @@ export default function useMediaKeyboardConfig(arg0) {
   let mediaKeyboardDraftType;
   const tmp4 = context(7265).useCanPostPollsInChannel(channel) && context.target !== MediaKeyboardTarget.COMMAND;
   importDefault = tmp4;
-  const tmp5 = importDefault(11663)(channel);
+  const tmp5 = importDefault(11664)(channel);
   dependencyMap = tmp5;
   let tmp2Result = tmp2(5930);
   canStartThread = tmp2Result.useCanStartThread(channel);

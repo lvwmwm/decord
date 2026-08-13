@@ -1,9 +1,9 @@
-// Module ID: 17070
-// Function ID: 17071
+// Module ID: 17061
+// Function ID: 17062
 // Name: NATIVE_REQUIRED_ASSETS
-// Dependencies: [17071, 17078, 2]
+// Dependencies: [17062, 17069, 2]
 
-// Module 17070 (NATIVE_REQUIRED_ASSETS)
+// Module 17061 (NATIVE_REQUIRED_ASSETS)
 const merged = Object.assign(require("NATIVE_REQUIRED_ASSETS_ICONS").NATIVE_REQUIRED_ASSETS_ICONS);
 const merged1 = Object.assign(require("NATIVE_REQUIRED_ASSETS_MISC").NATIVE_REQUIRED_ASSETS_MISC);
 const result = require("set").fileFinishedImporting("modules/react_asset/native/native_required_assets.tsx");

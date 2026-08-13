@@ -1,10 +1,10 @@
-// Module ID: 15232
-// Function ID: 15233
+// Module ID: 15223
+// Function ID: 15224
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 676, 4761, 1628, 1367, 15233, 15241, 15253, 712, 2]
+// Dependencies: [109, 19, 676, 4761, 1628, 1367, 15224, 15232, 15244, 712, 2]
 // Exports: default
 
-// Module 15232 (useMessagesSpecs)
+// Module 15223 (useMessagesSpecs)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import noop from "noop";
 import { DM_WIDTH } from "ME";

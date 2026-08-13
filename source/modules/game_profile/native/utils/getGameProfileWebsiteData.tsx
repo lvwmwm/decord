@@ -1,10 +1,10 @@
-// Module ID: 12258
-// Function ID: 12259
+// Module ID: 12259
+// Function ID: 12260
 // Name: getGameProfileWebsiteData
-// Dependencies: [21, 9336, 10496, 9333, 1236, 8242, 11788, 8244, 8246, 12259, 12261, 12263, 2]
+// Dependencies: [21, 9336, 10498, 9333, 1236, 8242, 11789, 8244, 8246, 12260, 12262, 12264, 2]
 // Exports: default
 
-// Module 12258 (getGameProfileWebsiteData)
+// Module 12259 (getGameProfileWebsiteData)
 import { jsx } from "jsxProd";
 
 const result = require("GlobeEarthIcon").fileFinishedImporting("modules/game_profile/native/utils/getGameProfileWebsiteData.tsx");
@@ -15,7 +15,7 @@ export default function getGameProfileWebsiteData(category) {
     let obj = { icon: null, action: null, title: null, url: null };
     obj = { size: "md", color: null };
     obj[1] = arg1;
-    obj[0] = jsx(tmp(10496).GlobeEarthIcon, { size: "md", color: null });
+    obj[0] = jsx(tmp(10498).GlobeEarthIcon, { size: "md", color: null });
     obj[1] = tmp(9333).GameProfileTrackActionActions.WebsiteLink;
     const intl8 = tmp(1236).intl;
     obj[2] = intl8.string(tmp(1236).t.fOUKvg);
@@ -35,7 +35,7 @@ export default function getGameProfileWebsiteData(category) {
     const obj3 = { icon: null, action: null, title: null, url: null };
     const obj4 = { size: "md", color: null };
     obj4[1] = arg1;
-    obj3[0] = jsx(tmp(11788).YoutubeNeutralIcon, { size: "md", color: null });
+    obj3[0] = jsx(tmp(11789).YoutubeNeutralIcon, { size: "md", color: null });
     obj3[1] = tmp(9333).GameProfileTrackActionActions.YouTubeLink;
     const intl6 = tmp(1236).intl;
     obj3[2] = intl6.string(tmp(1236).t.lNmxbE);
@@ -65,7 +65,7 @@ export default function getGameProfileWebsiteData(category) {
     const obj9 = { icon: null, action: null, title: null, url: null };
     const obj10 = { size: "md", color: null };
     obj10[1] = arg1;
-    obj9[0] = jsx(tmp(12259).BlueskyNeutralIcon, { size: "md", color: null });
+    obj9[0] = jsx(tmp(12260).BlueskyNeutralIcon, { size: "md", color: null });
     obj9[1] = tmp(9333).GameProfileTrackActionActions.BlueskyLink;
     const intl3 = tmp(1236).intl;
     obj9[2] = intl3.string(tmp(1236).t["D/PHq5"]);
@@ -75,7 +75,7 @@ export default function getGameProfileWebsiteData(category) {
     const obj11 = { icon: null, action: null, title: null, url: null };
     const obj12 = { size: "md", color: null };
     obj12[1] = arg1;
-    obj11[0] = jsx(tmp(12261).RedditNeutralIcon, { size: "md", color: null });
+    obj11[0] = jsx(tmp(12262).RedditNeutralIcon, { size: "md", color: null });
     obj11[1] = tmp(9333).GameProfileTrackActionActions.RedditLink;
     const intl2 = tmp(1236).intl;
     obj11[2] = intl2.string(tmp(1236).t["Hgb+fc"]);
@@ -85,7 +85,7 @@ export default function getGameProfileWebsiteData(category) {
     obj = { icon: null, action: null, title: null, url: null };
     const obj13 = { size: "md", color: null };
     obj13[1] = arg1;
-    obj[0] = jsx(tmp(12263).TwitchNeutralIcon, { size: "md", color: null });
+    obj[0] = jsx(tmp(12264).TwitchNeutralIcon, { size: "md", color: null });
     obj[1] = tmp(9333).GameProfileTrackActionActions.TwitchLink;
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t["7xtz4G"]);

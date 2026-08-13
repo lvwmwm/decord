@@ -1,7 +1,7 @@
 // Module ID: 10420
 // Function ID: 10421
 // Name: useQuests
-// Dependencies: [5, 32, 19, 1994, 1391, 5039, 1922, 7205, 7207, 7206, 5202, 676, 1924, 589, 10421, 10422, 500, 10430, 7204, 687, 7226, 7228, 7231, 10437, 12, 1217, 10448, 10440, 10449, 1993, 10451, 5209, 10558, 7232, 5774, 10561, 10442, 10160, 7233, 10562, 1236, 1898, 4544, 5205, 7222, 4278, 1363, 10432, 4007, 10563, 698, 1370, 10953, 10545, 10957, 4034, 8615, 8608, 2]
+// Dependencies: [5, 32, 19, 1994, 1391, 5039, 1922, 7205, 7207, 7206, 5202, 676, 1924, 589, 10421, 10422, 500, 10446, 7204, 687, 7227, 7229, 7232, 10436, 12, 1217, 10450, 10439, 10451, 1993, 10453, 5209, 10560, 7233, 5774, 10563, 10441, 10160, 7222, 10564, 1236, 1898, 4544, 5205, 7223, 4278, 1363, 10431, 4007, 10565, 698, 1370, 10955, 10547, 10959, 4034, 8615, 8608, 2]
 // Exports: useClaimedCollectibleRewardMessage, useClaimedQuests, useConnectedAccounts, useConnectedConsoleLinkOnClick, useCosponsoredLogotypeAsset, useExpiredQuestsMap, useFetchQuestHomeBounties, useFilteredQuests, useGetOrFetchApplicationForConsoleQuests, useIsPreviewerOnAnyQuest, useIsQuestAccessSuspended, useIsQuestEligibleForMembersListPopout, useIsQuestExpired, useIsQuestProgressingOnConsole, useIsQuestProgressingOnDesktop, useIsQuestProgressingVideoQuest, useLaunchInGameActivityQuest, useManuallyStartConsoleQuest, useNonNullableQuest, useOnOpenGameClick, useProgressState, useQuest, useQuestBarImpressionSurvey, useQuestBarOrDockModeChangeTracking, useQuestCollectibles, useQuestCompletionDetails, useQuestForMemberListSocialEntryPoint, useQuestFormattedDate, useQuestHomeBounties, useQuestHomeFilterOptions, useQuestHomeHeroShelf, useQuestHomeSortOptions, useQuestHomeSortingFilteringAnalytics, useQuestHowToHelpArticle, useQuestOrbRewardMultiplier, useQuestPreviewActions, useQuestWarningTips, useQuestsWithPreviewAccess, useSelectedTaskPlatform, useShouldShowBonusOrbsUX, useShouldShowPreviewToolTab, useShouldShowQuestPreviewOverrides, useShouldShowQuestsActivityPanelItem, useThirdPartyTaskDetails, useWaitingForConsoleConnection
 
 // Module 10420 (useQuests)
@@ -93,8 +93,8 @@ function useQuests(arg0) {
         obj = obj(10422);
         const currentQuests = obj.fetchCurrentQuests();
         if (obj2.isMac()) {
-          const state = hasFetched(10430).getState();
-          const obj3 = hasFetched(10430);
+          const state = hasFetched(10446).getState();
+          const obj3 = hasFetched(10446);
         }
         obj2 = obj(500);
       }
@@ -220,9 +220,9 @@ function defaultSortFn(id, id2, questHomeHero, get) {
       questHomeHero = questHomeHero.questHomeHero;
       if (null != questHomeHero) {
         if (!questHomeHero.isQuestHomeHeroShelfEnabled) {
-          let tmp50Result = tmp50(7226);
+          let tmp50Result = tmp50(7227);
           const result2 = tmp50Result.isQuestFeaturedByHero(questHomeHero, id.id);
-          tmp50Result = tmp50(7226);
+          tmp50Result = tmp50(7227);
           let num2 = 1;
           if (result2) {
             num2 = c28;
@@ -230,13 +230,13 @@ function defaultSortFn(id, id2, questHomeHero, get) {
           return num2;
         }
       }
-      const questType = tmp50(7226).getQuestType(id.config);
-      const tmp50Result1 = tmp50(7226);
-      const questType1 = tmp50(7226).getQuestType(id2.config);
-      const tmp50Result2 = tmp50(7226);
-      const result3 = tmp50(7228).hasWatchVideoOnMobileTasks(id);
-      const tmp50Result3 = tmp50(7228);
-      const result4 = tmp50(7228).hasWatchVideoOnMobileTasks(id2);
+      const questType = tmp50(7227).getQuestType(id.config);
+      const tmp50Result1 = tmp50(7227);
+      const questType1 = tmp50(7227).getQuestType(id2.config);
+      const tmp50Result2 = tmp50(7227);
+      const result3 = tmp50(7229).hasWatchVideoOnMobileTasks(id);
+      const tmp50Result3 = tmp50(7229);
+      const result4 = tmp50(7229).hasWatchVideoOnMobileTasks(id2);
       if (result3 !== result4) {
         if (!result3) {
           return num3;
@@ -249,7 +249,7 @@ function defaultSortFn(id, id2, questHomeHero, get) {
       }
       if (questType !== questType1) {
         num3 = 1;
-        if (questType === tmp50(7231).QuestType.VIDEO) {
+        if (questType === tmp50(7232).QuestType.VIDEO) {
           num3 = c28;
         }
       }
@@ -306,7 +306,7 @@ function defaultSortFn(id, id2, questHomeHero, get) {
         num10 = c28;
       }
       num5 = num10;
-      const tmp50Result4 = tmp50(7228);
+      const tmp50Result4 = tmp50(7229);
     }
     const obj9 = require(7204) /* getQuestDeliveryDataForPlacement */;
     const tmp19 = null != completedAt2;
@@ -367,29 +367,29 @@ function expiringSoonSortFn(config, config2) {
 }
 function doesQuestPassTaskFilter(quest) {
   if (constants4.VIDEO === arg1) {
-    return require(7228) /* getApplicationIdsByTaskTypes */.hasWatchVideoTasks(quest);
+    return require(7229) /* getApplicationIdsByTaskTypes */.hasWatchVideoTasks(quest);
   } else if (tmp.PLAY === arg1) {
-    let obj = require(7228) /* getApplicationIdsByTaskTypes */;
+    let obj = require(7229) /* getApplicationIdsByTaskTypes */;
     obj = { quest: null };
     obj[0] = quest;
     let hasPlayOnDesktopTaskResult = obj.hasPlayOnDesktopTask(obj);
     if (!hasPlayOnDesktopTaskResult) {
-      let tmp2Result = tmp2(7228);
+      let tmp2Result = tmp2(7229);
       obj = { quest: null };
       obj[0] = quest;
       hasPlayOnDesktopTaskResult = tmp2Result.hasStreamOnDesktopTask(obj);
     }
     if (!hasPlayOnDesktopTaskResult) {
-      tmp2Result = tmp2(7228);
+      tmp2Result = tmp2(7229);
       hasPlayOnDesktopTaskResult = tmp2Result.hasPlayActivityTask(quest);
     }
     if (!hasPlayOnDesktopTaskResult) {
-      hasPlayOnDesktopTaskResult = tmp2(7228).isConsoleQuest(quest);
-      const tmp2Result1 = tmp2(7228);
+      hasPlayOnDesktopTaskResult = tmp2(7229).isConsoleQuest(quest);
+      const tmp2Result1 = tmp2(7229);
     }
     if (!hasPlayOnDesktopTaskResult) {
-      hasPlayOnDesktopTaskResult = tmp2(7228).isInGameQuest(quest);
-      const tmp2Result2 = tmp2(7228);
+      hasPlayOnDesktopTaskResult = tmp2(7229).isInGameQuest(quest);
+      const tmp2Result2 = tmp2(7229);
     }
     return hasPlayOnDesktopTaskResult;
   } else {
@@ -398,14 +398,14 @@ function doesQuestPassTaskFilter(quest) {
 }
 function doesQuestPassRewardFilter(config) {
   if (constants5.VIRTUAL_CURRENCY === arg1) {
-    return require(10437) /* _getDefaultRewardName */.hasVirtualCurrencyReward(config.config);
+    return require(10436) /* _getDefaultRewardName */.hasVirtualCurrencyReward(config.config);
   } else if (tmp.COLLECTIBLE === arg1) {
-    return require(10437) /* _getDefaultRewardName */.hasCollectiblesQuestReward(config.config);
+    return require(10436) /* _getDefaultRewardName */.hasCollectiblesQuestReward(config.config);
   } else if (tmp.IN_GAME === arg1) {
-    let hasInGameQuestRewardResult = require(10437) /* _getDefaultRewardName */.hasInGameQuestReward(config.config);
+    let hasInGameQuestRewardResult = require(10436) /* _getDefaultRewardName */.hasInGameQuestReward(config.config);
     if (!hasInGameQuestRewardResult) {
-      hasInGameQuestRewardResult = require(10437) /* _getDefaultRewardName */.hasQuestRewardCode(config.config);
-      const tmp2Result = require(10437) /* _getDefaultRewardName */;
+      hasInGameQuestRewardResult = require(10436) /* _getDefaultRewardName */.hasQuestRewardCode(config.config);
+      const tmp2Result = require(10436) /* _getDefaultRewardName */;
     }
     return hasInGameQuestRewardResult;
   } else {
@@ -925,9 +925,9 @@ export const useShouldShowBonusOrbsUX = function useShouldShowBonusOrbsUX(quest,
     return isQuestExpiredResult;
   }, items1);
   const obj = _require(589);
-  const result = _require(10437).hasVirtualCurrencyReward(quest.config);
-  const obj2 = _require(10437);
-  const result1 = _require(10437).hasPremiumOrbQuantity(quest.config);
+  const result = _require(10436).hasVirtualCurrencyReward(quest.config);
+  const obj2 = _require(10436);
+  const result1 = _require(10436).hasPremiumOrbQuantity(quest.config);
   let tmp4 = !stateFromStores;
   if (!stateFromStores) {
     tmp4 = result;
@@ -936,7 +936,7 @@ export const useShouldShowBonusOrbsUX = function useShouldShowBonusOrbsUX(quest,
     tmp4 = result1;
   }
   if (tmp4) {
-    tmp4 = questOrbMultiplierEligibility !== _require(10440).QuestOrbMultiplierEligibilityType.INELIGIBLE;
+    tmp4 = questOrbMultiplierEligibility !== _require(10439).QuestOrbMultiplierEligibilityType.INELIGIBLE;
   }
   return tmp4;
 };
@@ -1122,7 +1122,7 @@ export const useConnectedConsoleLinkOnClick = function useConnectedConsoleLinkOn
   let obj = accounts(589);
   const tmp = accounts;
   const tmp5 = useIsQuestProgressing(quest);
-  let isConsoleQuestResult = accounts(7228).isConsoleQuest(quest);
+  let isConsoleQuestResult = accounts(7229).isConsoleQuest(quest);
   if (isConsoleQuestResult) {
     isConsoleQuestResult = 0 === memo.xboxAndPlaystationAccounts.length;
   }
@@ -1130,8 +1130,8 @@ export const useConnectedConsoleLinkOnClick = function useConnectedConsoleLinkOn
     isConsoleQuestResult = !tmp5;
   }
   c3 = isConsoleQuestResult;
-  let obj2 = accounts(7228);
-  getVideoQuestWatchCtaText = tmp(10449).useGetQuestImpressionId();
+  let obj2 = accounts(7229);
+  getVideoQuestWatchCtaText = tmp(10451).useGetQuestImpressionId();
   return () => {
     let obj = accounts(outer1_2[30]);
     if (c3) {
@@ -1219,10 +1219,10 @@ export const useQuestForMemberListSocialEntryPoint = function useQuestForMemberL
   return tmp4;
 };
 export const useQuestCollectibles = function useQuestCollectibles(config) {
-  const hasQuestCollectibles = require(10437) /* _getDefaultRewardName */.hasCollectiblesQuestReward(config);
-  const obj = require(10437) /* _getDefaultRewardName */;
-  const defaultReward = require(10442) /* getContextualEntrypointHeading */.getDefaultReward(config);
-  const obj2 = require(10442) /* getContextualEntrypointHeading */;
+  const hasQuestCollectibles = require(10436) /* _getDefaultRewardName */.hasCollectiblesQuestReward(config);
+  const obj = require(10436) /* _getDefaultRewardName */;
+  const defaultReward = require(10441) /* getContextualEntrypointHeading */.getDefaultReward(config);
+  const obj2 = require(10441) /* getContextualEntrypointHeading */;
   const isFetching = require(10160) /* useFetchCollectiblesProduct */.useFetchCollectiblesProduct(defaultReward.skuId);
   const product = isFetching.product;
   let avatarDecoration;
@@ -1412,7 +1412,7 @@ export const useWaitingForConsoleConnection = function useWaitingForConsoleConne
   ({ xboxAccounts, playstationAccounts } = memo);
   const obj = accounts(589);
   const tmp3 = useIsQuestProgressing(quest);
-  let isConsoleQuestResult = accounts(7228).isConsoleQuest(quest);
+  let isConsoleQuestResult = accounts(7229).isConsoleQuest(quest);
   if (isConsoleQuestResult) {
     isConsoleQuestResult = 0 === memo.xboxAndPlaystationAccounts.length;
   }
@@ -1724,7 +1724,7 @@ export const useQuestWarningTips = function useQuestWarningTips(userStatus) {
   let tmp8Result = tmp8(500);
   let tmp17 = tmp8Result.isWeb() && tmp12;
   if (tmp17) {
-    tmp8Result = tmp8(10451);
+    tmp8Result = tmp8(10453);
     tmp17 = !tmp8Result.isQuestSupportedOnWeb(userStatus);
   }
   const obj2 = _require(589);
@@ -1847,16 +1847,16 @@ export const useClaimedCollectibleRewardMessage = function useClaimedCollectible
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = require(10437) /* _getDefaultRewardName */;
+  let obj1 = require(10436) /* _getDefaultRewardName */;
   const defaultRewardName = obj1.getDefaultRewardName(config, stateFromStores);
-  let obj2 = require(10437) /* _getDefaultRewardName */;
+  let obj2 = require(10436) /* _getDefaultRewardName */;
   const collectibleQuestRewardDuration = obj2.getCollectibleQuestRewardDuration(config);
-  let obj3 = require(10437) /* _getDefaultRewardName */;
+  let obj3 = require(10436) /* _getDefaultRewardName */;
   const collectibleQuestRewardExtendableExpirationDate = obj3.getCollectibleQuestRewardExtendableExpirationDate(config);
-  let obj4 = require(10437) /* _getDefaultRewardName */;
+  let obj4 = require(10436) /* _getDefaultRewardName */;
   const result = obj4.isCollectibleQuestRewardPermanentWithPremiumSubscription(config);
-  const result1 = require(10437) /* _getDefaultRewardName */.isCollectibleQuestRewardPremiumExtendable(config);
-  const obj6 = require(10437) /* _getDefaultRewardName */;
+  const result1 = require(10436) /* _getDefaultRewardName */.isCollectibleQuestRewardPremiumExtendable(config);
+  const obj6 = require(10436) /* _getDefaultRewardName */;
   const isPremiumResult = require(4007) /* getPremiumPlanItem */.isPremium(stateFromStores, PremiumTypes.TIER_2);
   if (null == collectibleQuestRewardDuration) {
     const intl2 = tmp(1236).intl;
@@ -1902,10 +1902,10 @@ export const useClaimedCollectibleRewardMessage = function useClaimedCollectible
   }
 };
 export const useLaunchInGameActivityQuest = function useLaunchInGameActivityQuest(quest) {
-  let obj = require(7228) /* getApplicationIdsByTaskTypes */;
+  let obj = require(7229) /* getApplicationIdsByTaskTypes */;
   obj = { launchInGameActivity: null };
   const activityApplicationId = obj.getActivityApplicationId(quest);
-  obj[0] = importDefault(10563)({ applicationId: activityApplicationId });
+  obj[0] = importDefault(10565)({ applicationId: activityApplicationId });
   return obj;
 };
 export const useIsPreviewerOnAnyQuest = function useIsPreviewerOnAnyQuest() {

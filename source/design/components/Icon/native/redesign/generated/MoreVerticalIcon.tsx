@@ -1,10 +1,10 @@
-// Module ID: 12312
-// Function ID: 12313
+// Module ID: 12313
+// Function ID: 12314
 // Name: MoreVerticalIcon
-// Dependencies: [19, 21, 712, 4064, 12313, 2]
+// Dependencies: [19, 21, 712, 4064, 12314, 2]
 // Exports: MoreVerticalIcon
 
-// Module 12312 (MoreVerticalIcon)
+// Module 12313 (MoreVerticalIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const MoreVerticalIcon = function MoreVerticalIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12313) /* registerAsset */;
+  obj[0] = require(12314) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

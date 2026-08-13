@@ -1,10 +1,10 @@
-// Module ID: 10476
-// Function ID: 10477
+// Module ID: 10478
+// Function ID: 10479
 // Name: useIsSocialLayerParentApplication
 // Dependencies: [19, 676, 7634, 2]
 // Exports: default, getIsSocialLayerParentApplication
 
-// Module 10476 (useIsSocialLayerParentApplication)
+// Module 10478 (useIsSocialLayerParentApplication)
 import noop from "noop";
 import { ApplicationFlags } from "ME";
 

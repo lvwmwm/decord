@@ -1,9 +1,9 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14038
+// Function ID: 14039
 // Name: handlePasskeyUpsellShow
-// Dependencies: [1218, 1922, 14041, 676, 5301, 8527, 4164, 1377, 4197, 5871, 14048, 2]
+// Dependencies: [1218, 1922, 14032, 676, 5301, 8527, 4164, 1377, 4197, 5871, 14039, 2]
 
-// Module 14047 (handlePasskeyUpsellShow)
+// Module 14038 (handlePasskeyUpsellShow)
 import fetchFingerprint from "fetchFingerprint";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import hasFetchedCredentials from "hasFetchedCredentials";
@@ -38,8 +38,8 @@ prototype["handlePasskeyUpsellShow"] = function handlePasskeyUpsellShow() {
                 currentUser = currentUser.getCurrentUser();
                 if (tmp6) {
                   if (obj3.hasFetchedCredentials()) {
-                    importDefault(14048).openPasskeyUpsell();
-                    const obj6 = importDefault(14048);
+                    importDefault(14039).openPasskeyUpsell();
+                    const obj6 = importDefault(14039);
                   } else if (!c7) {
                     c7 = true;
                     const webAuthnCredentials = tmp(5871).fetchWebAuthnCredentials();

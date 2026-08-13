@@ -1,10 +1,10 @@
-// Module ID: 10903
-// Function ID: 10904
+// Module ID: 10905
+// Function ID: 10906
 // Name: VoiceStatus
-// Dependencies: [19, 17, 4393, 4361, 5180, 21, 4342, 712, 589, 10846, 10684, 10685, 1297, 10904, 10905, 8545, 2]
+// Dependencies: [19, 17, 4393, 4361, 5180, 21, 4342, 712, 589, 10848, 10686, 10687, 1297, 10906, 10907, 8545, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 10903 (VoiceStatus)
+// Module 10905 (VoiceStatus)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -48,15 +48,15 @@ const memoResult = importAllResult.memo((userId) => {
     flag2 = false;
   }
   if (stateFromStores) {
-    let tmp5 = channelId(10846);
+    let tmp5 = channelId(10848);
     let flag3 = true;
   } else if (flag2) {
-    tmp5 = channelId(10684);
+    tmp5 = channelId(10686);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp5 = channelId(10685);
+      tmp5 = channelId(10687);
       flag3 = false;
     }
   }
@@ -83,7 +83,7 @@ const memoResult1 = importAllResult.memo((userId) => {
   const items1 = [channelId, userId];
   let tmp4;
   if (obj.useStateFromStores(items, () => outer1_6.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(10904);
+    tmp4 = channelId(10906);
   }
   let tmp6 = null;
   if (null != tmp4) {
@@ -105,7 +105,7 @@ export const VoiceStatus = memoResult;
 export const ModeratorStatus = memoResult1;
 export const BlockedStatus = function BlockedStatus() {
   const obj = { style: callback().restricted, source: null, size: null, color: null };
-  obj[1] = importDefault(10905);
+  obj[1] = importDefault(10907);
   obj[2] = require(1297) /* Button */.Icon.Sizes.EXTRA_SMALL;
   obj[3] = importDefault(712).unsafe_rawColors.RED_400;
   return jsx(require(1297) /* Button */.Icon, { style: callback().restricted, source: null, size: null, color: null });

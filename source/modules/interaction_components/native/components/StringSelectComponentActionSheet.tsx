@@ -1,10 +1,10 @@
-// Module ID: 11270
-// Function ID: 11271
+// Module ID: 11271
+// Function ID: 11272
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4342, 712, 8270, 1954, 4310, 11271, 5400, 4338, 1236, 2]
+// Dependencies: [32, 19, 21, 4342, 712, 8270, 1954, 4310, 11272, 5400, 4338, 1236, 2]
 // Exports: default
 
-// Module 11270 (StringSelectComponentActionSheet)
+// Module 11271 (StringSelectComponentActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -151,5 +151,5 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   };
   obj[12] = channelId;
   obj[13] = allowEmpty;
-  return tmp9(onSubmit(11271), obj);
+  return tmp9(onSubmit(11272), obj);
 };

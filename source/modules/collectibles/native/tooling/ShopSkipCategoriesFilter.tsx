@@ -1,10 +1,10 @@
-// Module ID: 15119
-// Function ID: 15120
+// Module ID: 15110
+// Function ID: 15111
 // Name: ShopSkipCategoriesFilter
 // Dependencies: [19, 17, 7049, 21, 4342, 712, 589, 4753, 4338, 7048, 2]
 // Exports: ShopSkipCategoriesFilter
 
-// Module 15119 (ShopSkipCategoriesFilter)
+// Module 15110 (ShopSkipCategoriesFilter)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";

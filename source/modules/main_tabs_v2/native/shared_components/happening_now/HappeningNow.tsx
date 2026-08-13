@@ -1,9 +1,9 @@
-// Module ID: 15267
-// Function ID: 15268
+// Module ID: 15258
+// Function ID: 15259
 // Name: renderCard
-// Dependencies: [32, 19, 17, 14604, 676, 21, 8055, 4342, 712, 5467, 8540, 15268, 698, 4771, 1500, 15269, 5768, 5788, 15276, 15277, 4083, 10289, 12, 7790, 1236, 15278, 15279, 15296, 15298, 15299, 15282, 15295, 15300, 15294, 15281, 1370, 2]
+// Dependencies: [32, 19, 17, 14595, 676, 21, 8055, 4342, 712, 5467, 8540, 15259, 698, 4771, 1500, 15260, 5768, 5788, 15267, 15268, 4083, 10289, 12, 7790, 1236, 15269, 15270, 15287, 15289, 15290, 15273, 15286, 15291, 15285, 15272, 1370, 2]
 
-// Module 15267 (renderCard)
+// Module 15258 (renderCard)
 import HappeningNowCardCreateChannel from "HappeningNowCardCreateChannel";
 import importAllResult from "useHappeningNowScrollBehavior";
 import get_ActivityIndicator from "QUICK_SWITCHER";
@@ -25,9 +25,15 @@ function renderCard(kind, fullWidth) {
   if ("placeholder" !== kind.kind) {
     if (!fullWidth.loading) {
       kind = kind.kind;
+      let obj = {};
+      const merged = Object.assign(kind);
+      const merged1 = Object.assign(fullWidth);
+      obj.cardKey = keyExtractor(kind);
+      return jsx(importDefault(15272), {});
     }
   }
-  return jsx(require(15278) /* HappeningNowCardPlaceholder */.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
+  obj = { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant };
+  return jsx(require(15269) /* HappeningNowCardPlaceholder */.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
 }
 function keyExtractor(voiceState) {
   let kind;
@@ -75,7 +81,7 @@ const memoResult = importAllResult.memo((listRef) => {
   obj = obj(isFocused[14]);
   isFocused = obj.useIsFocused();
   ref = isFocused;
-  obj = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: true, isFocused: true };
+  obj = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "Array", isFocused: "isArray" };
   obj[3] = isFocused;
   const tmp7 = callback(ref(isFocused[15])(listRef.cards, obj), 2);
   let first = tmp7[0];

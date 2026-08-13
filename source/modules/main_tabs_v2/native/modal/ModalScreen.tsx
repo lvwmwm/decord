@@ -1,10 +1,10 @@
-// Module ID: 16028
-// Function ID: 16029
+// Module ID: 16019
+// Function ID: 16020
 // Name: Modal
-// Dependencies: [109, 19, 17, 676, 21, 4342, 712, 4550, 9399, 503, 6982, 1628, 16029, 500, 15916, 2]
+// Dependencies: [109, 19, 17, 676, 21, 4342, 712, 4550, 9399, 503, 6982, 1628, 16020, 500, 15907, 2]
 // Exports: default
 
-// Module 16028 (Modal)
+// Module 16019 (Modal)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -75,7 +75,7 @@ export default function Modal(route) {
   const layoutEffect = obj1.useLayoutEffect(() => modal(6982).trackAppUIViewed("ModalScreen"), []);
   const tmp6 = importDefault(9399);
   ({ left, right } = importDefault(1628)());
-  let tmp7Result = tmp7(16029);
+  let tmp7Result = tmp7(16020);
   const items = [absoluteFillObject.absoluteFillObject, ];
   let tmp16;
   if (!tmp7Result.shouldExcludeSafeAreaForModalKey(modal.key)) {
@@ -103,7 +103,7 @@ export default function Modal(route) {
   tmp7Result = tmp7(500);
   let isIOSResult = tmp7Result.isIOS();
   if (isIOSResult) {
-    isIOSResult = callback2(tmp7(15916).PortalKeyboardRenderer, { portal: false });
+    isIOSResult = callback2(tmp7(15907).PortalKeyboardRenderer, { portal: false });
   }
   items2[1] = isIOSResult;
   obj1[2] = items2;

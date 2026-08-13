@@ -1,10 +1,10 @@
-// Module ID: 15604
-// Function ID: 15605
+// Module ID: 15595
+// Function ID: 15596
 // Name: NotificationCenterActionSheet
-// Dependencies: [19, 7144, 676, 21, 589, 15605, 8423, 4310, 8418, 8421, 5788, 8427, 6059, 5804, 5436, 1236, 5806, 4859, 11849, 9186, 15606, 11158, 8428, 4306, 6054, 2]
+// Dependencies: [19, 7144, 676, 21, 589, 15596, 8423, 4310, 8418, 8421, 5788, 8427, 6059, 5804, 5436, 1236, 5806, 4859, 11850, 9186, 15597, 11159, 8428, 4306, 6054, 2]
 // Exports: default
 
-// Module 15604 (NotificationCenterActionSheet)
+// Module 15595 (NotificationCenterActionSheet)
 import BellIcon from "BellIcon";
 import findOrCreateMessageRecord from "findOrCreateMessageRecord";
 import { UserSettingsSections } from "ME";
@@ -24,7 +24,7 @@ export default function NotificationCenterActionSheet() {
   const everyoneFilter = stateFromStoresObject.everyoneFilter;
   const items1 = [everyoneFilter, roleFilter];
   const dependencyMap = hasForLaterAccess.useCallback((arg0) => {
-    let obj = everyoneFilter(15605);
+    let obj = everyoneFilter(15596);
     obj = { roleFilter, everyoneFilter };
     const merged = Object.assign(arg0);
     obj.setGuildFilter(obj);
@@ -69,7 +69,7 @@ export default function NotificationCenterActionSheet() {
   obj2[2] = intl2.string(roleFilter(1236).t.asInft);
   const obj3 = { IconComponent: null, source: null };
   obj3[0] = roleFilter(4859).AtIcon;
-  obj3[1] = everyoneFilter(11849);
+  obj3[1] = everyoneFilter(11850);
   obj2[3] = callback(roleFilter(5806).ActionSheetRow.Icon, obj3);
   const items3 = [callback(roleFilter(5806).ActionSheetSwitchRow, obj2), ];
   const obj4 = {
@@ -87,7 +87,7 @@ export default function NotificationCenterActionSheet() {
   obj4[3] = intl4.string(roleFilter(1236).t.jYgZa4);
   const obj5 = { IconComponent: null, source: null };
   obj5[0] = roleFilter(9186).BellIcon;
-  obj5[1] = everyoneFilter(15606);
+  obj5[1] = everyoneFilter(15597);
   obj4[4] = callback(roleFilter(5806).ActionSheetRow.Icon, obj5);
   items3[1] = callback(roleFilter(5806).ActionSheetSwitchRow, obj4);
   obj1[1] = items3;
@@ -96,7 +96,7 @@ export default function NotificationCenterActionSheet() {
   if (isForLaterExperimentOn) {
     const obj6 = { icon: null, label: null, onPress: null, arrow: true };
     const obj7 = { IconComponent: null };
-    obj7[0] = tmp(11158).BookmarkIcon;
+    obj7[0] = tmp(11159).BookmarkIcon;
     obj6[0] = tmp8(tmp(5806).ActionSheetRow.Icon, obj7);
     const intl5 = tmp(1236).intl;
     obj6[1] = intl5.string(tmp(1236).t["2pAkDA"]);

@@ -1,10 +1,10 @@
-// Module ID: 11035
-// Function ID: 11036
+// Module ID: 11036
+// Function ID: 11037
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 1391, 3989, 3998, 1922, 9676, 676, 21, 4342, 1367, 647, 9046, 8572, 4197, 11036, 11037, 1236, 9772, 9771, 4164, 1377, 11039, 11044, 6054, 11045, 1891, 9114, 8015, 5414, 2]
+// Dependencies: [32, 19, 17, 1391, 3989, 3998, 1922, 9676, 676, 21, 4342, 1367, 647, 9046, 8572, 4197, 11037, 11038, 1236, 9772, 9771, 4164, 1377, 11040, 11045, 6054, 11046, 1891, 9114, 8015, 5414, 2]
 // Exports: default
 
-// Module 11035 (useMemberListAction)
+// Module 11036 (useMemberListAction)
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
 import { View } from "ChatPlusIcon";
@@ -21,7 +21,7 @@ let closure_12;
 let unpackModuleId;
 const require = arg1;
 ({ Permissions: c10, AnalyticsSections: unpackModuleId, InstantInviteSources: closure_12 } = ME);
-let closure_14 = { listActionRenderer: "Array", listActionHeight: "ct" };
+let closure_14 = { listActionRenderer: "isArray", listActionHeight: "accessibilityRole" };
 let closure_15 = createCacheKey.createStyles({ wrapper: { paddingTop: require("PX_24").USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 

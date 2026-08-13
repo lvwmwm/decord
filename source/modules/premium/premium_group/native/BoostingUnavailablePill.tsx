@@ -1,10 +1,10 @@
-// Module ID: 12850
-// Function ID: 12851
+// Module ID: 12851
+// Function ID: 12852
 // Name: handlePress
-// Dependencies: [17, 4021, 21, 4342, 712, 4310, 12851, 2007, 1236, 2885, 4338, 2]
+// Dependencies: [17, 4021, 21, 4342, 712, 4310, 12852, 2007, 1236, 2885, 4338, 2]
 // Exports: default
 
-// Module 12850 (handlePress)
+// Module 12851 (handlePress)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getPremiumGroupProductName as closure_5 } from "SubscriptionStatusTypes";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ function handlePress() {
   obj = { premiumGroupProductName: null };
   obj[0] = callback();
   obj[0] = intl.formatToPlainString(importDefault(2885)["5xN/C1"], obj);
-  obj.openLazy(require(2007) /* asyncRequireImpl */(12851, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(12852, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
 let obj = { premiumGroupBanner: null, pgUnavailable: null, pgUnavailableText: null };

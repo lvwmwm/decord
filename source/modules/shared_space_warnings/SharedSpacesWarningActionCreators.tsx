@@ -1,10 +1,10 @@
-// Module ID: 13065
-// Function ID: 13066
+// Module ID: 13066
+// Function ID: 13067
 // Name: dismissGdmBlockedUserWarning
-// Dependencies: [13061, 676, 530, 2]
+// Dependencies: [13062, 676, 530, 2]
 // Exports: dismissGdmBlockedUserWarning
 
-// Module 13065 (dismissGdmBlockedUserWarning)
+// Module 13066 (dismissGdmBlockedUserWarning)
 import { setDismissalTimeForChannel as closure_2 } from "useSharedSpacesWarningStore";
 import { Endpoints } from "ME";
 

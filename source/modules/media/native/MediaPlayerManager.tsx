@@ -1,10 +1,10 @@
-// Module ID: 13866
-// Function ID: 13867
+// Module ID: 13857
+// Function ID: 13858
 // Name: _initialize
-// Dependencies: [17, 1390, 4555, 1391, 4562, 3989, 6923, 676, 9809, 13867, 505, 3, 644, 705, 4523, 4198, 709, 500, 643, 6965, 9812, 2]
+// Dependencies: [17, 1390, 4555, 1391, 4562, 3989, 6923, 676, 9809, 13858, 505, 3, 644, 705, 4523, 4198, 709, 500, 643, 6965, 9812, 2]
 // Exports: isPlaybackComplete
 
-// Module 13866 (_initialize)
+// Module 13857 (_initialize)
 import get_ActivityIndicator from "set";
 import participantFromServer from "participantFromServer";
 import withEqualityFn from "withEqualityFn";
@@ -28,7 +28,7 @@ let map1;
 let closure_16 = new require("ensureGuildLoaded")("MediaPlayerManager");
 let obj = keys.create((arg0) => {
   let closure_0 = arg0;
-  const obj = {
+  return {
     activeMediaPlayerSource: "HermesInternal",
     mediaSourceMessage: "PX_16",
     canAccessMedia: "disabled",
@@ -36,15 +36,13 @@ let obj = keys.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "ct",
-    showPip: "UNENROLLED_ACTIVITY_QUEST_AUTO_ENROLL",
+    showPip: "button-action",
     closePip() {
       callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
     },
-    displayedMediaItemIdsPerChannel: "heading-lg/extrabold",
-    currentlyDisplayedChannelId: "interactive-text-active"
+    displayedMediaItemIdsPerChannel: {},
+    currentlyDisplayedChannelId: null
   };
-  obj[9] = {};
-  return obj;
 });
 class MediaPlayerManager extends tmp8 {
   constructor() {

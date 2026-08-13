@@ -1,9 +1,9 @@
-// Module ID: 12611
-// Function ID: 12612
+// Module ID: 12612
+// Function ID: 12613
 // Name: GroupDmMemberCount
-// Dependencies: [19, 1391, 4431, 3998, 1922, 676, 21, 1297, 4342, 712, 589, 12608, 4535, 1236, 9687, 12612, 4187, 12614, 2]
+// Dependencies: [19, 1391, 4431, 3998, 1922, 676, 21, 1297, 4342, 712, 589, 12609, 4535, 1236, 9687, 12613, 4187, 12615, 2]
 
-// Module 12611 (GroupDmMemberCount)
+// Module 12612 (GroupDmMemberCount)
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import sortActivity from "sortActivity";
@@ -49,7 +49,7 @@ function GroupDmMemberCount(channel) {
     }, 0);
   });
   const obj = channel(589);
-  return channel(12614).renderMemberCountText(stateFromStores, channel.recipients.length);
+  return channel(12615).renderMemberCountText(stateFromStores, channel.recipients.length);
 }
 let c3 = importAllResult;
 ({ ChannelTypes: metroImportAll, StatusTypes: c9 } = ME);

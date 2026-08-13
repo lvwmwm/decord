@@ -1,10 +1,10 @@
-// Module ID: 11398
-// Function ID: 11399
+// Module ID: 11399
+// Function ID: 11400
 // Name: ContentClassificationVisibility
 // Dependencies: [1922, 4878, 4880, 589, 2]
 // Exports: getContentClassificationVisibility, useContentClassificationVisibility
 
-// Module 11398 (ContentClassificationVisibility)
+// Module 11399 (ContentClassificationVisibility)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

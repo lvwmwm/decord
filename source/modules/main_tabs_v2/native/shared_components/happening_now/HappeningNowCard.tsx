@@ -1,10 +1,10 @@
-// Module ID: 14605
-// Function ID: 14606
+// Module ID: 14596
+// Function ID: 14597
 // Name: HAPPENING_NOW_CARD_MARGIN_RIGHT
-// Dependencies: [19, 17, 14604, 21, 4342, 712, 7686, 1367, 4193, 5416, 4338, 2]
+// Dependencies: [19, 17, 14595, 21, 4342, 712, 7686, 1367, 4193, 5416, 4338, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 14605 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
+// Module 14596 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
 import "noop";
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";

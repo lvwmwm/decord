@@ -1,10 +1,10 @@
-// Module ID: 10961
-// Function ID: 10962
+// Module ID: 10962
+// Function ID: 10963
 // Name: getVoiceInviteEmbedRenderInfo
-// Dependencies: [19, 4327, 4417, 676, 7194, 7241, 10962, 5928, 4331, 7240, 10963, 10964, 4328, 2]
+// Dependencies: [19, 4327, 4417, 676, 7194, 7241, 10963, 5928, 4331, 7240, 10964, 10965, 4328, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 10961 (getVoiceInviteEmbedRenderInfo)
+// Module 10962 (getVoiceInviteEmbedRenderInfo)
 import noop from "noop";
 import updateInvite from "updateInvite";
 import getVoiceStatesForGuild from "getVoiceStatesForGuild";
@@ -37,13 +37,13 @@ function getVoiceInviteEmbedRenderInfo(state) {
               }
               let tmp4 = null;
               if (null != id) {
-                tmp7Result = tmp7(10963);
+                tmp7Result = tmp7(10964);
                 let obj = { guildId: null, location: "mobile_invite_embed_impression" };
                 obj[0] = id;
                 let enabled = tmp7Result.getVoiceChannelListInviteExperiment(obj).enabled;
                 if (enabled) {
-                  enabled = tmp7(10964).canShowVoiceChannelListInviteEmbed(state);
-                  const tmp7Result1 = tmp7(10964);
+                  enabled = tmp7(10965).canShowVoiceChannelListInviteEmbed(state);
+                  const tmp7Result1 = tmp7(10965);
                 }
                 obj = { treatmentRendered: null };
                 obj[0] = enabled;

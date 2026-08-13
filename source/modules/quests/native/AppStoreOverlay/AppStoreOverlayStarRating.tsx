@@ -1,10 +1,10 @@
-// Module ID: 10553
-// Function ID: 10554
+// Module ID: 10555
+// Function ID: 10556
 // Name: FractionalStar
 // Dependencies: [19, 17, 21, 4342, 712, 8795, 8793, 2]
 // Exports: default
 
-// Module 10553 (FractionalStar)
+// Module 10555 (FractionalStar)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

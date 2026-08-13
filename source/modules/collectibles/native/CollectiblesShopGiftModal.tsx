@@ -1,7 +1,7 @@
 // Module ID: 9626
 // Function ID: 9627
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 7049, 676, 21, 9627, 8842, 8835, 589, 5768, 5788, 1903, 7048, 4020, 9628, 1236, 9629, 12202, 12205, 2]
+// Dependencies: [19, 7049, 676, 21, 9627, 8842, 8835, 589, 5768, 5788, 1903, 7048, 4020, 9628, 1236, 9629, 12203, 12206, 2]
 // Exports: default
 
 // Module 9626 (CollectiblesShopGiftModal)

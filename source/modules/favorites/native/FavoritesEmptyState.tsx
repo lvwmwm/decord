@@ -1,10 +1,10 @@
-// Module ID: 15896
-// Function ID: 15897
+// Module ID: 15887
+// Function ID: 15888
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 4342, 712, 9759, 12197, 4310, 9763, 2007, 9762, 6070, 4753, 4338, 1236, 3047, 4755, 12170, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 9759, 12198, 4310, 9763, 2007, 9762, 6070, 4753, 4338, 1236, 3047, 4755, 12171, 2]
 // Exports: default
 
-// Module 15896 (FavoritesEmptyState)
+// Module 15887 (FavoritesEmptyState)
 import noop from "noop";
 import { View } from "PlusMediumIcon";
 import jsxProd from "jsxProd";
@@ -49,7 +49,7 @@ export default function FavoritesEmptyState() {
     const obj3 = { variant: "primary", text: null, icon: null, onPress: null };
     const intl4 = tmp2(1236).intl;
     obj3[1] = intl4.string(tmp9(3047)["6kk0gM"]);
-    obj3[2] = tmp8(tmp2(12170).PlusMediumIcon, {});
+    obj3[2] = tmp8(tmp2(12171).PlusMediumIcon, {});
     obj3[3] = callback;
     let obj4 = obj3;
   } else {

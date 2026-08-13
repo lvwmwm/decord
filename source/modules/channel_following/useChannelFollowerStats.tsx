@@ -1,10 +1,10 @@
-// Module ID: 11107
-// Function ID: 11108
+// Module ID: 11108
+// Function ID: 11109
 // Name: useChannelFollowerStats
-// Dependencies: [32, 19, 11108, 687, 589, 10264, 2]
+// Dependencies: [32, 19, 11109, 687, 589, 10264, 2]
 // Exports: default
 
-// Module 11107 (useChannelFollowerStats)
+// Module 11108 (useChannelFollowerStats)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getFollowerStatsForChannel from "getFollowerStatsForChannel";

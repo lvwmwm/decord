@@ -1,9 +1,9 @@
-// Module ID: 10820
-// Function ID: 10821
+// Module ID: 10822
+// Function ID: 10823
 // Name: combined
 // Dependencies: [676, 1993, 2]
 
-// Module 10820 (combined)
+// Module 10822 (combined)
 import importDefaultResult from "combined";
 
 const combined = "" + require("combined").getArticleURL(require("ME").HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";

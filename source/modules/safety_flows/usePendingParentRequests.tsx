@@ -1,10 +1,10 @@
-// Module ID: 17047
-// Function ID: 17048
+// Module ID: 17038
+// Function ID: 17039
 // Name: useDerivedPendingRequests
-// Dependencies: [32, 19, 7044, 1922, 7045, 589, 7381, 11374, 2]
+// Dependencies: [32, 19, 7044, 1922, 7045, 589, 7381, 11375, 2]
 // Exports: useDerivedPendingRequests, usePendingRequestListController, usePendingRequestResolution
 
-// Module 17047 (useDerivedPendingRequests)
+// Module 17038 (useDerivedPendingRequests)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
@@ -142,7 +142,7 @@ export const usePendingRequestListController = function usePendingRequestListCon
       callback();
     }
   };
-  const familyCenterActions = pendingRequests(11374).useFamilyCenterActions(obj);
+  const familyCenterActions = pendingRequests(11375).useFamilyCenterActions(obj);
   acceptLinkRequest = familyCenterActions.acceptLinkRequest;
   declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
@@ -185,7 +185,7 @@ export const usePendingRequestListController = function usePendingRequestListCon
   }, items1);
   tmp2Result = tmp2(obj2.useState(pendingRequests), 2);
   [tmp12, tmp13] = tmp2Result;
-  const obj3 = pendingRequests(11374);
+  const obj3 = pendingRequests(11375);
   [tmp15, tmp16] = callback(acceptLinkRequest.useState(pendingRequests), 2);
   const tmp2Result1 = callback(acceptLinkRequest.useState(pendingRequests), 2);
   if (linkedUsersProcessed) {

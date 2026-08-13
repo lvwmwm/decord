@@ -1,10 +1,10 @@
-// Module ID: 16057
-// Function ID: 16058
+// Module ID: 16048
+// Function ID: 16049
 // Name: getRestrictedHiddenMediaCount
 // Dependencies: [8108, 4679, 2]
 // Exports: default
 
-// Module 16057 (getRestrictedHiddenMediaCount)
+// Module 16048 (getRestrictedHiddenMediaCount)
 let result = require("set").fileFinishedImporting("modules/message_request/getRestrictedHiddenMediaCount.tsx");
 
 export default function getRestrictedHiddenMediaCount(message) {

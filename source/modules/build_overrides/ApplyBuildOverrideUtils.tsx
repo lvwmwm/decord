@@ -1,10 +1,10 @@
-// Module ID: 11237
-// Function ID: 11238
+// Module ID: 11238
+// Function ID: 11239
 // Name: _applyStaffBuildOverride
-// Dependencies: [5, 1218, 11238, 530, 4258, 2]
+// Dependencies: [5, 1218, 11239, 530, 4258, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 11237 (_applyStaffBuildOverride)
+// Module 11238 (_applyStaffBuildOverride)
 import importDefaultResult from "set";
 import fetchFingerprint from "fetchFingerprint";
 
@@ -320,7 +320,7 @@ closure_0 = importDefaultResult((arg0) => {
     }
   })();
 });
-const f87245 = function() {
+const f87225 = function() {
   const self = this;
   const apply = closure_0.apply;
   if (typeof apply === "unknown") {

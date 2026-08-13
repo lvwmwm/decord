@@ -1,8 +1,8 @@
-// Module ID: 11535
-// Function ID: 11536
-// Dependencies: [19, 17, 1930, 676, 21, 4342, 9598, 11526, 10722, 5308, 8355, 8888, 1435, 8282, 2]
+// Module ID: 11536
+// Function ID: 11537
+// Dependencies: [19, 17, 1930, 676, 21, 4342, 9598, 11527, 10724, 5308, 8355, 8888, 1435, 8282, 2]
 
-// Module 11535
+// Module 11536
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import createdAt from "createdAt";
@@ -22,10 +22,10 @@ let closure_10 = importAllResult.memo((applicationId) => {
   let heroMediaDimensions;
   let importDefault;
   let obj = heroMediaDimensions(9598);
-  let obj1 = heroMediaDimensions(11526);
+  let obj1 = heroMediaDimensions(11527);
   heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
   obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
-  const tmp4 = importDefault(10722)(obj);
+  const tmp4 = importDefault(10724)(obj);
   importDefault = tmp4;
   let items = [heroMediaDimensions, tmp4];
   const memo = importAllResult.useMemo(() => {

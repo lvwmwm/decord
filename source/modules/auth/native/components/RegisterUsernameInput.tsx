@@ -1,10 +1,10 @@
-// Module ID: 15184
-// Function ID: 15185
+// Module ID: 15175
+// Function ID: 15176
 // Name: UsernameStatusMessage
-// Dependencies: [109, 32, 19, 15158, 21, 4342, 4083, 14080, 4753, 7838, 712, 4338, 1236, 15176, 7835, 500, 2]
+// Dependencies: [109, 32, 19, 15149, 21, 4342, 4083, 14071, 4753, 7838, 712, 4338, 1236, 15167, 7835, 500, 2]
 // Exports: RegisterUsernameInput
 
-// Module 15184 (UsernameStatusMessage)
+// Module 15175 (UsernameStatusMessage)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -31,7 +31,7 @@ function UsernameStatusMessage(arg0) {
   if (usernameStatus != null) {
     type = usernameStatus.type;
   }
-  if (type === require(14080) /* NameValidationState */.NameValidationState.ERROR) {
+  if (type === require(14071) /* NameValidationState */.NameValidationState.ERROR) {
     let obj = { direction: "horizontal", spacing: 4, align: "flex-start", children: null };
     obj = { size: "xs", color: null };
     obj[1] = importDefault(712).colors.TEXT_FEEDBACK_CRITICAL;
@@ -51,7 +51,7 @@ function UsernameStatusMessage(arg0) {
       if (usernameStatus != null) {
         type1 = usernameStatus.type;
       }
-      if (type1 === tmp3(14080).NameValidationState.AVAILABLE) {
+      if (type1 === tmp3(14071).NameValidationState.AVAILABLE) {
         const obj2 = {};
         const merged2 = Object.assign(createCacheKey);
         const merged3 = Object.assign(createCacheKey);
@@ -110,7 +110,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     autoFocus = false;
   }
   obj[1] = autoFocus;
-  importDefault(15176)(obj);
+  importDefault(15167)(obj);
   const tmp5 = callback(obj.useState(true), 2);
   importDefault = tmp6;
   const tmp7 = callback2((errors) => errors.errors);
@@ -140,7 +140,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
   const tmp11 = closure_10;
   const tmp12 = closure_11;
   const tmp14 = setUsername;
-  const tmp3 = importDefault(15176);
+  const tmp3 = importDefault(15167);
   obj[5] = setUsername(500).isAndroid();
   const obj4 = setUsername(500);
   let str = "default";
@@ -157,7 +157,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     type = usernameStatus.type;
   }
   let str2;
-  if (type === tmp14(14080).NameValidationState.ERROR) {
+  if (type === tmp14(14071).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj1 = { children: null };

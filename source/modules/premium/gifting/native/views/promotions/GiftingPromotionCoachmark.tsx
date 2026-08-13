@@ -1,10 +1,10 @@
-// Module ID: 16085
-// Function ID: 16086
+// Module ID: 16076
+// Function ID: 16077
 // Name: GiftingPromotionCoachmarkActionSheet
-// Dependencies: [19, 17, 4334, 7388, 676, 1388, 21, 4342, 712, 589, 10087, 16086, 8902, 4310, 5768, 5788, 10078, 5437, 500, 9436, 5308, 4338, 4755, 1236, 2]
+// Dependencies: [19, 17, 4334, 7388, 676, 1388, 21, 4342, 712, 589, 10087, 16077, 8902, 4310, 5768, 5788, 10078, 5437, 500, 9436, 5308, 4338, 4755, 1236, 2]
 // Exports: default
 
-// Module 16085 (GiftingPromotionCoachmarkActionSheet)
+// Module 16076 (GiftingPromotionCoachmarkActionSheet)
 import useAPNGPlayerControls from "useAPNGPlayerControls";
 import { View } from "Background";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -58,7 +58,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let tmp2Result = tmp2(589);
   const items1 = [createEmptyPromotionsByType];
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
-  tmp2Result = tmp2(16086);
+  tmp2Result = tmp2(16077);
   let endDate;
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;

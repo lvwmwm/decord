@@ -1,10 +1,10 @@
-// Module ID: 13940
-// Function ID: 13941
+// Module ID: 13931
+// Function ID: 13932
 // Name: InventoryIcon
-// Dependencies: [19, 21, 712, 4064, 13941, 2]
+// Dependencies: [19, 21, 712, 4064, 13932, 2]
 // Exports: InventoryIcon
 
-// Module 13940 (InventoryIcon)
+// Module 13931 (InventoryIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const InventoryIcon = function InventoryIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13941) /* registerAsset */;
+  obj[0] = require(13932) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

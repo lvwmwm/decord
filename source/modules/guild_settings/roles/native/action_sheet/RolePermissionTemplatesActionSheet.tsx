@@ -1,10 +1,10 @@
-// Module ID: 16801
-// Function ID: 16802
+// Module ID: 16792
+// Function ID: 16793
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 676, 21, 4342, 712, 698, 4310, 4061, 5436, 1236, 5804, 16781, 4683, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 698, 4310, 4061, 5436, 1236, 5804, 16772, 4683, 2]
 // Exports: default
 
-// Module 16801 (RolePermissionTemplatesActionSheet)
+// Module 16792 (RolePermissionTemplatesActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -36,7 +36,7 @@ export default function RolePermissionTemplatesActionSheet(guildId) {
   const tmp = createCacheKey();
   obj = { header: jsx(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null }), startExpanded: true, children: null };
   obj = { style: tmp.templateContainer, children: null };
-  obj[1] = jsx(importDefault(16781), {
+  obj[1] = jsx(importDefault(16772), {
     onSelect(arg0) {
       let closure_0 = arg0;
       if (closure_0) {

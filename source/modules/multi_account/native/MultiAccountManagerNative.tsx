@@ -1,9 +1,9 @@
-// Module ID: 16582
-// Function ID: 16583
+// Module ID: 16573
+// Function ID: 16574
 // Name: push
-// Dependencies: [11841, 676, 3, 687, 4550, 16583, 2007, 4198, 1231, 16584, 15, 11844, 1222, 4203, 4197, 4062, 1236, 16585, 2]
+// Dependencies: [11842, 676, 3, 687, 4550, 16574, 2007, 4198, 1231, 16575, 15, 11845, 1222, 4203, 4197, 4062, 1236, 16576, 2]
 
-// Module 16582 (push)
+// Module 16573 (push)
 import { SWITCH_ACCOUNTS_MODAL_KEY } from "MAX_ACCOUNTS";
 import ME from "ME";
 import "_initialize";
@@ -129,7 +129,7 @@ prototype["onSwitchError"] = function onSwitchError(currentUser) {
   obj = { key: "SWITCH_ACCOUNTS_TOAST_LOGIN_ERROR", content: null, icon: null };
   const intl = obj(1236).intl;
   obj[1] = intl.string(obj(1236).t.pqvKWA);
-  obj[2] = importDefault(16585);
+  obj[2] = importDefault(16576);
   obj.open(obj);
 };
 prototype["onSwitchComplete"] = function onSwitchComplete() {

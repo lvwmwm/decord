@@ -1,10 +1,10 @@
-// Module ID: 11614
-// Function ID: 11615
+// Module ID: 11615
+// Function ID: 11616
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 676, 21, 4342, 712, 1891, 4310, 11615, 2007, 11613, 4887, 4338, 2]
+// Dependencies: [32, 19, 676, 21, 4342, 712, 1891, 4310, 11616, 2007, 11614, 4887, 4338, 2]
 // Exports: default
 
-// Module 11614 (AppLauncherAutocompleteOption)
+// Module 11615 (AppLauncherAutocompleteOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -71,7 +71,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
   first = tmp[0];
   closure_9 = tmp[1];
   const tmp3 = createCacheKey();
-  let obj = require(11613) /* useAnimationDelayedAutoFocus */;
+  let obj = require(11614) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, onPress);
   obj = { onPress, style: null, children: null };
   const items = [tmp3.container, , ];

@@ -1,10 +1,10 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14157
+// Function ID: 14158
 // Name: onClose
-// Dependencies: [5, 32, 19, 17, 12095, 21, 4550, 4342, 712, 5307, 12097, 12101, 4062, 1236, 8494, 12114, 5310, 5823, 2]
+// Dependencies: [5, 32, 19, 17, 12096, 21, 4550, 4342, 712, 5307, 12098, 12102, 4062, 1236, 8494, 12115, 5310, 5823, 2]
 // Exports: default
 
-// Module 14166 (onClose)
+// Module 14157 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -41,7 +41,7 @@ function ContactSyncNameInputScreen() {
         let closure_1 = tmp3;
         callback(true);
         let c3 = 1;
-        yield outer1_1(12101).updateName(callback);
+        yield outer1_1(12102).updateName(callback);
         if (1 === tmp7) {
           c3 = 0;
           const obj1 = outer1_1(4062);

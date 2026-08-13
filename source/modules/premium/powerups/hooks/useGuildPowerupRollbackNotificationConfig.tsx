@@ -1,10 +1,10 @@
-// Module ID: 11920
-// Function ID: 11921
+// Module ID: 11921
+// Function ID: 11922
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [4229, 589, 4233, 11921, 1377, 1236, 2335, 11923, 2]
+// Dependencies: [4229, 589, 4233, 11922, 1377, 1236, 2335, 11924, 2]
 // Exports: default
 
-// Module 11920 (useGuildPowerupRollbackNotificationConfig)
+// Module 11921 (useGuildPowerupRollbackNotificationConfig)
 import calculateAppliedBoosts from "calculateAppliedBoosts";
 
 const require = arg1;
@@ -42,12 +42,12 @@ export default function useGuildPowerupRollbackNotificationConfig(guildId, locat
           obj[0] = tmp(1377).DismissibleContent.FILE_UPLOAD_POWERUP_ROLLBACK_NOTIFICATION;
           const intl = tmp(1236).intl;
           obj = { dateString: null };
-          obj[0] = importDefault(11923)(storeRemovalDate);
+          obj[0] = importDefault(11924)(storeRemovalDate);
           obj[1] = intl.formatToPlainString(importDefault(2335)["6e2ry1"], obj);
           const intl2 = tmp(1236).intl;
           const obj1 = { startDate: null, endDate: null, perkName: null, boostCount: null };
-          obj1[0] = importDefault(11923)(storeRemovalDate);
-          obj1[1] = importDefault(11923)(storeRemovalDate);
+          obj1[0] = importDefault(11924)(storeRemovalDate);
+          obj1[1] = importDefault(11924)(storeRemovalDate);
           let title1;
           if (tmp4 != null) {
             title1 = tmp4.title;

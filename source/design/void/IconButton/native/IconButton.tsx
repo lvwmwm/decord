@@ -1,9 +1,9 @@
-// Module ID: 12801
-// Function ID: 12802
+// Module ID: 12802
+// Function ID: 12803
 // Name: SquareIconButton
 // Dependencies: [19, 21, 4342, 712, 5199, 4887, 1297, 2]
 
-// Module 12801 (SquareIconButton)
+// Module 12802 (SquareIconButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

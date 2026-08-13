@@ -1,9 +1,9 @@
-// Module ID: 16785
-// Function ID: 16786
+// Module ID: 16776
+// Function ID: 16777
 // Name: updateGuildRole
 // Dependencies: [5, 676, 530, 5981, 709, 2]
 
-// Module 16785 (updateGuildRole)
+// Module 16776 (updateGuildRole)
 import set from "set";
 import { Endpoints } from "ME";
 

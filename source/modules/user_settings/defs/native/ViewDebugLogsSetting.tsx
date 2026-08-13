@@ -1,9 +1,9 @@
-// Module ID: 14824
-// Function ID: 14825
+// Module ID: 14815
+// Function ID: 14816
 // Name: ViewDebugLogsActionSheetRow
-// Dependencies: [19, 17, 21, 4310, 5806, 4550, 9726, 5804, 5436, 1236, 14825, 14827, 4306, 14830, 500, 9783, 14831, 10407, 13260, 4034, 2]
+// Dependencies: [19, 17, 21, 4310, 5806, 4550, 9726, 5804, 5436, 1236, 14816, 14818, 4306, 14821, 500, 9783, 14822, 10407, 13261, 4034, 2]
 
-// Module 14824 (ViewDebugLogsActionSheetRow)
+// Module 14815 (ViewDebugLogsActionSheetRow)
 import { Suspense } from "explicitContentFromProto";
 import { Keyboard } from "createToggle";
 import jsxProd from "jsxProd";
@@ -38,18 +38,18 @@ function ViewDebugLogsActionSheet() {
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.BUOCPi);
   obj[0] = callback(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { icon: null, title: null, screenKey: "debugLogs", render: null };
-  obj[0] = callback(require(14825) /* WrenchIcon */.WrenchIcon, {});
+  obj[0] = callback(require(14816) /* WrenchIcon */.WrenchIcon, {});
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.XpPGhL);
   obj[3] = function render() {
-    return callback2(callback(14827), {});
+    return callback2(callback(14818), {});
   };
   const items = [callback(ViewDebugLogsActionSheetRow, obj), , ];
   const obj1 = { icon: callback(require(4306) /* ClockIcon */.ClockIcon, {}), title: null, screenKey: "startupTiming", render: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.b0nJvk);
   obj1[3] = function render() {
-    return callback2(closure_3, { children: callback2(callback(14830), {}) });
+    return callback2(closure_3, { children: callback2(callback(14821), {}) });
   };
   items[1] = callback(ViewDebugLogsActionSheetRow, obj1);
   let tmpResult = null;
@@ -59,7 +59,7 @@ function ViewDebugLogsActionSheet() {
     const intl4 = tmp2(1236).intl;
     obj2[1] = intl4.string(tmp2(1236).t.Ljj0ps);
     obj2[3] = function render() {
-      return callback2(callback(14831), {});
+      return callback2(callback(14822), {});
     };
     tmpResult = tmp(ViewDebugLogsActionSheetRow, obj2);
   }

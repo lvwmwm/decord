@@ -1,10 +1,10 @@
-// Module ID: 11946
-// Function ID: 11947
+// Module ID: 11947
+// Function ID: 11948
 // Name: GuildPowerupsImage
 // Dependencies: [4334, 21, 4342, 589, 501, 8345, 5308, 2]
 // Exports: default
 
-// Module 11946 (GuildPowerupsImage)
+// Module 11947 (GuildPowerupsImage)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

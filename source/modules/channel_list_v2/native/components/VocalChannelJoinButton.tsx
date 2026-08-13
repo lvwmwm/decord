@@ -1,8 +1,8 @@
-// Module ID: 11723
-// Function ID: 11724
-// Dependencies: [19, 17, 3989, 4361, 676, 21, 4342, 712, 500, 8441, 4278, 1363, 9793, 647, 5189, 5183, 5176, 11724, 4338, 1236, 4755, 4866, 4870, 2]
+// Module ID: 11724
+// Function ID: 11725
+// Dependencies: [19, 17, 3989, 4361, 676, 21, 4342, 712, 500, 8441, 4278, 1363, 9793, 647, 5189, 5183, 5176, 11725, 4338, 1236, 4755, 4866, 4870, 2]
 
-// Module 11723
+// Module 11724
 import importAllResult from "getSystemLocale";
 import get_ActivityIndicator from "useShowConnectedUserLimit";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -92,10 +92,10 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
   if (!stateFromStores1) {
     tmp12 = tmp8;
   }
-  tmp3Result = tmp3(11724);
+  tmp3Result = tmp3(11725);
   const connectedUserLimit = tmp3Result.useConnectedUserLimit({ channel, video: tmp12 });
   tmp8 = channel(5176).useStageHasMedia(channel.id) && isGuildStageVoiceResult;
-  let connectedUserLimitFormatted = channel(11724).useConnectedUserLimitFormatted({ channel, video: tmp12, userCount: sum });
+  let connectedUserLimitFormatted = channel(11725).useConnectedUserLimitFormatted({ channel, video: tmp12, userCount: sum });
   let tmp15 = !stateFromStores;
   if (!stateFromStores) {
     tmp15 = !isConnectedToVoiceChannel;

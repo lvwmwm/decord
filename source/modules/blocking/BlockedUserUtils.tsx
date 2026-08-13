@@ -1,10 +1,10 @@
-// Module ID: 15525
-// Function ID: 15526
+// Module ID: 15516
+// Function ID: 15517
 // Name: filterOutBlockedOrIgnoredUsers
 // Dependencies: [3998, 1370, 12, 2]
 // Exports: filterBlockedUsersFromVoiceStates, filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, filterOutStreamsByBlockedOwner, hasBlockedOrIgnoredUserIds, voiceStateHasBlockedUsers
 
-// Module 15525 (filterOutBlockedOrIgnoredUsers)
+// Module 15516 (filterOutBlockedOrIgnoredUsers)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 
 const require = arg1;

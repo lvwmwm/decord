@@ -1,9 +1,9 @@
-// Module ID: 14852
-// Function ID: 14853
+// Module ID: 14843
+// Function ID: 14844
 // Name: route
-// Dependencies: [8127, 676, 10407, 14853, 2]
+// Dependencies: [8127, 676, 10407, 14844, 2]
 
-// Module 14852 (route)
+// Module 14843 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -16,7 +16,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.DESIGN_SYSTEM_BUTTON,
   getComponent() {
-    return require(14853) /* ExampleButton */.default;
+    return require(14844) /* ExampleButton */.default;
   }
 };
 const route = createToggle.createRoute(obj);

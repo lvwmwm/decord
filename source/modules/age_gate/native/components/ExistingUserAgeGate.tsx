@@ -1,10 +1,10 @@
-// Module ID: 16462
-// Function ID: 16463
+// Module ID: 16453
+// Function ID: 16454
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 1385, 1922, 1221, 16460, 676, 21, 4342, 1499, 589, 698, 1236, 1993, 38, 15172, 4550, 3943, 15195, 5368, 4338, 16463, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1922, 1221, 16451, 676, 21, 4342, 1499, 589, 698, 1236, 1993, 38, 15163, 4550, 3943, 15186, 5368, 4338, 16454, 4755, 2]
 // Exports: default
 
-// Module 16462 (ExistingUserAgeGate)
+// Module 16453 (ExistingUserAgeGate)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import closure_5 from "t";

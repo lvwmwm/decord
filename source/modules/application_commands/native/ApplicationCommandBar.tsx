@@ -1,10 +1,10 @@
-// Module ID: 11833
-// Function ID: 11834
+// Module ID: 11834
+// Function ID: 11835
 // Name: ApplicationCommandOptionItem
-// Dependencies: [32, 19, 17, 1990, 21, 4342, 712, 5199, 4887, 1236, 1297, 589, 11658, 5308, 4338, 8012, 8902, 11834, 2]
+// Dependencies: [32, 19, 17, 1990, 21, 4342, 712, 5199, 4887, 1236, 1297, 589, 11659, 5308, 4338, 8012, 8902, 11835, 2]
 // Exports: default
 
-// Module 11833 (ApplicationCommandOptionItem)
+// Module 11834 (ApplicationCommandOptionItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "DescriptionEllipsis";

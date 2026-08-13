@@ -1,8 +1,8 @@
-// Module ID: 11697
-// Function ID: 11698
-// Dependencies: [19, 7192, 21, 4342, 712, 589, 7193, 4062, 11042, 4887, 4338, 2]
+// Module ID: 11698
+// Function ID: 11699
+// Dependencies: [19, 7192, 21, 4342, 712, 589, 7193, 4062, 11043, 4887, 4338, 2]
 
-// Module 11697
+// Module 11698
 import importAllResult from "noop";
 import setCooldown from "setCooldown";
 import jsxProd from "jsxProd";

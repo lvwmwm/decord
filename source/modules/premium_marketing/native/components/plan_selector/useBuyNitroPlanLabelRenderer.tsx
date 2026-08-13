@@ -1,10 +1,10 @@
-// Module ID: 12743
-// Function ID: 12744
+// Module ID: 12744
+// Function ID: 12745
 // Name: useBuyNitroPlanLabelRenderer
 // Dependencies: [19, 17, 1994, 1924, 21, 4342, 712, 4065, 1236, 1898, 4338, 4007, 2]
 // Exports: useBuyNitroPlanLabelRenderer
 
-// Module 12743 (useBuyNitroPlanLabelRenderer)
+// Module 12744 (useBuyNitroPlanLabelRenderer)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";

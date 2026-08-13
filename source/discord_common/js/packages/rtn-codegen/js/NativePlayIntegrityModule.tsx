@@ -1,9 +1,9 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16618
+// Function ID: 16619
 // Name: NativePlayIntegrityModule
 // Dependencies: [17, 2]
 
-// Module 16627 (NativePlayIntegrityModule)
+// Module 16618 (NativePlayIntegrityModule)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const value = TurboModuleRegistry.get("NativePlayIntegrityModule");

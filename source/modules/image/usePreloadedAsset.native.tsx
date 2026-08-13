@@ -1,10 +1,10 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16102
+// Function ID: 16103
 // Name: usePreloadedAsset
-// Dependencies: [32, 19, 4334, 589, 500, 16112, 5308, 2]
+// Dependencies: [32, 19, 4334, 589, 500, 16103, 5308, 2]
 // Exports: default
 
-// Module 16111 (usePreloadedAsset)
+// Module 16102 (usePreloadedAsset)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -39,7 +39,7 @@ export default function usePreloadedAsset(arg0) {
   dependencyMap = tmp3;
   let tmp4 = !tmp3;
   if (tmp3) {
-    tmp4 = null != num(16112);
+    tmp4 = null != num(16103);
   }
   callback = tmp4;
   let str = "image";

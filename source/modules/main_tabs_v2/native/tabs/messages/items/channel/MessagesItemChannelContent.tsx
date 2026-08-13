@@ -1,9 +1,9 @@
-// Module ID: 15246
-// Function ID: 15247
+// Module ID: 15237
+// Function ID: 15238
 // Name: MessagesItemChannelContentIcon
-// Dependencies: [19, 17, 4357, 9844, 4541, 21, 4342, 712, 1297, 8636, 8545, 9871, 9774, 1364, 4278, 1367, 589, 14627, 3943, 8985, 15247, 11, 4535, 15248, 4065, 9520, 9521, 4338, 9302, 9181, 9839, 4039, 9687, 1236, 15250, 2]
+// Dependencies: [19, 17, 4357, 9844, 4541, 21, 4342, 712, 1297, 8636, 8545, 9871, 9774, 1364, 4278, 1367, 589, 14618, 3943, 8985, 15238, 11, 4535, 15239, 4065, 9520, 9521, 4338, 9302, 9181, 9839, 4039, 9687, 1236, 15241, 2]
 
-// Module 15246 (MessagesItemChannelContentIcon)
+// Module 15237 (MessagesItemChannelContentIcon)
 import { View } from "useMessagePreview";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
@@ -157,7 +157,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
   let tmpResult = tmp(589);
   const items = [generateOldThreadCutoff];
   const stateFromStores = tmpResult.useStateFromStores(items, () => outer1_4.lastMessageId(channel.id));
-  const tmp12 = importDefault(14627)(channel, { unread: hasUnreadMessages });
+  const tmp12 = importDefault(14618)(channel, { unread: hasUnreadMessages });
   let tmp13 = null != tmp12;
   if (tmp13) {
     let obj2 = tmp3(3943)();
@@ -167,7 +167,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
   if (tmp13) {
     tmp13 = !tmp3(8985)(channel.id);
   }
-  tmpResult = tmp(15247);
+  tmpResult = tmp(15238);
   let tmp3Result = tmp3(11);
   let id = stateFromStores;
   if (stateFromStores == null) {
@@ -180,7 +180,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
     tmp16 = channel.recipients.length > 0;
   }
   const tmp17 = importDefault(4535)(channel);
-  const tmp18 = importDefault(15248)(channel, stateFromStores);
+  const tmp18 = importDefault(15239)(channel, stateFromStores);
   const waveShouldShow = tmp18.waveShouldShow;
   obj = { variant: null, style: null, lineClamp: 1, ellipsizeMode: "tail" };
   const tmp5 = importDefault(1367)("MessagesItemChannelContent");
@@ -326,7 +326,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
       const obj18 = { wavePressed: null, hasNameplate: null };
       obj18[0] = tmp18.wavePressed;
       obj18[1] = hasNameplate;
-      tmp21Result3 = tmp21(tmp3(15250), obj18);
+      tmp21Result3 = tmp21(tmp3(15241), obj18);
     }
     const obj19 = { children: null };
     items9[1] = tmp21Result3;

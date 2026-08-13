@@ -1,10 +1,10 @@
-// Module ID: 13063
-// Function ID: 13064
+// Module ID: 13064
+// Function ID: 13065
 // Name: getUserCalloutRowText
-// Dependencies: [19, 17, 1391, 1922, 13064, 676, 21, 4342, 712, 4338, 4534, 1236, 589, 1370, 1297, 11274, 9712, 4303, 4298, 698, 5804, 10314, 5807, 5414, 4755, 4310, 13065, 4355, 2]
+// Dependencies: [19, 17, 1391, 1922, 13065, 676, 21, 4342, 712, 4338, 4534, 1236, 589, 1370, 1297, 11275, 9712, 4303, 4298, 698, 5804, 10314, 5807, 5414, 4755, 4310, 13066, 4355, 2]
 // Exports: default
 
-// Module 13063 (getUserCalloutRowText)
+// Module 13064 (getUserCalloutRowText)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "CircleCheckIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -104,7 +104,7 @@ function UserCalloutAvatars(userIds) {
       obj[2] = REFRESH_MEDIUM_32;
       let tmp6 = callback(tmp(1297).Avatar, obj);
     } else {
-      tmp6 = callback(tmp(11274).UserIcon, {});
+      tmp6 = callback(tmp(11275).UserIcon, {});
     }
   } else {
     obj = { users: null, size: null };

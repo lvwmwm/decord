@@ -1,10 +1,10 @@
-// Module ID: 14902
-// Function ID: 14903
+// Module ID: 14893
+// Function ID: 14894
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [19, 17, 1922, 676, 1924, 21, 4342, 712, 5768, 5788, 589, 8329, 8308, 8356, 7061, 14647, 14648, 8316, 1933, 698, 13967, 2]
+// Dependencies: [19, 17, 1922, 676, 1924, 21, 4342, 712, 5768, 5788, 589, 8329, 8308, 8356, 7061, 14638, 14639, 8316, 1933, 698, 13958, 2]
 // Exports: default
 
-// Module 14902 (ProfileCustomizationTryItOutSettingScreen)
+// Module 14893 (ProfileCustomizationTryItOutSettingScreen)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "_saveProfileChanges";
 import mergeGuildAvatar from "mergeGuildAvatar";

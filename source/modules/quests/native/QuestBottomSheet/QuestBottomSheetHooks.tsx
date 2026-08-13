@@ -1,10 +1,10 @@
-// Module ID: 14439
-// Function ID: 14440
+// Module ID: 14430
+// Function ID: 14431
 // Name: useWatchTaskPressHandler
-// Dependencies: [5, 19, 5202, 14415, 14436, 4310, 10449, 14440, 9566, 9567, 9571, 7233, 7232, 5205, 7222, 2]
+// Dependencies: [5, 19, 5202, 14406, 14427, 4310, 10451, 14431, 9566, 9567, 9571, 7222, 7233, 5205, 7223, 2]
 // Exports: useMobileActivityPressHandler, useWatchTaskPressHandler
 
-// Module 14439 (useWatchTaskPressHandler)
+// Module 14430 (useWatchTaskPressHandler)
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
 import noop from "noop";
 import { QuestDockMode } from "QuestsExperimentLocations";
@@ -154,9 +154,9 @@ export const useMobileActivityPressHandler = function useMobileActivityPressHand
             captureAdUserAction = captureAdUserAction(9567).captureAdUserAction;
             let obj3 = { type: null, adCreativeType: null, adCreativeId: null, questContentCTA: null, surfaceId: null, sourceQuestContent: null, impressionId: null, questContentPosition: null };
             obj3[0] = outer1_0(9571).AdUserActionType.CLICK_INTERNAL;
-            obj3[1] = outer1_0(7233).AdCreativeType.QUEST;
+            obj3[1] = outer1_0(7222).AdCreativeType.QUEST;
             obj3[2] = closure_0;
-            obj3[3] = outer1_0(7232).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY;
+            obj3[3] = outer1_0(7233).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY;
             obj3[4] = outer1_0(5205).QuestContent.QUEST_BOTTOM_SHEET;
             obj3[5] = c1;
             let id;
@@ -177,7 +177,7 @@ export const useMobileActivityPressHandler = function useMobileActivityPressHand
             const obj4 = { questId: null, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null };
             obj4[0] = closure_0;
             obj4[1] = outer1_0(5205).QuestContent.QUEST_BOTTOM_SHEET;
-            obj4[2] = outer1_0(7232).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY;
+            obj4[2] = outer1_0(7233).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY;
             obj2 = noop;
             let questContentPosition1;
             if (noop != null) {
@@ -191,8 +191,8 @@ export const useMobileActivityPressHandler = function useMobileActivityPressHand
             }
             obj4[4] = id1;
             obj4[5] = c1;
-            const result = captureAdUserAction(7222).trackQuestContentClicked(obj4);
-            const captureAdUserActionResult2 = captureAdUserAction(7222);
+            const result = captureAdUserAction(7223).trackQuestContentClicked(obj4);
+            const captureAdUserActionResult2 = captureAdUserAction(7223);
           }
           dependencyMap = 3;
           obj12 = outer1_0(9566);

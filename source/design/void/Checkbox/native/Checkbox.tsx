@@ -1,10 +1,10 @@
-// Module ID: 13405
-// Function ID: 13406
+// Module ID: 13406
+// Function ID: 13407
 // Name: Checkbox
-// Dependencies: [19, 17, 21, 13406, 13407, 2]
+// Dependencies: [19, 17, 21, 13407, 13408, 2]
 // Exports: default
 
-// Module 13405 (Checkbox)
+// Module 13406 (Checkbox)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -14,10 +14,10 @@ const result = require("jsxProd").fileFinishedImporting("design/void/Checkbox/na
 export default function Checkbox(style) {
   const obj = { style: style.style, source: null };
   if (style.selected) {
-    obj[1] = tmp3(13406);
+    obj[1] = tmp3(13407);
     let tmp5 = obj;
   } else {
-    obj[1] = tmp3(13407);
+    obj[1] = tmp3(13408);
     tmp5 = obj;
   }
   return <Image {...tmp5} />;

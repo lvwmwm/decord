@@ -1,10 +1,10 @@
-// Module ID: 11959
-// Function ID: 11960
+// Module ID: 11960
+// Function ID: 11961
 // Name: useGuildBoostPurchaseHandler
 // Dependencies: [5, 19, 676, 3, 6915, 7419, 6914, 698, 4684, 1236, 5192, 2]
 // Exports: default
 
-// Module 11959 (useGuildBoostPurchaseHandler)
+// Module 11960 (useGuildBoostPurchaseHandler)
 import PaymentFlowStep from "PaymentFlowStep";
 import noop from "noop";
 import { AnalyticEvents } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 13383
+// Function ID: 13384
 // Name: CommunityPill
-// Dependencies: [19, 17, 13383, 1910, 5937, 676, 21, 4342, 712, 501, 1236, 9315, 9311, 10496, 9318, 4887, 4062, 1297, 4338, 7686, 589, 1430, 13384, 13385, 1493, 5819, 1435, 1469, 8440, 4065, 5308, 9313, 12616, 2]
+// Dependencies: [19, 17, 13384, 1910, 5937, 676, 21, 4342, 712, 501, 1236, 9315, 9311, 10498, 9318, 4887, 4062, 1297, 4338, 7686, 589, 1430, 13385, 13386, 1493, 5819, 1435, 1469, 8440, 4065, 5308, 9313, 12617, 2]
 // Exports: default
 
-// Module 13382 (CommunityPill)
+// Module 13383 (CommunityPill)
 import useIsWindowLarge from "useIsWindowLarge";
 import get_ActivityIndicator from "Button";
 import initialize from "initialize";
@@ -30,7 +30,7 @@ function CommunityPill(guildVisibility) {
   if (guildVisibility.guildVisibility === GlobeEarthIcon(9311).GuildVisibility.PUBLIC) {
     const intl2 = tmp2(1236).intl;
     importDefault = intl2.string(tmp2(1236).t.op2cJ6);
-    GlobeEarthIcon = tmp2(10496).GlobeEarthIcon;
+    GlobeEarthIcon = tmp2(10498).GlobeEarthIcon;
     tmp4Result = importDefault(9318);
   }
   let obj = {

@@ -1,10 +1,10 @@
-// Module ID: 11085
-// Function ID: 11086
+// Module ID: 11086
+// Function ID: 11087
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 4342, 712, 5437, 5308, 8186, 1297, 11086, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5437, 5308, 8186, 1297, 11087, 4338, 1236, 2]
 // Exports: default
 
-// Module 11085 (PublicGuildAnnouncementProfile)
+// Module 11086 (PublicGuildAnnouncementProfile)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function PublicGuildAnnouncementProfile() {
   const items = [callback(importDefault(5308), obj), , , ];
   const obj1 = { style: tmp.nameWrapper, children: null };
   const obj2 = { source: null, disableColor: true };
-  obj2[0] = importDefault(11086);
+  obj2[0] = importDefault(11087);
   const items1 = [callback(require(1297) /* Button */.Icon, obj2), ];
   obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

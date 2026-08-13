@@ -1,10 +1,10 @@
-// Module ID: 11382
-// Function ID: 11383
+// Module ID: 11383
+// Function ID: 11384
 // Name: PiggyBankIcon
-// Dependencies: [19, 21, 712, 4064, 11383, 2]
+// Dependencies: [19, 21, 712, 4064, 11384, 2]
 // Exports: PiggyBankIcon
 
-// Module 11382 (PiggyBankIcon)
+// Module 11383 (PiggyBankIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const PiggyBankIcon = function PiggyBankIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11383) /* registerAsset */;
+  obj[0] = require(11384) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

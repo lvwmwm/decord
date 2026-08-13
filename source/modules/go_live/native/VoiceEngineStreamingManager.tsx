@@ -1,7 +1,7 @@
 // Module ID: 4522
 // Function ID: 4523
 // Name: handleThumbnailUpload
-// Dependencies: [5, 17, 4364, 1391, 1979, 676, 4370, 3, 4227, 4034, 709, 530, 4523, 4395, 38, 4524, 4538, 4408, 1493, 10797, 10746, 1236, 2]
+// Dependencies: [5, 17, 4364, 1391, 1979, 676, 4370, 3, 4227, 4034, 709, 530, 4523, 4395, 38, 4524, 4538, 4408, 1493, 10799, 10748, 1236, 2]
 
 // Module 4522 (handleThumbnailUpload)
 import closure_3 from "ME";
@@ -213,7 +213,7 @@ prototype["_initialize"] = function _initialize() {
     logger.log("Broadcast Finished");
     closure_14.stop();
     closure_15.stop();
-    const result = callback(10797).handleCloseScreenshare();
+    const result = callback(10799).handleCloseScreenshare();
   });
   const result2 = voiceEngine.setBroadcastAnnotatedCallback((arg0) => {
     logger.log("Broadcast Annotated:", arg0);
@@ -227,7 +227,7 @@ prototype["_initialize"] = function _initialize() {
   });
   const result3 = voiceEngine.setBroadcastBlockedCallback(() => {
     logger.log("Broadcast Blocked");
-    let obj = callback2(10746);
+    let obj = callback2(10748);
     obj = { alertBody: null };
     const intl = callback(1236).intl;
     obj[0] = intl.string(callback(1236).t.iYQlwv);

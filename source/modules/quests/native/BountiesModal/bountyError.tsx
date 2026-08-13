@@ -1,10 +1,10 @@
-// Module ID: 14337
-// Function ID: 14338
+// Module ID: 14328
+// Function ID: 14329
 // Name: set
-// Dependencies: [14338, 1236, 4062, 8494, 2]
+// Dependencies: [14329, 1236, 4062, 8494, 2]
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 14337 (set)
+// Module 14328 (set)
 import { BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS as closure_3 } from "BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS";
 import set from "dispatcher";
 

@@ -1,10 +1,10 @@
-// Module ID: 12020
-// Function ID: 12021
+// Module ID: 12021
+// Function ID: 12022
 // Name: MuteAppDMActionSheet
-// Dependencies: [19, 17, 21, 4342, 712, 5437, 11668, 9186, 1236, 4338, 4755, 5302, 5297, 4310, 4062, 1297, 8103, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5437, 11669, 9186, 1236, 4338, 4755, 5302, 5297, 4310, 4062, 1297, 8103, 2]
 // Exports: default
 
-// Module 12020 (MuteAppDMActionSheet)
+// Module 12021 (MuteAppDMActionSheet)
 import "noop";
 import { View } from "set";
 import jsxProd from "jsxProd";
@@ -40,7 +40,7 @@ export default function MuteAppDMActionSheet(channel) {
   obj1[1] = require(9186) /* BellIcon */.BellIcon;
   let intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.uAmAiL);
-  obj[1] = callback(channel(11668), obj1);
+  obj[1] = callback(channel(11669), obj1);
   const items = [callback(View, obj), , , , ];
   let obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.headerText, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;

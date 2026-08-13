@@ -1,9 +1,9 @@
-// Module ID: 15161
-// Function ID: 15162
+// Module ID: 15152
+// Function ID: 15153
 // Name: isUnderageAnonymous
 // Dependencies: [1221, 589, 709, 2]
 
-// Module 15161 (isUnderageAnonymous)
+// Module 15152 (isUnderageAnonymous)
 import { AGE_GATE_REGISTER_TIMEOUT_MS } from "result";
 import { Store } from "initialize";
 

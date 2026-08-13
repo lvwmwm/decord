@@ -1,10 +1,10 @@
-// Module ID: 12351
-// Function ID: 12352
+// Module ID: 12352
+// Function ID: 12353
 // Name: ActiveTimestamp
-// Dependencies: [19, 17, 1994, 21, 4342, 712, 12349, 8285, 4338, 589, 8811, 11042, 12352, 1236, 12354, 12356, 12271, 9906, 7771, 687, 2]
+// Dependencies: [19, 17, 1994, 21, 4342, 712, 12350, 8285, 4338, 589, 8811, 11043, 12353, 1236, 12355, 12357, 12272, 9906, 7771, 687, 2]
 // Exports: CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 12351 (ActiveTimestamp)
+// Module 12352 (ActiveTimestamp)
 import set from "set";
 import { View } from "RetryIcon";
 import _getSystemLocale from "_getSystemLocale";
@@ -96,7 +96,7 @@ export const MarathonBadge = function MarathonBadge(entry) {
     let tmp7 = null;
     if (null != text) {
       obj = { Icon: null, iconColor: null, text: null };
-      obj[0] = tmp(11042).TimerIcon;
+      obj[0] = tmp(11043).TimerIcon;
       obj[1] = tmp6;
       obj[2] = text;
       tmp7 = callback(BaseBadge, obj);
@@ -111,7 +111,7 @@ export const NewGameBadge = function NewGameBadge(entry) {
   let tmp3 = null;
   if (obj.isEntryNew(entry.entry)) {
     obj = { Icon: null, text: null, iconColor: null };
-    obj[0] = tmp(12352).NewUserIcon;
+    obj[0] = tmp(12353).NewUserIcon;
     const intl = tmp(1236).intl;
     obj[1] = intl.string(tmp(1236).t.keY6mW);
     obj[2] = importDefault(712).colors.STATUS_POSITIVE;
@@ -127,7 +127,7 @@ export const StreakBadge = function StreakBadge(entry) {
     tmp4 = null;
     if (streakCount >= 2) {
       obj = { Icon: null, text: null, iconColor: null };
-      obj[0] = tmp(12354).FlashIcon;
+      obj[0] = tmp(12355).FlashIcon;
       const intl = tmp(1236).intl;
       obj = { days: null };
       obj[0] = streakCount;
@@ -144,9 +144,9 @@ export const TrendingBadge = function TrendingBadge(entry) {
   let tmp4 = null;
   if (null != trendingType) {
     tmp4 = null;
-    if (trendingType !== tmp(12356).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
+    if (trendingType !== tmp(12357).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
       obj = { Icon: null, text: null, iconColor: null };
-      obj[0] = tmp(12271).FireIcon;
+      obj[0] = tmp(12272).FireIcon;
       const intl = tmp(1236).intl;
       obj[1] = intl.string(tmp(1236).t.TsWCdW);
       obj[2] = importDefault(712).colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY;
@@ -195,7 +195,7 @@ export const CustomStatusTimestampBadge = function CustomStatusTimestampBadge(en
   let obj = { style: tmp.badgeContainer, children: null };
   obj = { style: tmp.icon, color: null };
   obj[1] = importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT;
-  const items = [callback(require(11042) /* TimerIcon */.TimerIcon, obj), callback(ContentTimestamp, { entry: entry.entry })];
+  const items = [callback(require(11043) /* TimerIcon */.TimerIcon, obj), callback(ContentTimestamp, { entry: entry.entry })];
   obj[1] = items;
   return callback2(View, obj);
 };

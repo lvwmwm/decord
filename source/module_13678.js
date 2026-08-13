@@ -1,26 +1,16 @@
 // Module ID: 13678
 // Function ID: 13679
-// Dependencies: [13679, 13692, 13640, 13661]
+// Dependencies: [13679]
 
 // Module 13678
 
-export default (arg0, arg1, arg2) => {
-  const arr = require(13679)(arg1);
-  for (let num = 0; num < arr.length; num = num + 1) {
-    let tmp3 = arr[num];
-    let tmp4 = require;
-    let tmp5 = dependencyMap;
-    let tmp6 = require(13661) /* call */(arg0, tmp3);
-    let tmp7 = num;
-    if (!tmp6) {
-      let tmp8 = arg2;
-      if (arg2) {
-        tmp8 = tmp4(13661)(arg2, tmp3);
-      }
-      tmp6 = tmp8;
-    }
-    if (!tmp6) {
-      let tmpResult = tmp(arg0, tmp3, tmp2(arg1, tmp3));
+export default (arg0) => {
+  let num = 0;
+  {
+    num = 0;
+    if (0 !== tmp) {
+      num = require(13679)(tmp);
     }
   }
+  return num;
 };

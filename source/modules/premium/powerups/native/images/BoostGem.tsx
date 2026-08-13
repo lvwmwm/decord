@@ -1,10 +1,10 @@
-// Module ID: 11945
-// Function ID: 11946
+// Module ID: 11946
+// Function ID: 11947
 // Name: BoostGem
 // Dependencies: [19, 21, 7880, 2]
 // Exports: default
 
-// Module 11945 (BoostGem)
+// Module 11946 (BoostGem)
 import "noop";
 import jsxProd from "jsxProd";
 

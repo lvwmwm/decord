@@ -1,10 +1,10 @@
-// Module ID: 12237
-// Function ID: 12238
+// Module ID: 12238
+// Function ID: 12239
 // Name: ProductDetailsActionSheetSkeleton
 // Dependencies: [19, 17, 21, 4342, 712, 4759, 4083, 4343, 2]
 // Exports: default
 
-// Module 12237 (ProductDetailsActionSheetSkeleton)
+// Module 12238 (ProductDetailsActionSheetSkeleton)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

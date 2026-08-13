@@ -1,9 +1,9 @@
-// Module ID: 13433
-// Function ID: 13434
+// Module ID: 13434
+// Function ID: 13435
 // Name: getStatusSize
-// Dependencies: [19, 17, 676, 1298, 21, 4342, 712, 12371, 13422, 13423, 8341, 8306, 13434, 8340, 13424, 4757, 10684, 10685, 2]
+// Dependencies: [19, 17, 676, 1298, 21, 4342, 712, 12372, 13423, 13424, 8341, 8306, 13435, 8340, 13425, 4757, 10686, 10687, 2]
 
-// Module 13433 (getStatusSize)
+// Module 13434 (getStatusSize)
 import importAllResult from "noop";
 import { View } from "registerAsset";
 import { StatusTypes } from "ME";
@@ -17,22 +17,22 @@ let error;
 let metroImportAll;
 const require = arg1;
 function getStatusSize(arg0) {
-  if (require(12371) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXSMALL !== arg0) {
-    if (tmp(12371).AvatarSizes.XSMALL !== arg0) {
-      if (tmp(12371).AvatarSizes.XSMALL_20 !== arg0) {
-        if (tmp(12371).AvatarSizes.SMALL !== arg0) {
-          if (tmp(12371).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+  if (require(12372) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXSMALL !== arg0) {
+    if (tmp(12372).AvatarSizes.XSMALL !== arg0) {
+      if (tmp(12372).AvatarSizes.XSMALL_20 !== arg0) {
+        if (tmp(12372).AvatarSizes.SMALL !== arg0) {
+          if (tmp(12372).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return closure_7.REFRESH_MEDIUM_10;
           } else {
-            if (tmp(12371).AvatarSizes.NORMAL !== arg0) {
-              if (tmp(12371).AvatarSizes.TABS_22 !== arg0) {
-                if (tmp(12371).AvatarSizes.LARGE !== arg0) {
-                  if (tmp(12371).AvatarSizes.LARGE_48 !== arg0) {
-                    if (tmp(12371).AvatarSizes.XLARGE !== arg0) {
-                      if (tmp(12371).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (tmp(12371).AvatarSizes.XXLARGE !== arg0) {
-                          if (tmp(12371).AvatarSizes.PROFILE !== arg0) {
-                            if (tmp(12371).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (tmp(12372).AvatarSizes.NORMAL !== arg0) {
+              if (tmp(12372).AvatarSizes.TABS_22 !== arg0) {
+                if (tmp(12372).AvatarSizes.LARGE !== arg0) {
+                  if (tmp(12372).AvatarSizes.LARGE_48 !== arg0) {
+                    if (tmp(12372).AvatarSizes.XLARGE !== arg0) {
+                      if (tmp(12372).AvatarSizes.XLARGE_72 !== arg0) {
+                        if (tmp(12372).AvatarSizes.XXLARGE !== arg0) {
+                          if (tmp(12372).AvatarSizes.PROFILE !== arg0) {
+                            if (tmp(12372).AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
@@ -64,10 +64,10 @@ let closure_10 = createCacheKey.createStyles((NORMAL) => {
   obj[3] = obj;
   const obj1 = { position: "absolute", top: null, left: null };
   const decorationSizeForAvatarSize = require(8306) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
-  obj1[1] = -(decorationSizeForAvatarSize - require(12371) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
+  obj1[1] = -(decorationSizeForAvatarSize - require(12372) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
   const obj5 = require(8306) /* getDecorationSizeForAvatarSize */;
   const decorationSizeForAvatarSize1 = require(8306) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
-  obj1[2] = -(decorationSizeForAvatarSize1 - require(12371) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
+  obj1[2] = -(decorationSizeForAvatarSize1 - require(12372) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
   obj[4] = obj1;
   obj[5] = { position: "relative" };
   return obj;

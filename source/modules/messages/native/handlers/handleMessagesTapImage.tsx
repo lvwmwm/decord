@@ -1,10 +1,10 @@
-// Module ID: 10992
-// Function ID: 10993
+// Module ID: 10993
+// Function ID: 10994
 // Name: handleMessagesTapImage
-// Dependencies: [7102, 3998, 1922, 676, 8897, 10990, 694, 8895, 4058, 4572, 8893, 4535, 4805, 2]
+// Dependencies: [7102, 3998, 1922, 676, 8897, 10991, 694, 8895, 4058, 4572, 8893, 4535, 4805, 2]
 // Exports: handleMessagesTapImage
 
-// Module 10992 (handleMessagesTapImage)
+// Module 10993 (handleMessagesTapImage)
 import processMessage from "processMessage";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -214,6 +214,6 @@ export const handleMessagesTapImage = function handleMessagesTapImage(tapImageDa
       tmp12 = message;
     }
   } else {
-    const obj2 = embedId(10990);
+    const obj2 = embedId(10991);
   }
 };

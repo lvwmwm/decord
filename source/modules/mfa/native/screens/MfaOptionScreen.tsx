@@ -1,10 +1,10 @@
-// Module ID: 15070
-// Function ID: 15071
+// Module ID: 15061
+// Function ID: 15062
 // Name: MFAOptionScreen
-// Dependencies: [17, 21, 8521, 15071, 5368, 4753, 4338, 15072, 8551, 2]
+// Dependencies: [17, 21, 8521, 15062, 5368, 4753, 4338, 15063, 8551, 2]
 // Exports: default
 
-// Module 15070 (MFAOptionScreen)
+// Module 15061 (MFAOptionScreen)
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
@@ -27,7 +27,7 @@ export default function MFAOptionScreen(arg0) {
   ({ headerImage, subtitle, screenProps, error } = arg0);
   ({ headerText, input, submit, mfaMethod, content } = arg0);
   const tmp3 = importDefault(8521)();
-  let obj = importDefault(15071);
+  let obj = importDefault(15062);
   const screenStyles = obj.useScreenStyles(tmp3);
   const first = screenProps.mfaChallenge.methods[0];
   let type;
@@ -66,7 +66,7 @@ export default function MFAOptionScreen(arg0) {
   if (tmp10Result1) {
     const obj6 = { props: null };
     obj6[0] = screenProps;
-    tmp10Result1 = tmp10(tmp(15072), obj6);
+    tmp10Result1 = tmp10(tmp(15063), obj6);
   }
   items3[1] = tmp10Result1;
   obj5[1] = items3;

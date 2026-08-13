@@ -1,10 +1,10 @@
-// Module ID: 11527
-// Function ID: 11528
+// Module ID: 11528
+// Function ID: 11529
 // Name: BrokenImage
 // Dependencies: [19, 21, 7880, 2]
 // Exports: default
 
-// Module 11527 (BrokenImage)
+// Module 11528 (BrokenImage)
 import "noop";
 import { jsx } from "jsxProd";
 

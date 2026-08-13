@@ -1,10 +1,10 @@
-// Module ID: 12040
-// Function ID: 12041
+// Module ID: 12041
+// Function ID: 12042
 // Name: UserProfileConfirmCancelFriendRequest
 // Dependencies: [19, 21, 4688, 1236, 4688, 2]
 // Exports: default
 
-// Module 12040 (UserProfileConfirmCancelFriendRequest)
+// Module 12041 (UserProfileConfirmCancelFriendRequest)
 import "noop";
 import jsxProd from "jsxProd";
 

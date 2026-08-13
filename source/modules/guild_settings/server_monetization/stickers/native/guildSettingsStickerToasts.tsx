@@ -1,10 +1,10 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 16739
+// Function ID: 16740
 // Name: showGuildSettingsStickerError
 // Dependencies: [4062, 7838, 1236, 4298, 2]
 // Exports: showGuildSettingsStickerError, showGuildSettingsStickerSuccess
 
-// Module 16748 (showGuildSettingsStickerError)
+// Module 16739 (showGuildSettingsStickerError)
 const result = require("getSystemLocale").fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/guildSettingsStickerToasts.tsx");
 
 export const showGuildSettingsStickerError = function showGuildSettingsStickerError() {

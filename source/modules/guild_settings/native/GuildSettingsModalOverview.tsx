@@ -1,10 +1,10 @@
-// Module ID: 16698
-// Function ID: 16699
+// Module ID: 16689
+// Function ID: 16690
 // Name: componentDidMount
-// Dependencies: [19, 1434, 1391, 1980, 4263, 3989, 3998, 1922, 9071, 676, 21, 4342, 712, 1236, 4072, 4061, 5310, 6051, 9070, 10261, 1403, 5801, 4684, 4773, 7835, 4535, 5807, 5414, 8144, 16490, 5808, 8030, 8029, 15363, 1993, 16699, 1435, 10281, 1297, 8021, 5376, 8012, 4753, 5754, 1499, 589, 2]
+// Dependencies: [19, 1434, 1391, 1980, 4263, 3989, 3998, 1922, 9071, 676, 21, 4342, 712, 1236, 4072, 4061, 5310, 6051, 9070, 10261, 1403, 5801, 4684, 4773, 7835, 4535, 5807, 5414, 8144, 16481, 5808, 8030, 8029, 15354, 1993, 16690, 1435, 10281, 1297, 8021, 5376, 8012, 4753, 5754, 1499, 589, 2]
 // Exports: default
 
-// Module 16698 (componentDidMount)
+// Module 16689 (componentDidMount)
 import { isGuildOwnerWithRequiredMfaLevel as closure_3 } from "GuildNSFWContentLevel";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -402,7 +402,7 @@ prototype["renderSystemMessageSettings"] = function renderSystemMessageSettings(
     hasFlagResult1 = tmp(1403).hasFlag(guild.systemChannelFlags, constants4.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     const tmpResult1 = tmp(1403);
   }
-  let result1 = tmp(16490).isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
+  let result1 = tmp(16481).isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
   if (!result1) {
     result1 = tmp(1403).hasFlag(guild.systemChannelFlags, constants4.SUPPRESS_VOICE_SESSION_NOTIFICATIONS);
     const tmpResult3 = tmp(1403);
@@ -424,7 +424,7 @@ prototype["renderSystemMessageSettings"] = function renderSystemMessageSettings(
   obj1[0] = intl5.string(tmp(1236).t["+f0bXQ"]);
   obj1[1] = !canManage;
   const tmp15 = closure_20;
-  const tmpResult2 = tmp(16490);
+  const tmpResult2 = tmp(16481);
   obj1[2] = !tmp(1403).hasFlag(guild.systemChannelFlags, constants4.SUPPRESS_JOIN_NOTIFICATIONS);
   obj1[3] = self.handleSystemJoinMessages;
   items[1] = callback2(tmp(5808).TableSwitchRow, obj1);
@@ -528,7 +528,7 @@ prototype["renderBoostProgressBar"] = function renderBoostProgressBar() {
   let canManage;
   let guild;
   ({ guild, canManage } = this.props);
-  let obj = require(15363) /* apexExperiment */;
+  let obj = require(15354) /* apexExperiment */;
   let tmp3 = null;
   if (obj.getMobileBoostProgressBarEnabled("GuildSettingsModalOverview")) {
     obj = { title: null, description: null, hasIcons: false, children: null };
@@ -575,7 +575,7 @@ prototype["renderSplash"] = function renderSplash() {
     };
     obj[4] = this.handleSplashChange;
     obj[5] = { width: 1920, height: 1080 };
-    obj[5] = closure_19(importDefault(16699), obj);
+    obj[5] = closure_19(importDefault(16690), obj);
     tmp = tmp2(require(5807) /* TableRowGroupTitle */.TableRowGroup, obj);
     const obj3 = importDefault(1993);
     const tmp5 = importDefault;
@@ -657,7 +657,7 @@ prototype["renderBanner"] = function renderBanner() {
     };
     obj[4] = this.handleBannerChange;
     obj[5] = { width: 960, height: 540 };
-    obj[5] = closure_19(importDefault(16699), obj);
+    obj[5] = closure_19(importDefault(16690), obj);
     return closure_19(require(5807) /* TableRowGroupTitle */.TableRowGroup, obj);
   } else {
     return null;

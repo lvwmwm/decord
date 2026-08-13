@@ -1,10 +1,10 @@
-// Module ID: 16898
-// Function ID: 16899
+// Module ID: 16889
+// Function ID: 16890
 // Name: pickImage
-// Dependencies: [5, 19, 17, 21, 4342, 712, 4901, 1469, 9106, 1236, 5308, 16899, 9721, 4338, 4755, 2]
+// Dependencies: [5, 19, 17, 21, 4342, 712, 4901, 1469, 9106, 1236, 5308, 16890, 9721, 4338, 4755, 2]
 // Exports: default
 
-// Module 16898 (pickImage)
+// Module 16889 (pickImage)
 import Themes from "Themes";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

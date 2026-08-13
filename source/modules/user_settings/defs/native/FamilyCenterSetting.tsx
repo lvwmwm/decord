@@ -1,9 +1,9 @@
-// Module ID: 14185
-// Function ID: 14186
+// Module ID: 14176
+// Function ID: 14177
 // Name: route
-// Dependencies: [19, 676, 21, 14186, 14187, 8007, 712, 1236, 2303, 10407, 4858, 14190, 2]
+// Dependencies: [19, 676, 21, 14177, 14178, 8007, 712, 1236, 2303, 10407, 4858, 14181, 2]
 
-// Module 14185 (route)
+// Module 14176 (route)
 import "noop";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -17,9 +17,9 @@ createToggle = {
   parent: null,
   IconComponent: require("GroupIcon").GroupIcon,
   useTrailing: function useFamilyCenterTrailing() {
-    let obj = require(14186) /* useIsParentalConsentBannerActive */;
+    let obj = require(14177) /* useIsParentalConsentBannerActive */;
     const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-    const parentalConsentWarning = require(14187) /* useParentalConsentWarning */.useParentalConsentWarning();
+    const parentalConsentWarning = require(14178) /* useParentalConsentWarning */.useParentalConsentWarning();
     let daysRemaining;
     if (parentalConsentWarning != null) {
       daysRemaining = parentalConsentWarning.daysRemaining;
@@ -48,7 +48,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.FAMILY_CENTER,
   getComponent() {
-    return require(14190) /* FamilyCenterLoading */.default;
+    return require(14181) /* FamilyCenterLoading */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

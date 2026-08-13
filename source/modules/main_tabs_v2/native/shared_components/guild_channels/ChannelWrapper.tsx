@@ -1,10 +1,10 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 15629
+// Function ID: 15630
 // Name: renderChannelWrapper
 // Dependencies: [19, 17, 21, 9845, 2]
 // Exports: renderChannelWrapper
 
-// Module 15638 (renderChannelWrapper)
+// Module 15629 (renderChannelWrapper)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

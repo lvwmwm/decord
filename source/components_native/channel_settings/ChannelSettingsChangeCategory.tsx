@@ -1,10 +1,10 @@
-// Module ID: 16010
-// Function ID: 16011
+// Module ID: 16001
+// Function ID: 16002
 // Name: shouldComponentUpdate
-// Dependencies: [32, 853, 19, 1391, 5294, 1910, 3989, 3998, 1922, 676, 21, 4342, 712, 4072, 5295, 11843, 3994, 5272, 4683, 1236, 4535, 5414, 5807, 8012, 4753, 4338, 589, 1499, 38, 2]
+// Dependencies: [32, 853, 19, 1391, 5294, 1910, 3989, 3998, 1922, 676, 21, 4342, 712, 4072, 5295, 11844, 3994, 5272, 4683, 1236, 4535, 5414, 5807, 8012, 4753, 4338, 589, 1499, 38, 2]
 // Exports: default
 
-// Module 16010 (shouldComponentUpdate)
+// Module 16001 (shouldComponentUpdate)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";

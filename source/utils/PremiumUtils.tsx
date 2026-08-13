@@ -1,7 +1,7 @@
 // Module ID: 4007
 // Function ID: 4008
 // Name: getPremiumPlanItem
-// Dependencies: [32, 19, 4008, 1922, 4009, 4010, 4012, 4013, 676, 1924, 4021, 505, 3, 4022, 4019, 1945, 38, 1236, 2885, 3943, 4031, 4052, 5896, 4020, 12796, 687, 589, 10380, 4237, 13395, 7063, 1938, 1940, 8748, 2]
+// Dependencies: [32, 19, 4008, 1922, 4009, 4010, 4012, 4013, 676, 1924, 4021, 505, 3, 4022, 4019, 1945, 38, 1236, 2885, 3943, 4031, 4052, 5896, 4020, 12797, 687, 589, 10380, 4237, 13396, 7063, 1938, 1940, 8748, 2]
 // Exports: calculateYearlyPlanDollarSavingsAmount, calculateYearlyPlanMonthlyRateAmount, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, experimentalGetPrice, extendDateWithUnconsumedFractionalPremium, formatInterval, formatIntervalDuration, formatPriceString, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getExternalSubscriptionMethodUrl, getFormattedPlanPriceFromInvoice, getFormattedRateForPlan, getFractionalPremiumUnitsHours, getFractionalPremiumUnitsHoursFromSkuIds, getGuildBoostPlanItem, getInterval, getIntervalForInvoice, getIntervalString, getIntervalStringAsNoun, getItemsFromNewAdditionalPlans, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getItemsWithoutPremiumPlanItem, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanItem, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumType, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBaseSubscriptionCanceled, isBoostOnlySubscription, isDiscountOffer, isNewUser, isNitroLockedState, isPremiumBaseSubscriptionPlan, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumGuildSubscriptionPlan, isPremiumSubscriptionPlan, isPrepaidPaymentSource, isSubscriptionPrepaidPaymentSource, isSubscriptionStatusFailedPayment, isSwitchingPlansDisabled, isTrialOffer, subscriptionHasPremiumGuildPlan, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState, withContextPlanPrices
 
 // Module 4007 (getPremiumPlanItem)
@@ -1619,7 +1619,7 @@ function getUnactivatedFractionalPremiumDurationString(unactivatedUnits) {
       obj[0] = require(1236) /* getSystemLocale */.t.fYmirx;
       obj[1] = require(1236) /* getSystemLocale */.t["C3RO+g"];
       obj[2] = require(1236) /* getSystemLocale */.t.r77oHc;
-      const obj2 = require(12796) /* roundFPCountdownUnits */;
+      const obj2 = require(12797) /* roundFPCountdownUnits */;
       const result = obj2.roundFPCountdownUnits(require(4031) /* resetCache */.diffAsUnits(0, reduced * importDefault(687).Millis.HOUR));
       const obj3 = require(4031) /* resetCache */;
       return require(4031) /* resetCache */.unitsAsStrings(result, obj);
@@ -2493,83 +2493,83 @@ obj = {
   getDaysSincePremium,
   getDaysRemainingUntilSubscriptionCurrentPeriodEnds,
   canUseAnimatedEmojis(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.ANIMATED_EMOJIS, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.ANIMATED_EMOJIS, currentUser);
   },
   canUseEmojisEverywhere(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.EMOJIS_EVERYWHERE, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.EMOJIS_EVERYWHERE, currentUser);
   },
   canUseSoundboardEverywhere(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.SOUNDBOARD_EVERYWHERE, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.SOUNDBOARD_EVERYWHERE, currentUser);
   },
   canUseCustomCallSounds(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.CUSTOM_CALL_SOUNDS, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.CUSTOM_CALL_SOUNDS, currentUser);
   },
   canUploadLargeFiles(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.UPLOAD_LARGE_FILES, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.UPLOAD_LARGE_FILES, currentUser);
   },
   canUseBadges(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.PROFILE_BADGES, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.PROFILE_BADGES, currentUser);
   },
   canUseHighVideoUploadQuality(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
   },
   canEditDiscriminator(stateFromStores) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.CUSTOM_DISCRIMINATOR, stateFromStores);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.CUSTOM_DISCRIMINATOR, stateFromStores);
   },
   hasBoostDiscount(stateFromStores) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.BOOST_DISCOUNT, stateFromStores);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.BOOST_DISCOUNT, stateFromStores);
   },
   canUseAnimatedAvatar(c3) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.ANIMATED_AVATAR, c3);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.ANIMATED_AVATAR, c3);
   },
   canInstallPremiumApplications(isPremiumWithFractionalPremiumOnly) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
   },
   canUseIncreasedMessageLength(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.INCREASED_MESSAGE_LENGTH, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.INCREASED_MESSAGE_LENGTH, currentUser);
   },
   canUseIncreasedGuildCap(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.INCREASED_GUILD_LIMIT, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.INCREASED_GUILD_LIMIT, currentUser);
   },
   canRedeemPremiumPerks(isPremiumWithFractionalPremiumOnly) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
   },
   canUsePremiumProfileCustomization(isPremiumWithFractionalPremiumOnly) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.PROFILE_PREMIUM_FEATURES, isPremiumWithFractionalPremiumOnly);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.PROFILE_PREMIUM_FEATURES, isPremiumWithFractionalPremiumOnly);
   },
   canUsePremiumAppIcons(c0) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.APP_ICONS, c0);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.APP_ICONS, c0);
   },
   canUsePremiumGuildMemberProfile(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
   },
   canUseClientThemes(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.CLIENT_THEMES, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.CLIENT_THEMES, currentUser);
   },
   canStreamQuality(HIGH, user) {
     if (HIGH === obj.HIGH) {
-      let canUserUseResult = require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.STREAM_HIGH_QUALITY, user);
-      const obj2 = require(13395) /* ProductCatalogFeature */;
+      let canUserUseResult = require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.STREAM_HIGH_QUALITY, user);
+      const obj2 = require(13396) /* ProductCatalogFeature */;
     } else {
-      obj = require(13395) /* ProductCatalogFeature */;
-      canUserUseResult = obj.canUserUse(require(13395) /* ProductCatalogFeature */.STREAM_MID_QUALITY, user);
+      obj = require(13396) /* ProductCatalogFeature */;
+      canUserUseResult = obj.canUserUse(require(13396) /* ProductCatalogFeature */.STREAM_MID_QUALITY, user);
     }
     return canUserUseResult;
   },
   canUseQuestOrbMultiplier(perks) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.QUEST_ORB_MULTIPLIER, perks);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.QUEST_ORB_MULTIPLIER, perks);
   },
   hasFreeBoosts(stateFromStores) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.FREE_BOOSTS, stateFromStores);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.FREE_BOOSTS, stateFromStores);
   },
   canUseCustomStickersEverywhere(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.STICKERS_EVERYWHERE, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.STICKERS_EVERYWHERE, currentUser);
   },
   canUseCustomBackgrounds(currentUser) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.VIDEO_FILTER_ASSETS, currentUser);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.VIDEO_FILTER_ASSETS, currentUser);
   },
   canUseCollectibles(user) {
-    return require(13395) /* ProductCatalogFeature */.canUserUse(require(13395) /* ProductCatalogFeature */.COLLECTIBLES, user);
+    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.COLLECTIBLES, user);
   },
   canUseMonthlyOrbs(stateFromStores) {
     let hasPerkResult = require(7063) /* apexExperiment */.getIsCrepeEnabled("canUseMonthlyOrbs");
@@ -2594,8 +2594,8 @@ obj = {
       isCrepeEnabled = tmpResult.hasPerk(perks, tmp(1940).Perk.SHOP_DISCOUNTS);
     }
     if (!isCrepeEnabled) {
-      tmpResult = tmp(13395);
-      isCrepeEnabled = tmpResult.canUserUse(tmp(13395).COLLECTIBLES, currentUser);
+      tmpResult = tmp(13396);
+      isCrepeEnabled = tmpResult.canUserUse(tmp(13396).COLLECTIBLES, currentUser);
     }
     return isCrepeEnabled;
   },
@@ -2610,8 +2610,8 @@ obj = {
       isCrepeEnabled = tmpResult.hasPerk(perks, tmp(1940).Perk.MORE_QUEST_ORBS);
     }
     if (!isCrepeEnabled) {
-      tmpResult = tmp(13395);
-      isCrepeEnabled = tmpResult.canUserUse(tmp(13395).QUEST_ORB_MULTIPLIER, perks);
+      tmpResult = tmp(13396);
+      isCrepeEnabled = tmpResult.canUserUse(tmp(13396).QUEST_ORB_MULTIPLIER, perks);
     }
     return isCrepeEnabled;
   },

@@ -1,8 +1,8 @@
 // Module ID: 13198
 // Function ID: 13199
 // Name: SemVer
-// Dependencies: [13196]
+// Dependencies: [13197]
 
 // Module 13198 (SemVer)
 
-export default (arg0, arg1) => require(13196) /* SemVer */(arg0, arg1, true);
+export default (arg0, arg1, arg2) => require(13197) /* SemVer */(arg1, arg0, arg2);

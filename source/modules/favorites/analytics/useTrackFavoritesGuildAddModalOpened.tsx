@@ -1,10 +1,10 @@
-// Module ID: 12200
-// Function ID: 12201
+// Module ID: 12201
+// Function ID: 12202
 // Name: useTrackFavoritesGuildAddModalOpened
 // Dependencies: [19, 676, 698, 2]
 // Exports: default
 
-// Module 12200 (useTrackFavoritesGuildAddModalOpened)
+// Module 12201 (useTrackFavoritesGuildAddModalOpened)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 

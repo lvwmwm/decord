@@ -1,10 +1,10 @@
-// Module ID: 16800
-// Function ID: 16801
+// Module ID: 16791
+// Function ID: 16792
 // Name: GuildSettingsRoleEditPermission
-// Dependencies: [32, 19, 17, 1434, 3989, 1922, 676, 21, 4342, 712, 3994, 38, 4338, 1236, 4310, 16801, 2007, 15987, 16798, 6035, 698, 506, 15991, 5808, 5807, 1297, 9063, 2]
+// Dependencies: [32, 19, 17, 1434, 3989, 1922, 676, 21, 4342, 712, 3994, 38, 4338, 1236, 4310, 16792, 2007, 15978, 16789, 6035, 698, 506, 15982, 5808, 5807, 1297, 9063, 2]
 // Exports: default
 
-// Module 16800 (GuildSettingsRoleEditPermission)
+// Module 16791 (GuildSettingsRoleEditPermission)
 import _slicedToArray from "_slicedToArray";
 import SearchField from "SearchField";
 import get_ActivityIndicator from "getPermissionOptions";
@@ -101,7 +101,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
   }
   tmp18Result = tmp18(tmp19, { children: tmp18Result });
   canResult = importAll(3994).can(obj);
-  const guildPermissionSpec = role(15987).generateGuildPermissionSpec(guild);
+  const guildPermissionSpec = role(15978).generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {};
     const merged = Object.assign(permissions);
@@ -114,8 +114,8 @@ export default function GuildSettingsRoleEditPermission(guild) {
   });
   const found = mapped.filter((permissions) => permissions.permissions.length > 0);
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
-  const children = [closure_14(role(16798), { role }), , , ];
-  const tmp14Result = role(15987);
+  const children = [closure_14(role(16789), { role }), , , ];
+  const tmp14Result = role(15978);
   const tmp24 = mapped1.length > 0;
   const tmp25 = closure_16;
   const tmp26 = closure_15;

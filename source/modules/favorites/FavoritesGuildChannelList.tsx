@@ -1,10 +1,10 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15470
+// Function ID: 15471
 // Name: getMissingFavoriteThreadIds
-// Dependencies: [32, 19, 1390, 5035, 7033, 5263, 3991, 1395, 5300, 1391, 7034, 3989, 4357, 1979, 4540, 1394, 3988, 1429, 7041, 505, 7035, 1306, 5972, 9759, 12, 15480, 1370, 2]
+// Dependencies: [32, 19, 1390, 5035, 7033, 5263, 3991, 1395, 5300, 1391, 7034, 3989, 4357, 1979, 4540, 1394, 3988, 1429, 7041, 505, 7035, 1306, 5972, 9759, 12, 15471, 1370, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 15479 (getMissingFavoriteThreadIds)
+// Module 15470 (getMissingFavoriteThreadIds)
 import _slicedToArray from "_slicedToArray";
 import sum from "sum";
 import importDefaultResult1 from "_handleConnectionOpen";
@@ -703,7 +703,7 @@ export const useFavoritesGuildChannelList = function useFavoritesGuildChannelLis
       }
     }
   }, items1);
-  hasAccess(15480)();
+  hasAccess(15471)();
   if (hasAccess) {
     memo = tmp3[0];
   }

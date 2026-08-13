@@ -1,10 +1,10 @@
-// Module ID: 14326
-// Function ID: 14327
+// Module ID: 14317
+// Function ID: 14318
 // Name: BountiesScrollPromptFooterContent
-// Dependencies: [19, 17, 4334, 5202, 21, 4342, 712, 4343, 4346, 589, 1628, 4083, 4072, 14327, 14328, 8708, 2]
+// Dependencies: [19, 17, 4334, 5202, 21, 4342, 712, 4343, 4346, 589, 1628, 4083, 4072, 14318, 14319, 8708, 2]
 // Exports: default
 
-// Module 14326 (BountiesScrollPromptFooterContent)
+// Module 14317 (BountiesScrollPromptFooterContent)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -89,7 +89,7 @@ const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedI
 export default function BountiesScrollPromptFooter(visible) {
   visible = visible.visible;
   let merged = Object.assign(visible, Object.create(null));
-  let obj = require(14327) /* apexExperiment */;
+  let obj = require(14318) /* apexExperiment */;
   const isBountiesModalTransitionsRefactorEnabled = obj.useIsBountiesModalTransitionsRefactorEnabled(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   let obj1 = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -101,7 +101,7 @@ export default function BountiesScrollPromptFooter(visible) {
     return callback(closure_12, obj);
   }, []);
   obj = { visible, entranceTiming: require(4346) /* timingNone */.timingStandard, exitTiming: require(4346) /* timingNone */.timingStandard };
-  const visibilityTransition = require(14328) /* useVisibilityTransition */.useVisibilityTransition(obj);
+  const visibilityTransition = require(14319) /* useVisibilityTransition */.useVisibilityTransition(obj);
   let shouldRender = visibilityTransition.shouldRender;
   if (isBountiesModalTransitionsRefactorEnabled) {
     obj = { useReducedMotion: null, item: null, entering: null, exiting: null, renderItem: null };

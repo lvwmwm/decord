@@ -1,9 +1,9 @@
-// Module ID: 13878
-// Function ID: 13879
+// Module ID: 13869
+// Function ID: 13870
 // Name: updateEnabledState
-// Dependencies: [1922, 13524, 13879, 4523, 2]
+// Dependencies: [1922, 13515, 13870, 4523, 2]
 
-// Module 13878 (updateEnabledState)
+// Module 13869 (updateEnabledState)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import "initialize";
 
@@ -16,15 +16,15 @@ function updateEnabledState() {
   }
   let result = true === isStaffResult;
   if (!result) {
-    result = require(13524) /* apexExperiment */.isZoomedExperimentEnabled();
-    const obj2 = require(13524) /* apexExperiment */;
+    result = require(13515) /* apexExperiment */.isZoomedExperimentEnabled();
+    const obj2 = require(13515) /* apexExperiment */;
   }
   if (result) {
     if (!c4) {
       try {
-        importDefault(13879).enableTouchLogging();
+        importDefault(13870).enableTouchLogging();
         c4 = true;
-        const obj3 = importDefault(13879);
+        const obj3 = importDefault(13870);
       } catch (err) {
         c4 = false;
       }
@@ -33,9 +33,9 @@ function updateEnabledState() {
   if (!result) {
     if (c4) {
       try {
-        importDefault(13879).disableTouchLogging();
+        importDefault(13870).disableTouchLogging();
         c4 = false;
-        const obj4 = importDefault(13879);
+        const obj4 = importDefault(13870);
       } catch (err) {
       }
     }
@@ -53,9 +53,9 @@ prototype["_terminate"] = function _terminate() {
   mergeGuildAvatar.removeChangeListener(updateEnabledState);
   if (c4) {
     try {
-      importDefault(13879).disableTouchLogging();
+      importDefault(13870).disableTouchLogging();
       c4 = false;
-      const obj = importDefault(13879);
+      const obj = importDefault(13870);
     } catch (err) {
     }
   }

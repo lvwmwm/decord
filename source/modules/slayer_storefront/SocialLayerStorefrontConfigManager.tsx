@@ -1,9 +1,9 @@
-// Module ID: 13068
-// Function ID: 13069
+// Module ID: 13069
+// Function ID: 13070
 // Name: onPostConnectionOpen
 // Dependencies: [5301, 7802, 2]
 
-// Module 13068 (onPostConnectionOpen)
+// Module 13069 (onPostConnectionOpen)
 import "initialize";
 
 const require = arg1;

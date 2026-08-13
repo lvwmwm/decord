@@ -1,10 +1,10 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 10834
+// Function ID: 10835
 // Name: handleAutomaticGainControlChange
-// Dependencies: [4393, 676, 9205, 10833, 589, 2]
+// Dependencies: [4393, 676, 9205, 10835, 589, 2]
 // Exports: getSelectedNoiseSuppressionOption, handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
 
-// Module 10832 (handleAutomaticGainControlChange)
+// Module 10834 (handleAutomaticGainControlChange)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import ME from "ME";
 

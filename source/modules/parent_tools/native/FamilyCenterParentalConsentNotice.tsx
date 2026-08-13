@@ -1,10 +1,10 @@
-// Module ID: 14194
-// Function ID: 14195
+// Module ID: 14185
+// Function ID: 14186
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 4342, 712, 14186, 14187, 4058, 4338, 14195, 1236, 2303, 2]
+// Dependencies: [19, 21, 4342, 712, 14177, 14178, 4058, 4338, 14186, 1236, 2303, 2]
 // Exports: default
 
-// Module 14194 (FamilyCenterParentalConsentNotice)
+// Module 14185 (FamilyCenterParentalConsentNotice)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -20,9 +20,9 @@ const result = require("createCacheKey").fileFinishedImporting("modules/parent_t
 export default function FamilyCenterParentalConsentNotice() {
   const tmp = createCacheKey();
   const require = tmp;
-  let obj = require(14186) /* useIsParentalConsentBannerActive */;
+  let obj = require(14177) /* useIsParentalConsentBannerActive */;
   const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-  let obj1 = require(14187) /* useParentalConsentWarning */;
+  let obj1 = require(14178) /* useParentalConsentWarning */;
   const parentalConsentWarning = obj1.useParentalConsentWarning();
   let daysRemaining;
   if (parentalConsentWarning != null) {
@@ -55,7 +55,7 @@ export default function FamilyCenterParentalConsentNotice() {
           formatResult = intl.format(tmp9(2303)["5jm+T3"], obj1);
         }
         obj[1] = formatResult;
-        return jsx(importDefault(14195), { style: null, text: null });
+        return jsx(importDefault(14186), { style: null, text: null });
       }
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 15449
-// Function ID: 15450
+// Module ID: 15440
+// Function ID: 15441
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 676, 1388, 21, 4342, 5437, 5308, 15450, 4338, 1236, 4755, 9070, 2]
+// Dependencies: [19, 17, 676, 1388, 21, 4342, 5437, 5308, 15441, 4338, 1236, 4755, 9070, 2]
 // Exports: default
 
-// Module 15449 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 15440 (GuildRoleSubscriptionsUpsellActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { GuildSettingsSections } from "ME";
@@ -32,7 +32,7 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
     children: null
   };
   obj = { source: null };
-  obj[0] = importDefault(15450);
+  obj[0] = importDefault(15441);
   const items = [callback(importDefault(5308), obj), , , , ];
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 12574
-// Function ID: 12575
+// Module ID: 12575
+// Function ID: 12576
 // Name: AddFriendNicknameModal
 // Dependencies: [5, 32, 19, 17, 3998, 1922, 21, 4342, 712, 589, 1236, 4550, 9293, 5864, 4773, 4338, 6036, 4187, 2]
 // Exports: default
 
-// Module 12574 (AddFriendNicknameModal)
+// Module 12575 (AddFriendNicknameModal)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

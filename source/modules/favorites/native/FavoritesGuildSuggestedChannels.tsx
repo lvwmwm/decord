@@ -1,10 +1,10 @@
-// Module ID: 15407
-// Function ID: 15408
+// Module ID: 15398
+// Function ID: 15399
 // Name: PX_8
-// Dependencies: [5, 19, 17, 15408, 676, 9844, 21, 712, 4342, 1367, 15314, 1236, 3047, 5366, 8572, 7351, 9758, 15409, 4755, 2]
+// Dependencies: [5, 19, 17, 15399, 676, 9844, 21, 712, 4342, 1367, 15305, 1236, 3047, 5366, 8572, 7351, 9758, 15400, 4755, 2]
 // Exports: default, getFavoritesSuggestionsNoticeHeight
 
-// Module 15407 (PX_8)
+// Module 15398 (PX_8)
 import closure_3 from "hairlineWidth";
 import set from "set";
 import { View } from "SearchableDestinationListRow";

@@ -1,10 +1,10 @@
-// Module ID: 7228
-// Function ID: 7229
+// Module ID: 7229
+// Function ID: 7230
 // Name: getApplicationIdsByTaskTypes
 // Dependencies: [7206, 5209, 12, 687, 7204, 1370, 2]
 // Exports: formatWatchTaskRemainingTime, formatWatchTaskTime, getActivityApplicationId, getAllApplicationIds, getConsoleApplicationId, getDefaultInGameTask, getDefaultWatchVideoTask, getDesktopApplicationIds, getInGameApplicationId, getPlayActivityApplicationId, getQuestTaskDetails, getQuestTaskTypes, getRemainingTaskTime, getStreamingApplicationId, getThirdPartyTaskDetails, hasAchievementActivityTask, hasAchievementInGameTask, hasActivityTasks, hasPlayActivityTask, hasPlayOnDesktopTask, hasSomeFirstPartyTasks, hasStandaloneGameplayTasks, hasStreamOnDesktopTask, isConsoleQuest, isDesktopOnlyPlayQuest, isInGameQuest, isVideoQuestForMobilePlatformOnly, parseMinutesAndSecondsFromSeconds, shouldUsePlayOnDesktopTask
 
-// Module 7228 (getApplicationIdsByTaskTypes)
+// Module 7229 (getApplicationIdsByTaskTypes)
 import initializeState from "initializeState";
 
 let items5 = arg1;

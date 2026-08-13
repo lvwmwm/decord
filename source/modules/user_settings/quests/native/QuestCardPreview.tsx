@@ -1,10 +1,10 @@
-// Module ID: 14487
-// Function ID: 14488
+// Module ID: 14478
+// Function ID: 14479
 // Name: QuestCardPreview
-// Dependencies: [21, 11225, 5205, 14488, 1236, 14406, 712, 2]
+// Dependencies: [21, 11226, 5205, 14479, 1236, 14397, 712, 2]
 // Exports: QuestCardPreview
 
-// Module 14487 (QuestCardPreview)
+// Module 14478 (QuestCardPreview)
 import { jsx } from "jsxProd";
 
 const result = require("QuestsVisibleMessagesChangedSource").fileFinishedImporting("modules/user_settings/quests/native/QuestCardPreview.tsx");
@@ -24,5 +24,5 @@ export const QuestCardPreview = function QuestCardPreview(quest) {
     obj[1] = outer1_3(quest(outer1_2[5]).QuestCard, obj);
     return outer1_3(outer1_1(outer1_2[3]), obj);
   };
-  return jsx(quest(11225).QuestContentImpressionTrackerNative, { questOrQuests: quest, questContent: null, sourceQuestContent: null, trackGuildAndChannelMetadata: false, children: null });
+  return jsx(quest(11226).QuestContentImpressionTrackerNative, { questOrQuests: quest, questContent: null, sourceQuestContent: null, trackGuildAndChannelMetadata: false, children: null });
 };

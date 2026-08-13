@@ -1,10 +1,10 @@
-// Module ID: 11658
-// Function ID: 11659
+// Module ID: 11659
+// Function ID: 11660
 // Name: getApplicationCommandsIconSource
-// Dependencies: [4681, 4680, 4778, 1435, 11659, 11660, 7030, 1902, 10051, 8405, 2]
+// Dependencies: [4681, 4680, 4778, 1435, 11660, 11661, 7030, 1902, 10051, 8405, 2]
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview
 
-// Module 11658 (getApplicationCommandsIconSource)
+// Module 11659 (getApplicationCommandsIconSource)
 import { DraftType } from "handleChanged";
 import map from "map";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
@@ -18,9 +18,9 @@ export const getApplicationCommandsIconSource = function getApplicationCommandsI
   } else {
     const id = section.id;
     if (BuiltInSectionId.BUILT_IN === id) {
-      return importDefault(1435).makeSource(importDefault(11659));
-    } else if (tmp10.FRECENCY === id) {
       return importDefault(1435).makeSource(importDefault(11660));
+    } else if (tmp10.FRECENCY === id) {
+      return importDefault(1435).makeSource(importDefault(11661));
     } else {
       if (section.type === require(7030) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION) {
         let obj = importDefault(1435);

@@ -1,10 +1,10 @@
-// Module ID: 11404
-// Function ID: 11405
+// Module ID: 11405
+// Function ID: 11406
 // Name: PrimaryActionButton
-// Dependencies: [32, 19, 17, 4013, 676, 1924, 21, 4342, 712, 698, 11405, 4190, 5437, 5436, 1236, 2501, 4338, 8747, 4755, 589, 4007, 6933, 5788, 1297, 1347, 2]
+// Dependencies: [32, 19, 17, 4013, 676, 1924, 21, 4342, 712, 698, 11406, 4190, 5437, 5436, 1236, 2501, 4338, 8747, 4755, 589, 4007, 6933, 5788, 1297, 1347, 2]
 // Exports: default
 
-// Module 11404 (PrimaryActionButton)
+// Module 11405 (PrimaryActionButton)
 import _slicedToArray from "_slicedToArray";
 import initialize from "initialize";
 import noop from "initialize";

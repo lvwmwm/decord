@@ -1,10 +1,10 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12874
+// Function ID: 12875
 // Name: GuildBoostingGuildListItem
-// Dependencies: [19, 17, 1910, 5196, 676, 21, 4342, 712, 4278, 589, 4249, 9106, 6000, 7638, 5819, 4338, 10024, 1236, 12842, 2]
+// Dependencies: [19, 17, 1910, 5196, 676, 21, 4342, 712, 4278, 589, 4249, 9106, 6000, 7638, 5819, 4338, 10024, 1236, 12843, 2]
 // Exports: default
 
-// Module 12873 (GuildBoostingGuildListItem)
+// Module 12874 (GuildBoostingGuildListItem)
 import "set";
 import get_ActivityIndicator from "getSystemLocale";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -68,7 +68,7 @@ function GuildBoostingGuildListItem(guildId) {
     const obj7 = { guild: null, theme: null };
     obj7[0] = stateFromStores;
     obj7[1] = tmp4;
-    items1[2] = callback(tmp2(12842), obj7);
+    items1[2] = callback(tmp2(12843), obj7);
     obj[4] = items1;
     tmp9 = callback2(tmp2Result, obj);
   }

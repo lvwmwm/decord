@@ -1,9 +1,9 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12801
+// Function ID: 12802
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 
-// Module 12800 (apexExperiment)
+// Module 12801 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-07-nitro-floating-subscribe", kind: "user", defaultConfig: { enabled: false, showAfterLastCard: false }, variations: { 0: { enabled: false, showAfterLastCard: false }, 1: { enabled: true, showAfterLastCard: false }, 2: { enabled: true, showAfterLastCard: true } } });

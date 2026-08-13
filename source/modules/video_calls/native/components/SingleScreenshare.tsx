@@ -1,10 +1,10 @@
-// Module ID: 10878
-// Function ID: 10879
+// Module ID: 10880
+// Function ID: 10881
 // Name: SingleScreenshare
-// Dependencies: [19, 9789, 21, 4342, 712, 4771, 10879, 4538, 2]
+// Dependencies: [19, 9789, 21, 4342, 712, 4771, 10881, 4538, 2]
 // Exports: default
 
-// Module 10878 (SingleScreenshare)
+// Module 10880 (SingleScreenshare)
 import "noop";
 import VoiceChatDrawerState from "VoiceChatDrawerState";
 import { jsx } from "jsxProd";
@@ -42,5 +42,5 @@ export default function SingleScreenshare(channel) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   obj[3] = stageStreamContainer;
-  return tmp3(channel(10879), obj);
+  return tmp3(channel(10881), obj);
 };

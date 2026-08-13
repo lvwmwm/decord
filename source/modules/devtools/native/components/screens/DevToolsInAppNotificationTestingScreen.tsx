@@ -1,10 +1,10 @@
-// Module ID: 15125
-// Function ID: 15126
+// Module ID: 15116
+// Function ID: 15117
 // Name: getSelectedGuildChannel
-// Dependencies: [19, 17, 5259, 1395, 3999, 1391, 1910, 1979, 1922, 676, 21, 4342, 712, 4062, 8007, 9818, 9820, 5026, 11, 1628, 1297, 5807, 5414, 13922, 5421, 2]
+// Dependencies: [19, 17, 5259, 1395, 3999, 1391, 1910, 1979, 1922, 676, 21, 4342, 712, 4062, 8007, 9818, 9820, 5026, 11, 1628, 1297, 5807, 5414, 13913, 5421, 2]
 // Exports: default
 
-// Module 15125 (getSelectedGuildChannel)
+// Module 15116 (getSelectedGuildChannel)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import { ScrollView } from "StickerFormat";
 import loadSavedGuildStickers from "loadSavedGuildStickers";

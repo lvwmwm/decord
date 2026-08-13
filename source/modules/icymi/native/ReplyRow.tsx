@@ -1,10 +1,10 @@
-// Module ID: 15706
-// Function ID: 15707
+// Module ID: 15697
+// Function ID: 15698
 // Name: ContentInventoryReplyRow
-// Dependencies: [19, 17, 21, 15649, 712, 4887, 4338, 7700, 2]
+// Dependencies: [19, 17, 21, 15640, 712, 4887, 4338, 7700, 2]
 // Exports: ContentInventoryReplyRow
 
-// Module 15706 (ContentInventoryReplyRow)
+// Module 15697 (ContentInventoryReplyRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

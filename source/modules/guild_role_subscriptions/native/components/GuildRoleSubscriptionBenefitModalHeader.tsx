@@ -1,10 +1,10 @@
-// Module ID: 16924
-// Function ID: 16925
+// Module ID: 16915
+// Function ID: 16916
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 5276, 14537, 5368, 9106, 4338, 1236, 1297, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 5276, 14528, 5368, 9106, 4338, 1236, 1297, 2]
 // Exports: default
 
-// Module 16924 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 16915 (GuildRoleSubscriptionBenefitModalHeader)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -48,7 +48,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   canSave = canSave.canSave;
   ({ title, onSave, onClose, listingId } = canSave);
   const tmp = createCacheKey();
-  let obj = importAll(14537);
+  let obj = importAll(14528);
   obj = { top: true, style: tmp.headerContainer, children: null };
   obj = { style: items, accessibilityRole: "button", onPress: onClose, children: null };
   items = [, ];

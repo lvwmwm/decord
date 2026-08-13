@@ -1,10 +1,10 @@
-// Module ID: 14029
-// Function ID: 14030
+// Module ID: 14020
+// Function ID: 14021
 // Name: UserProfileUpsellCard
 // Dependencies: [19, 17, 5816, 6943, 21, 4342, 712, 1297, 7749, 4338, 4766, 691, 2]
 // Exports: default
 
-// Module 14029 (UserProfileUpsellCard)
+// Module 14020 (UserProfileUpsellCard)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Gradients } from "items";

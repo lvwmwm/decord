@@ -1,10 +1,10 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 11772
+// Function ID: 11773
 // Name: getShortcuts
-// Dependencies: [32, 1391, 1980, 3998, 1979, 4188, 1922, 11772, 11773, 676, 3943, 12, 1236, 4535, 4187, 11770, 11774, 5269, 5200, 7353, 11775, 11776, 2]
+// Dependencies: [32, 1391, 1980, 3998, 1979, 4188, 1922, 11773, 11774, 676, 3943, 12, 1236, 4535, 4187, 11771, 11775, 5269, 5200, 7353, 11776, 11777, 2]
 // Exports: buildCrossDMSearchTokensConfig, getLocalizedAuthorTypeAnswer, getLocalizedHasAnswer, getRandomDateShortcut, isMeAutcompleteAnswer, isSearchFilterTokenType, isValidFilterAnswerForSubmit, rebuildSearchTokenConfigs
 
-// Module 11771 (getShortcuts)
+// Module 11772 (getShortcuts)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -303,7 +303,7 @@ function isValidChannelAutocomplete(token, guildId) {
         flag = flag2;
       }
     }
-    obj2 = replaced(11770);
+    obj2 = replaced(11771);
   }
   return flag;
 }
@@ -330,10 +330,10 @@ function getHasMap() {
   return obj;
 }
 function isValidHasAutocomplete(token) {
-  return require(11774) /* ANSWER_IN_REGEX */.validateForMapWithNegation("has", getHasMap(), token);
+  return require(11775) /* ANSWER_IN_REGEX */.validateForMapWithNegation("has", getHasMap(), token);
 }
 function isValidAuthorTypeAutocomplete(token) {
-  let obj = require(11774) /* ANSWER_IN_REGEX */;
+  let obj = require(11775) /* ANSWER_IN_REGEX */;
   obj = {};
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[intl.string(require(1236) /* getSystemLocale */.t.tPZo4p)] = "user";
@@ -586,7 +586,7 @@ function getChannelAutocompletions(arg0) {
     if ("#" === str2[0]) {
       substr1 = str2.substring(1);
     }
-    let obj2 = _require(11770);
+    let obj2 = _require(11771);
     if (obj2.isGuildLikeSearchContext(searchContext)) {
       const guildId = searchContext.guildId;
       _require = undefined;
@@ -1175,12 +1175,12 @@ export const isValidFilterAnswerForSubmit = function isValidFilterAnswerForSubmi
   } else {
     const _HermesInternal = HermesInternal;
     const items = ["filter:" + trimmed, trimmed];
-    const token = new require(11776) /* getMatch */.Token(items, tmp);
+    const token = new require(11777) /* getMatch */.Token(items, tmp);
     if (SearchTokenTypes.ANSWER_HAS === tmp) {
-      let tmp7Result = tmp7(11774);
+      let tmp7Result = tmp7(11775);
       return tmp7Result.validateForMapWithNegation("has", getHasMap(), token);
     } else if (tmp15.ANSWER_AUTHOR_TYPE === tmp) {
-      tmp7Result = tmp7(11774);
+      tmp7Result = tmp7(11775);
       const obj = {};
       const intl = tmp7(1236).intl;
       obj[intl.string(tmp7(1236).t.tPZo4p)] = "user";

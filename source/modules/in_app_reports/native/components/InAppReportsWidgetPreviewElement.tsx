@@ -1,10 +1,10 @@
-// Module ID: 12706
-// Function ID: 12707
+// Module ID: 12707
+// Function ID: 12708
 // Name: WidgetPreview
-// Dependencies: [19, 17, 21, 4342, 712, 8884, 7137, 12521, 7130, 12408, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 8884, 7137, 12522, 7130, 12409, 4338, 1236, 2]
 // Exports: default
 
-// Module 12706 (WidgetPreview)
+// Module 12707 (WidgetPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function WidgetPreview(arg0) {
     obj[1] = widget;
     const items = [tmp4.card, tmp.card];
     obj[3] = items;
-    let tmp6 = callback(importDefault(12521), obj);
+    let tmp6 = callback(importDefault(12522), obj);
   } else {
     tmp6 = null;
     if (tmp5Result.isGameWidget(widget)) {
@@ -43,7 +43,7 @@ export default function WidgetPreview(arg0) {
         obj[1] = widget;
         const items1 = [tmp4.card, tmp.card];
         obj[3] = items1;
-        tmp6 = callback(tmp5(12408).WidgetSection, obj);
+        tmp6 = callback(tmp5(12409).WidgetSection, obj);
       }
     }
     tmp5Result = tmp5(7130);

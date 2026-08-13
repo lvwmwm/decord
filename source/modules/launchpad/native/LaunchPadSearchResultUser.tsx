@@ -1,9 +1,9 @@
-// Module ID: 16154
-// Function ID: 16155
+// Module ID: 16145
+// Function ID: 16146
 // Name: user
-// Dependencies: [19, 4334, 1994, 1391, 4431, 11422, 4540, 676, 4541, 21, 4342, 712, 16137, 4355, 4761, 589, 11, 7148, 16138, 4887, 16139, 16141, 1297, 8350, 16142, 4187, 9839, 4039, 16144, 15547, 14627, 2]
+// Dependencies: [19, 4334, 1994, 1391, 4431, 11423, 4540, 676, 4541, 21, 4342, 712, 16128, 4355, 4761, 589, 11, 7148, 16129, 4887, 16130, 16132, 1297, 8350, 16133, 4187, 9839, 4039, 16135, 15538, 14618, 2]
 
-// Module 16154 (user)
+// Module 16145 (user)
 import importAllResult from "PressableBase";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import _getSystemLocale from "_getSystemLocale";
@@ -13,7 +13,7 @@ import handleTypingStart from "handleTypingStart";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { StatusTypes } from "ME";
 import { UnreadSetting } from "ReadStateTypes";
-import jsxProd from "module_16141";
+import jsxProd from "module_16132";
 import createCacheKey from "createCacheKey";
 
 let closure_12;
@@ -46,7 +46,7 @@ function UserResult(user) {
     flag2 = false;
   }
   const tmp = callback2();
-  const tmp4 = importDefault(16137)();
+  const tmp4 = importDefault(16128)();
   let items = [user.id];
   const callback = importAllResult.useCallback(() => {
     const items = [user.id];
@@ -82,11 +82,11 @@ function UserResult(user) {
       str = "text-default";
     }
   }
-  tmp2Result = tmp2(16138);
+  tmp2Result = tmp2(16129);
   obj = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items4, children: null };
   items4 = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
   obj = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
-  const items5 = [callback(importDefault(16141), obj), , ];
+  const items5 = [callback(importDefault(16132), obj), , ];
   obj1 = { user, guildId: "e", isMobileOnline: true, isVROnline: null, status: false, streaming: false, style: null, size: null, animate: null, typing: null, autoStatusCutout: null };
   obj1[2] = isMobileOnline;
   obj1[3] = isVROnline;
@@ -115,7 +115,7 @@ function UserResult(user) {
   const tmp16 = closure_14;
   const tmp17 = closure_13;
   const tmp18 = UnreadSetting;
-  const tmp2Result1 = importDefault(16139);
+  const tmp2Result1 = importDefault(16130);
   if (comparator == null) {
     comparator = tmp2(4187).getUserTag(user);
     const tmp2Result3 = tmp2(4187);
@@ -140,8 +140,8 @@ function UserResult(user) {
   obj2[4] = flag;
   obj2[5] = relativeTimestamp;
   obj2[6] = num;
-  obj2[7] = importDefault(16144)({ mentionCount: num, locale: stateFromStores });
-  items5[2] = importDefault(16142)(obj2);
+  obj2[7] = importDefault(16135)({ mentionCount: num, locale: stateFromStores });
+  items5[2] = importDefault(16133)(obj2);
   obj4[0] = items5;
   obj[3] = tmp2Result1(tmp16(tmp17, obj4), { fontScale });
   return tmp2Result(callback(user(4887).PressableHighlight, obj));
@@ -155,16 +155,16 @@ function UserResultWithChannel(arg0) {
   let obj = require(589) /* initialize */;
   const items = [updateUserGuildSettingsInternal];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_9.isChannelMuted(undefined, channel.id));
-  const baseChannelUnreadBadgeState = require(15547) /* useChannelUnreadBadgeState */.useBaseChannelUnreadBadgeState(channel, stateFromStores);
+  const baseChannelUnreadBadgeState = require(15538) /* useChannelUnreadBadgeState */.useBaseChannelUnreadBadgeState(channel, stateFromStores);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
-  const obj2 = require(15547) /* useChannelUnreadBadgeState */;
+  const obj2 = require(15538) /* useChannelUnreadBadgeState */;
   const items1 = [handleTypingStart];
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => outer1_8.isTyping(channel.id, id.id));
   obj = {};
   const obj3 = require(589) /* initialize */;
   const merged = Object.assign(arg0);
   obj.channel = channel;
-  obj.lastMessage = channel(14627)(channel, { unread });
+  obj.lastMessage = channel(14618)(channel, { unread });
   obj.unread = unread;
   obj.mentionCount = mentionCount;
   obj.muted = stateFromStores;

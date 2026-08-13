@@ -1,10 +1,10 @@
-// Module ID: 12076
-// Function ID: 12077
+// Module ID: 12077
+// Function ID: 12078
 // Name: WelcomeChannelRow
-// Dependencies: [19, 17, 5216, 1391, 1910, 3989, 12073, 12077, 676, 1925, 505, 21, 4342, 712, 5276, 589, 4535, 1222, 4310, 5308, 1435, 4002, 4338, 1297, 11253, 8012, 709, 12075, 698, 5804, 12078, 1236, 2]
+// Dependencies: [19, 17, 5216, 1391, 1910, 3989, 12074, 12078, 676, 1925, 505, 21, 4342, 712, 5276, 589, 4535, 1222, 4310, 5308, 1435, 4002, 4338, 1297, 11254, 8012, 709, 12076, 698, 5804, 12079, 1236, 2]
 // Exports: default
 
-// Module 12076 (WelcomeChannelRow)
+// Module 12077 (WelcomeChannelRow)
 import preload from "preload";
 import get_ActivityIndicator from "transitionTo";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -258,8 +258,8 @@ export default function GuildWelcomeActionSheet(guildId) {
       obj1 = { style: null, guild: null, size: null, textScale: 2 };
       obj1[0] = tmp.guildIcon;
       obj1[1] = stateFromStores;
-      obj1[2] = onHide(12078).Sizes.MEDIUM;
-      const items9 = [callback(onHide(12078), obj1), , , , ];
+      obj1[2] = onHide(12079).Sizes.MEDIUM;
+      const items9 = [callback(onHide(12079), obj1), , , , ];
       const obj2 = { style: null, variant: "heading-xl/extrabold", color: "text-default", children: null };
       obj2[0] = tmp.header;
       const intl = tmp2(1236).intl;
@@ -277,7 +277,7 @@ export default function GuildWelcomeActionSheet(guildId) {
       const obj5 = { style: null, variant: "eyebrow", color: "text-default", children: null };
       obj5[0] = tmp.channelsTitle;
       const intl2 = tmp2(1236).intl;
-      const tmp17 = onHide(12078);
+      const tmp17 = onHide(12079);
       obj5[3] = intl2.string(tmp2(1236).t["haj5+i"]).toUpperCase();
       items9[3] = callback(tmp2(4338).Text, obj5);
       let welcome_channels = welcomeScreen.welcome_channels;

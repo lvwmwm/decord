@@ -1,10 +1,10 @@
-// Module ID: 12120
-// Function ID: 12121
+// Module ID: 12121
+// Function ID: 12122
 // Name: AddPhoneScreen
-// Dependencies: [5, 32, 19, 17, 1922, 12094, 21, 4342, 5307, 712, 1499, 4338, 1236, 8567, 8568, 12093, 647, 5861, 38, 8594, 8562, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 12095, 21, 4342, 5307, 712, 1499, 4338, 1236, 8567, 8568, 12094, 647, 5861, 38, 8594, 8562, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 12120 (AddPhoneScreen)
+// Module 12121 (AddPhoneScreen)
 import ContactSyncModes from "ContactSyncModes";
 import _slicedToArray from "_slicedToArray";
 import VerifyPhone from "VerifyPhone";

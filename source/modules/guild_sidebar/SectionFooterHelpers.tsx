@@ -1,10 +1,10 @@
-// Module ID: 15445
-// Function ID: 15446
+// Module ID: 15436
+// Function ID: 15437
 // Name: getSectionFooterConfig
 // Dependencies: [5300, 3989, 7041, 676, 7035, 1913, 2]
 // Exports: getSectionFooterActiveVoiceChannels, getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 15445 (getSectionFooterConfig)
+// Module 15436 (getSectionFooterConfig)
 import incrementVersion from "incrementVersion";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { ChannelListGuildActionRow } from "ChannelListGuildActionRow";

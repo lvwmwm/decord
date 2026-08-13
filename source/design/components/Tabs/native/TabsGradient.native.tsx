@@ -1,10 +1,10 @@
-// Module ID: 12176
-// Function ID: 12177
+// Module ID: 12177
+// Function ID: 12178
 // Name: TabsGradient
 // Dependencies: [19, 676, 21, 4083, 4766, 4342, 4754, 2]
 // Exports: default
 
-// Module 12176 (TabsGradient)
+// Module 12177 (TabsGradient)
 import noop from "noop";
 import { HorizontalGradient } from "ME";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 13975
-// Function ID: 13976
+// Module ID: 13966
+// Function ID: 13967
 // Name: SuggestedColors
-// Dependencies: [32, 19, 17, 21, 4342, 712, 13976, 688, 4083, 13977, 4191, 689, 4310, 5437, 5436, 1236, 4755, 7835, 12, 13978, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 13967, 688, 4083, 13968, 4191, 689, 4310, 5437, 5436, 1236, 4755, 7835, 12, 13969, 2]
 // Exports: default
 
-// Module 13975 (SuggestedColors)
+// Module 13966 (SuggestedColors)
 import _slicedToArray from "_slicedToArray";
 import HSVColorPicker from "HSVColorPicker";
 import { View } from "TextInput";
@@ -78,8 +78,8 @@ export default function CustomColorPickerActionSheet(arg0) {
   let sharedValue2;
   let callback;
   function updateInputHexValueFromHsv(h) {
-    const hsvToRgbWorkletResult = onSelect(13977).hsvToRgbWorklet(h);
-    const obj = onSelect(13977);
+    const hsvToRgbWorkletResult = onSelect(13968).hsvToRgbWorklet(h);
+    const obj = onSelect(13968);
     dependencyMap(onSelect(4191).rgbToHex(hsvToRgbWorkletResult[0], hsvToRgbWorkletResult[1], hsvToRgbWorkletResult[2]));
   }
   let obj = onSelect(688);
@@ -203,7 +203,7 @@ export default function CustomColorPickerActionSheet(arg0) {
       obj.runOnJS(updateInputHexValueFromHsv)(obj);
     }
   };
-  items3[2] = sharedValue2(tmp16(13978), obj5);
+  items3[2] = sharedValue2(tmp16(13969), obj5);
   obj2[1] = items3;
   obj[3] = tmp13(tmp14, obj2);
   return sharedValue2(onSelect(5437).BottomSheet, obj);

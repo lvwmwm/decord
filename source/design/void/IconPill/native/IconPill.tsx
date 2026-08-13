@@ -1,10 +1,10 @@
-// Module ID: 13412
-// Function ID: 13413
+// Module ID: 13413
+// Function ID: 13414
 // Name: IconPill
 // Dependencies: [19, 17, 505, 21, 4342, 712, 4757, 8044, 2]
 // Exports: default
 
-// Module 13412 (IconPill)
+// Module 13413 (IconPill)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

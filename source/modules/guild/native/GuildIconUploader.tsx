@@ -1,9 +1,9 @@
-// Module ID: 11247
-// Function ID: 11248
+// Module ID: 11248
+// Function ID: 11249
 // Name: renderIcon
-// Dependencies: [19, 17, 1302, 21, 4342, 712, 4072, 1363, 11248, 11249, 4338, 1236, 11250, 11251, 4887, 2]
+// Dependencies: [19, 17, 1302, 21, 4342, 712, 4072, 1363, 11249, 11250, 4338, 1236, 11251, 11252, 4887, 2]
 
-// Module 11247 (renderIcon)
+// Module 11248 (renderIcon)
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
 import jsxProd from "jsxProd";
@@ -52,9 +52,9 @@ prototype["renderIcon"] = function renderIcon() {
     ({ guildIcon: arr3[0], emptyGuildIcon: arr3[1] } = tmp);
     obj1[0] = items1;
     if (obj6.isThemeDark(theme.theme)) {
-      let tmp13Result = tmp13(11248);
+      let tmp13Result = tmp13(11249);
     } else {
-      tmp13Result = tmp13(11249);
+      tmp13Result = tmp13(11250);
     }
     obj = { source: null };
     obj[0] = tmp13Result;
@@ -93,14 +93,14 @@ prototype["renderUpload"] = function renderUpload() {
     obj3[0] = iconBackgroundColor;
     items1[1] = obj3;
     obj2[0] = items1;
-    obj2[1] = importDefault(11250);
+    obj2[1] = importDefault(11251);
     obj1[1] = tmp2(closure_4, obj2);
     obj[1] = tmp2(tmp3, obj1);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.emptyIconWrapper;
     const obj4 = { source: null };
-    obj4[0] = importDefault(11251);
+    obj4[0] = importDefault(11252);
     obj[1] = tmp2(closure_4, obj4);
   }
   return closure_6(closure_3, obj);

@@ -1,10 +1,10 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 11900
+// Function ID: 11901
 // Name: GuildProgressHeader
-// Dependencies: [5, 19, 17, 9071, 1980, 11892, 676, 21, 4342, 712, 589, 11897, 4061, 698, 11900, 11901, 9114, 6552, 1236, 9070, 4901, 6180, 4353, 4310, 1231, 6674, 11902, 5788, 6170, 4338, 4755, 4887, 5804, 1297, 2]
+// Dependencies: [5, 19, 17, 9071, 1980, 11893, 676, 21, 4342, 712, 589, 11898, 4061, 698, 11901, 11902, 9114, 6552, 1236, 9070, 4901, 6180, 4353, 4310, 1231, 6674, 11903, 5788, 6170, 4338, 4755, 4887, 5804, 1297, 2]
 // Exports: default
 
-// Module 11899 (GuildProgressHeader)
+// Module 11900 (GuildProgressHeader)
 import closure_3 from "Steps";
 import module_9070 from "module_9070";
 import { View } from "metadata";
@@ -95,8 +95,8 @@ export default function GuildProgressActionSheet(guild) {
               base64 = undefined;
               outer1_1(9070).init(outer1_5);
               const obj6 = outer1_1(9070);
-              outer1_0(11897).hideActionSheet(outer1_0.id);
-              const obj7 = outer1_0(11897);
+              outer1_0(11898).hideActionSheet(outer1_0.id);
+              const obj7 = outer1_0(11898);
               const obj1 = { size: null };
               obj1[0] = outer1_10;
               dependencyMap = 1;

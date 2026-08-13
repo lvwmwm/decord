@@ -1,10 +1,10 @@
-// Module ID: 12693
-// Function ID: 12694
+// Module ID: 12694
+// Function ID: 12695
 // Name: setCoverImageURL
 // Dependencies: [709, 2]
 // Exports: setCoverImageURL
 
-// Module 12693 (setCoverImageURL)
+// Module 12694 (setCoverImageURL)
 const result = require("set").fileFinishedImporting("modules/activities/MessageActivityInviteCoverImageActionCreators.tsx");
 
 export const setCoverImageURL = function setCoverImageURL(arg0) {

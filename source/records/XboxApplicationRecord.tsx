@@ -1,9 +1,9 @@
-// Module ID: 13077
-// Function ID: 13078
+// Module ID: 13078
+// Function ID: 13079
 // Name: getIconURL
 // Dependencies: [4368, 5041, 2]
 
-// Module 13077 (getIconURL)
+// Module 13078 (getIconURL)
 import "createExecutable";
 
 let c2 = "xbox:";

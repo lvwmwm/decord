@@ -1,10 +1,10 @@
-// Module ID: 14222
-// Function ID: 14223
+// Module ID: 14213
+// Function ID: 14214
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 4342, 712, 8326, 14223, 5896, 14224, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 8326, 14214, 5896, 14215, 4338, 2]
 // Exports: default
 
-// Module 14222 (FamilyCenterActivityPurchaseRow)
+// Module 14213 (FamilyCenterActivityPurchaseRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
   ({ total, currency } = arg0);
   const tmp = createCacheKey();
   let product = importDefault(8326)(skuId).product;
-  let obj = require(14223) /* getCollectibleTypeName */;
+  let obj = require(14214) /* getCollectibleTypeName */;
   let tmp6 = product;
   if (product == null) {
     tmp6 = null;
@@ -67,7 +67,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj[1] = product;
     obj[2] = isSubscription;
     obj[3] = subscriptionPlanId;
-    const items = [closure_4(tmp2(14224), obj), ];
+    const items = [closure_4(tmp2(14215), obj), ];
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.textContainer;
     const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };

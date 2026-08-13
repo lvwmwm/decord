@@ -1,9 +1,9 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 16962
+// Function ID: 16963
 // Name: handleRTCConnectionState
 // Dependencies: [5, 4413, 1218, 4393, 4416, 4430, 4399, 4400, 676, 4409, 5301, 4404, 4441, 4408, 698, 4896, 4034, 709, 4405, 3972, 500, 4403, 2]
 
-// Module 16971 (handleRTCConnectionState)
+// Module 16962 (handleRTCConnectionState)
 import initialize from "initialize";
 import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo";
 import fetchFingerprint from "fetchFingerprint";

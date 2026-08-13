@@ -1,10 +1,10 @@
-// Module ID: 15060
-// Function ID: 15061
+// Module ID: 15051
+// Function ID: 15052
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 9920, 4753, 5807, 5414, 4338, 15061, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 9920, 4753, 5807, 5414, 4338, 15052, 2]
 // Exports: default
 
-// Module 15060 (DevToolsProfilingScreen)
+// Module 15051 (DevToolsProfilingScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -91,7 +91,7 @@ export default function DevToolsProfilingScreen() {
     tmp8Result = tmp8(tmp4(5807).TableRowGroup, obj3);
   }
   const obj7 = { spacing: 16, children: null };
-  const items2 = [tmp8Result, closure_5(require(15061) /* DevToolsProfilingUseStateFromStores */.DevToolsProfilingUseStateFromStores, {})];
+  const items2 = [tmp8Result, closure_5(require(15052) /* DevToolsProfilingUseStateFromStores */.DevToolsProfilingUseStateFromStores, {})];
   obj7[1] = items2;
   obj[1] = closure_7(require(4753) /* Stack */.Stack, obj7);
   return closure_5(closure_4, obj);

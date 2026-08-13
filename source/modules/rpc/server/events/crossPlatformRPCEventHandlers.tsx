@@ -1,9 +1,9 @@
-// Module ID: 13851
-// Function ID: 13852
+// Module ID: 13842
+// Function ID: 13843
 // Name: messageEventsValidation
-// Dependencies: [4383, 4365, 1434, 4364, 1391, 1990, 1910, 4393, 4416, 1922, 4361, 4245, 676, 10712, 10714, 10709, 4558, 8951, 12, 13799, 506, 643, 10715, 13852, 13853, 2]
+// Dependencies: [4383, 4365, 1434, 4364, 1391, 1990, 1910, 4393, 4416, 1922, 4361, 4245, 676, 10714, 10716, 10711, 4558, 8951, 12, 13790, 506, 643, 10717, 13843, 13844, 2]
 
-// Module 13851 (messageEventsValidation)
+// Module 13842 (messageEventsValidation)
 import addApplication from "addApplication";
 import initialize from "initialize";
 import { getGuildIconURL } from "GuildNSFWContentLevel";
@@ -26,7 +26,7 @@ let closure_15;
 let closure_16;
 const require = arg1;
 function messageEventsValidation(string) {
-  let obj = importDefault(10712)(string);
+  let obj = importDefault(10714)(string);
   obj = { channel_id: null };
   const requiredResult = obj.required();
   obj[0] = string.string().required();
@@ -42,22 +42,22 @@ function messageEvents(args) {
         let obj = { errorCode: null };
         obj[0] = constants2.INVALID_CHANNEL;
         const _HermesInternal = HermesInternal;
-        let tmp3 = importDefault(10709);
+        let tmp3 = importDefault(10711);
         tmp3 = new tmp3(obj, "Invalid nsfw channel id: " + channel.id);
         throw tmp3;
       }
       tmp13Result = tmp13(4558);
     }
-    obj4 = require(10714) /* recurseReplaceContentTree */;
+    obj4 = require(10716) /* recurseReplaceContentTree */;
     tmp13 = require;
   }
   obj = { errorCode: constants2.INVALID_CHANNEL };
-  let tmp11 = importDefault(10709);
+  let tmp11 = importDefault(10711);
   tmp11 = new tmp11(obj, "Invalid channel id: " + channel_id);
   throw tmp11;
 }
 function speakingEventsValidation(string) {
-  let obj = importDefault(10712)(string);
+  let obj = importDefault(10714)(string);
   obj = { channel_id: null };
   obj[0] = string.string().allow(null);
   return obj.keys(obj);
@@ -69,7 +69,7 @@ function speakingEvents(args) {
       const obj = { errorCode: null };
       obj[0] = constants2.INVALID_CHANNEL;
       const _HermesInternal = HermesInternal;
-      let tmp4 = importDefault(10709);
+      let tmp4 = importDefault(10711);
       tmp4 = new tmp4(obj, "Invalid channel id: " + channel_id);
       throw tmp4;
     }
@@ -81,7 +81,7 @@ let obj = {};
 obj = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10712)(string);
+    let obj = importDefault(10714)(string);
     obj = { guild_id: null };
     const requiredResult = obj.required();
     obj[0] = string.string().required();
@@ -93,7 +93,7 @@ obj = {
       let obj = { errorCode: null };
       obj[0] = constants2.INVALID_GUILD;
       const _HermesInternal = HermesInternal;
-      let tmp3 = importDefault(10709);
+      let tmp3 = importDefault(10711);
       tmp3 = new tmp3(obj, "Invalid guild id: " + guild_id);
       throw tmp3;
     } else {
@@ -128,7 +128,7 @@ const items = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_
 obj1[RPC_SCOPE_CONFIG.ANY] = items;
 obj[0] = obj1;
 obj[1] = function validation(string) {
-  let obj = importDefault(10712)(string);
+  let obj = importDefault(10714)(string);
   obj = { channel_id: null };
   const requiredResult = obj.required();
   obj[0] = string.string().required();
@@ -140,7 +140,7 @@ obj[2] = function handler(args) {
     const obj = { errorCode: null };
     obj[0] = constants2.INVALID_CHANNEL;
     const _HermesInternal = HermesInternal;
-    let tmp3 = importDefault(10709);
+    let tmp3 = importDefault(10711);
     tmp3 = new tmp3(obj, "Invalid channel id: " + channel_id);
     throw tmp3;
   } else {
@@ -172,7 +172,7 @@ const items1 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC
 obj3[RPC_SCOPE_CONFIG.ANY] = items1;
 obj2[0] = obj3;
 obj2[1] = function validation(string) {
-  let obj = importDefault(10712)(string);
+  let obj = importDefault(10714)(string);
   obj = { channel_id: null };
   const requiredResult = obj.required();
   obj[0] = string.string().required();
@@ -184,7 +184,7 @@ obj2[2] = function handler(args) {
     const obj = { errorCode: null };
     obj[0] = constants2.INVALID_CHANNEL;
     const _HermesInternal = HermesInternal;
-    let tmp3 = importDefault(10709);
+    let tmp3 = importDefault(10711);
     tmp3 = new tmp3(obj, "Invalid channel id: " + channel_id);
     throw tmp3;
   } else {
@@ -211,7 +211,7 @@ const items2 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC
 obj5[RPC_SCOPE_CONFIG.ANY] = items2;
 obj4[0] = obj5;
 obj4[1] = function validation(string) {
-  let obj = importDefault(10712)(string);
+  let obj = importDefault(10714)(string);
   obj = { channel_id: null };
   const requiredResult = obj.required();
   obj[0] = string.string().required();
@@ -223,7 +223,7 @@ obj4[2] = function handler(args) {
     const obj = { errorCode: null };
     obj[0] = constants2.INVALID_CHANNEL;
     const _HermesInternal = HermesInternal;
-    let tmp3 = importDefault(10709);
+    let tmp3 = importDefault(10711);
     tmp3 = new tmp3(obj, "Invalid channel id: " + channel_id);
     throw tmp3;
   } else {
@@ -256,12 +256,12 @@ obj6[1] = function handler() {
     let prevState;
     const obj = { state: null, hostname: null, pings: null, average_ping: null, last_ping: null };
     ({ prevState, dispatch } = arg0);
-    obj[0] = callback(10714).getVoiceConnectionState(store.getState());
+    obj[0] = callback(10716).getVoiceConnectionState(store.getState());
     obj[1] = store.getHostname();
     obj[2] = store.getPings();
     obj[3] = store.getAveragePing();
     obj[4] = store.getLastPing();
-    const obj2 = callback(10714);
+    const obj2 = callback(10716);
     if (!obj3.isEqual(obj, prevState)) {
       dispatch(obj);
     }
@@ -363,17 +363,17 @@ obj27[1] = function handler() {
 
 };
 obj[RPCEvents.ACTIVITY_INVITE] = obj27;
-const obj29 = { scope: "Array", handler: "Array" };
+const obj29 = { scope: "Array", handler: 0 };
 obj29[1] = function handler() {
 
 };
 obj[RPCEvents.ACTIVITY_PIP_MODE_UPDATE] = obj29;
-const obj30 = { scope: "Array", handler: "Array" };
+const obj30 = { scope: "Array", handler: 0 };
 obj30[1] = function handler() {
 
 };
 obj[RPCEvents.ACTIVITY_LAYOUT_MODE_UPDATE] = obj30;
-const obj31 = { scope: "Array", handler: "Array" };
+const obj31 = { scope: "Array", handler: 0 };
 obj31[1] = function handler() {
 
 };
@@ -446,7 +446,7 @@ obj[RPCEvents.RELATIONSHIP_UPDATE] = {
     if (obj.has(deserializeResult, tmpResult.deserialize(constants.DISABLE_RELATIONSHIPS_ACCESS))) {
       obj = { errorCode: null };
       obj[0] = constants2.INVALID_PERMISSIONS;
-      const tmp9 = new importDefault(10709)(obj, "Missing Permissions");
+      const tmp9 = new importDefault(10711)(obj, "Missing Permissions");
       throw tmp9;
     }
     tmpResult = tmp(506);
@@ -470,7 +470,7 @@ obj38[1] = function handler() {
       tmp = tmp2;
     }
     if (!tmp) {
-      prevState.dispatch(callback(10715)(obj.currentUser));
+      prevState.dispatch(callback(10717)(obj.currentUser));
     }
     return obj;
   };
@@ -544,7 +544,7 @@ obj44[1] = function handler() {
     }
     let tmp8 = null;
     if (null != application) {
-      tmp8 = callback(13853)(application);
+      tmp8 = callback(13844)(application);
     }
     if (streamerActiveStreamMetadata != null) {
       const sourceName = streamerActiveStreamMetadata.sourceName;
@@ -590,7 +590,7 @@ obj46[1] = function handler() {
   };
 };
 obj[RPCEvents.VIDEO_STATE_UPDATE] = obj46;
-const obj48 = { scope: "Array", handler: "Array" };
+const obj48 = { scope: "Array", handler: 0 };
 obj48[1] = function handler() {
 
 };
@@ -609,7 +609,7 @@ const obj37 = {
     if (obj.has(deserializeResult, tmpResult.deserialize(constants.DISABLE_RELATIONSHIPS_ACCESS))) {
       obj = { errorCode: null };
       obj[0] = constants2.INVALID_PERMISSIONS;
-      const tmp9 = new importDefault(10709)(obj, "Missing Permissions");
+      const tmp9 = new importDefault(10711)(obj, "Missing Permissions");
       throw tmp9;
     }
     tmpResult = tmp(506);

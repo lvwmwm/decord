@@ -1,10 +1,10 @@
-// Module ID: 10802
-// Function ID: 10803
+// Module ID: 10804
+// Function ID: 10805
 // Name: getGoLiveAutoQualityExperimentConfig
 // Dependencies: [1212, 4434, 4401, 1368, 589, 595, 4524, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 10802 (getGoLiveAutoQualityExperimentConfig)
+// Module 10804 (getGoLiveAutoQualityExperimentConfig)
 import initialize from "initialize";
 import ApplicationStreamPresets from "ApplicationStreamPresets";
 import { ApplicationStreamPresets } from "RESOLUTION_720";

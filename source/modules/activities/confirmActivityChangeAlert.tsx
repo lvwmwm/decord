@@ -1,10 +1,10 @@
-// Module ID: 10604
-// Function ID: 10605
+// Module ID: 10606
+// Function ID: 10607
 // Name: confirmActivityChangeModal
 // Dependencies: [3998, 1922, 4535, 4683, 1236, 1903, 2]
 // Exports: default
 
-// Module 10604 (confirmActivityChangeModal)
+// Module 10606 (confirmActivityChangeModal)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

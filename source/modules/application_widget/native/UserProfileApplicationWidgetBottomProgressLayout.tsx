@@ -1,10 +1,10 @@
-// Module ID: 12511
-// Function ID: 12512
+// Module ID: 12512
+// Function ID: 12513
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [19, 17, 21, 4342, 712, 12420, 12508, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 12421, 12509, 4338, 2]
 // Exports: default
 
-// Module 12511 (UserProfileApplicationWidgetBottomProgressLayout)
+// Module 12512 (UserProfileApplicationWidgetBottomProgressLayout)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -45,26 +45,26 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   if (objective != null) {
     image = objective.fields.image;
   }
-  const items = [require(12420) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
+  const items = [require(12421) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  let obj = require(12420) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj = require(12421) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
-  let obj1 = require(12420) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj1 = require(12421) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const singleStringOrSkeleton1 = obj1.resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
   const progress = bottomConfig.components.progress;
   let current;
   if (progress != null) {
     current = progress.fields.current;
   }
-  const items1 = [require(12420) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
+  const items1 = [require(12421) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
   let iter = resolveFieldValue(current, items1);
   let max;
   if (progress != null) {
     max = progress.fields.max;
   }
-  const items2 = [require(12420) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
+  const items2 = [require(12421) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
   let iter2 = resolveFieldValue(max, items2);
-  let tmp3Result = tmp3(12420);
+  let tmp3Result = tmp3(12421);
   obj = { style: tmp.root, children: null };
   const progressPercentage = tmp3Result.resolveProgressPercentage(iter, iter2);
   if (null != fieldValue) {
@@ -78,7 +78,7 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   } else {
     const obj2 = { style: null };
     obj2[0] = tmp.image;
-    tmp14 = callback(tmp3(12508).ImageSkeleton, obj2);
+    tmp14 = callback(tmp3(12509).ImageSkeleton, obj2);
     tmp15 = callback;
   }
   const items3 = [tmp14, ];
@@ -115,7 +115,7 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
     obj10[2] = singleStringOrSkeleton.text;
     let tmp15Result = tmp15(tmp3(4338).Text, obj10);
   } else {
-    tmp15Result = tmp15(tmp3(12508).TextSkeleton, { variant: "heading-sm/medium" });
+    tmp15Result = tmp15(tmp3(12509).TextSkeleton, { variant: "heading-sm/medium" });
   }
   const items6 = [tmp15Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
@@ -123,7 +123,7 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
     obj11[3] = singleStringOrSkeleton1.text;
     tmp15Result = tmp15(tmp3(4338).Text, obj11);
   } else {
-    tmp15Result = tmp15(tmp3(12508).TextSkeleton, { variant: "text-xs/medium" });
+    tmp15Result = tmp15(tmp3(12509).TextSkeleton, { variant: "text-xs/medium" });
   }
   items6[1] = tmp15Result;
   obj9[1] = items6;
@@ -137,14 +137,14 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
       str = "/";
       let iter2Result = iter2(iter.value, "/", iter);
     } else {
-      tmp3Result = tmp3(12420);
+      tmp3Result = tmp3(12421);
       const _HermesInternal = HermesInternal;
       iter2Result = "" + tmp3Result.decimalToClampedPercentage(iter.value) + "%";
     }
     obj12[3] = iter2Result;
     tmp15(tmp3(4338).Text, obj12);
   } else {
-    items7[1] = tmp15(tmp3(12508).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+    items7[1] = tmp15(tmp3(12509).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
     obj8[1] = items7;
     items5[1] = tmp11(tmp12, obj8);
     obj3[1] = items5;

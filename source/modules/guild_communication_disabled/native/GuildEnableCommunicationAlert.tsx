@@ -1,10 +1,10 @@
-// Module ID: 11293
-// Function ID: 11294
+// Module ID: 11294
+// Function ID: 11295
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1922, 1992, 676, 21, 4342, 8129, 4771, 698, 11292, 4062, 1236, 9922, 4773, 4338, 4534, 9732, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 1992, 676, 21, 4342, 8129, 4771, 698, 11293, 4062, 1236, 9922, 4773, 4338, 4534, 9732, 2]
 // Exports: default
 
-// Module 11293 (GuildEnableCommunicationAlert)
+// Module 11294 (GuildEnableCommunicationAlert)
 import closure_3 from "getFriendlyDurationString";
 import _slicedToArray from "_slicedToArray";
 import "componentDidMount";
@@ -65,7 +65,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
               return obj;
             } else {
               let closure_0 = tmp4;
-              let obj1 = v0(11292);
+              let obj1 = v0(11293);
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };

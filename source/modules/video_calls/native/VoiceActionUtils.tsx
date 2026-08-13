@@ -1,10 +1,10 @@
-// Module ID: 10842
-// Function ID: 10843
+// Module ID: 10844
+// Function ID: 10845
 // Name: NOOP
 // Dependencies: [9198, 2]
 // Exports: createDeafHandler, createMuteHandler
 
-// Module 10842 (NOOP)
+// Module 10844 (NOOP)
 function NOOP() {
 
 }

@@ -1,10 +1,10 @@
-// Module ID: 11103
-// Function ID: 11104
+// Module ID: 11104
+// Function ID: 11105
 // Name: handleEdit
-// Dependencies: [19, 7186, 3999, 7187, 7342, 1922, 11104, 676, 1398, 7108, 21, 4187, 11, 11105, 9949, 5788, 698, 6965, 4683, 1236, 11106, 11109, 11110, 1351, 7338, 11112, 7269, 4197, 1222, 4566, 5796, 4061, 4527, 4355, 11113, 4532, 1486, 9796, 8895, 8981, 8984, 5950, 4310, 11114, 2007, 5947, 8065, 2403, 5935, 4353, 8832, 4539, 8662, 11118, 1231, 11119, 1954, 11155, 11160, 11161, 11165, 11172, 2]
+// Dependencies: [19, 7186, 3999, 7187, 7342, 1922, 11105, 676, 1398, 7108, 21, 4187, 11, 11106, 9949, 5788, 698, 6965, 4683, 1236, 11107, 11110, 11111, 1351, 7338, 11113, 7269, 4197, 1222, 4566, 5796, 4061, 4527, 4355, 11114, 4532, 1486, 9796, 8895, 8981, 8984, 5950, 4310, 11115, 2007, 5947, 8065, 2403, 5935, 4353, 8832, 4539, 8662, 11119, 1231, 11120, 1954, 11156, 11161, 11162, 11166, 11173, 2]
 // Exports: getContextBarCancelReason, handleCopyId, handleCopyMessageLink, handleCreateThread, longPressMessageOptionHandler
 
-// Module 11103 (handleEdit)
+// Module 11104 (handleEdit)
 import "getSystemLocale";
 import getState from "getState";
 import { isMessageComponentsV2 } from "hasFlag";
@@ -36,8 +36,8 @@ function handleEdit(id, isForumPost, current, source) {
     let obj = importDefault(11);
     if (isForumPost.id === obj.castMessageIdAsChannelId(id.id)) {
       if (null != isForumPost.parent_id) {
-        require(11105) /* createPendingReply */.deletePendingReply(isForumPost.id);
-        const obj7 = require(11105) /* createPendingReply */;
+        require(11106) /* createPendingReply */.deletePendingReply(isForumPost.id);
+        const obj7 = require(11106) /* createPendingReply */;
         obj = { guildId: null, parentChannelId: null, threadId: null, messageId: null, isEdit: true, analyticsLocations: null, analyticsLocationObject: null };
         ({ guild_id: obj9[0], parent_id: obj9[1], id: obj9[2] } = isForumPost);
         obj[3] = id.id;
@@ -97,7 +97,7 @@ function handleEdit(id, isForumPost, current, source) {
     importDefault(698).track(constants.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj2);
     const obj11 = importDefault(698);
   }
-  obj1 = require(11105) /* createPendingReply */;
+  obj1 = require(11106) /* createPendingReply */;
   obj1.deletePendingReply(isForumPost.id);
   obj2 = importDefault(6965);
   const result1 = obj2.startEditMessageRecord(isForumPost.id, id, source);

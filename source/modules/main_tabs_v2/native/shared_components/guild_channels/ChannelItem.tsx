@@ -1,10 +1,10 @@
-// Module ID: 15827
-// Function ID: 15828
+// Module ID: 15818
+// Function ID: 15819
 // Name: LaunchpadChannelIcon
-// Dependencies: [19, 17, 1910, 3998, 1922, 4541, 21, 9082, 1236, 4342, 712, 9845, 589, 5819, 11632, 7148, 15638, 9712, 15825, 4535, 2]
+// Dependencies: [19, 17, 1910, 3998, 1922, 4541, 21, 9082, 1236, 4342, 712, 9845, 589, 5819, 11633, 7148, 15629, 9712, 15816, 4535, 2]
 // Exports: getChannelAccessibilityProps, renderChannelItem
 
-// Module 15827 (LaunchpadChannelIcon)
+// Module 15818 (LaunchpadChannelIcon)
 import "computeChannelName";
 import { View } from "FacepileGroupDMAvatar";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -48,7 +48,7 @@ function LaunchpadChannelIcon(channel) {
   }
   const obj2 = { children: null };
   obj1[2] = num;
-  items1[1] = tmp8(channel(11632).ChannelIcon, obj1);
+  items1[1] = tmp8(channel(11633).ChannelIcon, obj1);
   obj2[0] = items1;
   return tmp6(tmp7, obj2);
 }
@@ -139,7 +139,7 @@ export const renderChannelItem = function renderChannelItem(unread) {
   }
   let obj1 = require(9845) /* getLayoutStyles */;
   const layoutStyles = obj1.getLayoutStyles(layout);
-  let obj2 = require(15638) /* renderChannelWrapper */;
+  let obj2 = require(15629) /* renderChannelWrapper */;
   const children = [unreadBadge, , , ];
   obj = { style: null, children: null };
   obj = { position: "relative", borderRadius: importDefault(712).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
@@ -159,7 +159,7 @@ export const renderChannelItem = function renderChannelItem(unread) {
   }
   obj[1] = tmp10Result;
   children[1] = closure_8(View, obj);
-  let tmp5Result = tmp5(15825);
+  let tmp5Result = tmp5(15816);
   const obj3 = { layout, name: null, subtitle: null, unread: null, resolvedUnreadSetting: null, muted: null, lastMessageTimestampString: null, channel: null, locked: null, connected: null, live: null, mentionCount: null, mentionBadge: null, isSubscriptionGated: null, needSubscriptionToAccess: null };
   if (channelName == null) {
     tmp5Result = tmp5(4535);

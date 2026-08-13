@@ -1,13 +1,13 @@
-// Module ID: 11721
-// Function ID: 11722
+// Module ID: 11722
+// Function ID: 11723
 // Name: renderChannelBadge
-// Dependencies: [2, 11722, 11723, 11725, 11726, 11727]
+// Dependencies: [2, 11723, 11724, 11726, 11727, 11728]
 
-// Module 11721 (renderChannelBadge)
-const result = require("module_11723").fileFinishedImporting("modules/channel_list_v2/native/components/index.tsx");
+// Module 11722 (renderChannelBadge)
+const result = require("module_11724").fileFinishedImporting("modules/channel_list_v2/native/components/index.tsx");
 
 export const renderChannelBadge = require("renderChannelBadge").renderChannelBadge;
-export const VocalChannelJoinButton = require("module_11723");
+export const VocalChannelJoinButton = require("module_11724");
 export const Divider = require("Divider");
 export const DIVIDER_MARGIN_BOTTOM = require("Divider").DIVIDER_MARGIN_BOTTOM;
 export const DIVIDER_MARGIN_TOP = require("Divider").DIVIDER_MARGIN_TOP;

@@ -1,10 +1,10 @@
-// Module ID: 12410
-// Function ID: 12411
+// Module ID: 12411
+// Function ID: 12412
 // Name: WidgetGameTagIconRole
 // Dependencies: [7139, 1236, 2]
 // Exports: buildWidgetGameTagMetadata
 
-// Module 12410 (WidgetGameTagIconRole)
+// Module 12411 (WidgetGameTagIconRole)
 let obj = { RIBBON: "ribbon", THUMBS_UP: "thumbsUp", THUMBS_DOWN: "thumbsDown", FRIENDS: "friends" };
 obj = {
   getText() {

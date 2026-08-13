@@ -1,10 +1,10 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12879
+// Function ID: 12880
 // Name: usePremiumPlanSelectStore
 // Dependencies: [644, 705, 2]
 // Exports: setIsPurchasing
 
-// Module 12878 (usePremiumPlanSelectStore)
+// Module 12879 (usePremiumPlanSelectStore)
 import keys from "keys";
 
 const obj = keys.create(() => ({ isPurchasing: false, purchasingProductId: null }));

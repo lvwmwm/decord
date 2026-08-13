@@ -1,10 +1,10 @@
-// Module ID: 10536
-// Function ID: 10537
+// Module ID: 10538
+// Function ID: 10539
 // Name: CrunchyrollLinkDiscordConsent
-// Dependencies: [19, 10531, 676, 8950, 21, 1499, 10467, 2]
+// Dependencies: [19, 10533, 676, 8950, 21, 1499, 10469, 2]
 // Exports: default
 
-// Module 10536 (CrunchyrollLinkDiscordConsent)
+// Module 10538 (CrunchyrollLinkDiscordConsent)
 import noop from "noop";
 import { CrunchyrollLinkModalScenes as closure_3 } from "CrunchyrollLinkModalScenes";
 import { PlatformTypes } from "ME";
@@ -33,5 +33,5 @@ export default function CrunchyrollLinkDiscordConsent(arg0) {
     navigation.push(outer1_3.ERROR);
   }, items1);
   obj = { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId: closure_5, scopes: closure_6, onNext: callback, onError: callback1 };
-  return jsx(navigation(10467).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId: closure_5, scopes: closure_6, onNext: callback, onError: callback1 });
+  return jsx(navigation(10469).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId: closure_5, scopes: closure_6, onNext: callback, onError: callback1 });
 };

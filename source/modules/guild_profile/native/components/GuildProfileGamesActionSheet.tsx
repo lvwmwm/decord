@@ -1,10 +1,10 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12276
+// Function ID: 12277
 // Name: GuildProfileGameRow
-// Dependencies: [19, 17, 21, 9322, 9333, 5414, 12269, 4342, 12273, 12274, 7449, 1236, 4310, 9303, 2007, 5437, 5439, 5807, 2]
+// Dependencies: [19, 17, 21, 9322, 9333, 5414, 12270, 4342, 12274, 12275, 7449, 1236, 4310, 9303, 2007, 5437, 5439, 5807, 2]
 // Exports: default
 
-// Module 12275 (GuildProfileGameRow)
+// Module 12276 (GuildProfileGameRow)
 import noop from "noop";
 import { View } from "TableRowGroupTitle";
 import { jsx } from "jsxProd";
@@ -25,7 +25,7 @@ function GuildProfileGameRow(activityLevel) {
     clickable = null != tmp3Result;
   }
   obj = { icon: null, label: null, arrow: null, onPress: null };
-  obj[0] = jsx(importDefault(12269), { game, activityLevel: activityLevel.activityLevel });
+  obj[0] = jsx(importDefault(12270), { game, activityLevel: activityLevel.activityLevel });
   obj[1] = game.name;
   obj[2] = clickable;
   let fn;

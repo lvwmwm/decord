@@ -1,10 +1,10 @@
-// Module ID: 15241
-// Function ID: 15242
+// Module ID: 15232
+// Function ID: 15233
 // Name: getMessagesItemChannelSizes
-// Dependencies: [32, 19, 1391, 21, 9502, 712, 15242, 589, 15251, 7790, 15252, 2]
+// Dependencies: [32, 19, 1391, 21, 9502, 712, 15233, 589, 15242, 7790, 15243, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 15241 (getMessagesItemChannelSizes)
+// Module 15232 (getMessagesItemChannelSizes)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -33,12 +33,12 @@ let closure_7 = importAllResult.memo(function MessagesItemChannel(arg0) {
     obj[1] = placeholderHeight;
     obj[2] = isPressed;
     obj[3] = setIsPressed;
-    let tmp5 = jsx(importDefault(15242), { channel: null, height: null, isPressed: null, setIsPressed: null });
+    let tmp5 = jsx(importDefault(15233), { channel: null, height: null, isPressed: null, setIsPressed: null });
   } else {
     obj = { height: null, row: null };
     obj[0] = placeholderHeight;
     obj[1] = row;
-    tmp5 = jsx(importDefault(15251), { height: null, row: null });
+    tmp5 = jsx(importDefault(15242), { height: null, row: null });
   }
   return tmp5;
 });
@@ -68,7 +68,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
 const memoResult2 = importAllResult.memo((arg0) => {
   let tmp2;
   let tmp3;
-  let obj = require(15252) /* toNativeHorizontalOffset */;
+  let obj = require(15243) /* toNativeHorizontalOffset */;
   obj = {};
   [tmp2, tmp3] = callback(obj.useRecyclingState(false), 2);
   const merged = Object.assign(arg0);
@@ -86,7 +86,7 @@ export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(
   const PX_32 = importDefault(712).space.PX_32;
   obj = { avatar: PX_32, height: null, label: null, labelSecondary: null, padding: null };
   const sum = Math.max(PX_32, scaleTextLineHeightResult + scaleTextLineHeightResult1) + PX_16;
-  obj[1] = sum + require(15242) /* MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING */.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
+  obj[1] = sum + require(15233) /* MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING */.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
   obj[2] = scaleTextLineHeightResult;
   obj[3] = scaleTextLineHeightResult1;
   obj[4] = PX_16;

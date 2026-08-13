@@ -1,10 +1,10 @@
-// Module ID: 16548
-// Function ID: 16549
+// Module ID: 16539
+// Function ID: 16540
 // Name: getData
-// Dependencies: [5, 32, 19, 1218, 1391, 4681, 1990, 4165, 4680, 13738, 8264, 676, 8263, 1954, 1435, 10566, 5915, 589, 5756, 11, 709, 8405, 1236, 38, 4566, 7346, 8268, 4893, 530, 687, 2]
+// Dependencies: [5, 32, 19, 1218, 1391, 4681, 1990, 4165, 4680, 13729, 8264, 676, 8263, 1954, 1435, 10568, 5915, 589, 5756, 11, 709, 8405, 1236, 38, 4566, 7346, 8268, 4893, 530, 687, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16548 (getData)
+// Module 16539 (getData)
 import handleChanged from "handleChanged";
 import _slicedToArray from "_slicedToArray";
 import DISCORD_EPOCH from "DISCORD_EPOCH";

@@ -1,10 +1,10 @@
-// Module ID: 11406
-// Function ID: 11407
+// Module ID: 11407
+// Function ID: 11408
 // Name: handleSharedClientThemeViewed
 // Dependencies: [9399, 503, 2]
 // Exports: handleSharedClientThemeViewed
 
-// Module 11406 (handleSharedClientThemeViewed)
+// Module 11407 (handleSharedClientThemeViewed)
 const result = require("set").fileFinishedImporting("modules/client_themes/native/chat/sharedClientThemeViewed.tsx");
 
 export const handleSharedClientThemeViewed = function handleSharedClientThemeViewed() {

@@ -1,10 +1,10 @@
-// Module ID: 10833
-// Function ID: 10834
+// Module ID: 10835
+// Function ID: 10836
 // Name: getNoiseCancellationDeferredToSystem
-// Dependencies: [4393, 10834, 589, 2]
+// Dependencies: [4393, 10836, 589, 2]
 // Exports: getNoiseCancellationDeferredToSystem, useNoiseCancellationDeferredToSystem
 
-// Module 10833 (getNoiseCancellationDeferredToSystem)
+// Module 10835 (getNoiseCancellationDeferredToSystem)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 
 const require = arg1;
@@ -16,7 +16,7 @@ export const getNoiseCancellationDeferredToSystem = function getNoiseCancellatio
     obj = _detectH265HardwareDecode;
   }
   const systemMicrophoneMode = obj.getSystemMicrophoneMode();
-  return !importDefault(10834)(true, systemMicrophoneMode);
+  return !importDefault(10836)(true, systemMicrophoneMode);
 };
 export const useNoiseCancellationDeferredToSystem = function useNoiseCancellationDeferredToSystem() {
   const items = [_detectH265HardwareDecode];

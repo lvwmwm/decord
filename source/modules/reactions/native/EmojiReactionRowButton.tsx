@@ -1,10 +1,10 @@
-// Module ID: 11177
-// Function ID: 11178
+// Module ID: 11178
+// Function ID: 11179
 // Name: EmojiPickerRowButton
 // Dependencies: [19, 17, 1925, 21, 4342, 712, 1363, 4887, 1236, 7700, 1367, 5400, 1435, 4005, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 11177 (EmojiPickerRowButton)
+// Module 11178 (EmojiPickerRowButton)
 import noop from "noop";
 import { Platform } from "get ActivityIndicator";
 import { EMOJI_URL_BASE_SIZE } from "set";

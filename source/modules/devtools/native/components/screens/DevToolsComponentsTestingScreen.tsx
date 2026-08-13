@@ -1,10 +1,10 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15101
+// Function ID: 15102
 // Name: Select
-// Dependencies: [32, 19, 17, 1979, 21, 4342, 712, 4566, 1954, 8263, 5416, 4338, 15111, 15114, 4755, 4753, 15115, 709, 2]
+// Dependencies: [32, 19, 17, 1979, 21, 4342, 712, 4566, 1954, 8263, 5416, 4338, 15102, 15105, 4755, 4753, 15106, 709, 2]
 // Exports: default
 
-// Module 15110 (Select)
+// Module 15101 (Select)
 import importDefaultResult from "_slicedToArray";
 import noop from "noop";
 import { ScrollView } from "dispatcher";
@@ -40,14 +40,14 @@ function Select(children) {
   if (obj.type === _require(1954).ComponentType.STRING_SELECT) {
     obj = {};
     const merged1 = Object.assign(obj);
-    let tmp7Result = tmp7(importDefault(15111), obj);
-    const tmp15 = importDefault(15111);
+    let tmp7Result = tmp7(importDefault(15102), obj);
+    const tmp15 = importDefault(15102);
   } else {
     obj1 = {};
     const merged2 = Object.assign(obj);
     obj1.type = obj.type;
-    tmp7Result = tmp7(importDefault(15114), obj1);
-    const tmp9 = importDefault(15114);
+    tmp7Result = tmp7(importDefault(15105), obj1);
+    const tmp9 = importDefault(15105);
   }
   items[1] = tmp7Result;
   type = undefined;
@@ -113,9 +113,9 @@ export default function DevToolsComponentsTestingScreen() {
   obj1[2] = closure_10;
   obj[0] = obj1;
   const merged = Object.assign(closure_12);
-  const items1 = [callback(importDefault(15115), {}), , , , , ];
+  const items1 = [callback(importDefault(15106), {}), , , , , ];
   const obj2 = {};
-  const tmp2 = importDefault(15115);
+  const tmp2 = importDefault(15106);
   items1[1] = callback(Select, { title: "String Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.STRING_SELECT });
   const obj3 = { title: "String Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.STRING_SELECT };
   items1[2] = callback(Select, { title: "User Select", type: require(1954) /* PermissionOverwriteType */.ComponentType.USER_SELECT });

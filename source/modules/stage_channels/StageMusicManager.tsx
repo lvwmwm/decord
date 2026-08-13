@@ -1,10 +1,10 @@
-// Module ID: 10756
-// Function ID: 10757
+// Module ID: 10758
+// Function ID: 10759
 // Name: checkVoiceStates
-// Dependencies: [1391, 4393, 1979, 4361, 5177, 1396, 10754, 9829, 589, 5189, 5183, 5301, 2]
+// Dependencies: [1391, 4393, 1979, 4361, 5177, 1396, 10756, 9829, 589, 5189, 5183, 5301, 2]
 // Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton
 
-// Module 10756 (checkVoiceStates)
+// Module 10758 (checkVoiceStates)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import importDefaultResult from "_detectH265HardwareDecode";
 import handleConnectionOpen from "handleConnectionOpen";

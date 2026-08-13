@@ -1,10 +1,10 @@
-// Module ID: 10734
-// Function ID: 10735
+// Module ID: 10736
+// Function ID: 10737
 // Name: styles
-// Dependencies: [19, 17, 505, 21, 10735, 4342, 1628, 10736, 7832, 4338, 2]
+// Dependencies: [19, 17, 505, 21, 10737, 4342, 1628, 10738, 7832, 4338, 2]
 // Exports: default
 
-// Module 10734 (styles)
+// Module 10736 (styles)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ThemeTypes } from "sum";
@@ -32,7 +32,7 @@ export default function StageViewWithPrompts(arg0) {
   const tmp = styles();
   let obj = { style: tmp.scrollView, contentContainerStyle: null, alwaysBounceVertical: false, children: null };
   const items = [tmp.container, ];
-  obj = { paddingTop: top + require(10736) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
+  obj = { paddingTop: top + require(10738) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
   ({ top, bottom } = importDefault(1628)());
   items[1] = obj;
   obj[1] = items;

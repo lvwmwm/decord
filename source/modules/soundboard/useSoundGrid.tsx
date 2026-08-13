@@ -1,10 +1,10 @@
-// Module ID: 16226
-// Function ID: 16227
+// Module ID: 16217
+// Function ID: 16218
 // Name: createSoundItems
-// Dependencies: [32, 19, 1910, 3989, 1922, 4790, 4791, 1924, 4797, 4234, 16227, 589, 4007, 16228, 9035, 16229, 2]
+// Dependencies: [32, 19, 1910, 3989, 1922, 4790, 4791, 1924, 4797, 4234, 16218, 589, 4007, 16219, 9035, 16220, 2]
 // Exports: default, useSearchCategories
 
-// Module 16226 (createSoundItems)
+// Module 16217 (createSoundItems)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

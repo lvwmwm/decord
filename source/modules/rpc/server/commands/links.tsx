@@ -1,9 +1,9 @@
-// Module ID: 13815
-// Function ID: 13816
+// Module ID: 13806
+// Function ID: 13807
 // Name: set
-// Dependencies: [5, 1390, 4383, 4245, 676, 4370, 10712, 10714, 500, 10622, 4336, 3979, 13816, 4052, 698, 8981, 13817, 10709, 6059, 13811, 7634, 13818, 2]
+// Dependencies: [5, 1390, 4383, 4245, 676, 4370, 10714, 10716, 500, 10624, 4336, 3979, 13807, 4052, 698, 8981, 13808, 10711, 6059, 13802, 7634, 13809, 2]
 
-// Module 13815 (set)
+// Module 13806 (set)
 import closure_3 from "items3";
 import participantFromServer from "participantFromServer";
 import addApplication from "addApplication";
@@ -32,7 +32,7 @@ obj = { [RPCCommands.OPEN_EXTERNAL_LINK]: obj, [RPCCommands.NAVIGATE_TO_CONNECTI
 obj = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items1 },
   validation(string) {
-    let obj = importDefault(10712)(string);
+    let obj = importDefault(10714)(string);
     obj = { url: null };
     const requiredResult = obj.required();
     obj[0] = string.string().required();
@@ -195,12 +195,12 @@ obj = {
 items1 = [RPC_AUTHENTICATED_SCOPE, RPC_EMBEDDED_APP_SCOPE];
 obj = {
   validation(arg0) {
-    return importDefault(10712)(arg0);
+    return importDefault(10714)(arg0);
   },
   scope: { [RPC_SCOPE_CONFIG.ANY]: items2 },
   handler(socket) {
     socket = socket.socket;
-    let obj = require(10714) /* recurseReplaceContentTree */;
+    let obj = require(10716) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
     if (set.has(obj2.validateApplication(socket.application))) {
       obj = { screen: null };
@@ -209,10 +209,10 @@ obj = {
     } else {
       obj = { errorCode: null };
       obj[0] = constants2.UNAUTHORIZED_FOR_APPLICATION;
-      const tmp9 = new importDefault(10709)(obj, "Command not available for this application");
+      const tmp9 = new importDefault(10711)(obj, "Command not available for this application");
       throw tmp9;
     }
-    obj2 = require(10714) /* recurseReplaceContentTree */;
+    obj2 = require(10716) /* recurseReplaceContentTree */;
     tmp = require;
   }
 };
@@ -229,14 +229,14 @@ obj[RPCCommands.SHARE_LINK] = createRPCCommand.createRPCCommand(RPCCommands.SHAR
     ({ socket, args } = arg0);
     ({ custom_id: require, message: importDefault, link_id: dependencyMap } = args);
     let c3;
-    let obj = require(10714) /* recurseReplaceContentTree */;
+    let obj = require(10716) /* recurseReplaceContentTree */;
     let result = obj.validatePostMessageTransport(socket.transport);
-    const validateApplicationResult = require(10714) /* recurseReplaceContentTree */.validateApplication(socket.application);
+    const validateApplicationResult = require(10716) /* recurseReplaceContentTree */.validateApplication(socket.application);
     c3 = validateApplicationResult;
     if (null == validateApplicationResult) {
       obj = { errorCode: null };
       obj[0] = constants2.INVALID_COMMAND;
-      const tmp22 = new importDefault(10709)(obj, "No application.");
+      const tmp22 = new importDefault(10711)(obj, "No application.");
       throw tmp22;
     } else {
       if (tmpResult.hasApplicationFlag(socket.application, constants.EMBEDDED)) {
@@ -262,12 +262,12 @@ obj[RPCCommands.SHARE_LINK] = createRPCCommand.createRPCCommand(RPCCommands.SHAR
       } else {
         obj = { errorCode: null };
         obj[0] = constants2.INVALID_COMMAND;
-        const tmp10 = new importDefault(10709)(obj, "This application cannot access this API");
+        const tmp10 = new importDefault(10711)(obj, "This application cannot access this API");
         throw tmp10;
       }
       tmpResult = tmp(7634);
     }
-    const obj2 = require(10714) /* recurseReplaceContentTree */;
+    const obj2 = require(10716) /* recurseReplaceContentTree */;
     tmp = require;
   }
 });

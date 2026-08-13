@@ -1,9 +1,9 @@
-// Module ID: 16455
-// Function ID: 16456
+// Module ID: 16446
+// Function ID: 16447
 // Name: prototype
-// Dependencies: [1218, 1391, 1990, 1910, 4327, 3989, 7176, 676, 7240, 1222, 4310, 4550, 16456, 2007, 5301, 16457, 709, 9383, 2]
+// Dependencies: [1218, 1391, 1990, 1910, 4327, 3989, 7176, 676, 7240, 1222, 4310, 4550, 16447, 2007, 5301, 16448, 709, 9383, 2]
 
-// Module 16455 (prototype)
+// Module 16446 (prototype)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

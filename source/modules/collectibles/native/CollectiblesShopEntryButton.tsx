@@ -1,10 +1,10 @@
-// Module ID: 15955
-// Function ID: 15956
+// Module ID: 15946
+// Function ID: 15947
 // Name: CoachmarkVariant
-// Dependencies: [32, 19, 7092, 1388, 21, 6065, 1377, 15954, 11582, 1236, 15956, 647, 13401, 7073, 10045, 2]
+// Dependencies: [32, 19, 7092, 1388, 21, 6065, 1377, 15945, 11583, 1236, 15947, 647, 13402, 7073, 10045, 2]
 // Exports: default
 
-// Module 15955 (CoachmarkVariant)
+// Module 15946 (CoachmarkVariant)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import getMarketingBySurface from "getMarketingBySurface";
@@ -29,7 +29,7 @@ function CoachmarkVariant(shopButtonRef) {
   dependencyMap = tmp3;
   obj = { children: null };
   obj = { ref: shopButtonRef, IconComponent: null, accessibilityLabel: null, onPress: null, showRedDot: null };
-  obj[1] = navigateToShop(11582).ShopIcon;
+  obj[1] = navigateToShop(11583).ShopIcon;
   const intl = navigateToShop(1236).intl;
   obj[2] = intl.string(navigateToShop(1236).t.pWG4ze);
   obj[3] = function onPress() {
@@ -39,7 +39,7 @@ function CoachmarkVariant(shopButtonRef) {
     navigateToShop();
   };
   obj[4] = tmp3;
-  const items = [callback2(importDefault(15954), obj), callback2(importDefault(15956), { marketing, shopButtonRef, navigateToShop, visible: tmp3, onDismiss: tmp[1] })];
+  const items = [callback2(importDefault(15945), obj), callback2(importDefault(15947), { marketing, shopButtonRef, navigateToShop, visible: tmp3, onDismiss: tmp[1] })];
   obj[0] = items;
   return callback3(closure_7, obj);
 }

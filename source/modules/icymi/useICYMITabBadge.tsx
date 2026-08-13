@@ -1,10 +1,10 @@
-// Module ID: 15588
-// Function ID: 15589
+// Module ID: 15579
+// Function ID: 15580
 // Name: useICYMITabBadge
 // Dependencies: [8947, 589, 2]
 // Exports: default, icymiTabBadgeShown
 
-// Module 15588 (useICYMITabBadge)
+// Module 15579 (useICYMITabBadge)
 import filterStaffGuild from "filterStaffGuild";
 
 const require = arg1;

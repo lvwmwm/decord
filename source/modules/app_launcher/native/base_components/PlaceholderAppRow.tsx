@@ -1,10 +1,10 @@
-// Module ID: 11533
-// Function ID: 11534
+// Module ID: 11534
+// Function ID: 11535
 // Name: PlaceholderAppRow
-// Dependencies: [19, 17, 21, 4342, 712, 11497, 5414, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 11498, 5414, 2]
 // Exports: default
 
-// Module 11533 (PlaceholderAppRow)
+// Module 11534 (PlaceholderAppRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -31,9 +31,9 @@ export default function PlaceholderAppRow(isFirstRow) {
     flag2 = false;
   }
   const tmp = createCacheKey();
-  let obj = require(11497) /* usePlaceholderWidth */;
+  let obj = require(11498) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(10, 50);
-  let obj1 = require(11497) /* usePlaceholderWidth */;
+  let obj1 = require(11498) /* usePlaceholderWidth */;
   const placeholderWidth1 = obj1.usePlaceholderWidth(30, 90);
   obj = { icon: null, label: null, subLabel: null, subLabelLineClamp: 1, start: null, end: null, onPress: null };
   obj = { style: tmp.loadingAppIcon };

@@ -1,10 +1,10 @@
-// Module ID: 10606
-// Function ID: 10607
+// Module ID: 10608
+// Function ID: 10609
 // Name: SvgComponent
 // Dependencies: [19, 21, 7880, 2]
 // Exports: default
 
-// Module 10606 (SvgComponent)
+// Module 10608 (SvgComponent)
 import "noop";
 import jsxProd from "jsxProd";
 

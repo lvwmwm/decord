@@ -1,10 +1,10 @@
-// Module ID: 10906
-// Function ID: 10907
+// Module ID: 10908
+// Function ID: 10909
 // Name: StageSectionHeader
 // Dependencies: [19, 17, 21, 4342, 712, 4083, 4343, 4338, 1297, 5758, 2]
 // Exports: default
 
-// Module 10906 (StageSectionHeader)
+// Module 10908 (StageSectionHeader)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

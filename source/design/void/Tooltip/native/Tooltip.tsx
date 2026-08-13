@@ -1,10 +1,10 @@
-// Module ID: 13420
-// Function ID: 13421
+// Module ID: 13421
+// Function ID: 13422
 // Name: Tooltip
 // Dependencies: [19, 17, 676, 21, 4342, 712, 1370, 4338, 1297, 2]
 // Exports: default
 
-// Module 13420 (Tooltip)
+// Module 13421 (Tooltip)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

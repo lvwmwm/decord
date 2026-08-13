@@ -1,9 +1,9 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 16972
+// Function ID: 16973
 // Name: _fetch
-// Dependencies: [7206, 687, 5301, 10421, 1208, 10422, 500, 10430, 16982, 2]
+// Dependencies: [7206, 687, 5301, 10421, 1208, 10422, 500, 10446, 16973, 2]
 
-// Module 16981 (_fetch)
+// Module 16972 (_fetch)
 import initializeState from "initializeState";
 import "initialize";
 
@@ -126,8 +126,8 @@ QuestFetchManager.prototype["_fetch"] = function _fetch(arg0) {
     const currentQuests = tmpResult.fetchCurrentQuests();
     tmpResult = tmp(500);
     if (tmpResult.isMac()) {
-      const state = tmp6(10430).getState();
-      const tmp6Result = tmp6(10430);
+      const state = tmp6(10446).getState();
+      const tmp6Result = tmp6(10446);
     }
     const obj2 = importDefault(1208);
     tmp6 = importDefault;

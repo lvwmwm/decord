@@ -1,10 +1,10 @@
-// Module ID: 13323
-// Function ID: 13324
+// Module ID: 13324
+// Function ID: 13325
 // Name: NsfwGateGuildSettingsActionSheet
-// Dependencies: [19, 21, 13324, 5804, 5436, 5806, 1236, 4310, 5302, 13325, 2]
+// Dependencies: [19, 21, 13325, 5804, 5436, 5806, 1236, 4310, 5302, 13326, 2]
 // Exports: default
 
-// Module 13323 (NsfwGateGuildSettingsActionSheet)
+// Module 13324 (NsfwGateGuildSettingsActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -16,7 +16,7 @@ const result = require("MessageRequestRestrictedGuildPrivacyOption").fileFinishe
 
 export default function NsfwGateGuildSettingsActionSheet(guild) {
   guild = guild.guild;
-  let obj = guild(13324);
+  let obj = guild(13325);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   obj = { header: null, children: null };
   obj = { title: guild.name };
@@ -30,7 +30,7 @@ export default function NsfwGateGuildSettingsActionSheet(guild) {
     const obj = outer1_1(outer1_2[7]);
     outer1_1(outer1_2[8]).open(guild.id);
   };
-  const items = [callback(guild(5806).ActionSheetRow, obj2), callback(guild(13325).RestrictedGuildPrivacyOption, { guild }), messageRequestPrivacyOption, ];
+  const items = [callback(guild(5806).ActionSheetRow, obj2), callback(guild(13326).RestrictedGuildPrivacyOption, { guild }), messageRequestPrivacyOption, ];
   const obj3 = { variant: "danger", label: null, onPress: null };
   const intl2 = guild(1236).intl;
   obj3[1] = intl2.string(guild(1236).t.J2TBi3);

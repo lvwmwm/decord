@@ -1,9 +1,9 @@
-// Module ID: 12594
-// Function ID: 12595
+// Module ID: 12595
+// Function ID: 12596
 // Name: componentWillUnmount
-// Dependencies: [19, 21, 12595, 8053, 2]
+// Dependencies: [19, 21, 12596, 8053, 2]
 
-// Module 12594 (componentWillUnmount)
+// Module 12595 (componentWillUnmount)
 import { jsx } from "jsxProd";
 import { Component } from "noop";
 import importAllResult from "noop";

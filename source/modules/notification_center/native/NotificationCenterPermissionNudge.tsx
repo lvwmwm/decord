@@ -1,10 +1,10 @@
-// Module ID: 15607
-// Function ID: 15608
+// Module ID: 15598
+// Function ID: 15599
 // Name: NotificationCenterBannerImpl
-// Dependencies: [32, 19, 17, 676, 1388, 11837, 21, 4342, 712, 698, 9781, 4338, 1236, 4755, 11838, 4887, 5366, 14744, 6065, 1377, 2]
+// Dependencies: [32, 19, 17, 676, 1388, 11838, 21, 4342, 712, 698, 9781, 4338, 1236, 4755, 11839, 4887, 5366, 14735, 6065, 1377, 2]
 // Exports: default
 
-// Module 15607 (NotificationCenterBannerImpl)
+// Module 15598 (NotificationCenterBannerImpl)
 import _slicedToArray from "_slicedToArray";
 import noop from "DismissibleContent";
 import { View } from "apexExperiment";
@@ -56,7 +56,7 @@ function NotificationCenterBannerImpl(onDismiss) {
   const intl3 = onDismiss(1236).intl;
   obj6[2] = intl3.string(onDismiss(1236).t.a4bgO0);
   obj6[3] = function onPress() {
-    let obj = onDismiss(11838);
+    let obj = onDismiss(11839);
     const pushNotificationPermission = obj.requestPushNotificationPermission(constants2.ALLOW_TO_REQUEST, constants3.NOTIFICATION_CENTER, closure_8);
     obj = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_CENTER_BANNER };
     callback(698).track(constants.CONTEXTUAL_REMINDER_ACTION, obj);
@@ -100,9 +100,9 @@ let obj2 = { alignSelf: "flex-start", marginTop: require("Themes").space.PX_12 }
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/notification_center/native/NotificationCenterPermissionNudge.tsx");
 
 export default function NotificationCenterPermissionNudge() {
-  let obj = importDefault(14744);
-  const canSeePushNotificationNudge = require(11838) /* _requestPushNotificationPermission */.useCanSeePushNotificationNudge();
-  const obj2 = require(11838) /* _requestPushNotificationPermission */;
+  let obj = importDefault(14735);
+  const canSeePushNotificationNudge = require(11839) /* _requestPushNotificationPermission */.useCanSeePushNotificationNudge();
+  const obj2 = require(11839) /* _requestPushNotificationPermission */;
   let prop = null;
   if (!obj.useConfig({ location: "NotificationCenterPermissionNudge" }).inHoldout) {
     prop = null;

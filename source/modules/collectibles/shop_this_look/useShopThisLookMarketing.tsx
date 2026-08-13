@@ -1,10 +1,10 @@
-// Module ID: 12568
-// Function ID: 12569
+// Module ID: 12569
+// Function ID: 12570
 // Name: useShopThisLookMarketing
 // Dependencies: [32, 8861, 6065, 1377, 2]
 // Exports: useShopThisLookMarketing
 
-// Module 12568 (useShopThisLookMarketing)
+// Module 12569 (useShopThisLookMarketing)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;

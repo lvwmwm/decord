@@ -1,10 +1,10 @@
-// Module ID: 10920
-// Function ID: 10921
+// Module ID: 10922
+// Function ID: 10923
 // Name: ParticipantTitle
-// Dependencies: [19, 21, 4342, 712, 1297, 10901, 2]
+// Dependencies: [19, 21, 4342, 712, 1297, 10903, 2]
 // Exports: default
 
-// Module 10920 (ParticipantTitle)
+// Module 10922 (ParticipantTitle)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -23,6 +23,6 @@ export default function ParticipantTitle(arg0) {
   ({ channel, participant, style } = arg0);
   const obj = { style: items, numberOfLines: 1, children: null };
   items = [createCacheKey().usernameText, style];
-  obj[2] = importDefault(10901)(channel, participant);
+  obj[2] = importDefault(10903)(channel, participant);
   return jsx(require(1297) /* Button */.LegacyText, { style: items, numberOfLines: 1, children: null });
 };

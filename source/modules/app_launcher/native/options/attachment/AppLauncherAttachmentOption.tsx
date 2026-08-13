@@ -1,10 +1,10 @@
-// Module ID: 11619
-// Function ID: 11620
+// Module ID: 11620
+// Function ID: 11621
 // Name: AttachmentPreviewAppLauncher
-// Dependencies: [19, 17, 4681, 4680, 21, 4342, 712, 9923, 9861, 1954, 11602, 589, 8405, 11620, 1236, 4892, 10225, 2]
+// Dependencies: [19, 17, 4681, 4680, 21, 4342, 712, 9923, 9861, 1954, 11603, 589, 8405, 11621, 1236, 4892, 10225, 2]
 // Exports: default
 
-// Module 11619 (AttachmentPreviewAppLauncher)
+// Module 11620 (AttachmentPreviewAppLauncher)
 import noop from "noop";
 import { View } from "set";
 import { DraftType } from "handleChanged";

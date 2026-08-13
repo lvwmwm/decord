@@ -1,10 +1,10 @@
-// Module ID: 14415
-// Function ID: 14416
+// Module ID: 14406
+// Function ID: 14407
 // Name: QuestDockMode
-// Dependencies: [19, 14409, 5202, 14411, 21, 687, 8055, 4083, 14410, 10422, 500, 2]
+// Dependencies: [19, 14400, 5202, 14402, 21, 687, 8055, 4083, 14401, 10422, 500, 2]
 // Exports: useExternalScrollEventHandler
 
-// Module 14415 (QuestDockMode)
+// Module 14406 (QuestDockMode)
 import importAllResult from "noop";
 import QuestDockMode from "QuestDockMode";
 import { QuestDockMode } from "QuestsExperimentLocations";

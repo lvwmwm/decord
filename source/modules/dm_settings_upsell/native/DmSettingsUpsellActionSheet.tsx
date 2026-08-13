@@ -1,10 +1,10 @@
-// Module ID: 16497
-// Function ID: 16498
+// Module ID: 16488
+// Function ID: 16489
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 1910, 21, 4342, 712, 589, 16494, 16498, 5804, 10314, 4338, 1236, 5819, 4755, 6056, 4034, 4062, 9922, 4310, 13322, 2]
+// Dependencies: [19, 17, 1910, 21, 4342, 712, 589, 16485, 16489, 5804, 10314, 4338, 1236, 5819, 4755, 6056, 4034, 4062, 9922, 4310, 13323, 2]
 // Exports: default
 
-// Module 16497 (DmSettingsUpsellActionSheet)
+// Module 16488 (DmSettingsUpsellActionSheet)
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
 import get_ActivityIndicator from "dispatcher";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

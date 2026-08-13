@@ -1,10 +1,10 @@
-// Module ID: 13844
-// Function ID: 13845
+// Module ID: 13835
+// Function ID: 13836
 // Name: toggleVoiceChannelChat
 // Dependencies: [1391, 4416, 4358, 4538, 2]
 // Exports: toggleVoiceChannelChat
 
-// Module 13844 (toggleVoiceChannelChat)
+// Module 13835 (toggleVoiceChannelChat)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import getParticipants from "getParticipants";

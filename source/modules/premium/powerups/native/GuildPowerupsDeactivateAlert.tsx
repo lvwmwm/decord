@@ -1,10 +1,10 @@
-// Module ID: 11961
-// Function ID: 11962
+// Module ID: 11962
+// Function ID: 11963
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 4342, 712, 11962, 11963, 11964, 4688, 7838, 1236, 2335, 4688, 4338, 2]
+// Dependencies: [17, 21, 4342, 712, 11963, 11964, 11965, 4688, 7838, 1236, 2335, 4688, 4338, 2]
 // Exports: default
 
-// Module 11961 (GuildPowerupsDeactivateAlert)
+// Module 11962 (GuildPowerupsDeactivateAlert)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -31,11 +31,11 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   let importDefault;
   const tmp = callback2();
   _require = tmp;
-  ({ onDeactivate: c1, error } = importDefault(11962)(guildId, powerup));
+  ({ onDeactivate: c1, error } = importDefault(11963)(guildId, powerup));
   const tmp2 = importDefault;
-  const tmp4 = importDefault(11962)(guildId, powerup);
-  let obj = _require(11964);
-  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, _require(11964).ModalType.DEACTIVATE);
+  const tmp4 = importDefault(11963)(guildId, powerup);
+  let obj = _require(11965);
+  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, _require(11965).ModalType.DEACTIVATE);
   obj = { header: null, title: null, content: null, actions: null, extraContent: null };
   obj = { style: tmp.headerContainer, children: null };
   const obj1 = { color: null, size: "custom", style: null };
@@ -79,14 +79,14 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   items[2] = callback(_require(4688).AlertActionButton, obj7, "cancel");
   obj5[0] = items;
   obj[3] = closure_5(_require(4688).AlertActions, obj5);
-  const arr = importDefault(11963)(guildId, powerup);
+  const arr = importDefault(11964)(guildId, powerup);
   const obj2 = { perk: powerup.title };
   const obj3 = { perk: powerup.title };
   const tmp8 = View;
   const tmp9 = closure_5;
   obj[4] = callback(tmp8, {
     style: tmp.extraContentContainer,
-    children: importDefault(11963)(guildId, powerup).map((critical) => {
+    children: importDefault(11964)(guildId, powerup).map((critical) => {
       const obj = { style: _undefined.warningText, variant: null, color: null, children: null };
       let str = "text-sm/medium";
       if (critical.critical) {

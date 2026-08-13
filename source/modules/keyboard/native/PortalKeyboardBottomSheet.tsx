@@ -1,9 +1,9 @@
-// Module ID: 11522
-// Function ID: 11523
+// Module ID: 11523
+// Function ID: 11524
 // Name: PortalKeyboardBottomSheetHeader
-// Dependencies: [32, 19, 17, 9835, 21, 500, 4342, 712, 8712, 4741, 4083, 1367, 11523, 4689, 5751, 589, 5439, 4311, 9812, 1891, 4771, 4065, 1628, 1493, 4212, 4193, 4072, 4738, 8722, 5754, 2]
+// Dependencies: [32, 19, 17, 9835, 21, 500, 4342, 712, 8712, 4741, 4083, 1367, 11524, 4689, 5751, 589, 5439, 4311, 9812, 1891, 4771, 4065, 1628, 1493, 4212, 4193, 4072, 4738, 8722, 5754, 2]
 
-// Module 11522 (PortalKeyboardBottomSheetHeader)
+// Module 11523 (PortalKeyboardBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "dismissGlobalKeyboard";
 import get_ActivityIndicator from "HapticFeedbackTypes";

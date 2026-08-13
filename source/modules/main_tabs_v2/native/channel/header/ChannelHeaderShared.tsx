@@ -1,12 +1,12 @@
-// Module ID: 12614
-// Function ID: 12615
+// Module ID: 12615
+// Function ID: 12616
 // Name: TitleWrapper
-// Dependencies: [32, 19, 17, 3998, 1922, 8432, 21, 4342, 712, 1367, 4887, 500, 9520, 4338, 1297, 12615, 9712, 4065, 4805, 12616, 1236, 4535, 2]
+// Dependencies: [32, 19, 17, 3998, 1922, 8432, 21, 4342, 712, 1367, 4887, 500, 9520, 4338, 1297, 12616, 9712, 4065, 4805, 12617, 1236, 4535, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12614 (TitleWrapper)
+// Module 12615 (TitleWrapper)
 import _slicedToArray from "_slicedToArray";
-import module_12616 from "module_12616";
+import module_12617 from "module_12617";
 import { View } from "map";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -112,7 +112,7 @@ function ChannelTitle(guildId) {
   tmp8Result = !disableArrow;
   if (!disableArrow) {
     const obj2 = { source: null, size: null, style: null };
-    obj2[0] = tmp(12615);
+    obj2[0] = tmp(12616);
     obj2[1] = require(1297) /* Button */.Icon.Sizes.REFRESH_SMALL_16;
     obj2[2] = tmp4.arrowIcon;
     tmp8Result = tmp8(require(1297) /* Button */.Icon, obj2);
@@ -216,7 +216,7 @@ function MemberCountText(arg0) {
     tmp9 = leadingAccessoryWidth;
   }
   obj[3] = tmp9;
-  const children = [closure_9(importDefault(12616), obj), ];
+  const children = [closure_9(importDefault(12617), obj), ];
   let tmp7Result = null;
   if (withSeparator) {
     let str3 = "text-xs/medium";

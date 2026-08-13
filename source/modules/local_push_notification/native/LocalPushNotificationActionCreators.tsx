@@ -1,10 +1,10 @@
-// Module ID: 17065
-// Function ID: 17066
+// Module ID: 17056
+// Function ID: 17057
 // Name: receiveLocalNotification
-// Dependencies: [13041, 676, 6982, 709, 1208, 698, 5272, 10944, 2007, 4353, 4274, 2]
+// Dependencies: [13042, 676, 6982, 709, 1208, 698, 5272, 10946, 2007, 4353, 4274, 2]
 // Exports: receiveLocalNotification
 
-// Module 17065 (receiveLocalNotification)
+// Module 17056 (receiveLocalNotification)
 import { LocalNotificationTypes } from "LocalNotificationTypes";
 import { AnalyticEvents } from "ME";
 

@@ -1,9 +1,9 @@
-// Module ID: 13782
-// Function ID: 13783
+// Module ID: 13773
+// Function ID: 13774
 // Name: _initialize
 // Dependencies: [4523, 2]
 
-// Module 13782 (_initialize)
+// Module 13773 (_initialize)
 import "initialize";
 
 class CallKitLifecycleManager extends tmp2 {

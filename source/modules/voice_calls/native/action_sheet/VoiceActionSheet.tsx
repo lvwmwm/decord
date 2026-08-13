@@ -1,10 +1,10 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 13099
+// Function ID: 13100
 // Name: VoiceActionSheet
-// Dependencies: [19, 17, 4417, 21, 4342, 5768, 5788, 589, 4197, 4554, 13099, 13100, 5804, 13110, 13113, 13114, 4745, 13117, 2]
+// Dependencies: [19, 17, 4417, 21, 4342, 5768, 5788, 589, 4197, 4554, 13100, 13101, 5804, 13111, 13114, 13115, 4745, 13118, 2]
 // Exports: default
 
-// Module 13098 (VoiceActionSheet)
+// Module 13099 (VoiceActionSheet)
 import noop from "noop";
 import get_ActivityIndicator from "ItemSeparator";
 import getVoiceStatesForGuild from "getVoiceStatesForGuild";
@@ -44,22 +44,22 @@ export default function VoiceActionSheet(channel) {
       callback(table[10]).terminate();
     };
   }, items1);
-  let obj1 = importDefault(13100);
+  let obj1 = importDefault(13101);
   if (obj1.requiresVoiceChannelsOnboard()) {
     obj = { children: null };
     obj = { channel: null };
     obj[0] = channel;
-    obj[0] = callback(tmp2(13110), obj);
+    obj[0] = callback(tmp2(13111), obj);
     let children = callback(tmp5(5804).ActionSheet, obj);
     let tmp8 = callback;
   } else if (stateFromStores) {
     obj1 = { children: null };
     const obj2 = { channel: null };
     obj2[0] = channel;
-    const items2 = [callback(tmp2(13113), obj2), ];
+    const items2 = [callback(tmp2(13114), obj2), ];
     let obj3 = { channel: null };
     obj3[0] = channel;
-    items2[1] = callback(tmp2(13114), obj3);
+    items2[1] = callback(tmp2(13115), obj3);
     obj1[0] = items2;
     children = callback2(tmp5(5804).ActionSheet, obj1);
     tmp8 = callback;
@@ -73,7 +73,7 @@ export default function VoiceActionSheet(channel) {
     const items3 = [callback(tmp2(4745), obj6), ];
     const obj7 = { channel: null };
     obj7[0] = channel;
-    items3[1] = callback(tmp2(13117), obj7);
+    items3[1] = callback(tmp2(13118), obj7);
     obj5[1] = items3;
     obj4[2] = callback2(closure_4, obj5);
     children = callback(tmp5(5804).ActionSheet, obj4);

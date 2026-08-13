@@ -1,9 +1,9 @@
-// Module ID: 13736
-// Function ID: 13737
+// Module ID: 13727
+// Function ID: 13728
 // Name: handleTokenUpdated
 // Dependencies: [1218, 1391, 1910, 1979, 4165, 1922, 676, 1370, 8973, 503, 698, 589, 709, 2]
 
-// Module 13736 (handleTokenUpdated)
+// Module 13727 (handleTokenUpdated)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

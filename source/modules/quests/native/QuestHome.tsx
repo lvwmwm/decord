@@ -1,9 +1,9 @@
-// Module ID: 14322
-// Function ID: 14323
+// Module ID: 14313
+// Function ID: 14314
 // Name: EmptyStateNoQuestsAvailable
-// Dependencies: [32, 19, 17, 4334, 11216, 7206, 7227, 5202, 676, 21, 4342, 712, 589, 1499, 14323, 709, 8608, 8615, 14380, 4755, 1236, 4550, 6059, 10420, 10953, 4338, 4887, 14382, 4298, 14384, 10421, 1628, 7204, 10422, 7233, 4062, 8494, 698, 9399, 503, 14404, 12289, 14405, 1500, 5205, 7226, 14387, 14397, 11225, 14406, 14484, 7790, 2]
+// Dependencies: [32, 19, 17, 4334, 11217, 7206, 7228, 5202, 676, 21, 4342, 712, 589, 1499, 14314, 709, 8608, 8615, 14371, 4755, 1236, 4550, 6059, 10420, 10955, 4338, 4887, 14373, 4298, 14375, 10421, 1628, 7204, 10422, 7222, 4062, 8494, 698, 9399, 503, 14395, 12290, 14396, 1500, 5205, 7227, 14378, 14388, 11226, 14397, 14475, 7790, 2]
 
-// Module 14322 (EmptyStateNoQuestsAvailable)
+// Module 14313 (EmptyStateNoQuestsAvailable)
 import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement";
 import importAllResult from "Button";
 import get_ActivityIndicator from "SurveyActionTypes";
@@ -36,7 +36,7 @@ function EmptyStateNoQuestsAvailable() {
   obj[1] = intl.string(navigation(1236).t["/g10LC"]);
   obj[2] = callback;
   obj[0] = callback2(navigation(4755).Button, obj);
-  return callback2(importDefault(14380), obj);
+  return callback2(importDefault(14371), obj);
 }
 function EmptyStateFiltered(onClearFilters) {
   let obj = { action: null, title: null, subtitle: null };
@@ -49,7 +49,7 @@ function EmptyStateFiltered(onClearFilters) {
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.PBfFnx);
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.nwdKFC);
-  return callback2(importDefault(14380), obj);
+  return callback2(importDefault(14371), obj);
 }
 function HeaderPreviewButton() {
   const callback = importAllResult.useCallback(() => {
@@ -78,7 +78,7 @@ function HeaderWithBounties(arg0) {
   let showOrbShopPlaceholderCarousel;
   ({ orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel } = arg0);
   const tmp = callback3();
-  let obj = require(10953) /* useBountiesExperience */;
+  let obj = require(10955) /* useBountiesExperience */;
   const verticalScrollEnabled = obj.useBountiesExperience(QuestsExperimentLocations.QUEST_HOME_MOBILE).verticalScrollEnabled;
   const items = [callback2(HeaderPreviewButton, {}), , , ];
   let tmp4Result = !verticalScrollEnabled;
@@ -92,7 +92,7 @@ function HeaderWithBounties(arg0) {
     obj[2] = intl.string(tmp2(1236).t.qetVDw);
     const items2 = [tmp6(tmp2(4338).Text, obj), ];
     const obj1 = { onPress: null, hitSlop: 14, "aria-label": null, accessibilityRole: "button", children: null };
-    obj1[0] = importDefault(14382);
+    obj1[0] = importDefault(14373);
     const intl2 = tmp2(1236).intl;
     obj1[2] = intl2.string(tmp2(1236).t.hvVgAZ);
     const obj2 = { size: "xs", color: null };
@@ -104,7 +104,7 @@ function HeaderWithBounties(arg0) {
   }
   const obj3 = { children: null };
   items[1] = tmp4Result;
-  items[2] = callback2(importDefault(14384), { verticalScrollEnabled, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
+  items[2] = callback2(importDefault(14375), { verticalScrollEnabled, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
   const obj4 = { style: items3, children: null };
   items3 = [, ];
   ({ sectionHeader: arr4[0], sectionHeaderWithTag: arr4[1] } = tmp);
@@ -386,13 +386,13 @@ const memoResult = importAllResult.memo(function QuestHome(filters) {
   const questHomeSortingFilteringAnalytics = obj7.useQuestHomeSortingFilteringAnalytics(obj1);
   const tmp25 = navigation(9399);
   let tmp5 = navigation;
-  showBounties = memo(12289).useVirtualCurrencyMobileEnabled().enabled;
-  const obj10 = memo(12289);
-  const bountiesExperience = memo(10953).useBountiesExperience(callback4.QUEST_HOME_MOBILE);
+  showBounties = memo(12290).useVirtualCurrencyMobileEnabled().enabled;
+  const obj10 = memo(12290);
+  const bountiesExperience = memo(10955).useBountiesExperience(callback4.QUEST_HOME_MOBILE);
   verticalScrollEnabled = bountiesExperience.verticalScrollEnabled;
-  const OrbsHoldoutExperiment = memo(14405).OrbsHoldoutExperiment;
+  const OrbsHoldoutExperiment = memo(14396).OrbsHoldoutExperiment;
   obj2 = { location: callback4.QUEST_HOME_MOBILE };
-  const obj11 = memo(10953);
+  const obj11 = memo(10955);
   const tmp30 = callback4;
   const params = memo(1500).useRoute().params;
   previewAdCreativeIds = undefined;
@@ -429,10 +429,10 @@ const memoResult = importAllResult.memo(function QuestHome(filters) {
     showBounties = !OrbsHoldoutExperiment.useConfig(obj2).enabled;
   }
   if (showBounties) {
-    tmpResult = tmp(7226);
+    tmpResult = tmp(7227);
     showBounties = tmpResult.shouldShowBountiesGivenFilters(filters);
   }
-  const BountiesShopCarouselExperiment = tmp(14387).BountiesShopCarouselExperiment;
+  const BountiesShopCarouselExperiment = tmp(14378).BountiesShopCarouselExperiment;
   obj3 = { location: tmp30.QUEST_HOME_MOBILE };
   const config = BountiesShopCarouselExperiment.useConfig(obj3);
   ({ enabled, variation } = config);
@@ -440,7 +440,7 @@ const memoResult = importAllResult.memo(function QuestHome(filters) {
   if (enabled) {
     enabled = showBounties;
   }
-  const questHomeOrbShopCarouselData = memo(14397).useQuestHomeOrbShopCarouselData({ enabled, variation });
+  const questHomeOrbShopCarouselData = memo(14388).useQuestHomeOrbShopCarouselData({ enabled, variation });
   products = questHomeOrbShopCarouselData.products;
   obtainableOrbRewards = questHomeOrbShopCarouselData.obtainableOrbRewards;
   showPlaceholderCarousel = questHomeOrbShopCarouselData.showPlaceholderCarousel;
@@ -452,7 +452,7 @@ const memoResult = importAllResult.memo(function QuestHome(filters) {
     tmp37 = questHomeBounties.length > 0;
   }
   memo = tmp37;
-  const tmpResult1 = memo(14397);
+  const tmpResult1 = memo(14388);
   navigation = memo(1499).useNavigation();
   dependencyMap = obj2.useRef(false);
   callback = obj2.useRef(false);

@@ -1,10 +1,10 @@
-// Module ID: 11486
-// Function ID: 11487
+// Module ID: 11487
+// Function ID: 11488
 // Name: result
-// Dependencies: [32, 1391, 4263, 1922, 11487, 11488, 4778, 687, 589, 11, 1377, 6065, 4164, 2]
+// Dependencies: [32, 1391, 4263, 1922, 11488, 11489, 4778, 687, 589, 11, 1377, 6065, 4164, 2]
 // Exports: default
 
-// Module 11486 (result)
+// Module 11487 (result)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleInviteData from "handleInviteData";

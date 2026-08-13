@@ -1,8 +1,8 @@
-// Module ID: 11793
-// Function ID: 11794
-// Dependencies: [676, 11794, 11769, 11770, 709, 2]
+// Module ID: 11794
+// Function ID: 11795
+// Dependencies: [676, 11795, 11770, 11771, 709, 2]
 
-// Module 11793
+// Module 11794
 import { SearchTypes } from "ME";
 import handleSearchQuery from "handleSearchQuery";
 import prototype from "prototype";
@@ -11,14 +11,14 @@ const result = require("prototype").fileFinishedImporting("modules/search/native
 
 export default {
   searchPeopleTab(closure_0, searchQueryString) {
-    let obj = require(11770) /* SearchTokenTypes */;
+    let obj = require(11771) /* SearchTokenTypes */;
     const searchContextId = obj.getSearchContextId(closure_0);
     obj = { type: "SEARCH_PEOPLE_TAB_SEARCH", id: searchContextId, searchQueryString };
     importDefault(709).dispatch(obj);
   },
   cleanupPeopleTab(closure_0) {
-    const searchContextId = require(11770) /* SearchTokenTypes */.getSearchContextId(closure_0);
-    const obj = require(11770) /* SearchTokenTypes */;
+    const searchContextId = require(11771) /* SearchTokenTypes */.getSearchContextId(closure_0);
+    const obj = require(11771) /* SearchTokenTypes */;
     importDefault(709).dispatch({ type: "SEARCH_PEOPLE_TAB_CLEANUP", id: searchContextId });
   },
   searchGuildMemberTab(arg0) {
@@ -28,13 +28,13 @@ export default {
     let searchQueryString;
     let threadId;
     ({ searchContext, searchQueryString, guildId, channelId, threadId } = arg0);
-    const searchContextId = require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext);
-    const obj = require(11770) /* SearchTokenTypes */;
+    const searchContextId = require(11771) /* SearchTokenTypes */.getSearchContextId(searchContext);
+    const obj = require(11771) /* SearchTokenTypes */;
     importDefault(709).dispatch({ type: "SEARCH_GUILD_MEMBER_TAB_SEARCH", id: searchContextId, searchQueryString, guildId, channelId, threadId });
   },
   cleanupGuildMemberTab(closure_0) {
-    const searchContextId = require(11770) /* SearchTokenTypes */.getSearchContextId(closure_0);
-    const obj = require(11770) /* SearchTokenTypes */;
+    const searchContextId = require(11771) /* SearchTokenTypes */.getSearchContextId(closure_0);
+    const obj = require(11771) /* SearchTokenTypes */;
     importDefault(709).dispatch({ type: "SEARCH_GUILD_MEMBER_TAB_CLEANUP", id: searchContextId });
   },
   searchGuildChannelTab(arg0) {
@@ -42,18 +42,18 @@ export default {
     let searchContext;
     let searchQueryString;
     ({ searchContext, searchQueryString, guildId } = arg0);
-    const searchContextId = require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext);
-    const obj = require(11770) /* SearchTokenTypes */;
+    const searchContextId = require(11771) /* SearchTokenTypes */.getSearchContextId(searchContext);
+    const obj = require(11771) /* SearchTokenTypes */;
     importDefault(709).dispatch({ type: "SEARCH_GUILD_CHANNEL_TAB_SEARCH", id: searchContextId, searchQueryString, guildId });
   },
   cleanupGuildChannelTab(closure_0) {
-    const searchContextId = require(11770) /* SearchTokenTypes */.getSearchContextId(closure_0);
-    const obj = require(11770) /* SearchTokenTypes */;
+    const searchContextId = require(11771) /* SearchTokenTypes */.getSearchContextId(closure_0);
+    const obj = require(11771) /* SearchTokenTypes */;
     importDefault(709).dispatch({ type: "SEARCH_GUILD_CHANNEL_TAB_CLEANUP", id: searchContextId });
   },
   addSearchHistoryItem(closure_0, arg1) {
     if (closure_0.type === SearchTypes.DMS) {
-      let obj = require(11770) /* SearchTokenTypes */;
+      let obj = require(11771) /* SearchTokenTypes */;
       const searchContextId = obj.getSearchContextId(closure_0);
       obj = { type: "SEARCH_HISTORY_NATIVE_ADD_ITEM", id: null, item: null };
       obj[1] = searchContextId;
@@ -63,29 +63,29 @@ export default {
     }
   },
   removeSearchHistoryItem(searchContext, searchHistoryItem) {
-    let obj = require(11770) /* SearchTokenTypes */;
+    let obj = require(11771) /* SearchTokenTypes */;
     const searchContextId = obj.getSearchContextId(searchContext);
     obj = { type: "SEARCH_HISTORY_NATIVE_REMOVE_ITEM", id: searchContextId, item: searchHistoryItem };
     importDefault(709).dispatch(obj);
   },
   clearSearchHistory(searchContext) {
-    const searchContextId = require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext);
-    const obj = require(11770) /* SearchTokenTypes */;
+    const searchContextId = require(11771) /* SearchTokenTypes */.getSearchContextId(searchContext);
+    const obj = require(11771) /* SearchTokenTypes */;
     importDefault(709).dispatch({ type: "SEARCH_HISTORY_NATIVE_CLEAR_ITEMS", id: searchContextId });
   },
   updateSearchQuery(closure_0, updater) {
-    let obj = require(11770) /* SearchTokenTypes */;
+    let obj = require(11771) /* SearchTokenTypes */;
     const searchContextId = obj.getSearchContextId(closure_0);
     obj = { type: "SEARCH_QUERY_NATIVE_UPDATE", id: searchContextId, searchContext: closure_0, updater };
     importDefault(709).dispatch(obj);
   },
   deleteSearchQuery(closure_5) {
-    const searchContextId = require(11770) /* SearchTokenTypes */.getSearchContextId(closure_5);
-    const obj = require(11770) /* SearchTokenTypes */;
+    const searchContextId = require(11771) /* SearchTokenTypes */.getSearchContextId(closure_5);
+    const obj = require(11771) /* SearchTokenTypes */;
     importDefault(709).dispatch({ type: "SEARCH_QUERY_NATIVE_DELETE", id: searchContextId });
   },
   initializeSearchQuery(channelDetailsSearchContext) {
-    let obj = require(11770) /* SearchTokenTypes */;
+    let obj = require(11771) /* SearchTokenTypes */;
     const searchContextId = obj.getSearchContextId(channelDetailsSearchContext);
     obj = { type: "SEARCH_QUERY_NATIVE_INITIALIZE", id: searchContextId, searchContext: channelDetailsSearchContext };
     importDefault(709).dispatch(obj);

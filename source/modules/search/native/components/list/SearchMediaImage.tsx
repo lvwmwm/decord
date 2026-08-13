@@ -1,10 +1,10 @@
-// Module ID: 15830
-// Function ID: 15831
+// Module ID: 15821
+// Function ID: 15822
 // Name: SearchMediaObscurityIcon
-// Dependencies: [32, 19, 17, 5940, 21, 4342, 4278, 1363, 5954, 10229, 4851, 4745, 1492, 11458, 500, 1236, 9387, 9901, 8895, 589, 9856, 9923, 2]
+// Dependencies: [32, 19, 17, 5940, 21, 4342, 4278, 1363, 5954, 10229, 4851, 4745, 1492, 11459, 500, 1236, 9387, 9901, 8895, 589, 9856, 9923, 2]
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 15830 (SearchMediaObscurityIcon)
+// Module 15821 (SearchMediaObscurityIcon)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "initialize";
 import get_ActivityIndicator from "useEnabledHarmTypesBitmaskForChannelAndAuthorId";
@@ -108,7 +108,7 @@ let closure_14 = importAllResult.memo((containerWidth) => {
         obj[3] = tmp6;
         obj[4] = tmp7;
         const srcWithWidthAndHeight = obj.getSrcWithWidthAndHeight(obj);
-        let obj2 = containerHeight(11458);
+        let obj2 = containerHeight(11459);
         const obscuredAlt = obj2.getObscuredAlt(obscureReason);
         let tmp12 = null;
         if (null != obscureReason) {

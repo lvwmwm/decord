@@ -1,10 +1,10 @@
-// Module ID: 13993
-// Function ID: 13994
+// Module ID: 13984
+// Function ID: 13985
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 589, 4007, 5804, 5436, 1236, 7749, 5807, 5414, 8012, 13973, 2]
+// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 589, 4007, 5804, 5436, 1236, 7749, 5807, 5414, 8012, 13964, 2]
 // Exports: default
 
-// Module 13993 (ChangeAvatarActionSheet)
+// Module 13984 (ChangeAvatarActionSheet)
 import "noop";
 import { View } from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -105,12 +105,12 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
     obj9[0] = AnalyticsObjects.ANIMATED_AVATAR;
     const intl7 = tmp2(1236).intl;
     obj9[1] = intl7.string(tmp2(1236).t.mr4K7D);
-    obj8[1] = tmp8(importDefault(13973), obj9);
+    obj8[1] = tmp8(importDefault(13964), obj9);
     items4[1] = tmp8(View, obj8);
     obj6[0] = items4;
     obj2[1] = tmp7(closure_8, obj6);
     showAnimatedAvatarUpsell = tmp8(tmp2(5414).TableRow, obj2);
-    const tmp5Result = importDefault(13973);
+    const tmp5Result = importDefault(13964);
   }
   items2[2] = showAnimatedAvatarUpsell;
   tmp8Result = null != handleEditAvatarDecorationSelect;

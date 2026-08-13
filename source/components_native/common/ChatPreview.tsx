@@ -1,7 +1,7 @@
 // Module ID: 8656
 // Function ID: 8657
 // Name: componentDidMount
-// Dependencies: [19, 17, 4334, 4054, 1391, 1922, 8087, 21, 4342, 712, 4072, 8657, 8086, 8659, 11409, 4031, 1236, 10987, 10981, 12, 4353, 11051, 11030, 10993, 4572, 1891, 11093, 11194, 8662, 7268, 10992, 10994, 11029, 10930, 12084, 11343, 500, 5368, 4887, 4338, 4034, 589, 1493, 5987, 4558, 2]
+// Dependencies: [19, 17, 4334, 4054, 1391, 1922, 8087, 21, 4342, 712, 4072, 8657, 8086, 8659, 11410, 4031, 1236, 10988, 10982, 12, 4353, 11052, 11031, 10994, 4572, 1891, 11094, 11195, 8662, 7268, 10993, 10995, 11030, 10932, 12085, 11344, 500, 5368, 4887, 4338, 4034, 589, 1493, 5987, 4558, 2]
 // Exports: ChatPreview
 
 // Module 8656 (componentDidMount)
@@ -98,7 +98,7 @@ class ChatPreviewBase extends PureComponent {
           let arr = items;
           const first = items[0];
           if (null != first) {
-            if (messages(11409)(c0, first[first.length - 1], props)) {
+            if (messages(11410)(c0, first[first.length - 1], props)) {
               items = [props];
               arr = arr.unshift(items);
             } else {
@@ -221,7 +221,7 @@ class ChatPreviewBase extends PureComponent {
         const jumpTargetId = tmp3.jumpTargetId;
         let tmp23;
         if (!tmp7) {
-          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "PX_16", shouldInitialScroll: "Array", animated: 465.988, scrollPosition: -136, focusTargetId: 0 };
+          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "PX_16", shouldInitialScroll: "Array", animated: 0, scrollPosition: 1, focusTargetId: 4 };
           obj[0] = tmp22;
           obj[1] = jumpTargetId;
           obj[2] = jumpTargetId;
@@ -276,7 +276,7 @@ class ChatPreviewBase extends PureComponent {
         }
       }
       let obj = applyArgumentsResult(outer1_3[21]);
-      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: "asc", selectedChannelId: "asc", tapLinkData: "isInRestrictedHours" };
+      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: "asc", selectedChannelId: "asc", tapLinkData: "https://support.discord.com/hc/articles/14155060633623" };
       obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
         const jumpToChatProps = props.props.jumpToChatProps;
         const onBeforeJumpToMessage = jumpToChatProps.onBeforeJumpToMessage;
@@ -483,7 +483,7 @@ prototype["render"] = function render() {
     if (null != guild_id) {
       let obj = { guildId: null, channelId: null };
       ({ guild_id: obj8[0], id: obj8[1] } = channel);
-      let tmp14 = callback(importDefault(10930), obj);
+      let tmp14 = callback(importDefault(10932), obj);
     }
     obj = { style: null, children: null };
     obj[0] = tmp.containerInner;
@@ -499,7 +499,7 @@ prototype["render"] = function render() {
     if (null != guild_id1) {
       let obj1 = { guildId: null, channelId: null };
       ({ guild_id: obj7[0], id: obj7[1] } = channel);
-      tmp14 = callback(importDefault(12084), obj1);
+      tmp14 = callback(importDefault(12085), obj1);
     }
   }
   obj = { ref: self.chatRef, style: tmp.chat, inverted: true, onTapLink: self.handleTapLink, onTapChannel: self.handleTapChannel, onLongPressChannel: self.handleLongPressChannel, onLongPressLink: self.handleLongPressLink, onLongPressMessage: self.handleLongPressMessage, onLongPressReaction: self.handleLongPressReaction, onTapReaction: self.handleTapReaction, onTapImage: self.handleTapImage, onCompleteFirstLayout: null, onFirstLayout: null };
@@ -509,7 +509,7 @@ prototype["render"] = function render() {
     prop = self.handleCompleteFirstLayout;
   }
   obj[11] = prop;
-  const tmp8 = importDefault(11343);
+  const tmp8 = importDefault(11344);
   let prop1;
   if (!tmp9Result.isIOS()) {
     prop1 = self.handleCompleteFirstLayout;

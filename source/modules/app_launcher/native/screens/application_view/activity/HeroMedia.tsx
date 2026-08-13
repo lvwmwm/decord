@@ -1,10 +1,10 @@
-// Module ID: 11526
-// Function ID: 11527
+// Module ID: 11527
+// Function ID: 11528
 // Name: HeroMedia
-// Dependencies: [19, 4334, 1498, 5438, 21, 4342, 9600, 10722, 589, 5774, 11501, 8919, 1236, 2]
+// Dependencies: [19, 4334, 1498, 5438, 21, 4342, 9600, 10724, 589, 5774, 11502, 8919, 1236, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 11526 (HeroMedia)
+// Module 11527 (HeroMedia)
 import "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -33,7 +33,7 @@ export default function HeroMedia(width) {
   }
   const diff = bound - 2 * DEFAULT_CONTENT_PADDING;
   const rounded = Math.floor(9 * diff / 16);
-  const tmp13 = importDefault(10722)({ applicationId, size: diff, names: ["embedded_cover"] });
+  const tmp13 = importDefault(10724)({ applicationId, size: diff, names: ["embedded_cover"] });
   let tmp2Result = tmp2(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
@@ -49,7 +49,7 @@ export default function HeroMedia(width) {
   }
   let tmp18 = null;
   if (null != prop1) {
-    tmp18 = importDefault(11501)(applicationId, prop.activity_preview_video_asset_id);
+    tmp18 = importDefault(11502)(applicationId, prop.activity_preview_video_asset_id);
   }
   let tmp21Result = null;
   if (null != tmp18) {

@@ -1,10 +1,10 @@
-// Module ID: 14004
-// Function ID: 14005
+// Module ID: 13995
+// Function ID: 13996
 // Name: UserProfileBadgesEditButton
-// Dependencies: [19, 17, 8834, 21, 4342, 712, 13989, 4310, 14005, 2007, 14008, 1236, 14001, 4338, 14006, 2]
+// Dependencies: [19, 17, 8834, 21, 4342, 712, 13980, 4310, 13996, 2007, 13999, 1236, 13992, 4338, 13997, 2]
 // Exports: default
 
-// Module 14004 (UserProfileBadgesEditButton)
+// Module 13995 (UserProfileBadgesEditButton)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getBadgeAssetFromCDN } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -33,7 +33,7 @@ export default function UserProfileBadgesEditButton(arg0) {
   let _require;
   const tmp = createCacheKey();
   _require = tmp;
-  let obj = _require(13989);
+  let obj = _require(13980);
   const isBadgeManagementEnabled = obj.useIsBadgeManagementEnabled({ location: "UserProfileBadgesEditButton" });
   const callback = React.useCallback(() => {
     callback(closure_2[7]).openLazy(_undefined(closure_2[9])(closure_2[8], closure_2.paths), "Hide Badges", {});
@@ -110,7 +110,7 @@ export default function UserProfileBadgesEditButton(arg0) {
     }
     obj[3] = tmp18;
     obj[4] = tmp6;
-    return callback(tmp2(14001).UserProfileEditFormButton, obj);
+    return callback(tmp2(13992).UserProfileEditFormButton, obj);
   } else {
     return null;
   }

@@ -1,10 +1,10 @@
-// Module ID: 13394
-// Function ID: 13395
+// Module ID: 13395
+// Function ID: 13396
 // Name: _openActivityDMLauncher
-// Dependencies: [5, 1498, 5769, 4355, 12284, 10946, 5788, 7030, 4205, 1626, 2]
+// Dependencies: [5, 1498, 5769, 4355, 12285, 10948, 5788, 7030, 4205, 1626, 2]
 // Exports: default
 
-// Module 13394 (_openActivityDMLauncher)
+// Module 13395 (_openActivityDMLauncher)
 import _handleUsePrimaryEntryPointAppCommand from "_handleUsePrimaryEntryPointAppCommand";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 
@@ -118,7 +118,7 @@ function _openActivityDMLauncher() {
                 return obj6;
               } else {
                 c7 = customId;
-                obj6 = callback(12284);
+                obj6 = callback(12285);
                 c7 = 4;
                 customId = 1;
                 const obj7 = { value: null, done: false };
@@ -158,7 +158,7 @@ function _openActivityDMLauncher() {
                   c7 = 5;
                   customId = 1;
                   const obj11 = { value: null, done: false };
-                  obj11[0] = callback2(10946)(obj10);
+                  obj11[0] = callback2(10948)(obj10);
                   return obj11;
                 }
               }

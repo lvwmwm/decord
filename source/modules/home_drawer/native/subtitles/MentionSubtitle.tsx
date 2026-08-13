@@ -1,10 +1,10 @@
-// Module ID: 15529
-// Function ID: 15530
+// Module ID: 15520
+// Function ID: 15521
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 15530, 4805, 4850, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 15521, 4805, 4850, 4338, 1236, 2]
 // Exports: default
 
-// Module 15529 (MentionSubtitle)
+// Module 15520 (MentionSubtitle)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ export default function MentionSubtitle(channel) {
   let guild;
   channel = channel.channel;
   ({ guild, channelName, count } = channel);
-  let obj = require(15530) /* styles */;
+  let obj = require(15521) /* styles */;
   const subtitleStyles = obj.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {

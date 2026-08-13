@@ -1,10 +1,10 @@
-// Module ID: 12205
-// Function ID: 12206
+// Module ID: 12206
+// Function ID: 12207
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8839, 6935, 676, 1924, 505, 21, 4342, 712, 5409, 9627, 589, 8835, 5768, 10148, 12206, 709, 4550, 4684, 12207, 2007, 500, 698, 10094, 4338, 1236, 4755, 7457, 9486, 4020, 9491, 9625, 9620, 7458, 2]
+// Dependencies: [5, 32, 19, 17, 8839, 6935, 676, 1924, 505, 21, 4342, 712, 5409, 9627, 589, 8835, 5768, 10148, 12207, 709, 4550, 4684, 12208, 2007, 500, 698, 10094, 4338, 1236, 4755, 7457, 9486, 4020, 9491, 9625, 9620, 7458, 2]
 // Exports: default
 
-// Module 12205 (CollectiblesShopGiftPurchaseSection)
+// Module 12206 (CollectiblesShopGiftPurchaseSection)
 import context from "context";
 import isPremiumGiftingSupported from "isPremiumGiftingSupported";
 import dispatcher from "dispatcher";

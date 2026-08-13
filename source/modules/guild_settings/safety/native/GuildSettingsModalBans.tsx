@@ -1,10 +1,10 @@
-// Module ID: 16818
-// Function ID: 16819
+// Module ID: 16809
+// Function ID: 16810
 // Name: ConnectedGuildSettingsModalBans
-// Dependencies: [32, 19, 17, 1910, 1922, 9071, 21, 4342, 712, 589, 8572, 4034, 5269, 5272, 9070, 5414, 1297, 5421, 1236, 5796, 4061, 5801, 5862, 16819, 6035, 8876, 8575, 5754, 2]
+// Dependencies: [32, 19, 17, 1910, 1922, 9071, 21, 4342, 712, 589, 8572, 4034, 5269, 5272, 9070, 5414, 1297, 5421, 1236, 5796, 4061, 5801, 5862, 16810, 6035, 8876, 8575, 5754, 2]
 // Exports: default
 
-// Module 16818 (ConnectedGuildSettingsModalBans)
+// Module 16809 (ConnectedGuildSettingsModalBans)
 import _slicedToArray from "_slicedToArray";
 import _copy from "_copy";
 import get_ActivityIndicator from "TableRowArrow";

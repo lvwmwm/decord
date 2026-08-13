@@ -1,10 +1,10 @@
-// Module ID: 14431
-// Function ID: 14432
+// Module ID: 14422
+// Function ID: 14423
 // Name: maybeRefreshAd
-// Dependencies: [19, 7206, 687, 10421, 10430, 10422, 589, 14432, 7204, 2]
+// Dependencies: [19, 7206, 687, 10421, 10446, 10422, 589, 14423, 7221, 7204, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop
 
-// Module 14431 (maybeRefreshAd)
+// Module 14422 (maybeRefreshAd)
 import noop from "noop";
 import initializeState from "initializeState";
 
@@ -36,7 +36,7 @@ function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP) {
       tmp(10422).clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
       const tmpResult1 = tmp(10422);
     }
-    obj2 = importDefault(10430);
+    obj2 = importDefault(10446);
   }
 }
 ({ useEffect: c3, useRef: c4 } = noop);
@@ -59,8 +59,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
     return value;
   }, items1);
   const obj = _require(stateFromStores[6]);
-  const tmp = _require;
-  const tmp2 = stateFromStores;
+  const tmp3 = initializeState;
   const enableFastAdRecheck = importDefault(stateFromStores[7]).useConfig({ location: "useQuestForAdPlacement" }).enableFastAdRecheck;
   const items2 = [stateFromStores, arg0, enableFastAdRecheck];
   enableFastAdRecheck(() => {
@@ -89,7 +88,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   const obj2 = importDefault(stateFromStores[7]);
   const items3 = [initializeState];
   const items4 = [arg0];
-  _require = _require(stateFromStores[6]).useStateFromStores(items3, () => {
+  const stateFromStores1 = _require(stateFromStores[6]).useStateFromStores(items3, () => {
     const questAdDecisionByPlacement = outer1_5.questAdDecisionByPlacement;
     let value = questAdDecisionByPlacement.get(closure_0);
     if (value == null) {
@@ -98,32 +97,34 @@ export default function useFetchQuestForAdPlacement(arg0) {
     return value;
   }, items4);
   const obj3 = _require(stateFromStores[6]);
-  const items5 = [initializeState];
-  const stateFromStores1 = _require(stateFromStores[6]).useStateFromStores(items5, () => {
-    let questId;
-    if (closure_0 != null) {
-      questId = tmp.questId;
-    }
-    let tmp3 = null;
-    if (null != questId) {
+  let creative;
+  if (stateFromStores1 != null) {
+    creative = stateFromStores1.creative;
+  }
+  _require = _require(stateFromStores[8]).getDeliveredQuestId(creative);
+  let tmpResult = tmp(tmp2[6]);
+  const items5 = [tmp3];
+  const stateFromStores2 = tmpResult.useStateFromStores(items5, () => {
+    let tmp2 = null;
+    if (null != closure_0) {
       const quests = outer1_5.quests;
-      let value = quests.get(tmp.questId);
+      let value = quests.get(tmp);
       if (value == null) {
         value = null;
       }
-      tmp3 = value;
+      tmp2 = value;
     }
-    return tmp3;
+    return tmp2;
   });
-  let tmp6 = null;
-  if (null != stateFromStores1) {
-    tmp6 = null;
-    if (!tmpResult.isQuestExpired(stateFromStores1)) {
-      tmp6 = stateFromStores1;
+  let tmp9 = null;
+  if (null != stateFromStores2) {
+    tmpResult = tmp(tmp2[9]);
+    tmp9 = null;
+    if (!tmpResult.isQuestExpired(stateFromStores2)) {
+      tmp9 = stateFromStores2;
     }
-    tmpResult = tmp(tmp2[8]);
   }
-  return tmp6;
+  return tmp9;
 };
 export const useAdDecisionForPlacement = function useAdDecisionForPlacement(MOBILE_HOME_DOCK_AREA) {
   const _require = MOBILE_HOME_DOCK_AREA;

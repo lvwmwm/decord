@@ -1,10 +1,10 @@
-// Module ID: 15708
-// Function ID: 15709
+// Module ID: 15699
+// Function ID: 15700
 // Name: UploadPlaceholder
-// Dependencies: [32, 19, 17, 1922, 8947, 21, 712, 4342, 15649, 1297, 10233, 4338, 1236, 8440, 4191, 589, 4574, 9286, 9501, 9573, 500, 4887, 4301, 9721, 11179, 7700, 11, 687, 15705, 4187, 7148, 15709, 8341, 2]
+// Dependencies: [32, 19, 17, 1922, 8947, 21, 712, 4342, 15640, 1297, 10233, 4338, 1236, 8440, 4191, 589, 4574, 9286, 9501, 9573, 500, 4887, 4301, 9721, 11180, 7700, 11, 687, 15696, 4187, 7148, 15700, 8341, 2]
 // Exports: default
 
-// Module 15708 (UploadPlaceholder)
+// Module 15699 (UploadPlaceholder)
 import SolidCutout from "SolidCutout";
 import ActivityEmoji from "ActivityEmoji";
 import { View } from "DISPLAY_NAME_STYLES_FONT_FAMILY_MAP";

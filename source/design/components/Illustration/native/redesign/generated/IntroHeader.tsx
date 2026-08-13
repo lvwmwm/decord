@@ -1,10 +1,10 @@
-// Module ID: 16825
-// Function ID: 16826
+// Module ID: 16816
+// Function ID: 16817
 // Name: getIntroHeaderSource
-// Dependencies: [19, 17, 21, 7668, 16826, 16827, 16828, 1363, 2]
+// Dependencies: [19, 17, 21, 7668, 16817, 16818, 16819, 1363, 2]
 // Exports: IntroHeader, getIntroHeaderSource, useIntroHeaderSource
 
-// Module 16825 (getIntroHeaderSource)
+// Module 16816 (getIntroHeaderSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getIntroHeaderSource = function getIntroHeaderSource(theme) {
   let obj = require(7668) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(16826);
+      return callback(16817);
     },
     darker() {
-      return callback(16827);
+      return callback(16818);
     },
     light() {
-      return callback(16828);
+      return callback(16819);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useIntroHeaderSource = function useIntroHeaderSource() {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16826);
+      return callback(16817);
     },
     darker() {
-      return callback(16827);
+      return callback(16818);
     },
     light() {
-      return callback(16828);
+      return callback(16819);
     }
   };
   return require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const IntroHeader = function IntroHeader(arg0) {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16826);
+      return callback(16817);
     },
     darker() {
-      return callback(16827);
+      return callback(16818);
     },
     light() {
-      return callback(16828);
+      return callback(16819);
     }
   };
   obj = {};

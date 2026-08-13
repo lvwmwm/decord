@@ -1,7 +1,7 @@
 // Module ID: 1218
 // Function ID: 1219
 // Name: fetchFingerprint
-// Dependencies: [1219, 1220, 676, 1221, 3, 707, 595, 1222, 698, 13519, 709, 13520, 8524, 4242, 513, 13521, 1208, 11842, 589, 10419, 13522, 1371, 1954, 2]
+// Dependencies: [1219, 1220, 676, 1221, 3, 707, 595, 1222, 698, 13510, 709, 13511, 8524, 4242, 513, 13512, 1208, 11843, 589, 10419, 13513, 1371, 1954, 2]
 
 // Module 1218 (fetchFingerprint)
 import initialize from "initialize";
@@ -67,7 +67,7 @@ function fetchFingerprint(arg0) {
           if (null != c23) {
             obj["X-Installation-ID"] = c23;
           }
-          tmpResult = tmp(13519);
+          tmpResult = tmp(13510);
           obj = { withGuildExperiments: null, headers: null, context: null };
           obj[0] = true;
           obj[1] = obj;
@@ -103,7 +103,7 @@ function fetchFingerprint(arg0) {
             callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
             let c33 = null;
             const obj5 = callback2(709);
-            callback(13520).onExperimentsLoaded();
+            callback(13511).onExperimentsLoaded();
           }, () => {
             let c33 = null;
             callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
@@ -251,7 +251,7 @@ prototype["initialize"] = function initialize() {
     }
     promise = fetchFingerprint();
   }
-  this.addChangeListener(() => callback(13522).setClientState(closure_17));
+  this.addChangeListener(() => callback(13513).setClientState(closure_17));
 };
 prototype["getLoginStatus"] = function getLoginStatus() {
   return NONE;
@@ -348,7 +348,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     const tmp = importAll;
     const tmp3 = null != obj.getToken();
     ({ id, username, email } = user);
-    importDefault(1208).setUser(id, username, email, importDefault(11842)(user));
+    importDefault(1208).setUser(id, username, email, importDefault(11843)(user));
     const obj3 = importDefault(1208);
     tmp(707).setAnalyticsToken(analyticsToken);
     id = user.id;
@@ -364,7 +364,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     if (null != installation) {
       installation = apexExperiments.installation;
       if (null == installation) {
-        let tmp6Result = tmp6(13521);
+        let tmp6Result = tmp6(13512);
         if (tmp6Result.canUseInstallationId()) {
           const Storage3 = tmp4(595).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
@@ -393,7 +393,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     ({ sessionId, token } = arg0);
     let obj = importDefault(1208);
     ({ id, username, email } = user);
-    obj.setUser(id, username, email, importDefault(11842)(user));
+    obj.setUser(id, username, email, importDefault(11843)(user));
     const id2 = user.id;
     const obj2 = importAll(707);
     const tmp = importDefault;
@@ -709,7 +709,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     const obj2 = importDefault(698);
     obj = { withGuildExperiments: withGuildExperiments.withGuildExperiments, headers: obj, context: null };
     obj = { location: null };
-    let obj3 = require(13519) /* fetchExperiments */;
+    let obj3 = require(13510) /* fetchExperiments */;
     obj[0] = require(1222) /* transitionTo */.getFingerprintLocation();
     obj[2] = obj;
     const experiments = obj3.fetchExperiments(obj);
@@ -740,7 +740,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
       let c33 = null;
       const obj5 = callback2(709);
-      callback(13520).onExperimentsLoaded();
+      callback(13511).onExperimentsLoaded();
     }, () => {
       let c33 = null;
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
@@ -811,7 +811,7 @@ let obj = {
     const tmp = importAll;
     const tmp3 = null != obj.getToken();
     ({ id, username, email } = user);
-    importDefault(1208).setUser(id, username, email, importDefault(11842)(user));
+    importDefault(1208).setUser(id, username, email, importDefault(11843)(user));
     const obj3 = importDefault(1208);
     tmp(707).setAnalyticsToken(analyticsToken);
     id = user.id;
@@ -827,7 +827,7 @@ let obj = {
     if (null != installation) {
       installation = apexExperiments.installation;
       if (null == installation) {
-        let tmp6Result = tmp6(13521);
+        let tmp6Result = tmp6(13512);
         if (tmp6Result.canUseInstallationId()) {
           const Storage3 = tmp4(595).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
@@ -856,7 +856,7 @@ let obj = {
     ({ sessionId, token } = arg0);
     let obj = importDefault(1208);
     ({ id, username, email } = user);
-    obj.setUser(id, username, email, importDefault(11842)(user));
+    obj.setUser(id, username, email, importDefault(11843)(user));
     const id2 = user.id;
     const obj2 = importAll(707);
     const tmp = importDefault;
@@ -1172,7 +1172,7 @@ let obj = {
     const obj2 = importDefault(698);
     obj = { withGuildExperiments: withGuildExperiments.withGuildExperiments, headers: obj, context: null };
     obj = { location: null };
-    let obj3 = require(13519) /* fetchExperiments */;
+    let obj3 = require(13510) /* fetchExperiments */;
     obj[0] = require(1222) /* transitionTo */.getFingerprintLocation();
     obj[2] = obj;
     const experiments = obj3.fetchExperiments(obj);
@@ -1203,7 +1203,7 @@ let obj = {
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
       let c33 = null;
       const obj5 = callback2(709);
-      callback(13520).onExperimentsLoaded();
+      callback(13511).onExperimentsLoaded();
     }, () => {
       let c33 = null;
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });

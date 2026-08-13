@@ -1,10 +1,10 @@
-// Module ID: 15926
-// Function ID: 15927
+// Module ID: 15917
+// Function ID: 15918
 // Name: handleOneRecipientInDM
-// Dependencies: [32, 5, 19, 17, 1391, 13081, 4416, 1922, 9669, 676, 21, 4342, 712, 4355, 4554, 9292, 10944, 4310, 589, 15915, 698, 4062, 1236, 8431, 8441, 9138, 7803, 7263, 1297, 9670, 2]
+// Dependencies: [32, 5, 19, 17, 1391, 13082, 4416, 1922, 9669, 676, 21, 4342, 712, 4355, 4554, 9292, 10946, 4310, 589, 15906, 698, 4062, 1236, 8431, 8441, 9138, 7803, 7263, 1297, 9670, 2]
 // Exports: default
 
-// Module 15926 (handleOneRecipientInDM)
+// Module 15917 (handleOneRecipientInDM)
 import _slicedToArray from "_slicedToArray";
 import performQuery from "performQuery";
 import getGroupDMRecipientLimit from "getGroupDMRecipientLimit";
@@ -227,7 +227,7 @@ function _handleInviteUsers() {
                                 } else {
                                   call(tmp9, false, true);
                                 }
-                                v0(10944)(_slicedToArray);
+                                v0(10946)(_slicedToArray);
                                 dependencyMap = 3;
                                 tmp9 = _slicedToArray;
                               }

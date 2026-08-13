@@ -1,10 +1,10 @@
-// Module ID: 12545
-// Function ID: 12546
+// Module ID: 12546
+// Function ID: 12547
 // Name: WishlistEmptyState
-// Dependencies: [5, 19, 17, 7049, 10153, 9407, 9410, 9412, 9408, 1922, 4391, 7128, 8834, 676, 678, 1924, 21, 3, 4342, 712, 12546, 4072, 1363, 8837, 4310, 7048, 5788, 4338, 1236, 4755, 12170, 4298, 12547, 5768, 7696, 589, 12548, 12238, 8260, 12529, 12549, 4198, 4062, 12550, 10078, 501, 7802, 5893, 10135, 8832, 4020, 9625, 5974, 4022, 9484, 12551, 2007, 7796, 9721, 10151, 2]
+// Dependencies: [5, 19, 17, 7049, 10153, 9407, 9410, 9412, 9408, 1922, 4391, 7128, 8834, 676, 678, 1924, 21, 3, 4342, 712, 12547, 4072, 1363, 8837, 4310, 7048, 5788, 4338, 1236, 4755, 12171, 4298, 12548, 5768, 7696, 589, 12549, 12239, 8260, 12530, 12550, 4198, 4062, 12551, 10078, 501, 7802, 5893, 10135, 8832, 4020, 9625, 5974, 4022, 9484, 12552, 2007, 7796, 9721, 10151, 2]
 // Exports: default
 
-// Module 12545 (WishlistEmptyState)
+// Module 12546 (WishlistEmptyState)
 import get from "get";
 import Themes from "Themes";
 import { View } from "timestamp";
@@ -42,7 +42,7 @@ class WishlistEmptyState {
     tmp2 = closure_2;
     obj = require("useIsMobileWishlistSuggestionsEnabled");
     isMobileWishlistSuggestionsEnabled = obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
-    tmp4 = f54783(isMobileWishlistSuggestionsEnabled);
+    tmp4 = f54777(isMobileWishlistSuggestionsEnabled);
     obj2 = require("ManaContext");
     obj3 = require("AccessibilityAnnouncer");
     str = "mobile-text-heading-primary";

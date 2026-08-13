@@ -1,10 +1,10 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11693
+// Function ID: 11694
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 5259, 4562, 1922, 21, 4342, 712, 4162, 4065, 4191, 4062, 11693, 11694, 6965, 1236, 589, 686, 4187, 11695, 10002, 4083, 4343, 1297, 10001, 4766, 4887, 9902, 4338, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 5259, 4562, 1922, 21, 4342, 712, 4162, 4065, 4191, 4062, 11694, 11695, 6965, 1236, 589, 686, 4187, 11696, 10002, 4083, 4343, 1297, 10001, 4766, 4887, 9902, 4338, 4755, 2]
 // Exports: default
 
-// Module 11692 (DMMessageStickerGreeting)
+// Module 11693 (DMMessageStickerGreeting)
 import reinjectEphemerals from "reinjectEphemerals";
 import set from "set";
 import closure_5 from "set";
@@ -72,9 +72,9 @@ export default function DMMessageStickerGreeting(channel) {
   }
   const intl2 = Text(1236).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(Text(1236).t.m0zYbV, { username: name });
-  const showConvoStarterInDM = Text(11695).useShowConvoStarterInDM(channel);
+  const showConvoStarterInDM = Text(11696).useShowConvoStarterInDM(channel);
   callback = showConvoStarterInDM;
-  const TextResult = Text(11695);
+  const TextResult = Text(11696);
   const tmp2 = END;
   const items2 = [loadSavedGuildStickers];
   const items3 = [showConvoStarterInDM];

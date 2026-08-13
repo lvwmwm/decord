@@ -1,10 +1,10 @@
-// Module ID: 11244
-// Function ID: 11245
+// Module ID: 11245
+// Function ID: 11246
 // Name: GuildTemplateResolving
-// Dependencies: [19, 17, 1395, 1984, 676, 5984, 21, 4342, 712, 5276, 5863, 1297, 11245, 1236, 38, 1628, 1985, 4338, 11247, 8514, 4755, 7454, 12, 9020, 11252, 11253, 9749, 688, 2]
+// Dependencies: [19, 17, 1395, 1984, 676, 5984, 21, 4342, 712, 5276, 5863, 1297, 11246, 1236, 38, 1628, 1985, 4338, 11248, 8514, 4755, 7454, 12, 9020, 11253, 11254, 9749, 688, 2]
 // Exports: default
 
-// Module 11244 (GuildTemplateResolving)
+// Module 11245 (GuildTemplateResolving)
 import get_ActivityIndicator from "Text";
 import { isGuildVocalChannelType } from "createChannelRecord";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";
@@ -51,7 +51,7 @@ function GuildTemplateResolved(guildTemplate) {
   const items1 = [callback(guildTemplate(4338).Text, obj), , , , , , , , , , ];
   obj = { style: tmp.description, variant: "text-lg/medium", color: "text-default", children: guildTemplate.name };
   items1[1] = callback(guildTemplate(4338).Text, obj);
-  items1[2] = callback(importDefault(11247), { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon });
+  items1[2] = callback(importDefault(11248), { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon });
   const obj2 = { label: null, error: null, hint: null, value: null, onChangeText: null, autoFocus: true, autoCorrect: false, returnKeyType: "done" };
   const intl2 = guildTemplate(1236).intl;
   obj2[0] = intl2.string(guildTemplate(1236).t.dBih7e);
@@ -233,7 +233,7 @@ obj[17] = { color: require("Themes").unsafe_rawColors.GREEN_360, fontFamily: Fon
 let closure_14 = createCacheKey.createStyles(obj);
 let closure_16 = importAllResult.memo(() => {
   const obj = { Illustration: null, title: null, body: null };
-  obj[0] = require(11245) /* getInvalidLinkSource */.InvalidLink;
+  obj[0] = require(11246) /* getInvalidLinkSource */.InvalidLink;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.C7ZRNw);
   const intl2 = require(1236) /* getSystemLocale */.intl;

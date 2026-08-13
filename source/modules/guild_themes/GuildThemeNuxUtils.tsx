@@ -1,10 +1,10 @@
-// Module ID: 15368
-// Function ID: 15369
+// Module ID: 15359
+// Function ID: 15360
 // Name: _saveGuildThemeNuxPreference
 // Dependencies: [5, 1340, 4274, 1374, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 15368 (_saveGuildThemeNuxPreference)
+// Module 15359 (_saveGuildThemeNuxPreference)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 

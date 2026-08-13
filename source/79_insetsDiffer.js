@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "Array", left: "HermesInternal", right: "r", bottom: "call" };
+let closure_0 = { top: "useEffect", left: "paddingHorizontal", right: "replace", bottom: "current" };
 arg5.default = function insetsDiffer(arg0, arg1) {
   let rect = arg0;
   if (!arg0) {

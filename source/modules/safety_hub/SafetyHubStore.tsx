@@ -1,9 +1,9 @@
-// Module ID: 11331
-// Function ID: 11332
+// Module ID: 11332
+// Function ID: 11333
 // Name: handleSafetyHubRequestAgeVerificationResetModalAction
-// Dependencies: [7850, 7851, 11332, 589, 709, 2]
+// Dependencies: [7850, 7851, 11333, 589, 709, 2]
 
-// Module 11331 (handleSafetyHubRequestAgeVerificationResetModalAction)
+// Module 11332 (handleSafetyHubRequestAgeVerificationResetModalAction)
 import SafetyHubView from "SafetyHubView";
 import { Store } from "initialize";
 
@@ -122,7 +122,7 @@ obj = {
     let isDsaEligible;
     let username;
     ({ classifications, accountStanding, isDsaEligible, isAppealEligible, username, appealEligibility } = arg0);
-    let closure_6 = importDefault(11332)(classifications, "id");
+    let closure_6 = importDefault(11333)(classifications, "id");
     let c9 = false;
     let c10 = true;
     let c11 = null;

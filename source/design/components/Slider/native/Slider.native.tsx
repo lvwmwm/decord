@@ -1,10 +1,10 @@
-// Module ID: 13497
-// Function ID: 13498
+// Module ID: 13498
+// Function ID: 13499
 // Name: Slider
 // Dependencies: [19, 17, 21, 4342, 712, 4311, 4312, 8034, 2]
 // Exports: Slider
 
-// Module 13497 (Slider)
+// Module 13498 (Slider)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

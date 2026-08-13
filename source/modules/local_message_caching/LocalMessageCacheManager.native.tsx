@@ -1,9 +1,9 @@
-// Module ID: 13880
-// Function ID: 13881
+// Module ID: 13871
+// Function ID: 13872
 // Name: _getKeyForFileId
-// Dependencies: [5, 32, 3999, 1218, 1391, 4562, 676, 13881, 3, 687, 595, 3943, 4031, 7257, 6965, 709, 11195, 11112, 2007, 4523, 5030, 9795, 2]
+// Dependencies: [5, 32, 3999, 1218, 1391, 4562, 676, 13872, 3, 687, 595, 3943, 4031, 7257, 6965, 709, 11196, 11113, 2007, 4523, 5030, 9795, 2]
 
-// Module 13880 (_getKeyForFileId)
+// Module 13871 (_getKeyForFileId)
 import reinjectEphemerals from "reinjectEphemerals";
 import _slicedToArray from "_slicedToArray";
 import hasFlag from "hasFlag";
@@ -382,7 +382,7 @@ function _writeMessage(arg0, id) {
 class LocalMessageCacheManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f110988 = applyArgumentsResult;
+    f110858 = applyArgumentsResult;
     // PrivateIsIn (0x32)
     if (tmp) {
       str = "Cannot initialize private field twice.";
@@ -746,9 +746,9 @@ class LocalMessageCacheManager extends tmp3 {
           continue;
         }
       };
-      f110988 = undefined;
+      f110858 = undefined;
       closure_1 = applyArgumentsResult;
-      f110988 = _rehydrateFailedMessages((arg0) => {
+      f110858 = _rehydrateFailedMessages((arg0) => {
         let closure_0 = arg0;
         let c2 = 0;
         let c1 = 0;

@@ -1,10 +1,10 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16060
+// Function ID: 16061
 // Name: BurstReactionAnimationContainerInner
 // Dependencies: [32, 19, 17, 1388, 21, 4342, 712, 7288, 4311, 4312, 709, 4083, 4343, 10045, 1377, 1297, 7330, 4338, 1236, 4072, 2]
 // Exports: default
 
-// Module 16069 (BurstReactionAnimationContainerInner)
+// Module 16060 (BurstReactionAnimationContainerInner)
 import _slicedToArray from "_slicedToArray";
 import ManaContext from "ManaContext";
 import get_ActivityIndicator from "Text";

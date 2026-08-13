@@ -1,10 +1,10 @@
-// Module ID: 13327
-// Function ID: 13328
+// Module ID: 13328
+// Function ID: 13329
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [19, 17, 9050, 21, 4342, 712, 9051, 9052, 13328, 4310, 4338, 1236, 4755, 5862, 5804, 5436, 2]
+// Dependencies: [19, 17, 9050, 21, 4342, 712, 9051, 9052, 13329, 4310, 4338, 1236, 4755, 5862, 5804, 5436, 2]
 // Exports: default
 
-// Module 13327 (ServerTagPreviewActionSheet)
+// Module 13328 (ServerTagPreviewActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "handleUpdateStart";
@@ -37,7 +37,7 @@ export default function ServerTagPreviewActionSheet(guildId) {
     obj[7] = function onAdopted(arg0) {
       return callback(table[9]).hideActionSheet();
     };
-    let tmp7 = callback(importDefault(13328), obj);
+    let tmp7 = callback(importDefault(13329), obj);
     let tmp8 = callback;
   } else if (guildProfile.fetchStatus === GuildProfileFetchStatus.FETCHED) {
     obj = { style: null, children: null };

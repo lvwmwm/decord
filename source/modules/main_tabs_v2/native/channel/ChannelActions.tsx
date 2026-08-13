@@ -1,7 +1,7 @@
 // Module ID: 8443
 // Function ID: 8444
 // Name: JoinCallButton
-// Dependencies: [19, 17, 5264, 1395, 1391, 4361, 8444, 676, 8445, 21, 4342, 8447, 712, 8449, 8451, 8452, 8459, 589, 5930, 12, 8460, 8602, 4554, 1236, 12601, 6049, 11730, 8455, 500, 4205, 11729, 11790, 10405, 1231, 4198, 11092, 4843, 9785, 12602, 12603, 4558, 12604, 12606, 2]
+// Dependencies: [19, 17, 5264, 1395, 1391, 4361, 8444, 676, 8445, 21, 4342, 8447, 712, 8449, 8451, 8452, 8459, 589, 5930, 12, 8460, 8602, 4554, 1236, 12602, 6049, 11731, 8455, 500, 4205, 11730, 11791, 10405, 1231, 4198, 11093, 4843, 9785, 12603, 12604, 4558, 12605, 12607, 2]
 // Exports: default
 
 // Module 8443 (JoinCallButton)
@@ -283,7 +283,7 @@ export default function ChannelActions(channelId) {
   if (obj1.useHasForumSearchQuery(channelId)) {
     obj = { channelId: null };
     obj[0] = channelId;
-    let tmp4Result = tmp4(channelId(12604).ForumChannelCloseSearchButton, obj);
+    let tmp4Result = tmp4(channelId(12605).ForumChannelCloseSearchButton, obj);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {
@@ -297,7 +297,7 @@ export default function ChannelActions(channelId) {
     const obj2 = { channelId: null, screenIndex: null };
     obj2[0] = channelId;
     obj2[1] = screenIndex;
-    tmp4Result = tmp4(importDefault(12606), obj2);
+    tmp4Result = tmp4(importDefault(12607), obj2);
   }
   obj[1] = tmp4Result;
   return <View style={containerStyle}>{null}</View>;

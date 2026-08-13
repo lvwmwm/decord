@@ -1,10 +1,10 @@
-// Module ID: 11410
-// Function ID: 11411
+// Module ID: 11411
+// Function ID: 11412
 // Name: map
-// Dependencies: [1218, 676, 7257, 4564, 1403, 11411, 11412, 2]
+// Dependencies: [1218, 676, 7257, 4564, 1403, 11412, 11413, 2]
 // Exports: tryCreateInjectedMessage
 
-// Module 11410 (map)
+// Module 11411 (map)
 import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
 
@@ -48,7 +48,7 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
                 num = 0;
               }
               tmp4 = null;
-              if (!tmpResult.hasFlag(num, tmp(11411).ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX)) {
+              if (!tmpResult.hasFlag(num, tmp(11412).ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX)) {
                 tmp4 = null;
                 if (!obj.has(closure_0.id)) {
                   obj = { channelId: null, type: null, content: "", author: null, flags: null, state: null };
@@ -68,10 +68,10 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
                     num2 = 0;
                   }
                   const tmpResult1 = tmp(1403);
-                  const setFlagResult = tmp(1403).setFlag(num2, tmp(11411).ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
-                  const result1 = tmp6(11412).updatePrivateChannelRecipientFlags(closure_0.id, setFlagResult);
+                  const setFlagResult = tmp(1403).setFlag(num2, tmp(11412).ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
+                  const result1 = tmp6(11413).updatePrivateChannelRecipientFlags(closure_0.id, setFlagResult);
                   tmp4 = messageRecord1;
-                  const tmp6Result = tmp6(11412);
+                  const tmp6Result = tmp6(11413);
                 }
               }
             }

@@ -1,9 +1,9 @@
-// Module ID: 12066
-// Function ID: 12067
+// Module ID: 12067
+// Function ID: 12068
 // Name: WaveformBar
-// Dependencies: [32, 19, 17, 4334, 11417, 11418, 676, 21, 4083, 4342, 712, 500, 4754, 4343, 1367, 4065, 4931, 4338, 4072, 2]
+// Dependencies: [32, 19, 17, 4334, 11418, 11419, 676, 21, 4083, 4342, 712, 500, 4754, 4343, 1367, 4065, 4931, 4338, 4072, 2]
 
-// Module 12066 (WaveformBar)
+// Module 12067 (WaveformBar)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import get_ActivityIndicator from "Text";

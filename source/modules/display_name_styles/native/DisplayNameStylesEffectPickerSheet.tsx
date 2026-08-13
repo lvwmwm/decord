@@ -1,10 +1,10 @@
-// Module ID: 14653
-// Function ID: 14654
+// Module ID: 14644
+// Function ID: 14645
 // Name: EffectTile
-// Dependencies: [32, 19, 17, 21, 4342, 712, 7449, 14648, 14649, 4311, 4310, 5437, 5436, 1236, 2661, 4755, 4753, 9523, 9520, 9521, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 7449, 14639, 14640, 4311, 4310, 5437, 5436, 1236, 2661, 4755, 4753, 9523, 9520, 9521, 2]
 // Exports: default
 
-// Module 14653 (EffectTile)
+// Module 14644 (EffectTile)
 import _slicedToArray from "_slicedToArray";
 import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset";
 import get_ActivityIndicator from "DISPLAY_NAME_STYLES_EFFECT_NAMES";
@@ -88,9 +88,9 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let callback2;
   let tmp = createCacheKey();
   let obj = userId(7449);
-  let obj1 = userId(14648);
+  let obj1 = userId(14639);
   const visibleEffectOrder = obj1.useVisibleEffectOrder();
-  let obj2 = userId(14649);
+  let obj2 = userId(14640);
   const displayNameStylesNewEffects = obj2.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   const tmp5 = callback(first.useState(selectedEffectId), 2);

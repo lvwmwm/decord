@@ -1,10 +1,10 @@
-// Module ID: 16448
-// Function ID: 16449
+// Module ID: 16439
+// Function ID: 16440
 // Name: RestrictedHoursLogoutBlockingLayer
-// Dependencies: [32, 19, 17, 1922, 21, 4342, 712, 5863, 1628, 16449, 589, 4083, 4343, 1236, 2303, 7852, 16450, 4072, 4338, 5823, 16451, 5867, 16447, 4752, 11386, 2]
+// Dependencies: [32, 19, 17, 1922, 21, 4342, 712, 5863, 1628, 16440, 589, 4083, 4343, 1236, 2303, 7852, 16441, 4072, 4338, 5823, 16442, 5867, 16438, 4752, 11387, 2]
 // Exports: default
 
-// Module 16448 (RestrictedHoursLogoutBlockingLayer)
+// Module 16439 (RestrictedHoursLogoutBlockingLayer)
 import _slicedToArray from "_slicedToArray";
 import NavigationStack from "NavigationStack";
 import get_ActivityIndicator from "ManaContext";
@@ -205,7 +205,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/par
 export default function RestrictedHoursModal() {
   let _slicedToArray;
   let tmp4;
-  const tmp = importDefault(16451)();
+  const tmp = importDefault(16442)();
   let callback = tmp;
   importDefault = React.useRef(false);
   const dependencyMap = React.useRef(true);
@@ -249,11 +249,11 @@ export default function RestrictedHoursModal() {
       current = tmp4.current;
     }
     if (!current) {
-      const result = callback(16447).closeRestrictedHoursModal();
-      const obj = callback(16447);
+      const result = callback(16438).closeRestrictedHoursModal();
+      const obj = callback(16438);
     }
   }, items1);
   importDefault(4752)(() => true);
   obj = { screens: navigatorScreens, initialRouteName: constants.MAIN };
-  return callback2(callback(11386).Modal, obj);
+  return callback2(callback(11387).Modal, obj);
 };

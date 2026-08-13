@@ -1,10 +1,10 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 15955
+// Function ID: 15956
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 13048, 676, 6943, 1924, 21, 687, 4342, 712, 15965, 698, 1236, 3943, 647, 6958, 6950, 15963, 1993, 4338, 4007, 4887, 1297, 7749, 4766, 5815, 2]
+// Dependencies: [19, 17, 13049, 676, 6943, 1924, 21, 687, 4342, 712, 15956, 698, 1236, 3943, 647, 6958, 6950, 15954, 1993, 4338, 4007, 4887, 1297, 7749, 4766, 5815, 2]
 // Exports: default
 
-// Module 15964 (YouExpiringTrialOfferCard)
+// Module 15955 (YouExpiringTrialOfferCard)
 import Text from "Text";
 import { View } from "useShouldShowExpiringTrialOfferCard";
 import clearDismissUntil from "clearDismissUntil";
@@ -59,7 +59,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
     }
   }
   const tmp7Result = importDefault(6950)(num, closure_15);
-  let tmp4Result = tmp4(15963);
+  let tmp4Result = tmp4(15954);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {

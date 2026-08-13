@@ -1,9 +1,9 @@
-// Module ID: 15801
-// Function ID: 15802
+// Module ID: 15792
+// Function ID: 15793
 // Name: SearchFreezeContainer
-// Dependencies: [19, 17, 11769, 21, 4342, 15719, 589, 15802, 15886, 2]
+// Dependencies: [19, 17, 11770, 21, 4342, 15710, 589, 15793, 15877, 2]
 
-// Module 15801 (SearchFreezeContainer)
+// Module 15792 (SearchFreezeContainer)
 import { View } from "get ActivityIndicator";
 import prototype from "prototype";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ function SearchFreezeContainer(visible) {
   obj = { style: items, "aria-hidden": !visible, children };
   items[1] = visible ? tmp.visible : tmp.hidden;
   obj[2] = closure_5(View, obj);
-  return closure_5(importDefault(15719), obj);
+  return closure_5(importDefault(15710), obj);
 }
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles({ hidden: { opacity: 0 }, visible: { flex: 1 } });
@@ -37,8 +37,8 @@ const memoResult = require("noop").memo((width) => {
   const items1 = [searchContext];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.isAutocompleteVisible(searchContext), items1);
   obj = { children: null };
-  obj = { visible: !stateFromStores, containerStyle, children: callback(importDefault(15802), { searchContext, width: width.width }) };
-  const items2 = [callback(SearchFreezeContainer, obj), callback(SearchFreezeContainer, { visible: stateFromStores, containerStyle, children: callback(importDefault(15886), { searchContext }) })];
+  obj = { visible: !stateFromStores, containerStyle, children: callback(importDefault(15793), { searchContext, width: width.width }) };
+  const items2 = [callback(SearchFreezeContainer, obj), callback(SearchFreezeContainer, { visible: stateFromStores, containerStyle, children: callback(importDefault(15877), { searchContext }) })];
   obj[0] = items2;
   return callback2(closure_6, obj);
 });

@@ -1,10 +1,10 @@
-// Module ID: 11746
-// Function ID: 11747
+// Module ID: 11747
+// Function ID: 11748
 // Name: _addDirectoryGuildEntry
-// Dependencies: [5, 11733, 11735, 676, 636, 709, 530, 5168, 503, 2]
+// Dependencies: [5, 11734, 11736, 676, 636, 709, 530, 5168, 503, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 11746 (_addDirectoryGuildEntry)
+// Module 11747 (_addDirectoryGuildEntry)
 import importDefaultResult from "dispatcher";
 import getSearchState from "getSearchState";
 import { DirectoryEntryCategories } from "DirectoryEntryTypes";

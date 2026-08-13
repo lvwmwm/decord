@@ -1,10 +1,10 @@
-// Module ID: 11720
-// Function ID: 11721
+// Module ID: 11721
+// Function ID: 11722
 // Name: DoubleTapToReactChatInputBannerInner
-// Dependencies: [32, 19, 17, 4334, 1388, 1925, 21, 4342, 712, 500, 647, 5400, 1435, 4338, 1236, 11721, 4887, 5366, 9399, 503, 4083, 4343, 1297, 4310, 11813, 2007, 8902, 4772, 8712, 4034, 11194, 8121, 10045, 1377, 2]
+// Dependencies: [32, 19, 17, 4334, 1388, 1925, 21, 4342, 712, 500, 647, 5400, 1435, 4338, 1236, 11722, 4887, 5366, 9399, 503, 4083, 4343, 1297, 4310, 11814, 2007, 8902, 4772, 8712, 4034, 11195, 8121, 10045, 1377, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 11720 (DoubleTapToReactChatInputBannerInner)
+// Module 11721 (DoubleTapToReactChatInputBannerInner)
 import SelectedDismissibleContent from "SelectedDismissibleContent";
 import encodeProperties from "encodeProperties";
 import { View } from "XSmallIcon";
@@ -58,7 +58,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp2(1236).intl;
   obj5[2] = intl.string(require(1236) /* getSystemLocale */.t["6RUX7d"]);
-  const items3 = [closure_9(require(4338) /* Text */.Text, obj5), closure_9(require(11721) /* renderChannelBadge */.NewBadge, {})];
+  const items3 = [closure_9(require(4338) /* Text */.Text, obj5), closure_9(require(11722) /* renderChannelBadge */.NewBadge, {})];
   obj4[1] = items3;
   const items4 = [closure_10(View, obj4), ];
   const obj6 = { variant: "text-xs/medium", color: "text-default", children: null };

@@ -1,10 +1,10 @@
-// Module ID: 11741
-// Function ID: 11742
+// Module ID: 11742
+// Function ID: 11743
 // Name: GuildDirectoryCreateOrAddHeader
-// Dependencies: [32, 19, 17, 11742, 11740, 21, 4342, 712, 589, 5414, 5819, 11743, 9005, 1236, 4338, 9191, 1628, 4755, 1499, 5369, 11748, 11739, 2]
+// Dependencies: [32, 19, 17, 11743, 11741, 21, 4342, 712, 589, 5414, 5819, 11744, 9005, 1236, 4338, 9191, 1628, 4755, 1499, 5369, 11749, 11740, 2]
 // Exports: default
 
-// Module 11741 (GuildDirectoryCreateOrAddHeader)
+// Module 11742 (GuildDirectoryCreateOrAddHeader)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useRefValue";
 import get_ActivityIndicator from "Button";
@@ -94,7 +94,7 @@ let closure_13 = importAllResult.memo((guild) => {
   obj = { label: guild.name, icon: null, trailing: null, start: null, end: null };
   obj = { style: callback3().guildIcon, guild };
   obj[1] = callback(directoryChannelId(5819), obj);
-  obj[2] = callback(directoryChannelId(11743), { entry: stateFromStores });
+  obj[2] = callback(directoryChannelId(11744), { entry: stateFromStores });
   obj[3] = start;
   obj[4] = end;
   return callback(guild(5414).TableRow, obj);

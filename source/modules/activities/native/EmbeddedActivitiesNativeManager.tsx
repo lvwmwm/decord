@@ -1,9 +1,9 @@
-// Module ID: 10573
-// Function ID: 10574
+// Module ID: 10575
+// Function ID: 10576
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 1391, 4416, 1390, 4370, 676, 4245, 7855, 500, 10574, 10575, 1208, 10576, 10705, 4684, 1236, 10580, 3979, 698, 709, 10948, 10586, 4062, 9922, 1231, 1370, 514, 2]
+// Dependencies: [5, 17, 1391, 4416, 1390, 4370, 676, 4245, 7855, 500, 10576, 10577, 1208, 10578, 10707, 4684, 1236, 10582, 3979, 698, 709, 10950, 10588, 4062, 9922, 1231, 1370, 514, 2]
 
-// Module 10573 (postMessageToWebView)
+// Module 10575 (postMessageToWebView)
 import items3 from "items3";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -314,7 +314,7 @@ prototype["hidePIPEmbed"] = function hidePIPEmbed(arg0) {
   }
 };
 prototype["clearEmbeddedActivityState"] = function clearEmbeddedActivityState(_location, applicationId, showFeedback) {
-  let obj = require(10586) /* _runPrimaryAppCommandOrJoinEmbeddedActivity */;
+  let obj = require(10588) /* _runPrimaryAppCommandOrJoinEmbeddedActivity */;
   obj = { location: _location, applicationId, showFeedback };
   obj.stopEmbeddedActivity(obj);
   obj = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId, lockState: null, pictureInPictureLockState: null };

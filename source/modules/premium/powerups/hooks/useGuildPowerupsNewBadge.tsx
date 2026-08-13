@@ -1,10 +1,10 @@
-// Module ID: 11933
-// Function ID: 11934
+// Module ID: 11934
+// Function ID: 11935
 // Name: useGuildPowerupsNewBadge
-// Dependencies: [32, 19, 4229, 4230, 1388, 1377, 589, 11926, 6065, 1379, 2]
+// Dependencies: [32, 19, 4229, 4230, 1388, 1377, 589, 11927, 6065, 1379, 2]
 // Exports: default, useAutoDismissGuildPowerupsNewBadge
 
-// Module 11933 (useGuildPowerupsNewBadge)
+// Module 11934 (useGuildPowerupsNewBadge)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -26,13 +26,13 @@ export default function useGuildPowerupsNewBadge(arg0) {
   let obj = _require(589);
   const items = [calculateAppliedBoosts];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getStateForGuild(closure_0));
-  const tmp4Result = importDefault(11926)(arg0, stateFromStores);
+  const tmp4Result = importDefault(11927)(arg0, stateFromStores);
   let num = 0;
   if (tmp4Result >= constants.GUILD_THEME) {
     num = tmp4Result;
   }
   const tmp = _require;
-  const tmp4 = importDefault(11926);
+  const tmp4 = importDefault(11927);
   let tmp6 = null;
   if (num > 0) {
     tmp6 = null;
@@ -63,7 +63,7 @@ export const useAutoDismissGuildPowerupsNewBadge = function useAutoDismissGuildP
   const items = [calculateAppliedBoosts];
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_5.getStateForGuild(closure_0));
   let obj = _require(589);
-  const tmp2Result = num(11926)(guildId, stateFromStores);
+  const tmp2Result = num(11927)(guildId, stateFromStores);
   num = 0;
   if (tmp2Result >= constants.GUILD_THEME) {
     num = tmp2Result;

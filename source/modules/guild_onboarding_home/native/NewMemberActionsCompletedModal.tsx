@@ -1,10 +1,10 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 16515
+// Function ID: 16516
 // Name: NewMemberActionsCompleted
-// Dependencies: [19, 17, 21, 4342, 712, 4083, 4343, 4550, 11716, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4083, 4343, 4550, 11717, 4338, 1236, 2]
 // Exports: default
 
-// Module 16524 (NewMemberActionsCompleted)
+// Module 16515 (NewMemberActionsCompleted)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -48,7 +48,7 @@ export default function NewMemberActionsCompleted(arg0) {
   fn.__initData = closure_8;
   const animatedStyle = obj1.useAnimatedStyle(fn);
   const effect1 = React.useEffect(() => {
-    const timerId = setTimeout(() => callback2(4550).popWithKey(callback(11716).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY), 2500);
+    const timerId = setTimeout(() => callback2(4550).popWithKey(callback(11717).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY), 2500);
   }, []);
   obj = { style: tmp.screen, children: null };
   obj1 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light", children: null };

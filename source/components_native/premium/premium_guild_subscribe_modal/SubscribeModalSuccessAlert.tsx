@@ -1,10 +1,10 @@
-// Module ID: 12958
-// Function ID: 12959
+// Module ID: 12959
+// Function ID: 12960
 // Name: PremiumPaymentGuildAnimation
-// Dependencies: [32, 19, 17, 1910, 6943, 21, 4342, 712, 12959, 12960, 589, 4278, 4773, 1236, 4684, 5192, 4766, 691, 1363, 12961, 12962, 4338, 2]
+// Dependencies: [32, 19, 17, 1910, 6943, 21, 4342, 712, 12960, 12961, 589, 4278, 4773, 1236, 4684, 5192, 4766, 691, 1363, 12962, 12963, 4338, 2]
 // Exports: default
 
-// Module 12958 (PremiumPaymentGuildAnimation)
+// Module 12959 (PremiumPaymentGuildAnimation)
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "keys";
@@ -24,7 +24,7 @@ class PremiumPaymentGuildAnimation {
     tmp = jsxs();
     obj = { nextScene, onSceneComplete, loop, sceneSegments: idle, style: tmp.animation, source: null };
     tmp2 = require("componentDidMount");
-    obj[5] = require("module_12960");
+    obj[5] = require("module_12961");
     return jsx(tmp2, obj);
   }
 }
@@ -99,9 +99,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const tmp14 = importDefault(4766);
   const tmp15 = closure_6;
   if (tmp2Result.isThemeLight(tmp9)) {
-    let tmp8Result = tmp8(12961);
+    let tmp8Result = tmp8(12962);
   } else {
-    tmp8Result = tmp8(12962);
+    tmp8Result = tmp8(12963);
   }
   obj3[1] = tmp8Result;
   obj2[1] = callback2(tmp15, obj3);

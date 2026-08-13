@@ -1,10 +1,10 @@
-// Module ID: 15983
-// Function ID: 15984
+// Module ID: 15974
+// Function ID: 15975
 // Name: AddModeratorsActionSheet
 // Dependencies: [5, 32, 19, 17, 1910, 7826, 21, 4342, 712, 589, 4535, 5174, 1954, 9047, 4061, 4310, 5437, 5436, 1236, 4755, 9067, 1399, 2]
 // Exports: default
 
-// Module 15983 (AddModeratorsActionSheet)
+// Module 15974 (AddModeratorsActionSheet)
 import RowType from "RowType";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";

@@ -1,10 +1,10 @@
-// Module ID: 15330
-// Function ID: 15331
+// Module ID: 15321
+// Function ID: 15322
 // Name: getVoiceUserHeight
-// Dependencies: [19, 17, 4334, 676, 21, 1297, 9502, 4342, 712, 9845, 589, 9288, 9289, 9291, 698, 4083, 4343, 1435, 15331, 9234, 9236, 9230, 9232, 7759, 7736, 12283, 9301, 2]
+// Dependencies: [19, 17, 4334, 676, 21, 1297, 9502, 4342, 712, 9845, 589, 9288, 9289, 9291, 698, 4083, 4343, 1435, 15322, 9234, 9236, 9230, 9232, 7759, 7736, 12284, 9301, 2]
 // Exports: getVoiceUserHeight
 
-// Module 15330 (getVoiceUserHeight)
+// Module 15321 (getVoiceUserHeight)
 import importAllResult from "MicrophoneDenyIcon";
 import { View } from "getAvatarURL";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

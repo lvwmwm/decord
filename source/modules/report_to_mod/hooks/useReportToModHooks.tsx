@@ -1,10 +1,10 @@
-// Module ID: 11102
-// Function ID: 11103
+// Module ID: 11103
+// Function ID: 11104
 // Name: useIsReportToModEnabled
 // Dependencies: [19, 1910, 4562, 589, 5927, 5948, 5935, 6965, 8357, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 11102 (useIsReportToModEnabled)
+// Module 11103 (useIsReportToModEnabled)
 import { useEffect } from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import reinjectEphemerals from "reinjectEphemerals";

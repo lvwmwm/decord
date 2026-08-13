@@ -1,10 +1,10 @@
-// Module ID: 15213
-// Function ID: 15214
+// Module ID: 15204
+// Function ID: 15205
 // Name: usePortraitOrientationOnly
 // Dependencies: [19, 4322, 1624, 8521, 8944, 2]
 // Exports: default
 
-// Module 15213 (usePortraitOrientationOnly)
+// Module 15204 (usePortraitOrientationOnly)
 import noop from "noop";
 
 let require = arg1;

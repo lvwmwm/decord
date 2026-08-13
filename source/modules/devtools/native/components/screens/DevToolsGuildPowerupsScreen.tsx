@@ -1,10 +1,10 @@
-// Module ID: 15101
-// Function ID: 15102
+// Module ID: 15092
+// Function ID: 15093
 // Name: setWarningBoosts
-// Dependencies: [5, 19, 17, 1340, 11983, 1910, 4165, 15102, 676, 21, 4342, 712, 530, 3943, 4238, 11911, 15016, 5808, 11917, 1374, 1377, 1628, 589, 4338, 5807, 5414, 2]
+// Dependencies: [5, 19, 17, 1340, 11984, 1910, 4165, 15093, 676, 21, 4342, 712, 530, 3943, 4238, 11912, 15007, 5808, 11918, 1374, 1377, 1628, 589, 4338, 5807, 5414, 2]
 // Exports: default
 
-// Module 15101 (setWarningBoosts)
+// Module 15092 (setWarningBoosts)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import updateUserGuildSettings from "updateUserGuildSettings";
 import get_ActivityIndicator from "TableSwitchRow";
@@ -104,7 +104,7 @@ function _setWarningBoosts() {
           } else {
             obj = callback(4238);
             const appliedGuildBoostsForGuild = obj.fetchAppliedGuildBoostsForGuild(callback);
-            obj1 = callback(11911);
+            obj1 = callback(11912);
             const guildBoostEntitlements = obj1.fetchGuildBoostEntitlements(callback, true);
             c6 = 3;
             return { value: "HermesInternal", done: null };
@@ -199,7 +199,7 @@ function UserDCSwitchRow(dc) {
   let handleToggleDismissState;
   let isDismissed;
   dc = dc.dc;
-  ({ isDismissed, handleToggleDismissState } = importDefault(15016)(dc));
+  ({ isDismissed, handleToggleDismissState } = importDefault(15007)(dc));
   const obj = { label: null, value: null, onValueChange: null };
   obj[0] = callback3(dc);
   obj[1] = isDismissed;

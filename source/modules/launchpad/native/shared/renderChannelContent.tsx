@@ -1,10 +1,10 @@
-// Module ID: 16142
-// Function ID: 16143
+// Module ID: 16133
+// Function ID: 16134
 // Name: ChannelContent
-// Dependencies: [19, 17, 9844, 4541, 21, 4342, 500, 16137, 4835, 16143, 4338, 4864, 8007, 15325, 2]
+// Dependencies: [19, 17, 9844, 4541, 21, 4342, 500, 16128, 4835, 16134, 4338, 4864, 8007, 15316, 2]
 // Exports: default
 
-// Module 16142 (ChannelContent)
+// Module 16133 (ChannelContent)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
@@ -67,13 +67,13 @@ function ChannelContent(arg0) {
   }
   const obj2 = { style: { flexDirection: "row", paddingRight: num, alignItems: "center" }, children: null };
   const obj3 = { title: name, muted, unread, resolvedUnreadSetting: null, connected: null };
-  const tmp4 = importDefault(16137)();
+  const tmp4 = importDefault(16128)();
   if (resolvedUnreadSetting == null) {
     resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
   }
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
-  const items1 = [closure_7(importDefault(16143), obj3), , ];
+  const items1 = [closure_7(importDefault(16134), obj3), , ];
   tmp9Result = null;
   if (null != channelCategoryName) {
     const obj4 = { variant: "text-xs/bold", color: "text-muted", style: null, children: null };
@@ -115,7 +115,7 @@ function ChannelContent(arg0) {
     if (isSubscriptionGated) {
       const obj9 = { locked: null, isInMainTabsExperiment: true };
       obj9[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp9(tmp2(15325), obj9);
+      isSubscriptionGated = tmp9(tmp2(15316), obj9);
     }
     items3[2] = isSubscriptionGated;
     obj5[1] = items3;

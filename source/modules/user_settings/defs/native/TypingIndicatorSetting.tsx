@@ -1,9 +1,9 @@
-// Module ID: 14664
-// Function ID: 14665
+// Module ID: 14655
+// Function ID: 14656
 // Name: dismissiblePremiumNewBadgeRouteProps
-// Dependencies: [676, 14665, 1377, 10407, 1236, 3371, 14667, 13988, 14669, 2]
+// Dependencies: [676, 14656, 1377, 10407, 1236, 3371, 14658, 13979, 14660, 2]
 
-// Module 14664 (dismissiblePremiumNewBadgeRouteProps)
+// Module 14655 (dismissiblePremiumNewBadgeRouteProps)
 import createDismissiblePremiumNewBadgeRouteProps from "createDismissiblePremiumNewBadgeRouteProps";
 import createToggle from "createToggle";
 
@@ -21,14 +21,14 @@ obj = {
   useTrailing,
   usePreNavigationAction,
   usePredicate() {
-    return "settings" === require(13988) /* apexExperiment */.useCustomTypingIndicatorConfig("TypingIndicatorSetting").entryPoint;
+    return "settings" === require(13979) /* apexExperiment */.useCustomTypingIndicatorConfig("TypingIndicatorSetting").entryPoint;
   },
   screen: obj
 };
 obj = {
   route: require("ME").UserSettingsSections.TYPING_INDICATOR,
   getComponent() {
-    return require(14669) /* CustomTypingIndicatorEditScreen */.default;
+    return require(14660) /* CustomTypingIndicatorEditScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

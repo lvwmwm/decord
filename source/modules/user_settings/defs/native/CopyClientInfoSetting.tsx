@@ -1,10 +1,10 @@
-// Module ID: 14820
-// Function ID: 14821
+// Module ID: 14811
+// Function ID: 14812
 // Name: getClientInfo
-// Dependencies: [10368, 21, 1625, 4310, 11236, 5796, 4061, 5804, 5436, 1236, 5806, 4290, 4322, 10407, 8473, 4034, 2]
+// Dependencies: [10368, 21, 1625, 4310, 11237, 5796, 4061, 5804, 5436, 1236, 5806, 4290, 4322, 10407, 8473, 4034, 2]
 // Exports: getClientInfoString
 
-// Module 14820 (getClientInfo)
+// Module 14811 (getClientInfo)
 import getCurrentBuildOverride from "getCurrentBuildOverride";
 import jsxProd from "jsxProd";
 import createToggle from "createToggle";
@@ -17,7 +17,7 @@ function getClientInfo() {
   const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
   let tmp;
   if (overrides != null) {
-    tmp = overrides[require(undefined, 11236) /* setBuildOverrideForBranch */.DEVICE_FIELD];
+    tmp = overrides[require(undefined, 11237) /* setBuildOverrideForBranch */.DEVICE_FIELD];
   }
   let str2 = "N/A";
   if (str.trim().length > 0) {

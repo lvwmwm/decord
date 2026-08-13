@@ -1,10 +1,10 @@
-// Module ID: 14478
-// Function ID: 14479
+// Module ID: 14469
+// Function ID: 14470
 // Name: NonInlineConsoleConnection
-// Dependencies: [19, 17, 676, 21, 712, 4342, 10420, 11221, 10449, 10451, 4310, 6059, 14436, 2007, 9566, 9567, 9571, 7233, 7232, 5205, 10452, 5807, 5414, 12252, 1236, 9355, 2]
+// Dependencies: [19, 17, 676, 21, 712, 4342, 10420, 11222, 10451, 10453, 4310, 6059, 14427, 2007, 9566, 9567, 9571, 7222, 7233, 5205, 10454, 5807, 5414, 12253, 1236, 9355, 2]
 // Exports: default
 
-// Module 14478 (NonInlineConsoleConnection)
+// Module 14469 (NonInlineConsoleConnection)
 import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource";
 import { View } from "AdCreativeType";
 import ME from "ME";
@@ -36,7 +36,7 @@ function ConsoleRow(onPress) {
   const type = merged.type;
   if (constants.PLAYSTATION === type) {
     let obj = { arrow: true, icon: null, label: null, subLabel: null, onPress: null };
-    obj[1] = callback(onPress(12252).PlaystationNeutralIcon, {});
+    obj[1] = callback(onPress(12253).PlaystationNeutralIcon, {});
     const intl3 = onPress(1236).intl;
     obj[2] = intl3.string(onPress(1236).t.JafL6p);
     let stringResult;
@@ -94,9 +94,9 @@ export default function QuestBottomSheetConsoleConnect(quest) {
   }
   let obj = quest(10420);
   xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  closure_4 = quest(11221).useTrackQuestContentClickedWithImpression();
-  let obj2 = quest(11221);
-  closure_5 = quest(10449).useQuestImpressionId();
+  closure_4 = quest(11222).useTrackQuestContentClickedWithImpression();
+  let obj2 = quest(11222);
+  closure_5 = quest(10451).useQuestImpressionId();
   const items = [quest, xboxAndPlaystationAccounts];
   obj = {
     consoles: xboxAndPlaystationAccounts.useMemo(() => {

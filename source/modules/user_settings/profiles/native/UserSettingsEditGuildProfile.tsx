@@ -1,10 +1,10 @@
-// Module ID: 14030
-// Function ID: 14031
+// Module ID: 14021
+// Function ID: 14022
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8309, 1922, 21, 4342, 712, 5768, 5788, 589, 14031, 10184, 8356, 14033, 5414, 5819, 9514, 4310, 14035, 2007, 14036, 2]
+// Dependencies: [19, 17, 8309, 1922, 21, 4342, 712, 5768, 5788, 589, 14022, 10184, 8356, 14024, 5414, 5819, 9514, 4310, 14026, 2007, 14027, 2]
 // Exports: default
 
-// Module 14030 (UserSettingsEditGuildProfile)
+// Module 14021 (UserSettingsEditGuildProfile)
 import asyncRequireImpl from "asyncRequireImpl";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
 import handleFormOpen from "handleFormOpen";

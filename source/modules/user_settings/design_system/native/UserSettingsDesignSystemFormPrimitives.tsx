@@ -1,10 +1,10 @@
-// Module ID: 14898
-// Function ID: 14899
+// Module ID: 14889
+// Function ID: 14890
 // Name: Radio
-// Dependencies: [32, 19, 17, 676, 21, 4342, 4338, 8030, 8029, 5807, 5808, 10494, 8497, 5414, 13497, 10826, 4870, 4753, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 4338, 8030, 8029, 5807, 5808, 10496, 8497, 5414, 13498, 10828, 4870, 4753, 2]
 // Exports: default
 
-// Module 14898 (Radio)
+// Module 14889 (Radio)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ScrollView } from "Stack";
@@ -104,7 +104,7 @@ function InlineCheckbox(startChecked) {
   const onToggle = React.useCallback((arg0) => {
     _undefined(arg0);
   }, []);
-  return callback2(_require(10494).Checkbox, { label, description, required, checked, onToggle });
+  return callback2(_require(10496).Checkbox, { label, description, required, checked, onToggle });
 }
 function InlineCheckboxDemo() {
   const obj = { children: null };
@@ -128,10 +128,10 @@ function SliderDemo() {
   const items = [callback2(require(4338) /* Text */.Text, { variant: "heading-lg/bold", children: "Slider" }), ];
   obj = { start: true, end: true, label: "Volume", subLabel: null };
   obj = { startIcon: null, endIcon: null, onValueChange: null };
-  obj[0] = callback2(require(10826) /* VoiceXIcon */.VoiceXIcon, {});
+  obj[0] = callback2(require(10828) /* VoiceXIcon */.VoiceXIcon, {});
   obj[1] = callback2(require(4870) /* VoiceNormalIcon */.VoiceNormalIcon, {});
   obj[2] = NOOP;
-  obj[3] = callback2(require(13497) /* Slider */.Slider, obj);
+  obj[3] = callback2(require(13498) /* Slider */.Slider, obj);
   items[1] = callback2(require(5414) /* TableRowInner */.TableRow, obj);
   obj[0] = items;
   return callback3(closure_8, obj);

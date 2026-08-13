@@ -1,10 +1,10 @@
-// Module ID: 12328
-// Function ID: 12329
+// Module ID: 12329
+// Function ID: 12330
 // Name: setUseEntranceAnimationState
 // Dependencies: [32, 19, 1297, 644, 705, 4343, 4083, 2]
 // Exports: useEntranceAnimation
 
-// Module 12328 (setUseEntranceAnimationState)
+// Module 12329 (setUseEntranceAnimationState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import keys from "keys";

@@ -1,9 +1,9 @@
-// Module ID: 11032
-// Function ID: 11033
+// Module ID: 11033
+// Function ID: 11034
 // Name: onTapMention
-// Dependencies: [5, 11030, 9796, 8986, 4058, 10993, 8832, 5788, 4310, 11033, 2007, 11, 4034, 1236, 5796, 4061, 4683, 8783, 2]
+// Dependencies: [5, 11031, 9796, 8986, 4058, 10994, 8832, 5788, 4310, 11034, 2007, 11, 4034, 1236, 5796, 4061, 4683, 8783, 2]
 
-// Module 11032 (onTapMention)
+// Module 11033 (onTapMention)
 import importDefaultResult from "castNativeSyntheticEventData";
 
 const require = arg1;
@@ -17,7 +17,7 @@ let obj = {
     if (tmp) {
       const obj = { urlString: null };
       obj[0] = url;
-      importDefault(11030)(obj);
+      importDefault(11031)(obj);
     }
   },
   onTapAttachmentLink: null,
@@ -194,7 +194,7 @@ let closure_3 = importDefaultResult((arg0) => {
             callback = arg1;
             obj = { urlString: null };
             obj[0] = callback;
-            callback(11030)(obj);
+            callback(11031)(obj);
           }
           c4 = 3;
           const obj3 = { value: null, done: true };
@@ -227,7 +227,7 @@ obj[3] = function onTapMention(closure_0) {
   let roleId;
   let roleName;
   let userId;
-  let obj = parsedUserId(10993);
+  let obj = parsedUserId(10994);
   const nativeSyntheticEventData = obj.getNativeSyntheticEventData(closure_0);
   ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
   ({ roleId, guildId } = nativeSyntheticEventData);
@@ -246,7 +246,7 @@ obj[3] = function onTapMention(closure_0) {
         obj[0] = guildId;
         obj[1] = roleId;
         obj[2] = channelId;
-        importDefault(4310).openLazy(tmp(2007)(11033, tmp2.paths), "RoleMembersActionSheet", obj);
+        importDefault(4310).openLazy(tmp(2007)(11034, tmp2.paths), "RoleMembersActionSheet", obj);
         const obj9 = importDefault(4310);
       }
     }
@@ -255,7 +255,7 @@ obj[3] = function onTapMention(closure_0) {
         const obj1 = { guildId: null, roleId: null, channelId: null };
         obj1[0] = guildId;
         const obj6 = importDefault(4310);
-        const tmp10 = tmp(2007)(11033, tmp2.paths);
+        const tmp10 = tmp(2007)(11034, tmp2.paths);
         obj1[1] = importDefault(11).castGuildIdAsEveryoneGuildRoleId(guildId);
         obj1[2] = channelId;
         obj6.openLazy(tmp10, "RoleMembersActionSheet", obj1);

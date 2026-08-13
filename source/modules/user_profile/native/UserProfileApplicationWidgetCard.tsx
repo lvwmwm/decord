@@ -1,10 +1,10 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 12418
+// Function ID: 12419
 // Name: UserProfileApplicationWidgetCard
-// Dependencies: [19, 17, 1994, 1218, 21, 4342, 712, 12418, 12419, 12509, 12510, 12511, 12512, 589, 12420, 1367, 5774, 5967, 9322, 9333, 12513, 5771, 12503, 8951, 5815, 7131, 11666, 4338, 1236, 2]
+// Dependencies: [19, 17, 1994, 1218, 21, 4342, 712, 12419, 12420, 12510, 12511, 12512, 12513, 589, 12421, 1367, 5774, 5967, 9322, 9333, 12514, 5771, 12504, 8951, 5815, 7131, 11667, 4338, 1236, 2]
 // Exports: default
 
-// Module 12417 (UserProfileApplicationWidgetCard)
+// Module 12418 (UserProfileApplicationWidgetCard)
 import GameProfileEmbedAction from "GameProfileEmbedAction";
 import get_ActivityIndicator from "importDefaultResult1";
 import _getSystemLocale from "_getSystemLocale";
@@ -80,12 +80,12 @@ export default function UserProfileApplicationWidgetCard(userId) {
   obj = { location: "UserProfileApplicationWidgetCard", applicationId: id, source: tmp2(9333).GameProfileSources.UserProfileApplicationWidget, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp7ResultResult = tmp7Result(obj);
   dependencyMap = tmp7ResultResult;
-  ({ surfaceConfigs, resolutionContext, isLoading, hasIdentity } = stateFromStores(12513)(userId, widget.applicationId));
+  ({ surfaceConfigs, resolutionContext, isLoading, hasIdentity } = stateFromStores(12514)(userId, widget.applicationId));
   const tmp15 = stateFromStores(5771)(getOrFetchApplication);
   token = tmp15.token;
   ({ fetched, canStartAuthorization } = tmp15);
-  const tmp16 = surfaceConfigs[userId(undefined, 12503).ApplicationWidgetConfigSurface.WIDGET_TOP];
-  const tmp17 = surfaceConfigs[userId(undefined, 12503).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+  const tmp16 = surfaceConfigs[userId(undefined, 12504).ApplicationWidgetConfigSurface.WIDGET_TOP];
+  const tmp17 = surfaceConfigs[userId(undefined, 12504).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
   let tmp18 = null;
   if (null != iconURL) {
     obj = { source: null, style: null };
@@ -132,7 +132,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
         obj3[0] = tmp.stillSyncing;
         const obj4 = { size: "xs", color: null };
         obj4[1] = tmp7(712).colors.TEXT_MUTED;
-        const items3 = [callback(tmp2(11666).HourglassIcon, obj4), ];
+        const items3 = [callback(tmp2(11667).HourglassIcon, obj4), ];
         const obj5 = { variant: "text-sm/medium", color: "text-muted", children: null };
         const intl = tmp2(1236).intl;
         obj5[2] = intl.string(tmp2(1236).t.z5K4Uv);
@@ -143,8 +143,8 @@ export default function UserProfileApplicationWidgetCard(userId) {
       }
     }
   }
-  const tmp14 = stateFromStores(12513)(userId, widget.applicationId);
-  const result = userId(12420).bindResolveFieldValue(resolutionContext);
+  const tmp14 = stateFromStores(12514)(userId, widget.applicationId);
+  const result = userId(12421).bindResolveFieldValue(resolutionContext);
   const obj6 = {
     style: tmp.header,
     onPress() {
@@ -159,7 +159,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
     accessibilityLabel: null,
     children: null
   };
-  const tmp2Result1 = userId(12420);
+  const tmp2Result1 = userId(12421);
   const tmp31 = closure_5;
   obj6[4] = userId(7131).getWidgetTitle(widget);
   const items4 = [tmp18, ];
@@ -183,22 +183,22 @@ export default function UserProfileApplicationWidgetCard(userId) {
   }
   let tmp32Result = null;
   if (null != tmp16) {
-    if (tmp2(12418).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
+    if (tmp2(12419).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
       const obj8 = { header: null, topConfig: null, resolveFieldValue: null, numberFormat: null };
       obj8[0] = tmp30Result;
       obj8[1] = tmp16;
       obj8[2] = result;
       obj8[3] = memo;
-      tmp32Result = tmp32(tmp7(12419), obj8);
+      tmp32Result = tmp32(tmp7(12420), obj8);
     } else {
       tmp32Result = null;
-      if (tmp2(12418).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
+      if (tmp2(12419).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
         const obj9 = { header: null, topConfig: null, resolveFieldValue: null, numberFormat: null };
         obj9[0] = tmp30Result;
         obj9[1] = tmp16;
         obj9[2] = result;
         obj9[3] = memo;
-        tmp32Result = tmp32(tmp7(12509), obj9);
+        tmp32Result = tmp32(tmp7(12510), obj9);
       }
     }
   }
@@ -207,24 +207,24 @@ export default function UserProfileApplicationWidgetCard(userId) {
   }
   tmp32Result = null;
   if (null != tmp17) {
-    if (tmp2(12418).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
+    if (tmp2(12419).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
       const obj10 = { bottomConfig: null, resolveFieldValue: null, numberFormat: null };
       obj10[0] = tmp17;
       obj10[1] = result;
       obj10[2] = memo;
-      tmp32Result = tmp32(tmp7(12510), obj10);
-    } else if (tmp2(12418).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
+      tmp32Result = tmp32(tmp7(12511), obj10);
+    } else if (tmp2(12419).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
       const obj11 = { bottomConfig: null, resolveFieldValue: null };
       obj11[0] = tmp17;
       obj11[1] = result;
-      tmp32Result = tmp32(tmp7(12511), obj11);
+      tmp32Result = tmp32(tmp7(12512), obj11);
     } else {
       tmp32Result = null;
-      if (tmp2(12418).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
+      if (tmp2(12419).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
         const obj12 = { bottomConfig: null, resolveFieldValue: null };
         obj12[0] = tmp17;
         obj12[1] = result;
-        tmp32Result = tmp32(tmp7(12512), obj12);
+        tmp32Result = tmp32(tmp7(12513), obj12);
       }
     }
   }
@@ -238,11 +238,11 @@ export default function UserProfileApplicationWidgetCard(userId) {
         if (tmp16 != null) {
           layout = tmp16.layout;
         }
-        isFirstWidget = layout === tmp2(12418).ApplicationWidgetLayoutName.WIDGET_TOP_HERO;
+        isFirstWidget = layout === tmp2(12419).ApplicationWidgetLayoutName.WIDGET_TOP_HERO;
       }
       if (isFirstWidget) {
         const obj13 = { marginTop: null };
-        obj13[0] = tmp2(12419).HERO_IMAGE_UNCLIPPED_TOP_BLEED;
+        obj13[0] = tmp2(12420).HERO_IMAGE_UNCLIPPED_TOP_BLEED;
         isFirstWidget = obj13;
       }
       const obj14 = { style: null, children: null };

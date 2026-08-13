@@ -1,10 +1,10 @@
-// Module ID: 14480
-// Function ID: 14481
+// Module ID: 14471
+// Function ID: 14472
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 21, 4342, 712, 4278, 1364, 4065, 4191, 10420, 10440, 1236, 7749, 4338, 4887, 14481, 4766, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4278, 1364, 4065, 4191, 10420, 10439, 1236, 7749, 4338, 4887, 14472, 4766, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 14480 (QuestOrbMultiplierPerkPill)
+// Module 14471 (QuestOrbMultiplierPerkPill)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";
@@ -62,8 +62,8 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
   questOrbRewardMultiplier = require(10420) /* useQuests */.useQuestOrbRewardMultiplier(questId.questId);
   const obj9 = require(10420) /* useQuests */;
   const tmp6 = orbMultiplierEligibility;
-  const result = require(10440) /* items */.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
-  const tmp13 = orbMultiplierEligibility === require(10440) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
+  const result = require(10439) /* items */.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
+  const tmp13 = orbMultiplierEligibility === require(10439) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
   c6 = tmp13;
   const items1 = [tmp13, token2, token3, isThemeDarkResult];
   if (null == questOrbRewardMultiplier) {
@@ -125,5 +125,5 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     obj3[4] = closure_7(token3, obj4);
     return questOrbRewardMultiplier(tmp2(4887).PressableOpacity, obj3);
   }
-  const obj10 = require(10440) /* items */;
+  const obj10 = require(10439) /* items */;
 };

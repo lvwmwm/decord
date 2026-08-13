@@ -1,10 +1,10 @@
-// Module ID: 10558
-// Function ID: 10559
+// Module ID: 10560
+// Function ID: 10561
 // Name: getVideoQuestWatchCtaText
-// Dependencies: [4436, 7206, 7208, 676, 7204, 10422, 7228, 1236, 7222, 4197, 2, 10559]
+// Dependencies: [4436, 7206, 7208, 676, 7204, 10422, 7229, 1236, 7223, 4197, 2, 10561]
 // Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isVideoQuestProgressing, sendVideoProgress
 
-// Module 10558 (getVideoQuestWatchCtaText)
+// Module 10560 (getVideoQuestWatchCtaText)
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import initializeState from "initializeState";
 import _toPropertyKey from "_toPropertyKey";
@@ -60,7 +60,7 @@ export const getVideoQuestProgressRemainingAccessibilityLabel = function getVide
     const intl5 = tmp(1236).intl;
     return intl5.string(tmp(1236).t["ij5E/5"]);
   } else {
-    const remainingTaskTime = tmp(7228).getRemainingTaskTime(questTaskDetails);
+    const remainingTaskTime = tmp(7229).getRemainingTaskTime(questTaskDetails);
     ({ minutes, seconds } = remainingTaskTime);
     if (minutes > 0) {
       if (seconds > 0) {
@@ -86,7 +86,7 @@ export const getVideoQuestProgressRemainingAccessibilityLabel = function getVide
       obj2[0] = seconds;
       formatToPlainStringResult = intl.formatToPlainString(tmp(1236).t["0BZpdi"], obj2);
     }
-    const tmpResult = tmp(7228);
+    const tmpResult = tmp(7229);
   }
 };
 export const formatVideoProgressRatio = function formatVideoProgressRatio(bound, current) {
@@ -191,8 +191,8 @@ export const handleVideoQuestModalClose = function handleVideoQuestModalClose(ar
     obj[2] = videoSessionId;
     obj[2] = obj;
     obj[3] = sourceQuestContent;
-    require(7222) /* trackQuestEvent */.trackQuestEvent(obj);
-    const obj5 = require(7222) /* trackQuestEvent */;
+    require(7223) /* trackQuestEvent */.trackQuestEvent(obj);
+    const obj5 = require(7223) /* trackQuestEvent */;
     const obj1 = { questId: null, event: null, properties: null, sourceQuestContent: null };
     obj1[0] = questId;
     obj1[1] = AnalyticEvents.QUEST_VIDEO_MODAL_CLOSED;
@@ -202,8 +202,8 @@ export const handleVideoQuestModalClose = function handleVideoQuestModalClose(ar
     obj2[2] = effectiveConnectionSpeed.getEffectiveConnectionSpeed();
     obj1[2] = obj2;
     obj1[3] = sourceQuestContent;
-    require(7222) /* trackQuestEvent */.trackQuestEvent(obj1);
-    const obj8 = require(7222) /* trackQuestEvent */;
+    require(7223) /* trackQuestEvent */.trackQuestEvent(obj1);
+    const obj8 = require(7223) /* trackQuestEvent */;
   }
 };
 export const getVideoQuestModalKey = function getVideoQuestModalKey(questId) {
@@ -218,7 +218,7 @@ export const computeMaxSeekableTime = function computeMaxSeekableTime(arg0, arg1
   return bound;
 };
 export const isVideoQuestProgressing = function isVideoQuestProgressing(closure_0) {
-  let isModalOpenResult = require(7228) /* getApplicationIdsByTaskTypes */.hasWatchVideoTasks(closure_0);
+  let isModalOpenResult = require(7229) /* getApplicationIdsByTaskTypes */.hasWatchVideoTasks(closure_0);
   if (isModalOpenResult) {
     const _HermesInternal = HermesInternal;
     isModalOpenResult = require(4197) /* coerceMainRoute */.isModalOpen("VIDEO-QUEST-" + closure_0.id);

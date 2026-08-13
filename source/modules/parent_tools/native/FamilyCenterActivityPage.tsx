@@ -1,10 +1,10 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14184
+// Function ID: 14185
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 4342, 712, 7381, 5368, 14194, 14196, 14206, 11376, 14210, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 7381, 5368, 14185, 14187, 14197, 11377, 14201, 2]
 // Exports: default
 
-// Module 14193 (FamilyCenterActivityPage)
+// Module 14184 (FamilyCenterActivityPage)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,18 +32,18 @@ export default function FamilyCenterActivityPage() {
   obj = { style: tmp.scrollView, children: null };
   const activeLinkUserIds = obj.useActiveLinkUserIds();
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(14194), {}), ];
+  const items = [callback(importDefault(14185), {}), ];
   if (0 === activeLinkUserIds.length) {
     const obj1 = { children: null };
-    const items1 = [tmp3(tmp7(14196), {}), tmp3(tmp7(14206), {}), ];
+    const items1 = [tmp3(tmp7(14187), {}), tmp3(tmp7(14197), {}), ];
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.dataConfirmation;
-    obj2[1] = tmp3(tmp7(11376), {});
+    obj2[1] = tmp3(tmp7(11377), {});
     items1[2] = tmp3(tmp6, obj2);
     obj1[0] = items1;
     let tmp3Result = tmp5(closure_6, obj1);
   } else {
-    tmp3Result = tmp3(tmp7(14210), {});
+    tmp3Result = tmp3(tmp7(14201), {});
   }
   items[1] = tmp3Result;
   obj[1] = items;

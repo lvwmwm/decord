@@ -1,10 +1,10 @@
-// Module ID: 15317
-// Function ID: 15318
+// Module ID: 15308
+// Function ID: 15309
 // Name: FavoritesGuildCategoryActionSheetConnected
-// Dependencies: [19, 1394, 21, 4535, 12196, 4034, 5804, 5436, 5806, 9755, 1236, 6054, 15318, 9596, 5796, 4061, 589, 2]
+// Dependencies: [19, 1394, 21, 4535, 12197, 4034, 5804, 5436, 5806, 9755, 1236, 6054, 15309, 9596, 5796, 4061, 589, 2]
 // Exports: default
 
-// Module 15317 (FavoritesGuildCategoryActionSheetConnected)
+// Module 15308 (FavoritesGuildCategoryActionSheetConnected)
 import noop from "noop";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
   category = category.category;
   const onClose = category.onClose;
   let dependencyMap;
-  const tmp3 = onClose(12196)(category);
+  const tmp3 = onClose(12197)(category);
   dependencyMap = tmp3;
   const DeveloperMode = category(4034).DeveloperMode;
   const setting = DeveloperMode.useSetting();

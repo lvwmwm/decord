@@ -1,10 +1,10 @@
-// Module ID: 12276
-// Function ID: 12277
+// Module ID: 12277
+// Function ID: 12278
 // Name: TraitEmoji
 // Dependencies: [19, 17, 21, 4342, 712, 1435, 4006, 5400, 4338, 2]
 // Exports: default
 
-// Module 12276 (TraitEmoji)
+// Module 12277 (TraitEmoji)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

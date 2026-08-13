@@ -1,10 +1,10 @@
-// Module ID: 16347
-// Function ID: 16348
+// Module ID: 16338
+// Function ID: 16339
 // Name: useChatBadge
 // Dependencies: [4357, 589, 2]
 // Exports: default
 
-// Module 16347 (useChatBadge)
+// Module 16338 (useChatBadge)
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 
 const require = arg1;

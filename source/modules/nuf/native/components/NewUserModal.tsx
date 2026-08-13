@@ -1,10 +1,10 @@
-// Module ID: 16605
-// Function ID: 16606
+// Module ID: 16596
+// Function ID: 16597
 // Name: NewUserModal
-// Dependencies: [32, 19, 17, 21, 8619, 4342, 712, 16606, 2007, 4685, 5823, 16603, 4550, 16604, 5316, 500, 15211, 16607, 12113, 12102, 16608, 16610, 2]
+// Dependencies: [32, 19, 17, 21, 8619, 4342, 712, 16597, 2007, 4685, 5823, 16594, 4550, 16595, 5316, 500, 15202, 16598, 12114, 12103, 16599, 16601, 2]
 // Exports: default
 
-// Module 16605 (NewUserModal)
+// Module 16596 (NewUserModal)
 import _slicedToArray from "_slicedToArray";
 import headerTitle from "headerTitle";
 import { NativeModules } from "RedesignAddAvatarModal";
@@ -50,7 +50,7 @@ export default function NewUserModal(arg0) {
     if (flag == null) {
       flag = false;
     }
-    const nextOnboardingStep = lib(16603).getNextOnboardingStep(flag, first1, first);
+    const nextOnboardingStep = lib(16594).getNextOnboardingStep(flag, first1, first);
     nextOnboardingStep.then((onboardingStepIndex) => {
       let continueNavigation;
       let lastShownStepIndex;
@@ -109,7 +109,7 @@ export default function NewUserModal(arg0) {
   obj = {
     name: "enable-notification",
     getComponent() {
-      return lib(15211).RedesignNotificationScreen;
+      return lib(15202).RedesignNotificationScreen;
     },
     initialParams: { onComplete: callback }
   };
@@ -117,7 +117,7 @@ export default function NewUserModal(arg0) {
   obj1 = {
     name: "choose-avatar",
     getComponent() {
-      return lib(16607).default;
+      return lib(16598).default;
     },
     options() {
       return {
@@ -145,7 +145,7 @@ export default function NewUserModal(arg0) {
     name: "contact-sync",
     options: { headerShown: false },
     getComponent() {
-      return lib(12102).ContactSyncOnboardingModal;
+      return lib(12103).ContactSyncOnboardingModal;
     },
     initialParams: { onComplete: callback }
   });
@@ -153,14 +153,14 @@ export default function NewUserModal(arg0) {
     name: "discoverability",
     options: { headerShown: false },
     getComponent() {
-      return lib(16608).default;
+      return lib(16599).default;
     },
     initialParams: { onComplete: callback }
   });
   items1[4] = callback(createNativeStackNavigator.Screen, {
     name: "connect-guardian",
     getComponent() {
-      return lib(16610).default;
+      return lib(16601).default;
     },
     initialParams: { onComplete: callback }
   });

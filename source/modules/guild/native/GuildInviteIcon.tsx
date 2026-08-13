@@ -1,9 +1,9 @@
-// Module ID: 12078
-// Function ID: 12079
+// Module ID: 12079
+// Function ID: 12080
 // Name: render
-// Dependencies: [19, 17, 21, 4342, 712, 4072, 12079, 1236, 1435, 5308, 1903, 1297, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4072, 12080, 1236, 1435, 5308, 1903, 1297, 2]
 
-// Module 12078 (render)
+// Module 12079 (render)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -31,7 +31,7 @@ GuildInviteIcon.prototype["render"] = function render() {
   const props = this.props;
   ({ style, guild } = props);
   ({ size, textScale } = props);
-  let obj = require(12079) /* getClass */;
+  let obj = require(12080) /* getClass */;
   const getClassResult = obj.getClass(tmp, "icon", size);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { guildName: guild.name };

@@ -1,8 +1,8 @@
-// Module ID: 14501
-// Function ID: 14502
-// Dependencies: [19, 17, 5202, 14411, 21, 4342, 14412, 4083, 4754, 8054, 2]
+// Module ID: 14492
+// Function ID: 14493
+// Dependencies: [19, 17, 5202, 14402, 21, 4342, 14403, 4083, 4754, 8054, 2]
 
-// Module 14501
+// Module 14492
 import importAllResult from "noop";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import { QUEST_DOCK_MODE_CHANGE_PHYSICS as closure_5 } from "QUEST_DOCK_COLLAPSED_HEIGHT";
@@ -27,7 +27,7 @@ const memoResult = importAllResult.memo(function QuestDockContentCollapsed(child
     tmp = hideOnExpand;
   }
   const require = tmp;
-  const activeQuestDockMode = importAllResult.useContext(require(14412) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
+  const activeQuestDockMode = importAllResult.useContext(require(14403) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
   let obj = require(4083);
   const fn = function l() {
     let obj = tmp(outer1_2[8]);

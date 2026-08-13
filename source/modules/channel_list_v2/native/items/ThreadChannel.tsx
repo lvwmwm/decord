@@ -1,10 +1,10 @@
-// Module ID: 15320
-// Function ID: 15321
+// Module ID: 15311
+// Function ID: 15312
 // Name: ThreadChannel
-// Dependencies: [19, 17, 3991, 1391, 3989, 4357, 1979, 1922, 4361, 4417, 9844, 676, 4541, 1235, 21, 4342, 712, 7880, 4761, 589, 11724, 4353, 9945, 15321, 15323, 9082, 15326, 1297, 15328, 15337, 4527, 2]
+// Dependencies: [19, 17, 3991, 1391, 3989, 4357, 1979, 1922, 4361, 4417, 9844, 676, 4541, 1235, 21, 4342, 712, 7880, 4761, 589, 11725, 4353, 9945, 15312, 15314, 9082, 15317, 1297, 15319, 15328, 4527, 2]
 // Exports: default
 
-// Module 15320 (ThreadChannel)
+// Module 15311 (ThreadChannel)
 import importAllResult from "initialize";
 import { View } from "inlineStyles";
 import storeThread from "storeThread";
