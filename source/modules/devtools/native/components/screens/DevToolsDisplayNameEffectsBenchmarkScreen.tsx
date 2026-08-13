@@ -1,10 +1,10 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15126
+// Function ID: 15127
 // Name: effectName
-// Dependencies: [32, 19, 17, 1922, 1934, 21, 1935, 9523, 1236, 9519, 2661, 4344, 712, 4752, 4340, 4754, 9516, 9517, 589, 15118, 5806, 5413, 10580, 4575, 2]
+// Dependencies: [32, 19, 17, 1922, 1934, 21, 1935, 9527, 1236, 9523, 2661, 4342, 712, 4753, 4338, 4755, 9520, 9521, 589, 15127, 5807, 5414, 10494, 4576, 2]
 // Exports: default
 
-// Module 15117 (effectName)
+// Module 15126 (effectName)
 import _slicedToArray from "_slicedToArray";
 import FRAME_BUDGET_MS from "FRAME_BUDGET_MS";
 import get_ActivityIndicator from "DisplayNameStyleColorPreset";
@@ -19,7 +19,7 @@ let metroImportAll;
 let require = arg1;
 function effectName(arg0) {
   const intl = require(1236) /* getSystemLocale */.intl;
-  let OpWJ3f = require(9519) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
+  let OpWJ3f = require(9523) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (OpWJ3f == null) {
     OpWJ3f = importDefault(2661).OpWJ3f;
   }
@@ -31,7 +31,7 @@ function OptionButtons(children) {
   let require;
   ({ options, value: require, onChange: importDefault } = children);
   let obj = { spacing: 8, children: null };
-  const items = [callback2(require(4340) /* Text */.Text, { variant: "text-sm/semibold", color: "text-subtle", children: children.caption }), ];
+  const items = [callback2(require(4338) /* Text */.Text, { variant: "text-sm/semibold", color: "text-subtle", children: children.caption }), ];
   obj = { direction: "horizontal", spacing: 8, style: createCacheKey().optionButtons, children: null };
   obj[3] = options.map((label) => {
     let closure_0 = label;
@@ -46,9 +46,9 @@ function OptionButtons(children) {
     };
     return outer1_8(outer1_0(outer1_2[15]).Button, obj, String(label.value));
   });
-  items[1] = callback2(require(4752) /* Stack */.Stack, obj);
+  items[1] = callback2(require(4753) /* Stack */.Stack, obj);
   obj[1] = items;
-  return callback3(require(4752) /* Stack */.Stack, obj);
+  return callback3(require(4753) /* Stack */.Stack, obj);
 }
 function BenchmarkRow(arg0) {
   let effect;
@@ -56,13 +56,13 @@ function BenchmarkRow(arg0) {
   let userId;
   let userName;
   ({ userId, effect, userName, style } = arg0);
-  let obj = require(9519) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
+  let obj = require(9523) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
   obj = { style, children: null };
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(effect);
   obj = { userId, userName, effectDisplayType: null, pendingDisplayNameStyles: null, variant: "text-md/semibold" };
-  obj[2] = require(9517) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC;
+  obj[2] = require(9521) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC;
   obj[3] = displayNameStylesEffectConfig.previewStyles;
-  obj[1] = callback2(importDefault(9516), obj);
+  obj[1] = callback2(importDefault(9520), obj);
   return callback2(closure_6, obj);
 }
 ({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);

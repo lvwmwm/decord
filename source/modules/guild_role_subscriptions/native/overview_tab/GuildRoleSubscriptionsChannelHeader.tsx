@@ -1,6 +1,6 @@
 // Module ID: 12609
 // Function ID: 12610
-// Dependencies: [19, 17, 21, 4344, 712, 1297, 12190, 4340, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1297, 12192, 4338, 1236, 2]
 
 // Module 12609
 import { View } from "get ActivityIndicator";
@@ -19,13 +19,13 @@ let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = require("noop").memo(function GuildRoleSubscriptionsChannelHeader() {
   let obj = { style: callback3().header, children: null };
   obj = { source: null, size: null, disableColor: true };
-  obj[0] = importDefault(12190);
+  obj[0] = importDefault(12192);
   obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
   const items = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["KzCF/6"]);
-  items[1] = callback(require(4340) /* Text */.Text, obj);
+  items[1] = callback(require(4338) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 });

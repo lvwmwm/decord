@@ -1,10 +1,10 @@
-// Module ID: 6934
-// Function ID: 6935
+// Module ID: 6940
+// Function ID: 6941
 // Name: getOrders
-// Dependencies: [5, 4327, 676, 3, 530, 4022, 709, 5903, 2]
+// Dependencies: [5, 4325, 676, 3, 530, 4022, 709, 5905, 2]
 // Exports: cancelSigningAndDiscardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 6934 (getOrders)
+// Module 6940 (getOrders)
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext";
 import { OrderStatus } from "CustomCheckoutFlow";
 import { Endpoints } from "ME";

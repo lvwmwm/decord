@@ -1,7 +1,7 @@
 // Module ID: 12744
 // Function ID: 12745
 // Name: useBuyNitroPlanSubLabelRenderer
-// Dependencies: [19, 1924, 21, 7777, 2]
+// Dependencies: [19, 1924, 21, 7781, 2]
 // Exports: useBuyNitroPlanSubLabelRenderer
 
 // Module 12744 (useBuyNitroPlanSubLabelRenderer)

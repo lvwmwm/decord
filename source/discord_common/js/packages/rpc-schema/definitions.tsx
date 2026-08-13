@@ -1,16 +1,16 @@
-// Module ID: 13811
-// Function ID: 13812
+// Module ID: 13812
+// Function ID: 13813
 // Name: response
-// Dependencies: [13812, 8947, 2]
+// Dependencies: [13813, 8951, 2]
 
-// Module 13811 (response)
-let obj = { request: "Array", response: 0 };
+// Module 13812 (response)
+let obj = { request: "Array", response: "Array" };
 obj[1] = function response(string) {
   const obj = { image_url: null };
   obj[0] = string.string().required();
   return obj;
 };
-obj = { response: "Array", request: 0 };
+obj = { response: "Array", request: "Array" };
 obj[1] = function request(string) {
   const obj = { mediaUrl: null };
   const stringResult = string.string();
@@ -45,8 +45,8 @@ obj = {
     let arrayResult = string.array();
     const stringResult5 = string.string();
     const stringResult6 = string.string();
-    const items = [...require(13812) /* RPCCommands */.joiEnum(require(8947) /* set */.OAuth2Scopes)];
-    const obj12 = require(13812) /* RPCCommands */;
+    const items = [...require(13813) /* RPCCommands */.joiEnum(require(8951) /* set */.OAuth2Scopes)];
+    const obj12 = require(13813) /* RPCCommands */;
     obj[2] = arrayResult.items(stringResult6.valid.apply(items)).required();
     const itemsResult = arrayResult.items(stringResult6.valid.apply(items));
     obj[3] = string.string().required();
@@ -67,7 +67,7 @@ obj = {
     return obj;
   }
 };
-let obj1 = { request: "Array", response: 0 };
+let obj1 = { request: "Array", response: "Array" };
 obj1[1] = function response(array) {
   let obj = { participants: null };
   const arrayResult = array.array();
@@ -79,7 +79,7 @@ obj1[1] = function response(array) {
   obj[0] = arrayResult.items(keys.required()).required();
   return obj;
 };
-let obj4 = { request: "Array", response: 0 };
+let obj4 = { request: "Array", response: "Array" };
 obj4[1] = function response(array) {
   let arrayResult = array.array();
   let obj = { type: null, user: null, presence: null };
@@ -194,7 +194,7 @@ obj4[1] = function response(array) {
   obj1[0] = requiredResult.items(array.object(obj));
   return obj1;
 };
-const obj9 = { request: "Array", response: 0 };
+const obj9 = { request: "Array", response: "Array" };
 obj9[1] = function response(string) {
   const obj = { quest_id: null, enrolled_at: null, completed_at: null, external_cta_url: null };
   obj[0] = string.string().required();
@@ -208,7 +208,7 @@ obj9[1] = function response(string) {
   obj[3] = string.string().required();
   return obj;
 };
-const obj10 = { request: "Array", response: 0 };
+const obj10 = { request: "Array", response: "Array" };
 obj10[1] = function response(string) {
   const obj = { ticket: null };
   obj[0] = string.string().required();
@@ -261,11 +261,11 @@ function ButtonComponent(arg0) {
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
 export const RPCCommandSchemas = {
-  [require(13812).RPCCommand.INITIATE_IMAGE_UPLOAD]: obj,
-  [require(13812).RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj,
-  [require(13812).RPCCommand.AUTHENTICATE]: obj,
-  [require(13812).RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj1,
-  [require(13812).RPCCommand.SHARE_INTERACTION]: {
+  [require(13813).RPCCommand.INITIATE_IMAGE_UPLOAD]: obj,
+  [require(13813).RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj,
+  [require(13813).RPCCommand.AUTHENTICATE]: obj,
+  [require(13813).RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj1,
+  [require(13813).RPCCommand.SHARE_INTERACTION]: {
     request(string) {
       let obj = { command: null, options: null, content: null, require_launch_channel: null, preview_image: null, components: null, pid: null };
       obj[0] = string.string().required();
@@ -325,7 +325,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13812).RPCCommand.SHARE_LINK]: {
+  [require(13813).RPCCommand.SHARE_LINK]: {
     request(string) {
       const obj = { custom_id: null, message: null, link_id: null };
       obj[0] = string.string().max(64);
@@ -346,8 +346,8 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13812).RPCCommand.GET_RELATIONSHIPS]: obj4,
-  [require(13812).RPCCommand.INVITE_USER_EMBEDDED]: {
+  [require(13813).RPCCommand.GET_RELATIONSHIPS]: obj4,
+  [require(13813).RPCCommand.INVITE_USER_EMBEDDED]: {
     request(string) {
       const obj = { user_id: null, content: null };
       obj[0] = string.string().required();
@@ -356,9 +356,9 @@ export const RPCCommandSchemas = {
       obj[1] = string.string().min(0).max(1024);
       return obj;
     },
-    response: "a"
+    response: "Array"
   },
-  [require(13812).RPCCommand.GET_USER]: {
+  [require(13813).RPCCommand.GET_USER]: {
     request(string) {
       const obj = { id: null };
       const stringResult = string.string();
@@ -369,7 +369,7 @@ export const RPCCommandSchemas = {
       return User(arg0).allow(null);
     }
   },
-  [require(13812).RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: {
+  [require(13813).RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: {
     request(string) {
       const obj = { quest_id: null };
       obj[0] = string.string().required();
@@ -386,7 +386,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13812).RPCCommand.QUEST_START_TIMER]: {
+  [require(13813).RPCCommand.QUEST_START_TIMER]: {
     request(string) {
       const obj = { quest_id: null };
       obj[0] = string.string().required();
@@ -398,6 +398,6 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13812).RPCCommand.GET_QUEST]: obj9,
-  [require(13812).RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj10
+  [require(13813).RPCCommand.GET_QUEST]: obj9,
+  [require(13813).RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj10
 };

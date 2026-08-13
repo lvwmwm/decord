@@ -1,7 +1,7 @@
 // Module ID: 10228
 // Function ID: 10229
 // Name: AddDescription
-// Dependencies: [32, 19, 17, 4680, 4679, 21, 4344, 712, 589, 1493, 1499, 5408, 9508, 8427, 1236, 8401, 10227, 8017, 9722, 2]
+// Dependencies: [32, 19, 17, 4681, 4680, 21, 4342, 712, 589, 1493, 1499, 5409, 9512, 8431, 1236, 8405, 10227, 8021, 9726, 2]
 // Exports: default
 
 // Module 10228 (AddDescription)
@@ -117,7 +117,7 @@ createCacheKey = { contentContainer: null, imageContainer: null, image: null, pl
 createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { alignItems: "center", borderRadius: require("Themes").radii.sm };
-let obj2 = { width: "100%", resizeMode: "contain", height: "Array", borderRadius: true };
+let obj2 = { width: "100%", resizeMode: "contain", height: "Array", borderRadius: false };
 obj2[3] = require("Themes").radii.sm;
 createCacheKey[2] = obj2;
 let obj1 = { alignItems: "center", borderRadius: require("Themes").radii.sm };
@@ -137,5 +137,5 @@ export default function AddImageDescriptionModal(arg0) {
   obj[2] = function render() {
     return outer1_10(outer1_13, { source: closure_0, channelId: closure_1, id: closure_2 });
   };
-  return callback(importDefault(9722), obj);
+  return callback(importDefault(9726), obj);
 };

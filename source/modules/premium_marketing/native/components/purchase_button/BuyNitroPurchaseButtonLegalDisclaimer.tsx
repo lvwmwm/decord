@@ -1,10 +1,10 @@
-// Module ID: 7780
-// Function ID: 7781
+// Module ID: 7784
+// Function ID: 7785
 // Name: BuyNitroPurchaseButtonLegalDisclaimer
-// Dependencies: [19, 676, 21, 4344, 712, 1236, 500, 4007, 1993, 4340, 2]
+// Dependencies: [19, 676, 21, 4342, 712, 1236, 500, 4007, 1993, 4338, 2]
 // Exports: default
 
-// Module 7780 (BuyNitroPurchaseButtonLegalDisclaimer)
+// Module 7784 (BuyNitroPurchaseButtonLegalDisclaimer)
 import "noop";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -64,7 +64,7 @@ export default function BuyNitroPurchaseButtonLegalDisclaimer(arg0) {
       const obj1 = { style: null, variant: "text-xxs/medium", children: null };
       obj1[0] = tmp.disclaimer;
       obj1[2] = formatResult;
-      jsx(tmp10(4340).Text, { style: null, variant: "text-xxs/medium", children: null });
+      jsx(tmp10(4338).Text, { style: null, variant: "text-xxs/medium", children: null });
     }
     const tmp3Result1 = require(500) /* set */;
     t = tmp3(1236).t;

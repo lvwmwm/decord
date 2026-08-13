@@ -1,9 +1,9 @@
-// Module ID: 5221
-// Function ID: 5222
+// Module ID: 5222
+// Function ID: 5223
 // Name: getAsync
 // Dependencies: [5, 3, 1955, 2]
 
-// Module 5221 (getAsync)
+// Module 5222 (getAsync)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import set from "items";
 

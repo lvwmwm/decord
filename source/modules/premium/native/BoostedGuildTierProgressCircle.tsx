@@ -1,7 +1,7 @@
 // Module ID: 12842
 // Function ID: 12843
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 676, 21, 4344, 712, 12843, 12847, 12848, 12849, 4251, 4236, 12010, 4340, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 12843, 12847, 12848, 12849, 4249, 4234, 12012, 4338, 2]
 // Exports: default
 
 // Module 12842 (BoostedGuildTierProgressCircle)
@@ -35,7 +35,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
   let theme;
   ({ guild, theme } = arg0);
   const tmp = createCacheKey();
-  importDefault(4251);
+  importDefault(4249);
   if (guild != null) {
     const id = guild.id;
   }
@@ -48,7 +48,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
     obj[1] = callback(closure_4, obj);
     return callback(closure_3, obj);
   } else {
-    const nextGuildTierFromGuild = require(4236) /* getGuildTierFromGuild */.getNextGuildTierFromGuild(guild.id);
+    const nextGuildTierFromGuild = require(4234) /* getGuildTierFromGuild */.getNextGuildTierFromGuild(guild.id);
     let tmp7 = null;
     if (null != nextGuildTierFromGuild) {
       tmp7 = table[nextGuildTierFromGuild];
@@ -82,15 +82,15 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       const items = [tmp8(tmp12, obj2), ];
       const obj3 = { style: null, variant: "text-xs/semibold", color: "interactive-text-active", children: null };
       obj3[0] = tmp.guildTierName;
-      let tmp19Result = tmp19(4236);
+      let tmp19Result = tmp19(4234);
       obj3[3] = tmp19Result.getTierName(guild.premiumTier);
-      items[1] = tmp8(tmp19(4340).Text, obj3);
+      items[1] = tmp8(tmp19(4338).Text, obj3);
       obj1[1] = items;
       obj[2] = tmp10(tmp11, obj1);
       return tmp8(tmp9, obj);
     }
     tmp19Result = tmp19(12843);
     tier048PxSource = tmp19Result.getTier048PxSource(theme);
-    const obj10 = require(4236) /* getGuildTierFromGuild */;
+    const obj10 = require(4234) /* getGuildTierFromGuild */;
   }
 };

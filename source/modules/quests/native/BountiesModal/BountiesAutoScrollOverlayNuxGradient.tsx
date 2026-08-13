@@ -1,10 +1,10 @@
-// Module ID: 14357
-// Function ID: 14358
+// Module ID: 14366
+// Function ID: 14367
 // Name: BountiesAutoScrollOverlayNuxGradient
-// Dependencies: [19, 17, 21, 712, 4083, 4345, 4348, 4765, 2]
+// Dependencies: [19, 17, 21, 712, 4083, 4343, 4346, 4766, 2]
 // Exports: default
 
-// Module 14357 (BountiesAutoScrollOverlayNuxGradient)
+// Module 14366 (BountiesAutoScrollOverlayNuxGradient)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -46,9 +46,9 @@ export default function BountiesAutoScrollOverlayNuxGradient(active) {
   obj[2] = [0, 1];
   obj[3] = { x: 0.5, y: 1 };
   obj[4] = { x: 0.5, y: 0 };
-  const items3 = [callback(sharedValue(4765), obj), ];
+  const items3 = [callback(sharedValue(4766), obj), ];
   obj1 = { style: StyleSheet.absoluteFillObject, colors: ["rgba(0,0,0,0.4)", "rgba(0,0,0,0)"], locations: [0, 0.5], start: { x: 0.5, y: 1 }, end: { x: 0.5, y: 0 } };
-  items3[1] = callback(sharedValue(4765), obj1);
+  items3[1] = callback(sharedValue(4766), obj1);
   obj[2] = items3;
   return callback2(sharedValue(4083).View, obj);
 };

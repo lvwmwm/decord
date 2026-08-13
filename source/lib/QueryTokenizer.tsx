@@ -1,9 +1,9 @@
-// Module ID: 11778
-// Function ID: 11779
+// Module ID: 11776
+// Function ID: 11777
 // Name: getMatch
 // Dependencies: [2]
 
-// Module 11778 (getMatch)
+// Module 11776 (getMatch)
 function getMatch(str, arg1, index) {
   let tmp3;
   if (null == arg1) {

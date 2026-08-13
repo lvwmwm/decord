@@ -1,10 +1,10 @@
-// Module ID: 4778
-// Function ID: 4779
+// Module ID: 4779
+// Function ID: 4780
 // Name: regExp
 // Dependencies: [2]
 // Exports: extractGameMentionIds, formatGameMentionRaw, formatGameMentionToken
 
-// Module 4778 (regExp)
+// Module 4779 (regExp)
 let closure_0 = [];
 const tmp2 = /^<@\$(\d+)>/;
 const regExp = new RegExp(tmp2.source.replace(/^\^/, ""), "g");

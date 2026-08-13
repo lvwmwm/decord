@@ -1,10 +1,10 @@
-// Module ID: 4207
-// Function ID: 4208
+// Module ID: 4205
+// Function ID: 4206
 // Name: getBestActiveInput
-// Dependencies: [4208, 1891, 4209, 1626, 1497, 4210, 2]
+// Dependencies: [4206, 1891, 4207, 1626, 1497, 4208, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4207 (getBestActiveInput)
+// Module 4205 (getBestActiveInput)
 function getBestActiveInput() {
   let str;
   if (0 !== map1.size) {
@@ -234,7 +234,7 @@ export const dismissKeyboard = function dismissKeyboard() {
   if (null != obj2) {
     obj2.closeCustomKeyboard();
   }
-  let tmpResult = tmp(4209);
+  let tmpResult = tmp(4207);
   const keyboardType = tmpResult.getKeyboardType();
   if (keyboardType !== require(1626) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
     tmpResult = tmp(1497);
@@ -242,5 +242,5 @@ export const dismissKeyboard = function dismissKeyboard() {
     obj[0] = tmp(1626).KeyboardTypes.SYSTEM;
     tmpResult.setKeyboardType(obj);
   }
-  const result1 = require(4210) /* zustandStore */.closePortalKeyboardRequest();
+  const result1 = require(4208) /* zustandStore */.closePortalKeyboardRequest();
 };

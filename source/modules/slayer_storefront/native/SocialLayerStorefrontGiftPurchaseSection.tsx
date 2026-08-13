@@ -1,7 +1,7 @@
 // Module ID: 10147
 // Function ID: 10148
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [32, 19, 17, 6929, 1922, 676, 1924, 21, 4344, 712, 5408, 5773, 589, 5755, 514, 4770, 698, 10148, 10140, 500, 709, 10135, 1236, 10143, 4340, 4754, 2]
+// Dependencies: [32, 19, 17, 6935, 1922, 676, 1924, 21, 4342, 712, 5409, 5774, 589, 5756, 514, 4771, 698, 10148, 10140, 500, 709, 10135, 1236, 10143, 4338, 4755, 2]
 // Exports: default
 
 // Module 10147 (SocialLayerStorefrontGiftPurchaseSection)

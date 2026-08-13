@@ -1,7 +1,7 @@
 // Module ID: 12691
 // Function ID: 12692
 // Name: _getPresenceActivityInviteCoverImageURL
-// Dependencies: [19, 12692, 1896, 8284, 589, 12693, 2]
+// Dependencies: [19, 12692, 1896, 8288, 589, 12693, 2]
 // Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
 
 // Module 12691 (_getPresenceActivityInviteCoverImageURL)
@@ -30,8 +30,8 @@ function _getPresenceActivityInviteCoverImageURL(messageId) {
     }
     let assetImage = null;
     if (null != invite_cover_image) {
-      assetImage = require(8284) /* updateAssets */.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
-      const obj2 = require(8284) /* updateAssets */;
+      assetImage = require(8288) /* updateAssets */.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
+      const obj2 = require(8288) /* updateAssets */;
     }
     if (assetImage == null) {
       assetImage = coverImageURL;

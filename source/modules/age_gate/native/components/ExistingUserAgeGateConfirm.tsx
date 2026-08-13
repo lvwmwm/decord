@@ -1,10 +1,10 @@
-// Module ID: 16453
-// Function ID: 16454
+// Module ID: 16464
+// Function ID: 16465
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 676, 21, 4344, 1499, 5367, 4340, 1236, 1993, 4754, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4342, 1499, 5368, 4338, 1236, 1993, 4755, 2]
 // Exports: default
 
-// Module 16453 (ExistingUserAgeGateConfirm)
+// Module 16464 (ExistingUserAgeGateConfirm)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -67,14 +67,14 @@ export default function ExistingUserAgeGateConfirm(age) {
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = onConfirm(1236).intl;
   obj[3] = intl.format(onConfirm(1236).t.wumolR, { age: age.age });
-  const items = [callback2(onConfirm(4340).Text, obj), , ];
+  const items = [callback2(onConfirm(4338).Text, obj), , ];
   const obj1 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: null };
   const intl2 = onConfirm(1236).intl;
   const obj2 = { helpURL: null };
   const tmp2 = callback(React.useState(false), 2);
   obj2[0] = importDefault(1993).getArticleURL(HelpdeskArticles.AGE_GATE);
   obj1[3] = intl2.format(onConfirm(1236).t.n3QjDE, obj2);
-  items[1] = callback2(onConfirm(4340).Text, obj1);
+  items[1] = callback2(onConfirm(4338).Text, obj1);
   const obj3 = { style: tmp.buttonWrapper, children: null };
   const obj4 = { loading: tmp3, disabled: tmp3, text: null, onPress: null, grow: true };
   const intl3 = onConfirm(1236).intl;
@@ -89,8 +89,8 @@ export default function ExistingUserAgeGateConfirm(age) {
     }
     return applyArgumentsResult;
   };
-  obj3[1] = callback2(onConfirm(4754).Button, obj4);
+  obj3[1] = callback2(onConfirm(4755).Button, obj4);
   items[2] = callback2(View, obj3);
   obj[2] = items;
-  return callback3(onConfirm(5367).SafeAreaPaddingView, obj);
+  return callback3(onConfirm(5368).SafeAreaPaddingView, obj);
 };

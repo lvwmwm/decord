@@ -1,14 +1,14 @@
-// Module ID: 9523
-// Function ID: 9524
+// Module ID: 9527
+// Function ID: 9528
 // Name: splitGraphemes
-// Dependencies: [9522, 2]
+// Dependencies: [9526, 2]
 // Exports: splitGraphemes
 
-// Module 9523 (splitGraphemes)
+// Module 9527 (splitGraphemes)
 const result = require("set").fileFinishedImporting("utils/native/StringUtils.tsx");
 
 export const splitGraphemes = function splitGraphemes(closure_0) {
-  const obj = importDefault(9522)();
+  const obj = importDefault(9526)();
   const items = [];
   let match = obj.exec(closure_0);
   let num = 0;

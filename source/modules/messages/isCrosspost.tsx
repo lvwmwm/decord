@@ -1,10 +1,10 @@
-// Module ID: 8184
-// Function ID: 8185
+// Module ID: 8188
+// Function ID: 8189
 // Name: isCrosspost
 // Dependencies: [676, 1403, 2]
 // Exports: default
 
-// Module 8184 (isCrosspost)
+// Module 8188 (isCrosspost)
 import ME from "ME";
 
 let c3;

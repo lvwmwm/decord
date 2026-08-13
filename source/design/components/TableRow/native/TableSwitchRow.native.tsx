@@ -1,10 +1,10 @@
-// Module ID: 5807
-// Function ID: 5808
+// Module ID: 5808
+// Function ID: 5809
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 4344, 500, 4067, 5413, 4340, 5808, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 500, 4067, 5414, 4338, 5809, 2]
 // Exports: TableSwitchRow
 
-// Module 5807 (TableSwitchRow)
+// Module 5808 (TableSwitchRow)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -62,7 +62,7 @@ export const TableSwitchRow = function TableSwitchRow(value) {
       obj1 = { variant: "text-md/semibold", color: null, includeFontPadding: true, children: null };
       obj1[1] = str;
       obj1[3] = label;
-      tmp10Result = tmp10(tmp3(4340).Text, obj1);
+      tmp10Result = tmp10(tmp3(4338).Text, obj1);
     }
     const items1 = [tmp10Result, trailing];
     obj[1] = items1;
@@ -102,6 +102,6 @@ export const TableSwitchRow = function TableSwitchRow(value) {
       }
     });
   };
-  obj.trailing = closure_5(require(5808) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled });
-  return closure_5(require(5413) /* TableRowInner */.TableRow, obj);
+  obj.trailing = closure_5(require(5809) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled });
+  return closure_5(require(5414) /* TableRowInner */.TableRow, obj);
 };

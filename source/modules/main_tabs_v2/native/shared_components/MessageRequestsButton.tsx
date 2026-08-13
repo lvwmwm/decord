@@ -1,10 +1,10 @@
-// Module ID: 15230
-// Function ID: 15231
+// Module ID: 15239
+// Function ID: 15240
 // Name: MessageRequestAnimation
-// Dependencies: [19, 17, 5880, 5881, 21, 4344, 589, 15231, 4754, 1236, 7792, 12603, 9163, 2]
+// Dependencies: [19, 17, 5881, 5882, 21, 4342, 589, 15240, 4755, 1236, 7796, 12603, 9167, 2]
 // Exports: default
 
-// Module 15230 (MessageRequestAnimation)
+// Module 15239 (MessageRequestAnimation)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import processChannel from "processChannel";
@@ -35,7 +35,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return callback(ref(15231).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return callback(ref(15240).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ buttonContainer: { position: "relative" } });
@@ -71,7 +71,7 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl3 = tmp3(1236).intl;
       obj[4] = intl3.string(tmp3(1236).t.e7GWjQ);
       const merged1 = Object.assign(merged);
-      let tmp21 = callback(tmp3(4754).Button, obj);
+      let tmp21 = callback(tmp3(4755).Button, obj);
       let tmp16 = callback;
     } else {
       tmp16 = callback;
@@ -80,14 +80,14 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl2 = tmp3(1236).intl;
       obj1[3] = intl2.string(tmp3(1236).t.e7GWjQ);
       const merged2 = Object.assign(merged);
-      tmp21 = callback(tmp3(7792).IconButton, obj1);
+      tmp21 = callback(tmp3(7796).IconButton, obj1);
     }
     const items2 = [tmp21, str > 0 && tmp16(tmp3(12603).ButtonBadge, { badgePosition: "right" })];
     obj[2] = items2;
     return closure_8(View, obj);
   } else {
     const obj2 = { source: null, IconComponent: null, accessibilityLabel: null, buttonText: null, badge: null, badgePosition: "right" };
-    obj2[0] = importDefault(9163);
+    obj2[0] = importDefault(9167);
     obj2[1] = MessageRequestAnimation;
     const intl = tmp3(1236).intl;
     obj2[2] = intl.string(tmp3(1236).t.e7GWjQ);

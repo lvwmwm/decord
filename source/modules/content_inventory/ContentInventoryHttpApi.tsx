@@ -1,10 +1,10 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 16979
+// Function ID: 16980
 // Name: _getMyContentInventory
-// Dependencies: [5, 8965, 676, 530, 4243, 709, 1236, 2]
+// Dependencies: [5, 8969, 676, 530, 4241, 709, 1236, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 16968 (_getMyContentInventory)
+// Module 16979 (_getMyContentInventory)
 import dispatcher from "dispatcher";
 import { ContentInventoryFeedKey } from "ContentInventoryFeedKey";
 import { Endpoints } from "ME";
@@ -88,7 +88,7 @@ function _getMyContentInventory() {
           } else if (2 === tmp7) {
             constants = 0;
             c6 = body;
-            const aPIError = new callback(4243).APIError(c6);
+            const aPIError = new callback(4241).APIError(c6);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -198,7 +198,7 @@ function _getContentInventoryOutbox() {
             obj4 = { type: "CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE", userId: null };
             obj4[1] = callback;
             obj4.dispatch(obj4);
-            const aPIError = new callback(4243).APIError(dependencyMap);
+            const aPIError = new callback(4241).APIError(dependencyMap);
             throw aPIError;
           } else if (arg0 === 1) {
             c7 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 9925
-// Function ID: 9926
+// Module ID: 9923
+// Function ID: 9924
 // Name: AttachmentIcon
-// Dependencies: [19, 17, 21, 4344, 712, 9926, 9927, 9928, 9929, 9930, 9931, 9932, 9933, 9934, 9935, 9936, 9937, 9938, 9939, 4896, 4340, 500, 5307, 1297, 9853, 8915, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 9924, 9925, 9926, 9927, 9928, 9929, 9930, 9931, 9932, 9933, 9934, 9935, 9936, 9937, 4897, 4338, 500, 5308, 1297, 9856, 8919, 2]
 // Exports: default
 
-// Module 9925 (AttachmentIcon)
+// Module 9923 (AttachmentIcon)
 import importAllResult from "getUploadFileSizeSum";
 import get_ActivityIndicator from "registerAsset";
 import jsxProd from "set";
@@ -56,7 +56,7 @@ function FilenameText(fileName) {
     obj = { style: null, ellipsizeMode: "middle", lineClamp: 1, variant: "text-xs/medium", color: "mobile-text-heading-primary", children: null };
     obj[0] = tmp.attachmentFileName;
     obj[5] = fileName;
-    tmp5 = callback(require(4340) /* Text */.Text, obj);
+    tmp5 = callback(require(4338) /* Text */.Text, obj);
   }
   const items = [tmp5, ];
   obj = { style: tmp.attachmentFileName, lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
@@ -70,7 +70,7 @@ function FilenameText(fileName) {
   }
   const obj1 = { children: null };
   obj[4] = str3;
-  items[1] = callback(require(4340) /* Text */.Text, obj);
+  items[1] = callback(require(4338) /* Text */.Text, obj);
   obj1[0] = items;
   return closure_7(closure_5, obj1);
 }
@@ -138,7 +138,7 @@ let closure_13 = importAllResult.memo((borderRadius) => {
     const items1 = [obj, style];
     obj1[0] = items1;
     obj1[1] = obj;
-    obj[1] = tmp6(importDefault(5307), obj1);
+    obj[1] = tmp6(importDefault(5308), obj1);
     let tmp10 = obj;
   } else {
     obj2 = { style: null, source: null, localImageSource: null };
@@ -216,7 +216,7 @@ export default function AttachmentPreview(height) {
           const obj3 = { uri: null };
           obj3[0] = uri;
           obj1[1] = obj3;
-          obj[1] = callback(tmp7(8915).VideoComponent, obj1);
+          obj[1] = callback(tmp7(8919).VideoComponent, obj1);
           tmp9 = callback(closure_5, obj);
         }
         tmp7Result = tmp7(500);
@@ -241,7 +241,7 @@ export default function AttachmentPreview(height) {
       const obj6 = { style: null, children: null };
       videoIcon = videoIcon.videoIcon;
       obj6[0] = videoIcon;
-      CirclePlayIcon = CirclePlayIcon(9853).CirclePlayIcon;
+      CirclePlayIcon = CirclePlayIcon(9856).CirclePlayIcon;
       tmp6 = callback(CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" });
       obj6[1] = tmp6;
       items[1] = callback(closure_5, obj6);

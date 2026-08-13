@@ -1,7 +1,7 @@
 // Module ID: 12567
 // Function ID: 12568
 // Name: useCanDM
-// Dependencies: [7159, 3990, 1218, 1990, 3998, 4034, 589, 2]
+// Dependencies: [7165, 3990, 1218, 1990, 3998, 4034, 589, 2]
 // Exports: canDm, default
 
 // Module 12567 (useCanDM)

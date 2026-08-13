@@ -1,10 +1,10 @@
-// Module ID: 8843
-// Function ID: 8844
+// Module ID: 8847
+// Function ID: 8848
 // Name: useFramePreviewOverrideFrame
-// Dependencies: [19, 7050, 8844, 1949, 2]
+// Dependencies: [19, 7056, 8848, 1949, 2]
 // Exports: default
 
-// Module 8843 (useFramePreviewOverrideFrame)
+// Module 8847 (useFramePreviewOverrideFrame)
 import noop from "noop";
 import fromServer from "fromServer";
 import { useFramePreviewOverrideStore as closure_4 } from "measure";

@@ -1,7 +1,7 @@
 // Module ID: 10187
 // Function ID: 10188
 // Name: useVirtualCurrencyBalanceAnimationData
-// Dependencies: [32, 19, 4336, 589, 8898, 2]
+// Dependencies: [32, 19, 4334, 589, 8902, 2]
 // Exports: useVirtualCurrencyBalanceAnimationData
 
 // Module 10187 (useVirtualCurrencyBalanceAnimationData)

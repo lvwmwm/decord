@@ -1,10 +1,10 @@
-// Module ID: 9867
-// Function ID: 9868
+// Module ID: 9870
+// Function ID: 9871
 // Name: getMuteSettings
 // Dependencies: [3943, 2]
 // Exports: getMuteSettings
 
-// Module 9867 (getMuteSettings)
+// Module 9870 (getMuteSettings)
 const result = require("set").fileFinishedImporting("modules/channel/ChannelMuteUtils.tsx");
 
 export const getMuteSettings = function getMuteSettings(selected_time_window) {

@@ -1,10 +1,10 @@
-// Module ID: 7637
-// Function ID: 7638
+// Module ID: 7641
+// Function ID: 7642
 // Name: handleCancelSubscription
-// Dependencies: [32, 5, 19, 17, 1922, 5897, 676, 1924, 21, 712, 4344, 4007, 7424, 7638, 7639, 7421, 7422, 7423, 7425, 7640, 7641, 7642, 7369, 7643, 7644, 7645, 7646, 7647, 7426, 7648, 7649, 7650, 7651, 7652, 7653, 7654, 7429, 7655, 7656, 7657, 7431, 7658, 7659, 7660, 7415, 7462, 7661, 7662, 6914, 6912, 6924, 514, 4663, 1499, 589, 38, 5767, 5894, 500, 1297, 4754, 1236, 4340, 7673, 5787, 7674, 7675, 2]
+// Dependencies: [32, 5, 19, 17, 1922, 5899, 676, 1924, 21, 712, 4342, 4007, 7428, 7642, 7643, 7425, 7426, 7427, 7429, 7644, 7645, 7646, 7373, 7647, 7648, 7649, 7650, 7651, 7430, 7652, 7653, 7654, 7655, 7656, 7657, 7658, 7433, 7659, 7660, 7661, 7435, 7662, 7663, 7664, 7419, 7466, 7665, 7666, 6920, 6918, 6930, 514, 4664, 1499, 589, 38, 5768, 5896, 500, 1297, 4755, 1236, 4338, 7677, 5788, 7678, 7679, 2]
 // Exports: default, handleManageSubscription, onCancelClick
 
-// Module 7637 (handleCancelSubscription)
+// Module 7641 (handleCancelSubscription)
 import registerAsset from "registerAsset";
 import updateProduct from "updateProduct";
 import closure_5 from "registerAsset";
@@ -76,14 +76,14 @@ function _handleCancelSubscription() {
               obj1[0] = callback;
               obj1[1] = closure_1;
               obj1[2] = dependencyMap;
-              obj1[3] = callback(7415).STEP_ANALYTICS_NAMES[callback(undefined, 7415).CancellationFlowSteps.MOBILE_SUBSCRIPTION_MANAGE];
-              const result = callback(7415).trackPremiumSubscriptionCancellationFlowStep(obj1);
+              obj1[3] = callback(7419).STEP_ANALYTICS_NAMES[callback(undefined, 7419).CancellationFlowSteps.MOBILE_SUBSCRIPTION_MANAGE];
+              const result = callback(7419).trackPremiumSubscriptionCancellationFlowStep(obj1);
               let isPurchasedViaApple;
               if (callback != null) {
                 isPurchasedViaApple = tmp15.isPurchasedViaApple;
               }
               if (isPurchasedViaApple) {
-                let tmp18Result = tmp18(7462);
+                let tmp18Result = tmp18(7466);
                 c4 = 1;
                 c3 = 1;
                 const obj2 = { value: null, done: false };
@@ -99,7 +99,7 @@ function _handleCancelSubscription() {
                   outer1_8.openURL(tmp18Result.getExternalSubscriptionMethodUrl(tmp15.paymentGateway, "SUBSCRIPTION_MANAGEMENT"));
                 }
               }
-              const obj7 = callback(7415);
+              const obj7 = callback(7419);
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -174,7 +174,7 @@ function _onResubscribeClick() {
               let closure_1 = tmp2;
               if (lib.isACOM) {
                 const obj1 = { requestIdentifier: null, subscriptionId: null };
-                const obj9 = lib(6924);
+                const obj9 = lib(6930);
                 obj1[0] = lib(514).v4();
                 obj1[1] = tmp25.id;
                 dependencyMap = 1;
@@ -183,7 +183,7 @@ function _onResubscribeClick() {
                 obj2[0] = obj9.resubscribeGenericSubscription(obj1, true);
                 return obj2;
               } else if (tmp25.isPurchasedViaApple) {
-                let obj6 = lib(7462);
+                let obj6 = lib(7466);
                 dependencyMap = 3;
                 c3 = 1;
                 const obj3 = { value: null, done: false };
@@ -204,7 +204,7 @@ function _onResubscribeClick() {
               obj4[0] = arg1;
               return obj4;
             } else {
-              obj2 = lib(4663);
+              obj2 = lib(4664);
               dependencyMap = 2;
               c3 = 1;
               obj5 = { value: null, done: false };
@@ -674,8 +674,8 @@ export default function PremiumSubscriptionDetails(subscription) {
   subscription = subscription.subscription;
   ({ style, onClickManagePremiumGuild } = subscription);
   const tmp = callback5();
-  let obj = require(7673) /* createSubscriptionInvoicePreview */;
-  obj = { subscriptionId: subscription.id, renewal: true, analyticsLocations: importDefault(5767)().analyticsLocations, analyticsLocation: importDefault(5787).PREMIUM_SUBSCRIPTION_DETAILS };
+  let obj = require(7677) /* createSubscriptionInvoicePreview */;
+  obj = { subscriptionId: subscription.id, renewal: true, analyticsLocations: importDefault(5768)().analyticsLocations, analyticsLocation: importDefault(5788).PREMIUM_SUBSCRIPTION_DETAILS };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
   let tmp7Result = null;
   if (null != first) {
@@ -685,7 +685,7 @@ export default function PremiumSubscriptionDetails(subscription) {
     obj1[0] = tmp.title;
     const intl = tmp4(1236).intl;
     obj1[4] = intl.string(tmp4(1236).t.ITurwY);
-    const items = [callback3(tmp4(4340).Text, obj1), , , , ];
+    const items = [callback3(tmp4(4338).Text, obj1), , , , ];
     let tmp9Result = null != subscription.renewalMutations;
     if (tmp9Result) {
       tmp9Result = subscription.status !== constants3.CANCELED;
@@ -694,14 +694,14 @@ export default function PremiumSubscriptionDetails(subscription) {
       const obj2 = { subscription: null, renewalMutations: null };
       obj2[0] = subscription;
       obj2[1] = subscription.renewalMutations;
-      tmp9Result = tmp9(tmp2(7674), obj2);
+      tmp9Result = tmp9(tmp2(7678), obj2);
     }
     items[1] = tmp9Result;
     tmp9Result = subscription.status === constants3.ACCOUNT_HOLD;
     if (tmp9Result) {
       const obj3 = { subscription: null };
       obj3[0] = subscription;
-      tmp9Result = tmp9(tmp2(7675), obj3);
+      tmp9Result = tmp9(tmp2(7679), obj3);
     }
     items[2] = tmp9Result;
     const obj4 = { subscription: null, renewalInvoicePreview: null, onClickManagePremiumGuild: null };
@@ -713,7 +713,7 @@ export default function PremiumSubscriptionDetails(subscription) {
     obj5[0] = tmp.desktopSubtext;
     const intl2 = tmp4(1236).intl;
     obj5[2] = intl2.string(tmp4(1236).t["MTG+3O"]);
-    items[4] = callback3(tmp4(4340).Text, obj5);
+    items[4] = callback3(tmp4(4338).Text, obj5);
     obj[1] = items;
     tmp7Result = closure_17(closure_9, obj);
     const tmp7 = closure_17;
@@ -724,19 +724,19 @@ export default function PremiumSubscriptionDetails(subscription) {
 export const onCancelClick = function onCancelClick(subscription, analyticsLocations) {
   const _require = subscription;
   const importDefault = analyticsLocations;
-  let obj = _require(7415);
+  let obj = _require(7419);
   const result = obj.trackPremiumSubscriptionCancellationStarted(subscription, analyticsLocations);
   if (obj2.isBoostOnlySubscription(subscription)) {
     let tmp4ResultResult = handleCancelSubscription(subscription, analyticsLocations);
   } else {
     obj = { subscription: null, mode: null, onContinue: null };
     obj[0] = subscription;
-    obj[1] = _require(7662).WhatYouLoseMode.CANCEL;
+    obj[1] = _require(7666).WhatYouLoseMode.CANCEL;
     obj[2] = function onContinue(arg0) {
       return outer1_26(closure_0, closure_1, arg0);
     };
-    tmp4ResultResult = importDefault(7661)(obj);
-    const tmp4Result = importDefault(7661);
+    tmp4ResultResult = importDefault(7665)(obj);
+    const tmp4Result = importDefault(7665);
   }
   return tmp4ResultResult;
 };
@@ -756,11 +756,11 @@ export const handleManageSubscription = function handleManageSubscription(subscr
     obj[3] = !hasActiveTrial;
     let prop;
     if (hasActiveTrial) {
-      prop = tmp9(6912).excludeNitroOnlyPlansForActiveTrial;
+      prop = tmp9(6918).excludeNitroOnlyPlansForActiveTrial;
     }
     obj[4] = prop;
-    const result = require(6914) /* launchPremiumPlanSelect */.launchPremiumPlanSelect(obj);
-    const obj2 = require(6914) /* launchPremiumPlanSelect */;
+    const result = require(6920) /* launchPremiumPlanSelect */.launchPremiumPlanSelect(obj);
+    const obj2 = require(6920) /* launchPremiumPlanSelect */;
     tmp9 = require;
   }
 };

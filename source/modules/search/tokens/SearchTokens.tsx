@@ -1,10 +1,10 @@
-// Module ID: 11773
-// Function ID: 11774
+// Module ID: 11771
+// Function ID: 11772
 // Name: getShortcuts
-// Dependencies: [32, 1391, 1980, 3998, 1979, 4190, 1922, 11774, 11775, 676, 3943, 12, 1236, 4534, 4189, 11772, 11776, 5268, 5199, 7348, 11777, 11778, 2]
+// Dependencies: [32, 1391, 1980, 3998, 1979, 4188, 1922, 11772, 11773, 676, 3943, 12, 1236, 4535, 4187, 11770, 11774, 5269, 5200, 7353, 11775, 11776, 2]
 // Exports: buildCrossDMSearchTokensConfig, getLocalizedAuthorTypeAnswer, getLocalizedHasAnswer, getRandomDateShortcut, isMeAutcompleteAnswer, isSearchFilterTokenType, isValidFilterAnswerForSubmit, rebuildSearchTokenConfigs
 
-// Module 11773 (getShortcuts)
+// Module 11771 (getShortcuts)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -303,7 +303,7 @@ function isValidChannelAutocomplete(token, guildId) {
         flag = flag2;
       }
     }
-    obj2 = replaced(11772);
+    obj2 = replaced(11770);
   }
   return flag;
 }
@@ -330,10 +330,10 @@ function getHasMap() {
   return obj;
 }
 function isValidHasAutocomplete(token) {
-  return require(11776) /* ANSWER_IN_REGEX */.validateForMapWithNegation("has", getHasMap(), token);
+  return require(11774) /* ANSWER_IN_REGEX */.validateForMapWithNegation("has", getHasMap(), token);
 }
 function isValidAuthorTypeAutocomplete(token) {
-  let obj = require(11776) /* ANSWER_IN_REGEX */;
+  let obj = require(11774) /* ANSWER_IN_REGEX */;
   obj = {};
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[intl.string(require(1236) /* getSystemLocale */.t.tPZo4p)] = "user";
@@ -586,7 +586,7 @@ function getChannelAutocompletions(arg0) {
     if ("#" === str2[0]) {
       substr1 = str2.substring(1);
     }
-    let obj2 = _require(11772);
+    let obj2 = _require(11770);
     if (obj2.isGuildLikeSearchContext(searchContext)) {
       const guildId = searchContext.guildId;
       _require = undefined;
@@ -595,18 +595,18 @@ function getChannelAutocompletions(arg0) {
       obj[0] = substr1;
       obj[1] = closure_5;
       obj[2] = guildId;
-      let tmpResult = tmp(5199);
-      obj[7] = tmpResult.getBoosterMap(tmp(7348).AutocompleterResultTypes.TEXT_CHANNEL);
-      const obj12 = importDefault(5199);
+      let tmpResult = tmp(5200);
+      obj[7] = tmpResult.getBoosterMap(tmp(7353).AutocompleterResultTypes.TEXT_CHANNEL);
+      const obj12 = importDefault(5200);
       const tmp7 = importDefault;
-      const queryChannelsResult = importDefault(5199).queryChannels(obj);
+      const queryChannelsResult = importDefault(5200).queryChannels(obj);
       obj = { query: null, type: null, guildId: null, limit: Infinity, allowEmptyQueries: true, allowSnowflake: true, boosters: null };
       obj[0] = substr1;
       obj[1] = closure_6;
       obj[2] = guildId;
-      tmpResult = tmp(5199);
-      obj[6] = tmpResult.getBoosterMap(tmp(7348).AutocompleterResultTypes.VOICE_CHANNEL);
-      const combined = queryChannelsResult.concat(importDefault(5199).queryChannels(obj));
+      tmpResult = tmp(5200);
+      obj[6] = tmpResult.getBoosterMap(tmp(7353).AutocompleterResultTypes.VOICE_CHANNEL);
+      const combined = queryChannelsResult.concat(importDefault(5200).queryChannels(obj));
       const mapped = combined.map((record) => record.record);
       if (0 === substr1.length) {
         _require = store3.getChannelId(guildId);
@@ -617,7 +617,7 @@ function getChannelAutocompletions(arg0) {
         }
       }
       importDefault = store2.getTextChannelNameDisambiguations(guildId);
-      const obj16 = importDefault(5199);
+      const obj16 = importDefault(5200);
       const obj19 = tmp7(12)(mapped);
       const takeResult = tmp7(12)(mapped).take(maxResults);
       substr = tmp7(12)(mapped).take(maxResults).map((channel) => {
@@ -650,19 +650,19 @@ function getChannelAutocompletions(arg0) {
           const obj1 = { query: null, limit: null, fuzzy: true, boosters: null };
           obj1[0] = substr1;
           obj1[1] = maxResults;
-          const obj4 = importDefault(5199);
-          obj1[3] = tmp(5199).getBoosterMap(tmp(7348).AutocompleterResultTypes.GROUP_DM);
-          const tmpResult1 = tmp(5199);
+          const obj4 = importDefault(5200);
+          obj1[3] = tmp(5200).getBoosterMap(tmp(7353).AutocompleterResultTypes.GROUP_DM);
+          const tmpResult1 = tmp(5200);
           const queryGroupDMsResult = obj4.queryGroupDMs(obj1);
           obj2 = { query: null, limit: null, boosters: null };
           obj2[0] = substr1;
           obj2[1] = maxResults;
-          const obj8 = importDefault(5199);
-          obj2[2] = tmp(5199).getBoosterMap(tmp(7348).AutocompleterResultTypes.USER);
-          const tmpResult2 = tmp(5199);
+          const obj8 = importDefault(5200);
+          obj2[2] = tmp(5200).getBoosterMap(tmp(7353).AutocompleterResultTypes.USER);
+          const tmpResult2 = tmp(5200);
           const queryDMChannelsResult = obj8.queryDMChannels(obj2);
           const tmp6 = importDefault(12);
-          const sorted = importDefault(12)(queryGroupDMsResult.concat(queryDMChannelsResult)).sort(tmp(7348).sortByMatchScore);
+          const sorted = importDefault(12)(queryGroupDMsResult.concat(queryDMChannelsResult)).sort(tmp(7353).sortByMatchScore);
           const mapped1 = sorted.map((record) => {
             record = record.record;
             const obj = { text: record.comparator, channel: record, key: null };
@@ -1175,12 +1175,12 @@ export const isValidFilterAnswerForSubmit = function isValidFilterAnswerForSubmi
   } else {
     const _HermesInternal = HermesInternal;
     const items = ["filter:" + trimmed, trimmed];
-    const token = new require(11778) /* getMatch */.Token(items, tmp);
+    const token = new require(11776) /* getMatch */.Token(items, tmp);
     if (SearchTokenTypes.ANSWER_HAS === tmp) {
-      let tmp7Result = tmp7(11776);
+      let tmp7Result = tmp7(11774);
       return tmp7Result.validateForMapWithNegation("has", getHasMap(), token);
     } else if (tmp15.ANSWER_AUTHOR_TYPE === tmp) {
-      tmp7Result = tmp7(11776);
+      tmp7Result = tmp7(11774);
       const obj = {};
       const intl = tmp7(1236).intl;
       obj[intl.string(tmp7(1236).t.tPZo4p)] = "user";

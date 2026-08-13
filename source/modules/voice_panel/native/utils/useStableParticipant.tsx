@@ -1,10 +1,10 @@
-// Module ID: 16252
-// Function ID: 16253
+// Module ID: 16263
+// Function ID: 16264
 // Name: areStableParticipantsEqual
-// Dependencies: [4357, 1218, 4392, 1922, 4362, 643, 589, 4533, 8858, 10767, 2]
+// Dependencies: [4358, 1218, 4393, 1922, 4363, 643, 589, 4534, 8862, 10681, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 16252 (areStableParticipantsEqual)
+// Module 16263 (areStableParticipantsEqual)
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -40,19 +40,19 @@ export default function useStableParticipant(arg0, arg1, arg2) {
       if (null == participant) {
         const user = outer1_6.getUser(tmp);
         if (null != user) {
-          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: 0.959, isSelf: 0.987 };
+          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: 0.272, isSelf: 0.331 };
           obj[0] = outer1_7.USER;
           obj[1] = tmp;
           obj[2] = user;
           const id = outer1_4.getId();
-          obj[5] = callback(4533).getName(dependencyMap, tmp3, user);
-          const obj5 = callback(4533);
-          obj[6] = callback(8858).getAvatarDecoration(user, dependencyMap);
+          obj[5] = callback(4534).getName(dependencyMap, tmp3, user);
+          const obj5 = callback(4534);
+          obj[6] = callback(8862).getAvatarDecoration(user, dependencyMap);
           obj[10] = user.id === id;
           return obj;
         }
       } else {
-        const tmp15 = callback2(10767)(participant);
+        const tmp15 = callback2(10681)(participant);
         const type = participant.type;
         if (outer1_7.ACTIVITY === type) {
           obj = { type: null, id: null, applicationId: null };

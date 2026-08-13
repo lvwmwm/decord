@@ -1,10 +1,10 @@
-// Module ID: 7454
-// Function ID: 7455
+// Module ID: 7458
+// Function ID: 7459
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 6929, 4327, 21, 4344, 5755, 7455, 6934, 6935, 5862, 514, 1208, 7461, 2]
+// Dependencies: [5, 32, 19, 17, 6935, 4325, 21, 4342, 5756, 7459, 6940, 6941, 5863, 514, 1208, 7465, 2]
 // Exports: default
 
-// Module 7454 (NativeCheckoutStoreProvider)
+// Module 7458 (NativeCheckoutStoreProvider)
 import CustomCheckoutFlow from "CustomCheckoutFlow";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -30,7 +30,7 @@ function NativeCheckoutStoreProvider(children) {
   let closure_6;
   let first;
   let closure_8;
-  closure_6 = order(5755)(() => {
+  closure_6 = order(5756)(() => {
     let id;
     if (order != null) {
       id = order.id;

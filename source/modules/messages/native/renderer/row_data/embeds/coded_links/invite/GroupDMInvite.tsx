@@ -1,7 +1,7 @@
 // Module ID: 12665
 // Function ID: 12666
 // Name: createGroupDMInvite
-// Dependencies: [1391, 3998, 1922, 7236, 8094, 11051, 1236, 12373, 1438, 4534, 2]
+// Dependencies: [1391, 3998, 1922, 7241, 8098, 10966, 1236, 12373, 1438, 4535, 2]
 // Exports: createGroupDMInvite
 
 // Module 12665 (createGroupDMInvite)
@@ -20,9 +20,9 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   let channel;
   let colors;
   let recipients_;
-  ({ colors, baseColors } = importDefault(8094)(closure_2));
-  const tmp2 = importDefault(8094)(closure_2);
-  ({ channel, recipients_ } = importDefault(11051)(invite));
+  ({ colors, baseColors } = importDefault(8098)(closure_2));
+  const tmp2 = importDefault(8098)(closure_2);
+  ({ channel, recipients_ } = importDefault(10966)(invite));
   let id;
   if (channel != null) {
     id = channel.id;
@@ -71,8 +71,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   if (flag) {
     channelName = null;
     if (null != channel) {
-      channelName = tmp8(4534).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
-      const tmp8Result1 = tmp8(4534);
+      channelName = tmp8(4535).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+      const tmp8Result1 = tmp8(4535);
     }
   }
   if (!channelName) {
@@ -131,8 +131,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   if (flag) {
     channelName1 = channelName;
     if (null != channel) {
-      channelName1 = tmp8(4534).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
-      const tmp8Result2 = tmp8(4534);
+      channelName1 = tmp8(4535).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+      const tmp8Result2 = tmp8(4535);
     }
   }
   obj.channelName = channelName1;

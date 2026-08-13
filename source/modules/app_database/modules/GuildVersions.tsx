@@ -1,9 +1,9 @@
-// Module ID: 7154
-// Function ID: 7155
+// Module ID: 7160
+// Function ID: 7161
 // Name: getCommittedVersions
 // Dependencies: [32, 5, 1910, 3, 1955, 1370, 2]
 
-// Module 7154 (getCommittedVersions)
+// Module 7160 (getCommittedVersions)
 import _slicedToArray from "_slicedToArray";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

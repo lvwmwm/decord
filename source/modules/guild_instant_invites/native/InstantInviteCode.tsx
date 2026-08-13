@@ -1,10 +1,10 @@
-// Module ID: 9739
-// Function ID: 9740
+// Module ID: 9743
+// Function ID: 9744
 // Name: InstantInviteDetails
-// Dependencies: [19, 17, 1395, 3998, 1922, 21, 4344, 712, 4804, 4849, 4752, 4340, 4534, 4308, 1236, 9728, 2]
+// Dependencies: [19, 17, 1395, 3998, 1922, 21, 4342, 712, 4805, 4850, 4753, 4338, 4535, 4306, 1236, 9732, 2]
 // Exports: default
 
-// Module 9739 (InstantInviteDetails)
+// Module 9743 (InstantInviteDetails)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { createChannelRecordFromInvite as closure_5 } from "createChannelRecord";
@@ -74,11 +74,11 @@ export default function InstantInviteCode(invite) {
   const memo = React.useMemo(() => outer1_5(invite.channel), items);
   obj = { children: null };
   obj = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
-  const items1 = [callback(invite(4340).Text, obj), ];
+  const items1 = [callback(invite(4338).Text, obj), ];
   const tmp = createCacheKey();
   items1[1] = callback(InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });
   obj[0] = items1;
-  obj[1] = callback2(invite(4752).Stack, obj);
+  obj[1] = callback2(invite(4753).Stack, obj);
   return callback(View, obj);
 };
 export { InstantInviteDetails };

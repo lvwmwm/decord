@@ -1,9 +1,9 @@
-// Module ID: 16658
-// Function ID: 16659
+// Module ID: 16669
+// Function ID: 16670
 // Name: prototype
-// Dependencies: [1922, 6955, 505, 5300, 7453, 1945, 7633, 2]
+// Dependencies: [1922, 6961, 505, 5301, 7457, 1945, 7637, 2]
 
-// Module 16658 (prototype)
+// Module 16669 (prototype)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import emitChanges from "emitChanges";
 import { PaymentGateways } from "sum";
@@ -22,7 +22,7 @@ let prototype = function UserOfferManager() {
     currentUser = currentUser.getCurrentUser();
     const NitroACOMSubscriptionExperiment = applyArgumentsResult(table[4]).NitroACOMSubscriptionExperiment;
     if (NitroACOMSubscriptionExperiment.getConfig({ location: "UserOfferManager.handlePostConnectionOpen" }).enabled) {
-      const obj = { offerId: "Array", paymentGatewayOverride: 0 };
+      const obj = { offerId: "Array", paymentGatewayOverride: "Array" };
       obj[1] = constants.APPLE_ADVANCED_COMMERCE;
       const tmp4 = obj;
     }

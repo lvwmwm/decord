@@ -1,7 +1,7 @@
 // Module ID: 12822
 // Function ID: 12823
 // Name: usePremiumGroupPrimaryName
-// Dependencies: [12823, 12827, 4189, 2]
+// Dependencies: [12823, 12827, 4187, 2]
 // Exports: default
 
 // Module 12822 (usePremiumGroupPrimaryName)
@@ -39,8 +39,8 @@ export default function usePremiumGroupPrimaryName() {
     if (premiumGroupMembers != null) {
       primary1 = premiumGroupMembers.primary;
     }
-    nameFromUserResult = require(4189) /* nameFromUser */.nameFromUser(primary1);
-    const obj2 = require(4189) /* nameFromUser */;
+    nameFromUserResult = require(4187) /* nameFromUser */.nameFromUser(primary1);
+    const obj2 = require(4187) /* nameFromUser */;
   }
   return nameFromUserResult;
 };

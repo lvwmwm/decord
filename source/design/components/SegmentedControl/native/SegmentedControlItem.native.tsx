@@ -1,10 +1,10 @@
-// Module ID: 9188
-// Function ID: 9189
+// Module ID: 9192
+// Function ID: 9193
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 4344, 712, 8777, 4083, 4753, 500, 1236, 4340, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 8781, 4083, 4754, 500, 1236, 4338, 2]
 // Exports: SegmentedControlItem
 
-// Module 9188 (SegmentedControlItem)
+// Module 9192 (SegmentedControlItem)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

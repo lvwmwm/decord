@@ -1,10 +1,10 @@
-// Module ID: 14454
-// Function ID: 14455
+// Module ID: 14463
+// Function ID: 14464
 // Name: prototype
 // Dependencies: [2]
 // Exports: parseVtt
 
-// Module 14454 (prototype)
+// Module 14463 (prototype)
 const prototype = function VttParserError(arg0, error) {
   tmp = new tmp(arg0, new.target);
   // ThrowIfThisInitialized (0x7c)

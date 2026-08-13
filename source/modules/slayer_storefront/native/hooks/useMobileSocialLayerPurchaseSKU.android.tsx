@@ -1,7 +1,7 @@
 // Module ID: 10140
 // Function ID: 10141
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [19, 676, 7419, 10141, 2]
+// Dependencies: [19, 676, 7423, 10141, 2]
 // Exports: default
 
 // Module 10140 (useMobileSocialLayerPurchaseSKU)

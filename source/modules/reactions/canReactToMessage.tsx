@@ -1,10 +1,10 @@
-// Module ID: 8119
-// Function ID: 8120
+// Module ID: 8123
+// Function ID: 8124
 // Name: canReactToMessageInternal
-// Dependencies: [1990, 5171, 3989, 1922, 676, 1403, 3978, 589, 2]
+// Dependencies: [1990, 5172, 3989, 1922, 676, 1403, 3978, 589, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 8119 (canReactToMessageInternal)
+// Module 8123 (canReactToMessageInternal)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import recomputeGuild from "recomputeGuild";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

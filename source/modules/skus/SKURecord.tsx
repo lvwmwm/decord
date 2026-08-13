@@ -1,9 +1,9 @@
-// Module ID: 4384
-// Function ID: 4385
+// Module ID: 4385
+// Function ID: 4386
 // Name: createFromServer
-// Dependencies: [1931, 4367, 4385, 676, 3943, 4386, 4387, 1403, 2]
+// Dependencies: [1931, 4368, 4386, 676, 3943, 4387, 4388, 1403, 2]
 
-// Module 4384 (createFromServer)
+// Module 4385 (createFromServer)
 import "toJS";
 import createExecutable from "createExecutable";
 import { THE_GAME_AWARD_WINNER_SKUS as closure_4 } from "set";
@@ -76,7 +76,7 @@ SKURecord["createFromServer"] = function createFromServer(id) {
     tmp14 = obj;
   }
   obj[22] = tmp14;
-  obj[23] = importDefault(4386)(id.prices);
+  obj[23] = importDefault(4387)(id.prices);
   let flag = id.premium;
   if (flag == null) {
     flag = false;
@@ -114,7 +114,7 @@ SKURecord["createFromServer"] = function createFromServer(id) {
     mapped = [];
   }
   obj[34] = mapped;
-  obj[35] = importDefault(4387)(id.tenant_metadata);
+  obj[35] = importDefault(4388)(id.tenant_metadata);
   const selected_options = id.selected_options;
   let mapped1;
   if (selected_options != null) {

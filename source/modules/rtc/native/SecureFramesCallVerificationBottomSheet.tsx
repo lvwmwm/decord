@@ -1,10 +1,10 @@
-// Module ID: 16261
-// Function ID: 16262
+// Module ID: 16272
+// Function ID: 16273
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 4415, 676, 21, 589, 9265, 8968, 9271, 1236, 9255, 2]
+// Dependencies: [19, 4416, 676, 21, 589, 9269, 8972, 9275, 1236, 9259, 2]
 // Exports: default
 
-// Module 16261 (SecureFramesCallVerificationBottomSheet)
+// Module 16272 (SecureFramesCallVerificationBottomSheet)
 import noop from "noop";
 import createRTCConnection from "createRTCConnection";
 import { AnalyticsSections } from "ME";
@@ -40,8 +40,8 @@ export default function SecureFramesCallVerificationBottomSheet(channelId) {
   obj[1] = intl2.string(channelId(1236).t["MPp7+C"]);
   const intl3 = channelId(1236).intl;
   obj = { helpArticle: null };
-  const tmp3 = importDefault(9271);
-  obj[0] = channelId(9255).getSecureFramesHelpdeskArticle();
+  const tmp3 = importDefault(9275);
+  obj[0] = channelId(9259).getSecureFramesHelpdeskArticle();
   obj[2] = intl3.format(channelId(1236).t.wKxADe, obj);
   obj[3] = stateFromStores;
   obj[4] = callback;

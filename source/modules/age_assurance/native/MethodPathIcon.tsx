@@ -1,10 +1,10 @@
-// Module ID: 7875
-// Function ID: 7876
+// Module ID: 7879
+// Function ID: 7880
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 4344, 712, 4065, 7876, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4065, 7880, 2]
 // Exports: default
 
-// Module 7875 (MethodPathIcon)
+// Module 7879 (MethodPathIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -26,6 +26,6 @@ export default function MethodPathIcon(icon) {
   const paths = icon.icon.paths;
   const tmp = createCacheKey();
   obj[3] = paths.map((d) => outer1_4(callback(outer1_2[6]).Path, { d: d.d, fill: callback, fillRule: d.fillRule }, d.d));
-  obj[1] = jsx(importDefault(7876), { width: 24, height: 24, viewBox: "0 0 24 24", children: null });
+  obj[1] = jsx(importDefault(7880), { width: 24, height: 24, viewBox: "0 0 24 24", children: null });
   return <View width={24} height={24} viewBox="0 0 24 24">{null}</View>;
 };

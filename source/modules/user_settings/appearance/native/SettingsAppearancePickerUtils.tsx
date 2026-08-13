@@ -1,16 +1,16 @@
-// Module ID: 14600
-// Function ID: 14601
+// Module ID: 14609
+// Function ID: 14610
 // Name: getMaxColors
-// Dependencies: [19, 505, 4277, 1349, 4194, 4193, 712, 1339, 4065, 1236, 2]
+// Dependencies: [19, 505, 4275, 1349, 4192, 4191, 712, 1339, 4065, 1236, 2]
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 14600 (getMaxColors)
+// Module 14609 (getMaxColors)
 import noop from "noop";
 import { ThemeTypes } from "sum";
 
 const require = arg1;
 function getMaxColors() {
-  const allMobileThemes = require(4277) /* getCustomThemesName */.getAllMobileThemes();
+  const allMobileThemes = require(4275) /* getCustomThemesName */.getAllMobileThemes();
   let num = 0;
   const iter = allMobileThemes[Symbol.iterator]();
   const nextResult = iter.next();

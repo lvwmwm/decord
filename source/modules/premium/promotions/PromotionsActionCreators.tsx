@@ -1,10 +1,10 @@
-// Module ID: 7685
-// Function ID: 7686
+// Module ID: 7689
+// Function ID: 7690
 // Name: fetchActivePromotions
-// Dependencies: [5, 1994, 7385, 1922, 7384, 1924, 676, 709, 7686, 530, 6903, 1374, 1337, 7687, 2]
+// Dependencies: [5, 1994, 7389, 1922, 7388, 1924, 676, 709, 7690, 530, 6909, 1374, 1337, 7691, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 7685 (fetchActivePromotions)
+// Module 7689 (fetchActivePromotions)
 import GuildFeatures from "GuildFeatures";
 import _getSystemLocale from "_getSystemLocale";
 import createFromServer from "createFromServer";
@@ -255,7 +255,7 @@ function _fetchClaimedOutboundPromotionCodes() {
       throw arg1;
     } else if (arg0 !== 2) {
       const body = arg1.body;
-      callback = body.map(callback(7687).claimedOutboundPromotionCodeFromServer);
+      callback = body.map(callback(7691).claimedOutboundPromotionCodeFromServer);
       const obj = callback2(709);
       const obj4 = { type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes: null };
       obj4[1] = callback;

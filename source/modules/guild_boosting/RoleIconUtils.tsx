@@ -1,10 +1,10 @@
-// Module ID: 5792
-// Function ID: 5793
+// Module ID: 5793
+// Function ID: 5794
 // Name: getRoleIconData
 // Dependencies: [676, 500, 4002, 1469, 1435, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 5792 (getRoleIconData)
+// Module 5793 (getRoleIconData)
 import ME from "ME";
 import set from "set";
 import set from "parseRawEmojiObject";

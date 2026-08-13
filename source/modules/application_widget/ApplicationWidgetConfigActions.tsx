@@ -1,7 +1,7 @@
 // Module ID: 12519
 // Function ID: 12520
 // Name: getApplicationsFromConfigs
-// Dependencies: [5, 12518, 676, 11058, 584, 687, 709, 530, 1208, 2]
+// Dependencies: [5, 12518, 676, 10973, 584, 687, 709, 530, 1208, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
 // Module 12519 (getApplicationsFromConfigs)

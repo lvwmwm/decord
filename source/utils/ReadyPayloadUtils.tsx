@@ -1,7 +1,7 @@
 // Module ID: 13010
 // Function ID: 13011
 // Name: hydrateGuild
-// Dependencies: [1395, 1955, 7150, 7154, 1975, 7155, 1971, 12, 38, 2]
+// Dependencies: [1395, 1955, 7156, 7160, 1975, 7161, 1971, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
 // Module 13010 (hydrateGuild)
@@ -367,12 +367,12 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
   const obj = importDefault(1955);
   const tmp4 = require;
   if (obj2.isCacheEnabled()) {
-    let tmpResult = tmp(7154);
+    let tmpResult = tmp(7160);
     let committedVersions = tmpResult.getCommittedVersions();
   } else {
     committedVersions = Promise.resolve({});
   }
-  obj2 = require(7150) /* isCacheEnabled */;
+  obj2 = require(7156) /* isCacheEnabled */;
   if (tmp4Result.isCacheEnabled()) {
     tmpResult = tmp(1975);
     let guildIds = tmpResult.getGuildIds();
@@ -382,13 +382,13 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
     guildIds = Promise.resolve(set);
   }
   if (null != databaseResult) {
-    let okAsyncResult = tmp(7155).okAsync(databaseResult);
-    const tmpResult1 = tmp(7155);
+    let okAsyncResult = tmp(7161).okAsync(databaseResult);
+    const tmpResult1 = tmp(7161);
   } else {
     okAsyncResult = Promise.resolve(false);
   }
   const items = [committedVersions, guildIds, okAsyncResult];
-  tmp4Result = tmp4(7150);
+  tmp4Result = tmp4(7156);
   return Promise.all(items).then((arg0) => {
     let tmp;
     let tmp2;

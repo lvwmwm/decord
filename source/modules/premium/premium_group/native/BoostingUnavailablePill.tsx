@@ -1,7 +1,7 @@
 // Module ID: 12850
 // Function ID: 12851
 // Name: handlePress
-// Dependencies: [17, 4021, 21, 4344, 712, 4312, 12851, 2007, 1236, 2885, 4340, 2]
+// Dependencies: [17, 4021, 21, 4342, 712, 4310, 12851, 2007, 1236, 2885, 4338, 2]
 // Exports: default
 
 // Module 12850 (handlePress)
@@ -13,7 +13,7 @@ import createCacheKey from "createCacheKey";
 let c3;
 let c4;
 function handlePress() {
-  let obj = importDefault(4312);
+  let obj = importDefault(4310);
   obj = { aboutText: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { premiumGroupProductName: null };
@@ -39,7 +39,7 @@ export default function BoostingUnavailablePill(style) {
   const obj1 = { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.string(require(1236) /* getSystemLocale */.t["5nrJDO"]);
-  obj[1] = jsx(require(4340) /* Text */.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null });
+  obj[1] = jsx(require(4338) /* Text */.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null });
   obj[1] = <closure_4 style={tmp.pgUnavailable}>{null}</closure_4>;
   obj[2] = <closure_4 style={tmp.pgUnavailable}>{null}</closure_4>;
   return <closure_3 style={tmp.pgUnavailable}>{null}</closure_3>;

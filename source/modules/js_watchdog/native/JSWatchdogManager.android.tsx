@@ -1,9 +1,9 @@
-// Module ID: 16557
-// Function ID: 16558
+// Module ID: 16568
+// Function ID: 16569
 // Name: handleAppStateUpdate
-// Dependencies: [5, 676, 3, 687, 5300, 16558, 1208, 698, 6976, 6973, 6965, 2]
+// Dependencies: [5, 676, 3, 687, 5301, 16569, 1208, 698, 6982, 6979, 6971, 2]
 
-// Module 16557 (handleAppStateUpdate)
+// Module 16568 (handleAppStateUpdate)
 import enforcing from "enforcing";
 import ME from "ME";
 import "initialize";
@@ -237,7 +237,7 @@ prototype["startWatchdog"] = function startWatchdog() {
             closure_0 = undefined;
             c1 = undefined;
             if (null == outer1_0._timeoutId) {
-              if (null != outer1_1(16558)) {
+              if (null != outer1_1(16569)) {
                 dependencyMap = 1;
                 c3 = 1;
                 const obj1 = { value: null, done: false };
@@ -258,7 +258,7 @@ prototype["startWatchdog"] = function startWatchdog() {
               closure_0._enabled = true;
               if (closure_0._pingCompleted) {
                 let checkForStallReportResult;
-                obj = outer1_1(16558);
+                obj = outer1_1(16569);
                 if (obj != null) {
                   checkForStallReportResult = obj.checkForStallReport();
                 }
@@ -291,7 +291,7 @@ prototype["stopWatchdog"] = function stopWatchdog() {
 prototype["reportStall"] = function reportStall(c1, c0, is_previous, _analyticsReportsRemaining) {
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(6976) /* getDeviceMetadata */.getDeviceMetadata());
+  const merged = Object.assign(require(6982) /* getDeviceMetadata */.getDeviceMetadata());
   obj.version = 1;
   obj.stall_time = c1.stallTime;
   obj.is_previous = is_previous;
@@ -337,7 +337,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
             let closure_0 = tmp2;
             closure_0 = undefined;
             if (null != outer1_0._cachedSession) {
-              let obj1 = outer1_0(6973);
+              let obj1 = outer1_0(6979);
               if (!obj1.isSessionExpired(outer1_0._cachedSession)) {
                 const uuid = outer1_0._cachedSession.uuid;
                 c3 = 3;
@@ -346,7 +346,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = outer1_0(6965).getSession();
+            obj1[0] = outer1_0(6971).getSession();
             return obj1;
           }
         } else if (arg0 === 1) {

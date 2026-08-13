@@ -1,9 +1,9 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 15556
+// Function ID: 15557
 // Name: _handleCreateJoinGuildPress
-// Dependencies: [5, 19, 17, 4167, 676, 1924, 21, 4344, 9988, 2007, 12123, 5873, 8406, 5787, 1367, 15490, 13039, 589, 15504, 1236, 15547, 9573, 712, 2]
+// Dependencies: [5, 19, 17, 4165, 676, 1924, 21, 4342, 9986, 2007, 12125, 5874, 8410, 5788, 1367, 15499, 13039, 589, 15513, 1236, 15557, 9577, 712, 2]
 
-// Module 15546 (_handleCreateJoinGuildPress)
+// Module 15556 (_handleCreateJoinGuildPress)
 import GuildFeatures from "GuildFeatures";
 import importAllResult from "getSystemLocale";
 import { View } from "initialize";
@@ -124,7 +124,7 @@ let c4 = importAllResult;
 let closure_13 = createCacheKey.createStyles({ stretch: { alignSelf: "stretch" } });
 const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
   const tmp3 = importDefault(1367)("GuildsBarCreateJoinButton");
-  let obj = enabled(15490);
+  let obj = enabled(15499);
   const tmp4 = callback2();
   const GameCommunityAddServerEntryExperiment = enabled(13039).GameCommunityAddServerEntryExperiment;
   enabled = GameCommunityAddServerEntryExperiment.useConfig({ location: "GuildsBarCreateJoinButton" }).enabled;
@@ -155,7 +155,7 @@ const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
       })();
     }
   }), items1);
-  obj = { selected: stateFromStores, circle: null, unread: false, styles: null, overState: "y", config: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET", label: null, expandedChildren: "Steam", children: null };
+  obj = { selected: stateFromStores, circle: null, unread: false, styles: null, overState: "y", config: "femme", label: "femme faisant un geste d\u2019interdiction", expandedChildren: "geste", children: "interdit" };
   let tmp12 = !tmp3;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
   const tmp10 = View;
@@ -167,12 +167,12 @@ const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
   obj[5] = memo;
   const intl = tmp5(1236).intl;
   obj[6] = intl.string(enabled(1236).t.l5WIbf);
-  obj[7] = jsx(enabled(15547).HomeDrawerAddServerRowExpandedChildren, {});
+  obj[7] = jsx(enabled(15557).HomeDrawerAddServerRowExpandedChildren, {});
   const colors = tmp(712).colors;
   obj1 = { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT };
-  obj[8] = jsx(enabled(9573).CirclePlusIcon, { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
-  obj[1] = jsx(importDefault(15490), { selected: stateFromStores, circle: null, unread: false, styles: null, overState: "y", config: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET", label: null, expandedChildren: "Steam", children: null });
-  return <tmp10 selected={stateFromStores} circle={null} unread={false} styles={null} overState="y" config="MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET" label={null} expandedChildren="Steam">{null}</tmp10>;
+  obj[8] = jsx(enabled(9577).CirclePlusIcon, { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
+  obj[1] = jsx(importDefault(15499), { selected: stateFromStores, circle: null, unread: false, styles: null, overState: "y", config: "femme", label: "femme faisant un geste d\u2019interdiction", expandedChildren: "geste", children: "interdit" });
+  return <tmp10 selected={stateFromStores} circle={null} unread={false} styles={null} overState="y" config="femme" label="femme faisant un geste d’interdiction" expandedChildren="geste">{"interdit"}</tmp10>;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx");
 

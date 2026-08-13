@@ -1,8 +1,8 @@
-// Module ID: 15079
-// Function ID: 15080
-// Dependencies: [19, 17, 21, 4344, 712, 11283, 1236, 10573, 4843, 6068, 4340, 4007, 15080, 4754, 7745, 2]
+// Module ID: 15088
+// Function ID: 15089
+// Dependencies: [19, 17, 21, 4342, 712, 11274, 1236, 10487, 4844, 6070, 4338, 4007, 15089, 4755, 7749, 2]
 
-// Module 15079
+// Module 15088
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -28,26 +28,26 @@ const memoResult = require("noop").memo(function PremiumTrialOfferActionSheetCon
   if (trialOffer != null) {
     subscription_trial = trialOffer.subscription_trial;
   }
-  let obj = { IconComponent: require(11283) /* UserIcon */.UserIcon, label: null, description: null };
+  let obj = { IconComponent: require(11274) /* UserIcon */.UserIcon, label: null, description: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.kpMomJ);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.uVUtPw);
   const items = [obj, , ];
-  obj = { IconComponent: require(10573) /* ChatSmileIcon */.ChatSmileIcon, label: null, description: null };
+  obj = { IconComponent: require(10487) /* ChatSmileIcon */.ChatSmileIcon, label: null, description: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl3.string(require(1236) /* getSystemLocale */.t["R2IV/Q"]);
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl4.string(require(1236) /* getSystemLocale */.t["3SUJLd"]);
   items[1] = obj;
-  obj = { IconComponent: require(4843) /* FolderIcon */.FolderIcon, label: null, description: null };
+  obj = { IconComponent: require(4844) /* FolderIcon */.FolderIcon, label: null, description: null };
   const intl5 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl5.string(require(1236) /* getSystemLocale */.t["u/NJKc"]);
   const intl6 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl6.string(require(1236) /* getSystemLocale */.t.i1UuMk);
   items[2] = obj;
   const obj1 = { style: tmp.contentContainer, children: null };
-  const items1 = [callback(View, { style: tmp.heroIllustrationContainer, children: callback(require(6068) /* AccountAgeTier10LargeBadge */.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) }), , , ];
+  const items1 = [callback(View, { style: tmp.heroIllustrationContainer, children: callback(require(6070) /* AccountAgeTier10LargeBadge */.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) }), , , ];
   const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   const intl7 = require(1236) /* getSystemLocale */.intl;
   let sku_id;
@@ -64,8 +64,8 @@ const memoResult = require("noop").memo(function PremiumTrialOfferActionSheetCon
     const tmp3Result = tmp3(4007);
   }
   obj3[3] = intl7.formatToPlainString(require(1236) /* getSystemLocale */.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
-  items1[1] = callback(require(4340) /* Text */.Text, obj3);
-  items1[2] = callback(importDefault(15080), { perks: items });
+  items1[1] = callback(require(4338) /* Text */.Text, obj3);
+  items1[2] = callback(importDefault(15089), { perks: items });
   const obj4 = { style: tmp.buttonContainer, children: null };
   const obj5 = { size: "lg", text: null, onPress: null, grow: true, icon: null };
   const intl8 = tmp3(1236).intl;
@@ -73,8 +73,8 @@ const memoResult = require("noop").memo(function PremiumTrialOfferActionSheetCon
   obj5[2] = onConfirm.onConfirm;
   const obj6 = { size: "md", color: null };
   obj6[1] = importDefault(712).unsafe_rawColors.WHITE;
-  obj5[4] = callback(require(7745) /* NitroWheelIcon */.NitroWheelIcon, obj6);
-  obj4[1] = callback(require(4754) /* Button */.Button, obj5);
+  obj5[4] = callback(require(7749) /* NitroWheelIcon */.NitroWheelIcon, obj6);
+  obj4[1] = callback(require(4755) /* Button */.Button, obj5);
   items1[3] = callback(View, obj4);
   obj1[1] = items1;
   return closure_5(View, obj1);

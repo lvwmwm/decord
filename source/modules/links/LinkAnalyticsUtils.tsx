@@ -1,9 +1,9 @@
-// Module ID: 8982
-// Function ID: 8983
+// Module ID: 8986
+// Function ID: 8987
 // Name: SERVER_INVITE
-// Dependencies: [676, 8983, 1486, 4535, 698, 2]
+// Dependencies: [676, 8987, 1486, 4536, 698, 2]
 
-// Module 8982 (SERVER_INVITE)
+// Module 8986 (SERVER_INVITE)
 import { AnalyticEvents } from "ME";
 
 let closure_4 = { MESSAGE: "Discord Message Link", CHANNEL: "Discord Channel Link", SERVER_INVITE: "Discord Server Invite", GIFT: "Discord Gift Link", UNKNOWN: "Unknown", DISCOVERY: "Discord Discovery Link" };
@@ -22,7 +22,7 @@ const items = [
     if (null == safeParseWithQueryResult) {
       return null;
     } else {
-      const tryParseChannelPathResult = require(4535) /* ME */.tryParseChannelPath(safeParseWithQueryResult.path);
+      const tryParseChannelPathResult = require(4536) /* ME */.tryParseChannelPath(safeParseWithQueryResult.path);
       if (null == tryParseChannelPathResult) {
         return null;
       } else {
@@ -39,7 +39,7 @@ const items = [
         }
         UNKNOWN = constants.UNKNOWN;
       }
-      const obj2 = require(4535) /* ME */;
+      const obj2 = require(4536) /* ME */;
     }
   },
   (arg0) => {

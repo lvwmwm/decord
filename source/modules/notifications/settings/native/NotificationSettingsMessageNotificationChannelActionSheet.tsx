@@ -1,10 +1,10 @@
-// Module ID: 9885
-// Function ID: 9886
+// Module ID: 9888
+// Function ID: 9889
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 4539, 676, 4540, 685, 21, 9872, 9884, 1236, 9873, 5301, 5296, 2]
+// Dependencies: [19, 4540, 676, 4541, 685, 21, 9875, 9887, 1236, 9876, 5302, 5297, 2]
 // Exports: default
 
-// Module 9885 (NotificationSettingsMessageNotificationChannelActionSheet)
+// Module 9888 (NotificationSettingsMessageNotificationChannelActionSheet)
 import "noop";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UserNotificationSettings } from "ME";
@@ -17,7 +17,7 @@ let result = require("ME").fileFinishedImporting("modules/notifications/settings
 
 export default function NotificationSettingsMessageNotificationChannelActionSheet(channel) {
   const _require = channel;
-  let obj = _require(9872);
+  let obj = _require(9875);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   const unread = channelPresetSettings.unread;
   const notification = channelPresetSettings.notification;
@@ -43,5 +43,5 @@ export default function NotificationSettingsMessageNotificationChannelActionShee
     const NotificationLabel = channel(outer1_2[11]).NotificationLabel;
     const result = unread(outer1_2[10]).updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.notifications(message_notifications));
   };
-  return jsx(unread(9884), { context: "channel", value: notification, allMessagesSubLabel: null, onChange: null });
+  return jsx(unread(9887), { context: "channel", value: notification, allMessagesSubLabel: null, onChange: null });
 };

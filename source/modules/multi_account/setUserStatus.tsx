@@ -1,10 +1,10 @@
-// Module ID: 9810
-// Function ID: 9811
+// Module ID: 9814
+// Function ID: 9815
 // Name: _setUserStatus
-// Dependencies: [5, 5297, 5036, 676, 4189, 1236, 9811, 1374, 1337, 1350, 698, 2]
+// Dependencies: [5, 5298, 5037, 676, 4187, 1236, 9815, 1374, 1337, 1350, 698, 2]
 // Exports: default
 
-// Module 9810 (_setUserStatus)
+// Module 9814 (_setUserStatus)
 import getSystemLocale from "getSystemLocale";
 import initialize from "initialize";
 import filterPlayingActivities from "filterPlayingActivities";

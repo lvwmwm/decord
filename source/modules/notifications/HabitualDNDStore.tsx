@@ -1,7 +1,7 @@
 // Module ID: 13047
 // Function ID: 13048
 // Name: initialize
-// Dependencies: [5036, 676, 687, 4034, 709, 589, 2]
+// Dependencies: [5037, 676, 687, 4034, 709, 589, 2]
 
 // Module 13047 (initialize)
 import filterPlayingActivities from "filterPlayingActivities";

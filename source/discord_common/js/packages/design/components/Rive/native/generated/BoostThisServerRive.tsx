@@ -1,7 +1,7 @@
 // Module ID: 4076
 // Function ID: 4077
 // Name: BoostThisServerRive
-// Dependencies: [109, 19, 21, 4077, 4133, 4134, 2]
+// Dependencies: [109, 19, 21, 4077, 4131, 4132, 2]
 
 // Module 4076 (BoostThisServerRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
@@ -82,7 +82,7 @@ const forwardRefResult = importAllResult.forwardRef(function BoostThisServerRive
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4134) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4132) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BoostThisServerRive.tsx");
 

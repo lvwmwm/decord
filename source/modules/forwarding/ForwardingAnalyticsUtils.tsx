@@ -1,10 +1,10 @@
-// Module ID: 10282
-// Function ID: 10283
+// Module ID: 11120
+// Function ID: 11121
 // Name: trackForwardStart
-// Dependencies: [19, 1391, 676, 698, 4538, 12, 2]
+// Dependencies: [19, 1391, 676, 698, 4539, 12, 2]
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart, useTrackForwardAddRecipientOnce, useTrackForwardEditContextMessageOnce, useTrackForwardEditSearchOnce
 
-// Module 10282 (trackForwardStart)
+// Module 11120 (trackForwardStart)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
@@ -49,11 +49,11 @@ export const trackForwardSent = function trackForwardSent(arg0) {
     if (channel != null) {
       guild_id = channel.guild_id;
     }
-    const merged = Object.assign(require(4538) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guild_id));
-    const obj5 = require(4538) /* collectGuildAnalyticsMetadata */;
-    const merged1 = Object.assign(tmp13(4538).collectChannelAnalyticsMetadata(channel));
+    const merged = Object.assign(require(4539) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guild_id));
+    const obj5 = require(4539) /* collectGuildAnalyticsMetadata */;
+    const merged1 = Object.assign(tmp13(4539).collectChannelAnalyticsMetadata(channel));
     tmpResult.track(AnalyticEvents.MESSAGE_SHORTCUT_ACTION_SENT, obj);
-    const tmp13Result = tmp13(4538);
+    const tmp13Result = tmp13(4539);
   }
 };
 export const trackForwardCopyLink = function trackForwardCopyLink(channel_id, id) {

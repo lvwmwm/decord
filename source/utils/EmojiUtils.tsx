@@ -1,7 +1,7 @@
 // Module ID: 4006
 // Function ID: 4007
 // Name: getEmojiUnavailableReason
-// Dependencies: [5, 1395, 3989, 1922, 676, 1925, 4005, 4007, 5220, 3982, 7282, 1490, 1435, 2]
+// Dependencies: [5, 1395, 3989, 1922, 676, 1925, 4005, 4007, 5221, 3982, 7287, 1490, 1435, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
 // Module 4006 (getEmojiUnavailableReason)
@@ -105,7 +105,7 @@ function getEmojiUnavailableReason(intention) {
               }
             }
           }
-          let tmp3Result = tmp3(5220);
+          let tmp3Result = tmp3(5221);
           if (tmp3Result.isUnusableRoleSubscriptionEmoji(emoji, guildId)) {
             tmp3Result = tmp3(3982);
             tmp3Result.shouldHideGuildPurchaseEntryPoints(emoji.guildId) ? EmojiDisabledReasons.ROLE_SUBSCRIPTION_UNAVAILABLE : EmojiDisabledReasons.ROLE_SUBSCRIPTION_LOCKED;
@@ -118,7 +118,7 @@ function getEmojiUnavailableReason(intention) {
                 if (!tmp3Result1.isPurchasableRoleSubscriptionEmoji(emoji)) {
                   PREMIUM_LOCKED = EmojiDisabledReasons.PREMIUM_LOCKED;
                 }
-                tmp3Result1 = tmp3(5220);
+                tmp3Result1 = tmp3(5221);
               }
               tmp27Result = tmp27(4007);
             }
@@ -382,7 +382,7 @@ export const getEmojiUrl = function getEmojiUrl(arg0, arg1) {
     let emojiURL = importDefault(1435).getEmojiURL(obj);
     const obj2 = importDefault(1435);
   } else {
-    obj = importDefault(7282);
+    obj = importDefault(7287);
     emojiURL = obj.getURL(tmp);
   }
   return emojiURL;

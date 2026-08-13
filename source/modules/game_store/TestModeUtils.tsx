@@ -1,10 +1,10 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 7632
+// Function ID: 7633
 // Name: isTestModeForApplication
-// Dependencies: [7629, 7631, 589, 2]
+// Dependencies: [7633, 7635, 589, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication
 
-// Module 7628 (isTestModeForApplication)
+// Module 7632 (isTestModeForApplication)
 import initialize from "initialize";
 import reset from "reset";
 

@@ -1,7 +1,7 @@
 // Module ID: 12966
 // Function ID: 12967
 // Name: noop
-// Dependencies: [32, 5, 706, 676, 3, 12967, 12969, 687, 12970, 584, 12972, 12974, 12980, 12982, 13001, 10, 9, 4338, 12979, 500, 530, 698, 38, 589, 7150, 7154, 7157, 7155, 13002, 13003, 12985, 667, 7103, 7108, 1208, 709, 2]
+// Dependencies: [32, 5, 706, 676, 3, 12967, 12969, 687, 12970, 584, 12972, 12974, 12980, 12982, 13001, 10, 9, 4336, 12979, 500, 530, 698, 38, 589, 7156, 7160, 7163, 7161, 13002, 13003, 12985, 667, 7109, 7114, 1208, 709, 2]
 // Exports: setAccountSwitchUserId
 
 // Module 12966 (noop)
@@ -182,7 +182,7 @@ prototype["_connect"] = function _connect() {
   const self = this;
   let identify = this;
   if (this.willReconnect()) {
-    let obj = f91611(13001);
+    let obj = f91625(13001);
     if (obj.getIsPaused()) {
       tmp3.info("Skipping _connect because socket is paused");
     } else {
@@ -229,7 +229,7 @@ prototype["_connect"] = function _connect() {
       ({ compressionHandler: compressionHandler2, _handleClose } = self);
       onOpen = compressionHandler2;
       identify = _handleClose.bind(self);
-      f91611 = (str) => {
+      f91625 = (str) => {
         let d;
         let op;
         let s;
@@ -304,7 +304,7 @@ prototype["_connect"] = function _connect() {
       const dependencyMap = 0;
       compressionHandler2.dataReady((arg0) => {
         try {
-          f91611(arg0, c3);
+          f91625(arg0, c3);
           c3 = 0;
         } catch (tmp5) {
           c3 = 0;
@@ -448,7 +448,7 @@ prototype["_connect"] = function _connect() {
       };
       tmp32.onerror = function onError() {
         identify.setResumeUrl(null);
-        identify(4338).flushDNSCache();
+        identify(4336).flushDNSCache();
         identify._handleClose(false, 0, "An error with the websocket occurred");
       };
       let compressionHandler = self.compressionHandler;
@@ -853,25 +853,25 @@ prototype["_doIdentify"] = function _doIdentify() {
               timestamp = Date.now();
               outer1_0.identifyStartTime = timestamp;
               if (obj10.isCacheEnabled()) {
-                let committedVersions = outer1_1(7154).getCommittedVersions();
-                const obj12 = outer1_1(7154);
+                let committedVersions = outer1_1(7160).getCommittedVersions();
+                const obj12 = outer1_1(7160);
               } else {
                 committedVersions = {};
               }
               const items = [committedVersions, , ];
-              obj10 = outer1_0(7150);
+              obj10 = outer1_0(7156);
               if (obj13.isCacheEnabled()) {
-                let committedVersions1 = outer1_1(7157).getCommittedVersions();
-                const obj15 = outer1_1(7157);
+                let committedVersions1 = outer1_1(7163).getCommittedVersions();
+                const obj15 = outer1_1(7163);
               } else {
                 committedVersions1 = {};
               }
               items[1] = committedVersions1;
-              obj13 = outer1_0(7150);
-              let canUseGuildVersionsResult = outer1_0(7150).isCacheEnabled();
+              obj13 = outer1_0(7156);
+              let canUseGuildVersionsResult = outer1_0(7156).isCacheEnabled();
               if (canUseGuildVersionsResult) {
-                canUseGuildVersionsResult = outer1_1(7155).canUseGuildVersions();
-                const obj17 = outer1_1(7155);
+                canUseGuildVersionsResult = outer1_1(7161).canUseGuildVersions();
+                const obj17 = outer1_1(7161);
               }
               items[2] = canUseGuildVersionsResult;
               closure_2 = 1;
@@ -1062,8 +1062,8 @@ prototype["resetSocketAndClearCacheOnError"] = function resetSocketAndClearCache
   tmp3.error("resetSocketAndClearCacheOnError during " + action + ": " + error.message, error.stack);
   let obj1 = self(667);
   const usesClientModsResult = obj1.usesClientMods();
-  let obj2 = importDefault(7103);
-  obj = { name: self(7108).MetricEvents.SOCKET_CRASHED, tags: null };
+  let obj2 = importDefault(7109);
+  obj = { name: self(7114).MetricEvents.SOCKET_CRASHED, tags: null };
   if (metricAction == null) {
     metricAction = action;
   }

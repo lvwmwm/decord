@@ -1,10 +1,10 @@
-// Module ID: 4834
-// Function ID: 4835
+// Module ID: 4835
+// Function ID: 4836
 // Name: isRoleRequired
 // Dependencies: [1395, 505, 3994, 506, 2]
 // Exports: default
 
-// Module 4834 (isRoleRequired)
+// Module 4835 (isRoleRequired)
 import { GUILD_NON_CATEGORY_CHANNEL_TYPES as closure_2 } from "createChannelRecord";
 import { Permissions } from "sum";
 

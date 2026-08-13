@@ -1,7 +1,7 @@
 // Module ID: 12349
 // Function ID: 12350
 // Name: useTimestampTickedNow
-// Dependencies: [32, 19, 4336, 687, 589, 4229, 2]
+// Dependencies: [32, 19, 4334, 687, 589, 4227, 2]
 // Exports: useTimestampTickedNow
 
 // Module 12349 (useTimestampTickedNow)

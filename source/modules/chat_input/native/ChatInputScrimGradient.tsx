@@ -1,10 +1,10 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11690
+// Function ID: 11691
 // Name: ChatInputScrimGradient
-// Dependencies: [19, 17, 21, 4164, 4065, 712, 688, 4765, 2]
+// Dependencies: [19, 17, 21, 4162, 4065, 712, 688, 4766, 2]
 // Exports: ChatInputScrimGradient, useChatInputFloatingOverlayStyle
 
-// Module 11692 (ChatInputScrimGradient)
+// Module 11690 (ChatInputScrimGradient)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,8 +23,8 @@ export const ChatInputScrimGradient = function ChatInputScrimGradient(scrimBase)
     inline = false;
   }
   scrimBase = scrimBase.scrimBase;
-  let obj = require(4164) /* getGradientColorByPercentage */;
-  const gradientValue = obj.useGradientValue(require(4164) /* getGradientColorByPercentage */.GradientPercentage.END);
+  let obj = require(4162) /* getGradientColorByPercentage */;
+  const gradientValue = obj.useGradientValue(require(4162) /* getGradientColorByPercentage */.GradientPercentage.END);
   const token = require(4065) /* map */.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWER);
   const obj2 = require(4065) /* map */;
   const tmp4 = importDefault;
@@ -54,7 +54,7 @@ export const ChatInputScrimGradient = function ChatInputScrimGradient(scrimBase)
   }
   obj = { style: { position: "absolute", top: result, left: 0, right: 0, bottom: 0 }, pointerEvents: "none", children: null };
   const items = [str, hex2rgbResult];
-  const items1 = [callback(tmp4(4765), { colors: items, style: { height: gradientHeight }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: [0, 1] }), callback(View, { style: { flex: 1, backgroundColor: hex2rgbResult } })];
+  const items1 = [callback(tmp4(4766), { colors: items, style: { height: gradientHeight }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: [0, 1] }), callback(View, { style: { flex: 1, backgroundColor: hex2rgbResult } })];
   obj[2] = items1;
   return closure_5(View, obj);
 };

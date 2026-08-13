@@ -1,10 +1,10 @@
-// Module ID: 9704
-// Function ID: 9705
+// Module ID: 9708
+// Function ID: 9709
 // Name: CrownIcon
-// Dependencies: [19, 21, 712, 4064, 9705, 2]
+// Dependencies: [19, 21, 712, 4064, 9709, 2]
 // Exports: CrownIcon
 
-// Module 9704 (CrownIcon)
+// Module 9708 (CrownIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const CrownIcon = function CrownIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9705) /* registerAsset */;
+  obj[0] = require(9709) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,9 +1,9 @@
-// Module ID: 7026
-// Function ID: 7027
+// Module ID: 7032
+// Function ID: 7033
 // Name: handleReset
-// Dependencies: [1390, 1981, 7027, 5262, 3991, 1340, 1218, 5299, 1391, 7028, 3989, 4356, 1979, 4539, 685, 7029, 12, 1370, 3979, 11, 589, 709, 2]
+// Dependencies: [1390, 1981, 7033, 5263, 3991, 1340, 1218, 5300, 1391, 7034, 3989, 4357, 1979, 4540, 685, 7035, 12, 1370, 3979, 11, 589, 709, 2]
 
-// Module 7026 (handleReset)
+// Module 7032 (handleReset)
 import participantFromServer from "participantFromServer";
 import isSubscriptionGated from "isSubscriptionGated";
 import scheduledEventSort from "scheduledEventSort";

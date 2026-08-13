@@ -1,10 +1,10 @@
-// Module ID: 5170
-// Function ID: 5171
+// Module ID: 5171
+// Function ID: 5172
 // Name: selectVoiceChannelAdditional
-// Dependencies: [1391, 1910, 5171, 3989, 1979, 1922, 4360, 5172, 4526, 5173, 4061, 5174, 5175, 4312, 5187, 2007, 12963, 514, 709, 2]
+// Dependencies: [1391, 1910, 5172, 3989, 1979, 1922, 4361, 5173, 4527, 5174, 4061, 5175, 5176, 4310, 5188, 2007, 12963, 514, 709, 2]
 // Exports: selectVoiceChannelAdditional
 
-// Module 5170 (selectVoiceChannelAdditional)
+// Module 5171 (selectVoiceChannelAdditional)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import recomputeGuild from "recomputeGuild";

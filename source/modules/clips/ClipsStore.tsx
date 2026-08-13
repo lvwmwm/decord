@@ -1,9 +1,9 @@
-// Module ID: 4398
-// Function ID: 4399
+// Module ID: 4399
+// Function ID: 4400
 // Name: _migrateDefaultStorage
-// Dependencies: [5, 4364, 1218, 4399, 676, 4400, 3972, 4401, 38, 4402, 4407, 1403, 4410, 4411, 589, 4392, 709, 2]
+// Dependencies: [5, 4365, 1218, 4400, 676, 4401, 3972, 4402, 38, 4403, 4408, 1403, 4411, 4412, 589, 4393, 709, 2]
 
-// Module 4398 (_migrateDefaultStorage)
+// Module 4399 (_migrateDefaultStorage)
 import closure_3 from "RESOLUTION_720";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -102,7 +102,7 @@ function _migrateDefaultStorage() {
             return obj3;
           } else {
             callback2 = arg1;
-            obj = callback(4401);
+            obj = callback(4402);
             callback = obj.pathJoin(callback2, closure_15);
             c3 = 0;
           }
@@ -167,7 +167,7 @@ function trackSharedRemoteClipId(arg0, arg1, arg2) {
   } else {
     return false;
   }
-  obj = importDefault(4410);
+  obj = importDefault(4411);
 }
 ({ CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_6, ClipSaveTypes: error, ClipsUserEducationType: metroImportAll, ClipsLogger: c9, MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: c10, ClipsHardwareClassification: unpackModuleId, ClipsSaveNoOpReason: closure_12, ClipsLengthSettings, ClipsViewerConnectivitySettings, DEFAULT_CLIPS_BITRATE_PERCENT } = result);
 let c14 = "default";
@@ -235,7 +235,7 @@ prototype["getSettings"] = function getSettings() {
 prototype["getEnableAutoclipping"] = function getEnableAutoclipping() {
   let enabled = closure_31.clipsSettings.enableAutoclipping;
   if (enabled == null) {
-    const AutoclippingDefaultOverrideExperiment = require(4411) /* apexExperiment */.AutoclippingDefaultOverrideExperiment;
+    const AutoclippingDefaultOverrideExperiment = require(4412) /* apexExperiment */.AutoclippingDefaultOverrideExperiment;
     enabled = AutoclippingDefaultOverrideExperiment.getConfig({ location: "getAutoclippingDefault" }).enabled;
   }
   return enabled;
@@ -410,7 +410,7 @@ let items = [
     return obj;
   },
   (clipsSettings) => {
-    const _default = require(4392) /* _detectH265HardwareDecode */.default;
+    const _default = require(4393) /* _detectH265HardwareDecode */.default;
     let hardwareEncoding;
     if (_default != null) {
       hardwareEncoding = _default.getHardwareEncoding();
@@ -660,7 +660,7 @@ obj = {
     let pid;
     let sourceName;
     ({ sourceName, pid } = arg0);
-    let obj = require(4402) /* isClipsEnabled */;
+    let obj = require(4403) /* isClipsEnabled */;
     if (obj.isClipsEnabled()) {
       let tmp2 = sourceName;
       if (null != pid) {
@@ -689,7 +689,7 @@ obj = {
   STREAM_STOP: function handleStreamStop(arg0) {
     let tmp2 = null != _null;
     if (tmp2) {
-      let obj = require(4407) /* isStreamKey */;
+      let obj = require(4408) /* isStreamKey */;
       const tmp6 = obj.decodeStreamKey(tmp).ownerId === store.getId();
       if (tmp6) {
         let tmp8 = null;
@@ -824,7 +824,7 @@ obj = {
   },
   CLIPS_INIT: function handleClipsInit(applicationName) {
     let c26 = null;
-    let obj = require(4402) /* isClipsEnabled */;
+    let obj = require(4403) /* isClipsEnabled */;
     if (obj.isClipsEnabled()) {
       obj = { applicationName: null, newClipIds: null, ended: false };
       obj[0] = applicationName.applicationName;

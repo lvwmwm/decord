@@ -1,9 +1,9 @@
-// Module ID: 4165
-// Function ID: 4166
+// Module ID: 4163
+// Function ID: 4164
 // Name: isSyncedModeThemesEnabled
-// Dependencies: [1303, 1302, 1304, 1340, 1395, 1391, 1922, 1348, 1305, 1367, 4166, 1377, 4189, 4007, 4034, 1366, 4192, 589, 1347, 709, 2]
+// Dependencies: [1303, 1302, 1304, 1340, 1395, 1391, 1922, 1348, 1305, 1367, 4164, 1377, 4187, 4007, 4034, 1366, 4190, 589, 1347, 709, 2]
 
-// Module 4165 (isSyncedModeThemesEnabled)
+// Module 4163 (isSyncedModeThemesEnabled)
 import initialize from "initialize";
 import handleThemeChange from "handleThemeChange";
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
@@ -69,7 +69,7 @@ function handleUserSettingsProtoStoreUpdate() {
     result = tmpResult.isPerModeThemingActive(isSyncedModeThemesEnabled);
   }
   if (!result) {
-    tmpResult = tmp(4192);
+    tmpResult = tmp(4190);
     tmpResult.setUseSystemTheme(SystemThemeState.OFF);
   }
   if (null != backgroundGradientPresetId) {
@@ -237,9 +237,9 @@ const clientThemesBackgroundStore = new ClientThemesBackgroundStore(require("dis
               let c15 = true;
             }
           }
-          tmp6Result = tmp6(4189);
+          tmp6Result = tmp6(4187);
         }
-        obj2 = require(4166) /* UNSAFE_isDismissibleContentDismissed */;
+        obj2 = require(4164) /* UNSAFE_isDismissibleContentDismissed */;
         tmp6 = require;
       }
     }

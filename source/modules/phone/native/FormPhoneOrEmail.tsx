@@ -1,9 +1,9 @@
-// Module ID: 8565
-// Function ID: 8566
+// Module ID: 8569
+// Function ID: 8570
 // Name: CountryCodeSelector
-// Dependencies: [19, 17, 21, 4344, 712, 4886, 1236, 4340, 8535, 8511, 8512, 8514, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4887, 1236, 4338, 8539, 8515, 8516, 8518, 2]
 
-// Module 8565 (CountryCodeSelector)
+// Module 8569 (CountryCodeSelector)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -39,8 +39,8 @@ function CountryCodeSelector(alpha2) {
     const obj1 = { style: null, variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
     obj1[0] = tmp.selectorText;
     obj1[3] = combined;
-    obj[6] = callback(require(4340) /* Text */.Text, obj1);
-    const items = [callback(require(4886) /* PressableBase */.PressableOpacity, obj), ];
+    obj[6] = callback(require(4338) /* Text */.Text, obj1);
+    const items = [callback(require(4887) /* PressableBase */.PressableOpacity, obj), ];
     const obj2 = { style: null };
     obj2[0] = tmp.separator;
     items[1] = callback(View, obj2);

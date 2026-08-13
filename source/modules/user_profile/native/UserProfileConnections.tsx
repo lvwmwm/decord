@@ -1,7 +1,7 @@
 // Module ID: 12540
 // Function ID: 12541
 // Name: VerifiedIcon
-// Dependencies: [19, 17, 1994, 4190, 5815, 676, 5165, 21, 1297, 4344, 712, 11106, 4065, 1363, 11111, 11112, 8833, 1367, 5164, 5040, 1435, 8977, 4538, 4058, 4313, 5795, 4061, 1236, 4340, 5413, 4064, 7996, 4886, 4072, 589, 12541, 5814, 5806, 12544, 2]
+// Dependencies: [19, 17, 1994, 4188, 5816, 676, 5166, 21, 1297, 4342, 712, 11021, 4065, 1363, 11026, 11027, 8837, 1367, 5165, 5041, 1435, 8981, 4539, 4058, 4311, 5796, 4061, 1236, 4338, 5414, 4064, 8000, 4887, 4072, 589, 12541, 5815, 5807, 12544, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
 // Module 12540 (VerifiedIcon)
@@ -50,12 +50,12 @@ function VerifiedIcon(arg0) {
     obj = { style: null, children: null };
     obj[0] = tmp.verifiedIconContainer;
     obj = { source: null, color: null };
-    obj[0] = tmp4(11111);
+    obj[0] = tmp4(11026);
     obj[1] = PLATFORM_TWITTER;
     const merged = Object.assign(obj);
     const items = [callback(tmp2(1297).Icon, obj), ];
     obj1 = { source: null, color: null };
-    obj1[0] = tmp4(11112);
+    obj1[0] = tmp4(11027);
     obj1[1] = WHITE;
     const merged1 = Object.assign(obj);
     items[1] = callback(tmp2(1297).Icon, obj1);
@@ -464,7 +464,7 @@ let closure_20 = importAllResult.memo((application) => {
 const memoResult = importAllResult.memo((applicationRoleConnection) => {
   applicationRoleConnection = applicationRoleConnection.applicationRoleConnection;
   const tmp = callback3();
-  let obj = applicationRoleConnection(11106);
+  let obj = applicationRoleConnection(11021);
   const roleConnectionMetadataItems = obj.generateRoleConnectionMetadataItems(applicationRoleConnection);
   let obj1 = importDefault(1435);
   obj = { id: applicationRoleConnection.application.id, icon: applicationRoleConnection.application.icon };
@@ -476,7 +476,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
       if (null != applicationRoleConnection.platform_username) {
         obj = { variant: "text-xs/medium", color: "text-subtle", children: null };
         obj[2] = applicationRoleConnection.platform_username;
-        tmp15 = callback(tmp4(4340).Text, obj);
+        tmp15 = callback(tmp4(4338).Text, obj);
       }
     }
     const items = [tmp15, , ];
@@ -501,7 +501,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
       return applicationRoleConnection.application.name;
     };
     obj4[2] = intl2.format(tmp4(1236).t.zIT9YA, obj5);
-    obj3[1] = callback(tmp4(4340).Text, obj4);
+    obj3[1] = callback(tmp4(4338).Text, obj4);
     items[2] = callback(closure_5, obj3);
     obj2[0] = items;
     let name = applicationRoleConnection.platform_name;
@@ -518,7 +518,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     obj7[0] = tmp4(1297).Icon.Sizes.MEDIUM;
     obj7[1] = applicationIconSource;
     obj6[2] = callback(tmp4(1297).Icon, obj7);
-    return callback(tmp4(5413).TableRow, obj6);
+    return callback(tmp4(5414).TableRow, obj6);
   } else {
     const obj8 = { style: null, children: null };
     obj8[0] = tmp.connectionRow;
@@ -532,14 +532,14 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     if (null != applicationRoleConnection.platform_name) {
       const obj11 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
       obj11[2] = applicationRoleConnection.platform_name;
-      tmp8Result = tmp8(tmp4(4340).Text, obj11);
+      tmp8Result = tmp8(tmp4(4338).Text, obj11);
     }
     const items2 = [tmp8Result, , , ];
     tmp8Result = null;
     if (null != applicationRoleConnection.platform_username) {
       const obj12 = { variant: "text-md/normal", color: "text-default", children: null };
       obj12[2] = applicationRoleConnection.platform_username;
-      tmp8Result = tmp8(tmp4(4340).Text, obj12);
+      tmp8Result = tmp8(tmp4(4338).Text, obj12);
     }
     items2[1] = tmp8Result;
     let tmp8Result1 = null;
@@ -562,7 +562,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
       return applicationRoleConnection.application.name;
     };
     obj15[2] = intl.format(tmp4(1236).t.zIT9YA, obj16);
-    obj14[1] = callback(tmp4(4340).Text, obj15);
+    obj14[1] = callback(tmp4(4338).Text, obj15);
     items2[3] = callback(closure_5, obj14);
     obj10[1] = items2;
     items1[1] = tmp6(closure_5, obj10);
@@ -614,14 +614,14 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
       const intl2 = tmp5(1236).intl;
       obj[1] = intl2.string(tmp5(1236).t["3fe7U5"]);
       obj[2] = items2;
-      let tmp12Result = tmp12(tmp5(5806).TableRowGroup, obj);
+      let tmp12Result = tmp12(tmp5(5807).TableRowGroup, obj);
     } else {
       obj1 = { children: null };
       obj1[0] = items2;
-      tmp12Result = tmp12(tmp5(5814).UserProfileCardRows, obj1);
+      tmp12Result = tmp12(tmp5(5815).UserProfileCardRows, obj1);
     }
     obj[3] = tmp12Result;
-    return closure_13(tmp2(5814), obj);
+    return closure_13(tmp2(5815), obj);
   }
   return null;
 };
@@ -652,14 +652,14 @@ export const UserProfileApplicationRoleConnectionsCard = function UserProfileApp
         const intl2 = tmp5(1236).intl;
         obj[1] = intl2.string(tmp5(1236).t.PHjkRE);
         obj[2] = mapped;
-        let tmp9Result = tmp9(tmp5(5806).TableRowGroup, obj);
+        let tmp9Result = tmp9(tmp5(5807).TableRowGroup, obj);
       } else {
         const obj1 = { children: null };
         obj1[0] = mapped;
-        tmp9Result = tmp9(tmp5(5814).UserProfileCardRows, obj1);
+        tmp9Result = tmp9(tmp5(5815).UserProfileCardRows, obj1);
       }
       obj[3] = tmp9Result;
-      return closure_13(importDefault(5814), obj);
+      return closure_13(importDefault(5815), obj);
     }
   }
   return null;

@@ -1,10 +1,10 @@
-// Module ID: 4166
-// Function ID: 4167
+// Module ID: 4164
+// Function ID: 4165
 // Name: UNSAFE_isDismissibleContentDismissed
-// Dependencies: [5, 1340, 4167, 687, 4188, 1378, 1379, 11, 1376, 589, 1374, 2]
+// Dependencies: [5, 1340, 4165, 687, 4186, 1378, 1379, 11, 1376, 589, 1374, 2]
 // Exports: UNSAFE_isSnowflakeBoundDismissibleContentDismissed, UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE
 
-// Module 4166 (UNSAFE_isDismissibleContentDismissed)
+// Module 4164 (UNSAFE_isDismissibleContentDismissed)
 import isSingleUseDismissibleContent from "isSingleUseDismissibleContent";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -494,7 +494,7 @@ export const UNSAFE_markDismissibleContentAsDismissed = function UNSAFE_markDism
   return applyArgumentsResult;
 };
 export const UNSAFE_isSnowflakeBoundDismissibleContentDismissed = function UNSAFE_isSnowflakeBoundDismissibleContentDismissed(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, promotionId) {
-  let obj = require(4188) /* useNewUserDismissibleContent */;
+  let obj = require(4186) /* useNewUserDismissibleContent */;
   if (obj.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE)) {
     return { isDismissed: true, lastDismissedSnowflakeId: null };
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 4744
-// Function ID: 4745
+// Module ID: 4745
+// Function ID: 4746
 // Name: isBlurDisabled
-// Dependencies: [19, 17, 4745, 21, 500, 4746, 4065, 712, 4749, 2]
+// Dependencies: [19, 17, 4746, 21, 500, 4747, 4065, 712, 4750, 2]
 // Exports: isBlurDisabled
 
-// Module 4744 (isBlurDisabled)
+// Module 4745 (isBlurDisabled)
 import { View } from "get ActivityIndicator";
 import { useVisualEffectViewOverrides as closure_4 } from "useVisualEffectViewOverrides";
 import { jsx } from "jsxProd";
@@ -67,7 +67,7 @@ export default require("noop").forwardRef(function VisualEffectView(blurAmount) 
     let tmp13 = null == android_blurTargetViewNativeId;
     if (!tmp13) {
       if (android_softwareBlurDisabled) {
-        android_softwareBlurDisabled = !tmp3(4749).MODERN_ANDROID_BLURRING_AVAILABLE;
+        android_softwareBlurDisabled = !tmp3(4750).MODERN_ANDROID_BLURRING_AVAILABLE;
       }
       tmp13 = true === android_softwareBlurDisabled;
     }
@@ -100,8 +100,8 @@ export default require("noop").forwardRef(function VisualEffectView(blurAmount) 
     obj1[3] = tintColorOverride;
     obj1[4] = android_blurTargetViewNativeId;
     const merged2 = Object.assign(merged);
-    tmp14Result = tmp14(tmp5(4749), obj1);
-    const tmp5Result = tmp5(4749);
+    tmp14Result = tmp14(tmp5(4750), obj1);
+    const tmp5Result = tmp5(4750);
   } else {
     const obj2 = { ref: null, blurEffectName: null, blurAmount: null, tintColor: null };
     obj2[0] = arg1;
@@ -120,7 +120,7 @@ export default require("noop").forwardRef(function VisualEffectView(blurAmount) 
       const merged3 = Object.assign(merged);
       tmp14Result = tmp14(tmp15, obj2);
     } else {
-      if (!tmp3(4746).MODERN_IOS_BLURS_EFFECTS_AVAILABLE) {
+      if (!tmp3(4747).MODERN_IOS_BLURS_EFFECTS_AVAILABLE) {
         let str2 = "UIBlurEffectStyleDark";
         if ("light" === blurTheme) {
           str2 = "UIBlurEffectStyleLight";
@@ -142,7 +142,7 @@ export const isBlurDisabled = function isBlurDisabled(merged) {
     let tmp4 = null == tmp;
     if (!tmp4) {
       if (android_softwareBlurDisabled) {
-        android_softwareBlurDisabled = !require(4749) /* MODERN_ANDROID_BLURRING_AVAILABLE */.MODERN_ANDROID_BLURRING_AVAILABLE;
+        android_softwareBlurDisabled = !require(4750) /* MODERN_ANDROID_BLURRING_AVAILABLE */.MODERN_ANDROID_BLURRING_AVAILABLE;
       }
       tmp4 = true === android_softwareBlurDisabled;
     }

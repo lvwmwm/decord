@@ -1,10 +1,10 @@
-// Module ID: 11396
-// Function ID: 11397
+// Module ID: 11387
+// Function ID: 11388
 // Name: jumpToReferencedMessage
-// Dependencies: [6959, 2]
+// Dependencies: [6965, 2]
 // Exports: default
 
-// Module 11396 (jumpToReferencedMessage)
+// Module 11387 (jumpToReferencedMessage)
 const result = require("set").fileFinishedImporting("modules/messages/native/jumpToReferencedMessage.tsx");
 
 export default function jumpToReferencedMessage(messageReference) {
@@ -14,7 +14,7 @@ export default function jumpToReferencedMessage(messageReference) {
     channel_id = messageReference.channel_id;
   }
   if (tmp2) {
-    let obj = importDefault(6959);
+    let obj = importDefault(6965);
     obj = { channelId: null, messageId: null, flash: true, returnMessageId: null };
     ({ channel_id: obj2[0], message_id: obj2[1] } = messageReference);
     obj[3] = messageReference.id;

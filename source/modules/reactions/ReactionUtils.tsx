@@ -1,7 +1,7 @@
 // Module ID: 4000
 // Function ID: 4001
 // Name: MAX_REACTIONS
-// Dependencies: [1218, 676, 4001, 4002, 1236, 7262, 4034, 698, 2]
+// Dependencies: [1218, 676, 4001, 4002, 1236, 7267, 4034, 698, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
 // Module 4000 (MAX_REACTIONS)
@@ -73,12 +73,12 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
   }
 };
 export const isMeReaction = function isMeReaction(me, me_burst, arg2) {
-  let tmp3 = arg2 === require(7262) /* ReactionTypes */.ReactionTypes.BURST;
+  let tmp3 = arg2 === require(7267) /* ReactionTypes */.ReactionTypes.BURST;
   if (tmp3) {
     tmp3 = true === me_burst;
   }
   if (!tmp3) {
-    let tmp5 = arg2 === require(7262) /* ReactionTypes */.ReactionTypes.NORMAL;
+    let tmp5 = arg2 === require(7267) /* ReactionTypes */.ReactionTypes.NORMAL;
     if (tmp5) {
       tmp5 = true === me;
     }

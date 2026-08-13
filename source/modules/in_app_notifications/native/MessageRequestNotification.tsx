@@ -1,7 +1,7 @@
 // Module ID: 10253
 // Function ID: 10254
 // Name: MessageRequestInAppNotification
-// Dependencies: [19, 21, 1236, 9816, 4200, 9898, 1297, 9834, 2]
+// Dependencies: [19, 21, 1236, 9820, 4198, 9896, 1297, 9837, 2]
 // Exports: default
 
 // Module 10253 (MessageRequestInAppNotification)
@@ -26,23 +26,23 @@ export default function MessageRequestInAppNotification(notification) {
     return obj;
   }, items);
   const callback = React.useCallback(() => {
-    numMutualGuilds(9816).clearNotification();
-    const obj = numMutualGuilds(9816);
-    const rootNavigationRef = author(4200).getRootNavigationRef();
+    numMutualGuilds(9820).clearNotification();
+    const obj = numMutualGuilds(9820);
+    const rootNavigationRef = author(4198).getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("message-requests");
     }
   }, []);
   let obj = { icon: null, header: null, children: null, onPress: null, notification: null };
-  obj = { user: author, size: null, guildId: "Array" };
+  obj = { user: author, size: null, guildId: "e" };
   obj[1] = author(1297).AvatarSizes.NORMAL;
-  obj[0] = jsx(author(1297).Avatar, { user: author, size: null, guildId: "Array" });
+  obj[0] = jsx(author(1297).Avatar, { user: author, size: null, guildId: "e" });
   obj[1] = memo;
   obj = { text: null };
   let intl = author(1236).intl;
   obj[0] = intl.string(author(1236).t["Bx4/Lf"]);
-  obj[2] = jsx(author(9834).SystemMessageText, { text: null });
+  obj[2] = jsx(author(9837).SystemMessageText, { text: null });
   obj[3] = callback;
   obj[4] = notification;
-  return jsx(author(9898).NotificationPressable, { text: null });
+  return jsx(author(9896).NotificationPressable, { text: null });
 };

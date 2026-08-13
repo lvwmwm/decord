@@ -1,10 +1,10 @@
-// Module ID: 11815
-// Function ID: 11816
+// Module ID: 11813
+// Function ID: 11814
 // Name: EmojiConfetti
-// Dependencies: [5, 32, 19, 17, 4336, 5215, 676, 1925, 21, 4344, 500, 712, 4083, 4345, 4770, 589, 4753, 4034, 4002, 8117, 1435, 5399, 698, 5787, 8695, 4312, 5803, 4340, 1236, 11723, 11816, 4754, 2]
+// Dependencies: [5, 32, 19, 17, 4334, 5216, 676, 1925, 21, 4342, 500, 712, 4083, 4343, 4771, 589, 4754, 4034, 4002, 8121, 1435, 5400, 698, 5788, 8699, 4310, 5804, 4338, 1236, 11721, 11814, 4755, 2]
 // Exports: default
 
-// Module 11815 (EmojiConfetti)
+// Module 11813 (EmojiConfetti)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import closure_4 from "set";
 import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji";
@@ -43,7 +43,7 @@ function EmojiConfetti(children) {
   let obj3 = top(4083);
   sharedValue3 = top(4083).useSharedValue(0);
   let obj4 = top(4083);
-  const mountLayoutEffect = top(4770).useMountLayoutEffect(() => {
+  const mountLayoutEffect = top(4771).useMountLayoutEffect(() => {
     let obj = sharedValue;
     let num = 0;
     if (!closure_2) {
@@ -84,7 +84,7 @@ function EmojiConfetti(children) {
     const withTimingResult5 = top(outer1_2[13]).withTiming(1, { duration: 360 });
     const result5 = obj4.set(obj17.withSequence(withTimingResult4, withTimingResult5, top(outer1_2[13]).withTiming(0, { duration: 240 })));
   });
-  let obj5 = top(4770);
+  let obj5 = top(4771);
   const fn = function f() {
     let obj = { scale: sharedValue2.get() };
     const items = [obj, ];

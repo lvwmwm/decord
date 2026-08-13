@@ -1,9 +1,9 @@
-// Module ID: 5165
-// Function ID: 5166
+// Module ID: 5166
+// Function ID: 5167
 // Name: OperatorTypes
 // Dependencies: [2]
 
-// Module 5165 (OperatorTypes)
+// Module 5166 (OperatorTypes)
 const result = require("set").fileFinishedImporting("modules/connections/Constants.tsx");
 
 export const OperatorTypes = { EQUAL: 1, [1]: "EQUAL", NOT_EQUAL: 2, [2]: "NOT_EQUAL", LESS_THAN: 3, [3]: "LESS_THAN", GREATER_THAN: 4, [4]: "GREATER_THAN" };

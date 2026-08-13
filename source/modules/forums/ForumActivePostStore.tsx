@@ -1,10 +1,10 @@
-// Module ID: 5960
-// Function ID: 5961
+// Module ID: 5962
+// Function ID: 5963
 // Name: maybeRebuildState
-// Dependencies: [5263, 5961, 1218, 1391, 4356, 1979, 1400, 1402, 12, 5962, 11, 589, 1433, 709, 2]
+// Dependencies: [5264, 5963, 1218, 1391, 4357, 1979, 1400, 1402, 12, 5964, 11, 589, 1433, 709, 2]
 // Exports: computeThreadIdsSnapshot
 
-// Module 5960 (maybeRebuildState)
+// Module 5962 (maybeRebuildState)
 import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
 import updateState from "updateState";
 import fetchFingerprint from "fetchFingerprint";
@@ -318,7 +318,7 @@ const forumActivePostStore = new ForumActivePostStore(require("dispatcher"), {
     channel = channel.channel;
     if (null != channel.parent_id) {
       if (channel.parent_id === c12) {
-        const isForumPostPinnedResult = require(5962) /* getCreationDefaultFormatter */.isForumPostPinned(channel.id);
+        const isForumPostPinnedResult = require(5964) /* getCreationDefaultFormatter */.isForumPostPinned(channel.id);
         const hasItem = set2.has(channel.id);
         if (isForumPostPinnedResult) {
           if (!hasItem) {

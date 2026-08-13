@@ -1,9 +1,9 @@
-// Module ID: 4904
-// Function ID: 4905
+// Module ID: 4905
+// Function ID: 4906
 // Name: requestPermissionCore
-// Dependencies: [4905, 2]
+// Dependencies: [4906, 2]
 
-// Module 4904 (requestPermissionCore)
+// Module 4905 (requestPermissionCore)
 import { NativePermissionBaseUtils } from "requestAuthorization";
 
 class NativePermissionDesktopNullUtils extends NativePermissionBaseUtils {

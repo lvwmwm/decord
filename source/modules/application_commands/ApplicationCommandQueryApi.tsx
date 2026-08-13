@@ -1,10 +1,10 @@
-// Module ID: 9583
-// Function ID: 9584
+// Module ID: 9587
+// Function ID: 9588
 // Name: findCommandInSection
-// Dependencies: [32, 19, 1910, 8383, 4777, 676, 7022, 8391, 589, 8393, 1370, 1954, 8388, 9584, 7024, 2]
+// Dependencies: [32, 19, 1910, 8387, 4778, 676, 7028, 8395, 589, 8397, 1370, 1954, 8392, 9588, 7030, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 9583 (findCommandInSection)
+// Module 9587 (findCommandInSection)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -40,7 +40,7 @@ function findCommandInSection(found, commandKey) {
       }
       let command;
       if (null != rootCommand) {
-        let obj = _require(7022);
+        let obj = _require(7028);
         obj = { rootCommand: null, command: null, applicationId: null };
         obj[0] = rootCommand;
         obj[1] = rootCommand;
@@ -67,7 +67,7 @@ let result = require("createGuildRecordFromRust").fileFinishedImporting("modules
 export const getCachedCommand = function getCachedCommand(type, commandKey) {
   let closure_0 = arg2;
   if (null == commandKey) {
-    return { application: "isArray", command: "accessibilityRole" };
+    return { application: "Array", command: "ct" };
   } else {
     const userState = authStore.getUserState();
     const result2 = userState.result;
@@ -122,7 +122,7 @@ export const getCachedCommand = function getCachedCommand(type, commandKey) {
         }
       }
     }
-    return { application: "isArray", command: "accessibilityRole" };
+    return { application: "Array", command: "ct" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -168,7 +168,7 @@ export const getCachedApplicationSection = function getCachedApplicationSection(
 export const getCachedResults = function getCachedResults(type, CHAT, query) {
   let obj = { commandTypes: items, text: query };
   items = [CHAT];
-  obj = { scoreMethod: require(8391) /* ScoreMethod */.ScoreMethod.COMMAND_OR_APPLICATION, allowFetch: false };
+  obj = { scoreMethod: require(8395) /* ScoreMethod */.ScoreMethod.COMMAND_OR_APPLICATION, allowFetch: false };
   query = authStore.query(type, obj, obj);
   obj = { commands: query.commands, sections: query.descriptors };
   return obj;
@@ -340,7 +340,7 @@ export const executeQuery = function executeQuery(type, commandTypes, placeholde
     obj[0] = tmp3;
     let tmp4 = require;
     let tmp5 = dependencyMap;
-    obj[1] = require(7024) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER;
+    obj[1] = require(7030) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER;
     let _HermesInternal = HermesInternal;
     obj[2] = "placeholder-" + num3;
     let tmp6 = obj;
@@ -358,7 +358,7 @@ export const executeQuery = function executeQuery(type, commandTypes, placeholde
   if (loading) {
     tmp14 = descriptors;
     if (0 === descriptors.length) {
-      const items2 = [require(8393) /* getOptionValue */.BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN]];
+      const items2 = [require(8397) /* getOptionValue */.BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN]];
       tmp14 = items2;
     }
   }
@@ -460,7 +460,7 @@ export const useCommand = function useCommand(arg0, commandId) {
         }
       }
     }
-    return { command: "isArray", application: "accessibilityRole" };
+    return { command: "Array", application: "ct" };
   }, items);
 };
 export const useCommandsForApplication = function useCommandsForApplication(arg0, arg1, arg2) {

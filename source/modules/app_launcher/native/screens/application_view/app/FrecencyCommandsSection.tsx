@@ -1,10 +1,10 @@
-// Module ID: 11595
-// Function ID: 11596
+// Module ID: 11591
+// Function ID: 11592
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 676, 21, 4344, 11577, 11596, 4538, 9595, 4340, 1236, 7024, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 11573, 11592, 4539, 9599, 4338, 1236, 7030, 2]
 // Exports: default
 
-// Module 11595 (FrecencyCommandsSection)
+// Module 11591 (FrecencyCommandsSection)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -32,7 +32,7 @@ export default function FrecencyCommandsSection(commands) {
   ({ onPressCommand: importDefault, section: dependencyMap, onExecuteCommand: noop, installOnDemand: View, sectionName } = commands);
   let arr;
   const tmp = createCacheKey();
-  arr = importDefault(11596)({ context, commands: commands.allCommands, limit: 5 });
+  arr = importDefault(11592)({ context, commands: commands.allCommands, limit: 5 });
   const items = [arr.length, sectionName];
   const effect = React.useEffect(() => {
     if (0 !== arr.length) {
@@ -53,7 +53,7 @@ export default function FrecencyCommandsSection(commands) {
     obj = { variant: "text-md/medium", color: "text-default", children: null };
     const intl = context(1236).intl;
     obj[2] = intl.string(context(1236).t.acSE0h);
-    obj[1] = arr(context(4340).Heading, obj);
+    obj[1] = arr(context(4338).Heading, obj);
     const items1 = [
       arr(View, obj),
       arr.map((command) => {

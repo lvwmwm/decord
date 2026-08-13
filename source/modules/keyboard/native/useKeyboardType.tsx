@@ -1,10 +1,10 @@
-// Module ID: 4209
-// Function ID: 4210
+// Module ID: 4207
+// Function ID: 4208
 // Name: useKeyboardType
 // Dependencies: [19, 1496, 1497, 4083, 1626, 2]
 // Exports: default, getKeyboardContextForType, getKeyboardType, getKeyboardTypePrevious, useKeyboardContextForType, useKeyboardTypePrevious, useKeyboardTypeSharedValue, useKeyboardWillOpenSharedValue
 
-// Module 4209 (useKeyboardType)
+// Module 4207 (useKeyboardType)
 import noop from "noop";
 
 const require = arg1;

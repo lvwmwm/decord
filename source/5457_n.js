@@ -1,49 +1,18 @@
 // Module ID: 5457
 // Function ID: 5458
 // Name: n
-// Dependencies: [5439, 1653]
+// Dependencies: []
 
 // Module 5457 (n)
-const require = arg1;
-const dependencyMap = arg6;
-const fn = function n(arg0) {
-  let configs;
-  let onComplete;
-  let overrideReduceMotion;
-  let point;
-  let velocity;
-  ({ point, configs, velocity } = arg0);
-  if (velocity === undefined) {
-    velocity = 0;
+const fn = function n(str) {
+  let result = str;
+  if (typeof str === "string") {
+    const _Number = Number;
+    result = Number(str.split("%")[0]) * arg1 / 100;
   }
-  ({ overrideReduceMotion, onComplete } = arg0);
-  if (!configs) {
-    configs = require(5439) /* GESTURE_SOURCE */.ANIMATION_CONFIGS;
-  }
-  if (overrideReduceMotion) {
-    configs.reduceMotion = overrideReduceMotion;
-  }
-  if (!("duration" in configs)) {
-    if (!("easing" in configs)) {
-      let tmp3 = require;
-      let TIMING = require(5439) /* GESTURE_SOURCE */.ANIMATION_METHOD.SPRING;
-    }
-    if (TIMING === tmp3(5439).ANIMATION_METHOD.TIMING) {
-      let tmp3Result = tmp3(1653);
-      let withTimingResult = tmp3Result.withTiming(point, configs, onComplete);
-    } else {
-      tmp3Result = tmp3(1653);
-      const _Object = Object;
-      const obj = { velocity: null };
-      obj[0] = velocity;
-      withTimingResult = tmp3Result.withSpring(point, Object.assign(obj, configs), onComplete);
-    }
-    return withTimingResult;
-  }
-  TIMING = require(5439) /* GESTURE_SOURCE */.ANIMATION_METHOD.TIMING;
-  tmp3 = require;
+  return Math.max(0, arg1 - result);
 };
-fn.__closure = { ANIMATION_CONFIGS: require("GESTURE_SOURCE").ANIMATION_CONFIGS, ANIMATION_METHOD: require("GESTURE_SOURCE").ANIMATION_METHOD, withTiming: require("cancelAnimation").withTiming, withSpring: require("cancelAnimation").withSpring };
-fn.__workletHash = 17032227615993;
-fn.__initData = { code: "function pnpm_animateTs1({point:point,configs:configs,velocity=0,overrideReduceMotion:overrideReduceMotion,onComplete:onComplete}){const{ANIMATION_CONFIGS,ANIMATION_METHOD,withTiming,withSpring}=this.__closure;if(!configs){configs=ANIMATION_CONFIGS;}if(overrideReduceMotion){configs.reduceMotion=overrideReduceMotion;}const type='duration'in configs||'easing'in configs?ANIMATION_METHOD.TIMING:ANIMATION_METHOD.SPRING;if(type===ANIMATION_METHOD.TIMING){return withTiming(point,configs,onComplete);}return withSpring(point,Object.assign({velocity:velocity},configs),onComplete);}" };
-arg5.animate = fn;
+fn.__closure = {};
+fn.__workletHash = 14612470006791;
+fn.__initData = { code: "function pnpm_normalizeSnapPointTs1(snapPoint,containerHeight){let normalizedSnapPoint=snapPoint;if(typeof normalizedSnapPoint==='string'){normalizedSnapPoint=Number(normalizedSnapPoint.split('%')[0])*containerHeight/100;}return Math.max(0,containerHeight-normalizedSnapPoint);}" };
+arg5.normalizeSnapPoint = fn;

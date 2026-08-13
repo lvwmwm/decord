@@ -1,7 +1,7 @@
 // Module ID: 12715
 // Function ID: 12716
 // Name: parents
-// Dependencies: [32, 19, 21, 7040, 4061, 1236, 7825, 12714, 12298, 2]
+// Dependencies: [32, 19, 21, 7046, 4061, 1236, 7829, 12714, 12300, 2]
 // Exports: default
 
 // Module 12715 (parents)
@@ -53,7 +53,7 @@ export default function _default(parents) {
     }
     obj[3] = username3;
     obj[1] = intl.formatToPlainString(parents(1236).t.BlAMme, obj);
-    obj[2] = jsx(parents(12298).ShareIcon, {});
+    obj[2] = jsx(parents(12300).ShareIcon, {});
     const intl2 = tmp15(1236).intl;
     obj[3] = intl2.string(parents(1236).t["5l/hlt"]);
     obj[4] = tmp[0];

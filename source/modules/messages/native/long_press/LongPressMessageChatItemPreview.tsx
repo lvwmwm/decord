@@ -1,10 +1,10 @@
-// Module ID: 10269
-// Function ID: 10270
+// Module ID: 11109
+// Function ID: 11110
 // Name: LongPressMessageChatItemPreview
-// Dependencies: [21, 4344, 712, 8082, 8634, 2]
+// Dependencies: [21, 4342, 712, 8086, 8638, 2]
 // Exports: default
 
-// Module 10269 (LongPressMessageChatItemPreview)
+// Module 11109 (LongPressMessageChatItemPreview)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -20,5 +20,5 @@ export default function LongPressMessageChatItemPreview(message) {
   const obj = { rowGenerator: closure_4, message: message.message, maxHeight: callback().chatItem.maxHeight, backgroundColor: null };
   const tmp = callback();
   obj[3] = importDefault(712).colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
-  return jsx(importDefault(8634), { rowGenerator: closure_4, message: message.message, maxHeight: callback().chatItem.maxHeight, backgroundColor: null });
+  return jsx(importDefault(8638), { rowGenerator: closure_4, message: message.message, maxHeight: callback().chatItem.maxHeight, backgroundColor: null });
 };

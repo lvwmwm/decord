@@ -1,8 +1,8 @@
-// Module ID: 8819
-// Function ID: 8820
-// Dependencies: [19, 21, 4280, 1363, 4744, 2]
+// Module ID: 8823
+// Function ID: 8824
+// Dependencies: [19, 21, 4278, 1363, 4745, 2]
 
-// Module 8819
+// Module 8823
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -15,9 +15,9 @@ const forwardRefResult = require("noop").forwardRef(function VisualEffectViewThe
   }
   obj = { ref, blurTheme: str };
   const tmp = importDefault;
-  tmp3 = importDefault(4280)();
+  tmp3 = importDefault(4278)();
   const merged = Object.assign(arg0);
-  return jsx(importDefault(4744), { ref, blurTheme: str });
+  return jsx(importDefault(4745), { ref, blurTheme: str });
 });
 const result = require("useTheme").fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewThemed.tsx");
 

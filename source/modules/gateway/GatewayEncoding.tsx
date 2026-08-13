@@ -1,7 +1,7 @@
 // Module ID: 12967
 // Function ID: 12968
 // Name: pack
-// Dependencies: [12968, 4903, 2]
+// Dependencies: [12968, 4904, 2]
 
 // Module 12967 (pack)
 import getErlpackEncoding from "getErlpackEncoding";

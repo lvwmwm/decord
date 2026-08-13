@@ -1,7 +1,7 @@
 // Module ID: 12534
 // Function ID: 12535
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1922, 8830, 6937, 1388, 21, 4344, 712, 12535, 8833, 589, 4007, 10047, 1377, 1297, 4340, 1236, 4886, 5365, 4754, 7745, 11586, 2]
+// Dependencies: [19, 17, 1922, 8834, 6943, 1388, 21, 4342, 712, 12535, 8837, 589, 4007, 10045, 1377, 1297, 4338, 1236, 4887, 5366, 4755, 7749, 11582, 2]
 // Exports: default
 
 // Module 12534 (UserProfileDismissibleUpsells)

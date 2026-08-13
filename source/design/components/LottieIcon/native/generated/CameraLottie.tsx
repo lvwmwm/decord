@@ -1,9 +1,9 @@
-// Module ID: 10880
-// Function ID: 10881
+// Module ID: 10794
+// Function ID: 10795
 // Name: items
-// Dependencies: [19, 21, 10190, 10881, 2]
+// Dependencies: [19, 21, 10190, 10795, 2]
 
-// Module 10880 (items)
+// Module 10794 (items)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -12,7 +12,7 @@ let closure_3 = ["IconAnimation_Camera_v03"];
 const items = [{ name: "mute", start: 0, duration: 70 }, { name: "unmute", start: 100, duration: 70 }];
 const forwardRefResult = require("noop").forwardRef((arg0, arg1) => {
   const obj = { dotLottie: null, ref: null, layers: null, markers: null };
-  obj[0] = require(10881) /* registerAsset */;
+  obj[0] = require(10795) /* registerAsset */;
   obj[1] = arg1;
   obj[2] = closure_3;
   obj[3] = items;

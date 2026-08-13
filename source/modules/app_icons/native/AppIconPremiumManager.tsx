@@ -1,9 +1,9 @@
-// Module ID: 16457
-// Function ID: 16458
+// Module ID: 16468
+// Function ID: 16469
 // Name: handleAppStateUpdate
-// Dependencies: [5, 1922, 7703, 676, 3, 7704, 5300, 500, 7702, 4007, 698, 2]
+// Dependencies: [5, 1922, 7707, 676, 3, 7708, 5301, 500, 7706, 4007, 698, 2]
 
-// Module 16457 (handleAppStateUpdate)
+// Module 16468 (handleAppStateUpdate)
 import FreemiumAppIconIds from "FreemiumAppIconIds";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { getIconById } from "items";
@@ -144,9 +144,9 @@ prototype["validateAndResetIfNeeded"] = function validateAndResetIfNeeded() {
 prototype["resetIcon"] = function resetIcon(arg0, c0, ORPHANED) {
   const _require = arg0;
   let closure_1 = ORPHANED;
-  let obj = _require(7702);
-  const setAppIconResult = _require(7702).setAppIcon(DEFAULT, c0);
-  _require(7702).setAppIcon(DEFAULT, c0).then(() => {
+  let obj = _require(7706);
+  const setAppIconResult = _require(7706).setAppIcon(DEFAULT, c0);
+  _require(7706).setAppIcon(DEFAULT, c0).then(() => {
     let obj = ORPHANED(outer1_2[10]);
     obj = { previous_icon_id: closure_0, reset_to_icon_id: outer1_8, reset_reason: ORPHANED };
     obj.track(outer1_6.APP_ICON_AUTO_RESET, obj);

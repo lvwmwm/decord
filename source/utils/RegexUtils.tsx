@@ -1,9 +1,9 @@
-// Module ID: 4332
-// Function ID: 4333
+// Module ID: 4330
+// Function ID: 4331
 // Name: set
 // Dependencies: [2]
 
-// Module 4332 (set)
+// Module 4330 (set)
 const result = require("set").fileFinishedImporting("utils/RegexUtils.tsx");
 
 export default {

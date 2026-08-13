@@ -1,10 +1,10 @@
-// Module ID: 5388
-// Function ID: 5389
+// Module ID: 5389
+// Function ID: 5390
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 // Exports: isElectronMultilangSpellcheckEnabled
 
-// Module 5388 (apexExperiment)
+// Module 5389 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

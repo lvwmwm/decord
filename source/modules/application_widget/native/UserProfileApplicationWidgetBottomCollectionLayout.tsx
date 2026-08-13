@@ -1,7 +1,7 @@
 // Module ID: 12512
 // Function ID: 12513
 // Name: CollectionItem
-// Dependencies: [19, 17, 21, 4344, 712, 12420, 12508, 4340, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 12420, 12508, 4338, 2]
 // Exports: default
 
 // Module 12512 (CollectionItem)
@@ -50,7 +50,7 @@ function CollectionItem(arg0) {
   if ("value" === singleStringOrSkeleton.status) {
     const obj4 = { variant: "text-xs/medium", lineClamp: 2, children: null };
     obj4[2] = singleStringOrSkeleton.text;
-    let tmp12Result = tmp12(tmp3(4340).Text, obj4);
+    let tmp12Result = tmp12(tmp3(4338).Text, obj4);
   } else {
     tmp12Result = tmp12(tmp3(12508).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
   }
@@ -58,7 +58,7 @@ function CollectionItem(arg0) {
   if ("value" === singleStringOrSkeleton1.status) {
     const obj5 = { variant: "text-xxs/medium", color: "text-subtle", lineClamp: 2, children: null };
     obj5[3] = singleStringOrSkeleton1.text;
-    tmp12Result = tmp12(tmp3(4340).Text, obj5);
+    tmp12Result = tmp12(tmp3(4338).Text, obj5);
   } else {
     tmp12Result = tmp12(tmp3(12508).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
   }

@@ -1,10 +1,10 @@
-// Module ID: 7845
-// Function ID: 7846
+// Module ID: 7849
+// Function ID: 7850
 // Name: parseMessageEmbedForProps
-// Dependencies: [1218, 7846, 676, 3943, 4531, 1236, 7847, 589, 2]
+// Dependencies: [1218, 7850, 676, 3943, 4532, 1236, 7851, 589, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 7845 (parseMessageEmbedForProps)
+// Module 7849 (parseMessageEmbedForProps)
 import fetchFingerprint from "fetchFingerprint";
 import SafetyHubView from "SafetyHubView";
 import ME from "ME";
@@ -63,7 +63,7 @@ export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachmen
     let num = constants5.IS_SPOILER;
   } else {
     num = 0;
-    const tmpResult = require(4531) /* urlMatchesFileExtension */;
+    const tmpResult = require(4532) /* urlMatchesFileExtension */;
   }
   return num;
 };
@@ -97,7 +97,7 @@ export const mapCtaToNativeData = function mapCtaToNativeData(arg0, learn_more_l
   }
 };
 export const isFlaggedContentEmpty = function isFlaggedContentEmpty(first) {
-  let tmp = first.type !== require(7847) /* ContentIdType */.ContentIdType.MESSAGE;
+  let tmp = first.type !== require(7851) /* ContentIdType */.ContentIdType.MESSAGE;
   if (!tmp) {
     let tmp2 = "" === first.content;
     if (tmp2) {

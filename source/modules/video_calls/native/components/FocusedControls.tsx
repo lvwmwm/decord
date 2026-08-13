@@ -1,9 +1,9 @@
-// Module ID: 10822
-// Function ID: 10823
+// Module ID: 10736
+// Function ID: 10737
 // Name: FocusedControlsHeader
-// Dependencies: [19, 17, 676, 21, 4344, 1297, 4083, 10823, 4345, 5367, 1493, 7876, 10824, 10829, 10712, 4740, 5767, 5787, 10777, 10835, 698, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 1297, 4083, 10737, 4343, 5368, 1493, 7880, 10738, 10743, 10626, 4741, 5768, 5788, 10691, 10749, 698, 2]
 
-// Module 10822 (FocusedControlsHeader)
+// Module 10736 (FocusedControlsHeader)
 import importAllResult from "FocusedControlsExpanded";
 import get_ActivityIndicator from "QUICK_SWITCHER";
 import { AnalyticEvents } from "ME";
@@ -43,15 +43,15 @@ function FocusedControlsHeader(reveal) {
     obj[0] = items;
     return obj;
   };
-  obj = { withTiming: reveal(4345).withTiming, offsetY: derivedValue, TIMING_CONFIG: obj };
+  obj = { withTiming: reveal(4343).withTiming, offsetY: derivedValue, TIMING_CONFIG: obj };
   fn2.__closure = obj;
   fn2.__workletHash = 12710345257882;
   fn2.__initData = closure_12;
   const animatedStyle = obj1.useAnimatedStyle(fn2);
   obj = { style: animatedStyle, children: null };
-  obj1 = { top: !derivedValue(10823)(), left: isTouchingLeftScreenEdge, right: true, children: null };
+  obj1 = { top: !derivedValue(10737)(), left: isTouchingLeftScreenEdge, right: true, children: null };
   obj1[3] = callback(closure_5, { style: tmp.headerContainer, children: header });
-  obj[1] = callback(reveal(5367).SafeAreaPaddingView, obj1);
+  obj[1] = callback(reveal(5368).SafeAreaPaddingView, obj1);
   return callback(derivedValue(4083).View, obj);
 }
 function FocusedControlsHeaderGradient() {
@@ -61,12 +61,12 @@ function FocusedControlsHeaderGradient() {
   obj = { height: "100%", width, children: null };
   obj = { children: null };
   const obj1 = { id: "grad", y1: "0%", x1: "0", x2: "0", y2: "100%", children: null };
-  const items1 = [callback(require(7876) /* inlineStyles */.Stop, { offset: "0%", stopColor: "black", stopOpacity: ".8" }), callback(require(7876) /* inlineStyles */.Stop, { offset: "66%", stopColor: "black", stopOpacity: ".51" }), callback(require(7876) /* inlineStyles */.Stop, { offset: "100%", stopColor: "black", stopOpacity: "0" })];
+  const items1 = [callback(require(7880) /* inlineStyles */.Stop, { offset: "0%", stopColor: "black", stopOpacity: ".8" }), callback(require(7880) /* inlineStyles */.Stop, { offset: "66%", stopColor: "black", stopOpacity: ".51" }), callback(require(7880) /* inlineStyles */.Stop, { offset: "100%", stopColor: "black", stopOpacity: "0" })];
   obj1[5] = items1;
-  obj[0] = callback2(require(7876) /* inlineStyles */.LinearGradient, obj1);
-  const items2 = [callback(require(7876) /* inlineStyles */.Defs, obj), callback(require(7876) /* inlineStyles */.Rect, { height: "100%", width, fill: "url(#grad)" })];
+  obj[0] = callback2(require(7880) /* inlineStyles */.LinearGradient, obj1);
+  const items2 = [callback(require(7880) /* inlineStyles */.Defs, obj), callback(require(7880) /* inlineStyles */.Rect, { height: "100%", width, fill: "url(#grad)" })];
   obj[2] = items2;
-  obj[1] = callback2(require(7876) /* inlineStyles */.Svg, obj);
+  obj[1] = callback2(require(7880) /* inlineStyles */.Svg, obj);
   return callback(closure_5, obj);
 }
 let c3 = importAllResult;
@@ -109,14 +109,14 @@ const memoResult = importAllResult.memo((disableGradient) => {
   let analyticsLocations;
   let callback;
   ({ omitPTT, bottomHeader, onDrawerClose, isTouchingLeftScreenEdge } = disableGradient);
-  let obj = require(10824) /* useGlobalStatusIndicatorState */;
+  let obj = require(10738) /* useGlobalStatusIndicatorState */;
   const globalStatusIndicatorState = obj.useGlobalStatusIndicatorState();
-  let obj1 = require(10829) /* nativeEventEmitter */;
+  let obj1 = require(10743) /* nativeEventEmitter */;
   globalStatusIndicatorHeightSharedValue = obj1.useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState);
-  const tmp6 = globalStatusIndicatorHeightSharedValue(10823)();
+  const tmp6 = globalStatusIndicatorHeightSharedValue(10737)();
   dependencyMap = tmp6;
-  reveal = reveal.useContext(require(10712) /* useRevealProviderValue */.RevealContext).reveal;
-  const isScreenReaderEnabled = require(4740) /* SCREEN_READER_ENABLED_GETTER */.useIsScreenReaderEnabled();
+  reveal = reveal.useContext(require(10626) /* useRevealProviderValue */.RevealContext).reveal;
+  const isScreenReaderEnabled = require(4741) /* SCREEN_READER_ENABLED_GETTER */.useIsScreenReaderEnabled();
   if (!reveal) {
     reveal = forceReveal;
   }
@@ -152,7 +152,7 @@ const memoResult = importAllResult.memo((disableGradient) => {
   F.__workletHash = 15022275245977;
   F.__initData = closure_16;
   derivedValue1 = tmpResult.useDerivedValue(F);
-  const obj3 = require(4740) /* SCREEN_READER_ENABLED_GETTER */;
+  const obj3 = require(4741) /* SCREEN_READER_ENABLED_GETTER */;
   const fn = function y() {
     const obj = { top: null, opacity: null };
     obj[0] = outer1_0(_undefined[8]).withTiming(derivedValue.get(), outer1_10);
@@ -160,14 +160,14 @@ const memoResult = importAllResult.memo((disableGradient) => {
     obj[1] = outer1_0(_undefined[8]).withTiming(derivedValue1.get(), outer1_10);
     return obj;
   };
-  obj = { withTiming: tmp(4345).withTiming, top: derivedValue, TIMING_CONFIG: obj, revealOpacity: derivedValue1 };
+  obj = { withTiming: tmp(4343).withTiming, top: derivedValue, TIMING_CONFIG: obj, revealOpacity: derivedValue1 };
   fn.__closure = obj;
   fn.__workletHash = 8532538341439;
   fn.__initData = closure_17;
   const animatedStyle = require(4083).useAnimatedStyle(fn);
   const tmpResult1 = require(4083);
-  analyticsLocations = globalStatusIndicatorHeightSharedValue(5767)(tmp5(5787).FOCUSED_VOICE_CONTROLS).analyticsLocations;
-  callback = tmp5(10777)();
+  analyticsLocations = globalStatusIndicatorHeightSharedValue(5768)(tmp5(5788).FOCUSED_VOICE_CONTROLS).analyticsLocations;
+  callback = tmp5(10691)();
   if (containerStyle == null) {
     containerStyle = derivedValue.absoluteFill;
   }
@@ -211,7 +211,7 @@ const memoResult = importAllResult.memo((disableGradient) => {
       obj1[5] = onDrawerClose;
       obj1[6] = reveal;
       obj1[7] = children;
-      tmp17Result = callback(tmp5(10835), obj1);
+      tmp17Result = callback(tmp5(10749), obj1);
     }
   }
   items1[2] = tmp17Result;

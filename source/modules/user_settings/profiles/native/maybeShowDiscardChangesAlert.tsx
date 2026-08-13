@@ -1,10 +1,10 @@
-// Module ID: 9510
-// Function ID: 9511
+// Module ID: 9514
+// Function ID: 9515
 // Name: maybeShowDiscardChangesAlert
-// Dependencies: [4683, 1236, 2]
+// Dependencies: [4684, 1236, 2]
 // Exports: default, showDiscardChangesAlert
 
-// Module 9510 (maybeShowDiscardChangesAlert)
+// Module 9514 (maybeShowDiscardChangesAlert)
 const result = require("set").fileFinishedImporting("modules/user_settings/profiles/native/maybeShowDiscardChangesAlert.tsx");
 
 export default function maybeShowDiscardChangesAlert(onHasEdits) {
@@ -16,7 +16,7 @@ export default function maybeShowDiscardChangesAlert(onHasEdits) {
     if (onHasEdits != null) {
       onHasEdits();
     }
-    let obj = onConfirm(4683);
+    let obj = onConfirm(4684);
     obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t.pvRCSu);
@@ -43,7 +43,7 @@ export const showDiscardChangesAlert = function showDiscardChangesAlert(arg0) {
   let onCancel;
   let onConfirm;
   ({ onConfirm, onCancel } = arg0);
-  let obj = importDefault(4683);
+  let obj = importDefault(4684);
   obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.pvRCSu);

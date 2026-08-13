@@ -1,10 +1,10 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15370
+// Function ID: 15371
 // Name: PreviewOverlay
-// Dependencies: [19, 17, 21, 4344, 712, 4196, 15362, 4280, 4765, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4194, 15371, 4278, 4766, 2]
 // Exports: default
 
-// Module 15361 (PreviewOverlay)
+// Module 15370 (PreviewOverlay)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -12,7 +12,7 @@ import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function PreviewOverlay() {
-  return <View pointerEvents="none" style={createCacheKey().previewOverlay}>{jsx(importDefault(15362), {})}</View>;
+  return <View pointerEvents="none" style={createCacheKey().previewOverlay}>{jsx(importDefault(15371), {})}</View>;
 }
 createCacheKey = { previewArt: null, previewOverlay: null };
 createCacheKey = { position: "relative", width: 256, aspectRatio: 1.5705521472392638, overflow: "hidden", borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
@@ -24,7 +24,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_themes/na
 export default function GuildThemePreviewArt(themeSettings) {
   themeSettings = themeSettings.themeSettings;
   let importDefault;
-  const tmp4 = importDefault(4280)();
+  const tmp4 = importDefault(4278)();
   importDefault = tmp4;
   let items = [themeSettings, tmp4];
   const memo = React.useMemo(() => {
@@ -75,8 +75,8 @@ export default function GuildThemePreviewArt(themeSettings) {
     ({ colors: obj[0], locations: obj[1], angle: obj[3] } = memo);
     obj[4] = items1;
     obj[5] = <PreviewOverlay />;
-    tmp9 = jsx(importDefault(4765), { colors: null, locations: null, useAngle: true, angle: null, style: null, children: null });
-    const tmp2Result = importDefault(4765);
+    tmp9 = jsx(importDefault(4766), { colors: null, locations: null, useAngle: true, angle: null, style: null, children: null });
+    const tmp2Result = importDefault(4766);
   }
   return tmp9;
 };

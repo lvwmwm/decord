@@ -1,7 +1,7 @@
 // Module ID: 13036
 // Function ID: 13037
 // Name: initialize
-// Dependencies: [32, 5868, 676, 589, 709, 13037, 13038, 2]
+// Dependencies: [32, 5869, 676, 589, 709, 13037, 13038, 2]
 
 // Module 13036 (initialize)
 import _slicedToArray from "_slicedToArray";
@@ -10,7 +10,7 @@ import { Consents } from "ME";
 import { DeviceSettingsStore } from "initialize";
 
 let object = arg1;
-let closure_6 = { detected: false, lastScannedAt: "Array" };
+let closure_6 = { detected: false, lastScannedAt: "r" };
 let closure_7 = { apps: {} };
 class LocalAppDetectionStore extends DeviceSettingsStore {
   constructor() {

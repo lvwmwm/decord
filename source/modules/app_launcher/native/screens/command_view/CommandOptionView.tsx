@@ -1,10 +1,10 @@
-// Module ID: 11608
-// Function ID: 11609
+// Module ID: 11604
+// Function ID: 11605
 // Name: set
-// Dependencies: [19, 17, 4336, 21, 1954, 4344, 712, 589, 4083, 11609, 11610, 4340, 11611, 1297, 10031, 2]
+// Dependencies: [19, 17, 4334, 21, 1954, 4342, 712, 589, 4083, 11605, 11606, 4338, 11607, 1297, 10029, 2]
 // Exports: default
 
-// Module 11608 (set)
+// Module 11604 (set)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -52,7 +52,7 @@ export default function CommandOptionView(option) {
   const stateFromStores = obj.useStateFromStores(items, () => lib.useReducedMotion);
   const ReduceMotion = option(4083).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const optionEnteringAnimation = option(11609).useOptionEnteringAnimation();
+  const optionEnteringAnimation = option(11605).useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   if (set.has(option.type)) {
     if (option.required || isPreSelectedOption) {
@@ -80,8 +80,8 @@ export default function CommandOptionView(option) {
     obj1[0] = fn;
     const obj2 = { collapsable: false, entering: null, exiting: null, layout: null, onLayout: null, children: null };
     obj2[1] = optionEnteringAnimation.EnteringAnimation;
-    obj2[2] = tmp2(11609).ExitingAnimation;
-    obj2[3] = tmp2(11609).LayoutAnimation;
+    obj2[2] = tmp2(11605).ExitingAnimation;
+    obj2[3] = tmp2(11605).LayoutAnimation;
     obj2[4] = function onLayout(arg0) {
       callback(arg0, option);
     };
@@ -92,7 +92,7 @@ export default function CommandOptionView(option) {
       const obj4 = { style: null, variant: "text-sm/semibold", color: "text-subtle", children: null };
       obj4[0] = tmp.labelText;
       obj4[3] = option.displayName;
-      tmp17Result = tmp17(tmp2(4340).Text, obj4);
+      tmp17Result = tmp17(tmp2(4338).Text, obj4);
     }
     const items2 = [tmp17Result, , , ];
     const obj5 = { option: null, onStartEditing: null, onEndEditing: null, onDismiss: null, onOptionValueChange: null, onFocus: null, onPress: null, onPressAttachmentOption: null, channel: null, autoFocusType: null, command: null, optionValues: null, hasError: null };
@@ -115,11 +115,11 @@ export default function CommandOptionView(option) {
     obj5[10] = command;
     obj5[11] = optionValues;
     obj5[12] = hasItem;
-    items2[1] = closure_5(importDefault(11611), obj5);
+    items2[1] = closure_5(importDefault(11607), obj5);
     const obj6 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
     obj6[0] = tmp.optionDescription;
     obj6[3] = option.displayDescription;
-    items2[2] = closure_5(tmp2(4340).Text, obj6);
+    items2[2] = closure_5(tmp2(4338).Text, obj6);
     if (hasItem) {
       const obj7 = { collapsable: false, entering: null, exiting: null, style: null, children: null };
       obj7[1] = reduceMotionResult1;
@@ -127,12 +127,12 @@ export default function CommandOptionView(option) {
       obj7[3] = tmp.optionErrorContainer;
       const obj8 = { style: null, source: null, size: null };
       obj8[0] = tmp.optionErrorIcon;
-      obj8[1] = tmp18(10031);
+      obj8[1] = tmp18(10029);
       obj8[2] = tmp2(1297).IconSizes.REFRESH_SMALL_16;
       const items3 = [tmp17(tmp2(1297).Icon, obj8), ];
       const obj9 = { variant: "text-xs/medium", color: "text-feedback-critical", children: null };
       obj9[2] = optionValidationResults[option.name].error;
-      items3[1] = tmp17(tmp2(4340).Text, obj9);
+      items3[1] = tmp17(tmp2(4338).Text, obj9);
       obj7[4] = items3;
       hasItem = tmp19(tmp18(4083).View, obj7);
     }
@@ -140,10 +140,10 @@ export default function CommandOptionView(option) {
     obj3[2] = items2;
     obj2[5] = closure_6(View, obj3);
     obj1[1] = closure_5(importDefault(4083).View, obj2);
-    obj[1] = closure_5(tmp2(11610).AwaitAnimationContext, obj1);
+    obj[1] = closure_5(tmp2(11606).AwaitAnimationContext, obj1);
     return closure_5(tmp2(4083).LayoutAnimationConfig, obj);
   } else {
     return null;
   }
-  const tmp2Result = option(11609);
+  const tmp2Result = option(11605);
 };

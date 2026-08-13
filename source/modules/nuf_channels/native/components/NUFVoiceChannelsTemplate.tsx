@@ -1,7 +1,7 @@
 // Module ID: 13110
 // Function ID: 13111
 // Name: NUFVoiceChannelsTemplate
-// Dependencies: [19, 21, 13111, 1236, 13112, 13100, 1891, 5169, 2]
+// Dependencies: [19, 21, 13111, 1236, 13112, 13100, 1891, 5170, 2]
 // Exports: default
 
 // Module 13110 (NUFVoiceChannelsTemplate)

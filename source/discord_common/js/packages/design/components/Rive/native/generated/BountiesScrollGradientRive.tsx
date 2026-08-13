@@ -1,9 +1,9 @@
-// Module ID: 4135
-// Function ID: 4136
+// Module ID: 4133
+// Function ID: 4134
 // Name: BountiesScrollGradientRive
-// Dependencies: [109, 19, 21, 4077, 4136, 4134, 2]
+// Dependencies: [109, 19, 21, 4077, 4134, 4132, 2]
 
-// Module 4135 (BountiesScrollGradientRive)
+// Module 4133 (BountiesScrollGradientRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -26,7 +26,7 @@ let closure_8 = importAllResult.forwardRef(function BountiesScrollGradientRiveIn
     tmp = defaultViewModelInstance;
   }
   const obj = { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null };
-  obj[1] = importDefault(4136);
+  obj[1] = importDefault(4134);
   obj[2] = str;
   obj[3] = closure_6;
   obj[4] = closure_7;
@@ -40,7 +40,7 @@ const forwardRefResult = importAllResult.forwardRef(function BountiesScrollGradi
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_8 ref={arg1} />;
-  return jsx(require(4134) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4132) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BountiesScrollGradientRive.tsx");
 

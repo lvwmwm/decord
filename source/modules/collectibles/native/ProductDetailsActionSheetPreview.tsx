@@ -1,10 +1,10 @@
-// Module ID: 9488
-// Function ID: 9489
+// Module ID: 9492
+// Function ID: 9493
 // Name: BundleProductPreview
-// Dependencies: [32, 19, 17, 678, 21, 4344, 712, 1949, 9440, 9489, 9420, 1236, 9491, 9001, 9607, 9187, 2]
+// Dependencies: [32, 19, 17, 678, 21, 4342, 712, 1949, 9444, 9493, 9424, 1236, 9495, 9005, 9611, 9191, 2]
 // Exports: default
 
-// Module 9488 (BundleProductPreview)
+// Module 9492 (BundleProductPreview)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -26,7 +26,7 @@ function BundleProductPreview(onActiveItemTypeChange) {
   let product;
   let width;
   ({ product, width, handlePreviewPress, onTrackPress, onActiveItemChange } = onActiveItemTypeChange);
-  let obj = require(9440) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(9444) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment("ProductDetailsActionSheetPreview").enabled) {
     obj = { product: null, width: null, handlePreviewPress: null, onTrackPress: null, onActiveItemChange: null };
     obj[0] = product;
@@ -34,7 +34,7 @@ function BundleProductPreview(onActiveItemTypeChange) {
     obj[2] = handlePreviewPress;
     obj[3] = onTrackPress;
     obj[4] = onActiveItemChange;
-    let tmp3Result = tmp3(importDefault(9489), obj);
+    let tmp3Result = tmp3(importDefault(9493), obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.previewDivider;
@@ -232,7 +232,7 @@ export default function ProductDetailsActionSheetPreview(arg0) {
     obj1[1] = tmp3;
     obj1[2] = handlePreviewPress;
     obj1[3] = onTrackPress;
-    obj[1] = tmp7(_require(9491).IndividualProductPreview, obj1);
+    obj[1] = tmp7(_require(9495).IndividualProductPreview, obj1);
     tmp7Result = tmp7(tmp8, obj);
   }
   obj[2] = tmp7Result;

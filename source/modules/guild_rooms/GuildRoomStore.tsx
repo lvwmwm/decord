@@ -1,9 +1,9 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 16528
+// Function ID: 16529
 // Name: handleSelectedChannelStoreChange
-// Dependencies: [109, 1218, 4415, 1979, 589, 13093, 709, 2]
+// Dependencies: [109, 1218, 4416, 1979, 589, 13093, 709, 2]
 
-// Module 16517 (handleSelectedChannelStoreChange)
+// Module 16528 (handleSelectedChannelStoreChange)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import fetchFingerprint from "fetchFingerprint";
 import createRTCConnection from "createRTCConnection";

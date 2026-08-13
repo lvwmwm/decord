@@ -1,7 +1,7 @@
 // Module ID: 12407
 // Function ID: 12408
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 1388, 21, 4344, 712, 8880, 1367, 10047, 1377, 4300, 4340, 1236, 4886, 5365, 2]
+// Dependencies: [19, 17, 1388, 21, 4342, 712, 8884, 1367, 10045, 1377, 4298, 4338, 1236, 4887, 5366, 2]
 // Exports: default
 
 // Module 12407 (UserProfileWidgetsBoardEditNotice)
@@ -26,7 +26,7 @@ const result = require("ContentDismissActionType").fileFinishedImporting("module
 
 export default function UserProfileWidgetsBoardEditNotice() {
   const _require = createCacheKey();
-  importDefault = importDefault(8880)();
+  importDefault = importDefault(8884)();
   const dependencyMap = importDefault(1367)("UserProfileWidgetsBoardEditNotice");
   let obj = { contentTypes: null, bypassAutoDismiss: true, children: null };
   let items = [_require(1377).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
@@ -77,5 +77,5 @@ export default function UserProfileWidgetsBoardEditNotice() {
     }
     return tmp4Result;
   };
-  return callback(importDefault(10047), obj);
+  return callback(importDefault(10045), obj);
 };

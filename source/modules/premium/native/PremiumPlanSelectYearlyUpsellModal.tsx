@@ -1,7 +1,7 @@
 // Module ID: 12887
 // Function ID: 12888
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 1994, 5897, 12878, 1924, 505, 21, 4344, 5275, 5198, 6912, 589, 1898, 4772, 12888, 1297, 1236, 4007, 4754, 2]
+// Dependencies: [32, 19, 17, 1994, 5899, 12878, 1924, 505, 21, 4342, 5276, 5199, 6918, 589, 1898, 4773, 12888, 1297, 1236, 4007, 4755, 2]
 // Exports: default
 
 // Module 12887 (PremiumPlanSelectYearlyUpsellModal)
@@ -54,7 +54,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   let obj = React;
   [tmp4, c3] = callback(React.useState(null), 2);
-  let obj1 = productId(6912);
+  let obj1 = productId(6918);
   const premiumBundledItemsFromProductId = obj1.getPremiumBundledItemsFromProductId(productId);
   let obj2 = productId(589);
   let items = [_getSystemLocale];
@@ -126,7 +126,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     };
     obj7[3] = tmp11;
     obj7[4] = "upsell" === tmp4 && tmp2;
-    obj6[1] = callback2(tmp5(4754).Button, obj7);
+    obj6[1] = callback2(tmp5(4755).Button, obj7);
     items2[3] = callback2(closure_6, obj6);
     const obj9 = { style: null, children: null };
     obj9[0] = tmp.continueButton;
@@ -139,7 +139,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     };
     obj10[3] = tmp11;
     obj10[4] = "default" === tmp4 && tmp2;
-    obj9[1] = callback2(tmp5(4754).Button, obj10);
+    obj9[1] = callback2(tmp5(4755).Button, obj10);
     items2[4] = callback2(closure_6, obj9);
     const obj11 = { style: null, children: null };
     obj11[0] = tmp.cancelButton;
@@ -147,11 +147,11 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     const intl5 = tmp5(1236).intl;
     obj12[1] = intl5.string(tmp5(1236).t.cpT0Cq);
     obj12[2] = onClose;
-    obj11[1] = callback2(tmp5(4754).Button, obj12);
+    obj11[1] = callback2(tmp5(4755).Button, obj12);
     items2[5] = callback2(closure_6, obj11);
     obj[1] = items2;
     obj[2] = closure_12(closure_6, obj);
-    return callback2(importDefault(4772), obj);
+    return callback2(importDefault(4773), obj);
   }
   const tmp3 = callback(React.useState(null), 2);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7693
-// Function ID: 7694
+// Module ID: 7697
+// Function ID: 7698
 // Name: useStoreFrontPrice
 // Dependencies: [19, 676, 4007, 2]
 // Exports: default
 
-// Module 7693 (useStoreFrontPrice)
+// Module 7697 (useStoreFrontPrice)
 import noop from "noop";
 import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME";
 

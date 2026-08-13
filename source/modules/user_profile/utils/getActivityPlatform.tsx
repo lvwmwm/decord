@@ -1,7 +1,7 @@
 // Module ID: 12359
 // Function ID: 12360
 // Name: PlatformTypes
-// Dependencies: [676, 12358, 9699, 5040, 8952, 12343, 12344, 12360, 12361, 2]
+// Dependencies: [676, 12358, 9703, 5041, 8956, 12345, 12346, 12360, 12361, 2]
 // Exports: default
 
 // Module 12359 (PlatformTypes)
@@ -18,20 +18,20 @@ export default function getActivityPlatform(session_id) {
   const tmp3 = importDefault(12358)(session_id.session_id);
   if (null != tmp3) {
     return tmp3;
-  } else if (tmp(9699)(session_id)) {
-    let tmpResult = tmp(5040);
+  } else if (tmp(9703)(session_id)) {
+    let tmpResult = tmp(5041);
     return tmpResult.get(PlatformTypes.SPOTIFY);
-  } else if (tmp(8952)(session_id)) {
-    tmpResult = tmp(5040);
+  } else if (tmp(8956)(session_id)) {
+    tmpResult = tmp(5041);
     return tmpResult.get(PlatformTypes.CRUNCHYROLL);
-  } else if (tmp(12343)(session_id)) {
-    return tmp(5040).get(PlatformTypes.XBOX);
-  } else if (tmp(12344)(session_id)) {
-    return tmp(5040).get(PlatformTypes.PLAYSTATION);
+  } else if (tmp(12345)(session_id)) {
+    return tmp(5041).get(PlatformTypes.XBOX);
+  } else if (tmp(12346)(session_id)) {
+    return tmp(5041).get(PlatformTypes.PLAYSTATION);
   } else {
     if (!tmp(12360)(session_id)) {
       if (!tmp(12361)(session_id)) {
-        const found = tmp(5040).find((name) => name.name === session_id.name);
+        const found = tmp(5041).find((name) => name.name === session_id.name);
         let tmp5 = null;
         if (null != found) {
           tmp5 = null;
@@ -42,6 +42,6 @@ export default function getActivityPlatform(session_id) {
         return tmp5;
       }
     }
-    return tmp(5040).get(PlatformTypes.META_QUEST_OR_HORIZON);
+    return tmp(5041).get(PlatformTypes.META_QUEST_OR_HORIZON);
   }
 };

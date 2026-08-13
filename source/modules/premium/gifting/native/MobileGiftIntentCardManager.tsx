@@ -1,9 +1,9 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 16635
+// Function ID: 16636
 // Name: isChannelEligible
-// Dependencies: [7160, 1391, 4561, 1979, 8219, 1924, 16625, 692, 4034, 7364, 9395, 503, 4229, 8222, 9127, 2]
+// Dependencies: [7166, 1391, 4562, 1979, 8223, 1924, 16636, 692, 4034, 7369, 9399, 503, 4227, 8226, 9131, 2]
 
-// Module 16624 (isChannelEligible)
+// Module 16635 (isChannelEligible)
 import recomputeAffinities from "recomputeAffinities";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -32,7 +32,7 @@ prototype["maybeSendCard"] = function maybeSendCard(id, closure_0) {
     if (!getCurrentTime.isGiftIntentMessageInCooldown(closure_0)) {
       if (id === store.getChannelId()) {
         if (ready.isReady(id)) {
-          if (self.trySendGiftingPromptSystemMessage(id, constants2.FRIEND_ANNIVERSARY, closure_0, constants.SEND_MESSAGE, "maybeSendCard")) {
+          if (self.trySendGiftingPromptSystemMessage(id, constants2.FRIEND_ANNIVERSARY, closure_0, constants.SEND_MESSAGE)) {
             let tmpResult = tmp(tmp2[9]);
             const result = tmpResult.logMessageGiftIntentShown(closure_0);
             userAffinity = userAffinity.getUserAffinity(closure_0);
@@ -85,8 +85,8 @@ prototype["sendCardInSelectedChannelIfEligible"] = function sendCardInSelectedCh
 };
 prototype["maybeFetchUserAffinities"] = function maybeFetchUserAffinities() {
   if (obj.getConfig({ location: "MobileGiftIntentCardManager" }).enabled) {
-    const userAffinitiesV2 = require(9127) /* fetchUserAffinitiesV2 */.fetchUserAffinitiesV2();
-    const obj2 = require(9127) /* fetchUserAffinitiesV2 */;
+    const userAffinitiesV2 = require(9131) /* fetchUserAffinitiesV2 */.fetchUserAffinitiesV2();
+    const obj2 = require(9131) /* fetchUserAffinitiesV2 */;
   }
 };
 prototype["onChannelSelect"] = function onChannelSelect(channelId) {

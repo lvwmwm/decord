@@ -1,7 +1,7 @@
 // Module ID: 13074
 // Function ID: 13075
 // Name: _handlePresenceUpdate
-// Dependencies: [7160, 4430, 1922, 676, 13075, 589, 709, 2]
+// Dependencies: [7166, 4431, 1922, 676, 13075, 589, 709, 2]
 
 // Module 13074 (_handlePresenceUpdate)
 import recomputeAffinities from "recomputeAffinities";

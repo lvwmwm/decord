@@ -1,10 +1,10 @@
-// Module ID: 9035
-// Function ID: 9036
+// Module ID: 9039
+// Function ID: 9040
 // Name: useStageChannelUpsellCardStore
 // Dependencies: [1397, 700, 595, 705, 3974, 2]
 // Exports: useStageChannelUpsellCardStore
 
-// Module 9035 (useStageChannelUpsellCardStore)
+// Module 9039 (useStageChannelUpsellCardStore)
 import { GUILD_EVENT_STAGE_UPSELL_CARD_KEY as closure_2 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import identity from "identity";
 

@@ -1,10 +1,10 @@
-// Module ID: 11503
-// Function ID: 11504
+// Module ID: 11499
+// Function ID: 11500
 // Name: EntityBorderAppIcon
-// Dependencies: [17, 21, 712, 4344, 5307, 2]
+// Dependencies: [17, 21, 712, 4342, 5308, 2]
 // Exports: default
 
-// Module 11503 (EntityBorderAppIcon)
+// Module 11499 (EntityBorderAppIcon)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -35,5 +35,5 @@ export default function EntityBorderAppIcon(iconSize) {
   const tmp = callback(num, iconBorderRadius);
   const items = [tmp.entityWrapper, wrapperStyle];
   const items1 = [tmp.appIcon, iconStyle];
-  return <View style={items}>{jsx(importDefault(5307), { style: items1, source: iconSource })}</View>;
+  return <View style={items}>{jsx(importDefault(5308), { style: items1, source: iconSource })}</View>;
 };

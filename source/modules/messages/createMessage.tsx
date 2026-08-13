@@ -1,10 +1,10 @@
-// Module ID: 7252
-// Function ID: 7253
+// Module ID: 7257
+// Function ID: 7258
 // Name: createMessage
-// Dependencies: [7096, 1930, 1922, 676, 38, 7253, 2]
+// Dependencies: [7102, 1930, 1922, 676, 38, 7258, 2]
 // Exports: createBotMessage, default, userRecordToServer
 
-// Module 7252 (createMessage)
+// Module 7257 (createMessage)
 import processMessage from "processMessage";
 import { ReferencedMessageState } from "processMessage";
 import createdAt from "createdAt";
@@ -73,8 +73,8 @@ export default function createMessage(tts) {
   }
   importDefault(38)(null != tmp8, "createMessage: author cannot be undefined");
   if (nonce == null) {
-    nonce = require(7253) /* snowflakeSequence */.createNonce();
-    const obj3 = require(7253) /* snowflakeSequence */;
+    nonce = require(7258) /* snowflakeSequence */.createNonce();
+    const obj3 = require(7258) /* snowflakeSequence */;
   }
   obj = { id: nonce, type: DEFAULT, content, channel_id: channelId, author: tmp8, attachments: [], embeds: [], pinned: false, mentions: items, mention_channels: [], mention_roles: [], mention_everyone: false, timestamp: null, state: null, tts: null, message_reference: null, message_snapshots: null, flags: null, nonce: null, poll: null, shared_client_theme: null, changelog_id: null, gifting_prompt: null, boosting_prompt: null, media_mention: null };
   obj[12] = new Date().toISOString();
@@ -107,7 +107,7 @@ export const createBotMessage = function createBotMessage(arg0) {
   ({ messageId, embeds } = arg0);
   ({ channelId, content, loggingName } = arg0);
   if (messageId == null) {
-    let obj = require(7253) /* snowflakeSequence */;
+    let obj = require(7258) /* snowflakeSequence */;
     messageId = obj.createNonce();
   }
   obj = { id: messageId, type: constants2.DEFAULT, flags: constants3.EPHEMERAL, content, channel_id: channelId, author: obj, attachments: [], embeds: null, pinned: false, mentions: null, mention_channels: null, mention_roles: null, mention_everyone: false, timestamp: null, state: null, tts: false, loggingName: null };

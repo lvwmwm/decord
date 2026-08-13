@@ -1,10 +1,10 @@
-// Module ID: 4865
-// Function ID: 4866
+// Module ID: 4866
+// Function ID: 4867
 // Name: StageIcon
-// Dependencies: [19, 21, 712, 4064, 4812, 2]
+// Dependencies: [19, 21, 712, 4064, 4813, 2]
 // Exports: StageIcon
 
-// Module 4865 (StageIcon)
+// Module 4866 (StageIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const StageIcon = function StageIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4812) /* registerAsset */;
+  obj[0] = require(4813) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

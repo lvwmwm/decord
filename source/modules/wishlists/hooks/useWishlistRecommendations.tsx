@@ -1,7 +1,7 @@
 // Module ID: 10130
 // Function ID: 10131
 // Name: useWishlistRecommendationsWithWishlists
-// Dependencies: [32, 19, 7122, 1218, 10131, 5888, 687, 589, 9402, 1370, 9409, 12, 9410, 8352, 10132, 10133, 2]
+// Dependencies: [32, 19, 7128, 1218, 10131, 5889, 687, 589, 9406, 1370, 9413, 12, 9414, 8356, 10132, 10133, 2]
 // Exports: useRecommendationsForApplicationIds, useRecommendationsForSingleUser, useWishlistRecommendationsForSingleUser
 
 // Module 10130 (useWishlistRecommendationsWithWishlists)
@@ -268,7 +268,7 @@ export const useWishlistRecommendationsForSingleUser = function useWishlistRecom
   let wishlistAndRecommendations;
   ({ userId, numItems, source } = arg0);
   if (source === undefined) {
-    source = userId(9402).WishlistFetchSource.USER_PROFILE;
+    source = userId(9406).WishlistFetchSource.USER_PROFILE;
   }
   const items = [userId];
   const effect = React.useEffect(() => {
@@ -354,7 +354,7 @@ export const useRecommendationsForSingleUser = function useRecommendationsForSin
   userId = numItems;
   let USER_PROFILE = source.source;
   if (USER_PROFILE === undefined) {
-    USER_PROFILE = userId(9402).WishlistFetchSource.USER_PROFILE;
+    USER_PROFILE = userId(9406).WishlistFetchSource.USER_PROFILE;
   }
   let recommendations;
   let obj = { userIdsAndWishlistIds: null, applicationIds: null, numItems: null, source: null };

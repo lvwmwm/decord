@@ -1,9 +1,9 @@
-// Module ID: 4377
-// Function ID: 4378
+// Module ID: 4378
+// Function ID: 4379
 // Name: gameFromServer
-// Dependencies: [4367, 676, 4370, 687, 4378, 595, 500, 4379, 589, 11, 1370, 1954, 698, 4034, 709, 2]
+// Dependencies: [4368, 676, 4371, 687, 4379, 595, 500, 4380, 589, 11, 1370, 1954, 698, 4034, 709, 2]
 
-// Module 4377 (gameFromServer)
+// Module 4378 (gameFromServer)
 import { createExecutable } from "createExecutable";
 import { AnalyticEvents } from "ME";
 import { ApplicationTypes } from "ApplicationTypes";
@@ -73,7 +73,7 @@ function addGameIdToNameCache(id, item10026) {
 function addDetectableGame(id) {
   let name;
   let tmp = id;
-  if (id instanceof require(4379) /* GameTheme */.DetectableGameRecord) {
+  if (id instanceof require(4380) /* GameTheme */.DetectableGameRecord) {
     tmp = convertGameRecordToGame(id);
     const tmp2 = convertGameRecordToGame;
   }

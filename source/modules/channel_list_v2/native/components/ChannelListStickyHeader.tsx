@@ -1,10 +1,10 @@
-// Module ID: 15334
-// Function ID: 15335
+// Module ID: 15343
+// Function ID: 15344
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 676, 21, 4083, 4344, 712, 1367, 15333, 1913, 1236, 15335, 13321, 15332, 5418, 4065, 8789, 4340, 9309, 1297, 5817, 15347, 11729, 15352, 15353, 2]
+// Dependencies: [19, 17, 676, 21, 4083, 4342, 712, 1367, 15342, 1913, 1236, 15344, 13322, 15341, 5419, 4065, 8793, 4338, 9313, 1297, 5818, 15356, 11727, 15361, 15362, 2]
 // Exports: default
 
-// Module 15334 (ChannelListStickyHeader)
+// Module 15343 (ChannelListStickyHeader)
 import Button from "Button";
 import get_ActivityIndicator from "Text";
 import { JoinGuildSources } from "ME";
@@ -89,7 +89,7 @@ export default function ChannelListStickyHeader(guild) {
   let importDefault;
   const tmp3 = importDefault(1367)("ChannelListStickyHeader");
   const tmp4 = callback2(tmp3, flag);
-  let tmp25Result2 = importDefault(15333)(guild.id);
+  let tmp25Result2 = importDefault(15342)(guild.id);
   let obj = React;
   const ref = React.useRef(null);
   let obj1 = guild(1913);
@@ -108,8 +108,8 @@ export default function ChannelListStickyHeader(guild) {
       _undefined(outer1_2[12])(guild);
     }
   }, items);
-  const tmp11 = importDefault(15332)(guild);
-  let tmp7Result = tmp7(5418);
+  const tmp11 = importDefault(15341)(guild);
+  let tmp7Result = tmp7(5419);
   const iOSPressEffects = tmp7Result.useIOSPressEffects(4);
   ({ onPressIn, onPressOut, pressableStyles } = iOSPressEffects);
   tmp7Result = tmp7(1913);
@@ -152,23 +152,23 @@ export default function ChannelListStickyHeader(guild) {
     obj1 = { style: null, size: "sm", color: null };
     obj1[0] = tmp4.headerIcon;
     obj1[2] = tmp(712).colors.MOBILE_TEXT_HEADING_PRIMARY;
-    tmp23 = callback(tmp7(8789).StarIcon, obj1);
+    tmp23 = callback(tmp7(8793).StarIcon, obj1);
   }
   const items2 = [tmp23, , , ];
   const tmp17 = closure_8;
   const tmp7Result2 = guild(4065);
-  items2[1] = callback(closure_4, { ref, collapsable: false, style: tmp4.flex, children: callback(guild(4340).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) });
+  items2[1] = callback(closure_4, { ref, collapsable: false, style: tmp4.flex, children: callback(guild(4338).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) });
   const obj3 = { guild, size: null, style: null };
-  const obj2 = { ref, collapsable: false, style: tmp4.flex, children: callback(guild(4340).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) };
+  const obj2 = { ref, collapsable: false, style: tmp4.flex, children: callback(guild(4338).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) };
   obj3[1] = guild(1297).Icon.Sizes.REFRESH_SMALL_16;
   obj3[2] = tmp4.guildBadge;
-  items2[2] = callback(importDefault(9309), obj3);
+  items2[2] = callback(importDefault(9313), obj3);
   let tmp25Result = null;
   if (flag2) {
     const obj4 = { size: "xxs", color: null, style: null };
     obj4[1] = tmp(712).colors.TEXT_SUBTLE;
     obj4[2] = tmp4.chevron;
-    tmp25Result = tmp25(tmp7(5817).ChevronSmallRightIcon, obj4);
+    tmp25Result = tmp25(tmp7(5818).ChevronSmallRightIcon, obj4);
   }
   items2[3] = tmp25Result;
   obj[1] = items2;
@@ -185,7 +185,7 @@ export default function ChannelListStickyHeader(guild) {
       const obj7 = { count: null };
       obj7[0] = tmp11;
       obj6[4] = intl2.format(tmp7(1236).t.zRl6XR, obj7);
-      const items4 = [tmp25(tmp7(4340).Text, obj6), , ];
+      const items4 = [tmp25(tmp7(4338).Text, obj6), , ];
       const obj8 = { style: null };
       obj8[0] = tmp4.ellipse;
       items4[1] = tmp25(tmp22, obj8);
@@ -193,7 +193,7 @@ export default function ChannelListStickyHeader(guild) {
       obj9[2] = token1;
       const intl3 = tmp7(1236).intl;
       obj9[4] = intl3.string(tmp7(1236).t["1g9A/f"]);
-      items4[2] = tmp25(tmp7(4340).Text, obj9);
+      items4[2] = tmp25(tmp7(4338).Text, obj9);
       obj5[1] = items4;
       tmp16Result = tmp16(tmp22, obj5);
     }
@@ -212,7 +212,7 @@ export default function ChannelListStickyHeader(guild) {
   const items6 = [tmp16Result, ];
   tmp25Result = null;
   if (isFavoritesGuildIdResult) {
-    tmp25Result = tmp25(tmp7(15347).FavoritesGuildHeaderActionButton, {});
+    tmp25Result = tmp25(tmp7(15356).FavoritesGuildHeaderActionButton, {});
   }
   items6[1] = tmp25Result;
   obj11[1] = items6;
@@ -221,7 +221,7 @@ export default function ChannelListStickyHeader(guild) {
   if (flag) {
     const obj12 = { guild: null, useButtonComponent: true, useEventsButton: true };
     obj12[0] = guild;
-    tmp25Result1 = tmp25(tmp(11729), obj12);
+    tmp25Result1 = tmp25(tmp(11727), obj12);
   }
   items7[1] = tmp25Result1;
   if (tmp25Result2) {
@@ -230,7 +230,7 @@ export default function ChannelListStickyHeader(guild) {
     const obj14 = { guildId: null, joinSource: null };
     obj14[0] = guild.id;
     obj14[1] = JoinGuildSources.CHANNEL_LIST_STICKY_HEADER_LURKER;
-    obj13[1] = tmp25(tmp(15352), obj14);
+    obj13[1] = tmp25(tmp(15361), obj14);
     tmp25Result2 = tmp25(tmp22, obj13);
   }
   items7[2] = tmp25Result2;
@@ -246,7 +246,7 @@ export default function ChannelListStickyHeader(guild) {
     const obj16 = { targetRef: null, guild: null };
     obj16[0] = ref;
     obj16[1] = guild;
-    tmp25Result4 = tmp25(tmp(15353), obj16);
+    tmp25Result4 = tmp25(tmp(15362), obj16);
   }
   items7[4] = tmp25Result4;
   obj10[1] = items7;

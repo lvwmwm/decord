@@ -1,10 +1,10 @@
-// Module ID: 14364
-// Function ID: 14365
+// Module ID: 14373
+// Function ID: 14374
 // Name: ArrowSmallUpIcon
-// Dependencies: [19, 21, 712, 4064, 14365, 2]
+// Dependencies: [19, 21, 712, 4064, 14374, 2]
 // Exports: ArrowSmallUpIcon
 
-// Module 14364 (ArrowSmallUpIcon)
+// Module 14373 (ArrowSmallUpIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ArrowSmallUpIcon = function ArrowSmallUpIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14365) /* registerAsset */;
+  obj[0] = require(14374) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

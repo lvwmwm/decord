@@ -1,10 +1,10 @@
-// Module ID: 12087
-// Function ID: 12088
+// Module ID: 12089
+// Function ID: 12090
 // Name: HubProgressHeader
-// Dependencies: [19, 17, 9122, 11742, 21, 4344, 712, 12084, 1306, 1236, 8008, 4312, 12088, 2007, 12167, 2]
+// Dependencies: [19, 17, 9126, 11740, 21, 4342, 712, 12086, 1306, 1236, 8012, 4310, 12090, 2007, 12169, 2]
 // Exports: default
 
-// Module 12087 (HubProgressHeader)
+// Module 12089 (HubProgressHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import items from "items";

@@ -1,8 +1,8 @@
-// Module ID: 11767
-// Function ID: 11768
-// Dependencies: [5, 32, 19, 17, 1391, 1910, 676, 21, 4344, 712, 589, 5998, 5271, 9121, 1306, 1435, 1236, 5415, 5818, 1430, 4340, 11745, 4754, 2]
+// Module ID: 11765
+// Function ID: 11766
+// Dependencies: [5, 32, 19, 17, 1391, 1910, 676, 21, 4342, 712, 589, 6000, 5272, 9125, 1306, 1435, 1236, 5416, 5819, 1430, 4338, 11743, 4755, 2]
 
-// Module 11767
+// Module 11765
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "fromGuildPropertiesWithAdditionalFields";
@@ -174,9 +174,9 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const tmp2Result = tmp2(1430);
   }
   obj4[2] = result;
-  const items1 = [closure_10(importDefault(5818), obj4), ];
+  const items1 = [closure_10(importDefault(5819), obj4), ];
   const obj5 = { style: tmp.guildInfoContainer, children: null };
-  const items2 = [closure_10(entry(4340).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: entry.name }), ];
+  const items2 = [closure_10(entry(4338).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: entry.name }), ];
   const obj6 = { style: tmp.memberInfo, children: null };
   let tmp10Result = null;
   if (null != approximatePresenceCount) {
@@ -189,7 +189,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const obj10 = { membersOnline: null };
     obj10[0] = approximatePresenceCount;
     obj9[2] = intl3.format(tmp2(1236).t["LC+S+m"], obj10);
-    items3[1] = tmp9(tmp2(4340).Text, obj9);
+    items3[1] = tmp9(tmp2(4338).Text, obj9);
     obj7[0] = items3;
     tmp10Result = tmp10(closure_11, obj7);
   }
@@ -205,7 +205,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const obj14 = { count: null };
     obj14[0] = approximateMemberCount;
     obj13[2] = intl4.format(tmp2(1236).t.zRl6XR, obj14);
-    items5[1] = tmp9(tmp2(4340).Text, obj13);
+    items5[1] = tmp9(tmp2(4338).Text, obj13);
     obj11[0] = items5;
     tmp10Result = tmp10(closure_11, obj11);
   }
@@ -216,8 +216,8 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   items1[1] = closure_12(View, obj5);
   obj3[1] = items1;
   const items6 = [closure_12(View, obj3), ];
-  const tmp6Result = importDefault(5818);
-  items6[1] = closure_10(View, { children: closure_10(importDefault(11745), { entry }) });
+  const tmp6Result = importDefault(5819);
+  items6[1] = closure_10(View, { children: closure_10(importDefault(11743), { entry }) });
   obj2[1] = items6;
   const items7 = [closure_12(View, obj2), , , ];
   let tmp9Result = null != description;
@@ -228,7 +228,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const obj16 = { lineClamp: 3, style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj16[1] = tmp.guildDescription;
     obj16[4] = description;
-    tmp9Result = tmp9(tmp2(4340).Text, obj16);
+    tmp9Result = tmp9(tmp2(4338).Text, obj16);
   }
   items7[1] = tmp9Result;
   items7[2] = closure_10(View, { style: tmp.flex });
@@ -253,10 +253,10 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   }
   obj18[2] = str2;
   obj18[3] = stringResult;
-  items7[3] = closure_10(entry(4754).Button, obj18);
+  items7[3] = closure_10(entry(4755).Button, obj18);
   obj1[1] = items7;
   obj[1] = closure_12(View, obj1);
-  return closure_10(entry(5415).Card, obj);
+  return closure_10(entry(5416).Card, obj);
 });
 let result = require("noop").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryRow.tsx");
 

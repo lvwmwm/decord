@@ -1,9 +1,9 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 5940
+// Function ID: 5941
 // Name: handleReaction
-// Dependencies: [1218, 3998, 4243, 4563, 4000, 589, 709, 2]
+// Dependencies: [1218, 3998, 4241, 4564, 4000, 589, 709, 2]
 
-// Module 5938 (handleReaction)
+// Module 5940 (handleReaction)
 import fetchFingerprint from "fetchFingerprint";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { Store } from "initialize";
@@ -63,7 +63,7 @@ prototype["handleSearchFailure"] = function handleSearchFailure(arg0) {
   this.isIndexing = false;
   this.isInitialFetchComplete = true;
   this.isHistoricalIndexing = false;
-  const aPIError = new require(4243) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new require(4241) /* V6OrEarlierAPIError */.APIError(arg0);
   this.error = aPIError;
   this.analyticsId = null;
   this.documentsIndexed = 0;
@@ -395,7 +395,7 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
       if (null == value) {
         return false;
       } else {
-        const result = map1.set(id, require(4563) /* createMinimalMessageRecord */.updateMessageRecord(value, message.message));
+        const result = map1.set(id, require(4564) /* createMinimalMessageRecord */.updateMessageRecord(value, message.message));
       }
     }
   },

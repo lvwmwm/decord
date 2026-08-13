@@ -1,9 +1,9 @@
-// Module ID: 5376
-// Function ID: 5377
+// Module ID: 5377
+// Function ID: 5378
 // Name: GuildProfileVisibility
-// Dependencies: [2, 5377]
+// Dependencies: [2, 5378]
 
-// Module 5376 (GuildProfileVisibility)
+// Module 5377 (GuildProfileVisibility)
 const result = require("set").fileFinishedImporting("modules/guild_profile/GuildProfileTypes.tsx");
 
 export const GuildProfileVisibility = require("set").GuildProfileVisibility;

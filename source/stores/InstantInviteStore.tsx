@@ -1,9 +1,9 @@
-// Module ID: 7800
-// Function ID: 7801
+// Module ID: 7804
+// Function ID: 7805
 // Name: map
-// Dependencies: [7801, 7236, 7802, 7804, 7805, 589, 709, 2]
+// Dependencies: [7805, 7241, 7806, 7808, 7809, 589, 709, 2]
 
-// Module 7800 (map)
+// Module 7804 (map)
 import createFromServer from "createFromServer";
 import { InviteTargetTypes } from "InviteSendStates";
 import { Store } from "initialize";
@@ -88,9 +88,9 @@ const instantInviteStore = new InstantInviteStore(require("dispatcher"), {
   },
   FRIEND_INVITE_CREATE_SUCCESS: function handleFriendInviteCreateSuccess(invite) {
     closure_8[invite.invite.code] = createFromServer.createFromServer(invite.invite);
-    const tmp = importDefault(7802);
-    const tmp2 = importDefault(7804);
-    let tmpResult = tmp(tmp2(importDefault(7805)(Object.values(closure_8), "createdAt")));
+    const tmp = importDefault(7806);
+    const tmp2 = importDefault(7808);
+    let tmpResult = tmp(tmp2(importDefault(7809)(Object.values(closure_8), "createdAt")));
     if (tmpResult == null) {
       tmpResult = null;
     }
@@ -110,9 +110,9 @@ const instantInviteStore = new InstantInviteStore(require("dispatcher"), {
         }
       });
     }
-    const tmp2 = importDefault(7802);
-    const tmp3 = importDefault(7804);
-    let tmp2Result = tmp2(tmp3(importDefault(7805)(Object.values(closure_8), "createdAt")));
+    const tmp2 = importDefault(7806);
+    const tmp3 = importDefault(7808);
+    let tmp2Result = tmp2(tmp3(importDefault(7809)(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
     }
@@ -162,9 +162,9 @@ const instantInviteStore = new InstantInviteStore(require("dispatcher"), {
     const item = invites.forEach((code) => {
       closure_8[code.code] = createFromServer.createFromServer(code);
     });
-    const tmp2 = importDefault(7802);
-    const tmp3 = importDefault(7804);
-    let tmp2Result = tmp2(tmp3(importDefault(7805)(Object.values(closure_8), "createdAt")));
+    const tmp2 = importDefault(7806);
+    const tmp3 = importDefault(7808);
+    let tmp2Result = tmp2(tmp3(importDefault(7809)(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
     }

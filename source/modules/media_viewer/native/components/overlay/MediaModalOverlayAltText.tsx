@@ -1,8 +1,8 @@
-// Module ID: 12312
-// Function ID: 12313
-// Dependencies: [19, 21, 4344, 712, 1628, 4034, 4886, 11063, 4340, 1236, 2]
+// Module ID: 12314
+// Function ID: 12315
+// Dependencies: [19, 21, 4342, 712, 1628, 4034, 4887, 10978, 4338, 1236, 2]
 
-// Module 12312
+// Module 12314
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -37,8 +37,8 @@ const memoResult = require("noop").memo(function MediaModalOverlayAltTextButton(
       obj = { variant: "text-xs/semibold", color: "text-overlay-light", children: null };
       const intl = tmp3(1236).intl;
       obj[2] = intl.string(tmp3(1236).t.Q5VqrN);
-      obj[3] = jsx(tmp3(4340).Text, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
-      tmp4 = jsx(tmp3(4886).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
+      obj[3] = jsx(tmp3(4338).Text, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
+      tmp4 = jsx(tmp3(4887).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
     }
   }
   return tmp4;

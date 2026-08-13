@@ -1,11 +1,11 @@
-// Module ID: 8459
-// Function ID: 8460
+// Module ID: 8463
+// Function ID: 8464
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 1990, 5304, 8460, 21, 4083, 1297, 4344, 712, 1628, 4280, 8461, 8463, 589, 4170, 709, 8464, 5862, 5863, 8481, 8488, 8489, 4886, 1236, 8101, 2]
+// Dependencies: [19, 17, 1990, 5305, 8464, 21, 4083, 1297, 4342, 712, 1628, 4278, 8465, 8467, 589, 4168, 709, 8468, 5863, 5864, 8485, 8492, 8493, 4887, 1236, 8105, 2]
 // Exports: default
 
-// Module 8459 (MemberVerificationModal)
-import module_5863 from "module_5863";
+// Module 8463 (MemberVerificationModal)
+import module_5864 from "module_5864";
 import { View } from "openMemberVerificationSuccessAlert";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import get from "get";

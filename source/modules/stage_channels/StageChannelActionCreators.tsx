@@ -1,10 +1,10 @@
-// Module ID: 7819
-// Function ID: 7820
+// Module ID: 7823
+// Function ID: 7824
 // Name: audienceAckRequestToSpeak
-// Dependencies: [5, 1979, 4360, 676, 7820, 38, 4538, 7821, 530, 7825, 4528, 5180, 5271, 1954, 3994, 506, 4354, 7814, 7827, 2]
+// Dependencies: [5, 1979, 4361, 676, 7824, 38, 4539, 7825, 530, 7829, 4529, 5181, 5272, 1954, 3994, 506, 4355, 7818, 7831, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, setUserSuppress, startStage, toggleRequestToSpeak
 
-// Module 7819 (audienceAckRequestToSpeak)
+// Module 7823 (audienceAckRequestToSpeak)
 import module_38 from "module_38";
 import handleConnectionOpen from "handleConnectionOpen";
 import updateVoiceState from "updateVoiceState";
@@ -28,20 +28,20 @@ function audienceAckRequestToSpeak(channel, suppress) {
   importDefault(38)(null != guildId, "This channel cannot be guildless.");
   let obj = require;
   voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(channel.id);
-  let obj1 = require(4528) /* useAudienceRequestToSpeakState */;
+  let obj1 = require(4529) /* useAudienceRequestToSpeakState */;
   const audienceRequestToSpeakState = obj1.getAudienceRequestToSpeakState(voiceStateForChannel);
   if (!suppress) {
-    let objResult = obj(5180);
+    let objResult = obj(5181);
     if (objResult.shouldAgeVerifyToSpeakForCurrentUser()) {
       return Promise.resolve();
     }
   }
   if (!tmp7) {
-    objResult = obj(4538);
+    objResult = obj(4539);
     obj = {};
-    const merged = Object.assign(obj(7821).getStageChannelMetadata(channel));
+    const merged = Object.assign(obj(7825).getStageChannelMetadata(channel));
     objResult.trackWithMetadata(constants.PROMOTED_TO_SPEAKER, obj);
-    const objResult1 = obj(7821);
+    const objResult1 = obj(7825);
   }
   const HTTP = obj(530).HTTP;
   obj = { url: closure_9.UPDATE_VOICE_STATE(guildId), body: null, rejectWithError: null };
@@ -101,10 +101,10 @@ function _startStage() {
               let closure_1;
               if ("" !== closure_1) {
                 if (outer1_5.getVoiceChannelId() !== tmp28.id) {
-                  let obj2 = callback(7814);
+                  let obj2 = callback(7818);
                   obj2.connectToStage(tmp28);
                 }
-                const obj4 = callback(7827);
+                const obj4 = callback(7831);
                 c6 = 1;
                 c7 = 1;
                 const obj1 = { value: null, done: false };
@@ -297,11 +297,11 @@ export const toggleRequestToSpeak = function toggleRequestToSpeak(channel_id, ar
   const guildId = channel_id.getGuildId();
   importDefault(38)(null != guildId, "This channel cannot be guildless.");
   if (arg1) {
-    let obj = require(4538) /* collectGuildAnalyticsMetadata */;
+    let obj = require(4539) /* collectGuildAnalyticsMetadata */;
     obj = {};
-    const merged = Object.assign(require(7821) /* fillChunk */.getStageChannelMetadata(channel_id));
+    const merged = Object.assign(require(7825) /* fillChunk */.getStageChannelMetadata(channel_id));
     obj.trackWithMetadata(constants.REQUEST_TO_SPEAK_INITIATED, obj);
-    const obj3 = require(7821) /* fillChunk */;
+    const obj3 = require(7825) /* fillChunk */;
   }
   const HTTP = require(530) /* sendRequest */.HTTP;
   obj = { url: closure_9.UPDATE_VOICE_STATE(guildId), body: null, rejectWithError: null };
@@ -404,8 +404,8 @@ export const removeUserFromChannel = function removeUserFromChannel(id, getGuild
     guildId = getGuildId.getGuildId();
   }
   if (tmp2) {
-    importDefault(5271).setChannel(guildId, id.id, null);
-    const obj = importDefault(5271);
+    importDefault(5272).setChannel(guildId, id.id, null);
+    const obj = importDefault(5272);
   }
 };
 export const setEveryoneRolePermissionAllowed = function setEveryoneRolePermissionAllowed(getGuildId, REQUEST_TO_SPEAK, arg2) {
@@ -423,7 +423,7 @@ export const setEveryoneRolePermissionAllowed = function setEveryoneRolePermissi
     tmp5Result = tmp5(506);
     obj.deny = tmp5Result.add(obj.deny, REQUEST_TO_SPEAK);
   }
-  const result = importDefault(4354).updatePermissionOverwrite(getGuildId.id, obj);
+  const result = importDefault(4355).updatePermissionOverwrite(getGuildId.id, obj);
 };
 export const startStage = function startStage(outer1_0, arg1, GUILD_ONLY, outer1_11) {
   const self = this;

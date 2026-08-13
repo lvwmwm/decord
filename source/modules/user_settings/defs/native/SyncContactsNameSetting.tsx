@@ -1,9 +1,9 @@
-// Module ID: 14158
-// Function ID: 14159
+// Module ID: 14167
+// Function ID: 14168
 // Name: pressable
-// Dependencies: [8123, 676, 698, 4549, 14157, 2007, 12095, 10493, 1236, 2]
+// Dependencies: [8127, 676, 698, 4550, 14166, 2007, 12097, 10407, 1236, 2]
 
-// Module 14158 (pressable)
+// Module 14167 (pressable)
 import { AnalyticEvents } from "ME";
 import createToggle from "createToggle";
 
@@ -16,11 +16,11 @@ const pressable = createToggle.createPressable({
   onPress: function onContactSyncNamePress() {
     importDefault(698).track(AnalyticEvents.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
     const obj = importDefault(698);
-    importDefault(4549).pushLazy(require(2007) /* asyncRequireImpl */(14157, dependencyMap.paths), "Contact Sync Name Update Modal");
+    importDefault(4550).pushLazy(require(2007) /* asyncRequireImpl */(14166, dependencyMap.paths), "Contact Sync Name Update Modal");
   },
   withArrow: true,
   usePredicate: function useHasContactSyncAccount() {
-    return null != require(12095) /* _uploadContacts */.useContactSyncAccount();
+    return null != require(12097) /* _uploadContacts */.useContactSyncAccount();
   }
 });
 let obj = {
@@ -32,11 +32,11 @@ let obj = {
   onPress: function onContactSyncNamePress() {
     importDefault(698).track(AnalyticEvents.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
     const obj = importDefault(698);
-    importDefault(4549).pushLazy(require(2007) /* asyncRequireImpl */(14157, dependencyMap.paths), "Contact Sync Name Update Modal");
+    importDefault(4550).pushLazy(require(2007) /* asyncRequireImpl */(14166, dependencyMap.paths), "Contact Sync Name Update Modal");
   },
   withArrow: true,
   usePredicate: function useHasContactSyncAccount() {
-    return null != require(12095) /* _uploadContacts */.useContactSyncAccount();
+    return null != require(12097) /* _uploadContacts */.useContactSyncAccount();
   }
 };
 const result = require("expandEventProperties").fileFinishedImporting("modules/user_settings/defs/native/SyncContactsNameSetting.tsx");

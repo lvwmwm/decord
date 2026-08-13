@@ -1,7 +1,7 @@
 // Module ID: 12409
 // Function ID: 12410
 // Name: widgetGameTagMetadata
-// Dependencies: [12410, 12411, 8639, 8641, 4063, 2]
+// Dependencies: [12410, 12411, 8643, 8645, 4063, 2]
 // Exports: getWidgetGameTagMetadata
 
 // Module 12409 (widgetGameTagMetadata)

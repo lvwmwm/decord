@@ -1,10 +1,10 @@
-// Module ID: 7055
-// Function ID: 7056
+// Module ID: 7061
+// Function ID: 7062
 // Name: getItemRecordsFromPurchases
-// Dependencies: [7048, 1947, 7049, 7050, 7056, 678, 676, 505, 4007, 1938, 1940, 7057, 5894, 500, 1949, 12, 1236, 7054, 2]
+// Dependencies: [7054, 1947, 7055, 7056, 7062, 678, 676, 505, 4007, 1938, 1940, 7063, 5896, 500, 1949, 12, 1236, 7060, 2]
 // Exports: canActionOnProduct, extendVariantsProducts, extractPriceByPurchaseTypes, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getAvatarDecorationsFromCategories, getAvatarDecorationsFromPurchases, getBundleItemsPriceSum, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getDaysRemaining, getDefaultPriceSetAssignmentPurchaseType, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getNameplatesFromCategories, getNameplatesFromPurchases, getPriceForCollectiblesProduct, getProductDiscount, getProductTypeNameForLogging, getProductsFromCategories, getProfileEffects, getProfileEffectsFromCategories, getProfileEffectsFromPurchases, getProfileFrames, getProfileFramesFromCategories, getProfileFramesFromPurchases, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isBundleProduct, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
 
-// Module 7055 (getItemRecordsFromPurchases)
+// Module 7061 (getItemRecordsFromPurchases)
 import { isAvatarDecorationRecord } from "fromServer";
 import { isNameplateRecord } from "fromServer";
 import { isProfileEffectRecord } from "fromServer";
@@ -150,7 +150,7 @@ export const getShopDiscountSource = function getShopDiscountSource(currentUser)
             NITRO = obj.THIRDPARTY;
           }
         }
-        tmp4Result = tmp4(7057);
+        tmp4Result = tmp4(7063);
       }
       return NITRO;
     }
@@ -232,8 +232,8 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
       if (tmp7 != null) {
         currency = tmp7.currency;
       }
-      str = require(5894) /* formatSingleCurrencyPrice */.formatPrice(amount, currency);
-      const obj = require(5894) /* formatSingleCurrencyPrice */;
+      str = require(5896) /* formatSingleCurrencyPrice */.formatPrice(amount, currency);
+      const obj = require(5896) /* formatSingleCurrencyPrice */;
     }
     return str;
   }

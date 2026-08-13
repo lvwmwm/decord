@@ -1,10 +1,10 @@
-// Module ID: 10325
-// Function ID: 10326
+// Module ID: 11161
+// Function ID: 11162
 // Name: MessageReminderDurationActionSheet
-// Dependencies: [32, 19, 10319, 21, 4344, 712, 589, 687, 10326, 5435, 1236, 4886, 5313, 10327, 5413, 4312, 4549, 10328, 2007, 5436, 5806, 4296, 2]
+// Dependencies: [32, 19, 11096, 21, 4342, 712, 589, 687, 11162, 5436, 1236, 4887, 5314, 11163, 5414, 4310, 4550, 11164, 2007, 5437, 5807, 4294, 2]
 // Exports: default
 
-// Module 10325 (MessageReminderDurationActionSheet)
+// Module 11161 (MessageReminderDurationActionSheet)
 import _slicedToArray from "_slicedToArray";
 import Background from "Background";
 import getTimeSafe from "getTimeSafe";
@@ -51,8 +51,8 @@ export default function MessageReminderDurationActionSheet(createReminder) {
   if (stateFromStores != null) {
     dueAt = stateFromStores.saveData.dueAt;
   }
-  obj = { dueAt, now: tmp7, type: tmp2(10326).DueInStringTypes.SHORT };
-  const dueInString = createReminder(10326).useDueInString(obj);
+  obj = { dueAt, now: tmp7, type: tmp2(11162).DueInStringTypes.SHORT };
+  const dueInString = createReminder(11162).useDueInString(obj);
   dueInText = dueInString.dueInText;
   isOverdue = dueInString.isOverdue;
   const items1 = [onBack, dueInText, isOverdue];
@@ -104,20 +104,20 @@ export default function MessageReminderDurationActionSheet(createReminder) {
     return mapped;
   }, items2);
   obj = { header: memo, bodyStyles: tmp.body, startExpanded: true, children: null };
-  const items3 = [dueInText(createReminder(5806).TableRowGroup, { hasIcons: false, children: memo1 }), ];
+  const items3 = [dueInText(createReminder(5807).TableRowGroup, { hasIcons: false, children: memo1 }), ];
   let tmp14Result = null != removeReminder;
   if (tmp14Result) {
     obj1 = { icon: null, label: null, onPress: null, start: true, end: true };
-    obj1[0] = tmp14(tmp2(4296).CheckmarkLargeIcon, {});
+    obj1[0] = tmp14(tmp2(4294).CheckmarkLargeIcon, {});
     let intl = tmp2(1236).intl;
     obj1[1] = intl.string(tmp2(1236).t.yjGtdJ);
     obj1[2] = function onPress() {
       removeReminder(outer1_2[15]).hideActionSheet();
       removeReminder();
     };
-    tmp14Result = tmp14(tmp2(5413).TableRow, obj1, "remove-reminder");
+    tmp14Result = tmp14(tmp2(5414).TableRow, obj1, "remove-reminder");
   }
   items3[1] = tmp14Result;
   obj[3] = items3;
-  return isOverdue(createReminder(5436).BottomSheet, obj);
+  return isOverdue(createReminder(5437).BottomSheet, obj);
 };

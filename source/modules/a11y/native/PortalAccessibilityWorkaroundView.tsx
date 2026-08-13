@@ -1,10 +1,10 @@
-// Module ID: 12052
-// Function ID: 12053
+// Module ID: 12054
+// Function ID: 12055
 // Name: PortalAccessibilityWorkaroundView
-// Dependencies: [19, 17, 21, 500, 12053, 2]
+// Dependencies: [19, 17, 21, 500, 12055, 2]
 // Exports: default
 
-// Module 12052 (PortalAccessibilityWorkaroundView)
+// Module 12054 (PortalAccessibilityWorkaroundView)
 import "noop";
 import { View as _default } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

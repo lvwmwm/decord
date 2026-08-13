@@ -1,10 +1,10 @@
-// Module ID: 16700
-// Function ID: 16701
+// Module ID: 16711
+// Function ID: 16712
 // Name: AutomodTriggerType
-// Dependencies: [19, 11321, 1236, 15980, 9820, 2]
+// Dependencies: [19, 11312, 1236, 15990, 9824, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, useAvailableTriggerTypes, validateRuleByTriggerConfigOrThrow
 
-// Module 16700 (AutomodTriggerType)
+// Module 16711 (AutomodTriggerType)
 import noop from "noop";
 import AutomodEventType from "AutomodEventType";
 import set from "getSystemLocale";
@@ -215,7 +215,7 @@ export const validateRuleByTriggerConfigOrThrow = function validateRuleByTrigger
   }
 };
 export const useAvailableTriggerTypes = function useAvailableTriggerTypes(arg0) {
-  isUserProfileRuleEnabled = isUserProfileRuleEnabled(15980).useIsUserProfileRuleEnabled(arg0);
+  isUserProfileRuleEnabled = isUserProfileRuleEnabled(15990).useIsUserProfileRuleEnabled(arg0);
   const items = [isUserProfileRuleEnabled];
   return React.useMemo(() => {
     const keys = Object.keys(outer1_7);
@@ -241,7 +241,7 @@ export const useAvailableTriggerTypes = function useAvailableTriggerTypes(arg0) 
   }, items);
 };
 export const getDefaultTriggerMetadataForTriggerType = function getDefaultTriggerMetadataForTriggerType(arg0, arg1) {
-  require(9820) /* isInMentionRaidExperiment */;
+  require(9824) /* isInMentionRaidExperiment */;
   if (AutomodTriggerType.DEFAULT_KEYWORD_LIST === arg0) {
     let obj = { allowList: null, presets: null };
     obj[0] = [];

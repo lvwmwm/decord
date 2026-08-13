@@ -1,10 +1,10 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16281
+// Function ID: 16282
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 16267, 11704, 1388, 21, 16271, 16210, 10827, 11705, 4083, 6063, 16244, 1236, 1377, 16273, 8698, 2]
+// Dependencies: [32, 19, 16278, 11702, 1388, 21, 16282, 16221, 10741, 11703, 4083, 6065, 16255, 1236, 1377, 16284, 8702, 2]
 // Exports: default
 
-// Module 16270 (useSpeakerTooltips)
+// Module 16281 (useSpeakerTooltips)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import useConsoleVoiceUpsellStore from "useConsoleVoiceUpsellStore";

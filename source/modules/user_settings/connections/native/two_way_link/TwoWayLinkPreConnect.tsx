@@ -1,10 +1,10 @@
-// Module ID: 10549
-// Function ID: 10550
+// Module ID: 10463
+// Function ID: 10464
 // Name: _authorizeLink
-// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4344, 5163, 10550, 4058, 500, 10545, 5164, 38, 709, 4340, 1236, 5367, 4754, 2]
+// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4342, 5164, 10464, 4058, 500, 10459, 5165, 38, 709, 4338, 1236, 5368, 4755, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 10549 (_authorizeLink)
+// Module 10463 (_authorizeLink)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "jsxProd";
 import Button from "Button";

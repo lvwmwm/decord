@@ -1,7 +1,7 @@
 // Module ID: 12381
 // Function ID: 12382
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 4363, 1218, 21, 4083, 4754, 4344, 712, 11001, 589, 4407, 4345, 8050, 4340, 1236, 2]
+// Dependencies: [19, 17, 4364, 1218, 21, 4083, 4755, 4342, 712, 10915, 589, 4408, 4343, 8054, 4338, 1236, 2]
 // Exports: VoicePanelStreamPreview
 
 // Module 12381 (VoicePanelStreamPreview)
@@ -56,7 +56,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   if (stream != null) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = stream(11001)(guildId, channelId, ownerId).previewUrl;
+  const previewUrl = stream(10915)(guildId, channelId, ownerId).previewUrl;
   let obj = mode(589);
   const items = [reset, fetchFingerprint];
   const items1 = [stream];
@@ -93,7 +93,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
       return obj;
     }
   }
-  obj = { mode, withTiming: mode(4345).withTiming, OPACITY_TIMING: closure_10 };
+  obj = { mode, withTiming: mode(4343).withTiming, OPACITY_TIMING: closure_10 };
   T.__closure = obj;
   T.__workletHash = 15496474861955;
   T.__initData = closure_12;
@@ -118,7 +118,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   const obj3 = { style: animatedStyle, layout, children: null };
   const tmp11 = closure_7;
   const tmp12 = closure_8;
-  const tmp4 = stream(11001);
+  const tmp4 = stream(10915);
   if (stateFromStores) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.ownStreamTextContainer;
@@ -126,7 +126,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     obj5[2] = tmp.ownStreamText;
     const intl2 = tmp8(1236).intl;
     obj5[3] = intl2.string(tmp8(1236).t["ro/HN8"]);
-    obj4[1] = tmp16(tmp8(4340).Text, obj5);
+    obj4[1] = tmp16(tmp8(4338).Text, obj5);
     let tmp16Result = tmp16(closure_3, obj4);
   } else {
     const obj6 = { layout: null, disabled: null, text: null, size: "sm", variant: "primary-overlay", onPress: null };
@@ -138,7 +138,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     tmp16Result = tmp16(closure_9, obj6);
   }
   obj3[2] = tmp16Result;
-  items2[1] = callback(stream(8050), obj3);
+  items2[1] = callback(stream(8054), obj3);
   obj[5] = items2;
   return tmp11(tmp12, obj);
 };

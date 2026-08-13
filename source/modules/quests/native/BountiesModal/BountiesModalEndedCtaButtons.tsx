@@ -1,10 +1,10 @@
-// Module ID: 14354
-// Function ID: 14355
+// Module ID: 14363
+// Function ID: 14364
 // Name: BountiesModalEndedCtaButtons
-// Dependencies: [21, 4344, 712, 10535, 4083, 4345, 4348, 14349, 4754, 10537, 7228, 5206, 7227, 1236, 2]
+// Dependencies: [21, 4342, 712, 10449, 4083, 4343, 4346, 14358, 4755, 10451, 7233, 5207, 7232, 1236, 2]
 // Exports: default
 
-// Module 14354 (BountiesModalEndedCtaButtons)
+// Module 14363 (BountiesModalEndedCtaButtons)
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -34,7 +34,7 @@ export default function BountiesModalEndedCtaButtons(bounty) {
     flag = false;
   }
   let callback;
-  let obj = bounty(10535);
+  let obj = bounty(10449);
   callback = obj.useGetQuestImpressionId();
   let obj1 = bounty(4083);
   const fn = function y() {
@@ -46,12 +46,12 @@ export default function BountiesModalEndedCtaButtons(bounty) {
     obj = { opacity: obj.withTiming(num, bounty(outer1_2[6]).timingStandard) };
     return obj;
   };
-  obj = { withTiming: bounty(4345).withTiming, visible, timingStandard: bounty(4348).timingStandard };
+  obj = { withTiming: bounty(4343).withTiming, visible, timingStandard: bounty(4346).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 11417131685254;
   fn.__initData = closure_6;
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  bounty(14349);
+  bounty(14358);
   if (visible) {
     obj = { style: null, children: null };
     const items = [tmp.container, animatedStyle];
@@ -65,7 +65,7 @@ export default function BountiesModalEndedCtaButtons(bounty) {
       obj = { content: bounty(outer1_2[11]).QuestContent.VIDEO_MODAL_END_CARD, ctaContent: bounty(outer1_2[12]).QuestContentCTA.OPEN_GAME_LINK, impressionId: callback(), sourceQuestContent: closure_2 };
       const result = obj.openAdGameLinkDirectly(obj, obj);
     };
-    const items1 = [callback(tmp2(4754).Button, obj1), ];
+    const items1 = [callback(tmp2(4755).Button, obj1), ];
     let tmp9Result = null;
     if (showCloseButton) {
       const obj2 = { variant: "secondary-overlay", text: null, size: "lg", disabled: null, onPress: null };
@@ -73,7 +73,7 @@ export default function BountiesModalEndedCtaButtons(bounty) {
       obj2[1] = intl.string(tmp2(1236).t.cpT0Cq);
       obj2[3] = flag;
       obj2[4] = bounty.onClose;
-      tmp9Result = tmp9(tmp2(4754).Button, obj2);
+      tmp9Result = tmp9(tmp2(4755).Button, obj2);
     }
     items1[1] = tmp9Result;
     obj[1] = items1;

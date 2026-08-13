@@ -1,10 +1,10 @@
-// Module ID: 7420
-// Function ID: 7421
+// Module ID: 7424
+// Function ID: 7425
 // Name: PremiumActivatedAlert
-// Dependencies: [19, 17, 676, 21, 4344, 5198, 4007, 7421, 7422, 7423, 7424, 7425, 7369, 7370, 7426, 7427, 7428, 7429, 7430, 7431, 7432, 1363, 7433, 7434, 7435, 7436, 7437, 7438, 7439, 7440, 7441, 1236, 4280, 4772, 7442, 7443, 1297, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 5199, 4007, 7425, 7426, 7427, 7428, 7429, 7373, 7374, 7430, 7431, 7432, 7433, 7434, 7435, 7436, 1363, 7437, 7438, 7439, 7440, 7441, 7442, 7443, 7444, 7445, 1236, 4278, 4773, 7446, 7447, 1297, 2]
 // Exports: default
 
-// Module 7420 (PremiumActivatedAlert)
+// Module 7424 (PremiumActivatedAlert)
 import "registerAsset";
 import get_ActivityIndicator from "registerAsset";
 import { SubscriptionStatusTypes } from "ME";
@@ -89,7 +89,7 @@ export default function PremiumActivatedAlert(onClose) {
       }
     }
   }
-  const tmp6 = importDefault(4280)();
+  const tmp6 = importDefault(4278)();
   let obj = require(4007) /* getPremiumPlanItem */;
   const premiumBranding = obj.getPremiumBranding(renewalMutations);
   if (require(4007) /* getPremiumPlanItem */.Branding.TIER_0 === premiumBranding) {
@@ -116,56 +116,56 @@ export default function PremiumActivatedAlert(onClose) {
   }
   const tmp10 = callback(premiumBranding);
   const obj3 = { onClose: onClose.onClose, confirmText: null, style: null, children: null };
-  let tmp4Result = tmp4(4772);
+  let tmp4Result = tmp4(4773);
   const intl = tmp7(1236).intl;
   obj3[1] = intl.string(require(1236) /* getSystemLocale */.t.TkTvBz);
   obj3[2] = tmp.alert;
   const obj4 = { style: tmp.header, source: null, children: null };
   if (require(4007) /* getPremiumPlanItem */.Branding.TIER_0 === premiumBranding) {
-    tmp4Result = tmp4(7421);
-  } else if (tmp7(4007).Branding.TIER_1 === premiumBranding) {
-    tmp4Result = tmp4(7422);
-  } else if (tmp7(4007).Branding.TIER_2 === premiumBranding) {
-    tmp4Result = tmp4(7423);
-  } else if (tmp7(4007).Branding.BUNDLE === premiumBranding) {
-    tmp4Result = tmp4(7424);
-  } else if (tmp7(4007).Branding.PREMIUM_GUILD === premiumBranding) {
     tmp4Result = tmp4(7425);
+  } else if (tmp7(4007).Branding.TIER_1 === premiumBranding) {
+    tmp4Result = tmp4(7426);
+  } else if (tmp7(4007).Branding.TIER_2 === premiumBranding) {
+    tmp4Result = tmp4(7427);
+  } else if (tmp7(4007).Branding.BUNDLE === premiumBranding) {
+    tmp4Result = tmp4(7428);
+  } else if (tmp7(4007).Branding.PREMIUM_GUILD === premiumBranding) {
+    tmp4Result = tmp4(7429);
   }
   obj4[1] = tmp4Result;
   if (require(4007) /* getPremiumPlanItem */.Branding.TIER_0 === premiumBranding) {
-    let tmp4Result1 = tmp4(7429);
+    let tmp4Result1 = tmp4(7433);
   } else if (tmp7(4007).Branding.TIER_1 === premiumBranding) {
-    tmp4Result1 = tmp4(7430);
+    tmp4Result1 = tmp4(7434);
   } else {
     if (tmp7(4007).Branding.BUNDLE !== premiumBranding) {
       if (tmp7(4007).Branding.TIER_2 !== premiumBranding) {
         if (tmp7(4007).Branding.PREMIUM_GUILD === premiumBranding) {
-          tmp4Result1 = tmp4(7432);
+          tmp4Result1 = tmp4(7436);
         }
       }
     }
-    tmp4Result1 = tmp4(7431);
+    tmp4Result1 = tmp4(7435);
   }
   const items = [closure_7(closure_3, { source: tmp4Result1, style: tmp9.logo }), , ];
   let tmp16Result = null;
   if (premiumBranding === require(4007) /* getPremiumPlanItem */.Branding.BUNDLE) {
     const obj6 = { source: null, style: null };
-    obj6[0] = tmp4(7442);
+    obj6[0] = tmp4(7446);
     obj6[1] = tmp.logoPlusPremiumGuild;
     tmp16Result = tmp16(tmp17, obj6);
   }
   items[1] = tmp16Result;
   if (require(4007) /* getPremiumPlanItem */.Branding.TIER_0 === premiumBranding) {
-    let tmp4Result2 = tmp4(7369);
+    let tmp4Result2 = tmp4(7373);
   } else if (tmp7(4007).Branding.TIER_1 === premiumBranding) {
-    tmp4Result2 = tmp4(7370);
+    tmp4Result2 = tmp4(7374);
   } else if (tmp7(4007).Branding.TIER_2 === premiumBranding) {
-    tmp4Result2 = tmp4(7426);
+    tmp4Result2 = tmp4(7430);
   } else if (tmp7(4007).Branding.BUNDLE === premiumBranding) {
-    tmp4Result2 = tmp4(7427);
+    tmp4Result2 = tmp4(7431);
   } else if (tmp7(4007).Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result2 = tmp4(7428);
+    tmp4Result2 = tmp4(7432);
   }
   const items1 = [tmp10.headerImage, tmp.headerImage];
   items[2] = closure_7(closure_3, { source: tmp4Result2, style: items1 });
@@ -179,37 +179,37 @@ export default function PremiumActivatedAlert(onClose) {
   if (require(4007) /* getPremiumPlanItem */.Branding.TIER_0 === premiumBranding) {
     let tmp7Result = tmp7(1363);
     if (tmp7Result.isThemeDark(tmp6)) {
-      let tmp4Result4 = tmp4(7433);
+      let tmp4Result4 = tmp4(7437);
     } else {
-      tmp4Result4 = tmp4(7434);
+      tmp4Result4 = tmp4(7438);
     }
   } else {
     if (tmp7(4007).Branding.TIER_1 === premiumBranding) {
       tmp7Result = tmp7(1363);
       if (tmp7Result.isThemeDark(tmp6)) {
-        let tmp4Result5 = tmp4(7435);
+        let tmp4Result5 = tmp4(7439);
       } else {
-        tmp4Result5 = tmp4(7436);
+        tmp4Result5 = tmp4(7440);
       }
       let tmp4Result8 = tmp4Result5;
     } else if (tmp7(4007).Branding.TIER_2 === premiumBranding) {
       if (tmp7Result1.isThemeDark(tmp6)) {
-        let tmp4Result6 = tmp4(7437);
+        let tmp4Result6 = tmp4(7441);
       } else {
-        tmp4Result6 = tmp4(7438);
+        tmp4Result6 = tmp4(7442);
       }
       tmp4Result8 = tmp4Result6;
       tmp7Result1 = tmp7(1363);
     } else if (tmp7(4007).Branding.BUNDLE === premiumBranding) {
       if (tmp7Result2.isThemeDark(tmp6)) {
-        let tmp4Result7 = tmp4(7439);
+        let tmp4Result7 = tmp4(7443);
       } else {
-        tmp4Result7 = tmp4(7440);
+        tmp4Result7 = tmp4(7444);
       }
       tmp4Result8 = tmp4Result7;
       tmp7Result2 = tmp7(1363);
     } else if (tmp7(4007).Branding.PREMIUM_GUILD === premiumBranding) {
-      tmp4Result8 = tmp4(7441);
+      tmp4Result8 = tmp4(7445);
     }
     const obj8 = { source: null, style: null };
     obj8[0] = tmp4Result8;

@@ -1,9 +1,9 @@
-// Module ID: 4336
-// Function ID: 4337
+// Module ID: 4334
+// Function ID: 4335
 // Name: maybeApplyNoTextColorForLightCustomTheme
-// Dependencies: [109, 1303, 1302, 1340, 676, 4337, 4338, 4034, 589, 595, 1363, 709, 2]
+// Dependencies: [109, 1303, 1302, 1340, 676, 4335, 4336, 4034, 589, 595, 1363, 709, 2]
 
-// Module 4336 (maybeApplyNoTextColorForLightCustomTheme)
+// Module 4334 (maybeApplyNoTextColorForLightCustomTheme)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import initialize from "initialize";
 import handleThemeChange from "handleThemeChange";
@@ -603,7 +603,7 @@ const accessibilityStore = new AccessibilityStore(require("dispatcher"), {
           obj = {};
           const merged = Object.assign(obj);
           obj.zoom = zoom.zoom;
-          importDefault(4338).setZoomFactor(obj.zoom);
+          importDefault(4336).setZoomFactor(obj.zoom);
         }
       }
     }
@@ -622,8 +622,8 @@ const accessibilityStore = new AccessibilityStore(require("dispatcher"), {
     }
     if (obj.zoom !== Accessibility.ZOOM_DEFAULT) {
       obj.zoom = tmp.ZOOM_DEFAULT;
-      importDefault(4338).setZoomFactor(obj.zoom);
-      const obj2 = importDefault(4338);
+      importDefault(4336).setZoomFactor(obj.zoom);
+      const obj2 = importDefault(4336);
     }
   },
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: function handleEnableKeyboardMode() {

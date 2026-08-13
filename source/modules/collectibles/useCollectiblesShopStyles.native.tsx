@@ -1,7 +1,7 @@
 // Module ID: 10173
 // Function ID: 10174
 // Name: importDefaultResult1
-// Dependencies: [7053, 712, 10174, 2]
+// Dependencies: [7059, 712, 10174, 2]
 
 // Module 10173 (importDefaultResult1)
 import importDefaultResult from "tinycolor";

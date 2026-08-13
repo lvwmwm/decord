@@ -1,9 +1,9 @@
-// Module ID: 4789
-// Function ID: 4790
+// Module ID: 4790
+// Function ID: 4791
 // Name: handleSoundCreateOrUpdate
-// Dependencies: [32, 1340, 1922, 4790, 676, 685, 4427, 3943, 12, 698, 4791, 4034, 11, 589, 709, 2]
+// Dependencies: [32, 1340, 1922, 4791, 676, 685, 4428, 3943, 12, 698, 4792, 4034, 11, 589, 709, 2]
 
-// Module 4789 (handleSoundCreateOrUpdate)
+// Module 4790 (handleSoundCreateOrUpdate)
 import _slicedToArray from "_slicedToArray";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -128,7 +128,7 @@ let tmp7 = new require("DEFAULT_FRECENCY")(obj);
 let closure_22 = require("DISCORD_EPOCH").debounce((volume) => {
   let obj = importDefault(698);
   obj = { volume: null, location_stack: null };
-  obj[0] = Math.round(require(4791) /* perceptualToAmplitude */.amplitudeToPerceptual(volume));
+  obj[0] = Math.round(require(4792) /* perceptualToAmplitude */.amplitudeToPerceptual(volume));
   obj[1] = arg1;
   obj.track(AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS, obj);
   const SoundboardSettings = require(4034) /* explicitContentFromProto */.SoundboardSettings;

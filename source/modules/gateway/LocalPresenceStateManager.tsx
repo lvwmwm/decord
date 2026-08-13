@@ -1,7 +1,7 @@
 // Module ID: 13005
 // Function ID: 13006
 // Name: getInitialState
-// Dependencies: [5036, 13006, 13007, 2]
+// Dependencies: [5037, 13006, 13007, 2]
 
 // Module 13005 (getInitialState)
 import filterPlayingActivities from "filterPlayingActivities";

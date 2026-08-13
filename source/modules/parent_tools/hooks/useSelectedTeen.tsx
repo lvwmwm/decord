@@ -1,10 +1,10 @@
-// Module ID: 7379
-// Function ID: 7380
+// Module ID: 7383
+// Function ID: 7384
 // Name: useSelectedTeen
-// Dependencies: [1922, 7038, 647, 2]
+// Dependencies: [1922, 7044, 647, 2]
 // Exports: useSelectedTeen, useSelectedTeenId
 
-// Module 7379 (useSelectedTeen)
+// Module 7383 (useSelectedTeen)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 

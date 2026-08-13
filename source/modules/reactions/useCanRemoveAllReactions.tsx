@@ -1,7 +1,7 @@
 // Module ID: 12591
 // Function ID: 12592
 // Name: useCanRemoveAllReactions
-// Dependencies: [3989, 676, 5928, 589, 2]
+// Dependencies: [3989, 676, 5930, 589, 2]
 // Exports: default
 
 // Module 12591 (useCanRemoveAllReactions)

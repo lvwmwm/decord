@@ -1,10 +1,10 @@
-// Module ID: 9015
-// Function ID: 9016
+// Module ID: 9019
+// Function ID: 9020
 // Name: useChannelsUserCanStartStageIn
 // Dependencies: [1980, 3989, 1399, 589, 2]
 // Exports: useChannelsUserCanStartStageIn
 
-// Module 9015 (useChannelsUserCanStartStageIn)
+// Module 9019 (useChannelsUserCanStartStageIn)
 import comparator from "comparator";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

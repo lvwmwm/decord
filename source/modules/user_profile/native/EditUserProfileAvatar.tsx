@@ -1,10 +1,10 @@
-// Module ID: 13983
-// Function ID: 13984
+// Module ID: 13991
+// Function ID: 13992
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 4336, 21, 4344, 5767, 5787, 4007, 8304, 8319, 13984, 4312, 13985, 2007, 13986, 13986, 8302, 8311, 589, 4083, 4345, 8344, 4886, 1236, 13987, 1297, 2]
+// Dependencies: [19, 4334, 21, 4342, 5768, 5788, 4007, 8308, 8323, 13992, 4310, 13993, 2007, 13994, 13994, 8306, 8315, 589, 4083, 4343, 8348, 4887, 1236, 13995, 1297, 2]
 // Exports: default
 
-// Module 13983 (EditUserProfileAvatar)
+// Module 13991 (EditUserProfileAvatar)
 import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "PressableBase";

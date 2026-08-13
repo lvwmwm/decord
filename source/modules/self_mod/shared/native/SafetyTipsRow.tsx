@@ -1,10 +1,10 @@
-// Module ID: 7995
-// Function ID: 7996
+// Module ID: 7999
+// Function ID: 8000
 // Name: SafetyTipsRow
-// Dependencies: [19, 17, 21, 4344, 712, 5413, 4340, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5414, 4338, 2]
 // Exports: default
 
-// Module 7995 (SafetyTipsRow)
+// Module 7999 (SafetyTipsRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -30,5 +30,5 @@ export default function SafetyTipsRow(arg0) {
   obj[1] = tip;
   obj[2] = description;
   obj[3] = end;
-  return jsx(_require(5413).TableRow, { icon: null, label: null, subLabel: null, end: null });
+  return jsx(_require(5414).TableRow, { icon: null, label: null, subLabel: null, end: null });
 };

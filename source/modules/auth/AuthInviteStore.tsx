@@ -1,9 +1,9 @@
-// Module ID: 4264
-// Function ID: 4265
+// Module ID: 4262
+// Function ID: 4263
 // Name: getGuild
 // Dependencies: [1430, 589, 709, 2]
 
-// Module 4264 (getGuild)
+// Module 4262 (getGuild)
 import { Store } from "initialize";
 
 const require = arg1;

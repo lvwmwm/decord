@@ -1,10 +1,10 @@
-// Module ID: 16128
-// Function ID: 16129
+// Module ID: 16139
+// Function ID: 16140
 // Name: renderChannelWrapper
-// Dependencies: [19, 17, 21, 16126, 16129, 2]
+// Dependencies: [19, 17, 21, 16137, 16140, 2]
 // Exports: default
 
-// Module 16128 (renderChannelWrapper)
+// Module 16139 (renderChannelWrapper)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -15,10 +15,10 @@ const result = require("jsxProd").fileFinishedImporting("modules/launchpad/nativ
 export default function renderChannelWrapper(arg0, fontScale) {
   let obj = { style: null, children: null };
   const items = [{ flex: 1, flexDirection: "row", alignItems: "center", position: "relative" }, , ];
-  obj = { minHeight: importDefault(16129)(fontScale.fontScale) - 2 * closure_4.layout.margin.marginVertical };
+  obj = { minHeight: importDefault(16140)(fontScale.fontScale) - 2 * closure_4.layout.margin.marginVertical };
   items[1] = obj;
   items[2] = closure_4.container.padding;
   obj[0] = items;
   obj[1] = arg0;
-  return <View minHeight={importDefault(16129)(arg1.fontScale) - 2 * closure_4.layout.margin.marginVertical} />;
+  return <View minHeight={importDefault(16140)(arg1.fontScale) - 2 * closure_4.layout.margin.marginVertical} />;
 };

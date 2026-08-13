@@ -1,7 +1,7 @@
 // Module ID: 10247
 // Function ID: 10248
 // Name: AnimatedCount
-// Dependencies: [32, 19, 17, 21, 4344, 38, 4083, 4688, 4753, 4340, 4757, 10248, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 38, 4083, 4689, 4754, 4338, 4758, 10248, 2]
 
 // Module 10247 (AnimatedCount)
 import _slicedToArray from "_slicedToArray";
@@ -196,7 +196,7 @@ function BasicCounter(arg0) {
   ({ count, textStyle, textColor, textVariant, formatter } = arg0);
   const obj = { variant: textVariant, color: textColor, style: textStyle, children: null };
   obj[3] = formatter(count);
-  return callback(require(4340) /* Text */.Text, obj);
+  return callback(require(4338) /* Text */.Text, obj);
 }
 let c4 = importAllResult;
 ({ StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);

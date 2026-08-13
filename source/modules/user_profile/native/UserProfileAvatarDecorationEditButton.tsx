@@ -1,10 +1,10 @@
-// Module ID: 14000
-// Function ID: 14001
+// Module ID: 14009
+// Function ID: 14010
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [19, 17, 1990, 5815, 505, 21, 4344, 712, 589, 8345, 8311, 10160, 8302, 1236, 13993, 8336, 1297, 8332, 2]
+// Dependencies: [19, 17, 1990, 5816, 505, 21, 4342, 712, 589, 8349, 8315, 10160, 8306, 1236, 14001, 8340, 1297, 8336, 2]
 // Exports: default
 
-// Module 14000 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 14009 (COLLECTIBLES_PREVIEW_SIZE)
 import noop from "noop";
 import get_ActivityIndicator from "registerAsset";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

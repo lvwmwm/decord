@@ -1,10 +1,10 @@
-// Module ID: 16333
-// Function ID: 16334
+// Module ID: 16344
+// Function ID: 16345
 // Name: VoicePanelMaxCapacityAlert
-// Dependencies: [19, 1391, 21, 647, 4687, 4687, 16331, 1236, 2]
+// Dependencies: [19, 1391, 21, 647, 4688, 4688, 16342, 1236, 2]
 // Exports: default
 
-// Module 16333 (VoicePanelMaxCapacityAlert)
+// Module 16344 (VoicePanelMaxCapacityAlert)
 import "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { jsx } from "jsxProd";
@@ -28,9 +28,9 @@ export default function VoicePanelMaxCapacityAlert(channelId) {
     }
     return num;
   }, items1);
-  const obj2 = channelId(4687);
+  const obj2 = channelId(4688);
   obj = { header: null, title: null, content: null, actions: null };
-  obj[0] = jsx(importDefault(16331), {});
+  obj[0] = jsx(importDefault(16342), {});
   const intl = channelId(1236).intl;
   obj[1] = intl.string(channelId(1236).t.hHbsQj);
   const intl2 = channelId(1236).intl;
@@ -38,8 +38,8 @@ export default function VoicePanelMaxCapacityAlert(channelId) {
   obj = { variant: "secondary", text: null, onPress: null };
   const intl3 = channelId(1236).intl;
   obj[1] = intl3.string(channelId(1236).t["NX+WJN"]);
-  obj[2] = channelId(4687).useDismissModalCallback();
-  obj[3] = jsx(channelId(4687).AlertActionButton, { variant: "secondary", text: null, onPress: null });
-  return jsx(channelId(4687).AlertModal, { variant: "secondary", text: null, onPress: null });
+  obj[2] = channelId(4688).useDismissModalCallback();
+  obj[3] = jsx(channelId(4688).AlertActionButton, { variant: "secondary", text: null, onPress: null });
+  return jsx(channelId(4688).AlertModal, { variant: "secondary", text: null, onPress: null });
 };
 export const VOICE_PANEL_MAX_CAPACITY_KEY = "voice-panel-max-capacity";

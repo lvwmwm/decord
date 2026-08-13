@@ -1,17 +1,15 @@
 // Module ID: 7926
 // Function ID: 7927
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7927, 7914, 7915]
+// Dependencies: [41, 42, 93, 95, 98, 7896, 7919]
 
 // Module 7926 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
 
-const FeGaussianBlur = arg1;
+const FeDiffuseLighting = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeGaussianBlur {
+class FeDiffuseLighting {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeGaussianBlur);
+    tmp = _isNativeReflectConstruct(this, FeDiffuseLighting);
     tmp2 = __esModule;
-    obj = __esModule(FeGaussianBlur);
+    obj = __esModule(FeDiffuseLighting);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,34 +49,19 @@ class FeGaussianBlur {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeGaussianBlur, require("_isNativeReflectConstruct"));
+require("_inherits")(FeDiffuseLighting, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
-    const self = this;
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
-      }
-    };
-    const tmp = importDefault(7927);
-    const merged = Object.assign(self(7914).extractFilter(this.props));
-    const obj2 = self(7914);
-    const merged1 = Object.assign(self(7914).extractIn(this.props));
-    const obj3 = self(7914);
-    const merged2 = Object.assign(self(7914).extractFeGaussianBlur(this.props));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+    const result = FeDiffuseLighting(7896).warnUnimplementedFilter();
+    return null;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeGaussianBlur, items);
-importDefaultResultResult.displayName = "FeGaussianBlur";
+const importDefaultResultResult = importDefaultResult(FeDiffuseLighting, items);
+importDefaultResultResult.displayName = "FeDiffuseLighting";
 obj = {};
-let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.stdDeviation = 0;
-obj.edgeMode = "none";
+const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

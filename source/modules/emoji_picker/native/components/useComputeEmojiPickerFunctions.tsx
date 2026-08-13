@@ -1,10 +1,10 @@
-// Module ID: 8723
-// Function ID: 8724
+// Module ID: 8727
+// Function ID: 8728
 // Name: _computeCategories
-// Dependencies: [32, 19, 5219, 8685, 8724, 4002, 12, 8686, 1989, 2]
+// Dependencies: [32, 19, 5220, 8689, 8728, 4002, 12, 8690, 1989, 2]
 // Exports: default
 
-// Module 8723 (_computeCategories)
+// Module 8727 (_computeCategories)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import EmojiCategoryTypes from "EmojiCategoryTypes";
@@ -95,7 +95,7 @@ function _computeCategories(arg0) {
       } else {
         let tmp26 = require;
         let tmp27 = dependencyMap;
-        obj6 = require(8724) /* GuildNSFWContentLevel */;
+        obj6 = require(8728) /* GuildNSFWContentLevel */;
         let tmp28 = guild;
         if (obj6.shouldNSFWGateGuild(guild.id)) {
           let obj7 = { type: null, label: null, footer: null, emojis: null, isSectionNitroLocked: null };
@@ -241,7 +241,7 @@ function _computeSearchResults(emojis) {
   const obj1 = { type: constants3.EMOJI, emojis: substr1, emojisDisabled: set1, label: null, footer: null };
   const set = new Set();
   const tmp2 = pushCategory;
-  obj1[3] = require(8686) /* initializeSearch */.getStringForEmojiCategory(constants.PREMIUM_UPSELL);
+  obj1[3] = require(8690) /* initializeSearch */.getStringForEmojiCategory(constants.PREMIUM_UPSELL);
   obj1[4] = constants2.PREMIUM_UPSELL;
   obj[1] = obj1;
   obj[2] = rowSize;

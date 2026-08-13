@@ -1,10 +1,10 @@
-// Module ID: 11280
-// Function ID: 11281
+// Module ID: 11271
+// Function ID: 11272
 // Name: SelectionHeader
-// Dependencies: [19, 17, 1391, 1979, 5437, 21, 4344, 712, 5435, 1236, 4754, 9054, 4073, 5413, 8010, 9178, 5408, 1351, 1628, 1493, 5306, 589, 4312, 5436, 5438, 2]
+// Dependencies: [19, 17, 1391, 1979, 5438, 21, 4342, 712, 5436, 1236, 4755, 9058, 4073, 5414, 8014, 9182, 5409, 1351, 1628, 1493, 5307, 589, 4310, 5437, 5439, 2]
 // Exports: default
 
-// Module 11280 (SelectionHeader)
+// Module 11271 (SelectionHeader)
 import useWindowDimensions from "useWindowDimensions";
 import { View } from "AccessibilityAnnouncer";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -85,10 +85,10 @@ function SelectionHeader(renderIcon) {
     obj[3] = renderIcon.submitSelection;
     const intl3 = tmp6(1236).intl;
     obj[4] = intl3.string(tmp6(1236).t.XqMe3N);
-    tmp5Result = tmp5(tmp6(4754).Button, obj);
+    tmp5Result = tmp5(tmp6(4755).Button, obj);
   }
   obj[2] = tmp5Result;
-  const children = [closure_8(renderIcon(5435).BottomSheetTitleHeader, obj), ];
+  const children = [closure_8(renderIcon(5436).BottomSheetTitleHeader, obj), ];
   let tmp5Result1 = null;
   if (null != onQueryChange) {
     tmp5Result1 = null;
@@ -123,8 +123,8 @@ function SelectionHeader(renderIcon) {
         }
         onQueryChange(arg0);
       };
-      tmp5Result1 = tmp5(selectedOptions(9054), obj1);
-      const tmp13 = selectedOptions(9054);
+      tmp5Result1 = tmp5(selectedOptions(9058), obj1);
+      const tmp13 = selectedOptions(9058);
     }
   }
   children[1] = tmp5Result1;
@@ -203,17 +203,17 @@ function SelectionOptionItem(item) {
     }
     const obj2 = { checked: null };
     obj2[0] = selected;
-    tmp6Result = tmp6(tmp2(8010).FormCheckbox, obj2);
+    tmp6Result = tmp6(tmp2(8014).FormCheckbox, obj2);
   } else {
     tmp6Result = null;
     if (true === selected) {
-      tmp6Result = tmp6(tmp2(9178).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp6Result = tmp6(tmp2(9182).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp6Result;
   obj1[1] = items1;
   obj[12] = closure_10(View, obj1);
-  return closure_8(item(5413).TableRow, obj);
+  return closure_8(item(5414).TableRow, obj);
 }
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { selectionOptionItemIconWrapper: null, tagListIconWrapper: null, tagListIcon: null, textInputWrapper: null };

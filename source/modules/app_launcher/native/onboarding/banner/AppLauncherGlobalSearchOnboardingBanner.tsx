@@ -1,10 +1,10 @@
-// Module ID: 11563
-// Function ID: 11564
+// Module ID: 11559
+// Function ID: 11560
 // Name: GlobalSearchCoachmark
-// Dependencies: [19, 17, 1498, 1388, 21, 4344, 712, 7731, 8707, 1236, 2]
+// Dependencies: [19, 17, 1498, 1388, 21, 4342, 712, 7735, 8711, 1236, 2]
 // Exports: default
 
-// Module 11563 (GlobalSearchCoachmark)
+// Module 11559 (GlobalSearchCoachmark)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -60,7 +60,7 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
     obj[2] = diff;
     obj[3] = windowDimensions.height;
     obj[5] = obj;
-    tmp3 = jsx(markAsDismissed(8707).Coachmark, { x: -140, y: -40, width: null, height: null });
+    tmp3 = jsx(markAsDismissed(8711).Coachmark, { x: -140, y: -40, width: null, height: null });
   }
   return tmp3;
 };

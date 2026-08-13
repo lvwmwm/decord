@@ -1,10 +1,10 @@
-// Module ID: 5033
-// Function ID: 5034
+// Module ID: 5034
+// Function ID: 5035
 // Name: requireSortedDescending
 // Dependencies: [38, 11, 2]
 // Exports: requireSortedDescending
 
-// Module 5033 (requireSortedDescending)
+// Module 5034 (requireSortedDescending)
 const result = require("set").fileFinishedImporting("modules/app_database/modules/messages/requireSortedDescending.tsx");
 
 export const requireSortedDescending = function requireSortedDescending(messages) {

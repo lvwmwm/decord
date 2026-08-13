@@ -1,9 +1,9 @@
-// Module ID: 15944
-// Function ID: 15945
+// Module ID: 15954
+// Function ID: 15955
 // Name: items
-// Dependencies: [19, 17, 21, 15593, 712, 8337, 4344, 1236, 8708, 4340, 2]
+// Dependencies: [19, 17, 21, 15602, 712, 8341, 4342, 1236, 8712, 4338, 2]
 
-// Module 15944 (items)
+// Module 15954 (items)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -46,7 +46,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) =
     obj = { cutouts: null, children: null };
     obj[0] = items;
     obj[1] = tmp3;
-    items = [tmp2(importDefault(8337), obj), ];
+    items = [tmp2(importDefault(8341), obj), ];
     const obj1 = { style: null };
     obj1[0] = tmp.dot;
     items[1] = tmp2(View, obj1);
@@ -68,9 +68,9 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) =
     label = accessibilityLabel;
   }
   obj4[4] = label;
-  items1[1] = callback(require(4340) /* Text */.Text, obj4);
+  items1[1] = callback(require(4338) /* Text */.Text, obj4);
   obj3[7] = items1;
-  return callback2(require(8708) /* TwinButtons */.PressableScale, obj3);
+  return callback2(require(8712) /* TwinButtons */.PressableScale, obj3);
 }));
 const result1 = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIcon.tsx");
 

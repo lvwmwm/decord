@@ -1,10 +1,10 @@
-// Module ID: 9374
-// Function ID: 9375
+// Module ID: 9378
+// Function ID: 9379
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 1922, 21, 4344, 712, 5770, 589, 9329, 4340, 1236, 5307, 1297, 4754, 9375, 2]
+// Dependencies: [19, 17, 1922, 21, 4342, 712, 5771, 589, 9333, 4338, 1236, 5308, 1297, 4755, 9379, 2]
 // Exports: default
 
-// Module 9374 (GameProfileLinkAccount)
+// Module 9378 (GameProfileLinkAccount)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -88,7 +88,7 @@ export default function GameProfileLinkAccount(trackAction) {
               items4[2] = tmp13(tmp12, obj7);
               obj4[1] = items4;
               items3[1] = tmp11(tmp12, obj4);
-              const obj8 = { size: null, user: null, guildId: "Array" };
+              const obj8 = { size: null, user: null, guildId: "e" };
               obj8[0] = tmp5(tmp3[12]).AvatarSizes.LARGE_48;
               obj8[1] = stateFromStores;
               items3[2] = tmp13(tmp5(tmp3[12]).Avatar, obj8);

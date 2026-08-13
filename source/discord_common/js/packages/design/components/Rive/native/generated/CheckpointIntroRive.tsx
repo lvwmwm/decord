@@ -1,9 +1,9 @@
-// Module ID: 4145
-// Function ID: 4146
+// Module ID: 4143
+// Function ID: 4144
 // Name: CheckpointIntroRive
-// Dependencies: [109, 19, 21, 4077, 4146, 4134, 2]
+// Dependencies: [109, 19, 21, 4077, 4144, 4132, 2]
 
-// Module 4145 (CheckpointIntroRive)
+// Module 4143 (CheckpointIntroRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -136,7 +136,7 @@ const forwardRefResult = importAllResult.forwardRef(function CheckpointIntroRive
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4134) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4132) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CheckpointIntroRive.tsx");
 

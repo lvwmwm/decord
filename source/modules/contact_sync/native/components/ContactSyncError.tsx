@@ -1,10 +1,10 @@
-// Module ID: 12109
-// Function ID: 12110
+// Module ID: 12111
+// Function ID: 12112
 // Name: ContactSyncError
-// Dependencies: [19, 21, 4344, 4083, 4345, 4340, 2]
+// Dependencies: [19, 21, 4342, 4083, 4343, 4338, 2]
 // Exports: default
 
-// Module 12109 (ContactSyncError)
+// Module 12111 (ContactSyncError)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -33,13 +33,13 @@ export default function ContactSyncError(error) {
     obj = { height: obj.withTiming(num) };
     return obj;
   };
-  obj = { withTiming: _require(4345).withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
+  obj = { withTiming: _require(4343).withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
   fn.__closure = obj;
   fn.__workletHash = 14558247431913;
   fn.__initData = closure_5;
   const animatedStyle = obj.useAnimatedStyle(fn);
   obj = { style: items, children: null };
   items = [tmp.container, error.style, animatedStyle];
-  obj[1] = jsx(_require(4340).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error });
+  obj[1] = jsx(_require(4338).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: error });
   return jsx(importDefault(4083).View, { style: items, children: null });
 };

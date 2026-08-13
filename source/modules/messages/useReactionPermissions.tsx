@@ -1,7 +1,7 @@
 // Module ID: 10244
 // Function ID: 10245
 // Name: useReactionPermissions
-// Dependencies: [32, 3990, 1990, 5171, 3989, 676, 589, 3995, 8125, 5928, 10245, 2]
+// Dependencies: [32, 3990, 1990, 5172, 3989, 676, 589, 3995, 8129, 5930, 10245, 2]
 // Exports: default
 
 // Module 10244 (useReactionPermissions)

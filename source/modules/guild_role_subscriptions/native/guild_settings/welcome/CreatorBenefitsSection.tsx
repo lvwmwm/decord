@@ -1,10 +1,10 @@
-// Module ID: 16855
-// Function ID: 16856
+// Module ID: 16866
+// Function ID: 16867
 // Name: EarningPreview
-// Dependencies: [19, 17, 14506, 21, 4344, 712, 1363, 4280, 4340, 1236, 5307, 16856, 16857, 16858, 16859, 16860, 16861, 16862, 16863, 2]
+// Dependencies: [19, 17, 14515, 21, 4342, 712, 1363, 4278, 4338, 1236, 5308, 16867, 16868, 16869, 16870, 16871, 16872, 16873, 16874, 2]
 // Exports: default
 
-// Module 16855 (EarningPreview)
+// Module 16866 (EarningPreview)
 import "set";
 import { View } from "registerAsset";
 import { CREATOR_REVENUE_SHARE_PERCENTAGE as closure_4 } from "MAX_SUBSCRIPTION_TIERS";
@@ -15,7 +15,7 @@ let c5;
 let closure_6;
 const require = arg1;
 function EarningPreview() {
-  const tmp3 = importDefault(4280)();
+  const tmp3 = importDefault(4278)();
   const tmp4 = createCacheKey();
   const items = [tmp4.earningMetricsShadowContainer, ];
   let obj = require(1363) /* AccessibilityAnnouncer */;
@@ -30,19 +30,19 @@ function EarningPreview() {
   const obj1 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: null };
   const intl = tmp7(1236).intl;
   obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.TXPK7B);
-  const items2 = [closure_5(require(4340) /* Text */.Text, obj1), ];
+  const items2 = [closure_5(require(4338) /* Text */.Text, obj1), ];
   tmp7Result = tmp7(1363);
   const obj2 = { children: null };
   const obj3 = { style: tmp7Result.isThemeDark(tmp3) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode, variant: "heading-lg/extrabold", children: null };
   const intl2 = tmp7(1236).intl;
   obj3[2] = intl2.string(require(1236) /* getSystemLocale */.t.LdjJG5);
-  items2[1] = closure_5(require(4340) /* Text */.Text, obj3);
+  items2[1] = closure_5(require(4338) /* Text */.Text, obj3);
   obj2[0] = items2;
   const items3 = [closure_6(View, obj2), ];
   const obj4 = { style: tmp4.earningMetricsAvatar, source: null };
   const tmp8 = obj.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
-  obj4[1] = importDefault(16856);
-  items3[1] = closure_5(importDefault(5307), obj4);
+  obj4[1] = importDefault(16867);
+  items3[1] = closure_5(importDefault(5308), obj4);
   obj[1] = items3;
   obj[1] = closure_6(View, obj);
   return closure_5(View, obj);
@@ -53,21 +53,21 @@ function ConsistentEarningBenefit() {
   obj = { style: tmp4.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["9CdmS8"]);
-  const items = [callback(require(4340) /* Text */.Text, obj), callback(EarningPreview, {}), ];
+  const items = [callback(require(4338) /* Text */.Text, obj), callback(EarningPreview, {}), ];
   obj = { style: items1, children: null };
   items1 = [, ];
   ({ horizontalContainer: arr2[0], benefitAvatars: arr2[1] } = tmp4);
-  const tmp3 = importDefault(4280)();
+  const tmp3 = importDefault(4278)();
   if (obj4.isThemeDark(tmp3)) {
-    let tmpResult = tmp(16857);
+    let tmpResult = tmp(16868);
   } else {
-    tmpResult = tmp(16858);
+    tmpResult = tmp(16869);
   }
   const items2 = [callback(BenefitAvatar, { avatarSource: tmpResult }), , ];
   obj4 = require(1363) /* AccessibilityAnnouncer */;
-  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16859) });
-  const obj1 = { avatarSource: importDefault(16859) };
-  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16860) });
+  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16870) });
+  const obj1 = { avatarSource: importDefault(16870) };
+  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16871) });
   obj[1] = items2;
   items[2] = closure_6(View, obj);
   obj[1] = items;
@@ -79,14 +79,14 @@ function FollowerAwardBenefit() {
   obj = { style: tmp.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.qsKRUQ);
-  const items = [callback(require(4340) /* Text */.Text, obj), , ];
+  const items = [callback(require(4338) /* Text */.Text, obj), , ];
   obj = { style: tmp.socialIllo, source: null };
-  obj[1] = importDefault(16861);
-  items[1] = callback(importDefault(5307), obj);
+  obj[1] = importDefault(16872);
+  items[1] = callback(importDefault(5308), obj);
   const obj1 = { style: tmp.lanyardIllo, source: null };
-  const tmp2 = importDefault(5307);
-  obj1[1] = importDefault(16862);
-  items[2] = callback(importDefault(5307), obj1);
+  const tmp2 = importDefault(5308);
+  obj1[1] = importDefault(16873);
+  items[2] = callback(importDefault(5308), obj1);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -98,26 +98,26 @@ function RevenueShareBenefit() {
   const items1 = [tmp4.revenueShare, ];
   let obj1 = require(1363) /* AccessibilityAnnouncer */;
   obj = { style: null, variant: "heading-xxl/extrabold", color: "status-positive", children: null };
-  items1[1] = obj1.isThemeDark(importDefault(4280)()) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode;
+  items1[1] = obj1.isThemeDark(importDefault(4278)()) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode;
   obj[0] = items1;
   obj[3] = `${closure_4}%`;
-  const items2 = [closure_5(require(4340) /* Text */.Text, obj), , ];
+  const items2 = [closure_5(require(4338) /* Text */.Text, obj), , ];
   obj = { style: tmp4.revenueShareDescription, variant: "heading-md/medium", color: "text-default", children: null };
   const intl = tmp8(1236).intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.AewsXD);
-  items2[1] = closure_5(require(4340) /* Text */.Text, obj);
+  items2[1] = closure_5(require(4338) /* Text */.Text, obj);
   obj1 = { style: tmp4.revenueShareIllo, source: null };
-  const tmp3 = importDefault(4280)();
+  const tmp3 = importDefault(4278)();
   const tmp5 = closure_6;
   const tmp6 = View;
-  obj1[1] = importDefault(16863);
-  items2[2] = closure_5(importDefault(5307), obj1);
+  obj1[1] = importDefault(16874);
+  items2[2] = closure_5(importDefault(5308), obj1);
   obj[1] = items2;
   return tmp5(tmp6, obj);
 }
 function BenefitAvatar(avatarSource) {
   const tmp = createCacheKey();
-  obj = { style: tmp.benefitAvatarContainer, children: callback(importDefault(5307), obj) };
+  obj = { style: tmp.benefitAvatarContainer, children: callback(importDefault(5308), obj) };
   obj = { source: avatarSource.avatarSource, style: tmp.benefitAvatar };
   return callback(View, obj);
 }

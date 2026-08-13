@@ -1,10 +1,10 @@
-// Module ID: 11857
-// Function ID: 11858
+// Module ID: 11859
+// Function ID: 11860
 // Name: useRequiredLinkedLobbyApplicationAuthorization
-// Dependencies: [19, 4382, 5289, 589, 5775, 5768, 2]
+// Dependencies: [19, 4383, 5290, 589, 5776, 5769, 2]
 // Exports: default
 
-// Module 11857 (useRequiredLinkedLobbyApplicationAuthorization)
+// Module 11859 (useRequiredLinkedLobbyApplicationAuthorization)
 import { useEffect } from "noop";
 import addApplication from "addApplication";
 import recomputeFromAppTokens from "recomputeFromAppTokens";

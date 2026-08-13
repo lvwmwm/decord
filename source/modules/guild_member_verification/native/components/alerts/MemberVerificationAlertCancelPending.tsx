@@ -1,10 +1,10 @@
-// Module ID: 8471
-// Function ID: 8472
+// Module ID: 8475
+// Function ID: 8476
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: [19, 21, 8472, 8468, 1236, 4754, 2]
+// Dependencies: [19, 21, 8476, 8472, 1236, 4755, 2]
 // Exports: default
 
-// Module 8471 (MemberVerificationAlertCancelPending)
+// Module 8475 (MemberVerificationAlertCancelPending)
 import noop from "noop";
 import jsxProd from "jsxProd";
 
@@ -43,13 +43,13 @@ export default function MemberVerificationAlertCancelPending(guildId) {
     confirmText = intl3.string(tmp7(1236).t.OzHPde);
   }
   obj = { children: null };
-  const items1 = [closure_4(guildId(4754).Button, { variant: "destructive", text: confirmText, onPress: callback }), ];
+  const items1 = [closure_4(guildId(4755).Button, { variant: "destructive", text: confirmText, onPress: callback }), ];
   obj = { text: null, variant: "secondary", onPress: null };
   const intl4 = tmp7(1236).intl;
   obj[0] = intl4.string(guildId(1236).t.bANR0R);
   obj[2] = onClose;
-  items1[1] = closure_4(guildId(4754).Button, obj);
+  items1[1] = closure_4(guildId(4755).Button, obj);
   obj[0] = items1;
   obj.buttons = closure_6(closure_5, obj);
-  return closure_4(onClose(8468), obj);
+  return closure_4(onClose(8472), obj);
 };

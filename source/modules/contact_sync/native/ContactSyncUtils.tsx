@@ -1,12 +1,12 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 12097
+// Function ID: 12098
 // Name: _uploadContacts
-// Dependencies: [5, 17, 5038, 12094, 12093, 676, 501, 5167, 503, 709, 12096, 4034, 1208, 589, 1403, 1993, 4058, 4549, 2]
+// Dependencies: [5, 17, 5039, 12096, 12095, 676, 501, 5168, 503, 709, 12098, 4034, 1208, 589, 1403, 1993, 4058, 4550, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 12095 (_uploadContacts)
+// Module 12097 (_uploadContacts)
 import closure_3 from "ME";
-import { NativeModules } from "module_4549";
+import { NativeModules } from "module_4550";
 import set from "set";
 import setStoredContacts from "setStoredContacts";
 import ContactSyncLandingPage from "ContactSyncLandingPage";
@@ -81,7 +81,7 @@ function _uploadContacts() {
             } else {
               const _JSON = JSON;
               dependencyMap = JSON.parse(callback);
-              let obj7 = flag(5167);
+              let obj7 = flag(5168);
               const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
               obj2[0] = constants2.CONNECTION_SYNC_CONTACTS;
               const obj3 = { friend_list_entries: null, background: null, allowed_in_suggestions: null, include_mutual_friends_count: false };
@@ -195,7 +195,7 @@ export const uploadContacts = function uploadContacts(c3, arg1) {
   return applyArgumentsResult;
 };
 export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
-  let obj = importDefault(5167);
+  let obj = importDefault(5168);
   obj = { url: closure_12.USER_BULK_RELATIONSHIPS, body: obj, trackedActionData: null, rejectWithError: false };
   obj = { user_ids, token: bulkAddToken };
   obj[2] = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE };
@@ -205,14 +205,14 @@ export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
 export const adminDeleteContactSync = function adminDeleteContactSync() {
   callback2();
   callback3();
-  let obj = require(12096) /* _requestAndSyncContacts */;
+  let obj = require(12098) /* _requestAndSyncContacts */;
   const result = obj.removeLastUserContactsUpload();
   const ContactSyncEnabled = require(4034) /* explicitContentFromProto */.ContactSyncEnabled;
   ContactSyncEnabled.updateSetting(false);
   obj = { url: closure_12.CONNECTION(constants2.CONTACTS, "@me"), oldFormErrors: true, trackedActionData: null, rejectWithError: false };
   obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_CONNECTIONS_UPDATE };
   obj[2] = obj;
-  return importDefault(5167).delete(obj);
+  return importDefault(5168).delete(obj);
 };
 export const getImageForContactId = function getImageForContactId(closure_0, arg1) {
   let DCDContactSyncManager = NativeModules.DCDContactSyncManager;
@@ -314,5 +314,5 @@ export const handleOpenLearnMoreLink = function handleOpenLearnMoreLink() {
   obj.openURL(importDefault(1993).getArticleURL(constants4.CONTACT_SYNC));
 };
 export const transitionToAddFriendsLandingPage = function transitionToAddFriendsLandingPage() {
-  importDefault(4549).popWithKey(closure_9);
+  importDefault(4550).popWithKey(closure_9);
 };

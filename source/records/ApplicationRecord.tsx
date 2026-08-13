@@ -1,9 +1,9 @@
-// Module ID: 4367
-// Function ID: 4368
+// Module ID: 4368
+// Function ID: 4369
 // Name: createExecutable
-// Dependencies: [1931, 4368, 1930, 4369, 4370, 4371, 1435, 4374, 506, 11, 2]
+// Dependencies: [1931, 4369, 1930, 4370, 4371, 4372, 1435, 4375, 506, 11, 2]
 
-// Module 4367 (createExecutable)
+// Module 4368 (createExecutable)
 import "toJS";
 import createFromServer from "createFromServer";
 import createdAt from "createdAt";
@@ -83,7 +83,7 @@ BasicApplicationRecord["createFromServer"] = function createFromServer(bot) {
 };
 Object.defineProperty(prototype, "connectionEntrypointUrl", {
   get: function connectionEntrypointUrl(arg0) {
-    const obj = require(4371) /* items */.APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
+    const obj = require(4372) /* items */.APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
     let prop;
     if (obj != null) {
       prop = obj.connectionEntrypointUrlOverride;
@@ -289,7 +289,7 @@ ApplicationRecord["createFromServer"] = function createFromServer(bot) {
   obj.bot = tmp3;
   ({ third_party_skus: obj.thirdPartySkus, role_connections_verification_url: obj.roleConnectionsVerificationUrl, overlay_warn: obj.overlayWarn, overlay_compatibility_hook: obj.overlayCompatibilityHook, overlay_methods } = bot);
   if (overlay_methods == null) {
-    overlay_methods = require(4374) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.DEFAULT;
+    overlay_methods = require(4375) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.DEFAULT;
   }
   obj.overlayMethods = overlay_methods;
   ({ hook: obj.hook, store_listing_sku_id: obj.storeListingSkuId, guild_id: obj.guildId, guild: obj.guild } = bot);
@@ -685,7 +685,7 @@ Object.defineProperty(prototype2, "supportsOutOfProcessOverlay", {
   set: undefined
 });
 ApplicationRecord["supportsOutOfProcessOverlay"] = function supportsOutOfProcessOverlay(arg0) {
-  const OUT_OF_PROCESS = require(4374) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.OUT_OF_PROCESS;
+  const OUT_OF_PROCESS = require(4375) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.OUT_OF_PROCESS;
   return null != arg0 && (arg0 & OUT_OF_PROCESS) === OUT_OF_PROCESS;
 };
 const result = require("createdAt").fileFinishedImporting("records/ApplicationRecord.tsx");

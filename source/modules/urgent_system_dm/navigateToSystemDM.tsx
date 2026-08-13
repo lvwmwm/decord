@@ -1,19 +1,19 @@
-// Module ID: 16655
-// Function ID: 16656
+// Module ID: 16666
+// Function ID: 16667
 // Name: navigateToSystemDM
-// Dependencies: [1391, 16654, 5169, 2]
+// Dependencies: [1391, 16665, 5170, 2]
 // Exports: default
 
-// Module 16655 (navigateToSystemDM)
+// Module 16666 (navigateToSystemDM)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { SYSTEM_USER } from "SYSTEM_USER";
 
-const result = require("module_5169").fileFinishedImporting("modules/urgent_system_dm/navigateToSystemDM.tsx");
+const result = require("module_5170").fileFinishedImporting("modules/urgent_system_dm/navigateToSystemDM.tsx");
 
 export default function navigateToSystemDM() {
   dMFromUserId = dMFromUserId.getDMFromUserId(SYSTEM_USER);
   if (null != dMFromUserId) {
-    const privateChannel = importDefault(5169).selectPrivateChannel(dMFromUserId);
-    const obj = importDefault(5169);
+    const privateChannel = importDefault(5170).selectPrivateChannel(dMFromUserId);
+    const obj = importDefault(5170);
   }
 };

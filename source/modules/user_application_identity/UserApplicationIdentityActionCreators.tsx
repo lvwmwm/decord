@@ -1,10 +1,10 @@
 // Module ID: 12516
 // Function ID: 12517
 // Name: fetchStore
-// Dependencies: [5, 12515, 676, 709, 530, 1208, 589, 2]
+// Dependencies: [5, 12515, 676, 709, 530, 589, 2]
 
 // Module 12516 (fetchStore)
-import module_1208 from "module_1208";
+import closure_3 from "initialize";
 import importDefaultResult from "map";
 import ME from "ME";
 import initialize from "initialize";
@@ -68,8 +68,6 @@ let obj = {
             const obj4 = { type: "USER_APPLICATION_IDENTITY_FETCH_USER_FAILURE", userId: null };
             obj4[1] = body;
             obj3.dispatch(obj4);
-            let obj5 = outer1_1(outer1_2[5]);
-            obj5.captureException(outer1_1);
             throw outer1_1;
           } else if (arg0 === 1) {
             c5 = 3;
@@ -77,7 +75,7 @@ let obj = {
           } else if (arg0 === 2) {
             c3 = 0;
             c5 = 3;
-            obj5 = { value: null, done: true };
+            const obj5 = { value: null, done: true };
             obj5[0] = arg1;
             return obj5;
           } else {
@@ -91,11 +89,11 @@ let obj = {
             c5 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp28) {
-          closure_2 = tmp28;
+        } catch (tmp24) {
+          closure_2 = tmp24;
           if (tmp4 === c3) {
             c5 = tmp2;
-            throw tmp28;
+            throw tmp24;
           } else {
             c4 = tmp;
           }

@@ -1,9 +1,9 @@
-// Module ID: 14553
-// Function ID: 14554
+// Module ID: 14562
+// Function ID: 14563
 // Name: volumeSlider
-// Dependencies: [4363, 1218, 4392, 8123, 589, 4440, 38, 9201, 10907, 10493, 1236, 2]
+// Dependencies: [4364, 1218, 4393, 8127, 589, 4441, 38, 9205, 10821, 10407, 1236, 2]
 
-// Module 14553 (volumeSlider)
+// Module 14562 (volumeSlider)
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -53,10 +53,10 @@ createToggle = {
       }
     }
     importDefault(38)(null != tmp2, "Can not set stream volume without active stream");
-    importDefault(9201).setLocalVolume(tmp2.ownerId, arg0, require(4440) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM);
+    importDefault(9205).setLocalVolume(tmp2.ownerId, arg0, require(4441) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM);
   },
   usePredicate: function useHasStreamVolumeSetting() {
-    const obj = importDefault(10907);
+    const obj = importDefault(10821);
     let items = [reset, fetchFingerprint];
     const obj2 = require(589) /* initialize */;
     return require(589) /* initialize */.useStateFromStores(items, () => {

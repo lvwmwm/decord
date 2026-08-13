@@ -1,10 +1,10 @@
-// Module ID: 11517
-// Function ID: 11518
+// Module ID: 11513
+// Function ID: 11514
 // Name: sortGroup
 // Dependencies: [2]
 // Exports: queryData
 
-// Module 11517 (sortGroup)
+// Module 11513 (sortGroup)
 function sortGroup(arr) {
   let closure_0 = arg1;
   return arr.sort((arg0, arg1) => {

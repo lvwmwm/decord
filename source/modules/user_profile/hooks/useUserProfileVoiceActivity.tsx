@@ -1,7 +1,7 @@
 // Module ID: 12385
 // Function ID: 12386
 // Name: useUserProfileVoiceActivity
-// Dependencies: [4430, 4360, 7239, 9686, 589, 2]
+// Dependencies: [4431, 4361, 7244, 9690, 589, 2]
 // Exports: default, isUserProfileVoiceActivityForChannel
 
 // Module 12385 (useUserProfileVoiceActivity)
@@ -14,7 +14,7 @@ const result = require("isEmbeddedActivity").fileFinishedImporting("modules/user
 export default function useUserProfileVoiceActivity(guildId) {
   const userId = guildId.userId;
   let id;
-  const tmp2 = id(9686)({ userId, guildId: guildId.guildId });
+  const tmp2 = id(9690)({ userId, guildId: guildId.guildId });
   const voiceChannel = tmp2.voiceChannel;
   id = undefined;
   if (voiceChannel != null) {
@@ -48,7 +48,7 @@ export const isUserProfileVoiceActivityForChannel = function isUserProfileVoiceA
   let voiceChannelId;
   voiceStateForSession = voiceStateForSession.voiceStateForSession;
   ({ activity, voiceChannelId } = voiceStateForSession);
-  let tmp = importDefault(7239)(activity);
+  let tmp = importDefault(7244)(activity);
   if (tmp) {
     let channelId;
     if (voiceStateForSession != null) {

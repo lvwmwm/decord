@@ -1,10 +1,10 @@
-// Module ID: 4785
-// Function ID: 4786
+// Module ID: 4786
+// Function ID: 4787
 // Name: getChannelRoleSubscriptionStatus
 // Dependencies: [1981, 1391, 3989, 676, 589, 2]
 // Exports: default
 
-// Module 4785 (getChannelRoleSubscriptionStatus)
+// Module 4786 (getChannelRoleSubscriptionStatus)
 import isSubscriptionGated from "isSubscriptionGated";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

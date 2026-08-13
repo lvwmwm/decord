@@ -1,7 +1,7 @@
 // Module ID: 4081
 // Function ID: 4082
 // Name: installWorkletsSupport
-// Dependencies: [4082, 4088]
+// Dependencies: [4082, 4086]
 
 // Module 4081 (installWorkletsSupport)
 let require = arg1;
@@ -11,8 +11,8 @@ let closure_3 = { code: "function pack_Pnpm_installWorkletsSupportTs2(value){con
 let closure_4 = { code: "function unpack_Pnpm_installWorkletsSupportTs3(value){return value.unbox();}" };
 arg5.installWorkletsSupport = function installWorkletsSupport() {
   try {
-    const NitroModules = require(4088) /* getInstalledNitro */.NitroModules;
-    const boxResult = NitroModules.box(require(4088) /* getInstalledNitro */.NitroModules);
+    const NitroModules = require(4086) /* getInstalledNitro */.NitroModules;
+    const boxResult = NitroModules.box(require(4086) /* getInstalledNitro */.NitroModules);
     require = boxResult;
     let obj = { name: "nitro.HybridObject", determine: null, pack: null, unpack: null };
     const fn = function _(arg0) {

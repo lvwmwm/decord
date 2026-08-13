@@ -1,10 +1,10 @@
-// Module ID: 7374
-// Function ID: 7375
+// Module ID: 7378
+// Function ID: 7379
 // Name: setGPlayAnalytics
 // Dependencies: [644, 705, 2]
 // Exports: deleteGPlayAnalytics, setGPlayAnalytics
 
-// Module 7374 (setGPlayAnalytics)
+// Module 7378 (setGPlayAnalytics)
 import keys from "keys";
 
 let closure_2 = Object.freeze({ analyticsByProductId: {} });

@@ -1,9 +1,9 @@
-// Module ID: 16967
-// Function ID: 16968
+// Module ID: 16978
+// Function ID: 16979
 // Name: getBackoffJitter
-// Dependencies: [5, 5034, 5038, 5168, 13250, 11403, 8944, 8965, 676, 687, 12, 16968, 709, 13020, 16969, 5300, 2]
+// Dependencies: [5, 5035, 5039, 5169, 13251, 11394, 8948, 8969, 676, 687, 12, 16979, 709, 13020, 16980, 5301, 2]
 
-// Module 16967 (getBackoffJitter)
+// Module 16978 (getBackoffJitter)
 import updateImpressionCaches from "updateImpressionCaches";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import closure_5 from "set";
@@ -394,7 +394,7 @@ function handleSpotifyNewTrack(connectionId) {
   }
 }
 function handleFetchGameProfileFeed() {
-  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(16969) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
+  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(16980) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
 }
 let closure_11 = 2 * require("set").Millis.MINUTE;
 const GLOBAL_FEED = ContentInventoryFeedKey.GLOBAL_FEED;

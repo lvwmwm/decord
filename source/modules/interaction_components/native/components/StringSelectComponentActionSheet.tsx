@@ -1,10 +1,10 @@
-// Module ID: 11279
-// Function ID: 11280
+// Module ID: 11270
+// Function ID: 11271
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4344, 712, 8266, 1954, 4312, 11280, 5399, 4340, 1236, 2]
+// Dependencies: [32, 19, 21, 4342, 712, 8270, 1954, 4310, 11271, 5400, 4338, 1236, 2]
 // Exports: default
 
-// Module 11279 (StringSelectComponentActionSheet)
+// Module 11270 (StringSelectComponentActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -34,7 +34,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(8266);
+  let obj = selectionActionComponent(8270);
   let tmp3 = first(React.useState(new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId))), 2);
   first = tmp3[0];
   React = tmp3[1];
@@ -151,5 +151,5 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   };
   obj[12] = channelId;
   obj[13] = allowEmpty;
-  return tmp9(onSubmit(11280), obj);
+  return tmp9(onSubmit(11271), obj);
 };

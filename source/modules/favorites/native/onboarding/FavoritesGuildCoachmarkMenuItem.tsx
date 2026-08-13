@@ -1,10 +1,10 @@
-// Module ID: 15428
-// Function ID: 15429
+// Module ID: 15437
+// Function ID: 15438
 // Name: FavoritesGuildCoachmarkMenuItemContent
-// Dependencies: [19, 1394, 676, 1388, 21, 9765, 589, 1236, 3047, 15429, 8698, 2]
+// Dependencies: [19, 1394, 676, 1388, 21, 9769, 589, 1236, 3047, 15438, 8702, 2]
 // Exports: default
 
-// Module 15428 (FavoritesGuildCoachmarkMenuItemContent)
+// Module 15437 (FavoritesGuildCoachmarkMenuItemContent)
 import noop from "noop";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -67,7 +67,7 @@ let set = new Set(items);
 const result = set.fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkMenuItem.tsx");
 
 export default function FavoritesGuildCoachmarkMenuItem(arg0) {
-  let obj = require(9765) /* items1 */;
+  let obj = require(9769) /* items1 */;
   let tmp = null;
   if (obj.useShouldRenderFavoritesMenuItemPopover()) {
     obj = {};

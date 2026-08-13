@@ -1,9 +1,9 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 11769
+// Function ID: 11770
 // Name: prototype
-// Dependencies: [1391, 3998, 1922, 8442, 8441, 676, 4534, 1236, 11772, 11784, 1989, 589, 709, 2]
+// Dependencies: [1391, 3998, 1922, 8446, 8445, 676, 4535, 1236, 11770, 11782, 1989, 589, 709, 2]
 
-// Module 11771 (prototype)
+// Module 11769 (prototype)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -162,7 +162,7 @@ const prototype = function SearchQueryStateManager(type) {
       let items = [];
     }
     obj.initialTagsSnapshot = items;
-    const tmp12 = new importDefault(11784)();
+    const tmp12 = new importDefault(11782)();
     obj.tagsManager = tmp12;
     let tagsManager = obj.tagsManager;
     let result = tagsManager.set(obj.initialTagsSnapshot);
@@ -179,8 +179,8 @@ const prototype = function SearchQueryStateManager(type) {
   } else {
     let channelName;
     if (null != channel) {
-      channelName = obj(4534).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
-      const obj2 = obj(4534);
+      channelName = obj(4535).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+      const obj2 = obj(4535);
     }
     if (null == channelName) {
       let items1 = [];
@@ -191,11 +191,11 @@ const prototype = function SearchQueryStateManager(type) {
       const intl = obj(1236).intl;
       const stringResult = intl.string(obj(1236).t.WNpFHa);
       let _HermesInternal = HermesInternal;
-      obj[2] = "" + stringResult + ": " + obj(11772).quoteChannelName(channelName);
+      obj[2] = "" + stringResult + ": " + obj(11770).quoteChannelName(channelName);
       obj[3] = type.channelId;
       obj[4] = SearchFilterAddLocations.CLIENT_AUTO_ADD;
       items1 = [obj];
-      const obj4 = obj(11772);
+      const obj4 = obj(11770);
     }
     items = items1;
   }
@@ -209,7 +209,7 @@ prototype2["initialize"] = function initialize() {
   this.waitFor(ensureGuildLoaded, mergeGuildAvatar, markAllUserIdListsStale);
 };
 prototype2["getManager"] = function getManager(closure_0) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(closure_0));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(closure_0));
   if (value == null) {
     value = callback(closure_0);
   }
@@ -220,98 +220,98 @@ prototype2["getQueryString"] = function getQueryString(searchContext) {
   if (arg1 === undefined) {
     flag = false;
   }
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getQueryString(flag);
 };
 prototype2["isQueryStringEmpty"] = function isQueryStringEmpty(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.isQueryStringEmpty();
 };
 prototype2["getTextInputValue"] = function getTextInputValue(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getTextInputValue();
 };
 prototype2["isInitialSearchQuery"] = function isInitialSearchQuery(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.isInitialSearchQuery();
 };
 prototype2["getSearchResultsQuery"] = function getSearchResultsQuery(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getSearchResultsQuery();
 };
 prototype2["isTextInputValueEmpty"] = function isTextInputValueEmpty(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.isTextInputValueEmpty();
 };
 prototype2["getTextValueChangedFromInput"] = function getTextValueChangedFromInput(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getTextValueChangedFromInput();
 };
 prototype2["hasUserAddedTags"] = function hasUserAddedTags(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.hasUserAddedTags();
 };
 prototype2["getTags"] = function getTags(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getTags();
 };
 prototype2["getPrefixTag"] = function getPrefixTag(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getPrefixTag();
 };
 prototype2["isAutocompleteVisible"] = function isAutocompleteVisible(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.isAutocompleteVisible();
 };
 prototype2["getChannelIds"] = function getChannelIds(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getChannelIds();
 };
 prototype2["getUserIds"] = function getUserIds(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
   return value.getUserIds(arg1);
 };
 prototype2["isTagsEmpty"] = function isTagsEmpty(searchContext) {
-  let value = map.get(require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = map.get(require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = callback(searchContext);
   }
@@ -321,7 +321,7 @@ NativeSearchQueryStore.displayName = "NativeSearchQueryStore";
 areArraysShallowlyEqual = {
   SEARCH_QUERY_NATIVE_UPDATE: function handleSearchQueryNativeUpdate(searchContext) {
     searchContext = searchContext.searchContext;
-    const searchContextId = require(11772) /* SearchTokenTypes */.getSearchContextId(searchContext);
+    const searchContextId = require(11770) /* SearchTokenTypes */.getSearchContextId(searchContext);
     let value = map.get(searchContextId);
     if (null == value) {
       const tmp6 = new prototype(searchContext);

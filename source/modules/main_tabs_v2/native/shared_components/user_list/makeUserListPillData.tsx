@@ -1,10 +1,10 @@
-// Module ID: 9668
-// Function ID: 9669
+// Module ID: 9672
+// Function ID: 9673
 // Name: makeUserListPillData
-// Dependencies: [19, 21, 4189, 1297, 2]
+// Dependencies: [19, 21, 4187, 1297, 2]
 // Exports: default
 
-// Module 9668 (makeUserListPillData)
+// Module 9672 (makeUserListPillData)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -13,9 +13,9 @@ const result = require("nameFromUser").fileFinishedImporting("modules/main_tabs_
 
 export default function makeUserListPillData(id) {
   let obj = { id: id.id, text: null, icon: null };
-  obj[1] = importDefault(4189).getName(id);
-  obj = { user: id, guildId: "Array", size: -1 };
+  obj[1] = importDefault(4187).getName(id);
+  obj = { user: id, guildId: "Array", size: "Array" };
   obj[2] = require(1297) /* Button */.AvatarSizes.XXSMALL;
-  obj[2] = jsx(require(1297) /* Button */.Avatar, { user: id, guildId: "Array", size: -1 });
+  obj[2] = jsx(require(1297) /* Button */.Avatar, { user: id, guildId: "Array", size: "Array" });
   return obj;
 };

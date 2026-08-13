@@ -1,10 +1,10 @@
-// Module ID: 12033
-// Function ID: 12034
+// Module ID: 12035
+// Function ID: 12036
 // Name: defaultCountFormatter
-// Dependencies: [19, 17, 1994, 21, 4083, 4344, 712, 4753, 8821, 12034, 5466, 500, 2]
+// Dependencies: [19, 17, 1994, 21, 4083, 4342, 712, 4754, 8825, 12036, 5467, 500, 2]
 // Exports: Tabs
 
-// Module 12033 (defaultCountFormatter)
+// Module 12035 (defaultCountFormatter)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";

@@ -1,9 +1,9 @@
-// Module ID: 15563
-// Function ID: 15564
+// Module ID: 15572
+// Function ID: 15573
 // Name: YouStatusRadioGroup
-// Dependencies: [19, 17, 11842, 1302, 1930, 7219, 4190, 1922, 676, 11843, 21, 4344, 712, 5419, 13430, 13427, 13428, 13429, 4034, 9810, 4312, 8026, 1236, 8025, 9078, 1367, 589, 14484, 11414, 8743, 14568, 1347, 15564, 10251, 14570, 4189, 1297, 15154, 15566, 698, 5787, 11846, 4886, 4340, 9809, 5806, 5807, 9777, 15571, 2007, 15561, 9494, 4065, 9497, 5415, 9500, 9569, 7696, 9507, 8101, 5311, 5803, 5435, 4752, 13908, 2]
+// Dependencies: [19, 17, 11840, 1302, 1930, 7224, 4188, 1922, 676, 11841, 21, 4342, 712, 5420, 13431, 13428, 13429, 13430, 4034, 9814, 4310, 8030, 1236, 8029, 9082, 1367, 589, 14493, 11405, 8747, 14577, 1347, 15573, 10251, 14579, 4187, 1297, 15163, 15575, 698, 5788, 11844, 4887, 4338, 9813, 5807, 5808, 9781, 15580, 2007, 15570, 9498, 4065, 9501, 5416, 9504, 9573, 7700, 9511, 8105, 5312, 5804, 5436, 4753, 13912, 2]
 
-// Module 15563 (YouStatusRadioGroup)
+// Module 15572 (YouStatusRadioGroup)
 import importAllResult from "_setUserStatus";
 import get_ActivityIndicator from "registerAsset";
 import initialize from "initialize";
@@ -31,26 +31,26 @@ function YouStatusRadioGroup() {
   const memo = importAllResult.useMemo(() => {
     let obj = { icon: null, value: null };
     obj = { source: null, variant: "text-status-online" };
-    obj[0] = callback(13430);
-    obj[0] = callback2(setting(5419).TableRowIcon, obj);
+    obj[0] = callback(13431);
+    obj[0] = callback2(setting(5420).TableRowIcon, obj);
     obj[1] = constants.ONLINE;
     const items = [obj, , , ];
     obj = { icon: null, value: null };
     const obj1 = { source: null, variant: "text-status-idle" };
-    obj1[0] = callback(13427);
-    obj[0] = callback2(setting(5419).TableRowIcon, obj1);
+    obj1[0] = callback(13428);
+    obj[0] = callback2(setting(5420).TableRowIcon, obj1);
     obj[1] = constants.IDLE;
     items[1] = obj;
     const obj2 = { icon: null, value: null };
     const obj3 = { source: null, variant: "text-status-dnd" };
-    obj3[0] = callback(13428);
-    obj2[0] = callback2(setting(5419).TableRowIcon, obj3);
+    obj3[0] = callback(13429);
+    obj2[0] = callback2(setting(5420).TableRowIcon, obj3);
     obj2[1] = constants.DND;
     items[2] = obj2;
     const obj4 = { icon: null, value: null };
     const obj5 = { source: null, variant: "text-status-offline" };
-    obj5[0] = callback(13429);
-    obj4[0] = callback2(setting(5419).TableRowIcon, obj5);
+    obj5[0] = callback(13430);
+    obj4[0] = callback2(setting(5420).TableRowIcon, obj5);
     obj4[1] = constants.INVISIBLE;
     items[3] = obj4;
     return items;
@@ -90,7 +90,7 @@ function YouStatusRadioGroup() {
     obj.subLabel = formatToPlainStringResult;
     return outer1_19(setting(outer1_3[23]).TableRadioRow, obj, value.value);
   });
-  return callback(setting(8026).TableRadioGroup, obj);
+  return callback(setting(8030).TableRadioGroup, obj);
 }
 function ThemeRadioGroup() {
   const tmp2 = importDefault(1367)("ThemeRadioGroup");
@@ -98,11 +98,11 @@ function ThemeRadioGroup() {
   const items = [handleThemeChange];
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const callback = importAllResult.useCallback((arg0) => {
-    const result = callback(14484).resetBackgroundGradientPreset();
-    const obj = callback(14484);
-    callback(11414).resetCustomTheme();
-    const obj2 = callback(11414);
-    callback2(8743).updateTheme(arg0);
+    const result = callback(14493).resetBackgroundGradientPreset();
+    const obj = callback(14493);
+    callback(11405).resetCustomTheme();
+    const obj2 = callback(11405);
+    callback2(8747).updateTheme(arg0);
   }, []);
   obj = { title: null, onChange: null, defaultValue: null, hasIcons: true, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -110,19 +110,19 @@ function ThemeRadioGroup() {
   obj[1] = callback;
   obj[2] = stateFromStores;
   obj = { icon: null, label: null, value: null };
-  obj[0] = callback(require(14568) /* ThemeLightIcon */.ThemeLightIcon, {});
+  obj[0] = callback(require(14577) /* ThemeLightIcon */.ThemeLightIcon, {});
   let obj3 = require(1347) /* getThemeForColor */;
   obj[1] = obj3.getThemeName(constants.LIGHT, tmp2);
   obj[2] = constants.LIGHT;
-  const items1 = [callback(require(8025) /* TableRadioRow */.TableRadioRow, obj), , , ];
+  const items1 = [callback(require(8029) /* TableRadioRow */.TableRadioRow, obj), , , ];
   let tmp6Result = tmp2;
   if (tmp2) {
     const obj1 = { icon: null, label: null, value: null };
-    obj1[0] = tmp6(tmp3(15564).ThemeGrayIcon, {});
+    obj1[0] = tmp6(tmp3(15573).ThemeGrayIcon, {});
     let tmp3Result = tmp3(1347);
     obj1[1] = tmp3Result.getThemeName(tmp9.DARK, true);
     obj1[2] = tmp9.DARK;
-    tmp6Result = tmp6(tmp3(8025).TableRadioRow, obj1);
+    tmp6Result = tmp6(tmp3(8029).TableRadioRow, obj1);
   }
   let obj2 = { children: null };
   items1[1] = tmp6Result;
@@ -131,14 +131,14 @@ function ThemeRadioGroup() {
   tmp3Result = tmp3(1347);
   obj3[1] = tmp3Result.getThemeName(constants.DARKER, tmp2);
   obj3[2] = constants.DARKER;
-  items1[2] = callback(require(8025) /* TableRadioRow */.TableRadioRow, obj3);
+  items1[2] = callback(require(8029) /* TableRadioRow */.TableRadioRow, obj3);
   const obj4 = { icon: null, label: null, value: null };
-  obj4[0] = callback(require(14570) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
+  obj4[0] = callback(require(14579) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
   obj4[1] = require(1347) /* getThemeForColor */.getThemeName(constants.MIDNIGHT, tmp2);
   obj4[2] = constants.MIDNIGHT;
-  items1[3] = callback(require(8025) /* TableRadioRow */.TableRadioRow, obj4);
+  items1[3] = callback(require(8029) /* TableRadioRow */.TableRadioRow, obj4);
   obj[4] = items1;
-  obj2[0] = closure_20(require(8026) /* context */.TableRadioGroup, obj);
+  obj2[0] = closure_20(require(8030) /* context */.TableRadioGroup, obj);
   return callback(closure_5, obj2);
 }
 function YouAccountRadioGroup() {
@@ -147,7 +147,7 @@ function YouAccountRadioGroup() {
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   multiAccountUsers = stateFromStores;
-  let obj1 = multiAccountUsers(15154);
+  let obj1 = multiAccountUsers(15163);
   multiAccountUsers = obj1.useMultiAccountUsers().multiAccountUsers;
   let stateFromStores1 = multiAccountUsers;
   stateFromStores1 = undefined;
@@ -170,7 +170,7 @@ function YouAccountRadioGroup() {
       str2 = "never";
     }
     obj = { label: outer1_1(outer1_3[35]).getUserTag(obj, { mode: "username", identifiable: str2 }), value: id.id, subLabel: combined, icon: null };
-    obj = { user: obj, guildId: "Array", size: -1 };
+    obj = { user: obj, guildId: "Array", size: "Array" };
     obj[2] = outer1_0(outer1_3[36]).AvatarSizes.REFRESH_MEDIUM_32;
     obj[3] = outer1_19(outer1_0(outer1_3[36]).Avatar, obj);
     return obj;
@@ -189,7 +189,7 @@ function YouAccountRadioGroup() {
     obj[0] = tmp3.manage;
     obj1 = { onPress: null, children: null };
     obj1[0] = function onPress() {
-      return stateFromStores1(15566)();
+      return stateFromStores1(15575)();
     };
     let str = "text-link";
     if (tmp2) {
@@ -199,8 +199,8 @@ function YouAccountRadioGroup() {
     obj2[1] = str;
     const intl = tmp4(1236).intl;
     obj2[2] = intl.string(tmp4(1236).t.HxrBOZ);
-    obj1[1] = closure_19(tmp4(4340).Text, obj2);
-    obj[1] = closure_19(tmp4(4886).PressableOpacity, obj1);
+    obj1[1] = closure_19(tmp4(4338).Text, obj2);
+    obj[1] = closure_19(tmp4(4887).PressableOpacity, obj1);
     const items4 = [closure_19(closure_5, obj), ];
     const obj3 = { title: null, onChange: null, defaultValue: null, hasIcons: true, children: null };
     const intl2 = tmp4(1236).intl;
@@ -209,9 +209,9 @@ function YouAccountRadioGroup() {
     obj3[2] = stateFromStores.id;
     obj3[4] = memo.map((value) => {
       const merged = Object.assign(value);
-      return callback(multiAccountUsers(8025).TableRadioRow, {}, value.value);
+      return callback(multiAccountUsers(8029).TableRadioRow, {}, value.value);
     });
-    items4[1] = closure_19(tmp4(8026).TableRadioGroup, obj3);
+    items4[1] = closure_19(tmp4(8030).TableRadioGroup, obj3);
     obj[1] = items4;
     tmp10Result = closure_20(tmp11, obj);
     const tmp10 = closure_20;
@@ -221,7 +221,7 @@ function YouAccountRadioGroup() {
 function FocusModeSetting() {
   let currentLocale = require;
   let toLocaleStringResult = dependencyMap;
-  let tmp5Result = require(9809) /* useFocusModeEnabled */;
+  let tmp5Result = require(9813) /* useFocusModeEnabled */;
   const focusModeEnabled = tmp5Result.useFocusModeEnabled();
   const FocusModeExpiresAtSetting = require(4034) /* explicitContentFromProto */.FocusModeExpiresAtSetting;
   let setting = FocusModeExpiresAtSetting.useSetting();
@@ -235,16 +235,16 @@ function FocusModeSetting() {
     tmp5Result[1] = intl2.string(currentLocale(1236).t.wCxBOc);
     let obj = { style: null };
     obj[0] = tmp.leadingIcon;
-    tmp5Result[2] = callback(currentLocale(9777).BellSlashIcon, obj);
+    tmp5Result[2] = callback(currentLocale(9781).BellSlashIcon, obj);
     tmp5Result[3] = function onValueChange(arg0) {
       if (arg0) {
         let obj = { onSelect: null };
         obj[0] = function onSelect(quiet_mode_enabled) {
-          callback(9809).setFocusMode(quiet_mode_enabled, arg1);
-          const obj = callback(9809);
-          callback2(4312).hideActionSheet();
-          const obj2 = callback2(4312);
-          const result = callback(15561).showYouAccountActionSheet();
+          callback(9813).setFocusMode(quiet_mode_enabled, arg1);
+          const obj = callback(9813);
+          callback2(4310).hideActionSheet();
+          const obj2 = callback2(4310);
+          const result = callback(15570).showYouAccountActionSheet();
         };
         callback2(paths[20]).openLazy(callback(paths[49])(paths[48], paths.paths), "FocusModeOptionsActionSheet", obj);
         let obj2 = callback2(paths[20]);
@@ -261,9 +261,9 @@ function FocusModeSetting() {
       let stringResult = intl4.string(currentLocale(1236).t.i0nsoY);
       const obj1 = { hasIcons: true, children: null };
       tmp5Result[6] = stringResult;
-      tmp5Result = tmp5(currentLocale(5807).TableSwitchRow, tmp5Result);
+      tmp5Result = tmp5(currentLocale(5808).TableSwitchRow, tmp5Result);
       obj1[1] = tmp5Result;
-      tmp5Result = tmp5(currentLocale(5806).TableRowGroup, obj1);
+      tmp5Result = tmp5(currentLocale(5807).TableRowGroup, obj1);
     }
     const intl5 = currentLocale(1236).intl;
     let obj2 = { endTime: null };
@@ -279,7 +279,7 @@ function FocusModeSetting() {
 }
 function CustomStatus() {
   const tmp = callback2();
-  let obj = require(9494) /* _activityFromSetting */;
+  let obj = require(9498) /* _activityFromSetting */;
   const customStatusActivity = obj.useCustomStatusActivity();
   let obj1 = require(4065) /* map */;
   let state;
@@ -298,7 +298,7 @@ function CustomStatus() {
     }
     tmp8 = null != emoji;
   }
-  let tmp2Result = tmp2(9497);
+  let tmp2Result = tmp2(9501);
   let state1;
   if (customStatusActivity != null) {
     state1 = customStatusActivity.state;
@@ -337,12 +337,12 @@ function CustomStatus() {
   }
   obj[3] = formatToPlainStringResult;
   obj[4] = function onPress() {
-    let obj = callback2(4312);
+    let obj = callback2(4310);
     obj.hideActionSheet();
     obj = { analyticsLocations: null };
-    const items = [callback2(5787).YOU_ACCOUNT_ACTION_SHEET];
+    const items = [callback2(5788).YOU_ACCOUNT_ACTION_SHEET];
     obj[0] = items;
-    const result = callback(9500).openEditCustomStatusModal(obj);
+    const result = callback(9504).openEditCustomStatusModal(obj);
   };
   let emoji1;
   if (customStatusActivity != null) {
@@ -352,11 +352,11 @@ function CustomStatus() {
     const obj2 = { emoji: null, size: null };
     obj2[0] = customStatusActivity.emoji;
     obj2[1] = token;
-    let tmp15Result = tmp15(tmp5(9569), obj2);
+    let tmp15Result = tmp15(tmp5(9573), obj2);
   } else {
     const obj3 = { size: "md", style: null };
     obj3[1] = tmp.leadingIcon;
-    tmp15Result = tmp15(tmp2(7696).ReactionIcon, obj3);
+    tmp15Result = tmp15(tmp2(7700).ReactionIcon, obj3);
   }
   let items = [tmp15Result, ];
   let str3 = "text-md/semibold";
@@ -375,29 +375,29 @@ function CustomStatus() {
     gameMentionsAsPlainText = intl3.string(tmp2(1236).t["/UonHN"]);
   }
   obj4[4] = gameMentionsAsPlainText;
-  items[1] = closure_19(require(4340) /* Text */.Text, obj4);
+  items[1] = closure_19(require(4338) /* Text */.Text, obj4);
   obj[5] = items;
-  const items1 = [closure_20(require(4886) /* PressableBase */.PressableOpacity, obj), ];
+  const items1 = [closure_20(require(4887) /* PressableBase */.PressableOpacity, obj), ];
   tmp15Result = null;
   if (null != customStatusActivity) {
     const obj5 = { onPress: null, accessibilityRole: "button", accessibilityLabel: null, style: null, children: null };
     obj5[0] = function onPress(stopPropagation) {
       stopPropagation.stopPropagation();
-      callback2(9507)();
+      callback2(9511)();
     };
     const intl4 = tmp2(1236).intl;
     obj5[2] = intl4.string(tmp2(1236).t.wfYTHe);
     obj5[3] = tmp.customStatusRemoveButton;
     const obj6 = { style: null, source: null };
     obj6[0] = tmp.trailingIcon;
-    obj6[1] = tmp5(8101);
+    obj6[1] = tmp5(8105);
     obj5[4] = tmp15(closure_6, obj6);
-    tmp15Result = tmp15(tmp2(4886).PressableOpacity, obj5);
+    tmp15Result = tmp15(tmp2(4887).PressableOpacity, obj5);
   }
   const tmp2Result1 = require(4065) /* map */;
   items1[1] = tmp15Result;
   obj[3] = items1;
-  return closure_19(require(5806) /* TableRowGroupTitle */.TableRowGroup, { hasIcons: false, children: closure_20(require(5415) /* PressableCard */.Card, obj) });
+  return closure_19(require(5807) /* TableRowGroupTitle */.TableRowGroup, { hasIcons: false, children: closure_20(require(5416) /* PressableCard */.Card, obj) });
 }
 let c4 = importAllResult;
 ({ View: c5, Image: closure_6 } = get_ActivityIndicator);
@@ -422,7 +422,7 @@ const memoResult = importAllResult.memo((statusOnly) => {
   let obj = require(589) /* initialize */;
   const items = [initialize];
   const stateFromStores = obj.useStateFromStores(items, () => canUseMultiAccountMobile.getCanUseMultiAccountMobile());
-  const tmp5 = importDefault(5311)("theme_setting_in_account_sheet");
+  const tmp5 = importDefault(5312)("theme_setting_in_account_sheet");
   const items1 = [init];
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => isDeveloper.isDeveloper);
   obj = { startExpanded: stateFromStores, header: null, showGradient: true, children: null };
@@ -436,7 +436,7 @@ const memoResult = importAllResult.memo((statusOnly) => {
   } else {
     stringResult = string(t["qP/i6k"]);
   }
-  obj[1] = closure_19(require(5435) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: stringResult });
+  obj[1] = closure_19(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: stringResult });
   let tmp7Result = tmp5;
   if (tmp5) {
     tmp7Result = tmp7(ThemeRadioGroup, {});
@@ -455,11 +455,11 @@ const memoResult = importAllResult.memo((statusOnly) => {
     tmp7Result1 = stateFromStores1;
   }
   if (tmp7Result1) {
-    tmp7Result1 = tmp7(importDefault(13908), { title: "Developer Tools", embedded: true });
+    tmp7Result1 = tmp7(importDefault(13912), { title: "Developer Tools", embedded: true });
   }
   items2[5] = tmp7Result1;
-  obj[3] = closure_20(require(4752) /* Stack */.Stack, { spacing: 24, children: items2 });
-  return closure_19(require(5803) /* ActionSheet */.ActionSheet, obj);
+  obj[3] = closure_20(require(4753) /* Stack */.Stack, { spacing: 24, children: items2 });
+  return closure_19(require(5804) /* ActionSheet */.ActionSheet, obj);
 });
 let result = require("initialize").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouAccountActionSheet.tsx");
 

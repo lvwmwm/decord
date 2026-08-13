@@ -1,7 +1,7 @@
 // Module ID: 12688
 // Function ID: 12689
 // Name: getCoverImageFromActivity
-// Dependencies: [4369, 8284, 2]
+// Dependencies: [4370, 8288, 2]
 // Exports: default
 
 // Module 12688 (getCoverImageFromActivity)
@@ -17,8 +17,8 @@ export default function getCoverImageFromActivity(assets, application_id) {
       assetImage = null;
       if (null != assets.assets.large_image) {
         const items = [closure_2, closure_2];
-        assetImage = require(8284) /* updateAssets */.getAssetImage(application_id, assets.assets.large_image, items);
-        const obj = require(8284) /* updateAssets */;
+        assetImage = require(8288) /* updateAssets */.getAssetImage(application_id, assets.assets.large_image, items);
+        const obj = require(8288) /* updateAssets */;
       }
     }
   }

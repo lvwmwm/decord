@@ -1,7 +1,7 @@
 // Module ID: 13157
 // Function ID: 13158
 // Name: dispatchAutoDisableVideo
-// Dependencies: [4405, 709, 2]
+// Dependencies: [4406, 709, 2]
 // Exports: default
 
 // Module 13157 (dispatchAutoDisableVideo)

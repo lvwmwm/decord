@@ -1,10 +1,10 @@
-// Module ID: 15679
-// Function ID: 15680
+// Module ID: 15688
+// Function ID: 15689
 // Name: Separator
-// Dependencies: [19, 17, 5961, 1391, 1990, 3989, 1922, 676, 21, 7344, 12269, 4855, 9853, 15608, 5292, 5904, 5860, 6959, 4276, 15640, 500, 712, 1297, 8337, 5818, 4760, 4886, 4340, 7142, 15680, 8649, 589, 4533, 8958, 8828, 4862, 8957, 15288, 9089, 1236, 15641, 4280, 4065, 4193, 4083, 4345, 4354, 4840, 5817, 4334, 2]
+// Dependencies: [19, 17, 5963, 1391, 1990, 3989, 1922, 676, 21, 7349, 12271, 4856, 9856, 15617, 5293, 5906, 5861, 6965, 4274, 15649, 500, 712, 1297, 8341, 5819, 4761, 4887, 4338, 7148, 15689, 8653, 589, 4534, 8962, 8832, 4863, 8961, 15297, 9093, 1236, 15650, 4278, 4065, 4191, 4083, 4343, 4355, 4841, 5818, 4332, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 15679 (Separator)
+// Module 15688 (Separator)
 import closure_3 from "createICYMIStyles";
 import { View } from "trackInvite";
 import updateState from "updateState";
@@ -30,7 +30,7 @@ let unpackModuleId;
 const require = arg1;
 class Separator {
   constructor() {
-    obj = { style: f62352().separator };
+    obj = { style: f62392().separator };
     return jsx(View, obj);
   }
 }
@@ -69,7 +69,7 @@ class GuildContentPost {
     guild = global.guild;
     ({ channel, hideTimestamp, id, type } = global);
     ({ timestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f62352();
+    tmp = f62392();
     tmp2 = guild;
     tmp3 = id;
     obj = require("getFontScale");
@@ -201,16 +201,16 @@ export const navigateToPost = function navigateToPost(id, id2, id3) {
     obj = { page: outer1_12.ICYMI, object: outer1_10.ACK_MESSAGE_VIEWED, objectType: outer1_11.ACK_SEMI_AUTOMATIC };
     obj.ack(id, obj, true, true, closure_1);
   }, 1500);
-  importDefault(5904)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
+  importDefault(5906)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
   if (null != id3) {
-    _require(5860).runAfterInteractions(() => {
+    _require(5861).runAfterInteractions(() => {
       let obj = id3(outer1_2[17]);
       obj = { channelId: id, limit: outer1_14, jump: null };
       obj = { messageId: id3, flash: true, jumpType: id(outer1_2[18]).JumpType.ANIMATED };
       obj[2] = obj;
       const messages = obj.fetchMessages(obj);
     }, 150);
-    let obj = _require(5860);
+    let obj = _require(5861);
   }
 };
 export { Separator };
@@ -505,14 +505,14 @@ export const SimplePost = function SimplePost(arg0) {
   let sharedValue;
   const tmp = callback3();
   let obj = highlight(4065);
-  token = obj.useToken(token(712).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4280)());
-  let obj1 = highlight(4193);
+  token = obj.useToken(token(712).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4278)());
+  let obj1 = highlight(4191);
   const hexWithOpacityResult = obj1.hexWithOpacity(token(712).unsafe_rawColors.BRAND_360, 0.25);
   dependencyMap = hexWithOpacityResult;
   let obj2 = highlight(4083);
   sharedValue = obj2.useSharedValue(0);
   const tmp2 = token;
-  const tmp4 = token(4280)();
+  const tmp4 = token(4278)();
   const fn = function c() {
     const obj = { backgroundColor: null };
     const items = [token, _undefined];

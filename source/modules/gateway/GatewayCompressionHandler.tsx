@@ -1,7 +1,7 @@
 // Module ID: 12982
 // Function ID: 12983
 // Name: items
-// Dependencies: [17, 12983, 12985, 3, 500, 12984, 4903, 2]
+// Dependencies: [17, 12983, 12985, 3, 500, 12984, 4904, 2]
 // Exports: getCompressionHandler
 
 // Module 12982 (items)
@@ -369,7 +369,7 @@ items.push(NullGatewayCompressionHandler);
 let result = require("module_12985").fileFinishedImporting("modules/gateway/GatewayCompressionHandler.tsx");
 
 export const getCompressionHandler = function getCompressionHandler(closure_10) {
-  const ProcessArgs = require(4903) /* get */.ProcessArgs;
+  const ProcessArgs = require(4904) /* get */.ProcessArgs;
   if (ProcessArgs.isDiscordGatewayPlaintextSet()) {
     return new NullGatewayCompressionHandler(closure_10);
   } else {

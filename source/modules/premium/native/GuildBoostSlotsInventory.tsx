@@ -1,7 +1,7 @@
 // Module ID: 12836
 // Function ID: 12837
 // Name: GuildBoostSlotCooldown
-// Dependencies: [19, 17, 1302, 1910, 4237, 4013, 676, 21, 4344, 712, 5275, 6944, 4340, 1236, 11, 4886, 5191, 5818, 12837, 589, 1435, 12838, 12842, 4663, 4240, 12, 2]
+// Dependencies: [19, 17, 1302, 1910, 4235, 4013, 676, 21, 4342, 712, 5276, 6950, 4338, 1236, 11, 4887, 5192, 5819, 12837, 589, 1435, 12838, 12842, 4664, 4238, 12, 2]
 // Exports: default
 
 // Module 12836 (GuildBoostSlotCooldown)
@@ -29,8 +29,8 @@ function GuildBoostSlotCooldown(cooldownEndsAt) {
   const items = [cooldownEndsAt];
   const memo = React.useMemo(() => new Date(cooldownEndsAt), items);
   const tmp = createCacheKey();
-  ({ days, hours, minutes } = importDefault(6944)(memo, 15000));
-  const tmp3 = importDefault(6944)(memo, 15000);
+  ({ days, hours, minutes } = importDefault(6950)(memo, 15000));
+  const tmp3 = importDefault(6950)(memo, 15000);
   let tmp5 = null;
   if (valueOfResult > Date.now()) {
     let obj = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
@@ -41,7 +41,7 @@ function GuildBoostSlotCooldown(cooldownEndsAt) {
     obj[1] = hours;
     obj[2] = minutes;
     obj[3] = intl.format(cooldownEndsAt(1236).t.NffSH8, obj);
-    tmp5 = callback(cooldownEndsAt(4340).Text, obj);
+    tmp5 = callback(cooldownEndsAt(4338).Text, obj);
   }
   return tmp5;
 }
@@ -55,7 +55,7 @@ function GuildBoostSlotsInventoryRow(arg0) {
   let obj = { style: tmp.subscriptionSlot, children: null };
   obj = { style: tmp.subscriptionSlotInner, children: null };
   obj = { style: tmp.subscriptionSlotInfo, children: null };
-  const items = [callback(require(4340) /* Text */.Text, { style: tmp.subscriptionSlotInfoTitle, lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: title }), subtitle];
+  const items = [callback(require(4338) /* Text */.Text, { style: tmp.subscriptionSlotInfoTitle, lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: title }), subtitle];
   obj[1] = items;
   const items1 = [callback2(closure_5, obj), action];
   obj[1] = items1;
@@ -112,8 +112,8 @@ function GuildBoostSlot(guildBoostSlot) {
       const obj3 = { variant: "text-md/medium", color: "control-brand-foreground", children: null };
       const intl2 = guildBoostSlot(1236).intl;
       obj3[2] = intl2.string(guildBoostSlot(1236).t.jqqLb6);
-      obj2[2] = tmp6(guildBoostSlot(4340).Text, obj3);
-      tmp6Result = tmp6(guildBoostSlot(4886).PressableOpacity, obj2);
+      obj2[2] = tmp6(guildBoostSlot(4338).Text, obj3);
+      tmp6Result = tmp6(guildBoostSlot(4887).PressableOpacity, obj2);
     }
     obj[2] = tmp6Result;
     obj[3] = tmp;
@@ -162,8 +162,8 @@ function UnusedGuildBoostSlots(unusedSlots) {
     const obj2 = { variant: "text-md/medium", color: "text-link", children: null };
     const intl2 = found(1236).intl;
     obj2[2] = intl2.string(found(1236).t["7KyPor"]);
-    obj1[2] = callback(found(4340).Text, obj2);
-    obj[1] = callback(found(4886).PressableOpacity, obj1);
+    obj1[2] = callback(found(4338).Text, obj2);
+    obj[1] = callback(found(4887).PressableOpacity, obj1);
     obj[2] = 0 === found.length;
     tmp4 = callback(GuildBoostSlotsInventoryRow, obj);
   }
@@ -198,14 +198,14 @@ function BoostedGuildInfo(guild) {
     obj[0] = tmp.guildInfoIcon;
     obj = { guild: null, size: null, selected: false };
     obj[0] = guild;
-    obj[1] = require(5818) /* GuildIconSizes */.GuildIconSizes.NORMAL;
-    obj[1] = callback(importDefault(5818), obj);
+    obj[1] = require(5819) /* GuildIconSizes */.GuildIconSizes.NORMAL;
+    obj[1] = callback(importDefault(5819), obj);
     const items = [callback(closure_5, obj), ];
     const obj1 = { children: null };
     const obj2 = { style: null, variant: "heading-lg/extrabold", color: "interactive-text-active", children: null };
     obj2[0] = tmp.guildInfoName;
     obj2[3] = guild.name;
-    const items1 = [callback(require(4340) /* Text */.Text, obj2), ];
+    const items1 = [callback(require(4338) /* Text */.Text, obj2), ];
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.guildInfoRowBottom;
     const obj4 = { source: null, style: null };
@@ -218,14 +218,14 @@ function BoostedGuildInfo(guild) {
     const obj6 = { numSubscriptions: null };
     obj6[0] = guild.numGuildBoostSlots;
     obj5[3] = intl.format(require(1236) /* getSystemLocale */.t.bexfNy, obj6);
-    items2[1] = callback(require(4340) /* Text */.Text, obj5);
+    items2[1] = callback(require(4338) /* Text */.Text, obj5);
     obj3[1] = items2;
     items1[1] = callback2(closure_5, obj3);
     obj1[0] = items1;
     items[1] = callback2(closure_5, obj1);
     obj[1] = items;
     tmp2 = callback2(closure_5, obj);
-    const tmp8 = importDefault(5818);
+    const tmp8 = importDefault(5819);
   }
   return tmp2;
 }
@@ -322,9 +322,9 @@ const result = require("handleThemeChange").fileFinishedImporting("modules/premi
 export default function GuildBoostSlotsInventory() {
   const tmp = createCacheKey();
   const effect = React.useEffect(() => {
-    const subscriptions = callback(4663).fetchSubscriptions();
-    const obj = callback(4663);
-    const guildBoostSlots = valueResult(4240).fetchGuildBoostSlots();
+    const subscriptions = callback(4664).fetchSubscriptions();
+    const obj = callback(4664);
+    const guildBoostSlots = valueResult(4238).fetchGuildBoostSlots();
   }, []);
   let obj = require(589) /* initialize */;
   const items = [reset];
@@ -367,7 +367,7 @@ export default function GuildBoostSlotsInventory() {
         obj2[0] = tmp.header;
         const intl = tmp3(1236).intl;
         obj2[3] = intl.string(tmp3(1236).t.gB9oQ7);
-        const items3 = [callback(tmp3(4340).Text, obj2), found.map((guildId) => outer1_11(outer1_20, { guildId, guildBoostSlots: valueResult[guildId] }, guildId))];
+        const items3 = [callback(tmp3(4338).Text, obj2), found.map((guildId) => outer1_11(outer1_20, { guildId, guildBoostSlots: valueResult[guildId] }, guildId))];
         obj1[0] = items3;
         tmp10Result = tmp10(closure_13, obj1);
       }

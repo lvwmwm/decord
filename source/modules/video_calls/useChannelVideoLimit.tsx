@@ -1,10 +1,10 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 9204
+// Function ID: 9205
 // Name: useChannelVideoLimit
-// Dependencies: [1910, 4416, 676, 589, 2]
+// Dependencies: [1910, 4417, 676, 589, 2]
 // Exports: default, getChannelVideoLimit
 
-// Module 9200 (useChannelVideoLimit)
+// Module 9204 (useChannelVideoLimit)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getVoiceStatesForGuild from "getVoiceStatesForGuild";
 import { ChannelTypes } from "ME";

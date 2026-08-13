@@ -1,7 +1,7 @@
 // Module ID: 12611
 // Function ID: 12612
 // Name: GroupDmMemberCount
-// Dependencies: [19, 1391, 4430, 3998, 1922, 676, 21, 1297, 4344, 712, 589, 12608, 4534, 1236, 9683, 12612, 4189, 12614, 2]
+// Dependencies: [19, 1391, 4431, 3998, 1922, 676, 21, 1297, 4342, 712, 589, 12608, 4535, 1236, 9687, 12612, 4187, 12614, 2]
 
 // Module 12611 (GroupDmMemberCount)
 import importAllResult from "noop";

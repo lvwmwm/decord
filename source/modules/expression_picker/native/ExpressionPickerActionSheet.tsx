@@ -1,10 +1,10 @@
-// Module ID: 9972
-// Function ID: 9973
+// Module ID: 9970
+// Function ID: 9971
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 1391, 5437, 9973, 21, 4083, 4209, 1626, 589, 9974, 4312, 1493, 1628, 5306, 500, 8718, 5436, 9975, 2]
+// Dependencies: [19, 1391, 5438, 9971, 21, 4083, 4207, 1626, 589, 9972, 4310, 1493, 1628, 5307, 500, 8722, 5437, 9973, 2]
 // Exports: default
 
-// Module 9972 (ExpressionPickerActionSheet)
+// Module 9970 (ExpressionPickerActionSheet)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -31,20 +31,20 @@ export default function ExpressionPickerActionSheet(arg0) {
   ({ hideGifFavorites, onDismiss, visibleTabs, initialGifQuery } = arg0);
   let obj = require(4083);
   const sharedValue = obj.useSharedValue(-1);
-  let obj1 = require(4209) /* useKeyboardType */;
+  let obj1 = require(4207) /* useKeyboardType */;
   const keyboardContextForType = obj1.useKeyboardContextForType(require(1626) /* KeyboardTypes */.KeyboardTypes.EXPRESSION);
   let obj2 = require(589) /* initialize */;
   const items = [ensureGuildLoaded];
   const stateFromStores = obj2.useStateFromStores(items, () => outer1_4.getChannel(closure_0));
   const height = importDefault(1493)({ ignoreKeyboard: true }).height;
-  const diff = height - require(5306) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - importDefault(1628)().top;
+  const diff = height - require(5307) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - importDefault(1628)().top;
   let tmp15Result = null;
   if (undefined !== stateFromStores) {
     let isIOSResult = tmp2(500).isIOS();
     if (isIOSResult) {
       obj = { animatedSheetIndex: null, followSystemKeyboard: true };
       obj[0] = sharedValue;
-      isIOSResult = callback(tmp7(8718), obj);
+      isIOSResult = callback(tmp7(8722), obj);
     }
     obj = { children: null };
     const items1 = [isIOSResult, ];
@@ -81,8 +81,8 @@ export default function ExpressionPickerActionSheet(arg0) {
     obj2[9] = initialGifQuery;
     obj2[10] = STICKER_FORMATS;
     obj2[11] = diff;
-    obj1[5] = callback(tmp7(9975), obj2);
-    items1[1] = callback(tmp2(5436).BottomSheet, obj1);
+    obj1[5] = callback(tmp7(9973), obj2);
+    items1[1] = callback(tmp2(5437).BottomSheet, obj1);
     obj[0] = items1;
     tmp15Result = closure_9(closure_8, obj);
     const tmp15 = closure_9;

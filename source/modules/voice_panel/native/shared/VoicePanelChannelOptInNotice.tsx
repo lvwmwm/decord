@@ -1,8 +1,8 @@
-// Module ID: 16263
-// Function ID: 16264
-// Dependencies: [19, 21, 5295, 5820, 5413, 1236, 5419, 13259, 2]
+// Module ID: 16274
+// Function ID: 16275
+// Dependencies: [19, 21, 5296, 5821, 5414, 1236, 5420, 13260, 2]
 
-// Module 16263
+// Module 16274
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -24,11 +24,11 @@ const memoResult = importAllResult.memo(function VoicePanelChannelOptInNotice(ch
   const intl2 = channel(1236).intl;
   obj[1] = intl2.string(channel(1236).t.PDUCIN);
   obj = { IconComponent: null };
-  obj[0] = channel(13259).ChannelListMagnifyingGlassIcon;
-  obj[2] = jsx(channel(5419).TableRowIcon, { IconComponent: null });
+  obj[0] = channel(13260).ChannelListMagnifyingGlassIcon;
+  obj[2] = jsx(channel(5420).TableRowIcon, { IconComponent: null });
   obj[3] = callback;
-  obj[1] = jsx(channel(5413).TableRow, { IconComponent: null });
-  return jsx(analyticsSection(5820), { IconComponent: null });
+  obj[1] = jsx(channel(5414).TableRow, { IconComponent: null });
+  return jsx(analyticsSection(5821), { IconComponent: null });
 });
 const result = require("_persistOptInChannelUpdates2").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelChannelOptInNotice.tsx");
 

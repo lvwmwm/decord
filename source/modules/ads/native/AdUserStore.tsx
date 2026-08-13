@@ -1,9 +1,9 @@
-// Module ID: 7230
-// Function ID: 7231
+// Module ID: 7235
+// Function ID: 7236
 // Name: adUser
 // Dependencies: [589, 709, 2]
 
-// Module 7230 (adUser)
+// Module 7235 (adUser)
 import { Store } from "initialize";
 
 let c1 = false;

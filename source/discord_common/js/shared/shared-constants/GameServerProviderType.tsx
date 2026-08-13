@@ -1,9 +1,9 @@
-// Module ID: 4234
-// Function ID: 4235
+// Module ID: 4232
+// Function ID: 4233
 // Name: GameServerProviderType
 // Dependencies: [2]
 
-// Module 4234 (GameServerProviderType)
+// Module 4232 (GameServerProviderType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/GameServerProviderType.tsx");
 
 export const GameServerProviderType = { SHOCKBYTE: "shockbyte" };

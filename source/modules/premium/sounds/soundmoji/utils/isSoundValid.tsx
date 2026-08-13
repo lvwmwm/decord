@@ -1,10 +1,10 @@
-// Module ID: 4794
-// Function ID: 4795
+// Module ID: 4795
+// Function ID: 4796
 // Name: isSoundValid
-// Dependencies: [1391, 3989, 1922, 4790, 505, 4007, 2]
+// Dependencies: [1391, 3989, 1922, 4791, 505, 4007, 2]
 // Exports: default
 
-// Module 4794 (isSoundValid)
+// Module 4795 (isSoundValid)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";

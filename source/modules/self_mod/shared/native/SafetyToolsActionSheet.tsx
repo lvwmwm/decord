@@ -1,10 +1,10 @@
-// Module ID: 10420
-// Function ID: 10421
+// Module ID: 10334
+// Function ID: 10335
 // Name: SafetyToolsActionSheet
-// Dependencies: [19, 17, 3998, 10385, 21, 4344, 712, 10418, 10421, 10422, 589, 10398, 5817, 1236, 8813, 8812, 4312, 10426, 2007, 4058, 8543, 8541, 8542, 8540, 9289, 10429, 6037, 7825, 4683, 10416, 8815, 8814, 8061, 9695, 9694, 4549, 10430, 10434, 10435, 10436, 10278, 10279, 10437, 10427, 5806, 5413, 5419, 2]
+// Dependencies: [19, 17, 3998, 10297, 21, 4342, 712, 10332, 10335, 10336, 589, 10310, 5818, 1236, 8817, 8816, 4310, 10340, 2007, 4058, 8547, 8545, 8546, 8544, 9293, 10343, 6039, 7829, 4684, 10330, 8819, 8818, 8065, 9699, 9698, 4550, 10344, 10348, 10349, 10350, 10318, 10319, 10351, 10341, 5807, 5414, 5420, 2]
 // Exports: default
 
-// Module 10420 (SafetyToolsActionSheet)
+// Module 10334 (SafetyToolsActionSheet)
 import module_4058 from "module_4058";
 import { View } from "SafetyToolsCrisisTextLineActionSheet";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
@@ -303,8 +303,8 @@ export default function SafetyToolsActionSheet(channelId) {
         let trailing;
         ({ label, subLabel, IconComponent, icon, trailing, onPress, disabled } = arg0);
         const obj = { label, subLabel, onPress, trailing, disabled, icon: null };
-        obj[5] = callback2(callback(5419).TableRowIcon, { source: icon, IconComponent });
-        return callback2(callback(5413).TableRow, obj, arg1);
+        obj[5] = callback2(callback(5420).TableRowIcon, { source: icon, IconComponent });
+        return callback2(callback(5414).TableRow, obj, arg1);
       });
       obj[1] = stateFromStores1(channelId(warningType[44]).TableRowGroup, obj);
       return stateFromStores1(onClose, obj, buttons.sectionKey);

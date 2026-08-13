@@ -1,8 +1,8 @@
-// Module ID: 11622
-// Function ID: 11623
-// Dependencies: [19, 21, 4344, 712, 1367, 4065, 4886, 1236, 1297, 10235, 7697, 2]
+// Module ID: 11618
+// Function ID: 11619
+// Dependencies: [19, 21, 4342, 712, 1367, 4065, 4887, 1236, 1297, 10235, 7701, 2]
 
-// Module 11622
+// Module 11618
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -88,9 +88,9 @@ const memoResult = importAllResult.memo((active) => {
   }
   const items2 = [expressionButtonIconPosition, tmp11.expressionButtonIconTint];
   obj[1] = items2;
-  obj[2] = tmp4(showKeyboardIcon ? 10235 : 7697);
+  obj[2] = tmp4(showKeyboardIcon ? 10235 : 7701);
   obj[7] = jsx(onPress(1297).Icon, { size: token3, style: null, source: null });
-  return jsx(onPress(4886).PressableOpacity, { size: token3, style: null, source: null });
+  return jsx(onPress(4887).PressableOpacity, { size: token3, style: null, source: null });
 });
 const result = require("createCacheKey").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputExpressionButton.tsx");
 

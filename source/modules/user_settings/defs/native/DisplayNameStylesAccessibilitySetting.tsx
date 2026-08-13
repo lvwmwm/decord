@@ -1,10 +1,10 @@
-// Module ID: 14661
-// Function ID: 14662
+// Module ID: 14670
+// Function ID: 14671
 // Name: useValue
-// Dependencies: [4336, 8123, 589, 13777, 10493, 1236, 2661, 2]
+// Dependencies: [4334, 8127, 589, 13778, 10407, 1236, 2661, 2]
 // Exports: onValueChange, useValue
 
-// Module 14661 (useValue)
+// Module 14670 (useValue)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
@@ -14,7 +14,7 @@ function useValue() {
   return require(589) /* initialize */.useStateFromStores(items, () => obj.displayNameStylesEnabled);
 }
 function onValueChange(enabled) {
-  const result = require(13777) /* setFontSize */.setDisplayNameStylesEnabled(enabled);
+  const result = require(13778) /* setFontSize */.setDisplayNameStylesEnabled(enabled);
 }
 createToggle = {
   useTitle() {

@@ -1,9 +1,9 @@
-// Module ID: 14292
-// Function ID: 14293
+// Module ID: 14301
+// Function ID: 14302
 // Name: route
-// Dependencies: [19, 1922, 4013, 676, 21, 12753, 4007, 1236, 6922, 7486, 14293, 10493, 7745, 14295, 2]
+// Dependencies: [19, 1922, 4013, 676, 21, 12753, 4007, 1236, 6928, 7490, 14302, 10407, 7749, 14304, 2]
 
-// Module 14292 (route)
+// Module 14301 (route)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
@@ -43,14 +43,14 @@ createToggle = {
     }, []);
   },
   useTrailing: function usePremiumSettingTrailing() {
-    return jsx(importDefault(14293), {});
+    return jsx(importDefault(14302), {});
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM,
   getComponent() {
-    return require(14295) /* PremiumScreen */.default;
+    return require(14304) /* PremiumScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

@@ -1,10 +1,10 @@
-// Module ID: 4369
-// Function ID: 4370
+// Module ID: 4370
+// Function ID: 4371
 // Name: items3
 // Dependencies: [676, 1954, 2]
 // Exports: getAppIntentScheme
 
-// Module 4369 (items3)
+// Module 4370 (items3)
 import { ChannelTypes } from "ME";
 import set from "set";
 

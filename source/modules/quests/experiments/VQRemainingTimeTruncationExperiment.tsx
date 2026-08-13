@@ -1,9 +1,9 @@
-// Module ID: 10646
-// Function ID: 10647
+// Module ID: 10560
+// Function ID: 10561
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 
-// Module 10646 (apexExperiment)
+// Module 10560 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { truncateMoreThanSeconds: 30 } };

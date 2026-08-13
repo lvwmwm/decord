@@ -1,9 +1,9 @@
-// Module ID: 16292
-// Function ID: 16293
+// Module ID: 16303
+// Function ID: 16304
 // Name: ActivityItemEmptyCard
-// Dependencies: [5, 19, 17, 21, 4344, 712, 11705, 5767, 10705, 10808, 4886, 16293, 16294, 5820, 2]
+// Dependencies: [5, 19, 17, 21, 4342, 712, 11703, 5768, 10619, 10722, 4887, 16304, 16305, 5821, 2]
 
-// Module 16292 (ActivityItemEmptyCard)
+// Module 16303 (ActivityItemEmptyCard)
 import Themes from "Themes";
 import importAllResult from "noop";
 import { ActivityIndicator } from "get ActivityIndicator";
@@ -116,7 +116,7 @@ const memoResult = importAllResult.memo(function ActivityItemMissingCard(arg0) {
   obj = { style: callback3().loadingActivity, children: null };
   const tmp = callback3();
   obj[1] = callback(ActivityIndicator, { size: "large" });
-  tmp4 = callback(importDefault(5820), obj);
+  tmp4 = callback(importDefault(5821), obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityItemMissingCard.tsx");
 

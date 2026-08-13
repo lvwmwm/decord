@@ -1,9 +1,9 @@
-// Module ID: 4453
-// Function ID: 4454
+// Module ID: 4454
+// Function ID: 4455
 // Name: getMaxSinkValue
-// Dependencies: [4405, 2]
+// Dependencies: [4406, 2]
 
-// Module 4453 (getMaxSinkValue)
+// Module 4454 (getMaxSinkValue)
 import DesktopSources from "DesktopSources";
 
 let c0;

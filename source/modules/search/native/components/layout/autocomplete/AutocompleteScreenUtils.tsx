@@ -1,10 +1,10 @@
-// Module ID: 15878
-// Function ID: 15879
+// Module ID: 15887
+// Function ID: 15888
 // Name: getSearchQueryChannelIds
-// Dependencies: [1990, 3998, 1922, 11771, 8442, 676, 1236, 10288, 4288, 10584, 10058, 9837, 7755, 4855, 7750, 7747, 11283, 10588, 15879, 11772, 4189, 2]
+// Dependencies: [1990, 3998, 1922, 11769, 8446, 676, 1236, 11126, 4286, 10498, 10056, 9840, 7759, 4856, 7754, 7751, 11274, 10502, 15888, 11770, 4187, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 15878 (getSearchQueryChannelIds)
+// Module 15887 (getSearchQueryChannelIds)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -34,39 +34,39 @@ export const getSearchQueryUserIds = function getSearchQueryUserIds(items) {
 export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
   const intl = require(1236) /* getSystemLocale */.intl;
   if (intl.string(require(1236) /* getSystemLocale */.t.nrpA5E) === text) {
-    return importDefault(10288);
+    return importDefault(11126);
   } else {
     const intl3 = tmp(1236).intl;
     if (intl3.string(tmp(1236).t.ZNR2fi) === text) {
-      return tmp(4288).LinkIcon;
+      return tmp(4286).LinkIcon;
     } else {
       const intl4 = tmp(1236).intl;
       if (intl4.string(tmp(1236).t["20uQR3"]) === text) {
-        return tmp(10584).EmbedIcon;
+        return tmp(10498).EmbedIcon;
       } else {
         const intl5 = tmp(1236).intl;
         if (intl5.string(tmp(1236).t.L4lxyE) === text) {
-          return tmp(10058).PollsIcon;
+          return tmp(10056).PollsIcon;
         } else {
           const intl6 = tmp(1236).intl;
           if (intl6.string(tmp(1236).t["AV/v6i"]) === text) {
-            return tmp(9837).AttachmentIcon;
+            return tmp(9840).AttachmentIcon;
           } else {
             const intl7 = tmp(1236).intl;
             if (intl7.string(tmp(1236).t.XM9XGP) === text) {
-              return tmp(7755).VideoIcon;
+              return tmp(7759).VideoIcon;
             } else {
               const intl8 = tmp(1236).intl;
               if (intl8.string(tmp(1236).t.TNLcpx) === text) {
-                return tmp(4855).ImageIcon;
+                return tmp(4856).ImageIcon;
               } else {
                 const intl9 = tmp(1236).intl;
                 if (intl9.string(tmp(1236).t.F8Wf0e) === text) {
-                  return tmp(7750).SoundboardIcon;
+                  return tmp(7754).SoundboardIcon;
                 } else {
                   const intl2 = tmp(1236).intl;
                   if (intl2.string(tmp(1236).t.PJgX2h) === text) {
-                    return tmp(7747).StickerIcon;
+                    return tmp(7751).StickerIcon;
                   }
                 }
               }
@@ -80,21 +80,21 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
   const intl = require(1236) /* getSystemLocale */.intl;
   if (intl.string(require(1236) /* getSystemLocale */.t.tPZo4p) === text) {
-    return tmp(11283).UserIcon;
+    return tmp(11274).UserIcon;
   } else {
     const intl3 = tmp(1236).intl;
     if (intl3.string(tmp(1236).t.JL7sRS) === text) {
-      return tmp(10588).RobotIcon;
+      return tmp(10502).RobotIcon;
     } else {
       const intl2 = tmp(1236).intl;
       if (intl2.string(tmp(1236).t.WjkIKU) === text) {
-        return tmp(15879).WebhookIcon;
+        return tmp(15888).WebhookIcon;
       }
     }
   }
 };
 export const toSearchListUserItem = function toSearchListUserItem(items, user, callback2) {
-  let obj = require(11772) /* SearchTokenTypes */;
+  let obj = require(11770) /* SearchTokenTypes */;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(items);
   if (null == user) {
     return null;
@@ -107,8 +107,8 @@ export const toSearchListUserItem = function toSearchListUserItem(items, user, c
       nickname = nick.getNick(guildIdFromSearchContext, user.id);
     }
     if (nickname == null) {
-      nickname = importDefault(4189).getName(user);
-      const obj2 = importDefault(4189);
+      nickname = importDefault(4187).getName(user);
+      const obj2 = importDefault(4187);
     }
     obj = { type: null, props: null };
     obj[0] = SearchListItemTypes.DM;
@@ -138,8 +138,8 @@ export const toSearchListChannelItem = function toSearchListChannelItem(channel,
       obj[1] = user;
       let nickname = store.getNickname(user.id);
       if (nickname == null) {
-        nickname = importDefault(4189).getName(user);
-        const obj6 = importDefault(4189);
+        nickname = importDefault(4187).getName(user);
+        const obj6 = importDefault(4187);
       }
       obj[2] = nickname;
       obj[3] = function onPress() {

@@ -1,7 +1,7 @@
 // Module ID: 12730
 // Function ID: 12731
 // Name: shouldShowVoiceChannelChangeConfirmation
-// Dependencies: [4358, 1304, 1218, 1910, 4360, 2]
+// Dependencies: [4359, 1304, 1218, 1910, 4361, 2]
 // Exports: shouldShowVoiceChannelChangeConfirmation
 
 // Module 12730 (shouldShowVoiceChannelChangeConfirmation)

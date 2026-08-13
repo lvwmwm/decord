@@ -1,9 +1,9 @@
-// Module ID: 13432
-// Function ID: 13433
+// Module ID: 13433
+// Function ID: 13434
 // Name: getStatusSize
-// Dependencies: [19, 17, 676, 1298, 21, 4344, 712, 12371, 13421, 13422, 8337, 8302, 13433, 8336, 13423, 4756, 10770, 10771, 2]
+// Dependencies: [19, 17, 676, 1298, 21, 4342, 712, 12371, 13422, 13423, 8341, 8306, 13434, 8340, 13424, 4757, 10684, 10685, 2]
 
-// Module 13432 (getStatusSize)
+// Module 13433 (getStatusSize)
 import importAllResult from "noop";
 import { View } from "registerAsset";
 import { StatusTypes } from "ME";
@@ -63,10 +63,10 @@ let closure_10 = createCacheKey.createStyles((NORMAL) => {
   obj = { width: 24, height: 24, justifyContent: "center", alignItems: "center", backgroundColor: importDefault(712).unsafe_rawColors.RED_400, borderRadius: importDefault(712).radii.md, right: 0, bottom: 0 };
   obj[3] = obj;
   const obj1 = { position: "absolute", top: null, left: null };
-  const decorationSizeForAvatarSize = require(8302) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
+  const decorationSizeForAvatarSize = require(8306) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
   obj1[1] = -(decorationSizeForAvatarSize - require(12371) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
-  const obj5 = require(8302) /* getDecorationSizeForAvatarSize */;
-  const decorationSizeForAvatarSize1 = require(8302) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
+  const obj5 = require(8306) /* getDecorationSizeForAvatarSize */;
+  const decorationSizeForAvatarSize1 = require(8306) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
   obj1[2] = -(decorationSizeForAvatarSize1 - require(12371) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
   obj[4] = obj1;
   obj[5] = { position: "relative" };

@@ -1,7 +1,7 @@
 // Module ID: 13030
 // Function ID: 13031
 // Name: map
-// Dependencies: [4243, 589, 709, 2]
+// Dependencies: [4241, 589, 709, 2]
 
 // Module 13030 (map)
 import { Store } from "initialize";
@@ -21,7 +21,7 @@ prototype["handleSearchCountSuccess"] = function handleSearchCountSuccess(catego
   this.isInitialFetchComplete = true;
 };
 prototype["handleSearchCountFailure"] = function handleSearchCountFailure(error) {
-  const aPIError = new require(4243) /* V6OrEarlierAPIError */.APIError(error);
+  const aPIError = new require(4241) /* V6OrEarlierAPIError */.APIError(error);
   this.error = aPIError;
   this.isFetching = false;
 };

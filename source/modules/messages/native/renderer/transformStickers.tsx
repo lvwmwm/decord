@@ -1,7 +1,7 @@
 // Module ID: 12695
 // Function ID: 12696
 // Name: transformStickers
-// Dependencies: [8102, 4678, 8147, 1236, 2]
+// Dependencies: [8106, 4679, 8151, 1236, 2]
 // Exports: default
 
 // Module 12695 (transformStickers)
@@ -12,9 +12,9 @@ export default function transformStickers(message) {
   let require;
   ({ animateStickersSetting: require, isUserInteracting: dependencyMap } = message);
   let closure_2;
-  closure_2 = require(8102) /* apexExperiment */.shouldSkipAccessibilityLabels();
-  let obj = require(8102) /* apexExperiment */;
-  const messageStickers = require(4678) /* getStickerExtensionFromFormatType */.getMessageStickers(message.message);
+  closure_2 = require(8106) /* apexExperiment */.shouldSkipAccessibilityLabels();
+  let obj = require(8106) /* apexExperiment */;
+  const messageStickers = require(4679) /* getStickerExtensionFromFormatType */.getMessageStickers(message.message);
   return messageStickers.map((id) => {
     let obj = outer1_0(outer1_1[1]);
     const shouldAnimateStickerResult = obj.shouldAnimateSticker(closure_0, closure_1);

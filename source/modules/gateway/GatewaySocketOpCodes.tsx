@@ -1,7 +1,7 @@
 // Module ID: 12970
 // Function ID: 12971
 // Name: presenceUpdate
-// Dependencies: [4436, 652, 12971, 11, 2]
+// Dependencies: [4437, 652, 12971, 11, 2]
 
 // Module 12970 (presenceUpdate)
 import initialize from "initialize";

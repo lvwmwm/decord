@@ -1,10 +1,10 @@
-// Module ID: 14147
-// Function ID: 14148
+// Module ID: 14156
+// Function ID: 14157
 // Name: updateDmSafetyAlertsSetting
 // Dependencies: [1374, 1337, 2]
 // Exports: updateDmSafetyAlertsSetting
 
-// Module 14147 (updateDmSafetyAlertsSetting)
+// Module 14156 (updateDmSafetyAlertsSetting)
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/updateDmSafetyAlertsSetting.tsx");
 
 export const updateDmSafetyAlertsSetting = function updateDmSafetyAlertsSetting(arg0) {

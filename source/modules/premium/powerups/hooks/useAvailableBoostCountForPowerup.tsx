@@ -1,10 +1,10 @@
-// Module ID: 11956
-// Function ID: 11957
+// Module ID: 11958
+// Function ID: 11959
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [19, 1910, 4231, 4232, 589, 4251, 1370, 2]
+// Dependencies: [19, 1910, 4229, 4230, 589, 4249, 1370, 2]
 // Exports: default
 
-// Module 11956 (useAvailableBoostCountForPowerup)
+// Module 11958 (useAvailableBoostCountForPowerup)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import calculateAppliedBoosts from "calculateAppliedBoosts";

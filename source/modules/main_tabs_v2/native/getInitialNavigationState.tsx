@@ -1,10 +1,10 @@
-// Module ID: 4201
-// Function ID: 4202
+// Module ID: 4199
+// Function ID: 4200
 // Name: getInitialGuildState
-// Dependencies: [32, 1218, 4171, 1979, 676, 3, 4202, 1222, 4172, 4185, 4205, 2]
+// Dependencies: [32, 1218, 4169, 1979, 676, 3, 4200, 1222, 4170, 4183, 4203, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 4201 (getInitialGuildState)
+// Module 4199 (getInitialGuildState)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import initialize from "initialize";
@@ -22,7 +22,7 @@ function getInitialGuildState(closure_6, channelId, flag, flag2) {
   if (channelId == null) {
     channelId = channelId.getChannelId(closure_6);
   }
-  let obj = require(4202) /* useChatLayout */;
+  let obj = require(4200) /* useChatLayout */;
   const isChatLockedOpen = obj.getChatLayout().isChatLockedOpen;
   if (flag) {
     if (null != channelId) {
@@ -73,19 +73,19 @@ function computeInitialNavigationStateWithoutLogging() {
   if (null != token.getToken()) {
     let obj1 = require(1222) /* transitionTo */;
     const _location = obj1.getHistory().location;
-    let obj2 = require(4172) /* matchPath */;
+    let obj2 = require(4170) /* matchPath */;
     let obj = { path: null };
-    const RouteParam = require(4185) /* RouteParam */.RouteParam;
-    const RouteParam2 = require(4185) /* RouteParam */.RouteParam;
+    const RouteParam = require(4183) /* RouteParam */.RouteParam;
+    const RouteParam2 = require(4183) /* RouteParam */.RouteParam;
     obj[0] = closure_7.CHANNEL(RouteParam.guildId(), RouteParam2.channelId({ optional: true }), ":messageId?");
     const matchPathResult = obj2.matchPath(_location.pathname, obj);
-    const MobileHomeDrawerExperiment = require(4205) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+    const MobileHomeDrawerExperiment = require(4203) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
     const tmp5 = MobileHomeDrawerExperiment.getConfig({ location: "app-start" }).landOnHome && null == matchPathResult;
     if (null == matchPathResult) {
       obj = { path: null };
-      const RouteParam3 = tmp(4185).RouteParam;
-      const tmpResult = tmp(4172);
-      const RouteParam4 = tmp(4185).RouteParam;
+      const RouteParam3 = tmp(4183).RouteParam;
+      const tmpResult = tmp(4170);
+      const RouteParam4 = tmp(4183).RouteParam;
       obj[0] = obj5.CHANNEL(RouteParam3.guildId(), RouteParam4.channelId({ optional: true }), ":messageId?");
       let matchPathResult1 = tmpResult.matchPath(lastNonVoiceRoute.lastNonVoiceRoute, obj);
       let flag = false;

@@ -1,7 +1,7 @@
 // Module ID: 12549
 // Function ID: 12550
 // Name: useTrackUserProfileWishlistView
-// Dependencies: [19, 9403, 589, 2]
+// Dependencies: [19, 9407, 589, 2]
 // Exports: default
 
 // Module 12549 (useTrackUserProfileWishlistView)

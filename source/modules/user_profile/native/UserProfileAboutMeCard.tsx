@@ -1,10 +1,10 @@
-// Module ID: 9576
-// Function ID: 9577
+// Module ID: 9580
+// Function ID: 9581
 // Name: Heading
-// Dependencies: [19, 17, 1994, 1990, 1910, 5815, 676, 1498, 21, 4344, 4065, 712, 4340, 1236, 9577, 589, 5164, 11, 9579, 5818, 9581, 1297, 8977, 5767, 8833, 9582, 8828, 4312, 4200, 1222, 5860, 4207, 1626, 9588, 4754, 5814, 2]
+// Dependencies: [19, 17, 1994, 1990, 1910, 5816, 676, 1498, 21, 4342, 4065, 712, 4338, 1236, 9581, 589, 5165, 11, 9583, 5819, 9585, 1297, 8981, 5768, 8837, 9586, 8832, 4310, 4198, 1222, 5861, 4205, 1626, 9592, 4755, 5815, 2]
 // Exports: default
 
-// Module 9576 (Heading)
+// Module 9580 (Heading)
 import GuildIconSizes from "GuildIconSizes";
 import { View } from "DISCORD_EPOCH";
 import _getSystemLocale from "_getSystemLocale";
@@ -38,7 +38,7 @@ function Heading(children) {
   if (variant == null) {
     variant = headingVariant;
   }
-  return closure_11(require(4340) /* Text */.Text, { accessibilityRole: "header", variant, color: "user-profile-about-me-heading-text", style: { marginBottom }, children: children.children });
+  return closure_11(require(4338) /* Text */.Text, { accessibilityRole: "header", variant, color: "user-profile-about-me-heading-text", style: { marginBottom }, children: children.children });
 }
 function TextWithIcon(themeType) {
   let accessibilityLabel;
@@ -55,7 +55,7 @@ function TextWithIcon(themeType) {
   }
   const obj = { style: items, accessible: true, accessibilityLabel, children: null };
   items = [callback3().textWithIcon, { columnGap: tmp2.columnGap }];
-  const items1 = [icon, callback(require(4340) /* Text */.Text, { variant: tmp2.textVariant, color: "text-default", children })];
+  const items1 = [icon, callback(require(4338) /* Text */.Text, { variant: tmp2.textVariant, color: "text-default", children })];
   obj[3] = items1;
   return callback2(View, obj);
 }
@@ -93,7 +93,7 @@ function Bio(arg0) {
       obj[1] = userId;
       obj[2] = tmp.textVariant;
       obj[3] = lineClamp;
-      items[1] = callback(importDefault(9577), obj);
+      items[1] = callback(importDefault(9581), obj);
       obj[0] = items;
       tmp4 = callback2(View, obj);
     }
@@ -136,10 +136,10 @@ function MemberJoinDates(userId) {
     }
     return member;
   });
-  let obj3 = userId(5164);
+  let obj3 = userId(5165);
   let obj4 = importDefault(11);
   const createdAtDate = obj3.getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
-  let obj5 = userId(5164);
+  let obj5 = userId(5165);
   let joinedAt;
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
@@ -151,7 +151,7 @@ function MemberJoinDates(userId) {
   const items3 = [callback(Heading, obj), ];
   obj = { style: items4, children: null };
   items4 = [callback3().memberJoinDates, { columnGap }];
-  obj1 = { themeType, icon: callback(tmp4(9579).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  obj1 = { themeType, icon: callback(tmp4(9583).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
   const intl2 = tmp4(1236).intl;
   obj1[2] = intl2.formatToPlainString(userId(1236).t["9t7w53"], { date: createdAtDate });
   obj1[3] = createdAtDate;
@@ -162,13 +162,13 @@ function MemberJoinDates(userId) {
     obj3 = { variant: null, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
     obj3[0] = textVariant;
     obj3[4] = closure_8;
-    const items6 = [tmp15(tmp4(4340).Text, obj3), ];
+    const items6 = [tmp15(tmp4(4338).Text, obj3), ];
     obj4 = { themeType: null, icon: null, accessibilityLabel: null, children: null };
     obj4[0] = themeType;
     obj5 = { guild: null, size: null };
     obj5[0] = stateFromStores1;
-    obj5[1] = tmp4(5818).GuildIconSizes.XXSMALL;
-    obj4[1] = tmp15(importDefault(5818), obj5);
+    obj5[1] = tmp4(5819).GuildIconSizes.XXSMALL;
+    obj4[1] = tmp15(importDefault(5819), obj5);
     const intl3 = tmp4(1236).intl;
     const obj6 = { guildName: null, date: null };
     obj6[0] = stateFromStores1.name;
@@ -178,7 +178,7 @@ function MemberJoinDates(userId) {
     items6[1] = tmp15(TextWithIcon, obj4);
     obj2[0] = items6;
     tmp13Result = tmp13(closure_13, obj2);
-    const tmp9Result = importDefault(5818);
+    const tmp9Result = importDefault(5819);
   }
   const obj7 = { children: null };
   items5[1] = tmp13Result;
@@ -196,7 +196,7 @@ function FriendsSinceDate(themeType) {
   if (tmp == null) {
     tmp = closure_14;
   }
-  let obj = require(9581) /* useFriendsSinceDate */;
+  let obj = require(9585) /* useFriendsSinceDate */;
   const friendsSinceDate = obj.useFriendsSinceDate(themeType.userId);
   let tmp6 = null;
   if (null != friendsSinceDate) {
@@ -209,7 +209,7 @@ function FriendsSinceDate(themeType) {
     const obj1 = { variant: null, color: "text-default", children: null };
     obj1[0] = tmp.textVariant;
     obj1[2] = friendsSinceDate;
-    items[1] = callback(tmp3(4340).Text, obj1);
+    items[1] = callback(tmp3(4338).Text, obj1);
     obj[0] = items;
     tmp6 = callback2(View, obj);
   }
@@ -278,7 +278,7 @@ function PolicyLink(children) {
     },
     children: null
   };
-  obj[2] = callback(require(4340) /* Text */.Text, { variant: tmp.textVariant, color: "text-link", children: children.label });
+  obj[2] = callback(require(4338) /* Text */.Text, { variant: tmp.textVariant, color: "text-link", children: children.label });
   return callback(require(1297) /* Button */.PressableOpacity, obj);
 }
 function BotSlashCommands(channel) {
@@ -402,5 +402,5 @@ export default function UserProfileAboutMeCard(arg0) {
   }
   items1[4] = tmp7Result;
   obj[1] = items1;
-  return tmp5(importDefault(5814), obj);
+  return tmp5(importDefault(5815), obj);
 };

@@ -1,27 +1,11 @@
 // Module ID: 16386
 // Function ID: 16387
-// Dependencies: []
+// Dependencies: [576, 16387]
 
 // Module 16386
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "da",
-  pluralRuleFunction(arg0, arg1) {
-    const parts = String(arg0).split(".");
-    const first = parts[0];
-    if (arg1) {
-      let str3 = "other";
-    } else {
-      str3 = "one";
-      if (1 != arg0) {
-        if (!tmp3) {
-          str3 = "one";
-          if (0 != first) {
-            str3 = "one";
-          }
-        }
-      }
-    }
-    return str3;
-  }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "da-GL", parentLocale: "da" });
+import module_576 from "module_576";
+import { default as _default } from "MessageFormat";
+
+_default.default = _default;
+
+export default _default;

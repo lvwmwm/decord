@@ -1,7 +1,7 @@
 // Module ID: 12782
 // Function ID: 12783
 // Name: ReferredFriendAvatar
-// Dependencies: [19, 17, 6957, 676, 21, 4344, 712, 1297, 4340, 12783, 1236, 1993, 589, 5767, 5787, 6958, 698, 4312, 12784, 2007, 12791, 4754, 2]
+// Dependencies: [19, 17, 6963, 676, 21, 4342, 712, 1297, 4338, 12783, 1236, 1993, 589, 5768, 5788, 6964, 698, 4310, 12784, 2007, 12791, 4755, 2]
 // Exports: ReferralProgramPerkCard
 
 // Module 12782 (ReferredFriendAvatar)
@@ -27,7 +27,7 @@ function ReferredFriendAvatar(user) {
   return callback(View, obj);
 }
 function AvailableReferralSlot(children) {
-  return callback(View, { style: createCacheKey().availableReferralSlot, children: callback(require(4340) /* Text */.Text, { variant: "text-xs/medium", color: "text-strong", children: children.slotIndex }) });
+  return callback(View, { style: createCacheKey().availableReferralSlot, children: callback(require(4338) /* Text */.Text, { variant: "text-xs/medium", color: "text-strong", children: children.slotIndex }) });
 }
 function ProgressIndicator(referralSentUsers) {
   referralSentUsers = referralSentUsers.referralSentUsers;
@@ -86,7 +86,7 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const items1 = [emitChanges];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => store.getHasEligibleFriends());
   let obj4 = importDefault;
-  analyticsLocations = importDefault(5767)(importDefault(5787).PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR).analyticsLocations;
+  analyticsLocations = importDefault(5768)(importDefault(5788).PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR).analyticsLocations;
   let everyResult = stateFromStores.size === analyticsLocations(12783).MAX_REFERRALS_SENT;
   if (everyResult) {
     const items2 = [];
@@ -107,7 +107,7 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const obj2 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp.heading, children: null };
   const intl = tmp2(1236).intl;
   obj2[3] = intl.string(analyticsLocations(1236).t.USo4s7);
-  const items5 = [callback(analyticsLocations(4340).Text, obj2), ];
+  const items5 = [callback(analyticsLocations(4338).Text, obj2), ];
   obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.bodyText, children: null };
   if (false !== stateFromStores1) {
     if (tmp14 !== tmp2(12783).MAX_REFERRALS_SENT) {
@@ -150,7 +150,7 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
     const intl5 = tmp2(1236).intl;
     obj8[3] = intl5.string(tmp2(1236).t.Lm2nFc);
     obj8[4] = callback;
-    obj7[1] = tmp12(tmp2(4754).Button, obj8);
+    obj7[1] = tmp12(tmp2(4755).Button, obj8);
     items4[3] = tmp12(tmp11, obj7);
     obj[1] = items4;
     return tmp10(tmp11, obj);

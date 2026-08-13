@@ -1,9 +1,9 @@
-// Module ID: 7045
-// Function ID: 7046
+// Module ID: 7051
+// Function ID: 7052
 // Name: fromServer
-// Dependencies: [32, 7046, 7047, 7052, 678, 676, 4386, 1949, 2]
+// Dependencies: [32, 7052, 7053, 7058, 678, 676, 4387, 1949, 2]
 
-// Module 7045 (fromServer)
+// Module 7051 (fromServer)
 import _slicedToArray from "_slicedToArray";
 import fromServer from "fromServer";
 import createCollectiblesItemsFromServerResponse from "createCollectiblesItemsFromServerResponse";
@@ -54,7 +54,7 @@ CollectiblesProductRecord["fromServer"] = function fromServer(arg0) {
   obj.premiumType = tmp8;
   obj.categorySkuId = category_sku_id;
   obj.isCategoryReward = closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === merged.sku_id);
-  obj.prices = importDefault(4386)(prices);
+  obj.prices = importDefault(4387)(prices);
   obj.items = callback(merged.items);
   let mapped;
   if (bundled_products != null) {
@@ -106,7 +106,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
         obj = {};
       }
       let items = obj.items;
-      obj = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type: null, premiumType: null, items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, variants: null, googleSkuIds: null, eligibleOffers: "r", isFirstParty: 145, bundledProducts: null };
+      obj = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type: null, premiumType: null, items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, variants: null, googleSkuIds: null, eligibleOffers: "r", isFirstParty: 119.428, bundledProducts: null };
       ({ id: obj2[0], id: obj2[1] } = first);
       ({ name: obj2[2], summary: obj2[3], primaryCollectionStyles: obj2[4] } = skus);
       obj[5] = type;
@@ -157,7 +157,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
             }
             ({ items, item } = obj);
             const first = outer1_3(tenantMetadata.selectedOptions, 1)[0];
-            obj = { baseVariantName: null, baseVariantSkuId: null, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "e", type: "Array", premiumType: "call", items: "registerAsset", categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, googleSkuIds: null, eligibleOffers: null, variants: null, bundledProducts: null, isFirstParty: "embed" };
+            obj = { baseVariantName: null, baseVariantSkuId: null, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "e", type: "Array", premiumType: "call", items: "bottom", categorySkuId: true, isCategoryReward: true, prices: true, previewAssets: true, googleSkuIds: true, eligibleOffers: true, variants: true, bundledProducts: true, isFirstParty: true };
             obj[0] = skus.name;
             obj[1] = first.id;
             let str;

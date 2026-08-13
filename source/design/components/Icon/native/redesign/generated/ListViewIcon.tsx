@@ -1,10 +1,10 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8483
+// Function ID: 8484
 // Name: ListViewIcon
-// Dependencies: [19, 21, 712, 4064, 8480, 2]
+// Dependencies: [19, 21, 712, 4064, 8484, 2]
 // Exports: ListViewIcon
 
-// Module 8479 (ListViewIcon)
+// Module 8483 (ListViewIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ListViewIcon = function ListViewIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8480) /* registerAsset */;
+  obj[0] = require(8484) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

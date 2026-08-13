@@ -1,7 +1,7 @@
 // Module ID: 13117
 // Function ID: 13118
 // Name: ItemSeparator
-// Dependencies: [32, 5, 19, 17, 1390, 1930, 4363, 3989, 1922, 4416, 676, 1301, 5437, 505, 21, 4344, 13113, 10873, 589, 8008, 12801, 1236, 9768, 4199, 9110, 4340, 8776, 5767, 1891, 5169, 10707, 4553, 13118, 13119, 1493, 13126, 12, 4312, 8828, 4072, 13127, 8049, 2]
+// Dependencies: [32, 5, 19, 17, 1390, 1930, 4364, 3989, 1922, 4417, 676, 1301, 5438, 505, 21, 4342, 13113, 10787, 589, 8012, 12801, 1236, 9772, 4197, 9114, 4338, 8780, 5768, 1891, 5170, 10621, 4554, 13118, 13119, 1493, 13126, 12, 4310, 8832, 4072, 13127, 8053, 2]
 
 // Module 13117 (ItemSeparator)
 import XSMALL from "XSMALL";
@@ -32,14 +32,14 @@ let metroImportAll;
 const require = arg1;
 function ItemSeparator() {
   const tmp = callback4();
-  return callback2(require(8008) /* Form */.FormDivider, { style: callback4().rowFormDivider });
+  return callback2(require(8012) /* Form */.FormDivider, { style: callback4().rowFormDivider });
 }
 function VoiceMemberListSectionHeader(title) {
   const tmp = callback4();
   let obj = { style: tmp.sectionContainer, children: null };
   obj = { style: tmp.sectionTitle, variant: "text-xs/bold", color: "text-default", children: null };
   obj[3] = title.title.toUpperCase();
-  obj[1] = callback2(require(4340) /* Text */.Text, obj);
+  obj[1] = callback2(require(4338) /* Text */.Text, obj);
   return callback2(closure_8, obj);
 }
 function renderSectionHeader(section) {
@@ -213,7 +213,7 @@ let closure_26 = importAllResult.memo((channel) => {
       obj = { accessibilityLabel: null, accessibilityHidden: true, source: null, size: null };
       const intl = tmp4(1236).intl;
       obj[0] = intl.string(tmp4(1236).t["6Qgrev"]);
-      obj[2] = importDefault(9768);
+      obj[2] = importDefault(9772);
       obj[3] = tmp4(12801).CircularIconButton.Sizes.MEDIUM_32;
       obj[0] = callback2(tmp4(12801).CircularIconButton, obj);
       const intl2 = tmp4(1236).intl;
@@ -229,7 +229,7 @@ let closure_26 = importAllResult.memo((channel) => {
           const result = tmp2Result.showInstantInviteActionSheet(tmp, obj);
         }
       };
-      items[1] = callback2(tmp4(8008).FormRow, obj);
+      items[1] = callback2(tmp4(8012).FormRow, obj);
       obj[0] = items;
       tmp7 = callback3(importAllResult.Fragment, obj);
     }

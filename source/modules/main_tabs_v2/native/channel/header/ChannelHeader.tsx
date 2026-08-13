@@ -1,7 +1,7 @@
 // Module ID: 12608
 // Function ID: 12609
 // Name: ChannelHeader
-// Dependencies: [19, 1391, 676, 1398, 21, 500, 4207, 10491, 1231, 4200, 647, 4557, 12609, 12610, 12611, 12617, 1236, 12619, 2]
+// Dependencies: [19, 1391, 676, 1398, 21, 500, 4205, 10405, 1231, 4198, 647, 4558, 12609, 12610, 12611, 12617, 1236, 12619, 2]
 // Exports: default, navigateToChannelDetails
 
 // Module 12608 (ChannelHeader)
@@ -34,7 +34,7 @@ export default function ChannelHeader(channelId) {
   let obj = channelId(647);
   const items = [ensureGuildLoaded];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getChannel(channelId));
-  const isChannelContentGated = channelId(4557).useIsChannelContentGated(stateFromStores);
+  const isChannelContentGated = channelId(4558).useIsChannelContentGated(stateFromStores);
   let tmp4 = !isChannelContentGated;
   if (!isChannelContentGated) {
     tmp4 = pressable;
@@ -102,13 +102,13 @@ export default function ChannelHeader(channelId) {
 export const navigateToChannelDetails = function navigateToChannelDetails(channelId, screenIndex, arg2) {
   let obj = require(500) /* set */;
   if (obj.isIOS()) {
-    let tmpResult = tmp(4207);
+    let tmpResult = tmp(4205);
     const chatInputRef = tmpResult.getChatInputRef(channelId, screenIndex);
     if (chatInputRef != null) {
       chatInputRef.blur();
     }
   }
-  tmpResult = tmp(10491);
+  tmpResult = tmp(10405);
   if (tmpResult.isSwipeToMemberListEnabled()) {
     const ComponentDispatch = tmp(1231).ComponentDispatch;
     obj = { source: null, channelId: null, screenIndex: null };
@@ -117,7 +117,7 @@ export const navigateToChannelDetails = function navigateToChannelDetails(channe
     obj[2] = screenIndex;
     ComponentDispatch.dispatch(ComponentActions.SHOW_CHANNEL_DETAILS, obj);
   } else {
-    const rootNavigationRef = tmp(4200).getRootNavigationRef();
+    const rootNavigationRef = tmp(4198).getRootNavigationRef();
     let isReadyResult;
     if (rootNavigationRef != null) {
       isReadyResult = rootNavigationRef.isReady();
@@ -128,6 +128,6 @@ export const navigateToChannelDetails = function navigateToChannelDetails(channe
       obj[1] = arg2;
       rootNavigationRef.navigate("sidebar", obj);
     }
-    const tmpResult1 = tmp(4200);
+    const tmpResult1 = tmp(4198);
   }
 };

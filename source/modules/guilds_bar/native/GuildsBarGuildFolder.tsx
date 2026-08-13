@@ -1,9 +1,9 @@
-// Module ID: 15489
-// Function ID: 15490
+// Module ID: 15498
+// Function ID: 15499
 // Name: MiniGuildIcon
-// Dependencies: [19, 7137, 1910, 4167, 5195, 15479, 15485, 15480, 21, 4344, 712, 4065, 589, 5818, 1367, 4753, 4193, 688, 8050, 4083, 4688, 4807, 8271, 5307, 15490, 15492, 12036, 15499, 4313, 5271, 5820, 15482, 15500, 2]
+// Dependencies: [19, 7143, 1910, 4165, 5196, 15488, 15494, 15489, 21, 4342, 712, 4065, 589, 5819, 1367, 4754, 4191, 688, 8054, 4083, 4689, 4808, 8275, 5308, 15499, 15501, 12038, 15508, 4311, 5272, 5821, 15491, 15509, 2]
 
-// Module 15489 (MiniGuildIcon)
+// Module 15498 (MiniGuildIcon)
 import importAllResult from "module_4083";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -50,10 +50,10 @@ function MiniGuildIcon(arg0) {
   if (!selected) {
     prop = tmp4.guildPreviewIconUnselected;
   }
-  obj = { style: items1, guild: stateFromStores, size: tmp(5818).GuildIconSizes.XXSMALL, selected };
+  obj = { style: items1, guild: stateFromStores, size: tmp(5819).GuildIconSizes.XXSMALL, selected };
   items1[1] = prop;
   items1[2] = guildPreview3;
-  return tmp6(importDefault(5818), obj, "" + selected);
+  return tmp6(importDefault(5819), obj, "" + selected);
 }
 function TransitionWrapper(children) {
   let flag = children.fromTop;
@@ -139,7 +139,7 @@ function GuildFolderIcon(item) {
     const obj = { source: null, style: null };
     obj[0] = tmp3;
     obj[1] = item.tintStyle;
-    tmp4 = callback2(importDefault(5307), obj);
+    tmp4 = callback2(importDefault(5308), obj);
   }
   return tmp4;
 }
@@ -565,7 +565,7 @@ const memoResult1 = importAllResult.memo(function GuildsBarGuildFolder(id) {
   E.__initData = closure_26;
   const items10 = [id, sharedValue, isDragTarget, dragDropInProgress];
   const callback1 = color.useCallback(E, items10);
-  obj = { id: null, draggedItemSize: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: null, circle: false, styles: null, label: null, isDragTarget: null, dragState: null, sharedId: null, cutouts: null, config: null, isDragPreview: null, overState: null, preventClipping: true, expanded: null, layout: null, externalChildren: null, expandedChildren: null, children: null };
+  obj = { id: null, draggedItemSize: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: null, circle: false, styles: null, label: null, isDragTarget: null, dragState: null, sharedId: null, cutouts: null, config: null, isDragPreview: null, overState: null, expanded: null, layout: null, externalChildren: null, expandedChildren: null, children: null };
   const obj6 = id(name[19]);
   obj[0] = "" + id;
   obj[1] = itemSize;
@@ -624,8 +624,8 @@ const memoResult1 = importAllResult.memo(function GuildsBarGuildFolder(id) {
   obj[13] = memo1;
   obj[14] = flag;
   obj[15] = overState;
-  obj[17] = expanded;
-  obj[18] = callback1;
+  obj[16] = expanded;
+  obj[17] = callback1;
   let tmp18Result = badge;
   if (expanded) {
     tmp18Result = badge;
@@ -637,7 +637,7 @@ const memoResult1 = importAllResult.memo(function GuildsBarGuildFolder(id) {
       tmp18Result = tmp18(closure_19, obj1);
     }
   }
-  obj[19] = tmp18Result;
+  obj[18] = tmp18Result;
   tmp18Result = undefined;
   if (!flag2) {
     obj2 = { folderId: null, expanded: null };
@@ -645,9 +645,9 @@ const memoResult1 = importAllResult.memo(function GuildsBarGuildFolder(id) {
     obj2[1] = expanded;
     tmp18Result = tmp18(tmp(tmp2[32]), obj2);
   }
-  obj[20] = tmp18Result;
+  obj[19] = tmp18Result;
   obj3 = { renderItem: renderGuildFolderContent, getItemKey, items: memo2, wrapChildren: callback };
-  obj[21] = closure_14(tmp4(name[20]).TransitionGroup, obj3);
+  obj[20] = closure_14(tmp4(name[20]).TransitionGroup, obj3);
   return closure_14(expanded(name[24]), obj);
 });
 let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildFolder.tsx");

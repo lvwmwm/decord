@@ -1,10 +1,10 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 16799
+// Function ID: 16800
 // Name: isRolePowerful
-// Dependencies: [1984, 676, 506, 15977, 2]
+// Dependencies: [1984, 676, 506, 15987, 2]
 // Exports: getPowerfulPermissionTitles, isRolePowerful
 
-// Module 16788 (isRolePowerful)
+// Module 16799 (isRolePowerful)
 import { hasPermission } from "GuildRoleRecordTypeTag";
 import ME from "ME";
 
@@ -18,7 +18,7 @@ export const isRolePowerful = function isRolePowerful(role) {
 };
 export const getPowerfulPermissionTitles = function getPowerfulPermissionTitles(arg0, arg1) {
   const items = [];
-  importDefault(15977);
+  importDefault(15987);
   for (const item10015 of closure_5) {
     let str = item10015;
     let tmp3 = hasPermission;

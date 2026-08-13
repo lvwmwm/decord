@@ -1,7 +1,7 @@
 // Module ID: 12913
 // Function ID: 12914
 // Name: PerkText
-// Dependencies: [19, 17, 4231, 21, 4344, 712, 689, 4340, 12914, 11909, 11934, 1236, 2335, 12915, 2]
+// Dependencies: [19, 17, 4229, 21, 4342, 712, 689, 4338, 12914, 11911, 11936, 1236, 2335, 12915, 2]
 // Exports: default
 
 // Module 12913 (PerkText)
@@ -13,7 +13,7 @@ import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function PerkText(children) {
-  return jsx(require(4340) /* Text */.Text, { color: "text-overlay-light", variant: "text-sm/semibold", children: children.powerup.title });
+  return jsx(require(4338) /* Text */.Text, { color: "text-overlay-light", variant: "text-sm/semibold", children: children.powerup.title });
 }
 createCacheKey = { container: null, text: null };
 createCacheKey = { padding: require("Themes").space.PX_12, backgroundColor: null };
@@ -40,7 +40,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       const obj = guild(outer1_2[9]);
     }
   }, items);
-  if (importDefault(11934)(guild.id)) {
+  if (importDefault(11936)(guild.id)) {
     let num;
     if (arr != null) {
       num = arr.length;
@@ -80,7 +80,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       const obj4 = { perks: null };
       obj4[0] = str2;
       obj[2] = intl.format(tmp2(2335)["7lwpzR"], obj4);
-      obj[1] = jsx(guild(4340).Text, { style: null, variant: "text-sm/semibold", children: null });
+      obj[1] = jsx(guild(4338).Text, { style: null, variant: "text-sm/semibold", children: null });
       return <View style={null} variant="text-sm/semibold">{null}</View>;
     }
   }

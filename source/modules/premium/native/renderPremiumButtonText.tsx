@@ -1,7 +1,7 @@
 // Module ID: 12905
 // Function ID: 12906
 // Name: PremiumText
-// Dependencies: [19, 17, 1924, 21, 4344, 4193, 712, 4007, 1236, 1297, 2]
+// Dependencies: [19, 17, 1924, 21, 4342, 4191, 712, 4007, 1236, 1297, 2]
 // Exports: default
 
 // Module 12905 (PremiumText)

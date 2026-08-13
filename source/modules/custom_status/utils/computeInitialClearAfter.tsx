@@ -1,10 +1,10 @@
-// Module ID: 9504
-// Function ID: 9505
+// Module ID: 9508
+// Function ID: 9509
 // Name: ClearAfterValues
-// Dependencies: [9502, 4034, 2]
+// Dependencies: [9506, 4034, 2]
 // Exports: default
 
-// Module 9504 (ClearAfterValues)
+// Module 9508 (ClearAfterValues)
 import { ClearAfterValues } from "StatusTypes";
 
 const items = [, , ];

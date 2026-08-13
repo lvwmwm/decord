@@ -1,10 +1,10 @@
-// Module ID: 16513
-// Function ID: 16514
+// Module ID: 16524
+// Function ID: 16525
 // Name: NewMemberActionsCompleted
-// Dependencies: [19, 17, 21, 4344, 712, 4083, 4345, 4549, 11718, 4340, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4083, 4343, 4550, 11716, 4338, 1236, 2]
 // Exports: default
 
-// Module 16513 (NewMemberActionsCompleted)
+// Module 16524 (NewMemberActionsCompleted)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -42,19 +42,19 @@ export default function NewMemberActionsCompleted(arg0) {
     obj[0] = obj2.withDelay(500, sharedValue(outer1_2[6]).withTiming(`${100 * sharedValue.get()}%`, { duration: 700 }));
     return obj;
   };
-  obj = { withDelay: sharedValue(4083).withDelay, withTiming: sharedValue(4345).withTiming, barWidth: sharedValue };
+  obj = { withDelay: sharedValue(4083).withDelay, withTiming: sharedValue(4343).withTiming, barWidth: sharedValue };
   fn.__closure = obj;
   fn.__workletHash = 7643178959760;
   fn.__initData = closure_8;
   const animatedStyle = obj1.useAnimatedStyle(fn);
   const effect1 = React.useEffect(() => {
-    const timerId = setTimeout(() => callback2(4549).popWithKey(callback(11718).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY), 2500);
+    const timerId = setTimeout(() => callback2(4550).popWithKey(callback(11716).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY), 2500);
   }, []);
   obj = { style: tmp.screen, children: null };
   obj1 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light", children: null };
   const intl = sharedValue(1236).intl;
   obj1[3] = intl.format(sharedValue(1236).t.pGj5u2, { count: numActions });
-  const items1 = [callback(sharedValue(4340).Text, obj1), ];
+  const items1 = [callback(sharedValue(4338).Text, obj1), ];
   const items2 = [tmp.progressForeground, animatedStyle];
   items1[1] = callback(View, { style: tmp.progressBackground, children: callback(importDefault(4083).View, { style: items2 }) });
   obj[1] = items1;

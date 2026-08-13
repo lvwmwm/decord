@@ -1,10 +1,10 @@
-// Module ID: 9029
-// Function ID: 9030
+// Module ID: 9033
+// Function ID: 9034
 // Name: getEventChannelsByType
-// Dependencies: [1396, 1980, 3989, 9030, 589, 9031, 2]
+// Dependencies: [1396, 1980, 3989, 9034, 589, 9035, 2]
 // Exports: useCanCreateEventInStageChannel, useCanCreateEventInVoiceChannel, useGetEventChannelsByType
 
-// Module 9029 (getEventChannelsByType)
+// Module 9033 (getEventChannelsByType)
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import comparator from "comparator";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
@@ -32,7 +32,7 @@ function getEventChannelsByType(id, channelTypeFromEntity) {
       let obj2 = channel;
       let tmp4 = require;
       let tmp5 = dependencyMap;
-      let obj3 = require(9031) /* canManageResource */;
+      let obj3 = require(9035) /* canManageResource */;
       let manageResourcePermissions = obj3.getManageResourcePermissions(channel);
       let canManageAllEvents = manageResourcePermissions.canCreateGuildEvent;
       if (!canManageAllEvents) {

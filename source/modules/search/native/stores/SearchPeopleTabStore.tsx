@@ -1,9 +1,9 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 11797
+// Function ID: 11798
 // Name: teardown
-// Dependencies: [1391, 5265, 12, 11800, 9667, 1236, 589, 709, 2]
+// Dependencies: [1391, 5266, 12, 11798, 9671, 1236, 589, 709, 2]
 
-// Module 11799 (teardown)
+// Module 11797 (teardown)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleChannelSelect from "handleChannelSelect";
 import { Store } from "initialize";
@@ -49,7 +49,7 @@ prototype["search"] = function search(str) {
     } else {
       const obj2 = importDefault(12);
       const values = importDefault(12).chain(mutablePrivateChannels.getMutablePrivateChannels()).values();
-      const found = values.filter(trimmed1(11800).filterGroupDMs);
+      const found = values.filter(trimmed1(11798).filterGroupDMs);
       const mapped = found.map((id) => {
         const items = [id, trimmed1(outer1_2[3]).matchGroupDM(id, trimmed1), outer1_4.getScoreWithoutFetchingLatest(id.id)];
         return items;
@@ -86,7 +86,7 @@ prototype["processResults"] = function processResults() {
   const self = this;
   const userSearch = this.userSearch;
   this.userIndexes = userSearch.filter(this.searchQueryString);
-  let obj = require(9667) /* _toPropertyKey */;
+  let obj = require(9671) /* _toPropertyKey */;
   obj = { data: this.userIndexes, withGuildMembers: true, withAffinitySuggestions: true, withFriends: true, withFriendSuggestions: false, withFriendRequests: false, withFriendRequestsIncoming: false, withFriendRequestsOutgoing: false, excludeCurrentUser: true };
   const result = obj.parseUserSearchResults(obj);
   let arr3 = result;
@@ -173,7 +173,7 @@ const searchPeopleTabStoreImpl = new SearchPeopleTabStoreImpl(require("dispatche
       obj.groupDMs = [];
       obj.userIndexes = {};
       obj.results = [];
-      let userSearch = new obj(9667).UserSearch(() => obj.processResults());
+      let userSearch = new obj(9671).UserSearch(() => obj.processResults());
       obj.userSearch = userSearch;
       userSearch = obj.userSearch;
       const subscription = userSearch.subscribe(() => obj.processResults(), true);

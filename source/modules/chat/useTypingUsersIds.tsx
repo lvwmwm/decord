@@ -1,10 +1,10 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11421
+// Function ID: 11422
 // Name: useTypingUserIds
-// Dependencies: [3998, 11431, 1922, 589, 2]
+// Dependencies: [3998, 11422, 1922, 589, 2]
 // Exports: useTypingUserIds
 
-// Module 11430 (useTypingUserIds)
+// Module 11421 (useTypingUserIds)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import handleTypingStart from "handleTypingStart";
 import mergeGuildAvatar from "mergeGuildAvatar";

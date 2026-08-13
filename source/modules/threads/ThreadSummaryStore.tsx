@@ -1,9 +1,9 @@
-// Module ID: 7275
-// Function ID: 7276
+// Module ID: 7280
+// Function ID: 7281
 // Name: handleSummarizeThreadFinish
 // Dependencies: [589, 709, 2]
 
-// Module 7275 (handleSummarizeThreadFinish)
+// Module 7280 (handleSummarizeThreadFinish)
 import { Store } from "initialize";
 
 function handleSummarizeThreadFinish() {

@@ -1,9 +1,9 @@
-// Module ID: 4363
-// Function ID: 4364
+// Module ID: 4364
+// Function ID: 4365
 // Name: reset
-// Dependencies: [4358, 4364, 1218, 1391, 1910, 4392, 3989, 4415, 1979, 4360, 676, 4408, 687, 4407, 13245, 13246, 13247, 2007, 7225, 589, 13134, 709, 2]
+// Dependencies: [4359, 4365, 1218, 1391, 1910, 4393, 3989, 4416, 1979, 4361, 676, 4409, 687, 4408, 13246, 13247, 13248, 2007, 7230, 589, 13134, 709, 2]
 
-// Module 4363 (reset)
+// Module 4364 (reset)
 import set from "set";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -47,7 +47,7 @@ function handleStreamUpdate(streamKey) {
     map1.delete(streamKey);
   }
   const obj = {};
-  const merged = Object.assign(require(4407) /* isStreamKey */.decodeStreamKey(streamKey));
+  const merged = Object.assign(require(4408) /* isStreamKey */.decodeStreamKey(streamKey));
   obj.state = paused ? closure_18.PAUSED : closure_18.ACTIVE;
   const result = map.set(streamKey, obj);
   closure_5[streamKey] = { streamKey, region, viewerIds };
@@ -142,7 +142,7 @@ prototype["getActiveStreamForApplicationStream"] = function getActiveStreamForAp
   if (importDefault(13134)(_detectH265HardwareDecode)) {
     if (null != streamForUser) {
       const self = this;
-      let activeStreamForStreamKey = this.getActiveStreamForStreamKey(require(4407) /* isStreamKey */.encodeStreamKey(streamForUser));
+      let activeStreamForStreamKey = this.getActiveStreamForStreamKey(require(4408) /* isStreamKey */.encodeStreamKey(streamForUser));
       if (activeStreamForStreamKey == null) {
         activeStreamForStreamKey = null;
       }
@@ -189,7 +189,7 @@ prototype["getStreamerActiveStreamMetadata"] = function getStreamerActiveStreamM
     const activeStreamForUser = this.getActiveStreamForUser(id, channel.getGuildId());
     let tmp4 = null;
     if (null != activeStreamForUser) {
-      const obj2 = require(4407) /* isStreamKey */;
+      const obj2 = require(4408) /* isStreamKey */;
       let tmp8 = dependencyMap3[obj2.encodeStreamKey(obj2, activeStreamForUser)];
       if (tmp8 == null) {
         tmp8 = null;
@@ -321,7 +321,7 @@ prototype["getStreamForUser"] = function getStreamForUser(id, guildId) {
         const basicChannel1 = obj.getBasicChannel(tmp5.channelId);
         let first = null != basicChannel1;
         if (first) {
-          const obj2 = require(7225) /* canStreamInChannel */;
+          const obj2 = require(7230) /* canStreamInChannel */;
           first = obj2.canWatchStream(basicChannel1, updateVoiceState, createGuildRecordFromRust, getUncachedChannelPermissions, set)[0];
         }
         flag = first;
@@ -443,8 +443,8 @@ prototype["getViewerIds"] = function getViewerIds(currentUserActiveStream) {
   if (importDefault(13134)(_detectH265HardwareDecode)) {
     let encodeStreamKeyResult = currentUserActiveStream;
     if (typeof currentUserActiveStream !== "string") {
-      encodeStreamKeyResult = require(4407) /* isStreamKey */.encodeStreamKey(currentUserActiveStream);
-      const obj = require(4407) /* isStreamKey */;
+      encodeStreamKeyResult = require(4408) /* isStreamKey */.encodeStreamKey(currentUserActiveStream);
+      const obj = require(4408) /* isStreamKey */;
     }
     let tmp5 = null;
     if (null != encodeStreamKeyResult) {
@@ -568,7 +568,7 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
         pid = tmp20.pid;
       }
       if (tmp2) {
-        const tmp6 = importDefault(13246)(content);
+        const tmp6 = importDefault(13247)(content);
         let obj = { pid: null, id: null };
         obj[0] = pid;
         let id;
@@ -711,7 +711,7 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
   },
   STREAM_WATCH: function handleStreamWatch(streamKey) {
     streamKey = streamKey.streamKey;
-    let obj = require(4407) /* isStreamKey */;
+    let obj = require(4408) /* isStreamKey */;
     const decodeStreamKeyResult = obj.decodeStreamKey(streamKey);
     map.delete(streamKey);
     obj = {};
@@ -733,7 +733,7 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
     let streamType;
     ({ streamType, guildId, channelId, pid, sourceId } = arg0);
     ({ sourceName, sourceIcon, previewDisabled } = arg0);
-    let obj = sourceId(4407);
+    let obj = sourceId(4408);
     obj = { streamType, guildId, channelId, ownerId: store2.getId() };
     const encodeStreamKeyResult = obj.encodeStreamKey(obj);
     let startsWithResult;
@@ -827,13 +827,13 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
       } else if (reason === tmp3.UNAUTHORIZED) {
         FAILED = tmp22.FAILED;
       } else if (reason === tmp3.SAFETY_GUILD_RATE_LIMITED) {
-        let obj = guildId(4407);
+        let obj = guildId(4408);
         guildId = obj.decodeStreamKey(streamKey).guildId;
-        guildId(2007)(13247, dependencyMap.paths).then((arg0) => {
+        guildId(2007)(13248, dependencyMap.paths).then((arg0) => {
           arg0.default(guildId);
         });
         FAILED = tmp22.ENDED;
-        const promise = guildId(2007)(13247, dependencyMap.paths);
+        const promise = guildId(2007)(13248, dependencyMap.paths);
       } else {
         if (tmp9) {
           FAILED = tmp22.FAILED;
@@ -860,7 +860,7 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
     let channelId;
     let selfStreamHidden;
     ({ channelId, selfStreamHidden } = arg0);
-    let isStreamKeyResult = require(4407) /* isStreamKey */.isStreamKey(c24);
+    let isStreamKeyResult = require(4408) /* isStreamKey */.isStreamKey(c24);
     if (isStreamKeyResult) {
       let hasItem;
       if (c24 != null) {
@@ -947,8 +947,8 @@ const applicationStreamingStore = new ApplicationStreamingStore(require("dispatc
     });
     let isStreamKeyResult = null != id;
     if (isStreamKeyResult) {
-      isStreamKeyResult = require(4407) /* isStreamKey */.isStreamKey(id);
-      const obj = require(4407) /* isStreamKey */;
+      isStreamKeyResult = require(4408) /* isStreamKey */.isStreamKey(id);
+      const obj = require(4408) /* isStreamKey */;
     }
     if (isStreamKeyResult) {
       isStreamKeyResult = id.includes(store2.getId());

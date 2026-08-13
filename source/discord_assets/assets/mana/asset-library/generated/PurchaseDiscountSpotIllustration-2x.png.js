@@ -1,9 +1,9 @@
-// Module ID: 6694
-// Function ID: 6695
+// Module ID: 6698
+// Function ID: 6699
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6694 (metadata)
+// Module 6698 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PurchaseDiscountSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/89f40fe565122723073a27d56105d67b0c36e7a67a20eac16535fd944ed5bb52.png";

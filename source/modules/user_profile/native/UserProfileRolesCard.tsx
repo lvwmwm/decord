@@ -1,10 +1,10 @@
-// Module ID: 5790
-// Function ID: 5791
+// Module ID: 5791
+// Function ID: 5792
 // Name: RoleDot
-// Dependencies: [19, 17, 1990, 1983, 676, 21, 4344, 712, 5791, 4034, 5794, 5795, 4061, 1236, 5792, 5800, 5811, 4340, 4886, 589, 5813, 5814, 2]
+// Dependencies: [19, 17, 1990, 1983, 676, 21, 4342, 712, 5792, 4034, 5795, 5796, 4061, 1236, 5793, 5801, 5812, 4338, 4887, 589, 5814, 5815, 2]
 // Exports: default
 
-// Module 5790 (RoleDot)
+// Module 5791 (RoleDot)
 import initialize from "initialize";
 import { View } from "Text";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -187,8 +187,8 @@ export default function UserProfileRolesCard(userId) {
     obj[0] = guildId;
     obj[1] = roles;
     obj[2] = callback(RolesList, obj);
-    tmp4 = callback(guildId(5814), obj);
-    const tmp7 = guildId(5814);
+    tmp4 = callback(guildId(5815), obj);
+    const tmp7 = guildId(5815);
   }
   return tmp4;
 };

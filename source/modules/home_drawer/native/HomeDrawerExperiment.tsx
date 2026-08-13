@@ -1,9 +1,9 @@
-// Module ID: 4205
-// Function ID: 4206
+// Module ID: 4203
+// Function ID: 4204
 // Name: MobileHomeDrawerExperiment
 // Dependencies: [1368, 2]
 
-// Module 4205 (MobileHomeDrawerExperiment)
+// Module 4203 (MobileHomeDrawerExperiment)
 const obj = { 1: null, 2: { enableHome: true, landOnHome: false, enablePeekHint: true } };
 obj[2] = { enableHome: true, landOnHome: true, enablePeekHint: false };
 const tmp2 = require("getUnitId")({ name: "2025-10-mobile-home-drawer", kind: "user", defaultConfig: { enableHome: false, landOnHome: false, enablePeekHint: false }, variations: obj });

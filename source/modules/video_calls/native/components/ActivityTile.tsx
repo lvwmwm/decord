@@ -1,10 +1,10 @@
-// Module ID: 10775
-// Function ID: 10776
+// Module ID: 10689
+// Function ID: 10690
 // Name: ActivityTileInner
-// Dependencies: [5, 32, 19, 17, 1390, 1922, 676, 1301, 4369, 21, 1297, 4344, 712, 589, 1370, 5773, 4533, 4189, 10776, 5767, 5787, 8776, 1236, 10706, 10707, 10778, 10705, 4886, 10779, 10807, 4340, 4755, 4072, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1922, 676, 1301, 4370, 21, 1297, 4342, 712, 589, 1370, 5774, 4534, 4187, 10690, 5768, 5788, 8780, 1236, 10620, 10621, 10692, 10619, 4887, 10693, 10721, 4338, 4756, 4072, 2]
 // Exports: default
 
-// Module 10775 (ActivityTileInner)
+// Module 10689 (ActivityTileInner)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ManaContext from "ManaContext";
 import "context";
@@ -83,7 +83,7 @@ function ActivityTileInner(participant) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = v0(10707)(obj1);
+                obj2[0] = v0(10621)(obj1);
                 return obj2;
               } else {
                 dependencyMap = 3;
@@ -94,7 +94,7 @@ function ActivityTileInner(participant) {
             dependencyMap = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = outer1_0(10778);
+            obj = outer1_0(10692);
             const result = obj.setOrientationLockState(mergeGuildAvatar);
           }
           dependencyMap = 3;

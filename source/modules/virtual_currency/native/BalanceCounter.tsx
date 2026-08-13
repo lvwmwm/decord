@@ -1,7 +1,7 @@
 // Module ID: 10194
 // Function ID: 10195
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4083, 1356, 4753, 10195, 4340, 2]
+// Dependencies: [32, 19, 21, 4083, 1356, 4754, 10195, 4338, 2]
 
 // Module 10194 (BalanceCounter)
 import _slicedToArray from "_slicedToArray";

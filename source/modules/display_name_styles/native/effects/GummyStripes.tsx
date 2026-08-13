@@ -1,10 +1,10 @@
-// Module ID: 13992
-// Function ID: 13993
+// Module ID: 14000
+// Function ID: 14001
 // Name: GummyStripes
-// Dependencies: [19, 17, 21, 4344, 688, 2]
+// Dependencies: [19, 17, 21, 4342, 688, 2]
 // Exports: default
 
-// Module 13992 (GummyStripes)
+// Module 14000 (GummyStripes)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

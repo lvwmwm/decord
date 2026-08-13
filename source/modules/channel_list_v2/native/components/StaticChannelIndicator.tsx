@@ -1,10 +1,10 @@
-// Module ID: 9888
-// Function ID: 9889
+// Module ID: 9891
+// Function ID: 9892
 // Name: ChannelIndicator
-// Dependencies: [17, 4540, 21, 4344, 712, 4065, 2]
+// Dependencies: [17, 4541, 21, 4342, 712, 4065, 2]
 // Exports: default
 
-// Module 9888 (ChannelIndicator)
+// Module 9891 (ChannelIndicator)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";

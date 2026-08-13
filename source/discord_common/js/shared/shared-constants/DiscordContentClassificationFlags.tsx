@@ -1,9 +1,9 @@
-// Module ID: 4880
-// Function ID: 4881
+// Module ID: 4881
+// Function ID: 4882
 // Name: frozen
 // Dependencies: [506, 2]
 
-// Module 4880 (frozen)
+// Module 4881 (frozen)
 import importAllResult from "fromString";
 import importAllResult1 from "fromString";
 import importAllResult2 from "fromString";

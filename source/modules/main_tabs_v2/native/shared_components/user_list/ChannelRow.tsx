@@ -1,8 +1,8 @@
-// Module ID: 9710
-// Function ID: 9711
-// Dependencies: [19, 17, 1391, 1910, 4356, 3998, 1922, 9665, 4540, 21, 4344, 712, 589, 4534, 9711, 10315, 4856, 4849, 4340, 4031, 3943, 8493, 5413, 2]
+// Module ID: 9714
+// Function ID: 9715
+// Dependencies: [19, 17, 1391, 1910, 4357, 3998, 1922, 9669, 4541, 21, 4342, 712, 589, 4535, 9715, 11152, 4857, 4850, 4338, 4031, 3943, 8497, 5414, 2]
 
-// Module 9710
+// Module 9714
 import importAllResult from "resetCache";
 import { View } from "TextIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";

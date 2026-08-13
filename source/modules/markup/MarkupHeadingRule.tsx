@@ -1,9 +1,9 @@
-// Module ID: 4800
-// Function ID: 4801
+// Module ID: 4801
+// Function ID: 4802
 // Name: match
 // Dependencies: [4060, 2]
 
-// Module 4800 (match)
+// Module 4801 (match)
 const require = arg1;
 const re2 = /\n$/;
 let obj = {};

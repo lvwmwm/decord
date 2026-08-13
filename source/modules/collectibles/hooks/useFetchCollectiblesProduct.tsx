@@ -1,7 +1,7 @@
 // Module ID: 10160
 // Function ID: 10161
 // Name: useFetchCollectiblesProduct
-// Dependencies: [32, 19, 4390, 7043, 676, 647, 1949, 7042, 2]
+// Dependencies: [32, 19, 4391, 7049, 676, 647, 1949, 7048, 2]
 // Exports: useFetchCollectiblesProduct
 
 // Module 10160 (useFetchCollectiblesProduct)

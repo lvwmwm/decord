@@ -1,8 +1,8 @@
-// Module ID: 8040
-// Function ID: 8041
-// Dependencies: [19, 17, 676, 21, 4344, 8041, 2]
+// Module ID: 8044
+// Function ID: 8045
+// Dependencies: [19, 17, 676, 21, 4342, 8045, 2]
 
-// Module 8040
+// Module 8044
 import { Text } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -16,7 +16,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   let style;
   ({ style, children } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(8041) /* useLegacyTextMigrationHighlight */;
+  let obj = require(8045) /* useLegacyTextMigrationHighlight */;
   obj = { ref };
   const legacyTextMigrationHighlight = obj.useLegacyTextMigrationHighlight();
   const merged1 = Object.assign(merged);

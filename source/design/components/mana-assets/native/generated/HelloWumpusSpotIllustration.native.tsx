@@ -1,10 +1,10 @@
-// Module ID: 6521
-// Function ID: 6522
+// Module ID: 6523
+// Function ID: 6524
 // Name: HelloWumpusSpotIllustration
-// Dependencies: [21, 5307, 6522, 2]
+// Dependencies: [21, 5308, 6524, 2]
 // Exports: HelloWumpusSpotIllustration
 
-// Module 6521 (HelloWumpusSpotIllustration)
+// Module 6523 (HelloWumpusSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HelloWumpusSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const HelloWumpusSpotIllustration = function HelloWumpusSpotIllustration(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6522);
+  obj[0] = importDefault(6524);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const HelloWumpusSpotIllustration = function HelloWumpusSpotIllustration(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
 };

@@ -1,10 +1,10 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 15647
+// Function ID: 15648
 // Name: SettingsButton
-// Dependencies: [32, 19, 17, 4336, 1218, 1910, 8955, 8943, 15639, 1388, 21, 4344, 712, 15640, 7792, 14311, 8958, 4312, 15642, 2007, 4300, 15653, 4340, 1236, 7682, 5367, 4888, 4164, 4886, 15589, 15591, 5365, 8957, 1493, 1628, 1500, 6976, 589, 15579, 15673, 15676, 6064, 1377, 15663, 1499, 7344, 8423, 8424, 14398, 692, 15677, 15683, 15688, 15701, 15702, 15703, 15704, 15705, 15706, 15707, 15708, 8436, 15709, 7786, 500, 11354, 4195, 15710, 15641, 4072, 2]
+// Dependencies: [32, 19, 17, 4334, 1218, 1910, 8959, 8947, 15648, 1388, 21, 4342, 712, 15649, 7796, 14320, 8962, 4310, 15651, 2007, 4298, 15662, 4338, 1236, 7686, 5368, 4889, 4162, 4887, 15598, 15600, 5366, 8961, 1493, 1628, 1500, 6982, 589, 15588, 15682, 15685, 6066, 1377, 15672, 1499, 7349, 8427, 8428, 14407, 692, 15686, 15692, 15697, 15710, 15711, 15712, 15713, 15714, 15715, 15716, 15717, 8440, 15718, 7790, 500, 11345, 4193, 15719, 15650, 4072, 2]
 // Exports: ICYMITab
 
-// Module 15638 (SettingsButton)
+// Module 15647 (SettingsButton)
 import generateHydrationId from "generateHydrationId";
 import importAllResult from "asyncRequireImpl";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
@@ -27,7 +27,7 @@ let closure_6;
 const require = arg1;
 function SettingsButton() {
   let obj = { accessibilityLabel: "button", variant: "tertiary", size: "sm", icon: null, onPress: null };
-  obj[3] = callback(require(14311) /* FiltersHorizontalIcon */.FiltersHorizontalIcon, { size: "sm" });
+  obj[3] = callback(require(14320) /* FiltersHorizontalIcon */.FiltersHorizontalIcon, { size: "sm" });
   obj[4] = function onPress() {
     callback2(paths[16]).itemInteracted("filters_button", "filters_button", "press_info_button");
     const obj = callback2(paths[16]);
@@ -35,19 +35,19 @@ function SettingsButton() {
     const obj2 = callback2(paths[16]);
     callback2(paths[17]).openLazy(callback(paths[19])(paths[18], paths.paths), "ICYMISettingsActionSheet", {});
   };
-  return callback(require(7792) /* IconButton */.IconButton, obj);
+  return callback(require(7796) /* IconButton */.IconButton, obj);
 }
 function InfoButton() {
   let obj = { accessibilityLabel: "button", variant: "tertiary", size: "sm", icon: null, onPress: null };
-  obj[3] = callback(require(4300) /* CircleInformationIcon */.CircleInformationIcon, { size: "sm" });
+  obj[3] = callback(require(4298) /* CircleInformationIcon */.CircleInformationIcon, { size: "sm" });
   obj[4] = function onPress() {
-    callback2(8958).itemInteracted("info_button", "info_button", "press_info_button");
-    const obj = callback2(8958);
-    callback2(8958).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "info_button", actionIntentType: "open", actionDestinationType: null } });
-    const obj2 = callback2(8958);
-    callback(15653).pushICYMIInfoModal({ extendedOnboarding: true });
+    callback2(8962).itemInteracted("info_button", "info_button", "press_info_button");
+    const obj = callback2(8962);
+    callback2(8962).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "info_button", actionIntentType: "open", actionDestinationType: null } });
+    const obj2 = callback2(8962);
+    callback(15662).pushICYMIInfoModal({ extendedOnboarding: true });
   };
-  return callback(require(7792) /* IconButton */.IconButton, obj);
+  return callback(require(7796) /* IconButton */.IconButton, obj);
 }
 function ICYMIHeaderTextWrapper() {
   const tmp = callback3();
@@ -58,18 +58,18 @@ function ICYMIHeaderTextWrapper() {
       obj = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
       const intl = callback(1236).intl;
       obj[4] = intl.string(callback(1236).t.SY4sdZ);
-      const items = [callback2(callback(4340).Text, obj), ];
+      const items = [callback2(callback(4338).Text, obj), ];
       obj = { color: "text-brand", variant: "text-xs/bold", style: { marginTop: 4 }, children: null };
       const intl2 = callback(1236).intl;
       obj[3] = intl2.string(callback(1236).t.Ac2OZA);
-      items[1] = callback2(callback(4340).Text, obj);
+      items[1] = callback2(callback(4338).Text, obj);
       obj[0] = items;
       return callback3(closure_15, obj);
     }, [])
   });
 }
 function handleEndReached() {
-  require(8957) /* generateHydrationId */.hydrateNextPage();
+  require(8961) /* generateHydrationId */.hydrateNextPage();
 }
 function ICYMI(inNestedNavigator) {
   let data;
@@ -182,7 +182,7 @@ function ICYMI(inNestedNavigator) {
     } else {
       obj = { scrollToTop: null };
       obj[0] = function scrollToTop() {
-        callback(8423).showForLaterModal(callback(8424).SavedMessageSortTypes.BOOKMARK);
+        callback(8427).showForLaterModal(callback(8428).SavedMessageSortTypes.BOOKMARK);
       };
       ref1.current = obj;
     }
@@ -357,15 +357,15 @@ let closure_22 = importAllResult.memo((inNestedNavigator) => {
   inNestedNavigator = inNestedNavigator.inNestedNavigator;
   const tmp = callback3();
   let obj = dependencyMap;
-  const tmp2 = importDefault(7682)();
+  const tmp2 = importDefault(7686)();
   let LeftBackIconWithBadge = require;
   obj = { top: !tmp2, style: tmp.header, children: null };
   obj = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj1 = { dark: null, light: null };
-  obj1[0] = require(4164) /* getGradientColorByPercentage */.OverlayOpacity.LEVEL_7;
-  obj1[1] = require(4164) /* getGradientColorByPercentage */.OverlayOpacity.LEVEL_8;
+  obj1[0] = require(4162) /* getGradientColorByPercentage */.OverlayOpacity.LEVEL_7;
+  obj1[1] = require(4162) /* getGradientColorByPercentage */.OverlayOpacity.LEVEL_8;
   obj[4] = obj1;
-  const items = [callback(importDefault(4888), obj), , ];
+  const items = [callback(importDefault(4889), obj), , ];
   const obj2 = { style: tmp.headerTitle, children: null };
   const obj3 = { style: tmp.headerLeft, children: null };
   if (!tmp2) {
@@ -384,22 +384,22 @@ let closure_22 = importAllResult.memo((inNestedNavigator) => {
       obj5[0] = tmp.headerBorder;
       items[2] = tmp4(tmp6, obj5);
       obj[2] = items;
-      return tmp3(require(5367) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+      return tmp3(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
     }
   }
   const obj6 = { style: tmp.headerClose, accessibilityLabel: null, onPress: null, children: null };
   const intl = LeftBackIconWithBadge(1236).intl;
   obj6[1] = intl.string(LeftBackIconWithBadge(1236).t["13/7kX"]);
-  obj6[2] = LeftBackIconWithBadge(15589).goBack;
+  obj6[2] = LeftBackIconWithBadge(15598).goBack;
   if (inNestedNavigator) {
-    LeftBackIconWithBadge = LeftBackIconWithBadge(15591).LeftBackIconWithBadge;
+    LeftBackIconWithBadge = LeftBackIconWithBadge(15600).LeftBackIconWithBadge;
     obj = { includeNotificationsCount: true };
     let tmp4Result = tmp4(LeftBackIconWithBadge, obj);
   } else {
-    tmp4Result = tmp4(LeftBackIconWithBadge(5365).XSmallIcon, { color: "interactive-text-default" });
+    tmp4Result = tmp4(LeftBackIconWithBadge(5366).XSmallIcon, { color: "interactive-text-default" });
   }
   obj6[3] = tmp4Result;
-  tmp4Result = tmp4(LeftBackIconWithBadge(4886).PressableOpacity, obj6);
+  tmp4Result = tmp4(LeftBackIconWithBadge(4887).PressableOpacity, obj6);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/icymi/native/ICYMI.tsx");
 
@@ -410,7 +410,7 @@ export const ICYMITab = function ICYMITab(route) {
   let obj = _require(589);
   const items = [fetchFingerprint];
   const stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  const tmp6 = importDefault(7682)();
+  const tmp6 = importDefault(7686)();
   _require = tmp6;
   let inNestedNavigator;
   if (route != null) {
@@ -430,7 +430,7 @@ export const ICYMITab = function ICYMITab(route) {
     return containerOuterTablet;
   }, items1);
   const tmp11 = tmp6 ? closure_5 : importAllResult.Fragment;
-  const tmp3 = importDefault(4195)();
+  const tmp3 = importDefault(4193)();
   const tmp9 = importAllResult;
   if (tmp6) {
     obj = { style: null };
@@ -442,12 +442,12 @@ export const ICYMITab = function ICYMITab(route) {
   const obj2 = { children: null };
   const obj3 = {};
   const merged = Object.assign(obj);
-  const items2 = [closure_14(importDefault(4888), { absolute: true }), ];
+  const items2 = [closure_14(importDefault(4889), { absolute: true }), ];
   const obj4 = { gradient: tmp3, children: null };
   obj4[1] = closure_14(ICYMI, { inNestedNavigator }, "" + stateFromStores);
   items2[1] = closure_14(_require(4072).ThemeContextProvider, obj4);
   obj3.children = items2;
   obj2[0] = closure_16(tmp11, obj3);
-  obj1[0] = closure_14(_require(15641).ICYMIContextProvider, obj2);
-  return closure_14(importDefault(15710), obj1);
+  obj1[0] = closure_14(_require(15650).ICYMIContextProvider, obj2);
+  return closure_14(importDefault(15719), obj1);
 };

@@ -1,10 +1,10 @@
-// Module ID: 16836
-// Function ID: 16837
+// Module ID: 16847
+// Function ID: 16848
 // Name: useGuildApplication
-// Dependencies: [5, 32, 19, 4382, 589, 5768, 4243, 2]
+// Dependencies: [5, 32, 19, 4383, 589, 5769, 4241, 2]
 // Exports: default
 
-// Module 16836 (useGuildApplication)
+// Module 16847 (useGuildApplication)
 import fetchApplication from "fetchApplication";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

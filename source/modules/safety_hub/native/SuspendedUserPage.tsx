@@ -1,10 +1,10 @@
-// Module ID: 16054
-// Function ID: 16055
+// Module ID: 16064
+// Function ID: 16065
 // Name: SuspendedUserSafetyHubPage
-// Dependencies: [19, 17, 7846, 21, 4344, 712, 5367, 7792, 1236, 5866, 8068, 4340, 4058, 14061, 2]
+// Dependencies: [19, 17, 7850, 21, 4342, 712, 5368, 7796, 1236, 5867, 8072, 4338, 4058, 14070, 2]
 // Exports: default
 
-// Module 16054 (SuspendedUserSafetyHubPage)
+// Module 16064 (SuspendedUserSafetyHubPage)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { SafetyHubLinks } from "SafetyHubView";
@@ -35,10 +35,10 @@ export default function SuspendedUserSafetyHubPage() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj1[2] = function onPress() {
-    callback(5866).closeSuspendedUser();
+    callback(5867).closeSuspendedUser();
   };
-  obj1[3] = importDefault(8068);
-  const items = [callback(require(7792) /* IconButton */.IconButton, obj1), ];
+  obj1[3] = importDefault(8072);
+  const items = [callback(require(7796) /* IconButton */.IconButton, obj1), ];
   const obj2 = {
     style: tmp.text,
     onPress() {
@@ -53,12 +53,12 @@ export default function SuspendedUserSafetyHubPage() {
   const obj3 = { style: tmp.link, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl3.string(require(1236) /* getSystemLocale */.t["9JceHN"]);
-  items1[2] = callback(require(4340) /* Text */.Text, obj3);
+  items1[2] = callback(require(4338) /* Text */.Text, obj3);
   obj2[4] = items1;
-  items[1] = callback2(require(4340) /* Text */.Text, obj2);
+  items[1] = callback2(require(4338) /* Text */.Text, obj2);
   obj[1] = items;
-  const items2 = [callback2(View, obj), callback(importDefault(14061), { visible: true })];
+  const items2 = [callback2(View, obj), callback(importDefault(14070), { visible: true })];
   obj[1] = items2;
   obj[3] = callback2(View, obj);
-  return callback(require(5367) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

@@ -1,7 +1,7 @@
 // Module ID: 10150
 // Function ID: 10151
 // Name: useSocialLayerStorefrontMobileAccountLinkingDisabled
-// Dependencies: [5889, 589, 2]
+// Dependencies: [5890, 589, 2]
 // Exports: useSocialLayerStorefrontMobileAccountLinkingDisabled
 
 // Module 10150 (useSocialLayerStorefrontMobileAccountLinkingDisabled)

@@ -1,24 +1,24 @@
-// Module ID: 8836
-// Function ID: 8837
+// Module ID: 8840
+// Function ID: 8841
 // Name: set
-// Dependencies: [8837, 8831, 2]
+// Dependencies: [8841, 8835, 2]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId
 
-// Module 8836 (set)
+// Module 8840 (set)
 import set from "set";
 
 let set = new Set(Object.values(require("LEGACY_BADGE_ID_MAP").LEGACY_BADGE_ID_MAP));
 const result = set.fileFinishedImporting("modules/badges/BadgeIdResolution.tsx");
 
 export const legacyBadgeIdToBadgeId = function legacyBadgeIdToBadgeId(arg0) {
-  return require(8837) /* LEGACY_BADGE_ID_MAP */.LEGACY_BADGE_ID_MAP[arg0];
+  return require(8841) /* LEGACY_BADGE_ID_MAP */.LEGACY_BADGE_ID_MAP[arg0];
 };
 export const resolveProfileBadgeId = function resolveProfileBadgeId(id) {
-  const tmp3 = require(8837) /* LEGACY_BADGE_ID_MAP */.LEGACY_BADGE_ID_MAP[id];
+  const tmp3 = require(8841) /* LEGACY_BADGE_ID_MAP */.LEGACY_BADGE_ID_MAP[id];
   if (null != tmp3) {
     return tmp3;
   } else {
-    const tmp4 = tmp(8831).BadgeId[id.toUpperCase(id)];
+    const tmp4 = tmp(8835).BadgeId[id.toUpperCase(id)];
     let tmp5;
     if (typeof tmp4 === "number") {
       tmp5 = tmp4;

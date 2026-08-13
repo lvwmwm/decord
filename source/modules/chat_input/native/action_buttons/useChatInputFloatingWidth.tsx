@@ -1,10 +1,10 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11688
+// Function ID: 11689
 // Name: useChatInputFloatingWidth
-// Dependencies: [19, 11428, 4083, 4345, 2]
+// Dependencies: [19, 11419, 4083, 4343, 2]
 // Exports: default
 
-// Module 11690 (useChatInputFloatingWidth)
+// Module 11688 (useChatInputFloatingWidth)
 import noop from "noop";
 import { CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG as closure_3 } from "TextAreaCta";
 

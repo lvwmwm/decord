@@ -1,10 +1,10 @@
-// Module ID: 11187
-// Function ID: 11188
+// Module ID: 11174
+// Function ID: 11175
 // Name: shouldShowEmojiRow
 // Dependencies: [676, 1403, 2]
 // Exports: shouldShowEmojiRow
 
-// Module 11187 (shouldShowEmojiRow)
+// Module 11174 (shouldShowEmojiRow)
 import ME from "ME";
 
 let c3;

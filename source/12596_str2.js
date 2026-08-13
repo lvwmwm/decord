@@ -1,7 +1,7 @@
 // Module ID: 12596
 // Function ID: 12597
 // Name: str2
-// Dependencies: [109, 19, 17, 21, 1653, 12597, 5547, 5479]
+// Dependencies: [109, 19, 17, 21, 1653, 12597, 5548, 5480]
 // Exports: default
 
 // Module 12596 (str2)

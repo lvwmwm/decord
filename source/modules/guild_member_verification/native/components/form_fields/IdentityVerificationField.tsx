@@ -1,10 +1,10 @@
-// Module ID: 8495
-// Function ID: 8496
+// Module ID: 8499
+// Function ID: 8500
 // Name: BaseIdentityVerificationField
-// Dependencies: [19, 17, 21, 4344, 712, 4340, 4296, 4754, 1236, 4170, 8496, 4549, 8561, 2007, 8564, 8593, 8532, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4338, 4294, 4755, 1236, 4168, 8500, 4550, 8565, 2007, 8568, 8597, 8536, 2]
 // Exports: default
 
-// Module 8495 (BaseIdentityVerificationField)
+// Module 8499 (BaseIdentityVerificationField)
 import "noop";
 import { View } from "set";
 import jsxProd from "jsxProd";
@@ -29,11 +29,11 @@ function BaseIdentityVerificationField(icon) {
   }
   const items = [tmp4, , ];
   const items1 = [tmp.label];
-  items[1] = callback(require(4340) /* Text */.Text, { style: items1, variant: "text-md/medium", color: "mobile-text-heading-primary", children: label });
+  items[1] = callback(require(4338) /* Text */.Text, { style: items1, variant: "text-md/medium", color: "mobile-text-heading-primary", children: label });
   obj = { style: null, children: null };
   if (passesVerification) {
     obj[0] = tmp.verifiedContainer;
-    obj[1] = tmp6(tmp7(4296).CheckmarkLargeIcon, { color: "status-positive" });
+    obj[1] = tmp6(tmp7(4294).CheckmarkLargeIcon, { color: "status-positive" });
     let tmp9 = obj;
   } else {
     obj[0] = tmp.ctaButton;
@@ -41,7 +41,7 @@ function BaseIdentityVerificationField(icon) {
     const intl = tmp7(1236).intl;
     obj1[3] = intl.string(tmp7(1236).t["13ofGu"]);
     obj1[4] = onPress;
-    obj[1] = tmp6(tmp7(4754).Button, obj1);
+    obj[1] = tmp6(tmp7(4755).Button, obj1);
     tmp9 = obj;
   }
   items[2] = callback(View, tmp9);
@@ -63,7 +63,7 @@ export default function IdentityVerificationField(arg0) {
   let passesVerification;
   let platform;
   ({ platform, passesVerification } = arg0);
-  if (require(4170) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL === platform) {
+  if (require(4168) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL === platform) {
     const intl3 = tmp(1236).intl;
     const string2 = intl3.string;
     let INsLgA = tmp(1236).t;
@@ -74,7 +74,7 @@ export default function IdentityVerificationField(arg0) {
       string2Result = string2(INsLgA.c6EUJI);
     }
   } else {
-    if (tmp(4170).UserVerificationFieldPlatforms.PHONE === platform) {
+    if (tmp(4168).UserVerificationFieldPlatforms.PHONE === platform) {
       const intl2 = tmp(1236).intl;
       const string = intl2.string;
       const t = tmp(1236).t;
@@ -88,19 +88,19 @@ export default function IdentityVerificationField(arg0) {
       const intl = tmp(1236).intl;
       stringResult1 = intl.string(tmp(1236).t.mhv8BM);
     }
-    if (tmp(4170).UserVerificationFieldPlatforms.EMAIL === platform) {
-      let EnvelopeIcon = tmp(8593).EnvelopeIcon;
-    } else if (tmp(4170).UserVerificationFieldPlatforms.PHONE === platform) {
-      EnvelopeIcon = tmp(8532).MobilePhoneIcon;
+    if (tmp(4168).UserVerificationFieldPlatforms.EMAIL === platform) {
+      let EnvelopeIcon = tmp(8597).EnvelopeIcon;
+    } else if (tmp(4168).UserVerificationFieldPlatforms.PHONE === platform) {
+      EnvelopeIcon = tmp(8536).MobilePhoneIcon;
     } else {
-      EnvelopeIcon = tmp(8593).EnvelopeIcon;
+      EnvelopeIcon = tmp(8597).EnvelopeIcon;
     }
-    if (tmp(4170).UserVerificationFieldPlatforms.EMAIL === platform) {
+    if (tmp(4168).UserVerificationFieldPlatforms.EMAIL === platform) {
       let fn = () => {
         callback2(paths[10]).open();
       };
     } else {
-      fn = tmp(4170).UserVerificationFieldPlatforms.PHONE === platform ? (() => {
+      fn = tmp(4168).UserVerificationFieldPlatforms.PHONE === platform ? (() => {
         let obj = callback2(paths[11]);
         obj = { reason: null };
         obj[0] = callback(paths[14]).ChangePhoneReason.GUILD_PHONE_REQUIRED;

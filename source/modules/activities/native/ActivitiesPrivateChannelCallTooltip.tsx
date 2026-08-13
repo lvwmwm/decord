@@ -1,10 +1,10 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12193
+// Function ID: 12194
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 4336, 4369, 21, 4344, 589, 4083, 4345, 1297, 1236, 4754, 2]
+// Dependencies: [19, 17, 4334, 4370, 21, 4342, 589, 4083, 4343, 1297, 1236, 4755, 2]
 // Exports: default
 
-// Module 12191 (ActivitiesPrivateChannelCallTooltip)
+// Module 12193 (ActivitiesPrivateChannelCallTooltip)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -46,7 +46,7 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
       return obj;
     }
   }
-  obj = { withRepeat: tmp2(4083).withRepeat, withSequence: tmp2(4083).withSequence, withTiming: tmp2(4345).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
+  obj = { withRepeat: tmp2(4083).withRepeat, withSequence: tmp2(4083).withSequence, withTiming: tmp2(4343).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG: closure_7 };
   T.__closure = obj;
   T.__workletHash = 4621705591670;
   T.__initData = closure_9;
@@ -64,7 +64,7 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   const intl3 = tmp2(1236).intl;
   obj4[0] = intl3.string(num(1236).t["NX+WJN"]);
   obj4[1] = onClosePress.onClosePress;
-  obj3[1] = jsx(num(4754).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
+  obj3[1] = jsx(num(4755).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
   obj1[5] = <View style={tmp.closeButtonWrapper}>{null}</View>;
   obj[1] = jsx(num(1297).Tooltip, { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: null, title: null, children: null });
   return jsx(importDefault(4083).View, { style: items1, children: null });

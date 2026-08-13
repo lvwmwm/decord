@@ -1,10 +1,10 @@
-// Module ID: 4416
-// Function ID: 4417
+// Module ID: 4417
+// Function ID: 4418
 // Name: getVoiceStatesForGuild
-// Dependencies: [32, 1394, 1930, 1218, 1391, 1990, 1922, 4360, 676, 4189, 3985, 11, 1306, 12, 589, 1913, 709, 2]
+// Dependencies: [32, 1394, 1930, 1218, 1391, 1990, 1922, 4361, 676, 4187, 3985, 11, 1306, 12, 589, 1913, 709, 2]
 // Exports: getComparator, makeMemberAndComparator
 
-// Module 4416 (getVoiceStatesForGuild)
+// Module 4417 (getVoiceStatesForGuild)
 import _slicedToArray from "_slicedToArray";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import createdAt from "createdAt";
@@ -60,8 +60,8 @@ function makeSortedVoiceState(voiceState, guildId, arr) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4189).getName(tmp3);
-    const obj2 = importDefault(4189);
+    nick = importDefault(4187).getName(tmp3);
+    const obj2 = importDefault(4187);
   }
   let str = "\u0001";
   if (voiceState.selfStream) {
@@ -155,7 +155,7 @@ prototype["updateVoiceState"] = function updateVoiceState(id) {
             nick = member.nick;
           }
           if (nick == null) {
-            let obj = importDefault(4189);
+            let obj = importDefault(4187);
             nick = obj.getName(user);
           }
           const _voiceStates2 = self._voiceStates;
@@ -222,7 +222,7 @@ prototype["updateMember"] = function updateMember(arg0) {
           nick2 = member.nick;
         }
         if (nick2 == null) {
-          let obj = importDefault(4189);
+          let obj = importDefault(4187);
           nick2 = obj.getName(user);
         }
         let str = "\u0001";
@@ -817,8 +817,8 @@ export const makeMemberAndComparator = function makeMemberAndComparator(selfStre
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4189).getName(arg2);
-    const obj2 = importDefault(4189);
+    nick = importDefault(4187).getName(arg2);
+    const obj2 = importDefault(4187);
   }
   let str = "\u0001";
   if (selfStream.selfStream) {

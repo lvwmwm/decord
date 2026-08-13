@@ -1,7 +1,7 @@
 // Module ID: 10149
 // Function ID: 10150
 // Name: PurchaseSuccessModalBase
-// Dependencies: [853, 19, 17, 4336, 4390, 5890, 676, 21, 4344, 712, 4083, 4753, 4345, 4313, 1493, 589, 5887, 8940, 4765, 5367, 5316, 5365, 1236, 9444, 4340, 4754, 5773, 5770, 10150, 5787, 698, 4770, 10135, 3239, 9375, 4189, 2]
+// Dependencies: [853, 19, 17, 4334, 4391, 5891, 676, 21, 4342, 712, 4083, 4754, 4343, 4311, 1493, 589, 5888, 8944, 4766, 5368, 5317, 5366, 1236, 9448, 4338, 4755, 5774, 5771, 10150, 5788, 698, 4771, 10135, 3239, 9379, 4187, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
 // Module 10149 (PurchaseSuccessModalBase)

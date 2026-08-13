@@ -1,10 +1,10 @@
-// Module ID: 14408
-// Function ID: 14409
+// Module ID: 14417
+// Function ID: 14418
 // Name: useConnectionBannerHeight
-// Dependencies: [13014, 14405, 13015, 589, 2]
+// Dependencies: [13014, 14414, 13015, 589, 2]
 // Exports: useConnectionBannerHeight
 
-// Module 14408 (useConnectionBannerHeight)
+// Module 14417 (useConnectionBannerHeight)
 import updateState from "updateState";
 import { ConnectivityIndicatorState as closure_4 } from "updateState";
 import { CONNECTION_BANNER_HEIGHT } from "CONNECTION_BANNER_HEIGHT";

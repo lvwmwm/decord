@@ -1,10 +1,10 @@
-// Module ID: 8312
-// Function ID: 8313
+// Module ID: 8316
+// Function ID: 8317
 // Name: _saveProfileChanges
-// Dependencies: [5, 1922, 676, 1924, 1231, 1363, 1236, 698, 8313, 7182, 709, 8314, 530, 8317, 4243, 2]
+// Dependencies: [5, 1922, 676, 1924, 1231, 1363, 1236, 698, 8317, 7188, 709, 8318, 530, 8321, 4241, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8312 (_saveProfileChanges)
+// Module 8316 (_saveProfileChanges)
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";

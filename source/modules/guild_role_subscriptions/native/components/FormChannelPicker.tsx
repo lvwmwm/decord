@@ -1,10 +1,10 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 16922
+// Function ID: 16923
 // Name: FormChannelPicker
-// Dependencies: [19, 1391, 21, 4344, 13312, 589, 4534, 9102, 4312, 16912, 2007, 4804, 4849, 4340, 1236, 1297, 10875, 2]
+// Dependencies: [19, 1391, 21, 4342, 13313, 589, 4535, 9106, 4310, 16923, 2007, 4805, 4850, 4338, 1236, 1297, 10789, 2]
 // Exports: default
 
-// Module 16911 (FormChannelPicker)
+// Module 16922 (FormChannelPicker)
 import "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import jsxProd from "jsxProd";

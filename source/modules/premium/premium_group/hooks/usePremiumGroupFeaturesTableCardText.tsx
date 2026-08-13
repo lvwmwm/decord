@@ -1,7 +1,7 @@
 // Module ID: 12821
 // Function ID: 12822
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [4013, 4021, 1236, 2885, 1940, 8197, 12822, 589, 2]
+// Dependencies: [4013, 4021, 1236, 2885, 1940, 8201, 12822, 589, 2]
 // Exports: default
 
 // Module 12821 (usePremiumGroupFeaturesTableCardText)
@@ -24,8 +24,8 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
     return null;
   } else {
     if (arg0 === tmp(1940).PremiumSubscriptionGroupRole.PRIMARY) {
-      let priceString = tmp(8197).getPriceString(stateFromStores, { withIntervals: true });
-      const tmpResult = tmp(8197);
+      let priceString = tmp(8201).getPriceString(stateFromStores, { withIntervals: true });
+      const tmpResult = tmp(8201);
     } else {
       priceString = null;
       if (null != tmp4) {

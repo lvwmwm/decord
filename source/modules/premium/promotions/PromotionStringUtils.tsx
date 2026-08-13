@@ -1,7 +1,7 @@
 // Module ID: 12741
 // Function ID: 12742
 // Name: useFormatStringWithCommonPremiumParams
-// Dependencies: [4012, 1924, 589, 4007, 5894, 1236, 1993, 2]
+// Dependencies: [4012, 1924, 589, 4007, 5896, 1236, 1993, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
 // Module 12741 (useFormatStringWithCommonPremiumParams)
@@ -23,8 +23,8 @@ export const useFormatStringWithCommonPremiumParams = function useFormatStringWi
       try {
         const defaultPrice = importDefault(4007).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
         const obj2 = importDefault(4007);
-        str = require(5894) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
-        const tmpResult = require(5894) /* formatSingleCurrencyPrice */;
+        str = require(5896) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
+        const tmpResult = require(5896) /* formatSingleCurrencyPrice */;
       } catch (err) {
       }
     }

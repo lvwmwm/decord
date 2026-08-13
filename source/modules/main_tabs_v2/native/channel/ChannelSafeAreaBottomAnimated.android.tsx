@@ -1,8 +1,8 @@
-// Module ID: 12061
-// Function ID: 12062
-// Dependencies: [19, 17, 21, 10374, 10379, 4083, 2]
+// Module ID: 12063
+// Function ID: 12064
+// Dependencies: [19, 17, 21, 10286, 10291, 4083, 2]
 
-// Module 12061
+// Module 12063
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -14,7 +14,7 @@ const require = arg1;
 let closure_6 = { code: "function ChannelSafeAreaBottomAnimatedAndroidTsx1(){const{heightSharedValue}=this.__closure;return{height:heightSharedValue.get()};}" };
 const memoResult = require("noop").memo(function ChannelSafeAreaBottom(channelId) {
   let _require;
-  const tmp = importDefault(10374)();
+  const tmp = importDefault(10286)();
   _require = tmp;
   let obj = _require(4083);
   const fn = function n() {
@@ -25,7 +25,7 @@ const memoResult = require("noop").memo(function ChannelSafeAreaBottom(channelId
   fn.__initData = closure_6;
   const animatedStyle = obj.useAnimatedStyle(fn);
   obj = { style: animatedStyle, children: null };
-  const items = [absoluteFill.absoluteFill, importDefault(10379)(channelId.channelId)];
+  const items = [absoluteFill.absoluteFill, importDefault(10291)(channelId.channelId)];
   obj[1] = <closure_4 style={items} />;
   return jsx(importDefault(4083).View, { style: animatedStyle, children: null });
 });

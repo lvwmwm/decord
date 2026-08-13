@@ -1,9 +1,9 @@
-// Module ID: 17041
-// Function ID: 17042
+// Module ID: 17052
+// Function ID: 17053
 // Name: handleUserApplicationIdentityGatewayEvent
-// Dependencies: [12516, 5300, 2]
+// Dependencies: [12516, 5301, 2]
 
-// Module 17041 (handleUserApplicationIdentityGatewayEvent)
+// Module 17052 (handleUserApplicationIdentityGatewayEvent)
 import "initialize";
 
 const require = arg1;

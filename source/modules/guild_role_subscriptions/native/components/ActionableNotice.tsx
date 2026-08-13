@@ -1,10 +1,10 @@
-// Module ID: 16933
-// Function ID: 16934
+// Module ID: 16944
+// Function ID: 16945
 // Name: ActionableNotice
-// Dependencies: [19, 17, 21, 4344, 4340, 4754, 2]
+// Dependencies: [19, 17, 21, 4342, 4338, 4755, 2]
 // Exports: default
 
-// Module 16933 (ActionableNotice)
+// Module 16944 (ActionableNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function ActionableNotice(arg0) {
   let obj = { style: items, children: null };
   items = [style, tmp.container];
   obj = { style: tmp.message, variant: "text-sm/medium", color: "text-default", children: message };
-  const items1 = [callback(require(4340) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4338) /* Text */.Text, obj), ];
   obj = { style: tmp.actionButton, children: null };
   const obj1 = { size: "sm", onPress: onClick, disabled: null, text: null };
   if (!submitting) {
@@ -41,7 +41,7 @@ export default function ActionableNotice(arg0) {
   }
   obj1[2] = submitting;
   obj1[3] = ctaMessage;
-  obj[1] = callback(require(4754) /* Button */.Button, obj1);
+  obj[1] = callback(require(4755) /* Button */.Button, obj1);
   items1[1] = callback(View, obj);
   obj[1] = items1;
   return closure_4(View, obj);

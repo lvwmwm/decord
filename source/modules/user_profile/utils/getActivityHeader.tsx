@@ -1,7 +1,7 @@
 // Module ID: 12357
 // Function ID: 12358
 // Name: getActivityHeader
-// Dependencies: [676, 12358, 12359, 1236, 12361, 12362, 9700, 2]
+// Dependencies: [676, 12358, 12359, 1236, 12361, 12362, 9704, 2]
 // Exports: default
 
 // Module 12357 (getActivityHeader)
@@ -256,7 +256,7 @@ export default function getActivityHeader(session_id) {
         }
       }
     }
-    obj29 = require(9700) /* unpackStageChannelParty */;
+    obj29 = require(9704) /* unpackStageChannelParty */;
   }
   return obj;
 };

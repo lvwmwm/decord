@@ -1,7 +1,7 @@
 // Module ID: 10143
 // Function ID: 10144
 // Name: items
-// Dependencies: [1994, 5889, 676, 10144, 1236, 3239, 2]
+// Dependencies: [1994, 5890, 676, 10144, 1236, 3239, 2]
 // Exports: getCheckoutDisclaimerMessageForApplication, getFinePrintMessageForApplication, getGiftLinkAccountDescriptionForApplication, getMobileFinePrintMessageForApplication, getNotSupportedSentence, getRedeemPurchaseDescriptionForApplication
 
 // Module 10143 (items)

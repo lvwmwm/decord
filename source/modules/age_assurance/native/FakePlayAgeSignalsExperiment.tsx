@@ -1,10 +1,10 @@
-// Module ID: 16610
-// Function ID: 16611
+// Module ID: 16621
+// Function ID: 16622
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 // Exports: getFakePlayAgeSignalsConfig, isFakePlayAgeSignalsEnabled
 
-// Module 16610 (apexExperiment)
+// Module 16621 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { OFF: "off", ADULT: "adult", TEEN: "teen", UNDER_13: "under_13", SUPERVISED_PENDING: "supervised_pending", SUPERVISED_DENIED: "supervised_denied", UNKNOWN: "unknown", DECLARED: "declared", EMPTY: "empty", ERROR: "error" };

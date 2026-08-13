@@ -1,10 +1,10 @@
-// Module ID: 7194
-// Function ID: 7195
+// Module ID: 7200
+// Function ID: 7201
 // Name: trackingConfigWithDefaults
-// Dependencies: [1218, 7188, 2]
+// Dependencies: [1218, 7194, 2]
 // Exports: trackingConfigWithDefaults
 
-// Module 7194 (trackingConfigWithDefaults)
+// Module 7200 (trackingConfigWithDefaults)
 import fetchFingerprint from "fetchFingerprint";
 import { LinkType } from "LinkType";
 

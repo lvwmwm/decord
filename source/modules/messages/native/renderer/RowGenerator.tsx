@@ -1,9 +1,9 @@
-// Module ID: 8082
-// Function ID: 8083
+// Module ID: 8086
+// Function ID: 8087
 // Name: setOptions
-// Dependencies: [1302, 8083, 8084, 12, 8085, 8087, 12703, 12704, 1370, 2]
+// Dependencies: [1302, 8087, 8088, 12, 8089, 8091, 12703, 12704, 1370, 2]
 
-// Module 8082 (setOptions)
+// Module 8086 (setOptions)
 import handleThemeChange from "handleThemeChange";
 import Changeset from "Changeset";
 
@@ -37,7 +37,7 @@ prototype["generate"] = function generate(rowType) {
     if (tmp2.IGNORED_GROUP !== rowType) {
       if (tmp2.SUSPENDED_USER_GROUP !== rowType) {
         if (tmp2.MESSAGE === rowType) {
-          return require(8087) /* generateMessageRowData */.generateMessageRowData(rowType, self.options, theme);
+          return require(8091) /* generateMessageRowData */.generateMessageRowData(rowType, self.options, theme);
         } else {
           if (constants2.DAY !== rowType) {
             if (tmp12.UNREAD !== rowType) {
@@ -56,7 +56,7 @@ prototype["generate"] = function generate(rowType) {
       }
     }
   }
-  return require(8085) /* generateBlockedGroupRowData */.generateBlockedGroupRowData(rowType, theme, self);
+  return require(8089) /* generateBlockedGroupRowData */.generateBlockedGroupRowData(rowType, theme, self);
 };
 const result = require("UserOption").fileFinishedImporting("modules/messages/native/renderer/RowGenerator.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 9484
-// Function ID: 9485
+// Module ID: 9488
+// Function ID: 9489
 // Name: usePreviewCollectibleProduct
-// Dependencies: [32, 19, 7048, 1947, 7049, 7050, 9420, 1949, 8309, 2]
+// Dependencies: [32, 19, 7054, 1947, 7055, 7056, 9424, 1949, 8313, 2]
 // Exports: usePreviewCollectibleProduct
 
-// Module 9484 (usePreviewCollectibleProduct)
+// Module 9488 (usePreviewCollectibleProduct)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { isAvatarDecorationRecord } from "fromServer";
@@ -19,7 +19,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
   const _require = product;
   const dependencyMap = arg1;
   let _slicedToArray = arg2;
-  const shopProductItems = _require(9420).useShopProductItems(product);
+  const shopProductItems = _require(9424).useShopProductItems(product);
   const firstProfileEffect = shopProductItems.firstProfileEffect;
   const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   const firstNameplate = shopProductItems.firstNameplate;
@@ -83,7 +83,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
       }
       return () => {
         if (closure_1) {
-          outer1_0(outer1_1[8]).setPendingChanges({ avatarDecoration: "right", profileEffect: "channel", nameplate: "source", profileFrame: "bottom" });
+          outer1_0(outer1_1[8]).setPendingChanges({ avatarDecoration: "Array", profileEffect: "HermesInternal", nameplate: "r", profileFrame: "call" });
           const obj = outer1_0(outer1_1[8]);
         }
       };

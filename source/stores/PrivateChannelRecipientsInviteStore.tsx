@@ -1,7 +1,7 @@
 // Module ID: 13081
 // Function ID: 13082
 // Name: performQuery
-// Dependencies: [4258, 7160, 1395, 1391, 5868, 5265, 1990, 1910, 3998, 1922, 676, 1903, 4189, 7352, 589, 709, 2]
+// Dependencies: [4256, 7166, 1395, 1391, 5869, 5266, 1990, 1910, 3998, 1922, 676, 1903, 4187, 7357, 589, 709, 2]
 
 // Module 13081 (performQuery)
 import getHash from "getHash";
@@ -152,11 +152,11 @@ function updateHasFriends() {
 }
 function sortUserList(user, user2) {
   const obj = require(1903) /* isNullOrEmpty */;
-  const name = importDefault(4189).getName(user.user);
-  const obj2 = importDefault(4189);
+  const name = importDefault(4187).getName(user.user);
+  const obj2 = importDefault(4187);
   const stripDiacriticsResult = obj.stripDiacritics(name.toLocaleLowerCase());
   const obj5 = require(1903) /* isNullOrEmpty */;
-  const name1 = importDefault(4189).getName(user2.user);
+  const name1 = importDefault(4187).getName(user2.user);
   return stripDiacriticsResult.localeCompare(obj5.stripDiacritics(name1.toLocaleLowerCase()));
 }
 function parseUserResults(results) {
@@ -217,7 +217,7 @@ function handleModalActionSheetOpen(key) {
       userSearchContext.destroy();
       userSearchContext = null;
     }
-    userSearchContext = importDefault(7352).getUserSearchContext(parseUserResults, 1000);
+    userSearchContext = importDefault(7357).getUserSearchContext(parseUserResults, 1000);
     let c22 = null;
     let c16 = "";
     let c17 = 0;
@@ -321,7 +321,7 @@ const privateChannelRecipientsInviteStoreClass = new PrivateChannelRecipientsInv
       userSearchContext.destroy();
       userSearchContext = null;
     }
-    userSearchContext = importDefault(7352).getUserSearchContext(parseUserResults, 1000);
+    userSearchContext = importDefault(7357).getUserSearchContext(parseUserResults, 1000);
     channelId = channelId.channelId;
     let c16 = "";
     let c17 = 0;

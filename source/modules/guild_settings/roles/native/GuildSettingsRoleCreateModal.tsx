@@ -1,10 +1,10 @@
-// Module ID: 16765
-// Function ID: 16766
+// Module ID: 16776
+// Function ID: 16777
 // Name: RoleCreateScene
-// Dependencies: [5, 32, 19, 17, 1434, 1983, 1922, 9067, 16766, 676, 21, 4344, 5306, 712, 698, 4538, 4340, 1236, 16764, 589, 38, 3994, 1499, 6045, 5309, 5271, 4061, 16763, 4312, 15487, 2007, 4752, 7831, 5806, 5413, 13972, 688, 4754, 16770, 16771, 9066, 16772, 5408, 4740, 4750, 5861, 4770, 5822, 2]
+// Dependencies: [5, 32, 19, 17, 1434, 1983, 1922, 9071, 16777, 676, 21, 4342, 5307, 712, 698, 4539, 4338, 1236, 16775, 589, 38, 3994, 1499, 6047, 5310, 5272, 4061, 16774, 4310, 15496, 2007, 4753, 7835, 5807, 5414, 13976, 688, 4755, 16781, 16782, 9070, 16783, 5409, 4741, 4751, 5862, 4771, 5823, 2]
 // Exports: default
 
-// Module 16765 (RoleCreateScene)
+// Module 16776 (RoleCreateScene)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import TextInput from "TextInput";
 import importAllResult from "initialize";
@@ -78,7 +78,7 @@ function RoleCreateScene() {
     if (dependencyMap === outer1_17) {
       const num5 = 0;
     }
-    yield outer1_1(5271).createRole(outer1_1.id, c2, num5);
+    yield outer1_1(5272).createRole(outer1_1.id, c2, num5);
     if (1 === tmp7) {
       c2 = 0;
       callback(false);
@@ -106,13 +106,13 @@ function RoleCreateScene() {
               tmp3(4061).roleCreatedToast();
               const obj5 = tmp3(4061);
               const tmp13 = tmp3;
-              tmp3(16763).setRoleJustCreated(true);
+              tmp3(16774).setRoleJustCreated(true);
               let STEP_MEMBERS = outer1_25.STEP_PERMISSIONS;
               const guild2 = obj.getProps().guild;
               tmp32(38)(null != guild2, "shouldSkipPermissions: Guild cannot be null");
               const currentUser = outer1_11.getCurrentUser();
               const tmp23 = outer1_9(guild2, currentUser);
-              const obj6 = tmp3(16763);
+              const obj6 = tmp3(16774);
               const tmp18 = tmp32;
               obj = { permission: null, user: null, context: null };
               obj[0] = outer1_20.ADMINISTRATOR;
@@ -132,7 +132,7 @@ function RoleCreateScene() {
               obj[1] = outer1_26[outer1_25.STEP_DISPLAY];
               obj[2] = outer1_26[STEP_MEMBERS];
               const tmp18Result = tmp18(698);
-              const merged = Object.assign(tmp13(4538).collectGuildAnalyticsMetadata(guild.id));
+              const merged = Object.assign(tmp13(4539).collectGuildAnalyticsMetadata(guild.id));
               tmp18Result.track(outer1_18.USER_FLOW_TRANSITION, obj);
               return false;
             }
@@ -477,7 +477,7 @@ let closure_27 = importAllResult.memo((step) => {
   obj = { style: closure_23.title, accessibilityRole: "header", variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.format(require(1236) /* getSystemLocale */.t["8v/u0i"], { number: sum, total: keys.length });
-  obj[1] = callback3(require(4340) /* Text */.Text, obj);
+  obj[1] = callback3(require(4338) /* Text */.Text, obj);
   return callback3(closure_7, obj);
 });
 let closure_32 = {
@@ -526,12 +526,12 @@ export default function GuildSettingsRoleCreateModal() {
   const items = [handleFormInit];
   stateFromStores = obj.useStateFromStores(items, () => props.getProps().guild);
   importDefault(38)(null != stateFromStores, "useGuildSettingsStoreGuild: Guild cannot be null");
-  importDefault(4770)(() => {
+  importDefault(4771)(() => {
     let obj = outer1_1(outer1_3[14]);
     obj = { flow_type: outer1_19.GUILD_ROLE_CREATION_MODAL, from_step: outer1_26.FLOW_INITIALIZED, to_step: outer1_26[outer1_25.STEP_DISPLAY], skip: false };
     const merged = Object.assign(stateFromStores(outer1_3[15]).collectGuildAnalyticsMetadata(stateFromStores.id));
     obj.track(outer1_18.USER_FLOW_TRANSITION, obj);
   });
   obj = { screens: closure_32, initialRouteName: obj4.STEP_DISPLAY };
-  return callback3(stateFromStores(5822).Navigator, obj);
+  return callback3(stateFromStores(5823).Navigator, obj);
 };

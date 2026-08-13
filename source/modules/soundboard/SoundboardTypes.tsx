@@ -1,10 +1,10 @@
-// Module ID: 4796
-// Function ID: 4797
+// Module ID: 4797
+// Function ID: 4798
 // Name: SoundButtonOverlay
 // Dependencies: [2]
 // Exports: soundboardSoundFromAPI, soundboardSoundToAPI
 
-// Module 4796 (SoundButtonOverlay)
+// Module 4797 (SoundButtonOverlay)
 const result = require("set").fileFinishedImporting("modules/soundboard/SoundboardTypes.tsx");
 
 export const SoundButtonOverlay = { NONE: 0, [0]: "NONE", PLAY: 1, [1]: "PLAY", ADD: 2, [2]: "ADD", SOUNDMOJI: 3, [3]: "SOUNDMOJI" };

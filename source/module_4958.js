@@ -1,6 +1,6 @@
 // Module ID: 4958
 // Function ID: 4959
-// Dependencies: [4959]
+// Dependencies: [4959, 4961]
 
 // Module 4958
 const self = this;
@@ -42,6 +42,7 @@ if (self2) {
   }
   const _Object2 = Object;
   fn(require("module_4959"), exports);
+  fn(require("module_4961"), exports);
 } else {
   let _Object = Object;
 }

@@ -1,10 +1,10 @@
-// Module ID: 14297
-// Function ID: 14298
+// Module ID: 14306
+// Function ID: 14307
 // Name: PremiumPlanSelectSettingScreen
 // Dependencies: [19, 21, 12832, 2]
 // Exports: default
 
-// Module 14297 (PremiumPlanSelectSettingScreen)
+// Module 14306 (PremiumPlanSelectSettingScreen)
 import "noop";
 import { jsx } from "jsxProd";
 

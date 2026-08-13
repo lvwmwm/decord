@@ -1,13 +1,13 @@
-// Module ID: 15084
-// Function ID: 15085
+// Module ID: 15093
+// Function ID: 15094
 // Name: GiftPurchaseSKUView
-// Dependencies: [5, 32, 19, 17, 1922, 4390, 676, 1924, 21, 3, 1628, 9656, 589, 10160, 7042, 1945, 7419, 12204, 4312, 4683, 7055, 4752, 4340, 5415, 4754, 9629, 514, 7415, 5436, 9616, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 4391, 676, 1924, 21, 3, 1628, 9660, 589, 10160, 7048, 1945, 7423, 12206, 4310, 4684, 7061, 4753, 4338, 5416, 4755, 9633, 514, 7419, 5437, 9620, 2]
 // Exports: default
 
-// Module 15084 (GiftPurchaseSKUView)
+// Module 15093 (GiftPurchaseSKUView)
 import addSku from "addSku";
 import _slicedToArray from "_slicedToArray";
-import module_4683 from "module_4683";
+import module_4684 from "module_4684";
 import { View } from "useMobileCollectiblesPurchaseSKU";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import closure_8 from "addSku";
@@ -152,7 +152,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   dependencyMap = tmp4[1];
   currentUser = memo1.getCurrentUser();
   callback = React.useRef({});
-  let obj1 = selectedSkuId(9656);
+  let obj1 = selectedSkuId(9660);
   const giftStyle = obj1.useNativeGiftContext().giftStyle;
   let obj2 = selectedSkuId(589);
   let items = [closure_8];
@@ -165,8 +165,8 @@ function GiftPurchaseSKUView(selectedSkuId) {
   const items1 = [selectedSkuId];
   const effect = React.useEffect(() => {
     if (null != selectedSkuId) {
-      const collectiblesProduct = selectedSkuId(7042).fetchCollectiblesProduct(tmp);
-      const obj = selectedSkuId(7042);
+      const collectiblesProduct = selectedSkuId(7048).fetchCollectiblesProduct(tmp);
+      const obj = selectedSkuId(7048);
     }
   }, items1);
   const items2 = [product, currentUser, selectedSkuId];
@@ -309,7 +309,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   obj = {
     product: tmp14,
     onPurchaseComplete() {
-      first(4312).hideActionSheet();
+      first(4310).hideActionSheet();
     },
     onPurchaseError() {
       logger.error("Purchase error occurred");
@@ -319,16 +319,16 @@ function GiftPurchaseSKUView(selectedSkuId) {
     },
     giftParams: { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } }
   };
-  closure_8 = tmp(12204)(obj);
+  closure_8 = tmp(12206)(obj);
   const items5 = [product];
   [tmp16, tmp17] = callback(obj.useMemo(() => {
     if (null == c5) {
       let items = ["Loading...", "Loading..."];
     } else {
-      items = [selectedSkuId(7055).getFormattedPriceForCollectiblesProduct(tmp, true, true), ];
-      const obj = selectedSkuId(7055);
-      items[1] = selectedSkuId(7055).getFormattedPriceForCollectiblesProduct(tmp, false, true);
-      const obj2 = selectedSkuId(7055);
+      items = [selectedSkuId(7061).getFormattedPriceForCollectiblesProduct(tmp, true, true), ];
+      const obj = selectedSkuId(7061);
+      items[1] = selectedSkuId(7061).getFormattedPriceForCollectiblesProduct(tmp, false, true);
+      const obj2 = selectedSkuId(7061);
     }
     return items;
   }, items5), 2);
@@ -354,20 +354,20 @@ function GiftPurchaseSKUView(selectedSkuId) {
     }
   }
   items6[14] = str;
-  const items7 = [closure_11(selectedSkuId(4340).Text, { variant: "text-md/medium", color: "text-overlay-light", children: items6 }), , ];
+  const items7 = [closure_11(selectedSkuId(4338).Text, { variant: "text-md/medium", color: "text-overlay-light", children: items6 }), , ];
   let str4 = "Send Gift";
   if (isFetching) {
     str4 = "Loading...";
   }
-  obj3 = { children: tmp21(tmp7(4754).Button, obj4) };
-  items7[1] = closure_12(selectedSkuId(5415).Card, obj3);
+  obj3 = { children: tmp21(tmp7(4755).Button, obj4) };
+  items7[1] = closure_12(selectedSkuId(5416).Card, obj3);
   const obj5 = { children: null };
   const items8 = ["Select style: ", giftStyle];
-  const items9 = [closure_11(selectedSkuId(4340).Text, { variant: "text-md/medium", color: "text-overlay-light", children: items8 }), closure_12(first(9629), {})];
+  const items9 = [closure_11(selectedSkuId(4338).Text, { variant: "text-md/medium", color: "text-overlay-light", children: items8 }), closure_12(first(9633), {})];
   obj5[0] = items9;
-  items7[2] = closure_11(selectedSkuId(5415).Card, obj5);
+  items7[2] = closure_11(selectedSkuId(5416).Card, obj5);
   obj1[2] = items7;
-  return closure_11(selectedSkuId(4752).Stack, obj1);
+  return closure_11(selectedSkuId(4753).Stack, obj1);
 }
 function SimpleRequestOTPActionSheet(giftMessage) {
   let giftRecipientId;
@@ -395,23 +395,23 @@ function SimpleRequestOTPActionSheet(giftMessage) {
         obj[1] = giftRecipientId;
         obj[2] = giftMessage.giftMessage;
         obj[3] = callback2(GiftPurchaseSKUView, obj);
-        let tmp6Result = callback2(tmp(9656).NativeGiftContextProvider, obj);
+        let tmp6Result = callback2(tmp(9660).NativeGiftContextProvider, obj);
         let tmp8 = callback2;
       }
       const obj1 = { children: null };
       obj1[0] = tmp6Result;
-      return tmp8(tmp(5436).BottomSheet, obj1);
+      return tmp8(tmp(5437).BottomSheet, obj1);
     }
   }
   tmp8 = callback2;
-  const items = [callback2(_require(4340).Text, { variant: "text-lg/bold", color: "text-feedback-warning", children: "Gift purchasing is the only supported feature on Android in this version." }), ];
+  const items = [callback2(_require(4338).Text, { variant: "text-lg/bold", color: "text-feedback-warning", children: "Gift purchasing is the only supported feature on Android in this version." }), ];
   let str = "none";
   if (null != requestType) {
     str = requestType;
   }
   const obj2 = { children: null };
   const items1 = ["Request type: ", str];
-  items[1] = closure_11(_require(4340).Text, { variant: "text-md/normal", color: "text-feedback-warning", children: items1 });
+  items[1] = closure_11(_require(4338).Text, { variant: "text-md/normal", color: "text-feedback-warning", children: items1 });
   obj2[0] = items;
   tmp6Result = tmp6(View, obj2);
 }
@@ -424,5 +424,5 @@ export default function SimpleCreateOTPActionSheetWrapper(arg0) {
   obj = {};
   const merged = Object.assign(arg0);
   obj[2] = callback2(SimpleRequestOTPActionSheet, obj);
-  return callback2(require(9616) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
+  return callback2(require(9620) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
 };

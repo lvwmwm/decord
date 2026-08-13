@@ -1,10 +1,10 @@
-// Module ID: 6707
-// Function ID: 6708
+// Module ID: 6711
+// Function ID: 6712
 // Name: RubberDuckSpotIllustration
-// Dependencies: [21, 5307, 6708, 2]
+// Dependencies: [21, 5308, 6712, 2]
 // Exports: RubberDuckSpotIllustration
 
-// Module 6707 (RubberDuckSpotIllustration)
+// Module 6711 (RubberDuckSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/RubberDuckSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const RubberDuckSpotIllustration = function RubberDuckSpotIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6708);
+  obj[0] = importDefault(6712);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const RubberDuckSpotIllustration = function RubberDuckSpotIllustration(wi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
 };

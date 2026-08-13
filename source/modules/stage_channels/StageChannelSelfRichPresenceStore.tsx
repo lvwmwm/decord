@@ -1,9 +1,9 @@
-// Module ID: 10484
-// Function ID: 10485
+// Module ID: 10398
+// Function ID: 10399
 // Name: handleUpdateActivity
-// Dependencies: [1391, 1910, 4415, 3998, 1979, 1922, 5176, 1396, 5172, 676, 3994, 9700, 5182, 4534, 5175, 659, 589, 709, 2]
+// Dependencies: [1391, 1910, 4416, 3998, 1979, 1922, 5177, 1396, 5173, 676, 3994, 9704, 5183, 4535, 5176, 659, 589, 709, 2]
 
-// Module 10484 (handleUpdateActivity)
+// Module 10398 (handleUpdateActivity)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import createRTCConnection from "createRTCConnection";
@@ -40,7 +40,7 @@ function handleUpdateActivity() {
             const features = guild.features;
             tmp2 = null;
             if (features.has(constants.DISCOVERABLE)) {
-              let obj2 = require(9700) /* unpackStageChannelParty */;
+              let obj2 = require(9704) /* unpackStageChannelParty */;
               const result = obj2.packStageChannelPartyId(channel, stageInstanceByChannel);
               let id;
               if (_null != null) {
@@ -53,7 +53,7 @@ function handleUpdateActivity() {
               if (id === result) {
                 tmp15 = _null;
               }
-              const mutableParticipants = store.getMutableParticipants(channel.id, tmp12(5182).StageChannelParticipantNamedIndex.SPEAKER);
+              const mutableParticipants = store.getMutableParticipants(channel.id, tmp12(5183).StageChannelParticipantNamedIndex.SPEAKER);
               const length = mutableParticipants.filter((type) => type.type === callback(table[12]).StageChannelParticipantTypes.STREAM).length;
               const diff = mutableParticipants.length - length;
               let size;
@@ -75,11 +75,11 @@ function handleUpdateActivity() {
                 topic = channel.topic;
               }
               if (topic == null) {
-                let tmp12Result = tmp12(4534);
+                let tmp12Result = tmp12(4535);
                 topic = tmp12Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
               }
               obj[1] = topic;
-              tmp12Result = tmp12(5175);
+              tmp12Result = tmp12(5176);
               obj[2] = tmp12Result.getStageHasMedia(channel.id) ? closure_13.WATCHING : closure_13.LISTENING;
               let start;
               if (tmp15 != null) {
@@ -169,9 +169,9 @@ const stageChannelSelfRichPresenceStore = new StageChannelSelfRichPresenceStore(
     voiceStates = voiceStates.voiceStates;
     let _require;
     if (null != c17) {
-      const result = _require(9700).unpackStageChannelParty(c17);
+      const result = _require(9704).unpackStageChannelParty(c17);
       _require = result;
-      const obj = _require(9700);
+      const obj = _require(9704);
       if (tmp5) {
         handleUpdateActivity();
       }

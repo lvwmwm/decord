@@ -1,7 +1,7 @@
 // Module ID: 12419
 // Function ID: 12420
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 676, 5815, 21, 4344, 712, 12420, 12507, 12508, 5349, 4765, 2]
+// Dependencies: [32, 19, 17, 676, 5816, 21, 4342, 712, 12420, 12507, 12508, 5350, 4766, 2]
 // Exports: default
 
 // Module 12419 (UserProfileApplicationWidgetTopHeroLayout)
@@ -102,7 +102,7 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
       ({ START: obj14[0], END: obj14[1] } = HorizontalGradient);
       obj8[2] = closure_10;
       obj8[3] = tmp.heroImageFadeGradient;
-      const items4 = [tmp14(importDefault(4765), obj8), ];
+      const items4 = [tmp14(importDefault(4766), obj8), ];
       const obj9 = { style: null };
       obj9[0] = tmp.heroImageMaskRemainder;
       items4[1] = tmp14(tmp13, obj9);
@@ -114,8 +114,8 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
       obj10[0] = obj11;
       obj10[1] = { width: "100%", height: "100%" };
       obj5[3] = tmp14(closure_5, obj10);
-      tmp14Result = tmp14(importDefault(5349), obj5);
-      const tmp20 = importDefault(5349);
+      tmp14Result = tmp14(importDefault(5350), obj5);
+      const tmp20 = importDefault(5350);
     }
     obj4[3] = tmp14Result;
     tmp14Result1 = tmp14(tmp13, obj4);

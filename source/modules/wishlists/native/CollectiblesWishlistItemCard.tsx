@@ -1,7 +1,7 @@
 // Module ID: 10152
 // Function ID: 10153
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [19, 7047, 10153, 21, 9397, 589, 9396, 9400, 1949, 9401, 2]
+// Dependencies: [19, 7053, 10153, 21, 9401, 589, 9400, 9404, 1949, 9405, 2]
 // Exports: default
 
 // Module 10152 (CollectiblesWishlistItemCard)

@@ -1,10 +1,10 @@
-// Module ID: 4664
-// Function ID: 4665
+// Module ID: 4665
+// Function ID: 4666
 // Name: _validatePaymentSourceBillingAddress
-// Dependencies: [5, 4011, 4665, 676, 530, 4029, 709, 1236, 698, 4243, 4022, 2]
+// Dependencies: [5, 4011, 4666, 676, 530, 4029, 709, 1236, 698, 4241, 4022, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 4664 (_validatePaymentSourceBillingAddress)
+// Module 4665 (_validatePaymentSourceBillingAddress)
 import set from "set";
 import createFromServer from "createFromServer";
 import { StripeErrorTypes } from "StripeErrorTypes";
@@ -370,7 +370,7 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
       obj3.track(constants.PAYMENT_SOURCE_CREATION_FAILED, obj);
       flag = false;
     }
-    let billingError = new require(4243) /* V6OrEarlierAPIError */.BillingError(combined);
+    let billingError = new require(4241) /* V6OrEarlierAPIError */.BillingError(combined);
     let flag2 = flag;
     let tmp12 = obj;
     let tmp15 = require;
@@ -380,7 +380,7 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
       tmp6 = stringResult;
     }
     const obj1 = { failure_message: null, status_code: null };
-    const billingError1 = new require(4243) /* V6OrEarlierAPIError */.BillingError(tmp6);
+    const billingError1 = new require(4241) /* V6OrEarlierAPIError */.BillingError(tmp6);
     ({ message: obj2[0], code: obj2[1] } = billingError1);
     tmp12 = obj1;
     billingError = billingError1;

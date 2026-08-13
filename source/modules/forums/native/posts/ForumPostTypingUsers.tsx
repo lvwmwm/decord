@@ -1,10 +1,10 @@
-// Module ID: 11469
-// Function ID: 11470
+// Module ID: 11465
+// Function ID: 11466
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 4344, 712, 8448, 11470, 11471, 4083, 1297, 4340, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 8452, 11466, 11467, 4083, 1297, 4338, 2]
 // Exports: default
 
-// Module 11469 (ForumPostTypingUsers)
+// Module 11465 (ForumPostTypingUsers)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

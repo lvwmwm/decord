@@ -1,10 +1,10 @@
-// Module ID: 8684
-// Function ID: 8685
+// Module ID: 8688
+// Function ID: 8689
 // Name: EmojiPickerActionSheet
-// Dependencies: [32, 19, 17, 1922, 8685, 676, 1925, 21, 4344, 712, 7262, 4083, 8686, 5408, 1628, 500, 5767, 5787, 8693, 4312, 8682, 8694, 4340, 1236, 6033, 8696, 4007, 8659, 2007, 4313, 4314, 8718, 5436, 4214, 8719, 8778, 8800, 2]
+// Dependencies: [32, 19, 17, 1922, 8689, 676, 1925, 21, 4342, 712, 7267, 4083, 8690, 5409, 1628, 500, 5768, 5788, 8697, 4310, 8686, 8698, 4338, 1236, 6035, 8700, 4007, 8663, 2007, 4311, 4312, 8722, 5437, 4212, 8723, 8782, 8804, 2]
 // Exports: default
 
-// Module 8684 (EmojiPickerActionSheet)
+// Module 8688 (EmojiPickerActionSheet)
 import Background from "Background";
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
 import { View } from "QUICK_SWITCHER";

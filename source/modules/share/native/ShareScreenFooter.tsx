@@ -1,10 +1,10 @@
-// Module ID: 13319
-// Function ID: 13320
+// Module ID: 13320
+// Function ID: 13321
 // Name: ShareScreenFooter
-// Dependencies: [19, 21, 10301, 10302, 4754, 10310, 2]
+// Dependencies: [19, 21, 11138, 11139, 4755, 11147, 2]
 // Exports: default
 
-// Module 13319 (ShareScreenFooter)
+// Module 13320 (ShareScreenFooter)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -32,7 +32,7 @@ export default function ShareScreenFooter(arg0) {
   if (disabled === undefined) {
     disabled = false;
   }
-  let obj = require(10301) /* useShareChatInputActions */;
+  let obj = require(11138) /* useShareChatInputActions */;
   const shareChatInputActions = obj.useShareChatInputActions(setText, undefined, appEntryKey);
   ({ textInputRef, isInputFocused, handleSelectionChange, handleMessageFocus, handleMessageBlur, handlePressEmoji } = shareChatInputActions);
   obj = { preview, sendButton: null, chatInput: null, avoidKeyboard: null };
@@ -48,8 +48,8 @@ export default function ShareScreenFooter(arg0) {
   }
   obj[4] = tmp7;
   obj[5] = isSending;
-  obj[1] = jsx(require(4754) /* Button */.Button, { variant: "primary", size: "md", text: sendLabel, disabled: null, onPress: null, loading: null });
-  obj[2] = jsx(importDefault(10310), { inputRef: textInputRef, text, onChange: setText, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend, disabled });
+  obj[1] = jsx(require(4755) /* Button */.Button, { variant: "primary", size: "md", text: sendLabel, disabled: null, onPress: null, loading: null });
+  obj[2] = jsx(importDefault(11147), { inputRef: textInputRef, text, onChange: setText, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend, disabled });
   obj[3] = isInputFocused;
-  return jsx(importDefault(10302), { variant: "primary", size: "md", text: sendLabel, disabled: null, onPress: null, loading: null });
+  return jsx(importDefault(11139), { variant: "primary", size: "md", text: sendLabel, disabled: null, onPress: null, loading: null });
 };

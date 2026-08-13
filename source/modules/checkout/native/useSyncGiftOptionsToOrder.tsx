@@ -1,7 +1,7 @@
 // Module ID: 10148
 // Function ID: 10149
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 3, 6934, 4022, 2]
+// Dependencies: [32, 19, 3, 6940, 4022, 2]
 // Exports: default
 
 // Module 10148 (useSyncGiftOptionsToOrder)

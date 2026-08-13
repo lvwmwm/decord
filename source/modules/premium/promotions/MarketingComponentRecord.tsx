@@ -1,9 +1,9 @@
-// Module ID: 7387
-// Function ID: 7388
+// Module ID: 7391
+// Function ID: 7392
 // Name: createFromServer
-// Dependencies: [1931, 7388, 1307, 2]
+// Dependencies: [1931, 7392, 1307, 2]
 
-// Module 7387 (createFromServer)
+// Module 7391 (createFromServer)
 import "toJS";
 
 const require = arg1;
@@ -51,7 +51,7 @@ MarketingComponentRecord["createFromServer"] = function createFromServer(start_d
     date3 = new Date(start_date2.end_date);
   }
   ({ id, component_type } = start_date);
-  const PremiumMarketingComponentProperties = textDecoder(7388).PremiumMarketingComponentProperties;
+  const PremiumMarketingComponentProperties = textDecoder(7392).PremiumMarketingComponentProperties;
   const fromBinary = PremiumMarketingComponentProperties.fromBinary;
   const obj2 = textDecoder(1307);
   function readerFactory(buf) {

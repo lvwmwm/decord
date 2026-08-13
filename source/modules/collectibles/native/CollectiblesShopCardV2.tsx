@@ -1,9 +1,9 @@
-// Module ID: 9390
-// Function ID: 9391
+// Module ID: 9394
+// Function ID: 9395
 // Name: CollectiblesShopCardInternalV2
-// Dependencies: [19, 17, 1302, 7043, 678, 21, 4344, 712, 9391, 7054, 9392, 9394, 9396, 9398, 1236, 4062, 5767, 9446, 9448, 9449, 589, 1363, 4886, 7055, 1949, 7745, 4340, 8334, 9451, 9453, 9454, 9456, 9461, 9464, 9393, 4312, 9480, 12237, 12238, 4007, 9459, 9613, 12239, 12241, 514, 2]
+// Dependencies: [19, 17, 1302, 7049, 678, 21, 4342, 712, 9395, 7060, 9396, 9398, 9400, 9402, 1236, 4062, 5768, 9450, 9452, 9453, 589, 1363, 4887, 7061, 1949, 7749, 4338, 8338, 9455, 9457, 9458, 9460, 9465, 9468, 9397, 4310, 9484, 12239, 12240, 4007, 9463, 9617, 12241, 12243, 514, 2]
 
-// Module 9390 (CollectiblesShopCardInternalV2)
+// Module 9394 (CollectiblesShopCardInternalV2)
 import importAllResult from "useCanPurchaseFrames";
 import get_ActivityIndicator from "useTrackShopCardClick";
 import handleThemeChange from "handleThemeChange";
@@ -442,7 +442,7 @@ const memoResult = importAllResult.memo(function CollectiblesShopCardV2(arg0) {
     obj = {};
     const merged1 = Object.assign(merged);
     obj[1] = callback(CollectiblesShopCardV2Inner, obj);
-    return callback(require(9393) /* context */.CollectiblesAnalyticsProvider, obj);
+    return callback(require(9397) /* context */.CollectiblesAnalyticsProvider, obj);
   }
 });
 let result = require("handleThemeChange").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardV2.tsx");

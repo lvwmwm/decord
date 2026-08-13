@@ -1,10 +1,10 @@
-// Module ID: 4270
-// Function ID: 4271
+// Module ID: 4268
+// Function ID: 4269
 // Name: useGuildPowerupBoostLevelProgress
-// Dependencies: [1910, 676, 4251, 589, 2]
+// Dependencies: [1910, 676, 4249, 589, 2]
 // Exports: default, getGuildPowerupBoostLevelProgress
 
-// Module 4270 (useGuildPowerupBoostLevelProgress)
+// Module 4268 (useGuildPowerupBoostLevelProgress)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
 
@@ -17,7 +17,7 @@ const result = require("useGuildAppliedBoostCount").fileFinishedImporting("modul
 
 export default function useGuildPowerupBoostLevelProgress(arg0) {
   const _require = arg0;
-  const tmp = importDefault(4251)(arg0);
+  const tmp = importDefault(4249)(arg0);
   const items = [createGuildRecordFromRust];
   const stateFromStores = _require(589).useStateFromStores(items, () => {
     const guild = outer1_3.getGuild(closure_0);
@@ -47,7 +47,7 @@ export default function useGuildPowerupBoostLevelProgress(arg0) {
   return num + tmp.available;
 };
 export const getGuildPowerupBoostLevelProgress = function getGuildPowerupBoostLevelProgress(id) {
-  const guildPowerupsBoostCount = require(4251) /* useGuildAppliedBoostCount */.getGuildPowerupsBoostCount(id);
+  const guildPowerupsBoostCount = require(4249) /* useGuildAppliedBoostCount */.getGuildPowerupsBoostCount(id);
   guild = guild.getGuild(id);
   let premiumTier;
   if (guild != null) {

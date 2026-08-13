@@ -1,10 +1,10 @@
-// Module ID: 11495
-// Function ID: 11496
+// Module ID: 11491
+// Function ID: 11492
 // Name: AppLauncherOnboardingBanner
-// Dependencies: [19, 21, 1377, 11496, 11510, 11512, 2]
+// Dependencies: [19, 21, 1377, 11492, 11506, 11508, 2]
 // Exports: default
 
-// Module 11495 (AppLauncherOnboardingBanner)
+// Module 11491 (AppLauncherOnboardingBanner)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,13 +18,13 @@ export default function AppLauncherOnboardingBanner(arg0) {
   if (require(1377) /* DismissibleContent */.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER === visibleContent) {
     let obj = { context: null };
     obj[0] = context;
-    return jsx(importDefault(11496), { context: null });
+    return jsx(importDefault(11492), { context: null });
   } else if (tmp(1377).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER === visibleContent) {
-    return jsx(importDefault(11510), {});
+    return jsx(importDefault(11506), {});
   } else if (tmp(1377).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER === visibleContent) {
     obj = { context: null };
     obj[0] = context;
-    return jsx(importDefault(11512), { context: null });
+    return jsx(importDefault(11508), { context: null });
   } else {
     return null;
   }

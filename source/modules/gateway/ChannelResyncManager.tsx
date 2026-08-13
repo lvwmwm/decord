@@ -1,9 +1,9 @@
-// Module ID: 16473
-// Function ID: 16474
+// Module ID: 16484
+// Function ID: 16485
 // Name: handleGuildCreate
-// Dependencies: [5, 1218, 1391, 4681, 1910, 5034, 676, 1398, 3, 687, 5300, 698, 709, 7153, 13003, 1403, 514, 2]
+// Dependencies: [5, 1218, 1391, 4682, 1910, 5035, 676, 1398, 3, 687, 5301, 698, 709, 7159, 13003, 1403, 514, 2]
 
-// Module 16473 (handleGuildCreate)
+// Module 16484 (handleGuildCreate)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

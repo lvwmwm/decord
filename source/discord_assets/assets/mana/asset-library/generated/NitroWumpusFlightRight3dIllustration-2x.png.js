@@ -1,9 +1,9 @@
-// Module ID: 6634
-// Function ID: 6635
+// Module ID: 6638
+// Function ID: 6639
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6634 (metadata)
+// Module 6638 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWumpusFlightRight3dIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/5b64487ae750fc26cd0dc918c77445068d18b74b68d888d2155b7ac2a3cacda6.png";

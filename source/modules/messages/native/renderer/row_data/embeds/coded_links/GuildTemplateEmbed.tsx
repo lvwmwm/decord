@@ -1,7 +1,7 @@
 // Module ID: 12672
 // Function ID: 12673
 // Name: createGuildTemplateEmbed
-// Dependencies: [17, 6961, 5982, 7236, 8094, 1236, 8086, 712, 1363, 11266, 11267, 12673, 2]
+// Dependencies: [17, 6967, 5984, 7241, 8098, 1236, 8090, 712, 1363, 11257, 11258, 12673, 2]
 // Exports: createGuildTemplateEmbed
 
 // Module 12672 (createGuildTemplateEmbed)
@@ -15,7 +15,7 @@ const result = require("GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD").fileF
 export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, closure_2) {
   let baseColors;
   let colors;
-  ({ colors, baseColors } = importDefault(8094)(closure_2));
+  ({ colors, baseColors } = importDefault(8098)(closure_2));
   guildTemplate = guildTemplate.getGuildTemplate(code);
   if (null == guildTemplate) {
     return null;
@@ -32,15 +32,15 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     const merged1 = Object.assign(baseColors);
     const intl = require(1236) /* getSystemLocale */.intl;
     obj.headerText = intl.string(require(1236) /* getSystemLocale */.t.C7ZRNw).toUpperCase();
-    let obj1 = require(8086) /* processColorOrThrow */;
+    let obj1 = require(8090) /* processColorOrThrow */;
     obj.titleColor = obj1.processColorOrThrow(tmp(712).unsafe_rawColors.RED_400);
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj.titleText = intl2.string(require(1236) /* getSystemLocale */.t.A6MwXE);
     const str = intl.string(require(1236) /* getSystemLocale */.t.C7ZRNw);
     if (obj3.isThemeDark(closure_2)) {
-      let tmpResult = tmp(11266);
+      let tmpResult = tmp(11257);
     } else {
-      tmpResult = tmp(11267);
+      tmpResult = tmp(11258);
     }
     obj.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
     obj.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;
@@ -69,5 +69,5 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj1.type = InviteTypes.GUILD;
     return obj1;
   }
-  const tmp3 = importDefault(8094)(closure_2);
+  const tmp3 = importDefault(8098)(closure_2);
 };

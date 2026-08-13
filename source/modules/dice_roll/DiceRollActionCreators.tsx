@@ -1,10 +1,10 @@
-// Module ID: 5905
-// Function ID: 5906
+// Module ID: 5907
+// Function ID: 5908
 // Name: startDiceRoll
 // Dependencies: [709, 2]
 // Exports: startDiceRoll
 
-// Module 5905 (startDiceRoll)
+// Module 5907 (startDiceRoll)
 const result = require("set").fileFinishedImporting("modules/dice_roll/DiceRollActionCreators.tsx");
 
 export const startDiceRoll = function startDiceRoll(channelId, diceCount, diceSides) {

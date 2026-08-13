@@ -1,10 +1,10 @@
-// Module ID: 14157
-// Function ID: 14158
+// Module ID: 14166
+// Function ID: 14167
 // Name: onClose
-// Dependencies: [5, 32, 19, 17, 12093, 21, 4549, 4344, 712, 5306, 12095, 12099, 4062, 1236, 8490, 12112, 5309, 5822, 2]
+// Dependencies: [5, 32, 19, 17, 12095, 21, 4550, 4342, 712, 5307, 12097, 12101, 4062, 1236, 8494, 12114, 5310, 5823, 2]
 // Exports: default
 
-// Module 14157 (onClose)
+// Module 14166 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -16,7 +16,7 @@ import HeaderBackImage from "HeaderBackImage";
 
 const require = arg1;
 function onClose() {
-  let arr = importDefault(4549);
+  let arr = importDefault(4550);
   arr = arr.pop();
 }
 function ContactSyncNameInputScreen() {
@@ -41,14 +41,14 @@ function ContactSyncNameInputScreen() {
         let closure_1 = tmp3;
         callback(true);
         let c3 = 1;
-        yield outer1_1(12099).updateName(callback);
+        yield outer1_1(12101).updateName(callback);
         if (1 === tmp7) {
           c3 = 0;
           const obj1 = outer1_1(4062);
           const obj2 = { key: "ERROR_GENERIC_TITLE", content: null, icon: null };
           const intl = callback(1236).intl;
           obj2[1] = intl.string(callback(1236).t.R0RpRX);
-          obj2[2] = outer1_1(8490);
+          obj2[2] = outer1_1(8494);
           obj1.open(obj2);
           callback(false);
           let c4 = 3;
@@ -127,5 +127,5 @@ obj1[ContactSyncScenes.NAME_INPUT] = obj2;
 const result = require("noop").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx");
 
 export default function ContactSyncNameUpdateModal() {
-  return jsx(require(5822) /* NavigationStack */.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj1 });
+  return jsx(require(5823) /* NavigationStack */.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj1 });
 };

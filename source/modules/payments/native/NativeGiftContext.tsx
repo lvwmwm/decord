@@ -1,10 +1,10 @@
-// Module ID: 9656
-// Function ID: 9657
+// Module ID: 9660
+// Function ID: 9661
 // Name: NativeGiftContextProvider
-// Dependencies: [5, 32, 19, 8835, 7384, 9657, 1922, 676, 5898, 1924, 21, 3, 6933, 6934, 4022, 9628, 1236, 9658, 4007, 5900, 9482, 7373, 589, 9659, 9623, 8838, 8831, 4683, 698, 5787, 7364, 709, 500, 7415, 2]
+// Dependencies: [5, 32, 19, 8839, 7388, 9661, 1922, 676, 5900, 1924, 21, 3, 6939, 6940, 4022, 9632, 1236, 9662, 4007, 5902, 9486, 7377, 589, 9663, 9627, 8842, 8835, 4684, 698, 5788, 7369, 709, 500, 7419, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 9656 (NativeGiftContextProvider)
+// Module 9660 (NativeGiftContextProvider)
 import frozen from "frozen";
 import importDefaultResult from "set";
 import SubscriptionPlans from "SubscriptionPlans";
@@ -277,7 +277,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     constants = undefined;
     table = undefined;
     jsx = undefined;
-    obj = { orderId: "a", planId: "<string:1681981443>", planSelection: "<string:1358954890>", giftInfo: "<string:1044447550>" };
+    obj = { orderId: "a", planId: "<string:1509950317>", planSelection: "<string:1191183199>", giftInfo: "<string:1313341443>" };
     obj = { premiumType: null, planInterval: null };
     obj[0] = first;
     obj[1] = first1;

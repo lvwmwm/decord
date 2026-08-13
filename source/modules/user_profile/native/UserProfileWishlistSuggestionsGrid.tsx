@@ -1,7 +1,7 @@
 // Module ID: 12552
 // Function ID: 12553
 // Name: UserProfileWishlistSuggestionsGridContent
-// Dependencies: [19, 17, 4336, 9403, 8830, 5815, 676, 678, 21, 712, 4344, 12546, 589, 12553, 1367, 8833, 12547, 5767, 5755, 514, 12554, 9402, 4312, 7042, 5787, 4754, 11586, 1236, 12556, 4083, 4340, 7792, 5365, 12557, 2]
+// Dependencies: [19, 17, 4334, 9407, 8834, 5816, 676, 678, 21, 712, 4342, 12546, 589, 12553, 1367, 8837, 12547, 5768, 5756, 514, 12554, 9406, 4310, 7048, 5788, 4755, 11582, 1236, 12556, 4083, 4338, 7796, 5366, 12557, 2]
 // Exports: default
 
 // Module 12552 (UserProfileWishlistSuggestionsGridContent)
@@ -79,7 +79,7 @@ function WishlistSuggestionsGridContents(arg0) {
   let stateFromStores;
   ({ wishlistId, containerWidth, maxWidth, markAsDismissed } = arg0);
   const tmp3 = importDefault(1367)("UserProfileWishlistSuggestionsGridContent");
-  let obj = stateFromStores(8833);
+  let obj = stateFromStores(8837);
   const trackUserProfileWishlistAction = obj.useUserProfileAnalyticsContext().trackUserProfileWishlistAction;
   stateFromStores = trackUserProfileWishlistAction;
   const tmp5 = createCacheKey();
@@ -104,9 +104,9 @@ function WishlistSuggestionsGridContents(arg0) {
     return obj;
   }, items1);
   obj = { minCardSize: 80, maxCardSize: 120, containerWidth, maxWidth, sidePadding: closure_8 + PX_16 + 1, gap: closure_9 };
-  const analyticsLocations = importDefault(5767)().analyticsLocations;
+  const analyticsLocations = importDefault(5768)().analyticsLocations;
   let obj3 = stateFromStores(12554);
-  obj = { userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: stateFromStores(9402).WishlistFetchSource.USER_PROFILE };
+  obj = { userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: stateFromStores(9406).WishlistFetchSource.USER_PROFILE };
   const items2 = obj3.useAddToWishlistGridItems(obj).items;
   const items3 = [trackUserProfileWishlistAction];
   const callback = React.useCallback(() => {
@@ -127,11 +127,11 @@ function WishlistSuggestionsGridContents(arg0) {
     obj1 = { style: null, children: null };
     obj1[0] = tmp5.shopButtonContainer;
     let obj2 = { size: "md", variant: "secondary", icon: null, text: null, onPress: null };
-    obj2[2] = callback(tmp4(11586).ShopIcon, { size: "sm" });
+    obj2[2] = callback(tmp4(11582).ShopIcon, { size: "sm" });
     const intl4 = tmp4(1236).intl;
     obj2[3] = intl4.string(tmp4(1236).t.RSyoZu);
     obj2[4] = callback;
-    obj1[1] = callback(tmp4(4754).Button, obj2);
+    obj1[1] = callback(tmp4(4755).Button, obj2);
     let tmp13Result = callback(View, obj1);
   } else {
     obj3 = { newValue: null, children: null };
@@ -159,7 +159,7 @@ function WishlistSuggestionsGridContents(arg0) {
     obj7[2] = str2;
     const intl = tmp4(1236).intl;
     obj7[4] = intl.string(tmp4(1236).t["+GB8Kt"]);
-    const items4 = [callback(tmp4(4340).Text, obj7), ];
+    const items4 = [callback(tmp4(4338).Text, obj7), ];
     const items5 = [tmp5.dismissButton, ];
     let hiddenDismissButton = !isDismissible;
     if (!isDismissible) {
@@ -182,11 +182,11 @@ function WishlistSuggestionsGridContents(arg0) {
     const obj9 = { size: "sm", variant: "icon-only", icon: null, onPress: null, accessibilityLabel: null };
     const obj10 = { size: "sm", color: null };
     obj10[1] = tmp(712).colors.CONTROL_ICON_ONLY_ICON_DEFAULT;
-    obj9[2] = callback(tmp4(5365).XSmallIcon, obj10);
+    obj9[2] = callback(tmp4(5366).XSmallIcon, obj10);
     obj9[3] = markAsDismissed;
     const intl2 = tmp4(1236).intl;
     obj9[4] = intl2.string(tmp4(1236).t.WAI6xu);
-    obj8[4] = callback(tmp4(7792).IconButton, obj9);
+    obj8[4] = callback(tmp4(7796).IconButton, obj9);
     items4[1] = callback(View, obj8);
     obj6[1] = items4;
     const items6 = [closure_13(View, obj6), , ];
@@ -199,11 +199,11 @@ function WishlistSuggestionsGridContents(arg0) {
     const obj12 = { style: null, children: null };
     obj12[0] = tmp5.shopButtonContainer;
     const obj13 = { size: "md", variant: "secondary", icon: null, text: null, onPress: null };
-    obj13[2] = callback(tmp4(11586).ShopIcon, { size: "sm" });
+    obj13[2] = callback(tmp4(11582).ShopIcon, { size: "sm" });
     const intl3 = tmp4(1236).intl;
     obj13[3] = intl3.string(tmp4(1236).t.RSyoZu);
     obj13[4] = callback;
-    obj12[1] = callback(tmp4(4754).Button, obj13);
+    obj12[1] = callback(tmp4(4755).Button, obj13);
     items6[2] = callback(View, obj12);
     obj5[4] = items6;
     obj3[1] = closure_13(tmp(4083).View, obj5);

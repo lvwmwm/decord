@@ -1,10 +1,10 @@
-// Module ID: 15464
-// Function ID: 15465
+// Module ID: 15473
+// Function ID: 15474
 // Name: fetchMobileGameCommunities
-// Dependencies: [15011, 676, 584, 687, 709, 530, 1483, 2]
+// Dependencies: [15020, 676, 584, 687, 709, 530, 1483, 2]
 // Exports: dismissGuild, fetchMobileGameCommunities, fetchMobileGameCommunitiesIfStale
 
-// Module 15464 (fetchMobileGameCommunities)
+// Module 15473 (fetchMobileGameCommunities)
 import set from "set";
 import { Endpoints } from "ME";
 import importDefaultResult from "fails";
@@ -69,7 +69,7 @@ export const fetchMobileGameCommunities = function fetchMobileGameCommunities(ga
               obj[1] = callback(dependencyMap[6]).stringify({ game_ids: arr, limit: 20, ignored_guild_ids: items });
               let value = HTTP.get(obj);
               let obj2 = callback(dependencyMap[6]);
-              value.then(() => { ... }, () => { ... }).catch(/* F118482 */ function() { ... });
+              value.then(() => { ... }, () => { ... }).catch(/* F118540 */ function() { ... });
             });
           }
         }).catch(() => {
@@ -139,7 +139,7 @@ export const fetchMobileGameCommunitiesIfStale = function fetchMobileGameCommuni
                   obj[1] = callback(dependencyMap[6]).stringify({ game_ids: arr, limit: 20, ignored_guild_ids: items });
                   let value = HTTP.get(obj);
                   let obj2 = callback(dependencyMap[6]);
-                  value.then(() => { ... }, () => { ... }).catch(/* F118482 */ function() { ... });
+                  value.then(() => { ... }, () => { ... }).catch(/* F118540 */ function() { ... });
                 });
               }
             }).catch(() => {

@@ -1,10 +1,10 @@
-// Module ID: 10767
-// Function ID: 10768
+// Module ID: 10681
+// Function ID: 10682
 // Name: canRenderParticipantVideo
-// Dependencies: [1218, 4392, 4362, 589, 2]
+// Dependencies: [1218, 4393, 4363, 589, 2]
 // Exports: default, useCanRenderParticipantVideo
 
-// Module 10767 (canRenderParticipantVideo)
+// Module 10681 (canRenderParticipantVideo)
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import ParticipantTypes from "ParticipantTypes";

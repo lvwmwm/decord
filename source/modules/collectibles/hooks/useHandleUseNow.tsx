@@ -1,7 +1,7 @@
 // Module ID: 10178
 // Function ID: 10179
 // Name: useHandleUseNow
-// Dependencies: [5, 32, 19, 678, 1949, 1236, 9420, 10179, 8312, 8555, 2]
+// Dependencies: [5, 32, 19, 678, 1949, 1236, 9424, 10179, 8316, 8559, 2]
 // Exports: useHandleUseNow
 
 // Module 10178 (useHandleUseNow)

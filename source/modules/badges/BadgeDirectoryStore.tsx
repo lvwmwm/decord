@@ -1,10 +1,10 @@
-// Module ID: 8835
-// Function ID: 8836
+// Module ID: 8839
+// Function ID: 8840
 // Name: map
-// Dependencies: [1922, 687, 8836, 584, 8838, 589, 709, 2]
+// Dependencies: [1922, 687, 8840, 584, 8842, 589, 709, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8835 (map)
+// Module 8839 (map)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
 import set from "set";
@@ -46,11 +46,11 @@ prototype["getBadges"] = function getBadges(arg0) {
     return items;
   }
 };
-prototype["hasCatalogFor"] = function hasCatalogFor(arg0) {
-  return set.has(arg0);
+prototype["hasCatalogFor"] = function hasCatalogFor(id) {
+  return set.has(id);
 };
-prototype["isCatalogStaleFor"] = function isCatalogStaleFor(arg0) {
-  const value = map1.get(arg0);
+prototype["isCatalogStaleFor"] = function isCatalogStaleFor(id) {
+  const value = map1.get(id);
   let tmp2 = null == value;
   if (!tmp2) {
     const _Date = Date;
@@ -58,9 +58,9 @@ prototype["isCatalogStaleFor"] = function isCatalogStaleFor(arg0) {
   }
   return tmp2;
 };
-prototype["hasCatalogFetchErrorFor"] = function hasCatalogFetchErrorFor(arg0) {
-  let tmp = arg0;
-  if (arg0 == null) {
+prototype["hasCatalogFetchErrorFor"] = function hasCatalogFetchErrorFor(stateFromStores) {
+  let tmp = stateFromStores;
+  if (stateFromStores == null) {
     const currentUser = authStore.getCurrentUser();
     let id;
     if (currentUser != null) {
@@ -244,8 +244,8 @@ const badgeDirectoryStore = new BadgeDirectoryStore(require("dispatcher"), {
           const _Date2 = Date;
           const timestamp = Date.now();
           const result1 = obj3.set(id, timestamp + value.fail());
-          const badgeDirectory = require(8838) /* urlUserId */.fetchBadgeDirectory(id);
-          const obj5 = require(8838) /* urlUserId */;
+          const badgeDirectory = require(8842) /* urlUserId */.fetchBadgeDirectory(id);
+          const obj5 = require(8842) /* urlUserId */;
           const obj6 = map2;
         }
         obj3 = map3;

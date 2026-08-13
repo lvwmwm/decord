@@ -1,8 +1,8 @@
-// Module ID: 15318
-// Function ID: 15319
-// Dependencies: [19, 17, 21, 4344, 712, 1297, 13124, 4340, 2]
+// Module ID: 15327
+// Function ID: 15328
+// Dependencies: [19, 17, 21, 4342, 712, 1297, 13124, 4338, 2]
 
-// Module 15318
+// Module 15327
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -42,7 +42,7 @@ const memoResult = importAllResult.memo(function VoiceChannelUserLimit(videoLimi
   const items = [tmp3, ];
   const obj1 = { variant: "text-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: null };
   obj1[3] = users.toString().padStart(2, "0");
-  items[1] = callback(require(4340) /* Text */.Text, obj1);
+  items[1] = callback(require(4338) /* Text */.Text, obj1);
   obj[1] = items;
   const items1 = [closure_5(View, obj), callback(View, { style: rect.mid }), ];
   const obj3 = { style: rect.right, children: null };
@@ -50,7 +50,7 @@ const memoResult = importAllResult.memo(function VoiceChannelUserLimit(videoLimi
   const obj2 = { style: rect.mid };
   const str = users.toString();
   obj4[3] = total.toString().padStart(2, "0");
-  obj3[1] = callback(require(4340) /* Text */.Text, obj4);
+  obj3[1] = callback(require(4338) /* Text */.Text, obj4);
   items1[2] = callback(View, obj3);
   obj[1] = items1;
   return closure_5(View, obj);

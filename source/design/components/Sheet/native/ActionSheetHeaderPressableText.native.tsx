@@ -1,10 +1,10 @@
-// Module ID: 9021
-// Function ID: 9022
+// Module ID: 9025
+// Function ID: 9026
 // Name: ActionSheetHeaderPressableText
-// Dependencies: [21, 4344, 1367, 4886, 4340, 2]
+// Dependencies: [21, 4342, 1367, 4887, 4338, 2]
 // Exports: ActionSheetHeaderPressableText
 
-// Module 9021 (ActionSheetHeaderPressableText)
+// Module 9025 (ActionSheetHeaderPressableText)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -25,6 +25,6 @@ export const ActionSheetHeaderPressableText = function ActionSheetHeaderPressabl
     tmp5 = accessibilityLabel;
   }
   obj[3] = tmp5;
-  obj[4] = jsx(require(4340) /* Text */.Text, { variant: str, color: "text-brand", children: label });
-  return jsx(require(4886) /* PressableBase */.PressableOpacity, { style: callback().container, accessibilityRole: "button", onPress: onPress.onPress, accessibilityLabel: null, children: null });
+  obj[4] = jsx(require(4338) /* Text */.Text, { variant: str, color: "text-brand", children: label });
+  return jsx(require(4887) /* PressableBase */.PressableOpacity, { style: callback().container, accessibilityRole: "button", onPress: onPress.onPress, accessibilityLabel: null, children: null });
 };

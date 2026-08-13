@@ -1,10 +1,10 @@
-// Module ID: 8785
-// Function ID: 8786
+// Module ID: 8789
+// Function ID: 8790
 // Name: _updateEmoji
-// Dependencies: [5, 5215, 5034, 4681, 676, 685, 1374, 1337, 709, 530, 8317, 1363, 1236, 4244, 4002, 1370, 5222, 12, 4682, 2]
+// Dependencies: [5, 5216, 5035, 4682, 676, 685, 1374, 1337, 709, 530, 8321, 1363, 1236, 4242, 4002, 1370, 5223, 12, 4683, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 8785 (_updateEmoji)
+// Module 8789 (_updateEmoji)
 import closure_3 from "MAX_FAVORITES";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -91,7 +91,7 @@ function _updateEmoji() {
           } else if (2 === tmp8) {
             c4 = 0;
             c4 = c3;
-            const tmp18 = new callback2(4244)(c4);
+            const tmp18 = new callback2(4242)(c4);
             throw tmp18;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -174,13 +174,13 @@ export const uploadEmoji = function uploadEmoji(guildId) {
   obj.dispatch({ type: "EMOJI_UPLOAD_START", guildId });
   const HTTP = guildId(530).HTTP;
   obj = { url: Endpoints.GUILD_EMOJIS(guildId), body: { image, name, roles }, headers: null, context: null, oldFormErrors: true, rejectWithError: null };
-  obj[2] = importDefault(8317).buildHeadersForMd5(originalMd5);
+  obj[2] = importDefault(8321).buildHeadersForMd5(originalMd5);
   let page;
   if (analyticsLocation != null) {
     page = analyticsLocation.page;
   }
   obj[3] = { client_event_source: page };
-  const obj3 = importDefault(8317);
+  const obj3 = importDefault(8321);
   const tmp3 = guildId;
   obj[5] = guildId(530).rejectWithMigratedError();
   const tmp3Result = guildId(530);

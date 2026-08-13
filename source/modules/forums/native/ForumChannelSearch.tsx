@@ -1,7 +1,7 @@
 // Module ID: 12604
 // Function ID: 12605
 // Name: ForumChannelCloseSearchButton
-// Dependencies: [19, 17, 7267, 21, 4344, 1500, 12605, 8427, 4754, 1236, 8451, 589, 6033, 7266, 2]
+// Dependencies: [19, 17, 7272, 21, 4342, 1500, 12605, 8431, 4755, 1236, 8455, 589, 6035, 7271, 2]
 
 // Module 12604 (ForumChannelCloseSearchButton)
 import importAllResult from "noop";
@@ -102,7 +102,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
           const obj3 = outer1_1(outer1_2[10]);
         }
       };
-      obj[1] = jsx(tmp2(6033).SearchField, { size: "sm", defaultValue: null, onChange: null, placeholder: null, autoFocus: null, onClear: null, grow: false });
+      obj[1] = jsx(tmp2(6035).SearchField, { size: "sm", defaultValue: null, onChange: null, placeholder: null, autoFocus: null, onClear: null, grow: false });
       tmp6Result = tmp6(View, obj);
       const tmp7 = View;
     }

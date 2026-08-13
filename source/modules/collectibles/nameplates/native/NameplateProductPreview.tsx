@@ -1,10 +1,10 @@
-// Module ID: 9601
-// Function ID: 9602
+// Module ID: 9605
+// Function ID: 9606
 // Name: NameplateUser
-// Dependencies: [19, 17, 4336, 21, 4344, 712, 9420, 1946, 1236, 4340, 4765, 9394, 8345, 8311, 589, 4189, 4573, 9516, 9517, 1297, 9602, 5413, 2]
+// Dependencies: [19, 17, 4334, 21, 4342, 712, 9424, 1946, 1236, 4338, 4766, 9398, 8349, 8315, 589, 4187, 4574, 9520, 9521, 1297, 9606, 5414, 2]
 // Exports: default
 
-// Module 9601 (NameplateUser)
+// Module 9605 (NameplateUser)
 import Button from "Button";
 import { View } from "AVERAGE_FONT_WIDTH_RATIO";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -76,7 +76,7 @@ function PlaceholderUser(end) {
   obj[1] = user.name;
   obj[2] = start;
   obj[3] = flag;
-  return callback(require(5413) /* TableRowInner */.TableRow, obj);
+  return callback(require(5414) /* TableRowInner */.TableRow, obj);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { container: { position: "relative", flex: 1, justifyContent: "center", overflow: "hidden" }, memberListContainer: null, memberListTitle: null, memberListGradient: null };
@@ -93,7 +93,7 @@ export default function NameplateProductPreview(product) {
   let firstAvatarDecoration;
   let firstNameplate;
   const tmp = createCacheKey();
-  let obj = require(9420) /* firstAvatarDecoration */;
+  let obj = require(9424) /* firstAvatarDecoration */;
   const shopProductItems = obj.useShopProductItems(product.product);
   ({ firstNameplate, firstAvatarDecoration } = shopProductItems);
   let obj1 = require(1946) /* getNameplateData */;
@@ -118,7 +118,7 @@ export default function NameplateProductPreview(product) {
     const intl2 = tmp2(1236).intl;
     const items1 = [intl2.string(tmp2(1236).t["yzW/fZ"]), " \u2014 3"];
     obj3[5] = items1;
-    items[1] = callback2(tmp2(4340).Text, obj3);
+    items[1] = callback2(tmp2(4338).Text, obj3);
     const obj4 = { user: null, start: true };
     obj4[0] = nameplateSampleUsers.phibi;
     items[2] = callback(PlaceholderUser, obj4);
@@ -134,7 +134,7 @@ export default function NameplateProductPreview(product) {
     const intl3 = tmp2(1236).intl;
     const items2 = [intl3.string(tmp2(1236).t["NG43/6"]), " \u2014 12"];
     obj7[5] = items2;
-    items[5] = callback2(tmp2(4340).Text, obj7);
+    items[5] = callback2(tmp2(4338).Text, obj7);
     const obj8 = { user: null, start: true };
     obj8[0] = nameplateSampleUsers.boom;
     items[6] = callback(PlaceholderUser, obj8);
@@ -148,19 +148,19 @@ export default function NameplateProductPreview(product) {
     const _HermesInternal = HermesInternal;
     items4[1] = "" + tmp.memberListGradient.color + "00";
     obj9[3] = items4;
-    items3[1] = callback(importDefault(4765), obj9);
+    items3[1] = callback(importDefault(4766), obj9);
     const obj10 = { style: null, start: null, end: null, colors: null };
     obj10[0] = tmp.memberListGradient;
     obj10[1] = { x: 0, y: 0.6 };
     obj10[2] = { x: 0, y: 1 };
     const _HermesInternal2 = HermesInternal;
-    const tmp14 = importDefault(4765);
+    const tmp14 = importDefault(4766);
     const items5 = ["" + tmp.memberListGradient.color + "00", tmp.memberListGradient.color];
     obj10[3] = items5;
-    items3[2] = callback(importDefault(4765), obj10);
+    items3[2] = callback(importDefault(4766), obj10);
     obj[5] = items3;
     tmp7 = callback2(View, obj);
-    const tmp16 = importDefault(4765);
+    const tmp16 = importDefault(4766);
   }
   return tmp7;
 };

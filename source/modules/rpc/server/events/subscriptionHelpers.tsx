@@ -1,10 +1,10 @@
-// Module ID: 13835
-// Function ID: 13836
+// Module ID: 13836
+// Function ID: 13837
 // Name: getInitialSubscriptionPayload
-// Dependencies: [1390, 10650, 7200, 4247, 676, 4369, 10651, 11034, 4889, 13798, 7223, 2]
+// Dependencies: [1390, 10564, 7206, 4245, 676, 4370, 10565, 10948, 4890, 13799, 7228, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 13835 (getInitialSubscriptionPayload)
+// Module 13836 (getInitialSubscriptionPayload)
 import participantFromServer from "participantFromServer";
 import map from "map";
 import initializeState from "initializeState";
@@ -68,27 +68,27 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
       return tmp28;
     }
   } else if (tmp.THERMAL_STATE_UPDATE === participantFromServer) {
-    const thermalState = require(11034) /* useThermalState */.getThermalState();
+    const thermalState = require(10948) /* useThermalState */.getThermalState();
     let tmp23 = null;
-    if (thermalState !== require(11034) /* useThermalState */.ThermalStates.UNHANDLED) {
+    if (thermalState !== require(10948) /* useThermalState */.ThermalStates.UNHANDLED) {
       let obj2 = { thermal_state: null };
       obj2[0] = thermalState;
       tmp23 = obj2;
     }
     return tmp23;
   } else if (tmp.ORIENTATION_UPDATE === participantFromServer) {
-    let obj3 = require(4889) /* getIsScreenLandscape */;
+    let obj3 = require(4890) /* getIsScreenLandscape */;
     obj3 = { screen_orientation: null };
     obj3[0] = obj3.getIsScreenLandscape() ? closure_8.LANDSCAPE : closure_8.PORTRAIT;
     return obj3;
   } else if (tmp.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === participantFromServer) {
-    obj2 = require(13798) /* activityInstanceConnectedParticipants */;
+    obj2 = require(13799) /* activityInstanceConnectedParticipants */;
     return obj2.activityInstanceConnectedParticipants();
   } else if (tmp.QUEST_ENROLLMENT_STATUS_UPDATE === participantFromServer) {
     const quest_id = c3.quest_id;
     if (quest_id) {
       quest = quest.getQuest(quest_id);
-      obj = require(7223) /* getApplicationIdsByTaskTypes */;
+      obj = require(7228) /* getApplicationIdsByTaskTypes */;
       const activityApplicationId = obj.getActivityApplicationId(quest);
       let tmp11 = null;
       if (null != quest) {

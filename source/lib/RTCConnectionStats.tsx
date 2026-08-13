@@ -1,7 +1,7 @@
 // Module ID: 13136
 // Function ID: 13137
 // Name: reset
-// Dependencies: [676, 4419, 12, 13137, 2]
+// Dependencies: [676, 4420, 12, 13137, 2]
 
 // Module 13136 (reset)
 import { RTCConnectionStates } from "ME";
@@ -33,14 +33,14 @@ prototype["update"] = function update(current) {
     const history = self.history;
     const obj = { state: null, startTime: null };
     obj[0] = current;
-    obj[1] = require(4419) /* sleep */.now();
+    obj[1] = require(4420) /* sleep */.now();
     history.push(obj);
-    const obj2 = require(4419) /* sleep */;
+    const obj2 = require(4420) /* sleep */;
   }
 };
 prototype["getVoiceConnectionSuccessStats"] = function getVoiceConnectionSuccessStats(nowResult) {
   if (nowResult === undefined) {
-    let obj = RTC_DISCONNECTED(4419);
+    let obj = RTC_DISCONNECTED(4420);
     nowResult = obj.now();
   }
   const stateDurations = this.getStateDurations(nowResult);

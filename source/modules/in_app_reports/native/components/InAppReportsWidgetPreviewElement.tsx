@@ -1,7 +1,7 @@
 // Module ID: 12706
 // Function ID: 12707
 // Name: WidgetPreview
-// Dependencies: [19, 17, 21, 4344, 712, 8880, 7131, 12521, 7124, 12408, 4340, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 8884, 7137, 12521, 7130, 12408, 4338, 1236, 2]
 // Exports: default
 
 // Module 12706 (WidgetPreview)
@@ -25,8 +25,8 @@ export default function WidgetPreview(arg0) {
   let widget;
   ({ widget, userId } = arg0);
   const tmp = createCacheKey();
-  const tmp4 = importDefault(8880)();
-  if (widget instanceof require(7131) /* isFieldEmpty */.UserProfilePersonalWidget) {
+  const tmp4 = importDefault(8884)();
+  if (widget instanceof require(7137) /* isFieldEmpty */.UserProfilePersonalWidget) {
     let obj = { userId: null, widget: null, disableInteraction: true, cardStyle: null };
     obj[0] = userId;
     obj[1] = widget;
@@ -46,7 +46,7 @@ export default function WidgetPreview(arg0) {
         tmp6 = callback(tmp5(12408).WidgetSection, obj);
       }
     }
-    tmp5Result = tmp5(7124);
+    tmp5Result = tmp5(7130);
   }
   let tmp9 = null;
   if (null !== tmp6) {
@@ -56,7 +56,7 @@ export default function WidgetPreview(arg0) {
     obj2[0] = tmp.title;
     const intl = tmp5(1236).intl;
     obj2[3] = intl.string(tmp5(1236).t.SpsnDY).toUpperCase();
-    const items2 = [callback(tmp5(4340).Text, obj2), tmp6];
+    const items2 = [callback(tmp5(4338).Text, obj2), tmp6];
     obj1[1] = items2;
     tmp9 = callback2(View, obj1);
     const str = intl.string(tmp5(1236).t.SpsnDY);

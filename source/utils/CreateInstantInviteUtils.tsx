@@ -1,10 +1,10 @@
-// Module ID: 16951
-// Function ID: 16952
+// Module ID: 16962
+// Function ID: 16963
 // Name: getInvitableChannelForGuild
 // Dependencies: [1980, 3989, 676, 2]
 // Exports: getInvitableChannelForGuild
 
-// Module 16951 (getInvitableChannelForGuild)
+// Module 16962 (getInvitableChannelForGuild)
 import comparator from "comparator";
 import closure_2 from "comparator";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

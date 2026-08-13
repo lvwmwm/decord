@@ -1,10 +1,10 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8719
+// Function ID: 8720
 // Name: styles
-// Dependencies: [19, 21, 4344, 712, 4758, 1367, 4083, 4753, 7793, 2]
+// Dependencies: [19, 21, 4342, 712, 4759, 1367, 4083, 4754, 7797, 2]
 // Exports: FloatingActionButton
 
-// Module 8715 (styles)
+// Module 8719 (styles)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -19,7 +19,7 @@ const styles = createCacheKey.createStyles(() => {
   obj = {};
   const merged = Object.assign(importDefault(712).shadows.SHADOW_HIGH);
   obj[0] = obj;
-  obj = { minWidth: require(4758) /* MINIMUM_HIT_AREA */.FAB_BUTTON_SIZE, minHeight: require(4758) /* MINIMUM_HIT_AREA */.FAB_BUTTON_SIZE, padding: 0 };
+  obj = { minWidth: require(4759) /* MINIMUM_HIT_AREA */.FAB_BUTTON_SIZE, minHeight: require(4759) /* MINIMUM_HIT_AREA */.FAB_BUTTON_SIZE, padding: 0 };
   if (flag) {
     const obj1 = { borderRadius: null };
     obj1[0] = importDefault(712).radii.lg;
@@ -64,7 +64,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
       return obj;
     }
   }
-  obj = { withSpring: positionBottom(4753).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
+  obj = { withSpring: positionBottom(4754).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
   F.__closure = obj;
   F.__workletHash = 10762818944671;
   F.__initData = closure_7;
@@ -83,6 +83,6 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   }
   obj1.icon = cloneElementResult;
   ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = styles(positionRight(1367)("FloatingActionButton")));
-  obj[1] = jsx(positionBottom(7793).BaseIconButton, {});
+  obj[1] = jsx(positionBottom(7797).BaseIconButton, {});
   return jsx(positionRight(4083).View, { style: animatedStyle, children: null });
 };

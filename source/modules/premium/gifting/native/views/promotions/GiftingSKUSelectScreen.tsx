@@ -1,7 +1,7 @@
 // Module ID: 10158
 // Function ID: 10159
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4344, 712, 1628, 4340, 1236, 10159, 4754, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 1628, 4338, 1236, 10159, 4755, 2]
 // Exports: default
 
 // Module 10158 (GiftingSKUSelectScreen)

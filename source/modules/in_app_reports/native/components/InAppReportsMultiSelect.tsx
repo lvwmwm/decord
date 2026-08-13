@@ -1,7 +1,7 @@
 // Module ID: 12721
 // Function ID: 12722
 // Name: MultiSelect
-// Dependencies: [19, 17, 21, 4344, 712, 5806, 8493, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5807, 8497, 2]
 // Exports: default
 
 // Module 12721 (MultiSelect)
@@ -42,7 +42,7 @@ export default function MultiSelect(arg0) {
           checked: tmp in closure_1
         }, tmp);
       });
-      obj[1] = jsx(require(5806) /* TableRowGroupTitle */.TableRowGroup, { hasIcons: false, children: null });
+      obj[1] = jsx(require(5807) /* TableRowGroupTitle */.TableRowGroup, { hasIcons: false, children: null });
       return <View hasIcons={false}>{null}</View>;
     }
   }

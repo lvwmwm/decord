@@ -1,9 +1,9 @@
-// Module ID: 9586
-// Function ID: 9587
+// Module ID: 9590
+// Function ID: 9591
 // Name: getUnitId
 // Dependencies: [1368, 2]
 
-// Module 9586 (getUnitId)
+// Module 9590 (getUnitId)
 const obj = { 1: null };
 obj[1] = { enabled: true };
 const tmp2 = require("getUnitId")({ kind: "user", name: "2026-05-age-restricted-application-commands", defaultConfig: { enabled: false }, variations: obj });

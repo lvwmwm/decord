@@ -1,10 +1,10 @@
-// Module ID: 15162
-// Function ID: 15163
+// Module ID: 15171
+// Function ID: 15172
 // Name: trackAgeGateSubmitted
 // Dependencies: [676, 698, 3943, 2]
 // Exports: default
 
-// Module 15162 (trackAgeGateSubmitted)
+// Module 15171 (trackAgeGateSubmitted)
 import { AnalyticEvents } from "ME";
 
 const result = require("t").fileFinishedImporting("modules/auth/experiment/trackAgeGateSubmitted.tsx");

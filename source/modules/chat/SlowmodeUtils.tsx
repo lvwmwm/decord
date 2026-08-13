@@ -1,10 +1,10 @@
-// Module ID: 7187
-// Function ID: 7188
+// Module ID: 7193
+// Function ID: 7194
 // Name: canBypassSlowmodeHelper
 // Dependencies: [3989, 676, 589, 1236, 687, 3943, 2]
 // Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText, useCanBypassSlowmode
 
-// Module 7187 (canBypassSlowmodeHelper)
+// Module 7193 (canBypassSlowmodeHelper)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 

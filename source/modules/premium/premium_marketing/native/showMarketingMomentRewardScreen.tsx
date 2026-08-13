@@ -1,7 +1,7 @@
 // Module ID: 12740
 // Function ID: 12741
 // Name: _showMarketingMomentRewardScreen
-// Dependencies: [5, 7043, 7042, 10171, 2]
+// Dependencies: [5, 7049, 7048, 10171, 2]
 // Exports: showMarketingMomentRewardScreen
 
 // Module 12740 (_showMarketingMomentRewardScreen)

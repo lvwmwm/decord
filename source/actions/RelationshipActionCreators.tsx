@@ -1,9 +1,9 @@
-// Module ID: 9289
-// Function ID: 9290
+// Module ID: 9293
+// Function ID: 9294
 // Name: handleRelationshipAddError
-// Dependencies: [32, 1922, 676, 9290, 5378, 4682, 5273, 1236, 9291, 9292, 9293, 530, 4189, 1363, 709, 9294, 7825, 2]
+// Dependencies: [32, 1922, 676, 9294, 5379, 4683, 5274, 1236, 9295, 9296, 9297, 530, 4187, 1363, 709, 9298, 7829, 2]
 
-// Module 9289 (handleRelationshipAddError)
+// Module 9293 (handleRelationshipAddError)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -30,10 +30,10 @@ function handleRelationshipAddError(arg0, arg1, substr) {
       obj[1] = intl8.string(require(1236) /* getSystemLocale */.t.TuJriJ);
       const intl9 = require(1236) /* getSystemLocale */.intl;
       obj[2] = intl9.string(require(1236) /* getSystemLocale */.t.DppXIx);
-      require(5378) /* openContextMenu */.closeContextMenu();
-      const obj11 = require(5378) /* openContextMenu */;
-      importDefault(4682).show(obj);
-      const obj12 = importDefault(4682);
+      require(5379) /* openContextMenu */.closeContextMenu();
+      const obj11 = require(5379) /* openContextMenu */;
+      importDefault(4683).show(obj);
+      const obj12 = importDefault(4683);
     }
   } else {
     if (403 === status) {
@@ -48,22 +48,22 @@ function handleRelationshipAddError(arg0, arg1, substr) {
         obj[3] = function onConfirm() {
           const result = callback(table[8]).openClaimAccountModal();
         };
-        require(5378) /* openContextMenu */.closeContextMenu();
-        const obj7 = require(5378) /* openContextMenu */;
-        importDefault(4682).show(obj);
-        const obj8 = importDefault(4682);
+        require(5379) /* openContextMenu */.closeContextMenu();
+        const obj7 = require(5379) /* openContextMenu */;
+        importDefault(4683).show(obj);
+        const obj8 = importDefault(4683);
       }
     }
     if (num === constants.USER_QUARANTINED) {
-      require(5378) /* openContextMenu */.closeContextMenu();
-      importDefault(5273)();
-      const obj5 = require(5378) /* openContextMenu */;
+      require(5379) /* openContextMenu */.closeContextMenu();
+      importDefault(5274)();
+      const obj5 = require(5379) /* openContextMenu */;
     } else {
       if (!obj9.isLimitedAccessErrorCode(status, num)) {
         if (num !== tmp2.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
           if (arg1 === obj.SHOW_ALWAYS) {
             if (null != substr) {
-              let tmp18Result = tmp18(9293);
+              let tmp18Result = tmp18(9297);
               if (!num) {
                 num = 0;
               }
@@ -78,14 +78,14 @@ function handleRelationshipAddError(arg0, arg1, substr) {
             obj1[1] = humanizeAbortCodeResult;
             const intl3 = tmp18(1236).intl;
             obj1[2] = intl3.string(tmp18(1236).t.BddRzS);
-            tmp18Result = tmp18(5378);
+            tmp18Result = tmp18(5379);
             tmp18Result.closeContextMenu();
-            importDefault(4682).show(obj1);
-            const obj4 = importDefault(4682);
+            importDefault(4683).show(obj1);
+            const obj4 = importDefault(4683);
           }
         }
       }
-      obj9 = require(9292) /* isLimitedAccessErrorCode */;
+      obj9 = require(9296) /* isLimitedAccessErrorCode */;
     }
   }
   throw arg0;
@@ -223,7 +223,7 @@ obj = {
     }, () => callback(709).dispatch({ type: "LOAD_RELATIONSHIPS_FAILURE" }));
   },
   confirmClearPendingRelationships(arg0) {
-    importDefault(9294)(arg0);
+    importDefault(9298)(arg0);
   },
   clearPendingRelationships() {
     const HTTP = require(530) /* sendRequest */.HTTP;
@@ -275,7 +275,7 @@ obj = {
       obj = { type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId: callback, timestamp: Date.now() };
       channelId(outer1_3[14]).dispatch(obj);
     }).catch(() => {
-      channelId(7825).showFailedToast();
+      channelId(7829).showFailedToast();
       const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
@@ -296,7 +296,7 @@ obj = {
       const intl = id(outer1_3[7]).intl;
       AccessibilityAnnouncer.announce(intl.string(id(outer1_3[7]).t.QlH5w6));
     }).catch(() => {
-      id2(7825).showFailedToast();
+      id2(7829).showFailedToast();
       const AccessibilityAnnouncer = id(1363).AccessibilityAnnouncer;
       const intl = id(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(id(1236).t.n6Jo3E));

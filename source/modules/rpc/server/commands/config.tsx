@@ -1,8 +1,8 @@
-// Module ID: 13806
-// Function ID: 13807
-// Dependencies: [4247, 676, 10798, 10795, 709, 2]
+// Module ID: 13807
+// Function ID: 13808
+// Dependencies: [4245, 676, 10712, 10709, 709, 2]
 
-// Module 13806
+// Module 13807
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
 
@@ -16,7 +16,7 @@ export default {
   [ME.RPCCommands.SET_CONFIG]: {
     scope: RPC_AUTHENTICATED_SCOPE,
     validation(boolean) {
-      let obj = importDefault(10798)(boolean);
+      let obj = importDefault(10712)(boolean);
       obj = { use_interactive_pip: boolean.boolean() };
       return obj.required().keys(obj);
     },
@@ -27,13 +27,13 @@ export default {
         let obj = { errorCode: null };
         obj[0] = RPCErrors.INVALID_COMMAND;
         const _HermesInternal = HermesInternal;
-        let tmp15 = importDefault(10795);
+        let tmp15 = importDefault(10709);
         tmp15 = new tmp15(obj, "command not available from \"" + socket.transport + " transport");
         throw tmp15;
       } else if (null == socket.application.id) {
         obj = { errorCode: null };
         obj[0] = RPCErrors.INVALID_COMMAND;
-        const tmp11 = new importDefault(10795)(obj, "invalid application");
+        const tmp11 = new importDefault(10709)(obj, "invalid application");
         throw tmp11;
       } else {
         obj = importDefault(709);

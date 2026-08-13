@@ -1,10 +1,10 @@
-// Module ID: 8718
-// Function ID: 8719
+// Module ID: 8722
+// Function ID: 8723
 // Name: PortalKeyboardFooterIOS
-// Dependencies: [19, 21, 4344, 712, 1628, 1642, 4209, 4083, 1626, 691, 4214, 2]
+// Dependencies: [19, 21, 4342, 712, 1628, 1642, 4207, 4083, 1626, 691, 4212, 2]
 // Exports: default
 
-// Module 8718 (PortalKeyboardFooterIOS)
+// Module 8722 (PortalKeyboardFooterIOS)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -40,8 +40,8 @@ export default function PortalKeyboardFooterIOS(animatedSheetIndex) {
   const reanimatedKeyboardAnimation = obj.useReanimatedKeyboardAnimation();
   height = reanimatedKeyboardAnimation.height;
   progress = reanimatedKeyboardAnimation.progress;
-  keyboardTypeSharedValue = animatedSheetIndex(4209).useKeyboardTypeSharedValue();
-  const obj2 = animatedSheetIndex(4209);
+  keyboardTypeSharedValue = animatedSheetIndex(4207).useKeyboardTypeSharedValue();
+  const obj2 = animatedSheetIndex(4207);
   class S {
     constructor() {
       tmp = animatedSheetIndex;
@@ -91,6 +91,6 @@ export default function PortalKeyboardFooterIOS(animatedSheetIndex) {
     return items;
   }, items);
   obj = { style: memo, children: null };
-  obj[1] = height(animatedSheetIndex(4214).PortalHost, { name: str });
+  obj[1] = height(animatedSheetIndex(4212).PortalHost, { name: str });
   return height(flag(4083).View, obj);
 };

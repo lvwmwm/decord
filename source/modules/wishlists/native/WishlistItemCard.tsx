@@ -1,7 +1,7 @@
 // Module ID: 10151
 // Function ID: 10152
 // Name: WishlistItemCard
-// Dependencies: [19, 676, 21, 8256, 10152, 10154, 10155, 2]
+// Dependencies: [19, 676, 21, 8260, 10152, 10154, 10155, 2]
 // Exports: default
 
 // Module 10151 (WishlistItemCard)
@@ -19,7 +19,7 @@ export default function WishlistItemCard(arg0) {
   let wishlistOwnerId;
   ({ sku, isOwned, source, wishlistOwnerId } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  require(8256) /* apexExperiment */;
+  require(8260) /* apexExperiment */;
   const productLine = sku.productLine;
   if (SKUProductLines.COLLECTIBLES === productLine) {
     let obj = { sku: null, isOwned: null, source: null, wishlistOwnerId: null };

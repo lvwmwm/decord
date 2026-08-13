@@ -1,10 +1,10 @@
-// Module ID: 8474
-// Function ID: 8475
+// Module ID: 8478
+// Function ID: 8479
 // Name: useCurrentUserGuildJoinRequest
-// Dependencies: [4168, 589, 2]
+// Dependencies: [4166, 589, 2]
 // Exports: useCurrentUserGuildJoinRequest
 
-// Module 8474 (useCurrentUserGuildJoinRequest)
+// Module 8478 (useCurrentUserGuildJoinRequest)
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 
 const require = arg1;

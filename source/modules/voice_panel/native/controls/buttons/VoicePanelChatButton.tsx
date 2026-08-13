@@ -1,10 +1,10 @@
-// Module ID: 16335
-// Function ID: 16336
+// Module ID: 16346
+// Function ID: 16347
 // Name: ChatButton
-// Dependencies: [19, 21, 4344, 712, 11705, 16327, 16336, 16315, 16328, 1236, 16337, 5820, 4840, 2]
+// Dependencies: [19, 21, 4342, 712, 11703, 16338, 16347, 16326, 16339, 1236, 16348, 5821, 4841, 2]
 // Exports: default
 
-// Module 16335 (ChatButton)
+// Module 16346 (ChatButton)
 import noop from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

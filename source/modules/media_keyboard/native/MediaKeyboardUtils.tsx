@@ -1,10 +1,10 @@
-// Module ID: 10055
-// Function ID: 10056
+// Module ID: 10053
+// Function ID: 10054
 // Name: handleLimitedPickerDialog
-// Dependencies: [5, 1304, 1391, 4680, 1979, 4679, 1623, 676, 4556, 4891, 8401, 4898, 4900, 4901, 698, 4912, 500, 4324, 10056, 1231, 10080, 4750, 10210, 10211, 12, 2]
+// Dependencies: [5, 1304, 1391, 4681, 1979, 4680, 1623, 676, 4557, 4892, 8405, 4899, 4901, 4902, 698, 4913, 500, 4322, 10054, 1231, 10078, 4751, 10210, 10211, 12, 2]
 // Exports: addAttachmentForCommand, addImagesFromPicker, animatedIndexThreshold, cropResultToUploadItem, getMediaKeyboardDraftType, handleCameraDialog, handleSelectGift, handleSelectThread, handleViewAllDialog, mediaNodeToUploadItem
 
-// Module 10055 (handleLimitedPickerDialog)
+// Module 10053 (handleLimitedPickerDialog)
 import map from "map";
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -243,7 +243,7 @@ function _handleAttachFile() {
                         let closure_0 = arg0;
                         let c6 = 0;
                         let c7 = 0;
-                        return (/* F120440 */ function*() { ... })();
+                        return (/* F120498 */ function*() { ... })();
                       });
                       return function() {
                         const self = this;
@@ -296,12 +296,12 @@ function handleSelectKeyboardItem(channelId, item, isIncluded, arg3) {
   if (isIncluded) {
     const findUploadResult = closure_8.findUpload(channelId, DraftType.ChannelMessage, (closure_0) => image(outer1_2[11]).doesImageMatchUpload(image, closure_0));
     if (null != findUploadResult) {
-      importDefault(8401).remove(channelId, findUploadResult.id, tmp13.ChannelMessage);
-      const obj5 = importDefault(8401);
+      importDefault(8405).remove(channelId, findUploadResult.id, tmp13.ChannelMessage);
+      const obj5 = importDefault(8405);
     }
     tmp13 = DraftType;
   } else {
-    let obj = importDefault(8401);
+    let obj = importDefault(8405);
     obj = { channelId: null, file: null, draftType: null };
     obj[0] = channelId;
     image = item.node.image;
@@ -311,9 +311,9 @@ function handleSelectKeyboardItem(channelId, item, isIncluded, arg3) {
     }
     obj = { id: null, origin: null, uri: null, originalUri: null, mimeType: null, width: null, height: null, filename: null, playableDuration: null, platform: null };
     obj[0] = uri;
-    obj[1] = image(4891).UploadOrigin.IMAGE_PICKER;
+    obj[1] = image(4892).UploadOrigin.IMAGE_PICKER;
     ({ uri: obj3[2], uri: obj3[3], mimeType: obj3[4], width: obj3[5], height: obj3[6], filename: obj3[7], playableDuration: obj3[8] } = image);
-    obj[9] = image(4891).UploadPlatform.REACT_NATIVE;
+    obj[9] = image(4892).UploadPlatform.REACT_NATIVE;
     let tmp6 = null != arg3;
     if (tmp6) {
       const obj1 = { createdUsingInAppCamera: null };
@@ -352,7 +352,7 @@ function showSimpleMediaKeyboard(channel) {
   } else if (tmp.INTERACTION_MODAL === CHAT) {
     InteractionModal = DraftType.InteractionModal;
   }
-  let obj = _require(10056);
+  let obj = _require(10054);
   obj = {
     channel,
     draftType: InteractionModal,
@@ -693,7 +693,7 @@ function showSimpleMediaKeyboard(channel) {
                           ({ id: obj[0], uri: obj[1], uri: obj[2], mimeType: obj[3], width: obj[4], height: obj[5], fileName: obj[6], duration: obj[7] } = tmp6);
                           let tmp10 = lib;
                           let tmp11 = dependencyMap;
-                          obj[8] = lib(4891).UploadPlatform.REACT_NATIVE;
+                          obj[8] = lib(4892).UploadPlatform.REACT_NATIVE;
                           let arr = items.push(obj);
                         }
                         continue;
@@ -709,7 +709,7 @@ function showSimpleMediaKeyboard(channel) {
               const tmpResult = tmp(tmp2[15]);
             } else {
               if (obj3.isIOS()) {
-                let length = arr2.filter((origin) => origin.origin !== found(4891).UploadOrigin.IMAGE_PICKER).length;
+                let length = arr2.filter((origin) => origin.origin !== found(4892).UploadOrigin.IMAGE_PICKER).length;
               } else {
                 length = arr2.length;
               }
@@ -732,8 +732,8 @@ function showSimpleMediaKeyboard(channel) {
         }
       });
     },
-    onClose: _require(10056).hideMediaKeyboardActionSheet,
-    onBack: _require(10056).hideMediaKeyboardActionSheet
+    onClose: _require(10054).hideMediaKeyboardActionSheet,
+    onBack: _require(10054).hideMediaKeyboardActionSheet
   };
   let result = obj.showMediaKeyboardActionSheet(obj);
 }
@@ -741,7 +741,7 @@ function showSimpleMediaKeyboard(channel) {
 export const addImagesFromPicker = function addImagesFromPicker(id, items, IMAGE_PICKER) {
   const _require = id;
   const importDefault = IMAGE_PICKER;
-  if (IMAGE_PICKER !== _require(4891).UploadOrigin.FILE_ATTACHMENT) {
+  if (IMAGE_PICKER !== _require(4892).UploadOrigin.FILE_ATTACHMENT) {
     const found = items.filter((uri) => {
       let closure_0 = uri;
       let tmp2 = null != closure_0;
@@ -766,10 +766,10 @@ export const addImagesFromPicker = function addImagesFromPicker(id, items, IMAGE
     obj[0] = mapped;
     obj[1] = id;
     obj[2] = DraftType.ChannelMessage;
-    importDefault(8401).addFiles(obj);
-    const obj3 = importDefault(8401);
+    importDefault(8405).addFiles(obj);
+    const obj3 = importDefault(8405);
   } else {
-    obj = importDefault(8401);
+    obj = importDefault(8405);
     obj = { files: null, channelId: null, draftType: null };
     obj[0] = items;
     obj[1] = id;
@@ -779,7 +779,7 @@ export const addImagesFromPicker = function addImagesFromPicker(id, items, IMAGE
 };
 export const addAttachmentForCommand = function addAttachmentForCommand(channelId, onSelectFiles, result1, outer1_1, IMAGE_PICKER) {
   const option = outer1_1.option;
-  let obj = require(4900) /* openImagePickerUnhandled */;
+  let obj = require(4901) /* openImagePickerUnhandled */;
   const filename = obj.getFileFromUploadItem(result1).filename;
   if (outer1_1.target === constants.COMMAND) {
     const current = onSelectFiles.current;
@@ -800,8 +800,8 @@ export const addAttachmentForCommand = function addAttachmentForCommand(channelI
   } else if (tmp2.INTERACTION_MODAL === target) {
     InteractionModal = DraftType.InteractionModal;
   }
-  importDefault(8401).remove(channelId, outer1_1.option.name, InteractionModal);
-  const obj4 = importDefault(8401);
+  importDefault(8405).remove(channelId, outer1_1.option.name, InteractionModal);
+  const obj4 = importDefault(8405);
   obj = { channelId, file: null, draftType: null, allowOptimization: false };
   const obj1 = {};
   const merged = Object.assign(result1);
@@ -810,7 +810,7 @@ export const addAttachmentForCommand = function addAttachmentForCommand(channelI
   obj1.filename = filename;
   obj[1] = obj1;
   obj[2] = InteractionModal;
-  importDefault(8401).addFile(obj);
+  importDefault(8405).addFile(obj);
 };
 export const handleCameraDialog = function handleCameraDialog(arg0) {
   let map;
@@ -819,7 +819,7 @@ export const handleCameraDialog = function handleCameraDialog(arg0) {
   let importDefault;
   let require;
   ({ channel: require, previewType: importDefault, onDismissKeyboard: dependencyMap, onRestoreKeyboard: map, onSelectFiles: CHANNEL_SIDEBAR_WIDTH } = arg0);
-  const permission = importDefault(4901).requestPermission(NativePermissionTypes.CAMERA);
+  const permission = importDefault(4902).requestPermission(NativePermissionTypes.CAMERA);
   permission.then((arg0) => {
     if (arg0) {
       let obj = _undefined2(_undefined3[14]);
@@ -966,7 +966,7 @@ export const handleViewAllDialog = function handleViewAllDialog(arg0) {
                       ({ id: obj[0], uri: obj[1], uri: obj[2], mimeType: obj[3], width: obj[4], height: obj[5], fileName: obj[6], duration: obj[7] } = tmp6);
                       let tmp10 = lib;
                       let tmp11 = dependencyMap;
-                      obj[8] = lib(4891).UploadPlatform.REACT_NATIVE;
+                      obj[8] = lib(4892).UploadPlatform.REACT_NATIVE;
                       let arr = items.push(obj);
                     }
                     continue;
@@ -982,7 +982,7 @@ export const handleViewAllDialog = function handleViewAllDialog(arg0) {
           const tmpResult = tmp(tmp2[15]);
         } else {
           if (obj3.isIOS()) {
-            let length = arr2.filter((origin) => origin.origin !== found(4891).UploadOrigin.IMAGE_PICKER).length;
+            let length = arr2.filter((origin) => origin.origin !== found(4892).UploadOrigin.IMAGE_PICKER).length;
           } else {
             length = arr2.length;
           }
@@ -995,7 +995,7 @@ export const handleViewAllDialog = function handleViewAllDialog(arg0) {
   }
   obj = require(500) /* set */;
   const tmp = require;
-  resolved = importDefault(4901).requestPermission(NativePermissionTypes.PHOTOS);
+  resolved = importDefault(4902).requestPermission(NativePermissionTypes.PHOTOS);
 };
 export { handleLimitedPickerDialog };
 export const handleSelectGift = function handleSelectGift(analyticsLocations, chatInput, current2) {
@@ -1051,7 +1051,7 @@ export const handleSelectGift = function handleSelectGift(analyticsLocations, ch
     };
   }
   obj1[4] = fn;
-  _require(10080).openGiftModal(obj1);
+  _require(10078).openGiftModal(obj1);
 };
 export const handleSelectThread = function handleSelectThread(channel, chatInput) {
   let obj = importDefault(698);
@@ -1082,7 +1082,7 @@ export const mediaNodeToUploadItem = function mediaNodeToUploadItem(item) {
   if (uri == null) {
     uri = image.uri;
   }
-  let obj = { id: uri, origin: require(4891) /* cancel */.UploadOrigin.IMAGE_PICKER, uri: image.uri, originalUri: image.uri, mimeType: image.mimeType, width: image.width, height: image.height, filename: image.filename, playableDuration: image.playableDuration, platform: require(4891) /* cancel */.UploadPlatform.REACT_NATIVE };
+  let obj = { id: uri, origin: require(4892) /* cancel */.UploadOrigin.IMAGE_PICKER, uri: image.uri, originalUri: image.uri, mimeType: image.mimeType, width: image.width, height: image.height, filename: image.filename, playableDuration: image.playableDuration, platform: require(4892) /* cancel */.UploadPlatform.REACT_NATIVE };
   let tmp = null != arg1;
   if (tmp) {
     obj = { createdUsingInAppCamera: null };
@@ -1110,7 +1110,7 @@ export const cropResultToUploadItem = function cropResultToUploadItem(path) {
   obj[2] = combined;
   ({ mime: obj[3], width: obj[4], height: obj[5] } = path);
   obj[6] = arr;
-  obj[7] = require(4891) /* cancel */.UploadPlatform.REACT_NATIVE;
+  obj[7] = require(4892) /* cancel */.UploadPlatform.REACT_NATIVE;
   return obj;
 };
 export { handleSelectKeyboardItem };

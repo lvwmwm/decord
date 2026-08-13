@@ -1,9 +1,9 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 15817
+// Function ID: 15818
 // Name: SearchListRow
-// Dependencies: [19, 17, 8442, 21, 4344, 712, 4886, 4340, 2]
+// Dependencies: [19, 17, 8446, 21, 4342, 712, 4887, 4338, 2]
 
-// Module 15808 (SearchListRow)
+// Module 15817 (SearchListRow)
 import { View } from "get ActivityIndicator";
 import { SEARCH_ROW_TAP_STATE_PADDING as closure_4 } from "MessageEmbedTypes";
 import jsxProd from "jsxProd";
@@ -68,7 +68,7 @@ const memoResult = require("noop").memo((accessibilityRole) => {
     const obj1 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: null, children: null };
     obj1[3] = tmpResult.text;
     obj1[4] = label;
-    tmp7Result = tmp7(require(4340) /* Text */.Text, obj1);
+    tmp7Result = tmp7(require(4338) /* Text */.Text, obj1);
   }
   const items5 = [tmp7Result, subLabel];
   obj[1] = items5;
@@ -86,7 +86,7 @@ const memoResult = require("noop").memo((accessibilityRole) => {
   }
   items1[2] = tmp7Result;
   obj[10] = items1;
-  return closure_6(require(4886) /* PressableBase */.PressableHighlight, obj);
+  return closure_6(require(4887) /* PressableBase */.PressableHighlight, obj);
 });
 const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/list/SearchListRow.tsx");
 

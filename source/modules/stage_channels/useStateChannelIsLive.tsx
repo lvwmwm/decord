@@ -1,10 +1,10 @@
-// Module ID: 7817
-// Function ID: 7818
+// Module ID: 7821
+// Function ID: 7822
 // Name: useStageChannelIsLive
 // Dependencies: [1396, 589, 2]
 // Exports: default
 
-// Module 7817 (useStageChannelIsLive)
+// Module 7821 (useStageChannelIsLive)
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 
 const require = arg1;

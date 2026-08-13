@@ -1,7 +1,7 @@
 // Module ID: 12779
 // Function ID: 12780
 // Name: computeDaysUntilNextBadgeDate
-// Dependencies: [19, 3943, 12780, 9556, 2]
+// Dependencies: [19, 3943, 12780, 9560, 2]
 // Exports: computeDaysUntilNextBadgeDate, useTimeUntilNextBadge
 
 // Module 12779 (computeDaysUntilNextBadgeDate)
@@ -17,7 +17,7 @@ export const computeDaysUntilNextBadgeDate = function computeDaysUntilNextBadgeD
 export const useTimeUntilNextBadge = function useTimeUntilNextBadge() {
   nextTenureBadge = nextTenureBadge(12780).useNextTenureBadge();
   let obj = nextTenureBadge(12780);
-  const premiumSince = nextTenureBadge(9556).usePremiumSince();
+  const premiumSince = nextTenureBadge(9560).usePremiumSince();
   const items = [nextTenureBadge, premiumSince];
   return useMemo(() => {
     if (null != nextTenureBadge) {

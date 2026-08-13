@@ -1,10 +1,10 @@
-// Module ID: 9692
-// Function ID: 9693
+// Module ID: 9696
+// Function ID: 9697
 // Name: isGameActivity
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 9692 (isGameActivity)
+// Module 9696 (isGameActivity)
 import { ActivityTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/isGameActivity.tsx");

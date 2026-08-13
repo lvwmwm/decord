@@ -1,10 +1,10 @@
-// Module ID: 5027
-// Function ID: 5028
+// Module ID: 5028
+// Function ID: 5029
 // Name: removePunctuation
 // Dependencies: [2]
 // Exports: getQueriesFromUserInput, removePunctuation
 
-// Module 5027 (removePunctuation)
+// Module 5028 (removePunctuation)
 const re0 = /(!|\.|;|,|-|—|–|\?|"|')/g;
 const re1 = /(\n|\t|\s)/g;
 const result = require("set").fileFinishedImporting("modules/stickers/StickersSuggestionUtils.tsx");

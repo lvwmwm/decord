@@ -1,9 +1,9 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 15892
+// Function ID: 15893
 // Name: DirectMessageIcon
-// Dependencies: [19, 17, 1391, 1910, 3989, 4430, 1922, 676, 21, 4344, 712, 589, 1297, 4534, 1499, 4352, 4886, 4340, 1236, 4526, 9708, 4804, 9516, 5767, 8828, 2]
+// Dependencies: [19, 17, 1391, 1910, 3989, 4431, 1922, 676, 21, 4342, 712, 589, 1297, 4535, 1499, 4353, 4887, 4338, 1236, 4527, 9712, 4805, 9520, 5768, 8832, 2]
 
-// Module 15883 (DirectMessageIcon)
+// Module 15892 (DirectMessageIcon)
 import importAllResult from "allowChannelAccess";
 import { View } from "Text";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -51,7 +51,7 @@ function DirectMessageIcon(channel) {
   }, items2);
   let tmp9Result = null;
   if (null != stateFromStores) {
-    obj = { avatarDecoration: null, user: null, guildId: "Boolean", size: true, status: "done", isMobileOnline: true, isVROnline: null, statusStyle: null };
+    obj = { avatarDecoration: null, user: null, guildId: "Boolean", size: true, status: false, isMobileOnline: "done", isVROnline: "flowing", statusStyle: "hourglass" };
     obj[0] = stateFromStores.avatarDecoration;
     obj[1] = stateFromStores;
     obj[3] = tmp2(1297).AvatarSizes.NORMAL;
@@ -111,8 +111,8 @@ function ChannelSubtitle(channel) {
     return privateChannelUserTagsString;
   }, items1);
   if (!channel.isPrivate()) {
-    stateFromStores = tmp(4526).channelTypeString(channel);
-    const tmpResult = tmp(4526);
+    stateFromStores = tmp(4527).channelTypeString(channel);
+    const tmpResult = tmp(4527);
   }
   let tmp4 = null;
   if (null != stateFromStores) {
@@ -120,7 +120,7 @@ function ChannelSubtitle(channel) {
     if ("" !== stateFromStores) {
       obj = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: null };
       obj[3] = stateFromStores;
-      tmp4 = callback(tmp(4340).Text, obj);
+      tmp4 = callback(tmp(4338).Text, obj);
     }
   }
   return tmp4;
@@ -240,7 +240,7 @@ function ChannelNameHeaderContent(channel) {
 function DMChannelNameHeader(channel) {
   channel = channel.channel;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5767)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5768)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = importAllResult.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -255,7 +255,7 @@ function DMChannelNameHeader(channel) {
   let obj = { style: items1, onPress: callback, children: null };
   items1 = [callback2().container, channel.containerStyle];
   obj[2] = callback(ChannelNameHeaderContent, { channel });
-  return callback(channel(4886).PressableOpacity, obj);
+  return callback(channel(4887).PressableOpacity, obj);
 }
 function DefaultChannelNameHeader(arg0) {
   let channel;

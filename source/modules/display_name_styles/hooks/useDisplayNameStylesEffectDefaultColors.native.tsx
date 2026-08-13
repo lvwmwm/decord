@@ -1,10 +1,10 @@
-// Module ID: 9520
-// Function ID: 9521
+// Module ID: 9524
+// Function ID: 9525
 // Name: useDisplayNameStylesEffectDefaultColors
 // Dependencies: [19, 1934, 688, 4065, 712, 1935, 2]
 // Exports: default
 
-// Module 9520 (useDisplayNameStylesEffectDefaultColors)
+// Module 9524 (useDisplayNameStylesEffectDefaultColors)
 import noop from "noop";
 import items3 from "items3";
 

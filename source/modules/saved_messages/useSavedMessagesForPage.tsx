@@ -1,7 +1,7 @@
 // Module ID: 12624
 // Function ID: 12625
 // Name: getSavedMessagesForType
-// Dependencies: [32, 19, 10319, 8424, 12625, 589, 1370, 2]
+// Dependencies: [32, 19, 11096, 8428, 12625, 589, 1370, 2]
 // Exports: default
 
 // Module 12624 (getSavedMessagesForType)
@@ -11,9 +11,9 @@ import getTimeSafe from "getTimeSafe";
 
 const require = arg1;
 function getSavedMessagesForType(arg0) {
-  if (require(8424) /* SavedMessageSortTypes */.SavedMessageSortTypes.BOOKMARK === arg0) {
+  if (require(8428) /* SavedMessageSortTypes */.SavedMessageSortTypes.BOOKMARK === arg0) {
     return store.getMessageBookmarks();
-  } else if (tmp(8424).SavedMessageSortTypes.REMINDER === arg0) {
+  } else if (tmp(8428).SavedMessageSortTypes.REMINDER === arg0) {
     return store.getMessageReminders();
   } else {
     return store.getSavedMessages();
@@ -27,7 +27,7 @@ export default function useSavedMessagesForPage() {
   let c2;
   let ALL = arg0;
   if (arg0 === undefined) {
-    ALL = ALL(8424).SavedMessageSortTypes.ALL;
+    ALL = ALL(8428).SavedMessageSortTypes.ALL;
   }
   let importDefault;
   let dependencyMap;

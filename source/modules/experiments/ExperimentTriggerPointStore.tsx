@@ -1,7 +1,7 @@
 // Module ID: 13017
 // Function ID: 13018
 // Name: handleConnectionOpen
-// Dependencies: [4258, 1212, 13018, 13019, 589, 709, 2]
+// Dependencies: [4256, 1212, 13018, 13019, 589, 709, 2]
 
 // Module 13017 (handleConnectionOpen)
 import getHash from "getHash";

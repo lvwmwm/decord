@@ -1,10 +1,10 @@
-// Module ID: 9206
-// Function ID: 9207
+// Module ID: 9210
+// Function ID: 9211
 // Name: _getFilterBlob
-// Dependencies: [5, 1922, 9207, 8316, 676, 38, 9209, 4440, 9212, 1435, 9208, 9211, 9213, 2]
+// Dependencies: [5, 1922, 9211, 8320, 676, 38, 9213, 4441, 9216, 1435, 9212, 9215, 9217, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 9206 (_getFilterBlob)
+// Module 9210 (_getFilterBlob)
 import module_38 from "module_38";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleSyncedStoresUpdate from "handleSyncedStoresUpdate";
@@ -40,7 +40,7 @@ function _getFilterBlob() {
   return applyArgumentsResult;
 }
 function applyBackgroundMediaFilterSettings(arg0, target, graph, image, blob) {
-  let obj = require(9209) /* _fetchVideoFilterAssets */;
+  let obj = require(9213) /* _fetchVideoFilterAssets */;
   obj = { graph, target, image, blob };
   const result = obj.applyMediaFilterSettings({ [arg0]: obj });
 }
@@ -97,11 +97,11 @@ function _applyBackgroundOption() {
               c5 = undefined;
               let module_38 = false;
               if (null == source) {
-                outer1_10(tmp57, tmp58, callback(4440).FilterSettingsGraph.NONE);
+                outer1_10(tmp57, tmp58, callback(4441).FilterSettingsGraph.NONE);
                 c9 = 3;
                 return { value: "HermesInternal", done: null };
               } else if (tmp59 === c7) {
-                outer1_10(tmp57, tmp58, callback(4440).FilterSettingsGraph.BACKGROUND_BLUR);
+                outer1_10(tmp57, tmp58, callback(4441).FilterSettingsGraph.BACKGROUND_BLUR);
                 c9 = 3;
                 return { value: "HermesInternal", done: null };
               } else {
@@ -168,7 +168,7 @@ function _applyBackgroundOption() {
                     }
                   }
                 }
-                const tmp24 = callback2(9212)()[tmp59];
+                const tmp24 = callback2(9216)()[tmp59];
                 const isVideo = tmp24.isVideo;
                 module_38 = isVideo;
                 if (isVideo == null) {
@@ -460,8 +460,8 @@ export const applyBackgroundOptionPreview = function applyBackgroundOptionPrevie
 export const applyInitialVideoBackgroundOption = function applyInitialVideoBackgroundOption() {
   currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
-    const lastUsedVideoBackgroundOption = require(9211) /* getLastUsedVideoBackgroundOption */.getLastUsedVideoBackgroundOption(currentUser);
-    let tmp6 = importDefault(9213)();
+    const lastUsedVideoBackgroundOption = require(9215) /* getLastUsedVideoBackgroundOption */.getLastUsedVideoBackgroundOption(currentUser);
+    let tmp6 = importDefault(9217)();
     if (tmp6) {
       tmp6 = !hasBeenApplied.hasBeenApplied;
     }
@@ -472,6 +472,6 @@ export const applyInitialVideoBackgroundOption = function applyInitialVideoBackg
       applyBackgroundOptionLive(lastUsedVideoBackgroundOption, { track: false }).catch(NOOP);
       const promise = applyBackgroundOptionLive(lastUsedVideoBackgroundOption, { track: false });
     }
-    const obj = require(9211) /* getLastUsedVideoBackgroundOption */;
+    const obj = require(9215) /* getLastUsedVideoBackgroundOption */;
   }
 };

@@ -1,7 +1,7 @@
 // Module ID: 12577
 // Function ID: 12578
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 4344, 712, 8880, 8833, 5767, 12578, 4533, 5773, 4340, 1236, 1297, 1435, 12579, 4754, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 8884, 8837, 5768, 12578, 4534, 5774, 4338, 1236, 1297, 1435, 12579, 4755, 2]
 // Exports: default
 
 // Module 12577 (UserProfileIncomingFriendRequest)

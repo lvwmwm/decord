@@ -1,10 +1,10 @@
-// Module ID: 11708
-// Function ID: 11709
+// Module ID: 11706
+// Function ID: 11707
 // Name: getTargetCardSize
-// Dependencies: [32, 19, 17, 4357, 11706, 11709, 4362, 4083, 10377, 643, 10767, 11710, 11711, 705, 2]
+// Dependencies: [32, 19, 17, 4358, 11704, 11707, 4363, 4083, 10289, 643, 10681, 11708, 11709, 705, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 11708 (getTargetCardSize)
+// Module 11706 (getTargetCardSize)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { PixelRatio } from "get ActivityIndicator";

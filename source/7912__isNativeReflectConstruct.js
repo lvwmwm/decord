@@ -1,7 +1,7 @@
 // Module ID: 7912
 // Function ID: 7913
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7913, 7914, 7915]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7913]
 
 // Module 7912 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const FeBlend = arg1;
+const Defs = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeBlend {
+class Defs {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeBlend);
+    tmp = _isNativeReflectConstruct(this, Defs);
     tmp2 = __esModule;
-    obj = __esModule(FeBlend);
+    obj = __esModule(Defs);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,33 +51,16 @@ class FeBlend {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeBlend, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
-      }
-    };
-    const tmp = importDefault(7913);
-    const merged = Object.assign(self(7914).extractFilter(this.props));
-    const obj2 = self(7914);
-    const merged1 = Object.assign(self(7914).extractIn(this.props));
-    const obj3 = self(7914);
-    const merged2 = Object.assign(self(7914).extractFeBlend(this.props));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+require("_inherits")(Defs, require("noop").Component);
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      return jsx(Defs(7913), { children: this.props.children });
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeBlend, items);
-importDefaultResultResult.displayName = "FeBlend";
-obj = {};
-let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.mode = "normal";
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(Defs, items);
+importDefaultResultResult.displayName = "Defs";
 
 export default importDefaultResultResult;

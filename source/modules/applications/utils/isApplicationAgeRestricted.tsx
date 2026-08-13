@@ -1,10 +1,10 @@
-// Module ID: 9585
-// Function ID: 9586
+// Module ID: 9589
+// Function ID: 9590
 // Name: isApplicationAgeRestricted
-// Dependencies: [4382, 9586, 4876, 2]
+// Dependencies: [4383, 9590, 4877, 2]
 // Exports: default
 
-// Module 9585 (isApplicationAgeRestricted)
+// Module 9589 (isApplicationAgeRestricted)
 import addApplication from "addApplication";
 
 const require = arg1;
@@ -17,9 +17,9 @@ export default function isApplicationAgeRestricted(arg0) {
     if (application != null) {
       prop = application.contentClassification;
     }
-    return require(4876) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(prop);
+    return require(4877) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(prop);
   } else {
     return false;
   }
-  obj = importDefault(9586);
+  obj = importDefault(9590);
 };

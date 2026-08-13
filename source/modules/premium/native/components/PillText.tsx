@@ -1,7 +1,7 @@
 // Module ID: 12774
 // Function ID: 12775
 // Name: PillText
-// Dependencies: [676, 21, 4344, 712, 12775, 4765, 4340, 2]
+// Dependencies: [676, 21, 4342, 712, 12775, 4766, 4338, 2]
 // Exports: default
 
 // Module 12774 (PillText)
@@ -25,6 +25,6 @@ export default function PillText(arg0) {
   items = [tmp.pillTextContainer, style];
   const tmp2 = importDefault(12775)();
   obj = { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText };
-  obj[4] = jsx(require(4340) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
-  return jsx(importDefault(4765), { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
+  obj[4] = jsx(require(4338) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
+  return jsx(importDefault(4766), { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
 };

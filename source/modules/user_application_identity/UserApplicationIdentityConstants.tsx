@@ -1,21 +1,21 @@
-// Module ID: 4371
-// Function ID: 4372
+// Module ID: 4372
+// Function ID: 4373
 // Name: items
-// Dependencies: [4372, 4373, 2]
+// Dependencies: [4373, 4374, 2]
 // Exports: getMigratedApplicationIdentityConnectionsScreenApplications
 
-// Module 4371 (items)
+// Module 4372 (items)
 let obj = { RIOT_GAMES: "1443033465766281327", LEAGUE_OF_LEGENDS: "1443349464290168976", VALORANT: "1443350165678198935", BATTLENET: "1356665549089800303", WORLD_OF_WARCRAFT: "1384671873593512078" };
 obj = { [obj.RIOT_GAMES]: obj, [obj.LEAGUE_OF_LEGENDS]: obj1, [obj.VALORANT]: obj2, [obj.BATTLENET]: obj3, [obj.WORLD_OF_WARCRAFT]: obj4 };
 obj = {
   applicationId: obj.RIOT_GAMES,
   getMigrationExperimentEnabled(location) {
-    let obj = require(4372) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4373) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.getIsRiotSocialSDKMigrationEnabled(obj);
   },
   useMigrationExperimentEnabled(location) {
-    let obj = require(4372) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4373) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.useIsRiotSocialSDKMigrationEnabled(obj);
   },

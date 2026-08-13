@@ -1,7 +1,7 @@
 // Module ID: 12719
 // Function ID: 12720
 // Name: LeaveGuildElement
-// Dependencies: [32, 19, 676, 21, 9066, 4538, 12714, 1236, 4683, 4772, 10848, 2]
+// Dependencies: [32, 19, 676, 21, 9070, 4539, 12714, 1236, 4684, 4773, 10762, 2]
 // Exports: default
 
 // Module 12719 (LeaveGuildElement)

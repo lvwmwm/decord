@@ -1,7 +1,7 @@
 // Module ID: 12739
 // Function ID: 12740
 // Name: launchMobile
-// Dependencies: [4662, 2]
+// Dependencies: [4663, 2]
 
 // Module 12739 (launchMobile)
 import { os } from "format";

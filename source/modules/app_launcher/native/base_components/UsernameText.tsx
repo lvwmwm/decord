@@ -1,10 +1,10 @@
-// Module ID: 11630
-// Function ID: 11631
+// Module ID: 11626
+// Function ID: 11627
 // Name: UsernameText
-// Dependencies: [19, 21, 4533, 4340, 2]
+// Dependencies: [19, 21, 4534, 4338, 2]
 // Exports: default
 
-// Module 11630 (UsernameText)
+// Module 11626 (UsernameText)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -27,7 +27,7 @@ export default function UsernameText(color) {
     str = "text-default";
   }
   let obj = { variant, color: str };
-  let obj1 = require(4533) /* getNickname */;
+  let obj1 = require(4534) /* getNickname */;
   const name = obj1.getName(color.guildId, null, user);
   if (user.hasUniqueUsername()) {
     str = user.toString();
@@ -39,7 +39,7 @@ export default function UsernameText(color) {
     obj.color = "text-muted";
     const items1 = ["#", user.discriminator];
     obj.children = items1;
-    items[1] = callback(tmp(4340).Text, obj);
+    items[1] = callback(tmp(4338).Text, obj);
     obj[0] = items;
     str = callback(closure_3, obj);
   }
@@ -54,10 +54,10 @@ export default function UsernameText(color) {
     obj3.color = "text-muted";
     const items3 = ["(", str, ")"];
     obj3.children = items3;
-    items2[2] = callback(tmp(4340).Text, obj3);
+    items2[2] = callback(tmp(4338).Text, obj3);
     obj2[0] = items2;
     tmp13 = callback(closure_3, obj2);
   }
   obj1.children = tmp13;
-  return closure_4(require(4340) /* Text */.Text, obj1);
+  return closure_4(require(4338) /* Text */.Text, obj1);
 };

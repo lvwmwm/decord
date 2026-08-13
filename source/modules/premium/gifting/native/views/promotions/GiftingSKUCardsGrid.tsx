@@ -1,7 +1,7 @@
 // Module ID: 10159
 // Function ID: 10160
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7048, 1947, 21, 4344, 712, 9394, 4073, 10160, 4886, 9443, 9433, 9275, 4340, 1236, 2]
+// Dependencies: [19, 17, 7054, 1947, 21, 4342, 712, 9398, 4073, 10160, 4887, 9447, 9437, 9279, 4338, 1236, 2]
 // Exports: default
 
 // Module 10159 (GiftingSKUCardsGrid)

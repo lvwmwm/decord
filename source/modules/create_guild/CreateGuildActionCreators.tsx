@@ -1,9 +1,9 @@
-// Module ID: 11752
-// Function ID: 11753
+// Module ID: 11750
+// Function ID: 11751
 // Name: _createGuildFromTemplate
-// Dependencies: [5, 676, 5167, 503, 4243, 2]
+// Dependencies: [5, 676, 5168, 503, 4241, 2]
 
-// Module 11752 (_createGuildFromTemplate)
+// Module 11750 (_createGuildFromTemplate)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -67,13 +67,13 @@ function _createGuildFromTemplate() {
               c9 = 2;
               c10 = 1;
               const obj5 = { value: null, done: false };
-              obj5[0] = callback2(5167).post(obj1);
+              obj5[0] = callback2(5168).post(obj1);
               return obj5;
             }
           } else if (1 === tmp7) {
             c8 = 0;
             callback = closure_7;
-            const aPIError = new callback(4243).APIError(callback);
+            const aPIError = new callback(4241).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c10 = 3;
@@ -112,7 +112,7 @@ function _createGuildFromTemplate() {
   }
   return applyArgumentsResult;
 }
-const result = require("module_5167").fileFinishedImporting("modules/create_guild/CreateGuildActionCreators.tsx");
+const result = require("module_5168").fileFinishedImporting("modules/create_guild/CreateGuildActionCreators.tsx");
 
 export default {
   createGuildFromTemplate(c4, c5, outer1_1, c3, outer1_9) {

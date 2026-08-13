@@ -1,10 +1,10 @@
-// Module ID: 9709
-// Function ID: 9710
+// Module ID: 9713
+// Function ID: 9714
 // Name: useRecipientsLabel
-// Dependencies: [19, 1922, 1236, 589, 1370, 4189, 2]
+// Dependencies: [19, 1922, 1236, 589, 1370, 4187, 2]
 // Exports: useRecipientsLabel
 
-// Module 9709 (useRecipientsLabel)
+// Module 9713 (useRecipientsLabel)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

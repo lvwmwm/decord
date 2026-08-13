@@ -1,10 +1,10 @@
-// Module ID: 14333
-// Function ID: 14334
+// Module ID: 14342
+// Function ID: 14343
 // Name: BountyVideo
-// Dependencies: [32, 19, 17, 5201, 21, 501, 10518, 712, 4344, 14334, 11039, 11040, 4083, 4065, 4345, 4348, 14323, 14335, 14345, 5307, 14346, 14348, 14350, 10186, 2]
+// Dependencies: [32, 19, 17, 5202, 21, 501, 10432, 712, 4342, 14343, 10953, 10954, 4083, 4065, 4343, 4346, 14332, 14344, 14354, 5308, 14355, 14357, 14359, 10186, 2]
 // Exports: BountyVideo
 
-// Module 14333 (BountyVideo)
+// Module 14342 (BountyVideo)
 import _slicedToArray from "_slicedToArray";
 import preload from "preload";
 import get_ActivityIndicator from "hasVideoEnded";
@@ -29,7 +29,7 @@ if (PlatformTypes.isAndroid()) {
 let closure_13 = { top: 48, bottom: 16, left: 16, right: 16 };
 const lg = require("Themes").radii.lg;
 let closure_15 = createCacheKey.createStyles(() => {
-  let obj = { videoContainer: null, leftRow: null, progress: null, poster: null, peekOrigin: null };
+  let obj = { videoContainer: null, leftRow: null, progress: null, poster: null };
   obj = {};
   const merged = Object.assign(closure_6.absoluteFillObject);
   obj.overflow = "hidden";
@@ -37,19 +37,18 @@ let closure_15 = createCacheKey.createStyles(() => {
   obj[0] = obj;
   obj = { position: "absolute", top: importDefault(712).space.PX_8, left: importDefault(712).space.PX_8, flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_8 };
   obj[1] = obj;
-  obj[2] = { position: "absolute", bottom: 0, height: require(14334) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
+  obj[2] = { position: "absolute", bottom: 0, height: require(14343) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
   const obj2 = {};
   const merged1 = Object.assign(closure_6.absoluteFillObject);
   obj2.backgroundColor = "#000000";
   obj2.justifyContent = "center";
   obj2.alignItems = "center";
   obj[3] = obj2;
-  obj[4] = { transformOrigin: "top" };
   return obj;
 });
 let closure_16 = { code: "function BountyVideoTsx1(){const{posterOpacity}=this.__closure;return{opacity:posterOpacity.get()};}" };
 let closure_17 = { code: "function BountyVideoTsx2(){const{isScrollingInBoundsSharedValue,withTiming,isActive,timingStandard}=this.__closure;var _isScrollingInBoundsS;const isScrollingInBounds=((_isScrollingInBoundsS=isScrollingInBoundsSharedValue)===null||_isScrollingInBoundsS===void 0?void 0:_isScrollingInBoundsS.get())===true;return{opacity:withTiming(isActive&&!isScrollingInBounds?1:0,timingStandard)};}" };
-let closure_18 = { code: "function BountyVideoTsx3(){const{peekScale,AUTO_SCROLL_PEEK_SCALE,AUTO_SCROLL_PEEK_TOP_OFFSET}=this.__closure;if(peekScale==null){return{};}const scale=peekScale.get();const scaleProgress=(1-scale)/(1-AUTO_SCROLL_PEEK_SCALE);return{transform:[{translateY:scaleProgress*AUTO_SCROLL_PEEK_TOP_OFFSET},{scale:scale}]};}" };
+let closure_18 = { code: "function BountyVideoTsx3(){const{peekScale,AUTO_SCROLL_PEEK_SCALE,height,AUTO_SCROLL_PEEK_TOP_OFFSET}=this.__closure;if(peekScale==null){return{};}const scale=peekScale.get();const scaleProgress=(1-scale)/(1-AUTO_SCROLL_PEEK_SCALE);const centerPivotCompensation=height*(1-scale)/2;return{transform:[{translateY:scaleProgress*AUTO_SCROLL_PEEK_TOP_OFFSET-centerPivotCompensation},{scale:scale}]};}" };
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/BountiesModal/BountyVideo.tsx");
 
 export const BountyVideo = function BountyVideo(bounty) {
@@ -196,16 +195,13 @@ export const BountyVideo = function BountyVideo(bounty) {
     handleVideoProgress(currentTime);
   }, items5);
   const tmp6 = onFirstFrame(flag.useState(false), 2);
-  class Ce {
-    constructor() {
-      obj = { opacity: useSharedValue.get() };
-      return obj;
-    }
+  function fe() {
+    return { opacity: sharedValue.get() };
   }
-  Ce.__closure = { posterOpacity: sharedValue };
-  Ce.__workletHash = 4975136521719;
-  Ce.__initData = closure_16;
-  const animatedStyle = bounty(handleVideoError[12]).useAnimatedStyle(Ce);
+  fe.__closure = { posterOpacity: sharedValue };
+  fe.__workletHash = 4975136521719;
+  fe.__initData = closure_16;
+  const animatedStyle = bounty(handleVideoError[12]).useAnimatedStyle(fe);
   const tmp2Result1 = bounty(handleVideoError[12]);
   class Ae {
     constructor() {
@@ -248,7 +244,9 @@ export const BountyVideo = function BountyVideo(bounty) {
         tmp4 = handleVideoError;
         diff = 1 - value;
         diff1 = 1 - bounty(handleVideoError[16]).AUTO_SCROLL_PEEK_SCALE;
-        obj1[0] = diff / diff1 * bounty(handleVideoError[16]).AUTO_SCROLL_PEEK_TOP_OFFSET;
+        tmp6 = height;
+        num2 = 2;
+        obj1[0] = diff / diff1 * bounty(handleVideoError[16]).AUTO_SCROLL_PEEK_TOP_OFFSET - height * (1 - value) / 2;
         items = [, ];
         items[0] = obj1;
         obj2 = { scale: null };
@@ -259,9 +257,9 @@ export const BountyVideo = function BountyVideo(bounty) {
       }
     }
   }
-  obj = { peekScale, AUTO_SCROLL_PEEK_SCALE: tmp2(tmp3[16]).AUTO_SCROLL_PEEK_SCALE, AUTO_SCROLL_PEEK_TOP_OFFSET: tmp2(tmp3[16]).AUTO_SCROLL_PEEK_TOP_OFFSET };
+  obj = { peekScale, AUTO_SCROLL_PEEK_SCALE: tmp2(tmp3[16]).AUTO_SCROLL_PEEK_SCALE, height, AUTO_SCROLL_PEEK_TOP_OFFSET: tmp2(tmp3[16]).AUTO_SCROLL_PEEK_TOP_OFFSET };
   Fe.__closure = obj;
-  Fe.__workletHash = 7501077341815;
+  Fe.__workletHash = 13770344279431;
   Fe.__initData = closure_18;
   let tmp28 = isCtaVisible;
   const animatedStyle2 = bounty(handleVideoError[12]).useAnimatedStyle(Fe);
@@ -273,7 +271,7 @@ export const BountyVideo = function BountyVideo(bounty) {
     tmp28 = tmp29;
   }
   obj1 = { style: items6, children: null };
-  items6 = [width.absoluteFillObject, tmp.peekOrigin, animatedStyle2];
+  items6 = [width.absoluteFillObject, animatedStyle2];
   obj2 = { style: tmp.videoContainer, children: null };
   let tmp35Result = null;
   if (shouldLoadHls) {

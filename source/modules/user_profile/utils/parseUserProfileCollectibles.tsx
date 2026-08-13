@@ -1,10 +1,10 @@
-// Module ID: 7136
-// Function ID: 7137
+// Module ID: 7142
+// Function ID: 7143
 // Name: parseUserProfileCollectibles
 // Dependencies: [1949, 2]
 // Exports: default
 
-// Module 7136 (parseUserProfileCollectibles)
+// Module 7142 (parseUserProfileCollectibles)
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/parseUserProfileCollectibles.tsx");
 
 export default function parseUserProfileCollectibles(collectibles) {
@@ -15,7 +15,7 @@ export default function parseUserProfileCollectibles(collectibles) {
     collectibles = collectibles.collectibles;
   }
   if (null == collectibles) {
-    return { collectibles: "Array", profileEffect: "call", profileFrame: "TypeError" };
+    return { collectibles: "disabled", profileEffect: "isArray", profileFrame: "isArray" };
   } else {
     const items = [];
     collectibles = collectibles.collectibles;

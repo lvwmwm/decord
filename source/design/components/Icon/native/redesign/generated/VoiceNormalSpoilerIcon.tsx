@@ -1,10 +1,10 @@
-// Module ID: 4868
-// Function ID: 4869
+// Module ID: 4869
+// Function ID: 4870
 // Name: VoiceNormalSpoilerIcon
-// Dependencies: [19, 21, 712, 4064, 4817, 2]
+// Dependencies: [19, 21, 712, 4064, 4818, 2]
 // Exports: VoiceNormalSpoilerIcon
 
-// Module 4868 (VoiceNormalSpoilerIcon)
+// Module 4869 (VoiceNormalSpoilerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const VoiceNormalSpoilerIcon = function VoiceNormalSpoilerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4817) /* registerAsset */;
+  obj[0] = require(4818) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

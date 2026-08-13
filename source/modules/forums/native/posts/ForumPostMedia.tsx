@@ -1,10 +1,10 @@
-// Module ID: 11459
-// Function ID: 11460
+// Module ID: 11455
+// Function ID: 11456
 // Name: ForumPostMediaAndroid
-// Dependencies: [32, 19, 17, 1302, 1301, 21, 4344, 712, 5307, 4744, 11460, 7101, 11461, 500, 5952, 4886, 7838, 7840, 11462, 1363, 4034, 9946, 1492, 2]
+// Dependencies: [32, 19, 17, 1302, 1301, 21, 4342, 712, 5308, 4745, 11456, 7107, 11457, 500, 5954, 4887, 7842, 7844, 11458, 1363, 4034, 9944, 1492, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail, useSharedMediaProps
 
-// Module 11459 (ForumPostMediaAndroid)
+// Module 11455 (ForumPostMediaAndroid)
 import _slicedToArray from "_slicedToArray";
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import get_ActivityIndicator from "AgeVerificationModalEntryPoint";
@@ -39,7 +39,7 @@ function ForumPostMediaIOS(arg0) {
   let source;
   const obj = { children: null };
   ({ shouldSpoiler, blurTheme, source, iosStyle } = arg0);
-  const items = [callback2(importDefault(5307), { style: iosStyle, source, resizeMode: "cover" }), callback2(ForumPostMediaSpoiler, { shouldSpoiler, blurTheme })];
+  const items = [callback2(importDefault(5308), { style: iosStyle, source, resizeMode: "cover" }), callback2(ForumPostMediaSpoiler, { shouldSpoiler, blurTheme })];
   obj[0] = items;
   return callback3(closure_11, obj);
 }
@@ -78,14 +78,14 @@ function ForumPostMedia(obscureReason) {
   const _require = obscureReason;
   const tmp = createCacheKey();
   const ref = React.useRef(null);
-  let obj = _require(7101);
+  let obj = _require(7107);
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     obj = {};
     const merged = Object.assign(obscureReason);
-    let tmp6Result = callback2(ref(11461), obj);
+    let tmp6Result = callback2(ref(11457), obj);
     let tmp12 = callback2;
-    const tmp19 = ref(11461);
+    const tmp19 = ref(11457);
   } else {
     if (tmp3Result.isAndroid()) {
       obj = {};
@@ -101,7 +101,7 @@ function ForumPostMedia(obscureReason) {
     tmp3Result = tmp3(500);
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(5952).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(5954).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       if (shouldAgeVerifyForReason) {
         const obj2 = { style: null, ref: null, children: null };
@@ -111,12 +111,12 @@ function ForumPostMedia(obscureReason) {
         const obj3 = { androidRippleConfig: null, activeOpacity: 0, onPress: null, children: null };
         obj3[0] = ANDROID_FOREGROUND_RIPPLE;
         obj3[2] = function onPress() {
-          let obj = ref(7838);
-          obj = { entryPoint: obscureReason(7840).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
+          let obj = ref(7842);
+          obj = { entryPoint: obscureReason(7844).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
           const result = obj.showAgeVerificationGetStartedModal(obj);
         };
         obj3[3] = tmp6Result;
-        obj2[2] = tmp12(tmp3(4886).PressableOpacity, obj3);
+        obj2[2] = tmp12(tmp3(4887).PressableOpacity, obj3);
         let tmp12Result = tmp12(closure_5, obj2);
       }
       return tmp12Result;
@@ -138,7 +138,7 @@ function ForumPostMedia(obscureReason) {
       return onPressResult;
     };
     obj5[3] = tmp6Result;
-    obj4[2] = tmp12(tmp3(4886).PressableOpacity, obj5);
+    obj4[2] = tmp12(tmp3(4887).PressableOpacity, obj5);
     tmp12Result = tmp12(closure_5, obj4);
   } else {
     const obj6 = { style: null, ref: null, children: null };
@@ -169,7 +169,7 @@ export const useSharedMediaProps = function useSharedMediaProps(arg0) {
   let channel;
   let media;
   ({ channel, media } = arg0);
-  let obj = require(11462) /* getForumPostShouldObscure */;
+  let obj = require(11458) /* getForumPostShouldObscure */;
   const tmp3 = callback(obj.useShouldObscure({ media, channel }), 2);
   obj = { shouldObscure: tmp3[0], obscureReason: tmp3[1], blurTheme: null, format: null };
   let str = "light";

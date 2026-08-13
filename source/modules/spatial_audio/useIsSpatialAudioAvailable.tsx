@@ -1,7 +1,7 @@
 // Module ID: 13160
 // Function ID: 13161
 // Name: useIsSpatialAudioAvailable
-// Dependencies: [4392, 4405, 13161, 589, 2]
+// Dependencies: [4393, 4406, 13161, 589, 2]
 // Exports: default, isSpatialAudioAvailable
 
 // Module 13160 (useIsSpatialAudioAvailable)

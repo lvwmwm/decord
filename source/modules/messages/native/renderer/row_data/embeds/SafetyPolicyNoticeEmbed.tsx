@@ -1,7 +1,7 @@
 // Module ID: 12699
 // Function ID: 12700
 // Name: createSafetyPolicyNoticeEmbed
-// Dependencies: [17, 676, 7846, 3943, 1236, 8096, 8004, 2]
+// Dependencies: [17, 676, 7850, 3943, 1236, 8100, 8008, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
 // Module 12699 (createSafetyPolicyNoticeEmbed)
@@ -51,10 +51,10 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
             let obj = { titleText: null, titleIcon: null, subtitleText: null, descriptionText: null, ctaText: null, classificationId: null };
             const intl = require(1236) /* getSystemLocale */.intl;
             obj[0] = intl.string(require(1236) /* getSystemLocale */.t["4CxGXi"]);
-            obj[1] = require(8096) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(8004)));
+            obj[1] = require(8100) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(8008)));
             const intl2 = require(1236) /* getSystemLocale */.intl;
             obj = { daysAgo: null };
-            const obj2 = require(8096) /* frozen */;
+            const obj2 = require(8100) /* frozen */;
             const obj4 = importDefault(3943)();
             obj[0] = obj4.diff(importDefault(3943).unix(parsed), "days");
             obj[2] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.eevFb6, obj);

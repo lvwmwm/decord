@@ -1,10 +1,10 @@
-// Module ID: 9266
-// Function ID: 9267
+// Module ID: 9270
+// Function ID: 9271
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 4415, 4429, 589, 9255, 2]
+// Dependencies: [19, 4416, 4430, 589, 9259, 2]
 // Exports: useAlertIfSecureFramesKeyInconsistent, useIsSecureFramesKeyInconsistent
 
-// Module 9266 (useIsSecureFramesKeyInconsistent)
+// Module 9270 (useIsSecureFramesKeyInconsistent)
 import noop from "noop";
 import createRTCConnection from "createRTCConnection";
 import initialize from "initialize";

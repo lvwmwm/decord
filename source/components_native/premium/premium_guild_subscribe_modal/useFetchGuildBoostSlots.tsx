@@ -1,7 +1,7 @@
 // Module ID: 12911
 // Function ID: 12912
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 4237, 6917, 589, 691, 6924, 4240, 2]
+// Dependencies: [5, 32, 19, 4235, 6923, 589, 691, 6930, 4238, 2]
 // Exports: default
 
 // Module 12911 (useFetchGuildBoostSlots)

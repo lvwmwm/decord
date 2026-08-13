@@ -1,10 +1,10 @@
-// Module ID: 4526
-// Function ID: 4527
+// Module ID: 4527
+// Function ID: 4528
 // Name: allowChannelAccess
-// Dependencies: [1395, 1391, 1980, 3989, 1979, 4416, 676, 1924, 3994, 506, 1954, 4527, 4528, 1236, 4189, 4529, 11, 2, 4536]
+// Dependencies: [1395, 1391, 1980, 3989, 1979, 4417, 676, 1924, 3994, 506, 1954, 4528, 4529, 1236, 4187, 4530, 11, 2, 4537]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 4526 (allowChannelAccess)
+// Module 4527 (allowChannelAccess)
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -157,8 +157,8 @@ export const isChannelFull = function isChannelFull(channel, outer1_11, handleCo
     if (tmp8) {
       let hasVideoResult = outer1_11.hasVideo(channel.id);
       if (!hasVideoResult) {
-        hasVideoResult = require(4527) /* hasStream */.hasStream(voiceStatesForChannel);
-        const obj2 = require(4527) /* hasStream */;
+        hasVideoResult = require(4528) /* hasStream */.hasStream(voiceStatesForChannel);
+        const obj2 = require(4528) /* hasStream */;
       }
       tmp8 = hasVideoResult;
     }
@@ -280,9 +280,9 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
           for (const item10017 of tmp10) {
             let tmp4 = require;
             let tmp5 = dependencyMap;
-            let obj3 = require(4528) /* useAudienceRequestToSpeakState */;
+            let obj3 = require(4529) /* useAudienceRequestToSpeakState */;
             let audienceRequestToSpeakState = obj3.getAudienceRequestToSpeakState(item10017.voiceState);
-            if (audienceRequestToSpeakState === require(4528) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE) {
+            if (audienceRequestToSpeakState === require(4529) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE) {
               let tmp7 = obj2;
               obj2.return();
               let tmp8 = iter;

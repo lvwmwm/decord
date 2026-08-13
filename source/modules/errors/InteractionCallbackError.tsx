@@ -1,9 +1,9 @@
-// Module ID: 4568
-// Function ID: 4569
+// Module ID: 4569
+// Function ID: 4570
 // Name: prototype
 // Dependencies: [2]
 
-// Module 4568 (prototype)
+// Module 4569 (prototype)
 const result = require("set").fileFinishedImporting("modules/errors/InteractionCallbackError.tsx");
 const prototype = function InteractionCallbackError(reason) {
   const obj = Object.create(new.target.prototype);

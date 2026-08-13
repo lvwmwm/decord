@@ -1,9 +1,9 @@
-// Module ID: 9046
-// Function ID: 9047
+// Module ID: 9050
+// Function ID: 9051
 // Name: handleUpdateStart
-// Dependencies: [676, 584, 5374, 589, 709, 2]
+// Dependencies: [676, 584, 5375, 589, 709, 2]
 
-// Module 9046 (handleUpdateStart)
+// Module 9050 (handleUpdateStart)
 import { ChannelTypes } from "ME";
 import { Store } from "initialize";
 
@@ -46,7 +46,7 @@ function handleInviteResolveOrCreate(invite) {
   const profile = invite.invite.profile;
   if (null != profile) {
     const value = map.get(profile.id);
-    const guildProfileFromServer = require(5374) /* getEmoji */.buildGuildProfileFromServer(profile);
+    const guildProfileFromServer = require(5375) /* getEmoji */.buildGuildProfileFromServer(profile);
     if (null == value) {
       let obj = {};
       const merged = Object.assign(closure_7);
@@ -64,7 +64,7 @@ function handleInviteResolveOrCreate(invite) {
       obj.fetchStatus = obj.FETCHED;
       const result1 = obj3.set(profile.id, obj);
     }
-    const obj4 = require(5374) /* getEmoji */;
+    const obj4 = require(5375) /* getEmoji */;
   }
 }
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };

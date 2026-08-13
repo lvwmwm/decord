@@ -1,7 +1,7 @@
 // Module ID: 12710
 // Function ID: 12711
 // Name: GuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4336, 21, 4344, 712, 589, 4193, 4340, 1236, 5818, 1430, 2]
+// Dependencies: [19, 17, 4334, 21, 4342, 712, 589, 4191, 4338, 1236, 5819, 1430, 2]
 // Exports: default
 
 // Module 12710 (GuildDiscoveryPreviewElement)
@@ -34,21 +34,21 @@ export default function GuildDiscoveryPreviewElement(guild) {
   let obj = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj1 = require(4193) /* hexToRgba */;
+  let obj1 = require(4191) /* hexToRgba */;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.nTe4HC);
-  const items1 = [callback(require(4340) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4338) /* Text */.Text, obj), ];
   obj1 = { style: items2, children: null };
   items2 = [tmp.itemContainer, { borderColor: obj1.hexWithOpacity(tmp.borderColor.color, 0.08) }];
   const obj2 = { style: tmp.guildInfo, children: null };
   const obj3 = { style: tmp.guildIcon, guild: null, animate: null };
   const hexWithOpacityResult = obj1.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const tmp4 = importDefault(5818);
+  const tmp4 = importDefault(5819);
   obj3[1] = require(1430) /* fromGuildPropertiesWithAdditionalFields */.fromClientDiscoverableGuild(guild);
   obj3[2] = !stateFromStores;
-  const items3 = [callback(tmp4, obj3), callback(require(4340) /* Text */.Text, { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name })];
+  const items3 = [callback(tmp4, obj3), callback(require(4338) /* Text */.Text, { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name })];
   obj2[1] = items3;
   obj1[1] = callback2(View, obj2);
   items1[1] = callback(View, obj1);

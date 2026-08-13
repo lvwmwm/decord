@@ -1,9 +1,9 @@
-// Module ID: 16462
-// Function ID: 16463
+// Module ID: 16473
+// Function ID: 16474
 // Name: handleConnectionOpen
-// Dependencies: [32, 4358, 4789, 1218, 4392, 4405, 9204, 11, 1306, 595, 1374, 9203, 12, 13237, 10937, 5300, 2]
+// Dependencies: [32, 4359, 4790, 1218, 4393, 4406, 9208, 11, 1306, 595, 1374, 9207, 12, 13237, 10851, 5301, 2]
 
-// Module 16462 (handleConnectionOpen)
+// Module 16473 (handleConnectionOpen)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
@@ -36,7 +36,7 @@ function handleConnectionOpen() {
         let tmp8 = tmp5[1];
         let tmp9 = callback;
         let tmp10 = dependencyMap;
-        let obj = callback(9203);
+        let obj = callback(9207);
         let result = obj.coerceAudioContextForProto(first);
         if (null != result) {
           let tmp52 = result;
@@ -81,7 +81,7 @@ function handleConnectionOpen() {
             let merged = Object.assign(obj[first1]);
             let tmp31 = callback;
             let tmp32 = dependencyMap;
-            let obj4 = callback(9203);
+            let obj4 = callback(9207);
             let tmp33 = first;
             obj1.volume = obj4.snapVolumeToDefault(tmp25[1], tmp7);
             obj[first1] = obj1;
@@ -327,9 +327,9 @@ function SETTINGS_MIGRATION_KEY(arg0) {
 }
 function DEFAULT_VOLUME_FOR_CONTEXT(arg0) {
   if (arg0 === MediaEngineContextTypes.STREAM) {
-    let USER = require(9204) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.STREAM;
+    let USER = require(9208) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.STREAM;
   } else {
-    USER = require(9204) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.USER;
+    USER = require(9208) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.USER;
   }
   return USER;
 }

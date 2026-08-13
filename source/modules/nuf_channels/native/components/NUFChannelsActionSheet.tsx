@@ -1,7 +1,7 @@
 // Module ID: 13101
 // Function ID: 13102
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 1388, 21, 4312, 5436, 13102, 13103, 1236, 2]
+// Dependencies: [19, 1388, 21, 4310, 5437, 13102, 13103, 1236, 2]
 // Exports: default
 
 // Module 13101 (NUFChannelsActionSheet)
@@ -42,5 +42,5 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
   obj[3] = intl3.string(markAsDismissed(1236).t.BddRzS);
   obj[4] = callback;
   obj[2] = jsx(importDefault(13102), { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null });
-  return jsx(markAsDismissed(5436).BottomSheet, { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null });
+  return jsx(markAsDismissed(5437).BottomSheet, { illustration: null, title: null, description: null, CTALabel: null, onCTAPress: null });
 };

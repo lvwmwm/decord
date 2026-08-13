@@ -1,10 +1,10 @@
-// Module ID: 7444
-// Function ID: 7445
+// Module ID: 7448
+// Function ID: 7449
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 5897, 505, 589, 5900, 5894, 2]
+// Dependencies: [19, 5899, 505, 589, 5902, 5896, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 7444 (useDiscountedPremiumProductInfo)
+// Module 7448 (useDiscountedPremiumProductInfo)
 import noop from "noop";
 import updateProduct from "updateProduct";
 import { CurrencyCodes } from "sum";

@@ -1,6 +1,6 @@
 // Module ID: 12616
 // Function ID: 12617
-// Dependencies: [19, 17, 21, 4344, 712, 501, 1367, 1236, 4340, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 501, 1367, 1236, 4338, 2]
 
 // Module 12616
 import { View } from "get ActivityIndicator";
@@ -86,7 +86,7 @@ const memoResult = importAllResult.memo(function MemberCount(arg0) {
     obj3[1] = color;
     obj3[3] = tmp2 ? tmp10.refreshText : tmp10.text;
     obj3[4] = intl.format(etqpUG, obj);
-    items2[1] = closure_4(require(4340) /* Text */.Text, obj3);
+    items2[1] = closure_4(require(4338) /* Text */.Text, obj3);
     obj[1] = items2;
     return closure_5(View, obj);
   }

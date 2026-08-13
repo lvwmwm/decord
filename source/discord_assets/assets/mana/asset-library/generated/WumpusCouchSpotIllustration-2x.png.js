@@ -1,9 +1,9 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 6902
+// Function ID: 6903
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6896 (metadata)
+// Module 6902 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WumpusCouchSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/0aa1200bf09d948850ccd8b85e027abc066a1aceb11fc130b41d4a963ba6f798.png";

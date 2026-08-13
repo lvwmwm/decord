@@ -1,10 +1,10 @@
-// Module ID: 9494
-// Function ID: 9495
+// Module ID: 9498
+// Function ID: 9499
 // Name: _activityFromSetting
-// Dependencies: [19, 5215, 676, 4002, 4034, 589, 2]
+// Dependencies: [19, 5216, 676, 4002, 4034, 589, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 9494 (_activityFromSetting)
+// Module 9498 (_activityFromSetting)
 import { useMemo } from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { ActivityTypes } from "ME";

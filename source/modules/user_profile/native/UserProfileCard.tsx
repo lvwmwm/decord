@@ -1,10 +1,10 @@
-// Module ID: 5814
-// Function ID: 5815
+// Module ID: 5815
+// Function ID: 5816
 // Name: Divider
-// Dependencies: [19, 17, 5815, 21, 4344, 712, 4886, 4340, 5817, 1367, 2]
+// Dependencies: [19, 17, 5816, 21, 4342, 712, 4887, 4338, 5818, 1367, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 5814 (Divider)
+// Module 5815 (Divider)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
@@ -77,7 +77,7 @@ export default function UserProfileCard(arg0) {
       }
       obj1[3] = str2;
       obj1[5] = title;
-      items1[1] = closure_6(require(4340) /* Text */.Text, obj1);
+      items1[1] = closure_6(require(4338) /* Text */.Text, obj1);
       items1[2] = titleIcon;
       obj[1] = items1;
       tmp5Result = tmp5(tmp6, obj);
@@ -122,7 +122,7 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
   if (labelColor == null) {
     labelColor = str2;
   }
-  items[1] = callback(require(4340) /* Text */.Text, { variant: "text-md/semibold", color: labelColor, style: tmp.rowLabelText, children: label });
+  items[1] = callback(require(4338) /* Text */.Text, { variant: "text-md/semibold", color: labelColor, style: tmp.rowLabelText, children: label });
   tmp6Result = null != hint;
   if (tmp6Result) {
     const obj2 = { size: null, color: null };
@@ -132,7 +132,7 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
   }
   items[2] = tmp6Result;
   if (tmp6Result) {
-    tmp6Result = tmp6(require(5817) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, { size: "sm" });
+    tmp6Result = tmp6(require(5818) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, { size: "sm" });
   }
   items[3] = tmp6Result;
   obj[1] = items;
@@ -146,7 +146,7 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
   }
   items1[1] = tmp6Result1;
   obj[5] = items1;
-  return closure_7(require(4886) /* PressableBase */.PressableOpacity, obj);
+  return closure_7(require(4887) /* PressableBase */.PressableOpacity, obj);
 };
 export const UserProfileCardRows = function UserProfileCardRows(children) {
   let closure_0;

@@ -1,7 +1,7 @@
 // Module ID: 12619
 // Function ID: 12620
 // Name: GuildChannelMemberCount
-// Dependencies: [32, 19, 17, 12620, 5034, 1395, 5936, 1391, 4265, 1910, 3998, 1922, 676, 1388, 21, 4065, 712, 589, 12614, 5816, 8724, 1236, 4534, 12612, 6063, 1377, 1993, 4804, 8698, 1367, 9953, 12608, 2]
+// Dependencies: [32, 19, 17, 12620, 5035, 1395, 5938, 1391, 4263, 1910, 3998, 1922, 676, 1388, 21, 4065, 712, 589, 12614, 5817, 8728, 1236, 4535, 12612, 6065, 1377, 1993, 4805, 8702, 1367, 9951, 12608, 2]
 
 // Module 12619 (GuildChannelMemberCount)
 import set from "set";
@@ -89,7 +89,7 @@ function GuildChannelMemberCount(channel) {
   }, items1);
   if (null == total) {
     const tmpResult = tmp(12614);
-    return tmpResult.renderMemberCountText(online, total, flag, tmp(5816).ICON_SIZE[token]);
+    return tmpResult.renderMemberCountText(online, total, flag, tmp(5817).ICON_SIZE[token]);
   }
 }
 function computeVisibleChannelName(channel) {
@@ -115,8 +115,8 @@ function computeVisibleChannelName(channel) {
       stringResult1 = string(ai6Lbr.ZTNur7);
     }
   } else {
-    stringResult = tmp(4534).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
-    const tmpResult = tmp(4534);
+    stringResult = tmp(4535).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+    const tmpResult = tmp(4535);
   }
   return stringResult;
 }
@@ -126,7 +126,7 @@ function ChannelLinkedLobbyCoachmark(guild) {
   let dependencyMap;
   let callback;
   const items = [guild(1377).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP];
-  const tmp = callback(guild(6063).useSelectedDismissibleContent(items, undefined, true), 2);
+  const tmp = callback(guild(6065).useSelectedDismissibleContent(items, undefined, true), 2);
   dependencyMap = tmp2;
   const tmp3 = tmp[0] === guild(1377).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP;
   callback = tmp3;
@@ -155,8 +155,8 @@ function ChannelLinkedLobbyCoachmark(guild) {
     obj[6] = channelIconWithGuild;
     return obj;
   }, items1);
-  let obj = guild(6063);
-  const coachmark = guild(8698).useCoachmark(guild.iconRef, memo);
+  let obj = guild(6065);
+  const coachmark = guild(8702).useCoachmark(guild.iconRef, memo);
   return null;
 }
 let c4 = importAllResult;

@@ -1,10 +1,10 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14032
+// Function ID: 14033
 // Name: useTabSelectedGuildId
-// Dependencies: [4167, 5195, 647, 2]
+// Dependencies: [4165, 5196, 647, 2]
 // Exports: default
 
-// Module 14023 (useTabSelectedGuildId)
+// Module 14032 (useTabSelectedGuildId)
 import handleConnectionOpen from "handleConnectionOpen";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 

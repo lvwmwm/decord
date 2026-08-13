@@ -1,10 +1,10 @@
-// Module ID: 9211
-// Function ID: 9212
+// Module ID: 9215
+// Function ID: 9216
 // Name: getLastUsedVideoBackgroundOption
-// Dependencies: [19, 1340, 1922, 9208, 4007, 589, 2]
+// Dependencies: [19, 1340, 1922, 9212, 4007, 589, 2]
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 9211 (getLastUsedVideoBackgroundOption)
+// Module 9215 (getLastUsedVideoBackgroundOption)
 import noop from "noop";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -18,15 +18,15 @@ export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgro
   if (voiceAndVideo != null) {
     prop = voiceAndVideo.videoBackgroundFilterDesktop;
   }
-  const videoBackgroundOptionFromProto = require(9208) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
-  const obj = require(9208) /* isAnimatedBackgroundOption */;
+  const videoBackgroundOptionFromProto = require(9212) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
+  const obj = require(9212) /* isAnimatedBackgroundOption */;
   const tmp2 = require;
   if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
     if (typeof videoBackgroundOptionFromProto !== "number") {
       let tmp7 = videoBackgroundOptionFromProto;
     } else {
       tmp7 = null;
-      const tmp2Result = tmp2(9208);
+      const tmp2Result = tmp2(9212);
     }
     let tmp6 = tmp7;
   } else {

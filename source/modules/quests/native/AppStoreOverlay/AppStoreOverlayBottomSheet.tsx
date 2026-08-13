@@ -1,10 +1,10 @@
-// Module ID: 10636
-// Function ID: 10637
+// Module ID: 10550
+// Function ID: 10551
 // Name: AppStoreOverlayFooter
-// Dependencies: [32, 19, 17, 676, 21, 4344, 712, 4065, 689, 4765, 5367, 4754, 1236, 1493, 7445, 4770, 4052, 4312, 5436, 5751, 5438, 5307, 4340, 10637, 10640, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 4065, 689, 4766, 5368, 4755, 1236, 1493, 7449, 4771, 4052, 4310, 5437, 5752, 5439, 5308, 4338, 10551, 10554, 2]
 // Exports: default
 
-// Module 10636 (AppStoreOverlayFooter)
+// Module 10550 (AppStoreOverlayFooter)
 import _slicedToArray from "_slicedToArray";
 import ActionSheetHeaderBar from "ActionSheetHeaderBar";
 import { View } from "ACTION_SHEET_HEIGHT_HALF";
@@ -33,14 +33,14 @@ function AppStoreOverlayFooter(arg0) {
     return items;
   }, items);
   obj = { pointerEvents: "none", style: tmp.footerGradient, colors: memo, start: constants.START, end: constants.END };
-  const items1 = [callback(importDefault(4765), obj), ];
+  const items1 = [callback(importDefault(4766), obj), ];
   const obj1 = { bottom: true, children: null };
   const obj2 = { size: "lg", text: null, onPress: null };
   const intl = token(1236).intl;
   obj2[1] = intl.string(token(1236).t.lwQdjB);
   obj2[2] = onInstallPress;
-  obj1[1] = callback(token(4754).Button, obj2);
-  items1[1] = callback(token(5367).SafeAreaPaddingView, obj1);
+  obj1[1] = callback(token(4755).Button, obj2);
+  items1[1] = callback(token(5368).SafeAreaPaddingView, obj1);
   obj[2] = items1;
   return callback2(View, obj);
 }

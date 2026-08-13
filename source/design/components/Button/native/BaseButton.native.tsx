@@ -1,9 +1,9 @@
-// Module ID: 4761
-// Function ID: 4762
+// Module ID: 4762
+// Function ID: 4763
 // Name: BaseButton
-// Dependencies: [109, 19, 17, 4762, 21, 4072, 4344, 4759, 4083, 1370, 500, 2]
+// Dependencies: [109, 19, 17, 4763, 21, 4072, 4342, 4760, 4083, 1370, 500, 2]
 
-// Module 4761 (BaseButton)
+// Module 4762 (BaseButton)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -73,7 +73,7 @@ const forwardRefResult = importAllResult.forwardRef((disabled, ref) => {
   let obj = flag2(accessibilityState[7]);
   const buttonPressAnimationProps = obj.useButtonPressAnimationProps(pressed, scaleAmountInPx, onLayout, onPressIn, onPressOut);
   if (null == pressed) {
-    obj = { animatedScaleStyles: "Array", buttonAnimationProps: 0 };
+    obj = { animatedScaleStyles: "Array", buttonAnimationProps: "Array" };
     obj = { onLayout: null, onPressIn: null, onPressOut: null };
     obj[0] = onLayout;
     obj[1] = onPressIn;

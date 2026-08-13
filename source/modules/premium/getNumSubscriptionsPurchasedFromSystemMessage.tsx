@@ -1,10 +1,10 @@
-// Module ID: 8152
-// Function ID: 8153
+// Module ID: 8156
+// Function ID: 8157
 // Name: getNumSubscriptionsPurchasedFromSystemMessage
 // Dependencies: [2]
 // Exports: default
 
-// Module 8152 (getNumSubscriptionsPurchasedFromSystemMessage)
+// Module 8156 (getNumSubscriptionsPurchasedFromSystemMessage)
 const result = require("set").fileFinishedImporting("modules/premium/getNumSubscriptionsPurchasedFromSystemMessage.tsx");
 
 export default function getNumSubscriptionsPurchasedFromSystemMessage(content) {

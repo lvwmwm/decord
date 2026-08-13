@@ -1,49 +1,10 @@
 // Module ID: 13694
 // Function ID: 13695
-// Dependencies: [13663, 13695, 13638, 13691]
+// Dependencies: [13641, 13692, 13675]
 
 // Module 13694
 
-export default (arg0, arg1, arg2, arg3) => {
-  let obj = arg3;
-  if (!arg3) {
-    obj = {};
-  }
-  let flag = obj.enumerable;
-  let name = arg1;
-  if (undefined !== obj.name) {
-    name = obj.name;
-  }
-  if (require(13663) /* all */(arg2)) {
-    tmp3(13695)(arg2, name, obj);
-  }
-  if (obj.global) {
-    if (flag) {
-      arg0[arg1] = arg2;
-    } else {
-      tmp3(13638)(arg1, arg2);
-    }
-  } else {
-    try {
-      if (obj.unsafe) {
-        if (arg0[arg1]) {
-          flag = true;
-        }
-      } else {
-        delete tmp[tmp2];
-      }
-      if (flag) {
-        arg0[arg1] = arg2;
-      } else {
-        obj = { value: null, enumerable: false, configurable: null, writable: null };
-        obj[0] = arg2;
-        obj[2] = !obj.nonConfigurable;
-        obj[3] = !obj.nonWritable;
-        tmp3(13691).f(arg0, arg1, obj);
-        const tmp3Result = tmp3(13691);
-      }
-    } catch (err) {
-    }
-  }
+export default require("getOwnPropertyDescriptor") ? ((arg0, arg1, arg2) => require(13692) /* defineProperty */.f(arg0, arg1, require(13675)(1, arg2))) : ((arg0, arg1, arg2) => {
+  arg0[arg1] = arg2;
   return arg0;
-};
+});

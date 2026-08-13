@@ -1,7 +1,7 @@
 // Module ID: 12594
 // Function ID: 12595
 // Name: componentWillUnmount
-// Dependencies: [19, 21, 12595, 8049, 2]
+// Dependencies: [19, 21, 12595, 8053, 2]
 
 // Module 12594 (componentWillUnmount)
 import { jsx } from "jsxProd";
@@ -108,7 +108,7 @@ prototype["render"] = function render() {
   const obj = {};
   const merged = Object.assign(this.props);
   ({ handleScroll: obj.onScroll, renderRow: obj.renderItem } = this);
-  return jsx(importDefault(8049), {});
+  return jsx(importDefault(8053), {});
 };
 SwipeableFastList.defaultProps = {
   bounceFirstRowOnMount: true,

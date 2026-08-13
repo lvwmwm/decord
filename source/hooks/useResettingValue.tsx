@@ -1,7 +1,7 @@
 // Module ID: 12894
 // Function ID: 12895
 // Name: useResettingValue
-// Dependencies: [32, 19, 5755, 4229, 2]
+// Dependencies: [32, 19, 5756, 4227, 2]
 // Exports: default
 
 // Module 12894 (useResettingValue)
@@ -20,8 +20,8 @@ export default function useResettingValue(arg0, arg1) {
   const importDefault = arg1;
   const tmp = callback(callback2(arg0), 2);
   const dependencyMap = tmp[1];
-  const tmp2 = importDefault(5755)(() => {
-    const timeout = new callback(4229).Timeout();
+  const tmp2 = importDefault(5756)(() => {
+    const timeout = new callback(4227).Timeout();
     return timeout;
   });
   callback = tmp2;

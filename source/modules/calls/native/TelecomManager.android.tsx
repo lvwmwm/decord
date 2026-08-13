@@ -1,9 +1,9 @@
-// Module ID: 16649
-// Function ID: 16650
+// Module ID: 16660
+// Function ID: 16661
 // Name: nativeEventEmitter
-// Dependencies: [5, 17, 9826, 4363, 1218, 5035, 1391, 4392, 9799, 4415, 3998, 4190, 1922, 676, 4405, 3, 10660, 5300, 16650, 5169, 9288, 4553, 9201, 10879, 10883, 1624, 4534, 9825, 2]
+// Dependencies: [5, 17, 9830, 4364, 1218, 5036, 1391, 4393, 9803, 4416, 3998, 4188, 1922, 676, 4406, 3, 10574, 5301, 16661, 5170, 9292, 4554, 9205, 10793, 10797, 1624, 4535, 9829, 2]
 
-// Module 16649 (nativeEventEmitter)
+// Module 16660 (nativeEventEmitter)
 import callConnect from "callConnect";
 import get_ActivityIndicator from "initialize";
 import Soundpacks from "Soundpacks";
@@ -288,7 +288,7 @@ prototype["_terminate"] = function _terminate() {
     for (const item10033 of registeredIncomingCallIds) {
       let tmp20 = importDefault;
       let tmp21 = dependencyMap;
-      let obj = importDefault(16650);
+      let obj = importDefault(16661);
       let endCallResult = obj.endCall(item10033);
       let catchPromise = endCallResult.catch((arg0) => {
         logger.warn("Failed to end telecom incoming call on terminate:", arg0);
@@ -352,7 +352,7 @@ prototype["reportIncomingCall"] = function reportIncomingCall(channelId, channel
       self.cancelIncomingCall(self.currentCall.channelId);
     }
     tmp3 = null != self.currentCall && self.currentCall.channelId !== channelId && self.isPendingIncomingCall(self.currentCall);
-    channelName = _require(4534).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+    channelName = _require(4535).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
     let guildId = channel.getGuildId();
     if (guildId == null) {
       guildId = null;
@@ -365,16 +365,16 @@ prototype["reportIncomingCall"] = function reportIncomingCall(channelId, channel
     self.currentCall = obj;
     obj.info("Reporting incoming call to Telecom:", channelId, "callerName:", channelName);
     self.startRingtone();
-    const obj2 = _require(4534);
+    const obj2 = _require(4535);
     let tmp19 = null;
     if (null != guildId) {
       obj = { guildId: null };
       obj[0] = guildId;
       tmp19 = obj;
     }
-    const obj4 = self(16650);
-    const reportIncomingCallResult = self(16650).reportIncomingCall(channelId, channelName, tmp19);
-    self(16650).reportIncomingCall(channelId, channelName, tmp19).then((arg0) => {
+    const obj4 = self(16661);
+    const reportIncomingCallResult = self(16661).reportIncomingCall(channelId, channelName, tmp19);
+    self(16661).reportIncomingCall(channelId, channelName, tmp19).then((arg0) => {
       if (!arg0) {
         outer1_25.warn("Failed to report incoming call: resolved false");
         self.clearCall(closure_0);
@@ -383,7 +383,7 @@ prototype["reportIncomingCall"] = function reportIncomingCall(channelId, channel
       outer1_25.warn("Failed to report incoming call:", arg0);
       self.clearCall(closure_0);
     });
-    const nextPromise = self(16650).reportIncomingCall(channelId, channelName, tmp19).then((arg0) => {
+    const nextPromise = self(16661).reportIncomingCall(channelId, channelName, tmp19).then((arg0) => {
       if (!arg0) {
         outer1_25.warn("Failed to report incoming call: resolved false");
         self.clearCall(closure_0);
@@ -397,7 +397,7 @@ prototype["cancelIncomingCall"] = function cancelIncomingCall(channelId) {
   const self = this;
   let closure_0 = channelId;
   obj.info("Cancelling incoming call:", channelId);
-  obj = self(16650);
+  obj = self(16661);
   const cancelIncomingCallResult = obj.cancelIncomingCall(channelId);
   return obj.cancelIncomingCall(channelId).then(() => {
     self.clearCall(closure_0);
@@ -735,7 +735,7 @@ prototype["handleIncomingCallStoreChange"] = function handleIncomingCallStoreCha
           let deleteResult = registeredIncomingCallIds2.delete(tmp16);
           let tmp19 = importDefault;
           let tmp20 = dependencyMap;
-          let obj3 = importDefault(16650);
+          let obj3 = importDefault(16661);
           let endCallResult = obj3.endCall(tmp16);
           let catchPromise = endCallResult.catch((arg0) => {
             logger.warn("Failed to end telecom call:", arg0);
@@ -885,7 +885,7 @@ prototype["endCall"] = function endCall(currentCall) {
   const self = this;
   let closure_0 = currentCall;
   obj.info("Ending call:", currentCall.channelId);
-  obj = self(16650);
+  obj = self(16661);
   const endCallResult = obj.endCall(currentCall.channelId);
   return obj.endCall(currentCall.channelId).then((arg0) => {
     self.clearCall(currentCall.channelId);
@@ -918,7 +918,7 @@ prototype["setCallActive"] = function setCallActive(outer1_2, isSelfMuteResult) 
   if (channelId === outer1_2) {
     obj.info("Setting call active:", outer1_2);
     isSelfMuteResult = _detectH265HardwareDecode.isSelfMute();
-    obj = importDefault(16650);
+    obj = importDefault(16661);
     obj.setCallActive(outer1_2, isSelfMuteResult);
     self.lastMuteState = isSelfMuteResult;
     self.lastScreenShareActive = false;
@@ -943,15 +943,15 @@ prototype["setIncomingCallActive"] = function setIncomingCallActive(arg0, arg1) 
       tmp7 = isSelfMuteResult;
       if (isSelfMuteResult !== pendingMutePreference) {
         obj.info("Re-applying Telecom Bar ringing-state mute preference:", pendingMutePreference);
-        importDefault(9201).setSelfMute(MediaEngineContextTypes.DEFAULT, pendingMutePreference, false);
+        importDefault(9205).setSelfMute(MediaEngineContextTypes.DEFAULT, pendingMutePreference, false);
         tmp7 = pendingMutePreference;
-        const obj2 = importDefault(9201);
+        const obj2 = importDefault(9205);
       }
     }
-    const result = importDefault(16650).setIncomingCallActive(arg0, tmp7);
+    const result = importDefault(16661).setIncomingCallActive(arg0, tmp7);
     self.lastMuteState = tmp7;
     self.lastScreenShareActive = false;
-    const obj3 = importDefault(16650);
+    const obj3 = importDefault(16661);
   } else {
     obj.warn("setIncomingCallActive called for unknown channel:", arg0);
   }
@@ -995,10 +995,10 @@ prototype["startRingtone"] = function startRingtone() {
       disableSounds = soundDisabled.isSoundDisabled("call_ringing");
     }
     if (!disableSounds) {
-      self.ringtone = require(9825) /* createSoundForPack */.createSoundForPack("call_ringing", soundpack.getSoundpack());
+      self.ringtone = require(9829) /* createSoundForPack */.createSoundForPack("call_ringing", soundpack.getSoundpack());
       const ringtone = self.ringtone;
       ringtone.loop();
-      const tmpResult = require(9825) /* createSoundForPack */;
+      const tmpResult = require(9829) /* createSoundForPack */;
     }
   }
 };
@@ -1018,7 +1018,7 @@ prototype["handleMuteStoreChange"] = function handleMuteStoreChange() {
         if (self.lastMuteState !== isSelfMuteResult) {
           self.lastMuteState = isSelfMuteResult;
           obj.info("Syncing Discord -> Call Bar mute state:", isSelfMuteResult);
-          obj = importDefault(16650);
+          obj = importDefault(16661);
           obj.setMicMuted(self.currentCall.channelId, isSelfMuteResult);
         }
       }
@@ -1041,7 +1041,7 @@ prototype["handleScreenShareStoreChange"] = function handleScreenShareStoreChang
           const result = self.clearPendingScreenShareOffSync();
           if (tmp3) {
             obj.info("Syncing Discord -> Call Bar screen share state: true");
-            obj = self(16650);
+            obj = self(16661);
             obj.setScreenShareState(self.currentCall.channelId, true, true);
           } else {
             let channelId = self.currentCall.channelId;

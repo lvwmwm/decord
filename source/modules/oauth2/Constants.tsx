@@ -1,9 +1,9 @@
-// Module ID: 10555
-// Function ID: 10556
+// Module ID: 10469
+// Function ID: 10470
 // Name: OAuth2Steps
 // Dependencies: [2]
 
-// Module 10555 (OAuth2Steps)
+// Module 10469 (OAuth2Steps)
 const result = require("set").fileFinishedImporting("modules/oauth2/Constants.tsx");
 
 export const OAuth2Steps = { CONNECT_ACCOUNT: "CONNECT_ACCOUNT", SELECT_INSTALL_TYPE: "SELECT_INSTALL_TYPE", AUTHORIZE_SCOPES: "AUTHORIZE_SCOPES", AUTHORIZE_BOT_PERMISSIONS: "AUTHORIZE_BOT_PERMISSIONS", AUTHORIZE_MFA: "AUTHORIZE_MFA" };

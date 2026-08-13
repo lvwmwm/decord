@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "right", left: "channel", right: "source", bottom: "bottom" };
+let closure_0 = { top: "Array", left: "HermesInternal", right: "r", bottom: "call" };
 arg5.default = function insetsDiffer(arg0, arg1) {
   let rect = arg0;
   if (!arg0) {

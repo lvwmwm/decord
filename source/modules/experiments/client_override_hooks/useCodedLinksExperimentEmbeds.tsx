@@ -1,10 +1,10 @@
-// Module ID: 10502
-// Function ID: 10503
+// Module ID: 10416
+// Function ID: 10417
 // Name: canSeeExperimentEmbeds
-// Dependencies: [32, 19, 1922, 4258, 1212, 589, 10503, 10504, 2]
+// Dependencies: [32, 19, 1922, 4256, 1212, 589, 10417, 10418, 2]
 // Exports: canSeeExperimentEmbeds, useCanSeeExperimentEmbeds, useCodedLinksExperimentEmbeds
 
-// Module 10502 (canSeeExperimentEmbeds)
+// Module 10416 (canSeeExperimentEmbeds)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";

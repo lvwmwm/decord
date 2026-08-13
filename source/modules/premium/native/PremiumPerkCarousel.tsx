@@ -1,7 +1,7 @@
 // Module ID: 12794
 // Function ID: 12795
 // Name: PremiumPerkCarousel
-// Dependencies: [32, 19, 17, 21, 4344, 12755, 4340, 8746, 1297, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 12755, 4338, 8750, 1297, 2]
 // Exports: default
 
 // Module 12794 (PremiumPerkCarousel)

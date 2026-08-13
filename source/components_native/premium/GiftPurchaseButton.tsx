@@ -1,7 +1,7 @@
 // Module ID: 12904
 // Function ID: 12905
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4013, 5897, 21, 4759, 4340, 589, 5900, 7462, 5767, 10084, 4683, 1236, 4007, 10080, 4755, 12905, 2]
+// Dependencies: [5, 19, 17, 4013, 5899, 21, 4760, 4338, 589, 5902, 7466, 5768, 10082, 4684, 1236, 4007, 10078, 4756, 12905, 2]
 // Exports: default
 
 // Module 12904 (GiftPurchaseButton)
@@ -101,7 +101,7 @@ export default function GiftPurchaseButton(style) {
           }
         } else if (1 === tmp7) {
           premiumType = 0;
-          obj1 = outer1_1(4683);
+          obj1 = outer1_1(4684);
           const obj3 = { title: null, body: null };
           const intl = outer1_0(1236).intl;
           obj3[0] = intl.string(outer1_0(1236).t.R0RpRX);
@@ -135,7 +135,7 @@ export default function GiftPurchaseButton(style) {
           obj5[3] = premiumTypeFromPlanId;
           obj5[4] = c4;
           obj5[5] = closure_0;
-          outer1_0(10080).openGiftModal(obj5);
+          outer1_0(10078).openGiftModal(obj5);
           c4 = 3;
           return { value: "HermesInternal", done: null };
         }

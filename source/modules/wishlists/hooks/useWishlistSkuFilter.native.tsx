@@ -1,7 +1,7 @@
 // Module ID: 10133
 // Function ID: 10134
 // Name: useWishlistSkuFilter
-// Dependencies: [19, 5888, 676, 8256, 9419, 5891, 2]
+// Dependencies: [19, 5889, 676, 8260, 9423, 5893, 2]
 // Exports: useWishlistSkuFilter
 
 // Module 10133 (useWishlistSkuFilter)

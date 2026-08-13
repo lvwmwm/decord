@@ -1,7 +1,7 @@
 // Module ID: 12803
 // Function ID: 12804
 // Name: useEligibleActiveOutboundPromotions
-// Dependencies: [19, 1922, 7384, 1924, 589, 7687, 4007, 709, 7685, 2]
+// Dependencies: [19, 1922, 7388, 1924, 589, 7691, 4007, 709, 7689, 2]
 // Exports: useBogoPromotion, useHasActiveBogoPromotion, useIsInPromotion, useOutboundPromotions, useUnseenOutboundPromotions
 
 // Module 12803 (useEligibleActiveOutboundPromotions)

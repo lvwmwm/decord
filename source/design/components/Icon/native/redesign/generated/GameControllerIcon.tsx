@@ -1,10 +1,10 @@
-// Module ID: 8807
-// Function ID: 8808
+// Module ID: 8811
+// Function ID: 8812
 // Name: GameControllerIcon
-// Dependencies: [19, 21, 712, 4064, 8283, 2]
+// Dependencies: [19, 21, 712, 4064, 8287, 2]
 // Exports: GameControllerIcon
 
-// Module 8807 (GameControllerIcon)
+// Module 8811 (GameControllerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const GameControllerIcon = function GameControllerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8283) /* registerAsset */;
+  obj[0] = require(8287) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 8690
-// Function ID: 8691
+// Module ID: 8694
+// Function ID: 8695
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [5215, 1925, 647, 2]
+// Dependencies: [5216, 1925, 647, 2]
 // Exports: default, getTopAndNewlyAddedEmojis
 
-// Module 8690 (useTopAndNewlyAddedEmojis)
+// Module 8694 (useTopAndNewlyAddedEmojis)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { EmojiIntention } from "set";
 

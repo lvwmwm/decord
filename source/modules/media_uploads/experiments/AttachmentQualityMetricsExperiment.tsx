@@ -1,9 +1,9 @@
-// Module ID: 4927
-// Function ID: 4928
+// Module ID: 4928
+// Function ID: 4929
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 
-// Module 4927 (apexExperiment)
+// Module 4928 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-attachment-quality-metrics", kind: "user", defaultConfig: { enableQualityMetrics: false, enableOriginDetection: false }, variations: { 0: { enableQualityMetrics: false, enableOriginDetection: false }, 1: { enableQualityMetrics: true, enableOriginDetection: true } } });

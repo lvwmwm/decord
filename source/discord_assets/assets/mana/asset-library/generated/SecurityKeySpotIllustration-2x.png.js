@@ -1,9 +1,9 @@
-// Module ID: 6726
-// Function ID: 6727
+// Module ID: 6730
+// Function ID: 6731
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6726 (metadata)
+// Module 6730 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SecurityKeySpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/4bca1ef4de93e23ffde8f25d375ec62ee3a4565d3742f1f0c67cfd47c1016bad.png";

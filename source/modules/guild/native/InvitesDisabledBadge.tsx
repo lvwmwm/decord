@@ -1,8 +1,8 @@
-// Module ID: 15498
-// Function ID: 15499
-// Dependencies: [19, 17, 21, 4344, 712, 1297, 12140, 2]
+// Module ID: 15507
+// Function ID: 15508
+// Dependencies: [19, 17, 21, 4342, 712, 1297, 12142, 2]
 
-// Module 15498
+// Module 15507
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -22,7 +22,7 @@ const memoResult = require("noop").memo(function InvitesDisabledBadge(style) {
   obj = { style: tmp.pauseBackground, children: null };
   obj = { style: tmp.pause, themedColor: null, source: null };
   obj[1] = importDefault(712).colors.INTERACTIVE_TEXT_ACTIVE;
-  obj[2] = importDefault(12140);
+  obj[2] = importDefault(12142);
   obj[1] = jsx(require(1297) /* Button */.ThemedIcon, { style: tmp.pause, themedColor: null, source: null });
   obj[1] = <View style={tmp.pause} themedColor={null} source={null} />;
   return <View style={tmp.pause} themedColor={null} source={null} />;

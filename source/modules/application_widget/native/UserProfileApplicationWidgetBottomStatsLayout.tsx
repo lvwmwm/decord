@@ -1,7 +1,7 @@
 // Module ID: 12510
 // Function ID: 12511
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 4344, 712, 12420, 12507, 4340, 12508, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 12420, 12507, 4338, 12508, 2]
 // Exports: default
 
 // Module 12510 (UserProfileApplicationWidgetBottomStatsLayout)

@@ -1,10 +1,10 @@
-// Module ID: 15333
-// Function ID: 15334
+// Module ID: 15342
+// Function ID: 15343
 // Name: useIsGameCommunityServerPreview
 // Dependencies: [3990, 676, 589, 2]
 // Exports: default
 
-// Module 15333 (useIsGameCommunityServerPreview)
+// Module 15342 (useIsGameCommunityServerPreview)
 import initialize from "initialize";
 import { JoinGuildSources } from "ME";
 

@@ -1,10 +1,10 @@
-// Module ID: 13528
-// Function ID: 13529
+// Module ID: 13529
+// Function ID: 13530
 // Name: buildZoomedInAnalyticsEvent
-// Dependencies: [676, 7175, 12971, 13141, 2]
+// Dependencies: [676, 7181, 12971, 13141, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 13528 (buildZoomedInAnalyticsEvent)
+// Module 13529 (buildZoomedInAnalyticsEvent)
 import { AnalyticEvents } from "ME";
 
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };
@@ -312,7 +312,7 @@ let closure_5 = {
       if (typeof touch_action_type === "string") {
         tmp2 = touch_action_type;
       }
-      let obj = importDefault(7175);
+      let obj = importDefault(7181);
       let currentHermesInstrumentedStatsSummary = obj.getCurrentHermesInstrumentedStatsSummary();
       if (currentHermesInstrumentedStatsSummary == null) {
         currentHermesInstrumentedStatsSummary = null;

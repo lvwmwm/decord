@@ -1,19 +1,19 @@
-// Module ID: 14141
-// Function ID: 14142
+// Module ID: 14150
+// Function ID: 14151
 // Name: useObscuredContentNonFriendsDmSettingValue
-// Dependencies: [8123, 14132, 7101, 5954, 1236, 14133, 10493, 14135, 2]
+// Dependencies: [8127, 14141, 7107, 5956, 1236, 14142, 10407, 14144, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 14141 (useObscuredContentNonFriendsDmSettingValue)
+// Module 14150 (useObscuredContentNonFriendsDmSettingValue)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
 function useObscuredContentNonFriendsDmSettingValue() {
-  const obj = require(14132) /* useExplicitContentSettingOrDefault */;
-  return require(7101) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
+  const obj = require(14141) /* useExplicitContentSettingOrDefault */;
+  return require(7107) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
 }
 function onObscuredContentNonFriendsDmOnPress() {
-  let obj = require(5954) /* resolveExplicitContentSettingWithDefaults */;
+  let obj = require(5956) /* resolveExplicitContentSettingWithDefaults */;
   const intl = require(1236) /* getSystemLocale */.intl;
   const stringResult = intl.string(require(1236) /* getSystemLocale */.t.GYpoAq);
   obj = { title: stringResult, subtitle: null, handlePress: null, currentValue: null };
@@ -25,7 +25,7 @@ function onObscuredContentNonFriendsDmOnPress() {
     return obj.updateExplicitContentSetting(obj);
   };
   obj[3] = obj.getExplicitContentSettingOrDefault().explicitContentNonFriendDm;
-  const result = require(14133) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+  const result = require(14142) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
 }
 const pressable = createToggle.createPressable({
   useTitle: function getTitle() {

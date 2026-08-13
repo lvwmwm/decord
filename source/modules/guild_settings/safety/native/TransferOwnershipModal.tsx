@@ -1,10 +1,10 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11295
+// Function ID: 11296
 // Name: closeModal
-// Dependencies: [5, 19, 11305, 21, 11303, 503, 1236, 5309, 11306, 8509, 9066, 4061, 5822, 2]
+// Dependencies: [5, 19, 11296, 21, 11294, 503, 1236, 5310, 11297, 8513, 9070, 4061, 5823, 2]
 // Exports: default
 
-// Module 11304 (closeModal)
+// Module 11295 (closeModal)
 import encodeProperties from "encodeProperties";
 import noop from "noop";
 import TransferOwnershipModalScenes from "TransferOwnershipModalScenes";
@@ -14,7 +14,7 @@ let c5;
 let closure_6;
 const require = arg1;
 function closeModal() {
-  importDefault(11303).close();
+  importDefault(11294).close();
 }
 ({ TransferOwnershipModalScenes: c5, TransferOwnershipVerificationTypes: closure_6 } = TransferOwnershipModalScenes);
 let result = require("TransferOwnershipModalScenes").fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModal.tsx");
@@ -67,10 +67,10 @@ export default function TransferOwnershipModal(guild) {
         return applyArgumentsResult;
       };
       obj[1] = function onSuccess() {
-        callback2(11303).close();
-        const obj = callback2(11303);
-        callback2(9066).close();
-        const obj2 = callback2(9066);
+        callback2(11294).close();
+        const obj = callback2(11294);
+        callback2(9070).close();
+        const obj2 = callback2(9070);
         const result = callback(4061).showTransferOwnershipSuccess();
       };
       obj[2] = outer1_3(function*() {
@@ -137,5 +137,5 @@ export default function TransferOwnershipModal(guild) {
   let obj = { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP, headerBackTitle: null };
   let intl = guild(1236).intl;
   obj[2] = intl.string(guild(1236).t["13/7kX"]);
-  return jsx(guild(5822).Navigator, { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP, headerBackTitle: null });
+  return jsx(guild(5823).Navigator, { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP, headerBackTitle: null });
 };

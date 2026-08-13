@@ -1,7 +1,7 @@
 // Module ID: 12581
 // Function ID: 12582
 // Name: RemediatedUserNotice
-// Dependencies: [19, 17, 3998, 676, 21, 4344, 712, 8880, 647, 4340, 1236, 9289, 2]
+// Dependencies: [19, 17, 3998, 676, 21, 4342, 712, 8884, 647, 4338, 1236, 9293, 2]
 // Exports: default
 
 // Module 12581 (RemediatedUserNotice)
@@ -40,7 +40,7 @@ export default function RemediatedUserNotice(user) {
       obj = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl = tmp4(1236).intl;
       obj[3] = intl.string(tmp4(1236).t["oC/fU6"]);
-      isBlocked = callback(tmp4(4340).Text, obj);
+      isBlocked = callback(tmp4(4338).Text, obj);
     }
     const items2 = [isBlocked, ];
     if (isIgnored) {
@@ -48,7 +48,7 @@ export default function RemediatedUserNotice(user) {
       const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl2 = tmp4(1236).intl;
       obj2[3] = intl2.string(tmp4(1236).t.HXz5An);
-      const items3 = [callback(tmp4(4340).Text, obj2), callback(tmp4(4340).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      const items3 = [callback(tmp4(4338).Text, obj2), callback(tmp4(4338).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1236).intl;
       const obj3 = { unignoreHook: null };
       obj3[0] = function unignoreHook(children) {

@@ -1,10 +1,10 @@
-// Module ID: 4284
-// Function ID: 4285
+// Module ID: 4282
+// Function ID: 4283
 // Name: UserPlatformIcon
-// Dependencies: [19, 21, 712, 4064, 4285, 2]
+// Dependencies: [19, 21, 712, 4064, 4283, 2]
 // Exports: UserPlatformIcon
 
-// Module 4284 (UserPlatformIcon)
+// Module 4282 (UserPlatformIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const UserPlatformIcon = function UserPlatformIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4285) /* registerAsset */;
+  obj[0] = require(4283) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

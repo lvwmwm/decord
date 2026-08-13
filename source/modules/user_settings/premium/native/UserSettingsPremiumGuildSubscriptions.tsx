@@ -1,7 +1,7 @@
 // Module ID: 12835
 // Function ID: 12836
 // Name: componentDidMount
-// Dependencies: [19, 17, 1922, 4009, 4237, 4012, 4013, 676, 1924, 21, 4344, 5198, 4072, 4240, 5916, 4663, 7634, 6054, 4340, 1236, 1993, 12836, 1940, 12850, 12852, 12854, 12858, 12756, 6901, 8207, 12796, 589, 1499, 6907, 1624, 2]
+// Dependencies: [19, 17, 1922, 4009, 4235, 4012, 4013, 676, 1924, 21, 4342, 5199, 4072, 4238, 5918, 4664, 7638, 6056, 4338, 1236, 1993, 12836, 1940, 12850, 12852, 12854, 12858, 12756, 6907, 8211, 12796, 589, 1499, 6913, 1624, 2]
 // Exports: default
 
 // Module 12835 (componentDidMount)
@@ -64,16 +64,16 @@ const prototype = UserSettingsPremiumGuildSubscriptions.prototype;
 prototype["componentDidMount"] = function componentDidMount() {
   const self = this;
   if (!this.props.hasFetchedSlots) {
-    const guildBoostSlots = require(4240) /* _fetchAppliedGuildBoostsForGuild */.fetchGuildBoostSlots();
-    const obj = require(4240) /* _fetchAppliedGuildBoostsForGuild */;
+    const guildBoostSlots = require(4238) /* _fetchAppliedGuildBoostsForGuild */.fetchGuildBoostSlots();
+    const obj = require(4238) /* _fetchAppliedGuildBoostsForGuild */;
   }
   if (tmp4) {
-    const premiumSubscriptionPlans = require(5916) /* fetchSubscriptionPlansForSKU */.fetchPremiumSubscriptionPlans();
-    const obj2 = require(5916) /* fetchSubscriptionPlansForSKU */;
+    const premiumSubscriptionPlans = require(5918) /* fetchSubscriptionPlansForSKU */.fetchPremiumSubscriptionPlans();
+    const obj2 = require(5918) /* fetchSubscriptionPlansForSKU */;
   }
   if (!self.props.isFetchingPaymentSources) {
-    const paymentSources = require(4663) /* _deletePaymentSource */.fetchPaymentSources();
-    const obj3 = require(4663) /* _deletePaymentSource */;
+    const paymentSources = require(4664) /* _deletePaymentSource */.fetchPaymentSources();
+    const obj3 = require(4664) /* _deletePaymentSource */;
   }
 };
 prototype["renderPremiumGuildSubscriptions"] = function renderPremiumGuildSubscriptions() {
@@ -90,20 +90,20 @@ prototype["renderPremiumGuildSubscriptions"] = function renderPremiumGuildSubscr
     obj[0] = items;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[3] = intl.string(require(1236) /* getSystemLocale */.t.GwnFO5);
-    const items1 = [callback(require(4340) /* Text */.Text, obj), , ];
+    const items1 = [callback(require(4338) /* Text */.Text, obj), , ];
     obj = { style: null, variant: "text-sm/medium", color: "interactive-text-default", children: null };
     obj[0] = tmp.blurb;
     const intl2 = require(1236) /* getSystemLocale */.intl;
     const obj1 = { helpdeskArticle: null };
     obj1[0] = importDefault(1993).getArticleURL(constants.GUILD_SUBSCRIPTIONS);
     obj[3] = intl2.format(require(1236) /* getSystemLocale */.t.A4UTjH, obj1);
-    items1[1] = callback(require(4340) /* Text */.Text, obj);
+    items1[1] = callback(require(4338) /* Text */.Text, obj);
     let tmp6Result = null != externalManagementMessage;
     if (tmp6Result) {
       const obj2 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
       obj2[0] = tmp.externalManagement;
       obj2[3] = externalManagementMessage;
-      tmp6Result = tmp6(tmp7(4340).Text, obj2);
+      tmp6Result = tmp6(tmp7(4338).Text, obj2);
     }
     const obj3 = { children: null };
     items1[2] = tmp6Result;
@@ -187,10 +187,10 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   if (flag == null) {
     flag = true;
   }
-  ({ fractionalState: c2, endsAt } = flag(6901)({ forceFetch: true }));
-  let tmpResult = tmp(8207);
+  ({ fractionalState: c2, endsAt } = flag(6907)({ forceFetch: true }));
+  let tmpResult = tmp(8211);
   closure_3 = tmpResult.useIsInReverseTrial();
-  const tmp3 = flag(6901)({ forceFetch: true });
+  const tmp3 = flag(6907)({ forceFetch: true });
   closure_4 = flag(12796)(endsAt, tmp(12796).CountDownMessageTypes.LONG_TIME_LEFT);
   tmpResult = tmp(589);
   const items = [handleGuildBoostsUpdate, handlePaymentSourceCreateEnd, addSubscriptionPlan, mergeGuildAvatar];
@@ -220,10 +220,10 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   const navigation = _require(1499).useNavigation();
   const tmpResult2 = _require(1499);
   obj = { navigation, externalManagementMessage: null };
-  const externalManagementMessage = _require(6907).getExternalManagementMessage(stateFromStores, { shouldAllowExternalManagement: true });
+  const externalManagementMessage = _require(6913).getExternalManagementMessage(stateFromStores, { shouldAllowExternalManagement: true });
   const tmp10 = UserSettingsPremiumGuildSubscriptions;
   const tmp9 = closure_14;
-  const tmpResult3 = _require(6907);
+  const tmpResult3 = _require(6913);
   let tmp11 = null;
   if (tmpResult4.isMetaQuest()) {
     tmp11 = externalManagementMessage;

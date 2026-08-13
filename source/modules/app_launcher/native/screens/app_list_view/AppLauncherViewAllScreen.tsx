@@ -1,10 +1,10 @@
-// Module ID: 11640
-// Function ID: 11641
+// Module ID: 11636
+// Function ID: 11637
 // Name: DEFAULT_CONTENT_PADDING
-// Dependencies: [19, 17, 1498, 21, 4344, 712, 11579, 1628, 9594, 11498, 7024, 4886, 1236, 5313, 4340, 1297, 11540, 11503, 11577, 11545, 11548, 11549, 11499, 9595, 2]
+// Dependencies: [19, 17, 1498, 21, 4342, 712, 11575, 1628, 9598, 11494, 7030, 4887, 1236, 5314, 4338, 1297, 11536, 11499, 11573, 11541, 11544, 11545, 11495, 9599, 2]
 // Exports: default
 
-// Module 11640 (DEFAULT_CONTENT_PADDING)
+// Module 11636 (DEFAULT_CONTENT_PADDING)
 import useBottomSheetFlashListBottomViewabilityInset from "useBottomSheetFlashListBottomViewabilityInset";
 import { View } from "EntityBorderAppIcon";
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";

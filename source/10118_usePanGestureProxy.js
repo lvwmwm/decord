@@ -1,7 +1,7 @@
 // Module ID: 10118
 // Function ID: 10119
 // Name: usePanGestureProxy
-// Dependencies: [19, 5466, 10119]
+// Dependencies: [19, 5467, 10119]
 // Exports: usePanGestureProxy
 
 // Module 10118 (usePanGestureProxy)
@@ -32,7 +32,7 @@ export const usePanGestureProxy = (onConfigurePanGesture) => {
     const Gesture = onConfigurePanGesture(onGestureStart[1]).Gesture;
     const withTestIdResult = Gesture.Pan().withTestId("rnrc-gesture-handler");
     onConfigurePanGesture = withTestIdResult;
-    let obj = { onBegin: "getGuild", onStart: "find", onUpdate: "IconComponent", onEnd: "ct", onFinalize: "r" };
+    let obj = { onBegin: "Array", onStart: "accessible", onUpdate: "__workletHash", onEnd: "onPress", onFinalize: "Array" };
     withTestIdResult.onBegin = (onBegin) => {
       obj.onBegin = onBegin;
       return closure_0;

@@ -1,10 +1,10 @@
-// Module ID: 11986
-// Function ID: 11987
+// Module ID: 11988
+// Function ID: 11989
 // Name: useGuildPowerupOnShowMore
-// Dependencies: [19, 11938, 2]
+// Dependencies: [19, 11940, 2]
 // Exports: default
 
-// Module 11986 (useGuildPowerupOnShowMore)
+// Module 11988 (useGuildPowerupOnShowMore)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnShowMore.tsx");

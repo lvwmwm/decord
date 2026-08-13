@@ -1,10 +1,10 @@
-// Module ID: 4389
-// Function ID: 4390
+// Module ID: 4390
+// Function ID: 4391
 // Name: getComboId
-// Dependencies: [32, 1922, 4390, 676, 4034, 2]
+// Dependencies: [32, 1922, 4391, 676, 4034, 2]
 // Exports: calculateProgressPercentage, convertComboId, convertToTransitionState, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 4389 (getComboId)
+// Module 4390 (getComboId)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import addSku from "addSku";

@@ -1,10 +1,10 @@
-// Module ID: 6905
-// Function ID: 6906
+// Module ID: 6911
+// Function ID: 6912
 // Name: _handleBoostPress
-// Dependencies: [5, 19, 17, 4237, 676, 5193, 1924, 21, 6906, 4549, 5191, 12911, 1499, 5767, 647, 1940, 11957, 4754, 1236, 4863, 2]
+// Dependencies: [5, 19, 17, 4235, 676, 5194, 1924, 21, 6912, 4550, 5192, 12911, 1499, 5768, 647, 1940, 11959, 4755, 1236, 4864, 2]
 // Exports: default
 
-// Module 6905 (_handleBoostPress)
+// Module 6911 (_handleBoostPress)
 import PremiumGuildSubscribeModalScenes from "PremiumGuildSubscribeModalScenes";
 import LockIcon from "LockIcon";
 import { View } from "Button";
@@ -70,7 +70,7 @@ function _handleBoostPress() {
               c4 = 1;
               c5 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback(6906).launchGuildBoostFlowOrAlert(obj1);
+              obj3[0] = callback(6912).launchGuildBoostFlowOrAlert(obj1);
               return obj3;
             }
           } else if (arg0 === 1) {
@@ -82,7 +82,7 @@ function _handleBoostPress() {
             obj4[0] = arg1;
             return obj4;
           } else {
-            obj = callback(5191);
+            obj = callback(5192);
             obj.closeApplyBoostModal();
             c5 = 3;
             return { value: "HermesInternal", done: null };

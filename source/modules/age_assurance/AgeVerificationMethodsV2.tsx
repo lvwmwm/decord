@@ -1,10 +1,10 @@
-// Module ID: 7872
-// Function ID: 7873
+// Module ID: 7876
+// Function ID: 7877
 // Name: _fetchAgeVerificationMethodsV
 // Dependencies: [5, 676, 530, 2]
 // Exports: fetchAgeVerificationMethodsV2
 
-// Module 7872 (_fetchAgeVerificationMethodsV)
+// Module 7876 (_fetchAgeVerificationMethodsV)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

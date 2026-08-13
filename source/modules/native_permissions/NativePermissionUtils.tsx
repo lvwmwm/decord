@@ -1,9 +1,9 @@
-// Module ID: 4901
-// Function ID: 4902
+// Module ID: 4902
+// Function ID: 4903
 // Name: NativePermissionsRequestOptions
-// Dependencies: [4902, 4903, 4904, 4908, 2, 4905]
+// Dependencies: [4903, 4904, 4905, 4909, 2, 4906]
 
-// Module 4901 (NativePermissionsRequestOptions)
+// Module 4902 (NativePermissionsRequestOptions)
 import { ProcessArgs } from "get";
 import importDefaultResult from "isEnabled";
 

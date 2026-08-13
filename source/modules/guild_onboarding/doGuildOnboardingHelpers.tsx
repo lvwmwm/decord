@@ -1,10 +1,10 @@
-// Module ID: 5285
-// Function ID: 5286
+// Module ID: 5286
+// Function ID: 5287
 // Name: waitForOnboardingCompletion
-// Dependencies: [1990, 3977, 1403, 5286, 2]
+// Dependencies: [1990, 3977, 1403, 5287, 2]
 // Exports: waitForOnboardingCompletion
 
-// Module 5285 (waitForOnboardingCompletion)
+// Module 5286 (waitForOnboardingCompletion)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { GuildMemberFlags } from "GuildMemberFlags";
 

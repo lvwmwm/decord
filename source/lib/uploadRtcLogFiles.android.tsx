@@ -1,10 +1,10 @@
-// Module ID: 9917
-// Function ID: 9918
+// Module ID: 9915
+// Function ID: 9916
 // Name: _uploadRtcLogFiles
-// Dependencies: [5, 676, 3, 8846, 4243, 530, 2]
+// Dependencies: [5, 676, 3, 8850, 4241, 530, 2]
 // Exports: uploadRtcLogFiles
 
-// Module 9917 (_uploadRtcLogFiles)
+// Module 9915 (_uploadRtcLogFiles)
 import sendRequest from "sendRequest";
 import ME from "ME";
 

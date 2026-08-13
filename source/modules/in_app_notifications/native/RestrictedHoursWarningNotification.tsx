@@ -1,6 +1,6 @@
 // Module ID: 10250
 // Function ID: 10251
-// Dependencies: [19, 17, 9815, 676, 21, 4344, 712, 10251, 4549, 9816, 6057, 9898, 4340, 2]
+// Dependencies: [19, 17, 9819, 676, 21, 4342, 712, 10251, 4550, 9820, 6059, 9896, 4338, 2]
 
 // Module 10250
 import importAllResult from "noop";
@@ -41,10 +41,10 @@ const memoResult = importAllResult.memo(function RestrictedHoursWarningNotificat
     notification(outer1_2[10]).openUserSettings(obj);
   }, items1);
   obj = { icon: <View size="sm" color={null} />, header: memo, children: null, onPress: null, notification: null };
-  obj[2] = jsx(notification(4340).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle });
+  obj[2] = jsx(notification(4338).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle });
   obj[3] = callback;
   obj[4] = notification;
-  return jsx(notification(9898).NotificationPressable, { icon: <View size="sm" color={null} />, header: memo, children: null, onPress: null, notification: null });
+  return jsx(notification(9896).NotificationPressable, { icon: <View size="sm" color={null} />, header: memo, children: null, onPress: null, notification: null });
 });
 const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/RestrictedHoursWarningNotification.tsx");
 

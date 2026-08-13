@@ -1,10 +1,10 @@
-// Module ID: 11998
-// Function ID: 11999
+// Module ID: 12000
+// Function ID: 12001
 // Name: GuildPowerupsRecentActivityRow
-// Dependencies: [17, 4336, 21, 4344, 712, 8236, 11999, 4031, 589, 8111, 7736, 12001, 12003, 1297, 4340, 12005, 1236, 2]
+// Dependencies: [17, 4334, 21, 4342, 712, 8240, 12001, 4031, 589, 8115, 7740, 12003, 12005, 1297, 4338, 12007, 1236, 2]
 // Exports: default
 
-// Module 11998 (GuildPowerupsRecentActivityRow)
+// Module 12000 (GuildPowerupsRecentActivityRow)
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
@@ -20,11 +20,11 @@ function GuildPowerupsRecentActivityRow(row) {
   let sortKey;
   let username;
   row = row.row;
-  let obj = require(8236) /* apexExperiment */;
+  let obj = require(8240) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsRecentActivityRow");
   ({ boost, phase, sortKey } = row);
   const tmp4 = callback();
-  let obj1 = require(11999) /* useMaybeGetSortedBoosts */;
+  let obj1 = require(12001) /* useMaybeGetSortedBoosts */;
   const getBoostUserConfig = obj1.useGetBoostUserConfig(boost);
   ({ roleColor, roleColorStrings, username } = getBoostUserConfig);
   let obj2 = require(4031) /* resetCache */;
@@ -37,16 +37,16 @@ function GuildPowerupsRecentActivityRow(row) {
       obj = { color: null };
       obj[0] = roleColor;
     }
-    let tmpResult = tmp(8111);
+    let tmpResult = tmp(8115);
     const processColorStringsArray = tmpResult.useProcessColorStringsArray(roleColorStrings);
-    tmpResult = tmp(8111);
+    tmpResult = tmp(8115);
     const isRoleStyleAndRoleColorsEligibleForERC = tmpResult.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      let BoostGemSlashIcon = tmp(7736).BoostGemIcon;
+      let BoostGemSlashIcon = tmp(7740).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(12001).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12003).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(12003).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12005).BoostGemSlashIcon;
     }
     obj = { style: null, children: null };
     obj[0] = tmp4.boostRowContainer;
@@ -80,12 +80,12 @@ function GuildPowerupsRecentActivityRow(row) {
     }
     obj5[4] = tmp23;
     obj5[5] = username;
-    items2[1] = closure_5(tmp(4340).Text, obj5);
-    items2[2] = closure_5(tmp(4340).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
+    items2[1] = closure_5(tmp(4338).Text, obj5);
+    items2[2] = closure_5(tmp(4338).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
     const obj6 = { variant: "text-md/medium", lineClamp: 1, style: null, children: null };
     obj6[2] = tmp4.messageText;
-    obj6[3] = importDefault(12005)(row);
-    items2[3] = closure_5(tmp(4340).Text, obj6);
+    obj6[3] = importDefault(12007)(row);
+    items2[3] = closure_5(tmp(4338).Text, obj6);
     obj3[1] = items2;
     items1[1] = closure_6(View, obj3);
     let str4 = "text-xs/semibold";
@@ -101,7 +101,7 @@ function GuildPowerupsRecentActivityRow(row) {
     obj7[1] = str5;
     obj7[2] = tmp4.timestamp;
     obj7[3] = calendarFormatResult;
-    items1[2] = closure_5(tmp(4340).Text, obj7);
+    items1[2] = closure_5(tmp(4338).Text, obj7);
     obj[1] = items1;
     return closure_6(View, obj);
   }
@@ -121,10 +121,10 @@ let obj1 = { gap: require("Themes").space.PX_12, marginTop: require("Themes").sp
 const result = require("jsxProd").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsRecentActivitySection.tsx");
 
 export default function GuildPowerupsRecentActivitySection(guildId) {
-  let obj = require(8236) /* apexExperiment */;
+  let obj = require(8240) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsRecentActivitySection");
   const tmp4 = callback();
-  const arr = importDefault(11999)(guildId.guildId, 10);
+  const arr = importDefault(12001)(guildId.guildId, 10);
   let tmp6Result = null;
   if (0 !== arr.length) {
     obj = { style: null, children: null };
@@ -137,7 +137,7 @@ export default function GuildPowerupsRecentActivitySection(guildId) {
     obj[1] = str;
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t.yM9Krm);
-    const items = [closure_5(tmp(4340).Text, obj), ];
+    const items = [closure_5(tmp(4338).Text, obj), ];
     const obj1 = { style: null, children: null };
     obj1[0] = tmp4.boostContainer;
     obj1[1] = arr.map((boost) => callback(closure_8, { row: boost }, "boost-" + boost.boost.id));

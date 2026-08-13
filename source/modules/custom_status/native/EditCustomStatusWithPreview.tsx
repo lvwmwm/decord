@@ -1,10 +1,10 @@
-// Module ID: 9501
-// Function ID: 9502
+// Module ID: 9505
+// Function ID: 9506
 // Name: ClearInputButton
-// Dependencies: [32, 19, 17, 1922, 9502, 676, 1925, 21, 4344, 712, 4886, 1236, 1297, 8513, 9503, 698, 9494, 589, 9504, 9505, 1363, 9507, 4750, 8682, 5408, 9508, 9510, 4207, 9511, 8427, 5309, 4340, 9569, 8016, 5806, 5413, 4312, 9570, 2007, 9572, 4303, 501, 1642, 4549, 5822, 2]
+// Dependencies: [32, 19, 17, 1922, 9506, 676, 1925, 21, 4342, 712, 4887, 1236, 1297, 8517, 9507, 698, 9498, 589, 9508, 9509, 1363, 9511, 4751, 8686, 5409, 9512, 9514, 4205, 9515, 8431, 5310, 4338, 9573, 8020, 5807, 5414, 4310, 9574, 2007, 9576, 4301, 501, 1642, 4550, 5823, 2]
 // Exports: default
 
-// Module 9501 (ClearInputButton)
+// Module 9505 (ClearInputButton)
 import ActivityEmoji from "ActivityEmoji";
 import setCustomStatus from "setCustomStatus";
 import get_ActivityIndicator from "initialize";
@@ -31,11 +31,11 @@ function ClearInputButton(onPress) {
   obj[3] = onPress.onPress;
   obj[4] = { top: 8, bottom: 8, right: 8 };
   obj = { source: null, style: null, size: null };
-  obj[0] = importDefault(8513);
+  obj[0] = importDefault(8517);
   obj[1] = createCacheKey().closeIcon;
   obj[2] = require(1297) /* Button */.Icon.Sizes.SMALL;
   obj[5] = callback(require(1297) /* Button */.Icon, obj);
-  return callback(require(4886) /* PressableBase */.PressableOpacity, obj);
+  return callback(require(4887) /* PressableBase */.PressableOpacity, obj);
 }
 function EditCustomStatusWithPreview(navigation) {
   navigation = navigation.navigation;
@@ -115,15 +115,17 @@ function EditCustomStatusWithPreview(navigation) {
     onClose(analyticsLocations[19])(obj);
     const AccessibilityAnnouncer = navigation(tmp[20]).AccessibilityAnnouncer;
     const intl = navigation(tmp[11]).intl;
-    AccessibilityAnnouncer.announce(intl.string(navigation(analyticsLocations[11]).t.Og40Yn), "polite");
+    AccessibilityAnnouncer.announce(intl.string(navigation(analyticsLocations[11]).t.Og40Yn));
     onClose();
   }, items2);
   const items3 = [onClose];
   const callback1 = obj.useCallback(() => {
     onClose(analyticsLocations[21])();
-    const AccessibilityAnnouncer = navigation(analyticsLocations[20]).AccessibilityAnnouncer;
-    const intl = navigation(analyticsLocations[11]).intl;
-    AccessibilityAnnouncer.announce(intl.string(navigation(analyticsLocations[11]).t.YdUwBS), "polite");
+    const timerId = setTimeout(() => {
+      const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
+      const intl = callback(1236).intl;
+      AccessibilityAnnouncer.announce(intl.string(callback(1236).t.YdUwBS));
+    }, 300);
     onClose();
   }, items3);
   ref1 = obj.useRef(null);
@@ -374,7 +376,7 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
       const obj = { title: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.Iuzg8R);
-      return callback3(callback(8427).GenericHeaderTitle, obj);
+      return callback3(callback(8431).GenericHeaderTitle, obj);
     };
     obj[2] = analyticsLocations(outer1_2[30]).getHeaderCloseButton(_prompt(outer1_2[43]).pop);
     obj[4] = function render(arg0, navigation) {
@@ -393,5 +395,5 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
     obj = { height: 56 };
   }
   obj[3] = obj;
-  return tmp2(analyticsLocations(5822).Navigator, obj);
+  return tmp2(analyticsLocations(5823).Navigator, obj);
 };

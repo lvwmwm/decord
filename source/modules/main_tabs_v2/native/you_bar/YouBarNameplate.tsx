@@ -1,8 +1,8 @@
-// Module ID: 15573
-// Function ID: 15574
-// Dependencies: [19, 4336, 14405, 21, 4065, 712, 14490, 589, 4083, 4753, 9436, 2]
+// Module ID: 15582
+// Function ID: 15583
+// Dependencies: [19, 4334, 14414, 21, 4065, 712, 14499, 589, 4083, 4754, 9440, 2]
 
-// Module 15573
+// Module 15582
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { YOU_BAR_SPRING_CONFIG } from "CONNECTION_BANNER_HEIGHT";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ const memoResult = require("noop").memo(function YouBarNameplate(isQuestRendered
   ({ nameplate, barWidth } = isQuestRendered);
   let obj = isQuestRendered(4065);
   token = obj.useToken(token(712).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(14490)(token);
+  const tmp4 = token(14499)(token);
   dependencyMap = tmp4;
   let obj1 = isQuestRendered(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -36,7 +36,7 @@ const memoResult = require("noop").memo(function YouBarNameplate(isQuestRendered
     obj = { borderTopRightRadius: obj.withSpring(value, outer1_4) };
     return obj;
   };
-  obj = { withSpring: isQuestRendered(4753).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
+  obj = { withSpring: isQuestRendered(4754).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
   fn.__closure = obj;
   fn.__workletHash = 17156260157738;
   fn.__initData = closure_6;
@@ -57,7 +57,7 @@ const memoResult = require("noop").memo(function YouBarNameplate(isQuestRendered
     str = "always";
   }
   obj2[2] = str;
-  obj1[2] = jsx(token(9436), { nameplate, isFocused: true, animate: null });
+  obj1[2] = jsx(token(9440), { nameplate, isFocused: true, animate: null });
   return jsx(token(4083).View, { style: items1, pointerEvents: "none", children: null });
 });
 const result = require("CONNECTION_BANNER_HEIGHT").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarNameplate.tsx");

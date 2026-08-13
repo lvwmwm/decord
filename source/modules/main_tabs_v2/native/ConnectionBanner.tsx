@@ -1,10 +1,10 @@
-// Module ID: 15584
-// Function ID: 15585
+// Module ID: 15593
+// Function ID: 15594
 // Name: ConnectionBannerIcon
-// Dependencies: [32, 19, 17, 13014, 14405, 676, 21, 4344, 712, 1236, 4065, 15585, 15587, 4340, 689, 4083, 5349, 4765, 589, 698, 14404, 4753, 13015, 2]
+// Dependencies: [32, 19, 17, 13014, 14414, 676, 21, 4342, 712, 1236, 4065, 15594, 15596, 4338, 689, 4083, 5350, 4766, 589, 698, 14413, 4754, 13015, 2]
 // Exports: default
 
-// Module 15584 (ConnectionBannerIcon)
+// Module 15593 (ConnectionBannerIcon)
 import _slicedToArray from "_slicedToArray";
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "LinearGradient";
@@ -37,14 +37,14 @@ function ConnectionBannerIcon(state) {
     obj1[0] = tmp.leadingSlot;
     const obj2 = { size: "xs", color: null };
     obj2[1] = tmp5(712).colors.INTERACTIVE_ICON_DEFAULT;
-    obj1[1] = callback2(tmp2(15585).ConnectionUnknownIcon, obj2);
+    obj1[1] = callback2(tmp2(15594).ConnectionUnknownIcon, obj2);
     return callback2(closure_6, obj1);
   } else if (tmp7.BACK_ONLINE === state) {
     obj = { style: null, children: null };
     obj[0] = tmp.leadingSlot;
     const obj3 = { size: "xs", color: null };
     obj3[1] = tmp5(712).colors.ICON_FEEDBACK_POSITIVE;
-    obj[1] = callback2(tmp2(15587).ConnectionFineIcon, obj3);
+    obj[1] = callback2(tmp2(15596).ConnectionFineIcon, obj3);
     return callback2(closure_6, obj);
   }
 }
@@ -68,7 +68,7 @@ function ConnectionBannerContent(state) {
     stringResult = intl3.string(tmp4(1236).t.j8lYE2);
   }
   obj[3] = stringResult;
-  items[1] = callback2(require(4340) /* Text */.Text, obj);
+  items[1] = callback2(require(4338) /* Text */.Text, obj);
   obj[1] = items;
   return closure_13(closure_6, obj);
 }
@@ -92,9 +92,9 @@ function BackOnlineGlow(opacity) {
   obj = { style: items1, pointerEvents: "none", children: null };
   items1 = [tmp.glow, { opacity: opacity.progress }];
   obj = { style: tmp.glow, maskElement: null, children: null };
-  obj[1] = callback2(importDefault(4765), { style: tmp.glowMaskGradient, colors: closure_14, locations: closure_15, start: closure_16, end: closure_17 });
-  obj[2] = callback2(importDefault(4765), { style: tmp.glowMaskGradient, colors: memo, locations: closure_18, start: closure_19, end: closure_20 });
-  obj[2] = callback2(importDefault(5349), obj);
+  obj[1] = callback2(importDefault(4766), { style: tmp.glowMaskGradient, colors: closure_14, locations: closure_15, start: closure_16, end: closure_17 });
+  obj[2] = callback2(importDefault(4766), { style: tmp.glowMaskGradient, colors: memo, locations: closure_18, start: closure_19, end: closure_20 });
+  obj[2] = callback2(importDefault(5350), obj);
   return callback2(importDefault(4083).View, obj);
 }
 function ConnectionBannerInner() {

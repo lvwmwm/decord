@@ -1,9 +1,9 @@
-// Module ID: 11026
-// Function ID: 11027
+// Module ID: 10940
+// Function ID: 10941
 // Name: initialize
-// Dependencies: [5034, 11027, 676, 1222, 11028, 7490, 2]
+// Dependencies: [5035, 10941, 676, 1222, 10942, 7494, 2]
 
-// Module 11026 (initialize)
+// Module 10940 (initialize)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import getMatchData from "getMatchData";
 import { Routes } from "ME";
@@ -102,7 +102,7 @@ prototype["executeRouteRewrites"] = function executeRouteRewrites(location, REPL
       let tmp9Result = tmp9(location, REPLACE);
       let tmp14 = tmp9Result;
       if (null != tmp9Result) {
-        let tmp11Result = tmp11(7490);
+        let tmp11Result = tmp11(7494);
         obj = { message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route", data: null };
         obj = { replacePath: null, previousPath: null };
         obj[0] = tmp9Result.path;

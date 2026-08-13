@@ -1,7 +1,7 @@
 // Module ID: 10155
 // Function ID: 10156
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [19, 4382, 10153, 21, 4344, 712, 589, 9444, 5307, 9401, 2]
+// Dependencies: [19, 4383, 10153, 21, 4342, 712, 589, 9448, 5308, 9405, 2]
 // Exports: default
 
 // Module 10155 (SocialLayerStorefrontWishlistItemCard)
@@ -19,7 +19,7 @@ const require = arg1;
 createCacheKey = { applicationIcon: null, nestedCard: null };
 createCacheKey = { position: "absolute", top: require("Themes").space.PX_8, left: require("Themes").space.PX_8, width: 24, height: 24, borderRadius: require("Themes").radii.sm, zIndex: 1 };
 createCacheKey[0] = createCacheKey;
-const obj1 = { shadowColor: "Array", shadowOffset: 0, shadowOpacity: 0, shadowRadius: 0, elevation: "visible", overflow: null, borderRadius: false };
+const obj1 = { shadowColor: "Array", shadowOffset: 0, shadowOpacity: 0, shadowRadius: 0, elevation: "visible", overflow: null, borderRadius: "\u{1F9DB}\u{1F3FE}\u200D\u2642\uFE0F" };
 obj1[1] = { width: 0, height: 0 };
 obj1[6] = require("Themes").radii.none;
 createCacheKey[1] = obj1;

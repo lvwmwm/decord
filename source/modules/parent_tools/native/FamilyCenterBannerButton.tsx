@@ -1,10 +1,10 @@
-// Module ID: 14188
-// Function ID: 14189
+// Module ID: 14197
+// Function ID: 14198
 // Name: FamilyCenterTeenQRCodeButtonInner
-// Dependencies: [19, 17, 1922, 7038, 7039, 676, 4556, 21, 4344, 712, 7377, 4061, 1236, 11383, 647, 14189, 698, 14190, 4312, 14191, 2007, 4752, 4754, 12298, 2303, 14194, 4549, 1486, 11380, 1624, 4901, 13282, 2]
+// Dependencies: [19, 17, 1922, 7044, 7045, 676, 4557, 21, 4342, 712, 7381, 4061, 1236, 11374, 647, 14198, 698, 14199, 4310, 14200, 2007, 4753, 4755, 12300, 2303, 14203, 4550, 1486, 11371, 1624, 4902, 13283, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 14188 (FamilyCenterTeenQRCodeButtonInner)
+// Module 14197 (FamilyCenterTeenQRCodeButtonInner)
 import ConnectGuardianBottomSheet from "ConnectGuardianBottomSheet";
 import { View } from "shareGuardianConnectLink";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -134,7 +134,7 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
   function handleQrCodeScanSucess(url) {
     let hostname;
     let pathname;
-    let arr = callback(4549);
+    let arr = callback(4550);
     arr = arr.pop();
     let toURLSafeResult = callback(1486).toURLSafe(url);
     if (toURLSafeResult == null) {
@@ -148,8 +148,8 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
         tmp4 = null;
         if (tmpResult.isDiscordHostname(hostname)) {
           if (null !== pathname.match(closure_8)) {
-            const result = handleQrCodeScanSucess(11380).handleFamilyCenterQRCodeScan(pathname, "FamilyCenterQRCodeScan");
-            const obj4 = handleQrCodeScanSucess(11380);
+            const result = handleQrCodeScanSucess(11371).handleFamilyCenterQRCodeScan(pathname, "FamilyCenterQRCodeScan");
+            const obj4 = handleQrCodeScanSucess(11371);
           }
           tmp4 = tmp6;
         }
@@ -158,7 +158,7 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
     }
     return tmp4;
   }
-  let obj = handleQrCodeScanSucess(7377);
+  let obj = handleQrCodeScanSucess(7381);
   if (obj.useHasMaxConnections()) {
     return null;
   } else {

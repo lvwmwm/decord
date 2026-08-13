@@ -1,10 +1,10 @@
-// Module ID: 10878
-// Function ID: 10879
+// Module ID: 10792
+// Function ID: 10793
 // Name: VideoButton
-// Dependencies: [19, 17, 1390, 4357, 4358, 4363, 1218, 4392, 10716, 4362, 21, 4344, 10725, 10879, 589, 9200, 5175, 10880, 9194, 10733, 10726, 1236, 10882, 10883, 9789, 10899, 10900, 4537, 4523, 4407, 10659, 10901, 5930, 10902, 5767, 5787, 10729, 10903, 10927, 10953, 2]
+// Dependencies: [19, 17, 1390, 4358, 4359, 4364, 1218, 4393, 10630, 4363, 21, 4342, 10639, 10793, 589, 9204, 5176, 10794, 9198, 10647, 10640, 1236, 10796, 10797, 9793, 10813, 10814, 4538, 4524, 4408, 10573, 10815, 5932, 10816, 5768, 5788, 10643, 10817, 10841, 10867, 2]
 // Exports: default, useActionBarPrimaryButton, useActionBarSecondButtons
 
-// Module 10878 (VideoButton)
+// Module 10792 (VideoButton)
 import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert";
 import { View } from "items";
 import participantFromServer from "participantFromServer";
@@ -166,7 +166,7 @@ class DisconnectCallButton {
 class DisconnectStreamButton {
   constructor(arg0) {
     channel = global.channel;
-    f86400 = undefined;
+    f86208 = undefined;
     channel = undefined;
     tmp = channel;
     tmp2 = closure_3;
@@ -174,7 +174,7 @@ class DisconnectStreamButton {
     items = [, ];
     items[0] = View;
     items[1] = View;
-    f86400 = obj.useStateFromStores(items, () => {
+    f86208 = obj.useStateFromStores(items, () => {
       const selectedParticipant = outer1_7.getSelectedParticipant(channel.id);
       if (null != selectedParticipant) {
         if (selectedParticipant.type !== outer1_13.ACTIVITY) {
@@ -204,7 +204,7 @@ class DisconnectStreamButton {
       tmp5 = jsx;
       tmp6 = channel;
       obj = { source: null, accessibilityLabel: null, isSmallSize: null, onPress: null };
-      tmp7 = f86400;
+      tmp7 = f86208;
       obj[0] = require("registerAsset");
       intl = require("getSystemLocale").intl;
       obj[1] = intl.string(require("getSystemLocale").t.q3O3J8);
@@ -239,15 +239,15 @@ function LeaveActivityButton(isSmallSize) {
     obj[1] = applicationId;
     obj.leaveActivity(obj);
   };
-  obj[2] = importDefault(10901);
+  obj[2] = importDefault(10815);
   obj[3] = isSmallSize.isSmallSize;
-  return callback(importAll(10726).PrimaryActionButton, obj);
+  return callback(importAll(10640).PrimaryActionButton, obj);
 }
 function useActionBarSecondButton(channel) {
   channel = channel.channel;
-  let obj = require(9789) /* useIsConnectedToVoiceChannel */;
+  let obj = require(9793) /* useIsConnectedToVoiceChannel */;
   let isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
-  const tmp2 = importDefault(5930)();
+  const tmp2 = importDefault(5932)();
   let tmp4 = isConnectedToVoiceChannel;
   if (isConnectedToVoiceChannel) {
     tmp4 = !tmp2;
@@ -260,7 +260,7 @@ function useActionBarSecondButton(channel) {
     isActive = !tmp2;
   }
   if (isActive) {
-    isActive = importDefault(10883)(channel).isActive;
+    isActive = importDefault(10797)(channel).isActive;
   }
   obj[obj2.SCREEN_SHARE_END] = isActive;
   if (isConnectedToVoiceChannel) {
@@ -280,7 +280,7 @@ function useActionBarSecondButton(channel) {
 function useActionBarPrimaryButtons(channel) {
   channel = channel.channel;
   let closure_1;
-  let obj = channel(9789);
+  let obj = channel(9793);
   const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const items = [getParticipants, fetchFingerprint];
   closure_1 = channel(589).useStateFromStores(items, () => {
@@ -349,15 +349,15 @@ export default function ChannelCallActionBar(arg0) {
   } else {
     END_REMOTE = tmp6[tmp7.END_ACTIVITY] ? tmp7.END_ACTIVITY : tmp7.END_CALL;
   }
-  const tmp4 = importDefault(5930)();
-  let obj = require(10729) /* useIsFiveButtonLayout */;
+  const tmp4 = importDefault(5932)();
+  let obj = require(10643) /* useIsFiveButtonLayout */;
   const isFiveButtonLayout = obj.useIsFiveButtonLayout(channel.id);
-  obj = { value: importDefault(5767)(tmp2(5787).CHANNEL_CALL_ACTION_BAR).analyticsLocations, children: null };
+  obj = { value: importDefault(5768)(tmp2(5788).CHANNEL_CALL_ACTION_BAR).analyticsLocations, children: null };
   obj = { pointerEvents: "box-none", style: isFiveButtonLayout ? tmp.containerForFiveButtonLayout : tmp.container, children: null };
   if (shouldShowConnectingScreen) {
     const obj1 = { channel: null };
     obj1[0] = channel;
-    let tmp13Result = tmp11(tmp9(10903).CallConnectingActionBar, obj1);
+    let tmp13Result = tmp11(tmp9(10817).CallConnectingActionBar, obj1);
   } else {
     let tmp11Result = null;
     if (!tmp4) {
@@ -388,12 +388,12 @@ export default function ChannelCallActionBar(arg0) {
     const obj5 = { channel: null, isSmallSize: null };
     obj5[0] = channel;
     obj5[1] = isFiveButtonLayout;
-    items[2] = tmp11(tmp9(10927).ChannelCallMicButton, obj5);
+    items[2] = tmp11(tmp9(10841).ChannelCallMicButton, obj5);
     if (tmp7.END_REMOTE === END_REMOTE) {
       const obj6 = { channel: null, isSmallSize: null };
       obj6[0] = channel;
       obj6[1] = isFiveButtonLayout;
-      let tmp11Result2 = tmp11(tmp9(10953).DisconnectRemoteButton, obj6);
+      let tmp11Result2 = tmp11(tmp9(10867).DisconnectRemoteButton, obj6);
     } else if (tmp7.END_STREAM === END_REMOTE) {
       const obj7 = { channel: null, isSmallSize: null };
       obj7[0] = channel;
@@ -421,7 +421,7 @@ export default function ChannelCallActionBar(arg0) {
   }
   obj[2] = tmp13Result;
   obj[1] = closure_14(View, obj);
-  return closure_14(require(5767) /* context */.AnalyticsLocationProvider, obj);
+  return closure_14(require(5768) /* context */.AnalyticsLocationProvider, obj);
 };
 export { VideoButton };
 export { ScreenshareButton };
@@ -431,9 +431,9 @@ export { DisconnectStreamButton };
 export const ActionBarSecondButton = obj2;
 export const useActionBarSecondButtons = function useActionBarSecondButtons(channel) {
   channel = channel.channel;
-  let obj = require(9789) /* useIsConnectedToVoiceChannel */;
+  let obj = require(9793) /* useIsConnectedToVoiceChannel */;
   let isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
-  const tmp2 = importDefault(5930)();
+  const tmp2 = importDefault(5932)();
   let tmp4 = isConnectedToVoiceChannel;
   if (isConnectedToVoiceChannel) {
     tmp4 = !tmp2;
@@ -446,7 +446,7 @@ export const useActionBarSecondButtons = function useActionBarSecondButtons(chan
     isActive = !tmp2;
   }
   if (isActive) {
-    isActive = importDefault(10883)(channel).isActive;
+    isActive = importDefault(10797)(channel).isActive;
   }
   obj[obj2.SCREEN_SHARE_END] = isActive;
   if (isConnectedToVoiceChannel) {

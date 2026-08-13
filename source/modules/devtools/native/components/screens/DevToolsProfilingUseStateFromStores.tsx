@@ -1,10 +1,10 @@
-// Module ID: 15052
-// Function ID: 15053
+// Module ID: 15061
+// Function ID: 15062
 // Name: DevToolsProfilingUseStateFromStores
-// Dependencies: [32, 19, 21, 15053, 4340, 5806, 5807, 5413, 6034, 11127, 10000, 7765, 4303, 1236, 2]
+// Dependencies: [32, 19, 21, 15062, 4338, 5807, 5808, 5414, 6036, 11042, 9998, 7769, 4301, 1236, 2]
 // Exports: DevToolsProfilingUseStateFromStores
 
-// Module 15052 (DevToolsProfilingUseStateFromStores)
+// Module 15061 (DevToolsProfilingUseStateFromStores)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";

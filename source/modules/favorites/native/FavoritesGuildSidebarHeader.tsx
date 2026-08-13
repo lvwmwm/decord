@@ -1,10 +1,10 @@
-// Module ID: 15473
-// Function ID: 15474
+// Module ID: 15482
+// Function ID: 15483
 // Name: EmptyBody
-// Dependencies: [19, 17, 15399, 21, 4344, 712, 9755, 12195, 4312, 9759, 2007, 9758, 4340, 1236, 3047, 4849, 4869, 4840, 4752, 2]
+// Dependencies: [19, 17, 15408, 21, 4342, 712, 9759, 12197, 4310, 9763, 2007, 9762, 4338, 1236, 3047, 4850, 4870, 4841, 4753, 2]
 // Exports: default
 
-// Module 15473 (EmptyBody)
+// Module 15482 (EmptyBody)
 import set from "set";
 import { View } from "ChatIcon";
 import { useHasFavoritesGuildSuggestions as closure_5 } from "items";
@@ -27,7 +27,7 @@ function EmptyBody() {
   const obj = { variant: "text-sm/medium", color: "text-muted", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.format(importDefault(3047).Z3Hdr5, { onClick: callback });
-  return callback2(require(4340) /* Text */.Text, obj);
+  return callback2(require(4338) /* Text */.Text, obj);
 }
 function PlaceholderRows() {
   const tmp = createCacheKey();
@@ -35,7 +35,7 @@ function PlaceholderRows() {
   obj = { style: tmp.placeholderRow, children: null };
   obj = { size: "sm", color: null };
   obj[1] = importDefault(712).colors.ICON_MUTED;
-  const items = [callback2(require(4849) /* TextIcon */.TextIcon, obj), ];
+  const items = [callback2(require(4850) /* TextIcon */.TextIcon, obj), ];
   const items1 = [, ];
   ({ placeholderBar: arr2[0], placeholderBarShort: arr2[1] } = tmp);
   items[1] = callback2(View, { style: items1 });
@@ -44,7 +44,7 @@ function PlaceholderRows() {
   const obj1 = { style: tmp.placeholderRow, children: null };
   const obj2 = { size: "sm", color: null };
   obj2[1] = importDefault(712).colors.ICON_MUTED;
-  const items3 = [callback2(require(4869) /* VoiceNormalIcon */.VoiceNormalIcon, obj2), ];
+  const items3 = [callback2(require(4870) /* VoiceNormalIcon */.VoiceNormalIcon, obj2), ];
   const items4 = [, ];
   ({ placeholderBar: arr5[0], placeholderBarLong: arr5[1] } = tmp);
   items3[1] = callback2(View, { style: items4 });
@@ -53,7 +53,7 @@ function PlaceholderRows() {
   const obj3 = { style: tmp.placeholderRow, children: null };
   const obj4 = { size: "sm", color: null };
   obj4[1] = importDefault(712).colors.ICON_MUTED;
-  const items5 = [callback2(require(4840) /* ChatIcon */.ChatIcon, obj4), ];
+  const items5 = [callback2(require(4841) /* ChatIcon */.ChatIcon, obj4), ];
   const items6 = [, ];
   ({ placeholderBar: arr7[0], placeholderBarShort: arr7[1] } = tmp);
   items5[1] = callback2(View, { style: items6 });
@@ -91,14 +91,14 @@ export default function FavoritesGuildSidebarHeader() {
   obj = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(importDefault(3047)["1n0TGE"]);
-  const items = [callback2(require(4340) /* Text */.Heading, obj), callback2(EmptyBody, {})];
+  const items = [callback2(require(4338) /* Text */.Heading, obj), callback2(EmptyBody, {})];
   obj[2] = items;
-  const items1 = [callback3(require(4752) /* Stack */.Stack, obj), callback2(View, { style: tmp.divider }), ];
+  const items1 = [callback3(require(4753) /* Stack */.Stack, obj), callback2(View, { style: tmp.divider }), ];
   let tmp4Result = null;
   if (!tmp2) {
     tmp4Result = callback2(PlaceholderRows, {});
   }
   items1[2] = tmp4Result;
   obj[1] = items1;
-  return callback3(require(4752) /* Stack */.Stack, obj);
+  return callback3(require(4753) /* Stack */.Stack, obj);
 };

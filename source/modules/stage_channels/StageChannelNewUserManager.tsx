@@ -1,7 +1,7 @@
 // Module ID: 12728
 // Function ID: 12729
 // Name: _initialize
-// Dependencies: [1218, 1979, 5179, 5172, 4522, 709, 595, 12729, 2]
+// Dependencies: [1218, 1979, 5180, 5173, 4523, 709, 595, 12729, 2]
 
 // Module 12728 (_initialize)
 import fetchFingerprint from "fetchFingerprint";

@@ -1,10 +1,10 @@
-// Module ID: 9171
-// Function ID: 9172
+// Module ID: 9175
+// Function ID: 9176
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 9111, 21, 4344, 8236, 589, 4340, 9112, 4886, 9110, 1236, 2]
+// Dependencies: [19, 17, 9115, 21, 4342, 8240, 589, 4338, 9116, 4887, 9114, 1236, 2]
 // Exports: default
 
-// Module 9171 (InstantInviteAgeText)
+// Module 9175 (InstantInviteAgeText)
 import "noop";
 import { View } from "get ActivityIndicator";
 import updateWithLatestInvite from "updateWithLatestInvite";
@@ -29,7 +29,7 @@ export default function InstantInviteAgeText(style) {
     canEditInvite = true;
   }
   ({ onEdit: View, source: updateWithLatestInvite } = style);
-  let obj = require(8236) /* apexExperiment */;
+  let obj = require(8240) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("InstantInviteAgeText");
   let obj1 = require(589) /* initialize */;
   const items = [updateWithLatestInvite];
@@ -46,9 +46,9 @@ export default function InstantInviteAgeText(style) {
     }
     obj = { variant: null, children: null };
     obj[0] = str2;
-    const items2 = [tmp2(9112).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
+    const items2 = [tmp2(9116).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
     obj[1] = items2;
-    const items3 = [closure_4(tmp2(4340).Text, obj), ];
+    const items3 = [closure_4(tmp2(4338).Text, obj), ];
     if (canEditInvite) {
       obj1 = { onPress: null, accessibilityRole: "link", accessibilityLabel: null, hitSlop: null, children: null };
       obj1[0] = function onPress() {
@@ -67,13 +67,13 @@ export default function InstantInviteAgeText(style) {
       obj2[0] = str;
       const intl2 = tmp2(1236).intl;
       obj2[2] = intl2.string(tmp2(1236).t["VNe8P/"]);
-      obj1[4] = closure_5(tmp2(4340).Text, obj2);
-      canEditInvite = tmp9(tmp2(4886).PressableOpacity, obj1);
+      obj1[4] = closure_5(tmp2(4338).Text, obj2);
+      canEditInvite = tmp9(tmp2(4887).PressableOpacity, obj1);
     }
     items3[1] = canEditInvite;
     obj[1] = items3;
     tmp7Result = tmp7(View, obj);
-    const tmp2Result = tmp2(9112);
+    const tmp2Result = tmp2(9116);
     const tmp8 = View;
   }
   return tmp7Result;

@@ -1,12 +1,12 @@
-// Module ID: 8496
-// Function ID: 8497
-// Dependencies: [676, 698, 4549, 8497, 2007, 709, 2]
+// Module ID: 8500
+// Function ID: 8501
+// Dependencies: [676, 698, 4550, 8501, 2007, 709, 2]
 
-// Module 8496
+// Module 8500
 import { AnalyticEvents } from "ME";
 
 const EMAIL_VERIFICATION_MODAL_KEY = "EMAIL_VERIFICATION_MODAL_KEY";
-const result = require("module_4549").fileFinishedImporting("actions/native/EmailVerificationModalActionCreators.tsx");
+const result = require("module_4550").fileFinishedImporting("actions/native/EmailVerificationModalActionCreators.tsx");
 
 export default {
   open() {
@@ -18,7 +18,7 @@ export default {
       importDefault(698).track(AnalyticEvents.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED);
       const obj = importDefault(698);
     }
-    importDefault(4549).pushLazy(require(2007) /* asyncRequireImpl */(8497, dependencyMap.paths), { isChangeEmail: flag }, EMAIL_VERIFICATION_MODAL_KEY);
+    importDefault(4550).pushLazy(require(2007) /* asyncRequireImpl */(8501, dependencyMap.paths), { isChangeEmail: flag }, EMAIL_VERIFICATION_MODAL_KEY);
   },
   close() {
     importDefault(709).wait(() => {

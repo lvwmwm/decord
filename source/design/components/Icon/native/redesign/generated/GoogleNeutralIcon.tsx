@@ -1,10 +1,10 @@
-// Module ID: 7868
-// Function ID: 7869
+// Module ID: 7872
+// Function ID: 7873
 // Name: GoogleNeutralIcon
-// Dependencies: [19, 21, 712, 4064, 7869, 2]
+// Dependencies: [19, 21, 712, 4064, 7873, 2]
 // Exports: GoogleNeutralIcon
 
-// Module 7868 (GoogleNeutralIcon)
+// Module 7872 (GoogleNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const GoogleNeutralIcon = function GoogleNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7869) /* registerAsset */;
+  obj[0] = require(7873) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

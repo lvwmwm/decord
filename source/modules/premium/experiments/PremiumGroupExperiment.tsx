@@ -1,10 +1,10 @@
-// Module ID: 12240
-// Function ID: 12241
+// Module ID: 12242
+// Function ID: 12243
 // Name: usePremiumGroupExperiment
 // Dependencies: [1471, 2]
 // Exports: default
 
-// Module 12240 (usePremiumGroupExperiment)
+// Module 12242 (usePremiumGroupExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-12-katsudon", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

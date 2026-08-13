@@ -1,10 +1,10 @@
-// Module ID: 11968
-// Function ID: 11969
+// Module ID: 11970
+// Function ID: 11971
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 1910, 589, 8310, 1236, 2335, 11969, 11970, 1370, 2]
+// Dependencies: [19, 1910, 589, 8314, 1236, 2335, 11971, 11972, 1370, 2]
 // Exports: default
 
-// Module 11968 (usePowerupGroupConfig)
+// Module 11970 (usePowerupGroupConfig)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 

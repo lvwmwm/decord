@@ -1,9 +1,9 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15824
+// Function ID: 15825
 // Name: GuildChannelLabel
-// Dependencies: [19, 17, 8442, 21, 4344, 712, 4534, 15816, 4804, 15818, 15808, 2]
+// Dependencies: [19, 17, 8446, 21, 4342, 712, 4535, 15825, 4805, 15827, 15817, 2]
 
-// Module 15815 (GuildChannelLabel)
+// Module 15824 (GuildChannelLabel)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_LIST_SEARCH_LAYOUT as closure_5 } from "MessageEmbedTypes";
 import { jsx } from "jsxProd";
@@ -17,9 +17,9 @@ function GuildChannelLabel(channel) {
   channel = channel.channel;
   let obj = { style: callback().content, children: null };
   const tmp = callback();
-  const tmp2 = importDefault(4534)(channel);
+  const tmp2 = importDefault(4535)(channel);
   obj = { channel, layout: closure_5, name: tmp2 };
-  obj[1] = require(15816) /* ChannelContentComponent */.renderChannelContent(obj);
+  obj[1] = require(15825) /* ChannelContentComponent */.renderChannelContent(obj);
   return <closure_4 channel={channel} layout={closure_5} name={tmp2} />;
 }
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
@@ -37,11 +37,11 @@ const memoResult = require("noop").memo(function GuildChannelRow(channel) {
   ({ subtitle, trailing, extras, onPress, voiceStates } = channel);
   const merged = Object.assign(channel, Object.create(null));
   const tmp2 = callback();
-  let obj = require(15818) /* LaunchpadChannelIcon */;
+  let obj = require(15827) /* LaunchpadChannelIcon */;
   const channelAccessibilityProps = obj.getChannelAccessibilityProps({ channel, unread: false, mentionCount: 0, voiceStates });
   obj = { style: tmp2.simpleIcon, source: null };
-  obj[1] = require(4804) /* getChannelIcon */.getSimpleChannelIcon(channel);
-  const obj3 = require(4804) /* getChannelIcon */;
+  obj[1] = require(4805) /* getChannelIcon */.getSimpleChannelIcon(channel);
+  const obj3 = require(4805) /* getChannelIcon */;
   obj = {};
   const merged1 = Object.assign(channelAccessibilityProps);
   const merged2 = Object.assign(merged);
@@ -53,7 +53,7 @@ const memoResult = require("noop").memo(function GuildChannelRow(channel) {
   obj.onPress = onPress;
   obj.trailing = trailing;
   obj.extras = extras;
-  return jsx(require(15808) /* SearchListRow */.SearchListRow, {});
+  return jsx(require(15817) /* SearchListRow */.SearchListRow, {});
 });
 const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/list/rows/GuildChannelRow.tsx");
 

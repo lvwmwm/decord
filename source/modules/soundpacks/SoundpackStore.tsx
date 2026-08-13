@@ -1,9 +1,9 @@
-// Module ID: 9826
-// Function ID: 9827
+// Module ID: 9830
+// Function ID: 9831
 // Name: Soundpacks
-// Dependencies: [9827, 589, 709, 2]
+// Dependencies: [9831, 589, 709, 2]
 
-// Module 9826 (Soundpacks)
+// Module 9830 (Soundpacks)
 import { Soundpacks } from "Soundpacks";
 import { PersistedStore } from "initialize";
 

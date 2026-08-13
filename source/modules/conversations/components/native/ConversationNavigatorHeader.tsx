@@ -1,10 +1,10 @@
-// Module ID: 8626
-// Function ID: 8627
+// Module ID: 8630
+// Function ID: 8631
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 1391, 21, 4344, 712, 589, 4534, 8427, 2]
+// Dependencies: [19, 17, 1391, 21, 4342, 712, 589, 4535, 8431, 2]
 // Exports: default
 
-// Module 8626 (ConversationNavigatorHeader)
+// Module 8630 (ConversationNavigatorHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -33,10 +33,10 @@ export default function ConversationNavigatorHeader(channelId) {
   const items = [ensureGuildLoaded];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(channelId), items1);
-  const tmp3 = importDefault(4534)(stateFromStores, true);
+  const tmp3 = importDefault(4535)(stateFromStores, true);
   obj = { style: callback(flag).container, children: null };
   obj = { title: channelId.title, subtitle: null, variant: "heading-lg/semibold", subtitleColor: "text-muted" };
   obj[1] = tmp3;
-  obj[1] = jsx(channelId(8427).GenericHeaderTitle, { title: channelId.title, subtitle: null, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  obj[1] = jsx(channelId(8431).GenericHeaderTitle, { title: channelId.title, subtitle: null, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
   return <View title={arg0.title} subtitle={null} variant="heading-lg/semibold" subtitleColor="text-muted" />;
 };

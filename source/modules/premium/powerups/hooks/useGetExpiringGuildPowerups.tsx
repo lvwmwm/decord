@@ -1,10 +1,10 @@
-// Module ID: 11977
-// Function ID: 11978
+// Module ID: 11979
+// Function ID: 11980
 // Name: useGetExpiringGuildPowerups
-// Dependencies: [19, 4231, 589, 11914, 1370, 2]
+// Dependencies: [19, 4229, 589, 11916, 1370, 2]
 // Exports: default
 
-// Module 11977 (useGetExpiringGuildPowerups)
+// Module 11979 (useGetExpiringGuildPowerups)
 import noop from "noop";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
 

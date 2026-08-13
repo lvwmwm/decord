@@ -1,7 +1,7 @@
 // Module ID: 13029
 // Function ID: 13030
 // Name: initialize
-// Dependencies: [7160, 5868, 3998, 1922, 589, 709, 2]
+// Dependencies: [7166, 5869, 3998, 1922, 589, 709, 2]
 
 // Module 13029 (initialize)
 import recomputeAffinities from "recomputeAffinities";

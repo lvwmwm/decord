@@ -1,10 +1,10 @@
-// Module ID: 15870
-// Function ID: 15871
+// Module ID: 15879
+// Function ID: 15880
 // Name: useSearchSegmentedControlState
-// Dependencies: [19, 4083, 9001, 2]
+// Dependencies: [19, 4083, 9005, 2]
 // Exports: useSearchSegmentedControlState
 
-// Module 15870 (useSearchSegmentedControlState)
+// Module 15879 (useSearchSegmentedControlState)
 import noop from "noop";
 
 const require = arg1;

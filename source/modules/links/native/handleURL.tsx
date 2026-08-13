@@ -1,7 +1,7 @@
 // Module ID: 4053
 // Function ID: 4054
 // Name: sanitizeURLPart
-// Dependencies: [5, 17, 4054, 676, 3, 4055, 4057, 4058, 4059, 4060, 4061, 1236, 4310, 500, 4312, 1488, 4325, 13264, 2]
+// Dependencies: [5, 17, 4054, 676, 3, 4055, 4057, 4058, 4059, 4060, 4061, 1236, 4308, 500, 4310, 1488, 4323, 13265, 2]
 // Exports: default
 
 // Module 4053 (sanitizeURLPart)

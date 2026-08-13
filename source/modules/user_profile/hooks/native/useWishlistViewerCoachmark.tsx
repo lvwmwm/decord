@@ -1,7 +1,7 @@
 // Module ID: 12532
 // Function ID: 12533
 // Name: useWishlistViewerCoachmark
-// Dependencies: [32, 19, 1377, 6063, 2]
+// Dependencies: [32, 19, 1377, 6065, 2]
 // Exports: useWishlistViewerCoachmark
 
 // Module 12532 (useWishlistViewerCoachmark)

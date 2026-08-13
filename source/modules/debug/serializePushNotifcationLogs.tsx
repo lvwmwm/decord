@@ -1,10 +1,10 @@
-// Module ID: 9920
-// Function ID: 9921
+// Module ID: 9918
+// Function ID: 9919
 // Name: serializePushNotificationLogs
 // Dependencies: [676, 595, 2]
 // Exports: default
 
-// Module 9920 (serializePushNotificationLogs)
+// Module 9918 (serializePushNotificationLogs)
 import ME from "ME";
 
 let c3;

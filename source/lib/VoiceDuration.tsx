@@ -1,7 +1,7 @@
 // Module ID: 13154
 // Function ID: 13155
 // Name: start
-// Dependencies: [4419, 4455, 2]
+// Dependencies: [4420, 4456, 2]
 
 // Module 13154 (start)
 let closure_2 = [1, 100, 1000, 10000];
@@ -84,7 +84,7 @@ prototype["start"] = function start(flag, flag2) {
   const connected2 = self.connected;
   connected2.start();
   const connection = self.connection;
-  connection.on(self(4455).BaseConnectionEvent.Speaking, (arg0, arg1) => {
+  connection.on(self(4456).BaseConnectionEvent.Speaking, (arg0, arg1) => {
     if (self.userId === arg0) {
       obj.onSpeaking(0 !== arg1);
     } else {
@@ -94,11 +94,11 @@ prototype["start"] = function start(flag, flag2) {
   self.onMuted(flag);
   self.onDeafened(flag2);
   const connection2 = self.connection;
-  connection2.on(self(4455).BaseConnectionEvent.Mute, (flag) => {
+  connection2.on(self(4456).BaseConnectionEvent.Mute, (flag) => {
     self.onMuted(flag);
   });
   const connection3 = self.connection;
-  connection3.on(self(4455).BaseConnectionEvent.Deafen, (flag2) => {
+  connection3.on(self(4456).BaseConnectionEvent.Deafen, (flag2) => {
     self.onDeafened(flag2);
   });
 };

@@ -1,9 +1,9 @@
-// Module ID: 4679
-// Function ID: 4680
+// Module ID: 4680
+// Function ID: 4681
 // Name: map
-// Dependencies: [4680, 676, 4682, 1236, 12, 4890, 4898, 589, 709, 2]
+// Dependencies: [4681, 676, 4683, 1236, 12, 4891, 4899, 589, 709, 2]
 
-// Module 4679 (map)
+// Module 4680 (map)
 import { DraftType } from "handleChanged";
 import { MAX_UPLOAD_COUNT } from "ME";
 import { Store } from "initialize";
@@ -66,7 +66,7 @@ prototype["getUploads"] = function getUploads(id, ChannelMessage) {
   }
   return value;
 };
-prototype["getUploadCount"] = function getUploadCount(channelId, draftType) {
+prototype["getUploadCount"] = function getUploadCount(channelId, ChannelMessage) {
   map = map.get(channelId);
   if (map == null) {
     const _Map = Map;
@@ -74,7 +74,7 @@ prototype["getUploadCount"] = function getUploadCount(channelId, draftType) {
   }
   let value;
   if (map != null) {
-    value = map.get(draftType);
+    value = map.get(ChannelMessage);
   }
   if (value == null) {
     value = closure_6;
@@ -352,7 +352,7 @@ const uploadAttachmentStore = new UploadAttachmentStore(require("dispatcher"), {
     }
     const items = [...value];
     const found = items.filter((id) => id.id !== closure_0);
-    const cloudUpload = new require(4890) /* set */.CloudUpload(file, channelId, undefined, allowOptimization);
+    const cloudUpload = new require(4891) /* set */.CloudUpload(file, channelId, undefined, allowOptimization);
     found.push(cloudUpload);
     let value1 = obj.get(channelId);
     if (value1 == null) {

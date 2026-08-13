@@ -1,10 +1,10 @@
-// Module ID: 7753
-// Function ID: 7754
+// Module ID: 7757
+// Function ID: 7758
 // Name: DoorEnterIcon
-// Dependencies: [19, 21, 712, 4064, 7754, 2]
+// Dependencies: [19, 21, 712, 4064, 7758, 2]
 // Exports: DoorEnterIcon
 
-// Module 7753 (DoorEnterIcon)
+// Module 7757 (DoorEnterIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const DoorEnterIcon = function DoorEnterIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7754) /* registerAsset */;
+  obj[0] = require(7758) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

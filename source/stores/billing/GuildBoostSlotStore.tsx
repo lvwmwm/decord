@@ -1,9 +1,9 @@
-// Module ID: 4237
-// Function ID: 4238
+// Module ID: 4235
+// Function ID: 4236
 // Name: handleGuildBoostsUpdate
 // Dependencies: [4013, 589, 709, 2]
 
-// Module 4237 (handleGuildBoostsUpdate)
+// Module 4235 (handleGuildBoostsUpdate)
 import reset from "reset";
 import { Store } from "initialize";
 

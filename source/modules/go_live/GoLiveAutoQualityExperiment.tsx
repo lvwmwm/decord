@@ -1,10 +1,10 @@
-// Module ID: 10888
-// Function ID: 10889
+// Module ID: 10802
+// Function ID: 10803
 // Name: getGoLiveAutoQualityExperimentConfig
-// Dependencies: [1212, 4433, 4400, 1368, 589, 595, 4523, 2]
+// Dependencies: [1212, 4434, 4401, 1368, 589, 595, 4524, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 10888 (getGoLiveAutoQualityExperimentConfig)
+// Module 10802 (getGoLiveAutoQualityExperimentConfig)
 import initialize from "initialize";
 import ApplicationStreamPresets from "ApplicationStreamPresets";
 import { ApplicationStreamPresets } from "RESOLUTION_720";
@@ -50,10 +50,10 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
         const obj = { preset: null, resolution: null, frameRate: null, soundshareEnabled: null, noTrack: true };
         obj[0] = tmp9.PRESET_AUTO;
         ({ resolution: obj2[1], fps: obj2[2], soundshareEnabled: obj2[3] } = state);
-        tmp(4523).updateStreamSettings(obj);
+        tmp(4524).updateStreamSettings(obj);
         const Storage2 = tmp(595).Storage;
         const result = Storage2.set(GoLiveAutoQualityMigrationVersion, 1);
-        const tmpResult = tmp(4523);
+        const tmpResult = tmp(4524);
       }
     }
   }

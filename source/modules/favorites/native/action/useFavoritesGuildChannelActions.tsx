@@ -1,7 +1,7 @@
 // Module ID: 10242
 // Function ID: 10243
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [1218, 1990, 1394, 9755, 1913, 589, 9765, 2]
+// Dependencies: [1218, 1990, 1394, 9759, 1913, 589, 9769, 2]
 // Exports: default
 
 // Module 10242 (useFavoritesGuildChannelActions)
@@ -14,7 +14,7 @@ const result = require("initializeFromUserSettings").fileFinishedImporting("modu
 
 export default function useFavoritesGuildChannelActions(channelId, FavoritesGuildActionSheet) {
   const _require = channelId;
-  let obj = _require(9755);
+  let obj = _require(9759);
   const hasAccess = obj.useFavoritesAccess(FavoritesGuildActionSheet).hasAccess;
   let isFavoritableChannelResult = _require(1913).isFavoritableChannel(channelId);
   const obj2 = _require(1913);
@@ -22,8 +22,8 @@ export default function useFavoritesGuildChannelActions(channelId, FavoritesGuil
   const items = [initializeFromUserSettings];
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_4.isFavorite(channelId.id));
   const obj3 = _require(589);
-  const isFavoritesGuildSelected = _require(9755).useIsFavoritesGuildSelected();
-  const obj4 = _require(9755);
+  const isFavoritesGuildSelected = _require(9759).useIsFavoritesGuildSelected();
+  const obj4 = _require(9759);
   const items1 = [trackCommunicationDisabled, fetchFingerprint];
   if (isFavoritableChannelResult) {
     isFavoritableChannelResult = obj5.useStateFromStores(items1, () => {
@@ -45,7 +45,7 @@ export default function useFavoritesGuildChannelActions(channelId, FavoritesGuil
   if (tmp6) {
     tmp6 = !isFavoritesGuildSelected;
   }
-  const favoritesBetaTagDismissibleContent = tmp(9765).useFavoritesBetaTagDismissibleContent(tmp6);
+  const favoritesBetaTagDismissibleContent = tmp(9769).useFavoritesBetaTagDismissibleContent(tmp6);
   obj = { hasFavoritesAccess: hasAccess, canFavoriteChannel: isFavoritableChannelResult, isChannelInFavorites: stateFromStores, isFavoritesGuild: isFavoritesGuildSelected, channelId: channelId.id, shouldShowBetaTag: favoritesBetaTagDismissibleContent.shouldShowBetaTag, dismissBetaTag: favoritesBetaTagDismissibleContent.dismissBetaTag };
   return obj;
 };

@@ -1,10 +1,10 @@
-// Module ID: 9261
-// Function ID: 9262
+// Module ID: 9265
+// Function ID: 9266
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [5, 32, 19, 1218, 4392, 4415, 9257, 4405, 589, 38, 206, 9240, 2]
+// Dependencies: [5, 32, 19, 1218, 4393, 4416, 9261, 4406, 589, 38, 206, 9244, 2]
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 9261 (useSecureFramesPairwiseFingerprint)
+// Module 9265 (useSecureFramesPairwiseFingerprint)
 import createRTCConnection from "createRTCConnection";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

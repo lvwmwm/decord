@@ -1,8 +1,8 @@
-// Module ID: 12181
-// Function ID: 12182
-// Dependencies: [19, 17, 21, 4344, 1363, 1628, 12182, 12183, 4340, 1236, 2]
+// Module ID: 12183
+// Function ID: 12184
+// Dependencies: [19, 17, 21, 4342, 1363, 1628, 12184, 12185, 4338, 1236, 2]
 
-// Module 12181
+// Module 12183
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,9 +29,9 @@ const memoResult = require("noop").memo((topViewHeight) => {
   items = [tmp.container, { marginBottom: rect.bottom + rect.top + num }];
   let obj2 = require(1363) /* AccessibilityAnnouncer */;
   if (obj2.isThemeLight(obj.useThemeContext().theme)) {
-    let tmp4Result = tmp4(12182);
+    let tmp4Result = tmp4(12184);
   } else {
-    tmp4Result = tmp4(12183);
+    tmp4Result = tmp4(12185);
   }
   obj = { source: tmp4Result, style: tmp.image };
   const items1 = [closure_5(closure_4, obj), , ];
@@ -45,7 +45,7 @@ const memoResult = require("noop").memo((topViewHeight) => {
     formatToPlainStringResult = intl.string(tmp2(1236).t.PwTMG0);
   }
   obj1[4] = formatToPlainStringResult;
-  items1[1] = closure_5(require(4340) /* Text */.Text, obj1);
+  items1[1] = closure_5(require(4338) /* Text */.Text, obj1);
   const obj3 = { style: tmp.subtext, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = tmp2(1236).intl;
   const formatToPlainString = intl2.formatToPlainString;
@@ -60,7 +60,7 @@ const memoResult = require("noop").memo((topViewHeight) => {
     formatToPlainStringResult1 = formatToPlainString(t.YtsXFD, obj5);
   }
   obj3[3] = formatToPlainStringResult1;
-  items1[2] = closure_5(require(4340) /* Text */.Text, obj3);
+  items1[2] = closure_5(require(4338) /* Text */.Text, obj3);
   obj[1] = items1;
   return closure_6(closure_3, obj);
 });

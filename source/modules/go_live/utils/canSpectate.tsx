@@ -1,7 +1,7 @@
 // Module ID: 13134
 // Function ID: 13135
 // Name: canSpectate
-// Dependencies: [4405, 2]
+// Dependencies: [4406, 2]
 // Exports: default
 
 // Module 13134 (canSpectate)

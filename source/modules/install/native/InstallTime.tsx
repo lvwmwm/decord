@@ -1,7 +1,7 @@
 // Module ID: 13027
 // Function ID: 13028
 // Name: getFirstInstallTimeMillis
-// Dependencies: [1218, 595, 13028, 4419, 2]
+// Dependencies: [1218, 595, 13028, 4420, 2]
 // Exports: getFirstInstallTimeElapsed
 
 // Module 13027 (getFirstInstallTimeMillis)
@@ -59,8 +59,8 @@ export const getFirstInstallTimeElapsed = function getFirstInstallTimeElapsed(un
     const diff = Date.now() - tmp;
     let result = diff;
     if (null != unit) {
-      result = require(4419) /* sleep */.convertMinutesToGivenTimeUnit(diff / require(4419) /* sleep */.MS_PER_MINUTE, unit);
-      const obj = require(4419) /* sleep */;
+      result = require(4420) /* sleep */.convertMinutesToGivenTimeUnit(diff / require(4420) /* sleep */.MS_PER_MINUTE, unit);
+      const obj = require(4420) /* sleep */;
     }
     return result;
   }

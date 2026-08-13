@@ -1,29 +1,29 @@
-// Module ID: 11877
-// Function ID: 11878
-// Dependencies: [19, 17, 4336, 11428, 676, 21, 4344, 8474, 4170, 11878, 1236, 4538, 8464, 11879, 5365, 8457, 589, 11869, 5758, 11880, 2]
+// Module ID: 11879
+// Function ID: 11880
+// Dependencies: [19, 17, 4334, 11419, 676, 21, 4342, 8478, 4168, 11880, 1236, 4539, 8468, 11881, 5366, 8461, 589, 11871, 5759, 11882, 2]
 
-// Module 11877
+// Module 11879
 import { Image } from "ChatInputGuard";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { TextAreaCta } from "TextAreaCta";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
-import importAllResult from "module_11880";
+import importAllResult from "module_11882";
 
 const require = arg1;
 let closure_8 = createCacheKey.createStyles({ noticeIcon: { height: 36, width: 36, resizeMode: "contain" }, lottieAnimation: { height: 36, width: 36 } });
-const memoResult = require("module_11880").memo(function ChatInputGuardGuildMemberVerification(guildId) {
+const memoResult = require("module_11882").memo(function ChatInputGuardGuildMemberVerification(guildId) {
   guildId = guildId.guildId;
   const tmp = callback();
-  let obj = guildId(8474);
+  let obj = guildId(8478);
   const currentUserGuildJoinRequest = obj.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  if (guildId(4170).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
-    let tmp8 = importDefault(11878);
+  if (guildId(4168).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+    let tmp8 = importDefault(11880);
     const intl3 = tmp2(1236).intl;
     let stringResult = intl3.string(tmp2(1236).t.lk30cY);
     let fn = function _() {
@@ -33,8 +33,8 @@ const memoResult = require("module_11880").memo(function ChatInputGuardGuildMemb
       obj = { guildId, canWithdraw: false };
       const result = guildId(outer1_2[12]).openMemberVerificationRejectedAlert(obj);
     };
-  } else if (tmp2(4170).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-    tmp8 = importDefault(11879);
+  } else if (tmp2(4168).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+    tmp8 = importDefault(11881);
     const intl2 = tmp2(1236).intl;
     stringResult = intl2.string(tmp2(1236).t["5iLvSx"]);
     fn = function _() {
@@ -46,7 +46,7 @@ const memoResult = require("module_11880").memo(function ChatInputGuardGuildMemb
       obj[1] = intl.string(guildId(outer1_2[10]).t["13tjTU"]);
       const result = guildId(outer1_2[12]).openMemberVerificationCancelPendingAlert(obj);
     };
-    const tmp7 = jsx(tmp2(5365).XSmallIcon, {});
+    const tmp7 = jsx(tmp2(5366).XSmallIcon, {});
   } else {
     let intl = tmp2(1236).intl;
     stringResult = intl.string(tmp2(1236).t.rEBKvg);
@@ -69,16 +69,16 @@ const memoResult = require("module_11880").memo(function ChatInputGuardGuildMemb
   } else {
     obj = { style: null, source: null, autoPlay: null };
     obj[0] = tmp.lottieAnimation;
-    obj[1] = tmp2(11880);
+    obj[1] = tmp2(11882);
     obj[2] = !stateFromStores;
-    tmp13Result = tmp13(tmp14(5758), obj);
-    const tmp14Result = tmp14(5758);
+    tmp13Result = tmp13(tmp14(5759), obj);
+    const tmp14Result = tmp14(5759);
   }
   const obj1 = { type: "simple-action", icon: tmp13Result, message: stringResult, actionIcon: tmp7, actionLabel: null, actionOnPress: null };
   const intl4 = tmp2(1236).intl;
   obj1[4] = intl4.string(guildId(1236).t["r8/DT+"]);
   obj1[5] = fn;
-  return jsx(importDefault(11869), { type: "simple-action", icon: tmp13Result, message: stringResult, actionIcon: tmp7, actionLabel: null, actionOnPress: null });
+  return jsx(importDefault(11871), { type: "simple-action", icon: tmp13Result, message: stringResult, actionIcon: tmp7, actionLabel: null, actionOnPress: null });
 });
 let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardGuildMemberVerification.tsx");
 

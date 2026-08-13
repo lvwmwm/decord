@@ -1,7 +1,7 @@
 // Module ID: 12945
 // Function ID: 12946
 // Name: PremiumGuildTierPill
-// Dependencies: [19, 17, 1302, 676, 21, 4344, 712, 5198, 1363, 12946, 12947, 12948, 12949, 12950, 12951, 12952, 12953, 1297, 4236, 589, 5818, 2]
+// Dependencies: [19, 17, 1302, 676, 21, 4342, 712, 5199, 1363, 12946, 12947, 12948, 12949, 12950, 12951, 12952, 12953, 1297, 4234, 589, 5819, 2]
 // Exports: default
 
 // Module 12945 (PremiumGuildTierPill)
@@ -60,7 +60,7 @@ function PremiumGuildTierPill(arg0) {
   obj[1] = tmp7;
   const items = [closure_7(closure_4, obj), ];
   obj = { style: tmp.tierPillText, children: null };
-  obj[1] = require(4236) /* getGuildTierFromGuild */.getTierName(tier);
+  obj[1] = require(4234) /* getGuildTierFromGuild */.getTierName(tier);
   items[1] = closure_7(require(1297) /* Button */.LegacyText, obj);
   obj[1] = items;
   return closure_8(closure_3, obj);
@@ -90,8 +90,8 @@ export default function PremiumGuildPreview(guild) {
   items1 = [tmp.guild, guild.style];
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   obj = { guild, size: null, selected: false };
-  obj[1] = require(5818) /* GuildIconSizes */.GuildIconSizes.LARGE;
-  const items2 = [callback(importDefault(5818), obj), ];
+  obj[1] = require(5819) /* GuildIconSizes */.GuildIconSizes.LARGE;
+  const items2 = [callback(importDefault(5819), obj), ];
   const obj1 = { style: tmp.guildInfo, children: null };
   const items3 = [callback(require(1297) /* Button */.LegacyText, { style: tmp.guildName, children: guild.name }), callback(PremiumGuildTierPill, { tier: guild.premiumTier, theme: stateFromStores })];
   obj1[1] = items3;

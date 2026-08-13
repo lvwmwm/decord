@@ -1,10 +1,10 @@
-// Module ID: 7095
-// Function ID: 7096
+// Module ID: 7101
+// Function ID: 7102
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 // Exports: getIsFamilyCenterV3Enabled, useIsFamilyCenterV3Enabled
 
-// Module 7095 (apexExperiment)
+// Module 7101 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-01-family-center-v3", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

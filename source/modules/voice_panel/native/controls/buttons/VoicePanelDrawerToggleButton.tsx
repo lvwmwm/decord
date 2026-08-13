@@ -1,10 +1,10 @@
-// Module ID: 16347
-// Function ID: 16348
+// Module ID: 16358
+// Function ID: 16359
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 4344, 712, 16327, 16314, 16328, 5820, 9524, 12910, 2]
+// Dependencies: [19, 21, 4342, 712, 16338, 16325, 16339, 5821, 9528, 12910, 2]
 // Exports: default
 
-// Module 16347 (VoicePanelDrawerToggleButton)
+// Module 16358 (VoicePanelDrawerToggleButton)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,23 +29,23 @@ export default function VoicePanelDrawerToggleButton(arg0) {
   let wrapperSpecs;
   ({ props, openTab, wrapperSpecs } = arg0);
   const tmp = createCacheKey();
-  let obj = require(16327) /* useVoicePanelButtonStyles */;
+  let obj = require(16338) /* useVoicePanelButtonStyles */;
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  ({ isDrawerOpen, handlePress, accessibilityLabel } = importDefault(16314)(openTab));
+  ({ isDrawerOpen, handlePress, accessibilityLabel } = importDefault(16325)(openTab));
   obj = { onPress: handlePress, props, accessibilityLabel, children: null };
-  const tmp5 = importDefault(16314)(openTab);
+  const tmp5 = importDefault(16325)(openTab);
   const tmp6 = closure_4;
   const items = [tmp.circle, { backgroundColor: voicePanelButtonStyles.iconBg.backgroundColor }];
-  const items1 = [callback(importDefault(5820), { style: items }), ];
+  const items1 = [callback(importDefault(5821), { style: items }), ];
   obj = { style: tmp.iconContainer, children: null };
-  const tmp7 = importDefault(16328);
+  const tmp7 = importDefault(16339);
   if (isDrawerOpen) {
-    let ChevronSmallUpIcon = tmp2(9524).ChevronSmallDownIcon;
+    let ChevronSmallUpIcon = tmp2(9528).ChevronSmallDownIcon;
   } else {
     ChevronSmallUpIcon = tmp2(12910).ChevronSmallUpIcon;
   }
   obj[1] = callback(ChevronSmallUpIcon, { color: voicePanelButtonStyles.iconFill.color });
-  items1[1] = callback(importDefault(5820), obj);
+  items1[1] = callback(importDefault(5821), obj);
   obj[3] = items1;
   return tmp6(tmp7, obj);
 };

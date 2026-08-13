@@ -1,9 +1,9 @@
-// Module ID: 14718
-// Function ID: 14719
+// Module ID: 14727
+// Function ID: 14728
 // Name: radio
-// Dependencies: [1304, 8123, 589, 14717, 4034, 1236, 10493, 2]
+// Dependencies: [1304, 8127, 589, 14726, 4034, 1236, 10407, 2]
 
-// Module 14718 (radio)
+// Module 14727 (radio)
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import { VideoQualitySettings } from "CHANNEL_SIDEBAR_WIDTH";
 import createToggle from "createToggle";
@@ -20,7 +20,7 @@ createToggle = {
     return require(589) /* initialize */.useStateFromStores(items, () => videoUploadQuality.videoUploadQuality);
   },
   onValueChange: function onVideoUploadQualitySettingValueChange(videoUploadQuality) {
-    let obj = require(14717) /* UserSettingsText */;
+    let obj = require(14726) /* UserSettingsText */;
     obj = { videoUploadQuality, viewImageDescriptions: null, lowQualityImageMode: null, dataSavingMode: null };
     const ViewImageDescriptions = require(4034) /* explicitContentFromProto */.ViewImageDescriptions;
     obj[1] = ViewImageDescriptions.getSetting();

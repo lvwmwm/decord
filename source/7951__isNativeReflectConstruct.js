@@ -1,7 +1,7 @@
 // Module ID: 7951
 // Function ID: 7952
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7952, 7953, 7900]
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 7893, 7952, 7895, 7904]
 
 // Module 7951 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,9 +9,10 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 import "noop";
+import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
-const LinearGradient = importDefault;
+const SvgImage = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +32,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class LinearGradient {
+const re9 = /\s+/;
+class SvgImage {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, LinearGradient);
+    tmp = _isNativeReflectConstruct(this, SvgImage);
     tmp2 = __esModule;
-    obj = __esModule(LinearGradient);
+    obj = __esModule(SvgImage);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,31 +53,65 @@ class LinearGradient {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(LinearGradient, require("_isNativeReflectConstruct"));
+require("_inherits")(SvgImage, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "render",
     value: function render() {
+      let height;
+      let href;
+      let preserveAspectRatio;
+      let tmp2;
+      let tmp3;
+      let width;
+      let x;
+      let y;
       const self = this;
       const props = this.props;
-      let obj = { x1: props.x1, y1: props.y1, x2: props.x2, y2: props.y2 };
+      ({ preserveAspectRatio, href } = props);
+      ({ x, y, width, height } = props);
+      if (undefined === href) {
+        href = props.xlinkHref;
+      }
+      if (preserveAspectRatio) {
+        let parts = preserveAspectRatio.trim().split(closure_9);
+        const str = preserveAspectRatio.trim();
+      } else {
+        parts = [];
+      }
+      let obj = { x, y, width, height, onLoad: props.onLoad, meetOrSlice: null, align: null, src: null };
+      [tmp2, tmp3] = parts;
+      obj[5] = self(7893).meetOrSliceTypes[tmp3] || 0;
+      const tmp6 = self(7893).meetOrSliceTypes[tmp3] || 0;
+      obj[6] = self(7893).alignEnum[tmp2] || "xMidYMid";
+      let assetSource = null;
+      if (href) {
+        let tmp10 = href;
+        if (typeof href === "string") {
+          obj = { uri: null };
+          obj[0] = href;
+          tmp10 = obj;
+        }
+        assetSource = Image.resolveAssetSource(tmp10);
+      }
+      obj[7] = assetSource;
       obj = {
         ref(arg0) {
           return self.refMethod(arg0);
         }
       };
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(self(7953)(props, this));
-      return jsx(self(7952), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
+      const tmp7 = self(7893).alignEnum[tmp2] || "xMidYMid";
+      const tmp11 = importDefault(7952);
+      const merged = Object.assign(self(7895).withoutXY(this, props));
+      const merged1 = Object.assign(obj);
+      return <tmp11 ref={function ref(arg0) {
+        return self.refMethod(arg0);
+      }} />;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(LinearGradient, items);
-importDefaultResultResult.displayName = "LinearGradient";
-importDefaultResultResult.defaultProps = { x1: "0%", y1: "0%", x2: "100%", y2: "0%" };
+const importDefaultResultResult = importDefaultResult(SvgImage, items);
+importDefaultResultResult.displayName = "Image";
+importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0, preserveAspectRatio: "xMidYMid meet" };
 
 export default importDefaultResultResult;

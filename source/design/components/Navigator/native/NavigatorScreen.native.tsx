@@ -1,9 +1,9 @@
-// Module ID: 5857
-// Function ID: 5858
+// Module ID: 5858
+// Function ID: 5859
 // Name: NavigatorScreen
-// Dependencies: [19, 21, 5858, 5859, 2]
+// Dependencies: [19, 21, 5859, 5860, 2]
 
-// Module 5857 (NavigatorScreen)
+// Module 5858 (NavigatorScreen)
 import { jsxs } from "jsxProd";
 import importAllResult from "noop";
 
@@ -16,7 +16,7 @@ const memoResult = require("noop").memo((arg0) => {
   ({ screen, route } = arg0);
   const customNavbar = screen.customNavbar;
   ({ navigation, viewStyle } = arg0);
-  const designConfig = require(5858) /* designConfig */.designConfig;
+  const designConfig = require(5859) /* designConfig */.designConfig;
   const trackNavigatorScreenImpression = designConfig.useTrackNavigatorScreenImpression(screen, route);
   let customNavbarResult = null;
   if (null != customNavbar) {
@@ -25,7 +25,7 @@ const memoResult = require("noop").memo((arg0) => {
   const obj = { postpone: screen.postponeRender, ignoreKeyboard: screen.ignoreKeyboard, viewStyle, children: null };
   const items = [customNavbarResult, screen.render(route.params, navigation)];
   obj[3] = items;
-  return jsxs(require(5859) /* PostponeRender */.PostponeRender, { postpone: screen.postponeRender, ignoreKeyboard: screen.ignoreKeyboard, viewStyle, children: null });
+  return jsxs(require(5860) /* PostponeRender */.PostponeRender, { postpone: screen.postponeRender, ignoreKeyboard: screen.ignoreKeyboard, viewStyle, children: null });
 });
 const result = require("designConfig").fileFinishedImporting("design/components/Navigator/native/NavigatorScreen.native.tsx");
 

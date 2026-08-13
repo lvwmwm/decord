@@ -1,10 +1,10 @@
-// Module ID: 11800
-// Function ID: 11801
+// Module ID: 11798
+// Function ID: 11799
 // Name: matchGroupDMRecipients
-// Dependencies: [32, 19, 17, 1391, 3998, 1922, 9665, 21, 4344, 712, 5268, 4189, 4534, 12, 9667, 1236, 4340, 9669, 9671, 10299, 11801, 2]
+// Dependencies: [32, 19, 17, 1391, 3998, 1922, 9669, 21, 4342, 712, 5269, 4187, 4535, 12, 9671, 1236, 4338, 9673, 9675, 11136, 11799, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 11800 (matchGroupDMRecipients)
+// Module 11798 (matchGroupDMRecipients)
 import _slicedToArray from "_slicedToArray";
 import NoResults from "NoResults";
 import { View } from "UserFlashListActions";
@@ -31,13 +31,13 @@ function matchGroupDMRecipients(trimmed1, recipients) {
       let tmp19 = importDefault;
       let tmp20 = dependencyMap;
       let toLocaleLowerCaseResult = username.toLocaleLowerCase();
-      if (importDefault(5268)(trimmed1, toLocaleLowerCaseResult)) {
+      if (importDefault(5269)(trimmed1, toLocaleLowerCaseResult)) {
         let tmp16 = obj;
         obj.return();
         let num3 = 1;
         return 1;
       } else {
-        let tmp19Result = tmp19(4189);
+        let tmp19Result = tmp19(4187);
         let tmp5 = user;
         let globalName = tmp19Result.getGlobalName(tmp4);
         let toLocaleLowerCaseResult1;
@@ -46,7 +46,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult1) {
           let tmp8 = toLocaleLowerCaseResult1;
-          if (tmp19(5268)(trimmed1, tmp7)) {
+          if (tmp19(5269)(trimmed1, tmp7)) {
             let tmp15 = obj;
             obj.return();
             let num2 = 1;
@@ -62,7 +62,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult2) {
           let tmp13 = toLocaleLowerCaseResult2;
-          if (tmp19(5268)(trimmed1, tmp12)) {
+          if (tmp19(5269)(trimmed1, tmp12)) {
             let tmp14 = obj;
             obj.return();
             let num = 1;
@@ -79,12 +79,12 @@ function matchGroupDM(id, trimmed1) {
   if ("" === trimmed1) {
     return 0;
   } else {
-    const channelName = require(4534) /* computeChannelName */.computeChannelName(id, mergeGuildAvatar, markAllUserIdListsStale);
+    const channelName = require(4535) /* computeChannelName */.computeChannelName(id, mergeGuildAvatar, markAllUserIdListsStale);
     const toLocaleLowerCaseResult = channelName.toLocaleLowerCase();
     let num = 3;
     if (!toLocaleLowerCaseResult.startsWith(trimmed1)) {
       let num2 = 2;
-      if (!importDefault(5268)(trimmed1, toLocaleLowerCaseResult)) {
+      if (!importDefault(5269)(trimmed1, toLocaleLowerCaseResult)) {
         num2 = matchGroupDMRecipients(trimmed1, id);
       }
       num = num2;

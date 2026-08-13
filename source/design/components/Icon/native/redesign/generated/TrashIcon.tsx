@@ -1,10 +1,10 @@
-// Module ID: 4303
-// Function ID: 4304
+// Module ID: 4301
+// Function ID: 4302
 // Name: TrashIcon
-// Dependencies: [19, 21, 712, 4064, 4304, 2]
+// Dependencies: [19, 21, 712, 4064, 4302, 2]
 // Exports: TrashIcon
 
-// Module 4303 (TrashIcon)
+// Module 4301 (TrashIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TrashIcon = function TrashIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4304) /* registerAsset */;
+  obj[0] = require(4302) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

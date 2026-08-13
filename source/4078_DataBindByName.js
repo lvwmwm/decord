@@ -1,7 +1,7 @@
 // Module ID: 4078
 // Function ID: 4079
 // Name: DataBindByName
-// Dependencies: [42, 41, 4079, 4103, 4108, 4109, 4110, 4111, 4112, 4113, 4114, 4104, 4115, 4116, 4117, 4120, 4121, 4122, 4123, 4124, 4125, 4126, 4127, 4128, 4129]
+// Dependencies: [42, 41, 4079, 4101, 4106, 4107, 4108, 4109, 4110, 4111, 4112, 4102, 4113, 4114, 4115, 4118, 4119, 4120, 4121, 4122, 4123, 4124, 4125, 4126, 4127]
 
 // Module 4078 (DataBindByName)
 import _classCallCheck from "_classCallCheck";
@@ -17,14 +17,14 @@ class DataBindByName {
 export const DataBindByName = require("_createClass")(DataBindByName);
 export const NitroRiveView = require("NitroRiveView").NitroRiveView;
 export const RiveView = require("defaultOnError").RiveView;
-export const Fit = require("module_4108").Fit;
-export const Alignment = require("module_4109").Alignment;
+export const Fit = require("module_4106").Fit;
+export const Alignment = require("module_4107").Alignment;
 export const RiveFileFactory = require("_fromURL").RiveFileFactory;
 export const RiveImages = require("RiveImages").RiveImages;
 export const RiveFonts = require("resolveWeight").RiveFonts;
 export const RiveColor = require("RiveColor").RiveColor;
-export const RiveEventType = require("module_4114").RiveEventType;
-export const RiveErrorType = require("module_4104").RiveErrorType;
+export const RiveEventType = require("module_4112").RiveEventType;
+export const RiveErrorType = require("module_4102").RiveErrorType;
 export const ArtboardByIndex = require("ArtboardByIndex").ArtboardByIndex;
 export const ArtboardByName = require("ArtboardByIndex").ArtboardByName;
 export const useRive = require("useRive").useRive;
@@ -38,4 +38,4 @@ export const useRiveList = require("_temp2").useRiveList;
 export const useViewModelInstance = require("useViewModelInstance").useViewModelInstance;
 export const useRiveFile = require("useRiveFile").useRiveFile;
 export const RiveRuntime = require("_initialize").RiveRuntime;
-export const DataBindMode = require("module_4129").DataBindMode;
+export const DataBindMode = require("module_4127").DataBindMode;

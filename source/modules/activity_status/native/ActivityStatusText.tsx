@@ -1,10 +1,10 @@
-// Module ID: 9691
-// Function ID: 9692
+// Module ID: 9695
+// Function ID: 9696
 // Name: ActivityStatusText
-// Dependencies: [19, 21, 4344, 4340, 2]
+// Dependencies: [19, 21, 4342, 4338, 2]
 // Exports: default
 
-// Module 9691 (ActivityStatusText)
+// Module 9695 (ActivityStatusText)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -26,5 +26,5 @@ export default function ActivityStatusText(variant) {
   items = [callback().text, style];
   const merged1 = Object.assign(merged);
   obj.children = children;
-  return jsx(require(4340) /* Text */.Text, { variant: str, color: "text-muted", style: items, lineClamp: 1 });
+  return jsx(require(4338) /* Text */.Text, { variant: str, color: "text-muted", style: items, lineClamp: 1 });
 };

@@ -1,7 +1,7 @@
 // Module ID: 13052
 // Function ID: 13053
 // Name: canFetchNitroProgramReward
-// Dependencies: [1922, 1924, 3784, 13053, 13056, 7057, 13057, 4007, 2]
+// Dependencies: [1922, 1924, 3784, 13053, 13056, 7063, 13057, 4007, 2]
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isEligibleForProgramReward, isProgramRewardStale, useIsEligibleForProgramReward
 
 // Module 13052 (canFetchNitroProgramReward)
@@ -24,7 +24,7 @@ function canFetchNitroProgramReward(canUseMonthlyOrbs) {
   } else {
     flag = false;
     if (tmp(13053).RewardProgram.XBOX === NITRO) {
-      tmpResult = tmp(7057);
+      tmpResult = tmp(7063);
       flag = tmpResult.getIsCrepeEnabled(str);
     }
   }
@@ -50,7 +50,7 @@ function canFetchXboxProgramReward(canUseMonthlyOrbs) {
   } else {
     flag = false;
     if (tmp(13053).RewardProgram.XBOX === XBOX) {
-      tmpResult = tmp(7057);
+      tmpResult = tmp(7063);
       flag = tmpResult.getIsCrepeEnabled(str);
     }
   }
@@ -90,7 +90,7 @@ export const isEligibleForProgramReward = function isEligibleForProgramReward(ar
     let tmpResult = tmp(13056);
     return tmpResult.getPremiumRewardsOrbsExperiment(str).isInTreatment;
   } else if (tmp(13053).RewardProgram.XBOX === arg0) {
-    tmpResult = tmp(7057);
+    tmpResult = tmp(7063);
     return tmpResult.getIsCrepeEnabled(str);
   } else {
     return false;
@@ -103,7 +103,7 @@ export const useIsEligibleForProgramReward = function useIsEligibleForProgramRew
   }
   const obj = require(13056) /* PremiumRewardsOrbsTreatment */;
   const tmp = require;
-  const isCrepeEnabled = require(7057) /* apexExperiment */.useIsCrepeEnabled(str);
+  const isCrepeEnabled = require(7063) /* apexExperiment */.useIsCrepeEnabled(str);
   if (require(13053) /* RewardProgram */.RewardProgram.NITRO === arg0) {
     return obj.usePremiumRewardsOrbsExperiment(str).isInTreatment;
   } else if (tmp(13053).RewardProgram.XBOX === arg0) {
@@ -111,7 +111,7 @@ export const useIsEligibleForProgramReward = function useIsEligibleForProgramRew
   } else {
     return false;
   }
-  const obj2 = require(7057) /* apexExperiment */;
+  const obj2 = require(7063) /* apexExperiment */;
 };
 export { canFetchNitroProgramReward };
 export { canFetchXboxProgramReward };

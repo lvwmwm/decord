@@ -5,12 +5,10 @@
 // Module 13686
 
 export default (arg0) => {
+  const tmp = require(13687)(arg0);
   let num = 0;
-  {
-    num = 0;
-    if (0 !== tmp) {
-      num = require(13687)(tmp);
-    }
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
   }
   return num;
 };

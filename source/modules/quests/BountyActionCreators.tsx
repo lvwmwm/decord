@@ -1,10 +1,10 @@
-// Module ID: 11043
-// Function ID: 11044
+// Module ID: 10957
+// Function ID: 10958
 // Name: fetchBountiesAndDispatch
-// Dependencies: [5, 4435, 7199, 676, 709, 7228, 11044, 7216, 4244, 6965, 7220, 530, 7198, 2]
+// Dependencies: [5, 4436, 7205, 676, 709, 7233, 10958, 7221, 4242, 6971, 7225, 530, 7204, 2]
 // Exports: claimBountyReward, fetchBountyPreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 11043 (fetchBountiesAndDispatch)
+// Module 10957 (fetchBountiesAndDispatch)
 import AdCreativeType from "AdCreativeType";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import set from "set";
@@ -132,9 +132,9 @@ function _fetchQuestHomeBounties() {
               const obj1 = { value: null, done: false };
               obj1[0] = outer1_7(tmp5, outer1_3(function*() {
                 let uuid = tmp2;
-                let obj5 = outer1_0(6965);
+                let obj5 = outer1_0(6971);
                 uuid = yield obj5.getSession();
-                const uuid2 = outer1_0(7220).getOrRefreshAdSession();
+                const uuid2 = outer1_0(7225).getOrRefreshAdSession();
                 const HTTP = outer1_0(530).HTTP;
                 const obj3 = { url: null, query: null, rejectWithError: false, context: null };
                 obj3[0] = outer1_6.QUESTS_GET_DECISIONS;
@@ -439,10 +439,10 @@ export const fetchBountyPreview = function fetchBountyPreview(arr, c3) {
   return applyArgumentsResult;
 };
 export const setBountyVideoProgress = function setBountyVideoProgress(bountyId, arg1) {
-  let obj = require(7220) /* getOrRefreshAdSession */;
+  let obj = require(7225) /* getOrRefreshAdSession */;
   if (null != obj.getCurrentAdSession()) {
-    const orRefreshAdSession = require(7220) /* getOrRefreshAdSession */.getOrRefreshAdSession(true);
-    const tmpResult = require(7220) /* getOrRefreshAdSession */;
+    const orRefreshAdSession = require(7225) /* getOrRefreshAdSession */.getOrRefreshAdSession(true);
+    const tmpResult = require(7225) /* getOrRefreshAdSession */;
     obj = { type: "BOUNTIES_VIDEO_PROGRESS_UPDATE", bountyId: null, timestampSec: null, maxTimestampSec: null, duration: null };
     obj[1] = bountyId;
     ({ timestampSec: obj4[2], maxTimestampSec: obj4[3], duration: obj4[4] } = arg1);

@@ -1,10 +1,10 @@
-// Module ID: 6029
-// Function ID: 6030
+// Module ID: 6031
+// Function ID: 6032
 // Name: getCurrentVoiceChannel
-// Dependencies: [1218, 1391, 4360, 2]
+// Dependencies: [1218, 1391, 4361, 2]
 // Exports: default
 
-// Module 6029 (getCurrentVoiceChannel)
+// Module 6031 (getCurrentVoiceChannel)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateVoiceState from "updateVoiceState";

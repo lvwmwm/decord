@@ -1,10 +1,10 @@
-// Module ID: 8644
-// Function ID: 8645
+// Module ID: 8648
+// Function ID: 8649
 // Name: updateContextMenuState
-// Dependencies: [19, 644, 705, 4083, 4313, 2]
+// Dependencies: [19, 644, 705, 4083, 4311, 2]
 // Exports: hideContextMenu, resetContextMenuState, showContextMenu, updateContextMenuState, useActiveContextMenu, useContextMenuState
 
-// Module 8644 (updateContextMenuState)
+// Module 8648 (updateContextMenuState)
 import noop from "noop";
 import keys from "keys";
 
@@ -38,8 +38,8 @@ function updateContextMenuState(absoluteX, absoluteY, closure_17) {
     if (activeIndex.get() !== result1) {
       const result2 = activeIndex.set(result1);
       const obj = require(4083);
-      require(4083).runOnJS(require(4313) /* HapticFeedbackTypes */.triggerHapticFeedback)(require(4313) /* HapticFeedbackTypes */.HapticFeedbackTypes.IMPACT_LIGHT);
-      const runOnJSResult = require(4083).runOnJS(require(4313) /* HapticFeedbackTypes */.triggerHapticFeedback);
+      require(4083).runOnJS(require(4311) /* HapticFeedbackTypes */.triggerHapticFeedback)(require(4311) /* HapticFeedbackTypes */.HapticFeedbackTypes.IMPACT_LIGHT);
+      const runOnJSResult = require(4083).runOnJS(require(4311) /* HapticFeedbackTypes */.triggerHapticFeedback);
     }
   }
   const result3 = activeIndex.set(-1);

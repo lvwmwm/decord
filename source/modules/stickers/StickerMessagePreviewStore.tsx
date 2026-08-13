@@ -1,9 +1,9 @@
-// Module ID: 5024
-// Function ID: 5025
+// Module ID: 5025
+// Function ID: 5026
 // Name: getStickerPreview
-// Dependencies: [4680, 589, 709, 2]
+// Dependencies: [4681, 589, 709, 2]
 
-// Module 5024 (getStickerPreview)
+// Module 5025 (getStickerPreview)
 import { DraftType } from "handleChanged";
 import { Store } from "initialize";
 
@@ -11,8 +11,8 @@ let closure_1 = {};
 let closure_2 = {};
 class StickerMessagePreviewStore extends Store {
 }
-StickerMessagePreviewStore.prototype["getStickerPreview"] = function getStickerPreview(channelId, draftType) {
-  return draftType === DraftType.FirstThreadMessage ? closure_2 : closure_1[channelId];
+StickerMessagePreviewStore.prototype["getStickerPreview"] = function getStickerPreview(channelId, ChannelMessage) {
+  return ChannelMessage === DraftType.FirstThreadMessage ? closure_2 : closure_1[channelId];
 };
 StickerMessagePreviewStore.displayName = "StickerMessagePreviewStore";
 const stickerMessagePreviewStore = new StickerMessagePreviewStore(require("dispatcher"), {

@@ -1,7 +1,7 @@
 // Module ID: 12801
 // Function ID: 12802
 // Name: SquareIconButton
-// Dependencies: [19, 21, 4344, 712, 5198, 4886, 1297, 2]
+// Dependencies: [19, 21, 4342, 712, 5199, 4887, 1297, 2]
 
 // Module 12801 (SquareIconButton)
 import noop from "noop";

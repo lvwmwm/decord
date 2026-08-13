@@ -1,7 +1,7 @@
 // Module ID: 7941
 // Function ID: 7942
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 7892, 7915]
+// Dependencies: [41, 42, 93, 95, 98, 7896, 7919]
 
 // Module 7941 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,7 +9,7 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
-const FeTile = arg1;
+const FeMorphology = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeTile {
+class FeMorphology {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeTile);
+    tmp = _isNativeReflectConstruct(this, FeMorphology);
     tmp2 = __esModule;
-    obj = __esModule(FeTile);
+    obj = __esModule(FeMorphology);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,17 +49,17 @@ class FeTile {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeTile, require("_isNativeReflectConstruct"));
+require("_inherits")(FeMorphology, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
-    const result = FeTile(7892).warnUnimplementedFilter();
+    const result = FeMorphology(7896).warnUnimplementedFilter();
     return null;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeTile, items);
-importDefaultResultResult.displayName = "FeTile";
+const importDefaultResultResult = importDefaultResult(FeMorphology, items);
+importDefaultResultResult.displayName = "FeMorphology";
 obj = {};
 const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = obj;

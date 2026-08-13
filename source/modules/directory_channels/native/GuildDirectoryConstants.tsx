@@ -1,9 +1,9 @@
-// Module ID: 11742
-// Function ID: 11743
+// Module ID: 11740
+// Function ID: 11741
 // Name: GuildDirectoryCreate
 // Dependencies: [2]
 
-// Module 11742 (GuildDirectoryCreate)
+// Module 11740 (GuildDirectoryCreate)
 const result = require("set").fileFinishedImporting("modules/directory_channels/native/GuildDirectoryConstants.tsx");
 
 export const GuildDirectoryCreate = { CREATE_OR_ADD: "CREATE_OR_ADD", DESCRIPTION: "DESCRIPTION", TEMPLATES: "TEMPLATES", CREATE: "CREATE" };

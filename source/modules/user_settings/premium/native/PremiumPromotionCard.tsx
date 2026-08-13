@@ -1,7 +1,7 @@
 // Module ID: 12809
 // Function ID: 12810
 // Name: PremiumPromotionCard
-// Dependencies: [19, 17, 4336, 676, 1924, 21, 4344, 712, 589, 5767, 6927, 5307, 4340, 1236, 1993, 4754, 7745, 2]
+// Dependencies: [19, 17, 4334, 676, 1924, 21, 4342, 712, 589, 5768, 6933, 5308, 4338, 1236, 1993, 4755, 7749, 2]
 // Exports: default
 
 // Module 12809 (PremiumPromotionCard)

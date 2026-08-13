@@ -1,10 +1,10 @@
-// Module ID: 6329
-// Function ID: 6330
+// Module ID: 6331
+// Function ID: 6332
 // Name: GameCartridgeSpotIllustration
-// Dependencies: [21, 5307, 6330, 2]
+// Dependencies: [21, 5308, 6332, 2]
 // Exports: GameCartridgeSpotIllustration
 
-// Module 6329 (GameCartridgeSpotIllustration)
+// Module 6331 (GameCartridgeSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GameCartridgeSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GameCartridgeSpotIllustration = function GameCartridgeSpotIllustrat
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6330);
+  obj[0] = importDefault(6332);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GameCartridgeSpotIllustration = function GameCartridgeSpotIllustrat
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
 };

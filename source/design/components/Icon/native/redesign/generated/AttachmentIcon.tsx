@@ -1,10 +1,10 @@
-// Module ID: 9837
-// Function ID: 9838
+// Module ID: 9840
+// Function ID: 9841
 // Name: AttachmentIcon
-// Dependencies: [19, 21, 712, 4064, 9838, 2]
+// Dependencies: [19, 21, 712, 4064, 9841, 2]
 // Exports: AttachmentIcon
 
-// Module 9837 (AttachmentIcon)
+// Module 9840 (AttachmentIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const AttachmentIcon = function AttachmentIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9838) /* registerAsset */;
+  obj[0] = require(9841) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

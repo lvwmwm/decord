@@ -1,10 +1,10 @@
-// Module ID: 9487
-// Function ID: 9488
+// Module ID: 9491
+// Function ID: 9492
 // Name: useCollectiblesExternalGatewayFacet
-// Dependencies: [19, 1922, 589, 9465, 2]
+// Dependencies: [19, 1922, 589, 9469, 2]
 // Exports: default
 
-// Module 9487 (useCollectiblesExternalGatewayFacet)
+// Module 9491 (useCollectiblesExternalGatewayFacet)
 import { useMemo } from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

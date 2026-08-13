@@ -1,7 +1,7 @@
 // Module ID: 12383
 // Function ID: 12384
 // Name: useUserProfileActivity
-// Dependencies: [19, 9416, 4430, 9685, 589, 12384, 8281, 8949, 8945, 2]
+// Dependencies: [19, 9420, 4431, 9689, 589, 12384, 8285, 8953, 8949, 2]
 // Exports: default
 
 // Module 12383 (useUserProfileActivity)

@@ -1,10 +1,10 @@
-// Module ID: 11533
-// Function ID: 11534
+// Module ID: 11529
+// Function ID: 11530
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [19, 11534, 4083, 11535, 9395, 503, 2]
+// Dependencies: [19, 11530, 4083, 11531, 9399, 503, 2]
 // Exports: useViewableAppLauncherHomeItems
 
-// Module 11533 (useViewableAppLauncherHomeItems)
+// Module 11529 (useViewableAppLauncherHomeItems)
 import noop from "noop";
 import handleDismissWithDismissed from "handleDismissWithDismissed";
 

@@ -1,7 +1,7 @@
 // Module ID: 12618
 // Function ID: 12619
 // Name: useIsForumChannelSearchActive
-// Dependencies: [7267, 12605, 589, 2]
+// Dependencies: [7272, 12605, 589, 2]
 // Exports: useIsForumChannelSearchActive
 
 // Module 12618 (useIsForumChannelSearchActive)

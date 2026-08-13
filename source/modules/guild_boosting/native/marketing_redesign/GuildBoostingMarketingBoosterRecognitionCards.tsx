@@ -1,7 +1,7 @@
 // Module ID: 12932
 // Function ID: 12933
 // Name: Card
-// Dependencies: [19, 17, 21, 4344, 712, 4340, 1236, 12933, 7736, 12934, 12860, 12935, 9051, 12936, 8812, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4338, 1236, 12933, 7740, 12934, 12860, 12935, 9055, 12936, 8816, 2]
 // Exports: default
 
 // Module 12932 (Card)
@@ -23,7 +23,7 @@ function Card(arg0) {
   obj = { size: "lg", color: importDefault(712).unsafe_rawColors.GUILD_BOOSTING_PINK };
   ({ IconComponent, children } = arg0);
   obj[1] = callback(IconComponent, obj);
-  const items = [callback(View, obj), callback(require(4340) /* Text */.Text, { style: tmp.description, variant: "text-sm/medium", children })];
+  const items = [callback(View, obj), callback(require(4338) /* Text */.Text, { style: tmp.description, variant: "text-sm/medium", children })];
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -43,9 +43,9 @@ export default function GuildBoostingMarketingBoosterRecognitionCards() {
   obj = { variant: "heading-xl/extrabold", style: tmp.title, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.IzKs3o);
-  const items = [callback(require(4340) /* Text */.Heading, obj), ];
+  const items = [callback(require(4338) /* Text */.Heading, obj), ];
   obj = { style: tmp.recognitionCardsContainer, children: null };
-  const obj1 = { icon: importDefault(12933), IconComponent: require(7736) /* BoostGemIcon */.BoostGemIcon, children: null };
+  const obj1 = { icon: importDefault(12933), IconComponent: require(7740) /* BoostGemIcon */.BoostGemIcon, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.TZigSO);
   const items1 = [callback(Card, obj1), , , ];
@@ -53,11 +53,11 @@ export default function GuildBoostingMarketingBoosterRecognitionCards() {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.hjQuV2);
   items1[1] = callback(Card, obj2);
-  const obj3 = { icon: importDefault(12935), IconComponent: require(9051) /* ShieldUserIcon */.ShieldUserIcon, children: null };
+  const obj3 = { icon: importDefault(12935), IconComponent: require(9055) /* ShieldUserIcon */.ShieldUserIcon, children: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj3[2] = intl4.string(require(1236) /* getSystemLocale */.t["2RUcaM"]);
   items1[2] = callback(Card, obj3);
-  const obj4 = { icon: importDefault(12936), IconComponent: require(8812) /* HeartIcon */.HeartIcon, children: null };
+  const obj4 = { icon: importDefault(12936), IconComponent: require(8816) /* HeartIcon */.HeartIcon, children: null };
   const intl5 = require(1236) /* getSystemLocale */.intl;
   obj4[2] = intl5.string(require(1236) /* getSystemLocale */.t.bJoZKV);
   items1[3] = callback(Card, obj4);

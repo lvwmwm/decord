@@ -1,10 +1,10 @@
-// Module ID: 5411
-// Function ID: 5412
+// Module ID: 5412
+// Function ID: 5413
 // Name: useCustomKeyboardHeight
 // Dependencies: [1496, 1497, 2]
 // Exports: default, getCustomKeyboardHeight
 
-// Module 5411 (useCustomKeyboardHeight)
+// Module 5412 (useCustomKeyboardHeight)
 const result = require("set").fileFinishedImporting("modules/keyboard/native/useCustomKeyboardHeight.tsx");
 
 export default function useCustomKeyboardHeight() {

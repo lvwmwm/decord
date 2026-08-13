@@ -1,9 +1,9 @@
-// Module ID: 8608
-// Function ID: 8609
+// Module ID: 8612
+// Function ID: 8613
 // Name: map
 // Dependencies: [589, 709, 2]
 
-// Module 8608 (map)
+// Module 8612 (map)
 import { Store } from "initialize";
 
 let obj = { surveys: null };

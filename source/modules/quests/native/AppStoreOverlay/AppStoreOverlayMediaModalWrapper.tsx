@@ -1,10 +1,10 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 10557
+// Function ID: 10558
 // Name: AppStoreOverlayMediaModalWrapper
-// Dependencies: [19, 21, 10642, 8905, 2]
+// Dependencies: [19, 21, 10556, 8909, 2]
 // Exports: default
 
-// Module 10643 (AppStoreOverlayMediaModalWrapper)
+// Module 10557 (AppStoreOverlayMediaModalWrapper)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -16,5 +16,5 @@ export default function AppStoreOverlayMediaModalWrapper(arg0) {
     const result = callback(table[2]).clearMediaModalFooterAction();
   }, []);
   const merged = Object.assign(arg0);
-  return jsx(importDefault(8905), {});
+  return jsx(importDefault(8909), {});
 };

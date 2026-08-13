@@ -1,7 +1,7 @@
 // Module ID: 12404
 // Function ID: 12405
 // Name: UserCheckIcon
-// Dependencies: [19, 21, 712, 4064, 8216, 2]
+// Dependencies: [19, 21, 712, 4064, 8220, 2]
 // Exports: UserCheckIcon
 
 // Module 12404 (UserCheckIcon)
@@ -18,7 +18,7 @@ export const UserCheckIcon = function UserCheckIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8216) /* registerAsset */;
+  obj[0] = require(8220) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,9 +1,9 @@
-// Module ID: 11449
-// Function ID: 11450
+// Module ID: 11445
+// Function ID: 11446
 // Name: prototype
-// Dependencies: [4244, 2]
+// Dependencies: [4242, 2]
 
-// Module 11449 (prototype)
+// Module 11445 (prototype)
 import "prototype";
 
 const prototype = function UploaderError(body) {

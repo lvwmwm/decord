@@ -1,7 +1,7 @@
 // Module ID: 12361
 // Function ID: 12362
 // Name: isOnMetaHorizon
-// Dependencies: [4369, 676, 2]
+// Dependencies: [4370, 676, 2]
 // Exports: default
 
 // Module 12361 (isOnMetaHorizon)

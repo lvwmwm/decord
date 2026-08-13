@@ -1,9 +1,9 @@
-// Module ID: 13823
-// Function ID: 13824
+// Module ID: 13824
+// Function ID: 13825
 // Name: items
-// Dependencies: [32, 3998, 1922, 4247, 676, 13810, 8947, 506, 10795, 10800, 2]
+// Dependencies: [32, 3998, 1922, 4245, 676, 13811, 8951, 506, 10709, 10714, 2]
 
-// Module 13823 (items)
+// Module 13824 (items)
 import _slicedToArray from "_slicedToArray";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -36,7 +36,7 @@ obj[1] = function handler(socket) {
   if (obj.has(deserializeResult, tmpResult.deserialize(constants.DISABLE_RELATIONSHIPS_ACCESS))) {
     obj = { errorCode: null };
     obj[0] = constants3.INVALID_PERMISSIONS;
-    const tmp34 = new importDefault(10795)(obj, "Missing Permissions");
+    const tmp34 = new importDefault(10709)(obj, "Missing Permissions");
     throw tmp34;
   } else {
     const items = [];
@@ -56,11 +56,11 @@ obj[1] = function handler(socket) {
           let tmp22 = require;
           let tmp23 = dependencyMap;
           let tmp24 = dependencyMap;
-          let obj5 = require(10800) /* recurseReplaceContentTree */;
+          let obj5 = require(10714) /* recurseReplaceContentTree */;
           let tmp25 = tmp15;
           let tmp26 = user;
           let result = obj5.transformBaseRelationship(tmp16, tmp21);
-          let obj6 = require(10800) /* recurseReplaceContentTree */;
+          let obj6 = require(10714) /* recurseReplaceContentTree */;
           let arr = items.push(obj6.transformApplicationRelationship(result, socket.socket.application.id));
         }
       }

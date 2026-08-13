@@ -1,10 +1,10 @@
-// Module ID: 15956
-// Function ID: 15957
+// Module ID: 15966
+// Function ID: 15967
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7160, 3998, 1922, 676, 21, 1297, 4344, 712, 589, 12406, 9127, 12, 1370, 4886, 1236, 4340, 5817, 2]
+// Dependencies: [32, 19, 17, 7166, 3998, 1922, 676, 21, 1297, 4342, 712, 589, 12406, 9131, 12, 1370, 4887, 1236, 4338, 5818, 2]
 // Exports: default
 
-// Module 15956 (UserProfileYourFriendsCard)
+// Module 15966 (UserProfileYourFriendsCard)
 import _slicedToArray from "_slicedToArray";
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import { View } from "getSystemLocale";
@@ -56,7 +56,7 @@ export default function UserProfileYourFriendsCard(arg0) {
   const obj2 = _require(589);
   gameRelationshipsByType = _require(12406).useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const userAffinitiesV2 = _undefined(9127).fetchUserAffinitiesV2();
+    const userAffinitiesV2 = _undefined(9131).fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
   const effect1 = stateFromStoresArray1.useEffect(() => {
@@ -118,7 +118,7 @@ export default function UserProfileYourFriendsCard(arg0) {
   obj = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", style: tmp.label, children: null };
   const intl2 = _require(1236).intl;
   obj[4] = intl2.string(_require(1236).t.TdEu5X);
-  const items5 = [callback(_require(4340).Text, obj), memo, callback(_require(5817).ChevronSmallRightIcon, { size: "sm" })];
+  const items5 = [callback(_require(4338).Text, obj), memo, callback(_require(5818).ChevronSmallRightIcon, { size: "sm" })];
   obj[5] = items5;
-  return callback2(_require(4886).PressableOpacity, obj);
+  return callback2(_require(4887).PressableOpacity, obj);
 };

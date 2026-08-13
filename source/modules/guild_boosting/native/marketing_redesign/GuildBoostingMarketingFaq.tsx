@@ -1,7 +1,7 @@
 // Module ID: 12941
 // Function ID: 12942
 // Name: items1
-// Dependencies: [32, 19, 17, 676, 21, 4344, 6904, 712, 1236, 1993, 4340, 4886, 1297, 12942, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 6910, 712, 1236, 1993, 4338, 4887, 1297, 12942, 2]
 // Exports: default
 
 // Module 12941 (items1)
@@ -152,7 +152,7 @@ export default function GuildBoostingMarketingFaq() {
   obj = { style: tmp.heading, variant: "heading-xxl/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.HPJ6Nj);
-  let items = [callback2(require(4340) /* Text */.Heading, obj), ];
+  let items = [callback2(require(4338) /* Text */.Heading, obj), ];
   const tmp2 = callback(React.useState(null), 2);
   items[1] = callback2(View, {
     style: tmp.list,

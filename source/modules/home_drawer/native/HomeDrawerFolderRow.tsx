@@ -1,10 +1,10 @@
-// Module ID: 15500
-// Function ID: 15501
+// Module ID: 15509
+// Function ID: 15510
 // Name: Wrapper
-// Dependencies: [19, 17, 7137, 1910, 5195, 4539, 4360, 676, 21, 4344, 589, 9777, 4340, 1236, 15501, 4205, 4202, 2]
+// Dependencies: [19, 17, 7143, 1910, 5196, 4540, 4361, 676, 21, 4342, 589, 9781, 4338, 1236, 15510, 4203, 4200, 2]
 // Exports: default
 
-// Module 15500 (Wrapper)
+// Module 15509 (Wrapper)
 import noop from "noop";
 import { View } from "set";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
@@ -237,7 +237,7 @@ export default function HomeDrawerFolderExpandedChildren(folderId) {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(4205).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(4203).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

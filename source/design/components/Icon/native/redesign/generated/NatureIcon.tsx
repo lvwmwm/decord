@@ -1,10 +1,10 @@
-// Module ID: 8803
-// Function ID: 8804
+// Module ID: 8807
+// Function ID: 8808
 // Name: NatureIcon
-// Dependencies: [19, 21, 712, 4064, 8804, 2]
+// Dependencies: [19, 21, 712, 4064, 8808, 2]
 // Exports: NatureIcon
 
-// Module 8803 (NatureIcon)
+// Module 8807 (NatureIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const NatureIcon = function NatureIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8804) /* registerAsset */;
+  obj[0] = require(8808) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

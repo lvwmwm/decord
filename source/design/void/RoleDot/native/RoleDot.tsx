@@ -1,10 +1,10 @@
-// Module ID: 13441
-// Function ID: 13442
+// Module ID: 13442
+// Function ID: 13443
 // Name: RoleDot
-// Dependencies: [19, 17, 21, 4344, 712, 500, 4760, 4782, 4765, 1370, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 500, 4761, 4783, 4766, 1370, 2]
 // Exports: RoleDot
 
-// Module 13441 (RoleDot)
+// Module 13442 (RoleDot)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export const RoleDot = function RoleDot(background) {
   }
   ({ containerStyles, guildId } = background);
   const tmp = createCacheKey();
-  let obj = require(4760) /* getFontScale */;
+  let obj = require(4761) /* getFontScale */;
   const fontScale = obj.useFontScale();
   if (null == color) {
     if (null == colors) {
@@ -55,7 +55,7 @@ export const RoleDot = function RoleDot(background) {
   const result = num * fontScale;
   obj = { paddingRight: 2 * fontScale, paddingTop: null, height: null };
   const tmp5 = importDefault;
-  const tmp6 = importDefault(4782)(guildId, null);
+  const tmp6 = importDefault(4783)(guildId, null);
   if (tmp2Result.isAndroid()) {
     let result1 = 3 * fontScale;
   } else {
@@ -94,8 +94,8 @@ export const RoleDot = function RoleDot(background) {
         obj5[2] = { x: 1, y: 0 };
         const items6 = [tmp.dot, obj1];
         obj5[3] = items6;
-        let tmp12Result = tmp12(tmp5(4765), obj5);
-        const tmp5Result = tmp5(4765);
+        let tmp12Result = tmp12(tmp5(4766), obj5);
+        const tmp5Result = tmp5(4766);
       }
       items4[1] = tmp12Result;
       obj3[1] = items4;

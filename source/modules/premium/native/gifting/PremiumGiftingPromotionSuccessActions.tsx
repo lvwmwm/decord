@@ -1,7 +1,7 @@
 // Module ID: 10170
 // Function ID: 10171
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [19, 17, 7048, 1947, 1922, 21, 4344, 712, 589, 9656, 1499, 9623, 10160, 10081, 10171, 9436, 1946, 1297, 10165, 4754, 1236, 2]
+// Dependencies: [19, 17, 7054, 1947, 1922, 21, 4342, 712, 589, 9660, 1499, 9627, 10160, 10079, 10171, 9440, 1946, 1297, 10165, 4755, 1236, 2]
 // Exports: default
 
 // Module 10170 (PremiumGiftingPromotionSuccessActions)

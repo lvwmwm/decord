@@ -1,9 +1,9 @@
-// Module ID: 4743
-// Function ID: 4744
+// Module ID: 4744
+// Function ID: 4745
 // Name: animatedComponent
-// Dependencies: [4083, 4744, 2]
+// Dependencies: [4083, 4745, 2]
 
-// Module 4743 (animatedComponent)
+// Module 4744 (animatedComponent)
 import animatedComponent from "isBlurDisabled";
 import importDefaultResult from "module_4083";
 

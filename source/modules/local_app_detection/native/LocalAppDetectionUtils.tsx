@@ -1,7 +1,7 @@
 // Module ID: 13038
 // Function ID: 13039
 // Name: isGameCommunityAddServerEntryEnabled
-// Dependencies: [5, 5868, 676, 13039, 13037, 501, 4517, 698, 709, 2]
+// Dependencies: [5, 5869, 676, 13039, 13037, 501, 4518, 698, 709, 2]
 // Exports: detectLocalApps
 
 // Module 13038 (isGameCommunityAddServerEntryEnabled)

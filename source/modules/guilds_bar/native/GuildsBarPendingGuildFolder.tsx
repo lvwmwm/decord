@@ -1,8 +1,8 @@
-// Module ID: 15502
-// Function ID: 15503
-// Dependencies: [19, 4167, 676, 21, 15490, 11249, 589, 15482, 4083, 4313, 5271, 1236, 15489, 12347, 2]
+// Module ID: 15511
+// Function ID: 15512
+// Dependencies: [19, 4165, 676, 21, 15499, 11240, 589, 15491, 4083, 4311, 5272, 1236, 15498, 11666, 2]
 
-// Module 15502
+// Module 15511
 import importAllResult from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
@@ -18,8 +18,8 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   id = id.id;
   let importDefault;
   ({ expanded, childNodes } = id);
-  let obj = id(15490);
-  importDefault = importDefault(11249)();
+  let obj = id(15499);
+  importDefault = importDefault(11240)();
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   const items = [handleConnectionOpen];
   const items1 = [id];
@@ -59,7 +59,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
       const result1 = outer1_1(outer1_2[10]).toggleGuildFolderExpand(closure_0);
     }
   }), items2);
-  obj = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "HermesInternal", overState: "a", preventClipping: "literal", config: "scale(", externalChildren: false, children: "literal" };
+  obj = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "accessibilityRole", config: 2017525762, externalChildren: 1358954892, children: 1359043710 };
   const obj3 = id(4083);
   obj[0] = "" + id;
   obj[1] = accessibilityActions;
@@ -69,17 +69,17 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   const intl = id(1236).intl;
   obj[7] = intl.string(id(1236).t["scsU+l"]);
   obj[8] = sharedValue;
-  obj[12] = memo1;
+  obj[11] = memo1;
   let tmp8Result = null;
   if (expanded) {
     obj = { folderId: null, totalItems: null };
     obj[0] = id;
     obj[1] = childNodes.length;
-    tmp8Result = tmp8(tmp(15489).GuildsBarGuildFolderBG, obj);
+    tmp8Result = tmp8(tmp(15498).GuildsBarGuildFolderBG, obj);
   }
-  obj[13] = tmp8Result;
-  obj[14] = jsx(id(12347).HourglassIcon, {});
-  return jsx(importDefault(15490), { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "HermesInternal", overState: "a", preventClipping: "literal", config: "scale(", externalChildren: false, children: "literal" });
+  obj[12] = tmp8Result;
+  obj[13] = jsx(id(11666).HourglassIcon, {});
+  return jsx(importDefault(15499), { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "accessibilityRole", config: 2017525762, externalChildren: 1358954892, children: 1359043710 });
 });
 let result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

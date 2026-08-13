@@ -1,9 +1,9 @@
-// Module ID: 10513
-// Function ID: 10514
+// Module ID: 10427
+// Function ID: 10428
 // Name: trackRoundtrip
-// Dependencies: [4435, 7200, 676, 6963, 698, 7177, 6966, 7215, 2]
+// Dependencies: [4436, 7206, 676, 6969, 698, 7183, 6972, 2]
 
-// Module 10513 (trackRoundtrip)
+// Module 10427 (trackRoundtrip)
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import initializeState from "initializeState";
 import { AnalyticEvents } from "ME";
@@ -16,10 +16,10 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     if (null != apiResponseTimestamp.apiResponseTimestamp) {
       diff = apiResponseTimestamp.apiResponseTimestamp - apiResponseTimestamp.initialSendTimestamp;
     }
-    let obj = require(6963) /* receiveNetworkInfoformation */;
+    let obj = require(6969) /* receiveNetworkInfoformation */;
     const signalStrength = obj.getSignalStrength();
     obj = {};
-    const merged = Object.assign(importDefault(7177)());
+    const merged = Object.assign(importDefault(7183)());
     ({ endpoint: obj3.endpoint, wasSuccessful: obj3.was_successful } = apiResponseTimestamp);
     obj.api_latency_ms = diff;
     obj.mobile_network_type = type.getType();
@@ -56,9 +56,9 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     obj.transition_case = transition_case;
     const obj2 = importDefault(698);
     const tmp2 = require;
-    obj.is_foregrounded = require(6966) /* isForegrounded */.isForegrounded();
+    obj.is_foregrounded = require(6972) /* isForegrounded */.isForegrounded();
     obj2.track(AnalyticEvents.QUEST_DECISION_ROUNDTRIP, obj);
-    const tmp2Result = require(6966) /* isForegrounded */;
+    const tmp2Result = require(6972) /* isForegrounded */;
   }
 }
 class QuestDecisionRoundtripTracker {
@@ -77,18 +77,14 @@ prototype["recordQuestRequestAttempt"] = function recordQuestRequestAttempt(endp
   if (closure_0 === undefined) {
     tmp = null;
   }
-  let obj = self(7215);
   let tmp2 = null;
-  if (obj.getConfig({ location: "recordQuestRequestAttempt" }).enableNewRequestBehavior) {
-    tmp2 = null;
-    if (null != tmp) {
-      const questAdDecisionByPlacement = obj.questAdDecisionByPlacement;
-      let value = questAdDecisionByPlacement.get(tmp);
-      if (value == null) {
-        value = null;
-      }
-      tmp2 = value;
+  if (null != tmp) {
+    const questAdDecisionByPlacement = obj.questAdDecisionByPlacement;
+    let value = questAdDecisionByPlacement.get(tmp);
+    if (value == null) {
+      value = null;
     }
+    tmp2 = value;
   }
   obj = { initialSendTimestamp: Date.now(), endpoint, apiResponseTimestamp: null, wasSuccessful: false, callerSource: closure_1, adRequestId: null, previousAdDecision: tmp2, placement: tmp };
   let pendingRequests = this.pendingRequests;
@@ -116,73 +112,71 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
   if (currentFetchedAt === undefined) {
     currentFetchedAt = null;
   }
-  const pendingRequests = this.pendingRequests;
-  const value = pendingRequests.get(arg0);
+  let self = this;
+  let pendingRequests = this.pendingRequests;
+  let timestamp = pendingRequests.get(arg0);
   let tmp5 = null;
-  if (null != value) {
-    if (!obj4.getConfig({ location: "recordQuestRequestApiResponse" }).enableNewRequestBehavior) {
-      let obj = {};
-      const merged = Object.assign(value);
+  if (null != timestamp) {
+    pendingRequests = null;
+    if (null !== currentFetchedAt) {
+      let obj = { questId: null, adCreativeId: null, fetchedAt: null, ttlMillis: 0, adDecisionData: null };
+      obj[0] = currentQuestId;
+      obj[1] = currentQuestId;
+      obj[2] = currentFetchedAt;
+      let tmp6;
+      if (tmp5 != adRequestId) {
+        obj = { decision_id: null };
+        obj[0] = adRequestId;
+        tmp6 = obj;
+      }
+      obj[4] = tmp6;
+      pendingRequests = obj;
+    }
+    let previousAdDecision = timestamp.previousAdDecision;
+    let str = "null";
+    let str2 = "null";
+    if (tmp5 != previousAdDecision) {
+      let str3 = "quest";
+      if (tmp5 == previousAdDecision.questId) {
+        str3 = "no_serve";
+      }
+      str2 = str3;
+    }
+    if (tmp5 != pendingRequests) {
+      let str4 = "quest";
+      if (tmp5 == pendingRequests.questId) {
+        str4 = "no_serve";
+      }
+      str = str4;
+    }
+    if ("quest" !== str2) {
+      const _HermesInternal = HermesInternal;
+      let combined = "" + str2 + "_to_" + str;
+      previousAdDecision = trackRoundtrip;
+      obj = {};
+      const merged = Object.assign(timestamp);
       const _Date = Date;
-      obj.apiResponseTimestamp = Date.now();
+      timestamp = Date.now();
+      obj.apiResponseTimestamp = timestamp;
       obj.wasSuccessful = adRequestId.wasSuccessful;
       obj.adRequestId = adRequestId;
-      trackRoundtrip(obj, "legacy", null);
-      const pendingRequests2 = this.pendingRequests;
-      pendingRequests2.delete(arg0);
-    } else {
-      let str = null;
-      if (tmp5 !== currentFetchedAt) {
-        obj = { questId: null, adCreativeId: null, fetchedAt: null, ttlMillis: 0, adDecisionData: null };
-        obj[0] = currentQuestId;
-        obj[1] = currentQuestId;
-        obj[2] = currentFetchedAt;
-        let tmp6;
-        if (tmp5 != adRequestId) {
-          obj = { decision_id: null };
-          obj[0] = adRequestId;
-          tmp6 = obj;
-        }
-        obj[4] = tmp6;
-        str = obj;
-      }
-      let previousAdDecision = value.previousAdDecision;
-      let str2 = "null";
-      let str3 = "null";
-      if (tmp5 != previousAdDecision) {
-        let str4 = "quest";
-        if (tmp5 == previousAdDecision.questId) {
-          str4 = "no_serve";
-        }
-        str3 = str4;
-      }
-      if (tmp5 != str) {
-        let str5 = "quest";
-        if (tmp5 == str.questId) {
-          str5 = "no_serve";
-        }
-        str2 = str5;
-      }
-      if ("quest" !== str3) {
-        const _HermesInternal = HermesInternal;
-        let combined = "" + str3 + "_to_" + str2;
-      }
-      let questId;
-      if (previousAdDecision != tmp5) {
-        questId = previousAdDecision.questId;
-      }
-      tmp5 = str == tmp5;
-      previousAdDecision = undefined;
-      if (!tmp5) {
-        previousAdDecision = str.questId;
-      }
-      str = "different_quest";
-      if (questId === previousAdDecision) {
-        str = "same_quest";
-      }
-      combined = str;
+      tmp5 = trackRoundtrip(obj, combined, currentFetchedAt);
+      pendingRequests = self.pendingRequests;
+      self = pendingRequests.delete(arg0);
     }
-    obj4 = importDefault(7215);
+    let questId;
+    if (previousAdDecision != tmp5) {
+      questId = previousAdDecision.questId;
+    }
+    let questId1;
+    if (pendingRequests != tmp5) {
+      questId1 = pendingRequests.questId;
+    }
+    let str8 = "different_quest";
+    if (questId === questId1) {
+      str8 = "same_quest";
+    }
+    combined = str8;
   }
 };
 let set = Object.create(QuestDecisionRoundtripTracker.prototype);

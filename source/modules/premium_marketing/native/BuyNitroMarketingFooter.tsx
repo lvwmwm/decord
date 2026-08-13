@@ -1,7 +1,7 @@
 // Module ID: 12747
 // Function ID: 12748
 // Name: BuyNitroMarketingFooter
-// Dependencies: [17, 21, 4344, 712, 5466, 7778, 5787, 2]
+// Dependencies: [17, 21, 4342, 712, 5467, 7782, 5788, 2]
 // Exports: default
 
 // Module 12747 (BuyNitroMarketingFooter)
@@ -27,18 +27,18 @@ export default function BuyNitroMarketingFooter(arg0) {
   let onPaymentSuccess;
   let planSelection;
   ({ planSelection, applicationId, onPaymentSuccess, onPaymentDismiss } = arg0);
-  let obj = require(5466) /* LegacyBaseButton */;
+  let obj = require(5467) /* LegacyBaseButton */;
   const panGesture = obj.usePanGesture({ activeOffsetY: [-8, 8] });
   obj = { gesture: panGesture, children: null };
   obj = { style: callback().footer, collapsable: false, children: null };
   const obj1 = { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null };
   const tmp = callback();
-  obj1[0] = importDefault(5787).PREMIUM_MARKETING_FOOTER;
+  obj1[0] = importDefault(5788).PREMIUM_MARKETING_FOOTER;
   obj1[1] = planSelection;
   obj1[2] = applicationId;
   obj1[3] = onPaymentSuccess;
   obj1[4] = onPaymentDismiss;
-  obj[2] = jsx(importDefault(7778), { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
+  obj[2] = jsx(importDefault(7782), { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
   obj[1] = <closure_3 style={callback().footer} collapsable={false}>{null}</closure_3>;
-  return jsx(require(5466) /* LegacyBaseButton */.GestureDetector, { style: callback().footer, collapsable: false, children: null });
+  return jsx(require(5467) /* LegacyBaseButton */.GestureDetector, { style: callback().footer, collapsable: false, children: null });
 };

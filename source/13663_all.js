@@ -1,24 +1,15 @@
 // Module ID: 13663
 // Function ID: 13664
 // Name: all
-// Dependencies: []
+// Dependencies: [13664]
 
 // Module 13663 (all)
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  if (undefined !== all) {
-    let fn = (fn) => {
-      let tmp = typeof fn === "function";
-      if (typeof fn !== "function") {
-        tmp = fn === all;
-      }
-      return tmp;
-    };
+
+export default (obj) => {
+  if (typeof obj === "object") {
+    let tmp2 = null !== obj;
+  } else {
+    tmp2 = require(13664) /* all */(obj);
   }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+  return tmp2;
+};

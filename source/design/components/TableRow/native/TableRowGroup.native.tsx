@@ -1,10 +1,10 @@
-// Module ID: 5806
-// Function ID: 5807
+// Module ID: 5807
+// Function ID: 5808
 // Name: TableRowGroupTitle
-// Dependencies: [19, 17, 21, 4344, 712, 1367, 4340, 4065, 5371, 5414, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1367, 4338, 4065, 5372, 5415, 2]
 // Exports: TableRowGroup
 
-// Module 5806 (TableRowGroupTitle)
+// Module 5807 (TableRowGroupTitle)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -100,7 +100,7 @@ export const TableRowGroup = function TableRowGroup(accessibilityLabel) {
     const obj1 = { variant: "text-sm/normal", color: "text-subtle", style: null, children: null };
     obj1[2] = tmp.description;
     obj1[3] = description;
-    tmp6Result = tmp6(tmp2(4340).Text, obj1);
+    tmp6Result = tmp6(tmp2(4338).Text, obj1);
   }
   items[1] = tmp6Result;
   const items1 = [tmp.content, ];
@@ -116,9 +116,9 @@ export const TableRowGroup = function TableRowGroup(accessibilityLabel) {
     obj2[0] = token;
     obj2[2] = tmp.helperText;
     obj2[3] = helperText;
-    tmp6Result1 = tmp6(tmp2(4340).Text, obj2);
+    tmp6Result1 = tmp6(tmp2(4338).Text, obj2);
   }
   items[3] = tmp6Result1;
   obj[1] = items;
-  return closure_5(require(5414) /* context */.TableRowGroupContext.Provider, { value: true, children: closure_7(View, obj) });
+  return closure_5(require(5415) /* context */.TableRowGroupContext.Provider, { value: true, children: closure_7(View, obj) });
 };

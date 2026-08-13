@@ -1,9 +1,9 @@
-// Module ID: 5953
-// Function ID: 5954
+// Module ID: 5955
+// Function ID: 5956
 // Name: ContentHarmTypeChannel
 // Dependencies: [2]
 
-// Module 5953 (ContentHarmTypeChannel)
+// Module 5955 (ContentHarmTypeChannel)
 const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionModels.tsx");
 
 export const ContentHarmTypeChannel = { GUILD: "guild", FRIEND_DM: "friend_dm", NON_FRIEND_DM: "non_friend_dm" };

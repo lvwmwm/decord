@@ -1,29 +1,60 @@
-// Module ID: 9475
-// Function ID: 9476
-// Name: getProductName
-// Dependencies: [1236, 7054, 1949, 2]
-// Exports: getProductName, getProductNameAndTypeLabel, getPurchasedProductName
+// Module ID: 9479
+// Function ID: 9480
+// Name: getCardProductName
+// Dependencies: [1949, 1236, 7060, 2]
+// Exports: getCardProductName, getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 9475 (getProductName)
-const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
+// Module 9479 (getCardProductName)
+const result = require("getProductOrbPrice").fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
 
-export const getProductName = function getProductName(product) {
+export const getCardProductName = function getCardProductName(product) {
   if (null == product) {
+    let str2 = "";
+    if (null != product) {
+      str2 = "";
+      if (product.type === require(1949) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE) {
+        str2 = "";
+        if (product.items.length > 0) {
+          const intl2 = tmp3(1236).intl;
+          let obj = { count: null, productName: null };
+          obj[0] = product.items.length;
+          obj[1] = "";
+          str2 = intl2.format(tmp3(1236).t.UTc0ny, obj);
+        }
+      }
+    }
+    return str2;
+  } else {
+    let BZN5k2 = require;
+    obj = dependencyMap;
+    const string = require(1236) /* getSystemLocale */.intl.string;
+    if ("baseVariantName" in product) {
+      const intl = BZN5k2(1236).intl;
+      BZN5k2 = BZN5k2(1236).t.BZN5k2;
+      obj = { baseVariantName: null, variantLabel: null };
+      ({ baseVariantName: obj[0], variantLabel: obj[1] } = product);
+      let name = intl.formatToPlainString(BZN5k2, obj);
+    }
+    name = product.name;
+  }
+};
+export const getProductName = function getProductName(baseVariantName) {
+  if (null == baseVariantName) {
     return "";
   } else {
     const string = require(1236) /* getSystemLocale */.intl.string;
-    if ("baseVariantName" in product) {
-      if (null != product.baseVariantName) {
-        if (product.variantLabel !== tmp3) {
+    if ("baseVariantName" in baseVariantName) {
+      if (null != baseVariantName.baseVariantName) {
+        if (baseVariantName.variantLabel !== tmp3) {
           const intl = tmp(1236).intl;
           const obj = { baseVariantName: null, variantLabel: null };
-          ({ baseVariantName: obj[0], variantLabel: obj[1] } = product);
+          ({ baseVariantName: obj[0], variantLabel: obj[1] } = baseVariantName);
           let name = intl.formatToPlainString(tmp(1236).t.BZN5k2, obj);
         }
         return name;
       }
     }
-    name = product.name;
+    name = baseVariantName.name;
   }
 };
 export const getPurchasedProductName = function getPurchasedProductName(baseVariantName) {
@@ -45,7 +76,7 @@ export const getPurchasedProductName = function getPurchasedProductName(baseVari
 };
 export const getProductNameAndTypeLabel = function getProductNameAndTypeLabel(closure_0) {
   if (null == closure_0) {
-    let obj1 = require(7054) /* getProductOrbPrice */;
+    let obj1 = require(7060) /* getProductOrbPrice */;
     const productType = obj1.getProductType(closure_0);
     if (require(1949) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === productType) {
       const intl5 = tmp3(1236).intl;

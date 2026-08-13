@@ -1,7 +1,7 @@
 // Module ID: 12543
 // Function ID: 12544
 // Name: useUserProfileConnections
-// Dependencies: [19, 7122, 7004, 589, 5040, 2]
+// Dependencies: [19, 7128, 7010, 589, 5041, 2]
 // Exports: default
 
 // Module 12543 (useUserProfileConnections)

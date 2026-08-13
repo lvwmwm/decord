@@ -1,10 +1,10 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 16893
+// Function ID: 16894
 // Name: context
-// Dependencies: [19, 21, 5912, 2]
+// Dependencies: [19, 21, 5914, 2]
 // Exports: CreatorMonetizationSettingsDisabledContextProvider, useCreatorMonetizationSettingsDisabled
 
-// Module 16882 (context)
+// Module 16893 (context)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -27,7 +27,7 @@ export const CreatorMonetizationSettingsDisabledContextProvider = function Creat
   let children;
   let guildId;
   ({ guildId, children } = arg0);
-  let obj = require(5912) /* useShouldHideGuildPurchaseEntryPoints */;
+  let obj = require(5914) /* useShouldHideGuildPurchaseEntryPoints */;
   obj = { value: obj.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).shouldRestrictUpdatingCreatorMonetizationSettings, children };
   return <context.Provider value={obj.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).shouldRestrictUpdatingCreatorMonetizationSettings}>{children}</context.Provider>;
 };

@@ -1,9 +1,9 @@
-// Module ID: 16509
-// Function ID: 16510
+// Module ID: 16520
+// Function ID: 16521
 // Name: handleConnectionOpen
-// Dependencies: [5, 8385, 8384, 5215, 4789, 5257, 5265, 1340, 685, 4370, 687, 5300, 1374, 1341, 1342, 12, 2]
+// Dependencies: [5, 8389, 8388, 5216, 4790, 5258, 5266, 1340, 685, 4371, 687, 5301, 1374, 1341, 1342, 12, 2]
 
-// Module 16509 (handleConnectionOpen)
+// Module 16520 (handleConnectionOpen)
 import handleStickersStoreUpdate from "handleStickersStoreUpdate";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
 import closure_5 from "handleUserSettingsProtoStoreChange";

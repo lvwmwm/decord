@@ -1,7 +1,7 @@
 // Module ID: 13085
 // Function ID: 13086
 // Name: checkGuildIsHub
-// Dependencies: [5875, 1910, 676, 589, 709, 2]
+// Dependencies: [5876, 1910, 676, 589, 709, 2]
 
 // Module 13085 (checkGuildIsHub)
 import set from "set";

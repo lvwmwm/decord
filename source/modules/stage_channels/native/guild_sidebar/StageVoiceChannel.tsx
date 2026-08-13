@@ -1,8 +1,8 @@
-// Module ID: 15432
-// Function ID: 15433
-// Dependencies: [19, 17, 7028, 3989, 4356, 4539, 4416, 1396, 676, 9841, 21, 1236, 4344, 712, 589, 5175, 15433, 5188, 5182, 4830, 8457, 1891, 7814, 9711, 4534, 9789, 15314, 15421, 15319, 2]
+// Module ID: 15441
+// Function ID: 15442
+// Dependencies: [19, 17, 7034, 3989, 4357, 4540, 4417, 1396, 676, 9844, 21, 1236, 4342, 712, 589, 5176, 15442, 5189, 5183, 4831, 8461, 1891, 7818, 9715, 4535, 9793, 15323, 15430, 15328, 2]
 
-// Module 15432
+// Module 15441
 import importAllResult from "shouldShowMembershipVerificationGate";
 import { View } from "useStageParticipants";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -48,12 +48,12 @@ const memoResult = importAllResult.memo((channel) => {
   }, items1);
   ({ stageInstance, hasUnread, hasMedia, collapsed } = stateFromStoresObject);
   ({ resolvedUnreadSetting, voiceStates, locked } = stateFromStoresObject);
-  let arr3 = importDefault(15433)(channel.guild_id)[channel.id];
+  let arr3 = importDefault(15442)(channel.guild_id)[channel.id];
   if (arr3 == null) {
     arr3 = NO_VOICE_STATES;
   }
-  let tmp2Result = tmp2(5188);
-  const stageParticipantsCount = tmp2Result.useStageParticipantsCount(channel.id, tmp2(5182).StageChannelParticipantNamedIndex.AUDIENCE);
+  let tmp2Result = tmp2(5189);
+  const stageParticipantsCount = tmp2Result.useStageParticipantsCount(channel.id, tmp2(5183).StageChannelParticipantNamedIndex.AUDIENCE);
   const sum = stageParticipantsCount + arr3.length;
   const items2 = [channel];
   const items3 = [channel.id];
@@ -73,13 +73,13 @@ const memoResult = importAllResult.memo((channel) => {
   const callback1 = importAllResult.useCallback(() => {
     const result = channel(outer1_3[23]).openChannelLongPressActionSheet(channel.id);
   }, items3);
-  const tmp10 = importDefault(4534)(channel, false);
-  tmp2Result = tmp2(9789);
+  const tmp10 = importDefault(4535)(channel, false);
+  tmp2Result = tmp2(9793);
   const isConnectedToVoiceChannel = tmp2Result.useIsConnectedToVoiceChannel(channel);
   if (stageInstance != null) {
     const topic = stageInstance.topic;
   }
-  let tmp5Result = tmp5(15314);
+  let tmp5Result = tmp5(15323);
   const intl = tmp2(1236).intl;
   if (null != channel.userLimit) {
     if (channel.userLimit > 0) {
@@ -111,7 +111,7 @@ const memoResult = importAllResult.memo((channel) => {
     obj2[0] = channel;
     obj2[1] = selected;
     obj2[2] = collapsed;
-    tmp5Result = tmp5(15421);
+    tmp5Result = tmp5(15430);
     if (!hasMedia) {
       let tmp20 = channel.userLimit > 0;
       if (tmp20) {
@@ -131,7 +131,7 @@ const memoResult = importAllResult.memo((channel) => {
       obj4[1] = collapsed;
       obj4[2] = arr3;
       obj4[3] = stageParticipantsCount;
-      obj3[1] = tmp12(tmp5(15319), obj4);
+      obj3[1] = tmp12(tmp5(15328), obj4);
       tmp12Result = tmp12(View, obj3);
     }
     obj.children = tmp12Result;

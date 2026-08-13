@@ -1,10 +1,10 @@
-// Module ID: 10637
-// Function ID: 10638
+// Module ID: 10551
+// Function ID: 10552
 // Name: AppStoreOverlayStatCardItem
-// Dependencies: [19, 17, 21, 4344, 712, 10638, 1236, 10639, 4340, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 10552, 1236, 10553, 4338, 2]
 // Exports: default
 
-// Module 10637 (AppStoreOverlayStatCardItem)
+// Module 10551 (AppStoreOverlayStatCardItem)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,14 +26,14 @@ function AppStoreOverlayStatCardItem(stat) {
     if (num == null) {
       num = 5;
     }
-    let obj2 = require(10638) /* formatAppStoreRatingValue */;
+    let obj2 = require(10552) /* formatAppStoreRatingValue */;
     const result = obj2.formatAppStoreRatingValue(stat.rating, require(1236) /* getSystemLocale */.intl.currentLocale);
     let result1;
     if (null != stat.ratingCount) {
-      let tmp9Result = tmp9(10638);
+      let tmp9Result = tmp9(10552);
       result1 = tmp9Result.formatAppStoreRatingCount(stat.ratingCount, tmp9(1236).intl.currentLocale);
     }
-    tmp9Result = tmp9(10638);
+    tmp9Result = tmp9(10552);
     const appStoreStarFillAmounts = tmp9Result.getAppStoreStarFillAmounts(stat.rating, num);
     const intl = tmp9(1236).intl;
     let obj = { label: null, rating: null, maxRating: null, ratingCount: null };
@@ -50,7 +50,7 @@ function AppStoreOverlayStatCardItem(stat) {
     obj[1] = result;
     const obj1 = { fillAmounts: null };
     obj1[0] = appStoreStarFillAmounts;
-    obj[2] = callback(importDefault(10639), obj1);
+    obj[2] = callback(importDefault(10553), obj1);
     obj[3] = result1;
     let tmp6 = obj;
   } else if ("age" === type) {
@@ -60,7 +60,7 @@ function AppStoreOverlayStatCardItem(stat) {
     obj2[1] = stat.ageRating;
     tmp6 = obj2;
   } else if ("chart" === type) {
-    const result2 = require(10638) /* formatAppStoreRatingValue */.formatAppStoreChartRank(stat.rank);
+    const result2 = require(10552) /* formatAppStoreRatingValue */.formatAppStoreChartRank(stat.rank);
     if (null != stat.category) {
       const _HermesInternal2 = HermesInternal;
       let combined = "" + stat.label + ", " + result2 + ", " + stat.category;
@@ -73,7 +73,7 @@ function AppStoreOverlayStatCardItem(stat) {
     obj[1] = result2;
     obj[2] = stat.category;
     tmp6 = obj;
-    const obj11 = require(10638) /* formatAppStoreRatingValue */;
+    const obj11 = require(10552) /* formatAppStoreRatingValue */;
   }
   ({ secondaryText, secondaryContent, ratingCount } = tmp6);
   const obj3 = { style: createCacheKey().statCard, accessible: true, accessibilityRole: "text", accessibilityLabel: tmp6.accessibilityLabel, children: null };
@@ -84,13 +84,13 @@ function AppStoreOverlayStatCardItem(stat) {
     str9 = "(" + ratingCount + ")";
   }
   items[2] = str9;
-  const items1 = [closure_6(require(4340) /* Text */.Text, { variant: "text-xs/semibold", color: "text-subtle", children: items }), callback(require(4340) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: tmp6.primaryText }), ];
+  const items1 = [closure_6(require(4338) /* Text */.Text, { variant: "text-xs/semibold", color: "text-subtle", children: items }), callback(require(4338) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: tmp6.primaryText }), ];
   if (null == secondaryContent) {
     let tmp21Result = null != secondaryText;
     if (tmp21Result) {
       const obj4 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: null };
       obj4[3] = secondaryText;
-      tmp21Result = callback(tmp18(4340).Text, obj4);
+      tmp21Result = callback(tmp18(4338).Text, obj4);
     }
     secondaryContent = tmp21Result;
   }

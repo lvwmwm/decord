@@ -1,10 +1,10 @@
-// Module ID: 5887
-// Function ID: 5888
+// Module ID: 5888
+// Function ID: 5889
 // Name: getPrice
-// Dependencies: [4382, 5888, 4367, 1910, 5889, 5890, 676, 678, 505, 4581, 12, 5891, 1486, 5212, 589, 5773, 2]
-// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getCountryPrices, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
+// Dependencies: [4383, 5889, 4368, 1910, 5890, 5891, 676, 678, 505, 4582, 5892, 12, 5893, 1486, 5213, 589, 5774, 2]
+// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getCountryPrices, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 5887 (getPrice)
+// Module 5888 (getPrice)
 import addApplication from "addApplication";
 import { WishlistRecommendationReason as closure_4 } from "fromServer";
 import createExecutable from "createExecutable";
@@ -85,8 +85,22 @@ function hasSocialLayerStorefront(guild) {
     return tmp6;
   }
 }
+function transformRewardRequirementServer(type) {
+  let progress;
+  let tmp = null;
+  if (type.type === require(5892) /* RewardRequirementType */.RewardRequirementType.SUBSCRIPTION) {
+    const obj = { type: null, planIds: null, progress: null };
+    ({ type: obj[0], plan_ids: obj[1], progress } = type);
+    if (progress == null) {
+      progress = null;
+    }
+    obj[2] = progress;
+    tmp = obj;
+  }
+  return tmp;
+}
 function transformSlayerStorefrontPromotionServer(id) {
-  let obj = { id: id.id, endsAt: null, flavor: null, pdp: null, storefront: null, checkout: null, vcStream: null };
+  let obj = { id: id.id, endsAt: null, flavor: null, pdp: null, storefront: null, checkout: null, vcStream: null, rewardRequirements: null };
   let ends_at = id.ends_at;
   if (ends_at == null) {
     ends_at = null;
@@ -128,14 +142,23 @@ function transformSlayerStorefrontPromotionServer(id) {
     tmp5 = obj2;
   }
   obj[6] = tmp5;
+  let reward_requirements = id.reward_requirements;
+  if (reward_requirements == null) {
+    reward_requirements = [];
+  }
+  const mapped = reward_requirements.map(transformRewardRequirementServer);
+  obj[7] = mapped.filter((arg0) => null != arg0);
   return obj;
+}
+function isSubscriptionRewardRequirement(type) {
+  return type.type === require(5892) /* RewardRequirementType */.RewardRequirementType.SUBSCRIPTION;
 }
 function getSKUShareURL(arg0, applicationId) {
   let tab;
   if (null != arg0) {
     const _location2 = location;
     const _location3 = location;
-    const parsed = require(5212) /* keysSorter */.parse(location.search);
+    const parsed = require(5213) /* keysSorter */.parse(location.search);
     const skuId = parsed.skuId;
     ({ tab, applicationId } = parsed);
     let tmp3 = pathname.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
@@ -174,11 +197,22 @@ function getCountryPrices(arg0, arg1) {
     }
   }
 }
+function getRequiredSubscriptionPlanIds(arr) {
+  const found = arr.find(isSubscriptionRewardRequirement);
+  let planIds = null;
+  if (null != found) {
+    planIds = null;
+    if (found.planIds.length > 0) {
+      planIds = found.planIds;
+    }
+  }
+  return planIds;
+}
 function isOnCollectiblesShopGameShopPage(arr) {
   let applicationId;
   let skuId;
   let tab;
-  const parsed = require(5212) /* keysSorter */.parse(arg1);
+  const parsed = require(5213) /* keysSorter */.parse(arg1);
   ({ tab, applicationId, skuId } = parsed);
   let tmp2 = arr.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
   if (tmp2) {
@@ -298,6 +332,25 @@ export const transformStorefrontMetadataServer = function transformStorefrontMet
   obj[1] = prop;
   return obj;
 };
+export { getRequiredSubscriptionPlanIds };
+export const getRewardRequirementPlanTargetingParams = function getRewardRequirementPlanTargetingParams(arr) {
+  const found = arr.find(isSubscriptionRewardRequirement);
+  let planIds = null;
+  if (null != found) {
+    planIds = null;
+    if (found.planIds.length > 0) {
+      planIds = found.planIds;
+    }
+  }
+  if (null != planIds) {
+    if (1 === planIds.length) {
+      let obj = { initialPlanId: null, shouldDisallowPlanSelection: true };
+      obj[0] = planIds[0];
+    }
+    return obj;
+  }
+  obj = {};
+};
 export const transformSlayerApplicationStorefrontSummaryServer = function transformSlayerApplicationStorefrontSummaryServer(id) {
   let logo_asset_id;
   const obj = { id: id.id, publishedAt: null, title: null, logoAssetId: null, lightThemeLogoAssetId: null };
@@ -371,8 +424,8 @@ export const transformSlayerApplicationStorefrontServer = function transformSlay
   obj[8] = fromServer;
   let result;
   if (null != body.storefront_pricing) {
-    result = require(5891) /* useSKUPrice */.transformStorefrontPricesServer(body.storefront_pricing);
-    const obj4 = require(5891) /* useSKUPrice */;
+    result = require(5893) /* useSKUPrice */.transformStorefrontPricesServer(body.storefront_pricing);
+    const obj4 = require(5893) /* useSKUPrice */;
   }
   obj[9] = result;
   const obj3 = importDefault(12);
@@ -409,9 +462,9 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       if (0 !== tenantMetadata.tenantMetadata.socialLayer.carouselItems.length) {
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          obj = { primaryIconAsset: "isArray", primaryIconLabel: "accessibilityRole" };
+          obj = { primaryIconAsset: "Array", primaryIconLabel: "ct" };
         } else {
-          const obj3 = require(4581) /* _httpGetWithCountryCodeQuery */;
+          const obj3 = require(4582) /* _httpGetWithCountryCodeQuery */;
           const toURLSafeResult = importDefault(1486).toURLSafe(obj3.getAssetURL(arg1, first.labelIconAssetId, num, "webp"));
           obj = { primaryIconAsset: null, primaryIconLabel: null };
           obj[0] = toURLSafeResult;
@@ -422,7 +475,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       }
     }
   }
-  return { primaryIconAsset: "isArray", primaryIconLabel: "accessibilityRole" };
+  return { primaryIconAsset: "Array", primaryIconLabel: "ct" };
 };
 export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(error) {
   let obj = arg1;
@@ -436,7 +489,7 @@ export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(error) {
   }
   if (null != error) {
     if (null != error.thumbnailAssetId) {
-      const obj3 = require(4581) /* _httpGetWithCountryCodeQuery */;
+      const obj3 = require(4582) /* _httpGetWithCountryCodeQuery */;
       return importDefault(1486).toURLSafe(obj3.getAssetURL(error.applicationId, error.thumbnailAssetId, num, "webp"));
     }
   }
@@ -473,7 +526,7 @@ export const getCardImageURL = function getCardImageURL(sku, arg1) {
   }
   if (null != cardImageAssetId) {
     if (null != applicationId) {
-      const obj3 = require(4581) /* _httpGetWithCountryCodeQuery */;
+      const obj3 = require(4582) /* _httpGetWithCountryCodeQuery */;
       return importDefault(1486).toURLSafe(obj3.getAssetURL(applicationId, cardImageAssetId, num, "webp"));
     }
   }
@@ -504,7 +557,7 @@ export const getCardBackgroundImageURL = function getCardBackgroundImageURL(sku,
       applicationId = sku.applicationId;
     }
     if (null != applicationId) {
-      const obj3 = require(4581) /* _httpGetWithCountryCodeQuery */;
+      const obj3 = require(4582) /* _httpGetWithCountryCodeQuery */;
       return importDefault(1486).toURLSafe(obj3.getAssetURL(sku.applicationId, sku.tenantMetadata.socialLayer.cardBackgroundImageAssetId, num, str));
     }
   }
@@ -573,7 +626,7 @@ export const getHasWishlistOrPopularRecommendations = function getHasWishlistOrP
 export const isOnSocialLayerStorefrontPage = function isOnSocialLayerStorefrontPage(arr) {
   let applicationId;
   let tab;
-  const parsed = require(5212) /* keysSorter */.parse(arg1);
+  const parsed = require(5213) /* keysSorter */.parse(arg1);
   ({ tab, applicationId } = parsed);
   let tmp2 = arr.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
   if (tmp2) {
@@ -607,7 +660,7 @@ export const isOnSocialLayerStorefrontSkuPage = function isOnSocialLayerStorefro
     pageIndex = 0;
   }
   ({ guildId, skuId } = applicationId);
-  const parsed = require(5212) /* keysSorter */.parse(applicationId.search);
+  const parsed = require(5213) /* keysSorter */.parse(applicationId.search);
   ({ tab, applicationId, skuId: skuId2 } = parsed);
   let tmp2 = pathname.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
   if (tmp2) {
@@ -632,7 +685,7 @@ export const useGetSocialLayerStorefrontGuildIdAndApplication = function useGetS
   const items = [handleUserSettingsStoreUpdate];
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_7.getGuildIdFromApplicationId(closure_0));
   const obj = _require(589);
-  const application = _require(5773).useGetOrFetchApplication(applicationId);
+  const application = _require(5774).useGetOrFetchApplication(applicationId);
   let guildId = stateFromStores;
   if (stateFromStores == null) {
     guildId = undefined;

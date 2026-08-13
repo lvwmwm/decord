@@ -1,10 +1,10 @@
-// Module ID: 8494
-// Function ID: 8495
+// Module ID: 8498
+// Function ID: 8499
 // Name: UserVerification
-// Dependencies: [19, 21, 4344, 4170, 8495, 4340, 1236, 2]
+// Dependencies: [19, 21, 4342, 4168, 8499, 4338, 1236, 2]
 // Exports: default
 
-// Module 8494 (UserVerification)
+// Module 8498 (UserVerification)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,22 +25,22 @@ export default function UserVerification(arg0) {
     return null;
   } else {
     const platform = field.platform;
-    let tmp5 = platform === require(4170) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.PHONE;
+    let tmp5 = platform === require(4168) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.PHONE;
     if (tmp5) {
       let obj = { passesVerification: null, platform: null };
-      obj[0] = verification[tmp12(undefined, 4170).UserVerificationFieldPlatforms.PHONE];
-      obj[1] = tmp12(4170).UserVerificationFieldPlatforms.PHONE;
-      tmp5 = callback(importDefault(8495), obj);
-      const tmp4 = importDefault(8495);
+      obj[0] = verification[tmp12(undefined, 4168).UserVerificationFieldPlatforms.PHONE];
+      obj[1] = tmp12(4168).UserVerificationFieldPlatforms.PHONE;
+      tmp5 = callback(importDefault(8499), obj);
+      const tmp4 = importDefault(8499);
     }
     const items = [tmp5, , ];
     obj = { passesVerification: null, platform: null };
-    obj[0] = verification[require(undefined, 4170) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL];
-    obj[1] = require(4170) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL;
-    items[1] = callback(importDefault(8495), obj);
+    obj[0] = verification[require(undefined, 4168) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL];
+    obj[1] = require(4168) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL;
+    items[1] = callback(importDefault(8499), obj);
     obj = { style: null, variant: "heading-deprecated-12/medium", color: "text-default", children: null };
     obj[0] = tmp.emailPhoneNote;
-    if (platform === require(4170) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.PHONE) {
+    if (platform === require(4168) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.PHONE) {
       const intl2 = tmp12(1236).intl;
       let stringResult = intl2.string(tmp12(1236).t["jMh+TY"]);
     } else {
@@ -49,7 +49,7 @@ export default function UserVerification(arg0) {
     }
     const obj1 = { children: null };
     obj[3] = stringResult;
-    items[2] = callback(require(4340) /* Text */.Text, obj);
+    items[2] = callback(require(4338) /* Text */.Text, obj);
     obj1[0] = items;
     return closure_5(closure_4, obj1);
   }

@@ -1,10 +1,10 @@
-// Module ID: 10518
-// Function ID: 10519
+// Module ID: 10432
+// Function ID: 10433
 // Name: resolveAsset
-// Dependencies: [5201, 676, 10519, 10520, 10521, 10522, 10523, 7205, 10530, 10531, 5208, 1486, 1896, 2]
+// Dependencies: [5202, 676, 10433, 10434, 10435, 10436, 10437, 7211, 10444, 10445, 5209, 1486, 1896, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 10518 (resolveAsset)
+// Module 10432 (resolveAsset)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_5 } from "ME";
 
@@ -79,315 +79,10 @@ function getMimetype(questBarHeroVideo) {
           formatted1 = str3.toLowerCase();
         }
       }
-      formatted = formatted1;
     }
-    switch (formatted) {
-      case "Date":
-      break;
-      case "TypeError":
-      break;
-      case "Error":
-      break;
-      case "HTTP":
-      break;
-      case "T":
-      break;
-      case "HermesInternal":
-      break;
-      case "Icon":
-      break;
-      case "IconComponent":
-      break;
-      case "c":
-      break;
-      case "p":
-      break;
-      case "LIGHT":
-      break;
-      case "LengthDelimited":
-      break;
-      case "limit":
-      break;
-      case "i":
-      break;
-      case "it":
-      break;
-      case "d":
-      break;
-      case "Map":
-      break;
-      case "Math":
-      break;
-      case "h":
-      break;
-      case "Number":
-      break;
-      case "Object":
-      break;
-      case "ct":
-      break;
-      case "PX_16":
-      break;
-      case "flex":
-      break;
-      case "flexDirection":
-      break;
-      case "PX_8":
-      break;
-      case "Path":
-      break;
-      case "Promise":
-      break;
-      case "s":
-      break;
-      case "Reflect":
-      break;
-      case "Set":
-      break;
-      case "format":
-      break;
-      case "formatToPlainString":
-      break;
-      case "String":
-      break;
-      case "Symbol":
-        return "video/webm";
-      case "Text":
-      break;
-      case "x":
-        return "video/mp4";
-      case "View":
-      break;
-      case "w":
-        return "image/webp";
-      case "WireType":
-      break;
-      case "__closure":
-        return "image/jpeg";
-      case "__d":
-      break;
-      case "__esModule":
-        return "image/jpeg";
-      case "__initData":
-      break;
-      case "filter":
-        return "image/png";
-      case "__packager_asset":
-      break;
-      case "k":
-        return "image/gif";
-      case "set":
-      break;
-      case "__workletHash":
-        return "image/svg+xml";
-      case "_desired":
-      break;
-      case "_distance":
-        return "text/plain";
-      case "st":
-      break;
-      case "accessibilityLabel":
-        return "text/vtt";
-      case "accessibilityRole":
-      break;
-      case "accessible":
-        return "video/mp2t";
-      case "padding":
-      break;
-      case "paddingHorizontal":
-        return "application/x-mpegURL";
-      case "add":
-      break;
-      case "alignItems":
-      break;
-      case "ao":
-      break;
-      case "applicationId":
-      break;
-      case "ti":
-      break;
-      case "apply":
-      break;
-      case "backgroundColor":
-      break;
-      case "round":
-      break;
-      case "bm":
-      break;
-      case "body":
-      break;
-      case "borderRadius":
-      break;
-      case "bottom":
-      break;
-      case "call":
-      break;
-      case "channel":
-      break;
-      case "channelId":
-      break;
-      case "channel_id":
-      break;
-      case "id":
-      break;
-      case "children":
-      break;
-      case "cix":
-      break;
-      case "ix":
-      break;
-      case "unicodeVersion":
-      break;
-      case "code":
-      break;
-      case "color":
-      break;
-      case "colors":
-      break;
-      case "concat":
-      break;
-      case "constructor":
-      break;
-      case "container":
-      break;
-      case "content":
-      break;
-      case "context":
-      break;
-      case "text":
-      break;
-      case "count":
-      break;
-      case "create":
-      break;
-      case "createStyles":
-      break;
-      case "ty":
-      break;
-      case "current":
-      break;
-      case "cursor":
-      break;
-      case "data":
-      break;
-      case "ddd":
-      break;
-      case "default":
-      break;
-      case "defineProperty":
-      break;
-      case "op":
-      break;
-      case "delete":
-      break;
-      case "description":
-      break;
-      case "ip":
-      break;
-      case "disabled":
-      break;
-      case "sa":
-      break;
-      case "dispatch":
-      break;
-      case "displayName":
-      break;
-      case "diversity":
-      break;
-      case "v":
-      break;
-      case "done":
-      break;
-      case "duration":
-      break;
-      case "enabled":
-      break;
-      case "end":
-      break;
-      case "enumerable":
-      break;
-      case "error":
-      break;
-      case "exports":
-      break;
-      case "fileFinishedImporting":
-      break;
-      case "fill":
-      break;
-      case "find":
-      break;
-      case "ind":
-      break;
-      case "flags":
-      break;
-      case "forEach":
-      break;
-      case "gap":
-      break;
-      case "get":
-      break;
-      case "getChannel":
-      break;
-      case "getCurrentUser":
-      break;
-      case "getGuild":
-      break;
-      case "guild":
-      break;
-      case "guildId":
-      break;
-      case "guild_id":
-      break;
-      case "has":
-      break;
-      case "hasDiversityParent":
-      break;
-      case "hash":
-      break;
-      case "hd":
-      break;
-      case "header":
-      break;
-      case "height":
-      break;
-      case "httpServerLocation":
-      break;
-      case "icon":
-      break;
-      case "includes":
-      break;
-      case "index":
-      break;
-      case "indexOf":
-      break;
-      case "intl":
-      break;
-      case "items":
-      break;
-      case "join":
-      break;
-      case "jsx":
-      break;
-      case "jsxs":
-      break;
-      case "justifyContent":
-      break;
-      case "key":
-      break;
-      case "keys":
-      break;
-      case "kind":
-      break;
-      case "ks":
-      break;
-      case "space":
-      break;
-      case "label":
-      break;
-      default:
-        return null;
-    }
+    return "application/x-mpegURL";
   }
+  const obj = importDefault(1486);
 }
 function getAssetUrlWithMediaProxyQueryParams(assetUrl, arg1) {
   let size = arg1;
@@ -505,9 +200,9 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
     flag = false;
     flag2 = false;
   } else if (tmp.REWARD === VIDEO_PLAYER_TRANSCRIPT) {
-    let obj1 = require(10523) /* _getDefaultRewardName */;
+    let obj1 = require(10437) /* _getDefaultRewardName */;
     const questPrimaryReward = obj1.getQuestPrimaryReward(quest);
-    if (questPrimaryReward.type === require(7205) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+    if (questPrimaryReward.type === require(7211) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       let tmp25;
       if (null != arg4) {
         tmp25 = obj8[arg4];
@@ -518,11 +213,11 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
         obj1 = obj;
       } else if (flag) {
         obj = { url: null, mimetype: "video/mp4", isAnimated: true };
-        obj[0] = importDefault(10530);
+        obj[0] = importDefault(10444);
         obj1 = obj;
       } else {
         obj1 = { url: null, mimetype: "video/webm", isAnimated: true };
-        obj1[0] = importDefault(10531);
+        obj1[0] = importDefault(10445);
       }
       return obj1;
     } else {
@@ -531,9 +226,9 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
       flag2 = false;
     }
   } else if (tmp.REWARD_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
-    obj = require(10523) /* _getDefaultRewardName */;
+    obj = require(10437) /* _getDefaultRewardName */;
     const questPrimaryReward1 = obj.getQuestPrimaryReward(quest);
-    if (questPrimaryReward1.type === require(7205) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+    if (questPrimaryReward1.type === require(7211) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       return null;
     } else {
       asset = questPrimaryReward1.asset;
@@ -612,7 +307,7 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
       }
     }
     if ("taskConfigV2" in quest.config) {
-      const FirstPartyQuestTaskTypes = require(5208) /* set */.FirstPartyQuestTaskTypes;
+      const FirstPartyQuestTaskTypes = require(5209) /* set */.FirstPartyQuestTaskTypes;
       const tmp5 = quest.config.taskConfigV2.tasks[flag ? FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE : FirstPartyQuestTaskTypes.WATCH_VIDEO];
       let tmp9;
       if (tmp5 != null) {

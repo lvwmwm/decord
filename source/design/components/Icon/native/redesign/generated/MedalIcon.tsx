@@ -1,10 +1,10 @@
-// Module ID: 15667
-// Function ID: 15668
+// Module ID: 15676
+// Function ID: 15677
 // Name: MedalIcon
-// Dependencies: [19, 21, 712, 4064, 15668, 2]
+// Dependencies: [19, 21, 712, 4064, 15677, 2]
 // Exports: MedalIcon
 
-// Module 15667 (MedalIcon)
+// Module 15676 (MedalIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const MedalIcon = function MedalIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(15668) /* registerAsset */;
+  obj[0] = require(15677) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

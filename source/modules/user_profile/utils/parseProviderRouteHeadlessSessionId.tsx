@@ -1,7 +1,7 @@
 // Module ID: 12358
 // Function ID: 12359
 // Name: parseProviderRouteHeadlessSessionId
-// Dependencies: [32, 5040, 2]
+// Dependencies: [32, 5041, 2]
 // Exports: default
 
 // Module 12358 (parseProviderRouteHeadlessSessionId)
@@ -16,7 +16,7 @@ export default function parseProviderRouteHeadlessSessionId(str) {
       const first = callback(str.slice(2).split(","), 1)[0];
       if (null != first) {
         if (0 !== first.length) {
-          const value = importDefault(5040).get(first);
+          const value = importDefault(5041).get(first);
           let tmp5 = null;
           if (null != value) {
             tmp5 = null;

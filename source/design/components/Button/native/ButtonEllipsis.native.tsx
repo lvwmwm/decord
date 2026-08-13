@@ -1,10 +1,10 @@
-// Module ID: 4769
-// Function ID: 4770
+// Module ID: 4770
+// Function ID: 4771
 // Name: EllipsisCircle
-// Dependencies: [19, 21, 4083, 4344, 712, 4345, 4759, 4770, 2]
+// Dependencies: [19, 21, 4083, 4342, 712, 4343, 4760, 4771, 2]
 // Exports: Ellipsis
 
-// Module 4769 (EllipsisCircle)
+// Module 4770 (EllipsisCircle)
 import "noop";
 import jsxProd from "jsxProd";
 import { Easing } from "module_4083";
@@ -98,7 +98,7 @@ function withEllipsisAnimation(arg0, value) {
   const obj = require(4083);
   const result = 166.66666666666666 * arg0;
   const obj2 = require(4083);
-  return obj.withDelay(result, obj2.withRepeat(require(4345) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(value, obj, "animate-always"), -1, true));
+  return obj.withDelay(result, obj2.withRepeat(require(4343) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(value, obj, "animate-always"), -1, true));
 }
 obj = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: require("module_4083").withDelay, withRepeat: require("module_4083").withRepeat, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, ELLIPSIS_APPEAR_TIMING: obj };
 withEllipsisAnimation.__closure = obj;

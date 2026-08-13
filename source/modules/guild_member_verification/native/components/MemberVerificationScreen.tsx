@@ -1,9 +1,9 @@
-// Module ID: 15894
-// Function ID: 15895
+// Module ID: 15903
+// Function ID: 15904
 // Name: Loading
-// Dependencies: [19, 17, 1980, 1910, 4168, 676, 21, 4344, 712, 5862, 8459, 589, 5755, 4170, 8464, 1222, 4199, 1628, 5863, 15895, 2]
+// Dependencies: [19, 17, 1980, 1910, 4166, 676, 21, 4342, 712, 5863, 8463, 589, 5756, 4168, 8468, 1222, 4197, 1628, 5864, 15904, 2]
 
-// Module 15894 (Loading)
+// Module 15903 (Loading)
 import closure_4 from "makeAuthenticated";
 import { View } from "useSafeAreaInsets";
 import comparator from "comparator";
@@ -18,11 +18,11 @@ let c10;
 let c9;
 const require = arg1;
 function Loading() {
-  return <View style={createCacheKey().flexLoading}>{jsx(require(5862) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
+  return <View style={createCacheKey().flexLoading}>{jsx(require(5863) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
 }
 function MemberVerificationRouteView(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(8459), {});
+  return jsx(importDefault(8463), {});
 }
 function ExistingJoinRequestHandler(guildId) {
   guildId = guildId.guildId;
@@ -167,9 +167,9 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
     obj1[0] = guildId;
     obj1[1] = callback;
     obj[1] = <MemberVerificationRouteView guildId={null} onClose={null} />;
-    obj[2] = jsx(importDefault(5863), { marginLeft: null, marginRight: null });
+    obj[2] = jsx(importDefault(5864), { marginLeft: null, marginRight: null });
     tmp10 = <ExistingJoinRequestHandler marginLeft={null} marginRight={null} />;
-    const tmp3Result = importDefault(5863);
+    const tmp3Result = importDefault(5864);
   }
   return tmp10;
 });

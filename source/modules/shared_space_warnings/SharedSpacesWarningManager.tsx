@@ -1,7 +1,7 @@
 // Module ID: 13060
 // Function ID: 13061
 // Name: handleChannelSelect
-// Dependencies: [1391, 4415, 3998, 13061, 13059, 687, 13062, 691, 13066, 5300, 2]
+// Dependencies: [1391, 4416, 3998, 13061, 13059, 687, 13062, 691, 13066, 5301, 2]
 // Exports: userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
 // Module 13060 (handleChannelSelect)

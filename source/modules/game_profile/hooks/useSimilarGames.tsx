@@ -1,10 +1,10 @@
-// Module ID: 12245
-// Function ID: 12246
+// Module ID: 12247
+// Function ID: 12248
 // Name: useSimilarGames
-// Dependencies: [4365, 1922, 9387, 9386, 5965, 589, 9319, 4875, 2]
+// Dependencies: [4366, 1922, 9391, 9390, 5967, 589, 9323, 4876, 2]
 // Exports: default
 
-// Module 12245 (useSimilarGames)
+// Module 12247 (useSimilarGames)
 import handleLoadMessages from "handleLoadMessages";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_4 } from "set";
@@ -22,7 +22,7 @@ export default function useSimilarGames(arg0, arg1) {
   if (arg1) {
     tmp = !set.has(arg0);
   }
-  let obj = require(9386) /* _getShopCollection */;
+  let obj = require(9390) /* _getShopCollection */;
   const similarGameIds = obj.useSimilarGameIds(arg0, tmp);
   ({ data, isLoading, error } = similarGameIds);
   if (!tmp) {
@@ -31,7 +31,7 @@ export default function useSimilarGames(arg0, arg1) {
     tmp7 = data;
   }
   require = tmp7;
-  let tmp3Result = tmp3(5965);
+  let tmp3Result = tmp3(5967);
   const games = tmp3Result.useGames(tmp7);
   tmp3Result = tmp3(589);
   const items = [handleLoadMessages];

@@ -1,7 +1,7 @@
 // Module ID: 12828
 // Function ID: 12829
 // Name: Footer
-// Dependencies: [19, 17, 21, 4344, 12829, 5787, 4340, 1236, 4754, 5307, 12830, 2]
+// Dependencies: [19, 17, 21, 4342, 12829, 5788, 4338, 1236, 4755, 5308, 12830, 2]
 // Exports: default
 
 // Module 12828 (Footer)
@@ -21,7 +21,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/p
 export default function Footer(showSubscribeButton) {
   showSubscribeButton = showSubscribeButton.showSubscribeButton;
   const tmp = callback2();
-  importDefault(12829)(importDefault(5787).PREMIUM_MARKETING_FOOTER);
+  importDefault(12829)(importDefault(5788).PREMIUM_MARKETING_FOOTER);
   let obj = { style: items, children: null };
   items = [tmp.container, showSubscribeButton.style];
   let tmp8Result = showSubscribeButton;
@@ -31,13 +31,13 @@ export default function Footer(showSubscribeButton) {
     obj[0] = tmp.footerText;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[3] = intl.string(require(1236) /* getSystemLocale */.t["2bSPbq"]);
-    const items1 = [callback(require(4340) /* Text */.Text, obj), ];
+    const items1 = [callback(require(4338) /* Text */.Text, obj), ];
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.button;
     const obj2 = { text: null, variant: "primary", size: "lg", onPress: null, grow: true };
     obj2[0] = tmp7;
     obj2[3] = tmp6;
-    obj1[1] = callback(require(4754) /* Button */.Button, obj2);
+    obj1[1] = callback(require(4755) /* Button */.Button, obj2);
     items1[1] = callback(tmp9, obj1);
     obj[0] = items1;
     tmp8Result = tmp8(closure_5, obj);
@@ -49,7 +49,7 @@ export default function Footer(showSubscribeButton) {
   if (!showSubscribeButton) {
     easterEggSpacing = tmp.easterEggSpacing;
   }
-  const tmp2Result = importDefault(5307);
+  const tmp2Result = importDefault(5308);
   items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: importDefault(12830) });
   obj[1] = items2;
   return closure_6(View, obj);

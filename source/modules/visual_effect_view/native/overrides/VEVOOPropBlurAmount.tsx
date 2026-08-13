@@ -1,8 +1,8 @@
-// Module ID: 15131
-// Function ID: 15132
-// Dependencies: [32, 19, 4745, 21, 4344, 8008, 5808, 15132, 2]
+// Module ID: 15140
+// Function ID: 15141
+// Dependencies: [32, 19, 4746, 21, 4342, 8012, 5809, 15141, 2]
 
-// Module 15131
+// Module 15140
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import useVisualEffectViewOverrides from "useVisualEffectViewOverrides";
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo(function VEVOOPropBlurAmount() {
   if (str == null) {
     str = "";
   }
-  obj = { label: "Blur Amount " + str, leadingStyle: tmp.enabledSwitchStyle, leading: tmp7(require(5808) /* FormSwitch */.FormSwitch, obj), subLabel: tmp7(first(15132), obj1), disabled: !tmp3 };
+  obj = { label: "Blur Amount " + str, leadingStyle: tmp.enabledSwitchStyle, leading: tmp7(require(5809) /* FormSwitch */.FormSwitch, obj), subLabel: tmp7(first(15141), obj1), disabled: !tmp3 };
   obj = {
     value: tmp3,
     onValueChange(arg0) {
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo(function VEVOOPropBlurAmount() {
   };
   const ref = importAllResult.useRef(first);
   const tmp8 = require;
-  return jsx(require(8008) /* Form */.FormRow, {
+  return jsx(require(8012) /* Form */.FormRow, {
     value: tmp3,
     onValueChange(arg0) {
       callback(arg0);

@@ -1,10 +1,10 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 10843
+// Function ID: 10844
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 4072, 9232, 10930, 2]
+// Dependencies: [19, 17, 21, 4072, 9236, 10844, 2]
 // Exports: VoicePanelRiveMicButton
 
-// Module 10929 (VoicePanelRiveMicButton)
+// Module 10843 (VoicePanelRiveMicButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -25,9 +25,9 @@ export const VoicePanelRiveMicButton = function VoicePanelRiveMicButton(arg0) {
   }
   obj[1] = str;
   if (muted) {
-    let MicrophoneIcon = tmp3(9232).MicrophoneSlashIcon;
+    let MicrophoneIcon = tmp3(9236).MicrophoneSlashIcon;
   } else {
-    MicrophoneIcon = tmp3(10930).MicrophoneIcon;
+    MicrophoneIcon = tmp3(10844).MicrophoneIcon;
   }
   obj[2] = <MicrophoneIcon color={color} />;
   obj[1] = jsx(require(4072) /* ManaContext */.MicrophoneRive, { fill: color, on: !muted });

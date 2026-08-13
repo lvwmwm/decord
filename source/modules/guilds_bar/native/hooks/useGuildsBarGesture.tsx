@@ -1,10 +1,10 @@
-// Module ID: 15478
-// Function ID: 15479
+// Module ID: 15487
+// Function ID: 15488
 // Name: getDropIndex
-// Dependencies: [5, 19, 17, 1910, 5195, 15479, 15480, 4083, 636, 4313, 1363, 12, 1208, 1236, 8049, 15225, 4065, 712, 3974, 10298, 705, 5271, 8743, 8644, 500, 1628, 4740, 15481, 15482, 14406, 5466, 2]
+// Dependencies: [5, 19, 17, 1910, 5196, 15488, 15489, 4083, 636, 4311, 1363, 12, 1208, 1236, 8053, 15234, 4065, 712, 3974, 11135, 705, 5272, 8747, 8648, 500, 1628, 4741, 15490, 15491, 14415, 5467, 2]
 // Exports: default
 
-// Module 15478 (getDropIndex)
+// Module 15487 (getDropIndex)
 import withEqualityFn from "withEqualityFn";
 import closure_4 from "t";
 import { Dimensions } from "Themes";
@@ -85,7 +85,7 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
       obj[0] = tmp39;
       AccessibilityAnnouncer.announce(intl12.formatToPlainString(require(1236) /* getSystemLocale */.t["vHD/Je"], obj));
     }
-    lib(require(4313) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_START);
+    lib(require(4311) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_START);
     lib.flush();
   } else if ("drag-move" === type) {
     type = undefined;
@@ -120,7 +120,7 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
     }
     if (tmp7 !== tmp8Result) {
       let fKYRlM = dependencyMap;
-      lib(require(4313) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
+      lib(require(4311) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
       ({ dragNode, overNode, overState: overState2 } = type);
       if ("convert-before" !== overState2) {
         if ("convert-after" !== overState2) {
@@ -227,7 +227,7 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
     }
     tmp8Result = tmp8(type.dragNode, type.overNode, type.overState);
   } else if ("drag-drop" === type) {
-    lib(require(4313) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_END);
+    lib(require(4311) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_END);
     lib.flush();
     lib2.flush();
     const AccessibilityAnnouncer2 = require(1363) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
@@ -278,8 +278,8 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, current) {
         GUILDS = store2.getFastListGuildFolders()[item.section - tmp8.GUILDS];
         if (null != GUILDS) {
           const type = item.type;
-          if (require(8049) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
-            if (tmp10(8049).FastListItemTypes.ITEM === type) {
+          if (require(8053) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
+            if (tmp10(8053).FastListItemTypes.ITEM === type) {
               if (GUILDS.type !== GuildsNodeType.ROOT) {
                 let tmp13 = GUILDS;
                 if (GUILDS.type !== tmp12.FOLDER) {
@@ -648,7 +648,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    state.setStateShallow({ dragSpecs: "isArray", overSpecs: "accessibilityRole" });
+    state.setStateShallow({ dragSpecs: "Array", overSpecs: "ct" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj5 = {};
@@ -782,7 +782,7 @@ export default function useGuildsBarGesture() {
             }
           }
         }
-        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: -1 };
+        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: "Array" };
         obj5[0] = obj;
         obj5[2] = sum;
         setStateShallow(obj5);

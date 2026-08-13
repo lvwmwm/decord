@@ -1,7 +1,7 @@
 // Module ID: 12626
 // Function ID: 12627
 // Name: ForLaterDeletedMessageCard
-// Dependencies: [5, 19, 17, 3989, 676, 21, 4344, 712, 5415, 7834, 4340, 1236, 7792, 4304, 10318, 10326, 4549, 698, 8424, 3943, 12627, 589, 12628, 12631, 12632, 12633, 2]
+// Dependencies: [5, 19, 17, 3989, 676, 21, 4342, 712, 5416, 7838, 4338, 1236, 7796, 4302, 11155, 11162, 4550, 698, 8428, 3943, 12627, 589, 12628, 12631, 12632, 12633, 2]
 
 // Module 12626 (ForLaterDeletedMessageCard)
 import closure_3 from "jsxProd";
@@ -75,7 +75,7 @@ const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessag
   const throttledNow = savedMessage.throttledNow;
   let savedMessageChannel;
   let tmp = callback3();
-  let obj = savedMessage(10326);
+  let obj = savedMessage(11162);
   savedMessageChannel = obj.useSavedMessageChannel(savedMessage);
   const items = [savedMessage, savedMessageChannel];
   callback = importAllResult.useCallback(callback(function*() {
@@ -286,7 +286,7 @@ const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessag
         obj4[1] = callback2(tmp2(12633).ForLaterMessageRow, obj5);
         items2[3] = callback2(View, obj4);
         obj[5] = items2;
-        return closure_11(tmp2(5415).Card, obj);
+        return closure_11(tmp2(5416).Card, obj);
       }
     }
   }

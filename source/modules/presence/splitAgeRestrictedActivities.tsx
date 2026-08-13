@@ -1,7 +1,7 @@
 // Module ID: 13094
 // Function ID: 13095
 // Name: splitAgeRestrictedActivities
-// Dependencies: [13095, 10703, 2]
+// Dependencies: [13095, 10617, 2]
 // Exports: default
 
 // Module 13094 (splitAgeRestrictedActivities)
@@ -18,7 +18,7 @@ export default function splitAgeRestrictedActivities(arg0, arg1) {
       let tmp5 = nextResult;
       let tmp6 = require;
       let tmp7 = dependencyMap;
-      let obj2 = require(10703) /* isAgeRestrictedClassificationReference */;
+      let obj2 = require(10617) /* isAgeRestrictedClassificationReference */;
       if (obj2.isAgeRestrictedClassificationReference(nextResult.content_classification)) {
         let tmp10 = nextResult;
         let arr = items1.push(tmp5);

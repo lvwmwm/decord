@@ -1,10 +1,10 @@
-// Module ID: 11480
-// Function ID: 11481
+// Module ID: 11476
+// Function ID: 11477
 // Name: useChatInputHeightWorklet
-// Dependencies: [19, 500, 4083, 11432, 11433, 11434, 2]
+// Dependencies: [19, 500, 4083, 11423, 11424, 11425, 2]
 // Exports: default, getIsChatInputHeightWorkletEnabled
 
-// Module 11480 (useChatInputHeightWorklet)
+// Module 11476 (useChatInputHeightWorklet)
 import noop from "noop";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 4863
-// Function ID: 4864
+// Module ID: 4864
+// Function ID: 4865
 // Name: LockIcon
-// Dependencies: [19, 21, 712, 4064, 4839, 2]
+// Dependencies: [19, 21, 712, 4064, 4840, 2]
 // Exports: LockIcon
 
-// Module 4863 (LockIcon)
+// Module 4864 (LockIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const LockIcon = function LockIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4839) /* registerAsset */;
+  obj[0] = require(4840) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

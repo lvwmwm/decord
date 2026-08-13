@@ -1,9 +1,9 @@
-// Module ID: 14531
-// Function ID: 14532
+// Module ID: 14540
+// Function ID: 14541
 // Name: result
 // Dependencies: [676, 1985, 2]
 
-// Module 14531 (result)
+// Module 14540 (result)
 import fromServerArray from "fromServerArray";
 
 const result = fromServerArray.constructGuildRoleInPlace({ id: "0", guildId: "0", name: "", mentionable: false, managed: false, position: 0, hoist: false, permissions: require("ME").Permissions.SEND_MESSAGES, color: 0, colors: { primary_color: 0, secondary_color: null, tertiary_color: null }, colorString: "0", colorStrings: { primaryColor: "0", secondaryColor: null, tertiaryColor: null }, icon: null, unicodeEmoji: null, flags: 0, description: null, tags: {}, version: 0 });

@@ -1,9 +1,9 @@
-// Module ID: 5897
-// Function ID: 5898
+// Module ID: 5899
+// Function ID: 5900
 // Name: updateProduct
-// Dependencies: [5898, 505, 5894, 4022, 589, 709, 2]
+// Dependencies: [5900, 505, 5896, 4022, 589, 709, 2]
 
-// Module 5897 (updateProduct)
+// Module 5899 (updateProduct)
 import GPlayConnectionState from "GPlayConnectionState";
 import { CurrencyCodes } from "sum";
 import { Store } from "initialize";
@@ -14,8 +14,8 @@ function updateProduct(currencyCode) {
   const result = currencyCode.price / 100;
   if ("BG" === c14) {
     if (formatted === CurrencyCodes.EUR) {
-      let formatDualPriceForBGResult = require(5894) /* formatSingleCurrencyPrice */.formatDualPriceForBG(result, { convertToMajorUnits: false });
-      const obj2 = require(5894) /* formatSingleCurrencyPrice */;
+      let formatDualPriceForBGResult = require(5896) /* formatSingleCurrencyPrice */.formatDualPriceForBG(result, { convertToMajorUnits: false });
+      const obj2 = require(5896) /* formatSingleCurrencyPrice */;
     }
     let obj = {};
     const merged = Object.assign(currencyCode);
@@ -24,7 +24,7 @@ function updateProduct(currencyCode) {
     obj.priceString = formatDualPriceForBGResult;
     return obj;
   }
-  obj = require(5894) /* formatSingleCurrencyPrice */;
+  obj = require(5896) /* formatSingleCurrencyPrice */;
   formatDualPriceForBGResult = obj.formatSingleCurrencyPrice(result, formatted, { convertToMajorUnits: false });
 }
 function skusLoaded(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16351
+// Function ID: 16352
 // Name: VideoButtonRive
-// Dependencies: [19, 17, 10716, 1391, 1910, 4392, 3989, 21, 11705, 16327, 589, 7225, 4684, 16341, 9194, 10733, 16328, 1236, 4072, 7755, 12389, 2]
+// Dependencies: [19, 17, 10630, 1391, 1910, 4393, 3989, 21, 11703, 16338, 589, 7230, 4685, 16352, 9198, 10647, 16339, 1236, 4072, 7759, 12389, 2]
 // Exports: default
 
-// Module 16340 (VideoButtonRive)
+// Module 16351 (VideoButtonRive)
 import VideoIcon from "VideoIcon";
 import { View } from "getSystemLocale";
 import initialize from "initialize";
@@ -27,7 +27,7 @@ function VideoButtonRive(arg0) {
   }
   obj[1] = str;
   if (isVideoEnabled) {
-    let VideoSlashIcon = tmp3(7755).VideoIcon;
+    let VideoSlashIcon = tmp3(7759).VideoIcon;
   } else {
     VideoSlashIcon = tmp3(12389).VideoSlashIcon;
   }

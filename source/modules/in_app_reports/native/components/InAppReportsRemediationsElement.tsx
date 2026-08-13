@@ -1,7 +1,7 @@
 // Module ID: 12712
 // Function ID: 12713
 // Name: RemediationsElement
-// Dependencies: [19, 17, 21, 4344, 712, 5806, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5807, 1236, 2]
 // Exports: default
 
 // Module 12712 (RemediationsElement)
@@ -23,6 +23,6 @@ export default function RemediationsElement(children) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["k+QA9N"]);
   obj[2] = children.children;
-  obj[1] = jsx(require(5806) /* TableRowGroupTitle */.TableRowGroup, { title: null, hasIcons: true, children: null });
+  obj[1] = jsx(require(5807) /* TableRowGroupTitle */.TableRowGroup, { title: null, hasIcons: true, children: null });
   return <View title={null} hasIcons>{null}</View>;
 };

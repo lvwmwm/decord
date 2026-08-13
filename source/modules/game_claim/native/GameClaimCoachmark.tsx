@@ -1,10 +1,10 @@
-// Module ID: 15386
-// Function ID: 15387
+// Module ID: 15395
+// Function ID: 15396
 // Name: PX_8
-// Dependencies: [5, 19, 17, 676, 1388, 21, 712, 15387, 9498, 4758, 4344, 15388, 12413, 1236, 5415, 4886, 5365, 4340, 4754, 7996, 5972, 2]
+// Dependencies: [5, 19, 17, 676, 1388, 21, 712, 15396, 9502, 4759, 4342, 15397, 12413, 1236, 5416, 4887, 5366, 4338, 4755, 8000, 5974, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 15386 (PX_8)
+// Module 15395 (PX_8)
 import closure_3 from "jsxProd";
 import { View } from "Text";
 import ME from "ME";
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let require;
   ({ guild, markAsDismissed: require } = arg0);
   const tmp = callback4();
-  let obj = require(15388) /* fetchUnclaimedGames */;
+  let obj = require(15397) /* fetchUnclaimedGames */;
   let first = obj.useUnclaimedGameIdsForGuild(guild.id)[0];
   if (first == null) {
     first = null;
@@ -68,30 +68,30 @@ const memoResult = importAllResult.memo((arg0) => {
       return callback(outer1_7.USER_DISMISS);
     };
     obj[2] = tmp.closeButton;
-    obj[3] = callback2(tmp2(5365).XSmallIcon, { size: "sm", color: "text-default" });
-    const items = [callback2(tmp2(4886).PressableOpacity, obj), , , , ];
+    obj[3] = callback2(tmp2(5366).XSmallIcon, { size: "sm", color: "text-default" });
+    const items = [callback2(tmp2(4887).PressableOpacity, obj), , , , ];
     let obj1 = { imageSrc: null };
     obj1[0] = coverImageUrl;
-    items[1] = callback2(tmp5(15387), obj1);
+    items[1] = callback2(tmp5(15396), obj1);
     const obj2 = { variant: "text-md/medium", color: "text-overlay-light", style: null, children: null };
     obj2[2] = tmp.centeredText;
     const intl2 = tmp2(1236).intl;
     const obj3 = { gameName: null };
     obj3[0] = tmp8;
     obj2[3] = intl2.format(tmp2(1236).t.Q11WTQ, obj3);
-    items[2] = callback2(tmp2(4340).Text, obj2);
+    items[2] = callback2(tmp2(4338).Text, obj2);
     const obj4 = { variant: "text-sm/normal", color: "text-overlay-light", style: null, children: null };
     const items1 = [, ];
     ({ body: arr2[0], centeredText: arr2[1] } = tmp);
     obj4[2] = items1;
     obj4[3] = stringResult;
-    items[3] = callback2(tmp2(4340).Text, obj4);
+    items[3] = callback2(tmp2(4338).Text, obj4);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.cta;
     const obj6 = { variant: "primary", size: "sm", text: null, icon: null, iconPosition: "end", onPress: null };
     const intl3 = tmp2(1236).intl;
     obj6[2] = intl3.string(tmp2(1236).t["2u6ZlY"]);
-    obj6[3] = callback2(tmp2(7996).LinkExternalSmallIcon, { size: "xs", color: "white" });
+    obj6[3] = callback2(tmp2(8000).LinkExternalSmallIcon, { size: "xs", color: "white" });
     obj6[5] = callback(function*() {
       if (v0 === 2) {
         v0 = 3;
@@ -145,10 +145,10 @@ const memoResult = importAllResult.memo((arg0) => {
         }
       }
     });
-    obj5[1] = callback2(tmp2(4754).Button, obj6);
+    obj5[1] = callback2(tmp2(4755).Button, obj6);
     items[4] = callback2(View, obj5);
     obj[2] = items;
-    return callback3(tmp2(5415).Card, obj);
+    return callback3(tmp2(5416).Card, obj);
   }
   const tmp6Result = importDefault(12413)(first, intl.string(require(1236) /* getSystemLocale */.t.VQq92a));
 });
@@ -159,11 +159,11 @@ export const GAME_CLAIM_NOTICE_MARGIN_TOP = PX_8;
 export const GAME_CLAIM_NOTICE_MARGIN_BOTTOM = PX_82;
 export const getScaledGameClaimNoticeHeight = function getScaledGameClaimNoticeHeight(fontScale) {
   const sum = PX_8 + closure_12;
-  const sum1 = sum + require(15387) /* importDefaultResult1 */.CARD_STACK_HEIGHT;
-  const sum2 = sum1 + require(9498) /* map */.scaleTextLineHeight("text-md/medium", fontScale);
+  const sum1 = sum + require(15396) /* importDefaultResult1 */.CARD_STACK_HEIGHT;
+  const sum2 = sum1 + require(9502) /* map */.scaleTextLineHeight("text-md/medium", fontScale);
   const sum3 = sum2 + importDefault(712).space.PX_4;
-  const obj = require(9498) /* map */;
-  const result = 2 * require(9498) /* map */.scaleTextLineHeight("text-sm/normal", fontScale);
+  const obj = require(9502) /* map */;
+  const result = 2 * require(9502) /* map */.scaleTextLineHeight("text-sm/normal", fontScale);
   const sum4 = sum3 + result + importDefault(712).space.PX_8;
-  return sum4 + require(4758) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT + PX_82;
+  return sum4 + require(4759) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT + PX_82;
 };

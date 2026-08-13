@@ -1,7 +1,7 @@
 // Module ID: 13066
 // Function ID: 13067
 // Name: showVoiceChannelBlockedUserWarning
-// Dependencies: [6917, 13061, 13064, 691, 4312, 13067, 2007, 503, 2]
+// Dependencies: [6923, 13061, 13064, 691, 4310, 13067, 2007, 503, 2]
 // Exports: showVoiceChannelBlockedUserWarning
 
 // Module 13066 (showVoiceChannelBlockedUserWarning)
@@ -19,7 +19,7 @@ export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlock
   state = state.getState();
   if (state === require(691) /* keys */.AppStates.ACTIVE) {
     callback2();
-    let obj = importDefault(4312);
+    let obj = importDefault(4310);
     obj = { channelId: null, blockedUserId: null, impressionName: null, impressionProperties: null };
     obj[0] = channelId;
     obj[1] = id;

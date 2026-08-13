@@ -1,9 +1,9 @@
-// Module ID: 8201
-// Function ID: 8202
+// Module ID: 8205
+// Function ID: 8206
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8201 (metadata)
+// Module 8205 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/premium/referral_program/trialExchange.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/bde1765167f3154dff99951b62a65a1845523ec46c9da26734b37f25125ec586.png";

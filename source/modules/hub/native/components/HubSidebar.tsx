@@ -1,10 +1,10 @@
-// Module ID: 15407
-// Function ID: 15408
+// Module ID: 15416
+// Function ID: 15417
 // Name: HubItem
-// Dependencies: [19, 17, 1980, 1979, 676, 9841, 21, 4344, 712, 11813, 1297, 589, 15408, 15409, 13928, 1236, 4352, 12168, 11740, 4282, 9110, 2]
+// Dependencies: [19, 17, 1980, 1979, 676, 9844, 21, 4342, 712, 11811, 1297, 589, 15417, 15418, 13932, 1236, 4353, 12170, 11738, 4280, 9114, 2]
 // Exports: default
 
-// Module 15407 (HubItem)
+// Module 15416 (HubItem)
 import "UserPlusIcon";
 import { View } from "PlusMediumIcon";
 import comparator from "comparator";
@@ -24,7 +24,7 @@ function HubItem(arg0) {
   let unreadCount;
   ({ label, unreadCount } = arg0);
   ({ IconComponent, handleItemClick, active } = arg0);
-  const ChannelModes = require(11813) /* BaseChannelSubtitle */.ChannelModes;
+  const ChannelModes = require(11811) /* BaseChannelSubtitle */.ChannelModes;
   if (active) {
     let DEFAULT = ChannelModes.SELECTED;
     let tmp5 = tmp2;
@@ -34,8 +34,8 @@ function HubItem(arg0) {
   }
   let obj = { style: createCacheKey().container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: null, icon: null, channelInfo: null };
   const tmp = createCacheKey();
-  obj[6] = callback(tmp5(11813).BaseChannelName, { name: label, mode: DEFAULT });
-  obj[7] = callback(tmp5(11813).BaseChannelIcon, { mode: DEFAULT, IconComponent });
+  obj[6] = callback(tmp5(11811).BaseChannelName, { name: label, mode: DEFAULT });
+  obj[7] = callback(tmp5(11811).BaseChannelIcon, { mode: DEFAULT, IconComponent });
   let tmp6Result = null;
   if (null != unreadCount) {
     obj = { value: null };
@@ -43,7 +43,7 @@ function HubItem(arg0) {
     tmp6Result = tmp6(tmp5(1297).Badge, obj);
   }
   obj[8] = tmp6Result;
-  return callback(importDefault(11813), obj);
+  return callback(importDefault(11811), obj);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 createCacheKey = { container: null, row: null };
@@ -73,7 +73,7 @@ export default function HubSidebar(guild) {
     }
     return tmp2;
   });
-  guild(15408);
+  guild(15417);
   let tmp9Result = null;
   if (null != stateFromStores) {
     let row = null;
@@ -84,33 +84,33 @@ export default function HubSidebar(guild) {
     obj[0] = row;
     obj = { guild: null };
     obj[0] = guild;
-    const items4 = [callback(stateFromStores(15409), obj), , , ];
+    const items4 = [callback(stateFromStores(15418), obj), , , ];
     obj1 = { active: null, IconComponent: null, label: null, handleItemClick: null, unreadCount: null };
     obj1[0] = stateFromStores1;
-    obj1[1] = tmp(13928).CompassIcon;
+    obj1[1] = tmp(13932).CompassIcon;
     const intl = tmp(1236).intl;
     obj1[2] = intl.string(tmp(1236).t.K50GHd);
     obj1[3] = function handleItemClick() {
-      guild(4352).transitionToChannel(stateFromStores.id);
+      guild(4353).transitionToChannel(stateFromStores.id);
     };
     obj1[4] = tmp7;
     items4[1] = callback(HubItem, obj1);
     obj2 = { IconComponent: null, label: null, handleItemClick: null };
-    obj2[0] = tmp(12168).PlusMediumIcon;
+    obj2[0] = tmp(12170).PlusMediumIcon;
     const intl2 = tmp(1236).intl;
     obj2[1] = intl2.string(tmp(1236).t.emRpdS);
     obj2[2] = function handleItemClick() {
-      let obj = stateFromStores(11740);
+      let obj = stateFromStores(11738);
       obj = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: stateFromStores.id };
       return obj.open(obj);
     };
     items4[2] = callback(HubItem, obj2);
     const obj3 = { IconComponent: null, label: null, handleItemClick: null };
-    obj3[0] = tmp(4282).UserPlusIcon;
+    obj3[0] = tmp(4280).UserPlusIcon;
     const intl3 = tmp(1236).intl;
     obj3[1] = intl3.string(tmp(1236).t.MJQOuJ);
     obj3[2] = function handleItemClick() {
-      const result = guild(9110).handleOpenInviteActionsheet(guild, stateFromStores.id, dependencyMap, outer1_6.GUILD_HEADER);
+      const result = guild(9114).handleOpenInviteActionsheet(guild, stateFromStores.id, dependencyMap, outer1_6.GUILD_HEADER);
     };
     items4[3] = callback(HubItem, obj3);
     obj[1] = items4;

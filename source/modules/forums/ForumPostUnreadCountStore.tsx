@@ -1,9 +1,9 @@
-// Module ID: 8449
-// Function ID: 8450
+// Module ID: 8453
+// Function ID: 8454
 // Name: set
-// Dependencies: [5263, 1391, 4356, 589, 38, 709, 2]
+// Dependencies: [5264, 1391, 4357, 589, 38, 709, 2]
 
-// Module 8449 (set)
+// Module 8453 (set)
 import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import generateOldThreadCutoff from "generateOldThreadCutoff";

@@ -1,10 +1,10 @@
-// Module ID: 11614
-// Function ID: 11615
+// Module ID: 11610
+// Function ID: 11611
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [19, 17, 1498, 21, 4344, 712, 5436, 5435, 5804, 4312, 1297, 2]
+// Dependencies: [19, 17, 1498, 21, 4342, 712, 5437, 5436, 5805, 4310, 1297, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 11614 (AppLauncherCommandOptionActionSheet)
+// Module 11610 (AppLauncherCommandOptionActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -45,7 +45,7 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   obj.startExpanded = flag;
   obj = { titleContainerStyle: tmp2.titleContainer, titleWrapperStyle: tmp2.titleWrapper, subtitleStyle: tmp2.subtitleWrapper, leading: null, title: null, subtitle: null, trailing: null };
   obj = { style: { alignSelf: "flex-start" }, children: null };
-  obj[1] = jsx(merged(5804).ActionSheetCloseButton, {
+  obj[1] = jsx(merged(5805).ActionSheetCloseButton, {
     onPress() {
       outer1_1(outer1_2[9]).hideActionSheet();
       const onDismiss = merged.onDismiss;
@@ -57,8 +57,8 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   obj[3] = <View style={{ alignSelf: "flex-start" }}>{null}</View>;
   ({ displayName: obj2[4], displayDescription: obj2[5] } = option);
   obj[6] = jsx(merged(1297).Spacer, { size: 24 });
-  obj.header = jsx(merged(5435).BottomSheetTitleHeader, { style: { alignSelf: "flex-start" }, children: null });
+  obj.header = jsx(merged(5436).BottomSheetTitleHeader, { style: { alignSelf: "flex-start" }, children: null });
   const items = [tmp2.contentContainer, contentContainerStyles];
   obj.children = <View style={items}>{children}</View>;
-  return jsx(merged(5436).BottomSheet, { style: { alignSelf: "flex-start" }, children: null }, option.name);
+  return jsx(merged(5437).BottomSheet, { style: { alignSelf: "flex-start" }, children: null }, option.name);
 };

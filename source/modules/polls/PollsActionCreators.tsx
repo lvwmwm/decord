@@ -1,9 +1,9 @@
-// Module ID: 10329
-// Function ID: 10330
+// Module ID: 11165
+// Function ID: 11166
 // Name: getPollVoteEventProperties
-// Dependencies: [5, 3990, 7096, 1218, 1391, 4680, 5171, 4561, 4679, 8365, 676, 38, 4682, 1236, 5271, 10330, 8364, 4538, 12, 589, 709, 7262, 10335, 1363, 8369, 6959, 8402, 4243, 2]
+// Dependencies: [5, 3990, 7102, 1218, 1391, 4681, 5172, 4562, 4680, 8369, 676, 38, 4683, 1236, 5272, 11166, 8368, 4539, 12, 589, 709, 7267, 11171, 1363, 8373, 6965, 8406, 4241, 2]
 
-// Module 10329 (getPollVoteEventProperties)
+// Module 11165 (getPollVoteEventProperties)
 import handleChanged from "handleChanged";
 import initialize from "initialize";
 import processMessage from "processMessage";
@@ -60,7 +60,7 @@ function showLurkingAlert(guildId) {
   let title;
   guildId = guildId.guildId;
   ({ title, body } = guildId);
-  let obj = importDefault(4682);
+  let obj = importDefault(4683);
   obj = { title, body, confirmText: null, cancelText: null, onConfirm: null };
   const intl = guildId(1236).intl;
   obj[2] = intl.string(guildId(1236).t["9VLmlZ"]);
@@ -97,8 +97,8 @@ function handleShowVotesForAnswer(messageId) {
         obj = { source: outer1_16.POLL_ALERT };
         obj.joinGuild(guild_id, obj);
       };
-      importDefault(4682).show(obj);
-      const obj3 = importDefault(4682);
+      importDefault(4683).show(obj);
+      const obj3 = importDefault(4683);
     } else {
       const message = store.getMessage(channelId, messageId.messageId);
       if (null != message) {
@@ -108,7 +108,7 @@ function handleShowVotesForAnswer(messageId) {
               const _String = String;
               answerId = String(message.poll.answers[0].answer_id);
             }
-            obj = importAll(10330);
+            obj = importAll(11166);
             obj = { message: null, initialAnswerId: null };
             obj[0] = message;
             obj[1] = answerId;
@@ -260,7 +260,7 @@ function _optimisticallySetAnswers() {
                     let tmp6 = processMessage;
                     obj[4] = processMessage;
                     let tmp7 = _undefined;
-                    obj[6] = _undefined(7262).ReactionTypes.VOTE;
+                    obj[6] = _undefined(7267).ReactionTypes.VOTE;
                     dispatchResult = obj.dispatch(obj);
                     continue;
                   }
@@ -1009,16 +1009,16 @@ function _createPoll() {
               c5 = 3;
               v0 = 1;
               const obj5 = { value: null, done: false };
-              obj5[0] = lib2(6959).sendPollMessage(lib.id, obj2, obj4);
+              obj5[0] = lib2(6965).sendPollMessage(lib.id, obj2, obj4);
               return obj5;
             }
           } else if (2 === tmp7) {
             c4 = 0;
             let recomputeGuild = dependencyMap;
-            if (recomputeGuild instanceof lib(4243).APIError) {
+            if (recomputeGuild instanceof lib(4241).APIError) {
               let aPIError = recomputeGuild;
             } else {
-              aPIError = new lib(4243).APIError(recomputeGuild);
+              aPIError = new lib(4241).APIError(recomputeGuild);
             }
             if ("poll" === aPIError.getAnyErrorMessage()) {
               if (null != recomputeGuild.text) {
@@ -1133,7 +1133,7 @@ function _endPollEarly() {
               dependencyMap = 2;
               c4 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback2(4682).confirm(obj2);
+              obj3[0] = callback2(4683).confirm(obj2);
               return obj3;
             }
           } else {
@@ -1147,7 +1147,7 @@ function _endPollEarly() {
                 obj4[0] = arg1;
                 return obj4;
               } else if (arg1) {
-                obj1 = callback3(10335);
+                obj1 = callback3(11171);
                 const obj5 = { channelId: null, messageId: null };
                 obj5[0] = callback;
                 obj5[1] = callback2;

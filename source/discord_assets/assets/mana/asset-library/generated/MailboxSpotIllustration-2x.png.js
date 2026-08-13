@@ -1,9 +1,9 @@
-// Module ID: 6550
-// Function ID: 6551
+// Module ID: 6554
+// Function ID: 6555
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6550 (metadata)
+// Module 6554 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MailboxSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/8d28399febec22cbbc167016ac62ed3faa66e6a5743b5a883a7f9bd97723daf1.png";

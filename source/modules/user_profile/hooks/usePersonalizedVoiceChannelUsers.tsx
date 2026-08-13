@@ -1,7 +1,7 @@
 // Module ID: 12368
 // Function ID: 12369
 // Name: usePersonalizedVoiceChannelUsers
-// Dependencies: [7160, 5868, 1922, 4416, 676, 589, 2]
+// Dependencies: [7166, 5869, 1922, 4417, 676, 589, 2]
 // Exports: default
 
 // Module 12368 (usePersonalizedVoiceChannelUsers)

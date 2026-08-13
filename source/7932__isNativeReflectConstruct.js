@@ -1,7 +1,7 @@
 // Module ID: 7932
 // Function ID: 7933
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7933, 7914, 7915]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7933, 7918, 7919]
 
 // Module 7932 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const FeMerge = arg1;
+const FeOffset = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeMerge {
+class FeOffset {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeMerge);
+    tmp = _isNativeReflectConstruct(this, FeOffset);
     tmp2 = __esModule;
-    obj = __esModule(FeMerge);
+    obj = __esModule(FeOffset);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,30 +51,33 @@ class FeMerge {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeMerge, require("_isNativeReflectConstruct"));
+require("_inherits")(FeOffset, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
     const self = this;
+    const merged = Object.assign(this.props);
     const obj = {
       ref(arg0) {
         return self.refMethod(arg0);
       }
     };
     const tmp = importDefault(7933);
-    const merged = Object.assign(self(7914).extractFilter(this.props));
-    const obj2 = self(7914);
-    const merged1 = Object.assign(self(7914).extractFeMerge(this.props, this));
+    const merged1 = Object.assign(self(7918).extractFilter(this.props));
+    const obj2 = self(7918);
+    const merged2 = Object.assign(self(7918).extractIn(this.props));
     return <tmp ref={function ref(arg0) {
       return self.refMethod(arg0);
     }} />;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeMerge, items);
-importDefaultResultResult.displayName = "FeMerge";
+const importDefaultResultResult = importDefaultResult(FeOffset, items);
+importDefaultResultResult.displayName = "FeOffset";
 obj = {};
 let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.dx = 0;
+obj.dy = 0;
 importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

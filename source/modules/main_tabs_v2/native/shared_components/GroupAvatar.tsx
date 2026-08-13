@@ -1,7 +1,7 @@
 // Module ID: 12382
 // Function ID: 12383
 // Name: AnimatedContainer
-// Dependencies: [19, 17, 4336, 21, 4344, 712, 5198, 1367, 1363, 5368, 647, 4083, 4345, 4753, 8236, 4340, 5307, 2]
+// Dependencies: [19, 17, 4334, 21, 4342, 712, 5199, 1367, 1363, 5369, 647, 4083, 4343, 4754, 8240, 4338, 5308, 2]
 // Exports: default
 
 // Module 12382 (AnimatedContainer)
@@ -122,7 +122,7 @@ function AnimatedContainer(scale) {
 }
 function GroupMemberCount(count) {
   count = count.count;
-  let obj = require(8236) /* apexExperiment */;
+  let obj = require(8240) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GroupAvatar");
   const tmp3 = callback2(importDefault(1367)("GroupAvatar"));
   obj = { style: tmp3.avatarWrapper, children: null };
@@ -135,7 +135,7 @@ function GroupMemberCount(count) {
     }
   }
   const items = ["+", count];
-  obj[1] = closure_7(require(4340) /* Text */.Text, { variant: str, children: items });
+  obj[1] = closure_7(require(4338) /* Text */.Text, { variant: str, children: items });
   obj[1] = closure_6(View, obj);
   return closure_6(View, obj);
 }
@@ -158,7 +158,7 @@ function GroupMemberAvatar(guildId) {
     obj = { style: null, source: null };
     obj[0] = tmp3.avatar;
     obj[1] = memo;
-    obj[1] = callback(user(5307), obj);
+    obj[1] = callback(user(5308), obj);
     tmp5 = callback(View, obj);
   }
   return tmp5;
@@ -227,7 +227,7 @@ let closure_12 = createCacheKey.createStyles((arg0) => {
   const obj4 = { shadowColor: BLACK1, shadowOpacity: null, shadowOffset: null, shadowRadius: null };
   let DARK_03_LIGHT_02;
   if (!arg0) {
-    DARK_03_LIGHT_02 = require(5198) /* result */.DARK_03_LIGHT_02;
+    DARK_03_LIGHT_02 = require(5199) /* result */.DARK_03_LIGHT_02;
   }
   obj4[1] = DARK_03_LIGHT_02;
   let obj5;

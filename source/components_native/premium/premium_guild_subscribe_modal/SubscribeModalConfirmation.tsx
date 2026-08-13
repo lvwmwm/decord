@@ -1,7 +1,7 @@
 // Module ID: 12943
 // Function ID: 12944
 // Name: PendingCancellationWarning
-// Dependencies: [5, 19, 17, 11981, 1910, 4237, 4013, 676, 6937, 4232, 21, 4344, 4193, 712, 589, 4236, 8490, 4340, 1236, 12944, 12945, 4754, 12954, 4765, 691, 698, 12911, 38, 4240, 4683, 12958, 2007, 2]
+// Dependencies: [5, 19, 17, 11983, 1910, 4235, 4013, 676, 6943, 4230, 21, 4342, 4191, 712, 589, 4234, 8494, 4338, 1236, 12944, 12945, 4755, 12954, 4766, 691, 698, 12911, 38, 4238, 4684, 12958, 2007, 2]
 // Exports: default
 
 // Module 12943 (PendingCancellationWarning)
@@ -47,7 +47,7 @@ function PendingCancellationWarning(slots) {
       obj[0] = tmp.pendingCancellation;
       obj = { style: null, source: null };
       obj[0] = tmp.pendingCancellationIcon;
-      obj[1] = importDefault(8490);
+      obj[1] = importDefault(8494);
       const items1 = [callback(closure_6, obj), ];
       const obj1 = { style: null, variant: "text-sm/medium", children: null };
       obj1[0] = tmp.pendingCancellationMessage;
@@ -56,7 +56,7 @@ function PendingCancellationWarning(slots) {
       obj2[0] = stateFromStores.currentPeriodEnd;
       obj2[1] = found.length;
       obj1[2] = intl.format(tmp2(1236).t.SFpsCH, obj2);
-      items1[1] = callback(tmp2(4340).Text, obj1);
+      items1[1] = callback(tmp2(4338).Text, obj1);
       obj[1] = items1;
       tmp5 = callback2(closure_7, obj);
     }
@@ -77,14 +77,14 @@ function SubscribeConfirmation(arg0) {
   obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.yTlZV0);
-  items[1] = callback(require(4340) /* Text */.Text, obj);
+  items[1] = callback(require(4338) /* Text */.Text, obj);
   items[2] = callback(importDefault(12945), { style: tmp.guildPreview, guild });
   const obj2 = { style: items1, variant: "text-sm/medium", children: null };
   items1 = [, ];
   ({ blurb: arr2[0], warning: arr2[1] } = tmp);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[2] = intl2.format(require(1236) /* getSystemLocale */.t.KPnDlu, { days: closure_16, slotCount: slots.length });
-  items[3] = callback(require(4340) /* Text */.Text, obj2);
+  items[3] = callback(require(4338) /* Text */.Text, obj2);
   items[4] = callback(PendingCancellationWarning, { slots });
   const obj4 = { style: tmp.confirmButton, children: null };
   const obj5 = { variant: "primary", text: null, onPress: null, loading: null };
@@ -94,7 +94,7 @@ function SubscribeConfirmation(arg0) {
     callback(false);
   };
   obj5[3] = isModifyingSubscription;
-  obj4[1] = callback(require(4754) /* Button */.Button, obj5);
+  obj4[1] = callback(require(4755) /* Button */.Button, obj5);
   items[5] = callback(closure_7, obj4);
   obj[0] = items;
   return callback2(closure_21, obj);
@@ -135,21 +135,21 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj2[0] = tmp.header;
     const intl = tmp2(1236).intl;
     obj2[3] = intl.string(tmp2(1236).t.h92jfS);
-    items1[1] = callback(tmp2(4340).Text, obj2);
+    items1[1] = callback(tmp2(4338).Text, obj2);
     const obj3 = { style: null, variant: "text-sm/medium", children: null };
     obj3[0] = tmp.blurb;
     const intl2 = tmp2(1236).intl;
     const obj4 = { slotCount: null, guildCount: 1 };
     obj4[0] = prop.length;
     obj3[2] = intl2.format(tmp2(1236).t.SSA2lu, obj4);
-    items1[2] = callback(tmp2(4340).Text, obj3);
+    items1[2] = callback(tmp2(4338).Text, obj3);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.transferPreviews;
     const obj6 = { style: null, variant: "eyebrow", color: "text-default", children: null };
     obj6[0] = tmp.previewHeader;
     const intl3 = tmp2(1236).intl;
     obj6[3] = intl3.format(tmp2(1236).t["5zQYEz"], { guildCount: 1 });
-    const items2 = [callback(tmp2(4340).Text, obj6), , , ];
+    const items2 = [callback(tmp2(4338).Text, obj6), , , ];
     const obj7 = { style: null, guild: null };
     obj7[0] = tmp.guildPreview;
     obj7[1] = stateFromStores;
@@ -160,7 +160,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     const obj9 = { slotCount: null };
     obj9[0] = prop.length;
     obj8[3] = intl4.format(tmp2(1236).t.ct6oxD, obj9);
-    items2[2] = callback(tmp2(4340).Text, obj8);
+    items2[2] = callback(tmp2(4338).Text, obj8);
     const obj10 = { style: null, start: null, end: null, colors: null, children: null };
     const items3 = [, ];
     ({ guildPreview: arr5[0], activeTransferGuildCardBorder: arr5[1] } = tmp);
@@ -171,7 +171,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     const obj11 = { guild: null };
     obj11[0] = guild;
     obj10[4] = callback(onPremiumGuildSubscribe(12945), obj11);
-    items2[3] = callback(onPremiumGuildSubscribe(4765), obj10);
+    items2[3] = callback(onPremiumGuildSubscribe(4766), obj10);
     obj5[1] = items2;
     items1[3] = callback2(closure_7, obj5);
     const obj12 = { slots: null };
@@ -188,11 +188,11 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
       return onPremiumGuildSubscribe(true);
     };
     obj14[3] = isModifyingSubscription;
-    obj13[1] = callback(tmp2(4754).Button, obj14);
+    obj13[1] = callback(tmp2(4755).Button, obj14);
     items1[5] = callback(closure_7, obj13);
     obj[0] = items1;
     tmp8 = callback2(closure_21, obj);
-    const tmp15 = onPremiumGuildSubscribe(4765);
+    const tmp15 = onPremiumGuildSubscribe(4766);
   }
   return tmp8;
 }

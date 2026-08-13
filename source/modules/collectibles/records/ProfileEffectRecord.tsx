@@ -1,10 +1,10 @@
-// Module ID: 7049
-// Function ID: 7050
+// Module ID: 7055
+// Function ID: 7056
 // Name: fromServer
 // Dependencies: [1948, 1949, 2]
 // Exports: isProfileEffectRecord
 
-// Module 7049 (fromServer)
+// Module 7055 (fromServer)
 import "fromServer";
 
 const require = arg1;

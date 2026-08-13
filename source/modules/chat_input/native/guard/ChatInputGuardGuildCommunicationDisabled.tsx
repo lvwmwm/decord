@@ -1,8 +1,8 @@
-// Module ID: 11882
-// Function ID: 11883
-// Dependencies: [19, 1992, 21, 11883, 11869, 11312, 1236, 2]
+// Module ID: 11884
+// Function ID: 11885
+// Dependencies: [19, 1992, 21, 11885, 11871, 11303, 1236, 2]
 
-// Module 11882
+// Module 11884
 import { GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK as closure_3 } from "getFriendlyDurationString";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -10,7 +10,7 @@ import importAllResult from "noop";
 const require = arg1;
 const memoResult = require("noop").memo(function CommunicationDisabledNoticeForGuild(guildMember) {
   guildMember = guildMember.guildMember;
-  let obj = require(11883) /* useCommunicationDisabledCountdownCleanup */;
+  let obj = require(11885) /* useCommunicationDisabledCountdownCleanup */;
   const communicationDisabledCountdownCleanup = obj.useCommunicationDisabledCountdownCleanup(guildMember);
   const communicationDisabledUntil = guildMember.communicationDisabledUntil;
   if (null == communicationDisabledUntil) {
@@ -21,14 +21,14 @@ const memoResult = require("noop").memo(function CommunicationDisabledNoticeForG
     date = new Date(communicationDisabledUntil);
   }
   obj = { type: "simple-action", icon: null, message: null, subtext: null, countdown: null };
-  obj[1] = jsx(require(11312) /* ClockWarningIcon */.ClockWarningIcon, {});
+  obj[1] = jsx(require(11303) /* ClockWarningIcon */.ClockWarningIcon, {});
   const intl = tmp(1236).intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.VSpdzK);
   const intl2 = tmp(1236).intl;
   obj = { link: closure_3 };
   obj[3] = intl2.format(require(1236) /* getSystemLocale */.t["4ZwD5G"], obj);
   obj[4] = date;
-  return jsx(importDefault(11869), { link: closure_3 });
+  return jsx(importDefault(11871), { link: closure_3 });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardGuildCommunicationDisabled.tsx");
 

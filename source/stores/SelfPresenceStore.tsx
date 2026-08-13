@@ -1,9 +1,9 @@
-// Module ID: 5036
-// Function ID: 5037
+// Module ID: 5037
+// Function ID: 5038
 // Name: filterPlayingActivities
-// Dependencies: [5037, 1340, 4377, 5168, 4380, 10482, 4430, 4359, 676, 4389, 4034, 1403, 9699, 659, 12, 589, 709, 2]
+// Dependencies: [5038, 1340, 4378, 5169, 4381, 10396, 4431, 4360, 676, 4390, 4034, 1403, 9703, 659, 12, 589, 709, 2]
 
-// Module 5036 (filterPlayingActivities)
+// Module 5037 (filterPlayingActivities)
 import upsertAccount from "upsertAccount";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import gameFromServer from "gameFromServer";
@@ -65,25 +65,25 @@ function shouldShowActivity(flags) {
   } else {
     const type = flags.type;
     if (constants2.LISTENING === type) {
-      if (importDefault(9699)(flags)) {
+      if (importDefault(9703)(flags)) {
         let shouldShowActivityResult = upsertAccount.shouldShowActivity();
       } else {
         shouldShowActivityResult = null != flags.application_id;
         if (shouldShowActivityResult) {
-          let tmpResult = tmp(4389);
+          let tmpResult = tmp(4390);
           shouldShowActivityResult = tmpResult.shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
         }
       }
       return shouldShowActivityResult;
     } else if (tmp3.PLAYING === type) {
       if (null != flags.application_id) {
-        tmpResult = tmp(4389);
+        tmpResult = tmp(4390);
         let result = tmpResult.shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
       } else {
         const searchGamesByNameResult = gameFromServer.searchGamesByName(flags.name);
         if (1 === searchGamesByNameResult.length) {
-          result = tmp(4389).shouldShareApplicationActivity(searchGamesByNameResult[0], setLibraryApplications);
-          const tmpResult1 = tmp(4389);
+          result = tmp(4390).shouldShareApplicationActivity(searchGamesByNameResult[0], setLibraryApplications);
+          const tmpResult1 = tmp(4390);
         } else {
           const ShowCurrentGame = tmp(4034).ShowCurrentGame;
           result = ShowCurrentGame.getSetting();
@@ -96,8 +96,8 @@ function shouldShowActivity(flags) {
       }
       let result1 = null == flags.application_id;
       if (!result1) {
-        result1 = tmp(4389).shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
-        const tmpResult2 = tmp(4389);
+        result1 = tmp(4390).shouldShareApplicationActivity(flags.application_id, setLibraryApplications);
+        const tmpResult2 = tmp(4390);
       }
       return result1;
     }

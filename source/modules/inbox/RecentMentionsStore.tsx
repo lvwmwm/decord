@@ -1,9 +1,9 @@
-// Module ID: 7138
-// Function ID: 7139
+// Module ID: 7144
+// Function ID: 7145
 // Name: findOrCreateMessageRecord
-// Dependencies: [3999, 1218, 1391, 4561, 4356, 3998, 4167, 4539, 1922, 676, 595, 4563, 4557, 4577, 12, 4419, 5929, 7139, 589, 709, 2]
+// Dependencies: [3999, 1218, 1391, 4562, 4357, 3998, 4165, 4540, 1922, 676, 595, 4564, 4558, 4578, 12, 4420, 5931, 7145, 589, 709, 2]
 
-// Module 7138 (findOrCreateMessageRecord)
+// Module 7144 (findOrCreateMessageRecord)
 import hasFlag from "hasFlag";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -28,8 +28,8 @@ function findOrCreateMessageRecord(channel_id) {
   } else {
     let message = store2.getMessage(channel_id.channel_id, channel_id.id);
     if (null == message) {
-      message = require(4563) /* createMinimalMessageRecord */.createMessageRecord(channel_id);
-      const obj = require(4563) /* createMinimalMessageRecord */;
+      message = require(4564) /* createMinimalMessageRecord */.createMessageRecord(channel_id);
+      const obj = require(4564) /* createMinimalMessageRecord */;
     }
     return message;
   }
@@ -60,7 +60,7 @@ function hasMentionNotificationEnabled(channel_id) {
               obj[1] = currentUser.id;
               obj[2] = result1;
               obj[3] = result2;
-              tmp10 = importDefault(4577)(obj);
+              tmp10 = importDefault(4578)(obj);
             }
             return tmp10;
           } else {
@@ -68,7 +68,7 @@ function hasMentionNotificationEnabled(channel_id) {
             return false;
           }
         }
-        obj2 = require(4557) /* shouldShowAgeGateForVoiceChannel */;
+        obj2 = require(4558) /* shouldShowAgeGateForVoiceChannel */;
       }
     }
   }
@@ -79,7 +79,7 @@ function parseMessage(message, channelId) {
   if (channelId === undefined) {
     channel_id = null;
   }
-  if (importDefault(5929)(message)) {
+  if (importDefault(5931)(message)) {
     const SELF_MENTIONABLE_SYSTEM = constants2.SELF_MENTIONABLE_SYSTEM;
     if (!SELF_MENTIONABLE_SYSTEM.has(message.type)) {
       return null;
@@ -99,13 +99,13 @@ function parseMessage(message, channelId) {
       }
       id = id.getId();
       if (!blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message)) {
-        if (!tmp2(7139)(message, id)) {
+        if (!tmp2(7145)(message, id)) {
           let tmp12 = message;
           if (!(message instanceof hasFlag)) {
             message = store2.getMessage(message.channel_id, message.id);
             if (null == message) {
-              message = require(4563) /* createMinimalMessageRecord */.createMessageRecord(message);
-              const obj2 = require(4563) /* createMinimalMessageRecord */;
+              message = require(4564) /* createMinimalMessageRecord */.createMessageRecord(message);
+              const obj2 = require(4564) /* createMinimalMessageRecord */;
             }
             tmp12 = message;
           }
@@ -115,7 +115,7 @@ function parseMessage(message, channelId) {
           obj[2] = !closure_23.everyoneFilter;
           obj[3] = !closure_23.roleFilter;
           let tmp20 = null;
-          if (tmp2(4577)(obj)) {
+          if (tmp2(4578)(obj)) {
             let tmp2ResultResult = c26;
             if (c26) {
               tmp2ResultResult = generateOldThreadCutoff.ackMessageId(channel.id) !== tmp12.id;
@@ -126,8 +126,8 @@ function parseMessage(message, channelId) {
               obj[1] = id;
               obj[2] = updateUserGuildSettingsInternal.isSuppressEveryoneEnabled(channel.getGuildId());
               obj[3] = updateUserGuildSettingsInternal.isSuppressRolesEnabled(channel.getGuildId());
-              tmp2ResultResult = tmp2(4577)(obj);
-              const tmp2Result = tmp2(4577);
+              tmp2ResultResult = tmp2(4578)(obj);
+              const tmp2Result = tmp2(4578);
             }
             tmp20 = tmp12;
             if (tmp2ResultResult) {
@@ -472,7 +472,7 @@ obj = {
     });
     let c21 = false;
     const tmpResult = importDefault(12);
-    let closure_25 = require(4419) /* sleep */.now();
+    let closure_25 = require(4420) /* sleep */.now();
     let c24 = true;
   },
   LOAD_RECENT_MENTIONS_FAILURE: function handleLoadMentionsFailure() {
@@ -621,7 +621,7 @@ obj = {
           }
         }
       }
-      obj2 = require(4577) /* isMentioned */;
+      obj2 = require(4578) /* isMentioned */;
     }
     return false;
   },
@@ -632,8 +632,8 @@ obj = {
         const findIndexResult = importDefault(12).findIndex(substr, (id) => id.id === id);
         substr = substr.slice();
         if (null != substr[findIndexResult]) {
-          substr[findIndexResult] = id(4563).updateMessageRecord(tmp7, message.message);
-          const obj2 = id(4563);
+          substr[findIndexResult] = id(4564).updateMessageRecord(tmp7, message.message);
+          const obj2 = id(4564);
         }
       }
     }

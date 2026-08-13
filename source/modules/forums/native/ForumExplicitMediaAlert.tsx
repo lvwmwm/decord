@@ -1,7 +1,7 @@
 // Module ID: 12641
 // Function ID: 12642
 // Name: ForumExplicitMediaAlert
-// Dependencies: [19, 17, 21, 4344, 712, 4772, 4340, 1236, 4754, 11377, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4773, 4338, 1236, 4755, 11368, 2]
 // Exports: default
 
 // Module 12641 (ForumExplicitMediaAlert)

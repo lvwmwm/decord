@@ -1,10 +1,10 @@
-// Module ID: 8505
-// Function ID: 8506
+// Module ID: 8509
+// Function ID: 8510
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1922, 21, 4344, 1499, 589, 8506, 691, 4244, 4062, 1236, 8507, 4340, 4754, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 21, 4342, 1499, 589, 8510, 691, 4242, 4062, 1236, 8511, 4338, 4755, 2]
 // Exports: default
 
-// Module 8505 (ConfirmEmailChangeStart)
+// Module 8509 (ConfirmEmailChangeStart)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -46,13 +46,13 @@ export default function ConfirmEmailChangeStart() {
     obj1[0] = tmp.container;
     let obj2 = { style: null, source: null };
     obj2[0] = tmp.image;
-    obj2[1] = navigation(8507);
+    obj2[1] = navigation(8511);
     const items1 = [callback2(closure_7, obj2), , , ];
     const obj3 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj3[0] = tmp.title;
     const intl2 = tmp2(1236).intl;
     obj3[4] = intl2.string(tmp2(1236).t.dQ71Wa);
-    items1[1] = callback2(tmp2(4340).Text, obj3);
+    items1[1] = callback2(tmp2(4338).Text, obj3);
     items1[2] = intl.format(tmp2(1236).t.oMFSgi, obj).map((children) => outer1_10(tmp(table[15]).Text, { style: tmp.body, variant: "text-sm/medium", color: "text-default", children }, arg1));
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.button;
@@ -61,7 +61,7 @@ export default function ConfirmEmailChangeStart() {
     obj5[0] = intl3.string(tmp2(1236).t.rXV81H);
     obj5[1] = tmp7;
     obj5[2] = tmp6[0];
-    obj4[1] = callback2(tmp2(4754).Button, obj5);
+    obj4[1] = callback2(tmp2(4755).Button, obj5);
     items1[3] = callback2(closure_6, obj4);
     obj1[1] = items1;
     obj[2] = callback3(closure_6, obj1);

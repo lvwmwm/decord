@@ -1,7 +1,7 @@
 // Module ID: 13020
 // Function ID: 13021
 // Name: apexExperiment
-// Dependencies: [4259, 1471, 4256, 8959, 2]
+// Dependencies: [4257, 1471, 4254, 8963, 2]
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping, useIsHotwheelsClickableGameIconEnabled
 
 // Module 13020 (apexExperiment)

@@ -1,10 +1,10 @@
-// Module ID: 15471
-// Function ID: 15472
+// Module ID: 15480
+// Function ID: 15481
 // Name: useFavoritesGuildHideWhenEmpty
-// Dependencies: [19, 1394, 9755, 595, 9754, 2]
+// Dependencies: [19, 1394, 9759, 595, 9758, 2]
 // Exports: default
 
-// Module 15471 (useFavoritesGuildHideWhenEmpty)
+// Module 15480 (useFavoritesGuildHideWhenEmpty)
 import noop from "noop";
 import initializeFromUserSettings from "initializeFromUserSettings";
 

@@ -1,9 +1,9 @@
-// Module ID: 4248
-// Function ID: 4249
+// Module ID: 4246
+// Function ID: 4247
 // Name: _getMessageFromRateLimit
 // Dependencies: [4030, 4031, 687, 1236, 2]
 
-// Module 4248 (_getMessageFromRateLimit)
+// Module 4246 (_getMessageFromRateLimit)
 import "prototype";
 
 const require = arg1;

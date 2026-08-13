@@ -1,7 +1,7 @@
 // Module ID: 12521
 // Function ID: 12522
 // Name: PersonalWidgetText
-// Dependencies: [19, 17, 1218, 676, 21, 4344, 712, 12522, 4340, 12523, 4765, 4072, 589, 5814, 7745, 12416, 2]
+// Dependencies: [19, 17, 1218, 676, 21, 4342, 712, 12522, 4338, 12523, 4766, 4072, 589, 5815, 7749, 12416, 2]
 // Exports: default
 
 // Module 12521 (PersonalWidgetText)
@@ -63,7 +63,7 @@ function CoverSection(arg0) {
     obj = { colors: null, style: null };
     obj[0] = closure_11;
     obj[1] = closure_5.absoluteFill;
-    tmp6 = callback(image(4765), obj);
+    tmp6 = callback(image(4766), obj);
   }
   const items2 = [tmp6, , ];
   let tmp12 = null;
@@ -196,7 +196,7 @@ export default function UserProfilePersonalWidgetCard(userId) {
   obj = { style: cardStyle, titleLeadingIcon: null, title: null, trailingAction: null, children: null };
   const tmp = createCacheKey();
   const tmp5 = importDefault;
-  obj[1] = callback(userId(7745).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+  obj[1] = callback(userId(7749).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
   obj[2] = widget.header;
   let tmp4Result = !stateFromStores;
   if (!stateFromStores) {
@@ -209,7 +209,7 @@ export default function UserProfilePersonalWidgetCard(userId) {
     tmp4Result = tmp4(tmp5(12416), obj);
   }
   obj[3] = tmp4Result;
-  const tmp6 = importDefault(5814);
+  const tmp6 = importDefault(5815);
   const sections = widget.sections;
   obj[4] = callback(closure_6, {
     style: tmp.sectionsContainer,

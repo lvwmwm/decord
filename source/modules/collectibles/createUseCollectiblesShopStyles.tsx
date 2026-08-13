@@ -1,7 +1,7 @@
 // Module ID: 10174
 // Function ID: 10175
 // Name: createUseCollectiblesShopStyles
-// Dependencies: [32, 4336, 8357, 7053, 647, 2]
+// Dependencies: [32, 4334, 8361, 7059, 647, 2]
 // Exports: default
 
 // Module 10174 (createUseCollectiblesShopStyles)

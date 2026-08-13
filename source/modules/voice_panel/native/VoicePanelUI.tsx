@@ -1,14 +1,14 @@
-// Module ID: 16242
-// Function ID: 16243
+// Module ID: 16253
+// Function ID: 16254
 // Name: NOOP
-// Dependencies: [32, 19, 17, 4357, 8907, 4554, 11706, 11704, 4362, 11707, 21, 3, 4753, 4344, 712, 4083, 1624, 11705, 1628, 5466, 8821, 10377, 16243, 4313, 16236, 4065, 11710, 10824, 16241, 16229, 10298, 9812, 7104, 8050, 5767, 5787, 705, 16244, 5754, 16245, 16246, 10655, 16247, 16249, 16277, 16304, 16308, 16313, 2]
+// Dependencies: [32, 19, 17, 4358, 8911, 4555, 11704, 11702, 4363, 11705, 21, 3, 4754, 4342, 712, 4083, 1624, 11703, 1628, 5467, 8825, 10289, 16254, 4311, 16247, 4065, 11708, 10738, 16252, 16240, 11135, 9816, 7110, 8054, 5768, 5788, 705, 16255, 5755, 16256, 16257, 10569, 16258, 16260, 16288, 16315, 16319, 16324, 2]
 
-// Module 16242 (NOOP)
+// Module 16253 (NOOP)
 import isStable from "isStable";
 import importAllResult from "LegacyBaseButton";
 import get_ActivityIndicator from "dismissPanel";
 import getParticipants from "getParticipants";
-import module_8907 from "module_8907";
+import module_8911 from "module_8911";
 import withEqualityFn from "withEqualityFn";
 import VoicePanelModes from "VoicePanelModes";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
@@ -57,12 +57,12 @@ function AnimatedWrapper(children) {
   let pIPState;
   let animatedStyle;
   let animatedStyle1;
-  let obj = wrapperOffset(10824);
+  let obj = wrapperOffset(10738);
   height = obj.useGlobalStatusIndicatorState().height;
   const tmp3 = callback2();
   dependencyMap = tmp3;
   let obj1 = connected;
-  const context = connected.useContext(height(11705));
+  const context = connected.useContext(height(11703));
   wrapperDimensions = context.wrapperDimensions;
   connected = context.connected;
   controlsSpecs = context.controlsSpecs;
@@ -80,7 +80,7 @@ function AnimatedWrapper(children) {
   fn.__workletHash = 6243014585347;
   fn.__initData = closure_55;
   derivedValue = obj2.useDerivedValue(fn);
-  let obj3 = wrapperOffset(16241);
+  let obj3 = wrapperOffset(16252);
   pIPState = obj3.usePIPState();
   let obj4 = wrapperOffset(4083);
   const fn2 = function l() {
@@ -154,7 +154,7 @@ function AnimatedWrapper(children) {
       }
     }
   };
-  obj = { cheapWorkletShallowEqual: wrapperOffset(8821).cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10377), wrapperOffset, getMaxPanelWidth: wrapperOffset(16229).getMaxPanelWidth, getPanelX: wrapperOffset(16229).getPanelX, roundToNearestPixel: height(10298), windowDimensions };
+  obj = { cheapWorkletShallowEqual: wrapperOffset(8825).cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10289), wrapperOffset, getMaxPanelWidth: wrapperOffset(16240).getMaxPanelWidth, getPanelX: wrapperOffset(16240).getPanelX, roundToNearestPixel: height(11135), windowDimensions };
   fn3.__closure = obj;
   fn3.__workletHash = 3683279660781;
   fn3.__initData = closure_57;
@@ -235,7 +235,7 @@ function AnimatedWrapper(children) {
       return obj2;
     }
   }
-  obj = { useReducedMotion, wrapperDimensions, wrapperOffset, connected, mode, VoicePanelModes: animatedStyle1, runOnJS: wrapperOffset(4083).runOnJS, updateSourceTrackingView: height(9812).updateSourceTrackingView, withSpring: wrapperOffset(4753).withSpring, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_17, DRAWER_SIZE_PHYSICS: obj2 };
+  obj = { useReducedMotion, wrapperDimensions, wrapperOffset, connected, mode, VoicePanelModes: animatedStyle1, runOnJS: wrapperOffset(4083).runOnJS, updateSourceTrackingView: height(9816).updateSourceTrackingView, withSpring: wrapperOffset(4754).withSpring, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_17, DRAWER_SIZE_PHYSICS: obj2 };
   C.__closure = obj;
   C.__workletHash = 16361132737159;
   C.__initData = closure_58;
@@ -277,12 +277,12 @@ function AnimatedWrapper(children) {
       return obj;
     }
   }
-  obj1 = { computeBorderRadii, mode, connected, wrapperDimensions, withSpring: wrapperOffset(4753).withSpring, BORDER_RADIUS_PHYSICS: windowDimensions, VoicePanelModes: animatedStyle1, styles: tmp3 };
+  obj1 = { computeBorderRadii, mode, connected, wrapperDimensions, withSpring: wrapperOffset(4754).withSpring, BORDER_RADIUS_PHYSICS: windowDimensions, VoicePanelModes: animatedStyle1, styles: tmp3 };
   M.__closure = obj1;
   M.__workletHash = 1768699814221;
   M.__initData = closure_60;
   animatedStyle1 = obj8.useAnimatedStyle(M);
-  if (!wrapperOffset(7104).isStable) {
+  if (!wrapperOffset(7110).isStable) {
     let tmpResult = tmp(4083);
     class Y {
       constructor() {
@@ -336,11 +336,11 @@ function AnimatedWrapper(children) {
   const memo = obj1.useMemo(() => ({ wrapperRootStyles: _undefined.wrapper, wrapperTransformStyles: animatedStyle, wrapperSurfaceStyles: animatedStyle1 }), items);
   ({ wrapperRootStyles, wrapperTransformStyles, wrapperSurfaceStyles } = memo);
   obj6 = { style: wrapperRootStyles, pointerEvents: "box-none", children: null };
-  let tmp4Result = tmp4(8050);
+  let tmp4Result = tmp4(8054);
   const obj7 = { style: wrapperTransformStyles, pointerEvents: "box-none", children: null };
-  tmp4Result = tmp4(8050);
+  tmp4Result = tmp4(8054);
   obj8 = { style: wrapperSurfaceStyles, layout: layoutTransition, children: children.children };
-  obj7[2] = callback(height(8050), obj8);
+  obj7[2] = callback(height(8054), obj8);
   obj6[2] = callback(tmp4Result, obj7);
   return callback(tmp4Result, obj6);
 }
@@ -358,13 +358,13 @@ let closure_24 = new require("getParticipants")("VoicePanelUI");
 function layoutTransition(originX) {
   let obj = { animations: null, initialValues: null };
   obj = { originX: null, originY: null, width: null, height: null };
-  obj[0] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginX, LAYOUT_PHYSICS, "animate-always");
-  const obj3 = require(4753) /* CONFIG_NEVER_ANIMATE */;
-  obj[1] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginY, LAYOUT_PHYSICS, "animate-always");
-  const obj4 = require(4753) /* CONFIG_NEVER_ANIMATE */;
-  obj[2] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetWidth, LAYOUT_PHYSICS, "animate-always");
-  const obj5 = require(4753) /* CONFIG_NEVER_ANIMATE */;
-  obj[3] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, LAYOUT_PHYSICS, "animate-always");
+  obj[0] = require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginX, LAYOUT_PHYSICS, "animate-always");
+  const obj3 = require(4754) /* CONFIG_NEVER_ANIMATE */;
+  obj[1] = require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginY, LAYOUT_PHYSICS, "animate-always");
+  const obj4 = require(4754) /* CONFIG_NEVER_ANIMATE */;
+  obj[2] = require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetWidth, LAYOUT_PHYSICS, "animate-always");
+  const obj5 = require(4754) /* CONFIG_NEVER_ANIMATE */;
+  obj[3] = require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, LAYOUT_PHYSICS, "animate-always");
   obj[0] = obj;
   obj[1] = { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight };
   return obj;
@@ -379,13 +379,13 @@ obj.damping = 0;
 function scrollViewLayoutTransition(originX) {
   let obj = { animations: null, initialValues: null };
   obj = { originX: null, originY: null, width: null, height: null };
-  obj[0] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginX, LAYOUT_PHYSICS, "animate-always");
-  const obj3 = require(4753) /* CONFIG_NEVER_ANIMATE */;
-  obj[1] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginY, LAYOUT_PHYSICS, "animate-always");
-  const obj4 = require(4753) /* CONFIG_NEVER_ANIMATE */;
-  obj[2] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetWidth, obj, "animate-always");
-  const obj5 = require(4753) /* CONFIG_NEVER_ANIMATE */;
-  obj[3] = require(4753) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, obj, "animate-always");
+  obj[0] = require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginX, LAYOUT_PHYSICS, "animate-always");
+  const obj3 = require(4754) /* CONFIG_NEVER_ANIMATE */;
+  obj[1] = require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginY, LAYOUT_PHYSICS, "animate-always");
+  const obj4 = require(4754) /* CONFIG_NEVER_ANIMATE */;
+  obj[2] = require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetWidth, obj, "animate-always");
+  const obj5 = require(4754) /* CONFIG_NEVER_ANIMATE */;
+  obj[3] = require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, obj, "animate-always");
   obj[0] = obj;
   obj[1] = { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight };
   return obj;
@@ -500,7 +500,7 @@ let closure_68 = importAllResult.memo((onPress) => {
     obj[1] = str;
     return obj;
   };
-  obj = { withSpring: opacity(4753).withSpring, opacity, DrawerShadeOpacityPhysics: closure_66 };
+  obj = { withSpring: opacity(4754).withSpring, opacity, DrawerShadeOpacityPhysics: closure_66 };
   fn.__closure = obj;
   fn.__workletHash = 3656047169284;
   fn.__initData = closure_67;
@@ -1009,7 +1009,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
               const diff = store7.get().drawerHeight - store7.get().drawerY;
               if (closure_19.get().y > 0.2 * diff) {
                 outer1_1(outer1_2[21])(tmp12, { gestureActive: false });
-                outer1_0(outer1_2[15]).runOnJS(module_8907)();
+                outer1_0(outer1_2[15]).runOnJS(module_8911)();
                 const obj3 = outer1_0(outer1_2[15]);
               } else {
                 outer1_1(outer1_2[21])(tmp12, { gestureActive: false, x: 0, y: 0 });

@@ -1,10 +1,10 @@
-// Module ID: 10922
-// Function ID: 10923
+// Module ID: 10836
+// Function ID: 10837
 // Name: handleKrispLinkPressed
-// Dependencies: [19, 17, 1302, 676, 21, 1993, 698, 1236, 4058, 589, 1363, 10923, 10924, 4340, 2]
+// Dependencies: [19, 17, 1302, 676, 21, 1993, 698, 1236, 4058, 589, 1363, 10837, 10838, 4338, 2]
 // Exports: default
 
-// Module 10922 (handleKrispLinkPressed)
+// Module 10836 (handleKrispLinkPressed)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
@@ -46,9 +46,9 @@ export default function KrispLogo() {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   let obj1 = require(1363) /* AccessibilityAnnouncer */;
   if (obj1.isThemeLight(stateFromStores)) {
-    let tmp4Result = tmp4(10923);
+    let tmp4Result = tmp4(10837);
   } else {
-    tmp4Result = tmp4(10924);
+    tmp4Result = tmp4(10838);
   }
   obj = { style: closure_13.detailsView, children: null };
   obj = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: null };
@@ -62,7 +62,7 @@ export default function KrispLogo() {
   const obj2 = { variant: "text-sm/medium", color: "text-link", children: null };
   const intl3 = tmp(1236).intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
-  obj1[3] = callback(require(4340) /* Text */.Text, obj2);
+  obj1[3] = callback(require(4338) /* Text */.Text, obj2);
   items1[1] = callback(closure_5, obj1);
   obj[1] = items1;
   return callback2(closure_4, obj);

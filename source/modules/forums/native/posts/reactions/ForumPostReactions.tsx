@@ -1,10 +1,10 @@
-// Module ID: 10442
-// Function ID: 10443
+// Module ID: 10356
+// Function ID: 10357
 // Name: MaxForumPostReactions
-// Dependencies: [19, 17, 21, 4344, 10244, 8448, 9945, 2]
+// Dependencies: [19, 17, 21, 4342, 10244, 8452, 9943, 2]
 // Exports: ForumPostActionBarReactions, MaxForumPostReactions, MostCommonForumPostReaction
 
-// Module 10442 (MaxForumPostReactions)
+// Module 10356 (MaxForumPostReactions)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,7 +35,7 @@ export const MaxForumPostReactions = function MaxForumPostReactions(thread) {
   if (disableReactionCreates) {
     num = 0;
   }
-  let obj = thread(8448);
+  let obj = thread(8452);
   obj = { containerWidth: containerWidth - num, reactionEmojiWidth: 46, digitWidth: 7.5, message: firstMessage, parentChannel };
   const maxPossibleForumPostReactions = obj.useMaxPossibleForumPostReactions(obj);
   ({ reactions, additionalReactionCount } = maxPossibleForumPostReactions);
@@ -61,7 +61,7 @@ export const MaxForumPostReactions = function MaxForumPostReactions(thread) {
       obj1[0] = additionalReactionCount;
       obj1[1] = reactionContainerStyle;
       obj1[2] = thread.id;
-      tmp8 = callback(tmp3(9945).AdditionalReactionCount, obj1);
+      tmp8 = callback(tmp3(9943).AdditionalReactionCount, obj1);
     }
     items1[1] = tmp8;
     let tmp10 = !disableReactionCreates;
@@ -69,7 +69,7 @@ export const MaxForumPostReactions = function MaxForumPostReactions(thread) {
       const obj2 = { containerStyle: null, threadId: null };
       obj2[0] = reactionContainerStyle;
       obj2[1] = thread.id;
-      tmp10 = callback(tmp3(9945).AddReactionButton, obj2);
+      tmp10 = callback(tmp3(9943).AddReactionButton, obj2);
     }
     items1[2] = tmp10;
     obj[1] = items1;
@@ -94,7 +94,7 @@ export const ForumPostActionBarReactions = function ForumPostActionBarReactions(
   const tmp = callback2();
   dependencyMap = tmp;
   const disableReactionCreates = reactionContainerStyle(10244)(thread).disableReactionCreates;
-  let obj = thread(8448);
+  let obj = thread(8452);
   obj = { message: firstMessage, parentChannel, sorted: false, count: null };
   let num = 2;
   if (disableReactionCreates) {
@@ -126,7 +126,7 @@ export const ForumPostActionBarReactions = function ForumPostActionBarReactions(
       const items2 = [tmp.actionBarReaction, reactionContainerStyle];
       obj1[1] = items2;
       obj1[2] = thread.id;
-      tmp8 = callback(tmp3(9945).AdditionalReactionCount, obj1);
+      tmp8 = callback(tmp3(9943).AdditionalReactionCount, obj1);
     }
     items1[1] = tmp8;
     let tmp10 = !disableReactionCreates;
@@ -135,7 +135,7 @@ export const ForumPostActionBarReactions = function ForumPostActionBarReactions(
       const items3 = [tmp.actionBarReaction, reactionContainerStyle];
       obj2[0] = items3;
       obj2[1] = thread.id;
-      tmp10 = callback(tmp3(9945).AddReactionButton, obj2);
+      tmp10 = callback(tmp3(9943).AddReactionButton, obj2);
     }
     items1[2] = tmp10;
     obj[1] = items1;
@@ -157,7 +157,7 @@ export const MostCommonForumPostReaction = function MostCommonForumPostReaction(
   ({ parentChannel, firstMessage, locationAnalyticsObject } = thread);
   const tmp = callback2();
   ({ disableReactionCreates, disableReactionUpdates } = importDefault(10244)(thread));
-  let obj = require(8448) /* useLoadForumUnreadCounts */;
+  let obj = require(8452) /* useLoadForumUnreadCounts */;
   const first = obj.useSomeForumPostReactions({ parentChannel, message: firstMessage }).reactions[0];
   if (null != first) {
     if (!disableReactionUpdates) {
@@ -167,7 +167,7 @@ export const MostCommonForumPostReaction = function MostCommonForumPostReaction(
         obj[1] = thread;
         obj[2] = first;
         obj[3] = locationAnalyticsObject;
-        let tmp7 = callback(require(9945) /* BurstReactionButton */.ForumPostReactionButton, obj);
+        let tmp7 = callback(require(9943) /* BurstReactionButton */.ForumPostReactionButton, obj);
       } else {
         tmp7 = null;
       }

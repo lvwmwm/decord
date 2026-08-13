@@ -1,10 +1,10 @@
-// Module ID: 15438
-// Function ID: 15439
+// Module ID: 15447
+// Function ID: 15448
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 4344, 10298, 8438, 4888, 15225, 4083, 2]
+// Dependencies: [17, 21, 4342, 11135, 8442, 4889, 15234, 4083, 2]
 // Exports: ScreenAlignedThemedGradientSliding, default
 
-// Module 15438 (ScreenAlignedThemedGradient)
+// Module 15447 (ScreenAlignedThemedGradient)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -16,8 +16,8 @@ let closure_6 = createCacheKey.createStyles((arg0, arg1) => {
   let obj = { container: null };
   obj = {};
   const merged = Object.assign(closure_3.absoluteFillObject);
-  obj = { translateX: importDefault(10298)(-arg0) };
-  const items = [obj, { translateY: importDefault(10298)(-arg1) }];
+  obj = { translateX: importDefault(11135)(-arg0) };
+  const items = [obj, { translateY: importDefault(11135)(-arg1) }];
   obj.transform = items;
   obj[0] = obj;
   return obj;
@@ -29,10 +29,10 @@ export default function ScreenAlignedThemedGradient(arg0) {
   let offsetX;
   let offsetY;
   ({ offsetX, offsetY } = arg0);
-  let obj = require(8438) /* useActiveThemeType */;
+  let obj = require(8442) /* useActiveThemeType */;
   const isClientThemeOrCustomThemeActive = obj.useIsClientThemeOrCustomThemeActive();
-  obj = { pointerEvents: "none", style: callback(offsetX, offsetY).container, children: jsx(importDefault(4888), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive }) };
-  return <closure_4 pointerEvents="none" style={callback(offsetX, offsetY).container}>{jsx(importDefault(4888), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive })}</closure_4>;
+  obj = { pointerEvents: "none", style: callback(offsetX, offsetY).container, children: jsx(importDefault(4889), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive }) };
+  return <closure_4 pointerEvents="none" style={callback(offsetX, offsetY).container}>{jsx(importDefault(4889), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive })}</closure_4>;
 };
 export const ScreenAlignedThemedGradientSliding = function ScreenAlignedThemedGradientSliding(offsetX) {
   offsetX = offsetX.offsetX;

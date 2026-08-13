@@ -1,7 +1,7 @@
 // Module ID: 12915
 // Function ID: 12916
 // Name: orderMarketablePerksForDisplay
-// Dependencies: [32, 4233, 4235, 2]
+// Dependencies: [32, 4231, 4233, 2]
 // Exports: default
 
 // Module 12915 (orderMarketablePerksForDisplay)

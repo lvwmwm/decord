@@ -1,10 +1,10 @@
-// Module ID: 13491
-// Function ID: 13492
+// Module ID: 13492
+// Function ID: 13493
 // Name: AccessibleNativeStackNavigator
-// Dependencies: [19, 21, 5822, 1500, 8615, 2]
+// Dependencies: [19, 21, 5823, 1500, 8619, 2]
 // Exports: default, useAccessibilityPatchedDescriptors
 
-// Module 13491 (AccessibleNativeStackNavigator)
+// Module 13492 (AccessibleNativeStackNavigator)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

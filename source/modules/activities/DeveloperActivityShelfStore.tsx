@@ -1,9 +1,9 @@
-// Module ID: 7629
-// Function ID: 7630
+// Module ID: 7633
+// Function ID: 7634
 // Name: initialize
-// Dependencies: [676, 7630, 589, 4034, 709, 2]
+// Dependencies: [676, 7634, 589, 4034, 709, 2]
 
-// Module 7629 (initialize)
+// Module 7633 (initialize)
 import { ApplicationFlags } from "ME";
 import { PersistedStore } from "initialize";
 

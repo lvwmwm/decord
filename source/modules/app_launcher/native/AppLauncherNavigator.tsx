@@ -1,8 +1,8 @@
-// Module ID: 11528
-// Function ID: 11529
-// Dependencies: [109, 19, 1498, 676, 21, 8615, 4344, 712, 5767, 5787, 4209, 1626, 5822, 4538, 1500, 11529, 11575, 11601, 11640, 9594, 2]
+// Module ID: 11524
+// Function ID: 11525
+// Dependencies: [109, 19, 1498, 676, 21, 8619, 4342, 712, 5768, 5788, 4207, 1626, 5823, 4539, 1500, 11525, 11571, 11597, 11636, 9598, 2]
 
-// Module 11528
+// Module 11524
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "context";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -38,13 +38,13 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   ({ context, entrypoint } = arg0);
   ({ expandBottomSheet, overrideParams } = arg0);
   ({ bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, contentStyle, keyboardCloseReasonRef, onActivityItemSelected, width } = arg0);
-  const tmp3 = importDefault(5767);
-  let obj = entrypoint(4209);
+  const tmp3 = importDefault(5768);
+  let obj = entrypoint(4207);
   if (overrideParams == null) {
     overrideParams = obj.useKeyboardContextForType(entrypoint(1626).KeyboardTypes.APP_LAUNCHER);
   }
   const tmp4 = callback2();
-  const accessibilityNativeStackOptions = entrypoint(5822).useAccessibilityNativeStackOptions();
+  const accessibilityNativeStackOptions = entrypoint(5823).useAccessibilityNativeStackOptions();
   const initialRouteName = overrideParams.initialRouteName;
   let obj12 = callback(overrideParams, closure_3);
   const items = [entrypoint];
@@ -53,12 +53,12 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
     obj = { location: "app_launcher", source: entrypoint };
     obj.trackWithMetadata(outer1_7.APPLICATION_COMMAND_TOP_OF_FUNNEL, obj);
   }, items);
-  obj = { value: tmp3(importDefault(5787).APP_LAUNCHER).analyticsLocations, children: null };
+  obj = { value: tmp3(importDefault(5788).APP_LAUNCHER).analyticsLocations, children: null };
   obj = { initialRouteName, screenOptions: null, children: null };
   const items1 = [tmp4.navigator, contentStyle];
   const merged = Object.assign(accessibilityNativeStackOptions);
   obj[1] = { contentStyle: items1, headerShown: false, fullScreenGestureEnabled: true };
-  const obj2 = { name: AppLauncherRouteName.HOME, component: importDefault(11529), initialParams: null };
+  const obj2 = { name: AppLauncherRouteName.HOME, component: importDefault(11525), initialParams: null };
   const obj3 = { context, initialSearchQuery: null };
   let initialSearchQuery;
   if (overrideParams.initialRouteName === AppLauncherRouteName.HOME) {
@@ -67,7 +67,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   obj3[1] = initialSearchQuery;
   obj2[2] = obj3;
   const items2 = [closure_8(createNativeStackNavigator.Screen, obj2), , , ];
-  const obj4 = { name: AppLauncherRouteName.APPLICATION_VIEW, component: importDefault(11575), initialParams: null };
+  const obj4 = { name: AppLauncherRouteName.APPLICATION_VIEW, component: importDefault(11571), initialParams: null };
   const obj5 = { context };
   let obj6 = obj12;
   if (initialRouteName !== AppLauncherRouteName.APPLICATION_VIEW) {
@@ -77,7 +77,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   obj5.expandBottomSheet = expandBottomSheet;
   obj4[2] = obj5;
   items2[1] = closure_8(createNativeStackNavigator.Screen, obj4);
-  const obj7 = { name: AppLauncherRouteName.COMMAND_VIEW, component: importDefault(11601), initialParams: null };
+  const obj7 = { name: AppLauncherRouteName.COMMAND_VIEW, component: importDefault(11597), initialParams: null };
   let tmp15;
   if ("channel" === context.type) {
     tmp15 = context;
@@ -91,7 +91,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   obj8.expandBottomSheet = expandBottomSheet;
   obj7[2] = obj8;
   items2[2] = closure_8(createNativeStackNavigator.Screen, obj7);
-  const obj10 = { name: AppLauncherRouteName.APP_LIST_VIEW, component: importDefault(11640), initialParams: null };
+  const obj10 = { name: AppLauncherRouteName.APP_LIST_VIEW, component: importDefault(11636), initialParams: null };
   if (overrideParams.initialRouteName !== AppLauncherRouteName.APP_LIST_VIEW) {
     obj12 = {};
   }
@@ -102,7 +102,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   items2[3] = closure_8(createNativeStackNavigator.Screen, obj10);
   obj[2] = items2;
   obj[1] = closure_9(createNativeStackNavigator.Navigator, obj);
-  obj14[0] = closure_8(entrypoint(5767).AnalyticsLocationProvider, obj);
+  obj14[0] = closure_8(entrypoint(5768).AnalyticsLocationProvider, obj);
   obj13[0] = closure_8(entrypoint(1500).NavigationContainer, obj14);
   let tmp19 = "customId" in overrideParams;
   const children = tmp8(tmp5(1500).NavigationIndependentTree, obj13);
@@ -115,7 +115,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
     entrypointParams = { customId: null, referrerId: null };
     const obj15 = { customId: null, referrerId: null };
   }
-  return closure_8(entrypoint(9594).AppLauncherContext.Provider, { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams, keyboardCloseReasonRef, onActivityItemSelected, width }, children });
+  return closure_8(entrypoint(9598).AppLauncherContext.Provider, { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams, keyboardCloseReasonRef, onActivityItemSelected, width }, children });
 });
 const result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/app_launcher/native/AppLauncherNavigator.tsx");
 

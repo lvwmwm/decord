@@ -1,10 +1,10 @@
-// Module ID: 9378
-// Function ID: 9379
+// Module ID: 9382
+// Function ID: 9383
 // Name: map
-// Dependencies: [1218, 1910, 7236, 676, 7235, 4330, 698, 5167, 503, 1404, 2]
+// Dependencies: [1218, 1910, 7241, 676, 7240, 4328, 698, 5168, 503, 1404, 2]
 // Exports: default
 
-// Module 9378 (map)
+// Module 9382 (map)
 import fetchFingerprint from "fetchFingerprint";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import InviteSendStates from "InviteSendStates";
@@ -29,7 +29,7 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
   const _require = inviteKey;
   const importDefault = arg1;
   const dependencyMap = inviteInstanceId;
-  let obj = _require(4330);
+  let obj = _require(4328);
   const result = obj.parseExtraDataFromInviteKey(inviteKey);
   const baseCode = result.baseCode;
   ({ targetChannelId, targetMessageId, guildScheduledEventId } = result);
@@ -167,8 +167,8 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
       return obj.exact(obj);
     };
     obj1[3] = obj2;
-    const value = tmp4(5167).get(obj1);
-    const tmp4Result = tmp4(5167);
+    const value = tmp4(5168).get(obj1);
+    const tmp4Result = tmp4(5168);
     const cleanupPromise = value.then((body) => {
       body = body.body;
       if (null != callback) {

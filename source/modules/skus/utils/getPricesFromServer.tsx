@@ -1,10 +1,10 @@
-// Module ID: 4386
-// Function ID: 4387
+// Module ID: 4387
+// Function ID: 4388
 // Name: getPricesFromServer
 // Dependencies: [4008, 2]
 // Exports: default
 
-// Module 4386 (getPricesFromServer)
+// Module 4387 (getPricesFromServer)
 import { getPriceFromServer } from "createFromServer";
 
 const result = require("set").fileFinishedImporting("modules/skus/utils/getPricesFromServer.tsx");

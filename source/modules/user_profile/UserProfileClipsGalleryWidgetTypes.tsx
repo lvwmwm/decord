@@ -1,9 +1,9 @@
-// Module ID: 7130
-// Function ID: 7131
+// Module ID: 7136
+// Function ID: 7137
 // Name: convertClip
-// Dependencies: [7123, 659, 2]
+// Dependencies: [7129, 659, 2]
 
-// Module 7130 (convertClip)
+// Module 7136 (convertClip)
 function convertClip(gameId) {
   let obj = { game_id: gameId.gameId, title: gameId.title, tags: gameId.tags };
   if ("saved" === gameId.status) {

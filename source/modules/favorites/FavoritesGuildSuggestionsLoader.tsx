@@ -1,9 +1,9 @@
-// Module ID: 15472
-// Function ID: 15473
+// Module ID: 15481
+// Function ID: 15482
 // Name: FavoritesGuildSuggestionsLoaderInner
-// Dependencies: [19, 15399, 21, 12197, 10293, 9756, 7348, 2]
+// Dependencies: [19, 15408, 21, 12199, 11131, 9760, 7353, 2]
 
-// Module 15472 (FavoritesGuildSuggestionsLoaderInner)
+// Module 15481 (FavoritesGuildSuggestionsLoaderInner)
 import importAllResult from "noop";
 import items from "items";
 import { jsx } from "jsxProd";
@@ -13,8 +13,8 @@ let c5;
 let closure_6;
 const require = arg1;
 function FavoritesGuildSuggestionsLoaderInner() {
-  let tmp = memo(12197)();
-  results = results(10293).useShareSearchResults({ channelFilter: tmp, includeFrecency: false }).results;
+  let tmp = memo(12199)();
+  results = results(11131).useShareSearchResults({ channelFilter: tmp, includeFrecency: false }).results;
   let items = [results];
   memo = importAllResult.useMemo(() => {
     let items = [];

@@ -1,7 +1,7 @@
 // Module ID: 12906
 // Function ID: 12907
 // Name: render
-// Dependencies: [19, 1922, 21, 4344, 712, 4072, 1297, 1236, 589, 2]
+// Dependencies: [19, 1922, 21, 4342, 712, 4072, 1297, 1236, 589, 2]
 
 // Module 12906 (render)
 import importDefaultResult from "mergeGuildAvatar";

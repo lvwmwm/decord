@@ -1,9 +1,9 @@
-// Module ID: 11036
-// Function ID: 11037
+// Module ID: 10950
+// Function ID: 10951
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 10650, 10651, 676, 4369, 4247, 7851, 501, 10660, 10661, 1208, 11037, 10791, 4683, 1236, 1370, 709, 1231, 514, 2]
+// Dependencies: [5, 17, 10564, 10565, 676, 4370, 4245, 7855, 501, 10574, 10575, 1208, 10951, 10705, 4684, 1236, 1370, 709, 1231, 514, 2]
 
-// Module 11036 (postMessageToWebView)
+// Module 10950 (postMessageToWebView)
 import items3 from "items3";
 import map from "map";
 import { isLaunched } from "FrameLayoutModes";
@@ -168,7 +168,7 @@ prototype["showRPCDisconnectErrorUI"] = function showRPCDisconnectErrorUI(reason
   let code;
   let message;
   ({ code, message } = reason);
-  let obj = importDefault(4683);
+  let obj = importDefault(4684);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.hbiAO6, { code });

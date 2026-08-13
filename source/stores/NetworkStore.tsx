@@ -1,9 +1,9 @@
-// Module ID: 4435
-// Function ID: 4436
+// Module ID: 4436
+// Function ID: 4437
 // Name: handleConnectionInfoChange
 // Dependencies: [676, 589, 1473, 709, 2]
 
-// Module 4435 (handleConnectionInfoChange)
+// Module 4436 (handleConnectionInfoChange)
 import ME from "ME";
 import { Store } from "initialize";
 

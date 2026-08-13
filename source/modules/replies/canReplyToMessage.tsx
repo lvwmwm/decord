@@ -1,10 +1,10 @@
-// Module ID: 8124
-// Function ID: 8125
+// Module ID: 8128
+// Function ID: 8129
 // Name: useCanReplyToMessage
-// Dependencies: [32, 3989, 1922, 676, 505, 686, 5928, 8125, 589, 2]
+// Dependencies: [32, 3989, 1922, 676, 505, 686, 5930, 8129, 589, 2]
 // Exports: canReplyToMessage, useCanReplyToMessage
 
-// Module 8124 (useCanReplyToMessage)
+// Module 8128 (useCanReplyToMessage)
 import _slicedToArray from "_slicedToArray";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -20,14 +20,14 @@ const result = require("mergeGuildAvatar").fileFinishedImporting("modules/replie
 export const useCanReplyToMessage = function useCanReplyToMessage(channel, message) {
   const _require = channel;
   const dependencyMap = message;
-  const canUnarchiveThread = _require(5928).useCanUnarchiveThread(channel);
-  const obj = _require(5928);
+  const canUnarchiveThread = _require(5930).useCanUnarchiveThread(channel);
+  const obj = _require(5930);
   let tmp = _require;
   let guildId;
   if (channel != null) {
     guildId = channel.getGuildId();
   }
-  const obj2 = _require(8125);
+  const obj2 = _require(8129);
   const items = [getUncachedChannelPermissions];
   let stateFromStores = tmp(589).useStateFromStores(items, () => {
     let tmp = null != channel;
@@ -74,33 +74,33 @@ export const useCanReplyToMessage = function useCanReplyToMessage(channel, messa
   }
   return tmp6;
 };
-export const canReplyToMessage = function canReplyToMessage(channel, message) {
-  const obj = require(5928) /* useCanUnarchiveThread */;
-  if (channel.isPrivate()) {
-    let hasItem = !channel.isSystemDM();
+export const canReplyToMessage = function canReplyToMessage(isPrivate, type) {
+  const obj = require(5930) /* useCanUnarchiveThread */;
+  if (isPrivate.isPrivate()) {
+    let hasItem = !isPrivate.isSystemDM();
   } else {
-    hasItem = obj2.can(Permissions.SEND_MESSAGES, channel) && obj2.can(Permissions.READ_MESSAGE_HISTORY, channel);
+    hasItem = obj2.can(Permissions.SEND_MESSAGES, isPrivate) && obj2.can(Permissions.READ_MESSAGE_HISTORY, isPrivate);
     const tmp4 = Permissions;
   }
   if (hasItem) {
     const REPLYABLE = tmp(686).MessageTypesSets.REPLYABLE;
-    hasItem = REPLYABLE.has(message.type);
+    hasItem = REPLYABLE.has(type.type);
   }
   currentUser = currentUser.getCurrentUser();
-  const canUnarchiveThreadResult = require(5928) /* useCanUnarchiveThread */.canUnarchiveThread(channel);
+  const canUnarchiveThreadResult = require(5930) /* useCanUnarchiveThread */.canUnarchiveThread(isPrivate);
   let id;
   if (currentUser != null) {
     id = currentUser.id;
   }
-  const guildId = channel.getGuildId();
-  const tmpResult = require(8125) /* useUserCommunicationDisabled */;
-  const isArchivedThreadResult = channel.isArchivedThread();
+  const guildId = isPrivate.getGuildId();
+  const tmpResult = require(8129) /* useUserCommunicationDisabled */;
+  const isArchivedThreadResult = isPrivate.isArchivedThread();
   let tmp11 = !isArchivedThreadResult;
   if (isArchivedThreadResult) {
     tmp11 = canUnarchiveThreadResult;
   }
   if (hasItem) {
-    hasItem = message.state === constants2.SENT;
+    hasItem = type.state === constants2.SENT;
   }
   if (hasItem) {
     hasItem = !hasFlagResult;

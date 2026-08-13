@@ -1,8 +1,8 @@
-// Module ID: 16144
-// Function ID: 16145
-// Dependencies: [19, 17, 1391, 1979, 21, 4344, 647, 11634, 15842, 11119, 4340, 1236, 2]
+// Module ID: 16155
+// Function ID: 16156
+// Dependencies: [19, 17, 1391, 1979, 21, 4342, 647, 11630, 15851, 11034, 4338, 1236, 2]
 
-// Module 16144
+// Module 16155
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -41,7 +41,7 @@ const memoResult = require("noop").memo(function LaunchPadMembers() {
         }
       }
     }
-    return { channelId: "call", type: "Defs" };
+    return { channelId: "call", type: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000127822236090971 };
   });
   if ("private" === stateFromStoresObject.type) {
     obj = { style: null, children: null };
@@ -49,7 +49,7 @@ const memoResult = require("noop").memo(function LaunchPadMembers() {
     obj = { channelId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 };
     obj[0] = stateFromStoresObject.channelId;
     obj[1] = tmp.listStyle;
-    obj[1] = jsx(importDefault(11634), { channelId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    obj[1] = jsx(importDefault(11630), { channelId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
     let tmp8 = <View channelId={null} listStyleOverride={null} disableBottomSafeZone insetEnd={20} />;
   } else if ("thread" === stateFromStoresObject.type) {
     let obj1 = { style: null, children: null };
@@ -57,7 +57,7 @@ const memoResult = require("noop").memo(function LaunchPadMembers() {
     const obj2 = { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 };
     ({ channelId: obj5[0], guildId: obj5[1] } = stateFromStoresObject);
     obj2[2] = tmp.listStyle;
-    obj1[1] = jsx(importDefault(15842), { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    obj1[1] = jsx(importDefault(15851), { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
     tmp8 = <View style={null}>{null}</View>;
   } else if ("guild" === stateFromStoresObject.type) {
     const obj3 = { style: null, children: null };
@@ -65,7 +65,7 @@ const memoResult = require("noop").memo(function LaunchPadMembers() {
     const obj4 = { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 };
     ({ channelId: obj3[0], guildId: obj3[1] } = stateFromStoresObject);
     obj4[2] = tmp.listStyle;
-    obj3[1] = jsx(importDefault(11119), { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    obj3[1] = jsx(importDefault(11034), { channelId: null, guildId: null, listStyleOverride: null, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
     tmp8 = <View style={null}>{null}</View>;
   } else {
     const obj5 = { style: null, children: null };
@@ -74,7 +74,7 @@ const memoResult = require("noop").memo(function LaunchPadMembers() {
     obj6[0] = tmp.emptyText;
     const intl = tmp2(1236).intl;
     obj6[2] = intl.string(tmp2(1236).t["+7wtJq"]);
-    obj5[1] = jsx(tmp2(4340).Text, { style: null, variant: "text-md/semibold", children: null });
+    obj5[1] = jsx(tmp2(4338).Text, { style: null, variant: "text-md/semibold", children: null });
     tmp8 = <View style={null}>{null}</View>;
   }
   return tmp8;

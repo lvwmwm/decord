@@ -1,10 +1,10 @@
-// Module ID: 9356
-// Function ID: 9357
+// Module ID: 9360
+// Function ID: 9361
 // Name: context
 // Dependencies: [19, 2]
 // Exports: useObscuredSurface
 
-// Module 9356 (context)
+// Module 9360 (context)
 import importAllResult from "noop";
 
 let c0 = importAllResult;

@@ -1,10 +1,10 @@
-// Module ID: 8096
-// Function ID: 8097
+// Module ID: 8100
+// Function ID: 8101
 // Name: frozen
 // Dependencies: [17, 2]
 // Exports: getAssetUriForEmbed, shouldPlayVideoInline
 
-// Module 8096 (frozen)
+// Module 8100 (frozen)
 import { Image } from "get ActivityIndicator";
 import set from "set";
 

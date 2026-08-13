@@ -1,9 +1,9 @@
-// Module ID: 4361
-// Function ID: 4362
+// Module ID: 4362
+// Function ID: 4363
 // Name: isVoiceMuted
 // Dependencies: [1931, 2]
 
-// Module 4361 (isVoiceMuted)
+// Module 4362 (isVoiceMuted)
 import "toJS";
 
 const result = require("set").fileFinishedImporting("records/VoiceStateRecord.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 16430
-// Function ID: 16431
+// Module ID: 16441
+// Function ID: 16442
 // Name: CaptchaModal
-// Dependencies: [19, 17, 15149, 15150, 21, 4344, 8517, 1500, 16431, 5436, 4752, 6068, 4340, 1236, 4754, 10509, 16432, 15157, 2]
+// Dependencies: [19, 17, 15158, 15159, 21, 4342, 8521, 1500, 16442, 5437, 4753, 6070, 4338, 1236, 4755, 10423, 16443, 15166, 2]
 // Exports: default
 
-// Module 16430 (CaptchaModal)
+// Module 16441 (CaptchaModal)
 import noop from "noop";
 import get_ActivityIndicator from "trackRegTransition";
 import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore";
@@ -46,7 +46,7 @@ export default function CaptchaModal(arg0) {
   ({ close: dependencyMap, sitekey: noop, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let navigation;
   let callback;
-  const tmp2 = callback2(onReject(8517)());
+  const tmp2 = callback2(onReject(8521)());
   let obj = require(1500) /* createStandardNavigationFactories */;
   navigation = obj.useNavigation();
   const items = [navigation];
@@ -68,17 +68,17 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  callback = onReject(16431)({ onReject, analyticsType: memo });
+  callback = onReject(16442)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
     closure_4.dismiss();
   }, []);
   obj = { style: tmp2.contentContainer, spacing: 12, children: null };
-  const items1 = [callback(require(6068) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
+  const items1 = [callback(require(6070) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
   if (headerText == null) {
     const intl = tmp3(1236).intl;
     headerText = intl.string(tmp3(1236).t.FpoiHe);
   }
-  const items2 = [callback(require(4340) /* Text */.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
+  const items2 = [callback(require(4338) /* Text */.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
   obj = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: null };
   if (bodyText == null) {
     const intl2 = tmp3(1236).intl;
@@ -87,7 +87,7 @@ export default function CaptchaModal(arg0) {
   const obj1 = { startHeight: 900, startExpanded: true, children: null };
   let obj2 = { children: null };
   obj[3] = bodyText;
-  items2[1] = callback(require(4340) /* Text */.Text, obj);
+  items2[1] = callback(require(4338) /* Text */.Text, obj);
   obj2[0] = items2;
   items1[1] = closure_10(closure_5, obj2);
   const obj3 = {
@@ -150,8 +150,8 @@ export default function CaptchaModal(arg0) {
   };
   const intl3 = tmp3(1236).intl;
   obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
-  items1[2] = callback(require(4754) /* Button */.Button, obj3);
+  items1[2] = callback(require(4755) /* Button */.Button, obj3);
   obj[2] = items1;
-  obj1[2] = closure_10(require(4752) /* Stack */.Stack, obj);
-  return callback(require(5436) /* Background */.BottomSheet, obj1);
+  obj1[2] = closure_10(require(4753) /* Stack */.Stack, obj);
+  return callback(require(5437) /* Background */.BottomSheet, obj1);
 };

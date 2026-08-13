@@ -1,7 +1,7 @@
 // Module ID: 15
 // Function ID: 16
 // Name: createFastConnectSocket
-// Dependencies: [16, 17, 499, 3, 500, 502, 503, 675, 13002, 7150, 12984, 12973, 12969, 10, 9, 2]
+// Dependencies: [16, 17, 499, 3, 500, 502, 503, 675, 13002, 7156, 12984, 12973, 12969, 10, 9, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 15 (createFastConnectSocket)

@@ -1,7 +1,7 @@
 // Module ID: 12897
 // Function ID: 12898
 // Name: importDefaultResult1
-// Dependencies: [19, 17, 4382, 1218, 10458, 4012, 4390, 676, 1924, 21, 4344, 712, 4072, 10459, 4340, 1236, 4754, 5887, 9444, 1297, 5777, 9524, 5817, 12898, 12899, 12647, 12649, 12650, 12648, 12651, 12652, 12653, 12654, 12212, 12655, 12658, 12659, 12900, 589, 10465, 2]
+// Dependencies: [19, 17, 4383, 1218, 10372, 4012, 4391, 676, 1924, 21, 4342, 712, 4072, 10373, 4338, 1236, 4755, 5888, 9448, 1297, 5778, 9528, 5818, 12898, 12899, 12647, 12649, 12650, 12648, 12651, 12652, 12653, 12654, 12214, 12655, 12658, 12659, 12900, 589, 10379, 2]
 
 // Module 12897 (importDefaultResult1)
 import importAllResult from "Button";
@@ -109,14 +109,14 @@ prototype["renderGenerateGiftCodeRow"] = function renderGenerateGiftCodeRow() {
   obj = { variant: "text-xs/medium", color: "text-subtle", style: tmp.generateGiftRowText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.lELyPj);
-  const items1 = [callback(require(4340) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4338) /* Text */.Text, obj), ];
   obj = { style: tmp.generateButtonContainer, children: null };
   const obj1 = { style: tmp.generateGiftButton, children: null };
   const obj2 = { text: null, size: "sm", onPress: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[0] = intl2.string(require(1236) /* getSystemLocale */.t["w4+/BA"]);
   obj2[2] = this.handleGenerateGiftCode;
-  obj1[1] = callback(require(4754) /* Button */.Button, obj2);
+  obj1[1] = callback(require(4755) /* Button */.Button, obj2);
   obj[1] = callback(closure_4, obj1);
   items1[1] = callback(closure_4, obj);
   obj[1] = items1;
@@ -131,7 +131,7 @@ prototype["renderHeader"] = function renderHeader(arg0, children) {
   const isOpen = this.state.isOpen;
   ({ entitlements, application, sku, isRefreshEnabled } = this.props);
   let obj = dependencyMap;
-  let obj1 = require(5887) /* getPrice */;
+  let obj1 = require(5888) /* getPrice */;
   let isGameItemSKUResult = obj1.isGameItemSKU(sku);
   if (isGameItemSKUResult) {
     isGameItemSKUResult = null != application;
@@ -152,7 +152,7 @@ prototype["renderHeader"] = function renderHeader(arg0, children) {
   if (isGameItemSKUResult) {
     obj1 = { sku: null, size: null, containerStyle: null };
     obj1[0] = sku;
-    const tmp15 = importDefault(9444);
+    const tmp15 = importDefault(9448);
     obj1[1] = tmp2(1297).getIconSize(tmp2(1297).Icon.Sizes.LARGE);
     obj1[2] = tmp.giftIcon;
     let tmp6Result = tmp6(tmp15, obj1);
@@ -169,7 +169,7 @@ prototype["renderHeader"] = function renderHeader(arg0, children) {
   }
   const items1 = [tmp6Result, , ];
   const obj3 = { style: tmp.titleContainer, children: null };
-  const items2 = [closure_14(require(4340) /* Text */.Text, { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children }), ];
+  const items2 = [closure_14(require(4338) /* Text */.Text, { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children }), ];
   let socialLayerSubtitleContainer = isGameItemSKUResult;
   if (isGameItemSKUResult) {
     socialLayerSubtitleContainer = tmp.socialLayerSubtitleContainer;
@@ -180,10 +180,10 @@ prototype["renderHeader"] = function renderHeader(arg0, children) {
   if (isGameItemSKUResult) {
     const obj6 = { game: null, size: null, skuId: null };
     obj6[0] = application;
-    obj6[1] = importDefault(5777).Sizes.SIZE_24;
+    obj6[1] = importDefault(5778).Sizes.SIZE_24;
     obj6[2] = sku.id;
-    tmp6Result = tmp6(importDefault(5777), obj6);
-    const tmp18 = importDefault(5777);
+    tmp6Result = tmp6(importDefault(5778), obj6);
+    const tmp18 = importDefault(5778);
   }
   const items4 = [tmp6Result, ];
   const obj7 = { variant: "text-md/normal", color: "text-subtle", style: tmp.subtitle, children: null };
@@ -201,16 +201,16 @@ prototype["renderHeader"] = function renderHeader(arg0, children) {
     formatResult = format(t.zMcvcA, obj9);
   }
   obj7[3] = formatResult;
-  items4[1] = closure_14(require(4340) /* Text */.Text, obj7);
+  items4[1] = closure_14(require(4338) /* Text */.Text, obj7);
   obj5[1] = items4;
   items2[1] = closure_15(closure_4, obj5);
   obj3[1] = items2;
   items1[1] = closure_15(closure_4, obj3);
   if (isRefreshEnabled) {
     if (isOpen) {
-      let ChevronSmallRightIcon = tmp2(9524).ChevronSmallDownIcon;
+      let ChevronSmallRightIcon = tmp2(9528).ChevronSmallDownIcon;
     } else {
-      ChevronSmallRightIcon = tmp2(5817).ChevronSmallRightIcon;
+      ChevronSmallRightIcon = tmp2(5818).ChevronSmallRightIcon;
     }
     obj = {};
     tmp6(ChevronSmallRightIcon, obj);
@@ -245,7 +245,7 @@ prototype["getCardHeaderThumbnail"] = function getCardHeaderThumbnail(id, giftSt
     return importDefault(12654);
   } else if (tmp.NITROWEEN_STANDARD === giftStyle) {
     const obj = { uri: null };
-    obj[0] = importDefault(12212);
+    obj[0] = importDefault(12214);
     return obj;
   } else if (TIER_0.TIER_0 === id) {
     return importDefault(12655);
@@ -363,7 +363,7 @@ let tmp11 = require("initialize").connectStores(items, (arg0) => {
     obj[3] = importDefaultResult.getApplication(value.applicationId);
     let orFetchSubscriptionPlan = null;
     if (null != subscriptionPlanId) {
-      obj = require(10465) /* getSubscriptionPlans */;
+      obj = require(10379) /* getSubscriptionPlans */;
       orFetchSubscriptionPlan = obj.getOrFetchSubscriptionPlan(subscriptionPlanId);
     }
     obj[4] = orFetchSubscriptionPlan;

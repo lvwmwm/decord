@@ -1,7 +1,7 @@
 // Module ID: 10145
 // Function ID: 10146
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 4390, 676, 21, 589, 5767, 5787, 500, 7453, 4770, 698, 10135, 4020, 9624, 1236, 9616, 7454, 9625, 10146, 10147, 2]
+// Dependencies: [19, 4391, 676, 21, 589, 5768, 5788, 500, 7457, 4771, 698, 10135, 4020, 9628, 1236, 9620, 7458, 9629, 10146, 10147, 2]
 // Exports: default
 
 // Module 10145 (SocialLayerStorefrontGiftModal)

@@ -1,10 +1,10 @@
-// Module ID: 10904
-// Function ID: 10905
+// Module ID: 10818
+// Function ID: 10819
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 10905, 10906, 21, 4344, 5806, 10907, 4752, 10908, 10910, 4340, 1236, 10914, 10915, 10917, 5367, 2]
+// Dependencies: [19, 17, 10819, 10820, 21, 4342, 5807, 10821, 4753, 10822, 10824, 4338, 1236, 10828, 10829, 10831, 5368, 2]
 // Exports: UserSettingsTableRowGroup, default
 
-// Module 10904 (UserSettingsVoice)
+// Module 10818 (UserSettingsVoice)
 import "noop";
 import { View } from "set";
 import { isMobileOverlaySupported } from "getUserAgnosticState";
@@ -21,28 +21,28 @@ const result = require("getUserAgnosticState").fileFinishedImporting("modules/us
 
 export default function UserSettingsVoice() {
   const tmp = callback2();
-  let obj = importDefault(10907);
+  let obj = importDefault(10821);
   let nonContextualStreamOutputPresent = obj.useConfig({ location: "NewUserSettingsVoice" }).nonContextualStreamOutputPresent;
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(10908), {}), , , , , , ];
+  const items = [callback(importDefault(10822), {}), , , , , , ];
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp4(tmp2(10910), {});
+    nonContextualStreamOutputPresent = tmp4(tmp2(10824), {});
   }
   items[1] = nonContextualStreamOutputPresent;
   obj = { style: tmp.tableRow, variant: "text-sm/medium", children: null };
   const intl = tmp7(1236).intl;
   obj[2] = intl.format(require(1236) /* getSystemLocale */.t["V+B3FH"], { guideURL: closure_5 });
-  items[2] = callback(require(4340) /* Text */.Text, obj);
-  items[3] = callback(importDefault(10914), {});
+  items[2] = callback(require(4338) /* Text */.Text, obj);
+  items[3] = callback(importDefault(10828), {});
   const obj2 = { spacing: 24, children: null };
-  items[4] = isMobileOverlaySupported() && callback(importDefault(10915), {});
-  items[5] = callback(importDefault(10917), {});
-  items[6] = callback(require(5367) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true });
+  items[4] = isMobileOverlaySupported() && callback(importDefault(10829), {});
+  items[5] = callback(importDefault(10831), {});
+  items[6] = callback(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true });
   obj2[1] = items;
-  obj[1] = closure_7(require(4752) /* Stack */.Stack, obj2);
+  obj[1] = closure_7(require(4753) /* Stack */.Stack, obj2);
   return callback(View, obj);
 };
 export const UserSettingsTableRowGroup = function UserSettingsTableRowGroup(arg0) {
   const merged = Object.assign(arg0);
-  return callback(require(5806) /* TableRowGroupTitle */.TableRowGroup, {});
+  return callback(require(5807) /* TableRowGroupTitle */.TableRowGroup, {});
 };

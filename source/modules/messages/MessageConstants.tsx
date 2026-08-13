@@ -1,10 +1,10 @@
-// Module ID: 4337
-// Function ID: 4338
+// Module ID: 4335
+// Function ID: 4336
 // Name: MESSAGE_GROUP_SPACING
 // Dependencies: [676, 687, 584, 2]
 // Exports: isChannelStreamMessage
 
-// Module 4337 (MESSAGE_GROUP_SPACING)
+// Module 4335 (MESSAGE_GROUP_SPACING)
 import { ChannelStreamTypes } from "ME";
 import importDefaultResult from "fails";
 

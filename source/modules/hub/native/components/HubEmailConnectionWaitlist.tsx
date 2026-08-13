@@ -1,10 +1,10 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12151
+// Function ID: 12152
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 676, 21, 4344, 712, 1499, 6049, 1236, 12150, 1297, 4340, 4754, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 1499, 6051, 1236, 12152, 1297, 4338, 4755, 2]
 // Exports: default
 
-// Module 12149 (HubEmailConnectionWaitlist)
+// Module 12151 (HubEmailConnectionWaitlist)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -44,7 +44,7 @@ export default function HubEmailConnectionWaitlist(school) {
     });
   }, items);
   obj = { style: tmp.container, children: null };
-  obj = { source: navigation(12150), style: tmp.header };
+  obj = { source: navigation(12152), style: tmp.header };
   const items1 = [callback(closure_5, obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", children: null };
   let intl = onClose(1236).intl;
@@ -53,13 +53,13 @@ export default function HubEmailConnectionWaitlist(school) {
   const obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = onClose(1236).intl;
   obj2[3] = intl2.format(onClose(1236).t.Rs7MXJ, { school: school.school });
-  items1[2] = callback(onClose(4340).Text, obj2);
+  items1[2] = callback(onClose(4338).Text, obj2);
   const obj3 = { style: tmp.redesignButton, children: null };
   const obj4 = { size: "lg", text: null, onPress: null };
   const intl3 = onClose(1236).intl;
   obj4[1] = intl3.string(onClose(1236).t.i4jeWR);
   obj4[2] = onClose;
-  obj3[1] = callback(onClose(4754).Button, obj4);
+  obj3[1] = callback(onClose(4755).Button, obj4);
   items1[3] = callback(closure_4, obj3);
   obj[1] = items1;
   return callback2(closure_4, obj);

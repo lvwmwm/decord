@@ -1,9 +1,9 @@
-// Module ID: 7043
-// Function ID: 7044
+// Module ID: 7049
+// Function ID: 7050
 // Name: updateCategoriesAndProducts
-// Dependencies: [1994, 7044, 687, 584, 709, 12, 7055, 589, 2]
+// Dependencies: [1994, 7050, 687, 584, 709, 12, 7061, 589, 2]
 
-// Module 7043 (updateCategoriesAndProducts)
+// Module 7049 (updateCategoriesAndProducts)
 import _getSystemLocale from "_getSystemLocale";
 import fromServer from "fromServer";
 import { Store } from "initialize";
@@ -15,7 +15,7 @@ function updateCategoriesAndProducts(map) {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
   }));
-  const productsFromCategories = map1(7055).getProductsFromCategories(map, true);
+  const productsFromCategories = map1(7061).getProductsFromCategories(map, true);
   map1 = new Map(productsFromCategories.map((skuId) => {
     const items = [skuId.skuId, skuId];
     return items;
@@ -25,8 +25,8 @@ function updateCategoriesAndProducts(map) {
       const result = map1.set(skuId.skuId, skuId);
     }
   });
-  const obj = map1(7055);
-  const productsFromCategories1 = map1(7055).getProductsFromCategories(map, false);
+  const obj = map1(7061);
+  const productsFromCategories1 = map1(7061).getProductsFromCategories(map, false);
   const map2 = new Map(productsFromCategories1.map((storeListingId) => {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;

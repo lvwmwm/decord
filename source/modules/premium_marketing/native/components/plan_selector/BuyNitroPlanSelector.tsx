@@ -1,7 +1,7 @@
 // Module ID: 12742
 // Function ID: 12743
 // Name: BuyNitroPlanSelector
-// Dependencies: [19, 17, 5897, 4327, 505, 21, 4344, 712, 5198, 589, 7689, 12743, 12744, 7783, 1236, 12745, 8026, 8025, 7452, 5894, 500, 2]
+// Dependencies: [19, 17, 5899, 4325, 505, 21, 4342, 712, 5199, 589, 7693, 12743, 12744, 7787, 1236, 12745, 8030, 8029, 7456, 5896, 500, 2]
 // Exports: default
 
 // Module 12742 (BuyNitroPlanSelector)
@@ -46,7 +46,7 @@ export default function BuyNitroPlanSelector(planSelection) {
     }
     return product;
   });
-  let obj1 = planSelection(7689);
+  let obj1 = planSelection(7693);
   isBuyNitroPurchaseBlocked = obj1.useIsBuyNitroPurchaseBlocked();
   let obj2 = planSelection(12743);
   updateProduct = obj2.useBuyNitroPlanLabelRenderer();
@@ -56,7 +56,7 @@ export default function BuyNitroPlanSelector(planSelection) {
   obj = { title: null };
   const intl = planSelection(1236).intl;
   obj[0] = intl.string(planSelection(1236).t.u95Dt4);
-  const items1 = [callback(selection(7783), obj), ];
+  const items1 = [callback(selection(7787), obj), ];
   obj1 = { selectedTier: selection.tier, setSelectedTier: selection.setTier, disabled: isBuyNitroPurchaseBlocked };
   items1[1] = callback(selection(12745), obj1);
   obj[1] = items1;
@@ -73,7 +73,7 @@ export default function BuyNitroPlanSelector(planSelection) {
       obj[3] = isBuyNitroPurchaseBlocked;
       return outer1_7(planSelection(_undefined[17]).TableRadioRow, obj, productId.productId);
     });
-    tmp8Result = tmp8(tmp2(8026).TableRadioGroup, obj2);
+    tmp8Result = tmp8(tmp2(8030).TableRadioGroup, obj2);
   }
   children[1] = tmp8Result;
   tmp8Result = null != stateFromStores;
@@ -90,16 +90,16 @@ export default function BuyNitroPlanSelector(planSelection) {
     const obj4 = { message: null };
     const intl2 = tmp2(1236).intl;
     const obj5 = { kunaPriceWithCurrency: null };
-    let tmp2Result = tmp2(5894);
+    let tmp2Result = tmp2(5896);
     const obj6 = { convertToMajorUnits: null };
     const result = stateFromStores.price * closure_5;
     tmp2Result = tmp2(500);
     obj6[0] = tmp2Result.isAndroid();
     obj5[0] = tmp2Result.formatPrice(result, CurrencyCodes.HRK, obj6);
     obj4[0] = intl2.formatToPlainString(tmp2(1236).t["9hnZoK"], obj5);
-    obj3[1] = tmp8(selection(7452), obj4);
+    obj3[1] = tmp8(selection(7456), obj4);
     tmp8Result = tmp8(tmp7, obj3);
-    const tmp9Result = selection(7452);
+    const tmp9Result = selection(7456);
   }
   children[2] = tmp8Result;
   return callback2(isBuyNitroPurchaseBlocked, { children });

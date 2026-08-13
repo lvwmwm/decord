@@ -1,10 +1,10 @@
-// Module ID: 6113
-// Function ID: 6114
+// Module ID: 6115
+// Function ID: 6116
 // Name: AgeVerificationSpotIllustration
-// Dependencies: [21, 5307, 6114, 2]
+// Dependencies: [21, 5308, 6116, 2]
 // Exports: AgeVerificationSpotIllustration
 
-// Module 6113 (AgeVerificationSpotIllustration)
+// Module 6115 (AgeVerificationSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AgeVerificationSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const AgeVerificationSpotIllustration = function AgeVerificationSpotIllus
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6114);
+  obj[0] = importDefault(6116);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AgeVerificationSpotIllustration = function AgeVerificationSpotIllus
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
 };

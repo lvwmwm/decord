@@ -1,22 +1,22 @@
-// Module ID: 10739
-// Function ID: 10740
+// Module ID: 10653
+// Function ID: 10654
 // Name: useParticipantTileTapGesture
-// Dependencies: [5466, 2]
+// Dependencies: [5467, 2]
 // Exports: default
 
-// Module 10739 (useParticipantTileTapGesture)
+// Module 10653 (useParticipantTileTapGesture)
 const result = require("set").fileFinishedImporting("modules/video_calls/native/useParticipantTileTapGesture.tsx");
 
 export default function useParticipantTileTapGesture(arg0) {
   let onDoubleTapStart;
   let onSingleTapStart;
   ({ onSingleTapStart, onDoubleTapStart } = arg0);
-  const Gesture = require(5466) /* LegacyBaseButton */.Gesture;
+  const Gesture = require(5467) /* LegacyBaseButton */.Gesture;
   const TapResult = Gesture.Tap();
-  const Gesture2 = require(5466) /* LegacyBaseButton */.Gesture;
+  const Gesture2 = require(5467) /* LegacyBaseButton */.Gesture;
   const onStartResult = Gesture.Tap().onStart(onSingleTapStart);
   const TapResult1 = Gesture2.Tap();
   const onStartResult1 = Gesture2.Tap().onStart(onDoubleTapStart);
-  const Gesture3 = require(5466) /* LegacyBaseButton */.Gesture;
+  const Gesture3 = require(5467) /* LegacyBaseButton */.Gesture;
   return Gesture3.Exclusive(Gesture2.Tap().onStart(onDoubleTapStart).numberOfTaps(2), onStartResult);
 };

@@ -1,10 +1,10 @@
-// Module ID: 4899
-// Function ID: 4900
+// Module ID: 4900
+// Function ID: 4901
 // Name: _getAttachmentFile
-// Dependencies: [5, 3, 38, 4891, 4900, 4892, 2]
+// Dependencies: [5, 3, 38, 4892, 4901, 4893, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 4899 (_getAttachmentFile)
+// Module 4900 (_getAttachmentFile)
 import items from "items";
 
 const require = arg1;
@@ -76,13 +76,13 @@ function _getAttachmentFile() {
               return obj3;
             } else {
               items = arg1;
-              logger = lib(4892).getAttachmentPayload(lib, callback, items.name);
+              logger = lib(4893).getAttachmentPayload(lib, callback, items.name);
               c6 = 2;
-              const obj10 = lib(4892);
+              const obj10 = lib(4893);
               c7 = 4;
               c8 = 1;
               const obj4 = { value: null, done: false };
-              obj4[0] = lib(4900).getFileSize(items.uri);
+              obj4[0] = lib(4901).getFileSize(items.uri);
               return obj4;
             }
           } else {
@@ -235,10 +235,10 @@ export const cancelGetAttachmentFile = function cancelGetAttachmentFile(found) {
 export const fileIsInAppDir = function fileIsInAppDir(uri) {
   const replaced = uri.replace(/^file:\/\//, "");
   try {
-    let startsWithResult = "" !== require(4900) /* openImagePickerUnhandled */.getAppDir();
+    let startsWithResult = "" !== require(4901) /* openImagePickerUnhandled */.getAppDir();
     if (startsWithResult) {
-      startsWithResult = replaced.startsWith(require(4900) /* openImagePickerUnhandled */.getAppDir());
-      const tmpResult = require(4900) /* openImagePickerUnhandled */;
+      startsWithResult = replaced.startsWith(require(4901) /* openImagePickerUnhandled */.getAppDir());
+      const tmpResult = require(4901) /* openImagePickerUnhandled */;
     }
     return startsWithResult;
   } catch (tmp4) {

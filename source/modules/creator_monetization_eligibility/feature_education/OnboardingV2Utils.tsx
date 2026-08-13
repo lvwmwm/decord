@@ -1,10 +1,10 @@
-// Module ID: 15449
-// Function ID: 15450
+// Module ID: 15458
+// Function ID: 15459
 // Name: items
-// Dependencies: [1434, 1910, 1922, 676, 589, 5919, 2]
+// Dependencies: [1434, 1910, 1922, 676, 589, 5921, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 15449 (items)
+// Module 15458 (items)
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -46,9 +46,9 @@ export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreato
     if (null == currentUser) {
       return false;
     } else {
-      const guildRoleSubscriptionSettingsVisibility = guild(5919).getGuildRoleSubscriptionSettingsVisibility(guild);
-      let tmp5 = guildRoleSubscriptionSettingsVisibility === guild(5919).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
-      const obj = guild(5919);
+      const guildRoleSubscriptionSettingsVisibility = guild(5921).getGuildRoleSubscriptionSettingsVisibility(guild);
+      let tmp5 = guildRoleSubscriptionSettingsVisibility === guild(5921).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
+      const obj = guild(5921);
       const tmp7 = isGuildOwner(guild, currentUser);
       if (tmp5) {
         tmp5 = tmp7;

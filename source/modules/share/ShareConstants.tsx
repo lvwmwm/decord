@@ -1,10 +1,10 @@
-// Module ID: 7361
-// Function ID: 7362
+// Module ID: 7366
+// Function ID: 7367
 // Name: ALLOWED_TYPES
-// Dependencies: [7348, 2]
+// Dependencies: [7353, 2]
 // Exports: isAllowedType
 
-// Module 7361 (ALLOWED_TYPES)
+// Module 7366 (ALLOWED_TYPES)
 const items = [require("sortByMatchScore").AutocompleterResultTypes.USER, require("sortByMatchScore").AutocompleterResultTypes.TEXT_CHANNEL, require("sortByMatchScore").AutocompleterResultTypes.VOICE_CHANNEL, require("sortByMatchScore").AutocompleterResultTypes.GROUP_DM];
 const arr = Array.from(items);
 const result = require("set").fileFinishedImporting("modules/share/ShareConstants.tsx");

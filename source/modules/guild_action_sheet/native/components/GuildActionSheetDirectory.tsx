@@ -1,10 +1,10 @@
-// Module ID: 13380
-// Function ID: 13381
+// Module ID: 13381
+// Function ID: 13382
 // Name: GuildActionSheetDirectory
-// Dependencies: [19, 17, 21, 4344, 712, 1628, 5436, 5438, 13381, 13324, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1628, 5437, 5439, 13382, 13325, 2]
 // Exports: default
 
-// Module 13380 (GuildActionSheetDirectory)
+// Module 13381 (GuildActionSheetDirectory)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -31,12 +31,12 @@ export default function GuildActionSheetDirectory(arg0) {
   const tmp = createCacheKey();
   let obj = { scrollable: true, startExpanded: expanded, children: null };
   obj = { scrollsToTop: false, style: tmp.container, contentContainerStyle: { paddingBottom: importDefault(1628)().bottom }, children: null };
-  const items = [callback(importDefault(13381), { guild }), ];
+  const items = [callback(importDefault(13382), { guild }), ];
   obj = { style: tmp.actions, children: null };
-  const items1 = [callback(require(13324) /* HideMutedChannelsOption */.GuildActionSheetDirectoryActions, { guild }), callback(require(13324) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild })];
+  const items1 = [callback(require(13325) /* HideMutedChannelsOption */.GuildActionSheetDirectoryActions, { guild }), callback(require(13325) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild })];
   obj[1] = items1;
   items[1] = callback2(View, obj);
   obj[3] = items;
-  obj[2] = callback2(require(5438) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return callback(require(5436) /* Background */.BottomSheet, obj);
+  obj[2] = callback2(require(5439) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  return callback(require(5437) /* Background */.BottomSheet, obj);
 };

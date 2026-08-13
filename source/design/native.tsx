@@ -1,9 +1,9 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13447
+// Function ID: 13448
 // Name: AccessibilityAnnouncer
-// Dependencies: [1357, 4762, 5372, 13447, 2, 1351, 1352, 4073, 1356, 4068, 4069, 4070, 1364, 4072, 4130, 4753, 4757, 4345, 4348, 4347, 11015, 4344, 4737, 13448, 13449, 13450, 13451, 4340, 4688, 4065, 4066, 8704, 5436, 5750, 7774, 5803, 5804, 9021, 5435, 10243, 13452, 5751, 9055, 5802, 5801, 5805, 4736, 13453, 13455, 13457, 13459, 13461, 10880, 13463, 13465, 13467, 13469, 13471, 13473, 13475, 13477, 13479, 13481, 4754, 7792, 9170, 8715, 13483, 5190, 10580, 13392, 5413, 5807, 5806, 5419, 8026, 8493, 8025, 8011, 4687, 4684, 5415, 9187, 9607, 9001, 10382, 12033, 13484, 8643, 13485, 8644, 13487, 7832, 6041, 6042, 6033, 6034, 13488, 8018, 8017, 7831, 8538, 8699, 8703, 8698, 13489, 7775, 5756, 5754, 4752, 4742, 5822, 13490, 5823, 13491, 5306, 5309, 5857, 6049, 1499, 5864, 5315, 5753, 5861, 11395, 13492, 10312, 7849, 13494, 11393, 10311, 7848, 13493, 5412, 12370, 13495, 12035, 10316, 10317, 13496, 5862]
+// Dependencies: [1357, 4763, 5373, 13448, 2, 1351, 1352, 4073, 1356, 4068, 4069, 4070, 1364, 4072, 4128, 4754, 4758, 4343, 4346, 4345, 10929, 4342, 4738, 13449, 13450, 13451, 13452, 4338, 4347, 4689, 4065, 4066, 8708, 5437, 5751, 7778, 5804, 5805, 9025, 5436, 10243, 13453, 5752, 9059, 5803, 5802, 5806, 4737, 13454, 13456, 13458, 13460, 13462, 10794, 13464, 13466, 13468, 13470, 13472, 13474, 13476, 13478, 13480, 13482, 4755, 7796, 9174, 8719, 13484, 5191, 10494, 13393, 5414, 5808, 5807, 5420, 8030, 8497, 8029, 8015, 4688, 4685, 5416, 9191, 9611, 9005, 10294, 12035, 13485, 8647, 13486, 8648, 13488, 7836, 6043, 6044, 6035, 6036, 13489, 8022, 8021, 7835, 8542, 8703, 8707, 8702, 13490, 7779, 5757, 5755, 4753, 4743, 5823, 13491, 5824, 13492, 5307, 5310, 5858, 6051, 1499, 5865, 5316, 5754, 5862, 11386, 13493, 11149, 7853, 13495, 11384, 11148, 7852, 13494, 5413, 12370, 13496, 12037, 11153, 11154, 13497, 5863]
 
-// Module 13446 (AccessibilityAnnouncer)
+// Module 13447 (AccessibilityAnnouncer)
 const result = require("TABLE_ROW_HEIGHT").fileFinishedImporting("design/native.tsx");
 
 export const AccessibilityAnnouncer = require("AccessibilityAnnouncer").AccessibilityAnnouncer;
@@ -80,6 +80,7 @@ export const MenuPopoutState = require("MenuPopout").MenuPopoutState;
 export const Heading = require("Text").Heading;
 export const Text = require("Text").Text;
 export const TextStyleSheet = require("Text").TextStyleSheet;
+export const PlainTextExperimentProvider = require("PlainTextExperimentProvider").PlainTextExperimentProvider;
 export const TransitionGroup = require("wrapChildrenDefault").TransitionGroup;
 export const TransitionItem = require("wrapChildrenDefault").TransitionItem;
 export const TransitionStates = require("wrapChildrenDefault").TransitionStates;

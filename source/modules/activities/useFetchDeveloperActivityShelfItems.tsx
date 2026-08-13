@@ -1,10 +1,10 @@
-// Module ID: 11565
-// Function ID: 11566
+// Module ID: 11561
+// Function ID: 11562
 // Name: useFetchDeveloperActivityShelfItems
-// Dependencies: [19, 7629, 10696, 4034, 589, 10672, 2]
+// Dependencies: [19, 7633, 10610, 4034, 589, 10586, 2]
 // Exports: useFetchDeveloperActivityShelfItems
 
-// Module 11565 (useFetchDeveloperActivityShelfItems)
+// Module 11561 (useFetchDeveloperActivityShelfItems)
 import noop from "noop";
 import initialize from "initialize";
 import { DevShelfFetchState } from "initialize";

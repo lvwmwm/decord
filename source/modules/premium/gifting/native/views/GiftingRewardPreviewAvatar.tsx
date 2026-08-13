@@ -1,7 +1,7 @@
 // Module ID: 10165
 // Function ID: 10166
 // Name: GiftingRewardPreviewAvatar
-// Dependencies: [19, 4336, 1922, 21, 589, 1297, 2]
+// Dependencies: [19, 4334, 1922, 21, 589, 1297, 2]
 // Exports: default
 
 // Module 10165 (GiftingRewardPreviewAvatar)

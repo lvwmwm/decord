@@ -1,9 +1,9 @@
-// Module ID: 13782
-// Function ID: 13783
+// Module ID: 13783
+// Function ID: 13784
 // Name: set
-// Dependencies: [1218, 1391, 3998, 1922, 500, 4034, 4534, 1363, 1236, 4522, 709, 2]
+// Dependencies: [1218, 1391, 3998, 1922, 500, 4034, 4535, 1363, 1236, 4523, 709, 2]
 
-// Module 13782 (set)
+// Module 13783 (set)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
@@ -27,7 +27,7 @@ class AccessibilityCallManager extends tmp4 {
           if (!obj2.isIOS()) {
             const channel = store2.getChannel(channelId);
             if (null != channel) {
-              const channelName = tmp4(4534).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+              const channelName = tmp4(4535).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
               if (null != channelName) {
                 obj.add(channelId);
                 const AccessibilityAnnouncer = tmp4(1363).AccessibilityAnnouncer;
@@ -36,7 +36,7 @@ class AccessibilityCallManager extends tmp4 {
                 obj[0] = channelName;
                 AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp4(1236).t["Bm0A/p"], obj), "assertive");
               }
-              const tmp4Result = tmp4(4534);
+              const tmp4Result = tmp4(4535);
             }
           } else {
             const NativePhoneIntegrationEnabled = tmp4(4034).NativePhoneIntegrationEnabled;
@@ -60,7 +60,7 @@ class AccessibilityCallManager extends tmp4 {
             if (!obj3.isIOS()) {
               const channel = store2.getChannel(channelId);
               if (null != channel) {
-                const channelName = tmp4(4534).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+                const channelName = tmp4(4535).computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
                 if (null != channelName) {
                   obj2.add(channelId);
                   const AccessibilityAnnouncer = tmp4(1363).AccessibilityAnnouncer;
@@ -69,7 +69,7 @@ class AccessibilityCallManager extends tmp4 {
                   obj[0] = channelName;
                   AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp4(1236).t["Bm0A/p"], obj), "assertive");
                 }
-                const tmp4Result = tmp4(4534);
+                const tmp4Result = tmp4(4535);
               }
             } else {
               const NativePhoneIntegrationEnabled = tmp4(4034).NativePhoneIntegrationEnabled;

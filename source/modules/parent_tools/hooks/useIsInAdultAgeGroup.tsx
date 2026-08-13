@@ -1,10 +1,10 @@
-// Module ID: 7378
-// Function ID: 7379
+// Module ID: 7382
+// Function ID: 7383
 // Name: useIsInAdultAgeGroup
-// Dependencies: [7038, 589, 2]
+// Dependencies: [7044, 589, 2]
 // Exports: default
 
-// Module 7378 (useIsInAdultAgeGroup)
+// Module 7382 (useIsInAdultAgeGroup)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
 const require = arg1;

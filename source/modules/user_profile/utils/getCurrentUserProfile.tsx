@@ -1,7 +1,7 @@
 // Module ID: 10180
 // Function ID: 10181
 // Name: getCurrentUserProfile
-// Dependencies: [1922, 7122, 2]
+// Dependencies: [1922, 7128, 2]
 // Exports: default
 
 // Module 10180 (getCurrentUserProfile)

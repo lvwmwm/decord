@@ -1,8 +1,8 @@
-// Module ID: 9028
-// Function ID: 9029
-// Dependencies: [5, 32, 19, 1397, 21, 4344, 712, 8986, 9000, 1891, 8985, 1351, 1236, 8990, 9029, 9009, 9032, 9075, 9076, 5822, 2]
+// Module ID: 9032
+// Function ID: 9033
+// Dependencies: [5, 32, 19, 1397, 21, 4342, 712, 8990, 9004, 1891, 8989, 1351, 1236, 8994, 9033, 9013, 9036, 9079, 9080, 5823, 2]
 
-// Module 9028
+// Module 9032
 import closure_4 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "NavigationStack";
@@ -178,7 +178,7 @@ const memoResult = importAllResult.memo((guild) => {
   obj = {};
   obj = { title: "", customNavbar: null, headerLeft: null, render: null, fullscreen: true };
   PREVIEW = PREVIEW(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR;
-  obj[1] = () => jsx(importDefault(9009), { screen: PREVIEW, onClose: outer1_1 });
+  obj[1] = () => jsx(importDefault(9013), { screen: PREVIEW, onClose: outer1_1 });
   obj[2] = function headerLeft() {
     return null;
   };
@@ -195,7 +195,7 @@ const memoResult = importAllResult.memo((guild) => {
   obj[PREVIEW(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR] = obj;
   obj1 = { title: "", customNavbar: null, render: null, fullscreen: true };
   PREVIEW = PREVIEW(first[7]).EditGuildEventScreens.DETAILS;
-  obj1[1] = () => jsx(importDefault(9009), { screen: PREVIEW, onClose: outer1_1 });
+  obj1[1] = () => jsx(importDefault(9013), { screen: PREVIEW, onClose: outer1_1 });
   obj1[2] = function render() {
     const merged = Object.assign(callback2);
     return callback2(outer1_1(first[17]), {});
@@ -203,7 +203,7 @@ const memoResult = importAllResult.memo((guild) => {
   obj[PREVIEW(first[7]).EditGuildEventScreens.DETAILS] = obj1;
   let obj2 = { title: "", customNavbar: null, render: null, fullscreen: true };
   PREVIEW = PREVIEW(first[7]).EditGuildEventScreens.PREVIEW;
-  obj2[1] = () => jsx(importDefault(9009), { screen: PREVIEW, onClose: outer1_1 });
+  obj2[1] = () => jsx(importDefault(9013), { screen: PREVIEW, onClose: outer1_1 });
   obj2[2] = function render() {
     const merged = Object.assign(callback2);
     return callback2(outer1_1(first[18]), {});

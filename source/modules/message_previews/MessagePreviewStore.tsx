@@ -1,7 +1,7 @@
 // Module ID: 13043
 // Function ID: 13044
 // Name: initialize
-// Dependencies: [32, 1391, 4561, 3, 589, 709, 13044, 5033, 2]
+// Dependencies: [32, 1391, 4562, 3, 589, 709, 13044, 5034, 2]
 
 // Module 13043 (initialize)
 import _slicedToArray from "_slicedToArray";
@@ -225,7 +225,7 @@ prototype["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(chan
     return false;
   } else {
     const self = this;
-    const result = object(5033).requireSortedDescending(channelId.messages);
+    const result = object(5034).requireSortedDescending(channelId.messages);
     if (!channelId.isAfter) {
       if (!channelId.isBefore) {
         if (!channelId.hasMoreAfter) {
@@ -238,7 +238,7 @@ prototype["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(chan
         }
       }
     }
-    const obj3 = object(5033);
+    const obj3 = object(5034);
     let first1 = channelId.messages[0];
     if (first1 == null) {
       first1 = null;
@@ -251,8 +251,8 @@ prototype["handleLocalMessagesLoaded"] = function handleLocalMessagesLoaded(chan
   const basicChannel = store.getBasicChannel(channelId.channelId);
   if (null != basicChannel) {
     const self = this;
-    const result = object(5033).requireSortedDescending(channelId.messages);
-    const obj = object(5033);
+    const result = object(5034).requireSortedDescending(channelId.messages);
+    const obj = object(5034);
     let first = channelId.messages[0];
     if (first == null) {
       first = null;

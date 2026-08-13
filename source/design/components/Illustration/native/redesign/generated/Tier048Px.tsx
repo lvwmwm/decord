@@ -1,7 +1,7 @@
 // Module ID: 12843
 // Function ID: 12844
 // Name: getTier048PxSource
-// Dependencies: [19, 17, 21, 7664, 12844, 12845, 12846, 1363, 2]
+// Dependencies: [19, 17, 21, 7668, 12844, 12845, 12846, 1363, 2]
 // Exports: Tier048Px, getTier048PxSource, useTier048PxSource
 
 // Module 12843 (getTier048PxSource)
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Tier048Px.tsx");
 
 export const getTier048PxSource = function getTier048PxSource(theme) {
-  let obj = require(7664) /* getIllustrationSource */;
+  let obj = require(7668) /* getIllustrationSource */;
   obj = {
     dark() {
       return callback(12844);
@@ -40,7 +40,7 @@ export const useTier048PxSource = function useTier048PxSource() {
       return callback(12846);
     }
   };
-  return require(7664) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const Tier048Px = function Tier048Px(arg0) {
   let obj = require(1363) /* AccessibilityAnnouncer */;
@@ -56,7 +56,7 @@ export const Tier048Px = function Tier048Px(arg0) {
     }
   };
   obj = {};
-  const illustrationSource = require(7664) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

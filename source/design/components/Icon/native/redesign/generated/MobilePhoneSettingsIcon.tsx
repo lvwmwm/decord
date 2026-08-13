@@ -1,10 +1,10 @@
-// Module ID: 14813
-// Function ID: 14814
+// Module ID: 14822
+// Function ID: 14823
 // Name: MobilePhoneSettingsIcon
-// Dependencies: [19, 21, 712, 4064, 14814, 2]
+// Dependencies: [19, 21, 712, 4064, 14823, 2]
 // Exports: MobilePhoneSettingsIcon
 
-// Module 14813 (MobilePhoneSettingsIcon)
+// Module 14822 (MobilePhoneSettingsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const MobilePhoneSettingsIcon = function MobilePhoneSettingsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14814) /* registerAsset */;
+  obj[0] = require(14823) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 16042
-// Function ID: 16043
+// Module ID: 16052
+// Function ID: 16053
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 1391, 4561, 1922, 21, 4344, 712, 1628, 589, 16043, 16045, 11860, 2]
+// Dependencies: [32, 19, 17, 1391, 4562, 1922, 21, 4342, 712, 1628, 589, 16053, 16055, 11862, 2]
 // Exports: default
 
-// Module 16042 (RestrictedMessageRequestPreview)
+// Module 16052 (RestrictedMessageRequestPreview)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -118,10 +118,10 @@ export default function RestrictedMessageRequestPreview(channelId) {
       obj1 = { channel: null, user: null };
       obj1[0] = stateFromStores;
       obj1[1] = stateFromStores1;
-      const items8 = [callback(tmp2(16043), obj1), ];
+      const items8 = [callback(tmp2(16053), obj1), ];
       obj2 = { channelId: null };
       obj2[0] = channelId;
-      items8[1] = callback(tmp2(16045), obj2);
+      items8[1] = callback(tmp2(16055), obj2);
       obj[5] = items8;
       const items9 = [closure_11(closure_5, obj), ];
       const obj3 = { style: null, children: null };
@@ -132,7 +132,7 @@ export default function RestrictedMessageRequestPreview(channelId) {
       obj3[0] = items10;
       const obj5 = { channel: null };
       obj5[0] = stateFromStores;
-      obj3[1] = callback(tmp2(11860), obj5);
+      obj3[1] = callback(tmp2(11862), obj5);
       items9[1] = callback(first1, obj3);
       obj[1] = items9;
       tmp13Result = tmp13(tmp14, obj);

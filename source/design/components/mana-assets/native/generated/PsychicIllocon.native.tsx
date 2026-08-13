@@ -1,10 +1,10 @@
-// Module ID: 6691
-// Function ID: 6692
+// Module ID: 6695
+// Function ID: 6696
 // Name: PsychicIllocon
-// Dependencies: [21, 5307, 6692, 2]
+// Dependencies: [21, 5308, 6696, 2]
 // Exports: PsychicIllocon
 
-// Module 6691 (PsychicIllocon)
+// Module 6695 (PsychicIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PsychicIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const PsychicIllocon = function PsychicIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6692);
+  obj[0] = importDefault(6696);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { uri: null });
+  return jsx(importDefault(5308), { uri: null });
 };

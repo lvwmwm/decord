@@ -1,10 +1,10 @@
-// Module ID: 8359
-// Function ID: 8360
+// Module ID: 8363
+// Function ID: 8364
 // Name: didReplyMention
 // Dependencies: [2]
 // Exports: default
 
-// Module 8359 (didReplyMention)
+// Module 8363 (didReplyMention)
 const result = require("set").fileFinishedImporting("modules/replies/didReplyMention.tsx");
 
 export default function didReplyMention(mentions, author) {

@@ -1,10 +1,10 @@
-// Module ID: 15068
-// Function ID: 15069
+// Module ID: 15077
+// Function ID: 15078
 // Name: isValidClipboardCode
-// Dependencies: [5, 32, 19, 21, 15066, 4340, 1236, 8517, 15061, 15067, 15064, 2]
+// Dependencies: [5, 32, 19, 21, 15075, 4338, 1236, 8521, 15070, 15076, 15073, 2]
 // Exports: default
 
-// Module 15068 (isValidClipboardCode)
+// Module 15077 (isValidClipboardCode)
 import Text from "Text";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -15,9 +15,9 @@ let error;
 let metroImportAll;
 const require = arg1;
 function isValidClipboardCode(arg0) {
-  let tmp3 = arg0.length >= require(15066) /* finishMFACheck */.BACKUP_CODE_MIN_LENGTH;
+  let tmp3 = arg0.length >= require(15075) /* finishMFACheck */.BACKUP_CODE_MIN_LENGTH;
   if (tmp3) {
-    tmp3 = arg0.length <= require(15066) /* finishMFACheck */.BACKUP_CODE_MAX_LENGTH;
+    tmp3 = arg0.length <= require(15075) /* finishMFACheck */.BACKUP_CODE_MAX_LENGTH;
   }
   return tmp3;
 }

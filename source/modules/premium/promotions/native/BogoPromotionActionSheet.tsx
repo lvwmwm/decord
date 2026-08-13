@@ -1,10 +1,10 @@
-// Module ID: 16078
-// Function ID: 16079
+// Module ID: 16088
+// Function ID: 16089
 // Name: BogoPromotionActionSheet
-// Dependencies: [19, 17, 1924, 676, 1388, 21, 4344, 712, 5767, 6927, 5436, 5307, 4340, 1236, 1993, 9558, 2]
+// Dependencies: [19, 17, 1924, 676, 1388, 21, 4342, 712, 5768, 6933, 5437, 5308, 4338, 1236, 1993, 9562, 2]
 // Exports: default
 
-// Module 16078 (BogoPromotionActionSheet)
+// Module 16088 (BogoPromotionActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
@@ -39,7 +39,7 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   let analyticsLocations;
   const tmp = createCacheKey();
-  analyticsLocations = analyticsLocations(5767)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5768)().analyticsLocations;
   const items = [analyticsLocations, markAsDismissed];
   const items1 = [markAsDismissed];
   const callback = React.useCallback(() => {
@@ -55,19 +55,19 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   obj = { style: items2, children: null };
   items2 = [tmp.container];
   obj = { source: { uri: "https://cdn.discordapp.com/assets/content/a59aed2e0e61a955dc3e0f4f6f7ab295e39f89a93c4f01e4bd84ed7fb418ec63.png" }, style: tmp.image };
-  const items3 = [callback(analyticsLocations(5307), obj), , , ];
+  const items3 = [callback(analyticsLocations(5308), obj), , , ];
   const obj1 = { style: items4, color: "mobile-text-heading-primary", variant: "heading-xl/bold", children: null };
   items4 = [tmp.header];
   const intl = markAsDismissed(1236).intl;
   obj1[3] = intl.string(markAsDismissed(1236).t["6Jjfk8"]);
-  items3[1] = callback(markAsDismissed(4340).Text, obj1);
+  items3[1] = callback(markAsDismissed(4338).Text, obj1);
   const obj2 = { style: items5, color: "text-subtle", variant: "text-md/medium", children: null };
   items5 = [tmp.subheader];
   const intl2 = markAsDismissed(1236).intl;
   const obj3 = { helpCenterLink: null };
   obj3[0] = analyticsLocations(1993).getArticleURL(SUMMER_BOGO_2025.SUMMER_BOGO_2025);
   obj2[3] = intl2.format(markAsDismissed(1236).t.y7lJK6, obj3);
-  items3[2] = callback(markAsDismissed(4340).Text, obj2);
+  items3[2] = callback(markAsDismissed(4338).Text, obj2);
   const obj4 = { style: items6, children: null };
   items6 = [tmp.buttonContainer];
   const obj5 = { text: null, onPress: null };
@@ -75,9 +75,9 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   const intl3 = markAsDismissed(1236).intl;
   obj5[0] = intl3.string(markAsDismissed(1236).t.J61px0);
   obj5[1] = callback;
-  obj4[1] = callback(analyticsLocations(9558), obj5);
+  obj4[1] = callback(analyticsLocations(9562), obj5);
   items3[3] = callback(View, obj4);
   obj[1] = items3;
   obj[1] = callback2(View, obj);
-  return callback(markAsDismissed(5436).BottomSheet, obj);
+  return callback(markAsDismissed(5437).BottomSheet, obj);
 };

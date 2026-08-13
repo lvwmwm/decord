@@ -1,7 +1,7 @@
 // Module ID: 12507
 // Function ID: 12508
 // Name: formatDurationNarrow
-// Dependencies: [19, 17, 21, 4344, 712, 1236, 12508, 4340, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1236, 12508, 4338, 2]
 // Exports: FieldText, formatDurationNarrow
 
 // Module 12507 (formatDurationNarrow)
@@ -81,7 +81,7 @@ export const FieldText = function FieldText(arg0) {
     obj1[0] = variant;
     obj1[1] = color;
     obj1[3] = field.text;
-    const items = [callback(require(4340) /* Text */.Text, obj1), ];
+    const items = [callback(require(4338) /* Text */.Text, obj1), ];
     let tmp11Result = null != field.icon;
     if (tmp11Result) {
       obj = { source: null, style: null, resizeMode: "contain" };

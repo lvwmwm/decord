@@ -1,10 +1,10 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 11352
+// Function ID: 11353
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 11340, 7846, 676, 21, 4344, 589, 11345, 11362, 1236, 11360, 11363, 11364, 11365, 4340, 2]
+// Dependencies: [19, 17, 11331, 7850, 676, 21, 4342, 589, 11336, 11353, 1236, 11351, 11354, 11355, 11356, 4338, 2]
 // Exports: default
 
-// Module 11361 (AppealIngestionSpeedBump)
+// Module 11352 (AppealIngestionSpeedBump)
 import "noop";
 import { View } from "get ActivityIndicator";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
@@ -34,13 +34,13 @@ export default function AppealIngestionSpeedBump(arg0) {
   let obj = _require(589);
   const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
   let stateFromStores = obj.useStateFromStores(items, () => appealClassificationId.getAppealClassificationId());
-  let obj1 = _require(11345);
+  let obj1 = _require(11336);
   if (stateFromStores == null) {
     stateFromStores = EMPTY_STRING_SNOWFLAKE_ID;
   }
   const safetyHubClassification = obj1.useSafetyHubClassification(stateFromStores);
   const tmp = callback2();
-  _require = _require(11362).useEmitAppealIngestionEvent();
+  _require = _require(11353).useEmitAppealIngestionEvent();
   ({ isDsaEligible, classification } = safetyHubClassification);
   let str;
   if (classification != null) {
@@ -58,24 +58,24 @@ export default function AppealIngestionSpeedBump(arg0) {
     flagged_content = [];
   }
   const intl = tmp2(1236).intl;
-  const tmp2Result = _require(11362);
+  const tmp2Result = _require(11353);
   const intl2 = tmp2(1236).intl;
   const stringResult = intl.string(_require(1236).t["C5q+pW"]);
-  const items1 = [callback(_require(11360).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1236).t.URt7VI) }), ];
+  const items1 = [callback(_require(11351).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1236).t.URt7VI) }), ];
   obj = { style: tmp.container, children: null };
   let tmp9Result = flagged_content.length > 0;
   if (tmp9Result) {
     obj = { flaggedContent: null };
     obj[0] = flagged_content;
-    tmp9Result = tmp9(importDefault(11363), obj);
+    tmp9Result = tmp9(importDefault(11354), obj);
   }
   const items2 = [tmp9Result, , , , , , ];
   obj1 = { classification: safetyHubClassification.classification };
-  items2[1] = callback(importDefault(11364), obj1);
+  items2[1] = callback(importDefault(11355), obj1);
   tmp9Result = isCoppa;
   if (isCoppa) {
     const obj2 = { text: null, url: null, onPress: null };
-    let tmp13Result = tmp13(11365);
+    let tmp13Result = tmp13(11356);
     const intl3 = tmp2(1236).intl;
     obj2[0] = intl3.string(tmp2(1236).t["gJs+kf"]);
     obj2[1] = constants.AGE_VERIFICATION_LINK;
@@ -90,7 +90,7 @@ export default function AppealIngestionSpeedBump(arg0) {
   }
   if (isSpam) {
     const obj3 = { text: null, url: null, onPress: null };
-    tmp13Result = tmp13(11365);
+    tmp13Result = tmp13(11356);
     const intl4 = tmp2(1236).intl;
     obj3[0] = intl4.string(tmp2(1236).t.NBsJvm);
     obj3[1] = constants.SPAM_LINK;
@@ -108,8 +108,8 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj4[2] = function onPress() {
       return callback(outer1_5.ClickAppAppealLink);
     };
-    isDeveloperClassification = tmp9(tmp13(11365), obj4);
-    const tmp13Result1 = tmp13(11365);
+    isDeveloperClassification = tmp9(tmp13(11356), obj4);
+    const tmp13Result1 = tmp13(11356);
   }
   items2[4] = isDeveloperClassification;
   let tmp9Result1 = !isCoppa;
@@ -121,20 +121,20 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj5[2] = function onPress() {
       return callback(outer1_5.ClickLearnMoreLink);
     };
-    tmp9Result1 = tmp9(tmp13(11365), obj5);
-    const tmp13Result2 = tmp13(11365);
+    tmp9Result1 = tmp9(tmp13(11356), obj5);
+    const tmp13Result2 = tmp13(11356);
   }
   items2[5] = tmp9Result1;
   if (isDsaEligible) {
     const obj6 = { variant: "text-xs/normal", children: null };
     const intl7 = tmp2(1236).intl;
     obj6[1] = intl7.format(tmp2(1236).t.WMUgCX, {});
-    isDsaEligible = tmp9(tmp2(4340).Text, obj6);
+    isDsaEligible = tmp9(tmp2(4338).Text, obj6);
   }
   const obj7 = { children: null };
   items2[6] = isDsaEligible;
   obj[1] = items2;
   items1[1] = closure_9(View, obj);
   obj7[0] = items1;
-  return closure_9(_require(11360).AppealIngestionModalScreen, obj7);
+  return closure_9(_require(11351).AppealIngestionModalScreen, obj7);
 };

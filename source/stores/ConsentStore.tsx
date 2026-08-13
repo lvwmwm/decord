@@ -1,9 +1,9 @@
-// Module ID: 5868
-// Function ID: 5869
+// Module ID: 5869
+// Function ID: 5870
 // Name: hasConsented
 // Dependencies: [589, 709, 2]
 
-// Module 5868 (hasConsented)
+// Module 5869 (hasConsented)
 import { Store } from "initialize";
 
 let c0 = false;

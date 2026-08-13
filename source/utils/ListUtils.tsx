@@ -1,10 +1,10 @@
-// Module ID: 12036
-// Function ID: 12037
+// Module ID: 12038
+// Function ID: 12039
 // Name: getListSummaryLabel
 // Dependencies: [1236, 2]
 // Exports: getListSummaryLabel
 
-// Module 12036 (getListSummaryLabel)
+// Module 12038 (getListSummaryLabel)
 const result = require("set").fileFinishedImporting("utils/ListUtils.tsx");
 
 export const getListSummaryLabel = function getListSummaryLabel(names, length) {

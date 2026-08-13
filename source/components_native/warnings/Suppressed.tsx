@@ -1,9 +1,9 @@
-// Module ID: 16064
-// Function ID: 16065
+// Module ID: 16074
+// Function ID: 16075
 // Name: render
-// Dependencies: [19, 13078, 21, 16065, 1236, 16066, 16067, 4772, 2]
+// Dependencies: [19, 13078, 21, 16075, 1236, 16076, 16077, 4773, 2]
 
-// Module 16064 (render)
+// Module 16074 (render)
 import initialize from "initialize";
 import { jsx } from "jsxProd";
 import { Component } from "noop";
@@ -27,16 +27,16 @@ Suppressed.prototype["render"] = function render() {
     let stringResult = string(t.KuYcnU);
     const intl3 = tmp2(1236).intl;
     let stringResult1 = intl3.string(tmp2(1236).t["RaFZ3+"]);
-    let tmp7 = importDefault(16066);
+    let tmp7 = importDefault(16076);
     let tmp6 = importDefault;
   } else {
     stringResult = string(t.FJSZVM);
     const intl2 = tmp2(1236).intl;
     stringResult1 = intl2.string(tmp2(1236).t.etJjgW);
     tmp6 = importDefault;
-    tmp7 = importDefault(16067);
+    tmp7 = importDefault(16077);
   }
-  return jsx(tmp6(4772), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
+  return jsx(tmp6(4773), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
 };
 const result = require("jsxProd").fileFinishedImporting("components_native/warnings/Suppressed.tsx");
 

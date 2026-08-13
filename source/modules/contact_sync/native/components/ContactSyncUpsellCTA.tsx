@@ -1,8 +1,8 @@
-// Module ID: 13271
-// Function ID: 13272
-// Dependencies: [19, 12094, 676, 21, 4344, 712, 8008, 698, 12091, 5800, 1236, 13272, 2]
+// Module ID: 13272
+// Function ID: 13273
+// Dependencies: [19, 12096, 676, 21, 4342, 712, 8012, 698, 12093, 5801, 1236, 13273, 2]
 
-// Module 13271
+// Module 13272
 import { dismissUpsellCTA } from "setStoredContacts";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -36,7 +36,7 @@ const memoResult = require("noop").memo(function ContactSyncUpsellCTA(location) 
       location(outer1_2[8]).openContactSyncModal({}, { page: str });
     },
     onLongPress() {
-      let obj = location(5800);
+      let obj = location(5801);
       obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
       obj = { label: null, onPress: null };
       const intl = location(1236).intl;
@@ -54,12 +54,12 @@ const memoResult = require("noop").memo(function ContactSyncUpsellCTA(location) 
     subtitle: null
   };
   items = [callback().container, location.style];
-  obj[3] = importDefault(13272);
+  obj[3] = importDefault(13273);
   let intl = location(1236).intl;
   obj[4] = intl.string(location(1236).t.T6Rfd9);
   const intl2 = location(1236).intl;
   obj[5] = intl2.string(location(1236).t.c6KIpg);
-  return jsx(location(8008).FormCTA, {
+  return jsx(location(8012).FormCTA, {
     onPress() {
       let obj = outer1_1(outer1_2[7]);
       obj = { type: outer1_5.CONTACT_SYNC_MODAL, location: null };
@@ -76,7 +76,7 @@ const memoResult = require("noop").memo(function ContactSyncUpsellCTA(location) 
       location(outer1_2[8]).openContactSyncModal({}, { page: str });
     },
     onLongPress() {
-      let obj = location(5800);
+      let obj = location(5801);
       obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
       obj = { label: null, onPress: null };
       const intl = location(1236).intl;

@@ -1,10 +1,10 @@
-// Module ID: 5402
-// Function ID: 5403
+// Module ID: 5403
+// Function ID: 5404
 // Name: CheckmarkSmallIcon
-// Dependencies: [19, 21, 712, 4064, 5403, 2]
+// Dependencies: [19, 21, 712, 4064, 5404, 2]
 // Exports: CheckmarkSmallIcon
 
-// Module 5402 (CheckmarkSmallIcon)
+// Module 5403 (CheckmarkSmallIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const CheckmarkSmallIcon = function CheckmarkSmallIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(5403) /* registerAsset */;
+  obj[0] = require(5404) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 7814
-// Function ID: 7815
+// Module ID: 7818
+// Function ID: 7819
 // Name: connectToStage
-// Dependencies: [5, 4363, 1391, 1910, 3989, 1979, 1399, 7815, 5977, 5271, 12727, 12728, 5169, 4407, 4523, 12730, 2]
+// Dependencies: [5, 4364, 1391, 1910, 3989, 1979, 1399, 7819, 5979, 5272, 12727, 12728, 5170, 4408, 4524, 12730, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 7814 (connectToStage)
+// Module 7818 (connectToStage)
 import handleConnectionOpen from "handleConnectionOpen";
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -22,16 +22,16 @@ function connectToStage(channel, flag) {
     const canResult = getUncachedChannelPermissions.can(_require(1399).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
     let tmp6 = !canResult;
     if (canResult) {
-      let num = importAll(7815).shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
+      let num = importAll(7819).shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       if (num) {
-        const result = tmp7(7815).openStageBlockedUsersSheet(channel, () => {
+        const result = tmp7(7819).openStageBlockedUsersSheet(channel, () => {
           outer1_11(closure_0, true);
         });
         num = 1;
-        const tmp7Result = tmp7(7815);
+        const tmp7Result = tmp7(7819);
       }
       tmp6 = num;
-      const obj2 = importAll(7815);
+      const obj2 = importAll(7819);
       tmp7 = importAll;
     }
     if (tmp6) {
@@ -41,19 +41,19 @@ function connectToStage(channel, flag) {
   importDefault(12728).initialize();
   const obj = closure_9;
   const obj4 = importDefault(12728);
-  const voiceChannel = importDefault(5169).selectVoiceChannel(channel.id);
+  const voiceChannel = importDefault(5170).selectVoiceChannel(channel.id);
   if (obj.getVoiceChannelId() !== channel.id) {
     return false;
   } else {
     allApplicationStreamsForChannel = allApplicationStreamsForChannel.getAllApplicationStreamsForChannel(channel.id);
     const found = allApplicationStreamsForChannel.find((currentUserActiveStream) => !streamMarkedFull.isStreamMarkedFull(channel(table[13]).encodeStreamKey(currentUserActiveStream)));
     if (null != found) {
-      _require(4523).watchStream(found, { noFocus: true });
-      const obj6 = _require(4523);
+      _require(4524).watchStream(found, { noFocus: true });
+      const obj6 = _require(4524);
     }
     return true;
   }
-  const obj5 = importDefault(5169);
+  const obj5 = importDefault(5170);
 }
 function connectAndOpen(channel, flag) {
   const _require = channel;
@@ -78,15 +78,15 @@ function connectAndOpen(channel, flag) {
     const obj = _require(12730);
   }
   if (result) {
-    result = flag2(7815).showChannelChangeConfirmationAlert(channel, () => {
+    result = flag2(7819).showChannelChangeConfirmationAlert(channel, () => {
       outer1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(7815);
+    const obj2 = flag2(7819);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      flag2(7815).navigateToStage(channel, voiceChannelId);
-      const obj3 = flag2(7815);
+      flag2(7819).navigateToStage(channel, voiceChannelId);
+      const obj3 = flag2(7819);
     }
   }
 }
@@ -211,8 +211,8 @@ export const connectOrLurkStage = function connectOrLurkStage(closure_0, closure
 export { connectToStage };
 export { connectAndOpen };
 export const navigateToStage = function navigateToStage(arg0, arg1) {
-  importAll(7815).navigateToStage(arg0, arg1);
+  importAll(7819).navigateToStage(arg0, arg1);
 };
 export const showUserProfile = function showUserProfile(arg0) {
-  const result = importAll(7815).showPlatformUserProfile(arg0);
+  const result = importAll(7819).showPlatformUserProfile(arg0);
 };

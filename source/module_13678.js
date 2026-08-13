@@ -1,16 +1,26 @@
 // Module ID: 13678
 // Function ID: 13679
-// Dependencies: [13644, 13665, 13679, 13689, 13690]
+// Dependencies: [13679, 13692, 13640, 13661]
 
 // Module 13678
-let closure_2 = require("call")([].concat);
 
-export default require("all")("Reflect", "ownKeys") || (function ownKeys(arg0) {
-  const fResult = require(13679) /* f */.f(require(13689) /* all */(arg0));
-  const f = require(13690).f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = callback(fResult, f(arg0));
+export default (arg0, arg1, arg2) => {
+  const arr = require(13679)(arg1);
+  for (let num = 0; num < arr.length; num = num + 1) {
+    let tmp3 = arr[num];
+    let tmp4 = require;
+    let tmp5 = dependencyMap;
+    let tmp6 = require(13661) /* call */(arg0, tmp3);
+    let tmp7 = num;
+    if (!tmp6) {
+      let tmp8 = arg2;
+      if (arg2) {
+        tmp8 = tmp4(13661)(arg2, tmp3);
+      }
+      tmp6 = tmp8;
+    }
+    if (!tmp6) {
+      let tmpResult = tmp(arg0, tmp3, tmp2(arg1, tmp3));
+    }
   }
-  return tmp2;
-});
+};

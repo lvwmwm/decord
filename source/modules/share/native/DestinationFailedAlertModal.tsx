@@ -1,10 +1,10 @@
-// Module ID: 10314
-// Function ID: 10315
+// Module ID: 11151
+// Function ID: 11152
 // Name: FailedGroupDMRow
-// Dependencies: [19, 17, 1391, 1910, 4430, 3998, 1922, 505, 21, 4344, 712, 4534, 9708, 1297, 4340, 589, 4189, 10315, 4687, 4687, 1236, 2]
+// Dependencies: [19, 17, 1391, 1910, 4431, 3998, 1922, 505, 21, 4342, 712, 4535, 9712, 1297, 4338, 589, 4187, 11152, 4688, 4688, 1236, 2]
 // Exports: default
 
-// Module 10314 (FailedGroupDMRow)
+// Module 11151 (FailedGroupDMRow)
 import "getAlertModalItemKey";
 import { View } from "GuildIconWithChannelTypeSizes";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -25,12 +25,12 @@ function FailedGroupDMRow(channel) {
   const tmp = createCacheKey();
   let obj = { style: tmp.row, children: null };
   obj = { size: null, channel: null };
-  const tmp2 = importDefault(4534)(channel);
+  const tmp2 = importDefault(4535)(channel);
   obj[0] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[1] = channel;
-  const items = [callback(importDefault(9708), obj), ];
+  const items = [callback(importDefault(9712), obj), ];
   obj = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp2 };
-  items[1] = callback(require(4340) /* Text */.Text, obj);
+  items[1] = callback(require(4338) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -63,11 +63,11 @@ function FailedUserRow(user) {
     obj1 = { style: null, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: null };
     obj1[0] = tmp.label;
     if (stateFromStores == null) {
-      stateFromStores = importDefault(4189).getName(user);
-      const obj6 = importDefault(4189);
+      stateFromStores = importDefault(4187).getName(user);
+      const obj6 = importDefault(4187);
     }
     obj1[4] = stateFromStores;
-    items2[1] = closure_10(tmp2(4340).Text, obj1);
+    items2[1] = closure_10(tmp2(4338).Text, obj1);
     obj[1] = items2;
     tmp9Result = closure_11(View, obj);
     const tmp10 = View;
@@ -89,10 +89,10 @@ function FailedChannelRow(channel) {
   });
   obj = { style: tmp.row, children: null };
   obj = { "aria-label": "", guild: stateFromStores, channel, size: null };
-  obj[3] = channel(10315).GuildIconWithChannelTypeSizes.SMALL_32;
-  const items1 = [callback(channel(10315).GuildIconWithChannelType, obj), ];
-  const tmp3 = importDefault(4534)(channel);
-  items1[1] = callback(channel(4340).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4534)(channel) });
+  obj[3] = channel(11152).GuildIconWithChannelTypeSizes.SMALL_32;
+  const items1 = [callback(channel(11152).GuildIconWithChannelType, obj), ];
+  const tmp3 = importDefault(4535)(channel);
+  items1[1] = callback(channel(4338).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4535)(channel) });
   obj[1] = items1;
   return callback2(View, obj);
 }
@@ -165,19 +165,19 @@ export default function DestinationFailedAlertModal(arg0) {
     obj1[1] = onRetry;
     const intl2 = tmp3(1236).intl;
     obj1[2] = intl2.string(tmp3(1236).t["5911Lb"]);
-    const items = [tmp2(tmp3(4687).AlertActionButton, obj1, "confirm"), ];
+    const items = [tmp2(tmp3(4688).AlertActionButton, obj1, "confirm"), ];
     const obj2 = { variant: "secondary", text: null };
     const intl3 = tmp3(1236).intl;
     obj2[1] = intl3.string(tmp3(1236).t.WAI6xu);
-    items[1] = tmp2(tmp3(4687).AlertActionButton, obj2, "cancel");
+    items[1] = tmp2(tmp3(4688).AlertActionButton, obj2, "cancel");
     obj[0] = items;
     let tmp2Result = callback2(closure_12, obj);
   } else {
     const obj3 = { variant: "primary", text: null };
     const intl = tmp3(1236).intl;
     obj3[1] = intl.string(tmp3(1236).t.BddRzS);
-    tmp2Result = tmp2(tmp3(4687).AlertActionButton, obj3, "confirm");
+    tmp2Result = tmp2(tmp3(4688).AlertActionButton, obj3, "confirm");
   }
-  obj[3] = callback(require(4687) /* getAlertModalItemKey */.AlertActions, { children: tmp2Result });
-  return callback(require(4687) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[3] = callback(require(4688) /* getAlertModalItemKey */.AlertActions, { children: tmp2Result });
+  return callback(require(4688) /* getAlertModalItemKey */.AlertModal, obj);
 };

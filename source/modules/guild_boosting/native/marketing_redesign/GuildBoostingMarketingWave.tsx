@@ -1,7 +1,7 @@
 // Module ID: 12917
 // Function ID: 12918
 // Name: GuildBoostingMarketingWave
-// Dependencies: [19, 21, 4065, 712, 7876, 2]
+// Dependencies: [19, 21, 4065, 712, 7880, 2]
 // Exports: default
 
 // Module 12917 (GuildBoostingMarketingWave)
@@ -16,6 +16,6 @@ export default function GuildBoostingMarketingWave(arg0) {
   const token = obj.useToken(importDefault(712).colors.BACKGROUND_BASE_LOW);
   obj = { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" };
   const merged = Object.assign(arg0);
-  obj.children = jsx(require(7876) /* inlineStyles */.Path, { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: token });
-  return jsx(importDefault(7876), { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" });
+  obj.children = jsx(require(7880) /* inlineStyles */.Path, { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: token });
+  return jsx(importDefault(7880), { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" });
 };

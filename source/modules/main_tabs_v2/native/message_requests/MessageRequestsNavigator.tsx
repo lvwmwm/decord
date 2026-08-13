@@ -1,10 +1,10 @@
-// Module ID: 16020
-// Function ID: 16021
+// Module ID: 16030
+// Function ID: 16031
 // Name: MessageRequestsNavigator
-// Dependencies: [19, 17, 21, 8615, 4344, 712, 5822, 6976, 1628, 8427, 1236, 9723, 16021, 16040, 16041, 2]
+// Dependencies: [19, 17, 21, 8619, 4342, 712, 5823, 6982, 1628, 8431, 1236, 9727, 16031, 16050, 16051, 2]
 // Exports: default
 
-// Module 16020 (MessageRequestsNavigator)
+// Module 16030 (MessageRequestsNavigator)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,9 +29,9 @@ export default function MessageRequestsNavigator() {
   let Screen;
   const tmp = createNativeStackNavigator();
   const require = tmp;
-  let obj = require(5822) /* NavigationStack */;
+  let obj = require(5823) /* NavigationStack */;
   const importDefault = obj.useAccessibilityNativeStackOptions();
-  const layoutEffect = React.useLayoutEffect(() => tmp(6976).trackAppUIViewed(), []);
+  const layoutEffect = React.useLayoutEffect(() => tmp(6982).trackAppUIViewed(), []);
   const rect = importDefault(1628)();
   obj = { style: items, children: null };
   items = [tmp.container, { paddingLeft: rect.left, paddingRight: rect.right }];
@@ -59,30 +59,30 @@ export default function MessageRequestsNavigator() {
   ({ Navigator, Screen } = createNativeStackNavigator);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[0] = intl.string(require(1236) /* getSystemLocale */.t.e7GWjQ);
-  let merged = Object.assign(importDefault(9723)());
+  let merged = Object.assign(importDefault(9727)());
   obj1[1] = obj2;
   obj1[2] = function getComponent() {
-    return tmp(16021).default;
+    return tmp(16031).default;
   };
   const items1 = [callback(Screen, obj1), , ];
   const obj3 = { name: "spam", options: null, getComponent: null };
   const obj4 = { title: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj4[0] = intl2.string(require(1236) /* getSystemLocale */.t.ulKXHp);
-  let merged1 = Object.assign(importDefault(9723)());
+  let merged1 = Object.assign(importDefault(9727)());
   obj3[1] = obj4;
   obj3[2] = function getComponent() {
-    return tmp(16040).default;
+    return tmp(16050).default;
   };
   items1[1] = callback(createNativeStackNavigator.Screen, obj3);
   const obj5 = { name: "preview", options: null, getComponent: null };
   const obj6 = { title: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj6[0] = intl3.string(require(1236) /* getSystemLocale */.t.iilwGH);
-  const merged2 = Object.assign(importDefault(9723)());
+  const merged2 = Object.assign(importDefault(9727)());
   obj5[1] = obj6;
   obj5[2] = function getComponent() {
-    return tmp(16041).default;
+    return tmp(16051).default;
   };
   items1[2] = callback(createNativeStackNavigator.Screen, obj5);
   obj[1] = items1;

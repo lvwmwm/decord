@@ -1,9 +1,9 @@
-// Module ID: 9815
-// Function ID: 9816
+// Module ID: 9819
+// Function ID: 9820
 // Name: set
 // Dependencies: [712, 4083, 2]
 
-// Module 9815 (set)
+// Module 9819 (set)
 import { Easing } from "module_4083";
 import set from "set";
 
@@ -16,11 +16,9 @@ export const REACTION_MILESTONE_COUNTS = set;
 export const IN_APP_NOTIFICATION_MAX_HEIGHT = 96;
 export const NOTIFICATION_MAX_WIDTH = 480;
 export const NOTIFICATION_PREVIEW_LINE_CLAMP = 2;
-export const EXPANDABLE_MIN_WINDOW_HEIGHT = 500;
 export const RIGHT_ACCESSORY_LEFT_MARGIN = require("Themes").space.PX_8;
 export const NOTIFICATION_CONTAINER_MARGIN = require("Themes").space.PX_16;
 export const PAN_INPUT_RANGE = [-100, 0, 100];
-export const NOTIFICATION_BOB_RANGE = 20;
 export const MIN_SWIPE_DISTANCE = 25;
 export const MIN_SWIPE_VELOCITY = 100;
 export const STARTED_SWIPE_THRESHOLD = 5;

@@ -1,7 +1,7 @@
 // Module ID: 12569
 // Function ID: 12570
 // Name: SHOP_THIS_LOOK_ACTION_SHEET_KEY
-// Dependencies: [4312, 12570, 2007, 2]
+// Dependencies: [4310, 12570, 2007, 2]
 // Exports: openShopThisLookActionSheet
 
 // Module 12569 (SHOP_THIS_LOOK_ACTION_SHEET_KEY)
@@ -10,5 +10,5 @@ const result = require("asyncRequireImpl").fileFinishedImporting("modules/collec
 
 export const SHOP_THIS_LOOK_ACTION_SHEET_KEY = "Shop This Look";
 export const openShopThisLookActionSheet = function openShopThisLookActionSheet(arg0) {
-  importDefault(4312).openLazy(require(2007) /* asyncRequireImpl */(12570, dependencyMap.paths), c3, arg0, "stack");
+  importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(12570, dependencyMap.paths), c3, arg0, "stack");
 };

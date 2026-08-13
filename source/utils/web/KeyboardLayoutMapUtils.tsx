@@ -1,7 +1,7 @@
 // Module ID: 13233
 // Function ID: 13234
 // Name: normalizeKey
-// Dependencies: [32, 5, 706, 7005, 3, 500, 13232, 595, 2]
+// Dependencies: [32, 5, 706, 7011, 3, 500, 13232, 595, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
 // Module 13233 (normalizeKey)

@@ -1,9 +1,9 @@
-// Module ID: 5179
-// Function ID: 5180
+// Module ID: 5180
+// Function ID: 5181
 // Name: buildStageChannelUserRoles
-// Dependencies: [1391, 1990, 1983, 1910, 1922, 4360, 4528, 3994, 1399, 12, 589, 5180, 709, 2]
+// Dependencies: [1391, 1990, 1983, 1910, 1922, 4361, 4529, 3994, 1399, 12, 589, 5181, 709, 2]
 
-// Module 5179 (buildStageChannelUserRoles)
+// Module 5180 (buildStageChannelUserRoles)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
@@ -34,8 +34,8 @@ function buildStageChannelUserRoles(id, closure_0, flag) {
       if (channel.isGuildStageVoice()) {
         let obj = {};
         voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(closure_0, id);
-        const audienceRequestToSpeakState = require(4528) /* useAudienceRequestToSpeakState */.getAudienceRequestToSpeakState(voiceStateForChannel);
-        obj[obj.SPEAKER] = audienceRequestToSpeakState === require(4528) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
+        const audienceRequestToSpeakState = require(4529) /* useAudienceRequestToSpeakState */.getAudienceRequestToSpeakState(voiceStateForChannel);
+        obj[obj.SPEAKER] = audienceRequestToSpeakState === require(4529) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
         let canResult = null;
         if (flag) {
           obj = { permission: null, user: null, context: null, overwrites: null, roles: null };
@@ -49,7 +49,7 @@ function buildStageChannelUserRoles(id, closure_0, flag) {
         }
         obj[obj.MODERATOR] = canResult;
         let tmp4 = obj;
-        const obj3 = require(4528) /* useAudienceRequestToSpeakState */;
+        const obj3 = require(4529) /* useAudienceRequestToSpeakState */;
         tmp8 = require;
       }
       dependencyMap[closure_0][id] = tmp4;
@@ -157,7 +157,7 @@ prototype["getPermissionsForUser"] = function getPermissionsForUser(id, closure_
         id = currentUser.id;
       }
       if (id === id) {
-        const obj = require(5180) /* useIsStageSpeakingDisabledForCurrentUser */;
+        const obj = require(5181) /* useIsStageSpeakingDisabledForCurrentUser */;
         if (obj.isStageSpeakingDisabledForCurrentUser()) {
           return obj;
         }

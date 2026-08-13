@@ -1,10 +1,10 @@
-// Module ID: 10945
-// Function ID: 10946
+// Module ID: 10859
+// Function ID: 10860
 // Name: TransferFooter
-// Dependencies: [5, 32, 19, 17, 4358, 676, 21, 4344, 712, 5367, 4754, 1236, 10946, 4340, 10947, 589, 10937, 38, 10944, 4312, 1231, 1297, 10472, 5436, 5435, 5438, 2]
+// Dependencies: [5, 32, 19, 17, 4359, 676, 21, 4342, 712, 5368, 4755, 1236, 10860, 4338, 10861, 589, 10851, 38, 10858, 4310, 1231, 1297, 10386, 5437, 5436, 5439, 2]
 // Exports: default
 
-// Module 10945 (TransferFooter)
+// Module 10859 (TransferFooter)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
@@ -35,32 +35,32 @@ function TransferFooter(arg0) {
   obj[2] = onPress;
   const intl = tmp3(1236).intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.FYi3ry);
-  obj[2] = closure_12(require(4754) /* Button */.Button, obj);
-  return closure_12(require(5367) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj[2] = closure_12(require(4755) /* Button */.Button, obj);
+  return closure_12(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 function DeviceOption(children) {
   const tmp = createCacheKey();
   let obj = { style: tmp.deviceOption, children: null };
-  obj = { style: tmp.deviceIcon, source: importDefault(10946) };
+  obj = { style: tmp.deviceIcon, source: importDefault(10860) };
   const items = [callback(closure_8, obj), ];
   obj = { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "text-md/bold", children: children.name };
-  items[1] = callback(require(4340) /* Text */.Text, obj);
+  items[1] = callback(require(4338) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(closure_7, obj);
 }
 function EmptyState() {
   const tmp = createCacheKey();
   let obj = { style: tmp.emptyContainer, children: null };
-  obj = { source: importDefault(10947), style: tmp.emptyArt };
+  obj = { source: importDefault(10861), style: tmp.emptyArt };
   const items = [callback(closure_8, obj), , ];
   obj = { style: tmp.emptyHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.OkJf1e);
-  items[1] = callback(require(4340) /* Text */.Text, obj);
+  items[1] = callback(require(4338) /* Text */.Text, obj);
   const obj1 = { style: tmp.emptyBody, variant: "text-md/normal", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t["of/l5Z"]);
-  items[2] = callback(require(4340) /* Text */.Text, obj1);
+  items[2] = callback(require(4338) /* Text */.Text, obj1);
   obj[1] = items;
   return callback2(closure_7, obj);
 }
@@ -129,7 +129,7 @@ export default function GameConsoleListActionSheet(arg0) {
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(10944).transferToPlaystationWithAlert(outer1_0, dependencyMap[outer1_4], v0);
+              obj1[0] = outer1_0(10858).transferToPlaystationWithAlert(outer1_0, dependencyMap[outer1_4], v0);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -141,7 +141,7 @@ export default function GameConsoleListActionSheet(arg0) {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = v0(4312);
+            obj = v0(4310);
             obj.hideActionSheet();
             const ComponentDispatch = outer1_0(1231).ComponentDispatch;
             ComponentDispatch.dispatch(outer1_11.TOGGLE_CALL_CONTROL_DRAWER);

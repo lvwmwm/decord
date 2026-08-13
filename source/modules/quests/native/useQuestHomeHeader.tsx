@@ -1,10 +1,10 @@
-// Module ID: 14309
-// Function ID: 14310
+// Module ID: 14318
+// Function ID: 14319
 // Name: QuestHomeHeaderTitle
-// Dependencies: [19, 17, 5201, 676, 678, 21, 4344, 712, 14306, 4340, 1236, 9469, 4312, 10197, 2007, 698, 5787, 7042, 10185, 14310, 7793, 14311, 1499, 12287, 2]
+// Dependencies: [19, 17, 5202, 676, 678, 21, 4342, 712, 14315, 4338, 1236, 9473, 4310, 10197, 2007, 698, 5788, 7048, 10185, 14319, 7797, 14320, 1499, 12289, 2]
 // Exports: default
 
-// Module 14309 (QuestHomeHeaderTitle)
+// Module 14318 (QuestHomeHeaderTitle)
 import FilterFooter from "FilterFooter";
 import { View } from "openCollectiblesShop";
 import { QuestHomeSortMethods } from "QuestsExperimentLocations";
@@ -19,11 +19,11 @@ const require = arg1;
 function QuestHomeHeaderTitle() {
   const tmp = createCacheKey();
   let obj = { style: tmp.headerTitleContainer, children: null };
-  const items = [callback(require(14306) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(14315) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[5] = intl.string(require(1236) /* getSystemLocale */.t.JALI2K);
-  items[1] = callback(require(4340) /* Text */.Heading, obj);
+  items[1] = callback(require(4338) /* Text */.Heading, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -31,7 +31,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   isVirtualCurrencyEnabled = isVirtualCurrencyEnabled.isVirtualCurrencyEnabled;
   const merged = Object.assign(isVirtualCurrencyEnabled, Object.create(null));
   let balance;
-  let obj = balance(9469);
+  let obj = balance(9473);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   obj = { style: createCacheKey().headerRightContainer, children: null };

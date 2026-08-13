@@ -1,10 +1,10 @@
-// Module ID: 10575
-// Function ID: 10576
+// Module ID: 10489
+// Function ID: 10490
 // Name: AuthorizeFormSeparator
-// Dependencies: [17, 21, 4344, 712, 2]
+// Dependencies: [17, 21, 4342, 712, 2]
 // Exports: AuthorizeFormSeparator
 
-// Module 10575 (AuthorizeFormSeparator)
+// Module 10489 (AuthorizeFormSeparator)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

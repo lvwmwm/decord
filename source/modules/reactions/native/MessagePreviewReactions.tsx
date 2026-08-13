@@ -1,7 +1,7 @@
 // Module ID: 12598
 // Function ID: 12599
 // Name: MessagePreviewReactions
-// Dependencies: [19, 7097, 8967, 21, 589, 5767, 5787, 8826, 2]
+// Dependencies: [19, 7103, 8971, 21, 589, 5768, 5788, 8830, 2]
 // Exports: default
 
 // Module 12598 (MessagePreviewReactions)
@@ -28,17 +28,17 @@ export default function MessagePreviewReactions(emoji) {
     }
     return null != message ? message.reactions : outer1_6;
   }, items1);
-  obj = { value: messageId(5767)(messageId(5787).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
+  obj = { value: messageId(5768)(messageId(5788).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
   if (stateFromStores.length > 0) {
     obj = { channelId: null, messageId: null, emoji: null, reactions: null };
     obj[0] = channelId;
     obj[1] = messageId;
     obj[2] = emoji.emoji;
     obj[3] = stateFromStores;
-    let tmp4Result = tmp4(tmp(8826).MessageReactionsContent, obj);
+    let tmp4Result = tmp4(tmp(8830).MessageReactionsContent, obj);
   } else {
-    tmp4Result = tmp4(tmp(8826).MessageReactionsEmpty, {});
+    tmp4Result = tmp4(tmp(8830).MessageReactionsEmpty, {});
   }
   obj[1] = tmp4Result;
-  return jsx(channelId(5767).AnalyticsLocationProvider, { value: messageId(5767)(messageId(5787).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });
+  return jsx(channelId(5768).AnalyticsLocationProvider, { value: messageId(5768)(messageId(5788).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });
 };

@@ -1,7 +1,7 @@
 // Module ID: 12589
 // Function ID: 12590
 // Name: ActionSheetBackdropToast
-// Dependencies: [19, 17, 5437, 21, 500, 4344, 712, 1628, 1493, 5306, 4083, 4345, 4340, 2]
+// Dependencies: [19, 17, 5438, 21, 500, 4342, 712, 1628, 1493, 5307, 4083, 4343, 4338, 2]
 // Exports: ActionSheetBackdropToast
 
 // Module 12589 (ActionSheetBackdropToast)
@@ -41,7 +41,7 @@ export const ActionSheetBackdropToast = function ActionSheetBackdropToast(childr
   const height = importDefault(1493)().height;
   let result = height * closure_5;
   importDefault = result;
-  const diff = height - isExpanded(5306).NAV_BAR_HEIGHT_MULTILINE - importDefault(1628)().top;
+  const diff = height - isExpanded(5307).NAV_BAR_HEIGHT_MULTILINE - importDefault(1628)().top;
   dependencyMap = diff;
   let obj = isExpanded(4083);
   sharedValue = obj.useSharedValue(0);
@@ -97,7 +97,7 @@ export const ActionSheetBackdropToast = function ActionSheetBackdropToast(childr
   const animatedStyle = isExpanded(4083).useAnimatedStyle(fn);
   obj1 = { style: items2, children: null };
   items2 = [tmp.toast, animatedStyle];
-  obj1[1] = jsx(isExpanded(4340).Text, { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: children.text });
+  obj1[1] = jsx(isExpanded(4338).Text, { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: children.text });
   obj[2] = jsx(importDefault(4083).View, { style: items2, children: null });
   return <sharedValue1 style={items1} pointerEvents="none">{null}</sharedValue1>;
 };

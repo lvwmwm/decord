@@ -1,7 +1,7 @@
 // Module ID: 12908
 // Function ID: 12909
 // Name: getGiftingBadgeProgressPercent
-// Dependencies: [8835, 1922, 9623, 12909, 589, 4166, 1377, 2]
+// Dependencies: [8839, 1922, 9627, 12909, 589, 4164, 1377, 2]
 // Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
 
 // Module 12908 (getGiftingBadgeProgressPercent)
@@ -29,7 +29,7 @@ export const getGiftingBadgeProgressPercent = function getGiftingBadgeProgressPe
   return Math.min(Math.max(num3, 0), 100);
 };
 export const useIsGiftingBadgesDesktopEnabled = function useIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = require(9623) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(9627) /* apexExperiment */.GiftingBadgeExperiment;
   let obj = { location };
   const enabled = GiftingBadgeExperiment.useConfig(obj).enabled;
   const GiftingBadgeDesktopExperiment = require(12909) /* apexExperiment */.GiftingBadgeDesktopExperiment;
@@ -41,7 +41,7 @@ export const useIsGiftingBadgesDesktopEnabled = function useIsGiftingBadgesDeskt
   return GiftingBadgeDesktopExperiment.useConfig(obj).enabled && enabled;
 };
 export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = require(9623) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(9627) /* apexExperiment */.GiftingBadgeExperiment;
   let obj = { location };
   let enabled = GiftingBadgeExperiment.getConfig(obj).enabled;
   if (enabled) {
@@ -54,7 +54,7 @@ export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDeskt
 };
 export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleToShowGiftingBadgeCoachmark(location) {
   const _location = location.location;
-  const GiftingBadgeExperiment = require(9623) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(9627) /* apexExperiment */.GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig({ location: _location }).enabled;
   const GiftingBadgeDesktopExperiment = require(12909) /* apexExperiment */.GiftingBadgeDesktopExperiment;
   let str = "-DISABLED";
@@ -82,7 +82,7 @@ export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleTo
     }
     return flag;
   });
-  tmpResult = tmp(4166);
+  tmpResult = tmp(4164);
   const result = tmpResult.useIsDismissibleContentDismissed_UNSAFE(tmp(1377).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
   if (tmp4) {
     tmp4 = stateFromStores;

@@ -1,7 +1,7 @@
 // Module ID: 1979
 // Function ID: 1980
 // Name: handleConnectionOpen
-// Dependencies: [1395, 1218, 1391, 1980, 1910, 4392, 3989, 4167, 676, 1398, 595, 12, 1370, 506, 589, 709, 2]
+// Dependencies: [1395, 1218, 1391, 1980, 1910, 4393, 3989, 4165, 676, 1398, 595, 12, 1370, 506, 589, 709, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 1979 (handleConnectionOpen)

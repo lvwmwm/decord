@@ -1,10 +1,10 @@
-// Module ID: 9834
-// Function ID: 9835
+// Module ID: 9837
+// Function ID: 9838
 // Name: NativeMessagePreviewContent
-// Dependencies: [19, 17, 1391, 9815, 21, 4344, 501, 712, 9835, 9836, 9814, 4340, 5307, 9852, 4572, 9860, 9861, 693, 5957, 1236, 4039, 2]
+// Dependencies: [19, 17, 1391, 9819, 21, 4342, 501, 712, 9838, 9839, 9818, 4338, 5308, 9855, 4573, 9863, 9864, 693, 5959, 1236, 4039, 2]
 // Exports: default
 
-// Module 9834 (NativeMessagePreviewContent)
+// Module 9837 (NativeMessagePreviewContent)
 import getSystemLocale from "getSystemLocale";
 import { View } from "MessageEmbedTypes";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -27,14 +27,14 @@ function NativeMessagePreviewContent(arg0) {
   let maxHeight;
   let message;
   ({ message, lineClamp, maxHeight } = arg0);
-  const tmp = importDefault(9835)();
+  const tmp = importDefault(9838)();
   ({ gradientColors, gradientStyles } = tmp);
-  return callback(View, { children: callback(require(9836) /* PreviewIcon */.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) });
+  return callback(View, { children: callback(require(9839) /* PreviewIcon */.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) });
 }
 class SystemMessageText {
   constructor(arg0) {
     tmp = isIOS();
-    obj = require("extractMetadataFromNotification");
+    obj = require("isReactionMilestoneNotification");
     messagePreviewTextVariant = obj.getMessagePreviewTextVariant();
     obj = { variant: messagePreviewTextVariant, color: "text-subtle", style: tmp.italic, lineClamp: View, children: global.text };
     return jsx(require("Text").Text, obj);
@@ -55,7 +55,7 @@ function EmbedMediaThumbnail(media) {
       num = result;
     }
   }
-  obj = { style: items, children: callback(importDefault(5307), obj) };
+  obj = { style: items, children: callback(importDefault(5308), obj) };
   items = [tmp.embedMediaContainer, { aspectRatio: num }];
   obj = { source: { uri: url }, style: tmp.embedMedia, resizeMode: "contain" };
   return callback(View, obj);
@@ -103,14 +103,14 @@ function EmbedCard(embed) {
   if (tmp9) {
     const obj2 = { variant: "text-xxs/normal", color: "text-subtle", lineClamp: 1, children: null };
     obj2[3] = name;
-    tmp9 = callback(require(4340) /* Text */.Text, obj2);
+    tmp9 = callback(require(4338) /* Text */.Text, obj2);
   }
   const items2 = [tmp9, , , ];
   let tmp13 = null != name1;
   if (tmp13) {
     const obj3 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, children: null };
     obj3[3] = name1;
-    tmp13 = callback(require(4340) /* Text */.Text, obj3);
+    tmp13 = callback(require(4338) /* Text */.Text, obj3);
   }
   items2[1] = tmp13;
   let tmp18Result = null != rawTitle;
@@ -125,7 +125,7 @@ function EmbedCard(embed) {
     const obj4 = { variant: "text-xs/medium", color: "text-link", lineClamp: null, children: null };
     obj4[2] = num2;
     obj4[3] = rawTitle;
-    tmp18Result = callback(require(4340) /* Text */.Text, obj4);
+    tmp18Result = callback(require(4338) /* Text */.Text, obj4);
     const tmp18 = callback;
   }
   items2[2] = tmp18Result;
@@ -133,7 +133,7 @@ function EmbedCard(embed) {
   if (tmp21) {
     const obj5 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: null };
     obj5[3] = embed.rawDescription;
-    tmp21 = callback(require(4340) /* Text */.Text, obj5);
+    tmp21 = callback(require(4338) /* Text */.Text, obj5);
   }
   items2[3] = tmp21;
   obj1[1] = items2;
@@ -162,7 +162,7 @@ PlatformTypes = { width: 4, marginTop: -require("Themes").space.PX_8, marginBott
 createCacheKey[1] = PlatformTypes;
 createCacheKey = { flex: 1, gap: require("Themes").space.PX_4, paddingVertical: require("Themes").space.PX_4, paddingHorizontal: require("Themes").space.PX_8 };
 createCacheKey[2] = createCacheKey;
-createCacheKey[3] = { borderRadius: require("Themes").radii.xs, overflow: "hidden", height: 60, width: "channel" };
+createCacheKey[3] = { borderRadius: require("Themes").radii.xs, overflow: "hidden", height: 60, width: "call" };
 createCacheKey[4] = { width: "100%", height: "100%" };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = set.fileFinishedImporting("modules/in_app_notifications/native/MessagePreviewText.tsx");
@@ -178,18 +178,18 @@ export default function MessagePreviewText(message) {
   if (showMessageAuthor === undefined) {
     showMessageAuthor = false;
   }
-  let obj = message(9852);
+  let obj = message(9855);
   const previewableMedia = obj.usePreviewableMedia(message);
-  let obj1 = message(4572);
+  let obj1 = message(4573);
   let tmp3 = null;
   if (showMessageAuthor) {
     tmp3 = message;
   }
   const nullableMessageAuthor = obj1.useNullableMessageAuthor(tmp3);
-  let tmpResult = tmp(9860);
+  let tmpResult = tmp(9863);
   const previewableMediaText = tmpResult.usePreviewableMediaText({ previewableMedia, author: nullableMessageAuthor });
   ({ text, secondaryText } = previewableMediaText);
-  tmpResult = tmp(9861);
+  tmpResult = tmp(9864);
   const getInitialMessagePreview = tmpResult.useGetInitialMessagePreview({ message });
   const items = [message.embeds];
   const memo = React.useMemo(() => {
@@ -217,10 +217,10 @@ export default function MessagePreviewText(message) {
     items1[1] = callback(EmbedCard, obj2);
     obj[0] = items1;
     tmp43 = callback2(View, obj);
-  } else if (importDefault(5957)(message)) {
+  } else if (importDefault(5959)(message)) {
     let tmp29 = previewableMedia.length > 0;
     if (tmp29) {
-      tmp29 = previewableMedia[0].type === tmp(9852).PreviewableMediaTypes.GIF;
+      tmp29 = previewableMedia[0].type === tmp(9855).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       if (null != nullableMessageAuthor) {
@@ -244,7 +244,7 @@ export default function MessagePreviewText(message) {
   } else if (message.content.length > 0) {
     if (null != nullableMessageAuthor) {
       channel = channel.getChannel(message.channel_id);
-      tmp(9814);
+      tmp(9818);
       if (null != channel) {
         const obj6 = { channel: null, message: null, color: "text-default", layout: null, variant: null, muted: false, lineClamp: null };
         obj6[0] = channel;
@@ -252,7 +252,7 @@ export default function MessagePreviewText(message) {
         obj6[3] = tmp(4039).ChannelListLayoutTypes.COZY;
         obj6[4] = tmp24;
         obj6[6] = lineClamp;
-        return callback(tmp(9836).ChannelRowPreview, obj6);
+        return callback(tmp(9839).ChannelRowPreview, obj6);
       }
     }
     const obj7 = { message: null, lineClamp: null, maxHeight: null };
@@ -271,7 +271,7 @@ export default function MessagePreviewText(message) {
           const obj9 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: null, children: null };
           obj9[2] = closure_7;
           obj9[3] = secondaryText;
-          tmp17Result = callback(tmp(4340).Text, obj9);
+          tmp17Result = callback(tmp(4338).Text, obj9);
         }
         const obj10 = { children: null };
         items2[1] = tmp17Result;
@@ -296,7 +296,7 @@ export default function MessagePreviewText(message) {
       const obj14 = { variant: "redesign/message-preview/medium", color: "text-default", lineClamp: null, children: null };
       obj14[2] = closure_7;
       obj14[3] = message.poll.question.text;
-      items3[1] = callback(tmp(4340).Text, obj14);
+      items3[1] = callback(tmp(4338).Text, obj14);
       obj12[0] = items3;
       return callback2(View, obj12);
     } else {

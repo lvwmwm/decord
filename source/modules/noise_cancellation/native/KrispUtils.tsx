@@ -1,7 +1,7 @@
 // Module ID: 13146
 // Function ID: 13147
 // Name: getKrispModel
-// Dependencies: [4394, 2]
+// Dependencies: [4395, 2]
 // Exports: getKrispModel, setKrispModelOverride, setKrispSuppressionLevel
 
 // Module 13146 (getKrispModel)

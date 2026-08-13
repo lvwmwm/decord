@@ -1,10 +1,10 @@
-// Module ID: 8380
-// Function ID: 8381
+// Module ID: 8384
+// Function ID: 8385
 // Name: canViewInteractionInfo
 // Dependencies: [1954, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 8380 (canViewInteractionInfo)
+// Module 8384 (canViewInteractionInfo)
 const result = require("set").fileFinishedImporting("modules/applications/ApplicationInteractionInfoUtils.tsx");
 
 export const canViewInteractionInfo = function canViewInteractionInfo(message) {

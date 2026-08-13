@@ -1,9 +1,9 @@
-// Module ID: 15176
-// Function ID: 15177
+// Module ID: 15185
+// Function ID: 15186
 // Name: PasswordStrength
-// Dependencies: [109, 32, 19, 8516, 15149, 21, 4344, 712, 4083, 15173, 1236, 4340, 15167, 8529, 589, 4044, 7831, 4069, 8540, 8542, 2]
+// Dependencies: [109, 32, 19, 8520, 15158, 21, 4342, 712, 4083, 15182, 1236, 4338, 15176, 8533, 589, 4044, 7835, 4069, 8544, 8546, 2]
 
-// Module 15176 (PasswordStrength)
+// Module 15185 (PasswordStrength)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "EyeIcon";
@@ -33,17 +33,17 @@ function PasswordStrength(passwordScore) {
     if (isPasswordFocused) {
       if (0 !== password.length) {
         if (null == passwordError) {
-          if (passwordScore <= require(15173) /* PasswordScore */.PasswordScore.WEAK) {
+          if (passwordScore <= require(15182) /* PasswordScore */.PasswordScore.WEAK) {
             const intl2 = tmp9(1236).intl;
             let str = intl2.string(tmp9(1236).t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === tmp9(15173).PasswordScore.MEDIUM) {
+          } else if (passwordScore === tmp9(15182).PasswordScore.MEDIUM) {
             const intl = tmp9(1236).intl;
             str = intl.string(tmp9(1236).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === tmp9(15173).PasswordScore.STRONG) {
+            if (passwordScore === tmp9(15182).PasswordScore.STRONG) {
               const intl4 = tmp9(1236).intl;
               str = intl4.string(tmp9(1236).t.Xraqqc);
               strong = tmp.strong;
@@ -59,7 +59,7 @@ function PasswordStrength(passwordScore) {
           const intl3 = tmp9(1236).intl;
           const items1 = [intl3.string(require(1236) /* getSystemLocale */.t["5gbdUX"]), ": ", str];
           obj.children = items1;
-          return callback2(require(4340) /* Text */.Text, obj);
+          return callback2(require(4338) /* Text */.Text, obj);
         }
       }
     }

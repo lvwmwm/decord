@@ -1,10 +1,10 @@
-// Module ID: 8589
-// Function ID: 8590
+// Module ID: 8593
+// Function ID: 8594
 // Name: SMSBackupWarningAlert
-// Dependencies: [19, 21, 4344, 4772, 1236, 4683, 4340, 2]
+// Dependencies: [19, 21, 4342, 4773, 1236, 4684, 4338, 2]
 // Exports: default
 
-// Module 8589 (SMSBackupWarningAlert)
+// Module 8593 (SMSBackupWarningAlert)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -34,11 +34,11 @@ export default function SMSBackupWarningAlert(onConfirm) {
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = onConfirm(1236).intl;
   obj[4] = intl3.string(onConfirm(1236).t.Ed4XQB);
-  const items = [callback(onConfirm(4340).Text, obj), ];
+  const items = [callback(onConfirm(4338).Text, obj), ];
   obj = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
   const intl4 = onConfirm(1236).intl;
   obj[3] = intl4.string(onConfirm(1236).t.EDU2Eg);
-  items[1] = callback(onConfirm(4340).Text, obj);
+  items[1] = callback(onConfirm(4338).Text, obj);
   obj[4] = items;
-  return callback2(importDefault(4772), obj);
+  return callback2(importDefault(4773), obj);
 };

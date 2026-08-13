@@ -1,10 +1,10 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8726
+// Function ID: 8727
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [19, 5215, 1391, 1979, 676, 1925, 1338, 8690, 8691, 4538, 4006, 2]
+// Dependencies: [19, 5216, 1391, 1979, 676, 1925, 1338, 8694, 8695, 4539, 4006, 2]
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
-// Module 8722 (trackOnEmojiPickerOpened)
+// Module 8726 (trackOnEmojiPickerOpened)
 import noop from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -66,13 +66,13 @@ function trackOnEmojiPickerOpened(arg0) {
   if (channel != null) {
     guildId2 = channel.getGuildId();
   }
-  const topAndNewlyAddedEmojis = require(8690) /* useTopAndNewlyAddedEmojis */.getTopAndNewlyAddedEmojis({ guildId: guildId2, pickerIntention: intention });
+  const topAndNewlyAddedEmojis = require(8694) /* useTopAndNewlyAddedEmojis */.getTopAndNewlyAddedEmojis({ guildId: guildId2, pickerIntention: intention });
   ({ topEmojis, newlyAddedEmojis } = topAndNewlyAddedEmojis);
-  const obj4 = require(8690) /* useTopAndNewlyAddedEmojis */;
+  const obj4 = require(8694) /* useTopAndNewlyAddedEmojis */;
   const tmp6 = require;
-  const emojiHotrail = require(8691) /* useEmojiHotrail */.getEmojiHotrail({ topEmojis, newlyAddedEmojis, rowSize });
+  const emojiHotrail = require(8695) /* useEmojiHotrail */.getEmojiHotrail({ topEmojis, newlyAddedEmojis, rowSize });
   ({ visibleTopEmojis, visibleNewlyAddedEmojis } = emojiHotrail);
-  const tmp6Result = require(8691) /* useEmojiHotrail */;
+  const tmp6Result = require(8695) /* useEmojiHotrail */;
   if (intention === EmojiIntention.REACTION) {
     let EXPRESSION_PICKER_OPENED = AnalyticEvents.REACTION_PICKER_OPENED;
   } else {
@@ -123,7 +123,7 @@ function trackOnEmojiPickerOpened(arg0) {
     tmp16 = obj1;
   }
   const merged1 = Object.assign(tmp16);
-  importDefault(4538).trackWithMetadata(EXPRESSION_PICKER_OPENED, obj);
+  importDefault(4539).trackWithMetadata(EXPRESSION_PICKER_OPENED, obj);
 }
 const result = require("ensureGuildLoaded").fileFinishedImporting("modules/emoji_picker/analytics/trackOnEmojiPickerOpened.tsx");
 

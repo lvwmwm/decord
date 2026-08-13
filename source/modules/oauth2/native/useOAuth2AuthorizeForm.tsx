@@ -1,10 +1,10 @@
-// Module ID: 10554
-// Function ID: 10555
+// Module ID: 10468
+// Function ID: 10469
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4003, 4336, 4367, 5038, 1922, 10555, 676, 21, 4344, 3994, 589, 4740, 4083, 4345, 5768, 10556, 10557, 506, 10558, 530, 514, 10559, 10561, 10563, 9587, 5775, 1208, 10564, 10565, 4538, 10566, 4751, 10567, 4754, 1236, 5862, 5040, 10569, 10570, 8947, 10562, 10572, 10576, 10575, 10577, 10578, 10579, 10581, 10590, 5399, 2]
+// Dependencies: [5, 32, 19, 17, 4003, 4334, 4368, 5039, 1922, 10469, 676, 21, 4342, 3994, 589, 4741, 4083, 4343, 5769, 10470, 10471, 506, 10472, 530, 514, 10473, 10475, 10477, 9591, 5776, 1208, 10478, 10479, 4539, 10480, 4752, 10481, 4755, 1236, 5863, 5041, 10483, 10484, 8951, 10476, 10486, 10490, 10489, 10491, 10492, 10493, 10495, 10504, 5400, 2]
 // Exports: default
 
-// Module 10554 (useOAuth2AuthorizeForm)
+// Module 10468 (useOAuth2AuthorizeForm)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import OAuth2Prompts from "OAuth2Prompts";
 import filterScopes from "filterScopes";
@@ -205,20 +205,20 @@ export default function useOAuth2AuthorizeForm(clientId) {
       } else {
         obj = { transform: null };
         obj = { translateY: null };
-        tmp = f108632;
+        tmp = f108606;
         tmp2 = codeChallenge;
-        obj3 = f108632(codeChallenge[16]);
-        obj4 = f108632(codeChallenge[17]);
+        obj3 = f108606(codeChallenge[16]);
+        obj4 = f108606(codeChallenge[17]);
         obj1 = { duration: 250, easing: null };
-        Easing = f108632(codeChallenge[16]).Easing;
-        obj1[1] = Easing.inOut(f108632(codeChallenge[16]).Easing.quad);
+        Easing = f108606(codeChallenge[16]).Easing;
+        obj1[1] = Easing.inOut(f108606(codeChallenge[16]).Easing.quad);
         num = -5;
         withTimingResult = obj4.withTiming(-5, obj1);
-        obj6 = f108632(codeChallenge[16]);
-        obj7 = f108632(codeChallenge[17]);
+        obj6 = f108606(codeChallenge[16]);
+        obj7 = f108606(codeChallenge[17]);
         obj2 = { duration: 500, easing: null };
-        Easing2 = f108632(codeChallenge[16]).Easing;
-        obj2[1] = Easing2.inOut(f108632(codeChallenge[16]).Easing.quad);
+        Easing2 = f108606(codeChallenge[16]).Easing;
+        obj2[1] = Easing2.inOut(f108606(codeChallenge[16]).Easing.quad);
         num2 = 5;
         flag = true;
         num3 = -1;
@@ -834,15 +834,15 @@ export default function useOAuth2AuthorizeForm(clientId) {
     if (first9) {
       const result = responseType(codeChallenge[22]).showConnectionDisclaimer();
       const obj2 = responseType(codeChallenge[22]);
-      const nextPromise = result.then(() => callback2(10558).getAccountUrlAndAuthCode());
-      const nextPromise1 = result.then(() => callback2(10558).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise = result.then(() => callback2(10472).getAccountUrlAndAuthCode());
+      const nextPromise1 = result.then(() => callback2(10472).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(outer1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, OAuth2Prompts)];
         return Promise.all(items);
       });
-      const nextPromise2 = result.then(() => callback2(10558).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise2 = result.then(() => callback2(10472).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
@@ -854,7 +854,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const items = [tmp, outer1_55(closure_0)];
         return Promise.all(items);
       });
-      const nextPromise3 = result.then(() => callback2(10558).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise3 = result.then(() => callback2(10472).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
@@ -871,7 +871,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         [tmp, tmp2] = arg0;
         return outer1_1(outer1_3[22]).finishSamsungAuthorization(tmp, tmp2, OAuth2Prompts);
       });
-      result.then(() => callback2(10558).getAccountUrlAndAuthCode()).then((arg0) => {
+      result.then(() => callback2(10472).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
@@ -896,7 +896,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
       }).catch((arg0) => {
         callback2(1208).captureException(arg0);
       });
-      const nextPromise4 = result.then(() => callback2(10558).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise4 = result.then(() => callback2(10472).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
@@ -1236,7 +1236,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         let str5;
         class Spinner {
           constructor() {
-            obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+            obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
             return closure_17(prompt, obj);
           }
         }
@@ -1248,7 +1248,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
       }
       class Spinner {
         constructor() {
-          obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+          obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
           return closure_17(prompt, obj);
         }
       }
@@ -1257,7 +1257,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         { body: null, obscured: false }[0] = callback(Spinner, {});
         class Spinner {
           constructor() {
-            obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+            obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
             return closure_17(prompt, obj);
           }
         }
@@ -1269,7 +1269,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           obj4[0] = clientId;
           class Spinner {
             constructor() {
-              obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+              obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
               return closure_17(prompt, obj);
             }
           }
@@ -1285,7 +1285,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             { body: null, obscured: false }[0] = callback(Spinner, {});
             class Spinner {
               constructor() {
-                obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                 return closure_17(prompt, obj);
               }
             }
@@ -1296,7 +1296,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             obj6[0] = first8;
             class Spinner {
               constructor() {
-                obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                 return closure_17(prompt, obj);
               }
             }
@@ -1324,7 +1324,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
                 }
                 class Spinner {
                   constructor() {
-                    obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                    obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                     return closure_17(prompt, obj);
                   }
                 }
@@ -1341,7 +1341,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     }
                     class Spinner {
                       constructor() {
-                        obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                        obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                         return closure_17(prompt, obj);
                       }
                     }
@@ -1357,7 +1357,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     obj8[0] = stateFromStores1.type;
                     class Spinner {
                       constructor() {
-                        obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                        obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                         return closure_17(prompt, obj);
                       }
                     }
@@ -1390,7 +1390,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   hasItem2 = tmp81(tmp17[48]);
                   class Spinner {
                     constructor() {
-                      obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                      obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                       return closure_17(prompt, obj);
                     }
                   }
@@ -1425,7 +1425,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   hasItem2 = tmp81(tmp17[49]);
                   class Spinner {
                     constructor() {
-                      obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                      obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                       return closure_17(prompt, obj);
                     }
                   }
@@ -1480,7 +1480,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           hasItem2 = callback;
           class Spinner {
             constructor() {
-              obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+              obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
               return closure_17(prompt, obj);
             }
           }
@@ -1491,7 +1491,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           flag8 = false;
           class Spinner {
             constructor() {
-              obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+              obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
               return closure_17(prompt, obj);
             }
           }
@@ -1500,7 +1500,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               { body: null, obscured: false }[0] = callback(Spinner, {});
               class Spinner {
                 constructor() {
-                  obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                  obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                   return closure_17(prompt, obj);
                 }
               }
@@ -1510,7 +1510,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               obj18[0] = first.application;
               class Spinner {
                 constructor() {
-                  obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                  obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                   return closure_17(prompt, obj);
                 }
               }
@@ -1544,7 +1544,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               }
               class Spinner {
                 constructor() {
-                  obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                  obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                   return closure_17(prompt, obj);
                 }
               }
@@ -1568,7 +1568,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         }
         class Spinner {
           constructor() {
-            obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+            obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
             return closure_17(prompt, obj);
           }
         }
@@ -1582,7 +1582,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           obj20[0] = stateFromStores;
           class Spinner {
             constructor() {
-              obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+              obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
               return closure_17(prompt, obj);
             }
           }
@@ -1608,7 +1608,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             let str6 = "auto";
             class Spinner {
               constructor() {
-                obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                 return closure_17(prompt, obj);
               }
             }
@@ -1621,7 +1621,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               const t2 = tmp20(tmp17[38]).t;
               class Spinner {
                 constructor() {
-                  obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                  obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                   return closure_17(prompt, obj);
                 }
               }
@@ -1630,7 +1630,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               const t = tmp20(tmp17[38]).t;
               class Spinner {
                 constructor() {
-                  obj = { style: closure_17.loading, children: closure_17(f108632(codeChallenge[39]).ActivityIndicator, {}) };
+                  obj = { style: closure_17.loading, children: closure_17(f108606(codeChallenge[39]).ActivityIndicator, {}) };
                   return closure_17(prompt, obj);
                 }
               }

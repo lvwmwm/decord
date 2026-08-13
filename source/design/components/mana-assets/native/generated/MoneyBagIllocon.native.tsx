@@ -1,10 +1,10 @@
-// Module ID: 6561
-// Function ID: 6562
+// Module ID: 6565
+// Function ID: 6566
 // Name: MoneyBagIllocon
-// Dependencies: [21, 5307, 6562, 2]
+// Dependencies: [21, 5308, 6566, 2]
 // Exports: MoneyBagIllocon
 
-// Module 6561 (MoneyBagIllocon)
+// Module 6565 (MoneyBagIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MoneyBagIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const MoneyBagIllocon = function MoneyBagIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6562);
+  obj[0] = importDefault(6566);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { uri: null });
+  return jsx(importDefault(5308), { uri: null });
 };

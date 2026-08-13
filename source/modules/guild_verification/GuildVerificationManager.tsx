@@ -1,9 +1,9 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 16535
+// Function ID: 16536
 // Name: handleInviteData
-// Dependencies: [676, 12734, 1403, 7813, 12735, 5300, 2]
+// Dependencies: [676, 12734, 1403, 7817, 12735, 5301, 2]
 
-// Module 16524 (handleInviteData)
+// Module 16535 (handleInviteData)
 import { GuildFeatures } from "ME";
 import "initialize";
 
@@ -28,9 +28,9 @@ function handleInviteData(invite) {
   }
   let new_member = invite.invite.new_member;
   if (new_member) {
-    let hasFlagResult = require(1403) /* hasFlag */.hasFlag(num, require(7813) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
+    let hasFlagResult = require(1403) /* hasFlag */.hasFlag(num, require(7817) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
-      hasFlagResult = tmp3(1403).hasFlag(num, tmp3(7813).GuildInviteFlags.IS_APPLICATION_BYPASS);
+      hasFlagResult = tmp3(1403).hasFlag(num, tmp3(7817).GuildInviteFlags.IS_APPLICATION_BYPASS);
       const tmp3Result = tmp3(1403);
     }
     new_member = !hasFlagResult;

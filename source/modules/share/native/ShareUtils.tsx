@@ -1,10 +1,10 @@
-// Module ID: 13316
-// Function ID: 13317
+// Module ID: 13317
+// Function ID: 13318
 // Name: _sendShareMessage
-// Dependencies: [5, 4680, 4337, 4062, 8657, 8401, 7276, 4891, 4890, 7182, 8386, 6959, 2]
+// Dependencies: [5, 4681, 4335, 4062, 8661, 8405, 7281, 4892, 4891, 7188, 8390, 6965, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 13316 (_sendShareMessage)
+// Module 13317 (_sendShareMessage)
 import dispatcher from "dispatcher";
 import { DraftType } from "handleChanged";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
@@ -79,13 +79,13 @@ function _sendShareMessage() {
               if (dependencyMap == null) {
                 lib2 = "";
               }
-              constants = lib2(7182).parse(lib2, lib2);
+              constants = lib2(7188).parse(lib2, lib2);
               if (c4.length > 0) {
-                let obj2 = lib2(8401);
+                let obj2 = lib2(8405);
                 obj2.clearAll(id, c4.ChannelMessage);
               }
-              future = new lib(8386).Future();
-              let obj3 = lib2(6959);
+              future = new lib(8390).Future();
+              let obj3 = lib2(6965);
               obj2 = { location: null, doNotNotifyOnError: true, attachmentsToUpload: null, onAttachmentUploadError: null };
               obj2[0] = constants.SHARE_MODAL;
               obj2[2] = c4;
@@ -139,7 +139,7 @@ const result = require("MESSAGE_GROUP_SPACING").fileFinishedImporting("modules/s
 
 export const showInformationToast = function showInformationToast(intl3) {
   let obj = importDefault(4062);
-  obj = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: importDefault(8657) };
+  obj = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: importDefault(8661) };
   obj.open(obj);
 };
 export const sendShareMessage = function sendShareMessage(arg0) {

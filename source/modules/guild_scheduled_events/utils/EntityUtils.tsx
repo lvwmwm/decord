@@ -1,10 +1,10 @@
-// Module ID: 8990
-// Function ID: 8991
+// Module ID: 8994
+// Function ID: 8995
 // Name: getChannelFromEvent
 // Dependencies: [1391, 1397, 2]
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData
 
-// Module 8990 (getChannelFromEvent)
+// Module 8994 (getChannelFromEvent)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
 

@@ -1,10 +1,10 @@
-// Module ID: 16595
-// Function ID: 16596
+// Module ID: 16606
+// Function ID: 16607
 // Name: RedesignSkipAvatarUploadAlertModal
-// Dependencies: [19, 21, 4687, 1236, 4687, 2]
+// Dependencies: [19, 21, 4688, 1236, 4688, 2]
 // Exports: default
 
-// Module 16595 (RedesignSkipAvatarUploadAlertModal)
+// Module 16606 (RedesignSkipAvatarUploadAlertModal)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -24,12 +24,12 @@ export default function RedesignSkipAvatarUploadAlertModal(onConfirm) {
   obj = { onPress: onConfirm.onConfirm, text: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.nhJ8OC);
-  const items = [callback(require(4687) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
+  const items = [callback(require(4688) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
   const obj1 = { variant: "secondary", text: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["7eZ3ji"]);
-  items[1] = callback(require(4687) /* getAlertModalItemKey */.AlertActionButton, obj1, "add-profile-picture");
+  items[1] = callback(require(4688) /* getAlertModalItemKey */.AlertActionButton, obj1, "add-profile-picture");
   obj[0] = items;
-  obj[2] = callback2(require(4687) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4687) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[2] = callback2(require(4688) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4688) /* getAlertModalItemKey */.AlertModal, obj);
 };

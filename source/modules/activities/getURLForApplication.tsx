@@ -1,10 +1,10 @@
-// Module ID: 10652
-// Function ID: 10653
+// Module ID: 10566
+// Function ID: 10567
 // Name: getURLForApplication
-// Dependencies: [7631, 7629, 2]
+// Dependencies: [7635, 7633, 2]
 // Exports: default, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 10652 (getURLForApplication)
+// Module 10566 (getURLForApplication)
 import reset from "reset";
 import initialize from "initialize";
 
@@ -28,8 +28,17 @@ export default function getURLForApplication(arg0) {
       const _window = window;
       activityUrlOverride = null;
       if (null != ACTIVITY_APPLICATION_HOST) {
-        const _HermesInternal = HermesInternal;
-        activityUrlOverride = "https://" + arg0 + "." + ACTIVITY_APPLICATION_HOST;
+        if (ACTIVITY_APPLICATION_HOST.startsWith("//")) {
+          const _URL = URL;
+          const _window2 = window;
+          const uRL = new URL(ACTIVITY_APPLICATION_HOST, window.location.href);
+          const _HermesInternal2 = HermesInternal;
+          uRL.hostname = "" + arg0 + "." + uRL.hostname;
+          activityUrlOverride = uRL.origin;
+        } else {
+          const _HermesInternal = HermesInternal;
+          activityUrlOverride = "https://" + arg0 + "." + ACTIVITY_APPLICATION_HOST;
+        }
       }
     }
     tmp4 = reset;
@@ -37,12 +46,19 @@ export default function getURLForApplication(arg0) {
   return activityUrlOverride;
 };
 export const getNonTestModeUrlForApplication = function getNonTestModeUrlForApplication(arg0) {
-  let combined = null;
-  if (null != ACTIVITY_APPLICATION_HOST) {
+  if (null == ACTIVITY_APPLICATION_HOST) {
+    return null;
+  } else if (ACTIVITY_APPLICATION_HOST.startsWith("//")) {
+    const _URL = URL;
+    const _window = window;
+    const uRL = new URL(ACTIVITY_APPLICATION_HOST, window.location.href);
+    const _HermesInternal2 = HermesInternal;
+    uRL.hostname = "" + arg0 + "." + uRL.hostname;
+    return uRL.origin;
+  } else {
     const _HermesInternal = HermesInternal;
-    combined = "https://" + arg0 + "." + ACTIVITY_APPLICATION_HOST;
+    return "https://" + arg0 + "." + ACTIVITY_APPLICATION_HOST;
   }
-  return combined;
 };
 export const isUsingDevShelfActivityUrlOverride = function isUsingDevShelfActivityUrlOverride() {
   const state = store.getState();

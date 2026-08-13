@@ -1,9 +1,9 @@
-// Module ID: 7159
-// Function ID: 7160
+// Module ID: 7165
+// Function ID: 7166
 // Name: recountRelationshipTypes
 // Dependencies: [3998, 676, 3985, 589, 709, 2]
 
-// Module 7159 (recountRelationshipTypes)
+// Module 7165 (recountRelationshipTypes)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { RelationshipTypes } from "ME";
 import { Store } from "initialize";

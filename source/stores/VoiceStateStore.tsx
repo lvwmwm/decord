@@ -1,9 +1,9 @@
-// Module ID: 4360
-// Function ID: 4361
+// Module ID: 4361
+// Function ID: 4362
 // Name: updateVoiceState
-// Dependencies: [32, 4361, 676, 4362, 12, 589, 1624, 709, 2]
+// Dependencies: [32, 4362, 676, 4363, 12, 589, 1624, 709, 2]
 
-// Module 4360 (updateVoiceState)
+// Module 4361 (updateVoiceState)
 import _slicedToArray from "_slicedToArray";
 import isVoiceMuted from "isVoiceMuted";
 import { ME } from "ME";

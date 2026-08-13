@@ -1,10 +1,10 @@
-// Module ID: 5420
-// Function ID: 5421
+// Module ID: 5421
+// Function ID: 5422
 // Name: TableRowArrow
-// Dependencies: [19, 21, 4344, 712, 1367, 4756, 5421, 5422, 2]
+// Dependencies: [19, 21, 4342, 712, 1367, 4757, 5422, 5423, 2]
 // Exports: TableRowArrow
 
-// Module 5420 (TableRowArrow)
+// Module 5421 (TableRowArrow)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -24,7 +24,7 @@ export const TableRowArrow = function TableRowArrow() {
   const tmp = importDefault;
   const tmp3 = importDefault(1367)("TableRowArrow");
   const tmp5 = jsx;
-  obj[2] = tmp(tmp3 ? 5421 : 5422);
-  obj[3] = require(4756) /* IconSizes */.IconSizes.CUSTOM;
-  return tmp5(importDefault(4756), obj);
+  obj[2] = tmp(tmp3 ? 5422 : 5423);
+  obj[3] = require(4757) /* IconSizes */.IconSizes.CUSTOM;
+  return tmp5(importDefault(4757), obj);
 };

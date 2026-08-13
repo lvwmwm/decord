@@ -1,7 +1,7 @@
 // Module ID: 10207
 // Function ID: 10208
 // Name: GiftingBadgeProgressBar
-// Dependencies: [19, 17, 8835, 21, 4344, 712, 10087, 4340, 1236, 2399, 2]
+// Dependencies: [19, 17, 8839, 21, 4342, 712, 10085, 4338, 1236, 2399, 2]
 // Exports: default
 
 // Module 10207 (GiftingBadgeProgressBar)
@@ -72,7 +72,7 @@ export default function GiftingBadgeProgress(title) {
     obj = { icon: null, size: null };
     obj[0] = currentTier.simple_icon_url;
     obj[1] = iconSize;
-    tmp8 = callback2(importDefault(10087), obj);
+    tmp8 = callback2(importDefault(10085), obj);
   }
   const items = [tmp8, , ];
   obj = { style: tmp.content, children: null };
@@ -80,7 +80,7 @@ export default function GiftingBadgeProgress(title) {
   if (tmp12) {
     const obj1 = { variant: "text-md/semibold", children: null };
     obj1[1] = title;
-    tmp12 = callback2(require(4340) /* Text */.Text, obj1);
+    tmp12 = callback2(require(4338) /* Text */.Text, obj1);
   }
   const items1 = [tmp12, callback2(GiftingBadgeProgressBar, { percent: num2 }), ];
   const obj2 = { style: tmp.labels, children: null };
@@ -92,7 +92,7 @@ export default function GiftingBadgeProgress(title) {
     obj4[0] = progress;
     obj4[1] = tmp2;
     obj3[2] = intl.format(importDefault(2399).iIpfQe, obj4);
-    tmp16Result = tmp16(require(4340) /* Text */.Text, obj3);
+    tmp16Result = tmp16(require(4338) /* Text */.Text, obj3);
   }
   obj2[1] = tmp16Result;
   items1[2] = callback2(View, obj2);
@@ -107,7 +107,7 @@ export default function GiftingBadgeProgress(title) {
     const obj5 = { icon: null, size: null };
     obj5[0] = nextTier.simple_icon_url;
     obj5[1] = iconSize;
-    tmp16Result = tmp16(importDefault(10087), obj5);
+    tmp16Result = tmp16(importDefault(10085), obj5);
   }
   items[2] = tmp16Result;
   obj[1] = items;

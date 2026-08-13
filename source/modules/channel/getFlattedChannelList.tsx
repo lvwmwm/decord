@@ -1,10 +1,10 @@
-// Module ID: 5294
-// Function ID: 5295
+// Module ID: 5295
+// Function ID: 5296
 // Name: getFlattenedChannelList
 // Dependencies: [12, 2]
 // Exports: default
 
-// Module 5294 (getFlattenedChannelList)
+// Module 5295 (getFlattenedChannelList)
 const result = require("set").fileFinishedImporting("modules/channel/getFlattedChannelList.tsx");
 
 export default function getFlattenedChannelList(arg0, arg1) {

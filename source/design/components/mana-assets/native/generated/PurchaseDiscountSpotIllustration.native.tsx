@@ -1,10 +1,10 @@
-// Module ID: 6693
-// Function ID: 6694
+// Module ID: 6697
+// Function ID: 6698
 // Name: PurchaseDiscountSpotIllustration
-// Dependencies: [21, 5307, 6694, 2]
+// Dependencies: [21, 5308, 6698, 2]
 // Exports: PurchaseDiscountSpotIllustration
 
-// Module 6693 (PurchaseDiscountSpotIllustration)
+// Module 6697 (PurchaseDiscountSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PurchaseDiscountSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const PurchaseDiscountSpotIllustration = function PurchaseDiscountSpotIll
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6694);
+  obj[0] = importDefault(6698);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const PurchaseDiscountSpotIllustration = function PurchaseDiscountSpotIll
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
 };

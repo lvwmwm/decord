@@ -1,9 +1,9 @@
-// Module ID: 16970
-// Function ID: 16971
+// Module ID: 16981
+// Function ID: 16982
 // Name: _fetch
-// Dependencies: [7200, 687, 5300, 10507, 1208, 10508, 500, 10516, 7215, 5204, 16971, 2]
+// Dependencies: [7206, 687, 5301, 10421, 1208, 10422, 500, 10430, 16982, 2]
 
-// Module 16970 (_fetch)
+// Module 16981 (_fetch)
 import initializeState from "initializeState";
 import "initialize";
 
@@ -42,8 +42,8 @@ class QuestFetchManager extends tmp2 {
       applyArgumentsResult.hasHandledConnectionOpen = true;
       if (applyArgumentsResult.hasHandledConnectionOpen) {
         if (isEligibleForQuests) {
-          let DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(tmp6[10]).getQuestFetchReconnectJitterConfig({ location: "QuestFetchManager" });
-          const tmp5Result = tmp5(tmp6[10]);
+          let DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(tmp6[8]).getQuestFetchReconnectJitterConfig({ location: "QuestFetchManager" });
+          const tmp5Result = tmp5(tmp6[8]);
         }
         const _Math = Math;
         const _Math2 = Math;
@@ -67,7 +67,7 @@ class QuestFetchManager extends tmp2 {
           }, rounded + Math.floor(Math.random() * questHomeHeroJitterMs));
         }
       }
-      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(tmp6[10]).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
+      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(tmp6[8]).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
     };
     applyArgumentsResult.handleRunningGamesChange = function handleRunningGamesChange() {
 
@@ -106,7 +106,7 @@ class QuestFetchManager extends tmp2 {
   }
 }
 QuestFetchManager.prototype["_fetch"] = function _fetch(arg0) {
-  let obj = require(10507) /* getIsEligibleForQuests */;
+  let obj = require(10421) /* getIsEligibleForQuests */;
   let isEligibleForQuests = obj.getIsEligibleForQuests();
   if (isEligibleForQuests) {
     isEligibleForQuests = !initializeState.isFetchingCurrentQuests;
@@ -122,23 +122,15 @@ QuestFetchManager.prototype["_fetch"] = function _fetch(arg0) {
     obj[4] = initializeState.isFetchingCurrentQuests;
     obj[2] = obj;
     importDefault(1208).addBreadcrumb(obj);
-    let tmpResult = tmp(10508);
+    let tmpResult = tmp(10422);
     const currentQuests = tmpResult.fetchCurrentQuests();
     tmpResult = tmp(500);
-    let enableNewRequestBehavior = tmpResult.isMac();
-    if (enableNewRequestBehavior) {
-      let tmp6Result = tmp6(10516);
-      enableNewRequestBehavior = "focused" !== tmp6Result.getState();
-    }
-    if (!enableNewRequestBehavior) {
-      tmp6Result = tmp6(7215);
-      enableNewRequestBehavior = tmp6Result.getConfig({ location: "QuestFetchManager" }).enableNewRequestBehavior;
-    }
-    if (!enableNewRequestBehavior) {
-      const questToDeliver = tmp(10508).fetchQuestToDeliver(tmp(5204).AdPlacement.MOBILE_HOME_DOCK_AREA, arg0);
-      const tmpResult1 = tmp(10508);
+    if (tmpResult.isMac()) {
+      const state = tmp6(10430).getState();
+      const tmp6Result = tmp6(10430);
     }
     const obj2 = importDefault(1208);
+    tmp6 = importDefault;
   }
 };
 const questFetchManager = new QuestFetchManager();

@@ -1,17 +1,15 @@
 // Module ID: 7928
 // Function ID: 7929
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7929, 7914, 7915]
+// Dependencies: [41, 42, 93, 95, 98, 19, 7896]
 
 // Module 7928 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
 
-const FeOffset = arg1;
+const FeDistantLight = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeOffset {
+class FeDistantLight {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeOffset);
+    tmp = _isNativeReflectConstruct(this, FeDistantLight);
     tmp2 = __esModule;
-    obj = __esModule(FeOffset);
+    obj = __esModule(FeDistantLight);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,33 +49,18 @@ class FeOffset {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeOffset, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const merged = Object.assign(this.props);
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
-      }
-    };
-    const tmp = importDefault(7929);
-    const merged1 = Object.assign(self(7914).extractFilter(this.props));
-    const obj2 = self(7914);
-    const merged2 = Object.assign(self(7914).extractIn(this.props));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+require("_inherits")(FeDistantLight, require("noop").Component);
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      const result = FeDistantLight(7896).warnUnimplementedFilter();
+      return null;
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeOffset, items);
-importDefaultResultResult.displayName = "FeOffset";
-obj = {};
-let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.dx = 0;
-obj.dy = 0;
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(FeDistantLight, items);
+importDefaultResultResult.displayName = "FeDistantLight";
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

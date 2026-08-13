@@ -1,10 +1,10 @@
-// Module ID: 7702
-// Function ID: 7703
+// Module ID: 7706
+// Function ID: 7707
 // Name: fetchCurrentAppIcon
-// Dependencies: [32, 5, 19, 17, 7703, 676, 1924, 3, 500, 7730, 7704, 4770, 709, 698, 4062, 1236, 6057, 1624, 2]
+// Dependencies: [32, 5, 19, 17, 7707, 676, 1924, 3, 500, 7734, 7708, 4771, 709, 698, 4062, 1236, 6059, 1624, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons, useCurrentAppIcon
 
-// Module 7702 (fetchCurrentAppIcon)
+// Module 7706 (fetchCurrentAppIcon)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "ME";
 import noop from "noop";
@@ -156,7 +156,7 @@ function _setAppIcon() {
         obj3[0] = callback;
         obj3[1] = callback2;
         let TIER_2 = null;
-        if (callback !== callback(7704).FreemiumAppIconIds.DEFAULT) {
+        if (callback !== callback(7708).FreemiumAppIconIds.DEFAULT) {
           TIER_2 = TIER_2.TIER_2;
         }
         obj3[2] = TIER_2;
@@ -186,7 +186,7 @@ if (set.isAndroid()) {
   DCDIconManager = require("isMetaQuest").NativeModules.DCDIconManager;
 }
 function useCurrentAppIcon() {
-  const tmp = callback(React.useState(_require(7704).FreemiumAppIconIds.DEFAULT), 2);
+  const tmp = callback(React.useState(_require(7708).FreemiumAppIconIds.DEFAULT), 2);
   _require = tmp[1];
   const importDefault = React.useCallback(callback2(function*() {
     if (c3 === 2) {
@@ -244,7 +244,7 @@ function useCurrentAppIcon() {
       }
     }
   }), []);
-  importDefault(4770)(() => {
+  importDefault(4771)(() => {
     callback();
     const subscription = callback(709).subscribe("APP_ICON_UPDATED", callback);
     return () => {
@@ -272,7 +272,7 @@ export const useAppIcons = function useAppIcons() {
   let closure_1;
   let tmp4;
   let tmp6;
-  const currentAppIcon = callback(React.useState(_require(7704).FreemiumAppIconIds.DEFAULT), 2);
+  const currentAppIcon = callback(React.useState(_require(7708).FreemiumAppIconIds.DEFAULT), 2);
   _require = currentAppIcon[1];
   const importDefault = React.useCallback(callback2(function*() {
     if (c3 === 2) {
@@ -330,7 +330,7 @@ export const useAppIcons = function useAppIcons() {
       }
     }
   }), []);
-  importDefault(4770)(() => {
+  importDefault(4771)(() => {
     callback();
     const subscription = callback(709).subscribe("APP_ICON_UPDATED", callback);
     return () => {
@@ -379,7 +379,7 @@ export const useAppIcons = function useAppIcons() {
     c4 = 0;
     return arg1;
   }), []);
-  importDefault(4770)(() => {
+  importDefault(4771)(() => {
     dependencyMap();
     const subscription = callback(709).subscribe("APP_ICON_UPDATED", dependencyMap);
     return () => {
@@ -389,7 +389,7 @@ export const useAppIcons = function useAppIcons() {
   return { officialAppIcons, limitedTimeAppIcons, currentAppIcon: currentAppIcon[0] };
 };
 export const navigateToAppIconSettings = function navigateToAppIconSettings() {
-  let obj = require(6057) /* openUserSettings */;
+  let obj = require(6059) /* openUserSettings */;
   obj = { screen: constants.APP_ICONS };
   obj.openUserSettings(obj);
 };

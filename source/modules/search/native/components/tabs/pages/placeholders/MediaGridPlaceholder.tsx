@@ -1,10 +1,10 @@
-// Module ID: 15803
-// Function ID: 15804
+// Module ID: 15812
+// Function ID: 15813
 // Name: MediaGridPlaceholderItem
-// Dependencies: [19, 17, 8442, 21, 4344, 712, 15802, 4083, 15804, 12, 4340, 1236, 11770, 15805, 2]
+// Dependencies: [19, 17, 8446, 21, 4342, 712, 15811, 4083, 15813, 12, 4338, 1236, 11768, 15814, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 15803 (MediaGridPlaceholderItem)
+// Module 15812 (MediaGridPlaceholderItem)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import MessageEmbedTypes from "MessageEmbedTypes";
@@ -31,11 +31,11 @@ export default function MediaGridPlaceholderItem(arg0) {
   let containerStyle;
   let size;
   ({ size, containerStyle } = arg0);
-  let obj = require(15802) /* useFullscreenPlaceholderCount */;
+  let obj = require(15811) /* useFullscreenPlaceholderCount */;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
   obj = { style: items, pointerEvents: "none", children: null };
   items = [containerStyle, placeholderAnimatedStyle];
-  obj[2] = callback(importDefault(15804), { height: size, width: size, style: containerStyle });
+  obj[2] = callback(importDefault(15813), { height: size, width: size, style: containerStyle });
   return callback(importDefault(4083).View, obj);
 };
 export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(visible) {
@@ -51,7 +51,7 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
   memo = memo.useMemo(() => outer1_0(_undefined[9]).range(0, numRows * outer1_5), items);
   const items1 = [memo];
   memo1 = memo.useMemo(() => outer1_0(_undefined[9]).chunk(memo, outer1_5), items1);
-  let obj = require(15802) /* useFullscreenPlaceholderCount */;
+  let obj = require(15811) /* useFullscreenPlaceholderCount */;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(visible.visible);
   obj = { style: items2, pointerEvents: "none", children: null };
   items2 = [, , ];
@@ -62,13 +62,13 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
   const obj2 = { style: tmp.sectionText, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[5] = intl.string(require(1236) /* getSystemLocale */.t.LBYpDH);
-  obj1[1] = callback(require(4340) /* Text */.Text, obj2);
+  obj1[1] = callback(require(4338) /* Text */.Text, obj2);
   const items3 = [callback(memo1, obj1), ];
   const obj3 = { style: tmp.sectionItem, children: null };
   const obj4 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.sectionText, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.LFTAUp);
-  obj3[1] = callback(require(4340) /* Text */.Text, obj4);
+  obj3[1] = callback(require(4338) /* Text */.Text, obj4);
   items3[1] = callback(memo1, obj3);
   obj[1] = items3;
   const items4 = [
@@ -80,9 +80,9 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
           style: _undefined.row,
           children: arr.map((arg0, arg1) => {
             let obj = { height: closure_0, width: closure_0, style: null };
-            const tmp = numRows(15804);
+            const tmp = numRows(15813);
             obj = { itemIndex: closure_0 * outer2_5 + arg1, numItems: outer1_3.length, numColumns: outer2_5, spacing: outer2_6 };
-            obj[2] = outer2_0(11770).getMediaGridItemStyles(obj);
+            obj[2] = outer2_0(11768).getMediaGridItemStyles(obj);
             return outer2_7(tmp, obj, arg1);
           })
         }),

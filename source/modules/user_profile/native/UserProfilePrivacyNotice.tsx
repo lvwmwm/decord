@@ -1,7 +1,7 @@
 // Module ID: 12535
 // Function ID: 12536
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 676, 1388, 21, 4344, 712, 1306, 1236, 12536, 8077, 4034, 1377, 6063, 4340, 6057, 4300, 4886, 5365, 2]
+// Dependencies: [32, 19, 17, 676, 1388, 21, 4342, 712, 1306, 1236, 12536, 8081, 4034, 1377, 6065, 4338, 6059, 4298, 4887, 5366, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
 // Module 12535 (UserProfilePrivacyNotice)

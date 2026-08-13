@@ -1,10 +1,10 @@
-// Module ID: 10835
-// Function ID: 10836
+// Module ID: 10749
+// Function ID: 10750
 // Name: FocusedControlsExpanded
-// Dependencies: [32, 19, 17, 9785, 9786, 676, 21, 500, 4344, 712, 5275, 1297, 1628, 4083, 10836, 691, 1236, 5751, 4166, 1377, 4345, 5466, 9988, 1493, 10727, 1231, 4072, 4744, 1363, 10360, 2]
+// Dependencies: [32, 19, 17, 9789, 9790, 676, 21, 500, 4342, 712, 5276, 1297, 1628, 4083, 10750, 691, 1236, 5752, 4164, 1377, 4343, 5467, 9986, 1493, 10641, 1231, 4072, 4745, 1363, 10272, 2]
 // Exports: default
 
-// Module 10835 (FocusedControlsExpanded)
+// Module 10749 (FocusedControlsExpanded)
 import _slicedToArray from "_slicedToArray";
 import DismissibleContent from "DismissibleContent";
 import get_ActivityIndicator from "ActionSheetHeaderBar";
@@ -70,7 +70,7 @@ function FocusedControlsExpanded(children) {
 function FocusedControlsBottomDrawerTooltip(positionY) {
   positionY = positionY.positionY;
   const tmp = createCacheKey();
-  let obj = positionY(10836);
+  let obj = positionY(10750);
   const canShowTooltip = obj.useCanShowTooltip(positionY(691).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   positionY(4083);
   const fn = function o() {
@@ -115,7 +115,7 @@ function FocusedControlsAboveActionBarView(positionY) {
   obj = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: null };
   const obj1 = { style: tmp.aboveActionBarContainer, children: null };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const items = [callback2(FocusedControlsBottomDrawerTooltip, { positionY }), callback2(positionY(5751).ActionSheetHeaderBar, {}), ];
+  const items = [callback2(FocusedControlsBottomDrawerTooltip, { positionY }), callback2(positionY(5752).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   if (tmp4Result) {
     const obj2 = { style: null, children: null };
@@ -230,7 +230,7 @@ class FocusedControlsBottomDrawer {
     height = undefined;
     c11 = undefined;
     c12 = undefined;
-    f108913 = undefined;
+    f108887 = undefined;
     handleOpen = function handleOpen() {
       if (!first) {
         if (onDrawerOpen != null) {
@@ -286,7 +286,7 @@ class FocusedControlsBottomDrawer {
     callback = onClose.useCallback(() => {
       const result = reveal(sum3[18]).UNSAFE_markDismissibleContentAsDismissed(reveal(sum3[19]).DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE);
     }, []);
-    f108913 = callback;
+    f108887 = callback;
     items = [, , ];
     items[0] = sharedValue;
     items[1] = derivedValue;
@@ -297,7 +297,7 @@ class FocusedControlsBottomDrawer {
       if (!tmp) {
         num = -derivedValue.get();
       }
-      const result = first1.set(require(4345) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(num, obj3));
+      const result = first1.set(require(4343) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(num, obj3));
       if (tmp) {
         outer2_9();
         callback();
@@ -534,7 +534,7 @@ class FocusedControlsBottomDrawer {
     }, items5);
     tmp19Result7 = require("ManaContext");
     theme = tmp19Result7.useThemeContext().theme;
-    tmp40 = f108913;
+    tmp40 = f108887;
     obj3 = { style: animatedStyle, pointerEvents: "box-none", children: null };
     obj4 = { gesture: tmp31[1], children: null };
     tmp41 = handleOpen;
@@ -636,12 +636,12 @@ export default function FocusedControlsBottomControls(omitPTT) {
   let tmp4Result = null;
   if (!flag) {
     obj = { look: null, style: null, sendCallback: null, stopCallback: null };
-    obj[0] = _require(10360).CallPTTButtonLooks.BLUR;
+    obj[0] = _require(10272).CallPTTButtonLooks.BLUR;
     obj[1] = tmp.ptbButton;
     obj[2] = closure_8;
     obj[3] = closure_9;
-    tmp4Result = tmp4(importDefault(10360), obj);
-    const tmp11 = importDefault(10360);
+    tmp4Result = tmp4(importDefault(10272), obj);
+    const tmp11 = importDefault(10272);
   }
   items[2] = tmp4Result;
   obj[1] = items;

@@ -1,7 +1,7 @@
 // Module ID: 12854
 // Function ID: 12855
 // Name: getTopPatternSource
-// Dependencies: [19, 17, 21, 7664, 12855, 12856, 12857, 1363, 2]
+// Dependencies: [19, 17, 21, 7668, 12855, 12856, 12857, 1363, 2]
 // Exports: TopPattern, getTopPatternSource, useTopPatternSource
 
 // Module 12854 (getTopPatternSource)
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/TopPattern.tsx");
 
 export const getTopPatternSource = function getTopPatternSource(theme) {
-  let obj = require(7664) /* getIllustrationSource */;
+  let obj = require(7668) /* getIllustrationSource */;
   obj = {
     dark() {
       return callback(12855);
@@ -40,7 +40,7 @@ export const useTopPatternSource = function useTopPatternSource() {
       return callback(12857);
     }
   };
-  return require(7664) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const TopPattern = function TopPattern(arg0) {
   let obj = require(1363) /* AccessibilityAnnouncer */;
@@ -56,7 +56,7 @@ export const TopPattern = function TopPattern(arg0) {
     }
   };
   obj = {};
-  const illustrationSource = require(7664) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = require(7668) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

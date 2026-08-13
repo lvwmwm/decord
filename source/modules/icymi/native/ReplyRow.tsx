@@ -1,10 +1,10 @@
-// Module ID: 15697
-// Function ID: 15698
+// Module ID: 15706
+// Function ID: 15707
 // Name: ContentInventoryReplyRow
-// Dependencies: [19, 17, 21, 15640, 712, 4886, 4340, 7696, 2]
+// Dependencies: [19, 17, 21, 15649, 712, 4887, 4338, 7700, 2]
 // Exports: ContentInventoryReplyRow
 
-// Module 15697 (ContentInventoryReplyRow)
+// Module 15706 (ContentInventoryReplyRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -44,9 +44,9 @@ export const ContentInventoryReplyRow = function ContentInventoryReplyRow(onPres
   let obj = { style: tmp.replyContainer, children: null };
   obj = { accessibilityRole: "button", onPress: onPress.onReply, style: tmp.contentInventoryPressable, accessibilityLabel: reactText, pointerEvents: "box-only", children: null };
   obj = { style: tmp.contentInventoryContainer, children: null };
-  const items = [callback(require(4340) /* Text */.Text, { variant: "text-md/medium", color: "input-placeholder-text-default", lineClamp: 1, style: tmp.contentInventoryText, children: reactText }), callback(require(7696) /* ReactionIcon */.ReactionIcon, { style: tmp.icon, size: "custom" })];
+  const items = [callback(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "input-placeholder-text-default", lineClamp: 1, style: tmp.contentInventoryText, children: reactText }), callback(require(7700) /* ReactionIcon */.ReactionIcon, { style: tmp.icon, size: "custom" })];
   obj[1] = items;
   obj[5] = callback2(View, obj);
-  obj[1] = callback(require(4886) /* PressableBase */.PressableOpacity, obj);
+  obj[1] = callback(require(4887) /* PressableBase */.PressableOpacity, obj);
   return callback(View, obj);
 };

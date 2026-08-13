@@ -1,7 +1,7 @@
 // Module ID: 13033
 // Function ID: 13034
 // Name: truncateOldMessageData
-// Dependencies: [1391, 4167, 1398, 11, 12, 589, 709, 2]
+// Dependencies: [1391, 4165, 1398, 11, 12, 589, 709, 2]
 
 // Module 13033 (truncateOldMessageData)
 import ensureGuildLoaded from "ensureGuildLoaded";

@@ -1,7 +1,7 @@
 // Module ID: 13023
 // Function ID: 13024
 // Name: showReviewRequestModal
-// Dependencies: [4258, 1212, 1979, 676, 13024, 4419, 13025, 4200, 4199, 6045, 13027, 691, 595, 698, 589, 709, 2]
+// Dependencies: [4256, 1212, 1979, 676, 13024, 4420, 13025, 4198, 4197, 6047, 13027, 691, 595, 698, 589, 709, 2]
 
 // Module 13023 (showReviewRequestModal)
 import getHash from "getHash";
@@ -12,13 +12,13 @@ import { Store } from "initialize";
 
 const require = arg1;
 function showReviewRequestModal() {
-  const rootNavigationRef = require(4200) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4198) /* getRootNavigationRef */.getRootNavigationRef();
   let tmp3 = null != rootNavigationRef && rootNavigationRef.isReady();
   if (tmp3) {
-    let tmpResult = tmp(4199);
+    let tmpResult = tmp(4197);
     tmp3 = null != tmpResult.coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
   }
-  tmpResult = tmp(6045);
+  tmpResult = tmp(6047);
   const keyboardIsOpen = tmpResult.getKeyboardIsOpen();
   const tmp5 = null != voiceChannelId.getVoiceChannelId();
   if (tmp3) {
@@ -34,7 +34,7 @@ function showReviewRequestModal() {
       }
     }
   }
-  const obj = require(4200) /* getRootNavigationRef */;
+  const obj = require(4198) /* getRootNavigationRef */;
   importDefault(698).track(AnalyticEvents.REVIEW_REQUEST_DEFERRED, { is_keyboard_open: keyboardIsOpen, is_in_voice: tmp5, is_viewing_chat: tmp3 });
   if (-1 !== timeout) {
     const _clearTimeout = clearTimeout;
@@ -56,7 +56,7 @@ function showReviewRequestModal() {
   }
   if (tmp18) {
     const _setTimeout = setTimeout;
-    timeout = setTimeout(showReviewRequestModal, tmp(4419).MS_PER_MINUTE);
+    timeout = setTimeout(showReviewRequestModal, tmp(4420).MS_PER_MINUTE);
   }
 }
 function handleConnectionClosedOrInterrupted() {
@@ -85,7 +85,7 @@ const requestReviewStore = new RequestReviewStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     guilds = guilds.guilds;
     let obj = require(13027) /* getFirstInstallTimeMillis */;
-    obj = { from: "authed", unit: require(4419) /* sleep */.TimeUnits.DAYS };
+    obj = { from: "authed", unit: require(4420) /* sleep */.TimeUnits.DAYS };
     let tmp3 = obj.getFirstInstallTimeElapsed(obj) >= 10;
     const someResult = guilds.some((member_count) => member_count.member_count >= 5);
     if (revision.revision < 1) {
@@ -126,7 +126,7 @@ const requestReviewStore = new RequestReviewStore(require("dispatcher"), {
     }
     if (tmp13) {
       const _setTimeout = setTimeout;
-      timeout = setTimeout(showReviewRequestModal, tmp(4419).MS_PER_MINUTE);
+      timeout = setTimeout(showReviewRequestModal, tmp(4420).MS_PER_MINUTE);
     }
   },
   CONNECTION_RESUMED: function handleConnectionResumed() {
@@ -150,7 +150,7 @@ const requestReviewStore = new RequestReviewStore(require("dispatcher"), {
     }
     if (tmp6) {
       const _setTimeout = setTimeout;
-      timeout = setTimeout(showReviewRequestModal, require(4419) /* sleep */.MS_PER_MINUTE);
+      timeout = setTimeout(showReviewRequestModal, require(4420) /* sleep */.MS_PER_MINUTE);
     }
   },
   CONNECTION_CLOSED: handleConnectionClosedOrInterrupted,
@@ -177,7 +177,7 @@ const requestReviewStore = new RequestReviewStore(require("dispatcher"), {
     }
     if (tmp6) {
       const _setTimeout = setTimeout;
-      timeout = setTimeout(showReviewRequestModal, require(4419) /* sleep */.MS_PER_MINUTE);
+      timeout = setTimeout(showReviewRequestModal, require(4420) /* sleep */.MS_PER_MINUTE);
     }
   },
   APP_STATE_UPDATE: function handleAppStateUpdate(state) {
@@ -202,7 +202,7 @@ const requestReviewStore = new RequestReviewStore(require("dispatcher"), {
       }
       if (tmp8) {
         const _setTimeout = setTimeout;
-        timeout = setTimeout(showReviewRequestModal, tmp(4419).MS_PER_MINUTE);
+        timeout = setTimeout(showReviewRequestModal, tmp(4420).MS_PER_MINUTE);
       }
     } else if (-1 !== timeout) {
       const _clearTimeout2 = clearTimeout;

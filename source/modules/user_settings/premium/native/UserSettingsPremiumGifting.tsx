@@ -1,7 +1,7 @@
 // Module ID: 12889
 // Function ID: 12890
 // Name: GiftingSectionTitle
-// Dependencies: [32, 19, 17, 8835, 6902, 676, 1924, 21, 4344, 712, 1367, 5806, 4340, 6918, 1499, 1628, 589, 12, 4578, 6922, 12803, 9623, 8831, 12756, 709, 6903, 6924, 8838, 7634, 6054, 8668, 12890, 1236, 12891, 12897, 12901, 12904, 12906, 7446, 8559, 2399, 12907, 5862, 2]
+// Dependencies: [32, 19, 17, 8839, 6908, 676, 1924, 21, 4342, 712, 1367, 5807, 4338, 6924, 1499, 1628, 589, 12, 4579, 6928, 12803, 9627, 8835, 12756, 709, 6909, 6930, 8842, 7638, 6056, 8672, 12890, 1236, 12891, 12897, 12901, 12904, 12906, 7450, 8563, 2399, 12907, 5863, 2]
 
 // Module 12889 (GiftingSectionTitle)
 import getSystemLocale from "getSystemLocale";
@@ -32,12 +32,12 @@ function GiftingSectionTitle(title) {
   if (importDefault(1367)("UserSettingsPremiumGifting")) {
     let obj = { title: null };
     obj[0] = title;
-    let tmp3Result = tmp3(tmp4(5806).TableRowGroupTitle, obj);
+    let tmp3Result = tmp3(tmp4(5807).TableRowGroupTitle, obj);
   } else {
     obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: null };
     obj[0] = tmp.title;
     obj[4] = title;
-    tmp3Result = tmp3(tmp4(4340).Text, obj);
+    tmp3Result = tmp3(tmp4(4338).Text, obj);
   }
   return tmp3Result;
 }

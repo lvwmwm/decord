@@ -1,10 +1,10 @@
-// Module ID: 9080
-// Function ID: 9081
+// Module ID: 9084
+// Function ID: 9085
 // Name: EditGuildScheduledEventResetWarningAlert
-// Dependencies: [19, 21, 4772, 1236, 2]
+// Dependencies: [19, 21, 4773, 1236, 2]
 // Exports: default
 
-// Module 9080 (EditGuildScheduledEventResetWarningAlert)
+// Module 9084 (EditGuildScheduledEventResetWarningAlert)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -22,8 +22,8 @@ export default function EditGuildScheduledEventResetWarningAlert(arg0) {
   obj[3] = intl2.format(require(1236) /* getSystemLocale */.t.RWBa5X, {});
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
-  obj[5] = importDefault(4772).Colors.GREEN;
+  obj[5] = importDefault(4773).Colors.GREEN;
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj[6] = intl4.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
-  return jsx(importDefault(4772), { onClose, onConfirm, title: null, body: null, confirmText: null, confirmColor: null, cancelText: null });
+  return jsx(importDefault(4773), { onClose, onConfirm, title: null, body: null, confirmText: null, confirmColor: null, cancelText: null });
 };

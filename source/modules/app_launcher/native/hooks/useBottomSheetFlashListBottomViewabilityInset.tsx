@@ -1,10 +1,10 @@
-// Module ID: 11545
-// Function ID: 11546
+// Module ID: 11541
+// Function ID: 11542
 // Name: useBottomSheetFlashListBottomViewabilityInset
-// Dependencies: [19, 1493, 9594, 11483, 12, 4083, 2]
+// Dependencies: [19, 1493, 9598, 11479, 12, 4083, 2]
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 11545 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 11541 (useBottomSheetFlashListBottomViewabilityInset)
 import noop from "noop";
 
 const require = arg1;
@@ -14,13 +14,13 @@ const result = require("context").fileFinishedImporting("modules/app_launcher/na
 
 export const useBottomSheetFlashListBottomViewabilityInset = function useBottomSheetFlashListBottomViewabilityInset() {
   let obj = bottomVisibilityInsetRef;
-  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(9594).AppLauncherContext);
+  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(9598).AppLauncherContext);
   bottomSheetPosition = undefined;
   if (context != null) {
     bottomSheetPosition = context.bottomSheetPosition;
   }
   const flashListRef = obj.useRef(null);
-  const diff = flashListRef(1493)().height - flashListRef(11483)().maximum;
+  const diff = flashListRef(1493)().height - flashListRef(11479)().maximum;
   const dependencyMap = diff;
   bottomVisibilityInsetRef = obj.useRef(9999);
   const memo = obj.useMemo(() => flashListRef(diff[4]).debounce((current) => {

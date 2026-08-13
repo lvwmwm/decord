@@ -1,9 +1,9 @@
-// Module ID: 5899
-// Function ID: 5900
+// Module ID: 5901
+// Function ID: 5902
 // Name: isGenericIapConnected
-// Dependencies: [589, 12, 5900, 709, 2]
+// Dependencies: [589, 12, 5902, 709, 2]
 
-// Module 5899 (isGenericIapConnected)
+// Module 5901 (isGenericIapConnected)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -22,7 +22,7 @@ prototype["genericProductsLoaded"] = function genericProductsLoaded() {
     tmp = importDefault(12).filter(c3, (identifier) => {
       const GenericProductIds = callback(table[2]).GenericProductIds;
       return GenericProductIds.includes(identifier.identifier);
-    }).length === require(5900) /* SubscriptionPlans */.GenericProductIds.length;
+    }).length === require(5902) /* SubscriptionPlans */.GenericProductIds.length;
     const arr = importDefault(12);
   }
   return tmp;

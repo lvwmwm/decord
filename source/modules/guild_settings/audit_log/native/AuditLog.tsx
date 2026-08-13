@@ -1,9 +1,9 @@
-// Module ID: 16712
-// Function ID: 16713
+// Module ID: 16723
+// Function ID: 16724
 // Name: ApplicationHook
-// Dependencies: [19, 17, 1302, 1930, 3998, 1922, 676, 21, 4344, 712, 1438, 1435, 5040, 1363, 5773, 4340, 4072, 16695, 1236, 4189, 1297, 1430, 4534, 4526, 3943, 1370, 688, 10049, 5399, 5415, 16704, 4886, 4312, 8828, 13977, 589, 2]
+// Dependencies: [19, 17, 1302, 1930, 3998, 1922, 676, 21, 4342, 712, 1438, 1435, 5041, 1363, 5774, 4338, 4072, 16706, 1236, 4187, 1297, 1430, 4535, 4527, 3943, 1370, 688, 10047, 5400, 5416, 16715, 4887, 4310, 8832, 13981, 589, 2]
 
-// Module 16712 (ApplicationHook)
+// Module 16723 (ApplicationHook)
 import importAllResult from "nameFromUser";
 import { View } from "getPermissionChanges";
 import importDefaultResult from "handleThemeChange";
@@ -24,13 +24,13 @@ let map1;
 let unpackModuleId;
 let require = arg1;
 function ApplicationHook(applicationId) {
-  let obj = require(5773) /* useGetOrFetchApplications */;
+  let obj = require(5774) /* useGetOrFetchApplications */;
   const getOrFetchApplication = obj.useGetOrFetchApplication(applicationId.applicationId);
   let tmp4 = null;
   if (null != getOrFetchApplication) {
     obj = { variant: "text-md/normal", color: "text-default", children: null };
     obj[2] = getOrFetchApplication.name;
-    tmp4 = callback(require(4340) /* Text */.Text, obj);
+    tmp4 = callback(require(4338) /* Text */.Text, obj);
   }
   return tmp4;
 }
@@ -463,8 +463,8 @@ prototype["renderChangeSummary"] = function renderChangeSummary() {
   const self = this;
   let renderChangeDetailsResult = null;
   if (this.props.expanded) {
-    renderChangeDetailsResult = self.renderChangeDetails(importAll(16695).getChangeStrings(tmp));
-    const obj = importAll(16695);
+    renderChangeDetailsResult = self.renderChangeDetails(importAll(16706).getChangeStrings(tmp));
+    const obj = importAll(16706);
   }
   return renderChangeDetailsResult;
 };
@@ -481,7 +481,7 @@ prototype["render"] = function render() {
   ({ log, expanded, guildId, channel: require } = props);
   const user = log.user;
   ({ containerStyle, theme } = props);
-  let obj = importAll(16695);
+  let obj = importAll(16706);
   const checkChangesToRenderResult = obj.checkChangesToRender(log);
   const timestampStart = log.timestampStart;
   const calendarResult = timestampStart.calendar();
@@ -525,7 +525,7 @@ prototype["render"] = function render() {
   obj1[3] = str3;
   obj1[4] = onHeaderClick;
   const obj2 = { style: tmp.rowContainer, children: null };
-  const items2 = [callback(user(16704), { action: log.action }), , , ];
+  const items2 = [callback(user(16715), { action: log.action }), , , ];
   const obj4 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, onPress: null, children: null };
   const intl = tmp10(1236).intl;
   obj4[1] = intl.string(tmp10(1236).t.iXAna6);
@@ -550,7 +550,7 @@ prototype["render"] = function render() {
       if (log.action !== tmp21.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
         if (log.action !== tmp21.AUTO_MODERATION_QUARANTINE_USER) {
           if (null != log.options.integration_type) {
-            const value = tmp18(5040).get(log.options.integration_type);
+            const value = tmp18(5041).get(log.options.integration_type);
             if (null != value) {
               let tmp9Result = tmp9(1363);
               const icon = value.icon;
@@ -558,7 +558,7 @@ prototype["render"] = function render() {
               let source = tmp9Result.makeSource(tmp9Result.isThemeDark(theme) ? icon.darkPNG : icon.lightPNG);
               const tmp25 = tmp9Result.isThemeDark(theme) ? icon.darkPNG : icon.lightPNG;
             }
-            const tmp18Result = tmp18(5040);
+            const tmp18Result = tmp18(5041);
           }
           if (null != guildId) {
             const user2 = log.user;
@@ -572,7 +572,7 @@ prototype["render"] = function render() {
         obj5[1] = source;
         obj5[2] = tmp10(1297).AvatarSizes.SMALL;
         obj4[4] = tmp17(tmp20, obj5);
-        items2[1] = tmp17(tmp10(4886).PressableOpacity, obj4);
+        items2[1] = tmp17(tmp10(4887).PressableOpacity, obj4);
         const obj6 = { accessibilityRole: "button", accessibilityState: null, onPress: null, style: null, disabled: null, children: null };
         const obj7 = { expanded: null, disabled: null };
         obj7[0] = expanded;
@@ -583,14 +583,14 @@ prototype["render"] = function render() {
         obj6[4] = !checkChangesToRenderResult;
         const items3 = [self.renderTitle(), tmp8];
         obj6[5] = items3;
-        items2[2] = tmp15(tmp10(4886).PressableOpacity, obj6);
+        items2[2] = tmp15(tmp10(4887).PressableOpacity, obj6);
         let tmp17Result = null;
         if (checkChangesToRenderResult) {
           const obj8 = { style: null, size: null, source: null };
           const items4 = [tmp.arrow, rotate90];
           obj8[0] = items4;
           obj8[1] = tmp10(1297).Icon.Sizes.CUSTOM;
-          obj8[2] = tmp18(13977);
+          obj8[2] = tmp18(13981);
           tmp17Result = tmp17(tmp10(1297).Icon, obj8);
         }
         items2[3] = tmp17Result;
@@ -602,7 +602,7 @@ prototype["render"] = function render() {
         }
         items5[1] = renderChangeSummaryResult;
         obj1[5] = items5;
-        return tmp15(tmp10(5415).Card, obj1);
+        return tmp15(tmp10(5416).Card, obj1);
       }
     }
   }

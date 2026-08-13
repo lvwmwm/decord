@@ -1,10 +1,10 @@
-// Module ID: 10792
-// Function ID: 10793
+// Module ID: 10706
+// Function ID: 10707
 // Name: stripSensitiveLoggingData
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 10792 (stripSensitiveLoggingData)
+// Module 10706 (stripSensitiveLoggingData)
 import { RPCCommands } from "ME";
 
 let c1 = "<removed>";

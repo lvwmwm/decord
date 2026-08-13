@@ -1,9 +1,9 @@
-// Module ID: 14963
-// Function ID: 14964
+// Module ID: 14972
+// Function ID: 14973
 // Name: toggle
-// Dependencies: [14952, 8123, 4034, 6054, 10493, 1236, 2]
+// Dependencies: [14961, 8127, 4034, 6056, 10407, 1236, 2]
 
-// Module 14963 (toggle)
+// Module 14972 (toggle)
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import createToggle from "createToggle";
 
@@ -27,7 +27,7 @@ const toggle = createToggle.createToggle({
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityRestrictedGuilds = require(6054) /* getSanitizedRestrictedGuilds */.getSanitizedActivityRestrictedGuilds();
+    const sanitizedActivityRestrictedGuilds = require(6056) /* getSanitizedRestrictedGuilds */.getSanitizedActivityRestrictedGuilds();
     if (arg0) {
       sanitizedActivityRestrictedGuilds.delete(tmp);
     } else {
@@ -55,7 +55,7 @@ const obj = {
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityRestrictedGuilds = require(6054) /* getSanitizedRestrictedGuilds */.getSanitizedActivityRestrictedGuilds();
+    const sanitizedActivityRestrictedGuilds = require(6056) /* getSanitizedRestrictedGuilds */.getSanitizedActivityRestrictedGuilds();
     if (arg0) {
       sanitizedActivityRestrictedGuilds.delete(tmp);
     } else {

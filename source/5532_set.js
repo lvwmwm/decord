@@ -4,4 +4,4 @@
 // Dependencies: []
 
 // Module 5532 (set)
-arg5.LongPressNativeProperties = new Set(["minDurationMs", "maxDist", "numberOfPointers"]);
+arg5.HoverNativeProperties = new Set(["hoverEffect"]);

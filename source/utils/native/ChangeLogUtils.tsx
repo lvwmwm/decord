@@ -1,9 +1,9 @@
-// Module ID: 8235
-// Function ID: 8236
+// Module ID: 8239
+// Function ID: 8240
 // Name: ChangeLogLink
-// Dependencies: [19, 17, 21, 4344, 712, 5198, 4773, 4340, 8236, 8237, 4060, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5199, 4774, 4338, 8240, 8241, 4060, 2]
 
-// Module 8235 (ChangeLogLink)
+// Module 8239 (ChangeLogLink)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -86,7 +86,7 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = require(4340) /* Text */.Text;
+    Paragraph = require(4338) /* Text */.Text;
   }
   const tmp = createCacheKey();
   return <Paragraph key={state.key} variant="text-sm/normal" style={createCacheKey().text}>{output(node.content, state)}</Paragraph>;
@@ -96,7 +96,7 @@ function ChangeLogStrong(arg0) {
   let output;
   let state;
   ({ node, output, state } = arg0);
-  let obj = require(8236) /* apexExperiment */;
+  let obj = require(8240) /* apexExperiment */;
   if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
     let str;
     if (state != null) {
@@ -107,10 +107,10 @@ function ChangeLogStrong(arg0) {
     }
     obj = { variant: "experimental/body-sm/semibold", color: null, children: null };
     obj[1] = str;
-    obj[2] = tmp(8237).smartOutput(node, output, state);
-    let reactResult = jsx(tmp(4340).Text, { variant: "experimental/body-sm/semibold", color: null, children: null });
+    obj[2] = tmp(8241).smartOutput(node, output, state);
+    let reactResult = jsx(tmp(4338).Text, { variant: "experimental/body-sm/semibold", color: null, children: null });
     const tmp5 = jsx;
-    const tmpResult = tmp(8237);
+    const tmpResult = tmp(8241);
   } else {
     const strong = rules.strong;
     reactResult = strong.react(node, output, state);
@@ -136,7 +136,7 @@ function ChangeLogBlockQuote(state) {
   let obj = { style: tmp.container, children: null };
   obj = { variant: "text-sm/normal", style: tmp.text, children: null };
   obj[2] = output(node.content, state);
-  obj[1] = jsx(require(4340) /* Text */.Text, { variant: "text-sm/normal", style: tmp.text, children: null });
+  obj[1] = jsx(require(4338) /* Text */.Text, { variant: "text-sm/normal", style: tmp.text, children: null });
   return <closure_3 key={state.key} variant="text-sm/normal" style={tmp.text}>{null}</closure_3>;
 }
 ({ View: c3, Image: c4 } = get_ActivityIndicator);

@@ -1,10 +1,10 @@
-// Module ID: 14129
-// Function ID: 14130
+// Module ID: 14138
+// Function ID: 14139
 // Name: SensitiveContentFiltersTeenNotice
-// Dependencies: [19, 7820, 21, 5956, 14059, 1236, 4058, 1993, 7838, 7840, 2]
+// Dependencies: [19, 7824, 21, 5958, 14068, 1236, 4058, 1993, 7842, 7844, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 14129 (SensitiveContentFiltersTeenNotice)
+// Module 14138 (SensitiveContentFiltersTeenNotice)
 import "noop";
 import { SafetySettingsNoticeType } from "SafetyToastType";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const require = arg1;
 let result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersNotices.tsx");
 
 export const SensitiveContentFiltersTeenNotice = function SensitiveContentFiltersTeenNotice() {
-  let obj = _require(5956);
+  let obj = _require(5958);
   _require = obj.useSensitiveContentFilterHelpArticle();
   obj = { label: null, labelHook: null, noticeType: null };
   obj[0] = _require(1236).t.EUo0yj;
@@ -22,16 +22,16 @@ export const SensitiveContentFiltersTeenNotice = function SensitiveContentFilter
     obj.openURL(outer1_1(outer1_2[7]).getArticleURL(closure_0));
   };
   obj[2] = SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE;
-  return jsx(importDefault(14059), { label: null, labelHook: null, noticeType: null });
+  return jsx(importDefault(14068), { label: null, labelHook: null, noticeType: null });
 };
 export const SensitiveContentFiltersAgeVerificationNotice = function SensitiveContentFiltersAgeVerificationNotice() {
   let obj = { label: null, labelHook: null, noticeType: null };
   obj[0] = require(1236) /* getSystemLocale */.t.OX4ybh;
   obj[1] = function labelHook() {
-    let obj = callback2(7838);
-    obj = { entryPoint: callback(7840).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+    let obj = callback2(7842);
+    obj = { entryPoint: callback(7844).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   };
   obj[2] = SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE;
-  return jsx(importDefault(14059), { label: null, labelHook: null, noticeType: null });
+  return jsx(importDefault(14068), { label: null, labelHook: null, noticeType: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 7326
-// Function ID: 7327
+// Module ID: 7331
+// Function ID: 7332
 // Name: FadeOutLottieAnimation
-// Dependencies: [32, 19, 4336, 21, 4344, 589, 4083, 4345, 5758, 2]
+// Dependencies: [32, 19, 4334, 21, 4342, 589, 4083, 4343, 5759, 2]
 // Exports: default
 
-// Module 7326 (FadeOutLottieAnimation)
+// Module 7331 (FadeOutLottieAnimation)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -76,7 +76,7 @@ export default function FadeOutLottieAnimation(onComplete) {
       return;
     }
   }
-  obj = { isAnimationComplete: first, isFadeOut: first1, withTiming: onComplete(4345).withTiming, runOnJS: onComplete(4083).runOnJS, setIsFadeOut: tmp7 };
+  obj = { isAnimationComplete: first, isFadeOut: first1, withTiming: onComplete(4343).withTiming, runOnJS: onComplete(4083).runOnJS, setIsFadeOut: tmp7 };
   T.__closure = obj;
   T.__workletHash = 1137618554665;
   T.__initData = closure_8;
@@ -97,9 +97,9 @@ export default function FadeOutLottieAnimation(onComplete) {
       dependencyMap(true);
     };
     const merged1 = Object.assign(merged);
-    obj[1] = jsx(first(5758), { style: null, speed: null, onAnimationFinish: null });
+    obj[1] = jsx(first(5759), { style: null, speed: null, onAnimationFinish: null });
     let tmp14Result = tmp14(first(4083).View, obj);
-    const tmp16 = first(5758);
+    const tmp16 = first(5759);
   } else {
     tmp14Result = null;
   }

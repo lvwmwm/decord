@@ -1,10 +1,10 @@
-// Module ID: 4672
-// Function ID: 4673
+// Module ID: 4673
+// Function ID: 4674
 // Name: getPurchaseToken
 // Dependencies: [5, 687, 595, 514, 2]
 // Exports: getPurchaseTokenHash
 
-// Module 4672 (getPurchaseToken)
+// Module 4673 (getPurchaseToken)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;

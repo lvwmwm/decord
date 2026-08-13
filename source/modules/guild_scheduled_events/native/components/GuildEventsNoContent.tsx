@@ -1,10 +1,10 @@
-// Module ID: 9087
-// Function ID: 9088
+// Module ID: 9091
+// Function ID: 9092
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 3989, 676, 505, 21, 4344, 5275, 712, 589, 7828, 9088, 9089, 4340, 1236, 9066, 2]
+// Dependencies: [19, 17, 3989, 676, 505, 21, 4342, 5276, 712, 589, 7832, 9092, 9093, 4338, 1236, 9070, 2]
 // Exports: default
 
-// Module 9087 (GuildEventsNoContent)
+// Module 9091 (GuildEventsNoContent)
 import "noop";
 import { View } from "get ActivityIndicator";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -40,17 +40,17 @@ export default function GuildEventsNoContent(guild) {
   let stateFromStores = obj.useStateFromStores(items, () => outer1_4.can(outer1_6.MANAGE_ROLES, guild), items1);
   obj = { style: tmp.container, children: null };
   obj = { icon: null, IconComponent: null };
-  obj[0] = onClose(9088);
-  obj[1] = guild(9089).CalendarIcon;
-  const items2 = [callback(onClose(7828), obj), , , ];
+  obj[0] = onClose(9092);
+  obj[1] = guild(9093).CalendarIcon;
+  const items2 = [callback(onClose(7832), obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = guild(1236).intl;
   obj1[4] = intl.string(guild(1236).t["WgZ+3D"]);
-  items2[1] = callback(guild(4340).Text, obj1);
+  items2[1] = callback(guild(4338).Text, obj1);
   const obj2 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = guild(1236).intl;
   obj2[3] = intl2.string(guild(1236).t["v/S/PG"]);
-  items2[2] = callback(guild(4340).Text, obj2);
+  items2[2] = callback(guild(4338).Text, obj2);
   if (stateFromStores) {
     const obj3 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
     obj3[0] = tmp.subtitle;
@@ -61,7 +61,7 @@ export default function GuildEventsNoContent(guild) {
       onClose(outer1_2[15]).open(guild.id, outer1_5.ROLES);
     };
     obj3[3] = intl3.format(tmp2(1236).t["K+DH2o"], obj4);
-    stateFromStores = callback(tmp2(4340).Text, obj3);
+    stateFromStores = callback(tmp2(4338).Text, obj3);
   }
   items2[3] = stateFromStores;
   obj[1] = items2;

@@ -1,10 +1,10 @@
-// Module ID: 11507
-// Function ID: 11508
+// Module ID: 11503
+// Function ID: 11504
 // Name: SubmittingOverlay
-// Dependencies: [21, 4344, 712, 4083, 4753, 4757, 4769, 2]
+// Dependencies: [21, 4342, 712, 4083, 4754, 4758, 4770, 2]
 // Exports: SubmittingOverlay
 
-// Module 11507 (SubmittingOverlay)
+// Module 11503 (SubmittingOverlay)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -31,7 +31,7 @@ export const SubmittingOverlay = function SubmittingOverlay(submitting) {
       return obj;
     }
   }
-  obj = { withSpring: submitting(4753).withSpring, submitting, SUBTLE_SPRING: submitting(4757).SUBTLE_SPRING };
+  obj = { withSpring: submitting(4754).withSpring, submitting, SUBTLE_SPRING: submitting(4758).SUBTLE_SPRING };
   S.__closure = obj;
   S.__workletHash = 492443733468;
   S.__initData = closure_5;
@@ -39,7 +39,7 @@ export const SubmittingOverlay = function SubmittingOverlay(submitting) {
   obj = { style: items, children: null };
   items = [submitting.style, callback().ellipsis, animatedStyle];
   if (submitting) {
-    submitting = tmp5(submitting(4769).Ellipsis, { variant: "active", size: "md" });
+    submitting = tmp5(submitting(4770).Ellipsis, { variant: "active", size: "md" });
   }
   obj[1] = submitting;
   return jsx(importDefault(4083).View, { style: items, children: null });

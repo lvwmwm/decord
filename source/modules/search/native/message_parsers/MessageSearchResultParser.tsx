@@ -1,9 +1,9 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15872
+// Function ID: 15873
 // Name: prototype
-// Dependencies: [3999, 8442, 15864, 11772, 15865, 12, 2]
+// Dependencies: [3999, 8446, 15873, 11770, 15874, 12, 2]
 
-// Module 15863 (prototype)
+// Module 15872 (prototype)
 import hasFlag from "hasFlag";
 import { EMBED_TYPES_WITHOUT_DESCRIPTION as closure_3 } from "MessageEmbedTypes";
 
@@ -108,11 +108,11 @@ const prototype = function SearchResultMessageParser(searchQueryString, lineClam
     }
     return content;
   };
-  let obj = require(11772) /* SearchTokenTypes */;
-  const tokenizeQueryResult = require(11772) /* SearchTokenTypes */.tokenizeQuery(searchQueryString);
-  const searchQueryFromTokens = require(11772) /* SearchTokenTypes */.getSearchQueryFromTokens(tokenizeQueryResult);
-  const obj2 = require(11772) /* SearchTokenTypes */;
-  const str = require(11772) /* SearchTokenTypes */.getQueryContentString(searchQueryFromTokens);
+  let obj = require(11770) /* SearchTokenTypes */;
+  const tokenizeQueryResult = require(11770) /* SearchTokenTypes */.tokenizeQuery(searchQueryString);
+  const searchQueryFromTokens = require(11770) /* SearchTokenTypes */.getSearchQueryFromTokens(tokenizeQueryResult);
+  const obj2 = require(11770) /* SearchTokenTypes */;
+  const str = require(11770) /* SearchTokenTypes */.getQueryContentString(searchQueryFromTokens);
   let str2;
   if (str != null) {
     str2 = str.trim();

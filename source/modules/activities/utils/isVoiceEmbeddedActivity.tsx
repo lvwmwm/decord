@@ -1,10 +1,10 @@
-// Module ID: 10452
-// Function ID: 10453
+// Module ID: 10366
+// Function ID: 10367
 // Name: isVoiceEmbeddedActivity
-// Dependencies: [1218, 1391, 1979, 4360, 692, 2]
+// Dependencies: [1218, 1391, 1979, 4361, 692, 2]
 // Exports: default
 
-// Module 10452 (isVoiceEmbeddedActivity)
+// Module 10366 (isVoiceEmbeddedActivity)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";

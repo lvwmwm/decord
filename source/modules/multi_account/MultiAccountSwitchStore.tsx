@@ -1,7 +1,7 @@
 // Module ID: 13046
 // Function ID: 13047
 // Name: initialize
-// Dependencies: [11842, 676, 3, 15, 707, 698, 589, 709, 2]
+// Dependencies: [11840, 676, 3, 15, 707, 698, 589, 709, 2]
 
 // Module 13046 (initialize)
 import initialize from "initialize";

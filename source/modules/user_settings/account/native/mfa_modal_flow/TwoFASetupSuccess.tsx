@@ -1,10 +1,10 @@
-// Module ID: 14103
-// Function ID: 14104
+// Module ID: 14112
+// Function ID: 14113
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 4344, 712, 5870, 1236, 14093, 8521, 14094, 14104, 4340, 1297, 4754, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4342, 712, 5871, 1236, 14102, 8525, 14103, 14113, 4338, 1297, 4755, 2]
 // Exports: default
 
-// Module 14103 (TwoFASetupSuccess)
+// Module 14112 (TwoFASetupSuccess)
 import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -168,12 +168,12 @@ export default function TwoFASetupSuccess() {
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.flex };
   const items = [callback2(closure_6, obj), , , , , , , ];
-  obj = { source: require(14104) /* registerAsset */, style: tmp.image };
+  obj = { source: require(14113) /* registerAsset */, style: tmp.image };
   items[1] = callback2(closure_7, obj);
   let obj1 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.Awk3Gw);
-  items[2] = callback2(require(4340) /* Text */.Text, obj1);
+  items[2] = callback2(require(4338) /* Text */.Text, obj1);
   let obj2 = { style: tmp.successBody, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl2.string(require(1236) /* getSystemLocale */.t["0d1bXM"]);
@@ -192,7 +192,7 @@ export default function TwoFASetupSuccess() {
   } else {
     stringResult = string(t.NIFmCJ);
   }
-  const items1 = [callback2(require(4754) /* Button */.Button, { text: stringResult, onPress: callback, disabled: tmp3, loading: tmp3, grow: true }), ];
+  const items1 = [callback2(require(4755) /* Button */.Button, { text: stringResult, onPress: callback, disabled: tmp3, loading: tmp3, grow: true }), ];
   let tmp7Result = "" !== tmp5;
   if (tmp7Result) {
     const obj6 = { style: null, children: null };
@@ -207,5 +207,5 @@ export default function TwoFASetupSuccess() {
   items[7] = callback2(closure_6, { style: tmp.flex });
   obj[1] = items;
   obj7[0] = closure_9(closure_6, obj);
-  return callback2(require(14094) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj7);
+  return callback2(require(14103) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj7);
 };

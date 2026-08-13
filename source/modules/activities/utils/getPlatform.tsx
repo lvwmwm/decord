@@ -1,10 +1,10 @@
-// Module ID: 10664
-// Function ID: 10665
+// Module ID: 10578
+// Function ID: 10579
 // Name: getPlatform
 // Dependencies: [1954, 2]
 // Exports: default
 
-// Module 10664 (getPlatform)
+// Module 10578 (getPlatform)
 const result = require("set").fileFinishedImporting("modules/activities/utils/getPlatform.tsx");
 
 export default function getPlatform(arg0) {

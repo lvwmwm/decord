@@ -1,9 +1,9 @@
-// Module ID: 9239
-// Function ID: 9240
+// Module ID: 9243
+// Function ID: 9244
 // Name: initialize
-// Dependencies: [9240, 589, 11, 709, 2]
+// Dependencies: [9244, 589, 11, 709, 2]
 
-// Module 9239 (initialize)
+// Module 9243 (initialize)
 import { PersistedStore } from "initialize";
 
 const require = arg1;
@@ -24,7 +24,7 @@ prototype["getState"] = function getState() {
   return { users: closure_3 };
 };
 prototype["getKeyTrustedAt"] = function getKeyTrustedAt(arg0, uint8Array) {
-  const obj = require(9240) /* set */;
+  const obj = require(9244) /* set */;
   let tmp2;
   if (dependencyMap[arg0] != null) {
     tmp2 = tmp[obj.serializeKey(obj, uint8Array)];
@@ -53,8 +53,8 @@ const verifiedKeyStore = new VerifiedKeyStore(require("dispatcher"), {
     }
     dependencyMap[userId] = obj;
     const uint8Array = new Uint8Array(key);
-    const obj2 = require(9240) /* set */;
-    obj[require(9240) /* set */.serializeKey(uint8Array)] = Date.now();
+    const obj2 = require(9244) /* set */;
+    obj[require(9244) /* set */.serializeKey(uint8Array)] = Date.now();
   },
   SECURE_FRAMES_VERIFIED_KEY_DELETE: function handleSecureFramesVerifiedKeyDelete(arg0) {
     let tmp6 = null;

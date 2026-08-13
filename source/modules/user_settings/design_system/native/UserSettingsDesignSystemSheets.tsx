@@ -1,10 +1,10 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 14896
+// Function ID: 14897
 // Name: DemoActionSheet
-// Dependencies: [32, 19, 17, 676, 21, 4344, 5803, 5435, 9021, 5804, 4752, 7831, 5805, 4312, 1367, 4754, 1236, 7774, 6180, 13103, 5415, 4340, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 5804, 5436, 9025, 5805, 4753, 7835, 5806, 4310, 1367, 4755, 1236, 7778, 6182, 13103, 5416, 4338, 2]
 // Exports: default
 
-// Module 14887 (DemoActionSheet)
+// Module 14896 (DemoActionSheet)
 import _slicedToArray from "_slicedToArray";
 import NUFChannelIllustration from "NUFChannelIllustration";
 import { ScrollView } from "PromoSheet";
@@ -44,22 +44,22 @@ function DemoActionSheet() {
     obj = { onPress: null, label: null };
     obj[0] = NOOP;
     obj[1] = tmp12;
-    tmp14Result = tmp14(tmp15(9021).ActionSheetHeaderPressableText, obj);
+    tmp14Result = tmp14(tmp15(9025).ActionSheetHeaderPressableText, obj);
   }
   obj[2] = tmp14Result;
   tmp14Result = tmp2;
   if (tmp2) {
     obj = { onPress: null };
     obj[0] = NOOP;
-    tmp14Result = tmp14(tmp15(5804).ActionSheetCloseButton, obj);
+    tmp14Result = tmp14(tmp15(5805).ActionSheetCloseButton, obj);
   }
-  const obj1 = { header: closure_7(require(5435) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), children: null };
+  const obj1 = { header: closure_7(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), children: null };
   obj[3] = tmp14Result;
   const obj2 = { spacing: 24, children: null };
   const obj3 = { children: null };
   const items = [
-    closure_7(require(7831) /* TextInput */.TextInput, { value: first1, onChange: tmp6[1], label: "Title" }),
-    closure_7(require(7831) /* TextInput */.TextInput, {
+    closure_7(require(7835) /* TextInput */.TextInput, { value: first1, onChange: tmp6[1], label: "Title" }),
+    closure_7(require(7835) /* TextInput */.TextInput, {
       value: tmp9,
       onChange: tmp10,
       label: "Subtitle",
@@ -71,12 +71,12 @@ function DemoActionSheet() {
     })
   ];
   obj3[0] = items;
-  const items1 = [callback3(require(4752) /* Stack */.Stack, obj3), , ];
+  const items1 = [callback3(require(4753) /* Stack */.Stack, obj3), , ];
   const obj5 = { hasIcons: false, children: null };
-  const items2 = [closure_7(require(5805) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: first, onValueChange: tmp4[1], label: "Show Leading" }), closure_7(require(5805) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: tmp2, onValueChange: tmp3, label: "Show Trailing" })];
+  const items2 = [closure_7(require(5806) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: first, onValueChange: tmp4[1], label: "Show Leading" }), closure_7(require(5806) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: tmp2, onValueChange: tmp3, label: "Show Trailing" })];
   obj5[1] = items2;
-  items1[1] = callback3(require(5805) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj5);
-  items1[2] = closure_7(require(7831) /* TextInput */.TextInput, {
+  items1[1] = callback3(require(5806) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj5);
+  items1[2] = closure_7(require(7835) /* TextInput */.TextInput, {
     value: tmp12,
     onChange: tmp13,
     label: "Leading",
@@ -87,11 +87,11 @@ function DemoActionSheet() {
     }
   });
   obj2[1] = items1;
-  obj1[1] = callback3(require(4752) /* Stack */.Stack, obj2);
-  return closure_7(require(5803) /* ActionSheet */.ActionSheet, obj1);
+  obj1[1] = callback3(require(4753) /* Stack */.Stack, obj2);
+  return closure_7(require(5804) /* ActionSheet */.ActionSheet, obj1);
 }
 function showDemoPromoSheet() {
-  importDefault(4312).openLazy(() => Promise.resolve(closure_12), "promo-sheet-demo");
+  importDefault(4310).openLazy(() => Promise.resolve(closure_12), "promo-sheet-demo");
 }
 function DemoPromoSheet() {
   let obj = {
@@ -103,12 +103,12 @@ function DemoPromoSheet() {
   };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.BddRzS);
-  const tmp5 = callback2(require(4754) /* Button */.Button, obj);
+  const tmp5 = callback2(require(4755) /* Button */.Button, obj);
   if (tmp3) {
     obj = { graphic: null, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
     obj = { type: "image", src: null, aspectRatio: "16/9" };
     const obj1 = { uri: null };
-    obj1[0] = tmp(6180);
+    obj1[0] = tmp(6182);
     obj[1] = obj1;
     obj[0] = obj;
     obj[4] = tmp5;
@@ -118,7 +118,7 @@ function DemoPromoSheet() {
     obj2[0] = tmp4(tmp(13103), {});
     obj2[3] = tmp5;
   }
-  return callback2(require(7774) /* PromoSheet */.PromoSheet, obj2);
+  return callback2(require(7778) /* PromoSheet */.PromoSheet, obj2);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ container: { padding: 16, alignItems: "center" } });
@@ -130,9 +130,9 @@ export default function UserSettingsDesignSystemSheets() {
   obj = { children: null };
   const obj1 = { children: null };
   const items = [
-    callback2(require(4340) /* Text */.Text, { variant: "text-lg/bold", children: "Action Sheet with Title Header" }),
-    callback2(require(4340) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "An action sheet with a centered title and subtitle, with optional leading and Trailing elements." }),
-    callback2(require(4754) /* Button */.Button, {
+    callback2(require(4338) /* Text */.Text, { variant: "text-lg/bold", children: "Action Sheet with Title Header" }),
+    callback2(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "An action sheet with a centered title and subtitle, with optional leading and Trailing elements." }),
+    callback2(require(4755) /* Button */.Button, {
       onPress() {
         callback(table[13]).openLazy(() => Promise.resolve(closure_10), "demo-sheet");
       },
@@ -140,15 +140,15 @@ export default function UserSettingsDesignSystemSheets() {
     })
   ];
   obj1[0] = items;
-  obj[0] = callback3(require(4752) /* Stack */.Stack, obj1);
-  const items1 = [callback2(require(5415) /* PressableCard */.Card, obj), ];
+  obj[0] = callback3(require(4753) /* Stack */.Stack, obj1);
+  const items1 = [callback2(require(5416) /* PressableCard */.Card, obj), ];
   const obj3 = { children: null };
   const obj4 = { children: null };
-  const items2 = [callback2(require(4340) /* Text */.Text, { variant: "text-lg/bold", children: "Promo Sheet" }), callback2(require(4340) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "A sheet with an illustration, title, description, and actions." }), callback2(require(4754) /* Button */.Button, { onPress: showDemoPromoSheet, text: "Show Promo Sheet" })];
+  const items2 = [callback2(require(4338) /* Text */.Text, { variant: "text-lg/bold", children: "Promo Sheet" }), callback2(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "A sheet with an illustration, title, description, and actions." }), callback2(require(4755) /* Button */.Button, { onPress: showDemoPromoSheet, text: "Show Promo Sheet" })];
   obj4[0] = items2;
-  obj3[0] = callback3(require(4752) /* Stack */.Stack, obj4);
-  items1[1] = callback2(require(5415) /* PressableCard */.Card, obj3);
+  obj3[0] = callback3(require(4753) /* Stack */.Stack, obj4);
+  items1[1] = callback2(require(5416) /* PressableCard */.Card, obj3);
   obj[0] = items1;
-  obj[1] = callback3(require(4752) /* Stack */.Stack, obj);
+  obj[1] = callback3(require(4753) /* Stack */.Stack, obj);
   return callback2(ScrollView, obj);
 };

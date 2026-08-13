@@ -4,7 +4,7 @@
 // Dependencies: [19]
 
 // Module 1617 (setLastUnhandledLink)
-const obj = { lastUnhandledLink: "Array", setLastUnhandledLink: 0 };
+const obj = { lastUnhandledLink: "Array", setLastUnhandledLink: "Array" };
 obj[1] = function setLastUnhandledLink() {
 
 };

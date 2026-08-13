@@ -1,9 +1,9 @@
-// Module ID: 6722
-// Function ID: 6723
+// Module ID: 6726
+// Function ID: 6727
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6722 (metadata)
+// Module 6726 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyShieldLeft3dIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/5e021cdf6c16d4b547e04cf0d06825442a3428d1388b0d55067acac843431416.png";

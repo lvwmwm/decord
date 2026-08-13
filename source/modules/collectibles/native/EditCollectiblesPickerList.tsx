@@ -1,10 +1,10 @@
-// Module ID: 8343
-// Function ID: 8344
+// Module ID: 8347
+// Function ID: 8348
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 4344, 8330, 4340, 12, 7786, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 8334, 4338, 12, 7790, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 8343 (EditCollectiblesPickerList)
+// Module 8347 (EditCollectiblesPickerList)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -20,7 +20,7 @@ let obj = { list: { flex: 1, marginTop: 12 }, listContent: { paddingBottom: 88 }
 obj = { paddingHorizontal: require("useCollectibleListLayout").GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 };
 obj[3] = obj;
 let closure_7 = createCacheKey.createStyles(obj);
-let closure_8 = importAllResult.memo((children) => <closure_5 style={callback().header}>{jsx(require(4340) /* Text */.Heading, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: arg0.header })}</closure_5>);
+let closure_8 = importAllResult.memo((children) => <closure_5 style={callback().header}>{jsx(require(4338) /* Text */.Heading, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: arg0.header })}</closure_5>);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/EditCollectiblesPickerList.tsx");
 
 export const EditCollectiblesPickerList = function EditCollectiblesPickerList(sections) {

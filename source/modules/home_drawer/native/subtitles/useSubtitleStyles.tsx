@@ -1,9 +1,9 @@
-// Module ID: 15520
-// Function ID: 15521
+// Module ID: 15530
+// Function ID: 15531
 // Name: styles
-// Dependencies: [4344, 2]
+// Dependencies: [4342, 2]
 
-// Module 15520 (styles)
+// Module 15530 (styles)
 import createCacheKey from "createCacheKey";
 
 const styles = createCacheKey.createStyles({ subtitleRow: { flexDirection: "row", alignItems: "center" }, subtitleText: { flexShrink: 1 }, channelIcon: { marginRight: 2 }, unreadChannelIcon: { marginLeft: 2, marginRight: 2 } });

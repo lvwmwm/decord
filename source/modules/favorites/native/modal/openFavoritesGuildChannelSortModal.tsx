@@ -1,16 +1,16 @@
-// Module ID: 15338
-// Function ID: 15339
+// Module ID: 15347
+// Function ID: 15348
 // Name: openFavoritesGuildChannelSortModal
-// Dependencies: [4549, 15339, 2007, 2]
+// Dependencies: [4550, 15348, 2007, 2]
 // Exports: closeFavoritesGuildChannelSortModal, default
 
-// Module 15338 (openFavoritesGuildChannelSortModal)
+// Module 15347 (openFavoritesGuildChannelSortModal)
 const FavoritesGuildChannelSortModal = "FavoritesGuildChannelSortModal";
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/favorites/native/modal/openFavoritesGuildChannelSortModal.tsx");
 
 export default function openFavoritesGuildChannelSortModal() {
-  importDefault(4549).pushLazy(require(2007) /* asyncRequireImpl */(15339, dependencyMap.paths), undefined, FavoritesGuildChannelSortModal);
+  importDefault(4550).pushLazy(require(2007) /* asyncRequireImpl */(15348, dependencyMap.paths), undefined, FavoritesGuildChannelSortModal);
 };
 export const closeFavoritesGuildChannelSortModal = function closeFavoritesGuildChannelSortModal() {
-  importDefault(4549).popWithKey(FavoritesGuildChannelSortModal);
+  importDefault(4550).popWithKey(FavoritesGuildChannelSortModal);
 };

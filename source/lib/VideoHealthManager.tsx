@@ -1,7 +1,7 @@
 // Module ID: 13156
 // Function ID: 13157
 // Name: calculateFps
-// Dependencies: [676, 3, 4580, 13157, 4419, 687, 2]
+// Dependencies: [676, 3, 4581, 13157, 4420, 687, 2]
 
 // Module 13156 (calculateFps)
 import { VideoToggleState } from "ME";
@@ -113,7 +113,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
     if (null !== lastBackoffTime) {
       num2 = 1;
       if (expBackoffFactor <= 16) {
-        let obj = _require(4419);
+        let obj = _require(4420);
         num2 = 1;
         if (self.elapsedSeconds(obj.now(), lastBackoffTime) <= 600) {
           num2 = expBackoffFactor * 2;
@@ -121,7 +121,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
       }
     }
     obj = { lastBackoffTime: null, expBackoffFactor: null };
-    obj[0] = _require(4419).now();
+    obj[0] = _require(4420).now();
     obj[1] = num2;
     self.retryBackoffCache[arg0] = obj;
     const result = num2 * self.backoffTimeSec;
@@ -133,7 +133,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
     self.timeoutIdCache[arg0] = setTimeout(() => {
       self.queueReenable(closure_0);
     }, result1);
-    const obj3 = _require(4419);
+    const obj3 = _require(4420);
   }
 };
 prototype["queueReenable"] = function queueReenable(closure_0) {
@@ -167,13 +167,13 @@ prototype["reenableVideo"] = function reenableVideo(arr) {
   if (flag) {
     const logger = self.logger;
     const _HermesInternal = HermesInternal;
-    logger.info("reenableVideo called for user " + arr + " - time = " + require(4419) /* sleep */.now());
+    logger.info("reenableVideo called for user " + arr + " - time = " + require(4420) /* sleep */.now());
     const result = self.stateCleanupBeforeEnable(arr);
     self.currentVideoAutoToggleState[arr] = VideoToggleState.AUTO_PROBING;
     self.probingUserId = arr;
     importDefault(13157)(arr, VideoToggleState.AUTO_PROBING);
     flag = true;
-    const obj = require(4419) /* sleep */;
+    const obj = require(4420) /* sleep */;
   }
   return flag;
 };

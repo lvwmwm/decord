@@ -1,10 +1,10 @@
-// Module ID: 8555
-// Function ID: 8556
+// Module ID: 8559
+// Function ID: 8560
 // Name: saveProfileAndAccountRequest
-// Dependencies: [5, 676, 5869, 709, 530, 5866, 1222, 595, 8317, 8314, 8556, 7634, 2]
+// Dependencies: [5, 676, 5870, 709, 530, 5867, 1222, 595, 8321, 8318, 8560, 7638, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 8555 (saveProfileAndAccountRequest)
+// Module 8559 (saveProfileAndAccountRequest)
 import handleLogout from "handleLogout";
 import ME from "ME";
 import str2 from "str2";
@@ -178,13 +178,13 @@ export const disableAccount = function disableAccount(password, arg1) {
   const obj3 = require(530) /* sendRequest */;
   const tmp2 = arg1 ? closure_4.DELETE_ACCOUNT : closure_4.DISABLE_ACCOUNT;
   return HTTP.post(obj).then(() => {
-    callback2(5866).logoutInternal();
-    const obj = callback2(5866);
+    callback2(5867).logoutInternal();
+    const obj = callback2(5867);
     callback(1222).transitionTo(constants.DEFAULT_LOGGED_OUT);
   });
 };
 export { saveProfileAndAccountRequest };
-export const saveProfileAndAccountChanges = function saveProfileAndAccountChanges(accountUpdateForUpdateRequest) {
+export const saveProfileAndAccountChanges = function saveProfileAndAccountChanges(c0) {
   let avatarDecoration;
   let avatarDescription;
   let avatarOriginalMd5;
@@ -199,10 +199,10 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   let password;
   let primaryGuildId;
   let username;
-  const avatar = accountUpdateForUpdateRequest.avatar;
-  const avatarId = accountUpdateForUpdateRequest.avatarId;
-  ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles } = accountUpdateForUpdateRequest);
-  ({ username, discriminator, email, emailToken, password, avatarDescription, newPassword, globalName, legacyUsername, avatarOriginalMd5 } = accountUpdateForUpdateRequest);
+  const avatar = c0.avatar;
+  const avatarId = c0.avatarId;
+  ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles } = c0);
+  ({ username, discriminator, email, emailToken, password, avatarDescription, newPassword, globalName, legacyUsername, avatarOriginalMd5 } = c0);
   let obj = avatarId(709);
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
   obj = { username, email, email_token: emailToken, password, avatar, avatar_description: avatarDescription, avatar_id: avatarId, discriminator, global_name: globalName, legacy_username: legacyUsername, new_password: newPassword };
@@ -254,11 +254,11 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     obj.push_voip_token = value;
   }
   obj = { headers: null };
-  obj[0] = avatarId(8317).buildHeadersForMd5({ [avatar(8314).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
+  obj[0] = avatarId(8321).buildHeadersForMd5({ [avatar(8318).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
   const tmp = avatarId;
   tmp11 = null != tmp10 && null != value;
   tmp13 = closure_8;
-  let tmpResult = avatarId(8317);
+  let tmpResult = avatarId(8321);
   return saveProfileAndAccountRequest(obj, obj).then((arg0) => {
     avatarId(outer1_2[3]).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" });
     let tmp4 = null == avatar;

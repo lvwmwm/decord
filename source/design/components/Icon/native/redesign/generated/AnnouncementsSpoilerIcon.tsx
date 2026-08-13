@@ -1,10 +1,10 @@
-// Module ID: 4860
-// Function ID: 4861
+// Module ID: 4861
+// Function ID: 4862
 // Name: AnnouncementsSpoilerIcon
-// Dependencies: [19, 21, 712, 4064, 4822, 2]
+// Dependencies: [19, 21, 712, 4064, 4823, 2]
 // Exports: AnnouncementsSpoilerIcon
 
-// Module 4860 (AnnouncementsSpoilerIcon)
+// Module 4861 (AnnouncementsSpoilerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const AnnouncementsSpoilerIcon = function AnnouncementsSpoilerIcon(color)
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4822) /* registerAsset */;
+  obj[0] = require(4823) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

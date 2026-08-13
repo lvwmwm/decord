@@ -1,7 +1,7 @@
 // Module ID: 13103
 // Function ID: 13104
 // Name: NUFChannelIllustration
-// Dependencies: [32, 19, 17, 21, 4344, 712, 1236, 13104, 13105, 4083, 4345, 13106, 13107, 13108, 13109, 5415, 4849, 4340, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 1236, 13104, 13105, 4083, 4343, 13106, 13107, 13108, 13109, 5416, 4850, 4338, 2]
 // Exports: default
 
 // Module 13103 (NUFChannelIllustration)
@@ -78,14 +78,14 @@ export default function NUFChannelIllustration() {
   let items = [sharedValue1, first];
   const effect1 = sharedValue1.useEffect(() => {
     if (first.length >= 2) {
-      const result = sharedValue1.set(sharedValue1(4345).withTiming(1, { duration: 250 }));
-      const obj = sharedValue1(4345);
+      const result = sharedValue1.set(sharedValue1(4343).withTiming(1, { duration: 250 }));
+      const obj = sharedValue1(4343);
     }
   }, items);
   let items1 = [sharedValue, first];
   const effect2 = sharedValue1.useEffect(() => {
     const result = sharedValue.set(0);
-    const result1 = sharedValue.set(tmp(4345).withTiming(1, { duration: 200 }));
+    const result1 = sharedValue.set(tmp(4343).withTiming(1, { duration: 200 }));
   }, items1);
   let obj2 = require(4083);
   const fn = function b() {
@@ -122,12 +122,12 @@ export default function NUFChannelIllustration() {
   items3[4] = callback(closure_5, { style: tmp.cardBackground });
   const obj6 = { style: tmp.card, shadow: "low", border: "subtle", children: null };
   const obj7 = { style: tmp.header, children: null };
-  const items7 = [callback(require(4849) /* TextIcon */.TextIcon, { size: "sm" }), ];
+  const items7 = [callback(require(4850) /* TextIcon */.TextIcon, { size: "sm" }), ];
   const obj8 = { variant: "text-md/bold", allowFontScaling: false, children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   const items8 = [" ", intl.string(require(1236) /* getSystemLocale */.t.aLOLry)];
   obj8[2] = items8;
-  items7[1] = callback2(require(4340) /* Text */.Text, obj8);
+  items7[1] = callback2(require(4338) /* Text */.Text, obj8);
   obj7[1] = items7;
   const items9 = [callback2(closure_5, obj7), ];
   const obj9 = { style: tmp.content, children: null };
@@ -137,7 +137,7 @@ export default function NUFChannelIllustration() {
     obj = { source: children.avatar, style: tmp.messageAvatar };
     const items = [outer1_7(outer1_6, obj), ];
     obj = { style: tmp.messageContent, children: null };
-    const items1 = [outer1_7(tmp(4340).Text, { variant: "text-md/semibold", allowFontScaling: false, children: children.name }), outer1_7(tmp(4340).Text, { variant: "text-md/medium", allowFontScaling: false, children: children.message })];
+    const items1 = [outer1_7(tmp(4338).Text, { variant: "text-md/semibold", allowFontScaling: false, children: children.name }), outer1_7(tmp(4338).Text, { variant: "text-md/medium", allowFontScaling: false, children: children.message })];
     obj[1] = items1;
     items[1] = outer1_8(outer1_5, obj);
     obj[1] = items;
@@ -146,7 +146,7 @@ export default function NUFChannelIllustration() {
   obj9[1] = callback(first(4083).View, obj10);
   items9[1] = callback(closure_5, obj9);
   obj6[3] = items9;
-  items3[5] = callback2(require(5415) /* PressableCard */.Card, obj6);
+  items3[5] = callback2(require(5416) /* PressableCard */.Card, obj6);
   obj[1] = items3;
   return callback2(closure_5, obj);
 };

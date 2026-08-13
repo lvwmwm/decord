@@ -1,9 +1,9 @@
-// Module ID: 16337
-// Function ID: 16338
+// Module ID: 16348
+// Function ID: 16349
 // Name: getBadgeLeft
-// Dependencies: [19, 17, 21, 10728, 7876, 2]
+// Dependencies: [19, 17, 21, 10642, 7880, 2]
 
-// Module 16337 (getBadgeLeft)
+// Module 16348 (getBadgeLeft)
 import { PixelRatio } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import importAllResult from "noop";
@@ -40,9 +40,9 @@ const memoResult = require("noop").memo(function CircleWithCutout(arg0) {
     const result1 = badgeRadius * num;
   }
   const result2 = 2 * result;
-  let obj = require(10728) /* CircleWithCutout */;
+  let obj = require(10642) /* CircleWithCutout */;
   const cutoutCenterX = obj.getCutoutCenterX(result, cutoutPositionInDegrees);
-  let obj1 = require(10728) /* CircleWithCutout */;
+  let obj1 = require(10642) /* CircleWithCutout */;
   const cutoutCenterY = obj1.getCutoutCenterY(result, cutoutPositionInDegrees);
   if (alignBadgeEdgeWithCircleEdge) {
     alignBadgeEdgeWithCircleEdge = null != result1;
@@ -58,19 +58,19 @@ const memoResult = require("noop").memo(function CircleWithCutout(arg0) {
   items = [obj];
   obj1 = { children: null };
   const obj2 = { id: "mask", children: null };
-  const items1 = [callback(require(7876) /* inlineStyles */.Rect, { width: result2, height: result2, fill: "white" }), callback(require(7876) /* inlineStyles */.Circle, { cx: diff, cy: tmp8, r: cutoutRadius * num, fill: "black" })];
+  const items1 = [callback(require(7880) /* inlineStyles */.Rect, { width: result2, height: result2, fill: "white" }), callback(require(7880) /* inlineStyles */.Circle, { cx: diff, cy: tmp8, r: cutoutRadius * num, fill: "black" })];
   obj2[1] = items1;
-  obj1[0] = callback2(require(7876) /* inlineStyles */.Mask, obj2);
-  const items2 = [callback(require(7876) /* inlineStyles */.Defs, obj1), ];
+  obj1[0] = callback2(require(7880) /* inlineStyles */.Mask, obj2);
+  const items2 = [callback(require(7880) /* inlineStyles */.Defs, obj1), ];
   const obj4 = { cx: result, cy: result, r: result, fill, mask: null };
   let str;
   if (enableCutout) {
     str = "url(#mask)";
   }
   obj4[4] = str;
-  items2[1] = callback(require(7876) /* inlineStyles */.Circle, obj4);
+  items2[1] = callback(require(7880) /* inlineStyles */.Circle, obj4);
   obj[3] = items2;
-  return callback2(importDefault(7876), obj);
+  return callback2(importDefault(7880), obj);
 });
 let result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/shared/CircleWithCutout.tsx");
 

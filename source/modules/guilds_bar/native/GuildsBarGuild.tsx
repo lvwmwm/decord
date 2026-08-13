@@ -1,8 +1,8 @@
-// Module ID: 15510
-// Function ID: 15511
-// Dependencies: [19, 1434, 4681, 7137, 1910, 4167, 5195, 15479, 15480, 676, 21, 4344, 712, 1367, 4065, 15490, 15225, 15229, 15511, 589, 5818, 15523, 15524, 4682, 1236, 698, 15504, 15531, 15481, 15532, 4083, 4753, 5307, 15534, 2]
+// Module ID: 15520
+// Function ID: 15521
+// Dependencies: [19, 1434, 4682, 7143, 1910, 4165, 5196, 15488, 15489, 676, 21, 4342, 712, 1367, 4065, 15499, 15234, 15238, 15521, 589, 5819, 15533, 15534, 4683, 1236, 698, 15513, 15541, 15490, 15542, 4083, 4754, 5308, 15544, 2]
 
-// Module 15510
+// Module 15520
 import importAllResult from "initialize";
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -250,9 +250,9 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
         tmp8 = guildId;
         tmp9 = c2;
         obj = guildId(c2[31]);
-        tmp10 = f97161;
+        tmp10 = f97206;
         str = "animate-always";
-        targetOriginY = obj.withSpring(guildId.targetOriginY, f97161, "animate-always");
+        targetOriginY = obj.withSpring(guildId.targetOriginY, f97206, "animate-always");
       } else {
         targetOriginY = guildId.targetOriginY;
       }
@@ -261,9 +261,9 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
         tmp11 = guildId;
         tmp12 = c2;
         obj3 = guildId(c2[31]);
-        tmp13 = f97161;
+        tmp13 = f97206;
         str2 = "animate-always";
-        targetHeight = obj3.withSpring(guildId.targetHeight, f97161, "animate-always");
+        targetHeight = obj3.withSpring(guildId.targetHeight, f97206, "animate-always");
       } else {
         targetHeight = guildId.targetHeight;
       }

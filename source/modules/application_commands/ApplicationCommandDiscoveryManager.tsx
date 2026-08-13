@@ -1,13 +1,13 @@
-// Module ID: 11829
-// Function ID: 11830
+// Module ID: 11827
+// Function ID: 11828
 // Name: useCommandDiscoveryManager
 // Dependencies: [644, 705, 2]
 // Exports: updateInitialSectionId
 
-// Module 11829 (useCommandDiscoveryManager)
+// Module 11827 (useCommandDiscoveryManager)
 import keys from "keys";
 
-const obj = keys.create(() => ({ initialSectionId: "Array" }));
+const obj = keys.create(() => ({ initialSectionId: "sa" }));
 const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandDiscoveryManager.tsx");
 
 export const useCommandDiscoveryManager = obj;

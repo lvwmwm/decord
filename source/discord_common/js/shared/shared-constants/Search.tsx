@@ -1,9 +1,9 @@
-// Module ID: 15868
-// Function ID: 15869
+// Module ID: 15877
+// Function ID: 15878
 // Name: MAX_MESSAGE_SEARCH_RESULTS_OFFSET
 // Dependencies: [2]
 
-// Module 15868 (MAX_MESSAGE_SEARCH_RESULTS_OFFSET)
+// Module 15877 (MAX_MESSAGE_SEARCH_RESULTS_OFFSET)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/Search.tsx");
 
 export const MAX_MESSAGE_SEARCH_RESULTS_OFFSET = 9975;

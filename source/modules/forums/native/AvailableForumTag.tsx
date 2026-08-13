@@ -1,7 +1,7 @@
 // Module ID: 10237
 // Function ID: 10238
 // Name: AvailableForumTag
-// Dependencies: [19, 5215, 1925, 21, 4344, 712, 589, 10050, 8708, 5399, 1435, 4340, 2]
+// Dependencies: [19, 5216, 1925, 21, 4342, 712, 589, 10048, 8712, 5400, 1435, 4338, 2]
 // Exports: default
 
 // Module 10237 (AvailableForumTag)

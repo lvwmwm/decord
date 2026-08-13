@@ -1,10 +1,10 @@
-// Module ID: 8263
-// Function ID: 8264
+// Module ID: 8267
+// Function ID: 8268
 // Name: _executeMessageComponentInteraction
-// Dependencies: [5, 1218, 8090, 676, 11, 7264, 8264, 1954, 530, 6959, 8265, 709, 4569, 2, 4567]
+// Dependencies: [5, 1218, 8094, 676, 11, 7269, 8268, 1954, 530, 6965, 8269, 709, 4570, 2, 4568]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 8263 (_executeMessageComponentInteraction)
+// Module 8267 (_executeMessageComponentInteraction)
 import patchThread from "patchThread";
 import fetchFingerprint from "fetchFingerprint";
 import deleteNonce from "deleteNonce";
@@ -91,7 +91,7 @@ function _executeMessageComponentInteraction() {
                 closure_9 = callback2(11).fromTimestamp(Date.now());
                 if (c5.canQueueInteraction(callback2, closure_9)) {
                   c3 = 1;
-                  let obj8 = callback2(7264);
+                  let obj8 = callback2(7269);
                   sessionId = 3;
                   c5 = 1;
                   const obj2 = { value: null, done: false };
@@ -134,9 +134,9 @@ function _executeMessageComponentInteraction() {
                     const obj = _undefined(_undefined2[9]);
                   }
                 };
-                callback(8264).addQueued(closure_9, obj4);
+                callback(8268).addQueued(closure_9, obj4);
                 if (null != c8) {
-                  obj1 = callback(8264);
+                  obj1 = callback(8268);
                   const result = obj1.queueInteractionComponentState(callback2, closure_9, c8, sessionId);
                 }
                 obj6 = { type: null, nonce: null, guild_id: null, channel_id: null, message_flags: null, message_id: null, application_id: null, session_id: null, data: null };
@@ -240,8 +240,8 @@ function mapMessageComponentLocalStateForAPI(type) {
 function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId) {
   if (!ok.ok) {
     if (ok.hasErr) {
-      require(8264) /* _fetchMessageInteractionData */.setFailed(nonce);
-      const obj10 = require(8264) /* _fetchMessageInteractionData */;
+      require(8268) /* _fetchMessageInteractionData */.setFailed(nonce);
+      const obj10 = require(8268) /* _fetchMessageInteractionData */;
     } else {
       if (ok.status >= 400) {
         if (ok.status < 500) {
@@ -249,7 +249,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
             let tmp9 = guildId;
             if (ok.body.code === constants.INVALID_FORM_BODY) {
               if (ok.body.errors) {
-                const firstSkemaError = require(8265) /* getFirstSkemaFieldError */.getFirstSkemaError(ok.body.errors);
+                const firstSkemaError = require(8269) /* getFirstSkemaFieldError */.getFirstSkemaError(ok.body.errors);
                 let tmp28 = null == firstSkemaError;
                 if (!tmp28) {
                   let tmp29 = "INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" !== firstSkemaError.code;
@@ -269,13 +269,13 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
                   importDefault(709).dispatch(obj);
                   const obj7 = importDefault(709);
                 }
-                const obj6 = require(8265) /* getFirstSkemaFieldError */;
+                const obj6 = require(8269) /* getFirstSkemaFieldError */;
                 const tmp24 = require;
                 let message;
                 if (firstSkemaError != null) {
                   message = firstSkemaError.message;
                 }
-                require(8264) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, message);
+                require(8268) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, message);
               }
             }
             if (ok.body.code === constants.UNKNOWN_INTEGRATION) {
@@ -289,17 +289,17 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
               obj[3] = tmp20;
               importDefault(709).dispatch(obj);
               const obj3 = importDefault(709);
-              require(8264) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, ok.body.message);
-              const obj5 = require(8264) /* _fetchMessageInteractionData */;
+              require(8268) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, ok.body.message);
+              const obj5 = require(8268) /* _fetchMessageInteractionData */;
             } else {
-              const obj2 = require(8264) /* _fetchMessageInteractionData */;
+              const obj2 = require(8268) /* _fetchMessageInteractionData */;
               obj2.setFailed(nonce, ok.body.code, ok.body.message, ok.status);
             }
             return tmp16;
           }
         }
       }
-      obj = require(8264) /* _fetchMessageInteractionData */;
+      obj = require(8268) /* _fetchMessageInteractionData */;
       const body = ok.body;
       let code;
       if (body != null) {

@@ -1,10 +1,10 @@
-// Module ID: 10676
-// Function ID: 10677
+// Module ID: 10590
+// Function ID: 10591
 // Name: _installApplicationOnDemandIfNeeded
-// Dependencies: [5, 4367, 4382, 676, 10677, 5768, 9587, 4538, 4207, 10678, 2]
+// Dependencies: [5, 4368, 4383, 676, 10591, 5769, 9591, 4539, 4205, 10592, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 10676 (_installApplicationOnDemandIfNeeded)
+// Module 10590 (_installApplicationOnDemandIfNeeded)
 import fetchApplication from "fetchApplication";
 import createExecutable from "createExecutable";
 import addApplication from "addApplication";
@@ -81,7 +81,7 @@ function _installApplicationOnDemandIfNeeded() {
                 if (obj11.shouldInstallApplicationOnDemand(obj2)) {
                   application = application.getApplication(callback);
                   if (null == application) {
-                    let obj5 = callback(5768);
+                    let obj5 = callback(5769);
                     c3 = 2;
                     application = 1;
                     const obj3 = { value: null, done: false };
@@ -94,7 +94,7 @@ function _installApplicationOnDemandIfNeeded() {
                   obj4[0] = Promise.resolve({ isAuthorized: true });
                   return obj4;
                 }
-                obj11 = callback(10677);
+                obj11 = callback(10591);
               }
             } else if (arg0 === 1) {
               application = 3;
@@ -108,7 +108,7 @@ function _installApplicationOnDemandIfNeeded() {
               obj = arg1;
               application = c3.createFromServer(obj);
             }
-            USER_INSTALL = callback(9587).ApplicationIntegrationType.USER_INSTALL;
+            USER_INSTALL = callback(9591).ApplicationIntegrationType.USER_INSTALL;
             scopes = undefined;
             if (application != null) {
               const integrationTypesConfig = application.integrationTypesConfig;
@@ -122,7 +122,7 @@ function _installApplicationOnDemandIfNeeded() {
               }
             }
             if (null != c3) {
-              obj2 = callback(4538);
+              obj2 = callback(4539);
               obj5 = { application_id: null, location: null, section_name: null, source: null };
               obj5[0] = callback;
               obj5[1] = c3.location;

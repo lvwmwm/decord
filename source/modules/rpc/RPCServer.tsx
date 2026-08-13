@@ -1,9 +1,9 @@
-// Module ID: 13856
-// Function ID: 13857
+// Module ID: 13857
+// Function ID: 13858
 // Name: registerTransport
-// Dependencies: [5, 4247, 676, 12, 10801, 10795, 13834, 698, 38, 687, 2]
+// Dependencies: [5, 4245, 676, 12, 10715, 10709, 13835, 698, 38, 687, 2]
 
-// Module 13856 (registerTransport)
+// Module 13857 (registerTransport)
 import prototype from "prototype";
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -59,7 +59,7 @@ prototype["handleConnect"] = function handleConnect(v) {
     if (null == currentUser) {
       v.close(constants2.CLOSE_NORMAL, "User logged out");
     } else {
-      obj.user = importDefault(10801)(currentUser);
+      obj.user = importDefault(10715)(currentUser);
     }
   }
   self.dispatch(v, null, constants3.DISPATCH, constants5.READY, obj);

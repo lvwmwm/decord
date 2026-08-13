@@ -1,10 +1,10 @@
-// Module ID: 8779
-// Function ID: 8780
+// Module ID: 8783
+// Function ID: 8784
 // Name: MessageStandardEmojiActionSheet
-// Dependencies: [19, 17, 676, 21, 4344, 500, 514, 5436, 698, 8780, 8786, 8787, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 500, 514, 5437, 698, 8784, 8790, 8791, 2]
 // Exports: default
 
-// Module 8779 (MessageStandardEmojiActionSheet)
+// Module 8783 (MessageStandardEmojiActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -29,14 +29,14 @@ function MessageStandardEmojiActionSheet(emojiNode) {
     children: null
   };
   obj = { style: callback().contentWrapper, children: null };
-  obj[1] = jsx(importDefault(8780), { emojiNode: emojiNode.emojiNode, nonce: v4Result });
+  obj[1] = jsx(importDefault(8784), { emojiNode: emojiNode.emojiNode, nonce: v4Result });
   obj[2] = <View style={callback().contentWrapper}>{null}</View>;
-  return jsx(_require(5436).BottomSheet, { style: callback().contentWrapper, children: null });
+  return jsx(_require(5437).BottomSheet, { style: callback().contentWrapper, children: null });
 }
 function MessageCustomEmojiActionSheet(emojiNode) {
   emojiNode = emojiNode.emojiNode;
   let _require;
-  let obj = _require(8786);
+  let obj = _require(8790);
   obj = { emojiId: emojiNode.id };
   const emojiAndSource = obj.useEmojiAndSource(obj);
   if (emojiAndSource.isFetching) {
@@ -60,9 +60,9 @@ function MessageCustomEmojiActionSheet(emojiNode) {
     obj2[4] = tmp9;
     obj2[5] = tmp8;
     obj2[6] = v4Result;
-    obj1[1] = jsx(importDefault(8787), { emojiNode: null, sourceType: null, expressionSourceApplication: null, expressionSourceGuild: null, customEmojiFromJoinedGuild: null, hasJoinedEmojiSourceGuild: null, nonce: null });
+    obj1[1] = jsx(importDefault(8791), { emojiNode: null, sourceType: null, expressionSourceApplication: null, expressionSourceGuild: null, customEmojiFromJoinedGuild: null, hasJoinedEmojiSourceGuild: null, nonce: null });
     obj[2] = <View style={null}>{null}</View>;
-    return jsx(tmp2(5436).BottomSheet, { startExpanded: true, onDismiss: null, children: null });
+    return jsx(tmp2(5437).BottomSheet, { startExpanded: true, onDismiss: null, children: null });
   }
   tmp = callback();
 }

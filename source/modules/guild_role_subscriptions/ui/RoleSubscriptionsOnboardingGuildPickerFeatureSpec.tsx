@@ -1,8 +1,8 @@
-// Module ID: 13305
-// Function ID: 13306
-// Dependencies: [4258, 1434, 1236, 589, 5919, 5920, 3982, 2]
+// Module ID: 13306
+// Function ID: 13307
+// Dependencies: [4256, 1434, 1236, 589, 5921, 5922, 3982, 2]
 
-// Module 13305
+// Module 13306
 import getHash from "getHash";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 
@@ -24,11 +24,11 @@ export default {
     return require(589) /* initialize */.useStateFromStores(items, () => (id) => {
       let result = callback2(id, arg1);
       if (result) {
-        let obj = callback(5919);
+        let obj = callback(5921);
         obj = { guild: null, isOwner: true, canManageGuildRoleSubscriptions: true, isUserInCreatorMonetizationEligibleCountry: null, shouldRestrictUpdatingRoleSubscriptionSettings: null };
         obj[0] = id;
-        obj[3] = callback(5920).isUserInCreatorMonetizationEligibleCountry();
-        const obj3 = callback(5920);
+        obj[3] = callback(5922).isUserInCreatorMonetizationEligibleCountry();
+        const obj3 = callback(5922);
         obj[4] = callback(3982).shouldRestrictUpdatingCreatorMonetizationSettings(id.id);
         result = obj.canSeeGuildRoleSubscriptionSettings(obj);
         const obj4 = callback(3982);

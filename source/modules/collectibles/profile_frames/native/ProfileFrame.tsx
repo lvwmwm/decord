@@ -1,10 +1,10 @@
-// Module ID: 8862
-// Function ID: 8863
+// Module ID: 8866
+// Function ID: 8867
 // Name: ProfileFrameLayer
-// Dependencies: [19, 17, 8844, 8863, 5815, 21, 4344, 8864, 5307, 8865, 8866, 2]
+// Dependencies: [19, 17, 8848, 8867, 5816, 21, 4342, 8868, 5308, 8869, 8870, 2]
 // Exports: default
 
-// Module 8862 (ProfileFrameLayer)
+// Module 8866 (ProfileFrameLayer)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { useFramePreviewOverrideStore as closure_4 } from "measure";
@@ -199,8 +199,8 @@ export default function ProfileFrame(arg0) {
     let obj = { override: null };
     obj[0] = tmp;
     const merged = Object.assign(arg0);
-    let tmp7 = jsx(importDefault(8866), { override: null });
-    const tmp11 = importDefault(8866);
+    let tmp7 = jsx(importDefault(8870), { override: null });
+    const tmp11 = importDefault(8870);
   } else {
     obj = {};
     const merged1 = Object.assign(arg0);

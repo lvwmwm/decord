@@ -1,10 +1,10 @@
-// Module ID: 9097
-// Function ID: 9098
+// Module ID: 9101
+// Function ID: 9102
 // Name: NavigationBar
-// Dependencies: [5, 32, 19, 17, 1391, 1910, 1397, 8995, 21, 4344, 712, 4549, 4886, 1236, 1297, 8101, 4340, 9091, 589, 9031, 9098, 5367, 7837, 9101, 4754, 2]
+// Dependencies: [5, 32, 19, 17, 1391, 1910, 1397, 8999, 21, 4342, 712, 4550, 4887, 1236, 1297, 8105, 4338, 9095, 589, 9035, 9102, 5368, 7841, 9105, 4755, 2]
 // Exports: default
 
-// Module 9097 (NavigationBar)
+// Module 9101 (NavigationBar)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
 import canManageResource from "canManageResource";
@@ -31,9 +31,9 @@ function NavigationBar(onClose) {
     return onClose();
   };
   obj = { source: null };
-  obj[0] = importDefault(8101);
+  obj[0] = importDefault(8105);
   obj[3] = callback(onClose(1297).Icon, obj);
-  obj[0] = callback(onClose(4886).PressableOpacity, obj);
+  obj[0] = callback(onClose(4887).PressableOpacity, obj);
   return callback(View, obj);
 }
 function StartEventHeader(children) {
@@ -42,9 +42,9 @@ function StartEventHeader(children) {
   obj = { style: tmp.headerPrivacyLevel, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["q+fFJv"]);
-  const items = [callback(require(4340) /* Text */.Text, obj), ];
+  const items = [callback(require(4338) /* Text */.Text, obj), ];
   obj = { style: tmp.headerTitle, variant: "text-md/medium", color: "text-default", children: children.event.name };
-  items[1] = callback(require(4340) /* Text */.Text, obj);
+  items[1] = callback(require(4338) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 9309
-// Function ID: 9310
+// Module ID: 9313
+// Function ID: 9314
 // Name: GuildBadgeV2
-// Dependencies: [19, 21, 4344, 1297, 1363, 9310, 9307, 9308, 2]
+// Dependencies: [19, 21, 4342, 1297, 1363, 9314, 9311, 9312, 2]
 // Exports: default, hasGuildBadge
 
-// Module 9309 (GuildBadgeV2)
+// Module 9313 (GuildBadgeV2)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,7 +25,7 @@ export default function GuildBadgeV2(arg0) {
   if (null == guild) {
     return null;
   } else {
-    const guildBadgeImageSource = tmp5(9310).getGuildBadgeImageSource(guild, tmp8);
+    const guildBadgeImageSource = tmp5(9314).getGuildBadgeImageSource(guild, tmp8);
     let tmp10 = null;
     if (null != guildBadgeImageSource) {
       const obj = { size: null, source: null, style: null, disableColor: true };
@@ -40,15 +40,15 @@ export default function GuildBadgeV2(arg0) {
   tmp4 = callback();
 };
 export const hasGuildBadge = function hasGuildBadge(fromGuildProfileResult) {
-  const guildTraits = require(9307) /* GuildVisibility */.getGuildTraits(fromGuildProfileResult);
-  const obj = require(9307) /* GuildVisibility */;
+  const guildTraits = require(9311) /* GuildVisibility */.getGuildTraits(fromGuildProfileResult);
+  const obj = require(9311) /* GuildVisibility */;
   const tmp = require;
-  const badgeCategory = require(9308) /* BadgeCategory */.getBadgeCategory(guildTraits);
-  const tmp5 = require(9310) /* badgeVariants */.badgeVariants[badgeCategory];
+  const badgeCategory = require(9312) /* BadgeCategory */.getBadgeCategory(guildTraits);
+  const tmp5 = require(9314) /* badgeVariants */.badgeVariants[badgeCategory];
   let tmp6 = null != tmp5;
   if (tmp6) {
-    tmp6 = null != tmp(9310).resolveImageSource(tmp5, guildTraits, arg1);
-    const tmpResult = tmp(9310);
+    tmp6 = null != tmp(9314).resolveImageSource(tmp5, guildTraits, arg1);
+    const tmpResult = tmp(9314);
   }
   return tmp6;
 };

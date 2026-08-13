@@ -1,10 +1,10 @@
-// Module ID: 6975
-// Function ID: 6976
+// Module ID: 6981
+// Function ID: 6982
 // Name: create
 // Dependencies: [12, 2]
 // Exports: getRTCTotalBytes
 
-// Module 6975 (create)
+// Module 6981 (create)
 let closure_2 = [];
 let RTCBandwidthMonitor;
 class RTCBandwidthMonitor {

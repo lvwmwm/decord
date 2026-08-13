@@ -1,10 +1,10 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15528
+// Function ID: 15529
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 4340, 1236, 4533, 2]
+// Dependencies: [19, 21, 4338, 1236, 4534, 2]
 // Exports: default
 
-// Module 15518 (VoiceSubtitle)
+// Module 15528 (VoiceSubtitle)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -23,5 +23,5 @@ export default function VoiceSubtitle(arg0) {
   obj[0] = mapped.join(", ");
   obj[1] = Math.max(voiceUsers.length - 2, 0);
   obj[3] = intl.format(require(1236) /* getSystemLocale */.t.r1Vkoc, obj);
-  return jsx(require(4340) /* Text */.Text, { users: null, overflowCount: null });
+  return jsx(require(4338) /* Text */.Text, { users: null, overflowCount: null });
 };

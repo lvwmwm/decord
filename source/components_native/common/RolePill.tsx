@@ -1,10 +1,10 @@
-// Module ID: 9745
-// Function ID: 9746
+// Module ID: 9749
+// Function ID: 9750
 // Name: RolePill
-// Dependencies: [19, 17, 676, 21, 4344, 712, 4034, 5791, 5795, 4061, 4886, 5811, 4340, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 4034, 5792, 5796, 4061, 4887, 5812, 4338, 2]
 // Exports: default
 
-// Module 9745 (RolePill)
+// Module 9749 (RolePill)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -39,7 +39,7 @@ export default function RolePill(role) {
   let combined;
   const DeveloperMode = role(4034).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(5791);
+  let obj = role(5792);
   obj = { guildId, roleId: role.id, size: 12 };
   const roleIcon = obj.useRoleIcon(obj);
   let name = role.name;
@@ -84,8 +84,8 @@ export default function RolePill(role) {
     }
     obj2[2] = guildId;
     obj2[3] = color;
-    let tmp10Result = tmp10(combined(5811), obj2);
-    const tmp15 = combined(5811);
+    let tmp10Result = tmp10(combined(5812), obj2);
+    const tmp15 = combined(5812);
   } else {
     const items = [tmp9.bubble, ];
     if (null != color) {
@@ -109,8 +109,8 @@ export default function RolePill(role) {
     tmp10Result = tmp10(tmp12, obj6);
   }
   items1[1] = tmp10Result;
-  items1[2] = closure_6(role(4340).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
+  items1[2] = closure_6(role(4338).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
   obj1[1] = items1;
   obj[4] = closure_7(View, obj1);
-  return closure_6(role(4886).PressableHighlight, obj);
+  return closure_6(role(4887).PressableHighlight, obj);
 };

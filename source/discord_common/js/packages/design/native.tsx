@@ -1,7 +1,7 @@
 // Module ID: 4072
 // Function ID: 4073
 // Name: ManaContext
-// Dependencies: [2, 1351, 4073, 1356, 1357, 1352, 1358, 4074, 1359, 1360, 1361, 1362, 4075, 1365, 4130, 4163]
+// Dependencies: [2, 1351, 4073, 1356, 1357, 1352, 1358, 4074, 1359, 1360, 1361, 1362, 4075, 1365, 4128, 4161]
 
 // Module 4072 (ManaContext)
 import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD";

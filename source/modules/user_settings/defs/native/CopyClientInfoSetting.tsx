@@ -1,10 +1,10 @@
-// Module ID: 14811
-// Function ID: 14812
+// Module ID: 14820
+// Function ID: 14821
 // Name: getClientInfo
-// Dependencies: [10454, 21, 1625, 4312, 11245, 5795, 4061, 5803, 5435, 1236, 5805, 4086, 4292, 4324, 10493, 8469, 4034, 2]
+// Dependencies: [10368, 21, 1625, 4310, 11236, 5796, 4061, 5804, 5436, 1236, 5806, 4290, 4322, 10407, 8473, 4034, 2]
 // Exports: getClientInfoString
 
-// Module 14811 (getClientInfo)
+// Module 14820 (getClientInfo)
 import getCurrentBuildOverride from "getCurrentBuildOverride";
 import jsxProd from "jsxProd";
 import createToggle from "createToggle";
@@ -17,7 +17,7 @@ function getClientInfo() {
   const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
   let tmp;
   if (overrides != null) {
-    tmp = overrides[require(undefined, 11245) /* setBuildOverrideForBranch */.DEVICE_FIELD];
+    tmp = overrides[require(undefined, 11236) /* setBuildOverrideForBranch */.DEVICE_FIELD];
   }
   let str2 = "N/A";
   if (str.trim().length > 0) {
@@ -67,74 +67,64 @@ function ClientClientInfoActionSheet() {
   obj = { title: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Na2lF9);
-  obj[0] = callback(require(5435) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
-  obj = { label: null, subLabel: null, onPress: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.H66MEk);
-  obj[1] = getClientInfo().appVersion;
-  obj[2] = function onPress() {
-    callback(5795).copy(callback2().appVersion);
-    const obj = callback(5795);
-    const result = callback(4061).presentCopiedToClipboard();
-  };
-  const items = [callback(require(5805) /* ActionSheetRowIcon */.ActionSheetRow, obj), , , , , ];
+  obj[0] = callback(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj = { hasIcons: false, children: null };
   const obj1 = { label: null, subLabel: null, onPress: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.zuaWIt);
-  obj1[1] = getClientInfo().buildNumber;
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj1[0] = intl2.string(require(1236) /* getSystemLocale */.t.H66MEk);
+  obj1[1] = getClientInfo().appVersion;
   obj1[2] = function onPress() {
-    callback(5795).copy(callback2().buildNumber);
-    const obj = callback(5795);
+    callback(5796).copy(callback2().appVersion);
+    const obj = callback(5796);
     const result = callback(4061).presentCopiedToClipboard();
   };
-  items[1] = callback(require(5805) /* ActionSheetRowIcon */.ActionSheetRow, obj1);
+  const items = [callback(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj1), , , , ];
   let obj2 = { label: null, subLabel: null, onPress: null };
-  const intl4 = require(1236) /* getSystemLocale */.intl;
-  obj2[0] = intl4.string(require(1236) /* getSystemLocale */.t["YD/2+H"]);
-  obj2[1] = getClientInfo().releaseChannel;
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.zuaWIt);
+  obj2[1] = getClientInfo().buildNumber;
   obj2[2] = function onPress() {
-    callback(5795).copy(callback2().releaseChannel);
-    const obj = callback(5795);
+    callback(5796).copy(callback2().buildNumber);
+    const obj = callback(5796);
     const result = callback(4061).presentCopiedToClipboard();
   };
-  items[2] = callback(require(5805) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
+  items[1] = callback(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
   let obj3 = { label: null, subLabel: null, onPress: null };
-  const intl5 = require(1236) /* getSystemLocale */.intl;
-  obj3[0] = intl5.string(require(1236) /* getSystemLocale */.t["4bhpIV"]);
-  obj3[1] = getClientInfo().manifest;
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj3[0] = intl4.string(require(1236) /* getSystemLocale */.t["YD/2+H"]);
+  obj3[1] = getClientInfo().releaseChannel;
   obj3[2] = function onPress() {
-    callback(5795).copy(callback2().manifest);
-    const obj = callback(5795);
+    callback(5796).copy(callback2().releaseChannel);
+    const obj = callback(5796);
     const result = callback(4061).presentCopiedToClipboard();
   };
-  items[3] = callback(require(5805) /* ActionSheetRowIcon */.ActionSheetRow, obj3);
+  items[2] = callback(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj3);
   const obj4 = { label: null, subLabel: null, onPress: null };
-  const intl6 = require(1236) /* getSystemLocale */.intl;
-  obj4[0] = intl6.string(require(1236) /* getSystemLocale */.t.Wj3LW4);
-  obj4[1] = getClientInfo().buildOverride;
+  const intl5 = require(1236) /* getSystemLocale */.intl;
+  obj4[0] = intl5.string(require(1236) /* getSystemLocale */.t["4bhpIV"]);
+  obj4[1] = getClientInfo().manifest;
   obj4[2] = function onPress() {
-    callback(5795).copy(callback2().buildOverride);
-    const obj = callback(5795);
+    callback(5796).copy(callback2().manifest);
+    const obj = callback(5796);
     const result = callback(4061).presentCopiedToClipboard();
   };
-  items[4] = callback(require(5805) /* ActionSheetRowIcon */.ActionSheetRow, obj4);
-  let obj7 = require(4086) /* isFabric */;
-  let tmp4Result = null;
-  if (obj7.isFabric()) {
-    const obj5 = { label: "React Native New Architecture", subLabel: "Enabled", onPress: null };
-    obj5[2] = function onPress() {
-      callback(5795).copy("React Native New Architecture is enabled.");
-      const obj = callback(5795);
-      const result = callback(4061).presentCopiedToClipboard();
-    };
-    tmp4Result = tmp4(tmp2(5805).ActionSheetRow, obj5);
-  }
-  items[5] = tmp4Result;
-  const items1 = [closure_5(require(5805) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: items }), ];
+  items[3] = callback(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj4);
+  const obj5 = { label: null, subLabel: null, onPress: null };
+  const intl6 = require(1236) /* getSystemLocale */.intl;
+  obj5[0] = intl6.string(require(1236) /* getSystemLocale */.t.Wj3LW4);
+  obj5[1] = getClientInfo().buildOverride;
+  obj5[2] = function onPress() {
+    callback(5796).copy(callback2().buildOverride);
+    const obj = callback(5796);
+    const result = callback(4061).presentCopiedToClipboard();
+  };
+  items[4] = callback(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj5);
+  obj[1] = items;
+  const items1 = [callback2(require(5806) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj), ];
   const obj6 = { hasIcons: true, children: null };
-  obj7 = { icon: null, label: null, onPress: null };
-  obj7[0] = callback(require(4292) /* CopyIcon */.CopyIcon, {});
-  const intl7 = tmp2(1236).intl;
+  const obj7 = { icon: null, label: null, onPress: null };
+  obj7[0] = callback(require(4290) /* CopyIcon */.CopyIcon, {});
+  const intl7 = require(1236) /* getSystemLocale */.intl;
   obj7[1] = intl7.string(require(1236) /* getSystemLocale */.t["7dqZ6H"]);
   obj7[2] = function onPress() {
     let appVersion;
@@ -145,18 +135,18 @@ function ClientClientInfoActionSheet() {
     const tmp = callback2();
     ({ appVersion, buildNumber } = tmp);
     ({ releaseChannel, buildOverride, manifest } = tmp);
-    const deviceInfo = callback(4324).getDeviceInfo();
-    const obj = callback(4324);
-    const combined = "App: " + appVersion + " (" + buildNumber + ") " + releaseChannel + "; Manifest: " + manifest + "; Build Override: " + buildOverride + "; " + "Device: " + deviceInfo + " OS " + callback(4324).getSystemVersion() + ";";
-    const obj2 = callback(4324);
-    callback(5795).copy(combined);
-    const obj3 = callback(5795);
+    const deviceInfo = callback(4322).getDeviceInfo();
+    const obj = callback(4322);
+    const combined = "App: " + appVersion + " (" + buildNumber + ") " + releaseChannel + "; Manifest: " + manifest + "; Build Override: " + buildOverride + "; " + "Device: " + deviceInfo + " OS " + callback(4322).getSystemVersion() + ";";
+    const obj2 = callback(4322);
+    callback(5796).copy(combined);
+    const obj3 = callback(5796);
     const result = callback(4061).presentCopiedToClipboard();
   };
-  obj6[1] = callback(require(5805) /* ActionSheetRowIcon */.ActionSheetRow, obj7);
-  items1[1] = callback(require(5805) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj6);
+  obj6[1] = callback(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj7);
+  items1[1] = callback(require(5806) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj6);
   obj[2] = items1;
-  return closure_5(require(5803) /* ActionSheet */.ActionSheet, obj);
+  return callback2(require(5804) /* ActionSheet */.ActionSheet, obj);
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 const constants = require("getConstants").getConstants();
@@ -168,7 +158,7 @@ const pressable = createToggle.createPressable({
   parent: null,
   IconComponent: require("ClipboardListIcon").ClipboardListIcon,
   onPress: function handleClientInfoPress() {
-    let obj = importDefault(4312);
+    let obj = importDefault(4310);
     obj = { default: ClientClientInfoActionSheet };
     obj.openLazy(Promise.resolve(obj), "ClientClientInfoActionSheet");
   },
@@ -183,7 +173,7 @@ let obj = {
   parent: null,
   IconComponent: require("ClipboardListIcon").ClipboardListIcon,
   onPress: function handleClientInfoPress() {
-    let obj = importDefault(4312);
+    let obj = importDefault(4310);
     obj = { default: ClientClientInfoActionSheet };
     obj.openLazy(Promise.resolve(obj), "ClientClientInfoActionSheet");
   },

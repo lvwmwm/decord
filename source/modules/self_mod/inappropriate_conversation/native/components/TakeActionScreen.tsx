@@ -1,10 +1,10 @@
-// Module ID: 15113
-// Function ID: 15114
+// Module ID: 15122
+// Function ID: 15123
 // Name: TakeActionButtons
-// Dependencies: [5, 32, 19, 17, 3998, 1922, 10385, 21, 4344, 712, 589, 10418, 10421, 1499, 9289, 7825, 10398, 8061, 4062, 1236, 4305, 4061, 4754, 10429, 8815, 4823, 7997, 4058, 4340, 2]
+// Dependencies: [5, 32, 19, 17, 3998, 1922, 10297, 21, 4342, 712, 589, 10332, 10335, 1499, 9293, 7829, 10310, 8065, 4062, 1236, 4303, 4061, 4755, 10343, 8819, 4824, 8001, 4058, 4338, 2]
 // Exports: default
 
-// Module 15113 (TakeActionButtons)
+// Module 15122 (TakeActionButtons)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -114,7 +114,7 @@ export default function TakeActionButtons(senderId) {
             let closure_0 = tmp4;
             if (null != outer1_9.getUser(outer1_0)) {
               outer1_6(true);
-              let obj2 = outer1_0(8061);
+              let obj2 = outer1_0(8065);
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
@@ -124,7 +124,7 @@ export default function TakeActionButtons(senderId) {
                 obj = { key: outer1_13, content: null, IconComponent: null, iconColor: null, containerStyle: null };
                 const intl = tmp4(1236).intl;
                 obj[1] = intl.string(tmp4(1236).t.gn2c6X);
-                obj[2] = tmp4(4305).CircleCheckIcon;
+                obj[2] = tmp4(4303).CircleCheckIcon;
                 obj[3] = outer1_14;
                 obj[4] = toastContainer.toastContainer;
                 obj.open(obj);
@@ -142,9 +142,9 @@ export default function TakeActionButtons(senderId) {
           throw arg1;
         } else if (arg0 !== 2) {
           callback2(false);
-          obj = v0(7825);
+          obj = v0(7829);
           const result = obj.showReportSuccessToast(closure_0, v0);
-          callback(outer1_0(10398).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          callback(outer1_0(10310).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         dependencyMap = 3;
         obj2 = { value: null, done: true };

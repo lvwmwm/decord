@@ -1,10 +1,10 @@
-// Module ID: 4572
-// Function ID: 4573
+// Module ID: 4573
+// Function ID: 4574
 // Name: useNullableMessageAuthor
-// Dependencies: [1391, 1990, 1983, 1910, 3998, 1922, 38, 589, 4189, 4573, 2]
+// Dependencies: [1391, 1990, 1983, 1910, 3998, 1922, 38, 589, 4187, 4574, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4572 (useNullableMessageAuthor)
+// Module 4573 (useNullableMessageAuthor)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
@@ -239,7 +239,7 @@ function computeMessageAuthor(channel) {
   let str = "???";
   if (null != user) {
     if (userName == null) {
-      let obj = importDefault(4189);
+      let obj = importDefault(4187);
       userName = obj.getName(user);
     }
     str = userName;

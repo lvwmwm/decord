@@ -1,7 +1,7 @@
 // Module ID: 13116
 // Function ID: 13117
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 3989, 676, 21, 4344, 10873, 589, 1236, 1891, 5169, 4754, 2]
+// Dependencies: [19, 17, 3989, 676, 21, 4342, 10787, 589, 1236, 1891, 5170, 4755, 2]
 // Exports: default
 
 // Module 13116 (JoinVoiceChannelButton)
@@ -44,6 +44,6 @@ export default function JoinVoiceChannelButton(channel) {
     const obj = outer1_2(outer1_3[9]);
     const voiceChannel = outer1_1(outer1_3[10]).selectVoiceChannel(channel.id);
   }, items1);
-  obj[1] = jsx(channel(4754).Button, { disabled: flag, text: stringResult, onPress: callback });
+  obj[1] = jsx(channel(4755).Button, { disabled: flag, text: stringResult, onPress: callback });
   return <View style={items2}>{null}</View>;
 };

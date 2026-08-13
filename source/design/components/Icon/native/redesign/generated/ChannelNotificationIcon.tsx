@@ -1,10 +1,10 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9783
+// Function ID: 9784
 // Name: ChannelNotificationIcon
-// Dependencies: [19, 21, 712, 4064, 9780, 2]
+// Dependencies: [19, 21, 712, 4064, 9784, 2]
 // Exports: ChannelNotificationIcon
 
-// Module 9779 (ChannelNotificationIcon)
+// Module 9783 (ChannelNotificationIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ChannelNotificationIcon = function ChannelNotificationIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9780) /* registerAsset */;
+  obj[0] = require(9784) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

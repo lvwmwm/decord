@@ -1,9 +1,9 @@
-// Module ID: 4311
-// Function ID: 4312
+// Module ID: 4309
+// Function ID: 4310
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 4311 (enforcing)
+// Module 4309 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeBrowserManagerModule");

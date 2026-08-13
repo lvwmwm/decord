@@ -1,10 +1,10 @@
-// Module ID: 8542
-// Function ID: 8543
+// Module ID: 8546
+// Function ID: 8547
 // Name: EyeIcon
-// Dependencies: [19, 21, 712, 4064, 8543, 2]
+// Dependencies: [19, 21, 712, 4064, 8547, 2]
 // Exports: EyeIcon
 
-// Module 8542 (EyeIcon)
+// Module 8546 (EyeIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const EyeIcon = function EyeIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8543) /* registerAsset */;
+  obj[0] = require(8547) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

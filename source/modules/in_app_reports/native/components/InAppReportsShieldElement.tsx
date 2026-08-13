@@ -1,10 +1,10 @@
-// Module ID: 8078
-// Function ID: 8079
+// Module ID: 8082
+// Function ID: 8083
 // Name: ShieldElement
-// Dependencies: [19, 17, 21, 4344, 6068, 2]
+// Dependencies: [19, 17, 21, 4342, 6070, 2]
 // Exports: default
 
-// Module 8078 (ShieldElement)
+// Module 8082 (ShieldElement)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -22,7 +22,7 @@ export default function ShieldElement(element) {
     if ("success" === element.type) {
       const obj = { style: null, children: null };
       obj[0] = tmp.container;
-      obj[1] = jsx(require(6068) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 });
+      obj[1] = jsx(require(6070) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 });
       tmp2 = <View style={null}>{null}</View>;
     }
   }

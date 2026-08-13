@@ -1,10 +1,10 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 14917
+// Function ID: 14918
 // Name: FeaturedFirstCardCoachmarkAnchor
-// Dependencies: [19, 17, 21, 14909, 2]
+// Dependencies: [19, 17, 21, 14918, 2]
 // Exports: default
 
-// Module 14908 (FeaturedFirstCardCoachmarkAnchor)
+// Module 14917 (FeaturedFirstCardCoachmarkAnchor)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -17,7 +17,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/collectibles/na
 export default function FeaturedFirstCardCoachmarkAnchor(children) {
   const ref = React.useRef(null);
   const obj = { collapsable: false, children: null };
-  const items = [callback(View, { ref, style: { position: "absolute", top: 0, right: 6, width: 32, height: 32 }, collapsable: false }), children.children, callback(importDefault(14909), { anchorRef: ref })];
+  const items = [callback(View, { ref, style: { position: "absolute", top: 0, right: 6, width: 32, height: 32 }, collapsable: false }), children.children, callback(importDefault(14918), { anchorRef: ref })];
   obj[1] = items;
   return callback2(View, obj);
 };

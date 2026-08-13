@@ -1,10 +1,10 @@
-// Module ID: 10000
-// Function ID: 10001
+// Module ID: 9998
+// Function ID: 9999
 // Name: AnalyticsIcon
-// Dependencies: [19, 21, 712, 4064, 10001, 2]
+// Dependencies: [19, 21, 712, 4064, 9999, 2]
 // Exports: AnalyticsIcon
 
-// Module 10000 (AnalyticsIcon)
+// Module 9998 (AnalyticsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const AnalyticsIcon = function AnalyticsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10001) /* registerAsset */;
+  obj[0] = require(9999) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

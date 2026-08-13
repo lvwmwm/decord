@@ -1,10 +1,10 @@
-// Module ID: 7840
-// Function ID: 7841
+// Module ID: 7844
+// Function ID: 7845
 // Name: AgeVerificationModalEntryPoint
 // Dependencies: [1391, 676, 698, 2]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 7840 (AgeVerificationModalEntryPoint)
+// Module 7844 (AgeVerificationModalEntryPoint)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 

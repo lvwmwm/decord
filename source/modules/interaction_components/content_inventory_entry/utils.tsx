@@ -1,10 +1,10 @@
-// Module ID: 8255
-// Function ID: 8256
+// Module ID: 8259
+// Function ID: 8260
 // Name: isContentInventoryFallbackEmbed
 // Dependencies: [676, 1403, 2]
 // Exports: isContentInventoryFallbackEmbed
 
-// Module 8255 (isContentInventoryFallbackEmbed)
+// Module 8259 (isContentInventoryFallbackEmbed)
 import { MessageEmbedFlags } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/interaction_components/content_inventory_entry/utils.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9125
-// Function ID: 9126
+// Module ID: 9129
+// Function ID: 9130
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 // Exports: getGuildMembersInMobileVCInvitesExperiment
 
-// Module 9125 (apexExperiment)
+// Module 9129 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

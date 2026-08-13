@@ -1,9 +1,9 @@
-// Module ID: 4157
-// Function ID: 4158
+// Module ID: 4155
+// Function ID: 4156
 // Name: OmnibuttonCoachmarkRive
-// Dependencies: [109, 19, 21, 4077, 4158, 4134, 2]
+// Dependencies: [109, 19, 21, 4077, 4156, 4132, 2]
 
-// Module 4157 (OmnibuttonCoachmarkRive)
+// Module 4155 (OmnibuttonCoachmarkRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -66,7 +66,7 @@ const forwardRefResult = importAllResult.forwardRef(function OmnibuttonCoachmark
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4134) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4132) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/OmnibuttonCoachmarkRive.tsx");
 

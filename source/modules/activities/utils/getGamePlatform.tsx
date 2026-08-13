@@ -1,10 +1,10 @@
-// Module ID: 15893
-// Function ID: 15894
+// Module ID: 15902
+// Function ID: 15903
 // Name: getGamePlatform
-// Dependencies: [676, 12343, 2]
+// Dependencies: [676, 12345, 2]
 // Exports: default
 
-// Module 15893 (getGamePlatform)
+// Module 15902 (getGamePlatform)
 import ME from "ME";
 
 let c3;
@@ -19,7 +19,7 @@ export default function getGamePlatform(type) {
     if (null != type.type) {
       tmp = null;
       if (type.type === constants.PLAYING) {
-        if (importDefault(12343)(type)) {
+        if (importDefault(12345)(type)) {
           let DESKTOP = constants2.XBOX;
         } else if (null != type.platform) {
           DESKTOP = type.platform;

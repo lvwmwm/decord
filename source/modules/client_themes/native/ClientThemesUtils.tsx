@@ -1,10 +1,10 @@
-// Module ID: 4164
-// Function ID: 4165
+// Module ID: 4162
+// Function ID: 4163
 // Name: getGradientColorByPercentage
-// Dependencies: [32, 19, 1302, 4165, 1346, 712, 689, 4193, 4194, 1349, 1363, 4195, 4280, 4277, 2]
+// Dependencies: [32, 19, 1302, 4163, 1346, 712, 689, 4191, 4192, 1349, 1363, 4193, 4278, 4275, 2]
 // Exports: colorToHex, getClientThemesGradientColorByPercentage, getClientThemesGradientHexColors, getEmbedBackground, getEmbedScrollGradientBackground, getGradientThemeMetadata, getGradientValue, useGradientValue
 
-// Module 4164 (getGradientColorByPercentage)
+// Module 4162 (getGradientColorByPercentage)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import handleThemeChange from "handleThemeChange";
@@ -28,7 +28,7 @@ function getGradientColorByPercentage(type, END) {
   } else {
     colors = type.customThemeSettings.colors;
     if (1 === colors.length) {
-      return tmp(4193).hexToRgb(colors[0]);
+      return tmp(4191).hexToRgb(colors[0]);
     } else {
       const mapped2 = colors.map((arg0, arg1) => arg1 / (colors.length - 1) * 100);
       obj = importDefault(689);
@@ -55,10 +55,10 @@ function getBottomColorWithOpacity(type, hexToRgbResult, arg2) {
   const tmpResult = getGradientColorByPercentage(type, START);
   const tmp = getGradientColorByPercentage;
   const tmp2 = require;
-  const tmp2Result = require(4193) /* hexToRgba */;
-  const tmp7 = new importDefault(4194)(tmpResult.r, tmpResult.g, tmpResult.b, arg2);
-  const mixColorsResult = tmp2Result.mixColors(tmp7, new importDefault(4194)(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - arg2));
-  const tmp8 = new importDefault(4194)(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - arg2);
+  const tmp2Result = require(4191) /* hexToRgba */;
+  const tmp7 = new importDefault(4192)(tmpResult.r, tmpResult.g, tmpResult.b, arg2);
+  const mixColorsResult = tmp2Result.mixColors(tmp7, new importDefault(4192)(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - arg2));
+  const tmp8 = new importDefault(4192)(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - arg2);
   const obj2 = importDefault(689);
   return importDefault(689).rgb(mixColorsResult.red, mixColorsResult.green, mixColorsResult.blue).hex("rgb");
 }
@@ -76,17 +76,17 @@ function getTopColorWithOpacity(type, hexToRgbResult, arg2) {
   const tmpResult = getGradientColorByPercentage(type, END);
   const tmp = getGradientColorByPercentage;
   const tmp2 = require;
-  const tmp2Result = require(4193) /* hexToRgba */;
-  const tmp7 = new importDefault(4194)(tmpResult.r, tmpResult.g, tmpResult.b, arg2);
-  const mixColorsResult = tmp2Result.mixColors(tmp7, new importDefault(4194)(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - arg2));
-  const tmp8 = new importDefault(4194)(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - arg2);
+  const tmp2Result = require(4191) /* hexToRgba */;
+  const tmp7 = new importDefault(4192)(tmpResult.r, tmpResult.g, tmpResult.b, arg2);
+  const mixColorsResult = tmp2Result.mixColors(tmp7, new importDefault(4192)(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - arg2));
+  const tmp8 = new importDefault(4192)(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - arg2);
   const obj2 = importDefault(689);
   return importDefault(689).rgb(mixColorsResult.red, mixColorsResult.green, mixColorsResult.blue).hex("rgb");
 }
 function calculateGradientValueWithOpacity(customBackgroundGradient, END, theme) {
   const obj = require(1363) /* AccessibilityAnnouncer */;
   const isThemeDarkResult = obj.isThemeDark(theme);
-  const hexToRgb = require(4193) /* hexToRgba */.hexToRgb;
+  const hexToRgb = require(4191) /* hexToRgba */.hexToRgb;
   if (isThemeDarkResult) {
     let hexToRgbResult = hexToRgb(tmp5.DARK);
   } else {
@@ -143,10 +143,10 @@ function calculateGradientValueWithOpacity(customBackgroundGradient, END, theme)
     }
   } else {
     const tmp30 = getGradientColorByPercentage(customBackgroundGradient, tmp10);
-    const tmp35 = new importDefault(4194)(tmp30.r, tmp30.g, tmp30.b, tmp11);
-    const tmp38 = new importDefault(4194)(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - tmp11);
-    const mixColorsResult = tmp(4193).mixColors(tmp35, tmp38);
-    const tmpResult1 = tmp(4193);
+    const tmp35 = new importDefault(4192)(tmp30.r, tmp30.g, tmp30.b, tmp11);
+    const tmp38 = new importDefault(4192)(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - tmp11);
+    const mixColorsResult = tmp(4191).mixColors(tmp35, tmp38);
+    const tmpResult1 = tmp(4191);
     const obj5 = importDefault(689);
     return importDefault(689).rgb(mixColorsResult.red, mixColorsResult.green, mixColorsResult.blue).hex("rgb");
   }
@@ -260,9 +260,9 @@ export const getGradientValue = function getGradientValue(theme, END) {
 export const useGradientValue = function useGradientValue(END) {
   let closure_0 = END;
   const importDefault = arg1;
-  const tmp = importDefault(4195)();
+  const tmp = importDefault(4193)();
   const dependencyMap = tmp;
-  const tmp2 = importDefault(4280)();
+  const tmp2 = importDefault(4278)();
   let _slicedToArray = tmp2;
   const items = [tmp, , , , ];
   let dark;
@@ -315,7 +315,7 @@ export const useGradientValue = function useGradientValue(END) {
   }, items);
 };
 export const getEmbedScrollGradientBackground = function getEmbedScrollGradientBackground() {
-  let customBackgroundGradient = require(4277) /* getCustomThemesName */.getCustomBackgroundGradient();
+  let customBackgroundGradient = require(4275) /* getCustomThemesName */.getCustomBackgroundGradient();
   if (customBackgroundGradient == null) {
     customBackgroundGradient = isSyncedModeThemesEnabled.gradientPreset;
   }
@@ -337,5 +337,5 @@ export const getEmbedBackground = function getEmbedBackground() {
   const obj = require(1363) /* AccessibilityAnnouncer */;
   const tmp = require;
   const tmp4 = obj.isThemeDark(theme.theme) ? obj.DARK : obj.LIGHT;
-  return require(4193) /* hexToRgba */.hexWithOpacity(tmp4, obj.LEVEL_1);
+  return require(4191) /* hexToRgba */.hexWithOpacity(tmp4, obj.LEVEL_1);
 };

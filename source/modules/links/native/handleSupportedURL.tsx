@@ -1,10 +1,10 @@
-// Module ID: 13264
-// Function ID: 13265
+// Module ID: 13265
+// Function ID: 13266
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 5383, 7027, 6926, 12752, 1218, 676, 1398, 4408, 4556, 10679, 7039, 4327, 13265, 11338, 8123, 12091, 4549, 4200, 13266, 8828, 6057, 9379, 11250, 1891, 10459, 698, 10461, 5905, 11116, 11380, 13273, 12123, 10683, 2007, 10680, 10678, 13275, 13277, 1624, 4901, 13282, 4058, 13284, 1910, 5998, 8985, 8994, 5972, 4548, 10937, 4199, 5212, 1222, 709, 5163, 1486, 9066, 13287, 13302, 500, 13313, 9110, 13320, 4663, 13321, 7042, 5787, 9259, 7217, 5206, 11224, 10080, 13393, 5191, 10655, 9329, 9323, 4310, 2]
+// Dependencies: [109, 5, 5384, 7033, 6932, 12752, 1218, 676, 1398, 4409, 4557, 10593, 7045, 4325, 13266, 11329, 8127, 12093, 4550, 4198, 13267, 8832, 6059, 9383, 11241, 1891, 10373, 698, 10375, 5907, 11031, 11371, 13274, 12125, 10597, 2007, 10594, 10592, 13276, 13278, 1624, 4902, 13283, 4058, 13285, 1910, 6000, 8989, 8998, 5974, 4549, 10851, 4197, 5213, 1222, 709, 5164, 1486, 9070, 13288, 13303, 500, 13314, 9114, 13321, 4664, 13322, 7048, 5788, 9263, 7222, 5207, 11215, 10078, 13394, 5192, 10569, 9333, 9327, 4308, 2]
 // Exports: default
 
-// Module 13264 (handleSupportedURL)
+// Module 13265 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -225,7 +225,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: "<string:1056964609>" };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: true };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };

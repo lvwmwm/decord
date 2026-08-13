@@ -1,10 +1,10 @@
-// Module ID: 15349
-// Function ID: 15350
+// Module ID: 15358
+// Function ID: 15359
 // Name: handleCreateCategory
-// Dependencies: [19, 21, 4312, 15350, 9755, 9758, 12195, 5803, 5435, 1236, 5805, 3047, 12168, 15351, 2]
+// Dependencies: [19, 21, 4310, 15359, 9759, 9762, 12197, 5804, 5436, 1236, 5806, 3047, 12170, 15360, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 15349 (handleCreateCategory)
+// Module 15358 (handleCreateCategory)
 import noop from "noop";
 import jsxProd from "jsxProd";
 
@@ -12,9 +12,9 @@ let c4;
 let c5;
 const require = arg1;
 function handleCreateCategory() {
-  importDefault(4312).hideActionSheet(FavoritesGuildAddActionSheet);
-  const obj = importDefault(4312);
-  const result = require(15350) /* FavoritesGuildAddCategoryActionSheet */.openFavoritesGuildAddCategoryActionSheet();
+  importDefault(4310).hideActionSheet(FavoritesGuildAddActionSheet);
+  const obj = importDefault(4310);
+  const result = require(15359) /* FavoritesGuildAddCategoryActionSheet */.openFavoritesGuildAddCategoryActionSheet();
 }
 function FavoritesGuildAddActionSheet() {
   let obj = shouldShowUpsell(favoriteLimit[4]);
@@ -65,7 +65,7 @@ FavoritesGuildAddActionSheet = "FavoritesGuildAddActionSheet";
 let result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/favorites/native/FavoritesGuildAddActionSheet.tsx");
 
 export const openFavoritesGuildAddActionSheet = function openFavoritesGuildAddActionSheet() {
-  let obj = require(4312) /* ACTION_SHEET_HEIGHT_HALF */;
+  let obj = require(4310) /* ACTION_SHEET_HEIGHT_HALF */;
   obj = { content: callback(FavoritesGuildAddActionSheet, {}), key: FavoritesGuildAddActionSheet };
   obj.showActionSheet(obj);
 };

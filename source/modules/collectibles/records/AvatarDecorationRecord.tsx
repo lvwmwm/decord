@@ -1,10 +1,10 @@
-// Module ID: 7048
-// Function ID: 7049
+// Module ID: 7054
+// Function ID: 7055
 // Name: fromServer
 // Dependencies: [1948, 1949, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 7048 (fromServer)
+// Module 7054 (fromServer)
 import "fromServer";
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 14611
-// Function ID: 14612
+// Module ID: 14620
+// Function ID: 14621
 // Name: radio
-// Dependencies: [19, 8123, 4034, 1236, 1306, 10493, 4273, 2]
+// Dependencies: [19, 8127, 4034, 1236, 1306, 10407, 4271, 2]
 
-// Module 14611 (radio)
+// Module 14620 (radio)
 import noop from "noop";
 import createToggle from "createToggle";
 
@@ -35,7 +35,7 @@ createToggle = {
     }, []);
   },
   usePredicate() {
-    return require(4273) /* apexExperiment */.useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");
+    return require(4271) /* apexExperiment */.useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");
   }
 };
 createToggle = createToggle.createRadio(createToggle);

@@ -1,8 +1,8 @@
-// Module ID: 11634
-// Function ID: 11635
-// Dependencies: [19, 1391, 3998, 1922, 676, 21, 5767, 589, 12, 1370, 11120, 1236, 8828, 9671, 2]
+// Module ID: 11630
+// Function ID: 11631
+// Dependencies: [19, 1391, 3998, 1922, 676, 21, 5768, 589, 12, 1370, 11035, 1236, 8832, 9675, 2]
 
-// Module 11634
+// Module 11630
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";

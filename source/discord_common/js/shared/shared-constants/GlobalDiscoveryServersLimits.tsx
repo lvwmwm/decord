@@ -1,9 +1,9 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 16997
+// Function ID: 16998
 // Name: GlobalDiscoveryServersLimits
 // Dependencies: [2]
 
-// Module 16986 (GlobalDiscoveryServersLimits)
+// Module 16997 (GlobalDiscoveryServersLimits)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/GlobalDiscoveryServersLimits.tsx");
 
 export const GlobalDiscoveryServersLimits = { FEATURED_DEFAULT_LIMIT: 30, [30]: "FEATURED_DEFAULT_LIMIT", SEARCH_RESULTS_DEFAULT_LIMIT: 24, [24]: "SEARCH_RESULTS_DEFAULT_LIMIT" };

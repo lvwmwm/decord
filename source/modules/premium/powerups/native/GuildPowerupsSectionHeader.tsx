@@ -1,10 +1,10 @@
-// Module ID: 11971
-// Function ID: 11972
+// Module ID: 11973
+// Function ID: 11974
 // Name: GuildPowerupsSectionHeader
-// Dependencies: [17, 21, 4344, 712, 8236, 4340, 2]
+// Dependencies: [17, 21, 4342, 712, 8240, 4338, 2]
 // Exports: default
 
-// Module 11971 (GuildPowerupsSectionHeader)
+// Module 11973 (GuildPowerupsSectionHeader)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -22,15 +22,15 @@ export default function GuildPowerupsSectionHeader(arg0) {
   let description;
   let title;
   ({ title, description } = arg0);
-  let obj = require(8236) /* apexExperiment */;
+  let obj = require(8240) /* apexExperiment */;
   obj = { style: callback2().headerContainer, children: null };
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsSectionHeader");
-  const items = [callback(require(4340) /* Text */.Text, { variant: "heading-lg/semibold", accessibilityRole: "header", children: title }), ];
+  const items = [callback(require(4338) /* Text */.Text, { variant: "heading-lg/semibold", accessibilityRole: "header", children: title }), ];
   let str = "text-md/normal";
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-sm/normal";
   }
-  items[1] = callback(require(4340) /* Text */.Text, { variant: str, children: description });
+  items[1] = callback(require(4338) /* Text */.Text, { variant: str, children: description });
   obj[1] = items;
   return closure_4(View, obj);
 };

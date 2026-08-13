@@ -1,33 +1,35 @@
-// Module ID: 11326
-// Function ID: 11327
+// Module ID: 11317
+// Function ID: 11318
 // Name: _transformClientActionToApiAction
-// Dependencies: [5, 1910, 3989, 676, 11327, 1370, 11, 530, 11320, 4538, 7019, 709, 2]
+// Dependencies: [5, 1983, 1910, 3989, 676, 11318, 1370, 11, 530, 11311, 4539, 7025, 709, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11326 (_transformClientActionToApiAction)
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
+// Module 11317 (_transformClientActionToApiAction)
+import _transformMetadataToCamelCase from "_transformMetadataToCamelCase";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
-let closure_6;
+let c9;
 let error;
 let metroImportAll;
 const require = arg1;
 function _transformClientActionToApiAction(type) {
   const obj = { type: type.type, metadata: null };
-  obj[1] = require(11327) /* _transformMetadataToCamelCase */._transformMetadataToSnakeCase(type.metadata);
+  obj[1] = require(11318) /* _transformMetadataToCamelCase */._transformMetadataToSnakeCase(type.metadata);
   return obj;
 }
 function _transformClientRuleToApiRule(id) {
-  let obj = require(11327) /* _transformMetadataToCamelCase */;
+  const _require = id;
+  let obj = _require(11318);
   const result = obj._transformMetadataToSnakeCase(id.triggerMetadata);
   if (null != result) {
     delete tmp2[tmp];
   }
   obj = { id: id.id, name: id.name, guild_id: id.guildId, event_type: id.eventType, trigger_type: id.triggerType, trigger_metadata: result, actions: null, enabled: null, creator_id: null, position: null, exempt_channels: null, exempt_roles: null };
   const actions = id.actions;
-  const found = actions.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
+  const found = actions.filter(_require(1370).isNotNullish);
   obj[6] = found.map(_transformClientActionToApiAction);
   ({ enabled: obj2[7], creatorId: obj2[8], position: obj2[9] } = id);
   let exemptChannels = id.exemptChannels;
@@ -39,12 +41,12 @@ function _transformClientRuleToApiRule(id) {
   if (exemptRoles == null) {
     exemptRoles = [];
   }
-  obj[11] = Array.from(exemptRoles);
+  obj[11] = Array.from(exemptRoles).filter((arg0) => null != outer1_4.getRole(guildId.guildId, arg0));
   return obj;
 }
 function _transformApiActionToClientAction(type) {
   const obj = { type: type.type, metadata: null };
-  obj[1] = require(11327) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(type.metadata);
+  obj[1] = require(11318) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(type.metadata);
   return obj;
 }
 function _transformApiRuletoClientRule(id) {
@@ -55,7 +57,7 @@ function _transformApiRuletoClientRule(id) {
     id = obj.fromTimestamp(Date.now());
   }
   obj = { id, name: id.name, guildId: id.guild_id, eventType: id.event_type, triggerType: id.trigger_type, triggerMetadata: null, actions: null, enabled: null, creatorId: null, position: null, exemptChannels: null, exemptRoles: null };
-  obj[5] = require(11327) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(id.trigger_metadata);
+  obj[5] = require(11318) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(id.trigger_metadata);
   const actions = id.actions;
   const found = actions.filter(require(1370) /* isDiscordFrontendDevelopment */.isNotNullish);
   obj[6] = found.map(_transformApiActionToClientAction);
@@ -64,7 +66,7 @@ function _transformApiRuletoClientRule(id) {
   if (exempt_channels == null) {
     exempt_channels = [];
   }
-  const obj3 = require(11327) /* _transformMetadataToCamelCase */;
+  const obj3 = require(11318) /* _transformMetadataToCamelCase */;
   obj[10] = new Set(exempt_channels);
   let exempt_roles = id.exempt_roles;
   if (exempt_roles == null) {
@@ -87,14 +89,14 @@ function _validateAutomodRule() {
     return (function*(arg0) {
       const table = tmp3;
       let closure_1 = tmp2;
-      const HTTP = lib(outer1_2[7]).HTTP;
+      const HTTP = lib(outer1_2[8]).HTTP;
       const obj1 = { url: null, body: null, rejectWithError: null };
-      obj1[0] = outer1_7.GUILD_AUTOMOD_VALIDATE_RULE(lib.guildId);
-      obj1[1] = outer1_10(lib);
-      const tmp20 = outer1_10(lib);
-      obj1[2] = lib(outer1_2[7]).rejectWithMigratedError();
+      obj1[0] = outer1_8.GUILD_AUTOMOD_VALIDATE_RULE(lib.guildId);
+      obj1[1] = outer1_11(lib);
+      const tmp20 = outer1_11(lib);
+      obj1[2] = lib(outer1_2[8]).rejectWithMigratedError();
       lib = yield HTTP.post(obj1);
-      const obj = lib(table[4]);
+      const obj = lib(table[5]);
       return obj._transformMetadataToCamelCase(lib.body);
     })();
   });
@@ -115,12 +117,12 @@ function _createAutomodRule() {
     let c3 = 0;
     return (function*(arg0, body) {
       delete tmp3[tmp2];
-      const callback = outer1_12;
+      const callback = outer1_13;
       const HTTP = lib(530).HTTP;
       const obj1 = { url: null, body: null, rejectWithError: null };
-      obj1[0] = outer1_7.GUILD_AUTOMOD_RULES(lib.guildId);
-      obj1[1] = outer1_10(lib);
-      const tmp16 = outer1_10(lib);
+      obj1[0] = outer1_8.GUILD_AUTOMOD_RULES(lib.guildId);
+      obj1[1] = outer1_11(lib);
+      const tmp16 = outer1_11(lib);
       obj1[2] = lib(530).rejectWithMigratedError();
       yield HTTP.post(obj1);
       return callback(body.body);
@@ -142,12 +144,12 @@ function _updateAutomodRule() {
     let c2 = 0;
     let c3 = 0;
     return (function*(arg0, body) {
-      const callback = outer1_12;
+      const callback = outer1_13;
       const HTTP = lib(530).HTTP;
       const obj1 = { url: null, body: null, rejectWithError: null };
-      obj1[0] = outer1_7.GUILD_AUTOMOD_RULE(lib.guildId, lib.id);
-      obj1[1] = outer1_10(lib);
-      const tmp14 = outer1_10(lib);
+      obj1[0] = outer1_8.GUILD_AUTOMOD_RULE(lib.guildId, lib.id);
+      obj1[1] = outer1_11(lib);
+      const tmp14 = outer1_11(lib);
       obj1[2] = lib(530).rejectWithMigratedError();
       yield HTTP.patch(obj1);
       return callback(body.body);
@@ -172,7 +174,7 @@ function _deleteAutomodRule() {
     return (function*(arg0, arg1) {
       const HTTP = callback(530).HTTP;
       const obj1 = { url: null, rejectWithError: null };
-      obj1[0] = outer1_7.GUILD_AUTOMOD_RULE(closure_1, callback);
+      obj1[0] = outer1_8.GUILD_AUTOMOD_RULE(closure_1, callback);
       obj1[1] = callback(530).rejectWithMigratedError();
       yield HTTP.del(obj1);
       return true;
@@ -223,10 +225,10 @@ function _fetchAutomodRules() {
               let closure_2 = tmp2;
               let closure_1 = tmp5;
               let lib;
-              const HTTP = lib(outer1_2[7]).HTTP;
+              const HTTP = lib(outer1_2[8]).HTTP;
               const obj1 = { url: null, rejectWithError: null };
-              obj1[0] = outer1_7.GUILD_AUTOMOD_RULES(lib);
-              obj1[1] = lib(outer1_2[7]).rejectWithMigratedError();
+              obj1[0] = outer1_8.GUILD_AUTOMOD_RULES(lib);
+              obj1[1] = lib(outer1_2[8]).rejectWithMigratedError();
               c3 = 1;
               c4 = 1;
               const obj2 = { value: null, done: false };
@@ -246,7 +248,7 @@ function _fetchAutomodRules() {
             const _Array = Array;
             if (Array.isArray(lib.body)) {
               const body = lib.body;
-              const mapped = body.map(closure_12);
+              const mapped = body.map(closure_13);
             } else {
               const items = [];
             }
@@ -303,10 +305,10 @@ function _executeAlertAction() {
               obj[0] = arg1;
               return obj;
             } else {
-              if (outer1_5.can(outer1_8.MANAGE_MESSAGES, closure_1)) {
+              if (outer1_6.can(outer1_9.MANAGE_MESSAGES, closure_1)) {
                 const HTTP = callback(530).HTTP;
                 const obj1 = { url: null, body: null, rejectWithError: null };
-                obj1[0] = outer1_7.GUILD_AUTOMOD_ALERT_ACTION(tmp15.guild_id);
+                obj1[0] = outer1_8.GUILD_AUTOMOD_ALERT_ACTION(tmp15.guild_id);
                 const obj2 = { message_id: null, channel_id: null, alert_action_type: null };
                 obj2[0] = tmp14;
                 obj2[1] = tmp15.id;
@@ -350,8 +352,8 @@ function _executeAlertAction() {
   }
   return applyArgumentsResult;
 }
-({ AnalyticEvents: closure_6, Endpoints: error, Permissions: metroImportAll } = ME);
-let result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_automod/GuildAutomodActionCreators.tsx");
+({ AnalyticEvents: error, Endpoints: metroImportAll, Permissions: c9 } = ME);
+let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_automod/GuildAutomodActionCreators.tsx");
 
 export const validateAutomodRule = function validateAutomodRule() {
   const self = this;
@@ -423,16 +425,16 @@ export const removeMentionRaidRestrictionWithFeedback = function removeMentionRa
     canResult = getUncachedChannelPermissions.can(constants.MANAGE_GUILD, guild);
   }
   if (canResult) {
-    const result = _require(11320).openConfirmRemoveMentionRaid(() => {
-      let obj = callback(4538);
-      obj = { feedback_type: callback(7019).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: closure_1 };
-      obj.trackWithMetadata(outer1_6.GUILD_AUTOMOD_FEEDBACK, obj);
+    const result = _require(11311).openConfirmRemoveMentionRaid(() => {
+      let obj = callback(4539);
+      obj = { feedback_type: callback(7025).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: closure_1 };
+      obj.trackWithMetadata(outer1_7.GUILD_AUTOMOD_FEEDBACK, obj);
       const HTTP = callback(530).HTTP;
-      obj = { url: outer1_7.GUILD_AUTOMOD_CLEAR_MENTION_RAID(callback), rejectWithError: true };
+      obj = { url: outer1_8.GUILD_AUTOMOD_CLEAR_MENTION_RAID(callback), rejectWithError: true };
       HTTP.post(obj);
       dependencyMap();
     });
-    let obj = _require(11320);
+    let obj = _require(11311);
   }
 };
 export const clearMentionRaidDetected = function clearMentionRaidDetected(guildId) {

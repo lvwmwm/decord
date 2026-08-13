@@ -1,7 +1,7 @@
 // Module ID: 12893
 // Function ID: 12894
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [32, 19, 17, 21, 4344, 712, 12894, 5767, 5787, 7687, 12895, 4340, 1236, 4754, 5795, 12896, 4772, 4058, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 12894, 5768, 5788, 7691, 12895, 4338, 1236, 4755, 5796, 12896, 4773, 4058, 2]
 // Exports: default
 
 // Module 12893 (OutboundPromotionClaimAlert)

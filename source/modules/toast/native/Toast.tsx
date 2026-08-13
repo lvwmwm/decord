@@ -1,10 +1,10 @@
-// Module ID: 16105
-// Function ID: 16106
+// Module ID: 16115
+// Function ID: 16116
 // Name: ToastIcon
-// Dependencies: [32, 19, 17, 21, 4344, 712, 4065, 1297, 4340, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 4065, 1297, 4338, 2]
 // Exports: default
 
-// Module 16105 (ToastIcon)
+// Module 16115 (ToastIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -63,7 +63,7 @@ function ToastContent(content) {
     obj[0] = content.onTextLayout;
     obj[1] = tmp.contentContainer;
     obj[5] = content;
-    tmp4 = callback2(require(4340) /* Text */.Text, obj);
+    tmp4 = callback2(require(4338) /* Text */.Text, obj);
   }
   return tmp4;
 }

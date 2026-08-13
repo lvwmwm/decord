@@ -1,9 +1,9 @@
-// Module ID: 5417
-// Function ID: 5418
+// Module ID: 5418
+// Function ID: 5419
 // Name: AnimatedPressableHighlight
-// Dependencies: [19, 17, 21, 4083, 4886, 5418, 4065, 712, 500, 2]
+// Dependencies: [19, 17, 21, 4083, 4887, 5419, 4065, 712, 500, 2]
 
-// Module 5417 (AnimatedPressableHighlight)
+// Module 5418 (AnimatedPressableHighlight)
 import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -59,7 +59,7 @@ export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPr
   }, items)} />;
 }) : (function AnimatedPressableHighlightiOS(children) {
   const merged = Object.assign(children, Object.create(null));
-  let obj = require(5418) /* SPRING_CONFIG */;
+  let obj = require(5419) /* SPRING_CONFIG */;
   const iOSPressEffects = obj.useIOSPressEffects(4);
   obj = { accessibilityRole: "button", onPressIn: iOSPressEffects.onPressIn, onPressOut: iOSPressEffects.onPressOut };
   const merged1 = Object.assign(merged);

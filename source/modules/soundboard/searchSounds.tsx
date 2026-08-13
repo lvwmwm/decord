@@ -1,10 +1,10 @@
-// Module ID: 5999
-// Function ID: 6000
+// Module ID: 6001
+// Function ID: 6002
 // Name: trackSearchStart
-// Dependencies: [5215, 676, 636, 698, 4002, 5268, 6000, 2]
+// Dependencies: [5216, 676, 636, 698, 4002, 5269, 6002, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 5999 (trackSearchStart)
+// Module 6001 (trackSearchStart)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import ME from "ME";
 
@@ -104,8 +104,8 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
     }
     let result1 = sum6 > 0;
     if (0 < sum6) {
-      result1 = lib(6000).canUseSoundboardSound(stateFromStores, name, tmp3);
-      const obj4 = lib(6000);
+      result1 = lib(6002).canUseSoundboardSound(stateFromStores, name, tmp3);
+      const obj4 = lib(6002);
     }
     let sum7 = sum6;
     if (result1) {

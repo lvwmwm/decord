@@ -1,7 +1,7 @@
 // Module ID: 13099
 // Function ID: 13100
 // Name: _initialize
-// Dependencies: [4392, 4360, 4522, 709, 4553, 2]
+// Dependencies: [4393, 4361, 4523, 709, 4554, 2]
 
 // Module 13099 (_initialize)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";

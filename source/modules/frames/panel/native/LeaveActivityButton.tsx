@@ -1,8 +1,8 @@
-// Module ID: 16198
-// Function ID: 16199
-// Dependencies: [19, 9805, 21, 16185, 11036, 2]
+// Module ID: 16209
+// Function ID: 16210
+// Dependencies: [19, 9809, 21, 16196, 10950, 2]
 
-// Module 16198
+// Module 16209
 import { ActivityPanelModes } from "ActivityPanelModes";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -12,7 +12,7 @@ const memoResult = require("noop").memo(function LeaveActivityButton(arg0) {
   let importDefault;
   let require;
   ({ frame: require, setMode: importDefault } = arg0);
-  return jsx(require(16185) /* BaseLeaveActivityButton */.BaseLeaveActivityButton, {
+  return jsx(require(16196) /* BaseLeaveActivityButton */.BaseLeaveActivityButton, {
     onPress() {
       callback(outer1_3.DISCONNECTED);
       const timerId = setTimeout(() => {

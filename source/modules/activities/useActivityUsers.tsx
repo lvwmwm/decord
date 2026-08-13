@@ -1,10 +1,10 @@
-// Module ID: 16295
-// Function ID: 16296
+// Module ID: 16306
+// Function ID: 16307
 // Name: useActivityUsers
 // Dependencies: [1922, 1390, 647, 2]
 // Exports: default
 
-// Module 16295 (useActivityUsers)
+// Module 16306 (useActivityUsers)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import participantFromServer from "participantFromServer";
 

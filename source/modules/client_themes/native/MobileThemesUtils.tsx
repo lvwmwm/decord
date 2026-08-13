@@ -1,10 +1,10 @@
-// Module ID: 4277
-// Function ID: 4278
+// Module ID: 4275
+// Function ID: 4276
 // Name: getCustomThemesName
-// Dependencies: [1302, 4278, 1346, 1348, 1236, 2501, 1349, 4279, 589, 1367, 2]
+// Dependencies: [1302, 4276, 1346, 1348, 1236, 2501, 1349, 4277, 589, 1367, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
 
-// Module 4277 (getCustomThemesName)
+// Module 4275 (getCustomThemesName)
 import handleThemeChange from "handleThemeChange";
 import validateSavedTheme from "validateSavedTheme";
 import reset from "reset";
@@ -34,7 +34,7 @@ export const getCustomBackgroundGradient = function getCustomBackgroundGradient(
   return tmp2;
 };
 export const useCustomBackgroundGradient = function useCustomBackgroundGradient(base_theme) {
-  let obj = require(4279) /* useCustomThemeDisplaySettings */;
+  let obj = require(4277) /* useCustomThemeDisplaySettings */;
   const customThemeDisplaySettings = obj.useCustomThemeDisplaySettings(base_theme);
   let tmp4 = null;
   if (undefined !== customThemeDisplaySettings) {
@@ -105,7 +105,7 @@ export const useAllMobileThemes = function useAllMobileThemes(mode) {
   if (null != stateFromStores) {
     tmp4 = stateFromStores;
   }
-  let tmpResult = tmp(4279);
+  let tmpResult = tmp(4277);
   const customThemeDisplaySettings = tmpResult.useCustomThemeDisplaySettings(tmp4);
   let stateFromStores1 = null;
   if (undefined !== customThemeDisplaySettings) {

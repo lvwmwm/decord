@@ -1,10 +1,10 @@
-// Module ID: 9454
-// Function ID: 9455
+// Module ID: 9458
+// Function ID: 9459
 // Name: OrbsIcon
-// Dependencies: [19, 21, 712, 4064, 9455, 2]
+// Dependencies: [19, 21, 712, 4064, 9459, 2]
 // Exports: OrbsIcon
 
-// Module 9454 (OrbsIcon)
+// Module 9458 (OrbsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const OrbsIcon = function OrbsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9455) /* registerAsset */;
+  obj[0] = require(9459) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

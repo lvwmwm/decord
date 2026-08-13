@@ -1,10 +1,10 @@
-// Module ID: 5764
-// Function ID: 5765
+// Module ID: 5765
+// Function ID: 5766
 // Name: GuildOnboardingConnectionPrompt
-// Dependencies: [19, 17, 5304, 5289, 5038, 1910, 5281, 5282, 5278, 676, 21, 4344, 5306, 712, 1499, 1628, 589, 5288, 698, 4538, 5280, 5367, 4340, 1236, 5765, 5787, 4754, 2]
+// Dependencies: [19, 17, 5305, 5290, 5039, 1910, 5282, 5283, 5279, 676, 21, 4342, 5307, 712, 1499, 1628, 589, 5289, 698, 4539, 5281, 5368, 4338, 1236, 5766, 5788, 4755, 2]
 // Exports: default
 
-// Module 5764 (GuildOnboardingConnectionPrompt)
+// Module 5765 (GuildOnboardingConnectionPrompt)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import get_ActivityIndicator from "isChattableChannel";
 import get from "get";

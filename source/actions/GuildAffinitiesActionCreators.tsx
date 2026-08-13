@@ -1,10 +1,10 @@
-// Module ID: 8954
-// Function ID: 8955
+// Module ID: 8958
+// Function ID: 8959
 // Name: fetchGuildAffinities
 // Dependencies: [676, 530, 709, 2]
 // Exports: fetchGuildAffinities
 
-// Module 8954 (fetchGuildAffinities)
+// Module 8958 (fetchGuildAffinities)
 import { Endpoints } from "ME";
 
 const result = require("dispatcher").fileFinishedImporting("actions/GuildAffinitiesActionCreators.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8692
-// Function ID: 8693
+// Module ID: 8696
+// Function ID: 8697
 // Name: getSoundmojiSendExperiment
 // Dependencies: [1471, 2]
 // Exports: getSoundmojiSendExperiment, useSoundmojiEmojiPickerSectionExperiment, useSoundmojiSendExperiment
 
-// Module 8692 (getSoundmojiSendExperiment)
+// Module 8696 (getSoundmojiSendExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { enabled: true, showSoundmojiInEmojiPicker: false } };

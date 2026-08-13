@@ -1,9 +1,9 @@
-// Module ID: 7175
-// Function ID: 7176
+// Module ID: 7181
+// Function ID: 7182
 // Name: getHermesInstrumentedStatsSummary
-// Dependencies: [17, 7176, 2]
+// Dependencies: [17, 7182, 2]
 
-// Module 7175 (getHermesInstrumentedStatsSummary)
+// Module 7181 (getHermesInstrumentedStatsSummary)
 import { NativeModules } from "get ActivityIndicator";
 import { ProcessUtils } from "ElectronProcessType";
 

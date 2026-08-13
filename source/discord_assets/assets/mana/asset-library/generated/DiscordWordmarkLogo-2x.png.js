@@ -1,9 +1,9 @@
-// Module ID: 6272
-// Function ID: 6273
+// Module ID: 6274
+// Function ID: 6275
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6272 (metadata)
+// Module 6274 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscordWordmarkLogo-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/45ed32a773bddd2a994bbaa20cd49260ce7dadbc7c6b19d9e48768354b5aeec1.png";

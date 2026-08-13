@@ -1,9 +1,9 @@
-// Module ID: 5260
-// Function ID: 5261
+// Module ID: 5261
+// Function ID: 5262
 // Name: parseServerPackSticker
-// Dependencies: [32, 1432, 1911, 687, 5025, 2]
+// Dependencies: [32, 1432, 1911, 687, 5026, 2]
 
-// Module 5260 (parseServerPackSticker)
+// Module 5261 (parseServerPackSticker)
 import _slicedToArray from "_slicedToArray";
 import { TypeTag } from "TypeTag";
 import { LibdiscoreStore } from "identity";
@@ -16,13 +16,13 @@ function parseServerPackSticker(id) {
 }
 function deriveStickerMetadata(name, name2) {
   const items = [];
-  let obj = { type: require(5025) /* StickerFormat */.StickerMetadataTypes.STICKER_NAME, value: null };
+  let obj = { type: require(5026) /* StickerFormat */.StickerMetadataTypes.STICKER_NAME, value: null };
   const trimmed = name.name.trim();
   obj[1] = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != name2) {
     obj = { type: null, value: null };
-    obj[0] = require(5025) /* StickerFormat */.StickerMetadataTypes.PACK_NAME;
+    obj[0] = require(5026) /* StickerFormat */.StickerMetadataTypes.PACK_NAME;
     obj[1] = name2.name;
     items.push(obj);
   }

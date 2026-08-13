@@ -1,7 +1,7 @@
 // Module ID: 13231
 // Function ID: 13232
 // Name: getCodeToKeyLanguageCorrection
-// Dependencies: [32, 7005, 500, 12, 13232, 13233, 13234, 1370, 2]
+// Dependencies: [32, 7011, 500, 12, 13232, 13233, 13234, 1370, 2]
 // Exports: areKeyCombosEqual, codeToKey, getEnv, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toString
 
 // Module 13231 (getCodeToKeyLanguageCorrection)

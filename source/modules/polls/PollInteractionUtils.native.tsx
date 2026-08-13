@@ -1,15 +1,15 @@
-// Module ID: 10330
-// Function ID: 10331
+// Module ID: 11166
+// Function ID: 11167
 // Name: showVotesForAnswer
-// Dependencies: [4312, 10331, 2007, 2]
+// Dependencies: [4310, 11167, 2007, 2]
 // Exports: showVotesForAnswer
 
-// Module 10330 (showVotesForAnswer)
+// Module 11166 (showVotesForAnswer)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/polls/PollInteractionUtils.native.tsx");
 
 export const showVotesForAnswer = function showVotesForAnswer(initialAnswerId) {
   const message = initialAnswerId.message;
-  let obj = importDefault(4312);
+  let obj = importDefault(4310);
   obj = { channelId: message.channel_id, messageId: message.id, initialAnswerId: initialAnswerId.initialAnswerId };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(10331, dependencyMap.paths), "PollVotesActionSheet", obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(11167, dependencyMap.paths), "PollVotesActionSheet", obj);
 };

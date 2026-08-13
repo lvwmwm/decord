@@ -1,9 +1,9 @@
-// Module ID: 4433
-// Function ID: 4434
+// Module ID: 4434
+// Function ID: 4435
 // Name: ApplicationStreamPresets
-// Dependencies: [4400, 4405, 589, 709, 2]
+// Dependencies: [4401, 4406, 589, 709, 2]
 
-// Module 4433 (ApplicationStreamPresets)
+// Module 4434 (ApplicationStreamPresets)
 import RESOLUTION_720 from "RESOLUTION_720";
 import { MediaEngineContextTypes } from "DesktopSources";
 import { PersistedStore } from "initialize";

@@ -1,10 +1,10 @@
-// Module ID: 9813
-// Function ID: 9814
+// Module ID: 9817
+// Function ID: 9818
 // Name: formatMessagePreview
-// Dependencies: [1218, 3998, 1922, 676, 686, 589, 8129, 4572, 1236, 4531, 5957, 12, 8134, 8212, 2]
+// Dependencies: [1218, 3998, 1922, 676, 686, 589, 8133, 4573, 1236, 4532, 5959, 12, 8138, 8216, 2]
 // Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
-// Module 9813 (formatMessagePreview)
+// Module 9817 (formatMessagePreview)
 import fetchFingerprint from "fetchFingerprint";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -68,11 +68,11 @@ function formatMessagePreview(type, isBlocked) {
                   tmp10 = obj4;
                 } else if (type.attachments.length > 0) {
                   const attachments = type.attachments;
-                  const everyResult = attachments.every((filename) => callback(4531).isImageFile(filename.filename));
+                  const everyResult = attachments.every((filename) => callback(4532).isImageFile(filename.filename));
                   let everyResult1 = !everyResult;
                   if (!everyResult) {
                     const attachments2 = type.attachments;
-                    everyResult1 = attachments2.every((filename) => callback(4531).isVideoFile(filename.filename));
+                    everyResult1 = attachments2.every((filename) => callback(4532).isVideoFile(filename.filename));
                   }
                   let everyResult2 = !everyResult;
                   if (!everyResult) {
@@ -80,7 +80,7 @@ function formatMessagePreview(type, isBlocked) {
                   }
                   if (everyResult2) {
                     const attachments3 = type.attachments;
-                    everyResult2 = attachments3.every((filename) => callback(4531).isAudioFile(filename.filename));
+                    everyResult2 = attachments3.every((filename) => callback(4532).isAudioFile(filename.filename));
                   }
                   if (everyResult) {
                     const obj5 = { type: "text", text: null, trailingIcon: "image" };
@@ -116,8 +116,8 @@ function formatMessagePreview(type, isBlocked) {
                   const everyResult3 = embeds.every((url) => {
                     let isImageUrlResult = null != url.url;
                     if (isImageUrlResult) {
-                      isImageUrlResult = callback(4531).isImageUrl(url.url);
-                      const obj = callback(4531);
+                      isImageUrlResult = callback(4532).isImageUrl(url.url);
+                      const obj = callback(4532);
                     }
                     return isImageUrlResult;
                   });
@@ -127,8 +127,8 @@ function formatMessagePreview(type, isBlocked) {
                     everyResult4 = embeds2.every((url) => {
                       let isVideoUrlResult = null != url.url;
                       if (isVideoUrlResult) {
-                        isVideoUrlResult = callback(4531).isVideoUrl(url.url);
-                        const obj = callback(4531);
+                        isVideoUrlResult = callback(4532).isVideoUrl(url.url);
+                        const obj = callback(4532);
                       }
                       return isVideoUrlResult;
                     });
@@ -142,8 +142,8 @@ function formatMessagePreview(type, isBlocked) {
                     everyResult5 = embeds3.every((url) => {
                       let isAudioFileResult = null != url.url;
                       if (isAudioFileResult) {
-                        isAudioFileResult = callback(4531).isAudioFile(url.url);
-                        const obj = callback(4531);
+                        isAudioFileResult = callback(4532).isAudioFile(url.url);
+                        const obj = callback(4532);
                       }
                       return isAudioFileResult;
                     });
@@ -207,7 +207,7 @@ function formatMessagePreview(type, isBlocked) {
                   obj25[0] = text;
                   obj24[1] = intl2.formatToPlainString(tmp4(1236).t.ImizdM, obj25);
                   tmp10 = obj24;
-                } else if (importDefault(5957)(type)) {
+                } else if (importDefault(5959)(type)) {
                   obj = { type: "text", text: null };
                   const intl = tmp4(1236).intl;
                   obj[1] = intl.string(tmp4(1236).t["9ddYKt"]);
@@ -315,7 +315,7 @@ function formatMessagePreview(type, isBlocked) {
               } else if (type.type === tmp4(686).MessageTypes.USER_JOIN) {
                 let obj38 = { type: "text", text: null };
                 const intl18 = tmp4(1236).intl;
-                obj38 = importDefault(8134);
+                obj38 = importDefault(8138);
                 const obj39 = { username: null, usernameHook: null };
                 obj39[0] = authorNick;
                 const systemMessageUserJoin = obj38.getSystemMessageUserJoin(type.id);
@@ -376,9 +376,9 @@ function formatMessagePreview(type, isBlocked) {
                 tmp21 = obj50;
               } else if (type.type === tmp4(686).MessageTypes.VOICE_SESSION) {
                 const obj52 = { type: "text", text: null };
-                obj52[1] = tmp4(8212).getVoiceSessionMessageContent(type);
+                obj52[1] = tmp4(8216).getVoiceSessionMessageContent(type);
                 tmp21 = obj52;
-                const tmp4Result = tmp4(8212);
+                const tmp4Result = tmp4(8216);
               }
             }
           }
@@ -418,10 +418,10 @@ export const useFormattedMessagePreview = function useFormattedMessagePreview(me
   const items1 = [message.author.id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isBlocked: outer1_4.isBlocked(message.author.id), isIgnored: outer1_4.isIgnored(message.author.id) }), items1);
   ({ isBlocked, isIgnored } = stateFromStoresObject);
-  const tmp4 = importDefault(8129)(channel.id, message.id);
+  const tmp4 = importDefault(8133)(channel.id, message.id);
   const items2 = [fetchFingerprint];
   const stateFromStores = _require(589).useStateFromStores(items2, () => id.getId());
-  const nick = importDefault(4572)(message).nick;
+  const nick = importDefault(4573)(message).nick;
   let stringResult = nick;
   if (message.type !== _require(686).MessageTypes.USER_JOIN) {
     stringResult = nick;
@@ -439,7 +439,7 @@ export const useFormattedMessagePreview = function useFormattedMessagePreview(me
     }
     return user;
   });
-  tmpResult = tmp(4572);
+  tmpResult = tmp(4573);
   obj = { message, channel, currentUserId: stateFromStores, authorNick: stringResult, otherUser: stateFromStores1, otherUserNick: tmpResult.useNullableUserAuthor(stateFromStores1, channel).nick, isBlocked, isIgnored, isCallActive: tmp4 };
   return formatMessagePreview(message, obj);
 };

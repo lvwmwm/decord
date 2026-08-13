@@ -1,7 +1,7 @@
 // Module ID: 12607
 // Function ID: 12608
 // Name: items
-// Dependencies: [19, 8383, 4382, 7122, 4367, 1922, 676, 1954, 589, 8352, 709, 5773, 2]
+// Dependencies: [19, 8387, 4383, 7128, 4368, 1922, 676, 1954, 589, 8356, 709, 5774, 2]
 // Exports: default
 
 // Module 12607 (items)

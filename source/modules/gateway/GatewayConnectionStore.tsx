@@ -1,9 +1,9 @@
-// Module ID: 5034
-// Function ID: 5035
+// Module ID: 5035
+// Function ID: 5036
 // Name: _handleConnectionOpen
-// Dependencies: [5, 1340, 1218, 5035, 1391, 4392, 4415, 4436, 1979, 5036, 4429, 676, 685, 12965, 13009, 3, 595, 5994, 5169, 500, 13001, 12, 4407, 12980, 589, 709, 2]
+// Dependencies: [5, 1340, 1218, 5036, 1391, 4393, 4416, 4437, 1979, 5037, 4430, 676, 685, 12965, 13009, 3, 595, 5996, 5170, 500, 13001, 12, 4408, 12980, 589, 709, 2]
 
-// Module 5034 (_handleConnectionOpen)
+// Module 5035 (_handleConnectionOpen)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";
@@ -119,8 +119,8 @@ function _handleConnectionOpen() {
                   obj2 = { guildId: null, channelId: null };
                   obj2[0] = guildId.getGuildId();
                   obj2[1] = voiceChannelId;
-                  callback(5994).muteCustomJoinSound(voiceChannelId);
-                  const obj5 = callback(5994);
+                  callback(5996).muteCustomJoinSound(voiceChannelId);
+                  const obj5 = callback(5996);
                 }
               }
               const localVoiceState = callback(12965).localVoiceState;
@@ -144,7 +144,7 @@ function _handleConnectionOpen() {
                   tmp11 = voiceChannelId;
                 }
                 const result = lastSessionVoiceChannelId.setLastSessionVoiceChannelId(tmp11);
-                obj = voiceChannelId(5169);
+                obj = voiceChannelId(5170);
                 const voiceChannel = obj.selectVoiceChannel(null);
               }
             }
@@ -515,7 +515,7 @@ const gatewayConnectionStore = new GatewayConnectionStore(require("dispatcher"),
     if (socket.isSessionEstablished()) {
       if (!allowMultiple) {
         const allActiveStreamKeys = store.getAllActiveStreamKeys();
-        _require = allActiveStreamKeys.find((streamKey) => callback(4407).decodeStreamKey(streamKey).ownerId === id.getId());
+        _require = allActiveStreamKeys.find((streamKey) => callback(4408).decodeStreamKey(streamKey).ownerId === id.getId());
         const allActiveStreamKeys1 = store.getAllActiveStreamKeys();
         const found = allActiveStreamKeys1.filter((arg0) => arg0 !== closure_0);
         const item = found.forEach((streamKey) => {
@@ -898,7 +898,7 @@ let obj = {
     if (socket.isSessionEstablished()) {
       if (!allowMultiple) {
         const allActiveStreamKeys = store.getAllActiveStreamKeys();
-        _require = allActiveStreamKeys.find((streamKey) => callback(4407).decodeStreamKey(streamKey).ownerId === id.getId());
+        _require = allActiveStreamKeys.find((streamKey) => callback(4408).decodeStreamKey(streamKey).ownerId === id.getId());
         const allActiveStreamKeys1 = store.getAllActiveStreamKeys();
         const found = allActiveStreamKeys1.filter((arg0) => arg0 !== closure_0);
         const item = found.forEach((streamKey) => {

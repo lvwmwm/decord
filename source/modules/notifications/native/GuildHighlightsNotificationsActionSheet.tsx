@@ -1,10 +1,10 @@
-// Module ID: 11144
-// Function ID: 11145
+// Module ID: 11059
+// Function ID: 11060
 // Name: GuildPill
-// Dependencies: [32, 19, 17, 1910, 4539, 676, 11145, 21, 4344, 712, 5818, 4340, 11146, 647, 1236, 11147, 1628, 5436, 5438, 1993, 4083, 5415, 8008, 5301, 5296, 4312, 2]
+// Dependencies: [32, 19, 17, 1910, 4540, 676, 11060, 21, 4342, 712, 5819, 4338, 11061, 647, 1236, 11062, 1628, 5437, 5439, 1993, 4083, 5416, 8012, 5302, 5297, 4310, 2]
 // Exports: default
 
-// Module 11144 (GuildPill)
+// Module 11059 (GuildPill)
 import _slicedToArray from "_slicedToArray";
 import combined from "combined";
 import { View } from "Background";
@@ -26,15 +26,15 @@ function GuildPill(guild) {
   const tmp = callback3();
   let obj = { style: tmp.guildPill, children: null };
   obj = { guild, size: null, animate: true };
-  obj[1] = require(5818) /* GuildIconSizes */.GuildIconSizes.SMALL_32;
-  const items = [callback(importDefault(5818), obj), ];
+  obj[1] = require(5819) /* GuildIconSizes */.GuildIconSizes.SMALL_32;
+  const items = [callback(importDefault(5819), obj), ];
   obj = { style: tmp.guildName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
   let name;
   if (guild != null) {
     name = guild.name;
   }
   obj[3] = name;
-  items[1] = callback(require(4340) /* Text */.Text, obj);
+  items[1] = callback(require(4338) /* Text */.Text, obj);
   obj[1] = items;
   return closure_12(View, obj);
 }

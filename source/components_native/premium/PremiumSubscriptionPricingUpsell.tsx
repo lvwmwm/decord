@@ -1,7 +1,7 @@
 // Module ID: 12872
 // Function ID: 12873
 // Name: PricingSubheadingCopy
-// Dependencies: [32, 19, 17, 1994, 1922, 4012, 4013, 5897, 676, 1924, 21, 4344, 589, 4007, 12756, 709, 6924, 5900, 4340, 500, 5895, 5894, 1236, 1898, 2]
+// Dependencies: [32, 19, 17, 1994, 1922, 4012, 4013, 5899, 676, 1924, 21, 4342, 589, 4007, 12756, 709, 6930, 5902, 4338, 500, 5897, 5896, 1236, 1898, 2]
 // Exports: default
 
 // Module 12872 (PricingSubheadingCopy)
@@ -239,7 +239,7 @@ export default function PremiumSubscriptionPricingUpsell() {
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t["3x1PFE"]);
-  const items = [callback(require(4340) /* Text */.Text, obj), ];
+  const items = [callback(require(4338) /* Text */.Text, obj), ];
   let tmp5Result = null;
   if (subscriptionPlansLoaded) {
     tmp5Result = callback(PricingSubheadingCopy, {});

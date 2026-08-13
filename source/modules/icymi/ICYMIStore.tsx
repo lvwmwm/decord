@@ -1,9 +1,9 @@
-// Module ID: 8943
-// Function ID: 8944
+// Module ID: 8947
+// Function ID: 8948
 // Name: filterStaffGuild
-// Dependencies: [32, 8944, 4258, 7027, 1218, 1391, 8953, 1910, 4561, 3989, 4356, 3998, 4539, 8955, 8956, 676, 8965, 687, 8957, 7344, 8277, 8281, 8949, 8966, 5997, 4563, 589, 709, 2]
+// Dependencies: [32, 8948, 4256, 7033, 1218, 1391, 8957, 1910, 4562, 3989, 4357, 3998, 4540, 8959, 8960, 676, 8969, 687, 8961, 7349, 8281, 8285, 8953, 8970, 5999, 4564, 589, 709, 2]
 
-// Module 8943 (filterStaffGuild)
+// Module 8947 (filterStaffGuild)
 import _slicedToArray from "_slicedToArray";
 import map from "map";
 import getHash from "getHash";
@@ -35,7 +35,7 @@ const require = arg1;
 function filterStaffGuild(data) {
   if (closure_19.filterStaffContent()) {
     if (obj.isGuildItem(data)) {
-      if (data.data.guild_id === require(7344) /* MessageEmbedTypes */.GAME_CONTENT_GUILD_ID) {
+      if (data.data.guild_id === require(7349) /* MessageEmbedTypes */.GAME_CONTENT_GUILD_ID) {
         return true;
       } else {
         const guild = store2.getGuild(data.data.guild_id);
@@ -65,8 +65,8 @@ function injectItemsIntoList(arr, arr2) {
   return found;
 }
 function injectRecommendedGuildsRow() {
-  items1 = items1.filter((type) => type.type !== callback(7344).ICYMIItemTypes.RECOMMENDED_GUILDS);
-  items = items.filter((type) => type.type !== callback(7344).ICYMIItemTypes.RECOMMENDED_GUILDS);
+  items1 = items1.filter((type) => type.type !== callback(7349).ICYMIItemTypes.RECOMMENDED_GUILDS);
+  items = items.filter((type) => type.type !== callback(7349).ICYMIItemTypes.RECOMMENDED_GUILDS);
   if (0 !== length.length) {
     const guildsArray = store2.getGuildsArray();
     const tmp24 = guildsArray.filter((features) => {
@@ -83,7 +83,7 @@ function injectRecommendedGuildsRow() {
       }
     }
     const obj = { id: "recommendedGuilds", type: null, score: 50 };
-    obj[1] = require(7344) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS;
+    obj[1] = require(7349) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS;
     closure_34[obj.id] = obj;
     closure_33[obj.id] = obj;
     if (0 === items1.length) {
@@ -429,7 +429,7 @@ function getNewUnreadItems(arr9, channelId) {
     let tmp2 = nextResult;
     let tmp3 = require;
     let tmp4 = dependencyMap;
-    if (nextResult.type !== require(7344) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS) {
+    if (nextResult.type !== require(7349) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS) {
       let tmp15 = nextResult;
       if (!set.has(tmp2.id)) {
         let tmp5 = store3;
@@ -437,9 +437,9 @@ function getNewUnreadItems(arr9, channelId) {
         let tmp7 = null == store3.getReadTimestamp(tmp2.id);
         if (tmp7) {
           let tmp8 = nextResult;
-          let tmp9 = tmp2.type !== tmp3(7344).ICYMIItemTypes.MESSAGE;
+          let tmp9 = tmp2.type !== tmp3(7349).ICYMIItemTypes.MESSAGE;
           if (!tmp9) {
-            let tmp3Result = tmp3(8957);
+            let tmp3Result = tmp3(8961);
             let tmp10 = nextResult;
             let result = tmp3Result.isItemUnreadInChannel(tmp2.data.channel_id, tmp2.data.message_id);
             if (result) {
@@ -461,8 +461,8 @@ function getNewUnreadItems(arr9, channelId) {
   return items;
 }
 function maybeFilterChannelItems(arg0, stateFromStores1) {
-  const obj = _require(8957);
-  if (numberToCustomScoreResult === _require(8957).ICYMICustomScore.MUTED) {
+  const obj = _require(8961);
+  if (numberToCustomScoreResult === _require(8961).ICYMICustomScore.MUTED) {
     _require = arg0;
     closure_27 = closure_27.filter((data) => {
       const isGuildItemResult = callback(outer1_2[18]).isGuildItem(data);
@@ -511,8 +511,8 @@ function maybeFilterChannelItems(arg0, stateFromStores1) {
   }
 }
 function maybeFilterGuildItems(guildId, guildScore) {
-  const obj = _require(8957);
-  if (numberToCustomScoreResult === _require(8957).ICYMICustomScore.MUTED) {
+  const obj = _require(8961);
+  if (numberToCustomScoreResult === _require(8961).ICYMICustomScore.MUTED) {
     _require = guildId;
     closure_27 = closure_27.filter((data) => {
       const isGuildItemResult = guildId(outer1_2[18]).isGuildItem(data);
@@ -566,7 +566,7 @@ function handleReaction(colors) {
   ({ emoji, reactionType } = colors);
   if (null == dependencyMap[colors.messageId]) {
     return false;
-  } else if (tmp3.type !== require(7344) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
+  } else if (tmp3.type !== require(7349) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
     return false;
   } else {
     const tmp5 = store.getId() === tmp2;
@@ -768,7 +768,7 @@ prototype["getMessage"] = function getMessage(arg0) {
   let message = null;
   if (null != dependencyMap[arg0]) {
     message = null;
-    if (tmp.type === require(7344) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
+    if (tmp.type === require(7349) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
       message = tmp.message;
     }
   }
@@ -795,22 +795,22 @@ prototype["getMissingItems"] = function getMissingItems() {
 prototype["customMuted"] = function customMuted(id, id) {
   const self = this;
   const customGuildScore = this.getCustomGuildScore(id);
-  let tmp4 = customGuildScore === require(8957) /* generateHydrationId */.ICYMICustomScore.MUTED;
+  let tmp4 = customGuildScore === require(8961) /* generateHydrationId */.ICYMICustomScore.MUTED;
   if (!tmp4) {
     const customChannelScore = self.getCustomChannelScore(id, id);
-    tmp4 = customChannelScore === require(8957) /* generateHydrationId */.ICYMICustomScore.MUTED;
+    tmp4 = customChannelScore === require(8961) /* generateHydrationId */.ICYMICustomScore.MUTED;
   }
   return tmp4;
 };
 prototype["getCustomChannelScore"] = function getCustomChannelScore(guild_id, id) {
   if (null != dependencyMap2[guild_id]) {
     if (null != dependencyMap2[guild_id][id]) {
-      let UNKNOWN = require(8957) /* generateHydrationId */.numberToCustomScore(dependencyMap2[guild_id][id]);
-      const obj = require(8957) /* generateHydrationId */;
+      let UNKNOWN = require(8961) /* generateHydrationId */.numberToCustomScore(dependencyMap2[guild_id][id]);
+      const obj = require(8961) /* generateHydrationId */;
     }
     return UNKNOWN;
   }
-  UNKNOWN = require(8957) /* generateHydrationId */.ICYMICustomScore.UNKNOWN;
+  UNKNOWN = require(8961) /* generateHydrationId */.ICYMICustomScore.UNKNOWN;
 };
 prototype["getCustomGuildScore"] = function getCustomGuildScore(id) {
   let num = table2[id];
@@ -1229,7 +1229,7 @@ const iCYMIStore = new ICYMIStore(require("dispatcher"), {
         outer1_35[content_id.content_id] = true;
       }
     });
-    set.delete(_require(8957).generateHydrationId(startingIndex, endingIndex));
+    set.delete(_require(8961).generateHydrationId(startingIndex, endingIndex));
   },
   LOAD_ICYMI_CUSTOM_SCORES: function handleLoadCustomScores(arg0) {
     const iter = arg0.scores[Symbol.iterator]();
@@ -1325,7 +1325,7 @@ const iCYMIStore = new ICYMIStore(require("dispatcher"), {
   MESSAGE_REACTION_ADD_MANY: function handleReactionBatch(arg0) {
     if (null == dependencyMap[arg0.messageId]) {
       return false;
-    } else if (tmp2.type !== require(7344) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
+    } else if (tmp2.type !== require(7349) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
       return false;
     } else {
       const message = tmp2.message;
@@ -1336,7 +1336,7 @@ const iCYMIStore = new ICYMIStore(require("dispatcher"), {
   MESSAGE_REACTION_REMOVE_ALL: function handleRemoveAllReactions(arg0) {
     let tmp2 = null != tmp;
     if (tmp2) {
-      const tmp5 = tmp.type === require(7344) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
+      const tmp5 = tmp.type === require(7349) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
       if (tmp5) {
         const message = tmp.message;
         tmp.message = message.set("reactions", []);
@@ -1348,7 +1348,7 @@ const iCYMIStore = new ICYMIStore(require("dispatcher"), {
   MESSAGE_REACTION_REMOVE_EMOJI: function handleRemoveEmojiReactions(arg0) {
     let tmp3 = null != tmp2;
     if (tmp3) {
-      const tmp6 = tmp2.type === require(7344) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
+      const tmp6 = tmp2.type === require(7349) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
       if (tmp6) {
         const message = tmp2.message;
         tmp2.message = message.removeReactionsForEmoji(tmp);

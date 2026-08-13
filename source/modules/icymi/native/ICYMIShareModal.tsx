@@ -1,10 +1,10 @@
-// Module ID: 15690
-// Function ID: 15691
+// Module ID: 15699
+// Function ID: 15700
 // Name: Screenshot
-// Dependencies: [32, 5, 19, 17, 1391, 4680, 4679, 676, 9665, 4337, 21, 4344, 712, 9005, 1236, 15691, 4062, 1493, 4195, 8436, 15692, 4888, 4164, 4072, 5408, 10301, 10310, 4754, 4549, 7346, 1370, 7182, 8401, 514, 4891, 6959, 8402, 1628, 500, 5316, 8427, 5309, 10292, 2]
+// Dependencies: [32, 5, 19, 17, 1391, 4681, 4680, 676, 9669, 4335, 21, 4342, 712, 9009, 1236, 15700, 4062, 1493, 4193, 8440, 15701, 4889, 4162, 4072, 5409, 11138, 11147, 4755, 4550, 7351, 1370, 7188, 8405, 514, 4892, 6965, 8406, 1628, 500, 5317, 8431, 5310, 11130, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 15690 (Screenshot)
+// Module 15699 (Screenshot)
 import dispatcher from "dispatcher";
 import handleChanged from "handleChanged";
 import useGradientBottom from "useGradientBottom";
@@ -43,21 +43,21 @@ function Screenshot(setUri) {
       return nextPromise;
     }, 500);
   }, items);
-  let obj = setUri(8436);
+  let obj = setUri(8440);
   obj = { style: { position: "absolute", top: -1000, overflow: "hidden" }, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.preview, { width: ref(1493)().width }];
   const clientThemesOverride = obj.useClientThemesOverride();
   const obj1 = { ref, options: { fileName: "icymi_content", format: "png", quality: 1 }, children: null };
   const obj2 = { style: tmp.base, children: null };
-  const tmp4 = ref(4195)();
+  const tmp4 = ref(4193)();
   const obj3 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj4 = { dark: null, light: null };
-  const tmp6 = ref(15692);
-  obj4[0] = setUri(4164).OverlayOpacity.LEVEL_7;
-  obj4[1] = setUri(4164).OverlayOpacity.LEVEL_8;
+  const tmp6 = ref(15701);
+  obj4[0] = setUri(4162).OverlayOpacity.LEVEL_7;
+  obj4[1] = setUri(4162).OverlayOpacity.LEVEL_8;
   obj3[4] = obj4;
-  const items2 = [callback3(ref(4888), obj3), ];
+  const items2 = [callback3(ref(4889), obj3), ];
   const obj5 = { gradient: tmp4, children: null };
   const obj6 = { style: items3, children: null };
   items3 = [tmp.contentContainer, clientThemesOverride];
@@ -209,7 +209,7 @@ class ICYMIShareModal {
                     let closure_0 = arg0;
                     let c2 = 0;
                     let c1 = 0;
-                    return (/* F120681 */ function*() { ... })();
+                    return (/* F120739 */ function*() { ... })();
                   });
                   return function(arg0) {
                     const self = this;
@@ -356,7 +356,7 @@ let result = require("noop").fileFinishedImporting("modules/icymi/native/ICYMISh
 export default ICYMIShareModal;
 export const GuildEventShareModal = function GuildEventShareModal(event) {
   event = event.event;
-  let obj = require(9005) /* SHARE_EVENT_DETAILS_LINK */;
+  let obj = require(9009) /* SHARE_EVENT_DETAILS_LINK */;
   obj = { guildId: event.guild_id, guildEventId: event.id };
   obj = { title: null, originDestinationId: null, linkText: null };
   const result = obj.SHARE_EVENT_DETAILS_LINK(obj);

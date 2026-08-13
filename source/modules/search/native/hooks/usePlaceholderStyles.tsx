@@ -1,10 +1,10 @@
-// Module ID: 15802
-// Function ID: 15803
+// Module ID: 15811
+// Function ID: 15812
 // Name: useFullscreenPlaceholderCount
-// Dependencies: [4336, 8442, 1493, 589, 4083, 4345, 1297, 2]
+// Dependencies: [4334, 8446, 1493, 589, 4083, 4343, 1297, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 15802 (useFullscreenPlaceholderCount)
+// Module 15811 (useFullscreenPlaceholderCount)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "MessageEmbedTypes";
 
@@ -79,7 +79,7 @@ export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(
       return tmp5;
     }
   }
-  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4083).withRepeat, withSequence: _require(4083).withSequence, withTiming: _require(4345).withTiming, STANDARD_EASING: _require(1297).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
+  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4083).withRepeat, withSequence: _require(4083).withSequence, withTiming: _require(4343).withTiming, STANDARD_EASING: _require(1297).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
   A.__closure = obj;
   A.__workletHash = 9750536800906;
   A.__initData = closure_5;

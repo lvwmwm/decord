@@ -1,10 +1,10 @@
-// Module ID: 11264
-// Function ID: 11265
+// Module ID: 11255
+// Function ID: 11256
 // Name: regExp
-// Dependencies: [4312, 11265, 2007, 10503, 10504, 8246, 4266, 2]
+// Dependencies: [4310, 11256, 2007, 10417, 10418, 8250, 4264, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 11264 (regExp)
+// Module 11255 (regExp)
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/experiments/native/ExperimentEmbedPlatformUtils.tsx");
 
@@ -16,10 +16,10 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
   if (null != experimentTreatmentFromEmbedURL) {
     const _Number = Number;
     if (!Number.isNaN(experimentTreatmentFromEmbedURL)) {
-      let obj = _require(10503);
+      let obj = _require(10417);
       const legacyExperiments = obj.getLegacyExperiments();
       ({ experiments, overridesInfo } = legacyExperiments);
-      const apexExperiments = _require(10504).getApexExperiments();
+      const apexExperiments = _require(10418).getApexExperiments();
       let tmp5 = experiments[experimentFromEmbedURL];
       if (tmp5 == null) {
         tmp5 = apexExperiments.experiments[experimentFromEmbedURL];
@@ -32,23 +32,23 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
         if (tmp6 == null) {
           tmp6 = null;
         }
-        let tmpResult = tmp(8246);
+        let tmpResult = tmp(8250);
         const experimentBuckets = tmpResult.getExperimentBuckets(tmp5);
         const iter = experimentBuckets.find((value) => value.value === closure_0);
         if (null != iter) {
           if (null != tmp6) {
             if (tmp6.variantId === iter.value) {
-              tmpResult = tmp(4266);
+              tmpResult = tmp(4264);
               tmpResult.overrideBucket(tmp5.system, experimentFromEmbedURL, null);
             }
           }
-          tmp(4266).overrideBucket(tmp5.system, experimentFromEmbedURL, iter.value);
-          const tmpResult1 = tmp(4266);
+          tmp(4264).overrideBucket(tmp5.system, experimentFromEmbedURL, iter.value);
+          const tmpResult1 = tmp(4264);
         }
       }
-      const obj2 = _require(10504);
+      const obj2 = _require(10418);
     }
   }
   obj = { id: experimentFromEmbedURL };
-  importDefault(4312).openLazy(_require(2007)(11265, dependencyMap.paths), "ExperimentOverrideSheet", obj);
+  importDefault(4310).openLazy(_require(2007)(11256, dependencyMap.paths), "ExperimentOverrideSheet", obj);
 };

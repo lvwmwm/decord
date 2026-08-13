@@ -1,10 +1,10 @@
-// Module ID: 16771
-// Function ID: 16772
+// Module ID: 16782
+// Function ID: 16783
 // Name: ADD_MEMBER_QUERY_LIMIT
-// Dependencies: [19, 1990, 1922, 16762, 676, 589, 4189, 5398, 5270, 698, 5268, 1370, 2]
+// Dependencies: [19, 1990, 1922, 16773, 676, 589, 4187, 5399, 5271, 698, 5269, 1370, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildMembers, useGuildRoleMembers, useQueryGuildMembers
 
-// Module 16771 (ADD_MEMBER_QUERY_LIMIT)
+// Module 16782 (ADD_MEMBER_QUERY_LIMIT)
 import noop from "noop";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -188,14 +188,14 @@ export const filterFullMembersByQuery = function filterFullMembersByQuery(str, i
   const formatted = str.trim().toLowerCase();
   let tmp8Result = id.id === formatted;
   if (!tmp8Result) {
-    tmp8Result = importDefault(5268)(formatted, id.name.toLowerCase());
+    tmp8Result = importDefault(5269)(formatted, id.name.toLowerCase());
     const str2 = id.name;
-    const tmp5 = importDefault(5268);
+    const tmp5 = importDefault(5269);
   }
   if (!tmp8Result) {
-    tmp8Result = importDefault(5268)(formatted, id.userTag.toLowerCase());
+    tmp8Result = importDefault(5269)(formatted, id.userTag.toLowerCase());
     const str3 = id.userTag;
-    const tmp8 = importDefault(5268);
+    const tmp8 = importDefault(5269);
   }
   return tmp8Result;
 };

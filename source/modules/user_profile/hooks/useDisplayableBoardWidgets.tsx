@@ -1,7 +1,7 @@
 // Module ID: 12524
 // Function ID: 12525
 // Name: isNonEmptyBoardWidget
-// Dependencies: [19, 7134, 7131, 7124, 12525, 12526, 2]
+// Dependencies: [19, 7140, 7137, 7130, 12525, 12526, 2]
 // Exports: useDisplayableBoardWidgets
 
 // Module 12524 (isNonEmptyBoardWidget)
@@ -9,16 +9,16 @@ import noop from "noop";
 
 const require = arg1;
 function isNonEmptyBoardWidget(games) {
-  let tmp3 = games instanceof require(7134) /* toSubmission */.ApplicationWidget;
+  let tmp3 = games instanceof require(7140) /* toSubmission */.ApplicationWidget;
   if (!tmp3) {
-    let tmp4 = games instanceof tmp(7131).UserProfilePersonalWidget;
+    let tmp4 = games instanceof tmp(7137).UserProfilePersonalWidget;
     if (!tmp4) {
-      let isGameWidgetResult = tmp(7124).isGameWidget(games);
+      let isGameWidgetResult = tmp(7130).isGameWidget(games);
       if (isGameWidgetResult) {
         isGameWidgetResult = games.games.length > 0;
       }
       tmp4 = isGameWidgetResult;
-      const tmpResult = tmp(7124);
+      const tmpResult = tmp(7130);
     }
     tmp3 = tmp4;
   }

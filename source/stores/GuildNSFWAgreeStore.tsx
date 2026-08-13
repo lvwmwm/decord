@@ -1,9 +1,9 @@
-// Module ID: 4558
-// Function ID: 4559
+// Module ID: 4559
+// Function ID: 4560
 // Name: initialize
-// Dependencies: [595, 589, 4557, 709, 2]
+// Dependencies: [595, 589, 4558, 709, 2]
 
-// Module 4558 (initialize)
+// Module 4559 (initialize)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -23,14 +23,14 @@ prototype["initialize"] = function initialize() {
 prototype["didAgree"] = function didAgree(arg0) {
   let tmp = null != arg0;
   if (tmp) {
-    const result = require(4557) /* shouldShowAgeGateForVoiceChannel */.shouldAgeVerifyForAgeGate();
+    const result = require(4558) /* shouldShowAgeGateForVoiceChannel */.shouldAgeVerifyForAgeGate();
     let tmp5 = !result;
     if (!result) {
       tmp5 = table[arg0] || false;
       const tmp7 = table[arg0] || false;
     }
     tmp = tmp5;
-    const obj = require(4557) /* shouldShowAgeGateForVoiceChannel */;
+    const obj = require(4558) /* shouldShowAgeGateForVoiceChannel */;
   }
   return tmp;
 };

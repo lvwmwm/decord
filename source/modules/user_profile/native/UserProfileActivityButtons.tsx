@@ -1,7 +1,7 @@
 // Module ID: 12375
 // Function ID: 12376
 // Name: JoinActivityButton
-// Dependencies: [5, 19, 1390, 1391, 5038, 4265, 1910, 10482, 3989, 3998, 1979, 5036, 4360, 676, 8948, 21, 4344, 712, 5767, 3979, 647, 12376, 12377, 7239, 4754, 1236, 7731, 10707, 4312, 11222, 9699, 1297, 8287, 11205, 4058, 12379, 8346, 4549, 4200, 7814, 4553, 5040, 1435, 10538, 6057, 8952, 11209, 1486, 8977, 2]
+// Dependencies: [5, 19, 1390, 1391, 5039, 4263, 1910, 10396, 3989, 3998, 1979, 5037, 4361, 676, 8952, 21, 4342, 712, 5768, 3979, 647, 12376, 12377, 7244, 4755, 1236, 7735, 10621, 4310, 11213, 9703, 1297, 8291, 11196, 4058, 12379, 8350, 4550, 4198, 7818, 4554, 5041, 1435, 10452, 6059, 8956, 11200, 1486, 8981, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
 // Module 12375 (JoinActivityButton)
@@ -103,7 +103,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
   let analyticsLocations;
   let set;
   let JOINED = dependencyMap;
-  analyticsLocations = importDefault(5767)().analyticsLocations;
+  analyticsLocations = importDefault(5768)().analyticsLocations;
   set = { id: application.id, deeplink_uri: application.deepLinkUri };
   let obj = require(647) /* defaultAreStatesEqual */;
   const items = [analyticsLocations, createGuildRecordFromRust, closure_7, markAllUserIdListsStale, handleConnectionOpen, updateVoiceState, getUncachedChannelPermissions, updateActivities, filterPlayingActivities, onAction];
@@ -130,7 +130,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
         const joined = obj.join(obj);
         outer1_1(outer1_2[28]).hideActionSheet();
       };
-      jsx(tmp(4754).Button, { text: null, variant: "active", disabled: null, onPress: null });
+      jsx(tmp(4755).Button, { text: null, variant: "active", disabled: null, onPress: null });
       const tmp6 = jsx;
     }
   }
@@ -143,7 +143,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
   let sync_id;
   sync_id = activity.sync_id;
   let tmp4 = null;
-  if (sync_id(9699)(activity)) {
+  if (sync_id(9703)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       let obj = { text: null, icon: null, variant: "secondary", onPress: null };
@@ -153,7 +153,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
       obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.LEgD7t, obj);
       obj = { size: null, source: null, disableColor: true, style: null };
       obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
-      obj[1] = sync_id(8287);
+      obj[1] = sync_id(8291);
       obj[3] = tmp.icon;
       obj[1] = jsx(require(1297) /* Button */.Icon, { size: null, source: null, disableColor: true, style: null });
       obj[3] = callback(function*() {
@@ -232,7 +232,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
           }
         }
       });
-      tmp4 = jsx(require(4754) /* Button */.Button, { size: null, source: null, disableColor: true, style: null });
+      tmp4 = jsx(require(4755) /* Button */.Button, { size: null, source: null, disableColor: true, style: null });
     }
   }
   return tmp4;
@@ -245,7 +245,7 @@ export const WatchActivityButton = function WatchActivityButton(arg0) {
   const tmp2 = importDefault(12379)(activity);
   importDefault = tmp2;
   let tmp3 = null;
-  if (importDefault(8346)(activity)) {
+  if (importDefault(8350)(activity)) {
     tmp3 = null;
     if (null != tmp2) {
       const obj = { text: null, variant: "secondary", onPress: null };
@@ -255,7 +255,7 @@ export const WatchActivityButton = function WatchActivityButton(arg0) {
         callback({ action: "PRESS_WATCH_BUTTON" });
         _undefined(outer1_2[34]).openURL(_undefined);
       };
-      tmp3 = jsx(require(4754) /* Button */.Button, { text: null, variant: "secondary", onPress: null });
+      tmp3 = jsx(require(4755) /* Button */.Button, { text: null, variant: "secondary", onPress: null });
     }
   }
   return tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 8308
-// Function ID: 8309
+// Module ID: 8312
+// Function ID: 8313
 // Name: useTrackCollectiblesItemTryOut
-// Dependencies: [19, 7043, 676, 1924, 1949, 647, 698, 7055, 2]
+// Dependencies: [19, 7049, 676, 1924, 1949, 647, 698, 7061, 2]
 // Exports: default
 
-// Module 8308 (useTrackCollectiblesItemTryOut)
+// Module 8312 (useTrackCollectiblesItemTryOut)
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { AnalyticEvents } from "ME";
 import GuildFeatures from "GuildFeatures";

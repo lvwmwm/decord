@@ -1,10 +1,10 @@
-// Module ID: 12046
-// Function ID: 12047
+// Module ID: 12048
+// Function ID: 12049
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 676, 12047, 1236, 1993, 2]
+// Dependencies: [19, 676, 12049, 1236, 1993, 2]
 // Exports: useProvisionalAccountExplanationText
 
-// Module 12046 (useProvisionalAccountExplanationText)
+// Module 12048 (useProvisionalAccountExplanationText)
 import noop from "noop";
 import { HelpdeskArticles } from "ME";
 
@@ -14,7 +14,7 @@ const result = require("useProvisionalAccountApplication").fileFinishedImporting
 export const useProvisionalAccountExplanationText = function useProvisionalAccountExplanationText(renderApplicationName) {
   renderApplicationName = renderApplicationName.renderApplicationName;
   let importDefault;
-  const tmp = importDefault(12047)(renderApplicationName.userId);
+  const tmp = importDefault(12049)(renderApplicationName.userId);
   importDefault = tmp;
   const items = [tmp, renderApplicationName];
   return React.useMemo(() => {

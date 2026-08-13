@@ -1,9 +1,9 @@
-// Module ID: 5208
-// Function ID: 5209
+// Module ID: 5209
+// Function ID: 5210
 // Name: set
 // Dependencies: [2]
 
-// Module 5208 (set)
+// Module 5209 (set)
 import set from "set";
 
 const obj = { ALL: null, DESKTOP: null, CONSOLE: null, IN_GAME: null, VIDEO: null };

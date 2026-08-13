@@ -1,10 +1,10 @@
-// Module ID: 15167
-// Function ID: 15168
+// Module ID: 15176
+// Function ID: 15177
 // Name: useFocusRefOnNavigation
-// Dependencies: [19, 1500, 5860, 2]
+// Dependencies: [19, 1500, 5861, 2]
 // Exports: default
 
-// Module 15167 (useFocusRefOnNavigation)
+// Module 15176 (useFocusRefOnNavigation)
 import noop from "noop";
 
 const require = arg1;

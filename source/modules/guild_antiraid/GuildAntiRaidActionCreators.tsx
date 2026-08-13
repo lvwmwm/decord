@@ -1,10 +1,10 @@
-// Module ID: 11289
-// Function ID: 11290
+// Module ID: 11280
+// Function ID: 11281
 // Name: _setGuildRaidAlerts
-// Dependencies: [5, 1910, 8164, 676, 698, 4538, 9066, 3943, 530, 9822, 2]
+// Dependencies: [5, 1910, 8168, 676, 698, 4539, 9070, 3943, 530, 9826, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 11289 (_setGuildRaidAlerts)
+// Module 11280 (_setGuildRaidAlerts)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY";
@@ -195,7 +195,7 @@ function _handleResolveRaid() {
               guild = guild.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = callback2(9822)(guild);
+                tmp8 = callback2(9826)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {
@@ -286,7 +286,7 @@ function _handleReportRaid() {
               const guild = outer1_4.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = v0(9822)(guild);
+                tmp8 = v0(9826)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {
@@ -346,11 +346,11 @@ export const trackReportRaidViewed = function trackReportRaidViewed(onChange, on
   if (0 !== items.length) {
     let obj = importDefault(698);
     obj = {};
-    const merged = Object.assign(require(4538) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(onChange));
+    const merged = Object.assign(require(4539) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(onChange));
     obj.guild_id = onChange;
     obj.raid_types = items;
     obj.track(constants.GUILD_RAID_REPORTED, obj);
-    const obj3 = require(4538) /* collectGuildAnalyticsMetadata */;
+    const obj3 = require(4539) /* collectGuildAnalyticsMetadata */;
   }
 };
 export const setGuildRaidAlerts = function setGuildRaidAlerts() {

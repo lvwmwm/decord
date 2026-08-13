@@ -1,7 +1,7 @@
 // Module ID: 12708
 // Function ID: 12709
 // Name: GuildPreview
-// Dependencies: [19, 17, 21, 4344, 712, 4193, 4340, 1236, 5818, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4191, 4338, 1236, 5819, 2]
 // Exports: default
 
 // Module 12708 (GuildPreview)
@@ -27,20 +27,20 @@ const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/
 export default function GuildPreview(guild) {
   guild = guild.guild;
   const tmp = createCacheKey();
-  let obj = require(4193) /* hexToRgba */;
+  let obj = require(4191) /* hexToRgba */;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["0ox7Hq"]).toUpperCase();
-  const items = [callback(require(4340) /* Text */.Text, obj), ];
+  const items = [callback(require(4338) /* Text */.Text, obj), ];
   const obj1 = { style: items1, children: null };
   items1 = [tmp.guildContainer, { borderColor: hexWithOpacityResult }];
   const obj2 = { size: null, guild: null };
   const str = intl.string(require(1236) /* getSystemLocale */.t["0ox7Hq"]);
-  obj2[0] = require(5818) /* GuildIconSizes */.GuildIconSizes.LARGE;
+  obj2[0] = require(5819) /* GuildIconSizes */.GuildIconSizes.LARGE;
   obj2[1] = guild;
-  const items2 = [callback(importDefault(5818), obj2), callback(require(4340) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.guildInfo, children: guild.name })];
+  const items2 = [callback(importDefault(5819), obj2), callback(require(4338) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.guildInfo, children: guild.name })];
   obj1[1] = items2;
   items[1] = callback2(View, obj1);
   obj[1] = items;

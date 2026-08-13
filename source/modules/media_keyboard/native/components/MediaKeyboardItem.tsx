@@ -1,10 +1,10 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 10066
+// Function ID: 10067
 // Name: NewCaption
-// Dependencies: [19, 17, 4679, 10069, 21, 4083, 4344, 712, 4193, 1297, 10013, 4340, 589, 4898, 10070, 1236, 4930, 4900, 8886, 10071, 4345, 1493, 10072, 4855, 9837, 2]
+// Dependencies: [19, 17, 4680, 10067, 21, 4083, 4342, 712, 4191, 1297, 10011, 4338, 589, 4899, 10068, 1236, 4931, 4901, 8890, 10069, 4343, 1493, 10070, 4856, 9840, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10068 (NewCaption)
+// Module 10066 (NewCaption)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "openImagePickerUnhandled";
 import map from "map";
@@ -33,9 +33,9 @@ function NewCaption(arg0) {
   let obj = { style: items, children: null };
   items = [tmp.labelContainer, style];
   obj = { source: null, style: null };
-  obj[0] = importDefault(10013);
+  obj[0] = importDefault(10011);
   obj[1] = tmp.icon;
-  const items1 = [callback(require(1297) /* Button */.Icon, obj), callback(require(4340) /* Text */.Text, { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label })];
+  const items1 = [callback(require(1297) /* Button */.Icon, obj), callback(require(4338) /* Text */.Text, { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label })];
   obj[1] = items1;
   return callback2(closure_4, obj);
 }
@@ -438,13 +438,13 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ handleCameraPress, handleAttachPress, handleViewAllPhotosPress } = arg0);
   closure_11 = (importDefault(1493)().width - (24 + 4 * (numPerRow - 1))) / numPerRow;
   obj = { camera: null, allphotos: null, attach: null };
-  obj = { text: require(1236) /* getSystemLocale */.t.uje3P9, onPress: handleCameraPress, Icon: require(10072) /* CameraIcon */.CameraIcon };
+  obj = { text: require(1236) /* getSystemLocale */.t.uje3P9, onPress: handleCameraPress, Icon: require(10070) /* CameraIcon */.CameraIcon };
   obj[0] = obj;
-  obj = { text: require(1236) /* getSystemLocale */.t.Zmm6dN, onPress: handleViewAllPhotosPress, Icon: require(4855) /* ImageIcon */.ImageIcon };
+  obj = { text: require(1236) /* getSystemLocale */.t.Zmm6dN, onPress: handleViewAllPhotosPress, Icon: require(4856) /* ImageIcon */.ImageIcon };
   obj[1] = obj;
   const tmp = obj();
-  obj[2] = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9837) /* AttachmentIcon */.AttachmentIcon };
-  let obj1 = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9837) /* AttachmentIcon */.AttachmentIcon };
+  obj[2] = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9840) /* AttachmentIcon */.AttachmentIcon };
+  let obj1 = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9840) /* AttachmentIcon */.AttachmentIcon };
   return callback(closure_4, {
     style: tmp.container,
     children: items.map((type) => {

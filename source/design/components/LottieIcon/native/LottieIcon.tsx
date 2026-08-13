@@ -1,7 +1,7 @@
 // Module ID: 10190
 // Function ID: 10191
 // Name: LottieIcon
-// Dependencies: [19, 17, 21, 712, 5816, 1356, 4065, 5759, 2]
+// Dependencies: [19, 17, 21, 712, 5817, 1356, 4065, 5760, 2]
 
 // Module 10190 (LottieIcon)
 import importAllResult from "noop";

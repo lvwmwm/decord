@@ -1,10 +1,10 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8023
+// Function ID: 8024
 // Name: useCharacterLimitAnnouncement
 // Dependencies: [19, 1351, 2]
 // Exports: useCharacterLimitAnnouncement
 
-// Module 8019 (useCharacterLimitAnnouncement)
+// Module 8023 (useCharacterLimitAnnouncement)
 import noop from "noop";
 
 const require = arg1;

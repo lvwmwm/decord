@@ -1,10 +1,10 @@
-// Module ID: 16464
-// Function ID: 16465
+// Module ID: 16475
+// Function ID: 16476
 // Name: _backgroundSync
-// Dependencies: [32, 5, 1395, 1391, 4356, 6917, 6980, 676, 5258, 5215, 1910, 3, 687, 595, 7255, 500, 709, 1208, 698, 1955, 530, 11, 12, 7154, 7157, 7155, 13003, 14824, 6978, 1370, 6988, 2]
+// Dependencies: [32, 5, 1395, 1391, 4357, 6923, 6986, 676, 5259, 5216, 1910, 3, 687, 595, 7260, 500, 709, 1208, 698, 1955, 530, 11, 12, 7160, 7163, 7161, 13003, 14833, 6984, 1370, 6994, 2]
 // Exports: backgroundSync
 
-// Module 16464 (_backgroundSync)
+// Module 16475 (_backgroundSync)
 import _slicedToArray from "_slicedToArray";
 import getState from "getState";
 import createChannelRecord from "createChannelRecord";
@@ -568,11 +568,11 @@ function _backgroundSyncGuildData() {
               let guilds;
               let api_code_version;
               let closure_11;
-              const items = [callback2(7154).getCommittedVersions(), , ];
-              const obj18 = callback2(7154);
-              items[1] = callback2(7157).getCommittedVersions();
-              const obj19 = callback2(7157);
-              items[2] = callback2(7155).canUseGuildVersions();
+              const items = [callback2(7160).getCommittedVersions(), , ];
+              const obj18 = callback2(7160);
+              items[1] = callback2(7163).getCommittedVersions();
+              const obj19 = callback2(7163);
+              items[2] = callback2(7161).canUseGuildVersions();
               c5 = 1;
               c6 = 1;
               const obj1 = { value: null, done: false };
@@ -734,7 +734,7 @@ function _backgroundSyncGuildData() {
               c6 = 3;
               throw body;
             } else if (arg0 !== 2) {
-              obj = callback(14824);
+              obj = callback(14833);
               obj.writeCaches(true);
               const _Date = Date;
               callback.time_save_guild_data = Date.now() - callback2;
@@ -1326,7 +1326,7 @@ function _processChannelChanges() {
                 let tmp23 = callback;
                 let tmp24 = dependencyMap;
                 let tmp25 = callback3;
-                let tmp26 = callback3(obj2.partition(modified_messages, callback(6978).isLikelyNotDelta), 2);
+                let tmp26 = callback3(obj2.partition(modified_messages, callback(6984).isLikelyNotDelta), 2);
                 let arr4 = tmp26[1];
                 dependencyMap2 = arr4;
                 let push = new_messages.push;

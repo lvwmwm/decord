@@ -34,7 +34,7 @@ arg5.createLangChainCallbackHandler = function createLangChainCallbackHandler() 
     lc_namespace: ["langchain_core", "callbacks", "sentry"],
     lc_secrets: "r",
     lc_attributes: "accessibilityRole",
-    lc_aliases: "guild",
+    lc_aliases: "map",
     lc_serializable_keys: "channel_id",
     lc_id: ["langchain_core", "callbacks", "sentry"],
     lc_kwargs: {},
@@ -287,7 +287,7 @@ arg5.createLangChainCallbackHandler = function createLangChainCallbackHandler() 
       obj = { lc: 1, type: "not_implemented", id: obj.lc_id };
       return obj;
     },
-    toJSONNotImplemented: "getMessageValue"
+    toJSONNotImplemented: "_collectCurrentChunk"
   };
   obj[28] = function toJSONNotImplemented() {
     obj = { lc: 1, type: "not_implemented", id: obj.lc_id };

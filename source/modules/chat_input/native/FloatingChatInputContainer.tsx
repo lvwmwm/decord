@@ -1,10 +1,10 @@
-// Module ID: 11429
-// Function ID: 11430
+// Module ID: 11420
+// Function ID: 11421
 // Name: useKeyboardOpenPaddingStyle
-// Dependencies: [32, 19, 21, 4083, 4065, 712, 1642, 4209, 1626, 4345, 4348, 2]
+// Dependencies: [32, 19, 21, 4083, 4065, 712, 1642, 4207, 1626, 4343, 4346, 2]
 // Exports: default
 
-// Module 11429 (useKeyboardOpenPaddingStyle)
+// Module 11420 (useKeyboardOpenPaddingStyle)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -51,7 +51,7 @@ function useKeyboardOpenPaddingStyle() {
     }
     return num > 0;
   }), 2);
-  const obj3 = token(4209);
+  const obj3 = token(4207);
   if (!tmp5) {
     tmp5 = true === obj3.useKeyboardContextForType(token(1626).KeyboardTypes.SYSTEM).keyboardWillOpen;
   }

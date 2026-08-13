@@ -1,9 +1,9 @@
-// Module ID: 11141
-// Function ID: 11142
+// Module ID: 11056
+// Function ID: 11057
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 11141 (enforcing)
+// Module 11056 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeCommandClipboardModule");

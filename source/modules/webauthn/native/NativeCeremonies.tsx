@@ -1,9 +1,9 @@
-// Module ID: 8521
-// Function ID: 8522
+// Module ID: 8525
+// Function ID: 8526
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 17, 3, 5870, 1236, 500, 8522, 8523, 1624, 2]
+// Dependencies: [5, 17, 3, 5871, 1236, 500, 8526, 8527, 1624, 2]
 
-// Module 8521 (_promptForRegisterCredential)
+// Module 8525 (_promptForRegisterCredential)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 

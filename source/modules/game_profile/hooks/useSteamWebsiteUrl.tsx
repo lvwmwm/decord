@@ -1,10 +1,10 @@
-// Module ID: 9333
-// Function ID: 9334
+// Module ID: 9337
+// Function ID: 9338
 // Name: buildSteamStoreUrl
-// Dependencies: [4365, 676, 589, 9334, 9332, 1903, 2]
+// Dependencies: [4366, 676, 589, 9338, 9336, 1903, 2]
 // Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 9333 (buildSteamStoreUrl)
+// Module 9337 (buildSteamStoreUrl)
 import handleLoadMessages from "handleLoadMessages";
 import { Distributors } from "ME";
 
@@ -30,7 +30,7 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
           return null;
         } else {
           const websites = game.websites;
-          const found = websites.find((category) => category.category === callback(9332).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          const found = websites.find((category) => category.category === callback(9336).ThirdPartyGameApplicationWebsiteCategory.STEAM);
           if (found != null) {
             const url = found.url;
           }

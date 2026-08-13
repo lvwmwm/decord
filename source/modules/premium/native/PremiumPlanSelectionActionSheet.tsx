@@ -1,10 +1,10 @@
-// Module ID: 6928
-// Function ID: 6929
+// Module ID: 6934
+// Function ID: 6935
 // Name: Header
-// Dependencies: [109, 5, 32, 19, 17, 6929, 1994, 5897, 6926, 1924, 676, 1301, 4327, 505, 21, 4344, 712, 4007, 4340, 1236, 38, 6936, 1898, 589, 7372, 5894, 4754, 4740, 4750, 7373, 6922, 4280, 6952, 7381, 7444, 7445, 5767, 5787, 5755, 7415, 6909, 4770, 7416, 4312, 698, 6908, 1624, 4683, 7375, 4663, 6912, 1363, 7433, 7434, 7435, 7436, 7437, 7438, 500, 1993, 5436, 7446, 5751, 5307, 7449, 7452, 1297, 7453, 7383, 7454, 2]
+// Dependencies: [109, 5, 32, 19, 17, 6935, 1994, 5899, 6932, 1924, 676, 1301, 4325, 505, 21, 4342, 712, 4007, 4338, 1236, 38, 6942, 1898, 589, 7376, 5896, 4755, 4741, 4751, 7377, 6928, 4278, 6958, 7385, 7448, 7449, 5768, 5788, 5756, 7419, 6915, 4771, 7420, 4310, 698, 6914, 1624, 4684, 7379, 4664, 6918, 1363, 7437, 7438, 7439, 7440, 7441, 7442, 500, 1993, 5437, 7450, 5752, 5308, 7453, 7456, 1297, 7457, 7387, 7458, 2]
 // Exports: default, getItemsByPremiumTypePredicate
 
-// Module 6928 (Header)
+// Module 6934 (Header)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import context from "context";
 import usePremiumTrialOffer from "usePremiumTrialOffer";
@@ -67,7 +67,7 @@ function Header(arg0) {
       obj[0] = tmp.headerText;
       const intl = require(1236) /* getSystemLocale */.intl;
       obj[4] = intl.string(require(1236) /* getSystemLocale */.t.vLz3Zs);
-      return callback3(require(4340) /* Text */.Text, obj);
+      return callback3(require(4338) /* Text */.Text, obj);
     }
   }
   if (isPaymentSuccess) {
@@ -103,7 +103,7 @@ function Header(arg0) {
     const tmp6Result = tmp6(4007);
   }
   trialOffer = null;
-  return callback3(importDefault(6936), { premiumType, trialOffer, discountOffer });
+  return callback3(importDefault(6942), { premiumType, trialOffer, discountOffer });
 }
 function PlanOptionBadgeComponent(backgroundColorType) {
   let str = backgroundColorType.backgroundColorType;
@@ -125,7 +125,7 @@ function PlanOptionBadgeComponent(backgroundColorType) {
   }
   obj[2] = str2;
   obj[3] = backgroundColorType.text;
-  obj[1] = closure_35(require(4340) /* Text */.Text, obj);
+  obj[1] = closure_35(require(4338) /* Text */.Text, obj);
   return closure_35(closure_8, obj);
 }
 function PlanOption(premiumItem) {
@@ -153,7 +153,7 @@ function PlanOption(premiumItem) {
   let obj = premiumItem(589);
   const items = [updateProduct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_12.getProduct(premiumItem.productId));
-  let obj1 = premiumItem(7372);
+  let obj1 = premiumItem(7376);
   let checkoutPlanPriceString = obj1.useCheckoutPlanPriceString(premiumItem.productId, stateFromStores);
   ({ orderRequired, orderRecord } = useNativeCheckoutStore((orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord })));
   const premiumTier = premiumItem.premiumTier;
@@ -220,15 +220,15 @@ function PlanOption(premiumItem) {
   }
   let formatRateResult = null;
   if (null != discountedPriceString) {
-    tmp4Result = tmp4(5894);
+    tmp4Result = tmp4(5896);
     formatRateResult = tmp4Result.formatRate(discountedPriceString, tmp24.interval, tmp24.intervalCount);
   }
   if (tmp9) {
     const intl = tmp4(1236).intl;
     obj = { price: null };
-    obj[0] = tmp4(5894).formatPrice(0, USD, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+    obj[0] = tmp4(5896).formatPrice(0, USD, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
     let formatToPlainStringResult = intl.formatToPlainString(tmp4(1236).t.hXcaLT, obj);
-    const tmp4Result1 = tmp4(5894);
+    const tmp4Result1 = tmp4(5896);
   } else {
     formatToPlainStringResult = discountedPriceString;
     if (null == discountedPriceString) {
@@ -245,7 +245,7 @@ function PlanOption(premiumItem) {
   if (checkoutPlanPriceString == null) {
     tmp28 = closure_18;
   }
-  const tmp4Result2 = premiumItem(5894);
+  const tmp4Result2 = premiumItem(5896);
   if (first > 0) {
     const items1 = [tmp.planOptionPriceContainer, ];
     obj = { transform: null };
@@ -277,7 +277,7 @@ function PlanOption(premiumItem) {
     combined = "" + tierDisplayNameByPlanId + " " + intervalString;
   }
   obj3[2] = combined;
-  const items3 = [closure_35(premiumItem(4340).Text, obj3), ];
+  const items3 = [closure_35(premiumItem(4338).Text, obj3), ];
   obj4 = { style: planOptionPriceContainer, children: null };
   const obj5 = { style: tmp.planOptionDiscountContainer, children: null };
   if (null == customBadgeComponent) {
@@ -309,7 +309,7 @@ function PlanOption(premiumItem) {
   }
   obj9[2] = str8;
   obj9[3] = formatToPlainStringResult;
-  items4[1] = closure_35(premiumItem(4340).Text, obj9);
+  items4[1] = closure_35(premiumItem(4338).Text, obj9);
   obj5[1] = items4;
   const items5 = [closure_36(closure_8, obj5), , ];
   if (!tmp9) {
@@ -347,7 +347,7 @@ function PlanOption(premiumItem) {
           }
           obj12[1] = num2;
           obj11[2] = intl6.formatToPlainString(tmp4(1236).t["02Gmgm"], obj12);
-          tmp32Result = tmp32(tmp4(4340).Text, obj11);
+          tmp32Result = tmp32(tmp4(4338).Text, obj11);
         }
       }
     }
@@ -372,7 +372,7 @@ function PlanOption(premiumItem) {
       }
       obj14[1] = num3;
       obj13[2] = intl7.formatToPlainString(tmp4(1236).t["vZk+c/"], obj14);
-      tmp32Result1 = tmp32(tmp4(4340).Text, obj13);
+      tmp32Result1 = tmp32(tmp4(4338).Text, obj13);
     }
     items6[1] = tmp32Result1;
     obj10[2] = items6;
@@ -407,7 +407,7 @@ function PlanOption(premiumItem) {
       formatToPlainStringResult1 = intl4.formatToPlainString(tmp4(1236).t.v9QeON, obj17);
     }
     obj15[2] = formatToPlainStringResult1;
-    tmp32(tmp4(4340).Text, obj15);
+    tmp32(tmp4(4338).Text, obj15);
   }
 }
 function PremiumPlanSelectionActionSheetCTA(isPaymentSuccess) {
@@ -419,7 +419,7 @@ function PremiumPlanSelectionActionSheetCTA(isPaymentSuccess) {
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t.WAI6xu);
     obj[3] = tmp;
-    return callback3(require(4754) /* Button */.Button, obj);
+    return callback3(require(4755) /* Button */.Button, obj);
   } else {
     const tmp5 = shouldUseMobileWebRedirectCheckout ? { size: "lg", variant: "primary" } : { size: "md", variant: "active" };
     obj = { text: null };
@@ -431,7 +431,7 @@ function PremiumPlanSelectionActionSheetCTA(isPaymentSuccess) {
     };
     obj.loading = tmp4;
     obj.disabled = tmp3;
-    return callback3(require(4754) /* Button */.Button, obj);
+    return callback3(require(4755) /* Button */.Button, obj);
   }
 }
 function PremiumPlanSelectionActionSheet(premiumItems) {
@@ -1250,7 +1250,7 @@ let obj2 = { height: 1, width: "100%", backgroundColor: require("Themes").colors
 let result = require("_slicedToArray").fileFinishedImporting("modules/premium/native/PremiumPlanSelectionActionSheet.tsx");
 
 export default function PremiumPlanSelectionActionSheetWithOrderCTX(predicate) {
-  const NitroACOMSubscriptionExperiment = TIER_2(7453).NitroACOMSubscriptionExperiment;
+  const NitroACOMSubscriptionExperiment = TIER_2(7457).NitroACOMSubscriptionExperiment;
   let obj = TIER_2(500);
   if (obj.isIOS()) {
     if (NitroACOMSubscriptionExperiment.useConfig({ location: "PremiumPlanSelectionActionSheetWithOrderCTX" }).enabled) {
@@ -1294,7 +1294,7 @@ export default function PremiumPlanSelectionActionSheetWithOrderCTX(predicate) {
       fn3 = (interval, interval2) => interval2.interval - interval.interval;
     }
     const tmp13 = callback(predicate, closure_3);
-    let tmpResult = tmp(6952);
+    let tmpResult = tmp(6958);
     const premiumTrialOffer = tmpResult.usePremiumTrialOffer();
     let trial_id;
     if (premiumTrialOffer != null) {
@@ -1308,22 +1308,22 @@ export default function PremiumPlanSelectionActionSheetWithOrderCTX(predicate) {
       obj[0] = obj;
       tmp17 = obj;
     }
-    tmpResult = tmp(7383);
+    tmpResult = tmp(7387);
     const isEligibleForBogoOffer = tmpResult.useIsEligibleForBogoOffer();
     if (null == fn3) {
-      let premiumBundlesWithPredicate = tmp(6912).getPremiumBundlesWithPredicate(fn);
-      const tmpResult1 = tmp(6912);
+      let premiumBundlesWithPredicate = tmp(6918).getPremiumBundlesWithPredicate(fn);
+      const tmpResult1 = tmp(6918);
     } else {
-      const premiumBundlesWithPredicate1 = tmp(6912).getPremiumBundlesWithPredicate(fn);
+      const premiumBundlesWithPredicate1 = tmp(6918).getPremiumBundlesWithPredicate(fn);
       premiumBundlesWithPredicate = premiumBundlesWithPredicate1.sort(fn3);
-      const tmpResult2 = tmp(6912);
+      const tmpResult2 = tmp(6918);
     }
     if (isEligibleForBogoOffer) {
       fn2 = (interval) => interval.interval === constants.MONTH;
     }
     const found = premiumBundlesWithPredicate.find(fn2);
     if (null != found) {
-      const subscriptionItemsForProduct = tmp(6912).getSubscriptionItemsForProduct(found.productId);
+      const subscriptionItemsForProduct = tmp(6918).getSubscriptionItemsForProduct(found.productId);
       let mapped = subscriptionItemsForProduct.map((planId) => {
         const obj = { subscriptionPlanId: planId.planId, skuId: null, quantity: null };
         const obj2 = TIER_2(4007);
@@ -1331,7 +1331,7 @@ export default function PremiumPlanSelectionActionSheetWithOrderCTX(predicate) {
         obj[2] = planId.quantity;
         return obj;
       });
-      const tmpResult3 = tmp(6912);
+      const tmpResult3 = tmp(6918);
     } else {
       const obj1 = { subscriptionPlanId: null, skuId: null, quantity: 1 };
       obj1[0] = closure_21.PREMIUM_YEAR_TIER_2;
@@ -1346,7 +1346,7 @@ export default function PremiumPlanSelectionActionSheetWithOrderCTX(predicate) {
     obj2[3] = mapped;
     obj2[6] = tmp17;
     obj2[7] = function onOrderRetryCancellation() {
-      return callback(4312).hideActionSheet(closure_24);
+      return callback(4310).hideActionSheet(closure_24);
     };
     const obj3 = {};
     const merged = Object.assign(tmp13);
@@ -1354,7 +1354,7 @@ export default function PremiumPlanSelectionActionSheetWithOrderCTX(predicate) {
     obj3.userIsEligibleForBogoPromotion = isEligibleForBogoOffer;
     obj3.initialSelectedItem = found;
     obj2[8] = callback3(PremiumPlanSelectionActionSheet, obj3);
-    return callback3(importDefault(7454), obj2);
+    return callback3(importDefault(7458), obj2);
   }
 };
 export function getItemsByPremiumTypePredicate(arg0) {

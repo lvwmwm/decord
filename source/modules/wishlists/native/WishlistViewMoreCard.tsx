@@ -1,7 +1,7 @@
 // Module ID: 10156
 // Function ID: 10157
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 4344, 712, 1236, 10151, 4340, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1236, 10151, 4338, 2]
 // Exports: default
 
 // Module 10156 (WishlistViewMoreCard)
@@ -46,7 +46,7 @@ export default function WishlistViewMoreCard(recipientName) {
   obj = { variant: "text-md/semibold", color: "text-overlay-light", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.format(require(1236) /* getSystemLocale */.t.F6iMs4, { count: overflowCount });
-  obj[1] = callback(require(4340) /* Text */.Text, obj);
+  obj[1] = callback(require(4338) /* Text */.Text, obj);
   items[1] = callback(closure_5, obj);
   obj[2] = items;
   return callback2(closure_3, obj);

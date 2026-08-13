@@ -1,7 +1,7 @@
 // Module ID: 12558
 // Function ID: 12559
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 676, 21, 4344, 712, 12556, 9400, 9457, 698, 9409, 4062, 1236, 9401, 9396, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4342, 712, 12556, 9404, 9461, 698, 9413, 4062, 1236, 9405, 9400, 2]
 // Exports: default
 
 // Module 12558 (AddToWishlistItemCard)

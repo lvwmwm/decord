@@ -1,7 +1,7 @@
 // Module ID: 12614
 // Function ID: 12615
 // Name: TitleWrapper
-// Dependencies: [32, 19, 17, 3998, 1922, 8428, 21, 4344, 712, 1367, 4886, 500, 9516, 4340, 1297, 12615, 9708, 4065, 4804, 12616, 1236, 4534, 2]
+// Dependencies: [32, 19, 17, 3998, 1922, 8432, 21, 4342, 712, 1367, 4887, 500, 9520, 4338, 1297, 12615, 9712, 4065, 4805, 12616, 1236, 4535, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
 // Module 12614 (TitleWrapper)
@@ -51,7 +51,7 @@ function TitleWrapper(headerAccessibilityLabel) {
     obj[5] = tmp6;
     obj[6] = tmp2.wrapper;
     obj[7] = children;
-    tmp7Result = callback2(titleContentHeight(4886).PressableOpacity, obj);
+    tmp7Result = callback2(titleContentHeight(4887).PressableOpacity, obj);
     const tmp7 = callback2;
   }
   return tmp7Result;
@@ -92,9 +92,9 @@ function ChannelTitle(guildId) {
     obj[3] = str2;
     ({ channelName: obj4[6], channelNameContainer: obj4[7] } = tmp4);
     obj[8] = accessibleTitle;
-    let tmp8Result = tmp11(tmp(9516), obj);
+    let tmp8Result = tmp11(tmp(9520), obj);
     let tmp8 = tmp11;
-    const tmpResult = tmp(9516);
+    const tmpResult = tmp(9520);
   } else {
     tmp8 = closure_9;
     let str = "heading-lg/bold";
@@ -106,7 +106,7 @@ function ChannelTitle(guildId) {
     obj1[3] = tmp4.channelName;
     obj1[4] = accessibleTitle;
     obj1[7] = title;
-    tmp8Result = tmp8(require(4340) /* Text */.Text, obj1);
+    tmp8Result = tmp8(require(4338) /* Text */.Text, obj1);
   }
   items[1] = tmp8Result;
   tmp8Result = !disableArrow;
@@ -137,7 +137,7 @@ function GroupDMIcon(channel) {
   obj[0] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[1] = channel.channel;
   obj[2] = tmp.channelIcon;
-  return callback2(importDefault(9708), obj);
+  return callback2(importDefault(9712), obj);
 }
 function UserAvatar(user) {
   let isMobileOnline;
@@ -145,7 +145,7 @@ function UserAvatar(user) {
   let status;
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: true, status: "done", isMobileOnline: true, isVROnline: null, style: null, autoStatusCutout: 102.957 };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: true, status: false, isMobileOnline: "done", isVROnline: "flowing", style: "hourglass", autoStatusCutout: "hours" };
   obj[3] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   let tmp3 = null;
   if (!user.isSystemUser()) {
@@ -225,7 +225,7 @@ function MemberCountText(arg0) {
     }
     obj = { variant: null, color: "text-subtle", children: "\u2022" };
     obj[0] = str3;
-    tmp7Result = tmp7(require(4340) /* Text */.Text, obj);
+    tmp7Result = tmp7(require(4338) /* Text */.Text, obj);
   }
   children[1] = tmp7Result;
   return closure_10(closure_11, { children });
@@ -239,7 +239,7 @@ function ParentChannelSubTitle(channel) {
   const tmp3 = callback3(tmp2);
   const tmp4 = closure_9;
   const tmp5 = require;
-  obj[0] = require(4534) /* computeChannelName */.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
+  obj[0] = require(4535) /* computeChannelName */.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
   obj[1] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.BjYvHO, obj);
   let str = "text-xs/medium";
   if (tmp2) {
@@ -252,11 +252,11 @@ function ParentChannelSubTitle(channel) {
   }
   obj[4] = str2;
   obj[5] = tmp3.parentChannelName;
-  const obj3 = require(4534) /* computeChannelName */;
+  const obj3 = require(4535) /* computeChannelName */;
   const tmp6 = mergeGuildAvatar;
   const tmp7 = markAllUserIdListsStale;
-  obj[6] = tmp5(4534).computeChannelName(channel, tmp6, tmp7);
-  return tmp4(require(4340) /* Text */.Text, obj);
+  obj[6] = tmp5(4535).computeChannelName(channel, tmp6, tmp7);
+  return tmp4(require(4338) /* Text */.Text, obj);
 }
 function EmptyIcon() {
   return callback2(View, { style: callback3(importDefault(1367)("ChannelHeaderShared")).channelIconWrapper });
@@ -314,14 +314,14 @@ export const renderChannelIconRaw = function renderChannelIconRaw(icon, IconComp
   return callback2(ChannelIconRaw, { icon, IconComponent });
 };
 export const renderChannelIcon = function renderChannelIcon(stateFromStores, stateFromStores3) {
-  let obj = require(4804) /* getChannelIcon */;
+  let obj = require(4805) /* getChannelIcon */;
   const channelIconWithGuild = obj.getChannelIconWithGuild(stateFromStores, stateFromStores3);
   let rulesChannelId;
   if (stateFromStores3 != null) {
     rulesChannelId = stateFromStores3.rulesChannelId;
   }
   obj = { isRulesChannel: rulesChannelId === stateFromStores.id };
-  obj = { icon: channelIconWithGuild, IconComponent: require(4804) /* getChannelIcon */.getChannelIconComponent(stateFromStores, obj) };
+  obj = { icon: channelIconWithGuild, IconComponent: require(4805) /* getChannelIcon */.getChannelIconComponent(stateFromStores, obj) };
   return callback2(ChannelIconRaw, obj);
 };
 export const renderMemberCountText = function renderMemberCountText(online, length, flag, arg3) {

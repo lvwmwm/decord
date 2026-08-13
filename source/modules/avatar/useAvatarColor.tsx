@@ -1,10 +1,10 @@
-// Module ID: 8278
-// Function ID: 8279
+// Module ID: 8282
+// Function ID: 8283
 // Name: hasFetchedColors
-// Dependencies: [32, 5, 19, 4336, 644, 705, 1490, 4193, 589, 7053, 2]
+// Dependencies: [32, 5, 19, 4334, 644, 705, 1490, 4191, 589, 7059, 2]
 // Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
 
-// Module 8278 (hasFetchedColors)
+// Module 8282 (hasFetchedColors)
 import _slicedToArray from "_slicedToArray";
 import batchUpdates from "batchUpdates";
 import noop from "noop";
@@ -168,7 +168,7 @@ function _fetchColors() {
               throw arg1;
             } else if (arg0 !== 2) {
               table = arg1;
-              obj = callback(4193);
+              obj = callback(4191);
               dependencyMap = obj.getComplimentaryPaletteForColor(table[0]);
               obj1 = callback(705);
               obj1.batchUpdates(() => {

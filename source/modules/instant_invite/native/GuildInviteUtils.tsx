@@ -1,7 +1,7 @@
 // Module ID: 12561
 // Function ID: 12562
 // Name: _sendGuildInvite
-// Dependencies: [5, 19, 1980, 4265, 1990, 1910, 3989, 5195, 1922, 12562, 7236, 676, 698, 4312, 12563, 2007, 5268, 589, 1351, 1236, 7799, 9112, 9175, 2]
+// Dependencies: [5, 19, 1980, 4263, 1990, 1910, 3989, 5196, 1922, 12562, 7241, 676, 698, 4310, 12563, 2007, 5269, 589, 1351, 1236, 7803, 9116, 9179, 2]
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
 // Module 12561 (_sendGuildInvite)
@@ -71,12 +71,12 @@ function _sendGuildInvite() {
                 throw Error();
               } else {
                 const obj1 = { max_uses: null, max_age: null, unique: true };
-                obj1[0] = callback2(9112).INVITE_OPTIONS_ONCE.value;
-                obj1[1] = callback2(9112).INVITE_OPTIONS_7_DAYS.value;
+                obj1[0] = callback2(9116).INVITE_OPTIONS_ONCE.value;
+                obj1[1] = callback2(9116).INVITE_OPTIONS_7_DAYS.value;
                 c6 = 2;
                 c7 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = callback2(7799).createInvite(defaultChannel.id, obj1, tmp45);
+                obj2[0] = callback2(7803).createInvite(defaultChannel.id, obj1, tmp45);
                 return obj2;
               }
               tmp45 = dependencyMap;
@@ -94,10 +94,10 @@ function _sendGuildInvite() {
               throw arg1;
             } else if (arg0 !== 2) {
               code = arg1;
-              let obj4 = callback2(9175);
+              let obj4 = callback2(9179);
               const obj3 = { inviteKey: null, type: null, user: null, location: null, inviteAnalyticsMetadata: null };
               obj3[0] = code.code;
-              obj3[1] = callback(9175).InvitePropertiesType.USER;
+              obj3[1] = callback(9179).InvitePropertiesType.USER;
               obj3[2] = user.getUser(callback);
               obj3[3] = dependencyMap;
               obj4 = { source: null };
@@ -144,7 +144,7 @@ export const showGuildInviteActionSheet = function showGuildInviteActionSheet(id
   let obj = importDefault(698);
   obj = { type: "Invite to Guilds", source: newestAnalyticsLocation };
   obj.track(constants.OPEN_POPOUT, obj);
-  const obj3 = importDefault(4312);
+  const obj3 = importDefault(4310);
   obj = { recipientId: id, source: newestAnalyticsLocation };
   obj3.openLazy(require(2007) /* asyncRequireImpl */(12563, dependencyMap.paths), "invite-to-guilds-" + id, obj);
 };

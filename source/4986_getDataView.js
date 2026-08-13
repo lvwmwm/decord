@@ -1,25 +1,23 @@
 // Module ID: 4986
 // Function ID: 4987
 // Name: getDataView
-// Dependencies: [4971]
+// Dependencies: [4972]
 
 // Module 4986 (getDataView)
 const require = arg1;
 const dependencyMap = arg6;
-let c2 = 0;
-let c3 = "<?xpacket begin";
+let c2 = 6;
+let closure_3 = ["GIF87a", "GIF89a"];
 arg5.default = {
-  isXMLFile(dataView) {
-    let tmp = dataView;
-    if (tmp) {
-      tmp = require(4971) /* getDataView */.getStringFromDataView(dataView, c2, length.length) === length;
-      const obj = require(4971) /* getDataView */;
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      hasItem = closure_3.includes(require(4972) /* getDataView */.getStringFromDataView(dataView, 0, c2));
+      const obj = require(4972) /* getDataView */;
     }
-    return tmp;
+    return hasItem;
   },
-  findOffsets(byteLength) {
-    const xmpChunks = [];
-    xmpChunks.push({ dataOffset: c2, length: byteLength.byteLength });
-    return { xmpChunks };
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
   }
 };

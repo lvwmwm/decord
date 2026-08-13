@@ -1,9 +1,9 @@
-// Module ID: 8088
-// Function ID: 8089
+// Module ID: 8092
+// Function ID: 8093
 // Name: handleMessageSendFailedAutomod
-// Dependencies: [1391, 4561, 676, 7333, 7363, 4563, 7009, 11, 589, 709, 2]
+// Dependencies: [1391, 4562, 676, 7338, 7368, 4564, 7015, 11, 589, 709, 2]
 
-// Module 8088 (handleMessageSendFailedAutomod)
+// Module 8092 (handleMessageSendFailedAutomod)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
 import ME from "ME";
@@ -15,13 +15,13 @@ let error;
 const require = arg1;
 function handleMessageSendFailedAutomod(messageData) {
   messageData = messageData.messageData;
-  let obj = require(7333) /* items */;
+  let obj = require(7338) /* items */;
   const failedMessageId = obj.getFailedMessageId(messageData);
   obj = { id: failedMessageId, isBlockedEdit: null, messageData: null, errorMessage: null };
-  obj[1] = require(7333) /* items */.isMessageDataEdit(messageData);
+  obj[1] = require(7338) /* items */.isMessageDataEdit(messageData);
   obj[2] = messageData;
-  const obj3 = require(7333) /* items */;
-  obj[3] = require(7363) /* getAutomodErrorMessageFromErrorResponse */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
+  const obj3 = require(7338) /* items */;
+  obj[3] = require(7368) /* getAutomodErrorMessageFromErrorResponse */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
   closure_8[failedMessageId] = obj;
   closure_9 = closure_9 + 1;
   return true;
@@ -135,18 +135,18 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(require("dispatche
     } else if (message.type !== constants2.AUTO_MODERATION_ACTION) {
       return false;
     } else {
-      const messageRecord = require(4563) /* createMinimalMessageRecord */.createMessageRecord(message);
-      const obj = require(4563) /* createMinimalMessageRecord */;
+      const messageRecord = require(4564) /* createMinimalMessageRecord */.createMessageRecord(message);
+      const obj = require(4564) /* createMinimalMessageRecord */;
       const tmp = require;
-      let result = require(7009) /* getDecisionOutcomeFromMessage */.isAutomodMessageRecord(messageRecord);
+      let result = require(7015) /* getDecisionOutcomeFromMessage */.isAutomodMessageRecord(messageRecord);
       if (result) {
-        let flag = tmp(7009).isAutomodNotification(messageRecord);
+        let flag = tmp(7015).isAutomodNotification(messageRecord);
         if (flag) {
           closure_11[guildId] = messageRecord.id;
           flag = true;
         }
         result = flag;
-        const tmpResult = tmp(7009);
+        const tmpResult = tmp(7015);
       }
       return result;
     }

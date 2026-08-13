@@ -1,7 +1,7 @@
 // Module ID: 7949
 // Function ID: 7950
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7891, 7950, 7900]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7950, 7895, 7894]
 
 // Module 7949 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Line = arg1;
+const ForeignObject = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Line {
+class ForeignObject {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Line);
+    tmp = _isNativeReflectConstruct(this, ForeignObject);
     tmp2 = __esModule;
-    obj = __esModule(Line);
+    obj = __esModule(ForeignObject);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,41 +51,31 @@ class Line {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Line, require("_isNativeReflectConstruct"));
+require("_inherits")(ForeignObject, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "render",
     value: function render() {
-      let x1;
-      let x2;
-      let y1;
-      let y2;
       const self = this;
       const props = this.props;
-      let obj = {};
-      ({ x1, y1, x2, y2 } = props);
-      const merged = Object.assign(self(7891).extract(this, props));
-      obj.x1 = x1;
-      obj.y1 = y1;
-      obj.x2 = x2;
-      obj.y2 = y2;
+      let obj = { x: props.x, y: props.y, width: props.width, height: props.height };
       obj = {
         ref(arg0) {
           return self.refMethod(arg0);
         }
       };
-      const obj2 = self(7891);
+      const tmp = importDefault(7950);
+      const merged = Object.assign(self(7895).withoutXY(this, props));
       const merged1 = Object.assign(obj);
-      return jsx(importDefault(7950), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
+      obj.children = props.children;
+      return <tmp ref={function ref(arg0) {
+        return self.refMethod(arg0);
+      }} />;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Line, items);
-importDefaultResultResult.displayName = "Line";
-importDefaultResultResult.defaultProps = { x1: 0, y1: 0, x2: 0, y2: 0 };
+const importDefaultResultResult = importDefaultResult(ForeignObject, items);
+importDefaultResultResult.displayName = "ForeignObject";
+importDefaultResultResult.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
 
 export default importDefaultResultResult;

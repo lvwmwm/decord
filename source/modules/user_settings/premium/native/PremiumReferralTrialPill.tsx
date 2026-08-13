@@ -1,7 +1,7 @@
 // Module ID: 12754
 // Function ID: 12755
 // Name: PremiumReferralTrialPill
-// Dependencies: [17, 21, 4344, 712, 4340, 1236, 2]
+// Dependencies: [17, 21, 4342, 712, 4338, 1236, 2]
 // Exports: PremiumReferralTrialPill
 
 // Module 12754 (PremiumReferralTrialPill)
@@ -23,7 +23,7 @@ export const PremiumReferralTrialPill = (hasExtraMargin) => {
   obj = { variant: "text-xs/bold", style: tmp.text, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.Y1q7js).toUpperCase();
-  obj[1] = jsx(require(4340) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text, children: null });
+  obj[1] = jsx(require(4338) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text, children: null });
   obj[1] = <View variant="text-xs/bold" style={tmp.text}>{null}</View>;
   return <View variant="text-xs/bold" style={tmp.text}>{null}</View>;
 };

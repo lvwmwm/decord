@@ -1,10 +1,10 @@
-// Module ID: 11835
-// Function ID: 11836
+// Module ID: 11833
+// Function ID: 11834
 // Name: ApplicationCommandOptionItem
-// Dependencies: [32, 19, 17, 1990, 21, 4344, 712, 5198, 4886, 1236, 1297, 589, 11662, 5307, 4340, 8008, 8898, 11836, 2]
+// Dependencies: [32, 19, 17, 1990, 21, 4342, 712, 5199, 4887, 1236, 1297, 589, 11658, 5308, 4338, 8012, 8902, 11834, 2]
 // Exports: default
 
-// Module 11835 (ApplicationCommandOptionItem)
+// Module 11833 (ApplicationCommandOptionItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "DescriptionEllipsis";
@@ -95,7 +95,7 @@ function ApplicationCommandOptionItem(arg0) {
   obj = { style: items1, numberOfLines: 1, children: option.displayName };
   items1[3] = errorCommandOptionText;
   obj.children = closure_8(require(1297) /* Button */.LegacyText, obj);
-  return closure_8(require(4886) /* PressableBase */.PressableOpacity, obj);
+  return closure_8(require(4887) /* PressableBase */.PressableOpacity, obj);
 }
 ({ View: c5, ScrollView: closure_6, StyleSheet } = get_ActivityIndicator);
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
@@ -342,9 +342,9 @@ export default function _default(command) {
     const obj1 = { style: null, source: null };
     obj1[0] = tmp.applicationIcon;
     obj1[1] = memo;
-    tmp22 = callback2(section(5307), obj1);
+    tmp22 = callback2(section(5308), obj1);
   }
-  const items5 = [tmp22, callback2(command(4340).Text, { style: tmp.applicationName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` }), , ];
+  const items5 = [tmp22, callback2(command(4338).Text, { style: tmp.applicationName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` }), , ];
   let options = command.options;
   let mapped;
   if (options != null) {
@@ -386,7 +386,7 @@ export default function _default(command) {
     obj4[0] = tmp.applicationOptionalOptionsIndicator;
     const intl = tmp12(1236).intl;
     obj4[4] = intl.string(tmp12(1236).t.U19GM3);
-    items7[1] = tmp25(tmp12(4340).Text, obj4);
+    items7[1] = tmp25(tmp12(4338).Text, obj4);
     const options1 = command.options;
     let mapped1;
     if (options1 != null) {
@@ -416,7 +416,7 @@ export default function _default(command) {
   }
   items5[3] = tmp19Result;
   obj[5] = items5;
-  const items8 = [c10(c6, obj), callback2(command(8008).FormDivider, { style: tmp.applicationDescriptionDivider }), callback2(stateFromStores, { command, option: currentOption, optionState: tmp17 }), callback2(command(8008).FormDivider, { style: tmp.applicationDescriptionDivider })];
+  const items8 = [c10(c6, obj), callback2(command(8012).FormDivider, { style: tmp.applicationDescriptionDivider }), callback2(stateFromStores, { command, option: currentOption, optionState: tmp17 }), callback2(command(8012).FormDivider, { style: tmp.applicationDescriptionDivider })];
   obj[1] = items8;
   return c10(onPressOption, obj);
 };

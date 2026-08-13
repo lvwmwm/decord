@@ -1,10 +1,10 @@
-// Module ID: 4900
-// Function ID: 4901
+// Module ID: 4901
+// Function ID: 4902
 // Name: openImagePickerUnhandled
-// Dependencies: [109, 5, 17, 1304, 4435, 1922, 676, 4556, 3, 4901, 4912, 4892, 4918, 500, 4061, 1236, 4007, 4891, 1271, 4921, 4923, 4896, 4324, 4924, 4925, 4926, 1370, 4927, 4928, 4929, 4570, 4930, 2]
+// Dependencies: [109, 5, 17, 1304, 4436, 1922, 676, 4557, 3, 4902, 4913, 4893, 4919, 500, 4061, 1236, 4007, 4892, 1271, 4922, 4924, 4897, 4322, 4925, 4926, 4927, 1370, 4928, 4929, 4930, 4571, 4931, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, isHEVCEncodingSupported, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 4900 (openImagePickerUnhandled)
+// Module 4901 (openImagePickerUnhandled)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import get_ActivityIndicator from "cancel";
@@ -696,7 +696,7 @@ function getFileInfo(closure_0, closure_1) {
   if (closure_1 === undefined) {
     str = "";
   }
-  if (item.platform !== require(4891) /* cancel */.UploadPlatform.REACT_NATIVE) {
+  if (item.platform !== require(4892) /* cancel */.UploadPlatform.REACT_NATIVE) {
     const _Error = Error;
     const error = new Error("Try to get file info for unsupported upload item");
     throw error;
@@ -963,17 +963,17 @@ function _shouldConvertToPNG() {
   return applyArgumentsResult;
 }
 function isVideo(uri, overrideType) {
-  let obj = require(4892) /* items */;
+  let obj = require(4893) /* items */;
   obj = { uri, overrideType };
   return obj.getFile(obj).isVideo;
 }
 function isImage(uri, overrideType) {
-  let obj = require(4892) /* items */;
+  let obj = require(4893) /* items */;
   obj = { uri, overrideType };
   return obj.getFile(obj).isImage;
 }
 function getType(uri) {
-  let obj = require(4892) /* items */;
+  let obj = require(4893) /* items */;
   obj = { uri };
   return obj.getFile(obj).type;
 }
@@ -988,24 +988,24 @@ function convertVideo(videoMetadata) {
   let result1;
   let obj;
   let c7;
-  const VideoQualityTarget = require(4923) /* toString */.VideoQualityTarget;
+  const VideoQualityTarget = require(4924) /* toString */.VideoQualityTarget;
   const result = VideoQualityTarget.fromCompressionQuality(videoQualitySetting);
-  obj = require(4923) /* toString */;
-  result1 = obj.canSkipVideoTranscode(result, videoMetadata, videoMetadata.fileSize, require(4896) /* getUploadFileSizeSum */.maxFileSize());
-  let obj2 = require(4896) /* getUploadFileSizeSum */;
-  const result2 = require(4923) /* toString */.calculateTargetDimensions(videoMetadata, result.targetResolution);
-  let obj3 = require(4923) /* toString */;
+  obj = require(4924) /* toString */;
+  result1 = obj.canSkipVideoTranscode(result, videoMetadata, videoMetadata.fileSize, require(4897) /* getUploadFileSizeSum */.maxFileSize());
+  let obj2 = require(4897) /* getUploadFileSizeSum */;
+  const result2 = require(4924) /* toString */.calculateTargetDimensions(videoMetadata, result.targetResolution);
+  let obj3 = require(4924) /* toString */;
   obj = {};
-  const result3 = require(4923) /* toString */.calculateOptimalBitrate(videoMetadata, result, require(4923) /* toString */.DEFAULT_VIDEO_ENCODING_CONFIG.bitrateFloor);
-  const merged = Object.assign(require(4923) /* toString */.DEFAULT_VIDEO_ENCODING_CONFIG);
+  const result3 = require(4924) /* toString */.calculateOptimalBitrate(videoMetadata, result, require(4924) /* toString */.DEFAULT_VIDEO_ENCODING_CONFIG.bitrateFloor);
+  const merged = Object.assign(require(4924) /* toString */.DEFAULT_VIDEO_ENCODING_CONFIG);
   obj.videoQuality = result;
   ({ width: obj5.targetWidth, height: obj5.targetHeight } = result2);
   obj.targetBitrate = result3;
-  let obj4 = require(4923) /* toString */;
+  let obj4 = require(4924) /* toString */;
   if (obj6.isAndroid()) {
     if (tmpResult.getSystemVersionMajor() > 34) {
       let _Math = Math;
-      let frameRate = Math.min(videoMetadata.frameRate, tmp(4923).DEFAULT_VIDEO_ENCODING_CONFIG.frameRate);
+      let frameRate = Math.min(videoMetadata.frameRate, tmp(4924).DEFAULT_VIDEO_ENCODING_CONFIG.frameRate);
     }
     obj.frameRate = frameRate;
     obj.skipVideoTranscode = result1;
@@ -1538,7 +1538,7 @@ function convertVideo(videoMetadata) {
                   } else {
                     isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                     if (isVideo2) {
-                      const obj4 = { uri: null, overrideType: "a" };
+                      const obj4 = { uri: null, overrideType: "Array" };
                       obj4[0] = str3;
                       isVideo2 = tmp12(tmp13[11]).getFile(obj4).isVideo;
                       const tmp12Result3 = tmp12(tmp13[11]);
@@ -1557,7 +1557,7 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj5 = { uri: null, overrideType: "a" };
+                  const obj5 = { uri: null, overrideType: "Array" };
                   obj5[0] = str3;
                   isVideo = tmp12(tmp13[11]).getFile(obj5).isVideo;
                   const tmp12Result5 = tmp12(tmp13[11]);
@@ -2434,7 +2434,7 @@ function _tryConvertImage() {
                   if (handleConnectionInfoChange) {
                     const obj9 = { path: null, encoderUsed: null };
                     obj9[0] = handleConnectionInfoChange;
-                    obj9[1] = lib(4570).ImageEncoder.NATIVE;
+                    obj9[1] = lib(4571).ImageEncoder.NATIVE;
                     tmp51 = obj9;
                   }
                   c8 = 3;
@@ -2500,7 +2500,7 @@ function _tryConvertImage() {
                   return obj16;
                 } else {
                   dependencyMap.path = path;
-                  dependencyMap.encoderUsed = lib(4570).ImageEncoder.PASSTHROUGH;
+                  dependencyMap.encoderUsed = lib(4571).ImageEncoder.PASSTHROUGH;
                   c5 = 0;
                   c8 = 3;
                   let obj17 = { value: null, done: true };
@@ -2575,10 +2575,10 @@ function _tryConvertImage() {
                 obj22[0] = tmp10;
                 return obj22;
               }
-              obj16 = lib(4921);
+              obj16 = lib(4922);
               const outer1_13 = obj16.shouldForceConvertToJPG(closure_0, outer1_1, outer1_10);
               if (!outer1_13) {
-                obj17 = lib(4921);
+                obj17 = lib(4922);
                 if (!obj17.shouldConvertToJPG(closure_0, outer1_1, outer1_2, outer1_4, c7)) {
                   if ((function shouldConvertToGifFilepath(closure_0, outer1_1) {
                     const isIOSResult = _undefined(500).isIOS();
@@ -2594,7 +2594,7 @@ function _tryConvertImage() {
                       } else {
                         tmp7 = null != closure_0.match(/^assets-library:\/\/.+&ext=gif$/i);
                       }
-                      tmpResult = _undefined(4921);
+                      tmpResult = _undefined(4922);
                     }
                   })(closure_0, outer1_1)) {
                     c7 = 9;
@@ -2752,8 +2752,8 @@ function getCaptionLabel(type, isVideo, item) {
   if (isVideo) {
     let str3 = "VIDEO";
     if (null != item.playableDuration) {
-      str3 = require(4930) /* getTimeFormat */.getTimeFormat(item.playableDuration);
-      const obj = require(4930) /* getTimeFormat */;
+      str3 = require(4931) /* getTimeFormat */.getTimeFormat(item.playableDuration);
+      const obj = require(4931) /* getTimeFormat */;
     }
     let str2 = str3;
   } else {
@@ -3380,7 +3380,7 @@ export { isHEVCEncodingSupported };
 export { checkVideoEncodingSupport };
 export { calculateImageQualityMetrics };
 export const getFileFromUploadItem = function getFileFromUploadItem(result1) {
-  let obj = require(4892) /* items */;
+  let obj = require(4893) /* items */;
   obj = { uri: result1.uri, overrideFilename: result1.filename, overrideType: result1.mimeType };
   return obj.getFile(obj);
 };

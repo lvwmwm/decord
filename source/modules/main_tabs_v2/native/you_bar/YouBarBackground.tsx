@@ -1,9 +1,9 @@
-// Module ID: 15572
-// Function ID: 15573
+// Module ID: 15581
+// Function ID: 15582
 // Name: YouBarMaskedBackground
-// Dependencies: [19, 17, 14405, 21, 4344, 712, 5349, 4765, 689, 4065, 14490, 4083, 4753, 2]
+// Dependencies: [19, 17, 14414, 21, 4342, 712, 5350, 4766, 689, 4065, 14499, 4083, 4754, 2]
 
-// Module 15572 (YouBarMaskedBackground)
+// Module 15581 (YouBarMaskedBackground)
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 import jsxProd from "jsxProd";
@@ -28,8 +28,8 @@ function YouBarMaskedBackground(barWidth) {
   const obj3 = { style: obj4, colors: null, start: null, end: null, locations: null, pointerEvents: "none" };
   const obj2 = { position: "absolute", top: YOU_BAR_HEIGHT / 2, left: diff - 1, right: 0, bottom: 0, backgroundColor: "black" };
   obj4 = { position: "absolute", top: YOU_BAR_HEIGHT / 2, width: 8, left: diff - 8, height: YOU_BAR_HEIGHT / 2 };
-  const tmp3 = importDefault(5349);
-  const tmp4 = importDefault(4765);
+  const tmp3 = importDefault(5350);
+  const tmp4 = importDefault(4766);
   const obj8 = importDefault(689)("#000000");
   const items1 = [importDefault(689)("#000000").alpha(0).hex(), "#000000"];
   obj3[1] = items1;
@@ -51,9 +51,9 @@ function YouBarAnimatedBackground(arg0) {
   ({ barWidth, backgroundColor } = arg0);
   let obj = _require(4065);
   const token = obj.useToken(importDefault(712).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp3 = importDefault(14490)(token);
+  const tmp3 = importDefault(14499)(token);
   _require = tmp3;
-  const tmp4 = importDefault(14490)(token, YOU_BAR_HEIGHT / 2);
+  const tmp4 = importDefault(14499)(token, YOU_BAR_HEIGHT / 2);
   importDefault = tmp4;
   const tmp = callback3();
   const fn = function u() {
@@ -65,7 +65,7 @@ function YouBarAnimatedBackground(arg0) {
     obj[2] = _undefined(outer1_2[12]).withSpring(_undefined2.get(), outer1_5);
     return obj;
   };
-  obj = { withSpring: _require(4753).withSpring, questDockAnimatedBorderRadius: tmp3, YOU_BAR_SPRING_CONFIG, questDockAnimatedBottomLeftRadius: tmp4 };
+  obj = { withSpring: _require(4754).withSpring, questDockAnimatedBorderRadius: tmp3, YOU_BAR_SPRING_CONFIG, questDockAnimatedBottomLeftRadius: tmp4 };
   fn.__closure = obj;
   fn.__workletHash = 14606701040012;
   fn.__initData = closure_10;

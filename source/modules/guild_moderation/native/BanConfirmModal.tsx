@@ -1,10 +1,10 @@
-// Module ID: 11317
-// Function ID: 11318
+// Module ID: 11308
+// Function ID: 11309
 // Name: BanConfirmModal
-// Dependencies: [19, 21, 9721, 9722, 1236, 11310, 2]
+// Dependencies: [19, 21, 9725, 9726, 1236, 11301, 2]
 // Exports: default
 
-// Module 11317 (BanConfirmModal)
+// Module 11308 (BanConfirmModal)
 import "noop";
 import { jsx } from "jsxProd";
 

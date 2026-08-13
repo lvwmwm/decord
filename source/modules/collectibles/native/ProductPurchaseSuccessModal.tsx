@@ -1,7 +1,7 @@
 // Module ID: 10172
 // Function ID: 10173
 // Name: CancelButton
-// Dependencies: [32, 853, 19, 17, 4336, 676, 21, 4344, 712, 1949, 10171, 5316, 5365, 1236, 4083, 4753, 4345, 4313, 7053, 10173, 4065, 4765, 9394, 10175, 589, 10176, 10177, 9469, 8940, 9484, 9420, 5367, 10185, 9421, 9433, 9492, 9599, 10204, 4340, 7055, 4754, 2]
+// Dependencies: [32, 853, 19, 17, 4334, 676, 21, 4342, 712, 1949, 10171, 5317, 5366, 1236, 4083, 4754, 4343, 4311, 7059, 10173, 4065, 4766, 9398, 10175, 589, 10176, 10177, 9473, 8944, 9488, 9424, 5368, 10185, 9425, 9437, 9496, 9603, 10204, 4338, 7061, 4755, 2]
 // Exports: default
 
 // Module 10172 (CancelButton)
@@ -48,7 +48,7 @@ function CancelButton(arg0) {
   };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
-  return callback(require(5316) /* Background */.HeaderBackButton, obj);
+  return callback(require(5317) /* Background */.HeaderBackButton, obj);
 }
 function ProductPurchaseGradientBackground(product) {
   product = product.product;

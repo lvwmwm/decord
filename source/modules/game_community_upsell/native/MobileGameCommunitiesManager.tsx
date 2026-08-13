@@ -1,9 +1,9 @@
-// Module ID: 16659
-// Function ID: 16660
+// Module ID: 16670
+// Function ID: 16671
 // Name: _fetchGameCommunities
-// Dependencies: [13036, 15011, 15463, 5300, 15012, 15464, 13039, 13037, 2]
+// Dependencies: [13036, 15020, 15472, 5301, 15021, 15473, 13039, 13037, 2]
 
-// Module 16659 (_fetchGameCommunities)
+// Module 16670 (_fetchGameCommunities)
 import initialize from "initialize";
 import set from "set";
 import { MAX_DISPLAYED_UPSELL_GUILDS as closure_5 } from "MAX_DISPLAYED_UPSELL_GUILDS";
@@ -27,14 +27,14 @@ class MobileGameCommunitiesManager extends tmp2 {
 }
 const prototype = MobileGameCommunitiesManager.prototype;
 prototype["_fetchGameCommunities"] = function _fetchGameCommunities(result) {
-  const gameIdsForDetectedGames = require(15012) /* DETECTABLE_GAME_TO_APPLICATION_ID_MAP */.getGameIdsForDetectedGames(result);
+  const gameIdsForDetectedGames = require(15021) /* DETECTABLE_GAME_TO_APPLICATION_ID_MAP */.getGameIdsForDetectedGames(result);
   const timestamp = Date.now();
   const diff = timestamp - store.getLastFetchedAt();
   if (diff >= 86400000) {
     const dismissedGuildIds = store.getDismissedGuildIds();
     const _Array = Array;
-    const mobileGameCommunities = importAll(15464).fetchMobileGameCommunities(gameIdsForDetectedGames, Array.from(dismissedGuildIds), closure_5);
-    const obj3 = importAll(15464);
+    const mobileGameCommunities = importAll(15473).fetchMobileGameCommunities(gameIdsForDetectedGames, Array.from(dismissedGuildIds), closure_5);
+    const obj3 = importAll(15473);
   }
 };
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {

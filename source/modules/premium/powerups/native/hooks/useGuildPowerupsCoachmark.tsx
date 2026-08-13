@@ -1,10 +1,10 @@
-// Module ID: 15369
-// Function ID: 15370
+// Module ID: 15378
+// Function ID: 15379
 // Name: useGuildPowerupsCoachmark
-// Dependencies: [19, 4336, 1910, 4232, 676, 1388, 505, 21, 4344, 712, 589, 4280, 4251, 11934, 11916, 15370, 11900, 11942, 1236, 2335, 11944, 15371, 11941, 4235, 15367, 15372, 15373, 11970, 15374, 8698, 2]
+// Dependencies: [19, 4334, 1910, 4230, 676, 1388, 505, 21, 4342, 712, 589, 4278, 4249, 11936, 11918, 15379, 11902, 11944, 1236, 2335, 11946, 15380, 11943, 4233, 15376, 15381, 15382, 11972, 15383, 8702, 2]
 // Exports: default
 
-// Module 15369 (useGuildPowerupsCoachmark)
+// Module 15378 (useGuildPowerupsCoachmark)
 import messagesProxy from "messagesProxy";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

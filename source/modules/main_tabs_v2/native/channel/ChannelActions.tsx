@@ -1,10 +1,10 @@
-// Module ID: 8439
-// Function ID: 8440
+// Module ID: 8443
+// Function ID: 8444
 // Name: JoinCallButton
-// Dependencies: [19, 17, 5263, 1395, 1391, 4360, 8440, 676, 8441, 21, 4344, 8443, 712, 8445, 8447, 8448, 8455, 589, 5928, 12, 8456, 8598, 4553, 1236, 12601, 6047, 11732, 8451, 500, 4207, 11731, 11792, 10491, 1231, 4200, 11177, 4842, 9781, 12602, 12603, 4557, 12604, 12606, 2]
+// Dependencies: [19, 17, 5264, 1395, 1391, 4361, 8444, 676, 8445, 21, 4342, 8447, 712, 8449, 8451, 8452, 8459, 589, 5930, 12, 8460, 8602, 4554, 1236, 12601, 6049, 11730, 8455, 500, 4205, 11729, 11790, 10405, 1231, 4198, 11092, 4843, 9785, 12602, 12603, 4558, 12604, 12606, 2]
 // Exports: default
 
-// Module 8439 (JoinCallButton)
+// Module 8443 (JoinCallButton)
 import "apply";
 import { View } from "initialize";
 import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
@@ -25,12 +25,12 @@ const require = arg1;
 function JoinCallButton() {
   const obj = { size: "sm", color: null };
   obj[1] = importDefault(712).unsafe_rawColors.GREEN_360;
-  return jsx(require(8443) /* PhoneCallIcon */.PhoneCallIcon, { size: "sm", color: null });
+  return jsx(require(8447) /* PhoneCallIcon */.PhoneCallIcon, { size: "sm", color: null });
 }
 function EndCallButton() {
   const obj = { size: "sm", color: null };
   obj[1] = importDefault(712).unsafe_rawColors.RED_400;
-  return jsx(require(8445) /* PhoneHangUpIcon */.PhoneHangUpIcon, { size: "sm", color: null });
+  return jsx(require(8449) /* PhoneHangUpIcon */.PhoneHangUpIcon, { size: "sm", color: null });
 }
 function ChannelActionButtons(channel) {
   channel = channel.channel;
@@ -225,7 +225,7 @@ function WrappedChannelNavButtons(channelId) {
   let obj = channelId(589);
   const items = [ensureGuildLoaded];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(channelId));
-  channelId(4557);
+  channelId(4558);
   let tmp4 = null;
   if (null != stateFromStores) {
     tmp4 = null;
@@ -278,7 +278,7 @@ export default function ChannelActions(channelId) {
     return obj;
   });
   ({ isMultiUserDM, isDM } = stateFromStoresObject);
-  let obj1 = channelId(8448);
+  let obj1 = channelId(8452);
   obj = { style: containerStyle, children: null };
   if (obj1.useHasForumSearchQuery(channelId)) {
     obj = { channelId: null };

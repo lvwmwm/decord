@@ -1,8 +1,8 @@
-// Module ID: 8458
-// Function ID: 8459
-// Dependencies: [4832, 676, 698, 5373, 4549, 8459, 2007, 2]
+// Module ID: 8462
+// Function ID: 8463
+// Dependencies: [4833, 676, 698, 5374, 4550, 8463, 2007, 2]
 
-// Module 8458
+// Module 8462
 import items from "items";
 import { AnalyticEvents } from "ME";
 
@@ -13,13 +13,13 @@ const result = require("expandEventProperties").fileFinishedImporting("modules/g
 
 export default {
   openMemberVerificationModal(guildId, connect) {
-    let obj = importDefault(5373);
+    let obj = importDefault(5374);
     const verificationForm = obj.fetchVerificationForm(guildId);
     obj = { type: closure_3, guild_id: guildId };
     importDefault(698).track(AnalyticEvents.OPEN_MODAL, obj);
     const obj2 = importDefault(698);
     obj = { guildId, onClose: connect };
-    importDefault(4549).pushLazy(require(2007) /* asyncRequireImpl */(8459, dependencyMap.paths), obj, closure_4);
+    importDefault(4550).pushLazy(require(2007) /* asyncRequireImpl */(8463, dependencyMap.paths), obj, closure_4);
   },
   closeMemberVerificationModal() {
     let flag = arg0;
@@ -32,6 +32,6 @@ export default {
       obj[0] = closure_3;
       obj.track(AnalyticEvents.MODAL_DISMISSED, obj);
     }
-    importDefault(4549).popWithKey(closure_4);
+    importDefault(4550).popWithKey(closure_4);
   }
 };

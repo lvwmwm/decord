@@ -1,10 +1,10 @@
-// Module ID: 7280
-// Function ID: 7281
+// Module ID: 7285
+// Function ID: 7286
 // Name: getAccessibilityLabelFormatter
-// Dependencies: [109, 4356, 4539, 3991, 1235, 676, 1236, 7000, 4538, 698, 7273, 5296, 1403, 589, 11, 3943, 2]
+// Dependencies: [109, 4357, 4540, 3991, 1235, 676, 1236, 7006, 4539, 698, 7278, 5297, 1403, 589, 11, 3943, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 7280 (getAccessibilityLabelFormatter)
+// Module 7285 (getAccessibilityLabelFormatter)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -27,17 +27,17 @@ let result = require("updateUserGuildSettingsInternal").fileFinishedImporting("m
 
 export const getTimestampString = require("getTimestampString");
 export const getTimestampAccessibilityLabel = function getTimestampAccessibilityLabel(extractTimestampResult) {
-  return importDefault(7000)(extractTimestampResult, getAccessibilityLabelFormatter);
+  return importDefault(7006)(extractTimestampResult, getAccessibilityLabelFormatter);
 };
 export const trackThreadBrowserTab = function trackThreadBrowserTab() {
-  require(4538) /* collectGuildAnalyticsMetadata */.trackWithMetadata(constants.THREAD_BROWSER_TAB_CHANGED);
+  require(4539) /* collectGuildAnalyticsMetadata */.trackWithMetadata(constants.THREAD_BROWSER_TAB_CHANGED);
 };
 export const trackThreadBrowserOpened = function trackThreadBrowserOpened() {
   let str = arg0;
   if (arg0 === undefined) {
     str = "Modal";
   }
-  require(4538) /* collectGuildAnalyticsMetadata */.trackWithMetadata(constants.OPEN_MODAL, { type: "Thread Browser", location_section: str });
+  require(4539) /* collectGuildAnalyticsMetadata */.trackWithMetadata(constants.OPEN_MODAL, { type: "Thread Browser", location_section: str });
 };
 export const trackActiveThreadsPopoutOpened = function trackActiveThreadsPopoutOpened() {
   importDefault(698).track(constants.OPEN_POPOUT, { type: "Active Threads Popout" });
@@ -45,12 +45,12 @@ export const trackActiveThreadsPopoutOpened = function trackActiveThreadsPopoutO
 export const trackThreadNotificationSettingsUpdated = function trackThreadNotificationSettingsUpdated(outer1_0, c1) {
   let can_send_message;
   let parent_channel_type;
-  let obj = require(7273) /* collectThreadMetadata */;
+  let obj = require(7278) /* collectThreadMetadata */;
   const result = obj.collectThreadMetadata(outer1_0);
   if (null != result) {
     const guildId = outer1_0.getGuildId();
     const parent_id = outer1_0.parent_id;
-    let tmpResult = tmp(5296);
+    let tmpResult = tmp(5297);
     const currentChannelSettings = tmpResult.getCurrentChannelSettings(guildId, parent_id);
     let num = storeThread.flags(outer1_0.id);
     if (num == null) {
@@ -78,7 +78,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     }
     let notificationAnalyticsString = getNotificationAnalyticsString(num);
     const isMutedResult = storeThread.isMuted(outer1_0.id);
-    tmpResult = tmp(5296);
+    tmpResult = tmp(5297);
     let result1 = tmpResult.muteConfigToTimestamp(obj7.getMuteConfig(outer1_0.id));
     ({ can_send_message, parent_channel_type } = result);
     obj = {};
@@ -103,8 +103,8 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     obj.new_thread_is_muted = muted;
     obj.old_thread_muted_until = result1;
     if (null != c1.mute_config) {
-      result1 = tmp(5296).muteConfigToTimestamp(c1.mute_config);
-      const tmpResult1 = tmp(5296);
+      result1 = tmp(5297).muteConfigToTimestamp(c1.mute_config);
+      const tmpResult1 = tmp(5297);
     }
     obj.new_thread_muted_until = result1;
     importDefault(698).track(constants.THREAD_NOTIFICATION_SETTINGS_UPDATED, obj);

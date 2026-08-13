@@ -1,9 +1,9 @@
-// Module ID: 15273
-// Function ID: 15274
+// Module ID: 15282
+// Function ID: 15283
 // Name: IconOrPreview
-// Dependencies: [19, 17, 1396, 1922, 14595, 676, 505, 21, 15274, 15275, 4344, 712, 5767, 589, 5773, 698, 11030, 2007, 8828, 15269, 4533, 15276, 14596, 15270, 1297, 15279, 9699, 15280, 9694, 12343, 9351, 4865, 8807, 1236, 4193, 10998, 5307, 15271, 15282, 11001, 8284, 15284, 8348, 2]
+// Dependencies: [19, 17, 1396, 1922, 14604, 676, 505, 21, 15283, 15284, 4342, 712, 5768, 589, 5774, 698, 10944, 2007, 8832, 15278, 4534, 15285, 14605, 15279, 1297, 15288, 9703, 15289, 9698, 12345, 9355, 4866, 8811, 1236, 4191, 10912, 5308, 15280, 15291, 10915, 8288, 15293, 8352, 2]
 
-// Module 15273 (IconOrPreview)
+// Module 15282 (IconOrPreview)
 import importAllResult from "HappeningNowCardPlaceholder";
 import get_ActivityIndicator from "asyncRequireImpl";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
@@ -51,7 +51,7 @@ function IconOrPreview(arg0) {
   if (stream != null) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = importDefault(11001)(guildId, channelId, ownerId).previewUrl;
+  const previewUrl = importDefault(10915)(guildId, channelId, ownerId).previewUrl;
   let assetImage;
   if (null != previewUrl) {
     assetImage = previewUrl;
@@ -68,7 +68,7 @@ function IconOrPreview(arg0) {
     tmp9 = null != large_image;
   }
   if (tmp9) {
-    let obj = _require(8284);
+    let obj = _require(8288);
     let application_id;
     if (activity != null) {
       application_id = activity.application_id;
@@ -99,7 +99,7 @@ function IconOrPreview(arg0) {
     tmp17 = null != small_image;
   }
   if (tmp17) {
-    let obj1 = _require(8284);
+    let obj1 = _require(8288);
     let application_id1;
     if (activity != null) {
       application_id1 = activity.application_id;
@@ -112,15 +112,15 @@ function IconOrPreview(arg0) {
     assetImage = obj1.getAssetImage(application_id1, small_image1, items1);
   }
   if (null != assetImage) {
-    let obj3 = _require(8348);
+    let obj3 = _require(8352);
     const memoizedImageSourceResult = obj3.memoizedImageSource(assetImage);
-    let obj4 = _require(8348);
+    let obj4 = _require(8352);
     const dominantRGBFromImage = obj4.useDominantRGBFromImage(assetImage, memoizedImageSourceResult);
     ({ r, g, b } = dominantRGBFromImage);
-    const rgbToHexResult = _require(4193).rgbToHex(r, g, b);
+    const rgbToHexResult = _require(4191).rgbToHex(r, g, b);
     importDefault = rgbToHexResult;
-    const obj6 = _require(4193);
-    const hexWithOpacityResult = _require(4193).hexWithOpacity(rgbToHexResult, 0.2);
+    const obj6 = _require(4191);
+    const hexWithOpacityResult = _require(4191).hexWithOpacity(rgbToHexResult, 0.2);
     dependencyMap = hexWithOpacityResult;
     const items2 = [rgbToHexResult, tmp.cardImageAssetContainer];
     const memo = importAllResult.useMemo(() => {
@@ -133,7 +133,7 @@ function IconOrPreview(arg0) {
       obj[0] = memo;
       obj = { stream: null, children: null, style: null, ctaText: null, disabled: true };
       obj[0] = stream;
-      let tmp2Result = tmp2(10998);
+      let tmp2Result = tmp2(10912);
       obj1 = { style: null, textStyle: null, allowFontScaling: false };
       ({ cardImageStreamLive: obj13[0], stageStreamLiveText: obj13[1] } = tmp);
       obj[1] = callback(tmp28(1297).LiveTag, obj1);
@@ -143,7 +143,7 @@ function IconOrPreview(arg0) {
       obj[1] = callback(tmp2Result, obj);
       return callback(closure_4, obj);
     } else {
-      if (tmp2(9699)(activity)) {
+      if (tmp2(9703)(activity)) {
         const intl4 = tmp28(1236).intl;
         let stringResult = intl4.string(tmp28(1236).t.rmnkz4);
       } else {
@@ -154,7 +154,7 @@ function IconOrPreview(arg0) {
         if (type === constants.LISTENING) {
           const intl3 = tmp28(1236).intl;
           stringResult = intl3.string(tmp28(1236).t.kUEnxN);
-        } else if (tmp2(12343)(activity)) {
+        } else if (tmp2(12345)(activity)) {
           const intl2 = tmp28(1236).intl;
           stringResult = intl2.string(tmp28(1236).t.T0uYK9);
         } else {
@@ -176,11 +176,11 @@ function IconOrPreview(arg0) {
       obj4 = { style: null, source: null };
       obj4[0] = tmp.cardImageAsset;
       obj4[1] = memoizedImageSourceResult;
-      obj3[1] = callback(tmp2(5307), obj4);
+      obj3[1] = callback(tmp2(5308), obj4);
       obj2[2] = callback(closure_4, obj3);
       return callback(closure_4, obj2);
     }
-    const obj7 = _require(4193);
+    const obj7 = _require(4191);
   } else {
     let type2;
     if (activity != null) {
@@ -191,7 +191,7 @@ function IconOrPreview(arg0) {
       userId = substr.charCodeAt(0);
       tmp2Result = items[userId % items.length];
     } else {
-      tmp2Result = tmp2(15284);
+      tmp2Result = tmp2(15293);
     }
   }
 }
@@ -199,7 +199,7 @@ function StageStreamAvatars(stage) {
   let audienceCount;
   let audienceFriends;
   stage = stage.stage;
-  let obj = require(15271) /* useLiveStageData */;
+  let obj = require(15280) /* useLiveStageData */;
   const liveStageData = obj.useLiveStageData(stage);
   obj = { style: callback2().avatarStackContainer, children: null };
   ({ audienceCount, audienceFriends } = liveStageData);
@@ -210,7 +210,7 @@ function StageStreamAvatars(stage) {
   obj[1] = stage.guild_id;
   obj[2] = audienceCount + 1;
   obj[4] = require(1297) /* Button */.AvatarSizes.SIZE_16;
-  obj[1] = callback(require(15282) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
+  obj[1] = callback(require(15291) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
   return callback(closure_4, obj);
 }
 let c3 = importAllResult;

@@ -1,7 +1,7 @@
 // Module ID: 12620
 // Function ID: 12621
 // Name: initialize
-// Dependencies: [5034, 1391, 11, 589, 709, 2]
+// Dependencies: [5035, 1391, 11, 589, 709, 2]
 
 // Module 12620 (initialize)
 import _handleConnectionOpen from "_handleConnectionOpen";

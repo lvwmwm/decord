@@ -1,7 +1,7 @@
 // Module ID: 12394
 // Function ID: 12395
 // Name: UserProfileNote
-// Dependencies: [19, 21, 4344, 8833, 12395, 8612, 12397, 4886, 1236, 4312, 12399, 5814, 4340, 2]
+// Dependencies: [19, 21, 4342, 8837, 12395, 8616, 12397, 4887, 1236, 4310, 12399, 5815, 4338, 2]
 // Exports: default
 
 // Module 12394 (UserProfileNote)

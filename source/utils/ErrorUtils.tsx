@@ -1,10 +1,10 @@
-// Module ID: 7488
-// Function ID: 7489
+// Module ID: 7492
+// Function ID: 7493
 // Name: getUnderlyingIOSExceptionRecursively
-// Dependencies: [7489, 2]
+// Dependencies: [7493, 2]
 // Exports: getUnderlyingIOSError, serializeError
 
-// Module 7488 (getUnderlyingIOSExceptionRecursively)
+// Module 7492 (getUnderlyingIOSExceptionRecursively)
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
   if (null != NSUnderlyingError.userInfo.NSUnderlyingError) {
     const tmp2 = getUnderlyingIOSExceptionRecursively(NSUnderlyingError.userInfo.NSUnderlyingError);
@@ -39,5 +39,5 @@ export const serializeError = function serializeError(arg0) {
     const _String = String;
     error1 = new Error(String(error));
   }
-  return JSON.stringify(require(7489) /* BAGGAGE_HEADER_NAME */.normalizeToSize(error1));
+  return JSON.stringify(require(7493) /* BAGGAGE_HEADER_NAME */.normalizeToSize(error1));
 };

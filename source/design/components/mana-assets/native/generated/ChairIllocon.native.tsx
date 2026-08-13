@@ -1,10 +1,10 @@
-// Module ID: 6199
-// Function ID: 6200
+// Module ID: 6201
+// Function ID: 6202
 // Name: ChairIllocon
-// Dependencies: [21, 5307, 6200, 2]
+// Dependencies: [21, 5308, 6202, 2]
 // Exports: ChairIllocon
 
-// Module 6199 (ChairIllocon)
+// Module 6201 (ChairIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ChairIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const ChairIllocon = function ChairIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6200);
+  obj[0] = importDefault(6202);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { uri: null });
+  return jsx(importDefault(5308), { uri: null });
 };

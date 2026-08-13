@@ -1,16 +1,9 @@
-// Module ID: 8050
-// Function ID: 8051
-// Dependencies: [4086, 4084, 4083, 5820, 2]
+// Module ID: 8054
+// Function ID: 8055
+// Name: set
+// Dependencies: [2, 4084]
 
-// Module 8050
-import isFabric from "isFabric";
+// Module 8054 (set)
+const result = require("set").fileFinishedImporting("modules/core/native/ReanimatedNativeView.tsx");
 
-if (isFabric.isFabric()) {
-  let importDefaultResult = require("View");
-} else {
-  importDefaultResult = require("module_4083").createAnimatedComponent(require("set"));
-  const importDefaultResult1 = require("module_4083");
-}
-const result = require("module_4083").fileFinishedImporting("modules/core/native/ReanimatedNativeView.tsx");
-
-export default importDefaultResult;
+export { default } from "REAWorkaroundView";

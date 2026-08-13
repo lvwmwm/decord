@@ -1,8 +1,8 @@
-// Module ID: 11357
-// Function ID: 11358
-// Dependencies: [5, 7846, 7839, 21, 709, 4312, 11358, 2007, 4549, 7992, 7840, 11346, 2]
+// Module ID: 11348
+// Function ID: 11349
+// Dependencies: [5, 7850, 7843, 21, 709, 4310, 11349, 2007, 4550, 7996, 7844, 11337, 2]
 
-// Module 11357
+// Module 11348
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
 import SafetyHubView from "SafetyHubView";
 import { AGE_VERIFICATION_GET_STARTED_MODAL_KEY as closure_6 } from "set";
@@ -17,7 +17,7 @@ let obj = {
     let obj = importDefault(709);
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     obj = { classificationId, onClose };
-    importDefault(4312).openLazy(require(2007) /* asyncRequireImpl */(11358, dependencyMap.paths), closure_4, obj);
+    importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(11349, dependencyMap.paths), closure_4, obj);
   },
   openV2(arg0, onClose) {
     let closure_0 = arg0;
@@ -25,7 +25,7 @@ let obj = {
     let obj = importDefault(709);
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     obj = { onClose };
-    importDefault(4549).pushLazy(callback(function*() {
+    importDefault(4550).pushLazy(callback(function*() {
       let closure_0 = tmp2;
       yield outer1_0(paths[7])(paths[9], paths.paths);
       closure_0 = arg1.default;

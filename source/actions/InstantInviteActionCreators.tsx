@@ -1,10 +1,10 @@
-// Module ID: 7799
-// Function ID: 7800
+// Module ID: 7803
+// Function ID: 7804
 // Name: generateAcceptInviteOptions
-// Dependencies: [5, 5383, 7027, 1395, 1218, 1391, 1980, 1990, 1910, 7800, 4329, 3989, 3998, 4167, 1922, 676, 1221, 1398, 4408, 7236, 5172, 1403, 7813, 5883, 1234, 1222, 5169, 2007, 7814, 9201, 4440, 4523, 12731, 7024, 4830, 8457, 8381, 5276, 8994, 709, 9378, 4557, 12732, 5271, 698, 530, 4244, 687, 5167, 503, 1404, 4330, 5273, 5865, 4030, 12734, 12735, 10460, 4662, 4580, 12736, 12737, 513, 12739, 2]
+// Dependencies: [5, 5384, 7033, 1395, 1218, 1391, 1980, 1990, 1910, 7804, 4327, 3989, 3998, 4165, 1922, 676, 1221, 1398, 4409, 7241, 5173, 1403, 7817, 5884, 1234, 1222, 5170, 2007, 7818, 9205, 4441, 4524, 12731, 7030, 4831, 8461, 8385, 5277, 8998, 709, 9382, 4558, 12732, 5272, 698, 530, 4242, 687, 5168, 503, 1404, 4328, 5274, 5866, 4030, 12734, 12735, 10374, 4663, 4581, 12736, 12737, 513, 12739, 2]
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
-// Module 7799 (generateAcceptInviteOptions)
+// Module 7803 (generateAcceptInviteOptions)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import scheduledEventSort from "scheduledEventSort";
 import { isGuildScheduledEventActive as closure_7 } from "scheduledEventSort";
@@ -88,13 +88,13 @@ function generateAcceptInviteOptions(target_type) {
   if (num == null) {
     num = 0;
   }
-  obj.isGuestInvite = require(1403) /* hasFlag */.hasFlag(num, require(7813) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
+  obj.isGuestInvite = require(1403) /* hasFlag */.hasFlag(num, require(7817) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
   const obj2 = require(1403) /* hasFlag */;
   let num2 = target_type.flags;
   if (num2 == null) {
     num2 = 0;
   }
-  obj.isApplicationBypassInvite = require(1403) /* hasFlag */.hasFlag(num2, require(7813) /* set */.GuildInviteFlags.IS_APPLICATION_BYPASS);
+  obj.isApplicationBypassInvite = require(1403) /* hasFlag */.hasFlag(num2, require(7817) /* set */.GuildInviteFlags.IS_APPLICATION_BYPASS);
   const inviter = target_type.inviter;
   let id3;
   if (inviter != null) {
@@ -668,7 +668,7 @@ export default {
       obj[1] = arg0;
       tmp(709).dispatch(obj);
       const tmpResult = tmp(709);
-      nextPromise = tmp(9378)(arg0, arg1, arg2).then((arg0) => {
+      nextPromise = tmp(9382)(arg0, arg1, arg2).then((arg0) => {
         let code;
         let invite;
         ({ invite, code } = arg0);
@@ -687,7 +687,7 @@ export default {
         }
         return { invite, code };
       });
-      const promise = tmp(9378)(arg0, arg1, arg2);
+      const promise = tmp(9382)(arg0, arg1, arg2);
     }
     return nextPromise;
   },
@@ -790,7 +790,7 @@ export default {
             const obj5 = { type: "INSTANT_INVITE_CREATE_FAILURE", channelId: null };
             obj5[1] = body;
             obj4.dispatch(obj5);
-            const tmp30 = new outer1_1(4244)(closure_1);
+            const tmp30 = new outer1_1(4242)(closure_1);
             throw tmp30;
           } else if (arg0 === 1) {
             c5 = 3;
@@ -1034,7 +1034,7 @@ export default {
         return obj.exact(obj);
       };
       obj1[1] = obj2;
-      yield outer1_1(5167).get(obj1);
+      yield outer1_1(5168).get(obj1);
       if (1 === tmp7) {
         dependencyMap = 0;
         const obj3 = outer1_1(709);
@@ -1066,7 +1066,7 @@ export default {
   revokeInvite(outer1_0) {
     const code = outer1_0.code;
     const channel = outer1_0.channel;
-    let obj = channel(5167);
+    let obj = channel(5168);
     obj = { url: closure_24.INVITE(code), oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: code(503).NetworkActionNames.INVITE_REVOKE, properties: obj1 };
     obj[2] = obj;
@@ -2012,10 +2012,10 @@ export default {
     if (num == null) {
       num = 0;
     }
-    let hasFlagResult = id(1403).hasFlag(num, id(7813).GuildInviteFlags.IS_GUEST_INVITE);
+    let hasFlagResult = id(1403).hasFlag(num, id(7817).GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
       let tmp6Result = tmp6(1403);
-      hasFlagResult = tmp6Result.hasFlag(num, tmp6(7813).GuildInviteFlags.IS_APPLICATION_BYPASS);
+      hasFlagResult = tmp6Result.hasFlag(num, tmp6(7817).GuildInviteFlags.IS_APPLICATION_BYPASS);
     }
     if (null != guild) {
       if (!hasFlagResult) {
@@ -2385,10 +2385,10 @@ export default {
     }
   },
   openNativeAppModal(inviteKey) {
-    let obj = require(4330) /* readSnowflake */;
+    let obj = require(4328) /* readSnowflake */;
     const result = obj.parseExtraDataFromInviteKey(inviteKey);
     obj = { installationId: store.getInstallationForTracking(), targetChannelId: result.targetChannelId, targetMessageId: result.targetMessageId, guildScheduledEventId: result.guildScheduledEventId };
-    importDefault(10460).openNativeAppModal(result.baseCode, constants.INVITE_BROWSER, obj);
+    importDefault(10374).openNativeAppModal(result.baseCode, constants.INVITE_BROWSER, obj);
   },
   transitionToInviteOnboarding(baseCode, closure_1) {
     let obj = closure_1;
@@ -2410,19 +2410,19 @@ export default {
       id = guild_scheduled_event.id;
     }
     obj[3] = id;
-    const inviteKeyFromExtraData = require(4330) /* readSnowflake */.generateInviteKeyFromExtraData(obj);
+    const inviteKeyFromExtraData = require(4328) /* readSnowflake */.generateInviteKeyFromExtraData(obj);
     obj = { search: null };
     const result = closure_26.APP_WITH_INVITE_AND_GUILD_ONBOARDING(baseCode.code);
-    const obj2 = require(4330) /* readSnowflake */;
+    const obj2 = require(4328) /* readSnowflake */;
     const tmp3 = require;
-    obj[0] = require(4330) /* readSnowflake */.getInviteKeySearchSuffix(inviteKeyFromExtraData);
+    obj[0] = require(4328) /* readSnowflake */.getInviteKeySearchSuffix(inviteKeyFromExtraData);
     transitionTo(result, obj);
   },
   openApp(code, arg1, fingerprint, username) {
     const _require = code;
     let result = null;
     if (null != code) {
-      let obj = _require(4330);
+      let obj = _require(4328);
       result = obj.parseExtraDataFromInviteKey(code);
     }
     let baseCode;
@@ -2440,8 +2440,8 @@ export default {
     let obj1 = importDefault(709);
     obj = { type: "INVITE_APP_OPENING", code };
     obj1.dispatch(obj);
-    if (null != importDefault(4662).ua) {
-      const formatted = tmp7(4662).ua.toLowerCase();
+    if (null != importDefault(4663).ua) {
+      const formatted = tmp7(4663).ua.toLowerCase();
       if (formatted.indexOf("googlebot") > -1) {
         let tmp7Result = tmp7(709);
         obj = { type: "INVITE_APP_NOT_OPENED", code: null };
@@ -2449,19 +2449,19 @@ export default {
         tmp7Result.dispatch(obj);
       }
     }
-    const os = tmp7(4662).os;
+    const os = tmp7(4663).os;
     let family;
     if (os != null) {
       family = os.family;
     }
     if ("Android" !== family) {
-      const os2 = tmp7(4662).os;
+      const os2 = tmp7(4663).os;
       let family1;
       if (os2 != null) {
         family1 = os2.family;
       }
       if ("iOS" !== family1) {
-        if (!_require(4580).isTablet) {
+        if (!_require(4581).isTablet) {
           let tmp13 = arg1;
           if (arg1 == null) {
             tmp13 = targetChannelId;

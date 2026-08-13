@@ -1,10 +1,10 @@
-// Module ID: 4929
-// Function ID: 4930
+// Module ID: 4930
+// Function ID: 4931
 // Name: getMobileImageEncodingLadderConfig
 // Dependencies: [1471, 2]
 // Exports: getMobileImageEncodingLadderConfig
 
-// Module 4929 (getMobileImageEncodingLadderConfig)
+// Module 4930 (getMobileImageEncodingLadderConfig)
 import ApexExperiment from "ApexExperiment";
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-01-image-optimized-encoding-ladder", kind: "user", defaultConfig: { useImageEncodingLadder: false }, variations: { 0: { useImageEncodingLadder: false }, 1: { useImageEncodingLadder: true } } });

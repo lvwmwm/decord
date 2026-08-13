@@ -1,9 +1,9 @@
-// Module ID: 10046
-// Function ID: 10047
+// Module ID: 10044
+// Function ID: 10045
 // Name: HorizontalAutocompleteOption
-// Dependencies: [19, 17, 4336, 1983, 1910, 3998, 1922, 676, 21, 4344, 5275, 712, 4083, 4770, 4345, 589, 1297, 4340, 4189, 5792, 5793, 8271, 4804, 4534, 5307, 2]
+// Dependencies: [19, 17, 4334, 1983, 1910, 3998, 1922, 676, 21, 4342, 5276, 712, 4083, 4771, 4343, 589, 1297, 4338, 4187, 5793, 5794, 8275, 4805, 4535, 5308, 2]
 
-// Module 10046 (HorizontalAutocompleteOption)
+// Module 10044 (HorizontalAutocompleteOption)
 import "getRoleIconData";
 import get_ActivityIndicator from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -31,7 +31,7 @@ function HorizontalAutocompleteOption(arg0) {
   ({ children, onPress } = arg0);
   let obj = sharedValue(4083);
   sharedValue = obj.useSharedValue(0);
-  importDefault(4770)(() => {
+  importDefault(4771)(() => {
     const result = sharedValue.set(sharedValue(outer1_2[14]).withTiming(1));
   });
   const tmp = createCacheKey();
@@ -85,15 +85,15 @@ let obj3 = {
     const obj2 = { style: items2, variant: "text-sm/semibold", children: null };
     items2 = [tmp.nickname];
     if (nick == null) {
-      nick = importDefault(4189).getName(user);
-      const obj6 = importDefault(4189);
+      nick = importDefault(4187).getName(user);
+      const obj6 = importDefault(4187);
     }
     obj2[2] = nick;
-    const items3 = [callback(require(4340) /* Text */.Text, obj2), ];
+    const items3 = [callback(require(4338) /* Text */.Text, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
-    const items4 = ["@", importDefault(4189).getUserTag(user, { decoration: "never" })];
+    const items4 = ["@", importDefault(4187).getUserTag(user, { decoration: "never" })];
     obj3[2] = items4;
-    items3[1] = closure_12(require(4340) /* Text */.Text, obj3);
+    items3[1] = closure_12(require(4338) /* Text */.Text, obj3);
     obj1[1] = items3;
     items1[1] = closure_12(closure_4, obj1);
     obj[1] = items1;
@@ -111,8 +111,8 @@ let obj3 = {
     const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getRole(closure_0, closure_1));
     let roleIconData = null;
     if (null != stateFromStores) {
-      roleIconData = tmp2(5792).getRoleIconData(stateFromStores, 30);
-      const tmp2Result = tmp2(5792);
+      roleIconData = tmp2(5793).getRoleIconData(stateFromStores, 30);
+      const tmp2Result = tmp2(5793);
     }
     obj = { onPress: onPress.onPress, children: null };
     let tmp9Result = null;
@@ -129,10 +129,10 @@ let obj3 = {
       }
       obj1[1] = tmp13;
       obj1[2] = roleIconData.unicodeEmoji;
-      obj[1] = closure_11(importDefault(5793), obj1);
+      obj[1] = closure_11(importDefault(5794), obj1);
       tmp9Result = tmp9(closure_4, obj);
       const tmp10 = closure_4;
-      const tmp12 = importDefault(5793);
+      const tmp12 = importDefault(5794);
     }
     const items1 = [tmp9Result, ];
     const items2 = [tmp.nickname, ];
@@ -152,18 +152,18 @@ let obj3 = {
     channel(589);
     [][0] = channel;
     if (channel.type === constants.GUILD_CATEGORY) {
-      let channelIconWithGuild = importDefault(8271);
+      let channelIconWithGuild = importDefault(8275);
     } else {
-      let tmp2Result = tmp2(4804);
+      let tmp2Result = tmp2(4805);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const tmp = createCacheKey();
-    tmp2Result = tmp2(4534);
+    tmp2Result = tmp2(4535);
     let obj = { onPress: channel.onPress, children: null };
     const items = [callback(channel(1297).Icon, { source: channelIconWithGuild }), ];
     const channelName = tmp2Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
     obj = { style: tmp.channelName, variant: "text-sm/semibold", children: channelName };
-    items[1] = callback(channel(4340).Text, obj);
+    items[1] = callback(channel(4338).Text, obj);
     obj[1] = items;
     return callback2(HorizontalAutocompleteOption, obj);
   },
@@ -182,7 +182,7 @@ let obj3 = {
       obj = { uri: null };
       obj[0] = url;
       obj[1] = obj;
-      let tmp5 = callback(importDefault(5307), obj);
+      let tmp5 = callback(importDefault(5308), obj);
       let tmp6 = callback;
     } else {
       obj = { style: null, allowFontScaling: false, children: null };
@@ -197,7 +197,7 @@ let obj3 = {
     const items2 = [tmp6(closure_4, { children: tmp5 }), ];
     const obj2 = { style: tmp.emojiName, variant: "text-sm/semibold", children: null };
     obj2[2] = ":" + name + ":";
-    items2[1] = tmp6(require(4340) /* Text */.Text, obj2);
+    items2[1] = tmp6(require(4338) /* Text */.Text, obj2);
     obj1[1] = items2;
     return callback2(HorizontalAutocompleteOption, obj1);
   }

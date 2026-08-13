@@ -1,10 +1,10 @@
-// Module ID: 4376
-// Function ID: 4377
+// Module ID: 4377
+// Function ID: 4378
 // Name: isImageProxyURL
 // Dependencies: [1486, 1469, 2]
 // Exports: getSizedImageProxyURL, isImageProxyURL
 
-// Module 4376 (isImageProxyURL)
+// Module 4377 (isImageProxyURL)
 import set from "set";
 
 let parts;

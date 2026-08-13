@@ -1,9 +1,9 @@
-// Module ID: 14815
-// Function ID: 14816
+// Module ID: 14824
+// Function ID: 14825
 // Name: ViewDebugLogsActionSheetRow
-// Dependencies: [19, 17, 21, 4312, 5805, 4549, 9722, 5803, 5435, 1236, 14816, 14818, 4308, 14821, 500, 9779, 14822, 10493, 13259, 4034, 2]
+// Dependencies: [19, 17, 21, 4310, 5806, 4550, 9726, 5804, 5436, 1236, 14825, 14827, 4306, 14830, 500, 9783, 14831, 10407, 13260, 4034, 2]
 
-// Module 14815 (ViewDebugLogsActionSheetRow)
+// Module 14824 (ViewDebugLogsActionSheetRow)
 import { Suspense } from "explicitContentFromProto";
 import { Keyboard } from "createToggle";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ function ViewDebugLogsActionSheetRow(icon) {
   let importDefault;
   const title = icon.title;
   ({ screenKey: importDefault, render: dependencyMap } = icon);
-  return callback(title(5805).ActionSheetRow, {
+  return callback(title(5806).ActionSheetRow, {
     icon: icon.icon,
     label: title,
     onPress() {
@@ -36,36 +36,36 @@ function ViewDebugLogsActionSheet() {
   obj = { title: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.BUOCPi);
-  obj[0] = callback(require(5435) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj[0] = callback(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { icon: null, title: null, screenKey: "debugLogs", render: null };
-  obj[0] = callback(require(14816) /* WrenchIcon */.WrenchIcon, {});
+  obj[0] = callback(require(14825) /* WrenchIcon */.WrenchIcon, {});
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.XpPGhL);
   obj[3] = function render() {
-    return callback2(callback(14818), {});
+    return callback2(callback(14827), {});
   };
   const items = [callback(ViewDebugLogsActionSheetRow, obj), , ];
-  const obj1 = { icon: callback(require(4308) /* ClockIcon */.ClockIcon, {}), title: null, screenKey: "startupTiming", render: null };
+  const obj1 = { icon: callback(require(4306) /* ClockIcon */.ClockIcon, {}), title: null, screenKey: "startupTiming", render: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.b0nJvk);
   obj1[3] = function render() {
-    return callback2(closure_3, { children: callback2(callback(14821), {}) });
+    return callback2(closure_3, { children: callback2(callback(14830), {}) });
   };
   items[1] = callback(ViewDebugLogsActionSheetRow, obj1);
   let tmpResult = null;
   if (obj5.isAndroid()) {
     const obj2 = { icon: null, title: null, screenKey: "pushNotificationLogs", render: null };
-    obj2[0] = tmp(tmp2(9779).ChannelNotificationIcon, {});
+    obj2[0] = tmp(tmp2(9783).ChannelNotificationIcon, {});
     const intl4 = tmp2(1236).intl;
     obj2[1] = intl4.string(tmp2(1236).t.Ljj0ps);
     obj2[3] = function render() {
-      return callback2(callback(14822), {});
+      return callback2(callback(14831), {});
     };
     tmpResult = tmp(ViewDebugLogsActionSheetRow, obj2);
   }
   items[2] = tmpResult;
-  obj[1] = closure_6(require(5805) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: true, children: items });
-  return callback(require(5803) /* ActionSheet */.ActionSheet, obj);
+  obj[1] = closure_6(require(5806) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: true, children: items });
+  return callback(require(5804) /* ActionSheet */.ActionSheet, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 ViewDebugLogsActionSheet = "ViewDebugLogsActionSheet";
@@ -79,7 +79,7 @@ const pressable = createToggle.createPressable({
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting,
   onPress: function handleViewDebugLogsSettingPress() {
     Keyboard.dismiss();
-    let obj = importDefault(4312);
+    let obj = importDefault(4310);
     obj = { default: ViewDebugLogsActionSheet };
     obj.openLazy(Promise.resolve(obj), ViewDebugLogsActionSheet);
   },
@@ -95,7 +95,7 @@ let obj = {
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting,
   onPress: function handleViewDebugLogsSettingPress() {
     Keyboard.dismiss();
-    let obj = importDefault(4312);
+    let obj = importDefault(4310);
     obj = { default: ViewDebugLogsActionSheet };
     obj.openLazy(Promise.resolve(obj), ViewDebugLogsActionSheet);
   },

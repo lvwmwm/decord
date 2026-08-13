@@ -1,7 +1,7 @@
 // Module ID: 12526
 // Function ID: 12527
 // Name: useUserProfileWidgets
-// Dependencies: [1218, 7122, 7126, 589, 2]
+// Dependencies: [1218, 7128, 7132, 589, 2]
 // Exports: default
 
 // Module 12526 (useUserProfileWidgets)

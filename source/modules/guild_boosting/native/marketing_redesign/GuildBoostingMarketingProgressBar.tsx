@@ -1,7 +1,7 @@
 // Module ID: 12919
 // Function ID: 12920
 // Name: BoostedGuildTiers
-// Dependencies: [32, 19, 17, 4336, 676, 21, 4344, 12920, 712, 4280, 647, 4083, 4236, 4753, 4765, 1363, 2]
+// Dependencies: [32, 19, 17, 4334, 676, 21, 4342, 12920, 712, 4278, 647, 4083, 4234, 4754, 4766, 1363, 2]
 // Exports: default
 
 // Module 12919 (BoostedGuildTiers)

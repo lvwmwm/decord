@@ -1,9 +1,9 @@
-// Module ID: 5168
-// Function ID: 5169
+// Module ID: 5169
+// Function ID: 5170
 // Name: checkIdleAFK
-// Dependencies: [1218, 676, 4405, 500, 4034, 687, 709, 3972, 5169, 636, 589, 2]
+// Dependencies: [1218, 676, 4406, 500, 4034, 687, 709, 3972, 5170, 636, 589, 2]
 
-// Module 5168 (checkIdleAFK)
+// Module 5169 (checkIdleAFK)
 import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
 import { SpeakingFlags } from "DesktopSources";
@@ -138,7 +138,7 @@ if (require("set").isPlatformEmbedded) {
       let c11 = true;
       let closure_3 = Date.now();
       checkIdleAFK();
-      importDefault(5169).disconnect();
+      importDefault(5170).disconnect();
     });
     const powerMonitor3 = require("set").powerMonitor;
     class IdleStore extends r10079 {

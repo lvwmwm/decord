@@ -1,10 +1,10 @@
-// Module ID: 14270
-// Function ID: 14271
+// Module ID: 14279
+// Function ID: 14280
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [19, 17, 5289, 1218, 5038, 1994, 676, 21, 4344, 712, 4280, 589, 12542, 5775, 5163, 4312, 14269, 2007, 10538, 14271, 8008, 14274, 4752, 14275, 2]
+// Dependencies: [19, 17, 5290, 1218, 5039, 1994, 676, 21, 4342, 712, 4278, 589, 12542, 5776, 5164, 4310, 14278, 2007, 10452, 14280, 8012, 14283, 4753, 14284, 2]
 // Exports: UserSettingsConnections
 
-// Module 14270 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 14279 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import EmptyStateCard from "EmptyStateCard";
 import { ActivityIndicator } from "asyncRequireImpl";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
@@ -36,7 +36,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   let authorizedAppsFetchState;
   let authorizedApps;
   const tmp = createCacheKey();
-  importDefault = importDefault(4280)();
+  importDefault = importDefault(4278)();
   let obj = selectedPlatformType(589);
   const items = [_getSystemLocale];
   dependencyMap = obj.useStateFromStores(items, () => locale.locale);
@@ -80,7 +80,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (!tmp7Result.isLoading) {
       if (0 === accounts.length) {
         if (0 === prop.length) {
-          let tmp14 = callback(tmp2(14271), {});
+          let tmp14 = callback(tmp2(14280), {});
         }
       }
       obj = { style: null, children: null };
@@ -96,9 +96,9 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
       ];
       obj = { spacing: 16, children: null };
       obj[1] = accounts.map((account) => outer1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id));
-      items5[1] = callback(tmp4(4752).Stack, obj);
+      items5[1] = callback(tmp4(4753).Stack, obj);
       obj[1] = items5;
-      tmp14 = callback2(tmp4(8008).Form, obj);
+      tmp14 = callback2(tmp4(8012).Form, obj);
     }
     return tmp14;
   }

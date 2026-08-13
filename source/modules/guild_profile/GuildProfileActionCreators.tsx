@@ -1,10 +1,10 @@
-// Module ID: 9048
-// Function ID: 9049
+// Module ID: 9052
+// Function ID: 9053
 // Name: _fetchGuildTopGames
-// Dependencies: [5, 4168, 1990, 9046, 676, 709, 530, 5374, 4243, 698, 2]
+// Dependencies: [5, 4166, 1990, 9050, 676, 709, 530, 5375, 4241, 698, 2]
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed
 
-// Module 9048 (_fetchGuildTopGames)
+// Module 9052 (_fetchGuildTopGames)
 import dispatcher from "dispatcher";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -135,8 +135,8 @@ export const saveGuildProfile = function saveGuildProfile(outer1_0, name) {
     const HTTP = _require(530).HTTP;
     obj = { url: null, body: null, rejectWithError: null };
     obj[0] = closure_9.GUILD_PROFILE(outer1_0);
-    obj[1] = _require(5374).buildGuildProfileUpdateForServer(name);
-    const obj4 = _require(5374);
+    obj[1] = _require(5375).buildGuildProfileUpdateForServer(name);
+    const obj4 = _require(5375);
     obj[2] = _require(530).rejectWithMigratedError();
     const obj5 = _require(530);
     const patchResult = HTTP.patch(obj);

@@ -1,9 +1,9 @@
-// Module ID: 10454
-// Function ID: 10455
+// Module ID: 10368
+// Function ID: 10369
 // Name: getCurrentBuildOverride
-// Dependencies: [4260, 709, 589, 2]
+// Dependencies: [4258, 709, 589, 2]
 
-// Module 10454 (getCurrentBuildOverride)
+// Module 10368 (getCurrentBuildOverride)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -17,7 +17,7 @@ const prototype = BuildOverrideStore.prototype;
 prototype["getCurrentBuildOverride"] = function getCurrentBuildOverride() {
   if (Resolving === obj.NotResolved) {
     Resolving = obj.Resolving;
-    obj = require(4260) /* Version */;
+    obj = require(4258) /* Version */;
     const buildOverride = obj.getBuildOverride();
     buildOverride.then((overrides) => {
       let obj = callback(table[1]);
@@ -31,7 +31,7 @@ prototype["getCurrentBuildOverride"] = function getCurrentBuildOverride() {
 prototype["getBuildOverride"] = function getBuildOverride(target) {
   const _require = target;
   if (!(target in obj1)) {
-    let obj = _require(4260);
+    let obj = _require(4258);
     const validateURLResult = obj.validateURL(target);
     if (null != validateURLResult) {
       obj = {};
@@ -44,13 +44,13 @@ prototype["getBuildOverride"] = function getBuildOverride(target) {
       obj[3] = obj.Resolving;
       obj[target] = obj;
       obj1 = obj;
-      const buildOverrideMeta = tmp(4260).getBuildOverrideMeta(validateURLResult.url);
+      const buildOverrideMeta = tmp(4258).getBuildOverrideMeta(validateURLResult.url);
       buildOverrideMeta.then((override) => {
         let obj = outer1_1(outer1_2[1]);
         obj = { type: "BUILD_OVERRIDE_RESOLVED", url: closure_0, override };
         obj.dispatch(obj);
       });
-      const tmpResult = tmp(4260);
+      const tmpResult = tmp(4258);
     } else {
       obj1 = {};
       const merged1 = Object.assign(obj1);

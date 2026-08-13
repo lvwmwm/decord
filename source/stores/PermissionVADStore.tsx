@@ -1,9 +1,9 @@
-// Module ID: 13736
-// Function ID: 13737
+// Module ID: 13737
+// Function ID: 13738
 // Name: handleUpdateVADPermission
-// Dependencies: [1218, 1391, 4392, 3989, 4415, 4360, 676, 709, 589, 2]
+// Dependencies: [1218, 1391, 4393, 3989, 4416, 4361, 676, 709, 589, 2]
 
-// Module 13736 (handleUpdateVADPermission)
+// Module 13737 (handleUpdateVADPermission)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";

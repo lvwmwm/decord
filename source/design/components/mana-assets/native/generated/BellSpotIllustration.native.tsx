@@ -1,10 +1,10 @@
-// Module ID: 6161
-// Function ID: 6162
+// Module ID: 6163
+// Function ID: 6164
 // Name: BellSpotIllustration
-// Dependencies: [21, 5307, 6162, 2]
+// Dependencies: [21, 5308, 6164, 2]
 // Exports: BellSpotIllustration
 
-// Module 6161 (BellSpotIllustration)
+// Module 6163 (BellSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BellSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const BellSpotIllustration = function BellSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6162);
+  obj[0] = importDefault(6164);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const BellSpotIllustration = function BellSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
 };

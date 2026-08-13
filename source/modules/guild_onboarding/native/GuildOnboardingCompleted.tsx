@@ -1,10 +1,10 @@
-// Module ID: 5788
-// Function ID: 5789
+// Module ID: 5789
+// Function ID: 5790
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 4336, 1983, 1910, 1922, 5281, 21, 4344, 712, 1499, 589, 5396, 4072, 5789, 1435, 1896, 1370, 4740, 4083, 4345, 5307, 5367, 4340, 1236, 1297, 5790, 5818, 3943, 5821, 4754, 2]
+// Dependencies: [19, 17, 4334, 1983, 1910, 1922, 5282, 21, 4342, 712, 1499, 589, 5397, 4072, 5790, 1435, 1896, 1370, 4741, 4083, 4343, 5308, 5368, 4338, 1236, 1297, 5791, 5819, 3943, 5822, 4755, 2]
 // Exports: default
 
-// Module 5788 (GuildOnboardingCompleted)
+// Module 5789 (GuildOnboardingCompleted)
 import module_4083 from "module_4083";
 import get_ActivityIndicator from "isDiscordFrontendDevelopment";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

@@ -1,10 +1,10 @@
-// Module ID: 8911
-// Function ID: 8912
+// Module ID: 8915
+// Function ID: 8916
 // Name: lerpVarWidthThumbnailScrollBounds
 // Dependencies: [2]
 // Exports: lerpVarWidthThumbnailScrollBounds
 
-// Module 8911 (lerpVarWidthThumbnailScrollBounds)
+// Module 8915 (lerpVarWidthThumbnailScrollBounds)
 function lerpVarWidthThumbnailScrollBounds(closure_1, arg1) {
   if (0 === closure_1.length) {
     return 0;

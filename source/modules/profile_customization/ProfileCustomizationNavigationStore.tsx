@@ -1,7 +1,7 @@
 // Module ID: 10182
 // Function ID: 10183
 // Name: zustandStore
-// Dependencies: [4211, 685, 2]
+// Dependencies: [4209, 685, 2]
 
 // Module 10182 (zustandStore)
 import { ProfileCustomizationSubsection as closure_0 } from "MAX_FAVORITES";

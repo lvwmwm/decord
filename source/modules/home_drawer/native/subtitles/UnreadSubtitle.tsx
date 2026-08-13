@@ -1,10 +1,10 @@
-// Module ID: 15522
-// Function ID: 15523
+// Module ID: 15532
+// Function ID: 15533
 // Name: UnreadSubtitle
-// Dependencies: [19, 17, 21, 15520, 4804, 4849, 1236, 4340, 2]
+// Dependencies: [19, 17, 21, 15530, 4805, 4850, 1236, 4338, 2]
 // Exports: default
 
-// Module 15522 (UnreadSubtitle)
+// Module 15532 (UnreadSubtitle)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

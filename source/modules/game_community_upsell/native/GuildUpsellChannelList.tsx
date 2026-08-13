@@ -1,10 +1,10 @@
-// Module ID: 15462
-// Function ID: 15463
+// Module ID: 15471
+// Function ID: 15472
 // Name: items
-// Dependencies: [19, 17, 15011, 15463, 676, 21, 4344, 712, 1236, 6068, 13039, 15464, 589, 698, 12123, 4340, 5415, 4754, 14407, 15465, 2]
+// Dependencies: [19, 17, 15020, 15472, 676, 21, 4342, 712, 1236, 6070, 13039, 15473, 589, 698, 12125, 4338, 5416, 4755, 14416, 15474, 2]
 // Exports: default
 
-// Module 15462 (items)
+// Module 15471 (items)
 import OneColumnGuildUpsellList from "OneColumnGuildUpsellList";
 import get_ActivityIndicator from "Button";
 import set from "set";

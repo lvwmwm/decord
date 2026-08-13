@@ -1,7 +1,7 @@
 // Module ID: 12805
 // Function ID: 12806
 // Name: useScheduledForcedUpdate
-// Dependencies: [19, 6945, 2]
+// Dependencies: [19, 6951, 2]
 // Exports: default
 
 // Module 12805 (useScheduledForcedUpdate)

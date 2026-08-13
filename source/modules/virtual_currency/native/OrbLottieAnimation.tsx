@@ -1,7 +1,7 @@
 // Module ID: 10188
 // Function ID: 10189
 // Name: forwardRef
-// Dependencies: [19, 21, 4280, 1363, 10189, 10192, 2]
+// Dependencies: [19, 21, 4278, 1363, 10189, 10192, 2]
 
 // Module 10188 (forwardRef)
 import closure_2 from "noop";
@@ -16,7 +16,7 @@ const require = arg1;
 const forwardRefResult = forwardRef((animationType, ref) => {
   animationType = animationType.animationType;
   let dependencyMap;
-  let obj = animationType(4280);
+  let obj = animationType(4278);
   const theme = obj.useTheme();
   const obj2 = animationType(1363);
   const tmp5 = callback(null);

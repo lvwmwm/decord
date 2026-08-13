@@ -1,7 +1,7 @@
 // Module ID: 12937
 // Function ID: 12938
 // Name: items
-// Dependencies: [19, 17, 4336, 21, 4344, 712, 1236, 12938, 5758, 12939, 12940, 4340, 11983, 2]
+// Dependencies: [19, 17, 4334, 21, 4342, 712, 1236, 12938, 5759, 12939, 12940, 4338, 11985, 2]
 // Exports: default
 
 // Module 12937 (items)
@@ -54,7 +54,7 @@ let items = [
       obj[0] = require(12939);
       obj[1] = !useReducedMotion.useReducedMotion;
       obj[2] = arg0;
-      return callback(importDefault(5758), obj);
+      return callback(importDefault(5759), obj);
     }
   },
   {
@@ -94,7 +94,7 @@ export default function GuildBoostingMarketingTopPerksCards() {
   obj = { style: tmp.heading, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.aGdB3E);
-  let items = [callback(require(4340) /* Text */.Heading, obj), ];
+  let items = [callback(require(4338) /* Text */.Heading, obj), ];
   obj = { itemCount: items.length, cardWidth: 324, cardMarginRight: 16, contentContainerStyle: tmp.scrollerContent, children: null };
   obj[4] = items.map((getGraphic) => {
     const items = [tmp.card, ];
@@ -114,7 +114,7 @@ export default function GuildBoostingMarketingTopPerksCards() {
     obj[1] = items1;
     return outer1_7(outer1_4, obj, arg1);
   });
-  items[1] = callback(require(11983) /* items */.MarketingCardsScroller, obj);
+  items[1] = callback(require(11985) /* items */.MarketingCardsScroller, obj);
   obj[1] = items;
   return callback2(closure_4, obj);
 };

@@ -1,19 +1,19 @@
-// Module ID: 16047
-// Function ID: 16048
+// Module ID: 16057
+// Function ID: 16058
 // Name: getRestrictedHiddenMediaCount
-// Dependencies: [8104, 4678, 2]
+// Dependencies: [8108, 4679, 2]
 // Exports: default
 
-// Module 16047 (getRestrictedHiddenMediaCount)
+// Module 16057 (getRestrictedHiddenMediaCount)
 let result = require("set").fileFinishedImporting("modules/message_request/getRestrictedHiddenMediaCount.tsx");
 
 export default function getRestrictedHiddenMediaCount(message) {
-  const result = require(8104) /* getForwardInfo */.maybeCreateSingleForwardForMessage(message);
+  const result = require(8108) /* getForwardInfo */.maybeCreateSingleForwardForMessage(message);
   if (null != result) {
     message = result.messageSnapshot.message;
   }
   const sum = message.attachments.length + message.embeds.length;
-  const obj = require(8104) /* getForwardInfo */;
+  const obj = require(8108) /* getForwardInfo */;
   const tmp = require;
-  return sum + require(4678) /* getStickerExtensionFromFormatType */.getMessageStickers(message).length;
+  return sum + require(4679) /* getStickerExtensionFromFormatType */.getMessageStickers(message).length;
 };

@@ -1,10 +1,10 @@
-// Module ID: 6575
-// Function ID: 6576
+// Module ID: 6579
+// Function ID: 6580
 // Name: NitroCoinStackSpotIllustration
-// Dependencies: [21, 5307, 6576, 2]
+// Dependencies: [21, 5308, 6580, 2]
 // Exports: NitroCoinStackSpotIllustration
 
-// Module 6575 (NitroCoinStackSpotIllustration)
+// Module 6579 (NitroCoinStackSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroCoinStackSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const NitroCoinStackSpotIllustration = function NitroCoinStackSpotIllustr
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6576);
+  obj[0] = importDefault(6580);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroCoinStackSpotIllustration = function NitroCoinStackSpotIllustr
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
 };

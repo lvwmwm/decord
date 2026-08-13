@@ -1,7 +1,7 @@
 // Module ID: 12578
 // Function ID: 12579
 // Name: useFriendRequestActions
-// Dependencies: [19, 9677, 2]
+// Dependencies: [19, 9681, 2]
 // Exports: useFriendRequestActions
 
 // Module 12578 (useFriendRequestActions)

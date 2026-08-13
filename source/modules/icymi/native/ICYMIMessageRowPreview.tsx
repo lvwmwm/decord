@@ -1,9 +1,9 @@
-// Module ID: 15684
-// Function ID: 15685
+// Module ID: 15693
+// Function ID: 15694
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 676, 21, 8450, 4039, 8084, 5957, 4280, 4344, 712, 4034, 8082, 8634, 8273, 1236, 2]
+// Dependencies: [19, 676, 21, 8454, 4039, 8088, 5959, 4278, 4342, 712, 4034, 8086, 8638, 8277, 1236, 2]
 
-// Module 15684 (ICYMIMessageRowPreview)
+// Module 15693 (ICYMIMessageRowPreview)
 import importAllResult from "noop";
 import { MessageEmbedTypes } from "ME";
 import { jsx } from "jsxProd";
@@ -25,9 +25,9 @@ function ICYMIMessageRowPreview(pointerEvents) {
   let setting;
   let setting1;
   let setting2;
-  let obj = require(4344) /* createCacheKey */;
+  let obj = require(4342) /* createCacheKey */;
   obj = { seeMoreLabelColor: messageOptions(712).colors.TEXT_DEFAULT };
-  dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4280)());
+  dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4278)());
   const RenderEmbeds = require(4034) /* explicitContentFromProto */.RenderEmbeds;
   setting = RenderEmbeds.getSetting();
   const InlineEmbedMedia = require(4034) /* explicitContentFromProto */.InlineEmbedMedia;
@@ -61,7 +61,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(8634), obj);
+  return setting2(messageOptions(8638), obj);
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo((message) => {
@@ -168,11 +168,11 @@ const memoResult2 = importAllResult.memo((message) => {
     obj[4] = merged.pointerEvents;
     return obj;
   }, items);
-  const tmp3 = merged(5957)(message);
+  const tmp3 = merged(5959)(message);
   let obj = {};
   const merged1 = Object.assign(memo);
   obj = {};
-  const merged2 = Object.assign(message(8084).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(8088).DEFAULT_OPTIONS);
   obj.ignoreMentioned = true;
   obj.renderReplies = false;
   obj.renderThreadEmbeds = false;

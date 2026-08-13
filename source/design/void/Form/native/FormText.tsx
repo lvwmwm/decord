@@ -1,9 +1,9 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8026
+// Function ID: 8027
 // Name: FormTextColors
-// Dependencies: [19, 21, 4344, 5198, 712, 1297, 2]
+// Dependencies: [19, 21, 4342, 5199, 712, 1297, 2]
 
-// Module 8022 (FormTextColors)
+// Module 8026 (FormTextColors)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -11,7 +11,7 @@ import importAllResult from "noop";
 const require = arg1;
 let closure_3 = createCacheKey.createStyles((arg0) => {
   let obj = { primary: null, text: null };
-  obj = { color: require(5198) /* result */.DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+  obj = { color: require(5199) /* result */.DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
   obj[0] = obj;
   let num = 16;
   if ("small" === arg0) {

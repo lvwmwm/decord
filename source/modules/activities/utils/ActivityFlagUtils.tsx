@@ -1,10 +1,10 @@
-// Module ID: 10487
-// Function ID: 10488
+// Module ID: 10401
+// Function ID: 10402
 // Name: computeActivityFlags
-// Dependencies: [676, 4034, 595, 1403, 7239, 2]
+// Dependencies: [676, 4034, 595, 1403, 7244, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 10487 (computeActivityFlags)
+// Module 10401 (computeActivityFlags)
 import ME from "ME";
 
 let c3;
@@ -103,7 +103,7 @@ export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActiv
   }
   let hasFlagResult = require(1403) /* hasFlag */.hasFlag(num, constants.CONTEXTLESS);
   if (hasFlagResult) {
-    hasFlagResult = importDefault(7239)(remoteApplicationActivity);
+    hasFlagResult = importDefault(7244)(remoteApplicationActivity);
   }
   return hasFlagResult;
 };

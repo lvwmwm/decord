@@ -1,10 +1,10 @@
-// Module ID: 9686
-// Function ID: 9687
+// Module ID: 9690
+// Function ID: 9691
 // Name: getVisibleUserVoiceActivity
-// Dependencies: [1391, 3989, 4360, 505, 589, 2]
+// Dependencies: [1391, 3989, 4361, 505, 589, 2]
 // Exports: canViewUserVoiceChannel, default, getUserVoiceState
 
-// Module 9686 (getVisibleUserVoiceActivity)
+// Module 9690 (getVisibleUserVoiceActivity)
 import importDefaultResult from "ensureGuildLoaded";
 import importDefaultResult1 from "getUncachedChannelPermissions";
 import importDefaultResult2 from "updateVoiceState";
@@ -71,7 +71,7 @@ function getVisibleUserVoiceActivity(arg0) {
   }
 }
 let closure_6 = { ChannelStore: importDefaultResult, PermissionStore: importDefaultResult1, VoiceStateStore: importDefaultResult2 };
-let closure_7 = Object.freeze({ voiceState: "isArray", voiceChannel: "accessibilityRole" });
+let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "ct" });
 const result = require("updateVoiceState").fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
 
 export default function useUserVoiceActivity(userId) {

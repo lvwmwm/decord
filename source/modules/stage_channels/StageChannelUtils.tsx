@@ -1,10 +1,10 @@
-// Module ID: 7821
-// Function ID: 7822
+// Module ID: 7825
+// Function ID: 7826
 // Name: fillChunk
-// Dependencies: [4415, 1396, 5172, 676, 7822, 12, 4533, 1236, 3994, 2]
+// Dependencies: [4416, 1396, 5173, 676, 7826, 12, 4534, 1236, 3994, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 7821 (fillChunk)
+// Module 7825 (fillChunk)
 import createRTCConnection from "createRTCConnection";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH";
@@ -42,7 +42,7 @@ export const summarizeUsernamesParticipating = function summarizeUsernamesPartic
   let length = arg3;
   const first = arg1[0];
   let obj = dependencyMap;
-  const name = importDefault(4533).getName(arg0, arg2, first);
+  const name = importDefault(4534).getName(arg0, arg2, first);
   if (arg3 == null) {
     length = arg1.length;
   }
@@ -150,26 +150,26 @@ export const getParticipantNamesText = function getParticipantNamesText(channel,
   } else if (1 === found.length) {
     const intl2 = set(1236).intl;
     let obj = { a: null };
-    obj[0] = importDefault(4533).getName(channel.getGuildId(), channel.id, found[0].user);
+    obj[0] = importDefault(4534).getName(channel.getGuildId(), channel.id, found[0].user);
     stringResult = intl2.formatToPlainString(set(1236).t.EQwZlN, obj);
-    const obj5 = importDefault(4533);
+    const obj5 = importDefault(4534);
   } else if (2 === found.length) {
     const intl = set(1236).intl;
     obj = { a: null, b: null };
-    obj[0] = importDefault(4533).getName(channel.getGuildId(), channel.id, found[0].user);
-    const obj2 = importDefault(4533);
-    obj[1] = importDefault(4533).getName(channel.getGuildId(), channel.id, found[1].user);
+    obj[0] = importDefault(4534).getName(channel.getGuildId(), channel.id, found[0].user);
+    const obj2 = importDefault(4534);
+    obj[1] = importDefault(4534).getName(channel.getGuildId(), channel.id, found[1].user);
     stringResult = intl.formatToPlainString(set(1236).t.zBcKoA, obj);
-    const obj3 = importDefault(4533);
+    const obj3 = importDefault(4534);
   } else {
     const intl4 = set(1236).intl;
     obj = { a: null, b: null, n: null };
-    obj[0] = importDefault(4533).getName(channel.getGuildId(), channel.id, found[0].user);
-    const obj7 = importDefault(4533);
-    obj[1] = importDefault(4533).getName(channel.getGuildId(), channel.id, found[1].user);
+    obj[0] = importDefault(4534).getName(channel.getGuildId(), channel.id, found[0].user);
+    const obj7 = importDefault(4534);
+    obj[1] = importDefault(4534).getName(channel.getGuildId(), channel.id, found[1].user);
     obj[2] = found.length - 2;
     stringResult = intl4.formatToPlainString(set(1236).t["3AqFaG"], obj);
-    const obj8 = importDefault(4533);
+    const obj8 = importDefault(4534);
   }
   return stringResult;
 };

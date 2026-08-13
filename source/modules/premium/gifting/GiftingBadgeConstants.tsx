@@ -1,7 +1,7 @@
 // Module ID: 10206
 // Function ID: 10207
 // Name: getTierForProgress
-// Dependencies: [8835, 2]
+// Dependencies: [8839, 2]
 // Exports: getNextTierForProgress, getRemainingGiftsToNextTier, getTierForProgress
 
 // Module 10206 (getTierForProgress)

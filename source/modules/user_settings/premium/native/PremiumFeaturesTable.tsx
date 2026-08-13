@@ -1,7 +1,7 @@
 // Module ID: 12811
 // Function ID: 12812
 // Name: CheckIcon
-// Dependencies: [32, 19, 17, 676, 1924, 21, 4344, 712, 5198, 4280, 1363, 1297, 12812, 12813, 4340, 1236, 4765, 7691, 4007, 12814, 12815, 5307, 12816, 12817, 12818, 12819, 12820, 2]
+// Dependencies: [32, 19, 17, 676, 1924, 21, 4342, 712, 5199, 4278, 1363, 1297, 12812, 12813, 4338, 1236, 4766, 7695, 4007, 12814, 12815, 5308, 12816, 12817, 12818, 12819, 12820, 2]
 // Exports: default
 
 // Module 12811 (CheckIcon)
@@ -24,12 +24,12 @@ const require = arg1;
 function CheckIcon() {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   const tmp = importDefault;
-  const tmp3 = importDefault(4280)();
+  const tmp3 = importDefault(4278)();
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  const isThemeDarkResult = obj.isThemeDark(importDefault(4280)());
+  const isThemeDarkResult = obj.isThemeDark(importDefault(4278)());
   obj = { source: null, color: null, size: null };
   obj[0] = tmp(12812);
-  obj[1] = obj.isThemeDark(importDefault(4280)()) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
+  obj[1] = obj.isThemeDark(importDefault(4278)()) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
   obj[2] = require(1297) /* Button */.IconSizes.SMALL;
   return callback2(require(1297) /* Button */.Icon, obj);
 }
@@ -41,7 +41,7 @@ function CloseIcon() {
   return callback2(require(1297) /* Button */.Icon, obj);
 }
 function CellText(children) {
-  return callback2(require(4340) /* Text */.Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.text });
+  return callback2(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.text });
 }
 function Row(withTopBorderRadius) {
   let column1;
@@ -200,7 +200,7 @@ function Row(withTopBorderRadius) {
         ({ START: obj9[1], END: obj9[2] } = HorizontalGradient);
         obj6[3] = ["rgba(133, 71, 198, 0.10)", "rgba(184, 69, 193, 0.10)", "rgba(171, 93, 138, 0.10)"];
         obj6[4] = column2;
-        obj4[3] = tmp5(importDefault(4765), obj6);
+        obj4[3] = tmp5(importDefault(4766), obj6);
       }
       items2[2] = tmp5(tmp4, obj4);
       obj[2] = items2;

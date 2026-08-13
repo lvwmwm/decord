@@ -1,10 +1,10 @@
-// Module ID: 4753
-// Function ID: 4754
+// Module ID: 4754
+// Function ID: 4755
 // Name: CONFIG_NEVER_ANIMATE
-// Dependencies: [4346, 4347, 4083, 2]
+// Dependencies: [4344, 4345, 4083, 2]
 // Exports: withSpring
 
-// Module 4753 (CONFIG_NEVER_ANIMATE)
+// Module 4754 (CONFIG_NEVER_ANIMATE)
 import { CONFIG_NEVER_ANIMATE } from "CONFIG_NEVER_ANIMATE";
 
 function withSpring(value, SUBTLE_SPRING, fn, fn2) {
@@ -12,7 +12,7 @@ function withSpring(value, SUBTLE_SPRING, fn, fn2) {
   if (fn === undefined) {
     str = "respect-motion-settings";
   }
-  const accessibilityPreferencesSharedValue = require(4347) /* mutable */.accessibilityPreferencesSharedValue;
+  const accessibilityPreferencesSharedValue = require(4345) /* mutable */.accessibilityPreferencesSharedValue;
   if ("animate-always" === str) {
     let tmp7 = SUBTLE_SPRING;
     if (tmp4) {

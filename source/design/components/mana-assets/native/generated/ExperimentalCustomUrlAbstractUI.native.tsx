@@ -1,10 +1,10 @@
-// Module ID: 6299
-// Function ID: 6300
+// Module ID: 6301
+// Function ID: 6302
 // Name: ExperimentalCustomUrlAbstractUI
-// Dependencies: [21, 5307, 6300, 2]
+// Dependencies: [21, 5308, 6302, 2]
 // Exports: ExperimentalCustomUrlAbstractUI
 
-// Module 6299 (ExperimentalCustomUrlAbstractUI)
+// Module 6301 (ExperimentalCustomUrlAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalCustomUrlAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const ExperimentalCustomUrlAbstractUI = function ExperimentalCustomUrlAbs
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6300);
+  obj[0] = importDefault(6302);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ExperimentalCustomUrlAbstractUI = function ExperimentalCustomUrlAbs
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5307), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
 };

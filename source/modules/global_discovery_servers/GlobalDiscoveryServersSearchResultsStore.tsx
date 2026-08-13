@@ -1,7 +1,7 @@
 // Module ID: 13032
 // Function ID: 13033
 // Name: map
-// Dependencies: [9068, 4243, 589, 709, 2]
+// Dependencies: [9072, 4241, 589, 709, 2]
 
 // Module 13032 (map)
 import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID";
@@ -29,7 +29,7 @@ prototype["handleSearchStart"] = function handleSearchStart() {
 prototype["handleSearchFailure"] = function handleSearchFailure(arg0) {
   this.isFetching = false;
   this.isInitialFetchComplete = true;
-  const aPIError = new require(4243) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new require(4241) /* V6OrEarlierAPIError */.APIError(arg0);
   this.error = aPIError;
 };
 prototype["handleSearchSuccess"] = function handleSearchSuccess(arg0) {

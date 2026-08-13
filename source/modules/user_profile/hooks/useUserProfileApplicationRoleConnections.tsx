@@ -1,7 +1,7 @@
 // Module ID: 12544
 // Function ID: 12545
 // Name: useUserProfileApplicationRoleConnections
-// Dependencies: [19, 7122, 589, 2]
+// Dependencies: [19, 7128, 589, 2]
 // Exports: default
 
 // Module 12544 (useUserProfileApplicationRoleConnections)

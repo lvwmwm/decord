@@ -1,7 +1,7 @@
 // Module ID: 10181
 // Function ID: 10182
 // Name: useOpenProfileSettings
-// Dependencies: [19, 1922, 10182, 676, 685, 8305, 10183, 10184, 6057, 2]
+// Dependencies: [19, 1922, 10182, 676, 685, 8309, 10183, 10184, 6059, 2]
 // Exports: default
 
 // Module 10181 (useOpenProfileSettings)
