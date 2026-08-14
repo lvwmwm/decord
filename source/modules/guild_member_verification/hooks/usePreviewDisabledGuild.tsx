@@ -1,10 +1,10 @@
-// Module ID: 8467
-// Function ID: 8468
+// Module ID: 8489
+// Function ID: 8490
 // Name: usePreviewDisabledGuild
-// Dependencies: [19, 1910, 5305, 589, 5374, 1430, 2]
+// Dependencies: [19, 1910, 5326, 589, 5395, 1430, 2]
 // Exports: default
 
-// Module 8467 (usePreviewDisabledGuild)
+// Module 8489 (usePreviewDisabledGuild)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import get from "get";

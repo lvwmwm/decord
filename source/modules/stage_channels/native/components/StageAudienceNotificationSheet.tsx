@@ -1,10 +1,10 @@
-// Module ID: 8009
-// Function ID: 8010
+// Module ID: 8030
+// Function ID: 8031
 // Name: handleDismiss
-// Dependencies: [19, 17, 1396, 5173, 1397, 21, 4342, 712, 4310, 1297, 589, 8010, 5308, 8011, 4338, 1236, 8012, 8046, 8047, 8048, 8049, 4755, 2]
+// Dependencies: [19, 17, 1396, 5194, 1397, 21, 4342, 712, 4310, 1297, 589, 8031, 5329, 8032, 4338, 1236, 8033, 8067, 8068, 8069, 8070, 4777, 2]
 // Exports: default
 
-// Module 8009 (handleDismiss)
+// Module 8030 (handleDismiss)
 import "registerAsset";
 import { View } from "registerAsset";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
@@ -54,10 +54,10 @@ export default function StageAudienceNotificationSheet(channelId) {
   obj = { style: tmp.header, children: null };
   const obj1 = { source: null, style: null };
   const tmp7 = importDefault;
-  const tmp8 = importDefault(8010);
-  obj1[0] = importDefault(8011);
+  const tmp8 = importDefault(8031);
+  obj1[0] = importDefault(8032);
   obj1[1] = tmp.headerImage;
-  const items1 = [callback(importDefault(5308), obj1), , ];
+  const items1 = [callback(importDefault(5329), obj1), , ];
   const obj2 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp2(1236).intl;
   obj2[4] = intl.string(channelId(1236).t.UVuXCs);
@@ -65,43 +65,43 @@ export default function StageAudienceNotificationSheet(channelId) {
   const obj3 = { style: tmp.headerBulletList, children: null };
   const obj4 = { leading: null, label: null };
   const obj5 = { source: null };
-  obj5[0] = importDefault(8046);
+  obj5[0] = importDefault(8067);
   obj4[0] = callback(BulletIcon, obj5);
   const obj6 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = tmp2(1236).intl;
   obj6[3] = intl2.string(channelId(1236).t.sBDfo6);
   obj4[1] = callback(channelId(4338).Text, obj6);
-  const items2 = [callback(channelId(8012).FormRow, obj4), , , ];
+  const items2 = [callback(channelId(8033).FormRow, obj4), , , ];
   const obj7 = { leading: null, label: null };
   const obj8 = { source: null };
-  obj8[0] = importDefault(8047);
+  obj8[0] = importDefault(8068);
   obj7[0] = callback(BulletIcon, obj8);
   const obj9 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl3 = tmp2(1236).intl;
   obj9[3] = intl3.string(channelId(1236).t.x58YtH);
   obj7[1] = callback(channelId(4338).Text, obj9);
-  items2[1] = callback(channelId(8012).FormRow, obj7);
+  items2[1] = callback(channelId(8033).FormRow, obj7);
   const obj10 = { leading: null, label: null };
   const obj11 = { source: null };
-  obj11[0] = importDefault(8048);
+  obj11[0] = importDefault(8069);
   obj10[0] = callback(BulletIcon, obj11);
   const obj12 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl4 = tmp2(1236).intl;
   obj12[3] = intl4.string(channelId(1236).t.XtVqla);
   obj10[1] = callback(channelId(4338).Text, obj12);
-  items2[2] = callback(channelId(8012).FormRow, obj10);
+  items2[2] = callback(channelId(8033).FormRow, obj10);
   let tmp6Result = null;
   if (privacy_level === constants.PUBLIC) {
     const obj13 = { leading: null, label: null };
     const obj14 = { source: null };
-    obj14[0] = tmp7(8049);
+    obj14[0] = tmp7(8070);
     obj13[0] = tmp6(BulletIcon, obj14);
     const obj15 = { style: null, variant: "text-md/medium", color: "text-default", children: null };
     obj15[0] = tmp.headerBullet;
     const intl6 = tmp2(1236).intl;
     obj15[3] = intl6.string(tmp2(1236).t.nDsbJg);
     obj13[1] = tmp6(tmp2(4338).Text, obj15);
-    tmp6Result = tmp6(tmp2(8012).FormRow, obj13);
+    tmp6Result = tmp6(tmp2(8033).FormRow, obj13);
   }
   const obj16 = { children: null };
   items2[3] = tmp6Result;
@@ -114,7 +114,7 @@ export default function StageAudienceNotificationSheet(channelId) {
   const intl5 = tmp2(1236).intl;
   obj18[0] = intl5.string(channelId(1236).t.obLqZ8);
   obj18[1] = handleDismiss;
-  obj17[1] = callback(channelId(4755).Button, obj18);
+  obj17[1] = callback(channelId(4777).Button, obj18);
   items3[1] = callback(View, obj17);
   obj[1] = items3;
   obj16[0] = closure_8(View, obj);

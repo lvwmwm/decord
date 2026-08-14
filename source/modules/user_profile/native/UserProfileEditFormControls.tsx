@@ -1,10 +1,10 @@
-// Module ID: 13992
-// Function ID: 13993
+// Module ID: 14004
+// Function ID: 14005
 // Name: FormControlText
-// Dependencies: [32, 19, 17, 21, 4342, 712, 4338, 7749, 1297, 1236, 7836, 4887, 5421, 500, 5809, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 4338, 7770, 1297, 1236, 7857, 4909, 5442, 500, 5830, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 13992 (FormControlText)
+// Module 14004 (FormControlText)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -59,7 +59,7 @@ export const UserProfileEditFormLabelBadges = function UserProfileEditFormLabelB
     obj[0] = tmp.labelTrailing;
     let tmp5 = null;
     if (flag) {
-      tmp5 = callback2(require(7749) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs" });
+      tmp5 = callback2(require(7770) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs" });
     }
     const items = [tmp5, ];
     let tmp9 = null;
@@ -133,12 +133,12 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   items[2] = trailing;
   tmp2Result = !flag2;
   if (!flag2) {
-    tmp2Result = tmp2(require(5421) /* TableRowArrow */.TableRowArrow, {});
+    tmp2Result = tmp2(require(5442) /* TableRowArrow */.TableRowArrow, {});
   }
   items[3] = tmp2Result;
   obj[8] = items;
-  obj[2] = closure_7(require(4887) /* PressableBase */.PressableHighlight, obj);
-  return closure_6(require(7836) /* Input */.Input, obj);
+  obj[2] = closure_7(require(4909) /* PressableBase */.PressableHighlight, obj);
+  return closure_6(require(7857) /* Input */.Input, obj);
 };
 export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0) {
   let accessibilityHint;
@@ -165,7 +165,7 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
     callback(closure_0);
   }, items);
   if (isAndroidResult) {
-    let PressableHighlight = tmp2(4887).PressableHighlight;
+    let PressableHighlight = tmp2(4909).PressableHighlight;
   } else {
     PressableHighlight = closure_4;
   }
@@ -206,8 +206,8 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
   obj[5] = accessibilityHint;
   obj[6] = { disabled, checked: tmp5[0] };
   obj[7] = disabled;
-  const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(require(5809) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
+  const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(require(5830) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   obj[8] = items1;
   obj[1] = closure_7(PressableHighlight, obj);
-  return closure_6(require(7836) /* Input */.Input, obj);
+  return closure_6(require(7857) /* Input */.Input, obj);
 };

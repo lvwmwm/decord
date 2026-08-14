@@ -1,10 +1,10 @@
-// Module ID: 5394
-// Function ID: 5395
+// Module ID: 5415
+// Function ID: 5416
 // Name: decideFileExtension
 // Dependencies: [1486, 2]
 // Exports: decideFileExtension
 
-// Module 5394 (decideFileExtension)
+// Module 5415 (decideFileExtension)
 let closure_2 = { "image/avif": "avif", "image/gif": "gif", "image/heic": "heic", "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "video/mp4": "mp4", "video/quicktime": "mov", "video/webm": "webm" };
 const result = require("set").fileFinishedImporting("modules/media/FileExtensionUtils.tsx");
 

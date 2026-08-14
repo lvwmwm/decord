@@ -1,10 +1,10 @@
-// Module ID: 15061
-// Function ID: 15062
+// Module ID: 15075
+// Function ID: 15076
 // Name: MFAOptionScreen
-// Dependencies: [17, 21, 8521, 15062, 5368, 4753, 4338, 15063, 8551, 2]
+// Dependencies: [17, 21, 8543, 15076, 5389, 4775, 4338, 15077, 8573, 2]
 // Exports: default
 
-// Module 15061 (MFAOptionScreen)
+// Module 15075 (MFAOptionScreen)
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
@@ -26,8 +26,8 @@ export default function MFAOptionScreen(arg0) {
   let subtitle;
   ({ headerImage, subtitle, screenProps, error } = arg0);
   ({ headerText, input, submit, mfaMethod, content } = arg0);
-  const tmp3 = importDefault(8521)();
-  let obj = importDefault(15062);
+  const tmp3 = importDefault(8543)();
+  let obj = importDefault(15076);
   const screenStyles = obj.useScreenStyles(tmp3);
   const first = screenProps.mfaChallenge.methods[0];
   let type;
@@ -58,22 +58,22 @@ export default function MFAOptionScreen(arg0) {
   const obj4 = { children: null };
   items[3] = tmp10Result;
   obj[2] = items;
-  const items1 = [closure_5(require(4753) /* Stack */.Stack, obj), input];
+  const items1 = [closure_5(require(4775) /* Stack */.Stack, obj), input];
   obj4[0] = items1;
-  const items2 = [closure_5(require(4753) /* Stack */.Stack, obj4), content, ];
+  const items2 = [closure_5(require(4775) /* Stack */.Stack, obj4), content, ];
   const obj5 = { style: screenStyles.submit, children: null };
   const items3 = [submit, ];
   if (tmp10Result1) {
     const obj6 = { props: null };
     obj6[0] = screenProps;
-    tmp10Result1 = tmp10(tmp(15063), obj6);
+    tmp10Result1 = tmp10(tmp(15077), obj6);
   }
   items3[1] = tmp10Result1;
   obj5[1] = items3;
-  items2[2] = closure_5(require(4753) /* Stack */.Stack, obj5);
+  items2[2] = closure_5(require(4775) /* Stack */.Stack, obj5);
   obj[3] = items2;
-  const tmp7Result = closure_5(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
-  const children = [callback(importDefault(8551), { backgroundImageCover: false }), ];
+  const tmp7Result = closure_5(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  const children = [callback(importDefault(8573), { backgroundImageCover: false }), ];
   let tmp10Result2 = tmp7Result;
   if (tmp3) {
     const obj7 = { keyboardShouldPersistTaps: "handled", children: null };

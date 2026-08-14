@@ -1,10 +1,10 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 14028
+// Function ID: 14029
 // Name: UserProfileTypingIndicatorEditButton
-// Dependencies: [32, 19, 676, 1388, 21, 1499, 6065, 1377, 13992, 1236, 3371, 2]
+// Dependencies: [32, 19, 676, 1388, 21, 1499, 6086, 1377, 14004, 1236, 3371, 2]
 // Exports: default
 
-// Module 14014 (UserProfileTypingIndicatorEditButton)
+// Module 14028 (UserProfileTypingIndicatorEditButton)
 import _slicedToArray from "_slicedToArray";
 import { UserSettingsSections } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -18,21 +18,21 @@ export default function UserProfileTypingIndicatorEditButton() {
   let obj = nativeStackNavigation(1499);
   nativeStackNavigation = obj.useNativeStackNavigation();
   const items = [nativeStackNavigation(1377).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE];
-  const tmp2 = callback(nativeStackNavigation(6065).useSelectedDismissibleContent(items, undefined, true), 2);
+  const tmp2 = callback(nativeStackNavigation(6086).useSelectedDismissibleContent(items, undefined, true), 2);
   const importDefault = tmp3;
   const items1 = [nativeStackNavigation, tmp2[1]];
-  const obj2 = nativeStackNavigation(6065);
+  const obj2 = nativeStackNavigation(6086);
   obj = { label: null, labelTrailing: null, buttonText: null, onPress: null };
   const intl = nativeStackNavigation(1236).intl;
   obj[0] = intl.string(importDefault(3371)["pT+BVM"]);
   obj = { showPremiumIcon: true, showNewBadge: null };
   obj[1] = tmp2[0] === nativeStackNavigation(1377).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE;
-  obj[1] = jsx(nativeStackNavigation(13992).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: null });
+  obj[1] = jsx(nativeStackNavigation(14004).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: null });
   const intl2 = nativeStackNavigation(1236).intl;
   obj[2] = intl2.string(nativeStackNavigation(1236).t.PoWNfe);
   obj[3] = useCallback(() => {
     nativeStackNavigation.navigate(outer1_5.TYPING_INDICATOR);
     tmp3(outer1_6.TAKE_ACTION);
   }, items1);
-  return jsx(nativeStackNavigation(13992).UserProfileEditFormButton, { showPremiumIcon: true, showNewBadge: null });
+  return jsx(nativeStackNavigation(14004).UserProfileEditFormButton, { showPremiumIcon: true, showNewBadge: null });
 };

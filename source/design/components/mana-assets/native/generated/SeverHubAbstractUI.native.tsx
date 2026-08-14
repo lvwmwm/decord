@@ -1,10 +1,10 @@
-// Module ID: 6767
-// Function ID: 6768
+// Module ID: 6788
+// Function ID: 6789
 // Name: SeverHubAbstractUI
-// Dependencies: [21, 5308, 6768, 2]
+// Dependencies: [21, 5329, 6789, 2]
 // Exports: SeverHubAbstractUI
 
-// Module 6767 (SeverHubAbstractUI)
+// Module 6788 (SeverHubAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SeverHubAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const SeverHubAbstractUI = function SeverHubAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6768);
+  obj[0] = importDefault(6789);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const SeverHubAbstractUI = function SeverHubAbstractUI(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
 };

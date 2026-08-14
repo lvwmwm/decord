@@ -1,9 +1,9 @@
-// Module ID: 8258
-// Function ID: 8259
+// Module ID: 8280
+// Function ID: 8281
 // Name: nativeStyleProperties
-// Dependencies: [17, 4334, 1391, 1910, 4335, 8087, 676, 4342, 4191, 712, 5928, 4564, 1492, 2]
+// Dependencies: [17, 4334, 1391, 1910, 4335, 8108, 676, 4342, 4191, 712, 5949, 4586, 1492, 2]
 
-// Module 8258 (nativeStyleProperties)
+// Module 8280 (nativeStyleProperties)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -62,7 +62,7 @@ createCacheKey = {
       return obj;
     } else {
       if (message.hasFlag(constants.IS_GUILD_OFFICIAL)) {
-        obj = require(5928) /* useCanManageGuildOfficialMessages */;
+        obj = require(5949) /* useCanManageGuildOfficialMessages */;
         if (obj.showGuildOfficialMessageGradient(officialMessageStyle.officialMessageStyle)) {
           channel = channel.getChannel(message.getChannelId());
           let guild_id;
@@ -70,7 +70,7 @@ createCacheKey = {
             guild_id = channel.guild_id;
           }
           guild = guild.getGuild(guild_id);
-          let tmp3Result = tmp3(5928);
+          let tmp3Result = tmp3(5949);
           if (tmp3Result.isGuildOfficialMessagesEnabled(guild, "RowGeneratorUtils")) {
             let officialMessageColor;
             if (guild != null) {
@@ -82,7 +82,7 @@ createCacheKey = {
             if (message.mentioned) {
               let ephemeralGutterColor = tmp.mentionedGutterColor;
             } else {
-              tmp3Result = tmp3(4564);
+              tmp3Result = tmp3(4586);
               if (tmp3Result.hasEphemeralAppearance(message)) {
                 ephemeralGutterColor = tmp.ephemeralGutterColor;
               }
@@ -99,7 +99,7 @@ createCacheKey = {
         ({ mentionedBackgroundColor: obj5[0], mentionedGutterColor: obj5[1] } = tmp);
         const tmp14 = obj2;
       } else {
-        obj2 = require(4564) /* createMinimalMessageRecord */;
+        obj2 = require(4586) /* createMinimalMessageRecord */;
         if (obj2.hasEphemeralAppearance(message)) {
           const obj3 = { backgroundColor: null, gutterColor: null };
           obj3[0] = message.type === constants2.GIFTING_PROMPT ? tmp.giftIntentEphemeralBackgroundColor : tmp.ephemeralBackgroundColor;

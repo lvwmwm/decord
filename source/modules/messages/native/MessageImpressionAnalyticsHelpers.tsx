@@ -1,10 +1,10 @@
-// Module ID: 10962
-// Function ID: 10963
+// Module ID: 10978
+// Function ID: 10979
 // Name: getVoiceInviteEmbedRenderInfo
-// Dependencies: [19, 4327, 4417, 676, 7194, 7241, 10963, 5928, 4331, 7240, 10964, 10965, 4328, 2]
+// Dependencies: [19, 4327, 4417, 676, 7216, 7263, 10979, 5949, 4331, 7262, 10980, 10981, 4328, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 10962 (getVoiceInviteEmbedRenderInfo)
+// Module 10978 (getVoiceInviteEmbedRenderInfo)
 import noop from "noop";
 import updateInvite from "updateInvite";
 import getVoiceStatesForGuild from "getVoiceStatesForGuild";
@@ -25,9 +25,9 @@ function getVoiceInviteEmbedRenderInfo(state) {
           if (obj5.getInviteType(state) !== InviteTypes.GUILD) {
             return null;
           } else {
-            let tmp7Result = tmp7(7240);
+            let tmp7Result = tmp7(7262);
             const guildInviteExtendedType = tmp7Result.getGuildInviteExtendedType(state);
-            if (guildInviteExtendedType !== tmp7(7240).GuildInviteExtendedType.VOICE_CHANNEL) {
+            if (guildInviteExtendedType !== tmp7(7262).GuildInviteExtendedType.VOICE_CHANNEL) {
               return null;
             } else {
               const guild = state.guild;
@@ -37,13 +37,13 @@ function getVoiceInviteEmbedRenderInfo(state) {
               }
               let tmp4 = null;
               if (null != id) {
-                tmp7Result = tmp7(10964);
+                tmp7Result = tmp7(10980);
                 let obj = { guildId: null, location: "mobile_invite_embed_impression" };
                 obj[0] = id;
                 let enabled = tmp7Result.getVoiceChannelListInviteExperiment(obj).enabled;
                 if (enabled) {
-                  enabled = tmp7(10965).canShowVoiceChannelListInviteEmbed(state);
-                  const tmp7Result1 = tmp7(10965);
+                  enabled = tmp7(10981).canShowVoiceChannelListInviteEmbed(state);
+                  const tmp7Result1 = tmp7(10981);
                 }
                 obj = { treatmentRendered: null };
                 obj[0] = enabled;
@@ -52,7 +52,7 @@ function getVoiceInviteEmbedRenderInfo(state) {
               return tmp4;
             }
           }
-          obj5 = require(7240) /* InviteTypes */;
+          obj5 = require(7262) /* InviteTypes */;
         }
       }
     }

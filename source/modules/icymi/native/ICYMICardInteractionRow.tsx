@@ -1,10 +1,10 @@
-// Module ID: 15687
-// Function ID: 15688
+// Module ID: 15705
+// Function ID: 15706
 // Name: AddEmojiButton
-// Dependencies: [32, 19, 17, 5963, 1391, 5172, 3989, 676, 1925, 21, 4000, 7268, 4342, 712, 500, 4191, 589, 4355, 6965, 8686, 4887, 1236, 7700, 4338, 10246, 688, 1435, 8659, 9573, 10247, 11127, 11180, 15679, 4841, 7267, 11195, 11098, 8962, 11120, 11106, 4065, 4766, 689, 5818, 2]
+// Dependencies: [32, 19, 17, 5984, 1391, 5193, 3989, 676, 1925, 21, 4000, 7290, 4342, 712, 500, 4191, 589, 4355, 6986, 8700, 4909, 1236, 7721, 4338, 10260, 688, 1435, 8673, 9586, 10261, 11143, 11196, 15697, 4863, 7289, 11211, 11114, 8976, 11136, 11122, 4065, 4788, 689, 5839, 2]
 // Exports: default, onAddReaction, useThread
 
-// Module 15687 (AddEmojiButton)
+// Module 15705 (AddEmojiButton)
 import Separator from "Separator";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import get_ActivityIndicator from "module_4355";
@@ -225,8 +225,8 @@ function ForwardButton(disabled) {
   obj[3] = disabled;
   const intl = tmp3(1236).intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.xIUfJS);
-  obj[5] = closure_16(importDefault(11127), { size: "sm" });
-  return closure_16(require(4887) /* PressableBase */.PressableOpacity, obj);
+  obj[5] = closure_16(importDefault(11143), { size: "sm" });
+  return closure_16(require(4909) /* PressableBase */.PressableOpacity, obj);
 }
 function ReplyButton(disabled) {
   disabled = disabled.disabled;
@@ -243,8 +243,8 @@ function ReplyButton(disabled) {
   obj[3] = disabled;
   const intl = tmp3(1236).intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t["5NwaNY"]);
-  obj[5] = closure_16(require(11180) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
-  return closure_16(require(4887) /* PressableBase */.PressableOpacity, obj);
+  obj[5] = closure_16(require(11196) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
+  return closure_16(require(4909) /* PressableBase */.PressableOpacity, obj);
 }
 function ThreadAsCommentsButton(parentMessage) {
   let handleItemInteracted;
@@ -674,10 +674,10 @@ export default function ICYMICardInteractionRow(message) {
 export const onAddReaction = function onAddReaction(arg0, arg1, byName) {
   if (null != byName) {
     let obj = require(4000) /* MAX_REACTIONS */;
-    const obj2 = require(7268) /* checkReactionResponse */;
+    const obj2 = require(7290) /* checkReactionResponse */;
     obj = { burst: null };
     obj[0] = arg3;
-    obj2.addReaction(arg0, arg1, obj.toReactionEmoji(byName), require(7268) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
+    obj2.addReaction(arg0, arg1, obj.toReactionEmoji(byName), require(7290) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
     const toReactionEmojiResult = obj.toReactionEmoji(byName);
   }
 };

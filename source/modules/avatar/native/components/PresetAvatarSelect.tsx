@@ -1,10 +1,10 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16596
+// Function ID: 16597
 // Name: DefaultAvatarButton
-// Dependencies: [19, 17, 21, 16584, 16585, 16586, 16587, 16588, 16589, 16590, 16591, 1236, 4342, 712, 4338, 4887, 5308, 2]
+// Dependencies: [19, 17, 21, 16597, 16598, 16599, 16600, 16601, 16602, 16603, 16604, 1236, 4342, 712, 4338, 4909, 5329, 2]
 // Exports: default
 
-// Module 16583 (DefaultAvatarButton)
+// Module 16596 (DefaultAvatarButton)
 import "noop";
 import { View } from "set";
 import jsxProd from "jsxProd";
@@ -31,8 +31,8 @@ function DefaultAvatarButton(selected) {
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.vw2RsD);
   obj[5] = onSelect;
   obj = { style: tmp.defaultAvatarButton, source: { uri: source } };
-  obj[6] = closure_4(importDefault(5308), obj);
-  return closure_4(require(4887) /* PressableBase */.PressableOpacity, obj);
+  obj[6] = closure_4(importDefault(5329), obj);
+  return closure_4(require(4909) /* PressableBase */.PressableOpacity, obj);
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let items = [require("set"), require("set"), require("set"), require("set"), require("set"), require("set"), require("set"), require("set")];

@@ -1,10 +1,10 @@
-// Module ID: 9501
-// Function ID: 9502
+// Module ID: 9514
+// Function ID: 9515
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 4366, 1922, 4779, 5967, 589, 1903, 4876, 1236, 2]
+// Dependencies: [19, 4366, 1922, 4801, 5988, 589, 1903, 4898, 1236, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 9501 (useGameMentionsAsPlainText)
+// Module 9514 (useGameMentionsAsPlainText)
 import noop from "noop";
 import handleLoadMessages from "handleLoadMessages";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,9 +1,9 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 5959
+// Function ID: 5960
 // Name: getMemberListId
-// Dependencies: [4256, 4364, 1218, 1391, 4263, 1990, 1983, 1910, 4431, 5037, 1922, 676, 1236, 3994, 1217, 12, 506, 589, 709, 2]
+// Dependencies: [4256, 4364, 1218, 1391, 4263, 1990, 1983, 1910, 4431, 5059, 1922, 676, 1236, 3994, 1217, 12, 506, 589, 709, 2]
 
-// Module 5938 (getMemberListId)
+// Module 5959 (getMemberListId)
 import getHash from "getHash";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -207,7 +207,7 @@ prototype["insert"] = function insert(arg0, arg1) {
           if (null != guild) {
             role = store3.getRole(guild.id, id);
           }
-          let obj = { type: null, key: null, id: null, title: null, count: null, index: "Boolean" };
+          let obj = { type: null, key: null, id: null, title: null, count: null, index: "l" };
           obj[0] = obj.GROUP;
           obj[1] = id;
           obj[2] = id;
@@ -311,7 +311,7 @@ prototype["update"] = function update(arg0, arg1) {
           if (null != guild) {
             role = store3.getRole(guild.id, id2);
           }
-          obj = { type: null, key: null, id: null, title: null, count: null, index: "Boolean" };
+          obj = { type: null, key: null, id: null, title: null, count: null, index: "l" };
           obj[0] = obj.GROUP;
           obj[1] = id2;
           obj[2] = id2;

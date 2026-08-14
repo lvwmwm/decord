@@ -1,10 +1,10 @@
-// Module ID: 8874
-// Function ID: 8875
+// Module ID: 8888
+// Function ID: 8889
 // Name: useUserProfileBannerHeight
-// Dependencies: [5816, 1493, 2]
+// Dependencies: [5837, 1493, 2]
 // Exports: default
 
-// Module 8874 (useUserProfileBannerHeight)
+// Module 8888 (useUserProfileBannerHeight)
 import { BANNER_ASPECT_RATIO } from "ARBITRARY_LARGE_OFFSET";
 
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileBannerHeight.tsx");

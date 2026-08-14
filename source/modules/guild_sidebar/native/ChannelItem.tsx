@@ -1,9 +1,9 @@
-// Module ID: 15314
-// Function ID: 15315
+// Module ID: 15328
+// Function ID: 15329
 // Name: getChannelMode
-// Dependencies: [109, 19, 17, 4431, 3998, 1922, 676, 1398, 4541, 21, 4342, 712, 5199, 11812, 1435, 5308, 15315, 4845, 4805, 589, 1297, 4786, 15316, 4535, 1222, 2]
+// Dependencies: [109, 19, 17, 4431, 3998, 1922, 676, 1398, 4551, 21, 4342, 712, 5220, 11828, 1435, 5329, 15329, 4867, 4827, 589, 1297, 4808, 15330, 4535, 1222, 2]
 
-// Module 15314 (getChannelMode)
+// Module 15328 (getChannelMode)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { View } from "BookCheckIcon";
 import sortActivity from "sortActivity";
@@ -25,24 +25,24 @@ function getChannelMode(selected) {
   let unread;
   ({ unread, channel } = selected);
   if (selected.selected) {
-    const ChannelModes = require(11812) /* BaseChannelSubtitle */.ChannelModes;
+    const ChannelModes = require(11828) /* BaseChannelSubtitle */.ChannelModes;
     if (!isGuildVocalResult) {
       const SELECTED = ChannelModes.SELECTED;
     }
     isGuildVocalResult = channel.isGuildVocal();
   } else {
     if (tmp2) {
-      let DEFAULT = require(11812) /* BaseChannelSubtitle */.ChannelModes.LOCKED;
+      let DEFAULT = require(11828) /* BaseChannelSubtitle */.ChannelModes.LOCKED;
     } else if (tmp) {
-      DEFAULT = require(11812) /* BaseChannelSubtitle */.ChannelModes.MUTED;
+      DEFAULT = require(11828) /* BaseChannelSubtitle */.ChannelModes.MUTED;
     } else if (unread) {
       if (selected.resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
-        let UNREAD_LESS_IMPORTANT = require(11812) /* BaseChannelSubtitle */.ChannelModes.UNREAD_IMPORTANT;
+        let UNREAD_LESS_IMPORTANT = require(11828) /* BaseChannelSubtitle */.ChannelModes.UNREAD_IMPORTANT;
       } else {
-        UNREAD_LESS_IMPORTANT = require(11812) /* BaseChannelSubtitle */.ChannelModes.UNREAD_LESS_IMPORTANT;
+        UNREAD_LESS_IMPORTANT = require(11828) /* BaseChannelSubtitle */.ChannelModes.UNREAD_LESS_IMPORTANT;
       }
     } else {
-      DEFAULT = require(11812) /* BaseChannelSubtitle */.ChannelModes.DEFAULT;
+      DEFAULT = require(11828) /* BaseChannelSubtitle */.ChannelModes.DEFAULT;
     }
     return DEFAULT;
   }
@@ -73,21 +73,21 @@ function ChannelIcon(arg0) {
         const obj1 = { style: null, source: null };
         obj1[0] = tmp.groupDmAvatar;
         obj1[1] = channelIconSource;
-        return callback2(tmp5(5308), obj1);
+        return callback2(tmp5(5329), obj1);
       }
       tmp5 = importDefault;
     }
     if (tmp2) {
-      let tmp12 = importDefault(15315);
-      let BookCheckIcon = require(4845) /* BookCheckIcon */.BookCheckIcon;
+      let tmp12 = importDefault(15329);
+      let BookCheckIcon = require(4867) /* BookCheckIcon */.BookCheckIcon;
       let tmp9 = require;
     } else {
       tmp9 = require;
-      let obj2 = require(4805) /* getChannelIcon */;
+      let obj2 = require(4827) /* getChannelIcon */;
       obj2 = { isRulesChannel: false, locked: null };
       obj2[1] = locked;
       const channelIcon = obj2.getChannelIcon(channel, obj2);
-      let obj4 = require(4805) /* getChannelIcon */;
+      let obj4 = require(4827) /* getChannelIcon */;
       const obj3 = { isRulesChannel: false, locked: null };
       obj3[1] = locked;
       BookCheckIcon = obj4.getChannelIconComponent(channel, obj3);
@@ -110,7 +110,7 @@ function ChannelIcon(arg0) {
       obj6 = {};
     }
     const merged = Object.assign(obj6);
-    return callback2(tmp9(11812).BaseChannelIcon, obj4);
+    return callback2(tmp9(11828).BaseChannelIcon, obj4);
   }
 }
 function DMChannelIcon(userId) {
@@ -128,7 +128,7 @@ function DMChannelIcon(userId) {
   const items3 = [userId];
   const stateFromStoresObject = userId(589).useStateFromStoresObject(items2, () => ({ status: outer1_6.getStatus(userId), isMobileOnline: outer1_6.isMobileOnline(userId), isVROnline: outer1_6.isVROnline(userId) }), items3);
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  obj = { user: stateFromStores, guildId: "o", size: true, style: "image", status: null, isMobileOnline: null, isVROnline: null, statusStyle: "row" };
+  obj = { user: stateFromStores, guildId: "o", size: "bracket", style: "\u2026 ", status: "ENTITLEMENT_FETCH_APPLICATION_SUCCESS", isMobileOnline: null, isVROnline: null, statusStyle: 0 };
   obj[2] = userId(1297).AvatarSizes.XSMALL_20;
   obj[3] = tmp.dmAvatar;
   obj[4] = status;

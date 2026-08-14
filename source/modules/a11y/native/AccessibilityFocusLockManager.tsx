@@ -1,9 +1,9 @@
-// Module ID: 4740
-// Function ID: 4741
+// Module ID: 4762
+// Function ID: 4763
 // Name: _updateAccessibilityFocusLock
-// Dependencies: [17, 3, 4523, 4741, 500, 4742, 2]
+// Dependencies: [17, 3, 4523, 4763, 500, 4764, 2]
 
-// Module 4740 (_updateAccessibilityFocusLock)
+// Module 4762 (_updateAccessibilityFocusLock)
 import { NativeModules } from "get ActivityIndicator";
 import "initialize";
 
@@ -56,8 +56,8 @@ prototype["_updateAccessibilityFocusLock"] = function _updateAccessibilityFocusL
   }
   if (self._focusLockEnabled) {
     if (obj.isAndroid()) {
-      importDefault(4742).disableFocusLock();
-      let obj2 = importDefault(4742);
+      importDefault(4764).disableFocusLock();
+      let obj2 = importDefault(4764);
     } else {
       let DCDAccessibilityManager = NativeModules.DCDAccessibilityManager;
       DCDAccessibilityManager.disableFocusLock();
@@ -68,7 +68,7 @@ prototype["_updateAccessibilityFocusLock"] = function _updateAccessibilityFocusL
 };
 prototype["_initialize"] = function _initialize() {
   const self = this;
-  this._screenReaderEnabledListener = self(4741).addScreenReaderEnabledListener((_screenReaderEnabled) => {
+  this._screenReaderEnabledListener = self(4763).addScreenReaderEnabledListener((_screenReaderEnabled) => {
     self._screenReaderEnabled = _screenReaderEnabled;
     const result = self._updateAccessibilityFocusLock();
   });

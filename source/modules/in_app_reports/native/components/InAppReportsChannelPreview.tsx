@@ -1,10 +1,10 @@
-// Module ID: 12708
-// Function ID: 12709
+// Module ID: 12726
+// Function ID: 12727
 // Name: ChannelPreview
-// Dependencies: [19, 17, 1910, 21, 4342, 712, 589, 4191, 4338, 1236, 5819, 2]
+// Dependencies: [19, 17, 1910, 21, 4342, 712, 589, 4191, 4338, 1236, 5840, 2]
 // Exports: default
 
-// Module 12708 (ChannelPreview)
+// Module 12726 (ChannelPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -54,8 +54,8 @@ export default function ChannelPreview(stageInstance) {
       const obj4 = { guild: null, size: null, selected: false };
       obj4[0] = stateFromStores;
       const hexWithOpacityResult = tmp2(4191).hexWithOpacity(tmp.borderColor.color, 0.08);
-      obj4[1] = tmp2(5819).GuildIconSizes.XXSMALL;
-      const items3 = [callback(importDefault(5819), obj4), ];
+      obj4[1] = tmp2(5840).GuildIconSizes.XXSMALL;
+      const items3 = [callback(importDefault(5840), obj4), ];
       const obj5 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
       obj5[0] = tmp.guildName;
       obj5[3] = stateFromStores.name;

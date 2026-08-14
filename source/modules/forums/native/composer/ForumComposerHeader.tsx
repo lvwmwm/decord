@@ -1,10 +1,10 @@
-// Module ID: 9964
-// Function ID: 9965
+// Module ID: 9975
+// Function ID: 9976
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 4342, 712, 4535, 4887, 1236, 5366, 4857, 4338, 4845, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4535, 4909, 1236, 5387, 4879, 4338, 4867, 2]
 // Exports: default
 
-// Module 9964 (ForumComposerHeader)
+// Module 9975 (ForumComposerHeader)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -50,10 +50,10 @@ export default function ForumComposerHeader(height) {
   obj[4] = function onPress() {
     return callback(false);
   };
-  obj[5] = callback(require(5366) /* XSmallIcon */.XSmallIcon, {});
-  const items = [callback(require(4887) /* PressableBase */.PressableOpacity, obj), , , ];
+  obj[5] = callback(require(5387) /* XSmallIcon */.XSmallIcon, {});
+  const items = [callback(require(4909) /* PressableBase */.PressableOpacity, obj), , , ];
   obj = { style: tmp.headerBarContent, children: null };
-  const items1 = [callback(require(4857) /* ForumIcon */.ForumIcon, { size: "sm" }), ];
+  const items1 = [callback(require(4879) /* ForumIcon */.ForumIcon, { size: "sm" }), ];
   const obj1 = { style: tmp.headerBarText, children: null };
   if ("" === title) {
     const intl2 = tmp7(1236).intl;
@@ -75,8 +75,8 @@ export default function ForumComposerHeader(height) {
     obj2[1] = intl3.string(tmp7(1236).t.yR6HwZ);
     obj2[2] = tmp.button;
     obj2[3] = onGuidelinesPress;
-    obj2[4] = tmp6(tmp7(4845).BookCheckIcon, {});
-    tmp6Result = tmp6(tmp7(4887).PressableOpacity, obj2);
+    obj2[4] = tmp6(tmp7(4867).BookCheckIcon, {});
+    tmp6Result = tmp6(tmp7(4909).PressableOpacity, obj2);
   }
   items[2] = tmp6Result;
   items[3] = callback(closure_4, { style: tmp.headerBarSeparator });

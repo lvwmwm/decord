@@ -1,8 +1,8 @@
-// Module ID: 12322
-// Function ID: 12323
-// Dependencies: [19, 17, 21, 4342, 712, 10664, 4338, 1236, 4755, 4058, 2]
+// Module ID: 12340
+// Function ID: 12341
+// Dependencies: [19, 17, 21, 4342, 712, 10680, 4338, 1236, 4777, 4058, 2]
 
-// Module 12322
+// Module 12340
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -22,7 +22,7 @@ const memoResult = require("noop").memo(function MediaModalYoutubeEmbedError(vid
   videoId = videoId.videoId;
   const tmp = callback3();
   let obj = { style: tmp.container, children: null };
-  const items = [callback(videoId(10664).StreamFailed, { resizeMode: "contain" }), , ];
+  const items = [callback(videoId(10680).StreamFailed, { resizeMode: "contain" }), , ];
   obj = { style: tmp.text, variant: "text-md/semibold", color: "text-overlay-light", children: null };
   const intl = videoId(1236).intl;
   obj[3] = intl.string(videoId(1236).t.u7vKPs);
@@ -33,7 +33,7 @@ const memoResult = require("noop").memo(function MediaModalYoutubeEmbedError(vid
   obj[4] = function onPress() {
     outer1_1(outer1_2[9]).openURL("https://youtube.com/watch?v=" + videoId);
   };
-  items[2] = callback(videoId(4755).Button, obj);
+  items[2] = callback(videoId(4777).Button, obj);
   obj[1] = items;
   return callback2(View, obj);
 });

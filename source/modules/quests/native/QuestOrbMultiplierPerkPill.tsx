@@ -1,10 +1,10 @@
-// Module ID: 14471
-// Function ID: 14472
+// Module ID: 14484
+// Function ID: 14485
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 21, 4342, 712, 4278, 1364, 4065, 4191, 10420, 10439, 1236, 7749, 4338, 4887, 14472, 4766, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4278, 1364, 4065, 4191, 10436, 10455, 1236, 7770, 4338, 4909, 14485, 4788, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 14471 (QuestOrbMultiplierPerkPill)
+// Module 14484 (QuestOrbMultiplierPerkPill)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";
@@ -59,11 +59,11 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
   items[1] = obj6.hexOpacityToRgba(token1, 0.5);
   let obj7 = require(4065) /* map */;
   token3 = obj7.useToken(orbMultiplierEligibility(712).colors.BACKGROUND_BRAND);
-  questOrbRewardMultiplier = require(10420) /* useQuests */.useQuestOrbRewardMultiplier(questId.questId);
-  const obj9 = require(10420) /* useQuests */;
+  questOrbRewardMultiplier = require(10436) /* useQuests */.useQuestOrbRewardMultiplier(questId.questId);
+  const obj9 = require(10436) /* useQuests */;
   const tmp6 = orbMultiplierEligibility;
-  const result = require(10439) /* items */.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
-  const tmp13 = orbMultiplierEligibility === require(10439) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
+  const result = require(10455) /* items */.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
+  const tmp13 = orbMultiplierEligibility === require(10455) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
   c6 = tmp13;
   const items1 = [tmp13, token2, token3, isThemeDarkResult];
   if (null == questOrbRewardMultiplier) {
@@ -84,7 +84,7 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     let tmp21Result = !tmp13;
     let tmp19 = tmp21Result;
     if (!tmp13) {
-      tmp19 = questOrbRewardMultiplier(tmp2(7749).NitroWheelIcon, { size: "xs", color: "white" });
+      tmp19 = questOrbRewardMultiplier(tmp2(7770).NitroWheelIcon, { size: "xs", color: "white" });
     }
     obj1 = { children: null };
     const items2 = [tmp19, ];
@@ -114,7 +114,7 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
       obj6[1] = items;
       obj6[2] = closure_8;
       obj6[3] = closure_9;
-      tmp21Result = tmp21(tmp6(4766), obj6);
+      tmp21Result = tmp21(tmp6(4788), obj6);
     }
     const items4 = [tmp21Result, ];
     obj7 = { style: null, children: null };
@@ -123,7 +123,7 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     items4[1] = questOrbRewardMultiplier(token3, obj7);
     obj4[1] = items4;
     obj3[4] = closure_7(token3, obj4);
-    return questOrbRewardMultiplier(tmp2(4887).PressableOpacity, obj3);
+    return questOrbRewardMultiplier(tmp2(4909).PressableOpacity, obj3);
   }
-  const obj10 = require(10439) /* items */;
+  const obj10 = require(10455) /* items */;
 };

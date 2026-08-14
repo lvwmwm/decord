@@ -1,10 +1,10 @@
-// Module ID: 12590
-// Function ID: 12591
+// Module ID: 12608
+// Function ID: 12609
 // Name: ActionSheetBackdropToast
-// Dependencies: [19, 17, 5438, 21, 500, 4342, 712, 1628, 1493, 5307, 4083, 4343, 4338, 2]
+// Dependencies: [19, 17, 5459, 21, 500, 4342, 712, 1628, 1493, 5328, 4083, 4343, 4338, 2]
 // Exports: ActionSheetBackdropToast
 
-// Module 12590 (ActionSheetBackdropToast)
+// Module 12608 (ActionSheetBackdropToast)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -41,7 +41,7 @@ export const ActionSheetBackdropToast = function ActionSheetBackdropToast(childr
   const height = importDefault(1493)().height;
   let result = height * closure_5;
   importDefault = result;
-  const diff = height - isExpanded(5307).NAV_BAR_HEIGHT_MULTILINE - importDefault(1628)().top;
+  const diff = height - isExpanded(5328).NAV_BAR_HEIGHT_MULTILINE - importDefault(1628)().top;
   dependencyMap = diff;
   let obj = isExpanded(4083);
   sharedValue = obj.useSharedValue(0);

@@ -1,10 +1,10 @@
-// Module ID: 7365
-// Function ID: 7366
+// Module ID: 7387
+// Function ID: 7388
 // Name: getHasImportantUnread
-// Dependencies: [4357, 4540, 4541, 589, 2]
+// Dependencies: [4357, 4550, 4551, 589, 2]
 // Exports: getHasImportantUnread, useHasImportantUnread
 
-// Module 7365 (getHasImportantUnread)
+// Module 7387 (getHasImportantUnread)
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UnreadSetting } from "ReadStateTypes";

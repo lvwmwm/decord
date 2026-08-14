@@ -1,10 +1,10 @@
-// Module ID: 14371
-// Function ID: 14372
+// Module ID: 14384
+// Function ID: 14385
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 676, 21, 4342, 712, 1236, 4065, 4200, 5368, 500, 4338, 14372, 4766, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 1236, 4065, 4200, 5389, 500, 4338, 14385, 4788, 2]
 // Exports: default
 
-// Module 14371 (QuestHomeEmptyState)
+// Module 14384 (QuestHomeEmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { VerticalGradient } from "ME";
@@ -69,14 +69,14 @@ export default function QuestHomeEmptyState(subtitle) {
     const obj6 = { children: null };
     const obj7 = { style: null, source: null, resizeMode: "cover" };
     obj7[0] = tmp5.emptyImage;
-    obj7[1] = tmp7(14372);
+    obj7[1] = tmp7(14385);
     const items2 = [tmp9(closure_4, obj7), ];
     const obj8 = { style: null, end: null, start: null, colors: null };
     obj8[0] = tmp5.gradient;
     ({ END: obj12[1], START: obj12[2] } = VerticalGradient);
     const items3 = ["rgba(0, 0, 0, 0)", token];
     obj8[3] = items3;
-    items2[1] = tmp9(tmp7(4766), obj8);
+    items2[1] = tmp9(tmp7(4788), obj8);
     obj6[0] = items2;
     tmp11Result = tmp11(closure_8, obj6);
   }
@@ -84,5 +84,5 @@ export default function QuestHomeEmptyState(subtitle) {
   obj1[1] = items1;
   obj[1] = closure_7(closure_3, obj1);
   obj[2] = callback(closure_3, obj);
-  return callback(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

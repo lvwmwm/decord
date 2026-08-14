@@ -1,10 +1,10 @@
-// Module ID: 11549
-// Function ID: 11550
+// Module ID: 11565
+// Function ID: 11566
 // Name: CommandRowIcon
-// Dependencies: [5, 32, 19, 21, 11475, 8386, 11436, 7030, 5421, 4755, 1236, 4288, 2]
+// Dependencies: [5, 32, 19, 21, 11491, 8408, 11452, 7052, 5442, 4777, 1236, 4288, 2]
 // Exports: default, useCommandRowSend
 
-// Module 11549 (CommandRowIcon)
+// Module 11565 (CommandRowIcon)
 import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -15,7 +15,7 @@ const result = require("noop").fileFinishedImporting("modules/app_launcher/nativ
 
 export default function CommandRowIcon(hasOptions) {
   if (hasOptions.hasOptions) {
-    let tmp3Result = tmp3(tmp4(5421).TableRowArrow, {});
+    let tmp3Result = tmp3(tmp4(5442).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: null, onPress: null, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: null };
     const intl = tmp4(1236).intl;
@@ -23,7 +23,7 @@ export default function CommandRowIcon(hasOptions) {
     obj[2] = tmp2;
     obj[3] = tmp3(tmp4(4288).SendMessageIcon, { size: "sm" });
     obj[7] = tmp;
-    tmp3Result = tmp3(tmp4(4755).Button, obj);
+    tmp3Result = tmp3(tmp4(4777).Button, obj);
   }
   return tmp3Result;
 };
@@ -78,13 +78,13 @@ export const useCommandRowSend = function useCommandRowSend(command) {
               dependencyMap();
             }
             let c3 = 1;
-            let obj1 = outer1_0(8386);
+            let obj1 = outer1_0(8408);
             obj1 = { command: null, optionValues: null, context: null, sectionName: null, commandOrigin: null };
             obj1[0] = outer1_0;
-            obj1[1] = outer1_0(11436).parseOptionValuesForSend(outer1_6.channel, outer1_0, {});
+            obj1[1] = outer1_0(11452).parseOptionValuesForSend(outer1_6.channel, outer1_0, {});
             obj1[2] = outer1_6;
             obj1[3] = c4;
-            obj1[4] = outer1_0(7030).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
+            obj1[4] = outer1_0(7052).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
             dependencyMap = 2;
             c4 = 1;
             const obj2 = { value: null, done: false };

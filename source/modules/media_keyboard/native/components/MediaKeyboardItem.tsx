@@ -1,10 +1,10 @@
-// Module ID: 10066
-// Function ID: 10067
+// Module ID: 10077
+// Function ID: 10078
 // Name: NewCaption
-// Dependencies: [19, 17, 4680, 10067, 21, 4083, 4342, 712, 4191, 1297, 10011, 4338, 589, 4899, 10068, 1236, 4931, 4901, 8890, 10069, 4343, 1493, 10070, 4856, 9840, 2]
+// Dependencies: [19, 17, 4702, 10078, 21, 4083, 4342, 712, 4191, 1297, 10022, 4338, 589, 4921, 10079, 1236, 4953, 4923, 10080, 10081, 4343, 1493, 10082, 4878, 9851, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10066 (NewCaption)
+// Module 10077 (NewCaption)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "openImagePickerUnhandled";
 import map from "map";
@@ -33,7 +33,7 @@ function NewCaption(arg0) {
   let obj = { style: items, children: null };
   items = [tmp.labelContainer, style];
   obj = { source: null, style: null };
-  obj[0] = importDefault(10011);
+  obj[0] = importDefault(10022);
   obj[1] = tmp.icon;
   const items1 = [callback(require(1297) /* Button */.Icon, obj), callback(require(4338) /* Text */.Text, { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label })];
   obj[1] = items1;
@@ -438,13 +438,13 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ handleCameraPress, handleAttachPress, handleViewAllPhotosPress } = arg0);
   closure_11 = (importDefault(1493)().width - (24 + 4 * (numPerRow - 1))) / numPerRow;
   obj = { camera: null, allphotos: null, attach: null };
-  obj = { text: require(1236) /* getSystemLocale */.t.uje3P9, onPress: handleCameraPress, Icon: require(10070) /* CameraIcon */.CameraIcon };
+  obj = { text: require(1236) /* getSystemLocale */.t.uje3P9, onPress: handleCameraPress, Icon: require(10082) /* CameraIcon */.CameraIcon };
   obj[0] = obj;
-  obj = { text: require(1236) /* getSystemLocale */.t.Zmm6dN, onPress: handleViewAllPhotosPress, Icon: require(4856) /* ImageIcon */.ImageIcon };
+  obj = { text: require(1236) /* getSystemLocale */.t.Zmm6dN, onPress: handleViewAllPhotosPress, Icon: require(4878) /* ImageIcon */.ImageIcon };
   obj[1] = obj;
   const tmp = obj();
-  obj[2] = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9840) /* AttachmentIcon */.AttachmentIcon };
-  let obj1 = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9840) /* AttachmentIcon */.AttachmentIcon };
+  obj[2] = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9851) /* AttachmentIcon */.AttachmentIcon };
+  let obj1 = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9851) /* AttachmentIcon */.AttachmentIcon };
   return callback(closure_4, {
     style: tmp.container,
     children: items.map((type) => {

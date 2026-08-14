@@ -1,10 +1,10 @@
-// Module ID: 17034
-// Function ID: 17035
+// Module ID: 17050
+// Function ID: 17051
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4342, 712, 4338, 1236, 2565, 4755, 2]
+// Dependencies: [17, 21, 4342, 712, 4338, 1236, 2565, 4777, 2]
 // Exports: default
 
-// Module 17034 (UpdateAppScreen)
+// Module 17050 (UpdateAppScreen)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -46,7 +46,7 @@ export default function UpdateAppScreen() {
   };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl3.string(importDefault(2565).o4D6fm);
-  obj1[1] = callback(require(4755) /* Button */.Button, obj2);
+  obj1[1] = callback(require(4777) /* Button */.Button, obj2);
   items[2] = callback(closure_4, obj1);
   obj[1] = items;
   return callback2(closure_4, obj);

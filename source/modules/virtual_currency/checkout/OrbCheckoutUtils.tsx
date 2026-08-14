@@ -1,10 +1,10 @@
-// Module ID: 5903
-// Function ID: 5904
+// Module ID: 5924
+// Function ID: 5925
 // Name: getOrbPriceFromPrices
-// Dependencies: [676, 678, 5904, 1236, 5905, 4029, 2]
+// Dependencies: [676, 678, 5925, 1236, 5926, 4029, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 5903 (getOrbPriceFromPrices)
+// Module 5924 (getOrbPriceFromPrices)
 import ME from "ME";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
 import { ConstraintReasonCode } from "ConstraintReasonCode";
@@ -64,9 +64,9 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
     return null;
   } else {
     let keFvXM = dependencyMap;
-    let OrderSigningFailedWithConstraintsError = require(5905) /* _signOrder */.OrderSigningFailedWithConstraintsError;
+    let OrderSigningFailedWithConstraintsError = require(5926) /* _signOrder */.OrderSigningFailedWithConstraintsError;
     if (!(code instanceof OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof tmp(5905).OrderProcessingPendingError) {
+      if (code instanceof tmp(5926).OrderProcessingPendingError) {
         const intl5 = tmp(1236).intl;
         let stringResult = intl5.string(tmp(1236).t["2BmwgV"]);
       } else if (code.code === tmp(4029).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {

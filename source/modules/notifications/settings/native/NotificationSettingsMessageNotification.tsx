@@ -1,10 +1,10 @@
-// Module ID: 9882
-// Function ID: 9883
+// Module ID: 9893
+// Function ID: 9894
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [19, 17, 21, 4342, 712, 9883, 4338, 1236, 4887, 9884, 9881, 4310, 9886, 2007, 9875, 9888, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 9894, 4338, 1236, 4909, 9895, 9892, 4310, 9897, 2007, 9886, 9899, 2]
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 9882 (NotificationSettingsMessageNotification)
+// Module 9893 (NotificationSettingsMessageNotification)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -86,7 +86,7 @@ export default NotificationSettingsMessageNotification;
 export const NotificationSettingsGuildMessageNotification = function NotificationSettingsGuildMessageNotification(style) {
   const _require = style;
   let obj = { context: "guild", style: style.style, setting: null, onCustomize: null };
-  obj[2] = _require(9881).useGuildPresetSettings(style.guildId).notification;
+  obj[2] = _require(9892).useGuildPresetSettings(style.guildId).notification;
   obj[3] = function onCustomize() {
     let obj = outer1_1(outer1_2[11]);
     obj = { guildId: style.guildId };
@@ -97,7 +97,7 @@ export const NotificationSettingsGuildMessageNotification = function Notificatio
 export const NotificationSettingsChannelMessageNotification = function NotificationSettingsChannelMessageNotification(style) {
   const _require = style;
   let obj = { context: "channel", style: style.style, setting: null, onCustomize: null };
-  obj[2] = _require(9875).useChannelPresetSettings(style.channel).notification;
+  obj[2] = _require(9886).useChannelPresetSettings(style.channel).notification;
   obj[3] = function onCustomize() {
     let obj = outer1_1(outer1_2[11]);
     obj = { channel: style.channel };

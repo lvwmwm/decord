@@ -1,10 +1,10 @@
-// Module ID: 12118
-// Function ID: 12119
+// Module ID: 12136
+// Function ID: 12137
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 589, 5308, 12119, 4338, 1236, 4755, 698, 4187, 8972, 2]
+// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 589, 5329, 12137, 4338, 1236, 4777, 698, 4187, 8986, 2]
 // Exports: default
 
-// Module 12118 (ContactSyncInviteFriends)
+// Module 12136 (ContactSyncInviteFriends)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -34,8 +34,8 @@ export default function ContactSyncInviteFriends() {
   obj = { children: null };
   obj = { style: tmp.container, children: null };
   const obj1 = { style: tmp.art, source: null };
-  obj1[1] = importDefault(12119);
-  const items1 = [callback(importDefault(5308), obj1), , ];
+  obj1[1] = importDefault(12137);
+  const items1 = [callback(importDefault(5329), obj1), , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = _require(1236).intl;
   obj2[4] = intl.string(_require(1236).t.ZxBpLf);
@@ -66,7 +66,7 @@ export default function ContactSyncInviteFriends() {
     const tmp5 = callback;
     callback(outer1_2[15]).showShareActionSheet({ message: formatToPlainStringResult }, tmp3.CONTACT_SYNC_MODAL);
   };
-  obj4[1] = callback(_require(4755).Button, obj5);
+  obj4[1] = callback(_require(4777).Button, obj5);
   items2[1] = callback(View, obj4);
   obj[0] = items2;
   return callback2(closure_9, obj);

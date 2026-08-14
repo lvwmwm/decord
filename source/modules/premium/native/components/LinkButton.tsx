@@ -1,10 +1,10 @@
-// Module ID: 6917
-// Function ID: 6918
+// Module ID: 6938
+// Function ID: 6939
 // Name: LinkButton
-// Dependencies: [19, 21, 4342, 4887, 4338, 2]
+// Dependencies: [19, 21, 4342, 4909, 4338, 2]
 // Exports: LinkButton
 
-// Module 6917 (LinkButton)
+// Module 6938 (LinkButton)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -43,5 +43,5 @@ export const LinkButton = function LinkButton(textColor) {
   items[2] = containerStyle;
   const items1 = [callback(require(4338) /* Text */.Text, { style: textStyle, variant, color: str, children: text }), textColor.iconRight];
   obj[6] = items1;
-  return closure_3(require(4887) /* PressableBase */.PressableOpacity, obj);
+  return closure_3(require(4909) /* PressableBase */.PressableOpacity, obj);
 };

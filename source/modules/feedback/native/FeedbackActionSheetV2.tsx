@@ -1,10 +1,10 @@
-// Module ID: 16498
-// Function ID: 16499
+// Module ID: 16516
+// Function ID: 16517
 // Name: closeActionSheet
-// Dependencies: [32, 19, 17, 11061, 21, 4342, 712, 4310, 12, 8902, 4771, 4550, 11083, 2007, 1236, 4338, 11065, 8497, 5807, 5414, 4755, 1628, 5437, 5436, 5805, 5439, 2]
+// Dependencies: [32, 19, 17, 11077, 21, 4342, 712, 4310, 12, 8916, 4793, 4572, 11099, 2007, 1236, 4338, 11081, 8519, 5828, 5435, 4777, 1628, 5458, 5457, 5826, 5460, 2]
 // Exports: default
 
-// Module 16498 (closeActionSheet)
+// Module 16516 (closeActionSheet)
 import _slicedToArray from "_slicedToArray";
 import TableRowInner from "TableRowInner";
 import { View } from "TableCheckboxRow";
@@ -68,7 +68,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
   let tmp = first2();
   let obj = ref;
   ref = ref.useRef(null);
-  const tmp5 = importDefault(8902)(optionsTree);
+  const tmp5 = importDefault(8916)(optionsTree);
   c5 = tmp5;
   let obj1 = importDefault(12);
   const tmp7 = callback(ref.useState(obj1.shuffle(optionsTree.map((problemOptions) => {
@@ -118,13 +118,13 @@ export default function FeedbackActionSheetV2(optionsTree) {
   first5 = tmp6Result[0];
   closure_15 = tmp6Result[1];
   [c16, c17] = callback(obj.useState(false), 2);
-  importDefault(4771)(() => {
+  importDefault(4793)(() => {
     if (closure_1 != null) {
       tmp();
     }
     callback();
   });
-  let obj2 = optionsTree(4771);
+  let obj2 = optionsTree(4793);
   const unmountEffect = obj2.useUnmountEffect(() => {
     if (c16) {
       let obj = { rating: null, category: null, reason: null, dontShowAgain: null };
@@ -235,7 +235,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
     obj[0] = ratingOptions;
     obj[1] = first2;
     obj[2] = callback;
-    items2[1] = callback2(tmp3(11065), obj);
+    items2[1] = callback2(tmp3(11081), obj);
     let tmp37Result = null;
     if (!hideDontShowAgainCheckbox) {
       obj1 = { start: true, end: true, checked: null, label: null, onPress: null };
@@ -245,7 +245,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
       obj1[4] = function onPress() {
         return callback3(!first1);
       };
-      tmp37Result = tmp37(tmp20(8497).TableCheckboxRow, obj1);
+      tmp37Result = tmp37(tmp20(8519).TableCheckboxRow, obj1);
     }
     obj2 = { children: null };
     items2[2] = tmp37Result;
@@ -272,7 +272,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
             }
           }, arg1);
         });
-        obj4[1] = callback2(tmp20(5807).TableRowGroup, obj5);
+        obj4[1] = callback2(tmp20(5828).TableRowGroup, obj5);
         const items3 = [callback2(c5, obj4), ];
         const obj6 = { variant: "secondary", size: "sm", text: null, onPress: null };
         const intl2 = tmp20(1236).intl;
@@ -280,7 +280,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
         obj6[3] = function onPress() {
           return callback4(null);
         };
-        items3[1] = callback2(tmp20(4755).Button, obj6);
+        items3[1] = callback2(tmp20(4777).Button, obj6);
         obj3[0] = items3;
         tmp33Result = callback3(first1, obj3);
         problemsHeader = categoriesHeader;
@@ -304,7 +304,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
           }
         }, arg1);
       });
-      obj8[1] = callback2(tmp20(5807).TableRowGroup, obj9);
+      obj8[1] = callback2(tmp20(5828).TableRowGroup, obj9);
       const items4 = [callback2(c5, obj8), ];
       const obj10 = { variant: "secondary", size: "sm", text: null, onPress: null };
       let intl = tmp20(1236).intl;
@@ -317,7 +317,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
         }
         return tmp3;
       };
-      items4[1] = callback2(tmp20(4755).Button, obj10);
+      items4[1] = callback2(tmp20(4777).Button, obj10);
       obj7[0] = items4;
       tmp33Result = callback3(first1, obj7);
     }
@@ -340,11 +340,11 @@ export default function FeedbackActionSheetV2(optionsTree) {
   if (showHeaderCloseButton) {
     const obj13 = { onPress: null };
     obj13[0] = closure_11;
-    tmp40Result = tmp40(tmp20(5805).ActionSheetCloseButton, obj13);
+    tmp40Result = tmp40(tmp20(5826).ActionSheetCloseButton, obj13);
   }
   obj12[1] = tmp40Result;
-  obj11[4] = callback2(optionsTree(5436).BottomSheetTitleHeader, obj12);
+  obj11[4] = callback2(optionsTree(5457).BottomSheetTitleHeader, obj12);
   const items5 = [tmp.container, { paddingBottom: tmp.container.padding + bottom }];
-  obj11[5] = callback2(optionsTree(5439).BottomSheetScrollView, { contentContainerStyle: items5, children: tmp33Result });
-  return callback2(optionsTree(5437).BottomSheet, obj11);
+  obj11[5] = callback2(optionsTree(5460).BottomSheetScrollView, { contentContainerStyle: items5, children: tmp33Result });
+  return callback2(optionsTree(5458).BottomSheet, obj11);
 };

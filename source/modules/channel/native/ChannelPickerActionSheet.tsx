@@ -1,10 +1,10 @@
-// Module ID: 10262
-// Function ID: 10263
+// Module ID: 10276
+// Function ID: 10277
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 3998, 1922, 21, 1628, 5805, 4310, 5436, 8029, 5420, 10263, 5804, 5439, 8030, 4805, 4535, 2]
+// Dependencies: [19, 3998, 1922, 21, 1628, 5826, 4310, 5457, 8050, 5441, 10277, 5825, 5460, 8051, 4827, 4535, 2]
 // Exports: default
 
-// Module 10262 (ChannelPickerActionSheet)
+// Module 10276 (ChannelPickerActionSheet)
 import "noop";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";

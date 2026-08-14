@@ -1,10 +1,10 @@
-// Module ID: 12642
-// Function ID: 12643
+// Module ID: 12660
+// Function ID: 12661
 // Name: ForumExplicitMediaAlert
-// Dependencies: [19, 17, 21, 4342, 712, 4773, 4338, 1236, 4755, 11369, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4795, 4338, 1236, 4777, 11385, 2]
 // Exports: default
 
-// Module 12642 (ForumExplicitMediaAlert)
+// Module 12660 (ForumExplicitMediaAlert)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

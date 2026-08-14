@@ -1,10 +1,10 @@
-// Module ID: 13292
-// Function ID: 13293
+// Module ID: 13304
+// Function ID: 13305
 // Name: useActivateDeviceStepTracking
-// Dependencies: [19, 676, 8902, 13293, 698, 2]
+// Dependencies: [19, 676, 8916, 13305, 698, 2]
 // Exports: useActivateDeviceStepTracking
 
-// Module 13292 (useActivateDeviceStepTracking)
+// Module 13304 (useActivateDeviceStepTracking)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 
@@ -13,7 +13,7 @@ let result = require("usePrevious").fileFinishedImporting("modules/activate_devi
 
 export const useActivateDeviceStepTracking = function useActivateDeviceStepTracking(first) {
   let closure_0 = first;
-  const tmp = importDefault(8902)(first);
+  const tmp = importDefault(8916)(first);
   importDefault = tmp;
   const items = [tmp, first];
   const effect = React.useEffect(() => {

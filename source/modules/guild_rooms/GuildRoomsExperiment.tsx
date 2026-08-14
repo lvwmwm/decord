@@ -1,9 +1,9 @@
-// Module ID: 16520
-// Function ID: 16521
+// Module ID: 4569
+// Function ID: 4570
 // Name: experiment
 // Dependencies: [4254, 2]
 
-// Module 16520 (experiment)
+// Module 4569 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Enable Guild Rooms in this guild", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 2, label: "Enable Guild Rooms without Interactions", config: { enabled: true, interactionsEnabled: false, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 3, label: "Enable Guild Rooms with Room Variants", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: true, posturesEnabled: true } }, { id: 4, label: "Enable Guild Rooms without Postures", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: false } }];
@@ -11,3 +11,4 @@ const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-
 const result = require("set").fileFinishedImporting("modules/guild_rooms/GuildRoomsExperiment.tsx");
 
 export default experiment;
+export const GUILD_ROOMS_EXPERIMENT_ID = "2026-06_guild_rooms";

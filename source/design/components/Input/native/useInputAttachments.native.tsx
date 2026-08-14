@@ -1,10 +1,10 @@
-// Module ID: 6042
-// Function ID: 6043
+// Module ID: 6063
+// Function ID: 6064
 // Name: InputAttachmentContainer
-// Dependencies: [32, 19, 17, 21, 5817, 4338, 1367, 6043, 2]
+// Dependencies: [32, 19, 17, 21, 5838, 4338, 1367, 6064, 2]
 // Exports: estimateAttachmentWidth, renderInputAttachment, useInputAttachments
 
-// Module 6042 (InputAttachmentContainer)
+// Module 6063 (InputAttachmentContainer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -65,7 +65,7 @@ const result = require("get ActivityIndicator").fileFinishedImporting("design/co
 export const estimateAttachmentWidth = function estimateAttachmentWidth(arg0, arg1) {
   let num = 0;
   if (null != arg0) {
-    num = require(5817) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
+    num = require(5838) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
   }
   return num;
 };

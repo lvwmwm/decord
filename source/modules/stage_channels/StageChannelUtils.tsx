@@ -1,10 +1,10 @@
-// Module ID: 7825
-// Function ID: 7826
+// Module ID: 7846
+// Function ID: 7847
 // Name: fillChunk
-// Dependencies: [4416, 1396, 5173, 676, 7826, 12, 4534, 1236, 3994, 2]
+// Dependencies: [4416, 1396, 5194, 676, 7847, 12, 4534, 1236, 3994, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 7825 (fillChunk)
+// Module 7846 (fillChunk)
 import createRTCConnection from "createRTCConnection";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH";

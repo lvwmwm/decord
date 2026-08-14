@@ -1,10 +1,10 @@
-// Module ID: 7843
-// Function ID: 7844
+// Module ID: 7864
+// Function ID: 7865
 // Name: set
-// Dependencies: [676, 7844, 1236, 7842, 1993, 2821, 2]
+// Dependencies: [676, 7865, 1236, 7863, 1993, 2821, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 7843 (set)
+// Module 7864 (set)
 import { HelpdeskArticles } from "ME";
 import set from "getSystemLocale";
 

@@ -1,9 +1,9 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 15826
+// Function ID: 15827
 // Name: SearchListRow
-// Dependencies: [19, 17, 8446, 21, 4342, 712, 4887, 4338, 2]
+// Dependencies: [19, 17, 8468, 21, 4342, 712, 4909, 4338, 2]
 
-// Module 15808 (SearchListRow)
+// Module 15826 (SearchListRow)
 import { View } from "get ActivityIndicator";
 import { SEARCH_ROW_TAP_STATE_PADDING as closure_4 } from "MessageEmbedTypes";
 import jsxProd from "jsxProd";
@@ -86,7 +86,7 @@ const memoResult = require("noop").memo((accessibilityRole) => {
   }
   items1[2] = tmp7Result;
   obj[10] = items1;
-  return closure_6(require(4887) /* PressableBase */.PressableHighlight, obj);
+  return closure_6(require(4909) /* PressableBase */.PressableHighlight, obj);
 });
 const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/list/SearchListRow.tsx");
 

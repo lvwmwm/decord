@@ -1,10 +1,10 @@
-// Module ID: 7679
-// Function ID: 7680
+// Module ID: 7700
+// Function ID: 7701
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 676, 21, 4342, 712, 1297, 7680, 4338, 1236, 4007, 4755, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 1297, 7701, 4338, 1236, 4007, 4777, 2]
 // Exports: default
 
-// Module 7679 (SubscriptionAccountHoldNotice)
+// Module 7700 (SubscriptionAccountHoldNotice)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { SubscriptionStatusTypes } from "ME";
@@ -39,7 +39,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     obj = { size: null, style: null, source: null };
     obj[0] = subscription(1297).IconSizes.MEDIUM;
     obj[1] = tmp.icon;
-    obj[2] = importDefault(7680);
+    obj[2] = importDefault(7701);
     const items = [callback(subscription(1297).Icon, obj), ];
     const obj1 = { style: null, variant: "text-sm/medium", children: null };
     obj1[0] = tmp.text;
@@ -57,7 +57,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     obj3[2] = function onPress() {
       return outer1_3.openURL(subscription(outer1_2[10]).getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
     };
-    items1[1] = callback(subscription(4755).Button, obj3);
+    items1[1] = callback(subscription(4777).Button, obj3);
     obj[1] = items1;
     tmp2 = callback2(closure_4, obj);
     const obj6 = subscription(4007);

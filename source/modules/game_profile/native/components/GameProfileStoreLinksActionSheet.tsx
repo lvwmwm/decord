@@ -1,10 +1,10 @@
-// Module ID: 9357
-// Function ID: 9358
+// Module ID: 9371
+// Function ID: 9372
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4342, 712, 9330, 4058, 1628, 5804, 5439, 4338, 1236, 4755, 4310, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 9344, 4058, 1628, 5825, 5460, 4338, 1236, 4777, 4310, 2]
 // Exports: default
 
-// Module 9357 (GameProfileStoreLinksActionSheet)
+// Module 9371 (GameProfileStoreLinksActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   ({ websiteButtons, trackAction: require } = gameName);
   let importDefault;
   const tmp = createCacheKey();
-  importDefault = importDefault(9330)(importDefault(4058).openURL);
+  importDefault = importDefault(9344)(importDefault(4058).openURL);
   let obj = { children: null };
   obj = { contentContainerStyle: null, children: null };
   obj = { paddingBottom: null };
@@ -46,7 +46,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   items[1] = callback(require(4338) /* Text */.Text, obj3);
   obj1[1] = items;
   const items1 = [callback2(View, obj1), ];
-  const tmp2 = importDefault(9330);
+  const tmp2 = importDefault(9344);
   items1[1] = callback(View, {
     style: tmp.buttons,
     children: websiteButtons.map((url) => {
@@ -69,7 +69,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
     })
   });
   obj[1] = items1;
-  obj[0] = callback2(require(5439) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return callback(require(5804) /* ActionSheet */.ActionSheet, obj);
+  obj[0] = callback2(require(5460) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  return callback(require(5825) /* ActionSheet */.ActionSheet, obj);
 };
 export const ACTION_SHEET_KEY = "game-profile-store-links";

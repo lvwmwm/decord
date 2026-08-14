@@ -1,10 +1,10 @@
-// Module ID: 14930
-// Function ID: 14931
+// Module ID: 14944
+// Function ID: 14945
 // Name: DebugLogView
-// Dependencies: [19, 17, 4341, 7064, 21, 4342, 712, 589, 4338, 2]
+// Dependencies: [19, 17, 4341, 7086, 21, 4342, 712, 589, 4338, 2]
 // Exports: default
 
-// Module 14930 (DebugLogView)
+// Module 14944 (DebugLogView)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import getUserAgnosticState from "getUserAgnosticState";

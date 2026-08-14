@@ -1,10 +1,10 @@
-// Module ID: 7841
-// Function ID: 7842
+// Module ID: 7862
+// Function ID: 7863
 // Name: StageChannelAgeVerificationNoticeContent
-// Dependencies: [19, 17, 676, 21, 4342, 712, 4560, 1236, 4338, 4052, 1993, 7842, 7844, 4298, 8007, 1297, 5181, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 4582, 1236, 4338, 4052, 1993, 7863, 7865, 4298, 8028, 1297, 5202, 2]
 // Exports: default
 
-// Module 7841 (StageChannelAgeVerificationNoticeContent)
+// Module 7862 (StageChannelAgeVerificationNoticeContent)
 import "noop";
 import { View } from "set";
 import { HelpdeskArticles } from "ME";
@@ -19,7 +19,7 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
   let closure_1;
   closure_1 = createCacheKey();
-  let obj = onConfirmPress(4560);
+  let obj = onConfirmPress(4582);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   const intl = onConfirmPress(1236).intl;
   const format = intl.format;
@@ -69,7 +69,7 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
   let tmp = createCacheKey();
   let Text = require;
   let tmp8Result = dependencyMap;
-  let obj = require(4560) /* useAgeVerificationRunner */;
+  let obj = require(4582) /* useAgeVerificationRunner */;
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   if (onConfirmPress.noBackground) {
     obj = { style: null, children: null };
@@ -77,7 +77,7 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
     if (isVerifiedTeen) {
       let WarningIcon = Text(4298).CircleInformationIcon;
     } else {
-      WarningIcon = Text(8007).WarningIcon;
+      WarningIcon = Text(8028).WarningIcon;
     }
     obj = { size: "refresh_sm", color: null, style: null };
     obj[1] = importDefault(712).colors.TEXT_DEFAULT;
@@ -132,7 +132,7 @@ export default function StageChannelAgeVerificationNotice(arg0) {
   ({ divider, channelId } = arg0);
   ({ noBackground, onConfirmPress, style } = arg0);
   const tmp = createCacheKey();
-  let obj = require(5181) /* useIsStageSpeakingDisabledForCurrentUser */;
+  let obj = require(5202) /* useIsStageSpeakingDisabledForCurrentUser */;
   if (obj.useShouldAgeVerifyToSpeakForCurrentUser(channelId)) {
     const _Array = Array;
     if (Array.isArray(divider)) {

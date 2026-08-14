@@ -1,10 +1,10 @@
-// Module ID: 9683
-// Function ID: 9684
+// Module ID: 9694
+// Function ID: 9695
 // Name: useIsFriendRequestAlertsV2Enabled
 // Dependencies: [1471, 2]
 // Exports: isFriendRequestAlertsV2Enabled, useIsFriendRequestAlertsV2Enabled
 
-// Module 9683 (useIsFriendRequestAlertsV2Enabled)
+// Module 9694 (useIsFriendRequestAlertsV2Enabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

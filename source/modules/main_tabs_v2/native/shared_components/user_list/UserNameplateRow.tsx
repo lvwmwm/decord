@@ -1,10 +1,10 @@
-// Module ID: 9606
-// Function ID: 9607
+// Module ID: 9619
+// Function ID: 9620
 // Name: UserNameplateRow
-// Dependencies: [32, 19, 21, 4342, 712, 5415, 4065, 5416, 9440, 5414, 5372, 2]
+// Dependencies: [32, 19, 21, 4342, 712, 5436, 4065, 5437, 9454, 5435, 5393, 2]
 // Exports: UserNameplateRow
 
-// Module 9606 (UserNameplateRow)
+// Module 9619 (UserNameplateRow)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";
@@ -56,7 +56,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   const merged = Object.assign(onPressOut, Object.create(null));
   let dependencyMap;
   let obj = React;
-  const context = React.useContext(onPressIn(5415).TableRowGroupContext);
+  const context = React.useContext(onPressIn(5436).TableRowGroupContext);
   let tmp6 = !context;
   if (!context) {
     tmp6 = true === end;
@@ -92,16 +92,16 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   obj[8] = flag;
   obj[9] = tmp2.card;
   const merged1 = Object.assign(merged);
-  const items2 = [callback2(onPressOut(9440), { nameplate, isPressed: tmp7[0], invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow }), callback2(onPressIn(5414).TableRowInner, { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps })];
+  const items2 = [callback2(onPressOut(9454), { nameplate, isPressed: tmp7[0], invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow }), callback2(onPressIn(5435).TableRowInner, { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps })];
   obj.children = items2;
-  let tmp12Result = tmp12(tmp3(5416).Card, obj);
+  let tmp12Result = tmp12(tmp3(5437).Card, obj);
   if (!context) {
     if (!tmp6) {
       obj = { children: null };
       const items3 = [tmp12Result, ];
       const obj1 = { adjustSpacingForIcon: null };
       obj1[0] = null != icon;
-      items3[1] = tmp15(tmp3(5372).TableRowDivider, obj1);
+      items3[1] = tmp15(tmp3(5393).TableRowDivider, obj1);
       obj[0] = items3;
       tmp12Result = tmp12(closure_7, obj);
     }

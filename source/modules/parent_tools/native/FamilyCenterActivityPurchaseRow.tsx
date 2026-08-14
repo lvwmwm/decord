@@ -1,10 +1,10 @@
-// Module ID: 14213
-// Function ID: 14214
+// Module ID: 14226
+// Function ID: 14227
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 4342, 712, 8326, 14214, 5896, 14215, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 8348, 14227, 5917, 14228, 4338, 2]
 // Exports: default
 
-// Module 14213 (FamilyCenterActivityPurchaseRow)
+// Module 14226 (FamilyCenterActivityPurchaseRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,8 +32,8 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
   ({ skuId, subscriptionPlanId } = arg0);
   ({ total, currency } = arg0);
   const tmp = createCacheKey();
-  let product = importDefault(8326)(skuId).product;
-  let obj = require(14214) /* getCollectibleTypeName */;
+  let product = importDefault(8348)(skuId).product;
+  let obj = require(14227) /* getCollectibleTypeName */;
   let tmp6 = product;
   if (product == null) {
     tmp6 = null;
@@ -51,7 +51,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     return null;
   } else {
     let combined = displayName;
-    const tmp5Result = tmp5(5896);
+    const tmp5Result = tmp5(5917);
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
@@ -60,14 +60,14 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj[0] = tmp.container;
     obj = { displayName: null, product: null, isSubscription: null, subscriptionPlanId: null };
     obj[0] = displayName;
-    const formatPriceResult = tmp5(5896).formatPrice(total, currency);
+    const formatPriceResult = tmp5(5917).formatPrice(total, currency);
     if (product == null) {
       product = null;
     }
     obj[1] = product;
     obj[2] = isSubscription;
     obj[3] = subscriptionPlanId;
-    const items = [closure_4(tmp2(14215), obj), ];
+    const items = [closure_4(tmp2(14228), obj), ];
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.textContainer;
     const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };

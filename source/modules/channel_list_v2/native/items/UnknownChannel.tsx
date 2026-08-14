@@ -1,9 +1,9 @@
-// Module ID: 15435
-// Function ID: 15436
+// Module ID: 15450
+// Function ID: 15451
 // Name: handlePress
-// Dependencies: [19, 9844, 4541, 21, 4342, 712, 4062, 1236, 8661, 4535, 9715, 15314, 2]
+// Dependencies: [19, 9855, 4551, 21, 4342, 712, 4062, 1236, 8675, 4535, 9726, 15328, 2]
 
-// Module 15435 (handlePress)
+// Module 15450 (handlePress)
 import importAllResult from "noop";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
@@ -15,7 +15,7 @@ function handlePress() {
   obj = { key: "UNKNOWN_CHANNEL_UPDATE_DISCORD", content: null, icon: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["/ZjyYE"]);
-  obj[2] = importDefault(8661);
+  obj[2] = importDefault(8675);
   obj.open(obj);
 }
 let c3 = importAllResult;
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj[6] = channel;
   obj[7] = selected;
   obj[8] = UnreadSetting.ONLY_MENTIONS;
-  return jsx(importDefault(15314), { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
+  return jsx(importDefault(15328), { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
 });
 let result = require("ReadStateTypes").fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
 

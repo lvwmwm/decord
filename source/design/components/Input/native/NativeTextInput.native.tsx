@@ -1,10 +1,10 @@
-// Module ID: 6046
-// Function ID: 6047
+// Module ID: 6067
+// Function ID: 6068
 // Name: useKeyboardBlurring
-// Dependencies: [19, 17, 1495, 676, 21, 6047, 4771, 4741, 6048, 4072, 4067, 2]
+// Dependencies: [19, 17, 1495, 676, 21, 6068, 4793, 4763, 6069, 4072, 4067, 2]
 // Exports: useKeyboardBlurring
 
-// Module 6046 (useKeyboardBlurring)
+// Module 6067 (useKeyboardBlurring)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
@@ -89,7 +89,7 @@ const forwardRefResult = importAllResult.forwardRef((value, ref2) => {
   ref(defaultValue[9]);
   if (null != value.keyboardAppearance) {
     obj = {};
-    obj = { value: "isArray", defaultValue: "accessibilityRole" };
+    obj = { value: "r", defaultValue: "accessibilityRole" };
     let tmp6Result = tmp6(tmp3[10]);
     let merged = Object.assign(tmp6Result.mergeProps(value, tmp4, obj));
     tmp6Result = tmp6(tmp3[10]);

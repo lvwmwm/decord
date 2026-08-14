@@ -1,10 +1,10 @@
-// Module ID: 8335
-// Function ID: 8336
+// Module ID: 8357
+// Function ID: 8358
 // Name: EditCollectibleListItem
-// Dependencies: [19, 17, 1922, 678, 21, 4342, 712, 4887, 4311, 4312, 1297, 8336, 4338, 1236, 5768, 7048, 4310, 8337, 8338, 589, 4007, 8326, 7061, 2]
+// Dependencies: [19, 17, 1922, 678, 21, 4342, 712, 4909, 4311, 4312, 1297, 8358, 4338, 1236, 5789, 7070, 4310, 8359, 8360, 589, 4007, 8348, 7083, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 8335 (EditCollectibleListItem)
+// Module 8357 (EditCollectibleListItem)
 import initialize from "initialize";
 import { View } from "registerAsset";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -72,7 +72,7 @@ export const EditCollectiblesListItemNone = function EditCollectiblesListItemNon
   let obj = { style: tmp.optionCell };
   const merged = Object.assign(asDefault);
   obj = { source: null, size: null };
-  obj[0] = importDefault(8336);
+  obj[0] = importDefault(8358);
   obj[1] = require(1297) /* Button */.IconSizes.LARGE;
   const items = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.optionCellText, children: null };
@@ -94,7 +94,7 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
   const merged = Object.assign(analyticsSource, Object.create(null));
   let analyticsLocations;
   const tmp2 = createCacheKey();
-  analyticsLocations = analyticsLocations(5768)(analyticsSource).analyticsLocations;
+  analyticsLocations = analyticsLocations(5789)(analyticsSource).analyticsLocations;
   const items = [analyticsLocations, analyticsSource];
   let obj = {
     style: tmp2.optionCell,
@@ -108,14 +108,14 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
   };
   const merged1 = Object.assign(merged);
   obj = { source: null, size: null };
-  obj[0] = analyticsLocations(8337);
+  obj[0] = analyticsLocations(8359);
   obj[1] = analyticsSource(1297).IconSizes.LARGE;
   const items1 = [callback(analyticsSource(1297).Icon, obj), , ];
   obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp2.optionCellText, children: null };
   const intl = analyticsSource(1236).intl;
   obj[3] = intl.string(analyticsSource(1236).t.pWG4ze);
   items1[1] = callback(analyticsSource(4338).Text, obj);
-  items1[2] = callback(analyticsSource(8338).NewBadge, { style: tmp2.newIcon });
+  items1[2] = callback(analyticsSource(8360).NewBadge, { style: tmp2.newIcon });
   obj.children = items1;
   return callback2(EditCollectibleListItem, obj);
 };
@@ -134,14 +134,14 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj1 = importDefault(4007);
   const canUseCollectiblesResult = obj1.canUseCollectibles(stateFromStores);
-  ({ purchase, product } = importDefault(8326)(skuId));
-  const tmp7 = importDefault(8326)(skuId);
-  const isProductNewResult = require(7061) /* getItemRecordsFromPurchases */.isProductNew(skuId);
-  const obj3 = require(7061) /* getItemRecordsFromPurchases */;
-  let result = require(7061) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(product);
+  ({ purchase, product } = importDefault(8348)(skuId));
+  const tmp7 = importDefault(8348)(skuId);
+  const isProductNewResult = require(7083) /* getItemRecordsFromPurchases */.isProductNew(skuId);
+  const obj3 = require(7083) /* getItemRecordsFromPurchases */;
+  let result = require(7083) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(product);
   if (!result) {
-    result = tmp3(7061).isPremiumCollectiblesPurchase(purchase);
-    const tmp3Result = tmp3(7061);
+    result = tmp3(7083).isPremiumCollectiblesPurchase(purchase);
+    const tmp3Result = tmp3(7083);
   }
   obj = { isSelected };
   const merged1 = Object.assign(merged);
@@ -151,7 +151,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
       obj = { style: null, isNew: null };
       obj[0] = tmp2.lockIcon;
       obj[1] = isProductNewResult;
-      let tmp14 = callback(tmp3(8338).LockBadge, obj);
+      let tmp14 = callback(tmp3(8360).LockBadge, obj);
     }
     items1[1] = tmp14;
     obj.children = items1;
@@ -165,7 +165,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
         obj1 = { style: null, isNew: null };
         obj1[0] = tmp2.lockIcon;
         obj1[1] = isProductNewResult;
-        tmp15 = callback(tmp3(8338).PremiumBadge, obj1);
+        tmp15 = callback(tmp3(8360).PremiumBadge, obj1);
       } else {
         tmp15 = null;
       }

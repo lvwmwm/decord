@@ -1,9 +1,9 @@
-// Module ID: 15807
-// Function ID: 15808
+// Module ID: 15825
+// Function ID: 15826
 // Name: FriendPresence
-// Dependencies: [5, 32, 19, 17, 4334, 4431, 3998, 676, 21, 4342, 712, 4338, 4187, 9687, 589, 9181, 1297, 9056, 12838, 15808, 2]
+// Dependencies: [5, 32, 19, 17, 4334, 4431, 3998, 676, 21, 4342, 712, 4338, 4187, 9698, 589, 9195, 1297, 9070, 12856, 15826, 2]
 
-// Module 15807 (FriendPresence)
+// Module 15825 (FriendPresence)
 import sortActivity from "sortActivity";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "SearchListRow";
@@ -39,7 +39,7 @@ function FriendPresence(user) {
     obj[1] = guildId;
     ({ activityStatusIcon: obj[2], activityStatusText: obj[3] } = tmp);
     obj[5] = animate;
-    tmp5 = callback(importDefault(9687), obj);
+    tmp5 = callback(importDefault(9698), obj);
   }
   return tmp5;
 }

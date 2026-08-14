@@ -1,10 +1,10 @@
-// Module ID: 9216
-// Function ID: 9217
+// Module ID: 9230
+// Function ID: 9231
 // Name: DefaultVideoBackground
-// Dependencies: [8320, 2]
+// Dependencies: [8342, 2]
 // Exports: default
 
-// Module 9216 (DefaultVideoBackground)
+// Module 9230 (DefaultVideoBackground)
 import { DefaultVideoBackground } from "VideoFilterType";
 
 let closure_1 = { id: DefaultVideoBackground.OPTION_1, source: "", name: "" };

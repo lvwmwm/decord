@@ -1,10 +1,10 @@
-// Module ID: 14327
-// Function ID: 14328
+// Module ID: 14340
+// Function ID: 14341
 // Name: BountyVideoEndMode
-// Dependencies: [32, 19, 5202, 10955, 2]
+// Dependencies: [32, 19, 5223, 10971, 2]
 // Exports: useBountiesModalTiming
 
-// Module 14327 (BountyVideoEndMode)
+// Module 14340 (BountyVideoEndMode)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";

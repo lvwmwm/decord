@@ -1,10 +1,10 @@
-// Module ID: 16896
-// Function ID: 16897
+// Module ID: 16912
+// Function ID: 16913
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 14513, 14528, 1236, 4684, 1297, 38, 4061, 2]
+// Dependencies: [5, 32, 19, 14526, 14541, 1236, 4706, 1297, 38, 4061, 2]
 // Exports: default
 
-// Module 16896 (useArchiveOrDelete)
+// Module 16912 (useArchiveOrDelete)
 import getSystemLocale from "getSystemLocale";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -141,19 +141,19 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId)
     return applyArgumentsResult;
   }
   let stringResult3 = dependencyMap;
-  let obj = _require(14513);
+  let obj = _require(14526);
   const subscriptionListing = obj.useSubscriptionListing(editStateId);
-  const removeEditStateId = importAll(14528).useEditStateIds(groupListingId, guildId).removeEditStateId;
-  let obj2 = importAll(14528);
-  const deleteSubscriptionListing = _require(14513).useDeleteSubscriptionListing();
+  const removeEditStateId = importAll(14541).useEditStateIds(groupListingId, guildId).removeEditStateId;
+  let obj2 = importAll(14541);
+  const deleteSubscriptionListing = _require(14526).useDeleteSubscriptionListing();
   ({ error, deleteSubscriptionListing: closure_8, submitting } = deleteSubscriptionListing);
-  let obj3 = _require(14513);
-  const archiveSubscriptionListing = _require(14513).useArchiveSubscriptionListing();
+  let obj3 = _require(14526);
+  const archiveSubscriptionListing = _require(14526).useArchiveSubscriptionListing();
   let closure_9 = archiveSubscriptionListing.archiveSubscriptionListing;
   ({ submitting: submitting2, error: error2 } = archiveSubscriptionListing);
   let closure_10 = removeEditStateId(null);
-  let obj4 = _require(14513);
-  const first = callback(importAll(14528).useName(editStateId), 1)[0];
+  let obj4 = _require(14526);
+  const first = callback(importAll(14541).useName(editStateId), 1)[0];
   let archived;
   if (subscriptionListing != null) {
     archived = subscriptionListing.archived;

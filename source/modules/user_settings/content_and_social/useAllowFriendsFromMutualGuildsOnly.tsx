@@ -1,10 +1,10 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 14974
+// Function ID: 14975
 // Name: useAllowFriendsFromMutualGuildsOnly
-// Dependencies: [19, 4034, 6056, 2]
+// Dependencies: [19, 4034, 6077, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnly
 
-// Module 14960 (useAllowFriendsFromMutualGuildsOnly)
+// Module 14974 (useAllowFriendsFromMutualGuildsOnly)
 import noop from "noop";
 
 const require = arg1;

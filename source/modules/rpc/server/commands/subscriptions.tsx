@@ -1,8 +1,8 @@
-// Module ID: 13825
-// Function ID: 13826
-// Dependencies: [5, 676, 10711, 13826, 698, 13827, 2]
+// Module ID: 13837
+// Function ID: 13838
+// Dependencies: [5, 676, 10727, 13838, 698, 13839, 2]
 
-// Module 13825
+// Module 13837
 import getInitialSubscriptionPayload from "getInitialSubscriptionPayload";
 import ME from "ME";
 
@@ -56,10 +56,10 @@ let obj = {
                 const obj1 = { errorCode: null };
                 obj1[0] = outer1_5.INVALID_EVENT;
                 const _HermesInternal = HermesInternal;
-                let tmp35 = outer1_1(10711);
+                let tmp35 = outer1_1(10727);
                 tmp35 = new tmp35(obj1, "Invalid event: " + dependencyMap);
                 throw tmp35;
-              } else if (outer1_1(13826)(outer1_1.authorization.scopes, tmp67.scope)) {
+              } else if (outer1_1(13838)(outer1_1.authorization.scopes, tmp67.scope)) {
                 const obj2 = { event: null, scope: null, application_id: null, socket_scope: null };
                 obj2[0] = dependencyMap;
                 if (typeof tmp67.scope === "object") {
@@ -84,7 +84,7 @@ let obj = {
               } else {
                 const obj4 = { errorCode: null };
                 obj4[0] = outer1_5.INVALID_PERMISSIONS;
-                const tmp10 = new tmp72(10711)(obj4, "Not authenticated or invalid scope");
+                const tmp10 = new tmp72(10727)(obj4, "Not authenticated or invalid scope");
                 throw tmp10;
               }
               obj13 = outer1_0;
@@ -102,7 +102,7 @@ let obj = {
             if (null != closure_1.validate(initialSubscriptionPayload, c0.validation(closure_1), { convert: false }).error) {
               let obj5 = { errorCode: null };
               obj5[0] = outer1_5.INVALID_PAYLOAD;
-              const tmp64 = new outer1_1(10711)(obj5, "Invalid subscription parameters provided");
+              const tmp64 = new outer1_1(10727)(obj5, "Invalid subscription parameters provided");
               throw tmp64;
             }
           }
@@ -110,7 +110,7 @@ let obj = {
           obj6[0] = initialSubscriptionPayload;
           obj6[1] = closure_1;
           closure_2 = c0.handler(obj6);
-          obj5 = outer1_0(13827);
+          obj5 = outer1_0(13839);
           initialSubscriptionPayload = obj5.getInitialSubscriptionPayload(closure_1, closure_2, initialSubscriptionPayload);
           const promise = new Promise((arg0) => {
             setImmediate(() => {
@@ -142,7 +142,7 @@ obj = {
       let obj = { errorCode: null };
       obj[0] = constants.INVALID_EVENT;
       const _HermesInternal = HermesInternal;
-      let tmp6 = importDefault(10711);
+      let tmp6 = importDefault(10727);
       tmp6 = new tmp6(obj, "Invalid event: " + evt);
       throw tmp6;
     } else {

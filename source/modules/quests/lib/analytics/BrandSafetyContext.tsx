@@ -1,10 +1,10 @@
-// Module ID: 9568
-// Function ID: 9569
+// Module ID: 9581
+// Function ID: 9582
 // Name: getBrandSafetyContext
-// Dependencies: [9569, 1391, 1910, 3998, 4165, 1922, 9570, 7204, 1435, 4535, 2]
+// Dependencies: [9582, 1391, 1910, 3998, 4165, 1922, 9583, 7226, 1435, 4535, 2]
 // Exports: getBrandSafetyContext
 
-// Module 9568 (getBrandSafetyContext)
+// Module 9581 (getBrandSafetyContext)
 import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -19,9 +19,9 @@ let c4;
 let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/quests/lib/analytics/BrandSafetyContext.tsx");
 
 export const getBrandSafetyContext = function getBrandSafetyContext(questContent) {
-  let obj = _require(7204);
+  let obj = _require(7226);
   const result = obj.isBillableQuestContent(questContent);
-  let obj1 = _require(7204);
+  let obj1 = _require(7226);
   const adContext = obj1.getAdContext(questContent);
   const tmp4 = callback2();
   const tmp5 = callback();

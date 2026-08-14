@@ -1,9 +1,9 @@
-// Module ID: 14941
-// Function ID: 14942
+// Module ID: 14955
+// Function ID: 14956
 // Name: route
-// Dependencies: [8127, 676, 10407, 1236, 14942, 2]
+// Dependencies: [8148, 676, 10421, 1236, 14956, 2]
 
-// Module 14941 (route)
+// Module 14955 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.SECURE_FRAMES_VERIFIED_DEVICES,
   getComponent() {
-    return require(14942) /* VerificationListItem */.default;
+    return require(14956) /* VerificationListItem */.default;
   }
 };
 const route = createToggle.createRoute(obj);

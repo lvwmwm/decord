@@ -1,9 +1,9 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 16575
+// Function ID: 16576
 // Name: resolveMessageCodedLinks
-// Dependencies: [5, 6967, 4327, 4326, 4331, 16563, 7803, 5982, 11515, 5301, 16570, 2]
+// Dependencies: [5, 6988, 4327, 4326, 4331, 16576, 7824, 6003, 11531, 5322, 16583, 2]
 
-// Module 16562 (resolveMessageCodedLinks)
+// Module 16575 (resolveMessageCodedLinks)
 import queueMessageLinkFetch from "queueMessageLinkFetch";
 import handleGuildTemplateResolveSuccess from "handleGuildTemplateResolveSuccess";
 import updateInvite from "updateInvite";
@@ -151,13 +151,15 @@ function resolveMessageCodedLinks(content) {
                                     if (tmp(tmp2[4]).CodedLinkType.EXPERIMENT !== type) {
                                       if (tmp(tmp2[4]).CodedLinkType.GAME_PROFILE !== type) {
                                         if (tmp(tmp2[4]).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                          if (tmp(tmp2[4]).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
-                                            const embedApplication = tmp(tmp2[8]).getEmbedApplication(code);
-                                            const tmpResult1 = tmp(tmp2[8]);
-                                          } else {
-                                            const _Error = Error;
-                                            const _HermesInternal = HermesInternal;
-                                            throw Error("Unknown coded link type: " + type);
+                                          if (tmp(tmp2[4]).CodedLinkType.USER_PROFILE !== type) {
+                                            if (tmp(tmp2[4]).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
+                                              const embedApplication = tmp(tmp2[8]).getEmbedApplication(code);
+                                              const tmpResult1 = tmp(tmp2[8]);
+                                            } else {
+                                              const _Error = Error;
+                                              const _HermesInternal = HermesInternal;
+                                              throw Error("Unknown coded link type: " + type);
+                                            }
                                           }
                                         }
                                       }

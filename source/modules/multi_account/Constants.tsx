@@ -1,9 +1,9 @@
-// Module ID: 11842
-// Function ID: 11843
+// Module ID: 11858
+// Function ID: 11859
 // Name: MAX_ACCOUNTS
 // Dependencies: [2]
 
-// Module 11842 (MAX_ACCOUNTS)
+// Module 11858 (MAX_ACCOUNTS)
 const result = require("set").fileFinishedImporting("modules/multi_account/Constants.tsx");
 
 export const MAX_ACCOUNTS = 5;

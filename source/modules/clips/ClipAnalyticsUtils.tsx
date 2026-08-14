@@ -1,10 +1,10 @@
-// Module ID: 7245
-// Function ID: 7246
+// Module ID: 7267
+// Function ID: 7268
 // Name: getClipSignalTypes
-// Dependencies: [4434, 4364, 4416, 4430, 4399, 4400, 676, 4896, 4408, 7246, 4504, 698, 2]
+// Dependencies: [4434, 4364, 4416, 4430, 4399, 4400, 676, 4918, 4408, 7268, 4504, 698, 2]
 // Exports: getClipBaseProperties, getClipContextProperties, getClipSaveFailureAnalytics, getClipSavedAnalytics, getClipType, getPreSaveClipAnalytics, trackClipEdited
 
-// Module 7245 (getClipSignalTypes)
+// Module 7267 (getClipSignalTypes)
 import ApplicationStreamPresets from "ApplicationStreamPresets";
 import reset from "reset";
 import createRTCConnection from "createRTCConnection";
@@ -44,7 +44,7 @@ function getPostSaveClipAnalytics(arg0, framesEncodedByEncoder) {
     let tmp7 = key10011;
     let tmp8 = require;
     let tmp9 = dependencyMap;
-    let obj3 = require(7246) /* parseEncoder */;
+    let obj3 = require(7268) /* parseEncoder */;
     let parseEncoderResult = obj3.parseEncoder(key10011);
     let num = map.get(parseEncoderResult);
     if (num == null) {
@@ -55,86 +55,86 @@ function getPostSaveClipAnalytics(arg0, framesEncodedByEncoder) {
   }
   const obj = {};
   const merged = Object.assign(arg0);
-  let num2 = map.get(require(7246) /* parseEncoder */.Encoders.NVIDIA_CUDA);
+  let num2 = map.get(require(7268) /* parseEncoder */.Encoders.NVIDIA_CUDA);
   if (num2 == null) {
     num2 = 0;
   }
   obj.frames_encoded_nvidia_cuda = num2;
-  let num3 = map.get(tmp3(7246).Encoders.NVIDIA_DIRECT_3D);
+  let num3 = map.get(tmp3(7268).Encoders.NVIDIA_DIRECT_3D);
   if (num3 == null) {
     num3 = 0;
   }
   obj.frames_encoded_nvidia_direct3d = num3;
-  let num4 = map.get(tmp3(7246).Encoders.OPENH264);
+  let num4 = map.get(tmp3(7268).Encoders.OPENH264);
   if (num4 == null) {
     num4 = 0;
   }
   obj.frames_encoded_openh264 = num4;
-  let num5 = map.get(tmp3(7246).Encoders.VIDEOTOOLBOX);
+  let num5 = map.get(tmp3(7268).Encoders.VIDEOTOOLBOX);
   if (num5 == null) {
     num5 = 0;
   }
   obj.frames_encoded_videotoolbox = num5;
-  let num6 = map.get(tmp3(7246).Encoders.AMD_DIRECT_3D);
+  let num6 = map.get(tmp3(7268).Encoders.AMD_DIRECT_3D);
   if (num6 == null) {
     num6 = 0;
   }
   obj.frames_encoded_amd_direct3d = num6;
-  let num7 = map.get(tmp3(7246).Encoders.AMD_VAAPI);
+  let num7 = map.get(tmp3(7268).Encoders.AMD_VAAPI);
   if (num7 == null) {
     num7 = 0;
   }
   obj.frames_encoded_amd_vaapi = num7;
-  let num8 = map.get(tmp3(7246).Encoders.INTEL);
+  let num8 = map.get(tmp3(7268).Encoders.INTEL);
   if (num8 == null) {
     num8 = 0;
   }
   obj.frames_encoded_intel = num8;
-  let num9 = map.get(tmp3(7246).Encoders.INTEL_DIRECT_3D);
+  let num9 = map.get(tmp3(7268).Encoders.INTEL_DIRECT_3D);
   if (num9 == null) {
     num9 = 0;
   }
   obj.frames_encoded_intel_direct3d = num9;
-  let num10 = map.get(tmp3(7246).Encoders.WMF_DIRECT_3D_INTEL);
+  let num10 = map.get(tmp3(7268).Encoders.WMF_DIRECT_3D_INTEL);
   if (num10 == null) {
     num10 = 0;
   }
   obj.frames_encoded_wmf_direct3d_intel = num10;
-  let num11 = map.get(tmp3(7246).Encoders.WMF_DIRECT_3D_NVIDIA);
+  let num11 = map.get(tmp3(7268).Encoders.WMF_DIRECT_3D_NVIDIA);
   if (num11 == null) {
     num11 = 0;
   }
   obj.frames_encoded_wmf_direct3d_nvidia = num11;
-  let num12 = map.get(tmp3(7246).Encoders.WMF_DIRECT_3D_AMD);
+  let num12 = map.get(tmp3(7268).Encoders.WMF_DIRECT_3D_AMD);
   if (num12 == null) {
     num12 = 0;
   }
   obj.frames_encoded_wmf_direct3d_amd = num12;
-  let num13 = map.get(tmp3(7246).Encoders.WMF_DIRECT_3D);
+  let num13 = map.get(tmp3(7268).Encoders.WMF_DIRECT_3D);
   if (num13 == null) {
     num13 = 0;
   }
-  let num14 = map.get(tmp3(7246).Encoders.WMF_DIRECT_3D_INTEL);
+  let num14 = map.get(tmp3(7268).Encoders.WMF_DIRECT_3D_INTEL);
   if (num14 == null) {
     num14 = 0;
   }
   const sum = num13 + num14;
-  let num15 = map.get(tmp3(7246).Encoders.WMF_DIRECT_3D_NVIDIA);
+  let num15 = map.get(tmp3(7268).Encoders.WMF_DIRECT_3D_NVIDIA);
   if (num15 == null) {
     num15 = 0;
   }
   const sum1 = sum + num15;
-  let num16 = map.get(tmp3(7246).Encoders.WMF_DIRECT_3D_AMD);
+  let num16 = map.get(tmp3(7268).Encoders.WMF_DIRECT_3D_AMD);
   if (num16 == null) {
     num16 = 0;
   }
   obj.frames_encoded_wmf_direct3d = sum1 + num16;
-  let num17 = map.get(tmp3(7246).Encoders.UNCATEGORIZED);
+  let num17 = map.get(tmp3(7268).Encoders.UNCATEGORIZED);
   if (num17 == null) {
     num17 = 0;
   }
   obj.frames_encoded_uncategorized = num17;
-  let num18 = map.get(tmp3(7246).Encoders.UNKNOWN);
+  let num18 = map.get(tmp3(7268).Encoders.UNKNOWN);
   if (num18 == null) {
     num18 = 0;
   }
@@ -197,7 +197,7 @@ export const getClipBaseProperties = function getClipBaseProperties(clip) {
 };
 export const getClipContextProperties = function getClipContextProperties(trackClipsShared) {
   const obj = { clip_runtime: null, current_clip_session_id: null };
-  obj[0] = require(4896) /* apexExperiment */.getClipsRuntime(trackClipsShared);
+  obj[0] = require(4918) /* apexExperiment */.getClipsRuntime(trackClipsShared);
   const currentClipsSession = store.getCurrentClipsSession();
   let id;
   if (currentClipsSession != null) {
@@ -238,7 +238,7 @@ export const getPreSaveClipAnalytics = function getPreSaveClipAnalytics(decision
   obj = { clip_type: str, num_clip_participants: decision.users.length, clip_session_id: decision.gameSessionId, is_candidate: decision.isCandidate };
   const merged = Object.assign(obj);
   const obj1 = { clip_runtime: null, current_clip_session_id: null };
-  obj1[0] = require(4896) /* apexExperiment */.getClipsRuntime("getPreSaveClipAnalytics");
+  obj1[0] = require(4918) /* apexExperiment */.getClipsRuntime("getPreSaveClipAnalytics");
   const currentClipsSession = store.getCurrentClipsSession();
   let id;
   if (currentClipsSession != null) {
@@ -409,7 +409,7 @@ export const trackClipEdited = function trackClipEdited(editMetadata, isFavorite
   if (!values.every((arg0) => null == arg0)) {
     obj = { clip_runtime: null, current_clip_session_id: null };
     const obj3 = importDefault(698);
-    obj[0] = require(4896) /* apexExperiment */.getClipsRuntime("updateClipMetadata");
+    obj[0] = require(4918) /* apexExperiment */.getClipsRuntime("updateClipMetadata");
     const currentClipsSession = store.getCurrentClipsSession();
     let id;
     if (currentClipsSession != null) {
@@ -421,6 +421,6 @@ export const trackClipEdited = function trackClipEdited(editMetadata, isFavorite
     obj.clip_uuid = editMetadata.id;
     const merged1 = Object.assign(obj);
     obj3.track(AnalyticEvents.CLIP_EDITED, obj);
-    const obj5 = require(4896) /* apexExperiment */;
+    const obj5 = require(4918) /* apexExperiment */;
   }
 };

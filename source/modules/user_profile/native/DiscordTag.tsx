@@ -1,10 +1,10 @@
-// Module ID: 9180
-// Function ID: 9181
+// Module ID: 9194
+// Function ID: 9195
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 4342, 712, 4338, 9181, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4338, 9195, 2]
 // Exports: default
 
-// Module 9180 (DiscordTag)
+// Module 9194 (DiscordTag)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -72,8 +72,8 @@ export default function DiscordTag(arg0) {
       const obj2 = { style: null, verified: null };
       obj2[0] = tmp.botTag;
       obj2[1] = user.isVerifiedBot();
-      tmp13 = callback(importDefault(9181), obj2);
-      const tmp17 = importDefault(9181);
+      tmp13 = callback(importDefault(9195), obj2);
+      const tmp17 = importDefault(9195);
     }
   }
   items2[1] = tmp13;

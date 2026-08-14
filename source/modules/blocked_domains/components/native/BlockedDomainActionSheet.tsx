@@ -1,10 +1,10 @@
-// Module ID: 12294
-// Function ID: 12295
+// Module ID: 12312
+// Function ID: 12313
 // Name: BlockedDomainActionSheet
-// Dependencies: [19, 21, 4342, 712, 5437, 4753, 6070, 4338, 1236, 12295, 4755, 4310, 2]
+// Dependencies: [19, 21, 4342, 712, 5458, 4775, 6091, 4338, 1236, 12313, 4777, 4310, 2]
 // Exports: default
 
-// Module 12294 (BlockedDomainActionSheet)
+// Module 12312 (BlockedDomainActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -26,7 +26,7 @@ export default function BlockedDomainActionSheet(url) {
   let obj = { startExpanded: true, children: null };
   obj = { spacing: 16, justify: "center", align: "center", style: tmp.container, children: null };
   obj = { spacing: 8, justify: "center", align: "center", children: null };
-  const items = [callback(require(6070) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
+  const items = [callback(require(6091) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl.string(require(1236) /* getSystemLocale */.t["2B3wj8"]);
@@ -36,15 +36,15 @@ export default function BlockedDomainActionSheet(url) {
   obj2[2] = intl2.format(require(1236) /* getSystemLocale */.t.jnHyYU, {});
   items[2] = callback(require(4338) /* Text */.Text, obj2);
   obj[3] = items;
-  const items1 = [callback2(require(4753) /* Stack */.Stack, obj), callback(require(12295) /* URLCallout */.URLCallout, { url: url.url }), ];
+  const items1 = [callback2(require(4775) /* Stack */.Stack, obj), callback(require(12313) /* URLCallout */.URLCallout, { url: url.url }), ];
   const obj3 = { grow: true, text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[1] = intl3.string(require(1236) /* getSystemLocale */.t["/g10LC"]);
   obj3[2] = function onPress() {
     return callback(table[11]).hideActionSheet();
   };
-  items1[2] = callback(require(4755) /* Button */.Button, obj3);
+  items1[2] = callback(require(4777) /* Button */.Button, obj3);
   obj[4] = items1;
-  obj[1] = callback2(require(4753) /* Stack */.Stack, obj);
-  return callback(require(5437) /* Background */.BottomSheet, obj);
+  obj[1] = callback2(require(4775) /* Stack */.Stack, obj);
+  return callback(require(5458) /* Background */.BottomSheet, obj);
 };

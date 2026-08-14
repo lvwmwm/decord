@@ -1,10 +1,10 @@
-// Module ID: 12106
-// Function ID: 12107
+// Module ID: 12124
+// Function ID: 12125
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [19, 17, 21, 4342, 5307, 712, 4338, 4755, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 5328, 712, 4338, 4777, 1236, 2]
 // Exports: default
 
-// Module 12106 (NewUserPermissionsOnboarding)
+// Module 12124 (NewUserPermissionsOnboarding)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -69,7 +69,7 @@ export default function NewUserPermissionsOnboarding(showSkip) {
   obj6[2] = intl.string(require(1236) /* getSystemLocale */.t["2nYlT2"]);
   obj6[3] = onAllow;
   obj6[4] = loading;
-  obj5[1] = callback(require(4755) /* Button */.Button, obj6);
+  obj5[1] = callback(require(4777) /* Button */.Button, obj6);
   items1[2] = callback(closure_2, obj5);
   if (flag) {
     const obj7 = { style: null, children: null };
@@ -78,7 +78,7 @@ export default function NewUserPermissionsOnboarding(showSkip) {
     const intl2 = tmp6(1236).intl;
     obj8[1] = intl2.string(tmp6(1236).t["5Wxrcd"]);
     obj8[2] = onDontAllow;
-    obj7[1] = tmp4(tmp6(4755).Button, obj8);
+    obj7[1] = tmp4(tmp6(4777).Button, obj8);
     flag = tmp4(tmp5, obj7);
   }
   const obj9 = { children: null };

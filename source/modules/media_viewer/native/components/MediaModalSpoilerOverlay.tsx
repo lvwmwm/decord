@@ -1,8 +1,8 @@
-// Module ID: 12324
-// Function ID: 12325
-// Dependencies: [32, 19, 17, 21, 4342, 712, 500, 4065, 12310, 4083, 4745, 4851, 4338, 1236, 2]
+// Module ID: 12342
+// Function ID: 12343
+// Dependencies: [32, 19, 17, 21, 4342, 712, 500, 4065, 12328, 4083, 4767, 4873, 4338, 1236, 2]
 
-// Module 12324
+// Module 12342
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,7 +38,7 @@ export default require("noop").memo(function MediaModalSpoilerOverlay(source) {
   let stringResult = dependencyMap;
   let obj = require(4065) /* map */;
   const token = obj.useToken(importDefault(712).colors.SPOILER_HIDDEN_BACKGROUND);
-  let obj1 = require(12310) /* useMediaItemSpoilerState */;
+  let obj1 = require(12328) /* useMediaItemSpoilerState */;
   if (!tmp5[0]) {
     return null;
   } else {
@@ -55,13 +55,13 @@ export default require("noop").memo(function MediaModalSpoilerOverlay(source) {
     obj[0] = str;
     obj[1] = token;
     obj[2] = absoluteFill.absoluteFill;
-    const items1 = [closure_6(tmp3(4745), obj), ];
+    const items1 = [closure_6(tmp3(4767), obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = items2.spoilerOverlayContainer;
     const obj2 = { style: null, children: null };
     if (source.obscure) {
       obj2[0] = items2.obscureContentContainer;
-      items2 = [tmp9(tmp(4851).ImageWarningIcon, { size: "lg", color: "white" }), ];
+      items2 = [tmp9(tmp(4873).ImageWarningIcon, { size: "lg", color: "white" }), ];
       const obj3 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
       const intl2 = tmp(1236).intl;
       stringResult = intl2.string(tmp(1236).t.SpxcUR);
@@ -83,7 +83,7 @@ export default require("noop").memo(function MediaModalSpoilerOverlay(source) {
     items1[1] = obj1;
     obj[1] = items1;
     closure_7(tmp3(4083).View, obj);
-    const tmp3Result = tmp3(4745);
+    const tmp3Result = tmp3(4767);
     const tmp8 = absoluteFill;
   }
 });

@@ -1,9 +1,9 @@
-// Module ID: 15796
-// Function ID: 15797
+// Module ID: 15814
+// Function ID: 15815
 // Name: ClearAllHistory
-// Dependencies: [32, 5, 19, 5940, 11796, 15797, 11770, 8446, 11784, 676, 21, 4887, 11794, 1236, 4338, 9671, 15798, 4355, 11791, 11771, 589, 1500, 15801, 11769, 14133, 7842, 7844, 15802, 15803, 15806, 2]
+// Dependencies: [32, 5, 19, 5961, 11812, 15815, 11786, 8468, 11800, 676, 21, 4909, 11810, 1236, 4338, 9682, 15816, 4355, 11807, 11787, 589, 1500, 15819, 11785, 14146, 7863, 7865, 15820, 15821, 15824, 2]
 
-// Module 15796 (ClearAllHistory)
+// Module 15814 (ClearAllHistory)
 import _slicedToArray from "_slicedToArray";
 import deserialize from "deserialize";
 import importAllResult from "SearchTokenTypes";
@@ -38,7 +38,7 @@ function ClearAllHistory(searchContext) {
   const intl2 = searchContext(1236).intl;
   obj[2] = intl2.string(searchContext(1236).t.LFTAUp);
   obj[4] = jsx(searchContext(4338).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(searchContext(4887).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(searchContext(4909).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
 }
 function ViewAll(onJumpToMedia) {
   let obj = { onPress: onJumpToMedia.onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: null, children: null };
@@ -48,7 +48,7 @@ function ViewAll(onJumpToMedia) {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.Ofpgwh);
   obj[4] = jsx(require(4338) /* Text */.Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(require(4887) /* PressableBase */.PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(require(4909) /* PressableBase */.PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
 }
 let c5 = importAllResult;
 ({ EMPTY_SEARCH_QUERY_STRING: c10, MESSAGE_PLACEHOLDER_ITEM_SIZE: unpackModuleId, SearchListItemTypes: closure_12, SearchTabs: map1 } = MessageEmbedTypes);

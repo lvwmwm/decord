@@ -1,9 +1,9 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9440
+// Function ID: 9441
 // Name: SAMPLE_PROFILE_ASPECT_RATIO
 // Dependencies: [2]
 
-// Module 9426 (SAMPLE_PROFILE_ASPECT_RATIO)
+// Module 9440 (SAMPLE_PROFILE_ASPECT_RATIO)
 const result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesPreviewConstants.tsx");
 
 export const SAMPLE_PROFILE_ASPECT_RATIO = 0.5113636363636364;

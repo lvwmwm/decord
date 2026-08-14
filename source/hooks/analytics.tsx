@@ -1,10 +1,10 @@
-// Module ID: 8780
-// Function ID: 8781
+// Module ID: 8794
+// Function ID: 8795
 // Name: useAnalyticsContext
 // Dependencies: [19, 698, 2]
 // Exports: useAnalyticsContext
 
-// Module 8780 (useAnalyticsContext)
+// Module 8794 (useAnalyticsContext)
 import noop from "noop";
 
 const require = arg1;

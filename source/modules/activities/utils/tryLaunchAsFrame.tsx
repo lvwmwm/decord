@@ -1,10 +1,10 @@
-// Module ID: 10584
-// Function ID: 10585
+// Module ID: 10600
+// Function ID: 10601
 // Name: tryLaunchAsFrame
-// Dependencies: [4383, 10567, 10569, 10570, 2]
+// Dependencies: [4383, 10583, 10585, 10586, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 10584 (tryLaunchAsFrame)
+// Module 10600 (tryLaunchAsFrame)
 import addApplication from "addApplication";
 import { MAIN_SURFACE } from "FrameLayoutModes";
 
@@ -16,7 +16,7 @@ export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
   application = application.getApplication(applicationId);
   let tmp2 = null == application;
   if (!tmp2) {
-    let obj = require(10569) /* canLaunchFrame */;
+    let obj = require(10585) /* canLaunchFrame */;
     tmp2 = !obj.canLaunchFrame(application);
   }
   let flag = !tmp2;
@@ -24,9 +24,9 @@ export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
     obj = { applicationId: null, surface: null };
     obj[0] = applicationId;
     obj[1] = MAIN_SURFACE;
-    importDefault(10570).launchFrame(obj);
+    importDefault(10586).launchFrame(obj);
     flag = true;
-    const obj2 = importDefault(10570);
+    const obj2 = importDefault(10586);
   }
   return flag;
 };

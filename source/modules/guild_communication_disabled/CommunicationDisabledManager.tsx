@@ -1,9 +1,9 @@
-// Module ID: 11887
-// Function ID: 11888
+// Module ID: 11903
+// Function ID: 11904
 // Name: clearGuildMemberTimeout
-// Dependencies: [1990, 1922, 3978, 709, 5301, 2]
+// Dependencies: [1990, 1922, 3978, 709, 5322, 2]
 
-// Module 11887 (clearGuildMemberTimeout)
+// Module 11903 (clearGuildMemberTimeout)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import closure_5 from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";

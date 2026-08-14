@@ -1,10 +1,10 @@
-// Module ID: 10087
-// Function ID: 10088
+// Module ID: 10099
+// Function ID: 10100
 // Name: useThemeAndReducedMotionAwareAssetUrl
 // Dependencies: [4334, 4278, 589, 1364, 2]
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
-// Module 10087 (useThemeAndReducedMotionAwareAssetUrl)
+// Module 10099 (useThemeAndReducedMotionAwareAssetUrl)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const require = arg1;

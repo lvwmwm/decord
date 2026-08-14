@@ -1,10 +1,10 @@
-// Module ID: 7630
-// Function ID: 7631
+// Module ID: 7651
+// Function ID: 7652
 // Name: _fetchSKU
-// Dependencies: [5, 7631, 4391, 676, 709, 4582, 530, 4030, 7632, 7096, 4241, 4029, 4022, 4664, 4673, 1370, 2]
+// Dependencies: [5, 7652, 4391, 676, 709, 4604, 530, 4030, 7653, 7118, 4241, 4029, 4022, 4686, 4695, 1370, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 7630 (_fetchSKU)
+// Module 7651 (_fetchSKU)
 import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery";
 import getPromotionIdOverride from "getPromotionIdOverride";
 import addSku from "addSku";
@@ -444,7 +444,7 @@ function _previewPurchaseSku() {
                 c5.promotion_id_override = promotionIdOverride2;
               }
               promotionIdOverride = 1;
-              obj2 = callback(4582);
+              obj2 = callback(4604);
               const obj3 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
               obj3[0] = billingError.STORE_SKU_PURCHASE(c1);
               obj3[1] = c5;
@@ -839,12 +839,12 @@ function _purchaseSKU() {
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = dependencyMap;
                 const obj27 = callback2(709);
-                c11 = callback(7632).isTestModeForApplication(callback);
+                c11 = callback(7653).isTestModeForApplication(callback);
                 c8 = 1;
                 obj2 = { gift: isGift, sku_subscription_plan_id: obj1.subscriptionPlanId };
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = dependencyMap;
-                const obj28 = callback(7632);
+                const obj28 = callback(7653);
                 c10 = 2;
                 c11 = 1;
                 const obj3 = { value: null, done: false };

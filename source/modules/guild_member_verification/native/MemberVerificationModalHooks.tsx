@@ -1,10 +1,10 @@
-// Module ID: 8465
-// Function ID: 8466
+// Module ID: 8487
+// Function ID: 8488
 // Name: useSetInitialVerificationEffect
-// Dependencies: [19, 1922, 8466, 589, 4168, 2]
+// Dependencies: [19, 1922, 8488, 589, 4168, 2]
 // Exports: useInitialVerification, useSetInitialVerificationEffect, useUserVerificationState
 
-// Module 8465 (useSetInitialVerificationEffect)
+// Module 8487 (useSetInitialVerificationEffect)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import map from "map";

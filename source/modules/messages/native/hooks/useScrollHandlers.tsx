@@ -1,10 +1,10 @@
-// Module ID: 10989
-// Function ID: 10990
+// Module ID: 11005
+// Function ID: 11006
 // Name: useScrollHandlers
-// Dependencies: [19, 8660, 3, 4741, 10961, 705, 10982, 10984, 5205, 2]
+// Dependencies: [19, 8674, 3, 4763, 10977, 705, 10998, 11000, 5226, 2]
 // Exports: default
 
-// Module 10989 (useScrollHandlers)
+// Module 11005 (useScrollHandlers)
 import noop from "noop";
 import updateChatInputContainerHeight from "updateChatInputContainerHeight";
 

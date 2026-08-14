@@ -1,10 +1,10 @@
-// Module ID: 14064
-// Function ID: 14065
+// Module ID: 14077
+// Function ID: 14078
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [19, 17, 21, 4342, 712, 14062, 5437, 6039, 4338, 1236, 4755, 11338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 14075, 5458, 6060, 4338, 1236, 4777, 11354, 2]
 // Exports: default
 
-// Module 14064 (SafetyHubErrorActionSheet)
+// Module 14077 (SafetyHubErrorActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ export default function SafetyHubErrorActionSheet(arg0) {
     HermesBuiltin.throwTypeError();
   } else {
     const tmp3 = createCacheKey();
-    const tmp6 = importDefault(14062)();
+    const tmp6 = importDefault(14075)();
     let obj = { children: null };
     obj = { style: null, children: null };
     const items = [tmp3.errorContainer];
@@ -40,7 +40,7 @@ export default function SafetyHubErrorActionSheet(arg0) {
     obj1[1] = importDefault(712).colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT;
     const items2 = [tmp3.redesignErrorIcon];
     obj1[2] = items2;
-    obj[1] = callback(require(6039) /* CircleXIcon */.CircleXIcon, obj1);
+    obj[1] = callback(require(6060) /* CircleXIcon */.CircleXIcon, obj1);
     const items3 = [callback(View, obj), ];
     const obj2 = { variant: "heading-lg/normal", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -56,8 +56,8 @@ export default function SafetyHubErrorActionSheet(arg0) {
     obj3[1] = intl2.string(require(1236) /* getSystemLocale */.t.R1AN4F);
     obj3[2] = tmp6;
     obj3[3] = tmp6;
-    items4[1] = callback(require(4755) /* Button */.Button, obj3);
+    items4[1] = callback(require(4777) /* Button */.Button, obj3);
     obj[0] = items4;
-    return callback2(require(5437) /* Background */.BottomSheet, obj);
+    return callback2(require(5458) /* Background */.BottomSheet, obj);
   }
 };

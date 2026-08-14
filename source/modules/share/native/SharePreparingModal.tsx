@@ -1,10 +1,10 @@
-// Module ID: 8978
-// Function ID: 8979
+// Module ID: 8992
+// Function ID: 8993
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4342, 712, 4743, 8979, 8980, 1236, 5366, 5863, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4765, 8993, 8994, 1236, 5387, 5884, 4338, 2]
 // Exports: default
 
-// Module 8978 (SharePreparingModal)
+// Module 8992 (SharePreparingModal)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,18 +34,18 @@ export default function SharePreparingModal(onCancel) {
   const items = [onCancel];
   const effect = React.useEffect(() => () => callback(), items);
   let obj = { style: tmp.content, children: null };
-  const items1 = [callback(onCancel(4743).Backdrop, { blur: "none", "aria-hidden": true }), , , ];
+  const items1 = [callback(onCancel(4765).Backdrop, { blur: "none", "aria-hidden": true }), , , ];
   obj = { style: tmp.topBar, pointerEvents: "box-none", children: null };
   obj = { style: tmp.topBarEnd, children: null };
   const obj1 = { accessibilityLabel: null, icon: null, onPress: null };
   const intl = onCancel(1236).intl;
   obj1[0] = intl.string(onCancel(1236).t.cpT0Cq);
-  obj1[1] = callback(onCancel(5366).XSmallIcon, { size: "md", color: "interactive-text-active" });
+  obj1[1] = callback(onCancel(5387).XSmallIcon, { size: "md", color: "interactive-text-active" });
   obj1[2] = onCancel;
-  obj[1] = callback(importDefault(8980), obj1);
-  obj[2] = callback(onCancel(8979).MediaModalOverlayHeaderWrapper, obj);
+  obj[1] = callback(importDefault(8994), obj1);
+  obj[2] = callback(onCancel(8993).MediaModalOverlayHeaderWrapper, obj);
   items1[1] = callback(closure_4, obj);
-  items1[2] = callback(onCancel(5863).ActivityIndicator, {});
+  items1[2] = callback(onCancel(5884).ActivityIndicator, {});
   const obj2 = { variant: "text-sm/medium", color: "text-overlay-light", children: null };
   const intl2 = onCancel(1236).intl;
   obj2[2] = intl2.string(onCancel(1236).t.DwTQE5);

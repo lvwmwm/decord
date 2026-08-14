@@ -1,10 +1,10 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 10033
+// Function ID: 10034
 // Name: PerkRow
-// Dependencies: [19, 17, 5899, 676, 1924, 21, 10023, 1236, 712, 10024, 10025, 4342, 1297, 4338, 709, 6930, 7695, 1493, 5768, 4773, 698, 8671, 4887, 8072, 10026, 2]
+// Dependencies: [19, 17, 5920, 676, 1924, 21, 10034, 1236, 712, 10035, 10036, 4342, 1297, 4338, 709, 6951, 7716, 1493, 5789, 4795, 698, 8685, 4909, 8093, 10037, 2]
 // Exports: default
 
-// Module 10022 (PerkRow)
+// Module 10033 (PerkRow)
 import componentDidMount from "componentDidMount";
 import get_ActivityIndicator from "useWindowDimensions";
 import updateProduct from "updateProduct";
@@ -97,12 +97,12 @@ export default function StickersPremiumUpsellAlert(arg0) {
       const obj = analyticsLocations(table[14]);
     }
   }, []);
-  const tmp5 = analyticsLocations(7695)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+  const tmp5 = analyticsLocations(7716)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp5 != null) {
     priceString = tmp5.priceString;
   }
-  analyticsLocations = tmp3(5768)().analyticsLocations;
+  analyticsLocations = tmp3(5789)().analyticsLocations;
   let obj = { cancelText: null, confirmColor: null, confirmText: null, onConfirm: null, onClose: null, onCancel: null, style: null, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.f3Pet9);
@@ -132,9 +132,9 @@ export default function StickersPremiumUpsellAlert(arg0) {
   obj = { style: tmp.closeContainer, children: null };
   obj = { accessibilityRole: "button", accessibilityLabel: "close", onPress: onClose, children: null };
   const obj1 = { source: null };
-  obj1[0] = analyticsLocations(8072);
+  obj1[0] = analyticsLocations(8093);
   obj[3] = callback(require(1297) /* Button */.Icon, obj1);
-  obj[1] = callback(require(4887) /* PressableBase */.PressableOpacity, obj);
+  obj[1] = callback(require(4909) /* PressableBase */.PressableOpacity, obj);
   const items1 = [callback(closure_4, obj), ];
   const obj2 = {
     style: tmp.content,
@@ -143,8 +143,8 @@ export default function StickersPremiumUpsellAlert(arg0) {
     },
     children: null
   };
-  const tmp3Result = analyticsLocations(4773);
-  const items2 = [callback(closure_5, { source: analyticsLocations(10026), style: tmp.imageHeader }), , ];
+  const tmp3Result = analyticsLocations(4795);
+  const items2 = [callback(closure_5, { source: analyticsLocations(10037), style: tmp.imageHeader }), , ];
   const obj4 = { style: tmp.description, variant: "text-md/medium", children: null };
   const intl3 = tmp9(1236).intl;
   if (priceString == null) {
@@ -153,7 +153,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
   const obj5 = { children: null };
   obj4[2] = intl3.format(require(1236) /* getSystemLocale */.t.TBsJfQ, { monthlyPrice: priceString });
   items2[1] = callback(require(4338) /* Text */.Text, obj4);
-  const obj3 = { source: analyticsLocations(10026), style: tmp.imageHeader };
+  const obj3 = { source: analyticsLocations(10037), style: tmp.imageHeader };
   const tmp13 = closure_6;
   items2[2] = callback(closure_4, { style: tmp.perks, children: items.map((perk) => callback(closure_18, { perk, isLastPerk: arg1 === length.length - 1 }, arg1)) });
   obj2[2] = items2;

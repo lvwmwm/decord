@@ -1,8 +1,8 @@
-// Module ID: 12058
-// Function ID: 12059
-// Dependencies: [19, 17, 8660, 21, 4342, 712, 1628, 5409, 1493, 12059, 12060, 12061, 4083, 2]
+// Module ID: 12076
+// Function ID: 12077
+// Dependencies: [19, 17, 8674, 21, 4342, 712, 1628, 5430, 1493, 12077, 12078, 12079, 4083, 2]
 
-// Module 12058
+// Module 12076
 import importAllResult from "noop";
 import { useChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight";
 import { jsx } from "jsxProd";

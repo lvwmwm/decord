@@ -1,10 +1,10 @@
-// Module ID: 5995
-// Function ID: 5996
+// Module ID: 6016
+// Function ID: 6017
 // Name: getStickerSendability
-// Dependencies: [1990, 5261, 676, 4007, 4679, 3994, 2]
+// Dependencies: [1990, 5282, 676, 4007, 4701, 3994, 2]
 // Exports: isSendableSticker
 
-// Module 5995 (getStickerSendability)
+// Module 6016 (getStickerSendability)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import parseServerPackSticker from "parseServerPackSticker";
 import { Permissions } from "ME";
@@ -51,7 +51,7 @@ function getStickerSendability(stickerById, trackCommunicationDisabled, channel)
       }
       return obj.NONSENDABLE;
     }
-    obj5 = require(4679) /* getStickerExtensionFromFormatType */;
+    obj5 = require(4701) /* getStickerExtensionFromFormatType */;
   }
 }
 let obj = { SENDABLE: 0, [0]: "SENDABLE", SENDABLE_WITH_PREMIUM: 1, [1]: "SENDABLE_WITH_PREMIUM", NONSENDABLE: 2, [2]: "NONSENDABLE", SENDABLE_WITH_BOOSTED_GUILD: 3, [3]: "SENDABLE_WITH_BOOSTED_GUILD" };

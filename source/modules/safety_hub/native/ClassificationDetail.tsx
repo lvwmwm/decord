@@ -1,10 +1,10 @@
-// Module ID: 11331
-// Function ID: 11332
+// Module ID: 11347
+// Function ID: 11348
 // Name: ClassificationHeader
-// Dependencies: [19, 17, 1994, 11332, 7850, 676, 21, 4342, 712, 4338, 7851, 1236, 589, 9106, 4058, 10319, 4755, 11337, 11339, 698, 5368, 11340, 7849, 11349, 7109, 7114, 11351, 2]
+// Dependencies: [19, 17, 1994, 11348, 7871, 676, 21, 4342, 712, 4338, 7872, 1236, 589, 9120, 4058, 10333, 4777, 11353, 11355, 698, 5389, 11356, 7870, 11365, 7131, 7136, 11367, 2]
 // Exports: default
 
-// Module 11331 (ClassificationHeader)
+// Module 11347 (ClassificationHeader)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "useSafetyHubClassifications";
 import _getSystemLocale from "_getSystemLocale";
@@ -174,7 +174,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj = { style: tmp.classificationPolicyCardIcon, children: null };
   const obj1 = { size: "sm", color: null };
   obj1[1] = importDefault(712).colors.TEXT_LINK;
-  obj[1] = callback(policyExplainerLink(10319).ShieldIcon, obj1);
+  obj[1] = callback(policyExplainerLink(10333).ShieldIcon, obj1);
   const items1 = [callback(closure_4, obj), ];
   const obj2 = { style: tmp.classificationPolicyCardContent, children: null };
   const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
@@ -183,7 +183,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj2[1] = callback(policyExplainerLink(4338).Text, obj3);
   items1[1] = callback(closure_4, obj2);
   obj[2] = items1;
-  obj[0] = callback2(importDefault(9106), obj);
+  obj[0] = callback2(importDefault(9120), obj);
   return callback(closure_4, obj);
 }
 function AppealStatus() {
@@ -222,7 +222,7 @@ function ClassificationDetailFooter(onClose) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.elrEjL);
   obj[2] = onClose.onClose;
-  obj[1] = callback(require(4755) /* Button */.Button, obj);
+  obj[1] = callback(require(4777) /* Button */.Button, obj);
   return callback(closure_4, obj);
 }
 ({ View: c4, ActivityIndicator: c5, ScrollView: closure_6 } = get_ActivityIndicator);

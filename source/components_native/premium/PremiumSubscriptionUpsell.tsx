@@ -1,10 +1,10 @@
-// Module ID: 12875
-// Function ID: 12876
+// Module ID: 12893
+// Function ID: 12894
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 1994, 1922, 676, 6943, 1924, 21, 4342, 712, 4294, 1236, 1898, 589, 4007, 4766, 691, 4338, 12876, 12877, 8683, 4755, 2]
+// Dependencies: [19, 17, 1994, 1922, 676, 6964, 1924, 21, 4342, 712, 4294, 1236, 1898, 589, 4007, 4788, 691, 4338, 12894, 12895, 8697, 4777, 2]
 // Exports: default
 
-// Module 12875 (PremiumSubscriptionUpsell)
+// Module 12893 (PremiumSubscriptionUpsell)
 import "registerAsset";
 import get_ActivityIndicator from "Text";
 import _getSystemLocale from "_getSystemLocale";
@@ -62,7 +62,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     obj[0] = items1;
     obj = { style: null, start: null, end: null, colors: null, children: null };
     obj[0] = tmp.upsellCard;
-    let tmp5Result = tmp5(4766);
+    let tmp5Result = tmp5(4788);
     obj[1] = tmp2(691).HorizontalGradient.START;
     obj[2] = tmp2(691).HorizontalGradient.END;
     obj[3] = Gradients.PREMIUM_GUILD;
@@ -95,11 +95,11 @@ export default function PremiumSubscriptionUpsell(arg0) {
     obj6[0] = tmp.upsellFeatures;
     const obj7 = { style: null, source: null };
     obj7[0] = tmp.upsellFeatureSubLogo;
-    obj7[1] = tmp5(12876);
+    obj7[1] = tmp5(12894);
     const items4 = [closure_10(closure_4, obj7), , ];
     const obj8 = { style: null, source: null };
     obj8[0] = tmp.upsellFeatureLogoTier2;
-    obj8[1] = tmp5(12877);
+    obj8[1] = tmp5(12895);
     items4[1] = closure_10(closure_4, obj8);
     const obj9 = { style: null, features: null, labelStyle: null, rowStyle: null };
     obj9[0] = tmp.upsellFeatureList;
@@ -107,7 +107,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     obj10[0] = tmp2(4294).CheckmarkLargeIcon;
     const intl4 = tmp2(1236).intl;
     const obj11 = { discountPercentage: null };
-    const tmp5Result1 = tmp5(8683);
+    const tmp5Result1 = tmp5(8697);
     obj11[0] = tmp2(1898).formatPercent(locale.locale, closure_9 / 100);
     obj10[1] = intl4.formatToPlainString(tmp2(1236).t.P3aEj6, obj11);
     obj10[2] = tmp5(712).unsafe_rawColors.WHITE;
@@ -132,7 +132,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     stringResult = intl6.string(tmp2(1236).t.fJOECn);
     obj15[1] = stringResult;
     obj15[2] = onLearnMorePremium;
-    tmp = tmp6(tmp2(4755).Button, obj15);
+    tmp = tmp6(tmp2(4777).Button, obj15);
     obj14[1] = tmp;
     items3[2] = closure_10(closure_3, obj14);
     obj[4] = items3;

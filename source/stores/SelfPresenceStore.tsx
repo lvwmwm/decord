@@ -1,9 +1,9 @@
-// Module ID: 5037
-// Function ID: 5038
+// Module ID: 5059
+// Function ID: 5060
 // Name: filterPlayingActivities
-// Dependencies: [5038, 1340, 4378, 5169, 4381, 10396, 4431, 4360, 676, 4390, 4034, 1403, 9703, 659, 12, 589, 709, 2]
+// Dependencies: [5060, 1340, 4378, 5190, 4381, 10410, 4431, 4360, 676, 4390, 4034, 1403, 9714, 659, 12, 589, 709, 2]
 
-// Module 5037 (filterPlayingActivities)
+// Module 5059 (filterPlayingActivities)
 import upsertAccount from "upsertAccount";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import gameFromServer from "gameFromServer";
@@ -65,7 +65,7 @@ function shouldShowActivity(flags) {
   } else {
     const type = flags.type;
     if (constants2.LISTENING === type) {
-      if (importDefault(9703)(flags)) {
+      if (importDefault(9714)(flags)) {
         let shouldShowActivityResult = upsertAccount.shouldShowActivity();
       } else {
         shouldShowActivityResult = null != flags.application_id;

@@ -1,10 +1,10 @@
-// Module ID: 11021
-// Function ID: 11022
+// Module ID: 11037
+// Function ID: 11038
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 1994, 1930, 4188, 7128, 676, 1301, 5166, 21, 4342, 712, 5165, 11022, 5041, 1435, 1363, 1297, 11025, 11026, 4065, 11027, 11028, 4311, 5796, 4061, 1236, 8981, 4539, 4058, 4887, 4338, 4072, 589, 7010, 11029, 2]
+// Dependencies: [19, 17, 1994, 1930, 4188, 7150, 676, 1301, 5188, 21, 4342, 712, 5187, 11038, 5063, 1435, 1363, 1297, 11041, 11042, 4065, 11043, 11044, 4311, 5817, 4061, 1236, 8995, 4549, 4058, 4909, 4338, 4072, 589, 7032, 11045, 2]
 // Exports: default, useAppplicationRoleConnectionItems, useConnectedAccountItems
 
-// Module 11021 (LegacyUserProfileConnections)
+// Module 11037 (LegacyUserProfileConnections)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "Button";
 import _getSystemLocale from "_getSystemLocale";

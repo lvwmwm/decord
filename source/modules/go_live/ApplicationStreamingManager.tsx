@@ -1,9 +1,9 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17029
+// Function ID: 17030
 // Name: updateRegion
-// Dependencies: [4364, 1218, 1391, 4263, 4437, 1979, 4430, 1922, 4409, 676, 12, 4524, 687, 4408, 4227, 709, 5301, 9219, 16993, 2]
+// Dependencies: [4364, 1218, 1391, 4263, 4437, 1979, 4430, 1922, 4409, 676, 12, 4524, 687, 4408, 4227, 709, 5322, 9233, 17009, 2]
 
-// Module 17013 (updateRegion)
+// Module 17029 (updateRegion)
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

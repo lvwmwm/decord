@@ -1,10 +1,10 @@
-// Module ID: 5191
-// Function ID: 5192
+// Module ID: 5212
+// Function ID: 5213
 // Name: ButtonGroup
-// Dependencies: [19, 21, 4342, 4753, 2]
+// Dependencies: [19, 21, 4342, 4775, 2]
 // Exports: ButtonGroup
 
-// Module 5191 (ButtonGroup)
+// Module 5212 (ButtonGroup)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -32,5 +32,5 @@ export const ButtonGroup = function ButtonGroup(size) {
   const items = [callback().container, style];
   obj.style = items;
   obj.children = children;
-  return jsx(require(4753) /* Stack */.Stack, {});
+  return jsx(require(4775) /* Stack */.Stack, {});
 };

@@ -1,17 +1,17 @@
-// Module ID: 12150
-// Function ID: 12151
-// Dependencies: [5, 676, 5168, 503, 1404, 530, 709, 2]
+// Module ID: 12168
+// Function ID: 12169
+// Dependencies: [5, 676, 4562, 503, 1404, 530, 709, 2]
 
-// Module 12150
+// Module 12168
 import sendRequest from "sendRequest";
 import { Endpoints } from "ME";
 
 const require = arg1;
-const result = require("module_5168").fileFinishedImporting("actions/HubActionCreators.tsx");
+const result = require("module_4562").fileFinishedImporting("actions/HubActionCreators.tsx");
 
 export default {
   signup(email, school) {
-    let obj = importDefault(5168);
+    let obj = importDefault(4562);
     obj = { url: Endpoints.HUB_WAITLIST_SIGNUP, body: obj, trackedActionData: null, rejectWithError: null };
     obj = { email, school };
     obj[2] = {

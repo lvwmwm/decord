@@ -1,10 +1,10 @@
-// Module ID: 10074
-// Function ID: 10075
+// Module ID: 10086
+// Function ID: 10087
 // Name: MediaKeyboardLimitedPickerNotice
-// Dependencies: [19, 17, 21, 4342, 4338, 1236, 4755, 2]
+// Dependencies: [19, 17, 21, 4342, 4338, 1236, 4777, 2]
 // Exports: default
 
-// Module 10074 (MediaKeyboardLimitedPickerNotice)
+// Module 10086 (MediaKeyboardLimitedPickerNotice)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -42,7 +42,7 @@ export default function MediaKeyboardLimitedPickerNotice(onHeightChange) {
   const intl2 = onHeightChange(1236).intl;
   obj1[2] = intl2.string(onHeightChange(1236).t.JuXTi6);
   obj1[3] = onHeightChange.onPress;
-  obj[1] = callback(onHeightChange(4755).Button, obj1);
+  obj[1] = callback(onHeightChange(4777).Button, obj1);
   items2[1] = callback(View, obj);
   obj[2] = items2;
   return closure_5(View, obj);

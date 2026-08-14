@@ -1,10 +1,10 @@
-// Module ID: 12803
-// Function ID: 12804
+// Module ID: 12821
+// Function ID: 12822
 // Name: isUserEligibleBasedOnCurrentOrPreviousSubs
-// Dependencies: [5, 1922, 4013, 6961, 6908, 7388, 1924, 676, 3943, 4007, 500, 4581, 6928, 12804, 12805, 647, 6958, 7385, 12806, 12807, 4664, 7689, 2]
+// Dependencies: [5, 1922, 4013, 6982, 6929, 7410, 1924, 676, 3943, 4007, 500, 4603, 6949, 12822, 12823, 647, 6979, 7407, 12824, 12825, 4686, 7710, 2]
 // Exports: maybeFetchActiveBogoPromotion, useIsEligibleForBogoPromotion
 
-// Module 12803 (isUserEligibleBasedOnCurrentOrPreviousSubs)
+// Module 12821 (isUserEligibleBasedOnCurrentOrPreviousSubs)
 import createEmptyPromotionsByType from "createEmptyPromotionsByType";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
@@ -72,7 +72,7 @@ function isUserEligibleBasedOnCurrentOrPreviousSubs(experimentEnabled) {
       }
       return false;
     }
-    const isMobile = require(4581) /* isTablet */.isMobile;
+    const isMobile = require(4603) /* isTablet */.isMobile;
     let tmp20 = !isMobile;
     if (isMobile) {
       tmp20 = !fractionalPremiumActive.isFractionalPremiumActive();
@@ -159,13 +159,13 @@ function _isEligibleForBOGOPromotion() {
                   isClaimedResult = currentUser2.isClaimed();
                 }
                 dependencyMap = !isClaimedResult;
-                let obj2 = flag(6928);
+                let obj2 = flag(6949);
                 isPaymentsBlocked = obj2.getIsPaymentsBlocked();
-                let obj3 = flag(12805);
+                let obj3 = flag(12823);
                 authStore = obj3.getBogoPromotionGateEnabled("bogo eligibility async check");
-                let obj4 = flag(12807);
+                let obj4 = flag(12825);
                 store = obj4.getBogoMarketingMaterialsEnabled("bogo marketing eligibility async check");
-                const isMobile = flag(4581).isMobile;
+                const isMobile = flag(4603).isMobile;
                 let isAndroidResult = !isMobile;
                 if (isMobile) {
                   let obj5 = flag(500);
@@ -195,7 +195,7 @@ function _isEligibleForBOGOPromotion() {
                             isPaymentsBlocked = 2;
                             authStore = 1;
                             obj2 = { value: null, done: false };
-                            obj2[0] = flag(4664).fetchMostRecentSubscription();
+                            obj2[0] = flag(4686).fetchMostRecentSubscription();
                             return obj2;
                           }
                         }
@@ -241,7 +241,7 @@ function _isEligibleForBOGOPromotion() {
               isPaymentsBlocked = 3;
               authStore = 1;
               const obj6 = { value: null, done: false };
-              obj6[0] = flag(4664).fetchSubscriptions();
+              obj6[0] = flag(4686).fetchSubscriptions();
               return obj6;
             }
           }
@@ -370,27 +370,27 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
   if (arg0 === undefined) {
     flag = true;
   }
-  const isPaymentsBlocked = require(6928) /* useBlockedPaymentsConfig */.useIsPaymentsBlocked();
-  const obj = require(6928) /* useBlockedPaymentsConfig */;
-  const promotion = require(12804) /* useEligibleActiveOutboundPromotions */.useBogoPromotion().promotion;
-  const obj2 = require(12804) /* useEligibleActiveOutboundPromotions */;
-  const bogoPromotionGateEnabled = require(12805) /* apexExperiment */.useBogoPromotionGateEnabled("bogo eligibility hook");
-  const obj3 = require(12805) /* apexExperiment */;
+  const isPaymentsBlocked = require(6949) /* useBlockedPaymentsConfig */.useIsPaymentsBlocked();
+  const obj = require(6949) /* useBlockedPaymentsConfig */;
+  const promotion = require(12822) /* useEligibleActiveOutboundPromotions */.useBogoPromotion().promotion;
+  const obj2 = require(12822) /* useEligibleActiveOutboundPromotions */;
+  const bogoPromotionGateEnabled = require(12823) /* apexExperiment */.useBogoPromotionGateEnabled("bogo eligibility hook");
+  const obj3 = require(12823) /* apexExperiment */;
   const items = [reset];
   const stateFromStoresObject = require(647) /* defaultAreStatesEqual */.useStateFromStoresObject(items, () => ({ mostRecentSubscription: store.getMostRecentPremiumTypeSubscription(), premiumSubscription: store.getPremiumTypeSubscription(), previousPremiumSubscription: store.getPreviousPremiumTypeSubscription() }));
   ({ mostRecentSubscription, premiumSubscription, previousPremiumSubscription } = stateFromStoresObject);
   const obj4 = require(647) /* defaultAreStatesEqual */;
-  const premiumTrialOffer = require(6958) /* usePremiumTrialOffer */.usePremiumTrialOffer();
-  const obj5 = require(6958) /* usePremiumTrialOffer */;
+  const premiumTrialOffer = require(6979) /* usePremiumTrialOffer */.usePremiumTrialOffer();
+  const obj5 = require(6979) /* usePremiumTrialOffer */;
   let num;
-  const premiumDiscountOffer = require(7385) /* usePremiumDiscountOffer */.usePremiumDiscountOffer();
+  const premiumDiscountOffer = require(7407) /* usePremiumDiscountOffer */.usePremiumDiscountOffer();
   if (promotion != null) {
     num = promotion.endDate;
   }
   if (num == null) {
     num = 0;
   }
-  const obj6 = require(7385) /* usePremiumDiscountOffer */;
+  const obj6 = require(7407) /* usePremiumDiscountOffer */;
   const valueOfResult = new Date(num).valueOf();
   const timestamp = Date.now();
   let num2 = -1;
@@ -398,15 +398,15 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
   if (timestamp <= valueOfResult) {
     num2 = valueOfResult - timestamp;
   }
-  importDefault(12806)({ delay: num2 });
-  const isMobile = tmp(4581).isMobile;
+  importDefault(12824)({ delay: num2 });
+  const isMobile = tmp(4603).isMobile;
   let isAndroidResult = !isMobile;
   if (isMobile) {
     let tmpResult = tmp(500);
     isAndroidResult = tmpResult.isAndroid();
   }
-  const tmp11 = importDefault(12806);
-  tmpResult = tmp(12807);
+  const tmp11 = importDefault(12824);
+  tmpResult = tmp(12825);
   let bogoMarketingMaterialsEnabled = tmpResult.useBogoMarketingMaterialsEnabled("bogo marketing eligibility hook");
   let tmp16 = !tmp10;
   if (timestamp <= valueOfResult) {

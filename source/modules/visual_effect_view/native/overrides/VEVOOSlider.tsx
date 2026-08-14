@@ -1,8 +1,8 @@
-// Module ID: 15132
-// Function ID: 15133
-// Dependencies: [19, 21, 4342, 500, 712, 8034, 2]
+// Module ID: 15146
+// Function ID: 15147
+// Dependencies: [19, 21, 4342, 500, 712, 8055, 2]
 
-// Module 15132
+// Module 15146
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import set from "set";
@@ -39,7 +39,7 @@ export default require("noop").memo(function VEVOOSlider(disabled) {
   obj[5] = importDefault(712).unsafe_rawColors.BRAND_500;
   obj[6] = importDefault(712).unsafe_rawColors.PRIMARY_400;
   obj[7] = onValueChange;
-  const tmp5 = importDefault(8034);
+  const tmp5 = importDefault(8055);
   let fn;
   if (obj2.isAndroid()) {
     fn = () => true;

@@ -1,10 +1,10 @@
-// Module ID: 11547
-// Function ID: 11548
+// Module ID: 11563
+// Function ID: 11564
 // Name: context
 // Dependencies: [19, 500, 4083, 2]
 // Exports: createUseAnimatedScrollLock
 
-// Module 11547 (context)
+// Module 11563 (context)
 import set from "set";
 import set from "module_4083";
 

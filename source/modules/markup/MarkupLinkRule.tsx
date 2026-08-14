@@ -1,9 +1,9 @@
-// Module ID: 4780
-// Function ID: 4781
+// Module ID: 4802
+// Function ID: 4803
 // Name: validateContentTypes
-// Dependencies: [32, 1405, 4781, 4775, 1370, 4326, 1486, 4782, 4060, 12, 2]
+// Dependencies: [32, 1405, 4803, 4797, 1370, 4326, 1486, 4804, 4060, 12, 2]
 
-// Module 4780 (validateContentTypes)
+// Module 4802 (validateContentTypes)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -27,7 +27,7 @@ function validateContentTypes(content, items, items2) {
         let tmp4 = nextResult;
         let tmp5 = require;
         let tmp6 = dependencyMap;
-        if (tmp3.type === require(4775) /* AST_KEY */.AST_KEY.INLINE_CODE) {
+        if (tmp3.type === require(4797) /* AST_KEY */.AST_KEY.INLINE_CODE) {
           items2 = [];
           let tmp7 = items2;
           let tmp8 = items;
@@ -72,35 +72,35 @@ function getRawText(content) {
     let type = nextResult.type;
     let tmp3 = require;
     let tmp4 = dependencyMap;
-    if (require(4775) /* AST_KEY */.AST_KEY.TEXT !== type) {
-      if (tmp3(4775).AST_KEY.INLINE_CODE !== type) {
-        if (tmp3(4775).AST_KEY.CUSTOM_EMOJI === type) {
+    if (require(4797) /* AST_KEY */.AST_KEY.TEXT !== type) {
+      if (tmp3(4797).AST_KEY.INLINE_CODE !== type) {
+        if (tmp3(4797).AST_KEY.CUSTOM_EMOJI === type) {
           let tmp16 = str;
           let tmp17 = nextResult;
           str = `${tmp2.name}`;
-        } else if (tmp3(4775).AST_KEY.EMOJI === type) {
+        } else if (tmp3(4797).AST_KEY.EMOJI === type) {
           let tmp14 = str;
           let tmp15 = nextResult;
           str = `${tmp2.name}${tmp2.surrogate}`;
-        } else if (tmp3(4775).AST_KEY.LINE_BREAK === type) {
+        } else if (tmp3(4797).AST_KEY.LINE_BREAK === type) {
           let tmp13 = str;
           str = `${tmp2.name}${tmp2.surrogate}
   `;
         } else {
-          if (tmp3(4775).AST_KEY.STRONG !== type) {
-            if (tmp3(4775).AST_KEY.ITALICS !== type) {
-              if (tmp3(4775).AST_KEY.UNDERLINE !== type) {
-                if (tmp3(4775).AST_KEY.STRIKETHROUGH !== type) {
-                  if (tmp3(4775).AST_KEY.SPOILER !== type) {
-                    if (tmp3(4775).AST_KEY.TIMESTAMP === type) {
+          if (tmp3(4797).AST_KEY.STRONG !== type) {
+            if (tmp3(4797).AST_KEY.ITALICS !== type) {
+              if (tmp3(4797).AST_KEY.UNDERLINE !== type) {
+                if (tmp3(4797).AST_KEY.STRIKETHROUGH !== type) {
+                  if (tmp3(4797).AST_KEY.SPOILER !== type) {
+                    if (tmp3(4797).AST_KEY.TIMESTAMP === type) {
                       let tmp9 = str;
                       str = `${tmp2.name}${tmp2.surrogate}
   <timestamp>`;
                     } else {
-                      if (tmp3(4775).AST_KEY.BLOCK_QUOTE !== type) {
-                        if (tmp3(4775).AST_KEY.LIST !== type) {
-                          if (tmp3(4775).AST_KEY.HEADING !== type) {
-                            if (tmp3(4775).AST_KEY.SUBTEXT !== type) {
+                      if (tmp3(4797).AST_KEY.BLOCK_QUOTE !== type) {
+                        if (tmp3(4797).AST_KEY.LIST !== type) {
+                          if (tmp3(4797).AST_KEY.HEADING !== type) {
+                            if (tmp3(4797).AST_KEY.SUBTEXT !== type) {
                               let tmp3Result = tmp3(1370);
                               let tmp5 = nextResult;
                               let assertNeverResult = tmp3Result.assertNever(tmp2.type);
@@ -138,11 +138,11 @@ function isSuspiciousUrl(url) {
   } else {
     let value = tmp2.get(url);
     if (null == value) {
-      let tmpResult = tmp(4781);
+      let tmpResult = tmp(4803);
       const sanitizeWhitespaceResult = tmpResult.sanitizeWhitespace(url);
       obj = { whitespaceSanitized: null, fullySanitized: null };
       obj[0] = sanitizeWhitespaceResult;
-      tmpResult = tmp(4781);
+      tmpResult = tmp(4803);
       obj[1] = tmpResult.sanitizeUnicodeConfusables(sanitizeWhitespaceResult);
       const result = obj2.set(url, obj);
       value = obj;
@@ -197,15 +197,15 @@ function punycodeLink(url) {
           const error1 = new Error("no hostname");
           throw error1;
         }
-        let obj = importDefault(4782);
+        let obj = importDefault(4804);
         tmp9.hostname = obj.toASCII(tmp9.hostname.toLowerCase());
         tmp9.username = "";
         tmp9.password = "";
         obj = { target: null, displayTarget: null };
-        obj[0] = require(4781) /* safelyPartiallyDecodeURIComponent */.safelyMakeUrlHumanReadable(tmp9);
-        const obj2 = require(4781) /* safelyPartiallyDecodeURIComponent */;
+        obj[0] = require(4803) /* safelyPartiallyDecodeURIComponent */.safelyMakeUrlHumanReadable(tmp9);
+        const obj2 = require(4803) /* safelyPartiallyDecodeURIComponent */;
         const str6 = tmp9.hostname;
-        obj[1] = require(4781) /* safelyPartiallyDecodeURIComponent */.safelyMakeUrlHumanReadable(tmp9);
+        obj[1] = require(4803) /* safelyPartiallyDecodeURIComponent */.safelyMakeUrlHumanReadable(tmp9);
         return obj;
       } else {
         const _Error = Error;
@@ -231,43 +231,54 @@ obj.match = function match(arr, allowLinks) {
     if (-1 === arr.indexOf("](")) {
       return null;
     } else {
-      let num3 = 0;
       let num4 = 0;
+      let num7 = 0;
       let num5 = 0;
+      let num6 = 0;
       if (0 < arr.length) {
         while (true) {
-          let tmp3 = arr[num3];
-          let tmp4 = num3;
-          let tmp5 = num4;
+          let tmp3 = arr[num4];
+          let tmp4 = num4;
+          let tmp5 = num7;
           let tmp6 = num5;
+          let tmp7 = num6;
           let num2 = 0;
-          let tmp7 = num5;
+          if (2 <= num6) {
+            num2 = num7 + 1;
+            if (100 < num2) {
+              break;
+            }
+          }
+          let num3 = 0;
+          let tmp8 = num6;
           if (")" !== tmp3) {
             if ("[" === tmp3) {
-              let sum = num5 + 1;
+              let sum = num6 + 1;
               if (10 < sum) {
-                break;
+                let tmp14 = null;
+                return null;
               }
             } else if ("]" === tmp3) {
-              sum = num5;
-              if (0 < num5) {
-                sum = num5 - 1;
+              sum = num6;
+              if (0 < num6) {
+                sum = num6 - 1;
               }
             } else {
-              sum = num5;
-              num2 = num4;
-              tmp7 = num5;
+              sum = num6;
+              num3 = num5;
+              tmp8 = num6;
             }
-            num2 = num4 + 1;
-            tmp7 = sum;
-            if (200 < num2) {
-              let tmp12 = null;
+            num3 = num5 + 1;
+            tmp8 = sum;
+            if (200 < num3) {
+              let tmp13 = null;
               return null;
             }
           }
-          num3 = num3 + 1;
-          num4 = num2;
-          num5 = tmp7;
+          num4 = num4 + 1;
+          num5 = num3;
+          num6 = tmp8;
+          num7 = num2;
         }
         return null;
       }
@@ -285,29 +296,29 @@ obj.parse = function parse(arg0, rules, allowEmojiLinks) {
   [tmp2, tmp3, tmp4, tmp5] = callback(arg0, 4);
   if (isSuspiciousUrl(tmp4)) {
     let obj = { type: null, content: null };
-    obj[0] = require(4775) /* AST_KEY */.AST_KEY.TEXT;
+    obj[0] = require(4797) /* AST_KEY */.AST_KEY.TEXT;
     obj[1] = tmp2;
     return obj;
   } else {
     obj = tmp2;
     let value = tmp2.get(tmp4);
     if (null == value) {
-      let obj1 = require(4781) /* safelyPartiallyDecodeURIComponent */;
+      let obj1 = require(4803) /* safelyPartiallyDecodeURIComponent */;
       const sanitizeWhitespaceResult = obj1.sanitizeWhitespace(tmp4);
       obj = { whitespaceSanitized: null, fullySanitized: null };
       obj[0] = sanitizeWhitespaceResult;
-      let obj3 = require(4781) /* safelyPartiallyDecodeURIComponent */;
+      let obj3 = require(4803) /* safelyPartiallyDecodeURIComponent */;
       obj[1] = obj3.sanitizeUnicodeConfusables(sanitizeWhitespaceResult);
       const result = obj.set(tmp4, obj);
       value = obj;
     }
     value = obj.get(tmp3);
     if (null == value) {
-      let obj4 = require(4781) /* safelyPartiallyDecodeURIComponent */;
+      let obj4 = require(4803) /* safelyPartiallyDecodeURIComponent */;
       const sanitizeWhitespaceResult1 = obj4.sanitizeWhitespace(tmp3);
       obj1 = { whitespaceSanitized: null, fullySanitized: null };
       obj1[0] = sanitizeWhitespaceResult1;
-      let obj6 = require(4781) /* safelyPartiallyDecodeURIComponent */;
+      let obj6 = require(4803) /* safelyPartiallyDecodeURIComponent */;
       obj1[1] = obj6.sanitizeUnicodeConfusables(sanitizeWhitespaceResult1);
       const result1 = obj.set(tmp3, obj1);
       value = obj1;
@@ -318,14 +329,14 @@ obj.parse = function parse(arg0, rules, allowEmojiLinks) {
     }
     let value1 = obj.get(str);
     if (null == value1) {
-      let obj7 = require(4781) /* safelyPartiallyDecodeURIComponent */;
+      let obj7 = require(4803) /* safelyPartiallyDecodeURIComponent */;
       const sanitizeWhitespaceResult2 = obj7.sanitizeWhitespace(str);
       const obj2 = { whitespaceSanitized: null, fullySanitized: null };
       obj2[0] = sanitizeWhitespaceResult2;
-      obj2[1] = require(4781) /* safelyPartiallyDecodeURIComponent */.sanitizeUnicodeConfusables(sanitizeWhitespaceResult2);
+      obj2[1] = require(4803) /* safelyPartiallyDecodeURIComponent */.sanitizeUnicodeConfusables(sanitizeWhitespaceResult2);
       const result2 = obj.set(str, obj2);
       value1 = obj2;
-      const obj10 = require(4781) /* safelyPartiallyDecodeURIComponent */;
+      const obj10 = require(4803) /* safelyPartiallyDecodeURIComponent */;
     }
     const trimmed = str3.trim();
     if (0 !== str2.trim().length) {
@@ -343,13 +354,13 @@ obj.parse = function parse(arg0, rules, allowEmojiLinks) {
             HermesBuiltin.arraySpread(items3, HermesBuiltin.arraySpread(tmp28, 0));
             items1 = [];
             HermesBuiltin.arraySpread(items5, HermesBuiltin.arraySpread(items4, 0));
-            items2 = [require(4775) /* AST_KEY */.AST_KEY.EMOJI];
+            items2 = [require(4797) /* AST_KEY */.AST_KEY.EMOJI];
             const tmp43 = validateContentTypes(rules(str3, obj3), items, items2);
             if (null != tmp43) {
               if (null != validateContentTypes(rules(value1.fullySanitized, obj3), items1)) {
                 if (0 === str4.trim().length) {
                   obj4 = { type: null, content: null };
-                  obj4[0] = tmp42(4775).AST_KEY.TEXT;
+                  obj4[0] = tmp42(4797).AST_KEY.TEXT;
                   obj4[1] = tmp2;
                   return obj4;
                 } else {
@@ -365,19 +376,19 @@ obj.parse = function parse(arg0, rules, allowEmojiLinks) {
               }
             }
             obj6 = { type: null, content: null };
-            obj6[0] = require(4775) /* AST_KEY */.AST_KEY.TEXT;
+            obj6[0] = require(4797) /* AST_KEY */.AST_KEY.TEXT;
             obj6[1] = tmp2;
             return obj6;
           }
         }
         obj7 = { type: null, content: null };
-        obj7[0] = require(4775) /* AST_KEY */.AST_KEY.TEXT;
+        obj7[0] = require(4797) /* AST_KEY */.AST_KEY.TEXT;
         obj7[1] = tmp2;
         return obj7;
       }
     }
     const obj8 = { type: null, content: null };
-    obj8[0] = require(4775) /* AST_KEY */.AST_KEY.TEXT;
+    obj8[0] = require(4797) /* AST_KEY */.AST_KEY.TEXT;
     obj8[1] = tmp2;
     return obj8;
   }

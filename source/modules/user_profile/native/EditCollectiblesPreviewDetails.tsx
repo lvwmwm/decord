@@ -1,10 +1,10 @@
-// Module ID: 8346
-// Function ID: 8347
+// Module ID: 8368
+// Function ID: 8369
 // Name: EditCollectiblesPreviewDescription
-// Dependencies: [19, 17, 1994, 21, 4342, 589, 4007, 7061, 4031, 4338, 1236, 8326, 2]
+// Dependencies: [19, 17, 1994, 21, 4342, 589, 4007, 7083, 4031, 4338, 1236, 8348, 2]
 // Exports: default
 
-// Module 8346 (EditCollectiblesPreviewDescription)
+// Module 8368 (EditCollectiblesPreviewDescription)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -29,15 +29,15 @@ function EditCollectiblesPreviewDescription(arg0) {
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   let obj1 = importDefault(4007);
   const canUseCollectiblesResult = obj1.canUseCollectibles(user);
-  let obj2 = require(7061) /* getItemRecordsFromPurchases */;
+  let obj2 = require(7083) /* getItemRecordsFromPurchases */;
   let result = obj2.isPremiumCollectiblesProduct(product);
   if (!result) {
-    let tmpResult = tmp(7061);
+    let tmpResult = tmp(7083);
     result = tmpResult.isPremiumCollectiblesPurchase(purchase);
   }
   let result1 = !canUseCollectiblesResult;
   if (!canUseCollectiblesResult) {
-    tmpResult = tmp(7061);
+    tmpResult = tmp(7083);
     result1 = tmpResult.isPremiumCollectiblesPurchase(purchase);
   }
   if (null != purchase) {
@@ -135,7 +135,7 @@ export default function EditCollectiblesPreviewDetails(previewSkuId) {
   previewSkuId = previewSkuId.previewSkuId;
   ({ user, nitroJoinCTA, nitroUpgradeCTA } = previewSkuId);
   const tmp = callback2();
-  ({ product, purchase } = importDefault(8326)(previewSkuId));
+  ({ product, purchase } = importDefault(8348)(previewSkuId));
   let tmp5Result = null;
   if (null != previewSkuId) {
     if (null != product) {

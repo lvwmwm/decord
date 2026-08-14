@@ -1,10 +1,10 @@
-// Module ID: 7420
-// Function ID: 7421
+// Module ID: 7441
+// Function ID: 7442
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4257, 676, 7421, 698, 2]
+// Dependencies: [4257, 676, 7442, 698, 2]
 // Exports: trackPaymentFlowStartedAnalyticsAndCTP
 
-// Module 7420 (commonTriggerPointConfiguration)
+// Module 7441 (commonTriggerPointConfiguration)
 import { AnalyticEvents } from "ME";
 
 const commonTriggerPointConfiguration = new require("registeredExperimentIds").CommonTriggerPointConfiguration([], require("ExperimentBuckets").CommonTriggerPoints.PAYMENT_FLOW_STARTED, { location: "payment flow started" });

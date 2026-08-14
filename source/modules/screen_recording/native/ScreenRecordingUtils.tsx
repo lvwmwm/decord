@@ -1,10 +1,10 @@
-// Module ID: 15137
-// Function ID: 15138
+// Module ID: 15151
+// Function ID: 15152
 // Name: _getLatestVideo
-// Dependencies: [5, 17, 15136, 4683, 15138, 15139, 4310, 15140, 2007, 9913, 4892, 8850, 9912, 1493, 2]
+// Dependencies: [5, 17, 15150, 4705, 15152, 15153, 4310, 15154, 2007, 9924, 4914, 8864, 9923, 1493, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 15137 (_getLatestVideo)
+// Module 15151 (_getLatestVideo)
 import SURVEY_CONFIGS from "SURVEY_CONFIGS";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { useScreenRecordingStore } from "useScreenRecordingStore";
@@ -152,7 +152,7 @@ function _checkAndRequestPermissions() {
         } else if (1 === tmp7) {
           c3 = 0;
           callback = dependencyMap;
-          let obj3 = callback(4683);
+          let obj3 = callback(4705);
           const obj2 = { title: "Error", body: null };
           const _HermesInternal = HermesInternal;
           obj2[1] = "Failed to check permissions, error: " + callback;
@@ -173,12 +173,12 @@ function _checkAndRequestPermissions() {
           if (closure_0.photosGranted) {
             let flag2 = closure_0.microphoneGranted;
             if (!flag2) {
-              obj1 = callback(4683);
+              obj1 = callback(4705);
               obj1.show({ title: "Error", body: "Microphone permission is required to record audio" });
               flag2 = false;
             }
           } else {
-            obj = callback(4683);
+            obj = callback(4705);
             obj.show({ title: "Error", body: "Photos permission is required to save recordings" });
           }
           c3 = 0;
@@ -363,7 +363,7 @@ function _stopRecordingProcess() {
         } else if (1 === tmp7) {
           c3 = 0;
           closure_0 = dependencyMap;
-          let obj3 = callback(4683);
+          let obj3 = callback(4705);
           const obj2 = { title: "Error", body: null };
           const _HermesInternal = HermesInternal;
           obj2[1] = "Failed to stop screen recording, error: " + closure_0;
@@ -384,7 +384,7 @@ function _stopRecordingProcess() {
         } else {
           let flag = arg1.success;
           if (!flag) {
-            obj = callback(4683);
+            obj = callback(4705);
             obj.show({ title: "Error", body: "Failed to stop screen recording, but not error" });
             flag = false;
           }
@@ -733,7 +733,7 @@ function _submitBugReportWithScreenRecording() {
                       throwTypeErrorResult = SURVEY_CONFIGS;
                       obj14 = SURVEY_CONFIGS;
                       if (SURVEY_CONFIGS == null) {
-                        obj14 = { name: null, squad: null, asana_inbox_id: "Array" };
+                        obj14 = { name: null, squad: null, asana_inbox_id: "r" };
                         obj14[0] = uri.uploadConfig.featureName;
                         obj14[1] = uri.uploadConfig.squadName;
                       }

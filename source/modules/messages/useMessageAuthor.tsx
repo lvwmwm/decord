@@ -1,10 +1,10 @@
-// Module ID: 4573
-// Function ID: 4574
+// Module ID: 4595
+// Function ID: 4596
 // Name: useNullableMessageAuthor
-// Dependencies: [1391, 1990, 1983, 1910, 3998, 1922, 38, 589, 4187, 4574, 2]
+// Dependencies: [1391, 1990, 1983, 1910, 3998, 1922, 38, 589, 4187, 4596, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4573 (useNullableMessageAuthor)
+// Module 4595 (useNullableMessageAuthor)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

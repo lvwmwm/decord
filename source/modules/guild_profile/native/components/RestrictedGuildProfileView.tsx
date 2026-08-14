@@ -1,10 +1,10 @@
-// Module ID: 9305
-// Function ID: 9306
+// Module ID: 9319
+// Function ID: 9320
 // Name: RestrictedGuildProfileView
-// Dependencies: [19, 17, 21, 9306, 4278, 4065, 712, 4766, 5819, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 9320, 4278, 4065, 712, 4788, 5840, 4338, 1236, 2]
 // Exports: default
 
-// Module 9305 (RestrictedGuildProfileView)
+// Module 9319 (RestrictedGuildProfileView)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,25 +16,25 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/RestrictedGuildProfileView.tsx");
 
 export default function RestrictedGuildProfileView() {
-  let obj = require(9306) /* GuildProfileBackground */;
+  let obj = require(9320) /* GuildProfileBackground */;
   const styles = obj.useStyles();
   let obj1 = require(4065) /* map */;
   obj = { style: styles.container, children: null };
   const token = obj1.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWEST);
   obj = { style: styles.colorBanner, start: null, end: null, colors: null };
   const tmp2 = importDefault(4278)();
-  obj[1] = require(9306) /* GuildProfileBackground */.DiagonalGradient.START;
-  obj[2] = require(9306) /* GuildProfileBackground */.DiagonalGradient.END;
-  let obj4 = require(9306) /* GuildProfileBackground */;
+  obj[1] = require(9320) /* GuildProfileBackground */.DiagonalGradient.START;
+  obj[2] = require(9320) /* GuildProfileBackground */.DiagonalGradient.END;
+  let obj4 = require(9320) /* GuildProfileBackground */;
   obj[3] = obj4.getBackgroundForProfile(tmp2, token);
-  const items = [callback(importDefault(4766), obj), , ];
+  const items = [callback(importDefault(4788), obj), , ];
   obj1 = { style: styles.header, children: null };
   const obj2 = { style: styles.avatarBackground, children: null };
   const obj3 = { size: null, value: "?", selected: false, textStyle: null };
-  const tmp4 = importDefault(4766);
-  obj3[0] = require(5819) /* GuildIconSizes */.GuildIconSizes.XXLARGE;
+  const tmp4 = importDefault(4788);
+  obj3[0] = require(5840) /* GuildIconSizes */.GuildIconSizes.XXLARGE;
   obj3[3] = styles.restrictedAcronym;
-  obj2[1] = callback(importDefault(5819), obj3);
+  obj2[1] = callback(importDefault(5840), obj3);
   obj1[1] = callback(View, obj2);
   items[1] = callback(View, obj1);
   obj4 = { style: styles.body, children: null };

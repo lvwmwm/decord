@@ -1,10 +1,10 @@
-// Module ID: 10539
-// Function ID: 10540
+// Module ID: 10555
+// Function ID: 10556
 // Name: CrunchyrollLinkDiscordSuccess
-// Dependencies: [19, 17, 21, 4342, 10461, 10540, 4338, 1236, 5368, 4755, 2]
+// Dependencies: [19, 17, 21, 4342, 10477, 10556, 4338, 1236, 5389, 4777, 2]
 // Exports: default
 
-// Module 10539 (CrunchyrollLinkDiscordSuccess)
+// Module 10555 (CrunchyrollLinkDiscordSuccess)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,12 +21,12 @@ let closure_7 = createCacheKey.createStyles({ image: { width: 232, height: 108, 
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkSuccess.tsx");
 
 export default function CrunchyrollLinkDiscordSuccess(onClose) {
-  let obj = require(10461) /* styles */;
+  let obj = require(10477) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container, children: null };
   obj = { style: twoWayLinkStyles.content, children: null };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(10540), style: callback3().image }), , ];
+  const items = [callback(closure_3, { source: importDefault(10556), style: callback3().image }), , ];
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.Fnvxvk);
@@ -43,9 +43,9 @@ export default function CrunchyrollLinkDiscordSuccess(onClose) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj6[1] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
   obj6[2] = onClose.onClose;
-  obj5[1] = callback(require(4755) /* Button */.Button, obj6);
+  obj5[1] = callback(require(4777) /* Button */.Button, obj6);
   obj4[2] = callback(closure_4, obj5);
-  items1[1] = callback(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  items1[1] = callback(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

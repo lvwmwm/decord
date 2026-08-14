@@ -1,10 +1,10 @@
-// Module ID: 8396
-// Function ID: 8397
+// Module ID: 8418
+// Function ID: 8419
 // Name: useTopCommands
-// Dependencies: [19, 8389, 685, 1374, 589, 2]
+// Dependencies: [19, 8411, 685, 1374, 589, 2]
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 8396 (useTopCommands)
+// Module 8418 (useTopCommands)
 import noop from "noop";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
 import closure_5 from "handleUserSettingsProtoStoreChange";

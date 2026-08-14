@@ -1,9 +1,9 @@
-// Module ID: 11891
-// Function ID: 11892
+// Module ID: 11907
+// Function ID: 11908
 // Name: sortChannelsByLastMessageId
-// Dependencies: [19, 1395, 1391, 1980, 3989, 4357, 3998, 1922, 11420, 676, 21, 11719, 589, 1370, 1236, 4535, 4539, 1222, 11, 11872, 2]
+// Dependencies: [19, 1395, 1391, 1980, 3989, 4357, 3998, 1922, 11436, 676, 21, 11735, 589, 1370, 1236, 4535, 4549, 1222, 11, 11888, 2]
 
-// Module 11891 (sortChannelsByLastMessageId)
+// Module 11907 (sortChannelsByLastMessageId)
 import { isTextChannel } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";

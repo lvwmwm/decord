@@ -1,9 +1,9 @@
-// Module ID: 16963
-// Function ID: 16964
+// Module ID: 16979
+// Function ID: 16980
 // Name: handleChannelCreate
-// Dependencies: [5, 13276, 676, 5301, 13275, 5906, 2]
+// Dependencies: [5, 13288, 676, 5322, 13287, 5927, 2]
 
-// Module 16963 (handleChannelCreate)
+// Module 16979 (handleChannelCreate)
 import _safeTransitionTo from "_safeTransitionTo";
 import { MIDJOURNEY_GUILD_ID } from "MIDJOURNEY_GUILD_ID";
 import { Routes } from "ME";
@@ -51,20 +51,20 @@ MidjourneyOnboardingManager.prototype["handleChannelCreate"] = function handleCh
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = tmp22(13275).hasRedirectedToGuild(outer1_4);
+              obj1[0] = tmp22(13287).hasRedirectedToGuild(outer1_4);
               return obj1;
             } else {
               dependencyMap = 3;
             }
-            obj6 = outer1_0(13275);
+            obj6 = outer1_0(13287);
             tmp22 = outer1_0;
           }
         } else if (arg0 === 1) {
           dependencyMap = 3;
           throw arg1;
         } else if (arg0 !== 2) {
-          v0(5906)(outer1_5.CHANNEL(null, id.id));
-          const tmp9 = v0(5906);
+          v0(5927)(outer1_5.CHANNEL(null, id.id));
+          const tmp9 = v0(5927);
         }
         dependencyMap = 3;
         obj = { value: null, done: true };

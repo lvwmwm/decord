@@ -1,9 +1,9 @@
-// Module ID: 12157
-// Function ID: 12158
+// Module ID: 12175
+// Function ID: 12176
 // Name: _initialize
-// Dependencies: [1910, 676, 4523, 709, 6000, 2]
+// Dependencies: [1910, 676, 4523, 709, 6021, 2]
 
-// Module 12157 (_initialize)
+// Module 12175 (_initialize)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 import "initialize";

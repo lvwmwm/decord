@@ -1,10 +1,10 @@
-// Module ID: 16761
-// Function ID: 16762
+// Module ID: 16777
+// Function ID: 16778
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 1434, 1910, 1922, 9071, 676, 21, 4342, 712, 589, 9070, 4338, 1236, 4755, 14104, 5754, 2]
+// Dependencies: [19, 17, 1434, 1910, 1922, 9085, 676, 21, 4342, 712, 589, 9084, 4338, 1236, 4777, 14117, 5775, 2]
 // Exports: default
 
-// Module 16761 (GuildSettingsModalSecurity)
+// Module 16777 (GuildSettingsModalSecurity)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import { isGuildOwnerWithRequiredMfaLevel as closure_6 } from "GuildNSFWContentLevel";
@@ -98,7 +98,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   }
   obj3[2] = str;
   obj3[3] = callback;
-  obj2[1] = callback2(guildId(4755).Button, obj3);
+  obj2[1] = callback2(guildId(4777).Button, obj3);
   items4[1] = callback2(closure_4, obj2);
   let hasItem;
   if (stateFromStores != null) {
@@ -117,7 +117,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   obj[1] = items4;
   const items5 = [closure_13(closure_4, obj), ];
   const obj6 = { style: tmp.center, children: null };
-  const items6 = [callback2(closure_5, { source: stateFromStores(14104), style: tmp.image, resizeMode: "contain" }), ];
+  const items6 = [callback2(closure_5, { source: stateFromStores(14117), style: tmp.image, resizeMode: "contain" }), ];
   const obj8 = { style: tmp.infoWrapper, children: null };
   const obj9 = { variant: "text-sm/medium", color: "text-muted", children: null };
   const intl4 = tmp2(1236).intl;
@@ -127,7 +127,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   obj6[1] = items6;
   items5[1] = closure_13(closure_4, obj6);
   obj[1] = items5;
-  const items7 = [closure_13(closure_4, obj), callback2(guildId(5754).NavScrim, {})];
+  const items7 = [closure_13(closure_4, obj), callback2(guildId(5775).NavScrim, {})];
   obj5[0] = items7;
   return closure_13(closure_14, obj5);
 };

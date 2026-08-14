@@ -1,10 +1,10 @@
-// Module ID: 12709
-// Function ID: 12710
+// Module ID: 12727
+// Function ID: 12728
 // Name: GuildPreview
-// Dependencies: [19, 17, 21, 4342, 712, 4191, 4338, 1236, 5819, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4191, 4338, 1236, 5840, 2]
 // Exports: default
 
-// Module 12709 (GuildPreview)
+// Module 12727 (GuildPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,9 +38,9 @@ export default function GuildPreview(guild) {
   items1 = [tmp.guildContainer, { borderColor: hexWithOpacityResult }];
   const obj2 = { size: null, guild: null };
   const str = intl.string(require(1236) /* getSystemLocale */.t["0ox7Hq"]);
-  obj2[0] = require(5819) /* GuildIconSizes */.GuildIconSizes.LARGE;
+  obj2[0] = require(5840) /* GuildIconSizes */.GuildIconSizes.LARGE;
   obj2[1] = guild;
-  const items2 = [callback(importDefault(5819), obj2), callback(require(4338) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.guildInfo, children: guild.name })];
+  const items2 = [callback(importDefault(5840), obj2), callback(require(4338) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.guildInfo, children: guild.name })];
   obj1[1] = items2;
   items[1] = callback2(View, obj1);
   obj[1] = items;

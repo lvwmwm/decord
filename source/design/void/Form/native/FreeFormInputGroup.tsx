@@ -1,8 +1,8 @@
-// Module ID: 8514
-// Function ID: 8515
-// Dependencies: [19, 17, 21, 4342, 500, 5413, 7835, 1297, 8515, 8516, 8518, 4338, 2]
+// Module ID: 8536
+// Function ID: 8537
+// Dependencies: [19, 17, 21, 4342, 500, 5434, 7856, 1297, 8537, 8538, 8540, 4338, 2]
 
-// Module 8514
+// Module 8536
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -48,7 +48,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
     let obj1 = require(500) /* set */;
     str = "visible-password";
   }
-  const context = importAllResult.useContext(require(5413) /* context */.RedesignCompatContext);
+  const context = importAllResult.useContext(require(5434) /* context */.RedesignCompatContext);
   const id = importAllResult.useId();
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
@@ -64,7 +64,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
     obj[8] = str;
     obj[9] = isAndroidResult;
     obj[10] = merged.autoCapitalize;
-    return callback(tmp8(7835).TextInput, obj);
+    return callback(tmp8(7856).TextInput, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = style;
@@ -74,7 +74,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
       obj1[0] = tmp2.label;
       obj1[1] = id;
       obj1[2] = label;
-      tmp14 = callback(importDefault(8515), obj1);
+      tmp14 = callback(importDefault(8537), obj1);
     }
     const items = [tmp14, , , ];
     const obj2 = {};
@@ -96,13 +96,13 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
     obj2.keyboardType = str;
     const items1 = [tmp2.input, accessibilityLabel.textStyle];
     obj2.style = items1;
-    items[1] = callback(importDefault(8516), obj2);
+    items[1] = callback(importDefault(8538), obj2);
     let tmp17Result = null;
     if (null != error) {
       const obj3 = { style: null, children: null };
       obj3[0] = tmp2.error;
       obj3[1] = error;
-      tmp17Result = tmp17(importDefault(8518), obj3);
+      tmp17Result = tmp17(importDefault(8540), obj3);
     }
     items[2] = tmp17Result;
     tmp17Result = null;

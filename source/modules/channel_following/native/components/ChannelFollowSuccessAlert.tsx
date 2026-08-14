@@ -1,10 +1,10 @@
-// Module ID: 10265
-// Function ID: 10266
+// Module ID: 10279
+// Function ID: 10280
 // Name: items
-// Dependencies: [19, 17, 21, 10266, 10267, 10268, 10269, 10270, 10271, 1236, 4342, 4278, 1363, 6951, 12, 4773, 4338, 2]
+// Dependencies: [19, 17, 21, 10280, 10281, 10282, 10283, 10284, 10285, 1236, 4342, 4278, 1363, 6972, 12, 4795, 4338, 2]
 // Exports: default
 
-// Module 10265 (items)
+// Module 10279 (items)
 import "noop";
 import { Image } from "set";
 import jsxProd from "jsxProd";
@@ -66,10 +66,10 @@ export default function ChannelFollowSuccessAlert(arg0) {
   let obj = require(1363) /* AccessibilityAnnouncer */;
   const tmp6 = obj.isThemeDark(importDefault(4278)()) ? items1 : items;
   require = tmp6;
-  let tmp5Result = tmp5(6951);
+  let tmp5Result = tmp5(6972);
   items = [tmp6];
   const stableMemo = tmp5Result.useStableMemo(() => outer1_1(outer1_2[14]).sample(closure_0), items);
-  tmp5Result = tmp5(6951);
+  tmp5Result = tmp5(6972);
   const stableMemo1 = tmp5Result.useStableMemo(() => callback(table[14]).sample(closure_8), []);
   obj = {};
   const tmp2 = importDefault;
@@ -87,5 +87,5 @@ export default function ChannelFollowSuccessAlert(arg0) {
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t["2QbSea"]);
   items1[2] = callback(require(4338) /* Text */.Text, obj2);
   obj.children = items1;
-  return callback2(importDefault(4773), obj);
+  return callback2(importDefault(4795), obj);
 };

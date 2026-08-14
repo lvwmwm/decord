@@ -1,9 +1,9 @@
-// Module ID: 14809
-// Function ID: 14810
+// Module ID: 14823
+// Function ID: 14824
 // Name: handleLogout
-// Dependencies: [21, 595, 691, 5170, 10748, 7638, 5867, 4685, 4688, 1236, 10407, 10764, 2]
+// Dependencies: [21, 595, 691, 5191, 10764, 7659, 5888, 4707, 4710, 1236, 10421, 10780, 2]
 
-// Module 14809 (handleLogout)
+// Module 14823 (handleLogout)
 import jsxProd from "jsxProd";
 import createToggle from "createToggle";
 
@@ -14,13 +14,13 @@ function handleLogout() {
   const Storage = require(595) /* Storage */.Storage;
   const result = Storage.set(require(691) /* keys */.StorageKeys.LOGOUT_TIMESTAMP_KEY, new Date().getTime());
   const date = new Date();
-  importDefault(5170).disconnect();
-  const obj2 = importDefault(5170);
-  const result1 = importDefault(10748).clearAllNotifications();
-  const obj3 = importDefault(10748);
-  importDefault(7638).close();
-  const obj4 = importDefault(7638);
-  importDefault(5867).logout("confirm_logout_alert");
+  importDefault(5191).disconnect();
+  const obj2 = importDefault(5191);
+  const result1 = importDefault(10764).clearAllNotifications();
+  const obj3 = importDefault(10764);
+  importDefault(7659).close();
+  const obj4 = importDefault(7659);
+  importDefault(5888).logout("confirm_logout_alert");
 }
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 const pressable = createToggle.createPressable({
@@ -32,7 +32,7 @@ const pressable = createToggle.createPressable({
   parent: null,
   variant: "danger",
   onPress: function showConfirmLogoutAlert() {
-    let obj = require(4685) /* useAlertStore */;
+    let obj = require(4707) /* useAlertStore */;
     obj = { title: null, content: null, actions: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["2jxGer"]);
@@ -43,14 +43,14 @@ const pressable = createToggle.createPressable({
     const intl3 = require(1236) /* getSystemLocale */.intl;
     obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t["2jxGer"]);
     obj1[1] = handleLogout;
-    const items = [callback(require(4688) /* getAlertModalItemKey */.AlertActionButton, obj1), ];
+    const items = [callback(require(4710) /* getAlertModalItemKey */.AlertActionButton, obj1), ];
     const obj2 = { variant: "secondary", text: null };
     const intl4 = require(1236) /* getSystemLocale */.intl;
     obj2[1] = intl4.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-    items[1] = callback(require(4688) /* getAlertModalItemKey */.AlertActionButton, obj2);
+    items[1] = callback(require(4710) /* getAlertModalItemKey */.AlertActionButton, obj2);
     obj[0] = items;
     obj[2] = callback2(closure_4, obj);
-    obj.openAlert("logout", callback(require(4688) /* getAlertModalItemKey */.AlertModal, obj));
+    obj.openAlert("logout", callback(require(4710) /* getAlertModalItemKey */.AlertModal, obj));
   }
 });
 let obj = {
@@ -62,7 +62,7 @@ let obj = {
   parent: null,
   variant: "danger",
   onPress: function showConfirmLogoutAlert() {
-    let obj = require(4685) /* useAlertStore */;
+    let obj = require(4707) /* useAlertStore */;
     obj = { title: null, content: null, actions: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["2jxGer"]);
@@ -73,14 +73,14 @@ let obj = {
     const intl3 = require(1236) /* getSystemLocale */.intl;
     obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t["2jxGer"]);
     obj1[1] = handleLogout;
-    const items = [callback(require(4688) /* getAlertModalItemKey */.AlertActionButton, obj1), ];
+    const items = [callback(require(4710) /* getAlertModalItemKey */.AlertActionButton, obj1), ];
     const obj2 = { variant: "secondary", text: null };
     const intl4 = require(1236) /* getSystemLocale */.intl;
     obj2[1] = intl4.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-    items[1] = callback(require(4688) /* getAlertModalItemKey */.AlertActionButton, obj2);
+    items[1] = callback(require(4710) /* getAlertModalItemKey */.AlertActionButton, obj2);
     obj[0] = items;
     obj[2] = callback2(closure_4, obj);
-    obj.openAlert("logout", callback(require(4688) /* getAlertModalItemKey */.AlertModal, obj));
+    obj.openAlert("logout", callback(require(4710) /* getAlertModalItemKey */.AlertModal, obj));
   }
 };
 let result = require("keys").fileFinishedImporting("modules/user_settings/defs/native/LogoutSetting.tsx");

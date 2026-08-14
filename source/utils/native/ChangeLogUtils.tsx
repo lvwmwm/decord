@@ -1,9 +1,9 @@
-// Module ID: 8239
-// Function ID: 8240
+// Module ID: 8260
+// Function ID: 8261
 // Name: ChangeLogLink
-// Dependencies: [19, 17, 21, 4342, 712, 5199, 4774, 4338, 8240, 8241, 4060, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5220, 4796, 4338, 8261, 8262, 4060, 2]
 
-// Module 8239 (ChangeLogLink)
+// Module 8260 (ChangeLogLink)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -96,7 +96,7 @@ function ChangeLogStrong(arg0) {
   let output;
   let state;
   ({ node, output, state } = arg0);
-  let obj = require(8240) /* apexExperiment */;
+  let obj = require(8261) /* apexExperiment */;
   if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
     let str;
     if (state != null) {
@@ -107,10 +107,10 @@ function ChangeLogStrong(arg0) {
     }
     obj = { variant: "experimental/body-sm/semibold", color: null, children: null };
     obj[1] = str;
-    obj[2] = tmp(8241).smartOutput(node, output, state);
+    obj[2] = tmp(8262).smartOutput(node, output, state);
     let reactResult = jsx(tmp(4338).Text, { variant: "experimental/body-sm/semibold", color: null, children: null });
     const tmp5 = jsx;
-    const tmpResult = tmp(8241);
+    const tmpResult = tmp(8262);
   } else {
     const strong = rules.strong;
     reactResult = strong.react(node, output, state);

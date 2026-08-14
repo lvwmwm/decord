@@ -1,10 +1,10 @@
-// Module ID: 4932
-// Function ID: 4933
+// Module ID: 4954
+// Function ID: 4955
 // Name: getUploadPayload
-// Dependencies: [1994, 1218, 706, 4893, 12, 698, 2]
+// Dependencies: [1994, 1218, 706, 4915, 12, 698, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 4932 (getUploadPayload)
+// Module 4954 (getUploadPayload)
 import _getSystemLocale from "_getSystemLocale";
 import fetchFingerprint from "fetchFingerprint";
 import refreshSourceMapCookie from "refreshSourceMapCookie";

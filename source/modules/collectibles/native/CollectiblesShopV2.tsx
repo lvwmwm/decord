@@ -1,9 +1,9 @@
-// Module ID: 14897
-// Function ID: 14898
+// Module ID: 14911
+// Function ID: 14912
 // Name: CollectiblesShopInternal
-// Dependencies: [32, 19, 17, 4341, 1302, 1922, 7049, 678, 676, 21, 4342, 5788, 12750, 14898, 589, 5756, 514, 8328, 14899, 500, 7060, 7696, 9398, 9406, 1363, 5768, 1499, 9469, 4020, 14901, 698, 7097, 8356, 14902, 14904, 14925, 1208, 9397, 9620, 14928, 14929, 14907, 14930, 7110, 2]
+// Dependencies: [32, 19, 17, 4341, 1302, 1922, 7071, 678, 676, 21, 4342, 5809, 12768, 14912, 589, 5777, 514, 8350, 14913, 500, 7082, 7717, 9412, 9420, 1363, 5789, 1499, 9482, 4020, 14915, 698, 7119, 8378, 14916, 14918, 14939, 1208, 9411, 9631, 14942, 14943, 14921, 14944, 7132, 2]
 
-// Module 14897 (CollectiblesShopInternal)
+// Module 14911 (CollectiblesShopInternal)
 import maybeFetchUserProfile from "maybeFetchUserProfile";
 import set from "set";
 import get_ActivityIndicator from "useFetchPurchases";

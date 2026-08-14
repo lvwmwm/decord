@@ -1,10 +1,10 @@
-// Module ID: 8700
-// Function ID: 8701
+// Module ID: 8714
+// Function ID: 8715
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4334, 1388, 21, 4083, 589, 4065, 712, 4343, 4754, 4342, 8701, 1236, 7746, 2]
+// Dependencies: [19, 17, 4334, 1388, 21, 4083, 589, 4065, 712, 4343, 4776, 4342, 8715, 1236, 7767, 2]
 // Exports: default
 
-// Module 8700 (BurstReactionToggle)
+// Module 8714 (BurstReactionToggle)
 import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

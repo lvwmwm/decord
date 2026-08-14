@@ -1,10 +1,10 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12737
+// Function ID: 12738
 // Name: DeleteMessageElement
-// Dependencies: [32, 19, 4562, 676, 21, 589, 4539, 6965, 12715, 1236, 4301, 2]
+// Dependencies: [32, 19, 4584, 676, 21, 589, 4549, 6986, 12733, 1236, 4301, 2]
 // Exports: default
 
-// Module 12719 (DeleteMessageElement)
+// Module 12737 (DeleteMessageElement)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -32,10 +32,10 @@ export default function DeleteMessageElement(message) {
   const items3 = [message, reportId];
   const callback = React.useCallback(() => {
     dependencyMap(true);
-    let obj = reportId(4539);
+    let obj = reportId(4549);
     obj = { report_id: reportId };
     obj.trackWithMetadata(outer1_6.IAR_DELETE_MESSAGE_BUTTON_CLICKED, obj);
-    reportId(6965).deleteMessage(message.getChannelId(), message.id);
+    reportId(6986).deleteMessage(message.getChannelId(), message.id);
   }, items3);
   obj = { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null };
   const intl = message(1236).intl;
@@ -47,5 +47,5 @@ export default function DeleteMessageElement(message) {
   obj[3] = tmp[0];
   obj[5] = callback;
   obj[6] = jsx(message(4301).TrashIcon, { color: "text-feedback-critical" });
-  return jsx(reportId(12715), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
+  return jsx(reportId(12733), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
 };

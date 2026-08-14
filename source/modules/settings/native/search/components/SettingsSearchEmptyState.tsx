@@ -1,8 +1,8 @@
-// Module ID: 15003
-// Function ID: 15004
-// Dependencies: [19, 17, 21, 4342, 1351, 1236, 9063, 4753, 4338, 2]
+// Module ID: 15017
+// Function ID: 15018
+// Dependencies: [19, 17, 21, 4342, 1351, 1236, 9077, 4775, 4338, 2]
 
-// Module 15003
+// Module 15017
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
     AccessibilityAnnouncer.announce(intl.string(callback(1236).t.zihbmv), "polite");
   }, []);
   let obj = { style: tmp.container, children: null };
-  const items = [callback(require(9063) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
+  const items = [callback(require(9077) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
   obj = { style: tmp.textContainer, align: "center", justify: "center", children: null };
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
@@ -32,7 +32,7 @@ const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
   obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.XclvsB);
   items1[1] = callback(require(4338) /* Text */.Text, obj1);
   obj[3] = items1;
-  items[1] = callback2(require(4753) /* Stack */.Stack, obj);
+  items[1] = callback2(require(4775) /* Stack */.Stack, obj);
   obj[1] = items;
   return callback2(View, obj);
 });

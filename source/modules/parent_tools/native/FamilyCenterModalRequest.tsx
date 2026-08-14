@@ -1,10 +1,10 @@
-// Module ID: 11373
-// Function ID: 11374
+// Module ID: 11389
+// Function ID: 11390
 // Name: FamilyCenterModalRequestConfirm
-// Dependencies: [5, 19, 17, 1922, 7045, 21, 4342, 712, 1499, 647, 7046, 11374, 7100, 11375, 7852, 7853, 1297, 1435, 1236, 2303, 4338, 11376, 11377, 11385, 5191, 4755, 4550, 6070, 7382, 38, 11011, 8072, 5863, 8902, 1954, 7842, 7844, 4560, 5310, 11386, 11387, 2]
+// Dependencies: [5, 19, 17, 1922, 7067, 21, 4342, 712, 1499, 647, 7068, 11390, 7122, 11391, 7873, 7874, 1297, 1435, 1236, 2303, 4338, 11392, 11393, 11401, 5212, 4777, 4572, 6091, 7404, 38, 11027, 8093, 5884, 8916, 1954, 7863, 7865, 4582, 5331, 11402, 11403, 2]
 // Exports: default
 
-// Module 11373 (FamilyCenterModalRequestConfirm)
+// Module 11389 (FamilyCenterModalRequestConfirm)
 import closure_3 from "jsxProd";
 import messagesProxy from "messagesProxy";
 import get_ActivityIndicator from "getAvatarURL";
@@ -207,7 +207,7 @@ class FamilyCenterModalRequestConfirm {
     obj23 = { variant: "secondary", size: "lg", text: null, onPress: null };
     intl6 = require("getSystemLocale").intl;
     obj23[2] = intl6.string(require("getSystemLocale").t["ETE/oC"]);
-    obj23[3] = require("module_4550").pop;
+    obj23[3] = require("module_4572").pop;
     items10[1] = tmp19(require("Button").Button, obj23);
     obj21[0] = items10;
     obj20[0] = tmp10(require("ButtonGroup").ButtonGroup, obj21);
@@ -231,7 +231,7 @@ class FamilyCenterModalRequestSuccess {
     }, []);
     if (null === stateFromStores) {
       tmp6 = closure_1;
-      arr2 = require("module_4550");
+      arr2 = require("module_4572");
       arr = arr2.pop();
     }
     tmp8 = jsxs;
@@ -444,9 +444,9 @@ function FamilyCenterPrereqLoading(arg0) {
   }, []);
   obj = { children: null };
   obj = { style: callback5().container, children: null };
-  obj[1] = callback(require(5863) /* ActivityIndicator */.ActivityIndicator, {});
+  obj[1] = callback(require(5884) /* ActivityIndicator */.ActivityIndicator, {});
   obj[0] = callback(closure_6, obj);
-  return callback(require(7852) /* ModalScreen */.ModalScreen, obj);
+  return callback(require(7873) /* ModalScreen */.ModalScreen, obj);
 }
 function FamilyCenterPrereqScreen(primaryButton) {
   let description;
@@ -461,10 +461,10 @@ function FamilyCenterPrereqScreen(primaryButton) {
   obj[1] = items;
   const items1 = [callback2(closure_6, obj), ];
   const obj2 = { children: null };
-  obj2[0] = callback(require(4755) /* Button */.Button, { text: primaryButton.text, onPress: primaryButton.onPress });
-  items1[1] = callback(require(11385) /* ModalFooter */.ModalFooter, obj2);
+  obj2[0] = callback(require(4777) /* Button */.Button, { text: primaryButton.text, onPress: primaryButton.onPress });
+  items1[1] = callback(require(11401) /* ModalFooter */.ModalFooter, obj2);
   obj[0] = items1;
-  return callback2(require(7852) /* ModalScreen */.ModalScreen, obj);
+  return callback2(require(7873) /* ModalScreen */.ModalScreen, obj);
 }
 function FamilyCenterConfirmAgeScreen(teenIdentity) {
   teenIdentity = teenIdentity.teenIdentity;
@@ -484,7 +484,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
     }
     return prop;
   });
-  const tmp7 = stateFromStores(8902)(stateFromStores);
+  const tmp7 = stateFromStores(8916)(stateFromStores);
   dependencyMap = tmp7;
   const items1 = [stateFromStores, tmp7, navigation];
   const effect = React.useEffect(() => {
@@ -509,7 +509,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   }, []);
   obj = { style: tmp.content, children: null };
   obj = { style: tmp.art, children: null };
-  obj[1] = callback(navigation(6070).FamilyShieldSpotIllustration, {});
+  obj[1] = callback(navigation(6091).FamilyShieldSpotIllustration, {});
   const items2 = [callback(closure_6, obj), , ];
   obj1 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   const intl = navigation(1236).intl;
@@ -542,19 +542,19 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   const intl3 = tmp2(1236).intl;
   obj6[1] = intl3.string(stateFromStores(2303)["3oUE4o"]);
   obj6[2] = callback;
-  const items4 = [callback(navigation(4755).Button, obj6), ];
+  const items4 = [callback(navigation(4777).Button, obj6), ];
   const obj7 = { variant: "tertiary", text: null, onPress: null };
   const intl4 = tmp2(1236).intl;
   obj7[1] = intl4.string(navigation(1236).t.oEAioF);
   obj7[2] = function onPress() {
     return stateFromStores(_undefined[26]).pop();
   };
-  items4[1] = callback(navigation(4755).Button, obj7);
+  items4[1] = callback(navigation(4777).Button, obj7);
   obj5[0] = items4;
-  obj4[0] = closure_13(navigation(5191).ButtonGroup, obj5);
-  items3[1] = callback(navigation(11385).ModalFooter, obj4);
+  obj4[0] = closure_13(navigation(5212).ButtonGroup, obj5);
+  items3[1] = callback(navigation(11401).ModalFooter, obj4);
   obj2[0] = items3;
-  return closure_13(navigation(7852).ModalScreen, obj2);
+  return closure_13(navigation(7873).ModalScreen, obj2);
 }
 function FamilyCenterVerifyingScreen() {
   let obj = navigation(stateFromStores[8]);
@@ -607,7 +607,7 @@ function FamilyCenterPrereqInvalidCodeScreen() {
   obj = { text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.WAI6xu);
-  obj[1] = importDefault(4550).pop;
+  obj[1] = importDefault(4572).pop;
   obj[2] = obj;
   return callback(FamilyCenterPrereqScreen, obj);
 }
@@ -623,7 +623,7 @@ function FamilyCenterPrereqMustBeAdultScreen() {
     }
     return prop;
   });
-  const tmp3 = stateFromStores(8902)(stateFromStores);
+  const tmp3 = stateFromStores(8916)(stateFromStores);
   const dependencyMap = tmp3;
   const items1 = [stateFromStores, tmp3, navigation];
   const effect = React.useEffect(() => {
@@ -654,7 +654,7 @@ function FamilyCenterPrereqMustBeAdultScreen() {
   obj = { text: null, onPress: null };
   const intl3 = navigation(1236).intl;
   obj[0] = intl3.string(navigation(1236).t["NX+WJN"]);
-  obj[1] = stateFromStores(4550).pop;
+  obj[1] = stateFromStores(4572).pop;
   obj[2] = obj;
   return callback(FamilyCenterPrereqScreen, obj);
 }
@@ -712,7 +712,7 @@ obj18[2] = createCacheKey;
 obj18[3] = { textAlign: "center" };
 let closure_25 = createCacheKey.createStyles(obj18);
 createCacheKey = { headerShown: true, headerLeft: null, headerTitle: null };
-createCacheKey[1] = HeaderBackImage.getHeaderCloseButton(require("module_4550").pop);
+createCacheKey[1] = HeaderBackImage.getHeaderCloseButton(require("module_4572").pop);
 createCacheKey[2] = function headerTitle() {
   return null;
 };
@@ -722,7 +722,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/par
 export default function FamilyCenterRequestModal(userId) {
   userId = userId.userId;
   const linkCode = userId.linkCode;
-  const FamilyCenterConnectionPrereqExperiment = userId(11386).FamilyCenterConnectionPrereqExperiment;
+  const FamilyCenterConnectionPrereqExperiment = userId(11402).FamilyCenterConnectionPrereqExperiment;
   const items = [linkCode, userId];
   const memo = React.useMemo(() => {
     let obj = {};
@@ -804,7 +804,7 @@ export default function FamilyCenterRequestModal(userId) {
     obj[userId(outer1_2[11]).FamilyCenterModalRequestSections.TEEN_SCAN] = obj7;
     return obj;
   }, items);
-  const FamilyCenterModalRequestSections = userId(11374).FamilyCenterModalRequestSections;
+  const FamilyCenterModalRequestSections = userId(11390).FamilyCenterModalRequestSections;
   if (FamilyCenterConnectionPrereqExperiment.useConfig({ location: "FamilyCenterRequestModal" }).enabled) {
     let PREREQ_LOADING = FamilyCenterModalRequestSections.PREREQ_LOADING;
   } else {
@@ -813,7 +813,7 @@ export default function FamilyCenterRequestModal(userId) {
   let obj = { initialRouteName: PREREQ_LOADING, screens: memo, headerBackTitle: null };
   const intl = tmp3(1236).intl;
   obj[2] = intl.string(userId(1236).t["13/7kX"]);
-  return callback(userId(11387).Modal, obj);
+  return callback(userId(11403).Modal, obj);
 };
 export { FamilyCenterModalRequestConfirm };
 export { FamilyCenterModalRequestSuccess };

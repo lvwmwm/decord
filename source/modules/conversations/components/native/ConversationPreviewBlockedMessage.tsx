@@ -1,10 +1,10 @@
-// Module ID: 8634
-// Function ID: 8635
+// Module ID: 8648
+// Function ID: 8649
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 4753, 712, 8635, 8544, 4338, 1236, 2]
+// Dependencies: [19, 21, 4775, 712, 8649, 8566, 4338, 1236, 2]
 // Exports: default
 
-// Module 8634 (ConversationPreviewBlockedMessage)
+// Module 8648 (ConversationPreviewBlockedMessage)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -18,9 +18,9 @@ export default function ConversationPreviewBlockedMessage(reason) {
   let obj = { direction: "horizontal", spacing: null, align: "center", children: null };
   obj[1] = importDefault(712).space.PX_8;
   if ("blocked" === reason.reason) {
-    let EyeSlashIcon = tmp2(8635).DenyIcon;
+    let EyeSlashIcon = tmp2(8649).DenyIcon;
   } else {
-    EyeSlashIcon = tmp2(8544).EyeSlashIcon;
+    EyeSlashIcon = tmp2(8566).EyeSlashIcon;
   }
   obj = { size: "sm", color: importDefault(712).colors.TEXT_MUTED };
   const items = [closure_3(EyeSlashIcon, obj), ];
@@ -29,5 +29,5 @@ export default function ConversationPreviewBlockedMessage(reason) {
   obj = { variant: "text-md/normal", color: "text-muted", children: intl.string(tmp6 ? t["WPe+xL"] : t.uxrh1O) };
   items[1] = closure_3(require(4338) /* Text */.Text, obj);
   obj[3] = items;
-  return closure_4(require(4753) /* Stack */.Stack, obj);
+  return closure_4(require(4775) /* Stack */.Stack, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 9633
-// Function ID: 9634
+// Module ID: 9644
+// Function ID: 9645
 // Name: GiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 4083, 4342, 712, 1493, 4343, 1297, 9634, 9660, 2]
+// Dependencies: [32, 19, 17, 21, 4083, 4342, 712, 1493, 4343, 1297, 9645, 9671, 2]
 // Exports: default
 
-// Module 9633 (GiftBackgroundSelect)
+// Module 9644 (GiftBackgroundSelect)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";
@@ -108,7 +108,7 @@ let closure_10 = { code: "function PremiumGiftBackgroundSelectTsx1(){const{STAND
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelect.tsx");
 
 export default function PremiumGiftBackgroundSelect() {
-  let obj = require(9660) /* NativeGiftContextProvider */;
+  let obj = require(9671) /* NativeGiftContextProvider */;
   const nativeGiftContext = obj.useNativeGiftContext();
   obj = { giftStyle: nativeGiftContext.giftStyle, setGiftStyle: nativeGiftContext.setGiftStyle };
   return callback2(GiftBackgroundSelect, obj);

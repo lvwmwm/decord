@@ -1,9 +1,9 @@
-// Module ID: 9194
-// Function ID: 9195
+// Module ID: 9208
+// Function ID: 9209
 // Name: EmptyDisplay
-// Dependencies: [19, 17, 4431, 1922, 505, 21, 4342, 712, 5276, 7832, 9195, 4338, 1236, 8012, 5308, 5768, 589, 1297, 9180, 4187, 8832, 9196, 5439, 5863, 2]
+// Dependencies: [19, 17, 4431, 1922, 505, 21, 4342, 712, 5297, 7853, 9209, 4338, 1236, 8033, 5329, 5789, 589, 1297, 9194, 4187, 8846, 9210, 5460, 5884, 2]
 
-// Module 9194 (EmptyDisplay)
+// Module 9208 (EmptyDisplay)
 import importAllResult from "nameFromUser";
 import { View } from "Button";
 import sortActivity from "sortActivity";
@@ -24,8 +24,8 @@ function EmptyDisplay(arg0) {
   const items = [callback3().emptyDisplayContainer, style];
   obj[0] = items;
   obj = { icon: null };
-  obj[0] = importDefault(9195);
-  const items1 = [callback(importDefault(7832), obj), children];
+  obj[0] = importDefault(9209);
+  const items1 = [callback(importDefault(7853), obj), children];
   obj[1] = items1;
   return callback2(View, obj);
 }
@@ -50,13 +50,13 @@ function RemainingUsersRow(remainingUsersGroup) {
   let obj = { DEPRECATED_style: tmp.userListRow, leading: null, label: null };
   obj = { style: tmp.remainingUsersIconContainer, children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(9195);
+  obj[0] = importDefault(9209);
   obj[1] = tmp.remainingUsersIcon;
-  obj[1] = callback(importDefault(5308), obj);
+  obj[1] = callback(importDefault(5329), obj);
   obj[1] = callback(View, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.BdQTfR, { userRemainCount: remainingUsersGroup.remainingUsersGroup.count });
-  return callback(require(8012) /* Form */.FormRow, obj, "userRemaining");
+  return callback(require(8033) /* Form */.FormRow, obj, "userRemaining");
 }
 function keyExtractor(count) {
   if (obj.isRemainingUsersGroup(count)) {
@@ -231,7 +231,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   eventUser = eventUser.eventUser;
   let analyticsLocations;
   const tmp = callback3();
-  analyticsLocations = analyticsLocations(5768)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5789)().analyticsLocations;
   let obj = eventUser(589);
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(eventUser.user_id));
@@ -256,7 +256,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   obj1 = { user: stateFromStores, nick: null, usernameStyle: null, nicknameStyle: null };
   const member = eventUser.member;
   let nick;
-  let tmp2Result = tmp2(9180);
+  let tmp2Result = tmp2(9194);
   if (member != null) {
     nick = member.nick;
   }
@@ -270,7 +270,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   obj[3] = function onPress() {
     analyticsLocations(outer1_2[20])({ userId: eventUser.user_id, sourceAnalyticsLocations: analyticsLocations });
   };
-  return closure_7(eventUser(8012).FormRow, obj, eventUser.user_id);
+  return closure_7(eventUser(8033).FormRow, obj, eventUser.user_id);
 });
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
 let obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: 16, height: 32, width: 32, alignItems: "center", justifyContent: "center" };

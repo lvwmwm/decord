@@ -1,10 +1,10 @@
-// Module ID: 4688
-// Function ID: 4689
+// Module ID: 4710
+// Function ID: 4711
 // Name: getAlertModalItemKey
-// Dependencies: [5, 32, 853, 19, 17, 505, 21, 4342, 712, 4689, 4685, 4083, 1891, 4690, 4737, 705, 4743, 1236, 1356, 1628, 4751, 1493, 4752, 4753, 4338, 4754, 4755, 2]
+// Dependencies: [5, 32, 853, 19, 17, 505, 21, 4342, 712, 4711, 4707, 4083, 1891, 4712, 4759, 705, 4765, 1236, 1356, 1628, 4773, 1493, 4774, 4775, 4338, 4776, 4777, 2]
 // Exports: showConfirmModal, useDismissModalCallback
 
-// Module 4688 (getAlertModalItemKey)
+// Module 4710 (getAlertModalItemKey)
 import sum from "sum";
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
@@ -25,7 +25,7 @@ function getAlertModalItemKey(key) {
   return key.key;
 }
 function dismissTopAlert() {
-  const useAlertStore = _require(4685).useAlertStore;
+  const useAlertStore = _require(4707).useAlertStore;
   const arr = callback3(useAlertStore.getState().alerts);
   const first = arr[0];
   _require = arr.slice(1);
@@ -34,7 +34,7 @@ function dismissTopAlert() {
     tmp4 = false === first.dismissable;
   }
   if (!tmp4) {
-    let tmpResult = tmp(4685);
+    let tmpResult = tmp(4707);
     let key;
     if (first != null) {
       key = first.key;
@@ -52,7 +52,7 @@ function AlertModalBackdrop() {
   const tmp2 = callback2(useSharedAnimationState(), 2);
   let first = tmp2[0];
   const dependencyMap = tmp4;
-  let obj = context(4685);
+  let obj = context(4707);
   const alertStore = obj.useAlertStore((arg0) => {
     const first = arg0.alerts[0];
     let dismissable;
@@ -84,7 +84,7 @@ function AlertModalBackdrop() {
     obj[0] = context(tmp4[25]).withSpring(value, outer1_14, "animate-always", fn);
     return obj;
   };
-  obj = { withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState: first, TransitionStates: context(4689).TransitionStates, runOnJS: context(4083).runOnJS, cleanUp: context };
+  obj = { withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState: first, TransitionStates: context(4711).TransitionStates, runOnJS: context(4083).runOnJS, cleanUp: context };
   fn.__closure = obj;
   fn.__workletHash = 4470729133936;
   fn.__initData = closure_22;
@@ -97,7 +97,7 @@ function AlertModalBackdrop() {
   obj[2] = tmp10;
   const intl = tmp5(1236).intl;
   obj[3] = intl.string(context(1236).t.Xkfav5);
-  return closure_10(context(4743).Backdrop, obj);
+  return closure_10(context(4765).Backdrop, obj);
 }
 class AlertModal {
   constructor(arg0) {
@@ -383,7 +383,7 @@ class AlertActions {
 }
 class AlertActionButton {
   constructor(arg0) {
-    ({ onPress: f105334, loading } = global);
+    ({ onPress: f105487, loading } = global);
     merged = Object.assign(global, Object.create(null));
     useState = undefined;
     useState = undefined;
@@ -398,8 +398,8 @@ class AlertActionButton {
       loading = tmp2[0];
     }
     obj.loading = loading;
-    f105334 = undefined;
-    f105334 = sum((arg0) => {
+    f105487 = undefined;
+    f105487 = sum((arg0) => {
       let closure_0 = arg0;
       let c2 = 0;
       let c4 = 0;
@@ -511,7 +511,7 @@ const context5 = importAllResult.createContext(null);
 let closure_22 = { code: "function AlertModalNativeTsx1(){const{withAlertModalSpring,sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withAlertModalSpring(sharedVisible.get(),function(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}})};}" };
 let closure_24 = { code: "function AlertModalNativeTsx2(){const{sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp,windowHeight,ALERT_MODAL_MARGIN,safeAreaTop,safeAreaBottom,withAlertModalSpring,sharedIndex,sharedTopHeight,useReducedMotion}=this.__closure;var _CARD_OFFSETS$sharedI;function onComplete(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}}const CARD_OFFSETS=[0,-20,-34];const maxHeight=windowHeight-ALERT_MODAL_MARGIN*2-Math.max(safeAreaTop,safeAreaBottom)*2;return{position:'absolute',opacity:withAlertModalSpring(sharedVisible.get(),onComplete),zIndex:10-sharedIndex.get(),height:sharedIndex.get()>0?sharedTopHeight.get():'auto',maxHeight:maxHeight,transform:useReducedMotion?[]:[{scale:withAlertModalSpring(sharedVisible.get()===1?1-sharedIndex.get()*0.1:0.7)},{translateY:withAlertModalSpring(sharedVisible.get()===1?(_CARD_OFFSETS$sharedI=CARD_OFFSETS[sharedIndex.get()])!==null&&_CARD_OFFSETS$sharedI!==void 0?_CARD_OFFSETS$sharedI:sharedVisible.get()*-12:50-sharedIndex.get()*50)}]};}" };
 function withAlertModalSpring(value, fn2) {
-  return require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(value, createCacheKey, "animate-always", fn2);
+  return require(4776) /* CONFIG_NEVER_ANIMATE */.withSpring(value, createCacheKey, "animate-always", fn2);
 }
 let obj2 = { withSpring: null, MODAL_SPRING: null };
 obj2[0] = require("CONFIG_NEVER_ANIMATE").withSpring;
@@ -613,7 +613,7 @@ export const showConfirmModal = function showConfirmModal(arg0) {
     variant = "destructive";
   }
   ({ onConfirm, onCancel, onCloseCallback, dismissable } = arg0);
-  let obj = require(4685) /* useAlertStore */;
+  let obj = require(4707) /* useAlertStore */;
   obj = { title, content, extraContent, actions: null };
   obj = { children: null };
   const items = [callback4(AlertActionButton, { variant, text: confirmText, onPress: onConfirm }), callback4(AlertActionButton, { variant: "secondary", text: cancelText, onPress: onCancel })];

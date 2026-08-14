@@ -1,13 +1,13 @@
-// Module ID: 12155
-// Function ID: 12156
+// Module ID: 12173
+// Function ID: 12174
 // Name: HubEmailConnectionGuildSelectRow
-// Dependencies: [5, 32, 19, 17, 12137, 21, 4342, 712, 8012, 5819, 1430, 4338, 1236, 1628, 4755, 1297, 1499, 6051, 6049, 12150, 4241, 12145, 2]
+// Dependencies: [5, 32, 19, 17, 12155, 21, 4342, 712, 8033, 5840, 1430, 4338, 1236, 1628, 4777, 1297, 1499, 6072, 6070, 12168, 4241, 12163, 2]
 // Exports: default
 
-// Module 12155 (HubEmailConnectionGuildSelectRow)
+// Module 12173 (HubEmailConnectionGuildSelectRow)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import module_12150 from "module_12150";
+import module_12168 from "module_12168";
 import get_ActivityIndicator from "HeaderActionButton";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import jsxProd from "HubEmailConnectionModal";
@@ -60,7 +60,7 @@ function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl.string(require(1236) /* getSystemLocale */.t.G3Zk7V);
   obj1[5] = onFooterButtonPressed.onFooterButtonPressed;
-  const items1 = [callback(require(4755) /* Button */.Button, obj1), ];
+  const items1 = [callback(require(4777) /* Button */.Button, obj1), ];
   let tmp3Result = null != errors;
   if (tmp3Result) {
     const obj2 = { style: null, children: null };

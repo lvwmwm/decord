@@ -1,10 +1,10 @@
-// Module ID: 8033
-// Function ID: 8034
+// Module ID: 8054
+// Function ID: 8055
 // Name: FormSliderRow
-// Dependencies: [19, 17, 21, 4342, 5413, 5416, 4338, 8034, 5407, 2]
+// Dependencies: [19, 17, 21, 4342, 5434, 5437, 4338, 8055, 5428, 2]
 // Exports: default
 
-// Module 8033 (FormSliderRow)
+// Module 8054 (FormSliderRow)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ export default function FormSliderRow(arg0) {
   let trailing;
   ({ label, trailing } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  const context = React.useContext(require(5413) /* context */.RedesignCompatContext);
+  const context = React.useContext(require(5434) /* context */.RedesignCompatContext);
   const tmp5 = callback2();
   if (context) {
     let obj = { children: null };
@@ -37,22 +37,22 @@ export default function FormSliderRow(arg0) {
     const obj2 = {};
     const merged1 = Object.assign(merged);
     obj2.style = tmp5.slider;
-    items1[1] = callback(importDefault(8034), obj2);
+    items1[1] = callback(importDefault(8055), obj2);
     obj[0] = items1;
-    let tmp6Result = tmp6(tmp2(5416).Card, obj);
-    const tmp18 = importDefault(8034);
+    let tmp6Result = tmp6(tmp2(5437).Card, obj);
+    const tmp18 = importDefault(8055);
   } else {
     obj = { children: null };
     const obj3 = { label: null, trailing: null };
     obj3[0] = label;
     obj3[1] = trailing;
-    const items2 = [callback(importDefault(5407), obj3), ];
+    const items2 = [callback(importDefault(5428), obj3), ];
     const obj4 = {};
     const merged2 = Object.assign(merged);
-    items2[1] = callback(importDefault(8034), obj4);
+    items2[1] = callback(importDefault(8055), obj4);
     obj[0] = items2;
     tmp6Result = tmp6(closure_7, obj);
-    const tmp10 = importDefault(8034);
+    const tmp10 = importDefault(8055);
   }
   return tmp6Result;
 };

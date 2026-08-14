@@ -1,8 +1,8 @@
-// Module ID: 7348
-// Function ID: 7349
-// Dependencies: [32, 5, 1391, 3989, 676, 4335, 7349, 7188, 694, 7189, 1403, 6965, 7350, 4583, 2]
+// Module ID: 7370
+// Function ID: 7371
+// Dependencies: [32, 5, 1391, 3989, 676, 4335, 7371, 7210, 694, 7211, 1403, 6986, 7372, 4605, 2]
 
-// Module 7348
+// Module 7370
 import _slicedToArray from "_slicedToArray";
 import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -54,7 +54,7 @@ let obj = {
                 prop = tmp74.isICYMIGameContentForwarding;
               }
               if (prop) {
-                let guild_id = outer1_0(7349).GAME_CONTENT_GUILD_ID;
+                let guild_id = outer1_0(7371).GAME_CONTENT_GUILD_ID;
               } else if (channel1 != null) {
                 guild_id = channel1.guild_id;
               }
@@ -70,7 +70,7 @@ let obj = {
                 const error1 = new Error("Unable to find destination channel for message");
                 throw error1;
               } else {
-                const parsed = outer1_1(7188).parse(channel, "");
+                const parsed = outer1_1(7210).parse(channel, "");
                 let obj1 = { guild_id: null, channel_id: null, message_id: null, type: null, forward_only: null };
                 obj1[0] = guild_id;
                 ({ channel_id: obj16[1], id: obj16[2] } = tmp72);
@@ -98,7 +98,7 @@ let obj = {
                 dependencyMap = withMessage;
                 let num9 = 0;
                 if (null != withMessage) {
-                  const tmp39 = v0(outer1_1(7189)(withMessage), 2);
+                  const tmp39 = v0(outer1_1(7211)(withMessage), 2);
                   num9 = 0;
                   if (tmp39[0]) {
                     dependencyMap = tmp39[1];
@@ -108,7 +108,7 @@ let obj = {
                     const obj9 = outer1_0(1403);
                   }
                 }
-                const obj10 = outer1_1(6965);
+                const obj10 = outer1_1(6986);
                 let obj3 = { messageReference: null, location: null, eagerDispatch: false, flags: null };
                 obj3[0] = obj1;
                 obj3[1] = outer1_8.FORWARDING;
@@ -137,13 +137,13 @@ let obj = {
                   result = "" === dependencyMap;
                 }
                 if (!result) {
-                  obj1 = outer1_0(7350);
+                  obj1 = outer1_0(7372);
                   result = obj1.isRatelimitedInChannel(channel, outer1_6);
                 }
                 if (!result) {
-                  obj2 = outer1_1(6965);
+                  obj2 = outer1_1(6986);
                   const id = channel.id;
-                  obj3 = outer1_1(7188);
+                  obj3 = outer1_1(7210);
                   const obj6 = { location: null, flags: null };
                   obj6[0] = outer1_8.FORWARDING;
                   obj6[1] = c1;
@@ -176,7 +176,7 @@ let obj = {
   sendForwards(outer1_8, c1, arg2) {
     let closure_0 = outer1_8;
     const importDefault = arg2;
-    return importDefault(4583)(c1.map((alsoForwardToChannelId) => outer1_9.sendForward(closure_0, alsoForwardToChannelId, closure_1)));
+    return importDefault(4605)(c1.map((alsoForwardToChannelId) => outer1_9.sendForward(closure_0, alsoForwardToChannelId, closure_1)));
   }
 };
 let result = require("ensureGuildLoaded").fileFinishedImporting("modules/forwarding/ForwardActionCreators.tsx");

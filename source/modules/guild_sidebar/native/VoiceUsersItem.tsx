@@ -1,10 +1,10 @@
-// Module ID: 15327
-// Function ID: 15328
+// Module ID: 15341
+// Function ID: 15342
 // Name: VoiceUsersItem
 // Dependencies: [19, 17, 21, 4342, 2]
 // Exports: default
 
-// Module 15327 (VoiceUsersItem)
+// Module 15341 (VoiceUsersItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

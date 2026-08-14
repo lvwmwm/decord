@@ -1,10 +1,10 @@
-// Module ID: 5766
-// Function ID: 5767
+// Module ID: 5787
+// Function ID: 5788
 // Name: ConnectionCard
-// Dependencies: [19, 5283, 21, 5767, 5784, 2]
+// Dependencies: [19, 5304, 21, 5788, 5805, 2]
 // Exports: default
 
-// Module 5766 (ConnectionCard)
+// Module 5787 (ConnectionCard)
 import "noop";
 import { OnboardingConnectionType } from "serverPromptToClientPrompt";
 import { jsx } from "jsxProd";
@@ -22,13 +22,13 @@ export default function ConnectionCard(arg0) {
     obj[0] = connection;
     obj[1] = guildId;
     obj[2] = _location;
-    return jsx(importDefault(5767), { connection: null, guildId: null, location: null });
+    return jsx(importDefault(5788), { connection: null, guildId: null, location: null });
   } else if (tmp.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
     obj = { connection: null, guildId: null, location: null };
     obj[0] = connection;
     obj[1] = guildId;
     obj[2] = _location;
-    return jsx(importDefault(5784), { connection: null, guildId: null, location: null });
+    return jsx(importDefault(5805), { connection: null, guildId: null, location: null });
   } else {
     const connection_type2 = connection.connection_type;
     return null;

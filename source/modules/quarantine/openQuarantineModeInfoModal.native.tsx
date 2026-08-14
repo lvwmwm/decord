@@ -1,10 +1,10 @@
-// Module ID: 5274
-// Function ID: 5275
+// Module ID: 5295
+// Function ID: 5296
 // Name: openQuarantineModeInfoModal
-// Dependencies: [19, 17, 21, 4205, 4684, 5275, 2007, 2]
+// Dependencies: [19, 17, 21, 4205, 4706, 5296, 2007, 2]
 // Exports: default
 
-// Module 5274 (openQuarantineModeInfoModal)
+// Module 5295 (openQuarantineModeInfoModal)
 import "noop";
 import { Keyboard } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -30,5 +30,5 @@ export default function openQuarantineModeInfoModal() {
       });
     }
   };
-  importDefault(4684).openLazy(obj);
+  importDefault(4706).openLazy(obj);
 };

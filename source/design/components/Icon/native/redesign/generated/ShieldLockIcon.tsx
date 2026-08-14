@@ -1,10 +1,10 @@
-// Module ID: 12281
-// Function ID: 12282
+// Module ID: 12299
+// Function ID: 12300
 // Name: ShieldLockIcon
-// Dependencies: [19, 21, 712, 4064, 12282, 2]
+// Dependencies: [19, 21, 712, 4064, 12300, 2]
 // Exports: ShieldLockIcon
 
-// Module 12281 (ShieldLockIcon)
+// Module 12299 (ShieldLockIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ShieldLockIcon = function ShieldLockIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12282) /* registerAsset */;
+  obj[0] = require(12300) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

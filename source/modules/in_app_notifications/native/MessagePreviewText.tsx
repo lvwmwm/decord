@@ -1,10 +1,10 @@
-// Module ID: 9837
-// Function ID: 9838
+// Module ID: 9848
+// Function ID: 9849
 // Name: NativeMessagePreviewContent
-// Dependencies: [19, 17, 1391, 9819, 21, 4342, 501, 712, 9838, 9839, 9818, 4338, 5308, 9855, 4573, 9863, 9864, 693, 5959, 1236, 4039, 2]
+// Dependencies: [19, 17, 1391, 9830, 21, 4342, 501, 712, 9849, 9850, 9829, 4338, 5329, 9866, 4595, 9874, 9875, 693, 5980, 1236, 4039, 2]
 // Exports: default
 
-// Module 9837 (NativeMessagePreviewContent)
+// Module 9848 (NativeMessagePreviewContent)
 import getSystemLocale from "getSystemLocale";
 import { View } from "MessageEmbedTypes";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -27,9 +27,9 @@ function NativeMessagePreviewContent(arg0) {
   let maxHeight;
   let message;
   ({ message, lineClamp, maxHeight } = arg0);
-  const tmp = importDefault(9838)();
+  const tmp = importDefault(9849)();
   ({ gradientColors, gradientStyles } = tmp);
-  return callback(View, { children: callback(require(9839) /* PreviewIcon */.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) });
+  return callback(View, { children: callback(require(9850) /* PreviewIcon */.NativeChannelRowPreview, { message, lineClamp, maxHeight, gradientStyles, gradientColors }) });
 }
 class SystemMessageText {
   constructor(arg0) {
@@ -55,7 +55,7 @@ function EmbedMediaThumbnail(media) {
       num = result;
     }
   }
-  obj = { style: items, children: callback(importDefault(5308), obj) };
+  obj = { style: items, children: callback(importDefault(5329), obj) };
   items = [tmp.embedMediaContainer, { aspectRatio: num }];
   obj = { source: { uri: url }, style: tmp.embedMedia, resizeMode: "contain" };
   return callback(View, obj);
@@ -178,18 +178,18 @@ export default function MessagePreviewText(message) {
   if (showMessageAuthor === undefined) {
     showMessageAuthor = false;
   }
-  let obj = message(9855);
+  let obj = message(9866);
   const previewableMedia = obj.usePreviewableMedia(message);
-  let obj1 = message(4573);
+  let obj1 = message(4595);
   let tmp3 = null;
   if (showMessageAuthor) {
     tmp3 = message;
   }
   const nullableMessageAuthor = obj1.useNullableMessageAuthor(tmp3);
-  let tmpResult = tmp(9863);
+  let tmpResult = tmp(9874);
   const previewableMediaText = tmpResult.usePreviewableMediaText({ previewableMedia, author: nullableMessageAuthor });
   ({ text, secondaryText } = previewableMediaText);
-  tmpResult = tmp(9864);
+  tmpResult = tmp(9875);
   const getInitialMessagePreview = tmpResult.useGetInitialMessagePreview({ message });
   const items = [message.embeds];
   const memo = React.useMemo(() => {
@@ -217,10 +217,10 @@ export default function MessagePreviewText(message) {
     items1[1] = callback(EmbedCard, obj2);
     obj[0] = items1;
     tmp43 = callback2(View, obj);
-  } else if (importDefault(5959)(message)) {
+  } else if (importDefault(5980)(message)) {
     let tmp29 = previewableMedia.length > 0;
     if (tmp29) {
-      tmp29 = previewableMedia[0].type === tmp(9855).PreviewableMediaTypes.GIF;
+      tmp29 = previewableMedia[0].type === tmp(9866).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       if (null != nullableMessageAuthor) {
@@ -244,7 +244,7 @@ export default function MessagePreviewText(message) {
   } else if (message.content.length > 0) {
     if (null != nullableMessageAuthor) {
       channel = channel.getChannel(message.channel_id);
-      tmp(9818);
+      tmp(9829);
       if (null != channel) {
         const obj6 = { channel: null, message: null, color: "text-default", layout: null, variant: null, muted: false, lineClamp: null };
         obj6[0] = channel;
@@ -252,7 +252,7 @@ export default function MessagePreviewText(message) {
         obj6[3] = tmp(4039).ChannelListLayoutTypes.COZY;
         obj6[4] = tmp24;
         obj6[6] = lineClamp;
-        return callback(tmp(9839).ChannelRowPreview, obj6);
+        return callback(tmp(9850).ChannelRowPreview, obj6);
       }
     }
     const obj7 = { message: null, lineClamp: null, maxHeight: null };

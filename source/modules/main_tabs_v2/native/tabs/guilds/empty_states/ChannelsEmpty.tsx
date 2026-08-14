@@ -1,8 +1,8 @@
-// Module ID: 15452
-// Function ID: 15453
-// Dependencies: [19, 17, 3989, 676, 21, 4342, 4338, 712, 647, 9070, 9045, 14407, 8015, 1297, 15453, 1236, 15454, 4756, 2]
+// Module ID: 15467
+// Function ID: 15468
+// Dependencies: [19, 17, 3989, 676, 21, 4342, 4338, 712, 647, 9084, 9059, 14420, 8036, 1297, 15468, 1236, 15469, 4778, 2]
 
-// Module 15452
+// Module 15467
 import importAllResult from "noop";
 import get_ActivityIndicator from "CollapsingText";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -49,7 +49,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const callback1 = importAllResult.useCallback(() => {
     outer1_1(outer1_2[10]).open(null, guild.id, null, null);
   }, items3);
-  let obj1 = guild(14407);
+  let obj1 = guild(14420);
   obj = { style: null, children: null };
   const items4 = [tmp.wrapper, ];
   obj = { paddingBottom: obj1.useYouBarTotalHeight(16) };
@@ -60,17 +60,17 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     obj1[0] = tmp.personalizeButtonWrapper;
     const obj2 = { icon: null, label: null, onPress: null };
     const obj3 = { source: null, disableColor: true };
-    obj3[0] = importDefault(15453);
+    obj3[0] = importDefault(15468);
     obj2[0] = callback(tmp2(1297).Icon, obj3);
     const intl = tmp2(1236).intl;
     obj2[1] = intl.string(tmp2(1236).t["Yhi9/N"]);
     obj2[2] = callback;
-    obj1[1] = callback(tmp2(8015).RowButton, obj2);
+    obj1[1] = callback(tmp2(8036).RowButton, obj2);
     canCustomizeGuild = callback(tmp8, obj1);
   }
   const items5 = [canCustomizeGuild, ];
   const obj4 = { style: tmp.content, children: null };
-  const items6 = [callback(closure_5, { source: importDefault(15454) }), , , ];
+  const items6 = [callback(closure_5, { source: importDefault(15469) }), , , ];
   const obj6 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items7, children: null };
   items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
@@ -89,7 +89,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     const intl4 = tmp2(1236).intl;
     obj9[3] = intl4.string(tmp2(1236).t["63PyJQ"]);
     obj9[4] = callback1;
-    obj8[1] = tmp11(tmp2(4756).BaseTextButton, obj9);
+    obj8[1] = tmp11(tmp2(4778).BaseTextButton, obj9);
     canCreateChannel = tmp11(tmp8, obj8);
   }
   items6[3] = canCreateChannel;

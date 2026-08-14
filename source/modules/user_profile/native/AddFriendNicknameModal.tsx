@@ -1,10 +1,10 @@
-// Module ID: 12575
-// Function ID: 12576
+// Module ID: 12593
+// Function ID: 12594
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 3998, 1922, 21, 4342, 712, 589, 1236, 4550, 9293, 5864, 4773, 4338, 6036, 4187, 2]
+// Dependencies: [5, 32, 19, 17, 3998, 1922, 21, 4342, 712, 589, 1236, 4572, 9307, 5885, 4795, 4338, 6057, 4187, 2]
 // Exports: default
 
-// Module 12575 (AddFriendNicknameModal)
+// Module 12593 (AddFriendNicknameModal)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -158,7 +158,7 @@ export default function AddFriendNicknameModal(arg0) {
   obj = { children: null };
   const tmp3Result = require(589) /* initialize */;
   obj1 = { confirmText: null, onConfirm: null, cancelText: null, onCancel: null, children: null };
-  const tmp11 = showUserProfile(5864);
+  const tmp11 = showUserProfile(5885);
   const intl3 = tmp3(1236).intl;
   obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t["R3BPH+"]);
   obj1[1] = function handleSubmit() {
@@ -181,10 +181,10 @@ export default function AddFriendNicknameModal(arg0) {
   items3[1] = callback2(require(4338) /* Text */.Text, obj3);
   const obj4 = { onChange: callback, autoFocus: true, placeholder: null, defaultValue: null, maxLength: 32, isClearable: true };
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  const tmp12 = showUserProfile(4773);
+  const tmp12 = showUserProfile(4795);
   obj4[2] = showUserProfile(4187).getName(stateFromStores1);
   obj4[3] = stateFromStores;
-  items3[2] = callback2(require(6036) /* TextField */.TextField, obj4);
+  items3[2] = callback2(require(6057) /* TextField */.TextField, obj4);
   obj1[4] = items3;
   obj[0] = callback3(tmp12, obj1);
   obj[1] = callback2(tmp11, obj);

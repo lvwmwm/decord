@@ -1,9 +1,9 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 9000
+// Function ID: 9001
 // Name: SERVER_INVITE
-// Dependencies: [676, 8987, 1486, 4536, 698, 2]
+// Dependencies: [676, 9001, 1486, 4536, 698, 2]
 
-// Module 8986 (SERVER_INVITE)
+// Module 9000 (SERVER_INVITE)
 import { AnalyticEvents } from "ME";
 
 let closure_4 = { MESSAGE: "Discord Message Link", CHANNEL: "Discord Channel Link", SERVER_INVITE: "Discord Server Invite", GIFT: "Discord Gift Link", UNKNOWN: "Unknown", DISCOVERY: "Discord Discovery Link" };

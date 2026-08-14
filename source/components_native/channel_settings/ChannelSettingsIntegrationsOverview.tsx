@@ -1,10 +1,10 @@
-// Module ID: 15986
-// Function ID: 15987
+// Module ID: 16004
+// Function ID: 16005
 // Name: LinkedLobbyFormSection
-// Dependencies: [19, 1391, 676, 21, 1499, 5774, 5807, 1236, 5414, 1297, 1435, 4342, 712, 589, 8012, 4753, 15879, 15987, 2]
+// Dependencies: [19, 1391, 676, 21, 1499, 5795, 5828, 1236, 5435, 1297, 1435, 4342, 712, 589, 8033, 4775, 15897, 16005, 2]
 // Exports: default
 
-// Module 15986 (LinkedLobbyFormSection)
+// Module 16004 (LinkedLobbyFormSection)
 import "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelSettingsSections } from "ME";
@@ -19,7 +19,7 @@ function LinkedLobbyFormSection(channel) {
   let importDefault;
   let obj = channel(1499);
   importDefault = obj.useNavigation();
-  let obj1 = channel(5774);
+  let obj1 = channel(5795);
   const linkedLobby = channel.linkedLobby;
   let application_id;
   if (linkedLobby != null) {
@@ -41,8 +41,8 @@ function LinkedLobbyFormSection(channel) {
     obj[3] = function onPress() {
 
     };
-    obj[2] = callback(tmp(5414).TableRow, obj);
-    tmp5 = callback(tmp(5807).TableRowGroup, obj);
+    obj[2] = callback(tmp(5435).TableRow, obj);
+    tmp5 = callback(tmp(5828).TableRowGroup, obj);
     const obj2 = { id: null, icon: null };
     const obj6 = importDefault(1435);
   }
@@ -82,23 +82,23 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
       obj3[0] = intl.string(tmp(1236).t.jp25Id);
       const intl2 = tmp(1236).intl;
       obj3[1] = intl2.string(tmp(1236).t.mKIOkI);
-      obj3[2] = tmp6(tmp(15879).WebhookIcon, {});
+      obj3[2] = tmp6(tmp(15897).WebhookIcon, {});
       obj3[4] = function onPress() {
         return arr.push(outer1_4.WEBHOOKS);
       };
-      const items1 = [tmp6(tmp(5414).TableRow, obj3), ];
+      const items1 = [tmp6(tmp(5435).TableRow, obj3), ];
       const obj4 = { label: null, subLabel: null, icon: null, arrow: true, onPress: null };
       const intl3 = tmp(1236).intl;
       obj4[0] = intl3.string(tmp(1236).t.OrV60r);
       const intl4 = tmp(1236).intl;
       obj4[1] = intl4.string(tmp(1236).t.rQREJl);
-      obj4[2] = tmp6(tmp(15987).ChannelsFollowedIcon, {});
+      obj4[2] = tmp6(tmp(16005).ChannelsFollowedIcon, {});
       obj4[4] = function onPress() {
         return arr.push(outer1_4.CHANNELS_FOLLOWED);
       };
-      items1[1] = tmp6(tmp(5414).TableRow, obj4);
+      items1[1] = tmp6(tmp(5435).TableRow, obj4);
       obj2[1] = items1;
-      canManageWebhooks = tmp7(tmp(5807).TableRowGroup, obj2);
+      canManageWebhooks = tmp7(tmp(5828).TableRowGroup, obj2);
     }
     const items2 = [canManageWebhooks, ];
     if (canUnlinkLobby) {
@@ -111,8 +111,8 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
     }
     items2[1] = canUnlinkLobby;
     obj[2] = items2;
-    obj[1] = closure_6(tmp(4753).Stack, obj);
-    tmp6Result = tmp6(tmp(8012).Form, obj);
+    obj[1] = closure_6(tmp(4775).Stack, obj);
+    tmp6Result = tmp6(tmp(8033).Form, obj);
   }
   return tmp6Result;
 };

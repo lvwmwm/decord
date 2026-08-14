@@ -1,12 +1,12 @@
-// Module ID: 16949
-// Function ID: 16950
+// Module ID: 16965
+// Function ID: 16966
 // Name: MessagePreview
-// Dependencies: [32, 19, 17, 4334, 1910, 9071, 5373, 4335, 505, 21, 4342, 712, 1236, 14568, 10251, 14570, 4342, 1499, 589, 9070, 5310, 6051, 4310, 15487, 2007, 9005, 4083, 5414, 13967, 688, 4338, 9191, 4031, 5928, 689, 1297, 14583, 2]
+// Dependencies: [32, 19, 17, 4334, 1910, 9085, 5394, 4335, 505, 21, 4342, 712, 1236, 14581, 10265, 14583, 4342, 1499, 589, 9084, 5331, 6072, 4310, 15505, 2007, 9019, 4083, 5435, 13979, 688, 4338, 9205, 4031, 5949, 689, 1297, 14596, 2]
 // Exports: default
 
-// Module 16949 (MessagePreview)
+// Module 16965 (MessagePreview)
 import resetCache from "resetCache";
-import module_9070 from "module_9070";
+import module_9084 from "module_9084";
 import get_ActivityIndicator from "useNavigation";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -42,7 +42,7 @@ function MessagePreview(theme) {
   if (maybeApplyNoTextColorForLightCustomTheme.desaturateUserColors) {
     num = maybeApplyNoTextColorForLightCustomTheme.saturation;
   }
-  let obj = require(5928) /* useCanManageGuildOfficialMessages */;
+  let obj = require(5949) /* useCanManageGuildOfficialMessages */;
   const accessibleGuildOfficialTextColor = obj.getAccessibleGuildOfficialTextColor(selectedColor, semanticColor, num);
   let obj2 = tmp3(689)(selectedColor);
   const hexResult = accessibleGuildOfficialTextColor.hex();
@@ -53,7 +53,7 @@ function MessagePreview(theme) {
   obj = { style: items1, children: null };
   items1 = [tmp.chatContainerInner, { backgroundColor: obj2.alpha(closure_10).hex() }];
   const obj1 = { source: null };
-  obj1[0] = importDefault(14583);
+  obj1[0] = importDefault(14596);
   const items2 = [callback(require(1297) /* Button */.Avatar, obj1), ];
   obj2 = { style: tmp.chatContent, children: null };
   const obj3 = { style: tmp.chatHeader, children: null };
@@ -162,7 +162,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
   const effect1 = officialMessageColor.useEffect(() => {
     function handleSaveChanges() {
       let obj = outer1_1(outer1_2[19]);
-      obj = { officialMessageColor: module_9070 };
+      obj = { officialMessageColor: module_9084 };
       obj.saveGuild(handleSaveChanges, obj);
     }
     let fn;

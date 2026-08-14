@@ -1,8 +1,8 @@
-// Module ID: 16012
-// Function ID: 16013
-// Dependencies: [19, 17, 8445, 15799, 676, 21, 4342, 712, 8619, 5823, 11791, 1628, 16013, 8431, 16008, 16009, 2]
+// Module ID: 16030
+// Function ID: 16031
+// Dependencies: [19, 17, 8467, 15817, 676, 21, 4342, 712, 8633, 5844, 11807, 1628, 16031, 8453, 16026, 16027, 2]
 
-// Module 16012
+// Module 16030
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { SearchEntrypointAnalyticsLocations as closure_5 } from "SearchEntrypointAnalyticsLocations";
@@ -24,7 +24,7 @@ let closure_10 = createCacheKey.createStyles(obj);
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
 const memoResult = importAllResult.memo((route) => {
   const searchContext = route.route.params.searchContext;
-  let obj = searchContext(5823);
+  let obj = searchContext(5844);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const items = [searchContext];
   const effect = importAllResult.useEffect(() => {
@@ -52,22 +52,22 @@ const memoResult = importAllResult.memo((route) => {
       name: SearchNavigatorScreens.SEARCH_TABS,
       options: { headerShown: false, fullScreenGestureEnabled: true },
       getComponent() {
-        return searchContext(16013).default;
+        return searchContext(16031).default;
       }
     }),
     callback(createNativeStackNavigator.Screen, {
       name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
       options(route) {
         route = route.route;
-        const obj = { headerShown: true, header: route(8431).renderHeader, headerLeft: null, headerTitle: null, fullScreenGestureEnabled: true };
-        obj[2] = route(8431).getRenderBackImage(route.navigation);
+        const obj = { headerShown: true, header: route(8453).renderHeader, headerLeft: null, headerTitle: null, fullScreenGestureEnabled: true };
+        obj[2] = route(8453).getRenderBackImage(route.navigation);
         obj[3] = function headerTitle() {
           return outer1_8(outer1_1(outer1_2[14]), { channelId: route.params.channelId });
         };
         return obj;
       },
       getComponent() {
-        return searchContext(16009).default;
+        return searchContext(16027).default;
       }
     })
   ];

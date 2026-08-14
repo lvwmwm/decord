@@ -1,10 +1,10 @@
-// Module ID: 7783
-// Function ID: 7784
+// Module ID: 7804
+// Function ID: 7805
 // Name: BuyNitroPurchaseButtonCrossfadeLayer
-// Dependencies: [32, 19, 17, 21, 4083, 4343, 4346, 4755, 2]
+// Dependencies: [32, 19, 17, 21, 4083, 4343, 4346, 4777, 2]
 // Exports: default, useBuyNitroButtonCrossfade
 
-// Module 7783 (BuyNitroPurchaseButtonCrossfadeLayer)
+// Module 7804 (BuyNitroPurchaseButtonCrossfadeLayer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
@@ -49,7 +49,7 @@ export default function BuyNitroPurchaseButtonCrossfadeLayer(arg0) {
   obj = { style: items1, pointerEvents: "none", children: null };
   items1 = [StyleSheet.absoluteFill, animatedStyle];
   obj = { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" };
-  obj[2] = jsx(onDone(4755).Button, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" });
+  obj[2] = jsx(onDone(4777).Button, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" });
   return jsx(sharedValue(4083).View, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" });
 };
 export const useBuyNitroButtonCrossfade = function useBuyNitroButtonCrossfade(variant, stringResult) {

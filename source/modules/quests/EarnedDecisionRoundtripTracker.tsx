@@ -1,9 +1,9 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 10463
+// Function ID: 10464
 // Name: trackRoundtrip
-// Dependencies: [4436, 676, 6969, 698, 7183, 6972, 2]
+// Dependencies: [4436, 676, 6990, 698, 7205, 6993, 2]
 
-// Module 10447 (trackRoundtrip)
+// Module 10463 (trackRoundtrip)
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import { AnalyticEvents } from "ME";
 import set from "receiveNetworkInfoformation";
@@ -15,10 +15,10 @@ function trackRoundtrip(apiResponseTimestamp) {
     if (null != apiResponseTimestamp.apiResponseTimestamp) {
       diff = apiResponseTimestamp.apiResponseTimestamp - apiResponseTimestamp.initialSendTimestamp;
     }
-    let obj = require(6969) /* receiveNetworkInfoformation */;
+    let obj = require(6990) /* receiveNetworkInfoformation */;
     const signalStrength = obj.getSignalStrength();
     obj = {};
-    const merged = Object.assign(importDefault(7183)());
+    const merged = Object.assign(importDefault(7205)());
     ({ endpoint: obj3.endpoint, wasSuccessful: obj3.was_successful } = apiResponseTimestamp);
     obj.api_latency_ms = diff;
     obj.mobile_network_type = type.getType();
@@ -32,9 +32,9 @@ function trackRoundtrip(apiResponseTimestamp) {
     ({ callerSource: obj3.caller_source, requestId: obj3.request_id, fetchedAt: obj3.fetched_at } = apiResponseTimestamp);
     const obj2 = importDefault(698);
     const tmp2 = require;
-    obj.is_foregrounded = require(6972) /* isForegrounded */.isForegrounded();
+    obj.is_foregrounded = require(6993) /* isForegrounded */.isForegrounded();
     obj2.track(AnalyticEvents.EARNED_DECISION_ROUNDTRIP, obj);
-    const tmp2Result = require(6972) /* isForegrounded */;
+    const tmp2Result = require(6993) /* isForegrounded */;
   }
 }
 class EarnedDecisionRoundtripTracker {

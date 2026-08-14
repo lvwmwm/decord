@@ -1,10 +1,10 @@
-// Module ID: 4777
-// Function ID: 4778
+// Module ID: 4799
+// Function ID: 4800
 // Name: parseLink
-// Dependencies: [32, 853, 1391, 1983, 1910, 1922, 676, 4778, 4779, 4780, 1236, 4783, 1986, 4534, 4187, 4060, 4784, 4785, 4788, 4002, 4789, 4799, 4800, 4801, 4802, 4803, 4776, 4804, 12, 2]
+// Dependencies: [32, 853, 1391, 1983, 1910, 1922, 676, 4800, 4801, 4802, 1236, 4805, 1986, 4534, 4187, 4060, 4806, 4807, 4810, 4002, 4811, 4821, 4822, 4823, 4824, 4825, 4798, 4826, 12, 2]
 // Exports: hydrateCommandMention
 
-// Module 4777 (parseLink)
+// Module 4799 (parseLink)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -34,7 +34,7 @@ let c9;
 let unpackModuleId;
 const require = arg1;
 function parseLink(arg0) {
-  let obj = require(4780) /* validateContentTypes */;
+  let obj = require(4802) /* validateContentTypes */;
   const punycodeLinkResult = obj.punycodeLink(arg0[1]);
   if (null == punycodeLinkResult) {
     obj = { type: "text", content: null };
@@ -78,7 +78,7 @@ function hydrateRoleMention(arg0, guildId) {
     if (guild != null) {
       id = guild.id;
     }
-    let hasEnhancedRoleColorsForRole = require(4783) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColorsForRole(id, role);
+    let hasEnhancedRoleColorsForRole = require(4805) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColorsForRole(id, role);
     if (hasEnhancedRoleColorsForRole) {
       hasEnhancedRoleColorsForRole = !require(1986) /* extractColorStringsFromServerColors */.getIsDefaultErc(role);
       const tmp19Result = require(1986) /* extractColorStringsFromServerColors */;
@@ -517,7 +517,7 @@ obj[19] = {
 obj[20] = require("getChannel").channelMention;
 obj[21] = require("getChannel").channelOrMessageUrl;
 obj[22] = require("getChannel").mediaPostLink;
-obj[23] = require("module_4788").attachmentLink;
+obj[23] = require("module_4810").attachmentLink;
 const obj10 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["@"],
@@ -706,22 +706,22 @@ obj[28] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const soundmojiRawFormatRegex = require(4789) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
+    const soundmojiRawFormatRegex = require(4811) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
     return soundmojiRawFormatRegex.exec(arg0);
   },
   parse(arg0, arg1, arg2) {
-    return importDefault(4789)(arg0, arg2);
+    return importDefault(4811)(arg0, arg2);
   }
 };
 const obj15 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const soundmojiRawFormatRegex = require(4789) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
+    const soundmojiRawFormatRegex = require(4811) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
     return soundmojiRawFormatRegex.exec(arg0);
   },
   parse(arg0, arg1, arg2) {
-    return importDefault(4789)(arg0, arg2);
+    return importDefault(4811)(arg0, arg2);
   }
 };
 obj[29] = {
@@ -748,7 +748,7 @@ obj[30] = {
   order: require("textRegexp").order - 1,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const TIMESTAMP_REGEX = require(4799) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
+    const TIMESTAMP_REGEX = require(4821) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
     return TIMESTAMP_REGEX.exec(arg0);
   },
   parse(arg0) {
@@ -756,7 +756,7 @@ obj[30] = {
     let tmp2;
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
-    let obj = require(4799) /* TIMESTAMP_FORMATS */;
+    let obj = require(4821) /* TIMESTAMP_FORMATS */;
     let parseTimestampResult = obj.parseTimestamp(tmp2, tmp3);
     if (null == parseTimestampResult) {
       obj = { type: "text", content: null };
@@ -773,7 +773,7 @@ const obj17 = {
   order: require("textRegexp").order - 1,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const TIMESTAMP_REGEX = require(4799) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
+    const TIMESTAMP_REGEX = require(4821) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
     return TIMESTAMP_REGEX.exec(arg0);
   },
   parse(arg0) {
@@ -781,7 +781,7 @@ const obj17 = {
     let tmp2;
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
-    let obj = require(4799) /* TIMESTAMP_FORMATS */;
+    let obj = require(4821) /* TIMESTAMP_FORMATS */;
     let parseTimestampResult = obj.parseTimestamp(tmp2, tmp3);
     if (null == parseTimestampResult) {
       obj = { type: "text", content: null };
@@ -824,9 +824,9 @@ obj[33] = {
   },
   parse(arg0, arg1, guildId) {
     const tmp = callback(arg0, 3);
-    let obj = require(4800) /* staticRouteToTranslation */;
+    let obj = require(4822) /* staticRouteToTranslation */;
     const result = obj.staticRouteToTranslation(tmp2);
-    let obj1 = require(4800) /* staticRouteToTranslation */;
+    let obj1 = require(4822) /* staticRouteToTranslation */;
     if (null != guildId.guildId) {
       let guild = store2.getGuild(guildId.guildId);
     } else {
@@ -883,7 +883,7 @@ obj[33] = {
 };
 obj[34] = require("match");
 obj[35] = require("regExp");
-obj[36] = require("module_4803");
+obj[36] = require("module_4825");
 let items = [obj, ];
 const obj20 = {
   order: require("textRegexp").order,
@@ -893,9 +893,9 @@ const obj20 = {
   },
   parse(arg0, arg1, guildId) {
     const tmp = callback(arg0, 3);
-    let obj = require(4800) /* staticRouteToTranslation */;
+    let obj = require(4822) /* staticRouteToTranslation */;
     const result = obj.staticRouteToTranslation(tmp2);
-    let obj1 = require(4800) /* staticRouteToTranslation */;
+    let obj1 = require(4822) /* staticRouteToTranslation */;
     if (null != guildId.guildId) {
       let guild = store2.getGuild(guildId.guildId);
     } else {

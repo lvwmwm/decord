@@ -1,10 +1,10 @@
-// Module ID: 12710
-// Function ID: 12711
+// Module ID: 12728
+// Function ID: 12729
 // Name: GuildScheduledEventPreview
-// Dependencies: [19, 17, 1910, 21, 4342, 712, 589, 4191, 4338, 1236, 5819, 2]
+// Dependencies: [19, 17, 1910, 21, 4342, 712, 589, 4191, 4338, 1236, 5840, 2]
 // Exports: default
 
-// Module 12710 (GuildScheduledEventPreview)
+// Module 12728 (GuildScheduledEventPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -55,8 +55,8 @@ export default function GuildScheduledEventPreview(event) {
     const obj4 = { guild: null, size: null, selected: false };
     obj4[0] = stateFromStores;
     const hexWithOpacityResult = tmp2(4191).hexWithOpacity(tmp.borderColor.color, 0.08);
-    obj4[1] = tmp2(5819).GuildIconSizes.XXSMALL;
-    const items3 = [callback(importDefault(5819), obj4), ];
+    obj4[1] = tmp2(5840).GuildIconSizes.XXSMALL;
+    const items3 = [callback(importDefault(5840), obj4), ];
     const obj5 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj5[0] = tmp.guildName;
     obj5[3] = stateFromStores.name;

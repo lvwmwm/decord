@@ -1,15 +1,17 @@
 // Module ID: 7941
 // Function ID: 7942
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 7896, 7919]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7942, 7939, 7940]
 
 // Module 7941 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
+import "noop";
+import { jsx } from "jsxProd";
 
-const FeMorphology = arg1;
+const FeColorMatrix = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeMorphology {
+class FeColorMatrix {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeMorphology);
+    tmp = _isNativeReflectConstruct(this, FeColorMatrix);
     tmp2 = __esModule;
-    obj = __esModule(FeMorphology);
+    obj = __esModule(FeColorMatrix);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,19 +51,34 @@ class FeMorphology {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeMorphology, require("_isNativeReflectConstruct"));
+require("_inherits")(FeColorMatrix, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
-    const result = FeMorphology(7896).warnUnimplementedFilter();
-    return null;
+    const self = this;
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const tmp = importDefault(7942);
+    const merged = Object.assign(self(7939).extractFilter(this.props));
+    const obj2 = self(7939);
+    const merged1 = Object.assign(self(7939).extractIn(this.props));
+    const obj3 = self(7939);
+    const merged2 = Object.assign(self(7939).extractFeColorMatrix(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeMorphology, items);
-importDefaultResultResult.displayName = "FeMorphology";
+const importDefaultResultResult = importDefaultResult(FeColorMatrix, items);
+importDefaultResultResult.displayName = "FeColorMatrix";
 obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.type = "matrix";
+obj.values = "";
 importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

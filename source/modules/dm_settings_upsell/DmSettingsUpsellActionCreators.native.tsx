@@ -1,8 +1,8 @@
-// Module ID: 16486
-// Function ID: 16487
-// Dependencies: [16487, 595, 4310, 16488, 2007, 16489, 2]
+// Module ID: 16504
+// Function ID: 16505
+// Dependencies: [16505, 595, 4310, 16506, 2007, 16507, 2]
 
-// Module 16486
+// Module 16504
 import DM_SETTINGS_UPSELL_LAST_SHOWN_KEY from "DM_SETTINGS_UPSELL_LAST_SHOWN_KEY";
 
 let c3;
@@ -17,11 +17,11 @@ export default {
     const timestamp = Date.now();
     if (null != value) {
       if (timestamp - value <= closure_4) {
-        tmp(16489).trackEvent(tmp(16489).DmUpsellActionTypes.SUPPRESSED_BY_COOLDOWN, guildId);
-        const tmpResult = tmp(16489);
+        tmp(16507).trackEvent(tmp(16507).DmUpsellActionTypes.SUPPRESSED_BY_COOLDOWN, guildId);
+        const tmpResult = tmp(16507);
       }
     }
-    importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(16488, dependencyMap.paths), "dm_settings_upsell_modal", { guildId });
+    importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(16506, dependencyMap.paths), "dm_settings_upsell_modal", { guildId });
     const Storage2 = tmp(595).Storage;
     const result = Storage2.set(closure_3, timestamp);
   }

@@ -1,10 +1,10 @@
-// Module ID: 9309
-// Function ID: 9310
+// Module ID: 9323
+// Function ID: 9324
 // Name: styles
-// Dependencies: [19, 17, 1994, 1218, 1990, 9310, 21, 4342, 712, 589, 7242, 11, 1430, 9311, 9312, 4062, 4310, 6000, 5819, 4338, 4887, 9313, 1236, 2]
+// Dependencies: [19, 17, 1994, 1218, 1990, 9324, 21, 4342, 712, 589, 7264, 11, 1430, 9325, 9326, 4062, 4310, 6021, 5840, 4338, 4909, 9327, 1236, 2]
 // Exports: default
 
-// Module 9309 (styles)
+// Module 9323 (styles)
 import Text from "Text";
 import { View } from "transitionToGuild";
 import _getSystemLocale from "_getSystemLocale";

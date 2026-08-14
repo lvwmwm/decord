@@ -1,10 +1,10 @@
-// Module ID: 12546
-// Function ID: 12547
+// Module ID: 12564
+// Function ID: 12565
 // Name: WishlistEmptyState
-// Dependencies: [5, 19, 17, 7049, 10153, 9407, 9410, 9412, 9408, 1922, 4391, 7128, 8834, 676, 678, 1924, 21, 3, 4342, 712, 12547, 4072, 1363, 8837, 4310, 7048, 5788, 4338, 1236, 4755, 12171, 4298, 12548, 5768, 7696, 589, 12549, 12239, 8260, 12530, 12550, 4198, 4062, 12551, 10078, 501, 7802, 5893, 10135, 8832, 4020, 9625, 5974, 4022, 9484, 12552, 2007, 7796, 9721, 10151, 2]
+// Dependencies: [5, 19, 17, 7071, 10165, 9421, 9424, 9426, 9422, 1922, 4391, 7150, 8848, 676, 678, 1924, 21, 3, 4342, 712, 12565, 4072, 1363, 8851, 4310, 7070, 5809, 4338, 1236, 4777, 12189, 4298, 12566, 5789, 7717, 589, 12567, 12257, 8282, 12548, 12568, 4198, 4062, 12569, 10090, 501, 7823, 5914, 10147, 8846, 4020, 9636, 5995, 4022, 9497, 12570, 2007, 7817, 9732, 10163, 2]
 // Exports: default
 
-// Module 12546 (WishlistEmptyState)
+// Module 12564 (WishlistEmptyState)
 import get from "get";
 import Themes from "Themes";
 import { View } from "timestamp";
@@ -42,7 +42,7 @@ class WishlistEmptyState {
     tmp2 = closure_2;
     obj = require("useIsMobileWishlistSuggestionsEnabled");
     isMobileWishlistSuggestionsEnabled = obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
-    tmp4 = f54777(isMobileWishlistSuggestionsEnabled);
+    tmp4 = f54897(isMobileWishlistSuggestionsEnabled);
     obj2 = require("ManaContext");
     obj3 = require("AccessibilityAnnouncer");
     str = "mobile-text-heading-primary";
@@ -403,7 +403,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
                                   obj2[1] = callback(context[26]).USER_PROFILE_WISHLIST;
                                   obj2[2] = outer2_19.FEATURED_PAGE;
                                   obj2[3] = function onNavigateAway(arg0) {
-                                    callback(8832)({ userId: user.id, initialSection: outer1_16.WISHLIST });
+                                    callback(8846)({ userId: user.id, initialSection: outer1_16.WISHLIST });
                                   };
                                   const result = lib(context[25]).openCollectiblesShopMobile(obj2);
                                   const obj23 = lib(context[25]);
@@ -541,7 +541,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
                               throwTypeErrorResult = outer2_20;
                               obj11[3] = outer2_20.USER_PROFILE_WISHLIST;
                               obj11[4] = function onGiftModalDismiss(validateRecipient, arg1) {
-                                callback(8832)({ userId: user.id, initialSection: outer1_16.WISHLIST });
+                                callback(8846)({ userId: user.id, initialSection: outer1_16.WISHLIST });
                               };
                               throwTypeErrorResult = lib(context[48]).openSocialLayerStorefrontGiftModal(obj11);
                               const obj47 = lib(context[48]);

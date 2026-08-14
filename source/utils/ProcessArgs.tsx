@@ -1,9 +1,9 @@
-// Module ID: 4904
-// Function ID: 4905
+// Module ID: 4926
+// Function ID: 4927
 // Name: get
 // Dependencies: [3972, 2]
 
-// Module 4904 (get)
+// Module 4926 (get)
 let prototype;
 prototype = function ProcessArgs() {
   return Object.create(new.target.prototype);

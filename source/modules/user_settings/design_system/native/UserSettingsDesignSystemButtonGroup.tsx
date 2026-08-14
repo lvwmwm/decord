@@ -1,10 +1,10 @@
-// Module ID: 14851
-// Function ID: 14852
+// Module ID: 14865
+// Function ID: 14866
 // Name: UserSettingsDesignSystemButtonGroup
-// Dependencies: [19, 17, 21, 4342, 4753, 4338, 5191, 4755, 7796, 6055, 2]
+// Dependencies: [19, 17, 21, 4342, 4775, 4338, 5212, 4777, 7817, 6076, 2]
 // Exports: default
 
-// Module 14851 (UserSettingsDesignSystemButtonGroup)
+// Module 14865 (UserSettingsDesignSystemButtonGroup)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,14 +29,14 @@ export default function UserSettingsDesignSystemButtonGroup() {
   const items = [callback(require(4338) /* Text */.Text, { variant: "text-lg/bold", children: "Text Button Example" }), callback(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks buttons vertically. This is best for buttons with text." }), ];
   const obj3 = { children: null };
   const items1 = [
-    callback(require(4755) /* Button */.Button, {
+    callback(require(4777) /* Button */.Button, {
       text: "Agree",
       variant: "primary",
       onPress() {
 
       }
     }),
-    callback(require(4755) /* Button */.Button, {
+    callback(require(4777) /* Button */.Button, {
       text: "Cancel",
       variant: "secondary",
       onPress() {
@@ -45,37 +45,37 @@ export default function UserSettingsDesignSystemButtonGroup() {
     })
   ];
   obj3[0] = items1;
-  items[2] = callback2(require(5191) /* ButtonGroup */.ButtonGroup, obj3);
+  items[2] = callback2(require(5212) /* ButtonGroup */.ButtonGroup, obj3);
   obj2[0] = items;
-  obj1[0] = callback2(require(4753) /* Stack */.Stack, obj2);
+  obj1[0] = callback2(require(4775) /* Stack */.Stack, obj2);
   const items2 = [callback(closure_3, obj1), , ];
   const obj6 = { children: null };
   const obj7 = { children: null };
   const items3 = [callback(require(4338) /* Text */.Text, { variant: "text-lg/bold", children: "IconButton Example" }), callback(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "For IconButtons, a horizontal layout is recommended" }), ];
   const obj8 = { direction: "horizontal", children: null };
   const obj9 = { accessibilityLabel: "Settings", variant: "secondary", icon: null, onPress: null };
-  obj9[2] = importDefault(6055);
+  obj9[2] = importDefault(6076);
   obj9[3] = function onPress() {
 
   };
-  const items4 = [callback(require(7796) /* IconButton */.IconButton, obj9), ];
+  const items4 = [callback(require(7817) /* IconButton */.IconButton, obj9), ];
   const obj10 = { accessibilityLabel: "Settings", variant: "secondary", icon: null, onPress: null };
-  obj10[2] = importDefault(6055);
+  obj10[2] = importDefault(6076);
   obj10[3] = function onPress() {
 
   };
-  items4[1] = callback(require(7796) /* IconButton */.IconButton, obj10);
+  items4[1] = callback(require(7817) /* IconButton */.IconButton, obj10);
   obj8[1] = items4;
-  items3[2] = callback2(require(5191) /* ButtonGroup */.ButtonGroup, obj8);
+  items3[2] = callback2(require(5212) /* ButtonGroup */.ButtonGroup, obj8);
   obj7[0] = items3;
-  obj6[0] = callback2(require(4753) /* Stack */.Stack, obj7);
+  obj6[0] = callback2(require(4775) /* Stack */.Stack, obj7);
   items2[1] = callback(closure_3, obj6);
   const obj11 = { children: null };
   const obj12 = { children: null };
   const items5 = [callback(require(4338) /* Text */.Text, { variant: "text-lg/bold", children: "Mixed Buttons Example" }), callback(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "A single text button can be used in a ButtonGroup with smaller IconButtons, using the horizontal layout." }), callback(require(4338) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "The Button with text must have the grow prop." }), , , ];
   const obj13 = { direction: "horizontal", children: null };
   const items6 = [
-    callback(require(4755) /* Button */.Button, {
+    callback(require(4777) /* Button */.Button, {
       text: "Search",
       variant: "secondary",
       grow: true,
@@ -86,20 +86,20 @@ export default function UserSettingsDesignSystemButtonGroup() {
 
   ];
   const obj15 = { accessibilityLabel: "Cancel", variant: "secondary", icon: null, onPress: null };
-  obj15[2] = importDefault(6055);
+  obj15[2] = importDefault(6076);
   obj15[3] = function onPress() {
 
   };
-  items6[1] = callback(require(7796) /* IconButton */.IconButton, obj15);
+  items6[1] = callback(require(7817) /* IconButton */.IconButton, obj15);
   obj13[1] = items6;
-  items5[3] = callback2(require(5191) /* ButtonGroup */.ButtonGroup, obj13);
+  items5[3] = callback2(require(5212) /* ButtonGroup */.ButtonGroup, obj13);
   items5[4] = callback(require(4338) /* Text */.Text, { variant: "text-sm/medium", color: "text-feedback-critical", children: "More than one text button should not be put in a horizontal group." });
   items5[5] = callback(require(4338) /* Text */.Text, { variant: "text-sm/medium", color: "text-subtle", children: "This does not flex well with internationalization and enlarged font size settings. Use TwinButtons instead when there are specifically two text Buttons." });
   obj12[0] = items5;
-  obj11[0] = callback2(require(4753) /* Stack */.Stack, obj12);
+  obj11[0] = callback2(require(4775) /* Stack */.Stack, obj12);
   items2[2] = callback(closure_3, obj11);
   obj[1] = items2;
-  obj[1] = callback2(require(4753) /* Stack */.Stack, obj);
+  obj[1] = callback2(require(4775) /* Stack */.Stack, obj);
   obj[0] = callback(closure_3, obj);
   return callback(closure_4, obj);
 };

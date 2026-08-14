@@ -1,10 +1,10 @@
-// Module ID: 14600
-// Function ID: 14601
+// Module ID: 14613
+// Function ID: 14614
 // Name: getMaxColors
 // Dependencies: [19, 505, 4275, 1349, 4192, 4191, 712, 1339, 4065, 1236, 2]
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 14600 (getMaxColors)
+// Module 14613 (getMaxColors)
 import noop from "noop";
 import { ThemeTypes } from "sum";
 

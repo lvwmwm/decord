@@ -1,9 +1,9 @@
-// Module ID: 16326
-// Function ID: 16327
+// Module ID: 16344
+// Function ID: 16345
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 21, 4342, 712, 4065, 1367, 8712, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4065, 1367, 8726, 2]
 
-// Module 16326 (VoicePanelVisualEffectView)
+// Module 16344 (VoicePanelVisualEffectView)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -41,7 +41,7 @@ const memoResult = require("noop").memo(function VoicePanelVisualEffectViewInner
     tmp5 = token;
   }
   obj[1] = tmp5;
-  const tmp4Result = closure_4(require(8712) /* TwinButtons */.BackgroundBlurFill, obj);
+  const tmp4Result = closure_4(require(8726) /* TwinButtons */.BackgroundBlurFill, obj);
   let tmp7 = tmp4Result;
   if (tmp3) {
     obj = { style: null, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 11472
-// Function ID: 11473
+// Module ID: 11488
+// Function ID: 11489
 // Name: useNativeForumPostContent
-// Dependencies: [676, 4342, 1236, 5931, 4679, 2]
+// Dependencies: [676, 4342, 1236, 5952, 4701, 2]
 // Exports: default
 
-// Module 11472 (useNativeForumPostContent)
+// Module 11488 (useNativeForumPostContent)
 import { MessageFlags } from "ME";
 import createCacheKey from "createCacheKey";
 
@@ -28,7 +28,7 @@ export default function useNativeForumPostContent(arg0) {
     return obj;
   } else {
     if (null != message) {
-      if (importDefault(5931)(message)) {
+      if (importDefault(5952)(message)) {
         obj = { content: null, style: null, variant: "text-sm/normal" };
         obj[0] = messageContent;
         obj[1] = tmp.italics;
@@ -103,7 +103,7 @@ export default function useNativeForumPostContent(arg0) {
                 }
                 tmp14 = MessageFlags;
               }
-              obj5 = require(4679) /* getStickerExtensionFromFormatType */;
+              obj5 = require(4701) /* getStickerExtensionFromFormatType */;
             }
           }
         }

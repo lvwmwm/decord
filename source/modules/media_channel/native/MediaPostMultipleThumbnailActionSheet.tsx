@@ -1,10 +1,10 @@
-// Module ID: 9963
-// Function ID: 9964
+// Module ID: 9974
+// Function ID: 9975
 // Name: MediaPostThumbnailActionSheet
-// Dependencies: [19, 17, 1388, 21, 4342, 712, 1628, 5437, 5439, 4338, 1236, 1297, 4755, 2]
+// Dependencies: [19, 17, 1388, 21, 4342, 712, 1628, 5458, 5460, 4338, 1236, 1297, 4777, 2]
 // Exports: default
 
-// Module 9963 (MediaPostThumbnailActionSheet)
+// Module 9974 (MediaPostThumbnailActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -66,9 +66,9 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
   obj6[2] = function onPress() {
     return markAsDismissed(outer1_4.UNKNOWN);
   };
-  items2[5] = callback(markAsDismissed(4755).Button, obj6);
+  items2[5] = callback(markAsDismissed(4777).Button, obj6);
   obj[1] = items2;
-  obj[1] = callback2(markAsDismissed(5439).BottomSheetScrollView, obj);
+  obj[1] = callback2(markAsDismissed(5460).BottomSheetScrollView, obj);
   obj[2] = callback(View, obj);
-  return callback(markAsDismissed(5437).BottomSheet, obj);
+  return callback(markAsDismissed(5458).BottomSheet, obj);
 };

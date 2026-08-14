@@ -1,10 +1,10 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12896
+// Function ID: 12897
 // Name: BoostPurchaseNitroBanner
-// Dependencies: [5, 32, 19, 17, 6935, 1910, 4012, 4013, 5899, 12879, 1924, 676, 6943, 4325, 21, 4342, 5276, 5199, 712, 4753, 6070, 4338, 1236, 4007, 12880, 12881, 12882, 12883, 12884, 12885, 7749, 4065, 589, 12886, 7376, 4278, 1297, 698, 7665, 7666, 5414, 12887, 5863, 5467, 1363, 501, 6918, 7419, 4684, 12888, 2007, 5807, 4766, 6919, 5902, 4022, 4550, 6921, 7424, 5768, 5918, 5756, 4771, 7420, 7377, 1499, 6928, 7677, 5788, 7379, 4664, 7450, 7641, 6913, 7457, 4019, 7458, 2]
+// Dependencies: [5, 32, 19, 17, 6956, 1910, 4012, 4013, 5920, 12897, 1924, 676, 6964, 4325, 21, 4342, 5297, 5220, 712, 4775, 6091, 4338, 1236, 4007, 12898, 12899, 12900, 12901, 12902, 12903, 7770, 4065, 589, 12904, 7398, 4278, 1297, 698, 7686, 7687, 5435, 12905, 5884, 5488, 1363, 501, 6939, 7440, 4706, 12906, 2007, 5828, 4788, 6940, 5923, 4022, 4572, 6942, 7445, 5789, 5939, 5777, 4793, 7441, 7399, 1499, 6949, 7698, 5809, 7401, 4686, 7471, 7662, 6934, 7478, 4019, 7479, 2]
 // Exports: default
 
-// Module 12878 (BoostPurchaseNitroBanner)
+// Module 12896 (BoostPurchaseNitroBanner)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import initialize from "initialize";
 import importAllResult from "Stack";
@@ -53,7 +53,7 @@ function BoostPurchaseNitroBanner() {
   let obj = { align: "center", spacing: null, style: null, children: null };
   obj[1] = importDefault(712).space.PX_12;
   obj[2] = tmp.nitroBanner;
-  const items = [callback3(require(6070) /* AccountAgeTier10LargeBadge */.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false }), ];
+  const items = [callback3(require(6091) /* AccountAgeTier10LargeBadge */.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false }), ];
   obj = { align: "center", spacing: null, children: null };
   obj[1] = importDefault(712).space.PX_4;
   obj = { variant: "text-md/semibold", color: "text-default", style: tmp.nitroBannerText, children: null };
@@ -70,9 +70,9 @@ function BoostPurchaseNitroBanner() {
   obj4[3] = intl3.format(require(1236) /* getSystemLocale */.t.HYpETY, { boostCount: closure_17 });
   items1[1] = callback3(require(4338) /* Text */.Text, obj4);
   obj[2] = items1;
-  items[1] = callback4(require(4753) /* Stack */.Stack, obj);
+  items[1] = callback4(require(4775) /* Stack */.Stack, obj);
   obj[3] = items;
-  return callback4(require(4753) /* Stack */.Stack, obj);
+  return callback4(require(4775) /* Stack */.Stack, obj);
 }
 function getPlanDescription(premiumTier) {
   let flag = arg1;
@@ -115,7 +115,7 @@ function BoostDeltaPriceTrailing(arg0) {
   obj[2] = importDefault(712).space.PX_4;
   obj = { size: "xs", color: null };
   obj[1] = importDefault(712).colors.ICON_FEEDBACK_POSITIVE;
-  const items = [callback3(require(7749) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
+  const items = [callback3(require(7770) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
   const intl = require(1236) /* getSystemLocale */.intl;
   if (interval === constants.MONTH) {
     rS8FA_ = tmp2(1236).t.AbOLNu;
@@ -126,7 +126,7 @@ function BoostDeltaPriceTrailing(arg0) {
   obj[2] = intl.format(rS8FA_, { price: callback3(require(4338) /* Text */.Text, { variant: "text-sm/semibold", color: "text-feedback-positive", children: price }, "price") });
   items[1] = callback3(require(4338) /* Text */.Text, obj);
   obj[3] = items;
-  return closure_33(require(4753) /* Stack */.Stack, obj);
+  return closure_33(require(4775) /* Stack */.Stack, obj);
 }
 function PlanRow(plan) {
   let importDefault;
@@ -478,7 +478,7 @@ function PlanSection(showBoostOnlyLabels) {
     obj = { title: null, hasIcons: true, children: null };
     obj[0] = showBoostOnlyLabels.label;
     obj[2] = mapped;
-    let tmp7Result = tmp7(shouldShowModernBoostFlow(5807).TableRowGroup, obj);
+    let tmp7Result = tmp7(shouldShowModernBoostFlow(5828).TableRowGroup, obj);
   } else {
     obj = { children: null };
     obj[0] = mapped;
@@ -499,18 +499,18 @@ function CurrentPlanRow(subscription) {
   const tmp = callback5();
   if (subscription.showCurrentPlan) {
     if (null != subscription) {
-      productIdFromSubscription = subscription(6918).getProductIdFromSubscription(subscription, true);
-      let obj4 = subscription(6918);
+      productIdFromSubscription = subscription(6939).getProductIdFromSubscription(subscription, true);
+      let obj4 = subscription(6939);
       const tmp13 = subscription;
-      const premiumBundledItemsFromProductId = subscription(6918).getPremiumBundledItemsFromProductId(productIdFromSubscription);
+      const premiumBundledItemsFromProductId = subscription(6939).getPremiumBundledItemsFromProductId(productIdFromSubscription);
       const premiumTier = premiumBundledItemsFromProductId.premiumTier;
       if (null != premiumTier) {
         let PREMIUM_GUILD = callback2(premiumTier);
       } else {
         PREMIUM_GUILD = constants6.PREMIUM_GUILD;
       }
-      const obj5 = subscription(6918);
-      toggledIntervalProduct = tmp13(6918).getToggledIntervalProduct(productIdFromSubscription);
+      const obj5 = subscription(6939);
+      toggledIntervalProduct = tmp13(6939).getToggledIntervalProduct(productIdFromSubscription);
       let obj = { style: null, colors: null, start: null, end: null, children: null };
       obj[0] = tmp.currentPlanGradient;
       obj[1] = PREMIUM_GUILD;
@@ -520,7 +520,7 @@ function CurrentPlanRow(subscription) {
       obj[1] = subscription;
       obj[2] = analyticsLoadId;
       let tmp11 = null == toggledIntervalProduct;
-      const tmp13Result = tmp13(6918);
+      const tmp13Result = tmp13(6939);
       if (tmp11) {
         tmp11 = subscription.status !== constants5.CANCELED;
       }
@@ -552,8 +552,8 @@ function CurrentPlanRow(subscription) {
                     let obj = {};
                     const merged = Object.assign(arg0);
                     obj.productId = outer1_1;
-                    obj.continueWithUpsell = outer3_3(/* F120441 */ function() { ... });
-                    obj.continueWithDefault = outer3_3(/* F120442 */ function() { ... });
+                    obj.continueWithUpsell = outer3_3(/* F120589 */ function() { ... });
+                    obj.continueWithDefault = outer3_3(/* F120590 */ function() { ... });
                     return outer3_32(closure_0, obj);
                   };
                 });
@@ -586,7 +586,7 @@ function CurrentPlanRow(subscription) {
       };
       obj[6] = tmp.currentPlanRow;
       obj[4] = closure_32(PlanRow, obj);
-      return closure_32(importDefault(4766), obj);
+      return closure_32(importDefault(4788), obj);
     }
   }
   return null;
@@ -823,7 +823,7 @@ obj[23] = { textAlign: "center" };
 let obj5 = { alignItems: "center", paddingTop: require("Themes").space.PX_16, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 obj[24] = { color: require("Themes").unsafe_rawColors.GUILD_BOOSTING_PINK };
 let closure_35 = createCacheKey.createStyles(obj);
-let closure_38 = { [importDefault(12883)]: "imgWumpusNitro", [importDefault(12885)]: "imgWumpusNitroBoost", [importDefault(12882)]: "imgWumpusNitroClassic", [importDefault(12884)]: "imgWumpusNitroClassicBoost", [importDefault(12881)]: "imgWumpusNitroTier0", [importDefault(12880)]: "imgBoost" };
+let closure_38 = { [importDefault(12901)]: "imgWumpusNitro", [importDefault(12903)]: "imgWumpusNitroBoost", [importDefault(12900)]: "imgWumpusNitroClassic", [importDefault(12902)]: "imgWumpusNitroClassicBoost", [importDefault(12899)]: "imgWumpusNitroTier0", [importDefault(12898)]: "imgBoost" };
 items = [
   {
     id: "premium",

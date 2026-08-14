@@ -1,10 +1,10 @@
-// Module ID: 8434
-// Function ID: 8435
+// Module ID: 8456
+// Function ID: 8457
 // Name: PressableNavigatorButtonWrapper
-// Dependencies: [17, 8432, 21, 4342, 712, 2]
+// Dependencies: [17, 8454, 21, 4342, 712, 2]
 // Exports: default
 
-// Module 8434 (PressableNavigatorButtonWrapper)
+// Module 8456 (PressableNavigatorButtonWrapper)
 import { View } from "get ActivityIndicator";
 import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 16789
-// Function ID: 16790
+// Module ID: 16805
+// Function ID: 16806
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 676, 21, 4342, 712, 1403, 16790, 1297, 9112, 4338, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 1403, 16806, 1297, 9126, 4338, 1236, 2]
 // Exports: default
 
-// Module 16789 (InRolePromptNotice)
+// Module 16805 (InRolePromptNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { RoleFlags } from "ME";
@@ -34,12 +34,12 @@ export default function InRolePromptNotice(role) {
   } else {
     obj = { style: null, children: null };
     obj[0] = string.promptRow;
-    const tmpResult = tmp(16790);
+    const tmpResult = tmp(16806);
     let Icon = tmp(1297).Icon;
     if (isRolePowerfulResult) {
       obj = { style: null, source: null, color: null };
       obj[0] = string.icon;
-      obj[1] = importDefault(9112);
+      obj[1] = importDefault(9126);
       obj[2] = importDefault(712).unsafe_rawColors.YELLOW_300;
       const items = [tmp6(Icon, obj), ];
       const obj1 = { style: null, variant: "text-sm/medium", children: null };
@@ -55,7 +55,7 @@ export default function InRolePromptNotice(role) {
     } else {
       const obj2 = { style: null, source: null };
       obj2[0] = string.icon;
-      obj2[1] = importDefault(9112);
+      obj2[1] = importDefault(9126);
       const items1 = [tmp6(Icon, obj2), ];
       const obj3 = { style: null, variant: "text-sm/medium", children: null };
       obj3[0] = string.promptText;
@@ -65,6 +65,6 @@ export default function InRolePromptNotice(role) {
       obj[1] = items1;
       tmp4Result = tmp4(tmp5, obj);
     }
-    isRolePowerfulResult = tmp(16790).isRolePowerful(role);
+    isRolePowerfulResult = tmp(16806).isRolePowerful(role);
   }
 };

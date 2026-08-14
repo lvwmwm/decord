@@ -1,10 +1,10 @@
-// Module ID: 11470
-// Function ID: 11471
+// Module ID: 11486
+// Function ID: 11487
 // Name: ForumPostListBody
-// Dependencies: [19, 17, 5965, 21, 4342, 11462, 11452, 11461, 11463, 11471, 11456, 2]
+// Dependencies: [19, 17, 5986, 21, 4342, 11478, 11468, 11477, 11479, 11487, 11472, 2]
 // Exports: default
 
-// Module 11470 (ForumPostListBody)
+// Module 11486 (ForumPostListBody)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET";
@@ -40,11 +40,11 @@ export default function ForumPostListBody(arg0) {
   if (isNew) {
     const obj1 = { containerStyle: null };
     obj1[0] = tmp.newTagContainer;
-    isNew = callback(importDefault(11462), obj1);
+    isNew = callback(importDefault(11478), obj1);
   }
-  const items1 = [isNew, callback(require(11452) /* ForumPostUsername */.ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(11461), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO })];
+  const items1 = [isNew, callback(require(11468) /* ForumPostUsername */.ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(11477), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO })];
   obj[1] = items1;
-  const items2 = [closure_6(View, obj), callback(importDefault(11463), { title: thread.name, lineClamp: 2, ellipsizeMode: "tail", hasUnreads }), callback(importDefault(11471), { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier })];
+  const items2 = [closure_6(View, obj), callback(importDefault(11479), { title: thread.name, lineClamp: 2, ellipsizeMode: "tail", hasUnreads }), callback(importDefault(11487), { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier })];
   obj[1] = items2;
   const items3 = [closure_6(View, obj), ];
   let blocked;
@@ -66,7 +66,7 @@ export default function ForumPostListBody(arg0) {
       }
       obj4[4] = id;
       obj4[5] = tmp.thumbnailContainer;
-      tmp7Result = callback(require(11456) /* ForumPostMediaAndroid */.ForumPostMediaThumbnail, obj4);
+      tmp7Result = callback(require(11472) /* ForumPostMediaAndroid */.ForumPostMediaThumbnail, obj4);
     }
   }
   items3[1] = tmp7Result;

@@ -1,9 +1,9 @@
-// Module ID: 8896
-// Function ID: 8897
+// Module ID: 8910
+// Function ID: 8911
 // Name: IncrementableMediaViewerActions
 // Dependencies: [1391, 676, 644, 698, 2]
 
-// Module 8896 (IncrementableMediaViewerActions)
+// Module 8910 (IncrementableMediaViewerActions)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
 import keys from "keys";

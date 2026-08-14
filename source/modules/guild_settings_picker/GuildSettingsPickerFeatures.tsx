@@ -1,16 +1,16 @@
-// Module ID: 13306
-// Function ID: 13307
+// Module ID: 13318
+// Function ID: 13319
 // Name: useGuildSettingsPickerFeature
-// Dependencies: [32, 19, 3989, 13307, 13308, 1236, 589, 2]
+// Dependencies: [32, 19, 3989, 13319, 13320, 1236, 589, 2]
 // Exports: useGuildSettingsPickerFeature
 
-// Module 13306 (useGuildSettingsPickerFeature)
+// Module 13318 (useGuildSettingsPickerFeature)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 
 const require = arg1;
-let obj = { "server-subscriptions-onboarding": require("module_13307"), "server-subscriptions-create-tier-from-template": require("module_13308") };
+let obj = { "server-subscriptions-onboarding": require("module_13319"), "server-subscriptions-create-tier-from-template": require("module_13320") };
 let closure_6 = {
   title() {
     const intl = require(1236) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 8376
-// Function ID: 8377
+// Module ID: 8398
+// Function ID: 8399
 // Name: formatSharedClientThemeData
-// Dependencies: [17, 7750, 1236, 2501, 2]
+// Dependencies: [17, 7771, 1236, 2501, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 8376 (formatSharedClientThemeData)
+// Module 8398 (formatSharedClientThemeData)
 import { Image } from "get ActivityIndicator";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/client_themes/native/chat/formatSharedClientThemeData.tsx");
@@ -20,7 +20,7 @@ export const formatSharedClientThemeData = function formatSharedClientThemeData(
       str2 = ensureAvatarSourceResult.uri;
     }
     obj[3] = str2;
-    obj[4] = Image.resolveAssetSource(importDefault(7750)).uri;
+    obj[4] = Image.resolveAssetSource(importDefault(7771)).uri;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[5] = intl.string(require(1236) /* getSystemLocale */.t.SKNnqq);
     const intl2 = require(1236) /* getSystemLocale */.intl;

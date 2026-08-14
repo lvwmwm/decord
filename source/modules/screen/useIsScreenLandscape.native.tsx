@@ -1,10 +1,10 @@
-// Module ID: 4890
-// Function ID: 4891
+// Module ID: 4912
+// Function ID: 4913
 // Name: getIsScreenLandscape
 // Dependencies: [19, 1494, 1496, 2]
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 4890 (getIsScreenLandscape)
+// Module 4912 (getIsScreenLandscape)
 import noop from "noop";
 import getDimensionsStoreStateForEntry from "getDimensionsStoreStateForEntry";
 

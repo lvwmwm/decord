@@ -1,10 +1,10 @@
-// Module ID: 7450
-// Function ID: 7451
+// Module ID: 7471
+// Function ID: 7472
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 676, 21, 4342, 712, 4278, 1297, 1236, 1993, 1363, 7451, 7452, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 4278, 1297, 1236, 1993, 1363, 7472, 7473, 2]
 // Exports: default
 
-// Module 7450 (BlockedPaymentsCountryDisplay)
+// Module 7471 (BlockedPaymentsCountryDisplay)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -46,9 +46,9 @@ export default function BlockedPaymentsCountryDisplay() {
   const obj5 = importDefault(1993);
   const tmp8 = closure_4;
   if (obj7.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(7451);
+    let tmp2Result = tmp2(7472);
   } else {
-    tmp2Result = tmp2(7452);
+    tmp2Result = tmp2(7473);
   }
   obj2[1] = tmp2Result;
   items[2] = tmp7(tmp8, obj2);

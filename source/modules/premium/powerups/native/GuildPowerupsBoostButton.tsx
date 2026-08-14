@@ -1,10 +1,10 @@
-// Module ID: 12009
-// Function ID: 12010
+// Module ID: 12025
+// Function ID: 12026
 // Name: GuildPowerupsBoostButton
-// Dependencies: [19, 1910, 1922, 4235, 676, 21, 589, 6907, 1940, 5192, 6911, 2]
+// Dependencies: [19, 1910, 1922, 4235, 676, 21, 589, 6928, 1940, 5213, 6932, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 12009 (GuildPowerupsBoostButton)
+// Module 12025 (GuildPowerupsBoostButton)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -26,7 +26,7 @@ export const GuildPowerupsBoostButton = function GuildPowerupsBoostButton(guildI
   const obj2 = guildId(589);
   const tmp = guildId;
   const tmp5 = stateFromStores1;
-  const tmp6 = stateFromStores1(6907)({ forceFetch: true });
+  const tmp6 = stateFromStores1(6928)({ forceFetch: true });
   const items2 = [mergeGuildAvatar];
   const stateFromStores2 = guildId(589).useStateFromStores(items2, () => currentUser.getCurrentUser());
   if (null != stateFromStores2) {
@@ -48,7 +48,7 @@ export const GuildPowerupsBoostButton = function GuildPowerupsBoostButton(guildI
     obj[3] = tmp6.fractionalState;
     obj[4] = tmp9;
     obj[5] = UNSPECIFIED;
-    tmp10 = jsx(tmp5(6911), { guild: null, previousGuildSubscriptionSlot: null, analyticsSection: null, fractionalPremiumState: null, onAvailableSlotPress: null, premiumGroupRole: null });
+    tmp10 = jsx(tmp5(6932), { guild: null, previousGuildSubscriptionSlot: null, analyticsSection: null, fractionalPremiumState: null, onAvailableSlotPress: null, premiumGroupRole: null });
   }
   return tmp10;
 };

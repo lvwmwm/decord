@@ -1,10 +1,10 @@
-// Module ID: 7867
-// Function ID: 7868
+// Module ID: 7888
+// Function ID: 7889
 // Name: MethodsScreen
-// Dependencies: [5, 32, 19, 17, 676, 21, 1940, 7868, 7870, 7872, 4342, 712, 7849, 7874, 7877, 4560, 7844, 7852, 7853, 4753, 6070, 4338, 7842, 1993, 1297, 4755, 1236, 2821, 5807, 5414, 7879, 7992, 5818, 4550, 5310, 7994, 514, 5823, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 1940, 7889, 7891, 7893, 4342, 712, 7870, 7895, 7898, 4582, 7865, 7873, 7874, 4775, 6091, 4338, 7863, 1993, 1297, 4777, 1236, 2821, 5828, 5435, 7900, 8013, 5839, 4572, 5331, 8015, 514, 5844, 2]
 // Exports: default
 
-// Module 7867 (MethodsScreen)
+// Module 7888 (MethodsScreen)
 import closure_3 from "jsxProd";
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import Stack from "Stack";
@@ -321,7 +321,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     let closure_1 = closure_0;
     const _undefined = closure_1;
     closeModal = function closeModal() {
-      let arr = callback(4550);
+      let arr = callback(4572);
       arr = arr.pop();
       dependencyMap();
     };
@@ -350,7 +350,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     const obj3 = entryPoint(_undefined[34]);
     obj[2] = entryPoint(_undefined[34]).getHeaderBackButton();
     obj[3] = function render() {
-      return outer1_8(callback(7994), { onClose: closeModal, modalSessionId: closure_0 });
+      return outer1_8(callback(8015), { onClose: closeModal, modalSessionId: closure_0 });
     };
     obj[outer1_11.GOOGLE_WALLET_VERIFICATION] = obj;
     return obj;
@@ -361,5 +361,5 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
   let obj = { screens: memo1, initialRouteName: constants.METHODS, headerBackTitle: null };
   const intl = entryPoint(1236).intl;
   obj[2] = intl.string(entryPoint(1236).t["13/7kX"]);
-  return callback2(entryPoint(5823).Navigator, obj);
+  return callback2(entryPoint(5844).Navigator, obj);
 };

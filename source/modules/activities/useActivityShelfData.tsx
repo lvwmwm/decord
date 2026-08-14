@@ -1,10 +1,10 @@
-// Module ID: 11484
-// Function ID: 11485
+// Module ID: 11500
+// Function ID: 11501
 // Name: useActivityShelfData
-// Dependencies: [19, 1922, 7635, 1390, 589, 5774, 1370, 10580, 500, 9589, 2]
+// Dependencies: [19, 1922, 7656, 1390, 589, 5795, 1370, 10596, 500, 9602, 2]
 // Exports: useActivityShelfData
 
-// Module 11484 (useActivityShelfData)
+// Module 11500 (useActivityShelfData)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
@@ -79,7 +79,7 @@ export const useActivityShelfData = function useActivityShelfData(guildId) {
       if (supported_platforms == null) {
         supported_platforms = [];
       }
-      const tmp = lib(10580);
+      const tmp = lib(10596);
       return supported_platforms.includes(tmp(callback(500).getOS()));
     });
     const found1 = found.filter((activity) => {

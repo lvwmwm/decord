@@ -1,10 +1,10 @@
-// Module ID: 10671
-// Function ID: 10672
+// Module ID: 10687
+// Function ID: 10688
 // Name: useVideoReadyTimeout
-// Dependencies: [19, 687, 4227, 10670, 4441, 10672, 10674, 2]
+// Dependencies: [19, 687, 4227, 10686, 4441, 10688, 10690, 2]
 // Exports: default
 
-// Module 10671 (useVideoReadyTimeout)
+// Module 10687 (useVideoReadyTimeout)
 import noop from "noop";
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 10982
-// Function ID: 10983
+// Module ID: 10998
+// Function ID: 10999
 // Name: ChatScrollPosition
-// Dependencies: [17, 500, 10983, 1208, 10984, 10985, 2]
+// Dependencies: [17, 500, 10999, 1208, 11000, 11001, 2]
 
-// Module 10982 (ChatScrollPosition)
+// Module 10998 (ChatScrollPosition)
 import get_ActivityIndicator from "get ActivityIndicator";
 
 let c3;
@@ -30,7 +30,7 @@ obj = {
           DCDChatManager.scrollTo(tmp15, arg1, tmp, tmp2, TOP);
         }
       } else {
-        const Commands = tmp5(10983).Commands;
+        const Commands = tmp5(10999).Commands;
         Commands.scrollTo(arg0, arg1, tmp, tmp2, TOP);
       }
       obj2 = require(500) /* set */;
@@ -46,7 +46,7 @@ obj = {
           DCDChatManager.scrollToBottom(tmp6, arg1);
         }
       } else {
-        const Commands = tmp2(10983).Commands;
+        const Commands = tmp2(10999).Commands;
         Commands.scrollToBottom(arg0, arg1);
       }
       obj = require(500) /* set */;
@@ -92,7 +92,7 @@ obj = {
           DCDChatManager.scrollIntoView(tmp13, arg1, tmp, tmp2);
         }
       } else {
-        const Commands = tmp4(10983).Commands;
+        const Commands = tmp4(10999).Commands;
         Commands.scrollIntoView(arg0, arg1, tmp, tmp2);
       }
       obj2 = require(500) /* set */;
@@ -103,7 +103,7 @@ obj = {
     let forceReload;
     if (null != arg0) {
       if (obj6.isIOS()) {
-        let tmp31Result = tmp31(10984);
+        let tmp31Result = tmp31(11000);
         const andIncrementChangesetIdForChat = tmp31Result.getAndIncrementChangesetIdForChat(arg0);
         ({ rows, forceReload } = rows);
         if (forceReload == null) {
@@ -119,7 +119,7 @@ obj = {
         obj[3] = forceReload;
         obj[2] = obj;
         importDefault(1208).addBreadcrumb(obj);
-        const Commands = tmp31(10983).Commands;
+        const Commands = tmp31(10999).Commands;
         const _JSON2 = JSON;
         const json = JSON.stringify(rows.rows);
         const isLoadingAtTop = rows.isLoadingAtTop;
@@ -145,7 +145,7 @@ obj = {
       } else {
         const tmp2 = callback(arg0);
         if (null != tmp2) {
-          const obj7 = importDefault(10985);
+          const obj7 = importDefault(11001);
           const _JSON4 = JSON;
           const json1 = JSON.stringify(rows.rows);
           const isLoadingAtTop2 = rows.isLoadingAtTop;
@@ -154,7 +154,7 @@ obj = {
             const _JSON = JSON;
             json2 = JSON.stringify(rows.scrollData);
           }
-          tmp31Result = tmp31(10984);
+          tmp31Result = tmp31(11000);
           const andIncrementChangesetIdForChat1 = tmp31Result.getAndIncrementChangesetIdForChat(arg0);
           let flag = rows.HACK_iOSForceAnimations;
           if (flag == null) {
@@ -177,15 +177,15 @@ obj = {
   clearRows(arg0) {
     if (null != arg0) {
       if (obj4.isIOS()) {
-        const Commands = tmp6(10983).Commands;
-        let tmp6Result = tmp6(10984);
+        const Commands = tmp6(10999).Commands;
+        let tmp6Result = tmp6(11000);
         Commands.clearRows(arg0, tmp6Result.getAndIncrementChangesetIdForChat(arg0));
       } else {
         const tmp2 = callback(arg0);
         if (null != tmp2) {
-          tmp6Result = tmp6(10984);
-          importDefault(10985).clearRows(tmp2, tmp6Result.getAndIncrementChangesetIdForChat(arg0));
-          const obj = importDefault(10985);
+          tmp6Result = tmp6(11000);
+          importDefault(11001).clearRows(tmp2, tmp6Result.getAndIncrementChangesetIdForChat(arg0));
+          const obj = importDefault(11001);
         }
       }
       obj4 = require(500) /* set */;
@@ -198,7 +198,7 @@ obj = {
       const obj = require(500) /* set */;
     }
     if (isIOSResult) {
-      const Commands = require(10983) /* __INTERNAL_VIEW_CONFIG */.Commands;
+      const Commands = require(10999) /* __INTERNAL_VIEW_CONFIG */.Commands;
       Commands.fadeIn(arg0);
     }
   },

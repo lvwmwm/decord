@@ -1,10 +1,10 @@
-// Module ID: 6123
-// Function ID: 6124
+// Module ID: 6144
+// Function ID: 6145
 // Name: AppleIllocon
-// Dependencies: [21, 5308, 6124, 2]
+// Dependencies: [21, 5329, 6145, 2]
 // Exports: AppleIllocon
 
-// Module 6123 (AppleIllocon)
+// Module 6144 (AppleIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AppleIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const AppleIllocon = function AppleIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6124);
+  obj[0] = importDefault(6145);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { uri: null });
+  return jsx(importDefault(5329), { uri: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 10908
-// Function ID: 10909
+// Module ID: 10924
+// Function ID: 10925
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 4342, 712, 4083, 4343, 4338, 1297, 5758, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4083, 4343, 4338, 1297, 5779, 2]
 // Exports: default
 
-// Module 10908 (StageSectionHeader)
+// Module 10924 (StageSectionHeader)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -67,7 +67,7 @@ export default function StageSectionHeader(collapsed) {
   const obj3 = { style: tmp.collapseButton, children: null };
   const obj4 = { style: animatedStyle, children: null };
   const obj5 = { source: null, style: null };
-  obj5[0] = importDefault(5758);
+  obj5[0] = importDefault(5779);
   obj5[1] = tmp.collapseIcon;
   obj4[1] = closure_6(collapsed(1297).Icon, obj5);
   obj3[1] = closure_6(importDefault(4083).View, obj4);

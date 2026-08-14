@@ -1,9 +1,9 @@
-// Module ID: 16375
-// Function ID: 16376
+// Module ID: 16393
+// Function ID: 16394
 // Name: getMessage
-// Dependencies: [16376, 2, 16419]
+// Dependencies: [16394, 2, 16437]
 
-// Module 16375 (getMessage)
+// Module 16393 (getMessage)
 const result = require("format").fileFinishedImporting("../discord_common/js/packages/i18n/index.tsx");
 
 export { I18N as default } from "getMessages";

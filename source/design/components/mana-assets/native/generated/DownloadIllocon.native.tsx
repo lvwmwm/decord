@@ -1,10 +1,10 @@
-// Module ID: 6293
-// Function ID: 6294
+// Module ID: 6314
+// Function ID: 6315
 // Name: DownloadIllocon
-// Dependencies: [21, 5308, 6294, 2]
+// Dependencies: [21, 5329, 6315, 2]
 // Exports: DownloadIllocon
 
-// Module 6293 (DownloadIllocon)
+// Module 6314 (DownloadIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DownloadIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const DownloadIllocon = function DownloadIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6294);
+  obj[0] = importDefault(6315);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { uri: null });
+  return jsx(importDefault(5329), { uri: null });
 };

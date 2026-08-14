@@ -1,10 +1,10 @@
-// Module ID: 9899
-// Function ID: 9900
+// Module ID: 9910
+// Function ID: 9911
 // Name: NotificationProgress
 // Dependencies: [32, 19, 17, 21, 4342, 712, 4083, 2]
 // Exports: default
 
-// Module 9899 (NotificationProgress)
+// Module 9910 (NotificationProgress)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

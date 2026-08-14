@@ -1,8 +1,8 @@
-// Module ID: 15133
-// Function ID: 15134
-// Dependencies: [32, 19, 17, 4746, 21, 4342, 712, 15130, 4191, 8012, 5809, 15132, 13965, 688, 2]
+// Module ID: 15147
+// Function ID: 15148
+// Dependencies: [32, 19, 17, 4768, 21, 4342, 712, 15144, 4191, 8033, 5830, 15146, 13977, 688, 2]
 
-// Module 15133
+// Module 15147
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -26,7 +26,7 @@ let closure_11 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function VEVOOPropTintColor() {
   let require;
   let tmp7;
-  let obj = require(15130) /* VisualEffectViewOverrideOverlay_ */;
+  let obj = require(15144) /* VisualEffectViewOverrideOverlay_ */;
   const visualEffectViewOverrideSharedStyles = obj.useVisualEffectViewOverrideSharedStyles();
   let obj1 = importAllResult;
   let tmp = callback3();
@@ -87,11 +87,11 @@ const memoResult = importAllResult.memo(function VEVOOPropTintColor() {
       }
     }
   };
-  obj[3] = callback2(require(5809) /* FormSwitch */.FormSwitch, obj);
+  obj[3] = callback2(require(5830) /* FormSwitch */.FormSwitch, obj);
   obj1 = { style: visualEffectViewOverrideSharedStyles.zeroPadding, label: "Blur Tint", trailing: null };
   const items1 = [tmp.tintColor, { backgroundColor: first }];
   obj1[2] = callback2(closure_5, { style: items1 });
-  const items2 = [callback2(require(8012) /* Form */.FormRow, obj1), ];
+  const items2 = [callback2(require(8033) /* Form */.FormRow, obj1), ];
   const obj2 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: null, subLabel: null };
   let str2;
   if (first1 != null) {
@@ -105,27 +105,27 @@ const memoResult = importAllResult.memo(function VEVOOPropTintColor() {
   const ref = obj1.useRef(first1);
   const tmp14 = closure_10;
   const tmp15 = closure_9;
-  obj2[3] = callback2(first(15132), {
+  obj2[3] = callback2(first(15146), {
     disabled: !tmp7,
     initialValue: obj1.useRef(first1),
     onValueChange(arg0) {
       callback3(first, arg0);
     }
   });
-  items2[1] = callback2(require(8012) /* Form */.FormRow, obj2);
+  items2[1] = callback2(require(8033) /* Form */.FormRow, obj2);
   obj3[0] = items2;
   obj[4] = tmp14(tmp15, obj3);
   obj[5] = !tmp7;
   obj[6] = function onPress() {
     const obj = { color: null, onSelect: null };
-    const tmp = first(13965);
+    const tmp = first(13977);
     obj[0] = outer1_0(688).hex2int(first);
     obj[1] = function onSelect(color) {
       callback(outer1_0(outer1_2[13]).int2hex(color), _slicedToArray);
     };
     tmp(obj);
   };
-  return callback2(require(8012) /* Form */.FormRow, obj);
+  return callback2(require(8033) /* Form */.FormRow, obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOPropTintColor.tsx");
 

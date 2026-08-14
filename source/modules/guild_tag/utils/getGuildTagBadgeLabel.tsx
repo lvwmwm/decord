@@ -1,10 +1,10 @@
-// Module ID: 16751
-// Function ID: 16752
+// Module ID: 16767
+// Function ID: 16768
 // Name: getGuildTagBadgeLabel
-// Dependencies: [8097, 1236, 1370, 2]
+// Dependencies: [8118, 1236, 1370, 2]
 // Exports: default
 
-// Module 16751 (getGuildTagBadgeLabel)
+// Module 16767 (getGuildTagBadgeLabel)
 import { GuildTagBadgeKind } from "items";
 
 const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("modules/guild_tag/utils/getGuildTagBadgeLabel.tsx");

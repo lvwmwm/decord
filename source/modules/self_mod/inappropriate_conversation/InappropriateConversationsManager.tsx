@@ -1,9 +1,9 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 16984
+// Function ID: 16985
 // Name: fadeIn
-// Dependencies: [9829, 4509, 5301, 2]
+// Dependencies: [9840, 4509, 5322, 2]
 
-// Module 16968 (fadeIn)
+// Module 16984 (fadeIn)
 import createSoundForPack from "createSoundForPack";
 import "initialize";
 

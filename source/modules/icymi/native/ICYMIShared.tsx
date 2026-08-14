@@ -1,10 +1,10 @@
-// Module ID: 15679
-// Function ID: 15680
+// Module ID: 15697
+// Function ID: 15698
 // Name: Separator
-// Dependencies: [19, 17, 5963, 1391, 1990, 3989, 1922, 676, 21, 7349, 12272, 4856, 9856, 15608, 5293, 5906, 5861, 6965, 4274, 15640, 500, 712, 1297, 8341, 5819, 4761, 4887, 4338, 7148, 15680, 8653, 589, 4534, 8962, 8832, 4863, 8961, 15288, 9093, 1236, 15641, 4278, 4065, 4191, 4083, 4343, 4355, 4841, 5818, 4332, 2]
+// Dependencies: [19, 17, 5984, 1391, 1990, 3989, 1922, 676, 21, 7371, 12290, 4878, 9867, 15626, 5314, 5927, 5882, 6986, 4274, 15658, 500, 712, 1297, 8363, 5840, 4783, 4909, 4338, 7170, 15698, 8667, 589, 4534, 8976, 8846, 4885, 8975, 15302, 9107, 1236, 15659, 4278, 4065, 4191, 4083, 4343, 4355, 4863, 5839, 4332, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 15679 (Separator)
+// Module 15697 (Separator)
 import closure_3 from "createICYMIStyles";
 import { View } from "trackInvite";
 import updateState from "updateState";
@@ -30,7 +30,7 @@ let unpackModuleId;
 const require = arg1;
 class Separator {
   constructor() {
-    obj = { style: f62372().separator };
+    obj = { style: f62509().separator };
     return jsx(View, obj);
   }
 }
@@ -69,7 +69,7 @@ class GuildContentPost {
     guild = global.guild;
     ({ channel, hideTimestamp, id, type } = global);
     ({ timestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f62372();
+    tmp = f62509();
     tmp2 = guild;
     tmp3 = id;
     obj = require("getFontScale");
@@ -201,16 +201,16 @@ export const navigateToPost = function navigateToPost(id, id2, id3) {
     obj = { page: outer1_12.ICYMI, object: outer1_10.ACK_MESSAGE_VIEWED, objectType: outer1_11.ACK_SEMI_AUTOMATIC };
     obj.ack(id, obj, true, true, closure_1);
   }, 1500);
-  importDefault(5906)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
+  importDefault(5927)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
   if (null != id3) {
-    _require(5861).runAfterInteractions(() => {
+    _require(5882).runAfterInteractions(() => {
       let obj = id3(outer1_2[17]);
       obj = { channelId: id, limit: outer1_14, jump: null };
       obj = { messageId: id3, flash: true, jumpType: id(outer1_2[18]).JumpType.ANIMATED };
       obj[2] = obj;
       const messages = obj.fetchMessages(obj);
     }, 150);
-    let obj = _require(5861);
+    let obj = _require(5882);
   }
 };
 export { Separator };

@@ -1,10 +1,10 @@
-// Module ID: 14849
-// Function ID: 14850
+// Module ID: 14863
+// Function ID: 14864
 // Name: ComparisonRow
-// Dependencies: [19, 17, 21, 1297, 4338, 4755, 4342, 712, 4753, 8012, 2]
+// Dependencies: [19, 17, 21, 1297, 4338, 4777, 4342, 712, 4775, 8033, 2]
 // Exports: default
 
-// Module 14849 (ComparisonRow)
+// Module 14863 (ComparisonRow)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -76,7 +76,7 @@ function ComparisonRow(entry) {
     obj5[3] = function onPress() {
 
     };
-    items5[1] = tmp9(tmp4(4755).Button, obj5);
+    items5[1] = tmp9(tmp4(4777).Button, obj5);
     obj4[1] = items5;
     let tmp9Result = tmp7(tmp8, obj4);
   } else {
@@ -297,7 +297,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
   obj = { spacing: 4, style: tmp.header, children: null };
   items = [callback2(require(4338) /* Text */.Text, { variant: "heading-xl/bold", children: "Migration Mapping" }), callback2(require(4338) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Legacy (uikit-native) \u2192 Mana side-by-side" })];
   obj[2] = items;
-  const items1 = [callback(require(4753) /* Stack */.Stack, obj), , , ];
+  const items1 = [callback(require(4775) /* Stack */.Stack, obj), , , ];
   const entries = Object.entries(obj);
   items1[1] = entries.map((arg0) => {
     let arr;
@@ -305,12 +305,12 @@ export default function UserSettingsDesignSystemLegacyButton() {
     [tmp, arr] = arg0;
     const obj = { title: tmp, children: null };
     obj[1] = arr.map((entry) => callback(closure_8, { entry }, arg1));
-    return callback2(callback(8012).FormSection, obj, "cmp-" + tmp);
+    return callback2(callback(8033).FormSection, obj, "cmp-" + tmp);
   });
   const obj1 = { spacing: 4, style: tmp.header, children: null };
   const items2 = [callback2(require(4338) /* Text */.Text, { variant: "heading-xl/bold", children: "Legacy Button Audit" }), callback2(require(4338) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "41 combinations across 185 importers" })];
   obj1[2] = items2;
-  items1[2] = callback(require(4753) /* Stack */.Stack, obj1);
+  items1[2] = callback(require(4775) /* Stack */.Stack, obj1);
   const entries1 = Object.entries(tmp2);
   items1[3] = entries1.map((arg0) => {
     let arr;
@@ -319,7 +319,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
     const obj = { title: null, children: null };
     obj[0] = "" + tmp + " (" + arr.reduce((arg0, count) => arg0 + count.count, 0) + " usages)";
     obj[1] = arr.map((combo) => callback(closure_9, { combo }, arg1));
-    return callback2(callback(8012).FormSection, obj, tmp);
+    return callback2(callback(8033).FormSection, obj, tmp);
   });
   obj[1] = items1;
   return callback(closure_2, obj);

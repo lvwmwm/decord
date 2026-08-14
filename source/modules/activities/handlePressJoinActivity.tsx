@@ -1,10 +1,10 @@
-// Module ID: 10621
-// Function ID: 10622
+// Module ID: 10637
+// Function ID: 10638
 // Name: handlePressJoinActivity
-// Dependencies: [5, 4368, 1391, 1910, 3989, 1922, 4361, 1390, 10622, 10613, 4683, 1236, 5769, 10612, 10623, 2]
+// Dependencies: [5, 4368, 1391, 1910, 3989, 1922, 4361, 1390, 10638, 10629, 4705, 1236, 5790, 10628, 10639, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 10621 (handlePressJoinActivity)
+// Module 10637 (handlePressJoinActivity)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createExecutable from "createExecutable";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -19,31 +19,31 @@ function handlePressJoinActivity(arg0) {
   let embeddedActivityJoinability;
   let handleCanJoin;
   ({ embeddedActivityJoinability, handleCanJoin } = arg0);
-  if (require(10622) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN === embeddedActivityJoinability) {
+  if (require(10638) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN === embeddedActivityJoinability) {
     if (handleCanJoin != null) {
       handleCanJoin();
     }
-  } else if (tmp(10622).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === embeddedActivityJoinability) {
-    const result = tmp(10613).showActivitiesInvalidPermissionsAlert();
-    const tmpResult = tmp(10613);
-  } else if (tmp(10622).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === embeddedActivityJoinability) {
+  } else if (tmp(10638).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === embeddedActivityJoinability) {
+    const result = tmp(10629).showActivitiesInvalidPermissionsAlert();
+    const tmpResult = tmp(10629);
+  } else if (tmp(10638).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === embeddedActivityJoinability) {
     let obj = { title: null, body: null, hideActionSheet: false };
     const intl7 = tmp(1236).intl;
     obj[0] = intl7.string(tmp(1236).t.PtobXW);
     const intl8 = tmp(1236).intl;
     obj[1] = intl8.string(tmp(1236).t.UXoQTp);
-    importDefault(4683).show(obj);
-    const obj7 = importDefault(4683);
-  } else if (tmp(10622).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
+    importDefault(4705).show(obj);
+    const obj7 = importDefault(4705);
+  } else if (tmp(10638).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
     obj = { title: null, body: null, hideActionSheet: false };
     const intl5 = tmp(1236).intl;
     obj[0] = intl5.string(tmp(1236).t.PtobXW);
     const intl6 = tmp(1236).intl;
     obj[1] = intl6.string(tmp(1236).t.uGDCcw);
-    importDefault(4683).show(obj);
-    const obj5 = importDefault(4683);
-  } else if (tmp(10622).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
-    let obj2 = importDefault(4683);
+    importDefault(4705).show(obj);
+    const obj5 = importDefault(4705);
+  } else if (tmp(10638).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
+    let obj2 = importDefault(4705);
     const obj1 = { title: null, body: null, hideActionSheet: false };
     const intl3 = tmp(1236).intl;
     obj1[0] = intl3.string(tmp(1236).t.PtobXW);
@@ -51,7 +51,7 @@ function handlePressJoinActivity(arg0) {
     obj1[1] = intl4.string(tmp(1236).t["4WuFRE"]);
     obj2.show(obj1);
   } else {
-    obj = importDefault(4683);
+    obj = importDefault(4705);
     obj2 = { title: null, body: null, hideActionSheet: false };
     const intl = tmp(1236).intl;
     obj2[0] = intl.string(tmp(1236).t.PtobXW);
@@ -211,7 +211,7 @@ function _maybeJoinEmbeddedActivity() {
                 });
                 updateVoiceState = c3;
                 if (null == updateVoiceState) {
-                  let obj4 = callback2(5769);
+                  let obj4 = callback2(5790);
                   c3 = 2;
                   c4 = 1;
                   let obj2 = { value: null, done: false };
@@ -244,13 +244,13 @@ function _maybeJoinEmbeddedActivity() {
                 obj4[1] = updateVoiceState;
                 obj4[2] = callback;
                 obj4[3] = id;
-                obj3 = callback(10612);
+                obj3 = callback(10628);
                 obj4[4] = obj3.getIsActivitiesEnabledForCurrentPlatform();
                 obj4[5] = c5;
                 obj4[6] = updateVoiceState;
                 obj4[7] = c7;
                 obj4[8] = c6;
-                obj3[0] = callback2(10622)(obj4);
+                obj3[0] = callback2(10638)(obj4);
                 obj3[1] = function handleCanJoin() {
                   const self = this;
                   const apply = _handleCanJoin.apply;
@@ -263,7 +263,7 @@ function _maybeJoinEmbeddedActivity() {
                 };
                 id(obj3);
                 const tmp49 = id;
-                const tmp52 = callback2(10622);
+                const tmp52 = callback2(10638);
               }
             }
             c4 = 3;

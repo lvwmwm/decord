@@ -1,10 +1,10 @@
-// Module ID: 8846
-// Function ID: 8847
+// Module ID: 8860
+// Function ID: 8861
 // Name: useMaybeFetchProfileFrame
-// Dependencies: [19, 8847, 8857, 8858, 7048, 2]
+// Dependencies: [19, 8861, 8871, 8872, 7070, 2]
 // Exports: default
 
-// Module 8846 (useMaybeFetchProfileFrame)
+// Module 8860 (useMaybeFetchProfileFrame)
 import noop from "noop";
 
 const require = arg1;
@@ -12,9 +12,9 @@ let result = require("apexExperiment").fileFinishedImporting("modules/collectibl
 
 export default function useMaybeFetchProfileFrame(arg0, location) {
   const _require = arg0;
-  let tmp = importDefault(8847)();
-  const isProfileFramesEnabled = _require(8857).useIsProfileFramesEnabled(location);
-  const tmp3 = importDefault(8858)(arg0);
+  let tmp = importDefault(8861)();
+  const isProfileFramesEnabled = _require(8871).useIsProfileFramesEnabled(location);
+  const tmp3 = importDefault(8872)(arg0);
   importDefault = tmp4;
   const items = [null == tmp && isProfileFramesEnabled && null != arg0 && null == tmp3, arg0];
   const effect = React.useEffect(() => {

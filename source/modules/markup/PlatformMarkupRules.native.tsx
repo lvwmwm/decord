@@ -1,10 +1,10 @@
-// Module ID: 4804
-// Function ID: 4805
+// Module ID: 4826
+// Function ID: 4827
 // Name: match
-// Dependencies: [17, 4805, 4002, 4060, 4784, 1435, 4785, 4872, 4376, 1236, 4788, 2]
+// Dependencies: [17, 4827, 4002, 4060, 4806, 1435, 4807, 4894, 4376, 1236, 4810, 2]
 // Exports: decorateWithIcon
 
-// Module 4804 (match)
+// Module 4826 (match)
 import { Image } from "get ActivityIndicator";
 
 const re4 = /^[\u200B-\u200D\uFEFF\u180E\u061C]/;
@@ -101,7 +101,7 @@ obj[4] = {
 };
 obj[5] = {
   parse(arg0, arg1, arg2) {
-    const channelMention = importDefault(4785).channelMention;
+    const channelMention = importDefault(4807).channelMention;
     const parsed = channelMention.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -170,7 +170,7 @@ obj[5] = {
 };
 obj[6] = {
   parse(closure_0, arg1, channelId) {
-    let obj = require(4872) /* getGameMentionData */;
+    let obj = require(4894) /* getGameMentionData */;
     const gameMentionData = obj.getGameMentionData(tmp);
     let gameIcon;
     if (gameMentionData != null) {
@@ -191,7 +191,7 @@ obj[6] = {
 };
 obj[7] = {
   parse(arg0, arg1, arg2) {
-    const channelOrMessageUrl = importDefault(4785).channelOrMessageUrl;
+    const channelOrMessageUrl = importDefault(4807).channelOrMessageUrl;
     const parsed = channelOrMessageUrl.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -260,7 +260,7 @@ obj[7] = {
 };
 obj[8] = {
   parse(arg0, arg1, arg2) {
-    const mediaPostLink = importDefault(4785).mediaPostLink;
+    const mediaPostLink = importDefault(4807).mediaPostLink;
     const parsed = mediaPostLink.parse(arg0, arg1, arg2);
     let obj = {};
     let merged = Object.assign(parsed);
@@ -329,7 +329,7 @@ obj[8] = {
 };
 obj[9] = {
   parse(arg0, arg1, arg2) {
-    const attachmentLink = importDefault(4788).attachmentLink;
+    const attachmentLink = importDefault(4810).attachmentLink;
     return attachmentLink.parse(arg0, arg1, arg2);
   }
 };

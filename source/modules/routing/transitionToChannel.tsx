@@ -1,7 +1,7 @@
 // Module ID: 4353
 // Function ID: 4354
 // Name: transitionToChannel
-// Dependencies: [1391, 676, 4354, 4355, 1222, 4538, 38, 2]
+// Dependencies: [1391, 676, 4354, 4355, 1222, 4570, 38, 2]
 // Exports: transitionToChannel, transitionToMessage, transitionToStaticChannelRoute, transitionToThread, transitionToThreadMessage, tryTransitionToThreadMessage
 
 // Module 4353 (transitionToChannel)
@@ -31,8 +31,8 @@ export const transitionToChannel = function transitionToChannel(id, openTextInVo
       prop = channel.isGuildVocal();
     }
     if (prop) {
-      tmp7(4538).updateChatOpen(channel.id, true);
-      const tmp7Result = tmp7(4538);
+      tmp7(4570).updateChatOpen(channel.id, true);
+      const tmp7Result = tmp7(4570);
     }
     const CHANNELResult = Routes.CHANNEL(guildIdForGenericRedirect, channel.id);
   }
@@ -87,8 +87,8 @@ export const tryTransitionToThreadMessage = function tryTransitionToThreadMessag
         prop = channel1.isGuildVocal();
       }
       if (prop) {
-        tmp20(4538).updateChatOpen(channel1.id, true);
-        const tmp20Result = tmp20(4538);
+        tmp20(4570).updateChatOpen(channel1.id, true);
+        const tmp20Result = tmp20(4570);
       }
       const CHANNELResult1 = Routes.CHANNEL(guildIdForGenericRedirect1, channel1.id);
     }

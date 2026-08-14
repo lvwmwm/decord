@@ -1,10 +1,10 @@
-// Module ID: 8057
-// Function ID: 8058
+// Module ID: 8078
+// Function ID: 8079
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 4358, 1391, 3989, 1396, 5173, 676, 21, 4342, 712, 4310, 589, 1399, 5181, 5804, 8012, 1236, 1297, 8058, 7819, 8059, 6059, 8060, 8061, 8063, 8064, 8065, 2]
+// Dependencies: [19, 17, 4358, 1391, 3989, 1396, 5194, 676, 21, 4342, 712, 4310, 589, 1399, 5202, 5825, 8033, 1236, 1297, 8079, 7840, 8080, 6080, 8081, 8082, 8084, 8085, 8086, 2]
 // Exports: default
 
-// Module 8057 (StageSettingsActionSheet)
+// Module 8078 (StageSettingsActionSheet)
 import registerAsset from "registerAsset";
 import { View } from "getSystemLocale";
 import getParticipants from "getParticipants";

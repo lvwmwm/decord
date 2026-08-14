@@ -1,8 +1,8 @@
-// Module ID: 10870
-// Function ID: 10871
-// Dependencies: [19, 17, 4364, 1218, 1910, 21, 4342, 4191, 712, 10254, 9793, 589, 5176, 9204, 10871, 2]
+// Module ID: 10886
+// Function ID: 10887
+// Dependencies: [19, 17, 4364, 1218, 1910, 21, 4342, 4191, 712, 10268, 9804, 589, 5197, 9218, 10887, 2]
 
-// Module 10870
+// Module 10886
 import { View } from "get ActivityIndicator";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -24,13 +24,13 @@ const memoResult = require("noop").memo((channel) => {
   let importDefault;
   const tmp = callback();
   const tmp2 = importDefault;
-  let obj = channel(9793);
+  let obj = channel(9804);
   const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   let obj1 = channel(589);
   const items = [createGuildRecordFromRust];
   const items1 = [channel.guild_id];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getGuild(channel.guild_id), items1);
-  const tmp4 = importDefault(10254)(channel.id);
+  const tmp4 = importDefault(10268)(channel.id);
   const items2 = [reset];
   const items3 = [channel.id];
   const stateFromStoresArray = channel(589).useStateFromStoresArray(items2, () => outer1_4.getAllApplicationStreamsForChannel(channel.id), items3);
@@ -45,9 +45,9 @@ const memoResult = require("noop").memo((channel) => {
     num = 0;
   }
   const obj4 = channel(589);
-  const stageHasMedia = channel(5176).useStageHasMedia(channel.id);
+  const stageHasMedia = channel(5197).useStageHasMedia(channel.id);
   const items5 = [];
-  items5.push(jsx(channel(10871).StreamVolumeItem, {}));
+  items5.push(jsx(channel(10887).StreamVolumeItem, {}));
   if (tmp11) {
     obj = { channel: null, disabled: null };
     obj[0] = channel;
@@ -58,16 +58,16 @@ const memoResult = require("noop").memo((channel) => {
     if (!tmp12) {
       let reachedLimit = !stageHasMedia;
       if (!stageHasMedia) {
-        reachedLimit = tmp2(9204)(channel).reachedLimit;
+        reachedLimit = tmp2(9218)(channel).reachedLimit;
       }
       tmp12 = reachedLimit;
     }
     obj[1] = tmp12;
-    items5.push(tmp9(tmp5(10871).ScreenshareButton, obj));
+    items5.push(tmp9(tmp5(10887).ScreenshareButton, obj));
   }
   obj = { channelId: channel.id, isConnectedToVoiceChannel };
-  items5.push(jsx(channel(10871).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
-  items5.push(jsx(channel(10871).DeafenButton, { channel }));
+  items5.push(jsx(channel(10887).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
+  items5.push(jsx(channel(10887).DeafenButton, { channel }));
   obj1 = { style: tmp.container, children: items5.map((children) => callback(closure_3, { children }, arg1)) };
   return <View style={tmp.container}>{items5.map((children) => callback(closure_3, { children }, arg1))}</View>;
 });

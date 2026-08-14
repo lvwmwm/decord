@@ -1,10 +1,10 @@
-// Module ID: 13104
-// Function ID: 13105
+// Module ID: 13115
+// Function ID: 13116
 // Name: NUFChannelIllustration
-// Dependencies: [32, 19, 17, 21, 4342, 712, 1236, 13105, 13106, 4083, 4343, 13107, 13108, 13109, 13110, 5416, 4850, 4338, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 1236, 13116, 13117, 4083, 4343, 13118, 13119, 13120, 13121, 5437, 4872, 4338, 2]
 // Exports: default
 
-// Module 13104 (NUFChannelIllustration)
+// Module 13115 (NUFChannelIllustration)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "Text";
@@ -54,7 +54,7 @@ export default function NUFChannelIllustration() {
       const obj = { name: null, avatar: null, message: null };
       const intl2 = callback(1236).intl;
       obj[0] = intl2.string(callback(1236).t["9m/HsX"]);
-      obj[1] = callback2(13105);
+      obj[1] = callback2(13116);
       obj[2] = intl.string(callback(1236).t["5alrl0"]);
       items[tmp] = obj;
       return items;
@@ -65,7 +65,7 @@ export default function NUFChannelIllustration() {
       const obj = { name: null, avatar: null, message: null };
       const intl2 = callback(1236).intl;
       obj[0] = intl2.string(callback(1236).t["AW1kM+"]);
-      obj[1] = callback2(13106);
+      obj[1] = callback2(13117);
       obj[2] = intl.string(callback(1236).t["5Oo+vS"]);
       items[tmp] = obj;
       return items;
@@ -103,26 +103,26 @@ export default function NUFChannelIllustration() {
   obj = { style: tmp.container, children: null };
   obj1 = { source: null, style: null };
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  obj1[0] = first(13107);
+  obj1[0] = first(13118);
   const items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
   obj1[1] = items2;
   const items3 = [callback(closure_6, obj1), , , , , ];
-  obj2 = { source: first(13108), style: items4 };
+  obj2 = { source: first(13119), style: items4 };
   items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   items3[1] = callback(closure_6, obj2);
   const items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
-  items3[2] = callback(closure_6, { source: first(13109), style: items5 });
-  const obj3 = { source: first(13109), style: items5 };
+  items3[2] = callback(closure_6, { source: first(13120), style: items5 });
+  const obj3 = { source: first(13120), style: items5 };
   const items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
-  items3[3] = callback(closure_6, { source: first(13110), style: items6 });
+  items3[3] = callback(closure_6, { source: first(13121), style: items6 });
   items3[4] = callback(closure_5, { style: tmp.cardBackground });
   const obj6 = { style: tmp.card, shadow: "low", border: "subtle", children: null };
   const obj7 = { style: tmp.header, children: null };
-  const items7 = [callback(require(4850) /* TextIcon */.TextIcon, { size: "sm" }), ];
+  const items7 = [callback(require(4872) /* TextIcon */.TextIcon, { size: "sm" }), ];
   const obj8 = { variant: "text-md/bold", allowFontScaling: false, children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   const items8 = [" ", intl.string(require(1236) /* getSystemLocale */.t.aLOLry)];
@@ -146,7 +146,7 @@ export default function NUFChannelIllustration() {
   obj9[1] = callback(first(4083).View, obj10);
   items9[1] = callback(closure_5, obj9);
   obj6[3] = items9;
-  items3[5] = callback2(require(5416) /* PressableCard */.Card, obj6);
+  items3[5] = callback2(require(5437) /* PressableCard */.Card, obj6);
   obj[1] = items3;
   return callback2(closure_5, obj);
 };

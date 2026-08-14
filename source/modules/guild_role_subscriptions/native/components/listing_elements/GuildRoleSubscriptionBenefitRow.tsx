@@ -1,10 +1,10 @@
-// Module ID: 14543
-// Function ID: 14544
+// Module ID: 14556
+// Function ID: 14557
 // Name: BenefitRow
-// Dependencies: [19, 17, 1391, 21, 4342, 4002, 14541, 1297, 4338, 589, 4535, 1236, 4805, 2]
+// Dependencies: [19, 17, 1391, 21, 4342, 4002, 14554, 1297, 4338, 589, 4535, 1236, 4827, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 14543 (BenefitRow)
+// Module 14556 (BenefitRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -22,7 +22,7 @@ function BenefitRow(description) {
   ({ emojiId, guildId, title } = description);
   const tmp = callback3();
   let obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(14541), { guildId, id: emojiId, size: 22, fontSize: 18 }), callback(require(1297) /* Button */.Spacer, { size: 16 }), ];
+  const items = [callback(importDefault(14554), { guildId, id: emojiId, size: 22, fontSize: 18 }), callback(require(1297) /* Button */.Spacer, { size: 16 }), ];
   obj = { style: tmp.textContainer, children: null };
   const items1 = [title, ];
   let tmp4Result = null;
@@ -59,14 +59,14 @@ export const ChannelBenefitRow = function ChannelBenefitRow(benefit) {
     const obj1 = { style: null, size: null, source: null };
     obj1[0] = tmp.channelIcon;
     obj1[1] = tmp2(1297).Icon.Sizes.CUSTOM;
-    obj1[2] = tmp2(4805).getChannelIcon(stateFromStores);
+    obj1[2] = tmp2(4827).getChannelIcon(stateFromStores);
     const items2 = [tmp7(tmp2(1297).Icon, obj1), ];
     const obj2 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
     obj2[2] = tmp6;
     items2[1] = tmp7(tmp2(4338).Text, obj2);
     obj[1] = items2;
     tmp8 = callback2(View, obj);
-    const tmp2Result = tmp2(4805);
+    const tmp2Result = tmp2(4827);
   }
   if (null != benefit.emoji_id) {
     let str = benefit.emoji_id;

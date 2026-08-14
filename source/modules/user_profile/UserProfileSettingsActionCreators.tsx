@@ -1,10 +1,10 @@
-// Module ID: 8313
-// Function ID: 8314
+// Module ID: 8335
+// Function ID: 8336
 // Name: setPendingChanges
-// Dependencies: [1990, 1922, 7128, 4504, 8314, 709, 2]
+// Dependencies: [1990, 1922, 7150, 4504, 8336, 709, 2]
 // Exports: setPendingChanges
 
-// Module 8313 (setPendingChanges)
+// Module 8335 (setPendingChanges)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
@@ -297,7 +297,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       }
     }
     if ("primaryGuildId" in merged) {
-      guildId = require(8314) /* guildHasTag */.getUserPrimaryGuild(currentUser.primaryGuild).guildId;
+      guildId = require(8336) /* guildHasTag */.getUserPrimaryGuild(currentUser.primaryGuild).guildId;
       if (guildId == null) {
         guildId = null;
       }
@@ -306,7 +306,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       } else {
         obj.pendingPrimaryGuildId = merged.primaryGuildId;
       }
-      const obj2 = require(8314) /* guildHasTag */;
+      const obj2 = require(8336) /* guildHasTag */;
     }
     if ("legacyUsernameDisabled" in merged) {
       obj.pendingLegacyUsernameDisabled = merged.legacyUsernameDisabled;

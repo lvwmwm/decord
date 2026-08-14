@@ -1,10 +1,10 @@
-// Module ID: 8201
-// Function ID: 8202
+// Module ID: 8222
+// Function ID: 8223
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1922, 4021, 4187, 1236, 2885, 2, 8202]
+// Dependencies: [1922, 4021, 4187, 1236, 2885, 2, 8223]
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 8201 (getPremiumGroupInviteEmbedText)
+// Module 8222 (getPremiumGroupInviteEmbedText)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 

@@ -1,10 +1,10 @@
-// Module ID: 16179
-// Function ID: 16180
+// Module ID: 16197
+// Function ID: 16198
 // Name: keyExtractor
-// Dependencies: [19, 676, 21, 4342, 5276, 712, 1297, 1236, 4887, 4310, 4198, 4338, 16180, 5409, 5439, 2]
+// Dependencies: [19, 676, 21, 4342, 5297, 712, 1297, 1236, 4909, 4310, 4198, 4338, 16198, 5430, 5460, 2]
 // Exports: default
 
-// Module 16179 (keyExtractor)
+// Module 16197 (keyExtractor)
 import noop from "noop";
 import { Fonts } from "ME";
 import jsxProd from "jsxProd";
@@ -53,7 +53,7 @@ function FriendsEmptyComponent() {
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t.a7FVbE);
   obj[4] = callback(require(4338) /* Text */.Text, obj1);
-  items[1] = callback(require(4887) /* PressableBase */.PressableOpacity, obj);
+  items[1] = callback(require(4909) /* PressableBase */.PressableOpacity, obj);
   obj[0] = items;
   return callback2(closure_5, obj);
 }

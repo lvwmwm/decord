@@ -1,10 +1,10 @@
-// Module ID: 12194
-// Function ID: 12195
+// Module ID: 12212
+// Function ID: 12213
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 4334, 4370, 21, 4342, 589, 4083, 4343, 1297, 1236, 4755, 2]
+// Dependencies: [19, 17, 4334, 4370, 21, 4342, 589, 4083, 4343, 1297, 1236, 4777, 2]
 // Exports: default
 
-// Module 12194 (ActivitiesPrivateChannelCallTooltip)
+// Module 12212 (ActivitiesPrivateChannelCallTooltip)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -64,7 +64,7 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   const intl3 = tmp2(1236).intl;
   obj4[0] = intl3.string(num(1236).t["NX+WJN"]);
   obj4[1] = onClosePress.onClosePress;
-  obj3[1] = jsx(num(4755).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
+  obj3[1] = jsx(num(4777).Button, { text: null, onPress: null, variant: "secondary", size: "sm", grow: true });
   obj1[5] = <View style={tmp.closeButtonWrapper}>{null}</View>;
   obj[1] = jsx(num(1297).Tooltip, { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: items2, label: null, title: null, children: null });
   return jsx(importDefault(4083).View, { style: items1, children: null });

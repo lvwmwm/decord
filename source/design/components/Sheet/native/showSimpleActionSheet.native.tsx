@@ -1,10 +1,10 @@
-// Module ID: 5802
-// Function ID: 5803
+// Module ID: 5823
+// Function ID: 5824
 // Name: showSimpleActionSheet
-// Dependencies: [4310, 5803, 2007, 2]
+// Dependencies: [4310, 5824, 2007, 2]
 // Exports: showSimpleActionSheet
 
-// Module 5802 (showSimpleActionSheet)
+// Module 5823 (showSimpleActionSheet)
 const result = require("asyncRequireImpl").fileFinishedImporting("design/components/Sheet/native/showSimpleActionSheet.native.tsx");
 
 export const showSimpleActionSheet = function showSimpleActionSheet(key) {
@@ -16,5 +16,5 @@ export const showSimpleActionSheet = function showSimpleActionSheet(key) {
   obj.hideActionSheet = function hideActionSheet() {
     outer1_1(outer1_2[0]).hideActionSheet(key);
   };
-  obj.openLazy(key(2007)(5803, dependencyMap.paths), key, obj, key.stackingBehavior);
+  obj.openLazy(key(2007)(5824, dependencyMap.paths), key, obj, key.stackingBehavior);
 };

@@ -1,9 +1,9 @@
-// Module ID: 13040
-// Function ID: 13041
+// Module ID: 13058
+// Function ID: 13059
 // Name: GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT
 // Dependencies: [1471, 2]
 
-// Module 13040 (GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT)
+// Module 13058 (GAME_COMMUNITY_ADD_SERVER_ENTRY_EXPERIMENT)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { enabled: true, cardAction: "join" } };

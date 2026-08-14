@@ -1,10 +1,10 @@
-// Module ID: 9323
-// Function ID: 9324
+// Module ID: 9337
+// Function ID: 9338
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 4366, 676, 698, 1403, 9324, 4877, 9325, 38, 2]
+// Dependencies: [19, 4366, 676, 698, 1403, 9338, 4899, 9339, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable
 
-// Module 9323 (useShouldOpenGameProfileModal)
+// Module 9337 (useShouldOpenGameProfileModal)
 import noop from "noop";
 import handleLoadMessages from "handleLoadMessages";
 import { AnalyticEvents } from "ME";
@@ -94,7 +94,7 @@ export const gameIsAcceptable = function gameIsAcceptable(gameFlags) {
     let arr = items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(gameFlags.gameFlags, require(9324) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(gameFlags.gameFlags, require(9338) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       arr = items1.push(closure_7.Disabled);
     }
     obj2 = importAll(1403);
@@ -104,7 +104,7 @@ export const gameIsAcceptable = function gameIsAcceptable(gameFlags) {
       arr = items1.push(closure_7.NSFW);
       arr = items1;
     }
-    tmp8Result = require(4877) /* isAgeRestrictedContentClassification */;
+    tmp8Result = require(4899) /* isAgeRestrictedContentClassification */;
   }
   return 0 === arr.length;
 };
@@ -115,7 +115,7 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(closure_0) {
     let arr = items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(game.gameFlags, require(9324) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(game.gameFlags, require(9338) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       arr = items1.push(closure_7.Disabled);
     }
     obj2 = importAll(1403);
@@ -125,7 +125,7 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(closure_0) {
       arr = items1.push(closure_7.NSFW);
       arr = items1;
     }
-    tmp9Result = require(4877) /* isAgeRestrictedContentClassification */;
+    tmp9Result = require(4899) /* isAgeRestrictedContentClassification */;
   }
   return 0 === arr.length;
 };

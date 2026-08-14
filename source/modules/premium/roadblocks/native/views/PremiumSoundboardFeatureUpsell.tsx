@@ -1,10 +1,10 @@
-// Module ID: 16229
-// Function ID: 16230
+// Module ID: 16247
+// Function ID: 16248
 // Name: PremiumSoundboardFeatureUpsell
-// Dependencies: [19, 17, 21, 4342, 712, 1628, 691, 8776, 8421, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1628, 691, 8790, 8443, 2]
 // Exports: default
 
-// Module 16229 (PremiumSoundboardFeatureUpsell)
+// Module 16247 (PremiumSoundboardFeatureUpsell)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -22,7 +22,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/roadblo
 export default function PremiumSoundboardFeatureUpsell(shouldShow) {
   let obj = { style: callback(require(691) /* keys */.EXPRESSION_FOOTER_HEIGHT + importDefault(1628)().bottom).container, children: null };
   obj = { shouldShow: shouldShow.shouldShow, featureName: null };
-  obj[1] = require(8421) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
-  obj[1] = jsx(importDefault(8776), { shouldShow: shouldShow.shouldShow, featureName: null });
+  obj[1] = require(8443) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+  obj[1] = jsx(importDefault(8790), { shouldShow: shouldShow.shouldShow, featureName: null });
   return <View shouldShow={arg0.shouldShow} featureName={null} />;
 };

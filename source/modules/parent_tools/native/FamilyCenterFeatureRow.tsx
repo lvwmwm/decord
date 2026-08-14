@@ -1,10 +1,10 @@
-// Module ID: 14197
-// Function ID: 14198
+// Module ID: 14210
+// Function ID: 14211
 // Name: FamilyCenterFeatureRows
-// Dependencies: [19, 17, 21, 4342, 712, 11378, 1236, 2303, 14198, 14199, 11809, 8546, 9145, 14194, 4753, 4338, 5807, 5414, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 11394, 1236, 2303, 14211, 14212, 11825, 8568, 9159, 14207, 4775, 4338, 5828, 5435, 2]
 // Exports: default
 
-// Module 14197 (FamilyCenterFeatureRows)
+// Module 14210 (FamilyCenterFeatureRows)
 import "noop";
 import { View } from "TableRowInner";
 import jsxProd from "jsxProd";
@@ -21,34 +21,34 @@ createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterFeatureRow.tsx");
 
 export default function FamilyCenterFeatureRows() {
-  let obj = require(11378) /* useAgeSpecificText */;
+  let obj = require(11394) /* useAgeSpecificText */;
   const intl = require(1236) /* getSystemLocale */.intl;
   const tmp = createCacheKey();
   const intl2 = require(1236) /* getSystemLocale */.intl;
   const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2303).qITXhY), intl2.string(importDefault(2303).bmhCnL));
-  let obj1 = require(11378) /* useAgeSpecificText */;
+  let obj1 = require(11394) /* useAgeSpecificText */;
   const intl3 = require(1236) /* getSystemLocale */.intl;
   const stringResult = intl.string(importDefault(2303).qITXhY);
   const intl4 = require(1236) /* getSystemLocale */.intl;
   const ageSpecificText1 = obj1.useAgeSpecificText(intl3.string(importDefault(2303).t7SkFy), intl4.string(importDefault(2303)["68zfxD"]));
-  let obj2 = require(11378) /* useAgeSpecificText */;
+  let obj2 = require(11394) /* useAgeSpecificText */;
   const intl5 = require(1236) /* getSystemLocale */.intl;
   const stringResult1 = intl3.string(importDefault(2303).t7SkFy);
   const intl6 = require(1236) /* getSystemLocale */.intl;
   obj = { icon: null, IconComponent: null, header: null, description: null };
   const ageSpecificText2 = obj2.useAgeSpecificText(intl5.string(importDefault(2303)["+pi4Yt"]), intl6.string(importDefault(2303)["1xPTwE"]));
-  obj[0] = importDefault(14198);
-  obj[1] = require(14199) /* ChatCheckIcon */.ChatCheckIcon;
+  obj[0] = importDefault(14211);
+  obj[1] = require(14212) /* ChatCheckIcon */.ChatCheckIcon;
   const intl7 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl7.string(importDefault(2303)["001l3m"]);
   obj[3] = ageSpecificText;
   const items = [obj, , ];
-  obj = { icon: importDefault(11809), IconComponent: require(8546) /* EyeIcon */.EyeIcon, header: null, description: null };
+  obj = { icon: importDefault(11825), IconComponent: require(8568) /* EyeIcon */.EyeIcon, header: null, description: null };
   const intl8 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl8.string(importDefault(2303).yipAeP);
   obj[3] = ageSpecificText1;
   items[1] = obj;
-  obj1 = { icon: importDefault(9145), IconComponent: require(14194) /* QrCodeIcon */.QrCodeIcon, header: null, description: null };
+  obj1 = { icon: importDefault(9159), IconComponent: require(14207) /* QrCodeIcon */.QrCodeIcon, header: null, description: null };
   const intl9 = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl9.string(importDefault(2303).hhOuMe);
   obj1[3] = ageSpecificText2;
@@ -67,11 +67,11 @@ export default function FamilyCenterFeatureRows() {
     header = header.header;
     ({ description, icon, IconComponent } = header);
     const obj = { label: header, subLabel: description, icon: null };
-    obj[2] = callback2(callback(5414).TableRow.Icon, { source: icon, IconComponent });
-    return callback2(callback(5414).TableRow, obj, header);
+    obj[2] = callback2(callback(5435).TableRow.Icon, { source: icon, IconComponent });
+    return callback2(callback(5435).TableRow, obj, header);
   });
-  items1[1] = callback(require(5807) /* TableRowGroupTitle */.TableRowGroup, obj5);
+  items1[1] = callback(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj5);
   obj3[1] = items1;
-  obj2[1] = callback2(require(4753) /* Stack */.Stack, obj3);
+  obj2[1] = callback2(require(4775) /* Stack */.Stack, obj3);
   return callback(View, obj2);
 };

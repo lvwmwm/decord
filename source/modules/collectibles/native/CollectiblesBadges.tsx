@@ -1,10 +1,10 @@
-// Module ID: 8338
-// Function ID: 8339
+// Module ID: 8360
+// Function ID: 8361
 // Name: NewBadge
-// Dependencies: [19, 17, 1924, 21, 4342, 712, 4338, 1236, 8339, 4864, 7749, 2]
+// Dependencies: [19, 17, 1924, 21, 4342, 712, 4338, 1236, 8361, 4886, 7770, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
-// Module 8338 (NewBadge)
+// Module 8360 (NewBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
@@ -59,22 +59,22 @@ export const LockBadge = function LockBadge(isNew) {
     obj[1] = items;
     obj = { size: "xxs", color: null };
     obj[1] = importDefault(712).colors.WHITE;
-    const items1 = [callback(require(4864) /* LockIcon */.LockIcon, obj), ];
+    const items1 = [callback(require(4886) /* LockIcon */.LockIcon, obj), ];
     const obj1 = { variant: "text-xs/bold", color: "text-overlay-light", style: null, children: null };
     obj1[2] = tmp.badgeTextUppercase;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
     items1[1] = callback(require(4338) /* Text */.Text, obj1);
     obj[2] = items1;
-    let tmp7 = callback2(importDefault(8339), obj);
-    const tmp11 = importDefault(8339);
+    let tmp7 = callback2(importDefault(8361), obj);
+    const tmp11 = importDefault(8361);
   } else {
     obj = { style: null, children: null };
     const items2 = [tmp.lockIconBadge, style];
     obj[0] = items2;
     const obj2 = { size: "sm", color: null };
     obj2[1] = importDefault(712).colors.WHITE;
-    obj[1] = callback(require(4864) /* LockIcon */.LockIcon, obj2);
+    obj[1] = callback(require(4886) /* LockIcon */.LockIcon, obj2);
     tmp7 = callback(View, obj);
   }
   return tmp7;
@@ -93,22 +93,22 @@ export const PremiumBadge = function PremiumBadge(isNew) {
     obj[1] = items;
     obj = { size: "xxs", color: null };
     obj[1] = importDefault(712).colors.WHITE;
-    const items1 = [callback(require(7749) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
+    const items1 = [callback(require(7770) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
     const obj1 = { variant: "text-xs/bold", color: "text-overlay-light", style: null, children: null };
     obj1[2] = tmp.badgeTextUppercase;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
     items1[1] = callback(require(4338) /* Text */.Text, obj1);
     obj[2] = items1;
-    let tmp7 = callback2(importDefault(8339), obj);
-    const tmp11 = importDefault(8339);
+    let tmp7 = callback2(importDefault(8361), obj);
+    const tmp11 = importDefault(8361);
   } else {
     obj = { style: null, children: null };
     const items2 = [tmp.lockIconBadge, style];
     obj[0] = items2;
     const obj2 = { size: "sm", color: null };
     obj2[1] = importDefault(712).colors.WHITE;
-    obj[1] = callback(require(7749) /* NitroWheelIcon */.NitroWheelIcon, obj2);
+    obj[1] = callback(require(7770) /* NitroWheelIcon */.NitroWheelIcon, obj2);
     tmp7 = callback(View, obj);
   }
   return tmp7;

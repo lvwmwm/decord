@@ -1,10 +1,10 @@
-// Module ID: 8662
-// Function ID: 8663
+// Module ID: 8676
+// Function ID: 8677
 // Name: handleOutOfSuperReactions
-// Dependencies: [1391, 4562, 4165, 1922, 676, 1925, 21, 4000, 4311, 4312, 7268, 4007, 4310, 8663, 2007, 4205, 8686, 7267, 4539, 8829, 12599, 12600, 12601, 7700, 7746, 4683, 1236, 4338, 2]
+// Dependencies: [1391, 4584, 4165, 1922, 676, 1925, 21, 4000, 4311, 4312, 7290, 4007, 4310, 8677, 2007, 4205, 8700, 7289, 4549, 8843, 12617, 12618, 12619, 7721, 7767, 4705, 1236, 4338, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
-// Module 8662 (handleOutOfSuperReactions)
+// Module 8676 (handleOutOfSuperReactions)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -34,7 +34,7 @@ export const handleOutOfSuperReactions = function handleOutOfSuperReactions(arg0
     if (!obj.isPremium(currentUser)) {
       obj = { onDismiss: null };
       obj[0] = arg0;
-      openLazyResult = importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(8663, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
+      openLazyResult = importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(8677, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
       const obj2 = importDefault(4310);
     }
     return openLazyResult;
@@ -63,7 +63,7 @@ export const handleAddNewReactions = function handleAddNewReactions(channel, id,
       if (null != currentUser1) {
         let tmp13Result = tmp13(ReactionTypes[11]);
         if (!tmp13Result.isPremium(currentUser1)) {
-          importDefault(ReactionTypes[12]).openLazy(tmp13(ReactionTypes[14])(ReactionTypes[13], ReactionTypes.paths), "SuperReactionUpsellActionSheet", { onDismiss: "sa" });
+          importDefault(ReactionTypes[12]).openLazy(tmp13(ReactionTypes[14])(ReactionTypes[13], ReactionTypes.paths), "SuperReactionUpsellActionSheet", { onDismiss: "title" });
           const obj3 = importDefault(ReactionTypes[12]);
         }
       }
@@ -147,29 +147,29 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     obj[1] = FORUM_CHANNEL_POST;
     const merged1 = Object.assign(_location);
     obj[4] = obj;
-    importDefault(4539).trackWithMetadata(constants.REACTION_ACTION_SHEET_OPENED, obj);
-    const obj3 = importDefault(4539);
+    importDefault(4549).trackWithMetadata(constants.REACTION_ACTION_SHEET_OPENED, obj);
+    const obj3 = importDefault(4549);
     const obj1 = { messageId: null, channelId: null, emoji: null };
     obj1[0] = messageId;
     obj1[1] = channelId;
     obj1[2] = isPoll.emoji;
     const obj6 = importDefault(4310);
     const merged2 = Object.assign(merged);
-    obj6.openLazy(require(2007) /* asyncRequireImpl */(8829, dependencyMap.paths), "MessageReactions", obj1);
+    obj6.openLazy(require(2007) /* asyncRequireImpl */(8843, dependencyMap.paths), "MessageReactions", obj1);
   }
   FORUM_CHANNEL_POST = constants2.FORUM_CHANNEL_POST;
 };
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
   let obj = importDefault(4310);
   obj = { messageId: id2, channelId: id, emoji };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(12599, dependencyMap.paths), "MessagePreviewReactions", obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(12617, dependencyMap.paths), "MessagePreviewReactions", obj);
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj;
 export const handleRemoveAllReactions = function handleRemoveAllReactions(arg0, arg1) {
   const _require = arg0;
   const importDefault = arg1;
-  let obj = importDefault(4683);
+  let obj = importDefault(4705);
   obj = { title: null, children: null, cancelText: null, confirmText: null, onConfirm: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.ZbtGBm);

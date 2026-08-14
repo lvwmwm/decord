@@ -1,10 +1,10 @@
-// Module ID: 10231
-// Function ID: 10232
+// Module ID: 10245
+// Function ID: 10246
 // Name: PencilSparkleIcon
-// Dependencies: [19, 21, 712, 4064, 10232, 2]
+// Dependencies: [19, 21, 712, 4064, 10246, 2]
 // Exports: PencilSparkleIcon
 
-// Module 10231 (PencilSparkleIcon)
+// Module 10245 (PencilSparkleIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const PencilSparkleIcon = function PencilSparkleIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10232) /* registerAsset */;
+  obj[0] = require(10246) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

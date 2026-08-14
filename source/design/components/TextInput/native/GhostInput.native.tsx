@@ -1,10 +1,10 @@
-// Module ID: 13490
-// Function ID: 13491
+// Module ID: 13502
+// Function ID: 13503
 // Name: GhostInput
-// Dependencies: [19, 21, 4342, 4338, 712, 6043, 6037, 7836, 6046, 2]
+// Dependencies: [19, 21, 4342, 4338, 712, 6064, 6058, 7857, 6067, 2]
 // Exports: GhostInput
 
-// Module 13490 (GhostInput)
+// Module 13502 (GhostInput)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -33,13 +33,13 @@ let closure_4 = createCacheKey.createStyles(() => {
 const result = require("createCacheKey").fileFinishedImporting("design/components/TextInput/native/GhostInput.native.tsx");
 
 export const GhostInput = function GhostInput(size) {
-  let obj = require(6043) /* useInputStyles */;
+  let obj = require(6064) /* useInputStyles */;
   obj = { size: size.size };
   const inputStyles = obj.useInputStyles(obj);
   const tmp4 = callback(size.size, size.status);
   const isCentered = size.isCentered;
   const autoFocus = size.autoFocus;
-  const textField = require(6037) /* useTextFieldState */.useTextField(size, undefined);
+  const textField = require(6058) /* useTextFieldState */.useTextField(size, undefined);
   obj = {};
   const merged = Object.assign(size);
   const items = [size.containerStyle, ];
@@ -57,6 +57,6 @@ export const GhostInput = function GhostInput(size) {
   obj1.placeholderTextColor = inputStyles.placeholderText.color;
   obj1.spellCheck = false;
   obj1.autoFocus = undefined === autoFocus || autoFocus;
-  obj.children = jsx(require(6046) /* useKeyboardBlurring */.NativeTextInput, {});
-  return jsx(require(7836) /* Input */.Input, {});
+  obj.children = jsx(require(6067) /* useKeyboardBlurring */.NativeTextInput, {});
+  return jsx(require(7857) /* Input */.Input, {});
 };

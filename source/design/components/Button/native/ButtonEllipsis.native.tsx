@@ -1,10 +1,10 @@
-// Module ID: 4770
-// Function ID: 4771
+// Module ID: 4792
+// Function ID: 4793
 // Name: EllipsisCircle
-// Dependencies: [19, 21, 4083, 4342, 712, 4343, 4760, 4771, 2]
+// Dependencies: [19, 21, 4083, 4342, 712, 4343, 4782, 4793, 2]
 // Exports: Ellipsis
 
-// Module 4770 (EllipsisCircle)
+// Module 4792 (EllipsisCircle)
 import "noop";
 import jsxProd from "jsxProd";
 import { Easing } from "module_4083";

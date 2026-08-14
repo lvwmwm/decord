@@ -1,10 +1,10 @@
-// Module ID: 16357
-// Function ID: 16358
+// Module ID: 16375
+// Function ID: 16376
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [19, 17, 16356, 21, 4342, 1236, 4773, 4338, 8747, 2]
+// Dependencies: [19, 17, 16374, 21, 4342, 1236, 4795, 4338, 8761, 2]
 // Exports: default
 
-// Module 16357 (HideSelfStreamAndVideoConfirmDialog)
+// Module 16375 (HideSelfStreamAndVideoConfirmDialog)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { SelfStreamAndVideoAlertType as closure_4 } from "SelfStreamAndVideoAlertType";
@@ -74,5 +74,5 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   items[1] = closure_5(tmp6(4338).Text, obj1);
   obj[1] = items;
   obj.children = callback(View, obj);
-  return closure_5(importDefault(4773), obj);
+  return closure_5(importDefault(4795), obj);
 };

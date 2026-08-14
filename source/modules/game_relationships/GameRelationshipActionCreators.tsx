@@ -1,9 +1,9 @@
-// Module ID: 9682
-// Function ID: 9683
+// Module ID: 9693
+// Function ID: 9694
 // Name: showRequestFailedAlert
-// Dependencies: [5, 676, 4241, 4683, 1236, 530, 1363, 2]
+// Dependencies: [5, 676, 4241, 4705, 1236, 530, 1363, 2]
 
-// Module 9682 (showRequestFailedAlert)
+// Module 9693 (showRequestFailedAlert)
 import sendRequest from "sendRequest";
 import ME from "ME";
 
@@ -21,7 +21,7 @@ function showRequestFailedAlert(arg0) {
     anyErrorMessage = intl2.string(tmp(1236).t.fEptJP);
   }
   obj[1] = anyErrorMessage;
-  importDefault(4683).show(obj);
+  importDefault(4705).show(obj);
 }
 function deleteGameRelationship() {
   const self = this;
@@ -376,7 +376,7 @@ export default {
         anyErrorMessage = intl2.string(tmp(1236).t.fEptJP);
       }
       obj[1] = anyErrorMessage;
-      callback(4683).show(obj);
+      callback(4705).show(obj);
       return Promise.reject(arg0);
     });
   },

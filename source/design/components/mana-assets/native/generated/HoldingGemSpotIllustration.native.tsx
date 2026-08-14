@@ -1,10 +1,10 @@
-// Module ID: 6529
-// Function ID: 6530
+// Module ID: 6550
+// Function ID: 6551
 // Name: HoldingGemSpotIllustration
-// Dependencies: [21, 5308, 6530, 2]
+// Dependencies: [21, 5329, 6551, 2]
 // Exports: HoldingGemSpotIllustration
 
-// Module 6529 (HoldingGemSpotIllustration)
+// Module 6550 (HoldingGemSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HoldingGemSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const HoldingGemSpotIllustration = function HoldingGemSpotIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6530);
+  obj[0] = importDefault(6551);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const HoldingGemSpotIllustration = function HoldingGemSpotIllustration(wi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
 };

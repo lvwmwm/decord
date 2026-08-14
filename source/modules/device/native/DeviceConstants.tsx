@@ -1,9 +1,9 @@
-// Module ID: 10067
-// Function ID: 10068
+// Module ID: 10078
+// Function ID: 10079
 // Name: frozen
 // Dependencies: [2]
 
-// Module 10067 (frozen)
+// Module 10078 (frozen)
 const frozen = Object.freeze({ VIDEO: "ALAssetTypeVideo", PHOTO: "ALAssetTypePhoto" });
 const frozen1 = Object.freeze({ VIDEO: "video", IMAGE: "image" });
 const result = require("set").fileFinishedImporting("modules/device/native/DeviceConstants.tsx");

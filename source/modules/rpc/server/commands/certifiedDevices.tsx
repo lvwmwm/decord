@@ -1,9 +1,9 @@
-// Module ID: 13795
-// Function ID: 13796
+// Module ID: 13807
+// Function ID: 13808
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [4245, 676, 4406, 8951, 10714, 10711, 13796, 2]
+// Dependencies: [4245, 676, 4406, 8965, 10730, 10727, 13808, 2]
 
-// Module 13795 (RPC_LOCAL_SCOPE)
+// Module 13807 (RPC_LOCAL_SCOPE)
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
 import { DeviceTypes } from "DesktopSources";
@@ -21,12 +21,12 @@ let items = [require("set").OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
 obj[RPC_SCOPE_CONFIG.ANY] = items;
 obj[0] = obj;
 obj[1] = function validation(array) {
-  let obj = importDefault(10714)(array);
+  let obj = importDefault(10730)(array);
   obj = { devices: null };
   let arrayResult = array.array();
   const requiredResult = obj.required();
   obj = { type: null, id: null, vendor: null, model: null, related: null, echo_cancellation: null, noise_suppression: null, automatic_gain_control: null, hardware_mute: null };
-  const obj5 = importDefault(10714)(array);
+  const obj5 = importDefault(10730)(array);
   const stringResult = array.string();
   const items = [, , ];
   ({ AUDIO_INPUT: arr[0], AUDIO_OUTPUT: arr[1], VIDEO_INPUT: arr[2] } = DeviceTypes);
@@ -35,17 +35,17 @@ obj[1] = function validation(array) {
   const stringResult1 = array.string();
   obj[1] = array.string().required().min(1);
   const requiredResult2 = array.string().required();
-  const obj11 = importDefault(10714)(array);
+  const obj11 = importDefault(10730)(array);
   const obj1 = { name: null, url: null };
-  const requiredResult3 = importDefault(10714)(array).required();
+  const requiredResult3 = importDefault(10730)(array).required();
   obj1[0] = array.string().min(1);
   const stringResult2 = array.string();
   obj1[1] = array.string().min(1);
   obj[2] = requiredResult3.keys(obj1);
   const stringResult3 = array.string();
-  const obj16 = importDefault(10714)(array);
+  const obj16 = importDefault(10730)(array);
   const obj2 = { name: null, url: null };
-  const requiredResult4 = importDefault(10714)(array).required();
+  const requiredResult4 = importDefault(10730)(array).required();
   obj2[0] = array.string().min(1);
   const stringResult4 = array.string();
   obj2[1] = array.string().min(1);
@@ -66,10 +66,10 @@ obj[2] = function handler(socket) {
   if (null == socket.application.id) {
     let obj = { errorCode: null };
     obj[0] = constants.INVALID_COMMAND;
-    const tmp10 = new importDefault(10711)(obj, "No application.");
+    const tmp10 = new importDefault(10727)(obj, "No application.");
     throw tmp10;
   } else {
-    obj = devices(13796);
+    obj = devices(13808);
     obj.setCertifiedDevices(socket.application.id, devices.map((type) => {
       const related = type.related;
       return {

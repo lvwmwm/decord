@@ -1,10 +1,10 @@
-// Module ID: 13970
-// Function ID: 13971
+// Module ID: 13982
+// Function ID: 13983
 // Name: ColorBox
-// Dependencies: [32, 19, 17, 21, 4342, 712, 4083, 13968, 4766, 5467, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 4083, 13980, 4788, 5488, 2]
 // Exports: default
 
-// Module 13970 (ColorBox)
+// Module 13982 (ColorBox)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -31,7 +31,7 @@ function ColorBox(hue) {
       return obj.hslToRgbWorklet(obj);
     }
   }
-  obj = { hslToRgbWorklet: hue(13968).hslToRgbWorklet, hue };
+  obj = { hslToRgbWorklet: hue(13980).hslToRgbWorklet, hue };
   S.__closure = obj;
   S.__workletHash = 8814597686728;
   S.__initData = closure_9;
@@ -53,9 +53,9 @@ function ColorBox(hue) {
   items1 = ["rgb(255,255,255)", tmp2[0]];
   const obj2 = { colors: ["rgba(0, 0, 0, 0)", "#000"], children: null };
   const items2 = [tmp.colorBoxInner, colorBoxInnerStyle];
-  const tmp5 = importDefault(4766);
+  const tmp5 = importDefault(4788);
   obj2[1] = callback2(View, { style: items2 });
-  obj1[4] = callback2(importDefault(4766), obj2);
+  obj1[4] = callback2(importDefault(4788), obj2);
   return callback2(tmp5, obj1);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);

@@ -1,10 +1,10 @@
-// Module ID: 10513
-// Function ID: 10514
+// Module ID: 10529
+// Function ID: 10530
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 676, 21, 4342, 10461, 1993, 10514, 4338, 1236, 5368, 4755, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 10477, 1993, 10530, 4338, 1236, 5389, 4777, 2]
 // Exports: default
 
-// Module 10513 (XboxLinkEducation)
+// Module 10529 (XboxLinkEducation)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -22,7 +22,7 @@ let closure_9 = createCacheKey.createStyles({ image: { width: 124, height: 160, 
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
 
 export default function XboxLinkEducation(onClose) {
-  let obj = require(10461) /* styles */;
+  let obj = require(10477) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   let obj1 = importDefault(1993);
   const articleURL = obj1.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
@@ -46,9 +46,9 @@ export default function XboxLinkEducation(onClose) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj6[2] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
   obj6[3] = onClose.onClose;
-  obj5[1] = callback(require(4755) /* Button */.Button, obj6);
+  obj5[1] = callback(require(4777) /* Button */.Button, obj6);
   obj4[2] = callback(closure_5, obj5);
-  items1[1] = callback(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  items1[1] = callback(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
   obj[1] = items1;
   return callback2(closure_5, obj);
 };

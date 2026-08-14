@@ -1,9 +1,9 @@
-// Module ID: 14823
-// Function ID: 14824
+// Module ID: 14837
+// Function ID: 14838
 // Name: handleCacheActionPress
-// Dependencies: [5, 5035, 21, 4310, 4062, 4298, 1236, 589, 4034, 5804, 5436, 5806, 13943, 14824, 14825, 10407, 2]
+// Dependencies: [5, 5057, 21, 4310, 4062, 4298, 1236, 589, 4034, 5825, 5457, 5827, 13955, 14838, 14839, 10421, 2]
 
-// Module 14823 (handleCacheActionPress)
+// Module 14837 (handleCacheActionPress)
 import CircleInformationIcon from "CircleInformationIcon";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import jsxProd from "jsxProd";
@@ -29,10 +29,10 @@ function CacheActionsActionSheet() {
   obj = { title: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.ZVZVwR);
-  obj[0] = callback2(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj[0] = callback2(require(5457) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { hasIcons: true, children: null };
   let obj1 = { icon: null, label: null, onPress: null };
-  obj1[0] = callback2(require(13943) /* FileUpIcon */.FileUpIcon, {});
+  obj1[0] = callback2(require(13955) /* FileUpIcon */.FileUpIcon, {});
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t["/GUaXh"]);
   obj1[2] = callback(function*() {
@@ -63,7 +63,7 @@ function CacheActionsActionSheet() {
             return obj;
           } else {
             const callback = tmp2;
-            let obj1 = outer1_0(14824);
+            let obj1 = outer1_0(14838);
             c1 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };
@@ -90,13 +90,13 @@ function CacheActionsActionSheet() {
       }
     }
   });
-  const items = [callback2(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
+  const items = [callback2(require(5827) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
   let obj2 = { variant: "danger", icon: null, label: null, onPress: null };
-  obj2[1] = callback2(require(14825) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" });
+  obj2[1] = callback2(require(14839) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" });
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.tgwiMO);
   obj2[3] = function onPress() {
-    let obj = callback(14824);
+    let obj = callback(14838);
     obj.clearCaches();
     const intl = callback(1236).intl;
     const stringResult = intl.string(callback(1236).t["23xR5w"]);
@@ -111,10 +111,10 @@ function CacheActionsActionSheet() {
     const obj2 = callback2(4062);
     callback2(4310).hideActionSheet(closure_7);
   };
-  items[1] = callback2(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
+  items[1] = callback2(require(5827) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
   obj[1] = items;
-  obj[1] = callback3(require(5806) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback2(require(5804) /* ActionSheet */.ActionSheet, obj);
+  obj[1] = callback3(require(5827) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback2(require(5825) /* ActionSheet */.ActionSheet, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 CacheActionsActionSheet = "CacheActionsActionSheet";

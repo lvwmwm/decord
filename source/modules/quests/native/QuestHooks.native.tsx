@@ -1,10 +1,10 @@
-// Module ID: 14398
-// Function ID: 14399
+// Module ID: 14411
+// Function ID: 14412
 // Name: useDeliveredDockCreative
-// Dependencies: [5, 19, 4054, 4383, 7206, 5202, 10425, 10567, 505, 14399, 589, 5205, 14422, 7221, 7204, 7222, 9812, 4197, 14424, 7686, 10420, 10421, 10431, 7229, 10569, 7227, 10620, 5769, 10570, 10954, 2]
+// Dependencies: [5, 19, 4054, 4383, 7228, 5223, 10441, 10583, 505, 14412, 589, 5226, 14435, 7243, 7226, 7244, 9823, 4197, 14437, 7707, 10436, 10437, 10447, 7251, 10585, 7249, 10636, 5790, 10586, 10970, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockRendered, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 14398 (useDeliveredDockCreative)
+// Module 14411 (useDeliveredDockCreative)
 import closure_3 from "QuestsExperimentLocations";
 import useIsWindowLarge from "useIsWindowLarge";
 import setContent from "setContent";
@@ -80,9 +80,9 @@ function useDeliveredDockCreative() {
   }, items3);
 }
 function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
-  const deliveredQuest = require(14424) /* getDeliveredQuest */.getDeliveredQuest(mobileQuestDock);
-  const tmp4 = importDefault(7686)();
-  const obj = require(14424) /* getDeliveredQuest */;
+  const deliveredQuest = require(14437) /* getDeliveredQuest */.getDeliveredQuest(mobileQuestDock);
+  const tmp4 = importDefault(7707)();
+  const obj = require(14437) /* getDeliveredQuest */;
   const items = [initializeState];
   let userStatus;
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => null != questPreviewOverride.getQuestPreviewOverride(callback(table[11]).QuestContent.QUEST_BAR_MOBILE), []);
@@ -91,8 +91,8 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   }
   let isDismissedResult = null != userStatus;
   if (isDismissedResult) {
-    let tmpResult = tmp(7204);
-    isDismissedResult = tmpResult.isDismissed(deliveredQuest.userStatus, tmp(5205).QuestContent.QUEST_BAR_MOBILE);
+    let tmpResult = tmp(7226);
+    isDismissedResult = tmpResult.isDismissed(deliveredQuest.userStatus, tmp(5226).QuestContent.QUEST_BAR_MOBILE);
   }
   let claimedAt;
   if (deliveredQuest != null) {
@@ -101,14 +101,14 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
       claimedAt = userStatus.claimedAt;
     }
   }
-  tmpResult = tmp(10420);
+  tmpResult = tmp(10436);
   const isQuestExpired = tmpResult.useIsQuestExpired(deliveredQuest);
   const obj2 = require(589) /* initialize */;
   const type = mobileQuestDock.type;
-  const isEligibleForQuests = require(10421) /* getIsEligibleForQuests */.getIsEligibleForQuests();
-  if (require(7222) /* AdCreativeType */.AdCreativeType.NO_FILL !== type) {
-    if (tmp(7222).AdCreativeType.BOUNTY !== type) {
-      if (tmp(7222).AdCreativeType.QUEST === type) {
+  const isEligibleForQuests = require(10437) /* getIsEligibleForQuests */.getIsEligibleForQuests();
+  if (require(7244) /* AdCreativeType */.AdCreativeType.NO_FILL !== type) {
+    if (tmp(7244).AdCreativeType.BOUNTY !== type) {
+      if (tmp(7244).AdCreativeType.QUEST === type) {
         if (stateFromStores) {
           if (!tmp9) {
             let tmp12 = null != deliveredQuest && !tmp4;
@@ -134,14 +134,14 @@ export const useMobileQuestDockHeight = function useMobileQuestDockHeight() {
   return num;
 };
 export const useMobileQuestDock = function useMobileQuestDock() {
-  const adRefreshLoop = require(14422) /* maybeRefreshAd */.useAdRefreshLoop(require(5205) /* QuestsVisibleMessagesChangedSource */.AdPlacement.MOBILE_HOME_DOCK_AREA);
+  const adRefreshLoop = require(14435) /* maybeRefreshAd */.useAdRefreshLoop(require(5226) /* QuestsVisibleMessagesChangedSource */.AdPlacement.MOBILE_HOME_DOCK_AREA);
   return useDeliveredDockCreative();
 };
 export const useIsMobileQuestDockVisibleToUser = function useIsMobileQuestDockVisibleToUser(mobileQuestDock, isMobileQuestDockRenderedBase) {
   const _require = mobileQuestDock;
   let tmp = isMobileQuestDockRenderedBase;
-  const isChannelFocused = _require(9812).useIsChannelFocused();
-  const obj = _require(9812);
+  const isChannelFocused = _require(9823).useIsChannelFocused();
+  const obj = _require(9823);
   const currentNavigationRouteName = _require(4197).useCurrentNavigationRouteName();
   const obj2 = _require(4197);
   let tmp4 = null != _require(4197).coerceGuildsRoute({ name: currentNavigationRouteName });

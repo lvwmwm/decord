@@ -1,8 +1,8 @@
-// Module ID: 11293
-// Function ID: 11294
-// Dependencies: [5, 3943, 5272, 2]
+// Module ID: 11309
+// Function ID: 11310
+// Dependencies: [5, 3943, 5293, 2]
 
-// Module 11293
+// Module 11309
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const result = require("showTooManyUserGuildsAlert").fileFinishedImporting("actions/CommunicationDisabledActionCreators.tsx");
@@ -59,7 +59,7 @@ export default {
               dependencyMap = 1;
               v0 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = v0(5272).setCommunicationDisabledUntil(obj1);
+              obj2[0] = v0(5293).setCommunicationDisabledUntil(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {

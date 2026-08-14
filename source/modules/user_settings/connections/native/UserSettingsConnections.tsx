@@ -1,10 +1,10 @@
-// Module ID: 14270
-// Function ID: 14271
+// Module ID: 14283
+// Function ID: 14284
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [19, 17, 5290, 1218, 5039, 1994, 676, 21, 4342, 712, 4278, 589, 12543, 5776, 5164, 4310, 14269, 2007, 10454, 14271, 8012, 14274, 4753, 14275, 2]
+// Dependencies: [19, 17, 5311, 1218, 5061, 1994, 676, 21, 4342, 712, 4278, 589, 12561, 5797, 5186, 4310, 14282, 2007, 10470, 14284, 8033, 14287, 4775, 14288, 2]
 // Exports: UserSettingsConnections
 
-// Module 14270 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 14283 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import EmptyStateCard from "EmptyStateCard";
 import { ActivityIndicator } from "asyncRequireImpl";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
@@ -50,7 +50,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   authorizedApps = stateFromStoresObject1.authorizedApps;
   const obj3 = selectedPlatformType(589);
   const tmp2 = importDefault;
-  const tmp7Result = importDefault(12543)(id.getId(), { includeHidden: true });
+  const tmp7Result = importDefault(12561)(id.getId(), { includeHidden: true });
   const prop = tmp7Result.filteredAppIdentities;
   const items3 = [authorizedAppsFetchState];
   const effect = authorizedAppsFetchState.useEffect(() => {
@@ -80,7 +80,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (!tmp7Result.isLoading) {
       if (0 === accounts.length) {
         if (0 === prop.length) {
-          let tmp14 = callback(tmp2(14271), {});
+          let tmp14 = callback(tmp2(14284), {});
         }
       }
       obj = { style: null, children: null };
@@ -96,9 +96,9 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
       ];
       obj = { spacing: 16, children: null };
       obj[1] = accounts.map((account) => outer1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id));
-      items5[1] = callback(tmp4(4753).Stack, obj);
+      items5[1] = callback(tmp4(4775).Stack, obj);
       obj[1] = items5;
-      tmp14 = callback2(tmp4(8012).Form, obj);
+      tmp14 = callback2(tmp4(8033).Form, obj);
     }
     return tmp14;
   }

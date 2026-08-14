@@ -1,10 +1,10 @@
-// Module ID: 8073
-// Function ID: 8074
+// Module ID: 8094
+// Function ID: 8095
 // Name: HeaderView
-// Dependencies: [32, 19, 17, 4341, 1391, 3989, 8074, 8071, 676, 505, 21, 4342, 712, 5756, 4774, 4338, 4191, 4298, 589, 4887, 8075, 1499, 4741, 4751, 8068, 8066, 4539, 1351, 8077, 8081, 7381, 5368, 8082, 8083, 8084, 8085, 12706, 12707, 12708, 12709, 12710, 12711, 12712, 12713, 12714, 12716, 12717, 12718, 12719, 12720, 12721, 12722, 12723, 12726, 2]
+// Dependencies: [32, 19, 17, 4341, 1391, 3989, 8095, 8092, 676, 505, 21, 4342, 712, 5777, 4796, 4338, 4191, 4298, 589, 4909, 8096, 1499, 4763, 4773, 8089, 8087, 4549, 1351, 8098, 8102, 7403, 5389, 8103, 8104, 8105, 8106, 12724, 12725, 12726, 12727, 12728, 12729, 12730, 12731, 12732, 12734, 12735, 12736, 12737, 12738, 12739, 12740, 12741, 12744, 2]
 // Exports: default
 
-// Module 8073 (HeaderView)
+// Module 8094 (HeaderView)
 import ShieldElement from "ShieldElement";
 import PressableBase from "PressableBase";
 import get_ActivityIndicator from "CircleInformationIcon";
@@ -121,10 +121,10 @@ function ChildItem(child) {
   }
   items1[1] = stateFromStores;
   obj1[1] = items1;
-  const items2 = [closure_17(closure_6, obj1), callback2(importDefault(8075), {})];
+  const items2 = [closure_17(closure_6, obj1), callback2(importDefault(8096), {})];
   obj[1] = items2;
   obj[3] = closure_17(closure_6, obj);
-  return callback2(child(4887).PressableHighlight, obj);
+  return callback2(child(4909).PressableHighlight, obj);
 }
 function ChildrenView(node) {
   let importDefault;

@@ -1,10 +1,10 @@
-// Module ID: 15959
-// Function ID: 15960
+// Module ID: 15977
+// Function ID: 15978
 // Name: styles
-// Dependencies: [19, 17, 676, 8446, 21, 4342, 712, 15960, 1236, 9867, 15869, 15968, 15969, 15971, 15976, 15977, 15986, 15989, 15998, 16000, 16001, 16002, 16003, 16004, 2]
+// Dependencies: [19, 17, 676, 8468, 21, 4342, 712, 15978, 1236, 9878, 15887, 15986, 15987, 15989, 15994, 15995, 16004, 16007, 16016, 16018, 16019, 16020, 16021, 16022, 2]
 // Exports: getChannelSettingsScreens
 
-// Module 15959 (styles)
+// Module 15977 (styles)
 import "EditLinkedLobby";
 import { View } from "WebhookItem";
 import ME from "ME";

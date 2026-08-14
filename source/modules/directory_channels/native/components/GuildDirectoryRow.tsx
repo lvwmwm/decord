@@ -1,8 +1,8 @@
-// Module ID: 11766
-// Function ID: 11767
-// Dependencies: [5, 32, 19, 17, 1391, 1910, 676, 21, 4342, 712, 589, 6000, 5272, 9125, 1306, 1435, 1236, 5416, 5819, 1430, 4338, 11744, 4755, 2]
+// Module ID: 11782
+// Function ID: 11783
+// Dependencies: [5, 32, 19, 17, 1391, 1910, 676, 21, 4342, 712, 589, 6021, 5293, 9139, 1306, 1435, 1236, 5437, 5840, 1430, 4338, 11760, 4777, 2]
 
-// Module 11766
+// Module 11782
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "fromGuildPropertiesWithAdditionalFields";
@@ -174,7 +174,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const tmp2Result = tmp2(1430);
   }
   obj4[2] = result;
-  const items1 = [closure_10(importDefault(5819), obj4), ];
+  const items1 = [closure_10(importDefault(5840), obj4), ];
   const obj5 = { style: tmp.guildInfoContainer, children: null };
   const items2 = [closure_10(entry(4338).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: entry.name }), ];
   const obj6 = { style: tmp.memberInfo, children: null };
@@ -216,8 +216,8 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   items1[1] = closure_12(View, obj5);
   obj3[1] = items1;
   const items6 = [closure_12(View, obj3), ];
-  const tmp6Result = importDefault(5819);
-  items6[1] = closure_10(View, { children: closure_10(importDefault(11744), { entry }) });
+  const tmp6Result = importDefault(5840);
+  items6[1] = closure_10(View, { children: closure_10(importDefault(11760), { entry }) });
   obj2[1] = items6;
   const items7 = [closure_12(View, obj2), , , ];
   let tmp9Result = null != description;
@@ -253,10 +253,10 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   }
   obj18[2] = str2;
   obj18[3] = stringResult;
-  items7[3] = closure_10(entry(4755).Button, obj18);
+  items7[3] = closure_10(entry(4777).Button, obj18);
   obj1[1] = items7;
   obj[1] = closure_12(View, obj1);
-  return closure_10(entry(5416).Card, obj);
+  return closure_10(entry(5437).Card, obj);
 });
 let result = require("noop").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryRow.tsx");
 

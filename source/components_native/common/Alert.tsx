@@ -1,10 +1,10 @@
-// Module ID: 4773
-// Function ID: 4774
+// Module ID: 4795
+// Function ID: 4796
 // Name: componentDidMount
-// Dependencies: [19, 17, 21, 4342, 712, 1297, 4072, 4774, 4227, 4751, 4338, 1236, 4755, 4887, 4889, 1493, 4890, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1297, 4072, 4796, 4227, 4773, 4338, 1236, 4777, 4909, 4911, 1493, 4912, 2]
 // Exports: getAlertButtonVariant
 
-// Module 4773 (componentDidMount)
+// Module 4795 (componentDidMount)
 import importAllResult from "noop";
 import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";
@@ -204,7 +204,7 @@ prototype["renderButtons"] = function renderButtons() {
       obj = { variant: "secondary", onPress: null, text: null };
       obj[1] = self.handleCancel;
       obj[2] = cancelText;
-      obj[1] = callback(require(4755) /* Button */.Button, obj);
+      obj[1] = callback(require(4777) /* Button */.Button, obj);
       tmp6 = callback(closure_5, obj);
     }
     let tmp11;
@@ -215,7 +215,7 @@ prototype["renderButtons"] = function renderButtons() {
       const obj1 = { variant: "text-sm/semibold", color: "text-link", children: null };
       obj1[2] = secondaryConfirmText;
       obj[3] = callback(require(4338) /* Text */.Text, obj1);
-      tmp11 = callback(require(4887) /* PressableBase */.PressableOpacity, obj);
+      tmp11 = callback(require(4909) /* PressableBase */.PressableOpacity, obj);
     }
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.buttons;
@@ -273,7 +273,7 @@ prototype["renderButtons"] = function renderButtons() {
         str2 = str3;
       }
       obj3[6] = str2;
-      renderConfirmButtonResult = callback(require(4755) /* Button */.Button, obj3);
+      renderConfirmButtonResult = callback(require(4777) /* Button */.Button, obj3);
       const tmp20 = callback;
     }
     const items = [renderConfirmButtonResult, tmp6, tmp11];
@@ -304,7 +304,7 @@ prototype["render"] = function render() {
   let obj = { children: null };
   ({ style, isLandscape, onClose } = props);
   obj = { absolute: true, componentStyles: tmp.gradient };
-  const items = [callback(importDefault(4889), obj), ];
+  const items = [callback(importDefault(4911), obj), ];
   obj = { onAccessibilityEscape: onClose, style: items1, children: null };
   items1 = [tmp.alert, style, { width }];
   const items2 = [this.renderHeader(), this.renderBody(), this.renderButtons(), this.renderFooter()];
@@ -328,7 +328,7 @@ const obj4 = { borderRadius: require("Themes").radii.sm };
 Alert.defaultProps = { confirmColor: require("Button").ButtonColors.BRAND, autoCloseOnConfirm: true };
 const memoResult = importAllResult.memo((arg0) => {
   const size = importDefault(1493)();
-  let obj = require(4890) /* getIsScreenLandscape */;
+  let obj = require(4912) /* getIsScreenLandscape */;
   const isScreenLandscape = obj.useIsScreenLandscape();
   obj = { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape };
   const merged = Object.assign(arg0);

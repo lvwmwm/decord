@@ -1,10 +1,10 @@
-// Module ID: 7142
-// Function ID: 7143
+// Module ID: 7164
+// Function ID: 7165
 // Name: parseUserProfileCollectibles
 // Dependencies: [1949, 2]
 // Exports: default
 
-// Module 7142 (parseUserProfileCollectibles)
+// Module 7164 (parseUserProfileCollectibles)
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/parseUserProfileCollectibles.tsx");
 
 export default function parseUserProfileCollectibles(collectibles) {

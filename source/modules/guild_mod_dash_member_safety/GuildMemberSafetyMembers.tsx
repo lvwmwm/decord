@@ -1,10 +1,10 @@
-// Module ID: 7003
-// Function ID: 7004
+// Module ID: 7025
+// Function ID: 7026
 // Name: getGuildMemberSecondaryIndexes
-// Dependencies: [1922, 3985, 7004, 7005, 7007, 7008, 7014, 4504, 2]
+// Dependencies: [1922, 3985, 7026, 7027, 7029, 7030, 7036, 4504, 2]
 // Exports: hasUnusualDmActivity
 
-// Module 7003 (getGuildMemberSecondaryIndexes)
+// Module 7025 (getGuildMemberSecondaryIndexes)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -62,7 +62,7 @@ prototype["enhanceNewMember"] = function enhanceNewMember(trueMember, searchStat
   if (isIncludedInSearchResults === undefined) {
     obj = {};
   }
-  const joinedAtTimestamp = require(7005) /* getJoinedAtDateFormatter */.getJoinedAtTimestamp(trueMember.joinedAt);
+  const joinedAtTimestamp = require(7027) /* getJoinedAtDateFormatter */.getJoinedAtTimestamp(trueMember.joinedAt);
   const result = this._computeMemberSupplementals(trueMember.userId, trueMember.unusualDMActivityUntil);
   ({ hasUnusualDmActivity, hasUnusualAccountActivity, sourceInviteCode, joinSourceType, inviterId, integrationType, joinSourceApplicationId, joinSourceChannelId } = result);
   obj = { hasUnusualDmActivity, hasUnusualAccountActivity, sourceInviteCode, joinSourceType, inviterId, integrationType, joinSourceApplicationId, joinSourceChannelId };
@@ -71,19 +71,19 @@ prototype["enhanceNewMember"] = function enhanceNewMember(trueMember, searchStat
   obj.isCurrentGuildMemberByTimestamp = joinedAtTimestamp <= this.newMemberTimestamp;
   obj.isIncludedInSearchResults = false;
   obj.user = user;
-  const obj2 = require(7005) /* getJoinedAtDateFormatter */;
+  const obj2 = require(7027) /* getJoinedAtDateFormatter */;
   const tmp = require;
   let ORDER_BY_UNSPECIFIED = searchState.selectedSort;
   if (ORDER_BY_UNSPECIFIED == null) {
-    ORDER_BY_UNSPECIFIED = tmp(7004).OrderBy.ORDER_BY_UNSPECIFIED;
+    ORDER_BY_UNSPECIFIED = tmp(7026).OrderBy.ORDER_BY_UNSPECIFIED;
   }
-  obj.sort = require(7007) /* getSortValueForMember */.getSortValueForMember(trueMember, ORDER_BY_UNSPECIFIED);
+  obj.sort = require(7029) /* getSortValueForMember */.getSortValueForMember(trueMember, ORDER_BY_UNSPECIFIED);
   obj.joinedAtTimestamp = joinedAtTimestamp;
   const merged1 = Object.assign(obj);
   return obj;
 };
 prototype["_computeMemberSupplementals"] = function _computeMemberSupplementals(userId, unusualDMActivityUntil) {
-  let obj = require(7008) /* hasMemberSupplemental */;
+  let obj = require(7030) /* hasMemberSupplemental */;
   obj = obj.getMemberSupplementalByGuildId(this.guildId)[userId];
   if (obj == null) {
     obj = {};
@@ -123,10 +123,10 @@ prototype["_computeMemberSupplementals"] = function _computeMemberSupplementals(
     const _Date = Date;
     const date = new Date(unusualDMActivityUntil);
     const time = date.getTime();
-    tmp9 = time >= closure_4 - tmp(7004).UNUSUAL_DM_COMPARISON_DELTA;
+    tmp9 = time >= closure_4 - tmp(7026).UNUSUAL_DM_COMPARISON_DELTA;
   }
   obj[6] = tmp9;
-  obj[7] = require(7014) /* isSpamSupported */.isSpammer(userId);
+  obj[7] = require(7036) /* isSpamSupported */.isSpammer(userId);
   return obj;
 };
 prototype["createMember"] = function createMember(userId) {
@@ -235,7 +235,7 @@ export const hasUnusualDmActivity = function hasUnusualDmActivity(arg0) {
     const _Date = Date;
     const date = new Date(arg0);
     const time = date.getTime();
-    tmp = time >= closure_4 - require(7004) /* result */.UNUSUAL_DM_COMPARISON_DELTA;
+    tmp = time >= closure_4 - require(7026) /* result */.UNUSUAL_DM_COMPARISON_DELTA;
   }
   return tmp;
 };

@@ -1,9 +1,9 @@
-// Module ID: 16446
-// Function ID: 16447
+// Module ID: 16464
+// Function ID: 16465
 // Name: prototype
-// Dependencies: [1218, 1391, 1990, 1910, 4327, 3989, 7176, 676, 7240, 1222, 4310, 4550, 16447, 2007, 5301, 16448, 709, 9383, 2]
+// Dependencies: [1218, 1391, 1990, 1910, 4327, 3989, 7198, 676, 7262, 1222, 4310, 4572, 16465, 2007, 5322, 16466, 709, 9397, 2]
 
-// Module 16446 (prototype)
+// Module 16464 (prototype)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -83,7 +83,7 @@ let prototype = function AcceptInviteManager() {
               applyArgumentsResult(outer2_2[15]).acceptFriendInvite(invite, obj);
               const obj6 = applyArgumentsResult(outer2_2[15]);
               const tmp34 = outer2_2;
-              outer2_1(outer2_2[16]).wait(() => set(9383).clearDisplayedInvite());
+              outer2_1(outer2_2[16]).wait(() => set(9397).clearDisplayedInvite());
               flag = false;
               const obj8 = outer2_1(outer2_2[16]);
             }
@@ -137,7 +137,7 @@ let prototype = function AcceptInviteManager() {
           tmp40 = outer2_2;
         }
         if (flag2) {
-          outer2_1(outer2_2[16]).wait(() => set(9383).clearDisplayedInvite());
+          outer2_1(outer2_2[16]).wait(() => set(9397).clearDisplayedInvite());
           flag = false;
           const obj5 = outer2_1(outer2_2[16]);
         } else {

@@ -1,9 +1,9 @@
-// Module ID: 10963
-// Function ID: 10964
+// Module ID: 10979
+// Function ID: 10980
 // Name: getAnalyticsConfig
-// Dependencies: [676, 503, 5788, 1370, 5301, 1405, 698, 2]
+// Dependencies: [676, 503, 5809, 1370, 5322, 1405, 698, 2]
 
-// Module 10963 (getAnalyticsConfig)
+// Module 10979 (getAnalyticsConfig)
 import { AnalyticEvents } from "ME";
 import "initialize";
 
@@ -35,9 +35,9 @@ function getAnalyticsConfig(type) {
     const obj6 = { impression_type: null, invite_code: null, invite_guild_id: null, invite_channel_id: null, invite_instance_id: null, has_active_stream: null, location_stack: null };
     obj6[0] = require(503) /* encodeProperties */.ImpressionTypes.VIEW;
     ({ inviteCode: obj3[1], inviteGuildId: obj3[2], inviteChannelId: obj3[3], inviteInstanceId: obj3[4], hasActiveStream: obj3[5], treatmentRendered } = type);
-    const INVITE_EMBED = importDefault(5788).INVITE_EMBED;
+    const INVITE_EMBED = importDefault(5809).INVITE_EMBED;
     if (treatmentRendered) {
-      const items = [INVITE_EMBED, importDefault(5788).VOICE_CHANNEL_LIST_INVITE_EMBED];
+      const items = [INVITE_EMBED, importDefault(5809).VOICE_CHANNEL_LIST_INVITE_EMBED];
       let items1 = items;
     } else {
       items1 = [INVITE_EMBED];

@@ -1,9 +1,9 @@
-// Module ID: 10450
-// Function ID: 10451
+// Module ID: 10466
+// Function ID: 10467
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 
-// Module 10450 (apexExperiment)
+// Module 10466 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-07-renewable-end-date-sort", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

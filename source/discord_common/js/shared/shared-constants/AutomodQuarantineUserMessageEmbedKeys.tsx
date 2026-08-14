@@ -1,9 +1,9 @@
-// Module ID: 7022
-// Function ID: 7023
+// Module ID: 7044
+// Function ID: 7045
 // Name: AutomodQuarantineUserMessageEmbedKeys
 // Dependencies: [2]
 
-// Module 7022 (AutomodQuarantineUserMessageEmbedKeys)
+// Module 7044 (AutomodQuarantineUserMessageEmbedKeys)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodQuarantineUserMessageEmbedKeys.tsx");
 
 export const AutomodQuarantineUserMessageEmbedKeys = { BIO: "bio", USERNAME: "username", NICKNAME: "nickname", GLOBAL_NAME: "display_name", CLAN_TAG: "clan_tag" };

@@ -1,10 +1,10 @@
-// Module ID: 9363
-// Function ID: 9364
+// Module ID: 9377
+// Function ID: 9378
 // Name: GameGenres
-// Dependencies: [32, 676, 4170, 1236, 4582, 500, 3943, 2]
+// Dependencies: [32, 676, 4170, 1236, 4604, 500, 3943, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 9363 (GameGenres)
+// Module 9377 (GameGenres)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 
@@ -300,7 +300,7 @@ export const getGenreText = function getGenreText(arg0) {
   }
 };
 export const canUserInstall = function canUserInstall(type) {
-  const obj = require(4582) /* _httpGetWithCountryCodeQuery */;
+  const obj = require(4604) /* _httpGetWithCountryCodeQuery */;
   const result = obj.nativePlatformTypeToSKUOperatingSystem(require(500) /* set */.getPlatform());
   let hasItem = type.type === constants.DURABLE_PRIMARY;
   if (hasItem) {

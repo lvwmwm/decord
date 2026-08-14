@@ -1,9 +1,9 @@
-// Module ID: 6937
-// Function ID: 6938
+// Module ID: 6958
+// Function ID: 6959
 // Name: createFromServer
-// Dependencies: [32, 1931, 5898, 5896, 2]
+// Dependencies: [32, 1931, 5919, 5917, 2]
 
-// Module 6937 (createFromServer)
+// Module 6958 (createFromServer)
 import _slicedToArray from "_slicedToArray";
 import "toJS";
 
@@ -105,9 +105,9 @@ prototype["matchesItems"] = function matchesItems(closure_0) {
 };
 prototype["getPriceString"] = function getPriceString() {
   const total = this.total;
-  const obj = require(5896) /* formatSingleCurrencyPrice */;
-  const obj2 = new importDefault(5898)(total.amount);
-  return obj.formatPrice(new importDefault(5898)(total.amount).dividedBy(10 ** total.exponent).toNumber(), total.currency, { convertToMajorUnits: false });
+  const obj = require(5917) /* formatSingleCurrencyPrice */;
+  const obj2 = new importDefault(5919)(total.amount);
+  return obj.formatPrice(new importDefault(5919)(total.amount).dividedBy(10 ** total.exponent).toNumber(), total.currency, { convertToMajorUnits: false });
 };
 prototype["getAddOnPrice"] = function getAddOnPrice() {
   const self = this;
@@ -119,7 +119,7 @@ prototype["getAddOnPrice"] = function getAddOnPrice() {
     const exponent = price.exponent;
     const addOnPlans = self.addOnPlans;
     const reduced = addOnPlans.reduce((arg0, price) => arg0 + price.price.amount * price.quantity, 0);
-    const obj2 = new importDefault(5898)(reduced);
+    const obj2 = new importDefault(5919)(reduced);
     obj[0] = obj2.dividedBy(10 ** exponent).toNumber();
     obj[1] = price.currency;
     return obj;

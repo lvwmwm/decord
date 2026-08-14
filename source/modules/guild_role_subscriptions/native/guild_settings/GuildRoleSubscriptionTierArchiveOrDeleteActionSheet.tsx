@@ -1,10 +1,10 @@
-// Module ID: 16895
-// Function ID: 16896
+// Module ID: 16911
+// Function ID: 16912
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 4342, 712, 1628, 38, 16896, 5437, 5439, 4338, 1297, 4755, 4310, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1628, 38, 16912, 5458, 5460, 4338, 1297, 4777, 4310, 1236, 2]
 // Exports: default
 
-// Module 16895 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 16911 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   ({ editStateId, guildId } = groupListingId);
   const tmp = createCacheKey();
   importDefault(38)(null != groupListingId, "group listing id cannot be null");
-  const tmp4 = importDefault(16896)(guildId, groupListingId, editStateId);
+  const tmp4 = importDefault(16912)(guildId, groupListingId, editStateId);
   let deleting = tmp4.deleting;
   ({ headerText, buttonText, descriptionText, handleArchiveOrDelete, archiving } = tmp4);
   let obj = { style: tmp.container, children: null };
@@ -48,7 +48,7 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   }
   const obj1 = { backdropOpacity: 0.8, children: null };
   obj[4] = deleting;
-  items[4] = callback(require(4755) /* Button */.Button, obj);
+  items[4] = callback(require(4777) /* Button */.Button, obj);
   items[5] = callback(require(1297) /* Button */.Spacer, { size: 24 });
   const obj2 = {
     onPress() {
@@ -64,7 +64,7 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   obj2[3] = callback(require(4338) /* Text */.Text, obj3);
   items[6] = callback(closure_3, obj2);
   obj[1] = items;
-  obj[1] = closure_6(require(5439) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  obj[1] = closure_6(require(5460) /* BottomSheetModal */.BottomSheetScrollView, obj);
   obj1[1] = callback(closure_4, obj);
-  return callback(require(5437) /* Background */.BottomSheet, obj1);
+  return callback(require(5458) /* Background */.BottomSheet, obj1);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7362
-// Function ID: 7363
+// Module ID: 7384
+// Function ID: 7385
 // Name: HeaderRecord
-// Dependencies: [5267, 2]
+// Dependencies: [5288, 2]
 // Exports: createHeaderResult
 
-// Module 7362 (HeaderRecord)
+// Module 7384 (HeaderRecord)
 import HeaderRecord from "HeaderRecord";
 
 let c0;

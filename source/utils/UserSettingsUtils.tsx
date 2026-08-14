@@ -1,10 +1,10 @@
-// Module ID: 6056
-// Function ID: 6057
+// Module ID: 6077
+// Function ID: 6078
 // Name: getSanitizedRestrictedGuilds
-// Dependencies: [4682, 1910, 676, 4034, 4539, 6057, 1236, 1231, 2]
+// Dependencies: [4704, 1910, 676, 4034, 4549, 6078, 1236, 1231, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 6056 (getSanitizedRestrictedGuilds)
+// Module 6077 (getSanitizedRestrictedGuilds)
 import handleConnectionOpen from "handleConnectionOpen";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
@@ -72,9 +72,9 @@ export const trackUserSettingsPaneViewed = function trackUserSettingsPaneViewed(
   let source;
   let subsection;
   ({ destinationPane, originPane, source, subsection, locationStack, applicationId } = arg0);
-  let obj = importDefault(4539);
+  let obj = importDefault(4549);
   obj = { settings_type: "user", origin_pane: originPane, destination_pane: destinationPane, location_stack: locationStack, source, subsection, application_id: applicationId, search_session_id: null };
-  obj[7] = importDefault(6057).getSearchSessionId();
+  obj[7] = importDefault(6078).getSearchSessionId();
   obj.trackWithMetadata(constants.SETTINGS_PANE_VIEWED, obj);
 };
 export const NonSpamRetrainingOptInOptions = obj;

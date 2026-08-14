@@ -1,10 +1,10 @@
-// Module ID: 14227
-// Function ID: 14228
+// Module ID: 14240
+// Function ID: 14241
 // Name: FamilyCenterAcceptedLinkRow
-// Dependencies: [19, 17, 7045, 21, 4342, 712, 7382, 7381, 11378, 1236, 2303, 4338, 14228, 14230, 4887, 4550, 14233, 2007, 1297, 14235, 2]
+// Dependencies: [19, 17, 7067, 21, 4342, 712, 7404, 7403, 11394, 1236, 2303, 4338, 14241, 14243, 4909, 4572, 14246, 2007, 1297, 14248, 2]
 // Exports: default
 
-// Module 14227 (FamilyCenterAcceptedLinkRow)
+// Module 14240 (FamilyCenterAcceptedLinkRow)
 import "registerAsset";
 import { View } from "asyncRequireImpl";
 import items from "items";
@@ -40,12 +40,12 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
     obj[3] = tmp.actionButton;
     const obj1 = { size: null, disableColor: true, source: null };
     obj1[0] = str(1297).Icon.Sizes.SMALL;
-    obj1[2] = importDefault(14235);
+    obj1[2] = importDefault(14248);
     obj[4] = closure_6(str(1297).Icon, obj1);
-    obj[1] = closure_6(str(4887).PressableOpacity, obj);
-    tmp4Result = tmp4(importDefault(14230), obj);
+    obj[1] = closure_6(str(4909).PressableOpacity, obj);
+    tmp4Result = tmp4(importDefault(14243), obj);
     const tmp5 = importDefault;
-    const tmp7 = importDefault(14230);
+    const tmp7 = importDefault(14243);
   }
   return tmp4Result;
 }
@@ -65,12 +65,12 @@ const result = require("items").fileFinishedImporting("modules/parent_tools/nati
 
 export default function FamilyCenterAcceptedLinks() {
   const tmp = createCacheKey();
-  let obj = require(7381) /* useUserIdsForLinkStatus */;
+  let obj = require(7403) /* useUserIdsForLinkStatus */;
   const activeLinkUsers = obj.useActiveLinkUsers();
-  obj = { count: activeLinkUsers.length, max: importDefault(7382)() ? closure_4 : closure_5 };
-  const tmp4 = importDefault(7382)();
+  obj = { count: activeLinkUsers.length, max: importDefault(7404)() ? closure_4 : closure_5 };
+  const tmp4 = importDefault(7404)();
   const intl = tmp5(1236).intl;
-  const tmp5Result = require(11378) /* useAgeSpecificText */;
+  const tmp5Result = require(11394) /* useAgeSpecificText */;
   const intl2 = tmp5(1236).intl;
   obj = { style: tmp.container, children: null };
   const ageSpecificText = tmp5Result.useAgeSpecificText(intl.formatToPlainString(importDefault(2303)["+tnO34"], obj), intl2.formatToPlainString(tmp2(2303)["pu6/U0"], obj));
@@ -82,9 +82,9 @@ export default function FamilyCenterAcceptedLinks() {
     const obj4 = { text: null };
     const intl3 = tmp5(1236).intl;
     obj4[0] = intl3.string(tmp2(2303).C4ScLD);
-    obj3[1] = tmp10(tmp2(14228), obj4);
+    obj3[1] = tmp10(tmp2(14241), obj4);
     let mapped = tmp10(tmp9, obj3);
-    const tmp2Result = tmp2(14228);
+    const tmp2Result = tmp2(14241);
   } else {
     mapped = activeLinkUsers.map((id) => callback(closure_10, { otherUser: id }, "accepted-" + id.id));
   }

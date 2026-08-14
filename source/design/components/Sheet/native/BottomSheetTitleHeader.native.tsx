@@ -1,10 +1,10 @@
-// Module ID: 5436
-// Function ID: 5437
+// Module ID: 5457
+// Function ID: 5458
 // Name: RedesignBottomSheetTitleHeaderBase
-// Dependencies: [32, 19, 17, 21, 4342, 712, 1493, 4065, 1367, 4338, 5311, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 1493, 4065, 1367, 4338, 5332, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 5436 (RedesignBottomSheetTitleHeaderBase)
+// Module 5457 (RedesignBottomSheetTitleHeaderBase)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -163,7 +163,7 @@ export const BottomSheetTitleHeader = function BottomSheetTitleHeader(arg0) {
   ({ leading, trailing } = arg0);
   const tmp2 = callback(React.useState(false), 2);
   let closure_0 = tmp2[1];
-  const tmp3 = importDefault(5311)("sheet");
+  const tmp3 = importDefault(5332)("sheet");
   if (null != leading) {
     if (tmp2[0]) {
       let obj = {};

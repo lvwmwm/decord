@@ -1,8 +1,8 @@
-// Module ID: 16295
-// Function ID: 16296
-// Dependencies: [32, 19, 17, 21, 4342, 5821, 11528, 2]
+// Module ID: 16313
+// Function ID: 16314
+// Dependencies: [32, 19, 17, 21, 4342, 5842, 11544, 2]
 
-// Module 16295
+// Module 16313
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { Image } from "get ActivityIndicator";
@@ -41,20 +41,20 @@ const memoResult = importAllResult.memo(function ActivityShelfItemBackground(asp
           }
           obj[4] = accessibilityLabel;
           obj[1] = <Image onError={null} source={null} style={null} accessibilityRole="image" accessibilityLabel={null} />;
-          let tmp9Result = tmp9(importDefault(5821), obj);
-          const tmp12 = importDefault(5821);
+          let tmp9Result = tmp9(importDefault(5842), obj);
+          const tmp12 = importDefault(5842);
           const tmp13 = Image;
         }
       }
       obj = { style: null };
       obj[0] = tmp.previewImage;
-      tmp9Result = jsx(importDefault(5821), { style: null });
+      tmp9Result = jsx(importDefault(5842), { style: null });
     }
     return tmp9Result;
   }
   const obj2 = { style: tmp.previewImage, children: null };
-  obj2[1] = jsx(importDefault(11528), {});
-  tmp9Result = jsx(importDefault(5821), { style: tmp.previewImage, children: null });
+  obj2[1] = jsx(importDefault(11544), {});
+  tmp9Result = jsx(importDefault(5842), { style: tmp.previewImage, children: null });
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemBackground.tsx");
 

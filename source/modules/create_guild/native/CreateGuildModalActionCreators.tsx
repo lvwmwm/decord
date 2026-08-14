@@ -1,8 +1,8 @@
-// Module ID: 12126
-// Function ID: 12127
-// Dependencies: [8556, 4550, 12127, 2007, 12122, 2]
+// Module ID: 12144
+// Function ID: 12145
+// Dependencies: [8578, 4572, 12145, 2007, 12140, 2]
 
-// Module 12126
+// Module 12144
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
 
 let c3;
@@ -12,26 +12,26 @@ const result = require("CreateGuildModal").fileFinishedImporting("modules/create
 
 export default {
   openCreateGuildModal(onSuccess) {
-    let obj = importDefault(4550);
+    let obj = importDefault(4572);
     obj = { onSuccess };
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(12127, dependencyMap.paths), obj, closure_4);
+    obj.pushLazy(require(2007) /* asyncRequireImpl */(12145, dependencyMap.paths), obj, closure_4);
   },
   closeCreateGuildModal() {
-    importDefault(4550).popWithKey(closure_4);
+    importDefault(4572).popWithKey(closure_4);
   },
   closeCreateGuildOnboardingModal() {
-    importDefault(4550).popWithKey(closure_4);
-    const obj = importDefault(4550);
-    require(12122) /* _startContactSyncForDiscoverability */.nextOnboardingStep({});
+    importDefault(4572).popWithKey(closure_4);
+    const obj = importDefault(4572);
+    require(12140) /* _startContactSyncForDiscoverability */.nextOnboardingStep({});
   },
   openGuildInviteScreen(channel) {
-    let obj = importDefault(4550);
+    let obj = importDefault(4572);
     obj = { channel };
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(12127, dependencyMap.paths), obj, closure_4);
+    obj.pushLazy(require(2007) /* asyncRequireImpl */(12145, dependencyMap.paths), obj, closure_4);
   },
   openGuildJoinServerScreen() {
-    let obj = importDefault(4550);
+    let obj = importDefault(4572);
     obj = { initialState: constants.JOIN_SERVER };
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(12127, dependencyMap.paths), obj, closure_4);
+    obj.pushLazy(require(2007) /* asyncRequireImpl */(12145, dependencyMap.paths), obj, closure_4);
   }
 };

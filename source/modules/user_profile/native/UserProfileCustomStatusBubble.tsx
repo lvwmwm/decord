@@ -1,9 +1,9 @@
-// Module ID: 9500
-// Function ID: 9501
+// Module ID: 9513
+// Function ID: 9514
 // Name: EmojiImage
-// Dependencies: [32, 19, 17, 5816, 1925, 21, 4342, 712, 4034, 5308, 1435, 500, 4338, 5400, 8837, 9501, 9502, 4310, 9504, 5788, 1236, 4887, 9577, 2]
+// Dependencies: [32, 19, 17, 5837, 1925, 21, 4342, 712, 4034, 5329, 1435, 500, 4338, 5421, 8851, 9514, 9515, 4310, 9517, 5809, 1236, 4909, 9590, 2]
 
-// Module 9500 (EmojiImage)
+// Module 9513 (EmojiImage)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "QUICK_SWITCHER";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
@@ -30,7 +30,7 @@ function EmojiImage(id) {
   let obj = { style: items, source: null, resizeMode: "contain" };
   items = [{ height: size, width: size }, id.style];
   const tmp2 = closure_8;
-  const tmp3 = importDefault(5308);
+  const tmp3 = importDefault(5329);
   obj = { id: id.emojiId, animated: null, size: null };
   const obj2 = importDefault(1435);
   obj = { uri: obj2.getEmojiURL(obj) };
@@ -145,7 +145,7 @@ function EmojiOnlyStatusContent(arg0) {
     str = "";
   }
   obj1[3] = str;
-  obj[1] = closure_8(importDefault(5400), obj1);
+  obj[1] = closure_8(importDefault(5421), obj1);
   return closure_8(tmp12, obj);
 }
 let c4 = importAllResult;
@@ -182,7 +182,7 @@ let closure_11 = createCacheKey.createStyles((arg0) => {
   return obj;
 });
 let closure_12 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_13 = { [arg1(5816).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_13 = { [arg1(5837).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 let closure_16 = createCacheKey.createStyles(() => ({ container: { alignItems: "center" } }));
 const forwardRefResult = importAllResult.forwardRef((showFullStatus, ref) => {
   let customStatusActivity;

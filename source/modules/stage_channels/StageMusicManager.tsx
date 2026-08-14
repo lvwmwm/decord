@@ -1,10 +1,10 @@
-// Module ID: 10758
-// Function ID: 10759
+// Module ID: 10774
+// Function ID: 10775
 // Name: checkVoiceStates
-// Dependencies: [1391, 4393, 1979, 4361, 5177, 1396, 10756, 9829, 589, 5189, 5183, 5301, 2]
+// Dependencies: [1391, 4393, 1979, 4361, 5198, 1396, 10772, 9840, 589, 5210, 5204, 5322, 2]
 // Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton
 
-// Module 10758 (checkVoiceStates)
+// Module 10774 (checkVoiceStates)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import importDefaultResult from "_detectH265HardwareDecode";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -141,8 +141,8 @@ export const useShowStageMusicMuteButton = function useShowStageMusicMuteButton(
   const items = [handleConnectionOpen];
   let stateFromStores = _require(589).useStateFromStores(items, () => outer1_4.getVoiceChannelId() === closure_0);
   const obj = _require(589);
-  const stageParticipants = _require(5189).useStageParticipants(channelId, _require(5183).StageChannelParticipantNamedIndex.SPEAKER);
-  const obj2 = _require(5189);
+  const stageParticipants = _require(5210).useStageParticipants(channelId, _require(5204).StageChannelParticipantNamedIndex.SPEAKER);
+  const obj2 = _require(5210);
   const tmp2 = null != stageParticipants.find((voiceState) => {
     voiceState = voiceState.voiceState;
     return !voiceState.isVoiceMuted();
@@ -158,7 +158,7 @@ export const useShowStageMusicMuteButton = function useShowStageMusicMuteButton(
 };
 export const shouldShowStageMusicMuteButton = function shouldShowStageMusicMuteButton(id) {
   let tmp = store2.getVoiceChannelId() === id;
-  mutableParticipants = mutableParticipants.getMutableParticipants(id, require(5183) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
+  mutableParticipants = mutableParticipants.getMutableParticipants(id, require(5204) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
   if (tmp) {
     tmp = null == handleStageInstanceCreateOrUpdate.getStageInstanceByChannel(id);
   }

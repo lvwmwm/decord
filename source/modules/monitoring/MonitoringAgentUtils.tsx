@@ -1,10 +1,10 @@
-// Module ID: 7113
-// Function ID: 7114
+// Module ID: 7135
+// Function ID: 7136
 // Name: addGlobalTag
 // Dependencies: [673, 2]
 // Exports: addGlobalTag, getGlobalTagsArray
 
-// Module 7113 (addGlobalTag)
+// Module 7135 (addGlobalTag)
 const obj = { design_id: require("DesignIds").DesignIds.DESIGN_TABS_IA };
 const result = require("set").fileFinishedImporting("modules/monitoring/MonitoringAgentUtils.tsx");
 

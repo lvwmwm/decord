@@ -1,10 +1,10 @@
-// Module ID: 11576
-// Function ID: 11577
+// Module ID: 11592
+// Function ID: 11593
 // Name: AppLauncherBackButton
-// Dependencies: [19, 21, 1500, 7796, 5315, 5367, 1236, 2]
+// Dependencies: [19, 21, 1500, 7817, 5336, 5388, 1236, 2]
 // Exports: default
 
-// Module 11576 (AppLauncherBackButton)
+// Module 11592 (AppLauncherBackButton)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -16,11 +16,11 @@ export default function AppLauncherBackButton(onPress) {
   const navigation = obj.useNavigation();
   const canGoBackResult = navigation.canGoBack();
   obj = { size: "sm", variant: "secondary-overlay", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 };
-  obj[2] = importDefault(canGoBackResult ? 5315 : 5367);
+  obj[2] = importDefault(canGoBackResult ? 5336 : 5388);
   obj[3] = onPress.onPress;
   const intl = tmp(1236).intl;
   const t = tmp(1236).t;
   obj[4] = intl.string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq);
-  return jsx(require(7796) /* IconButton */.IconButton, { size: "sm", variant: "secondary-overlay", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 });
+  return jsx(require(7817) /* IconButton */.IconButton, { size: "sm", variant: "secondary-overlay", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 });
 };
 export const BACK_BUTTON_SIZE = 32;

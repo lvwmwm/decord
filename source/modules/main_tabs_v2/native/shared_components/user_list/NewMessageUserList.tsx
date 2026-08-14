@@ -1,10 +1,10 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 11815
+// Function ID: 11816
 // Name: matchGroupDMRecipients
-// Dependencies: [32, 19, 17, 1391, 3998, 1922, 9669, 21, 4342, 712, 5269, 4187, 4535, 12, 9671, 1236, 4338, 9673, 9675, 11137, 11800, 2]
+// Dependencies: [32, 19, 17, 1391, 3998, 1922, 9680, 21, 4342, 712, 5290, 4187, 4535, 12, 9682, 1236, 4338, 9684, 9686, 11153, 11816, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 11799 (matchGroupDMRecipients)
+// Module 11815 (matchGroupDMRecipients)
 import _slicedToArray from "_slicedToArray";
 import NoResults from "NoResults";
 import { View } from "UserFlashListActions";
@@ -31,7 +31,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
       let tmp19 = importDefault;
       let tmp20 = dependencyMap;
       let toLocaleLowerCaseResult = username.toLocaleLowerCase();
-      if (importDefault(5269)(trimmed1, toLocaleLowerCaseResult)) {
+      if (importDefault(5290)(trimmed1, toLocaleLowerCaseResult)) {
         let tmp16 = obj;
         obj.return();
         let num3 = 1;
@@ -46,7 +46,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult1) {
           let tmp8 = toLocaleLowerCaseResult1;
-          if (tmp19(5269)(trimmed1, tmp7)) {
+          if (tmp19(5290)(trimmed1, tmp7)) {
             let tmp15 = obj;
             obj.return();
             let num2 = 1;
@@ -62,7 +62,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult2) {
           let tmp13 = toLocaleLowerCaseResult2;
-          if (tmp19(5269)(trimmed1, tmp12)) {
+          if (tmp19(5290)(trimmed1, tmp12)) {
             let tmp14 = obj;
             obj.return();
             let num = 1;
@@ -84,7 +84,7 @@ function matchGroupDM(id, trimmed1) {
     let num = 3;
     if (!toLocaleLowerCaseResult.startsWith(trimmed1)) {
       let num2 = 2;
-      if (!importDefault(5269)(trimmed1, toLocaleLowerCaseResult)) {
+      if (!importDefault(5290)(trimmed1, toLocaleLowerCaseResult)) {
         num2 = matchGroupDMRecipients(trimmed1, id);
       }
       num = num2;

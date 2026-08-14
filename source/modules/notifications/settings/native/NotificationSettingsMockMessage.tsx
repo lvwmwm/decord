@@ -1,10 +1,10 @@
-// Module ID: 9884
-// Function ID: 9885
+// Module ID: 9895
+// Function ID: 9896
 // Name: NotificationSettingsMockMessage
-// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 589, 4187, 4083, 4343, 4346, 4338, 1236, 1297, 9885, 2]
+// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 589, 4187, 4083, 4343, 4346, 4338, 1236, 1297, 9896, 2]
 // Exports: default
 
-// Module 9884 (NotificationSettingsMockMessage)
+// Module 9895 (NotificationSettingsMockMessage)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -88,7 +88,7 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   const obj5 = { style: tmp.cardContent, children: null };
   const obj6 = { children: null };
   const obj7 = { source: null, size: null };
-  obj7[0] = sharedValue(9885);
+  obj7[0] = sharedValue(9896);
   obj7[1] = require(1297) /* Button */.AvatarSizes.LARGE_48;
   obj6[0] = tmp12(require(1297) /* Button */.Avatar, obj7);
   const items4 = [tmp12(View, obj6), ];

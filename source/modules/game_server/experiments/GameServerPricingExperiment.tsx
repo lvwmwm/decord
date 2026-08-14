@@ -1,10 +1,10 @@
-// Module ID: 11933
-// Function ID: 11934
+// Module ID: 11949
+// Function ID: 11950
 // Name: experiment
 // Dependencies: [4254, 4253, 2]
 // Exports: useIsGameServerPricingEnabled
 
-// Module 11933 (experiment)
+// Module 11949 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Enable Game Server Pricing", config: { enabled: true } }];

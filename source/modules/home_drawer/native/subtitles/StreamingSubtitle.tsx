@@ -1,10 +1,10 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15536
+// Function ID: 15537
 // Name: StreamingSubtitle
 // Dependencies: [19, 21, 4338, 1236, 4534, 2]
 // Exports: default
 
-// Module 15518 (StreamingSubtitle)
+// Module 15536 (StreamingSubtitle)
 import "noop";
 import { jsx } from "jsxProd";
 

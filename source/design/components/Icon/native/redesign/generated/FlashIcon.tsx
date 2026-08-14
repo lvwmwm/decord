@@ -1,10 +1,10 @@
-// Module ID: 12355
-// Function ID: 12356
+// Module ID: 12373
+// Function ID: 12374
 // Name: FlashIcon
-// Dependencies: [19, 21, 712, 4064, 12356, 2]
+// Dependencies: [19, 21, 712, 4064, 12374, 2]
 // Exports: FlashIcon
 
-// Module 12355 (FlashIcon)
+// Module 12373 (FlashIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const FlashIcon = function FlashIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12356) /* registerAsset */;
+  obj[0] = require(12374) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

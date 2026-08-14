@@ -1,9 +1,9 @@
-// Module ID: 9179
-// Function ID: 9180
+// Module ID: 9193
+// Function ID: 9194
 // Name: sum
-// Dependencies: [1391, 687, 7339, 3, 6965, 4355, 2]
+// Dependencies: [1391, 687, 7361, 3, 6986, 4355, 2]
 
-// Module 9179 (sum)
+// Module 9193 (sum)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import "enqueue";
 
@@ -22,8 +22,8 @@ class InviteQueue extends tmp4 {
 const prototype = InviteQueue.prototype;
 prototype["_sendInvite"] = function _sendInvite(channel, inviteKey, _location, inviteAnalyticsMetadata, ensureGuildLoaded) {
   const importDefault = ensureGuildLoaded;
-  const obj = importDefault(6965);
-  importDefault(6965).sendInvite(channel.id, inviteKey, _location, inviteAnalyticsMetadata).then(() => callback(null, true), () => callback(null, false));
+  const obj = importDefault(6986);
+  importDefault(6986).sendInvite(channel.id, inviteKey, _location, inviteAnalyticsMetadata).then(() => callback(null, true), () => callback(null, false));
 };
 function drain(location, sum, arg2, prototype, arg4, InviteQueue, drain, dependencyMap, arg8) {
   let self = this;

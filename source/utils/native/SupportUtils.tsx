@@ -1,10 +1,10 @@
-// Module ID: 14791
-// Function ID: 14792
+// Module ID: 14805
+// Function ID: 14806
 // Name: _emailSupport
 // Dependencies: [5, 1994, 1625, 4322, 4058, 1993, 2]
 // Exports: emailSupport
 
-// Module 14791 (_emailSupport)
+// Module 14805 (_emailSupport)
 import combined from "combined";
 import _getSystemLocale from "_getSystemLocale";
 

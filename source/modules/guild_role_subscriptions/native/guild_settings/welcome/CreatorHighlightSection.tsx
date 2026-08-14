@@ -1,10 +1,10 @@
-// Module ID: 16866
-// Function ID: 16867
+// Module ID: 16882
+// Function ID: 16883
 // Name: GuildServerSubscriberCount
-// Dependencies: [19, 17, 21, 4342, 712, 4338, 1297, 8737, 1236, 16867, 4058, 16839, 5308, 14541, 4756, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4338, 1297, 8751, 1236, 16883, 4058, 16855, 5329, 14554, 4778, 2]
 // Exports: default
 
-// Module 16866 (GuildServerSubscriberCount)
+// Module 16882 (GuildServerSubscriberCount)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,7 +30,7 @@ function GuildServerSubscriberCount(arg0) {
   obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
   obj[1] = importDefault(712).unsafe_rawColors.WHITE;
   obj[2] = tmp.subscriberCountIcon;
-  obj[3] = importDefault(8737);
+  obj[3] = importDefault(8751);
   items1[1] = callback(require(1297) /* Button */.Icon, obj);
   const obj1 = { variant: "text-sm/normal", color: "text-overlay-light", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -57,14 +57,14 @@ function CreatorGuildCard(highlightedCreatorGuild) {
   guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp4 = guild_id(16867)(guild_id, 3, 60);
+  const tmp4 = guild_id(16883)(guild_id, 3, 60);
   dependencyMap = tmp4;
   hasAllImperativeDetails = tmp4.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp4];
   if (tmp4.isLoading) {
     let obj = { style: null, children: null };
     obj[0] = tmp.cardContainer;
-    obj[1] = callback(tmp2(16839), {});
+    obj[1] = callback(tmp2(16855), {});
     return callback(closure_4, obj);
   } else if (hasAllImperativeDetails) {
     const details = tmp4.details;
@@ -79,7 +79,7 @@ function CreatorGuildCard(highlightedCreatorGuild) {
     const obj2 = { uri: null };
     obj2[0] = guildAvatarUrl;
     obj1[1] = obj2;
-    const items1 = [callback(tmp2(5308), obj1), ];
+    const items1 = [callback(tmp2(5329), obj1), ];
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.cardHeaderContainer;
     const obj4 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", lineClamp: 1, lineBreakMode: "tail", children: null };
@@ -159,7 +159,7 @@ function CreatorGuildCard(highlightedCreatorGuild) {
     const intl4 = tmp10(1236).intl;
     obj14[1] = intl4.string(_require(1236).t.mQ2IGa);
     obj14[2] = tmp5;
-    obj13[1] = callback(_require(4756).BaseTextButton, obj14);
+    obj13[1] = callback(_require(4778).BaseTextButton, obj14);
     items3[4] = callback(closure_4, obj13);
     obj[1] = items3;
     return closure_7(closure_4, obj);

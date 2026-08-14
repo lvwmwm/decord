@@ -1,9 +1,9 @@
-// Module ID: 6518
-// Function ID: 6519
+// Module ID: 6539
+// Function ID: 6540
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6518 (metadata)
+// Module 6539 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeartHandsSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/cb6c6e7c80b43ea83811839368c5c1ff1827b7826c284716690b911022053e22.png";

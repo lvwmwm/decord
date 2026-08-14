@@ -1,10 +1,10 @@
-// Module ID: 9911
-// Function ID: 9912
+// Module ID: 9922
+// Function ID: 9923
 // Name: handleClose
-// Dependencies: [5, 32, 19, 17, 1922, 9910, 21, 4342, 712, 689, 687, 4550, 1499, 589, 1236, 5310, 4892, 4062, 8072, 9912, 584, 9913, 9922, 6051, 8029, 5308, 1435, 4913, 4753, 4338, 5416, 9923, 4887, 1297, 4755, 7835, 5807, 5414, 4310, 9938, 2007, 8030, 8021, 708, 9939, 9902, 5823, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 9921, 21, 4342, 712, 689, 687, 4572, 1499, 589, 1236, 5331, 4914, 4062, 8093, 9923, 584, 9924, 9933, 6072, 8050, 5329, 1435, 4935, 4775, 4338, 5437, 9934, 4909, 1297, 4777, 7856, 5828, 5435, 4310, 9949, 2007, 8051, 8042, 708, 9950, 9913, 5844, 2]
 // Exports: default
 
-// Module 9911 (handleClose)
+// Module 9922 (handleClose)
 import zustandStore from "zustandStore";
 import PressableBase from "PressableBase";
 import uriScheme from "uriScheme";
@@ -23,7 +23,7 @@ let unpackModuleId;
 const require = arg1;
 function handleClose() {
   state.setState({ isReportOpen: false });
-  let arr = importDefault(4550);
+  let arr = importDefault(4572);
   arr = arr.pop();
 }
 class BugCreateScreen {
@@ -40,7 +40,7 @@ class BugCreateScreen {
     useRef = undefined;
     c10 = undefined;
     useState = undefined;
-    f84115 = undefined;
+    f84201 = undefined;
     c13 = undefined;
     useState = undefined;
     useCallback = undefined;
@@ -52,7 +52,7 @@ class BugCreateScreen {
     c21 = undefined;
     c22 = undefined;
     useRef = undefined;
-    f84116 = undefined;
+    f84202 = undefined;
     _handleAttachmentSelect = function _handleAttachmentSelect() {
       const self = this;
       const tmp = first(function*() {
@@ -88,7 +88,7 @@ class BugCreateScreen {
                 closure_1 = undefined;
                 obj2 = undefined;
                 c3 = undefined;
-                let obj1 = outer1_1(4913);
+                let obj1 = outer1_1(4935);
                 obj2 = 1;
                 c3 = 1;
                 obj1 = { value: null, done: false };
@@ -112,9 +112,9 @@ class BugCreateScreen {
                 const merged = Object.assign(closure_1);
                 obj2.uri = closure_1.uri;
                 obj2.originalUri = closure_1.uri;
-                obj2.platform = outer1_0(4892).UploadPlatform.REACT_NATIVE;
+                obj2.platform = outer1_0(4914).UploadPlatform.REACT_NATIVE;
                 obj2.filename = closure_1.fileName;
-                const tmp35 = new outer1_1(4892)(obj2);
+                const tmp35 = new outer1_1(4914)(obj2);
                 c3 = tmp35;
                 closure_23.current = closure_7.length;
                 callback((arg0) => {
@@ -168,7 +168,7 @@ class BugCreateScreen {
       closure_9.current = current;
       callback(current);
     }, []);
-    f84115 = callback;
+    f84201 = callback;
     tmp13 = c4(c5.useState(false), 2);
     first5 = tmp13[0];
     c13 = first5;
@@ -211,7 +211,7 @@ class BugCreateScreen {
       }
       return isStaffResult;
     });
-    f84116 = stateFromStores;
+    f84202 = stateFromStores;
     items1 = [];
     items1[0] = navigation;
     effect = c5.useEffect(() => {
@@ -305,7 +305,7 @@ class BugCreateScreen {
                       let closure_2 = arg2;
                       let c5 = 0;
                       let c6 = 0;
-                      return (/* F120641 */ function*() { ... })();
+                      return (/* F120789 */ function*() { ... })();
                     });
                     v0 = tmp;
                     const apply = tmp.apply;
@@ -579,7 +579,7 @@ class BugCreateScreen {
     }, items5);
     tmp31 = useState;
     tmp33 = c10;
-    tmp32 = f84115;
+    tmp32 = f84201;
     tmp34 = c7;
     obj = { spacing: 24, style: tmp.container, children: null };
     obj1 = { spacing: 8, children: null };
@@ -790,6 +790,6 @@ export default function BugReportModal(screenshotUri) {
     obj[0] = obj;
     return obj;
   }, items);
-  return callback(screenshotUri(5823).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
+  return callback(screenshotUri(5844).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
 };
 export { BugCreateScreen };

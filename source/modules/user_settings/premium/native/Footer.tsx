@@ -1,10 +1,10 @@
-// Module ID: 12829
-// Function ID: 12830
+// Module ID: 12847
+// Function ID: 12848
 // Name: Footer
-// Dependencies: [19, 17, 21, 4342, 12830, 5788, 4338, 1236, 4755, 5308, 12831, 2]
+// Dependencies: [19, 17, 21, 4342, 12848, 5809, 4338, 1236, 4777, 5329, 12849, 2]
 // Exports: default
 
-// Module 12829 (Footer)
+// Module 12847 (Footer)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/p
 export default function Footer(showSubscribeButton) {
   showSubscribeButton = showSubscribeButton.showSubscribeButton;
   const tmp = callback2();
-  importDefault(12830)(importDefault(5788).PREMIUM_MARKETING_FOOTER);
+  importDefault(12848)(importDefault(5809).PREMIUM_MARKETING_FOOTER);
   let obj = { style: items, children: null };
   items = [tmp.container, showSubscribeButton.style];
   let tmp8Result = showSubscribeButton;
@@ -37,7 +37,7 @@ export default function Footer(showSubscribeButton) {
     const obj2 = { text: null, variant: "primary", size: "lg", onPress: null, grow: true };
     obj2[0] = tmp7;
     obj2[3] = tmp6;
-    obj1[1] = callback(require(4755) /* Button */.Button, obj2);
+    obj1[1] = callback(require(4777) /* Button */.Button, obj2);
     items1[1] = callback(tmp9, obj1);
     obj[0] = items1;
     tmp8Result = tmp8(closure_5, obj);
@@ -45,12 +45,12 @@ export default function Footer(showSubscribeButton) {
   const items2 = [tmp8Result, ];
   let easterEggSpacing = null;
   const tmp14 = callback;
-  const tmp4 = importDefault(12830);
+  const tmp4 = importDefault(12848);
   if (!showSubscribeButton) {
     easterEggSpacing = tmp.easterEggSpacing;
   }
-  const tmp2Result = importDefault(5308);
-  items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: importDefault(12831) });
+  const tmp2Result = importDefault(5329);
+  items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: importDefault(12849) });
   obj[1] = items2;
   return closure_6(View, obj);
 };

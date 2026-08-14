@@ -1,9 +1,9 @@
-// Module ID: 7078
-// Function ID: 7079
+// Module ID: 7100
+// Function ID: 7101
 // Name: fromServer
-// Dependencies: [7050, 7079, 7081, 7084, 7085, 7086, 7087, 7088, 7089, 7090, 7091, 7080, 2]
+// Dependencies: [7072, 7101, 7103, 7106, 7107, 7108, 7109, 7110, 7111, 7112, 7113, 7102, 2]
 
-// Module 7078 (fromServer)
+// Module 7100 (fromServer)
 import fromServer from "fromServer";
 import { CountdownTimerBlockRecord } from "fromServer";
 import { FeaturedBlockRecord } from "fromServer";

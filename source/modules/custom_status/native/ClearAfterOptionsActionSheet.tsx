@@ -1,10 +1,10 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9587
+// Function ID: 9588
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [32, 19, 17, 9506, 21, 4342, 712, 5437, 5436, 1236, 8030, 8029, 9575, 4755, 4310, 2]
+// Dependencies: [32, 19, 17, 9519, 21, 4342, 712, 5458, 5457, 1236, 8051, 8050, 9588, 4777, 4310, 2]
 // Exports: default
 
-// Module 9574 (ClearAfterOptionsActionSheet)
+// Module 9587 (ClearAfterOptionsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -36,17 +36,17 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   obj = { title: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["5XnRQ+"]);
-  obj[1] = callback2(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj[1] = callback2(require(5457) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { onChange: tmp2[1], title: null, defaultValue: null, hasIcons: false, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.E45wvP);
   obj[2] = initialValue;
   obj[4] = ClearAfterOptions.map((value) => {
     const obj = { value, label: null };
-    obj[1] = callback2(9575)(value);
-    return callback3(callback(8029).TableRadioRow, obj, value);
+    obj[1] = callback2(9588)(value);
+    return callback3(callback(8050).TableRadioRow, obj, value);
   });
-  const items = [callback2(require(8030) /* context */.TableRadioGroup, obj), ];
+  const items = [callback2(require(8051) /* context */.TableRadioGroup, obj), ];
   const obj1 = { style: tmp.buttonWrapper, children: null };
   const obj2 = {
     onPress() {
@@ -57,8 +57,8 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t.TyCVIq);
-  obj1[1] = callback2(require(4755) /* Button */.Button, obj2);
+  obj1[1] = callback2(require(4777) /* Button */.Button, obj2);
   items[1] = callback2(View, obj1);
   obj[2] = items;
-  return callback3(require(5437) /* Background */.BottomSheet, obj);
+  return callback3(require(5458) /* Background */.BottomSheet, obj);
 };

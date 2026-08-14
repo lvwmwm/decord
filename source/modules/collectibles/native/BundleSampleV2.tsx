@@ -1,10 +1,10 @@
-// Module ID: 9425
-// Function ID: 9426
+// Module ID: 9439
+// Function ID: 9440
 // Name: BundleStaticPreviewContent
-// Dependencies: [19, 17, 9426, 21, 5308, 4342, 712, 38, 1949, 1946, 9427, 9437, 9439, 1297, 9444, 2]
+// Dependencies: [19, 17, 9440, 21, 5329, 4342, 712, 38, 1949, 1946, 9441, 9451, 9453, 1297, 2]
 // Exports: default
 
-// Module 9425 (BundleStaticPreviewContent)
+// Module 9439 (BundleStaticPreviewContent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO";
@@ -50,9 +50,9 @@ function BundleStaticPreviewContent(mutedBackground) {
     obj[0] = combined;
     obj[0] = obj;
     obj[1] = closure_9.bgImage;
-    tmp = closure_6(importDefault(5308), obj);
+    tmp = closure_6(importDefault(5329), obj);
     const tmp2 = closure_6;
-    const tmp5 = importDefault(5308);
+    const tmp5 = importDefault(5329);
   }
   obj = { style: closure_9.container, children: null };
   let tmp21Result = !disableBackground;
@@ -100,9 +100,9 @@ function BundleStaticPreviewContent(mutedBackground) {
     obj5[0] = combined1;
     obj4[0] = obj5;
     obj4[1] = tmp19.fgImage;
-    obj3[2] = closure_6(importDefault(5308), obj4);
+    obj3[2] = closure_6(importDefault(5329), obj4);
     tmp24Result = tmp24(tmp18, obj3);
-    const tmp27 = importDefault(5308);
+    const tmp27 = importDefault(5329);
   }
   items[1] = tmp24Result;
   obj[1] = items;
@@ -132,7 +132,7 @@ function BundleSampleV2Composed(arg0) {
     obj[0] = tmp.pfx;
     const obj1 = { item: null };
     obj1[0] = pfx;
-    obj[1] = callback(importDefault(9427), obj1);
+    obj[1] = callback(importDefault(9441), obj1);
     tmp12 = callback(tmp11, obj);
   }
   const items = [tmp12, , ];
@@ -156,7 +156,7 @@ function BundleSampleV2Composed(arg0) {
       }
       obj3[1] = XSMALL_20;
       obj3[2] = nameplateData;
-      obj3 = tmp22(require(9439) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
+      obj3 = tmp22(require(9453) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
       obj2[1] = obj3;
       callback(tmp11, obj2);
     }
@@ -168,38 +168,15 @@ function BundleSampleV2Composed(arg0) {
     obj5[0] = deco;
     obj5[1] = tmp9;
     obj5[2] = null != nameplateData;
-    obj4[1] = callback(importDefault(9437), obj5);
+    obj4[1] = callback(importDefault(9451), obj5);
     callback(tmp11, obj4);
   }
-}
-function BundleSampleV2StaticPreview(composedFallbackProps) {
-  let disableStaticBackground;
-  let exposureLocation;
-  let mutedStaticBackground;
-  let previewAssets;
-  let targetSize;
-  composedFallbackProps = composedFallbackProps.composedFallbackProps;
-  ({ previewAssets, disableStaticBackground, mutedStaticBackground, targetSize, exposureLocation } = composedFallbackProps);
-  let obj = require(9444) /* useCollectiblesMobileFlexibleBundlesExperiment */;
-  if (obj.useCollectiblesMobileFlexibleBundlesExperiment(exposureLocation).enabled) {
-    obj = { previewAssets: null, disableBackground: null, mutedBackground: null, targetSize: null };
-    obj[0] = previewAssets;
-    obj[1] = disableStaticBackground;
-    obj[2] = mutedStaticBackground;
-    obj[3] = targetSize;
-    let tmpResult = tmp(BundleStaticPreviewContent, obj);
-  } else {
-    obj = {};
-    const merged = Object.assign(composedFallbackProps);
-    tmpResult = tmp(BundleSampleV2Composed, obj);
-  }
-  return tmpResult;
 }
 ({ PixelRatio: c3, StyleSheet, View: c4 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let obj = { container: null, bgBleedClip: null, bgMutedWrap: null, bgImage: null, fgClip: null, fgImage: null };
 obj = {};
-let merged = Object.assign(StyleSheet.absoluteFillObject);
+const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.overflow = "hidden";
 obj[0] = obj;
 obj = {};
@@ -243,11 +220,9 @@ const result = require("SAMPLE_PROFILE_ASPECT_RATIO").fileFinishedImporting("mod
 export default function BundleSampleV2(size) {
   let deco;
   let disableStaticBackground;
-  let exposureLocation;
   let nameplate;
   let pfx;
   let previewAssets;
-  let targetSize;
   let str = size.size;
   ({ deco, pfx, nameplate } = size);
   if (str === undefined) {
@@ -261,28 +236,24 @@ export default function BundleSampleV2(size) {
   if (flag === undefined) {
     flag = false;
   }
-  ({ exposureLocation, targetSize } = size);
-  if (exposureLocation === undefined) {
-    exposureLocation = "CollectiblesShopCardAssetTileV2";
-  }
-  let obj = { deco, pfx, nameplate, size: str };
   let fgStatic;
   if (previewAssets != null) {
     fgStatic = previewAssets.fgStatic;
   }
   if (null != fgStatic) {
-    obj = { previewAssets: null, disableStaticBackground: null, mutedStaticBackground: null, targetSize: null, composedFallbackProps: null, exposureLocation: null };
+    let obj = { previewAssets: null, disableBackground: null, mutedBackground: null, targetSize: null };
     obj[0] = previewAssets;
     obj[1] = disableStaticBackground;
     obj[2] = flag;
-    obj[3] = targetSize;
-    obj[4] = obj;
-    obj[5] = exposureLocation;
-    let tmp7 = callback(BundleSampleV2StaticPreview, obj);
+    obj[3] = size.targetSize;
+    let tmp4 = callback(BundleStaticPreviewContent, obj);
   } else {
-    obj = {};
-    const merged = Object.assign(obj);
-    tmp7 = callback(BundleSampleV2Composed, obj);
+    obj = { deco: null, pfx: null, nameplate: null, size: null };
+    obj[0] = deco;
+    obj[1] = pfx;
+    obj[2] = nameplate;
+    obj[3] = str;
+    tmp4 = callback(BundleSampleV2Composed, obj);
   }
-  return tmp7;
+  return tmp4;
 };

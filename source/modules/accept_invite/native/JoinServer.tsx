@@ -1,10 +1,10 @@
-// Module ID: 8555
-// Function ID: 8556
+// Module ID: 8577
+// Function ID: 8578
 // Name: OrSeparator
-// Dependencies: [19, 17, 8556, 21, 4342, 712, 4338, 1236, 5409, 1499, 1493, 8514, 4755, 2]
+// Dependencies: [19, 17, 8578, 21, 4342, 712, 4338, 1236, 5430, 1499, 1493, 8536, 4777, 2]
 // Exports: default
 
-// Module 8555 (OrSeparator)
+// Module 8577 (OrSeparator)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -78,7 +78,7 @@ export default function JoinServer(arg0) {
   const callback = React.useCallback(() => {
     navigation.push(outer1_7.JOIN_STUDENT_HUB);
   }, items);
-  obj[0] = importDefault(5409)().insets.bottom + importDefault(712).space.PX_16;
+  obj[0] = importDefault(5430)().insets.bottom + importDefault(712).space.PX_16;
   items1[1] = obj;
   obj[1] = items1;
   let tmp7Result = null;
@@ -110,7 +110,7 @@ export default function JoinServer(arg0) {
   obj5[5] = intl4.string(navigation(1236).t.qreV25);
   obj5[10] = tmp.textInput;
   obj5[11] = onDone;
-  items3[1] = callback(importDefault(8514), obj5);
+  items3[1] = callback(importDefault(8536), obj5);
   const obj6 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted", children: null };
   const intl5 = tmp4(1236).intl;
   obj6[3] = intl5.format(navigation(1236).t.vwWaTe, {
@@ -134,7 +134,7 @@ export default function JoinServer(arg0) {
   obj10[3] = submitting;
   obj10[4] = submitting;
   obj10[5] = onDone;
-  items5[1] = callback(navigation(4755).Button, obj10);
+  items5[1] = callback(navigation(4777).Button, obj10);
   items5[2] = callback(OrSeparator, {});
   const obj11 = { size: "lg", variant: "secondary", text: null, accessibilityLabel: null, onPress: null };
   const intl8 = tmp4(1236).intl;
@@ -142,7 +142,7 @@ export default function JoinServer(arg0) {
   const intl9 = tmp4(1236).intl;
   obj11[3] = intl9.string(navigation(1236).t["MOqX/G"]);
   obj11[4] = callback;
-  items5[3] = callback(navigation(4755).Button, obj11);
+  items5[3] = callback(navigation(4777).Button, obj11);
   obj8[0] = items5;
   items4[1] = closure_9(closure_10, obj8);
   obj[2] = items4;

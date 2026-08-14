@@ -1,10 +1,10 @@
-// Module ID: 9043
-// Function ID: 9044
+// Module ID: 9057
+// Function ID: 9058
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 676, 1954, 506, 9044, 1363, 1236, 2]
+// Dependencies: [5, 32, 19, 676, 1954, 506, 9058, 1363, 1236, 2]
 // Exports: default
 
-// Module 9043 (useCreateChannelSubmit)
+// Module 9057 (useCreateChannelSubmit)
 import fromString from "fromString";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

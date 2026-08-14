@@ -1,9 +1,9 @@
-// Module ID: 9071
-// Function ID: 9072
+// Module ID: 9085
+// Function ID: 9086
 // Name: handleFormInit
-// Dependencies: [1431, 9050, 1395, 1434, 7805, 1930, 1910, 1922, 676, 9072, 8187, 11, 9073, 530, 709, 9075, 1430, 9076, 3943, 9077, 589, 12, 595, 2]
+// Dependencies: [1431, 9064, 1395, 1434, 7826, 1930, 1910, 1922, 676, 9086, 8208, 11, 9087, 530, 709, 9089, 1430, 9090, 3943, 9091, 589, 12, 595, 2]
 
-// Module 9071 (handleFormInit)
+// Module 9085 (handleFormInit)
 import { set } from "isValueEqual";
 import handleUpdateStart from "handleUpdateStart";
 import { createChannelRecordFromInvite as closure_15 } from "createChannelRecord";
@@ -63,7 +63,7 @@ function handleFormInit(location) {
     closure_44 = {};
     location = location.location;
     if (section === constants.TAG) {
-      obj = require(9073) /* canUseMobileServerTagSettings */;
+      obj = require(9087) /* canUseMobileServerTagSettings */;
       if (!obj.canUseMobileServerTagSettings(guildId)) {
         obj2 = undefined;
       }
@@ -120,8 +120,8 @@ function handleIntegrationsUpdate(type) {
       tmp5 = type.guildId === user.id;
     }
     if (tmp5) {
-      const guildIntegrationsApplications = require(9077) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
-      const obj = require(9077) /* _fetchGuildIntegrationsApplications */;
+      const guildIntegrationsApplications = require(9091) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
+      const obj = require(9091) /* _fetchGuildIntegrationsApplications */;
     }
     tmp = tmp5;
   }
@@ -412,8 +412,8 @@ obj = {
   GUILD_SETTINGS_SUBMIT_FAILURE: function handleFormSubmitFailure(errors) {
     const OPEN = FormStates.OPEN;
     if (defaultGuildSettingsSection == null) {
-      defaultGuildSettingsSection = require(9076) /* getDefaultGuildSettingsSection */.getDefaultGuildSettingsSection();
-      const obj = require(9076) /* getDefaultGuildSettingsSection */;
+      defaultGuildSettingsSection = require(9090) /* getDefaultGuildSettingsSection */.getDefaultGuildSettingsSection();
+      const obj = require(9090) /* getDefaultGuildSettingsSection */;
     }
     let c4 = null;
     errors = errors.errors;
@@ -435,8 +435,8 @@ obj = {
               if (closure_3 === tmp27.MEMBERS) {
                 let c10 = getGuildEveryoneRoleId(user);
               } else if (closure_3 === tmp27.VANITY_URL) {
-                const vanityUrl = require(9075) /* fetchVanityUrl */.fetchVanityUrl(user.id);
-                const obj2 = require(9075) /* fetchVanityUrl */;
+                const vanityUrl = require(9089) /* fetchVanityUrl */.fetchVanityUrl(user.id);
+                const obj2 = require(9089) /* fetchVanityUrl */;
               } else if (closure_3 === tmp27.SAFETY) {
                 if (null == closure_4) {
                   let SAFETY_OVERVIEW = constants2.SAFETY_OVERVIEW;
@@ -462,8 +462,8 @@ obj = {
                 tmp13 = section.guildId === user.id;
               }
               if (tmp13) {
-                const guildIntegrationsApplications = require(9077) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
-                const obj3 = require(9077) /* _fetchGuildIntegrationsApplications */;
+                const guildIntegrationsApplications = require(9091) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
+                const obj3 = require(9091) /* _fetchGuildIntegrationsApplications */;
               }
               tmp12 = tmp13;
             }
@@ -761,9 +761,9 @@ obj = {
     }
     let tmp2 = profile.id === id;
     if (tmp2) {
-      const result = require(9073) /* canUseMobileServerTagSettings */.isServerTagDraftDirty(profile, profile);
+      const result = require(9087) /* canUseMobileServerTagSettings */.isServerTagDraftDirty(profile, profile);
       tmp2 = !result;
-      const obj = require(9073) /* canUseMobileServerTagSettings */;
+      const obj = require(9087) /* canUseMobileServerTagSettings */;
       const tmp8 = !result;
     }
     return tmp2;

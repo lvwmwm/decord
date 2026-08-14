@@ -1,9 +1,9 @@
-// Module ID: 15765
-// Function ID: 15766
+// Module ID: 15783
+// Function ID: 15784
 // Name: memoResult1
-// Dependencies: [19, 17, 6966, 21, 4342, 712, 4187, 4338, 15766, 1435, 5414, 1297, 1628, 15771, 4168, 15772, 589, 1236, 7790, 8876, 5754, 2]
+// Dependencies: [19, 17, 6987, 21, 4342, 712, 4187, 4338, 15784, 1435, 5435, 1297, 1628, 15789, 4168, 15790, 589, 1236, 7811, 8890, 5775, 2]
 
-// Module 15765 (memoResult1)
+// Module 15783 (memoResult1)
 import importAllResult from "getNoResultsSource";
 import get_ActivityIndicator from "getSystemLocale";
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
@@ -75,7 +75,7 @@ let closure_12 = importAllResult.memo((joinRequest) => {
       obj[3] = tmp;
       obj[4] = start;
       obj[5] = end;
-      return callback(joinRequest(5414).TableRow, obj);
+      return callback(joinRequest(5435).TableRow, obj);
     }
   }
 });

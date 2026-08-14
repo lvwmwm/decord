@@ -1,10 +1,10 @@
-// Module ID: 9478
-// Function ID: 9479
+// Module ID: 9491
+// Function ID: 9492
 // Name: CollectiblesShopPricePlaceholder
 // Dependencies: [19, 21, 4342, 712, 4083, 4343, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 9478 (CollectiblesShopPricePlaceholder)
+// Module 9491 (CollectiblesShopPricePlaceholder)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

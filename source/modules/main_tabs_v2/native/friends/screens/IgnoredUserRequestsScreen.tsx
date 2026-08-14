@@ -1,10 +1,10 @@
-// Module ID: 15933
-// Function ID: 15934
+// Module ID: 15951
+// Function ID: 15952
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 3998, 1922, 9669, 676, 21, 5768, 5788, 589, 15931, 8832, 9675, 2]
+// Dependencies: [19, 3998, 1922, 9680, 676, 21, 5789, 5809, 589, 15949, 8846, 9686, 2]
 // Exports: default
 
-// Module 15933 (IgnoredUserRequestsScreen)
+// Module 15951 (IgnoredUserRequestsScreen)
 import noop from "noop";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";

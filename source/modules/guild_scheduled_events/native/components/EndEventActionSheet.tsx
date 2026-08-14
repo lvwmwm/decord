@@ -1,10 +1,10 @@
-// Module ID: 9197
-// Function ID: 9198
+// Module ID: 9211
+// Function ID: 9212
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 1397, 676, 21, 4342, 712, 9087, 4310, 9198, 8010, 1297, 1236, 4338, 4755, 8989, 2]
+// Dependencies: [19, 17, 1397, 676, 21, 4342, 712, 9101, 4310, 9212, 8031, 1297, 1236, 4338, 4777, 9003, 2]
 // Exports: default
 
-// Module 9197 (EndEventActionSheet)
+// Module 9211 (EndEventActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";
@@ -28,7 +28,7 @@ export default function EndEventActionSheet(channel) {
   channel = channel.channel;
   let activeEvent;
   const tmp = createCacheKey();
-  let obj = channel(9087);
+  let obj = channel(9101);
   activeEvent = obj.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
@@ -57,7 +57,7 @@ export default function EndEventActionSheet(channel) {
     const intl3 = tmp2(1236).intl;
     obj4[0] = intl3.string(tmp2(1236).t.P60OAX);
     obj4[2] = handleClose;
-    obj3[1] = callback(tmp2(4755).Button, obj4);
+    obj3[1] = callback(tmp2(4777).Button, obj4);
     items[2] = callback(View, obj3);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.confirmButtonContainer;
@@ -74,10 +74,10 @@ export default function EndEventActionSheet(channel) {
         const obj3 = channel(outer1_2[9]);
       }
     };
-    obj5[1] = callback(tmp2(4755).Button, obj6);
+    obj5[1] = callback(tmp2(4777).Button, obj6);
     items[3] = callback(View, obj5);
     obj[1] = items;
     obj[0] = callback2(View, obj);
-    return callback(activeEvent(8010), obj);
+    return callback(activeEvent(8031), obj);
   }
 };

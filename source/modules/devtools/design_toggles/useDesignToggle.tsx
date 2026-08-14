@@ -1,10 +1,10 @@
-// Module ID: 5312
-// Function ID: 5313
+// Module ID: 5333
+// Function ID: 5334
 // Name: useDesignToggle
-// Dependencies: [5313, 589, 2]
+// Dependencies: [5334, 589, 2]
 // Exports: default
 
-// Module 5312 (useDesignToggle)
+// Module 5333 (useDesignToggle)
 import getUserAgnosticState from "getUserAgnosticState";
 
 const require = arg1;

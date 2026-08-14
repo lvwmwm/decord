@@ -1,10 +1,10 @@
-// Module ID: 14082
-// Function ID: 14083
+// Module ID: 14095
+// Function ID: 14096
 // Name: SettingsAgeGroupHeader
-// Dependencies: [19, 17, 8127, 676, 21, 4342, 712, 7842, 1993, 4338, 1236, 2821, 10407, 13947, 2]
+// Dependencies: [19, 17, 8148, 676, 21, 4342, 712, 7863, 1993, 4338, 1236, 2821, 10421, 13959, 2]
 // Exports: default
 
-// Module 14082 (SettingsAgeGroupHeader)
+// Module 14095 (SettingsAgeGroupHeader)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { MobileSetting } from "MobileSetting";
@@ -18,7 +18,7 @@ const require = arg1;
 function SettingsAgeGroupHeader() {
   let obj = { style: createCacheKey().headerContainer, children: null };
   const callback = React.useCallback(() => {
-    const obj = callback(7842);
+    const obj = callback(7863);
     obj.openUrl(callback(1993).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
   obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
@@ -41,7 +41,7 @@ const result = require("MobileSetting").fileFinishedImporting("modules/user_sett
 
 export default function SettingsAgeGroupScreen() {
   const node = React.useMemo(() => {
-    let obj = callback(10407);
+    let obj = callback(10421);
     obj = { sections: null, ListHeaderComponent: null };
     obj = { label: null, settings: null };
     const intl = callback(1236).intl;
@@ -54,5 +54,5 @@ export default function SettingsAgeGroupScreen() {
     obj[1] = closure_10;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13947), { node });
+  return callback(importDefault(13959), { node });
 };

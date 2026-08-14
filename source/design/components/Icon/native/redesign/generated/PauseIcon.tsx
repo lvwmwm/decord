@@ -1,10 +1,10 @@
-// Module ID: 8906
-// Function ID: 8907
+// Module ID: 8920
+// Function ID: 8921
 // Name: PauseIcon
-// Dependencies: [19, 21, 712, 4064, 8907, 2]
+// Dependencies: [19, 21, 712, 4064, 8921, 2]
 // Exports: PauseIcon
 
-// Module 8906 (PauseIcon)
+// Module 8920 (PauseIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const PauseIcon = function PauseIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8907) /* registerAsset */;
+  obj[0] = require(8921) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

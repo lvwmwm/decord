@@ -1,10 +1,10 @@
-// Module ID: 10554
-// Function ID: 10555
+// Module ID: 10570
+// Function ID: 10571
 // Name: formatAppStoreRatingValue
 // Dependencies: [2]
 // Exports: formatAppStoreChartRank, formatAppStoreRatingCount, formatAppStoreRatingValue, getAppStoreStarFillAmounts
 
-// Module 10554 (formatAppStoreRatingValue)
+// Module 10570 (formatAppStoreRatingValue)
 const result = require("set").fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStatCardUtils.tsx");
 
 export const formatAppStoreRatingValue = function formatAppStoreRatingValue(rating, currentLocale) {

@@ -1,10 +1,10 @@
-// Module ID: 12633
-// Function ID: 12634
+// Module ID: 12651
+// Function ID: 12652
 // Name: HeaderIcon
-// Dependencies: [17, 1910, 21, 4342, 712, 5818, 589, 5819, 9712, 1297, 4841, 4535, 4805, 1236, 4338, 2]
+// Dependencies: [17, 1910, 21, 4342, 712, 5839, 589, 5840, 9723, 1297, 4863, 4535, 4827, 1236, 4338, 2]
 // Exports: ForLaterCardHeader
 
-// Module 12633 (HeaderIcon)
+// Module 12651 (HeaderIcon)
 import { View } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import jsxProd from "jsxProd";
@@ -20,9 +20,9 @@ function HeaderIcon(channel) {
   if (null != stateFromStores) {
     obj = { guild: null, size: null };
     obj[0] = stateFromStores;
-    obj[1] = tmp2(5819).GuildIconSizes.XSMALL;
-    let tmp6Result = callback(importDefault(5819), obj);
-    const tmp13 = importDefault(5819);
+    obj[1] = tmp2(5840).GuildIconSizes.XSMALL;
+    let tmp6Result = callback(importDefault(5840), obj);
+    const tmp13 = importDefault(5840);
   } else {
     let isGroupDMResult;
     if (channel != null) {
@@ -32,12 +32,12 @@ function HeaderIcon(channel) {
       obj = { channel: null, size: null };
       obj[0] = channel;
       obj[1] = tmp2(1297).AvatarSizes.XSMALL;
-      tmp6Result = tmp6(importDefault(9712), obj);
-      const tmp10 = importDefault(9712);
+      tmp6Result = tmp6(importDefault(9723), obj);
+      const tmp10 = importDefault(9723);
     } else {
       const obj1 = { style: null, children: null };
       obj1[0] = tmp.dmIcon;
-      obj1[1] = tmp6(tmp2(4841).ChatIcon, { size: "xxs" });
+      obj1[1] = tmp6(tmp2(4863).ChatIcon, { size: "xxs" });
       tmp6Result = tmp6(View, obj1);
     }
   }
@@ -50,7 +50,7 @@ function ChannelName(channel) {
   const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
   const tmp5 = importDefault(4535)(channel, false);
-  let obj1 = channel(4805);
+  let obj1 = channel(4827);
   const channelIconComponentWithGuild = obj1.getChannelIconComponentWithGuild(channel, stateFromStores);
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {
@@ -92,7 +92,7 @@ export const ForLaterCardHeader = function ForLaterCardHeader(channel) {
   const items = [callback(HeaderIcon, { channel }), , , ];
   let tmp4Result = null;
   if (!channel.isPrivate()) {
-    tmp4Result = tmp4(require(5818) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, { size: "xxs" });
+    tmp4Result = tmp4(require(5839) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, { size: "xxs" });
   }
   items[1] = tmp4Result;
   items[2] = callback(ChannelName, { channel });

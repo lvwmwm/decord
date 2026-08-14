@@ -1,9 +1,9 @@
-// Module ID: 14107
-// Function ID: 14108
+// Module ID: 14120
+// Function ID: 14121
 // Name: route
-// Dependencies: [19, 8127, 676, 14056, 1236, 1297, 14108, 10407, 14057, 14055, 2]
+// Dependencies: [19, 8148, 676, 14069, 1236, 1297, 14121, 10421, 14070, 14068, 2]
 
-// Module 14107 (route)
+// Module 14120 (route)
 import noop from "noop";
 import ME from "ME";
 import createToggle from "createToggle";
@@ -68,7 +68,7 @@ createToggle = {
       let intl3 = callback(1236).intl;
       obj[5] = intl3.string(callback(1236).t.PDTjLN);
       obj[6] = callback(1297).ButtonColors.BRAND;
-      callback2(14108)(obj);
+      callback2(14121)(obj);
       return false;
     }, []);
   },
@@ -77,7 +77,7 @@ createToggle = {
 createToggle = {
   route: UserSettingsSections.ACCOUNT_CONFIRM_VIEW_BACKUP_CODES,
   getComponent() {
-    return require(14055) /* CodeRow */.default;
+    return require(14068) /* CodeRow */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

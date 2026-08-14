@@ -1,10 +1,10 @@
-// Module ID: 14636
-// Function ID: 14637
+// Module ID: 14650
+// Function ID: 14651
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [8309, 1990, 4187, 589, 2]
+// Dependencies: [8331, 1990, 4187, 589, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 14636 (useDisplayNameStylesPendingName)
+// Module 14650 (useDisplayNameStylesPendingName)
 import handleFormOpen from "handleFormOpen";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 

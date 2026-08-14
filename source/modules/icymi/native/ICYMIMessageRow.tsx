@@ -1,10 +1,10 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 15701
+// Function ID: 15702
 // Name: MessageRowContent
-// Dependencies: [19, 17, 1391, 1990, 1910, 3998, 4540, 1922, 15678, 676, 21, 712, 15640, 500, 15641, 8895, 7349, 589, 15684, 15685, 4338, 1236, 1297, 4534, 5272, 8961, 8962, 9715, 11094, 15679, 15681, 11, 4887, 9082, 15687, 2]
+// Dependencies: [19, 17, 1391, 1990, 1910, 3998, 4550, 1922, 15696, 676, 21, 712, 15658, 500, 15659, 8909, 7371, 589, 15702, 15703, 4338, 1236, 1297, 4534, 5293, 8975, 8976, 9726, 11110, 15697, 15699, 11, 4909, 9096, 15705, 2]
 // Exports: default
 
-// Module 15683 (MessageRowContent)
+// Module 15701 (MessageRowContent)
 import importAllResult from "MediaMosaicVideo";
 import { View } from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -39,7 +39,7 @@ class MessageRowContent {
     if (flag2 === undefined) {
       flag2 = false;
     }
-    tmp = f62386();
+    tmp = f62523();
     tmp2 = message;
     tmp3 = closure_2;
     context = __esModule.useContext(require("context").ICYMIContext);
@@ -147,7 +147,7 @@ function ReplyMessageContent(message) {
   ({ channel, guild } = message);
   const tmp = callback3();
   let obj = importAllResult;
-  const context = importAllResult.useContext(message(15641).ICYMIContext);
+  const context = importAllResult.useContext(message(15659).ICYMIContext);
   let obj1 = message(589);
   const items = [mergeGuildAvatar];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_10.getUser(message.author.id));
@@ -161,7 +161,7 @@ function ReplyMessageContent(message) {
   if (colorString == null) {
     colorString = closure_12;
   }
-  const width = obj.useContext(tmp2(15641).ICYMIContext).width;
+  const width = obj.useContext(tmp2(15659).ICYMIContext).width;
   let tmp8 = null;
   if (null != stateFromStores) {
     obj = { style: null, children: null };
@@ -198,7 +198,7 @@ function ReplyMessageContent(message) {
     obj9[1] = channel;
     obj9[2] = guild;
     obj7[1] = callback(MessageRowContent, obj9);
-    items4[1] = callback(tmp2(15641).ICYMIContext.Provider, obj7);
+    items4[1] = callback(tmp2(15659).ICYMIContext.Provider, obj7);
     obj3[1] = items4;
     items3[1] = callback2(View, obj3);
     obj1[1] = items3;
@@ -356,7 +356,7 @@ export default function MessageRowWrapper(arg0) {
   let gravityMessage;
   let stateFromStores;
   ({ message, messageContext, visible } = arg0);
-  let obj = gravityMessage(8961);
+  let obj = gravityMessage(8975);
   gravityMessage = obj.useGravityMessage(message);
   const items = [ensureGuildLoaded];
   stateFromStores = gravityMessage(589).useStateFromStores(items, () => outer1_5.getChannel(gravityMessage.getChannelId()));

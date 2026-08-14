@@ -1,10 +1,10 @@
-// Module ID: 10169
-// Function ID: 10170
+// Module ID: 10182
+// Function ID: 10183
 // Name: PremiumGiftDMSuccessBody
-// Dependencies: [19, 17, 21, 4342, 712, 9660, 1499, 9627, 10079, 4755, 1236, 2367, 9634, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 9671, 1499, 9638, 10091, 4777, 1236, 2367, 9645, 4338, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 10169 (PremiumGiftDMSuccessBody)
+// Module 10182 (PremiumGiftDMSuccessBody)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,10 +25,10 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/native/
 
 export default function PremiumGiftDMSuccessBody() {
   const tmp = createCacheKey();
-  let obj = require(9660) /* NativeGiftContextProvider */;
+  let obj = require(9671) /* NativeGiftContextProvider */;
   obj = { children: null };
   obj = { children: null };
-  obj[0] = callback(importDefault(9634), { giftStyle: obj.useNativeGiftContext().giftStyle });
+  obj[0] = callback(importDefault(9645), { giftStyle: obj.useNativeGiftContext().giftStyle });
   const items = [callback(View, obj), , ];
   const obj1 = { style: tmp.title, variant: "heading-lg/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

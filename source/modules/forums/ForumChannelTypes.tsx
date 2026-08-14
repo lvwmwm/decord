@@ -1,9 +1,9 @@
-// Module ID: 5960
-// Function ID: 5961
+// Module ID: 5981
+// Function ID: 5982
 // Name: ReservedTagIds
 // Dependencies: [2]
 
-// Module 5960 (ReservedTagIds)
+// Module 5981 (ReservedTagIds)
 const result = require("set").fileFinishedImporting("modules/forums/ForumChannelTypes.tsx");
 
 export const ReservedTagIds = { HARASSMENT: "1000", SPAM: "1001", BAN_EVASION: "1002", SERVER_RULES: "1003", MULTIPLE_REPORTS: "1004", RESOLVED: "1005" };

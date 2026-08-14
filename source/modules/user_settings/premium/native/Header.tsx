@@ -1,10 +1,10 @@
-// Module ID: 12808
-// Function ID: 12809
+// Module ID: 12826
+// Function ID: 12827
 // Name: Header
-// Dependencies: [19, 17, 21, 4342, 4278, 5308, 1236, 1363, 7795, 12809, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 4278, 5329, 1236, 1363, 7816, 12827, 4338, 2]
 // Exports: default
 
-// Module 12808 (Header)
+// Module 12826 (Header)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,11 +27,11 @@ export default function Header(style) {
   const tmp6 = View;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.lpNrPu);
-  const tmp8 = importDefault(5308);
+  const tmp8 = importDefault(5329);
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(7795);
+    let tmp2Result = tmp2(7816);
   } else {
-    tmp2Result = tmp2(12809);
+    tmp2Result = tmp2(12827);
   }
   obj[3] = tmp2Result;
   const items1 = [closure_4(tmp8, obj), ];

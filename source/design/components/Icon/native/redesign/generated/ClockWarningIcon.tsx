@@ -1,10 +1,10 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11320
+// Function ID: 11321
 // Name: ClockWarningIcon
-// Dependencies: [19, 21, 712, 4064, 11305, 2]
+// Dependencies: [19, 21, 712, 4064, 11321, 2]
 // Exports: ClockWarningIcon
 
-// Module 11304 (ClockWarningIcon)
+// Module 11320 (ClockWarningIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ClockWarningIcon = function ClockWarningIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11305) /* registerAsset */;
+  obj[0] = require(11321) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

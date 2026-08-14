@@ -1,10 +1,10 @@
-// Module ID: 8199
-// Function ID: 8200
+// Module ID: 8220
+// Function ID: 8221
 // Name: createPremiumGroupInviteEmbed
-// Dependencies: [4021, 4342, 712, 8100, 8200, 8201, 1236, 2885, 2]
+// Dependencies: [4021, 4342, 712, 8121, 8221, 8222, 1236, 2885, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 8199 (createPremiumGroupInviteEmbed)
+// Module 8220 (createPremiumGroupInviteEmbed)
 import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 
 let c3;
@@ -34,14 +34,14 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
     ({ backgroundColor, headerTextColor, bodyTextColor, linkTextColor, betaPillTextColor, betaPillBackgroundColor } = require(4342) /* createCacheKey */.createNativeStyleProperties(obj)(theme));
     const tmp9 = require(4342) /* createCacheKey */.createNativeStyleProperties(obj)(theme);
     const author = message.author;
-    const assetUriForEmbed = require(8100) /* frozen */.getAssetUriForEmbed(importDefault(8200));
-    const obj6 = require(8100) /* frozen */;
+    const assetUriForEmbed = require(8121) /* frozen */.getAssetUriForEmbed(importDefault(8221));
+    const obj6 = require(8121) /* frozen */;
     obj = { sender: null, channel: null, isSender: null, inviteState: null };
     obj[0] = author;
     obj[1] = channel;
     obj[2] = id === author.id;
     obj[3] = constants.UNKNOWN;
-    const premiumGroupInviteEmbedText = require(8201) /* getPremiumGroupInviteEmbedText */.getPremiumGroupInviteEmbedText(obj);
+    const premiumGroupInviteEmbedText = require(8222) /* getPremiumGroupInviteEmbedText */.getPremiumGroupInviteEmbedText(obj);
     if (null != premiumGroupInviteEmbedText) {
       ({ header, body } = premiumGroupInviteEmbedText);
       const intl = tmp6(1236).intl;
@@ -66,6 +66,6 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
       obj2[10] = formatToPartsResult;
       return obj2;
     }
-    const obj7 = require(8201) /* getPremiumGroupInviteEmbedText */;
+    const obj7 = require(8222) /* getPremiumGroupInviteEmbedText */;
   }
 };

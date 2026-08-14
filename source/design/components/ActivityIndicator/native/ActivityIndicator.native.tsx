@@ -1,10 +1,10 @@
-// Module ID: 5863
-// Function ID: 5864
+// Module ID: 5884
+// Function ID: 5885
 // Name: ActivityIndicator
 // Dependencies: [17, 21, 4065, 712, 2]
 // Exports: ActivityIndicator
 
-// Module 5863 (ActivityIndicator)
+// Module 5884 (ActivityIndicator)
 import { ActivityIndicator } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 

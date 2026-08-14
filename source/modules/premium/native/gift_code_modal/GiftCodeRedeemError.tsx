@@ -1,10 +1,10 @@
-// Module ID: 10392
-// Function ID: 10393
+// Module ID: 10406
+// Function ID: 10407
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4342, 712, 1500, 5368, 10393, 10394, 4338, 1236, 4755, 4550, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1500, 5389, 10407, 10408, 4338, 1236, 4777, 4572, 2]
 // Exports: default
 
-// Module 10392 (GiftCodeRedeemError)
+// Module 10406 (GiftCodeRedeemError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,9 +35,9 @@ export default function GiftCodeRedeemError(children) {
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(10393);
+    let tmp9Result = tmp9(10407);
   } else {
-    tmp9Result = tmp9(10394);
+    tmp9Result = tmp9(10408);
   }
   const items = [closure_6(closure_3, { source: tmp9Result }), , ];
   const obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };
@@ -54,8 +54,8 @@ export default function GiftCodeRedeemError(children) {
   obj4[2] = function onPress() {
     return callback(table[12]).pop();
   };
-  obj3[1] = closure_6(require(4755) /* Button */.Button, obj4);
+  obj3[1] = closure_6(require(4777) /* Button */.Button, obj4);
   items1[1] = closure_6(closure_4, obj3);
   obj[2] = items1;
-  return closure_7(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_7(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

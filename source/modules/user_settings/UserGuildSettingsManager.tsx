@@ -1,9 +1,9 @@
-// Module ID: 5299
-// Function ID: 5300
+// Module ID: 5320
+// Function ID: 5321
 // Name: handleConnectionOpen
-// Dependencies: [5, 5300, 1391, 676, 687, 530, 5301, 2]
+// Dependencies: [5, 5321, 1391, 676, 687, 530, 5322, 2]
 
-// Module 5299 (handleConnectionOpen)
+// Module 5320 (handleConnectionOpen)
 import sendRequest from "sendRequest";
 import incrementVersion from "incrementVersion";
 import ensureGuildLoaded from "ensureGuildLoaded";

@@ -1,10 +1,10 @@
-// Module ID: 11032
-// Function ID: 11033
+// Module ID: 11048
+// Function ID: 11049
 // Name: _handleContentLinking
-// Dependencies: [5, 5384, 676, 4550, 5906, 1222, 10278, 2]
+// Dependencies: [5, 5405, 676, 4572, 5927, 1222, 10292, 2]
 // Exports: default
 
-// Module 11032 (_handleContentLinking)
+// Module 11048 (_handleContentLinking)
 import transitionTo from "transitionTo";
 import { Routes } from "ME";
 

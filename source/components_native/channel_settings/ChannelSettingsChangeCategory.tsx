@@ -1,10 +1,10 @@
-// Module ID: 16001
-// Function ID: 16002
+// Module ID: 16019
+// Function ID: 16020
 // Name: shouldComponentUpdate
-// Dependencies: [32, 853, 19, 1391, 5294, 1910, 3989, 3998, 1922, 676, 21, 4342, 712, 4072, 5295, 11844, 3994, 5272, 4683, 1236, 4535, 5414, 5807, 8012, 4753, 4338, 589, 1499, 38, 2]
+// Dependencies: [32, 853, 19, 1391, 5315, 1910, 3989, 3998, 1922, 676, 21, 4342, 712, 4072, 5316, 11860, 3994, 5293, 4705, 1236, 4535, 5435, 5828, 8033, 4775, 4338, 589, 1499, 38, 2]
 // Exports: default
 
-// Module 16001 (shouldComponentUpdate)
+// Module 16019 (shouldComponentUpdate)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -206,7 +206,7 @@ prototype["handleSetCategory"] = function handleSetCategory(id) {
 prototype["renderCategory"] = function renderCategory(label) {
   const self = this;
   const _require = label;
-  return callback3(_require(5414).TableRow, {
+  return callback3(_require(5435).TableRow, {
     label: label.name,
     onPress() {
       return self.handleSetCategory(label.id);
@@ -233,7 +233,7 @@ prototype["renderCategories"] = function renderCategories() {
   if (mapped.length > 0) {
     const obj = { hasIcons: false, children: null };
     obj[1] = mapped;
-    tmp4 = callback3(require(5807) /* TableRowGroupTitle */.TableRowGroup, obj);
+    tmp4 = callback3(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
   }
   return tmp4;
 };
@@ -267,16 +267,16 @@ prototype["render"] = function render() {
         obj2[1] = function onPress() {
           return self.handleSetCategory(first.id);
         };
-        obj1[1] = tmp3(tmp4(5414).TableRow, obj2, first.id);
-        tmp3Result = tmp3(tmp4(5807).TableRowGroup, obj1);
+        obj1[1] = tmp3(tmp4(5435).TableRow, obj2, first.id);
+        tmp3Result = tmp3(tmp4(5828).TableRowGroup, obj1);
       }
     }
   }
   items[1] = tmp3Result;
   items[2] = self.renderCategories();
   obj[2] = items;
-  obj[1] = closure_14(first(4753).Stack, obj);
-  return closure_13(first(8012).Form, obj);
+  obj[1] = closure_14(first(4775).Stack, obj);
+  return closure_13(first(8033).Form, obj);
 };
 ChannelSettingsChangeCategory.contextType = require("ManaContext").ThemeContext;
 let obj1 = { paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };

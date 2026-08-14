@@ -1,10 +1,10 @@
-// Module ID: 10572
-// Function ID: 10573
+// Module ID: 10588
+// Function ID: 10589
 // Name: _launchFrame
-// Dependencies: [5, 10566, 10567, 9809, 10573, 709, 10588, 10574, 10586, 10951, 2]
+// Dependencies: [5, 10582, 10583, 9820, 10589, 709, 10604, 10590, 10602, 10967, 2]
 // Exports: attachFrameIframe, detachFrameIframe, launchFrame, promoteFrame, refreshProxyTicket, resetFrameLayoutModes, updateFramePanelMode
 
-// Module 10572 (_launchFrame)
+// Module 10588 (_launchFrame)
 import dispatcher from "dispatcher";
 import map from "map";
 import FrameLayoutModes from "FrameLayoutModes";
@@ -91,7 +91,7 @@ function _launchFrame() {
                 return obj3;
               } else {
                 if (callback4(callback2) === c5.MAIN) {
-                  let obj9 = callback(10573);
+                  let obj9 = callback(10589);
                   const result = obj9.leaveCurrentEmbeddedActivity();
                   callback6();
                 }
@@ -105,15 +105,15 @@ function _launchFrame() {
                 c5 = 4;
                 c6 = 1;
                 const obj5 = { value: null, done: false };
-                obj5[0] = callback(10588).createProxyTicket(callback, callback3(callback2));
+                obj5[0] = callback(10604).createProxyTicket(callback, callback3(callback2));
                 return obj5;
               }
             }
           } else if (2 === tmp7) {
             frame = 0;
             callback3 = intent;
-            c5 = callback2(10574)();
-            let obj7 = callback(10586);
+            c5 = callback2(10590)();
+            let obj7 = callback(10602);
             c5 = 3;
             c6 = 1;
             const obj6 = { value: null, done: false };
@@ -191,8 +191,8 @@ function clearMainFrameSlot() {
   const mainFrame = store.getMainFrame();
   if (null != mainFrame) {
     if (mainFrame.intent === constants.MAIN) {
-      importDefault(10951)().leaveFrame(mainFrame.id);
-      const obj8 = importDefault(10951)();
+      importDefault(10967)().leaveFrame(mainFrame.id);
+      const obj8 = importDefault(10967)();
     } else {
       const id = mainFrame.id;
       const frame = obj.getFrame(id);
@@ -299,8 +299,8 @@ function _refreshProxyTicket() {
           } else if (2 === tmp9) {
             frame = 1;
             c5 = dispatcher;
-            dispatcher = applicationId(10574)();
-            let obj8 = callback(10586);
+            dispatcher = applicationId(10590)();
+            let obj8 = callback(10602);
             c5 = 3;
             c6 = 1;
             const obj4 = { value: null, done: false };
@@ -412,9 +412,9 @@ export const promoteFrame = function promoteFrame(closure_0) {
     tmp = id !== closure_0;
   }
   if (tmp) {
-    const result = require(10573) /* leaveCurrentEmbeddedActivity */.leaveCurrentEmbeddedActivity();
+    const result = require(10589) /* leaveCurrentEmbeddedActivity */.leaveCurrentEmbeddedActivity();
     clearMainFrameSlot();
-    const obj2 = require(10573) /* leaveCurrentEmbeddedActivity */;
+    const obj2 = require(10589) /* leaveCurrentEmbeddedActivity */;
     obj = { type: "FRAME_PROMOTE", frameId: null };
     obj[1] = closure_0;
     importDefault(709).dispatch(obj);

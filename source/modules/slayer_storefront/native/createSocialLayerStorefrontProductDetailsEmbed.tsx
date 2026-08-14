@@ -1,10 +1,10 @@
-// Module ID: 10975
-// Function ID: 10976
+// Module ID: 10991
+// Function ID: 10992
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [32, 19, 4383, 4391, 676, 7241, 8098, 1236, 10976, 5893, 5888, 3239, 8260, 7696, 4331, 7802, 501, 589, 1370, 5774, 2]
+// Dependencies: [32, 19, 4383, 4391, 676, 7263, 8119, 1236, 10992, 5914, 5909, 3239, 8282, 7717, 4331, 7823, 501, 589, 1370, 5795, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 10975 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 10991 (createSocialLayerStorefrontProductDetailsEmbed)
 import _slicedToArray from "_slicedToArray";
 import useGetOrFetchApplications from "useGetOrFetchApplications";
 import addApplication from "addApplication";
@@ -21,7 +21,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   let guildOrApplication;
   let skuId;
   ({ skuId, guildOrApplication } = theme);
-  ({ colors, baseColors } = importDefault(8098)(theme.theme));
+  ({ colors, baseColors } = importDefault(8119)(theme.theme));
   let obj = addSku;
   const value = addSku.get(skuId);
   let applicationId;
@@ -31,7 +31,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   application = application.getApplication(applicationId);
   const isFetchingResult = obj.isFetching(skuId);
   let result = null != applicationId;
-  const tmp3 = importDefault(8098)(theme.theme);
+  const tmp3 = importDefault(8119)(theme.theme);
   if (result) {
     result = obj2.isFetchingApplication(applicationId);
   }
@@ -50,11 +50,11 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (tmp(10976)(application)) {
+        if (tmp(10992)(application)) {
           if ("guild" !== guildOrApplication.type) {
-            const result1 = require(5893) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(value);
-            const obj4 = require(5893) /* useSKUPrice */;
-            const str4 = require(5888) /* getPrice */.getCardImageURL(value);
+            const result1 = require(5914) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(value);
+            const obj4 = require(5914) /* useSKUPrice */;
+            const str4 = require(5909) /* getPrice */.getCardImageURL(value);
             str = undefined;
             if (str4 != null) {
               str = str4.toString();

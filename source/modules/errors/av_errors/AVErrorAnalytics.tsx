@@ -1,10 +1,10 @@
-// Module ID: 17011
-// Function ID: 17012
+// Module ID: 17027
+// Function ID: 17028
 // Name: getCurrentScreenshareCaptureMethod
-// Dependencies: [32, 4429, 4413, 4434, 1391, 4393, 4416, 4437, 1979, 4430, 676, 4406, 9219, 4408, 4514, 12, 7246, 10672, 7181, 4336, 698, 2]
+// Dependencies: [32, 4429, 4413, 4434, 1391, 4393, 4416, 4437, 1979, 4430, 676, 4406, 9233, 4408, 4514, 12, 7268, 10688, 7203, 4336, 698, 2]
 // Exports: sendAVErrorAnalyticsEvent
 
-// Module 17011 (getCurrentScreenshareCaptureMethod)
+// Module 17027 (getCurrentScreenshareCaptureMethod)
 import _slicedToArray from "_slicedToArray";
 import updateAveragedStatsHelper from "updateAveragedStatsHelper";
 import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo";

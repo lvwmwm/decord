@@ -1,8 +1,8 @@
-// Module ID: 12184
-// Function ID: 12185
-// Dependencies: [19, 17, 21, 4342, 1363, 1628, 12185, 12186, 4338, 1236, 2]
+// Module ID: 12202
+// Function ID: 12203
+// Dependencies: [19, 17, 21, 4342, 1363, 1628, 12203, 12204, 4338, 1236, 2]
 
-// Module 12184
+// Module 12202
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,9 +29,9 @@ const memoResult = require("noop").memo((topViewHeight) => {
   items = [tmp.container, { marginBottom: rect.bottom + rect.top + num }];
   let obj2 = require(1363) /* AccessibilityAnnouncer */;
   if (obj2.isThemeLight(obj.useThemeContext().theme)) {
-    let tmp4Result = tmp4(12185);
+    let tmp4Result = tmp4(12203);
   } else {
-    tmp4Result = tmp4(12186);
+    tmp4Result = tmp4(12204);
   }
   obj = { source: tmp4Result, style: tmp.image };
   const items1 = [closure_5(closure_4, obj), , ];

@@ -1,8 +1,8 @@
-// Module ID: 9124
-// Function ID: 9125
+// Module ID: 9138
+// Function ID: 9139
 // Dependencies: [19, 17, 4334, 21, 4342, 712, 4083, 589, 4343, 4346, 2]
 
-// Module 9124
+// Module 9138
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

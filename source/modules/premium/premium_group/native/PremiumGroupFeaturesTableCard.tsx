@@ -1,10 +1,10 @@
-// Module ID: 12821
-// Function ID: 12822
+// Module ID: 12839
+// Function ID: 12840
 // Name: BetaPill
-// Dependencies: [17, 6943, 21, 4342, 712, 4338, 1236, 12822, 1297, 4766, 4191, 8675, 2]
+// Dependencies: [17, 6964, 21, 4342, 712, 4338, 1236, 12840, 1297, 4788, 4191, 8689, 2]
 // Exports: default
 
-// Module 12821 (BetaPill)
+// Module 12839 (BetaPill)
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";
 import jsxProd from "jsxProd";
@@ -46,7 +46,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
   let subheaderString;
   ({ style, premiumGroupRole } = arg0);
   const tmp = callback3();
-  const tmp4 = importDefault(12822)(premiumGroupRole, false);
+  const tmp4 = importDefault(12840)(premiumGroupRole, false);
   if (null == tmp4) {
     return null;
   } else {
@@ -61,7 +61,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj[1] = { x: 1, y: 0 };
     let obj2 = require(4191) /* hexToRgba */;
     const items = [obj2.hexWithOpacity("#8547C6", 0.15), , ];
-    const tmp2Result = tmp2(4766);
+    const tmp2Result = tmp2(4788);
     items[1] = require(4191) /* hexToRgba */.hexWithOpacity("#B845C1", 0.15);
     const obj4 = require(4191) /* hexToRgba */;
     items[2] = require(4191) /* hexToRgba */.hexWithOpacity("#AB5D8A", 0.15);
@@ -70,7 +70,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj[4] = tmp.premiumGroupCard;
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
-    const items1 = [callback(tmp2(8675), { width: 181, height: 16 }), callback(BetaPill, {})];
+    const items1 = [callback(tmp2(8689), { width: 181, height: 16 }), callback(BetaPill, {})];
     obj[1] = items1;
     const items2 = [callback2(View, obj), , ];
     const obj1 = { variant: "text-sm/normal", style: null, children: null };

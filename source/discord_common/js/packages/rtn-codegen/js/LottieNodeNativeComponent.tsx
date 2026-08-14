@@ -1,9 +1,9 @@
-// Module ID: 8152
-// Function ID: 8153
+// Module ID: 8173
+// Function ID: 8174
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 114, 2]
 
-// Module 8152 (__INTERNAL_VIEW_CONFIG)
+// Module 8173 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 let obj = { uiViewClassName: "NativeLottieNode", validAttributes: {} };

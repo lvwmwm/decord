@@ -1,10 +1,10 @@
-// Module ID: 10377
-// Function ID: 10378
+// Module ID: 10391
+// Function ID: 10392
 // Name: GiftCodeRedeemStart
-// Dependencies: [32, 19, 17, 10372, 1922, 4391, 676, 21, 4579, 5888, 1236, 4544, 1949, 4342, 712, 1499, 589, 4187, 10378, 10379, 5774, 10160, 7061, 9424, 5771, 10150, 5768, 5788, 698, 7802, 5996, 5368, 4338, 10383, 10384, 10385, 5778, 9425, 1297, 9496, 9603, 10204, 10387, 4755, 10376, 4550, 9379, 10375, 2]
+// Dependencies: [32, 19, 17, 10386, 1922, 4391, 676, 21, 4601, 5909, 1236, 4554, 1949, 4342, 712, 1499, 589, 4187, 10392, 10393, 5795, 10172, 7083, 9438, 5792, 10162, 5789, 5809, 698, 7823, 6017, 5389, 4338, 10397, 10398, 10399, 5799, 9439, 1297, 9509, 9616, 10218, 10401, 4777, 10390, 4572, 9393, 10389, 2]
 // Exports: default
 
-// Module 10377 (GiftCodeRedeemStart)
+// Module 10391 (GiftCodeRedeemStart)
 import Text from "Text";
 import getSubscriptionPlans from "getSubscriptionPlans";
 import get_ActivityIndicator from "nameFromUser";
@@ -392,7 +392,7 @@ export default function GiftCodeRedeemStart(giftCode) {
         obj21[1] = callback;
         let tmp30Result3 = null != tmp25;
         if (tmp30Result3) {
-          const obj22 = { deco: null, pfx: null, nameplate: null, previewAssets: null, disableStaticBackground: true, size: "large", targetSize: null, exposureLocation: "GiftCodeRedeemStart" };
+          const obj22 = { deco: null, pfx: null, nameplate: null, previewAssets: null, disableStaticBackground: true, size: "large", targetSize: null };
           obj22[0] = firstAvatarDecoration;
           obj22[1] = firstProfileEffect;
           obj22[2] = firstNameplate;

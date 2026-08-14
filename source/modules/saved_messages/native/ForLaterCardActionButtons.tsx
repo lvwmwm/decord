@@ -1,10 +1,10 @@
-// Module ID: 12629
-// Function ID: 12630
+// Module ID: 12647
+// Function ID: 12648
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 4342, 4310, 11162, 2007, 11156, 11161, 1236, 11182, 5366, 12630, 9721, 8647, 7796, 8654, 2]
+// Dependencies: [19, 17, 21, 4342, 4310, 11178, 2007, 11172, 11177, 1236, 11198, 5387, 12648, 9732, 8661, 7817, 8668, 2]
 // Exports: default
 
-// Module 12629 (ForLaterCardActionButtons)
+// Module 12647 (ForLaterCardActionButtons)
 import noop from "noop";
 import { View } from "set";
 import { jsx } from "jsxProd";
@@ -42,7 +42,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }, items);
   let intl = savedMessage(1236).intl;
   obj[0] = intl.string(savedMessage(1236).t["+TSRGD"]);
-  obj[1] = savedMessage(11182).ChatArrowRightIcon;
+  obj[1] = savedMessage(11198).ChatArrowRightIcon;
   obj[2] = function action() {
     return jumpToMessage();
   };
@@ -55,7 +55,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }
   obj = {
     label: intl2.string(SvXS1Z),
-    IconComponent: tmp3(5366).XSmallIcon,
+    IconComponent: tmp3(5387).XSmallIcon,
     action() {
       return savedMessage(outer1_2[7]).removeSavedMessage(savedMessage.saveData);
     },
@@ -75,10 +75,10 @@ export default function ForLaterCardActionButtons(savedMessage) {
       const intl = savedMessage(1236).intl;
       obj.accessibilityLabel = intl.string(savedMessage(1236).t.e1heBD);
       obj.size = "sm";
-      obj.icon = jumpToMessage(8654);
-      return callback(savedMessage(7796).IconButton, obj);
+      obj.icon = jumpToMessage(8668);
+      return callback(savedMessage(7817).IconButton, obj);
     };
-    obj[1] = jsx(tmp3(8647).ContextMenu, { items: null, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: null });
+    obj[1] = jsx(tmp3(8661).ContextMenu, { items: null, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: null });
     return <View style={null}>{null}</View>;
   } else {
     const intl3 = tmp3(1236).intl;
@@ -86,9 +86,9 @@ export default function ForLaterCardActionButtons(savedMessage) {
     let obj2 = { label: null, IconComponent: null, action: null };
     obj2[0] = intl3.string(savedMessage.throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1);
     if (savedMessage.throttledNow > savedMessage.saveData.dueAt) {
-      let PencilIcon = tmp3(12630).BellZIcon;
+      let PencilIcon = tmp3(12648).BellZIcon;
     } else {
-      PencilIcon = tmp3(9721).PencilIcon;
+      PencilIcon = tmp3(9732).PencilIcon;
     }
     obj2[1] = PencilIcon;
     obj2[2] = callback;

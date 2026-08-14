@@ -1,10 +1,10 @@
-// Module ID: 9581
-// Function ID: 9582
+// Module ID: 9594
+// Function ID: 9595
 // Name: LinkButton
-// Dependencies: [19, 17, 676, 1978, 21, 4342, 4058, 698, 4338, 9582, 500, 1977, 1236, 2]
+// Dependencies: [19, 17, 676, 1978, 21, 4342, 4058, 698, 4338, 9595, 500, 1977, 1236, 2]
 // Exports: default
 
-// Module 9581 (LinkButton)
+// Module 9594 (LinkButton)
 import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";

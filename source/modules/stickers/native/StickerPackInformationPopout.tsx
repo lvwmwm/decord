@@ -1,10 +1,10 @@
-// Module ID: 10014
-// Function ID: 10015
+// Module ID: 10025
+// Function ID: 10026
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 4342, 712, 4679, 1236, 4338, 4887, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4701, 1236, 4338, 4909, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 10014 (StickerPackInformationPopout)
+// Module 10025 (StickerPackInformationPopout)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export default function StickerPackInformationPopout(stickerPack) {
   const tmp = createCacheKey();
   _require = tmp;
   let items = [];
-  let obj = _require(4679);
+  let obj = _require(4701);
   if (obj.isStickerPackAnimated(stickerPack)) {
     obj = { key: "animated", description: null };
     const intl = tmp2(1236).intl;
@@ -58,7 +58,7 @@ export default function StickerPackInformationPopout(stickerPack) {
   const intl4 = tmp2(1236).intl;
   obj5[2] = intl4.string(_require(1236).t.cpT0Cq);
   obj4[3] = callback(_require(4338).Text, obj5);
-  items2[1] = callback(_require(4887).PressableOpacity, obj4);
+  items2[1] = callback(_require(4909).PressableOpacity, obj4);
   obj1[1] = items2;
   const items3 = [
     callback2(closure_2, obj1),
@@ -82,7 +82,7 @@ export default function StickerPackInformationPopout(stickerPack) {
 };
 export const doesStickerPackHavePopoutInformation = function doesStickerPackHavePopoutInformation(stickerPack) {
   const items = [];
-  let obj = require(4679) /* getStickerExtensionFromFormatType */;
+  let obj = require(4701) /* getStickerExtensionFromFormatType */;
   if (obj.isStickerPackAnimated(stickerPack)) {
     obj = { key: "animated", description: null };
     const intl = tmp(1236).intl;

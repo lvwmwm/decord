@@ -1,10 +1,10 @@
-// Module ID: 13087
-// Function ID: 13088
+// Module ID: 13105
+// Function ID: 13106
 // Name: isUserSettingsOpen
 // Dependencies: [32, 19, 4198, 2]
 // Exports: useIsUserSettingsOpen
 
-// Module 13087 (isUserSettingsOpen)
+// Module 13105 (isUserSettingsOpen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

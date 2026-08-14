@@ -1,10 +1,10 @@
-// Module ID: 11387
-// Function ID: 11388
+// Module ID: 11403
+// Function ID: 11404
 // Name: Modal
-// Dependencies: [19, 21, 1628, 5823, 5307, 2]
+// Dependencies: [19, 21, 1628, 5844, 5328, 2]
 // Exports: Modal
 
-// Module 11387 (Modal)
+// Module 11403 (Modal)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ const result = require("useSafeAreaInsets").fileFinishedImporting("design/compon
 export const Modal = function Modal(arg0) {
   let obj = {};
   const merged = Object.assign(arg0);
-  obj = { height: require(5307) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + importDefault(1628)().top };
+  obj = { height: require(5328) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + importDefault(1628)().top };
   obj.headerStyle = obj;
-  return jsx(require(5823) /* NavigationStack */.Navigator, { height: require(5307) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + importDefault(1628)().top });
+  return jsx(require(5844) /* NavigationStack */.Navigator, { height: require(5328) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + importDefault(1628)().top });
 };

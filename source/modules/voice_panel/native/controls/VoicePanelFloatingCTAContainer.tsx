@@ -1,10 +1,10 @@
-// Module ID: 16323
-// Function ID: 16324
+// Module ID: 16341
+// Function ID: 16342
 // Name: FloatingCTA
-// Dependencies: [32, 19, 1391, 11705, 11708, 505, 21, 1367, 712, 4342, 4753, 8015, 4072, 11704, 16212, 6066, 647, 16208, 4083, 11711, 4689, 11136, 4754, 8054, 10045, 2]
+// Dependencies: [32, 19, 1391, 11721, 11724, 505, 21, 1367, 712, 4342, 4775, 8036, 4072, 11720, 16230, 6087, 647, 16226, 4083, 11727, 4711, 11152, 4776, 8075, 10056, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 16323 (FloatingCTA)
+// Module 16341 (FloatingCTA)
 import _slicedToArray from "_slicedToArray";
 import VOICE_PANEL_DRAWER_MAX_WIDTH from "VOICE_PANEL_DRAWER_MAX_WIDTH";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -23,8 +23,8 @@ function FloatingCTA(trailing) {
   let obj = { children: null };
   obj = { experimental_withBlurBackground: true, arrow: null == trailing, trailing };
   const merged1 = Object.assign(merged);
-  obj[0] = jsx(require(8015) /* RowButtonWrapper */.RowButton, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
-  return jsx(require(4753) /* Stack */.Stack, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
+  obj[0] = jsx(require(8036) /* RowButtonWrapper */.RowButton, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
+  return jsx(require(4775) /* Stack */.Stack, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
 }
 class VoicePanelFloatingCTAContainer {
   constructor(arg0) {

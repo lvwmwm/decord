@@ -1,7 +1,7 @@
 // Module ID: 7976
 // Function ID: 7977
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7977, 7893, 7904]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7977, 7978, 7925]
 
 // Module 7976 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Symbol = importDefault;
+const LinearGradient = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Symbol {
+class LinearGradient {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Symbol);
+    tmp = _isNativeReflectConstruct(this, LinearGradient);
     tmp2 = __esModule;
-    obj = __esModule(Symbol);
+    obj = __esModule(LinearGradient);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,22 +51,21 @@ class Symbol {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Symbol, require("_isNativeReflectConstruct"));
+require("_inherits")(LinearGradient, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "render",
     value: function render() {
       const self = this;
       const props = this.props;
-      let obj = { name: props.id };
+      let obj = { x1: props.x1, y1: props.y1, x2: props.x2, y2: props.y2 };
       obj = {
         ref(arg0) {
           return self.refMethod(arg0);
         }
       };
       const merged = Object.assign(obj);
-      const merged1 = Object.assign(self(7893)(props));
-      obj.children = props.children;
+      const merged1 = Object.assign(self(7978)(props, this));
       return jsx(self(7977), {
         ref(arg0) {
           return self.refMethod(arg0);
@@ -75,7 +74,8 @@ const items = [
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Symbol, items);
-importDefaultResultResult.displayName = "Symbol";
+const importDefaultResultResult = importDefaultResult(LinearGradient, items);
+importDefaultResultResult.displayName = "LinearGradient";
+importDefaultResultResult.defaultProps = { x1: "0%", y1: "0%", x2: "100%", y2: "0%" };
 
 export default importDefaultResultResult;

@@ -1,10 +1,10 @@
-// Module ID: 12080
-// Function ID: 12081
+// Module ID: 12098
+// Function ID: 12099
 // Name: getClass
 // Dependencies: [1903, 2]
 // Exports: getClass
 
-// Module 12080 (getClass)
+// Module 12098 (getClass)
 const result = require("set").fileFinishedImporting("utils/StylesheetUtils.tsx");
 
 export const getClass = function getClass(arg0, arg1) {

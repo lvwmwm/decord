@@ -1,9 +1,9 @@
-// Module ID: 12165
-// Function ID: 12166
+// Module ID: 12183
+// Function ID: 12184
 // Name: DiscoverabilityLandingScene
-// Dependencies: [19, 17, 12095, 1922, 676, 21, 4342, 712, 5307, 1499, 589, 12102, 691, 12122, 12166, 12115, 503, 5823, 1236, 2]
+// Dependencies: [19, 17, 12113, 1922, 676, 21, 4342, 712, 5328, 1499, 589, 12120, 691, 12140, 12184, 12133, 503, 5844, 1236, 2]
 
-// Module 12165 (DiscoverabilityLandingScene)
+// Module 12183 (DiscoverabilityLandingScene)
 import set from "set";
 import { View } from "NavigationStack";
 import { useContactSyncModalStore } from "ContactSyncModes";
@@ -63,9 +63,9 @@ function DiscoverabilityNameScene() {
   }, items);
   let obj = { style: tmp.container, children: null };
   const callback = React.useCallback((arg0) => {
-    const result = allowPhone(12122).startContactSyncForDiscoverability(arg0);
-    const obj = allowPhone(12122);
-    const result1 = allowPhone(12122).closeDiscoverabilityModal(false);
+    const result = allowPhone(12140).startContactSyncForDiscoverability(arg0);
+    const obj = allowPhone(12140);
+    const result1 = allowPhone(12140).closeDiscoverabilityModal(false);
   }, []);
   obj = { onNext: callback, loading: false, initialName: null };
   const tmp2 = useContactSyncModalStore();
@@ -74,7 +74,7 @@ function DiscoverabilityNameScene() {
     name = "";
   }
   obj[2] = name;
-  obj[1] = jsx(importDefault(12115), { onNext: callback, loading: false, initialName: null });
+  obj[1] = jsx(importDefault(12133), { onNext: callback, loading: false, initialName: null });
   return <tmp6 onNext={callback} loading={false} initialName={null} />;
 }
 class DiscoverabilityModal {

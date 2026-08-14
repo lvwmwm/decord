@@ -1,10 +1,10 @@
-// Module ID: 10553
-// Function ID: 10554
+// Module ID: 10569
+// Function ID: 10570
 // Name: AppStoreOverlayStatCardItem
-// Dependencies: [19, 17, 21, 4342, 712, 10554, 1236, 10555, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 10570, 1236, 10571, 4338, 2]
 // Exports: default
 
-// Module 10553 (AppStoreOverlayStatCardItem)
+// Module 10569 (AppStoreOverlayStatCardItem)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,14 +26,14 @@ function AppStoreOverlayStatCardItem(stat) {
     if (num == null) {
       num = 5;
     }
-    let obj2 = require(10554) /* formatAppStoreRatingValue */;
+    let obj2 = require(10570) /* formatAppStoreRatingValue */;
     const result = obj2.formatAppStoreRatingValue(stat.rating, require(1236) /* getSystemLocale */.intl.currentLocale);
     let result1;
     if (null != stat.ratingCount) {
-      let tmp9Result = tmp9(10554);
+      let tmp9Result = tmp9(10570);
       result1 = tmp9Result.formatAppStoreRatingCount(stat.ratingCount, tmp9(1236).intl.currentLocale);
     }
-    tmp9Result = tmp9(10554);
+    tmp9Result = tmp9(10570);
     const appStoreStarFillAmounts = tmp9Result.getAppStoreStarFillAmounts(stat.rating, num);
     const intl = tmp9(1236).intl;
     let obj = { label: null, rating: null, maxRating: null, ratingCount: null };
@@ -50,7 +50,7 @@ function AppStoreOverlayStatCardItem(stat) {
     obj[1] = result;
     const obj1 = { fillAmounts: null };
     obj1[0] = appStoreStarFillAmounts;
-    obj[2] = callback(importDefault(10555), obj1);
+    obj[2] = callback(importDefault(10571), obj1);
     obj[3] = result1;
     let tmp6 = obj;
   } else if ("age" === type) {
@@ -60,7 +60,7 @@ function AppStoreOverlayStatCardItem(stat) {
     obj2[1] = stat.ageRating;
     tmp6 = obj2;
   } else if ("chart" === type) {
-    const result2 = require(10554) /* formatAppStoreRatingValue */.formatAppStoreChartRank(stat.rank);
+    const result2 = require(10570) /* formatAppStoreRatingValue */.formatAppStoreChartRank(stat.rank);
     if (null != stat.category) {
       const _HermesInternal2 = HermesInternal;
       let combined = "" + stat.label + ", " + result2 + ", " + stat.category;
@@ -73,7 +73,7 @@ function AppStoreOverlayStatCardItem(stat) {
     obj[1] = result2;
     obj[2] = stat.category;
     tmp6 = obj;
-    const obj11 = require(10554) /* formatAppStoreRatingValue */;
+    const obj11 = require(10570) /* formatAppStoreRatingValue */;
   }
   ({ secondaryText, secondaryContent, ratingCount } = tmp6);
   const obj3 = { style: createCacheKey().statCard, accessible: true, accessibilityRole: "text", accessibilityLabel: tmp6.accessibilityLabel, children: null };

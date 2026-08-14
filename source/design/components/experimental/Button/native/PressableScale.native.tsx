@@ -1,9 +1,9 @@
-// Module ID: 8717
-// Function ID: 8718
+// Module ID: 8731
+// Function ID: 8732
 // Name: PressableScale
-// Dependencies: [109, 19, 17, 21, 4083, 4760, 2]
+// Dependencies: [109, 19, 17, 21, 4083, 4782, 2]
 
-// Module 8717 (PressableScale)
+// Module 8731 (PressableScale)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -23,7 +23,7 @@ const forwardRefResult = importAllResult.forwardRef((scaleAmountInPx, ref) => {
   const merged = Object.assign(scaleAmountInPx, Object.create(null));
   let obj = require(4083);
   const sharedValue = obj.useSharedValue(0);
-  const buttonPressAnimationProps = require(4760) /* styleProperties */.useButtonPressAnimationProps(sharedValue, num, scaleAmountInPx.onLayout, onPressIn, onPressOut);
+  const buttonPressAnimationProps = require(4782) /* styleProperties */.useButtonPressAnimationProps(sharedValue, num, scaleAmountInPx.onLayout, onPressIn, onPressOut);
   obj = {};
   const merged1 = Object.assign(callback(buttonPressAnimationProps, closure_2));
   const merged2 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15512
+// Function ID: 15513
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [19, 17, 21, 4342, 712, 5199, 4168, 15495, 15496, 15497, 11720, 5308, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5220, 4168, 15513, 15514, 15515, 11736, 5329, 2]
 // Exports: default
 
-// Module 15494 (GuildsBarGuildJoinRequestBadge)
+// Module 15512 (GuildsBarGuildJoinRequestBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -23,15 +23,15 @@ export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
   joinRequestState = joinRequestState.joinRequestState;
   const tmp = createCacheKey();
   if (require(4168) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp4 = importDefault(15495);
+    let tmp4 = importDefault(15513);
   } else if (tmp2(4168).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp4 = importDefault(15496);
+    tmp4 = importDefault(15514);
   } else if (tmp2(4168).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp4 = importDefault(15497);
+    tmp4 = importDefault(15515);
   } else {
     tmp4 = null;
     if (tmp2(4168).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp4 = importDefault(11720);
+      tmp4 = importDefault(11736);
     }
   }
   let tmp9 = null;
@@ -42,7 +42,7 @@ export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
     obj = { source: null, style: null };
     obj[0] = tmp4;
     obj[1] = tmp.badgeImage;
-    obj[2] = jsx(importDefault(5308), { source: null, style: null });
+    obj[2] = jsx(importDefault(5329), { source: null, style: null });
     tmp9 = <View source={null} style={null} />;
   }
   return tmp9;

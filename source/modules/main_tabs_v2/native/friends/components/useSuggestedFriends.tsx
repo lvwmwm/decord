@@ -1,10 +1,10 @@
-// Module ID: 15248
-// Function ID: 15249
+// Module ID: 15262
+// Function ID: 15263
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 7169, 12117, 647, 12, 4187, 2]
+// Dependencies: [32, 19, 7191, 12135, 647, 12, 4187, 2]
 // Exports: default
 
-// Module 15248 (useSuggestedFriends)
+// Module 15262 (useSuggestedFriends)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import initialize from "initialize";

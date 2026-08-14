@@ -1,10 +1,10 @@
-// Module ID: 4794
-// Function ID: 4795
+// Module ID: 4816
+// Function ID: 4817
 // Name: getSoundmojiRenderingExperiment
 // Dependencies: [1471, 2]
 // Exports: getSoundmojiRenderingExperiment, useSoundmojiRenderingExperiment
 
-// Module 4794 (getSoundmojiRenderingExperiment)
+// Module 4816 (getSoundmojiRenderingExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

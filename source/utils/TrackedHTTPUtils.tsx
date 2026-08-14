@@ -1,8 +1,8 @@
-// Module ID: 5168
-// Function ID: 5169
+// Module ID: 4562
+// Function ID: 4563
 // Dependencies: [109, 698, 530, 2]
 
-// Module 5168
+// Module 4562
 import _objectWithoutProperties from "_objectWithoutProperties";
 
 const require = arg1;

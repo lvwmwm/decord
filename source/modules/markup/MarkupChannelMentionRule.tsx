@@ -1,10 +1,10 @@
-// Module ID: 4785
-// Function ID: 4786
+// Module ID: 4807
+// Function ID: 4808
 // Name: getChannel
-// Dependencies: [1981, 1391, 1910, 3989, 3998, 1922, 676, 1903, 1435, 1236, 4786, 4527, 4535, 4787, 4536, 4784, 4060, 2]
+// Dependencies: [1981, 1391, 1910, 3989, 3998, 1922, 676, 1903, 1435, 1236, 4808, 4527, 4535, 4809, 4536, 4806, 4060, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 4785 (getChannel)
+// Module 4807 (getChannel)
 import isSubscriptionGated from "isSubscriptionGated";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -19,8 +19,8 @@ const require = arg1;
 function getChannel(id, arr) {
   const _require = id;
   const channel = store.getChannel(id);
-  const isSubscriptionGated = _require(4786).getChannelRoleSubscriptionStatus(id, store, isSubscriptionGated, getUncachedChannelPermissions).isSubscriptionGated;
-  const obj2 = _require(4786);
+  const isSubscriptionGated = _require(4808).getChannelRoleSubscriptionStatus(id, store, isSubscriptionGated, getUncachedChannelPermissions).isSubscriptionGated;
+  const obj2 = _require(4808);
   let str = _require(4527).getMentionIconType(channel);
   if (str == null) {
     str = "text";
@@ -51,7 +51,7 @@ function getChannel(id, arr) {
     obj[3] = tmpResult.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
     obj[4] = channel.isPrivate();
     obj[5] = channel.isForumPost();
-    tmpResult = tmp(4787);
+    tmpResult = tmp(4809);
     obj[6] = tmpResult.isChannelTypeMentionable(channel.type);
     obj[7] = tmp(4536).canViewChannel(channel);
     obj[8] = isSubscriptionGated;

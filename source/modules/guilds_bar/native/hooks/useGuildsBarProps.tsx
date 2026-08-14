@@ -1,11 +1,11 @@
-// Module ID: 15488
-// Function ID: 15489
+// Module ID: 15506
+// Function ID: 15507
 // Name: findGuildSectionIndex
-// Dependencies: [19, 5035, 3990, 5881, 5882, 13073, 4682, 1990, 1910, 13081, 4165, 5196, 15479, 15480, 21, 15489, 15502, 15503, 15506, 15511, 15536, 15539, 15540, 15541, 15543, 15544, 15545, 15547, 15549, 4065, 712, 1628, 14398, 14407, 15508, 589, 13256, 15551, 15552, 1493, 15554, 8053, 2]
+// Dependencies: [19, 5057, 3990, 5902, 5903, 13091, 4704, 1990, 1910, 13099, 4165, 5217, 15497, 15498, 21, 15507, 15520, 15521, 15524, 15529, 15554, 15557, 15558, 15559, 15561, 15562, 15563, 15565, 15567, 4065, 712, 1628, 14411, 14420, 14639, 589, 13268, 15569, 15570, 1493, 15572, 8074, 2]
 // Exports: default
 
-// Module 15488 (findGuildSectionIndex)
-import module_15511 from "module_15511";
+// Module 15506 (findGuildSectionIndex)
+import module_15529 from "module_15529";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import initialize from "initialize";
 import processChannel from "processChannel";
@@ -126,7 +126,7 @@ export default function useGuildsBarProps(arg0) {
     const result = listInsets.set({ start: top, end: mobileQuestDockHeight + youBarTotalHeight });
   }, items);
   let num = 0;
-  if (importDefault(token[34])("useGuildsBarProps")) {
+  if (importDefault(token[34])()) {
     num = 1;
   }
   let tmp2Result = tmp2(tmp3[35]);
@@ -472,11 +472,11 @@ export default function useGuildsBarProps(arg0) {
         const obj = { children: null };
         obj[0] = items1.map((arg0) => {
           if ("unavailable-guilds" === arg0) {
-            return callback2(callback(15544), {}, arg0);
+            return callback2(callback(15562), {}, arg0);
           } else if ("empty-nux" === arg0) {
-            return callback2(callback(15545), {}, arg0);
+            return callback2(callback(15563), {}, arg0);
           } else if ("create-join-guild" === arg0) {
-            return callback2(callback(15547), {}, arg0);
+            return callback2(callback(15565), {}, arg0);
           }
         });
         return memo1(callback(token[24]), obj);

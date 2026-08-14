@@ -1,9 +1,9 @@
-// Module ID: 6006
-// Function ID: 6007
+// Module ID: 6027
+// Function ID: 6028
 // Name: VoiceChannelEffectAnimationType
 // Dependencies: [2]
 
-// Module 6006 (VoiceChannelEffectAnimationType)
+// Module 6027 (VoiceChannelEffectAnimationType)
 const result = require("set").fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsConstants.tsx");
 
 export const VoiceChannelEffectAnimationType = { PREMIUM: 0, [0]: "PREMIUM", BASIC: 1, [1]: "BASIC" };

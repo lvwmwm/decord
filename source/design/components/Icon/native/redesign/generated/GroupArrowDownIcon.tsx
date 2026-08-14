@@ -1,10 +1,10 @@
-// Module ID: 10769
-// Function ID: 10770
+// Module ID: 10785
+// Function ID: 10786
 // Name: GroupArrowDownIcon
-// Dependencies: [19, 21, 712, 4064, 10770, 2]
+// Dependencies: [19, 21, 712, 4064, 10786, 2]
 // Exports: GroupArrowDownIcon
 
-// Module 10769 (GroupArrowDownIcon)
+// Module 10785 (GroupArrowDownIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const GroupArrowDownIcon = function GroupArrowDownIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10770) /* registerAsset */;
+  obj[0] = require(10786) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

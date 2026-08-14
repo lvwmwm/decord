@@ -1,10 +1,10 @@
-// Module ID: 13976
-// Function ID: 13977
+// Module ID: 13988
+// Function ID: 13989
 // Name: _updateBadgeSettings
-// Dependencies: [5, 676, 530, 709, 8842, 1208, 2]
+// Dependencies: [5, 676, 530, 709, 8856, 1208, 2]
 // Exports: updateBadgeSettings
 
-// Module 13976 (_updateBadgeSettings)
+// Module 13988 (_updateBadgeSettings)
 import module_1208 from "module_1208";
 import { Endpoints } from "ME";
 

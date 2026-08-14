@@ -1,8 +1,8 @@
-// Module ID: 10010
-// Function ID: 10011
-// Dependencies: [19, 17, 9971, 21, 4342, 712, 4338, 4679, 1297, 10011, 10012, 1236, 10013, 4887, 2]
+// Module ID: 10021
+// Function ID: 10022
+// Dependencies: [19, 17, 9982, 21, 4342, 712, 4338, 4701, 1297, 10022, 10023, 1236, 10024, 4909, 2]
 
-// Module 10010
+// Module 10021
 import { View } from "get ActivityIndicator";
 import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";
 import jsxProd from "jsxProd";
@@ -51,13 +51,13 @@ const memoResult = importAllResult.memo((withDescription) => {
   obj = { style: tmp.headline, children: null };
   obj = { style: tmp.label, lineClamp: 1, variant: "text-md/bold", color: "mobile-text-heading-primary", children: stickerPack.name };
   const items = [callback(require(4338) /* Text */.Text, obj), , ];
-  let obj3 = require(4679) /* getStickerExtensionFromFormatType */;
+  let obj3 = require(4701) /* getStickerExtensionFromFormatType */;
   let result = obj3.isStickerPackAnimated(stickerPack);
   if (result) {
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.iconContainer;
     const obj2 = { source: null, style: null, size: null, color: null };
-    obj2[0] = importDefault(10011);
+    obj2[0] = importDefault(10022);
     obj2[1] = tmp.animatedIcon;
     obj2[2] = tmp6(1297).Icon.Sizes.EXTRA_SMALL;
     obj2[3] = tmp.icon.color;
@@ -67,7 +67,7 @@ const memoResult = importAllResult.memo((withDescription) => {
   items[1] = result;
   obj3 = { style: tmp.iconContainer, children: null };
   const obj4 = { source: null, style: null, size: null, color: null };
-  obj4[0] = importDefault(10012);
+  obj4[0] = importDefault(10023);
   obj4[1] = tmp.premiumIcon;
   obj4[2] = require(1297) /* Button */.Icon.Sizes.EXTRA_SMALL;
   obj4[3] = tmp.icon.color;
@@ -96,7 +96,7 @@ const memoResult = importAllResult.memo((withDescription) => {
     const obj9 = { stickerPack: null, containerStyle: null, style: null };
     obj9[0] = stickerPack;
     ({ bannerContainer: obj13[1], banner: obj13[2] } = tmp);
-    withBanner = tmp4(importDefault(10013), obj9);
+    withBanner = tmp4(importDefault(10024), obj9);
   }
   const children = [withBanner, ];
   if (null != onPress) {
@@ -105,7 +105,7 @@ const memoResult = importAllResult.memo((withDescription) => {
     obj10[0] = items3;
     obj10[1] = onPress;
     obj10[3] = tmp2Result;
-    let tmp4Result = tmp4(tmp6(4887).PressableOpacity, obj10);
+    let tmp4Result = tmp4(tmp6(4909).PressableOpacity, obj10);
   } else {
     const obj11 = { style: null, children: null };
     const items4 = [tmp.section, style];

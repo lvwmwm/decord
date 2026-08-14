@@ -1,7 +1,7 @@
 // Module ID: 4007
 // Function ID: 4008
 // Name: getPremiumPlanItem
-// Dependencies: [32, 19, 4008, 1922, 4009, 4010, 4012, 4013, 676, 1924, 4021, 505, 3, 4022, 4019, 1945, 38, 1236, 2885, 3943, 4031, 4052, 5896, 4020, 12797, 687, 589, 10380, 4237, 13396, 7063, 1938, 1940, 8748, 2]
+// Dependencies: [32, 19, 4008, 1922, 4009, 4010, 4012, 4013, 676, 1924, 4021, 505, 3, 4022, 4019, 1945, 38, 1236, 2885, 3943, 4031, 4052, 5917, 4020, 12815, 687, 589, 10394, 4237, 13408, 7085, 1938, 1940, 8762, 2]
 // Exports: calculateYearlyPlanDollarSavingsAmount, calculateYearlyPlanMonthlyRateAmount, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, experimentalGetPrice, extendDateWithUnconsumedFractionalPremium, formatInterval, formatIntervalDuration, formatPriceString, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getExternalSubscriptionMethodUrl, getFormattedPlanPriceFromInvoice, getFormattedRateForPlan, getFractionalPremiumUnitsHours, getFractionalPremiumUnitsHoursFromSkuIds, getGuildBoostPlanItem, getInterval, getIntervalForInvoice, getIntervalString, getIntervalStringAsNoun, getItemsFromNewAdditionalPlans, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getItemsWithoutPremiumPlanItem, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanItem, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumType, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBaseSubscriptionCanceled, isBoostOnlySubscription, isDiscountOffer, isNewUser, isNitroLockedState, isPremiumBaseSubscriptionPlan, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumGuildSubscriptionPlan, isPremiumSubscriptionPlan, isPrepaidPaymentSource, isSubscriptionPrepaidPaymentSource, isSubscriptionStatusFailedPayment, isSwitchingPlansDisabled, isTrialOffer, subscriptionHasPremiumGuildPlan, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState, withContextPlanPrices
 
 // Module 4007 (getPremiumPlanItem)
@@ -63,17 +63,17 @@ function getPremiumPlanItem(subscription) {
   const items = subscription.items;
   return items.find((planId) => set.has(planId.planId));
 }
-function getDefaultPrice(PREMIUM_MONTH_TIER_2, arg1, flag, currency, arg4) {
+function getDefaultPrice(PREMIUM_MONTH_TIER_2, arg1, flag, currency, flag2) {
   flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  let flag2 = flag;
+  flag2 = flag;
   if (flag === undefined) {
     flag2 = false;
   }
-  let flag3 = arg4;
-  if (arg4 === undefined) {
+  let flag3 = flag2;
+  if (flag2 === undefined) {
     flag3 = true;
   }
   let paymentSourceId = store.defaultPaymentSourceId;
@@ -656,7 +656,7 @@ function getPlanDescription(arg0) {
   const tmp4 = getPrice(dependencyMap3[planId].id, false, false, obj, true);
   const interval = tmp.interval;
   const tmp5 = planIdsForSkus;
-  let obj1 = planIdsForSkus(5896);
+  let obj1 = planIdsForSkus(5917);
   if (constants7.MONTH === interval) {
     const intl2 = tmp5(1236).intl;
     let stringResult = intl2.string(tmp5(1236).t.FPybU7);
@@ -1296,7 +1296,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       tmp6 = tmp;
     }
   }
-  const formatPrice = require(5896) /* formatSingleCurrencyPrice */.formatPrice;
+  const formatPrice = require(5917) /* formatSingleCurrencyPrice */.formatPrice;
   if (flag) {
     const invoiceItems = tmp6.invoiceItems;
     const found = invoiceItems.filter((subscriptionPlanId) => set.has(subscriptionPlanId.subscriptionPlanId));
@@ -1619,7 +1619,7 @@ function getUnactivatedFractionalPremiumDurationString(unactivatedUnits) {
       obj[0] = require(1236) /* getSystemLocale */.t.fYmirx;
       obj[1] = require(1236) /* getSystemLocale */.t["C3RO+g"];
       obj[2] = require(1236) /* getSystemLocale */.t.r77oHc;
-      const obj2 = require(12797) /* roundFPCountdownUnits */;
+      const obj2 = require(12815) /* roundFPCountdownUnits */;
       const result = obj2.roundFPCountdownUnits(require(4031) /* resetCache */.diffAsUnits(0, reduced * importDefault(687).Millis.HOUR));
       const obj3 = require(4031) /* resetCache */;
       return require(4031) /* resetCache */.unitsAsStrings(result, obj);
@@ -1696,26 +1696,29 @@ function isPremiumGuildSubscriptionCanceled(subscription) {
   }
   return tmp3;
 }
-function getFormattedPriceForPlan(id, arg1, arg2, flag) {
+function getFormattedPriceForPlan(id, arg1, arg2, flag, flag2) {
   if (flag === undefined) {
     flag = false;
   }
+  if (flag2 === undefined) {
+    flag2 = true;
+  }
   if (null != arg1) {
     try {
-      let tmp5 = getPrice(id.id, false, flag, arg1);
+      let tmp7 = getPrice(id.id, false, flag, arg1, flag2);
     } catch (err) {
-      tmp5 = getDefaultPrice(tmp.id, false, tmp3);
+      tmp7 = getDefaultPrice(tmp.id, false, tmp3, undefined, tmp2);
     }
   } else {
-    tmp5 = getDefaultPrice(id.id, false, flag);
+    tmp7 = getDefaultPrice(id.id, false, flag, undefined, flag2);
   }
-  const formatPriceResult = require(5896) /* formatSingleCurrencyPrice */.formatPrice(tmp5.amount, tmp5.currency);
-  let tmp10 = id.currency !== constants8.USD;
-  if (tmp10) {
-    tmp10 = true === arg2;
+  const formatPriceResult = require(5917) /* formatSingleCurrencyPrice */.formatPrice(tmp7.amount, tmp7.currency);
+  let tmp15 = id.currency !== constants8.USD;
+  if (tmp15) {
+    tmp15 = true === arg2;
   }
   let combined = formatPriceResult;
-  if (tmp10) {
+  if (tmp15) {
     combined = formatPriceResult.concat("*");
   }
   return combined;
@@ -1962,7 +1965,7 @@ function formatTrialCtaIntervalDuration(intervalType) {
   if (num === undefined) {
     num = 1;
   }
-  let obj = require(5896) /* formatSingleCurrencyPrice */;
+  let obj = require(5917) /* formatSingleCurrencyPrice */;
   const formatPriceResult = obj.formatPrice(0, getDefaultCurrency(), { maximumFractionDigits: 0, minimumFractionDigits: 0 });
   if (constants7.DAY === MONTH) {
     if (num >= 7) {
@@ -2042,7 +2045,7 @@ function getItemsWithUpsertedPlanIdForGroup(renewalMutations, basePlanId, arg2, 
     obj[0] = basePlanId;
     obj[1] = closure_31;
     obj[1] = obj;
-    const checkoutError = new _require(10380).CheckoutError(obj);
+    const checkoutError = new _require(10394).CheckoutError(obj);
     throw checkoutError;
   }
 }
@@ -2128,7 +2131,7 @@ function isNewUser(createdAt) {
   return tmp;
 }
 function formatPriceString(amount) {
-  const obj = require(5896) /* formatSingleCurrencyPrice */;
+  const obj = require(5917) /* formatSingleCurrencyPrice */;
   if (constants7.MONTH === arg1) {
     const intl2 = tmp(1236).intl;
     let stringResult = intl2.string(tmp(1236).t.FPybU7);
@@ -2140,7 +2143,7 @@ function formatPriceString(amount) {
     const error = new Error("Unexpected interval");
     throw error;
   }
-  return "" + require(5896) /* formatSingleCurrencyPrice */.formatPrice(amount.amount, amount.currency) + "/" + stringResult;
+  return "" + require(5917) /* formatSingleCurrencyPrice */.formatPrice(amount.amount, amount.currency) + "/" + stringResult;
 }
 function castPremiumSubscriptionAsSkuId(skuIdForPlan) {
   return skuIdForPlan;
@@ -2493,86 +2496,86 @@ obj = {
   getDaysSincePremium,
   getDaysRemainingUntilSubscriptionCurrentPeriodEnds,
   canUseAnimatedEmojis(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.ANIMATED_EMOJIS, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.ANIMATED_EMOJIS, currentUser);
   },
   canUseEmojisEverywhere(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.EMOJIS_EVERYWHERE, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.EMOJIS_EVERYWHERE, currentUser);
   },
   canUseSoundboardEverywhere(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.SOUNDBOARD_EVERYWHERE, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.SOUNDBOARD_EVERYWHERE, currentUser);
   },
   canUseCustomCallSounds(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.CUSTOM_CALL_SOUNDS, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.CUSTOM_CALL_SOUNDS, currentUser);
   },
   canUploadLargeFiles(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.UPLOAD_LARGE_FILES, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.UPLOAD_LARGE_FILES, currentUser);
   },
   canUseBadges(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.PROFILE_BADGES, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.PROFILE_BADGES, currentUser);
   },
   canUseHighVideoUploadQuality(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
   },
   canEditDiscriminator(stateFromStores) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.CUSTOM_DISCRIMINATOR, stateFromStores);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.CUSTOM_DISCRIMINATOR, stateFromStores);
   },
   hasBoostDiscount(stateFromStores) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.BOOST_DISCOUNT, stateFromStores);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.BOOST_DISCOUNT, stateFromStores);
   },
   canUseAnimatedAvatar(c3) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.ANIMATED_AVATAR, c3);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.ANIMATED_AVATAR, c3);
   },
   canInstallPremiumApplications(isPremiumWithFractionalPremiumOnly) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
   },
   canUseIncreasedMessageLength(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.INCREASED_MESSAGE_LENGTH, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.INCREASED_MESSAGE_LENGTH, currentUser);
   },
   canUseIncreasedGuildCap(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.INCREASED_GUILD_LIMIT, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.INCREASED_GUILD_LIMIT, currentUser);
   },
   canRedeemPremiumPerks(isPremiumWithFractionalPremiumOnly) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
   },
   canUsePremiumProfileCustomization(isPremiumWithFractionalPremiumOnly) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.PROFILE_PREMIUM_FEATURES, isPremiumWithFractionalPremiumOnly);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.PROFILE_PREMIUM_FEATURES, isPremiumWithFractionalPremiumOnly);
   },
   canUsePremiumAppIcons(c0) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.APP_ICONS, c0);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.APP_ICONS, c0);
   },
   canUsePremiumGuildMemberProfile(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
   },
   canUseClientThemes(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.CLIENT_THEMES, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.CLIENT_THEMES, currentUser);
   },
   canStreamQuality(HIGH, user) {
     if (HIGH === obj.HIGH) {
-      let canUserUseResult = require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.STREAM_HIGH_QUALITY, user);
-      const obj2 = require(13396) /* ProductCatalogFeature */;
+      let canUserUseResult = require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.STREAM_HIGH_QUALITY, user);
+      const obj2 = require(13408) /* ProductCatalogFeature */;
     } else {
-      obj = require(13396) /* ProductCatalogFeature */;
-      canUserUseResult = obj.canUserUse(require(13396) /* ProductCatalogFeature */.STREAM_MID_QUALITY, user);
+      obj = require(13408) /* ProductCatalogFeature */;
+      canUserUseResult = obj.canUserUse(require(13408) /* ProductCatalogFeature */.STREAM_MID_QUALITY, user);
     }
     return canUserUseResult;
   },
   canUseQuestOrbMultiplier(perks) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.QUEST_ORB_MULTIPLIER, perks);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.QUEST_ORB_MULTIPLIER, perks);
   },
   hasFreeBoosts(stateFromStores) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.FREE_BOOSTS, stateFromStores);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.FREE_BOOSTS, stateFromStores);
   },
   canUseCustomStickersEverywhere(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.STICKERS_EVERYWHERE, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.STICKERS_EVERYWHERE, currentUser);
   },
   canUseCustomBackgrounds(currentUser) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.VIDEO_FILTER_ASSETS, currentUser);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.VIDEO_FILTER_ASSETS, currentUser);
   },
   canUseCollectibles(user) {
-    return require(13396) /* ProductCatalogFeature */.canUserUse(require(13396) /* ProductCatalogFeature */.COLLECTIBLES, user);
+    return require(13408) /* ProductCatalogFeature */.canUserUse(require(13408) /* ProductCatalogFeature */.COLLECTIBLES, user);
   },
   canUseMonthlyOrbs(stateFromStores) {
-    let hasPerkResult = require(7063) /* apexExperiment */.getIsCrepeEnabled("canUseMonthlyOrbs");
+    let hasPerkResult = require(7085) /* apexExperiment */.getIsCrepeEnabled("canUseMonthlyOrbs");
     if (hasPerkResult) {
       let perks;
       if (stateFromStores != null) {
@@ -2584,7 +2587,7 @@ obj = {
     return hasPerkResult;
   },
   canUseShopDiscounts(currentUser) {
-    let isCrepeEnabled = require(7063) /* apexExperiment */.getIsCrepeEnabled("canUseShopDiscounts");
+    let isCrepeEnabled = require(7085) /* apexExperiment */.getIsCrepeEnabled("canUseShopDiscounts");
     if (isCrepeEnabled) {
       let tmpResult = tmp(1938);
       let perks;
@@ -2594,13 +2597,13 @@ obj = {
       isCrepeEnabled = tmpResult.hasPerk(perks, tmp(1940).Perk.SHOP_DISCOUNTS);
     }
     if (!isCrepeEnabled) {
-      tmpResult = tmp(13396);
-      isCrepeEnabled = tmpResult.canUserUse(tmp(13396).COLLECTIBLES, currentUser);
+      tmpResult = tmp(13408);
+      isCrepeEnabled = tmpResult.canUserUse(tmp(13408).COLLECTIBLES, currentUser);
     }
     return isCrepeEnabled;
   },
   canUseMoreQuestOrbs(perks) {
-    let isCrepeEnabled = require(7063) /* apexExperiment */.getIsCrepeEnabled("canUseMoreQuestOrbs");
+    let isCrepeEnabled = require(7085) /* apexExperiment */.getIsCrepeEnabled("canUseMoreQuestOrbs");
     if (isCrepeEnabled) {
       let tmpResult = tmp(1938);
       perks = undefined;
@@ -2610,8 +2613,8 @@ obj = {
       isCrepeEnabled = tmpResult.hasPerk(perks, tmp(1940).Perk.MORE_QUEST_ORBS);
     }
     if (!isCrepeEnabled) {
-      tmpResult = tmp(13396);
-      isCrepeEnabled = tmpResult.canUserUse(tmp(13396).QUEST_ORB_MULTIPLIER, perks);
+      tmpResult = tmp(13408);
+      isCrepeEnabled = tmpResult.canUserUse(tmp(13408).QUEST_ORB_MULTIPLIER, perks);
     }
     return isCrepeEnabled;
   },
@@ -2918,9 +2921,9 @@ export const getPlanDescriptionFromInvoice = function getPlanDescriptionFromInvo
   } else {
     amount = result.amount;
   }
-  const obj3 = require(5896) /* formatSingleCurrencyPrice */;
+  const obj3 = require(5917) /* formatSingleCurrencyPrice */;
   const tmp4 = getPlanDescription;
-  obj[2] = obj3.formatRate(require(5896) /* formatSingleCurrencyPrice */.formatPrice(amount, renewalInvoicePreview.currency), value.interval, value.intervalCount);
+  obj[2] = obj3.formatRate(require(5917) /* formatSingleCurrencyPrice */.formatPrice(amount, renewalInvoicePreview.currency), value.interval, value.intervalCount);
   obj[3] = includePremiumGuilds;
   obj[4] = flag;
   obj[5] = activeDiscountInfo;
@@ -3145,7 +3148,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
       }
       let formatPriceResult;
       if (null != amount) {
-        let obj = require(5896) /* formatSingleCurrencyPrice */;
+        let obj = require(5917) /* formatSingleCurrencyPrice */;
         formatPriceResult = obj.formatPrice(amount, subscription.currency);
       }
       tmp10 = formatPriceResult;
@@ -3154,7 +3157,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
   }
   let str = "";
   if (null != tmp10) {
-    let obj1 = require(5896) /* formatSingleCurrencyPrice */;
+    let obj1 = require(5917) /* formatSingleCurrencyPrice */;
     str = obj1.formatRate(tmp10, value.interval, value.intervalCount);
   }
   let flag3;
@@ -3296,7 +3299,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
 export { getFormattedPriceForPlan };
 export const getFormattedRateForPlan = function getFormattedRateForPlan(interval) {
   const tmp = getFormattedPriceForPlan(interval, arg1, arg2);
-  return require(5896) /* formatSingleCurrencyPrice */.formatRate(tmp, interval.interval, interval.intervalCount);
+  return require(5917) /* formatSingleCurrencyPrice */.formatRate(tmp, interval.interval, interval.intervalCount);
 };
 export { getPlanIdFromInvoice };
 export { getStatusFromInvoice };
@@ -3313,8 +3316,8 @@ export const getFormattedPlanPriceFromInvoice = function getFormattedPlanPriceFr
   } else {
     amount = result.amount;
   }
-  const obj2 = require(5896) /* formatSingleCurrencyPrice */;
-  return obj2.formatRate(require(5896) /* formatSingleCurrencyPrice */.formatPrice(amount, findInvoiceItemByPlanId.currency), id.interval, id.intervalCount);
+  const obj2 = require(5917) /* formatSingleCurrencyPrice */;
+  return obj2.formatRate(require(5917) /* formatSingleCurrencyPrice */.formatPrice(amount, findInvoiceItemByPlanId.currency), id.interval, id.intervalCount);
 };
 export { getPremiumGuildIntervalPrice };
 export { getBillingReviewSubheader };

@@ -1,10 +1,10 @@
-// Module ID: 6002
-// Function ID: 6003
+// Module ID: 6023
+// Function ID: 6024
 // Name: hasPermissionToPlaySound
-// Dependencies: [5, 1340, 1395, 3989, 1922, 4790, 4791, 676, 1338, 4034, 4007, 6003, 5996, 4797, 6004, 709, 6031, 6032, 6033, 647, 4187, 1377, 1374, 698, 4539, 2]
+// Dependencies: [5, 1340, 1395, 3989, 1922, 4812, 4813, 676, 1338, 4034, 4007, 6024, 6017, 4819, 6025, 709, 6052, 6053, 6054, 647, 4187, 1377, 1374, 698, 4549, 2]
 // Exports: getAmplitudinalSoundboardVolume, hasSetAnyCustomJoinSound, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 6002 (hasPermissionToPlaySound)
+// Module 6023 (hasPermissionToPlaySound)
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { SILENT_JOIN_LEAVE_CHANNEL_TYPES as closure_5 } from "createChannelRecord";
@@ -88,7 +88,7 @@ function canUseSoundboardSound(closure_0, closure_1, channel) {
   return result;
 }
 function canMakeSound(channel) {
-  let obj = require(6003) /* getMuteStates */;
+  let obj = require(6024) /* getMuteStates */;
   obj = { channel };
   const muteStates = obj.getMuteStates(obj);
   const mute = muteStates.mute;
@@ -237,10 +237,10 @@ export { hasPermissionToPlaySound };
 export { canUseSoundboardSound };
 export { canMakeSound };
 export const playSound = function playSound(soundId, channelId) {
-  let obj = require(5996) /* _fetchDefaultSoundsFromApi2 */;
-  obj.playSoundLocally(channelId, soundId, require(4797) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
-  const result = require(6004) /* VoiceChannelEffectSentLocation */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
-  const obj2 = require(6004) /* VoiceChannelEffectSentLocation */;
+  let obj = require(6017) /* _fetchDefaultSoundsFromApi2 */;
+  obj.playSoundLocally(channelId, soundId, require(4819) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
+  const result = require(6025) /* VoiceChannelEffectSentLocation */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
+  const obj2 = require(6025) /* VoiceChannelEffectSentLocation */;
   obj = { type: "SOUNDBOARD_TRACK_USAGE", soundId: soundId.soundId };
   importDefault(709).dispatch(obj);
 };
@@ -362,7 +362,7 @@ export const trackCustomCallSoundExternallyDeleted = function trackCustomCallSou
 };
 export const trackSoundFavorited = function trackSoundFavorited(location) {
   const sound = location.sound;
-  let obj = importDefault(4539);
+  let obj = importDefault(4549);
   obj = { location: location.location, expression_type: ExpressionPickerViewType.SOUNDBOARD, expression_id: sound.soundId, expression_name: sound.name, expression_guild_id: sound.guildId };
   obj.trackWithMetadata(constants2.EXPRESSION_FAVORITED, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10483
-// Function ID: 10484
+// Module ID: 10499
+// Function ID: 10500
 // Name: error
-// Dependencies: [19, 17, 21, 4342, 712, 5368, 10484, 4338, 1236, 4755, 4550, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5389, 10500, 4338, 1236, 4777, 4572, 2]
 // Exports: default
 
-// Module 10483 (error)
+// Module 10499 (error)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function ErrorResult(error) {
   let obj = { bottom: true, style: tmp.container, children: null };
   obj = { style: tmp.inner, children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(10484);
+  obj[0] = importDefault(10500);
   obj[1] = tmp.image;
   const items = [callback(closure_3, obj), ];
   const obj1 = { style: tmp.text, variant: "text-md/medium", children: null };
@@ -53,9 +53,9 @@ export default function ErrorResult(error) {
     obj2[2] = function onPress() {
       return callback(table[10]).pop();
     };
-    tmp6Result = tmp6(tmp3(4755).Button, obj2);
+    tmp6Result = tmp6(tmp3(4777).Button, obj2);
   }
   items1[1] = tmp6Result;
   obj[2] = items1;
-  return closure_6(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_6(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

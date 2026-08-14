@@ -1,10 +1,10 @@
-// Module ID: 5958
-// Function ID: 5959
+// Module ID: 5979
+// Function ID: 5980
 // Name: resolveGoreSettingWithDefaults
 // Dependencies: [19, 1922, 676, 1306, 4040, 4047, 4034, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 5958 (resolveGoreSettingWithDefaults)
+// Module 5979 (resolveGoreSettingWithDefaults)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { HelpdeskArticles } from "ME";

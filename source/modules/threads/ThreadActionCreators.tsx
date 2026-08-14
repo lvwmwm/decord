@@ -1,9 +1,9 @@
-// Module ID: 7269
-// Function ID: 7270
+// Module ID: 7291
+// Function ID: 7292
 // Name: patchThread
-// Dependencies: [5, 1395, 1218, 1391, 3989, 7270, 3991, 7280, 676, 1398, 530, 709, 4683, 1236, 4539, 7281, 7282, 7285, 7286, 1370, 1402, 2]
+// Dependencies: [5, 1395, 1218, 1391, 3989, 7292, 3991, 7302, 676, 1398, 530, 709, 4705, 1236, 4549, 7303, 7304, 7307, 7308, 1370, 1402, 2]
 
-// Module 7269 (patchThread)
+// Module 7291 (patchThread)
 import listKey from "listKey";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
@@ -972,16 +972,16 @@ export default {
     })();
   },
   openThreadCreationForMobile(channel, id, Message) {
-    let obj = require(4539) /* collectGuildAnalyticsMetadata */;
+    let obj = require(4549) /* collectGuildAnalyticsMetadata */;
     obj = { location: Message, channel_id: channel.id, guild_id: channel.guild_id };
     obj.trackWithMetadata(constants.THREAD_CREATION_STARTED, obj);
     obj = { parentMessageId: id, isPrivate: false, location: Message };
-    importDefault(7281).changeThreadSettings(channel.id, obj);
+    importDefault(7303).changeThreadSettings(channel.id, obj);
     if (null == id) {
       const obj1 = { channelId: null, command: null, section: null };
       obj1[0] = channel.id;
-      require(7282) /* setActiveCommand */.setActiveCommand(obj1);
-      const tmpResult = require(7282) /* setActiveCommand */;
+      require(7304) /* setActiveCommand */.setActiveCommand(obj1);
+      const tmpResult = require(7304) /* setActiveCommand */;
     }
   },
   setNotificationSettings(channel, muteSettings) {

@@ -1,10 +1,10 @@
-// Module ID: 12382
-// Function ID: 12383
+// Module ID: 12400
+// Function ID: 12401
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 4364, 1218, 21, 4083, 4755, 4342, 712, 10917, 589, 4408, 4343, 8054, 4338, 1236, 2]
+// Dependencies: [19, 17, 4364, 1218, 21, 4083, 4777, 4342, 712, 10933, 589, 4408, 4343, 8075, 4338, 1236, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 12382 (VoicePanelStreamPreview)
+// Module 12400 (VoicePanelStreamPreview)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import reset from "reset";
@@ -56,7 +56,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   if (stream != null) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = stream(10917)(guildId, channelId, ownerId).previewUrl;
+  const previewUrl = stream(10933)(guildId, channelId, ownerId).previewUrl;
   let obj = mode(589);
   const items = [reset, fetchFingerprint];
   const items1 = [stream];
@@ -118,7 +118,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   const obj3 = { style: animatedStyle, layout, children: null };
   const tmp11 = closure_7;
   const tmp12 = closure_8;
-  const tmp4 = stream(10917);
+  const tmp4 = stream(10933);
   if (stateFromStores) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.ownStreamTextContainer;
@@ -138,7 +138,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     tmp16Result = tmp16(closure_9, obj6);
   }
   obj3[2] = tmp16Result;
-  items2[1] = callback(stream(8054), obj3);
+  items2[1] = callback(stream(8075), obj3);
   obj[5] = items2;
   return tmp11(tmp12, obj);
 };

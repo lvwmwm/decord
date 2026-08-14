@@ -1,10 +1,10 @@
-// Module ID: 9277
-// Function ID: 9278
+// Module ID: 9291
+// Function ID: 9292
 // Name: SecureFramesUserVerificationBottomSheet
-// Dependencies: [32, 19, 17, 4416, 1922, 9261, 676, 21, 4342, 712, 9265, 9278, 9240, 9267, 589, 9270, 8357, 4534, 9259, 9269, 9279, 9281, 4310, 4062, 4303, 1236, 5437, 5436, 5805, 4338, 9271, 4753, 4755, 2]
+// Dependencies: [32, 19, 17, 4416, 1922, 9275, 676, 21, 4342, 712, 9279, 9292, 9254, 9281, 589, 9284, 8379, 4534, 9273, 9283, 9293, 9295, 4310, 4062, 4303, 1236, 5458, 5457, 5826, 4338, 9285, 4775, 4777, 2]
 // Exports: default
 
-// Module 9277 (SecureFramesUserVerificationBottomSheet)
+// Module 9291 (SecureFramesUserVerificationBottomSheet)
 import Button from "Button";
 import trackRTCPanelViewed from "trackRTCPanelViewed";
 import get_ActivityIndicator from "getNickname";

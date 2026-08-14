@@ -1,10 +1,10 @@
-// Module ID: 12639
-// Function ID: 12640
+// Module ID: 12657
+// Function ID: 12658
 // Name: BetaTag
-// Dependencies: [19, 17, 6943, 21, 4342, 712, 4766, 691, 4338, 1236, 2]
+// Dependencies: [19, 17, 6964, 21, 4342, 712, 4788, 691, 4338, 1236, 2]
 // Exports: default
 
-// Module 12639 (BetaTag)
+// Module 12657 (BetaTag)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";
@@ -53,8 +53,8 @@ export default function BetaTag(gradient) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.oW0eUd);
     obj[4] = tmp3(require(4338) /* Text */.Text, obj);
-    let tmp3Result = tmp3(importDefault(4766), obj);
-    const tmp10 = importDefault(4766);
+    let tmp3Result = tmp3(importDefault(4788), obj);
+    const tmp10 = importDefault(4788);
   } else {
     obj = { style: null, children: null };
     const items2 = [tmp2.container, style];

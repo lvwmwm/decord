@@ -1,10 +1,10 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8048
+// Function ID: 8049
 // Name: FormSwitchRow
-// Dependencies: [32, 19, 17, 21, 4342, 500, 5407, 5427, 8025, 5413, 5808, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 500, 5428, 5448, 8046, 5434, 5829, 2]
 // Exports: default
 
-// Module 8027 (FormSwitchRow)
+// Module 8048 (FormSwitchRow)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -103,13 +103,13 @@ let closure_8 = createCacheKey.createStyles({ trailing: { flex: 1, flexDirection
 const result = require("get ActivityIndicator").fileFinishedImporting("design/void/Form/native/FormSwitchRow.tsx");
 
 export default function FormSwitchRowContainer(DEPRECATED_style) {
-  if (React.useContext(require(5413) /* context */.RedesignCompatContext)) {
+  if (React.useContext(require(5434) /* context */.RedesignCompatContext)) {
     let obj = { style: null, children: null };
     obj[0] = DEPRECATED_style.DEPRECATED_style;
     obj = { value: null, onValueChange: null };
     ({ value: obj3[0], onValueChange: obj3[1] } = DEPRECATED_style);
     const merged = Object.assign(DEPRECATED_style);
-    obj[1] = tmp3(require(5808) /* TableSwitchRow */.TableSwitchRow, obj);
+    obj[1] = tmp3(require(5829) /* TableSwitchRow */.TableSwitchRow, obj);
     let tmp3Result = tmp3(View, obj);
   } else {
     obj = {};

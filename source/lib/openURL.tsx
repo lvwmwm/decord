@@ -1,7 +1,7 @@
 // Module ID: 4052
 // Function ID: 4053
 // Name: _openURL
-// Dependencies: [5, 4053, 8988, 2007, 2]
+// Dependencies: [5, 4053, 9002, 2007, 2]
 // Exports: default
 
 // Module 4052 (_openURL)

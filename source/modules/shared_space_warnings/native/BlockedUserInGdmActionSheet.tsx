@@ -1,10 +1,10 @@
-// Module ID: 13064
-// Function ID: 13065
+// Module ID: 13082
+// Function ID: 13083
 // Name: getUserCalloutRowText
-// Dependencies: [19, 17, 1391, 1922, 13065, 676, 21, 4342, 712, 4338, 4534, 1236, 589, 1370, 1297, 11275, 9712, 4303, 4298, 698, 5804, 10314, 5807, 5414, 4755, 4310, 13066, 4355, 2]
+// Dependencies: [19, 17, 1391, 1922, 13083, 676, 21, 4342, 712, 4338, 4534, 1236, 589, 1370, 1297, 11291, 9723, 4303, 4298, 698, 5825, 10328, 5828, 5435, 4777, 4310, 13084, 4355, 2]
 // Exports: default
 
-// Module 13064 (getUserCalloutRowText)
+// Module 13082 (getUserCalloutRowText)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "CircleCheckIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -104,13 +104,13 @@ function UserCalloutAvatars(userIds) {
       obj[2] = REFRESH_MEDIUM_32;
       let tmp6 = callback(tmp(1297).Avatar, obj);
     } else {
-      tmp6 = callback(tmp(11275).UserIcon, {});
+      tmp6 = callback(tmp(11291).UserIcon, {});
     }
   } else {
     obj = { users: null, size: null };
     obj[0] = found;
     obj[1] = tmp(1297).AvatarSizes.REFRESH_MEDIUM_32;
-    return callback(tmp(9712).FacepileGroupDMAvatar, obj);
+    return callback(tmp(9723).FacepileGroupDMAvatar, obj);
   }
 }
 function BlockedUserInGDMDescription(arg0) {

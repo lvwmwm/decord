@@ -1,10 +1,10 @@
-// Module ID: 8236
-// Function ID: 8237
+// Module ID: 8257
+// Function ID: 8258
 // Name: useChangelog
-// Dependencies: [19, 1994, 4356, 1978, 647, 8237, 2]
+// Dependencies: [19, 1994, 4356, 1978, 647, 8258, 2]
 // Exports: useCurrentChangelog
 
-// Module 8236 (useChangelog)
+// Module 8257 (useChangelog)
 import noop from "noop";
 import _getSystemLocale from "_getSystemLocale";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";

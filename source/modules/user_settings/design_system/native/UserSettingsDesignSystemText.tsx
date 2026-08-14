@@ -1,10 +1,10 @@
-// Module ID: 14842
-// Function ID: 14843
+// Module ID: 14856
+// Function ID: 14857
 // Name: UserSettingsDesignSystemText
-// Dependencies: [19, 17, 21, 4065, 712, 4753, 5807, 4339, 5414, 4338, 2]
+// Dependencies: [19, 17, 21, 4065, 712, 4775, 5828, 4339, 5435, 4338, 2]
 // Exports: default
 
-// Module 14842 (UserSettingsDesignSystemText)
+// Module 14856 (UserSettingsDesignSystemText)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -29,11 +29,11 @@ export default function UserSettingsDesignSystemText() {
       obj[0] = arg0;
       obj[1] = arg0;
       obj[0] = callback2(callback(4338).Text, obj, arg0);
-      tmp = callback2(callback(5414).TableRow, obj, arg0);
+      tmp = callback2(callback(5435).TableRow, obj, arg0);
     }
     return tmp;
   });
-  obj[2] = jsx(require(5807) /* TableRowGroupTitle */.TableRowGroup, { title: "Text Variants", hasIcons: false, children: null });
-  obj[0] = jsx(require(4753) /* Stack */.Stack, { spacing: null, style: null, children: null });
+  obj[2] = jsx(require(5828) /* TableRowGroupTitle */.TableRowGroup, { title: "Text Variants", hasIcons: false, children: null });
+  obj[0] = jsx(require(4775) /* Stack */.Stack, { spacing: null, style: null, children: null });
   return <ScrollView spacing={null} style={null}>{null}</ScrollView>;
 };

@@ -1,10 +1,10 @@
-// Module ID: 7683
-// Function ID: 7684
+// Module ID: 7704
+// Function ID: 7705
 // Name: AccountCreditTier
-// Dependencies: [19, 17, 6908, 676, 21, 4342, 712, 4007, 1236, 2885, 5778, 4338, 589, 12, 2]
+// Dependencies: [19, 17, 6929, 676, 21, 4342, 712, 4007, 1236, 2885, 5799, 4338, 589, 12, 2]
 // Exports: default
 
-// Module 7683 (AccountCreditTier)
+// Module 7704 (AccountCreditTier)
 import "noop";
 import { View } from "get ActivityIndicator";
 import addEntitlement from "addEntitlement";
@@ -68,9 +68,9 @@ function AccountCreditTier(arg0) {
   obj1 = { style: items, children: null };
   items[1] = divider;
   obj2 = { size: null, skuId: null };
-  obj2[0] = require(5778) /* GameIcon */.GameIconSizes.SMALL;
+  obj2[0] = require(5799) /* GameIcon */.GameIconSizes.SMALL;
   obj2[1] = result;
-  const items1 = [callback(importDefault(5778), obj2), , ];
+  const items1 = [callback(importDefault(5799), obj2), , ];
   const obj3 = { style: tmp.textContainer, children: null };
   const obj4 = { style: tmp.headerText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl4 = tmp2(1236).intl;

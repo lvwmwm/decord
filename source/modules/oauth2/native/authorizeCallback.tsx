@@ -1,10 +1,10 @@
-// Module ID: 10596
-// Function ID: 10597
+// Module ID: 10612
+// Function ID: 10613
 // Name: authorizeCallback
-// Dependencies: [10595, 4550, 10483, 2007, 1486, 10597, 4308, 691, 4058, 2]
+// Dependencies: [10611, 4572, 10499, 2007, 1486, 10613, 4308, 691, 4058, 2]
 // Exports: default
 
-// Module 10596 (authorizeCallback)
+// Module 10612 (authorizeCallback)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 
 let c3;
@@ -33,15 +33,15 @@ export default function authorizeCallback(arg0) {
       if (tmp8Result.isDiscordHostname(host)) {
         if (null != pathname) {
           if (null != pathname.match(closure_5)) {
-            tmp8Result = tmp8(4550);
+            tmp8Result = tmp8(4572);
             let obj = { application: null, guild: null };
             obj[0] = tmp;
             obj[1] = tmp2;
-            tmp8Result.pushLazy(require(2007) /* asyncRequireImpl */(10597, tmp9.paths), obj, closure_3);
+            tmp8Result.pushLazy(require(2007) /* asyncRequireImpl */(10613, tmp9.paths), obj, closure_3);
           } else if (null != pathname.match(closure_6)) {
             if (!canceled) {
               let str;
-              const tmp8Result1 = tmp8(4550);
+              const tmp8Result1 = tmp8(4572);
               if (searchParams != null) {
                 str = "error_description";
                 const str2 = searchParams.get("error_description");
@@ -61,8 +61,8 @@ export default function authorizeCallback(arg0) {
               }
               obj = { error: null };
               obj[0] = str;
-              tmp8Result1.pushLazy(require(2007) /* asyncRequireImpl */(10483, tmp9.paths), obj, closure_4);
-              const tmp17 = require(2007) /* asyncRequireImpl */(10483, tmp9.paths);
+              tmp8Result1.pushLazy(require(2007) /* asyncRequireImpl */(10499, tmp9.paths), obj, closure_4);
+              const tmp17 = require(2007) /* asyncRequireImpl */(10499, tmp9.paths);
             }
           }
         }
@@ -81,7 +81,7 @@ export default function authorizeCallback(arg0) {
     importDefault(4058).openURL(_location, SAFARI);
     const tmp8Result2 = importDefault(4058);
   } else if (!canceled) {
-    obj = importDefault(4550);
-    obj.pushLazy(require(2007) /* asyncRequireImpl */(10483, dependencyMap.paths), undefined, closure_4);
+    obj = importDefault(4572);
+    obj.pushLazy(require(2007) /* asyncRequireImpl */(10499, dependencyMap.paths), undefined, closure_4);
   }
 };

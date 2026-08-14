@@ -1,10 +1,10 @@
-// Module ID: 9049
-// Function ID: 9050
+// Module ID: 9063
+// Function ID: 9064
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 9050, 676, 21, 9051, 5378, 4338, 1236, 2]
+// Dependencies: [19, 17, 9064, 676, 21, 9065, 5399, 4338, 1236, 2]
 // Exports: default
 
-// Module 9049 (CreateChannelTypeDescription)
+// Module 9063 (CreateChannelTypeDescription)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "handleUpdateStart";
@@ -19,12 +19,12 @@ export default function CreateChannelTypeDescription(guildId) {
   let guildProfile;
   guildId = guildId.guildId;
   fetchGuildProfile = undefined;
-  let obj = fetchGuildProfile(9051);
+  let obj = fetchGuildProfile(9065);
   guildProfile = obj.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile);
   let hasItem = null != guildProfile;
   if (hasItem) {
-    const VISIBLE = tmp(5378).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(5399).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = !tmp5;

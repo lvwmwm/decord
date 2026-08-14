@@ -1,9 +1,9 @@
-// Module ID: 9955
-// Function ID: 9956
+// Module ID: 9966
+// Function ID: 9967
 // Name: items
-// Dependencies: [676, 9956, 1236, 2]
+// Dependencies: [676, 9967, 1236, 2]
 
-// Module 9955 (items)
+// Module 9966 (items)
 import { TOKEN_REGEX } from "ME";
 
 const items = [
@@ -13,13 +13,13 @@ const items = [
         if (null == getGuildId.getGuildId()) {
           return false;
         } else {
-          const extractEveryoneRoleResult = importDefault(9956).extractEveryoneRole(arg0, getGuildId);
+          const extractEveryoneRoleResult = importDefault(9967).extractEveryoneRole(arg0, getGuildId);
           if (null == extractEveryoneRoleResult) {
             return false;
           } else {
-            let tmp8Result = tmp8(9956);
+            let tmp8Result = tmp8(9967);
             if (tmp8Result.shouldShowEveryoneGuard(extractEveryoneRoleResult, getGuildId)) {
-              tmp8Result = tmp8(9956);
+              tmp8Result = tmp8(9967);
               const everyoneMemberCountResult = tmp8Result.everyoneMemberCount(extractEveryoneRoleResult, getGuildId);
               const _Math = Math;
               const _Math2 = Math;
@@ -43,14 +43,14 @@ const items = [
               return false;
             }
           }
-          const obj5 = importDefault(9956);
+          const obj5 = importDefault(9967);
         }
       } else {
         return false;
       }
     },
     analyticsType: "@Everyone Warning",
-    animation: "accessibilityRole"
+    animation: "call"
   },
   {
     check(arg0) {

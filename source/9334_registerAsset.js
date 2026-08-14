@@ -1,0 +1,10 @@
+// Module ID: 9334
+// Function ID: 9335
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 9334 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "4f276c9d37ed9e072482570ea4ab1799", name: "ic_discoverable_guild_badge_premium_24px", type: "png" });

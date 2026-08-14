@@ -1,8 +1,8 @@
-// Module ID: 15540
-// Function ID: 15541
-// Dependencies: [19, 4166, 1434, 4165, 5196, 21, 4342, 712, 15490, 4065, 589, 5819, 15524, 15492, 4168, 8468, 15504, 15532, 15481, 4083, 15512, 5308, 2]
+// Module ID: 15558
+// Function ID: 15559
+// Dependencies: [19, 4166, 1434, 4165, 5217, 21, 4342, 712, 15508, 4065, 589, 5840, 15542, 15510, 4168, 8490, 15522, 15550, 15499, 4083, 15530, 5329, 2]
 
-// Module 15540
+// Module 15558
 import importAllResult from "module_4083";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";

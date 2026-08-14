@@ -1,9 +1,9 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 17014
+// Function ID: 17015
 // Name: AVErrorStreamSendHighPacketLossDefinition
-// Dependencies: [4364, 4430, 4408, 16996, 9219, 16993, 2]
+// Dependencies: [4364, 4430, 4408, 17012, 9233, 17009, 2]
 
-// Module 16998 (AVErrorStreamSendHighPacketLossDefinition)
+// Module 17014 (AVErrorStreamSendHighPacketLossDefinition)
 import reset from "reset";
 import initialize from "initialize";
 
@@ -27,14 +27,14 @@ export const AVErrorStreamSendHighPacketLossDefinition = {
       if (null == mediaEngineConnectionId) {
         return null;
       } else {
-        let tmp8Result = tmp8(16996);
+        let tmp8Result = tmp8(17012);
         const accumulatedStatsWithMinDatapoints = tmp8Result.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
         let tmp6 = null;
         if (null != accumulatedStatsWithMinDatapoints) {
           if (10 < 100 * accumulatedStatsWithMinDatapoints.short.packetLossRate) {
             obj = { type: null };
-            obj[0] = tmp8(9219).AVError.STREAM_SEND_HIGH_PACKET_LOSS;
-            tmp8Result = tmp8(16993);
+            obj[0] = tmp8(9233).AVError.STREAM_SEND_HIGH_PACKET_LOSS;
+            tmp8Result = tmp8(17009);
             const merged = Object.assign(tmp8Result.getStreamErrorContext(tmp8(4408).encodeStreamKey(currentUserActiveStream)));
             const items = [obj];
             const tmp3 = items;

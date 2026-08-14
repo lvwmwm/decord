@@ -1,10 +1,10 @@
-// Module ID: 9770
-// Function ID: 9771
+// Module ID: 9780
+// Function ID: 9781
 // Name: useCanShowFavoritesGuildOnboarding
 // Dependencies: [4054, 1979, 589, 4197, 2]
 // Exports: default
 
-// Module 9770 (useCanShowFavoritesGuildOnboarding)
+// Module 9780 (useCanShowFavoritesGuildOnboarding)
 import setContent from "setContent";
 import handleConnectionOpen from "handleConnectionOpen";
 

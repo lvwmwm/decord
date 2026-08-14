@@ -1,10 +1,10 @@
-// Module ID: 10614
-// Function ID: 10615
+// Module ID: 10630
+// Function ID: 10631
 // Name: _selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 1979, 5170, 2]
+// Dependencies: [5, 1979, 5191, 2]
 // Exports: default
 
-// Module 10614 (_selectAndWaitForVoiceChannelJoin)
+// Module 10630 (_selectAndWaitForVoiceChannelJoin)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import handleConnectionOpen from "handleConnectionOpen";
 
@@ -143,7 +143,7 @@ const prototype = function JoinTimeoutError() {
 }.prototype;
 class prototype extends Error {
 }
-let result = require("module_5170").fileFinishedImporting("modules/activities/utils/selectAndWaitForVoiceChannelJoin.native.tsx");
+let result = require("module_5191").fileFinishedImporting("modules/activities/utils/selectAndWaitForVoiceChannelJoin.native.tsx");
 
 export default function selectAndWaitForVoiceChannelJoin() {
   const self = this;

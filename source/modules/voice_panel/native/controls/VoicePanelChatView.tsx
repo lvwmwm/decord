@@ -1,9 +1,9 @@
-// Module ID: 11702
-// Function ID: 11703
+// Module ID: 11718
+// Function ID: 11719
 // Name: memoResult1
-// Dependencies: [19, 17, 11703, 676, 21, 4342, 4538, 1367, 1231, 11700, 1236, 4297, 7796, 11704, 4083, 8054, 4889, 8440, 1493, 1628, 11711, 4355, 4193, 10972, 4072, 4738, 11712, 10274, 2]
+// Dependencies: [19, 17, 11719, 676, 21, 4342, 4570, 1367, 1231, 11716, 1236, 4297, 7817, 11720, 4083, 8075, 4911, 8462, 1493, 1628, 11727, 4355, 4193, 10988, 4072, 4760, 11728, 10288, 2]
 
-// Module 11702 (memoResult1)
+// Module 11718 (memoResult1)
 import importAllResult from "useSafeAreaInsets";
 import { Platform } from "useGradientBottom";
 import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes";
@@ -22,7 +22,7 @@ let c3 = importAllResult;
 let closure_8 = createCacheKey.createStyles({ container: { flex: 1, overflow: "hidden", paddingTop: CONTROLS_DRAWER_HEADER_SIZE }, gradientWrapper: { position: "absolute", top: CONTROLS_DRAWER_HEADER_SIZE, left: 0 }, titleBlur: { opacity: 0 } });
 let closure_9 = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 let closure_10 = importAllResult.memo(() => {
-  const windowDimensions = importAllResult.useContext(importDefault(11704)).windowDimensions;
+  const windowDimensions = importAllResult.useContext(importDefault(11720)).windowDimensions;
   let obj = windowDimensions(4083);
   const fn = function n() {
     return { width: windowDimensions.get().width, height: windowDimensions.get().height };
@@ -34,8 +34,8 @@ let closure_10 = importAllResult.memo(() => {
   obj = { style: items, children: null };
   items = [callback2().gradientWrapper, animatedStyle];
   const tmp = callback2();
-  obj[1] = callback(importDefault(4889), { absolute: true });
-  return callback(importDefault(8054), obj);
+  obj[1] = callback(importDefault(4911), { absolute: true });
+  return callback(importDefault(8075), obj);
 });
 const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
   const callback = importAllResult.useCallback(() => {
@@ -48,15 +48,15 @@ const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
     obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["5MstTl"]);
     obj[1] = tmp(4297);
     obj[2] = callback;
-    let tmp5Result = tmp5(tmp(11700), obj);
-    const tmpResult = tmp(11700);
+    let tmp5Result = tmp5(tmp(11716), obj);
+    const tmpResult = tmp(11716);
   } else {
     obj = { accessibilityLabel: null, icon: null, onPress: null, variant: "primary-overlay" };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["5MstTl"]);
     obj[1] = tmp(4297);
     obj[2] = callback;
-    tmp5Result = tmp5(require(7796) /* IconButton */.IconButton, obj);
+    tmp5Result = tmp5(require(7817) /* IconButton */.IconButton, obj);
   }
   return tmp5Result;
 });

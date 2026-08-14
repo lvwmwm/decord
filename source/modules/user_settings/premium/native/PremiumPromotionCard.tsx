@@ -1,10 +1,10 @@
-// Module ID: 12810
-// Function ID: 12811
+// Module ID: 12828
+// Function ID: 12829
 // Name: PremiumPromotionCard
-// Dependencies: [19, 17, 4334, 676, 1924, 21, 4342, 712, 589, 5768, 6933, 5308, 4338, 1236, 1993, 4755, 7749, 2]
+// Dependencies: [19, 17, 4334, 676, 1924, 21, 4342, 712, 589, 5789, 6954, 5329, 4338, 1236, 1993, 4777, 7770, 2]
 // Exports: default
 
-// Module 12810 (PremiumPromotionCard)
+// Module 12828 (PremiumPromotionCard)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

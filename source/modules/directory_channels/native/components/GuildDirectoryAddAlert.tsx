@@ -1,10 +1,10 @@
-// Module ID: 11753
-// Function ID: 11754
+// Module ID: 11769
+// Function ID: 11770
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 4342, 712, 4773, 1236, 5819, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4795, 1236, 5840, 4338, 2]
 // Exports: default
 
-// Module 11753 (GuildDirectoryAddAlert)
+// Module 11769 (GuildDirectoryAddAlert)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,9 +35,9 @@ export default function GuildDirectoryAddAlert(arg0) {
   obj[1] = onClose;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.guildIcon, guild, size: null };
-  const tmp2 = importDefault(4773);
-  obj[2] = require(5819) /* GuildIconSizes */.GuildIconSizes.XLARGE;
-  const items = [callback(importDefault(5819), obj), , ];
+  const tmp2 = importDefault(4795);
+  obj[2] = require(5840) /* GuildIconSizes */.GuildIconSizes.XLARGE;
+  const items = [callback(importDefault(5840), obj), , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl2.string(require(1236) /* getSystemLocale */.t.CueiPY);

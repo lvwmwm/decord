@@ -1,10 +1,10 @@
 // Module ID: 4393
 // Function ID: 4394
 // Name: _detectH265HardwareDecode
-// Dependencies: [32, 5, 4394, 4399, 4256, 4365, 4413, 1340, 1218, 4414, 4415, 1391, 4416, 1922, 13164, 676, 4409, 4557, 13165, 685, 13166, 4406, 3, 687, 500, 4441, 4227, 4902, 13167, 13168, 10273, 13169, 12, 13151, 13170, 13171, 13172, 13173, 13174, 13175, 13176, 9219, 698, 709, 10836, 13177, 13178, 13179, 13180, 5179, 13181, 13226, 13227, 13228, 13229, 13230, 13231, 4405, 4520, 4336, 3972, 595, 13232, 10823, 5391, 13236, 13237, 1236, 4663, 13238, 13239, 13240, 13241, 38, 13163, 13162, 13242, 13146, 1208, 4403, 9816, 589, 13243, 13244, 13245, 13246, 2]
+// Dependencies: [32, 5, 4394, 4399, 4256, 4365, 4413, 1340, 1218, 4414, 4415, 1391, 4416, 1922, 13175, 676, 4409, 4579, 13176, 685, 13177, 4406, 3, 687, 500, 4441, 13178, 4227, 4924, 13179, 13180, 10287, 13181, 12, 13162, 13182, 13183, 13184, 13185, 13186, 13187, 13188, 9233, 698, 709, 10852, 13189, 13190, 13191, 13192, 5200, 13193, 13238, 13239, 13240, 13241, 13242, 13243, 4405, 4520, 4336, 3972, 595, 13244, 10839, 5412, 13248, 13249, 1236, 4685, 13250, 13251, 13252, 13253, 38, 13174, 13173, 13254, 13157, 1208, 4403, 9827, 589, 13255, 13256, 13257, 13258, 2]
 
 // Module 4393 (_detectH265HardwareDecode)
-import apply from "apply";
+import apexExperiment from "apexExperiment";
 import initialize from "initialize";
 import module_4394 from "module_4394";
 import _migrateDefaultStorage from "_migrateDefaultStorage";
@@ -266,7 +266,7 @@ function getSettings() {
     obj2.modeOptions = obj1;
     return obj2;
   }
-  const aGC2ExperimentConfig = require(13168) /* getAGC2ExperimentConfig */.getAGC2ExperimentConfig({ location: "getSettings" });
+  const aGC2ExperimentConfig = require(13180) /* getAGC2ExperimentConfig */.getAGC2ExperimentConfig({ location: "getSettings" });
   if (null != aGC2ExperimentConfig.vadKrispActivationThreshold) {
     obj1.vadKrispActivationThreshold = aGC2ExperimentConfig.vadKrispActivationThreshold;
   }
@@ -275,10 +275,10 @@ function setInputMode(context) {
   const tmp = getSettings(context.context);
   const mode = tmp.mode;
   if (context.context === MediaEngineContextTypes.DEFAULT) {
-    let obj = require(10273) /* setPushToTalkState */;
+    let obj = require(10287) /* setPushToTalkState */;
     obj.setPushToTalkState(false, false);
   }
-  let showPTTSpeakingIndicator = importDefault(13169).getConfig({ location: "setInputMode" }).showPTTSpeakingIndicator;
+  let showPTTSpeakingIndicator = importDefault(13181).getConfig({ location: "setInputMode" }).showPTTSpeakingIndicator;
   if (showPTTSpeakingIndicator) {
     showPTTSpeakingIndicator = mode === InputModes.PUSH_TO_TALK;
   }
@@ -325,8 +325,8 @@ function updateConnectionMuteDeaf(context) {
       tmp3 = c92;
     }
     if (!tmp3) {
-      tmp3 = !importDefault(4902).didHavePermission(NativePermissionTypes.AUDIO);
-      const obj = importDefault(4902);
+      tmp3 = !importDefault(4924).didHavePermission(NativePermissionTypes.AUDIO);
+      const obj = importDefault(4924);
     }
     let flag = tmp3;
   } else {
@@ -339,8 +339,8 @@ function updateConnectionMuteDeaf(context) {
   context.setSelfMute(flag);
   context.setSelfDeaf(tmp.deaf);
   if (context.context === MediaEngineContextTypes.DEFAULT) {
-    importDefault(13151).updateNativeMute();
-    const obj2 = importDefault(13151);
+    importDefault(13162).updateNativeMute();
+    const obj2 = importDefault(13162);
   }
 }
 function updateVideo(c94, arg1) {
@@ -408,7 +408,7 @@ function updateVideo(c94, arg1) {
           obj[1] = tmp2.quality.frameRate;
           if (null != tmp2.desktopSource) {
             const videoHook2 = getSettings().videoHook;
-            const obj20 = require(13167) /* HdrCaptureMode */;
+            const obj20 = require(13179) /* HdrCaptureMode */;
             let isWindowsResult = require(500) /* set */.isWindows();
             if (isWindowsResult) {
               const tmp41 = importDefault(3972);
@@ -416,8 +416,8 @@ function updateVideo(c94, arg1) {
               if (tmp41 != null) {
                 release = tmp41.os.release;
               }
-              isWindowsResult = importDefault(13181).satisfies(release, closure_29);
-              const obj6 = importDefault(13181);
+              isWindowsResult = importDefault(13193).satisfies(release, closure_29);
+              const obj6 = importDefault(13193);
             }
             if (!isWindowsResult) {
               let tmp70Result = tmp70(500);
@@ -428,15 +428,15 @@ function updateVideo(c94, arg1) {
               if (!isWindowsResult1) {
                 let tmp55 = !videoHook2;
                 if (videoHook2) {
-                  const DisableHookFramePacerExperiment = tmp70(13173).DisableHookFramePacerExperiment;
+                  const DisableHookFramePacerExperiment = tmp70(13185).DisableHookFramePacerExperiment;
                   tmp55 = !DisableHookFramePacerExperiment.getConfig({ location: "updateVideo" }).enabled;
                 }
                 let enabled2 = videoHook2;
                 if (videoHook2) {
-                  const VideoHookDX12Experiment = tmp70(13174).VideoHookDX12Experiment;
+                  const VideoHookDX12Experiment = tmp70(13186).VideoHookDX12Experiment;
                   enabled2 = VideoHookDX12Experiment.getConfig({ location: "updateVideo" }).enabled;
                 }
-                const UpscaleSmallCapturedFramesExperiment = tmp70(13175).UpscaleSmallCapturedFramesExperiment;
+                const UpscaleSmallCapturedFramesExperiment = tmp70(13187).UpscaleSmallCapturedFramesExperiment;
                 const config = UpscaleSmallCapturedFramesExperiment.getConfig({ location: "updateVideo" });
                 obj = { id: null, soundshareId: null, useVideoHook: null, useHookFramePacer: null, useGraphicsCapture: null, useGraphicsCaptureApiLevel: null, useCaptureDeviceForEncode: null, useLoopback: null, useQuartzCapturer: true, allowScreenCaptureKit: null, videoHookStaleFrameTimeoutMs: 500, graphicsCaptureStaleFrameTimeoutMs: null, hdrCaptureMode: null, enableGlobalFramePoolLock: null, useGraphicsCaptureDirtyRegions: null, videoHookAllowDx12: null, minCaptureWidth: null, minCaptureHeight: null };
                 obj[0] = tmp2.desktopSource.id;
@@ -459,8 +459,8 @@ function updateVideo(c94, arg1) {
                   if (tmp61 != null) {
                     release1 = tmp61.os.release;
                   }
-                  isMacResult = importDefault(13181).satisfies(release1, closure_24);
-                  const obj14 = importDefault(13181);
+                  isMacResult = importDefault(13193).satisfies(release1, closure_24);
+                  const obj14 = importDefault(13193);
                 }
                 let obj1 = { desktopDescription: null, quality: null };
                 obj[9] = isMacResult;
@@ -468,7 +468,7 @@ function updateVideo(c94, arg1) {
                 obj[12] = obj20.getGoLiveHdrConfig({ location: "MediaEngineStore go live" }).hdrCaptureMode;
                 obj10 = store3;
                 const tmp70Result1 = tmp70(500);
-                obj[13] = tmp70(13176).getGlobalFramePoolLockExperimentConfig({ location: "updateVideo" }).enabled;
+                obj[13] = tmp70(13188).getGlobalFramePoolLockExperimentConfig({ location: "updateVideo" }).enabled;
                 obj[14] = false;
                 obj[15] = enabled2;
                 obj[16] = minCaptureWidth;
@@ -476,12 +476,12 @@ function updateVideo(c94, arg1) {
                 obj1[0] = obj;
                 obj1[1] = obj;
                 store3.setGoLiveSource(obj1, STREAM);
-                const tmp70Result2 = tmp70(13176);
+                const tmp70Result2 = tmp70(13188);
               } else if (true === c131) {
-                const WGCDirtyRegionsExperiment = tmp70(13171).WGCDirtyRegionsExperiment;
+                const WGCDirtyRegionsExperiment = tmp70(13183).WGCDirtyRegionsExperiment;
                 let enabled = WGCDirtyRegionsExperiment.getConfig({ location: "updateVideo" }).enabled;
               } else {
-                const WGCDirtyRegionsAllExperiment = tmp70(13172).WGCDirtyRegionsAllExperiment;
+                const WGCDirtyRegionsAllExperiment = tmp70(13184).WGCDirtyRegionsAllExperiment;
                 enabled = WGCDirtyRegionsAllExperiment.getConfig({ location: "updateVideo" }).enabled;
               }
             } else {
@@ -492,8 +492,8 @@ function updateVideo(c94, arg1) {
                 if (tmp47 != null) {
                   release2 = tmp47.os.release;
                 }
-                isWindowsResult2 = importDefault(13181).satisfies(release2, closure_27);
-                const obj8 = importDefault(13181);
+                isWindowsResult2 = importDefault(13193).satisfies(release2, closure_27);
+                const obj8 = importDefault(13193);
               }
               const tmp70Result3 = tmp70(500);
             }
@@ -552,50 +552,50 @@ function updateVideo(c94, arg1) {
         videoHook = getSettings().videoHook;
       }
       if (videoHook) {
-        obj1 = importAll(13170);
+        obj1 = importAll(13182);
         const result = obj1.cancelAttachToProcess(tmp3.desktopSource.sourcePid);
       }
       store3.setGoLiveSource(null, STREAM);
     } else {
       obj = require(500) /* set */;
     }
-    obj2 = importAll(13170);
+    obj2 = importAll(13182);
     const result1 = obj2.cancelAttachToProcess(tmp3.desktopSource.soundshareId);
   }
 }
 function noiseCancellerErrorToAVUnderlyingError(noise_canceller_error) {
   if (NoiseCancellerError.KRISP_CPU_OVERUSE === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispCpuOveruse;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispCpuOveruse;
   } else if (tmp.KRISP_FAILED === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispFailed;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispFailed;
   } else if (tmp.KRISP_VAD_CPU_OVERUSE === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispVadCpuOveruse;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispVadCpuOveruse;
   } else if (tmp.KRISP_INIT_ERROR === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispInitError;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispInitError;
   } else if (tmp.KRISP_INIT_ERROR_NATIVE === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispInitErrorNative;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispInitErrorNative;
   } else if (tmp.KRISP_INIT_ERROR_SSE4_NOT_SUPPORTED === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispInitErrorSse4NotSupported;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispInitErrorSse4NotSupported;
   } else if (tmp.KRISP_INIT_ERROR_AVX2_NOT_SUPPORTED === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispInitErrorAvx2NotSupported;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispInitErrorAvx2NotSupported;
   } else if (tmp.KRISP_INIT_ERROR_UNSIGNED === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispInitErrorUnsigned;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispInitErrorUnsigned;
   } else if (tmp.KRISP_INIT_ERROR_GLOBAL_INIT === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispInitErrorGlobalInit;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispInitErrorGlobalInit;
   } else if (tmp.KRISP_INIT_ERROR_WEIGHT_8K === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispInitErrorWeight8k;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispInitErrorWeight8k;
   } else if (tmp.KRISP_INIT_ERROR_WEIGHT_16K === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispInitErrorWeight16k;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispInitErrorWeight16k;
   } else if (tmp.KRISP_INIT_ERROR_WEIGHT_32K === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispInitErrorWeight32k;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispInitErrorWeight32k;
   } else if (tmp.KRISP_INIT_ERROR_WEIGHT_VAD === noise_canceller_error) {
-    return require(9219) /* mapped */.AVUnderlyingError.KrispInitErrorWeightVad;
+    return require(9233) /* mapped */.AVUnderlyingError.KrispInitErrorWeightVad;
   }
 }
 function handleVoiceProcessingError(noise_canceller_error) {
   obj.warn("Voice processing error: " + noise_canceller_error);
-  obj = require(9219) /* mapped */;
-  obj = { type: require(9219) /* mapped */.AVError.NOISE_CANCELLER_ERROR, underlyingError: noiseCancellerErrorToAVUnderlyingError(noise_canceller_error) };
+  obj = require(9233) /* mapped */;
+  obj = { type: require(9233) /* mapped */.AVError.NOISE_CANCELLER_ERROR, underlyingError: noiseCancellerErrorToAVUnderlyingError(noise_canceller_error) };
   obj.reportAVError(obj);
   let obj2 = importDefault(698);
   obj = { noise_canceller_error };
@@ -632,14 +632,14 @@ function handleVideoFilterError(arg0, arg1) {
     importDefault(709).dispatch(obj);
   } else {
     let AVUnderlyingError = dependencyMap;
-    obj = require(9219) /* mapped */;
+    obj = require(9233) /* mapped */;
     obj = { type: null, underlyingError: null };
-    obj[0] = require(9219) /* mapped */.AVError.VIDEO_BACKGROUND_UNAVAILABLE;
+    obj[0] = require(9233) /* mapped */.AVError.VIDEO_BACKGROUND_UNAVAILABLE;
     if (constants9.UNSUPPORTED === arg0) {
-      AVUnderlyingError = tmp4(9219).AVUnderlyingError;
+      AVUnderlyingError = tmp4(9233).AVUnderlyingError;
       let VideoBackgroundInitFailed = AVUnderlyingError.VideoBackgroundUnsupported;
     } else if (tmp5.INIT_FAILED === arg0) {
-      VideoBackgroundInitFailed = tmp4(9219).AVUnderlyingError.VideoBackgroundInitFailed;
+      VideoBackgroundInitFailed = tmp4(9233).AVUnderlyingError.VideoBackgroundInitFailed;
     }
     obj[1] = VideoBackgroundInitFailed;
     obj = obj.reportAVError(obj);
@@ -657,18 +657,18 @@ function updateConnectionVoiceProcessing(setEchoCancellation) {
   obj = { enabled: tmp7 };
   const tmp5 = obj.hasNoiseSuppression(inputDeviceId) || tmp2.noiseSuppression;
   obj = { location: "getAutomaticGainControlConfig", disable: !tmp7 };
-  const merged = Object.assign(require(13168) /* getAGC2ExperimentConfig */.getAGC2ExperimentConfig(obj).noiseCancellationConfig);
+  const merged = Object.assign(require(13180) /* getAGC2ExperimentConfig */.getAGC2ExperimentConfig(obj).noiseCancellationConfig);
   const result = setEchoCancellation.setAutomaticGainControl(obj);
   const noiseCancellation = tmp2.noiseCancellation;
-  const obj3 = require(13168) /* getAGC2ExperimentConfig */;
-  const tmp13Result = importDefault(10836)(noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
+  const obj3 = require(13180) /* getAGC2ExperimentConfig */;
+  const tmp13Result = importDefault(10852)(noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
   if (tmp13Result !== noiseCancellation) {
     obj.info("Falling back to system noise suppression.");
   }
   setEchoCancellation.setNoiseCancellation(tmp13Result);
-  let tmp8Result = tmp8(13168);
+  let tmp8Result = tmp8(13180);
   const result1 = setEchoCancellation.setNoiseCancellationDuringProcessing(tmp8Result.getAGC2ExperimentConfig({ location: "setNoiseCancellation", disable: !tmp13Result }).noiseCancellationDuringProcessing);
-  let tmp12Result = tmp12(13162);
+  let tmp12Result = tmp12(13173);
   let supportsResult = true === tmp2.audioMixerSettings.enabled && tmp12Result.getConfig({ location: "MediaEngineStore" }).enabled;
   if (supportsResult) {
     supportsResult = store3.supports(Features.SPATIAL_AUDIO);
@@ -677,11 +677,11 @@ function updateConnectionVoiceProcessing(setEchoCancellation) {
   const tmpResult = tmp();
   const inputDeviceId2 = tmpResult.inputDeviceId;
   const obj1 = { location: "setNoiseCancellation", disable: !tmp13Result };
-  const tmp13 = importDefault(10836);
+  const tmp13 = importDefault(10852);
   const tmp24 = obj.hasEchoCancellation(inputDeviceId2) || tmpResult.echoCancellation;
-  tmp12Result = tmp12(10836);
+  tmp12Result = tmp12(10852);
   const tmp25 = obj.hasNoiseSuppression(inputDeviceId2) || tmpResult.noiseSuppression;
-  tmp8Result = tmp8(13177);
+  tmp8Result = tmp8(13189);
   const voiceFidelityCaps = tmp8Result.getVoiceFidelityCaps({ location: "updateVoiceFidelityCaps" }, { krispEnabled: tmp12Result(tmpResult.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode()), noiseSuppressionEnabled: tmp25, echoCancellationEnabled: tmp24 });
   const result3 = store3.setVoiceSampleRateCap(voiceFidelityCaps.maxSampleRateHz);
   const result4 = store3.setVoiceChannelCountCap(voiceFidelityCaps.maxChannelCount);
@@ -693,12 +693,12 @@ function updateConnectionVoiceProcessing(setEchoCancellation) {
     if (tmp12Result2 != null) {
       release = tmp12Result2.os.release;
     }
-    isWindowsResult = tmp12(13181).satisfies(release, c152);
-    const tmp12Result1 = tmp12(13181);
+    isWindowsResult = tmp12(13193).satisfies(release, c152);
+    const tmp12Result1 = tmp12(13193);
   }
   if (isWindowsResult) {
     if (setEchoCancellation.context === MediaEngineContextTypes.DEFAULT) {
-      const systemwideEchoCancellationExperimentConfig = tmp8(13178).getSystemwideEchoCancellationExperimentConfig({ location: "updateConnectionVoiceProcessing" });
+      const systemwideEchoCancellationExperimentConfig = tmp8(13190).getSystemwideEchoCancellationExperimentConfig({ location: "updateConnectionVoiceProcessing" });
       const tmp50 = dependencyMap2[obj5.getInputDeviceId(obj5)];
       let windowsDeviceService;
       if (tmp50 != null) {
@@ -739,13 +739,13 @@ function updateConnectionVoiceProcessing(setEchoCancellation) {
         str7 = systemwideEchoCancellationExperimentConfig.echoReferenceMode;
       }
       setEchoCancellation.setEchoReferenceMode(str7);
-      const tmp8Result2 = tmp8(13178);
+      const tmp8Result2 = tmp8(13190);
     }
   }
   const tmp8Result1 = require(500) /* set */;
   if (tmp8Result3.isDesktop()) {
-    const result5 = setEchoCancellation.setNoiseCancellationCpuDisablement(tmp8(13179).getKrispCpuDisablementConfig({ location: "updateConnectionVoiceProcessing" }).consecutiveFailures);
-    const tmp8Result4 = tmp8(13179);
+    const result5 = setEchoCancellation.setNoiseCancellationCpuDisablement(tmp8(13191).getKrispCpuDisablementConfig({ location: "updateConnectionVoiceProcessing" }).consecutiveFailures);
+    const tmp8Result4 = tmp8(13191);
   }
   tmp8Result3 = require(500) /* set */;
   if (tmp8Result5.isWeb()) {
@@ -812,10 +812,10 @@ function applySettings() {
         guid = tmp7.guid;
       }
       if (null != guid) {
-        tmp5(13237)(tmp7.guid, inputDeviceId, obj);
+        tmp5(13249)(tmp7.guid, inputDeviceId, obj);
       }
     }
-    obj3 = importDefault(13236);
+    obj3 = importDefault(13248);
     tmp5 = importDefault;
   }
   obj.setAudioOutputDevice(tmp.outputDeviceId);
@@ -833,9 +833,9 @@ function applySettings() {
   const result = obj.setSidechainCompression(tmp.sidechainCompression);
   const result1 = obj.setSidechainCompressionStrength(tmp.sidechainCompressionStrength);
   const result2 = obj.setAudioInputBypassSystemProcessing(tmp.bypassSystemInputProcessing);
-  obj4 = importDefault(10823);
+  obj4 = importDefault(10839);
   if (tmp3Result.isLinux()) {
-    let tmp14Result = tmp14(5391);
+    let tmp14Result = tmp14(5412);
     if (tmp14Result != null) {
       const setOpenH264Enabled = tmp14Result.setOpenH264Enabled;
       if (setOpenH264Enabled != null) {
@@ -844,7 +844,7 @@ function applySettings() {
     }
   }
   const audioMixerSettings = tmp.audioMixerSettings;
-  tmp14Result = tmp14(13162);
+  tmp14Result = tmp14(13173);
   let supportsResult = true === audioMixerSettings.enabled && tmp14Result.getConfig({ location: "MediaEngineStore" }).enabled;
   if (supportsResult) {
     supportsResult = obj.supports(Features.SPATIAL_AUDIO);
@@ -912,7 +912,7 @@ function applyRemoteSettings(arg0) {
           setLocalVolume.setLocalMute(closure_0, muted.muted);
         }, tmp3);
       }
-      obj = STREAM(localMutes[69]);
+      obj = STREAM(localMutes[70]);
       tmp3 = closure_0;
     }
     const entries = Object.entries(obj);
@@ -989,22 +989,22 @@ function maybeTryHookProcess(pidFromDesktopSource, sound) {
       if (isWindowsResult) {
         const obj1 = { soundshare_session: null };
         obj1[0] = soundshareSession;
-        const obj8 = importAll(13170);
-        importAll(13170).attachToProcess(soundshareId, obj1).then((closure_0) => {
+        const obj8 = importAll(13182);
+        importAll(13182).attachToProcess(soundshareId, obj1).then((closure_0) => {
           let result = null == closure_0;
           if (!result) {
             result = outer1_8.shouldContinueWithoutElevatedProcessForPID(closure_0);
           }
           if (!result) {
-            outer1_1(outer1_3[43]).wait(() => {
-              let obj = outer1_1(outer1_3[43]);
+            outer1_1(outer1_3[44]).wait(() => {
+              let obj = outer1_1(outer1_3[44]);
               obj = { type: "MEDIA_ENGINE_SOUNDSHARE_FAILED", errorMessage: closure_0 };
               obj.dispatch(obj);
             });
-            let obj = outer1_1(outer1_3[43]);
+            let obj = outer1_1(outer1_3[44]);
           }
         });
-        const attachToProcessResult = importAll(13170).attachToProcess(soundshareId, obj1);
+        const attachToProcessResult = importAll(13182).attachToProcess(soundshareId, obj1);
       }
       obj2 = { soundshareId: null, soundshareSession: null };
       obj2[0] = soundshareId;
@@ -1017,8 +1017,8 @@ function maybeTryHookProcess(pidFromDesktopSource, sound) {
     videoHook = getSettings().videoHook;
   }
   if (videoHook) {
-    importAll(13170).attachToProcess(pidFromDesktopSource);
-    const obj6 = importAll(13170);
+    importAll(13182).attachToProcess(pidFromDesktopSource);
+    const obj6 = importAll(13182);
   }
   return { soundshareId: null, soundshareSession: null };
 }
@@ -1059,8 +1059,8 @@ function trackVoiceProcessing(location) {
   if (dependencyMap2[id] != null) {
     name = tmp9.name;
   }
-  const tmp11 = importDefault(10836);
-  const tmp11Result = importDefault(10836)(tmp.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
+  const tmp11 = importDefault(10852);
+  const tmp11Result = importDefault(10852)(tmp.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
   obj = { echo_cancellation: tmp.echoCancellation, noise_cancellation: tmp.noiseCancellation, noise_suppression: tmp.noiseSuppression, automatic_gain_control: tmp.automaticGainControl, location, bypass_system_input_processing: tmp.bypassSystemInputProcessing, audio_subsystem: audioSubsystem, audio_layer: audioLayer, input_device: name, effective_noise_cancellation: tmp11Result };
   importDefault(698).track(constants.VOICE_PROCESSING, obj);
 }
@@ -1076,17 +1076,17 @@ function setLoopback() {
   const tmp7 = set2.size <= 0;
   const tmp8 = require;
   obj = { location: "getAutomaticGainControlConfig", disable: !tmp6 };
-  const merged = Object.assign(require(13168) /* getAGC2ExperimentConfig */.getAGC2ExperimentConfig(obj).noiseCancellationConfig);
+  const merged = Object.assign(require(13180) /* getAGC2ExperimentConfig */.getAGC2ExperimentConfig(obj).noiseCancellationConfig);
   store3.setLoopback(set2.size > 0, { echoCancellation: tmp4, echoCancellationPreEcho: tmp7, noiseSuppression: tmp5, automaticGainControlConfig: obj, noiseCancellation: tmp2.noiseCancellation });
   const tmpResult = tmp();
   const inputDeviceId2 = tmpResult.inputDeviceId;
   const obj1 = { echoCancellation: tmp4, echoCancellationPreEcho: tmp7, noiseSuppression: tmp5, automaticGainControlConfig: obj, noiseCancellation: tmp2.noiseCancellation };
-  const obj3 = require(13168) /* getAGC2ExperimentConfig */;
+  const obj3 = require(13180) /* getAGC2ExperimentConfig */;
   const tmp13 = obj.hasEchoCancellation(inputDeviceId2) || tmpResult.echoCancellation;
   const tmp14 = obj.hasNoiseSuppression(inputDeviceId2) || tmpResult.noiseSuppression;
-  const tmp15 = importDefault(10836);
-  const tmp15Result = importDefault(10836)(tmpResult.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
-  const voiceFidelityCaps = tmp8(13177).getVoiceFidelityCaps({ location: "updateVoiceFidelityCaps" }, { krispEnabled: tmp15Result, noiseSuppressionEnabled: tmp14, echoCancellationEnabled: tmp13 });
+  const tmp15 = importDefault(10852);
+  const tmp15Result = importDefault(10852)(tmpResult.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
+  const voiceFidelityCaps = tmp8(13189).getVoiceFidelityCaps({ location: "updateVoiceFidelityCaps" }, { krispEnabled: tmp15Result, noiseSuppressionEnabled: tmp14, echoCancellationEnabled: tmp13 });
   const result = obj5.setVoiceSampleRateCap(voiceFidelityCaps.maxSampleRateHz);
   const result1 = obj5.setVoiceChannelCountCap(voiceFidelityCaps.maxChannelCount);
 }
@@ -1219,7 +1219,7 @@ function _setupKrispNativeModule() {
             c5 = 3;
             c6 = 1;
             const obj1 = { value: null, done: false };
-            obj1[0] = outer1_1(outer1_3[64]).ensureModule("discord_krisp");
+            obj1[0] = outer1_1(outer1_3[65]).ensureModule("discord_krisp");
             return obj1;
           }
         } else if (1 === tmp8) {
@@ -1237,17 +1237,17 @@ function _setupKrispNativeModule() {
             let message = c4.message;
             if (!message.includes(": ")) {
               let obj2 = { type: null, underlyingError: null };
-              obj2[0] = outer1_0(outer1_3[41]).AVError.NOISE_CANCELLER_ERROR;
+              obj2[0] = outer1_0(outer1_3[42]).AVError.NOISE_CANCELLER_ERROR;
               obj2[1] = outer1_147(c2);
-              outer1_0(outer1_3[41]).reportAVError(obj2);
-              const obj9 = outer1_0(outer1_3[41]);
+              outer1_0(outer1_3[42]).reportAVError(obj2);
+              const obj9 = outer1_0(outer1_3[42]);
               let obj3 = { noise_canceller_error: null };
               obj3[0] = c2;
-              outer1_1(outer1_3[42]).track(outer1_18.VOICE_PROCESSING, obj3);
+              outer1_1(outer1_3[43]).track(outer1_18.VOICE_PROCESSING, obj3);
               c4 = 0;
               let outer1_108 = false;
               c6 = 3;
-              const obj11 = outer1_1(outer1_3[42]);
+              const obj11 = outer1_1(outer1_3[43]);
             } else {
               const _parseInt = parseInt;
               message = c4.message;
@@ -1275,7 +1275,7 @@ function _setupKrispNativeModule() {
               obj4[0] = arg1;
               return obj4;
             } else {
-              lib = lib2(5391).requireModule("discord_krisp");
+              lib = lib2(5412).requireModule("discord_krisp");
               let c109 = true;
               const getSdkVersion = lib.getSdkVersion;
               let sdkVersion;
@@ -1296,7 +1296,7 @@ function _setupKrispNativeModule() {
               if (obj2.isWindows()) {
                 const setMklZenOverrideEnabled = lib.setMklZenOverrideEnabled;
                 if (setMklZenOverrideEnabled != null) {
-                  obj3 = lib(13240);
+                  obj3 = lib(13252);
                   const result = setMklZenOverrideEnabled(obj3.getMklZenOverrideExperimentConfig("setupKrispNativeModule").enabled);
                 }
               }
@@ -1309,7 +1309,7 @@ function _setupKrispNativeModule() {
                 });
               }
               outer1_69.emitChange();
-              obj4 = outer1_1(outer1_3[64]);
+              obj4 = outer1_1(outer1_3[65]);
               c5 = 4;
               c6 = 1;
               const obj5 = { value: null, done: false };
@@ -1320,7 +1320,7 @@ function _setupKrispNativeModule() {
             c6 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = lib2(5391);
+            obj = lib2(5412);
             lib2 = obj.requireModule("discord_voice");
             const setupKrispPath = lib2.setupKrispPath;
             if (setupKrispPath != null) {
@@ -1409,7 +1409,7 @@ function _downloadOpenH() {
               const replaced = parts[parts.length - 1].replace(".bz2", "");
               dependencyMap = replaced;
               dependencyMap = 2;
-              const obj11 = outer1_1(5391);
+              const obj11 = outer1_1(5412);
               fetchedFromNetwork = 3;
               c5 = 1;
               let obj2 = { value: null, done: false };
@@ -1472,7 +1472,7 @@ function _downloadOpenH() {
             obj4[2] = message;
             obj2.track(obj.VIDEO_OPENH264_DOWNLOADED, obj4);
           }
-          obj4 = message(5391);
+          obj4 = message(5412);
           const items = [dependencyMap];
           fetchedFromNetwork = 4;
           c5 = 1;
@@ -1580,7 +1580,7 @@ function setAudioSubsystem(arg0) {
 function handleUserSettingsModal(section) {
   if (section.section === constants4.VOICE) {
     if (!closure_79) {
-      store3.enable().then(() => disabledLocalVideos(table[43]).dispatch({ type: "MEDIA_ENGINE_SET_AUDIO_ENABLED", enabled: true, unmute: false }));
+      store3.enable().then(() => disabledLocalVideos(table[44]).dispatch({ type: "MEDIA_ENGINE_SET_AUDIO_ENABLED", enabled: true, unmute: false }));
       const enableResult = store3.enable();
     }
   }
@@ -1674,9 +1674,9 @@ let c82 = 0;
 let c83 = false;
 let closure_84 = performance.now();
 let c85 = null;
-let closure_86 = { [DEFAULT_DEVICE_ID]: { id: DEFAULT_DEVICE_ID, index: 0, name: "No Input Devices", disabled: true, guid: "accessible", hardwareId: "IconComponent", containerId: "l" } };
+let closure_86 = { [DEFAULT_DEVICE_ID]: { id: DEFAULT_DEVICE_ID, index: 0, name: "No Input Devices", disabled: true, guid: "accessible", hardwareId: "userId", containerId: "o" } };
 let closure_87 = { [DEFAULT_DEVICE_ID]: { id: DEFAULT_DEVICE_ID, index: 0, name: "No Output Devices", disabled: true, guid: "call", hardwareId: "warn", containerId: "has" } };
-let closure_88 = { [DEFAULT_DEVICE_ID]: { id: DEFAULT_DEVICE_ID, index: 0, name: "No Video Devices", disabled: true, guid: "add", hardwareId: "Number", containerId: "gap" } };
+let closure_88 = { [DEFAULT_DEVICE_ID]: { id: DEFAULT_DEVICE_ID, index: 0, name: "No Video Devices", disabled: true, guid: "add", hardwareId: "then", containerId: "forEach" } };
 const timeout = new require("start").Timeout();
 let c90 = false;
 let c91 = false;
@@ -1740,7 +1740,7 @@ const prototype = MediaEngineStore.prototype;
 prototype["initialize"] = function initialize() {
   let self = this;
   if (navigation == null) {
-    const tmp7 = new _pollMetrics(13243)(store3, self);
+    const tmp7 = new _pollMetrics(13255)(store3, self);
     navigation = tmp7;
   }
   timeout.start(closure_62, () => {
@@ -1781,7 +1781,7 @@ prototype["initialize"] = function initialize() {
     }
     setAttenuation.setExperimentFlag(closure_45.RESET_DECODER_ON_ERRORS, true);
     setAttenuation.setExperimentFlag(closure_45.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS, true);
-    tmp9Result1 = pollMetrics(13180);
+    tmp9Result1 = pollMetrics(13192);
     if (obj5.getConfig({ location: "MediaEngineStore" }).swallowVolumeOnlySpeakingEvents) {
       setAttenuation.setExperimentFlag(tmp22.SWALLOW_VOLUME_ONLY_SPEAKING_EVENTS, true);
     }
@@ -1789,7 +1789,7 @@ prototype["initialize"] = function initialize() {
     if (setAttenuation.context === constants4.STREAM) {
       const result1 = setAttenuation.setSoundshareDiscardRearChannels(callback7(closure_87));
     }
-    obj5 = _pollMetrics(5179);
+    obj5 = _pollMetrics(5200);
     if (tmp9Result2.isWindows()) {
       setAttenuation.setExperimentFlag(tmp22.SIGNAL_AV1_ENCODE, true);
       setAttenuation.setExperimentFlag(tmp22.SIGNAL_AV1_DECODE, true);
@@ -1806,7 +1806,7 @@ prototype["initialize"] = function initialize() {
         }
         let satisfiesResult = "arm64" === arch;
         if (satisfiesResult) {
-          let tmp25Result = tmp25(13181);
+          let tmp25Result = tmp25(13193);
           let release;
           if (window != null) {
             if (DiscordNative2 != null) {
@@ -1822,7 +1822,7 @@ prototype["initialize"] = function initialize() {
             setAttenuation.setExperimentFlag(tmp22.SIGNAL_AV1_ENCODE, true);
           }
           setAttenuation.setExperimentFlag(tmp22.SIGNAL_AV1_DECODE, true);
-          tmp9Result5 = tmp9(13226);
+          tmp9Result5 = tmp9(13238);
         } else {
           let isIOSResult = tmp9(500).isIOS();
           if (!isIOSResult) {
@@ -1841,7 +1841,7 @@ prototype["initialize"] = function initialize() {
     }
     tmp9Result2 = pollMetrics(500);
     if (tmp9Result8.isWeb()) {
-      tmp25Result = tmp25(13227);
+      tmp25Result = tmp25(13239);
       setAttenuation.setExperimentFlag(tmp22.BROWSER_HEVC, tmp25Result.getConfig({ location: "MediaEngineStore" }).enabled);
     }
     tmp9Result8 = pollMetrics(500);
@@ -1855,8 +1855,8 @@ prototype["initialize"] = function initialize() {
       obj16 = closure_130;
     }
     if (enabled) {
-      enabled = tmp9(13228).getWmfGpuEncode("MediaEngineStore").enabled;
-      const tmp9Result10 = tmp9(13228);
+      enabled = tmp9(13240).getWmfGpuEncode("MediaEngineStore").enabled;
+      const tmp9Result10 = tmp9(13240);
     }
     if (enabled) {
       setAttenuation.setExperimentFlag(tmp22.WMF_GPU_ENCODE, true);
@@ -1878,8 +1878,8 @@ prototype["initialize"] = function initialize() {
       enabled2 = 1 === closure_132;
     }
     if (enabled2) {
-      enabled2 = tmp9(13229).getWmfGpuEncodeIntel("MediaEngineStore").enabled;
-      const tmp9Result12 = tmp9(13229);
+      enabled2 = tmp9(13241).getWmfGpuEncodeIntel("MediaEngineStore").enabled;
+      const tmp9Result12 = tmp9(13241);
     }
     if (enabled2) {
       setAttenuation.setExperimentFlag(tmp22.WMF_GPU_ENCODE, true);
@@ -1902,8 +1902,8 @@ prototype["initialize"] = function initialize() {
       enabled3 = 1 === closure_132;
     }
     if (enabled3) {
-      enabled3 = tmp9(13230).getWmfCpuEncodeIntel("MediaEngineStore").enabled;
-      const tmp9Result14 = tmp9(13230);
+      enabled3 = tmp9(13242).getWmfCpuEncodeIntel("MediaEngineStore").enabled;
+      const tmp9Result14 = tmp9(13242);
     }
     if (enabled3) {
       setAttenuation.setExperimentFlag(tmp22.INTEL_GPU_DISABLE, true);
@@ -1919,13 +1919,13 @@ prototype["initialize"] = function initialize() {
       obj25 = closure_130;
     }
     if (enabled4) {
-      enabled4 = tmp9(13228).getWmfGpuEncode("MediaEngineStore").enabled;
-      const tmp9Result16 = tmp9(13228);
+      enabled4 = tmp9(13240).getWmfGpuEncode("MediaEngineStore").enabled;
+      const tmp9Result16 = tmp9(13240);
     }
     if (enabled4) {
       setAttenuation.setExperimentFlag(tmp22.WMF_GPU_ENCODE, true);
     }
-    const result2 = store3.setHasFullbandPerformance(tmp25(13231)());
+    const result2 = store3.setHasFullbandPerformance(tmp25(13243)());
     const result3 = setAttenuation.setRemoteAudioHistory(1000);
     if (_pollMetrics(4405)(closure_69)) {
       const result4 = setAttenuation.setClipsKeyFrameInterval(closure_54);
@@ -1964,7 +1964,7 @@ prototype["initialize"] = function initialize() {
       continue;
     }
     setAttenuation.on(pollMetrics(4441).BaseConnectionEvent.Speaking, (userId, speakingFlags, arg2, voiceDb) => {
-      let obj = outer1_1(outer1_3[43]);
+      let obj = outer1_1(outer1_3[44]);
       obj = { type: "SPEAKING", context: setAttenuation.context, userId, speakingFlags, voiceDb };
       obj.dispatch(obj);
     });
@@ -1982,7 +1982,7 @@ prototype["initialize"] = function initialize() {
       });
     }
     setAttenuation.on(pollMetrics(4441).BaseConnectionEvent.DesktopSourceEnd, (endReason, errorCode) => {
-      let obj = outer1_1(outer1_3[43]);
+      let obj = outer1_1(outer1_3[44]);
       obj = { type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", settings: obj, endReason, errorCode };
       obj = { context: setAttenuation.context };
       obj.dispatch(obj);
@@ -2023,7 +2023,7 @@ prototype["initialize"] = function initialize() {
       obj.track(constants.SDP_ERROR, obj);
     });
     setAttenuation.on(pollMetrics(4441).BaseConnectionEvent.VideoState, (videoState) => {
-      let obj = outer1_1(outer1_3[43]);
+      let obj = outer1_1(outer1_3[44]);
       obj = { type: "MEDIA_ENGINE_VIDEO_STATE_CHANGED", videoState, context: setAttenuation.context };
       obj.dispatch(obj);
     });
@@ -2102,7 +2102,7 @@ prototype["initialize"] = function initialize() {
             const _window = window;
             if ("canary" === window.GLOBAL_ENV.RELEASE_CHANNEL) {
               let c4 = 1;
-              let obj7 = outer1_1(outer1_3[59]);
+              let obj7 = outer1_1(outer1_3[60]);
               const obj1 = { message: null };
               obj1[0] = { message: "Voice Watchdog Timeout" };
               c5 = 2;
@@ -2232,12 +2232,12 @@ prototype["initialize"] = function initialize() {
     let closure_2 = closure_82 < 3;
     closure_82 = closure_82 + 1;
     _pollMetrics(709).wait(() => {
-      let obj = callback(outer1_3[43]);
+      let obj = callback(outer1_3[44]);
       obj = { type: "CLIPS_INIT_FAILURE", errMsg: closure_0, applicationName: callback };
       obj.dispatch(obj);
       if (closure_2) {
-        callback(outer1_3[43]).dispatch({ type: "CLIPS_RESTART" });
-        const tmpResult = callback(outer1_3[43]);
+        callback(outer1_3[44]).dispatch({ type: "CLIPS_RESTART" });
+        const tmpResult = callback(outer1_3[44]);
       } else {
         const _HermesInternal = HermesInternal;
         outer1_57.warn("Clips init failure budget exhausted (" + closure_82 + " consecutive unhealthy attempts); skipping auto-restart. A settings flip / game change / app restart will retry.");
@@ -2282,8 +2282,8 @@ prototype["initialize"] = function initialize() {
         tmp3 = soundshareId !== soundshareId;
       }
       if (tmp3) {
-        const result = callback(13170).cancelAttachToProcess(soundshareId);
-        const obj = callback(13170);
+        const result = callback(13182).cancelAttachToProcess(soundshareId);
+        const obj = callback(13182);
       }
       desktopSource2 = null;
     }
@@ -2310,14 +2310,14 @@ prototype["initialize"] = function initialize() {
   });
   store3.on(pollMetrics(4441).MediaEngineEvent.VideoCodecError, (mode) => {
     if ("encode" === mode.mode) {
-      let VIDEO_DECODE_ERROR = pollMetrics(9219).AVError.VIDEO_ENCODE_ERROR;
+      let VIDEO_DECODE_ERROR = pollMetrics(9233).AVError.VIDEO_ENCODE_ERROR;
       let tmp3 = pollMetrics;
     } else {
-      VIDEO_DECODE_ERROR = pollMetrics(9219).AVError.VIDEO_DECODE_ERROR;
+      VIDEO_DECODE_ERROR = pollMetrics(9233).AVError.VIDEO_DECODE_ERROR;
       tmp3 = pollMetrics;
     }
     let obj = { videoCodec: mode.codecStandard, errorMessage: mode.message };
-    if (VIDEO_DECODE_ERROR === tmp3(9219).AVError.VIDEO_ENCODE_ERROR) {
+    if (VIDEO_DECODE_ERROR === tmp3(9233).AVError.VIDEO_ENCODE_ERROR) {
       obj = { type: null };
       obj[0] = VIDEO_DECODE_ERROR;
       const merged = Object.assign(obj);
@@ -2328,7 +2328,7 @@ prototype["initialize"] = function initialize() {
       const merged1 = Object.assign(obj);
       obj.videoDecoder = mode.implName;
     }
-    tmp3(9219).reportAVError(obj);
+    tmp3(9233).reportAVError(obj);
   });
   store3.on(pollMetrics(4441).MediaEngineEvent.ConnectionStats, (arr) => {
     let obj = _pollMetrics(709);
@@ -2356,7 +2356,7 @@ prototype["initialize"] = function initialize() {
     const _pollMetrics = arg1;
     let closure_2 = arg2;
     _pollMetrics(709).wait(() => {
-      let obj = callback(outer1_3[43]);
+      let obj = callback(outer1_3[44]);
       obj = { type: "VIDEO_SIZE_UPDATE", streamId: closure_0, dimensions: obj };
       obj = { width: callback, height: closure_2 };
       return obj.dispatch(obj);
@@ -2422,7 +2422,7 @@ prototype["initialize"] = function initialize() {
     obj[31] = store3.supports(constants3.VIDEO_HOOK);
     obj.defaultsDeep(modeOptions, obj);
     if (tmp8) {
-      let tmp2Result = tmp2(13232);
+      let tmp2Result = tmp2(13244);
       modeOptions.modeOptions.shortcut = tmp2Result.toCombo(modeOptions.modeOptions.shortcut);
     }
     let tmp9 = null != modeOptions.modeOptions;
@@ -2563,7 +2563,7 @@ prototype["initialize"] = function initialize() {
                         closure_1 = undefined;
                         const promise = new Promise((arg0) => {
                           let closure_0 = arg0;
-                          callback(table[64]).pollQueueMetrics((arg0) => {
+                          callback(table[65]).pollQueueMetrics((arg0) => {
                             callback(arg0);
                           });
                         });
@@ -2586,7 +2586,7 @@ prototype["initialize"] = function initialize() {
                       closure_0.periodMs = outer1_52;
                       closure_1 = outer1_166(closure_0);
                       if (null !== closure_1) {
-                        obj = outer1_1(table[42]);
+                        obj = outer1_1(table[43]);
                         obj.track(outer1_18.VOICE_QUEUE_METRICS, closure_1);
                       }
                       const _setTimeout = setTimeout;
@@ -2738,14 +2738,32 @@ prototype["initialize"] = function initialize() {
   }
 };
 prototype["supports"] = function supports(arg0) {
-  return store3.supports(arg0);
-};
-prototype["supportsInApp"] = function supportsInApp(arg0) {
-  let supportsResult = table2[arg0];
-  if (!supportsResult) {
+  let tmp = arg0 === Features.VIDEO;
+  if (tmp) {
+    const VideoGuardExperiment = require(13178) /* articleURL */.VideoGuardExperiment;
+    tmp = !VideoGuardExperiment.getConfig({ location: "MediaEngineStore.supports" }).videoEnabled;
+  }
+  let supportsResult = !tmp;
+  if (!tmp) {
     supportsResult = store3.supports(arg0);
   }
   return supportsResult;
+};
+prototype["supportsInApp"] = function supportsInApp(arg0) {
+  let tmp = arg0 === Features.VIDEO;
+  if (tmp) {
+    const VideoGuardExperiment = require(13178) /* articleURL */.VideoGuardExperiment;
+    tmp = !VideoGuardExperiment.getConfig({ location: "MediaEngineStore.supportsInApp" }).videoEnabled;
+  }
+  let tmp4 = !tmp;
+  if (!tmp) {
+    let supportsResult = table2[arg0];
+    if (!supportsResult) {
+      supportsResult = store3.supports(arg0);
+    }
+    tmp4 = supportsResult;
+  }
+  return tmp4;
 };
 prototype["isSupported"] = function isSupported() {
   return store3.supported();
@@ -2853,8 +2871,8 @@ prototype["isSelfMute"] = function isSelfMute(DEFAULT) {
     mute = getSettings(DEFAULT).mute;
   }
   if (!mute) {
-    mute = !importDefault(4902).didHavePermission(NativePermissionTypes.AUDIO);
-    const obj = importDefault(4902);
+    mute = !importDefault(4924).didHavePermission(NativePermissionTypes.AUDIO);
+    const obj = importDefault(4924);
   }
   if (!mute) {
     mute = self.isSelfDeaf(DEFAULT);
@@ -3318,8 +3336,8 @@ prototype["supportsExperimentalSoundshare"] = function supportsExperimentalSound
     if (tmp4 != null) {
       release = tmp4.os.release;
     }
-    supportsResult = importDefault(13181).satisfies(release, closure_31);
-    const obj = importDefault(13181);
+    supportsResult = importDefault(13193).satisfies(release, closure_31);
+    const obj = importDefault(13193);
   }
   return supportsResult;
 };
@@ -3334,8 +3352,8 @@ prototype["supportsHookSoundshare"] = function supportsHookSoundshare() {
     if (tmp6 != null) {
       release = tmp6.os.release;
     }
-    isWindowsResult = importDefault(13181).satisfies(release, closure_30);
-    const obj2 = importDefault(13181);
+    isWindowsResult = importDefault(13193).satisfies(release, closure_30);
+    const obj2 = importDefault(13193);
   }
   return isWindowsResult;
 };
@@ -3381,7 +3399,7 @@ prototype["getVideoEncoderExperiments"] = function getVideoEncoderExperiments(ST
   }
   if (isWindowsResult) {
     arr.push("useCaptureDeviceForEncode");
-    const VideoCaptureDeviceNoReuseExperiment = tmp6(13245).VideoCaptureDeviceNoReuseExperiment;
+    const VideoCaptureDeviceNoReuseExperiment = tmp6(13257).VideoCaptureDeviceNoReuseExperiment;
     if (VideoCaptureDeviceNoReuseExperiment.getConfig({ location: "handleReady" }).overrideDeviceReuse) {
       arr.push("videoCaptureDeviceOverrideReuse");
     }
@@ -3423,8 +3441,8 @@ prototype["supportsScreenSoundshare"] = function supportsScreenSoundshare() {
       if (tmp12 != null) {
         release = tmp12.os.release;
       }
-      supportsResult = importDefault(13181).satisfies(release, closure_25);
-      const obj5 = importDefault(13181);
+      supportsResult = importDefault(13193).satisfies(release, closure_25);
+      const obj5 = importDefault(13193);
     }
     if (supportsResult) {
       let tmpResult = tmp(500);
@@ -3435,8 +3453,8 @@ prototype["supportsScreenSoundshare"] = function supportsScreenSoundshare() {
         if (tmp18 != null) {
           release1 = tmp18.os.release;
         }
-        satisfiesResult = importDefault(13181).satisfies(release1, closure_24);
-        const obj7 = importDefault(13181);
+        satisfiesResult = importDefault(13193).satisfies(release1, closure_24);
+        const obj7 = importDefault(13193);
       }
       supportsResult = satisfiesResult;
     }
@@ -3508,7 +3526,7 @@ prototype["getVideoStreamParameters"] = function getVideoStreamParameters(contex
       enableSimulcast = DEFAULT === MediaEngineContextTypes.DEFAULT;
     }
     if (enableSimulcast) {
-      const DisableCameraSimulcastExperiment = require(13246) /* apexExperiment */.DisableCameraSimulcastExperiment;
+      const DisableCameraSimulcastExperiment = require(13258) /* apexExperiment */.DisableCameraSimulcastExperiment;
       enableSimulcast = DisableCameraSimulcastExperiment.getConfig({ location: "MediaEngineStore.getVideoStreamParameters" }).enableSimulcast;
     }
     if (enableSimulcast) {
@@ -3532,7 +3550,7 @@ prototype["startDavePreload"] = function startDavePreload() {
       const asyncResources = store3.fetchAsyncResources({ fetchDave: true });
       asyncResources.catch((arg0) => {
         logger.warn("DAVE preload failed:", arg0);
-        callback(table[78]).captureException(arg0);
+        callback(table[79]).captureException(arg0);
       });
     }
     obj = require(500) /* set */;
@@ -3676,7 +3694,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     let tmp2Result = tmp2(500);
     let enabled = tmp2Result.isIOS();
     if (enabled) {
-      tmp2Result = tmp2(13239);
+      tmp2Result = tmp2(13251);
       enabled = tmp2Result.getIOSAudioInterruptExperimentConfig("handleConnectionOpen").enabled;
     }
     if (enabled) {
@@ -3685,20 +3703,20 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     const obj = require(500) /* set */;
     const tmp2Result1 = require(500) /* set */;
     if (tmp17) {
-      const obj7 = importDefault(5391);
-      const setMklZenOverrideEnabled = importDefault(5391).requireModule("discord_krisp").setMklZenOverrideEnabled;
+      const obj7 = importDefault(5412);
+      const setMklZenOverrideEnabled = importDefault(5412).requireModule("discord_krisp").setMklZenOverrideEnabled;
       if (setMklZenOverrideEnabled != null) {
-        const result1 = setMklZenOverrideEnabled(tmp2(13240).getMklZenOverrideExperimentConfig("handleConnectionOpen").enabled);
-        const tmp2Result2 = tmp2(13240);
+        const result1 = setMklZenOverrideEnabled(tmp2(13252).getMklZenOverrideExperimentConfig("handleConnectionOpen").enabled);
+        const tmp2Result2 = tmp2(13252);
       }
-      const requireModuleResult = importDefault(5391).requireModule("discord_krisp");
+      const requireModuleResult = importDefault(5412).requireModule("discord_krisp");
     }
     tmp17 = require(500) /* set */.isWindows() && c109;
     if (tmp2Result3.isIOS()) {
       const setNcModels = obj3.setNcModels;
       if (setNcModels != null) {
-        setNcModels(tmp2(13241).getKrispV9iOSModels());
-        const tmp2Result4 = tmp2(13241);
+        setNcModels(tmp2(13253).getKrispV9iOSModels());
+        const tmp2Result4 = tmp2(13253);
       }
       mediaEngineStore.emitChange();
     }
@@ -3711,10 +3729,10 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
           guid = tmp28.guid;
         }
         if (null != guid) {
-          tmp26(13237)(tmp28.guid, inputDeviceId, obj3);
+          tmp26(13249)(tmp28.guid, inputDeviceId, obj3);
         }
       }
-      obj12 = importDefault(13236);
+      obj12 = importDefault(13248);
       tmp26 = importDefault;
     }
     applyRemoteSettings();
@@ -3732,7 +3750,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     state = state.state;
     if (constants3.CONNECTING === state) {
       if (!closure_79) {
-        store3.enable().then(() => disabledLocalVideos(table[43]).dispatch({ type: "MEDIA_ENGINE_SET_AUDIO_ENABLED", enabled: true, unmute: false }));
+        store3.enable().then(() => disabledLocalVideos(table[44]).dispatch({ type: "MEDIA_ENGINE_SET_AUDIO_ENABLED", enabled: true, unmute: false }));
         const enableResult = store3.enable();
       }
     } else if (tmp.RTC_CONNECTING === state) {
@@ -3755,7 +3773,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
         disabledLocalVideos = getSettings(DEFAULT2).disabledLocalVideos;
         const item = arr.forEach((arg0) => {
           let closure_0 = arg0;
-          disabledLocalVideos(outer1_3[73])(disabledLocalVideos[arg0], "If you are auto-disabled, then you are also disabled.");
+          disabledLocalVideos(outer1_3[74])(disabledLocalVideos[arg0], "If you are auto-disabled, then you are also disabled.");
           delete tmp[tmp2];
           outer1_72.eachConnection((setLocalVideoDisabled) => setLocalVideoDisabled.setLocalVideoDisabled(closure_0, false), closure_0);
         });
@@ -3810,7 +3828,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     const tmp = getSettings(context);
     let flag = tmp.deaf;
     if (context === MediaEngineContextTypes.DEFAULT) {
-      let obj = importDefault(4902);
+      let obj = importDefault(4924);
       const permission = obj.requestPermission(NativePermissionTypes.AUDIO);
       if (c92) {
         return false;
@@ -4130,7 +4148,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
         }
       }
       if (isAutomatic) {
-        tmp3(13163)(userId, tmp12 ? constants12.AUTO_DISABLE : constants12.AUTO_ENABLE, tmp11);
+        tmp3(13174)(userId, tmp12 ? constants12.AUTO_DISABLE : constants12.AUTO_ENABLE, tmp11);
         if (tmp12) {
           obj.add(userId);
         } else {
@@ -4148,10 +4166,10 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
                 videoHealthManager1.disable();
               }
             }
-            tmp3(13163)(userId, constants12.MANUAL_REENABLE, tmp11);
+            tmp3(13174)(userId, constants12.MANUAL_REENABLE, tmp11);
           }
         }
-        tmp3(13163)(userId, tmp12 ? constants12.MANUAL_DISABLE : constants12.MANUAL_ENABLE, tmp11);
+        tmp3(13174)(userId, tmp12 ? constants12.MANUAL_DISABLE : constants12.MANUAL_ENABLE, tmp11);
       }
       if (tmp19) {
         tmp19 = !tmp12;
@@ -4216,7 +4234,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
         return setLocalVideoDisabled.setLocalVideoDisabled(userId, flag);
       }, context);
     } else {
-      tmp3(13163)(userId, tmp12 ? constants12.AUTO_DISABLE : constants12.AUTO_ENABLE, tmp11);
+      tmp3(13174)(userId, tmp12 ? constants12.AUTO_DISABLE : constants12.AUTO_ENABLE, tmp11);
     }
   },
   AUDIO_SET_LOCAL_VOLUME: function handleSetLocalVolume(volume) {
@@ -4313,7 +4331,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     const merged1 = Object.assign(tmp3, { audioMixerSettings: settings });
     const Storage = require(595) /* Storage */.Storage;
     const result = Storage.set(MediaEngineStore, dependencyMap);
-    let supportsResult = true === settings.enabled && importDefault(13162).getConfig({ location: "MediaEngineStore" }).enabled;
+    let supportsResult = true === settings.enabled && importDefault(13173).getConfig({ location: "MediaEngineStore" }).enabled;
     if (supportsResult) {
       supportsResult = store3.supports(Features.SPATIAL_AUDIO);
     }
@@ -4547,10 +4565,10 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
           guid = tmp22.guid;
         }
         if (null != guid) {
-          tmp20(13237)(tmp22.guid, id, obj5);
+          tmp20(13249)(tmp22.guid, id, obj5);
         }
       }
-      obj7 = importDefault(13236);
+      obj7 = importDefault(13248);
       tmp20 = importDefault;
     }
     store3.eachConnection(updateConnectionVoiceProcessing);
@@ -4859,7 +4877,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
       const automaticGainControl = tmp.automaticGainControl;
       let obj = { enabled: automaticGainControl };
       obj = { location: "getAutomaticGainControlConfig", disable: !automaticGainControl };
-      const merged = Object.assign(tmp(outer1_3[29]).getAGC2ExperimentConfig(obj).noiseCancellationConfig);
+      const merged = Object.assign(tmp(outer1_3[30]).getAGC2ExperimentConfig(obj).noiseCancellationConfig);
       const result = setAutomaticGainControl.setAutomaticGainControl(obj);
     });
     setLoopback();
@@ -4903,12 +4921,12 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     require = tmp;
     store3.eachConnection((setNoiseCancellation) => {
       const noiseCancellation = tmp.noiseCancellation;
-      const tmp2Result = outer1_1(outer1_3[44])(noiseCancellation, outer1_69.getSystemMicrophoneMode());
+      const tmp2Result = outer1_1(outer1_3[45])(noiseCancellation, outer1_69.getSystemMicrophoneMode());
       if (tmp2Result !== noiseCancellation) {
         outer1_57.info("Falling back to system noise suppression.");
       }
       setNoiseCancellation.setNoiseCancellation(tmp2Result);
-      let obj = tmp(tmp[29]);
+      let obj = tmp(tmp[30]);
       obj = { location: "setNoiseCancellation", disable: !tmp2Result };
       const result = setNoiseCancellation.setNoiseCancellationDuringProcessing(obj.getAGC2ExperimentConfig(obj).noiseCancellationDuringProcessing);
     });
@@ -4916,7 +4934,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     trackVoiceProcessing(enabled.location);
   },
   AUDIO_SET_KRISP_MODEL_OVERRIDE: function handleSetKrispModelOverride(model) {
-    const result = importDefault(13146).setKrispModelOverride(model.model);
+    const result = importDefault(13157).setKrispModelOverride(model.model);
     model = model.model;
     setLoopback();
   },
@@ -4961,7 +4979,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
   },
   AUDIO_SET_KRISP_SUPPRESSION_LEVEL: function handleSetKrispSuppressionLevel(level) {
     level = level.level;
-    const result = importDefault(13146).setKrispSuppressionLevel(level);
+    const result = importDefault(13157).setKrispSuppressionLevel(level);
   },
   AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS: function handleSetNoiseCancellationEnableStats(enabled) {
     if (!obj.isWeb()) {
@@ -5161,7 +5179,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     _require = videoDevices;
     const arr = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[constants8.AUDIO_INPUT]];
     if (0 === arr.length) {
-      let obj = { id: null, index: 0, name: null, disabled: true, guid: "call", hardwareId: "set", containerId: "isArray" };
+      let obj = { id: null, index: 0, name: null, disabled: true, guid: "call", hardwareId: "it", containerId: "hd" };
       obj[0] = DEFAULT_DEVICE_ID;
       obj[2] = tmp5;
       obj = {};
@@ -5281,7 +5299,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
                   }
                 }
                 WEBCAM = outer1_68.BLUETOOTH;
-                obj2 = outer1_1(outer1_3[32])(id.hardwareId);
+                obj2 = outer1_1(outer1_3[33])(id.hardwareId);
               }
             }
             WEBCAM = outer1_68.INTEGRATED;
@@ -5313,14 +5331,14 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
       }
       store3.setAudioInputDevice(id);
       if (tmp3Result.isWindows()) {
-        let tmp9Result = tmp9(13236);
+        let tmp9Result = tmp9(13248);
         if (tmp9Result.getConfig({ location: "MediaEngineStore.setInputDevice" }).probeAudioEffects) {
           let guid;
           if (valueResult[id] != null) {
             guid = tmp18.guid;
           }
           if (null != guid) {
-            tmp9(13237)(tmp18.guid, id, obj7);
+            tmp9(13249)(tmp18.guid, id, obj7);
           }
         }
       }
@@ -5331,7 +5349,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     _require = videoDevices;
     const arr3 = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[constants8.AUDIO_OUTPUT]];
     if (0 === arr3.length) {
-      const obj1 = { id: null, index: 0, name: null, disabled: true, guid: "call", hardwareId: "set", containerId: "isArray" };
+      const obj1 = { id: null, index: 0, name: null, disabled: true, guid: "call", hardwareId: "it", containerId: "hd" };
       obj1[0] = DEFAULT_DEVICE_ID;
       obj1[2] = tmp24;
       let obj2 = {};
@@ -5451,7 +5469,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
                   }
                 }
                 WEBCAM = outer1_68.BLUETOOTH;
-                obj2 = outer1_1(outer1_3[32])(id.hardwareId);
+                obj2 = outer1_1(outer1_3[33])(id.hardwareId);
               }
             }
             WEBCAM = outer1_68.INTEGRATED;
@@ -5510,7 +5528,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     _require = videoDevices;
     const arr5 = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[constants8.VIDEO_INPUT]];
     if (0 === arr5.length) {
-      obj3 = { id: null, index: 0, name: null, disabled: true, guid: "call", hardwareId: "set", containerId: "isArray" };
+      obj3 = { id: null, index: 0, name: null, disabled: true, guid: "call", hardwareId: "it", containerId: "hd" };
       obj3[0] = DEFAULT_DEVICE_ID;
       obj3[2] = tmp41;
       obj4 = {};
@@ -5630,7 +5648,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
                   }
                 }
                 WEBCAM = outer1_68.BLUETOOTH;
-                obj2 = outer1_1(outer1_3[32])(id.hardwareId);
+                obj2 = outer1_1(outer1_3[33])(id.hardwareId);
               }
             }
             WEBCAM = outer1_68.INTEGRATED;
@@ -5655,7 +5673,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
           }
           tmp48 = disabled;
         }
-        let tmp52 = "Firefox" === tmp9(4663).name;
+        let tmp52 = "Firefox" === tmp9(4685).name;
         if (tmp52) {
           tmp52 = "" === DISABLED_DEVICE_ID;
         }
@@ -5745,20 +5763,20 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
         timeout2.stop();
       } else if (getSettings().mode === InputModes.VOICE_ACTIVITY) {
         if (c102) {
-          const config = importDefault(13242).getConfig({ location: "MediaEngineStore.handleInputDetected" });
+          const config = importDefault(13254).getConfig({ location: "MediaEngineStore.handleInputDetected" });
           const resetSilenceWarningAfterNMinutes = config.resetSilenceWarningAfterNMinutes;
           if (config.enableHardwareSilenceWarning) {
             timeout3.start(MINUTE, () => {
-              let obj = callback(table[42]);
+              let obj = callback(table[43]);
               let id = callback2().inputDeviceId;
               let firstResult = table2[id];
               if (firstResult == null) {
                 firstResult = tmp3[closure_42];
               }
               if (firstResult == null) {
-                const values = callback(table[32])(tmp3).values();
+                const values = callback(table[33])(tmp3).values();
                 firstResult = values.first();
-                const obj2 = callback(table[32])(tmp3);
+                const obj2 = callback(table[33])(tmp3);
               }
               if (null != firstResult) {
                 id = firstResult.id;
@@ -5779,7 +5797,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
               navigation.reset();
             });
           }
-          let obj = importDefault(13242);
+          let obj = importDefault(13254);
           tmp3 = importDefault;
         }
       }
@@ -5835,9 +5853,9 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     const tmp12 = require;
     const tmp17 = closure_13.hasEchoCancellation(inputDeviceId) || tmp16.echoCancellation;
     const tmp18 = closure_13.hasNoiseSuppression(inputDeviceId) || tmp16.noiseSuppression;
-    const tmp19 = importDefault(10836);
-    const tmp19Result = importDefault(10836)(tmp16.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
-    const voiceFidelityCaps = tmp12(13177).getVoiceFidelityCaps({ location: "updateVoiceFidelityCaps" }, { krispEnabled: tmp19Result, noiseSuppressionEnabled: tmp18, echoCancellationEnabled: tmp17 });
+    const tmp19 = importDefault(10852);
+    const tmp19Result = importDefault(10852)(tmp16.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
+    const voiceFidelityCaps = tmp12(13189).getVoiceFidelityCaps({ location: "updateVoiceFidelityCaps" }, { krispEnabled: tmp19Result, noiseSuppressionEnabled: tmp18, echoCancellationEnabled: tmp17 });
     const result2 = obj3.setVoiceSampleRateCap(voiceFidelityCaps.maxSampleRateHz);
     const result3 = obj3.setVoiceChannelCountCap(voiceFidelityCaps.maxChannelCount);
     trackVoiceProcessing(bypassEnabled.location);
@@ -5883,7 +5901,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     store3.eachConnection(updateConnectionMuteDeaf);
   },
   MEDIA_ENGINE_SET_VIDEO_ENABLED: function handleSetVideoEnabled(enabled) {
-    const permission = importDefault(4902).requestPermission(NativePermissionTypes.CAMERA);
+    const permission = importDefault(4924).requestPermission(NativePermissionTypes.CAMERA);
     updateVideo(enabled.enabled);
   },
   MEDIA_ENGINE_PERMISSION: function handlePermission(kind) {
@@ -6068,7 +6086,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
   },
   APP_STATE_UPDATE: function handleFocus(state) {
     state = state.state;
-    importDefault(9816);
+    importDefault(9827);
     if (state === constants2.BACKGROUND) {
       if (c94) {
         if (!tmp2) {
@@ -6191,7 +6209,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     const merged1 = Object.assign(tmp, { openH264Enabled: enabled });
     const Storage = require(595) /* Storage */.Storage;
     const result = Storage.set(MediaEngineStore, dependencyMap);
-    const tmp13 = importDefault(5391);
+    const tmp13 = importDefault(5412);
     if (tmp13 != null) {
       const setOpenH264Enabled = tmp13.setOpenH264Enabled;
       if (setOpenH264Enabled != null) {
@@ -6221,7 +6239,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
       obj[31] = outer1_72.supports(outer1_46.VIDEO_HOOK);
       const tmp = outer1_3;
       const tmp2 = overrides(outer1_3[24]).isPlatformEmbedded || false;
-      arg0[arg1] = outer1_1(outer1_3[32]).merge(obj, overrides[arg1]);
+      arg0[arg1] = outer1_1(outer1_3[33]).merge(obj, overrides[arg1]);
       return arg0;
     }, {});
     const Storage = overrides(595).Storage;
@@ -6243,12 +6261,12 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
       let closure_0 = getSettings();
       store3.eachConnection((setNoiseCancellation) => {
         const noiseCancellation = lib.noiseCancellation;
-        const tmp2Result = outer1_1(outer1_3[44])(noiseCancellation, outer1_69.getSystemMicrophoneMode());
+        const tmp2Result = outer1_1(outer1_3[45])(noiseCancellation, outer1_69.getSystemMicrophoneMode());
         if (tmp2Result !== noiseCancellation) {
           outer1_57.info("Falling back to system noise suppression.");
         }
         setNoiseCancellation.setNoiseCancellation(tmp2Result);
-        let obj = lib(outer1_3[29]);
+        let obj = lib(outer1_3[30]);
         obj = { location: "setNoiseCancellation", disable: !tmp2Result };
         const result = setNoiseCancellation.setNoiseCancellationDuringProcessing(obj.getAGC2ExperimentConfig(obj).noiseCancellationDuringProcessing);
       });
@@ -6324,7 +6342,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
           let tmpResult = tmp(500);
           if (tmpResult.isWindows()) {
             if (null != obj.desktopSource.soundshareId) {
-              let obj2 = importAll(13170);
+              let obj2 = importAll(13182);
               const result = obj2.cancelAttachToProcess(obj.desktopSource.soundshareId);
             } else {
               let videoHook = null != obj.desktopSource.sourcePid;
@@ -6332,7 +6350,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
                 videoHook = getSettings().videoHook;
               }
               if (videoHook) {
-                let obj1 = importAll(13170);
+                let obj1 = importAll(13182);
                 const result1 = obj1.cancelAttachToProcess(obj.desktopSource.sourcePid);
               }
             }
@@ -6347,19 +6365,19 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
         ({ soundshareId: obj6[2], soundshareSession: obj6[3] } = maybeTryHookProcess(pidFromDesktopSource, true));
         obj[0] = obj;
         obj[1] = quality;
-        tmpResult = tmp(13167);
+        tmpResult = tmp(13179);
         const videoHook2 = getSettings().videoHook;
         let tmp21 = !videoHook2;
         if (videoHook2) {
-          const DisableHookFramePacerExperiment = tmp(13173).DisableHookFramePacerExperiment;
+          const DisableHookFramePacerExperiment = tmp(13185).DisableHookFramePacerExperiment;
           tmp21 = !DisableHookFramePacerExperiment.getConfig({ location: "handleClipsInit" }).enabled;
         }
         let enabled = videoHook2;
         if (videoHook2) {
-          const VideoHookDX12Experiment = tmp(13174).VideoHookDX12Experiment;
+          const VideoHookDX12Experiment = tmp(13186).VideoHookDX12Experiment;
           enabled = VideoHookDX12Experiment.getConfig({ location: "handleClipsInit" }).enabled;
         }
-        const UpscaleSmallCapturedFramesExperiment = tmp(13175).UpscaleSmallCapturedFramesExperiment;
+        const UpscaleSmallCapturedFramesExperiment = tmp(13187).UpscaleSmallCapturedFramesExperiment;
         const config = UpscaleSmallCapturedFramesExperiment.getConfig({ location: "handleClipsInit" });
         obj1 = { id: null, soundshareId: null, useVideoHook: null, useHookFramePacer: null, useGraphicsCapture: null, useCaptureDeviceForEncode: false, useLoopback: null, useQuartzCapturer: true, allowScreenCaptureKit: null, videoHookStaleFrameTimeoutMs: 500, graphicsCaptureStaleFrameTimeoutMs: null, hdrCaptureMode: null, videoHookAllowDx12: null, minCaptureWidth: null, minCaptureHeight: null };
         obj1[0] = obj.desktopSource.id;
@@ -6371,7 +6389,7 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
         const tmp19 = maybeTryHookProcess(pidFromDesktopSource, true);
         let isWindowsResult = tmp(500).isWindows();
         if (isWindowsResult) {
-          tmp3Result = tmp3(13181);
+          tmp3Result = tmp3(13193);
           const tmp3Result1 = tmp3(3972);
           let release;
           if (tmp3Result1 != null) {
@@ -6393,8 +6411,8 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
           if (tmp3Result3 != null) {
             release1 = tmp3Result3.os.release;
           }
-          isMacResult = tmp3(13181).satisfies(release1, closure_24);
-          const tmp3Result2 = tmp3(13181);
+          isMacResult = tmp3(13193).satisfies(release1, closure_24);
+          const tmp3Result2 = tmp3(13193);
         }
         obj2 = { desktopDescription: null, quality: null, bitratePercent: null, applicationName: null, videoEncoderExperiments: null };
         obj1[8] = isMacResult;
@@ -6436,9 +6454,9 @@ const mediaEngineStore = new MediaEngineStore(require("dispatcher"), {
     const obj = closure_13;
     const tmp2 = closure_13.hasEchoCancellation(inputDeviceId) || tmp.echoCancellation;
     const tmp3 = closure_13.hasNoiseSuppression(inputDeviceId) || tmp.noiseSuppression;
-    const tmp4 = importDefault(10836);
-    const tmp4Result = importDefault(10836)(tmp.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
-    const voiceFidelityCaps = require(13177) /* getAudioFidelityExperimentConfig */.getVoiceFidelityCaps({ location: "updateVoiceFidelityCaps" }, { krispEnabled: tmp4Result, noiseSuppressionEnabled: tmp3, echoCancellationEnabled: tmp2 });
+    const tmp4 = importDefault(10852);
+    const tmp4Result = importDefault(10852)(tmp.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
+    const voiceFidelityCaps = require(13189) /* getAudioFidelityExperimentConfig */.getVoiceFidelityCaps({ location: "updateVoiceFidelityCaps" }, { krispEnabled: tmp4Result, noiseSuppressionEnabled: tmp3, echoCancellationEnabled: tmp2 });
     const result = store3.setVoiceSampleRateCap(voiceFidelityCaps.maxSampleRateHz);
     const result1 = store3.setVoiceChannelCountCap(voiceFidelityCaps.maxChannelCount);
   }

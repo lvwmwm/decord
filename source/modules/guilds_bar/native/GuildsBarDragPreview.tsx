@@ -1,9 +1,9 @@
-// Module ID: 15555
-// Function ID: 15556
+// Module ID: 15573
+// Function ID: 15574
 // Name: PreviewItem
-// Dependencies: [19, 5196, 15479, 15480, 21, 4342, 15225, 4083, 4754, 8054, 4689, 4065, 712, 15489, 15511, 3974, 2]
+// Dependencies: [19, 5217, 15497, 15498, 21, 4342, 15239, 4083, 4776, 8075, 4711, 4065, 712, 15507, 15529, 3974, 2]
 
-// Module 15555 (PreviewItem)
+// Module 15573 (PreviewItem)
 import importAllResult from "noop";
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import withEqualityFn from "withEqualityFn";
@@ -139,7 +139,7 @@ function PreviewItem(dragRegion) {
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "accessibilityRole", expanded: true, children: true };
+        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "call", expanded: "call", children: "label" };
         obj[0] = listInsets.FOLDER;
         const items = [tmp2];
         obj[6] = items;
@@ -356,7 +356,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "VOICE", scrollPosition: "absolute", dragRegion: "50%", windowSize: "50%", dropComplete: null, listInsets: null };
+          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "DELETE_PENDING_REPLY", scrollPosition: null, dragRegion: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z", windowSize: "primary", dropComplete: "md", listInsets: null };
           ({ node: obj[0], itemSize: obj[1] } = dragSpecs);
           obj[2] = state;
           let node;

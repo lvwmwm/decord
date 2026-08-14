@@ -1,9 +1,9 @@
-// Module ID: 4580
-// Function ID: 4581
+// Module ID: 4602
+// Function ID: 4603
 // Name: handleSubscribeFailure
 // Dependencies: [4241, 589, 709, 2]
 
-// Module 4580 (handleSubscribeFailure)
+// Module 4602 (handleSubscribeFailure)
 import { Store } from "initialize";
 
 const require = arg1;

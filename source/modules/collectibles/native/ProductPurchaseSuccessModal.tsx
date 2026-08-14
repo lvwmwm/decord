@@ -1,10 +1,10 @@
-// Module ID: 10172
-// Function ID: 10173
+// Module ID: 10186
+// Function ID: 10187
 // Name: CancelButton
-// Dependencies: [32, 853, 19, 17, 4334, 676, 21, 4342, 712, 1949, 10171, 5317, 5366, 1236, 4083, 4754, 4343, 4311, 7059, 10173, 4065, 4766, 9398, 10175, 589, 10176, 10177, 9473, 8944, 9488, 9424, 5368, 10185, 9425, 9437, 9496, 9603, 10204, 4338, 7061, 4755, 2]
+// Dependencies: [32, 853, 19, 17, 4334, 676, 21, 4342, 712, 1949, 10185, 5338, 5387, 1236, 4083, 4776, 4343, 4311, 7081, 10187, 4065, 4788, 9412, 10189, 589, 10190, 10191, 9486, 8958, 9501, 9438, 5389, 10199, 9439, 9451, 9509, 9616, 10218, 4338, 7083, 4777, 2]
 // Exports: default
 
-// Module 10172 (CancelButton)
+// Module 10186 (CancelButton)
 import BalanceWidgetPill from "BalanceWidgetPill";
 import _toArray from "_toArray";
 import importDefaultResult1 from "importDefaultResult1";
@@ -48,7 +48,7 @@ function CancelButton(arg0) {
   };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
-  return callback(require(5317) /* Background */.HeaderBackButton, obj);
+  return callback(require(5338) /* Background */.HeaderBackButton, obj);
 }
 function ProductPurchaseGradientBackground(product) {
   product = product.product;
@@ -412,7 +412,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       obj13[1] = tmp26;
       let tmp30Result = null != tmp25;
       if (tmp30Result) {
-        const obj14 = { deco: null, pfx: null, nameplate: null, previewAssets: null, disableStaticBackground: true, size: "large", targetSize: null, exposureLocation: "ProductPurchaseSuccessModal" };
+        const obj14 = { deco: null, pfx: null, nameplate: null, previewAssets: null, disableStaticBackground: true, size: "large", targetSize: null };
         ({ firstAvatarDecoration: obj35[0], firstProfileEffect: obj35[1], firstNameplate: obj35[2] } = shopProductItems);
         obj14[3] = product.previewAssets;
         obj14[6] = tmp25;

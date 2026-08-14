@@ -1,10 +1,10 @@
-// Module ID: 6279
-// Function ID: 6280
+// Module ID: 6300
+// Function ID: 6301
 // Name: DisplayNameAbstractUI
-// Dependencies: [21, 5308, 6280, 2]
+// Dependencies: [21, 5329, 6301, 2]
 // Exports: DisplayNameAbstractUI
 
-// Module 6279 (DisplayNameAbstractUI)
+// Module 6300 (DisplayNameAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const DisplayNameAbstractUI = function DisplayNameAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6280);
+  obj[0] = importDefault(6301);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const DisplayNameAbstractUI = function DisplayNameAbstractUI(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
 };

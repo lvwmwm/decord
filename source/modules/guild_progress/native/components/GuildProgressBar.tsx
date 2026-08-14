@@ -1,10 +1,10 @@
-// Module ID: 13392
-// Function ID: 13393
+// Module ID: 13404
+// Function ID: 13405
 // Name: GuildProgressBar
-// Dependencies: [19, 17, 21, 4342, 11898, 712, 4083, 4343, 4346, 2]
+// Dependencies: [19, 17, 21, 4342, 11914, 712, 4083, 4343, 4346, 2]
 // Exports: default
 
-// Module 13392 (GuildProgressBar)
+// Module 13404 (GuildProgressBar)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

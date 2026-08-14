@@ -1,10 +1,10 @@
-// Module ID: 15349
-// Function ID: 15350
+// Module ID: 15364
+// Function ID: 15365
 // Name: handleCreateCategory
-// Dependencies: [19, 21, 4310, 15350, 9759, 9762, 12198, 5804, 5436, 1236, 5806, 3047, 12171, 15351, 2]
+// Dependencies: [19, 21, 4310, 15365, 9770, 9773, 12216, 5825, 5457, 1236, 5827, 3047, 12189, 15366, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 15349 (handleCreateCategory)
+// Module 15364 (handleCreateCategory)
 import noop from "noop";
 import jsxProd from "jsxProd";
 
@@ -14,7 +14,7 @@ const require = arg1;
 function handleCreateCategory() {
   importDefault(4310).hideActionSheet(FavoritesGuildAddActionSheet);
   const obj = importDefault(4310);
-  const result = require(15350) /* FavoritesGuildAddCategoryActionSheet */.openFavoritesGuildAddCategoryActionSheet();
+  const result = require(15365) /* FavoritesGuildAddCategoryActionSheet */.openFavoritesGuildAddCategoryActionSheet();
 }
 function FavoritesGuildAddActionSheet() {
   let obj = shouldShowUpsell(favoriteLimit[4]);

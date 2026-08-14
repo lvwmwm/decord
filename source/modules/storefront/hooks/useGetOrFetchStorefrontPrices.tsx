@@ -1,10 +1,10 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 9428
+// Function ID: 9429
 // Name: useGetOrFetchStorefrontPricesForApplicationId
-// Dependencies: [19, 9415, 2]
+// Dependencies: [19, 9429, 2]
 // Exports: useGetOrFetchStorefrontPricesForApplicationId, useGetOrFetchStorefrontPricesForSkuIds
 
-// Module 9414 (useGetOrFetchStorefrontPricesForApplicationId)
+// Module 9428 (useGetOrFetchStorefrontPricesForApplicationId)
 import noop from "noop";
 
 const require = arg1;

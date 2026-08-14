@@ -1,10 +1,10 @@
-// Module ID: 9583
-// Function ID: 9584
+// Module ID: 9596
+// Function ID: 9597
 // Name: ClydeIcon
-// Dependencies: [19, 21, 712, 4064, 9584, 2]
+// Dependencies: [19, 21, 712, 4064, 9597, 2]
 // Exports: ClydeIcon
 
-// Module 9583 (ClydeIcon)
+// Module 9596 (ClydeIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ClydeIcon = function ClydeIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9584) /* registerAsset */;
+  obj[0] = require(9597) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

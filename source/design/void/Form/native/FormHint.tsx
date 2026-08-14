@@ -1,10 +1,10 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8040
+// Function ID: 8041
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4342, 712, 5413, 4338, 1297, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5434, 4338, 1297, 2]
 // Exports: default
 
-// Module 8019 (FormHint)
+// Module 8040 (FormHint)
 import noop from "noop";
 import { Platform } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ export default function FormHint(inset) {
   }
   ({ style, children } = inset);
   const tmp = createCacheKey();
-  if (React.useContext(require(5413) /* context */.RedesignCompatContext)) {
+  if (React.useContext(require(5434) /* context */.RedesignCompatContext)) {
     let redesignHorizontalPadding = !flag;
     if (!flag) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;

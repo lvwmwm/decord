@@ -1,9 +1,9 @@
-// Module ID: 13082
-// Function ID: 13083
+// Module ID: 13100
+// Function ID: 13101
 // Name: performQuery
-// Dependencies: [4256, 7166, 1395, 1391, 5869, 5266, 1990, 1910, 3998, 1922, 676, 1903, 4187, 7357, 589, 709, 2]
+// Dependencies: [4256, 7188, 1395, 1391, 5890, 5287, 1990, 1910, 3998, 1922, 676, 1903, 4187, 7379, 589, 709, 2]
 
-// Module 13082 (performQuery)
+// Module 13100 (performQuery)
 import getHash from "getHash";
 import recomputeAffinities from "recomputeAffinities";
 import { PrivateChannelRecord } from "createChannelRecord";
@@ -217,7 +217,7 @@ function handleModalActionSheetOpen(key) {
       userSearchContext.destroy();
       userSearchContext = null;
     }
-    userSearchContext = importDefault(7357).getUserSearchContext(parseUserResults, 1000);
+    userSearchContext = importDefault(7379).getUserSearchContext(parseUserResults, 1000);
     let c22 = null;
     let c16 = "";
     let c17 = 0;
@@ -321,7 +321,7 @@ const privateChannelRecipientsInviteStoreClass = new PrivateChannelRecipientsInv
       userSearchContext.destroy();
       userSearchContext = null;
     }
-    userSearchContext = importDefault(7357).getUserSearchContext(parseUserResults, 1000);
+    userSearchContext = importDefault(7379).getUserSearchContext(parseUserResults, 1000);
     channelId = channelId.channelId;
     let c16 = "";
     let c17 = 0;

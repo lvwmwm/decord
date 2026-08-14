@@ -1,10 +1,10 @@
-// Module ID: 12085
-// Function ID: 12086
+// Module ID: 12103
+// Function ID: 12104
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 4358, 1391, 1910, 11703, 21, 4342, 712, 589, 4535, 11704, 4538, 5272, 4198, 4805, 4338, 1236, 4753, 4332, 4887, 10933, 7844, 2]
+// Dependencies: [32, 19, 17, 4358, 1391, 1910, 11719, 21, 4342, 712, 589, 4535, 11720, 4570, 5293, 4198, 4827, 4338, 1236, 4775, 4332, 4909, 10949, 7865, 2]
 // Exports: default
 
-// Module 12085 (ChannelSpoiler)
+// Module 12103 (ChannelSpoiler)
 import _slicedToArray from "_slicedToArray";
 import Stack from "Stack";
 import { View } from "Text";
@@ -43,7 +43,7 @@ export default function ChannelSpoiler(channelId) {
     isVocalResult = stateFromStores1.isVocal();
   }
   const dependencyMap = isVocalResult;
-  setControlsMode = obj3.useContext(tmp6(11704)).setControlsMode;
+  setControlsMode = obj3.useContext(tmp6(11720)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;
@@ -76,8 +76,8 @@ export default function ChannelSpoiler(channelId) {
     }
   }, items3);
   if (null != stateFromStores1) {
-    channelIconComponent = tmp(4805).getChannelIconComponent(stateFromStores1);
-    const tmpResult = tmp(4805);
+    channelIconComponent = tmp(4827).getChannelIconComponent(stateFromStores1);
+    const tmpResult = tmp(4827);
   }
   if (null != channelIconComponent) {
     obj = { style: null, children: null };
@@ -129,14 +129,14 @@ export default function ChannelSpoiler(channelId) {
         const intl2 = tmp(1236).intl;
         obj8[3] = intl2.string(tmp(1236).t["/QvRak"]);
         obj7[2] = tmp24(tmp(4338).Text, obj8);
-        tmp24Result = tmp24(tmp(4887).PressableHighlight, obj7);
+        tmp24Result = tmp24(tmp(4909).PressableHighlight, obj7);
       }
       items5[2] = tmp24Result;
       const obj9 = { style: null };
       obj9[0] = tmp4.divider;
       items5[3] = callback(View, obj9);
       obj1[2] = items5;
-      tmp23Result = callback2(tmp(4753).Stack, obj1);
+      tmp23Result = callback2(tmp(4775).Stack, obj1);
       const tmp23 = callback2;
       const tmp25 = View;
     }
@@ -145,7 +145,7 @@ export default function ChannelSpoiler(channelId) {
   const obj10 = { modalType: null, onAgree: null, onDisagree: null, title: null, subtitle: null, description: null, agreement: null, disagreement: null, guildId: null, channelId: null };
   const tmp20 = callback;
   tmp7 = importDefault(4535)(stateFromStores1);
-  obj10[0] = _require(7844).NsfwSpaceWarningModalType.SPOILER_CHANNEL;
+  obj10[0] = _require(7865).NsfwSpaceWarningModalType.SPOILER_CHANNEL;
   obj10[1] = function onAgree() {
     callback(isVocalResult[14]).spoilerAgree(channelId.channelId);
   };
@@ -164,5 +164,5 @@ export default function ChannelSpoiler(channelId) {
   }
   obj10[8] = id;
   obj10[9] = channelId.channelId;
-  return tmp20(importDefault(10933), obj10);
+  return tmp20(importDefault(10949), obj10);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10931
-// Function ID: 10932
+// Module ID: 10947
+// Function ID: 10948
 // Name: RootThemeContextProvider
 // Dependencies: [19, 505, 21, 4072, 2]
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 10931 (RootThemeContextProvider)
+// Module 10947 (RootThemeContextProvider)
 import noop from "noop";
 import { ThemeTypes } from "sum";
 import { jsx } from "jsxProd";

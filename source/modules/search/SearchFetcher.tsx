@@ -1,9 +1,9 @@
-// Module ID: 11781
-// Function ID: 11782
+// Module ID: 11797
+// Function ID: 11798
 // Name: fetch
 // Dependencies: [5, 1391, 676, 687, 3, 530, 1483, 2]
 
-// Module 11781 (fetch)
+// Module 11797 (fetch)
 import sendRequest from "sendRequest";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";

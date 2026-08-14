@@ -1,10 +1,10 @@
-// Module ID: 16636
-// Function ID: 16637
+// Module ID: 16649
+// Function ID: 16650
 // Name: fetchRTCLatencyTestRegions
 // Dependencies: [530, 709, 2]
 // Exports: completeRTCLatencyTest, fetchRTCLatencyTestRegions
 
-// Module 16636 (fetchRTCLatencyTestRegions)
+// Module 16649 (fetchRTCLatencyTestRegions)
 const result = require("set").fileFinishedImporting("actions/RTCLatencyTestActionCreators.tsx");
 
 export const fetchRTCLatencyTestRegions = function fetchRTCLatencyTestRegions(arg0) {

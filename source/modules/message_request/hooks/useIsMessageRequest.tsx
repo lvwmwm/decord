@@ -1,10 +1,10 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10314
+// Function ID: 10315
 // Name: useIsMessageRequest
-// Dependencies: [5881, 5882, 589, 2]
+// Dependencies: [5902, 5903, 589, 2]
 // Exports: useIsEitherTypeOfMessageRequest, useIsMessageRequest
 
-// Module 10300 (useIsMessageRequest)
+// Module 10314 (useIsMessageRequest)
 import processChannel from "processChannel";
 import closure_3 from "processChannel";
 

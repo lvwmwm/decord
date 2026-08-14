@@ -1,9 +1,9 @@
-// Module ID: 15972
-// Function ID: 15973
+// Module ID: 15990
+// Function ID: 15991
 // Name: init
-// Dependencies: [8062, 1391, 676, 7826, 595, 3994, 12, 589, 709, 2]
+// Dependencies: [8083, 1391, 676, 7847, 595, 3994, 12, 589, 709, 2]
 
-// Module 15972 (init)
+// Module 15990 (init)
 import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";

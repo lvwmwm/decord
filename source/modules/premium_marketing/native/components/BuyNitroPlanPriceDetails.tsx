@@ -1,10 +1,10 @@
-// Module ID: 7781
-// Function ID: 7782
+// Module ID: 7802
+// Function ID: 7803
 // Name: BuyNitroPlanPriceDetails
-// Dependencies: [19, 17, 5899, 1924, 505, 21, 4342, 712, 589, 5896, 4338, 1236, 2]
+// Dependencies: [19, 17, 5920, 1924, 505, 21, 4342, 712, 589, 5917, 4338, 1236, 2]
 // Exports: default
 
-// Module 7781 (BuyNitroPlanPriceDetails)
+// Module 7802 (BuyNitroPlanPriceDetails)
 import "noop";
 import { View } from "get ActivityIndicator";
 import updateProduct from "updateProduct";
@@ -61,7 +61,7 @@ export default function BuyNitroPlanPriceDetails(centered) {
   const value = priceStringByProductId.get(item.productId);
   if (null != trialTier) {
     if (item.premiumTier === trialTier) {
-      let tmp2Result = tmp2(5896);
+      let tmp2Result = tmp2(5917);
       obj = { style: null, children: null };
       obj[0] = tmp.container;
       obj = { variant: "text-xs/semibold", color: "text-default", style: null, children: null };
@@ -105,11 +105,11 @@ export default function BuyNitroPlanPriceDetails(centered) {
       if (num == null) {
         num = 1;
       }
-      tmp2Result = tmp2(5896);
+      tmp2Result = tmp2(5917);
       let formatRateResult1 = null;
       if (null != value) {
-        formatRateResult1 = tmp2(5896).formatRate(value, item.interval, num);
-        const tmp2Result1 = tmp2(5896);
+        formatRateResult1 = tmp2(5917).formatRate(value, item.interval, num);
+        const tmp2Result1 = tmp2(5917);
       }
       const obj4 = { style: null, children: null };
       obj4[0] = tmp.container;

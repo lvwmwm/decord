@@ -1,10 +1,10 @@
-// Module ID: 14736
-// Function ID: 14737
+// Module ID: 14750
+// Function ID: 14751
 // Name: hasAndroidNotificationChannels
 // Dependencies: [500, 4322, 2]
 // Exports: hasAndroidNotificationChannels
 
-// Module 14736 (hasAndroidNotificationChannels)
+// Module 14750 (hasAndroidNotificationChannels)
 const result = require("set").fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationUtils.tsx");
 
 export const hasAndroidNotificationChannels = function hasAndroidNotificationChannels() {

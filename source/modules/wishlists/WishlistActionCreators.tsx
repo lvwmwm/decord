@@ -1,9 +1,9 @@
-// Module ID: 9413
-// Function ID: 9414
+// Module ID: 9427
+// Function ID: 9428
 // Name: extraWishlistParams
-// Dependencies: [5, 7128, 1922, 4009, 5889, 9408, 676, 501, 1370, 709, 5893, 530, 9406, 1208, 4241, 698, 8357, 2]
+// Dependencies: [5, 7150, 1922, 4009, 5910, 9422, 676, 501, 1370, 709, 5914, 530, 9420, 1208, 4241, 698, 8379, 2]
 
-// Module 9413 (extraWishlistParams)
+// Module 9427 (extraWishlistParams)
 import fromServer from "fromServer";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -45,9 +45,9 @@ function maybeDispatchAdditionalActions(wishlist_items) {
     obj[1] = found.map((id) => id.id);
     obj[1] = obj;
     const tmp3Result = importDefault(709);
-    obj[2] = require(5893) /* useSKUPrice */.transformStorefrontPricesServer(storefront_pricing);
+    obj[2] = require(5914) /* useSKUPrice */.transformStorefrontPricesServer(storefront_pricing);
     tmp3Result.dispatch(obj);
-    const tmpResult = require(5893) /* useSKUPrice */;
+    const tmpResult = require(5914) /* useSKUPrice */;
   }
 }
 ({ AnalyticEvents: c10, Endpoints: unpackModuleId, PaymentGateways: closure_12 } = ME);

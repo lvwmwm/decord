@@ -1,10 +1,10 @@
-// Module ID: 4899
-// Function ID: 4900
+// Module ID: 4921
+// Function ID: 4922
 // Name: doesImageMatchUpload
-// Dependencies: [4892, 530, 4900, 1917, 2]
+// Dependencies: [4914, 530, 4922, 1917, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 4899 (doesImageMatchUpload)
+// Module 4921 (doesImageMatchUpload)
 const result = require("_getAttachmentFile").fileFinishedImporting("lib/uploader/UploadUtils.tsx");
 class DefaultHttpClient {
 }
@@ -78,7 +78,7 @@ LibdiscoreHttpClient.prototype["doUpload"] = function doUpload(body) {
 
 export const doesImageMatchUpload = function doesImageMatchUpload(image, closure_0) {
   if (closure_0.id !== image.uri) {
-    if (closure_0.item.platform === require(4892) /* cancel */.UploadPlatform.REACT_NATIVE) {
+    if (closure_0.item.platform === require(4914) /* cancel */.UploadPlatform.REACT_NATIVE) {
       const item = closure_0.item;
       const filename = image.filename;
       let tmp3 = item.originalUri === image.uri;
@@ -112,12 +112,12 @@ export const calculateProgress = function calculateProgress(loaded, currentSize)
 };
 export { DefaultHttpClient };
 export const canUploadNatively = function canUploadNatively(item) {
-  let fileIsInAppDirResult = item.platform === require(4892) /* cancel */.UploadPlatform.REACT_NATIVE;
+  let fileIsInAppDirResult = item.platform === require(4914) /* cancel */.UploadPlatform.REACT_NATIVE;
   if (fileIsInAppDirResult) {
     fileIsInAppDirResult = null != item.uri;
   }
   if (fileIsInAppDirResult) {
-    let tmpResult = tmp(4900);
+    let tmpResult = tmp(4922);
     fileIsInAppDirResult = tmpResult.fileIsInAppDir(item.uri);
   }
   if (fileIsInAppDirResult) {

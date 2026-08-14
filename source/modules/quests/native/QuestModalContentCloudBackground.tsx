@@ -1,10 +1,10 @@
-// Module ID: 14434
-// Function ID: 14435
+// Module ID: 14447
+// Function ID: 14448
 // Name: items
-// Dependencies: [19, 17, 21, 4342, 1364, 4278, 4766, 5308, 14435, 14436, 2]
+// Dependencies: [19, 17, 21, 4342, 1364, 4278, 4788, 5329, 14448, 14449, 2]
 // Exports: default
 
-// Module 14434 (items)
+// Module 14447 (items)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,13 +21,13 @@ let closure_7 = createCacheKey.createStyles((arg0) => {
   let obj = {};
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   obj = { wrapper: null, cloudsImage: null, cloudsImageLight: null, gradient: null, solidBackground: null };
-  const merged1 = Object.assign(arg0 ? { top: "sa" } : { bottom: "sa" });
+  const merged1 = Object.assign(arg0 ? { top: "title" } : { bottom: "title" });
   obj.height = 380;
   obj.zIndex = 1;
   obj[0] = obj;
   obj = {};
   const merged2 = Object.assign(tmp.absoluteFillObject);
-  const merged3 = Object.assign(arg0 ? { top: "sa" } : { bottom: "sa" });
+  const merged3 = Object.assign(arg0 ? { top: "title" } : { bottom: "title" });
   if (arg0) {
     let obj1 = {};
   } else {
@@ -80,7 +80,7 @@ export default function QuestModalContentCloudBackground(align) {
     obj = { colors: null, style: null };
     obj[0] = "top" === str ? items : closure_9;
     obj[1] = tmp.gradient;
-    tmp6(importDefault(4766), obj);
+    tmp6(importDefault(4788), obj);
   } else {
     obj1 = { style: null };
     obj1[0] = tmp.solidBackground;
@@ -88,9 +88,9 @@ export default function QuestModalContentCloudBackground(align) {
     const obj2 = { style: null, source: null, resizeMode: null };
     const items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
     obj2[0] = items2;
-    obj2[1] = importDefault(isThemeDarkResult ? 14435 : 14436);
+    obj2[1] = importDefault(isThemeDarkResult ? 14448 : 14449);
     obj2[2] = str2;
-    items1[1] = tmp6(importDefault(5308), obj2);
+    items1[1] = tmp6(importDefault(5329), obj2);
     obj[1] = items1;
     return tmp4(tmp5, obj);
   }

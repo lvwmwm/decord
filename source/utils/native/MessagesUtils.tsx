@@ -1,8 +1,8 @@
-// Module ID: 11414
-// Function ID: 11415
-// Dependencies: [676, 5984, 4331, 8250, 4530, 2]
+// Module ID: 11430
+// Function ID: 11431
+// Dependencies: [676, 6005, 4331, 8271, 4530, 2]
 
-// Module 11414
+// Module 11430
 import ME from "ME";
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
 
@@ -199,9 +199,11 @@ export default {
                                       if (tmp(tmp2[2]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
                                         if (tmp(tmp2[2]).CodedLinkType.GAME_PROFILE !== type) {
                                           if (tmp(tmp2[2]).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                            const _Error = Error;
-                                            const _HermesInternal = HermesInternal;
-                                            throw Error("Unknown coded link type: " + type);
+                                            if (tmp(tmp2[2]).CodedLinkType.USER_PROFILE !== type) {
+                                              const _Error = Error;
+                                              const _HermesInternal = HermesInternal;
+                                              throw Error("Unknown coded link type: " + type);
+                                            }
                                           }
                                         }
                                       }

@@ -1,10 +1,10 @@
-// Module ID: 9102
-// Function ID: 9103
+// Module ID: 9116
+// Function ID: 9117
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 9103, 9104, 4241, 2]
+// Dependencies: [5, 32, 19, 9117, 9118, 4241, 2]
 // Exports: default
 
-// Module 9102 (useStartEvent)
+// Module 9116 (useStartEvent)
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -91,7 +91,7 @@ export default function useStartEvent() {
                 c7 = 3;
                 c8 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = callback2(9103).preStartEventActions(callback, permissionOverwrites);
+                obj2[0] = callback2(9117).preStartEventActions(callback, permissionOverwrites);
                 return obj2;
               }
             } else {
@@ -115,7 +115,7 @@ export default function useStartEvent() {
                   obj3[0] = arg1;
                   return obj3;
                 } else {
-                  let obj7 = callback2(9103);
+                  let obj7 = callback2(9117);
                   c7 = 4;
                   c8 = 1;
                   let obj4 = { value: null, done: false };
@@ -133,7 +133,7 @@ export default function useStartEvent() {
                   obj5[0] = arg1;
                   return obj5;
                 } else {
-                  obj4 = callback(9104);
+                  obj4 = callback(9118);
                   c7 = 5;
                   c8 = 1;
                   const obj6 = { value: null, done: false };
@@ -151,7 +151,7 @@ export default function useStartEvent() {
                   obj7[0] = arg1;
                   return obj7;
                 } else {
-                  obj1 = callback(9104);
+                  obj1 = callback(9118);
                   c7 = 6;
                   c8 = 1;
                   const obj8 = { value: null, done: false };

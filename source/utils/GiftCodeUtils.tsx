@@ -1,10 +1,10 @@
-// Module ID: 4579
-// Function ID: 4580
+// Module ID: 4601
+// Function ID: 4602
 // Name: _resolveGiftCode
-// Dependencies: [5, 32, 4580, 1922, 676, 1924, 4330, 4581, 4582, 698, 4030, 4675, 1236, 4544, 1370, 589, 4007, 2]
+// Dependencies: [5, 32, 4602, 1922, 676, 1924, 4330, 4603, 4604, 698, 4030, 4697, 1236, 4554, 1370, 589, 4007, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
-// Module 4579 (_resolveGiftCode)
+// Module 4601 (_resolveGiftCode)
 import closure_3 from "GuildFeatures";
 import _slicedToArray from "_slicedToArray";
 import handleSubscribeFailure from "handleSubscribeFailure";
@@ -228,8 +228,8 @@ const result = require("handleSubscribeFailure").fileFinishedImporting("utils/Gi
 
 export const GiftExperience = obj;
 export const getGiftExperience = function getGiftExperience(arg0, arg1) {
-  if (!v5(4581).isMobile) {
-    if (!v5(4581).isTablet) {
+  if (!v5(4603).isMobile) {
+    if (!v5(4603).isTablet) {
       if (null == arg0) {
         if (!arg1) {
           let DEFAULT = obj.CUSTOM_STYLE;
@@ -242,8 +242,8 @@ export const getGiftExperience = function getGiftExperience(arg0, arg1) {
   DEFAULT = obj.DEFAULT;
 };
 export const shouldShowCustomGiftExperience = function shouldShowCustomGiftExperience(arg0) {
-  if (!v5(4581).isMobile) {
-    if (!v5(4581).isTablet) {
+  if (!v5(4603).isMobile) {
+    if (!v5(4603).isTablet) {
       if (null != arg0) {
         let DEFAULT = obj.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD;
         let tmp5 = obj;
@@ -371,7 +371,7 @@ export const resolveGiftCode = function resolveGiftCode() {
 export const trackGiftCodeCopy = function trackGiftCodeCopy(giftCode, sku) {
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(importDefault(4675)(sku, false, false));
+  const merged = Object.assign(importDefault(4697)(sku, false, false));
   const merged1 = Object.assign(giftCode.analyticsData);
   obj.track(constants.GIFT_CODE_COPIED, obj);
 };
@@ -472,9 +472,9 @@ export const getButtonText = function getButtonText(arg0, giftStyle, isCustomGif
 };
 export const getSubscriptionGiftSuccessText = function getSubscriptionGiftSuccessText(getOrFetchSubscriptionPlan) {
   const v5 = getOrFetchSubscriptionPlan;
-  const match = v5(4544).match(getOrFetchSubscriptionPlan);
+  const match = v5(4554).match(getOrFetchSubscriptionPlan);
   let obj = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
-  const str = v5(4544);
+  const str = v5(4554);
   obj = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };
   const withResult = match.with(obj, () => {
     const intl = subscriptionPlan(outer1_2[12]).intl;
@@ -627,11 +627,11 @@ export const getBodyText = function getBodyText(arg0) {
     return formatResult;
   } else if (tmp.SUCCESS === step) {
     if (null != subscriptionPlan) {
-      const match = subscriptionPlan(4544).match(subscriptionPlan);
+      const match = subscriptionPlan(4554).match(subscriptionPlan);
       obj = { interval: null, premiumSubscriptionType: null };
       obj[0] = constants6.MONTH;
       obj[1] = closure_13.TIER_2;
-      const str = subscriptionPlan(4544);
+      const str = subscriptionPlan(4554);
       const obj1 = { interval: null, premiumSubscriptionType: null };
       obj1[0] = constants6.YEAR;
       obj1[1] = closure_13.TIER_2;

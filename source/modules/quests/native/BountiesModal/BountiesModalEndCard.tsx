@@ -1,10 +1,10 @@
-// Module ID: 14370
-// Function ID: 14371
+// Module ID: 14383
+// Function ID: 14384
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 4342, 4083, 4343, 4346, 4766, 14352, 2]
+// Dependencies: [17, 21, 4342, 4083, 4343, 4346, 4788, 14365, 2]
 // Exports: default
 
-// Module 14370 (BountiesModalEndCard)
+// Module 14383 (BountiesModalEndCard)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -60,11 +60,11 @@ export default function BountiesModalEndCard(visible) {
     obj1[0] = ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"];
     obj1[1] = [0, 0.841];
     obj1[2] = tmp.backdropGradient;
-    items1[1] = callback(importDefault(4766), obj1);
+    items1[1] = callback(importDefault(4788), obj1);
     const obj2 = { bounty: null, sourceQuestContent: null };
     obj2[0] = bounty;
     obj2[1] = sourceQuestContent;
-    items1[2] = callback(importDefault(14352), obj2);
+    items1[2] = callback(importDefault(14365), obj2);
     obj[2] = items1;
     visible = callback2(importDefault(4083).View, obj);
   }

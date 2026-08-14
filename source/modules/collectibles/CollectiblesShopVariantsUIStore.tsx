@@ -1,10 +1,10 @@
-// Module ID: 9451
-// Function ID: 9452
+// Module ID: 9464
+// Function ID: 9465
 // Name: useSelectedVariantIndex
-// Dependencies: [700, 3974, 9395, 7060, 2]
+// Dependencies: [700, 3974, 9409, 7082, 2]
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex
 
-// Module 9451 (useSelectedVariantIndex)
+// Module 9464 (useSelectedVariantIndex)
 import identity from "identity";
 
 let closure_2 = identity.createWithEqualityFn(() => {
@@ -16,7 +16,7 @@ const result = require("useDefaultVariantIndex").fileFinishedImporting("modules/
 
 export const useSelectedVariantIndex = function useSelectedVariantIndex(product) {
   const _require = product;
-  let defaultVariantIndex = _require(9395).useDefaultVariantIndex(product);
+  let defaultVariantIndex = _require(9409).useDefaultVariantIndex(product);
   let tmp2 = state((selectionStates) => {
     let tmp2 = null;
     if (null != product) {

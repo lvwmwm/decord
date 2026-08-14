@@ -1,7 +1,7 @@
 // Module ID: 4430
 // Function ID: 4431
 // Name: initialize
-// Dependencies: [4365, 1218, 4393, 4431, 4416, 676, 4409, 38, 4433, 12, 4408, 7243, 709, 4441, 500, 589, 13135, 2]
+// Dependencies: [4365, 1218, 4393, 4431, 4416, 676, 4409, 38, 4433, 12, 4408, 7265, 709, 4441, 500, 589, 13146, 2]
 
 // Module 4430 (initialize)
 import initialize from "initialize";
@@ -42,7 +42,7 @@ prototype["getRTCConnection"] = function getRTCConnection(arg0) {
   return dependencyMap3[arg0];
 };
 prototype["getQuality"] = function getQuality(arg0) {
-  if (importDefault(13135)(closure_6)) {
+  if (importDefault(13146)(closure_6)) {
     if (null != arg0) {
       let quality;
       if (dependencyMap3[arg0] != null) {
@@ -302,7 +302,7 @@ if (importDefaultResult.isSupported()) {
   obj[9] = function handleStreamStop(appContext) {
     appContext = appContext.appContext;
     const streamKey = appContext.streamKey;
-    closure_11[streamKey] = { appContext, analyticsLocations: "a" };
+    closure_11[streamKey] = { appContext, analyticsLocations: "r" };
     const item = importDefault(12).forEach(closure_18, (analyticsContext) => {
       analyticsContext = analyticsContext.analyticsContext;
       analyticsContext.setActionContext(appContext);
@@ -337,8 +337,8 @@ if (importDefaultResult.isSupported()) {
         tmp11 = null == dependencyMap2[streamKey];
       }
       if (tmp11) {
-        tmp10[streamKey] = tmp4(7243).getStreamerApplication(decodeStreamKeyResult, sortActivity);
-        const tmp4Result = tmp4(7243);
+        tmp10[streamKey] = tmp4(7265).getStreamerApplication(decodeStreamKeyResult, sortActivity);
+        const tmp4Result = tmp4(7265);
       }
       obj = { streamRegion: null, streamApplication: null, streamSourceType: null, actionContext: null, numViewers: null, goLiveModalDurationMs: null, analyticsLocations: null };
       obj[0] = region;

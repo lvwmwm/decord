@@ -1,10 +1,10 @@
-// Module ID: 16600
-// Function ID: 16601
+// Module ID: 16613
+// Function ID: 16614
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4342, 712, 1628, 5307, 4338, 1236, 5308, 12168, 12098, 4755, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1628, 5328, 4338, 1236, 5329, 12186, 12116, 4777, 2]
 // Exports: default
 
-// Module 16600 (RedesignDiscoverabilityLanding)
+// Module 16613 (RedesignDiscoverabilityLanding)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   const tmp = createCacheKey();
   let obj = { style: tmp.container, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
   obj = { flexGrow: 2, paddingTop: null, paddingBottom: null, paddingHorizontal: null };
-  obj[1] = require(5307) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + 32;
+  obj[1] = require(5328) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + 32;
   obj[2] = importDefault(1628)().bottom + 16;
   obj[3] = importDefault(712).space.PX_16;
   obj[2] = obj;
@@ -52,8 +52,8 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t.KMW0kP);
   items[2] = callback(require(4338) /* Text */.Text, obj2);
   const obj3 = { resizeMode: "contain", style: tmp.image, source: null };
-  obj3[2] = importDefault(12168);
-  items[3] = callback(importDefault(5308), obj3);
+  obj3[2] = importDefault(12186);
+  items[3] = callback(importDefault(5329), obj3);
   const obj4 = { style: tmp.info, variant: "text-sm/medium", color: "text-default", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   const items1 = [intl3.string(require(1236) /* getSystemLocale */.t.ci12MJ), " ", ];
@@ -61,7 +61,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   items1[2] = intl4.format(require(1236) /* getSystemLocale */.t.VcSQ4n, {
     learnMoreHook(arg0, arg1) {
       const obj = { onPress: null, variant: "text-sm/medium", color: "text-link", children: null };
-      obj[0] = callback(12098).handleOpenLearnMoreLink;
+      obj[0] = callback(12116).handleOpenLearnMoreLink;
       obj[3] = arg0;
       return callback2(callback(4338).Text, obj, arg1);
     }
@@ -73,7 +73,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   const intl5 = require(1236) /* getSystemLocale */.intl;
   obj7[2] = intl5.string(require(1236) /* getSystemLocale */.t.gHPk3I);
   obj7[3] = onNext.onNext;
-  items[6] = callback(require(4755) /* Button */.Button, obj7);
+  items[6] = callback(require(4777) /* Button */.Button, obj7);
   obj[3] = items;
   return callback2(closure_4, obj);
 };

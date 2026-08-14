@@ -1,9 +1,9 @@
-// Module ID: 12065
-// Function ID: 12066
+// Module ID: 12083
+// Function ID: 12084
 // Name: LockPill
-// Dependencies: [32, 19, 17, 4334, 1391, 11418, 11419, 676, 1301, 11420, 21, 4083, 1297, 4887, 4338, 12, 7880, 4342, 712, 5199, 589, 4065, 1367, 5369, 1236, 4343, 4840, 9948, 12066, 5409, 1628, 11421, 4741, 4751, 1231, 11324, 1493, 10697, 11691, 12067, 7796, 4302, 11686, 11669, 4288, 10846, 4289, 10847, 2]
+// Dependencies: [32, 19, 17, 4334, 1391, 11434, 11435, 676, 1301, 11436, 21, 4083, 1297, 4909, 4338, 12, 7901, 4342, 712, 5220, 589, 4065, 1367, 5390, 1236, 4343, 4862, 9959, 12084, 5430, 1628, 11437, 4763, 4773, 1231, 11340, 1493, 10713, 11707, 12085, 7817, 4302, 11702, 11685, 4288, 10862, 4289, 10863, 2]
 
-// Module 12065 (LockPill)
+// Module 12083 (LockPill)
 import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER";
 import importAllResult from "result";
 import get_ActivityIndicator from "createCacheKey";
@@ -253,7 +253,7 @@ let c4 = importAllResult;
 let closure_18 = require("module_4083").createAnimatedComponent(require("Button").Icon);
 let closure_19 = require("module_4083").createAnimatedComponent(require("PressableBase").PressableOpacity);
 let closure_20 = require("module_4083").createAnimatedComponent(require("Text").Text);
-let closure_21 = require("Button").memoize(() => importDefault(4083).createAnimatedComponent(require(7880) /* inlineStyles */.Ellipse));
+let closure_21 = require("Button").memoize(() => importDefault(4083).createAnimatedComponent(require(7901) /* inlineStyles */.Ellipse));
 let c22 = 68;
 let c23 = 56;
 let closure_24 = createCacheKey.createStyles((width) => {
@@ -278,8 +278,8 @@ let closure_24 = createCacheKey.createStyles((width) => {
   const obj5 = { tintColor: importDefault(712).colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT };
   obj[9] = { flex: 1, height: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" };
   const obj6 = { flex: 1, height: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" };
-  obj[10] = { height: c22, width: c23, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5199) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
-  const obj7 = { height: c22, width: c23, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5199) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
+  obj[10] = { height: c22, width: c23, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5220) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
+  const obj7 = { height: c22, width: c23, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5220) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
   obj[11] = { position: "absolute", right: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_OFFSET_RIGHT, width: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_WIDTH };
   const obj8 = { position: "absolute", right: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_OFFSET_RIGHT, width: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_WIDTH };
   obj[12] = { height: 16, width: 16, marginTop: 8, tintColor: importDefault(712).colors.ICON_SUBTLE };

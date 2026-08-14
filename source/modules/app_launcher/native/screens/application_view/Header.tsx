@@ -1,10 +1,10 @@
-// Module ID: 11575
-// Function ID: 11576
+// Module ID: 11591
+// Function ID: 11592
 // Name: xl
-// Dependencies: [19, 17, 1922, 11531, 1498, 676, 21, 712, 4342, 4083, 589, 11495, 4065, 8282, 11500, 8386, 7634, 11576, 4338, 1297, 7796, 4287, 698, 5796, 11577, 4061, 1236, 11578, 2]
+// Dependencies: [19, 17, 1922, 11547, 1498, 676, 21, 712, 4342, 4083, 589, 11511, 4065, 8304, 11516, 8408, 7655, 11592, 4338, 1297, 7817, 4287, 698, 5817, 11593, 4061, 1236, 11594, 2]
 // Exports: default
 
-// Module 11575 (xl)
+// Module 11591 (xl)
 import "Button";
 import { View } from "AppLauncherBackButton";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -59,7 +59,7 @@ export default function Header(application) {
   const tmp3 = createCacheKey();
   let appLauncherIconSource = null;
   if (null != application) {
-    let tmpResult = tmp(11495);
+    let tmpResult = tmp(11511);
     appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
   }
   tmpResult = tmp(4065);
@@ -75,12 +75,12 @@ export default function Header(application) {
   if (str == null) {
     str = "";
   }
-  const tmp6Result = importDefault(8282)(tmp7, str);
+  const tmp6Result = importDefault(8304)(tmp7, str);
   if (null != appLauncherIconSource) {
     obj = { iconSource: null, iconBorderRadius: null, iconSize: 72 };
     obj[0] = appLauncherIconSource;
     obj[1] = xl;
-    let tmp12 = callback(tmp5(11500), obj);
+    let tmp12 = callback(tmp5(11516), obj);
     let tmp13 = callback;
   } else {
     obj = { style: null };
@@ -88,7 +88,7 @@ export default function Header(application) {
     tmp12 = callback(currentUser2, obj);
     tmp13 = callback;
   }
-  const tmp6 = importDefault(8282);
+  const tmp6 = importDefault(8304);
   const fn = function n() {
     let obj = { transform: null };
     obj = { translateY: null };
@@ -151,16 +151,16 @@ export default function Header(application) {
   let str2 = "";
   const animatedStyle3 = tmpResult4.useAnimatedStyle(fn4);
   if (null != application) {
-    str2 = tmp(8386).getSectionName(application);
-    const tmpResult5 = tmp(8386);
+    str2 = tmp(8408).getSectionName(application);
+    const tmpResult5 = tmp(8408);
   }
   let hasApplicationFlagResult = null != application;
   if (hasApplicationFlagResult) {
     hasApplicationFlagResult = "flags" in application;
   }
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = tmp(7634).hasApplicationFlag(application, constants.EMBEDDED);
-    const tmpResult6 = tmp(7634);
+    hasApplicationFlagResult = tmp(7655).hasApplicationFlag(application, constants.EMBEDDED);
+    const tmpResult6 = tmp(7655);
   }
   dependencyMap = hasApplicationFlagResult;
   currentUser2 = currentUser.getCurrentUser();
@@ -173,7 +173,7 @@ export default function Header(application) {
   const obj8 = { style: items4, pointerEvents: "box-none", children: null };
   items4 = [tmp3.collapsedHeaderBanner, { backgroundColor: tmp6Result }, animatedStyle1];
   const items5 = [tmp3.collapsedHeaderBannerOverlay, animatedStyle3];
-  const items6 = [tmp13(importDefault(4083).View, { style: items5, pointerEvents: "none" }), tmp13(importDefault(11576), { onPress: onPressBack }), , ];
+  const items6 = [tmp13(importDefault(4083).View, { style: items5, pointerEvents: "none" }), tmp13(importDefault(11592), { onPress: onPressBack }), , ];
   const obj9 = { style: animatedStyle2, pointerEvents: "none", children: null };
   obj9[2] = tmp13(scrollOffsetY(4338).Heading, { variant: "heading-lg/bold", color: "text-overlay-light", children: str2 });
   items6[2] = tmp13(importDefault(4083).View, obj9);
@@ -215,15 +215,15 @@ export default function Header(application) {
       };
       const intl = tmp(1236).intl;
       obj11[4] = intl.string(tmp(1236).t.XWDihq);
-      const items7 = [tmp13(tmp(7796).IconButton, obj11), ];
+      const items7 = [tmp13(tmp(7817).IconButton, obj11), ];
       const obj12 = { application: null, onAddAppMenuClick: null };
       obj12[0] = application;
       obj12[1] = onAddAppMenuClick;
-      items7[1] = tmp13(tmp5(11578), obj12);
+      items7[1] = tmp13(tmp5(11594), obj12);
       obj10[1] = items7;
       tmp22Result = tmp22(currentUser2, obj10);
     }
-    tmpResult7 = tmp(8386);
+    tmpResult7 = tmp(8408);
   }
   items3[2] = tmp22Result;
   obj5[2] = items3;

@@ -1,9 +1,9 @@
-// Module ID: 6256
-// Function ID: 6257
+// Module ID: 6277
+// Function ID: 6278
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6256 (metadata)
+// Module 6277 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DevQuestsWideAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/bb9fcfded81b9cbcf43f9320abb83b83577478224e277c1e7ac91ce13dc45e3d.png";

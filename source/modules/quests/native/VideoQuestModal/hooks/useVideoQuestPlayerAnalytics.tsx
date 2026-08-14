@@ -1,10 +1,10 @@
-// Module ID: 14441
-// Function ID: 14442
+// Module ID: 14454
+// Function ID: 14455
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [19, 17, 4436, 676, 10451, 7223, 10560, 14442, 14443, 7209, 5205, 14332, 7109, 7114, 2]
+// Dependencies: [19, 17, 4436, 676, 10467, 7245, 10576, 14455, 14456, 7231, 5226, 14345, 7131, 7136, 2]
 // Exports: default
 
-// Module 14441 (useVideoQuestPlayerAnalytics)
+// Module 14454 (useVideoQuestPlayerAnalytics)
 import noop from "noop";
 import { AppState } from "get ActivityIndicator";
 import handleConnectionInfoChange from "handleConnectionInfoChange";

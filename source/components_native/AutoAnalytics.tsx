@@ -1,10 +1,10 @@
-// Module ID: 15888
-// Function ID: 15889
+// Module ID: 15906
+// Function ID: 15907
 // Name: componentDidMount
-// Dependencies: [19, 4358, 5035, 7033, 1396, 1391, 1990, 1910, 4393, 4436, 4416, 1979, 4165, 5037, 4540, 1922, 676, 1398, 21, 4539, 7279, 15889, 6974, 1913, 15890, 698, 1370, 15891, 589, 15892, 15893, 2]
+// Dependencies: [19, 4358, 5057, 7055, 1396, 1391, 1990, 1910, 4393, 4436, 4416, 1979, 4165, 5059, 4550, 1922, 676, 1398, 21, 4549, 7301, 15907, 6995, 1913, 15908, 698, 1370, 15909, 589, 15910, 15911, 2]
 // Exports: default
 
-// Module 15888 (componentDidMount)
+// Module 15906 (componentDidMount)
 import getParticipants from "getParticipants";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import scheduledEventSort from "scheduledEventSort";
@@ -46,19 +46,19 @@ prototype["componentDidMount"] = function componentDidMount() {
   ({ hasPreviewEnabled, postableChannelCount } = props);
   if (null != selectedChannelId) {
     let obj = {};
-    const merged = Object.assign(require(4539) /* collectGuildAnalyticsMetadata */.getChannelOpenedMetadata(selectedChannelId));
+    const merged = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.getChannelOpenedMetadata(selectedChannelId));
     obj.selected_guild_id = selectedGuildId;
     self._trackWithMetadata(constants.CHANNEL_OPENED, obj);
     obj = { channelId: null };
     obj[0] = selectedChannelId;
-    importDefault(7279)(obj);
+    importDefault(7301)(obj);
     if (tmp) {
       const obj1 = { channel_is_nsfw: null };
       obj1[0] = tmp2;
-      tmp18(4539).trackWithMetadata(tmp17.TEXT_IN_VOICE_OPENED, obj1);
-      const tmp18Result = tmp18(4539);
+      tmp18(4549).trackWithMetadata(tmp17.TEXT_IN_VOICE_OPENED, obj1);
+      const tmp18Result = tmp18(4549);
     }
-    const obj11 = require(4539) /* collectGuildAnalyticsMetadata */;
+    const obj11 = require(4549) /* collectGuildAnalyticsMetadata */;
     tmp17 = constants;
     tmp18 = require;
   }
@@ -75,15 +75,15 @@ prototype["componentDidMount"] = function componentDidMount() {
     const merged1 = Object.assign(obj3);
     obj4.postable_channels = postableChannelCount;
     obj4.viewing_all_channels = !updateUserGuildSettingsInternal.isOptInEnabled(selectedGuildId);
-    let obj5 = require(15889) /* collectGuildThemeAnalyticsMetadata */;
+    let obj5 = require(15907) /* collectGuildThemeAnalyticsMetadata */;
     const merged2 = Object.assign(obj5.collectGuildThemeAnalyticsMetadata(selectedGuildId));
     self._trackWithMetadata(constants.GUILD_VIEWED, obj4);
     obj5 = { guild_id: null };
     obj5[0] = selectedGuildId;
-    require(6974) /* isClickstreamEnabled */.trackClickstream(constants.GUILD_VIEWED_CLICKSTREAM, obj5);
-    const obj7 = require(6974) /* isClickstreamEnabled */;
+    require(6995) /* isClickstreamEnabled */.trackClickstream(constants.GUILD_VIEWED_CLICKSTREAM, obj5);
+    const obj7 = require(6995) /* isClickstreamEnabled */;
     if (obj9.isFavoritesGuildId(selectedGuildId)) {
-      importDefault(15890)();
+      importDefault(15908)();
     }
     obj9 = require(1913) /* getFavoritesAwareGuildName */;
   }
@@ -144,7 +144,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
         id1 = activeEventByChannel.id;
       }
       obj[8] = id1;
-      let obj2 = require(4539) /* collectGuildAnalyticsMetadata */;
+      let obj2 = require(4549) /* collectGuildAnalyticsMetadata */;
       const merged = Object.assign(obj2.getVoiceStateMetadata(voiceChannelId.voiceChannelGuildId, voiceChannelId.voiceChannelId, voiceChannelId.videoEnabled));
       const merged1 = Object.assign(self.getGameMetadata());
       let stats;
@@ -181,7 +181,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
       }
       obj[8] = id3;
       obj[9] = store4.getJoinVoiceId();
-      let obj3 = require(4539) /* collectGuildAnalyticsMetadata */;
+      let obj3 = require(4549) /* collectGuildAnalyticsMetadata */;
       const merged3 = Object.assign(obj3.getVoiceStateMetadata(voiceChannelGuildId, voiceChannelId, videoEnabled));
       const merged4 = Object.assign(self.getGameMetadata());
       importDefault(698).track(constants.JOIN_VOICE_CHANNEL, obj);
@@ -216,10 +216,10 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
       obj1[3] = voiceChannelType;
       obj1[4] = voiceChannelGuildId;
       const merged5 = Object.assign(self.getGameMetadata());
-      const merged6 = Object.assign(require(4539) /* collectGuildAnalyticsMetadata */.collectVoiceAnalyticsMetadata(voiceChannelId));
+      const merged6 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectVoiceAnalyticsMetadata(voiceChannelId));
       obj4.track(constants.VIDEO_INPUT_TOGGLED, obj1);
       const tmp31 = require;
-      const tmp31Result = require(4539) /* collectGuildAnalyticsMetadata */;
+      const tmp31Result = require(4549) /* collectGuildAnalyticsMetadata */;
     }
   }
   let tmp41 = null == selectedChannelId;
@@ -229,20 +229,20 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
   }
   if (!tmp41) {
     obj2 = {};
-    let obj8 = require(15891) /* getChannelOpenedRouteTrackingProps */;
+    let obj8 = require(15909) /* getChannelOpenedRouteTrackingProps */;
     const merged7 = Object.assign(obj8.getChannelOpenedRouteTrackingProps(selectedChannelId));
-    let obj9 = require(4539) /* collectGuildAnalyticsMetadata */;
+    let obj9 = require(4549) /* collectGuildAnalyticsMetadata */;
     const merged8 = Object.assign(obj9.getChannelOpenedMetadata(selectedChannelId));
     obj2.selected_guild_id = selectedGuildId;
     self._trackWithMetadata(constants.CHANNEL_OPENED, obj2);
     obj3 = { channelId: null };
     obj3[0] = selectedChannelId;
-    importDefault(7279)(obj3);
+    importDefault(7301)(obj3);
     if (isTextInVoice) {
       obj4 = { channel_is_nsfw: null };
       obj4[0] = isNSFWChannel;
-      tmp44(4539).trackWithMetadata(tmp43.TEXT_IN_VOICE_OPENED, obj4);
-      const tmp44Result = tmp44(4539);
+      tmp44(4549).trackWithMetadata(tmp43.TEXT_IN_VOICE_OPENED, obj4);
+      const tmp44Result = tmp44(4549);
     }
     tmp43 = constants;
     tmp44 = require;
@@ -253,8 +253,8 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
   if (isTextInVoice) {
     const obj5 = { channel_is_nsfw: null };
     obj5[0] = isNSFWChannel;
-    require(4539) /* collectGuildAnalyticsMetadata */.trackWithMetadata(constants.TEXT_IN_VOICE_OPENED, obj5);
-    const obj14 = require(4539) /* collectGuildAnalyticsMetadata */;
+    require(4549) /* collectGuildAnalyticsMetadata */.trackWithMetadata(constants.TEXT_IN_VOICE_OPENED, obj5);
+    const obj14 = require(4549) /* collectGuildAnalyticsMetadata */;
   }
   if (null != selectedGuildId) {
     if (voiceChannelId.selectedGuildId !== selectedGuildId) {
@@ -270,15 +270,15 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
       const merged9 = Object.assign(obj7);
       obj8.postable_channels = postableChannelCount;
       obj8.viewing_all_channels = !updateUserGuildSettingsInternal.isOptInEnabled(selectedGuildId);
-      const merged10 = Object.assign(require(15889) /* collectGuildThemeAnalyticsMetadata */.collectGuildThemeAnalyticsMetadata(selectedGuildId));
+      const merged10 = Object.assign(require(15907) /* collectGuildThemeAnalyticsMetadata */.collectGuildThemeAnalyticsMetadata(selectedGuildId));
       self._trackWithMetadata(constants.GUILD_VIEWED, obj8);
-      const obj19 = require(15889) /* collectGuildThemeAnalyticsMetadata */;
+      const obj19 = require(15907) /* collectGuildThemeAnalyticsMetadata */;
       obj9 = { guild_id: null };
       obj9[0] = selectedGuildId;
-      require(6974) /* isClickstreamEnabled */.trackClickstream(constants.GUILD_VIEWED_CLICKSTREAM, obj9);
-      const obj20 = require(6974) /* isClickstreamEnabled */;
+      require(6995) /* isClickstreamEnabled */.trackClickstream(constants.GUILD_VIEWED_CLICKSTREAM, obj9);
+      const obj20 = require(6995) /* isClickstreamEnabled */;
       if (obj22.isFavoritesGuildId(selectedGuildId)) {
-        importDefault(15890)();
+        importDefault(15908)();
       }
       obj22 = require(1913) /* getFavoritesAwareGuildName */;
     }
@@ -295,8 +295,8 @@ prototype["_trackWithMetadata"] = function _trackWithMetadata(CHANNEL_OPENED, fi
   }
   const self = this;
   if (this.props.connected) {
-    require(4539) /* collectGuildAnalyticsMetadata */.trackWithMetadata(CHANNEL_OPENED, obj);
-    const obj5 = require(4539) /* collectGuildAnalyticsMetadata */;
+    require(4549) /* collectGuildAnalyticsMetadata */.trackWithMetadata(CHANNEL_OPENED, obj);
+    const obj5 = require(4549) /* collectGuildAnalyticsMetadata */;
   } else {
     if (!obj2.isThrottled(CHANNEL_OPENED)) {
       obj = {};

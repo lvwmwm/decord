@@ -1,16 +1,16 @@
-// Module ID: 10089
-// Function ID: 10090
+// Module ID: 10101
+// Function ID: 10102
 // Name: useShouldShowGiftingPromotionDeco
-// Dependencies: [1924, 9660, 2]
+// Dependencies: [1924, 9671, 2]
 // Exports: default
 
-// Module 10089 (useShouldShowGiftingPromotionDeco)
+// Module 10101 (useShouldShowGiftingPromotionDeco)
 import { PremiumTypes } from "GuildFeatures";
 
 const result = require("set").fileFinishedImporting("modules/premium/gifting/native/hooks/useShouldShowGiftingPromotionDeco.tsx");
 
 export default function useShouldShowGiftingPromotionDeco(arg0) {
-  const nativeGiftContext = require(9660) /* NativeGiftContextProvider */.useNativeGiftContext();
+  const nativeGiftContext = require(9671) /* NativeGiftContextProvider */.useNativeGiftContext();
   const claimableRewards = nativeGiftContext.claimableRewards;
   if (null != arg0) {
     let tmp4 = arg0 === PremiumTypes.TIER_2;

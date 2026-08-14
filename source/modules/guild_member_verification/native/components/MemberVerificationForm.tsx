@@ -1,10 +1,10 @@
-// Module ID: 8493
-// Function ID: 8494
+// Module ID: 8515
+// Function ID: 8516
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 5305, 676, 21, 4342, 4062, 1236, 8494, 8465, 5756, 4168, 589, 4832, 5374, 8495, 8518, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 5326, 676, 21, 4342, 4062, 1236, 8516, 8487, 5777, 4168, 589, 4854, 5395, 8517, 8540, 4777, 2]
 // Exports: default
 
-// Module 8493 (MemberVerificationForm)
+// Module 8515 (MemberVerificationForm)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";

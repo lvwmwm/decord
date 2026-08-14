@@ -1,10 +1,10 @@
-// Module ID: 6755
-// Function ID: 6756
+// Module ID: 6776
+// Function ID: 6777
 // Name: ServerIconSproutletSyndicateExample
-// Dependencies: [21, 5308, 6756, 2]
+// Dependencies: [21, 5329, 6777, 2]
 // Exports: ServerIconSproutletSyndicateExample
 
-// Module 6755 (ServerIconSproutletSyndicateExample)
+// Module 6776 (ServerIconSproutletSyndicateExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconSproutletSyndicateExample.native.tsx");
@@ -28,7 +28,7 @@ export const ServerIconSproutletSyndicateExample = function ServerIconSproutletS
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6756);
+  obj[0] = importDefault(6777);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ServerIconSproutletSyndicateExample = function ServerIconSproutletS
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
 };

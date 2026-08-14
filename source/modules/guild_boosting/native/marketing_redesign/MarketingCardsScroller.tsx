@@ -1,9 +1,9 @@
-// Module ID: 11986
-// Function ID: 11987
+// Module ID: 12002
+// Function ID: 12003
 // Name: items
-// Dependencies: [32, 19, 17, 4334, 21, 4342, 4191, 712, 589, 1236, 501, 4887, 9989, 11801, 2]
+// Dependencies: [32, 19, 17, 4334, 21, 4342, 4191, 712, 589, 1236, 501, 4909, 10000, 11817, 2]
 
-// Module 11986 (items)
+// Module 12002 (items)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

@@ -1,10 +1,10 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 14010
+// Function ID: 14011
 // Name: normalizeSvgXml
 // Dependencies: [584, 687, 2]
 // Exports: getCachedSvgXml, loadSvgXml
 
-// Module 13998 (normalizeSvgXml)
+// Module 14010 (normalizeSvgXml)
 function normalizeSvgXml(str) {
   const match = str.match(closure_2);
   let first;

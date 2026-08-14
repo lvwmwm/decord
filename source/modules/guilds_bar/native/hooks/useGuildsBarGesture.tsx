@@ -1,10 +1,10 @@
-// Module ID: 15478
-// Function ID: 15479
+// Module ID: 15496
+// Function ID: 15497
 // Name: getDropIndex
-// Dependencies: [5, 19, 17, 1910, 5196, 15479, 15480, 4083, 636, 4311, 1363, 12, 1208, 1236, 8053, 15225, 4065, 712, 3974, 11136, 705, 5272, 8747, 8648, 500, 1628, 4741, 15481, 15482, 14406, 5467, 2]
+// Dependencies: [5, 19, 17, 1910, 5217, 15497, 15498, 4083, 636, 4311, 1363, 12, 1208, 1236, 8074, 15239, 4065, 712, 3974, 11152, 705, 5293, 8761, 8662, 500, 1628, 4763, 15499, 15500, 14419, 5488, 2]
 // Exports: default
 
-// Module 15478 (getDropIndex)
+// Module 15496 (getDropIndex)
 import withEqualityFn from "withEqualityFn";
 import closure_4 from "t";
 import { Dimensions } from "Themes";
@@ -278,8 +278,8 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, current) {
         GUILDS = store2.getFastListGuildFolders()[item.section - tmp8.GUILDS];
         if (null != GUILDS) {
           const type = item.type;
-          if (require(8053) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
-            if (tmp10(8053).FastListItemTypes.ITEM === type) {
+          if (require(8074) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
+            if (tmp10(8074).FastListItemTypes.ITEM === type) {
               if (GUILDS.type !== GuildsNodeType.ROOT) {
                 let tmp13 = GUILDS;
                 if (GUILDS.type !== tmp12.FOLDER) {
@@ -648,7 +648,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    state.setStateShallow({ dragSpecs: "isArray", overSpecs: "accessibilityRole" });
+    state.setStateShallow({ dragSpecs: "r", overSpecs: "accessibilityRole" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj5 = {};

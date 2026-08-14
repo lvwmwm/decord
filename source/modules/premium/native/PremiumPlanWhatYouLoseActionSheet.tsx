@@ -1,10 +1,10 @@
-// Module ID: 7666
-// Function ID: 7667
+// Module ID: 7687
+// Function ID: 7688
 // Name: WhatYouLoseItem
-// Dependencies: [19, 17, 1924, 21, 4342, 712, 5308, 4338, 4007, 5768, 7667, 38, 7672, 1236, 7673, 7674, 7675, 7676, 4310, 5437, 6942, 4755, 7419, 2]
+// Dependencies: [19, 17, 1924, 21, 4342, 712, 5329, 4338, 4007, 5789, 7688, 38, 7693, 1236, 7694, 7695, 7696, 7697, 4310, 5458, 6963, 4777, 7440, 2]
 // Exports: default
 
-// Module 7666 (WhatYouLoseItem)
+// Module 7687 (WhatYouLoseItem)
 import Background from "Background";
 import { View } from "registerAsset";
 import { PremiumTypes } from "GuildFeatures";
@@ -20,7 +20,7 @@ function WhatYouLoseItem(arg0) {
   ({ imageSource, text } = arg0);
   const tmp = createCacheKey();
   let obj = { style: tmp.item, children: null };
-  const items = [callback(importDefault(5308), { source: imageSource }), ];
+  const items = [callback(importDefault(5329), { source: imageSource }), ];
   obj = { variant: "text-md/medium", style: tmp.itemLabel, children: text };
   items[1] = callback(require(4338) /* Text */.Text, obj);
   obj[1] = items;

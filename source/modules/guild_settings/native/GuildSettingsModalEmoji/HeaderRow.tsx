@@ -1,10 +1,10 @@
-// Module ID: 16727
-// Function ID: 16728
+// Module ID: 16743
+// Function ID: 16744
 // Name: HeaderRow
-// Dependencies: [5, 32, 19, 17, 16721, 676, 1925, 21, 4342, 712, 9035, 8789, 698, 1236, 514, 4901, 4755, 4338, 589, 2]
+// Dependencies: [5, 32, 19, 17, 16737, 676, 1925, 21, 4342, 712, 9049, 8803, 698, 1236, 514, 4923, 4777, 4338, 589, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 16727 (HeaderRow)
+// Module 16743 (HeaderRow)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -213,7 +213,7 @@ function HeaderRow(guild) {
   [tmp5, c5] = callback(React.useState(null), 2);
   const tmp4 = callback(React.useState(null), 2);
   [c6, c7] = callback(React.useState(""), 2);
-  let obj = guild(9035);
+  let obj = guild(9049);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   let intl = guild(1236).intl;
   obj = { id: null, text: null };
@@ -257,7 +257,7 @@ function HeaderRow(guild) {
     const intl5 = tmp7(1236).intl;
     obj5[3] = intl5.string(tmp7(1236).t["DU0dy/"]);
     obj5[4] = uploadDisabled;
-    canCreateExpressions = tmp13(tmp7(4755).Button, obj5);
+    canCreateExpressions = tmp13(tmp7(4777).Button, obj5);
   }
   const items1 = [canCreateExpressions, , ];
   let tmp13Result = null != tmp5;

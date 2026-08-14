@@ -1,9 +1,9 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 16978
+// Function ID: 16979
 // Name: handleRTCConnectionState
-// Dependencies: [5, 4413, 1218, 4393, 4416, 4430, 4399, 4400, 676, 4409, 5301, 4404, 4441, 4408, 698, 4896, 4034, 709, 4405, 3972, 500, 4403, 2]
+// Dependencies: [5, 4413, 1218, 4393, 4416, 4430, 4399, 4400, 676, 4409, 5322, 4404, 4441, 4408, 698, 4918, 4034, 709, 4405, 3972, 500, 4403, 2]
 
-// Module 16962 (handleRTCConnectionState)
+// Module 16978 (handleRTCConnectionState)
 import initialize from "initialize";
 import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo";
 import fetchFingerprint from "fetchFingerprint";
@@ -137,7 +137,7 @@ prototype["handleClipsInitFailure"] = function handleClipsInitFailure(arg0) {
   ({ applicationName, errMsg } = arg0);
   let obj = importDefault(698);
   obj = { application_name: applicationName, error_message: errMsg, clip_runtime: null };
-  obj[2] = require(4896) /* apexExperiment */.getClipsRuntime("handleClipsInitFailure");
+  obj[2] = require(4918) /* apexExperiment */.getClipsRuntime("handleClipsInitFailure");
   obj.track(constants2.CLIPS_INIT_FAILURE, obj);
 };
 prototype["maybeShowClipsWarning"] = function maybeShowClipsWarning(userId) {
@@ -314,7 +314,7 @@ prototype["classifyHardwareAndTrack"] = function classifyHardwareAndTrack() {
           obj4[1] = outer1_13;
           obj4[2] = gpuModels;
           const obj7 = outer1_1(698);
-          obj4[3] = outer1_0(4896).getClipsRuntime("classifyHardwareAndTrack");
+          obj4[3] = outer1_0(4918).getClipsRuntime("classifyHardwareAndTrack");
           obj7.track(outer1_15.CLIPS_HARDWARE_CLASSIFICATION, obj4);
           dependencyMap = 0;
           c5 = 3;

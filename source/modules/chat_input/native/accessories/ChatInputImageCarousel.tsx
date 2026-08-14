@@ -1,8 +1,8 @@
-// Module ID: 11662
-// Function ID: 11663
-// Dependencies: [19, 7284, 4681, 4680, 8660, 21, 589, 10049, 2]
+// Module ID: 11678
+// Function ID: 11679
+// Dependencies: [19, 7306, 4703, 4702, 8674, 21, 589, 10060, 2]
 
-// Module 11662
+// Module 11678
 import handleInit from "handleInit";
 import { DraftType } from "handleChanged";
 import map from "map";
@@ -40,7 +40,7 @@ const memoResult = require("noop").memo(function ChatInputImageCarousel(canUploa
     obj = { attachments: null, channelId: null };
     obj[0] = stateFromStores;
     obj[1] = channelId;
-    tmp4 = jsx(channelId(10049), { attachments: null, channelId: null });
+    tmp4 = jsx(channelId(10060), { attachments: null, channelId: null });
   }
   return tmp4;
 });

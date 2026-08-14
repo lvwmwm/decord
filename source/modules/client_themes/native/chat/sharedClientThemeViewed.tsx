@@ -1,14 +1,14 @@
-// Module ID: 11407
-// Function ID: 11408
+// Module ID: 11423
+// Function ID: 11424
 // Name: handleSharedClientThemeViewed
-// Dependencies: [9399, 503, 2]
+// Dependencies: [9413, 503, 2]
 // Exports: handleSharedClientThemeViewed
 
-// Module 11407 (handleSharedClientThemeViewed)
+// Module 11423 (handleSharedClientThemeViewed)
 const result = require("set").fileFinishedImporting("modules/client_themes/native/chat/sharedClientThemeViewed.tsx");
 
 export const handleSharedClientThemeViewed = function handleSharedClientThemeViewed() {
-  let obj = require(9399) /* trackImpression */;
+  let obj = require(9413) /* trackImpression */;
   obj = { type: require(503) /* encodeProperties */.ImpressionTypes.VIEW, name: require(503) /* encodeProperties */.ImpressionNames.CUSTOM_THEME_SHARE, properties: {} };
   obj.trackImpression(obj);
 };

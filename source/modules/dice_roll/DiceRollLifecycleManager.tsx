@@ -1,9 +1,9 @@
-// Module ID: 16484
-// Function ID: 16485
+// Module ID: 16502
+// Function ID: 16503
 // Name: finishRoll
-// Dependencies: [1391, 1979, 11417, 8398, 4335, 5301, 1236, 6965, 7188, 2]
+// Dependencies: [1391, 1979, 11433, 8420, 4335, 5322, 1236, 6986, 7210, 2]
 
-// Module 16484 (finishRoll)
+// Module 16502 (finishRoll)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import INITIAL_STATE from "INITIAL_STATE";
@@ -136,8 +136,8 @@ prototype["sendMessage"] = function sendMessage(arg0, arg1, arg2, arr) {
       const _HermesInternal4 = HermesInternal;
       combined3 = "### " + result + ` ` + combined1 + "\n" + combined2;
     }
-    str10 = importDefault(6965);
-    obj1 = importDefault(7188);
+    str10 = importDefault(6986);
+    obj1 = importDefault(7210);
     obj1 = { location: null };
     obj1[0] = MessageSendLocation.CHAT_INPUT;
     str10.sendMessage(arg0, obj1.parse(channel, combined3), true, obj1);

@@ -1,10 +1,10 @@
-// Module ID: 8326
-// Function ID: 8327
+// Module ID: 8348
+// Function ID: 8349
 // Name: useCollectiblesData
-// Dependencies: [32, 7049, 7065, 647, 2]
+// Dependencies: [32, 7071, 7087, 647, 2]
 // Exports: default
 
-// Module 8326 (useCollectiblesData)
+// Module 8348 (useCollectiblesData)
 import _slicedToArray from "_slicedToArray";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import map from "map";

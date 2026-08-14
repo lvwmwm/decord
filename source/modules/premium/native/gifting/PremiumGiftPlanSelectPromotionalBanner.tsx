@@ -1,8 +1,8 @@
-// Module ID: 10091
-// Function ID: 10092
-// Dependencies: [19, 17, 21, 4342, 712, 7405, 10087, 4766, 5308, 4338, 1236, 10092, 2]
+// Module ID: 10103
+// Function ID: 10104
+// Dependencies: [19, 17, 21, 4342, 712, 7426, 10099, 4788, 5329, 4338, 1236, 10104, 2]
 
-// Module 10091
+// Module 10103
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -33,9 +33,9 @@ const memoResult = require("noop").memo(function PremiumGiftPlanSelectPromotiona
   ({ claimableRewards, isSelected, onLayout } = giftPlanSelectionCardBannerComponent);
   const tmp = callback2();
   const gradient = giftPlanSelectionCardBannerComponent.gradient;
-  let obj = require(10087) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let obj = require(10099) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.mobileBannerAsset);
-  let obj1 = require(10087) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let obj1 = require(10099) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl1 = obj1.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.avatarAsset, true);
   obj = { style: tmp.gradient, useAngle: true, angle: null, angleCenter: null, colors: null, onLayout: null, children: null };
   let num;
@@ -63,7 +63,7 @@ const memoResult = require("noop").memo(function PremiumGiftPlanSelectPromotiona
     obj1 = { uri: null };
     obj1[0] = themeAndReducedMotionAwareAssetUrl;
     obj[2] = obj1;
-    tmp9 = callback(tmp7(5308), obj);
+    tmp9 = callback(tmp7(5329), obj);
   }
   const items = [tmp9, , ];
   const obj2 = { style: tmp.content, children: null };
@@ -79,7 +79,7 @@ const memoResult = require("noop").memo(function PremiumGiftPlanSelectPromotiona
   items[1] = closure_5(View, obj2);
   let tmp12Result = null != themeAndReducedMotionAwareAssetUrl1;
   if (tmp12Result) {
-    let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(7405) /* create */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
+    let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(7426) /* create */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
     const items2 = [tmp.logoContainer, ];
     let logoContainerLargeTilted = logoLargeTilted;
     if (logoLargeTilted) {
@@ -97,13 +97,13 @@ const memoResult = require("noop").memo(function PremiumGiftPlanSelectPromotiona
     items3[1] = logoLargeTilted;
     obj7[1] = items3;
     obj7[2] = themeAndReducedMotionAwareAssetUrl1;
-    obj6[1] = tmp12(tmp7(10092), obj7);
+    obj6[1] = tmp12(tmp7(10104), obj7);
     tmp12Result = tmp12(View, obj6);
-    const tmp7Result = tmp7(10092);
+    const tmp7Result = tmp7(10104);
   }
   items[2] = tmp12Result;
   obj[6] = items;
-  return closure_5(importDefault(4766), obj);
+  return closure_5(importDefault(4788), obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftPlanSelectPromotionalBanner.tsx");
 

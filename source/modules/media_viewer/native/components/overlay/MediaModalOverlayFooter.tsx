@@ -1,10 +1,10 @@
-// Module ID: 12316
-// Function ID: 12317
+// Module ID: 12334
+// Function ID: 12335
 // Name: clamp
-// Dependencies: [32, 19, 17, 21, 4342, 712, 4083, 10981, 4343, 1297, 12317, 5467, 4084, 5368, 5752, 12318, 12309, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 4083, 10997, 4343, 1297, 12335, 5488, 4084, 5389, 5773, 12336, 12327, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 12316 (clamp)
+// Module 12334 (clamp)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -18,7 +18,7 @@ const require = arg1;
 createCacheKey = { drawerContainer: { overflow: "hidden", backgroundColor: "call" }, drawerHeaderTab: null, drawerHeader: null, messagePreviewContainer: null, thumbnailsContainer: null };
 createCacheKey = { width: 40, backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_600 };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { backgroundColor: "sa" };
+createCacheKey[2] = { backgroundColor: "title" };
 createCacheKey[3] = { marginLeft: 6 };
 createCacheKey[4] = { paddingTop: 8 };
 createCacheKey = createCacheKey.createStyles(createCacheKey);

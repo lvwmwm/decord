@@ -1,10 +1,10 @@
-// Module ID: 11192
-// Function ID: 11193
+// Module ID: 11208
+// Function ID: 11209
 // Name: BookmarkOutlineIcon
-// Dependencies: [19, 21, 712, 4064, 11193, 2]
+// Dependencies: [19, 21, 712, 4064, 11209, 2]
 // Exports: BookmarkOutlineIcon
 
-// Module 11192 (BookmarkOutlineIcon)
+// Module 11208 (BookmarkOutlineIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const BookmarkOutlineIcon = function BookmarkOutlineIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11193) /* registerAsset */;
+  obj[0] = require(11209) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

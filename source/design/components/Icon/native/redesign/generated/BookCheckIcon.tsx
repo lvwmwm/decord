@@ -1,10 +1,10 @@
-// Module ID: 4845
-// Function ID: 4846
+// Module ID: 4867
+// Function ID: 4868
 // Name: BookCheckIcon
-// Dependencies: [19, 21, 712, 4064, 4834, 2]
+// Dependencies: [19, 21, 712, 4064, 4856, 2]
 // Exports: BookCheckIcon
 
-// Module 4845 (BookCheckIcon)
+// Module 4867 (BookCheckIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const BookCheckIcon = function BookCheckIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4834) /* registerAsset */;
+  obj[0] = require(4856) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

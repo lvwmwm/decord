@@ -1,10 +1,10 @@
-// Module ID: 12146
-// Function ID: 12147
+// Module ID: 12164
+// Function ID: 12165
 // Name: HubEmailConnectionStudentPrompt
-// Dependencies: [19, 17, 12137, 676, 21, 4342, 5276, 712, 1499, 12145, 1297, 1236, 5407, 12147, 698, 12148, 2]
+// Dependencies: [19, 17, 12155, 676, 21, 4342, 5297, 712, 1499, 12163, 1297, 1236, 5428, 12165, 698, 12166, 2]
 // Exports: default
 
-// Module 12146 (HubEmailConnectionStudentPrompt)
+// Module 12164 (HubEmailConnectionStudentPrompt)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
@@ -49,9 +49,9 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
   const items = [callback(onClose(1297).LegacyText, obj1), , ];
   const obj2 = { DEPRECATED_style: tmp.row, leading: null, trailing: null, label: null, subLabel: null, onPress: null };
   const obj3 = { source: null };
-  obj3[0] = invite(12147);
+  obj3[0] = invite(12165);
   obj2[1] = callback(closure_4, obj3);
-  obj2[2] = invite(5407).Arrow;
+  obj2[2] = invite(5428).Arrow;
   const intl2 = onClose(1236).intl;
   obj2[3] = intl2.string(onClose(1236).t["a7a/D+"]);
   const intl3 = onClose(1236).intl;
@@ -62,18 +62,18 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
     obj = { onClose, invite };
     arr = arr.push(outer1_5.VERIFY_EMAIL, obj);
   };
-  items[1] = callback(invite(5407), obj2);
+  items[1] = callback(invite(5428), obj2);
   const obj4 = { DEPRECATED_style: tmp.row, leading: null, trailing: null, label: null, onPress: null };
   const obj5 = { source: null };
-  const tmp2 = invite(5407);
-  obj5[0] = invite(12148);
+  const tmp2 = invite(5428);
+  obj5[0] = invite(12166);
   obj4[1] = callback(closure_4, obj5);
-  obj4[2] = invite(5407).Arrow;
+  obj4[2] = invite(5428).Arrow;
   const intl4 = onClose(1236).intl;
   obj4[3] = intl4.string(onClose(1236).t.GLG9n4);
   obj4[4] = onClose;
-  items[2] = callback(invite(5407), obj4);
+  items[2] = callback(invite(5428), obj4);
   obj[1] = items;
   obj[0] = callback2(closure_3, obj);
-  return callback(onClose(12145).HubEmailConnectionScreen, obj);
+  return callback(onClose(12163).HubEmailConnectionScreen, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 12188
-// Function ID: 12189
+// Module ID: 12206
+// Function ID: 12207
 // Name: ChannelTitleContent
-// Dependencies: [19, 17, 5035, 1395, 1391, 1910, 4431, 3998, 1922, 676, 1398, 1388, 21, 4342, 5276, 712, 589, 1236, 4805, 4535, 9687, 12189, 12190, 1297, 12191, 12192, 5308, 12193, 8728, 4887, 4338, 4187, 8350, 9106, 4164, 1377, 10045, 12194, 2]
+// Dependencies: [19, 17, 5057, 1395, 1391, 1910, 4431, 3998, 1922, 676, 1398, 1388, 21, 4342, 5297, 712, 589, 1236, 4827, 4535, 9698, 12207, 12208, 1297, 12209, 12210, 5329, 12211, 8742, 4909, 4338, 4187, 8372, 9120, 4164, 1377, 10056, 12212, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 12188 (ChannelTitleContent)
+// Module 12206 (ChannelTitleContent)
 import importAllResult from "computeChannelName";
 import { View } from "getSystemLocale";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -167,7 +167,7 @@ function ChannelTitleWrapper(arg0) {
       return null;
     };
     obj[4] = children;
-    tmp5 = callback(require(4887) /* PressableBase */.PressableOpacity, obj);
+    tmp5 = callback(require(4909) /* PressableBase */.PressableOpacity, obj);
   }
   return tmp5;
 }
@@ -437,7 +437,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
   }
   let channelIcon = null;
   if (null != stateFromStores) {
-    let tmp2Result = tmp2(4805);
+    let tmp2Result = tmp2(4827);
     channelIcon = tmp2Result.getChannelIcon(stateFromStores);
   }
   let channelName = null;
@@ -471,7 +471,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
     obj3[0] = callback(DMChannelName, obj);
     obj3[1] = channelIcon;
     obj3[2] = tmp16Result;
-    obj3[3] = callback(importDefault(9687), obj1);
+    obj3[3] = callback(importDefault(9698), obj1);
     obj2[1] = callback(ChannelTitleContent, obj3);
     return callback(ChannelTitleWrapper, obj2);
   } else {

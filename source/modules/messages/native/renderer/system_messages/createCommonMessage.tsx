@@ -1,10 +1,10 @@
-// Module ID: 8117
-// Function ID: 8118
+// Module ID: 8138
+// Function ID: 8139
 // Name: createCommonMessage
-// Dependencies: [1391, 4342, 1363, 4191, 712, 4031, 8100, 8118, 8119, 8120, 2]
+// Dependencies: [1391, 4342, 1363, 4191, 712, 4031, 8121, 8139, 8140, 8141, 2]
 // Exports: default
 
-// Module 8117 (createCommonMessage)
+// Module 8138 (createCommonMessage)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createCacheKey from "createCacheKey";
 import createCacheKey from "createCacheKey";
@@ -36,10 +36,10 @@ export default function createCommonMessage(reactions) {
   obj[7] = tmp.highlightColor;
   obj[8] = reactions.reactions;
   const obj3 = require(1363) /* AccessibilityAnnouncer */;
-  obj[9] = require(8100) /* frozen */.getAssetUriForEmbed(importDefault(8118));
-  const obj4 = require(8100) /* frozen */;
-  obj[10] = require(8100) /* frozen */.getAssetUriForEmbed(importDefault(8119));
-  const obj5 = require(8100) /* frozen */;
-  obj[11] = require(8120) /* MessageAccessibilityAction */.createMessageAccessibilityActions(message, channel);
+  obj[9] = require(8121) /* frozen */.getAssetUriForEmbed(importDefault(8139));
+  const obj4 = require(8121) /* frozen */;
+  obj[10] = require(8121) /* frozen */.getAssetUriForEmbed(importDefault(8140));
+  const obj5 = require(8121) /* frozen */;
+  obj[11] = require(8141) /* MessageAccessibilityAction */.createMessageAccessibilityActions(message, channel);
   return obj;
 };

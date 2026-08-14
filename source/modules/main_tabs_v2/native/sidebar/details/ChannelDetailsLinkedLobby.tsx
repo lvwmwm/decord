@@ -1,10 +1,10 @@
-// Module ID: 15884
-// Function ID: 15885
+// Module ID: 15902
+// Function ID: 15903
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 676, 21, 4342, 712, 5774, 4338, 1236, 1993, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 5795, 4338, 1236, 1993, 2]
 // Exports: default
 
-// Module 15884 (ChannelDetailsLinkedLobby)
+// Module 15902 (ChannelDetailsLinkedLobby)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -27,7 +27,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
   let divider = createCacheKey();
   let BPDKoA = require;
   let getArticleURL = dependencyMap;
-  let obj = require(5774) /* useGetOrFetchApplications */;
+  let obj = require(5795) /* useGetOrFetchApplications */;
   const linkedLobby = channel.linkedLobby;
   let application_id;
   if (linkedLobby != null) {

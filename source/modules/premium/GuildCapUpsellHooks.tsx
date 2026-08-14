@@ -1,10 +1,10 @@
-// Module ID: 5874
-// Function ID: 5875
+// Module ID: 5895
+// Function ID: 5896
 // Name: useShouldShowInlineGuildCapUpsell
-// Dependencies: [1910, 1922, 676, 589, 5875, 4007, 2]
+// Dependencies: [1910, 1922, 676, 589, 5896, 4007, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 5874 (useShouldShowInlineGuildCapUpsell)
+// Module 5895 (useShouldShowInlineGuildCapUpsell)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { MAX_USER_GUILDS } from "ME";
@@ -16,10 +16,10 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   const items = [createGuildRecordFromRust];
   let stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => guildCount.getGuildCount() >= 95);
   const obj = require(589) /* initialize */;
-  const items1 = [require(5875) /* HotspotStore */.HotspotStore];
+  const items1 = [require(5896) /* HotspotStore */.HotspotStore];
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => {
-    const HotspotStore = callback(5875).HotspotStore;
-    return HotspotStore.hasHotspot(callback(5875).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+    const HotspotStore = callback(5896).HotspotStore;
+    return HotspotStore.hasHotspot(callback(5896).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
   });
   const obj2 = require(589) /* initialize */;
   const items2 = [mergeGuildAvatar];
@@ -33,7 +33,7 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   return stateFromStores;
 };
 export const hideInlineGuildCapUpsell = function hideInlineGuildCapUpsell() {
-  require(5875) /* HotspotStore */.hideHotspot(require(5875) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+  require(5896) /* HotspotStore */.hideHotspot(require(5896) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
 };
 export const hasIncreasedGuildCap = function hasIncreasedGuildCap(currentUser) {
   let result = importDefault(4007).canUseIncreasedGuildCap(currentUser);

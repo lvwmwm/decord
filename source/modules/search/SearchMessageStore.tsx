@@ -1,9 +1,9 @@
-// Module ID: 5940
-// Function ID: 5941
+// Module ID: 5961
+// Function ID: 5962
 // Name: handleReaction
-// Dependencies: [1218, 3998, 4241, 4564, 4000, 589, 709, 2]
+// Dependencies: [1218, 3998, 4241, 4586, 4000, 589, 709, 2]
 
-// Module 5940 (handleReaction)
+// Module 5961 (handleReaction)
 import fetchFingerprint from "fetchFingerprint";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import { Store } from "initialize";
@@ -395,7 +395,7 @@ const searchMessageStore = new SearchMessageStore(require("dispatcher"), {
       if (null == value) {
         return false;
       } else {
-        const result = map1.set(id, require(4564) /* createMinimalMessageRecord */.updateMessageRecord(value, message.message));
+        const result = map1.set(id, require(4586) /* createMinimalMessageRecord */.updateMessageRecord(value, message.message));
       }
     }
   },

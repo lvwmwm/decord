@@ -1,10 +1,10 @@
-// Module ID: 13990
-// Function ID: 13991
+// Module ID: 14002
+// Function ID: 14003
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 4342, 712, 1935, 13991, 4766, 688, 2]
+// Dependencies: [17, 21, 4342, 712, 1935, 14003, 4788, 688, 2]
 // Exports: default
 
-// Module 13990 (DisplayNameStylesColorSwatch)
+// Module 14002 (DisplayNameStylesColorSwatch)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -27,7 +27,7 @@ export default function DisplayNameStylesColorSwatch(colors) {
       obj[0] = items;
       obj = { colors: null };
       obj[0] = colors;
-      obj[1] = jsx(importDefault(13991), { colors: null });
+      obj[1] = jsx(importDefault(14003), { colors: null });
       return <View colors={null} />;
     }
   }
@@ -37,7 +37,7 @@ export default function DisplayNameStylesColorSwatch(colors) {
     obj1[1] = { x: 0, y: 0 };
     obj1[2] = { x: 1, y: 0 };
     obj1[3] = tmp.colorSwatch;
-    return jsx(importDefault(4766), { colors: null, start: null, end: null, style: null });
+    return jsx(importDefault(4788), { colors: null, start: null, end: null, style: null });
   } else {
     let str = "#000000";
     if (colors.length > 0) {

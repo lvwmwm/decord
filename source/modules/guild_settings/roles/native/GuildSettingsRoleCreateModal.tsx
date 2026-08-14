@@ -1,10 +1,10 @@
-// Module ID: 16767
-// Function ID: 16768
+// Module ID: 16783
+// Function ID: 16784
 // Name: RoleCreateScene
-// Dependencies: [5, 32, 19, 17, 1434, 1983, 1922, 9071, 16768, 676, 21, 4342, 5307, 712, 698, 4539, 4338, 1236, 16766, 589, 38, 3994, 1499, 6047, 5310, 5272, 4061, 16765, 4310, 15487, 2007, 4753, 7835, 5807, 5414, 13967, 688, 4755, 16772, 16773, 9070, 16774, 5409, 4741, 4751, 5862, 4771, 5823, 2]
+// Dependencies: [5, 32, 19, 17, 1434, 1983, 1922, 9085, 16784, 676, 21, 4342, 5328, 712, 698, 4549, 4338, 1236, 16782, 589, 38, 3994, 1499, 6068, 5331, 5293, 4061, 16781, 4310, 15505, 2007, 4775, 7856, 5828, 5435, 13979, 688, 4777, 16788, 16789, 9084, 16790, 5430, 4763, 4773, 5883, 4793, 5844, 2]
 // Exports: default
 
-// Module 16767 (RoleCreateScene)
+// Module 16783 (RoleCreateScene)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import TextInput from "TextInput";
 import importAllResult from "initialize";
@@ -78,7 +78,7 @@ function RoleCreateScene() {
     if (dependencyMap === outer1_17) {
       const num5 = 0;
     }
-    yield outer1_1(5272).createRole(outer1_1.id, c2, num5);
+    yield outer1_1(5293).createRole(outer1_1.id, c2, num5);
     if (1 === tmp7) {
       c2 = 0;
       callback(false);
@@ -106,13 +106,13 @@ function RoleCreateScene() {
               tmp3(4061).roleCreatedToast();
               const obj5 = tmp3(4061);
               const tmp13 = tmp3;
-              tmp3(16765).setRoleJustCreated(true);
+              tmp3(16781).setRoleJustCreated(true);
               let STEP_MEMBERS = outer1_25.STEP_PERMISSIONS;
               const guild2 = obj.getProps().guild;
               tmp32(38)(null != guild2, "shouldSkipPermissions: Guild cannot be null");
               const currentUser = outer1_11.getCurrentUser();
               const tmp23 = outer1_9(guild2, currentUser);
-              const obj6 = tmp3(16765);
+              const obj6 = tmp3(16781);
               const tmp18 = tmp32;
               obj = { permission: null, user: null, context: null };
               obj[0] = outer1_20.ADMINISTRATOR;
@@ -132,7 +132,7 @@ function RoleCreateScene() {
               obj[1] = outer1_26[outer1_25.STEP_DISPLAY];
               obj[2] = outer1_26[STEP_MEMBERS];
               const tmp18Result = tmp18(698);
-              const merged = Object.assign(tmp13(4539).collectGuildAnalyticsMetadata(guild.id));
+              const merged = Object.assign(tmp13(4549).collectGuildAnalyticsMetadata(guild.id));
               tmp18Result.track(outer1_18.USER_FLOW_TRANSITION, obj);
               return false;
             }
@@ -526,12 +526,12 @@ export default function GuildSettingsRoleCreateModal() {
   const items = [handleFormInit];
   stateFromStores = obj.useStateFromStores(items, () => props.getProps().guild);
   importDefault(38)(null != stateFromStores, "useGuildSettingsStoreGuild: Guild cannot be null");
-  importDefault(4771)(() => {
+  importDefault(4793)(() => {
     let obj = outer1_1(outer1_3[14]);
     obj = { flow_type: outer1_19.GUILD_ROLE_CREATION_MODAL, from_step: outer1_26.FLOW_INITIALIZED, to_step: outer1_26[outer1_25.STEP_DISPLAY], skip: false };
     const merged = Object.assign(stateFromStores(outer1_3[15]).collectGuildAnalyticsMetadata(stateFromStores.id));
     obj.track(outer1_18.USER_FLOW_TRANSITION, obj);
   });
   obj = { screens: closure_32, initialRouteName: obj4.STEP_DISPLAY };
-  return callback3(stateFromStores(5823).Navigator, obj);
+  return callback3(stateFromStores(5844).Navigator, obj);
 };

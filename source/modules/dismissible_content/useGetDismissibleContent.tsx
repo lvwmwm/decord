@@ -1,10 +1,10 @@
-// Module ID: 6066
-// Function ID: 6067
+// Module ID: 6087
+// Function ID: 6088
 // Name: canShowTimeRecurringContent
-// Dependencies: [19, 1340, 4165, 1381, 1383, 676, 685, 698, 1377, 6067, 589, 1379, 4186, 1376, 4164, 11, 2]
+// Dependencies: [19, 1340, 4165, 1381, 1383, 676, 685, 698, 1377, 6088, 589, 1379, 4186, 1376, 4164, 11, 2]
 // Exports: useDangerouslyPeekDismissibleContents, useGetDismissibleContent, useGetSingleUseGuildDismissibleContent_UNSAFE, useGetSnowflakeBoundDismissibleContent, useGetSnowflakeBoundGuildDismissibleContent_UNSAFE, useGetTimeRecurringDismissibleContent, useGetTimeRecurringGuildDismissibleContent_UNSAFE, useGetTimeRecurringSnowflakeBoundDismissibleContent, useGetVersionedDismissibleContent
 
-// Module 6066 (canShowTimeRecurringContent)
+// Module 6087 (canShowTimeRecurringContent)
 import noop from "noop";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -114,7 +114,7 @@ export const useGetDismissibleContent = function useGetDismissibleContent(items3
   _require = tmp5;
   dependencyMap = APP_LAUNCHER_ONBOARDING;
   const obj3 = _require(4186);
-  let tmpResult = tmp(6067);
+  let tmpResult = tmp(6088);
   anyOverlayRenderingLocked = tmpResult.useAnyOverlayRenderingLocked();
   tmpResult = tmp(589);
   const stateFromStores2 = tmpResult.useStateFromStores([], () => {
@@ -269,7 +269,7 @@ export const useGetVersionedDismissibleContent = function useGetVersionedDismiss
   dependencyMap = groupName;
   React = latestVersion;
   const obj3 = _require(589);
-  tmpResult = tmp(6067);
+  tmpResult = tmp(6088);
   anyOverlayRenderingLocked = tmpResult.useAnyOverlayRenderingLocked();
   const tmp10 = ref((currentlyShown) => {
     let hasItem = null != closure_0;
@@ -403,7 +403,7 @@ export const useGetTimeRecurringDismissibleContent = function useGetTimeRecurrin
   _require = tmp5;
   dependencyMap = groupName;
   const obj2 = _require(589);
-  tmpResult = tmp(6067);
+  tmpResult = tmp(6088);
   anyOverlayRenderingLocked = tmpResult.useAnyOverlayRenderingLocked();
   const tmp11 = ref((currentlyShown) => {
     let hasItem = null != closure_0;
@@ -560,7 +560,7 @@ export const useGetSnowflakeBoundDismissibleContent = function useGetSnowflakeBo
   dependencyMap = groupName;
   handleConnectionClosedOrResumed = newSnowflakeId;
   const obj3 = _require(589);
-  tmpResult = tmp(6067);
+  tmpResult = tmp(6088);
   anyOverlayRenderingLocked = tmpResult.useAnyOverlayRenderingLocked();
   const tmp12 = ref((currentlyShown) => {
     let hasItem = null != closure_0;
@@ -712,7 +712,7 @@ export const useGetSnowflakeBoundGuildDismissibleContent_UNSAFE = function useGe
   handleConnectionClosedOrResumed = arg1;
   let obj = _require(589);
   obj2 = handleConnectionClosedOrResumed;
-  tmpResult = tmp(6067);
+  tmpResult = tmp(6088);
   const anyOverlayRenderingLocked = tmpResult.useAnyOverlayRenderingLocked();
   const tmp15 = ref((currentlyShown) => {
     let hasItem = null != closure_0;
@@ -825,7 +825,7 @@ export const useGetTimeRecurringSnowflakeBoundDismissibleContent = function useG
   dependencyMap = groupName;
   let handleConnectionClosedOrResumed = newSnowflakeId;
   let obj = _require(589);
-  tmpResult = tmp(6067);
+  tmpResult = tmp(6088);
   anyOverlayRenderingLocked = tmpResult.useAnyOverlayRenderingLocked();
   const tmp7 = ref((currentlyShown) => {
     let hasItem = null != closure_0;
@@ -953,7 +953,7 @@ export const useGetSingleUseGuildDismissibleContent_UNSAFE = function useGetSing
   closure_1 = current;
   dependencyMap = CHANNEL_NOTICES;
   const obj2 = _require(4186);
-  let tmpResult = tmp(6067);
+  let tmpResult = tmp(6088);
   const anyOverlayRenderingLocked = tmpResult.useAnyOverlayRenderingLocked();
   tmpResult = tmp(589);
   const stateFromStores1 = tmpResult.useStateFromStores([], () => {
@@ -1085,7 +1085,7 @@ export const useGetTimeRecurringGuildDismissibleContent_UNSAFE = function useGet
   closure_1 = current;
   dependencyMap = GUILD_HEADER_TOOLTIPS;
   let obj = _require(589);
-  tmpResult = tmp(6067);
+  tmpResult = tmp(6088);
   const anyOverlayRenderingLocked = tmpResult.useAnyOverlayRenderingLocked();
   const tmp16 = ref((currentlyShown) => {
     let hasItem = null != closure_0;

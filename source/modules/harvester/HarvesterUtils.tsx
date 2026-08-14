@@ -1,10 +1,10 @@
-// Module ID: 14171
-// Function ID: 14172
+// Module ID: 14184
+// Function ID: 14185
 // Name: harvestDisabled
-// Dependencies: [32, 19, 1922, 13036, 14172, 589, 2]
+// Dependencies: [32, 19, 1922, 13054, 14185, 589, 2]
 // Exports: harvestDisabled, useRequestHarvestStatus
 
-// Module 14171 (harvestDisabled)
+// Module 14184 (harvestDisabled)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";

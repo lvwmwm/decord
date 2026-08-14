@@ -1,8 +1,8 @@
-// Module ID: 11255
-// Function ID: 11256
-// Dependencies: [5035, 1910, 676, 709, 530, 6000, 2]
+// Module ID: 11271
+// Function ID: 11272
+// Dependencies: [5057, 1910, 676, 709, 530, 6021, 2]
 
-// Module 11255
+// Module 11271
 import _handleConnectionOpen from "_handleConnectionOpen";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Endpoints } from "ME";
@@ -40,9 +40,9 @@ export default {
             }
           });
         } else {
-          callback(6000).transitionToGuild(body.id);
+          callback(6021).transitionToGuild(body.id);
           body(body);
-          const obj3 = callback(6000);
+          const obj3 = callback(6021);
         }
       }, (body) => {
         let obj = callback2(709);

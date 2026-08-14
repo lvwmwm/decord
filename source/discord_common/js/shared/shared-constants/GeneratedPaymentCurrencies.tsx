@@ -1,9 +1,9 @@
-// Module ID: 7487
-// Function ID: 7488
+// Module ID: 7508
+// Function ID: 7509
 // Name: GeneratedPaymentCurrencies
 // Dependencies: [2]
 
-// Module 7487 (GeneratedPaymentCurrencies)
+// Module 7508 (GeneratedPaymentCurrencies)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/GeneratedPaymentCurrencies.tsx");
 
 export const GeneratedPaymentCurrencies = {};

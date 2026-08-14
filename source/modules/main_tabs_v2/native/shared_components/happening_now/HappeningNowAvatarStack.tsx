@@ -1,10 +1,10 @@
-// Module ID: 15282
-// Function ID: 15283
+// Module ID: 15296
+// Function ID: 15297
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 1994, 12373, 21, 4342, 712, 1297, 4083, 647, 4754, 8341, 4338, 1898, 15283, 2]
+// Dependencies: [32, 19, 17, 1994, 12391, 21, 4342, 712, 1297, 4083, 647, 4776, 8363, 4338, 1898, 15297, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 15282 (HappeningNowAvatarStack)
+// Module 15296 (HappeningNowAvatarStack)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

@@ -1,10 +1,10 @@
-// Module ID: 9512
-// Function ID: 9513
+// Module ID: 9525
+// Function ID: 9526
 // Name: _calculateScrollOffset
-// Dependencies: [5, 19, 1493, 712, 9513, 5410, 2]
+// Dependencies: [5, 19, 1493, 712, 9526, 5431, 2]
 // Exports: default
 
-// Module 9512 (_calculateScrollOffset)
+// Module 9525 (_calculateScrollOffset)
 import getKeyboardDuration from "getKeyboardDuration";
 import noop from "noop";
 

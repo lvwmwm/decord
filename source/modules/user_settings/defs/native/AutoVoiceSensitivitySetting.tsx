@@ -1,9 +1,9 @@
-// Module ID: 14550
-// Function ID: 14551
+// Module ID: 14563
+// Function ID: 14564
 // Name: toggle
-// Dependencies: [4393, 8127, 589, 9205, 10407, 1236, 2]
+// Dependencies: [4393, 8148, 589, 9219, 10421, 1236, 2]
 
-// Module 14550 (toggle)
+// Module 14563 (toggle)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
@@ -20,7 +20,7 @@ createToggle = {
   },
   onValueChange: function onAutoVoiceSensitivitySettingValueChange(autoThreshold) {
     mode = mode.getMode();
-    let obj = importDefault(9205);
+    let obj = importDefault(9219);
     obj = { autoThreshold };
     obj.setMode(mode, obj);
   },

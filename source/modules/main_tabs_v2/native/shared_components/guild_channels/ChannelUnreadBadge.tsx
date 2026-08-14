@@ -1,8 +1,8 @@
-// Module ID: 15235
-// Function ID: 15236
-// Dependencies: [19, 17, 9844, 4541, 21, 4342, 9845, 4761, 8437, 2]
+// Module ID: 15249
+// Function ID: 15250
+// Dependencies: [19, 17, 9855, 4551, 21, 4342, 9856, 4783, 8459, 2]
 
-// Module 15235
+// Module 15249
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
@@ -25,9 +25,9 @@ const memoResult = require("noop").memo(function ChannelUnreadBadge(panelVariant
     flag = false;
   }
   const tmp = callback();
-  let obj = require(9845) /* getLayoutStyles */;
+  let obj = require(9856) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout, launchpad);
-  require(4761) /* getFontScale */;
+  require(4783) /* getFontScale */;
   let tmp8Result = null;
   if (unread) {
     const items = [tmp.unreadBadge, , , ];
@@ -39,14 +39,14 @@ const memoResult = require("noop").memo(function ChannelUnreadBadge(panelVariant
     const unreadBadge = layoutStyles.unreadBadge;
     obj = { style: null, children: null };
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = tmp2(9845).makeSizeStyle(layoutStyles.unreadBadge.size);
+    items[3] = tmp2(9856).makeSizeStyle(layoutStyles.unreadBadge.size);
     obj[0] = items;
     obj = { classic: null, size: null, badgeStyle: null };
     obj[0] = flag;
-    const tmp2Result = tmp2(9845);
+    const tmp2Result = tmp2(9856);
     const tmp9 = View;
     const _Math = Math;
-    obj[1] = tmp2(8437).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
+    obj[1] = tmp2(8459).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       let num2 = MUTED_OPACITY_CONTENT;
     } else {
@@ -56,9 +56,9 @@ const memoResult = require("noop").memo(function ChannelUnreadBadge(panelVariant
     obj1[0] = num2;
     const items1 = [obj1];
     obj[2] = items1;
-    obj[1] = jsx(importDefault(8437), { classic: null, size: null, badgeStyle: null });
+    obj[1] = jsx(importDefault(8459), { classic: null, size: null, badgeStyle: null });
     tmp8Result = tmp8(tmp9, obj);
-    const tmp12 = importDefault(8437);
+    const tmp12 = importDefault(8459);
   }
   return tmp8Result;
 });

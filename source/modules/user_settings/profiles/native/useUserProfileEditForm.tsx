@@ -1,10 +1,10 @@
-// Module ID: 13974
-// Function ID: 13975
+// Module ID: 13986
+// Function ID: 13987
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 8309, 7128, 1922, 676, 589, 709, 8559, 10179, 8560, 8561, 13975, 8316, 4241, 13976, 8357, 13977, 4034, 13330, 1236, 2]
+// Dependencies: [109, 5, 19, 8331, 7150, 1922, 676, 589, 709, 8581, 10193, 8582, 8583, 13987, 8338, 4241, 13988, 8379, 13989, 4034, 13342, 1236, 2]
 // Exports: default
 
-// Module 13974 (useUserProfileEditForm)
+// Module 13986 (useUserProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import explicitContentFromProto from "explicitContentFromProto";
@@ -33,7 +33,7 @@ export default function useUserProfileEditForm() {
     }
     return isSubmitting;
   });
-  const effect = React.useEffect(() => () => callback2(709).wait(callback(8559).resetAllPending), []);
+  const effect = React.useEffect(() => () => callback2(709).wait(callback(8581).resetAllPending), []);
   const items2 = [stateFromStores, pendingChanges];
   callback = React.useCallback(callback(function*() {
     if (bannerOriginalMd5 === 2) {
@@ -563,7 +563,7 @@ export default function useUserProfileEditForm() {
               if (outer1_1) {
                 c3 = 3;
               } else {
-                let obj2 = outer1_0(8559);
+                let obj2 = outer1_0(8581);
                 const obj1 = { avatarDecoration: null };
                 obj1[0] = outer1_0.pendingAvatarDecoration;
                 dependencyMap = 1;
@@ -583,7 +583,7 @@ export default function useUserProfileEditForm() {
               ok = ok.ok;
             }
             if (ok) {
-              obj = outer1_0(8559);
+              obj = outer1_0(8581);
               const result = obj.resetPendingAccountChanges();
             }
           }
@@ -597,7 +597,7 @@ export default function useUserProfileEditForm() {
         }
       }
     }), items3),
-    resetPending: pendingChanges(8559).resetAllPending
+    resetPending: pendingChanges(8581).resetAllPending
   };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);

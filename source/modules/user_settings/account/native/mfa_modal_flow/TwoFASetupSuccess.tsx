@@ -1,10 +1,10 @@
-// Module ID: 14103
-// Function ID: 14104
+// Module ID: 14116
+// Function ID: 14117
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 4342, 712, 5871, 1236, 14093, 8525, 14094, 14104, 4338, 1297, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4342, 712, 5892, 1236, 14106, 8547, 14107, 14117, 4338, 1297, 4777, 2]
 // Exports: default
 
-// Module 14103 (TwoFASetupSuccess)
+// Module 14116 (TwoFASetupSuccess)
 import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -168,7 +168,7 @@ export default function TwoFASetupSuccess() {
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.flex };
   const items = [callback2(closure_6, obj), , , , , , , ];
-  obj = { source: require(14104) /* registerAsset */, style: tmp.image };
+  obj = { source: require(14117) /* registerAsset */, style: tmp.image };
   items[1] = callback2(closure_7, obj);
   let obj1 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
@@ -192,7 +192,7 @@ export default function TwoFASetupSuccess() {
   } else {
     stringResult = string(t.NIFmCJ);
   }
-  const items1 = [callback2(require(4755) /* Button */.Button, { text: stringResult, onPress: callback, disabled: tmp3, loading: tmp3, grow: true }), ];
+  const items1 = [callback2(require(4777) /* Button */.Button, { text: stringResult, onPress: callback, disabled: tmp3, loading: tmp3, grow: true }), ];
   let tmp7Result = "" !== tmp5;
   if (tmp7Result) {
     const obj6 = { style: null, children: null };
@@ -207,5 +207,5 @@ export default function TwoFASetupSuccess() {
   items[7] = callback2(closure_6, { style: tmp.flex });
   obj[1] = items;
   obj7[0] = closure_9(closure_6, obj);
-  return callback2(require(14094) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj7);
+  return callback2(require(14107) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj7);
 };

@@ -1,10 +1,10 @@
-// Module ID: 15310
-// Function ID: 15311
+// Module ID: 15324
+// Function ID: 15325
 // Name: FavoritesGuildCategorySettings
-// Dependencies: [32, 19, 17, 1394, 1429, 21, 4342, 712, 1499, 589, 1913, 9758, 8431, 1236, 4683, 1297, 4753, 7835, 5807, 5414, 4301, 9725, 9726, 2]
+// Dependencies: [32, 19, 17, 1394, 1429, 21, 4342, 712, 1499, 589, 1913, 9769, 8453, 1236, 4705, 1297, 4775, 7856, 5828, 5435, 4301, 9736, 9737, 2]
 // Exports: default
 
-// Module 15310 (FavoritesGuildCategorySettings)
+// Module 15324 (FavoritesGuildCategorySettings)
 import _slicedToArray from "_slicedToArray";
 import TableRowInner from "TableRowInner";
 import { ScrollView } from "TextInput";
@@ -150,12 +150,12 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/fav
 export default function FavoritesGuildCategorySettingsModal(categoryId) {
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(9725)().onGoBack;
+  onGoBack = onGoBack(9736)().onGoBack;
   const obj = { screenKey: "favoritesGuildCategorySettings", title: null, render: null };
   const intl = categoryId(1236).intl;
   obj[1] = intl.string(categoryId(1236).t["/uELTj"]);
   obj[2] = function render() {
     return outer1_8(outer1_11, { categoryId, onGoBack });
   };
-  return callback(onGoBack(9726), obj);
+  return callback(onGoBack(9737), obj);
 };

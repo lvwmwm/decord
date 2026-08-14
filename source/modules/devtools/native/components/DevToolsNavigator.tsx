@@ -1,10 +1,10 @@
-// Module ID: 13902
-// Function ID: 13903
+// Module ID: 13914
+// Function ID: 13915
 // Name: navigateToDevTools
-// Dependencies: [19, 17, 21, 8619, 5823, 8431, 13903, 10502, 4338, 712, 13905, 4310, 4550, 2]
+// Dependencies: [19, 17, 21, 8633, 5844, 8453, 13915, 10518, 4338, 712, 13917, 4310, 4572, 2]
 // Exports: navigateToDevTools
 
-// Module 13902 (navigateToDevTools)
+// Module 13914 (navigateToDevTools)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -18,7 +18,7 @@ createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigat
 let closure_7 = require("noop").memo((screenKey) => {
   let str = screenKey.screenKey;
   let _require;
-  let obj = _require(5823);
+  let obj = _require(5844);
   _require = obj.useAccessibilityNativeStackOptions();
   if (str == null) {
     str = "home";
@@ -43,12 +43,12 @@ let closure_7 = require("noop").memo((screenKey) => {
   };
   obj = {
     name: "home",
-    component: importDefault(13903),
+    component: importDefault(13915),
     options() {
       return {
         headerTitle() {
           let obj = { style: { flexDirection: "row" }, children: null };
-          const items = [callback3(callback(10502).HammerIcon, { size: "sm" }), ];
+          const items = [callback3(callback(10518).HammerIcon, { size: "sm" }), ];
           obj = { style: null, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: "DevTools" };
           obj = { marginLeft: null };
           obj[0] = callback2(712).space.PX_8;
@@ -62,8 +62,8 @@ let closure_7 = require("noop").memo((screenKey) => {
     }
   };
   let items = [callback(createNativeStackNavigator.Screen, obj), ];
-  let merged = Object.assign(tmp(13905).DevToolsScreens);
-  let merged1 = Object.assign(tmp(13905).PerformanceTestingScreens);
+  let merged = Object.assign(tmp(13917).DevToolsScreens);
+  let merged1 = Object.assign(tmp(13917).PerformanceTestingScreens);
   const entries = Object.entries({});
   items[1] = entries.map((arg0) => {
     let tmp;
@@ -88,5 +88,5 @@ export const navigateToDevTools = function navigateToDevTools(arg0) {
   }
   importDefault(4310).hideActionSheet();
   const obj2 = importDefault(4310);
-  importDefault(4550).pushLazy(() => Promise.resolve(closure_7), { screenKey: obj.screenKey }, "DevToolsNavigator");
+  importDefault(4572).pushLazy(() => Promise.resolve(closure_7), { screenKey: obj.screenKey }, "DevToolsNavigator");
 };

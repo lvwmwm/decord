@@ -1,10 +1,10 @@
-// Module ID: 14524
-// Function ID: 14525
+// Module ID: 14537
+// Function ID: 14538
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 1910, 3983, 676, 3943, 5896, 1236, 14515, 589, 14513, 2]
+// Dependencies: [32, 19, 1910, 3983, 676, 3943, 5917, 1236, 14528, 589, 14526, 2]
 // Exports: default
 
-// Module 14524 (useManageSubscriptionCardData)
+// Module 14537 (useManageSubscriptionCardData)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

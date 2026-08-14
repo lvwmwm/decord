@@ -1,9 +1,9 @@
-// Module ID: 11314
-// Function ID: 11315
+// Module ID: 11330
+// Function ID: 11331
 // Name: AutomodTriggerType
 // Dependencies: [2]
 
-// Module 11314 (AutomodTriggerType)
+// Module 11330 (AutomodTriggerType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodTriggerType.tsx");
 
 export const AutomodTriggerType = { KEYWORD: 1, [1]: "KEYWORD", SPAM_LINK: 2, [2]: "SPAM_LINK", ML_SPAM: 3, [3]: "ML_SPAM", DEFAULT_KEYWORD_LIST: 4, [4]: "DEFAULT_KEYWORD_LIST", MENTION_SPAM: 5, [5]: "MENTION_SPAM", USER_PROFILE: 6, [6]: "USER_PROFILE", SERVER_POLICY: 7, [7]: "SERVER_POLICY" };

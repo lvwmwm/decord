@@ -1,10 +1,10 @@
-// Module ID: 15440
-// Function ID: 15441
+// Module ID: 15455
+// Function ID: 15456
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 676, 1388, 21, 4342, 5437, 5308, 15441, 4338, 1236, 4755, 9070, 2]
+// Dependencies: [19, 17, 676, 1388, 21, 4342, 5458, 5329, 15456, 4338, 1236, 4777, 9084, 2]
 // Exports: default
 
-// Module 15440 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 15455 (GuildRoleSubscriptionsUpsellActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { GuildSettingsSections } from "ME";
@@ -32,8 +32,8 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
     children: null
   };
   obj = { source: null };
-  obj[0] = importDefault(15441);
-  const items = [callback(importDefault(5308), obj), , , , ];
+  obj[0] = importDefault(15456);
+  const items = [callback(importDefault(5329), obj), , , , ];
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.C0m4rQ);
@@ -51,7 +51,7 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
   };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t.OgQQbG);
-  items[3] = callback(require(4755) /* Button */.Button, obj2);
+  items[3] = callback(require(4777) /* Button */.Button, obj2);
   const obj3 = { style: tmp.dismissButton, children: null };
   const obj4 = {
     onPress() {
@@ -62,8 +62,8 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
   };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj4[1] = intl4.string(require(1236) /* getSystemLocale */.t.WAI6xu);
-  obj3[1] = callback(require(4755) /* Button */.Button, obj4);
+  obj3[1] = callback(require(4777) /* Button */.Button, obj4);
   items[4] = callback(View, obj3);
   obj[2] = items;
-  return callback2(require(5437) /* Background */.BottomSheet, obj);
+  return callback2(require(5458) /* Background */.BottomSheet, obj);
 };

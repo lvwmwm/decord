@@ -1,10 +1,10 @@
-// Module ID: 14643
-// Function ID: 14644
+// Module ID: 14657
+// Function ID: 14658
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 505, 21, 4342, 712, 7449, 14638, 14640, 1936, 1933, 4311, 4310, 5437, 5436, 1236, 2661, 4755, 4753, 13989, 9286, 4338, 4298, 2]
+// Dependencies: [32, 19, 17, 505, 21, 4342, 712, 7470, 14652, 14654, 1936, 1933, 4311, 4310, 5458, 5457, 1236, 2661, 4777, 4775, 14001, 9300, 4338, 4298, 2]
 // Exports: default
 
-// Module 14643 (DisplayNameStylesFontPickerSheet)
+// Module 14657 (DisplayNameStylesFontPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import Stack from "Stack";
 import get_ActivityIndicator from "messagesProxy";
@@ -51,10 +51,10 @@ export default function DisplayNameStylesFontPickerSheet(displayName) {
   let closure_7;
   let tmp = createCacheKey();
   importDefault = tmp;
-  let obj = onSelectFont(7449);
-  let obj1 = onSelectFont(14638);
+  let obj = onSelectFont(7470);
+  let obj1 = onSelectFont(14652);
   const visibleFontOrder = obj1.useVisibleFontOrder();
-  let obj2 = onSelectFont(14640);
+  let obj2 = onSelectFont(14654);
   const displayNameStylesNewFonts = obj2.useDisplayNameStylesNewFonts(visibleFontOrder);
   ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
   const tmp5 = callback(first.useState(selectedFontId), 2);
@@ -86,9 +86,9 @@ export default function DisplayNameStylesFontPickerSheet(displayName) {
   const intl2 = onSelectFont(1236).intl;
   obj3[0] = intl2.string(onSelectFont(1236).t.XqMe3N);
   obj3[1] = callback;
-  obj2[1] = callback2(onSelectFont(4755).Button, obj3);
+  obj2[1] = callback2(onSelectFont(4777).Button, obj3);
   obj1[1] = callback2(closure_5, obj2);
-  obj[1] = callback2(onSelectFont(5436).BottomSheetTitleHeader, obj1);
+  obj[1] = callback2(onSelectFont(5457).BottomSheetTitleHeader, obj1);
   obj[1] = callback2(closure_5, obj);
   const obj4 = { style: tmp.container, children: null };
   const obj5 = { style: tmp.contentContainer, children: null };
@@ -136,7 +136,7 @@ export default function DisplayNameStylesFontPickerSheet(displayName) {
     obj[4] = outer1_9(closure_5, obj);
     return outer1_8(c6, obj, arg0);
   });
-  let items1 = [callback2(onSelectFont(4753).Stack, obj6), ];
+  let items1 = [callback2(onSelectFont(4775).Stack, obj6), ];
   if (tmp14Result) {
     tmp14Result = hasNonLatinLettersResult;
   }
@@ -156,5 +156,5 @@ export default function DisplayNameStylesFontPickerSheet(displayName) {
   obj5[1] = items1;
   obj4[1] = closure_9(closure_5, obj5);
   obj[2] = callback2(closure_5, obj4);
-  return callback2(onSelectFont(5437).BottomSheet, obj);
+  return callback2(onSelectFont(5458).BottomSheet, obj);
 };

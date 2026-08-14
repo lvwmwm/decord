@@ -1,10 +1,10 @@
-// Module ID: 15316
-// Function ID: 15317
+// Module ID: 15330
+// Function ID: 15331
 // Name: SubscriptionGatedChannelIcon
-// Dependencies: [19, 21, 1297, 8737, 2]
+// Dependencies: [19, 21, 1297, 8751, 2]
 // Exports: default
 
-// Module 15316 (SubscriptionGatedChannelIcon)
+// Module 15330 (SubscriptionGatedChannelIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -16,7 +16,7 @@ export default function SubscriptionGatedChannelIcon(arg0) {
   let locked;
   ({ locked, isInMainTabsExperiment } = arg0);
   const obj = { source: null, size: null, disableColor: null };
-  obj[0] = importDefault(8737);
+  obj[0] = importDefault(8751);
   const Sizes = require(1297) /* Button */.Icon.Sizes;
   obj[1] = isInMainTabsExperiment ? Sizes.EXTRA_SMALL_10 : Sizes.SMALL;
   obj[2] = false !== locked;

@@ -1,9 +1,9 @@
-// Module ID: 7071
-// Function ID: 7072
+// Module ID: 7093
+// Function ID: 7094
 // Name: fromServer
-// Dependencies: [7072, 7074, 7075, 7076, 7073, 2]
+// Dependencies: [7094, 7096, 7097, 7098, 7095, 2]
 
-// Module 7071 (fromServer)
+// Module 7093 (fromServer)
 import { CollectiblesMarketingBadgeRecord as closure_2 } from "fromServer";
 import { CollectiblesMarketingBannerRecord as closure_3 } from "fromServer";
 import { CollectiblesMarketingCoachmarkRecord as closure_4 } from "fromServer";

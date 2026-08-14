@@ -1,10 +1,10 @@
-// Module ID: 9175
-// Function ID: 9176
+// Module ID: 9189
+// Function ID: 9190
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 9115, 21, 4342, 8240, 589, 4338, 9116, 4887, 9114, 1236, 2]
+// Dependencies: [19, 17, 9129, 21, 4342, 8261, 589, 4338, 9130, 4909, 9128, 1236, 2]
 // Exports: default
 
-// Module 9175 (InstantInviteAgeText)
+// Module 9189 (InstantInviteAgeText)
 import "noop";
 import { View } from "get ActivityIndicator";
 import updateWithLatestInvite from "updateWithLatestInvite";
@@ -29,7 +29,7 @@ export default function InstantInviteAgeText(style) {
     canEditInvite = true;
   }
   ({ onEdit: View, source: updateWithLatestInvite } = style);
-  let obj = require(8240) /* apexExperiment */;
+  let obj = require(8261) /* apexExperiment */;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("InstantInviteAgeText");
   let obj1 = require(589) /* initialize */;
   const items = [updateWithLatestInvite];
@@ -46,7 +46,7 @@ export default function InstantInviteAgeText(style) {
     }
     obj = { variant: null, children: null };
     obj[0] = str2;
-    const items2 = [tmp2(9116).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
+    const items2 = [tmp2(9130).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
     obj[1] = items2;
     const items3 = [closure_4(tmp2(4338).Text, obj), ];
     if (canEditInvite) {
@@ -68,12 +68,12 @@ export default function InstantInviteAgeText(style) {
       const intl2 = tmp2(1236).intl;
       obj2[2] = intl2.string(tmp2(1236).t["VNe8P/"]);
       obj1[4] = closure_5(tmp2(4338).Text, obj2);
-      canEditInvite = tmp9(tmp2(4887).PressableOpacity, obj1);
+      canEditInvite = tmp9(tmp2(4909).PressableOpacity, obj1);
     }
     items3[1] = canEditInvite;
     obj[1] = items3;
     tmp7Result = tmp7(View, obj);
-    const tmp2Result = tmp2(9116);
+    const tmp2Result = tmp2(9130);
     const tmp8 = View;
   }
   return tmp7Result;

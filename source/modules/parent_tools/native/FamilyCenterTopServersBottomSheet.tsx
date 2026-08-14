@@ -1,10 +1,10 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14223
+// Function ID: 14224
 // Name: GuildRow
-// Dependencies: [7044, 21, 4342, 712, 589, 7100, 5414, 5819, 5804, 4338, 1236, 2303, 5807, 2]
+// Dependencies: [7066, 21, 4342, 712, 589, 7122, 5435, 5840, 5825, 4338, 1236, 2303, 5828, 2]
 // Exports: default
 
-// Module 14210 (GuildRow)
+// Module 14223 (GuildRow)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -20,15 +20,15 @@ function GuildRow(guildActivity) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const topUserOrGuildDescription = tmp2(7100).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
+    const topUserOrGuildDescription = tmp2(7122).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     obj = { label: null, subLabel: null, icon: null };
     obj[0] = stateFromStores.name;
     obj[1] = topUserOrGuildDescription;
     obj = { guild: null, style: null };
     obj[0] = stateFromStores;
     obj[1] = tmp.guildIcon;
-    obj[2] = callback(importDefault(5819), obj);
-    return callback(tmp2(5414).TableRow, obj);
+    obj[2] = callback(importDefault(5840), obj);
+    return callback(tmp2(5435).TableRow, obj);
   }
   tmp = createCacheKey();
 }
@@ -48,7 +48,7 @@ export default function FamilyCenterTopGuildsBottomSheet(topGuildActivities) {
   const items = [callback(require(4338) /* Text */.Text, obj), ];
   obj = { hasIcons: true, children: null };
   obj[1] = topGuildActivities.map((guildActivity) => callback(closure_7, { guildActivity }, guildActivity.guild_id));
-  items[1] = callback(require(5807) /* TableRowGroupTitle */.TableRowGroup, obj);
+  items[1] = callback(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
   obj[0] = items;
-  return callback2(require(5804) /* ActionSheet */.ActionSheet, obj);
+  return callback2(require(5825) /* ActionSheet */.ActionSheet, obj);
 };

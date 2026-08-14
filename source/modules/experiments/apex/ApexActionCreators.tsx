@@ -1,10 +1,10 @@
-// Module ID: 10419
-// Function ID: 10420
+// Module ID: 10435
+// Function ID: 10436
 // Name: _fetchApexExperimentsMetadata
-// Dependencies: [109, 5, 1212, 676, 530, 709, 8253, 1472, 589, 2]
+// Dependencies: [109, 5, 1212, 676, 530, 709, 8274, 1472, 589, 2]
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 10419 (_fetchApexExperimentsMetadata)
+// Module 10435 (_fetchApexExperimentsMetadata)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import dispatcher from "dispatcher";
 import initialize from "initialize";

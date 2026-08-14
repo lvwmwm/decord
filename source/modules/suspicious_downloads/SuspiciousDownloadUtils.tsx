@@ -1,13 +1,13 @@
-// Module ID: 8278
-// Function ID: 8279
+// Module ID: 8300
+// Function ID: 8301
 // Name: set
-// Dependencies: [8279, 1486, 2]
+// Dependencies: [8301, 1486, 2]
 // Exports: isSuspiciousDownload
 
-// Module 8278 (set)
+// Module 8300 (set)
 import set from "set";
 
-let set = new Set(require("module_8279"));
+let set = new Set(require("module_8301"));
 let obj = { "github.com": null, "bitbucket.org": null, "gitlab.com": null };
 const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
 obj[0] = regExp;

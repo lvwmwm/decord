@@ -1,10 +1,10 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 16970
+// Function ID: 16971
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 3998, 1922, 21, 4342, 4805, 4535, 16955, 9118, 16956, 4310, 16957, 2007, 16958, 1236, 5819, 5420, 4753, 712, 5807, 5414, 5808, 1403, 7817, 2]
+// Dependencies: [19, 17, 3998, 1922, 21, 4342, 4827, 4535, 16971, 9132, 16972, 4310, 16973, 2007, 16974, 1236, 5840, 5441, 4775, 712, 5828, 5435, 5829, 1403, 7838, 2]
 // Exports: default
 
-// Module 16954 (AdvancedInstantInvite)
+// Module 16970 (AdvancedInstantInvite)
 import Themes from "Themes";
 import { View } from "TableRowIcon";
 import markAllUserIdListsStale from "markAllUserIdListsStale";

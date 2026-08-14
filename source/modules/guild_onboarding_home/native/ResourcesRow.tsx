@@ -1,10 +1,10 @@
-// Module ID: 15745
-// Function ID: 15746
+// Module ID: 15763
+// Function ID: 15764
 // Name: ResourcesRow
-// Dependencies: [19, 17, 15746, 21, 4342, 712, 15747, 11716, 4310, 15748, 2007, 4887, 4338, 1236, 2]
+// Dependencies: [19, 17, 15764, 21, 4342, 712, 15765, 11732, 4310, 15766, 2007, 4909, 4338, 1236, 2]
 // Exports: default
 
-// Module 15745 (ResourcesRow)
+// Module 15763 (ResourcesRow)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_4 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY";
@@ -26,7 +26,7 @@ export default function ResourcesRow(guildId) {
   let importDefault;
   const tmp = createCacheKey();
   importDefault = tmp;
-  const arr = importDefault(15747)(guildId);
+  const arr = importDefault(15765)(guildId);
   let obj = { horizontal: true, style: tmp.container, children: null };
   const substr = arr.slice(0, 2);
   const items = [
@@ -60,7 +60,7 @@ export default function ResourcesRow(guildId) {
     obj1[0] = arr.length - 2;
     obj[2] = intl.format(guildId(1236).t.F6iMs4, obj1);
     obj[2] = callback(guildId(4338).Text, obj);
-    tmp6 = callback(guildId(4887).PressableOpacity, obj);
+    tmp6 = callback(guildId(4909).PressableOpacity, obj);
   }
   items[1] = tmp6;
   obj[2] = items;

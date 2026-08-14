@@ -1,9 +1,9 @@
-// Module ID: 10398
-// Function ID: 10399
+// Module ID: 10412
+// Function ID: 10413
 // Name: handleUpdateActivity
-// Dependencies: [1391, 1910, 4416, 3998, 1979, 1922, 5177, 1396, 5173, 676, 3994, 9704, 5183, 4535, 5176, 659, 589, 709, 2]
+// Dependencies: [1391, 1910, 4416, 3998, 1979, 1922, 5198, 1396, 5194, 676, 3994, 9715, 5204, 4535, 5197, 659, 589, 709, 2]
 
-// Module 10398 (handleUpdateActivity)
+// Module 10412 (handleUpdateActivity)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import createRTCConnection from "createRTCConnection";
@@ -40,7 +40,7 @@ function handleUpdateActivity() {
             const features = guild.features;
             tmp2 = null;
             if (features.has(constants.DISCOVERABLE)) {
-              let obj2 = require(9704) /* unpackStageChannelParty */;
+              let obj2 = require(9715) /* unpackStageChannelParty */;
               const result = obj2.packStageChannelPartyId(channel, stageInstanceByChannel);
               let id;
               if (_null != null) {
@@ -53,7 +53,7 @@ function handleUpdateActivity() {
               if (id === result) {
                 tmp15 = _null;
               }
-              const mutableParticipants = store.getMutableParticipants(channel.id, tmp12(5183).StageChannelParticipantNamedIndex.SPEAKER);
+              const mutableParticipants = store.getMutableParticipants(channel.id, tmp12(5204).StageChannelParticipantNamedIndex.SPEAKER);
               const length = mutableParticipants.filter((type) => type.type === callback(table[12]).StageChannelParticipantTypes.STREAM).length;
               const diff = mutableParticipants.length - length;
               let size;
@@ -79,7 +79,7 @@ function handleUpdateActivity() {
                 topic = tmp12Result.computeChannelName(channel, mergeGuildAvatar, markAllUserIdListsStale);
               }
               obj[1] = topic;
-              tmp12Result = tmp12(5176);
+              tmp12Result = tmp12(5197);
               obj[2] = tmp12Result.getStageHasMedia(channel.id) ? closure_13.WATCHING : closure_13.LISTENING;
               let start;
               if (tmp15 != null) {
@@ -169,9 +169,9 @@ const stageChannelSelfRichPresenceStore = new StageChannelSelfRichPresenceStore(
     voiceStates = voiceStates.voiceStates;
     let _require;
     if (null != c17) {
-      const result = _require(9704).unpackStageChannelParty(c17);
+      const result = _require(9715).unpackStageChannelParty(c17);
       _require = result;
-      const obj = _require(9704);
+      const obj = _require(9715);
       if (tmp5) {
         handleUpdateActivity();
       }

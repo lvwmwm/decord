@@ -1,10 +1,10 @@
-// Module ID: 6187
-// Function ID: 6188
+// Module ID: 6208
+// Function ID: 6209
 // Name: BunnyIllocon
-// Dependencies: [21, 5308, 6188, 2]
+// Dependencies: [21, 5329, 6209, 2]
 // Exports: BunnyIllocon
 
-// Module 6187 (BunnyIllocon)
+// Module 6208 (BunnyIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BunnyIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const BunnyIllocon = function BunnyIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6188);
+  obj[0] = importDefault(6209);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { uri: null });
+  return jsx(importDefault(5329), { uri: null });
 };

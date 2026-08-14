@@ -1,10 +1,10 @@
-// Module ID: 11535
-// Function ID: 11536
+// Module ID: 11551
+// Function ID: 11552
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 676, 21, 4342, 712, 8386, 8356, 1435, 11526, 4887, 11536, 1954, 11529, 4338, 1236, 11500, 5421, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 8408, 8378, 1435, 11542, 4909, 11552, 1954, 11545, 4338, 1236, 11516, 5442, 2]
 // Exports: default
 
-// Module 11535 (RecommendationsBannerCard)
+// Module 11551 (RecommendationsBannerCard)
 import noop from "noop";
 import { View } from "TableRowArrow";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
@@ -48,10 +48,10 @@ export default function RecommendationsBannerCard(application) {
   }
   const tmp = createCacheKey();
   if (!showsPromoted) {
-    let obj = application(8386);
+    let obj = application(8408);
     showsPromoted = obj.isPromotedApplication(application);
   }
-  let obj1 = application(8386);
+  let obj1 = application(8408);
   const shelfBadgeTypeIfActive = obj1.getShelfBadgeTypeIfActive(application);
   let bot = application.bot;
   let id;
@@ -80,7 +80,7 @@ export default function RecommendationsBannerCard(application) {
     obj[2] = onPress;
     obj[3] = isFirst;
     obj[4] = isLast;
-    let tmp12Result = callback(tmp4(11526).BaseAppRow, obj);
+    let tmp12Result = callback(tmp4(11542).BaseAppRow, obj);
   } else {
     const items1 = [tmp.container, , ];
     let num = 8;
@@ -103,8 +103,8 @@ export default function RecommendationsBannerCard(application) {
     obj3[0] = tmp.banner;
     const obj4 = { applicationBot: null, applicationEmbedded: null, applicationId: null, applicationIcon: null, overrideImageUrl: null };
     obj4[0] = application.bot;
-    const tmp10Result = tmp10(11536);
-    obj4[1] = tmp4(8386).isEmbeddedApp(application);
+    const tmp10Result = tmp10(11552);
+    obj4[1] = tmp4(8408).isEmbeddedApp(application);
     ({ id: obj8[2], icon } = application);
     obj4[3] = icon;
     obj4[4] = application.overrideImageUrl;
@@ -115,7 +115,7 @@ export default function RecommendationsBannerCard(application) {
       const obj6 = { labelType: null, replacementStyles: null };
       obj6[0] = shelfBadgeTypeIfActive;
       obj6[1] = tmp.badge;
-      const items3 = [tmp14(tmp10(11529), obj6), ];
+      const items3 = [tmp14(tmp10(11545), obj6), ];
       if (showsPromoted) {
         const obj7 = { style: null, children: null };
         obj7[0] = tmp.promotedLabelWrapper;
@@ -141,7 +141,7 @@ export default function RecommendationsBannerCard(application) {
       const obj10 = { iconSource: null, iconSize: 36, wrapperStyle: null };
       obj10[0] = applicationIconSource;
       obj10[2] = tmp.appIconContainer;
-      tmp14Result = tmp14(tmp10(11500), obj10);
+      tmp14Result = tmp14(tmp10(11516), obj10);
     }
     const items5 = [tmp14Result, , ];
     const obj11 = { style: null, children: null };
@@ -154,12 +154,12 @@ export default function RecommendationsBannerCard(application) {
     items6[1] = callback(tmp4(4338).Text, obj13);
     obj11[1] = items6;
     items5[1] = closure_7(View, obj11);
-    items5[2] = callback(tmp4(5421).TableRowArrow, {});
+    items5[2] = callback(tmp4(5442).TableRowArrow, {});
     obj9[1] = items5;
     items4[1] = closure_7(View, obj9);
     obj2[2] = items4;
-    tmp12Result = tmp12(tmp4(4887).PressableOpacity, obj2);
-    const tmp4Result = tmp4(8386);
+    tmp12Result = tmp12(tmp4(4909).PressableOpacity, obj2);
+    const tmp4Result = tmp4(8408);
   }
   return tmp12Result;
 };

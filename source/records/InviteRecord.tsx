@@ -1,9 +1,9 @@
-// Module ID: 7805
-// Function ID: 7806
+// Module ID: 7826
+// Function ID: 7827
 // Name: createFromServer
 // Dependencies: [1931, 3943, 2]
 
-// Module 7805 (createFromServer)
+// Module 7826 (createFromServer)
 import "toJS";
 
 let InviteRecord;

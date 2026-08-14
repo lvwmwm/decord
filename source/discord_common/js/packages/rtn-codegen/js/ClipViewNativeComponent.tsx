@@ -1,9 +1,9 @@
-// Module ID: 8344
-// Function ID: 8345
+// Module ID: 8366
+// Function ID: 8367
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 8344 (__INTERNAL_VIEW_CONFIG)
+// Module 8366 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "ClipView", validAttributes: { cutouts: true } };

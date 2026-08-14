@@ -1,10 +1,10 @@
-// Module ID: 8442
-// Function ID: 8443
+// Module ID: 8464
+// Function ID: 8465
 // Name: useActiveThemeType
 // Dependencies: [1304, 4163, 1346, 1305, 589, 4196, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 8442 (useActiveThemeType)
+// Module 8464 (useActiveThemeType)
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import reset from "reset";

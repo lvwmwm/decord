@@ -1,9 +1,9 @@
-// Module ID: 17084
-// Function ID: 17085
+// Module ID: 17100
+// Function ID: 17101
 // Name: sendReply
-// Dependencies: [5, 16373, 4256, 5384, 1218, 1391, 1910, 3, 4204, 9920, 16558, 709, 7181, 1625, 698, 5867, 7803, 4353, 14824, 1307, 2]
+// Dependencies: [5, 16391, 4256, 5405, 1218, 1391, 1910, 3, 4204, 9931, 16571, 709, 7203, 1625, 698, 5888, 7824, 4353, 14838, 1307, 2]
 
-// Module 17084 (sendReply)
+// Module 17100 (sendReply)
 import importDefaultResult from "ensureGuildLoaded";
 import { applicationReady } from "linkFromAppsFlyer";
 import getHash from "getHash";
@@ -192,7 +192,7 @@ function _apiLogin() {
                 }
               }
               if (null != outer1_8.getId()) {
-                let obj16 = callback(5867);
+                let obj16 = callback(5888);
                 c6 = 3;
                 c7 = 1;
                 const obj3 = { value: null, done: false };
@@ -239,7 +239,7 @@ function _apiLogin() {
               obj9[0] = ok;
               return obj9;
             } else if (ok.ok) {
-              obj7 = callback(5867);
+              obj7 = callback(5888);
               c6 = 4;
               c7 = 1;
               const obj10 = { value: null, done: false };
@@ -318,7 +318,7 @@ function _apiLogin() {
               let obj = iter;
               obj = callback2(table[11]);
               callback2 = iter;
-              const f120524 = () => { ... };
+              const f120672 = () => { ... };
               function handler() { ... }
               const subscription = obj.subscribe(iter, handler);
             }
@@ -328,7 +328,7 @@ function _apiLogin() {
               continue;
             }
             outer1_20(callback(709), "LOGIN_SUCCESS", (token) => callback(token.token));
-            let obj = callback(5867);
+            let obj = callback(5888);
             obj = { login: closure_0, password: callback };
             obj.login(obj);
           });
@@ -359,7 +359,7 @@ function subscribeOnce(subscribe) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f120524(arg0);
+    return f120672(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -373,7 +373,7 @@ let obj = {
     importDefault(4204).logToDevice(json);
   },
   () => {
-    let obj = callback(9920);
+    let obj = callback(9931);
     const result = obj.resetComponentProfiler();
     obj = { type: "response", status: "success", message: "reset-component-profiler" };
     const merged = Object.assign(undefined);
@@ -381,7 +381,7 @@ let obj = {
     importDefault(4204).logToDevice(json);
   },
   () => {
-    let obj = callback(9920);
+    let obj = callback(9931);
     const result = obj.pauseComponentProfiler();
     obj = { type: "response", status: "success", message: "pause-component-profiler" };
     const merged = Object.assign(undefined);
@@ -389,7 +389,7 @@ let obj = {
     importDefault(4204).logToDevice(json);
   },
   () => {
-    let obj = callback(9920);
+    let obj = callback(9931);
     const result = obj.resumeComponentProfiler();
     obj = { type: "response", status: "success", message: "resume-component-profiler" };
     const merged = Object.assign(undefined);
@@ -398,15 +398,15 @@ let obj = {
   },
   () => {
     let obj = { stats: null };
-    obj[0] = callback(9920).dumpStats();
+    obj[0] = callback(9931).dumpStats();
     obj = { type: "response", status: "success", message: "dump-component-profiler-stats" };
     const merged = Object.assign(obj);
     const json = JSON.stringify(obj);
-    const obj2 = callback(9920);
+    const obj2 = callback(9931);
     importDefault(4204).logToDevice(json);
   },
   () => {
-    let obj = importDefault(16558);
+    let obj = importDefault(16571);
     let report;
     if (obj != null) {
       report = obj.requestReport();
@@ -418,7 +418,7 @@ let obj = {
     importDefault(4204).logToDevice(json);
   },
   (multiplier) => {
-    let obj = importDefault(16558);
+    let obj = importDefault(16571);
     if (obj != null) {
       const result = obj.setJankHeuristicMultiplier(multiplier.multiplier);
     }
@@ -428,7 +428,7 @@ let obj = {
     importDefault(4204).logToDevice(json);
   },
   () => {
-    let obj = importDefault(16558);
+    let obj = importDefault(16571);
     if (obj != null) {
       obj.startTracking();
     }
@@ -454,13 +454,13 @@ let obj = {
   },
   () => {
     let obj = { cumulativeCPU: null, currentMemoryUsage: null };
-    obj[0] = importDefault(7181).getCumulativeCPUUsage();
-    const obj2 = importDefault(7181);
-    obj[1] = importDefault(7181).getCurrentMemoryUsageKB();
+    obj[0] = importDefault(7203).getCumulativeCPUUsage();
+    const obj2 = importDefault(7203);
+    obj[1] = importDefault(7203).getCurrentMemoryUsageKB();
     obj = { type: "response", status: "success", message: "get-resource-usage" };
     const merged = Object.assign(obj);
     const json = JSON.stringify(obj);
-    const obj3 = importDefault(7181);
+    const obj3 = importDefault(7203);
     importDefault(4204).logToDevice(json);
   },
   backchannel: null

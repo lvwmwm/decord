@@ -1,9 +1,9 @@
-// Module ID: 14918
-// Function ID: 14919
+// Module ID: 14932
+// Function ID: 14933
 // Name: ShopHomeSortType
 // Dependencies: [2]
 
-// Module 14918 (ShopHomeSortType)
+// Module 14932 (ShopHomeSortType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ShopHomeSortType.tsx");
 
 export const ShopHomeSortType = { RECOMMENDED: "recommended", POPULAR: "popular", RECENT: "recent", PRICE_LOW_TO_HIGH: "price_low_to_high", RANDOM: "random" };

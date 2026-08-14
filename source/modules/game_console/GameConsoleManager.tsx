@@ -1,9 +1,9 @@
-// Module ID: 16512
-// Function ID: 16513
+// Module ID: 16530
+// Function ID: 16531
 // Name: syncLocalState
-// Dependencies: [5, 1218, 4393, 4416, 4360, 4361, 4359, 10468, 4406, 3, 38, 9205, 10851, 5301, 4227, 10853, 1370, 4683, 1236, 16513, 10856, 2]
+// Dependencies: [5, 1218, 4393, 4416, 4360, 4361, 4359, 10484, 4406, 3, 38, 9219, 10867, 5322, 4227, 10869, 1370, 4705, 1236, 16531, 10872, 2]
 
-// Module 16512 (syncLocalState)
+// Module 16530 (syncLocalState)
 import updateVoiceState from "updateVoiceState";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -238,14 +238,14 @@ let prototype = function GameConsoleManager() {
   applyArgumentsResult.handleWaitForRemoteSession = function handleWaitForRemoteSession() {
     const awaitRemoteTimeout = applyArgumentsResult.awaitRemoteTimeout;
     awaitRemoteTimeout.start(60000, () => {
-      let obj = callback(10853);
+      let obj = callback(10869);
       obj.disconnectRemote();
       obj = { title: null, body: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.wGMxr3);
       const intl2 = callback(1236).intl;
       obj[1] = intl2.string(callback(1236).t.i5k8b5);
-      callback2(4683).show(obj);
+      callback2(4705).show(obj);
     });
   };
   applyArgumentsResult.handleConsoleCommandUpdate = function handleConsoleCommandUpdate(arg0) {

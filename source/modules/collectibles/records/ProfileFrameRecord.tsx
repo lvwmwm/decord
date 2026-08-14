@@ -1,10 +1,10 @@
-// Module ID: 7056
-// Function ID: 7057
+// Module ID: 7078
+// Function ID: 7079
 // Name: fromServer
 // Dependencies: [1948, 1949, 2]
 // Exports: isProfileFrameRecord
 
-// Module 7056 (fromServer)
+// Module 7078 (fromServer)
 import "fromServer";
 
 const require = arg1;

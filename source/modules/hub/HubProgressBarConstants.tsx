@@ -1,9 +1,9 @@
-// Module ID: 9126
-// Function ID: 9127
+// Module ID: 9140
+// Function ID: 9141
 // Name: items
 // Dependencies: [1306, 2]
 
-// Module 9126 (items)
+// Module 9140 (items)
 const items = [require("create").HubProgressStep.JOIN_GUILD, require("create").HubProgressStep.INVITE_USER, require("create").HubProgressStep.CONTACT_SYNC];
 const result = require("set").fileFinishedImporting("modules/hub/HubProgressBarConstants.tsx");
 

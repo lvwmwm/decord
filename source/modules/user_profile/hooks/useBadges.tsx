@@ -1,10 +1,10 @@
-// Module ID: 8885
-// Function ID: 8886
+// Module ID: 8899
+// Function ID: 8900
 // Name: useBadges
 // Dependencies: [4188, 1922, 4034, 647, 1236, 2]
 // Exports: default
 
-// Module 8885 (useBadges)
+// Module 8899 (useBadges)
 import initialize from "initialize";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

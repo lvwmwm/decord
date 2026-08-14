@@ -1,9 +1,9 @@
-// Module ID: 7792
-// Function ID: 7793
+// Module ID: 7813
+// Function ID: 7814
 // Name: items
 // Dependencies: [2]
 
-// Module 7792 (items)
+// Module 7813 (items)
 const obj = { DARK: "dark", LIGHT: "light", MIDNIGHT: "midnight", DARKER: "darker" };
 const items = [, ];
 ({ MIDNIGHT: arr[0], DARK: arr[1] } = obj);

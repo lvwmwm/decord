@@ -1,10 +1,10 @@
-// Module ID: 8157
-// Function ID: 8158
+// Module ID: 8178
+// Function ID: 8179
 // Name: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
-// Dependencies: [1391, 1910, 8155, 8156, 8114, 8116, 1236, 4234, 8117, 2]
+// Dependencies: [1391, 1910, 8176, 8177, 8135, 8137, 1236, 4234, 8138, 2]
 // Exports: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 
-// Module 8157 (createUserPremiumGuildSubscriptionTierAchievedSystemMessage)
+// Module 8178 (createUserPremiumGuildSubscriptionTierAchievedSystemMessage)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 
@@ -15,19 +15,19 @@ export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = funct
   message = message.message;
   channel = channel.getChannel(message.getChannelId());
   if (null == channel) {
-    return require(8155) /* createUserPremiumGuildSubscriptionSystemMessage */.createUserPremiumGuildSubscriptionSystemMessage(message);
+    return require(8176) /* createUserPremiumGuildSubscriptionSystemMessage */.createUserPremiumGuildSubscriptionSystemMessage(message);
   } else {
     guild = guild.getGuild(channel.getGuildId());
     if (null == guild) {
-      return require(8155) /* createUserPremiumGuildSubscriptionSystemMessage */.createUserPremiumGuildSubscriptionSystemMessage(message);
+      return require(8176) /* createUserPremiumGuildSubscriptionSystemMessage */.createUserPremiumGuildSubscriptionSystemMessage(message);
     } else {
-      const tmp13 = importDefault(8156)(message);
-      const messageAuthorWithProcessedColor = require(8114) /* getMessageAuthorWithProcessedColor */.getMessageAuthorWithProcessedColor(message);
+      const tmp13 = importDefault(8177)(message);
+      const messageAuthorWithProcessedColor = require(8135) /* getMessageAuthorWithProcessedColor */.getMessageAuthorWithProcessedColor(message);
       let obj = { message: null, author: null, roleStyle: null };
       obj[0] = message;
       obj[1] = messageAuthorWithProcessedColor;
       obj[2] = message.roleStyle;
-      const tmp16 = importDefault(8116)(obj);
+      const tmp16 = importDefault(8137)(obj);
       if (tmp13 > 1) {
         const intl2 = tmp14(1236).intl;
         obj = { username: null, usernameOnClick: null, guildName: null, newTierName: null, numSubscriptions: null };
@@ -50,7 +50,7 @@ export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = funct
       }
       const obj2 = { content: null };
       obj2[0] = formatToPartsResult;
-      const merged = Object.assign(importDefault(8117)(message));
+      const merged = Object.assign(importDefault(8138)(message));
       return obj2;
     }
   }

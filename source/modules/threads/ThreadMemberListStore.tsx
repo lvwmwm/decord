@@ -1,9 +1,9 @@
-// Module ID: 7355
-// Function ID: 7356
+// Module ID: 7377
+// Function ID: 7378
 // Name: handleUserUpdate
-// Dependencies: [32, 1391, 1990, 5937, 4431, 5037, 1922, 676, 12, 11, 3994, 4187, 1370, 589, 709, 2]
+// Dependencies: [32, 1391, 1990, 5958, 4431, 5059, 1922, 676, 12, 11, 3994, 4187, 1370, 589, 709, 2]
 
-// Module 7355 (handleUserUpdate)
+// Module 7377 (handleUserUpdate)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

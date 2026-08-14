@@ -1,9 +1,9 @@
-// Module ID: 4919
-// Function ID: 4920
+// Module ID: 4941
+// Function ID: 4942
 // Name: fromFileUri
-// Dependencies: [17, 4920, 500, 1271, 2]
+// Dependencies: [17, 4942, 500, 1271, 2]
 
-// Module 4919 (fromFileUri)
+// Module 4941 (fromFileUri)
 import { NativeModules } from "get ActivityIndicator";
 import "fromBlob";
 

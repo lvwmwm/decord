@@ -1,10 +1,10 @@
-// Module ID: 4664
-// Function ID: 4665
+// Module ID: 4686
+// Function ID: 4687
 // Name: _deletePaymentSource
-// Dependencies: [109, 5, 4011, 4009, 4013, 676, 4018, 505, 709, 530, 4241, 4029, 3943, 4007, 4665, 4667, 4022, 4673, 4674, 698, 2]
+// Dependencies: [109, 5, 4011, 4009, 4013, 676, 4018, 505, 709, 530, 4241, 4029, 3943, 4007, 4687, 4689, 4022, 4695, 4696, 698, 2]
 // Exports: cancelPaymentAuthentication, cancelSubscription, changePaymentSource, changeSubscriptionCurrency, clearAndFetchPaymentSourceCreationContext, clearPaymentAuthenticationError, clearRemovePaymentSourceError, clearUpdatePaymentSourceError, createSubscription, deletePaymentSource, deleteRenewalMutation, fetchIpCountryCode, fetchIpLocation, fetchMostRecentSubscription, fetchPaymentSource, fetchPaymentSourceCreationContext, fetchPaymentSources, fetchPayments, fetchSubscriptions, fetchWalletInformation, getPerksRelevance, payInvoiceManually, popupBridgeCallback, redeemReactivationOffer, redeemUserDiscountOffer, redirectedPaymentSucceeded, resetPaymentIntentId, resetSubscriptionStore, resubscribeToSubscription, startBrowserCheckout, updatePaymentSource, upgradeSubscription, voidPendingPayment
 
-// Module 4664 (_deletePaymentSource)
+// Module 4686 (_deletePaymentSource)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import closure_5 from "ME";
 import createFromServer from "createFromServer";
@@ -862,102 +862,39 @@ function _getPerksRelevance() {
 function _fetchMostRecentSubscription() {
   const self = this;
   const tmp = callback(function*() {
-    if (c5 === 2) {
-      c5 = 3;
-      HermesBuiltin.throwTypeError();
-    } else if (tmp6 === 3) {
-      if (arg0 === 1) {
-        throw arg1;
-      } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
-        obj[0] = arg1;
-        return obj;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            const callback = tmp3;
-            let closure_0 = tmp7;
-            closure_0 = undefined;
-            outer1_1(outer1_2[8]).wait(() => {
-              tmp3(tmp37[8]).dispatch({ type: "BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START" });
-            });
-            let c3 = 1;
-            const HTTP = outer1_0(outer1_2[9]).HTTP;
-            let obj1 = { url: null, query: null, oldFormErrors: true, rejectWithError: true };
-            obj1[0] = outer1_10.BILLING_SUBSCRIPTIONS;
-            const obj2 = { include_inactive: true, limit: 2, exclude_unpaid_statuses: true, subscription_type: null };
-            obj2[3] = outer1_19.PREMIUM;
-            obj1[1] = obj2;
-            c4 = 2;
-            c5 = 1;
-            let obj3 = { value: null, done: false };
-            obj3[0] = HTTP.get(obj1);
-            return obj3;
-          }
-        } else if (1 === tmp7) {
-          c3 = 0;
-          let obj6 = callback(709);
-          obj6.dispatch({ type: "BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_FAIL" });
-          c5 = 3;
-          return { value: "HermesInternal", done: null };
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw arg1;
-        } else if (arg0 === 2) {
-          c3 = 0;
-          c5 = 3;
-          const obj4 = { value: null, done: true };
-          obj4[0] = arg1;
-          return obj4;
-        } else {
-          closure_0 = arg1;
-          if (closure_0.ok) {
-            obj1 = callback(709);
-            let first = null;
-            if (closure_0.body.length > 0) {
-              first = closure_0.body[0];
-            }
-            const obj5 = { type: "BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS", subscription: null };
-            obj5[1] = first;
-            obj1.dispatch(obj5);
-            obj3 = callback(709);
-            let tmp26 = null;
-            if (closure_0.body.length > 1) {
-              tmp26 = closure_0.body[1];
-            }
-            obj6 = { type: "BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS", subscription: null };
-            obj6[1] = tmp26;
-            obj3.dispatch(obj6);
-          } else {
-            obj = callback(709);
-            obj.dispatch({ type: "BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_FAIL" });
-          }
-          c3 = 0;
-          c5 = 3;
-        }
-      } catch (tmp37) {
-        const dependencyMap = tmp37;
-        if (tmp4 === c3) {
-          c5 = tmp2;
-          throw tmp37;
-        } else {
-          c4 = tmp;
-        }
-      }
+    const callback = tmp3;
+    outer1_1(outer1_2[8]).wait(() => {
+      tmp3(tmp27[8]).dispatch({ type: "BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START" });
+    });
+    let c3 = 1;
+    const HTTP = outer1_0(outer1_2[9]).HTTP;
+    let obj1 = { url: null, query: null, oldFormErrors: true, rejectWithError: true };
+    obj1[0] = outer1_10.BILLING_SUBSCRIPTIONS;
+    const obj2 = { include_inactive: true, limit: 2, exclude_unpaid_statuses: true, subscription_type: null };
+    obj2[3] = outer1_19.PREMIUM;
+    obj1[1] = obj2;
+    yield HTTP.get(obj1);
+    c3 = 0;
+    let obj5 = callback(709);
+    obj5.dispatch({ type: "BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_FAIL" });
+    let closure_0 = yield "HermesInternal";
+    let first = null;
+    if (closure_0.body.length > 0) {
+      first = closure_0.body[0];
     }
+    const obj = { type: "BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS", subscription: null };
+    obj[1] = first;
+    callback(709).dispatch(obj);
+    obj1 = callback(709);
+    let tmp17 = null;
+    if (closure_0.body.length > 1) {
+      tmp17 = closure_0.body[1];
+    }
+    obj5 = { type: "BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS", subscription: null };
+    obj5[1] = tmp17;
+    obj1.dispatch(obj5);
+    c3 = 0;
+    return closure_0;
   });
   const _fetchMostRecentSubscription = tmp;
   const apply = tmp.apply;
@@ -1456,12 +1393,12 @@ function _payInvoiceManually() {
 function handlePaymentConfirmation(body, paymentSource) {
   if (null != paymentSource) {
     if (set.has(paymentSource.type)) {
-      const adyenPaymentConfirmationHandler = new require(4674) /* performRedirect */.AdyenPaymentConfirmationHandler(paymentSource, body);
+      const adyenPaymentConfirmationHandler = new require(4696) /* performRedirect */.AdyenPaymentConfirmationHandler(paymentSource, body);
       let confirmPaymentResult = adyenPaymentConfirmationHandler.confirmPayment();
     }
     return confirmPaymentResult;
   }
-  confirmPaymentResult = new require(4674) /* performRedirect */.StripePaymentConfirmationHandler(paymentSource, body).confirmPayment();
+  confirmPaymentResult = new require(4696) /* performRedirect */.StripePaymentConfirmationHandler(paymentSource, body).confirmPayment();
 }
 function _redirectedPaymentSucceeded() {
   const self = this;
@@ -1701,7 +1638,7 @@ function _updateSubscription() {
                   c13 = 2;
                   c14 = 1;
                   const obj2 = { value: null, done: false };
-                  obj2[0] = lib(4667).createPaymentSourceToken(throwTypeErrorResult.paymentSource);
+                  obj2[0] = lib(4689).createPaymentSourceToken(throwTypeErrorResult.paymentSource);
                   return obj2;
                 }
                 const obj27 = lib2(709);
@@ -1726,7 +1663,7 @@ function _updateSubscription() {
                 obj4[0] = callback(c11.body, lib2.paymentSource);
                 return obj4;
               } else {
-                throw lib(4665).dispatchConfirmationError("payment id cannot be null on redirected confirmations.");
+                throw lib(4687).dispatchConfirmationError("payment id cannot be null on redirected confirmations.");
               }
             } else if (2 === tmp8) {
               if (arg0 === 1) {
@@ -1764,7 +1701,7 @@ function _updateSubscription() {
                   reset.pause_duration = lib2.pauseDuration;
                   throwTypeErrorResult = lib;
                   throwTypeErrorResult = dependencyMap;
-                  reset.purchase_token = lib(4673).getPurchaseToken();
+                  reset.purchase_token = lib(4695).getPurchaseToken();
                   throwTypeErrorResult = dependencyMap;
                   reset.expected_invoice_price = dependencyMap;
                   throwTypeErrorResult = closure_3;
@@ -1773,7 +1710,7 @@ function _updateSubscription() {
                   throwTypeErrorResult = lib2;
                   if (null != lib2.paymentSource) {
                     if (set.has(lib2.paymentSource.type)) {
-                      let obj11 = lib(4665);
+                      let obj11 = lib(4687);
                       c13 = 4;
                       c14 = 1;
                       let obj7 = { value: null, done: false };
@@ -1781,7 +1718,7 @@ function _updateSubscription() {
                       return obj7;
                     }
                   }
-                  const obj26 = lib(4673);
+                  const obj26 = lib(4695);
                 }
               } else if (4 === tmp8) {
                 if (arg0 === 1) {

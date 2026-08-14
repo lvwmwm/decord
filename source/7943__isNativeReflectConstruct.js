@@ -1,7 +1,7 @@
 // Module ID: 7943
 // Function ID: 7944
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 7896, 7919]
+// Dependencies: [41, 42, 93, 95, 98, 7917, 7940]
 
 // Module 7943 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,7 +9,7 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
-const FeSpecularLighting = arg1;
+const FeComponentTransfer = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeSpecularLighting {
+class FeComponentTransfer {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeSpecularLighting);
+    tmp = _isNativeReflectConstruct(this, FeComponentTransfer);
     tmp2 = __esModule;
-    obj = __esModule(FeSpecularLighting);
+    obj = __esModule(FeComponentTransfer);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,17 +49,17 @@ class FeSpecularLighting {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeSpecularLighting, require("_isNativeReflectConstruct"));
+require("_inherits")(FeComponentTransfer, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
-    const result = FeSpecularLighting(7896).warnUnimplementedFilter();
+    const result = FeComponentTransfer(7917).warnUnimplementedFilter();
     return null;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeSpecularLighting, items);
-importDefaultResultResult.displayName = "FeSpecularLighting";
+const importDefaultResultResult = importDefaultResult(FeComponentTransfer, items);
+importDefaultResultResult.displayName = "FeComponentTransfer";
 obj = {};
 const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = obj;

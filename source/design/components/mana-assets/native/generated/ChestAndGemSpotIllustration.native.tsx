@@ -1,10 +1,10 @@
-// Module ID: 6205
-// Function ID: 6206
+// Module ID: 6226
+// Function ID: 6227
 // Name: ChestAndGemSpotIllustration
-// Dependencies: [21, 5308, 6206, 2]
+// Dependencies: [21, 5329, 6227, 2]
 // Exports: ChestAndGemSpotIllustration
 
-// Module 6205 (ChestAndGemSpotIllustration)
+// Module 6226 (ChestAndGemSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ChestAndGemSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const ChestAndGemSpotIllustration = function ChestAndGemSpotIllustration(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6206);
+  obj[0] = importDefault(6227);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ChestAndGemSpotIllustration = function ChestAndGemSpotIllustration(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
 };

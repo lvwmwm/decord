@@ -1,10 +1,10 @@
-// Module ID: 4897
-// Function ID: 4898
+// Module ID: 4919
+// Function ID: 4920
 // Name: getUploadFileSizeSum
-// Dependencies: [1910, 1922, 676, 1924, 12, 4898, 4269, 4007, 4237, 1236, 2]
+// Dependencies: [1910, 1922, 676, 1924, 12, 4920, 4269, 4007, 4237, 1236, 2]
 // Exports: anyFileTooLarge, classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, getMaxRequestSize, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 4897 (getUploadFileSizeSum)
+// Module 4919 (getUploadFileSizeSum)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -119,7 +119,7 @@ export const classifyFileName = function classifyFileName(str) {
   return str2;
 };
 export const sizeString = function sizeString(createGuildRecordFromRust) {
-  return importDefault(4898).filesize(createGuildRecordFromRust);
+  return importDefault(4920).filesize(createGuildRecordFromRust);
 };
 export const maxFileSize = function maxFileSize(guildId) {
   const currentUser = authStore.getCurrentUser();

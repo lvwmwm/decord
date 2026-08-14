@@ -1,9 +1,9 @@
-// Module ID: 15377
-// Function ID: 15378
+// Module ID: 15392
+// Function ID: 15393
 // Name: shouldSkipSection
-// Dependencies: [32, 19, 17, 4334, 1391, 7143, 4357, 4540, 9844, 4541, 21, 4342, 7035, 4761, 8053, 14407, 636, 643, 589, 4083, 15330, 7686, 4311, 4312, 15378, 2]
+// Dependencies: [32, 19, 17, 4334, 1391, 7165, 4357, 4550, 9855, 4551, 21, 4342, 7057, 4783, 8074, 14420, 636, 643, 589, 4083, 15344, 7707, 4311, 4312, 15393, 2]
 
-// Module 15377 (shouldSkipSection)
+// Module 15392 (shouldSkipSection)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "module_4083";
 import get_ActivityIndicator from "shallowEqual";
@@ -23,8 +23,8 @@ let closure_14;
 let map1;
 const require = arg1;
 function shouldSkipSection(diff1) {
-  if (require(7035) /* computeSubtitle */.SECTION_INDEX_CHANNEL_NOTICES !== diff1) {
-    if (require(7035) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS !== diff1) {
+  if (require(7057) /* computeSubtitle */.SECTION_INDEX_CHANNEL_NOTICES !== diff1) {
+    if (require(7057) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS !== diff1) {
       return false;
     }
   }
@@ -110,7 +110,7 @@ function findNearestUnreadItem(containerSize, id) {
     return closure_17;
   } else {
     const scrollPosValue = containerSize.scrollPosValue;
-    const result = getScaledChannelRowHeight(require(4761) /* getFontScale */.getFontScale()) / 2;
+    const result = getScaledChannelRowHeight(require(4783) /* getFontScale */.getFontScale()) / 2;
     const value = scrollPosValue.get();
     const item2 = containerSize.getSectionItemFromPosition(arg2 + value + result).item;
     let layoutStart;
@@ -132,7 +132,7 @@ function findNearestUnreadItem(containerSize, id) {
         let tmp71 = require;
         let tmp72 = dependencyMap;
         let tmp73 = dependencyMap;
-        if (tmp12.type === require(8053) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
+        if (tmp12.type === require(8074) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
           let tmp16 = item10031;
           if (tmp12.layoutStart > tmp8) {
             let tmp29 = obj;
@@ -147,7 +147,7 @@ function findNearestUnreadItem(containerSize, id) {
             let tmp18 = item10031;
             let tmp19 = tmp70;
             let tmp20 = tmp72;
-            if (tmp12.type !== tmp71(8053).FastListItemTypes.ITEM) {
+            if (tmp12.type !== tmp71(8074).FastListItemTypes.ITEM) {
               tmp9 = item10031;
             } else {
               let tmp21 = shouldSkipSection;
@@ -265,7 +265,7 @@ function findNearestUnreadItem(containerSize, id) {
       }
       continue;
     }
-    const obj6 = require(4761) /* getFontScale */;
+    const obj6 = require(4783) /* getFontScale */;
   }
 }
 let c4 = importAllResult;

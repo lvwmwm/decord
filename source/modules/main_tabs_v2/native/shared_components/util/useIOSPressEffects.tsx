@@ -1,10 +1,10 @@
-// Module ID: 5419
-// Function ID: 5420
+// Module ID: 5440
+// Function ID: 5441
 // Name: SPRING_CONFIG
-// Dependencies: [19, 1493, 4083, 500, 4754, 2]
+// Dependencies: [19, 1493, 4083, 500, 4776, 2]
 // Exports: useIOSPressEffects
 
-// Module 5419 (SPRING_CONFIG)
+// Module 5440 (SPRING_CONFIG)
 import noop from "noop";
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 10395
-// Function ID: 10396
+// Module ID: 10409
+// Function ID: 10410
 // Name: handleActivityStateChanged
-// Dependencies: [10396, 5037, 676, 4227, 709, 589, 2]
+// Dependencies: [10410, 5059, 676, 4227, 709, 589, 2]
 
-// Module 10395 (handleActivityStateChanged)
+// Module 10409 (handleActivityStateChanged)
 import updateActivities from "updateActivities";
 import filterPlayingActivities from "filterPlayingActivities";
 import ME from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 8595
-// Function ID: 8596
+// Module ID: 8617
+// Function ID: 8618
 // Name: SmsAutofillManager
 // Dependencies: [19, 17, 2]
 // Exports: default
 
-// Module 8595 (SmsAutofillManager)
+// Module 8617 (SmsAutofillManager)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 

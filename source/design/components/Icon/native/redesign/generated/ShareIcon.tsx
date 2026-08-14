@@ -1,10 +1,10 @@
-// Module ID: 12301
-// Function ID: 12302
+// Module ID: 12319
+// Function ID: 12320
 // Name: ShareIcon
-// Dependencies: [19, 21, 712, 4064, 9143, 2]
+// Dependencies: [19, 21, 712, 4064, 9157, 2]
 // Exports: ShareIcon
 
-// Module 12301 (ShareIcon)
+// Module 12319 (ShareIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ShareIcon = function ShareIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9143) /* registerAsset */;
+  obj[0] = require(9157) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

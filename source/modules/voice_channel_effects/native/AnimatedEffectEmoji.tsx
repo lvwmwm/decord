@@ -1,10 +1,10 @@
-// Module ID: 10690
-// Function ID: 10691
+// Module ID: 10706
+// Function ID: 10707
 // Name: Emoji
-// Dependencies: [19, 17, 4334, 21, 687, 4342, 712, 5308, 1297, 589, 4083, 4343, 6007, 2]
+// Dependencies: [19, 17, 4334, 21, 687, 4342, 712, 5329, 1297, 589, 4083, 4343, 6028, 2]
 // Exports: default
 
-// Module 10690 (Emoji)
+// Module 10706 (Emoji)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -22,7 +22,7 @@ function Emoji(url) {
     obj = { uri: null };
     obj[0] = url;
     obj[2] = obj;
-    let tmp5 = jsx(importDefault(5308), { uri: null });
+    let tmp5 = jsx(importDefault(5329), { uri: null });
   } else {
     obj = { style: null, allowFontScaling: false, children: null };
     const items1 = [tmp.textEmoji];

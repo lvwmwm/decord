@@ -1,10 +1,10 @@
-// Module ID: 9127
-// Function ID: 9128
+// Module ID: 9141
+// Function ID: 9142
 // Name: useMobileInviteSuggestions
-// Dependencies: [32, 19, 1990, 1910, 9128, 4417, 7241, 676, 505, 589, 698, 9129, 9130, 2]
+// Dependencies: [32, 19, 1990, 1910, 9142, 4417, 7263, 676, 505, 589, 698, 9143, 9144, 2]
 // Exports: default
 
-// Module 9127 (useMobileInviteSuggestions)
+// Module 9141 (useMobileInviteSuggestions)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -60,7 +60,7 @@ export default function useMobileInviteSuggestions(arg0, arg1, arg2, arg3) {
       isGuildVoiceResult = set.isGuildVoice();
     }
     if (isGuildVoiceResult) {
-      let obj = lib(9129);
+      let obj = lib(9143);
       obj = { location: "useMobileInviteSuggestions", guildId: null };
       obj[1] = set.guild_id;
       isGuildVoiceResult = obj.getGuildMembersInMobileVCInvitesExperiment(obj);
@@ -84,8 +84,8 @@ export default function useMobileInviteSuggestions(arg0, arg1, arg2, arg3) {
       obj[1] = isFetchingRows.getGuild(set.guild_id);
       obj[2] = set;
       obj[3] = dependencyMap;
-      const inviteSuggestions = lib(9130).loadInviteSuggestions(obj);
-      const obj3 = lib(9130);
+      const inviteSuggestions = lib(9144).loadInviteSuggestions(obj);
+      const obj3 = lib(9144);
       inviteSuggestions.catch(outer1_11).finally(() => {
         callback(false);
       });

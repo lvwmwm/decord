@@ -1,10 +1,10 @@
-// Module ID: 15772
-// Function ID: 15773
+// Module ID: 15790
+// Function ID: 15791
 // Name: result
-// Dependencies: [5, 32, 19, 4168, 11, 8476, 4241, 2]
+// Dependencies: [5, 32, 19, 4168, 11, 8498, 4241, 2]
 // Exports: usePaginatedMemberApplications
 
-// Module 15772 (result)
+// Module 15790 (result)
 import _fetchGuildJoinRequests from "_fetchGuildJoinRequests";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -82,7 +82,7 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
                   }
                   ref = 2;
                   outer1_2.current = true;
-                  let obj1 = guildJoinRequests(8476);
+                  let obj1 = guildJoinRequests(8498);
                   obj1 = { guildId: null, status: null, limit: null, force: true };
                   obj1[0] = lib;
                   obj1[1] = tmp69;

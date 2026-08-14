@@ -1,10 +1,10 @@
-// Module ID: 14024
-// Function ID: 14025
+// Module ID: 14037
+// Function ID: 14038
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 4342, 14025, 4338, 1236, 4755, 12126, 2007, 2]
+// Dependencies: [5, 19, 17, 21, 4342, 14038, 4338, 1236, 4777, 12144, 2007, 2]
 // Exports: default
 
-// Module 14024 (GuildProfileEmptyState)
+// Module 14037 (GuildProfileEmptyState)
 import SvgComponent from "SvgComponent";
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -24,7 +24,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/use
 export default function GuildProfileEmptyState() {
   const tmp = callback4();
   let obj = { contentContainerStyle: tmp.container, children: null };
-  obj = { style: tmp.image, children: callback2(importDefault(14025), obj) };
+  obj = { style: tmp.image, children: callback2(importDefault(14038), obj) };
   obj = { style: tmp.image };
   const items = [callback2(closure_5, obj), , , , ];
   let obj1 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: null };
@@ -91,7 +91,7 @@ export default function GuildProfileEmptyState() {
       }
     }
   });
-  obj3[1] = callback2(require(4755) /* Button */.Button, obj4);
+  obj3[1] = callback2(require(4777) /* Button */.Button, obj4);
   items[3] = callback2(closure_5, obj3);
   const obj5 = { text: null, variant: "secondary", onPress: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
@@ -148,7 +148,7 @@ export default function GuildProfileEmptyState() {
       }
     }
   });
-  items[4] = callback2(require(4755) /* Button */.Button, obj5);
+  items[4] = callback2(require(4777) /* Button */.Button, obj5);
   obj[1] = items;
   return callback3(closure_4, obj);
 };

@@ -1,8 +1,8 @@
-// Module ID: 14039
-// Function ID: 14040
-// Dependencies: [4164, 1377, 1379, 4550, 14040, 2007, 4310, 14041, 14043, 2]
+// Module ID: 14052
+// Function ID: 14053
+// Dependencies: [4164, 1377, 1379, 4572, 14053, 2007, 4310, 14054, 14056, 2]
 
-// Module 14039
+// Module 14052
 const PASSKEY_UPSELL_KEY = "PASSKEY_UPSELL_KEY";
 let result = require("addVersionedDismissedContent").fileFinishedImporting("modules/webauthn/native/PasskeyUpsellActionCreators.tsx");
 
@@ -16,18 +16,18 @@ export default {
     }
   },
   openPasskeyUpsellModal() {
-    importDefault(4550).pushLazy(require(2007) /* asyncRequireImpl */(14040, dependencyMap.paths), undefined, PASSKEY_UPSELL_KEY);
+    importDefault(4572).pushLazy(require(2007) /* asyncRequireImpl */(14053, dependencyMap.paths), undefined, PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellModal() {
-    importDefault(4550).popWithKey(PASSKEY_UPSELL_KEY);
+    importDefault(4572).popWithKey(PASSKEY_UPSELL_KEY);
   },
   openPasskeyUpsellPromoSheet() {
-    importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(14041, dependencyMap.paths), PASSKEY_UPSELL_KEY);
+    importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(14054, dependencyMap.paths), PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellPromoSheet() {
     importDefault(4310).hideActionSheet(PASSKEY_UPSELL_KEY);
   },
   openPasskeyUpsellPromoModal(closure_0) {
-    importDefault(4550).pushLazy(require(2007) /* asyncRequireImpl */(14043, dependencyMap.paths), closure_0, PASSKEY_UPSELL_KEY);
+    importDefault(4572).pushLazy(require(2007) /* asyncRequireImpl */(14056, dependencyMap.paths), closure_0, PASSKEY_UPSELL_KEY);
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 10404
-// Function ID: 10405
+// Module ID: 10418
+// Function ID: 10419
 // Name: useLaunchPadType
-// Dependencies: [10403, 4034, 1306, 2]
+// Dependencies: [10417, 4034, 1306, 2]
 // Exports: default
 
-// Module 10404 (useLaunchPadType)
+// Module 10418 (useLaunchPadType)
 import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG";
 
 const result = require("create").fileFinishedImporting("modules/launchpad/native/useLaunchPadType.tsx");

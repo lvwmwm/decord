@@ -1,10 +1,10 @@
-// Module ID: 4765
-// Function ID: 4766
+// Module ID: 4787
+// Function ID: 4788
 // Name: useShineEffectStyles
-// Dependencies: [32, 19, 21, 4760, 689, 1363, 4083, 4343, 4342, 2]
+// Dependencies: [32, 19, 21, 4782, 689, 1363, 4083, 4343, 4342, 2]
 // Exports: ButtonShine
 
-// Module 4765 (useShineEffectStyles)
+// Module 4787 (useShineEffectStyles)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -12,7 +12,7 @@ import { jsx } from "jsxProd";
 const require = arg1;
 function useShineEffectStyles(width, variant) {
   const _require = width;
-  let obj = _require(4760);
+  let obj = _require(4782);
   const buttonTextColorStyles = obj.useButtonTextColorStyles(variant);
   const obj2 = enabled(689)(buttonTextColorStyles.color);
   const hexResult = enabled(689)(buttonTextColorStyles.color).alpha(0.1).hex();

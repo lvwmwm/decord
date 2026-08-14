@@ -1,10 +1,10 @@
-// Module ID: 7326
-// Function ID: 7327
+// Module ID: 7348
+// Function ID: 7349
 // Name: replaceAnimationColors
 // Dependencies: [4191, 12, 2]
 // Exports: replaceAnimationColors
 
-// Module 7326 (replaceAnimationColors)
+// Module 7348 (replaceAnimationColors)
 import apply from "apply";
 
 const memoizeResult = apply.memoize((str) => {

@@ -1,10 +1,10 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12861
+// Function ID: 12862
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 676, 21, 4342, 712, 12844, 12848, 12849, 12850, 4249, 4234, 12013, 4338, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 12862, 12866, 12867, 12868, 4249, 4234, 12029, 4338, 2]
 // Exports: default
 
-// Module 12843 (BoostedGuildTierProgressCircle)
+// Module 12861 (BoostedGuildTierProgressCircle)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -43,7 +43,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
     let obj = { style: null, children: null };
     obj[0] = tmp.guildTierBackground;
     obj = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no" };
-    obj[0] = require(12844) /* getTier048PxSource */.getTier048PxSource(theme);
+    obj[0] = require(12862) /* getTier048PxSource */.getTier048PxSource(theme);
     obj[1] = tmp.guildTierNoneIcon;
     obj[1] = callback(closure_4, obj);
     return callback(closure_3, obj);
@@ -69,11 +69,11 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       if (guild.premiumTier !== constants.NONE) {
         const premiumTier = guild.premiumTier;
         if (tmp13.TIER_1 === premiumTier) {
-          let tier048PxSource = tmp2(12848);
+          let tier048PxSource = tmp2(12866);
         } else if (tmp13.TIER_2 === premiumTier) {
-          tier048PxSource = tmp2(12849);
+          tier048PxSource = tmp2(12867);
         } else if (tmp13.TIER_3 === premiumTier) {
-          tier048PxSource = tmp2(12850);
+          tier048PxSource = tmp2(12868);
         }
       }
       const obj2 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no" };
@@ -89,7 +89,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       obj[2] = tmp10(tmp11, obj1);
       return tmp8(tmp9, obj);
     }
-    tmp19Result = tmp19(12844);
+    tmp19Result = tmp19(12862);
     tier048PxSource = tmp19Result.getTier048PxSource(theme);
     const obj10 = require(4234) /* getGuildTierFromGuild */;
   }

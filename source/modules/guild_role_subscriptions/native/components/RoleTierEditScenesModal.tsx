@@ -1,10 +1,10 @@
-// Module ID: 16901
-// Function ID: 16902
+// Module ID: 16917
+// Function ID: 16918
 // Name: orderify
-// Dependencies: [32, 19, 16888, 14506, 21, 4342, 38, 6051, 8072, 1236, 16902, 16887, 16903, 16923, 16926, 16928, 1628, 4550, 5756, 5823, 16930, 2]
+// Dependencies: [32, 19, 16904, 14519, 21, 4342, 38, 6072, 8093, 1236, 16918, 16903, 16919, 16939, 16942, 16944, 1628, 4572, 5777, 5844, 16946, 2]
 // Exports: default
 
-// Module 16901 (orderify)
+// Module 16917 (orderify)
 import _slicedToArray from "_slicedToArray";
 import NavigationStack from "NavigationStack";
 import usePriceTiers from "usePriceTiers";

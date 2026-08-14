@@ -1,10 +1,10 @@
-// Module ID: 9582
-// Function ID: 9583
+// Module ID: 9595
+// Function ID: 9596
 // Name: parseBioReact
-// Dependencies: [4776, 4777, 4333, 1405, 8139, 4332, 4060, 12, 2]
+// Dependencies: [4798, 4799, 4333, 1405, 8160, 4332, 4060, 12, 2]
 // Exports: getOrParseBioAST, parseBioReactWithCachedAST
 
-// Module 9582 (parseBioReact)
+// Module 9595 (parseBioReact)
 import importDefaultResult from "combineMarkupRules";
 import importAllResult from "reactParserFor";
 import importDefaultResult1 from "get defaultRules";

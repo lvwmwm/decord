@@ -1,9 +1,9 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8744
+// Function ID: 8745
 // Name: NsfwGateSource
 // Dependencies: [2]
 
-// Module 8730 (NsfwGateSource)
+// Module 8744 (NsfwGateSource)
 const result = require("set").fileFinishedImporting("modules/age_gate/native/components/Constants.tsx");
 
 export const NsfwGateSource = { MODAL: 0, [0]: "MODAL", GUILD_SIDEBAR: 1, [1]: "GUILD_SIDEBAR" };

@@ -1,10 +1,10 @@
-// Module ID: 4677
-// Function ID: 4678
+// Module ID: 4699
+// Function ID: 4700
 // Name: getEffectiveVideoProvider
-// Dependencies: [676, 4678, 11, 1403, 12, 3943, 688, 4566, 2]
-// Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
+// Dependencies: [676, 4700, 11, 1403, 12, 3943, 688, 4588, 2]
+// Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 4677 (getEffectiveVideoProvider)
+// Module 4699 (getEffectiveVideoProvider)
 import ME from "ME";
 import { EMBED_TYPES_WITH_PARSEABLE_FIELDS as closure_6 } from "MessageEmbedTypes";
 
@@ -43,6 +43,7 @@ const re13 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channel
 const re14 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/game-shop\/([0-9]+)\/([0-9]+)/;
 const re15 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/shop\?(?=.*tab=game-shops)(?=.*applicationId=[0-9]+)(?=.*skuId=[0-9]+)/;
 const re16 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/games\/[0-9]+(?:\/[A-Za-z0-9-]*)?\/?$/;
+const re17 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/users\/[0-9]+\/?$/;
 let result = require("DISCORD_EPOCH").fileFinishedImporting("utils/EmbedUtils.tsx");
 
 export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
@@ -250,13 +251,13 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const transformComponentsResult = obj6(4566).transformComponents(footer.components);
+    const transformComponentsResult = obj6(4588).transformComponents(footer.components);
     let tmp40;
     if (transformComponentsResult.length > 0) {
       tmp40 = transformComponentsResult;
     }
     obj.components = tmp40;
-    const obj17 = obj6(4566);
+    const obj17 = obj6(4588);
   }
   return obj;
 };
@@ -338,6 +339,16 @@ export const isGameProfileArticleEmbed = function isGameProfileArticleEmbed(type
   }
   if (isMatch) {
     isMatch = regex9.test(type.url);
+  }
+  return isMatch;
+};
+export const isUserProfileArticleEmbed = function isUserProfileArticleEmbed(type) {
+  let isMatch = type.type === constants2.ARTICLE;
+  if (isMatch) {
+    isMatch = null != type.url;
+  }
+  if (isMatch) {
+    isMatch = regex10.test(type.url);
   }
   return isMatch;
 };

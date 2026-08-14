@@ -1,10 +1,10 @@
-// Module ID: 6511
-// Function ID: 6512
+// Module ID: 6532
+// Function ID: 6533
 // Name: HdStreamAbstractUI
-// Dependencies: [21, 5308, 6512, 2]
+// Dependencies: [21, 5329, 6533, 2]
 // Exports: HdStreamAbstractUI
 
-// Module 6511 (HdStreamAbstractUI)
+// Module 6532 (HdStreamAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HdStreamAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const HdStreamAbstractUI = function HdStreamAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6512);
+  obj[0] = importDefault(6533);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const HdStreamAbstractUI = function HdStreamAbstractUI(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
 };

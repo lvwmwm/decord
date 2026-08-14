@@ -1,10 +1,10 @@
-// Module ID: 16331
-// Function ID: 16332
+// Module ID: 16349
+// Function ID: 16350
 // Name: ConnectButton
-// Dependencies: [19, 1391, 21, 4342, 712, 11704, 16276, 589, 4558, 5987, 5170, 4685, 16332, 16335, 16336, 12734, 16330, 1236, 4338, 2]
+// Dependencies: [19, 1391, 21, 4342, 712, 11720, 16294, 589, 4580, 6008, 5191, 4707, 16350, 16353, 16354, 12752, 16348, 1236, 4338, 2]
 // Exports: default
 
-// Module 16331 (ConnectButton)
+// Module 16349 (ConnectButton)
 import set from "set";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { jsx } from "jsxProd";

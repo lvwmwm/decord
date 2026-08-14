@@ -1,10 +1,10 @@
-// Module ID: 5809
-// Function ID: 5810
+// Module ID: 5830
+// Function ID: 5831
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 4083, 4342, 712, 4757, 1356, 1367, 4754, 4758, 4065, 5810, 5811, 4311, 4312, 2]
+// Dependencies: [32, 19, 17, 21, 4083, 4342, 712, 4779, 1356, 1367, 4776, 4780, 4065, 5831, 5832, 4311, 4312, 2]
 // Exports: FormSwitch
 
-// Module 5809 (FormSwitch)
+// Module 5830 (FormSwitch)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -116,11 +116,11 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   const animatedStyle1 = obj5.useAnimatedStyle(fn);
   const fn2 = function n() {
     if (enabled) {
-      let obj = require(4754) /* CONFIG_NEVER_ANIMATE */;
+      let obj = require(4776) /* CONFIG_NEVER_ANIMATE */;
       obj = { opacity: null, transform: null };
-      obj[0] = obj.withSpring(first ? c0 : c1, require(4758) /* SUBTLE_SPRING */.SUBTLE_SPRING, "animate-always");
+      obj[0] = obj.withSpring(first ? c0 : c1, require(4780) /* SUBTLE_SPRING */.SUBTLE_SPRING, "animate-always");
       obj = { scale: null };
-      obj[0] = require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(1, require(4758) /* SUBTLE_SPRING */.SUBTLE_SPRING);
+      obj[0] = require(4776) /* CONFIG_NEVER_ANIMATE */.withSpring(1, require(4780) /* SUBTLE_SPRING */.SUBTLE_SPRING);
       const items = [obj];
       obj[1] = items;
       return obj;
@@ -136,11 +136,11 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   const obj1 = { useReducedMotion: enabled, checked: first, on: 1, off: 0, withSpring: _require(enabled[10]).withSpring, SUBTLE_SPRING: _require(enabled[11]).SUBTLE_SPRING };
   const fn3 = function n() {
     if (enabled) {
-      let obj = require(4754) /* CONFIG_NEVER_ANIMATE */;
+      let obj = require(4776) /* CONFIG_NEVER_ANIMATE */;
       obj = { opacity: null, transform: null };
-      obj[0] = obj.withSpring(first ? c0 : c1, require(4758) /* SUBTLE_SPRING */.SUBTLE_SPRING, "animate-always");
+      obj[0] = obj.withSpring(first ? c0 : c1, require(4780) /* SUBTLE_SPRING */.SUBTLE_SPRING, "animate-always");
       obj = { scale: null };
-      obj[0] = require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring(1, require(4758) /* SUBTLE_SPRING */.SUBTLE_SPRING);
+      obj[0] = require(4776) /* CONFIG_NEVER_ANIMATE */.withSpring(1, require(4780) /* SUBTLE_SPRING */.SUBTLE_SPRING);
       const items = [obj];
       obj[1] = items;
       return obj;

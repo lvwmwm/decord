@@ -1,10 +1,10 @@
-// Module ID: 8608
-// Function ID: 8609
+// Module ID: 4559
+// Function ID: 4560
 // Name: fetchSurveyDetails
-// Dependencies: [32, 5, 8609, 8611, 8612, 8613, 676, 530, 709, 1208, 8614, 2]
+// Dependencies: [32, 5, 4560, 4563, 4564, 4565, 676, 530, 709, 1208, 4566, 2]
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
-// Module 8608 (fetchSurveyDetails)
+// Module 4559 (fetchSurveyDetails)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "QuestionTypeEnum";
 import fetchSurveyIfNeeded from "fetchSurveyIfNeeded";

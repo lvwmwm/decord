@@ -1,9 +1,9 @@
-// Module ID: 11682
-// Function ID: 11683
+// Module ID: 11698
+// Function ID: 11699
 // Name: PortalKeyboardPlaceholderInner
-// Dependencies: [19, 17, 21, 4342, 500, 712, 1626, 1628, 7686, 1493, 5412, 8440, 4207, 1894, 2]
+// Dependencies: [19, 17, 21, 4342, 500, 712, 1626, 1628, 7707, 1493, 5433, 8462, 4207, 1894, 2]
 
-// Module 11682 (PortalKeyboardPlaceholderInner)
+// Module 11698 (PortalKeyboardPlaceholderInner)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -14,11 +14,11 @@ let c4;
 const require = arg1;
 function PortalKeyboardPlaceholderInner(keyboardType) {
   const rect = importDefault(1628)();
-  const tmp = importDefault(7686)();
+  const tmp = importDefault(7707)();
   const tmp2 = importDefault(1493)();
-  let obj = require(8440) /* useGradientBottom */;
+  let obj = require(8462) /* useGradientBottom */;
   obj = { style: null };
-  const items = [callback(keyboardType.keyboardType, importDefault(1493)().width - rect.left - rect.right, importDefault(5412)(), tmp).container, obj.useGradientBottom()];
+  const items = [callback(keyboardType.keyboardType, importDefault(1493)().width - rect.left - rect.right, importDefault(5433)(), tmp).container, obj.useGradientBottom()];
   obj[0] = items;
   return <closure_3 style={null} />;
 }

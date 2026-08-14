@@ -1,10 +1,10 @@
-// Module ID: 16046
-// Function ID: 16047
+// Module ID: 16064
+// Function ID: 16065
 // Name: HiddenMedia
-// Dependencies: [19, 17, 4562, 21, 4342, 16047, 712, 4851, 4338, 1236, 4298, 4031, 5768, 589, 8832, 8086, 16048, 8638, 4887, 16049, 2]
+// Dependencies: [19, 17, 4584, 21, 4342, 16065, 712, 4873, 4338, 1236, 4298, 4031, 5789, 589, 8846, 8107, 16066, 8652, 4909, 16067, 2]
 // Exports: default
 
-// Module 16046 (HiddenMedia)
+// Module 16064 (HiddenMedia)
 import RestrictedBlockedMessageGroup from "RestrictedBlockedMessageGroup";
 import { View } from "DCDChatItem";
 import reinjectEphemerals from "reinjectEphemerals";

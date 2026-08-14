@@ -1,10 +1,10 @@
-// Module ID: 8174
-// Function ID: 8175
+// Module ID: 8195
+// Function ID: 8196
 // Name: createRoleSubscriptionPurchaseSystemMessage
-// Dependencies: [1391, 1910, 676, 4573, 8114, 8149, 8150, 8144, 1438, 1435, 8116, 1236, 8117, 2]
+// Dependencies: [1391, 1910, 676, 4595, 8135, 8170, 8171, 8165, 1438, 1435, 8137, 1236, 8138, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
-// Module 8174 (createRoleSubscriptionPurchaseSystemMessage)
+// Module 8195 (createRoleSubscriptionPurchaseSystemMessage)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { SystemChannelFlags } from "ME";
@@ -25,9 +25,9 @@ export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSu
       guildId = channel.getGuildId();
     }
     guild = guild.getGuild(guildId);
-    let obj = require(4573) /* useNullableMessageAuthor */;
+    let obj = require(4595) /* useNullableMessageAuthor */;
     const guildMemberAvatar = obj.getMessageAuthor(message).guildMemberAvatar;
-    let obj1 = require(8114) /* getMessageAuthorWithProcessedColor */;
+    let obj1 = require(8135) /* getMessageAuthorWithProcessedColor */;
     const messageAuthorWithProcessedColor = obj1.getMessageAuthorWithProcessedColor(message);
     if (null != guildId) {
       if (null != channel) {
@@ -35,11 +35,11 @@ export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSu
         if (tmp9) {
           tmp9 = !(guild.systemChannelFlags & SystemChannelFlags.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
         }
-        let tmp5Result = tmp5(8149);
+        let tmp5Result = tmp5(8170);
         if (tmp5Result.computeIsStickerReplyEnabled(guildId, channel, message, tmp9)) {
-          tmp5Result = tmp5(8150);
-          const tmp5Result1 = tmp5(8144);
-          const transformStickerResult = tmp5Result.transformSticker(tmp5(8144).pickRoleSubscriptionPurchaseSticker(message.id));
+          tmp5Result = tmp5(8171);
+          const tmp5Result1 = tmp5(8165);
+          const transformStickerResult = tmp5Result.transformSticker(tmp5(8165).pickRoleSubscriptionPurchaseSticker(message.id));
         }
       }
     }
@@ -76,20 +76,20 @@ export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSu
       obj3[0] = message;
       obj3[1] = messageAuthorWithProcessedColor;
       obj3[2] = tmp;
-      obj1[2] = importDefault(8116)(obj3);
+      obj1[2] = importDefault(8137)(obj3);
       obj1[3] = obj;
       obj1[4] = roleSubscriptionData;
-      obj2[0] = tmp5(8144).getRoleSubscriptionPurchaseSystemMessageContentMobile(obj1);
+      obj2[0] = tmp5(8165).getRoleSubscriptionPurchaseSystemMessageContentMobile(obj1);
       obj2[1] = roleSubscriptionData.total_months_subscribed;
       obj2[2] = messageAuthorWithProcessedColor.nick;
       obj2[3] = tmp17Result.uri;
       obj2[4] = transformStickerResult;
       const tmp22 = guildId;
-      const tmp5Result4 = tmp5(8144);
-      obj2[5] = tmp5(8144).getRoleSubscriptionPurchaseStickerCTA(message.id, false);
+      const tmp5Result4 = tmp5(8165);
+      obj2[5] = tmp5(8165).getRoleSubscriptionPurchaseStickerCTA(message.id, false);
       const intl = tmp5(1236).intl;
       obj2[6] = intl.string(tmp5(1236).t.piPHvY);
-      const merged = Object.assign(importDefault(8117)(message));
+      const merged = Object.assign(importDefault(8138)(message));
       return obj2;
     }
     guildMemberAvatarSource = author.getAvatarSource(undefined);

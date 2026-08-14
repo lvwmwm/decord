@@ -1,10 +1,10 @@
-// Module ID: 14592
-// Function ID: 14593
+// Module ID: 14605
+// Function ID: 14606
 // Name: MessagesHeaderItem
 // Dependencies: [19, 17, 21, 4342, 712, 4338, 1236, 2]
 // Exports: default
 
-// Module 14592 (MessagesHeaderItem)
+// Module 14605 (MessagesHeaderItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

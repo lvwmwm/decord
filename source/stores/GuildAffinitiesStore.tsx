@@ -1,9 +1,9 @@
-// Module ID: 8957
-// Function ID: 8958
+// Module ID: 8971
+// Function ID: 8972
 // Name: initialize
-// Dependencies: [1910, 8958, 589, 709, 2]
+// Dependencies: [1910, 8972, 589, 709, 2]
 
-// Module 8957 (initialize)
+// Module 8971 (initialize)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { PersistedStore } from "initialize";
 
@@ -41,8 +41,8 @@ GuildAffinitiesStore.persistKey = "GuildAffinitiesStore";
 const guildAffinitiesStore = new GuildAffinitiesStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     if (Date.now() - closure_3.lastFetched > 86400000) {
-      const guildAffinities = require(8958) /* fetchGuildAffinities */.fetchGuildAffinities();
-      const obj = require(8958) /* fetchGuildAffinities */;
+      const guildAffinities = require(8972) /* fetchGuildAffinities */.fetchGuildAffinities();
+      const obj = require(8972) /* fetchGuildAffinities */;
     }
     return false;
   },

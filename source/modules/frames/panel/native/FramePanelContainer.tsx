@@ -1,8 +1,8 @@
-// Module ID: 16190
-// Function ID: 16191
-// Dependencies: [19, 10566, 10567, 21, 589, 16191, 16193, 2]
+// Module ID: 16208
+// Function ID: 16209
+// Dependencies: [19, 10582, 10583, 21, 589, 16209, 16211, 2]
 
-// Module 16190
+// Module 16208
 import map from "map";
 import { isLaunched } from "FrameLayoutModes";
 import { jsx } from "jsxProd";
@@ -15,9 +15,9 @@ const memoResult = require("noop").memo(function FramePanelContainer() {
   let tmp2 = null;
   if (obj.useStateFromStores(items, () => callback(mainFrame.getMainFrame()))) {
     obj = { children: null };
-    obj[0] = jsx(importDefault(16193), {});
-    tmp2 = jsx(importDefault(16191), { children: null });
-    const tmp5 = importDefault(16191);
+    obj[0] = jsx(importDefault(16211), {});
+    tmp2 = jsx(importDefault(16209), { children: null });
+    const tmp5 = importDefault(16209);
   }
   return tmp2;
 });

@@ -1,10 +1,10 @@
-// Module ID: 4846
-// Function ID: 4847
+// Module ID: 4868
+// Function ID: 4869
 // Name: TextWarningIcon
-// Dependencies: [19, 21, 712, 4064, 4820, 2]
+// Dependencies: [19, 21, 712, 4064, 4842, 2]
 // Exports: TextWarningIcon
 
-// Module 4846 (TextWarningIcon)
+// Module 4868 (TextWarningIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TextWarningIcon = function TextWarningIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4820) /* registerAsset */;
+  obj[0] = require(4842) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

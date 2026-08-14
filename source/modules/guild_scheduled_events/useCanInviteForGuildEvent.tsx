@@ -1,10 +1,10 @@
-// Module ID: 9007
-// Function ID: 9008
+// Module ID: 9021
+// Function ID: 9022
 // Name: canEveryoneRoleViewEvent
-// Dependencies: [1396, 1391, 1980, 1910, 3989, 7033, 1397, 676, 3994, 9008, 589, 2]
+// Dependencies: [1396, 1391, 1980, 1910, 3989, 7055, 1397, 676, 3994, 9022, 589, 2]
 // Exports: default
 
-// Module 9007 (canEveryoneRoleViewEvent)
+// Module 9021 (canEveryoneRoleViewEvent)
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -63,7 +63,7 @@ function isGuildEventInvitable(guildEvent) {
     }
     const guild = obj3.getGuild(guildEvent.guild_id);
     const stageInstanceByChannel = obj4.getStageInstanceByChannel(channel_id);
-    const obj5 = require(9008) /* canViewInviteModal */;
+    const obj5 = require(9022) /* canViewInviteModal */;
     let canViewInviteModalResult = obj5.canViewInviteModal(getUncachedChannelPermissions, guild, defaultChannel, stageInstanceByChannel);
     if (canViewInviteModalResult) {
       let tmp17 = null != defaultChannel;

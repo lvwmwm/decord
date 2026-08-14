@@ -1,10 +1,10 @@
-// Module ID: 12661
-// Function ID: 12662
+// Module ID: 12679
+// Function ID: 12680
 // Name: createCodedLinkEmbeds
-// Dependencies: [32, 3990, 1910, 1922, 7195, 11398, 4331, 12662, 12663, 12673, 12675, 12668, 12677, 12670, 10416, 11257, 8260, 10975, 12678, 1370, 2]
+// Dependencies: [32, 3990, 1910, 1922, 7217, 11414, 4331, 12680, 12681, 12691, 12693, 12686, 12695, 12688, 10432, 11273, 8282, 10991, 12696, 1370, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 12661 (createCodedLinkEmbeds)
+// Module 12679 (createCodedLinkEmbeds)
 import _slicedToArray from "_slicedToArray";
 import initialize from "initialize";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -147,7 +147,9 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                     if (tmp(tmp2[6]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
                       if (tmp(tmp2[6]).CodedLinkType.GAME_PROFILE !== type) {
                         if (tmp(tmp2[6]).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                          return tmp(tmp2[19]).assertNever(type);
+                          if (tmp(tmp2[6]).CodedLinkType.USER_PROFILE !== type) {
+                            return tmp(tmp2[19]).assertNever(type);
+                          }
                         }
                       }
                     }

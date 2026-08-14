@@ -1,10 +1,10 @@
-// Module ID: 16085
-// Function ID: 16086
+// Module ID: 16103
+// Function ID: 16104
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1922, 676, 1388, 21, 1356, 1363, 4278, 589, 4007, 1236, 2661, 6059, 5861, 4164, 1377, 5437, 5368, 5752, 6070, 500, 5308, 16086, 9436, 4338, 4755, 4342, 712, 2]
+// Dependencies: [19, 17, 1922, 676, 1388, 21, 1356, 1363, 4278, 589, 4007, 1236, 2661, 6080, 5882, 4164, 1377, 5458, 5389, 5773, 6091, 500, 5329, 16104, 9450, 4338, 4777, 4342, 712, 2]
 // Exports: default
 
-// Module 16085 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 16103 (DisplayNameStylesFlywheelMobileActionSheet)
 import ActionSheetHeaderBar from "ActionSheetHeaderBar";
 import { View } from "Background";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -94,11 +94,11 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       markAsDismissed(outer1_8.USER_DISMISS);
     }
   };
-  const items4 = [callback(markAsDismissed(5752).ActionSheetHeaderBar, obj1), , , , ];
+  const items4 = [callback(markAsDismissed(5773).ActionSheetHeaderBar, obj1), , , , ];
   obj2 = { style: tmp6.imageContainer, children: null };
   let tmp14Result = enabled;
   if (enabled) {
-    tmp14Result = tmp14(tmp2(6070).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+    tmp14Result = tmp14(tmp2(6091).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   }
   const items5 = [tmp14Result, ];
   if (enabled) {
@@ -131,33 +131,33 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     const intl3 = tmp2(1236).intl;
     obj7[0] = intl3.string(tmp2(1236).t["4P5I8V"]);
     obj7[3] = callback;
-    const items6 = [tmp14(tmp2(4755).Button, obj7), ];
+    const items6 = [tmp14(tmp2(4777).Button, obj7), ];
     const obj8 = { text: null, variant: "secondary", size: "lg", onPress: null };
     const intl4 = tmp2(1236).intl;
     obj8[0] = intl4.string(tmp2(1236).t.TulDPl);
     obj8[3] = callback1;
-    items6[1] = tmp14(tmp2(4755).Button, obj8);
+    items6[1] = tmp14(tmp2(4777).Button, obj8);
     obj6[1] = items6;
     items4[4] = tmp15(tmp16, obj6);
     obj[1] = items4;
     obj5[1] = tmp15(tmp16, obj);
-    obj[4] = tmp14(tmp2(5368).SafeAreaPaddingView, obj5);
-    return tmp14(tmp2(5437).BottomSheet, obj);
+    obj[4] = tmp14(tmp2(5389).SafeAreaPaddingView, obj5);
+    return tmp14(tmp2(5458).BottomSheet, obj);
   } else {
     if (tmp2Result.isIOS()) {
       const obj9 = { source: null, style: null, resizeMode: "contain", enableAnimation: null };
       const obj10 = { uri: null };
-      obj10[0] = tmp4(16086);
+      obj10[0] = tmp4(16104);
       obj9[0] = obj10;
       obj9[1] = tmp6.image;
       obj9[3] = !enabled;
-      tmp14Result = tmp14(tmp4(5308), obj9);
-      const tmp4Result = tmp4(5308);
+      tmp14Result = tmp14(tmp4(5329), obj9);
+      const tmp4Result = tmp4(5329);
     } else {
       const obj11 = { url: null, style: null, autoplay: true };
-      obj11[0] = tmp4(16086);
+      obj11[0] = tmp4(16104);
       obj11[1] = tmp6.image;
-      tmp14Result = tmp14(tmp2(9436).APNGPlayer, obj11);
+      tmp14Result = tmp14(tmp2(9450).APNGPlayer, obj11);
     }
     tmp2Result = tmp2(500);
   }

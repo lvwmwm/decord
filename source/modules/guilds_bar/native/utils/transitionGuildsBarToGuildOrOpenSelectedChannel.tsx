@@ -1,10 +1,10 @@
-// Module ID: 15504
-// Function ID: 15505
+// Module ID: 15522
+// Function ID: 15523
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
-// Dependencies: [1979, 4165, 676, 4198, 4197, 4353, 6000, 2]
+// Dependencies: [1979, 4165, 676, 4198, 4197, 4353, 6021, 2]
 // Exports: default
 
-// Module 15504 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+// Module 15522 (transitionGuildsBarToGuildOrOpenSelectedChannel)
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_3 from "handleConnectionOpen";
 import { ME } from "ME";
@@ -50,7 +50,7 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
     tmpResult = tmp(4353);
     tmpResult.transitionToChannel(tmp4);
   } else {
-    tmp(6000).transitionToGuild(arg0);
-    const tmpResult1 = tmp(6000);
+    tmp(6021).transitionToGuild(arg0);
+    const tmpResult1 = tmp(6021);
   }
 };

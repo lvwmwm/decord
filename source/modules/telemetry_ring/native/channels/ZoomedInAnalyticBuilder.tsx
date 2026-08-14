@@ -1,10 +1,10 @@
-// Module ID: 13520
-// Function ID: 13521
+// Module ID: 13532
+// Function ID: 13533
 // Name: buildZoomedInAnalyticsEvent
-// Dependencies: [676, 7181, 12972, 13142, 2]
+// Dependencies: [676, 7203, 12990, 13153, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 13520 (buildZoomedInAnalyticsEvent)
+// Module 13532 (buildZoomedInAnalyticsEvent)
 import { AnalyticEvents } from "ME";
 
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };
@@ -312,7 +312,7 @@ let closure_5 = {
       if (typeof touch_action_type === "string") {
         tmp2 = touch_action_type;
       }
-      let obj = importDefault(7181);
+      let obj = importDefault(7203);
       let currentHermesInstrumentedStatsSummary = obj.getCurrentHermesInstrumentedStatsSummary();
       if (currentHermesInstrumentedStatsSummary == null) {
         currentHermesInstrumentedStatsSummary = null;
@@ -655,7 +655,7 @@ let closure_5 = {
             }
             let tmp41 = null;
             if (null != tmp37) {
-              const tmp44 = require(12972) /* Opcode */.Opcode[tmp37];
+              const tmp44 = require(12990) /* Opcode */.Opcode[tmp37];
               let tmp45 = null;
               if (typeof tmp44 === "string") {
                 tmp45 = tmp44;
@@ -744,7 +744,7 @@ let closure_5 = {
           }
           let tmp26 = null;
           if (null != tmp22) {
-            const tmp29 = require(13142) /* noop */.RTCSocketOpcode[tmp22];
+            const tmp29 = require(13153) /* noop */.RTCSocketOpcode[tmp22];
             let tmp30 = null;
             if (typeof tmp29 === "string") {
               tmp30 = tmp29;

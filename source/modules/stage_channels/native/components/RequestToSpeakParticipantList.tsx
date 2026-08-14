@@ -1,10 +1,10 @@
-// Module ID: 10774
-// Function ID: 10775
+// Module ID: 10790
+// Function ID: 10791
 // Name: RequestToSpeakParticipant
-// Dependencies: [19, 17, 676, 21, 4342, 712, 5768, 4887, 8832, 10775, 1297, 4338, 10776, 1236, 10777, 4529, 8072, 5189, 7823, 5308, 10778, 8053, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 5789, 4909, 8846, 10791, 1297, 4338, 10792, 1236, 10793, 4529, 8093, 5210, 7844, 5329, 10794, 8074, 2]
 // Exports: default
 
-// Module 10774 (RequestToSpeakParticipant)
+// Module 10790 (RequestToSpeakParticipant)
 import "preload";
 import { View } from "useStageParticipants";
 import jsxProd from "renderDefaultEmpty";

@@ -1,10 +1,10 @@
-// Module ID: 16903
-// Function ID: 16904
+// Module ID: 16919
+// Function ID: 16920
 // Name: AddBenefitButton
-// Dependencies: [32, 19, 17, 14529, 16888, 14506, 21, 4342, 712, 9106, 5308, 16904, 4338, 1236, 1435, 16905, 13314, 14533, 38, 16883, 8012, 9109, 16906, 16907, 16900, 14513, 16879, 14528, 16909, 16910, 16919, 14532, 16920, 16892, 2]
+// Dependencies: [32, 19, 17, 14542, 16904, 14519, 21, 4342, 712, 9120, 5329, 16920, 4338, 1236, 1435, 16921, 13326, 14546, 38, 16899, 8033, 9123, 16922, 16923, 16916, 14526, 16895, 14541, 16925, 16926, 16935, 14545, 16936, 16908, 2]
 // Exports: GuildRoleSubscriptionTierChannelBenefitsModal, GuildRoleSubscriptionTierIntangibleBenefitsModal
 
-// Module 16903 (AddBenefitButton)
+// Module 16919 (AddBenefitButton)
 import Row from "Row";
 import useRoleSubscriptionSettingsDisabled from "useRoleSubscriptionSettingsDisabled";
 import get_ActivityIndicator from "useTrialIntervalOptions";
@@ -40,9 +40,9 @@ function AddBenefitButton(disabled) {
   items[1] = disabled;
   obj = { source: null };
   const tmp2 = closure_13;
-  const tmp5 = importDefault(9106);
-  obj[0] = importDefault(16904);
-  const items1 = [callback(importDefault(5308), obj), ];
+  const tmp5 = importDefault(9120);
+  obj[0] = importDefault(16920);
+  const items1 = [callback(importDefault(5329), obj), ];
   obj = { style: tmp.addBenefitLabel, variant: "text-md/medium", color: "mobile-text-heading-primary", children: label };
   items1[1] = callback(require(4338) /* Text */.Text, obj);
   obj[5] = items1;
@@ -63,10 +63,10 @@ function EmojiRowLabel(emoji) {
   obj = { style: createCacheKey().emojiImage, source: null };
   obj = { uri: null };
   const tmp = createCacheKey();
-  const tmp2 = importDefault(5308);
+  const tmp2 = importDefault(5329);
   obj[0] = importDefault(1435).getEmojiURL({ id: emoji.id, animated: emoji.animated, size: 48 });
   obj[1] = obj;
-  const items = [callback(tmp2, obj), callback(importDefault(16905), { name: emoji.name })];
+  const items = [callback(tmp2, obj), callback(importDefault(16921), { name: emoji.name })];
   obj[0] = items;
   return callback2(closure_14, obj);
 }
@@ -78,8 +78,8 @@ function ListFooterSection(onChangeTrialInterval) {
   let options;
   ({ interval, trialActiveUserLimit, onChangeTrialActiveUserLimit } = onChangeTrialInterval);
   const tmp = createCacheKey();
-  const tmp4 = options(13314)();
-  const tmp5 = options(14533)(interval);
+  const tmp4 = options(13326)();
+  const tmp5 = options(14546)(interval);
   options = tmp5.options;
   const selectedOption = tmp5.selectedOption;
   const items = [onChangeTrialInterval, options];
@@ -92,7 +92,7 @@ function ListFooterSection(onChangeTrialInterval) {
     }
     onChangeTrialInterval(value);
   }, items);
-  let obj = onChangeTrialInterval(16883);
+  let obj = onChangeTrialInterval(16899);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   obj = { style: tmp.listFooterContainer, children: null };
   obj = { label: null, value: null, onValueChange: null, disabled: null };
@@ -101,7 +101,7 @@ function ListFooterSection(onChangeTrialInterval) {
   obj[1] = null != selectedOption;
   obj[2] = callback;
   obj[3] = roleSubscriptionSettingsDisabled;
-  const items1 = [callback(onChangeTrialInterval(8012).FormSwitchRow, obj), ];
+  const items1 = [callback(onChangeTrialInterval(8033).FormSwitchRow, obj), ];
   if (null == selectedOption) {
     const disabledSection = tmp.disabledSection;
   }
@@ -113,7 +113,7 @@ function ListFooterSection(onChangeTrialInterval) {
   obj2[3] = intl2.string(onChangeTrialInterval(1236).t.urVijS);
   const items3 = [callback(onChangeTrialInterval(4338).Text, obj2), , , , , , ];
   const obj3 = { style: tmp4.header, children: null };
-  let tmp2Result = tmp2(9109);
+  let tmp2Result = tmp2(9123);
   const intl3 = tmp8(1236).intl;
   obj3[1] = intl3.string(onChangeTrialInterval(1236).t.m1KuWd);
   items3[1] = callback(tmp2Result, obj3);
@@ -126,7 +126,7 @@ function ListFooterSection(onChangeTrialInterval) {
   const obj5 = { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: null };
   let tmp15 = !tmp7;
   let tmp16 = tmp15;
-  tmp2Result = tmp2(16906);
+  tmp2Result = tmp2(16922);
   if (null != selectedOption) {
     tmp16 = roleSubscriptionSettingsDisabled;
   }
@@ -135,7 +135,7 @@ function ListFooterSection(onChangeTrialInterval) {
   const obj6 = { style: tmp4.header, children: null };
   const intl5 = tmp8(1236).intl;
   obj6[1] = intl5.string(onChangeTrialInterval(1236).t["/JD9oe"]);
-  items3[4] = callback(options(9109), obj6);
+  items3[4] = callback(options(9123), obj6);
   const obj7 = { style: items5, variant: "text-sm/medium", color: "text-default", children: null };
   items5 = [, ];
   ({ listFooterSectionDescription: arr6[0], listFooterText: arr6[1] } = tmp);
@@ -143,12 +143,12 @@ function ListFooterSection(onChangeTrialInterval) {
   obj7[3] = intl6.string(onChangeTrialInterval(1236).t.Cg5eBm);
   items3[5] = callback(onChangeTrialInterval(4338).Text, obj7);
   const obj8 = { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: null };
-  const tmp2Result1 = options(9109);
+  const tmp2Result1 = options(9123);
   if (null != selectedOption) {
     tmp15 = roleSubscriptionSettingsDisabled;
   }
   obj8[2] = tmp15;
-  items3[6] = callback(options(16907), obj8);
+  items3[6] = callback(options(16923), obj8);
   obj1[1] = items3;
   items1[1] = closure_13(closure_7, obj1);
   obj[1] = items1;
@@ -221,11 +221,11 @@ function Content(arg0) {
     tmp4 = tmp3;
   }
   dependencyMap = tmp4;
-  let obj = _require(16900);
+  let obj = _require(16916);
   const editStateContext = obj.useEditStateContext();
   editStateId = editStateContext.editStateId;
   guildId = editStateContext.guildId;
-  let obj1 = _require(14513);
+  let obj1 = _require(14526);
   const subscriptionListing = obj1.useSubscriptionListing(editStateId);
   role_id = undefined;
   if (subscriptionListing != null) {
@@ -234,31 +234,31 @@ function Content(arg0) {
   if (role_id == null) {
     role_id = null;
   }
-  const tmp11 = editStateId(importAll(14528).useChannelBenefits(editStateId), 2);
+  const tmp11 = editStateId(importAll(14541).useChannelBenefits(editStateId), 2);
   first = tmp11[0];
   AllChannelAccessOptions = tmp11[1];
-  let obj3 = importAll(14528);
+  let obj3 = importAll(14541);
   const tmp10 = importDefault;
-  const tmp13 = editStateId(importAll(14528).useIntangibleBenefits(editStateId), 2);
+  const tmp13 = editStateId(importAll(14541).useIntangibleBenefits(editStateId), 2);
   first1 = tmp13[0];
   closure_10 = tmp13[1];
-  const obj4 = importAll(14528);
-  const tmp15 = editStateId(importAll(14528).useTierEmojiIds(editStateId, guildId), 2);
+  const obj4 = importAll(14541);
+  const tmp15 = editStateId(importAll(14541).useTierEmojiIds(editStateId, guildId), 2);
   first2 = tmp15[0];
   callback = tmp15[1];
-  const obj5 = importAll(14528);
-  const obj6 = importAll(14528);
-  [tmp18, tmp19] = editStateId(importAll(14528).useTrialInterval(editStateId), 2);
-  const tmp17 = editStateId(importAll(14528).useTrialInterval(editStateId), 2);
-  const obj7 = importAll(14528);
-  [tmp21, tmp22] = editStateId(importAll(14528).useTrialLimit(editStateId), 2);
-  const tmp20 = editStateId(importAll(14528).useTrialLimit(editStateId), 2);
-  const tmp23 = editStateId(importAll(14528).useChannelAccessFormat(editStateId, guildId), 2);
+  const obj5 = importAll(14541);
+  const obj6 = importAll(14541);
+  [tmp18, tmp19] = editStateId(importAll(14541).useTrialInterval(editStateId), 2);
+  const tmp17 = editStateId(importAll(14541).useTrialInterval(editStateId), 2);
+  const obj7 = importAll(14541);
+  [tmp21, tmp22] = editStateId(importAll(14541).useTrialLimit(editStateId), 2);
+  const tmp20 = editStateId(importAll(14541).useTrialLimit(editStateId), 2);
+  const tmp23 = editStateId(importAll(14541).useChannelAccessFormat(editStateId, guildId), 2);
   const first3 = tmp23[0];
   c13 = tmp25;
-  const obj8 = importAll(14528);
-  roleSubscriptionSettingsDisabled = _require(16883).useRoleSubscriptionSettingsDisabled();
-  const tmp27 = importDefault(16909)(guildId);
+  const obj8 = importAll(14541);
+  roleSubscriptionSettingsDisabled = _require(16899).useRoleSubscriptionSettingsDisabled();
+  const tmp27 = importDefault(16925)(guildId);
   c16 = tmp27;
   let items = [first2, tmp27, true === onlyIntangible, first3 === AllChannelAccessOptions.ALL_CHANNELS_ACCESS, true === onlyChannels, tmp4, first, first1];
   let tmp29 = null;
@@ -352,9 +352,9 @@ function Content(arg0) {
             onDelete() {
               const ref_type = closure_1;
               if (ref_type.ref_type === outer2_10.CHANNEL) {
-                outer1_8((arr) => arr.filter(/* F120517 */ function() { ... }));
+                outer1_8((arr) => arr.filter(/* F120665 */ function() { ... }));
               } else {
-                outer1_10((arr) => arr.filter(/* F120518 */ function() { ... }));
+                outer1_10((arr) => arr.filter(/* F120666 */ function() { ... }));
               }
             },
             onSave(ref_type) {
@@ -386,7 +386,7 @@ function Content(arg0) {
       }
       return tmp3Result;
     },
-    keyExtractor: tmp5(14532).getBenefitKey,
+    keyExtractor: tmp5(14545).getBenefitKey,
     ListHeaderComponent: null,
     renderSectionHeader: null,
     stickySectionHeadersEnabled: false,
@@ -397,13 +397,13 @@ function Content(arg0) {
   };
   let tmp32Result = null;
   if (true !== onlyIntangible) {
-    if (importDefault(16879)(guildId).isFullServerGating) {
+    if (importDefault(16895)(guildId).isFullServerGating) {
       obj1 = { style: null, channelAccessFormat: null, setChannelAccessFormat: null, disabled: null };
       obj1[0] = tmp.allChannelsSwitch;
       obj1[1] = first3;
       obj1[2] = tmp23[1];
       obj1[3] = roleSubscriptionSettingsDisabled;
-      tmp32Result = tmp32(tmp10(16920), obj1);
+      tmp32Result = tmp32(tmp10(16936), obj1);
     } else {
       tmp32Result = null;
     }
@@ -434,15 +434,15 @@ function Content(arg0) {
           obj[2] = outer1_11;
           obj[3] = outer1_12;
           obj[4] = outer1_4;
-          callback(16910).showEditEmojisModal(obj);
-          const obj3 = callback(16910);
+          callback(16926).showEditEmojisModal(obj);
+          const obj3 = callback(16926);
         } else {
           if (tmp === tmp2.CHANNEL) {
             let INTANGIBLE = constants.CHANNEL;
           } else {
             INTANGIBLE = constants.INTANGIBLE;
           }
-          obj = callback(16910);
+          obj = callback(16926);
           obj = { guildId: null, type: null, onSave: null, listingId: null };
           obj[0] = outer1_5;
           obj[1] = INTANGIBLE;
@@ -506,7 +506,7 @@ export const GuildRoleSubscriptionTierChannelBenefitsModal = function GuildRoleS
   const merged = Object.assign(arg0);
   obj.scrollable = false;
   obj.children = callback(GuildRoleSubscriptionTierBenefitsTab, { onlyChannels: true });
-  return callback(importDefault(16892), obj);
+  return callback(importDefault(16908), obj);
 };
 export const GuildRoleSubscriptionTierIntangibleBenefitsModal = function GuildRoleSubscriptionTierIntangibleBenefitsModal(arg0) {
   const obj = { title: null, description: null, canProceedToNextStep: true, nextStep: null };
@@ -518,5 +518,5 @@ export const GuildRoleSubscriptionTierIntangibleBenefitsModal = function GuildRo
   const merged = Object.assign(arg0);
   obj.scrollable = false;
   obj.children = callback(GuildRoleSubscriptionTierBenefitsTab, { onlyIntangible: true });
-  return callback(importDefault(16892), obj);
+  return callback(importDefault(16908), obj);
 };

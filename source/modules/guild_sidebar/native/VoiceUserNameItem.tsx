@@ -1,10 +1,10 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15336
+// Function ID: 15337
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 4342, 4574, 9286, 4338, 4187, 1236, 15323, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 4596, 9300, 4338, 4187, 1236, 15337, 2]
 // Exports: default
 
-// Module 15322 (VoiceUserNameItem)
+// Module 15336 (VoiceUserNameItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -41,9 +41,9 @@ export default function VoiceUserNameItem(arg0) {
   ({ guildId, color, variant } = arg0);
   const tmp = callback3();
   let obj = { userId: user.id, guildId };
-  let obj1 = _require(9286);
-  const displayNameStylesFont = obj1.useDisplayNameStylesFont({ displayNameStyles: importDefault(4574)(obj) });
-  const tmp4 = importDefault(4574)(obj);
+  let obj1 = _require(9300);
+  const displayNameStylesFont = obj1.useDisplayNameStylesFont({ displayNameStyles: importDefault(4596)(obj) });
+  const tmp4 = importDefault(4596)(obj);
   [tmp8, c0] = callback(React.useState(0), 2);
   const tmp7 = callback(React.useState(0), 2);
   [tmp10, c1] = callback(React.useState(0), 2);
@@ -106,7 +106,7 @@ export default function VoiceUserNameItem(arg0) {
     obj3[1] = tmp.tag;
     const obj4 = { userId: null };
     obj4[0] = user.id;
-    obj3[2] = callback2(tmp2(15323), obj4);
+    obj3[2] = callback2(tmp2(15337), obj4);
     tmp12 = callback2(tmp19, obj3);
   }
   items3[1] = tmp12;

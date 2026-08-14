@@ -1,10 +1,10 @@
-// Module ID: 13414
-// Function ID: 13415
+// Module ID: 13426
+// Function ID: 13427
 // Name: NewTag
-// Dependencies: [19, 17, 676, 21, 4342, 712, 4766, 4338, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 4788, 4338, 1236, 2]
 // Exports: default
 
-// Module 13414 (NewTag)
+// Module 13426 (NewTag)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HorizontalGradient } from "ME";
@@ -70,8 +70,8 @@ export default function NewTag(color) {
     obj2.children = intl2.string(require(1236) /* getSystemLocale */.t.y2b7CA);
     obj1[1] = tmp7(require(4338) /* Text */.Text, obj2);
     obj[4] = tmp7(closure_3, obj1);
-    let tmp7Result = tmp7(importDefault(4766), obj);
-    const tmp17 = importDefault(4766);
+    let tmp7Result = tmp7(importDefault(4788), obj);
+    const tmp17 = importDefault(4788);
   } else {
     obj = { style: null, children: null };
     const items3 = [tmp6.tagContainer, containerStyle];

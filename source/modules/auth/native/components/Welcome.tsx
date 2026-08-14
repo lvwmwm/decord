@@ -1,10 +1,10 @@
-// Module ID: 15151
-// Function ID: 15152
+// Module ID: 15165
+// Function ID: 15166
 // Name: InviteCard
-// Dependencies: [19, 17, 15152, 4256, 6967, 11841, 1930, 4327, 9119, 676, 5984, 7241, 21, 4342, 712, 12079, 1236, 38, 1297, 4187, 4338, 12674, 7686, 13278, 1499, 1628, 589, 4771, 6982, 698, 595, 5867, 5756, 15153, 15148, 1500, 5191, 4755, 4072, 5307, 11346, 2]
+// Dependencies: [19, 17, 15166, 4256, 6988, 11857, 1930, 4327, 9133, 676, 6005, 7263, 21, 4342, 712, 12097, 1236, 38, 1297, 4187, 4338, 12692, 7707, 13290, 1499, 1628, 589, 4793, 7004, 698, 595, 5888, 5777, 15167, 15162, 1500, 5212, 4777, 4072, 5328, 11362, 2]
 // Exports: default
 
-// Module 15151 (InviteCard)
+// Module 15165 (InviteCard)
 import nameFromUser from "nameFromUser";
 import get_ActivityIndicator from "module_38";
 import isUnderageAnonymous from "isUnderageAnonymous";
@@ -43,7 +43,7 @@ function InviteCard(invite) {
     if (null != guild) {
       let obj = { guild: null };
       obj[0] = guild;
-      let tmp14 = callback(importDefault(12079), obj);
+      let tmp14 = callback(importDefault(12097), obj);
       const intl2 = require(1236) /* getSystemLocale */.intl;
       let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["3rE1P8"]);
       let name = guild.name;
@@ -51,7 +51,7 @@ function InviteCard(invite) {
       let tmp18 = callback;
     } else if (null != tmp2) {
       importDefault(38)(null != inviter, "Null inviter");
-      obj = { user: null, guildId: "a" };
+      obj = { user: null, guildId: "r" };
       const tmp12 = new createdAt(inviter);
       obj[0] = tmp12;
       tmp14 = callback(require(1297) /* Button */.Avatar, obj);
@@ -64,7 +64,7 @@ function InviteCard(invite) {
     } else if (null == inviter) {
       return null;
     } else {
-      obj = { user: null, guildId: "a" };
+      obj = { user: null, guildId: "r" };
       const tmp33 = new createdAt(inviter);
       obj[0] = tmp33;
       const intl3 = require(1236) /* getSystemLocale */.intl;
@@ -101,7 +101,7 @@ function GuildTemplateCard(arg0) {
   const tmp = createCacheKey();
   let obj = { style: items, children: null };
   items = [tmp.container, style];
-  obj = { source: importDefault(12674) };
+  obj = { source: importDefault(12692) };
   const items1 = [callback(closure_5, obj), ];
   obj = { style: tmp.text, children: null };
   const obj1 = { variant: "text-sm/medium", color: "text-subtle", children: null };
@@ -117,7 +117,7 @@ function Centerpiece(inlineButtons) {
   let guildTemplate;
   let invite;
   ({ invite, guildTemplate } = inlineButtons);
-  const tmp2 = importDefault(7686)();
+  const tmp2 = importDefault(7707)();
   const tmp3 = callback3(tmp2);
   let tmp7 = null != guildTemplate;
   if (tmp7) {
@@ -126,7 +126,7 @@ function Centerpiece(inlineButtons) {
   let obj = { style: items, children: null };
   items = [tmp3.centerpieceContainer];
   obj = { alwaysBounceVertical: false, contentContainerStyle: tmp3.scrollViewContainer, children: null };
-  obj = { style: tmp3.logo, source: require(13278) /* registerAsset */ };
+  obj = { style: tmp3.logo, source: require(13290) /* registerAsset */ };
   const items1 = [callback(closure_5, obj), , ];
   const obj1 = { style: tmp3.header, lineClamp: null, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: null };
   let num = 2;
@@ -223,9 +223,9 @@ export default function Welcome() {
   const items5 = [initialize];
   const stateFromStores3 = obj6.useStateFromStores(items5, () => store2.getCanUseMultiAccountMobile());
   importDefault(stateFromStores[27])(() => {
-    let obj = arr(stateFromStores[28]);
+    let obj = navigation(stateFromStores[28]);
     obj.trackAppUIViewed();
-    const result = arr(stateFromStores[28]).trackAppLaunchCompleted();
+    const result = navigation(stateFromStores[28]).trackAppLaunchCompleted();
     let tmp6 = null;
     if (null != stateFromStores) {
       tmp6 = null;
@@ -233,8 +233,8 @@ export default function Welcome() {
         tmp6 = outer1_19[tmp5.type];
       }
     }
-    const obj2 = arr(stateFromStores[28]);
-    const tmp = arr;
+    const obj2 = navigation(stateFromStores[28]);
+    const tmp = navigation;
     obj = { last_logout_ts: null, invite_type: null, guild_id: null, channel_id: null, invite_code: null };
     const Storage = tmp(tmp2[30]).Storage;
     obj[0] = Storage.get(outer1_15.LOGOUT_TIMESTAMP_KEY);
@@ -284,12 +284,12 @@ export default function Welcome() {
     variant: "primary-overlay",
     onPress: function handlePressRegister() {
       if (nameFromUser) {
-        arr = arr.push(outer1_16.AGE_GATE_UNDERAGE, { fromRegister: true });
+        navigation.navigate(outer1_16.AGE_GATE_UNDERAGE, { fromRegister: true });
       } else {
-        const nextAuthState = arr(stateFromStores[34]).getNextAuthState(outer1_16.WELCOME);
-        const StackActions = arr(stateFromStores[35]).StackActions;
-        arr.dispatch(StackActions.push(nextAuthState));
-        const obj = arr(stateFromStores[34]);
+        const nextAuthState = navigation(stateFromStores[34]).getNextAuthState(outer1_16.WELCOME);
+        const CommonActions = navigation(stateFromStores[35]).CommonActions;
+        navigation.dispatch(CommonActions.navigate(nextAuthState));
+        const obj = navigation(stateFromStores[34]);
         callback(stateFromStores[29]).track(outer1_14.REGISTER_VIEWED);
         const obj2 = callback(stateFromStores[29]);
       }
@@ -303,7 +303,7 @@ export default function Welcome() {
     size: "lg",
     variant: "secondary-overlay",
     onPress: function handlePressLogin() {
-      arr = arr.push(outer1_16.LOGIN);
+      navigation.navigate(outer1_16.LOGIN);
       callback(stateFromStores[29]).track(outer1_14.LOGIN_VIEWED, { source: "welcome" });
     },
     text: null

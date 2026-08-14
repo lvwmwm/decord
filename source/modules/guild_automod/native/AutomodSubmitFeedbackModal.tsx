@@ -1,10 +1,10 @@
-// Module ID: 11317
-// Function ID: 11318
+// Module ID: 11333
+// Function ID: 11334
 // Name: Navbar
-// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 5368, 6051, 1236, 8072, 7025, 1628, 4338, 8012, 1297, 4755, 4539, 11318, 7024, 4061, 5823, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 5389, 6072, 1236, 8093, 7047, 1628, 4338, 8033, 1297, 4777, 4549, 11334, 7046, 4061, 5844, 2]
 // Exports: default
 
-// Module 11317 (Navbar)
+// Module 11333 (Navbar)
 import _slicedToArray from "_slicedToArray";
 import AutomodAlertActionType from "AutomodAlertActionType";
 import { View } from "collectGuildAnalyticsMetadata";
@@ -23,10 +23,10 @@ function Navbar(onClose) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj[1] = onClose.onClose;
-  obj[2] = importDefault(8072);
-  obj[1] = callback2(require(6051) /* HeaderActionButton */.HeaderActionButton, obj);
+  obj[2] = importDefault(8093);
+  obj[1] = callback2(require(6072) /* HeaderActionButton */.HeaderActionButton, obj);
   obj[2] = callback2(View, obj);
-  return callback2(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback2(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 function SubmitFeedbackScreen(onSubmit) {
   let importDefault;
@@ -36,7 +36,7 @@ function SubmitFeedbackScreen(onSubmit) {
   let feedbackOptions;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = require(7025) /* Feedback */;
+  let obj = require(7047) /* Feedback */;
   feedbackOptions = obj.generateFeedbackOptions();
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
@@ -94,7 +94,7 @@ function SubmitFeedbackScreen(onSubmit) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj5[1] = intl3.string(require(1236) /* getSystemLocale */.t.Z6DZZ6);
   obj5[2] = onSubmit.onSubmit;
-  obj3[1] = callback2(require(4755) /* Button */.Button, obj5);
+  obj3[1] = callback2(require(4777) /* Button */.Button, obj5);
   items[3] = callback2(View, obj3);
   obj[1] = items;
   return callback3(View, obj);

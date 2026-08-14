@@ -1,9 +1,9 @@
-// Module ID: 8140
-// Function ID: 8141
+// Module ID: 8161
+// Function ID: 8162
 // Name: saferParse
-// Dependencies: [8141, 4060, 2]
+// Dependencies: [8162, 4060, 2]
 
-// Module 8140 (saferParse)
+// Module 8161 (saferParse)
 function saferParse(arg0, arg1, inline) {
   let ast;
   let hasBailedAst;
@@ -19,10 +19,10 @@ function saferParse(arg0, arg1, inline) {
   `;
     }
     const tmp8 = arg0(text, inline);
-    const flattenAstResult = require(8141) /* collectAst */.flattenAst(inline, tmp8);
-    const obj = require(8141) /* collectAst */;
-    const obj2 = require(8141) /* collectAst */;
-    ({ hasBailedAst, ast } = require(8141) /* collectAst */.constrainAst(flattenAstResult));
+    const flattenAstResult = require(8162) /* collectAst */.flattenAst(inline, tmp8);
+    const obj = require(8162) /* collectAst */;
+    const obj2 = require(8162) /* collectAst */;
+    ({ hasBailedAst, ast } = require(8162) /* collectAst */.constrainAst(flattenAstResult));
     if (tmp6) {
       ast = tmp6(ast, inline.inline, hasBailedAst);
     }

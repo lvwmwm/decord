@@ -1,10 +1,10 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 15975
+// Function ID: 15976
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7166, 3998, 1922, 676, 21, 1297, 4342, 712, 589, 12407, 9131, 12, 1370, 4887, 1236, 4338, 5818, 2]
+// Dependencies: [32, 19, 17, 7188, 3998, 1922, 676, 21, 1297, 4342, 712, 589, 12425, 9145, 12, 1370, 4909, 1236, 4338, 5839, 2]
 // Exports: default
 
-// Module 15957 (UserProfileYourFriendsCard)
+// Module 15975 (UserProfileYourFriendsCard)
 import _slicedToArray from "_slicedToArray";
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import { View } from "getSystemLocale";
@@ -54,9 +54,9 @@ export default function UserProfileYourFriendsCard(arg0) {
   const items1 = [markAllUserIdListsStale];
   stateFromStoresArray1 = _require(589).useStateFromStoresArray(items1, () => friendIDs.getFriendIDs());
   const obj2 = _require(589);
-  gameRelationshipsByType = _require(12407).useGameRelationshipsByType(RelationshipTypes.FRIEND);
+  gameRelationshipsByType = _require(12425).useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const userAffinitiesV2 = _undefined(9131).fetchUserAffinitiesV2();
+    const userAffinitiesV2 = _undefined(9145).fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
   const effect1 = stateFromStoresArray1.useEffect(() => {
@@ -95,7 +95,7 @@ export default function UserProfileYourFriendsCard(arg0) {
         let obj = { style: { transform: items }, children: null };
         obj = { translateX: 4 * (closure_1.length - 1 - arg1) };
         items = [obj];
-        obj = { user: id, guildId: "r", size: "ct", cutout: null };
+        obj = { user: id, guildId: "r", size: true, cutout: true };
         obj[2] = outer1_0(outer1_2[8]).AvatarSizes.XSMALL;
         let tmp3;
         if (arg1 < closure_1.length - 1) {
@@ -118,7 +118,7 @@ export default function UserProfileYourFriendsCard(arg0) {
   obj = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", style: tmp.label, children: null };
   const intl2 = _require(1236).intl;
   obj[4] = intl2.string(_require(1236).t.TdEu5X);
-  const items5 = [callback(_require(4338).Text, obj), memo, callback(_require(5818).ChevronSmallRightIcon, { size: "sm" })];
+  const items5 = [callback(_require(4338).Text, obj), memo, callback(_require(5839).ChevronSmallRightIcon, { size: "sm" })];
   obj[5] = items5;
-  return callback2(_require(4887).PressableOpacity, obj);
+  return callback2(_require(4909).PressableOpacity, obj);
 };

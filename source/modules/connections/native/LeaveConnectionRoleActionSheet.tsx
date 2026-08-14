@@ -1,10 +1,10 @@
-// Module ID: 11019
-// Function ID: 11020
+// Module ID: 11035
+// Function ID: 11036
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 4342, 5437, 4338, 1236, 4755, 2]
+// Dependencies: [19, 17, 21, 4342, 5458, 4338, 1236, 4777, 2]
 // Exports: default
 
-// Module 11019 (LeaveConnectionRoleActionSheet)
+// Module 11035 (LeaveConnectionRoleActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,9 +33,9 @@ export default function LeaveConnectionRoleActionSheet(onLeaveRolePressed) {
   const obj3 = { variant: "destructive", onPress: onLeaveRolePressed.onLeaveRolePressed, text: null, grow: true };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t["+Oi4XF"]);
-  obj2[1] = callback(require(4755) /* Button */.Button, obj3);
+  obj2[1] = callback(require(4777) /* Button */.Button, obj3);
   items[2] = callback(View, obj2);
   obj[1] = items;
   obj[0] = callback2(View, obj);
-  return callback(require(5437) /* Background */.BottomSheet, obj);
+  return callback(require(5458) /* Background */.BottomSheet, obj);
 };

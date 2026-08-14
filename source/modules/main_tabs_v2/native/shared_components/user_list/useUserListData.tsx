@@ -1,10 +1,10 @@
-// Module ID: 9671
-// Function ID: 9672
+// Module ID: 9682
+// Function ID: 9683
 // Name: _toPropertyKey
-// Dependencies: [109, 32, 19, 7169, 7165, 7166, 1930, 3998, 1922, 676, 3985, 7164, 7357, 709, 7168, 5271, 12, 1236, 9131, 2]
+// Dependencies: [109, 32, 19, 7191, 7187, 7188, 1930, 3998, 1922, 676, 3985, 7186, 7379, 709, 7190, 5292, 12, 1236, 9145, 2]
 // Exports: default
 
-// Module 9671 (_toPropertyKey)
+// Module 9682 (_toPropertyKey)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import closure_5 from "set";
@@ -444,7 +444,7 @@ prototype["subscribe"] = function subscribe(onUpdate) {
   self.onUpdate = onUpdate;
   let userSearchContext = null;
   if (flag) {
-    userSearchContext = importDefault(7357).getUserSearchContext((results) => {
+    userSearchContext = importDefault(7379).getUserSearchContext((results) => {
       results = results.results;
       let items;
       if (items.currentQuery === results.query) {
@@ -477,7 +477,7 @@ prototype["subscribe"] = function subscribe(onUpdate) {
         }
       }
     }, 20);
-    const obj = importDefault(7357);
+    const obj = importDefault(7379);
   }
   self.userSearchContext = userSearchContext;
   const subscription = importDefault(709).subscribe("POST_CONNECTION_OPEN", self.handlePostConnectionOpen);
@@ -539,7 +539,7 @@ prototype["unsubscribe"] = function unsubscribe() {
 };
 prototype["fetch"] = function fetch(toLocaleLowerCase) {
   const self = this;
-  let obj = require(7168) /* cleanString */;
+  let obj = require(7190) /* cleanString */;
   const cleanStringResult = obj.cleanString(toLocaleLowerCase);
   if ("" === cleanStringResult) {
     const userSearchContext2 = self.userSearchContext;
@@ -548,8 +548,8 @@ prototype["fetch"] = function fetch(toLocaleLowerCase) {
     }
   } else {
     if (arg1) {
-      const members = importDefault(5271).requestMembers(null, cleanStringResult);
-      const obj2 = importDefault(5271);
+      const members = importDefault(5292).requestMembers(null, cleanStringResult);
+      const obj2 = importDefault(5292);
     }
     const userSearchContext = self.userSearchContext;
     if (userSearchContext != null) {
@@ -564,7 +564,7 @@ prototype["filter"] = function filter(toLocaleLowerCase) {
   let self = this;
   self = this;
   let _require = toLocaleLowerCase;
-  let obj = _require(7168);
+  let obj = _require(7190);
   const cleanStringResult = obj.cleanString(toLocaleLowerCase);
   _require = cleanStringResult;
   if (this.currentQuery === cleanStringResult) {
@@ -645,7 +645,7 @@ prototype["initializeUsersFromStores"] = function initializeUsersFromStores() {
 };
 prototype["initializeUsersFromCache"] = function initializeUsersFromCache() {
   const self = this;
-  const all = importDefault(7164).getAll();
+  const all = importDefault(7186).getAll();
   return all.then((arg0) => {
     while (tmp !== undefined) {
       let tmp3 = self;
@@ -655,7 +655,7 @@ prototype["initializeUsersFromCache"] = function initializeUsersFromCache() {
   });
 };
 prototype["updateUser"] = function updateUser(id) {
-  if (importDefault(7164).shouldUseCache) {
+  if (importDefault(7186).shouldUseCache) {
     return false;
   } else {
     const self = this;
@@ -664,7 +664,7 @@ prototype["updateUser"] = function updateUser(id) {
         const indexMap = self.indexMap;
         return indexMap.delete(id);
       }
-      obj = require(7168) /* cleanString */;
+      obj = require(7190) /* cleanString */;
     }
     const value = self.getItem(id);
     if (null == value) {
@@ -685,7 +685,7 @@ prototype["getItem"] = function getItem(closure_0) {
     return null;
   } else {
     const self = this;
-    names = require(7168) /* cleanString */.getNames(user);
+    names = require(7190) /* cleanString */.getNames(user);
     ({ nick, names } = names);
     let obj = { user: null, names: null, affinity: null, firstMatch: null };
     obj[0] = user;
@@ -699,9 +699,9 @@ prototype["getItem"] = function getItem(closure_0) {
       nick = isMatch(names, self.currentQuery, { contains: true });
     }
     obj[3] = nick;
-    const obj4 = require(7168) /* cleanString */;
+    const obj4 = require(7190) /* cleanString */;
     const tmp12 = require;
-    const relationshipType = require(7168) /* cleanString */.getRelationshipType(user.id);
+    const relationshipType = require(7190) /* cleanString */.getRelationshipType(user.id);
     if (relationshipType !== RelationshipTypes.FRIEND) {
       const gameFriendsForUser = authStore.getGameFriendsForUser(closure_0);
       if (gameFriendsForUser.length > 0) {

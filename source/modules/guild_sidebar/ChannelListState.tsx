@@ -1,9 +1,9 @@
-// Module ID: 7035
-// Function ID: 7036
+// Module ID: 7057
+// Function ID: 7058
 // Name: computeSubtitle
-// Dependencies: [1390, 4383, 7036, 1981, 7033, 1982, 7037, 7038, 7039, 5263, 3991, 1395, 5300, 1391, 7034, 1910, 3989, 4357, 1979, 4540, 4361, 4417, 7040, 7041, 676, 1398, 505, 12, 7042, 5884, 5948, 5927, 7043, 38, 1370, 11, 4528, 2]
+// Dependencies: [1390, 4383, 7058, 1981, 7055, 1982, 7059, 7060, 7061, 5284, 3991, 1395, 5321, 1391, 7056, 1910, 3989, 4357, 1979, 4550, 4361, 4417, 7062, 7063, 676, 1398, 505, 12, 7064, 5905, 5969, 5948, 7065, 38, 1370, 11, 4528, 2]
 
-// Module 7035 (computeSubtitle)
+// Module 7057 (computeSubtitle)
 import participantFromServer from "participantFromServer";
 import addApplication from "addApplication";
 import handleConnectionReset from "handleConnectionReset";

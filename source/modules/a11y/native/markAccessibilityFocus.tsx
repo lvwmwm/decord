@@ -1,10 +1,10 @@
-// Module ID: 4687
-// Function ID: 4688
+// Module ID: 4709
+// Function ID: 4710
 // Name: markAccessibilityFocus
 // Dependencies: [17, 500, 2]
 // Exports: default
 
-// Module 4687 (markAccessibilityFocus)
+// Module 4709 (markAccessibilityFocus)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/a11y/native/markAccessibilityFocus.tsx");

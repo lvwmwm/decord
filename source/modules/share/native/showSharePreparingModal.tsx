@@ -1,10 +1,10 @@
-// Module ID: 8977
-// Function ID: 8978
+// Module ID: 8991
+// Function ID: 8992
 // Name: showSharePreparingModal
-// Dependencies: [8975, 4550, 8978, 2007, 2]
+// Dependencies: [8989, 4572, 8992, 2007, 2]
 // Exports: showSharePreparingModal
 
-// Module 8977 (showSharePreparingModal)
+// Module 8991 (showSharePreparingModal)
 import { SHARE_PREPARING_MODAL_KEY } from "SHARE_PREPARING_MODAL_KEY";
 
 const result = require("SharePreparingModal").fileFinishedImporting("modules/share/native/showSharePreparingModal.tsx");

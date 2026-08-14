@@ -1,9 +1,9 @@
-// Module ID: 6998
-// Function ID: 6999
+// Module ID: 7020
+// Function ID: 7021
 // Name: getAll
-// Dependencies: [5, 4540, 3, 1955, 12, 2]
+// Dependencies: [5, 4550, 3, 1955, 12, 2]
 
-// Module 6998 (getAll)
+// Module 7020 (getAll)
 import closure_2 from "set";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import set from "timestamp";

@@ -1,10 +1,10 @@
-// Module ID: 8708
-// Function ID: 8709
+// Module ID: 8722
+// Function ID: 8723
 // Name: AnimatedRenderItem
-// Dependencies: [19, 21, 4083, 4689, 2]
+// Dependencies: [19, 21, 4083, 4711, 2]
 // Exports: default
 
-// Module 8708 (AnimatedRenderItem)
+// Module 8722 (AnimatedRenderItem)
 import noop from "noop";
 import jsxProd from "jsxProd";
 import { createElement } from "noop";

@@ -1,10 +1,10 @@
-// Module ID: 10606
-// Function ID: 10607
+// Module ID: 10622
+// Function ID: 10623
 // Name: confirmActivityChangeModal
-// Dependencies: [3998, 1922, 4535, 4683, 1236, 1903, 2]
+// Dependencies: [3998, 1922, 4535, 4705, 1236, 1903, 2]
 // Exports: default
 
-// Module 10606 (confirmActivityChangeModal)
+// Module 10622 (confirmActivityChangeModal)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -36,7 +36,7 @@ export default function confirmActivityChangeModal(name, channel) {
     name = intl5.string(tmp6(1236).t.G99XFs);
   }
   obj = { currentApplicationName: name, currentApplicationChannelName: null };
-  const obj2 = importDefault(4683);
+  const obj2 = importDefault(4705);
   if (tmp6Result.isNullOrEmpty(str)) {
     const intl6 = tmp6(1236).intl;
     str = intl6.string(tmp6(1236).t.OGUjmt);

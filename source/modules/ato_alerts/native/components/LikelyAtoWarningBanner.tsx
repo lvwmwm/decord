@@ -1,9 +1,9 @@
-// Module ID: 10308
-// Function ID: 10309
+// Module ID: 10322
+// Function ID: 10323
 // Name: LikelyAtoWarningBanner
-// Dependencies: [19, 9717, 10309, 676, 685, 21, 4342, 712, 10310, 10311, 4550, 9869, 7829, 4058, 10312, 1236, 10315, 2007, 4338, 10322, 2]
+// Dependencies: [19, 9728, 10323, 676, 685, 21, 4342, 712, 10324, 10325, 4572, 9880, 7850, 4058, 10326, 1236, 10329, 2007, 4338, 10336, 2]
 
-// Module 10308 (LikelyAtoWarningBanner)
+// Module 10322 (LikelyAtoWarningBanner)
 import LikelyAtoMoreTipsModalActionItems from "LikelyAtoMoreTipsModalActionItems";
 import { SafetyWarningTypes } from "handleConnectionOpen";
 import LIKELY_ATO_MORE_TIPS_MODAL_KEY from "LIKELY_ATO_MORE_TIPS_MODAL_KEY";
@@ -26,7 +26,7 @@ class LikelyAtoWarningBanner {
     senderId = global.senderId;
     handleLearnMore = undefined;
     c4 = undefined;
-    f85007 = undefined;
+    f85097 = undefined;
     handleLearnMore = function handleLearnMore() {
       let obj = channelId(senderId[8]);
       obj = { channelId, warningId, senderId, warningType: callback.LIKELY_ATO, cta: channelId(senderId[8]).CtaEventTypes.USER_MODAL_LEARN_MORE };
@@ -58,7 +58,7 @@ class LikelyAtoWarningBanner {
     items2[1] = senderId;
     items2[2] = warningId;
     items2[3] = callback;
-    f85007 = handleLearnMore.useCallback((cta) => {
+    f85097 = handleLearnMore.useCallback((cta) => {
       let obj = channelId(senderId[11]);
       obj = { channelId, guildId: null, muteDurationSeconds: outer1_9.ALWAYS };
       const result = obj.handleMuteSettingPress(obj);

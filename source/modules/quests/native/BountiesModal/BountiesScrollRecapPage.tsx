@@ -1,10 +1,10 @@
-// Module ID: 14358
-// Function ID: 14359
+// Module ID: 14371
+// Function ID: 14372
 // Name: BountiesRecapOrbsBackground
-// Dependencies: [19, 17, 4334, 21, 712, 4342, 500, 9436, 14359, 8919, 14360, 1628, 589, 14361, 4338, 1236, 9458, 4755, 2]
+// Dependencies: [19, 17, 4334, 21, 712, 4342, 500, 9450, 14372, 8933, 14373, 1628, 589, 14374, 4338, 1236, 9471, 4777, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 14358 (BountiesRecapOrbsBackground)
+// Module 14371 (BountiesRecapOrbsBackground)
 import "noop";
 import get_ActivityIndicator from "Button";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -25,19 +25,19 @@ function BountiesRecapOrbsBackground(arg0) {
     obj = { style: null, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: null };
     obj[0] = style;
     obj = { url: null, style: null, autoplay: null };
-    obj[0] = importDefault(14359);
+    obj[0] = importDefault(14372);
     obj[1] = closure_3.absoluteFillObject;
     obj[2] = !reducedMotion;
-    obj[4] = tmp3(tmp(9436).APNGPlayer, obj);
+    obj[4] = tmp3(tmp(9450).APNGPlayer, obj);
     let tmp3Result = tmp3(closure_4, obj);
   } else {
     const obj1 = { source: null, style: null, resizeMode: "contain", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
     const obj2 = { uri: null };
-    obj2[0] = importDefault(14360);
+    obj2[0] = importDefault(14373);
     obj1[0] = obj2;
     obj1[1] = style;
     obj1[3] = reducedMotion;
-    tmp3Result = tmp3(tmp(8919).VideoComponent, obj1);
+    tmp3Result = tmp3(tmp(8933).VideoComponent, obj1);
   }
   return tmp3Result;
 }
@@ -81,11 +81,11 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   obj = { style: closure_3.absoluteFillObject, pointerEvents: "none", children: null };
   const obj1 = { source: null, style: null, resizeMode: "cover", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
   const obj2 = { uri: null };
-  obj2[0] = importDefault(14361);
+  obj2[0] = importDefault(14374);
   obj1[0] = obj2;
   obj1[1] = closure_3.absoluteFillObject;
   obj1[3] = stateFromStores;
-  const items2 = [callback(require(8919) /* VideoComponent */.VideoComponent, obj1), callback(BountiesRecapOrbsBackground, { style: tmp.orbsBackground, reducedMotion: stateFromStores })];
+  const items2 = [callback(require(8933) /* VideoComponent */.VideoComponent, obj1), callback(BountiesRecapOrbsBackground, { style: tmp.orbsBackground, reducedMotion: stateFromStores })];
   obj[2] = items2;
   const items3 = [callback2(closure_4, obj), ];
   const obj4 = { style: tmp.content, pointerEvents: "box-none", children: null };
@@ -96,7 +96,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const items4 = [callback(require(4338) /* Text */.Text, obj6), , ];
   const obj7 = { accessible: true, accessibilityRole: "text", accessibilityLabel: "+" + orbAmount, children: null };
   const obj8 = { style: tmp.titleRow, children: null };
-  const items5 = [callback(require(9458) /* OrbsIcon */.OrbsIcon, { size: "lg", color: "icon-strong", accessible: false }), ];
+  const items5 = [callback(require(9471) /* OrbsIcon */.OrbsIcon, { size: "lg", color: "icon-strong", accessible: false }), ];
   const obj9 = { variant: "display-lg", color: "text-strong", accessible: false, style: tmp.orbAmount, children: null };
   obj9[4] = "+" + orbAmount;
   items5[1] = callback(require(4338) /* Text */.Text, obj9);
@@ -119,7 +119,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj13[2] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
   obj13[4] = onClose;
-  obj11[1] = callback(require(4755) /* Button */.Button, obj13);
+  obj11[1] = callback(require(4777) /* Button */.Button, obj13);
   items6[1] = callback(closure_4, obj11);
   obj4[2] = items6;
   items3[1] = callback2(closure_4, obj4);

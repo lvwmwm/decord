@@ -1,10 +1,10 @@
-// Module ID: 8505
-// Function ID: 8506
+// Module ID: 8527
+// Function ID: 8528
 // Name: getChangeEmailReasonDisplayText
-// Dependencies: [8504, 1236, 2]
+// Dependencies: [8526, 1236, 2]
 // Exports: getChangeEmailReasonDisplayText
 
-// Module 8505 (getChangeEmailReasonDisplayText)
+// Module 8527 (getChangeEmailReasonDisplayText)
 import { ChangeEmailReasons } from "ChangeEmailReasons";
 
 let closure_2 = {

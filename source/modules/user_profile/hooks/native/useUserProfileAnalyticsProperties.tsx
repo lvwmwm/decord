@@ -1,10 +1,10 @@
-// Module ID: 8844
-// Function ID: 8845
+// Module ID: 8858
+// Function ID: 8859
 // Name: useUserProfileAnalyticsProperties
-// Dependencies: [19, 8834, 2]
+// Dependencies: [19, 8848, 2]
 // Exports: default
 
-// Module 8844 (useUserProfileAnalyticsProperties)
+// Module 8858 (useUserProfileAnalyticsProperties)
 import noop from "noop";
 import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY";
 

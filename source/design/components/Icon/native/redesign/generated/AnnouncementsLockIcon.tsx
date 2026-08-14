@@ -1,10 +1,10 @@
-// Module ID: 4862
-// Function ID: 4863
+// Module ID: 4884
+// Function ID: 4885
 // Name: AnnouncementsLockIcon
-// Dependencies: [19, 21, 712, 4064, 4839, 2]
+// Dependencies: [19, 21, 712, 4064, 4861, 2]
 // Exports: AnnouncementsLockIcon
 
-// Module 4862 (AnnouncementsLockIcon)
+// Module 4884 (AnnouncementsLockIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const AnnouncementsLockIcon = function AnnouncementsLockIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4839) /* registerAsset */;
+  obj[0] = require(4861) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

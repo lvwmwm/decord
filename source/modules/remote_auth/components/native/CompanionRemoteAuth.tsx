@@ -1,10 +1,10 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15204
+// Function ID: 15205
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 676, 21, 4342, 15191, 5863, 4338, 1236, 4755, 1297, 4187, 1499, 4577, 698, 15192, 15196, 8548, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 15205, 5884, 4338, 1236, 4777, 1297, 4187, 1499, 4599, 698, 15206, 15210, 8570, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 15190 (CompanionRemoteAuth)
+// Module 15204 (CompanionRemoteAuth)
 import noop from "noop";
 import { View } from "AuthFormView";
 import ME from "ME";
@@ -27,7 +27,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   let obj = navigation(1499);
   navigation = obj.useNavigation();
   let obj1 = React;
-  const context = React.useContext(fingerprint(4577));
+  const context = React.useContext(fingerprint(4599));
   const callback = React.useCallback((arg0) => {
     let tmp = arg0;
     let obj = fingerprint(table[14]);
@@ -38,14 +38,14 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     obj[4] = tmp;
     obj.track(constants.LOGIN_SUCCESSFUL, obj);
   }, []);
-  let obj2 = navigation(15192);
+  let obj2 = navigation(15206);
   const state = obj2.useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = React.useCallback(() => {
     navigation.goBack();
   }, items);
   fingerprint = null;
-  if (state.step === navigation(15191).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(15205).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -61,14 +61,14 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     }
   }, items1);
   obj = { headerText: null, children: null };
-  let tmp5Result = tmp5(8548);
+  let tmp5Result = tmp5(8570);
   const intl = tmp2(1236).intl;
   obj[0] = intl.string(navigation(1236).t["7fNJgA"]);
   obj = { style: tmp.statusContainer, children: null };
   const step = state.step;
-  if (navigation(15191).RemoteAuthStep.INITIALIZING !== step) {
-    if (tmp2(15191).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (tmp2(15191).RemoteAuthStep.PENDING_TICKET === step) {
+  if (navigation(15205).RemoteAuthStep.INITIALIZING !== step) {
+    if (tmp2(15205).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (tmp2(15205).RemoteAuthStep.PENDING_TICKET === step) {
         const user = state.user;
         obj1 = { children: null };
         obj2 = { style: null, user: null, size: null, guildId: null };
@@ -95,12 +95,12 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
         const intl4 = tmp2(1236).intl;
         obj7[2] = intl4.string(tmp2(1236).t["ETE/oC"]);
         obj7[3] = callback1;
-        obj6[1] = tmp11(tmp2(4755).Button, obj7);
+        obj6[1] = tmp11(tmp2(4777).Button, obj7);
         items2[3] = tmp11(tmp13, obj6);
         obj1[0] = items2;
         let tmp11Result = callback(closure_8, obj1);
-      } else if (tmp2(15191).RemoteAuthStep.PENDING_LOGIN === step) {
-        tmp11Result = tmp11(tmp2(5863).ActivityIndicator, {});
+      } else if (tmp2(15205).RemoteAuthStep.PENDING_LOGIN === step) {
+        tmp11Result = tmp11(tmp2(5884).ActivityIndicator, {});
       }
     }
     obj[1] = tmp11Result;
@@ -108,7 +108,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     return tmp11(tmp5Result, obj);
   }
   const obj8 = { children: null };
-  const items3 = [closure_7(navigation(5863).ActivityIndicator, {}), , ];
+  const items3 = [closure_7(navigation(5884).ActivityIndicator, {}), , ];
   const obj9 = { style: tmp.statusText, variant: "text-md/medium", color: "text-muted", children: null };
   const intl5 = tmp2(1236).intl;
   obj9[3] = intl5.string(navigation(1236).t["7LkwqE"]);
@@ -118,7 +118,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   const intl6 = tmp2(1236).intl;
   obj11[2] = intl6.string(navigation(1236).t["ETE/oC"]);
   obj11[3] = callback1;
-  obj10[1] = closure_7(navigation(4755).Button, obj11);
+  obj10[1] = closure_7(navigation(4777).Button, obj11);
   items3[2] = closure_7(View, obj10);
   obj8[0] = items3;
   tmp11Result = callback(closure_8, obj8);

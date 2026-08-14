@@ -1,10 +1,10 @@
-// Module ID: 11022
-// Function ID: 11023
+// Module ID: 11038
+// Function ID: 11039
 // Name: PaypalVanityTag
-// Dependencies: [19, 17, 5166, 21, 4342, 712, 1236, 11023, 11024, 12, 1898, 4338, 1297, 5165, 2]
+// Dependencies: [19, 17, 5188, 21, 4342, 712, 1236, 11039, 11040, 12, 1898, 4338, 1297, 5187, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11022 (PaypalVanityTag)
+// Module 11038 (PaypalVanityTag)
 import "noop";
 import { View } from "get ActivityIndicator";
 import OperatorTypes from "OperatorTypes";
@@ -92,7 +92,7 @@ function VanityDate(arg0) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { value: null, name: null };
   const tmp = createCacheKey();
-  obj[0] = require(5165) /* officialApplicationIds */.getCreatedAtDate(date, locale);
+  obj[0] = require(5187) /* officialApplicationIds */.getCreatedAtDate(date, locale);
   obj[1] = label;
   obj[3] = intl.format(require(1236) /* getSystemLocale */.t.HLoinF, obj);
   return callback(require(4338) /* Text */.Text, obj);
@@ -226,7 +226,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     obj = { count: null };
     obj[0] = NumberResult1;
     obj[1] = intl.format(require(1236) /* getSystemLocale */.t.Y88M5x, obj);
-    obj[2] = importDefault(11023);
+    obj[2] = importDefault(11039);
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.HKUEZo);
     items.push(callback(VanityItem, obj, tmp2.STEAM_ITEM_COUNT_DOTA2));
@@ -238,7 +238,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const obj2 = { count: null };
     obj2[0] = NumberResult2;
     obj1[1] = intl3.format(require(1236) /* getSystemLocale */.t.Y88M5x, obj2);
-    obj1[2] = importDefault(11024);
+    obj1[2] = importDefault(11040);
     const intl4 = require(1236) /* getSystemLocale */.intl;
     obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t.C8p1Sh);
     items.push(callback(VanityItem, obj1, tmp2.STEAM_ITEM_COUNT_TF2));

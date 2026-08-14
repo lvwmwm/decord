@@ -1,30 +1,14 @@
 // Module ID: 13689
 // Function ID: 13690
-// Dependencies: [13632, 13652]
+// Dependencies: [13690]
 
 // Module 13689
-import getOwnPropertyDescriptor from "getOwnPropertyDescriptor";
 
-if (getOwnPropertyDescriptor) {
-  const _Object = Object;
-  getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-}
-const tmp = require("call")(prototype, "name");
-let tmp2 = tmp;
-if (tmp) {
-  tmp2 = "something" === function something() {
-
-  }.name;
-}
-let tmp3 = tmp;
-if (tmp) {
-  const _module = require("getOwnPropertyDescriptor");
-  let tmp5 = !_module;
-  if (_module) {
-    tmp5 = require("getOwnPropertyDescriptor") && getOwnPropertyDescriptor(prototype, "name").configurable;
-    const tmp6 = require("getOwnPropertyDescriptor") && getOwnPropertyDescriptor(prototype, "name").configurable;
+export default (arg0) => {
+  const tmp = require(13690)(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
   }
-  tmp3 = tmp5;
-}
-
-export default { EXISTS: tmp, PROPER: tmp2, CONFIGURABLE: tmp3 };
+  return num;
+};

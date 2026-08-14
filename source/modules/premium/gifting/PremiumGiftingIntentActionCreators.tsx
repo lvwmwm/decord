@@ -1,10 +1,10 @@
-// Module ID: 7369
-// Function ID: 7370
+// Module ID: 7391
+// Function ID: 7392
 // Name: fetchAndReconcileGiftIntentDismissals
-// Dependencies: [7166, 1218, 4562, 1924, 676, 530, 709, 1208, 698, 2]
+// Dependencies: [7188, 1218, 4584, 1924, 676, 530, 709, 1208, 698, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 7369 (fetchAndReconcileGiftIntentDismissals)
+// Module 7391 (fetchAndReconcileGiftIntentDismissals)
 import recomputeAffinities from "recomputeAffinities";
 import fetchFingerprint from "fetchFingerprint";
 import reinjectEphemerals from "reinjectEphemerals";

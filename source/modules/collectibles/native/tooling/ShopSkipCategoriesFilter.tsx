@@ -1,10 +1,10 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15124
+// Function ID: 15125
 // Name: ShopSkipCategoriesFilter
-// Dependencies: [19, 17, 7049, 21, 4342, 712, 589, 4753, 4338, 7048, 2]
+// Dependencies: [19, 17, 7071, 21, 4342, 712, 589, 4775, 4338, 7070, 2]
 // Exports: ShopSkipCategoriesFilter
 
-// Module 15110 (ShopSkipCategoriesFilter)
+// Module 15124 (ShopSkipCategoriesFilter)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -95,6 +95,6 @@ export const ShopSkipCategoriesFilter = function ShopSkipCategoriesFilter() {
   obj1[1] = items3;
   items1[1] = closure_6(closure_2, obj1);
   obj4[1] = items1;
-  obj[1] = closure_6(stateFromStores(4753).Stack, obj4);
+  obj[1] = closure_6(stateFromStores(4775).Stack, obj4);
   return callback(closure_2, obj);
 };

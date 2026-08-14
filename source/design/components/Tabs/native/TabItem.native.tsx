@@ -1,10 +1,10 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 12053
+// Function ID: 12054
 // Name: TabItemCount
-// Dependencies: [19, 17, 21, 4083, 4342, 712, 4754, 4338, 500, 1236, 2]
+// Dependencies: [19, 17, 21, 4083, 4342, 712, 4776, 4338, 500, 1236, 2]
 // Exports: TabItem
 
-// Module 12037 (TabItemCount)
+// Module 12053 (TabItemCount)
 import noop from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

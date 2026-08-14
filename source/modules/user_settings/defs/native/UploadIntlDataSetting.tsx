@@ -1,9 +1,9 @@
-// Module ID: 14793
-// Function ID: 14794
+// Module ID: 14807
+// Function ID: 14808
 // Name: _serializeIntlData
-// Dependencies: [5, 17, 676, 21, 644, 705, 1625, 1239, 1273, 1236, 500, 530, 4062, 4298, 10407, 13943, 14154, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 1625, 1239, 1273, 1236, 500, 530, 4062, 4298, 10421, 13955, 14167, 2]
 
-// Module 14793 (_serializeIntlData)
+// Module 14807 (_serializeIntlData)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "set";
 import ME from "ME";

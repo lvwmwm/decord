@@ -1,10 +1,10 @@
-// Module ID: 16867
-// Function ID: 16868
+// Module ID: 16883
+// Function ID: 16884
 // Name: useHighlightedCreatorGuildDetails
-// Dependencies: [19, 676, 16868, 1435, 2]
+// Dependencies: [19, 676, 16884, 1435, 2]
 // Exports: default
 
-// Module 16867 (useHighlightedCreatorGuildDetails)
+// Module 16883 (useHighlightedCreatorGuildDetails)
 import noop from "noop";
 import { MarketingURLs } from "ME";
 

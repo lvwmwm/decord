@@ -1,10 +1,10 @@
-// Module ID: 9721
-// Function ID: 9722
+// Module ID: 9732
+// Function ID: 9733
 // Name: PencilIcon
-// Dependencies: [19, 21, 712, 4064, 8119, 2]
+// Dependencies: [19, 21, 712, 4064, 8140, 2]
 // Exports: PencilIcon
 
-// Module 9721 (PencilIcon)
+// Module 9732 (PencilIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const PencilIcon = function PencilIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8119) /* registerAsset */;
+  obj[0] = require(8140) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

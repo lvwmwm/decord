@@ -1,10 +1,10 @@
-// Module ID: 12151
-// Function ID: 12152
+// Module ID: 12169
+// Function ID: 12170
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 21, 4342, 5437, 5436, 1236, 4338, 2]
+// Dependencies: [19, 21, 4342, 5458, 5457, 1236, 4338, 2]
 // Exports: default
 
-// Module 12151 (HubEmailConnectionDescriptionActionsheet)
+// Module 12169 (HubEmailConnectionDescriptionActionsheet)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -22,7 +22,7 @@ export default function HubEmailConnectionDescriptionActionsheet() {
   obj = { title: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["48kg+O"]);
-  const items = [callback(require(5436) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), , ];
+  const items = [callback(require(5457) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), , ];
   obj = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.O1k9XX);
@@ -32,5 +32,5 @@ export default function HubEmailConnectionDescriptionActionsheet() {
   obj1[3] = intl3.string(require(1236) /* getSystemLocale */.t.FV5dvh);
   items[2] = callback(require(4338) /* Text */.Text, obj1);
   obj[0] = items;
-  return callback2(require(5437) /* Background */.BottomSheet, obj);
+  return callback2(require(5458) /* Background */.BottomSheet, obj);
 };

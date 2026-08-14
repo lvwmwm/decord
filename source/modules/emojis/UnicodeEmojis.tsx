@@ -1,7 +1,7 @@
 // Module ID: 4002
 // Function ID: 4003
 // Name: parseRawEmojiObject
-// Dependencies: [4003, 4004, 4005, 4006, 12, 13400, 2]
+// Dependencies: [4003, 4004, 4005, 4006, 12, 13412, 2]
 // Exports: asUnicodeEmoji
 
 // Module 4002 (parseRawEmojiObject)
@@ -484,7 +484,7 @@ let obj = {
     }
     const call = hasOwnProperty.call;
     if (typeof call === "unknown" ? hasOwnProperty(key10009) : call(tmp3, key10009)) {
-      str = require(13400)[key10009];
+      str = require(13412)[key10009];
     }
     let combined = str;
     if (flag) {

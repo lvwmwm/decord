@@ -1,8 +1,8 @@
-// Module ID: 8771
-// Function ID: 8772
-// Dependencies: [19, 5216, 5220, 8689, 1338, 21, 4342, 4083, 8772, 5439, 1624, 4002, 8590, 8761, 2]
+// Module ID: 8785
+// Function ID: 8786
+// Dependencies: [19, 5237, 5241, 8703, 1338, 21, 4342, 4083, 8786, 5460, 1624, 4002, 8612, 8775, 2]
 
-// Module 8771
+// Module 8785
 import importAllResult from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { EmojiCategoryTypes } from "EmojiCategoryTypes";
@@ -79,7 +79,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
         tmp = analyticsLocations < 0;
       }
       if (!tmp) {
-        tmp = f81958;
+        tmp = f82074;
       }
       if (!tmp) {
         num2 = 0;

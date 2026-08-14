@@ -1,10 +1,10 @@
-// Module ID: 14037
-// Function ID: 14038
+// Module ID: 14050
+// Function ID: 14051
 // Name: PasskeyUpsellView
-// Dependencies: [32, 19, 17, 14033, 676, 1388, 21, 4342, 712, 1499, 1236, 14038, 14039, 5310, 1993, 5368, 14042, 4338, 500, 4755, 8525, 2]
+// Dependencies: [32, 19, 17, 14046, 676, 1388, 21, 4342, 712, 1499, 1236, 14051, 14052, 5331, 1993, 5389, 14055, 4338, 500, 4777, 8547, 2]
 // Exports: default
 
-// Module 14037 (PasskeyUpsellView)
+// Module 14050 (PasskeyUpsellView)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "Text";
@@ -55,9 +55,9 @@ export default function PasskeyUpsellView() {
     navigation.push(outer1_8.NAME, obj);
   }
   function onCancel() {
-    callback(14038).markDismissed(constants.USER_DISMISS);
-    const obj = callback(14038);
-    const result = callback(14039).closePasskeyUpsellModal();
+    callback(14051).markDismissed(constants.USER_DISMISS);
+    const obj = callback(14051);
+    const result = callback(14052).closePasskeyUpsellModal();
   }
   let obj = navigation(1499);
   navigation = obj.useNavigation();
@@ -77,7 +77,7 @@ export default function PasskeyUpsellView() {
   obj = { contentContainerStyle: tmp4.scrollViewContainer, children: null };
   obj1 = { style: tmp4.headerContainer, children: null };
   const obj2 = { source: null, style: null };
-  obj2[0] = importDefault(14042);
+  obj2[0] = importDefault(14055);
   obj2[1] = tmp4.headerImage;
   const items1 = [callback(closure_6, obj2), , ];
   const obj3 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp4.headerText, children: null };
@@ -143,7 +143,7 @@ export default function PasskeyUpsellView() {
   } else {
     string3Result = string3(t3.NIFmCJ);
   }
-  items6[1] = callback(navigation(4755).Button, {
+  items6[1] = callback(navigation(4777).Button, {
     text: string3Result,
     onPress() {
       let obj = outer1_1(outer1_2[11]);
@@ -164,10 +164,10 @@ export default function PasskeyUpsellView() {
   } else {
     string4Result = string4(t4["7J6/nG"]);
   }
-  items6[2] = callback(navigation(4755).Button, { text: string4Result, onPress: onCancel, size: "lg", variant: "secondary", grow: true });
+  items6[2] = callback(navigation(4777).Button, { text: string4Result, onPress: onCancel, size: "lg", variant: "secondary", grow: true });
   obj12[1] = items6;
   items2[2] = closure_12(closure_5, obj12);
   obj[1] = items2;
   obj[2] = closure_12(tmp12, obj);
-  return callback(navigation(5368).SafeAreaPaddingView, obj);
+  return callback(navigation(5389).SafeAreaPaddingView, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10002
-// Function ID: 10003
+// Module ID: 10013
+// Function ID: 10014
 // Name: _fetchStickerPack
-// Dependencies: [5, 5035, 1994, 4682, 1922, 5259, 676, 685, 4582, 530, 709, 4679, 8321, 1374, 12, 4683, 1236, 2]
+// Dependencies: [5, 5057, 1994, 4704, 1922, 5280, 676, 685, 4604, 530, 709, 4701, 8343, 1374, 12, 4705, 1236, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 10002 (_fetchStickerPack)
+// Module 10013 (_fetchStickerPack)
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import _getSystemLocale from "_getSystemLocale";
@@ -229,7 +229,7 @@ function _fetchSticker() {
               obj4[1] = body;
               obj3.dispatch(obj4);
             } else {
-              obj = body(4679);
+              obj = body(4701);
               if (obj.isStandardSticker(body)) {
                 obj1 = callback2(709);
                 const obj5 = { type: "PACK_STICKER_FETCH_SUCCESS", sticker: null };
@@ -242,7 +242,7 @@ function _fetchSticker() {
               }
             }
             c4 = 3;
-            obj10 = body(4679);
+            obj10 = body(4701);
           }
         } catch (tmp24) {
           c4 = tmp;

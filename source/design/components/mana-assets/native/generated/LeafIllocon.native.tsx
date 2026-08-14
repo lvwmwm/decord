@@ -1,10 +1,10 @@
-// Module ID: 6543
-// Function ID: 6544
+// Module ID: 6564
+// Function ID: 6565
 // Name: LeafIllocon
-// Dependencies: [21, 5308, 6544, 2]
+// Dependencies: [21, 5329, 6565, 2]
 // Exports: LeafIllocon
 
-// Module 6543 (LeafIllocon)
+// Module 6564 (LeafIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/LeafIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const LeafIllocon = function LeafIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6544);
+  obj[0] = importDefault(6565);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { uri: null });
+  return jsx(importDefault(5329), { uri: null });
 };

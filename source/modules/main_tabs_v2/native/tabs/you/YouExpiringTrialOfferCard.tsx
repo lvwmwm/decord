@@ -1,10 +1,10 @@
-// Module ID: 15955
-// Function ID: 15956
+// Module ID: 15973
+// Function ID: 15974
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 13049, 676, 6943, 1924, 21, 687, 4342, 712, 15956, 698, 1236, 3943, 647, 6958, 6950, 15954, 1993, 4338, 4007, 4887, 1297, 7749, 4766, 5815, 2]
+// Dependencies: [19, 17, 13067, 676, 6964, 1924, 21, 687, 4342, 712, 15974, 698, 1236, 3943, 647, 6979, 6971, 15972, 1993, 4338, 4007, 4909, 1297, 7770, 4788, 5836, 2]
 // Exports: default
 
-// Module 15955 (YouExpiringTrialOfferCard)
+// Module 15973 (YouExpiringTrialOfferCard)
 import Text from "Text";
 import { View } from "useShouldShowExpiringTrialOfferCard";
 import clearDismissUntil from "clearDismissUntil";
@@ -48,7 +48,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   let obj1 = navigateToPremium(647);
   let items = [shouldShowExpiringTrialOfferCard];
   stateFromStores = obj1.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj2 = navigateToPremium(6958);
+  let obj2 = navigateToPremium(6979);
   premiumTrialOffer = obj2.usePremiumTrialOffer();
   let num = 0;
   if (null != premiumTrialOffer) {
@@ -58,8 +58,8 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
       num = Date.parse(premiumTrialOffer.expires_at);
     }
   }
-  const tmp7Result = importDefault(6950)(num, closure_15);
-  let tmp4Result = tmp4(15954);
+  const tmp7Result = importDefault(6971)(num, closure_15);
+  let tmp4Result = tmp4(15972);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -151,7 +151,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         const obj7 = { width: 16, height: 16, color: null };
         obj7[2] = tmp3.closeIcon.color;
         obj6[5] = closure_12(tmp4(1297).CloseIcon, obj7);
-        items2[1] = closure_12(tmp4(4887).PressableOpacity, obj6);
+        items2[1] = closure_12(tmp4(4909).PressableOpacity, obj6);
         const obj8 = { style: null, text: null, onPress: null, renderIcon: null, renderLinearGradient: null };
         obj8[0] = tmp3.primaryCTA;
         const intl5 = tmp4(1236).intl;
@@ -194,12 +194,12 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         const obj9 = { style: null, children: null };
         obj9[0] = navigateToPremium.style;
         obj9[1] = closure_14(closure_13, obj4);
-        return closure_12(tmp(5815), obj9);
+        return closure_12(tmp(5836), obj9);
       }
     }
     return null;
   } else {
     return null;
   }
-  const tmp7 = importDefault(6950);
+  const tmp7 = importDefault(6971);
 };

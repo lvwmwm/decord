@@ -1,10 +1,10 @@
-// Module ID: 6673
-// Function ID: 6674
+// Module ID: 6694
+// Function ID: 6695
 // Name: PlaneIllocon
-// Dependencies: [21, 5308, 6674, 2]
+// Dependencies: [21, 5329, 6695, 2]
 // Exports: PlaneIllocon
 
-// Module 6673 (PlaneIllocon)
+// Module 6694 (PlaneIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PlaneIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const PlaneIllocon = function PlaneIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6674);
+  obj[0] = importDefault(6695);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { uri: null });
+  return jsx(importDefault(5329), { uri: null });
 };

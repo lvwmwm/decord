@@ -1,10 +1,10 @@
-// Module ID: 11421
-// Function ID: 11422
+// Module ID: 11437
+// Function ID: 11438
 // Name: useKeyboardOpenPaddingStyle
 // Dependencies: [32, 19, 21, 4083, 4065, 712, 1642, 4207, 1626, 4343, 4346, 2]
 // Exports: default
 
-// Module 11421 (useKeyboardOpenPaddingStyle)
+// Module 11437 (useKeyboardOpenPaddingStyle)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";

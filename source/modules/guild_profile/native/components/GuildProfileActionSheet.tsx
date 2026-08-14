@@ -1,10 +1,10 @@
-// Module ID: 9303
-// Function ID: 9304
+// Module ID: 9317
+// Function ID: 9318
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 9050, 9304, 676, 21, 4342, 712, 4278, 9051, 589, 4065, 7449, 5768, 5788, 9052, 9305, 4755, 1236, 12278, 9306, 12279, 689, 5437, 4766, 5439, 5752, 2]
+// Dependencies: [19, 17, 9064, 9318, 676, 21, 4342, 712, 4278, 9065, 589, 4065, 7470, 5789, 5809, 9066, 9319, 4777, 1236, 12296, 9320, 12297, 689, 5458, 4788, 5460, 5773, 2]
 // Exports: default
 
-// Module 9303 (GuildProfileActionSheet)
+// Module 9317 (GuildProfileActionSheet)
 import GuildProfileLoadingError from "GuildProfileLoadingError";
 import get_ActivityIndicator from "Button";
 import handleUpdateStart from "handleUpdateStart";

@@ -1,10 +1,10 @@
-// Module ID: 12707
-// Function ID: 12708
+// Module ID: 12725
+// Function ID: 12726
 // Name: WidgetPreview
-// Dependencies: [19, 17, 21, 4342, 712, 8884, 7137, 12522, 7130, 12409, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 8898, 7159, 12540, 7152, 12427, 4338, 1236, 2]
 // Exports: default
 
-// Module 12707 (WidgetPreview)
+// Module 12725 (WidgetPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,14 +25,14 @@ export default function WidgetPreview(arg0) {
   let widget;
   ({ widget, userId } = arg0);
   const tmp = createCacheKey();
-  const tmp4 = importDefault(8884)();
-  if (widget instanceof require(7137) /* isFieldEmpty */.UserProfilePersonalWidget) {
+  const tmp4 = importDefault(8898)();
+  if (widget instanceof require(7159) /* isFieldEmpty */.UserProfilePersonalWidget) {
     let obj = { userId: null, widget: null, disableInteraction: true, cardStyle: null };
     obj[0] = userId;
     obj[1] = widget;
     const items = [tmp4.card, tmp.card];
     obj[3] = items;
-    let tmp6 = callback(importDefault(12522), obj);
+    let tmp6 = callback(importDefault(12540), obj);
   } else {
     tmp6 = null;
     if (tmp5Result.isGameWidget(widget)) {
@@ -43,10 +43,10 @@ export default function WidgetPreview(arg0) {
         obj[1] = widget;
         const items1 = [tmp4.card, tmp.card];
         obj[3] = items1;
-        tmp6 = callback(tmp5(12409).WidgetSection, obj);
+        tmp6 = callback(tmp5(12427).WidgetSection, obj);
       }
     }
-    tmp5Result = tmp5(7130);
+    tmp5Result = tmp5(7152);
   }
   let tmp9 = null;
   if (null !== tmp6) {

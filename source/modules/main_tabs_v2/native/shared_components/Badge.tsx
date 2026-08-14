@@ -1,9 +1,9 @@
-// Module ID: 8437
-// Function ID: 8438
+// Module ID: 8459
+// Function ID: 8460
 // Name: DEFAULT_BADGE_SIZE
 // Dependencies: [19, 17, 21, 4342, 712, 2]
 
-// Module 8437 (DEFAULT_BADGE_SIZE)
+// Module 8459 (DEFAULT_BADGE_SIZE)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

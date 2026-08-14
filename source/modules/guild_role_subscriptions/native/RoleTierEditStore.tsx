@@ -1,10 +1,10 @@
-// Module ID: 16888
-// Function ID: 16889
+// Module ID: 16904
+// Function ID: 16905
 // Name: usePriceTiers
-// Dependencies: [32, 5, 705, 700, 5917, 3974, 4771, 14513, 2]
+// Dependencies: [32, 5, 705, 700, 5938, 3974, 4793, 14526, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 16888 (usePriceTiers)
+// Module 16904 (usePriceTiers)
 import _slicedToArray from "_slicedToArray";
 import isIterable from "isIterable";
 import identity from "identity";
@@ -20,7 +20,7 @@ function usePriceTiers(guildId) {
   const first = tmp[0];
   const importAll = tmp3;
   const dependencyMap = tmp[2];
-  first(4771)(() => {
+  first(4793)(() => {
     let tmp2 = null == first;
     if (tmp2) {
       tmp2 = closure_2 !== outer1_6.LOADING;
@@ -127,7 +127,7 @@ export const usePriceTiersAvailableInGuild = function usePriceTiersAvailableInGu
   const tmp = usePriceTiers(guildId);
   let tiers = tmp.tiers;
   ({ state, onRefresh } = tmp);
-  const subscriptionListingsForGuild = set(14513).useSubscriptionListingsForGuild(guildId);
+  const subscriptionListingsForGuild = set(14526).useSubscriptionListingsForGuild(guildId);
   set = new Set();
   for (const item10022 of subscriptionListingsForGuild) {
     let addResult = set.add(item10022.subscription_plans[0].price);

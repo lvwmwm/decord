@@ -1,9 +1,9 @@
-// Module ID: 11239
-// Function ID: 11240
+// Module ID: 11255
+// Function ID: 11256
 // Name: BundleUpdaterManager
-// Dependencies: [5, 17, 676, 3, 500, 81, 2007, 4544, 698, 7109, 2]
+// Dependencies: [5, 17, 676, 3, 500, 81, 2007, 4554, 698, 7131, 2]
 
-// Module 11239 (BundleUpdaterManager)
+// Module 11255 (BundleUpdaterManager)
 import resolveAssetSource from "resolveAssetSource";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -127,27 +127,27 @@ prototype["setupOTAAssetFallback"] = function setupOTAAssetFallback() {
   })();
 };
 prototype["emitOtaMetric"] = function emitOtaMetric(item10010) {
-  const match = require(4544) /* t */.match(item10010);
-  const str = require(4544) /* t */;
+  const match = require(4554) /* t */.match(item10010);
+  const str = require(4554) /* t */;
   const withResult = match.with({ type: "OtaCheckAttempt" }, (result) => {
     closure_5.verbose("OTA check attempt", result);
     let obj = callback(698);
     obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
     obj.track(constants.MOBILE_OTA_CHECK_ATTEMPT, obj);
-    return callback(7109).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
+    return callback(7131).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
   });
   match.with({ type: "OtaCheckAttempt" }, (result) => {
     closure_5.verbose("OTA check attempt", result);
     let obj = callback(698);
     obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
     obj.track(constants.MOBILE_OTA_CHECK_ATTEMPT, obj);
-    return callback(7109).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
+    return callback(7131).increment(closure_9.prepareOtaMetricForDatadog(result, ["result"]));
   }).with({ type: "OtaAssetDownloadAttempt" }, (result) => {
     closure_5.verbose("OTA asset download attempt", result);
     let obj = callback(698);
     obj = { result: result.result, duration_seconds: result.durationSeconds, error: result.error, url: result.url, status_code: result.statusCode, bytes_received: result.bytesReceived };
     obj.track(constants.MOBILE_OTA_ASSET_DOWNLOAD_ATTEMPT, obj);
-    return callback(7109).increment(closure_9.prepareOtaMetricForDatadog(result, ["result", "statusCode"]));
+    return callback(7131).increment(closure_9.prepareOtaMetricForDatadog(result, ["result", "statusCode"]));
   }).exhaustive();
 };
 prototype["prepareOtaMetricForDatadog"] = function prepareOtaMetricForDatadog(name, arg1) {

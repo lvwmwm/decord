@@ -1,10 +1,10 @@
-// Module ID: 14106
-// Function ID: 14107
+// Module ID: 14119
+// Function ID: 14120
 // Name: getSMSBackupDisabledMessage
-// Dependencies: [1910, 3989, 1922, 676, 1236, 647, 8527, 2]
+// Dependencies: [1910, 3989, 1922, 676, 1236, 647, 8549, 2]
 // Exports: getSMSBackupDisabledMessage, use2FARemoveDisableReason, useIsMFAEnabled, useMFAAvailability
 
-// Module 14106 (getSMSBackupDisabledMessage)
+// Module 14119 (getSMSBackupDisabledMessage)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -75,7 +75,7 @@ export const useMFAAvailability = function useMFAAvailability() {
     }
     return verified;
   });
-  if (require(8527) /* _crypto */.hasCrypto) {
+  if (require(8549) /* _crypto */.hasCrypto) {
     if (false === stateFromStores) {
       let AVAILABLE = obj.UNAVAILABLE_UNVERIFIED;
     } else {

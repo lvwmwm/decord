@@ -1,8 +1,8 @@
-// Module ID: 10411
-// Function ID: 10412
-// Dependencies: [5, 1391, 676, 4335, 709, 530, 7188, 6965, 4539, 4355, 2]
+// Module ID: 10425
+// Function ID: 10426
+// Dependencies: [5, 1391, 676, 4335, 709, 530, 7210, 6986, 4549, 10426, 10427, 4355, 2]
 
-// Module 10411
+// Module 10425
 import sendRequest from "sendRequest";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
@@ -113,6 +113,11 @@ export default {
         }
         obj[5] = id;
         obj.trackWithMetadata(outer1_7.INVITE_SENT, obj);
+        const activitySessionKey = activity(channel[9]).getActivitySessionKey(tmp2);
+        if (null != activitySessionKey) {
+          activity(tmp[10]).markChannelInvited(activitySessionKey, tmp5.id);
+          const tmp8Result = activity(tmp[10]);
+        }
         return Promise.resolve(channel);
       }, (arg0) => Promise.reject(arg0));
     }

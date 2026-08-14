@@ -1,10 +1,10 @@
-// Module ID: 8510
-// Function ID: 8511
+// Module ID: 8532
+// Function ID: 8533
 // Name: _confirmEmailChange
-// Dependencies: [5, 676, 5168, 503, 2]
+// Dependencies: [5, 676, 4562, 503, 2]
 // Exports: confirmEmailChange, sendConfirmationCode
 
-// Module 8510 (_confirmEmailChange)
+// Module 8532 (_confirmEmailChange)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -16,7 +16,7 @@ function _confirmEmailChange() {
     let c2 = 0;
     let c1 = 0;
     return (function*(arg0, body) {
-      const obj5 = v0(5168);
+      const obj5 = v0(4562);
       const obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
       obj1[0] = outer1_4.USER_EMAIL_VERIFY_CODE;
       const obj2 = { code: null };
@@ -38,14 +38,14 @@ function _confirmEmailChange() {
   }
   return applyArgumentsResult;
 }
-const result = require("module_5168").fileFinishedImporting("modules/verification/ChangeEmailActionCreators.tsx");
+const result = require("module_4562").fileFinishedImporting("modules/verification/ChangeEmailActionCreators.tsx");
 
 export const sendConfirmationCode = function sendConfirmationCode() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
   }
-  let obj = importDefault(5168);
+  let obj = importDefault(4562);
   obj = { url: Endpoints.USER_EMAIL, trackedActionData: null, rejectWithError: false };
   obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE, properties: { is_resend: flag } };
   obj[1] = obj;

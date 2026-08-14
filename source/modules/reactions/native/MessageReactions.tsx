@@ -1,10 +1,10 @@
-// Module ID: 8829
-// Function ID: 8830
+// Module ID: 8843
+// Function ID: 8844
 // Name: MessageReactions
-// Dependencies: [19, 4562, 21, 589, 5768, 5788, 8830, 2]
+// Dependencies: [19, 4584, 21, 589, 5789, 5809, 8844, 2]
 // Exports: default
 
-// Module 8829 (MessageReactions)
+// Module 8843 (MessageReactions)
 import noop from "noop";
 import reinjectEphemerals from "reinjectEphemerals";
 import { jsx } from "jsxProd";

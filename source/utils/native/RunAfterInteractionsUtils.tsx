@@ -1,10 +1,10 @@
-// Module ID: 5861
-// Function ID: 5862
+// Module ID: 5882
+// Function ID: 5883
 // Name: runAfterInteractions
 // Dependencies: [17, 4227, 2]
 // Exports: runAfterInteractions
 
-// Module 5861 (runAfterInteractions)
+// Module 5882 (runAfterInteractions)
 import { InteractionManager } from "get ActivityIndicator";
 
 function runAfterInteractions(arg0, MINUTE) {

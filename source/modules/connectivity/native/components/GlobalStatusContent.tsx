@@ -1,10 +1,10 @@
-// Module ID: 10746
-// Function ID: 10747
+// Module ID: 10762
+// Function ID: 10763
 // Name: ConnectivityGlobalStatusContent
-// Dependencies: [19, 17, 1391, 1910, 4416, 4360, 10741, 676, 21, 4342, 712, 10742, 589, 10254, 10739, 1363, 4278, 4890, 4197, 10626, 500, 1628, 7793, 10747, 2]
+// Dependencies: [19, 17, 1391, 1910, 4416, 4360, 10757, 676, 21, 4342, 712, 10758, 589, 10268, 10755, 1363, 4278, 4912, 4197, 10642, 500, 1628, 7814, 10763, 2]
 // Exports: default
 
-// Module 10746 (ConnectivityGlobalStatusContent)
+// Module 10762 (ConnectivityGlobalStatusContent)
 import "ChannelCallCameraPreview";
 import { View } from "getIsScreenLandscape";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -34,7 +34,7 @@ export default function ConnectivityGlobalStatusContent() {
   let remotePlatform;
   let rtcConnectionState;
   const tmp = createCacheKey();
-  const tmp4 = importDefault(10742)();
+  const tmp4 = importDefault(10758)();
   const require = tmp4;
   let obj = require(589) /* initialize */;
   const items = [createRTCConnection, createGuildRecordFromRust, ensureGuildLoaded, handleUpdate];
@@ -90,21 +90,21 @@ export default function ConnectivityGlobalStatusContent() {
   if (channel != null) {
     id = channel.id;
   }
-  let tmp2ResultResult = importDefault(10254)(id);
-  const tmp2Result = importDefault(10254);
+  let tmp2ResultResult = importDefault(10268)(id);
+  const tmp2Result = importDefault(10268);
   let tmp5Result = tmp5(1363);
   let tmp14 = tmp12;
-  const tmp11 = importDefault(10739)();
+  const tmp11 = importDefault(10755)();
   if (isGuildStageVoiceResult) {
     if (!tmp2ResultResult) {
       tmp2ResultResult = tmp11;
     }
     tmp14 = tmp2ResultResult;
   }
-  tmp5Result = tmp5(4890);
+  tmp5Result = tmp5(4912);
   let isScreenLandscape = tmp5Result.useIsScreenLandscape();
   if (isScreenLandscape) {
-    isScreenLandscape = tmp5(4197).isModalOpen(tmp2(10626));
+    isScreenLandscape = tmp5(4197).isModalOpen(tmp2(10642));
     const tmp5Result1 = tmp5(4197);
   }
   if (isScreenLandscape) {
@@ -120,7 +120,7 @@ export default function ConnectivityGlobalStatusContent() {
   obj = { minHeight: RTC_PANEL_HEIGHT + num, paddingTop: num };
   items2[2] = obj;
   if (isScreenLandscape) {
-    isScreenLandscape = callback(tmp2(7793), { hidden: true });
+    isScreenLandscape = callback(tmp2(7814), { hidden: true });
   }
   const items3 = [isScreenLandscape, ];
   let tmp19 = null;
@@ -132,7 +132,7 @@ export default function ConnectivityGlobalStatusContent() {
     obj1[3] = isThemeDarkResult;
     obj1[4] = rtcConnectionState;
     obj1[5] = remotePlatform;
-    tmp19 = callback(tmp2(10747), obj1);
+    tmp19 = callback(tmp2(10763), obj1);
   }
   items3[1] = tmp19;
   obj[1] = items3;

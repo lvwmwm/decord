@@ -1,10 +1,10 @@
-// Module ID: 10027
-// Function ID: 10028
+// Module ID: 10038
+// Function ID: 10039
 // Name: EmptyStateSticker
-// Dependencies: [32, 19, 17, 5259, 4037, 676, 1924, 21, 4342, 10001, 9902, 5768, 5788, 589, 698, 4338, 1236, 4887, 4311, 4312, 4755, 5308, 8749, 10021, 2]
+// Dependencies: [32, 19, 17, 5280, 4037, 676, 1924, 21, 4342, 10012, 9913, 5789, 5809, 589, 698, 4338, 1236, 4909, 4311, 4312, 4777, 5329, 8763, 10032, 2]
 // Exports: default
 
-// Module 10027 (EmptyStateSticker)
+// Module 10038 (EmptyStateSticker)
 import _slicedToArray from "_slicedToArray";
 import IMPACT_LIGHT from "IMPACT_LIGHT";
 import { View } from "PressableBase";
@@ -22,14 +22,14 @@ let unpackModuleId;
 let require = arg1;
 function EmptyStateSticker(sticker) {
   sticker = sticker.sticker;
-  const animated = require(10001) /* useStickerPackCategories */.useShouldAnimateSticker(sticker.isFocused);
+  const animated = require(10012) /* useStickerPackCategories */.useShouldAnimateSticker(sticker.isFocused);
   let id;
-  const obj = require(10001) /* useStickerPackCategories */;
+  const obj = require(10012) /* useStickerPackCategories */;
   const tmp2 = closure_11;
   if (sticker != null) {
     id = sticker.id;
   }
-  return tmp2(importDefault(9902), { sticker, size: 60, animated }, id);
+  return tmp2(importDefault(9913), { sticker, size: 60, animated }, id);
 }
 ({ AnalyticEvents: metroImportAll, AnalyticsSections: c9 } = ME);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
@@ -41,16 +41,16 @@ export default function _default() {
   let dependencyMap;
   let tmp = callback4();
   const require = tmp;
-  let obj = require(10001) /* useStickerPackCategories */;
+  let obj = require(10012) /* useStickerPackCategories */;
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  analyticsLocations = analyticsLocations(5768)(analyticsLocations(5788).EMPTY_STATE).analyticsLocations;
+  analyticsLocations = analyticsLocations(5789)(analyticsLocations(5809).EMPTY_STATE).analyticsLocations;
   let obj1 = require(589) /* initialize */;
   const items = [loadSavedGuildStickers];
   const stateFromStoresArray = obj1.useStateFromStoresArray(items, () => {
     const mapped = closure_7.map((arg0) => stickerById.getStickerById(arg0));
     return mapped.filter((arg0) => null != arg0);
   });
-  const tmp3 = analyticsLocations(5768);
+  const tmp3 = analyticsLocations(5789);
   [dependencyMap, _slicedToArray] = callback(React.useState(null), 2);
   const items1 = [analyticsLocations];
   const effect = React.useEffect(() => {
@@ -118,15 +118,15 @@ export default function _default() {
       return tmp(tmp(outer1_2[17]).PressableOpacity, obj, id);
     })
   };
-  obj5[0] = analyticsLocations(8749);
+  obj5[0] = analyticsLocations(8763);
   obj5[1] = tmp.nitroWheel;
-  obj4[0] = callback2(analyticsLocations(5308), obj5);
+  obj4[0] = callback2(analyticsLocations(5329), obj5);
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj4[1] = intl3.string(require(1236) /* getSystemLocale */.t.pj0XBN);
   obj4[4] = function onPress() {
     return analyticsLocations(table[23])({ section: constants.EXPRESSION_PICKER });
   };
-  obj3[1] = callback2(require(4755) /* Button */.Button, obj4);
+  obj3[1] = callback2(require(4777) /* Button */.Button, obj4);
   items2[3] = callback2(View, obj3);
   obj[0] = items2;
   return callback3(View, obj);

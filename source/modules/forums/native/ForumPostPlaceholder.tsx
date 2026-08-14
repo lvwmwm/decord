@@ -1,8 +1,8 @@
-// Module ID: 11474
-// Function ID: 11475
-// Dependencies: [32, 19, 4334, 21, 4342, 712, 589, 4083, 4343, 5416, 2]
+// Module ID: 11490
+// Function ID: 11491
+// Dependencies: [32, 19, 4334, 21, 4342, 712, 589, 4083, 4343, 5437, 2]
 
-// Module 11474
+// Module 11490
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo(() => {
   const animatedStyle = obj1.useAnimatedStyle(fn);
   obj = { style: animatedStyle, pointerEvents: "none", children: null };
   obj1 = { variant: "secondary", style: callback2().postPlaceholder };
-  obj[2] = jsx(stateFromStores(5416).Card, { variant: "secondary", style: callback2().postPlaceholder });
+  obj[2] = jsx(stateFromStores(5437).Card, { variant: "secondary", style: callback2().postPlaceholder });
   return jsx(timingConfig(4083).View, { style: animatedStyle, pointerEvents: "none", children: null });
 });
 const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");

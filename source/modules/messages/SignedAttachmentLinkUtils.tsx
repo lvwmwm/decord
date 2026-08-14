@@ -1,10 +1,10 @@
-// Module ID: 9796
-// Function ID: 9797
+// Module ID: 9807
+// Function ID: 9808
 // Name: shouldRefreshAttachmentUrl
 // Dependencies: [5, 676, 687, 4377, 1486, 530, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9796 (shouldRefreshAttachmentUrl)
+// Module 9807 (shouldRefreshAttachmentUrl)
 import sendRequest from "sendRequest";
 import { Endpoints } from "ME";
 import set from "set";
@@ -115,22 +115,18 @@ function _refreshAttachmentUrl() {
   const tmp = callback((arg0) => {
     let closure_0 = arg0;
     let c2 = 0;
-    let c3 = 0;
+    let c1 = 0;
     return (function*(arg0) {
-      let closure_1 = tmp4;
-      const HTTP = lib(530).HTTP;
+      const HTTP = callback(530).HTTP;
       const obj1 = { url: null, body: null, rejectWithError: null };
       obj1[0] = outer1_4.ATTACHMENTS_REFRESH_URLS;
       const obj2 = { attachment_urls: null };
-      const items = [lib];
+      const items = [callback];
       obj2[0] = items;
       obj1[1] = obj2;
-      obj1[2] = lib(530).rejectWithMigratedError();
-      lib = yield HTTP.post(obj1);
-      if (lib.ok) {
-        const refreshed = lib.body.refreshed_urls[0].refreshed;
-      }
-      return refreshed;
+      obj1[2] = callback(530).rejectWithMigratedError();
+      yield HTTP.post(obj1);
+      return arg1.body.refreshed_urls[0].refreshed;
     })();
   });
   const _refreshAttachmentUrl = tmp;

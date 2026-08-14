@@ -1,10 +1,10 @@
-// Module ID: 12224
-// Function ID: 12225
+// Module ID: 12242
+// Function ID: 12243
 // Name: useVirtualCurrencyBalance
-// Dependencies: [9474, 589, 2]
+// Dependencies: [9487, 589, 2]
 // Exports: getVirtualCurrencyBalance, useHasEnoughVirtualCurrency, useVirtualCurrencyBalance
 
-// Module 12224 (useVirtualCurrencyBalance)
+// Module 12242 (useVirtualCurrencyBalance)
 import redeemError from "redeemError";
 
 const require = arg1;

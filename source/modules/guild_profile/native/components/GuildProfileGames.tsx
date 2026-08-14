@@ -1,10 +1,10 @@
-// Module ID: 9321
-// Function ID: 9322
+// Module ID: 9335
+// Function ID: 9336
 // Name: ClickableGameIcon
-// Dependencies: [19, 17, 21, 4342, 712, 9322, 9333, 12270, 4338, 12274, 12275, 4062, 4310, 12276, 2007, 4887, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 9336, 9347, 12288, 4338, 12292, 12293, 4062, 4310, 12294, 2007, 4909, 2]
 // Exports: default
 
-// Module 9321 (ClickableGameIcon)
+// Module 9335 (ClickableGameIcon)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,9 +24,9 @@ function ClickableGameIcon(game) {
   enabled = undefined;
   ({ style, activityLevel } = game);
   const obj = { gameId: game.id, source: null, trackEntryPointImpression: null };
-  obj[1] = game(9333).GameProfileSources.GuildProfileGames;
+  obj[1] = game(9347).GameProfileSources.GuildProfileGames;
   obj[2] = enabled;
-  const tmp3Result = onPressFallback(9322)(obj);
+  const tmp3Result = onPressFallback(9336)(obj);
   dependencyMap = tmp3Result;
   if (enabled) {
     enabled = null != tmp3Result;
@@ -41,7 +41,7 @@ function ClickableGameIcon(game) {
       }
     }, items);
   }
-  return callback(onPressFallback(12270), { style, game, activityLevel, onPress });
+  return callback(onPressFallback(12288), { style, game, activityLevel, onPress });
 }
 function FavoriteGame(game) {
   let activityLevel;
@@ -156,7 +156,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/n
 
 export default function GuildProfileGames(profile) {
   profile = profile.profile;
-  const gamesToDisplay = importDefault(12274)(profile).gamesToDisplay;
+  const gamesToDisplay = importDefault(12292)(profile).gamesToDisplay;
   let tmp4 = null;
   if (null != gamesToDisplay) {
     tmp4 = null;

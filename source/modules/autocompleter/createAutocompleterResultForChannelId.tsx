@@ -1,10 +1,10 @@
-// Module ID: 7364
-// Function ID: 7365
+// Module ID: 7386
+// Function ID: 7387
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [1391, 3998, 1922, 5267, 676, 4535, 2]
+// Dependencies: [1391, 3998, 1922, 5288, 676, 4535, 2]
 // Exports: default
 
-// Module 7364 (createAutocompleterResultForChannelId)
+// Module 7386 (createAutocompleterResultForChannelId)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";

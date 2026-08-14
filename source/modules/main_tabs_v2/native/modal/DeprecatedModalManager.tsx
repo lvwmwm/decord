@@ -1,9 +1,9 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16680
+// Function ID: 16681
 // Name: handlePushedModal
-// Dependencies: [9071, 1218, 9115, 16665, 1385, 676, 4198, 4197, 4552, 8508, 16666, 16667, 16675, 5301, 16676, 16950, 16952, 2]
+// Dependencies: [9085, 1218, 9129, 16681, 1385, 676, 4198, 4197, 4574, 8530, 16682, 16683, 16691, 5322, 16692, 16966, 16968, 2]
 
-// Module 16664 (handlePushedModal)
+// Module 16680 (handlePushedModal)
 import handleFormInit from "handleFormInit";
 import fetchFingerprint from "fetchFingerprint";
 import updateWithLatestInvite from "updateWithLatestInvite";
@@ -60,7 +60,7 @@ function pushFirstOpenModal(arg0, arg1) {
     key = key.key;
     obj[0] = key;
     let num = 0;
-    component = handlePushedModal(importDefault(4552)(component, obj, props));
+    component = handlePushedModal(importDefault(4574)(component, obj, props));
   }
 }
 function createPushModalHandler(closure_15, closure_152) {
@@ -82,18 +82,18 @@ let closure_15 = {
     if (action == null) {
       action = importDefaultResult.getAction();
     }
-    let result = importDefault(8508).isFullScreenVerification(action);
+    let result = importDefault(8530).isFullScreenVerification(action);
     if (result) {
       result = null != token.getToken();
     }
     if (result) {
-      result = !require(16666) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment({ location: "modal-manager-verification" });
-      const obj2 = require(16666) /* isEligibleForSafetyFlowsExperiment */;
+      result = !require(16682) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment({ location: "modal-manager-verification" });
+      const obj2 = require(16682) /* isEligibleForSafetyFlowsExperiment */;
     }
     return result;
   },
   getComponent() {
-    return require(16667) /* PhoneThenEmailInterstitial */.default;
+    return require(16683) /* PhoneThenEmailInterstitial */.default;
   }
 };
 const USER_REQUIRED_ACTION_UPDATE = "USER_REQUIRED_ACTION_UPDATE";
@@ -109,7 +109,7 @@ let closure_17 = {
     return action === UserRequiredActions.AGREEMENTS;
   },
   getComponent() {
-    return require(16675) /* handleTouch */.default;
+    return require(16691) /* handleTouch */.default;
   }
 };
 let prototype = function DeprecatedModalManager() {
@@ -152,7 +152,7 @@ let prototype = function DeprecatedModalManager() {
     store: handleFormInit,
     closable: false,
     getComponent() {
-      return callback(16676).default;
+      return callback(16692).default;
     }
   };
   obj = {
@@ -160,7 +160,7 @@ let prototype = function DeprecatedModalManager() {
     store: FormStates,
     closable: false,
     getComponent() {
-      return callback(16950).default;
+      return callback(16966).default;
     }
   };
   applyArgumentsResult.actions = obj;

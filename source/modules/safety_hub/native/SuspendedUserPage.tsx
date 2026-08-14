@@ -1,10 +1,10 @@
-// Module ID: 16055
-// Function ID: 16056
+// Module ID: 16073
+// Function ID: 16074
 // Name: SuspendedUserSafetyHubPage
-// Dependencies: [19, 17, 7850, 21, 4342, 712, 5368, 7796, 1236, 5867, 8072, 4338, 4058, 14061, 2]
+// Dependencies: [19, 17, 7871, 21, 4342, 712, 5389, 7817, 1236, 5888, 8093, 4338, 4058, 14074, 2]
 // Exports: default
 
-// Module 16055 (SuspendedUserSafetyHubPage)
+// Module 16073 (SuspendedUserSafetyHubPage)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { SafetyHubLinks } from "SafetyHubView";
@@ -35,10 +35,10 @@ export default function SuspendedUserSafetyHubPage() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj1[2] = function onPress() {
-    callback(5867).closeSuspendedUser();
+    callback(5888).closeSuspendedUser();
   };
-  obj1[3] = importDefault(8072);
-  const items = [callback(require(7796) /* IconButton */.IconButton, obj1), ];
+  obj1[3] = importDefault(8093);
+  const items = [callback(require(7817) /* IconButton */.IconButton, obj1), ];
   const obj2 = {
     style: tmp.text,
     onPress() {
@@ -57,8 +57,8 @@ export default function SuspendedUserSafetyHubPage() {
   obj2[4] = items1;
   items[1] = callback2(require(4338) /* Text */.Text, obj2);
   obj[1] = items;
-  const items2 = [callback2(View, obj), callback(importDefault(14061), { visible: true })];
+  const items2 = [callback2(View, obj), callback(importDefault(14074), { visible: true })];
   obj[1] = items2;
   obj[3] = callback2(View, obj);
-  return callback(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

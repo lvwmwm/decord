@@ -1,10 +1,10 @@
-// Module ID: 9493
-// Function ID: 9494
+// Module ID: 9506
+// Function ID: 9507
 // Name: memo
-// Dependencies: [32, 19, 17, 678, 21, 4342, 712, 9494, 5467, 1236, 7061, 9495, 4338, 2]
+// Dependencies: [32, 19, 17, 678, 21, 4342, 712, 9507, 5488, 1236, 7083, 9508, 4338, 2]
 // Exports: default
 
-// Module 9493 (memo)
+// Module 9506 (memo)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -81,7 +81,7 @@ let closure_16 = memo((arg0) => {
   let items;
   let require;
   ({ items, bundledProducts: require, activeIndex: importDefault, onSelect: dependencyMap, onTrackPress: _slicedToArray } = arg0);
-  let obj = require(5467) /* LegacyBaseButton */;
+  let obj = require(5488) /* LegacyBaseButton */;
   const nativeGesture = obj.useNativeGesture({ disallowInterruption: true });
   obj = { gesture: nativeGesture, children: null };
   obj = { horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: createCacheKey().bundleThumbnailRow, role: "radiogroup", "aria-label": null, children: null };
@@ -113,7 +113,7 @@ let closure_16 = memo((arg0) => {
     return outer1_12(outer1_15, obj, item.skuId);
   });
   obj[1] = callback6(closure_9, obj);
-  return callback6(require(5467) /* LegacyBaseButton */.GestureDetector, obj);
+  return callback6(require(5488) /* LegacyBaseButton */.GestureDetector, obj);
 });
 let obj5 = { gap: require("Themes").space.PX_8 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/BundleProductDetailsActionSheetPreview.tsx");
@@ -159,14 +159,14 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
   if (name == null) {
     name = tmp8.skuId;
   }
-  let obj = onActiveItemChange(7061);
+  let obj = onActiveItemChange(7083);
   const collectibleTypeLabel = obj.getCollectibleTypeLabel(tmp8.type);
   const items1 = [items[num]];
   obj = { style: tmp.previewContainer, children: null };
   const tmp12 = onActiveItemChange;
   tmp4 = callback(callback5(product.skuId), 2);
   const items2 = [
-    callback6(onActiveItemChange(9495).IndividualProductPreview, {
+    callback6(onActiveItemChange(9508).IndividualProductPreview, {
       product: callback4(() => {
         const items = [_undefined];
         return { skuId: _undefined.skuId, type: _undefined.type, items };

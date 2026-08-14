@@ -1,10 +1,10 @@
-// Module ID: 9898
-// Function ID: 9899
+// Module ID: 9909
+// Function ID: 9910
 // Name: LocationText
-// Dependencies: [19, 17, 4334, 3998, 1922, 21, 4342, 712, 4338, 4535, 692, 4841, 4843, 4805, 589, 2]
+// Dependencies: [19, 17, 4334, 3998, 1922, 21, 4342, 712, 4338, 4535, 692, 4863, 4865, 4827, 589, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 9898 (LocationText)
+// Module 9909 (LocationText)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

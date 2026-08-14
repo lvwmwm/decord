@@ -1,9 +1,9 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 12638
+// Function ID: 12639
 // Name: GuildChannelMemberCount
-// Dependencies: [32, 19, 17, 12621, 5035, 1395, 5938, 1391, 4263, 1910, 3998, 1922, 676, 1388, 21, 4065, 712, 589, 12615, 5817, 8728, 1236, 4535, 12613, 6065, 1377, 1993, 4805, 8702, 1367, 9951, 12609, 2]
+// Dependencies: [32, 19, 17, 12639, 5057, 1395, 5959, 1391, 4263, 1910, 3998, 1922, 676, 1388, 21, 4065, 712, 589, 12633, 5838, 8742, 1236, 4535, 12631, 6086, 1377, 1993, 4827, 8716, 1367, 9962, 12627, 2]
 
-// Module 12620 (GuildChannelMemberCount)
+// Module 12638 (GuildChannelMemberCount)
 import set from "set";
 import importAllResult from "ICON_SIZE";
 import { View } from "initialize";
@@ -88,8 +88,8 @@ function GuildChannelMemberCount(channel) {
     const count = outer1_6.requestCount(channel.guild_id, channel.id);
   }, items1);
   if (null == total) {
-    const tmpResult = tmp(12615);
-    return tmpResult.renderMemberCountText(online, total, flag, tmp(5817).ICON_SIZE[token]);
+    const tmpResult = tmp(12633);
+    return tmpResult.renderMemberCountText(online, total, flag, tmp(5838).ICON_SIZE[token]);
   }
 }
 function computeVisibleChannelName(channel) {
@@ -126,7 +126,7 @@ function ChannelLinkedLobbyCoachmark(guild) {
   let dependencyMap;
   let callback;
   const items = [guild(1377).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP];
-  const tmp = callback(guild(6065).useSelectedDismissibleContent(items, undefined, true), 2);
+  const tmp = callback(guild(6086).useSelectedDismissibleContent(items, undefined, true), 2);
   dependencyMap = tmp2;
   const tmp3 = tmp[0] === guild(1377).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP;
   callback = tmp3;
@@ -155,8 +155,8 @@ function ChannelLinkedLobbyCoachmark(guild) {
     obj[6] = channelIconWithGuild;
     return obj;
   }, items1);
-  let obj = guild(6065);
-  const coachmark = guild(8702).useCoachmark(guild.iconRef, memo);
+  let obj = guild(6086);
+  const coachmark = guild(8716).useCoachmark(guild.iconRef, memo);
   return null;
 }
 let c4 = importAllResult;

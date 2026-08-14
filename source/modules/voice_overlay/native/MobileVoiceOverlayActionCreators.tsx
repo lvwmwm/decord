@@ -1,9 +1,9 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 10848
+// Function ID: 10849
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 10832 (dispatcher)
+// Module 10848 (dispatcher)
 const result = require("set").fileFinishedImporting("modules/voice_overlay/native/MobileVoiceOverlayActionCreators.tsx");
 
 export default {

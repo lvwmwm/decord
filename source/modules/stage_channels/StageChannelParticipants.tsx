@@ -1,10 +1,10 @@
-// Module ID: 5183
-// Function ID: 5184
+// Module ID: 5204
+// Function ID: 5205
 // Name: sortKey
-// Dependencies: [4364, 1391, 5184, 1990, 3998, 1922, 4361, 4417, 5180, 1396, 5186, 4529, 3985, 4534, 5187, 4408, 2]
+// Dependencies: [4364, 1391, 5205, 1990, 3998, 1922, 4361, 4417, 5201, 1396, 5207, 4529, 3985, 4534, 5208, 4408, 2]
 // Exports: isRequestedToSpeakAll
 
-// Module 5183 (sortKey)
+// Module 5204 (sortKey)
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionReset from "handleConnectionReset";
@@ -50,7 +50,7 @@ function sortKey(speaker) {
     num = 999;
   }
   const combined = "" + num;
-  return "" + str2 + str3 + str4 + str + combined.padStart(3, "0") + connectedOn + importDefault(5186)(userNick, user);
+  return "" + str2 + str3 + str4 + str + combined.padStart(3, "0") + connectedOn + importDefault(5207)(userNick, user);
 }
 function requestToSpeakSortKey(user) {
   user = user.user;
@@ -165,7 +165,7 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       obj[3] = getComparator(voiceStateForChannel, nick);
       obj[4] = voiceStateForChannel;
       const obj3 = importDefault(4534);
-      obj[5] = require(5187) /* getHighestHoistedRole */.getHighestHoistedRole(self.guildId, userId);
+      obj[5] = require(5208) /* getHighestHoistedRole */.getHighestHoistedRole(self.guildId, userId);
       obj[6] = speaker.isSpeaker(userId, self.channelId);
       obj[7] = member1;
       obj[8] = markAllUserIdListsStale.isBlocked(user.id);

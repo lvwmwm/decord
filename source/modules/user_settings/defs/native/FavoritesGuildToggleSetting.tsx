@@ -1,9 +1,9 @@
-// Module ID: 14625
-// Function ID: 14626
+// Module ID: 14638
+// Function ID: 14639
 // Name: toggle
-// Dependencies: [8127, 10407, 1236, 3047, 9759, 9766, 9758, 2]
+// Dependencies: [8148, 10421, 1236, 3047, 9770, 14639, 9769, 2]
 
-// Module 14625 (toggle)
+// Module 14638 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -13,9 +13,11 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate() {
-    return require(9759) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
+    return require(9770) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
   },
-  useValue: require("computeIsFavoritesGuildEnabled").useIsFavoritesGuildEnabled,
+  useValue() {
+    return importDefault(14639)(false);
+  },
   onValueChange: require("getNextPositionFromChannels").setFavoritesGuildVisibilityFromSettings
 });
 const obj = {
@@ -25,9 +27,11 @@ const obj = {
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate() {
-    return require(9759) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
+    return require(9770) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
   },
-  useValue: require("computeIsFavoritesGuildEnabled").useIsFavoritesGuildEnabled,
+  useValue() {
+    return importDefault(14639)(false);
+  },
   onValueChange: require("getNextPositionFromChannels").setFavoritesGuildVisibilityFromSettings
 };
 const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/FavoritesGuildToggleSetting.tsx");

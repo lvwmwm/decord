@@ -1,8 +1,8 @@
-// Module ID: 4550
-// Function ID: 4551
-// Dependencies: [676, 4551, 4197, 4552, 709, 4198, 4553, 2]
+// Module ID: 4572
+// Function ID: 4573
+// Dependencies: [676, 4573, 4197, 4574, 709, 4198, 4575, 2]
 
-// Module 4550
+// Module 4572
 import { AppContext } from "ME";
 
 const result = require("coerceMainRoute").fileFinishedImporting("actions/ModalActionCreators.tsx");
@@ -11,14 +11,14 @@ export default {
   push(modal, props) {
     let tmp = arg2;
     if (arg2 === undefined) {
-      tmp = importDefault(4551)("modal");
+      tmp = importDefault(4573)("modal");
     }
     let APP = arg4;
     if (arg4 === undefined) {
       APP = AppContext.APP;
     }
     let obj = require(4197) /* coerceMainRoute */;
-    obj = { modal: importDefault(4552)(modal, {}, props, tmp) };
+    obj = { modal: importDefault(4574)(modal, {}, props, tmp) };
     const merged = Object.assign(arg3);
     obj.pushModal(obj);
     obj = { type: "MODAL_PUSH", modal, props, key: tmp, appContext: APP };
@@ -31,7 +31,7 @@ export default {
     const dependencyMap = closure_0;
     let tmp = closure_4;
     if (closure_4 === undefined) {
-      tmp = importDefault(4551)("modal");
+      tmp = importDefault(4573)("modal");
     }
     const AppContext = tmp;
     const _require = navigationParams;

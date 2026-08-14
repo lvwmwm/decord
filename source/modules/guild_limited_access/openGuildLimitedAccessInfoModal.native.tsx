@@ -1,10 +1,10 @@
-// Module ID: 13249
-// Function ID: 13250
+// Module ID: 13261
+// Function ID: 13262
 // Name: openGuildLimitedAccessInfoModal
-// Dependencies: [19, 17, 21, 4205, 4684, 13250, 2007, 2]
+// Dependencies: [19, 17, 21, 4205, 4706, 13262, 2007, 2]
 // Exports: default
 
-// Module 13249 (openGuildLimitedAccessInfoModal)
+// Module 13261 (openGuildLimitedAccessInfoModal)
 import "noop";
 import { Keyboard } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -33,5 +33,5 @@ export default function openGuildLimitedAccessInfoModal(arg0) {
       });
     }
   };
-  importDefault(4684).openLazy(obj);
+  importDefault(4706).openLazy(obj);
 };

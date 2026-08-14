@@ -1,7 +1,7 @@
 // Module ID: 7946
 // Function ID: 7947
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 7896, 7919]
+// Dependencies: [41, 42, 93, 95, 98, 7917, 7940]
 
 // Module 7946 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,7 +9,7 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
-const FeTurbulence = arg1;
+const FeConvolveMatrix = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeTurbulence {
+class FeConvolveMatrix {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeTurbulence);
+    tmp = _isNativeReflectConstruct(this, FeConvolveMatrix);
     tmp2 = __esModule;
-    obj = __esModule(FeTurbulence);
+    obj = __esModule(FeConvolveMatrix);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,17 +49,17 @@ class FeTurbulence {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeTurbulence, require("_isNativeReflectConstruct"));
+require("_inherits")(FeConvolveMatrix, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
-    const result = FeTurbulence(7896).warnUnimplementedFilter();
+    const result = FeConvolveMatrix(7917).warnUnimplementedFilter();
     return null;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeTurbulence, items);
-importDefaultResultResult.displayName = "FeTurbulence";
+const importDefaultResultResult = importDefaultResult(FeConvolveMatrix, items);
+importDefaultResultResult.displayName = "FeConvolveMatrix";
 obj = {};
 const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = obj;

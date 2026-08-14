@@ -1,9 +1,9 @@
-// Module ID: 16468
-// Function ID: 16469
+// Module ID: 16486
+// Function ID: 16487
 // Name: disconnect
-// Dependencies: [1390, 1391, 4361, 4417, 6965, 1236, 5170, 5301, 4227, 2]
+// Dependencies: [1390, 1391, 4361, 4417, 6986, 1236, 5191, 5322, 4227, 2]
 
-// Module 16468 (disconnect)
+// Module 16486 (disconnect)
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateVoiceState from "updateVoiceState";
@@ -35,10 +35,10 @@ function disconnect() {
     const currentClientVoiceChannelId1 = currentClientVoiceChannelId.getCurrentClientVoiceChannelId(null);
     if (null != currentClientVoiceChannelId1) {
       const intl = require(1236) /* getSystemLocale */.intl;
-      importDefault(6965).sendBotMessage(currentClientVoiceChannelId1, intl.formatToPlainString(require(1236) /* getSystemLocale */.t.XYof5G, { number: 3 }));
-      const obj3 = importDefault(6965);
-      const voiceChannel = importDefault(5170).selectVoiceChannel(null);
-      const obj4 = importDefault(5170);
+      importDefault(6986).sendBotMessage(currentClientVoiceChannelId1, intl.formatToPlainString(require(1236) /* getSystemLocale */.t.XYof5G, { number: 3 }));
+      const obj3 = importDefault(6986);
+      const voiceChannel = importDefault(5191).selectVoiceChannel(null);
+      const obj4 = importDefault(5191);
     }
   }
 }

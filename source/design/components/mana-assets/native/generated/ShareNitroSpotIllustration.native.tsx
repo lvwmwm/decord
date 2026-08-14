@@ -1,10 +1,10 @@
-// Module ID: 6769
-// Function ID: 6770
+// Module ID: 6790
+// Function ID: 6791
 // Name: ShareNitroSpotIllustration
-// Dependencies: [21, 5308, 6770, 2]
+// Dependencies: [21, 5329, 6791, 2]
 // Exports: ShareNitroSpotIllustration
 
-// Module 6769 (ShareNitroSpotIllustration)
+// Module 6790 (ShareNitroSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ShareNitroSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const ShareNitroSpotIllustration = function ShareNitroSpotIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6770);
+  obj[0] = importDefault(6791);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ShareNitroSpotIllustration = function ShareNitroSpotIllustration(wi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
 };

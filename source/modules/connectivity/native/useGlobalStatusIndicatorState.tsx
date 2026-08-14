@@ -1,10 +1,10 @@
-// Module ID: 10740
-// Function ID: 10741
+// Module ID: 10756
+// Function ID: 10757
 // Name: useGlobalStatusIndicatorState
-// Dependencies: [1391, 4416, 10741, 676, 10636, 10742, 589, 10739, 10737, 4197, 4554, 10743, 10744, 2]
+// Dependencies: [1391, 4416, 10757, 676, 10652, 10758, 589, 10755, 10753, 4197, 4576, 10759, 10760, 2]
 // Exports: useGlobalStatusIndicatorState
 
-// Module 10740 (useGlobalStatusIndicatorState)
+// Module 10756 (useGlobalStatusIndicatorState)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import { RTC_PANEL_HEIGHT } from "RTC_PANEL_HEIGHT";
@@ -19,12 +19,12 @@ export const useGlobalStatusIndicatorState = function useGlobalStatusIndicatorSt
   }
   let stateFromStores;
   let importDefault;
-  let obj = stateFromStores(10636);
+  let obj = stateFromStores(10652);
   let hasPipParticipant = obj.useHasPipParticipant({ isActivityViewFocused: false });
-  const tmp5 = importDefault(10742)();
+  const tmp5 = importDefault(10758)();
   const items = [createRTCConnection];
   stateFromStores = stateFromStores(589).useStateFromStores(items, () => channelId.getChannelId());
-  const tmp7 = importDefault(10739)();
+  const tmp7 = importDefault(10755)();
   importDefault = tmp7;
   const obj2 = stateFromStores(589);
   const tmp4 = importDefault;
@@ -42,20 +42,20 @@ export const useGlobalStatusIndicatorState = function useGlobalStatusIndicatorSt
     return isGuildStageVoiceResult;
   }, items2);
   const obj3 = stateFromStores(589);
-  let num = stateFromStores(10737).useGetStageRTCPanelHeight(stateFromStores);
+  let num = stateFromStores(10753).useGetStageRTCPanelHeight(stateFromStores);
   stateFromStores(4197);
   let tmp12 = null != tmp5;
   if (tmp12) {
-    let tmpResult = tmp(4554);
+    let tmpResult = tmp(4576);
     let channelId = tmp5.channelId;
     if (channelId == null) {
       channelId = EMPTY_STRING_SNOWFLAKE_ID;
     }
     tmp12 = tmpResult.getVoiceChannelKey(channelId) !== tmp11;
   }
-  tmpResult = tmp(10743);
+  tmpResult = tmp(10759);
   let isVoicePanelShowing = tmpResult.useIsVoicePanelShowing();
-  const tmp14 = null != tmp4(10744)();
+  const tmp14 = null != tmp4(10760)();
   if (!isVoicePanelShowing) {
     let tmp15 = !tmp12;
     if (!tmp12) {

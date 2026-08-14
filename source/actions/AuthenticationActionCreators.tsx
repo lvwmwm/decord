@@ -1,9 +1,9 @@
-// Module ID: 5867
-// Function ID: 5868
+// Module ID: 5888
+// Function ID: 5889
 // Name: handleLogout
-// Dependencies: [5, 5868, 1218, 5869, 676, 5870, 3, 4336, 709, 4198, 1222, 4550, 5168, 503, 530, 4241, 5871, 5872, 595, 707, 2]
+// Dependencies: [5, 5889, 1218, 5890, 676, 5891, 3, 4336, 709, 4198, 1222, 4572, 4562, 503, 530, 4241, 5892, 5893, 595, 707, 2]
 
-// Module 5867 (handleLogout)
+// Module 5888 (handleLogout)
 import closure_5 from "str2";
 import { setPromoEmailConsentState } from "setPromoEmailConsentState";
 import fetchFingerprint from "fetchFingerprint";
@@ -40,12 +40,12 @@ function handleLogout(arg0, ME) {
   if (null != DEFAULT_LOGGED_OUT) {
     const rootNavigationRef = require(4198) /* getRootNavigationRef */.getRootNavigationRef();
     if (null != rootNavigationRef) {
-      tmp2(4550).popAll();
+      tmp2(4572).popAll();
       obj = { index: 0, routes: null };
       const items = [{ name: "auth" }];
       obj[1] = items;
       rootNavigationRef.reset(obj);
-      const tmp2Result = tmp2(4550);
+      const tmp2Result = tmp2(4572);
     } else {
       const obj1 = { source: null };
       obj1[0] = arg0;
@@ -216,7 +216,7 @@ obj = {
     const self = this;
     ({ isMultiAccount: require, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
-    let obj = self(5168);
+    let obj = self(4562);
     obj = { url: closure_9.LOGIN_MFA(mfaType), body: null, retries: 2, oldFormErrors: true, trackedActionData: null, rejectWithError: true };
     obj = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId, login_instance_id: null };
     if (loginInstanceId == null) {
@@ -310,7 +310,7 @@ obj = {
               c4 = 2;
               c5 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(5871).fetchWebAuthnPasswordlessChallenge();
+              obj1[0] = outer1_0(5892).fetchWebAuthnPasswordlessChallenge();
               return obj1;
             }
           } else if (1 === tmp8) {
@@ -381,7 +381,7 @@ obj = {
                 tmp16 = c4.status < 500;
               }
               if (tmp16) {
-                obj2 = outer1_1(5872);
+                obj2 = outer1_1(5893);
                 c4 = 6;
                 c5 = 1;
                 const obj8 = { value: null, done: false };
@@ -437,7 +437,7 @@ obj = {
     const self = this;
     isMultiAccount = isMultiAccount.isMultiAccount;
     ({ ticket, credential, source, giftCodeSKUId } = isMultiAccount);
-    let obj = self(5168);
+    let obj = self(4562);
     obj = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1, trackedActionData: null, rejectWithError: true };
     obj = { event: isMultiAccount(503).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
     obj[3] = obj;
@@ -542,7 +542,7 @@ obj = {
               c4 = 2;
               c5 = 1;
               let obj4 = { value: null, done: false };
-              obj4[0] = outer1_1(5168).post(obj1);
+              obj4[0] = outer1_1(4562).post(obj1);
               return obj4;
             }
           } else if (1 === tmp7) {
@@ -635,7 +635,7 @@ obj = {
       DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
     }
     const importAll = arg2;
-    let obj = DEFAULT_LOGGED_OUT(5168);
+    let obj = DEFAULT_LOGGED_OUT(4562);
     obj = { url: closure_9.LOGOUT, body: null, oldFormErrors: true, trackedActionData: null };
     obj = { provider: callback2(), token: null, voip_provider: null, voip_token: null };
     const Storage = _require(595).Storage;
@@ -719,7 +719,7 @@ obj = {
     return callback(function*() {
       let closure_1 = tmp2;
       let closure_0 = tmp5;
-      const obj7 = outer1_1(5168);
+      const obj7 = outer1_1(4562);
       const obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: null };
       obj1[0] = outer1_9.VERIFY;
       const obj2 = { token: null };
@@ -738,21 +738,21 @@ obj = {
     })();
   },
   authorizePayment(token) {
-    let obj = importDefault(5168);
+    let obj = importDefault(4562);
     obj = { url: closure_9.AUTHORIZE_PAYMENT, body: obj, trackedActionData: null, rejectWithError: true };
     obj = { token };
     obj[2] = { event: require(503) /* encodeProperties */.NetworkActionNames.AUTHORIZE_PAYMENT };
     return obj.post(obj);
   },
   authorizeIPAddress(closure_0) {
-    let obj = importDefault(5168);
+    let obj = importDefault(4562);
     obj = { url: closure_9.AUTHORIZE_IP, body: obj, trackedActionData: null, rejectWithError: true };
     obj = { token: closure_0 };
     obj[2] = { event: require(503) /* encodeProperties */.NetworkActionNames.AUTHORIZE_IP };
     return obj.post(obj);
   },
   verifyResend() {
-    let obj = importDefault(5168);
+    let obj = importDefault(4562);
     obj = { url: closure_9.VERIFY_RESEND, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_VERIFY_RESEND };
     obj[2] = obj;
@@ -828,7 +828,7 @@ obj = {
                 obj1.push_voip_token = value;
               }
               dependencyMap = 1;
-              let obj4 = outer1_1(5168);
+              let obj4 = outer1_1(4562);
               let obj2 = { url: null, body: null, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
               obj2[0] = outer1_9.RESET_PASSWORD;
               obj2[1] = obj1;
@@ -975,7 +975,7 @@ obj = {
               let obj3 = { event: null };
               obj3[0] = outer1_0(503).NetworkActionNames.FORGOT_PASSWORD;
               obj1[3] = obj3;
-              const obj13 = outer1_1(5168);
+              const obj13 = outer1_1(4562);
               obj1[4] = outer1_0(530).rejectWithMigratedError();
               c4 = 2;
               c5 = 1;

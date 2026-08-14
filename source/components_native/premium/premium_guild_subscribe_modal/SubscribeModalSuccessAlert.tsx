@@ -1,10 +1,10 @@
-// Module ID: 12959
-// Function ID: 12960
+// Module ID: 12977
+// Function ID: 12978
 // Name: PremiumPaymentGuildAnimation
-// Dependencies: [32, 19, 17, 1910, 6943, 21, 4342, 712, 12960, 12961, 589, 4278, 4773, 1236, 4684, 5192, 4766, 691, 1363, 12962, 12963, 4338, 2]
+// Dependencies: [32, 19, 17, 1910, 6964, 21, 4342, 712, 12978, 12979, 589, 4278, 4795, 1236, 4706, 5213, 4788, 691, 1363, 12980, 12981, 4338, 2]
 // Exports: default
 
-// Module 12959 (PremiumPaymentGuildAnimation)
+// Module 12977 (PremiumPaymentGuildAnimation)
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "keys";
@@ -24,7 +24,7 @@ class PremiumPaymentGuildAnimation {
     tmp = jsxs();
     obj = { nextScene, onSceneComplete, loop, sceneSegments: idle, style: tmp.animation, source: null };
     tmp2 = require("componentDidMount");
-    obj[5] = require("module_12961");
+    obj[5] = require("module_12979");
     return jsx(tmp2, obj);
   }
 }
@@ -73,9 +73,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const intl = tmp2(1236).intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.YKxJCI);
   obj[2] = function onConfirm() {
-    callback2(4684).close();
-    const obj = callback2(4684);
-    callback(5192).closeApplyBoostModal();
+    callback2(4706).close();
+    const obj = callback2(4706);
+    callback(5213).closeApplyBoostModal();
   };
   obj = {
     nextScene: tmp6[0],
@@ -90,18 +90,18 @@ export default function SubscribeModalSuccessAlert(arg0) {
   };
   const items1 = [callback2(PremiumPaymentGuildAnimation, obj), ];
   const obj1 = { style: tmp.activated, start: null, end: null, colors: null, children: null };
-  const tmp11 = importDefault(4773);
+  const tmp11 = importDefault(4795);
   obj1[1] = require(691) /* keys */.HorizontalGradient.START;
   obj1[2] = require(691) /* keys */.HorizontalGradient.END;
   obj1[3] = Gradients.PREMIUM_GUILD;
   const obj2 = { style: tmp.activatedBackground, children: null };
   const obj3 = { style: tmp.activatedImage, source: null };
-  const tmp14 = importDefault(4766);
+  const tmp14 = importDefault(4788);
   const tmp15 = closure_6;
   if (tmp2Result.isThemeLight(tmp9)) {
-    let tmp8Result = tmp8(12962);
+    let tmp8Result = tmp8(12980);
   } else {
-    tmp8Result = tmp8(12963);
+    tmp8Result = tmp8(12981);
   }
   obj3[1] = tmp8Result;
   obj2[1] = callback2(tmp15, obj3);

@@ -1,10 +1,10 @@
-// Module ID: 16204
-// Function ID: 16205
+// Module ID: 16222
+// Function ID: 16223
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 1391, 1979, 676, 3979, 10366, 10614, 10625, 1231, 2]
+// Dependencies: [5, 19, 1391, 1979, 676, 3979, 10380, 10630, 10641, 1231, 2]
 // Exports: default
 
-// Module 16204 (useTransitionToConnectedActivityInVoice)
+// Module 16222 (useTransitionToConnectedActivityInVoice)
 import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";

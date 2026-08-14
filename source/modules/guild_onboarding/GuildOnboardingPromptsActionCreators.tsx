@@ -1,10 +1,10 @@
-// Module ID: 5281
-// Function ID: 5282
+// Module ID: 5302
+// Function ID: 5303
 // Name: fetchOnboardingPrompts
-// Dependencies: [5, 1218, 1990, 1910, 5282, 5283, 676, 3977, 698, 4539, 709, 530, 1403, 2]
+// Dependencies: [5, 1218, 1990, 1910, 5303, 5304, 676, 3977, 698, 4549, 709, 530, 1403, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 5281 (fetchOnboardingPrompts)
+// Module 5302 (fetchOnboardingPrompts)
 import serverPromptToClientPrompt from "serverPromptToClientPrompt";
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -166,14 +166,14 @@ function startOnboarding(guildId) {
 function _trackOnboardingDirectJoin(guildId) {
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4539) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const merged = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
   obj.step = c16;
   obj.required = true;
   obj.track(constants.GUILD_ONBOARDING_STEP_VIEWED, obj);
-  const obj3 = require(4539) /* collectGuildAnalyticsMetadata */;
+  const obj3 = require(4549) /* collectGuildAnalyticsMetadata */;
   obj = {};
   const obj4 = importDefault(698);
-  const merged1 = Object.assign(require(4539) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const merged1 = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
   obj.step = c16;
   obj.skipped = false;
   obj.is_final_step = true;
@@ -187,7 +187,7 @@ const result = require("trackCommunicationDisabled").fileFinishedImporting("modu
 export const loadOnboardingPrompts = function loadOnboardingPrompts(guildId) {
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4539) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const merged = Object.assign(require(4549) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
   obj.has_new_prompts = false;
   obj.number_of_prompts = 0;
   obj.track(constants.GUILD_ONBOARDING_LOADED, obj);

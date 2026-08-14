@@ -1,10 +1,10 @@
-// Module ID: 8129
-// Function ID: 8130
+// Module ID: 8150
+// Function ID: 8151
 // Name: useUserCommunicationDisabled
 // Dependencies: [1990, 1922, 589, 3978, 2]
 // Exports: default, useCurrentUserCommunicationDisabled, userCommunicationDisabled
 
-// Module 8129 (useUserCommunicationDisabled)
+// Module 8150 (useUserCommunicationDisabled)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

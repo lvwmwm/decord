@@ -1,9 +1,9 @@
-// Module ID: 4909
-// Function ID: 4910
+// Module ID: 4931
+// Function ID: 4932
 // Name: combineStatuses
-// Dependencies: [5, 19, 17, 4557, 21, 500, 1624, 4906, 3, 4910, 4912, 2007, 4685, 1236, 2]
+// Dependencies: [5, 19, 17, 4579, 21, 500, 1624, 4928, 3, 4932, 4934, 2007, 4707, 1236, 2]
 
-// Module 4909 (combineStatuses)
+// Module 4931 (combineStatuses)
 import closure_3 from "set";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -216,13 +216,13 @@ prototype["didHavePermission"] = function didHavePermission(arg0) {
   return storage.hasPermission(arg0);
 };
 prototype["openSettings"] = function openSettings() {
-  importDefault(4910)();
+  importDefault(4932)();
 };
 prototype["openAlertModal"] = function openAlertModal(arg0) {
   let body;
   let onConfirm;
   ({ body, onConfirm } = arg0);
-  let obj = require(4685) /* useAlertStore */;
+  let obj = require(4707) /* useAlertStore */;
   obj = { title: null, body: null, onConfirm: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.sMFVrS);

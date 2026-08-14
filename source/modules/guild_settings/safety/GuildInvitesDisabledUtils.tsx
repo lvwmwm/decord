@@ -1,10 +1,10 @@
-// Module ID: 11804
-// Function ID: 11805
+// Module ID: 11820
+// Function ID: 11821
 // Name: useInvitesDisabledPermission
-// Dependencies: [9802, 3989, 676, 589, 2]
+// Dependencies: [9813, 3989, 676, 589, 2]
 // Exports: useInvitesDisabled, useInvitesDisabledPermission, useShouldShowInvitesDisabledNotif
 
-// Module 11804 (useInvitesDisabledPermission)
+// Module 11820 (useInvitesDisabledPermission)
 import computeAlertSettings from "computeAlertSettings";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";

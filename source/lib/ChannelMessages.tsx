@@ -1,10 +1,10 @@
-// Module ID: 5030
-// Function ID: 5031
+// Module ID: 5052
+// Function ID: 5053
 // Name: mergeMessage
-// Dependencies: [676, 3, 4564, 12, 4274, 11, 5031, 5032, 5033, 5034, 2]
+// Dependencies: [676, 3, 4586, 12, 4274, 11, 5053, 5054, 5055, 5056, 2]
 // Exports: flatMapChannelMessages
 
-// Module 5030 (mergeMessage)
+// Module 5052 (mergeMessage)
 import ME from "ME";
 
 let c4;
@@ -42,7 +42,7 @@ function mergeMessage(self, id) {
     }
     return messageRecord;
   }
-  messageRecord = require(4564) /* createMinimalMessageRecord */.createMessageRecord(id);
+  messageRecord = require(4586) /* createMinimalMessageRecord */.createMessageRecord(id);
 }
 ({ MAX_MESSAGES_PER_CHANNEL: c4, MAX_LOADED_MESSAGES: c5, MAX_MESSAGE_CACHE_SIZE: closure_6, TRUNCATED_MESSAGE_VIEW_SIZE: error, MessageStates: metroImportAll } = ME);
 let c9 = new require("apply")("ChannelMessages");
@@ -944,8 +944,8 @@ prototype2["mergeDelta"] = function mergeDelta(new_messages, modified_messages, 
     const item1 = items1.forEach((id) => set.add(id.id));
     const _array = _before._array;
     const found = _array.filter((id) => !set.has(id.id));
-    const mapped = set.map((message) => set(4564).createMessageRecord(message));
-    const combined = found.concat(mapped, items1.map((message) => set(4564).createMessageRecord(message)));
+    const mapped = set.map((message) => set(4586).createMessageRecord(message));
+    const combined = found.concat(mapped, items1.map((message) => set(4586).createMessageRecord(message)));
     _before._array = combined.sort((id, id2) => callback(11).compare(id.id, id2.id));
   });
 };
@@ -1140,7 +1140,7 @@ prototype2["receiveMessage"] = function receiveMessage(nonce) {
     if (id === id1) {
       if (null != nonce.nonce) {
         if (value.id === nonce.nonce) {
-          const messageRecord = messageRecord1(4564).createMessageRecord(nonce);
+          const messageRecord = messageRecord1(4586).createMessageRecord(nonce);
           if (null != value.interactionData) {
             messageRecord.interactionData = value.interactionData;
           }
@@ -1155,7 +1155,7 @@ prototype2["receiveMessage"] = function receiveMessage(nonce) {
     }
     return self;
   } else {
-    messageRecord1 = messageRecord1(4564).createMessageRecord(nonce);
+    messageRecord1 = messageRecord1(4586).createMessageRecord(nonce);
     const lastResult = self.last();
     if (null != lastResult) {
       if (obj2.compare(nonce.id, lastResult.id) < 0) {
@@ -1188,7 +1188,7 @@ prototype2["receiveMessage"] = function receiveMessage(nonce) {
     }
     const items = [messageRecord1];
     mutation = self.merge(items);
-    let obj = messageRecord1(4564);
+    let obj = messageRecord1(4586);
   }
 };
 prototype2["receivePushNotification"] = function receivePushNotification(closure_1, closure_2) {
@@ -1202,7 +1202,7 @@ prototype2["receivePushNotification"] = function receivePushNotification(closure
   } else if (null != self.get(closure_1.id, true)) {
     return self;
   } else {
-    let obj = require(5033) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */;
+    let obj = require(5055) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */;
     const result = obj.isIOSPushNotificationRawPayloadFixExperimentEnabled();
     let tmp5 = !result;
     if (result) {
@@ -1465,7 +1465,7 @@ prototype2["loadComplete"] = function loadComplete(newMessages) {
 prototype2["addCachedMessages"] = function addCachedMessages(messages, stale) {
   let self = this;
   self = this;
-  let obj = reversed(5034);
+  let obj = reversed(5056);
   const result = obj.requireSortedDescending(messages);
   const mapped = messages.map((arg0) => outer1_10(self, arg0));
   reversed = mapped.reverse();

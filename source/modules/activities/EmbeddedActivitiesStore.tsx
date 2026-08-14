@@ -1,7 +1,7 @@
 // Module ID: 1390
 // Function ID: 1391
 // Name: participantFromServer
-// Dependencies: [32, 1218, 1391, 1979, 1922, 4370, 9809, 676, 10618, 10619, 3979, 10568, 13401, 1231, 10624, 709, 10366, 10580, 500, 1954, 7030, 589, 2]
+// Dependencies: [32, 1218, 1391, 1979, 1922, 4370, 9820, 676, 10634, 10635, 3979, 10584, 13413, 1231, 10640, 709, 10380, 10596, 500, 1954, 7052, 589, 2]
 
 // Module 1390 (participantFromServer)
 import _slicedToArray from "_slicedToArray";
@@ -31,7 +31,7 @@ function updateEmbeddedActivities(content_classification) {
   ({ application_id, launch_id, composite_instance_id, location: _location, participants } = content_classification);
   const mapped = participants.map(participantFromServer);
   let combined = importDefault;
-  const tmp3 = importDefault(10568)(application_id);
+  const tmp3 = importDefault(10584)(application_id);
   if (null != tmp3) {
     const embeddedActivityLocationChannelId = application_id(3979).getEmbeddedActivityLocationChannelId(_location);
     if (null != embeddedActivityLocationChannelId) {
@@ -205,7 +205,7 @@ function updateEmbeddedActivities(content_classification) {
         if (launchParams != null) {
           const renderInFramePool = launchParams.renderInFramePool;
         }
-        const tmp36 = combined(10568)(application_id);
+        const tmp36 = combined(10584)(application_id);
         if (null != tmp36) {
           if (null != obj3.getSessionId()) {
             const value6 = obj4.get(application_id);
@@ -253,7 +253,7 @@ function updateEmbeddedActivities(content_classification) {
                 obj5[5] = obj4;
                 obj5[6] = inviterUserId;
                 ComponentDispatch2.dispatch(constants.OPEN_EMBEDDED_ACTIVITY, obj5);
-                tmp79(10624);
+                tmp79(10640);
                 if (true === renderInFramePool) {
                   let ACTIVITY_POPOUT_WINDOW = ActivityPanelModes.DISCONNECTED;
                   const _HermesInternal2 = HermesInternal;
@@ -262,7 +262,7 @@ function updateEmbeddedActivities(content_classification) {
                   const result5 = map11.set(combined, Date.now());
                 } else if (!tmp50) {
                   if (embeddedActivityLocationChannelId2 === channelId.getChannelId()) {
-                    if (!combined(10366)(embeddedActivityLocationChannelId2)) {
+                    if (!combined(10380)(embeddedActivityLocationChannelId2)) {
                       let PIP = ActivityPanelModes.PANEL;
                     }
                     ACTIVITY_POPOUT_WINDOW = PIP;
@@ -289,7 +289,7 @@ function updateEmbeddedActivities(content_classification) {
       const _HermesInternal3 = HermesInternal;
       obj5.delete("" + application_id + ":" + tmp59);
     }
-    const someResult1 = mapped.some((userId) => application_id(13401).isActivityParticipantCurrentUserCurrentSession(userId));
+    const someResult1 = mapped.some((userId) => application_id(13413).isActivityParticipantCurrentUserCurrentSession(userId));
   }
 }
 ActivityPanelModes = ActivityPanelModes.ActivityPanelModes;
@@ -341,14 +341,14 @@ prototype["clear"] = function clear() {
 };
 prototype["getItems"] = function getItems(arg0) {
   const self = this;
-  const ContentClassificationEmbeddedActivityFilterExperiment = require(10618) /* apexExperiment */.ContentClassificationEmbeddedActivityFilterExperiment;
+  const ContentClassificationEmbeddedActivityFilterExperiment = require(10634) /* apexExperiment */.ContentClassificationEmbeddedActivityFilterExperiment;
   if (ContentClassificationEmbeddedActivityFilterExperiment.getConfig({ location: "embedded_activity_store" }).enabled) {
     if ("all" !== arg0) {
       if ("visible" === arg0) {
         let cachedVisible = self.cachedVisible;
         if (cachedVisible == null) {
           const items = self.items;
-          const found = items.filter((contentClassification) => !callback(10619).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
+          const found = items.filter((contentClassification) => !callback(10635).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
           self.cachedVisible = found;
           cachedVisible = found;
         }
@@ -357,7 +357,7 @@ prototype["getItems"] = function getItems(arg0) {
         let cachedHidden = self.cachedHidden;
         if (cachedHidden == null) {
           const items1 = self.items;
-          const found1 = items1.filter((contentClassification) => callback(10619).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
+          const found1 = items1.filter((contentClassification) => callback(10635).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
           self.cachedHidden = found1;
           cachedHidden = found1;
         }
@@ -806,7 +806,7 @@ obj = {
     let launchParams;
     ({ componentId, commandOrigin, launchParams, inviterUserId } = applicationId);
     const result = map4.set("" + applicationId.applicationId + ":" + applicationId.channelId, { isLaunching: true, componentId, inviterUserId, launchParams });
-    if (commandOrigin === require(7030) /* ApplicationCommandSectionType */.CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON) {
+    if (commandOrigin === require(7052) /* ApplicationCommandSectionType */.CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON) {
       let RESIZABLE = FocusedActivityLayouts.NO_CHAT;
     } else {
       RESIZABLE = FocusedActivityLayouts.RESIZABLE;
@@ -934,7 +934,7 @@ obj = {
     const timestamp = Date.now();
     let importDefault;
     let obj = timestamp(500);
-    importDefault = importDefault(10580)(obj.getOS());
+    importDefault = importDefault(10596)(obj.getOS());
     obj.dateRangesForSurfaces = activities.reduce((arg0, arg1) => {
       let closure_0 = arg0;
       let closure_1 = tmp;

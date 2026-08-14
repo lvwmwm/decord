@@ -1,10 +1,10 @@
-// Module ID: 5174
-// Function ID: 5175
+// Module ID: 5195
+// Function ID: 5196
 // Name: createModeratorOverwrite
 // Dependencies: [3990, 1434, 1218, 1391, 1910, 3989, 1396, 676, 506, 3994, 1399, 589, 2]
 // Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 5174 (createModeratorOverwrite)
+// Module 5195 (createModeratorOverwrite)
 import initialize from "initialize";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import fetchFingerprint from "fetchFingerprint";

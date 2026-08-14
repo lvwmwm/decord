@@ -1,10 +1,10 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 12001
+// Function ID: 12002
 // Name: PX_16
-// Dependencies: [19, 17, 21, 712, 501, 4342, 11974, 1236, 2335, 11986, 11987, 2]
+// Dependencies: [19, 17, 21, 712, 501, 4342, 11990, 1236, 2335, 12002, 12003, 2]
 // Exports: default
 
-// Module 11985 (PX_16)
+// Module 12001 (PX_16)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -53,14 +53,14 @@ export default function GuildPowerupsLevelsSection(arg0) {
   obj[0] = intl.string(listings(2335)["TXY/b0"]);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl2.string(listings(2335).aJv4PB);
-  const items1 = [callback(listings(11974), obj), ];
+  const items1 = [callback(listings(11990), obj), ];
   obj = { cardMarginRight: PX_16, cardWidth: 250, contentContainerStyle: tmp.scrollerContent, itemCount: memo.length, onScrollingChange: callback, style: tmp.scroller, children: null };
   obj[6] = memo.map((powerup, index) => {
     obj = { style: _undefined.cardContainer, children: outer1_5(listings(_undefined[10]), obj) };
     obj = { guildId: closure_0, powerup, nextPowerup: memo[index + 1], index, isScrollingRef: closure_4 };
     return outer1_5(closure_4, obj, powerup.skuId);
   });
-  items1[1] = callback(require(11986) /* items */.MarketingCardsScroller, obj);
+  items1[1] = callback(require(12002) /* items */.MarketingCardsScroller, obj);
   obj[0] = items1;
   return callback2(closure_6, obj);
 };

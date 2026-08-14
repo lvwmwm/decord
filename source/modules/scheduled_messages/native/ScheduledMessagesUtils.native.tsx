@@ -1,12 +1,15 @@
-// Module ID: 11440
-// Function ID: 11441
+// Module ID: 11456
+// Function ID: 11457
 // Name: _scheduleMessage
-// Dependencies: [5, 11441, 7258, 4062, 1236, 4306, 6039, 3943, 5801, 4310, 9024, 2007, 7281, 2]
+// Dependencies: [5, 11457, 11458, 7280, 4062, 1236, 4306, 6060, 3943, 5822, 4310, 9038, 2007, 11460, 7303, 2]
 // Exports: openScheduleMessageActionSheet, scheduleMessage
 
-// Module 11440 (_scheduleMessage)
-import ClockIcon from "ClockIcon";
+// Module 11456 (_scheduleMessage)
+import getSystemLocale from "getSystemLocale";
+import MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS";
 
+let c4;
+let c5;
 const require = arg1;
 function _scheduleMessage() {
   const self = this;
@@ -80,8 +83,8 @@ function _scheduleMessage() {
               const obj3 = { channelId: null, content: null, nonce: null, tts: null, message_reference: null, allowed_mentions: null };
               obj3[0] = c0;
               obj3[1] = c2;
-              const obj6 = callback(outer1_2[1]);
-              obj3[2] = callback(outer1_2[2]).createNonce();
+              const obj6 = callback(outer1_2[2]);
+              obj3[2] = callback(outer1_2[3]).createNonce();
               obj3[3] = message;
               obj3[4] = c4;
               obj3[5] = c5;
@@ -96,12 +99,12 @@ function _scheduleMessage() {
           } else if (2 === tmp8) {
             c4 = 0;
             (function showScheduleMessageFailureToast(message) {
-              let obj = _undefined2(_undefined3[3]);
+              let obj = _undefined2(_undefined3[4]);
               obj = { key: "SCHEDULED_MESSAGE_CREATE_FAILURE", content: null, IconComponent: null, iconColor: "icon-feedback-critical" };
-              const intl = _undefined(_undefined3[4]).intl;
+              const intl = _undefined(_undefined3[5]).intl;
               obj = { error: message };
-              obj[1] = intl.formatToPlainString(_undefined(_undefined3[4]).t.PsJmUe, obj);
-              obj[2] = _undefined(_undefined3[6]).CircleXIcon;
+              obj[1] = intl.formatToPlainString(_undefined(_undefined3[5]).t.PsJmUe, obj);
+              obj[2] = _undefined(_undefined3[7]).CircleXIcon;
               obj.open(obj);
             })(message.message);
             c6 = 3;
@@ -117,13 +120,13 @@ function _scheduleMessage() {
             return obj;
           } else {
             (function showScheduleMessageSuccessToast(c1) {
-              let obj = _undefined2(_undefined3[3]);
+              let obj = _undefined2(_undefined3[4]);
               obj = { key: "SCHEDULED_MESSAGE_CREATE_SUCCESS", content: null, IconComponent: null, iconColor: "status-positive" };
-              const intl = _undefined(_undefined3[4]).intl;
+              const intl = _undefined(_undefined3[5]).intl;
               obj = { timestamp: null };
               obj[0] = new Date(c1).valueOf();
-              obj[1] = intl.formatToPlainString(_undefined(_undefined3[4]).t["CvHu/j"], obj);
-              obj[2] = _undefined(_undefined3[5]).ClockIcon;
+              obj[1] = intl.formatToPlainString(_undefined(_undefined3[5]).t["CvHu/j"], obj);
+              obj[2] = _undefined(_undefined3[6]).ClockIcon;
               obj.open(obj);
             })(c1);
             c4 = 0;
@@ -153,7 +156,8 @@ function _scheduleMessage() {
   }
   return applyArgumentsResult;
 }
-let result = require("snowflakeSequence").fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessagesUtils.native.tsx");
+({ MAX_SCHEDULE_TIME_INTO_FUTURE_SECONDS: c4, MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS: c5 } = MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS);
+let result = require("_uploadAttachments").fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessagesUtils.native.tsx");
 
 export const scheduleMessage = function scheduleMessage(arg0) {
   const self = this;
@@ -171,11 +175,11 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
   let addResult = obj.add(1, "day");
   let result = obj.add(1, "day").startOf("day").set("hours", 9);
   let obj3 = importDefault(3943)();
-  let startOfResult = obj.add(1, "day").startOf("day");
+  const startOfResult = obj.add(1, "day").startOf("day");
   const addResult1 = obj3.add(1, "day");
   const result1 = obj3.add(1, "day").startOf("day").set("hours", 13);
   const startOfResult1 = obj3.add(1, "day").startOf("day");
-  const obj7 = importDefault(3943)();
+  let obj7 = importDefault(3943)();
   const startOfResult2 = importDefault(3943)().startOf("isoWeek");
   obj = { label: null, value: null };
   const result2 = importDefault(3943)().startOf("isoWeek").add(1, "week").set("hours", 9);
@@ -205,7 +209,7 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
       return {
         label: label.label,
         onPress() {
-          let obj = outer2_1(outer2_2[12]);
+          let obj = outer2_1(outer2_2[14]);
           obj = { scheduledTimestamp: value.toISOString() };
           const result = obj.changeScheduledMessage(value, obj);
         }
@@ -216,21 +220,21 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
   const intl5 = _require(1236).intl;
   obj4[0] = intl5.string(_require(1236).t.stHooC);
   obj4[1] = function onPress() {
-    let obj = outer1_1(outer1_2[9]);
+    let obj = outer1_1(outer1_2[10]);
     obj = { title: null, mode: "datetime", startDate: null, minimumDate: null, maximumDate: null, onSubmit: null };
-    const intl = id(outer1_2[4]).intl;
-    obj[0] = intl.string(id(outer1_2[4]).t["3+ii4F"]);
-    const tmp = id(outer1_2[11])(outer1_2[10], outer1_2.paths);
-    const obj3 = outer1_1(outer1_2[7])();
-    const startOfResult = outer1_1(outer1_2[7])().startOf("hour");
-    obj[2] = outer1_1(outer1_2[7])().startOf("hour").add(1, "hour").toDate();
-    const addResult = outer1_1(outer1_2[7])().startOf("hour").add(1, "hour");
-    obj[3] = new Date();
-    const date = new Date();
-    const obj6 = outer1_1(outer1_2[7])();
-    obj[4] = outer1_1(outer1_2[7])().add(365, "days").toDate();
+    const intl = id(outer1_2[5]).intl;
+    obj[0] = intl.string(id(outer1_2[5]).t["3+ii4F"]);
+    const tmp = id(outer1_2[12])(outer1_2[11], outer1_2.paths);
+    const defaultScheduledTime = id(outer1_2[13]).getDefaultScheduledTime();
+    obj[2] = defaultScheduledTime.toDate();
+    const obj3 = id(outer1_2[13]);
+    const obj5 = outer1_1(outer1_2[8])();
+    obj[3] = outer1_1(outer1_2[8])().add(outer1_5, "seconds").toDate();
+    const addResult = outer1_1(outer1_2[8])().add(outer1_5, "seconds");
+    const obj7 = outer1_1(outer1_2[8])();
+    obj[4] = outer1_1(outer1_2[8])().add(outer1_4, "seconds").toDate();
     obj[5] = function onSubmit(toISOString) {
-      let obj = outer1_1(outer1_2[12]);
+      let obj = outer1_1(outer1_2[14]);
       obj = { scheduledTimestamp: toISOString.toISOString() };
       const result = obj.changeScheduledMessage(closure_0, obj);
     };
@@ -238,5 +242,5 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
   };
   items1[tmp4] = obj4;
   obj2[3] = items1;
-  const result3 = _require(5801).showSimpleActionSheet(obj2);
+  const result3 = _require(5822).showSimpleActionSheet(obj2);
 };

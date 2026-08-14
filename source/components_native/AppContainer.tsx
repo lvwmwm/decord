@@ -1,9 +1,9 @@
-// Module ID: 13875
-// Function ID: 13876
+// Module ID: 13887
+// Function ID: 13888
 // Name: GestureWrapper
-// Dependencies: [32, 19, 17, 5986, 1391, 1979, 676, 1398, 21, 4342, 712, 4083, 4890, 13876, 4553, 1231, 1209, 4198, 4691, 5859, 13878, 13879, 4197, 1222, 4278, 698, 4199, 13880, 5865, 1500, 1370, 13881, 500, 10977, 13882, 13890, 4128, 13892, 1496, 10701, 10936, 10942, 13893, 4212, 13894, 13896, 13898, 13899, 13900, 15135, 15143, 1208, 2]
+// Dependencies: [32, 19, 17, 6007, 1391, 1979, 676, 1398, 21, 4342, 712, 4083, 4912, 13888, 4575, 1231, 1209, 4198, 4713, 5880, 13890, 13891, 4197, 1222, 4278, 698, 4199, 13892, 5886, 1500, 1370, 13893, 500, 10993, 13894, 13902, 4128, 13904, 1496, 10717, 10952, 10958, 13905, 4212, 13906, 13908, 13910, 13911, 13912, 15149, 15157, 1208, 2]
 
-// Module 13875 (GestureWrapper)
+// Module 13887 (GestureWrapper)
 import set from "set";
 import designConfig from "designConfig";
 import { NativeModules } from "getRootNavigationRef";
@@ -27,7 +27,7 @@ function GestureWrapper(children) {
   let isScreenLandscape;
   const tmp = createCacheKey();
   c0 = tmp;
-  isScreenLandscape = isScreenLandscape(4890).useIsScreenLandscape();
+  isScreenLandscape = isScreenLandscape(4912).useIsScreenLandscape();
   let items = [isScreenLandscape, tmp];
   const style = React.useMemo(() => {
     const items = [_undefined.flex, ];
@@ -38,14 +38,14 @@ function GestureWrapper(children) {
     items[1] = rootBackgroundColor;
     return items;
   }, items);
-  return callback2(importDefault(13876), { style, children: children.children });
+  return callback2(importDefault(13888), { style, children: children.children });
 }
 function handleNavigationOnReady() {
-  importDefault(4553).flush();
+  importDefault(4575).flush();
   const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
   ComponentDispatch.dispatch(constants.NAVIGATOR_READY);
   const routingInstrumentation = require(1209) /* _maybeBackfillMissingBreadcrumbsFromTelemetryRing */.routingInstrumentation;
-  const obj = importDefault(4553);
+  const obj = importDefault(4575);
   const result = routingInstrumentation.registerNavigationContainer(require(4198) /* getRootNavigationRef */.getRootNavigationRef());
   callback();
 }
@@ -96,7 +96,7 @@ function AppNavigationContainer(children) {
         name = first.name;
       }
     }
-    callback(13880).log("Initial Screen: " + name);
+    callback(13892).log("Initial Screen: " + name);
     return tmp;
   }, []);
   _require = React.useRef(true);
@@ -120,7 +120,7 @@ function AppNavigationContainer(children) {
       };
     }
   }, []);
-  let obj = _require(5865);
+  let obj = _require(5886);
   const navigationTheme = obj.useNavigationTheme(importDefault(4278)());
   obj = { theme: navigationTheme, ref: null, onReady: null, onStateChange: null, initialState: null, navigationInChildEnabled: true, children: null };
   let tmp = importDefault(4278)();
@@ -133,7 +133,7 @@ function AppNavigationContainer(children) {
 }
 function ShareNavigationContainer(children) {
   const tmp = importDefault(4278)();
-  const theme = require(5865) /* useNavigationTheme */.useNavigationTheme(tmp);
+  const theme = require(5886) /* useNavigationTheme */.useNavigationTheme(tmp);
   return callback2(require(1500) /* createStandardNavigationFactories */.NavigationContainer, { theme, navigationInChildEnabled: true, children: children.children });
 }
 function AppNavigationContainerOrEmpty(arg0) {
@@ -175,7 +175,7 @@ try {
     const appEntryKey = children.appEntryKey;
     let memo = appEntryKey;
     let memo1;
-    const requestGatewaySocket = memo(13881).useRequestGatewaySocket("AppContainer:" + appEntryKey);
+    const requestGatewaySocket = memo(13893).useRequestGatewaySocket("AppContainer:" + appEntryKey);
     const effect = React.useEffect(() => {
       if (!c22) {
         RNScreensTurboModule = RNScreensTurboModule.RNScreensTurboModule;
@@ -204,8 +204,8 @@ try {
     }, []);
     riveAppStatePlaybackExperiment = undefined;
     memo = undefined;
-    let obj = memo(13881);
-    riveAppStatePlaybackExperiment = memo(15143).useRiveAppStatePlaybackExperiment("AppContainer");
+    let obj = memo(13893);
+    riveAppStatePlaybackExperiment = memo(15157).useRiveAppStatePlaybackExperiment("AppContainer");
     let items = [riveAppStatePlaybackExperiment];
     memo = React.useMemo(() => {
       const items = [];

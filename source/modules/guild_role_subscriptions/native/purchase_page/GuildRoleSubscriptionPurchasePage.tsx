@@ -1,10 +1,10 @@
-// Module ID: 15723
-// Function ID: 15724
+// Module ID: 15741
+// Function ID: 15742
 // Name: Separator
-// Dependencies: [19, 17, 1302, 1391, 1910, 676, 21, 4342, 712, 4338, 1236, 1297, 10791, 14511, 14513, 14514, 647, 15724, 4535, 15726, 15727, 15728, 4805, 5308, 5819, 15729, 8803, 15731, 15732, 4058, 15733, 2]
+// Dependencies: [19, 17, 1302, 1391, 1910, 676, 21, 4342, 712, 4338, 1236, 1297, 10807, 14524, 14526, 14527, 647, 15742, 4535, 15744, 15745, 15746, 4827, 5329, 5840, 15747, 8817, 15749, 15750, 4058, 15751, 2]
 // Exports: default
 
-// Module 15723 (Separator)
+// Module 15741 (Separator)
 import "registerAsset";
 import get_ActivityIndicator from "useTrackRoleSubscriptionUpsellAnalytics";
 import handleThemeChange from "handleThemeChange";
@@ -53,7 +53,7 @@ function SocialBadge(onPress) {
   const items = [callback(require(1297) /* Button */.Icon, obj), callback(require(4338) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: text }), ];
   if (tmp5Result) {
     obj = { source: null, style: null };
-    obj[0] = importDefault(10791);
+    obj[0] = importDefault(10807);
     obj[1] = tmp.socialBadgeArrow;
     tmp5Result = callback(require(1297) /* Button */.Icon, obj);
   }

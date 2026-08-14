@@ -1,10 +1,10 @@
-// Module ID: 16935
-// Function ID: 16936
+// Module ID: 16951
+// Function ID: 16952
 // Name: ActionableNotice
-// Dependencies: [19, 17, 21, 4342, 4338, 4755, 2]
+// Dependencies: [19, 17, 21, 4342, 4338, 4777, 2]
 // Exports: default
 
-// Module 16935 (ActionableNotice)
+// Module 16951 (ActionableNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export default function ActionableNotice(arg0) {
   }
   obj1[2] = submitting;
   obj1[3] = ctaMessage;
-  obj[1] = callback(require(4755) /* Button */.Button, obj1);
+  obj[1] = callback(require(4777) /* Button */.Button, obj1);
   items1[1] = callback(View, obj);
   obj[1] = items1;
   return closure_4(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 8029
-// Function ID: 8030
+// Module ID: 8050
+// Function ID: 8051
 // Name: TableRadioRow
-// Dependencies: [19, 21, 8030, 4067, 4073, 5414, 8031, 2]
+// Dependencies: [19, 21, 8051, 4067, 4073, 5435, 8052, 2]
 // Exports: TableRadioRow
 
-// Module 8029 (TableRadioRow)
+// Module 8050 (TableRadioRow)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -28,7 +28,7 @@ export const TableRadioRow = function TableRadioRow(value) {
   ({ legacyCompat_selected, legacyCompat_onPress: dependencyMap } = value);
   const merged = Object.assign(value, Object.create(null));
   let onSelect;
-  const context = onSelect.useContext(require(8030) /* context */.TableRadioGroupContext);
+  const context = onSelect.useContext(require(8051) /* context */.TableRadioGroupContext);
   onSelect = context.onSelect;
   if (legacyCompat_selected == null) {
     legacyCompat_selected = context.selectedValue === value;
@@ -60,6 +60,6 @@ export const TableRadioRow = function TableRadioRow(value) {
     }
     onSelect(closure_0);
   };
-  obj.trailing = jsx(require(8031) /* FormRadio */.FormRadio, { selected: legacyCompat_selected });
-  return jsx(require(5414) /* TableRowInner */.TableRow, {});
+  obj.trailing = jsx(require(8052) /* FormRadio */.FormRadio, { selected: legacyCompat_selected });
+  return jsx(require(5435) /* TableRowInner */.TableRow, {});
 };

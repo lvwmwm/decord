@@ -1,10 +1,10 @@
-// Module ID: 9441
-// Function ID: 9442
+// Module ID: 9455
+// Function ID: 9456
 // Name: getNameplateAssets
 // Dependencies: [1901, 2]
 // Exports: getNameplateAssets
 
-// Module 9441 (getNameplateAssets)
+// Module 9455 (getNameplateAssets)
 const result = require("set").fileFinishedImporting("modules/collectibles/nameplates/native/NameplateUtils.tsx");
 
 export const getNameplateAssets = function getNameplateAssets(nameplate) {

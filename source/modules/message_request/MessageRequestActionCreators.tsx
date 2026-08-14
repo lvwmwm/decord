@@ -1,10 +1,10 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9790
+// Function ID: 9791
 // Name: _acceptMessageRequest
-// Dependencies: [5, 676, 530, 9780, 709, 5867, 2]
+// Dependencies: [5, 676, 530, 9791, 709, 5888, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 9779 (_acceptMessageRequest)
+// Module 9790 (_acceptMessageRequest)
 import handleLogout from "handleLogout";
 import { Endpoints } from "ME";
 
@@ -104,7 +104,7 @@ export const acceptMessageRequest = function acceptMessageRequest(arg0) {
 export const clearMessageRequestState = function clearMessageRequestState(id) {
   const HTTP = require(530) /* sendRequest */.HTTP;
   let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body: null, rejectWithError: null };
-  obj = { consent_status: require(9780) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.UNSPECIFIED };
+  obj = { consent_status: require(9791) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.UNSPECIFIED };
   obj[1] = obj;
   obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
   return HTTP.put(obj);
@@ -112,7 +112,7 @@ export const clearMessageRequestState = function clearMessageRequestState(id) {
 export const markAsMessageRequest = function markAsMessageRequest(id) {
   const HTTP = require(530) /* sendRequest */.HTTP;
   let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body: null, rejectWithError: null };
-  obj = { consent_status: require(9780) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.PENDING };
+  obj = { consent_status: require(9791) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.PENDING };
   obj[1] = obj;
   obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
   return HTTP.put(obj);
@@ -131,5 +131,5 @@ export const rejectMessageRequestBatch = function rejectMessageRequestBatch(clos
   return HTTP.put(obj);
 };
 export const fetchUserCountryCode = function fetchUserCountryCode() {
-  const locationMetadata = importDefault(5867).getLocationMetadata();
+  const locationMetadata = importDefault(5888).getLocationMetadata();
 };

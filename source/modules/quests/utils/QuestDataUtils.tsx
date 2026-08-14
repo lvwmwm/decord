@@ -1,10 +1,10 @@
-// Module ID: 7204
-// Function ID: 7205
+// Module ID: 7226
+// Function ID: 7227
 // Name: getQuestDeliveryDataForPlacement
-// Dependencies: [1994, 7205, 7206, 5202, 5205, 1403, 7221, 1208, 2]
-// Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdTrafficMetadataSealed, getIsQuestExpiredButWithinThirtyDayLookback, getQuestForPlacement, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isDismissed, isDismissible, isQuestConfigExpired, isQuestExpired
+// Dependencies: [1994, 7227, 7228, 5223, 5226, 1403, 7243, 1208, 2]
+// Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdTrafficMetadataSealed, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isDismissed, isDismissible, isQuestConfigExpired, isQuestExpired
 
-// Module 7204 (getQuestDeliveryDataForPlacement)
+// Module 7226 (getQuestDeliveryDataForPlacement)
 import _getSystemLocale from "_getSystemLocale";
 import set from "set";
 import initializeState from "initializeState";
@@ -15,16 +15,16 @@ let error;
 let metroImportAll;
 const require = arg1;
 function getQuestDeliveryDataForPlacement(arg0, adContentId) {
-  if (arg0 === require(5205) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_MOBILE_CAROUSEL) {
+  if (arg0 === require(5226) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_MOBILE_CAROUSEL) {
     let tmp3 = null;
     if (null != adContentId) {
       adDecisionByPlacementAndAdCreativeId = adDecisionByPlacementAndAdCreativeId.getAdDecisionByPlacementAndAdCreativeId(arg0, adContentId);
       let tmp8 = null;
       if (null != adDecisionByPlacementAndAdCreativeId) {
         let obj = { questId: null, adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null };
-        let tmpResult = tmp(7221);
+        let tmpResult = tmp(7243);
         obj[0] = tmpResult.getDeliveredQuestId(adDecisionByPlacementAndAdCreativeId.creative);
-        tmpResult = tmp(7221);
+        tmpResult = tmp(7243);
         obj[1] = tmpResult.getDeliveredAdCreativeId(adDecisionByPlacementAndAdCreativeId.creative);
         ({ adDecisionData: obj[2], adContext: obj[3], metadataSealed: obj[4], trafficMetadataSealed: obj[5] } = adDecisionByPlacementAndAdCreativeId);
         tmp8 = obj;
@@ -39,27 +39,27 @@ function getQuestDeliveryDataForPlacement(arg0, adContentId) {
   } else {
     const questAdDecisionByPlacement = quest.questAdDecisionByPlacement;
     const value = questAdDecisionByPlacement.get(arg0);
-    if (arg0 === tmp(5205).AdPlacement.QUEST_HOME_BANNER_DESKTOP) {
+    if (arg0 === tmp(5226).AdPlacement.QUEST_HOME_BANNER_DESKTOP) {
       if (null != value) {
         obj = { questId: null, adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null };
-        obj[0] = tmp(7221).getDeliveredQuestId(value.creative);
-        const tmpResult1 = tmp(7221);
-        obj[1] = tmp(7221).getDeliveredAdCreativeId(value.creative);
+        obj[0] = tmp(7243).getDeliveredQuestId(value.creative);
+        const tmpResult1 = tmp(7243);
+        obj[1] = tmp(7243).getDeliveredAdCreativeId(value.creative);
         ({ adDecisionData: obj7[2], adContext: obj7[3], metadataSealed: obj7[4], trafficMetadataSealed: obj7[5] } = value);
         let tmp9 = obj;
-        const tmpResult2 = tmp(7221);
+        const tmpResult2 = tmp(7243);
       }
       return tmp9;
     }
     tmp9 = null;
     if (null != value) {
       obj = { questId: null, adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null };
-      obj[0] = tmp(7221).getDeliveredQuestId(value.creative);
-      const tmpResult3 = tmp(7221);
-      obj[1] = tmp(7221).getDeliveredAdCreativeId(value.creative);
+      obj[0] = tmp(7243).getDeliveredQuestId(value.creative);
+      const tmpResult3 = tmp(7243);
+      obj[1] = tmp(7243).getDeliveredAdCreativeId(value.creative);
       ({ adDecisionData: obj4[2], adContext: obj4[3], metadataSealed: obj4[4], trafficMetadataSealed: obj4[5] } = value);
       tmp9 = obj;
-      const tmpResult4 = tmp(7221);
+      const tmpResult4 = tmp(7243);
     }
   }
 }
@@ -120,12 +120,12 @@ export const findQuestOrReplacement = function findQuestOrReplacement(questId, q
 };
 export const isDismissible = function isDismissible(closure_1) {
   const keys = Object.keys(closure_6);
-  return keys.includes(require(5205) /* QuestsVisibleMessagesChangedSource */.QuestContent[closure_1]);
+  return keys.includes(require(5226) /* QuestsVisibleMessagesChangedSource */.QuestContent[closure_1]);
 };
 export const isDismissed = function isDismissed(dismissedQuestContent) {
   const keys = Object.keys(closure_6);
-  if (keys.includes(require(5205) /* QuestsVisibleMessagesChangedSource */.QuestContent[arg1])) {
-    return tmp2(1403).hasFlag(dismissedQuestContent.dismissedQuestContent, tmp[tmp2(undefined, 5205).QuestContent[arg1]]);
+  if (keys.includes(require(5226) /* QuestsVisibleMessagesChangedSource */.QuestContent[arg1])) {
+    return tmp2(1403).hasFlag(dismissedQuestContent.dismissedQuestContent, tmp[tmp2(undefined, 5226).QuestContent[arg1]]);
   } else {
     return false;
   }
@@ -193,23 +193,6 @@ export const getQuestFormattedDate = function getQuestFormattedDate(expiresAtPre
     str = date.toLocaleDateString(locale.locale, obj);
   }
   return str;
-};
-export const getQuestForPlacement = function getQuestForPlacement(get, get2) {
-  let value = get2.get(arg2);
-  if (null != value) {
-    value = get.get(value.quest.id);
-    let tmp4;
-    if (null != value) {
-      const _Date = Date;
-      const date = new Date(value.config.expiresAt);
-      const _Date2 = Date;
-      if (valueOfResult > Date.now()) {
-        tmp4 = value;
-      }
-      valueOfResult = date.valueOf();
-    }
-    return tmp4;
-  }
 };
 export const getQuestPlacementFromQuestContent = function getQuestPlacementFromQuestContent(questContent) {
   return obj[questContent];

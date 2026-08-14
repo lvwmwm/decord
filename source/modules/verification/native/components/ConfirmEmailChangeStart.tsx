@@ -1,10 +1,10 @@
-// Module ID: 8509
-// Function ID: 8510
+// Module ID: 8531
+// Function ID: 8532
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1922, 21, 4342, 1499, 589, 8510, 691, 4242, 4062, 1236, 8511, 4338, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 21, 4342, 1499, 589, 8532, 691, 4242, 4062, 1236, 8533, 4338, 4777, 2]
 // Exports: default
 
-// Module 8509 (ConfirmEmailChangeStart)
+// Module 8531 (ConfirmEmailChangeStart)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -46,7 +46,7 @@ export default function ConfirmEmailChangeStart() {
     obj1[0] = tmp.container;
     let obj2 = { style: null, source: null };
     obj2[0] = tmp.image;
-    obj2[1] = navigation(8511);
+    obj2[1] = navigation(8533);
     const items1 = [callback2(closure_7, obj2), , , ];
     const obj3 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj3[0] = tmp.title;
@@ -61,7 +61,7 @@ export default function ConfirmEmailChangeStart() {
     obj5[0] = intl3.string(tmp2(1236).t.rXV81H);
     obj5[1] = tmp7;
     obj5[2] = tmp6[0];
-    obj4[1] = callback2(tmp2(4755).Button, obj5);
+    obj4[1] = callback2(tmp2(4777).Button, obj5);
     items1[3] = callback2(closure_6, obj4);
     obj1[1] = items1;
     obj[2] = callback3(closure_6, obj1);

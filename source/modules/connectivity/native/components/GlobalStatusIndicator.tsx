@@ -1,10 +1,10 @@
-// Module ID: 10745
-// Function ID: 10746
+// Module ID: 10761
+// Function ID: 10762
 // Name: nativeEventEmitter
-// Dependencies: [19, 17, 4054, 4358, 9835, 1391, 4416, 21, 10742, 589, 9798, 4554, 1236, 10746, 4083, 10740, 2]
+// Dependencies: [19, 17, 4054, 4358, 9846, 1391, 4416, 21, 10758, 589, 9809, 4576, 1236, 10762, 4083, 10756, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 10745 (nativeEventEmitter)
+// Module 10761 (nativeEventEmitter)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import setContent from "setContent";

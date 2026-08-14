@@ -1,9 +1,9 @@
-// Module ID: 15341
-// Function ID: 15342
+// Module ID: 15356
+// Function ID: 15357
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 15341 (dispatcher)
+// Module 15356 (dispatcher)
 const result = require("set").fileFinishedImporting("modules/guild_settings/GuildSettingsModalChannelsActionCreators.tsx");
 
 export default {

@@ -1,9 +1,9 @@
-// Module ID: 6672
-// Function ID: 6673
+// Module ID: 6693
+// Function ID: 6694
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6672 (metadata)
+// Module 6693 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PingPongPaddleIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/e0abafc7b6d6ddbe90e552c27ed5e57787149d033ae029746b4d4ae9c4d5a39a.png";

@@ -1,9 +1,9 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 15901
+// Function ID: 15902
 // Name: DirectMessageIcon
-// Dependencies: [19, 17, 1391, 1910, 3989, 4431, 1922, 676, 21, 4342, 712, 589, 1297, 4535, 1499, 4353, 4887, 4338, 1236, 4527, 9712, 4805, 9520, 5768, 8832, 2]
+// Dependencies: [19, 17, 1391, 1910, 3989, 4431, 1922, 676, 21, 4342, 712, 589, 1297, 4535, 1499, 4353, 4909, 4338, 1236, 4527, 9723, 4827, 9533, 5789, 8846, 2]
 
-// Module 15883 (DirectMessageIcon)
+// Module 15901 (DirectMessageIcon)
 import importAllResult from "allowChannelAccess";
 import { View } from "Text";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -240,7 +240,7 @@ function ChannelNameHeaderContent(channel) {
 function DMChannelNameHeader(channel) {
   channel = channel.channel;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5768)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5789)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = importAllResult.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -255,7 +255,7 @@ function DMChannelNameHeader(channel) {
   let obj = { style: items1, onPress: callback, children: null };
   items1 = [callback2().container, channel.containerStyle];
   obj[2] = callback(ChannelNameHeaderContent, { channel });
-  return callback(channel(4887).PressableOpacity, obj);
+  return callback(channel(4909).PressableOpacity, obj);
 }
 function DefaultChannelNameHeader(arg0) {
   let channel;

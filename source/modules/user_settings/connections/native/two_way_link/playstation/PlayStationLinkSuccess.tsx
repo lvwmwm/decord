@@ -1,10 +1,10 @@
-// Module ID: 10529
-// Function ID: 10530
+// Module ID: 10545
+// Function ID: 10546
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 4342, 10461, 10514, 4338, 1236, 5368, 4755, 2]
+// Dependencies: [19, 17, 21, 4342, 10477, 10530, 4338, 1236, 5389, 4777, 2]
 // Exports: PlayStationLinkSuccess
 
-// Module 10529 (PlayStationLinkSuccess)
+// Module 10545 (PlayStationLinkSuccess)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ let closure_8 = createCacheKey.createStyles({ image: { width: 124, height: 160, 
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
 
 export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
-  let obj = require(10461) /* styles */;
+  let obj = require(10477) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container, children: null };
   obj = { style: twoWayLinkStyles.content, children: null };
@@ -43,9 +43,9 @@ export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj6[1] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
   obj6[2] = onClose.onClose;
-  obj5[1] = callback(require(4755) /* Button */.Button, obj6);
+  obj5[1] = callback(require(4777) /* Button */.Button, obj6);
   obj4[2] = callback(closure_5, obj5);
-  items1[1] = callback(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  items1[1] = callback(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
   obj[1] = items1;
   return callback2(closure_5, obj);
 };

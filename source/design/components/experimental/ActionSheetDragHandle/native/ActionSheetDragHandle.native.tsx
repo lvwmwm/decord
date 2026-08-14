@@ -1,9 +1,9 @@
-// Module ID: 8721
-// Function ID: 8722
+// Module ID: 8735
+// Function ID: 8736
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 8713, 21, 4342, 712, 1236, 4083, 2]
+// Dependencies: [19, 17, 8727, 21, 4342, 712, 1236, 4083, 2]
 
-// Module 8721 (ActionSheetDragHandle)
+// Module 8735 (ActionSheetDragHandle)
 import get_ActivityIndicator from "get ActivityIndicator";
 import PX_4 from "PX_4";
 import { jsx } from "jsxProd";

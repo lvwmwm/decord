@@ -1,10 +1,10 @@
-// Module ID: 11180
-// Function ID: 11181
+// Module ID: 11196
+// Function ID: 11197
 // Name: ArrowAngleLeftUpIcon
-// Dependencies: [19, 21, 712, 4064, 11181, 2]
+// Dependencies: [19, 21, 712, 4064, 11197, 2]
 // Exports: ArrowAngleLeftUpIcon
 
-// Module 11180 (ArrowAngleLeftUpIcon)
+// Module 11196 (ArrowAngleLeftUpIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ArrowAngleLeftUpIcon = function ArrowAngleLeftUpIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11181) /* registerAsset */;
+  obj[0] = require(11197) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

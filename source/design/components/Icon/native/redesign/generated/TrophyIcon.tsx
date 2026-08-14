@@ -1,10 +1,10 @@
-// Module ID: 7771
-// Function ID: 7772
+// Module ID: 7792
+// Function ID: 7793
 // Name: TrophyIcon
-// Dependencies: [19, 21, 712, 4064, 7772, 2]
+// Dependencies: [19, 21, 712, 4064, 7793, 2]
 // Exports: TrophyIcon
 
-// Module 7771 (TrophyIcon)
+// Module 7792 (TrophyIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TrophyIcon = function TrophyIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7772) /* registerAsset */;
+  obj[0] = require(7793) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

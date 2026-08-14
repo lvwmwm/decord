@@ -1,10 +1,10 @@
-// Module ID: 8266
-// Function ID: 8267
+// Module ID: 8288
+// Function ID: 8289
 // Name: validateComponent
-// Dependencies: [1954, 4566, 1236, 38, 2]
+// Dependencies: [1954, 4588, 1236, 38, 2]
 // Exports: default
 
-// Module 8266 (validateComponent)
+// Module 8288 (validateComponent)
 const result = require("getSystemLocale").fileFinishedImporting("modules/interaction_components/validateComponent.tsx");
 
 export default function validateComponent(type, arg1, modal) {
@@ -149,7 +149,7 @@ export default function validateComponent(type, arg1, modal) {
           stringResult4 = intl10.string(tmp4(1236).t.eJEUvD);
         }
         const tmp18 = stringResult4;
-        tmp4Result = tmp4(4566);
+        tmp4Result = tmp4(4588);
       }
       return tmp18;
     } else if (values.type === tmp4(1954).ComponentType.STRING_SELECT) {

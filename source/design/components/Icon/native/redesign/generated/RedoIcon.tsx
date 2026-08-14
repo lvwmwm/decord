@@ -1,10 +1,10 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 14429
+// Function ID: 14430
 // Name: RedoIcon
-// Dependencies: [19, 21, 712, 4064, 14417, 2]
+// Dependencies: [19, 21, 712, 4064, 14430, 2]
 // Exports: RedoIcon
 
-// Module 14416 (RedoIcon)
+// Module 14429 (RedoIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const RedoIcon = function RedoIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14417) /* registerAsset */;
+  obj[0] = require(14430) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

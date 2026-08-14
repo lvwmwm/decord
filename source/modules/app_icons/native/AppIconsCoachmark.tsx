@@ -1,10 +1,10 @@
-// Module ID: 16074
-// Function ID: 16075
+// Module ID: 16092
+// Function ID: 16093
 // Name: AppIconsCoachmarkActionSheet
-// Dependencies: [19, 17, 1922, 1388, 21, 4342, 712, 589, 4007, 4310, 5437, 16075, 1297, 8779, 4338, 1236, 4755, 7706, 2]
+// Dependencies: [19, 17, 1922, 1388, 21, 4342, 712, 589, 4007, 4310, 5458, 16093, 1297, 8793, 4338, 1236, 4777, 7727, 2]
 // Exports: default
 
-// Module 16074 (AppIconsCoachmarkActionSheet)
+// Module 16092 (AppIconsCoachmarkActionSheet)
 import noop from "noop";
 import get_ActivityIndicator from "fetchCurrentAppIcon";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -55,12 +55,12 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   };
   obj = { style: tmp.info, children: null };
   obj1 = { source: null, style: null };
-  obj1[0] = importDefault(16075);
+  obj1[0] = importDefault(16093);
   obj1[1] = tmp.image;
   const items2 = [callback(closure_4, obj1), , ];
   const obj2 = { style: tmp.titleContainer, children: null };
   const obj3 = { source: null, size: null, style: null, disableColor: true };
-  obj3[0] = importDefault(8779);
+  obj3[0] = importDefault(8793);
   obj3[1] = markAsDismissed(1297).IconSizes.MEDIUM;
   obj3[2] = tmp.nitroWheel;
   const items3 = [callback(markAsDismissed(1297).Icon, obj3), ];
@@ -96,14 +96,14 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     const tmp = outer1_2;
     const result = markAsDismissed(outer1_2[17]).navigateToAppIconSettings();
   };
-  const items5 = [callback(markAsDismissed(4755).Button, obj7), ];
+  const items5 = [callback(markAsDismissed(4777).Button, obj7), ];
   const obj8 = { variant: "secondary", text: null, onPress: null };
   const intl4 = tmp2(1236).intl;
   obj8[1] = intl4.string(markAsDismissed(1236).t.iSrIIZ);
   obj8[2] = callback;
-  items5[1] = callback(markAsDismissed(4755).Button, obj8);
+  items5[1] = callback(markAsDismissed(4777).Button, obj8);
   obj6[1] = items5;
   items4[1] = callback2(closure_5, obj6);
   obj[2] = items4;
-  return callback2(markAsDismissed(5437).BottomSheet, obj);
+  return callback2(markAsDismissed(5458).BottomSheet, obj);
 };

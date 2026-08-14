@@ -1,10 +1,10 @@
-// Module ID: 11168
-// Function ID: 11169
+// Module ID: 11184
+// Function ID: 11185
 // Name: PollEmoji
-// Dependencies: [32, 5, 19, 17, 4334, 5216, 1391, 4562, 1922, 21, 4342, 712, 589, 1435, 5400, 1236, 4887, 4338, 7265, 5467, 8368, 5768, 11169, 8830, 7267, 4534, 4187, 5414, 1297, 9180, 8832, 4083, 4343, 7790, 4278, 1363, 11170, 11171, 5788, 4310, 5437, 2]
+// Dependencies: [32, 5, 19, 17, 4334, 5237, 1391, 4584, 1922, 21, 4342, 712, 589, 1435, 5421, 1236, 4909, 4338, 7287, 5488, 8390, 5789, 11185, 8844, 7289, 4534, 4187, 5435, 1297, 9194, 8846, 4083, 4343, 7811, 4278, 1363, 11186, 11187, 5809, 4310, 5458, 2]
 // Exports: default
 
-// Module 11168 (PollEmoji)
+// Module 11184 (PollEmoji)
 import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import importAllResult from "LegacyBaseButton";
@@ -50,7 +50,7 @@ function PollEmoji(emoji) {
     }
   });
   obj = { style: emoji.style, src: stateFromStores, name: emoji.name, textEmojiStyle: tmp.emojiText, fastImageStyle: tmp.emojiImage };
-  return callback(importDefault(5400), obj);
+  return callback(importDefault(5421), obj);
 }
 function PollVotesHeader(message) {
   message = message.message;
@@ -341,9 +341,9 @@ function NoResults() {
   const tmp6 = closure_7;
   const tmp8 = closure_6;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(11170);
+    let tmp2Result = tmp2(11186);
   } else {
-    tmp2Result = tmp2(11171);
+    tmp2Result = tmp2(11187);
   }
   obj[1] = tmp2Result;
   const items = [closure_14(tmp8, obj), , ];
@@ -434,7 +434,7 @@ let closure_18 = importAllResult.forwardRef((answer, ref) => {
   obj2[3] = items3;
   items2[2] = closure_15(answer(4338).Text, obj2);
   obj[6] = items2;
-  return closure_15(answer(4887).PressableHighlight, obj);
+  return closure_15(answer(4909).PressableHighlight, obj);
 });
 let closure_20 = { code: "function PollVotesActionSheetTsx1(){const{opacity}=this.__closure;return{flex:1,opacity:opacity.get(),marginBottom:32};}" };
 let result = require("noop").fileFinishedImporting("modules/polls/native/PollVotesActionSheet.tsx");

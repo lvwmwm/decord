@@ -1,10 +1,10 @@
-// Module ID: 9013
-// Function ID: 9014
+// Module ID: 9027
+// Function ID: 9028
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 4342, 8990, 1370, 5368, 4338, 1236, 6051, 8072, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 9004, 1370, 5389, 4338, 1236, 6072, 8093, 2]
 // Exports: default
 
-// Module 9013 (EditGuildEventModalNavbar)
+// Module 9027 (EditGuildEventModalNavbar)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -23,11 +23,11 @@ export default function EditGuildEventModalNavbar(screen) {
   let tmp7;
   screen = screen.screen;
   const tmp = callback4();
-  if (require(8990) /* EditGuildEventScreens */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
+  if (require(9004) /* EditGuildEventScreens */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items = [1, 3];
-  } else if (tmp2(8990).EditGuildEventScreens.DETAILS === screen) {
+  } else if (tmp2(9004).EditGuildEventScreens.DETAILS === screen) {
     items = [2, 3];
-  } else if (tmp2(8990).EditGuildEventScreens.PREVIEW === screen) {
+  } else if (tmp2(9004).EditGuildEventScreens.PREVIEW === screen) {
     items = [3, 3];
   } else {
     tmp2(1370).assertNever(screen);
@@ -46,10 +46,10 @@ export default function EditGuildEventModalNavbar(screen) {
   const intl2 = tmp2(1236).intl;
   obj3[0] = intl2.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj3[1] = screen.onClose;
-  obj3[2] = importDefault(8072);
+  obj3[2] = importDefault(8093);
   obj3[3] = tmp.rightButton;
-  obj2[1] = callback2(require(6051) /* HeaderActionButton */.HeaderActionButton, obj3);
+  obj2[1] = callback2(require(6072) /* HeaderActionButton */.HeaderActionButton, obj3);
   items1[2] = callback2(View, obj2);
   obj[2] = items1;
-  return callback3(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback3(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

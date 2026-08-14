@@ -1,10 +1,10 @@
-// Module ID: 16089
-// Function ID: 16090
+// Module ID: 16107
+// Function ID: 16108
 // Name: ConnectionIcon
-// Dependencies: [19, 17, 4383, 5039, 1388, 21, 4342, 712, 4072, 1628, 589, 5041, 5771, 5768, 5788, 16090, 4310, 16092, 2007, 5436, 5437, 4753, 16078, 4338, 1236, 2853, 9458, 4755, 12302, 1364, 1435, 4757, 5778, 5774, 2]
+// Dependencies: [19, 17, 4383, 5061, 1388, 21, 4342, 712, 4072, 1628, 589, 5063, 5792, 5789, 5809, 16108, 4310, 16110, 2007, 5457, 5458, 4775, 16096, 4338, 1236, 2853, 9471, 4777, 12320, 1364, 1435, 4779, 5799, 5795, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 16089 (ConnectionIcon)
+// Module 16107 (ConnectionIcon)
 import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase";
 import { View } from "IncentivizedAccountLinkConfirmationBottomSheet";
 import addApplication from "addApplication";
@@ -29,10 +29,10 @@ function ConnectionIcon(arg0) {
   const source = require(1435) /* getAvatarURL */.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
   obj = { size: null, source: null, disableColor: true, style: null };
   const obj2 = require(1435) /* getAvatarURL */;
-  obj[0] = tmp2(4757).IconSizes.CUSTOM;
+  obj[0] = tmp2(4779).IconSizes.CUSTOM;
   obj[1] = source;
   obj[3] = tmp.connectionIcon;
-  obj[1] = callback(importDefault(4757), obj);
+  obj[1] = callback(importDefault(4779), obj);
   return callback(View, obj);
 }
 function ApplicationIcon(application) {
@@ -42,9 +42,9 @@ function ApplicationIcon(application) {
   if (null != application) {
     obj = { game: null, size: null };
     obj[0] = application;
-    obj[1] = require(5778) /* GameIcon */.GameIconSizes.NORMAL;
-    tmpResult = tmp(importDefault(5778), obj);
-    const tmp6 = importDefault(5778);
+    obj[1] = require(5799) /* GameIcon */.GameIconSizes.NORMAL;
+    tmpResult = tmp(importDefault(5799), obj);
+    const tmp6 = importDefault(5799);
   }
   obj[1] = tmpResult;
   return closure_8(View, obj);
@@ -215,8 +215,8 @@ export const useShouldShowConnectionDeprecationBottomSheet = function useShouldS
       replacedBy = migrationData.replacedBy;
     }
   }
-  const getOrFetchApplication = deprecatedPlatformTypes(5774).useGetOrFetchApplication(replacedBy);
-  const tmp5 = importDefault(5771)(getOrFetchApplication);
+  const getOrFetchApplication = deprecatedPlatformTypes(5795).useGetOrFetchApplication(replacedBy);
+  const tmp5 = importDefault(5792)(getOrFetchApplication);
   ({ hasAlreadyLinked, canStartAuthorization } = tmp5);
   if (!fetchingConnections) {
     fetchingConnections = !tmp5.fetched;

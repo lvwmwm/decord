@@ -1,10 +1,10 @@
-// Module ID: 12116
-// Function ID: 12117
+// Module ID: 12134
+// Function ID: 12135
 // Name: SuggestedFriendsSectionHeader
-// Dependencies: [32, 19, 17, 676, 12117, 21, 4342, 712, 5307, 4761, 4338, 4187, 1435, 8497, 1297, 1236, 4065, 4191, 11, 8012, 7790, 4766, 691, 4755, 698, 2]
+// Dependencies: [32, 19, 17, 676, 12135, 21, 4342, 712, 5328, 4783, 4338, 4187, 1435, 8519, 1297, 1236, 4065, 4191, 11, 8033, 7811, 4788, 691, 4777, 698, 2]
 // Exports: default
 
-// Module 12116 (SuggestedFriendsSectionHeader)
+// Module 12134 (SuggestedFriendsSectionHeader)
 import _slicedToArray from "_slicedToArray";
 import Form from "Form";
 import { View } from "hexToRgba";
@@ -64,7 +64,7 @@ function SuggestionRow(suggestion) {
   obj[6] = function onPress() {
     return onSelect(suggestion.suggested_user.id);
   };
-  return callback(suggestion(8497).TableCheckboxRow, obj);
+  return callback(suggestion(8519).TableCheckboxRow, obj);
 }
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null, header: null, title: null, subtitle: null, list: null, divider: null, linearGradient: null, redesignButton: null, sectionHeader: null };
@@ -108,7 +108,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   const tmp4 = first(React.useState(reduced), 2);
   first = tmp4[0];
   React = tmp4[1];
-  let obj3 = friendSuggestions(4761);
+  let obj3 = friendSuggestions(4783);
   const fontScale = obj3.useFontScale();
   const sum = onSubmit(712).space.PX_16 + onSubmit(712).space.PX_32 + 40;
   let items1 = [first];
@@ -190,13 +190,13 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   obj[0] = obj1;
   obj[1] = memo;
   obj[2] = callback1;
-  const items5 = [callback(friendSuggestions(7790).FlashList, obj), , ];
+  const items5 = [callback(friendSuggestions(7811).FlashList, obj), , ];
   obj2 = { style: tmp.linearGradient, start: null, end: null, pointerEvents: "none", colors: null };
   const someResult = keys.some((arg0) => first[arg0]);
   obj2[1] = friendSuggestions(691).VerticalGradient.START;
   obj2[2] = friendSuggestions(691).VerticalGradient.END;
   obj2[4] = items;
-  items5[1] = callback(onSubmit(4766), obj2);
+  items5[1] = callback(onSubmit(4788), obj2);
   obj3 = { style: tmp.redesignButton, children: null };
   obj4 = { variant: "primary", size: "lg", text: null, onPress: null, disabled: null };
   let intl = friendSuggestions(1236).intl;
@@ -212,7 +212,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     });
   };
   obj4[4] = !someResult;
-  obj3[1] = callback(friendSuggestions(4755).Button, obj4);
+  obj3[1] = callback(friendSuggestions(4777).Button, obj4);
   items5[2] = callback(callback, obj3);
   obj[1] = items5;
   return callback2(callback, obj);

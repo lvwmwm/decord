@@ -1,10 +1,10 @@
-// Module ID: 15636
-// Function ID: 15637
+// Module ID: 15654
+// Function ID: 15655
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 4342, 6070, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 6091, 4338, 1236, 2]
 // Exports: ForYouEmptyState
 
-// Module 15636 (ForYouEmptyState)
+// Module 15654 (ForYouEmptyState)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ export const ForYouEmptyState = function ForYouEmptyState(height) {
   const tmp = callback3();
   let obj = { style: items, children: null };
   items = [tmp.container, { height: height.height }];
-  obj = { style: tmp.image, children: callback(require(6070) /* AccountAgeTier10LargeBadge */.MailboxSpotIllustration, { scale: 0.75 }) };
+  obj = { style: tmp.image, children: callback(require(6091) /* AccountAgeTier10LargeBadge */.MailboxSpotIllustration, { scale: 0.75 }) };
   const items1 = [callback(View, obj), , ];
   obj = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items2, children: null };
   items2 = [, ];

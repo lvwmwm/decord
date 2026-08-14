@@ -1,10 +1,10 @@
-// Module ID: 7361
-// Function ID: 7362
+// Module ID: 7383
+// Function ID: 7384
 // Name: _fetchGameAutocomplete
-// Dependencies: [5, 4873, 676, 4874, 709, 530, 2]
+// Dependencies: [5, 4895, 676, 4896, 709, 530, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 7361 (_fetchGameAutocomplete)
+// Module 7383 (_fetchGameAutocomplete)
 import sendRequest from "sendRequest";
 import set from "set";
 import { Endpoints } from "ME";

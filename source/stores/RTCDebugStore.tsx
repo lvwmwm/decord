@@ -1,10 +1,10 @@
-// Module ID: 10893
-// Function ID: 10894
+// Module ID: 10909
+// Function ID: 10910
 // Name: updateStats
-// Dependencies: [32, 4393, 1922, 676, 4406, 10894, 4441, 709, 589, 2]
+// Dependencies: [32, 4393, 1922, 676, 4406, 10910, 4441, 709, 589, 2]
 // Exports: getLastGraphValue, keySection, parseSection
 
-// Module 10893 (updateStats)
+// Module 10909 (updateStats)
 import _slicedToArray from "_slicedToArray";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -206,7 +206,7 @@ prototype2["getInboundStats"] = function getInboundStats(arg0, context) {
   if (found != null) {
     name = found.codec.name;
   }
-  const obj = { codec: name, resolution: null, bitrateEstimate: "Array", fps: "r" };
+  const obj = { codec: name, resolution: null, bitrateEstimate: "Array", fps: true };
   let resolution;
   if (found != null) {
     resolution = found.resolution;
@@ -327,7 +327,7 @@ obj = {
     section = section.section;
   },
   RTC_DEBUG_MODAL_OPEN_REPLAY: function handleOpenReplay() {
-    importAll(10894).chooseReplayPath();
+    importAll(10910).chooseReplayPath();
   },
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: function handleOpenReplayAtPath(path) {
     path = path.path;

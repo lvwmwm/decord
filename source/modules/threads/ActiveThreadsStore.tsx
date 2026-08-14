@@ -1,9 +1,9 @@
-// Module ID: 5264
-// Function ID: 5265
+// Module ID: 5285
+// Function ID: 5286
 // Name: handleThreadCreateOrUpdate
 // Dependencies: [1395, 1391, 12, 589, 11, 709, 2]
 
-// Module 5264 (handleThreadCreateOrUpdate)
+// Module 5285 (handleThreadCreateOrUpdate)
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Store } from "initialize";

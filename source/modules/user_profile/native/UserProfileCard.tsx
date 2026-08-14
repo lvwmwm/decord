@@ -1,10 +1,10 @@
-// Module ID: 5815
-// Function ID: 5816
+// Module ID: 5836
+// Function ID: 5837
 // Name: Divider
-// Dependencies: [19, 17, 5816, 21, 4342, 712, 4887, 4338, 5818, 1367, 2]
+// Dependencies: [19, 17, 5837, 21, 4342, 712, 4909, 4338, 5839, 1367, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 5815 (Divider)
+// Module 5836 (Divider)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
@@ -132,7 +132,7 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
   }
   items[2] = tmp6Result;
   if (tmp6Result) {
-    tmp6Result = tmp6(require(5818) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, { size: "sm" });
+    tmp6Result = tmp6(require(5839) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, { size: "sm" });
   }
   items[3] = tmp6Result;
   obj[1] = items;
@@ -146,7 +146,7 @@ export const UserProfileFormRow = function UserProfileFormRow(arg0) {
   }
   items1[1] = tmp6Result1;
   obj[5] = items1;
-  return closure_7(require(4887) /* PressableBase */.PressableOpacity, obj);
+  return closure_7(require(4909) /* PressableBase */.PressableOpacity, obj);
 };
 export const UserProfileCardRows = function UserProfileCardRows(children) {
   let closure_0;

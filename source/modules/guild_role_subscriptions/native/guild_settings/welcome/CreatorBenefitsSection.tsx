@@ -1,10 +1,10 @@
-// Module ID: 16857
-// Function ID: 16858
+// Module ID: 16873
+// Function ID: 16874
 // Name: EarningPreview
-// Dependencies: [19, 17, 14506, 21, 4342, 712, 1363, 4278, 4338, 1236, 5308, 16858, 16859, 16860, 16861, 16862, 16863, 16864, 16865, 2]
+// Dependencies: [19, 17, 14519, 21, 4342, 712, 1363, 4278, 4338, 1236, 5329, 16874, 16875, 16876, 16877, 16878, 16879, 16880, 16881, 2]
 // Exports: default
 
-// Module 16857 (EarningPreview)
+// Module 16873 (EarningPreview)
 import "set";
 import { View } from "registerAsset";
 import { CREATOR_REVENUE_SHARE_PERCENTAGE as closure_4 } from "MAX_SUBSCRIPTION_TIERS";
@@ -41,8 +41,8 @@ function EarningPreview() {
   const items3 = [closure_6(View, obj2), ];
   const obj4 = { style: tmp4.earningMetricsAvatar, source: null };
   const tmp8 = obj.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
-  obj4[1] = importDefault(16858);
-  items3[1] = closure_5(importDefault(5308), obj4);
+  obj4[1] = importDefault(16874);
+  items3[1] = closure_5(importDefault(5329), obj4);
   obj[1] = items3;
   obj[1] = closure_6(View, obj);
   return closure_5(View, obj);
@@ -59,15 +59,15 @@ function ConsistentEarningBenefit() {
   ({ horizontalContainer: arr2[0], benefitAvatars: arr2[1] } = tmp4);
   const tmp3 = importDefault(4278)();
   if (obj4.isThemeDark(tmp3)) {
-    let tmpResult = tmp(16859);
+    let tmpResult = tmp(16875);
   } else {
-    tmpResult = tmp(16860);
+    tmpResult = tmp(16876);
   }
   const items2 = [callback(BenefitAvatar, { avatarSource: tmpResult }), , ];
   obj4 = require(1363) /* AccessibilityAnnouncer */;
-  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16861) });
-  const obj1 = { avatarSource: importDefault(16861) };
-  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16862) });
+  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16877) });
+  const obj1 = { avatarSource: importDefault(16877) };
+  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16878) });
   obj[1] = items2;
   items[2] = closure_6(View, obj);
   obj[1] = items;
@@ -81,12 +81,12 @@ function FollowerAwardBenefit() {
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.qsKRUQ);
   const items = [callback(require(4338) /* Text */.Text, obj), , ];
   obj = { style: tmp.socialIllo, source: null };
-  obj[1] = importDefault(16863);
-  items[1] = callback(importDefault(5308), obj);
+  obj[1] = importDefault(16879);
+  items[1] = callback(importDefault(5329), obj);
   const obj1 = { style: tmp.lanyardIllo, source: null };
-  const tmp2 = importDefault(5308);
-  obj1[1] = importDefault(16864);
-  items[2] = callback(importDefault(5308), obj1);
+  const tmp2 = importDefault(5329);
+  obj1[1] = importDefault(16880);
+  items[2] = callback(importDefault(5329), obj1);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -110,14 +110,14 @@ function RevenueShareBenefit() {
   const tmp3 = importDefault(4278)();
   const tmp5 = closure_6;
   const tmp6 = View;
-  obj1[1] = importDefault(16865);
-  items2[2] = closure_5(importDefault(5308), obj1);
+  obj1[1] = importDefault(16881);
+  items2[2] = closure_5(importDefault(5329), obj1);
   obj[1] = items2;
   return tmp5(tmp6, obj);
 }
 function BenefitAvatar(avatarSource) {
   const tmp = createCacheKey();
-  obj = { style: tmp.benefitAvatarContainer, children: callback(importDefault(5308), obj) };
+  obj = { style: tmp.benefitAvatarContainer, children: callback(importDefault(5329), obj) };
   obj = { source: avatarSource.avatarSource, style: tmp.benefitAvatar };
   return callback(View, obj);
 }

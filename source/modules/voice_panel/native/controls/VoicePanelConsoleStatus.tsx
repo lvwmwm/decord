@@ -1,10 +1,10 @@
-// Module ID: 16324
-// Function ID: 16325
+// Module ID: 16342
+// Function ID: 16343
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 11705, 11708, 11703, 21, 4342, 712, 11704, 16319, 4083, 4689, 16325, 4754, 5821, 1297, 4338, 4887, 10853, 1236, 16326, 2]
+// Dependencies: [19, 11721, 11724, 11719, 21, 4342, 712, 11720, 16337, 4083, 4711, 16343, 4776, 5842, 1297, 4338, 4909, 10869, 1236, 16344, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 16324 (VoicePanelConsoleStatus)
+// Module 16342 (VoicePanelConsoleStatus)
 import VoicePanelVisualEffectView from "VoicePanelVisualEffectView";
 import { EDGE_GUTTER } from "CARD_SIZE";
 import { CONTROLS_HEIGHT } from "VoicePanelControlsModes";

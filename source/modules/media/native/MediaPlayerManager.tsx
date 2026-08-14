@@ -1,10 +1,10 @@
-// Module ID: 13857
-// Function ID: 13858
+// Module ID: 13869
+// Function ID: 13870
 // Name: _initialize
-// Dependencies: [17, 1390, 4555, 1391, 4562, 3989, 6923, 676, 9809, 13858, 505, 3, 644, 705, 4523, 4198, 709, 500, 643, 6965, 9812, 2]
+// Dependencies: [17, 1390, 4577, 1391, 4584, 3989, 6944, 676, 9820, 13870, 505, 3, 644, 705, 4523, 4198, 709, 500, 643, 6986, 9823, 2]
 // Exports: isPlaybackComplete
 
-// Module 13857 (_initialize)
+// Module 13869 (_initialize)
 import get_ActivityIndicator from "set";
 import participantFromServer from "participantFromServer";
 import withEqualityFn from "withEqualityFn";
@@ -28,7 +28,7 @@ let map1;
 let closure_16 = new require("ensureGuildLoaded")("MediaPlayerManager");
 let obj = keys.create((arg0) => {
   let closure_0 = arg0;
-  return {
+  const obj = {
     activeMediaPlayerSource: "HermesInternal",
     mediaSourceMessage: "PX_16",
     canAccessMedia: "disabled",
@@ -36,13 +36,15 @@ let obj = keys.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "ct",
-    showPip: "button-action",
+    showPip: "setInitialState",
     closePip() {
       callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
     },
-    displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: null
+    displayedMediaItemIdsPerChannel: "\u{1F469}\u{1F3FE}\u200D\u2764\uFE0F\u200D\u{1F48B}\u200D\u{1F469}\u{1F3FB}",
+    currentlyDisplayedChannelId: true
   };
+  obj[9] = {};
+  return obj;
 });
 class MediaPlayerManager extends tmp8 {
   constructor() {
@@ -349,13 +351,13 @@ prototype["getOrFetchMediaSourceMessage"] = function getOrFetchMediaSourceMessag
         const obj = { channelId: null, messageId: null };
         obj[0] = channelId;
         obj[1] = messageId;
-        const message1 = self(6965).fetchMessage(obj);
+        const message1 = self(6986).fetchMessage(obj);
         message1.then((arg0) => {
           if (null != arg0) {
             const result = self.handleMediaSourceMessageUpdated(arg0);
           }
         });
-        const obj2 = self(6965);
+        const obj2 = self(6986);
       }
       obj4 = message;
     }

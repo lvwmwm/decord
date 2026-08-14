@@ -1,9 +1,9 @@
-// Module ID: 15684
-// Function ID: 15685
+// Module ID: 15702
+// Function ID: 15703
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 676, 21, 8454, 4039, 8088, 5959, 4278, 4342, 712, 4034, 8086, 8638, 8277, 1236, 2]
+// Dependencies: [19, 676, 21, 8476, 4039, 8109, 5980, 4278, 4342, 712, 4034, 8107, 8652, 8299, 1236, 2]
 
-// Module 15684 (ICYMIMessageRowPreview)
+// Module 15702 (ICYMIMessageRowPreview)
 import importAllResult from "noop";
 import { MessageEmbedTypes } from "ME";
 import { jsx } from "jsxProd";
@@ -61,7 +61,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(8638), obj);
+  return setting2(messageOptions(8652), obj);
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo((message) => {
@@ -168,11 +168,11 @@ const memoResult2 = importAllResult.memo((message) => {
     obj[4] = merged.pointerEvents;
     return obj;
   }, items);
-  const tmp3 = merged(5959)(message);
+  const tmp3 = merged(5980)(message);
   let obj = {};
   const merged1 = Object.assign(memo);
   obj = {};
-  const merged2 = Object.assign(message(8088).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(8109).DEFAULT_OPTIONS);
   obj.ignoreMentioned = true;
   obj.renderReplies = false;
   obj.renderThreadEmbeds = false;

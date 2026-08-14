@@ -1,10 +1,10 @@
-// Module ID: 4859
-// Function ID: 4860
+// Module ID: 4881
+// Function ID: 4882
 // Name: AtIcon
-// Dependencies: [19, 21, 712, 4064, 4811, 2]
+// Dependencies: [19, 21, 712, 4064, 4833, 2]
 // Exports: AtIcon
 
-// Module 4859 (AtIcon)
+// Module 4881 (AtIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const AtIcon = function AtIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4811) /* registerAsset */;
+  obj[0] = require(4833) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

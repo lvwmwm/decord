@@ -1,8 +1,8 @@
-// Module ID: 14784
-// Function ID: 14785
-// Dependencies: [19, 8127, 676, 21, 1236, 10407, 13947, 2]
+// Module ID: 14798
+// Function ID: 14799
+// Dependencies: [19, 8148, 676, 21, 1236, 10421, 13959, 2]
 
-// Module 14784
+// Module 14798
 import importAllResult from "noop";
 import { MobileSetting } from "MobileSetting";
 import { MarketingURLs } from "ME";
@@ -12,7 +12,7 @@ const require = arg1;
 let c3 = importAllResult;
 const memoResult = importAllResult.memo(() => {
   const node = importAllResult.useMemo(() => {
-    let obj = callback(10407);
+    let obj = callback(10421);
     obj = { sections: null };
     obj = { label: null, settings: null, subLabel: null };
     const intl = callback(1236).intl;
@@ -38,7 +38,7 @@ const memoResult = importAllResult.memo(() => {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return jsx(importDefault(13947), { node });
+  return jsx(importDefault(13959), { node });
 });
 const result = require("ME").fileFinishedImporting("modules/user_settings/advanced/native/SettingsAdvancedScreen.tsx");
 

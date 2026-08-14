@@ -1,9 +1,9 @@
-// Module ID: 5305
-// Function ID: 5306
+// Module ID: 5326
+// Function ID: 5327
 // Name: get
 // Dependencies: [589, 12, 4168, 709, 2]
 
-// Module 5305 (get)
+// Module 5326 (get)
 import { Store } from "initialize";
 
 const require = arg1;

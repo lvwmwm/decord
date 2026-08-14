@@ -1,10 +1,10 @@
-// Module ID: 14230
-// Function ID: 14231
+// Module ID: 14243
+// Function ID: 14244
 // Name: FamilyCenterLinkRow
-// Dependencies: [19, 17, 7045, 21, 4342, 14231, 14232, 2]
+// Dependencies: [19, 17, 7067, 21, 4342, 14244, 14245, 2]
 // Exports: default
 
-// Module 14230 (FamilyCenterLinkRow)
+// Module 14243 (FamilyCenterLinkRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { UserLinkStatus } from "items";
@@ -22,9 +22,9 @@ export default function FamilyCenterLinkRow(children) {
   let obj = { userId: otherUser.id, children: null };
   const tmp = callback3();
   obj = { otherUser, status: UserLinkStatus.PENDING };
-  const items = [callback(importDefault(14232), obj), ];
+  const items = [callback(importDefault(14245), obj), ];
   obj = { style: tmp.actionContainer, children: children.actions };
   items[1] = callback(View, obj);
   obj[1] = items;
-  return callback2(importDefault(14231), obj);
+  return callback2(importDefault(14244), obj);
 };

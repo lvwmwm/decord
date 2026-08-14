@@ -1,10 +1,10 @@
-// Module ID: 7273
-// Function ID: 7274
+// Module ID: 7295
+// Function ID: 7296
 // Name: collectForumAnalyticsMetadata
-// Dependencies: [5264, 3991, 7274, 5963, 1391, 4681, 3989, 4680, 5936, 676, 1398, 1235, 7275, 1400, 7276, 11, 7277, 2]
+// Dependencies: [5285, 3991, 7296, 5984, 1391, 4703, 3989, 4702, 5957, 676, 1398, 1235, 7297, 1400, 7298, 11, 7299, 2]
 // Exports: collectForumPostAnalyticsMetadata, convertSortOrderToReadableString, getForumChannelSessionId, getForumPostAttachmentMimetypes, getForumPostDraftAppliedTagIds, getForumPostDraftNumAttachments, getNumActiveThreads
 
-// Module 7273 (collectForumAnalyticsMetadata)
+// Module 7295 (collectForumAnalyticsMetadata)
 import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
 import storeThread from "storeThread";
 import updateFromGuild from "updateFromGuild";
@@ -57,23 +57,23 @@ function collectForumAnalyticsMetadata(sessionId) {
       obj[3] = mapped;
       obj[4] = channel.hasFlag(ChannelFlags.REQUIRE_TAG);
       obj[5] = getUncachedChannelPermissions.can(Permissions.SEND_MESSAGES, channel);
-      obj[6] = importDefault(7276).getFilterTagIdsAnalytics();
-      const obj3 = importDefault(7276);
-      obj[7] = importDefault(7276).getSortOrderAnalytics(channel.id);
+      obj[6] = importDefault(7298).getFilterTagIdsAnalytics();
+      const obj3 = importDefault(7298);
+      obj[7] = importDefault(7298).getSortOrderAnalytics(channel.id);
       if (sessionId == null) {
-        let tmp8Result = tmp8(7275);
+        let tmp8Result = tmp8(7297);
         sessionId = tmp8Result.getForumChannelSessionId(channel.id);
       }
       obj[8] = sessionId;
-      tmp8Result = tmp8(7276);
+      tmp8Result = tmp8(7298);
       obj[9] = tmp8Result.getLayoutAnalytics(channel.id);
       obj[10] = channel.defaultSortOrder;
-      const obj4 = importDefault(7276);
-      obj[11] = importDefault(7276).getTagSettingAnalytics(channel.id);
+      const obj4 = importDefault(7298);
+      obj[11] = importDefault(7298).getTagSettingAnalytics(channel.id);
       obj[12] = channel.defaultForumLayout;
       obj[13] = channel.isModeratorReportChannel();
       tmp = obj;
-      const tmp8Result1 = importDefault(7276);
+      const tmp8Result1 = importDefault(7298);
     }
   }
   return tmp;
@@ -81,7 +81,7 @@ function collectForumAnalyticsMetadata(sessionId) {
 const result = require("updateFromGuild").fileFinishedImporting("modules/forums/tracking/TrackingUtils.tsx");
 
 export const getForumChannelSessionId = function getForumChannelSessionId(arg0) {
-  return importDefault(7275).getForumChannelSessionId(arg0);
+  return importDefault(7297).getForumChannelSessionId(arg0);
 };
 export const convertSortOrderToReadableString = function convertSortOrderToReadableString(sortOrder) {
   if (require(1400) /* set */.ThreadSortOrder.CREATION_DATE === sortOrder) {
@@ -247,14 +247,14 @@ export const collectForumPostAnalyticsMetadata = function collectForumPostAnalyt
           }
           obj.forum_post_applied_tag_ids = items;
           obj.forum_post_is_pinned = channel.hasFlag(ChannelFlags.PINNED);
-          let tmp8Result = tmp8(7277);
+          let tmp8Result = tmp8(7299);
           const readStateSnapshotAnalytics = tmp8Result.getReadStateSnapshotAnalytics(channel.id);
           let isNew;
           if (readStateSnapshotAnalytics != null) {
             isNew = readStateSnapshotAnalytics.isNew;
           }
           obj.forum_post_is_new = isNew;
-          tmp8Result = tmp8(7277);
+          tmp8Result = tmp8(7299);
           const readStateSnapshotAnalytics1 = tmp8Result.getReadStateSnapshotAnalytics(channel.id);
           let hasUnreads;
           if (readStateSnapshotAnalytics1 != null) {

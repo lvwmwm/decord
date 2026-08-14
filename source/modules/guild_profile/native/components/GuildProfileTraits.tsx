@@ -1,10 +1,10 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12295
+// Function ID: 12296
 // Name: TraitEmoji
-// Dependencies: [19, 17, 21, 4342, 712, 1435, 4006, 5400, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1435, 4006, 5421, 4338, 2]
 // Exports: default
 
-// Module 12277 (TraitEmoji)
+// Module 12295 (TraitEmoji)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -31,7 +31,7 @@ function TraitEmoji(emoji) {
     obj[0] = emojiURL;
     obj[1] = importDefault(4006).isCustomEmoji(emoji) ? emoji.name : emoji.surrogates;
     obj[2] = tmp.emojiImage;
-    return callback(tmp5(5400), obj);
+    return callback(tmp5(5421), obj);
   }
 }
 function GuildProfileTraitView(trait) {

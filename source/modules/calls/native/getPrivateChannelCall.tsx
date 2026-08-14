@@ -1,10 +1,10 @@
-// Module ID: 9680
-// Function ID: 9681
+// Module ID: 9691
+// Function ID: 9692
 // Name: getPrivateChannelCall
-// Dependencies: [4361, 676, 4554, 8133, 1236, 9198, 2]
+// Dependencies: [4361, 676, 4576, 8154, 1236, 9212, 2]
 // Exports: default
 
-// Module 9680 (getPrivateChannelCall)
+// Module 9691 (getPrivateChannelCall)
 import updateVoiceState from "updateVoiceState";
 import { NOOP_NULL } from "ME";
 

@@ -1,9 +1,9 @@
-// Module ID: 7384
-// Function ID: 7385
+// Module ID: 7406
+// Function ID: 7407
 // Name: set
-// Dependencies: [2, 7385]
+// Dependencies: [2, 7407]
 
-// Module 7384 (set)
+// Module 7406 (set)
 const result = require("set").fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.native.tsx");
 for (const key10018 in require("usePremiumDiscountOffer")) {
   let tmp3 = key10018;

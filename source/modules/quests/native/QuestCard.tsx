@@ -1,9 +1,9 @@
-// Module ID: 14397
-// Function ID: 14398
+// Module ID: 14410
+// Function ID: 14411
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1922, 7206, 5202, 505, 21, 712, 4342, 1350, 4191, 5205, 7212, 11222, 10420, 1493, 10431, 14398, 7790, 7109, 7114, 7233, 589, 10436, 7229, 7204, 10441, 4278, 10160, 4065, 14425, 10451, 9566, 9567, 9571, 7222, 10453, 4310, 14427, 2007, 11223, 7059, 1236, 11216, 10561, 14431, 10422, 10438, 10439, 4761, 9502, 9333, 500, 9458, 4338, 14432, 5416, 14470, 5308, 4766, 691, 14458, 4753, 8488, 14438, 11219, 14471, 4755, 14474, 7796, 9907, 14459, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 7228, 5223, 505, 21, 712, 4342, 1350, 4191, 5226, 7234, 11238, 10436, 1493, 10447, 14411, 7811, 7131, 7136, 7255, 589, 10452, 7251, 7226, 10457, 4278, 10172, 4065, 14438, 10467, 9579, 9580, 9584, 7244, 10469, 4310, 14440, 2007, 11239, 7081, 1236, 11232, 10577, 14444, 10438, 10454, 10455, 4783, 9515, 9347, 500, 9471, 4338, 14445, 5437, 14483, 5329, 4788, 691, 14471, 4775, 8510, 14451, 11235, 14484, 4777, 14487, 7817, 9918, 14472, 2]
 
-// Module 14397 (ESTIMATED_CARD_HEIGHT)
+// Module 14410 (ESTIMATED_CARD_HEIGHT)
 import initializeState from "initializeState";
 import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet";
 import importAllResult from "useDeliveredDockCreative";
@@ -317,7 +317,13 @@ const memoResult = importAllResult.memo((questContent) => {
   }
   const tmp3Result18 = tmp3(tmp4[31]);
   const isQuestAccessSuspended = tmp3(tmp4[16]).useIsQuestAccessSuspended();
-  obj = { disabled: true, onPressDisabled: tmp10(tmp4[32]) };
+  obj = {
+    disabled: true,
+    onPressDisabled() {
+      callback({ questId: quest.id, questContent: QUEST_HOME_MOBILE, questContentCTA: outer1_0(QUEST_HOME_MOBILE[23]).QuestContentCTA.QUEST_ACCESS_SUSPENDED, sourceQuestContent });
+      quest(QUEST_HOME_MOBILE[32])();
+    }
+  };
   const tmp3Result19 = tmp3(tmp4[16]);
   const questFormattedDate1 = tmp3(tmp4[16]).useQuestFormattedDate(quest.config.expiresAt, { month: "numeric", day: "numeric" });
   const tmp3Result20 = tmp3(tmp4[16]);
@@ -518,12 +524,12 @@ const memoResult = importAllResult.memo((questContent) => {
               } else {
                 let closure_0 = tmp2;
                 outer1_5.log("Enrolling in quest");
-                outer1_0(10422);
+                outer1_0(10438);
                 let obj1 = { questContent: null, questContentCTA: null, sourceQuestContent: null };
                 obj1[0] = dependencyMap;
                 if (!outer1_20) {
                   if (!outer1_14) {
-                    let START_QUEST = tmp31(7233).QuestContentCTA.ACCEPT_QUEST;
+                    let START_QUEST = tmp31(7255).QuestContentCTA.ACCEPT_QUEST;
                   }
                   obj1[1] = START_QUEST;
                   obj1[2] = outer1_4;
@@ -531,7 +537,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   v0 = 1;
                   dependencyMap = 1;
                 }
-                START_QUEST = tmp31(7233).QuestContentCTA.START_QUEST;
+                START_QUEST = tmp31(7255).QuestContentCTA.START_QUEST;
               }
             } else if (arg0 === 1) {
               dependencyMap = 3;
@@ -547,7 +553,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = openQuestAccessSuspendedBottomSheet;
-                  v0(14431)(obj);
+                  v0(14444)(obj);
                   dependencyMap = 3;
                 }
                 callback2();

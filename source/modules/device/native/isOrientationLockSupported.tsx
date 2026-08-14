@@ -1,10 +1,10 @@
-// Module ID: 9794
-// Function ID: 9795
+// Module ID: 9805
+// Function ID: 9806
 // Name: isOrientationLockSupported
 // Dependencies: [4322, 1624, 2]
 // Exports: default
 
-// Module 9794 (isOrientationLockSupported)
+// Module 9805 (isOrientationLockSupported)
 let result = require("set").fileFinishedImporting("modules/device/native/isOrientationLockSupported.tsx");
 
 export default function isOrientationLockSupported() {

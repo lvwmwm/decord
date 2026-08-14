@@ -1,10 +1,10 @@
-// Module ID: 5914
-// Function ID: 5915
+// Module ID: 5935
+// Function ID: 5936
 // Name: useShouldHideGuildPurchaseEntryPoints
-// Dependencies: [19, 3983, 1910, 676, 5915, 5916, 589, 3982, 2]
+// Dependencies: [19, 3983, 1910, 676, 5936, 5937, 589, 3982, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 5914 (useShouldHideGuildPurchaseEntryPoints)
+// Module 5935 (useShouldHideGuildPurchaseEntryPoints)
 import noop from "noop";
 import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
 import { FetchState } from "makeGroupListingIndexSubscriptionListingTag";
@@ -25,7 +25,7 @@ export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuild
   has = obj.useStateFromStores(items, () => outer1_7.getGuild(has), items1);
   let importDefault;
   let id;
-  const tmp3 = importDefault(5915)();
+  const tmp3 = importDefault(5936)();
   importDefault = tmp3;
   const items2 = [has, tmp3];
   const effect = React.useEffect(() => {
@@ -120,7 +120,7 @@ export const useShouldRestrictUpdatingCreatorMonetizationSettings = function use
   stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(stateFromStores), items1);
   let importDefault;
   let id;
-  const tmp4 = importDefault(5915)();
+  const tmp4 = importDefault(5936)();
   importDefault = tmp4;
   const items2 = [stateFromStores, tmp4];
   const effect = React.useEffect(() => {
@@ -198,7 +198,7 @@ export const useIsMonetizationReapplicationDisabled = function useIsMonetization
   stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(stateFromStores), items1);
   let importDefault;
   let id;
-  const tmp4 = importDefault(5915)();
+  const tmp4 = importDefault(5936)();
   importDefault = tmp4;
   const items2 = [stateFromStores, tmp4];
   const effect = React.useEffect(() => {

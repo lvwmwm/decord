@@ -1,9 +1,9 @@
-// Module ID: 13387
-// Function ID: 13388
+// Module ID: 13399
+// Function ID: 13400
 // Name: initialize
-// Dependencies: [5938, 1391, 4263, 1922, 4361, 589, 709, 2]
+// Dependencies: [5959, 1391, 4263, 1922, 4361, 589, 709, 2]
 
-// Module 13387 (initialize)
+// Module 13399 (initialize)
 import getMemberListId from "getMemberListId";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleInviteData from "handleInviteData";

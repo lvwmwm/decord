@@ -1,12 +1,12 @@
-// Module ID: 10344
-// Function ID: 10345
+// Module ID: 10358
+// Function ID: 10359
 // Name: VibingWumpusScreen
-// Dependencies: [32, 19, 17, 4334, 10297, 10345, 676, 21, 4342, 712, 647, 9776, 698, 10346, 5759, 10347, 4338, 1236, 4755, 4550, 8904, 8906, 5823, 2]
+// Dependencies: [32, 19, 17, 4334, 10311, 10359, 676, 21, 4342, 712, 647, 9787, 698, 10360, 5780, 10361, 4338, 1236, 4777, 4572, 8918, 8920, 5844, 2]
 // Exports: default
 
-// Module 10344 (VibingWumpusScreen)
+// Module 10358 (VibingWumpusScreen)
 import _slicedToArray from "_slicedToArray";
-import module_4550 from "module_4550";
+import module_4572 from "module_4572";
 import get_ActivityIndicator from "getSystemLocale";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { VIBING_WUMPUS_MODAL_KEY } from "LOCATION_CONTEXT_MOBILE";
@@ -26,11 +26,11 @@ const require = arg1;
 class VibingWumpusScreen {
   constructor() {
     tmp = Fragment();
-    tmp2 = _slicedToArray(module_4550.useState(false), 2);
+    tmp2 = _slicedToArray(module_4572.useState(false), 2);
     first = tmp2[0];
     useState = first;
     closure_1 = tmp2[1];
-    ref = module_4550.useRef(null);
+    ref = module_4572.useRef(null);
     closure_2 = ref;
     tmp5 = useState;
     tmp6 = closure_2;
@@ -39,7 +39,7 @@ class VibingWumpusScreen {
     items[0] = View;
     stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
     _slicedToArray = stateFromStores;
-    effect = module_4550.useEffect(() => {
+    effect = module_4572.useEffect(() => {
       let date = new Date();
       let obj = date(ref[11]);
       let result = obj.playVibingWumpusMusic();
@@ -67,7 +67,7 @@ class VibingWumpusScreen {
     obj1 = { style: tmp.container, children: null };
     obj2 = { source: null, ref: null, autoPlay: null, loop: true, style: null, progress: null };
     tmp14 = require("play");
-    obj2[0] = require("module_10347");
+    obj2[0] = require("module_10361");
     obj2[1] = ref;
     obj2[2] = !stateFromStores;
     obj2[4] = tmp.wumpus;
@@ -195,6 +195,6 @@ export default function VibingWumpusModal() {
       return callback(closure_16, {});
     }
   };
-  return callback(require(5823) /* NavigationStack */.Navigator, { screens: { VIBING_WUMPUS }, initialRouteName: "VIBING_WUMPUS" });
+  return callback(require(5844) /* NavigationStack */.Navigator, { screens: { VIBING_WUMPUS }, initialRouteName: "VIBING_WUMPUS" });
 };
 export { VibingWumpusScreen };

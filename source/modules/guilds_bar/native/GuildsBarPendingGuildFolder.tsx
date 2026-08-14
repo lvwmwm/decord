@@ -1,8 +1,8 @@
-// Module ID: 15502
-// Function ID: 15503
-// Dependencies: [19, 4165, 676, 21, 15490, 11241, 589, 15482, 4083, 4311, 5272, 1236, 15489, 11667, 2]
+// Module ID: 15520
+// Function ID: 15521
+// Dependencies: [19, 4165, 676, 21, 15508, 11257, 589, 15500, 4083, 4311, 5293, 1236, 15507, 11683, 2]
 
-// Module 15502
+// Module 15520
 import importAllResult from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
@@ -18,8 +18,8 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   id = id.id;
   let importDefault;
   ({ expanded, childNodes } = id);
-  let obj = id(15490);
-  importDefault = importDefault(11241)();
+  let obj = id(15508);
+  importDefault = importDefault(11257)();
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   const items = [handleConnectionOpen];
   const items1 = [id];
@@ -59,7 +59,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
       const result1 = outer1_1(outer1_2[10]).toggleGuildFolderExpand(closure_0);
     }
   }), items2);
-  obj = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "call", config: true, externalChildren: true, children: true };
+  obj = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "accessibilityRole", config: 72972693307659580000000000000000000000000000000000000000000000000000000000000000000000000000, externalChildren: 663224131631259200000, children: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000334830254644715 };
   const obj3 = id(4083);
   obj[0] = "" + id;
   obj[1] = accessibilityActions;
@@ -75,11 +75,11 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
     obj = { folderId: null, totalItems: null };
     obj[0] = id;
     obj[1] = childNodes.length;
-    tmp8Result = tmp8(tmp(15489).GuildsBarGuildFolderBG, obj);
+    tmp8Result = tmp8(tmp(15507).GuildsBarGuildFolderBG, obj);
   }
   obj[12] = tmp8Result;
-  obj[13] = jsx(id(11667).HourglassIcon, {});
-  return jsx(importDefault(15490), { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "call", config: true, externalChildren: true, children: true });
+  obj[13] = jsx(id(11683).HourglassIcon, {});
+  return jsx(importDefault(15508), { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "accessibilityRole", config: 72972693307659580000000000000000000000000000000000000000000000000000000000000000000000000000, externalChildren: 663224131631259200000, children: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000334830254644715 });
 });
 let result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

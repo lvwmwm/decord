@@ -1,10 +1,10 @@
-// Module ID: 8685
-// Function ID: 8686
+// Module ID: 8699
+// Function ID: 8700
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 1388, 21, 4342, 712, 4164, 5437, 1297, 4338, 4755, 4310, 2]
+// Dependencies: [19, 17, 1388, 21, 4342, 712, 4164, 5458, 1297, 4338, 4777, 4310, 2]
 // Exports: default
 
-// Module 8685 (PremiumUpsellTooltipActionSheet)
+// Module 8699 (PremiumUpsellTooltipActionSheet)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -109,7 +109,7 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
     primaryButtonIconResult = primaryButtonIcon();
   }
   obj5[3] = primaryButtonIconResult;
-  const items4 = [closure_6(require(4755) /* Button */.Button, obj5), ];
+  const items4 = [closure_6(require(4777) /* Button */.Button, obj5), ];
   tmp2Result = null;
   if (null != secondaryButtonText) {
     const obj6 = { variant: "secondary", text: null, onPress: null, size: "lg" };
@@ -130,12 +130,12 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
       tmp5 = null != DISMISS && DISMISS !== outer1_5.DISMISS;
       const result = outer1_0(outer1_2[6]).UNSAFE_markDismissibleContentAsDismissed(closure_0, { forceTrack: true, dismissAction: DISMISS });
     };
-    tmp2Result = tmp2(tmp3(4755).Button, obj6);
+    tmp2Result = tmp2(tmp3(4777).Button, obj6);
   }
   items4[1] = tmp2Result;
   obj4[1] = items4;
   items1[3] = closure_7(closure_4, obj4);
   obj[1] = items1;
   obj.children = closure_7(closure_4, obj);
-  return closure_6(require(5437) /* Background */.BottomSheet, obj);
+  return closure_6(require(5458) /* Background */.BottomSheet, obj);
 };

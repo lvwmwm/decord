@@ -1,9 +1,9 @@
-// Module ID: 4563
-// Function ID: 4564
+// Module ID: 4585
+// Function ID: 4586
 // Name: dropChannelIfEmpty
-// Dependencies: [1391, 676, 1403, 4564, 589, 709, 2]
+// Dependencies: [1391, 676, 1403, 4586, 589, 709, 2]
 
-// Module 4563 (dropChannelIfEmpty)
+// Module 4585 (dropChannelIfEmpty)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { MessageFlags } from "ME";
 import { Store } from "initialize";
@@ -59,7 +59,7 @@ const ephemeralMessageStore = new EphemeralMessageStore(require("dispatcher"), {
         const result = map.set(channelId, map);
         value = map;
       }
-      const result1 = value.set(message.id, tmp(4564).createMessageRecord(message));
+      const result1 = value.set(message.id, tmp(4586).createMessageRecord(message));
       if (value.size > 50) {
         const iter2 = value.keys().next();
         while (true !== iter2.done) {
@@ -91,7 +91,7 @@ const ephemeralMessageStore = new EphemeralMessageStore(require("dispatcher"), {
           if (null == value) {
             return false;
           } else {
-            const result = value.set(id, require(4564) /* createMinimalMessageRecord */.updateMessageRecord(value, message));
+            const result = value.set(id, require(4586) /* createMinimalMessageRecord */.updateMessageRecord(value, message));
           }
         }
       }

@@ -1,10 +1,10 @@
-// Module ID: 13383
-// Function ID: 13384
+// Module ID: 13395
+// Function ID: 13396
 // Name: CommunityPill
-// Dependencies: [19, 17, 13384, 1910, 5937, 676, 21, 4342, 712, 501, 1236, 9315, 9311, 10498, 9318, 4887, 4062, 1297, 4338, 7686, 589, 1430, 13385, 13386, 1493, 5819, 1435, 1469, 8440, 4065, 5308, 9313, 12617, 2]
+// Dependencies: [19, 17, 13396, 1910, 5958, 676, 21, 4342, 712, 501, 1236, 9329, 9325, 10514, 9332, 4909, 4062, 1297, 4338, 7707, 589, 1430, 13397, 13398, 1493, 5840, 1435, 1469, 8462, 4065, 5329, 9327, 12635, 2]
 // Exports: default
 
-// Module 13383 (CommunityPill)
+// Module 13395 (CommunityPill)
 import useIsWindowLarge from "useIsWindowLarge";
 import get_ActivityIndicator from "Button";
 import initialize from "initialize";
@@ -26,12 +26,12 @@ function CommunityPill(guildVisibility) {
   const tmp = createCacheKey();
   const intl = GlobeEarthIcon(1236).intl;
   importDefault = intl.string(GlobeEarthIcon(1236).t.TME4LJ);
-  let tmp4Result = importDefault(9315);
-  if (guildVisibility.guildVisibility === GlobeEarthIcon(9311).GuildVisibility.PUBLIC) {
+  let tmp4Result = importDefault(9329);
+  if (guildVisibility.guildVisibility === GlobeEarthIcon(9325).GuildVisibility.PUBLIC) {
     const intl2 = tmp2(1236).intl;
     importDefault = intl2.string(tmp2(1236).t.op2cJ6);
-    GlobeEarthIcon = tmp2(10498).GlobeEarthIcon;
-    tmp4Result = importDefault(9318);
+    GlobeEarthIcon = tmp2(10514).GlobeEarthIcon;
+    tmp4Result = importDefault(9332);
   }
   let obj = {
     style: tmp.communityPill,
@@ -50,7 +50,7 @@ function CommunityPill(guildVisibility) {
   obj[3] = intl3.string(GlobeEarthIcon(1236).t.K7iRig);
   items[1] = callback(GlobeEarthIcon(4338).Text, obj);
   obj[3] = items;
-  return callback2(GlobeEarthIcon(4887).PressableOpacity, obj);
+  return callback2(GlobeEarthIcon(4909).PressableOpacity, obj);
 }
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);

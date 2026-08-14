@@ -1,10 +1,10 @@
-// Module ID: 9046
-// Function ID: 9047
+// Module ID: 9060
+// Function ID: 9061
 // Name: getRoleRowData
-// Dependencies: [1395, 1434, 1984, 1990, 1922, 7826, 676, 1987, 1236, 506, 11, 4187, 1370, 3994, 9047, 1954, 4527, 2]
+// Dependencies: [1395, 1434, 1984, 1990, 1922, 7847, 676, 1987, 1236, 506, 11, 4187, 1370, 3994, 9061, 1954, 4527, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 9046 (getRoleRowData)
+// Module 9060 (getRoleRowData)
 import { isGuildVocalChannelType } from "createChannelRecord";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
@@ -604,7 +604,7 @@ export const toggleChannelEveryonePermission = function toggleChannelEveryonePer
     const tmp5Result = tmp5(506);
   }
   const obj4 = importAll(506);
-  require(9047) /* _updatePermission */.updatePermission(guild_id, obj.id, obj.allow, obj.deny);
+  require(9061) /* _updatePermission */.updatePermission(guild_id, obj.id, obj.allow, obj.deny);
 };
 export const grantUserChannelAccess = function grantUserChannelAccess(outer1_0, accessPermissions) {
   let allow;
@@ -619,11 +619,11 @@ export const grantUserChannelAccess = function grantUserChannelAccess(outer1_0, 
       obj[3] = importAll(3994).NONE;
       const obj4 = importAll(506);
       const items = [obj];
-      return require(9047) /* _updatePermission */.savePermissionUpdates(outer1_0.id, items, true);
+      return require(9061) /* _updatePermission */.savePermissionUpdates(outer1_0.id, items, true);
     } else {
       ({ allow, deny } = tmp4);
       obj = importAll(506);
-      const obj2 = require(9047) /* _updatePermission */;
+      const obj2 = require(9061) /* _updatePermission */;
       return obj2.updatePermission(outer1_0, tmp4.id, obj.add(allow, accessPermissions), deny);
     }
   }

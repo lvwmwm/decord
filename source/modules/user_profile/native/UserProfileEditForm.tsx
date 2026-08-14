@@ -1,10 +1,10 @@
-// Module ID: 13958
-// Function ID: 13959
+// Module ID: 13970
+// Function ID: 13971
 // Name: EditUserProfileBanner
-// Dependencies: [19, 17, 8839, 10182, 5816, 676, 685, 13959, 21, 8324, 13960, 4007, 5768, 5788, 13961, 4310, 13962, 2007, 8316, 8313, 8315, 1236, 8884, 13973, 8311, 6047, 5409, 712, 9512, 13974, 8328, 11322, 8355, 9498, 13979, 8323, 8885, 13977, 13980, 589, 8842, 8872, 8881, 13981, 4338, 4072, 9499, 13982, 9500, 9519, 13987, 13988, 13993, 13995, 14000, 14001, 14005, 14009, 14014, 14015, 14018, 14019, 2]
+// Dependencies: [19, 17, 8853, 10196, 5837, 676, 685, 13971, 21, 8346, 13972, 4007, 5789, 5809, 13973, 4310, 13974, 2007, 8338, 8335, 8337, 1236, 8898, 13985, 8333, 6068, 5430, 712, 9525, 13986, 8350, 11338, 8377, 9511, 13991, 8345, 8899, 13989, 13992, 589, 8856, 8886, 8895, 13993, 4338, 4072, 9512, 13994, 9513, 9532, 13999, 14000, 14005, 14007, 14014, 14015, 14019, 14023, 14028, 14029, 14032, 14033, 2]
 // Exports: default
 
-// Module 13958 (EditUserProfileBanner)
+// Module 13970 (EditUserProfileBanner)
 import setPendingChanges from "setPendingChanges";
 import get_ActivityIndicator from "asyncRequireImpl";
 import map from "map";
@@ -86,7 +86,7 @@ function EditUserProfileBanner(user) {
 ({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
 ({ DISPLAY_NAME_MAX_LENGTH: c9, PRONOUNS_MAX_LENGTH: c10 } = ME);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let obj = { assetOrigin: require("AssetOriginTypes").AssetOriginTypes.NEW_ASSET, imageUri: require("registerAsset"), staticImageUri: require("registerAsset"), description: "", originalAsset: "apply" };
+let obj = { assetOrigin: require("AssetOriginTypes").AssetOriginTypes.NEW_ASSET, imageUri: require("registerAsset"), staticImageUri: require("registerAsset"), description: "", originalAsset: "ti" };
 let result = require("map").fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 
 export default function UserProfileEditForm(currentUser) {

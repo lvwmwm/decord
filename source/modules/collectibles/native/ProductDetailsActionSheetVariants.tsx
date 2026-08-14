@@ -1,10 +1,10 @@
-// Module ID: 9619
-// Function ID: 9620
+// Module ID: 9630
+// Function ID: 9631
 // Name: VariantOption
-// Dependencies: [19, 17, 21, 4342, 712, 9463, 4887, 1236, 9481, 5403, 7060, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 9476, 4909, 1236, 9494, 5424, 7082, 4338, 2]
 // Exports: default
 
-// Module 9619 (VariantOption)
+// Module 9630 (VariantOption)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function VariantOption(onPress) {
   let variant;
   ({ variant, isSelected } = onPress);
   const tmp = callback2(isSelected);
-  let obj = require(9463) /* getProductPurchaseState */;
+  let obj = require(9476) /* getProductPurchaseState */;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
   if (isPurchased) {
     const intl = tmp2(1236).intl;
@@ -39,13 +39,13 @@ function VariantOption(onPress) {
   }
   obj1[1] = isPurchased;
   obj[5] = closure_4(View, obj1);
-  return closure_4(require(4887) /* PressableBase */.PressableOpacity, obj);
+  return closure_4(require(4909) /* PressableBase */.PressableOpacity, obj);
 }
 function VariantCheckmark(variant) {
   const colors = importDefault(712).colors;
-  const tmp = importDefault(9481)(variant.variant);
+  const tmp = importDefault(9494)(variant.variant);
   const tmp2 = closure_4;
-  return tmp2(require(5403) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: importDefault(9481)(variant.variant) ? colors.BLACK : colors.WHITE, size: "md" });
+  return tmp2(require(5424) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: importDefault(9494)(variant.variant) ? colors.BLACK : colors.WHITE, size: "md" });
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, headerRow: null, variantsContainer: null, text: null };
@@ -74,7 +74,7 @@ export default function ProductDetailsActionSheetVariants(onVariantSelect) {
   ({ product, selectedVariantIndex } = onVariantSelect);
   onVariantSelect = onVariantSelect.onVariantSelect;
   const tmp = createCacheKey();
-  let obj = selectedVariantIndex(7060);
+  let obj = selectedVariantIndex(7082);
   let tmp5Result = null;
   if (obj.getIsVariantProduct(product)) {
     obj = { style: null, children: null };

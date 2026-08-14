@@ -1,9 +1,9 @@
-// Module ID: 17012
-// Function ID: 17013
+// Module ID: 17028
+// Function ID: 17029
 // Name: platformShowStreamFull
-// Dependencies: [19, 4434, 4401, 4406, 21, 3, 17013, 4684, 17014, 2007, 10806, 9205, 2]
+// Dependencies: [19, 4434, 4401, 4406, 21, 3, 17029, 4706, 17030, 2007, 10822, 9219, 2]
 
-// Module 17012 (platformShowStreamFull)
+// Module 17028 (platformShowStreamFull)
 import "noop";
 import ApplicationStreamPresets from "ApplicationStreamPresets";
 import { ApplicationStreamPresets } from "RESOLUTION_720";
@@ -18,7 +18,7 @@ class ApplicationStreamingManager extends tmp4 {
 }
 const prototype = ApplicationStreamingManager.prototype;
 prototype["platformShowStreamFull"] = function platformShowStreamFull() {
-  let obj = importDefault(4684);
+  let obj = importDefault(4706);
   obj = {
     importer() {
       return callback(paths[9])(paths[8], paths.paths).then((arg0) => {
@@ -40,7 +40,7 @@ prototype["platformHandleStreamStart"] = function platformHandleStreamStart(sour
   sourceId = sourceId.sourceId;
   if (null != sourceId) {
     let setGoLiveSource = importDefault;
-    let obj = importDefault(10806);
+    let obj = importDefault(10822);
     if (obj.getConfig({ location: "platformHandleStreamStart" }).showMobileGoLiveUpsell) {
       state = state.getState();
     } else {
@@ -48,7 +48,7 @@ prototype["platformHandleStreamStart"] = function platformHandleStreamStart(sour
       state[0] = ApplicationStreamPresets.PRESET_CUSTOM;
     }
     ({ preset, resolution, fps, soundshareEnabled } = state);
-    setGoLiveSource = setGoLiveSource(9205).setGoLiveSource;
+    setGoLiveSource = setGoLiveSource(9219).setGoLiveSource;
     obj = { desktopSettings: null, qualityOptions: null, context: null };
     obj = { sourceId: null, sound: null };
     obj[0] = sourceId;
@@ -61,7 +61,7 @@ prototype["platformHandleStreamStart"] = function platformHandleStreamStart(sour
     obj[1] = obj1;
     obj[2] = MediaEngineContextTypes.STREAM;
     setGoLiveSource(obj);
-    const setGoLiveSourceResult = setGoLiveSource(9205);
+    const setGoLiveSourceResult = setGoLiveSource(9219);
   } else {
     const _HermesInternal = HermesInternal;
     obj.warn("invalid start_stream: both application + display modes were specified (source-id: " + sourceId + ")");

@@ -1,10 +1,10 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 12356
+// Function ID: 12357
 // Name: useShouldShowMutualInfo
-// Dependencies: [1922, 589, 12339, 2]
+// Dependencies: [1922, 589, 12357, 2]
 // Exports: default
 
-// Module 12338 (useShouldShowMutualInfo)
+// Module 12356 (useShouldShowMutualInfo)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -18,6 +18,6 @@ export default function useShouldShowMutualInfo(id) {
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp2 = importDefault(12339)(id);
-  return id !== id.id && !importDefault(12339)(id);
+  const tmp2 = importDefault(12357)(id);
+  return id !== id.id && !importDefault(12357)(id);
 };

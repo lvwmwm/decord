@@ -1,9 +1,9 @@
-// Module ID: 16222
-// Function ID: 16223
+// Module ID: 16240
+// Function ID: 16241
 // Name: SoundButtonEmoji
-// Dependencies: [19, 17, 1922, 16216, 21, 4083, 4342, 712, 500, 4887, 4754, 5400, 11393, 16223, 589, 16224, 5768, 5788, 6002, 4007, 8418, 8421, 4062, 10926, 1236, 16226, 4338, 4864, 2]
+// Dependencies: [19, 17, 1922, 16234, 21, 4083, 4342, 712, 500, 4909, 4776, 5421, 11409, 16241, 589, 16242, 5789, 5809, 6023, 4007, 8440, 8443, 4062, 10942, 1236, 16244, 4338, 4886, 2]
 
-// Module 16222 (SoundButtonEmoji)
+// Module 16240 (SoundButtonEmoji)
 import importAllResult from "getPremiumPlanItem";
 import { View } from "QUICK_SWITCHER";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -65,7 +65,7 @@ function SoundButtonEmoji(arg0) {
     obj[0] = items2;
     return obj;
   };
-  obj = { animationConfig: obj, withDelay: obj(4083).withDelay, withSpring: obj(4754).withSpring, interpolate: obj(4083).interpolate, SPRING_CONFIG: closure_9 };
+  obj = { animationConfig: obj, withDelay: obj(4083).withDelay, withSpring: obj(4776).withSpring, interpolate: obj(4083).interpolate, SPRING_CONFIG: closure_9 };
   fn.__closure = obj;
   fn.__workletHash = 13932429225740;
   fn.__initData = closure_12;
@@ -113,7 +113,7 @@ function SoundButtonEmoji(arg0) {
     obj[0] = items2;
     return obj;
   };
-  obj1 = { animationConfig: obj, withDelay: obj(4083).withDelay, withSpring: obj(4754).withSpring, interpolate: obj(4083).interpolate, SPRING_CONFIG: closure_9 };
+  obj1 = { animationConfig: obj, withDelay: obj(4083).withDelay, withSpring: obj(4776).withSpring, interpolate: obj(4083).interpolate, SPRING_CONFIG: closure_9 };
   fn2.__closure = obj1;
   fn2.__workletHash = 13932429225740;
   fn2.__initData = closure_12;
@@ -121,13 +121,13 @@ function SoundButtonEmoji(arg0) {
   items = [tmp.emojiWrapper, animatedStyle];
   const obj3 = { style: obj4.useAnimatedStyle(fn2), children: null };
   obj4 = { fastImageStyle: tmp.emoji, textEmojiStyle: tmp.emoji, src: null, name: null };
-  obj4[2] = importDefault(11393)(sound, 24);
+  obj4[2] = importDefault(11409)(sound, 24);
   let str = sound.emojiName;
   if (str == null) {
     str = "";
   }
   obj4[3] = str;
-  obj3[1] = closure_6(importDefault(5400), obj4);
+  obj3[1] = closure_6(importDefault(5421), obj4);
   obj2[1] = closure_6(closure_8, obj3);
   return closure_6(closure_8, obj2);
 }

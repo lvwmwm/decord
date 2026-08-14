@@ -1,10 +1,10 @@
-// Module ID: 11889
-// Function ID: 11890
+// Module ID: 11905
+// Function ID: 11906
 // Name: ChatXIcon
-// Dependencies: [19, 21, 712, 4064, 11890, 2]
+// Dependencies: [19, 21, 712, 4064, 11906, 2]
 // Exports: ChatXIcon
 
-// Module 11889 (ChatXIcon)
+// Module 11905 (ChatXIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ChatXIcon = function ChatXIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11890) /* registerAsset */;
+  obj[0] = require(11906) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

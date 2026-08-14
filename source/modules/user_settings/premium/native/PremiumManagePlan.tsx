@@ -1,10 +1,10 @@
-// Module ID: 12833
-// Function ID: 12834
+// Module ID: 12851
+// Function ID: 12852
 // Name: ManagePlanHeader
-// Dependencies: [5, 32, 19, 17, 4008, 1922, 4009, 4012, 4013, 6908, 6923, 5899, 676, 5373, 4325, 1924, 21, 3, 4342, 712, 1499, 4887, 5314, 4338, 1236, 5199, 1367, 5768, 7677, 5788, 589, 4072, 1363, 691, 4664, 5756, 7419, 6913, 698, 4007, 38, 5896, 12834, 12835, 7652, 7662, 7435, 4755, 7641, 7682, 7681, 4860, 8673, 12755, 1993, 5416, 4766, 1297, 7750, 1628, 7685, 6907, 4771, 5918, 8211, 12797, 12778, 1433, 4744, 7638, 6056, 7683, 12812, 2]
+// Dependencies: [5, 32, 19, 17, 4008, 1922, 4009, 4012, 4013, 6929, 6944, 5920, 676, 5394, 4325, 1924, 21, 3, 4342, 712, 1499, 4909, 5335, 4338, 1236, 5220, 1367, 5789, 7698, 5809, 589, 4072, 1363, 691, 4686, 5777, 7440, 6934, 698, 4007, 38, 5917, 12852, 12853, 7673, 7683, 7456, 4777, 7662, 7703, 7702, 4882, 8687, 12773, 1993, 5437, 4788, 1297, 7771, 1628, 7706, 6928, 4793, 5939, 8232, 12815, 12796, 1433, 4766, 7659, 6077, 7704, 12830, 2]
 // Exports: default
 
-// Module 12833 (ManagePlanHeader)
+// Module 12851 (ManagePlanHeader)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import Themes from "Themes";
@@ -54,8 +54,8 @@ function ManagePlanHeader() {
     },
     children: null
   };
-  obj[2] = callback3(_require(5314).ArrowLargeLeftIcon, { size: "md" });
-  const items = [callback3(_require(4887).PressableOpacity, obj), , ];
+  obj[2] = callback3(_require(5335).ArrowLargeLeftIcon, { size: "md" });
+  const items = [callback3(_require(4909).PressableOpacity, obj), , ];
   const obj1 = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null };
   const intl = _require(1236).intl;
   obj1[2] = intl.string(_require(1236).t["1bX7Tx"]);
@@ -489,7 +489,7 @@ function FractionalPremiumCredits(durationText) {
   if (showPremiumFeaturesCard) {
     obj = { premiumType: null, forFractionalPremium: true, hideButton: true };
     obj[0] = closure_27.TIER_2;
-    showPremiumFeaturesCard = callback3(tmp(8673), obj);
+    showPremiumFeaturesCard = callback3(tmp(8687), obj);
   }
   const items = [showPremiumFeaturesCard, ];
   obj = { style: tmp3.extraInfoContainer, children: null };
@@ -508,7 +508,7 @@ function FractionalPremiumCredits(durationText) {
   const obj5 = { style: tmp3.fpRowIcon, children: null };
   const obj6 = { style: null, start: null, end: null, colors: null, children: null };
   const obj7 = { padding: 6, borderRadius: null };
-  tmpResult = tmp(4766);
+  tmpResult = tmp(4788);
   obj7[1] = importDefault(712).radii.sm;
   obj6[0] = obj7;
   obj6[1] = { x: 0, y: 0 };
@@ -518,7 +518,7 @@ function FractionalPremiumCredits(durationText) {
   const obj8 = { children: null };
   const obj9 = { color: null, source: null, size: null };
   obj9[0] = importDefault(712).unsafe_rawColors.WHITE;
-  obj9[1] = importDefault(7750);
+  obj9[1] = importDefault(7771);
   obj9[2] = require(1297) /* Button */.IconSizes.LARGE;
   obj8[0] = callback3(require(1297) /* Button */.Icon, obj9);
   obj6[4] = callback3(closure_8, obj8);
@@ -539,7 +539,7 @@ function FractionalPremiumCredits(durationText) {
     obj10[1] = items4;
     items3[1] = tmp4(tmp5, obj10);
     obj4[4] = items3;
-    const items5 = [tmp4(require(5416) /* PressableCard */.Card, obj4), , ];
+    const items5 = [tmp4(require(5437) /* PressableCard */.Card, obj4), , ];
     const obj13 = { style: null, children: null };
     obj13[0] = tmp3.dividerContainer;
     const obj14 = { style: null };
@@ -678,7 +678,7 @@ let closure_35 = createCacheKey.createStyles((arg0) => {
   if (arg0) {
     let DIVIDER_BACKGROUND = tmp2(712).colors.BORDER_SUBTLE;
   } else {
-    DIVIDER_BACKGROUND = require(5199) /* result */.DIVIDER_BACKGROUND;
+    DIVIDER_BACKGROUND = require(5220) /* result */.DIVIDER_BACKGROUND;
   }
   obj11[1] = DIVIDER_BACKGROUND;
   obj[22] = obj11;
@@ -695,7 +695,7 @@ export default function PremiumManagePlan() {
   const tmp = createCacheKey();
   const rect = importDefault(1628)();
   const top = rect.top;
-  let obj = navigation(7685);
+  let obj = navigation(7706);
   const youBarSettingsOutsideSafeAreaTop = obj.useYouBarSettingsOutsideSafeAreaTop();
   let obj1 = navigation(1499);
   navigation = obj1.useNavigation();
@@ -716,28 +716,28 @@ export default function PremiumManagePlan() {
   let obj5 = navigation(589);
   const items3 = [closure_12];
   const stateFromStores1 = obj5.useStateFromStores(items3, () => currentUser.getCurrentUser());
-  const tmp12 = importDefault(6907)({ forceFetch: true });
-  importDefault(4771)(() => {
+  const tmp12 = importDefault(6928)({ forceFetch: true });
+  importDefault(4793)(() => {
     let isSubscriptionFetching = reset.hasFetchedSubscriptions();
     if (!isSubscriptionFetching) {
       isSubscriptionFetching = obj.isSubscriptionFetching;
     }
     if (!isSubscriptionFetching) {
-      obj = navigation(4664);
+      obj = navigation(4686);
       const subscriptions = obj.fetchSubscriptions();
     }
     if (!tmp5) {
-      const premiumSubscriptionPlans = navigation(5918).fetchPremiumSubscriptionPlans();
-      const obj3 = navigation(5918);
+      const premiumSubscriptionPlans = navigation(5939).fetchPremiumSubscriptionPlans();
+      const obj3 = navigation(5939);
     }
   });
-  let obj7 = navigation(8211);
+  let obj7 = navigation(8232);
   let isInReverseTrial = obj7.useIsInReverseTrial();
   const tmp9 = callback2(obj4.useStateFromStoresArray(items2, () => {
     const items = [reset.getPremiumTypeSubscription(), reset.hasFetchedSubscriptions()];
     return items;
   }), 2);
-  const tmp15 = importDefault(12797);
+  const tmp15 = importDefault(12815);
   let obj8 = navigation(4007);
   const unactivatedFractionalPremiumDurationString = obj8.getUnactivatedFractionalPremiumDurationString(tmp12);
   if (null !== tmp10) {
@@ -795,7 +795,7 @@ export default function PremiumManagePlan() {
   obj = { style: tmp.background, children: null };
   const items5 = [tmp.topBlur, ];
   let num = 0;
-  let tmp2Result = tmp2(4744);
+  let tmp2Result = tmp2(4766);
   if (!youBarSettingsOutsideSafeAreaTop) {
     num = top;
   }
@@ -823,7 +823,7 @@ export default function PremiumManagePlan() {
   if (isInReverseTrial) {
     obj3 = { premiumType: null, forFractionalPremium: true, hideButton: true };
     obj3[0] = closure_27.TIER_2;
-    isInReverseTrial = tmp29(tmp2(8673), obj3);
+    isInReverseTrial = tmp29(tmp2(8687), obj3);
   }
   items9[1] = isInReverseTrial;
   tmp29Result = result;
@@ -834,7 +834,7 @@ export default function PremiumManagePlan() {
     obj4 = { premiumType: null, hideButton: true, hidePrice: true, isPremiumGroup: true, premiumGroupRole: null };
     obj4[0] = closure_27.TIER_2;
     obj4[4] = premiumGroupRole;
-    tmp29Result = tmp29(tmp2(8673), obj4);
+    tmp29Result = tmp29(tmp2(8687), obj4);
   }
   items9[2] = tmp29Result;
   if (tmp29Result1) {
@@ -867,32 +867,32 @@ export default function PremiumManagePlan() {
       }
     };
     obj7[2] = tmp10;
-    const items10 = [tmp29(tmp2(7641), obj7), ];
+    const items10 = [tmp29(tmp2(7662), obj7), ];
     obj8 = { style: null, subscription: null };
     obj8[0] = tmp.billingInfo;
     obj8[1] = tmp10;
-    items10[1] = tmp29(tmp2(7681), obj8);
+    items10[1] = tmp29(tmp2(7702), obj8);
     obj6[0] = items10;
     tmp27Result = tmp27(tmp28, obj6);
   }
   items9[4] = tmp27Result;
   const obj9 = { style: tmp.accountCredit, creditListContainerStyle: tmp.accountCreditList, currentSubscription: tmp10, entitlements: stateFromStores2, hasPremiumGroup: null };
   let flag = result;
-  tmp2Result = tmp2(7683);
+  tmp2Result = tmp2(7704);
   if (result == null) {
     flag = false;
   }
   obj9[4] = flag;
   items9[5] = closure_29(tmp2Result, obj9);
   const obj10 = { style: tmp.featuresTable, variant: "nitro_home", titleOverride: null, isFractionalOnly: null, isPremiumGroup: null, premiumGroupRole: null };
-  tmp15Result = importDefault(12797)(tmp12.endsAt, navigation(12797).CountDownMessageTypes.SHORT_TIME);
+  tmp15Result = importDefault(12815)(tmp12.endsAt, navigation(12815).CountDownMessageTypes.SHORT_TIME);
   const tmp31 = closure_9;
   const intl = tmp4(1236).intl;
   obj10[2] = intl.string(navigation(1236).t.QXx2gs);
   obj10[3] = tmp12.fractionalState === constants3.FP_ONLY;
   obj10[4] = result;
   obj10[5] = premiumGroupRole;
-  items9[6] = closure_29(importDefault(12812), obj10);
+  items9[6] = closure_29(importDefault(12830), obj10);
   obj1[1] = items9;
   items8[1] = closure_30(closure_8, obj1);
   obj[4] = items8;

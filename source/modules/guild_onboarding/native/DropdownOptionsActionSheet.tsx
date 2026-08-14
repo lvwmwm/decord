@@ -1,10 +1,10 @@
-// Module ID: 5405
-// Function ID: 5406
+// Module ID: 5426
+// Function ID: 5427
 // Name: DropdownOptionRow
-// Dependencies: [19, 17, 5216, 5282, 1925, 21, 4342, 647, 5400, 1435, 1297, 1236, 4338, 5406, 1628, 4310, 5436, 5437, 5439, 4755, 2]
+// Dependencies: [19, 17, 5237, 5303, 1925, 21, 4342, 647, 5421, 1435, 1297, 1236, 4338, 5427, 1628, 4310, 5457, 5458, 5460, 4777, 2]
 // Exports: default
 
-// Module 5405 (DropdownOptionRow)
+// Module 5426 (DropdownOptionRow)
 import Button from "Button";
 import { View } from "Background";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -130,7 +130,7 @@ export default function DropdownOptionsActionSheet(arg0) {
     const intl = tmp3(1236).intl;
     obj[0] = intl.string(tmp3(1236).t.E2ICbC);
     obj = { scrollable: true, header: null, children: null };
-    obj[1] = callback(tmp3(5436).BottomSheetTitleHeader, obj);
+    obj[1] = callback(tmp3(5457).BottomSheetTitleHeader, obj);
     obj1 = { contentContainerStyle: null, children: null };
     const obj2 = { paddingBottom: null };
     obj2[0] = importDefault(1628)().bottom;
@@ -147,11 +147,11 @@ export default function DropdownOptionsActionSheet(arg0) {
     obj5[0] = tmp5;
     const intl3 = tmp3(1236).intl;
     obj5[1] = intl3.string(tmp3(1236).t.cpT0Cq);
-    obj4[1] = callback(tmp3(4755).Button, obj5);
+    obj4[1] = callback(tmp3(4777).Button, obj5);
     items2[1] = callback(closure_4, obj4);
     obj1[1] = items2;
-    obj[2] = callback2(tmp3(5439).BottomSheetScrollView, obj1);
-    return callback(tmp3(5437).BottomSheet, obj);
+    obj[2] = callback2(tmp3(5460).BottomSheetScrollView, obj1);
+    return callback(tmp3(5458).BottomSheet, obj);
   }
   tmp = callback3();
 };

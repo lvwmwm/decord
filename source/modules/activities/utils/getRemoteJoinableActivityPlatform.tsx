@@ -1,10 +1,10 @@
-// Module ID: 11209
-// Function ID: 11210
+// Module ID: 11225
+// Function ID: 11226
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [5291, 4360, 676, 501, 1403, 10401, 2]
+// Dependencies: [5312, 4360, 676, 501, 1403, 10415, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 11209 (getRemoteJoinableActivityPlatform)
+// Module 11225 (getRemoteJoinableActivityPlatform)
 import isConnected from "isConnected";
 import handleUpdate from "handleUpdate";
 import ME from "ME";
@@ -29,7 +29,7 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
         remoteApplicationActivity = remoteApplicationActivity.getRemoteApplicationActivity(application_id);
         let tmp4 = null;
         if (null != remoteApplicationActivity) {
-          let tmp11Result = tmp11(10401);
+          let tmp11Result = tmp11(10415);
           tmp4 = null;
           if (!tmp11Result.isContextlessEmbeddedActivity(remoteApplicationActivity)) {
             if (null == remoteApplicationActivity.application_id) {

@@ -1,10 +1,10 @@
-// Module ID: 8631
-// Function ID: 8632
+// Module ID: 8645
+// Function ID: 8646
 // Name: renderItem
-// Dependencies: [5, 32, 19, 17, 7103, 7105, 21, 4342, 712, 8632, 4338, 1236, 1502, 1628, 8604, 589, 11, 8605, 8607, 7790, 2]
+// Dependencies: [5, 32, 19, 17, 7125, 7127, 21, 4342, 712, 8646, 4338, 1236, 1502, 1628, 8626, 589, 11, 8627, 8629, 7811, 2]
 // Exports: default
 
-// Module 8631 (renderItem)
+// Module 8645 (renderItem)
 import closure_3 from "CONVERSATION_COLORS";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
@@ -23,7 +23,7 @@ let unpackModuleId;
 const require = arg1;
 function renderItem(item) {
   item = item.item;
-  return jsx(importDefault(8632), { channelId: item.channelId, conversationId: item.conversationId });
+  return jsx(importDefault(8646), { channelId: item.channelId, conversationId: item.conversationId });
 }
 function keyExtractor(conversationId) {
   return conversationId.conversationId;

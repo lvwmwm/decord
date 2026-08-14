@@ -1,10 +1,10 @@
-// Module ID: 14938
-// Function ID: 14939
+// Module ID: 14952
+// Function ID: 14953
 // Name: UserListItem
-// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 589, 14939, 4187, 8357, 5768, 8832, 5414, 1297, 1236, 5421, 4065, 1499, 14937, 4338, 7790, 9259, 2]
+// Dependencies: [19, 17, 1922, 676, 21, 4342, 712, 589, 14953, 4187, 8379, 5789, 8846, 5435, 1297, 1236, 5442, 4065, 1499, 14951, 4338, 7811, 9273, 2]
 // Exports: default
 
-// Module 14938 (UserListItem)
+// Module 14952 (UserListItem)
 import useSecureFramesVerifiedUserIds from "useSecureFramesVerifiedUserIds";
 import { View } from "map";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -140,7 +140,7 @@ export default function SettingsSecureFramesScreen() {
   const obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   const obj2 = { helpArticle: null };
-  obj2[0] = require(9259) /* getCurrentUserSigningKey */.getSecureFramesHelpdeskArticle();
+  obj2[0] = require(9273) /* getCurrentUserSigningKey */.getSecureFramesHelpdeskArticle();
   obj1[2] = intl2.format(require(1236) /* getSystemLocale */.t["8IwQfG"], obj2);
   items[1] = callback(require(4338) /* Text */.Text, obj1);
   obj[1] = items;

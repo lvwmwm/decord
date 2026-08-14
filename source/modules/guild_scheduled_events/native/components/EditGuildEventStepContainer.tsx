@@ -1,8 +1,8 @@
-// Module ID: 9014
-// Function ID: 9015
-// Dependencies: [32, 19, 17, 21, 4342, 712, 5409, 2]
+// Module ID: 9028
+// Function ID: 9029
+// Dependencies: [32, 19, 17, 21, 4342, 712, 5430, 2]
 
-// Module 9014
+// Module 9028
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -32,7 +32,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const tmp = callback4();
   const tmp2 = callback(importAllResult.useState(32), 2);
   importDefault = tmp2[1];
-  const insets = importDefault(5409)().insets;
+  const insets = importDefault(5430)().insets;
   let obj = { style: tmp.container, children: null };
   obj = { ref, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", style: items, contentContainerStyle: tmp.scroller, children };
   items = [tmp.flex, { marginBottom: tmp2[0] + insets.bottom }];

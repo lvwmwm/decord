@@ -1,10 +1,10 @@
-// Module ID: 13327
-// Function ID: 13328
+// Module ID: 13339
+// Function ID: 13340
 // Name: useIsServerThemeAvailableForGuild
 // Dependencies: [4272, 4224, 2]
 // Exports: default
 
-// Module 13327 (useIsServerThemeAvailableForGuild)
+// Module 13339 (useIsServerThemeAvailableForGuild)
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useIsServerThemeAvailableForGuild.tsx");
 
 export default function useIsServerThemeAvailableForGuild(guildId, GuildThemeNuxTrigger) {

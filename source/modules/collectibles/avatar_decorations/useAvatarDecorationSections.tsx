@@ -1,10 +1,10 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8354
+// Function ID: 8355
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 7049, 7065, 647, 7061, 1236, 2]
+// Dependencies: [32, 19, 7071, 7087, 647, 7083, 1236, 2]
 // Exports: default
 
-// Module 8332 (useAvatarDecorationSections)
+// Module 8354 (useAvatarDecorationSections)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";

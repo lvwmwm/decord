@@ -1,10 +1,10 @@
-// Module ID: 11114
-// Function ID: 11115
+// Module ID: 11130
+// Function ID: 11131
 // Name: _markUnread
-// Dependencies: [5, 3991, 1391, 4562, 4357, 1922, 676, 3, 11, 7269, 530, 2]
+// Dependencies: [5, 3991, 1391, 4584, 4357, 1922, 676, 3, 11, 7291, 530, 2]
 // Exports: default
 
-// Module 11114 (_markUnread)
+// Module 11130 (_markUnread)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import storeThread from "storeThread";
 import ensureGuildLoaded from "ensureGuildLoaded";

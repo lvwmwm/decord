@@ -1,10 +1,10 @@
-// Module ID: 10019
-// Function ID: 10020
+// Module ID: 10030
+// Function ID: 10031
 // Name: StickerOptionsActionSheet
-// Dependencies: [19, 21, 5796, 4061, 4310, 5804, 5807, 5414, 4286, 1236, 2]
+// Dependencies: [19, 21, 5817, 4061, 4310, 5825, 5828, 5435, 4286, 1236, 2]
 // Exports: default
 
-// Module 10019 (StickerOptionsActionSheet)
+// Module 10030 (StickerOptionsActionSheet)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -28,7 +28,7 @@ export default function StickerOptionsActionSheet(stickerUrl) {
   const intl = stickerUrl(1236).intl;
   obj[1] = intl.string(stickerUrl(1236).t.B1ubHx);
   obj[2] = callback;
-  obj[1] = jsx(stickerUrl(5414).TableRow, { icon: null, label: null, onPress: null });
-  obj[0] = jsx(stickerUrl(5807).TableRowGroup, { icon: null, label: null, onPress: null });
-  return jsx(stickerUrl(5804).ActionSheet, { icon: null, label: null, onPress: null });
+  obj[1] = jsx(stickerUrl(5435).TableRow, { icon: null, label: null, onPress: null });
+  obj[0] = jsx(stickerUrl(5828).TableRowGroup, { icon: null, label: null, onPress: null });
+  return jsx(stickerUrl(5825).ActionSheet, { icon: null, label: null, onPress: null });
 };

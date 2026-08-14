@@ -1,10 +1,10 @@
-// Module ID: 15696
-// Function ID: 15697
+// Module ID: 15714
+// Function ID: 15715
 // Name: iCYMIStyles
-// Dependencies: [19, 17, 1922, 21, 15640, 712, 500, 8962, 8832, 589, 4887, 15679, 1297, 2]
+// Dependencies: [19, 17, 1922, 21, 15658, 712, 500, 8976, 8846, 589, 4909, 15697, 1297, 2]
 // Exports: default
 
-// Module 15696 (iCYMIStyles)
+// Module 15714 (iCYMIStyles)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

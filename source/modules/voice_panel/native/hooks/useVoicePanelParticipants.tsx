@@ -1,10 +1,10 @@
-// Module ID: 16234
-// Function ID: 16235
+// Module ID: 16252
+// Function ID: 16253
 // Name: getMemoizedParticipant
-// Dependencies: [32, 19, 4358, 1218, 1391, 4416, 4361, 4417, 11705, 676, 16188, 589, 15431, 11704, 11707, 2]
+// Dependencies: [32, 19, 4358, 1218, 1391, 4416, 4361, 4417, 11721, 676, 16206, 589, 15446, 11720, 11723, 2]
 // Exports: default, useChunkedParticipants
 
-// Module 16234 (getMemoizedParticipant)
+// Module 16252 (getMemoizedParticipant)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getParticipants from "getParticipants";

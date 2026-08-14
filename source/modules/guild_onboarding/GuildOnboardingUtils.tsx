@@ -1,10 +1,10 @@
-// Module ID: 5289
-// Function ID: 5290
+// Module ID: 5310
+// Function ID: 5311
 // Name: isChattableChannel
-// Dependencies: [1391, 5039, 1980, 1910, 3989, 5283, 676, 3977, 589, 1403, 4835, 5284, 3994, 1370, 643, 1903, 5290, 2]
+// Dependencies: [1391, 5061, 1980, 1910, 3989, 5304, 676, 3977, 589, 1403, 4857, 5305, 3994, 1370, 643, 1903, 5311, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 5289 (isChattableChannel)
+// Module 5310 (isChattableChannel)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import set from "set";
 import comparator from "comparator";
@@ -21,7 +21,7 @@ const require = arg1;
 function isChattableChannel(guild_id) {
   let tmp = null != guild_id;
   if (tmp) {
-    const canChannelBeDefaultResult = require(5284) /* useCanChannelBeDefault */.canChannelBeDefault(guild_id.guild_id, guild_id.id);
+    const canChannelBeDefaultResult = require(5305) /* useCanChannelBeDefault */.canChannelBeDefault(guild_id.guild_id, guild_id.id);
     if (!canChannelBeDefaultResult) {
       tmp = canChannelBeDefaultResult;
     } else {
@@ -36,7 +36,7 @@ function isChattableChannel(guild_id) {
       }
       const tmp7 = importAll(3994);
     }
-    const obj = require(5284) /* useCanChannelBeDefault */;
+    const obj = require(5305) /* useCanChannelBeDefault */;
   }
   return tmp;
 }
@@ -60,7 +60,7 @@ function getFlattenedDefaultChannels(closure_0, arr, arg2, fn) {
     let obj = channel;
     let tmp = require;
     let tmp2 = dependencyMap;
-    let obj2 = require(5284) /* useCanChannelBeDefault */;
+    let obj2 = require(5305) /* useCanChannelBeDefault */;
     if (obj2.canChannelBeDefault(channel.guild_id, channel.id)) {
       let tmp3 = channel;
       if (!arr.includes(obj.id)) {
@@ -288,7 +288,7 @@ export const isChattableChannelId = function isChattableChannelId(arg0) {
   channel = channel.getChannel(arg0);
   let tmp = null != channel;
   if (tmp) {
-    const canChannelBeDefaultResult = require(5284) /* useCanChannelBeDefault */.canChannelBeDefault(channel.guild_id, channel.id);
+    const canChannelBeDefaultResult = require(5305) /* useCanChannelBeDefault */.canChannelBeDefault(channel.guild_id, channel.id);
     if (!canChannelBeDefaultResult) {
       tmp = canChannelBeDefaultResult;
     } else {
@@ -303,7 +303,7 @@ export const isChattableChannelId = function isChattableChannelId(arg0) {
       }
       const tmp7 = importAll(3994);
     }
-    const obj2 = require(5284) /* useCanChannelBeDefault */;
+    const obj2 = require(5305) /* useCanChannelBeDefault */;
   }
   return tmp;
 };

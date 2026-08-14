@@ -1,9 +1,9 @@
-// Module ID: 15303
-// Function ID: 15304
+// Module ID: 15317
+// Function ID: 15318
 // Name: GuildChannels
-// Dependencies: [32, 19, 17, 4334, 7032, 15226, 1910, 1979, 4417, 676, 21, 1502, 4197, 9602, 1367, 15304, 15330, 15376, 14406, 15225, 15377, 15331, 15379, 7043, 589, 7042, 15380, 15384, 7035, 15385, 11136, 15211, 14407, 10977, 5755, 15437, 15439, 15452, 8053, 15455, 15457, 15461, 15462, 15467, 1913, 15469, 8728, 15474, 11346, 2]
+// Dependencies: [32, 19, 17, 4334, 7054, 15240, 1910, 1979, 4417, 676, 21, 1502, 4197, 9615, 1367, 15318, 15344, 15391, 14419, 15239, 15392, 15345, 15394, 7065, 589, 7064, 15395, 15399, 7057, 15400, 11152, 15225, 14420, 10993, 5776, 15452, 15454, 15467, 8074, 15470, 15472, 15476, 15477, 15482, 1913, 15484, 8742, 15492, 11362, 2]
 
-// Module 15303 (GuildChannels)
+// Module 15317 (GuildChannels)
 import useYouBarTotalHeight from "useYouBarTotalHeight";
 import importAllResult from "context";
 import { View } from "registerGuildVisibilityMethod";
@@ -65,7 +65,7 @@ function ChannelsWrapper(selectedGuildId) {
   if (selectedGuildId === closure_13) {
     obj = { style: null };
     obj[0] = merged.style;
-    return callback(importDefault(15462), obj);
+    return callback(importDefault(15477), obj);
   } else {
     if (null != stateFromStores) {
       if (selectedGuildId !== closure_12) {
@@ -76,14 +76,14 @@ function ChannelsWrapper(selectedGuildId) {
           obj.guild = stateFromStores;
           obj.selectedChannelId = selectedChannelId;
           obj.selectedVoiceChannelId = stateFromStores1;
-          return callback(tmp2(15469).default, obj);
+          return callback(tmp2(15484).default, obj);
         } else {
-          tmp2Result = tmp2(8728);
+          tmp2Result = tmp2(8742);
           if (tmp2Result.shouldNSFWGateGuild(selectedGuildId)) {
             obj1 = { style: null, guildId: null };
             obj1[0] = merged.style;
             obj1[1] = selectedGuildId;
-            let tmp6Result = tmp6(importDefault(15474), obj1);
+            let tmp6Result = tmp6(importDefault(15492), obj1);
           } else {
             const obj2 = {};
             const merged2 = Object.assign(merged);
@@ -99,7 +99,7 @@ function ChannelsWrapper(selectedGuildId) {
     const obj3 = { style: null, selectedGuildId: null };
     obj3[0] = merged.style;
     obj3[1] = selectedGuildId;
-    return callback(importDefault(15467), obj3);
+    return callback(importDefault(15482), obj3);
   }
 }
 let c4 = importAllResult;
@@ -379,7 +379,7 @@ const memoResult1 = importAllResult.memo((arg0) => {
   let obj = { children: null };
   obj = {};
   const merged = Object.assign(arg0);
-  const items = [callback(ChannelsWrapper, obj), callback(require(11346) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "channel-list", checkFocusedScreen: "guilds" })];
+  const items = [callback(ChannelsWrapper, obj), callback(require(11362) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "channel-list", checkFocusedScreen: "guilds" })];
   obj[0] = items;
   return callback2(closure_16, obj);
 });

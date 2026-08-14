@@ -1,9 +1,9 @@
-// Module ID: 7192
-// Function ID: 7193
+// Module ID: 7214
+// Function ID: 7215
 // Name: setCooldown
-// Dependencies: [1391, 3989, 7193, 4227, 709, 687, 589, 2]
+// Dependencies: [1391, 3989, 7215, 4227, 709, 687, 589, 2]
 
-// Module 7192 (setCooldown)
+// Module 7214 (setCooldown)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Store } from "initialize";
@@ -18,7 +18,7 @@ function setCooldown(channel, SendMessage, arg2) {
     const id = channel.id;
     delete tmp2[tmp];
   }
-  let obj = _require(7193);
+  let obj = _require(7215);
   if (!obj.canBypassSlowmode(channel)) {
     if (arg2 > 0) {
       const _Date = Date;

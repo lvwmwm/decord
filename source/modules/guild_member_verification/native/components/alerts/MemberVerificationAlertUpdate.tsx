@@ -1,10 +1,10 @@
-// Module ID: 8480
-// Function ID: 8481
+// Module ID: 8502
+// Function ID: 8503
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 17, 676, 21, 4342, 4773, 1236, 4058, 8481, 4338, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 4795, 1236, 4058, 8503, 4338, 2]
 // Exports: default
 
-// Module 8480 (MemberVerificationAlertUpdate)
+// Module 8502 (MemberVerificationAlertUpdate)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { DownloadLinks } from "ME";
@@ -30,7 +30,7 @@ export default function MemberVerificationAlertUpdate(onClose) {
     return callback(table[7]).openURL(constants.IOS);
   };
   obj.onCancel = onClose.onClose;
-  obj = { source: importDefault(8481), style: tmp.headerImage };
+  obj = { source: importDefault(8503), style: tmp.headerImage };
   const items = [callback(Image, obj), , ];
   obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
@@ -41,5 +41,5 @@ export default function MemberVerificationAlertUpdate(onClose) {
   obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t.gnkqzQ);
   items[2] = callback(require(4338) /* Text */.Text, obj1);
   obj.children = items;
-  return callback2(importDefault(4773), obj);
+  return callback2(importDefault(4795), obj);
 };

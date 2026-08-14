@@ -1,10 +1,10 @@
-// Module ID: 7791
-// Function ID: 7792
+// Module ID: 7812
+// Function ID: 7813
 // Name: BuyNitroMarketingHeader
-// Dependencies: [19, 17, 6943, 21, 712, 4342, 4083, 4345, 4343, 4278, 7792, 500, 7793, 7789, 691, 5308, 6945, 7375, 4766, 1236, 7795, 4338, 7796, 7798, 2]
+// Dependencies: [19, 17, 6964, 21, 712, 4342, 4083, 4345, 4343, 4278, 7813, 500, 7814, 7810, 691, 5329, 6966, 7397, 4788, 1236, 7816, 4338, 7817, 7819, 2]
 // Exports: default
 
-// Module 7791 (BuyNitroMarketingHeader)
+// Module 7812 (BuyNitroMarketingHeader)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "registerAsset";
 import { Gradients } from "items";
@@ -65,8 +65,8 @@ let closure_11 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   obj[1] = obj;
   const tmp3 = -importDefault(712).space.PX_16;
   const tmp5 = absoluteFillObject;
-  obj[2] = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "set", alignSelf: 928615788638344000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-  const obj1 = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "set", alignSelf: 928615788638344000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj[2] = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "_desired", alignSelf: 139264.18449831803 };
+  const obj1 = { position: "absolute", top: -importDefault(712).space.PX_16, right: "call", left: "_desired", alignSelf: 139264.18449831803 };
   obj[3] = { position: "absolute", top: arg0 + importDefault(712).space.PX_20, right: importDefault(712).space.PX_4 };
   const obj3 = { height: null };
   obj3[0] = importDefault(712).space.PX_80 + importDefault(712).space.PX_4;

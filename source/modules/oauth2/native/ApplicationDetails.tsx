@@ -1,10 +1,10 @@
-// Module ID: 10497
-// Function ID: 10498
+// Module ID: 10513
+// Function ID: 10514
 // Name: ApplicationDetailsEntry
-// Dependencies: [19, 17, 21, 4342, 712, 10475, 10498, 10500, 11, 10473, 4286, 1236, 4864, 10477, 10502, 4306, 8951, 10504, 10319, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 10491, 10514, 10516, 11, 10489, 4286, 1236, 4886, 10493, 10518, 4306, 8965, 10520, 10333, 4338, 2]
 // Exports: default
 
-// Module 10497 (ApplicationDetailsEntry)
+// Module 10513 (ApplicationDetailsEntry)
 import "Text";
 import { View } from "RobotIcon";
 import jsxProd from "jsxProd";
@@ -48,7 +48,7 @@ export default function ApplicationDetails(arg0) {
   ({ isEmbeddedFlow, connectedAccount } = arg0);
   let obj = importDefault(11);
   const tmp2 = createCacheKey();
-  let obj1 = require(10473) /* items */;
+  let obj1 = require(10489) /* items */;
   let joined = null;
   const securityMessage = obj1.getSecurityMessage(scopes);
   if (null != redirectUri) {
@@ -77,16 +77,16 @@ export default function ApplicationDetails(arg0) {
     tmp15 = callback(ApplicationDetailsEntry, obj);
   }
   const items = [tmp15, , , , , , ];
-  const obj2 = { iconComponent: require(4864) /* LockIcon */.LockIcon, text: null };
+  const obj2 = { iconComponent: require(4886) /* LockIcon */.LockIcon, text: null };
   const date = new Date(obj.extractTimestamp(application.id));
   const tmp13 = closure_5;
   const tmp14 = View;
-  obj2[1] = require(10477) /* getApplicationDetailsText */.getApplicationDetailsText(application);
+  obj2[1] = require(10493) /* getApplicationDetailsText */.getApplicationDetailsText(application);
   items[1] = callback(ApplicationDetailsEntry, obj2);
   let tmp18Result = null;
   if (null != connectedAccount) {
     const obj3 = { iconComponent: null, text: null };
-    obj3[0] = tmp5(10502).HammerIcon;
+    obj3[0] = tmp5(10518).HammerIcon;
     const intl2 = tmp5(1236).intl;
     obj3[1] = intl2.string(tmp5(1236).t["8qui3M"]);
     tmp18Result = tmp18(tmp19, obj3);
@@ -97,11 +97,11 @@ export default function ApplicationDetails(arg0) {
   obj4[1] = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t["+1bjc8"], { date });
   items[3] = callback(ApplicationDetailsEntry, obj4);
   tmp18Result = null;
-  if (scopes.includes(require(8951) /* set */.OAuth2Scopes.BOT)) {
+  if (scopes.includes(require(8965) /* set */.OAuth2Scopes.BOT)) {
     tmp18Result = null;
     if (null != approximateGuildCount) {
       const obj5 = { iconComponent: null, text: null };
-      obj5[0] = tmp5(10504).RobotIcon;
+      obj5[0] = tmp5(10520).RobotIcon;
       const intl4 = tmp5(1236).intl;
       const obj6 = { guildCount: null };
       obj6[0] = approximateGuildCount;
@@ -110,22 +110,22 @@ export default function ApplicationDetails(arg0) {
     }
   }
   items[4] = tmp18Result;
-  const tmp5Result = require(10477) /* getApplicationDetailsText */;
-  items[5] = callback(ApplicationDetailsEntry, { iconComponent: require(10319) /* ShieldIcon */.ShieldIcon, text: securityMessage });
+  const tmp5Result = require(10493) /* getApplicationDetailsText */;
+  items[5] = callback(ApplicationDetailsEntry, { iconComponent: require(10333) /* ShieldIcon */.ShieldIcon, text: securityMessage });
   let mapped = null;
   if (null != disclosures) {
     mapped = disclosures.map((toFixed) => {
-      let obj = callback(10475);
+      let obj = callback(10491);
       const textForDisclosure = obj.getTextForDisclosure(toFixed);
-      if (callback(10475).ApplicationDisclosure.IP_LOCATION === toFixed) {
+      if (callback(10491).ApplicationDisclosure.IP_LOCATION === toFixed) {
         obj = { iconComponent: null };
-        obj[0] = tmp(10498).GlobeEarthIcon;
+        obj[0] = tmp(10514).GlobeEarthIcon;
         let tmp4 = obj;
       } else {
         tmp4 = null;
-        if (tmp(10475).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
+        if (tmp(10491).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
           obj = { iconComponent: null };
-          obj[0] = tmp(10500).EmbedIcon;
+          obj[0] = tmp(10516).EmbedIcon;
           tmp4 = obj;
         }
       }

@@ -1,10 +1,10 @@
-// Module ID: 8498
-// Function ID: 8499
+// Module ID: 8520
+// Function ID: 8521
 // Name: UserVerification
-// Dependencies: [19, 21, 4342, 4168, 8499, 4338, 1236, 2]
+// Dependencies: [19, 21, 4342, 4168, 8521, 4338, 1236, 2]
 // Exports: default
 
-// Module 8498 (UserVerification)
+// Module 8520 (UserVerification)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -30,14 +30,14 @@ export default function UserVerification(arg0) {
       let obj = { passesVerification: null, platform: null };
       obj[0] = verification[tmp12(undefined, 4168).UserVerificationFieldPlatforms.PHONE];
       obj[1] = tmp12(4168).UserVerificationFieldPlatforms.PHONE;
-      tmp5 = callback(importDefault(8499), obj);
-      const tmp4 = importDefault(8499);
+      tmp5 = callback(importDefault(8521), obj);
+      const tmp4 = importDefault(8521);
     }
     const items = [tmp5, , ];
     obj = { passesVerification: null, platform: null };
     obj[0] = verification[require(undefined, 4168) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL];
     obj[1] = require(4168) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.EMAIL;
-    items[1] = callback(importDefault(8499), obj);
+    items[1] = callback(importDefault(8521), obj);
     obj = { style: null, variant: "heading-deprecated-12/medium", color: "text-default", children: null };
     obj[0] = tmp.emailPhoneNote;
     if (platform === require(4168) /* MAX_RESULTS_PER_PAGE */.UserVerificationFieldPlatforms.PHONE) {

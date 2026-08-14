@@ -1,10 +1,10 @@
-// Module ID: 5200
-// Function ID: 5201
+// Module ID: 5221
+// Function ID: 5222
 // Name: NOOP
-// Dependencies: [32, 5201, 5216, 4790, 5258, 5259, 5263, 3991, 1395, 1984, 1930, 1391, 5266, 1980, 1990, 1983, 1910, 4562, 3989, 4431, 3998, 1979, 4165, 1922, 4391, 676, 5267, 1398, 3, 5268, 1430, 4330, 5269, 1903, 4187, 5270, 5026, 12, 1989, 1370, 5271, 3994, 4535, 1236, 11, 5989, 4034, 5992, 5884, 5993, 5994, 1374, 5995, 5996, 4795, 6001, 2]
+// Dependencies: [32, 5222, 5237, 4812, 5279, 5280, 5284, 3991, 1395, 1984, 1930, 1391, 5287, 1980, 1990, 1983, 1910, 4584, 3989, 4431, 3998, 1979, 4165, 1922, 4391, 676, 5288, 1398, 3, 5289, 1430, 4330, 5290, 1903, 4187, 5291, 5048, 12, 1989, 1370, 5292, 3994, 4535, 1236, 11, 6010, 4034, 6013, 5905, 6014, 6015, 1374, 6016, 6017, 4817, 6022, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
-// Module 5200 (NOOP)
+// Module 5221 (NOOP)
 import fuzzysearch from "fuzzysearch";
 import fromType from "fromType";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -93,7 +93,7 @@ function getMatchValue(toLocaleLowerCaseResult1, nextResult, flag) {
       return 3;
     } else {
       if (flag) {
-        if (importDefault(5269)(queryLower, toLocaleLowerCaseResult1)) {
+        if (importDefault(5290)(queryLower, toLocaleLowerCaseResult1)) {
           return 1;
         }
       }
@@ -229,21 +229,21 @@ function queryMemberList(arg0) {
                             if (substr5 !== normalizeResult) {
                               let tmp33 = num < 50;
                               if (num < 50) {
-                                let tmp28 = tmp12(5269)(toLocaleLowerCaseResult, str4) || tmp12(5269)(normalizeResult, str5);
+                                let tmp28 = tmp12(5290)(toLocaleLowerCaseResult, str4) || tmp12(5290)(normalizeResult, str5);
                                 if (!tmp28) {
-                                  let tmp29 = null != str6 && tmp12(5269)(toLocaleLowerCaseResult, str6);
+                                  let tmp29 = null != str6 && tmp12(5290)(toLocaleLowerCaseResult, str6);
                                   tmp28 = tmp29;
                                 }
                                 if (!tmp28) {
-                                  let tmp30 = null != str7 && tmp12(5269)(normalizeResult, str7);
+                                  let tmp30 = null != str7 && tmp12(5290)(normalizeResult, str7);
                                   tmp28 = tmp30;
                                 }
                                 if (!tmp28) {
-                                  let tmp31 = null != str8 && tmp12(5269)(toLocaleLowerCaseResult, str8);
+                                  let tmp31 = null != str8 && tmp12(5290)(toLocaleLowerCaseResult, str8);
                                   tmp28 = tmp31;
                                 }
                                 if (!tmp28) {
-                                  let tmp32 = null != str9 && tmp12(5269)(normalizeResult, str9);
+                                  let tmp32 = null != str9 && tmp12(5290)(normalizeResult, str9);
                                   tmp28 = tmp32;
                                 }
                                 tmp33 = tmp28;
@@ -362,10 +362,10 @@ function queryMemberList(arg0) {
       let tmp4 = tmp13;
     } while (num2 < length);
   }
-  const sorted = items.sort(importDefault(5270));
+  const sorted = items.sort(importDefault(5291));
   let combined = items;
   if (items.length < limit) {
-    const sorted1 = items1.sort(importDefault(5270));
+    const sorted1 = items1.sort(importDefault(5291));
     const _Math = Math;
     combined = items.concat(items1.slice(0, Math.max(0, limit - items.length)));
   }
@@ -375,15 +375,15 @@ function queryMemberList(arg0) {
   return combined;
 }
 function getPriorityForStickerMetadataType(arg0) {
-  if (require(5026) /* StickerFormat */.StickerMetadataTypes.STICKER_NAME === arg0) {
+  if (require(5048) /* StickerFormat */.StickerMetadataTypes.STICKER_NAME === arg0) {
     return 11;
-  } else if (tmp(5026).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
+  } else if (tmp(5048).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
     return 6;
-  } else if (tmp(5026).StickerMetadataTypes.TAG === arg0) {
+  } else if (tmp(5048).StickerMetadataTypes.TAG === arg0) {
     return 1;
   } else {
-    if (tmp(5026).StickerMetadataTypes.GUILD_NAME !== arg0) {
-      if (tmp(5026).StickerMetadataTypes.PACK_NAME !== arg0) {
+    if (tmp(5048).StickerMetadataTypes.GUILD_NAME !== arg0) {
+      if (tmp(5048).StickerMetadataTypes.PACK_NAME !== arg0) {
         return 1;
       }
     }
@@ -730,9 +730,9 @@ areArraysShallowlyEqual = {
           const found1 = members.filter(isValidGuildMember);
           tmp6 = found1;
           if (flag) {
-            const members1 = importDefault(5271).requestMembers(channel1.guild_id, query, limit);
+            const members1 = importDefault(5292).requestMembers(channel1.guild_id, query, limit);
             tmp6 = found1;
-            const obj3 = importDefault(5271);
+            const obj3 = importDefault(5292);
           }
         }
         obj = { query: null, members: null, limit: null, filter: null, allowSnowflake: null };
@@ -845,7 +845,7 @@ areArraysShallowlyEqual = {
         flag = query.length > 0;
       }
       if (flag) {
-        let obj = importDefault(5271);
+        let obj = importDefault(5292);
         const members1 = obj.requestMembers(guildId, query, limit);
       }
       obj = { query: null, members: null, limit: null, filter: null, allowSnowflake: null };
@@ -887,7 +887,7 @@ areArraysShallowlyEqual = {
       tmp = query.length > 0;
     }
     if (tmp) {
-      let obj = importDefault(5271);
+      let obj = importDefault(5292);
       const members = obj.requestMembers(null, query, limit);
     }
     obj = { query, limit, request: flag, filter, boosters, users: null };
@@ -1052,7 +1052,7 @@ areArraysShallowlyEqual = {
       }
       continue;
     }
-    const sorted = items.sort(importDefault(5270));
+    const sorted = items.sort(importDefault(5291));
     if (items.length > limit) {
       items.length = limit;
     }
@@ -1092,7 +1092,7 @@ areArraysShallowlyEqual = {
         const obj2 = _undefined2(outer1_3[34]);
       }
     });
-    const sorted = items.sort(importDefault(5270));
+    const sorted = items.sort(importDefault(5291));
     if (items.length > num) {
       items.length = num;
     }
@@ -1234,7 +1234,7 @@ areArraysShallowlyEqual = {
       }
       continue;
     }
-    const sorted = items.sort(importDefault(5270));
+    const sorted = items.sort(importDefault(5291));
     if (items.length > limit) {
       items.length = limit;
     }
@@ -1292,7 +1292,7 @@ areArraysShallowlyEqual = {
       }
       continue;
     }
-    const sorted = items.sort(importDefault(5270));
+    const sorted = items.sort(importDefault(5291));
     if (items.length > limit) {
       items.length = limit;
     }
@@ -1384,7 +1384,7 @@ areArraysShallowlyEqual = {
       }
       continue;
     }
-    const sorted = items7.sort(importDefault(5270));
+    const sorted = items7.sort(importDefault(5291));
     if (items7.length > limit) {
       items7.length = limit;
     }
@@ -1449,7 +1449,7 @@ areArraysShallowlyEqual = {
       }
       continue;
     }
-    const sorted = items.sort(importDefault(5270));
+    const sorted = items.sort(importDefault(5291));
     if (items.length > limit) {
       items.length = limit;
     }
@@ -1908,16 +1908,16 @@ areArraysShallowlyEqual = {
     const regExp1 = new RegExp(obj2.escape(toLocaleLowerCaseResult), "i");
     obj[1] = regExp1;
     obj[2] = toLocaleLowerCaseResult;
-    let canSeeOnboardingHomeResult = require(5884) /* useCanSeeOnboardingHome */.canSeeOnboardingHome(guild.id);
+    let canSeeOnboardingHomeResult = require(5905) /* useCanSeeOnboardingHome */.canSeeOnboardingHome(guild.id);
     if (canSeeOnboardingHomeResult) {
       const features = guild.features;
       canSeeOnboardingHomeResult = !features.has(constants2.HUB);
     }
     const features2 = guild.features;
     const hasItem = features2.has(constants2.COMMUNITY);
-    const obj4 = require(5884) /* useCanSeeOnboardingHome */;
+    const obj4 = require(5905) /* useCanSeeOnboardingHome */;
     const tmp8 = constants2;
-    let result = require(5993) /* useGuildOnboardingAvailable */.isGuildOnboardingAvailable(guild);
+    let result = require(6014) /* useGuildOnboardingAvailable */.isGuildOnboardingAvailable(guild);
     if (result) {
       const features3 = guild.features;
       result = features3.has(tmp8.COMMUNITY);
@@ -2038,7 +2038,7 @@ areArraysShallowlyEqual = {
         continue;
       }
       const found = items1.filter((record) => "null" !== record.record.id);
-      let sorted = found.sort(importDefault(5994));
+      let sorted = found.sort(importDefault(6015));
       let tmp8 = null != limit;
       if (tmp8) {
         tmp8 = sorted.length > limit;
@@ -2233,8 +2233,8 @@ areArraysShallowlyEqual = {
       tmp3 = !obj.hasFetchedAllSounds();
     }
     if (tmp3) {
-      const result = _require(5996).maybeFetchSoundboardSounds();
-      const obj2 = _require(5996);
+      const result = _require(6017).maybeFetchSoundboardSounds();
+      const obj2 = _require(6017);
     }
     const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
@@ -2257,7 +2257,7 @@ areArraysShallowlyEqual = {
       return arg0;
     }, []);
     let arr = Array.from(sounds.values());
-    return _require(6001).searchSounds(arg0, reduced, currentUser, channel);
+    return _require(6022).searchSounds(arg0, reduced, currentUser, channel);
   },
   matchSentinel(arg0, arg1, storeThread) {
     const isMatch = tmp7.test(arg1);

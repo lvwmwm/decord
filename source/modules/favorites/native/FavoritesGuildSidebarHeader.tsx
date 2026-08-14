@@ -1,10 +1,10 @@
-// Module ID: 15473
-// Function ID: 15474
+// Module ID: 15491
+// Function ID: 15492
 // Name: EmptyBody
-// Dependencies: [19, 17, 15399, 21, 4342, 712, 9759, 12198, 4310, 9763, 2007, 9762, 4338, 1236, 3047, 4850, 4870, 4841, 4753, 2]
+// Dependencies: [19, 17, 15414, 21, 4342, 712, 9770, 12216, 4310, 9774, 2007, 9773, 4338, 1236, 3047, 4872, 4892, 4863, 4775, 2]
 // Exports: default
 
-// Module 15473 (EmptyBody)
+// Module 15491 (EmptyBody)
 import set from "set";
 import { View } from "ChatIcon";
 import { useHasFavoritesGuildSuggestions as closure_5 } from "items";
@@ -13,6 +13,7 @@ import createCacheKey from "createCacheKey";
 
 let closure_6;
 let error;
+let metroImportAll;
 const require = arg1;
 function EmptyBody() {
   const callback = React.useCallback(() => {
@@ -35,7 +36,7 @@ function PlaceholderRows() {
   obj = { style: tmp.placeholderRow, children: null };
   obj = { size: "sm", color: null };
   obj[1] = importDefault(712).colors.ICON_MUTED;
-  const items = [callback2(require(4850) /* TextIcon */.TextIcon, obj), ];
+  const items = [callback2(require(4872) /* TextIcon */.TextIcon, obj), ];
   const items1 = [, ];
   ({ placeholderBar: arr2[0], placeholderBarShort: arr2[1] } = tmp);
   items[1] = callback2(View, { style: items1 });
@@ -44,7 +45,7 @@ function PlaceholderRows() {
   const obj1 = { style: tmp.placeholderRow, children: null };
   const obj2 = { size: "sm", color: null };
   obj2[1] = importDefault(712).colors.ICON_MUTED;
-  const items3 = [callback2(require(4870) /* VoiceNormalIcon */.VoiceNormalIcon, obj2), ];
+  const items3 = [callback2(require(4892) /* VoiceNormalIcon */.VoiceNormalIcon, obj2), ];
   const items4 = [, ];
   ({ placeholderBar: arr5[0], placeholderBarLong: arr5[1] } = tmp);
   items3[1] = callback2(View, { style: items4 });
@@ -53,7 +54,7 @@ function PlaceholderRows() {
   const obj3 = { style: tmp.placeholderRow, children: null };
   const obj4 = { size: "sm", color: null };
   obj4[1] = importDefault(712).colors.ICON_MUTED;
-  const items5 = [callback2(require(4841) /* ChatIcon */.ChatIcon, obj4), ];
+  const items5 = [callback2(require(4863) /* ChatIcon */.ChatIcon, obj4), ];
   const items6 = [, ];
   ({ placeholderBar: arr7[0], placeholderBarShort: arr7[1] } = tmp);
   items5[1] = callback2(View, { style: items6 });
@@ -62,7 +63,7 @@ function PlaceholderRows() {
   obj[3] = items2;
   return callback3(View, obj);
 }
-({ jsx: closure_6, jsxs: error } = jsxProd);
+({ jsx: closure_6, jsxs: error, Fragment: metroImportAll } = jsxProd);
 createCacheKey = { copy: null, divider: null, placeholderRows: null, placeholderRow: null, placeholderBar: null, placeholderBarShort: null, placeholderBarLong: null };
 createCacheKey = { paddingTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").space.PX_16 };
 createCacheKey[0] = createCacheKey;
@@ -83,22 +84,35 @@ const result = require("items").fileFinishedImporting("modules/favorites/native/
 
 export default function FavoritesGuildSidebarHeader() {
   const tmp = createCacheKey();
+  const tmp2 = callback();
   let obj = { spacing: null, children: null };
   obj[0] = importDefault(712).space.PX_8;
+  let tmp7 = null;
+  if (tmp2) {
+    obj = { style: null };
+    obj[0] = tmp.divider;
+    tmp7 = callback2(View, obj);
+  }
+  const items = [tmp7, , ];
   obj = { spacing: null, style: null, children: null };
   obj[0] = importDefault(712).space.PX_8;
   obj[1] = tmp.copy;
-  obj = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(importDefault(3047)["1n0TGE"]);
-  const items = [callback2(require(4338) /* Text */.Heading, obj), callback2(EmptyBody, {})];
-  obj[2] = items;
-  const items1 = [callback3(require(4753) /* Stack */.Stack, obj), callback2(View, { style: tmp.divider }), ];
-  let tmp4Result = null;
+  const obj1 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
+  const intl = tmp4(1236).intl;
+  obj1[2] = intl.string(importDefault(3047)["1n0TGE"]);
+  const items1 = [callback2(require(4338) /* Text */.Heading, obj1), callback2(EmptyBody, {})];
+  obj[2] = items1;
+  items[1] = closure_7(require(4775) /* Stack */.Stack, obj);
+  let tmp3Result = null;
   if (!tmp2) {
-    tmp4Result = callback2(PlaceholderRows, {});
+    const obj2 = { children: null };
+    const obj3 = { style: null };
+    obj3[0] = tmp.divider;
+    const items2 = [tmp10(View, obj3), tmp10(PlaceholderRows, {})];
+    obj2[0] = items2;
+    tmp3Result = tmp3(closure_8, obj2);
   }
-  items1[2] = tmp4Result;
-  obj[1] = items1;
-  return callback3(require(4753) /* Stack */.Stack, obj);
+  items[2] = tmp3Result;
+  obj[1] = items;
+  return closure_7(require(4775) /* Stack */.Stack, obj);
 };

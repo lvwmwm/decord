@@ -1,10 +1,10 @@
-// Module ID: 9085
-// Function ID: 9086
+// Module ID: 9099
+// Function ID: 9100
 // Name: GuildEventsListHeader
-// Dependencies: [19, 17, 4357, 1397, 676, 4541, 21, 4342, 9086, 5436, 1236, 9025, 9010, 9087, 9002, 8998, 4771, 698, 5293, 5437, 9090, 5369, 2]
+// Dependencies: [19, 17, 4357, 1397, 676, 4551, 21, 4342, 9100, 5457, 1236, 9039, 9024, 9101, 9016, 9012, 4793, 698, 5314, 5458, 9104, 5390, 2]
 // Exports: default
 
-// Module 9085 (GuildEventsListHeader)
+// Module 9099 (GuildEventsListHeader)
 import Background from "Background";
 import { View } from "expandEventProperties";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
@@ -20,7 +20,7 @@ function GuildEventsListHeader(arg0) {
   let guild;
   ({ eventCount, guild } = arg0);
   let importDefault;
-  let tmp3Result = importDefault(9086)(guild.id);
+  let tmp3Result = importDefault(9100)(guild.id);
   importDefault = tmp3Result;
   if (eventCount > 0) {
     const intl2 = tmp4(1236).intl;
@@ -50,10 +50,10 @@ function GuildEventsListHeader(arg0) {
         const obj2 = guild(outer1_2[12]);
       }
     };
-    tmp3Result = tmp3(tmp4(9025).ActionSheetHeaderPressableText, obj);
+    tmp3Result = tmp3(tmp4(9039).ActionSheetHeaderPressableText, obj);
   }
   obj[1] = tmp3Result;
-  return jsx(guild(5436).BottomSheetTitleHeader, { title: formatToPlainStringResult, trailing: null });
+  return jsx(guild(5457).BottomSheetTitleHeader, { title: formatToPlainStringResult, trailing: null });
 }
 let closure_10 = createCacheKey.createStyles({ container: { flex: 1 } });
 let result = require("generateOldThreadCutoff").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventsListActionSheet.tsx");
@@ -61,7 +61,7 @@ let result = require("generateOldThreadCutoff").fileFinishedImporting("modules/g
 export default function GuildEventsListActionSheet(guild) {
   guild = guild.guild;
   let arr;
-  arr = arr(9087)(guild.id);
+  arr = arr(9101)(guild.id);
   const items = [arr, guild.id];
   const tmp = callback();
   const effect = React.useEffect(() => {
@@ -84,7 +84,7 @@ export default function GuildEventsListActionSheet(guild) {
     };
     let result = obj.openGuildEventDetails(obj);
   }, items1);
-  arr(4771)(() => {
+  arr(4793)(() => {
     let obj = arr(outer1_2[17]);
     obj = { type: outer1_6, guild_id: guild.id, guild_events_count: arr.length };
     obj.track(outer1_7.OPEN_MODAL, obj);
@@ -104,8 +104,8 @@ export default function GuildEventsListActionSheet(guild) {
   obj = { style: tmp.container, children: null };
   const obj1 = { inActionSheet: true, events: arr, onPressEvent: callback1, onCloseAction: callback, guild, lastAckedId: null };
   const ref = React.useRef(generateOldThreadCutoff.ackMessageId(guild.id, ReadStateTypes.GUILD_EVENT));
-  obj1[5] = arr(5369)(ref);
-  obj[1] = jsx(arr(9090), { inActionSheet: true, events: arr, onPressEvent: callback1, onCloseAction: callback, guild, lastAckedId: null });
+  obj1[5] = arr(5390)(ref);
+  obj[1] = jsx(arr(9104), { inActionSheet: true, events: arr, onPressEvent: callback1, onCloseAction: callback, guild, lastAckedId: null });
   obj[5] = <View style={tmp.container}>{null}</View>;
-  return jsx(guild(5437).BottomSheet, { style: tmp.container, children: null });
+  return jsx(guild(5458).BottomSheet, { style: tmp.container, children: null });
 };

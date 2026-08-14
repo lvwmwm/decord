@@ -1,10 +1,10 @@
-// Module ID: 16675
-// Function ID: 16676
+// Module ID: 16691
+// Function ID: 16692
 // Name: handleTouch
-// Dependencies: [5, 32, 19, 17, 1385, 676, 21, 4342, 712, 5801, 1236, 5867, 1628, 5316, 4752, 8357, 9399, 503, 4338, 4755, 9106, 9100, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 676, 21, 4342, 712, 5822, 1236, 5888, 1628, 5337, 4774, 8379, 9413, 503, 4338, 4777, 9120, 9114, 2]
 // Exports: default
 
-// Module 16675 (handleTouch)
+// Module 16691 (handleTouch)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
@@ -26,7 +26,7 @@ function handleTouch() {
   closure_7.dismiss();
 }
 function handleMoreActions() {
-  let obj = require(5801) /* showSimpleActionSheet */;
+  let obj = require(5822) /* showSimpleActionSheet */;
   obj = { key: "NewTermsModalMore", options: null, hasIcons: false };
   obj = { label: null, isDestructive: true, onPress: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -65,8 +65,8 @@ export default function NewTermsModal() {
   const memo = React.useMemo(() => action.getAction(), []);
   const tmp5 = callback2(React.useState(false), 2);
   importDefault = tmp5[1];
-  let obj = memo(5316);
-  obj.useNavigatorBackPressHandler(memo(4752).BackPressHandler.minimize);
+  let obj = memo(5337);
+  obj.useNavigatorBackPressHandler(memo(4774).BackPressHandler.minimize);
   const dependencyMap = React.useCallback(callback(function*() {
     if (c3 === 2) {
       c3 = 3;
@@ -129,7 +129,7 @@ export default function NewTermsModal() {
   obj[0] = memo(503).ImpressionTypes.VIEW;
   obj[1] = memo(503).ImpressionNames.USER_AGREEMENTS;
   obj[2] = { required_action: memo };
-  importDefault(9399)(obj, {}, []);
+  importDefault(9413)(obj, {}, []);
   let tmp10 = null;
   if (null != memo) {
     obj = { style: null, children: null };
@@ -197,7 +197,7 @@ export default function NewTermsModal() {
     };
     const intl8 = tmp6(1236).intl;
     obj16[2] = intl8.string(tmp6(1236).t["+TBKL1"]);
-    obj15[1] = callback3(tmp6(4755).Button, obj16);
+    obj15[1] = callback3(tmp6(4777).Button, obj16);
     items3[1] = callback3(closure_6, obj15);
     const obj17 = { style: null, source: null, color: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null };
     const items4 = [tmp.navbarRight, ];
@@ -205,15 +205,15 @@ export default function NewTermsModal() {
     obj18[0] = top;
     items4[1] = obj18;
     obj17[0] = items4;
-    obj17[1] = tmp2(9100);
+    obj17[1] = tmp2(9114);
     obj17[2] = tmp.navbarRight.tintColor;
     obj17[3] = handleMoreActions;
     const intl9 = tmp6(1236).intl;
     obj17[5] = intl9.string(tmp6(1236).t["UKOtz+"]);
-    items3[2] = callback3(tmp2(9106), obj17);
+    items3[2] = callback3(tmp2(9120), obj17);
     obj[1] = items3;
     tmp10 = callback4(closure_6, obj);
-    const tmp2Result = tmp2(9106);
+    const tmp2Result = tmp2(9120);
   }
   return tmp10;
 };

@@ -1,9 +1,9 @@
-// Module ID: 11897
-// Function ID: 11898
+// Module ID: 11913
+// Function ID: 11914
 // Name: handlePopAllLayers
 // Dependencies: [589, 709, 2]
 
-// Module 11897 (handlePopAllLayers)
+// Module 11913 (handlePopAllLayers)
 import { Store } from "initialize";
 
 function handlePopAllLayers() {

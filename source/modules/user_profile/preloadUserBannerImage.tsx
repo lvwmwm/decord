@@ -1,10 +1,10 @@
-// Module ID: 8358
-// Function ID: 8359
+// Module ID: 8380
+// Function ID: 8381
 // Name: preloadUserBannerImage
 // Dependencies: [1435, 4034, 2]
 // Exports: default
 
-// Module 8358 (preloadUserBannerImage)
+// Module 8380 (preloadUserBannerImage)
 const result = require("set").fileFinishedImporting("modules/user_profile/preloadUserBannerImage.tsx");
 
 export default function preloadUserBannerImage(user) {

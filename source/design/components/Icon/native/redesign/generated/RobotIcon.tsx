@@ -1,10 +1,10 @@
-// Module ID: 10504
-// Function ID: 10505
+// Module ID: 10520
+// Function ID: 10521
 // Name: RobotIcon
-// Dependencies: [19, 21, 712, 4064, 10505, 2]
+// Dependencies: [19, 21, 712, 4064, 10521, 2]
 // Exports: RobotIcon
 
-// Module 10504 (RobotIcon)
+// Module 10520 (RobotIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const RobotIcon = function RobotIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10505) /* registerAsset */;
+  obj[0] = require(10521) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

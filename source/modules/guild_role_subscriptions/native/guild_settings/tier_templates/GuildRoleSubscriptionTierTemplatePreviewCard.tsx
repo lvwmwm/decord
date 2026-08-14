@@ -1,10 +1,10 @@
-// Module ID: 16942
-// Function ID: 16943
+// Module ID: 16958
+// Function ID: 16959
 // Name: ContentHeader
-// Dependencies: [19, 17, 676, 21, 4342, 712, 4338, 4310, 16943, 2007, 16947, 1297, 16946, 1236, 5758, 1499, 14528, 16948, 698, 4539, 14534, 16944, 8803, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 4338, 4310, 16959, 2007, 16963, 1297, 16962, 1236, 5779, 1499, 14541, 16964, 698, 4549, 14547, 16960, 8817, 2]
 // Exports: default
 
-// Module 16942 (ContentHeader)
+// Module 16958 (ContentHeader)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import get_ActivityIndicator from "_getTemplates";
 import ME from "ME";
@@ -50,7 +50,7 @@ function ChannelBenefitShowCase(channel) {
   let name;
   let type;
   ({ description, type, name } = channel.channel);
-  let obj = require(16946) /* getPrivateChannelIconComponent */;
+  let obj = require(16962) /* getPrivateChannelIconComponent */;
   obj = { style: { flexDirection: "row", alignItems: "center" }, children: null };
   const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(require(1297) /* Button */.Spacer, { size: 4 }), callback(require(4338) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", children: name })];
   obj[1] = items;
@@ -70,7 +70,7 @@ function ViewEntireTemplateFooter() {
   const obj2 = { children: null };
   const obj3 = { size: null, source: null, style: null };
   obj3[0] = require(1297) /* Button */.Icon.Sizes.REFRESH_SMALL_16;
-  obj3[1] = importDefault(5758);
+  obj3[1] = importDefault(5779);
   const items2 = [{ rotate: "180deg" }];
   obj3[2] = { transform: items2 };
   obj2[0] = callback(require(1297) /* Button */.Icon, obj3);

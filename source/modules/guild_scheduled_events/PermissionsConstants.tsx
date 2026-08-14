@@ -1,9 +1,9 @@
-// Module ID: 9034
-// Function ID: 9035
+// Module ID: 9048
+// Function ID: 9049
 // Name: VIEW_CHANNEL
 // Dependencies: [676, 506, 1399, 2]
 
-// Module 9034 (VIEW_CHANNEL)
+// Module 9048 (VIEW_CHANNEL)
 import { Permissions } from "ME";
 import importAllResult from "fromString";
 import importAllResult1 from "fromString";

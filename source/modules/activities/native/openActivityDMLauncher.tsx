@@ -1,10 +1,10 @@
-// Module ID: 13395
-// Function ID: 13396
+// Module ID: 13407
+// Function ID: 13408
 // Name: _openActivityDMLauncher
-// Dependencies: [5, 1498, 5769, 4355, 12285, 10948, 5788, 7030, 4205, 1626, 2]
+// Dependencies: [5, 1498, 5790, 4355, 12303, 10964, 5809, 7052, 4205, 1626, 2]
 // Exports: default
 
-// Module 13395 (_openActivityDMLauncher)
+// Module 13407 (_openActivityDMLauncher)
 import _handleUsePrimaryEntryPointAppCommand from "_handleUsePrimaryEntryPointAppCommand";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 
@@ -73,7 +73,7 @@ function _openActivityDMLauncher() {
               c7 = 2;
               customId = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = callback2(5769).fetchApplication(callback);
+              obj2[0] = callback2(5790).fetchApplication(callback);
               return obj2;
             }
           } else {
@@ -118,7 +118,7 @@ function _openActivityDMLauncher() {
                 return obj6;
               } else {
                 c7 = customId;
-                obj6 = callback(12285);
+                obj6 = callback(12303);
                 c7 = 4;
                 customId = 1;
                 const obj7 = { value: null, done: false };
@@ -150,15 +150,15 @@ function _openActivityDMLauncher() {
                   obj10[0] = callback;
                   obj10[1] = {};
                   obj10[2] = c7;
-                  const items = [callback2(5788).ACTIVITY_BOOKMARK];
+                  const items = [callback2(5809).ACTIVITY_BOOKMARK];
                   obj10[3] = items;
-                  obj10[4] = callback(7030).CommandOrigin.ACTIVITY_BOOKMARK_EMBED;
+                  obj10[4] = callback(7052).CommandOrigin.ACTIVITY_BOOKMARK_EMBED;
                   obj10[5] = callback2;
                   obj10[6] = customId;
                   c7 = 5;
                   customId = 1;
                   const obj11 = { value: null, done: false };
-                  obj11[0] = callback2(10948)(obj10);
+                  obj11[0] = callback2(10964)(obj10);
                   return obj11;
                 }
               }

@@ -1,8 +1,8 @@
-// Module ID: 15236
-// Function ID: 15237
-// Dependencies: [19, 4334, 1218, 4431, 11423, 1922, 9844, 21, 4342, 712, 1297, 589, 9712, 2]
+// Module ID: 15250
+// Function ID: 15251
+// Dependencies: [19, 4334, 1218, 4431, 11439, 1922, 9855, 21, 4342, 712, 1297, 589, 9723, 2]
 
-// Module 15236
+// Module 15250
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import fetchFingerprint from "fetchFingerprint";
 import sortActivity from "sortActivity";
@@ -112,7 +112,7 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
     obj[2] = channel;
     obj[3] = stateFromStores1;
     obj[4] = tmpResult.avatar;
-    let tmp11Result = jsx(importDefault(9712), { status: null, size: null, channel: null, animate: null, style: null });
+    let tmp11Result = jsx(importDefault(9723), { status: null, size: null, channel: null, animate: null, style: null });
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {

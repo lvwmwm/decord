@@ -1,9 +1,9 @@
-// Module ID: 10427
-// Function ID: 10428
+// Module ID: 10443
+// Function ID: 10444
 // Name: trackRoundtrip
-// Dependencies: [4436, 7206, 676, 7221, 6969, 698, 7183, 6972, 7222, 2]
+// Dependencies: [4436, 7228, 676, 7243, 6990, 698, 7205, 6993, 7244, 2]
 
-// Module 10427 (trackRoundtrip)
+// Module 10443 (trackRoundtrip)
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import initializeState from "initializeState";
 import { AnalyticEvents } from "ME";
@@ -16,10 +16,10 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     if (null != apiResponseTimestamp.apiResponseTimestamp) {
       diff = apiResponseTimestamp.apiResponseTimestamp - apiResponseTimestamp.initialSendTimestamp;
     }
-    let obj = require(6969) /* receiveNetworkInfoformation */;
+    let obj = require(6990) /* receiveNetworkInfoformation */;
     const signalStrength = obj.getSignalStrength();
     obj = {};
-    const merged = Object.assign(importDefault(7183)());
+    const merged = Object.assign(importDefault(7205)());
     ({ endpoint: obj3.endpoint, wasSuccessful: obj3.was_successful } = apiResponseTimestamp);
     obj.api_latency_ms = diff;
     obj.mobile_network_type = type.getType();
@@ -56,9 +56,9 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     obj.transition_case = transition_case;
     const obj2 = importDefault(698);
     const tmp2 = require;
-    obj.is_foregrounded = require(6972) /* isForegrounded */.isForegrounded();
+    obj.is_foregrounded = require(6993) /* isForegrounded */.isForegrounded();
     obj2.track(AnalyticEvents.QUEST_DECISION_ROUNDTRIP, obj);
-    const tmp2Result = require(6972) /* isForegrounded */;
+    const tmp2Result = require(6993) /* isForegrounded */;
   }
 }
 class QuestDecisionRoundtripTracker {
@@ -122,7 +122,7 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
       let tmp6 = null;
       if (tmp5 != currentQuestId) {
         let obj = { type: null, questId: null };
-        obj[0] = require(7222) /* AdCreativeType */.AdCreativeType.QUEST;
+        obj[0] = require(7244) /* AdCreativeType */.AdCreativeType.QUEST;
         obj[1] = currentQuestId;
         tmp6 = obj;
       }
@@ -147,7 +147,7 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
         str3 = "no_serve";
       }
       str2 = str3;
-      obj4 = require(7221) /* result */;
+      obj4 = require(7243) /* result */;
     }
     if (tmp5 != tmp10) {
       let str4 = "quest";
@@ -155,7 +155,7 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
         str4 = "no_serve";
       }
       str = str4;
-      obj5 = require(7221) /* result */;
+      obj5 = require(7243) /* result */;
     }
     if ("quest" !== str2) {
       const _HermesInternal = HermesInternal;
@@ -175,8 +175,8 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
     if (previousAdDecision != tmp5) {
       creative = previousAdDecision.creative;
     }
-    const deliveredQuestId = require(7221) /* result */.getDeliveredQuestId(creative);
-    const obj6 = require(7221) /* result */;
+    const deliveredQuestId = require(7243) /* result */.getDeliveredQuestId(creative);
+    const obj6 = require(7243) /* result */;
     const tmp17 = require;
     let creative1;
     if (tmp10 != tmp5) {
@@ -187,7 +187,7 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
       str8 = "same_quest";
     }
     combined = str8;
-    tmp17Result = require(7221) /* result */;
+    tmp17Result = require(7243) /* result */;
   }
 };
 let set = Object.create(QuestDecisionRoundtripTracker.prototype);

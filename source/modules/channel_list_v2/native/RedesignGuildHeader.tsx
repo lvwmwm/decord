@@ -1,10 +1,10 @@
-// Module ID: 15331
-// Function ID: 15332
+// Module ID: 15345
+// Function ID: 15346
 // Name: GuildInfoHeader
-// Dependencies: [19, 17, 4334, 4054, 9844, 676, 21, 8441, 4278, 1363, 4761, 15332, 1913, 15333, 9502, 4065, 712, 4759, 11136, 4342, 4083, 4084, 4889, 15334, 1493, 589, 1500, 4754, 4758, 13323, 1435, 5308, 15375, 2]
+// Dependencies: [19, 17, 4334, 4054, 9855, 676, 21, 8463, 4278, 1363, 4783, 15346, 1913, 15347, 9515, 4065, 712, 4781, 11152, 4342, 4083, 4084, 4911, 15348, 1493, 589, 1500, 4776, 4780, 13335, 1435, 5329, 15390, 2]
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 15331 (GuildInfoHeader)
+// Module 15345 (GuildInfoHeader)
 import importAllResult from "createCacheKey";
 import get_ActivityIndicator from "MINIMUM_HIT_AREA";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -62,9 +62,9 @@ function GuildInfoHeader(bannerHeight) {
   const tmp = callback5();
   obj = { style: animatedStyle1, children: null };
   const tmp5 = bannerHeight(4084);
-  obj[1] = callback(bannerHeight(4889), { absolute: true, tall: true });
+  obj[1] = callback(bannerHeight(4911), { absolute: true, tall: true });
   const items1 = [callback(bannerHeight(4084), obj), ];
-  obj1 = { style: tmp.headerWrapper, children: callback(bannerHeight(15334), obj2) };
+  obj1 = { style: tmp.headerWrapper, children: callback(bannerHeight(15348), obj2) };
   obj2 = { guild, showExtraButtons: !isFavoritesGuildIdResult, canOpenGuildActionSheet: !isFavoritesGuildIdResult, showCoachmarks: !isFavoritesGuildIdResult };
   items1[1] = callback(closure_5, obj1);
   obj[1] = items1;
@@ -241,19 +241,19 @@ const result1 = require("maybeApplyNoTextColorForLightCustomTheme").fileFinished
 
 export default memoResult;
 export const useRedesignGuildHeaderHeight = function useRedesignGuildHeaderHeight(id) {
-  const tmp3 = importDefault(8441)();
+  const tmp3 = importDefault(8463)();
   let isThemeDarkResult = tmp3;
   if (!tmp3) {
     isThemeDarkResult = require(1363) /* AccessibilityAnnouncer */.isThemeDark(tmp4);
     const obj = require(1363) /* AccessibilityAnnouncer */;
   }
-  const fontScale = require(4761) /* getFontScale */.useFontScale();
-  const obj2 = require(4761) /* getFontScale */;
-  const tmp9 = null != importDefault(15332)(id);
+  const fontScale = require(4783) /* getFontScale */.useFontScale();
+  const obj2 = require(4783) /* getFontScale */;
+  const tmp9 = null != importDefault(15346)(id);
   const isFavoritesGuildIdResult = require(1913) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id.id);
   const obj3 = require(1913) /* getFavoritesAwareGuildName */;
-  const tmp11 = importDefault(15333)(id.id);
-  const scaleTextLineHeightResult = require(9502) /* map */.scaleTextLineHeight("redesign/heading-18/bold", fontScale);
+  const tmp11 = importDefault(15347)(id.id);
+  const scaleTextLineHeightResult = require(9515) /* map */.scaleTextLineHeight("redesign/heading-18/bold", fontScale);
   let num = 0;
   if (isThemeDarkResult) {
     num = 1;
@@ -262,11 +262,11 @@ export const useRedesignGuildHeaderHeight = function useRedesignGuildHeaderHeigh
   let num2 = 0;
   const token = tmp7Result.useToken(tmp(712).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   if (!isFavoritesGuildIdResult) {
-    num2 = tmp7(4759).SMALL_BUTTON_HEIGHT + closure_11;
+    num2 = tmp7(4781).SMALL_BUTTON_HEIGHT + closure_11;
   }
   let num3 = 0;
   if (tmp11) {
-    num3 = 8 + tmp7(4759).MEDIUM_BUTTON_HEIGHT + 8;
+    num3 = 8 + tmp7(4781).MEDIUM_BUTTON_HEIGHT + 8;
   }
   let num5 = 16;
   if (isFavoritesGuildIdResult) {
@@ -274,13 +274,13 @@ export const useRedesignGuildHeaderHeight = function useRedesignGuildHeaderHeigh
   }
   let num6 = 0;
   if (tmp9) {
-    tmp7Result = tmp7(9502);
+    tmp7Result = tmp7(9515);
     num6 = tmp7Result.scaleTextLineHeight(token, fontScale);
   }
   let bound = scaleTextLineHeightResult;
   if (isFavoritesGuildIdResult) {
     const _Math = Math;
-    bound = Math.max(scaleTextLineHeightResult, tmp7(4759).SMALL_BUTTON_HEIGHT);
+    bound = Math.max(scaleTextLineHeightResult, tmp7(4781).SMALL_BUTTON_HEIGHT);
   }
-  return importDefault(11136)(16 + bound + num6 + num2 + num3 + num5 + num);
+  return importDefault(11152)(16 + bound + num6 + num2 + num3 + num5 + num);
 };

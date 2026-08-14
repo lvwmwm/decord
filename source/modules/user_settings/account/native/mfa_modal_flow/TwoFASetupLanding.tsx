@@ -1,10 +1,10 @@
-// Module ID: 14097
-// Function ID: 14098
+// Module ID: 14110
+// Function ID: 14111
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 4342, 14098, 14094, 5368, 14099, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 14111, 14107, 5389, 14112, 4338, 1236, 2]
 // Exports: default
 
-// Module 14097 (TwoFASetupLanding)
+// Module 14110 (TwoFASetupLanding)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,13 +22,13 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/a
 
 export default function TwoFASetupLanding() {
   const tmp = callback3();
-  let obj = require(14098) /* styles */;
+  let obj = require(14111) /* styles */;
   const twoFASetupStyles = obj.useTwoFASetupStyles();
   obj = { children: null };
   obj = { style: tmp.container, children: null };
   const obj1 = { bottom: true, style: tmp.container, children: null };
   const obj2 = { source: null, style: null };
-  obj2[0] = importDefault(14099);
+  obj2[0] = importDefault(14112);
   obj2[1] = tmp.authIcon;
   const items = [callback(closure_3, obj2), , ];
   const obj3 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
@@ -42,7 +42,7 @@ export default function TwoFASetupLanding() {
   obj4[2] = intl2.format(require(1236) /* getSystemLocale */.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" });
   items[2] = callback(require(4338) /* Text */.Text, obj4);
   obj1[2] = items;
-  obj[1] = callback2(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
+  obj[1] = callback2(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
   obj[0] = callback(closure_4, obj);
-  return callback(require(14094) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj);
+  return callback(require(14107) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj);
 };

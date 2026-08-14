@@ -1,10 +1,10 @@
-// Module ID: 15738
-// Function ID: 15739
+// Module ID: 15756
+// Function ID: 15757
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 4256, 4546, 4547, 676, 21, 4083, 589, 5885, 11716, 698, 4539, 5272, 15739, 15740, 15745, 15749, 15750, 15753, 5884, 2]
+// Dependencies: [19, 4256, 4556, 4557, 676, 21, 4083, 589, 5906, 11732, 698, 4549, 5293, 15757, 15758, 15763, 15767, 15768, 15771, 5905, 2]
 // Exports: default
 
-// Module 15738 (GuildOnboardingHomePage)
+// Module 15756 (GuildOnboardingHomePage)
 import useCanSeeOnboardingHome from "useCanSeeOnboardingHome";
 import getHash from "getHash";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
@@ -28,7 +28,7 @@ function GuildOnboardingHomePage(guildId) {
   const items = [handleSettingsLoadSuccess];
   stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getSettings(guildId));
   let tmp4 = stateFromStores;
-  const tmp5 = stateFromStores(5885)(guildId);
+  const tmp5 = stateFromStores(5906)(guildId);
   let tmp6 = !tmp5;
   if (!tmp5) {
     let num;
@@ -101,16 +101,16 @@ function GuildOnboardingHomePage(guildId) {
     obj = { guildId: null, hideDescription: null };
     obj[0] = guildId;
     obj[1] = tmp5;
-    const items3 = [callback(tmp4(15740), obj), ];
+    const items3 = [callback(tmp4(15758), obj), ];
     if (tmp5) {
       obj1 = { children: null };
       let obj2 = { guildId: null };
       obj2[0] = guildId;
-      const items4 = [tmp12(tmp4(15745), obj2), , ];
+      const items4 = [tmp12(tmp4(15763), obj2), , ];
       let obj3 = { guildId: null };
       obj3[0] = guildId;
-      items4[1] = tmp12(tmp4(15749), obj3);
-      tmp4 = tmp4(15750);
+      items4[1] = tmp12(tmp4(15767), obj3);
+      tmp4 = tmp4(15768);
       const obj4 = { guildId: null };
       obj4[0] = guildId;
       tmp = tmp12(tmp4, obj4);
@@ -120,12 +120,12 @@ function GuildOnboardingHomePage(guildId) {
     } else {
       let obj5 = { guildId: null };
       obj5[0] = guildId;
-      tmp12Result = tmp12(tmp4(15753), obj5);
+      tmp12Result = tmp12(tmp4(15771), obj5);
     }
     items3[1] = tmp12Result;
     obj[2] = items3;
-    closure_11(tmp4(15739), obj);
-    const tmp4Result = tmp4(15739);
+    closure_11(tmp4(15757), obj);
+    const tmp4Result = tmp4(15757);
   }
 }
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);

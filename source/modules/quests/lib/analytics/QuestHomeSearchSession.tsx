@@ -1,10 +1,10 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7261
+// Function ID: 7262
 // Name: getOrCreateQuestHomeSearchSession
-// Dependencies: [514, 6979, 2]
+// Dependencies: [514, 7001, 2]
 // Exports: clearQuestHomeSearchSession, getCurrentQuestHomeSearchSession, getOrCreateQuestHomeSearchSession
 
-// Module 7239 (getOrCreateQuestHomeSearchSession)
+// Module 7261 (getOrCreateQuestHomeSearchSession)
 let c2 = null;
 const result = require("set").fileFinishedImporting("modules/quests/lib/analytics/QuestHomeSearchSession.tsx");
 
@@ -16,7 +16,7 @@ export const getOrCreateQuestHomeSearchSession = function getOrCreateQuestHomeSe
     obj[0] = require(514) /* v1 */.v4();
     obj[1] = timestamp;
     obj[2] = timestamp;
-    obj[3] = require(6979) /* result */.CLIENT_SESSION_STORAGE_VERSION;
+    obj[3] = require(7001) /* result */.CLIENT_SESSION_STORAGE_VERSION;
     obj[0] = obj;
     const obj4 = require(514) /* v1 */;
   } else {

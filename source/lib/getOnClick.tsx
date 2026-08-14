@@ -1,10 +1,10 @@
-// Module ID: 8988
-// Function ID: 8989
+// Module ID: 9002
+// Function ID: 9003
 // Name: openInviteModal
-// Dependencies: [32, 5, 4383, 7033, 5890, 1218, 1990, 1910, 4327, 4562, 1979, 4165, 5196, 676, 678, 5891, 709, 4328, 7803, 8989, 2007, 5272, 5906, 8998, 4326, 4331, 7196, 4052, 698, 10574, 11401, 12285, 10588, 4355, 10948, 12289, 10135, 10421, 1486, 11216, 5207, 12290, 7048, 4539, 4536, 8278, 12291, 2]
+// Dependencies: [32, 5, 4383, 7055, 5911, 1218, 1990, 1910, 4327, 4584, 1979, 4165, 5217, 676, 678, 5912, 709, 4328, 7824, 9003, 2007, 5293, 5927, 9012, 4326, 4331, 7218, 4052, 698, 10590, 11417, 12303, 10604, 4355, 10964, 12307, 10147, 10437, 1486, 11232, 5228, 12308, 7070, 4549, 4536, 8300, 12309, 2]
 // Exports: default
 
-// Module 8988 (openInviteModal)
+// Module 9002 (openInviteModal)
 import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
 import fetchFingerprint from "fetchFingerprint";
 import addApplication from "addApplication";
@@ -76,7 +76,7 @@ function _openInviteModal() {
               return obj;
             } else {
               let obj1 = callback(table[16]);
-              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessibilityRole", invite_instance_id: false };
+              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessibilityRole", invite_instance_id: null };
               obj1[1] = closure_0;
               obj1[4] = callback;
               c3 = 1;
@@ -345,7 +345,7 @@ export default function getOnClick(url) {
         if (_undefined.type !== tmp3(tmp4[25]).CodedLinkType.APP_DIRECTORY_STOREFRONT) {
           let result = tmp3(tmp4[26]).parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "isArray", skuId: "accessibilityRole" };
+            result = { applicationId: "r", skuId: "accessibilityRole" };
           }
           const tmp3Result = tmp3(tmp4[26]);
         }
@@ -362,7 +362,7 @@ export default function getOnClick(url) {
         outer1_1(tmp4[27])(url);
         return true;
       }
-      result = { applicationId: code, skuId: "a" };
+      result = { applicationId: code, skuId: "r" };
     };
   }
   if (null != findCodedLinkResult) {
@@ -668,7 +668,7 @@ export default function getOnClick(url) {
   }
   if (null != findCodedLinkResult) {
     if (findCodedLinkResult.type === tmp2(4331).CodedLinkType.QUESTS_EMBED) {
-      let tmp2Result = tmp2(10421);
+      let tmp2Result = tmp2(10437);
       if (tmp2Result.getIsEligibleForQuests()) {
         return (preventDefault) => {
           if (preventDefault != null) {
@@ -820,6 +820,6 @@ export default function getOnClick(url) {
         return true;
       };
     }
-    tmp2Result1 = tmp2(8278);
+    tmp2Result1 = tmp2(8300);
   }
 };

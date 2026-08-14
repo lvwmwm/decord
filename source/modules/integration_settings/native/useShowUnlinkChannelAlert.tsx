@@ -1,10 +1,10 @@
-// Module ID: 9736
-// Function ID: 9737
+// Module ID: 9747
+// Function ID: 9748
 // Name: useShowUnlinkChannelAlert
-// Dependencies: [5, 19, 8061, 4684, 1236, 4773, 2]
+// Dependencies: [5, 19, 8082, 4706, 1236, 4795, 2]
 // Exports: default
 
-// Module 9736 (useShowUnlinkChannelAlert)
+// Module 9747 (useShowUnlinkChannelAlert)
 import componentDidMount from "componentDidMount";
 import noop from "noop";
 
@@ -44,7 +44,7 @@ export default function useShowUnlinkChannelAlert(arg0, arg1, arg2) {
   }), items);
   const items1 = [arg1, callback];
   return React.useCallback(() => {
-    let obj = callback2(4684);
+    let obj = callback2(4706);
     obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, confirmColor: null };
     const intl = callback(1236).intl;
     obj[0] = intl.string(callback(1236).t.JmUENg);
@@ -56,7 +56,7 @@ export default function useShowUnlinkChannelAlert(arg0, arg1, arg2) {
     const intl4 = callback(1236).intl;
     obj[3] = intl4.string(callback(1236).t["cY+Oob"]);
     obj[4] = callback;
-    obj[5] = callback2(4773).Colors.RED;
+    obj[5] = callback2(4795).Colors.RED;
     obj.show(obj);
   }, items1);
 };

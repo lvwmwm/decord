@@ -1,10 +1,10 @@
-// Module ID: 14646
-// Function ID: 14647
+// Module ID: 14660
+// Function ID: 14661
 // Name: useColorPresetsWithA11yLabels
 // Dependencies: [19, 1934, 1236, 2661, 688, 2]
 // Exports: default
 
-// Module 14646 (useColorPresetsWithA11yLabels)
+// Module 14660 (useColorPresetsWithA11yLabels)
 import noop from "noop";
 import { getColorPresetsForEffect } from "items3";
 

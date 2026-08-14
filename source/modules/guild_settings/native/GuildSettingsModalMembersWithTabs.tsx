@@ -1,8 +1,8 @@
-// Module ID: 15757
-// Function ID: 15758
-// Dependencies: [32, 19, 17, 1910, 3989, 1922, 21, 4342, 712, 15411, 589, 5926, 1236, 15758, 15759, 15765, 4168, 1499, 8647, 15760, 6051, 9100, 9005, 12036, 12036, 9611, 2]
+// Module ID: 15775
+// Function ID: 15776
+// Dependencies: [32, 19, 17, 1910, 3989, 1922, 21, 4342, 712, 15427, 589, 5947, 1236, 15776, 15777, 15783, 4168, 1499, 8661, 15778, 6072, 9114, 9019, 12052, 12052, 12054, 2]
 
-// Module 15757
+// Module 15775
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "showMembersManagementActionSheet";
 import { View } from "useNavigation";
@@ -116,12 +116,12 @@ const memoResult = importAllResult.memo((guildId) => {
       children(ref) {
         const merged = Object.assign(ref, Object.create(null));
         const obj = { source: null, accessibilityLabel: null, ref: null };
-        obj[0] = callback2(9100);
+        obj[0] = callback2(9114);
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.ogxXGq);
         obj[2] = ref.ref;
         const merged1 = Object.assign(merged);
-        return callback3(callback(6051).HeaderActionButton, obj);
+        return callback3(callback(6072).HeaderActionButton, obj);
       }
     };
     return outer1_9(guildId(num[18]).ContextMenu, obj);

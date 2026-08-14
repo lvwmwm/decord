@@ -1,9 +1,9 @@
-// Module ID: 8399
-// Function ID: 8400
+// Module ID: 8421
+// Function ID: 8422
 // Name: get untranslatedDescription
-// Dependencies: [3998, 1922, 4778, 1954, 7030, 1236, 4535, 4683, 4355, 6965, 2]
+// Dependencies: [3998, 1922, 4800, 1954, 7052, 1236, 4535, 4705, 4355, 6986, 2]
 
-// Module 8399 (get untranslatedDescription)
+// Module 8421 (get untranslatedDescription)
 import markAllUserIdListsStale from "markAllUserIdListsStale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -53,7 +53,7 @@ obj.execute = function execute(arg0, channel) {
       obj1[0] = channelName;
       formatResult = intl2.format(tmp5(1236).t.IK1Qvs, obj1);
     }
-    let obj2 = importDefault(4683);
+    let obj2 = importDefault(4705);
     obj2 = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
     obj2[0] = formatToPlainStringResult1;
     obj2[1] = formatResult;

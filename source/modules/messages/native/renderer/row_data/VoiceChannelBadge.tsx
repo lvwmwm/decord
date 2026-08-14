@@ -1,10 +1,10 @@
-// Module ID: 8377
-// Function ID: 8378
+// Module ID: 8399
+// Function ID: 8400
 // Name: createVoiceChannelBadge
-// Dependencies: [17, 1391, 3989, 4361, 676, 8378, 4805, 4558, 2]
+// Dependencies: [17, 1391, 3989, 4361, 676, 8400, 4827, 4580, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 8377 (createVoiceChannelBadge)
+// Module 8399 (createVoiceChannelBadge)
 import { Image } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -14,7 +14,7 @@ import { Permissions } from "ME";
 let result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
 
 export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guildId) {
-  let obj = require(8378) /* experiment */;
+  let obj = require(8400) /* experiment */;
   if (obj.getVoiceChannelBadgeExperiment({ guildId, location: "VoiceChannelBadgeNative" }).enabled) {
     if (null != guildId) {
       discoverableVoiceState = discoverableVoiceState.getDiscoverableVoiceState(guildId, id);
@@ -25,18 +25,18 @@ export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guil
         }
         channel = channel.getChannel(channelId);
         if (null != channel) {
-          let tmpResult = tmp(4805);
+          let tmpResult = tmp(4827);
           const assetSource = Image.resolveAssetSource(tmpResult.getChannelIcon(channel));
           let uri;
           if (assetSource != null) {
             uri = assetSource.uri;
           }
           if (null != uri) {
-            tmpResult = tmp(4558);
+            tmpResult = tmp(4580);
             let result = tmpResult.shouldAgeVerifyForAgeGate();
             if (result) {
-              result = tmp(4558).shouldShowAgeGateForChannelId(channel.id);
-              const tmpResult1 = tmp(4558);
+              result = tmp(4580).shouldShowAgeGateForChannelId(channel.id);
+              const tmpResult1 = tmp(4580);
             }
             let isPrivateResult = channel.isPrivate();
             if (!isPrivateResult) {

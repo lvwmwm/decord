@@ -1,9 +1,9 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 11812
+// Function ID: 11813
 // Name: search
-// Dependencies: [1980, 4357, 5267, 5200, 12, 11, 589, 709, 2]
+// Dependencies: [1980, 4357, 5288, 5221, 12, 11, 589, 709, 2]
 
-// Module 11796 (search)
+// Module 11812 (search)
 import comparator from "comparator";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { Store } from "initialize";
@@ -25,9 +25,9 @@ class GuildChannelSearchManager {
 const prototype = GuildChannelSearchManager.prototype;
 prototype["search"] = function search(query, guildId) {
   const self = this;
-  let obj = require(5200) /* NOOP */;
+  let obj = require(5221) /* NOOP */;
   const boosterMap = obj.getBoosterMap(AutocompleterResultTypes.TEXT_CHANNEL);
-  let obj1 = require(5200) /* NOOP */;
+  let obj1 = require(5221) /* NOOP */;
   obj = {
     query,
     guildId,
@@ -44,15 +44,15 @@ prototype["search"] = function search(query, guildId) {
   const merged = Object.assign(obj);
   obj.type = closure_4;
   obj.boosters = boosterMap;
-  const obj4 = importDefault(5200);
-  const queryChannelsResult = importDefault(5200).queryChannels(obj);
+  const obj4 = importDefault(5221);
+  const queryChannelsResult = importDefault(5221).queryChannels(obj);
   obj1 = {};
   const merged1 = Object.assign(obj);
   obj1.type = closure_3;
   obj1.boosters = boosterMap1;
-  const obj6 = importDefault(5200);
-  this.voiceChannels = importDefault(5200).queryChannels(obj1).map((channel) => ({ channel: channel.record }));
-  const queryChannelsResult1 = importDefault(5200).queryChannels(obj1);
+  const obj6 = importDefault(5221);
+  this.voiceChannels = importDefault(5221).queryChannels(obj1).map((channel) => ({ channel: channel.record }));
+  const queryChannelsResult1 = importDefault(5221).queryChannels(obj1);
   const obj8 = require(12) /* apply */;
   const mapped = require(12) /* apply */.chain(queryChannelsResult).map((channel) => {
     const obj = { channel: channel.record, lastMessageId: null };

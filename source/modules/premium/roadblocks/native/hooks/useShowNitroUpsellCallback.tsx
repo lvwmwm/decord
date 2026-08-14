@@ -1,10 +1,10 @@
-// Module ID: 8763
-// Function ID: 8764
+// Module ID: 8777
+// Function ID: 8778
 // Name: useShowNitroUpsellCallback
 // Dependencies: [19, 4083, 2]
 // Exports: default
 
-// Module 8763 (useShowNitroUpsellCallback)
+// Module 8777 (useShowNitroUpsellCallback)
 import noop from "noop";
 
 const require = arg1;

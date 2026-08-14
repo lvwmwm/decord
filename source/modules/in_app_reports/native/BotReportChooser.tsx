@@ -1,10 +1,10 @@
-// Module ID: 12335
-// Function ID: 12336
+// Module ID: 12353
+// Function ID: 12354
 // Name: ReportAppProfile
-// Dependencies: [19, 4383, 21, 5804, 4338, 1236, 5806, 4310, 8065, 589, 5769, 2]
+// Dependencies: [19, 4383, 21, 5825, 4338, 1236, 5827, 4310, 8086, 589, 5790, 2]
 // Exports: default
 
-// Module 12335 (ReportAppProfile)
+// Module 12353 (ReportAppProfile)
 import "noop";
 import addApplication from "addApplication";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ function ReportAppProfile(arg0) {
     const obj = outer1_1(outer1_2[7]);
     const result = outer1_0(outer1_2[8]).showReportModalForUser(closure_0, closure_1, closure_2, addApplication);
   };
-  return callback(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj);
+  return callback(require(5827) /* ActionSheetRowIcon */.ActionSheetRow, obj);
 }
 function ReportAppBehavior(arg0) {
   let addApplication;
@@ -46,7 +46,7 @@ function ReportAppBehavior(arg0) {
   let obj = require(589) /* initialize */;
   const items = [addApplication];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getAppIdForBotUserId(id.id));
-  let obj1 = require(5769) /* fetchApplication */;
+  let obj1 = require(5790) /* fetchApplication */;
   data = obj1.useApplication(stateFromStores).data;
   obj = { label: null, subLabel: null, onPress: null, arrow: true, disabled: null };
   obj = { variant: "heading-md/semibold", children: null };
@@ -73,7 +73,7 @@ function ReportAppBehavior(arg0) {
     }
   };
   obj[4] = null == data;
-  return callback(require(5806) /* ActionSheetRowIcon */.ActionSheetRow, obj);
+  return callback(require(5827) /* ActionSheetRowIcon */.ActionSheetRow, obj);
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 const BotReportChooser = "BotReportChooser";
@@ -91,7 +91,7 @@ export default function BotReportChooser(arg0) {
   const merged1 = Object.assign(arg0);
   items[1] = callback(ReportAppBehavior, {});
   obj[1] = items;
-  obj[1] = callback2(require(5806) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback(require(5804) /* ActionSheet */.ActionSheet, obj);
+  obj[1] = callback2(require(5827) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback(require(5825) /* ActionSheet */.ActionSheet, obj);
 };
 export const BOT_REPORT_CHOOSER_KEY = "BotReportChooser";

@@ -1,10 +1,10 @@
-// Module ID: 11410
-// Function ID: 11411
+// Module ID: 11426
+// Function ID: 11427
 // Name: isNewMessageGroup
-// Dependencies: [676, 687, 5931, 11, 4031, 2]
+// Dependencies: [676, 687, 5952, 11, 4031, 2]
 // Exports: isNewGroupItem
 
-// Module 11410 (isNewMessageGroup)
+// Module 11426 (isNewMessageGroup)
 import ME from "ME";
 
 let c3;
@@ -24,7 +24,7 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
     } else {
       let REPLY = constants;
       if (type.type > constants.DEFAULT) {
-        const tmp37 = importDefault(5931)(content);
+        const tmp37 = importDefault(5952)(content);
         let tmp38 = !tmp37;
         if (tmp37) {
           type = type.type;
@@ -33,7 +33,7 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
         }
         let tmp34 = tmp38;
       } else {
-        tmp34 = importDefault(5931)(content);
+        tmp34 = importDefault(5952)(content);
         if (!tmp34) {
           let tmp7 = content.author.id !== type.author.id;
           if (!tmp7) {

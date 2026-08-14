@@ -1,67 +1,33 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 9781
+// Function ID: 9782
 // Name: items1
-// Dependencies: [32, 19, 1383, 1388, 1377, 6066, 9761, 9770, 6065, 9759, 2]
-// Exports: isFavoritesIntroPopoverShown, useFavoritesBetaTagDismissibleContent, useFavoritesIntroPopoverDismissibleContent, useFavoritesMenuItemPopoverDismissibleContent, useIsFavoritesIntroPopoverShown, useShouldRenderFavoritesMenuItemPopover
+// Dependencies: [32, 19, 1388, 1377, 6087, 9772, 9770, 9780, 6086, 9779, 2]
+// Exports: useFavoritesBetaTagDismissibleContent, useFavoritesMenuItemPopoverDismissibleContent, useShouldRenderFavoritesMenuItemPopover
 
-// Module 9769 (items1)
+// Module 9781 (items1)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
-import withContent from "withContent";
-import closure_7 from "withContent";
 import { ContentDismissActionType } from "ContentDismissActionType";
 
-let c5;
-let closure_6;
 const require = arg1;
-({ isContentShown: c5, useIsContentShown: closure_6 } = withContent);
 let items = [require("DismissibleContent").DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO, require("DismissibleContent").DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, require("DismissibleContent").DismissibleContent.FAVORITES_GUILD_NEW_BADGE, require("DismissibleContent").DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
-let items1 = [require("DismissibleContent").DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO, require("DismissibleContent").DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
-let items2 = [require("DismissibleContent").DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
-const result = require("withContent").fileFinishedImporting("modules/favorites/FavoritesDismissibleContent.tsx");
+const items1 = [require("DismissibleContent").DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO, require("DismissibleContent").DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
+const items2 = [require("DismissibleContent").DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
+const result = require("ContentDismissActionType").fileFinishedImporting("modules/favorites/FavoritesDismissibleContent.tsx");
 
 export const FAVORITES_GUILD_DISMISSIBLE_CONTENT = items;
-export const useFavoritesIntroPopoverDismissibleContent = function useFavoritesIntroPopoverDismissibleContent(arg0) {
-  let tmp11;
-  let tmp12;
-  let obj = require(9761) /* useFavoritesGuildConfig */;
-  const tmp3 = importDefault(9770)();
-  require(6065) /* useSelectedDismissibleContent */;
-  if (obj.useFavoritesGuildConfig({ location: "FavoritesDismissibleContent" }).isFreemium) {
-    if (arg0) {
-      if (tmp3) {
-        if (tmp4) {
-          const items = [tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO];
-        }
-        [tmp11, tmp12] = callback(tmp6([]), 2);
-        const tmp10 = callback(tmp6([]), 2);
-        const tmp9 = callback;
-        if (tmp11 === tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
-          const items1 = [tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
-          let items2 = items1;
-        } else {
-          items2 = [];
-        }
-        obj = { shouldShowPopover: null, markPopoverAsDismissed: null };
-        obj[0] = tmp9(tmp(6065).useSelectedDismissibleContent(items2, undefined, true), 1)[0] === tmp(1377).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
-        obj[1] = tmp12;
-        return obj;
-      }
-    }
-  }
-};
 export const useFavoritesMenuItemPopoverDismissibleContent = function useFavoritesMenuItemPopoverDismissibleContent(set) {
   let tmp11;
   let tmp12;
-  let obj = require(9761) /* useFavoritesGuildConfig */;
-  const isFavoritesGuildSelected = require(9759) /* useFavoritesAccess */.useIsFavoritesGuildSelected();
-  const obj2 = require(9759) /* useFavoritesAccess */;
-  const tmp4 = importDefault(9770)();
-  let first = callback(require(6066) /* canShowTimeRecurringContent */.useDangerouslyPeekDismissibleContents(items1), 1)[0];
+  let obj = require(9772) /* useFavoritesGuildConfig */;
+  const isFavoritesGuildSelected = require(9770) /* useFavoritesAccess */.useIsFavoritesGuildSelected();
+  const obj2 = require(9770) /* useFavoritesAccess */;
+  const tmp4 = importDefault(9780)();
+  let first = callback(require(6087) /* canShowTimeRecurringContent */.useDangerouslyPeekDismissibleContents(items1), 1)[0];
   if (first == null) {
     first = null;
   }
-  require(6065) /* useSelectedDismissibleContent */;
+  require(6086) /* useSelectedDismissibleContent */;
   if (obj.useFavoritesGuildConfig({ location: "FavoritesDismissibleContent" }).isFreemium) {
     if (set) {
       if (tmp4) {
@@ -81,33 +47,31 @@ export const useFavoritesMenuItemPopoverDismissibleContent = function useFavorit
   items = [];
 };
 export const useShouldRenderFavoritesMenuItemPopover = function useShouldRenderFavoritesMenuItemPopover() {
-  const tmp = callback(require(6066) /* canShowTimeRecurringContent */.useDangerouslyPeekDismissibleContents(items2), 1)[0] === require(1377) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
-  const tmp2 = callback(React.useState(tmp), 2);
-  const first = tmp2[0];
-  let tmp4 = tmp;
-  if (tmp) {
-    tmp4 = !first;
+  const tmp3 = callback(require(6087) /* canShowTimeRecurringContent */.useDangerouslyPeekDismissibleContents(items2), 1)[0] === require(1377) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+  const tmp4 = callback(React.useState(tmp3), 2);
+  const first = tmp4[0];
+  let tmp6 = tmp3;
+  if (tmp3) {
+    tmp6 = !first;
   }
-  if (tmp4) {
-    tmp2[1](true);
+  if (tmp6) {
+    tmp4[1](true);
   }
-  let tmp6 = tmp;
-  if (!tmp) {
-    tmp6 = first;
+  let tmp8 = tmp3;
+  if (!tmp3) {
+    tmp8 = first;
   }
-  return tmp6;
-};
-export const isFavoritesIntroPopoverShown = function isFavoritesIntroPopoverShown() {
-  return callback2(require(1377) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) && callback2(require(1377) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
-};
-export const useIsFavoritesIntroPopoverShown = function useIsFavoritesIntroPopoverShown() {
-  return callback3(require(1377) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) && callback3(require(1377) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
+  if (tmp8) {
+    tmp8 = !require(9779) /* hasOfferedFavoritesGuildOnboarding */.hasOfferedFavoritesGuildOnboarding();
+    const tmpResult = require(9779) /* hasOfferedFavoritesGuildOnboarding */;
+  }
+  return tmp8;
 };
 export const useFavoritesBetaTagDismissibleContent = function useFavoritesBetaTagDismissibleContent(arg0) {
   let require;
   let tmp9;
-  let obj = require(9761) /* useFavoritesGuildConfig */;
-  require(6065) /* useSelectedDismissibleContent */;
+  let obj = require(9772) /* useFavoritesGuildConfig */;
+  require(6086) /* useSelectedDismissibleContent */;
   if (obj.useFavoritesGuildConfig({ location: "FavoritesDismissibleContent" }).isFreemium) {
     if (arg0) {
       const items = [tmp(1377).DismissibleContent.FAVORITES_GUILD_NEW_BADGE];
@@ -119,7 +83,7 @@ export const useFavoritesBetaTagDismissibleContent = function useFavoritesBetaTa
     obj[0] = tmp10;
     obj[1] = function dismissBetaTag() {
       if (closure_1) {
-        callback(outer1_8.TAKE_ACTION);
+        callback(outer1_5.TAKE_ACTION);
       }
     };
     return obj;

@@ -1,9 +1,9 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16587
+// Function ID: 16588
 // Name: AccountSwitchingSpinnerModal
-// Dependencies: [19, 17, 21, 4342, 1236, 5863, 691, 2]
+// Dependencies: [19, 17, 21, 4342, 1236, 5884, 691, 2]
 
-// Module 16574 (AccountSwitchingSpinnerModal)
+// Module 16587 (AccountSwitchingSpinnerModal)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

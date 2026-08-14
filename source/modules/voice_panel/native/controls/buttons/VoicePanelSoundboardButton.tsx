@@ -1,10 +1,10 @@
-// Module ID: 16344
-// Function ID: 16345
+// Module ID: 16362
+// Function ID: 16363
 // Name: SoundboardButton
-// Dependencies: [19, 21, 4342, 712, 11704, 16329, 16345, 16330, 1236, 5821, 7754, 2]
+// Dependencies: [19, 21, 4342, 712, 11720, 16347, 16363, 16348, 1236, 5842, 7775, 2]
 // Exports: default
 
-// Module 16344 (SoundboardButton)
+// Module 16362 (SoundboardButton)
 import noop from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -28,10 +28,10 @@ export default function SoundboardButton(arg0) {
   let wrapperSpecs;
   ({ props, wrapperSpecs } = arg0);
   const tmp3 = createCacheKey();
-  let obj = require(16329) /* useVoicePanelButtonStyles */;
+  let obj = require(16347) /* useVoicePanelButtonStyles */;
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  const tmp6 = importDefault(16345);
-  ({ disabled, handlePress, visible } = importDefault(16345)(React.useContext(importDefault(11704)).channelId, require(16345) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
+  const tmp6 = importDefault(16363);
+  ({ disabled, handlePress, visible } = importDefault(16363)(React.useContext(importDefault(11720)).channelId, require(16363) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
   if (disabled) {
     let color = tmp(712).colors.ICON_MUTED;
   } else {
@@ -43,7 +43,7 @@ export default function SoundboardButton(arg0) {
     obj[0] = handlePress;
     obj[1] = disabled;
     obj[2] = props;
-    let tmpResult = tmp(16330);
+    let tmpResult = tmp(16348);
     const intl = tmp4(1236).intl;
     obj[3] = intl.string(tmp4(1236).t["6EJvHt"]);
     obj = { style: null };
@@ -52,13 +52,13 @@ export default function SoundboardButton(arg0) {
     obj1[0] = voicePanelButtonStyles.iconBg.backgroundColor;
     items[1] = obj1;
     obj[0] = items;
-    const items1 = [callback(tmp(5821), obj), ];
+    const items1 = [callback(tmp(5842), obj), ];
     const obj2 = { style: null, children: null };
     obj2[0] = tmp3.iconContainer;
-    tmpResult = tmp(5821);
+    tmpResult = tmp(5842);
     const obj3 = { color: null };
     obj3[0] = color;
-    obj2[1] = callback(tmp4(7754).SoundboardIcon, obj3);
+    obj2[1] = callback(tmp4(7775).SoundboardIcon, obj3);
     items1[1] = callback(tmpResult, obj2);
     obj[4] = items1;
     tmp8 = callback2(tmpResult, obj);

@@ -1,10 +1,10 @@
-// Module ID: 4889
-// Function ID: 4890
+// Module ID: 4911
+// Function ID: 4912
 // Name: getMixedGradientColor
-// Dependencies: [19, 17, 4163, 21, 4342, 1363, 4192, 4191, 1493, 4766, 4278, 712, 4194, 4162, 689, 1208, 647, 4196, 4277, 1349, 2]
+// Dependencies: [19, 17, 4163, 21, 4342, 1363, 4192, 4191, 1493, 4788, 4278, 712, 4194, 4162, 689, 1208, 647, 4196, 4277, 1349, 2]
 // Exports: CustomThemedGradient, default, validateColors
 
-// Module 4889 (getMixedGradientColor)
+// Module 4911 (getMixedGradientColor)
 import ClientThemeType from "ClientThemeType";
 import { View } from "getGuildIdFromNavigationState";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
@@ -122,7 +122,7 @@ function GradientBase(angleCenter) {
   items[3] = absolute;
   items[4] = angleCenter.componentStyles;
   obj[5] = items;
-  return tmp3(importDefault(4766), obj);
+  return tmp3(importDefault(4788), obj);
 }
 class Gradient {
   constructor(arg0) {

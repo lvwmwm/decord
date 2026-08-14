@@ -1,9 +1,9 @@
-// Module ID: 7422
-// Function ID: 7423
+// Module ID: 7443
+// Function ID: 7444
 // Name: handleConnectionStateUpdated
-// Dependencies: [109, 5, 19, 17, 6931, 6932, 1218, 4013, 5899, 7378, 5900, 676, 4325, 1924, 21, 3, 709, 7423, 1217, 5902, 3943, 6940, 4022, 4664, 698, 4684, 1236, 7424, 2007, 4550, 6921, 2]
+// Dependencies: [109, 5, 19, 17, 6952, 6953, 1218, 4013, 5920, 7400, 5921, 676, 4325, 1924, 21, 3, 709, 7444, 1217, 5923, 3943, 6961, 4022, 4686, 698, 4706, 1236, 7445, 2007, 4572, 6942, 2]
 
-// Module 7422 (handleConnectionStateUpdated)
+// Module 7443 (handleConnectionStateUpdated)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import closure_5 from "usePremiumPlanPurchasedStore";
 import "SubscriptionPlans";
@@ -35,9 +35,9 @@ function handleConnectionStateUpdated(connectionState) {
   connectionState = connectionState.connectionState;
   importDefault(709).dispatch({ type: "GPLAY_UPDATE_CONNECTION_STATE", connectionState });
   if (connectionState === constants.CONNECTED) {
-    const userCountry = require(7423) /* getPlanIdForProduct */.loadUserCountry();
+    const userCountry = require(7444) /* getPlanIdForProduct */.loadUserCountry();
     userCountry.finally(() => callback(table[17]).loadSkus());
-    const obj2 = require(7423) /* getPlanIdForProduct */;
+    const obj2 = require(7444) /* getPlanIdForProduct */;
   }
 }
 function handlePurchaseStateUpdated(arg0) {
@@ -106,7 +106,7 @@ function _handlePurchaseUpdated() {
                   let dispatchResult = obj4.dispatch(obj);
                   let tmp24 = lib;
                   let tmp25 = dependencyMap;
-                  let obj7 = lib(4664);
+                  let obj7 = lib(4686);
                   let c6 = 8;
                   let num4 = 1;
                   c7 = 1;
@@ -129,7 +129,7 @@ function _handlePurchaseUpdated() {
               } else {
                 let tmp15 = lib;
                 let tmp16 = dependencyMap;
-                obj1 = lib(4664);
+                obj1 = lib(4686);
                 c6 = 9;
                 let num2 = 1;
                 c7 = 1;
@@ -341,7 +341,7 @@ function _executePendingDowngrade() {
             lib = dependencyMap;
             let obj5 = pendingDowngrade(4022);
             const result = obj5.captureBillingException(lib);
-            let obj6 = lib(4684);
+            let obj6 = lib(4706);
             const obj2 = { title: null, body: null };
             const intl = pendingDowngrade(1236).intl;
             obj2[0] = intl.string(pendingDowngrade(1236).t["U+H+kd"]);
@@ -470,7 +470,7 @@ function _fetchAndAlertActiveSubscription() {
             let closure_1 = tmp5;
             let callback = tmp2;
             callback = undefined;
-            let obj1 = outer1_0(4664);
+            let obj1 = outer1_0(4686);
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };

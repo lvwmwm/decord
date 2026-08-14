@@ -1,10 +1,10 @@
-// Module ID: 9759
-// Function ID: 9760
+// Module ID: 9770
+// Function ID: 9771
 // Name: useFavoritesAccess
-// Dependencies: [4165, 1922, 1394, 1429, 1924, 9760, 9761, 589, 1945, 11, 1306, 1913, 2]
+// Dependencies: [4165, 1922, 1394, 1429, 1924, 9771, 9772, 589, 1945, 11, 1306, 1913, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
-// Module 9759 (useFavoritesAccess)
+// Module 9770 (useFavoritesAccess)
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import initializeFromUserSettings from "initializeFromUserSettings";
@@ -19,7 +19,7 @@ function useFavoritesAccess(FavoritesGuildActionSheet) {
   if (FavoritesGuildActionSheet === undefined) {
     str = "useFavoritesAccess";
   }
-  let obj = require(9761) /* useFavoritesGuildConfig */;
+  let obj = require(9772) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.useFavoritesGuildConfig({ location: str });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   const items = [mergeGuildAvatar];
@@ -54,7 +54,7 @@ function useFavoritesAccess(FavoritesGuildActionSheet) {
   } else {
     num = 0;
     if (isFreemium) {
-      num = tmp(9760).FREE_FAVORITE_LIMIT;
+      num = tmp(9771).FREE_FAVORITE_LIMIT;
     }
   }
 }
@@ -64,7 +64,7 @@ export { useFavoritesAccess };
 export const getFavoritesAccess = function getFavoritesAccess() {
   let enabled;
   let isFreemium;
-  let obj = require(9761) /* useFavoritesGuildConfig */;
+  let obj = require(9772) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   const isPremiumExactlyResult = importDefault(1945).isPremiumExactly(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
@@ -95,7 +95,7 @@ export const getFavoritesAccess = function getFavoritesAccess() {
   } else {
     num = 0;
     if (isFreemium) {
-      num = require(9760) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
+      num = require(9771) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
     }
   }
 };

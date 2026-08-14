@@ -1,10 +1,10 @@
-// Module ID: 11857
-// Function ID: 11858
+// Module ID: 11873
+// Function ID: 11874
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 3990, 1395, 1990, 1910, 5172, 3998, 1922, 11420, 676, 8566, 21, 589, 4832, 3978, 3995, 11858, 11859, 10300, 10299, 11860, 11861, 4539, 9293, 4550, 8565, 2007, 8568, 8500, 11016, 10210, 11863, 11873, 11872, 4298, 1236, 11875, 11878, 11879, 11880, 11884, 11885, 11888, 11889, 9093, 11891, 2]
+// Dependencies: [19, 3990, 1395, 1990, 1910, 5193, 3998, 1922, 11436, 676, 8588, 21, 589, 4854, 3978, 3995, 11874, 11875, 10314, 10313, 11876, 11877, 4549, 9307, 4572, 8587, 2007, 8590, 8522, 11032, 10224, 11879, 11889, 11888, 4298, 1236, 11891, 11894, 11895, 11896, 11900, 11901, 11904, 11905, 9107, 11907, 2]
 // Exports: default
 
-// Module 11857 (ChatInputGuardWrapper)
+// Module 11873 (ChatInputGuardWrapper)
 import "useIsSpamMessageRequest";
 import initialize from "initialize";
 import { isThread } from "createChannelRecord";
@@ -41,6 +41,7 @@ export default function ChatInputGuardWrapper(channel) {
   let onJumpToPresent;
   let requiredLinkedLobbyApplication;
   let screenIndex;
+  let shouldRelaunchLinkedLobbyApplication;
   let showLinkedLobbyApplicationLoadingIndicator;
   let showMemberVerificationModal;
   let user;
@@ -124,7 +125,7 @@ export default function ChatInputGuardWrapper(channel) {
     return isLurkingResult;
   }, items7);
   const tmp2Result2 = channel(tmp3[12]);
-  ({ showLinkedLobbyApplicationLoadingIndicator, requiredLinkedLobbyApplication } = guildId(tmp3[20])(channel.linkedLobby));
+  ({ showLinkedLobbyApplicationLoadingIndicator, requiredLinkedLobbyApplication, shouldRelaunchLinkedLobbyApplication } = guildId(tmp3[20])(channel.linkedLobby));
   guildId(tmp3[21])(channel.id);
   if (tmp11) {
     obj = { channel: null };
@@ -325,10 +326,11 @@ export default function ChatInputGuardWrapper(channel) {
               }
             }
           }
-          const obj20 = { showLinkedLobbyApplicationLoadingIndicator: null, requiredLinkedLobbyApplication: null };
+          const obj20 = { showLinkedLobbyApplicationLoadingIndicator: null, requiredLinkedLobbyApplication: null, shouldRelaunchLinkedLobbyApplication: null };
           obj20[0] = showLinkedLobbyApplicationLoadingIndicator;
           obj20[1] = requiredLinkedLobbyApplication;
-          tmp21Result = jsx(tmp7(tmp3[40]), { showLinkedLobbyApplicationLoadingIndicator: null, requiredLinkedLobbyApplication: null });
+          obj20[2] = shouldRelaunchLinkedLobbyApplication;
+          tmp21Result = jsx(tmp7(tmp3[40]), { showLinkedLobbyApplicationLoadingIndicator: null, requiredLinkedLobbyApplication: null, shouldRelaunchLinkedLobbyApplication: null });
           tmp23 = jsx;
         }
       }

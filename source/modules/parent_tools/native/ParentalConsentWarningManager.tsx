@@ -1,9 +1,9 @@
-// Module ID: 16620
-// Function ID: 16621
+// Module ID: 16633
+// Function ID: 16634
 // Name: maybePresentModal
-// Dependencies: [4054, 7044, 14179, 7045, 676, 14180, 4310, 16621, 2007, 5301, 16623, 2]
+// Dependencies: [4054, 7066, 14192, 7067, 676, 14193, 4310, 16634, 2007, 5322, 16636, 2]
 
-// Module 16620 (maybePresentModal)
+// Module 16633 (maybePresentModal)
 import setContent from "setContent";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import initialize from "initialize";
@@ -23,7 +23,7 @@ function maybePresentModal(daysRemaining) {
   if (daysRemaining != null) {
     const surfaces = daysRemaining.surfaces;
     if (surfaces != null) {
-      hasItem = surfaces.includes(require(14180) /* frozen */.ParentalConsentWarningSurface.MODAL);
+      hasItem = surfaces.includes(require(14193) /* frozen */.ParentalConsentWarningSurface.MODAL);
     }
   }
   let tmp5 = true === hasItem && null != daysRemaining;
@@ -50,7 +50,7 @@ function maybePresentModal(daysRemaining) {
   if (tmp5) {
     const obj = { daysRemaining: null };
     obj[0] = daysRemaining;
-    importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(16621, dependencyMap.paths), "ParentalConsentWarningModal", obj);
+    importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(16634, dependencyMap.paths), "ParentalConsentWarningModal", obj);
     const obj2 = importDefault(4310);
   }
 }
@@ -70,18 +70,18 @@ let prototype = function ParentalConsentWarningManager() {
         }
         return tmp;
       });
-      callback(16623).maybeFetchWarning();
+      callback(16636).maybeFetchWarning();
       if (!initialize.shouldFetchToday()) {
         callback2(initialize.getWarning());
       }
     },
     APP_STATE_UPDATE(state) {
       if (state.state === constants.ACTIVE) {
-        callback(16623).maybeFetchWarning();
+        callback(16636).maybeFetchWarning();
         if (!initialize.shouldFetchToday()) {
           callback2(obj2.getWarning());
         }
-        const obj = callback(16623);
+        const obj = callback(16636);
         obj2 = initialize;
       }
     },
@@ -104,16 +104,16 @@ let prototype = function ParentalConsentWarningManager() {
             if (warning != null) {
               const surfaces = warning.surfaces;
               if (surfaces != null) {
-                hasItem = surfaces.includes(callback(14180).ParentalConsentWarningSurface.BANNER);
+                hasItem = surfaces.includes(callback(14193).ParentalConsentWarningSurface.BANNER);
               }
             }
             if (true === hasItem) {
-              callback(16623).forceFetchWarning();
-              const obj2 = callback(16623);
+              callback(16636).forceFetchWarning();
+              const obj2 = callback(16636);
             }
           } else {
-            callback(16623).forceFetchWarning();
-            const obj = callback(16623);
+            callback(16636).forceFetchWarning();
+            const obj = callback(16636);
           }
         }
         tmp = undefined !== closure_3 && closure_3 !== someResult;
@@ -121,7 +121,7 @@ let prototype = function ParentalConsentWarningManager() {
     },
     LOGOUT() {
       let c3;
-      callback(16623).resetFetchState();
+      callback(16636).resetFetchState();
     }
   };
   return applyArgumentsResult;

@@ -1,10 +1,10 @@
-// Module ID: 8371
-// Function ID: 8372
+// Module ID: 8393
+// Function ID: 8394
 // Name: buildPlatformPollResources
-// Dependencies: [12, 8372, 4342, 712, 8100, 5431, 5810, 1438, 2]
+// Dependencies: [12, 8394, 4342, 712, 8121, 5452, 5831, 1438, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 8371 (buildPlatformPollResources)
+// Module 8393 (buildPlatformPollResources)
 import importDefaultResult from "apply";
 
 const require = arg1;
@@ -43,9 +43,9 @@ export const buildPlatformPollResources = function buildPlatformPollResources(th
   const obj = { styles: null, selectedIcon: null, checkmarkIcon: null };
   obj[0] = importDefault(12).mapValues(closure_3, (arg0) => arg0(closure_0, closure_1));
   const obj2 = importDefault(12);
-  obj[1] = _require(8100).getAssetUriForEmbed(importDefault(5431));
-  const obj3 = _require(8100);
-  obj[2] = _require(8100).getAssetUriForEmbed(importDefault(5810));
+  obj[1] = _require(8121).getAssetUriForEmbed(importDefault(5452));
+  const obj3 = _require(8121);
+  obj[2] = _require(8121).getAssetUriForEmbed(importDefault(5831));
   return obj;
 };
 export const getAvatarUrl = function getAvatarUrl(currentUser, guildId) {

@@ -1,10 +1,10 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 11195
+// Function ID: 11196
 // Name: DoubleTapEmojiEditNudgeInner
-// Dependencies: [5, 19, 17, 4334, 1494, 676, 1925, 21, 4342, 712, 4034, 8121, 1496, 589, 1435, 8686, 698, 8699, 4338, 1236, 5400, 4887, 2]
+// Dependencies: [5, 19, 17, 4334, 1494, 676, 1925, 21, 4342, 712, 4034, 8142, 1496, 589, 1435, 8700, 698, 8713, 4338, 1236, 5421, 4909, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 11179 (DoubleTapEmojiEditNudgeInner)
+// Module 11195 (DoubleTapEmojiEditNudgeInner)
 import ME from "ME";
 import getSystemLocale from "getSystemLocale";
 import { View } from "ToastEmoji";
@@ -53,7 +53,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
   }, items1);
   obj = { style: tmp5.doubleTapEmojiEditNudgeContainer, children: null };
   callback = React.useCallback(() => {
-    let obj = _location(8686);
+    let obj = _location(8700);
     obj = { pickerIntention: outer1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
     let closure_0 = stateFromStores((arg0) => {
       let closure_0 = arg0;
@@ -148,13 +148,13 @@ function DoubleTapEmojiEditNudgeInner(location) {
     str = emoji.surrogates;
   }
   obj1[4] = str;
-  items3[1] = callback2(emoji(5400), obj1);
+  items3[1] = callback2(emoji(5421), obj1);
   const obj2 = { accessibilityRole: "button", onPress: callback, hitSlop: closure_13, style: tmp5.editButton, children: null };
   let obj3 = { color: "text-brand", variant: "text-sm/normal", children: null };
   const intl2 = tmp(1236).intl;
   obj3[2] = intl2.string(_location(1236).t.bt75uw);
   obj2[4] = callback2(_location(4338).Text, obj3);
-  items3[2] = callback2(_location(4887).PressableOpacity, obj2);
+  items3[2] = callback2(_location(4909).PressableOpacity, obj2);
   obj[1] = items3;
   return tmp8(tmp9, obj);
 }

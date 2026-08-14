@@ -1,12 +1,12 @@
-// Module ID: 14067
-// Function ID: 14068
+// Module ID: 14080
+// Function ID: 14081
 // Name: SafetyHubViolationsHeader
-// Dependencies: [32, 19, 17, 11332, 7850, 676, 21, 4342, 712, 9106, 8007, 4338, 1236, 12911, 9528, 7849, 11, 14068, 7851, 4550, 11329, 2007, 11339, 589, 698, 11337, 2]
+// Dependencies: [32, 19, 17, 11348, 7871, 676, 21, 4342, 712, 9120, 8028, 4338, 1236, 12929, 9541, 7870, 11, 14081, 7872, 4572, 11345, 2007, 11355, 589, 698, 11353, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 14067 (SafetyHubViolationsHeader)
+// Module 14080 (SafetyHubViolationsHeader)
 import _slicedToArray from "_slicedToArray";
-import module_4550 from "module_4550";
+import module_4572 from "module_4572";
 import get_ActivityIndicator from "useIsNewClassification";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 import SafetyHubView from "SafetyHubView";
@@ -34,7 +34,7 @@ function SafetyHubViolationsHeader(count) {
   items1 = [tmp.iconBackground];
   const colors = importDefault(712).colors;
   obj = { color: tmp8 ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_MUTED, size: "xs" };
-  obj[1] = closure_11(require(8007) /* WarningIcon */.WarningIcon, obj);
+  obj[1] = closure_11(require(8028) /* WarningIcon */.WarningIcon, obj);
   const items2 = [closure_11(closure_6, obj), , ];
   const obj1 = { style: items3, children: null };
   items3 = [tmp.headerTextContainer];
@@ -63,14 +63,14 @@ function SafetyHubViolationsHeader(count) {
   obj1[1] = items4;
   items2[1] = closure_12(closure_6, obj1);
   if (opened) {
-    let ChevronSmallDownIcon = tmp7(12911).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp7(12929).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(9528).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(9541).ChevronSmallDownIcon;
   }
   const items5 = [tmp.chevron];
   items2[2] = closure_11(ChevronSmallDownIcon, { size: "md", style: items5 });
   obj[2] = items2;
-  return closure_12(importDefault(9106), obj);
+  return closure_12(importDefault(9120), obj);
 }
 function EmptyActiveState() {
   let obj = { style: null, children: null };
@@ -100,7 +100,7 @@ function EmptyExpiredState() {
 function RelativeIncidentTime(timestamp) {
   let obj = { style: createCacheKey().incidentDate, children: null };
   obj = { variant: "text-xs/medium", children: null };
-  obj[1] = require(7849) /* parseMessageEmbedForProps */.getClassificationRelativeIncidentTime(timestamp.timestamp);
+  obj[1] = require(7870) /* parseMessageEmbedForProps */.getClassificationRelativeIncidentTime(timestamp.timestamp);
   obj[1] = callback(require(4338) /* Text */.Text, obj);
   return callback(closure_6, obj);
 }
@@ -211,7 +211,7 @@ class SafetyHubViolationsContainer {
     c3 = undefined;
     useState = undefined;
     c5 = undefined;
-    f93361 = undefined;
+    f93502 = undefined;
     useMemo = undefined;
     c8 = undefined;
     tmp = Fragment();
@@ -232,7 +232,7 @@ class SafetyHubViolationsContainer {
     items = [];
     items[0] = useMemo;
     stateFromStores = obj2.useStateFromStores(items, () => memo.getIsDsaEligible());
-    f93361 = stateFromStores;
+    f93502 = stateFromStores;
     items1 = [, ];
     items1[0] = classifications;
     items1[1] = first1;
@@ -261,7 +261,7 @@ class SafetyHubViolationsContainer {
     }
     c8 = num;
     tmp11 = jsxs;
-    tmp12 = f93361;
+    tmp12 = f93502;
     obj = { style: items3, children: null };
     items3 = [];
     items3[0] = tmp.container;
@@ -386,9 +386,9 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/s
 
 export default SafetyHubViolationsContainer;
 export const ConnectedSafetyHubViolationsContainer = function ConnectedSafetyHubViolationsContainer() {
-  let obj = require(11337) /* useSafetyHubClassifications */;
+  let obj = require(11353) /* useSafetyHubClassifications */;
   const activeSafetyHubClassifications = obj.useActiveSafetyHubClassifications();
-  let obj1 = require(11337) /* useSafetyHubClassifications */;
+  let obj1 = require(11353) /* useSafetyHubClassifications */;
   const expiredSafetyHubClassifications = obj1.useExpiredSafetyHubClassifications();
   if (0 !== activeSafetyHubClassifications.length) {
     obj = { style: null, children: null };

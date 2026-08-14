@@ -1,10 +1,10 @@
-// Module ID: 15480
-// Function ID: 15481
+// Module ID: 15498
+// Function ID: 15499
 // Name: GUILD_ITEM_SIZE
 // Dependencies: [4065, 712, 2]
 // Exports: useGuildWrapperSize
 
-// Module 15480 (GUILD_ITEM_SIZE)
+// Module 15498 (GUILD_ITEM_SIZE)
 const result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
 
 export const GUILD_ITEM_SIZE = 48;

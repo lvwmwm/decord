@@ -1,10 +1,10 @@
-// Module ID: 8401
-// Function ID: 8402
+// Module ID: 8423
+// Function ID: 8424
 // Name: useMessageMaxLength
 // Dependencies: [1922, 676, 4007, 589, 2]
 // Exports: default, getMaxMessageLength
 
-// Module 8401 (useMessageMaxLength)
+// Module 8423 (useMessageMaxLength)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 

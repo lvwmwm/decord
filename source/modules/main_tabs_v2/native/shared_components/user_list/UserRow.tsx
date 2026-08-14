@@ -1,9 +1,9 @@
-// Module ID: 9679
-// Function ID: 9680
+// Module ID: 9690
+// Function ID: 9691
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4334, 4383, 7169, 1391, 4431, 3998, 9669, 676, 21, 4342, 712, 4355, 38, 9680, 9681, 4061, 9682, 9293, 7170, 589, 1297, 4338, 4187, 9687, 5768, 8862, 1236, 9707, 4296, 4294, 4755, 1904, 8447, 4841, 8832, 2007, 8863, 9708, 7740, 4783, 8115, 4574, 9286, 9520, 9181, 9710, 9302, 8497, 9606, 5414, 2]
+// Dependencies: [19, 17, 4334, 4383, 7191, 1391, 4431, 3998, 9680, 676, 21, 4342, 712, 4355, 38, 9691, 9692, 4061, 9693, 9307, 7192, 589, 1297, 4338, 4187, 9698, 5789, 8876, 1236, 9718, 4296, 4294, 4777, 1904, 8469, 4863, 8846, 2007, 8877, 9719, 7761, 4805, 8136, 4596, 9300, 9533, 9195, 9721, 9316, 8519, 9619, 5435, 2]
 
-// Module 9679 (UserRowSubLabel)
+// Module 9690 (UserRowSubLabel)
 import importAllResult from "handleRelationshipAddError";
 import { View } from "presentAddedFriendToast";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -45,7 +45,7 @@ function UserRowSubLabel(arg0) {
         obj[1] = guildId;
         obj[2] = gameIcon.activityText;
         obj[3] = animate;
-        return callback(importDefault(9687), obj);
+        return callback(importDefault(9698), obj);
       }
     }
   }
@@ -207,7 +207,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== guildId.ACTIONS) {
-      let obj = { accessibilityActions: null, actions: "a" };
+      let obj = { accessibilityActions: null, actions: "r" };
       obj[0] = items;
       return obj;
     } else {

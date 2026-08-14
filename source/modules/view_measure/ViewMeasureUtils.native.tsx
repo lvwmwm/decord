@@ -1,10 +1,10 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9526
+// Function ID: 9527
 // Name: measureView
 // Dependencies: [2]
 // Exports: measureView, measureViewInView, measureViewInWindow, measureViewRef, measureViewRefInView, measureViewRefInWindow
 
-// Module 9513 (measureView)
+// Module 9526 (measureView)
 const result = require("set").fileFinishedImporting("modules/view_measure/ViewMeasureUtils.native.tsx");
 
 export const measureView = function measureView(arg0) {

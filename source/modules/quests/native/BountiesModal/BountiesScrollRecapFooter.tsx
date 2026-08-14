@@ -1,10 +1,10 @@
-// Module ID: 14356
-// Function ID: 14357
+// Module ID: 14369
+// Function ID: 14370
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 4334, 21, 4342, 712, 500, 1236, 4338, 9458, 589, 4072, 2]
+// Dependencies: [19, 17, 4334, 21, 4342, 712, 500, 1236, 4338, 9471, 589, 4072, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 14356 (BountiesScrollRecapFooter)
+// Module 14369 (BountiesScrollRecapFooter)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -41,7 +41,7 @@ export const BountiesScrollRecapFooter = function BountiesScrollRecapFooter(orbA
   obj = { variant: "text-xs/bold", color: "text-brand", style: tmp.headerLabel, accessible: false, children: stringResult };
   const items = [callback(require(4338) /* Text */.Text, obj), ];
   obj = { style: tmp.orbRow, accessible: false, importantForAccessibility: "no-hide-descendants", children: null };
-  const items1 = [callback(require(9458) /* OrbsIcon */.OrbsIcon, { size: "sm", color: "icon-strong", accessible: false }), ];
+  const items1 = [callback(require(9471) /* OrbsIcon */.OrbsIcon, { size: "sm", color: "icon-strong", accessible: false }), ];
   const obj1 = { variant: "display-sm", color: "text-strong", accessible: false, style: tmp.orbAmount, children: null };
   obj1[4] = "+" + orbAmount;
   items1[1] = callback(require(4338) /* Text */.Text, obj1);

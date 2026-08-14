@@ -1,10 +1,10 @@
-// Module ID: 5425
-// Function ID: 5426
+// Module ID: 5446
+// Function ID: 5447
 // Name: DragIcon
-// Dependencies: [19, 21, 712, 4064, 5426, 2]
+// Dependencies: [19, 21, 712, 4064, 5447, 2]
 // Exports: DragIcon
 
-// Module 5425 (DragIcon)
+// Module 5446 (DragIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const DragIcon = function DragIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(5426) /* registerAsset */;
+  obj[0] = require(5447) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

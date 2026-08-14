@@ -1,10 +1,10 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 16963
+// Function ID: 16964
 // Name: PriceOptionRow
-// Dependencies: [32, 19, 17, 1924, 505, 21, 4342, 712, 4073, 9106, 5308, 16851, 15751, 4338, 1236, 5896, 14532, 1628, 5437, 5439, 1297, 4756, 4310, 2]
+// Dependencies: [32, 19, 17, 1924, 505, 21, 4342, 712, 4073, 9120, 5329, 16867, 15769, 4338, 1236, 5917, 14545, 1628, 5458, 5460, 1297, 4778, 4310, 2]
 // Exports: default
 
-// Module 16947 (PriceOptionRow)
+// Module 16963 (PriceOptionRow)
 import _slicedToArray from "_slicedToArray";
 import BottomSheetModal from "BottomSheetModal";
 import get_ActivityIndicator from "useSafeAreaInsets";
@@ -38,15 +38,15 @@ function PriceOptionRow(selected) {
   items[1] = containerSelected;
   obj = { style: tmp.rowStatusIcon, source: null };
   const tmp5 = closure_10;
-  const tmp7 = importDefault(9106);
-  obj[1] = importDefault(selected ? 16851 : 15751);
-  const items1 = [closure_9(importDefault(5308), obj), ];
+  const tmp7 = importDefault(9120);
+  obj[1] = importDefault(selected ? 16867 : 15769);
+  const items1 = [closure_9(importDefault(5329), obj), ];
   const obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl = tmp2(1236).intl;
   const obj2 = { price: null, interval: null };
-  let tmp2Result = tmp2(5896);
+  let tmp2Result = tmp2(5917);
   obj2[0] = tmp2Result.formatPrice(price, CurrencyCodes.USD);
-  tmp2Result = tmp2(14532);
+  tmp2Result = tmp2(14545);
   obj2[1] = tmp2Result.formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
   obj1[2] = intl.format(require(1236) /* getSystemLocale */.t.CgmBaG, obj2);
   items1[1] = closure_9(require(4338) /* Text */.Text, obj1);

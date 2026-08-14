@@ -1,10 +1,10 @@
-// Module ID: 16850
-// Function ID: 16851
+// Module ID: 16866
+// Function ID: 16867
 // Name: EligibilityChecklistRow
-// Dependencies: [19, 17, 21, 4342, 5308, 16851, 16852, 4338, 4755, 1297, 14518, 2]
+// Dependencies: [19, 17, 21, 4342, 5329, 16867, 16868, 4338, 4777, 1297, 14531, 2]
 // Exports: default
 
-// Module 16850 (EligibilityChecklistRow)
+// Module 16866 (EligibilityChecklistRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,12 +26,12 @@ function EligibilityChecklistRow(item) {
   items[1] = eligibleRow;
   obj = { style: tmp.rowStatusIcon, source: null };
   if (item.checked) {
-    let tmp6Result = tmp6(16851);
+    let tmp6Result = tmp6(16867);
   } else {
-    tmp6Result = tmp6(16852);
+    tmp6Result = tmp6(16868);
   }
   obj[1] = tmp6Result;
-  const items1 = [closure_4(importDefault(5308), obj), ];
+  const items1 = [closure_4(importDefault(5329), obj), ];
   obj = { style: tmp.rowTextColumn, children: null };
   const items2 = [closure_4(require(4338) /* Text */.Text, { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel }), closure_4(require(4338) /* Text */.Text, { variant: "text-sm/normal", color: "interactive-text-default", children: item.description }), ];
   let tmp5Result = null != item.actionHandler && null != item.actionLabel;
@@ -39,7 +39,7 @@ function EligibilityChecklistRow(item) {
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.actionButtonWrapper;
     ({ actionLabel: obj7[0], actionHandler: obj7[1] } = item);
-    obj3[1] = tmp5(tmp10(4755).Button, { text: null, onPress: null, grow: true });
+    obj3[1] = tmp5(tmp10(4777).Button, { text: null, onPress: null, grow: true });
     tmp5Result = tmp5(tmp4, obj3);
     const obj4 = { text: null, onPress: null, grow: true };
   }
@@ -53,7 +53,7 @@ function EligibilityChecklistRow(item) {
   } else {
     const obj5 = { style: null };
     obj5[0] = tmp.divider;
-    tmp5Result = tmp5(tmp6(14518), obj5);
+    tmp5Result = tmp5(tmp6(14531), obj5);
   }
   children[1] = tmp5Result;
   return closure_5(closure_6, { children });

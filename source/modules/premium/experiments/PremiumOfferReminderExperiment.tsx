@@ -1,10 +1,10 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7393
+// Function ID: 7394
 // Name: apexExperiment
 // Dependencies: [1471, 2]
 // Exports: isPremiumOfferReminderExperimentEnabled
 
-// Module 7371 (apexExperiment)
+// Module 7393 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

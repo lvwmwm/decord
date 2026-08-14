@@ -1,55 +1,27 @@
-// Module ID: 15472
-// Function ID: 15473
+// Module ID: 15486
+// Function ID: 15487
 // Name: FavoritesGuildSuggestionsLoaderInner
-// Dependencies: [19, 15399, 21, 12200, 11132, 9760, 7353, 2]
+// Dependencies: [19, 15414, 21, 15487, 2]
 
-// Module 15472 (FavoritesGuildSuggestionsLoaderInner)
+// Module 15486 (FavoritesGuildSuggestionsLoaderInner)
 import importAllResult from "noop";
 import items from "items";
 import { jsx } from "jsxProd";
 
+let c3;
 let c4;
 let c5;
-let closure_6;
-const require = arg1;
 function FavoritesGuildSuggestionsLoaderInner() {
-  let tmp = memo(12200)();
-  results = results(11132).useShareSearchResults({ channelFilter: tmp, includeFrecency: false }).results;
-  let items = [results];
-  memo = importAllResult.useMemo(() => {
-    let items = [];
-    for (const item10007 of results) {
-      let tmp = item10007;
-      let tmp2 = results;
-      let tmp3 = outer1_2;
-      if (items.length >= results(outer1_2[5]).FREE_FAVORITE_LIMIT) {
-        let tmp7 = obj;
-        obj.return();
-        break;
-      } else {
-        let tmp4 = item10007;
-        if (tmp.type !== tmp2(tmp3[6]).AutocompleterResultTypes.HEADER) {
-          let tmp5 = item10007;
-          let arr = items.push(tmp);
-        }
-        continue;
-      }
-      let num = 0;
-      if (items.length <= 0) {
-        items = outer1_4;
-      }
-      return items;
-    }
-  }, items);
-  const items1 = [memo];
+  const tmp = importDefault(15487)(4);
+  importDefault = tmp;
+  const items = [tmp];
   const layoutEffect = importAllResult.useLayoutEffect(() => {
-    outer1_5(memo);
-  }, items1);
-  const layoutEffect1 = importAllResult.useLayoutEffect(() => () => callback(closure_4), []);
+    outer1_4(closure_0);
+  }, items);
+  const layoutEffect1 = importAllResult.useLayoutEffect(() => () => callback(closure_3), []);
   return null;
 }
-let c3 = importAllResult;
-({ NO_SUGGESTIONS: c4, setFavoritesGuildSuggestions: c5, useFavoritesGuildShouldShowSuggestions: closure_6 } = items);
+({ NO_SUGGESTIONS: c3, setFavoritesGuildSuggestions: c4, useFavoritesGuildShouldShowSuggestions: c5 } = items);
 const memoResult = importAllResult.memo(function FavoritesGuildSuggestionsLoader() {
   let tmp = null;
   if (callback()) {

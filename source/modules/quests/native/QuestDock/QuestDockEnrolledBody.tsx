@@ -1,9 +1,9 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 14515
+// Function ID: 14516
 // Name: EnrolledBodyWatchTask
-// Dependencies: [5, 19, 17, 14400, 5202, 14402, 21, 4342, 712, 14406, 14403, 8781, 14398, 14431, 5205, 14428, 14427, 14429, 14424, 1628, 7229, 2]
+// Dependencies: [5, 19, 17, 14413, 5223, 14415, 21, 4342, 712, 14419, 14416, 8795, 14411, 14444, 5226, 14441, 14440, 14442, 14437, 1628, 7251, 2]
 
-// Module 14502 (EnrolledBodyWatchTask)
+// Module 14515 (EnrolledBodyWatchTask)
 import closure_3 from "QUEST_DOCK_COLLAPSED_HEIGHT";
 import importAllResult from "useSafeAreaInsets";
 import { View } from "useQuestRewardClaimHandler";
@@ -155,23 +155,23 @@ function EnrolledBodyPlayStreamTask(quest) {
   let stepActions;
   quest = quest.quest;
   const tmp = callback3();
-  let obj = require(14427) /* QuestBottomSheet */;
-  obj = { quest, location: constants.QUESTS_BAR_MOBILE, sourceQuestContent: require(5205) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE };
+  let obj = require(14440) /* QuestBottomSheet */;
+  obj = { quest, location: constants.QUESTS_BAR_MOBILE, sourceQuestContent: require(5226) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE };
   const enrolledQuestContentProps = obj.useEnrolledQuestContentProps(obj);
   ({ step, defibrillator, stepActions } = enrolledQuestContentProps);
   obj = { children: null };
   ({ handleTaskSelect, showMicrophone } = enrolledQuestContentProps);
-  const items = [callback(View, { style: tmp.headerWrapper, children: callback(importDefault(14428), obj2) }), , ];
+  const items = [callback(View, { style: tmp.headerWrapper, children: callback(importDefault(14441), obj2) }), , ];
   const obj3 = { style: tmp.contentWrapper, children: null };
   const obj4 = { defibrillator, quest, handleTaskSelect, location: constants.QUESTS_BAR_MOBILE, showMicrophone, step, sourceQuestContent: null };
-  obj4[6] = require(5205) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE;
-  obj3[1] = callback(require(14427) /* QuestBottomSheet */.QuestBottomSheetContent, obj4);
+  obj4[6] = require(5226) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE;
+  obj3[1] = callback(require(14440) /* QuestBottomSheet */.QuestBottomSheetContent, obj4);
   items[1] = callback(View, obj3);
   const obj5 = { style: tmp.footerWrapper, children: null };
   const obj6 = { quest, step, isDefibrilating: defibrillator.isActive, onBack: stepActions.onBack, onDefib: defibrillator.start, onConnectConsoleNext: stepActions.onNext, style: tmp.footer, withSafeArea: false, sourceQuestContent: null };
-  const obj1 = { style: tmp.headerWrapper, children: callback(importDefault(14428), obj2) };
-  obj6[8] = require(5205) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE;
-  obj5[1] = callback(importDefault(14429), obj6);
+  const obj1 = { style: tmp.headerWrapper, children: callback(importDefault(14441), obj2) };
+  obj6[8] = require(5226) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE;
+  obj5[1] = callback(importDefault(14442), obj6);
   items[2] = callback(View, obj5);
   obj[0] = items;
   return callback2(closure_12, obj);
@@ -192,9 +192,9 @@ let closure_14 = createCacheKey.createStyles(obj);
 let obj2 = { marginTop: require("Themes").space.PX_16 };
 let obj3 = { marginLeft: -1 * QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, marginRight: -1 * QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL };
 const memoResult = importAllResult.memo(function QuestDockEnrolledBody() {
-  let obj = minExpandedContentHeight(14424);
+  let obj = minExpandedContentHeight(14437);
   const questCreative = obj.useQuestCreative();
-  minExpandedContentHeight = importAllResult.useContext(minExpandedContentHeight(14403).QuestDockGestureContext).minExpandedContentHeight;
+  minExpandedContentHeight = importAllResult.useContext(minExpandedContentHeight(14416).QuestDockGestureContext).minExpandedContentHeight;
   const items = [minExpandedContentHeight];
   const items1 = [minExpandedContentHeight];
   const callback = importAllResult.useCallback((nativeEvent) => {

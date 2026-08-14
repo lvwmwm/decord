@@ -1,9 +1,9 @@
-// Module ID: 6966
-// Function ID: 6967
+// Module ID: 6987
+// Function ID: 6988
 // Name: updateSubmittedGuildJoinRequestTotal
 // Dependencies: [1922, 4166, 3943, 4168, 3985, 4167, 687, 589, 709, 2]
 
-// Module 6966 (updateSubmittedGuildJoinRequestTotal)
+// Module 6987 (updateSubmittedGuildJoinRequestTotal)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { joinRequestFromServer } from "handleGatewayJoinRequestUpdate";
 import { Store } from "initialize";

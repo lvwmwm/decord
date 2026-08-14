@@ -1,131 +1,18 @@
-// Module ID: 7289
-// Function ID: 7290
+// Module ID: 7311
+// Function ID: 7312
 // Name: items
-// Dependencies: [5, 7290, 7291, 7292, 7293, 7294, 7295, 7296, 7297, 7298, 7299, 7300, 7301, 7302, 7303, 7304, 7305, 7306, 7307, 7308, 7309, 7310, 7311, 7312, 7313, 7314, 7315, 7316, 7317, 7318, 7319, 7320, 7321, 7322, 7323, 7324, 7325, 7326, 2]
+// Dependencies: [5, 7312, 7313, 7314, 7315, 7316, 7317, 7318, 7319, 7320, 7321, 7322, 7323, 7324, 7325, 7326, 7327, 7328, 7329, 7330, 7331, 7332, 7333, 7334, 7335, 7336, 7337, 7338, 7339, 7340, 7341, 7342, 7343, 7344, 7345, 7346, 7347, 7348, 2]
 // Exports: getBurstAnimation
 
-// Module 7289 (items)
+// Module 7311 (items)
 let closure_0 = arg1;
 let obj = {
   load() {
-    return callback(7290);
+    return callback(7312);
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return callback(7291);
-    }
-  },
-  {
-    load() {
-      return callback(7292);
-    }
-  },
-  {
-    load() {
-      return callback(7293);
-    }
-  },
-  {
-    load() {
-      return callback(7294);
-    }
-  },
-  {
-    load() {
-      return callback(7295);
-    }
-  },
-  {
-    load() {
-      return callback(7296);
-    }
-  },
-  {
-    load() {
-      return callback(7297);
-    }
-  },
-  {
-    load() {
-      return callback(7298);
-    }
-  },
-  {
-    load() {
-      return callback(7299);
-    }
-  },
-  {
-    load() {
-      return callback(7300);
-    }
-  },
-  {
-    load() {
-      return callback(7301);
-    }
-  },
-  {
-    load() {
-      return callback(7302);
-    }
-  },
-  {
-    load() {
-      return callback(7303);
-    }
-  },
-  {
-    load() {
-      return callback(7304);
-    }
-  },
-  {
-    load() {
-      return callback(7305);
-    }
-  },
-  {
-    load() {
-      return callback(7306);
-    }
-  },
-  {
-    load() {
-      return callback(7307);
-    }
-  }
-];
-obj = {
-  load() {
-    return callback(7308);
-  }
-};
-const items1 = [
-  obj,
-  {
-    load() {
-      return callback(7309);
-    }
-  },
-  {
-    load() {
-      return callback(7310);
-    }
-  },
-  {
-    load() {
-      return callback(7311);
-    }
-  },
-  {
-    load() {
-      return callback(7312);
-    }
-  },
   {
     load() {
       return callback(7313);
@@ -190,9 +77,122 @@ const items1 = [
     load() {
       return callback(7325);
     }
+  },
+  {
+    load() {
+      return callback(7326);
+    }
+  },
+  {
+    load() {
+      return callback(7327);
+    }
+  },
+  {
+    load() {
+      return callback(7328);
+    }
+  },
+  {
+    load() {
+      return callback(7329);
+    }
   }
 ];
-closure_0 = require("module_7294")((arg0, arg1, arg2) => {
+obj = {
+  load() {
+    return callback(7330);
+  }
+};
+const items1 = [
+  obj,
+  {
+    load() {
+      return callback(7331);
+    }
+  },
+  {
+    load() {
+      return callback(7332);
+    }
+  },
+  {
+    load() {
+      return callback(7333);
+    }
+  },
+  {
+    load() {
+      return callback(7334);
+    }
+  },
+  {
+    load() {
+      return callback(7335);
+    }
+  },
+  {
+    load() {
+      return callback(7336);
+    }
+  },
+  {
+    load() {
+      return callback(7337);
+    }
+  },
+  {
+    load() {
+      return callback(7338);
+    }
+  },
+  {
+    load() {
+      return callback(7339);
+    }
+  },
+  {
+    load() {
+      return callback(7340);
+    }
+  },
+  {
+    load() {
+      return callback(7341);
+    }
+  },
+  {
+    load() {
+      return callback(7342);
+    }
+  },
+  {
+    load() {
+      return callback(7343);
+    }
+  },
+  {
+    load() {
+      return callback(7344);
+    }
+  },
+  {
+    load() {
+      return callback(7345);
+    }
+  },
+  {
+    load() {
+      return callback(7346);
+    }
+  },
+  {
+    load() {
+      return callback(7347);
+    }
+  }
+];
+closure_0 = require("module_7316")((arg0, arg1, arg2) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let closure_2 = arg2;
@@ -269,7 +269,7 @@ closure_0 = require("module_7294")((arg0, arg1, arg2) => {
   iter.next();
   return iter;
 });
-const result = require("module_7291").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
+const result = require("module_7313").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
 
 export const getBurstAnimation = function() {
   const self = this;

@@ -1,10 +1,10 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15131
+// Function ID: 15132
 // Name: effectName
-// Dependencies: [32, 19, 17, 1922, 1934, 21, 1935, 9527, 1236, 9523, 2661, 4342, 712, 4753, 4338, 4755, 9520, 9521, 589, 15118, 5807, 5414, 10496, 4576, 2]
+// Dependencies: [32, 19, 17, 1922, 1934, 21, 1935, 9540, 1236, 9536, 2661, 4342, 712, 4775, 4338, 4777, 9533, 9534, 589, 15132, 5828, 5435, 10512, 4598, 2]
 // Exports: default
 
-// Module 15117 (effectName)
+// Module 15131 (effectName)
 import _slicedToArray from "_slicedToArray";
 import FRAME_BUDGET_MS from "FRAME_BUDGET_MS";
 import get_ActivityIndicator from "DisplayNameStyleColorPreset";
@@ -19,7 +19,7 @@ let metroImportAll;
 let require = arg1;
 function effectName(arg0) {
   const intl = require(1236) /* getSystemLocale */.intl;
-  let OpWJ3f = require(9523) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
+  let OpWJ3f = require(9536) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (OpWJ3f == null) {
     OpWJ3f = importDefault(2661).OpWJ3f;
   }
@@ -46,9 +46,9 @@ function OptionButtons(children) {
     };
     return outer1_8(outer1_0(outer1_2[15]).Button, obj, String(label.value));
   });
-  items[1] = callback2(require(4753) /* Stack */.Stack, obj);
+  items[1] = callback2(require(4775) /* Stack */.Stack, obj);
   obj[1] = items;
-  return callback3(require(4753) /* Stack */.Stack, obj);
+  return callback3(require(4775) /* Stack */.Stack, obj);
 }
 function BenchmarkRow(arg0) {
   let effect;
@@ -56,13 +56,13 @@ function BenchmarkRow(arg0) {
   let userId;
   let userName;
   ({ userId, effect, userName, style } = arg0);
-  let obj = require(9523) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
+  let obj = require(9536) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
   obj = { style, children: null };
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(effect);
   obj = { userId, userName, effectDisplayType: null, pendingDisplayNameStyles: null, variant: "text-md/semibold" };
-  obj[2] = require(9521) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC;
+  obj[2] = require(9534) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC;
   obj[3] = displayNameStylesEffectConfig.previewStyles;
-  obj[1] = callback2(importDefault(9520), obj);
+  obj[1] = callback2(importDefault(9533), obj);
   return callback2(closure_6, obj);
 }
 ({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);

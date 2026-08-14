@@ -1,10 +1,10 @@
-// Module ID: 8145
-// Function ID: 8146
+// Module ID: 8166
+// Function ID: 8167
 // Name: getJoinButtonLabels
-// Dependencies: [1236, 5026, 2]
+// Dependencies: [1236, 5048, 2]
 // Exports: getJoinButtonLabels, getRenewButtonLabels
 
-// Module 8145 (getJoinButtonLabels)
+// Module 8166 (getJoinButtonLabels)
 let obj = { id: "781323471249604648", format_type: require("StickerFormat").StickerFormat.APNG, description: "Cheerful Choco jumps out of gift box", name: "Surprise" };
 let items = [obj, , , , ];
 obj = { id: "781324642736144424", format_type: require("StickerFormat").StickerFormat.APNG, description: "Cheerful Choco preens against window", name: "Affection" };

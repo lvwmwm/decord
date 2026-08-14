@@ -1,9 +1,9 @@
-// Module ID: 9105
-// Function ID: 9106
+// Module ID: 9119
+// Function ID: 9120
 // Name: closeModal
-// Dependencies: [5, 32, 19, 17, 1396, 5173, 676, 1397, 21, 4342, 712, 4550, 4887, 1236, 1297, 8105, 7832, 5819, 589, 5875, 8012, 4338, 9106, 9107, 9108, 4771, 698, 1891, 7823, 5878, 4241, 9109, 9110, 7841, 4755, 5368, 5864, 2]
+// Dependencies: [5, 32, 19, 17, 1396, 5194, 676, 1397, 21, 4342, 712, 4572, 4909, 1236, 1297, 8126, 7853, 5840, 589, 5896, 8033, 4338, 9120, 9121, 9122, 4793, 698, 1891, 7844, 5899, 4241, 9123, 9124, 7862, 4777, 5389, 5885, 2]
 
-// Module 9105 (closeModal)
+// Module 9119 (closeModal)
 import closure_4 from "MAX_STAGE_TOPIC_LENGTH";
 import GuildStageChannelSelection from "GuildStageChannelSelection";
 import importAllResult from "HotspotStore";
@@ -23,7 +23,7 @@ let metroImportAll;
 let unpackModuleId;
 const require = arg1;
 function closeModal() {
-  importDefault(4550).popWithKey(closure_11);
+  importDefault(4572).popWithKey(closure_11);
 }
 function NavigationBar(guild) {
   let tmp2 = null;
@@ -37,9 +37,9 @@ function NavigationBar(guild) {
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
     obj[2] = closeModal;
     obj = { source: null };
-    obj[0] = importDefault(8105);
+    obj[0] = importDefault(8126);
     obj[3] = callback2(require(1297) /* Button */.Icon, obj);
-    obj[1] = callback2(require(4887) /* PressableBase */.PressableOpacity, obj);
+    obj[1] = callback2(require(4909) /* PressableBase */.PressableOpacity, obj);
     tmp2 = callback2(closure_7, obj);
   }
   return tmp2;
@@ -47,14 +47,14 @@ function NavigationBar(guild) {
 function HeaderIcon(guild) {
   guild = guild.guild;
   if (null == guild) {
-    let tmp7 = callback2(importDefault(7832), {});
+    let tmp7 = callback2(importDefault(7853), {});
   } else {
     const obj = { style: null, size: null, guild: null };
     obj[0] = tmp.guildIcon;
-    obj[1] = require(5819) /* GuildIconSizes */.GuildIconSizes.LARGE;
+    obj[1] = require(5840) /* GuildIconSizes */.GuildIconSizes.LARGE;
     obj[2] = guild;
-    tmp7 = callback2(importDefault(5819), obj);
-    const tmp5 = importDefault(5819);
+    tmp7 = callback2(importDefault(5840), obj);
+    const tmp5 = importDefault(5840);
   }
   return tmp7;
 }
@@ -69,8 +69,8 @@ class NotificationToggle {
     items[0] = require("HotspotStore").HotspotStore;
     tmp5 = jsx;
     stateFromStores = obj.useStateFromStores(items, () => {
-      const HotspotStore = callback(5875).HotspotStore;
-      return HotspotStore.hasHotspot(callback(5875).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+      const HotspotStore = callback(5896).HotspotStore;
+      return HotspotStore.hasHotspot(callback(5896).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
     });
     obj = { DEPRECATED_style: tmp.notificationToggle, label: null, onPress: null, trailing: null };
     tmp7 = View;
@@ -196,10 +196,10 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
                     c4 = 3;
                     c5 = 1;
                     let obj1 = { value: null, done: false };
-                    obj1[0] = outer1_2(7823).editStage(outer1_2, tmp76, tmp47);
+                    obj1[0] = outer1_2(7844).editStage(outer1_2, tmp76, tmp47);
                     return obj1;
                   } else {
-                    const obj5 = outer1_2(7823);
+                    const obj5 = outer1_2(7844);
                     c4 = 2;
                     c5 = 1;
                     const obj2 = { value: null, done: false };
@@ -227,8 +227,8 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
                     tmp8 = closure_13;
                   }
                   if (tmp8) {
-                    obj1 = outer1_2(5878);
-                    obj1.hideHotspot(outer1_0(5875).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+                    obj1 = outer1_2(5899);
+                    obj1.hideHotspot(outer1_0(5896).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
                   }
                 }
               } else if (arg0 === 1) {

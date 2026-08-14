@@ -1,10 +1,10 @@
-// Module ID: 5271
-// Function ID: 5272
+// Module ID: 5292
+// Function ID: 5293
 // Name: getGuildNameSuggestion
-// Dependencies: [1910, 1922, 1405, 687, 5272, 4187, 1236, 2]
+// Dependencies: [1910, 1922, 1405, 687, 5293, 4187, 1236, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 5271 (getGuildNameSuggestion)
+// Module 5292 (getGuildNameSuggestion)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import importDefaultResult from "priv";

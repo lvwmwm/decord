@@ -1,10 +1,10 @@
-// Module ID: 16172
-// Function ID: 16173
+// Module ID: 16190
+// Function ID: 16191
 // Name: MorphablePanelModes
-// Dependencies: [19, 11706, 1493, 1628, 4083, 5467, 10289, 16170, 16173, 4311, 2]
+// Dependencies: [19, 11722, 1493, 1628, 4083, 5488, 10303, 16188, 16191, 4311, 2]
 // Exports: default
 
-// Module 16172 (MorphablePanelModes)
+// Module 16190 (MorphablePanelModes)
 import noop from "noop";
 import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE";
 

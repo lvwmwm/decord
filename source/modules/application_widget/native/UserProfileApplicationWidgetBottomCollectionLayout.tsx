@@ -1,10 +1,10 @@
-// Module ID: 12513
-// Function ID: 12514
+// Module ID: 12531
+// Function ID: 12532
 // Name: CollectionItem
-// Dependencies: [19, 17, 21, 4342, 712, 12421, 12509, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 12439, 12527, 4338, 2]
 // Exports: default
 
-// Module 12513 (CollectionItem)
+// Module 12531 (CollectionItem)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,11 +24,11 @@ function CollectionItem(arg0) {
   if (componentConfig != null) {
     image = componentConfig.fields.image;
   }
-  const items = [require(12421) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
+  const items = [require(12439) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  let obj = require(12421) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj = require(12439) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(componentConfig, "name", resolveFieldValue);
-  let obj1 = require(12421) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj1 = require(12439) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const singleStringOrSkeleton1 = obj1.resolveSingleStringOrSkeleton(componentConfig, "description", resolveFieldValue);
   obj = { style: tmp.item, children: null };
   if (null != fieldValue) {
@@ -42,7 +42,7 @@ function CollectionItem(arg0) {
   } else {
     const obj2 = { style: null };
     obj2[0] = tmp.itemImage;
-    tmp11 = callback(tmp3(12509).ImageSkeleton, obj2);
+    tmp11 = callback(tmp3(12527).ImageSkeleton, obj2);
     tmp12 = callback;
   }
   const items1 = [tmp11, ];
@@ -52,7 +52,7 @@ function CollectionItem(arg0) {
     obj4[2] = singleStringOrSkeleton.text;
     let tmp12Result = tmp12(tmp3(4338).Text, obj4);
   } else {
-    tmp12Result = tmp12(tmp3(12509).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
+    tmp12Result = tmp12(tmp3(12527).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
   }
   const items2 = [tmp12Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
@@ -60,7 +60,7 @@ function CollectionItem(arg0) {
     obj5[3] = singleStringOrSkeleton1.text;
     tmp12Result = tmp12(tmp3(4338).Text, obj5);
   } else {
-    tmp12Result = tmp12(tmp3(12509).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
+    tmp12Result = tmp12(tmp3(12527).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
   }
   items2[1] = tmp12Result;
   obj3[1] = items2;

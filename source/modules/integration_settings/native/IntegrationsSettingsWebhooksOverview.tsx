@@ -1,10 +1,10 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 16007
+// Function ID: 16008
 // Name: WebhookItem
-// Dependencies: [5, 19, 1391, 1980, 1910, 3989, 1922, 15990, 676, 21, 4342, 712, 1499, 1435, 5414, 1297, 1236, 11, 4187, 589, 15991, 8015, 15992, 4072, 1993, 4338, 15994, 5807, 8012, 4753, 5754, 2]
+// Dependencies: [5, 19, 1391, 1980, 1910, 3989, 1922, 16008, 676, 21, 4342, 712, 1499, 1435, 5435, 1297, 1236, 11, 4187, 589, 16009, 8036, 16010, 4072, 1993, 4338, 16012, 5828, 8033, 4775, 5775, 2]
 // Exports: default
 
-// Module 15989 (WebhookItem)
+// Module 16007 (WebhookItem)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import importAllResult from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -256,7 +256,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   items[1] = tmp4Result;
   if (0 === found.length) {
     obj = { Illustration: null, title: null };
-    obj[0] = tmp5(15994).WebhookEmpty;
+    obj[0] = tmp5(16012).WebhookEmpty;
     if (webhookType === constants2.CHANNEL_FOLLOWER) {
       const intl2 = tmp5(1236).intl;
       dkHRkE = tmp5(1236).t.dkHRkE;
@@ -289,7 +289,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
       return closure_18(closure_23, obj, id);
     });
     const obj1 = { children: null };
-    items[2] = tmp4(tmp5(5807).TableRowGroup, obj);
+    items[2] = tmp4(tmp5(5828).TableRowGroup, obj);
     obj1[0] = items;
     return closure_20(closure_19, obj1);
   }
@@ -302,8 +302,8 @@ prototype["render"] = function render() {
   obj[0] = importDefault(712).space.PX_24;
   obj[1] = tmp.content;
   obj[2] = this.renderWebhooks();
-  obj[2] = callback(require(4753) /* Stack */.Stack, obj);
-  const items = [callback(require(8012) /* Form */.Form, obj), callback(require(5754) /* NavScrim */.NavScrim, {})];
+  obj[2] = callback(require(4775) /* Stack */.Stack, obj);
+  const items = [callback(require(8033) /* Form */.Form, obj), callback(require(5775) /* NavScrim */.NavScrim, {})];
   obj[0] = items;
   return callback2(closure_19, obj);
 };

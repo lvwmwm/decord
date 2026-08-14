@@ -1,10 +1,10 @@
-// Module ID: 12208
-// Function ID: 12209
+// Module ID: 12226
+// Function ID: 12227
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 17, 676, 21, 4342, 712, 12209, 9627, 4550, 12220, 2007, 6059, 4773, 4338, 1236, 4756, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 12227, 9638, 4572, 12238, 2007, 6080, 4795, 4338, 1236, 4778, 2]
 // Exports: default
 
-// Module 12208 (UnifiedGiftModalSuccessScreen)
+// Module 12226 (UnifiedGiftModalSuccessScreen)
 import noop from "noop";
 import { Image } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";

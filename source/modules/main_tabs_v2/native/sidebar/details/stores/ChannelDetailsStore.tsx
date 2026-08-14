@@ -1,10 +1,10 @@
-// Module ID: 8444
-// Function ID: 8445
+// Module ID: 8466
+// Function ID: 8467
 // Name: useChannelDetailsStore
 // Dependencies: [644, 705, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive, useChannelDetailsSearchActiveSource, useIsChannelDetailsSearchActive
 
-// Module 8444 (useChannelDetailsStore)
+// Module 8466 (useChannelDetailsStore)
 import keys from "keys";
 
 let closure_2 = { isSearchActive: false, searchActiveSource: "initial" };
@@ -25,7 +25,7 @@ export const deleteChannelStates = function deleteChannelStates() {
 };
 export const useIsChannelDetailsSearchActive = function useIsChannelDetailsSearchActive(arg0) {
   let closure_0 = arg0;
-  const f81392 = (isSearchActive) => isSearchActive.isSearchActive;
+  const f81524 = (isSearchActive) => isSearchActive.isSearchActive;
   return obj((states) => {
     states = states.states;
     let value = states.get(closure_0);
@@ -34,12 +34,12 @@ export const useIsChannelDetailsSearchActive = function useIsChannelDetailsSearc
       const merged = Object.assign(outer1_2);
       value = obj;
     }
-    return f81393(value);
+    return f81525(value);
   });
 };
 export const useChannelDetailsSearchActiveSource = function useChannelDetailsSearchActiveSource(arg0) {
   let closure_0 = arg0;
-  const f81393 = (searchActiveSource) => searchActiveSource.searchActiveSource;
+  const f81525 = (searchActiveSource) => searchActiveSource.searchActiveSource;
   return obj((states) => {
     states = states.states;
     let value = states.get(closure_0);
@@ -48,7 +48,7 @@ export const useChannelDetailsSearchActiveSource = function useChannelDetailsSea
       const merged = Object.assign(outer1_2);
       value = obj;
     }
-    return f81393(value);
+    return f81525(value);
   });
 };
 export const setIsChannelDetailsSearchActive = function setIsChannelDetailsSearchActive(arg0, isSearchActive, searchActiveSource) {

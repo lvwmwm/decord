@@ -1,10 +1,10 @@
-// Module ID: 10485
-// Function ID: 10486
+// Module ID: 10501
+// Function ID: 10502
 // Name: ConnectAccountStep
-// Dependencies: [19, 17, 4383, 1218, 1922, 21, 4342, 712, 4278, 589, 5041, 1435, 1363, 5769, 1297, 8653, 4338, 1236, 4755, 10454, 4298, 4294, 2]
+// Dependencies: [19, 17, 4383, 1218, 1922, 21, 4342, 712, 4278, 589, 5063, 1435, 1363, 5790, 1297, 8667, 4338, 1236, 4777, 10470, 4298, 4294, 2]
 // Exports: ConnectedAccountCard, default
 
-// Module 10485 (ConnectAccountStep)
+// Module 10501 (ConnectAccountStep)
 import authorizeConnection from "authorizeConnection";
 import { View } from "getSystemLocale";
 import addApplication from "addApplication";
@@ -52,7 +52,7 @@ export default function ConnectAccountStep(clientId) {
     }
     return currentUser;
   });
-  let obj2 = platformType(5041);
+  let obj2 = platformType(5063);
   const value = obj2.get(platformType);
   if (null == value) {
     let applicationIconSource;
@@ -90,7 +90,7 @@ export default function ConnectAccountStep(clientId) {
     const items4 = [callback(tmp5(1297).Avatar, obj3), , ];
     const obj4 = { color: null, size: "md" };
     obj4[0] = tmp2(712).colors.INTERACTIVE_TEXT_DEFAULT;
-    items4[1] = callback(tmp5(8653).MoreHorizontalIcon, obj4);
+    items4[1] = callback(tmp5(8667).MoreHorizontalIcon, obj4);
     const obj5 = { source: null, size: null };
     obj5[0] = userAvatarSource;
     obj5[1] = tmp5(1297).AvatarSizes.XLARGE;
@@ -133,7 +133,7 @@ export default function ConnectAccountStep(clientId) {
     };
     const intl3 = tmp5(1236).intl;
     obj13[3] = intl3.string(tmp5(1236).t.S0W8Z5);
-    items7[2] = callback(tmp5(4755).Button, obj13);
+    items7[2] = callback(tmp5(4777).Button, obj13);
     obj10[1] = items7;
     items6[2] = callback2(View, obj10);
     const obj14 = { style: null, children: null };
@@ -168,7 +168,7 @@ export const ConnectedAccountCard = function ConnectedAccountCard(arg0) {
   ({ platformName, connectedAccount } = arg0);
   ({ platformType, applicationName } = arg0);
   const tmp = createCacheKey();
-  let obj = importDefault(5041);
+  let obj = importDefault(5063);
   const value = obj.get(platformType);
   if (null == value) {
     obj = { style: null, children: null };

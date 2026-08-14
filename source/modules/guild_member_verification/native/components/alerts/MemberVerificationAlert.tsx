@@ -1,10 +1,10 @@
-// Module ID: 8472
-// Function ID: 8473
+// Module ID: 8494
+// Function ID: 8495
 // Name: MemberVerificationAlert
-// Dependencies: [19, 17, 21, 4342, 712, 4773, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4795, 4338, 2]
 // Exports: default
 
-// Module 8472 (MemberVerificationAlert)
+// Module 8494 (MemberVerificationAlert)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -55,5 +55,5 @@ export default function MemberVerificationAlert(arg0) {
   items[2] = tmp10Result;
   items[3] = callback(View, { style: tmp2.buttons, children: buttons });
   obj.children = items;
-  return closure_5(importDefault(4773), obj);
+  return closure_5(importDefault(4795), obj);
 };

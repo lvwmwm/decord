@@ -1,9 +1,9 @@
-// Module ID: 5390
-// Function ID: 5391
+// Module ID: 5411
+// Function ID: 5412
 // Name: language
-// Dependencies: [5391, 2]
+// Dependencies: [5412, 2]
 
-// Module 5390 (language)
+// Module 5411 (language)
 const result = require("set").fileFinishedImporting("lib/spellcheck/LanguageDetector.tsx");
 class LanguageDetector {
   constructor(arg0, arg1) {

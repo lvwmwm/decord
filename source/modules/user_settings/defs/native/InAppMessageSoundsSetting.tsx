@@ -1,9 +1,9 @@
-// Module ID: 14749
-// Function ID: 14750
+// Module ID: 14763
+// Function ID: 14764
 // Name: toggle
-// Dependencies: [9828, 8127, 10407, 1236, 1624, 2]
+// Dependencies: [9839, 8148, 10421, 1236, 1624, 2]
 
-// Module 14749 (toggle)
+// Module 14763 (toggle)
 import isInAppMessageSoundsEnabled from "isInAppMessageSoundsEnabled";
 import createToggle from "createToggle";
 

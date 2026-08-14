@@ -1,10 +1,10 @@
-// Module ID: 10609
-// Function ID: 10610
+// Module ID: 10625
+// Function ID: 10626
 // Name: ConfirmActivityGateContent
-// Dependencies: [19, 17, 4370, 21, 4342, 10610, 4338, 1236, 4755, 4058, 4683, 2]
+// Dependencies: [19, 17, 4370, 21, 4342, 10626, 4338, 1236, 4777, 4058, 4705, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 10609 (ConfirmActivityGateContent)
+// Module 10625 (ConfirmActivityGateContent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PRIVATE_APPS_HELP_ARTICLE } from "items3";
@@ -19,7 +19,7 @@ const require = arg1;
 function ConfirmActivityGateContent(activityName) {
   const tmp = callback3();
   let obj = { style: tmp.alertContainer, children: null };
-  obj = { source: importDefault(10610), style: tmp.announcementBirb };
+  obj = { source: importDefault(10626), style: tmp.announcementBirb };
   const items = [callback(closure_3, obj), , , ];
   obj = { style: tmp.alertEyebrowText, variant: "eyebrow", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -48,7 +48,7 @@ function LinkButton() {
   };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.E0gf5l);
-  obj[1] = callback(require(4755) /* Button */.Button, obj);
+  obj[1] = callback(require(4777) /* Button */.Button, obj);
   return callback(closure_4, obj);
 }
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
@@ -61,7 +61,7 @@ export const confirmExternalAppLaunchAlert = function confirmExternalAppLaunchAl
   let onCancel;
   let onConfirm;
   ({ application, onConfirm, onCancel } = arg0);
-  let obj = importDefault(4683);
+  let obj = importDefault(4705);
   obj = { title: "", children: callback(ConfirmActivityGateContent, { application }), onConfirm, confirmText: null, onCancel: null, cancelText: null, footer: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["3PatSz"]);

@@ -1,10 +1,10 @@
-// Module ID: 5808
-// Function ID: 5809
+// Module ID: 5829
+// Function ID: 5830
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 4342, 500, 4067, 5414, 4338, 5809, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 500, 4067, 5435, 4338, 5830, 2]
 // Exports: TableSwitchRow
 
-// Module 5808 (TableSwitchRow)
+// Module 5829 (TableSwitchRow)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -102,6 +102,6 @@ export const TableSwitchRow = function TableSwitchRow(value) {
       }
     });
   };
-  obj.trailing = closure_5(require(5809) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled });
-  return closure_5(require(5414) /* TableRowInner */.TableRow, obj);
+  obj.trailing = closure_5(require(5830) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled });
+  return closure_5(require(5435) /* TableRowInner */.TableRow, obj);
 };

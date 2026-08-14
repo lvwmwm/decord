@@ -1,10 +1,10 @@
-// Module ID: 9530
-// Function ID: 9531
+// Module ID: 9543
+// Function ID: 9544
 // Name: useTieredTenureBadgeClickHandler
-// Dependencies: [19, 1922, 1924, 9531, 676, 5816, 9532, 7141, 589, 6059, 4310, 9533, 2007, 9533, 698, 2]
+// Dependencies: [19, 1922, 1924, 9544, 676, 5837, 9545, 7163, 589, 6080, 4310, 9546, 2007, 9546, 698, 2]
 // Exports: useTieredTenureBadgeClickHandler
 
-// Module 9530 (useTieredTenureBadgeClickHandler)
+// Module 9543 (useTieredTenureBadgeClickHandler)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
@@ -22,10 +22,10 @@ export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeCli
   const _require = id;
   let closure_1 = userId;
   const dependencyMap = themeType;
-  const isPremiumSubscriber = _require(9532).useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  const isPremiumSubscriber = _require(9545).useIsPremiumSubscriber(PremiumTypes.TIER_2);
   let tmp4 = typeof id === "string";
   if (typeof id === "string") {
-    let tmpResult = tmp(7141);
+    let tmpResult = tmp(7163);
     tmp4 = null != tmpResult.getTieredTenureBadge(id);
   }
   tmpResult = tmp(589);

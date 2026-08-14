@@ -1,9 +1,9 @@
-// Module ID: 10312
-// Function ID: 10313
+// Module ID: 10326
+// Function ID: 10327
 // Name: SafetyWarningBanner
-// Dependencies: [19, 17, 21, 4342, 712, 7109, 7114, 10310, 1236, 1297, 10313, 10314, 4338, 4755, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 7131, 7136, 10324, 1236, 1297, 10327, 10328, 4338, 4777, 2]
 
-// Module 10312 (SafetyWarningBanner)
+// Module 10326 (SafetyWarningBanner)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

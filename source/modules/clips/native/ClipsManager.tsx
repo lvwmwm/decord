@@ -1,9 +1,9 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 16977
+// Function ID: 16978
 // Name: showClipsToast
-// Dependencies: [4400, 16962, 4062, 1236, 2]
+// Dependencies: [4400, 16978, 4062, 1236, 2]
 
-// Module 16961 (showClipsToast)
+// Module 16977 (showClipsToast)
 import { CLIPS_TOAST_DURATION } from "result";
 import "handleRTCConnectionState";
 

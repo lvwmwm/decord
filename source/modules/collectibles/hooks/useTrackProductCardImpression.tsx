@@ -1,10 +1,10 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12259
+// Function ID: 12260
 // Name: useTrackProductCardImpression
-// Dependencies: [19, 7049, 676, 9397, 589, 9398, 4007, 7061, 698, 2]
+// Dependencies: [19, 7071, 676, 9411, 589, 9412, 4007, 7083, 698, 2]
 // Exports: useTrackProductCardImpression
 
-// Module 12241 (useTrackProductCardImpression)
+// Module 12259 (useTrackProductCardImpression)
 import noop from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { AnalyticEvents } from "ME";

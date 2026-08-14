@@ -1,9 +1,9 @@
-// Module ID: 16573
-// Function ID: 16574
+// Module ID: 16586
+// Function ID: 16587
 // Name: push
-// Dependencies: [11842, 676, 3, 687, 4550, 16574, 2007, 4198, 1231, 16575, 15, 11845, 1222, 4203, 4197, 4062, 1236, 16576, 2]
+// Dependencies: [11858, 676, 3, 687, 4572, 16587, 2007, 4198, 1231, 16588, 15, 11861, 1222, 4203, 4197, 4062, 1236, 16589, 2]
 
-// Module 16573 (push)
+// Module 16586 (push)
 import { SWITCH_ACCOUNTS_MODAL_KEY } from "MAX_ACCOUNTS";
 import ME from "ME";
 import "_initialize";
@@ -88,7 +88,7 @@ class MultiAccountManagerNative extends tmp5 {
 }
 const prototype = MultiAccountManagerNative.prototype;
 prototype["onSwitchStart"] = function onSwitchStart() {
-  const obj = importDefault(4550);
+  const obj = importDefault(4572);
   obj.popWithKey(SWITCH_ACCOUNTS_MODAL_KEY);
   tmp3.info("Closing fast-connect socket because of account switch logout");
   let result = obj(15).closeFastConnectSocket();
@@ -129,11 +129,11 @@ prototype["onSwitchError"] = function onSwitchError(currentUser) {
   obj = { key: "SWITCH_ACCOUNTS_TOAST_LOGIN_ERROR", content: null, icon: null };
   const intl = obj(1236).intl;
   obj[1] = intl.string(obj(1236).t.pqvKWA);
-  obj[2] = importDefault(16576);
+  obj[2] = importDefault(16589);
   obj.open(obj);
 };
 prototype["onSwitchComplete"] = function onSwitchComplete() {
-  const obj = importDefault(4550);
+  const obj = importDefault(4572);
   obj.popWithKey(SWITCH_ACCOUNTS_MODAL_KEY);
   obj.pop();
   if (null !== c9) {

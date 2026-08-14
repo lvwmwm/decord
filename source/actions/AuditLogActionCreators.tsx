@@ -1,10 +1,10 @@
-// Module ID: 16705
-// Function ID: 16706
+// Module ID: 16721
+// Function ID: 16722
 // Name: makeRequest
-// Dependencies: [16695, 676, 530, 709, 2]
+// Dependencies: [16711, 676, 530, 709, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 16705 (makeRequest)
+// Module 16721 (makeRequest)
 import AuditLogActions from "AuditLogActions";
 import ME from "ME";
 

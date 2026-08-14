@@ -1,10 +1,10 @@
-// Module ID: 6971
-// Function ID: 6972
+// Module ID: 6992
+// Function ID: 6993
 // Name: trackHeartbeat
-// Dependencies: [5, 5035, 1218, 5169, 4416, 676, 687, 3, 6972, 6973, 1208, 6974, 6977, 698, 6978, 595, 6979, 668, 709, 589, 514, 2]
+// Dependencies: [5, 5057, 1218, 5190, 4416, 676, 687, 3, 6993, 6994, 1208, 6995, 6998, 698, 6999, 595, 7001, 668, 709, 589, 514, 2]
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler
 
-// Module 6971 (trackHeartbeat)
+// Module 6992 (trackHeartbeat)
 import closure_3 from "ME";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import importDefaultResult from "fetchFingerprint";
@@ -95,9 +95,9 @@ function _trackHeartbeat() {
             obj4[0] = lib.createdAtTimestamp;
             obj3[2] = obj4;
             obj1.addBreadcrumb(obj3);
-            let obj5 = { client_heartbeat_initialization_timestamp: null, client_heartbeat_version: 29 };
+            let obj5 = { client_heartbeat_initialization_timestamp: null, client_heartbeat_version: 30 };
             obj5[0] = lib.createdAtTimestamp;
-            obj5 = num2(6977);
+            obj5 = num2(6998);
             const merged = Object.assign(obj5.getClientHeartbeatPiggybackProperties());
             const idleSince = store.getIdleSince();
             num2 = idleSince;
@@ -115,7 +115,7 @@ function _trackHeartbeat() {
             track(constants.CLIENT_HEARTBEAT, c4);
             const _performance = obj8.performance;
             let closure_19 = _performance.now();
-            obj8 = num2(6974);
+            obj8 = num2(6995);
             num2 = obj8.drainClickstream();
             const tmp40 = lib(698);
           } else {
@@ -220,7 +220,7 @@ function scheduleHeartbeatTracking() {
         items1.push("rtc_connected");
       }
     }
-    const obj2 = { active: null, ver: 29, reasons: null };
+    const obj2 = { active: null, ver: 30, reasons: null };
     obj2[0] = items1.length > 0;
     obj2[2] = items1;
     const result = socket.handleActiveStateChange(obj2);
@@ -230,9 +230,9 @@ function validateClientSession(version) {
   let tmp = null;
   if (null != version) {
     let tmp4 = version;
-    if (version.version !== require(6979) /* result */.CLIENT_SESSION_STORAGE_VERSION) {
+    if (version.version !== require(7001) /* result */.CLIENT_SESSION_STORAGE_VERSION) {
       const _HermesInternal = HermesInternal;
-      tmp3.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(6979).CLIENT_SESSION_STORAGE_VERSION);
+      tmp3.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(7001).CLIENT_SESSION_STORAGE_VERSION);
       tmp4 = null;
     }
     tmp = tmp4;
@@ -362,7 +362,7 @@ function handleWindowFocus(focused) {
   }
 }
 function handleLocationChange() {
-  const isActiveUserRouteResult = require(6973) /* isActiveUserRoute */.isActiveUserRoute();
+  const isActiveUserRouteResult = require(6994) /* isActiveUserRoute */.isActiveUserRoute();
   if (isActiveUserRoute !== isActiveUserRouteResult) {
     isActiveUserRoute = isActiveUserRouteResult;
     scheduleHeartbeatTracking();
@@ -376,9 +376,9 @@ function handleAppStateUpdate(state) {
 }
 function handleFluxInitialized() {
   const state = importDefaultResult1.getState();
-  let closure_22 = require(6972) /* isForegrounded */.isForegrounded();
-  const obj = require(6972) /* isForegrounded */;
-  let closure_23 = require(6973) /* isActiveUserRoute */.isActiveUserRoute();
+  let closure_22 = require(6993) /* isForegrounded */.isForegrounded();
+  const obj = require(6993) /* isForegrounded */;
+  let closure_23 = require(6994) /* isActiveUserRoute */.isActiveUserRoute();
   handleAuthenticationChange();
 }
 function getSession() {
@@ -609,7 +609,7 @@ export const initSessionHeartbeatScheduler = function initSessionHeartbeatSchedu
   const obj3 = importDefault(709);
   const subscription2 = importDefault(709).subscribe("CONNECTION_OPEN", forceDispatchSessionIdUpdate);
   const obj4 = importDefault(709);
-  let result = require(6973) /* isActiveUserRoute */.subscribeToLocationChanges(handleLocationChange);
+  let result = require(6994) /* isActiveUserRoute */.subscribeToLocationChanges(handleLocationChange);
   scheduleHeartbeatTracking();
   if (null == obj) {
     obj = { id: null, type: "interval" };
@@ -617,13 +617,13 @@ export const initSessionHeartbeatScheduler = function initSessionHeartbeatSchedu
     obj[0] = setInterval(() => {
       let result = null != closure_24;
       if (result) {
-        result = callback(6978).shouldLogClientHeartbeatSkipped();
-        const obj = callback(6978);
+        result = callback(6999).shouldLogClientHeartbeatSkipped();
+        const obj = callback(6999);
       }
       if (result) {
         const _performance = performance;
         if (performance.now() - closure_19 > closure_11) {
-          callback2(698).track(constants.CLIENT_HEARTBEAT_SKIPPED, { client_heartbeat_version: 29 });
+          callback2(698).track(constants.CLIENT_HEARTBEAT_SKIPPED, { client_heartbeat_version: 30 });
           const obj2 = callback2(698);
         }
       }
@@ -640,9 +640,9 @@ export const getActiveSessionUnsafe = function getActiveSessionUnsafe() {
     let tmp7 = null;
     if (null != value) {
       let tmp8 = value;
-      if (value.version !== tmp2(6979).CLIENT_SESSION_STORAGE_VERSION) {
+      if (value.version !== tmp2(7001).CLIENT_SESSION_STORAGE_VERSION) {
         const _HermesInternal = HermesInternal;
-        tmp3.warn("Throwing away client session with invalid version: " + value.version + ", expected " + tmp2(6979).CLIENT_SESSION_STORAGE_VERSION);
+        tmp3.warn("Throwing away client session with invalid version: " + value.version + ", expected " + tmp2(7001).CLIENT_SESSION_STORAGE_VERSION);
         tmp8 = null;
       }
       tmp7 = tmp8;
@@ -657,7 +657,7 @@ export const getActiveSessionUnsafe = function getActiveSessionUnsafe() {
     if (!obj.isSessionExpired(session)) {
       tmp12 = session;
     }
-    obj = require(6979) /* result */;
+    obj = require(7001) /* result */;
   }
   return tmp12;
 };

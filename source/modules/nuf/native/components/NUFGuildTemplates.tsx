@@ -1,10 +1,10 @@
-// Module ID: 12124
-// Function ID: 12125
+// Module ID: 12142
+// Function ID: 12143
 // Name: onCreateGuild
-// Dependencies: [5, 19, 17, 4169, 676, 12125, 8556, 21, 5272, 11898, 9601, 12126, 12162, 698, 503, 5310, 12101, 1222, 12128, 12130, 11764, 1236, 12133, 12134, 12163, 12145, 5823, 2]
+// Dependencies: [5, 19, 17, 4169, 676, 12143, 8578, 21, 5293, 11914, 9614, 12144, 12180, 698, 503, 5331, 12119, 1222, 12146, 12148, 11780, 1236, 12151, 12152, 12181, 12163, 5844, 2]
 // Exports: default
 
-// Module 12124 (onCreateGuild)
+// Module 12142 (onCreateGuild)
 import GuildTemplateId from "GuildTemplateId";
 import CreationIntent from "CreationIntent";
 import { Keyboard } from "transitionTo";
@@ -82,13 +82,13 @@ function _onCreateGuild() {
             obj[0] = arg1;
             return obj;
           } else {
-            const guildProgress = callback(11898).createGuildProgress(callback);
-            callback2(9601)();
-            const obj6 = callback(11898);
-            const result = callback2(12126).closeCreateGuildOnboardingModal();
-            const obj7 = callback2(12126);
-            const result1 = callback(12162).showInstantInviteModal(callback);
-            const obj8 = callback(12162);
+            const guildProgress = callback(11914).createGuildProgress(callback);
+            callback2(9614)();
+            const obj6 = callback(11914);
+            const result = callback2(12144).closeCreateGuildOnboardingModal();
+            const obj7 = callback2(12144);
+            const result1 = callback(12180).showInstantInviteModal(callback);
+            const obj8 = callback(12180);
             const obj2 = { flow_type: null, from_step: null, to_step: "modal_closed" };
             obj2[0] = constants2.GUILD_CREATE_MODAL;
             obj2[1] = constants3.CREATE_SERVER;
@@ -206,16 +206,16 @@ export default function NUFGuildTemplates() {
       headerLeft: null,
       render: null
     };
-    let obj2 = callback(5310);
+    let obj2 = callback(5331);
     obj[4] = obj2.getHeaderCloseButton(() => {
-      callback(12101).trackNUFStep(constants2.STEP_GUILD_TEMPLATE, constants2.STEP_FRIEND_LIST, { skip: true });
-      const obj = callback(12101);
+      callback(12119).trackNUFStep(constants2.STEP_GUILD_TEMPLATE, constants2.STEP_FRIEND_LIST, { skip: true });
+      const obj = callback(12119);
       callback(1222).transitionTo(fallbackRoute.fallbackRoute);
       const obj2 = callback(1222);
-      const result = callback2(12126).closeCreateGuildOnboardingModal();
+      const result = callback2(12144).closeCreateGuildOnboardingModal();
     });
     obj[5] = function render() {
-      return callback3(callback2(12128), { trigger: constants.NUF });
+      return callback3(callback2(12146), { trigger: constants.NUF });
     };
     obj[constants.GUILD_TEMPLATES] = obj;
     obj = {
@@ -226,7 +226,7 @@ export default function NUFGuildTemplates() {
         return null;
       },
       render(guildTemplate) {
-        return callback3(callback2(12130), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.NUF });
+        return callback3(callback2(12148), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.NUF });
       }
     };
     obj[constants.CREATION_INTENT] = obj;
@@ -256,7 +256,7 @@ export default function NUFGuildTemplates() {
         };
         const intl = callback(1236).intl;
         obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
-        return callback3(callback2(11764), obj);
+        return callback3(callback2(11780), obj);
       }
     };
     obj2 = {
@@ -268,8 +268,8 @@ export default function NUFGuildTemplates() {
       },
       render() {
         const obj = { location: "Onboarding Join Guild Modal", onClose: null };
-        obj[1] = callback2(12126).closeCreateGuildModal;
-        return callback3(callback2(12133), obj);
+        obj[1] = callback2(12144).closeCreateGuildModal;
+        return callback3(callback2(12151), obj);
       }
     };
     obj[constants.JOIN_SERVER] = obj2;
@@ -299,7 +299,7 @@ export default function NUFGuildTemplates() {
         };
         const intl = callback(1236).intl;
         obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
-        return callback3(callback2(11764), obj);
+        return callback3(callback2(11780), obj);
       }
     };
     obj[constants.ACCEPT_INVITE] = {
@@ -314,8 +314,8 @@ export default function NUFGuildTemplates() {
       },
       render(code) {
         const obj = { code: code.code, onPressClose: null };
-        obj[1] = callback2(12126).closeCreateGuildModal;
-        return callback3(callback2(12134), obj);
+        obj[1] = callback2(12144).closeCreateGuildModal;
+        return callback3(callback2(12152), obj);
       }
     };
     const obj3 = {
@@ -330,8 +330,8 @@ export default function NUFGuildTemplates() {
       },
       render(code) {
         const obj = { code: code.code, onPressClose: null };
-        obj[1] = callback2(12126).closeCreateGuildModal;
-        return callback3(callback2(12134), obj);
+        obj[1] = callback2(12144).closeCreateGuildModal;
+        return callback3(callback2(12152), obj);
       }
     };
     obj[constants.CHANNEL_PROMPT] = {
@@ -355,7 +355,7 @@ export default function NUFGuildTemplates() {
         };
         const intl = guildId(1236).intl;
         obj[5] = intl.string(guildId(1236).t["uHXB+F"]);
-        return callback3(callback2(12163), obj);
+        return callback3(callback2(12181), obj);
       }
     };
     const obj5 = { impressionName: "Array", impressionProperties: true, fullscreen: true, ignoreKeyboard: null, headerTitle: null, headerLeft: null, render: true };
@@ -367,7 +367,7 @@ export default function NUFGuildTemplates() {
       return null;
     };
     obj5[6] = function render() {
-      return callback3(callback2(12145), { isNestedNavigator: true });
+      return callback3(callback2(12163), { isNestedNavigator: true });
     };
     obj[constants.JOIN_STUDENT_HUB] = obj5;
     return obj;
@@ -376,5 +376,5 @@ export default function NUFGuildTemplates() {
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
   obj[3] = constants.GUILD_TEMPLATES;
-  return jsx(require(5823) /* NavigationStack */.Navigator, { screens: null, onWillFocus: null, headerBackTitle: null, initialRouteName: null });
+  return jsx(require(5844) /* NavigationStack */.Navigator, { screens: null, onWillFocus: null, headerBackTitle: null, initialRouteName: null });
 };

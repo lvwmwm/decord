@@ -1,9 +1,9 @@
-// Module ID: 4738
-// Function ID: 4739
+// Module ID: 4760
+// Function ID: 4761
 // Name: AccessibilityView
-// Dependencies: [19, 17, 21, 4739, 4083, 2]
+// Dependencies: [19, 17, 21, 4761, 4083, 2]
 
-// Module 4738 (AccessibilityView)
+// Module 4760 (AccessibilityView)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -25,7 +25,7 @@ const forwardRefResult = require("noop").forwardRef((accessibilityViewIsModal, r
       throw error;
     }
   }
-  importDefault(4739)({ accessibilityViewIsModal: flag, nativeID });
+  importDefault(4761)({ accessibilityViewIsModal: flag, nativeID });
   const obj = { ref, nativeID, collapsable: null, onAccessibilityEscape: null, accessibilityViewIsModal: null };
   let collapsable = null == nativeID;
   if (collapsable) {

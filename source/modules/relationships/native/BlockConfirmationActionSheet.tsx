@@ -1,9 +1,9 @@
-// Module ID: 10325
-// Function ID: 10326
+// Module ID: 10339
+// Function ID: 10340
 // Name: BlockedInformationTable
-// Dependencies: [32, 19, 17, 1391, 3998, 1922, 9294, 10324, 676, 21, 4342, 712, 8836, 1236, 4300, 5807, 5414, 1297, 1628, 5768, 5788, 589, 8357, 5437, 698, 5439, 8636, 4338, 4534, 8545, 4310, 10326, 2007, 503, 4755, 9293, 7829, 1993, 4058, 2]
+// Dependencies: [32, 19, 17, 1391, 3998, 1922, 9308, 10338, 676, 21, 4342, 712, 8850, 1236, 4300, 5828, 5435, 1297, 1628, 5789, 5809, 589, 8379, 5458, 698, 5460, 8650, 4338, 4534, 8567, 4310, 10340, 2007, 503, 4777, 9307, 7850, 1993, 4058, 2]
 
-// Module 10325 (BlockedInformationTable)
+// Module 10339 (BlockedInformationTable)
 import asyncRequireImpl from "asyncRequireImpl";
 import importAllResult from "context";
 import { View } from "Button";
@@ -34,9 +34,9 @@ function BlockedInformationTable() {
     obj[3] = icon.text();
     obj[4] = icon.subtext();
     obj[6] = icon.a11yLabel();
-    return callback2(callback(5414).TableRow, obj, arg1);
+    return callback2(callback(5435).TableRow, obj, arg1);
   });
-  return callback2(require(5807) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return callback2(require(5828) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 let c4 = importAllResult;
 ({ IGNORE_CONFIRMATION_ACTION_SHEET_KEY: c10, RESTRICTION_CONFIRMATION_ACTION_SHEET_HEIGHT: unpackModuleId } = IGNORE_CONFIRMATION_ACTION_SHEET_KEY);
@@ -167,8 +167,8 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
   let stateFromStores;
   let tmp = callback4();
   const bottom = channelId(1628)().bottom;
-  const items = [channelId(5788).IGNORE_CONFIRMATION_ACTION_SHEET];
-  const tmp4 = channelId(5768);
+  const items = [channelId(5809).IGNORE_CONFIRMATION_ACTION_SHEET];
+  const tmp4 = channelId(5789);
   [tmp6, c5] = callback(importAllResult.useState(false), 2);
   let obj = userId(589);
   const items1 = [mergeGuildAvatar];
@@ -230,7 +230,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     obj5[0] = tmp.avatarIconContainer;
     const obj6 = { size: null, source: null };
     obj6[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-    obj6[1] = tmp2(8636);
+    obj6[1] = tmp2(8650);
     obj5[1] = closure_14(tmp7(1297).Icon, obj6);
     items8[1] = closure_14(c5, obj5);
     obj3[1] = items8;
@@ -263,7 +263,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
       const obj13 = { icon: null, label: null, subLabel: null, accessibilityLabel: null, onPress: null, arrow: true };
       const obj14 = { size: null, source: null };
       obj14[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-      obj14[1] = tmp2(8545);
+      obj14[1] = tmp2(8567);
       obj13[0] = tmp13(tmp7(1297).Icon, obj14);
       const intl4 = tmp7(1236).intl;
       obj13[1] = intl4.string(tmp7(1236).t.hC8tcc);
@@ -279,8 +279,8 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
         obj = { userId, channelId, onSuccess: closure_4, onIgnore: asyncRequireImpl, impressionName: userId(outer1_2[33]).ImpressionNames.IGNORE_USER_CONFIRMATION };
         obj3.openLazy(userId(outer1_2[32])(outer1_2[31], outer1_2.paths), outer1_10, obj, "replaceTopSheet");
       };
-      obj12[2] = tmp13(tmp7(5414).TableRow, obj13);
-      obj11[1] = tmp13(tmp7(5807).TableRowGroup, obj12);
+      obj12[2] = tmp13(tmp7(5435).TableRow, obj13);
+      obj11[1] = tmp13(tmp7(5828).TableRowGroup, obj12);
       tmp13Result = tmp13(tmp19, obj11);
     }
     const obj15 = { children: null };
@@ -314,7 +314,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     };
     obj17[4] = tmp6;
     obj17[5] = tmp6;
-    const items11 = [closure_14(tmp7(4755).Button, obj17), ];
+    const items11 = [closure_14(tmp7(4777).Button, obj17), ];
     const obj18 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
     obj18[0] = tmp.footerText;
     const intl8 = tmp7(1236).intl;
@@ -331,9 +331,9 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     obj16[1] = items11;
     items10[3] = callback3(c5, obj16);
     obj15[0] = items10;
-    obj[4] = callback3(tmp7(5439).BottomSheetScrollView, obj15);
-    obj[1] = closure_14(tmp7(5437).BottomSheet, obj);
-    tmp13Result = tmp13(tmp7(5768).AnalyticsLocationProvider, obj);
+    obj[4] = callback3(tmp7(5460).BottomSheetScrollView, obj15);
+    obj[1] = closure_14(tmp7(5458).BottomSheet, obj);
+    tmp13Result = tmp13(tmp7(5789).AnalyticsLocationProvider, obj);
     const tmp2Result = tmp2(4534);
   }
   return tmp13Result;

@@ -1,10 +1,10 @@
-// Module ID: 16254
-// Function ID: 16255
+// Module ID: 16272
+// Function ID: 16273
 // Name: areStableParticipantsEqual
-// Dependencies: [4358, 1218, 4393, 1922, 4363, 643, 589, 4534, 8862, 10683, 2]
+// Dependencies: [4358, 1218, 4393, 1922, 4363, 643, 589, 4534, 8876, 10699, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 16254 (areStableParticipantsEqual)
+// Module 16272 (areStableParticipantsEqual)
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -40,19 +40,19 @@ export default function useStableParticipant(arg0, arg1, arg2) {
       if (null == participant) {
         const user = outer1_6.getUser(tmp);
         if (null != user) {
-          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: 0, isSelf: 1 };
+          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: 0.18, isSelf: 0.701 };
           obj[0] = outer1_7.USER;
           obj[1] = tmp;
           obj[2] = user;
           const id = outer1_4.getId();
           obj[5] = callback(4534).getName(dependencyMap, tmp3, user);
           const obj5 = callback(4534);
-          obj[6] = callback(8862).getAvatarDecoration(user, dependencyMap);
+          obj[6] = callback(8876).getAvatarDecoration(user, dependencyMap);
           obj[10] = user.id === id;
           return obj;
         }
       } else {
-        const tmp15 = callback2(10683)(participant);
+        const tmp15 = callback2(10699)(participant);
         const type = participant.type;
         if (outer1_7.ACTIVITY === type) {
           obj = { type: null, id: null, applicationId: null };

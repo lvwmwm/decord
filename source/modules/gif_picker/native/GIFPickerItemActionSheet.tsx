@@ -1,10 +1,10 @@
-// Module ID: 9994
-// Function ID: 9995
+// Module ID: 10005
+// Function ID: 10006
 // Name: GIFPickerItemActionSheet
-// Dependencies: [19, 17, 21, 4342, 712, 500, 9983, 9979, 1493, 4310, 4062, 1236, 9995, 4755, 5437, 5308, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 500, 9994, 9990, 1493, 4310, 4062, 1236, 10006, 4777, 5458, 5329, 2]
 // Exports: default
 
-// Module 9994 (GIFPickerItemActionSheet)
+// Module 10005 (GIFPickerItemActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

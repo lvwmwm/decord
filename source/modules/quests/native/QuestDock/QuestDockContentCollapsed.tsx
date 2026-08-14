@@ -1,8 +1,8 @@
-// Module ID: 14492
-// Function ID: 14493
-// Dependencies: [19, 17, 5202, 14402, 21, 4342, 14403, 4083, 4754, 8054, 2]
+// Module ID: 14505
+// Function ID: 14506
+// Dependencies: [19, 17, 5223, 14415, 21, 4342, 14416, 4083, 4776, 8075, 2]
 
-// Module 14492
+// Module 14505
 import importAllResult from "noop";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import { QUEST_DOCK_MODE_CHANGE_PHYSICS as closure_5 } from "QUEST_DOCK_COLLAPSED_HEIGHT";
@@ -27,7 +27,7 @@ const memoResult = importAllResult.memo(function QuestDockContentCollapsed(child
     tmp = hideOnExpand;
   }
   const require = tmp;
-  const activeQuestDockMode = importAllResult.useContext(require(14403) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
+  const activeQuestDockMode = importAllResult.useContext(require(14416) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
   let obj = require(4083);
   const fn = function l() {
     let obj = tmp(outer1_2[8]);
@@ -41,7 +41,7 @@ const memoResult = importAllResult.memo(function QuestDockContentCollapsed(child
     obj = { opacity: obj.withSpring(num, outer1_5) };
     return obj;
   };
-  obj = { withSpring: require(4754) /* CONFIG_NEVER_ANIMATE */.withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
+  obj = { withSpring: require(4776) /* CONFIG_NEVER_ANIMATE */.withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
   fn.__closure = obj;
   fn.__workletHash = 13361221764426;
   fn.__initData = closure_8;
@@ -65,7 +65,7 @@ const memoResult = importAllResult.memo(function QuestDockContentCollapsed(child
   C.__initData = closure_9;
   const animatedProps = require(4083).useAnimatedProps(C);
   const style = [tmp2.questDockContentCollapsed, animatedStyle];
-  return jsx(activeQuestDockMode(8054), { style, animatedProps, children: children.children });
+  return jsx(activeQuestDockMode(8075), { style, animatedProps, children: children.children });
 });
 const result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentCollapsed.tsx");
 

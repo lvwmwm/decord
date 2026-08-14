@@ -1,10 +1,10 @@
-// Module ID: 15461
-// Function ID: 15462
+// Module ID: 15476
+// Function ID: 15477
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 6983, 5035, 676, 4197, 4198, 1231, 2]
+// Dependencies: [32, 19, 7005, 5057, 676, 4197, 4198, 1231, 2]
 // Exports: useShouldRenderChannelList
 
-// Module 15461 (useShouldRenderChannelList)
+// Module 15476 (useShouldRenderChannelList)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import handleClearCaches from "handleClearCaches";

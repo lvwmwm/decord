@@ -1,10 +1,10 @@
-// Module ID: 8000
-// Function ID: 8001
+// Module ID: 8021
+// Function ID: 8022
 // Name: LinkExternalSmallIcon
-// Dependencies: [19, 21, 712, 4064, 8001, 2]
+// Dependencies: [19, 21, 712, 4064, 8022, 2]
 // Exports: LinkExternalSmallIcon
 
-// Module 8000 (LinkExternalSmallIcon)
+// Module 8021 (LinkExternalSmallIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const LinkExternalSmallIcon = function LinkExternalSmallIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8001) /* registerAsset */;
+  obj[0] = require(8022) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

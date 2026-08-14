@@ -1,10 +1,10 @@
-// Module ID: 7779
-// Function ID: 7780
+// Module ID: 7800
+// Function ID: 7801
 // Name: ExpressiveGradient
-// Dependencies: [19, 17, 21, 712, 4065, 689, 4766, 2]
+// Dependencies: [19, 17, 21, 712, 4065, 689, 4788, 2]
 // Exports: ExpressiveGradient
 
-// Module 7779 (ExpressiveGradient)
+// Module 7800 (ExpressiveGradient)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -79,10 +79,10 @@ export const ExpressiveGradient = function ExpressiveGradient(color) {
   items1[1] = tmp13;
   obj2 = { style: tmp12.absoluteFillObject, colors: items2, start: closure_8, end: closure_9, pointerEvents: "none" };
   items2 = [token, token1];
-  const items3 = [callback(importDefault(4766), obj2), ];
+  const items3 = [callback(importDefault(4788), obj2), ];
   obj3 = { style: tmp12.absoluteFillObject, colors: items4, start: closure_10, end: closure_11, pointerEvents: "none" };
   items4 = [obj3.alpha(0).css(), token2];
-  items3[1] = callback(importDefault(4766), obj3);
+  items3[1] = callback(importDefault(4788), obj3);
   obj1[1] = items3;
   const items5 = [closure_6(closure_3, obj1), children];
   obj[1] = items5;

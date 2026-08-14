@@ -1,10 +1,10 @@
-// Module ID: 16914
-// Function ID: 16915
+// Module ID: 16930
+// Function ID: 16931
 // Name: ChannelRow
-// Dependencies: [32, 19, 17, 1391, 5294, 3989, 676, 4541, 21, 4342, 712, 5276, 4535, 4310, 15314, 5308, 16851, 589, 5804, 4338, 1236, 6035, 4887, 4550, 9041, 2007, 9043, 9045, 1297, 12943, 5439, 2]
+// Dependencies: [32, 19, 17, 1391, 5315, 3989, 676, 4551, 21, 4342, 712, 5297, 4535, 4310, 15328, 5329, 16867, 589, 5825, 4338, 1236, 6056, 4909, 4572, 9055, 2007, 9057, 9059, 1297, 12961, 5460, 2]
 // Exports: default
 
-// Module 16914 (ChannelRow)
+// Module 16930 (ChannelRow)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import { View } from "initialize";
@@ -39,13 +39,13 @@ function ChannelRow(channel) {
   obj[4] = channel;
   obj[5] = selected;
   obj[7] = UnreadSetting.ONLY_MENTIONS;
-  const children = [closure_11(onChannelSelected(15314), obj), ];
+  const children = [closure_11(onChannelSelected(15328), obj), ];
   if (selected) {
     obj = { style: null, source: null };
     obj[0] = tmp.selectedIcon;
-    obj[1] = tmp2(16851);
-    selected = tmp8(tmp2(5308), obj);
-    const tmp2Result = tmp2(5308);
+    obj[1] = tmp2(16867);
+    selected = tmp8(tmp2(5329), obj);
+    const tmp2Result = tmp2(5329);
   }
   children[1] = selected;
   return closure_13(closure_12, { children });
@@ -142,7 +142,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     return expandActionSheetResult;
   };
-  obj1[1] = closure_11(guildId(6035).SearchField, obj2);
+  obj1[1] = closure_11(guildId(6056).SearchField, obj2);
   items2[1] = closure_11(View, obj1);
   let tmp9Result = !hideCreateChannel;
   if (!hideCreateChannel) {
@@ -170,7 +170,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     const obj4 = { color: null, source: null };
     obj4[0] = str;
-    obj4[1] = importDefault(12943);
+    obj4[1] = importDefault(12961);
     const items3 = [tmp8(tmp5(1297).Icon, obj4), ];
     const obj5 = { style: null, variant: "text-md/medium", color: "text-link", children: null };
     obj5[0] = tmp.createChannelLabel;
@@ -178,11 +178,11 @@ export default function ChannelSelectorActionSheet(guildId) {
     obj5[3] = intl3.string(tmp5(1236).t.d7AN7W);
     items3[1] = tmp8(tmp5(4338).Text, obj5);
     obj3[3] = items3;
-    tmp9Result = tmp9(tmp5(4887).PressableOpacity, obj3);
+    tmp9Result = tmp9(tmp5(4909).PressableOpacity, obj3);
   }
   items2[2] = tmp9Result;
   obj[2] = closure_13(closure_12, { children: items2 });
-  obj[3] = closure_11(guildId(5439).BottomSheetFlatList, {
+  obj[3] = closure_11(guildId(5460).BottomSheetFlatList, {
     style: tmp.bodyContainer,
     data: stateFromStoresArray,
     keyExtractor(id) {
@@ -193,5 +193,5 @@ export default function ChannelSelectorActionSheet(guildId) {
       return outer1_11(outer1_15, { channel: item, onChannelSelected: closure_1, selected: item.id === closure_2 });
     }
   });
-  return closure_11(guildId(5804).ActionSheet, obj);
+  return closure_11(guildId(5825).ActionSheet, obj);
 };

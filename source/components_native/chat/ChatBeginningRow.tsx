@@ -1,10 +1,10 @@
-// Module ID: 11892
-// Function ID: 11893
+// Module ID: 11908
+// Function ID: 11909
 // Name: ChatBeginningRowIcon
-// Dependencies: [32, 5, 19, 17, 4334, 1390, 5936, 9071, 5290, 7128, 1395, 1434, 1391, 1980, 1990, 1910, 3989, 3998, 4540, 1922, 676, 1398, 11893, 11867, 10324, 21, 4342, 712, 4841, 1236, 4843, 4848, 4850, 4741, 4338, 4058, 4065, 4887, 11046, 1297, 11894, 8061, 9721, 589, 4187, 8115, 4535, 9046, 5934, 10047, 4278, 4332, 11895, 11896, 38, 11, 11898, 4061, 9070, 4901, 11902, 6180, 9114, 6552, 1993, 12011, 12014, 8065, 4355, 4755, 12018, 4685, 12019, 5776, 10575, 698, 9782, 8103, 5302, 5297, 4062, 4310, 12021, 2007, 5768, 12022, 8356, 8832, 5796, 12023, 8838, 6000, 4550, 12038, 5819, 9293, 9681, 12040, 10325, 12047, 8015, 4197, 7803, 4164, 1377, 11040, 5883, 9712, 9771, 4286, 12051, 12055, 2]
+// Dependencies: [32, 5, 19, 17, 4334, 1390, 5957, 9085, 5311, 7150, 1395, 1434, 1391, 1980, 1990, 1910, 3989, 3998, 4550, 1922, 676, 1398, 11909, 11883, 10338, 21, 4342, 712, 4863, 1236, 4865, 4870, 4872, 4763, 4338, 4058, 4065, 4909, 11062, 1297, 11910, 8082, 9732, 589, 4187, 8136, 4535, 9060, 5955, 10058, 4278, 4332, 11911, 11912, 38, 11, 11914, 4061, 9084, 4923, 11918, 6201, 9128, 6573, 1993, 12027, 12030, 8086, 4355, 4777, 12034, 4707, 12035, 5797, 10591, 698, 9793, 8124, 5323, 5318, 4062, 4310, 12037, 2007, 5789, 12038, 8378, 8846, 5817, 12039, 8852, 6021, 4572, 12056, 5840, 9307, 9692, 12058, 10339, 12065, 8036, 4197, 7824, 4164, 1377, 11056, 5904, 9723, 9782, 4286, 12069, 12073, 2]
 // Exports: default
 
-// Module 11892 (ChatBeginningRowIcon)
+// Module 11908 (ChatBeginningRowIcon)
 import TextIcon from "TextIcon";
 import participantFromServer from "participantFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -63,22 +63,22 @@ function ChatBeginningRowIcon(arg0) {
   ({ isPrivate, isThread, isForumPost } = arg0);
   let obj = { IconComponent: null, label: null };
   if (isForumPost) {
-    obj[0] = tmp2(4841).ChatIcon;
+    obj[0] = tmp2(4863).ChatIcon;
     obj[1] = tmp2(1236).t.Y4REmB;
     let tmp5 = tmp2;
     let tmp6 = obj;
   } else if (isThread) {
-    obj[0] = tmp2(4843).ThreadIcon;
+    obj[0] = tmp2(4865).ThreadIcon;
     obj[1] = tmp2(1236).t["7Xm5QI"];
     tmp5 = tmp2;
     tmp6 = obj;
   } else if (isPrivate) {
-    obj[0] = tmp2(4848).TextLockIcon;
+    obj[0] = tmp2(4870).TextLockIcon;
     obj[1] = tmp2(1236).t.GK18KJ;
     tmp5 = tmp2;
     tmp6 = obj;
   } else {
-    obj[0] = tmp2(4850).TextIcon;
+    obj[0] = tmp2(4872).TextIcon;
     obj[1] = tmp2(1236).t.GK18KJ;
     tmp5 = tmp2;
     tmp6 = obj;
@@ -102,7 +102,7 @@ function ChatBeginningRowHeader(arg0) {
   ({ subtitle, isForumPost, subtitleLink } = arg0);
   ({ title, isPrivate, isThread, isNSFW } = arg0);
   const tmp = createCacheKey();
-  let obj = subtitleLink(4741);
+  let obj = subtitleLink(4763);
   const tmp4 = null != subtitleLink && obj.useIsScreenReaderEnabled();
   const children = [callback2(ChatBeginningRowIcon, { isNSFW, isPrivate, isThread, isForumPost }), , ];
   const items1 = [tmp.title, ];
@@ -156,7 +156,7 @@ function LinkManageButtons(arg0) {
     ({ ctaButton: arr[0], subtitle: arr[1] } = tmp);
     obj[2] = items;
     const obj1 = { source: null, size: null, color: null };
-    obj1[0] = importDefault(11894);
+    obj1[0] = importDefault(11910);
     obj1[1] = tmp2(1297).IconSizes.REFRESH_SMALL_16;
     obj1[2] = token;
     const items1 = [callback2(tmp2(1297).Icon, obj1), ];
@@ -168,7 +168,7 @@ function LinkManageButtons(arg0) {
     obj2[3] = intl.string(tmp2(1236).t.dMJ3Y6);
     items1[1] = callback2(tmp2(4338).Text, obj2);
     obj[3] = items1;
-    isPrivate = tmp6(tmp2(4887).PressableOpacity, obj);
+    isPrivate = tmp6(tmp2(4909).PressableOpacity, obj);
   }
   const items3 = [isPrivate, ];
   if (canEdit) {
@@ -183,7 +183,7 @@ function LinkManageButtons(arg0) {
     obj3[2] = items4;
     const obj4 = { size: "xs", color: null };
     obj4[1] = token;
-    const items5 = [callback2(tmp2(9721).PencilIcon, obj4), ];
+    const items5 = [callback2(tmp2(9732).PencilIcon, obj4), ];
     const obj5 = { style: null, variant: "text-sm/medium", color: "text-link", children: null };
     const items6 = [tmp.ctaLabel];
     obj5[0] = items6;
@@ -191,7 +191,7 @@ function LinkManageButtons(arg0) {
     obj5[3] = intl2.string(tmp2(1236).t.GE1Tlo);
     items5[1] = callback2(tmp2(4338).Text, obj5);
     obj3[3] = items5;
-    canEdit = tmp6(tmp2(4887).PressableOpacity, obj3);
+    canEdit = tmp6(tmp2(4909).PressableOpacity, obj3);
   }
   items3[1] = canEdit;
   obj[1] = items3;
@@ -241,9 +241,9 @@ function ThreadOwner(arg0) {
   if (colorStrings == null) {
     colorStrings = null;
   }
-  let tmp2Result = tmp2(8115);
+  let tmp2Result = tmp2(8136);
   const processColorStringsArray = tmp2Result.useProcessColorStringsArray(colorStrings);
-  tmp2Result = tmp2(8115);
+  tmp2Result = tmp2(8136);
   if (stateFromStores != null) {
     const id = stateFromStores.id;
   }
@@ -288,9 +288,9 @@ function ThreadOwner(arg0) {
 function ChatBeginningRowThread(channel) {
   channel = channel.channel;
   const tmp = createCacheKey();
-  let obj = channel(9046);
+  let obj = channel(9060);
   const result = obj.isPrivateGuildChannel(channel);
-  let obj1 = channel(5934);
+  let obj1 = channel(5955);
   const appliedTags = obj1.useAppliedTags(channel);
   channel(589);
   [][0] = handleLoadThreadsSuccess;
@@ -354,7 +354,7 @@ function ChatBeginningRowGuildNonDefaultChannel(channel) {
   const tmp = importDefault;
   const tmp4 = importDefault(4535)(channel, false);
   const canResult1 = getUncachedChannelPermissions.can(constants2.MANAGE_ROLES, channel);
-  let obj = channel(9046);
+  let obj = channel(9060);
   const result = obj.isPrivateGuildChannel(channel);
   const canResult2 = getUncachedChannelPermissions.can(constants2.READ_MESSAGE_HISTORY, channel);
   const intl = channel(1236).intl;
@@ -386,7 +386,7 @@ function ChatBeginningRowGuildNonDefaultChannel(channel) {
       const obj2 = { channel: null, guild: null };
       obj2[0] = channel;
       obj2[1] = channel.guild;
-      tmp15Result = callback2(tmp(11895), obj2);
+      tmp15Result = callback2(tmp(11911), obj2);
     }
   }
   children[2] = tmp15Result;
@@ -417,7 +417,7 @@ function DMSpamButton(channel) {
   channel = channel.channel;
   const user = channel.user;
   let message;
-  let obj = channel(12014);
+  let obj = channel(12030);
   const dMMessageToReport = obj.useDMMessageToReport(channel, user.id, true === user.bot);
   message = dMMessageToReport.message;
   if (!channel.showingSpamBanner) {
@@ -434,7 +434,7 @@ function DMSpamButton(channel) {
           const obj = channel(outer1_2[67]);
         }
       };
-      return callback2(tmp(4755).Button, obj);
+      return callback2(tmp(4777).Button, obj);
     }
   }
   return null;
@@ -457,7 +457,7 @@ function ManageAppButton(application) {
       obj[2] = intl.string(tmp2(1236).t["5S3sQF"]);
       obj = { size: null, source: null, style: null };
       obj[0] = tmp2(1297).Icon.Sizes.SMALL;
-      obj[1] = importDefault(12018);
+      obj[1] = importDefault(12034);
       obj[2] = tmp.appDMButtonIcon;
       obj[3] = callback2(tmp2(1297).Icon, obj);
       obj[4] = function onPress() {
@@ -481,7 +481,7 @@ function ManageAppButton(application) {
         obj = { application_id: application.id, channel_id: closure_1.id, channel_type: closure_1.type };
         outer1_1(outer1_2[75]).track(outer1_25.APP_MANAGE_CTA_CLICKED, obj);
       };
-      tmp4 = callback2(tmp2(4755).Button, obj);
+      tmp4 = callback2(tmp2(4777).Button, obj);
     }
   }
   return tmp4;
@@ -580,7 +580,7 @@ function ChatBeginningRowDM(channel) {
   let userTag;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  analyticsLocations = user(5768)().analyticsLocations;
+  analyticsLocations = user(5789)().analyticsLocations;
   let id;
   if (user != null) {
     id = user.id;
@@ -588,7 +588,7 @@ function ChatBeginningRowDM(channel) {
   if (id == null) {
     id = closure_29;
   }
-  let tmp4Result = user(12022)(id);
+  let tmp4Result = user(12038)(id);
   c4 = tmp4Result;
   let obj = channel(589);
   let items = [recomputeFromAppTokens];
@@ -613,7 +613,7 @@ function ChatBeginningRowDM(channel) {
     return mutualGuilds;
   }, items2);
   let items3 = [user, channel];
-  const tmp4 = user(12022);
+  const tmp4 = user(12038);
   const effect = authorizedAppsFetchState.useEffect(() => {
     let getAvatarURL;
     let id;
@@ -680,7 +680,7 @@ function ChatBeginningRowDM(channel) {
     obj2[3] = tmp7(1297).AvatarSizes.XXLARGE;
     obj2[4] = user.avatarDecoration;
     obj1[3] = callback2(tmp7(1297).Avatar, obj2);
-    const items5 = [callback2(tmp7(4887).PressableOpacity, obj1), , , , , , ];
+    const items5 = [callback2(tmp7(4909).PressableOpacity, obj1), , , , , , ];
     let obj3 = { accessibilityRole: "button", onPress: null, accessibilityHint: null, children: null };
     obj3[1] = handleCopyUserTag;
     let intl3 = tmp7(1236).intl;
@@ -688,7 +688,7 @@ function ChatBeginningRowDM(channel) {
     let obj4 = { variant: "heading-xxl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj4[2] = name;
     obj3[3] = callback2(tmp7(4338).Text, obj4);
-    items5[1] = callback2(tmp7(4887).PressableOpacity, obj3);
+    items5[1] = callback2(tmp7(4909).PressableOpacity, obj3);
     let tmp15Result = null;
     if (!user.isProvisional) {
       let obj5 = { accessibilityRole: "button", onPress: null, accessibilityHint: null, children: null };
@@ -698,7 +698,7 @@ function ChatBeginningRowDM(channel) {
       let obj6 = { variant: "heading-lg/medium", color: "text-default", children: null };
       obj6[2] = userTag;
       obj5[3] = tmp15(tmp7(4338).Text, obj6);
-      tmp15Result = tmp15(tmp7(4887).PressableOpacity, obj5);
+      tmp15Result = tmp15(tmp7(4909).PressableOpacity, obj5);
     }
     items5[2] = tmp15Result;
     let obj7 = { style: null, variant: "text-md/medium", color: "text-default", children: null };
@@ -710,7 +710,7 @@ function ChatBeginningRowDM(channel) {
       let obj8 = { style: null, userId: null, iconSize: 14 };
       obj8[0] = tmp.provisionalAccountExplainer;
       obj8[1] = user.id;
-      tmp15Result = tmp15(tmp7(12047).ChatProvisionalAccountExplainerCard, obj8);
+      tmp15Result = tmp15(tmp7(12065).ChatProvisionalAccountExplainerCard, obj8);
     }
     items5[4] = tmp15Result;
     let tmp18Result;
@@ -726,13 +726,13 @@ function ChatBeginningRowDM(channel) {
             obj = { user: null, onPressMutualGuild: null };
             obj[0] = tmp;
             obj[1] = function onPressMutualGuild(arg0) {
-              const result = callback(8838).trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
-              const obj = callback(8838);
-              callback(6000).transitionToGuild(arg0);
-              const obj2 = callback(6000);
+              const result = callback(8852).trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
+              const obj = callback(8852);
+              callback(6021).transitionToGuild(arg0);
+              const obj2 = callback(6021);
               callback2(4310).hideActionSheet();
               const obj3 = callback2(4310);
-              callback2(4550).popWithKey(closure_40);
+              callback2(4572).popWithKey(closure_40);
             };
             obj.openLazy(channel(_undefined[83])(_undefined[89], _undefined.paths), "MutualGuildsActionSheet", obj);
           }
@@ -742,7 +742,7 @@ function ChatBeginningRowDM(channel) {
         obj9[1] = handleOpenMutualGuilds;
         obj9[2] = tmp.mutualGuildsContainer;
         let obj10 = { size: null, names: null, totalCount: null, children: null };
-        obj10[0] = tmp7(5819).GuildIconSizes.SMALL;
+        obj10[0] = tmp7(5840).GuildIconSizes.SMALL;
         obj10[1] = substr.map((guild) => guild.guild.name);
         obj10[2] = stateFromStores.length;
         obj10[3] = substr.map((guild) => {
@@ -751,7 +751,7 @@ function ChatBeginningRowDM(channel) {
           obj[1] = channel(_undefined[94]).GuildIconSizes.SMALL;
           return callback(user(_undefined[94]), obj, guild.id);
         });
-        const items6 = [tmp15(tmp7(12038).GuildIconPile, obj10), ];
+        const items6 = [tmp15(tmp7(12056).GuildIconPile, obj10), ];
         let obj11 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
         obj11[0] = tmp.mutualGuildsLabel;
         let intl5 = tmp7(1236).intl;
@@ -760,7 +760,7 @@ function ChatBeginningRowDM(channel) {
         obj11[3] = intl5.format(tmp7(1236).t.eE3oep, obj12);
         items6[1] = tmp15(tmp7(4338).Text, obj11);
         obj9[3] = items6;
-        tmp18Result = tmp18(tmp7(4887).PressableOpacity, obj9);
+        tmp18Result = tmp18(tmp7(4909).PressableOpacity, obj9);
       }
     }
     items5[5] = tmp18Result;
@@ -937,11 +937,11 @@ function ChatBeginningRowButton(style) {
   let obj = { style: style.style, children: null };
   ({ title, subtitle, IconComponent, iconVariant, onPress, trailing } = style);
   obj = { onPress, icon: null, label: null, subLabel: null, trailing: null };
-  obj[1] = callback2(require(8015) /* RowButtonWrapper */.RowButton.Icon, { IconComponent, variant: iconVariant });
+  obj[1] = callback2(require(8036) /* RowButtonWrapper */.RowButton.Icon, { IconComponent, variant: iconVariant });
   obj[2] = title;
   obj[3] = subtitle;
   obj[4] = trailing;
-  obj[1] = callback2(require(8015) /* RowButtonWrapper */.RowButton, obj);
+  obj[1] = callback2(require(8036) /* RowButtonWrapper */.RowButton, obj);
   return callback2(closure_7, obj);
 }
 function ChatBeginningRowGroupDM(channel) {
@@ -997,7 +997,7 @@ function ChatBeginningRowGroupDM(channel) {
               c3 = 3;
             } else {
               dependencyMap(true);
-              let obj2 = outer1_1(7803);
+              let obj2 = outer1_1(7824);
               dependencyMap = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };
@@ -1011,7 +1011,7 @@ function ChatBeginningRowGroupDM(channel) {
         } else if (arg0 !== 2) {
           closure_0 = arg1;
           if (null != closure_0) {
-            obj = outer1_0(9114);
+            obj = outer1_0(9128);
             obj.handleCopy(closure_0, closure_0, outer1_32.GROUP_DM, false);
           }
           dependencyMap(false);
@@ -1051,7 +1051,7 @@ function ChatBeginningRowGroupDM(channel) {
   obj = { style: tmp.centerHeader, children: null };
   obj = { style: tmp.avatarRedesign, channel, size: null, accessible: false };
   obj[2] = channel(1297).AvatarSizes.XXLARGE;
-  const items5 = [callback2(first(9712), obj), , , ];
+  const items5 = [callback2(first(9723), obj), , , ];
   let obj1 = { style: tmp.dmTitle, variant: null, color: "mobile-text-heading-primary", children: null };
   let str = "heading-xxl/extrabold";
   if (null != arr) {
@@ -1060,7 +1060,7 @@ function ChatBeginningRowGroupDM(channel) {
       str = "heading-lg/extrabold";
     }
   }
-  const tmp17 = channel.id === channel(5883).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+  const tmp17 = channel.id === channel(5904).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
   obj1[1] = str;
   obj1[3] = arr;
   items5[1] = callback2(channel(4338).Text, obj1);
@@ -1082,7 +1082,7 @@ function ChatBeginningRowGroupDM(channel) {
       const obj4 = { style: null, onPress: null, IconComponent: null, iconVariant: "default", title: null };
       obj4[0] = tmp.gdmInviteFriends;
       obj4[1] = callback2;
-      obj4[2] = tmp7(9771).GroupPlusIcon;
+      obj4[2] = tmp7(9782).GroupPlusIcon;
       const intl2 = tmp7(1236).intl;
       obj4[4] = intl2.string(tmp7(1236).t["LR+Ptf"]);
       tmp15Result = tmp15(ChatBeginningRowButton, obj4);
@@ -1112,7 +1112,7 @@ function ChatBeginningRowGroupDM(channel) {
     if (channel.hasFlag(ChannelFlags.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) {
       const obj6 = { channelId: null };
       obj6[0] = channel.id;
-      tmp15Result1 = tmp15(first(12051), obj6);
+      tmp15Result1 = tmp15(first(12069), obj6);
     }
     const obj7 = { children: null };
     items6[2] = tmp15Result1;
@@ -1232,14 +1232,14 @@ function ChatBeginningRowGuildDefaultChannel(guild) {
                 let closure_1 = tmp5;
                 let base64 = tmp2;
                 base64 = undefined;
-                outer1_1(9070).init(dependencyMap);
-                const obj7 = outer1_1(9070);
+                outer1_1(9084).init(dependencyMap);
+                const obj7 = outer1_1(9084);
                 let obj1 = { size: null };
                 obj1[0] = outer1_35;
                 dependencyMap = 1;
                 c3 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = outer1_1(4901).openImagePicker(obj1);
+                obj2[0] = outer1_1(4923).openImagePicker(obj1);
                 return obj2;
               }
             } else if (arg0 === 1) {
@@ -1253,9 +1253,9 @@ function ChatBeginningRowGuildDefaultChannel(guild) {
             } else {
               base64 = arg1.base64;
               if (null != base64) {
-                obj = outer1_1(9070);
+                obj = outer1_1(9084);
                 obj.updateIcon(dependencyMap, base64);
-                obj1 = outer1_1(9070);
+                obj1 = outer1_1(9084);
                 obj1.open(dependencyMap, outer1_30.LANDING);
               }
               c3 = 3;
@@ -1435,7 +1435,7 @@ export default function ChatBeginningRow(channelId) {
       tmp19Result = tmp19(closure_7, obj1, channelId);
     }
     obj[1] = tmp19Result;
-    return callback2(importDefault(12055), obj);
+    return callback2(importDefault(12073), obj);
   } else if (THREAD_CHANNEL_TYPES.has(stateFromStores.type)) {
     obj2 = { channel: null };
     obj2[0] = stateFromStores;

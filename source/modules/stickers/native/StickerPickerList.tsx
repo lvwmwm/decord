@@ -1,15 +1,15 @@
-// Module ID: 10028
-// Function ID: 10029
-// Dependencies: [32, 19, 17, 5259, 10004, 9971, 21, 4342, 712, 1297, 10029, 4338, 1236, 5026, 8770, 8724, 589, 10030, 10015, 12, 8582, 10031, 8575, 5412, 2]
+// Module ID: 10039
+// Function ID: 10040
+// Dependencies: [32, 19, 17, 5280, 10015, 9982, 21, 4342, 712, 1297, 10040, 4338, 1236, 5048, 8784, 8738, 589, 10041, 10026, 12, 8604, 10042, 8597, 5433, 2]
 
-// Module 10028
+// Module 10039
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "apply";
 import { View } from "useStickerPickerListData";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import { useStickerPickerStore } from "useStickerPickerStore";
 import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";
-import jsxProd from "module_10031";
+import jsxProd from "module_10042";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -36,7 +36,7 @@ let closure_14 = importAllResult.memo((height) => {
   let obj = { style: items, children: null };
   items = [tmp.nsfwContainer, { height: height.height }];
   obj = { source: null, size: null };
-  obj[0] = importDefault(10029);
+  obj[0] = importDefault(10040);
   obj[1] = require(1297) /* Button */.Icon.Sizes.SMALL;
   const items1 = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: null };

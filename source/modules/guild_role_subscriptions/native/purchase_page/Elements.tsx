@@ -1,10 +1,10 @@
-// Module ID: 15729
-// Function ID: 15730
+// Module ID: 15747
+// Function ID: 15748
 // Name: TruncatedText
-// Dependencies: [32, 19, 17, 4012, 21, 4342, 712, 4338, 1236, 4887, 1297, 15730, 7696, 14528, 647, 7697, 5896, 2]
+// Dependencies: [32, 19, 17, 4012, 21, 4342, 712, 4338, 1236, 4909, 1297, 15748, 7717, 14541, 647, 7718, 5917, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15729 (TruncatedText)
+// Module 15747 (TruncatedText)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -109,25 +109,25 @@ export const ArrowButton = function ArrowButton(arg0) {
   const items = [callback2(require(4338) /* Text */.Text, obj), ];
   obj = { size: null, source: null, style: null };
   obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
-  obj[1] = importDefault(15730);
+  obj[1] = importDefault(15748);
   obj[2] = tmp.arrowButtonIcon;
   items[1] = callback2(require(1297) /* Button */.Icon, obj);
   obj[3] = items;
-  return callback3(require(4887) /* PressableBase */.PressableOpacity, obj);
+  return callback3(require(4909) /* PressableBase */.PressableOpacity, obj);
 };
 export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
-  const obj = importDefault(7696);
-  const _require = callback(importAll(14528).useSubscriptionPlan(listingId), 1)[0];
-  const obj2 = importAll(14528);
+  const obj = importDefault(7717);
+  const _require = callback(importAll(14541).useSubscriptionPlan(listingId), 1)[0];
+  const obj2 = importAll(14541);
   const tmp2 = _require;
   const items = [addSubscriptionPlan];
   const stateFromStores = _require(647).useStateFromStores(items, () => outer1_8.get(id.id));
-  const price = importDefault(7697)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
+  const price = importDefault(7718)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
   let str = "No Price Available";
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    str = "" + tmp2(5896).formatPrice(price.amount, price.currency) + "/mo.";
-    const tmp2Result = tmp2(5896);
+    str = "" + tmp2(5917).formatPrice(price.amount, price.currency) + "/mo.";
+    const tmp2Result = tmp2(5917);
   }
   return str;
 };

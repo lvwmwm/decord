@@ -1,9 +1,9 @@
-// Module ID: 16660
-// Function ID: 16661
+// Module ID: 16673
+// Function ID: 16674
 // Name: prototype
-// Dependencies: [1922, 6961, 505, 5301, 7457, 1945, 7637, 2]
+// Dependencies: [1922, 6982, 505, 5322, 7478, 1945, 7658, 2]
 
-// Module 16660 (prototype)
+// Module 16673 (prototype)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import emitChanges from "emitChanges";
 import { PaymentGateways } from "sum";

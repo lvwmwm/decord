@@ -1,10 +1,10 @@
-// Module ID: 9757
-// Function ID: 9758
+// Module ID: 9768
+// Function ID: 9769
 // Name: _addChannelToFavorites
-// Dependencies: [5, 21, 9758, 2007, 1236, 3047, 8793, 8795, 1297, 2]
+// Dependencies: [5, 21, 9769, 2007, 1236, 3047, 8807, 8809, 1297, 2]
 // Exports: default
 
-// Module 9757 (_addChannelToFavorites)
+// Module 9768 (_addChannelToFavorites)
 import messagesProxy from "messagesProxy";
 import { jsx } from "jsxProd";
 
@@ -164,7 +164,7 @@ export default function buildFavoritesSectionButtons(hasFavoritesAccess) {
         let obj = { label: null, IconComponent: null, isDestructive: true, onPress: null };
         const intl2 = require(1236) /* getSystemLocale */.intl;
         obj[0] = intl2.string(importDefault(3047).TN4nAX);
-        obj[1] = require(8793) /* StarIcon */.StarIcon;
+        obj[1] = require(8807) /* StarIcon */.StarIcon;
         obj[3] = function onPress() {
           return (function removeChannelFromFavorites(closure_0) {
             const self = this;
@@ -184,7 +184,7 @@ export default function buildFavoritesSectionButtons(hasFavoritesAccess) {
           obj = { label: null, IconComponent: null, trailing: null, onPress: null };
           const intl = require(1236) /* getSystemLocale */.intl;
           obj[0] = intl.string(importDefault(3047).G9fGlP);
-          obj[1] = require(8795) /* StarOutlineIcon */.StarOutlineIcon;
+          obj[1] = require(8809) /* StarOutlineIcon */.StarOutlineIcon;
           let tmp10;
           if (tmp4) {
             obj = { size: null };

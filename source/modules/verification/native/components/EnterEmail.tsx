@@ -1,14 +1,14 @@
-// Module ID: 8557
-// Function ID: 8558
+// Module ID: 8579
+// Function ID: 8580
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1922, 8502, 676, 21, 4342, 712, 1499, 589, 691, 8558, 698, 4338, 1236, 8514, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 8524, 676, 21, 4342, 712, 1499, 589, 691, 8580, 698, 4338, 1236, 8536, 4777, 2]
 // Exports: default
 
-// Module 8557 (EnterEmail)
+// Module 8579 (EnterEmail)
 import closure_4 from "ChangeEmailFields";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
-import get_ActivityIndicator from "module_8514";
+import get_ActivityIndicator from "module_8536";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ChangeEmailFields from "ChangeEmailFields";
 import { AnalyticEvents } from "ME";

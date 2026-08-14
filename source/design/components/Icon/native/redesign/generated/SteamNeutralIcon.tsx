@@ -1,10 +1,10 @@
-// Module ID: 9341
-// Function ID: 9342
+// Module ID: 9355
+// Function ID: 9356
 // Name: SteamNeutralIcon
-// Dependencies: [19, 21, 712, 4064, 9342, 2]
+// Dependencies: [19, 21, 712, 4064, 9356, 2]
 // Exports: SteamNeutralIcon
 
-// Module 9341 (SteamNeutralIcon)
+// Module 9355 (SteamNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const SteamNeutralIcon = function SteamNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9342) /* registerAsset */;
+  obj[0] = require(9356) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

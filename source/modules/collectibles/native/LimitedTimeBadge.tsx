@@ -1,10 +1,10 @@
-// Module ID: 9457
-// Function ID: 9458
+// Module ID: 9470
+// Function ID: 9471
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 1994, 1302, 21, 4342, 712, 1236, 589, 1363, 6950, 4338, 2]
+// Dependencies: [19, 17, 1994, 1302, 21, 4342, 712, 1236, 589, 1363, 6971, 4338, 2]
 // Exports: default
 
-// Module 9457 (LimitedTimeBadge)
+// Module 9470 (LimitedTimeBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,7 +34,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
   const items1 = [_getSystemLocale];
   const items2 = ["en-US", "en-GB"];
   const hasItem = items2.includes(obj1.useStateFromStores(items1, () => locale.locale));
-  ({ days, hours } = importDefault(6950)(unpublishedAt.unpublishedAt, 1000, undefined, true));
+  ({ days, hours } = importDefault(6971)(unpublishedAt.unpublishedAt, 1000, undefined, true));
   if (hasItem) {
     if (days > 1) {
       const intl6 = tmp2(1236).intl;

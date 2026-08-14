@@ -1,10 +1,10 @@
-// Module ID: 11487
-// Function ID: 11488
+// Module ID: 11503
+// Function ID: 11504
 // Name: result
-// Dependencies: [32, 1391, 4263, 1922, 11488, 11489, 4778, 687, 589, 11, 1377, 6065, 4164, 2]
+// Dependencies: [32, 1391, 4263, 1922, 11504, 11505, 4800, 687, 589, 11, 1377, 6086, 4164, 2]
 // Exports: default
 
-// Module 11487 (result)
+// Module 11503 (result)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleInviteData from "handleInviteData";
@@ -68,7 +68,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   }
   const tmp14 = initialize;
   const tmp2Result1 = guild_id(589);
-  const tmp2Result2 = guild_id(6065);
+  const tmp2Result2 = guild_id(6086);
   const items5 = [closure_8];
   const stateFromStoresObject = guild_id(589).useStateFromStoresObject(items5, () => ({ recentMessageMetadata: store2.getRecentMessageMetadata(), recentApplicationCommandMetadata: store2.getRecentApplicationCommandMetadata() }));
   ({ recentMessageMetadata, recentApplicationCommandMetadata } = stateFromStoresObject);

@@ -1,9 +1,9 @@
-// Module ID: 7287
-// Function ID: 7288
+// Module ID: 7309
+// Function ID: 7310
 // Name: getURL
-// Dependencies: [32, 5, 17, 4003, 4322, 500, 12, 1435, 7288, 1490, 4191, 7327, 7332, 2]
+// Dependencies: [32, 5, 17, 4003, 4322, 500, 12, 1435, 7310, 1490, 4191, 7349, 7354, 2]
 
-// Module 7287 (getURL)
+// Module 7309 (getURL)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -345,7 +345,7 @@ obj[4] = function triggerFullscreenAnimation(arg0) {
   let emoji;
   let messageId;
   ({ channelId, messageId, emoji } = arg0);
-  const result = require(7327) /* onDismiss */.openBurstReactionFirstSendActionSheet({ channelId, messageId, emoji });
+  const result = require(7349) /* onDismiss */.openBurstReactionFirstSendActionSheet({ channelId, messageId, emoji });
 };
 let result = require("get ActivityIndicator").fileFinishedImporting("utils/EmojiUtilsPlatformed.native.tsx");
 

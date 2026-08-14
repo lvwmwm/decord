@@ -1,10 +1,10 @@
-// Module ID: 7777
-// Function ID: 7778
+// Module ID: 7798
+// Function ID: 7799
 // Name: openBuyNitroPerkDetails
-// Dependencies: [19, 17, 21, 4342, 7694, 7778, 1236, 4753, 712, 7781, 7782, 5788, 4310, 2]
+// Dependencies: [19, 17, 21, 4342, 7715, 7799, 1236, 4775, 712, 7802, 7803, 5809, 4310, 2]
 // Exports: openBuyNitroPerkDetails
 
-// Module 7777 (openBuyNitroPerkDetails)
+// Module 7798 (openBuyNitroPerkDetails)
 import { Image } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,7 +25,7 @@ let closure_8 = require("noop").memo((perk) => {
   let selectedTier;
   perk = perk.perk;
   ({ selectedTier, selectedProductId, analyticsLocations, applicationId, onPaymentSuccess, onPaymentDismiss } = perk);
-  let obj = require(7694) /* PremiumTypes */;
+  let obj = require(7715) /* PremiumTypes */;
   const buyNitroPlanSelection = obj.useBuyNitroPlanSelection({ tier: selectedTier, productId: selectedProductId });
   const detail = perk.detail;
   let tmp6Result = null;
@@ -45,12 +45,12 @@ let closure_8 = require("noop").memo((perk) => {
       const obj2 = { planSelection: null, item: null, centered: true };
       obj2[0] = buyNitroPlanSelection;
       obj2[1] = buyNitroPlanSelection.selection.item;
-      tmp6Result = tmp6(tmp9(7781), obj2);
+      tmp6Result = tmp6(tmp9(7802), obj2);
     }
     const items = [tmp6Result, ];
     const obj3 = { planSelection: null, location: null, sourceAnalyticsLocations: null, applicationId: null, onHostSheetClose: null, onPaymentSuccess: null, onPaymentDismiss: null };
     obj3[0] = buyNitroPlanSelection;
-    obj3[1] = importDefault(5788).PREMIUM_MARKETING_PERK_CARD;
+    obj3[1] = importDefault(5809).PREMIUM_MARKETING_PERK_CARD;
     obj3[2] = analyticsLocations;
     obj3[3] = applicationId;
     obj3[4] = function onHostSheetClose() {
@@ -58,12 +58,12 @@ let closure_8 = require("noop").memo((perk) => {
     };
     obj3[5] = onPaymentSuccess;
     obj3[6] = onPaymentDismiss;
-    items[1] = callback(importDefault(7782), obj3);
+    items[1] = callback(importDefault(7803), obj3);
     obj1[1] = items;
-    obj[3] = closure_5(tmp2(4753).Stack, obj1);
-    tmp6Result = tmp6(tmp2(7778).PromoSheet, obj);
+    obj[3] = closure_5(tmp2(4775).Stack, obj1);
+    tmp6Result = tmp6(tmp2(7799).PromoSheet, obj);
     const tmp8 = closure_5;
-    const tmp9Result = importDefault(7782);
+    const tmp9Result = importDefault(7803);
   }
   return tmp6Result;
 });

@@ -1,10 +1,10 @@
-// Module ID: 14118
-// Function ID: 14119
+// Module ID: 14131
+// Function ID: 14132
 // Name: BlockedUserRow
-// Dependencies: [19, 1922, 21, 9293, 5768, 5414, 1297, 1236, 8832, 4755, 589, 2]
+// Dependencies: [19, 1922, 21, 9307, 5789, 5435, 1297, 1236, 8846, 4777, 589, 2]
 // Exports: default
 
-// Module 14118 (BlockedUserRow)
+// Module 14131 (BlockedUserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const require = arg1;
 function BlockedUserRow(userRecord) {
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5768)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5789)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
   obj = { user: userRecord, guildId: "Array", size: -1 };
   obj[2] = userRecord(1297).AvatarSizes.REFRESH_MEDIUM_32;
@@ -59,8 +59,8 @@ function BlockedUserRow(userRecord) {
   obj1[3] = function onPress() {
     analyticsLocations(outer1_2[3]).unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
   };
-  obj[9] = jsx(userRecord(4755).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
-  return jsx(userRecord(5414).TableRow, { name: "unblock", label: null });
+  obj[9] = jsx(userRecord(4777).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
+  return jsx(userRecord(5435).TableRow, { name: "unblock", label: null });
 }
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12711
-// Function ID: 12712
+// Module ID: 12729
+// Function ID: 12730
 // Name: GuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4334, 21, 4342, 712, 589, 4191, 4338, 1236, 5819, 1430, 2]
+// Dependencies: [19, 17, 4334, 21, 4342, 712, 589, 4191, 4338, 1236, 5840, 1430, 2]
 // Exports: default
 
-// Module 12711 (GuildDiscoveryPreviewElement)
+// Module 12729 (GuildDiscoveryPreviewElement)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -45,7 +45,7 @@ export default function GuildDiscoveryPreviewElement(guild) {
   const obj2 = { style: tmp.guildInfo, children: null };
   const obj3 = { style: tmp.guildIcon, guild: null, animate: null };
   const hexWithOpacityResult = obj1.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const tmp4 = importDefault(5819);
+  const tmp4 = importDefault(5840);
   obj3[1] = require(1430) /* fromGuildPropertiesWithAdditionalFields */.fromClientDiscoverableGuild(guild);
   obj3[2] = !stateFromStores;
   const items3 = [callback(tmp4, obj3), callback(require(4338) /* Text */.Text, { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name })];

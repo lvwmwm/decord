@@ -1,10 +1,10 @@
-// Module ID: 9613
-// Function ID: 9614
+// Module ID: 9624
+// Function ID: 9625
 // Name: ProductNameAndDescription
-// Dependencies: [17, 21, 4342, 712, 9614, 4338, 7061, 9463, 1236, 9615, 9444, 1949, 2]
+// Dependencies: [17, 21, 4342, 712, 9625, 4338, 7083, 9476, 1236, 9626, 1949, 2]
 // Exports: default
 
-// Module 9613 (ProductNameAndDescription)
+// Module 9624 (ProductNameAndDescription)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,7 +14,7 @@ let c5;
 function ProductNameAndDescription(product) {
   product = product.product;
   const tmp = callback3();
-  let obj = require(9614) /* getBundleDescription */;
+  let obj = require(9625) /* getBundleDescription */;
   obj = { style: tmp.description, children: null };
   const productDescription = obj.useProductDescription(product);
   obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
@@ -24,9 +24,9 @@ function ProductNameAndDescription(product) {
 }
 function ProductPurchaseStatus(product) {
   product = product.product;
-  let obj = require(7061) /* getItemRecordsFromPurchases */;
+  let obj = require(7083) /* getItemRecordsFromPurchases */;
   const result = obj.isPremiumCollectiblesProduct(product);
-  let obj1 = require(9463) /* getProductPurchaseState */;
+  let obj1 = require(9476) /* getProductPurchaseState */;
   const productPurchaseState = obj1.useProductPurchaseState(product);
   if (productPurchaseState.isPurchased) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
@@ -44,32 +44,19 @@ function ProductPurchaseStatus(product) {
       obj1 = { product: null, onTrackPress: null };
       obj1[0] = product;
       obj1[1] = product.onTrackPress;
-      children = tmp6(importDefault(9615), obj1);
+      children = tmp6(importDefault(9626), obj1);
     }
   }
   return closure_4(View, { children });
 }
-function BundleProductDetailsActionSheetInfo(onTrackPress) {
-  const product = onTrackPress.product;
+function BundleProductDetailsActionSheetInfo(arg0) {
+  let onTrackPress;
+  let product;
+  ({ product, onTrackPress } = arg0);
   const tmp = callback3();
-  let obj = require(9444) /* useCollectiblesMobileFlexibleBundlesExperiment */;
-  const enabled = obj.useCollectiblesMobileFlexibleBundlesExperiment("BundleProductDetailsActionSheetInfo").enabled;
-  const items = [tmp.body, ];
-  let bundleBody = enabled;
-  if (enabled) {
-    bundleBody = tmp.bundleBody;
-  }
-  obj = { style: items, children: null };
-  items[1] = bundleBody;
-  let tmp4 = !enabled;
-  if (!enabled) {
-    obj = { product: null };
-    obj[0] = product;
-    tmp4 = callback(ProductNameAndDescription, obj);
-  }
-  const items1 = [tmp4, callback(ProductPurchaseStatus, { product, onTrackPress: onTrackPress.onTrackPress })];
-  obj[1] = items1;
-  return closure_5(View, obj);
+  const items = [, ];
+  ({ body: arr[0], bundleBody: arr[1] } = tmp);
+  return callback(View, { style: items, children: callback(ProductPurchaseStatus, { product, onTrackPress }) });
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { title: { marginBottom: 2 }, body: null, bundleBody: null, description: null };

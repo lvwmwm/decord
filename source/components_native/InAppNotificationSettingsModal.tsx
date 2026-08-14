@@ -1,9 +1,9 @@
-// Module ID: 9866
-// Function ID: 9867
+// Module ID: 9877
+// Function ID: 9878
 // Name: ConnectedInAppNotificationSettingsScreen
-// Dependencies: [19, 1395, 1391, 3998, 4540, 1922, 676, 21, 5302, 5297, 4535, 8012, 1236, 9867, 6059, 589, 5310, 5823, 2]
+// Dependencies: [19, 1395, 1391, 3998, 4550, 1922, 676, 21, 5323, 5318, 4535, 8033, 1236, 9878, 6080, 589, 5331, 5844, 2]
 
-// Module 9866 (ConnectedInAppNotificationSettingsScreen)
+// Module 9877 (ConnectedInAppNotificationSettingsScreen)
 import importAllResult from "noop";
 import { isMultiUserDM } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -81,8 +81,8 @@ prototype["renderGroupDMNotificationSettings"] = function renderGroupDMNotificat
     obj[0] = intl.format(require(1236) /* getSystemLocale */.t["u/rEuc"], obj1);
     obj[1] = tmp2;
     obj[2] = tmp.handleGroupDMMute;
-    obj[0] = callback(require(8012) /* Form */.FormSwitchRow, obj);
-    return callback(require(8012) /* Form */.FormSection, obj);
+    obj[0] = callback(require(8033) /* Form */.FormSwitchRow, obj);
+    return callback(require(8033) /* Form */.FormSection, obj);
   }
 };
 prototype["renderTextChannelNotificationSettings"] = function renderTextChannelNotificationSettings() {
@@ -91,7 +91,7 @@ prototype["renderTextChannelNotificationSettings"] = function renderTextChannelN
   if (null != channel) {
     const obj = { channelId: null };
     obj[0] = channel.id;
-    tmp = callback(importDefault(9867), obj);
+    tmp = callback(importDefault(9878), obj);
   }
   return tmp;
 };
@@ -124,15 +124,15 @@ prototype["render"] = function render() {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.cHMaba);
   obj[1] = this.handleOpenUserSettings;
-  obj[2] = callback(require(8012) /* Form */.FormRow.Arrow, {});
-  obj[1] = callback(require(8012) /* Form */.FormRow, obj);
-  items[1] = callback(require(8012) /* Form */.FormSection, obj);
+  obj[2] = callback(require(8033) /* Form */.FormRow.Arrow, {});
+  obj[1] = callback(require(8033) /* Form */.FormRow, obj);
+  items[1] = callback(require(8033) /* Form */.FormSection, obj);
   const obj1 = { children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.avgbp1);
-  items[2] = callback(require(8012) /* Form */.FormHint, obj1);
+  items[2] = callback(require(8033) /* Form */.FormHint, obj1);
   obj[0] = items;
-  return callback2(require(8012) /* Form */.Form, obj);
+  return callback2(require(8033) /* Form */.Form, obj);
 };
 const memoResult = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;
@@ -164,7 +164,7 @@ const memoResult = importAllResult.memo((channelId) => {
     obj[0] = obj;
     return obj;
   }, items);
-  return callback(channelId(5823).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return callback(channelId(5844).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 });
 let result = require("ensureGuildLoaded").fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 

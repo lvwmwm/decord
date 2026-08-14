@@ -1,10 +1,10 @@
-// Module ID: 15140
-// Function ID: 15141
+// Module ID: 15154
+// Function ID: 15155
 // Name: ScreenRecordingActionSheet
-// Dependencies: [19, 17, 15136, 21, 4342, 712, 4338, 4755, 4310, 4887, 5366, 4332, 5804, 2]
+// Dependencies: [19, 17, 15150, 21, 4342, 712, 4338, 4777, 4310, 4909, 5387, 4332, 5825, 2]
 // Exports: default
 
-// Module 15140 (ScreenRecordingActionSheet)
+// Module 15154 (ScreenRecordingActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { useScreenRecordingStore } from "useScreenRecordingStore";
@@ -81,7 +81,7 @@ export default function ScreenRecordingActionSheet() {
       callback2(outer1_2[8]).hideActionSheet();
     }
   };
-  items[2] = callback(_require(4755).Button, obj);
+  items[2] = callback(_require(4777).Button, obj);
   obj[1] = items;
   const obj1 = { style: tmp.container, children: null };
   const obj2 = {
@@ -92,8 +92,8 @@ export default function ScreenRecordingActionSheet() {
     accessibilityLabel: "close",
     children: null
   };
-  obj2[3] = callback(_require(5366).XSmallIcon, { size: "md", color: "text-default" });
-  const items1 = [callback(_require(4887).PressableOpacity, obj2), callback(_require(4338).Text, { variant: "heading-xl/bold", children: tmp5.title }), , ];
+  obj2[3] = callback(_require(5387).XSmallIcon, { size: "md", color: "text-default" });
+  const items1 = [callback(_require(4909).PressableOpacity, obj2), callback(_require(4338).Text, { variant: "heading-xl/bold", children: tmp5.title }), , ];
   const obj4 = { variant: "text-md/normal", children: null };
   const obj3 = { variant: "heading-xl/bold", children: tmp5.title };
   const tmp11 = callback2(View, obj);
@@ -106,7 +106,7 @@ export default function ScreenRecordingActionSheet() {
   if (flag) {
     tmp12 = tmp2;
   }
-  obj5[1] = callback(_require(4755).Button, {
+  obj5[1] = callback(_require(4777).Button, {
     disabled: tmp12,
     text: "Next",
     loading: tmp2,
@@ -120,5 +120,5 @@ export default function ScreenRecordingActionSheet() {
   if (tmp3) {
     children = tmp11;
   }
-  return callback(tmp9(5804).ActionSheet, { children });
+  return callback(tmp9(5825).ActionSheet, { children });
 };

@@ -1,10 +1,10 @@
-// Module ID: 7800
-// Function ID: 7801
+// Module ID: 7821
+// Function ID: 7822
 // Name: getButtonActionHandler
-// Dependencies: [7388, 1924, 676, 7396, 7801, 6933, 5902, 12741, 6059, 2]
+// Dependencies: [7410, 1924, 676, 7417, 7822, 6954, 5923, 12759, 6080, 2]
 // Exports: getButtonActionHandler
 
-// Module 7800 (getButtonActionHandler)
+// Module 7821 (getButtonActionHandler)
 import createEmptyPromotionsByType from "createEmptyPromotionsByType";
 import { PremiumTypes } from "GuildFeatures";
 import ME from "ME";
@@ -25,7 +25,7 @@ export const getButtonActionHandler = function getButtonActionHandler(arg0) {
   let importDefault;
   let require;
   ({ buttonAction, applicationId: require, analyticsLocations: importDefault, analyticsPage: dependencyMap, onPaymentSuccess: createEmptyPromotionsByType, onPaymentDismiss: PremiumTypes } = arg0);
-  if (require(7396) /* create */.ButtonAction.OPEN_SOCIAL_LAYER_STOREFRONT === buttonAction) {
+  if (require(7417) /* create */.ButtonAction.OPEN_SOCIAL_LAYER_STOREFRONT === buttonAction) {
     return () => {
       if (null != closure_0) {
         const obj = { applicationId: null };
@@ -33,23 +33,23 @@ export const getButtonActionHandler = function getButtonActionHandler(arg0) {
         outer1_1(outer1_2[4])(obj);
       }
     };
-  } else if (tmp(7396).ButtonAction.OPEN_TIER_1_PAYMENT_MODAL === buttonAction) {
+  } else if (tmp(7417).ButtonAction.OPEN_TIER_1_PAYMENT_MODAL === buttonAction) {
     return () => {
       obj = { analyticsLocation: obj, analyticsLocations: closure_1, premiumType: outer1_4.TIER_1, onPaymentSuccess: createEmptyPromotionsByType, onPaymentDismiss: closure_4 };
       obj = { page: closure_2, section: outer1_5.FOOTER, object: outer1_6.BUTTON_CTA, objectType: outer1_7.TIER_1 };
       return outer1_1(outer1_2[5])(obj);
     };
   } else {
-    if (tmp(7396).ButtonAction.OPEN_TIER_2_PAYMENT_MODAL !== buttonAction) {
-      if (tmp(7396).ButtonAction.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER !== buttonAction) {
-        if (tmp(7396).ButtonAction.OPEN_PLAN_SELECTION_MODAL === buttonAction) {
+    if (tmp(7417).ButtonAction.OPEN_TIER_2_PAYMENT_MODAL !== buttonAction) {
+      if (tmp(7417).ButtonAction.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER !== buttonAction) {
+        if (tmp(7417).ButtonAction.OPEN_PLAN_SELECTION_MODAL === buttonAction) {
           return () => {
             obj = { analyticsLocation: obj, analyticsLocations: closure_1, onPaymentSuccess: createEmptyPromotionsByType, onPaymentDismiss: closure_4 };
             obj = { page: closure_2, section: outer1_5.FOOTER, object: outer1_6.BUTTON_CTA, objectType: outer1_7.BUY };
             return outer1_1(outer1_2[5])(obj);
           };
         } else {
-          const OPEN_MARKETING_PAGE = tmp(7396).ButtonAction.OPEN_MARKETING_PAGE;
+          const OPEN_MARKETING_PAGE = tmp(7417).ButtonAction.OPEN_MARKETING_PAGE;
           return () => {
             let obj = callback(table[8]);
             obj = { screen: constants.PREMIUM };

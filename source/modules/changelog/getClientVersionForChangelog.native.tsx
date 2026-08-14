@@ -1,12 +1,12 @@
-// Module ID: 16471
-// Function ID: 16472
+// Module ID: 16489
+// Function ID: 16490
 // Name: getClientVersionForChangelog
-// Dependencies: [16472, 2]
+// Dependencies: [16490, 2]
 // Exports: getClientVersionForChangelog
 
-// Module 16471 (getClientVersionForChangelog)
+// Module 16489 (getClientVersionForChangelog)
 const result = require("set").fileFinishedImporting("modules/changelog/getClientVersionForChangelog.native.tsx");
 
 export const getClientVersionForChangelog = function getClientVersionForChangelog() {
-  return require(16472) /* getAppMajorVersion */.getAppMajorVersion();
+  return require(16490) /* getAppMajorVersion */.getAppMajorVersion();
 };

@@ -1,16 +1,16 @@
-// Module ID: 12385
-// Function ID: 12386
+// Module ID: 12403
+// Function ID: 12404
 // Name: getUserProfileLiveActivities
 // Dependencies: [676, 12, 2]
 // Exports: getUserProfileLiveActivities, getUserProfileStackedActivityCards
 
-// Module 12385 (getUserProfileLiveActivities)
+// Module 12403 (getUserProfileLiveActivities)
 import { ActivityTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/UserProfileStackedActivityCardUtils.tsx");
 
-export const getUserProfileLiveActivities = function getUserProfileLiveActivities(stateFromStores) {
-  return require(12) /* apply */.uniqWith(stateFromStores.filter((type) => {
+export const getUserProfileLiveActivities = function getUserProfileLiveActivities(stateFromStores1) {
+  return require(12) /* apply */.uniqWith(stateFromStores1.filter((type) => {
     type = type.type;
     return type !== constants.CUSTOM_STATUS && type !== constants.HANG_STATUS;
   }), (application_id, application_id2) => {

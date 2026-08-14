@@ -1,10 +1,10 @@
-// Module ID: 8053
-// Function ID: 8054
+// Module ID: 8074
+// Function ID: 8075
 // Name: renderDefaultEmpty
-// Dependencies: [109, 32, 19, 17, 21, 12, 643, 5821, 4338, 500, 4083, 8054, 8055, 5439, 8056, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 643, 5842, 4338, 500, 4083, 8075, 8076, 5460, 8077, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 8053 (renderDefaultEmpty)
+// Module 8074 (renderDefaultEmpty)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
@@ -1436,7 +1436,7 @@ let closure_21 = importAllResult.memo(function _FastListSectionRenderer(disableW
   fastListInstance = children(section, fastListInstance);
   section = [fastListInstance, false];
   obj1[3] = section;
-  closure_10(importDefault(5821), obj1);
+  closure_10(importDefault(5842), obj1);
 });
 let closure_22 = importAllResult.memo(function _FastListSectionFooterRenderer(disableWrapper) {
   let children;
@@ -1464,7 +1464,7 @@ let closure_22 = importAllResult.memo(function _FastListSectionFooterRenderer(di
   children = children(section, fastListInstance);
   section = [children, false];
   obj1[2] = section;
-  closure_10(importDefault(5821), obj1);
+  closure_10(importDefault(5842), obj1);
 });
 let closure_23 = importAllResult.memo(function _FastListItemRenderer(disableWrapper) {
   let children;
@@ -1497,7 +1497,7 @@ let closure_23 = importAllResult.memo(function _FastListItemRenderer(disableWrap
   }
   const items = [childrenResult1, false];
   obj[2] = items;
-  childrenResult = closure_10(importDefault(5821), obj);
+  childrenResult = closure_10(importDefault(5842), obj);
 });
 let closure_24 = importAllResult.memo(function _FastListHeaderFooterRenderer(disableWrapper) {
   let children;
@@ -1524,7 +1524,7 @@ let closure_24 = importAllResult.memo(function _FastListHeaderFooterRenderer(dis
   children = children(fastListInstance);
   fastListInstance = [children, false];
   obj1[3] = fastListInstance;
-  closure_10(importDefault(5821), obj1);
+  closure_10(importDefault(5842), obj1);
 });
 let closure_25 = importAllResult.memo(function _FastListSpacer(layoutSize) {
   layoutSize = layoutSize.layoutSize;
@@ -1536,7 +1536,7 @@ let closure_25 = importAllResult.memo(function _FastListSpacer(layoutSize) {
     style = { height: null };
     style[0] = layoutSize;
   }
-  return closure_11(importDefault(5821), { collapsable: false, style });
+  return closure_11(importDefault(5842), { collapsable: false, style });
 });
 let c26 = 1000;
 let c27 = 0.5;
@@ -2758,14 +2758,14 @@ prototype4["render"] = function render() {
     removeClippedSubviews = obj.isAndroid();
   }
   if (props.inActionSheet) {
-    let BottomSheetScrollView = require(5439) /* BottomSheetModal */.BottomSheetScrollView;
+    let BottomSheetScrollView = require(5460) /* BottomSheetModal */.BottomSheetScrollView;
   } else {
     BottomSheetScrollView = closure_8;
   }
   obj = {};
   const merged = Object.assign(callback(props, closure_3));
   obj.accessibilityRole = "list";
-  obj.ref = importDefault(8056)(self.scrollView);
+  obj.ref = importDefault(8077)(self.scrollView);
   obj.scrollEventThrottle = 16;
   obj.contentOffset = self.state.initialContentOffset;
   ({ handleScroll: obj2.onScroll, handleLayout: obj2.onLayout, handleMomentumScrollEnd: obj2.onMomentumScrollEnd, handleScrollBeginDrag: obj2.onScrollBeginDrag } = self);

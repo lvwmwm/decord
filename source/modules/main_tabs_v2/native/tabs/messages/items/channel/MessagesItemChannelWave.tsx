@@ -1,8 +1,8 @@
-// Module ID: 15241
-// Function ID: 15242
-// Dependencies: [19, 21, 4755, 1236, 4338, 2]
+// Module ID: 15255
+// Function ID: 15256
+// Dependencies: [19, 21, 4777, 1236, 4338, 2]
 
-// Module 15241
+// Module 15255
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -22,7 +22,7 @@ const memoResult = require("noop").memo(function MessagesItemChannelWave(hasName
   }
   obj[2] = str;
   obj[4] = hasNameplate.wavePressed;
-  return jsx(require(4755) /* Button */.Button, { text: null, icon: null, variant: null, size: "sm", onPress: null });
+  return jsx(require(4777) /* Button */.Button, { text: null, icon: null, variant: null, size: "sm", onPress: null });
 });
 const result = require("Button").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelWave.tsx");
 

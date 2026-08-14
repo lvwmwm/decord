@@ -1,10 +1,10 @@
-// Module ID: 5871
-// Function ID: 5872
+// Module ID: 5892
+// Function ID: 5893
 // Name: _fetchWebAuthnConditionalChallenge
-// Dependencies: [5, 676, 530, 709, 5168, 663, 2]
+// Dependencies: [5, 676, 530, 709, 4562, 663, 2]
 // Exports: clearWebAuthnRegisterTrigger, deleteWebAuthnCredential, editWebAuthnCredential, fetchWebAuthnConditionalChallenge, fetchWebAuthnCredentials, fetchWebAuthnPasswordlessChallenge, finishRegisterWebAuthnCredential, startRegisterWebAuthnCredential, triggerWebAuthnRegister
 
-// Module 5871 (_fetchWebAuthnConditionalChallenge)
+// Module 5892 (_fetchWebAuthnConditionalChallenge)
 import ImpressionNames from "ImpressionNames";
 import { Endpoints } from "ME";
 
@@ -254,7 +254,7 @@ function _finishRegisterWebAuthnCredential() {
               c5 = 1;
               c6 = 1;
               let obj4 = { value: null, done: false };
-              obj4[0] = callback(5168).post(obj1);
+              obj4[0] = callback(4562).post(obj1);
               return obj4;
             }
           } else if (arg0 === 1) {

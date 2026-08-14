@@ -1,10 +1,10 @@
-// Module ID: 10861
-// Function ID: 10862
+// Module ID: 10877
+// Function ID: 10878
 // Name: TransferFooter
-// Dependencies: [5, 32, 19, 17, 4359, 676, 21, 4342, 712, 5368, 4755, 1236, 10862, 4338, 10863, 589, 10853, 38, 10860, 4310, 1231, 1297, 10386, 5437, 5436, 5439, 2]
+// Dependencies: [5, 32, 19, 17, 4359, 676, 21, 4342, 712, 5389, 4777, 1236, 10878, 4338, 10879, 589, 10869, 38, 10876, 4310, 1231, 1297, 10400, 5458, 5457, 5460, 2]
 // Exports: default
 
-// Module 10861 (TransferFooter)
+// Module 10877 (TransferFooter)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
@@ -35,13 +35,13 @@ function TransferFooter(arg0) {
   obj[2] = onPress;
   const intl = tmp3(1236).intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.FYi3ry);
-  obj[2] = closure_12(require(4755) /* Button */.Button, obj);
-  return closure_12(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj[2] = closure_12(require(4777) /* Button */.Button, obj);
+  return closure_12(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 function DeviceOption(children) {
   const tmp = createCacheKey();
   let obj = { style: tmp.deviceOption, children: null };
-  obj = { style: tmp.deviceIcon, source: importDefault(10862) };
+  obj = { style: tmp.deviceIcon, source: importDefault(10878) };
   const items = [callback(closure_8, obj), ];
   obj = { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "text-md/bold", children: children.name };
   items[1] = callback(require(4338) /* Text */.Text, obj);
@@ -51,7 +51,7 @@ function DeviceOption(children) {
 function EmptyState() {
   const tmp = createCacheKey();
   let obj = { style: tmp.emptyContainer, children: null };
-  obj = { source: importDefault(10863), style: tmp.emptyArt };
+  obj = { source: importDefault(10879), style: tmp.emptyArt };
   const items = [callback(closure_8, obj), , ];
   obj = { style: tmp.emptyHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -129,7 +129,7 @@ export default function GameConsoleListActionSheet(arg0) {
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(10860).transferToPlaystationWithAlert(outer1_0, dependencyMap[outer1_4], v0);
+              obj1[0] = outer1_0(10876).transferToPlaystationWithAlert(outer1_0, dependencyMap[outer1_4], v0);
               return obj1;
             }
           } else if (arg0 === 1) {

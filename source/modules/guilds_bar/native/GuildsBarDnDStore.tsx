@@ -1,10 +1,10 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15497
+// Function ID: 15498
 // Name: withEqualityFn
-// Dependencies: [5196, 700, 4083, 705, 1208, 3974, 2]
+// Dependencies: [5217, 700, 4083, 705, 1208, 3974, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 15479 (withEqualityFn)
+// Module 15497 (withEqualityFn)
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import identity from "identity";
 
@@ -13,7 +13,7 @@ let c5 = -1;
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   const _require = arg0;
   let closure_1 = arg1;
-  let obj = { dragSpecs: "Boolean", overSpecs: "disabled", dropSpecs: "isArray", dragRegion: null, gestureState: null, dragDropInProgress: null, listInsets: "user", scrollPosition: "installation", windowSize: "<string:1166496000>", setStateShallow: "The operation couldn\u2019t be completed. (com.apple.CallKit.error.requesttransaction", dropStart: "Request has been terminated", dropComplete: "couldn't execute statement: database is disabled" };
+  let obj = { dragSpecs: "Boolean", overSpecs: "disabled", dropSpecs: "isArray", dragRegion: null, gestureState: null, dragDropInProgress: null, listInsets: 2997, scrollPosition: 2998, windowSize: 2999, setStateShallow: 3000, dropStart: 3001, dropComplete: "woman_frowning" };
   obj[3] = _require(4083).makeMutable({ min: 0, max: 0 });
   const obj2 = _require(4083);
   obj[4] = _require(4083).makeMutable(obj);
@@ -89,7 +89,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
     obj[2] = obj;
     obj.addBreadcrumb(obj);
     if (null != dropSpecs) {
-      callback(outer1_2[3]).batchUpdates(() => callback({ dropSpecs: "sa" }));
+      callback(outer1_2[3]).batchUpdates(() => callback({ dropSpecs: "title" }));
       const _clearTimeout = clearTimeout;
       clearTimeout(outer1_5);
       if (null == dragSpecs) {

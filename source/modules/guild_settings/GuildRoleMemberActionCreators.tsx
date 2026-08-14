@@ -1,10 +1,10 @@
-// Module ID: 5399
-// Function ID: 5400
+// Module ID: 5420
+// Function ID: 5421
 // Name: _fetchMemberCountsFromBackend
-// Dependencies: [5, 5398, 676, 709, 530, 1405, 5272, 2]
+// Dependencies: [5, 5419, 676, 709, 530, 1405, 5293, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 5399 (_fetchMemberCountsFromBackend)
+// Module 5420 (_fetchMemberCountsFromBackend)
 import priv from "priv";
 import getRoleMemberCount from "getRoleMemberCount";
 import { Endpoints } from "ME";

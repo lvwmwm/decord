@@ -1,9 +1,9 @@
-// Module ID: 15881
-// Function ID: 15882
+// Module ID: 15899
+// Function ID: 15900
 // Name: MuteButton
-// Dependencies: [19, 17, 3990, 3991, 1391, 4540, 8444, 9718, 676, 8445, 21, 4342, 11803, 712, 4065, 589, 1499, 7796, 1236, 9782, 8103, 11730, 11791, 4558, 6050, 9715, 8061, 6055, 15882, 4689, 4083, 4343, 15780, 4346, 11048, 4887, 5314, 2]
+// Dependencies: [19, 17, 3990, 3991, 1391, 4550, 8466, 9729, 676, 8467, 21, 4342, 11819, 712, 4065, 589, 1499, 7817, 1236, 9793, 8124, 11746, 11807, 4580, 6071, 9726, 8082, 6076, 15900, 4711, 4083, 4343, 15798, 4346, 11064, 4909, 5335, 2]
 
-// Module 15881 (MuteButton)
+// Module 15899 (MuteButton)
 import importAllResult from "registerAsset";
 import { View } from "IconButton";
 import initialize from "initialize";
@@ -56,8 +56,8 @@ function MuteButton(channelId) {
   obj[1] = callback;
   obj[2] = token1;
   obj[3] = token;
-  obj[4] = tmp5(stateFromStores ? 9782 : 8103);
-  return closure_15(channelId(7796).IconButton, obj, constants.MUTE);
+  obj[4] = tmp5(stateFromStores ? 9793 : 8124);
+  return closure_15(channelId(7817).IconButton, obj, constants.MUTE);
 }
 function SearchButton(channelId) {
   channelId = channelId.channelId;
@@ -83,8 +83,8 @@ function SearchButton(channelId) {
   let obj = channelId(589);
   const items1 = [ensureGuildLoaded];
   const stateFromStores = obj.useStateFromStores(items1, () => outer1_7.getChannel(channelId));
-  const shouldHideChannelContent = channelId(4558).useShouldHideChannelContent(stateFromStores);
-  let obj2 = channelId(4558);
+  const shouldHideChannelContent = channelId(4580).useShouldHideChannelContent(stateFromStores);
+  let obj2 = channelId(4580);
   const token = channelId(4065).useToken(importDefault(712).modules.mobile.CHANNEL_DETAILS_NAV_ICON_BUTTON_SIZE);
   const obj3 = channelId(4065);
   const token1 = channelId(4065).useToken(importDefault(712).modules.mobile.CHANNEL_DETAILS_NAV_ICON_BUTTON_VARIANT);
@@ -94,9 +94,9 @@ function SearchButton(channelId) {
   obj[1] = callback;
   obj[2] = token1;
   obj[3] = token;
-  obj[4] = importDefault(6050);
+  obj[4] = importDefault(6071);
   obj[5] = shouldHideChannelContent;
-  return callback2(channelId(7796).IconButton, obj, constants.SEARCH);
+  return callback2(channelId(7817).IconButton, obj, constants.SEARCH);
 }
 function SettingsButton(channel) {
   channel = channel.channel;
@@ -130,8 +130,8 @@ function SettingsButton(channel) {
   obj[1] = callback;
   obj[3] = token1;
   obj[4] = token;
-  obj[5] = navigation(6055);
-  return callback2(channel(7796).IconButton, obj, constants.SETTINGS);
+  obj[5] = navigation(6076);
+  return callback2(channel(7817).IconButton, obj, constants.SETTINGS);
 }
 function NavigationHeader(channel) {
   let onBackPress;
@@ -261,7 +261,7 @@ let closure_24 = importAllResult.forwardRef((cleanUp, ref) => {
   cleanUp = cleanUp.cleanUp;
   let dependencyMap;
   ({ onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, transitionState } = cleanUp);
-  const tmp2 = transitionState !== width(4689).TransitionStates.YEETED;
+  const tmp2 = transitionState !== width(4711).TransitionStates.YEETED;
   dependencyMap = tmp2;
   let obj = width(4083);
   class S {
@@ -299,7 +299,7 @@ let closure_24 = importAllResult.forwardRef((cleanUp, ref) => {
   const animatedStyle = obj.useAnimatedStyle(S);
   obj = { style: items, children: null };
   items = [callback4().searchHeader, animatedStyle];
-  obj[1] = callback2(cleanUp(15780), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
+  obj[1] = callback2(cleanUp(15798), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
   return callback2(cleanUp(4083).View, obj);
 });
 let closure_25 = { code: "function ChannelDetailsNavigationBarTsx3(){const{isActive,withTiming,timingFast,runOnJS,cleanUp,width}=this.__closure;return{pointerEvents:isActive?'auto':'none',opacity:withTiming(isActive?1:0,timingFast,'animate-always',function(finished){if(finished)runOnJS(cleanUp)();}),width:width};}" };

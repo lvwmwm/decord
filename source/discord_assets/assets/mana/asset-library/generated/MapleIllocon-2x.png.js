@@ -1,9 +1,9 @@
-// Module ID: 6556
-// Function ID: 6557
+// Module ID: 6577
+// Function ID: 6578
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6556 (metadata)
+// Module 6577 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MapleIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/ae8e71858d04acf3b00b1bdf68276aa286a685f108c43525702036873176fc0c.png";

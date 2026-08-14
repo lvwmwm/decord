@@ -1,10 +1,10 @@
-// Module ID: 16106
-// Function ID: 16107
+// Module ID: 16124
+// Function ID: 16125
 // Name: ToastIcon
 // Dependencies: [32, 19, 17, 21, 4342, 712, 4065, 1297, 4338, 2]
 // Exports: default
 
-// Module 16106 (ToastIcon)
+// Module 16124 (ToastIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

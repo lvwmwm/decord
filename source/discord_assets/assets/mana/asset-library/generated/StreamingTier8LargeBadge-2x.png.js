@@ -1,9 +1,9 @@
-// Module ID: 6840
-// Function ID: 6841
+// Module ID: 6861
+// Function ID: 6862
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 6840 (vanityUrl)
+// Module 6861 (vanityUrl)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StreamingTier8LargeBadge-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/c95beeda6ff7440e997e5fcdf2c8c4a13c2fb0b2af822a7a3854a93a3cc6caec.png";

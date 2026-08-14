@@ -1,9 +1,9 @@
-// Module ID: 10856
-// Function ID: 10857
+// Module ID: 10872
+// Function ID: 10873
 // Name: set
-// Dependencies: [2, 10857]
+// Dependencies: [2, 10873]
 
-// Module 10856 (set)
+// Module 10872 (set)
 const result = require("set").fileFinishedImporting("modules/game_console/GameConsoleAlertUtils.tsx");
 
-export { default as default } from "module_10857";
+export { default as default } from "module_10873";

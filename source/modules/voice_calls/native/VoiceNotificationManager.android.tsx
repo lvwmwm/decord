@@ -1,9 +1,9 @@
-// Module ID: 13784
-// Function ID: 13785
+// Module ID: 13796
+// Function ID: 13797
 // Name: processColor
-// Dependencies: [32, 17, 1390, 4383, 4364, 1391, 4393, 4416, 3998, 1922, 676, 712, 7262, 7261, 10895, 9702, 4535, 1236, 4523, 2]
+// Dependencies: [32, 17, 1390, 4383, 4364, 1391, 4393, 4416, 3998, 1922, 676, 712, 7284, 7283, 10911, 9713, 4535, 1236, 4523, 2]
 
-// Module 13784 (processColor)
+// Module 13796 (processColor)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "getSystemLocale";
 import participantFromServer from "participantFromServer";
@@ -25,7 +25,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     VoiceNotificationManager = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "catch", isPushToTalk: "crook", embeddedActivity: "curve", isStreaming: "ensnare" };
+    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "cloud_tornado", isPushToTalk: "cloud_with_tornado", embeddedActivity: "tornado", isStreaming: 634126337 };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = outer1_9.getChannelId();
       const state = outer1_9.getState();
@@ -230,7 +230,7 @@ prototype["terminate"] = function terminate() {
 };
 let set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "catch", isPushToTalk: "crook", embeddedActivity: "curve", isStreaming: "ensnare" };
+set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "cloud_tornado", isPushToTalk: "cloud_with_tornado", embeddedActivity: "tornado", isStreaming: 634126337 };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = outer1_9.getChannelId();
   const state = outer1_9.getState();

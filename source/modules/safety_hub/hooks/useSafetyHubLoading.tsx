@@ -1,10 +1,10 @@
-// Module ID: 14062
-// Function ID: 14063
+// Module ID: 14075
+// Function ID: 14076
 // Name: useIsSafetyHubLoading
-// Dependencies: [11332, 589, 2]
+// Dependencies: [11348, 589, 2]
 // Exports: default
 
-// Module 14062 (useIsSafetyHubLoading)
+// Module 14075 (useIsSafetyHubLoading)
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 
 const require = arg1;

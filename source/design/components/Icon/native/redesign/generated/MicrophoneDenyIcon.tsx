@@ -1,10 +1,10 @@
-// Module ID: 9234
-// Function ID: 9235
+// Module ID: 9248
+// Function ID: 9249
 // Name: MicrophoneDenyIcon
-// Dependencies: [19, 21, 712, 4064, 9235, 2]
+// Dependencies: [19, 21, 712, 4064, 9249, 2]
 // Exports: MicrophoneDenyIcon
 
-// Module 9234 (MicrophoneDenyIcon)
+// Module 9248 (MicrophoneDenyIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const MicrophoneDenyIcon = function MicrophoneDenyIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9235) /* registerAsset */;
+  obj[0] = require(9249) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

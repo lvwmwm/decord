@@ -1,10 +1,10 @@
-// Module ID: 16328
-// Function ID: 16329
+// Module ID: 16346
+// Function ID: 16347
 // Name: PTTButton
-// Dependencies: [32, 19, 4359, 1982, 1218, 1391, 4393, 3989, 1922, 4361, 21, 3, 4342, 589, 6003, 10844, 10875, 11704, 4083, 16246, 4311, 10273, 5467, 16329, 16330, 1236, 10846, 4338, 9234, 10845, 2]
+// Dependencies: [32, 19, 4359, 1982, 1218, 1391, 4393, 3989, 1922, 4361, 21, 3, 4342, 589, 6024, 10860, 10891, 11720, 4083, 16264, 4311, 10287, 5488, 16347, 16348, 1236, 10862, 4338, 9248, 10861, 2]
 // Exports: MicButton, PTTButton
 
-// Module 16328 (PTTButton)
+// Module 16346 (PTTButton)
 import _slicedToArray from "_slicedToArray";
 import useControlsLock from "useControlsLock";
 import set from "set";

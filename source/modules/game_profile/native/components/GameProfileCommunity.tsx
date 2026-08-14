@@ -1,10 +1,10 @@
-// Module ID: 9381
-// Function ID: 9382
+// Module ID: 9395
+// Function ID: 9396
 // Name: GameProfileCommunityServer
-// Dependencies: [5, 32, 19, 17, 1393, 21, 4342, 712, 9336, 4326, 4331, 9382, 589, 9333, 6000, 9383, 1430, 4338, 1236, 5819, 9313, 1297, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 1393, 21, 4342, 712, 9350, 4326, 4331, 9396, 589, 9347, 6021, 9397, 1430, 4338, 1236, 5840, 9327, 1297, 4777, 2]
 // Exports: default
 
-// Module 9381 (GameProfileCommunityServer)
+// Module 9395 (GameProfileCommunityServer)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import GuildIconSizes from "GuildIconSizes";

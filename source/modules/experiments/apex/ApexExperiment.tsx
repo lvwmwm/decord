@@ -50,8 +50,8 @@ function useUnitId(arg0, guildId) {
 }
 const result = require("initialize").fileFinishedImporting("modules/experiments/apex/ApexExperiment.tsx");
 
-export default function createApexExperiment(arg0) {
-  return importDefault(1369)(arg0, initialize, getUnitId, useUnitId);
+export default function createApexExperiment(ApexExperiment) {
+  return importDefault(1369)(ApexExperiment, initialize, getUnitId, useUnitId);
 };
 export const ApexExperiment = require("logger").ApexExperiment;
 export { getUnitId };

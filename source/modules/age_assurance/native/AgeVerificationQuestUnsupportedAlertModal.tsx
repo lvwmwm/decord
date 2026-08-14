@@ -1,10 +1,10 @@
-// Module ID: 7863
-// Function ID: 7864
+// Module ID: 7884
+// Function ID: 7885
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: [19, 21, 4688, 1236, 2821, 4688, 2]
+// Dependencies: [19, 21, 4710, 1236, 2821, 4710, 2]
 // Exports: default
 
-// Module 7863 (AgeVerificationQuestUnsupportedAlertModal)
+// Module 7884 (AgeVerificationQuestUnsupportedAlertModal)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -21,7 +21,7 @@ export default function AgeVerificationQuestUnsupportedAlertModal() {
   obj = { text: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl3.string(require(1236) /* getSystemLocale */.t["NX+WJN"]);
-  obj[0] = jsx(require(4688) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "got-it");
-  obj[2] = jsx(require(4688) /* getAlertModalItemKey */.AlertActions, { text: null });
-  return jsx(require(4688) /* getAlertModalItemKey */.AlertModal, { text: null });
+  obj[0] = jsx(require(4710) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "got-it");
+  obj[2] = jsx(require(4710) /* getAlertModalItemKey */.AlertActions, { text: null });
+  return jsx(require(4710) /* getAlertModalItemKey */.AlertModal, { text: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 11554
-// Function ID: 11555
+// Module ID: 11570
+// Function ID: 11571
 // Name: AppInThisServer
-// Dependencies: [19, 17, 21, 4342, 712, 11532, 1370, 4338, 1236, 4887, 1367, 11495, 8712, 9599, 11500, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 11548, 1370, 4338, 1236, 4909, 1367, 11511, 8726, 9612, 11516, 2]
 // Exports: default
 
-// Module 11554 (AppInThisServer)
+// Module 11570 (AppInThisServer)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ function AppInThisServer(onAppSelected) {
   const tmp3 = application(1367)("AppLauncherInThisServer-native");
   const tmp4 = createCacheKey();
   application = onAppSelected.appItem.application;
-  let obj = onAppSelected(11495);
+  let obj = onAppSelected(11511);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
     accessible: true,
@@ -54,11 +54,11 @@ function AppInThisServer(onAppSelected) {
     obj = { iconSource: null, wrapperStyle: null, iconSize: 36 };
     obj[0] = appLauncherIconSource;
     obj[1] = tmp4.iconContainer;
-    tmp8 = callback(application(11500), obj);
+    tmp8 = callback(application(11516), obj);
   }
   const items1 = [tmp8, callback(onAppSelected(4338).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
   obj[5] = items1;
-  return closure_6(onAppSelected(8712).PressableScale, obj, application.id);
+  return closure_6(onAppSelected(8726).PressableScale, obj, application.id);
 }
 ({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -123,7 +123,7 @@ export default function InThisServerSection(arg0) {
       const intl2 = tmp11(1236).intl;
       obj2[2] = intl2.string(tmp11(1236).t["/qG8v7"]);
       obj1[3] = tmp5(tmp11(4338).Text, obj2);
-      tmp5Result = tmp5(tmp11(4887).PressableOpacity, obj1);
+      tmp5Result = tmp5(tmp11(4909).PressableOpacity, obj1);
     }
     items1[1] = tmp5Result;
     obj[1] = items1;

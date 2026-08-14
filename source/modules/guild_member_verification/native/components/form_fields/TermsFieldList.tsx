@@ -1,10 +1,10 @@
-// Module ID: 5371
-// Function ID: 5372
+// Module ID: 5392
+// Function ID: 5393
 // Name: TermsFieldListItem
-// Dependencies: [19, 17, 21, 4342, 712, 4338, 4332, 1236, 5372, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4338, 4332, 1236, 5393, 2]
 // Exports: default
 
-// Module 5371 (TermsFieldListItem)
+// Module 5392 (TermsFieldListItem)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

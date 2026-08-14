@@ -1,10 +1,10 @@
-// Module ID: 4832
-// Function ID: 4833
+// Module ID: 4854
+// Function ID: 4855
 // Name: isValidFormResponse
-// Dependencies: [4833, 676, 4168, 1370, 2]
+// Dependencies: [4855, 676, 4168, 1370, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 4832 (isValidFormResponse)
+// Module 4854 (isValidFormResponse)
 import items from "items";
 import { GuildFeatures } from "ME";
 

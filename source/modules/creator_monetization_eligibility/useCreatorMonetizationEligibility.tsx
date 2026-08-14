@@ -1,10 +1,10 @@
-// Module ID: 16871
-// Function ID: 16872
+// Module ID: 16887
+// Function ID: 16888
 // Name: useCreatorMonetizationEligibility
-// Dependencies: [5, 32, 19, 16841, 16844, 4242, 2]
+// Dependencies: [5, 32, 19, 16857, 16860, 4242, 2]
 // Exports: default
 
-// Module 16871 (useCreatorMonetizationEligibility)
+// Module 16887 (useCreatorMonetizationEligibility)
 import prototype from "prototype";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

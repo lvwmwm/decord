@@ -1,9 +1,9 @@
-// Module ID: 15233
-// Function ID: 15234
+// Module ID: 15247
+// Function ID: 15248
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
-// Dependencies: [19, 17, 4431, 4357, 3998, 1979, 4540, 1922, 676, 21, 4342, 712, 589, 1367, 15234, 8863, 500, 4355, 4353, 9715, 4887, 9082, 9440, 15235, 4039, 8342, 15236, 8350, 15237, 2]
+// Dependencies: [19, 17, 4431, 4357, 3998, 1979, 4550, 1922, 676, 21, 4342, 712, 589, 1367, 15248, 8877, 500, 4355, 4353, 9726, 4909, 9096, 9454, 15249, 4039, 8364, 15250, 8372, 15251, 2]
 
-// Module 15233 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+// Module 15247 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
 import importAllResult from "openChannelLongPressActionSheet";
 import { View } from "module_4355";
 import sortActivity from "sortActivity";
@@ -99,7 +99,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelBase(channel
       obj[0] = _undefined.getStatus(obj.getRecipientId());
       obj[1] = activities;
     } else {
-      obj = { status: "isArray", activities: "accessibilityRole" };
+      obj = { status: "r", activities: "accessibilityRole" };
     }
     return obj;
   });

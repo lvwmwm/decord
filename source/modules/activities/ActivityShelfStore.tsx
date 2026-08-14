@@ -1,9 +1,9 @@
-// Module ID: 10579
-// Function ID: 10580
+// Module ID: 10595
+// Function ID: 10596
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 10579 (initialize)
+// Module 10595 (initialize)
 import { PersistedStore } from "initialize";
 
 let closure_0 = { usageByApplicationId: {}, shelfOrder: [] };

@@ -1,10 +1,10 @@
-// Module ID: 11803
-// Function ID: 11804
+// Module ID: 11819
+// Function ID: 11820
 // Name: SEARCH_BAR_HEIGHT
-// Dependencies: [19, 17, 21, 4342, 712, 6049, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 6070, 4338, 1236, 2]
 // Exports: SearchButtonContent
 
-// Module 11803 (SEARCH_BAR_HEIGHT)
+// Module 11819 (SEARCH_BAR_HEIGHT)
 import "noop";
 import { Pressable } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export const SearchButtonContent = function SearchButtonContent(panelVariant) {
   const merged1 = Object.assign(merged);
   const items = [tmp2.searchButton, panelVariant.panelVariant ? tmp2.roundedCornersAlt : tmp2.roundedCorners, merged.style];
   obj.style = items;
-  const items1 = [callback(require(6049) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { size: "xs" }), ];
+  const items1 = [callback(require(6070) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { size: "xs" }), ];
   obj = { variant: "text-sm/medium", color: "text-muted", style: tmp2.text, maxFontSizeMultiplier: 2, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t["5h0QOP"]);

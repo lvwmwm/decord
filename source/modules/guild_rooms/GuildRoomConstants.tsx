@@ -1,10 +1,10 @@
-// Module ID: 13089
-// Function ID: 13090
+// Module ID: 4543
+// Function ID: 4544
 // Name: getName
-// Dependencies: [1236, 2205, 13090, 13091, 13092, 13093, 2]
+// Dependencies: [1236, 2205, 4544, 4545, 4546, 4547, 2]
 // Exports: getBlurredBackgroundScale
 
-// Module 13089 (getName)
+// Module 4543 (getName)
 import { ytIYuY as IE3e0y } from "messagesProxy";
 import { ytIYuY as IE3e0y } from "messagesProxy";
 import { ytIYuY as IE3e0y } from "messagesProxy";

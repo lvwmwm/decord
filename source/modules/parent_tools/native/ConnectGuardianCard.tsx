@@ -1,10 +1,10 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14206
+// Function ID: 14207
 // Name: ConnectGuardianCard
-// Dependencies: [19, 17, 1922, 7045, 21, 4342, 712, 647, 6950, 14189, 14190, 5796, 4061, 1236, 2303, 4753, 9148, 4338, 4931, 4755, 12301, 5191, 2]
+// Dependencies: [19, 17, 1922, 7067, 21, 4342, 712, 647, 6971, 14202, 14203, 5817, 4061, 1236, 2303, 4775, 9162, 4338, 4953, 4777, 12319, 5212, 2]
 // Exports: ConnectGuardianCard
 
-// Module 14193 (ConnectGuardianCard)
+// Module 14206 (ConnectGuardianCard)
 import Button from "Button";
 import { View } from "Text";
 import mergeGuildAvatar from "mergeGuildAvatar";

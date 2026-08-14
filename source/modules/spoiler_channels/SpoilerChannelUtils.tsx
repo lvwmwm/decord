@@ -1,10 +1,10 @@
-// Module ID: 5987
-// Function ID: 5988
+// Module ID: 6008
+// Function ID: 6009
 // Name: isChannelSpoilerGated
-// Dependencies: [1391, 5988, 589, 2]
+// Dependencies: [1391, 6009, 589, 2]
 // Exports: shouldShowSpoilerGateForChannelId, useGetSpoilerGatingChannelId, useIsChannelSpoilerGated, useShouldShowSpoilerGateForChannelId
 
-// Module 5987 (isChannelSpoilerGated)
+// Module 6008 (isChannelSpoilerGated)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import initialize from "initialize";
 

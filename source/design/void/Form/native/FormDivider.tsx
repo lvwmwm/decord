@@ -1,10 +1,10 @@
-// Module ID: 7454
-// Function ID: 7455
+// Module ID: 7475
+// Function ID: 7476
 // Name: Divider
-// Dependencies: [19, 17, 676, 21, 4342, 712, 1367, 4072, 5790, 4191, 5413, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 1367, 4072, 5811, 4191, 5434, 2]
 // Exports: default
 
-// Module 7454 (Divider)
+// Module 7475 (Divider)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -45,7 +45,7 @@ export default function Divider(outer) {
   let obj = require(4072) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ theme, primaryColor } = themeContext);
-  const profileThemeValues = require(5790) /* useProfileThemeValues */.useProfileThemeValues(theme);
+  const profileThemeValues = require(5811) /* useProfileThemeValues */.useProfileThemeValues(theme);
   let tmp7 = null;
   if (tmp6) {
     obj = { backgroundColor: null };
@@ -54,7 +54,7 @@ export default function Divider(outer) {
     const tmp3Result = tmp3(4191);
   }
   let tmp10Result = null;
-  if (!React.useContext(require(5413) /* context */.RedesignCompatContext)) {
+  if (!React.useContext(require(5434) /* context */.RedesignCompatContext)) {
     const items = [flag ? tmp2.dividerOuter : tmp2.divider, , , ];
     if (flag2) {
       flag2 = tmp2.dividerHasIcon;

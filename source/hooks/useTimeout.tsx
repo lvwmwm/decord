@@ -1,10 +1,10 @@
-// Module ID: 7460
-// Function ID: 7461
+// Module ID: 7481
+// Function ID: 7482
 // Name: useTimeout
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 7460 (useTimeout)
+// Module 7481 (useTimeout)
 import noop from "noop";
 
 let c0;

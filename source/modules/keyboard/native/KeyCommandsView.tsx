@@ -1,10 +1,10 @@
-// Module ID: 13896
-// Function ID: 13897
+// Module ID: 13908
+// Function ID: 13909
 // Name: KeyCommandsView
-// Dependencies: [32, 19, 21, 4342, 13897, 2]
+// Dependencies: [32, 19, 21, 4342, 13909, 2]
 // Exports: default, useKeyCommands
 
-// Module 13896 (KeyCommandsView)
+// Module 13908 (KeyCommandsView)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -59,7 +59,7 @@ export default function KeyCommandsView(style) {
       found.onKeyCommand(nativeEvent);
     }
   };
-  obj[1] = jsx(first(13897), {});
+  obj[1] = jsx(first(13909), {});
   return <redux.Provider />;
 };
 export const useKeyCommands = function useKeyCommands(memo) {

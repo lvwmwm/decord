@@ -1,10 +1,10 @@
-// Module ID: 12886
-// Function ID: 12887
+// Module ID: 12904
+// Function ID: 12905
 // Name: getViewerProductId
-// Dependencies: [19, 6935, 5899, 1924, 6918, 5902, 500, 5896, 4022, 589, 2]
+// Dependencies: [19, 6956, 5920, 1924, 6939, 5923, 500, 5917, 4022, 589, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12886 (getViewerProductId)
+// Module 12904 (getViewerProductId)
 import noop from "noop";
 import { useNativeCheckoutStore } from "context";
 import updateProduct from "updateProduct";
@@ -16,11 +16,11 @@ function getViewerProductId(subscription) {
     return null;
   } else {
     try {
-      const productIdFromSubscription = require(6918) /* getPremiumBundledItemsFromProductId */.getProductIdFromSubscription(subscription, false);
+      const productIdFromSubscription = require(6939) /* getPremiumBundledItemsFromProductId */.getProductIdFromSubscription(subscription, false);
       try {
-        const productIdFromSubscription1 = tmp3(6918).getProductIdFromSubscription(subscription, true);
-        const tmp8 = tmp3(5902).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
-        const tmp10 = tmp3(5902).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
+        const productIdFromSubscription1 = tmp3(6939).getProductIdFromSubscription(subscription, true);
+        const tmp8 = tmp3(5923).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+        const tmp10 = tmp3(5923).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
         if (null != tmp8) {
           if (null != tmp10) {
             if (tmp8.numPremiumGuild === tmp10.numPremiumGuild) {
@@ -30,11 +30,11 @@ function getViewerProductId(subscription) {
           }
         }
         tmp11 = productIdFromSubscription;
-        const tmp3Result = tmp3(6918);
+        const tmp3Result = tmp3(6939);
       } catch (err) {
         return tmp2;
       }
-      const obj = require(6918) /* getPremiumBundledItemsFromProductId */;
+      const obj = require(6939) /* getPremiumBundledItemsFromProductId */;
     } catch (err) {
       return tmp;
     }

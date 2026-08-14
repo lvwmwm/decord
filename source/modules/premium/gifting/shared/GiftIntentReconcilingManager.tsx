@@ -1,9 +1,9 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16640
+// Function ID: 16641
 // Name: onPostConnectionOpen
-// Dependencies: [4563, 1340, 1391, 8223, 676, 687, 5301, 584, 7369, 709, 6965, 2]
+// Dependencies: [4585, 1340, 1391, 8244, 676, 687, 5322, 584, 7391, 709, 6986, 2]
 
-// Module 16627 (onPostConnectionOpen)
+// Module 16640 (onPostConnectionOpen)
 import dropChannelIfEmpty from "dropChannelIfEmpty";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -93,8 +93,8 @@ prototype["attemptReconcileFetch"] = function attemptReconcileFetch() {
   const serverDismissalTimestampMs = this.getServerDismissalTimestampMs();
   if (!tmp2) {
     self.isReconciling = true;
-    const andReconcileGiftIntentDismissals = require(7369) /* fetchAndReconcileGiftIntentDismissals */.fetchAndReconcileGiftIntentDismissals(serverDismissalTimestampMs);
-    const obj = require(7369) /* fetchAndReconcileGiftIntentDismissals */;
+    const andReconcileGiftIntentDismissals = require(7391) /* fetchAndReconcileGiftIntentDismissals */.fetchAndReconcileGiftIntentDismissals(serverDismissalTimestampMs);
+    const obj = require(7391) /* fetchAndReconcileGiftIntentDismissals */;
   }
 };
 prototype["onReconcileSuccess"] = function onReconcileSuccess(dismissals) {
@@ -203,7 +203,7 @@ prototype["trySendGiftingPromptSystemMessage"] = function trySendGiftingPromptSy
     this.heldGiftingPromptSystemMessage = true;
     let flag = false;
   } else {
-    let obj = importDefault(6965);
+    let obj = importDefault(6986);
     obj = { giftIntentType: null, recipientUserId: null, giftIntentSecondaryAction: null };
     obj[0] = FRIEND_ANNIVERSARY;
     obj[1] = closure_0;

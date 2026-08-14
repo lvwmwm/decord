@@ -1,9 +1,9 @@
-// Module ID: 13036
-// Function ID: 13037
+// Module ID: 13054
+// Function ID: 13055
 // Name: harvestType
 // Dependencies: [589, 709, 2]
 
-// Module 13036 (harvestType)
+// Module 13054 (harvestType)
 import { Store } from "initialize";
 
 let c0 = false;

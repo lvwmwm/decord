@@ -1,10 +1,10 @@
-// Module ID: 7668
-// Function ID: 7669
+// Module ID: 7689
+// Function ID: 7690
 // Name: getIllustrationSource
 // Dependencies: [4072, 2]
 // Exports: getIllustrationSource, useIllustrationSource
 
-// Module 7668 (getIllustrationSource)
+// Module 7689 (getIllustrationSource)
 const result = require("set").fileFinishedImporting("design/components/Illustration/native/index.tsx");
 
 export const getIllustrationSource = function getIllustrationSource(theme, light) {

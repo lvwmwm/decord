@@ -1,10 +1,10 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 9900
+// Function ID: 9901
 // Name: NotificationSettingsMessageUnread
-// Dependencies: [19, 17, 21, 4342, 712, 9883, 4338, 1236, 4887, 9890, 9881, 4310, 9892, 2007, 9875, 9894, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 9894, 4338, 1236, 4909, 9901, 9892, 4310, 9903, 2007, 9886, 9905, 2]
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 9889 (NotificationSettingsMessageUnread)
+// Module 9900 (NotificationSettingsMessageUnread)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ const require = arg1;
 function NotificationSettingsMessageUnread(onPress) {
   const _require = onPress;
   const tmp = createCacheKey();
-  let obj = _require(9883);
+  let obj = _require(9894);
   const unreadSelectOptions = obj.getUnreadSelectOptions();
   const found = unreadSelectOptions.find((value) => value.value === onPress.setting);
   obj = { style: onPress.style, children: null };
@@ -33,7 +33,7 @@ function NotificationSettingsMessageUnread(onPress) {
   const items1 = [callback2(View, obj), ];
   const obj3 = { onPress: onPress.onCustomize, activeOpacity: 0.6, children: null };
   const obj4 = { style: tmp.card, children: null };
-  const items2 = [callback(importDefault(9890), { unreadSetting: onPress.setting }), , ];
+  const items2 = [callback(importDefault(9901), { unreadSetting: onPress.setting }), , ];
   const obj6 = { variant: "text-sm/medium", style: tmp.label, children: null };
   let str;
   if (found != null) {
@@ -50,10 +50,10 @@ function NotificationSettingsMessageUnread(onPress) {
   const items3 = [intl3.string(_require(1236).t.yxiV9W), " "];
   obj8[3] = items3;
   obj7[1] = callback2(_require(4338).Text, obj8);
-  items2[2] = callback(_require(4887).PressableOpacity, obj7);
+  items2[2] = callback(_require(4909).PressableOpacity, obj7);
   obj4[1] = items2;
   obj3[2] = callback2(View, obj4);
-  items1[1] = callback(_require(4887).PressableOpacity, obj3);
+  items1[1] = callback(_require(4909).PressableOpacity, obj3);
   obj[1] = items1;
   return callback2(View, obj);
 }
@@ -71,7 +71,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/notifications/s
 export const NotificationSettingsGuildMessageUnread = function NotificationSettingsGuildMessageUnread(style) {
   const _require = style;
   let obj = { style: style.style, setting: null, onCustomize: null };
-  obj[1] = _require(9881).useGuildPresetSettings(style.guildId).unread;
+  obj[1] = _require(9892).useGuildPresetSettings(style.guildId).unread;
   obj[2] = function onCustomize() {
     let obj = outer1_1(outer1_2[11]);
     obj = { guildId: style.guildId };
@@ -82,7 +82,7 @@ export const NotificationSettingsGuildMessageUnread = function NotificationSetti
 export const NotificationSettingsChannelMessageUnread = function NotificationSettingsChannelMessageUnread(style) {
   const _require = style;
   let obj = { style: style.style, setting: null, onCustomize: null };
-  obj[1] = _require(9875).useChannelPresetSettings(style.channel).unread;
+  obj[1] = _require(9886).useChannelPresetSettings(style.channel).unread;
   obj[2] = function onCustomize() {
     let obj = outer1_1(outer1_2[11]);
     obj = { channel: style.channel };

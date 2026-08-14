@@ -1,9 +1,9 @@
-// Module ID: 13724
-// Function ID: 13725
+// Module ID: 13736
+// Function ID: 13737
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 13724 (enforcing)
+// Module 13736 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeSystraceModule");

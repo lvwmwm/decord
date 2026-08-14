@@ -1,0 +1,10 @@
+// Module ID: 10253
+// Function ID: 10254
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 10253 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "0b3282394dfcf9fe9a8a6e6a7e39fa15", name: "TagsIcon", type: "png" });

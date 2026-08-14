@@ -1,9 +1,9 @@
-// Module ID: 13455
-// Function ID: 13456
+// Module ID: 13467
+// Function ID: 13468
 // Name: items
-// Dependencies: [19, 21, 10190, 13456, 2]
+// Dependencies: [19, 21, 10204, 13468, 2]
 
-// Module 13455 (items)
+// Module 13467 (items)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -12,12 +12,12 @@ let closure_3 = ["I"];
 const items = [{ name: "all", start: 0, duration: 67 }];
 const forwardRefResult = require("noop").forwardRef((arg0, arg1) => {
   const obj = { dotLottie: null, animation: "all", ref: null, layers: null, markers: null };
-  obj[0] = require(13456) /* registerAsset */;
+  obj[0] = require(13468) /* registerAsset */;
   obj[2] = arg1;
   obj[3] = closure_3;
   obj[4] = items;
   const merged = Object.assign(arg0);
-  return jsx(require(10190) /* LottieIcon */.LottieIcon, { dotLottie: null, animation: "all", ref: null, layers: null, markers: null });
+  return jsx(require(10204) /* LottieIcon */.LottieIcon, { dotLottie: null, animation: "all", ref: null, layers: null, markers: null });
 });
 const result = require("LottieIcon").fileFinishedImporting("design/components/LottieIcon/native/generated/MessagesTabLottie.tsx");
 

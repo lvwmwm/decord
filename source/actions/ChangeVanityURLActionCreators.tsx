@@ -1,8 +1,8 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16819
+// Function ID: 16820
 // Dependencies: [676, 709, 530, 2]
 
-// Module 16803
+// Module 16819
 import { Endpoints } from "ME";
 
 const result = require("sendRequest").fileFinishedImporting("actions/ChangeVanityURLActionCreators.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11269
-// Function ID: 11270
+// Module ID: 11285
+// Function ID: 11286
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1930, 1218, 1990, 1983, 1910, 11270, 5166, 676, 21, 4342, 712, 1236, 5165, 4294, 4338, 4278, 12, 4065, 5041, 11013, 9181, 1297, 1435, 1363, 38, 5768, 5788, 589, 698, 4539, 5272, 5437, 5812, 4755, 4310, 11016, 8832, 2]
+// Dependencies: [32, 19, 17, 1930, 1218, 1990, 1983, 1910, 11286, 5188, 676, 21, 4342, 712, 1236, 5187, 4294, 4338, 4278, 12, 4065, 5063, 11029, 9195, 1297, 1435, 1363, 38, 5789, 5809, 589, 698, 4549, 5293, 5458, 5833, 4777, 4310, 11032, 8846, 2]
 // Exports: default
 
-// Module 11269 (PopoutCheck)
+// Module 11285 (PopoutCheck)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import apply from "apply";
 import get_ActivityIndicator from "Text";
@@ -58,7 +58,7 @@ function PopoutCheck(arg0) {
       }
     }
   } else {
-    obj = require(5165) /* officialApplicationIds */;
+    obj = require(5187) /* officialApplicationIds */;
     const obj1 = { connectionType: null, connectionMetadataField: null, operator: null, value: null };
     obj1[0] = connectionType;
     obj1[1] = connectionMetadataField;

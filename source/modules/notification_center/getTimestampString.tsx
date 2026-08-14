@@ -1,10 +1,10 @@
-// Module ID: 7149
-// Function ID: 7150
+// Module ID: 7171
+// Function ID: 7172
 // Name: getDurationString
 // Dependencies: [1236, 3943, 2]
 // Exports: default, getAbbreviatedFormatter, getFullFormatter
 
-// Module 7149 (getDurationString)
+// Module 7171 (getDurationString)
 function getDurationString(seconds) {
   seconds = seconds.seconds;
   const formatter = seconds.getFormatter();

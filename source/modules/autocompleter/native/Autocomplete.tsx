@@ -1,9 +1,9 @@
-// Module ID: 11819
-// Function ID: 11820
+// Module ID: 11835
+// Function ID: 11836
 // Name: AutocompleteLabel
-// Dependencies: [19, 17, 1910, 3998, 1922, 676, 9961, 21, 4342, 712, 8012, 589, 4187, 1297, 9180, 5414, 5424, 1236, 8275, 4805, 4535, 4338, 5308, 11820, 10001, 4887, 9902, 12, 4376, 1903, 7992, 2]
+// Dependencies: [19, 17, 1910, 3998, 1922, 676, 9972, 21, 4342, 712, 8033, 589, 4187, 1297, 9194, 5435, 5445, 1236, 8297, 4827, 4535, 4338, 5329, 11836, 10012, 4909, 9913, 12, 4376, 1903, 8013, 2]
 
-// Module 11819 (AutocompleteLabel)
+// Module 11835 (AutocompleteLabel)
 import getChannelIcon from "getChannelIcon";
 import { View } from "getSystemLocale";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -20,7 +20,7 @@ let metroImportAll;
 const require = arg1;
 function AutocompleteLabel(text) {
   const tmp = createCacheKey();
-  return callback(require(8012) /* Form */.FormRow.Label, { style: createCacheKey().leading, text: text.text });
+  return callback(require(8033) /* Form */.FormRow.Label, { style: createCacheKey().leading, text: text.text });
 }
 ({ ChannelTypes: metroImportAll, Fonts } = ME);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
@@ -82,8 +82,8 @@ const obj9 = {
     obj[4] = closure_9(user(1297).Avatar, obj);
     const items1 = [, ];
     ({ trailing: arr2[0], username: arr2[1] } = tmp);
-    obj[5] = closure_9(guildId(9180), { user, usernameStyle: items1, discriminatorStyle: tmp.trailing });
-    return closure_9(user(8012).FormRow, obj);
+    obj[5] = closure_9(guildId(9194), { user, usernameStyle: items1, discriminatorStyle: tmp.trailing });
+    return closure_9(user(8033).FormRow, obj);
   },
   Global(arg0) {
     let badge;
@@ -107,8 +107,8 @@ const obj9 = {
       tmp2Result = tmp2(AutocompleteLabel, obj1);
     }
     obj[2] = tmp2Result;
-    obj[3] = closure_9(require(5424) /* TableRowTrailingText */.TableRowTrailingText, { text: description });
-    return closure_9(require(5414) /* TableRowInner */.TableRow, obj);
+    obj[3] = closure_9(require(5445) /* TableRowTrailingText */.TableRowTrailingText, { text: description });
+    return closure_9(require(5435) /* TableRowInner */.TableRow, obj);
   },
   Role(colorString) {
     let name;
@@ -126,14 +126,14 @@ const obj9 = {
     }
     obj = { style: items, text: "@" + name };
     items[1] = tmp5;
-    obj[2] = closure_9(require(8012) /* Form */.FormRow.Label, obj);
+    obj[2] = closure_9(require(8033) /* Form */.FormRow.Label, obj);
     let str = "";
     if (showDescription) {
       const intl = tmp3(1236).intl;
       str = intl.string(tmp3(1236).t.HrUmDH);
     }
-    obj[3] = closure_9(require(5424) /* TableRowTrailingText */.TableRowTrailingText, { text: str });
-    return closure_9(require(5414) /* TableRowInner */.TableRow, obj);
+    obj[3] = closure_9(require(5445) /* TableRowTrailingText */.TableRowTrailingText, { text: str });
+    return closure_9(require(5435) /* TableRowInner */.TableRow, obj);
   },
   Channel(onPress) {
     let category;
@@ -141,9 +141,9 @@ const obj9 = {
     ({ channel, category } = onPress);
     const tmp = createCacheKey();
     if (channel.type === constants.GUILD_CATEGORY) {
-      let channelIconWithGuild = importDefault(8275);
+      let channelIconWithGuild = importDefault(8297);
     } else {
-      let obj = require(4805) /* getChannelIcon */;
+      let obj = require(4827) /* getChannelIcon */;
       channelIconWithGuild = obj.getChannelIconWithGuild(channel, tmp2);
     }
     obj = { source: channelIconWithGuild, style: tmp.autocompleteIcon };
@@ -158,7 +158,7 @@ const obj9 = {
     }
     obj1[3] = name;
     obj[4] = callback(require(4338) /* Text */.Text, obj1);
-    return callback(require(8012) /* Form */.FormRow, obj);
+    return callback(require(8033) /* Form */.FormRow, obj);
   },
   Emoji(url) {
     let name;
@@ -175,7 +175,7 @@ const obj9 = {
       obj = { uri: null };
       obj[0] = url;
       obj[1] = obj;
-      let tmp5 = callback(importDefault(5308), obj);
+      let tmp5 = callback(importDefault(5329), obj);
       let tmp2 = callback;
     } else {
       tmp2 = callback;
@@ -190,15 +190,15 @@ const obj9 = {
     const obj2 = { text: null };
     obj2[0] = ":" + name + ":";
     obj1[3] = tmp2(AutocompleteLabel, obj2);
-    return tmp2(require(8012) /* Form */.FormRow, obj1);
+    return tmp2(require(8033) /* Form */.FormRow, obj1);
   },
   EmojiPremiumUpsell(arg0) {
     let onPress;
     let results;
     ({ results, onPress } = arg0);
     const obj = { onPress, accessibilityRole: "menuitem", label: null };
-    obj[2] = callback(importDefault(11820), { results });
-    return callback(require(8012) /* Form */.FormRow, obj);
+    obj[2] = callback(importDefault(11836), { results });
+    return callback(require(8033) /* Form */.FormRow, obj);
   },
   Choice(arg0) {
     let choice;
@@ -207,7 +207,7 @@ const obj9 = {
     let obj = { onPress, accessibilityRole: "menuitem", label: null };
     obj = { text: choice.displayName };
     obj[2] = callback(AutocompleteLabel, obj);
-    return callback(require(8012) /* Form */.FormRow, obj);
+    return callback(require(8033) /* Form */.FormRow, obj);
   },
   ChoiceLoading() {
     const tmp = createCacheKey();
@@ -217,7 +217,7 @@ const obj9 = {
     const items = [tmp.commandChoiceLoadingItem, { width: memo }];
     obj[1] = callback(View, { style: items });
     obj[1] = callback(View, obj);
-    return callback(require(8012) /* Form */.FormRow, obj);
+    return callback(require(8033) /* Form */.FormRow, obj);
   },
   Sticker(arg0) {
     let isInteracting;
@@ -225,16 +225,16 @@ const obj9 = {
     let onPress;
     let sticker;
     ({ sticker, onPress, onLongPress, isInteracting } = arg0);
-    let obj = require(10001) /* useStickerPackCategories */;
+    let obj = require(10012) /* useStickerPackCategories */;
     const shouldAnimateSticker = obj.useShouldAnimateSticker(isInteracting);
     obj = { accessibilityRole: "menuitem", style: createCacheKey().stickerContainer, onPress, onLongPress, pointerEvents: "box-only", children: null };
-    obj[5] = callback(importDefault(9902), { sticker, size: 40, animated: shouldAnimateSticker });
-    return callback(require(4887) /* PressableBase */.PressableOpacity, obj);
+    obj[5] = callback(importDefault(9913), { sticker, size: 40, animated: shouldAnimateSticker });
+    return callback(require(4909) /* PressableBase */.PressableOpacity, obj);
   },
   Label(text) {
     const obj = { label: null };
     obj[0] = callback(AutocompleteLabel, { text: text.label });
-    return callback(require(8012) /* Form */.FormRow, obj);
+    return callback(require(8033) /* Form */.FormRow, obj);
   },
   Game(game) {
     game = game.game;
@@ -244,7 +244,7 @@ const obj9 = {
     if (obj.isNullOrEmpty(tmp4)) {
       obj = { size: "sm", style: null };
       obj[1] = tmp.gameIcon;
-      let tmp6Result = tmp6(tmp5(7992).UnknownGameIcon, obj);
+      let tmp6Result = tmp6(tmp5(8013).UnknownGameIcon, obj);
       let tmp8 = tmp6;
     } else {
       obj = { style: null, source: null };
@@ -252,12 +252,12 @@ const obj9 = {
       const obj1 = { uri: null };
       obj1[0] = tmp4;
       obj[1] = obj1;
-      tmp6Result = tmp6(importDefault(5308), obj);
+      tmp6Result = tmp6(importDefault(5329), obj);
       tmp8 = tmp6;
     }
     const obj2 = { onPress: game.onPress, accessibilityRole: "menuitem", leading: tmp6Result, label: null };
     obj2[3] = tmp8(AutocompleteLabel, { text: game.name });
-    return tmp8(require(8012) /* Form */.FormRow, obj2);
+    return tmp8(require(8033) /* Form */.FormRow, obj2);
   }
 };
 const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/autocompleter/native/Autocomplete.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15829
-// Function ID: 15830
+// Module ID: 15847
+// Function ID: 15848
 // Name: FormRowPlaceholderItem
-// Dependencies: [19, 17, 8446, 21, 4342, 712, 15802, 4083, 2]
+// Dependencies: [19, 17, 8468, 21, 4342, 712, 15820, 4083, 2]
 // Exports: default
 
-// Module 15829 (FormRowPlaceholderItem)
+// Module 15847 (FormRowPlaceholderItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ const result = require("MessageEmbedTypes").fileFinishedImporting("modules/searc
 
 export default function FormRowPlaceholderItem(style) {
   const tmp = createCacheKey();
-  let obj = require(15802) /* useFullscreenPlaceholderCount */;
+  let obj = require(15820) /* useFullscreenPlaceholderCount */;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
   obj = { style: items, pointerEvents: "none", children: null };
   items = [placeholderAnimatedStyle, tmp.itemContainer, style.style];

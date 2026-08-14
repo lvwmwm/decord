@@ -1,10 +1,10 @@
-// Module ID: 11727
-// Function ID: 11728
+// Module ID: 11743
+// Function ID: 11744
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4342, 500, 712, 1363, 8441, 4278, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 500, 712, 1363, 8463, 4278, 4338, 1236, 2]
 // Exports: default
 
-// Module 11727 (NewBadge)
+// Module 11743 (NewBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -32,7 +32,7 @@ let closure_5 = createCacheKey.createStyles((arg0, arg1) => {
 const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
 export default function NewBadge() {
-  const tmp2 = importDefault(8441)();
+  const tmp2 = importDefault(8463)();
   const tmp3 = importDefault(4278)();
   const tmp4 = callback(tmp2, tmp3);
   let obj = { style: tmp4.base, children: null };

@@ -1,9 +1,9 @@
-// Module ID: 8713
-// Function ID: 8714
+// Module ID: 8727
+// Function ID: 8728
 // Name: PX_4
 // Dependencies: [712, 2]
 
-// Module 8713 (PX_4)
+// Module 8727 (PX_4)
 const PX_4 = require("Themes").space.PX_4;
 const PX_8 = require("Themes").space.PX_8;
 const sum = 2 * PX_8 + PX_4;

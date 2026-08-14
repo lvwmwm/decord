@@ -1,10 +1,10 @@
-// Module ID: 10544
-// Function ID: 10545
+// Module ID: 10560
+// Function ID: 10561
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 676, 21, 4342, 5041, 1236, 5164, 4058, 10545, 5368, 4338, 8514, 1297, 4755, 5310, 5823, 2]
+// Dependencies: [5, 32, 19, 676, 21, 4342, 5063, 1236, 5186, 4058, 10561, 5389, 4338, 8536, 1297, 4777, 5331, 5844, 2]
 // Exports: default
 
-// Module 10544 (FederatedSocialModal)
+// Module 10560 (FederatedSocialModal)
 import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -21,7 +21,7 @@ const result = require("noop").fileFinishedImporting("modules/connections/native
 
 export default function FederatedSocialModal(platformType) {
   const _require = platformType;
-  let screens = importDefault(5041);
+  let screens = importDefault(5063);
   let value = screens.get(platformType.platformType);
   let name;
   if (value != null) {
@@ -35,7 +35,7 @@ export default function FederatedSocialModal(platformType) {
   let obj = { headerTitle: null, headerLeft: null, render: null };
   let intl2 = _require(1236).intl;
   obj[0] = intl2.formatToPlainString(_require(1236).t["ImMhq+"], { serviceName: name });
-  obj[1] = _require(5310).getHeaderBackButton(platformType.onClose);
+  obj[1] = _require(5331).getHeaderBackButton(platformType.onClose);
   obj[2] = function render() {
     let closure_0;
     let closure_1;
@@ -198,5 +198,5 @@ export default function FederatedSocialModal(platformType) {
     return outer1_8(platformType(outer1_2[11]).SafeAreaPaddingView, obj);
   };
   screens[0] = obj;
-  return callback(_require(5823).Navigator, { initialRouteName: "root", screens });
+  return callback(_require(5844).Navigator, { initialRouteName: "root", screens });
 };

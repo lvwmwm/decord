@@ -1,10 +1,10 @@
-// Module ID: 11056
-// Function ID: 11057
+// Module ID: 11072
+// Function ID: 11073
 // Name: getCommandOptionComponents
-// Dependencies: [19, 17, 1391, 1983, 1910, 4562, 3998, 1922, 8387, 4778, 676, 1498, 4779, 21, 4342, 712, 1954, 1297, 4310, 8832, 4187, 4338, 4535, 1236, 5768, 589, 5308, 1438, 5416, 500, 11057, 4061, 5414, 1626, 7030, 4753, 5807, 5788, 8268, 5437, 2]
+// Dependencies: [19, 17, 1391, 1983, 1910, 4584, 3998, 1922, 8409, 4800, 676, 1498, 4801, 21, 4342, 712, 1954, 1297, 4310, 8846, 4187, 4338, 4535, 1236, 5789, 589, 5329, 1438, 5437, 500, 11073, 4061, 5435, 1626, 7052, 4775, 5828, 5809, 8290, 5458, 2]
 // Exports: default
 
-// Module 11056 (getCommandOptionComponents)
+// Module 11072 (getCommandOptionComponents)
 import showUserProfileActionSheet from "showUserProfileActionSheet";
 import get_ActivityIndicator from "Button";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -699,7 +699,7 @@ export default function ExecutedCommandPopout(channelId) {
       const obj = stateFromStores(outer1_3[38]);
     }
   }, items1);
-  obj = { value: messageId(5768)(messageId(5788).EXECUTED_COMMAND).analyticsLocations, children: null };
+  obj = { value: messageId(5789)(messageId(5809).EXECUTED_COMMAND).analyticsLocations, children: null };
   obj = { startExpanded: true, bodyStyles: tmp.container, children: null };
   let interactionData1;
   if (stateFromStores != null) {
@@ -742,6 +742,6 @@ export default function ExecutedCommandPopout(channelId) {
     tmp9Result = tmp9(closure_5, obj4);
   }
   obj[2] = tmp9Result;
-  obj[1] = closure_21(channelId(5437).BottomSheet, obj);
-  return closure_21(channelId(5768).AnalyticsLocationProvider, obj);
+  obj[1] = closure_21(channelId(5458).BottomSheet, obj);
+  return closure_21(channelId(5789).AnalyticsLocationProvider, obj);
 };

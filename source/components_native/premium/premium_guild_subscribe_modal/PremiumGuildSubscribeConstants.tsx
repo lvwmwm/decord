@@ -1,9 +1,9 @@
-// Module ID: 5194
-// Function ID: 5195
+// Module ID: 5215
+// Function ID: 5216
 // Name: PremiumGuildSubscribeModalScenes
 // Dependencies: [2]
 
-// Module 5194 (PremiumGuildSubscribeModalScenes)
+// Module 5215 (PremiumGuildSubscribeModalScenes)
 const result = require("set").fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/PremiumGuildSubscribeConstants.tsx");
 
 export const PremiumGuildSubscribeModalScenes = { GUILD_SELECT: "guild_select", OVERVIEW: "overview", CONFIRMATION: "confirmation" };

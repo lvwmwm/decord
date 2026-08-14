@@ -1,10 +1,10 @@
-// Module ID: 14953
-// Function ID: 14954
+// Module ID: 14967
+// Function ID: 14968
 // Name: SettingsPrivacyAndSafetyGuildSelectActionSheet
-// Dependencies: [32, 19, 1910, 5196, 14952, 21, 4342, 712, 4572, 1430, 1236, 589, 4310, 11272, 13951, 5819, 5200, 2]
+// Dependencies: [32, 19, 1910, 5217, 14966, 21, 4342, 712, 4594, 1430, 1236, 589, 4310, 11288, 13963, 5840, 5221, 2]
 // Exports: default
 
-// Module 14953 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
+// Module 14967 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -62,7 +62,7 @@ export default function SettingsPrivacyAndSafetyGuildSelectActionSheet() {
           guild = guild.getGuild(arg1);
           if (null != guild) {
             const obj = { type: null, value: null, label: null, guild: null };
-            obj[0] = callback(4572).SelectOptionType.GUILD;
+            obj[0] = callback(4594).SelectOptionType.GUILD;
             ({ id: obj[1], name: obj[2] } = guild);
             obj[3] = guild;
             arr.push(obj);
@@ -75,7 +75,7 @@ export default function SettingsPrivacyAndSafetyGuildSelectActionSheet() {
         const obj4 = obj(callback[16]);
         reduced = obj(callback[16]).queryGuilds(obj).map((record) => {
           record = record.record;
-          return { type: callback(4572).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+          return { type: callback(4594).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
         });
         const queryGuildsResult = obj(callback[16]).queryGuilds(obj);
       }

@@ -1,10 +1,10 @@
-// Module ID: 14521
-// Function ID: 14522
+// Module ID: 14534
+// Function ID: 14535
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 676, 21, 4342, 712, 5276, 4338, 4887, 1297, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 712, 5297, 4338, 4909, 1297, 2]
 // Exports: default
 
-// Module 14521 (LabeledDataBlock)
+// Module 14534 (LabeledDataBlock)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -48,7 +48,7 @@ export default function LabeledDataBlock(arg0) {
     obj2[0] = tmp5(1297).Icon.Sizes.SMALL;
     obj2[1] = icon;
     obj1[2] = tmp4(tmp5(1297).Icon, obj2);
-    tmp4Result = tmp4(tmp5(4887).PressableOpacity, obj1);
+    tmp4Result = tmp4(tmp5(4909).PressableOpacity, obj1);
   }
   items1[1] = tmp4Result;
   obj[1] = items1;

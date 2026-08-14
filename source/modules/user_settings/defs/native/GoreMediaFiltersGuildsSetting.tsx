@@ -1,9 +1,9 @@
-// Module ID: 14145
-// Function ID: 14146
+// Module ID: 14158
+// Function ID: 14159
 // Name: pressable
-// Dependencies: [8127, 8081, 14136, 14132, 7107, 5958, 14133, 1236, 1306, 10407, 2]
+// Dependencies: [8148, 8102, 14149, 14145, 7129, 5979, 14146, 1236, 1306, 10421, 2]
 
-// Module 14145 (pressable)
+// Module 14158 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -13,11 +13,11 @@ const pressable = createToggle.createPressable({
   },
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentGuildsSettingValue() {
-    const obj = require(14132) /* useExplicitContentSettingOrDefault */;
-    return require(7107) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
+    const obj = require(14145) /* useExplicitContentSettingOrDefault */;
+    return require(7129) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
   },
   onPress: function onGoreContentGuildsOnPress() {
-    let obj = require(5958) /* resolveGoreSettingWithDefaults */;
+    let obj = require(5979) /* resolveGoreSettingWithDefaults */;
     obj = { title: null, subtitle: null, handlePress: null, excluded: null, currentValue: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["16/3Bi"]);
@@ -31,11 +31,11 @@ const pressable = createToggle.createPressable({
     const items = [require(1306) /* create */.ExplicitContentRedaction.BLOCK];
     obj[3] = items;
     obj[4] = obj.getGoreContentSettingOrDefault().goreContentGuilds;
-    const result = require(14133) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(14146) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useIsDisabled() {
-    let userIsTeen = require(8081) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(8081) /* useUserIsTeen */;
+    let userIsTeen = require(8102) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(8102) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }
@@ -58,11 +58,11 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentGuildsSettingValue() {
-    const obj = require(14132) /* useExplicitContentSettingOrDefault */;
-    return require(7107) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
+    const obj = require(14145) /* useExplicitContentSettingOrDefault */;
+    return require(7129) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentGuilds)();
   },
   onPress: function onGoreContentGuildsOnPress() {
-    let obj = require(5958) /* resolveGoreSettingWithDefaults */;
+    let obj = require(5979) /* resolveGoreSettingWithDefaults */;
     obj = { title: null, subtitle: null, handlePress: null, excluded: null, currentValue: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["16/3Bi"]);
@@ -76,11 +76,11 @@ let obj = {
     const items = [require(1306) /* create */.ExplicitContentRedaction.BLOCK];
     obj[3] = items;
     obj[4] = obj.getGoreContentSettingOrDefault().goreContentGuilds;
-    const result = require(14133) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(14146) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useIsDisabled() {
-    let userIsTeen = require(8081) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(8081) /* useUserIsTeen */;
+    let userIsTeen = require(8102) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(8102) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }

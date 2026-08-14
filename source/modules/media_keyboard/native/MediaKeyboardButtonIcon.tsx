@@ -1,10 +1,10 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11686
+// Function ID: 11687
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [19, 21, 4207, 1367, 4083, 1626, 4343, 4346, 9755, 2]
+// Dependencies: [19, 21, 4207, 1367, 4083, 1626, 4343, 4346, 9766, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 11670 (MediaKeyboardButtonIcon)
+// Module 11686 (MediaKeyboardButtonIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -57,7 +57,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     obj[0] = animatedStyle;
     obj1 = {};
     const merged1 = Object.assign(merged);
-    obj[1] = jsx(_require(9755).PlusLargeIcon, {});
+    obj[1] = jsx(_require(9766).PlusLargeIcon, {});
     return jsx(chatInputFloating(4083).View, { style: null, children: null });
   }
 };

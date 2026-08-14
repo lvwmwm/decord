@@ -1,10 +1,10 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 11992
+// Function ID: 11993
 // Name: getGuildPowerupsBoostInfoText
 // Dependencies: [4230, 1236, 2335, 2]
 // Exports: getGuildPowerupsBoostInfoText
 
-// Module 11976 (getGuildPowerupsBoostInfoText)
+// Module 11992 (getGuildPowerupsBoostInfoText)
 import { BoostInfoType } from "BoostedGuildTiers";
 
 const result = require("messagesProxy").fileFinishedImporting("modules/premium/powerups/utils/getGuildPowerupsBoostInfoText.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 11497
+// Function ID: 11498
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 8388, 1391, 1388, 4164, 1377, 589, 11482, 11487, 6065, 2]
+// Dependencies: [32, 8410, 1391, 1388, 4164, 1377, 589, 11498, 11503, 6086, 2]
 // Exports: default
 
-// Module 11481 (useAppLauncherOnboardingContent)
+// Module 11497 (useAppLauncherOnboardingContent)
 import _slicedToArray from "_slicedToArray";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -19,7 +19,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
   let obj = { channel: null };
   const items1 = [ensureGuildLoaded];
   obj[0] = channelId(589).useStateFromStores(items1, () => outer1_5.getChannel(channelId));
-  const tmp3 = importDefault(11487)({ channelId });
+  const tmp3 = importDefault(11503)({ channelId });
   if (tmp3.canShowBotsBanner) {
     items.push(tmp(1377).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
   }
@@ -45,7 +45,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
         result = result1;
       }
       obj[1] = !result;
-      const activityApplications = tmp(11482).useActivityApplications(obj);
+      const activityApplications = tmp(11498).useActivityApplications(obj);
       let flag = false;
       for (const item10042 of activityApplications) {
         if (null != stateFromStores.getEntry(item10042.id)) {
@@ -65,7 +65,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
     }
   }
   let obj2 = channelId(589);
-  let tmp7 = callback(channelId(6065).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
+  let tmp7 = callback(channelId(6086).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
   obj = { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };
   return obj;
 };

@@ -1,10 +1,10 @@
-// Module ID: 10211
-// Function ID: 10212
+// Module ID: 10225
+// Function ID: 10226
 // Name: _handleDocumentSelection
-// Dependencies: [5, 676, 10212, 500, 4684, 1236, 4539, 2]
+// Dependencies: [5, 676, 10226, 500, 4706, 1236, 4549, 2]
 // Exports: handleDocumentSelection
 
-// Module 10211 (_handleDocumentSelection)
+// Module 10225 (_handleDocumentSelection)
 import getSystemLocale from "getSystemLocale";
 import { AnalyticEvents } from "ME";
 
@@ -134,19 +134,19 @@ function _handleDocumentSelection() {
           } else if (2 === tmp7) {
             c4 = 0;
             c4 = getSystemLocale;
-            obj3 = flag(10212);
+            obj3 = flag(10226);
             if (obj3.isErrorWithCode(c4)) {
-              if (c4.code === flag(10212).errorCodes.OPERATION_CANCELED) {
+              if (c4.code === flag(10226).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
                 return { value: "HermesInternal", done: null };
               }
             }
-            obj4 = flag(4539);
+            obj4 = flag(4549);
             const obj5 = { error_message: null };
             const _JSON = JSON;
             obj5[0] = JSON.stringify(c4);
             obj4.trackWithMetadata(c4.MOBILE_FILE_PICKER_ERROR, obj5);
-            let obj6 = extensions(4684);
+            let obj6 = extensions(4706);
             obj6 = { title: null, body: null };
             const intl3 = flag(1236).intl;
             obj6[0] = intl3.string(flag(1236).t.rWHepR);
@@ -167,7 +167,7 @@ function _handleDocumentSelection() {
           } else {
             getSystemLocale = arg1;
             if (getSystemLocale.some((size) => 0 === size.size)) {
-              obj = extensions(4684);
+              obj = extensions(4706);
               obj8 = { title: null, body: null };
               const intl = flag(1236).intl;
               obj8[0] = intl.string(flag(1236).t.B3vFdU);

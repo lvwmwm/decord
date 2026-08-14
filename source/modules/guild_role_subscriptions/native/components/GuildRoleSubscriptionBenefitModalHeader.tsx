@@ -1,10 +1,10 @@
-// Module ID: 16915
-// Function ID: 16916
+// Module ID: 16931
+// Function ID: 16932
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 5276, 14528, 5368, 9106, 4338, 1236, 1297, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4342, 712, 5297, 14541, 5389, 9120, 4338, 1236, 1297, 2]
 // Exports: default
 
-// Module 16915 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 16931 (GuildRoleSubscriptionBenefitModalHeader)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -48,7 +48,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   canSave = canSave.canSave;
   ({ title, onSave, onClose, listingId } = canSave);
   const tmp = createCacheKey();
-  let obj = importAll(14528);
+  let obj = importAll(14541);
   obj = { top: true, style: tmp.headerContainer, children: null };
   obj = { style: items, accessibilityRole: "button", onPress: onClose, children: null };
   items = [, ];
@@ -57,12 +57,12 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
   obj[3] = callback2(require(4338) /* Text */.Text, obj1);
-  const items1 = [callback2(importDefault(9106), obj), , ];
+  const items1 = [callback2(importDefault(9120), obj), , ];
   const obj2 = { style: tmp.titleContainer, children: null };
   const items2 = [callback2(require(1297) /* Button */.LegacyText, { style: tmp.title, accessibilityRole: "header", children: title }), ];
   const obj3 = { style: tmp.title, accessibilityRole: "header", children: title };
   const tmp3 = callback3;
-  const tmp6 = importDefault(9106);
+  const tmp6 = importDefault(9120);
   items2[1] = callback2(require(4338) /* Text */.Text, { style: tmp.subtitle, variant: "text-xs/medium", color: "text-default", children: callback(obj.useName(listingId), 1)[0] });
   obj2[1] = items2;
   items1[1] = callback3(View, obj2);
@@ -80,7 +80,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   const intl2 = tmp4(1236).intl;
   obj6[1] = intl2.string(require(1236) /* getSystemLocale */.t["R3BPH+"]);
   obj5[4] = callback2(require(1297) /* Button */.LegacyText, obj6);
-  items1[2] = callback2(importDefault(9106), obj5);
+  items1[2] = callback2(importDefault(9120), obj5);
   obj[2] = items1;
-  return tmp3(require(5368) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return tmp3(require(5389) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

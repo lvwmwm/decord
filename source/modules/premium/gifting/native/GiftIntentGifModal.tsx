@@ -1,18 +1,18 @@
-// Module ID: 11266
-// Function ID: 11267
+// Module ID: 11282
+// Function ID: 11283
 // Name: _sendGiftIntentGif
-// Dependencies: [32, 5, 19, 17, 1391, 676, 4335, 21, 4342, 712, 6965, 7188, 698, 5788, 5409, 589, 8021, 1236, 11267, 9977, 4755, 4550, 5756, 5310, 5823, 2]
+// Dependencies: [32, 5, 19, 17, 1391, 676, 4335, 21, 4342, 712, 6986, 7210, 698, 5809, 5430, 589, 8042, 1236, 11283, 9988, 4777, 4572, 5777, 5331, 5844, 2]
 // Exports: default
 
-// Module 11266 (_sendGiftIntentGif)
+// Module 11282 (_sendGiftIntentGif)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
-import module_9977 from "module_9977";
+import module_9988 from "module_9988";
 import { View } from "getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
-import jsxProd from "module_4550";
+import jsxProd from "module_4572";
 import createCacheKey from "createCacheKey";
 
 let c10;

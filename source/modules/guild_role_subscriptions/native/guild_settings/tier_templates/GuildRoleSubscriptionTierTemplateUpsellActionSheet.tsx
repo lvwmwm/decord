@@ -1,10 +1,10 @@
-// Module ID: 15447
-// Function ID: 15448
+// Module ID: 15462
+// Function ID: 15463
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 4334, 676, 1388, 21, 4342, 712, 4890, 647, 5437, 1236, 8919, 4338, 4755, 9070, 4310, 2]
+// Dependencies: [32, 19, 17, 4334, 676, 1388, 21, 4342, 712, 4912, 647, 5458, 1236, 8933, 4338, 4777, 9084, 4310, 2]
 // Exports: default
 
-// Module 15447 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 15462 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "ACTION_SHEET_HEIGHT_HALF";
@@ -45,7 +45,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   let callback;
   const tmp = createCacheKey();
   [tmp3, c2] = callback(React.useState(0), 2);
-  let obj = require(4890) /* getIsScreenLandscape */;
+  let obj = require(4912) /* getIsScreenLandscape */;
   callback = obj.useIsScreenLandscape();
   let obj1 = require(647) /* defaultAreStatesEqual */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -68,7 +68,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj1 = { accessibilityRole: "image", accessibilityLabel: null, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl.string(require(1236) /* getSystemLocale */.t.gCgirr);
-  obj1[2] = callback2(markAsDismissed(8919), { style: tmp.videoContainer, src: closure_12, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
+  obj1[2] = callback2(markAsDismissed(8933), { style: tmp.videoContainer, src: closure_12, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
   const items2 = [callback2(View, obj1), , ];
   const obj3 = { style: tmp.info, children: null };
   const obj4 = { variant: "heading-lg/semibold", style: tmp.title, color: "mobile-text-heading-primary", children: null };
@@ -91,7 +91,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
     markAsDismissed(_undefined[16]).open(closure_0, outer1_7.ROLE_SUBSCRIPTIONS_TIERS, undefined, outer1_8.ROLE_SUBSCRIPTION_TIER_TEMPLATE);
     markAsDismissed(outer1_9.UNKNOWN);
   };
-  obj7[1] = callback2(require(4755) /* Button */.Button, obj8);
+  obj7[1] = callback2(require(4777) /* Button */.Button, obj8);
   const items5 = [callback2(View, obj7), ];
   const obj9 = { style: tmp.button, children: null };
   const obj10 = { text: null, onPress: null, variant: "secondary" };
@@ -100,11 +100,11 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj10[1] = function onPress() {
     return markAsDismissed(_undefined[17]).hideActionSheet();
   };
-  obj9[1] = callback2(require(4755) /* Button */.Button, obj10);
+  obj9[1] = callback2(require(4777) /* Button */.Button, obj10);
   items5[1] = callback2(View, obj9);
   obj6[1] = items5;
   items2[2] = callback3(View, obj6);
   obj[2] = items2;
   obj[1] = callback3(View, obj);
-  return callback2(require(5437) /* Background */.BottomSheet, obj);
+  return callback2(require(5458) /* Background */.BottomSheet, obj);
 };

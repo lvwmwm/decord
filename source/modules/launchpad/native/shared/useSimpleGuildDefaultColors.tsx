@@ -1,9 +1,9 @@
-// Module ID: 16122
-// Function ID: 16123
+// Module ID: 16140
+// Function ID: 16141
 // Name: styles
 // Dependencies: [4342, 712, 2]
 
-// Module 16122 (styles)
+// Module 16140 (styles)
 import createCacheKey from "createCacheKey";
 
 let obj = { iconBackground: null, iconBackgroundBrand: null, iconStroke: null };

@@ -1,10 +1,10 @@
-// Module ID: 10997
-// Function ID: 10998
+// Module ID: 11013
+// Function ID: 11014
 // Name: EmptyCustomizeCommunity
-// Dependencies: [19, 17, 5216, 1910, 4357, 4165, 5282, 5283, 676, 1925, 4541, 21, 4342, 712, 5276, 1364, 4278, 589, 10998, 10999, 1297, 1236, 4338, 5289, 5395, 5766, 5788, 1628, 11000, 5281, 5293, 5287, 5400, 1435, 1370, 4065, 4083, 4343, 11001, 4310, 5405, 2007, 4887, 5758, 5396, 2]
+// Dependencies: [19, 17, 5237, 1910, 4357, 4165, 5303, 5304, 676, 1925, 4551, 21, 4342, 712, 5297, 1364, 4278, 589, 11014, 11015, 1297, 1236, 4338, 5310, 5416, 5787, 5809, 1628, 11016, 5302, 5314, 5308, 5421, 1435, 1370, 4065, 4083, 4343, 11017, 4310, 5426, 2007, 4909, 5779, 5417, 2]
 // Exports: default
 
-// Module 10997 (EmptyCustomizeCommunity)
+// Module 11013 (EmptyCustomizeCommunity)
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "initialize";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -37,7 +37,7 @@ function EmptyCustomizeCommunity(setTab) {
   const items = [handleConnectionOpen];
   importDefault = obj1.useStateFromStores(items, () => guildId.getGuildId());
   obj = { style: tmp.emptyContainer, children: null };
-  obj = { style: tmp.emptyContainerImage, source: importDefault(obj.isThemeDark(importDefault(4278)()) ? 10998 : 10999) };
+  obj = { style: tmp.emptyContainerImage, source: importDefault(obj.isThemeDark(importDefault(4278)()) ? 11014 : 11015) };
   const items1 = [closure_16(closure_5, obj), , ];
   obj1 = { style: tmp.emptyContainerHeader, children: null };
   const intl = tmp2(1236).intl;
@@ -225,10 +225,10 @@ function DropdownOption(option) {
       str = "";
     }
     obj1[3] = str;
-    obj[1] = callback(importDefault(5400), obj1);
+    obj[1] = callback(importDefault(5421), obj1);
     tmp10Result = tmp10(tmp9, obj);
     tmp11 = importDefault;
-    const tmp12 = importDefault(5400);
+    const tmp12 = importDefault(5421);
   }
   const items1 = [tmp10Result, callback(option(4338).Text, { variant: "text-md/semibold", children: option.title })];
   obj[1] = items1;
@@ -500,7 +500,7 @@ export default function CustomizeCommunity(guildId) {
     }
     return prop;
   });
-  const tmp7 = stateFromStores(11000)(guildId);
+  const tmp7 = stateFromStores(11016)(guildId);
   ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, onboardingPrompts } = tmp7);
   const items2 = [guildId, stateFromStores, stateFromStores1];
   ({ onboardingPromptsRaw, newAnswersCount } = tmp7);

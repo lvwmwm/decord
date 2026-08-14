@@ -1,10 +1,10 @@
-// Module ID: 9761
-// Function ID: 9762
+// Module ID: 9772
+// Function ID: 9773
 // Name: useFavoritesGuildConfig
 // Dependencies: [1471, 2]
 // Exports: getFavoritesGuildConfig, useFavoritesGuildConfig
 
-// Module 9761 (useFavoritesGuildConfig)
+// Module 9772 (useFavoritesGuildConfig)
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 

@@ -1,9 +1,9 @@
-// Module ID: 7379
-// Function ID: 7380
+// Module ID: 7401
+// Function ID: 7402
 // Name: prototype
 // Dependencies: [4029, 2]
 
-// Module 7379 (prototype)
+// Module 7401 (prototype)
 import "set";
 
 const prototype = function InvalidGooglePlayPurchase() {

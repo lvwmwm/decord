@@ -1,10 +1,10 @@
-// Module ID: 12811
-// Function ID: 12812
+// Module ID: 12829
+// Function ID: 12830
 // Name: PremiumFeaturesCardBackground
-// Dependencies: [32, 19, 17, 676, 6943, 1924, 21, 712, 4342, 4766, 691, 4338, 5308, 1236, 7702, 7705, 7739, 7742, 4741, 1624, 10095, 1297, 5768, 1493, 698, 2]
+// Dependencies: [32, 19, 17, 676, 6964, 1924, 21, 712, 4342, 4788, 691, 4338, 5329, 1236, 7723, 7726, 7760, 7763, 4763, 1624, 10107, 1297, 5789, 1493, 698, 2]
 // Exports: default
 
-// Module 12811 (PremiumFeaturesCardBackground)
+// Module 12829 (PremiumFeaturesCardBackground)
 import _slicedToArray from "_slicedToArray";
 import isMetaQuest from "isMetaQuest";
 import get_ActivityIndicator from "registerAsset";
@@ -50,7 +50,7 @@ function CarouselCard(arg0) {
   obj = { variant: "heading-md/extrabold", color: "text-overlay-light", style: tmp.cardTitle, children: title };
   const items = [callback2(require(4338) /* Text */.Text, obj), ];
   const items1 = [tmp.image, imageStyle];
-  items[1] = callback2(importDefault(5308), { source: imageSrc, style: items1, resizeMode: "contain" });
+  items[1] = callback2(importDefault(5329), { source: imageSrc, style: items1, resizeMode: "contain" });
   obj[1] = items;
   return callback3(PremiumFeaturesCardBackground, obj);
 }
@@ -64,7 +64,7 @@ function PremiumFeaturesCarousel(arg0) {
   let mapped;
   let React;
   const tmp = createCacheKey();
-  let obj = width(4741);
+  let obj = width(4763);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const tmp5 = mapped(React.useState(0), 2);
   const first = tmp5[0];
@@ -149,7 +149,7 @@ function PremiumFeaturesCarousel(arg0) {
       };
       obj[8] = { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 };
       obj[9] = tmp7;
-      let tmp19 = callback2(importDefault(10095), obj);
+      let tmp19 = callback2(importDefault(10107), obj);
     }
     let items3 = [tmp19, ];
     let obj1 = { containerStyle: null, numberOfItems: null, currentIndex: null };
@@ -190,7 +190,7 @@ export default function PremiumFeaturesCarouselSection(style) {
   let dependencyMap;
   let callback;
   const tmp = createCacheKey();
-  analyticsLocations = first(5768)().analyticsLocations;
+  analyticsLocations = first(5789)().analyticsLocations;
   const tmp2 = callback(React.useState(false), 2);
   first = tmp2[0];
   dependencyMap = tmp2[1];

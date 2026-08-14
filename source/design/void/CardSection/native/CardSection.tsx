@@ -1,10 +1,10 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 8064
+// Function ID: 8065
 // Name: CardSection
-// Dependencies: [19, 17, 676, 21, 4342, 5276, 712, 8044, 2]
+// Dependencies: [19, 17, 676, 21, 4342, 5297, 712, 8065, 2]
 // Exports: default
 
-// Module 8043 (CardSection)
+// Module 8064 (CardSection)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export default function CardSection(arg0) {
     const items1 = [tmp.title, titleStyle];
     obj[0] = items1;
     obj[2] = title;
-    tmp4 = callback(importDefault(8044), obj);
+    tmp4 = callback(importDefault(8065), obj);
   }
   const items2 = [tmp4, , ];
   let tmp8 = null;

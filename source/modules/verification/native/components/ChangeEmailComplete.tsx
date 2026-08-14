@@ -1,10 +1,10 @@
-// Module ID: 8564
-// Function ID: 8565
+// Module ID: 8586
+// Function ID: 8587
 // Name: handlePress
-// Dependencies: [19, 17, 8502, 21, 4342, 712, 8500, 8511, 4338, 1236, 4755, 2]
+// Dependencies: [19, 17, 8524, 21, 4342, 712, 8522, 8533, 4338, 1236, 4777, 2]
 // Exports: default
 
-// Module 8564 (handlePress)
+// Module 8586 (handlePress)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetChangeEmailStore } from "ChangeEmailFields";
@@ -19,7 +19,7 @@ let metroImportAll;
 const require = arg1;
 function handlePress() {
   resetChangeEmailStore();
-  importDefault(8500).close();
+  importDefault(8522).close();
 }
 ({ View: c3, Image: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
@@ -39,7 +39,7 @@ const result = require("ChangeEmailFields").fileFinishedImporting("modules/verif
 export default function ChangeEmailComplete(email) {
   const tmp = createCacheKey();
   let obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: null };
-  obj = { style: tmp.image, source: importDefault(8511) };
+  obj = { style: tmp.image, source: importDefault(8533) };
   const items = [callback(closure_4, obj), , , ];
   obj = { style: tmp.bodyInner, children: null };
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
@@ -60,7 +60,7 @@ export default function ChangeEmailComplete(email) {
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj4[0] = intl4.string(require(1236) /* getSystemLocale */.t.BddRzS);
   obj4[1] = handlePress;
-  items[3] = callback(require(4755) /* Button */.Button, obj4);
+  items[3] = callback(require(4777) /* Button */.Button, obj4);
   obj[3] = items;
   return callback2(closure_5, obj);
 };

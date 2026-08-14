@@ -1,9 +1,9 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 17019
+// Function ID: 17020
 // Name: AVErrorStreamReconnectingDefinition
-// Dependencies: [676, 9219, 16993, 4408, 2]
+// Dependencies: [676, 9233, 17009, 4408, 2]
 
-// Module 17003 (AVErrorStreamReconnectingDefinition)
+// Module 17019 (AVErrorStreamReconnectingDefinition)
 import { ApplicationStreamStates } from "ME";
 
 const result = require("getVoiceChannelErrorContext").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamReconnecting.tsx");
@@ -13,8 +13,8 @@ export const AVErrorStreamReconnectingDefinition = {
     activeStreams = activeStreams.activeStreams;
     const found = activeStreams.filter((state) => state.state === constants.RECONNECTING);
     return found.map((currentUserActiveStream) => {
-      const obj = { type: callback(9219).AVError.STREAM_RECONNECTING };
-      const obj2 = callback(16993);
+      const obj = { type: callback(9233).AVError.STREAM_RECONNECTING };
+      const obj2 = callback(17009);
       const merged = Object.assign(obj2.getStreamErrorContext(callback(4408).encodeStreamKey(currentUserActiveStream)));
       return obj;
     });

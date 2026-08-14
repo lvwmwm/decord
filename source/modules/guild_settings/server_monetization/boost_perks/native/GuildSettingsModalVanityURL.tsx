@@ -1,10 +1,10 @@
-// Module ID: 16801
-// Function ID: 16802
+// Module ID: 16817
+// Function ID: 16818
 // Name: componentDidMount
-// Dependencies: [19, 17, 16802, 1910, 9071, 676, 21, 4342, 712, 5310, 6051, 1236, 16803, 7263, 4338, 16682, 7835, 16804, 1499, 589, 5754, 2]
+// Dependencies: [19, 17, 16818, 1910, 9085, 676, 21, 4342, 712, 5331, 6072, 1236, 16819, 7285, 4338, 16698, 7856, 16820, 1499, 589, 5775, 2]
 // Exports: default
 
-// Module 16801 (componentDidMount)
+// Module 16817 (componentDidMount)
 import get_ActivityIndicator from "registerAsset";
 import FormStates from "FormStates";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -95,7 +95,7 @@ prototype["updateNavigator"] = function updateNavigator(submitting, isEditing) {
     if (submitting) {
       let fn = () => null;
     } else if (isEditing) {
-      let setOptionsResult = self(5310);
+      let setOptionsResult = self(5331);
       fn = setOptionsResult.getHeaderConditionalBackButton(this.handleCancel);
     }
     setOptionsResult = { headerLeft: null, headerRight: null };
@@ -120,7 +120,7 @@ prototype["updateNavigator"] = function updateNavigator(submitting, isEditing) {
   }
 };
 prototype["componentWillUnmount"] = function componentWillUnmount() {
-  importDefault(16803).closeModal();
+  importDefault(16819).closeModal();
 };
 prototype["render"] = function render() {
   let errorDetails;
@@ -136,16 +136,16 @@ prototype["render"] = function render() {
       let obj = { variant: "text-sm/medium", color: "text-muted", children: null };
       const intl6 = require(1236) /* getSystemLocale */.intl;
       obj = { url: null };
-      obj[0] = importDefault(7263)(vanityURLCode);
+      obj[0] = importDefault(7285)(vanityURLCode);
       obj[2] = intl6.format(require(1236) /* getSystemLocale */.t.FcGpNU, obj);
-      const tmp24 = importDefault(7263)(vanityURLCode);
+      const tmp24 = importDefault(7285)(vanityURLCode);
       const tmp = callback(require(4338) /* Text */.Text, obj);
     }
   }
   if (isEditing) {
     let errorMessageFromErrorCode;
     if (null != errorDetails) {
-      obj = require(16682) /* getErrorMessageFromErrorCode */;
+      obj = require(16698) /* getErrorMessageFromErrorCode */;
       errorMessageFromErrorCode = obj.getErrorMessageFromErrorCode(errorDetails.code);
     }
     let hasItem;
@@ -173,7 +173,7 @@ prototype["render"] = function render() {
     obj3[2] = self.handleChange;
     obj3[3] = isEditing;
     obj3[4] = errorMessageFromErrorCode;
-    const items1 = [callback(require(7835) /* TextInput */.TextInput, obj3), ];
+    const items1 = [callback(require(7856) /* TextInput */.TextInput, obj3), ];
     const obj4 = { style: null, children: null };
     obj4[0] = styles.hints;
     const obj5 = { variant: "text-sm/medium", color: "text-muted", children: null };
@@ -203,7 +203,7 @@ prototype["render"] = function render() {
     const obj9 = { style: null, children: null };
     obj9[0] = styles.center;
     const obj10 = { source: null, style: null, resizeMode: "contain" };
-    obj10[0] = importDefault(16804);
+    obj10[0] = importDefault(16820);
     obj10[1] = styles.image;
     obj9[1] = callback(closure_4, obj10);
     items3[1] = callback(closure_3, obj9);
@@ -248,7 +248,7 @@ export default function ConnectedGuildSettingsModalVanityURL(guildId) {
     obj[4] = navigation;
     obj[5] = tmp;
     obj[6] = guildId.contentContainerStyle;
-    const items3 = [callback(GuildSettingsModalVanityURL, obj), callback(tmp2(5754).NavScrim, {})];
+    const items3 = [callback(GuildSettingsModalVanityURL, obj), callback(tmp2(5775).NavScrim, {})];
     obj[0] = items3;
     tmp10 = callback2(closure_11, obj);
   }

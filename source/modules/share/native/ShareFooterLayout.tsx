@@ -1,10 +1,10 @@
-// Module ID: 11140
-// Function ID: 11141
+// Module ID: 11156
+// Function ID: 11157
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 4342, 712, 5409, 4083, 4754, 4758, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 5430, 4083, 4776, 4780, 4338, 2]
 // Exports: default
 
-// Module 11140 (ShareFooterLayout)
+// Module 11156 (ShareFooterLayout)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export default function ShareFooterLayout(arg0) {
   let _require;
   ({ chatInput, sendButton, avoidKeyboard } = arg0);
   const tmp = createCacheKey();
-  const sum = tmp.footer.paddingVertical + importDefault(5409)({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
+  const sum = tmp.footer.paddingVertical + importDefault(5430)({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
   _require = sum;
   let obj = _require(4083);
   const fn = function f() {
@@ -45,7 +45,7 @@ export default function ShareFooterLayout(arg0) {
     obj[0] = _undefined(outer1_2[7]).withSpring(_undefined, _undefined(outer1_2[8]).ON_PRESS_SPRING, "respect-motion-settings");
     return obj;
   };
-  obj = { withSpring: _require(4754).withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: _require(4758).ON_PRESS_SPRING };
+  obj = { withSpring: _require(4776).withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: _require(4780).ON_PRESS_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 2871405301293;
   fn.__initData = closure_8;

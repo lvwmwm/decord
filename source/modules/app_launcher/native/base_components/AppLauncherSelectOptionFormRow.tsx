@@ -1,10 +1,10 @@
-// Module ID: 11621
-// Function ID: 11622
+// Module ID: 11637
+// Function ID: 11638
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [19, 21, 4342, 712, 11614, 8012, 4338, 1297, 5423, 2]
+// Dependencies: [19, 21, 4342, 712, 11630, 8033, 4338, 1297, 5444, 2]
 // Exports: default
 
-// Module 11621 (AppLauncherSelectOptionFormRow)
+// Module 11637 (AppLauncherSelectOptionFormRow)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -26,7 +26,7 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   ({ selected, selectedItemName: require, unselectedSubLabel } = arg0);
   ({ style, option, autoFocus } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(11614) /* useAnimationDelayedAutoFocus */;
+  let obj = require(11630) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
   obj = { start: true, end: true, style: items, label: null, subLabel: null, trailing: null };
   items = [createCacheKey().formRow, style];
@@ -52,9 +52,9 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   }
   obj[4] = fn;
   const obj1 = { source: null, size: null };
-  obj1[0] = unselectedSubLabel(5423);
+  obj1[0] = unselectedSubLabel(5444);
   obj1[1] = require(1297) /* Button */.IconSizes.SMALL_20;
   obj[5] = jsx(require(1297) /* Button */.Icon, { source: null, size: null });
   const merged1 = Object.assign(merged);
-  return jsx(require(8012) /* Form */.FormRow, { variant: str, color: null, lineClamp: 1, children: null });
+  return jsx(require(8033) /* Form */.FormRow, { variant: str, color: null, lineClamp: 1, children: null });
 };

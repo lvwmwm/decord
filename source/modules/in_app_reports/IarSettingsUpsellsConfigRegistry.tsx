@@ -1,10 +1,10 @@
-// Module ID: 8077
-// Function ID: 8078
+// Module ID: 8098
+// Function ID: 8099
 // Name: SettingsUpsellsConfigRegistry
-// Dependencies: [19, 8066, 8078, 8079, 8080, 1370, 2]
+// Dependencies: [19, 8087, 8099, 8100, 8101, 1370, 2]
 // Exports: useIarReportSettingsUpsells, useSettingsUpsellsConfigs
 
-// Module 8077 (SettingsUpsellsConfigRegistry)
+// Module 8098 (SettingsUpsellsConfigRegistry)
 import noop from "noop";
 
 const require = arg1;

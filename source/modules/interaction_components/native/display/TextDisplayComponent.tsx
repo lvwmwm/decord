@@ -1,10 +1,10 @@
-// Module ID: 15106
-// Function ID: 15107
+// Module ID: 15120
+// Function ID: 15121
 // Name: TextDisplayComponent
-// Dependencies: [32, 19, 4334, 1979, 8262, 21, 8263, 38, 4332, 8248, 589, 4034, 15107, 11052, 11033, 2]
+// Dependencies: [32, 19, 4334, 1979, 8284, 21, 8285, 38, 4332, 8269, 589, 4034, 15121, 11068, 11049, 2]
 // Exports: default
 
-// Module 15106 (TextDisplayComponent)
+// Module 15120 (TextDisplayComponent)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -18,12 +18,12 @@ let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImp
 export default function TextDisplayComponent(content) {
   let tmp6;
   let tmp7;
-  let obj = channelId(8263);
+  let obj = channelId(8285);
   const componentContainerId = obj.useComponentContainerId();
   channelId = channelId.getChannelId();
   importDefault(38)(null != channelId, "channelId not available in TextDisplayComponent");
   let obj1 = importDefault(4332);
-  let obj2 = channelId(8248);
+  let obj2 = channelId(8269);
   obj = { channelId, renderOptions: closure_6 };
   const parseToASTResult = obj1.parseToAST(content.content, true, obj2.getInitialParserState(obj));
   let items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -50,13 +50,13 @@ export default function TextDisplayComponent(content) {
   obj[2] = function onTapLink(nativeEvent) {
     const result = channelId(outer1_2[13]).handleMessagesTapURLLink(nativeEvent.nativeEvent.data, channelId);
   };
-  obj[3] = channelId(11033).contentHandlers.onLongPressLink;
-  obj[4] = channelId(11033).contentHandlers.onTapAttachmentLink;
-  obj[5] = channelId(11033).contentHandlers.onLongPressAttachmentLink;
-  obj[6] = channelId(11033).contentHandlers.onTapMention;
-  obj[7] = channelId(11033).contentHandlers.onTapTimestamp;
-  obj[8] = channelId(11033).contentHandlers.onTapInlineCode;
-  obj[9] = channelId(11033).contentHandlers.onTapEmoji;
+  obj[3] = channelId(11049).contentHandlers.onLongPressLink;
+  obj[4] = channelId(11049).contentHandlers.onTapAttachmentLink;
+  obj[5] = channelId(11049).contentHandlers.onLongPressAttachmentLink;
+  obj[6] = channelId(11049).contentHandlers.onTapMention;
+  obj[7] = channelId(11049).contentHandlers.onTapTimestamp;
+  obj[8] = channelId(11049).contentHandlers.onTapInlineCode;
+  obj[9] = channelId(11049).contentHandlers.onTapEmoji;
   obj[10] = { width: "100%" };
-  return jsx(importDefault(15107), { model: null, markdownTextRenderOptions: null, onTapLink: null, onLongPressLink: null, onTapAttachmentLink: null, onLongPressAttachmentLink: null, onTapMention: null, onTapTimestamp: null, onTapInlineCode: null, onTapEmoji: null, style: null });
+  return jsx(importDefault(15121), { model: null, markdownTextRenderOptions: null, onTapLink: null, onLongPressLink: null, onTapAttachmentLink: null, onLongPressAttachmentLink: null, onTapMention: null, onTapTimestamp: null, onTapInlineCode: null, onTapEmoji: null, style: null });
 };

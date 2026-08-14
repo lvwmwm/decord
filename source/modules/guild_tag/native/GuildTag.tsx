@@ -1,9 +1,9 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 9316
+// Function ID: 9317
 // Name: memoResult1
-// Dependencies: [19, 17, 1922, 8097, 21, 4342, 712, 500, 1236, 4338, 4887, 589, 8314, 4310, 9303, 2007, 2]
+// Dependencies: [19, 17, 1922, 8118, 21, 4342, 712, 500, 1236, 4338, 4909, 589, 8336, 4310, 9317, 2007, 2]
 
-// Module 9302 (memoResult1)
+// Module 9316 (memoResult1)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

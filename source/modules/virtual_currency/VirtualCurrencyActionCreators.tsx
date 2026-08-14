@@ -1,10 +1,10 @@
-// Module ID: 9475
-// Function ID: 9476
+// Module ID: 9488
+// Function ID: 9489
 // Name: fetchVirtualCurrencyBalance
-// Dependencies: [5, 4391, 676, 3, 709, 530, 4241, 7632, 1208, 2]
+// Dependencies: [5, 4391, 676, 3, 709, 530, 4241, 7653, 1208, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9475 (fetchVirtualCurrencyBalance)
+// Module 9488 (fetchVirtualCurrencyBalance)
 import sendRequest from "sendRequest";
 import addSku from "addSku";
 import { Endpoints } from "ME";
@@ -224,7 +224,7 @@ function _redeemVirtualCurrencyForSKU() {
                 }
                 let result = null != applicationId;
                 if (result) {
-                  let obj8 = callback(7632);
+                  let obj8 = callback(7653);
                   result = obj8.isTestModeForApplication(applicationId);
                 }
                 c8 = result;

@@ -1,10 +1,10 @@
-// Module ID: 11715
-// Function ID: 11716
+// Module ID: 11731
+// Function ID: 11732
 // Name: getCurrentAndNextResourceChannel
-// Dependencies: [4546, 589, 2]
+// Dependencies: [4556, 589, 2]
 // Exports: default, usePreviousAndNextResourceChannel
 
-// Module 11715 (getCurrentAndNextResourceChannel)
+// Module 11731 (getCurrentAndNextResourceChannel)
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
 
 const require = arg1;

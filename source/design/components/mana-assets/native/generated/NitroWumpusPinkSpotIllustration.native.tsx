@@ -1,10 +1,10 @@
-// Module ID: 6649
-// Function ID: 6650
+// Module ID: 6670
+// Function ID: 6671
 // Name: NitroWumpusPinkSpotIllustration
-// Dependencies: [21, 5308, 6650, 2]
+// Dependencies: [21, 5329, 6671, 2]
 // Exports: NitroWumpusPinkSpotIllustration
 
-// Module 6649 (NitroWumpusPinkSpotIllustration)
+// Module 6670 (NitroWumpusPinkSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusPinkSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const NitroWumpusPinkSpotIllustration = function NitroWumpusPinkSpotIllus
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6650);
+  obj[0] = importDefault(6671);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroWumpusPinkSpotIllustration = function NitroWumpusPinkSpotIllus
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5308), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5329), { width: num * num3, height: num2 * num3 });
 };

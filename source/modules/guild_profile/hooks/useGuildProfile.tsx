@@ -1,10 +1,10 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9065
+// Function ID: 9066
 // Name: useGuildProfile
-// Dependencies: [5, 19, 9050, 589, 9052, 2]
+// Dependencies: [5, 19, 9064, 589, 9066, 2]
 // Exports: useGuildProfile
 
-// Module 9051 (useGuildProfile)
+// Module 9065 (useGuildProfile)
 import set from "set";
 import noop from "noop";
 import handleUpdateStart from "handleUpdateStart";

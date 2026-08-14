@@ -1,9 +1,9 @@
-// Module ID: 7155
-// Function ID: 7156
+// Module ID: 7177
+// Function ID: 7178
 // Name: hasBasicChannelChanged
-// Dependencies: [32, 5, 5035, 1395, 1218, 1391, 1983, 1910, 3989, 1392, 3, 1955, 7156, 506, 3997, 2]
+// Dependencies: [32, 5, 5057, 1395, 1218, 1391, 1983, 1910, 3989, 1392, 3, 1955, 7178, 506, 3997, 2]
 
-// Module 7155 (hasBasicChannelChanged)
+// Module 7177 (hasBasicChannelChanged)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -309,7 +309,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
                             outer2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                             c6 = 3;
                             const obj2 = { value: null, done: true };
-                            obj2[0] = { v: "sa" };
+                            obj2[0] = { v: "title" };
                             return obj2;
                           } else if (2 === tmp7) {
                             if (arg0 === 1) {

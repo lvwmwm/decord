@@ -1,10 +1,10 @@
-// Module ID: 5784
-// Function ID: 5785
+// Module ID: 5805
+// Function ID: 5806
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 676, 21, 4278, 5041, 1236, 5785, 5786, 698, 4539, 1435, 1363, 1297, 4286, 5783, 2]
+// Dependencies: [5, 19, 676, 21, 4278, 5063, 1236, 5806, 5807, 698, 4549, 1435, 1363, 1297, 4286, 5804, 2]
 // Exports: default
 
-// Module 5784 (ProviderConnectionCard)
+// Module 5805 (ProviderConnectionCard)
 import getPlatformUserUrl from "getPlatformUserUrl";
 import noop from "noop";
 import { AnalyticEvents } from "ME";
@@ -76,7 +76,7 @@ export default function ProviderConnectionCard(connection) {
             } else {
               const obj1 = {};
               const obj5 = v0(698);
-              const merged = Object.assign(outer1_0(4539).collectGuildAnalyticsMetadata(v0));
+              const merged = Object.assign(outer1_0(4549).collectGuildAnalyticsMetadata(v0));
               obj1.connection_type = "provider";
               const provider_id = outer1_0.provider_id;
               let c0 = provider_id;

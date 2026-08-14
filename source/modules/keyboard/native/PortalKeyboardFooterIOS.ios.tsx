@@ -1,10 +1,10 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8736
+// Function ID: 8737
 // Name: PortalKeyboardFooterIOS
 // Dependencies: [19, 21, 4342, 712, 1628, 1642, 4207, 4083, 1626, 691, 4212, 2]
 // Exports: default
 
-// Module 8722 (PortalKeyboardFooterIOS)
+// Module 8736 (PortalKeyboardFooterIOS)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

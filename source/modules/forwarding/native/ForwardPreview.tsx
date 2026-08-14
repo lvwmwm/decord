@@ -1,10 +1,10 @@
-// Module ID: 11141
-// Function ID: 11142
+// Module ID: 11157
+// Function ID: 11158
 // Name: MessagePreview
-// Dependencies: [19, 17, 21, 4342, 712, 4278, 8277, 8086, 8638, 11142, 1954, 11143, 12, 11144, 1236, 11146, 9856, 4856, 9840, 5308, 1492, 8341, 4338, 2789, 8292, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4278, 8299, 8107, 8652, 11158, 1954, 11159, 12, 11160, 1236, 11162, 9867, 4878, 9851, 5329, 1492, 8363, 4338, 2789, 8314, 2]
 // Exports: ForwardPreview
 
-// Module 11141 (MessagePreview)
+// Module 11157 (MessagePreview)
 import preload from "preload";
 import { View } from "ImageIcon";
 import jsxProd from "SolidCutout";
@@ -46,7 +46,7 @@ function MessagePreview(content) {
   const tmp3 = importDefault(4278)();
   obj[3] = message.merge(obj);
   obj[4] = memo;
-  return callback(importDefault(8638), obj);
+  return callback(importDefault(8652), obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let c7 = 56;
@@ -80,7 +80,7 @@ export const ForwardPreview = function ForwardPreview(message) {
   message = message.message;
   ({ channel, forwardOptions } = message);
   const tmp = createCacheKey();
-  let obj = require(11142) /* useForwardPreviewContent */;
+  let obj = require(11158) /* useForwardPreviewContent */;
   const forwardPreviewContent = obj.useForwardPreviewContent({ message, channel, forwardOptions });
   ({ attachments, embeds, hasContent, contentMessage } = forwardPreviewContent);
   let checkpointData = null;
@@ -96,7 +96,7 @@ export const ForwardPreview = function ForwardPreview(message) {
     if (num == null) {
       num = 0;
     }
-    tmp6 = tmp2(11143).CHECKPOINT_PERSONA_COLORS[num];
+    tmp6 = tmp2(11159).CHECKPOINT_PERSONA_COLORS[num];
   }
   if (tmp6 != null) {
     const primaryColor = tmp6.primaryColor;
@@ -119,7 +119,7 @@ export const ForwardPreview = function ForwardPreview(message) {
         obj[0] = num2;
         obj[1] = num3;
         let formatToPlainStringResult = intl4.formatToPlainString(tmp2(1236).t.Lr0Top, obj);
-        let AttachmentIcon = tmp2(11146).ImagesIcon;
+        let AttachmentIcon = tmp2(11162).ImagesIcon;
       }
       if (num3 > 0) {
         if (length === num3) {
@@ -135,15 +135,15 @@ export const ForwardPreview = function ForwardPreview(message) {
           obj1[1] = obj2;
           obj1[2] = c7;
           obj1[3] = c7;
-          const items1 = [callback(importDefault(5308), obj1), ];
+          const items1 = [callback(importDefault(5329), obj1), ];
           const obj3 = { style: null, size: "md", color: "white" };
           obj3[0] = tmp.playIcon;
-          items1[1] = callback(tmp2(9856).CirclePlayIcon, obj3);
+          items1[1] = callback(tmp2(9867).CirclePlayIcon, obj3);
           obj[1] = items1;
           let tmp7 = callback2(View, obj);
           let tmp8 = AttachmentIcon;
           let tmp9 = formatToPlainStringResult;
-          const tmp28 = importDefault(5308);
+          const tmp28 = importDefault(5329);
         }
       }
       if (length > 0) {
@@ -156,11 +156,11 @@ export const ForwardPreview = function ForwardPreview(message) {
         obj5[0] = obj6;
         obj5[1] = c7;
         obj5[2] = c7;
-        obj4[1] = callback(importDefault(5308), obj5);
+        obj4[1] = callback(importDefault(5329), obj5);
         tmp7 = callback(View, obj4);
         tmp8 = AttachmentIcon;
         tmp9 = formatToPlainStringResult;
-        const tmp22 = importDefault(5308);
+        const tmp22 = importDefault(5329);
       } else {
         const first = embeds[0];
         let proxyURL;
@@ -183,11 +183,11 @@ export const ForwardPreview = function ForwardPreview(message) {
           obj8[0] = obj9;
           obj8[1] = c7;
           obj8[2] = c7;
-          obj7[1] = callback(importDefault(5308), obj8);
+          obj7[1] = callback(importDefault(5329), obj8);
           tmp7 = callback(View, obj7);
           tmp8 = AttachmentIcon;
           tmp9 = formatToPlainStringResult;
-          const tmp17 = importDefault(5308);
+          const tmp17 = importDefault(5329);
         }
       }
     }
@@ -196,15 +196,15 @@ export const ForwardPreview = function ForwardPreview(message) {
       const obj10 = { count: null };
       obj10[0] = num3;
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1236).t.SJ6pPX, obj10);
-      AttachmentIcon = tmp2(9856).CirclePlayIcon;
+      AttachmentIcon = tmp2(9867).CirclePlayIcon;
     } else if (num2 > 0) {
       const intl2 = tmp2(1236).intl;
       const obj11 = { count: null };
       obj11[0] = num2;
       if (1 === num2) {
-        let ImagesIcon = tmp2(4856).ImageIcon;
+        let ImagesIcon = tmp2(4878).ImageIcon;
       } else {
-        ImagesIcon = tmp2(11146).ImagesIcon;
+        ImagesIcon = tmp2(11162).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.h4pFfU, obj11);
@@ -214,7 +214,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       const obj12 = { count: null };
       obj12[0] = length;
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1236).t["89ihS8"], obj12);
-      AttachmentIcon = tmp2(9840).AttachmentIcon;
+      AttachmentIcon = tmp2(9851).AttachmentIcon;
     }
   } else {
     tmp7 = null;
@@ -226,14 +226,14 @@ export const ForwardPreview = function ForwardPreview(message) {
     tmp33 = tmp7;
     if (null != tmp7) {
       obj13 = { shape: null, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
-      obj13[0] = tmp2(8341).CutoutShape.RoundedRect;
+      obj13[0] = tmp2(8363).CutoutShape.RoundedRect;
       const obj14 = { style: null, children: null };
       obj14[0] = tmp.attachmentPreviewOverflow;
       const obj15 = { cutouts: null, children: null };
       const items2 = [obj13];
       obj15[0] = items2;
       obj15[1] = tmp7;
-      const items3 = [callback(importDefault(8341), obj15), ];
+      const items3 = [callback(importDefault(8363), obj15), ];
       const obj16 = { style: null, variant: "text-xs/semibold", color: "text-default", children: null };
       obj16[0] = tmp.overflowCount;
       const items4 = ["+", length - 1];
@@ -312,7 +312,7 @@ export const ForwardPreview = function ForwardPreview(message) {
     obj26[0] = obj27;
     obj26[1] = c7;
     obj26[2] = c7;
-    tmp2Result = tmp2(8292);
+    tmp2Result = tmp2(8314);
     let num5 = checkpointData.cardId;
     if (num5 == null) {
       num5 = 0;
@@ -320,9 +320,9 @@ export const ForwardPreview = function ForwardPreview(message) {
     const obj28 = { uri: null };
     obj28[0] = tmp2Result.getCardAssetUrl(num5);
     obj26[3] = obj28;
-    obj25[1] = tmp36(importDefault(5308), obj26);
+    obj25[1] = tmp36(importDefault(5329), obj26);
     tmp36Result3 = tmp36(tmp35, obj25);
-    const tmp46 = importDefault(5308);
+    const tmp46 = importDefault(5329);
   }
   items5[3] = tmp36Result3;
   obj17[1] = items5;

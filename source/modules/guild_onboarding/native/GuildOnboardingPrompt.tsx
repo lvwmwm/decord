@@ -1,10 +1,10 @@
-// Module ID: 5370
-// Function ID: 5371
+// Module ID: 5391
+// Function ID: 5392
 // Name: PromptHeader
-// Dependencies: [32, 19, 17, 5216, 5305, 1910, 5282, 5279, 1925, 21, 4342, 5307, 712, 1499, 589, 1628, 4065, 689, 5368, 5371, 4338, 1236, 4755, 5374, 4766, 691, 5289, 5395, 5396, 5400, 1435, 4310, 5405, 2007, 4887, 5758, 2]
+// Dependencies: [32, 19, 17, 5237, 5326, 1910, 5303, 5300, 1925, 21, 4342, 5328, 712, 1499, 589, 1628, 4065, 689, 5389, 5392, 4338, 1236, 4777, 5395, 4788, 691, 5310, 5416, 5417, 5421, 1435, 4310, 5426, 2007, 4909, 5779, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 5370 (PromptHeader)
+// Module 5391 (PromptHeader)
 import DropdownOptionRow from "DropdownOptionRow";
 import TermsFieldListItem from "TermsFieldListItem";
 import get_ActivityIndicator from "n";
@@ -227,7 +227,7 @@ function DropdownOption(option) {
     str = "";
   }
   obj1[3] = str;
-  obj[1] = closure_15(importDefault(5400), obj1);
+  obj[1] = closure_15(importDefault(5421), obj1);
   const items1 = [closure_15(closure_6, obj), closure_15(option(4338).Text, { variant: "text-md/semibold", children: option.title })];
   obj[1] = items1;
   return closure_16(closure_6, obj);

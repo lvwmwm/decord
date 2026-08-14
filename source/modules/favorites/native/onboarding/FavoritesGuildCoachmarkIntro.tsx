@@ -1,54 +1,77 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15527
+// Function ID: 15528
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [19, 676, 1388, 21, 9766, 9758, 9765, 15504, 1236, 3047, 15429, 8702, 2]
+// Dependencies: [32, 19, 15497, 676, 1388, 21, 4083, 9776, 15522, 1236, 3047, 15528, 8716, 2]
 // Exports: default
 
-// Module 15510 (FavoritesGuildCoachmarkIntro)
+// Module 15527 (FavoritesGuildCoachmarkIntro)
+import _slicedToArray from "_slicedToArray";
 import noop from "noop";
+import withEqualityFn from "withEqualityFn";
 import { FAVORITES } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-let result = require("ContentDismissActionType").fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkIntro.tsx");
+let closure_9 = { code: "function FavoritesGuildCoachmarkIntroTsx1(){const{scrollPosition}=this.__closure;return scrollPosition.get()<=0;}" };
+let closure_10 = { code: "function FavoritesGuildCoachmarkIntroTsx2(atTop,wasAtTop){const{runOnJS,setScrolledToTop}=this.__closure;if(atTop===wasAtTop){return;}runOnJS(setScrolledToTop)(atTop);}" };
+let result = require("withEqualityFn").fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkIntro.tsx");
 
-export default function FavoritesGuildCoachmarkIntro(visible) {
-  visible = visible.visible;
-  const markAsDismissed = visible.markAsDismissed;
+export default function FavoritesGuildCoachmarkIntro(markAsDismissed) {
+  markAsDismissed = markAsDismissed.markAsDismissed;
+  let scrollPosition;
+  let first;
   let callback;
+  callback = undefined;
   let callback1;
+  scrollPosition = callback1.getState().scrollPosition;
+  const tmp = callback(callback.useState(() => scrollPosition.get() <= 0), 2);
+  first = tmp[0];
+  callback = tmp3;
+  let obj = markAsDismissed(first[6]);
+  const fn = function v() {
+    return scrollPosition.get() <= 0;
+  };
+  fn.__closure = { scrollPosition };
+  fn.__workletHash = 6053526688640;
+  fn.__initData = closure_9;
+  const fn2 = function p(arg0, arg1) {
+    if (arg0 !== arg1) {
+      markAsDismissed(first[6]).runOnJS(c3)(arg0);
+      const obj = markAsDismissed(first[6]);
+    }
+  };
+  obj = { runOnJS: markAsDismissed(first[6]).runOnJS, setScrolledToTop: tmp3 };
+  fn2.__closure = obj;
+  fn2.__workletHash = 13648062364539;
+  fn2.__initData = closure_10;
+  const animatedReaction = obj.useAnimatedReaction(fn, fn2);
   const items = [markAsDismissed];
-  callback = callback1.useCallback(() => {
-    markAsDismissed(outer1_5.USER_DISMISS);
+  callback = callback.useCallback(() => {
+    markAsDismissed(outer1_7.USER_DISMISS);
   }, items);
   const items1 = [markAsDismissed];
-  callback1 = callback1.useCallback(() => {
-    if (!obj.getIsFavoritesGuildEnabled()) {
-      let tmpResult = tmp(tmp2[5]);
-      const result = tmpResult.setFavoritesGuildVisibility(true, "favorites_button_onboarding");
-    }
-    tmpResult = tmp(tmp2[6]);
-    const result1 = tmpResult.setNextFavoritesGuildViewSource("intro_dc");
-    markAsDismissed(callback[7])(outer1_4);
-    markAsDismissed(outer1_5.TAKE_ACTION);
+  callback1 = callback.useCallback(() => {
+    const result = markAsDismissed(first[7]).setNextFavoritesGuildViewSource("intro_dc");
+    scrollPosition(first[8])(outer1_6);
+    markAsDismissed(outer1_7.TAKE_ACTION);
   }, items1);
-  const items2 = [visible, callback, callback1];
-  const memo = callback1.useMemo(() => {
-    const obj = { visible, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: null, buttonLabel: null, onButtonPress: null };
-    const intl = visible(callback[8]).intl;
-    obj[2] = intl.string(markAsDismissed(callback[9])["bu/mLv"]);
-    const intl2 = visible(callback[8]).intl;
-    obj[3] = intl2.string(markAsDismissed(callback[9]).kxQJ7q);
+  const items2 = [first, callback, callback1];
+  const memo = callback.useMemo(() => {
+    const obj = { visible: first, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: null, buttonLabel: null, onButtonPress: null };
+    const intl = markAsDismissed(first[9]).intl;
+    obj[2] = intl.string(scrollPosition(first[10])["bu/mLv"]);
+    const intl2 = markAsDismissed(first[9]).intl;
+    obj[3] = intl2.string(scrollPosition(first[10]).kxQJ7q);
     obj[4] = callback;
     obj[5] = function renderImgComponent() {
-      return callback2(callback(table[10]), {});
+      return callback2(callback(table[11]), {});
     };
-    const intl3 = visible(callback[8]).intl;
-    obj[6] = intl3.string(markAsDismissed(callback[9])["vN/KQ9"]);
+    const intl3 = markAsDismissed(first[9]).intl;
+    obj[6] = intl3.string(scrollPosition(first[10])["vN/KQ9"]);
     obj[7] = callback1;
     return obj;
   }, items2);
-  const coachmark = visible(callback[11]).useCoachmark(visible.targetRef, memo);
+  const coachmark = markAsDismissed(first[12]).useCoachmark(markAsDismissed.targetRef, memo);
   return null;
 };

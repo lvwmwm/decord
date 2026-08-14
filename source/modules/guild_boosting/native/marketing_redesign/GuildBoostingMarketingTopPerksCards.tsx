@@ -1,10 +1,10 @@
-// Module ID: 12938
-// Function ID: 12939
+// Module ID: 12956
+// Function ID: 12957
 // Name: items
-// Dependencies: [19, 17, 4334, 21, 4342, 712, 1236, 12939, 5759, 12940, 12941, 4338, 11986, 2]
+// Dependencies: [19, 17, 4334, 21, 4342, 712, 1236, 12957, 5780, 12958, 12959, 4338, 12002, 2]
 // Exports: default
 
-// Module 12938 (items)
+// Module 12956 (items)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -37,7 +37,7 @@ let items = [
       return intl.string(require(1236) /* getSystemLocale */.t.HTvLGu);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(12939) });
+      return callback(closure_3, { style, source: importDefault(12957) });
     }
   },
   {
@@ -51,10 +51,10 @@ let items = [
     },
     getGraphic(arg0) {
       const obj = { source: null, autoPlay: null, style: null };
-      obj[0] = require(12940);
+      obj[0] = require(12958);
       obj[1] = !useReducedMotion.useReducedMotion;
       obj[2] = arg0;
-      return callback(importDefault(5759), obj);
+      return callback(importDefault(5780), obj);
     }
   },
   {
@@ -67,7 +67,7 @@ let items = [
       return intl.string(require(1236) /* getSystemLocale */.t.yCjoUC);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(12941) });
+      return callback(closure_3, { style, source: importDefault(12959) });
     }
   }
 ];
@@ -82,7 +82,7 @@ const obj2 = {
     return intl.string(require(1236) /* getSystemLocale */.t.HTvLGu);
   },
   getGraphic(style) {
-    return callback(closure_3, { style, source: importDefault(12939) });
+    return callback(closure_3, { style, source: importDefault(12957) });
   }
 };
 const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");
@@ -114,7 +114,7 @@ export default function GuildBoostingMarketingTopPerksCards() {
     obj[1] = items1;
     return outer1_7(outer1_4, obj, arg1);
   });
-  items[1] = callback(require(11986) /* items */.MarketingCardsScroller, obj);
+  items[1] = callback(require(12002) /* items */.MarketingCardsScroller, obj);
   obj[1] = items;
   return callback2(closure_4, obj);
 };

@@ -1,6 +1,6 @@
 // Module ID: 4355
 // Function ID: 4356
-// Dependencies: [32, 5, 4356, 1395, 1391, 4357, 676, 9292, 530, 5274, 4198, 4353, 5170, 709, 8985, 698, 1222, 1363, 1236, 5981, 4582, 2]
+// Dependencies: [32, 5, 4356, 1395, 1391, 4357, 676, 9306, 530, 5295, 4198, 4353, 5191, 709, 8999, 698, 1222, 1363, 1236, 6002, 4604, 2]
 
 // Module 4355
 import _slicedToArray from "_slicedToArray";
@@ -293,9 +293,9 @@ export default {
           tmp3 = channel;
           const tmp6Result = tmp6(4353);
         } else {
-          const privateChannel = importDefault(5170).selectPrivateChannel(channel.id);
+          const privateChannel = importDefault(5191).selectPrivateChannel(channel.id);
           tmp3 = channel;
-          const obj3 = importDefault(5170);
+          const obj3 = importDefault(5191);
         }
         obj2 = require(4198) /* getRootNavigationRef */;
         tmp6 = require;
@@ -428,8 +428,8 @@ export default {
       tmp5(4353).transitionToChannel(tmp.id, { navigationReplace: true });
       const tmp5Result = tmp5(4353);
     } else {
-      const privateChannel = tmp2(5170).selectPrivateChannel(tmp.id);
-      const tmp2Result = tmp2(5170);
+      const privateChannel = tmp2(5191).selectPrivateChannel(tmp.id);
+      const tmp2Result = tmp2(5191);
     }
     return tmp;
   },
@@ -442,7 +442,7 @@ export default {
     if (arg2 === undefined) {
       flag2 = false;
     }
-    if (importDefault(8985)(id)) {
+    if (importDefault(8999)(id)) {
       let tmpResult = tmp(698);
       let obj = { last_changelog_id: null, unread_count: null };
       obj[0] = handleUserSettingsProtoStoreChange.latestChangelogId();
@@ -590,7 +590,7 @@ export default {
         tmp10 = isThreadResult;
       }
       if (!tmp10) {
-        obj1 = outer1_1(5981);
+        obj1 = outer1_1(6002);
         const result = obj1.checkGuildTemplateDirty(guildId);
       }
       return closure_1;
@@ -917,7 +917,7 @@ export default {
     } else {
       result = closure_11.CHANNEL_STORE_LISTING(arg0);
     }
-    const result1 = _require(4582).httpGetWithCountryCodeQuery(result);
+    const result1 = _require(4604).httpGetWithCountryCodeQuery(result);
     return result1.then((body) => {
       let obj = outer1_1(outer1_2[13]);
       obj = { type: "STORE_LISTING_FETCH_SUCCESS", channelId: closure_0, storeListing: body.body };
@@ -949,7 +949,7 @@ export default {
       const obj4 = outer1_0(530);
       obj2[3] = obj4.rejectWithMigratedError();
       closure_0 = yield HTTP.post(obj2);
-      const obj = outer1_1(5981);
+      const obj = outer1_1(6002);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();

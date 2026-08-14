@@ -1,10 +1,10 @@
-// Module ID: 15109
-// Function ID: 15110
+// Module ID: 15123
+// Function ID: 15124
 // Name: FramePreviewOverrideSection
-// Dependencies: [32, 19, 17, 7049, 7065, 8848, 21, 4342, 712, 9394, 4338, 4756, 647, 8328, 15110, 1297, 10171, 2]
+// Dependencies: [32, 19, 17, 7071, 7087, 8862, 21, 4342, 712, 9408, 4338, 4778, 647, 8350, 15124, 1297, 10185, 2]
 // Exports: default
 
-// Module 15109 (FramePreviewOverrideSection)
+// Module 15123 (FramePreviewOverrideSection)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -52,13 +52,13 @@ function FramePreviewOverrideSection() {
     obj3[2] = function onPress() {
       callback();
     };
-    items[3] = callback3(_require(4756).BaseTextButton, obj3);
+    items[3] = callback3(_require(4778).BaseTextButton, obj3);
     let tmp13Result = null != tmp2;
     if (tmp13Result) {
       const obj4 = { pillStyle: null, text: "Clear override", onPress: null };
       obj4[0] = tmp.secondaryButton;
       obj4[2] = tmp4;
-      tmp13Result = callback3(_require(4756).BaseTextButton, obj4);
+      tmp13Result = callback3(_require(4778).BaseTextButton, obj4);
     }
     items[4] = tmp13Result;
     obj[1] = items;
@@ -139,7 +139,7 @@ function UnpurchasedCollectiblesShopCardV2(arg0) {
   const obj = {};
   const tmp = callback(React.useState(0), 2);
   const merged = Object.assign(arg0);
-  return callback3(importDefault(9394), obj, tmp2);
+  return callback3(importDefault(9408), obj, tmp2);
 }
 const obj17 = { color: require("Themes").colors.TEXT_MUTED, textAlign: "center", fontSize: 14 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/tooling/CollectiblesTool.tsx");

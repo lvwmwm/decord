@@ -1,10 +1,10 @@
-// Module ID: 8249
-// Function ID: 8250
+// Module ID: 8270
+// Function ID: 8271
 // Name: checkSpoilerEmbeds
-// Dependencies: [676, 4677, 4258, 8250, 4326, 1208, 2]
-// Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, runMessageMarkupPostProcessors
+// Dependencies: [676, 4699, 4258, 8271, 4326, 8276, 1208, 2]
+// Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, removeUserProfileEmbedLinks, runMessageMarkupPostProcessors
 
-// Module 8249 (checkSpoilerEmbeds)
+// Module 8270 (checkSpoilerEmbeds)
 import ME from "ME";
 import set from "Version";
 
@@ -39944,6 +39944,17 @@ function containsMatchingNode(content, fn) {
     }
   }
 }
+function isUserProfileEmbedLink(type) {
+  let tmp = "link" === type.type;
+  if (tmp) {
+    tmp = null != type.target;
+  }
+  if (tmp) {
+    tmp = null != require(4326) /* getPathsFromURL */.parseUserProfileEmbedCode(type.target);
+    const obj = require(4326) /* getPathsFromURL */;
+  }
+  return tmp;
+}
 ({ MessageEmbedTypes, MessageTypes: c3 } = ME);
 let items = [, ];
 ({ IMAGE: arr[0], GIFV: arr[1] } = MessageEmbedTypes);
@@ -39964,7 +39975,7 @@ export const checkForSimpleEmbedMessage = function checkForSimpleEmbedMessage(ar
           if (obj.isEmbedInline(first1)) {
             items = [];
           }
-          obj = require(4677) /* getEffectiveVideoProvider */;
+          obj = require(4699) /* getEffectiveVideoProvider */;
         }
       } else {
         items = arg0;
@@ -39988,8 +39999,8 @@ export const removeExperimentLinks = function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(8250).isExperimentEmbedURL(type.target);
-      const obj = callback(8250);
+      tmp = !callback(8271).isExperimentEmbedURL(type.target);
+      const obj = callback(8271);
     }
     return tmp;
   });
@@ -40008,6 +40019,32 @@ export const removeQuestsEmbedLinks = function removeQuestsEmbedLinks(arr) {
     }
     return !tmp4;
   });
+};
+export const removeUserProfileEmbedLinks = function removeUserProfileEmbedLinks(arr) {
+  let tmp = arr;
+  if (arr.some(isUserProfileEmbedLink)) {
+    let tmp2 = arr;
+    if (!arr.some((type) => "link" !== type.type)) {
+      let found = arr;
+      if (obj.getIsUserProfileEmbedRenderingEnabled("MarkupPostProcessors")) {
+        found = arr.filter((type) => {
+          let tmp = "link" === type.type;
+          if (tmp) {
+            tmp = null != type.target;
+          }
+          if (tmp) {
+            tmp = null != callback(table[4]).parseUserProfileEmbedCode(type.target);
+            const obj = callback(table[4]);
+          }
+          return !tmp;
+        });
+      }
+      tmp2 = found;
+      obj = require(8276) /* useIsUserProfileEmbedRenderingEnabled */;
+    }
+    tmp = tmp2;
+  }
+  return tmp;
 };
 export const removeGameServerShareLinks = function removeGameServerShareLinks(arr) {
   return arr.filter((target) => {
@@ -40064,8 +40101,8 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
                           type = type.type;
                           let _Object = Object;
                           let _HermesInternal = HermesInternal;
-                          closure_1(closure_2[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-                          let obj = closure_1(closure_2[5]);
+                          closure_1(closure_2[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+                          let obj = closure_1(closure_2[6]);
                         }
                       }
                     });
@@ -40076,8 +40113,8 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
                     type = type.type;
                     let _Object = Object;
                     let _HermesInternal = HermesInternal;
-                    closure_1(closure_2[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-                    let obj = closure_1(closure_2[5]);
+                    closure_1(closure_2[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+                    let obj = closure_1(closure_2[6]);
                   }
                 }
               });
@@ -40088,8 +40125,8 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
               type = type.type;
               let _Object = Object;
               let _HermesInternal = HermesInternal;
-              closure_1(closure_2[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-              let obj = closure_1(closure_2[5]);
+              closure_1(closure_2[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+              let obj = closure_1(closure_2[6]);
             }
           }
         });
@@ -40100,8 +40137,8 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
         type = type.type;
         let _Object = Object;
         let _HermesInternal = HermesInternal;
-        closure_1(closure_2[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-        let obj = closure_1(closure_2[5]);
+        closure_1(closure_2[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+        let obj = closure_1(closure_2[6]);
       }
     }
   });
@@ -40153,7 +40190,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
             if (obj3.isEmbedInline(first1)) {
               items2 = [];
             }
-            obj3 = _require(4677);
+            obj3 = _require(4699);
           }
         } else {
           items2 = arr;
@@ -40265,8 +40302,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     found1 = found.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !callback(8250).isExperimentEmbedURL(type.target);
-        const obj = callback(8250);
+        tmp = !callback(8271).isExperimentEmbedURL(type.target);
+        const obj = callback(8271);
       }
       return tmp;
     });
@@ -40336,8 +40373,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
                             type = type.type;
                             let _Object = Object;
                             let _HermesInternal = HermesInternal;
-                            closure_1(closure_2[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-                            let obj = closure_1(closure_2[5]);
+                            closure_1(closure_2[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+                            let obj = closure_1(closure_2[6]);
                           }
                         }
                       });
@@ -40348,8 +40385,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
                       type = type.type;
                       let _Object = Object;
                       let _HermesInternal = HermesInternal;
-                      closure_1(closure_2[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-                      let obj = closure_1(closure_2[5]);
+                      closure_1(closure_2[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+                      let obj = closure_1(closure_2[6]);
                     }
                   }
                 });
@@ -40360,8 +40397,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
                 type = type.type;
                 let _Object = Object;
                 let _HermesInternal = HermesInternal;
-                closure_1(closure_2[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-                let obj = closure_1(closure_2[5]);
+                closure_1(closure_2[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+                let obj = closure_1(closure_2[6]);
               }
             }
           });
@@ -40372,8 +40409,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
           type = type.type;
           let _Object = Object;
           let _HermesInternal = HermesInternal;
-          closure_1(closure_2[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-          let obj = closure_1(closure_2[5]);
+          closure_1(closure_2[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+          let obj = closure_1(closure_2[6]);
         }
       }
     });

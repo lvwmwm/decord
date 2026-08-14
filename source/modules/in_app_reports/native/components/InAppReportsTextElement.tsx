@@ -1,10 +1,10 @@
-// Module ID: 8084
-// Function ID: 8085
+// Module ID: 8105
+// Function ID: 8106
 // Name: TextElement
-// Dependencies: [19, 17, 21, 4342, 4774, 4338, 2]
+// Dependencies: [19, 17, 21, 4342, 4796, 4338, 2]
 // Exports: default
 
-// Module 8084 (TextElement)
+// Module 8105 (TextElement)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ export default function TextElement(element) {
   const data = element.element.data;
   ({ header, body } = data);
   const tmp = callback2();
-  let obj = importAll(4774);
+  let obj = importAll(4796);
   let tmp3 = null;
   if (data.is_localized) {
     if (null != header) {

@@ -1,10 +1,10 @@
-// Module ID: 7466
-// Function ID: 7467
+// Module ID: 7487
+// Function ID: 7488
 // Name: serializePurchaseResponse
-// Dependencies: [5, 17, 4341, 4042, 1922, 5899, 676, 1924, 7467, 3, 38, 500, 7486, 5902, 12, 514, 4022, 589, 7487, 1625, 4322, 7488, 2]
+// Dependencies: [5, 17, 4341, 4042, 1922, 5920, 676, 1924, 7488, 3, 38, 500, 7507, 5923, 12, 514, 4022, 589, 7508, 1625, 4322, 7509, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
-// Module 7466 (serializePurchaseResponse)
+// Module 7487 (serializePurchaseResponse)
 import updateProduct from "updateProduct";
 import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -252,7 +252,7 @@ function isStorekit2Available() {
 function remapStorefront(countryCode) {
   const country = convertToAlpha2(countryCode.countryCode);
   if (null == countryCode.currency) {
-    if (null == require(7487) /* GeneratedPaymentCurrencies */.GeneratedPaymentCurrenciesSets.APPLE_STORE_COUNTRY_CURRENCIES[country]) {
+    if (null == require(7508) /* GeneratedPaymentCurrencies */.GeneratedPaymentCurrenciesSets.APPLE_STORE_COUNTRY_CURRENCIES[country]) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
       const error = new Error("Unable to get currency from countryCode " + countryCode.countryCode);
@@ -300,7 +300,7 @@ function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(7467).getStorefront();
+              obj1[0] = outer1_0(7488).getStorefront();
               return obj1;
             } else {
               c5 = 3;
@@ -353,18 +353,18 @@ function _fetchStoreFront() {
 }
 ({ CurrencyCodes: metroImportAll, IOS_BUNDLE_ID } = ME);
 ({ InAppUtils: unpackModuleId, RNIapIosSk2: closure_12 } = require("initialize").NativeModules);
-let items = [require("module_7467").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
+let items = [require("module_7488").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
 let set = new Set(items);
 new require("DEFAULT_COUNTRY_CODE_NAME")("IAPUtils.tsx");
 let _default = {
   loadProducts() {
     if (obj.isIOS()) {
       const _Object = Object;
-      let items = [importDefault(7486).fetchSubscriptions(Object.values(tmp(5902).ProductIds)), ];
-      const obj2 = importDefault(7486);
+      let items = [importDefault(7507).fetchSubscriptions(Object.values(tmp(5923).ProductIds)), ];
+      const obj2 = importDefault(7507);
       const _Object2 = Object;
-      items[1] = importDefault(7486).fetchProducts(Object.values(tmp(5902).ProductIds));
-      const obj3 = importDefault(7486);
+      items[1] = importDefault(7507).fetchProducts(Object.values(tmp(5923).ProductIds));
+      const obj3 = importDefault(7507);
       let nextPromise = _Promise.all(items).then((arg0) => {
         let tmp;
         [r10007, tmp] = arg0;

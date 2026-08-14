@@ -1,10 +1,10 @@
-// Module ID: 16598
-// Function ID: 16599
+// Module ID: 16611
+// Function ID: 16612
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8309, 676, 21, 4342, 712, 1628, 589, 13963, 16583, 8323, 8352, 4901, 8313, 8315, 4338, 1236, 16592, 4755, 16580, 2]
+// Dependencies: [5, 32, 19, 17, 8331, 676, 21, 4342, 712, 1628, 589, 13975, 16596, 8345, 8374, 4923, 8335, 8337, 4338, 1236, 16605, 4777, 16593, 2]
 // Exports: default
 
-// Module 16598 (RedesignAddAvatarModal)
+// Module 16611 (RedesignAddAvatarModal)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -84,7 +84,7 @@ export default function RedesignAddAvatarModal(route) {
               dependencyMap = 1;
               v0 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = outer1_0(4901).openImagePicker(obj1);
+              obj2[0] = outer1_0(4923).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -100,19 +100,19 @@ export default function RedesignAddAvatarModal(route) {
             if (null == base64) {
               let pendingImage;
               if (null != outer1_0) {
-                obj = outer1_0(13963);
+                obj = outer1_0(13975);
                 const obj4 = { imageUri: null, description: null };
                 obj4[0] = base64;
-                obj2 = outer1_0(8323);
+                obj2 = outer1_0(8345);
                 obj4[1] = obj2.generateAvatarDescription();
                 pendingImage = obj.createPendingImage(obj4);
               }
               outer1_1 = pendingImage;
-              obj3 = outer1_0(8313);
+              obj3 = outer1_0(8335);
               let obj5 = { avatar: null };
               obj5[0] = outer1_1;
               obj3.setPendingChanges(obj5);
-              obj5 = outer1_0(8315);
+              obj5 = outer1_0(8337);
               let str = "set";
               if (null == outer1_1) {
                 str = "remove";

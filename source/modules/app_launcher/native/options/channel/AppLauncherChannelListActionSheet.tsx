@@ -1,10 +1,10 @@
-// Module ID: 11633
-// Function ID: 11634
+// Module ID: 11649
+// Function ID: 11650
 // Name: ChannelIcon
-// Dependencies: [32, 19, 1910, 21, 4342, 712, 4850, 4805, 11624, 5200, 4310, 11611, 11612, 4535, 5414, 4338, 2]
+// Dependencies: [32, 19, 1910, 21, 4342, 712, 4872, 4827, 11640, 5221, 4310, 11627, 11628, 4535, 5435, 4338, 2]
 // Exports: default
 
-// Module 11633 (ChannelIcon)
+// Module 11649 (ChannelIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -58,7 +58,7 @@ function ChannelListItem(arg0) {
   obj[2] = callback(ChannelIcon, { channel });
   obj[3] = 0 === index;
   obj[4] = index === totalCount - 1;
-  return callback(require(5414) /* TableRowInner */.TableRow, obj, channel.id);
+  return callback(require(5435) /* TableRowInner */.TableRow, obj, channel.id);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 const AppLauncherChannelListActionSheet = "AppLauncherChannelListActionSheet";

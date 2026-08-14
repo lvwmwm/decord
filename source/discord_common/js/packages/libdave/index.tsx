@@ -1,9 +1,9 @@
-// Module ID: 9244
-// Function ID: 9245
+// Module ID: 9258
+// Function ID: 9259
 // Name: set
-// Dependencies: [2, 9245]
+// Dependencies: [2, 9259]
 
-// Module 9244 (set)
+// Module 9258 (set)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/libdave/index.tsx");
 for (const key10018 in require("generateDisplayableCode")) {
   let tmp3 = key10018;

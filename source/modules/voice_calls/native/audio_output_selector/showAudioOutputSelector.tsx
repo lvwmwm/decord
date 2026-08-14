@@ -1,10 +1,10 @@
-// Module ID: 9223
-// Function ID: 9224
+// Module ID: 9237
+// Function ID: 9238
 // Name: showAudioOutputSelector
-// Dependencies: [17, 9224, 500, 4310, 9225, 2007, 2]
+// Dependencies: [17, 9238, 500, 4310, 9239, 2007, 2]
 // Exports: showAudioOutputSelector
 
-// Module 9223 (showAudioOutputSelector)
+// Module 9237 (showAudioOutputSelector)
 import { NativeModules } from "get ActivityIndicator";
 import { VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY as closure_4 } from "VOICE_PANEL_SETTINGS_KEY";
 
@@ -16,7 +16,7 @@ export const showAudioOutputSelector = function showAudioOutputSelector(channelI
     obj = { channelId: null, isConnectedToVoiceChannel: null };
     obj[0] = channelId;
     obj[1] = closure_1;
-    importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(9225, dependencyMap.paths), closure_4, obj);
+    importDefault(4310).openLazy(require(2007) /* asyncRequireImpl */(9239, dependencyMap.paths), closure_4, obj);
     const obj2 = importDefault(4310);
   } else {
     const AudioRoutePicker = NativeModules.AudioRoutePicker;

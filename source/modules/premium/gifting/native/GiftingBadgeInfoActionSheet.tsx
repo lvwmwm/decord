@@ -1,10 +1,10 @@
-// Module ID: 10084
-// Function ID: 10085
+// Module ID: 10096
+// Function ID: 10097
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4334, 8839, 676, 21, 4342, 712, 1628, 589, 8835, 698, 5437, 4338, 1236, 2399, 10085, 2]
+// Dependencies: [19, 17, 4334, 8853, 676, 21, 4342, 712, 1628, 589, 8849, 698, 5458, 4338, 1236, 2399, 10097, 2]
 // Exports: default
 
-// Module 10084 (GiftingBadgeInfoActionSheet)
+// Module 10096 (GiftingBadgeInfoActionSheet)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -41,7 +41,7 @@ export default function GiftingBadgeInfoActionSheet() {
   const require = tmp;
   let obj = require(589) /* initialize */;
   let items = [map];
-  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8835).BadgeId.GIFTING));
+  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8849).BadgeId.GIFTING));
   let obj1 = require(589) /* initialize */;
   const items1 = [maybeApplyNoTextColorForLightCustomTheme];
   const importDefault = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
@@ -118,5 +118,5 @@ export default function GiftingBadgeInfoActionSheet() {
   items4[1] = callback(View, obj4);
   obj[1] = items4;
   obj5[2] = callback2(View, obj);
-  return callback(require(5437) /* Background */.BottomSheet, obj5);
+  return callback(require(5458) /* Background */.BottomSheet, obj5);
 };

@@ -1,9 +1,9 @@
-// Module ID: 15136
-// Function ID: 15137
+// Module ID: 15150
+// Function ID: 15151
 // Name: useScreenRecordingStore
-// Dependencies: [644, 15137, 2]
+// Dependencies: [644, 15151, 2]
 
-// Module 15136 (useScreenRecordingStore)
+// Module 15150 (useScreenRecordingStore)
 import keys from "keys";
 
 let obj = keys.create((arg0, arg1) => {
@@ -64,7 +64,7 @@ let obj = keys.create((arg0, arg1) => {
       return callback({ currentStep: 0, stepStartedTime: Date.now(), isCompleted: false });
     },
     completeActionSheet() {
-      callback(15137).handleStopAndSend();
+      callback(15151).handleStopAndSend();
       callback({ currentStep: 0, stepStartedTime: null, isCompleted: false });
     }
   };

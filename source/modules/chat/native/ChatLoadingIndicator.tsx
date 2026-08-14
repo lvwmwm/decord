@@ -1,10 +1,10 @@
-// Module ID: 12613
-// Function ID: 12614
+// Module ID: 12631
+// Function ID: 12632
 // Name: openLoadingIndicatorDebugBody
-// Dependencies: [32, 19, 17, 4334, 5035, 4562, 1979, 1922, 6923, 676, 21, 4342, 712, 4684, 4773, 2007, 589, 4338, 12614, 4083, 4343, 1236, 4887, 2]
+// Dependencies: [32, 19, 17, 4334, 5057, 4584, 1979, 1922, 6944, 676, 21, 4342, 712, 4706, 4795, 2007, 589, 4338, 12632, 4083, 4343, 1236, 4909, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 12613 (openLoadingIndicatorDebugBody)
+// Module 12631 (openLoadingIndicatorDebugBody)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "module_4083";
 import { View } from "Text";
@@ -49,8 +49,8 @@ function openLoadingIndicatorDebugBody() {
         };
       });
     };
-    importDefault(4684).openLazy(obj);
-    const obj2 = importDefault(4684);
+    importDefault(4706).openLazy(obj);
+    const obj2 = importDefault(4706);
   }
 }
 let c4 = importAllResult;
@@ -286,7 +286,7 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
     obj2 = { onPress: null, children: null };
     obj2[0] = openLoadingIndicatorDebugBody;
     obj2[1] = tmp8;
-    tmp7Result = callback2(stateFromStores(4887).PressableOpacity, obj2);
+    tmp7Result = callback2(stateFromStores(4909).PressableOpacity, obj2);
   }
   return tmp7Result;
 };

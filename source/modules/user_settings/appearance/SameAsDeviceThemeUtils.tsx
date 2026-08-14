@@ -1,10 +1,10 @@
-// Module ID: 14485
-// Function ID: 14486
+// Module ID: 14498
+// Function ID: 14499
 // Name: enableSameAsDeviceTheme
-// Dependencies: [4163, 1302, 1305, 8747, 1347, 1363, 4190, 2]
+// Dependencies: [4163, 1302, 1305, 8761, 1347, 1363, 4190, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 14485 (enableSameAsDeviceTheme)
+// Module 14498 (enableSameAsDeviceTheme)
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import handleThemeChange from "handleThemeChange";
 import SystemThemeState from "SystemThemeState";
@@ -16,7 +16,7 @@ const require = arg1;
 let result = require("SystemThemeState").fileFinishedImporting("modules/user_settings/appearance/SameAsDeviceThemeUtils.tsx");
 
 export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(arg0) {
-  let obj = importDefault(8747);
+  let obj = importDefault(8761);
   const result = obj.setShouldSyncAppearanceSettings(false);
   let obj1 = syncedClientTheme;
   if (null == syncedClientTheme.getSyncedClientTheme(constants.LIGHT)) {

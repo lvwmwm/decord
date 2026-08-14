@@ -1,14 +1,14 @@
-// Module ID: 12154
-// Function ID: 12155
+// Module ID: 12172
+// Function ID: 12173
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 12137, 676, 21, 4342, 712, 1499, 5409, 12150, 4241, 12145, 1297, 1236, 4338, 8514, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 12155, 676, 21, 4342, 712, 1499, 5430, 12168, 4241, 12163, 1297, 1236, 4338, 8536, 4777, 2]
 // Exports: default
 
-// Module 12154 (HubEmailConnectionSubmitSchool)
+// Module 12172 (HubEmailConnectionSubmitSchool)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
-import get_ActivityIndicator from "module_8514";
+import get_ActivityIndicator from "module_8536";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -151,7 +151,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   obj = { ref, contentContainerStyle: null, children: null };
   const items = [tmp.scrollViewContainer, ];
   obj = { paddingBottom: null };
-  obj[0] = importDefault(5409)().insets.bottom + importDefault(712).space.PX_16;
+  obj[0] = importDefault(5430)().insets.bottom + importDefault(712).space.PX_16;
   items[1] = obj;
   obj[1] = items;
   let obj1 = { style: tmp.container, children: null };
@@ -196,7 +196,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       }
     }, 100);
   };
-  items1[2] = callback2(importDefault(8514), obj4);
+  items1[2] = callback2(importDefault(8536), obj4);
   obj1[1] = items1;
   const items2 = [closure_10(first, obj1), callback2(first, { style: tmp.redesignGrowSpacing }), ];
   const obj7 = { style: tmp.redesignSubmit, children: null };
@@ -213,9 +213,9 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
     }
     return applyArgumentsResult;
   };
-  obj7[1] = callback2(require(4755) /* Button */.Button, obj8);
+  obj7[1] = callback2(require(4777) /* Button */.Button, obj8);
   items2[2] = callback2(first, obj7);
   obj[2] = items2;
   obj5[0] = closure_10(tmp11, obj);
-  return callback2(require(12145) /* HubEmailConnectionModal */.HubEmailConnectionScreen, obj5);
+  return callback2(require(12163) /* HubEmailConnectionModal */.HubEmailConnectionScreen, obj5);
 };

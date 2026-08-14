@@ -1,10 +1,10 @@
-// Module ID: 11425
-// Function ID: 11426
+// Module ID: 11441
+// Function ID: 11442
 // Name: mutable
-// Dependencies: [1495, 4083, 5412, 1894, 4207, 10289, 2]
+// Dependencies: [1495, 4083, 5433, 1894, 4207, 10303, 2]
 // Exports: default, getKeyboardStateWorklet
 
-// Module 11425 (mutable)
+// Module 11441 (mutable)
 import module_4083 from "module_4083";
 import useCustomKeyboardHeight from "useCustomKeyboardHeight";
 import useSystemKeyboardHeight from "useSystemKeyboardHeight";
@@ -21,7 +21,7 @@ require("subscribeToKeyboardUIStore")((arg0) => {
   let keyboardHeight;
   let keyboardType;
   ({ customKeyboardHeight, keyboardHeight, keyboardType } = arg0);
-  importDefault(10289)(module_4083, { customKeyboardHeight, keyboardHeight, keyboardType });
+  importDefault(10303)(module_4083, { customKeyboardHeight, keyboardHeight, keyboardType });
 });
 function getKeyboardStateWorklet() {
   return module_4083.get();

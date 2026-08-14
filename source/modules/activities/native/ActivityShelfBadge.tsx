@@ -1,10 +1,10 @@
-// Module ID: 11529
-// Function ID: 11530
+// Module ID: 11545
+// Function ID: 11546
 // Name: ActivityShelfBadge
 // Dependencies: [19, 17, 676, 21, 4342, 712, 1297, 1954, 4338, 1236, 2]
 // Exports: default
 
-// Module 11529 (ActivityShelfBadge)
+// Module 11545 (ActivityShelfBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

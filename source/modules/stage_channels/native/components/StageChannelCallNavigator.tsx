@@ -1,13 +1,13 @@
-// Module ID: 10731
-// Function ID: 10732
+// Module ID: 10747
+// Function ID: 10748
 // Name: ModeratorViewOverlay
-// Dependencies: [32, 19, 17, 505, 21, 10732, 4083, 4754, 712, 10733, 10792, 10735, 9793, 9792, 9795, 10683, 4538, 10793, 10870, 4072, 10628, 10878, 10879, 10738, 10884, 10892, 10896, 10929, 10930, 4342, 10931, 10755, 2]
+// Dependencies: [32, 19, 17, 505, 21, 10748, 4083, 4776, 712, 10749, 10808, 10751, 9804, 9803, 9806, 10699, 4570, 10809, 10886, 4072, 10644, 10894, 10895, 10754, 10900, 10908, 10912, 10945, 10946, 4342, 10947, 10771, 2]
 // Exports: default
 
-// Module 10731 (ModeratorViewOverlay)
+// Module 10747 (ModeratorViewOverlay)
 import set from "set";
 import ManaContext from "ManaContext";
-import get_ActivityIndicator from "module_10793";
+import get_ActivityIndicator from "module_10809";
 import { ThemeTypes } from "sum";
 import jsxProd from "GestureContainer";
 import createCacheKey from "createCacheKey";
@@ -91,7 +91,7 @@ function JoinStageOverlay(channel) {
     obj = { opacity: obj.withSpring(num, outer1_11) };
     return obj;
   };
-  obj = { withSpring: first(4754).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
+  obj = { withSpring: first(4776).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
   fn.__closure = obj;
   fn.__workletHash = 1929951426580;
   fn.__initData = closure_15;
@@ -111,17 +111,17 @@ function JoinStageOverlay(channel) {
   items[1] = obj1;
   items[2] = animatedStyle;
   obj[0] = items;
-  obj[1] = callback2(importDefault(10792), { channel: channel.channel });
+  obj[1] = callback2(importDefault(10808), { channel: channel.channel });
   return callback2(importDefault(4083).View, obj);
 }
 function StagePromptWrapper(channel) {
   const obj = { children: null };
   obj[0] = callback2(StagePromptInner, { channel: channel.channel });
-  return callback2(require(10931) /* RootThemeContextProvider */.DisableCustomTheme, obj);
+  return callback2(require(10947) /* RootThemeContextProvider */.DisableCustomTheme, obj);
 }
 function StagePromptInner(channel) {
   const tmp = createCacheKey();
-  return callback2(require(10755) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
+  return callback2(require(10771) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
 }
 ({ StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);

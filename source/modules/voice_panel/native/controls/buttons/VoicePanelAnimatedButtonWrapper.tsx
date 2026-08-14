@@ -1,10 +1,10 @@
-// Module ID: 16330
-// Function ID: 16331
+// Module ID: 16348
+// Function ID: 16349
 // Name: AnimatedButtonWrapper
-// Dependencies: [19, 17, 11705, 21, 4342, 712, 4083, 16246, 500, 4754, 4343, 2]
+// Dependencies: [19, 17, 11721, 21, 4342, 712, 4083, 16264, 500, 4776, 4343, 2]
 // Exports: default
 
-// Module 16330 (AnimatedButtonWrapper)
+// Module 16348 (AnimatedButtonWrapper)
 import noop from "noop";
 import { MODE_CHANGE_PHYSICS } from "VoicePanelModes";
 import { jsx } from "jsxProd";

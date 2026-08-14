@@ -1,10 +1,10 @@
-// Module ID: 14278
-// Function ID: 14279
+// Module ID: 14291
+// Function ID: 14292
 // Name: OneWayToTwoWayNewTag
-// Dependencies: [19, 17, 676, 1388, 21, 4342, 712, 5276, 1297, 10045, 4338, 4755, 1236, 2]
+// Dependencies: [19, 17, 676, 1388, 21, 4342, 712, 5297, 1297, 10056, 4338, 4777, 1236, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 14278 (OneWayToTwoWayNewTag)
+// Module 14291 (OneWayToTwoWayNewTag)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { Fonts } from "ME";
@@ -54,7 +54,7 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
   obj = { style: tmp.titleContainer, children: null };
   const items = [newIndicatorDismissibleContent];
   const items1 = [
-    callback(importDefault(10045), {
+    callback(importDefault(10056), {
       contentTypes: items,
       children(visibleContent) {
         let tmp2 = null;
@@ -77,7 +77,7 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
   const intl = newIndicatorDismissibleContent(1236).intl;
   obj5[0] = intl.string(newIndicatorDismissibleContent(1236).t.vD60Pv);
   obj5[1] = onPress;
-  obj4[1] = callback(newIndicatorDismissibleContent(4755).Button, obj5);
+  obj4[1] = callback(newIndicatorDismissibleContent(4777).Button, obj5);
   items3[2] = callback(View, obj4);
   obj[1] = items3;
   return callback2(View, obj);

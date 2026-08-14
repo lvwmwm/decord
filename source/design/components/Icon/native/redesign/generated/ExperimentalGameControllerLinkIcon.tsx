@@ -1,10 +1,10 @@
-// Module ID: 9379
-// Function ID: 9380
+// Module ID: 9393
+// Function ID: 9394
 // Name: ExperimentalGameControllerLinkIcon
-// Dependencies: [19, 21, 712, 4064, 9380, 2]
+// Dependencies: [19, 21, 712, 4064, 9394, 2]
 // Exports: ExperimentalGameControllerLinkIcon
 
-// Module 9379 (ExperimentalGameControllerLinkIcon)
+// Module 9393 (ExperimentalGameControllerLinkIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ExperimentalGameControllerLinkIcon = function ExperimentalGameContr
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9380) /* registerAsset */;
+  obj[0] = require(9394) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,9 +1,9 @@
-// Module ID: 9661
-// Function ID: 9662
+// Module ID: 9672
+// Function ID: 9673
 // Name: frozen
-// Dependencies: [1931, 7389, 4008, 1924, 3943, 1403, 2]
+// Dependencies: [1931, 7411, 4008, 1924, 3943, 1403, 2]
 
-// Module 9661 (frozen)
+// Module 9672 (frozen)
 import "toJS";
 import createFromServer from "createFromServer";
 import closure_4 from "createFromServer";

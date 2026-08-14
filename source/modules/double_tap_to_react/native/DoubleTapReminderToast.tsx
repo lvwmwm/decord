@@ -1,10 +1,10 @@
-// Module ID: 8698
-// Function ID: 8699
+// Module ID: 8712
+// Function ID: 8713
 // Name: DoubleTapReminderContent
-// Dependencies: [19, 1388, 21, 4342, 712, 4338, 1236, 4164, 1377, 4034, 8121, 4062, 8699, 2]
+// Dependencies: [19, 1388, 21, 4342, 712, 4338, 1236, 4164, 1377, 4034, 8142, 4062, 8713, 2]
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 8698 (DoubleTapReminderContent)
+// Module 8712 (DoubleTapReminderContent)
 import "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
@@ -44,14 +44,14 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
     if (flag == null) {
       flag = false;
     }
-    let tmpResult = tmp(8121);
+    let tmpResult = tmp(8142);
     const result = tmpResult.disambiguatedEmojiFromSettingsValue(setting);
     let areEmojisEqualResult = !flag;
     if (!flag) {
       areEmojisEqualResult = null != result;
     }
     if (areEmojisEqualResult) {
-      tmpResult = tmp(8121);
+      tmpResult = tmp(8142);
       areEmojisEqualResult = tmpResult.areEmojisEqual(result, emoji);
     }
     if (areEmojisEqualResult) {

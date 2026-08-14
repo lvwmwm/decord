@@ -1,10 +1,10 @@
-// Module ID: 8570
-// Function ID: 8571
+// Module ID: 8592
+// Function ID: 8593
 // Name: CountrySelectModal
-// Dependencies: [19, 21, 1236, 5310, 4550, 8571, 8568, 5861, 8592, 5823, 2]
+// Dependencies: [19, 21, 1236, 5331, 4572, 8593, 8590, 5882, 8614, 5844, 2]
 // Exports: default
 
-// Module 8570 (CountrySelectModal)
+// Module 8592 (CountrySelectModal)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -17,14 +17,14 @@ export default function CountrySelectModal() {
     obj = { title: null, headerLeft: null, render: null };
     const intl = callback(1236).intl;
     obj[0] = intl.string(callback(1236).t.gzXECH);
-    obj[1] = callback(5310).getHeaderCloseButton(callback2(4550).pop);
+    obj[1] = callback(5331).getHeaderCloseButton(callback2(4572).pop);
     obj[2] = function render() {
       return callback2(callback(table[5]), {
         onClose() {
-          return callback(4550).pop();
+          return callback(4572).pop();
         },
         onCountrySelected(countryCode) {
-          return callback(8568).setCountryCode(countryCode);
+          return callback(8590).setCountryCode(countryCode);
         }
       });
     };
@@ -32,7 +32,7 @@ export default function CountrySelectModal() {
     return obj;
   }, []);
   const effect = React.useEffect(() => () => {
-    callback(5861).runAfterInteractions(callback(8592).setCountrySelectorClosed, 400);
+    callback(5882).runAfterInteractions(callback(8614).setCountrySelectorClosed, 400);
   }, []);
-  return jsx(require(5823) /* NavigationStack */.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
+  return jsx(require(5844) /* NavigationStack */.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
 };

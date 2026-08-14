@@ -1,9 +1,9 @@
-// Module ID: 6962
-// Function ID: 6963
+// Module ID: 6983
+// Function ID: 6984
 // Name: createFromServer
 // Dependencies: [1931, 1924, 2]
 
-// Module 6962 (createFromServer)
+// Module 6983 (createFromServer)
 import "toJS";
 import GuildFeatures from "GuildFeatures";
 

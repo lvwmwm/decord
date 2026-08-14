@@ -1,10 +1,10 @@
-// Module ID: 10675
-// Function ID: 10676
+// Module ID: 10691
+// Function ID: 10692
 // Name: result
-// Dependencies: [19, 17, 21, 500, 4065, 712, 5863, 2]
+// Dependencies: [19, 17, 21, 500, 4065, 712, 5884, 2]
 // Exports: default
 
-// Module 10675 (result)
+// Module 10691 (result)
 import "noop";
 import { jsx } from "jsxProd";
 import set from "set";
@@ -33,7 +33,7 @@ export default function MessageLoadingSpinner(color) {
     obj = { animating: null };
     obj[0] = color.animate;
     const merged1 = Object.assign(color);
-    tmp8 = jsx(require(5863) /* ActivityIndicator */.ActivityIndicator, { animating: null });
+    tmp8 = jsx(require(5884) /* ActivityIndicator */.ActivityIndicator, { animating: null });
   }
   return tmp8;
 };

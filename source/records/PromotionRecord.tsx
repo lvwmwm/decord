@@ -1,10 +1,11 @@
-// Module ID: 7389
-// Function ID: 7390
+// Module ID: 7411
+// Function ID: 7412
 // Name: createFromServer
-// Dependencies: [1931, 7390, 1403, 2]
+// Dependencies: [1931, 7412, 7438, 1403, 2]
 
-// Module 7389 (createFromServer)
+// Module 7411 (createFromServer)
 import "toJS";
+import createFromServer from "createFromServer";
 
 const require = arg1;
 let PromotionRecord;
@@ -52,11 +53,9 @@ const prototype = PromotionRecord.prototype;
 PromotionRecord["createFromServer"] = function createFromServer(id) {
   let allowed_countries;
   let partner_id;
-  const obj = { id: id.id, trialId: id.trial_id, startDate: null, endDate: null, outboundRedemptionEndDate: null, inboundHeaderText: null, inboundBodyText: null, inboundHelpCenterLink: null, outboundTitle: null, outboundRedemptionModalBody: null, outboundTermsAndConditions: null, outboundRedemptionPageLink: null, outboundRedemptionUrlFormat: null, flags: null, inboundRestrictedCountries: null, outboundRestrictedCountries: null, allowedCountries: null, countryListMode: null, promotionType: null, partnerId: null, marketingComponents: null, rewardSkuIds: null, bogoRewardEnabled: null, promotionKey: null };
-  obj[2] = new Date(id.start_date);
   const date = new Date(id.start_date);
-  const tmp = PromotionRecord;
-  obj[3] = new Date(id.end_date);
+  const date1 = new Date(id.end_date);
+  const obj = { id: id.id, trialId: id.trial_id, startDate: date, endDate: date1, outboundRedemptionEndDate: null, inboundHeaderText: null, inboundBodyText: null, inboundHelpCenterLink: null, outboundTitle: null, outboundRedemptionModalBody: null, outboundTermsAndConditions: null, outboundRedemptionPageLink: null, outboundRedemptionUrlFormat: null, flags: null, inboundRestrictedCountries: null, outboundRestrictedCountries: null, allowedCountries: null, countryListMode: null, promotionType: null, partnerId: null, marketingComponents: null, rewardSkuIds: null, bogoRewardEnabled: null, promotionKey: null };
   let date2 = null;
   if (null != id.outbound_redemption_end_date) {
     const _Date = Date;
@@ -110,7 +109,7 @@ PromotionRecord["createFromServer"] = function createFromServer(id) {
   obj[16] = allowed_countries;
   let BLOCKLIST = id.country_list_mode;
   if (BLOCKLIST == null) {
-    BLOCKLIST = require(7390) /* CountryListMode */.CountryListMode.BLOCKLIST;
+    BLOCKLIST = date(date1[2]).CountryListMode.BLOCKLIST;
   }
   obj[17] = BLOCKLIST;
   ({ promotion_type: obj[18], partner_id } = id);
@@ -122,7 +121,7 @@ PromotionRecord["createFromServer"] = function createFromServer(id) {
   if (marketing_components == null) {
     marketing_components = [];
   }
-  obj[20] = marketing_components;
+  obj[20] = marketing_components.map((arg0) => outer1_2.createFromServer(arg0, { startDate: date, endDate: date1 }));
   const metadata = id.metadata;
   let reward_sku_ids;
   if (metadata != null) {
@@ -166,17 +165,17 @@ PromotionRecord["createFromServer"] = function createFromServer(id) {
     str9 = "";
   }
   obj[23] = str9;
-  return new tmp(obj);
+  return new PromotionRecord(obj);
 };
 Object.defineProperty(prototype, "isBogo", {
   get: function isBogo() {
-    return this.promotionType === require(7390) /* CountryListMode */.PromotionTypes.BOGO;
+    return this.promotionType === require(7438) /* CountryListMode */.PromotionTypes.BOGO;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isMarketingMoment", {
   get: function isMarketingMoment() {
-    return this.promotionType === require(7390) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT;
+    return this.promotionType === require(7438) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT;
   },
   set: undefined
 });
@@ -191,15 +190,15 @@ prototype["hasFlag"] = function hasFlag(arg0) {
 };
 prototype["isCountryRestricted"] = function isCountryRestricted(arg0) {
   const self = this;
-  if (this.countryListMode === require(7390) /* CountryListMode */.CountryListMode.ALLOWLIST) {
+  if (this.countryListMode === require(7438) /* CountryListMode */.CountryListMode.ALLOWLIST) {
     const allowedCountries = self.allowedCountries;
     return !allowedCountries.includes(arg0);
   } else {
     const promotionType = self.promotionType;
-    if (tmp(7390).PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
-      if (tmp(7390).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
-        if (tmp(7390).PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
-          if (tmp(7390).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
+    if (tmp(7438).PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
+      if (tmp(7438).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
+        if (tmp(7438).PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
+          if (tmp(7438).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
             return false;
           }
         }
@@ -211,6 +210,6 @@ prototype["isCountryRestricted"] = function isCountryRestricted(arg0) {
     return inboundRestrictedCountries.includes(arg0);
   }
 };
-const result = require("hasFlag").fileFinishedImporting("records/PromotionRecord.tsx");
+const result = require("CountryListMode").fileFinishedImporting("records/PromotionRecord.tsx");
 
 export default PromotionRecord;

@@ -1,10 +1,10 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10341
+// Function ID: 10342
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 3998, 1922, 9717, 21, 589, 4187, 10310, 9293, 1236, 8546, 8544, 8635, 5807, 10328, 2]
+// Dependencies: [32, 19, 3998, 1922, 9728, 21, 589, 4187, 10324, 9307, 1236, 8568, 8566, 8649, 5828, 10342, 2]
 // Exports: default
 
-// Module 10327 (StrangerDangerMoreTipsModalActionItems)
+// Module 10341 (StrangerDangerMoreTipsModalActionItems)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import markAllUserIdListsStale from "markAllUserIdListsStale";

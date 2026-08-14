@@ -1,10 +1,10 @@
-// Module ID: 9960
-// Function ID: 9961
+// Module ID: 9971
+// Function ID: 9972
 // Name: AutocompleteFormDivider
-// Dependencies: [19, 17, 1395, 1980, 3998, 1922, 676, 9961, 4779, 21, 4342, 712, 4535, 5200, 4187, 7454, 2]
+// Dependencies: [19, 17, 1395, 1980, 3998, 1922, 676, 9972, 4801, 21, 4342, 712, 4535, 5221, 4187, 7475, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 9960 (AutocompleteFormDivider)
+// Module 9971 (AutocompleteFormDivider)
 import "noop";
 import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord";
 import comparator from "comparator";
@@ -27,7 +27,7 @@ let unpackModuleId;
 const require = arg1;
 function AutocompleteFormDivider() {
   const tmp = createCacheKey();
-  return jsx(importDefault(7454), { style: createCacheKey().itemDivider });
+  return jsx(importDefault(7475), { style: createCacheKey().itemDivider });
 }
 ({ AutoCompleteResultTypes: error, WHITESPACE_RE: metroImportAll } = ME);
 ({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: c9, AUTOCOMPLETE_ROW_HEIGHT: c10 } = AUTOCOMPLETE_ROW_HEIGHT);

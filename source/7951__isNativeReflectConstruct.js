@@ -1,7 +1,7 @@
 // Module ID: 7951
 // Function ID: 7952
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 7893, 7952, 7895, 7904]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7952, 7939, 7940]
 
 // Module 7951 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,10 +9,9 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 import "noop";
-import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
-const SvgImage = arg1;
+const FeGaussianBlur = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,13 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const re9 = /\s+/;
-class SvgImage {
+class FeGaussianBlur {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, SvgImage);
+    tmp = _isNativeReflectConstruct(this, FeGaussianBlur);
     tmp2 = __esModule;
-    obj = __esModule(SvgImage);
+    obj = __esModule(FeGaussianBlur);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -53,65 +51,34 @@ class SvgImage {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(SvgImage, require("_isNativeReflectConstruct"));
-const items = [
-  {
-    key: "render",
-    value: function render() {
-      let height;
-      let href;
-      let preserveAspectRatio;
-      let tmp2;
-      let tmp3;
-      let width;
-      let x;
-      let y;
-      const self = this;
-      const props = this.props;
-      ({ preserveAspectRatio, href } = props);
-      ({ x, y, width, height } = props);
-      if (undefined === href) {
-        href = props.xlinkHref;
-      }
-      if (preserveAspectRatio) {
-        let parts = preserveAspectRatio.trim().split(closure_9);
-        const str = preserveAspectRatio.trim();
-      } else {
-        parts = [];
-      }
-      let obj = { x, y, width, height, onLoad: props.onLoad, meetOrSlice: null, align: null, src: null };
-      [tmp2, tmp3] = parts;
-      obj[5] = self(7893).meetOrSliceTypes[tmp3] || 0;
-      const tmp6 = self(7893).meetOrSliceTypes[tmp3] || 0;
-      obj[6] = self(7893).alignEnum[tmp2] || "xMidYMid";
-      let assetSource = null;
-      if (href) {
-        let tmp10 = href;
-        if (typeof href === "string") {
-          obj = { uri: null };
-          obj[0] = href;
-          tmp10 = obj;
-        }
-        assetSource = Image.resolveAssetSource(tmp10);
-      }
-      obj[7] = assetSource;
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const tmp7 = self(7893).alignEnum[tmp2] || "xMidYMid";
-      const tmp11 = importDefault(7952);
-      const merged = Object.assign(self(7895).withoutXY(this, props));
-      const merged1 = Object.assign(obj);
-      return <tmp11 ref={function ref(arg0) {
+require("_inherits")(FeGaussianBlur, require("_isNativeReflectConstruct"));
+let obj = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const obj = {
+      ref(arg0) {
         return self.refMethod(arg0);
-      }} />;
-    }
+      }
+    };
+    const tmp = importDefault(7952);
+    const merged = Object.assign(self(7939).extractFilter(this.props));
+    const obj2 = self(7939);
+    const merged1 = Object.assign(self(7939).extractIn(this.props));
+    const obj3 = self(7939);
+    const merged2 = Object.assign(self(7939).extractFeGaussianBlur(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
-];
-const importDefaultResultResult = importDefaultResult(SvgImage, items);
-importDefaultResultResult.displayName = "Image";
-importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0, preserveAspectRatio: "xMidYMid meet" };
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeGaussianBlur, items);
+importDefaultResultResult.displayName = "FeGaussianBlur";
+obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.stdDeviation = 0;
+obj.edgeMode = "none";
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

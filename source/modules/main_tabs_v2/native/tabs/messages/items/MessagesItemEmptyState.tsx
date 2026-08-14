@@ -1,9 +1,9 @@
-// Module ID: 15295
-// Function ID: 15296
+// Module ID: 15309
+// Function ID: 15310
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
-// Dependencies: [19, 17, 21, 4342, 712, 4198, 15254, 4338, 1236, 4755, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4198, 15268, 4338, 1236, 4777, 2]
 
-// Module 15295 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+// Module 15309 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
       }
     }
   }, []);
-  obj[1] = importDefault(15254);
+  obj[1] = importDefault(15268);
   obj[2] = tmp.image;
   obj[1] = callback(closure_4, obj);
   const items = [callback(closure_5, obj), , , ];
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[0] = intl3.string(require(1236) /* getSystemLocale */.t.zIJnA6);
   obj3[1] = callback;
-  items[3] = callback(require(4755) /* Button */.Button, obj3);
+  items[3] = callback(require(4777) /* Button */.Button, obj3);
   obj[2] = items;
   return callback2(closure_5, obj);
 });

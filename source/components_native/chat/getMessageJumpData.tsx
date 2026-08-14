@@ -1,10 +1,10 @@
-// Module ID: 10960
-// Function ID: 10961
+// Module ID: 10976
+// Function ID: 10977
 // Name: getMessageJumpData
 // Dependencies: [32, 19, 1495, 1922, 500, 1894, 4274, 11, 2]
 // Exports: default, useMessageJumpAndroidKeyboardHeight
 
-// Module 10960 (getMessageJumpData)
+// Module 10976 (getMessageJumpData)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";

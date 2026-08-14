@@ -1,10 +1,10 @@
-// Module ID: 9877
-// Function ID: 9878
+// Module ID: 9888
+// Function ID: 9889
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [19, 17, 21, 4342, 712, 4338, 4755, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4338, 4777, 1236, 2]
 // Exports: NotificationSettingsMuteBanner, getMuteBannerSubtitleFromConfig
 
-// Module 9877 (NotificationSettingsMuteBanner)
+// Module 9888 (NotificationSettingsMuteBanner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export const NotificationSettingsMuteBanner = function NotificationSettingsMuteB
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[0] = intl.string(require(1236) /* getSystemLocale */.t.YqAjXy);
   obj2[1] = children.onPressUnmute;
-  items2[1] = callback(require(4755) /* Button */.Button, obj2);
+  items2[1] = callback(require(4777) /* Button */.Button, obj2);
   obj[1] = items2;
   return callback2(View, obj);
 };

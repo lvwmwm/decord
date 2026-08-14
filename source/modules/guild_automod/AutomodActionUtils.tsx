@@ -1,17 +1,17 @@
-// Module ID: 16703
-// Function ID: 16704
+// Module ID: 16719
+// Function ID: 16720
 // Name: getRuleDefaultActionsFromConfig
-// Dependencies: [11313, 2]
+// Dependencies: [11329, 2]
 // Exports: getDefaultActions, getRuleDefaultActionsFromConfig, isActionBlockMessage, isActionFlagToChannel, isActionQuarantineUser, isActionUserCommunicationDisabled
 
-// Module 16703 (getRuleDefaultActionsFromConfig)
+// Module 16719 (getRuleDefaultActionsFromConfig)
 import { AutomodActionType } from "AutomodEventType";
 
 const result = require("set").fileFinishedImporting("modules/guild_automod/AutomodActionUtils.tsx");
 
 export const getRuleDefaultActionsFromConfig = function getRuleDefaultActionsFromConfig(defaultActionTypes) {
-  let obj = { type: AutomodActionType.BLOCK_MESSAGE, metadata: { customMessage: "sa" } };
-  obj = { type: AutomodActionType.FLAG_TO_CHANNEL, metadata: { channelId: "sa" } };
+  let obj = { type: AutomodActionType.BLOCK_MESSAGE, metadata: { customMessage: "title" } };
+  obj = { type: AutomodActionType.FLAG_TO_CHANNEL, metadata: { channelId: "title" } };
   obj = { type: AutomodActionType.USER_COMMUNICATION_DISABLED, metadata: { durationSeconds: 60 } };
   AutomodActionType = { [closure_0.BLOCK_MESSAGE]: obj, [closure_0.FLAG_TO_CHANNEL]: obj, [closure_0.USER_COMMUNICATION_DISABLED]: obj, [closure_0.QUARANTINE_USER]: { type: AutomodActionType.QUARANTINE_USER, metadata: {} } };
   return Array.from(defaultActionTypes.defaultActionTypes).map((arg0) => table[arg0]);
@@ -29,8 +29,8 @@ export const isActionQuarantineUser = function isActionQuarantineUser(type) {
   return type.type === AutomodActionType.QUARANTINE_USER;
 };
 export const getDefaultActions = function getDefaultActions() {
-  let obj = { type: AutomodActionType.BLOCK_MESSAGE, metadata: { customMessage: "sa" } };
-  obj = { type: AutomodActionType.FLAG_TO_CHANNEL, metadata: { channelId: "sa" } };
+  let obj = { type: AutomodActionType.BLOCK_MESSAGE, metadata: { customMessage: "title" } };
+  obj = { type: AutomodActionType.FLAG_TO_CHANNEL, metadata: { channelId: "title" } };
   obj = { type: AutomodActionType.USER_COMMUNICATION_DISABLED, metadata: { durationSeconds: 60 } };
   return { [closure_0.BLOCK_MESSAGE]: obj, [closure_0.FLAG_TO_CHANNEL]: obj, [closure_0.USER_COMMUNICATION_DISABLED]: obj, [closure_0.QUARANTINE_USER]: { type: AutomodActionType.QUARANTINE_USER, metadata: {} } };
 };

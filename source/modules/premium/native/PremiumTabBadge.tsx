@@ -1,10 +1,10 @@
-// Module ID: 14293
-// Function ID: 14294
+// Module ID: 14306
+// Function ID: 14307
 // Name: ThemedTabBadge
-// Dependencies: [32, 19, 17, 4013, 1924, 6943, 21, 4342, 712, 1363, 4278, 4338, 9399, 503, 7692, 1297, 14294, 6958, 7385, 4007, 4164, 1377, 589, 6065, 8207, 8206, 7688, 1236, 4766, 691, 500, 2]
+// Dependencies: [32, 19, 17, 4013, 1924, 6964, 21, 4342, 712, 1363, 4278, 4338, 9413, 503, 7713, 1297, 14307, 6979, 7407, 4007, 4164, 1377, 589, 6086, 8228, 8227, 7709, 1236, 4788, 691, 500, 2]
 // Exports: default
 
-// Module 14293 (ThemedTabBadge)
+// Module 14306 (ThemedTabBadge)
 import _slicedToArray from "_slicedToArray";
 import "getPremiumPlanItem";
 import { View } from "usePremiumTrialOffer";
@@ -43,15 +43,15 @@ function OfferBadge(componentId) {
   let obj = { type: null, name: null, properties: null };
   obj[0] = require(503) /* encodeProperties */.ImpressionTypes.VIEW;
   obj[1] = require(503) /* encodeProperties */.ImpressionNames.PREMIUM_MARKETING_COMPONENT;
-  obj = { component_type: require(7692) /* MarketingComponentType */.MarketingComponentType.PREMIUM_TAB, component_id: componentId };
+  obj = { component_type: require(7713) /* MarketingComponentType */.MarketingComponentType.PREMIUM_TAB, component_id: componentId };
   obj[2] = obj;
   obj = { disableTrack: null == componentId };
-  importDefault(9399)(obj, obj);
+  importDefault(9413)(obj, obj);
   if (acked) {
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.acked;
     const obj2 = { source: null, size: null, color: null, style: null };
-    obj2[0] = importDefault(14294);
+    obj2[0] = importDefault(14307);
     obj2[1] = tmp5(1297).Icon.Sizes.EXTRA_SMALL;
     obj2[2] = tmp.icon.color;
     obj2[3] = tmp.icon;
@@ -98,9 +98,9 @@ export default function PremiumTabBadge() {
   let tmp14;
   let tmp18;
   let tmp = createCacheKey();
-  let obj = require(6958) /* usePremiumTrialOffer */;
+  let obj = require(6979) /* usePremiumTrialOffer */;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
-  let obj1 = require(7385) /* usePremiumDiscountOffer */;
+  let obj1 = require(7407) /* usePremiumDiscountOffer */;
   const premiumDiscountOffer = obj1.usePremiumDiscountOffer();
   let obj3 = require(4007) /* getPremiumPlanItem */;
   const hasTier2Premium = obj3.useHasTier2Premium();
@@ -117,25 +117,25 @@ export default function PremiumTabBadge() {
   if (stateFromStores != null) {
     trialId = stateFromStores.trialId;
   }
-  tmp2Result = tmp2(6065);
+  tmp2Result = tmp2(6086);
   if (trialId === closure_6) {
     if (!tmp7) {
       let items1 = [tmp2(1377).DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE];
     }
     [tmp14, r10051] = callback(tmp11(items1, undefined, true), 2);
-    tmp2(6065);
+    tmp2(6086);
     if (!tmp7) {
       if (hasTier2Premium) {
         let items2 = [tmp2(1377).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD];
       }
       let tmp12Result = tmp12(tmp16(items2, undefined, true), 2);
       [tmp18, r10063] = tmp12Result;
-      const isEligibleSenderForReferralProgram = tmp2(8207).useIsEligibleSenderForReferralProgram();
-      const tmp2Result2 = tmp2(8207);
-      const isReferralProgramEntrypointBadgeAcknowledged = tmp2(8206).useIsReferralProgramEntrypointBadgeAcknowledged();
-      const tmp2Result3 = tmp2(8206);
-      const promotionMarketingComponent = tmp2(7688).usePromotionMarketingComponent(tmp2(7692).MarketingComponentType.PREMIUM_TAB);
-      const tmp2Result5 = tmp2(6065);
+      const isEligibleSenderForReferralProgram = tmp2(8228).useIsEligibleSenderForReferralProgram();
+      const tmp2Result2 = tmp2(8228);
+      const isReferralProgramEntrypointBadgeAcknowledged = tmp2(8227).useIsReferralProgramEntrypointBadgeAcknowledged();
+      const tmp2Result3 = tmp2(8227);
+      const promotionMarketingComponent = tmp2(7709).usePromotionMarketingComponent(tmp2(7713).MarketingComponentType.PREMIUM_TAB);
+      const tmp2Result5 = tmp2(6086);
       let prop = null;
       if (null != promotionMarketingComponent) {
         prop = null;
@@ -186,7 +186,7 @@ export default function PremiumTabBadge() {
         obj1[2] = tmp2(691).HorizontalGradient.START;
         obj1[3] = tmp2(691).HorizontalGradient.END;
         const items3 = [tmp.uppercase, ];
-        const tmp52 = importDefault(4766);
+        const tmp52 = importDefault(4788);
         let text;
         if (tmp2Result6.isAndroid()) {
           text = tmp.text;
@@ -221,7 +221,7 @@ export default function PremiumTabBadge() {
           ({ premiumDiscountBadge: arr6[0], ackedBadge: arr6[1] } = tmp);
           obj4[0] = items4;
           const obj5 = { source: null, size: null, color: null, style: null };
-          obj5[0] = importDefault(14294);
+          obj5[0] = importDefault(14307);
           obj5[1] = tmp2(1297).Icon.Sizes.EXTRA_SMALL;
           obj5[2] = tmp.icon.color;
           obj5[3] = tmp.icon;
@@ -248,8 +248,8 @@ export default function PremiumTabBadge() {
           const intl4 = tmp2(1236).intl;
           obj8[3] = intl4.string(tmp2(1236).t["/DTtr6"]);
           obj7[4] = callback2(tmp2(4338).Text, obj8);
-          tmp41 = callback2(importDefault(4766), obj7);
-          const tmp40 = importDefault(4766);
+          tmp41 = callback2(importDefault(4788), obj7);
+          const tmp40 = importDefault(4788);
         }
       } else {
         tmp47Result = null;
@@ -260,7 +260,7 @@ export default function PremiumTabBadge() {
           obj9[2] = tmp2(691).HorizontalGradient.START;
           obj9[3] = tmp2(691).HorizontalGradient.END;
           const items8 = [tmp.uppercase, ];
-          const tmp34 = importDefault(4766);
+          const tmp34 = importDefault(4788);
           let text1;
           if (tmp2Result7.isAndroid()) {
             text1 = tmp.text;
@@ -274,7 +274,7 @@ export default function PremiumTabBadge() {
           tmp2Result7 = tmp2(500);
         }
       }
-      const tmp2Result4 = tmp2(7688);
+      const tmp2Result4 = tmp2(7709);
     }
     items2 = [];
     const tmp13 = callback(tmp11(items1, undefined, true), 2);

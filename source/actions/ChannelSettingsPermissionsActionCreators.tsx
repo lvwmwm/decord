@@ -1,10 +1,10 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 9061
+// Function ID: 9062
 // Name: _updatePermission
-// Dependencies: [5, 9048, 709, 4355, 2]
+// Dependencies: [5, 9062, 709, 4355, 2]
 // Exports: init, saveAndClearPermissionUpdates, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 9047 (_updatePermission)
+// Module 9061 (_updatePermission)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -55,7 +55,7 @@ function _updatePermission() {
                   c6 = 1;
                   c7 = 1;
                   let obj1 = { value: null, done: false };
-                  obj1[0] = guildId(9048).checkChattableChannelThresholdMetAfterChannelPermissionDeny(tmp22, tmp25, tmp24);
+                  obj1[0] = guildId(9062).checkChattableChannelThresholdMetAfterChannelPermissionDeny(tmp22, tmp25, tmp24);
                   return obj1;
                 }
               }

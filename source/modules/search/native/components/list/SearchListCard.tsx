@@ -1,10 +1,10 @@
-// Module ID: 15823
-// Function ID: 15824
+// Module ID: 15841
+// Function ID: 15842
 // Name: SearchListContentAuthor
-// Dependencies: [19, 17, 21, 4342, 712, 1297, 4338, 4187, 4535, 9712, 4857, 1236, 4805, 5416, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1297, 4338, 4187, 4535, 9723, 4879, 1236, 4827, 5437, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 15823 (SearchListContentAuthor)
+// Module 15841 (SearchListContentAuthor)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -43,7 +43,7 @@ function SearchListPrivateChannel(channel) {
     obj = { channel: null, size: null };
     obj[0] = channel;
     obj[1] = require(1297) /* Button */.AvatarSizes.SIZE_16;
-    obj[1] = callback(importDefault(9712), obj);
+    obj[1] = callback(importDefault(9723), obj);
     const items = [callback(tmp6, obj), ];
     const obj1 = { style: null, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: null };
     obj1[0] = tmp.channelName;
@@ -51,12 +51,12 @@ function SearchListPrivateChannel(channel) {
     items[1] = callback(require(4338) /* Text */.Text, obj1);
     obj[1] = items;
     let tmp5Result = tmp5(tmp6, obj);
-    const tmp2Result = importDefault(9712);
+    const tmp2Result = importDefault(9723);
   } else {
     obj[0] = tmp.privateChannelIcon;
     const obj2 = { style: null, size: "xs", color: "interactive-text-default" };
     obj2[0] = tmp.icon;
-    const items1 = [callback(require(4857) /* ForumIcon */.ForumIcon, obj2), ];
+    const items1 = [callback(require(4879) /* ForumIcon */.ForumIcon, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj3[3] = intl.string(require(1236) /* getSystemLocale */.t.ACgJhM);
@@ -114,7 +114,7 @@ export const SearchListCardContainer = function SearchListCardContainer(arg0) {
   let onPress;
   ({ children, onPress, containerStyle } = arg0);
   const style = [createCacheKey().container, containerStyle];
-  return callback(require(5416) /* PressableCard */.Card, { shadow: "low", border: "subtle", onPress, style, children });
+  return callback(require(5437) /* PressableCard */.Card, { shadow: "low", border: "subtle", onPress, style, children });
 };
 export const SearchListCardThumbnail = function SearchListCardThumbnail(children) {
   return callback(View, { style: createCacheKey().thumbnail, children: children.thumbnail });

@@ -1,10 +1,10 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 9226
+// Function ID: 9227
 // Name: isAnimatedBackgroundOption
-// Dependencies: [1391, 4416, 8320, 676, 1435, 4539, 698, 2]
+// Dependencies: [1391, 4416, 8342, 676, 1435, 4549, 698, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9212 (isAnimatedBackgroundOption)
+// Module 9226 (isAnimatedBackgroundOption)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import VideoFilterType from "VideoFilterType";
@@ -139,8 +139,8 @@ export const trackBackgroundOptionUpdated = function trackBackgroundOptionUpdate
   const guildId = store.getGuildId();
   const channelId = store.getChannelId();
   channel = channel.getChannel(channelId);
-  const voiceStateMetadata = require(4539) /* collectGuildAnalyticsMetadata */.getVoiceStateMetadata(guildId, channelId, true);
-  const obj2 = require(4539) /* collectGuildAnalyticsMetadata */;
+  const voiceStateMetadata = require(4549) /* collectGuildAnalyticsMetadata */.getVoiceStateMetadata(guildId, channelId, true);
+  const obj2 = require(4549) /* collectGuildAnalyticsMetadata */;
   obj = { location, effect_type: null, effect_detail: null, effect_state: null, channel_id: null, channel_type: null, guild_id: null, voice_state_count: null, video_stream_count: null, media_session_id: null, rtc_connection_id: null, is_animated: null };
   let str = "None";
   if (null != closure_0) {
@@ -174,7 +174,7 @@ export const trackBackgroundOptionDeleted = function trackBackgroundOptionDelete
 };
 export const getVideoBackgroundProtoFromOption = function getVideoBackgroundProtoFromOption(closure_0) {
   if (null == closure_0) {
-    let obj = { oneofKind: "sa" };
+    let obj = { oneofKind: "title" };
   } else {
     let tmp = null != closure_0 && typeof closure_0 === "object";
     if (tmp) {

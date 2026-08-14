@@ -1,10 +1,10 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8132
+// Function ID: 8133
 // Name: buildPlatformedThemedEmojiColorPalette
-// Dependencies: [4191, 4192, 689, 7287, 2]
+// Dependencies: [4191, 4192, 689, 7309, 2]
 // Exports: buildEmojiColorPalette
 
-// Module 8111 (buildPlatformedThemedEmojiColorPalette)
+// Module 8132 (buildPlatformedThemedEmojiColorPalette)
 function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
   let colors;
   let saturationFactor;
@@ -126,7 +126,7 @@ function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
       }
     }
   }
-  return importDefault(7287).applyPlatformToThemedEmojiColorPalette({ palette, shouldProcessMobileColors });
+  return importDefault(7309).applyPlatformToThemedEmojiColorPalette({ palette, shouldProcessMobileColors });
 }
 let c3 = "#ffffff";
 let c4 = "#36393e";

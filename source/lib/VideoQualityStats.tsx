@@ -1,10 +1,10 @@
-// Module ID: 7246
-// Function ID: 7247
+// Module ID: 7268
+// Function ID: 7269
 // Name: parseEncoder
-// Dependencies: [32, 7247, 7253, 4420, 2]
+// Dependencies: [32, 7269, 7275, 4420, 2]
 // Exports: parseCodecType
 
-// Module 7246 (parseEncoder)
+// Module 7268 (parseEncoder)
 import _slicedToArray from "_slicedToArray";
 import set from "getStats";
 

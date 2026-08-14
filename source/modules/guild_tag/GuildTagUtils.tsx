@@ -1,10 +1,10 @@
-// Module ID: 8314
-// Function ID: 8315
+// Module ID: 8336
+// Function ID: 8337
 // Name: guildHasTag
-// Dependencies: [1990, 1910, 1922, 8097, 676, 589, 3995, 2]
+// Dependencies: [1990, 1910, 1922, 8118, 676, 589, 3995, 2]
 // Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 8314 (guildHasTag)
+// Module 8336 (guildHasTag)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,10 +1,10 @@
-// Module ID: 14431
-// Function ID: 14432
+// Module ID: 14444
+// Function ID: 14445
 // Name: openVideoQuestModal
-// Dependencies: [514, 4550, 14432, 2007, 10560, 2]
+// Dependencies: [514, 4572, 14445, 2007, 10576, 2]
 // Exports: default
 
-// Module 14431 (openVideoQuestModal)
+// Module 14444 (openVideoQuestModal)
 const result = require("VideoQuestModalSteps").fileFinishedImporting("modules/quests/native/VideoQuestModal/openVideoQuestModal.tsx");
 
 export default function openVideoQuestModal(questId) {
@@ -28,7 +28,7 @@ export default function openVideoQuestModal(questId) {
     },
     sourceQuestContent
   };
-  const obj2 = sourceQuestContent(4550);
-  const tmp2 = questId(2007)(14432, dependencyMap.paths);
-  return obj2.pushLazy(tmp2, obj, questId(10560).getVideoQuestModalKey(questId));
+  const obj2 = sourceQuestContent(4572);
+  const tmp2 = questId(2007)(14445, dependencyMap.paths);
+  return obj2.pushLazy(tmp2, obj, questId(10576).getVideoQuestModalKey(questId));
 };

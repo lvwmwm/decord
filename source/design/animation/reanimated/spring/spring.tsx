@@ -1,10 +1,10 @@
-// Module ID: 4754
-// Function ID: 4755
+// Module ID: 4776
+// Function ID: 4777
 // Name: CONFIG_NEVER_ANIMATE
 // Dependencies: [4344, 4345, 4083, 2]
 // Exports: withSpring
 
-// Module 4754 (CONFIG_NEVER_ANIMATE)
+// Module 4776 (CONFIG_NEVER_ANIMATE)
 import { CONFIG_NEVER_ANIMATE } from "CONFIG_NEVER_ANIMATE";
 
 function withSpring(value, SUBTLE_SPRING, fn, fn2) {

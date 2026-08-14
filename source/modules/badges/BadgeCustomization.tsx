@@ -1,10 +1,10 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 13990
+// Function ID: 13991
 // Name: set
-// Dependencies: [8835, 2]
+// Dependencies: [8849, 2]
 // Exports: getHideableBadges, getUnhideableBadgeIds
 
-// Module 13978 (set)
+// Module 13990 (set)
 import set from "set";
 
 let items = [require("BadgeId").BadgeId.STAFF];
@@ -16,7 +16,7 @@ export const getUnhideableBadgeIds = function getUnhideableBadgeIds(tenureBadgeH
   if (!tenureBadgeHideable.tenureBadgeHideable) {
     const _Set = Set;
     const items = [];
-    items[HermesBuiltin.arraySpread(set, 0)] = require(8835) /* BadgeId */.BadgeId.PREMIUM_TENURE;
+    items[HermesBuiltin.arraySpread(set, 0)] = require(8849) /* BadgeId */.BadgeId.PREMIUM_TENURE;
     set = new Set(items);
     const arraySpreadResult = HermesBuiltin.arraySpread(set, 0);
   }

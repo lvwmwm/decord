@@ -1,10 +1,10 @@
-// Module ID: 11557
-// Function ID: 11558
+// Module ID: 11573
+// Function ID: 11574
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4342, 712, 1363, 4278, 11558, 11559, 11495, 9599, 4338, 1236, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 1363, 4278, 11574, 11575, 11511, 9612, 4338, 1236, 2]
 // Exports: default
 
-// Module 11557 (EmptyState)
+// Module 11573 (EmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,8 +29,8 @@ export default function EmptyState() {
   const tmp = createCacheKey();
   let obj = require(1363) /* AccessibilityAnnouncer */;
   const tmp4 = importDefault;
-  const tmp4Result = importDefault(obj.isThemeLight(importDefault(4278)()) ? 11558 : 11559);
-  const logAppLauncherEmptyStateView = require(11495) /* handleApplicationSelected */.useLogAppLauncherEmptyStateView(tmp2(9599).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const tmp4Result = importDefault(obj.isThemeLight(importDefault(4278)()) ? 11574 : 11575);
+  const logAppLauncherEmptyStateView = require(11511) /* handleApplicationSelected */.useLogAppLauncherEmptyStateView(tmp2(9612).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.image, resizeMode: "contain", source: tmp4Result };
   const items = [callback(closure_4, obj), ];

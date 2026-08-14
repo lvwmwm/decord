@@ -1,10 +1,10 @@
-// Module ID: 15465
-// Function ID: 15466
+// Module ID: 15480
+// Function ID: 15481
 // Name: OneColumnGuildUpsellList
-// Dependencies: [19, 15011, 21, 9399, 503, 1500, 589, 5768, 5788, 15466, 7790, 2]
+// Dependencies: [19, 15025, 21, 9413, 503, 1500, 589, 5789, 5809, 15481, 7811, 2]
 // Exports: OneColumnGuildUpsellList
 
-// Module 15465 (OneColumnGuildUpsellList)
+// Module 15480 (OneColumnGuildUpsellList)
 import noop from "noop";
 import set from "set";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ export const OneColumnGuildUpsellList = function OneColumnGuildUpsellList(cardAc
   const items = [set];
   stateFromStoresObject = obj.useStateFromStoresObject(items, () => guildGameIds.getGuildGameIds());
   dependencyMap = stateFromStoresObject;
-  analyticsLocations = analyticsLocations(5768)(analyticsLocations(5788).GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations;
+  analyticsLocations = analyticsLocations(5789)(analyticsLocations(5809).GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations;
   const items1 = [onDismiss, stateFromStoresObject, cardAction];
   dependencyMap = undefined;
   const callback1 = React.useCallback((item) => {
@@ -41,7 +41,7 @@ export const OneColumnGuildUpsellList = function OneColumnGuildUpsellList(cardAc
     obj[3] = tmp;
     return outer1_5(analyticsLocations(ref[9]), obj, item.id);
   }, items1);
-  const tmp3 = analyticsLocations(5768);
+  const tmp3 = analyticsLocations(5789);
   dependencyMap = React.useRef(new Set());
   const set = new Set();
   const focusEffect = stateFromStoresObject(1500).useFocusEffect(React.useCallback(() => {
@@ -77,5 +77,5 @@ export const OneColumnGuildUpsellList = function OneColumnGuildUpsellList(cardAc
     });
   }, items2);
   obj = { onViewableItemsChanged: callback2, viewabilityConfig: closure_6, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 };
-  return jsx(stateFromStoresObject(7790).FlashList, { onViewableItemsChanged: callback2, viewabilityConfig: closure_6, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 });
+  return jsx(stateFromStoresObject(7811).FlashList, { onViewableItemsChanged: callback2, viewabilityConfig: closure_6, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 });
 };

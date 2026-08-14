@@ -1,10 +1,10 @@
-// Module ID: 7634
-// Function ID: 7635
+// Module ID: 7655
+// Function ID: 7656
 // Name: getApplicationFlags
 // Dependencies: [4368, 506, 2]
 // Exports: hasApplicationFlag
 
-// Module 7634 (getApplicationFlags)
+// Module 7655 (getApplicationFlags)
 import createExecutable from "createExecutable";
 
 function getApplicationFlags(application) {

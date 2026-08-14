@@ -1,10 +1,10 @@
-// Module ID: 16432
-// Function ID: 16433
+// Module ID: 16450
+// Function ID: 16451
 // Name: CaptchaModal
-// Dependencies: [19, 17, 15149, 15150, 21, 4342, 8521, 1500, 16433, 5437, 4753, 6070, 4338, 1236, 4755, 10423, 16434, 15157, 2]
+// Dependencies: [19, 17, 15163, 15164, 21, 4342, 8543, 1500, 16451, 5458, 4775, 6091, 4338, 1236, 4777, 10439, 16452, 15171, 2]
 // Exports: default
 
-// Module 16432 (CaptchaModal)
+// Module 16450 (CaptchaModal)
 import noop from "noop";
 import get_ActivityIndicator from "trackRegTransition";
 import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore";
@@ -46,7 +46,7 @@ export default function CaptchaModal(arg0) {
   ({ close: dependencyMap, sitekey: noop, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let navigation;
   let callback;
-  const tmp2 = callback2(onReject(8521)());
+  const tmp2 = callback2(onReject(8543)());
   let obj = require(1500) /* createStandardNavigationFactories */;
   navigation = obj.useNavigation();
   const items = [navigation];
@@ -68,12 +68,12 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  callback = onReject(16433)({ onReject, analyticsType: memo });
+  callback = onReject(16451)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
     closure_4.dismiss();
   }, []);
   obj = { style: tmp2.contentContainer, spacing: 12, children: null };
-  const items1 = [callback(require(6070) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
+  const items1 = [callback(require(6091) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
   if (headerText == null) {
     const intl = tmp3(1236).intl;
     headerText = intl.string(tmp3(1236).t.FpoiHe);
@@ -150,8 +150,8 @@ export default function CaptchaModal(arg0) {
   };
   const intl3 = tmp3(1236).intl;
   obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
-  items1[2] = callback(require(4755) /* Button */.Button, obj3);
+  items1[2] = callback(require(4777) /* Button */.Button, obj3);
   obj[2] = items1;
-  obj1[2] = closure_10(require(4753) /* Stack */.Stack, obj);
-  return callback(require(5437) /* Background */.BottomSheet, obj1);
+  obj1[2] = closure_10(require(4775) /* Stack */.Stack, obj);
+  return callback(require(5458) /* Background */.BottomSheet, obj1);
 };

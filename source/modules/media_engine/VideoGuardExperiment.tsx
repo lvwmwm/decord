@@ -1,0 +1,17 @@
+// Module ID: 13178
+// Function ID: 13179
+// Name: articleURL
+// Dependencies: [1993, 1471, 2]
+
+// Module 13178 (articleURL)
+import ApexExperiment from "ApexExperiment";
+import importDefaultResult from "combined";
+
+const articleURL = require("combined").getArticleURL("42704051358359");
+const obj = { 1: null, 2: { videoEnabled: false } };
+obj[2] = { videoEnabled: false };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-08-video-guard", kind: "user", defaultConfig: { videoEnabled: true }, variations: obj });
+const result = require("set").fileFinishedImporting("modules/media_engine/VideoGuardExperiment.tsx");
+
+export const VIDEO_GUARD_HELP_ARTICLE_URL = articleURL;
+export const VideoGuardExperiment = apexExperiment;

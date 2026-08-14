@@ -1,10 +1,10 @@
-// Module ID: 8406
-// Function ID: 8407
+// Module ID: 8428
+// Function ID: 8429
 // Name: handleUploadMessageAttachmentsErrors
-// Dependencies: [676, 4938, 4897, 8407, 4683, 1236, 12640, 2]
+// Dependencies: [676, 4960, 4919, 8429, 4705, 1236, 12658, 2]
 // Exports: handleUploadMessageAttachmentsErrors
 
-// Module 8406 (handleUploadMessageAttachmentsErrors)
+// Module 8428 (handleUploadMessageAttachmentsErrors)
 import ME from "ME";
 
 let c3;
@@ -20,14 +20,14 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
   if (undefined === code) {
     return false;
   } else if (code === constants.ENTITY_TOO_LARGE) {
-    const kestrelConfig = require(4938) /* KESTREL_GA_UPLOAD_LIMIT_MB */.getKestrelConfig({ location: "native.handleUploadMessageAttachmentsErrors" });
-    const obj10 = require(4938) /* KESTREL_GA_UPLOAD_LIMIT_MB */;
-    const maxFileSizeResult = require(4897) /* getUploadFileSizeSum */.maxFileSize(guildId);
+    const kestrelConfig = require(4960) /* KESTREL_GA_UPLOAD_LIMIT_MB */.getKestrelConfig({ location: "native.handleUploadMessageAttachmentsErrors" });
+    const obj10 = require(4960) /* KESTREL_GA_UPLOAD_LIMIT_MB */;
+    const maxFileSizeResult = require(4919) /* getUploadFileSizeSum */.maxFileSize(guildId);
     let obj = { file: null, maxSize: null, baseMaxSize: null, guildId: null, analyticsLocations: null, errorReason: null };
     obj[0] = tmp;
-    const obj11 = require(4897) /* getUploadFileSizeSum */;
-    const tmp27 = importDefault(8407);
-    obj[1] = require(4938) /* KESTREL_GA_UPLOAD_LIMIT_MB */.getEffectiveKestrelLimit(kestrelConfig, maxFileSizeResult);
+    const obj11 = require(4919) /* getUploadFileSizeSum */;
+    const tmp27 = importDefault(8429);
+    obj[1] = require(4960) /* KESTREL_GA_UPLOAD_LIMIT_MB */.getEffectiveKestrelLimit(kestrelConfig, maxFileSizeResult);
     obj[2] = maxFileSizeResult;
     obj[3] = guildId;
     obj[4] = tmp2;
@@ -46,7 +46,7 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
     let obj1 = { limit: null };
     obj1[0] = closure_4;
     obj[1] = intl6.formatToPlainString(require(1236) /* getSystemLocale */.t["qqyp/e"], obj1);
-    importDefault(4683).show(obj);
+    importDefault(4705).show(obj);
     return true;
   } else if (code === tmp31.ENTITY_EMPTY) {
     let obj2 = { title: null, body: null };
@@ -54,10 +54,10 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
     obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.B3vFdU);
     const intl4 = require(1236) /* getSystemLocale */.intl;
     obj2[1] = intl4.string(require(1236) /* getSystemLocale */.t["9ZpT2C"]);
-    importDefault(4683).show(obj2);
+    importDefault(4705).show(obj2);
     return true;
   } else if (code === tmp31.INVALID_FILE_ASSET) {
-    obj2 = importDefault(4683);
+    obj2 = importDefault(4705);
     const obj3 = { title: null, body: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj3[0] = intl.string(require(1236) /* getSystemLocale */.t.B3vFdU);
@@ -66,11 +66,11 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
     obj2.show(obj3);
     return true;
   } else {
-    obj = require(12640) /* getAttachmentUploadAbortAlertContent */;
+    obj = require(12658) /* getAttachmentUploadAbortAlertContent */;
     const attachmentUploadAbortAlertContent = obj.getAttachmentUploadAbortAlertContent(code);
     let flag = null != attachmentUploadAbortAlertContent;
     if (flag) {
-      obj1 = importDefault(4683);
+      obj1 = importDefault(4705);
       obj1.show(attachmentUploadAbortAlertContent);
       flag = true;
     }

@@ -1,10 +1,10 @@
-// Module ID: 9799
-// Function ID: 9800
+// Module ID: 9810
+// Function ID: 9811
 // Name: NotificationsContainer
-// Dependencies: [19, 17, 3990, 1391, 1979, 676, 1388, 21, 4342, 4200, 9800, 589, 10254, 8902, 4164, 1377, 10255, 10256, 10272, 2]
+// Dependencies: [19, 17, 3990, 1391, 1979, 676, 1388, 21, 4342, 4200, 9811, 589, 10268, 8916, 4164, 1377, 10269, 10270, 10286, 2]
 // Exports: ChannelContainer
 
-// Module 9799 (NotificationsContainer)
+// Module 9810 (NotificationsContainer)
 import set from "set";
 import { View } from "AnnouncementChannelLurkerBar";
 import initialize from "initialize";
@@ -23,7 +23,7 @@ function NotificationsContainer() {
   if (importDefault(4200)().isChatBesideChannelList) {
     const obj = { style: null, children: null };
     obj[0] = tmp.container;
-    obj[1] = callback(importDefault(9800), {});
+    obj[1] = callback(importDefault(9811), {});
     tmp4 = callback(View, obj);
   }
   return tmp4;
@@ -57,7 +57,7 @@ export const ChannelContainer = function ChannelContainer(children) {
   ({ channel, isStageChannel } = stateFromStoresObject);
   let tmp5 = !isStageChannel;
   if (isStageChannel) {
-    tmp5 = channelId(10254)(stateFromStoresObject.voiceChannelId);
+    tmp5 = channelId(10268)(stateFromStoresObject.voiceChannelId);
   }
   let tmpResult = tmp(589);
   const items1 = [initialize];
@@ -73,9 +73,9 @@ export const ChannelContainer = function ChannelContainer(children) {
     isPrivateResult = channel.isPrivate();
   }
   dependencyMap = isPrivateResult;
-  const tmp8 = channelId(8902)(isPrivateResult);
+  const tmp8 = channelId(8916)(isPrivateResult);
   React = tmp8;
-  const tmp9 = channelId(8902)(channelId);
+  const tmp9 = channelId(8916)(channelId);
   c4 = tmp9;
   const items2 = [channelId, tmp9, isPrivateResult, tmp8];
   const effect = React.useEffect(() => {
@@ -100,7 +100,7 @@ export const ChannelContainer = function ChannelContainer(children) {
       const result = obj.UNSAFE_markDismissibleContentAsDismissed(outer1_0(_undefined[15]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj);
     }
   }, items2);
-  tmpResult = tmp(10255);
+  tmpResult = tmp(10269);
   const channelStyles = tmpResult.useChannelStyles();
   obj = { style: channelStyles.scene, children: null };
   obj = { style: channelStyles.flex, children: null };
@@ -114,14 +114,14 @@ export const ChannelContainer = function ChannelContainer(children) {
     if (stateFromStores) {
       const obj1 = { channel: null };
       obj1[0] = channel;
-      tmp15 = callback(tmp4(10256), obj1);
+      tmp15 = callback(tmp4(10270), obj1);
     }
   }
   const items3 = [tmp15, children.children, ];
   if (tmp5) {
     const obj2 = { style: null };
     obj2[0] = channelStyles.callPTTButton;
-    tmp5 = callback(tmp4(10272), obj2);
+    tmp5 = callback(tmp4(10286), obj2);
   }
   items3[2] = tmp5;
   obj[1] = items3;

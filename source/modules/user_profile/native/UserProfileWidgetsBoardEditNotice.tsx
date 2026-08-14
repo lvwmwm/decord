@@ -1,10 +1,10 @@
-// Module ID: 12408
-// Function ID: 12409
+// Module ID: 12426
+// Function ID: 12427
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 1388, 21, 4342, 712, 8884, 1367, 10045, 1377, 4298, 4338, 1236, 4887, 5366, 2]
+// Dependencies: [19, 17, 1388, 21, 4342, 712, 8898, 1367, 10056, 1377, 4298, 4338, 1236, 4909, 5387, 2]
 // Exports: default
 
-// Module 12408 (UserProfileWidgetsBoardEditNotice)
+// Module 12426 (UserProfileWidgetsBoardEditNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -26,7 +26,7 @@ const result = require("ContentDismissActionType").fileFinishedImporting("module
 
 export default function UserProfileWidgetsBoardEditNotice() {
   const _require = createCacheKey();
-  importDefault = importDefault(8884)();
+  importDefault = importDefault(8898)();
   const dependencyMap = importDefault(1367)("UserProfileWidgetsBoardEditNotice");
   let obj = { contentTypes: null, bypassAutoDismiss: true, children: null };
   let items = [_require(1377).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
@@ -77,5 +77,5 @@ export default function UserProfileWidgetsBoardEditNotice() {
     }
     return tmp4Result;
   };
-  return callback(importDefault(10045), obj);
+  return callback(importDefault(10056), obj);
 };

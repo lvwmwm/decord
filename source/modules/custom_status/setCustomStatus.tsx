@@ -1,10 +1,10 @@
-// Module ID: 9509
-// Function ID: 9510
+// Module ID: 9522
+// Function ID: 9523
 // Name: setCustomStatus
-// Dependencies: [9506, 676, 4034, 3943, 9510, 698, 2]
+// Dependencies: [9519, 676, 4034, 3943, 9523, 698, 2]
 // Exports: default
 
-// Module 9509 (setCustomStatus)
+// Module 9522 (setCustomStatus)
 import { ClearAfterValues } from "StatusTypes";
 import { AnalyticEvents } from "ME";
 
@@ -38,9 +38,9 @@ export default function setCustomStatus(arg0) {
     if (clearAfter !== ClearAfterValues.DONT_CLEAR) {
       const _String = String;
       const obj2 = importDefault(3943)();
-      const addResult = importDefault(3943)().add(importDefault(9510)(clearAfter), "ms");
-      str2 = String(importDefault(3943)().add(importDefault(9510)(clearAfter), "ms").toDate().getTime());
-      const toDateResult = importDefault(3943)().add(importDefault(9510)(clearAfter), "ms").toDate();
+      const addResult = importDefault(3943)().add(importDefault(9523)(clearAfter), "ms");
+      str2 = String(importDefault(3943)().add(importDefault(9523)(clearAfter), "ms").toDate().getTime());
+      const toDateResult = importDefault(3943)().add(importDefault(9523)(clearAfter), "ms").toDate();
     }
   }
   obj[1] = str2;

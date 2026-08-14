@@ -1,10 +1,10 @@
-// Module ID: 8209
-// Function ID: 8210
+// Module ID: 8230
+// Function ID: 8231
 // Name: useHasDiscountApplied
-// Dependencies: [32, 19, 4013, 1924, 6958, 8210, 7385, 589, 3943, 7386, 7637, 1954, 8211, 2]
+// Dependencies: [32, 19, 4013, 1924, 6979, 8231, 7407, 589, 3943, 7408, 7658, 1954, 8232, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer
 
-// Module 8209 (useHasDiscountApplied)
+// Module 8230 (useHasDiscountApplied)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import reset from "reset";
@@ -46,18 +46,18 @@ function useHasDiscountApplied() {
 const result = require("reset").fileFinishedImporting("modules/premium/PremiumSubscriptionOfferUtil.tsx");
 
 export const useIsInPremiumOfferExperience = function useIsInPremiumOfferExperience() {
-  const premiumTrialOffer = require(6958) /* usePremiumTrialOffer */.usePremiumTrialOffer();
-  const obj = require(6958) /* usePremiumTrialOffer */;
+  const premiumTrialOffer = require(6979) /* usePremiumTrialOffer */.usePremiumTrialOffer();
+  const obj = require(6979) /* usePremiumTrialOffer */;
   const tmp = require;
-  const hasActiveTrial = require(8210) /* useHasActiveTrial */.useHasActiveTrial();
-  const obj2 = require(8210) /* useHasActiveTrial */;
-  const premiumDiscountOffer = require(7385) /* usePremiumDiscountOffer */.usePremiumDiscountOffer();
-  const obj3 = require(7385) /* usePremiumDiscountOffer */;
-  const premiumGroupDiscountOffer = require(7385) /* usePremiumDiscountOffer */.usePremiumGroupDiscountOffer();
+  const hasActiveTrial = require(8231) /* useHasActiveTrial */.useHasActiveTrial();
+  const obj2 = require(8231) /* useHasActiveTrial */;
+  const premiumDiscountOffer = require(7407) /* usePremiumDiscountOffer */.usePremiumDiscountOffer();
+  const obj3 = require(7407) /* usePremiumDiscountOffer */;
+  const premiumGroupDiscountOffer = require(7407) /* usePremiumDiscountOffer */.usePremiumGroupDiscountOffer();
   if (typeof useHasDiscountApplied !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const obj4 = require(7385) /* usePremiumDiscountOffer */;
+  const obj4 = require(7407) /* usePremiumDiscountOffer */;
   const items = [reset];
   const stateFromStores = tmp(589).useStateFromStores(items, () => store.getPremiumTypeSubscription());
   let prop;
@@ -139,8 +139,8 @@ export const useFetchChurnUserDiscountOffer = function useFetchChurnUserDiscount
   let tmp5;
   let tmp7;
   let tmp8;
-  let tmp2 = importDefault(7386)(closure_10);
-  const tmp3 = importDefault(7386)(closure_11);
+  let tmp2 = importDefault(7408)(closure_10);
+  const tmp3 = importDefault(7408)(closure_11);
   [tmp5, require] = callback(React.useState(false), 2);
   const tmp4 = callback(React.useState(false), 2);
   [tmp7, tmp8] = callback(React.useState(false), 2);
@@ -169,7 +169,7 @@ export const useFetchChurnUserDiscountOffer = function useFetchChurnUserDiscount
     }
     if (!tmp11) {
       tmp8(true);
-      obj = require(7637) /* _fetchUserOffer */;
+      obj = require(7658) /* _fetchUserOffer */;
       const churnDiscountOffer = obj.fetchChurnDiscountOffer();
       churnDiscountOffer.then((arg0) => {
         callback2(arg0);
@@ -260,5 +260,5 @@ export const renewalInvoiceChurnDiscountInfo = function renewalInvoiceChurnDisco
   return null;
 };
 export const useIsNUXEligible = function useIsNUXEligible() {
-  return require(8211) /* useIsInReverseTrial */.useIsInReverseTrial();
+  return require(8232) /* useIsInReverseTrial */.useIsInReverseTrial();
 };

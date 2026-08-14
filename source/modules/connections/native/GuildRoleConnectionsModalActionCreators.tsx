@@ -1,16 +1,16 @@
-// Module ID: 11016
-// Function ID: 11017
+// Module ID: 11032
+// Function ID: 11033
 // Name: openGuildRoleConnectionsModal
-// Dependencies: [4550, 11017, 2007, 4310, 11009, 2]
+// Dependencies: [4572, 11033, 2007, 4310, 11025, 2]
 // Exports: makeGuildRoleConnectionsConnectAccountsActionSheetKey, openGuildRoleConnectionsConnectAccountModal, openGuildRoleConnectionsModal
 
-// Module 11016 (openGuildRoleConnectionsModal)
+// Module 11032 (openGuildRoleConnectionsModal)
 const ROLE_CONNECTIONS_MODAL_KEY = "ROLE_CONNECTIONS_MODAL_KEY";
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/connections/native/GuildRoleConnectionsModalActionCreators.tsx");
 
 export const openGuildRoleConnectionsModal = function openGuildRoleConnectionsModal(guildId) {
   const onClose = guildId.onClose;
-  let obj = importDefault(4550);
+  let obj = importDefault(4572);
   obj = {
     guildId: guildId.guildId,
     onClose() {
@@ -20,7 +20,7 @@ export const openGuildRoleConnectionsModal = function openGuildRoleConnectionsMo
       }
     }
   };
-  obj.pushLazy(onClose(2007)(11017, dependencyMap.paths), obj, ROLE_CONNECTIONS_MODAL_KEY);
+  obj.pushLazy(onClose(2007)(11033, dependencyMap.paths), obj, ROLE_CONNECTIONS_MODAL_KEY);
 };
 export const makeGuildRoleConnectionsConnectAccountsActionSheetKey = function makeGuildRoleConnectionsConnectAccountsActionSheetKey(id) {
   return "GuildRoleConnectionsConnectAccountsActionSheet-" + id;
@@ -28,5 +28,5 @@ export const makeGuildRoleConnectionsConnectAccountsActionSheetKey = function ma
 export const openGuildRoleConnectionsConnectAccountModal = function openGuildRoleConnectionsConnectAccountModal(id, guildId) {
   let obj = importDefault(4310);
   obj = { role: id, guildId };
-  obj.openLazy(require(2007) /* asyncRequireImpl */(11009, dependencyMap.paths), "GuildRoleConnectionsConnectAccountsActionSheet-" + id.id, obj);
+  obj.openLazy(require(2007) /* asyncRequireImpl */(11025, dependencyMap.paths), "GuildRoleConnectionsConnectAccountsActionSheet-" + id.id, obj);
 };

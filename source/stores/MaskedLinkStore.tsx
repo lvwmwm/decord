@@ -1,9 +1,9 @@
-// Module ID: 8983
-// Function ID: 8984
+// Module ID: 8997
+// Function ID: 8998
 // Name: set
-// Dependencies: [8952, 8984, 1486, 595, 589, 709, 2]
+// Dependencies: [8966, 8998, 1486, 595, 589, 709, 2]
 
-// Module 8983 (set)
+// Module 8997 (set)
 import { SPOTIFY_HOSTNAMES } from "WEB_OPEN";
 import { Store } from "initialize";
 import set from "isDiscordProxiedAssetUrl";
@@ -54,7 +54,7 @@ prototype["initialize"] = function initialize() {
   }
 };
 prototype["isTrustedDomain"] = function isTrustedDomain(arg0) {
-  const hostname = require(8984) /* getHostname */.getHostname(arg0);
+  const hostname = require(8998) /* getHostname */.getHostname(arg0);
   let flag = true;
   if (window.GLOBAL_ENV.INVITE_HOST !== hostname) {
     const _window2 = window;
@@ -85,13 +85,13 @@ prototype["isTrustedDomain"] = function isTrustedDomain(arg0) {
   return flag;
 };
 prototype["isTrustedProtocol"] = function isTrustedProtocol(url) {
-  return set1.has(require(8984) /* getHostname */.getProtocol(url));
+  return set1.has(require(8998) /* getHostname */.getProtocol(url));
 };
 MaskedLinkStore.displayName = "MaskedLinkStore";
 const maskedLinkStore = new MaskedLinkStore(require("dispatcher"), {
   MASKED_LINK_ADD_TRUSTED_DOMAIN: function handleAddTrustedDomain(url) {
     url = url.url;
-    let obj = require(8984) /* getHostname */;
+    let obj = require(8998) /* getHostname */;
     const hostname = obj.getHostname(url);
     let flag = true;
     if (window.GLOBAL_ENV.INVITE_HOST !== hostname) {
@@ -123,7 +123,7 @@ const maskedLinkStore = new MaskedLinkStore(require("dispatcher"), {
     if (flag) {
       return false;
     } else {
-      set.add(tmp(8984).getHostname(url));
+      set.add(tmp(8998).getHostname(url));
       const Storage = tmp(595).Storage;
       obj = { trustedDomains: null, trustedProtocols: null };
       obj[0] = set;
@@ -133,11 +133,11 @@ const maskedLinkStore = new MaskedLinkStore(require("dispatcher"), {
   },
   MASKED_LINK_ADD_TRUSTED_PROTOCOL: function handleAddTrustedProtocol(url) {
     url = url.url;
-    let obj = require(8984) /* getHostname */;
+    let obj = require(8998) /* getHostname */;
     if (set1.has(obj.getProtocol(url))) {
       return false;
     } else {
-      set1.add(tmp(8984).getProtocol(url));
+      set1.add(tmp(8998).getProtocol(url));
       const Storage = tmp(595).Storage;
       obj = { trustedDomains: null, trustedProtocols: null };
       obj[0] = set;

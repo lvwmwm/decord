@@ -1,10 +1,10 @@
-// Module ID: 7327
-// Function ID: 7328
+// Module ID: 7349
+// Function ID: 7350
 // Name: onDismiss
-// Dependencies: [19, 17, 21, 4342, 712, 4310, 7328, 1236, 5437, 7288, 7329, 7267, 1297, 4338, 4755, 4164, 1377, 7327, 2007, 709, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 4310, 7350, 1236, 5458, 7310, 7351, 7289, 1297, 4338, 4777, 4164, 1377, 7349, 2007, 709, 2]
 // Exports: default, openBurstReactionFirstSendActionSheet
 
-// Module 7327 (onDismiss)
+// Module 7349 (onDismiss)
 import "dispatcher";
 import get_ActivityIndicator from "onDismiss";
 import jsxProd from "jsxProd";
@@ -42,16 +42,16 @@ export default function BurstReactionFirstSendActionSheet(arg0) {
   let messageId;
   ({ emoji, channelId, messageId } = arg0);
   const tmp = createCacheKey();
-  let obj = require(7328) /* getDeviceSpecificString */;
+  let obj = require(7350) /* getDeviceSpecificString */;
   obj = { quest: require(1236) /* getSystemLocale */.t["5TpPli"] };
   const deviceSpecificString = obj.getDeviceSpecificString(obj, require(1236) /* getSystemLocale */.t["2Yp7dF"]);
   obj = { backdropOpacity: null, contentStyles: null, backdropChildren: null, onDismiss: null, children: null };
-  obj[0] = require(7288) /* _generateAnimationSource */.BACKDROP_OPACITY;
+  obj[0] = require(7310) /* _generateAnimationSource */.BACKDROP_OPACITY;
   obj[1] = tmp.content;
   const obj1 = { style: tmp.fill, children: null };
   const obj2 = { channelId, emoji, messageId, reactionType: null };
-  obj2[3] = require(7267) /* ReactionTypes */.ReactionTypes.BURST;
-  obj1[1] = callback(importDefault(7329), obj2);
+  obj2[3] = require(7289) /* ReactionTypes */.ReactionTypes.BURST;
+  obj1[1] = callback(importDefault(7351), obj2);
   obj[2] = callback(closure_3, obj1);
   obj[3] = onDismiss;
   const obj3 = { style: tmp.container, children: null };
@@ -64,16 +64,16 @@ export default function BurstReactionFirstSendActionSheet(arg0) {
   obj4[1] = items;
   const items1 = [callback2(closure_3, obj4), , ];
   const obj5 = { style: tmp.nitroWheel };
-  const tmp3 = importDefault(7329);
+  const tmp3 = importDefault(7351);
   items1[1] = callback(closure_3, { style: tmp.body, children: callback(require(4338) /* Text */.Text, obj8) });
   const obj9 = { text: null, onPress: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj9[0] = intl2.string(require(1236) /* getSystemLocale */.t["+IrDzN"]);
   obj9[1] = onDismiss;
-  items1[2] = callback(require(4755) /* Button */.Button, obj9);
+  items1[2] = callback(require(4777) /* Button */.Button, obj9);
   obj3[1] = items1;
   obj[4] = callback2(closure_3, obj3);
-  return callback(require(5437) /* Background */.BottomSheet, obj);
+  return callback(require(5458) /* Background */.BottomSheet, obj);
 };
 export const openBurstReactionFirstSendActionSheet = function openBurstReactionFirstSendActionSheet(arg0) {
   let channelId;
@@ -96,7 +96,7 @@ export const openBurstReactionFirstSendActionSheet = function openBurstReactionF
     obj[0] = channelId;
     obj[1] = messageId;
     obj[2] = emoji;
-    tmpResult.openLazy(tmp4(2007)(7327, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
+    tmpResult.openLazy(tmp4(2007)(7349, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
     const tmp4Result = tmp4(4164);
   }
 };

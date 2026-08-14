@@ -1,10 +1,10 @@
-// Module ID: 10315
-// Function ID: 10316
+// Module ID: 10329
+// Function ID: 10330
 // Name: MoreTipsModalScreen
-// Dependencies: [19, 17, 9717, 676, 21, 4342, 712, 10316, 4338, 1236, 10317, 6051, 4550, 8072, 1297, 1628, 647, 10310, 7109, 7114, 5823, 2]
+// Dependencies: [19, 17, 9728, 676, 21, 4342, 712, 10330, 4338, 1236, 10331, 6072, 4572, 8093, 1297, 1628, 647, 10324, 7131, 7136, 5844, 2]
 // Exports: default
 
-// Module 10315 (MoreTipsModalScreen)
+// Module 10329 (MoreTipsModalScreen)
 import set from "set";
 import get_ActivityIndicator from "trackViewedEvent";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -30,7 +30,7 @@ function MoreTipsModalScreen(learnMore) {
   let obj = { keyboardShouldPersistTaps: "handled", style: tmp.scroll, children: null };
   obj = { style: tmp.contentContainer, children: null };
   obj = { style: tmp.tipsContainer, children: null };
-  const items = [callback(importDefault(10316), { description, safetyTips, showHeader: true }), ];
+  const items = [callback(importDefault(10330), { description, safetyTips, showHeader: true }), ];
   let tmp2Result = null;
   if (null != learnMore) {
     const obj1 = { style: null, children: null };
@@ -48,7 +48,7 @@ function MoreTipsModalScreen(learnMore) {
   const items2 = [callback(require(4338) /* Text */.Text, obj3), actionItems];
   obj2[0] = items2;
   items1[1] = closure_9(closure_4, obj2);
-  items1[2] = callback(importDefault(10317), { channelId, warningId, senderId });
+  items1[2] = callback(importDefault(10331), { channelId, warningId, senderId });
   obj[1] = items1;
   obj[2] = closure_9(closure_4, obj);
   return callback(closure_5, obj);
@@ -136,5 +136,5 @@ export default function MoreTipsModal(channelId) {
       return outer1_8(outer1_11, { channelId: c1, warningId: c2, senderId: c3, description: c4, safetyTips: c5, actionItems: c6, learnMore: c7 });
     }
   };
-  return callback(_require(5823).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: importDefault(1628)().top });
+  return callback(_require(5844).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: importDefault(1628)().top });
 };

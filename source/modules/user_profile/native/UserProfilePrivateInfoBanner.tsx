@@ -1,10 +1,10 @@
-// Module ID: 12534
-// Function ID: 12535
+// Module ID: 12552
+// Function ID: 12553
 // Name: UserProfilePrivateInfoBanner
 // Dependencies: [17, 21, 4342, 712, 4338, 1236, 2]
 // Exports: default
 
-// Module 12534 (UserProfilePrivateInfoBanner)
+// Module 12552 (UserProfilePrivateInfoBanner)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

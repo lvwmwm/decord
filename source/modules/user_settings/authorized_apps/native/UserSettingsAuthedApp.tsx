@@ -1,10 +1,10 @@
-// Module ID: 14253
-// Function ID: 14254
+// Module ID: 14266
+// Function ID: 14267
 // Name: WarningLabel
-// Dependencies: [19, 17, 1390, 5290, 1391, 3998, 4540, 1994, 676, 9718, 10324, 21, 4342, 712, 4298, 4338, 1499, 1500, 1236, 5776, 10575, 10478, 589, 12020, 1435, 4685, 12019, 4310, 10325, 2007, 503, 9293, 7829, 7638, 6056, 8981, 4198, 5302, 5297, 11, 11500, 9582, 5807, 5808, 5414, 2]
+// Dependencies: [19, 17, 1390, 5311, 1391, 3998, 4550, 1994, 676, 9729, 10338, 21, 4342, 712, 4298, 4338, 1499, 1500, 1236, 5797, 10591, 10494, 589, 12036, 1435, 4707, 12035, 4310, 10339, 2007, 503, 9307, 7850, 7659, 6077, 8995, 4198, 5323, 5318, 11, 11516, 9595, 5828, 5829, 5435, 2]
 // Exports: default, handleDeleteApp
 
-// Module 14253 (WarningLabel)
+// Module 14266 (WarningLabel)
 import tokensToAppTokensMap from "tokensToAppTokensMap";
 import get_ActivityIndicator from "createStandardNavigationFactories";
 import participantFromServer from "participantFromServer";
@@ -364,7 +364,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
 };
 export const handleDeleteApp = function handleDeleteApp(application) {
   application = application.application;
-  let obj = importDefault(5776);
+  let obj = importDefault(5797);
   obj.delete(application.id);
   selfEmbeddedActivities = selfEmbeddedActivities.getSelfEmbeddedActivities();
   const value = selfEmbeddedActivities.get(application.id);
@@ -373,5 +373,5 @@ export const handleDeleteApp = function handleDeleteApp(application) {
     _location = value.location;
   }
   obj = { location: _location, applicationId: application.id };
-  importDefault(10575).leaveActivity(obj);
+  importDefault(10591).leaveActivity(obj);
 };

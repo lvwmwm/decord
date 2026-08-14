@@ -1,10 +1,10 @@
-// Module ID: 12677
-// Function ID: 12678
+// Module ID: 12695
+// Function ID: 12696
 // Name: createVoiceChannelLinkEmbed
-// Dependencies: [32, 17, 1434, 1391, 1910, 3989, 3998, 1922, 676, 7241, 8098, 1435, 500, 1236, 4805, 4535, 2]
+// Dependencies: [32, 17, 1434, 1391, 1910, 3989, 3998, 1922, 676, 7263, 8119, 1435, 500, 1236, 4827, 4535, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12677 (createVoiceChannelLinkEmbed)
+// Module 12695 (createVoiceChannelLinkEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "get ActivityIndicator";
 import { getGuildAcronym } from "GuildNSFWContentLevel";
@@ -30,7 +30,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
       if (null != guild) {
         if (getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel)) {
           if (obj9.can(tmp26.CONNECT, channel)) {
-            ({ colors, baseColors } = importDefault(8098)(closure_2));
+            ({ colors, baseColors } = importDefault(8119)(closure_2));
             let icon;
             if (guild != null) {
               icon = guild.icon;
@@ -55,7 +55,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj = {};
             const merged = Object.assign(baseColors);
             tmp4 = importDefault;
-            const tmp6 = importDefault(8098)(closure_2);
+            const tmp6 = importDefault(8119)(closure_2);
             let str;
             if (obj5.isAndroid()) {
               str = "";
@@ -74,7 +74,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj.acceptLabelText = stringResult;
             obj.onlineText = undefined;
             obj.memberText = undefined;
-            let tmp16Result = tmp16(4805);
+            let tmp16Result = tmp16(4827);
             const assetSource = Image.resolveAssetSource(tmp16Result.getChannelIcon(channel));
             let uri;
             if (assetSource != null) {

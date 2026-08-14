@@ -1,10 +1,10 @@
-// Module ID: 9449
-// Function ID: 9450
+// Module ID: 9462
+// Function ID: 9463
 // Name: getCachedSourceFromURI
 // Dependencies: [32, 19, 17, 1405, 4191, 712, 643, 2]
 // Exports: getCachedSourceFromURI, useDominantColorFromImage, useDominantRGBFromImage
 
-// Module 9449 (getCachedSourceFromURI)
+// Module 9462 (getCachedSourceFromURI)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

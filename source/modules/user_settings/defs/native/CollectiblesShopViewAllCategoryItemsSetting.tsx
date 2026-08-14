@@ -1,9 +1,9 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 14945
+// Function ID: 14946
 // Name: route
-// Dependencies: [676, 10407, 14154, 14932, 2]
+// Dependencies: [676, 10421, 14167, 14946, 2]
 
-// Module 14931 (route)
+// Module 14945 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS,
   getComponent() {
-    return require(14932) /* CollectiblesShopViewAllCategoryItemsScreen */.default;
+    return require(14946) /* CollectiblesShopViewAllCategoryItemsScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

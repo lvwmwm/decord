@@ -1,10 +1,10 @@
-// Module ID: 9666
-// Function ID: 9667
+// Module ID: 9677
+// Function ID: 9678
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 4342, 712, 6043, 1236, 4187, 6049, 1297, 4338, 6039, 2]
+// Dependencies: [19, 17, 21, 4342, 712, 6064, 1236, 4187, 6070, 1297, 4338, 6060, 2]
 // Exports: default
 
-// Module 9666 (SelectedUserField)
+// Module 9677 (SelectedUserField)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -62,7 +62,7 @@ export default function SelectedUserField(onPress) {
     const stringResult1 = intl.string(tmp4(1236).t.xFn72s);
   }
   obj[3] = combined;
-  const items1 = [closure_5(require(6049) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" }), ];
+  const items1 = [closure_5(require(6070) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" }), ];
   if (null != selectedUser) {
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.userPill;
@@ -98,12 +98,12 @@ export default function SelectedUserField(onPress) {
     const obj7 = { text: null };
     obj7[0] = importDefault(4187).getName(selectedUser);
     obj6[3] = intl5.formatToPlainString(tmp4(1236).t["0Vb9FQ"], obj7);
-    obj6[4] = tmp2(tmp4(6039).CircleXIcon, { size: "xs" });
+    obj6[4] = tmp2(tmp4(6060).CircleXIcon, { size: "xs" });
     tmp2Result = tmp2(tmp7, obj6);
     const obj13 = importDefault(4187);
   }
   items3[1] = tmp2Result;
   obj[1] = items3;
-  obj[1] = closure_5(require(6043) /* useInputStyles */.InputFieldContainer, { children: closure_6(closure_4, obj) });
+  obj[1] = closure_5(require(6064) /* useInputStyles */.InputFieldContainer, { children: closure_6(closure_4, obj) });
   return closure_5(closure_4, obj);
 };

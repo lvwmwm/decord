@@ -1,10 +1,10 @@
-// Module ID: 4571
-// Function ID: 4572
+// Module ID: 4593
+// Function ID: 4594
 // Name: messageAttachmentToUnfurledMediaItem
 // Dependencies: [676, 1403, 1954, 4532, 1486, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 4571 (messageAttachmentToUnfurledMediaItem)
+// Module 4593 (messageAttachmentToUnfurledMediaItem)
 import { MessageAttachmentFlags } from "ME";
 
 function messageAttachmentToUnfurledMediaItem(flags) {

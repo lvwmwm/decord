@@ -1,10 +1,10 @@
-// Module ID: 11552
-// Function ID: 11553
+// Module ID: 11568
+// Function ID: 11569
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 4342, 8902, 4083, 4343, 4346, 5414, 1236, 4338, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 8916, 4083, 4343, 4346, 5435, 1236, 4338, 2]
 // Exports: default
 
-// Module 11552 (ExpandableList)
+// Module 11568 (ExpandableList)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -50,7 +50,7 @@ export default function ExpandableList(items) {
   first = tmp2[0];
   closure_6 = tmp2[1];
   let obj7 = dependencyMap;
-  let tmp5 = importDefault(8902)(first);
+  let tmp5 = importDefault(8916)(first);
   if (tmp5 == null) {
     tmp5 = first;
   }
@@ -212,7 +212,7 @@ export default function ExpandableList(items) {
         tmp4(obj);
       }
     };
-    obj5 = tmp16(tmp9(5414).TableRow, obj5);
+    obj5 = tmp16(tmp9(5435).TableRow, obj5);
     obj7[0] = obj5;
     tmp16Result = tmp16(tmp17, obj7);
   }

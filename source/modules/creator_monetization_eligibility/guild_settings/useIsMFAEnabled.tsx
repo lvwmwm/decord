@@ -1,10 +1,10 @@
-// Module ID: 16847
-// Function ID: 16848
+// Module ID: 16863
+// Function ID: 16864
 // Name: useIsMFAEnabled
-// Dependencies: [9071, 1922, 676, 647, 2]
+// Dependencies: [9085, 1922, 676, 647, 2]
 // Exports: useIsMFAEnabled
 
-// Module 16847 (useIsMFAEnabled)
+// Module 16863 (useIsMFAEnabled)
 import handleFormInit from "handleFormInit";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { MFALevels } from "ME";

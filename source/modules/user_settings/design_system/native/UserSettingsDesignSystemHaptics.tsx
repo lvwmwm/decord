@@ -1,10 +1,10 @@
-// Module ID: 14891
-// Function ID: 14892
+// Module ID: 14905
+// Function ID: 14906
 // Name: HapticButton
-// Dependencies: [19, 17, 21, 4342, 4755, 4311, 4312, 4753, 5416, 4338, 4313, 2]
+// Dependencies: [19, 17, 21, 4342, 4777, 4311, 4312, 4775, 5437, 4338, 4313, 2]
 // Exports: default
 
-// Module 14891 (HapticButton)
+// Module 14905 (HapticButton)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -15,7 +15,7 @@ let c4;
 const require = arg1;
 function HapticButton(text) {
   const type = text.type;
-  return callback(type(4755).Button, {
+  return callback(type(4777).Button, {
     variant: "secondary",
     onPress() {
       return type(outer1_1[5]).triggerHapticFeedback(type);
@@ -105,8 +105,8 @@ export default function UserSettingsDesignSystemHaptics() {
     return callback2(closure_6, { type: label.type, label }, label);
   });
   obj1[0] = items;
-  obj[0] = callback2(require(4753) /* Stack */.Stack, obj1);
-  const items1 = [callback(require(5416) /* PressableCard */.Card, obj), , , , ];
+  obj[0] = callback2(require(4775) /* Stack */.Stack, obj1);
+  const items1 = [callback(require(5437) /* PressableCard */.Card, obj), , , , ];
   const obj2 = { children: null };
   const obj3 = { children: null };
   const items2 = [
@@ -118,8 +118,8 @@ export default function UserSettingsDesignSystemHaptics() {
     })
   ];
   obj3[0] = items2;
-  obj2[0] = callback2(require(4753) /* Stack */.Stack, obj3);
-  items1[1] = callback(require(5416) /* PressableCard */.Card, obj2);
+  obj2[0] = callback2(require(4775) /* Stack */.Stack, obj3);
+  items1[1] = callback(require(5437) /* PressableCard */.Card, obj2);
   const obj4 = { children: null };
   const obj5 = { children: null };
   const items3 = [
@@ -131,8 +131,8 @@ export default function UserSettingsDesignSystemHaptics() {
     })
   ];
   obj5[0] = items3;
-  obj4[0] = callback2(require(4753) /* Stack */.Stack, obj5);
-  items1[2] = callback(require(5416) /* PressableCard */.Card, obj4);
+  obj4[0] = callback2(require(4775) /* Stack */.Stack, obj5);
+  items1[2] = callback(require(5437) /* PressableCard */.Card, obj4);
   const obj6 = { children: null };
   const obj7 = { children: null };
   const items4 = [
@@ -144,8 +144,8 @@ export default function UserSettingsDesignSystemHaptics() {
     })
   ];
   obj7[0] = items4;
-  obj6[0] = callback2(require(4753) /* Stack */.Stack, obj7);
-  items1[3] = callback(require(5416) /* PressableCard */.Card, obj6);
+  obj6[0] = callback2(require(4775) /* Stack */.Stack, obj7);
+  items1[3] = callback(require(5437) /* PressableCard */.Card, obj6);
   const obj8 = { children: null };
   const obj9 = { children: null };
   const items5 = [
@@ -167,9 +167,9 @@ export default function UserSettingsDesignSystemHaptics() {
     })
   ];
   obj9[0] = items5;
-  obj8[0] = callback2(require(4753) /* Stack */.Stack, obj9);
-  items1[4] = callback(require(5416) /* PressableCard */.Card, obj8);
+  obj8[0] = callback2(require(4775) /* Stack */.Stack, obj9);
+  items1[4] = callback(require(5437) /* PressableCard */.Card, obj8);
   obj[1] = items1;
-  obj[1] = callback2(require(4753) /* Stack */.Stack, obj);
+  obj[1] = callback2(require(4775) /* Stack */.Stack, obj);
   return callback(ScrollView, obj);
 };

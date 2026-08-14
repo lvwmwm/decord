@@ -1,10 +1,10 @@
-// Module ID: 15387
-// Function ID: 15388
+// Module ID: 15402
+// Function ID: 15403
 // Name: importDefaultResult1
-// Dependencies: [19, 17, 21, 712, 689, 4342, 9482, 2]
+// Dependencies: [19, 17, 21, 712, 689, 4342, 9495, 2]
 // Exports: default
 
-// Module 15387 (importDefaultResult1)
+// Module 15402 (importDefaultResult1)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -53,7 +53,7 @@ export default function GameClaimCardStack(uri) {
   obj = { style: tmp.gameImage, source: { uri: uri.imageSrc }, resizeMode: "cover" };
   const items = [callback(closure_3, obj), ];
   const obj1 = { style: tmp.addCard, children: null };
-  obj1[1] = callback(closure_3, { style: tmp.addIconWrapper, children: callback(require(9482) /* PlusSmallIcon */.PlusSmallIcon, { size: "sm", color: "text-brand" }) });
+  obj1[1] = callback(closure_3, { style: tmp.addIconWrapper, children: callback(require(9495) /* PlusSmallIcon */.PlusSmallIcon, { size: "sm", color: "text-brand" }) });
   items[1] = callback(closure_3, obj1);
   obj[1] = items;
   return callback2(closure_3, obj);

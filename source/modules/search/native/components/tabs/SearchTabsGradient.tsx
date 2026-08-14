@@ -1,10 +1,10 @@
-// Module ID: 15872
-// Function ID: 15873
+// Module ID: 15890
+// Function ID: 15891
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 4065, 712, 4191, 12177, 2]
+// Dependencies: [19, 21, 4065, 712, 4191, 12195, 2]
 // Exports: default
 
-// Module 15872 (SearchTabsGradient)
+// Module 15890 (SearchTabsGradient)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -19,5 +19,5 @@ export default function SearchTabsGradient(state) {
     const items = [token, token(outer1_2[4]).hexWithOpacity(token, 0)];
     return items;
   }, items);
-  return jsx(importDefault(12177), { state: state.state, colors });
+  return jsx(importDefault(12195), { state: state.state, colors });
 };

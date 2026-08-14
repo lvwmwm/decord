@@ -1,10 +1,10 @@
-// Module ID: 16289
-// Function ID: 16290
+// Module ID: 16307
+// Function ID: 16308
 // Name: UserVideoFailed
-// Dependencies: [17, 676, 21, 4342, 712, 9219, 10664, 4338, 1236, 4755, 10674, 4441, 9205, 2]
+// Dependencies: [17, 676, 21, 4342, 712, 9233, 10680, 4338, 1236, 4777, 10690, 4441, 9219, 2]
 // Exports: default
 
-// Module 16289 (UserVideoFailed)
+// Module 16307 (UserVideoFailed)
 import { View } from "get ActivityIndicator";
 import { VideoToggleState } from "ME";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function UserVideoFailed(arg0) {
   ({ style, avError } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   const tmp2 = callback2();
-  let obj = require(9219) /* mapped */;
+  let obj = require(9233) /* mapped */;
   obj = {};
   const merged1 = Object.assign(merged);
   const items = [tmp2.container, style];
@@ -41,7 +41,7 @@ export default function UserVideoFailed(arg0) {
   if (!removeSplashImage) {
     obj = { style: null };
     obj[0] = tmp2.placeholderImage;
-    tmp9 = callback(tmp3(10664).StreamFailed, obj);
+    tmp9 = callback(tmp3(10680).StreamFailed, obj);
   }
   const obj1 = { children: null };
   const items1 = [tmp9, ];
@@ -69,7 +69,7 @@ export default function UserVideoFailed(arg0) {
         outer1_1(outer1_2[12]).setDisableLocalVideo(closure_0, outer1_4.MANUAL_ENABLED, outer1_0(outer1_2[11]).MediaEngineContextTypes.DEFAULT, false);
       }, 1000);
     };
-    tmp11Result = tmp11(tmp3(4755).Button, obj5);
+    tmp11Result = tmp11(tmp3(4777).Button, obj5);
   }
   obj4[1] = tmp11Result;
   items2[2] = callback(View, obj4);

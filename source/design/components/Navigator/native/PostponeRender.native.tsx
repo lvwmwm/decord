@@ -1,10 +1,10 @@
-// Module ID: 5860
-// Function ID: 5861
+// Module ID: 5881
+// Function ID: 5882
 // Name: PostponeRender
-// Dependencies: [32, 19, 17, 21, 4342, 712, 4771, 5861, 5862, 5864, 2]
+// Dependencies: [32, 19, 17, 21, 4342, 712, 4793, 5882, 5883, 5885, 2]
 // Exports: PostponeRender
 
-// Module 5860 (PostponeRender)
+// Module 5881 (PostponeRender)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -36,7 +36,7 @@ export const PostponeRender = function PostponeRender(children) {
   first = tmp2[0];
   importDefault = tmp2[1];
   dependencyMap = React.useRef(undefined);
-  importDefault(4771)(() => {
+  importDefault(4793)(() => {
     if (first) {
       table.current = first(table[7]).runAfterInteractions(() => {
         callback(false);
@@ -50,12 +50,12 @@ export const PostponeRender = function PostponeRender(children) {
     }
   });
   if (first) {
-    children = jsx(first(5862).SceneLoadingIndicator, {});
+    children = jsx(first(5883).SceneLoadingIndicator, {});
   }
   if (ignoreKeyboard) {
     let tmp4Result = closure_5;
   } else {
-    tmp4Result = importDefault(5864);
+    tmp4Result = importDefault(5885);
   }
   const style = [createCacheKey().view, viewStyle];
   return <tmp4Result style={style}>{children}</tmp4Result>;

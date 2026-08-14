@@ -1,10 +1,10 @@
-// Module ID: 10163
-// Function ID: 10164
+// Module ID: 10175
+// Function ID: 10176
 // Name: PremiumGiftDurationButton
-// Dependencies: [19, 17, 1924, 21, 4342, 712, 9660, 5414, 8015, 10088, 4073, 4338, 1236, 2]
+// Dependencies: [19, 17, 1924, 21, 4342, 712, 9671, 5435, 8036, 10100, 4073, 4338, 1236, 2]
 // Exports: default
 
-// Module 10163 (PremiumGiftDurationButton)
+// Module 10175 (PremiumGiftDurationButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";
@@ -24,14 +24,14 @@ function PremiumGiftDurationButton(arg0) {
   let selected;
   ({ selected, planInterval } = arg0);
   let setPlanInterval;
-  let obj = planInterval(9660);
+  let obj = planInterval(9671);
   const nativeGiftContext = obj.useNativeGiftContext();
   setPlanInterval = nativeGiftContext.setPlanInterval;
   const tmp4 = createCacheKey();
   if (selected) {
-    let RowButton = tmp(5414).TableRow;
+    let RowButton = tmp(5435).TableRow;
   } else {
-    RowButton = tmp(8015).RowButton;
+    RowButton = tmp(8036).RowButton;
   }
   let combined = null;
   if (planInterval === SubscriptionIntervalTypes.YEAR) {
@@ -39,7 +39,7 @@ function PremiumGiftDurationButton(arg0) {
     combined = "" + closure_4 + "%";
   }
   const tmp5 = SubscriptionIntervalTypes;
-  const tmp9 = setPlanInterval(10088)(nativeGiftContext.premiumType, planInterval);
+  const tmp9 = setPlanInterval(10100)(nativeGiftContext.premiumType, planInterval);
   const radioA11yNative = planInterval(4073).useRadioA11yNative({ selected });
   const items = [tmp4.container, ];
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
@@ -111,7 +111,7 @@ const result = require("GuildFeatures").fileFinishedImporting("modules/premium/n
 
 export default function PremiumGiftDuration() {
   const tmp = callback3();
-  let obj = planInterval(9660);
+  let obj = planInterval(9671);
   planInterval = obj.useNativeGiftContext().planInterval;
   obj = { style: tmp.durationContainer, children: null };
   obj = { style: tmp.durationTitle, variant: "text-sm/semibold", children: null };

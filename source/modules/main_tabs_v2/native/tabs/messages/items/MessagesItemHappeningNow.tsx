@@ -1,10 +1,10 @@
-// Module ID: 15257
-// Function ID: 15258
+// Module ID: 15271
+// Function ID: 15272
 // Name: HappeningNowItem
-// Dependencies: [19, 17, 14595, 21, 1367, 712, 4342, 4065, 8342, 15258, 2]
+// Dependencies: [19, 17, 14608, 21, 1367, 712, 4342, 4065, 8364, 15272, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 15257 (HappeningNowItem)
+// Module 15271 (HappeningNowItem)
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import { jsx } from "jsxProd";
@@ -31,9 +31,9 @@ export default require("noop").memo(function MessagesItemHappeningNow(listRef) {
   let obj = require(4065) /* map */;
   obj = { backgroundColor: null, children: null };
   obj = { style: callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: null };
-  obj[2] = jsx(importDefault(15258), { cards: set, listRef: listRef.listRef });
+  obj[2] = jsx(importDefault(15272), { cards: set, listRef: listRef.listRef });
   obj[1] = <View style={callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container} collapsable={false}>{null}</View>;
-  return jsx(require(8342) /* useCutoutBackgroundColor */.CutoutBackgroundProvider, { style: callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: null });
+  return jsx(require(8364) /* useCutoutBackgroundColor */.CutoutBackgroundProvider, { style: callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: null });
 });
 export const getMessagesItemHappeningNowHeight = function getMessagesItemHappeningNowHeight(closure_0) {
   return require(1367) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM, closure_0) + closure_4;

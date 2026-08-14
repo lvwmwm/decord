@@ -1,10 +1,10 @@
-// Module ID: 5383
-// Function ID: 5384
+// Module ID: 5404
+// Function ID: 5405
 // Name: _setEnabled
-// Dependencies: [5, 5384, 3972, 500, 5386, 2]
+// Dependencies: [5, 5405, 3972, 500, 5407, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5383 (_setEnabled)
+// Module 5404 (_setEnabled)
 import closure_3 from "set";
 import set from "set";
 import set from "set";

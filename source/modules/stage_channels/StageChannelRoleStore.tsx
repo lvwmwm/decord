@@ -1,9 +1,9 @@
-// Module ID: 5180
-// Function ID: 5181
+// Module ID: 5201
+// Function ID: 5202
 // Name: buildStageChannelUserRoles
-// Dependencies: [1391, 1990, 1983, 1910, 1922, 4361, 4529, 3994, 1399, 12, 589, 5181, 709, 2]
+// Dependencies: [1391, 1990, 1983, 1910, 1922, 4361, 4529, 3994, 1399, 12, 589, 5202, 709, 2]
 
-// Module 5180 (buildStageChannelUserRoles)
+// Module 5201 (buildStageChannelUserRoles)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
@@ -157,7 +157,7 @@ prototype["getPermissionsForUser"] = function getPermissionsForUser(id, closure_
         id = currentUser.id;
       }
       if (id === id) {
-        const obj = require(5181) /* useIsStageSpeakingDisabledForCurrentUser */;
+        const obj = require(5202) /* useIsStageSpeakingDisabledForCurrentUser */;
         if (obj.isStageSpeakingDisabledForCurrentUser()) {
           return obj;
         }

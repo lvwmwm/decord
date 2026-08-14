@@ -1,10 +1,10 @@
-// Module ID: 12262
-// Function ID: 12263
+// Module ID: 12280
+// Function ID: 12281
 // Name: RedditNeutralIcon
-// Dependencies: [19, 21, 712, 4064, 12263, 2]
+// Dependencies: [19, 21, 712, 4064, 12281, 2]
 // Exports: RedditNeutralIcon
 
-// Module 12262 (RedditNeutralIcon)
+// Module 12280 (RedditNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const RedditNeutralIcon = function RedditNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12263) /* registerAsset */;
+  obj[0] = require(12281) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

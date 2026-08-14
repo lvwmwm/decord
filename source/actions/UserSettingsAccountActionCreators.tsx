@@ -1,10 +1,10 @@
-// Module ID: 8559
-// Function ID: 8560
+// Module ID: 8581
+// Function ID: 8582
 // Name: saveProfileAndAccountRequest
-// Dependencies: [5, 676, 5870, 709, 530, 5867, 1222, 595, 8321, 8318, 8560, 7638, 2]
+// Dependencies: [5, 676, 5891, 709, 530, 5888, 1222, 595, 8343, 8340, 8582, 7659, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 8559 (saveProfileAndAccountRequest)
+// Module 8581 (saveProfileAndAccountRequest)
 import handleLogout from "handleLogout";
 import ME from "ME";
 import str2 from "str2";
@@ -178,8 +178,8 @@ export const disableAccount = function disableAccount(password, arg1) {
   const obj3 = require(530) /* sendRequest */;
   const tmp2 = arg1 ? closure_4.DELETE_ACCOUNT : closure_4.DISABLE_ACCOUNT;
   return HTTP.post(obj).then(() => {
-    callback2(5867).logoutInternal();
-    const obj = callback2(5867);
+    callback2(5888).logoutInternal();
+    const obj = callback2(5888);
     callback(1222).transitionTo(constants.DEFAULT_LOGGED_OUT);
   });
 };
@@ -254,11 +254,11 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     obj.push_voip_token = value;
   }
   obj = { headers: null };
-  obj[0] = avatarId(8321).buildHeadersForMd5({ [avatar(8318).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
+  obj[0] = avatarId(8343).buildHeadersForMd5({ [avatar(8340).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
   const tmp = avatarId;
   tmp11 = null != tmp10 && null != value;
   tmp13 = closure_8;
-  let tmpResult = avatarId(8321);
+  let tmpResult = avatarId(8343);
   return saveProfileAndAccountRequest(obj, obj).then((arg0) => {
     avatarId(outer1_2[3]).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" });
     let tmp4 = null == avatar;

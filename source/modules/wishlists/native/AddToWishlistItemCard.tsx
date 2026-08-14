@@ -1,10 +1,10 @@
-// Module ID: 12559
-// Function ID: 12560
+// Module ID: 12577
+// Function ID: 12578
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 676, 21, 4342, 712, 12557, 9404, 9461, 698, 9413, 4062, 1236, 9405, 9400, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4342, 712, 12575, 9418, 9474, 698, 9427, 4062, 1236, 9419, 9414, 2]
 // Exports: default
 
-// Module 12559 (AddToWishlistItemCard)
+// Module 12577 (AddToWishlistItemCard)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

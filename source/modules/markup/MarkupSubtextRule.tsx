@@ -1,8 +1,8 @@
-// Module ID: 4803
-// Function ID: 4804
+// Module ID: 4825
+// Function ID: 4826
 // Dependencies: [4060, 2]
 
-// Module 4803
+// Module 4825
 const re2 = /\n$/;
 const re3 = /^ *-# +((?!-#)[^\n]+)(?:\n|$)/;
 let obj = {

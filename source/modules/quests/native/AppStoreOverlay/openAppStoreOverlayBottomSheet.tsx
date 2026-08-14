@@ -1,10 +1,10 @@
-// Module ID: 10551
-// Function ID: 10552
+// Module ID: 10567
+// Function ID: 10568
 // Name: openAppStoreOverlayBottomSheet
-// Dependencies: [676, 4310, 10552, 2007, 1231, 10546, 2]
+// Dependencies: [676, 4310, 10568, 2007, 1231, 10562, 2]
 // Exports: openAppStoreOverlayBottomSheet
 
-// Module 10551 (openAppStoreOverlayBottomSheet)
+// Module 10567 (openAppStoreOverlayBottomSheet)
 import ME from "ME";
 
 let c3;
@@ -35,5 +35,5 @@ export const openAppStoreOverlayBottomSheet = function openAppStoreOverlayBottom
       });
     }
   };
-  obj.openLazy(_require(2007)(10552, dependencyMap.paths), "QuestAppStoreOverlayBottomSheet", obj);
+  obj.openLazy(_require(2007)(10568, dependencyMap.paths), "QuestAppStoreOverlayBottomSheet", obj);
 };

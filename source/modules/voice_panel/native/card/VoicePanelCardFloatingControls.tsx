@@ -1,9 +1,9 @@
-// Module ID: 16300
-// Function ID: 16301
+// Module ID: 16318
+// Function ID: 16319
 // Name: StreamIcon
-// Dependencies: [19, 17, 4334, 1390, 4364, 4416, 11705, 11703, 11708, 676, 4363, 21, 4083, 1297, 4342, 712, 1367, 11704, 16258, 16301, 10919, 16302, 16256, 10828, 9228, 5821, 7838, 1236, 9229, 4754, 16254, 4524, 4408, 10575, 16186, 16303, 16304, 589, 16286, 8054, 16305, 4072, 4741, 5768, 8832, 9240, 4574, 9286, 4338, 9302, 12281, 16232, 2]
+// Dependencies: [19, 17, 4334, 1390, 4364, 4416, 11721, 11719, 11724, 676, 4363, 21, 4083, 1297, 4342, 712, 1367, 11720, 16276, 16319, 10935, 16320, 16274, 10844, 9242, 5842, 7859, 1236, 9243, 4776, 16272, 4524, 4408, 10591, 16204, 16321, 16322, 589, 16304, 8075, 16323, 4072, 4763, 5789, 8846, 9254, 4596, 9300, 4338, 9316, 12299, 16250, 2]
 
-// Module 16300 (StreamIcon)
+// Module 16318 (StreamIcon)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "dismissPanel";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -33,7 +33,7 @@ const require = arg1;
 function StreamIcon(voicePlatform) {
   voicePlatform = voicePlatform.voicePlatform;
   let controlsSpecs;
-  controlsSpecs = importAllResult.useContext(importDefault(11704)).controlsSpecs;
+  controlsSpecs = importAllResult.useContext(importDefault(11720)).controlsSpecs;
   let obj = controlsSpecs(4083);
   const fn = function o() {
     const tmp = controlsSpecs.get().mode === outer1_11.HIDDEN;
@@ -54,13 +54,13 @@ function StreamIcon(voicePlatform) {
   fn.__workletHash = 3270040588948;
   fn.__initData = closure_23;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let source = importDefault(16258);
+  let source = importDefault(16276);
   if (voicePlatform === constants2.XBOX) {
-    source = tmp(16301);
+    source = tmp(16319);
   } else if (voicePlatform === tmp6.MOBILE) {
-    source = tmp(10919);
+    source = tmp(10935);
   } else if (voicePlatform === tmp6.QUEST) {
-    source = tmp(16302);
+    source = tmp(16320);
   }
   const style = [callback2(importDefault(1367)("VoicePanelCardFloatingControls")).iconWithoutBackground, animatedStyle];
   return callback(closure_19, { source, style });
@@ -69,28 +69,28 @@ function AnimatedLabelIcon(icon) {
   icon = icon.icon;
   const tmp3 = callback2(importDefault(1367)("VoicePanelCardFloatingControls"));
   const type = icon.type;
-  if (require(16256) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
+  if (require(16274) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
     let obj = { voicePlatform: null };
     obj[0] = icon.voicePlatform;
     return callback(StreamIcon, obj);
-  } else if (tmp4(16256).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
+  } else if (tmp4(16274).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     obj = { style: null, hitSlop: 12, onPress: null, children: null };
     obj[0] = tmp3.speakerMuteIcon;
     obj[2] = icon.onPress;
     const obj1 = { style: null };
     obj1[0] = tmp3.iconWithoutBackground;
-    obj[3] = callback(tmp4(10828).VoiceXIcon, obj1);
+    obj[3] = callback(tmp4(10844).VoiceXIcon, obj1);
     return callback(Pressable, obj);
-  } else if (tmp4(16256).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
+  } else if (tmp4(16274).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     const obj2 = { style: null, onPress: null, children: null };
     obj2[0] = tmp3.iconContainer;
     obj2[1] = icon.onPress;
     const obj3 = { style: null, state: null };
     obj3[0] = tmp3.icon;
     obj3[1] = icon.videoIconState;
-    obj2[2] = callback(tmp4(9228).VideoIcon, obj3);
+    obj2[2] = callback(tmp4(9242).VideoIcon, obj3);
     return callback(Pressable, obj2);
-  } else if (tmp4(16256).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
+  } else if (tmp4(16274).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp3.iconContainer;
     const obj5 = { onPress: null, hitSlop: 12, children: null };
@@ -98,16 +98,16 @@ function AnimatedLabelIcon(icon) {
     const obj6 = { style: null, state: null, alwaysWhite: true };
     obj6[0] = tmp3.icon;
     obj6[1] = icon.muteDeafenIconState;
-    obj5[2] = callback(tmp4(9228).MuteDeafenIcon, obj6);
+    obj5[2] = callback(tmp4(9242).MuteDeafenIcon, obj6);
     obj4[1] = callback(Pressable, obj5);
-    return callback(tmp(5821), obj4);
-  } else if (tmp4(16256).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
+    return callback(tmp(5842), obj4);
+  } else if (tmp4(16274).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     obj = { style: null, onPress: null, children: null };
     obj[0] = tmp3.iconContainer;
     obj[1] = icon.onPress;
     const obj7 = { size: "xs", color: null };
     obj7[1] = tmp(712).colors.TEXT_FEEDBACK_WARNING;
-    obj[2] = callback(tmp4(7838).CircleErrorIcon, obj7);
+    obj[2] = callback(tmp4(7859).CircleErrorIcon, obj7);
     return callback(Pressable, obj);
   }
 }
@@ -157,7 +157,7 @@ let closure_27 = importAllResult.memo((participant) => {
   controlsHidden = participant.controlsHidden;
   let guildId;
   ({ isSelf, layout } = participant);
-  guildId = importAllResult.useContext(guildId(11704)).guildId;
+  guildId = importAllResult.useContext(guildId(11720)).guildId;
   let obj = controlsHidden(4083);
   const fn = function n() {
     const value = controlsHidden.get();
@@ -174,7 +174,7 @@ let closure_27 = importAllResult.memo((participant) => {
     obj[3] = controlsHidden(outer1_2[29]).withSpring(num2, outer1_9);
     return obj;
   };
-  obj = { controlsHidden, FLOATING_BAR_HEIGHT: c21, VOICE_PANEL_CARD_INNER_PADDING: closure_12, withSpring: controlsHidden(4754).withSpring, MODE_CHANGE_PHYSICS: closure_9 };
+  obj = { controlsHidden, FLOATING_BAR_HEIGHT: c21, VOICE_PANEL_CARD_INNER_PADDING: closure_12, withSpring: controlsHidden(4776).withSpring, MODE_CHANGE_PHYSICS: closure_9 };
   fn.__closure = obj;
   fn.__workletHash = 4080439075039;
   fn.__initData = closure_26;
@@ -204,13 +204,13 @@ let closure_27 = importAllResult.memo((participant) => {
     }
   }, items);
   obj = { icon: null, onPress: null, style: null, layout: null, accessibilityLabel: null };
-  obj[0] = guildId(16303);
+  obj[0] = guildId(16321);
   obj[1] = callback;
   obj[2] = animatedStyle;
   obj[3] = layout;
   const tmp3 = closure_16;
-  const tmp4 = guildId(16186);
-  const result = controlsHidden(16254).isStableActivityParticipant(participant);
+  const tmp4 = guildId(16204);
+  const result = controlsHidden(16272).isStableActivityParticipant(participant);
   const intl = controlsHidden(1236).intl;
   const string = intl.string;
   const t = controlsHidden(1236).t;

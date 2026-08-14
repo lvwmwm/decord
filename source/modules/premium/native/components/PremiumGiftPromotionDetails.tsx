@@ -1,10 +1,10 @@
-// Module ID: 10093
-// Function ID: 10094
+// Module ID: 10105
+// Function ID: 10106
 // Name: AnimatedImage
-// Dependencies: [32, 19, 17, 4334, 21, 4342, 712, 589, 9436, 501, 7460, 5308, 4338, 2]
+// Dependencies: [32, 19, 17, 4334, 21, 4342, 712, 589, 9450, 501, 7481, 5329, 4338, 2]
 // Exports: default
 
-// Module 10093 (AnimatedImage)
+// Module 10105 (AnimatedImage)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -89,12 +89,14 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/p
 
 export default function PremiumGiftPromotionDetails(imageUrl) {
   let shouldAnimate;
+  let style;
   let subtitle;
   let title;
   imageUrl = imageUrl.imageUrl;
-  ({ title, subtitle, shouldAnimate } = imageUrl);
+  ({ style, title, subtitle, shouldAnimate } = imageUrl);
   const tmp = callback2();
-  let obj = { style: tmp.container, children: null };
+  let obj = { style: items, children: null };
+  items = [tmp.container, style];
   let tmp4 = null != imageUrl;
   if (tmp4) {
     obj = { style: null, imageUrl: null, shouldAnimate: null };
@@ -103,11 +105,11 @@ export default function PremiumGiftPromotionDetails(imageUrl) {
     obj[2] = shouldAnimate;
     tmp4 = callback(AnimatedImage, obj);
   }
-  const items = [tmp4, ];
+  const items1 = [tmp4, ];
   obj = { style: tmp.textContainer, children: null };
-  const items1 = [callback(require(4338) /* Text */.Text, { variant: "text-md/bold", color: "text-default", children: title }), callback(require(4338) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: subtitle })];
+  const items2 = [callback(require(4338) /* Text */.Text, { variant: "text-md/bold", color: "text-default", children: title }), callback(require(4338) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: subtitle })];
+  obj[1] = items2;
+  items1[1] = closure_8(View, obj);
   obj[1] = items1;
-  items[1] = closure_8(View, obj);
-  obj[1] = items;
   return closure_8(View, obj);
 };

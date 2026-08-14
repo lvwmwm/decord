@@ -1,10 +1,10 @@
-// Module ID: 11320
-// Function ID: 11321
+// Module ID: 11336
+// Function ID: 11337
 // Name: ChatBlockedAlert
-// Dependencies: [32, 109, 19, 17, 1218, 1990, 1910, 11313, 676, 3977, 21, 4342, 712, 4773, 1236, 1297, 11321, 4338, 11322, 6059, 647, 3995, 4771, 698, 2]
+// Dependencies: [32, 109, 19, 17, 1218, 1990, 1910, 11329, 676, 3977, 21, 4342, 712, 4795, 1236, 1297, 11337, 4338, 11338, 6080, 647, 3995, 4793, 698, 2]
 // Exports: default
 
-// Module 11320 (ChatBlockedAlert)
+// Module 11336 (ChatBlockedAlert)
 import _slicedToArray from "_slicedToArray";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import "openUserSettings";
@@ -45,13 +45,13 @@ function ChatBlockedAlert(arg0) {
   obj.onConfirm = onConfirm;
   obj = { style: tmp2.body, children: null };
   obj = { source: null, size: null, style: null };
-  obj[0] = importDefault(11321);
+  obj[0] = importDefault(11337);
   obj[1] = require(1297) /* Button */.Icon.Sizes.CUSTOM;
   obj[2] = tmp2.mainIcon;
   const items = [closure_16(require(1297) /* Button */.Icon, obj), closure_16(require(4338) /* Text */.Text, { style: tmp2.title, accessibilityRole: "header", variant: "heading-md/medium", color: "mobile-text-heading-primary", children: title }), closure_16(require(4338) /* Text */.Text, { style: tmp2.description, variant: "text-sm/medium", color: "text-default", children: description })];
   obj[1] = items;
   obj.children = callback4(View, obj);
-  return closure_16(importDefault(4773), obj);
+  return closure_16(importDefault(4795), obj);
 }
 function PerServerProfileAlert(arg0) {
   let automodReason;
@@ -70,8 +70,8 @@ function PerServerProfileAlert(arg0) {
     stringResult = intl.string(require(1236) /* getSystemLocale */.t.TBeZmG);
   }
   const tmp = callback2(arg0, closure_4);
-  const tmp2Result = tmp2(11322);
-  [require, tmp8] = callback(tmp2(11322).useOpenFixQuarantinedProfileModal({ guildId }), 2);
+  const tmp2Result = tmp2(11338);
+  [require, tmp8] = callback(tmp2(11338).useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {
     const intl3 = tmp2(1236).intl;
     stringResult = intl3.string(tmp2(1236).t.FFj5Dt);
@@ -151,7 +151,7 @@ export default function AutomodUserProfileQuarantineAlert(guildId) {
       return guildId(outer1_2[21]).getAutomodReason(automodQuarantinedGuildMemberFlags);
     }
   }, items4);
-  stateFromStores(4771)(() => {
+  stateFromStores(4793)(() => {
     let obj = stateFromStores(outer1_2[23]);
     obj = { type: outer1_12, guild_id: guildId, other_user_id: stateFromStores };
     obj.track(outer1_13.OPEN_MODAL, obj);

@@ -1,10 +1,10 @@
-// Module ID: 16025
-// Function ID: 16026
+// Module ID: 16043
+// Function ID: 16044
 // Name: useMessageRequestTimestampText
-// Dependencies: [4357, 11, 12016, 589, 3943, 7285, 2]
+// Dependencies: [4357, 11, 12032, 589, 3943, 7307, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 16025 (useMessageRequestTimestampText)
+// Module 16043 (useMessageRequestTimestampText)
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 
 const require = arg1;
@@ -14,7 +14,7 @@ export const useMessageRequestTimestampText = function useMessageRequestTimestam
   let lastMessageId;
   let message;
   const _require = channel;
-  let obj = _require(12016);
+  let obj = _require(12032);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = { lastMessageId: null };
   const items = [generateOldThreadCutoff];
@@ -43,7 +43,7 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
   let lastMessageId;
   let message;
   const _require = channel;
-  let obj = _require(12016);
+  let obj = _require(12032);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = { lastMessageId: null };
   const items = [generateOldThreadCutoff];
@@ -57,8 +57,8 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
     }
     let str = "";
     if (null != extractTimestampResult) {
-      str = _require(7285).getTimestampString(extractTimestampResult);
-      const tmpResult = _require(7285);
+      str = _require(7307).getTimestampString(extractTimestampResult);
+      const tmpResult = _require(7307);
     }
     return str;
   }

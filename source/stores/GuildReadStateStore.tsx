@@ -1,9 +1,9 @@
-// Module ID: 7143
-// Function ID: 7144
+// Module ID: 7165
+// Function ID: 7166
 // Name: updateGuildUnreadSentinel
-// Dependencies: [7144, 7146, 5263, 3991, 1395, 1218, 1391, 1910, 1220, 3989, 4357, 1979, 4540, 1922, 676, 1398, 4541, 7042, 11, 1913, 12, 3996, 2]
+// Dependencies: [7166, 7168, 5284, 3991, 1395, 1218, 1391, 1910, 1220, 3989, 4357, 1979, 4550, 1922, 676, 1398, 4551, 7064, 11, 1913, 12, 3996, 2]
 
-// Module 7143 (updateGuildUnreadSentinel)
+// Module 7165 (updateGuildUnreadSentinel)
 import findOrCreateMessageRecord from "findOrCreateMessageRecord";
 import _validate from "_validate";
 import rebuild from "rebuild";
@@ -97,7 +97,7 @@ function isCountableChannel(channel, mentionCount, arg2) {
         }
       }
       if (!channel.isPrivate()) {
-        let result1 = require(7042) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(channel.guild_id);
+        let result1 = require(7064) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(channel.guild_id);
         let tmp11 = null != channel.guild_id;
         if (tmp11) {
           if (result1) {
@@ -117,7 +117,7 @@ function isCountableChannel(channel, mentionCount, arg2) {
         } else if (!getUncachedChannelPermissions.can(channel.accessPermissions, channel)) {
           return false;
         }
-        const obj = require(7042) /* useOptInEnabledForGuild */;
+        const obj = require(7064) /* useOptInEnabledForGuild */;
       }
       let tmp16 = num > 0;
       if (!tmp16) {
@@ -462,7 +462,7 @@ function recountGuild(guildId) {
       }
       const mutedChannels = obj11.getMutedChannels(tmp2);
       const channelOverrides = obj11.getChannelOverrides(tmp2);
-      let obj2 = require(7042) /* useOptInEnabledForGuild */;
+      let obj2 = require(7064) /* useOptInEnabledForGuild */;
       const result = obj2.isOptInEnabledForGuild(tmp2);
       const mutableBasicGuildChannelsForGuild = store2.getMutableBasicGuildChannelsForGuild(tmp2);
       for (const key10034 in mutableBasicGuildChannelsForGuild) {

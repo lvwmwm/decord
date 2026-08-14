@@ -1,9 +1,9 @@
-// Module ID: 8757
-// Function ID: 8758
+// Module ID: 8771
+// Function ID: 8772
 // Name: NSFWRow
-// Dependencies: [19, 17, 8689, 21, 4342, 712, 1297, 8305, 4338, 1236, 8755, 2]
+// Dependencies: [19, 17, 8703, 21, 4342, 712, 1297, 8327, 4338, 1236, 8769, 2]
 
-// Module 8757 (NSFWRow)
+// Module 8771 (NSFWRow)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import IMAGE_SIZE from "IMAGE_SIZE";
@@ -29,7 +29,7 @@ const memoResult = importAllResult.memo(() => {
   const tmp = callback3();
   let obj = { style: tmp.nsfwContainer, children: null };
   obj = { source: null, size: null };
-  obj[0] = importDefault(8305);
+  obj[0] = importDefault(8327);
   obj[1] = require(1297) /* Button */.Icon.Sizes.SMALL;
   const items = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: null };
@@ -47,7 +47,7 @@ const memoResult1 = importAllResult.memo((useTier0UpsellContent) => {
   if (isSectionNitroLocked) {
     obj = { useTier0UpsellContent: null };
     obj[0] = useTier0UpsellContent.useTier0UpsellContent;
-    isSectionNitroLocked = callback(require(8755) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, obj);
+    isSectionNitroLocked = callback(require(8769) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, obj);
   }
   const items = [isSectionNitroLocked, ];
   let tmp6 = null;

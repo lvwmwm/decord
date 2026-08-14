@@ -1,10 +1,10 @@
-// Module ID: 7282
-// Function ID: 7283
+// Module ID: 7304
+// Function ID: 7305
 // Name: setActiveCommand
-// Dependencies: [1218, 7283, 676, 38, 7030, 709, 530, 11, 1954, 2]
+// Dependencies: [1218, 7305, 676, 38, 7052, 709, 530, 11, 1954, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 7282 (setActiveCommand)
+// Module 7304 (setActiveCommand)
 import fetchFingerprint from "fetchFingerprint";
 import handleInit from "handleInit";
 import { Endpoints } from "ME";
@@ -27,7 +27,7 @@ export const setActiveCommand = function setActiveCommand(command) {
   command = command.command;
   ({ channelId, section, location: _location, initialValues, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin } = command);
   if (null != command) {
-    importDefault(38)(command.inputType !== require(7030) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
+    importDefault(38)(command.inputType !== require(7052) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
     const tmp3 = importDefault(38);
   }
   importDefault(709).dispatch({ type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", channelId, command, section, initialValues, location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin });
@@ -141,7 +141,7 @@ export const updateRegistry = function updateRegistry(commands, applications, ch
 };
 export const setAppLauncherActiveCommand = function setAppLauncherActiveCommand(id, command) {
   if (null != command) {
-    importDefault(38)(command.inputType !== require(7030) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
+    importDefault(38)(command.inputType !== require(7052) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
     const tmp3 = importDefault(38);
   }
   let obj = importDefault(709);

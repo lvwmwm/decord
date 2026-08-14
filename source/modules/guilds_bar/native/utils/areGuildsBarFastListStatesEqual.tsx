@@ -1,10 +1,10 @@
-// Module ID: 15551
-// Function ID: 15552
+// Module ID: 15569
+// Function ID: 15570
 // Name: areGuildsBarFastListStatesEqual
 // Dependencies: [2]
 // Exports: default
 
-// Module 15551 (areGuildsBarFastListStatesEqual)
+// Module 15569 (areGuildsBarFastListStatesEqual)
 const result = require("set").fileFinishedImporting("modules/guilds_bar/native/utils/areGuildsBarFastListStatesEqual.tsx");
 
 export default function areGuildsBarFastListStatesEqual(version, version2) {

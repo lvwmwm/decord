@@ -1,10 +1,10 @@
-// Module ID: 8956
-// Function ID: 8957
+// Module ID: 8970
+// Function ID: 8971
 // Name: isCrunchyrollActivity
-// Dependencies: [8950, 2]
+// Dependencies: [8964, 2]
 // Exports: default
 
-// Module 8956 (isCrunchyrollActivity)
+// Module 8970 (isCrunchyrollActivity)
 import { CRUNCHYROLL_CLIENT_ID } from "CRUNCHYROLL_LINK_DEST_ORIGIN";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/isCrunchyrollActivity.tsx");

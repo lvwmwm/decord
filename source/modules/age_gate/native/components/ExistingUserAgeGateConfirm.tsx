@@ -1,10 +1,10 @@
-// Module ID: 16455
-// Function ID: 16456
+// Module ID: 16473
+// Function ID: 16474
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 676, 21, 4342, 1499, 5368, 4338, 1236, 1993, 4755, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4342, 1499, 5389, 4338, 1236, 1993, 4777, 2]
 // Exports: default
 
-// Module 16455 (ExistingUserAgeGateConfirm)
+// Module 16473 (ExistingUserAgeGateConfirm)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -89,8 +89,8 @@ export default function ExistingUserAgeGateConfirm(age) {
     }
     return applyArgumentsResult;
   };
-  obj3[1] = callback2(onConfirm(4755).Button, obj4);
+  obj3[1] = callback2(onConfirm(4777).Button, obj4);
   items[2] = callback2(View, obj3);
   obj[2] = items;
-  return callback3(onConfirm(5368).SafeAreaPaddingView, obj);
+  return callback3(onConfirm(5389).SafeAreaPaddingView, obj);
 };

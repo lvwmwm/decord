@@ -1,10 +1,10 @@
-// Module ID: 8729
-// Function ID: 8730
+// Module ID: 8743
+// Function ID: 8744
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 1990, 1922, 8730, 676, 21, 4342, 712, 1236, 1993, 698, 8393, 8551, 8731, 4338, 4755, 2]
+// Dependencies: [19, 17, 1990, 1922, 8744, 676, 21, 4342, 712, 1236, 1993, 698, 8415, 8573, 8745, 4338, 4777, 2]
 // Exports: default
 
-// Module 8729 (NsfwGateGuild)
+// Module 8743 (NsfwGateGuild)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -73,8 +73,8 @@ export default function NsfwGateGuild(guildId) {
     obj.track(outer1_9.GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   obj = { style: tmp.container, children: null };
-  const items1 = [callback(currentUser(8551), {}), , , , , ];
-  obj = { source: currentUser(8731), style: tmp.image };
+  const items1 = [callback(currentUser(8573), {}), , , , , ];
+  obj = { source: currentUser(8745), style: tmp.image };
   items1[1] = callback(closure_5, obj);
   obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
   items1[2] = callback(guildId(4338).Text, obj1);
@@ -85,7 +85,7 @@ export default function NsfwGateGuild(guildId) {
   const obj4 = { onPress: guildId.onClose, size: "md", text: null };
   const intl4 = guildId(1236).intl;
   obj4[2] = intl4.string(guildId(1236).t.gRqiWV);
-  items1[5] = callback(guildId(4755).Button, obj4);
+  items1[5] = callback(guildId(4777).Button, obj4);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

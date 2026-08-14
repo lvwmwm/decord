@@ -1,10 +1,10 @@
-// Module ID: 5906
-// Function ID: 5907
+// Module ID: 5927
+// Function ID: 5928
 // Name: _safeTransitionTo
-// Dependencies: [5, 1910, 676, 4536, 5907, 1222, 5908, 4684, 1236, 5935, 2403, 5973, 2]
+// Dependencies: [5, 1910, 676, 4536, 5928, 1222, 5929, 4706, 1236, 5956, 2403, 5994, 2]
 // Exports: default
 
-// Module 5906 (_safeTransitionTo)
+// Module 5927 (_safeTransitionTo)
 import transitionTo from "transitionTo";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Routes } from "ME";
@@ -140,7 +140,7 @@ function _safeTransitionTo() {
           }
           obj7 = callback2(closure_2[11]);
           if (closure_2 == null) {
-            closure_2 = { guildId: "sa" };
+            closure_2 = { guildId: "title" };
           }
           c5 = 2;
           c6 = 1;

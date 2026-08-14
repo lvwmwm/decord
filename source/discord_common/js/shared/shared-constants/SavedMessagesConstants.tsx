@@ -1,9 +1,9 @@
-// Module ID: 8420
-// Function ID: 8421
+// Module ID: 8442
+// Function ID: 8443
 // Name: SAVED_BOOKMARKS_MAX
 // Dependencies: [2]
 
-// Module 8420 (SAVED_BOOKMARKS_MAX)
+// Module 8442 (SAVED_BOOKMARKS_MAX)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/SavedMessagesConstants.tsx");
 
 export const SAVED_BOOKMARKS_MAX = 200;

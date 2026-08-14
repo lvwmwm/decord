@@ -1,10 +1,10 @@
-// Module ID: 13302
-// Function ID: 13303
+// Module ID: 13314
+// Function ID: 13315
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 4342, 10518, 13300, 4338, 1236, 4755, 2]
+// Dependencies: [19, 17, 21, 4342, 10534, 13312, 4338, 1236, 4777, 2]
 // Exports: ActivateDeviceError
 
-// Module 13302 (ActivateDeviceError)
+// Module 13314 (ActivateDeviceError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,17 +24,17 @@ const result = require("jsxProd").fileFinishedImporting("modules/activate_device
 export const ActivateDeviceError = function ActivateDeviceError(onRetry) {
   let obj = { children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(10518);
+  obj[0] = importDefault(10534);
   obj[1] = callback3().image;
   const items = [callback(closure_3, obj), , ];
-  obj = { style: importDefault(13300).innerContent, children: null };
+  obj = { style: importDefault(13312).innerContent, children: null };
   const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
-  obj1[2] = importDefault(13300).centerText;
+  obj1[2] = importDefault(13312).centerText;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.string(require(1236) /* getSystemLocale */.t["3dgwPD"]);
   const items1 = [callback(require(4338) /* Text */.Text, obj1), ];
   const obj2 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
-  obj2[2] = importDefault(13300).centerText;
+  obj2[2] = importDefault(13312).centerText;
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t["/GAO1P"]);
   items1[1] = callback(require(4338) /* Text */.Text, obj2);
@@ -44,7 +44,7 @@ export const ActivateDeviceError = function ActivateDeviceError(onRetry) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[1] = intl3.string(require(1236) /* getSystemLocale */.t["5911Lb"]);
   obj3[2] = onRetry.onRetry;
-  items[2] = callback(require(4755) /* Button */.Button, obj3);
+  items[2] = callback(require(4777) /* Button */.Button, obj3);
   obj[0] = items;
   return callback2(closure_7, obj);
 };
